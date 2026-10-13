@@ -950,7 +950,134 @@ function createDiagnosticBackend(paths: Array<Record<string, unknown>>, opts: Di
   return { handle, attempts: () => attempts.map((a) => ({ ...a, responses: [...a.responses] })) };
 }
 
+// ---- AI tutor backend: the ai-tutor Edge Function and the spec 5 RPCs (quota, notice, report) ---------------------
+
+/** How the mocked ai-tutor function answers: per-task success, an error, or a success carrying HTML/script text. */
+export type AiMockMode = 'ok' | 'quota_exceeded' | 'ai_unavailable' | 'html';
+
+export interface AiMockOptions {
+  mode?: AiMockMode;
+  /** user_preferences.ai_notice_ack_at at start (default null: the notice shows on first use). */
+  ackAt?: string | null;
+  /** Calls used today (default 3 of 20). */
+  used?: number;
+  limit?: number;
+}
+
+/** Text the HTML mode puts in explanation_md: must render as literal characters, never as elements. */
+export const AI_HTML_PAYLOAD = '<img src=x onerror="window.__aiXss=1"><script>window.__aiXss=1</script><b id="ai-injected">bold</b>';
+
+function aiResetsAt(): string {
+  // Next midnight in Asia/Ho_Chi_Minh (UTC+7), like learning_user_today + 1.
+  return `${localDate(1)}T00:00:00+07:00`;
+}
+
+function aiData(task: string, mode: AiMockMode): Record<string, unknown> {
+  const html = mode === 'html';
+  switch (task) {
+    case 'analyze_error':
+      return {
+        verdict: 'incorrect',
+        error_type: 'Chia động từ',
+        explanation_md: html ? AI_HTML_PAYLOAD : 'Với **I** ta dùng *am*, không dùng *is*.',
+        corrected: 'I am a student.',
+        tip_vi: 'Nhớ cặp I – am.',
+      };
+    case 'generate_practice':
+      return {
+        items: [
+          {
+            question: 'She ___ a teacher.',
+            options: ['am', 'is', 'are'],
+            answer: 'is',
+            explanation_vi: 'She đi với is.',
+          },
+        ],
+      };
+    default:
+      return {
+        summary: 'Lời chào trong tiếng Anh',
+        explanation_md: html ? AI_HTML_PAYLOAD : 'Dùng **Hello** để chào trong mọi tình huống.\n\n- Hi: thân mật\n- Good morning: buổi sáng',
+        examples: [{ target: 'Hello, Lan!', vi: 'Chào Lan!' }],
+        common_mistakes: ['Dùng "Good night" để chào khi gặp mặt.'],
+        confidence: 'high',
+        uncertainty: null,
+      };
+  }
+}
+
+/** Stateful stand-in for POST functions/v1/ai-tutor and the ai_quota_status / ack_ai_notice / ai_report RPCs. */
+function createAiBackend(opts: AiMockOptions = {}) {
+  let mode: AiMockMode = opts.mode ?? 'ok';
+  let ackAt: string | null = opts.ackAt ?? null;
+  let used = opts.used ?? 3;
+  const limit = opts.limit ?? 20;
+  const requests: Row[] = [];
+  const reports: Row[] = [];
+  let ackCalls = 0;
+  const quota = () => ({ used, limit, resets_at: aiResetsAt() });
+
+  function tutor(b: Row): { status: number; json: unknown } {
+    requests.push(b);
+    if (mode === 'quota_exceeded') {
+      used = limit;
+      return { status: 429, json: { error: 'quota_exceeded', message: 'Daily AI limit reached', retry_after_sec: null, quota: quota() } };
+    }
+    if (mode === 'ai_unavailable') {
+      return { status: 503, json: { error: 'ai_unavailable', message: 'AI temporarily unavailable', retry_after_sec: 60, quota: null } };
+    }
+    used = Math.min(limit, used + 1);
+    const task = String(b.task ?? 'explain_concept');
+    return {
+      status: 200,
+      json: {
+        task,
+        prompt_version: `${task}@1`,
+        data: aiData(task, mode),
+        cached: false,
+        ai_generated: true,
+        response_id: randomUUID(),
+        quota: quota(),
+      },
+    };
+  }
+
+  function handle(pathname: string, b: Row): { status?: number; json: unknown } | null {
+    switch (pathname) {
+      case '/functions/v1/ai-tutor':
+        return tutor(b);
+      case '/rest/v1/rpc/ai_quota_status':
+        return { json: quota() };
+      case '/rest/v1/rpc/ack_ai_notice':
+        ackCalls += 1;
+        ackAt ??= new Date().toISOString();
+        return { json: ackAt };
+      case '/rest/v1/rpc/ai_report': {
+        if (!['wrong', 'unclear', 'unsafe', 'other'].includes(String(b.p_reason))) return rpcError('invalid_reason');
+        reports.push(b);
+        return { json: randomUUID() };
+      }
+    }
+    return null;
+  }
+
+  return {
+    handle,
+    ackAt: () => ackAt,
+    controls: {
+      setMode: (next: AiMockMode) => {
+        mode = next;
+      },
+      requests: () => requests.map((r) => ({ ...r })),
+      reports: () => reports.map((r) => ({ ...r })),
+      ackCalls: () => ackCalls,
+    },
+  };
+}
+
 interface MockOptions {
+  /** AI tutor function and RPCs (spec 5). */
+  ai?: AiMockOptions;
   displayName?: string;
   /** Placement test backend (spec 4). */
   diagnostic?: DiagnosticMockOptions;
@@ -972,6 +1099,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
   const lessons = createLessonBackend(paths);
   const reviews = createReviewBackend(paths, opts.reviews);
   const diagnostic = createDiagnosticBackend(paths, opts.diagnostic);
+  const ai = createAiBackend(opts.ai);
 
   await page.route(`${SUPABASE_URL}/**`, async (route) => {
     const url = new URL(route.request().url());
@@ -986,7 +1114,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
         }
         return route.fulfill({ json: [{ id: USER_ID }] });
       case '/rest/v1/user_preferences':
-        if (method === 'GET') return route.fulfill({ json: { theme: 'system', reduce_motion: false } });
+        if (method === 'GET') return route.fulfill({ json: { theme: 'system', reduce_motion: false, ai_notice_ack_at: ai.ackAt() } });
         return route.fulfill({ json: [{ user_id: USER_ID }] });
       case '/rest/v1/learning_paths':
         return route.fulfill({ json: paths.filter((p) => p.status !== 'archived') });
@@ -1034,9 +1162,13 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
         return route.fulfill({ json: row });
       }
     }
-    const lessonReply = url.pathname.startsWith('/rest/v1/rpc/')
-      ? (lessons.handle(url.pathname, body()) ?? reviews.handle(url.pathname, body()) ?? diagnostic.handle(url.pathname, body()))
-      : null;
+    const lessonReply =
+      url.pathname.startsWith('/rest/v1/rpc/') || url.pathname.startsWith('/functions/v1/')
+        ? (lessons.handle(url.pathname, body()) ??
+          reviews.handle(url.pathname, body()) ??
+          diagnostic.handle(url.pathname, body()) ??
+          ai.handle(url.pathname, body()))
+        : null;
     if (lessonReply) {
       if (lessonReply.status === 204) return route.fulfill({ status: 204, body: '' });
       return route.fulfill({ status: lessonReply.status ?? 200, json: lessonReply.json });
@@ -1049,6 +1181,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
     reviewGrades: reviews.grades,
     postponeCalls: reviews.postponeCalls,
     diagnosticAttempts: diagnostic.attempts,
+    ai: ai.controls,
     paths: () => paths.map((p) => ({ ...p })),
   };
 }
