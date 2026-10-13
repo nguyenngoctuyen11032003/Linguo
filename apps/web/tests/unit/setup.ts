@@ -12,6 +12,10 @@ afterEach(() => {
   delete document.documentElement.dataset.reduceMotion;
 });
 
+// happy-dom's Web Animations `finished` promise rejects (unhandled) when an animation is cancelled on
+// unmount, which real browsers mark as handled. Hiding `animate` makes motion fall back to its JS engine.
+delete (Element.prototype as { animate?: unknown }).animate;
+
 class NoopIntersectionObserver {
   readonly root = null;
   readonly rootMargin = '';
