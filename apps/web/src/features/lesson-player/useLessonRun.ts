@@ -106,6 +106,8 @@ export function useLessonRun(lessonId: string): LessonRunApi {
   const wantedCursor = useRef(0);
   /** Lesson the learner asked to study again ("Học lại"); the next load starts a new run for it. */
   const restartFor = useRef<string | null>(null);
+  // `?buoc=` the load just asked for; until the URL shows it, the old value (e.g. a restarted run's summary) is stale.
+  const pendingStepParam = useRef<string | null>(null);
 
   /** Outbox entries whose result this tab applied: their removal from the outbox is not a vanish (below). */
   const appliedFromOutbox = useRef(new Set<string>());
@@ -239,7 +241,9 @@ export function useLessonRun(lessonId: string): LessonRunApi {
         wantedCursor.current = run.cursor;
         dispatch({ type: 'loaded', payload, run, stepIndex, pending });
         setLoad({ status: 'ready', error: null });
+        pendingStepParam.current = null;
         if (params.get(STEP_PARAM) !== String(stepIndex + 1)) {
+          pendingStepParam.current = String(stepIndex + 1);
           setParams(
             (prev) => {
               const next = new URLSearchParams(prev);
@@ -276,8 +280,13 @@ export function useLessonRun(lessonId: string): LessonRunApi {
   // ---- ?buoc= ↔ step index (browser back/forward walk the steps) ------------------------------------------
   useEffect(() => {
     if (!ready) return;
+    const value = searchParams.get(STEP_PARAM);
+    if (pendingStepParam.current !== null) {
+      if (value !== pendingStepParam.current) return;
+      pendingStepParam.current = null;
+    }
     const { state: current } = latest.current;
-    const index = parseStepParam(searchParams.get(STEP_PARAM), current.steps.length);
+    const index = parseStepParam(value, current.steps.length);
     if (index !== null && index !== current.stepIndex) dispatch({ type: 'goto', index });
   }, [ready, searchParams]);
 
