@@ -7,3 +7,4 @@ export * from './learning/schemas';
 export * from './content';
 export * from './review';
 export * from './diagnostic';
+export * from './ai';
