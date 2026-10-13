@@ -84,6 +84,7 @@ export function makeRun(overrides: Partial<LessonRunApi> = {}): LessonRunApi {
     canComplete: true,
     complete: vi.fn().mockResolvedValue(COMPLETE_RESULT),
     completeResult: null,
+    runId: '40000000-0000-4000-8000-000000000001',
     runStatus: 'in_progress',
     retry: vi.fn(),
     restart: vi.fn(),

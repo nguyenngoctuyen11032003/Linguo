@@ -1,10 +1,13 @@
-import { useEffect, useId, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { AnswerLang, WordBankPrompt } from '@linguo/shared';
 import { cn } from '@/lib/cn';
+import { seededShuffleAway } from './shuffle';
 
 export interface WordBankExerciseProps {
   prompt: WordBankPrompt;
   lang: AnswerLang;
+  /** Shuffle seed (run id + exercise id): the bank order is stable across renders and reloads of a run. */
+  seed: string;
   tokenIds: string[];
   onChange: (tokenIds: string[]) => void;
   disabled?: boolean;
@@ -17,9 +20,11 @@ const tokenClasses =
 type FocusAfter = { bankIndex: number } | { bankId: string };
 
 /** Tap to place / remove tokens (no drag and drop); a live region announces each change. */
-export function WordBankExercise({ prompt, lang, tokenIds, onChange, disabled = false }: WordBankExerciseProps) {
+export function WordBankExercise({ prompt, lang, seed, tokenIds, onChange, disabled = false }: WordBankExerciseProps) {
   const answerLabel = useId();
   const [announcement, setAnnouncement] = useState('');
+  // Tokens are authored in answer order: never show the bank that way.
+  const bank = useMemo(() => seededShuffleAway(prompt.tokens, seed), [prompt.tokens, seed]);
   const byId = new Map(prompt.tokens.map((t) => [t.id, t]));
   const placed = new Set(tokenIds);
   const bankRefs = useRef<Record<string, HTMLButtonElement | null>>({});
@@ -34,23 +39,24 @@ export function WordBankExercise({ prompt, lang, tokenIds, onChange, disabled = 
       bankRefs.current[focusAfter.bankId]?.focus();
       return;
     }
-    const available = prompt.tokens.filter((t) => !tokenIds.includes(t.id));
-    const target = available.find((t) => prompt.tokens.indexOf(t) > focusAfter.bankIndex) ?? available[0];
+    const available = bank.filter((t) => !tokenIds.includes(t.id));
+    const target = available.find((t) => bank.indexOf(t) > focusAfter.bankIndex) ?? available[0];
     if (target) bankRefs.current[target.id]?.focus();
     else answerRef.current?.querySelector<HTMLButtonElement>('button:last-of-type')?.focus();
-  }, [focusAfter, prompt.tokens, tokenIds]);
+  }, [focusAfter, bank, tokenIds]);
 
   const add = (id: string) => {
     const next = [...tokenIds, id];
     onChange(next);
-    setFocusAfter({ bankIndex: prompt.tokens.findIndex((t) => t.id === id) });
+    setFocusAfter({ bankIndex: bank.findIndex((t) => t.id === id) });
     setAnnouncement(`Đã thêm ${byId.get(id)?.text ?? ''}, vị trí ${next.length}`);
   };
   const remove = (index: number) => {
     const id = tokenIds[index]!;
-    onChange(tokenIds.filter((_, i) => i !== index));
+    const next = tokenIds.filter((_, i) => i !== index);
+    onChange(next);
     setFocusAfter({ bankId: id });
-    setAnnouncement(`Đã bỏ ${byId.get(id)?.text ?? ''}`);
+    setAnnouncement(`Đã bỏ ${byId.get(id)?.text ?? ''} khỏi vị trí ${index + 1}, còn ${next.length} thẻ trong câu`);
   };
 
   return (
@@ -73,7 +79,7 @@ export function WordBankExercise({ prompt, lang, tokenIds, onChange, disabled = 
             <button
               key={`${id}-${i}`}
               type="button"
-              aria-label={`Bỏ '${text}'`}
+              aria-label={`Bỏ '${text}', vị trí ${i + 1}/${tokenIds.length}`}
               disabled={disabled}
               onClick={() => remove(i)}
               className={cn(tokenClasses, 'border-primary bg-primary/10')}
@@ -84,7 +90,7 @@ export function WordBankExercise({ prompt, lang, tokenIds, onChange, disabled = 
         })}
       </div>
       <div role="group" aria-label="Các thẻ từ" lang={lang} className="mt-4 flex min-w-0 flex-wrap gap-2">
-        {prompt.tokens.map((token) => {
+        {bank.map((token) => {
           const used = placed.has(token.id);
           return (
             <button

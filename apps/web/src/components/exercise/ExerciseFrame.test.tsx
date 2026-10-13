@@ -4,7 +4,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { PublicExercise } from '@linguo/shared';
 import type { ExerciseUiState } from '@/features/lesson-player/types';
 import { ExerciseFrame } from './index';
-import { seededShuffle } from './shuffle';
+import { seededShuffle, seededShuffleAway } from './shuffle';
 import { graded, IDLE, makeExercise, makeResult } from './test-fixtures';
 import { renderExercise } from './test-utils';
 
@@ -249,8 +249,9 @@ describe('ExerciseFrame — word_bank', () => {
     expect(screen.getByText('Đã thêm am, vị trí 2')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: "Thêm 'am'" })).not.toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: "Thêm 'is'" }));
-    await userEvent.click(screen.getByRole('button', { name: "Bỏ 'is'" }));
-    expect(screen.getByText('Đã bỏ is')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: "Bỏ 'am', vị trí 2/3" })).toBeInTheDocument();
+    await userEvent.click(screen.getByRole('button', { name: "Bỏ 'is', vị trí 3/3" }));
+    expect(screen.getByText('Đã bỏ is khỏi vị trí 3, còn 2 thẻ trong câu')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: "Thêm 'is'" })).toHaveFocus();
     await userEvent.click(screen.getByRole('button', { name: "Thêm 'a'" }));
     await userEvent.click(screen.getByRole('button', { name: "Thêm 'student'" }));
@@ -260,11 +261,30 @@ describe('ExerciseFrame — word_bank', () => {
 
   it('works from the keyboard', async () => {
     setup(makeExercise('word_bank'));
+    const [first, second] = within(screen.getByRole('group', { name: 'Các thẻ từ' })).getAllByRole('button');
+    const text = first!.textContent;
     await userEvent.tab();
-    expect(screen.getByRole('button', { name: "Thêm 'I'" })).toHaveFocus();
+    expect(first).toHaveFocus();
     await userEvent.keyboard('{Enter}');
-    expect(screen.getByRole('button', { name: "Bỏ 'I'" })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: "Thêm 'am'" })).toHaveFocus();
+    expect(screen.getByRole('button', { name: `Bỏ '${text}', vị trí 1/1` })).toBeInTheDocument();
+    expect(screen.getByText(`Đã thêm ${text}, vị trí 1`)).toBeInTheDocument();
+    expect(second).toHaveFocus();
+  });
+
+  it('shows the bank shuffled by run and exercise, never in answer order, stable across renders', () => {
+    const exercise = makeExercise('word_bank');
+    const RUN = '40000000-0000-4000-8000-000000000001';
+    const props = { exercise, state: IDLE, recheck: false, onSubmit: vi.fn(), onContinue: vi.fn() };
+    const view = renderExercise(<ExerciseFrame {...props} runId={RUN} />);
+    const bankOrder = () => within(screen.getByRole('group', { name: 'Các thẻ từ' })).getAllByRole('button').map((b) => b.textContent);
+    const authored = ['I', 'am', 'a', 'student', 'is'];
+    const shown = bankOrder();
+    expect(shown).not.toEqual(authored);
+    expect([...shown].sort()).toEqual([...authored].sort());
+    const ids = seededShuffleAway(['t1', 't2', 't3', 't4', 't5'], `${RUN}:${exercise.id}`);
+    expect(shown).toEqual(ids.map((id) => authored[Number(id.slice(1)) - 1]));
+    view.rerender(<ExerciseFrame {...props} runId={RUN} state={{ ...IDLE }} />);
+    expect(bankOrder()).toEqual(shown);
   });
 });
 

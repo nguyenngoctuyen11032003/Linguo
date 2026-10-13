@@ -482,6 +482,7 @@ export function useLessonRun(lessonId: string): LessonRunApi {
     canComplete,
     complete,
     completeResult: state.completeResult,
+    runId: ready ? (state.run?.id ?? null) : null,
     runStatus: ready ? (state.run?.status ?? null) : null,
     retry,
     restart,

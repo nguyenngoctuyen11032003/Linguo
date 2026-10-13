@@ -174,6 +174,7 @@ export function LessonPage() {
             exercise={exercise}
             state={run.exerciseState(exerciseId, queueIndex)}
             recheck={step.recheck}
+            runId={run.runId}
             onSubmit={(response, meta) => void run.submit(exerciseId, queueIndex, response, meta)}
             onContinue={run.next}
           />

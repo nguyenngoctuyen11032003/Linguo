@@ -126,6 +126,8 @@ describe('LessonPage', () => {
     expect(frame).toHaveAttribute('data-exercise', EX1);
     expect(frame).toHaveAttribute('data-recheck', 'false');
     expect(run.exerciseState).toHaveBeenCalledWith(EX1, 0);
+    // The run seeds the word_bank order.
+    expect(mocks.frameProps.at(-1)).toMatchObject({ runId: run.runId });
     // Exercise steps bring their own action bar.
     expect(screen.queryByRole('button', { name: 'Tiếp tục' })).not.toBeInTheDocument();
     await userEvent.click(within(frame).getByRole('button', { name: 'Kiểm tra' }));

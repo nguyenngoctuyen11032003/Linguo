@@ -59,6 +59,7 @@ export interface LessonRunApi {
   canComplete: boolean;
   complete: () => Promise<CompleteResult | null>;
   completeResult: CompleteResult | null;
+  runId: string | null;
   /** A completed run is shown with its summary; nothing can be submitted to it. */
   runStatus: LessonRun['status'] | null;
   retry: () => void;

@@ -29,6 +29,8 @@ export interface ExerciseFrameProps {
   exercise: PublicExercise;
   state: ExerciseUiState;
   recheck: boolean;
+  /** Run the exercise belongs to; seeds the word_bank order so it differs per run but survives reloads. */
+  runId?: string | null;
   onSubmit: (response: ExerciseResponse, meta: SubmitMeta) => void;
   /** Shown when `state.lastResult?.final` (and while an attempt waits for sync). */
   onContinue: () => void;
@@ -105,7 +107,7 @@ export function ExerciseFrame(props: ExerciseFrameProps) {
   return <ExerciseFrameInner key={`${props.exercise.id}:${props.exercise.version}:${props.recheck}`} {...props} />;
 }
 
-function ExerciseFrameInner({ exercise, state, recheck, onSubmit, onContinue }: ExerciseFrameProps) {
+function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onContinue }: ExerciseFrameProps) {
   const titleId = useId();
   const parsed = useMemo(() => parsePrompt(exercise), [exercise]);
   const gate = useMemo(() => createCompositionGate(), []);
@@ -233,6 +235,7 @@ function ExerciseFrameInner({ exercise, state, recheck, onSubmit, onContinue }: 
         <WordBankExercise
           prompt={parsed.prompt}
           lang={exercise.answer_lang}
+          seed={`${runId ?? ''}:${exercise.id}`}
           tokenIds={response && 'token_ids' in response ? response.token_ids : []}
           onChange={(ids) => setResponse(ids.length > 0 ? { token_ids: ids } : null)}
           disabled={locked}
