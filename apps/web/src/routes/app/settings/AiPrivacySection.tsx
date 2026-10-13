@@ -1,45 +1,16 @@
-import { useEffect, useState } from 'react';
 import { DEFAULT_TIMEZONE } from '@linguo/shared';
 import { SolidCard } from '@/components/ui/SolidCard';
-import { useAuth } from '@/features/auth/AuthProvider';
+import { useAiNotice } from '@/features/ai-tutor/useAiNotice';
 import { useProfile } from '@/features/profile/ProfileProvider';
 import { formatDateVi, todayIso } from '@/lib/dates';
-import { getSupabase } from '@/lib/supabase';
-
-type AckState = { status: 'loading' } | { status: 'ready'; ackAt: string | null } | { status: 'error' };
-
-/** When the learner acknowledged the AI notice (user_preferences.ai_notice_ack_at), or null. */
-async function fetchAiNoticeAck(userId: string): Promise<string | null> {
-  const client = getSupabase();
-  if (!client) throw new Error('supabase_unavailable');
-  const { data, error } = await client.from('user_preferences').select('*').eq('user_id', userId).maybeSingle();
-  if (error) throw error;
-  const value = (data as Record<string, unknown> | null)?.ai_notice_ack_at;
-  return typeof value === 'string' && value ? value : null;
-}
 
 /** Settings "AI và quyền riêng tư": what the AI tutor sends to Gemini's free tier and when the notice was seen (spec 5). */
 export function AiPrivacySection() {
-  const { user } = useAuth();
-  const userId = user?.id;
+  const notice = useAiNotice();
   const { profile } = useProfile();
-  const [ack, setAck] = useState<AckState>({ status: 'loading' });
-
-  useEffect(() => {
-    if (!userId) return;
-    let active = true;
-    setAck({ status: 'loading' });
-    fetchAiNoticeAck(userId)
-      .then((ackAt) => active && setAck({ status: 'ready', ackAt }))
-      .catch(() => active && setAck({ status: 'error' }));
-    return () => {
-      active = false;
-    };
-  }, [userId]);
-
   const ackDate =
-    ack.status === 'ready' && ack.ackAt && !Number.isNaN(Date.parse(ack.ackAt))
-      ? formatDateVi(todayIso(profile?.timezone ?? DEFAULT_TIMEZONE, new Date(ack.ackAt)))
+    notice.ackAt && !Number.isNaN(Date.parse(notice.ackAt))
+      ? formatDateVi(todayIso(profile?.timezone ?? DEFAULT_TIMEZONE, new Date(notice.ackAt)))
       : null;
 
   return (
@@ -64,7 +35,7 @@ export function AiPrivacySection() {
           <li>Linguo chỉ ghi số lượt dùng để tính hạn mức mỗi ngày, không lưu nội dung câu hỏi của bạn.</li>
           <li>Câu trả lời của AI có thể chưa chính xác. Bài học soạn sẵn luôn là nguồn tham khảo chính.</li>
         </ul>
-        {ack.status === 'ready' && (
+        {notice.status === 'ready' && (
           <p className="text-sm text-muted" data-testid="ai-notice-ack">
             {ackDate
               ? `Bạn đã xác nhận thông báo này ngày ${ackDate}.`
