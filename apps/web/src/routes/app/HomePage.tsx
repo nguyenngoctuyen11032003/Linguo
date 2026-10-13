@@ -9,6 +9,7 @@ import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvide
 import { setPathStatus } from '@/features/learning-paths/service';
 import { useProfile } from '@/features/profile/ProfileProvider';
 import { requireSupabase } from '@/lib/supabase';
+import { NextLessonCard } from './home/NextLessonCard';
 import { PathSummaryCard } from './home/PathSummaryCard';
 import { SpreadWarning } from './home/SpreadWarning';
 
@@ -70,6 +71,7 @@ export function HomePage() {
             resuming={resuming}
             headingRef={cardHeadingRef}
           />
+          <NextLessonCard />
         </>
       )}
     </div>

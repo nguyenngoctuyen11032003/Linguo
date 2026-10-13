@@ -6,6 +6,8 @@ import { RedirectIfAuthed, RequireAuth } from '@/features/auth/guards';
 import { AppRoute } from '@/routes/app/AppRoute';
 import { ComingSoonPage } from '@/routes/app/ComingSoonPage';
 import { HomePage } from '@/routes/app/HomePage';
+import { LearnPage } from '@/routes/app/learn/LearnPage';
+import { LessonPage } from '@/routes/app/lesson/LessonPage';
 import { OnboardingPage } from '@/routes/app/onboarding/OnboardingPage';
 import { SettingsPage } from '@/routes/app/SettingsPage';
 import { AuthCallbackPage } from '@/routes/auth/AuthCallbackPage';
@@ -60,11 +62,12 @@ export const routes: RouteObject[] = [
         element: <AppRoute />,
         children: [
           { path: 'bat-dau', element: <OnboardingPage /> },
+          { path: 'hoc-tap/bai/:lessonId', element: <LessonPage /> },
           {
             element: <AppLayout />,
             children: [
               { index: true, element: <HomePage /> },
-              { path: 'hoc-tap', element: <ComingSoonPage title="Học tập" /> },
+              { path: 'hoc-tap', element: <LearnPage /> },
               { path: 'on-tap', element: <ComingSoonPage title="Ôn tập" /> },
               { path: 'gia-su', element: <ComingSoonPage title="Gia sư AI" /> },
               { path: 'luyen-thi', element: <ComingSoonPage title="Luyện thi" /> },

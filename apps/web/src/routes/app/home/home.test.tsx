@@ -4,10 +4,19 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { TEST_KO_PATH, TEST_PATH } from '../../../../tests/unit/learning-fixtures';
 import { renderWithProviders } from '../../../../tests/unit/render';
 import { HomePage } from '../HomePage';
+import { pathLesson } from '../lesson/lesson-fixtures';
 import { needsSpreadWarning } from './SpreadWarning';
 
 const mocks = vi.hoisted(() => ({ setPathStatus: vi.fn() }));
 vi.mock('@/lib/supabase', () => ({ getSupabase: () => ({}), requireSupabase: () => ({}) }));
+vi.mock('@/features/lesson-player/usePathLessons', () => ({
+  usePathLessons: () => ({
+    status: 'ready',
+    error: null,
+    reload: () => {},
+    lessons: [pathLesson({ title: { vi: 'Chào hỏi cơ bản' }, run_status: 'in_progress' })],
+  }),
+}));
 vi.mock('@/features/learning-paths/service', async (importOriginal) => ({
   ...(await importOriginal<typeof import('@/features/learning-paths/service')>()),
   setPathStatus: mocks.setPathStatus,
@@ -22,6 +31,13 @@ describe('HomePage', () => {
     expect(screen.getByText('Khoảng 43–69 tuần')).toBeInTheDocument();
     expect(screen.getByText('Chưa đủ dữ liệu (tự đánh giá)')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Bắt đầu phiên học' })).toBeDisabled();
+  });
+
+  it('shows the next lesson under the path card', () => {
+    renderWithProviders(<HomePage />, { route: '/app' });
+    expect(screen.getByText('Bài tiếp theo')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'Chào hỏi cơ bản' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Tiếp tục' })).toHaveAttribute('href', expect.stringMatching(/^\/app\/hoc-tap\/bai\//));
   });
 
   it('announces loading in the heading while the profile loads', () => {
