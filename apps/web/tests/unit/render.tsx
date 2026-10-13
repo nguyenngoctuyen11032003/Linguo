@@ -7,6 +7,7 @@ import { DEFAULT_TIMEZONE } from '@linguo/shared';
 import { ToastProvider } from '@/components/ui/Toast';
 import { AuthContext, type AuthState } from '@/features/auth/AuthProvider';
 import { LearningPathsContext, type LearningPathsContextValue } from '@/features/learning-paths/LearningPathsProvider';
+import { OutboxSyncProvider } from '@/features/lesson-player/OutboxSyncProvider';
 import { ProfileContext, type ProfileContextValue } from '@/features/profile/ProfileProvider';
 import { MotionProvider } from '@/providers/MotionProvider';
 import { ThemeProvider } from '@/providers/ThemeProvider';
@@ -61,12 +62,14 @@ export function renderWithProviders(ui: ReactElement, { route = '/', auth, profi
         <MotionProvider>
           <ToastProvider>
             <AuthContext.Provider value={authValue}>
-              <ProfileContext.Provider value={profileValue}>
-                <LearningPathsContext.Provider value={pathsValue}>
-                  {ui}
-                  <LocationProbe />
-                </LearningPathsContext.Provider>
-              </ProfileContext.Provider>
+              <OutboxSyncProvider>
+                <ProfileContext.Provider value={profileValue}>
+                  <LearningPathsContext.Provider value={pathsValue}>
+                    {ui}
+                    <LocationProbe />
+                  </LearningPathsContext.Provider>
+                </ProfileContext.Provider>
+              </OutboxSyncProvider>
             </AuthContext.Provider>
           </ToastProvider>
         </MotionProvider>

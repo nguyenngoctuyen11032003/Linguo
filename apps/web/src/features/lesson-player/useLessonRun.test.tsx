@@ -7,6 +7,7 @@ import { ToastProvider } from '@/components/ui/Toast';
 import { AuthContext, type AuthState } from '@/features/auth/AuthProvider';
 import { LearningPathsContext, type LearningPathsContextValue } from '@/features/learning-paths/LearningPathsProvider';
 import { EX1, EX2, LESSON_ID, PATH_ID, RUN_ID, attempt, payload, result, run } from './lesson-fixtures';
+import { OutboxSyncProvider } from './OutboxSyncProvider';
 import { createOutbox } from './outbox';
 import { lessonCacheKey, useLessonRun } from './useLessonRun';
 
@@ -47,7 +48,9 @@ function wrapper(route: string, pathId: string | null = PATH_ID) {
       <MemoryRouter initialEntries={[route]}>
         <ToastProvider>
           <AuthContext.Provider value={auth}>
-            <LearningPathsContext.Provider value={paths}>{children}</LearningPathsContext.Provider>
+            <OutboxSyncProvider>
+              <LearningPathsContext.Provider value={paths}>{children}</LearningPathsContext.Provider>
+            </OutboxSyncProvider>
           </AuthContext.Provider>
         </ToastProvider>
       </MemoryRouter>

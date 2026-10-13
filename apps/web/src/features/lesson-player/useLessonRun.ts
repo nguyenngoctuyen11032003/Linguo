@@ -28,7 +28,8 @@ import {
 } from './playerMachine';
 import { completeLesson, getLesson, saveCursor, startLesson, submitExercise } from './service';
 import type { ExerciseUiState, LessonRunApi, LessonStep, SubmitMeta } from './types';
-import { useOutboxSync, type OutboxOutcome } from './useOutboxSync';
+import { useOutboxSyncContext } from './OutboxSyncProvider';
+import type { OutboxOutcome } from './useOutboxSync';
 
 export const LESSON_CACHE_PREFIX = 'linguo-lesson-v1:';
 export const CURSOR_DEBOUNCE_MS = 500;
@@ -155,7 +156,9 @@ export function useLessonRun(lessonId: string): LessonRunApi {
     [applyOutcome],
   );
 
-  const { pendingCount } = useOutboxSync(client, userId, onOutboxResult);
+  // The provider (mounted for every signed-in screen) replays the outbox; this lesson only listens to its results.
+  const { pendingCount, subscribe } = useOutboxSyncContext();
+  useEffect(() => subscribe(onOutboxResult), [subscribe, onOutboxResult]);
 
   // ---- loading -------------------------------------------------------------------------------------------
   useEffect(() => {

@@ -45,6 +45,8 @@ export default tseslint.config(
             'ProfileContext',
             'LearningPathsContext',
             'useLearningPaths',
+            'OutboxSyncContext',
+            'useOutboxSyncContext',
           ],
         },
       ],

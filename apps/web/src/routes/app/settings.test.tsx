@@ -3,12 +3,15 @@ import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { stubMatchMedia } from '../../../tests/unit/match-media';
 import { renderWithProviders, TEST_USER_ID } from '../../../tests/unit/render';
+import { result, submitArgs } from '@/features/lesson-player/lesson-fixtures';
+import { createOutbox } from '@/features/lesson-player/outbox';
 import { SettingsPage } from './SettingsPage';
 
 const mocks = vi.hoisted(() => ({
   updateProfile: vi.fn(),
   updatePreferences: vi.fn(),
   signOut: vi.fn(),
+  rpc: vi.fn(),
 }));
 
 function deferred<T = void>() {
@@ -23,15 +26,22 @@ function deferred<T = void>() {
 vi.mock('@/features/profile/service', () => ({ updateProfile: mocks.updateProfile }));
 vi.mock('@/features/preferences/service', () => ({ updatePreferences: mocks.updatePreferences }));
 vi.mock('@/lib/supabase', () => ({
-  getSupabase: () => ({ auth: { signOut: mocks.signOut } }),
-  requireSupabase: () => ({ auth: { signOut: mocks.signOut } }),
+  getSupabase: () => ({ auth: { signOut: mocks.signOut }, rpc: mocks.rpc }),
+  requireSupabase: () => ({ auth: { signOut: mocks.signOut }, rpc: mocks.rpc }),
 }));
 
 beforeEach(() => {
   mocks.updateProfile.mockReset().mockResolvedValue(undefined);
   mocks.updatePreferences.mockReset().mockResolvedValue(undefined);
   mocks.signOut.mockReset().mockResolvedValue({ error: null });
+  // Offline by default: queued lesson answers stay in the outbox.
+  mocks.rpc.mockReset().mockResolvedValue({ data: null, error: { message: 'TypeError: Failed to fetch', code: '' }, status: 0 });
 });
+
+/** One lesson answer waiting in the offline outbox of the test user. */
+function queueAnswer() {
+  createOutbox(TEST_USER_ID).add({ args: submitArgs(), queueIndex: 0 });
+}
 
 describe('SettingsPage', () => {
   it('pre-fills the profile and saves a trimmed display name', async () => {
@@ -82,6 +92,30 @@ describe('SettingsPage', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
     await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent(/^\/$/));
     expect(mocks.signOut).toHaveBeenCalled();
+  });
+
+  it('warns before signing out while lesson answers wait to sync', async () => {
+    queueAnswer();
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
+    expect(await screen.findByRole('alert')).toHaveTextContent('Còn 1 câu trả lời chưa đồng bộ lên máy chủ.');
+    expect(mocks.signOut).not.toHaveBeenCalled();
+    await userEvent.click(screen.getByRole('button', { name: 'Vẫn đăng xuất' }));
+    await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent(/^\/$/));
+    expect(mocks.signOut).toHaveBeenCalledTimes(1);
+  });
+
+  it('can sync the waiting answers from the warning, then signs out without asking again', async () => {
+    queueAnswer();
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
+    await screen.findByRole('alert');
+    mocks.rpc.mockResolvedValue({ data: result(), error: null });
+    await userEvent.click(screen.getByRole('button', { name: 'Đồng bộ ngay' }));
+    await waitFor(() => expect(screen.queryByRole('alert')).not.toBeInTheDocument());
+    expect(createOutbox(TEST_USER_ID).list()).toEqual([]);
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
+    await waitFor(() => expect(mocks.signOut).toHaveBeenCalledTimes(1));
   });
 
   it('falls back to a local sign-out when the server call fails, then leaves', async () => {
