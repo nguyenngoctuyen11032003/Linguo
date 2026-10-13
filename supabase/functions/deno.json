@@ -1,0 +1,26 @@
+{
+  "lock": false,
+  "imports": {
+    "zod": "npm:zod@4.6.7",
+    "@supabase/supabase-js": "npm:@supabase/supabase-js@2.117.3"
+  },
+  "compilerOptions": {
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "fmt": {
+    "lineWidth": 140,
+    "indentWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "semiColons": true
+  }
+}

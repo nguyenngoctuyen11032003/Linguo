@@ -41,6 +41,38 @@ jobs:
       - run: pnpm test
       - run: pnpm build
 
+  functions:
+    name: Edge Functions (Deno check, lint, test)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: supabase/functions
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      # Needs no node_modules: compares the copy with packages/shared/src/ai/contract.ts.
+      - name: AI contract copy in sync (shared ↔ functions)
+        working-directory: .
+        run: node scripts/sync-ai-contract.mjs --check
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: 2.9.6
+      - run: deno check .
+      - run: deno lint
+      - name: deno test
+        # `deno test` fails with "No test modules found" while only _shared/ exists.
+        run: |
+          shopt -s globstar nullglob
+          tests=(**/*_test.ts **/*.test.ts)
+          if [ ${#tests[@]} -eq 0 ]; then
+            echo "No Deno tests yet."
+            exit 0
+          fi
+          deno test --allow-env
+
   e2e:
     name: Playwright (iPhone / Android)
     runs-on: ubuntu-24.04
