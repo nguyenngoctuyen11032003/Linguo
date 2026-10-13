@@ -1,8 +1,11 @@
+import { StrictMode } from 'react';
 import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Route, Routes } from 'react-router';
+import { Route, Routes, useNavigate } from 'react-router';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { REFERENCE, TEST_PATH } from '../../../../tests/unit/learning-fixtures';
+import { addDaysIso, DEFAULT_TIMEZONE, type OnboardingDraftData } from '@linguo/shared';
+import { todayIso } from '@/lib/dates';
+import { REFERENCE, TEST_KO_PATH, TEST_PATH } from '../../../../tests/unit/learning-fixtures';
 import { renderWithProviders } from '../../../../tests/unit/render';
 import { OnboardingPage } from './OnboardingPage';
 
@@ -25,6 +28,16 @@ const page = (paths: Parameters<typeof renderWithProviders>[1] = {}) =>
     { route: '/app/bat-dau', paths: { paths: [] }, ...paths },
   );
 
+const today = todayIso(DEFAULT_TIMEZONE);
+const FULL: OnboardingDraftData = { language: 'en', startPoint: 'some', currentLevel: 'a2', goalType: 'daily_communication', targetLevel: 'b1' };
+const seed = (step: number, data: OnboardingDraftData) => localStorage.setItem('linguo-onboarding-draft', JSON.stringify({ version: 1, step, data }));
+const heading = (name: string) => screen.getByRole('heading', { level: 1, name });
+const location = () => screen.getByTestId('location');
+const routes = (
+  <Routes>
+    <Route path="/app/bat-dau" element={<OnboardingPage />} />
+  </Routes>
+);
 const next = () => userEvent.click(screen.getByRole('button', { name: 'Tiếp tục' }));
 
 beforeEach(() => {
@@ -143,5 +156,170 @@ describe('OnboardingPage', () => {
     expect(screen.getByText('Cần tăng thời lượng')).toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: 'Dùng 397 phút/ngày' }));
     await waitFor(() => expect(screen.getByText('Thời hạn khá căng')).toBeInTheDocument());
+  });
+
+  it('preselects an available ?lang on a fresh step 2 and ignores it when taken', () => {
+    seed(4, FULL);
+    const first = renderWithProviders(routes, { route: '/app/bat-dau?lang=ko', paths: { paths: [] } });
+    expect(heading('Bạn đang ở đâu?')).toBeInTheDocument();
+    expect(location()).toHaveTextContent('lang=ko');
+    expect(location()).toHaveTextContent('buoc=2');
+    expect(JSON.parse(localStorage.getItem('linguo-onboarding-draft') ?? '{}').data).toEqual({ language: 'ko' });
+    first.unmount();
+
+    seed(4, FULL);
+    renderWithProviders(routes, { route: '/app/bat-dau?lang=ko', paths: { paths: [TEST_KO_PATH] } });
+    expect(heading('Mục tiêu của bạn')).toBeInTheDocument();
+  });
+
+  it('resets downstream answers when the language changes', async () => {
+    page();
+    await userEvent.click(screen.getByRole('radio', { name: /Tiếng Anh/ }));
+    await next();
+    await userEvent.click(screen.getByRole('radio', { name: 'Tôi đã học một ít' }));
+    await userEvent.click(screen.getByRole('button', { name: 'Quay lại' }));
+    await userEvent.click(screen.getByRole('radio', { name: /Tiếng Hàn/ }));
+    await next();
+    expect(screen.getByRole('radio', { name: 'Tôi đã học một ít' })).not.toBeChecked();
+    expect(screen.getByRole('button', { name: 'Tiếp tục' })).toBeDisabled();
+  });
+
+  it('skips the level step when the start point changes from some to new', async () => {
+    page();
+    await userEvent.click(screen.getByRole('radio', { name: /Tiếng Anh/ }));
+    await next();
+    await userEvent.click(screen.getByRole('radio', { name: 'Tôi đã học một ít' }));
+    await next();
+    expect(heading('Trình độ hiện tại của bạn')).toBeInTheDocument();
+    await userEvent.click(screen.getByRole('button', { name: 'Quay lại' }));
+    await userEvent.click(screen.getByRole('radio', { name: 'Tôi mới hoàn toàn' }));
+    await next();
+    expect(heading('Mục tiêu của bạn')).toBeInTheDocument();
+  });
+
+  it('keeps a sensible target level when the current level changes', async () => {
+    seed(3, FULL);
+    page();
+    await userEvent.click(screen.getByRole('radio', { name: /^B1/ }));
+    await next();
+    expect(screen.getByRole('radio', { name: 'Giao tiếp đời sống' })).toBeChecked();
+    expect(screen.getByRole('radio', { name: /^B2/ })).toBeChecked();
+  });
+
+  it('lands on the right step when a restored draft is no longer valid', () => {
+    seed(6, { ...FULL, deadlineMode: 'date', targetDate: addDaysIso(today, 4000) });
+    const tooFar = page();
+    expect(heading('Bạn học được bao lâu?')).toBeInTheDocument();
+    expect(screen.getByText('Ngày mục tiêu quá xa (tối đa 10 năm).')).toBeInTheDocument();
+    tooFar.unmount();
+
+    seed(6, FULL);
+    const ok = page();
+    expect(heading('Xem lại lộ trình')).toBeInTheDocument();
+    ok.unmount();
+
+    seed(5, FULL);
+    renderWithProviders(routes, { route: '/app/bat-dau', paths: { paths: [TEST_PATH] } });
+    expect(heading('Bạn muốn học ngôn ngữ nào?')).toBeInTheDocument();
+    expect(screen.getByRole('radio', { name: /Tiếng Anh/ })).not.toBeChecked();
+  });
+
+  it('rejects a deadline of 120 months', async () => {
+    seed(5, FULL);
+    page();
+    await userEvent.click(screen.getByRole('radio', { name: 'Trong số tháng' }));
+    expect(screen.getByText('Nhập số tháng')).toBeInTheDocument();
+    await userEvent.type(screen.getByLabelText('Số tháng'), '120');
+    expect(screen.getByText('Ngày mục tiêu quá xa (tối đa 10 năm).')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Tiếp tục' })).toBeDisabled();
+  });
+
+  it('explains an all-zero custom schedule', () => {
+    seed(5, { ...FULL, schedulePreset: 'custom', weeklyMinutes: [0, 0, 0, 0, 0, 0, 0] });
+    page();
+    expect(screen.getByText('Hãy chọn ít nhất một ngày học.')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Tiếp tục' })).toBeDisabled();
+  });
+
+  it('goes back one step with the back button and mirrors the step in the URL', async () => {
+    page();
+    expect(location()).toHaveTextContent('buoc=1');
+    await userEvent.click(screen.getByRole('radio', { name: /Tiếng Anh/ }));
+    await next();
+    expect(heading('Bạn đang ở đâu?')).toBeInTheDocument();
+    expect(location()).toHaveTextContent('buoc=2');
+    await userEvent.click(screen.getByRole('button', { name: 'Quay lại' }));
+    expect(heading('Bạn muốn học ngôn ngữ nào?')).toBeInTheDocument();
+    expect(location()).toHaveTextContent('buoc=1');
+  });
+
+  it('follows the buoc param on history navigation (hardware back)', async () => {
+    function HistoryBack() {
+      const navigate = useNavigate();
+      return <button onClick={() => void navigate(-1)}>history back</button>;
+    }
+    renderWithProviders(
+      <>
+        {routes}
+        <HistoryBack />
+      </>,
+      { route: '/app/bat-dau', paths: { paths: [] } },
+    );
+    await userEvent.click(screen.getByRole('radio', { name: /Tiếng Anh/ }));
+    await next();
+    expect(heading('Bạn đang ở đâu?')).toBeInTheDocument();
+    await userEvent.click(screen.getByRole('button', { name: 'history back' }));
+    expect(heading('Bạn muốn học ngôn ngữ nào?')).toBeInTheDocument();
+    expect(location()).toHaveTextContent('buoc=1');
+  });
+
+  it('hides the back button on step 1 when there is no path to return to', () => {
+    page();
+    expect(screen.queryByRole('button', { name: 'Quay lại' })).not.toBeInTheDocument();
+  });
+
+  it('tells the user when every language already has a path', () => {
+    renderWithProviders(routes, { route: '/app/bat-dau', paths: { paths: [TEST_PATH, TEST_KO_PATH] } });
+    expect(screen.getByText('Bạn đã có lộ trình cho cả hai ngôn ngữ.')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Tiếp tục' })).not.toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Về trang chủ' })).toHaveAttribute('href', '/app');
+  });
+
+  it('shows the corrupt-draft toast exactly once under StrictMode', async () => {
+    localStorage.setItem('linguo-onboarding-draft', '{not json');
+    renderWithProviders(<StrictMode>{routes}</StrictMode>, { route: '/app/bat-dau', paths: { paths: [] } });
+    expect(await screen.findAllByText(/Bản nháp cũ không dùng được nữa/)).toHaveLength(1);
+  });
+
+  it('reloads paths and offers a way home when the language already has a path', async () => {
+    const reload = vi.fn();
+    seed(6, FULL);
+    page({ paths: { paths: [], reload } });
+    mocks.createPath.mockRejectedValue({ code: 'P0001', message: 'path_exists_for_language' });
+    await userEvent.click(screen.getByRole('button', { name: 'Tạo lộ trình' }));
+    expect(await screen.findByRole('alert')).toHaveTextContent('Bạn đã có lộ trình cho ngôn ngữ này.');
+    expect(reload).toHaveBeenCalledTimes(1);
+    expect(screen.getByRole('link', { name: 'Về trang chủ' })).toHaveAttribute('href', '/app');
+  });
+
+  it('applies the suggested date from the review step', async () => {
+    seed(6, { ...FULL, deadlineMode: 'weeks', deadlineAmount: 20 });
+    page();
+    await userEvent.click(await screen.findByRole('button', { name: /^Dời ngày mục tiêu sang/ }));
+    await userEvent.click(screen.getByRole('button', { name: /Sửa thời hạn/ }));
+    expect(heading('Bạn học được bao lâu?')).toBeInTheDocument();
+    expect(screen.getByRole('radio', { name: 'Chọn ngày mục tiêu' })).toBeChecked();
+    expect((screen.getByLabelText('Ngày mục tiêu') as HTMLInputElement).value).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+  });
+
+  it('calls the RPC once on a double click', async () => {
+    seed(6, FULL);
+    page();
+    let resolve: (p: typeof TEST_PATH) => void = () => undefined;
+    mocks.createPath.mockReturnValue(new Promise((r) => (resolve = r)));
+    await userEvent.dblClick(screen.getByRole('button', { name: 'Tạo lộ trình' }));
+    expect(mocks.createPath).toHaveBeenCalledTimes(1);
+    resolve(TEST_PATH);
+    expect(await screen.findByRole('heading', { name: 'Lộ trình đã sẵn sàng!' })).toBeInTheDocument();
   });
 });
