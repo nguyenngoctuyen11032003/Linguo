@@ -16319,3 +16319,2984 @@ select content_private.import_diagnostic_bundle($diagnostic${
     }
   ]
 }$diagnostic$::jsonb);
+select public.import_exam_content_bundle($exam${
+  "bundle_version": 1,
+  "forms": [
+    {
+      "content_hash": "fd2201496d52e63bf1b851505247893e35a1db7c9e18bb9e9081ed95a034137b",
+      "description_vi": "Bài luyện mô phỏng trình độ A2: 8 câu nghe, 10 câu đọc và 1 email ngắn. Nội dung do Linguo tự soạn, không phải đề thi chính thức; kết quả cho biết bạn đạt mức A2 ở từng phần hay chưa, không quy đổi sang điểm của kỳ thi nào.",
+      "family": "cefr",
+      "id": "526d0573-1cfe-5892-bef2-dacef974afb1",
+      "is_demo": true,
+      "key": "en:exam:cefr-a2-mock-1",
+      "language_code": "en",
+      "level_from": "a1",
+      "level_to": "a2",
+      "questions": [
+        {
+          "answer": "o9f7a32d1",
+          "content_hash": "6c4b5238fecc726122853cb1c3fa60de9e725d511288629ade2455d20f574063",
+          "explanation": {
+            "vi": "Người nữ tan làm lúc 6 giờ nên đề nghị xem suất 8 giờ, và người nam đồng ý (“eight it is”). 6:30 (“half past six”) là bẫy: suất đó có thật nhưng họ không chọn vì không kịp."
+          },
+          "id": "fd02370c-2c95-5f60-9f8b-e916104a9fe7",
+          "key": "en:examq:cefr-a2-m1-l01",
+          "kind": "mcq",
+          "level_code": "a1",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.",
+            "options": [
+              {
+                "id": "o66d76d47",
+                "lang": "en",
+                "text": "6:00"
+              },
+              {
+                "id": "o9f7a32d1",
+                "lang": "en",
+                "text": "8:00"
+              },
+              {
+                "id": "oc3efc0f5",
+                "lang": "en",
+                "text": "6:30"
+              }
+            ],
+            "stem": "What time will they see the film?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_listen_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "Woman: Shall we see the new film tonight?\nMan: Sure. What time does it start?\nWoman: There's one at half past six, but I finish work at six. Let's go to the eight o'clock one.\nMan: OK, eight it is.",
+          "section": "listening",
+          "seq": 1
+        },
+        {
+          "answer": "od9bdebe8",
+          "content_hash": "ed74e747a14e97da0970ba47eee214eb71efb413f760527ff3231407a6f2eb40",
+          "explanation": {
+            "vi": "Giá gốc là 45 bảng nhưng hôm nay giảm 20%, nên người nam trả 36 bảng (“you pay thirty-six pounds”). 45 bảng là bẫy vì được nghe đầu tiên; còn 20 là phần trăm giảm giá chứ không phải số tiền."
+          },
+          "id": "76d879a5-0b25-5902-b006-47c489401e11",
+          "key": "en:examq:cefr-a2-m1-l02",
+          "kind": "mcq",
+          "level_code": "a2",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.",
+            "options": [
+              {
+                "id": "oe06a34dd",
+                "lang": "en",
+                "text": "£45"
+              },
+              {
+                "id": "od9bdebe8",
+                "lang": "en",
+                "text": "£36"
+              },
+              {
+                "id": "ob065d990",
+                "lang": "en",
+                "text": "£20"
+              }
+            ],
+            "stem": "How much does the man pay for the trainers?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_listen_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "Man: Excuse me, how much are these trainers?\nWoman: They're forty-five pounds. But everything in the shop is twenty percent off today, so you pay thirty-six pounds.\nMan: Great. I'll take them.",
+          "section": "listening",
+          "seq": 2
+        },
+        {
+          "answer": "o0c5e516b",
+          "content_hash": "b19e1e78c68b21b94080dc24bfb5607f49ce4c74e8338423fda7e1e3014d20c9",
+          "explanation": {
+            "vi": "Anna nói bà của cô sẽ đến thăm vào cuối tuần (“My grandmother is coming to visit us”). Phương án “The café is closed” là bẫy vì có nhắc quán cà phê, nhưng đó chỉ là nơi hẹn, không phải lý do."
+          },
+          "id": "7d9f0e66-d0de-5358-a20d-d91511077443",
+          "key": "en:examq:cefr-a2-m1-l03",
+          "kind": "mcq",
+          "level_code": "a2",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe tin nhắn thoại và chọn đáp án đúng cho câu hỏi.",
+            "options": [
+              {
+                "id": "odcdfb7b7",
+                "lang": "en",
+                "text": "The café is closed."
+              },
+              {
+                "id": "ob4d9e240",
+                "lang": "en",
+                "text": "She has to work."
+              },
+              {
+                "id": "o0c5e516b",
+                "lang": "en",
+                "text": "Her grandmother is visiting."
+              }
+            ],
+            "stem": "Why can't Anna meet Tom on Saturday?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_listen_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "Woman: Hi Tom, it's Anna. I'm sorry, but I can't meet you at the café on Saturday. My grandmother is coming to visit us for the weekend. Can we meet on Sunday morning instead? Call me back. Bye!",
+          "section": "listening",
+          "seq": 3
+        },
+        {
+          "answer": "o378e733d",
+          "content_hash": "a84e158249772d19ea4961e2f9f0bedcfc2f2c0ece744b23dc22e64425cbf034",
+          "explanation": {
+            "vi": "“I left my umbrella here” (tôi để quên ô ở đây) và “lost property” (đồ thất lạc) cho thấy người nam đang tìm lại đồ bị quên. Phương án a là bẫy vì có từ umbrella, nhưng anh không mua ô mới."
+          },
+          "id": "b501404a-6028-52b4-ab02-7d896722ad5a",
+          "key": "en:examq:cefr-a2-m1-l04",
+          "kind": "mcq",
+          "level_code": "a2",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn hội thoại và chọn câu mô tả đúng việc đang diễn ra.",
+            "options": [
+              {
+                "id": "oa263ce63",
+                "lang": "en",
+                "text": "He is buying a new umbrella."
+              },
+              {
+                "id": "o707cbf4f",
+                "lang": "en",
+                "text": "He is asking about the weather."
+              },
+              {
+                "id": "o378e733d",
+                "lang": "en",
+                "text": "He is looking for something he lost."
+              }
+            ],
+            "stem": "What is the man doing?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_listen_gist",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "Man: Excuse me, I think I left my umbrella here yesterday. It's black with a wooden handle.\nWoman: Let me check the lost property box... Is this it?\nMan: Yes, that's it! Thank you so much.",
+          "section": "listening",
+          "seq": 4
+        },
+        {
+          "answer": "od02790ad",
+          "content_hash": "405c66df1baf90ae66d7a473f7724113133446d9b9523c3c70f2e1b5196fa295",
+          "explanation": {
+            "vi": "Cô giáo nhắc về chuyến tham quan bảo tàng khoa học (“the school trip to the science museum”) và hạn nộp giấy đồng ý. Phương án a và c là bẫy vì lặp lại từ “Friday” và “science”, nhưng không có bài kiểm tra hay giáo viên mới nào."
+          },
+          "id": "50deb48d-2408-5ab5-9c9a-7a6a66a936e9",
+          "key": "en:examq:cefr-a2-m1-l05",
+          "kind": "mcq",
+          "level_code": "a2",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn nói và chọn chủ đề chính.",
+            "options": [
+              {
+                "id": "od02790ad",
+                "lang": "en",
+                "text": "a school trip"
+              },
+              {
+                "id": "ob4ebd032",
+                "lang": "en",
+                "text": "a new science teacher"
+              },
+              {
+                "id": "ofde4fd7e",
+                "lang": "en",
+                "text": "a test next Friday"
+              }
+            ],
+            "stem": "What is the teacher mainly talking about?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_listen_gist",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "Woman: Good morning, everyone. Before we start today's lesson, I want to remind you about the school trip to the science museum next Friday. Please bring the form, signed by your parents, by Wednesday.",
+          "section": "listening",
+          "seq": 5
+        },
+        {
+          "answer": "offd97a0e",
+          "content_hash": "d9ffab6e9ead3513da93ea93de899b17d1f4ec0a34b6e9494347a2f5e398350d",
+          "explanation": {
+            "vi": "“Will now leave from platform seven” nghĩa là bây giờ tàu chạy từ sân ga số 7. Sân ga số 4 là bẫy vì đó là chỗ cũ (“was leaving from”); còn 10 là số phút tàu bị trễ."
+          },
+          "id": "23d1847b-6a82-5b0c-ab69-2950c82093d6",
+          "key": "en:examq:cefr-a2-m1-l06",
+          "kind": "mcq",
+          "level_code": "a2",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe thông báo và chọn đáp án đúng cho câu hỏi.",
+            "options": [
+              {
+                "id": "offd97a0e",
+                "lang": "en",
+                "text": "Platform 7"
+              },
+              {
+                "id": "o55452bd6",
+                "lang": "en",
+                "text": "Platform 10"
+              },
+              {
+                "id": "o544701d9",
+                "lang": "en",
+                "text": "Platform 4"
+              }
+            ],
+            "stem": "Which platform does the train to Manchester leave from now?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_listen_announcement",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "Attention, please. The train to Manchester, which was leaving from platform four, will now leave from platform seven. The train is also running ten minutes late. We are sorry for the delay.",
+          "section": "listening",
+          "seq": 6
+        },
+        {
+          "answer": "o42b1f3d8",
+          "content_hash": "52ccf393f7d37252972cae364af8e67afab23a13cb386e090365b948a056e067",
+          "explanation": {
+            "vi": "Hồ bơi đóng cửa hôm nay để vệ sinh (“closed today for cleaning”), nên khách không thể bơi. Phòng gym và sân tennis vẫn mở như thường (“open as usual”), vì vậy hai phương án kia sai."
+          },
+          "id": "dba0467e-2efd-54d8-956a-38586d1676fd",
+          "key": "en:examq:cefr-a2-m1-l07",
+          "kind": "mcq",
+          "level_code": "a2",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe thông báo và chọn đáp án đúng cho câu hỏi.",
+            "options": [
+              {
+                "id": "o42b1f3d8",
+                "lang": "en",
+                "text": "go swimming"
+              },
+              {
+                "id": "of62fae76",
+                "lang": "en",
+                "text": "play tennis"
+              },
+              {
+                "id": "oabba03dd",
+                "lang": "en",
+                "text": "use the gym"
+              }
+            ],
+            "stem": "What can't visitors do today?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_listen_announcement",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "Welcome to City Sports Centre. The swimming pool is closed today for cleaning. It will open again tomorrow at seven a.m. The gym and the tennis courts are open as usual.",
+          "section": "listening",
+          "seq": 7
+        },
+        {
+          "answer": "o7e19524b",
+          "content_hash": "8044f72b54b5d1d8bedad3167d14a5625adb385cc0c54718fe80144044fe2744",
+          "explanation": {
+            "vi": "“Will close in fifteen minutes” nghĩa là siêu thị sẽ đóng cửa sau 15 phút nữa. Phương án c sai vì khách được mời mang hàng đến quầy thanh toán ngay, tức là quầy vẫn đang mở."
+          },
+          "id": "d1bbc919-b952-53fa-b1e8-83089d5690d6",
+          "key": "en:examq:cefr-a2-m1-l08",
+          "kind": "mcq",
+          "level_code": "a1",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe thông báo và chọn đáp án đúng cho câu hỏi.",
+            "options": [
+              {
+                "id": "o7e19524b",
+                "lang": "en",
+                "text": "The supermarket will close soon."
+              },
+              {
+                "id": "o6f6d8ed3",
+                "lang": "en",
+                "text": "The supermarket is opening now."
+              },
+              {
+                "id": "o28e4cb38",
+                "lang": "en",
+                "text": "The checkouts are closed."
+              }
+            ],
+            "stem": "What does the announcement say?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_listen_announcement",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "Good afternoon, shoppers. The supermarket will close in fifteen minutes. Please take your shopping to the checkouts now. Thank you.",
+          "section": "listening",
+          "seq": 8
+        },
+        {
+          "answer": "oed7d3cf6",
+          "content_hash": "047b0ca15619f64a0036623ed3e6daa457ece464e38ffc72fd6b268cfdba5957",
+          "explanation": {
+            "vi": "“Do not feed” nghĩa là không cho ăn, giống “must not give food” (không được đưa thức ăn). Phương án a là bẫy vì có chữ food, nhưng biển báo không nói về việc bán thức ăn."
+          },
+          "id": "ba27ab2b-c4e5-5ad9-b378-61478455b30b",
+          "key": "en:examq:cefr-a2-m1-r01",
+          "kind": "mcq",
+          "level_code": "a1",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc biển báo và chọn câu có nghĩa giống nhất.",
+            "options": [
+              {
+                "id": "o8bb38aa9",
+                "lang": "en",
+                "text": "You can buy food for the animals here."
+              },
+              {
+                "id": "oe1fc529b",
+                "lang": "en",
+                "text": "The animals are hungry."
+              },
+              {
+                "id": "oed7d3cf6",
+                "lang": "en",
+                "text": "You must not give food to the animals."
+              }
+            ],
+            "passage": "PLEASE DO NOT FEED THE ANIMALS",
+            "stem": "What does the sign say?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_read_notice",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 9
+        },
+        {
+          "answer": "of0156b1f",
+          "content_hash": "2f236412e718caad617174b36f9c689c3b5301f7acb816ef5474c92b02854868",
+          "explanation": {
+            "vi": "“Within 14 days” là trong vòng 14 ngày, tức là hai tuần hoặc sớm hơn, và “return” = “bring back”. Phương án a là bẫy vì con số 14 chỉ số ngày, không phải số sách được mượn."
+          },
+          "id": "0ccc8dd5-dfb6-541f-9b0b-e6cb872f3a6b",
+          "key": "en:examq:cefr-a2-m1-r02",
+          "kind": "mcq",
+          "level_code": "a2",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc thông báo và chọn câu có nghĩa giống nhất.",
+            "options": [
+              {
+                "id": "ob03bd9b8",
+                "lang": "en",
+                "text": "The library is closed for 14 days."
+              },
+              {
+                "id": "of0156b1f",
+                "lang": "en",
+                "text": "You must bring books back in two weeks or less."
+              },
+              {
+                "id": "o6d4e7f81",
+                "lang": "en",
+                "text": "You can borrow 14 books at a time."
+              }
+            ],
+            "passage": "Library books must be returned within 14 days.",
+            "stem": "What does the notice say?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_read_notice",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 10
+        },
+        {
+          "answer": "o5c1b41c4",
+          "content_hash": "2f05446d8f4c6d998c3de1eedfec9f29e628b07ce43b5de7933d135c73d5d2ca",
+          "explanation": {
+            "vi": "Bố sẽ đón Mia lúc 5:30 thay vì 5:00, nên Mia cần chờ đến 5:30. Phương án b sai vì người gọi điện là bố (“Dad called”), Mia không cần gọi lại; lời nhắn chỉ dặn đừng quên giày chứ không bảo mua giày mới."
+          },
+          "id": "d337141c-17f9-521a-910b-525f6f9e49dc",
+          "key": "en:examq:cefr-a2-m1-r03",
+          "kind": "mcq",
+          "level_code": "a2",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc lời nhắn và chọn việc người nhận cần làm.",
+            "options": [
+              {
+                "id": "o5d2a9a6f",
+                "lang": "en",
+                "text": "Buy new football boots."
+              },
+              {
+                "id": "oeb0f3eb9",
+                "lang": "en",
+                "text": "Call her dad at 5:00."
+              },
+              {
+                "id": "o5c1b41c4",
+                "lang": "en",
+                "text": "Wait for her dad until 5:30."
+              }
+            ],
+            "passage": "Mia,\nDad called. He'll pick you up from football at 5:30, not 5:00. Don't forget your boots!\nMum",
+            "stem": "What should Mia do?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_read_notice",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 11
+        },
+        {
+          "answer": "o98b7046d",
+          "content_hash": "6aee16bbf9491a0355dc337769ac0f35b23330d89b9505652a8d74200528f8d1",
+          "explanation": {
+            "vi": "Chủ ngữ He ở thì hiện tại đơn nên động từ thêm -s: “He works”. Người Việt hay quên -s (“He work”) vì tiếng Việt không chia động từ; “working” thì cần có “is” đứng trước."
+          },
+          "id": "4c8c4344-bb98-5993-bdc8-94ca3e279635",
+          "key": "en:examq:cefr-a2-m1-r04",
+          "kind": "mcq",
+          "level_code": "a1",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Chọn từ phù hợp nhất để điền vào chỗ trống.",
+            "options": [
+              {
+                "id": "ocb9076fa",
+                "lang": "en",
+                "text": "work"
+              },
+              {
+                "id": "o9c6b99f7",
+                "lang": "en",
+                "text": "working"
+              },
+              {
+                "id": "o98b7046d",
+                "lang": "en",
+                "text": "works"
+              }
+            ],
+            "passage": "My brother is a doctor. He ___ in a hospital in the city centre.",
+            "stem": "Choose the word that best fits the gap.",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_read_gap",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 12
+        },
+        {
+          "answer": "o03899e14",
+          "content_hash": "152030b49741bd82ae98d38947f4dadd45b0479365ff0ce182daae60f0a5e3be",
+          "explanation": {
+            "vi": "Với thì hiện tại hoàn thành, “since” đi với mốc thời gian (since 2019), còn “for” đi với khoảng thời gian (for five years). “From” cần có “to/until” đi kèm và không dùng kiểu này với “I've lived”."
+          },
+          "id": "662aa856-c4c7-5c33-b463-df60da3c2ce0",
+          "key": "en:examq:cefr-a2-m1-r05",
+          "kind": "mcq",
+          "level_code": "a2",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Chọn từ phù hợp nhất để điền vào chỗ trống.",
+            "options": [
+              {
+                "id": "obf668a66",
+                "lang": "en",
+                "text": "for"
+              },
+              {
+                "id": "o35950fc0",
+                "lang": "en",
+                "text": "from"
+              },
+              {
+                "id": "o03899e14",
+                "lang": "en",
+                "text": "since"
+              }
+            ],
+            "passage": "I've lived in this town ___ 2019.",
+            "stem": "Choose the word that best fits the gap.",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_read_gap",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 13
+        },
+        {
+          "answer": "o2f207e67",
+          "content_hash": "8aabaf480348aa899cafef35617eb1f611db8933f7c871ae8895ec96b4289087",
+          "explanation": {
+            "vi": "Tính từ đuôi -ed tả cảm xúc của người (I'm interested in… = tôi thích, quan tâm), đuôi -ing tả tính chất của sự vật (History is interesting). “I'm interesting” nghĩa là “tôi là người thú vị”, không hợp với “in history”."
+          },
+          "id": "a53e8972-2945-50c0-af8c-03ba5df2a386",
+          "key": "en:examq:cefr-a2-m1-r06",
+          "kind": "mcq",
+          "level_code": "a2",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Chọn từ phù hợp nhất để điền vào chỗ trống.",
+            "options": [
+              {
+                "id": "o79fe8c52",
+                "lang": "en",
+                "text": "interesting"
+              },
+              {
+                "id": "o2f207e67",
+                "lang": "en",
+                "text": "interested"
+              },
+              {
+                "id": "o85bbe4b9",
+                "lang": "en",
+                "text": "interest"
+              }
+            ],
+            "passage": "I'm really ___ in history, so I read a lot of books about it.",
+            "stem": "Choose the word that best fits the gap.",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_read_gap",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 14
+        },
+        {
+          "answer": "of3da0cc7",
+          "content_hash": "232149bb5f8e8dd16067fc8f6c8da0523f0a16da92575583f3b675e4ac8e83be",
+          "explanation": {
+            "vi": "Lucy ở với cô và chú (“my aunt and uncle”), tức là người trong gia đình. Phương án a là bẫy vì nhắc lâu đài (castle), nhưng cô ở căn hộ chứ không phải khách sạn; phương án c sai vì ở cùng họ hàng chứ không phải bạn bè."
+          },
+          "id": "ce638050-5595-537a-9574-39cbf14b70d5",
+          "key": "en:examq:cefr-a2-m1-r07",
+          "kind": "mcq",
+          "level_code": "a2",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc email và chọn đáp án đúng cho câu hỏi.",
+            "options": [
+              {
+                "id": "o10b803ab",
+                "lang": "en",
+                "text": "in a flat with some friends"
+              },
+              {
+                "id": "o7f15a877",
+                "lang": "en",
+                "text": "in a hotel near the castle"
+              },
+              {
+                "id": "of3da0cc7",
+                "lang": "en",
+                "text": "with members of her family"
+              }
+            ],
+            "passage": "Hi Sam,\nThanks for your email. I'm having a great time in Edinburgh! I'm staying with my aunt and uncle in a small flat near the castle. The weather isn't great – it rained on Monday and Tuesday – but today it's sunny, so we're going to walk up the hill behind the city this afternoon. Yesterday we went to a museum about the history of Scotland. It was free, and I loved it. I'm coming home next Saturday by train because it's cheaper than flying.\nSee you soon,\nLucy",
+            "stem": "Where is Lucy staying?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_read_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 15
+        },
+        {
+          "answer": "o855bd43b",
+          "content_hash": "2bdcf2436972a300a93111463823441858645b665ef1199d1b214b080d370de4",
+          "explanation": {
+            "vi": "“We're going to walk up the hill … this afternoon” cho biết chiều nay họ đi bộ lên đồi. Bảo tàng là việc đã làm hôm qua (“Yesterday”), còn đi tàu về nhà là thứ Bảy tuần sau."
+          },
+          "id": "1cb6ad82-27c4-5365-b838-5e6021347a58",
+          "key": "en:examq:cefr-a2-m1-r08",
+          "kind": "mcq",
+          "level_code": "a2",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc email và chọn đáp án đúng cho câu hỏi.",
+            "options": [
+              {
+                "id": "o855bd43b",
+                "lang": "en",
+                "text": "go for a walk"
+              },
+              {
+                "id": "o1af0e24f",
+                "lang": "en",
+                "text": "take a train home"
+              },
+              {
+                "id": "o9fc4b402",
+                "lang": "en",
+                "text": "visit a museum"
+              }
+            ],
+            "passage": "Hi Sam,\nThanks for your email. I'm having a great time in Edinburgh! I'm staying with my aunt and uncle in a small flat near the castle. The weather isn't great – it rained on Monday and Tuesday – but today it's sunny, so we're going to walk up the hill behind the city this afternoon. Yesterday we went to a museum about the history of Scotland. It was free, and I loved it. I'm coming home next Saturday by train because it's cheaper than flying.\nSee you soon,\nLucy",
+            "stem": "What is Lucy going to do this afternoon?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_read_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 16
+        },
+        {
+          "answer": "o2c75b0da",
+          "content_hash": "535456ab76f8d06b03f323a2dac70facd52ca9a746d38b495e16b788322d9acf",
+          "explanation": {
+            "vi": "“Because it's cheaper than flying” nghĩa là đi tàu rẻ hơn máy bay, tức là “costs less”. Email không nói đi tàu nhanh hơn hay Lucy sợ đi máy bay; thực tế máy bay thường nhanh hơn."
+          },
+          "id": "79cad1aa-fc97-5ddc-9d9b-f467df88ddaa",
+          "key": "en:examq:cefr-a2-m1-r09",
+          "kind": "mcq",
+          "level_code": "a2",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc email và chọn đáp án đúng cho câu hỏi.",
+            "options": [
+              {
+                "id": "o2c75b0da",
+                "lang": "en",
+                "text": "It costs less than flying."
+              },
+              {
+                "id": "o809de921",
+                "lang": "en",
+                "text": "It is faster than flying."
+              },
+              {
+                "id": "o081864fe",
+                "lang": "en",
+                "text": "She is afraid of flying."
+              }
+            ],
+            "passage": "Hi Sam,\nThanks for your email. I'm having a great time in Edinburgh! I'm staying with my aunt and uncle in a small flat near the castle. The weather isn't great – it rained on Monday and Tuesday – but today it's sunny, so we're going to walk up the hill behind the city this afternoon. Yesterday we went to a museum about the history of Scotland. It was free, and I loved it. I'm coming home next Saturday by train because it's cheaper than flying.\nSee you soon,\nLucy",
+            "stem": "Why is Lucy going home by train?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_read_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 17
+        },
+        {
+          "answer": "o3f7ce347",
+          "content_hash": "d19ce6cfe4a6ea28941a6d3e3432fdb726b602b7da7c8a0422c07f1a9ef3e93e",
+          "explanation": {
+            "vi": "Tin tuyển dụng yêu cầu làm được thứ Bảy và Chủ nhật, tức là cuối tuần (“at the weekend”). Phương án a sai vì “No experience is needed”; phương án c sai vì phải đến quán gặp Maria, không gửi email."
+          },
+          "id": "d5a9c3bf-6461-58a7-97e3-9f0ecc4f0d65",
+          "key": "en:examq:cefr-a2-m1-r10",
+          "kind": "mcq",
+          "level_code": "a2",
+          "points": 1,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc tin tuyển dụng và chọn câu đúng.",
+            "options": [
+              {
+                "id": "o680d7031",
+                "lang": "en",
+                "text": "You need to have experience."
+              },
+              {
+                "id": "oeba5f8fa",
+                "lang": "en",
+                "text": "You should send an email to Maria."
+              },
+              {
+                "id": "o3f7ce347",
+                "lang": "en",
+                "text": "You must be able to work at the weekend."
+              }
+            ],
+            "passage": "WAITER / WAITRESS WANTED\nGreen Street Café is looking for a part-time waiter or waitress. You must be 18 or older and able to work on Saturdays and Sundays. No experience is needed – we will train you. To apply, please come to the café and ask for Maria.",
+            "stem": "Which sentence about the job is true?",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_read_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 18
+        },
+        {
+          "answer": null,
+          "content_hash": "ea8359084970a25ea2374dedd642c4d1c4b7f891838fcce12289a54c30374f79",
+          "explanation": {
+            "vi": "Bài email A2 được chấm chủ yếu ở việc trả lời đủ cả ba ý và viết câu đúng, đơn giản. Lỗi hay gặp là quên một ý (thường là chỗ gặp), viết “meet in 6:30” thay vì “at 6:30”, hoặc thiếu lời chào và lời kết."
+          },
+          "id": "292b769c-f786-5528-8f8d-63734820f68f",
+          "key": "en:examq:cefr-a2-m1-w01",
+          "kind": "essay",
+          "level_code": "a2",
+          "points": 10,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Viết một email ngắn bằng tiếng Anh (khoảng 25–60 từ) trả lời đủ ba ý trong đề. Viết thành câu hoàn chỉnh, có lời chào và lời kết.",
+            "max_chars": 600,
+            "min_chars": 120,
+            "stem": "You want to go to the cinema with your English friend, Alex, on Saturday. Write an email to Alex. In your email:\n• suggest a film\n• say what time you want to meet\n• say where you want to meet.\nWrite 25 words or more.",
+            "stem_lang": "en"
+          },
+          "question_type": "cefr_write_email",
+          "rubric": [
+            {
+              "description_vi": "Trả lời đủ ba ý (gợi ý phim, giờ gặp, chỗ gặp) rõ ràng để Alex hiểu ngay; thiếu một ý là mất điểm phần này.",
+              "key": "content",
+              "label_vi": "Nội dung",
+              "max_points": 4
+            },
+            {
+              "description_vi": "Có lời chào (Hi Alex,), nội dung theo thứ tự hợp lý, lời kết và tên (See you soon, …); câu nối bằng and, but, because, so.",
+              "key": "organization",
+              "label_vi": "Bố cục",
+              "max_points": 3
+            },
+            {
+              "description_vi": "Dùng đúng cấu trúc rủ rê và hẹn giờ (Let's…, Shall we…?, at 6 o'clock, outside the cinema), chia động từ và chính tả đúng ở mức A2.",
+              "key": "language",
+              "label_vi": "Ngôn ngữ",
+              "max_points": 3
+            }
+          ],
+          "sample_answer": "Hi Alex,\nShall we go to the cinema on Saturday? Let's see the new space film – my brother says it's really exciting. It starts at 7 p.m., so let's meet at 6:30 outside the cinema on King Street. We can buy some popcorn before it starts.\nSee you soon,\nLinh",
+          "script": null,
+          "section": "writing",
+          "seq": 19
+        }
+      ],
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "scoring": {
+        "bands": [],
+        "pass_ratio": 0.6,
+        "section_max": {},
+        "source_note_vi": "Ngưỡng “đạt mức A2” (đúng từ 60% số điểm mỗi phần) do Linguo đặt để luyện tập, không phải quy định của CEFR hay của kỳ thi nào. Chưa được đối chiếu; bài viết email không được chấm tự động.",
+        "verified": false
+      },
+      "source_key": "src:linguo-demo",
+      "time_limits": {
+        "listening": 15,
+        "reading": 20,
+        "writing": 20
+      },
+      "title_vi": "CEFR A2 — Bài luyện mô phỏng số 1"
+    },
+    {
+      "content_hash": "515d535c022243b93d5a56ce8d14cae1ad367e20a091d92e650c24e659d961c1",
+      "description_vi": "Bài luyện mô phỏng rút gọn theo cấu trúc TOPIK I (cấp 1–2): 10 câu nghe và 14 câu đọc, mỗi câu 4 lựa chọn. Nội dung do Linguo tự soạn, không phải đề thi chính thức; điểm quy đổi chỉ để tham khảo.",
+      "family": "topik_i",
+      "id": "95a3ec27-a3f3-52e1-a196-42c605d945a9",
+      "is_demo": true,
+      "key": "ko:exam:topik-i-mock-1",
+      "language_code": "ko",
+      "level_from": "topik1",
+      "level_to": "topik2",
+      "questions": [
+        {
+          "answer": "odddeda88",
+          "content_hash": "cd286afddf2249b4c1978bd49b193f427f76a11f43790d95dc752016f57e0824",
+          "explanation": {
+            "vi": "“우산이 있어요?” hỏi “Bạn có ô không?”, nên câu trả lời phải dùng 있어요/없어요: “네, 우산이 있어요.” Phương án “네, 우산이 아니에요” dễ chọn nhầm vì có chữ 우산, nhưng 아니에요 phủ định “là”, không trả lời câu hỏi “có hay không”."
+          },
+          "id": "48d1f0d5-6181-5f7e-94ee-d13e54100c4b",
+          "key": "ko:examq:topik-i-m1-l01",
+          "kind": "mcq",
+          "level_code": "topik1",
+          "points": 3,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+            "options": [
+              {
+                "id": "ob2fc4a09",
+                "lang": "ko",
+                "text": "네, 우산이 아니에요."
+              },
+              {
+                "id": "o5d5c3bb7",
+                "lang": "ko",
+                "text": "아니요, 우산이에요."
+              },
+              {
+                "id": "o00abda51",
+                "lang": "ko",
+                "text": "아니요, 우산을 좋아해요."
+              },
+              {
+                "id": "odddeda88",
+                "lang": "ko",
+                "text": "네, 우산이 있어요."
+              }
+            ],
+            "stem": "다음을 듣고 물음에 맞는 대답을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_listen_response",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "여자: 우산이 있어요?",
+          "section": "listening",
+          "seq": 1
+        },
+        {
+          "answer": "ob66a12ea",
+          "content_hash": "e74953b9cb1a5a850008ebc6cff4dc45f34c045ba43a0efcc7a5fbb8196aed69",
+          "explanation": {
+            "vi": "Câu hỏi dùng thì quá khứ 했어요 (“cuối tuần bạn đã làm gì?”), nên cần kể việc đã làm: “친구하고 영화를 봤어요.” Phương án “다음 주에 친구를 만날 거예요” nói về tương lai (-ㄹ 거예요) nên không khớp với câu hỏi."
+          },
+          "id": "9a64f838-bced-5d9c-8016-60620a6c3f04",
+          "key": "ko:examq:topik-i-m1-l02",
+          "kind": "mcq",
+          "level_code": "topik1",
+          "points": 3,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+            "options": [
+              {
+                "id": "o7a46ee63",
+                "lang": "ko",
+                "text": "다음 주에 친구를 만날 거예요."
+              },
+              {
+                "id": "ob66a12ea",
+                "lang": "ko",
+                "text": "친구하고 영화를 봤어요."
+              },
+              {
+                "id": "oca9ea44f",
+                "lang": "ko",
+                "text": "영화관이 아주 멀어요."
+              },
+              {
+                "id": "ocafee9b1",
+                "lang": "ko",
+                "text": "주말에 시간이 있어요."
+              }
+            ],
+            "stem": "다음을 듣고 물음에 맞는 대답을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_listen_response",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "남자: 주말에 뭐 했어요?",
+          "section": "listening",
+          "seq": 2
+        },
+        {
+          "answer": "o239b0c9f",
+          "content_hash": "8e2ece5027af24a817a3f5c7fce9cd8ea504663924c9fb94c74c629a51959439",
+          "explanation": {
+            "vi": "Khi được chúc mừng sinh nhật và nhận quà, người Hàn đáp “고맙습니다” (cảm ơn). “괜찮습니다” dễ gây nhầm vì người Việt hay nói “không sao”, nhưng câu này dùng để đáp lời xin lỗi hoặc từ chối khéo, không dùng khi nhận quà."
+          },
+          "id": "0ecac201-7e8e-5a57-b008-ecc9ba224a7c",
+          "key": "ko:examq:topik-i-m1-l03",
+          "kind": "mcq",
+          "level_code": "topik1",
+          "points": 3,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe câu nói và chọn câu nói tiếp theo phù hợp.",
+            "options": [
+              {
+                "id": "o239b0c9f",
+                "lang": "ko",
+                "text": "고맙습니다."
+              },
+              {
+                "id": "oce2cd9fe",
+                "lang": "ko",
+                "text": "어서 오세요."
+              },
+              {
+                "id": "o4aaef825",
+                "lang": "ko",
+                "text": "실례합니다."
+              },
+              {
+                "id": "o456b0c45",
+                "lang": "ko",
+                "text": "괜찮습니다."
+              }
+            ],
+            "stem": "다음을 듣고 이어지는 말을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_listen_next",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "남자: 생일 축하해요. 이거 선물이에요.",
+          "section": "listening",
+          "seq": 3
+        },
+        {
+          "answer": "o5d2946bd",
+          "content_hash": "2348dc16dd0e215da17b8c9be1dd3d681b230dfe217ddb305df551d528d99311",
+          "explanation": {
+            "vi": "Người nói xin lỗi vì đến muộn (늦어서 죄송합니다), nên đáp lại tự nhiên nhất là “괜찮아요” (không sao). “감사합니다” là lời cảm ơn, không dùng để đáp lại lời xin lỗi."
+          },
+          "id": "e4c37c4f-3ad6-58aa-a673-4c19739c3cb9",
+          "key": "ko:examq:topik-i-m1-l04",
+          "kind": "mcq",
+          "level_code": "topik1",
+          "points": 3,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe câu nói và chọn câu nói tiếp theo phù hợp.",
+            "options": [
+              {
+                "id": "oa955dad3",
+                "lang": "ko",
+                "text": "반갑습니다."
+              },
+              {
+                "id": "o5d2946bd",
+                "lang": "ko",
+                "text": "괜찮아요."
+              },
+              {
+                "id": "o92623282",
+                "lang": "ko",
+                "text": "감사합니다."
+              },
+              {
+                "id": "o122cbd38",
+                "lang": "ko",
+                "text": "잘 먹겠습니다."
+              }
+            ],
+            "stem": "다음을 듣고 이어지는 말을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_listen_next",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "여자: 늦어서 죄송합니다.",
+          "section": "listening",
+          "seq": 4
+        },
+        {
+          "answer": "of725ca8a",
+          "content_hash": "5970718c17398b8538e849d60428fc7c679049fe0173505547cb8425838b89aa",
+          "explanation": {
+            "vi": "Các từ khoá 빌리다 (mượn) và 돌려주다 (trả lại) cho thấy đây là thư viện (도서관). 서점 (hiệu sách) dễ chọn nhầm vì cũng có sách, nhưng ở hiệu sách bạn mua sách chứ không mượn rồi trả lại sau hai tuần."
+          },
+          "id": "bc5436bc-ac8f-5050-9537-64d2b812ff0e",
+          "key": "ko:examq:topik-i-m1-l05",
+          "kind": "mcq",
+          "level_code": "topik1",
+          "points": 3,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn hội thoại và chọn nơi diễn ra cuộc nói chuyện.",
+            "options": [
+              {
+                "id": "o3e9971b8",
+                "lang": "ko",
+                "text": "서점"
+              },
+              {
+                "id": "o57774728",
+                "lang": "ko",
+                "text": "우체국"
+              },
+              {
+                "id": "oadaee92b",
+                "lang": "ko",
+                "text": "교실"
+              },
+              {
+                "id": "of725ca8a",
+                "lang": "ko",
+                "text": "도서관"
+              }
+            ],
+            "stem": "여기는 어디입니까? 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_listen_place",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "남자: 이 책을 빌리고 싶어요.\n여자: 학생증을 보여 주세요. 2주 후에 돌려주세요.",
+          "section": "listening",
+          "seq": 5
+        },
+        {
+          "answer": "o08597436",
+          "content_hash": "5a23a4bf34e8192da56d7fdc68d62c0adcbb445cf937afd3765200b0d2e3f1d8",
+          "explanation": {
+            "vi": "Người phụ nữ hỏi bệnh, khám họng và bảo tiêm (주사를 맞다), nên đây là bệnh viện (병원). 약국 (hiệu thuốc) dễ gây nhầm vì cũng liên quan đến bệnh, nhưng ở hiệu thuốc không khám bệnh hay tiêm."
+          },
+          "id": "4b31d5e8-7276-5e65-bd67-01ea5016d101",
+          "key": "ko:examq:topik-i-m1-l06",
+          "kind": "mcq",
+          "level_code": "topik1",
+          "points": 3,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn hội thoại và chọn nơi diễn ra cuộc nói chuyện.",
+            "options": [
+              {
+                "id": "oc797ed7a",
+                "lang": "ko",
+                "text": "식당"
+              },
+              {
+                "id": "o503652fa",
+                "lang": "ko",
+                "text": "약국"
+              },
+              {
+                "id": "o08597436",
+                "lang": "ko",
+                "text": "병원"
+              },
+              {
+                "id": "o4f198080",
+                "lang": "ko",
+                "text": "시장"
+              }
+            ],
+            "stem": "여기는 어디입니까? 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_listen_place",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "여자: 어디가 아프세요?\n남자: 어제부터 목이 아프고 열이 나요.\n여자: 입을 크게 벌려 보세요. 감기네요. 주사를 맞고 가세요.",
+          "section": "listening",
+          "seq": 6
+        },
+        {
+          "answer": "o0b8fa043",
+          "content_hash": "859fa275cf522640aaecd428e09c4684d0abd93a8e039d11fcf786a7a34bf411",
+          "explanation": {
+            "vi": "Câu hỏi “몇 살이에요?” (mấy tuổi?) và câu trả lời “열다섯 살” đều nói về tuổi (나이). 학교 dễ chọn nhầm vì có từ 중학생, nhưng từ này chỉ giải thích thêm cho số tuổi, không phải chủ đề chính."
+          },
+          "id": "e55b9921-5e70-5e42-a5bd-4b307d6e1ee2",
+          "key": "ko:examq:topik-i-m1-l07",
+          "kind": "mcq",
+          "level_code": "topik1",
+          "points": 3,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn hội thoại và chọn chủ đề hai người đang nói.",
+            "options": [
+              {
+                "id": "o1ac34d30",
+                "lang": "ko",
+                "text": "학교"
+              },
+              {
+                "id": "o98fb7cf0",
+                "lang": "ko",
+                "text": "직업"
+              },
+              {
+                "id": "o0b8fa043",
+                "lang": "ko",
+                "text": "나이"
+              },
+              {
+                "id": "o8a3472af",
+                "lang": "ko",
+                "text": "이름"
+              }
+            ],
+            "stem": "무엇에 대해 말하고 있습니까? 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_listen_topic",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "남자: 동생이 몇 살이에요?\n여자: 열다섯 살이에요. 중학생이에요.",
+          "section": "listening",
+          "seq": 7
+        },
+        {
+          "answer": "o28ec00b6",
+          "content_hash": "fffaf7ec347cab6851907b67175d7f083174f107aa4f0f3b4de6c3de11c32591",
+          "explanation": {
+            "vi": "Hai người nói mùa mình thích: 봄 (mùa xuân) và 겨울 (mùa đông), nên chủ đề là 계절 (mùa). 날씨 (thời tiết) là bẫy: 따뜻하다, 눈이 오다 chỉ là lý do vì sao họ thích mùa đó."
+          },
+          "id": "fe768b07-8302-5dc9-9a4c-09a6f27d22d3",
+          "key": "ko:examq:topik-i-m1-l08",
+          "kind": "mcq",
+          "level_code": "topik2",
+          "points": 4,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn hội thoại và chọn chủ đề hai người đang nói.",
+            "options": [
+              {
+                "id": "o28ec00b6",
+                "lang": "ko",
+                "text": "계절"
+              },
+              {
+                "id": "of1ee28a2",
+                "lang": "ko",
+                "text": "취미"
+              },
+              {
+                "id": "o78ec9d28",
+                "lang": "ko",
+                "text": "여행"
+              },
+              {
+                "id": "o2e941b9e",
+                "lang": "ko",
+                "text": "날씨"
+              }
+            ],
+            "stem": "무엇에 대해 말하고 있습니까? 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_listen_topic",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "여자: 저는 봄을 좋아해요. 따뜻하고 꽃이 많이 피어요.\n남자: 저는 눈이 와서 겨울이 좋아요.",
+          "section": "listening",
+          "seq": 8
+        },
+        {
+          "answer": "oa9148104",
+          "content_hash": "09db2edefc74ca97eb67789f0bd4519713b812f94edca34fafec63c7ee37a7af",
+          "explanation": {
+            "vi": "Người nam bận làm thêm ngày mai nên đề nghị Chủ nhật, người nữ đồng ý (좋아요), vậy hai người sẽ leo núi vào Chủ nhật. Phương án b sai vì người có việc làm thêm (아르바이트) là người nam, và việc đó diễn ra ngày mai chứ không phải Chủ nhật."
+          },
+          "id": "a905e50e-25fd-5294-b823-822e4a220133",
+          "key": "ko:examq:topik-i-m1-l09",
+          "kind": "mcq",
+          "level_code": "topik2",
+          "points": 4,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn hội thoại và chọn câu đúng với nội dung đã nghe.",
+            "options": [
+              {
+                "id": "o05d5945d",
+                "lang": "ko",
+                "text": "여자는 일요일에 아르바이트를 합니다."
+              },
+              {
+                "id": "o31b7aa41",
+                "lang": "ko",
+                "text": "두 사람은 산 앞에서 만납니다."
+              },
+              {
+                "id": "oa9148104",
+                "lang": "ko",
+                "text": "두 사람은 일요일에 등산을 갈 겁니다."
+              },
+              {
+                "id": "o23cf9171",
+                "lang": "ko",
+                "text": "남자는 내일 등산을 갑니다."
+              }
+            ],
+            "stem": "다음을 듣고 들은 내용과 같은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_listen_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "여자: 민수 씨, 내일 같이 등산 갈래요?\n남자: 미안해요. 내일은 아르바이트가 있어요. 일요일은 어때요?\n여자: 좋아요. 그럼 일요일 아침 일곱 시에 학교 앞에서 만나요.",
+          "section": "listening",
+          "seq": 9
+        },
+        {
+          "answer": "oc7b4228d",
+          "content_hash": "955dbfc8dad5a50a23c35383e9ce6eee21f0160e5fe62d0fb49768f1ddc0e310",
+          "explanation": {
+            "vi": "Thông báo nói mua từ 30.000 won trở lên thì đỗ xe miễn phí (주차가 무료), tức là không phải trả phí đỗ xe. Phương án d sai vì chỉ có trái cây (과일) được giảm 30%, không phải mọi món hàng."
+          },
+          "id": "36694875-5f43-55c0-857c-940d465892ef",
+          "key": "ko:examq:topik-i-m1-l10",
+          "kind": "mcq",
+          "level_code": "topik2",
+          "points": 4,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe thông báo và chọn câu đúng với nội dung đã nghe.",
+            "options": [
+              {
+                "id": "oc8e4a092",
+                "lang": "ko",
+                "text": "할인은 내일 저녁까지 합니다."
+              },
+              {
+                "id": "oc7b4228d",
+                "lang": "ko",
+                "text": "3만 원 이상 사면 주차비를 내지 않습니다."
+              },
+              {
+                "id": "o86ef2f3c",
+                "lang": "ko",
+                "text": "모든 물건을 30% 싸게 팝니다."
+              },
+              {
+                "id": "o9fba8baf",
+                "lang": "ko",
+                "text": "식품 매장은 2층에 있습니다."
+              }
+            ],
+            "stem": "다음을 듣고 들은 내용과 같은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_listen_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "여자: 손님 여러분께 알려 드립니다. 오늘 저녁 8시까지 1층 식품 매장에서 과일을 30% 싸게 팝니다. 그리고 3만 원 이상 사시면 주차가 무료입니다. 감사합니다.",
+          "section": "listening",
+          "seq": 10
+        },
+        {
+          "answer": "o93421763",
+          "content_hash": "0c8d90da43649b6fccaaaf8039d65204ebef13c4a05225fc42ff471af707262a",
+          "explanation": {
+            "vi": "사과 (táo) và 바나나 (chuối) đều là trái cây, nên chủ đề là 과일. Các phương án còn lại (học tập, thời tiết, cuối tuần) không có từ nào liên quan trong câu."
+          },
+          "id": "e263a841-1a9e-5257-b287-d0b176175895",
+          "key": "ko:examq:topik-i-m1-r01",
+          "kind": "mcq",
+          "level_code": "topik1",
+          "points": 3,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc câu và chọn chủ đề phù hợp.",
+            "options": [
+              {
+                "id": "o87cbdf07",
+                "lang": "ko",
+                "text": "공부"
+              },
+              {
+                "id": "o71ab2547",
+                "lang": "ko",
+                "text": "날씨"
+              },
+              {
+                "id": "o93421763",
+                "lang": "ko",
+                "text": "과일"
+              },
+              {
+                "id": "o2609ab9a",
+                "lang": "ko",
+                "text": "주말"
+              }
+            ],
+            "passage": "사과가 맛있습니다. 바나나도 좋아합니다.",
+            "stem": "무엇에 대한 이야기입니까? 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_read_topic",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 11
+        },
+        {
+          "answer": "o15666746",
+          "content_hash": "d1cd2c242c3cb6c4394faeb7909ce0d3f4e77ed429da868fb0fc703f392395bc",
+          "explanation": {
+            "vi": "회사원 (nhân viên công ty) và 선생님 (giáo viên) là nghề nghiệp, nên chủ đề là 직업. Câu không nói tuổi (나이) hay quê quán (고향) của bố mẹ."
+          },
+          "id": "d5dcd066-9361-5838-b377-9c743026c6c2",
+          "key": "ko:examq:topik-i-m1-r02",
+          "kind": "mcq",
+          "level_code": "topik1",
+          "points": 3,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc câu và chọn chủ đề phù hợp.",
+            "options": [
+              {
+                "id": "o15666746",
+                "lang": "ko",
+                "text": "직업"
+              },
+              {
+                "id": "o03990510",
+                "lang": "ko",
+                "text": "나이"
+              },
+              {
+                "id": "o5e3a40e8",
+                "lang": "ko",
+                "text": "취미"
+              },
+              {
+                "id": "o5cefcde8",
+                "lang": "ko",
+                "text": "고향"
+              }
+            ],
+            "passage": "아버지는 회사원입니다. 어머니는 선생님입니다.",
+            "stem": "무엇에 대한 이야기입니까? 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_read_topic",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 12
+        },
+        {
+          "answer": "o0725d7f7",
+          "content_hash": "af2a42abafe99e41c0b834c0eecbe968fcb2b0887df5eddae45f93216a71f436",
+          "explanation": {
+            "vi": "Hai câu nói mỗi người sống ở đâu (서울, 부산), nên chủ đề là nơi chốn (장소). Lưu ý 삽니다 là dạng lịch sự của 살다 (sống), không phải 사다 (mua), nên 쇼핑 là phương án bẫy."
+          },
+          "id": "5d83f746-04cd-5432-a444-b463b3f7b099",
+          "key": "ko:examq:topik-i-m1-r03",
+          "kind": "mcq",
+          "level_code": "topik1",
+          "points": 3,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc câu và chọn chủ đề phù hợp.",
+            "options": [
+              {
+                "id": "o53f3b0ad",
+                "lang": "ko",
+                "text": "쇼핑"
+              },
+              {
+                "id": "obb410e51",
+                "lang": "ko",
+                "text": "계절"
+              },
+              {
+                "id": "o0725d7f7",
+                "lang": "ko",
+                "text": "장소"
+              },
+              {
+                "id": "o100f120b",
+                "lang": "ko",
+                "text": "음식"
+              }
+            ],
+            "passage": "저는 서울에 삽니다. 동생은 부산에 삽니다.",
+            "stem": "무엇에 대한 이야기입니까? 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_read_topic",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 13
+        },
+        {
+          "answer": "occ1acdcf",
+          "content_hash": "f03d49a4f6a44ac91120bf6d8ad683667053f531084771821cbe1ce809b56040",
+          "explanation": {
+            "vi": "Khát nước (목이 마르다) thì uống nước, và tiếng Hàn nói 물을 마시다. 먹습니다 là bẫy với người Việt vì 먹다 là “ăn”; với đồ uống như nước, người Hàn dùng 마시다."
+          },
+          "id": "bdc847a7-21f4-5f3e-8bde-7f7073bcc407",
+          "key": "ko:examq:topik-i-m1-r04",
+          "kind": "mcq",
+          "level_code": "topik1",
+          "points": 3,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Chọn từ phù hợp nhất để điền vào chỗ trống ( ).",
+            "options": [
+              {
+                "id": "odf307847",
+                "lang": "ko",
+                "text": "읽습니다"
+              },
+              {
+                "id": "o0aedf061",
+                "lang": "ko",
+                "text": "먹습니다"
+              },
+              {
+                "id": "o22a720e9",
+                "lang": "ko",
+                "text": "씁니다"
+              },
+              {
+                "id": "occ1acdcf",
+                "lang": "ko",
+                "text": "마십니다"
+              }
+            ],
+            "passage": "목이 마릅니다. 물을 ( ).",
+            "stem": "( )에 들어갈 가장 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_read_blank",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 14
+        },
+        {
+          "answer": "o9d14572e",
+          "content_hash": "114a7341f98088245ecf3dc25a3599e0930f6e7203af24214863f770ce35ee8b",
+          "explanation": {
+            "vi": "Phủ định dài trong tiếng Hàn có dạng động từ + -지 않다, nên 가지 않습니다 nghĩa là “không đi”. 가고 (và rồi) hay 가서 (đi rồi…) không ghép được với 않습니다."
+          },
+          "id": "867161d0-652a-5756-8c6f-cc29a7a93229",
+          "key": "ko:examq:topik-i-m1-r05",
+          "kind": "mcq",
+          "level_code": "topik1",
+          "points": 3,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Chọn từ phù hợp nhất để điền vào chỗ trống ( ).",
+            "options": [
+              {
+                "id": "o9d14572e",
+                "lang": "ko",
+                "text": "가지"
+              },
+              {
+                "id": "oc05acef3",
+                "lang": "ko",
+                "text": "가고"
+              },
+              {
+                "id": "oa0e516f3",
+                "lang": "ko",
+                "text": "가서"
+              },
+              {
+                "id": "oa34104c2",
+                "lang": "ko",
+                "text": "가면"
+              }
+            ],
+            "passage": "오늘은 일요일입니다. 회사에 ( ) 않습니다.",
+            "stem": "( )에 들어갈 가장 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_read_blank",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 15
+        },
+        {
+          "answer": "o37ff26bd",
+          "content_hash": "fadb7afb8d63ffa3ab060aa07997106a0ade20e3f7014daaa0834ec613412260",
+          "explanation": {
+            "vi": "Động từ 입다 (mặc) đi với quần áo như 코트 (áo khoác). Tiếng Việt nói “đội mũ, đi giày, đeo găng”, tiếng Hàn cũng tách riêng: 모자를 쓰다, 구두를 신다, 장갑을 끼다, nên các phương án đó không hợp với 입었습니다."
+          },
+          "id": "e8aaa84f-56b1-56b7-bb73-f6108d9cbbed",
+          "key": "ko:examq:topik-i-m1-r06",
+          "kind": "mcq",
+          "level_code": "topik1",
+          "points": 3,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Chọn từ phù hợp nhất để điền vào chỗ trống ( ).",
+            "options": [
+              {
+                "id": "o37ff26bd",
+                "lang": "ko",
+                "text": "코트"
+              },
+              {
+                "id": "oda47f1da",
+                "lang": "ko",
+                "text": "구두"
+              },
+              {
+                "id": "od92328b7",
+                "lang": "ko",
+                "text": "장갑"
+              },
+              {
+                "id": "o99447fbd",
+                "lang": "ko",
+                "text": "모자"
+              }
+            ],
+            "passage": "날씨가 춥습니다. 그래서 두꺼운 ( )를 입었습니다.",
+            "stem": "( )에 들어갈 가장 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_read_blank",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 16
+        },
+        {
+          "answer": "o8683e254",
+          "content_hash": "72c88f1db5aae665974323bfa39138d9dffe5e3c2c27b77ba6b2020be7f1acb7",
+          "explanation": {
+            "vi": "Trợ từ 하고 đi với 같이 thành “cùng với (bạn)”: 친구하고 같이. 에게 (cho, tới ai) dễ gây nhầm vì cũng gắn sau người, nhưng nó chỉ người nhận hành động, không mang nghĩa “cùng với”."
+          },
+          "id": "b4e0c98d-5478-5900-a1f8-ec2bdf0fc034",
+          "key": "ko:examq:topik-i-m1-r07",
+          "kind": "mcq",
+          "level_code": "topik2",
+          "points": 4,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Chọn từ phù hợp nhất để điền vào chỗ trống ( ).",
+            "options": [
+              {
+                "id": "o5494b0de",
+                "lang": "ko",
+                "text": "에게"
+              },
+              {
+                "id": "o8683e254",
+                "lang": "ko",
+                "text": "하고"
+              },
+              {
+                "id": "o21d0ee22",
+                "lang": "ko",
+                "text": "를"
+              },
+              {
+                "id": "of5412284",
+                "lang": "ko",
+                "text": "에서"
+              }
+            ],
+            "passage": "어제 친구( ) 같이 도서관에 갔습니다.",
+            "stem": "( )에 들어갈 가장 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_read_blank",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 17
+        },
+        {
+          "answer": "o9fad61a5",
+          "content_hash": "a283e17dd951e99c65da72754bfa4e06abe16c7263d37438527cc6974e098fac",
+          "explanation": {
+            "vi": "Thông báo ghi đăng ký bằng email (이메일로), nên câu “신청은 전화로 합니다” (đăng ký qua điện thoại) là câu sai, cần chọn. Các câu còn lại đều đúng: (토) là thứ Bảy, 오후 2시 là buổi chiều, giải nhất nhận vé máy bay."
+          },
+          "id": "1ab93c69-b8e6-52fb-b874-f1a3d1d80a52",
+          "key": "ko:examq:topik-i-m1-r08",
+          "kind": "mcq",
+          "level_code": "topik2",
+          "points": 4,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc thông báo và chọn câu KHÔNG đúng với nội dung.",
+            "options": [
+              {
+                "id": "o5c8fce81",
+                "lang": "ko",
+                "text": "대회는 토요일에 합니다."
+              },
+              {
+                "id": "o271629ac",
+                "lang": "ko",
+                "text": "1등을 하면 비행기표를 받습니다."
+              },
+              {
+                "id": "o570056e6",
+                "lang": "ko",
+                "text": "대회는 오후에 시작합니다."
+              },
+              {
+                "id": "o9fad61a5",
+                "lang": "ko",
+                "text": "신청은 전화로 합니다."
+              }
+            ],
+            "passage": "한국어 말하기 대회\n• 날짜: 10월 25일(토) 오후 2시\n• 장소: 학생회관 3층\n• 신청: 10월 18일까지 이메일로\n※ 1등에게는 비행기표를 드립니다.",
+            "stem": "다음을 읽고 맞지 않는 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_read_notice",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 18
+        },
+        {
+          "answer": "o4cc3718d",
+          "content_hash": "9236cc9523ea8b01f72d2ef01159acd9db1ecf0d4e4407ba2e0d1e95d590e608",
+          "explanation": {
+            "vi": "Tin nhắn hẹn gặp sau khi tan học (수업이 끝나고), không phải trước giờ học, nên câu d sai. Câu c đúng vì nhà hàng ở trước cổng trường (학교 앞 식당)."
+          },
+          "id": "d3e94b25-4e7d-5d19-81b6-519c185a8de6",
+          "key": "ko:examq:topik-i-m1-r09",
+          "kind": "mcq",
+          "level_code": "topik2",
+          "points": 4,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc tin nhắn và chọn câu KHÔNG đúng với nội dung.",
+            "options": [
+              {
+                "id": "o4cc3718d",
+                "lang": "ko",
+                "text": "지훈 씨는 수업 전에 만나고 싶어 합니다."
+              },
+              {
+                "id": "od11283f4",
+                "lang": "ko",
+                "text": "두 사람은 저녁을 먹을 겁니다."
+              },
+              {
+                "id": "o8f5f2ecb",
+                "lang": "ko",
+                "text": "두 사람은 학교 앞에서 만납니다."
+              },
+              {
+                "id": "oc69799a7",
+                "lang": "ko",
+                "text": "지훈 씨가 수진 씨에게 보냈습니다."
+              }
+            ],
+            "passage": "수진 씨, 오늘 수업이 끝나고 같이 저녁 먹어요.\n학교 앞 식당에서 여섯 시에 기다릴게요.\n- 지훈",
+            "stem": "다음을 읽고 맞지 않는 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_read_notice",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 19
+        },
+        {
+          "answer": "of4682b10",
+          "content_hash": "6b66b032ae268db0ef11d5e7de9529bae10bd1ff2d3a09a5a1f03412073d95ec",
+          "explanation": {
+            "vi": "Hôm nay trời mưa nên người viết tập yoga ở nhà; yoga là một môn thể dục, vậy “집에서 운동했습니다” là đúng. Câu a sai vì đạp xe là thói quen mỗi sáng, còn hôm nay vì mưa nên không đạp xe."
+          },
+          "id": "a8190981-2f51-55a1-9071-f4efbd1d8987",
+          "key": "ko:examq:topik-i-m1-r10",
+          "kind": "mcq",
+          "level_code": "topik2",
+          "points": 4,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc đoạn văn và chọn câu đúng với nội dung.",
+            "options": [
+              {
+                "id": "o4e3db924",
+                "lang": "ko",
+                "text": "저는 저녁마다 공원에 갑니다."
+              },
+              {
+                "id": "o01889fe0",
+                "lang": "ko",
+                "text": "저는 오늘 자전거를 탔습니다."
+              },
+              {
+                "id": "o733376f0",
+                "lang": "ko",
+                "text": "오늘은 날씨가 맑았습니다."
+              },
+              {
+                "id": "of4682b10",
+                "lang": "ko",
+                "text": "저는 오늘 집에서 운동했습니다."
+              }
+            ],
+            "passage": "저는 매일 아침 공원에서 자전거를 탑니다. 오늘은 비가 와서 집에서 요가를 했습니다.",
+            "stem": "다음의 내용과 같은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_read_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 20
+        },
+        {
+          "answer": "o43bdc8ae",
+          "content_hash": "51bb549ae44d716606eb1c52eeaab7c4fb5591e72688e65d05d476432c8dd21d",
+          "explanation": {
+            "vi": "주말마다 … 음식을 만들어 줍니다 cho biết em nấu ăn vào mỗi cuối tuần, nên câu b đúng. Câu d đảo ngược quan hệ: em nấu cho gia đình (가족에게), không phải gia đình nấu cho em."
+          },
+          "id": "8f6e97d9-1038-528c-80db-97a81827d58c",
+          "key": "ko:examq:topik-i-m1-r11",
+          "kind": "mcq",
+          "level_code": "topik2",
+          "points": 4,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc đoạn văn và chọn câu đúng với nội dung.",
+            "options": [
+              {
+                "id": "o88c025e6",
+                "lang": "ko",
+                "text": "가족이 동생에게 음식을 만들어 줍니다."
+              },
+              {
+                "id": "oaee7b9c1",
+                "lang": "ko",
+                "text": "저는 요리를 잘합니다."
+              },
+              {
+                "id": "ocf432b02",
+                "lang": "ko",
+                "text": "동생이 설거지를 합니다."
+              },
+              {
+                "id": "o43bdc8ae",
+                "lang": "ko",
+                "text": "동생은 주말에 요리를 합니다."
+              }
+            ],
+            "passage": "제 동생은 요리를 잘합니다. 주말마다 가족에게 맛있는 음식을 만들어 줍니다. 저는 요리를 못해서 설거지를 합니다.",
+            "stem": "다음의 내용과 같은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_read_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 21
+        },
+        {
+          "answer": "o7c6ae474",
+          "content_hash": "1fd5764f73249e8e4c4c0b671cf1db4271075e8b147f63926c35647faebb3bd9",
+          "explanation": {
+            "vi": "Người viết sắp đi Hàn Quốc nhưng chưa giỏi tiếng Hàn nên học mỗi ngày, tức là muốn giỏi tiếng Hàn trước chuyến đi. Câu b là bẫy: đoạn văn không nói tiếng Hàn khó, chỉ nói “tôi chưa giỏi” (잘 못합니다)."
+          },
+          "id": "72bcac7b-3153-5222-96e4-70fbd77259c2",
+          "key": "ko:examq:topik-i-m1-r12",
+          "kind": "mcq",
+          "level_code": "topik2",
+          "points": 4,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc đoạn văn và chọn ý chính (suy nghĩ chính của người viết).",
+            "options": [
+              {
+                "id": "o7c6ae474",
+                "lang": "ko",
+                "text": "한국 여행을 가기 전에 한국어를 잘하고 싶습니다."
+              },
+              {
+                "id": "o0ba29f86",
+                "lang": "ko",
+                "text": "매일 여행을 가고 싶습니다."
+              },
+              {
+                "id": "od5c6fa5e",
+                "lang": "ko",
+                "text": "한국어 공부는 너무 어렵습니다."
+              },
+              {
+                "id": "o106eed5d",
+                "lang": "ko",
+                "text": "다음 달에 한국에서 일하고 싶습니다."
+              }
+            ],
+            "passage": "저는 다음 달에 한국으로 여행을 갑니다. 그런데 한국어를 잘 못합니다. 그래서 요즘 매일 한국어를 공부합니다.",
+            "stem": "다음을 읽고 중심 생각을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_read_main_idea",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 22
+        },
+        {
+          "answer": "o83b06a55",
+          "content_hash": "0e839d787cc7c4c010a4608f609224fdf5e3bf28f7a1d7bec3c741171683db70",
+          "explanation": {
+            "vi": "Sau từ 그런데 (nhưng), người viết nói vẫn hay đến cửa hàng nhỏ vì chủ tiệm thân thiện và đồ tươi: đó là ý chính. Câu a là bẫy vì nửa đầu khen siêu thị lớn, nhưng ý của người viết nằm ở phần sau 그런데."
+          },
+          "id": "07435553-5b4a-586c-8ed3-26afa9f57829",
+          "key": "ko:examq:topik-i-m1-r13",
+          "kind": "mcq",
+          "level_code": "topik2",
+          "points": 4,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc đoạn văn và chọn ý chính (suy nghĩ chính của người viết).",
+            "options": [
+              {
+                "id": "o666c0cb3",
+                "lang": "ko",
+                "text": "큰 마트에 자주 가고 싶습니다."
+              },
+              {
+                "id": "of021a887",
+                "lang": "ko",
+                "text": "큰 마트는 물건값이 너무 비쌉니다."
+              },
+              {
+                "id": "o83b06a55",
+                "lang": "ko",
+                "text": "저는 집 앞의 작은 가게가 좋습니다."
+              },
+              {
+                "id": "o1130315e",
+                "lang": "ko",
+                "text": "가게 아저씨가 마트에서 일합니다."
+              }
+            ],
+            "passage": "우리 집 근처에 큰 마트가 생겼습니다. 물건이 많고 값도 쌉니다. 그런데 집 앞 작은 가게 아저씨는 친절하고 물건이 신선해서 저는 지금도 그 가게에 자주 갑니다.",
+            "stem": "다음을 읽고 중심 생각을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_read_main_idea",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 23
+        },
+        {
+          "answer": "obcb6d2ac",
+          "content_hash": "6b4f23bbc99b3114e3860ad64cf9fa01941c9169051d07762b9ff979136d8791",
+          "explanation": {
+            "vi": "Câu mở đầu không thể bắt đầu bằng từ nối 그래서 hay 그런데, nên (나) đứng đầu: hôm qua để quên ô trên xe buýt → (가) vì vậy đi mua ô → (다) nhưng hết ô → (라) cuối cùng dầm mưa đến trường. Thứ tự (나)-(다)-(가) sai vì “hết ô ở cửa hàng” phải xảy ra sau khi đã đến cửa hàng."
+          },
+          "id": "c5eccb06-c09f-5fd3-83d3-f95865cbdd39",
+          "key": "ko:examq:topik-i-m1-r14",
+          "kind": "mcq",
+          "level_code": "topik2",
+          "points": 4,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Sắp xếp các câu (가)–(라) theo thứ tự hợp lý.",
+            "options": [
+              {
+                "id": "obcb6d2ac",
+                "lang": "ko",
+                "text": "(나)-(가)-(다)-(라)"
+              },
+              {
+                "id": "oa33873c2",
+                "lang": "ko",
+                "text": "(가)-(다)-(나)-(라)"
+              },
+              {
+                "id": "o868b0b64",
+                "lang": "ko",
+                "text": "(나)-(다)-(가)-(라)"
+              },
+              {
+                "id": "o37d0c45f",
+                "lang": "ko",
+                "text": "(가)-(나)-(라)-(다)"
+              }
+            ],
+            "passage": "(가) 그래서 오늘 아침에 우산을 사러 편의점에 갔습니다.\n(나) 어제 버스에 우산을 두고 내렸습니다.\n(다) 그런데 편의점에 우산이 다 팔리고 없었습니다.\n(라) 결국 비를 맞으면서 학교에 갔습니다.",
+            "stem": "다음을 순서대로 맞게 배열한 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_i_read_order",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 24
+        }
+      ],
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "scoring": {
+        "bands": [
+          {
+            "level_code": "topik1",
+            "min_total": 80
+          },
+          {
+            "level_code": "topik2",
+            "min_total": 140
+          }
+        ],
+        "pass_ratio": null,
+        "section_max": {
+          "listening": 100,
+          "reading": 100
+        },
+        "source_note_vi": "Thang điểm ghi theo cấu trúc TOPIK I tại thời điểm soạn: nghe 100, đọc 100; cấp 1 từ 80 điểm, cấp 2 từ 140 điểm trên tổng 200. Chưa đối chiếu với quy chế hiện hành, bạn cần kiểm tra lại thông báo mới nhất trước khi dùng.",
+        "verified": false
+      },
+      "source_key": "src:linguo-demo",
+      "time_limits": {
+        "listening": 15,
+        "reading": 25
+      },
+      "title_vi": "TOPIK I — Bài luyện mô phỏng số 1"
+    },
+    {
+      "content_hash": "40c34e474bdd92e2c5728dcf3e5055ca315856a7ee585369ee5af3e0f396d0d9",
+      "description_vi": "Bài luyện mô phỏng rút gọn theo cấu trúc TOPIK II (cấp 3–6): 8 câu nghe, 10 câu đọc và 3 câu viết (2 câu điền câu, 1 bài viết ngắn 200–300 ký tự). Nội dung do Linguo tự soạn, không phải đề thi chính thức; điểm quy đổi chỉ để tham khảo, bài viết luận không được chấm tự động.",
+      "family": "topik_ii",
+      "id": "d9ebe389-8909-5e74-bd5a-3b675cfdaa19",
+      "is_demo": true,
+      "key": "ko:exam:topik-ii-mock-1",
+      "language_code": "ko",
+      "level_from": "topik3",
+      "level_to": "topik6",
+      "questions": [
+        {
+          "answer": "o3448cfec",
+          "content_hash": "94095dcb5cac061c5ebd29199a2a01bb9625c3356856dec8b858c8d6f8df3c7d",
+          "explanation": {
+            "vi": "Người nam nói không đi được vì phải đi công tác Busan (-게 됐어요: hoàn cảnh bắt buộc), nên người nữ sẽ tỏ ra tiếc và hẹn lần sau. Phương án b sai vì người nam đã từ chối, không thể “gặp ở buổi liên hoan thứ Sáu”."
+          },
+          "id": "e8c3a0d7-eeb9-530e-bbdd-5b3a4e090e10",
+          "key": "ko:examq:topik-ii-m1-l01",
+          "kind": "mcq",
+          "level_code": "topik3",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn hội thoại và chọn câu người phụ nữ có thể nói tiếp.",
+            "options": [
+              {
+                "id": "o3448cfec",
+                "lang": "ko",
+                "text": "아쉽네요. 다음에는 꼭 같이 가요."
+              },
+              {
+                "id": "o3090844f",
+                "lang": "ko",
+                "text": "부산에 가 본 적이 없어요?"
+              },
+              {
+                "id": "o582bf329",
+                "lang": "ko",
+                "text": "출장 준비를 도와줘서 고마워요."
+              },
+              {
+                "id": "oaaa02aca",
+                "lang": "ko",
+                "text": "그럼 금요일에 회식에서 봐요."
+              }
+            ],
+            "stem": "다음을 듣고 여자가 이어서 할 말로 가장 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_listen_next",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "여자: 이번 주 금요일 회식에 민준 씨도 올 거죠?\n남자: 가고 싶은데 그날 부산으로 출장을 가게 됐어요.",
+          "section": "listening",
+          "seq": 1
+        },
+        {
+          "answer": "obd691f35",
+          "content_hash": "100fe899372256d8cbe26174953fa26156329041132ac7aa0b10bcd78969cb74",
+          "explanation": {
+            "vi": "Người nữ hỏi đã tra cứu tình trạng giao hàng (배송 조회) chưa, nên câu tiếp theo hợp lý là “chưa, tôi kiểm tra ngay”. Phương án c sai vì máy tính chưa giao tới, người nam không thể nhận xét máy nhẹ."
+          },
+          "id": "c573f462-9b89-51f3-b911-391c0f4707f0",
+          "key": "ko:examq:topik-ii-m1-l02",
+          "kind": "mcq",
+          "level_code": "topik3",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn hội thoại và chọn câu người đàn ông có thể nói tiếp.",
+            "options": [
+              {
+                "id": "ode70cc83",
+                "lang": "ko",
+                "text": "네, 지금 노트북을 사러 가려고요."
+              },
+              {
+                "id": "obd691f35",
+                "lang": "ko",
+                "text": "아니요, 아직요. 지금 바로 확인해 볼게요."
+              },
+              {
+                "id": "o8ef36420",
+                "lang": "ko",
+                "text": "노트북이 생각보다 가벼워서 좋아요."
+              },
+              {
+                "id": "ob4dc49e5",
+                "lang": "ko",
+                "text": "택배를 벌써 보냈어요."
+              }
+            ],
+            "stem": "다음을 듣고 남자가 이어서 할 말로 가장 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_listen_next",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "남자: 그저께 주문한 노트북이 아직도 안 왔어요.\n여자: 그래요? 배송 조회는 해 봤어요?",
+          "section": "listening",
+          "seq": 2
+        },
+        {
+          "answer": "ob56081d4",
+          "content_hash": "039e302d695651682ac496a741807848d0e96eaea488ea03e6d2e137a9ad054b",
+          "explanation": {
+            "vi": "Người nữ quên đặt phòng họp và nói “지금 바로 할게요” (tôi làm ngay), nên việc tiếp theo là đặt phòng. Phương án b là bẫy: việc photo tài liệu do người nam nhận làm (제가 복사해 둘게요)."
+          },
+          "id": "69e796a5-1809-5bad-8ab2-d52efa0bce4a",
+          "key": "ko:examq:topik-ii-m1-l03",
+          "kind": "mcq",
+          "level_code": "topik3",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn hội thoại và chọn việc người phụ nữ sẽ làm ngay sau đó.",
+            "options": [
+              {
+                "id": "ob56081d4",
+                "lang": "ko",
+                "text": "회의실을 예약한다."
+              },
+              {
+                "id": "o21651362",
+                "lang": "ko",
+                "text": "남자에게 전화를 건다."
+              },
+              {
+                "id": "obc0fc72d",
+                "lang": "ko",
+                "text": "회의 자료를 복사한다."
+              },
+              {
+                "id": "ob5323f1e",
+                "lang": "ko",
+                "text": "회의에 참석한다."
+              }
+            ],
+            "stem": "다음을 듣고 여자가 이어서 할 행동으로 가장 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_listen_action",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "남자: 오후 세 시 회의 말이에요, 회의실은 예약했어요?\n여자: 아, 깜빡했어요. 지금 바로 할게요.\n남자: 그럼 회의 자료는 제가 복사해 둘게요.\n여자: 네, 고마워요.",
+          "section": "listening",
+          "seq": 3
+        },
+        {
+          "answer": "o2d9da5ab",
+          "content_hash": "a45ba7fe1fa824489a06b0c3761df2baada520c36feecd4f4d0af179170298ac",
+          "explanation": {
+            "vi": "Nhân viên nói có thể kiểm tra lịch sử mua bằng thẻ và đề nghị cho xem thẻ đã thanh toán, nên người nữ sẽ đưa thẻ. Phương án b sai vì không cần về nhà lấy hoá đơn nữa; phương án c sai vì áo đang chật, người nữ cần cỡ lớn hơn."
+          },
+          "id": "9b180f1b-0f86-5cc2-a1f2-ee80142b4871",
+          "key": "ko:examq:topik-ii-m1-l04",
+          "kind": "mcq",
+          "level_code": "topik4",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn hội thoại và chọn việc người phụ nữ sẽ làm ngay sau đó.",
+            "options": [
+              {
+                "id": "od2838170",
+                "lang": "ko",
+                "text": "카드로 셔츠값을 계산한다."
+              },
+              {
+                "id": "o22caad7a",
+                "lang": "ko",
+                "text": "더 작은 셔츠를 고른다."
+              },
+              {
+                "id": "o2d9da5ab",
+                "lang": "ko",
+                "text": "결제한 카드를 보여 준다."
+              },
+              {
+                "id": "o1c402c9e",
+                "lang": "ko",
+                "text": "영수증을 가지러 집에 간다."
+              }
+            ],
+            "stem": "다음을 듣고 여자가 이어서 할 행동으로 가장 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_listen_action",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "여자: 이 셔츠를 교환하고 싶은데요. 사이즈가 좀 작아서요.\n남자: 영수증 가지고 오셨어요?\n여자: 집에 두고 왔는데, 카드로 계산했어요.\n남자: 그럼 결제하신 카드를 보여 주시겠어요? 카드로 구매 내역을 확인해 드릴게요.",
+          "section": "listening",
+          "seq": 4
+        },
+        {
+          "answer": "o32612d0c",
+          "content_hash": "bdc8f4e8bf3d0cadc3123673787ba81c607d79050cae0c9bd753550a89c68987",
+          "explanation": {
+            "vi": "Thông báo nói mỗi buổi chỉ nhận tối đa 15 em (열다섯 명까지만), tức là số người tham gia có giới hạn. Phương án b là bẫy vì có nhắc tới nguyên liệu, nhưng nguyên liệu do quận chuẩn bị (구청에서 모두 준비합니다)."
+          },
+          "id": "ac219ebc-d100-5c10-bcac-494ee0a5431c",
+          "key": "ko:examq:topik-ii-m1-l05",
+          "kind": "mcq",
+          "level_code": "topik4",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe thông báo và chọn câu đúng với nội dung đã nghe.",
+            "options": [
+              {
+                "id": "o439ae9e0",
+                "lang": "ko",
+                "text": "참가자는 재료를 가지고 와야 한다."
+              },
+              {
+                "id": "o32612d0c",
+                "lang": "ko",
+                "text": "한 번에 참여할 수 있는 인원이 정해져 있다."
+              },
+              {
+                "id": "o7db5bfdc",
+                "lang": "ko",
+                "text": "요리 교실에 참가하려면 돈을 내야 한다."
+              },
+              {
+                "id": "ocb83a51c",
+                "lang": "ko",
+                "text": "요리 교실은 평일에 열린다."
+              }
+            ],
+            "stem": "다음을 듣고 들은 내용과 같은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_listen_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "남자: 이번 달부터 우리 구청에서는 주말마다 어린이를 위한 무료 요리 교실을 엽니다. 초등학생이면 누구나 참여할 수 있지만, 한 번에 열다섯 명까지만 받습니다. 신청은 구청 홈페이지에서 하시면 되고, 요리 재료는 구청에서 모두 준비합니다.",
+          "section": "listening",
+          "seq": 5
+        },
+        {
+          "answer": "o99b83a25",
+          "content_hash": "d2cb300e390fcfc1a882145501b9c9403304cce4e5eb3b99249b2461c55de215",
+          "explanation": {
+            "vi": "Người nam xác nhận đi làm bằng xe đạp “từ tháng trước” (지난달부터), nên câu b đúng. Câu c là bẫy: anh chỉ thấy mệt lúc đầu (처음에는), còn bây giờ thấy tốt vì được tập thể dục buổi sáng."
+          },
+          "id": "e4e9b02a-4ecb-5648-8566-0b98f5d6de59",
+          "key": "ko:examq:topik-ii-m1-l06",
+          "kind": "mcq",
+          "level_code": "topik4",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn hội thoại và chọn câu đúng với nội dung đã nghe.",
+            "options": [
+              {
+                "id": "oaa8fb43a",
+                "lang": "ko",
+                "text": "여자는 남자와 함께 자전거를 탄다."
+              },
+              {
+                "id": "oa385cec4",
+                "lang": "ko",
+                "text": "남자는 비가 와도 자전거를 탄다."
+              },
+              {
+                "id": "o79d6bac6",
+                "lang": "ko",
+                "text": "남자는 자전거 타는 것이 아직도 힘들다."
+              },
+              {
+                "id": "o99b83a25",
+                "lang": "ko",
+                "text": "남자는 지난달부터 자전거로 출근한다."
+              }
+            ],
+            "stem": "다음을 듣고 들은 내용과 같은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_listen_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "여자: 요즘 회사까지 자전거로 다닌다면서요?\n남자: 네, 지난달부터요. 처음에는 좀 힘들었는데 이제는 아침에 운동도 되고 좋아요.\n여자: 비 오는 날에는 어떻게 해요?\n남자: 그런 날은 지하철을 타요.",
+          "section": "listening",
+          "seq": 6
+        },
+        {
+          "answer": "o2d7440a1",
+          "content_hash": "74d4b0b4fa0bc91250e3d75f4ff2caca9fbd11494dbe13f36d169bfe01cc7d75",
+          "explanation": {
+            "vi": "Câu cuối của người nam nêu rõ quan điểm: muốn đọc tập trung thì sách giấy tốt hơn (종이책이 낫다고 생각해요). Phương án a là bẫy vì anh có thừa nhận “편하긴 하죠” (tiện thì có tiện), nhưng -긴 하지만/그래도 chỉ là nhượng bộ trước khi nói ý chính."
+          },
+          "id": "335639e9-6b6d-5292-848a-32dd190164e8",
+          "key": "ko:examq:topik-ii-m1-l07",
+          "kind": "mcq",
+          "level_code": "topik4",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn hội thoại và chọn suy nghĩ chính của người đàn ông.",
+            "options": [
+              {
+                "id": "o2d7440a1",
+                "lang": "ko",
+                "text": "집중해서 읽으려면 종이책이 더 좋다."
+              },
+              {
+                "id": "o9976dfa6",
+                "lang": "ko",
+                "text": "휴대폰으로 책을 읽는 것이 더 편리하다."
+              },
+              {
+                "id": "od17a5bf7",
+                "lang": "ko",
+                "text": "책을 많이 읽는 사람이 늘어나야 한다."
+              },
+              {
+                "id": "od04c78d9",
+                "lang": "ko",
+                "text": "무거운 책은 들고 다니지 않는 것이 좋다."
+              }
+            ],
+            "stem": "다음을 듣고 남자의 중심 생각으로 가장 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_listen_main_idea",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "여자: 요즘은 책을 휴대폰으로 읽는 사람이 많더라고요.\n남자: 편하긴 하죠. 그래도 저는 종이책이 더 좋아요. 종이책으로 읽어야 내용이 머릿속에 오래 남는 것 같거든요.\n여자: 그래도 들고 다니기에는 무겁잖아요.\n남자: 조금 무거워도 집중해서 읽으려면 종이책이 낫다고 생각해요.",
+          "section": "listening",
+          "seq": 7
+        },
+        {
+          "answer": "o2c35849e",
+          "content_hash": "20ba8ec48b142aaf79cab2383b6a7f0fe77ed9ea6ac856f317adf00d8ac9c233",
+          "explanation": {
+            "vi": "Người nam cho rằng vấn đề nằm ở cách họp chứ không phải số cuộc họp (회의의 수보다 회의 방식이 더 문제), nên ý chính là hiệu quả phụ thuộc vào cách tiến hành. Phương án a là bẫy: anh chỉ muốn bớt những cuộc họp không mục đích, không đề nghị bỏ họp."
+          },
+          "id": "3b2b9e62-925e-55e0-8f95-5043c2916f55",
+          "key": "ko:examq:topik-ii-m1-l08",
+          "kind": "mcq",
+          "level_code": "topik5",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Nghe đoạn nói và chọn suy nghĩ chính của người đàn ông.",
+            "options": [
+              {
+                "id": "o1bbe115a",
+                "lang": "ko",
+                "text": "회의는 될 수 있으면 없애야 한다."
+              },
+              {
+                "id": "o1a54ed95",
+                "lang": "ko",
+                "text": "회의 시간이 길수록 좋은 결정을 할 수 있다."
+              },
+              {
+                "id": "o05ed9572",
+                "lang": "ko",
+                "text": "회의 자료는 회의가 끝난 후에 공유해야 한다."
+              },
+              {
+                "id": "o2c35849e",
+                "lang": "ko",
+                "text": "회의의 효과는 진행 방식에 따라 달라진다."
+              }
+            ],
+            "stem": "다음을 듣고 남자의 중심 생각으로 가장 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_listen_main_idea",
+          "rubric": null,
+          "sample_answer": null,
+          "script": "남자: 요즘 회의를 줄이자는 이야기가 많은데요. 저는 회의의 수보다 회의 방식이 더 문제라고 봅니다. 목적 없이 모여서 이야기만 하다가 끝나는 회의는 줄여야겠지만, 미리 자료를 공유하고 결정할 내용을 분명히 해 두면 짧은 회의도 충분히 효과적일 수 있습니다.",
+          "section": "listening",
+          "seq": 8
+        },
+        {
+          "answer": "of9abe92c",
+          "content_hash": "2c20f59be556eba0b2d4f737a76b357e3ed22c42bf2c122e00b7f98ef244f859",
+          "explanation": {
+            "vi": "-는 바람에 chỉ nguyên nhân dẫn đến kết quả xấu ngoài ý muốn (dậy muộn → đi học muộn). 덕분에 cũng chỉ nguyên nhân nhưng dùng cho kết quả tốt (“nhờ”), nên không hợp với 지각했다."
+          },
+          "id": "0976704b-f036-58f8-8af6-203e081d2911",
+          "key": "ko:examq:topik-ii-m1-r01",
+          "kind": "mcq",
+          "level_code": "topik3",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Chọn ngữ pháp phù hợp nhất để điền vào chỗ trống ( ).",
+            "options": [
+              {
+                "id": "of9abe92c",
+                "lang": "ko",
+                "text": "바람에"
+              },
+              {
+                "id": "o663933e7",
+                "lang": "ko",
+                "text": "김에"
+              },
+              {
+                "id": "o4c388722",
+                "lang": "ko",
+                "text": "대신에"
+              },
+              {
+                "id": "oae116544",
+                "lang": "ko",
+                "text": "덕분에"
+              }
+            ],
+            "passage": "아침에 늦게 일어나는 ( ) 수업에 지각했다.",
+            "stem": "( )에 들어갈 가장 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_read_blank",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 9
+        },
+        {
+          "answer": "o26eee9c6",
+          "content_hash": "96ca6104906d3ca2da52600e793c8011d406389690acbf466b9d037f9b488d8d",
+          "explanation": {
+            "vi": "예정대로 (vẫn theo kế hoạch) cho thấy vế sau trái với điều người ta chờ đợi, nên cần -더라도 (“dù… thì vẫn”). 와서 và 오니까 nêu lý do, sẽ thành “vì trời mưa nên vẫn đi leo núi”, vô lý."
+          },
+          "id": "0d687aa4-7044-5b8d-93ca-99989ad724ef",
+          "key": "ko:examq:topik-ii-m1-r02",
+          "kind": "mcq",
+          "level_code": "topik3",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Chọn ngữ pháp phù hợp nhất để điền vào chỗ trống ( ).",
+            "options": [
+              {
+                "id": "odb5081a0",
+                "lang": "ko",
+                "text": "오니까"
+              },
+              {
+                "id": "o3fa02c50",
+                "lang": "ko",
+                "text": "와서"
+              },
+              {
+                "id": "o26eee9c6",
+                "lang": "ko",
+                "text": "오더라도"
+              },
+              {
+                "id": "o1ac8fec9",
+                "lang": "ko",
+                "text": "오려고"
+              }
+            ],
+            "passage": "내일 비가 ( ) 등산은 예정대로 갈 거예요.",
+            "stem": "( )에 들어갈 가장 알맞은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_read_blank",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 10
+        },
+        {
+          "answer": "oe50fe1d6",
+          "content_hash": "1ac1f930ae9842546be6f79dcff6f99f5133fb68368ac618390332ffcd2c7d7d",
+          "explanation": {
+            "vi": "-는 김에 nghĩa là “nhân tiện làm việc này thì làm luôn việc kia”, gần nghĩa nhất với -는 길에 (“trên đường đi… ghé luôn”). 가는 대신에 là bẫy vì nghĩa là “thay vì đi”, tức là không đến bưu điện nữa."
+          },
+          "id": "805f5700-5b97-57e7-9b33-c00efa5dc429",
+          "key": "ko:examq:topik-ii-m1-r03",
+          "kind": "mcq",
+          "level_code": "topik3",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Chọn cách diễn đạt có nghĩa gần nhất với phần trong ngoặc vuông [ ].",
+            "options": [
+              {
+                "id": "oce86a78e",
+                "lang": "ko",
+                "text": "가기 위해서"
+              },
+              {
+                "id": "o7cbf8df4",
+                "lang": "ko",
+                "text": "가는 대신에"
+              },
+              {
+                "id": "o83f6290f",
+                "lang": "ko",
+                "text": "가는 바람에"
+              },
+              {
+                "id": "oe50fe1d6",
+                "lang": "ko",
+                "text": "가는 길에"
+              }
+            ],
+            "passage": "우체국에 [가는 김에] 은행에도 들렀다.",
+            "stem": "[ ] 안의 부분과 의미가 가장 비슷한 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_read_similar",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 11
+        },
+        {
+          "answer": "ofe15bc30",
+          "content_hash": "ebe3703546effd8732246e3ea8f34de1e64ea1ea98d727794130fc1daa76c034",
+          "explanation": {
+            "vi": "-(으)ㄹ 뿐만 아니라 và -(으)ㄹ뿐더러 đều nghĩa là “không những… mà còn”, cộng thêm một ưu điểm. 맛있기는 하지만 là bẫy vì nó tạo ý đối lập (“ngon thì ngon nhưng…”), trái với ý khen cả hai mặt."
+          },
+          "id": "9495ff6f-3b25-5237-b847-91d1f91f6e58",
+          "key": "ko:examq:topik-ii-m1-r04",
+          "kind": "mcq",
+          "level_code": "topik4",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Chọn cách diễn đạt có nghĩa gần nhất với phần trong ngoặc vuông [ ].",
+            "options": [
+              {
+                "id": "of5d42400",
+                "lang": "ko",
+                "text": "맛있는 대신에"
+              },
+              {
+                "id": "ofe15bc30",
+                "lang": "ko",
+                "text": "맛있을뿐더러"
+              },
+              {
+                "id": "o295d06cf",
+                "lang": "ko",
+                "text": "맛있기는 하지만"
+              },
+              {
+                "id": "od617204a",
+                "lang": "ko",
+                "text": "맛있을 테니까"
+              }
+            ],
+            "passage": "이 식당은 음식이 [맛있을 뿐만 아니라] 값도 싸다.",
+            "stem": "[ ] 안의 부분과 의미가 가장 비슷한 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_read_similar",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 12
+        },
+        {
+          "answer": "o52b941a6",
+          "content_hash": "e6e51c28c032fb7e63f783d391a9b77bf830281b945a58d55d9e741c263561b7",
+          "explanation": {
+            "vi": "귀에 쏙 (vừa khít tai), 소리 (âm thanh), 충전 (sạc pin) và 음악 (âm nhạc) đều chỉ tai nghe không dây. 전기밥솥 (nồi cơm điện) cũng dùng điện nhưng không liên quan đến tai hay âm nhạc."
+          },
+          "id": "cad09f03-8c3e-5ed7-a0a0-67e40c15e88b",
+          "key": "ko:examq:topik-ii-m1-r05",
+          "kind": "mcq",
+          "level_code": "topik3",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc quảng cáo hoặc thông báo và chọn nội dung nó nói tới.",
+            "options": [
+              {
+                "id": "o52b941a6",
+                "lang": "ko",
+                "text": "무선 이어폰"
+              },
+              {
+                "id": "obba16324",
+                "lang": "ko",
+                "text": "전기밥솥"
+              },
+              {
+                "id": "o696cc2f0",
+                "lang": "ko",
+                "text": "운동화"
+              },
+              {
+                "id": "o06a51cf1",
+                "lang": "ko",
+                "text": "여행 가방"
+              }
+            ],
+            "passage": "귀에 쏙, 소리는 선명하게!\n한 번 충전으로 하루 종일 음악을 즐기세요.",
+            "stem": "다음은 무엇에 대한 글인지 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_read_topic",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 13
+        },
+        {
+          "answer": "oba31ec29",
+          "content_hash": "4fc9296fb766757d1d665f8e62f7433e81c20c2ce9d1c4a96374d11c24629434",
+          "explanation": {
+            "vi": "Thông báo hướng dẫn không vứt pin đã dùng chung với rác thường mà bỏ vào thùng thu gom riêng, tức là hướng dẫn phân loại rác (분리배출 안내). 제품 설명 là bẫy vì có nhắc đến pin (건전지), nhưng văn bản không giới thiệu sản phẩm."
+          },
+          "id": "346ccc82-9a5d-53aa-abe3-11e0334e93f5",
+          "key": "ko:examq:topik-ii-m1-r06",
+          "kind": "mcq",
+          "level_code": "topik3",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc quảng cáo hoặc thông báo và chọn nội dung nó nói tới.",
+            "options": [
+              {
+                "id": "oba31ec29",
+                "lang": "ko",
+                "text": "분리배출 안내"
+              },
+              {
+                "id": "oa2e1f03b",
+                "lang": "ko",
+                "text": "제품 설명"
+              },
+              {
+                "id": "o673785d2",
+                "lang": "ko",
+                "text": "판매 장소"
+              },
+              {
+                "id": "o63c1747e",
+                "lang": "ko",
+                "text": "이사 안내"
+              }
+            ],
+            "passage": "다 쓴 건전지는 일반 쓰레기와 함께 버리지 마세요.\n아파트 1층 입구에 있는 수거함에 넣어 주세요.",
+            "stem": "다음은 무엇에 대한 글인지 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_read_topic",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 14
+        },
+        {
+          "answer": "o57b0c559",
+          "content_hash": "eaefd2101804e84de0263f8469ae2a19f30a3f33149b6712637d9ed3f366295c",
+          "explanation": {
+            "vi": "평일에 한해 (chỉ ngày thường) chuyến cuối được lùi đến 1 giờ sáng, nên câu b đúng. Câu a và d sai vì cuối tuần và ngày lễ vẫn dừng lúc nửa đêm (지금처럼 자정에); câu c sai vì thay đổi bắt đầu từ tháng sau (다음 달부터)."
+          },
+          "id": "17508ae5-d990-5ad5-ad8c-d668902307b2",
+          "key": "ko:examq:topik-ii-m1-r07",
+          "kind": "mcq",
+          "level_code": "topik4",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc đoạn văn và chọn câu đúng với nội dung.",
+            "options": [
+              {
+                "id": "o57b0c559",
+                "lang": "ko",
+                "text": "평일에는 새벽 1시까지 지하철을 탈 수 있게 된다."
+              },
+              {
+                "id": "od995605b",
+                "lang": "ko",
+                "text": "주말에도 막차 시간이 늦어진다."
+              },
+              {
+                "id": "o4cedb61b",
+                "lang": "ko",
+                "text": "공휴일에는 새벽 1시까지 지하철이 다닌다."
+              },
+              {
+                "id": "o3597331a",
+                "lang": "ko",
+                "text": "막차 시간은 이번 달부터 바뀐다."
+              }
+            ],
+            "passage": "한 도시가 다음 달부터 평일에 한해 지하철 막차 시간을 새벽 1시로 30분 늦춘다고 밝혔다. 주말과 공휴일에는 지금처럼 자정에 운행을 마친다. 시는 늦은 시간에 귀가하는 시민들의 불편을 줄이기 위한 조치라고 설명했다.",
+            "stem": "다음 글의 내용과 같은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_read_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 15
+        },
+        {
+          "answer": "o33ff9af9",
+          "content_hash": "9ee9af096d12df4dc4943ce60a81dbbd9a7d7fad3f19c216df0c8206b04bebd4",
+          "explanation": {
+            "vi": "-(으)면서 ở đây nối nguyên nhân với sự thay đổi: bánh làm từ quýt Jeju nổi tiếng trên mạng, từ đó khách phải xếp hàng mỗi sáng. Câu c là bẫy: bánh nổi tiếng trên mạng (인터넷에서 알려지다), không có nghĩa là chỉ bán qua mạng."
+          },
+          "id": "459c1fd8-8b09-5576-b2e9-48bd52a2657a",
+          "key": "ko:examq:topik-ii-m1-r08",
+          "kind": "mcq",
+          "level_code": "topik4",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc đoạn văn và chọn câu đúng với nội dung.",
+            "options": [
+              {
+                "id": "o33ff9af9",
+                "lang": "ko",
+                "text": "귤로 만든 빵이 알려진 뒤 손님이 늘었다."
+              },
+              {
+                "id": "o3870eb30",
+                "lang": "ko",
+                "text": "빵집은 문을 연 직후부터 손님이 많았다."
+              },
+              {
+                "id": "o4829ea91",
+                "lang": "ko",
+                "text": "김민지 씨는 지금도 회사에 다닌다."
+              },
+              {
+                "id": "o0dcd76ee",
+                "lang": "ko",
+                "text": "이 빵집의 빵은 인터넷으로만 판다."
+              }
+            ],
+            "passage": "김민지 씨는 회사를 그만두고 고향인 제주도로 돌아가 작은 빵집을 열었다. 처음에는 손님이 거의 없었지만, 제주에서 난 귤로 만든 빵이 인터넷에서 알려지면서 지금은 아침마다 줄을 서야 살 수 있을 정도가 되었다.",
+            "stem": "다음 글의 내용과 같은 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_read_detail",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 16
+        },
+        {
+          "answer": "o281a181d",
+          "content_hash": "76073320e93874140e683085315c905c04c068d513616cc93526458ba1a7ee70",
+          "explanation": {
+            "vi": "'거북이걸음' (bước rùa) là cách nói ẩn dụ cho xe chạy rất chậm, còn 귀성 차량 몰려 là xe về quê dồn lại đông. Phương án b hiểu theo nghĩa đen là có con rùa trên đường, đây là bẫy thường gặp với tiêu đề báo."
+          },
+          "id": "8ad11b27-8dc8-5a3a-b131-5a801515b66f",
+          "key": "ko:examq:topik-ii-m1-r09",
+          "kind": "mcq",
+          "level_code": "topik5",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc tiêu đề báo và chọn câu giải thích đúng nhất.",
+            "options": [
+              {
+                "id": "od4163f39",
+                "lang": "ko",
+                "text": "고속도로 공사 때문에 주말에 차가 다닐 수 없었다."
+              },
+              {
+                "id": "ob4add64e",
+                "lang": "ko",
+                "text": "주말에 고속도로에서 거북이가 발견되어 차들이 멈췄다."
+              },
+              {
+                "id": "o281a181d",
+                "lang": "ko",
+                "text": "주말에 고향에 가는 차가 많아 고속도로에서 차들이 천천히 움직였다."
+              },
+              {
+                "id": "o118d2507",
+                "lang": "ko",
+                "text": "고향에 가는 사람이 줄어 주말 고속도로가 한산했다."
+              }
+            ],
+            "passage": "주말 고속도로 '거북이걸음', 귀성 차량 몰려",
+            "stem": "다음 신문 기사의 제목을 가장 잘 설명한 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_read_title",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 17
+        },
+        {
+          "answer": "ocf0bb237",
+          "content_hash": "a06be171b74e4c7ec25ad12ae2914865e1202d6a2f3af17dd9106ca74967b25f",
+          "explanation": {
+            "vi": "불티나다 (bán chạy như tôm tươi) là thành ngữ, còn 한때 마비 là hệ thống bị tê liệt một lúc vì quá nhiều đơn. Phương án b là bẫy hiểu theo nghĩa đen của 불 (lửa); phương án c ngược nghĩa vì sản phẩm bán rất chạy."
+          },
+          "id": "49781d95-dc34-597b-99dd-9fc7abeb0983",
+          "key": "ko:examq:topik-ii-m1-r10",
+          "kind": "mcq",
+          "level_code": "topik5",
+          "points": 2,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc tiêu đề báo và chọn câu giải thích đúng nhất.",
+            "options": [
+              {
+                "id": "o056355cd",
+                "lang": "ko",
+                "text": "첫날 판매가 부진해서 온라인 판매를 멈췄다."
+              },
+              {
+                "id": "o99ab0431",
+                "lang": "ko",
+                "text": "새 제품에서 불이 나서 첫날 판매가 중단되었다."
+              },
+              {
+                "id": "o4ad55c6b",
+                "lang": "ko",
+                "text": "온라인 주문 시스템을 새로 만들어 첫날 공개했다."
+              },
+              {
+                "id": "ocf0bb237",
+                "lang": "ko",
+                "text": "새 제품이 첫날부터 잘 팔려서 온라인 주문이 잠시 되지 않았다."
+              }
+            ],
+            "passage": "신제품 출시 첫날 '불티', 온라인 주문 한때 마비",
+            "stem": "다음 신문 기사의 제목을 가장 잘 설명한 것을 고르십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_read_title",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "reading",
+          "seq": 18
+        },
+        {
+          "answer": [
+            "두고 왔습니다",
+            "놓고 왔습니다",
+            "두고 나왔습니다",
+            "놓고 나왔습니다",
+            "잃어버렸습니다"
+          ],
+          "content_hash": "a174b24cfc35b40345ed4e7e10eaf2fdcb94f39bb92802b03be6af7ab15be41e",
+          "explanation": {
+            "vi": "Văn bản là thông báo tìm đồ thất lạc, nên ㉠ cần nói “tôi đã để quên laptop ở phòng đọc”: 두고 왔습니다 / 놓고 왔습니다 (hoặc 잃어버렸습니다). Phải dùng thì quá khứ và đuôi -습니다 giống các câu còn lại; viết “두고 와요” hay “두고 갔어요” bị trừ điểm vì sai văn phong hoặc sai góc nhìn (người viết đã rời khỏi thư viện)."
+          },
+          "id": "25f48fa6-92b1-5f35-b84f-ea35b5876cdc",
+          "key": "ko:examq:topik-ii-m1-w01",
+          "kind": "short_text",
+          "level_code": "topik3",
+          "points": 10,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc văn bản và viết phần phù hợp vào chỗ ㉠. Chỉ viết phần cần điền, dùng đuôi câu trang trọng -습니다 giống văn bản, viết cách chữ đúng chính tả.",
+            "passage": "제목: 노트북을 찾습니다\n어제 오후 3시쯤 도서관 2층 열람실에 노트북을 ( ㉠ ).\n검은색 노트북이고 뒷면에 고양이 스티커가 붙어 있습니다.\n보신 분은 도서관 안내 데스크에 맡겨 주시면 감사하겠습니다.",
+            "stem": "다음 글의 ㉠에 들어갈 말을 쓰십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_write_51",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "writing",
+          "seq": 19
+        },
+        {
+          "answer": [
+            "적당히 자는 것이",
+            "적당한 시간 동안 자는 것이",
+            "적당한 시간만큼 자는 것이",
+            "알맞은 시간만큼 자는 것이",
+            "알맞게 자는 것이"
+          ],
+          "content_hash": "bc7e652748b58426629d618c6f29c80089f6ae527413dc70255b35921e9e9ba2",
+          "explanation": {
+            "vi": "Câu có cấu trúc “A보다 B가 더 중요하다”: vì A là “ngủ thật lâu”, B phải là ý đối lập “ngủ vừa đủ”, viết cùng dạng -는 것이 như 자는 것보다. Đáp án kiểu “충분히 자는 것이” sai ý vì đoạn văn vừa nói ngủ quá nhiều không tốt; quên trợ từ 이 (viết “적당히 자는 것”) cũng làm câu không đúng ngữ pháp."
+          },
+          "id": "7b3cf8bd-1bc8-54b2-a8b9-e039597b0ae0",
+          "key": "ko:examq:topik-ii-m1-w02",
+          "kind": "short_text",
+          "level_code": "topik4",
+          "points": 10,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Đọc đoạn văn và viết phần phù hợp vào chỗ ㉠. Chỉ viết phần cần điền, theo văn viết (-ㄴ다), viết cách chữ đúng chính tả.",
+            "passage": "사람들은 보통 잠을 많이 자면 피로가 풀린다고 생각한다. 그러나 너무 오래 자면 오히려 몸이 더 무겁게 느껴질 수 있다. 따라서 피로를 풀기 위해서는 무조건 오래 자는 것보다 ( ㉠ ) 더 중요하다.",
+            "stem": "다음 글의 ㉠에 들어갈 말을 쓰십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_write_52",
+          "rubric": null,
+          "sample_answer": null,
+          "script": null,
+          "section": "writing",
+          "seq": 20
+        },
+        {
+          "answer": null,
+          "content_hash": "0ea398397aaefd5121532c8d7c74ee213fc86582c842026a0de1c61046dbc6af",
+          "explanation": {
+            "vi": "Bài 53 kiểm tra khả năng mô tả số liệu bằng văn viết: giới thiệu khảo sát, nêu xu hướng tăng (증가하다, 늘다) và giảm (감소하다, 줄다) kèm con số, rồi nêu nguyên nhân. Lỗi hay gặp là dùng đuôi -아요/어요 của văn nói, chép lại gạch đầu dòng thay vì viết thành câu, hoặc thêm ý kiến riêng không có trong đề."
+          },
+          "id": "17baca6b-33cd-5301-bf3a-198456d37e92",
+          "key": "ko:examq:topik-ii-m1-w03",
+          "kind": "essay",
+          "level_code": "topik4",
+          "points": 30,
+          "prompt": {
+            "audio_asset_id": null,
+            "instruction_vi": "Viết một đoạn văn 200–300 ký tự (tính cả khoảng trắng) mô tả kết quả khảo sát dưới đây. Dùng văn viết (-ㄴ다/-았다), không viết tiêu đề, không thêm ý kiến cá nhân ngoài số liệu. Số liệu là giả định để luyện tập.",
+            "max_chars": 300,
+            "min_chars": 200,
+            "passage": "조사 기관: 한빛연구소 / 조사 대상: 20대 500명\n• 영상 시청: 2015년 35% → 2025년 52%\n• 운동: 2015년 20% → 2025년 28%\n• 독서: 2015년 25% → 2025년 9%\n• 변화의 원인: 스마트폰 보급, 건강에 대한 관심 증가",
+            "stem": "다음은 '20대의 여가 활동'에 대한 조사 결과이다. 이 내용을 200~300자의 글로 쓰십시오. 단, 글의 제목은 쓰지 마십시오.",
+            "stem_lang": "ko"
+          },
+          "question_type": "topik_ii_write_53",
+          "rubric": [
+            {
+              "description_vi": "Nêu đủ cơ quan và đối tượng khảo sát, xu hướng tăng/giảm của cả ba hoạt động với số liệu chính xác và hai nguyên nhân; không thêm ý kiến cá nhân.",
+              "key": "content",
+              "label_vi": "Nội dung và nhiệm vụ",
+              "max_points": 7
+            },
+            {
+              "description_vi": "Giới thiệu khảo sát → mô tả thay đổi → nêu nguyên nhân; dùng từ nối hợp lý (반면, 이러한 변화의 원인은…) để các câu liền mạch.",
+              "key": "organization",
+              "label_vi": "Bố cục",
+              "max_points": 7
+            },
+            {
+              "description_vi": "Dùng văn viết -ㄴ다/-았다 nhất quán, từ vựng mô tả biến đổi chính xác (증가하다, 감소하다, 차지하다), ngữ pháp và chính tả đúng, đủ 200–300 ký tự.",
+              "key": "language",
+              "label_vi": "Ngôn ngữ",
+              "max_points": 16
+            }
+          ],
+          "sample_answer": "한빛연구소에서 20대 500명을 대상으로 여가 활동에 대해 조사하였다. 조사 결과 영상 시청은 2015년 35%에서 2025년 52%로 크게 증가하여 가장 높은 비율을 차지하였다. 운동도 20%에서 28%로 늘어났다. 반면 독서는 25%에서 9%로 크게 감소하였다. 이러한 변화가 나타난 원인은 스마트폰이 널리 보급되면서 영상을 쉽게 볼 수 있게 되었고, 건강에 대한 관심도 높아졌기 때문이라고 할 수 있다.",
+          "script": null,
+          "section": "writing",
+          "seq": 21
+        }
+      ],
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "scoring": {
+        "bands": [
+          {
+            "level_code": "topik3",
+            "min_total": 120
+          },
+          {
+            "level_code": "topik4",
+            "min_total": 150
+          },
+          {
+            "level_code": "topik5",
+            "min_total": 190
+          },
+          {
+            "level_code": "topik6",
+            "min_total": 230
+          }
+        ],
+        "pass_ratio": null,
+        "section_max": {
+          "listening": 100,
+          "reading": 100,
+          "writing": 100
+        },
+        "source_note_vi": "Thang điểm ghi theo cấu trúc TOPIK II tại thời điểm soạn: nghe, đọc, viết mỗi phần 100; cấp 3 từ 120, cấp 4 từ 150, cấp 5 từ 190, cấp 6 từ 230 trên tổng 300. Chưa đối chiếu với quy chế hiện hành; bài viết luận không được tính điểm.",
+        "verified": false
+      },
+      "source_key": "src:linguo-demo",
+      "time_limits": {
+        "listening": 20,
+        "reading": 25,
+        "writing": 20
+      },
+      "title_vi": "TOPIK II — Bài luyện mô phỏng số 1"
+    }
+  ]
+}$exam$::jsonb);

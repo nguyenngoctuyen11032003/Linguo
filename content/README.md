@@ -14,6 +14,8 @@ content/
   en/programs/<program>/units/<nn>-<unit>/unit.yaml
   en/programs/<program>/units/<nn>-<unit>/lessons/<nn>-<lesson>.yaml
   ko/...                                         # giống en
+  diagnostic/<en|ko>/<kỹ-năng>.yaml               # kho câu hỏi kiểm tra đầu vào (spec 4)
+  exams/<en|ko>/<tên-đề>.yaml                     # đề luyện thi mô phỏng (spec 9)
 ```
 
 - Unit thuộc chương trình chứa thư mục của nó; bài thuộc unit chứa thư mục của nó. Nguồn (`source`) của unit, bài và bài tập lấy từ `program.yaml`; của học liệu lấy từ file items.
@@ -104,6 +106,59 @@ items:
 - File demo giữ `key_confidence: unreviewed` (mặc định), không ghi `reviewed_by`/`reviewed_at`; file không demo phải có cả hai.
 - Dùng `vi: "..."` trong ngoặc kép khi câu có dấu phẩy hoặc dấu hai chấm (cú pháp `{ vi: ... }` cắt chuỗi ở dấu phẩy).
 - Kho được nhập bằng `content_private.import_diagnostic_bundle` (câu lệnh thứ hai trong `supabase/seed.sql`; `pnpm content:push` gọi `public.import_diagnostic_content_bundle`). Câu bị xoá khỏi YAML được lưu trữ (`archived`), không xoá khỏi DB.
+
+## Đề luyện thi (spec 9)
+
+`content/exams/<en|ko>/<tên-đề>.yaml`, mỗi file một đề (schema: `examFileSchema` trong `packages/shared/src/exam/contract.ts`). Mọi đề là **bài luyện mô phỏng** tự soạn, không bao giờ chép đề thi thật (TOPIK, Cambridge…).
+
+```yaml
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+language: ko
+form:
+  key: ko:exam:topik-i-mock-1
+  family: topik_i                 # topik_i | topik_ii (ko), cefr (en)
+  title_vi: TOPIK I — Bài luyện mô phỏng số 1
+  description_vi: ...
+  level_from: topik1
+  level_to: topik2
+  source_key: src:linguo-demo
+  time_limits: { listening: 15, reading: 25 }   # phút, bắt buộc cho mọi phần có câu hỏi
+  scoring:
+    verified: false               # file demo luôn false
+    source_note_vi: Thang điểm theo cấu trúc tại thời điểm soạn, chưa đối chiếu quy chế hiện hành.
+    section_max: { listening: 100, reading: 100 }
+    bands: [{ level_code: topik1, min_total: 80 }, { level_code: topik2, min_total: 140 }]
+    pass_ratio: null              # CEFR: bands: [] và pass_ratio (ví dụ 0.6)
+questions:
+  - key: ko:examq:topik-i-m1-l01
+    section: listening            # listening → reading → writing, mỗi phần liền một khối
+    kind: mcq                     # mcq | short_text | essay
+    question_type: topik_i_listen_response   # tiền tố là họ đề; một dạng chỉ thuộc một phần và một kind
+    level_code: topik1            # nằm trong level_from…level_to
+    points: 3
+    prompt:
+      instruction_vi: Nghe câu hỏi và chọn câu trả lời phù hợp.
+      stem: 다음을 듣고 물음에 맞는 대답을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-                  # nghe: bắt buộc script hoặc audio_asset_id; script chỉ hiện sau khi nộp
+        여자: 우산이 있어요?
+      options:
+        - { id: a, text: "네, 우산이 있어요.", lang: ko }
+        - { id: b, text: "네, 우산이 아니에요.", lang: ko }
+    answer: a
+    explanation:
+      vi: "Vì sao đáp án đúng, và vì sao phương án dễ nhầm lại sai."
+```
+
+- `mcq`: có `options`, `answer` là id một phương án. Như kho kiểm tra đầu vào, `pnpm content:build` xáo trộn phương án cố định theo key câu hỏi và đổi id thành chuỗi `o` + 8 ký tự hex ổn định, nên thứ tự và id trong YAML không lộ đáp án.
+- `short_text` (chỉ phần viết, kiểu câu 51–52): `answer` là danh sách mọi đáp án chấp nhận. Máy chấm (`normalizeExamText` trong `packages/shared/src/exam/grading.ts`, SQL dùng cùng quy tắc) chỉ chuẩn hoá NFC, bỏ khoảng trắng đầu cuối, gộp khoảng trắng liên tiếp, bỏ dấu câu ở cuối (`.?!,;:。、…`) và không phân biệt hoa thường; **không** sửa cách chữ hay biến thể ngữ pháp, nên phải liệt kê từng biến thể hợp lệ. Hai đáp án giống nhau sau chuẩn hoá bị báo lỗi.
+- `essay` (chỉ phần viết): không có `answer`, bắt buộc `rubric` (ví dụ `content`/`organization`/`language`), nên có `sample_answer` và `min_chars`/`max_chars`. Bài luận không được chấm tự động.
+- Phần nghe chưa có audio: `audio_asset_id: null` và `script` bằng ngôn ngữ đích (ứng dụng đọc bằng giọng máy). Viết số bằng chữ số (`1층`, `30%`) như văn bản thông thường.
+- Thang điểm: TOPIK cần `section_max` cho mọi phần có câu hỏi, `bands` tăng dần, `pass_ratio: null`; CEFR cần `bands: []` và `pass_ratio`. File demo: header `# DEMO — chưa kiểm duyệt`, `scoring.verified: false`, không ghi `reviewed_by`/`reviewed_at`; file không demo phải có cả hai.
+- Đề được nhập bằng `public.import_exam_content_bundle` (câu lệnh thứ ba trong `supabase/seed.sql`, sau kho kiểm tra đầu vào; `pnpm content:push` gọi cùng RPC sau diagnostic). Bundle theo `examBundleSchema` (`packages/shared/src/exam/bundle.ts`): `prompt` công khai không chứa `script`; `answer`, `explanation`, `script`, `rubric`, `sample_answer` được tách sang `content_private.exam_keys`.
 
 ## Lệnh
 
