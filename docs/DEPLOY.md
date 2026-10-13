@@ -2,9 +2,12 @@
 
 Không có server riêng. CI/CD chạy trên GitHub; Auth/Database là Supabase hosted.
 
+Sự cố production (backup/khôi phục, rollback, xoay key, Gemini hết quota, checklist ra mắt): [RUNBOOK.md](RUNBOOK.md).
+
 ```text
 Pull Request ──► CI (.github/workflows/ci.yml)
-                  ├─ web:      check-public-env → check-migrations-immutable → lint → content:check → content:build --check → typecheck → unit tests → build
+                  ├─ web:      check-public-env → check-migrations-immutable → lint → content:check → content:build --check → typecheck → unit tests → build → check:bundle
+                  ├─ secrets:  gitleaks (binary pin sha256) quét toàn bộ lịch sử Git
                   ├─ e2e:      Playwright trên iPhone SE/15 Pro/15 Pro Max/landscape, Pixel 7, Galaxy S9+
                   └─ database: fixtures SQL ↔ TS (ước lượng, chấm điểm) → Supabase local (Docker) → áp mọi migration + seed.sql → db lint → pgTAP (RLS, chấm điểm, bài học) → kiểm types
 
@@ -12,7 +15,7 @@ push main ─────► Deploy (.github/workflows/deploy.yml)
                   verify (= CI) ─┐
                   changes ───────┼─► migrate (khi supabase/migrations đổi; cần bấm duyệt)
                                  ├─► functions (khi supabase/functions đổi)
-                                 └─► build (VITE_* từ Variables, base /<repo>/) → GitHub Pages
+                                 └─► build (VITE_* từ Variables, base /<repo>/, CSP chèn lúc build) → check:bundle → GitHub Pages
 ```
 
 ## Quy tắc an toàn database
@@ -88,6 +91,9 @@ Nội dung bài học nằm trong `content/**/*.yaml`. Deploy **không** tự nh
 | Migration chưa được áp | Actions → Deploy → **Run workflow** với `migrate = true` |
 | Gia sư AI luôn "Tạm thời không khả dụng" | Thiếu secret `GEMINI_API_KEY`/`GEMINI_MODEL` trong environment `production`, hoặc chưa chạy lại Deploy với `functions = true` sau khi thêm; kiểm tra model id còn trong free tier |
 | Gia sư AI đang chạy rồi bỗng không khả dụng với mọi người | Model hết quota ngày của free tier (breaker mở, thử lại sau); chờ quota reset hoặc đổi `GEMINI_MODEL` rồi chạy lại Deploy với `functions = true` |
+| Job `secrets` (gitleaks) báo leak | Secret thật: xoay key ngay theo `docs/RUNBOOK.md` mục 5. Giá trị giả trong test: ghép chuỗi lúc chạy (xem `scripts/check-bundle-secrets.test.mjs`) hoặc, sau khi rà soát, thêm fingerprint vào `.gitleaksignore` |
+| `check:bundle` fail | Một secret hoặc source map lọt vào `apps/web/dist`: kiểm tra biến `VITE_*`, `build.sourcemap` trong `apps/web/vite.config.ts` |
+| Console trình duyệt báo vi phạm Content-Security-Policy | Nguồn mới chưa có trong `apps/web/build/csp.ts`: thêm có chủ đích kèm test (`docs/RUNBOOK.md` mục 7) |
 | Pages 404 ở trang chủ | Kiểm tra bước 2 (Source = GitHub Actions) |
 | Link email mở sai địa chỉ | Kiểm tra Site URL / Redirect URLs trên Supabase |
 | "Hãy mở liên kết trên cùng trình duyệt" | Liên kết PKCE phải mở trên trình duyệt đã gửi yêu cầu |

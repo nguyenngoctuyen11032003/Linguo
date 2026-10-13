@@ -53,7 +53,10 @@ pnpm dev            # http://localhost:5173
 pnpm test           # unit tests
 pnpm e2e            # Playwright trên các thiết bị iPhone/Android giả lập
 pnpm db:start && pnpm db:test   # database local + test RLS (cần Docker)
+pnpm build && pnpm check:bundle # bản production: CSP được chèn lúc build, bundle không được chứa secret/source map
 ```
+
+`pnpm dev` không có CSP để HMR chạy được. Muốn kiểm CSP thì chạy `pnpm build && pnpm preview` (xem `docs/RUNBOOK.md` mục 7).
 
 ### Supabase local
 Cổng local dùng dải 553xx thay vì mặc định 543xx:
