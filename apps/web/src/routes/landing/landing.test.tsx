@@ -5,10 +5,6 @@ import { renderWithProviders } from '../../../tests/unit/render';
 import { LandingPage } from './LandingPage';
 import { useHeroReady } from './useHeroReady';
 
-// happy-dom ships a minimal Web Animations API whose `cancel()` rejects `finished` with an AbortError, which surfaces as an
-// unhandled rejection when motion stops a running animation. Removing it makes motion fall back to its JS animator.
-Reflect.deleteProperty(Element.prototype, 'animate');
-
 describe('useHeroReady', () => {
   afterEach(() => vi.useRealTimers());
 
