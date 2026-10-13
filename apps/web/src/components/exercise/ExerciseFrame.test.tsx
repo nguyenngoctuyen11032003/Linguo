@@ -64,6 +64,22 @@ describe('ExerciseFrame — mcq', () => {
     expect(radios[2]).toHaveAttribute('tabindex', '-1');
   });
 
+  it('ignores number keys while a modal dialog is open over the exercise', async () => {
+    setup(makeExercise('mcq'));
+    const dialog = document.createElement('div');
+    dialog.setAttribute('role', 'dialog');
+    dialog.setAttribute('aria-modal', 'true');
+    document.body.append(dialog);
+    try {
+      await userEvent.keyboard('2');
+      expect(screen.getAllByRole('radio', { hidden: true }).some((r) => r.getAttribute('aria-checked') === 'true')).toBe(false);
+    } finally {
+      dialog.remove();
+    }
+    await userEvent.keyboard('2');
+    expect(screen.getByRole('radio', { name: /banana/ })).toHaveAttribute('aria-checked', 'true');
+  });
+
   it('shuffles options with a seed derived from the exercise id', () => {
     const exercise = makeExercise('mcq', {
       prompt: {

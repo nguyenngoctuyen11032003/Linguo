@@ -23,19 +23,26 @@ function isTypingTarget(target: EventTarget | null): boolean {
   return target instanceof HTMLElement && (target.isContentEditable || target.matches('input, textarea, select'));
 }
 
+/** A modal dialog (e.g. the lesson exit sheet) is open over the group: its keys belong to the dialog. */
+function isCoveredByModal(group: HTMLElement | null): boolean {
+  const modals = document.querySelectorAll('[aria-modal="true"]');
+  return Array.from(modals).some((modal) => !group || !modal.contains(group));
+}
+
 /**
  * ARIA radio group of large buttons: arrow keys move focus and selection (roving tabindex),
- * number keys 1–6 select the n-th visible option anywhere on the page.
+ * number keys 1–6 select the n-th visible option anywhere on the page (not while a modal dialog covers it).
  */
 export function ChoiceGroup({ labelledBy, options, selectedId, onSelect, disabled = false, marks }: ChoiceGroupProps) {
   const refs = useRef<Array<HTMLButtonElement | null>>([]);
+  const groupRef = useRef<HTMLDivElement>(null);
   const selectedIndex = options.findIndex((o) => o.id === selectedId);
   const tabIndexOf = (i: number) => (i === (selectedIndex >= 0 ? selectedIndex : 0) ? 0 : -1);
 
   useEffect(() => {
     if (disabled) return;
     const onKey = (e: globalThis.KeyboardEvent) => {
-      if (e.altKey || e.ctrlKey || e.metaKey || e.repeat || isTypingTarget(e.target)) return;
+      if (e.altKey || e.ctrlKey || e.metaKey || e.repeat || isTypingTarget(e.target) || isCoveredByModal(groupRef.current)) return;
       const n = Number(e.key);
       if (!Number.isInteger(n) || n < 1 || n > Math.min(6, options.length)) return;
       e.preventDefault();
@@ -58,7 +65,7 @@ export function ChoiceGroup({ labelledBy, options, selectedId, onSelect, disable
   };
 
   return (
-    <div role="radiogroup" aria-labelledby={labelledBy} onKeyDown={onKeyDown} className="grid min-w-0 gap-2">
+    <div ref={groupRef} role="radiogroup" aria-labelledby={labelledBy} onKeyDown={onKeyDown} className="grid min-w-0 gap-2">
       {options.map((option, i) => {
         const checked = option.id === selectedId;
         const chosen = marks?.chosenId === option.id;
