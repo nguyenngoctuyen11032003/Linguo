@@ -10,6 +10,7 @@ import { setPathStatus } from '@/features/learning-paths/service';
 import { useProfile } from '@/features/profile/ProfileProvider';
 import { resolveTimeZone } from '@/lib/dates';
 import { requireSupabase } from '@/lib/supabase';
+import { DiagnosticCard } from './home/DiagnosticCard';
 import { NextLessonCard } from './home/NextLessonCard';
 import { PathSummaryCard } from './home/PathSummaryCard';
 import { ReviewDueCard } from './home/ReviewDueCard';
@@ -73,6 +74,7 @@ export function HomePage() {
             resuming={resuming}
             headingRef={cardHeadingRef}
           />
+          <DiagnosticCard pathId={paths.current.id} />
           <ReviewDueCard />
           <NextLessonCard />
         </>

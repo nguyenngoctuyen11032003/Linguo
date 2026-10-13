@@ -1,14 +1,17 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router';
-import { GOAL_LABELS, LANGUAGE_CODES, LANGUAGES, LEVEL_INFO, type LevelCode, type PathStatus } from '@linguo/shared';
+import { DEFAULT_TIMEZONE, GOAL_LABELS, LANGUAGE_CODES, LANGUAGES, LEVEL_INFO, type LevelCode, type PathStatus } from '@linguo/shared';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useToast } from '@/components/ui/Toast';
+import { useDiagnosticStatus } from '@/features/diagnostic/useDiagnosticStatus';
 import { learningPathErrorMessage } from '@/features/learning-paths/error-map';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { setPathStatus, type LearningPath } from '@/features/learning-paths/service';
+import { useProfile } from '@/features/profile/ProfileProvider';
+import { formatDateVi, todayIso } from '@/lib/dates';
 import { requireSupabase } from '@/lib/supabase';
 import { PathPlanEditor } from './PathPlanEditor';
 
@@ -19,6 +22,48 @@ const STATUS_DONE: Partial<Record<PathStatus, string>> = {
 };
 
 type FocusTarget = 'edit' | 'toggle' | 'archive' | 'confirm';
+
+/**
+ * Placement test entry per path (spec 4 §5): resume an open attempt, retake after the cooldown (shown as a date while
+ * it runs), or take a first one. Nothing while the status loads or fails to load.
+ */
+function PathDiagnostic({ path }: { path: LearningPath }) {
+  const { status, data } = useDiagnosticStatus(path.id);
+  const { profile } = useProfile();
+  if (status !== 'ready' || !data) return null;
+  const href = `/app/kiem-tra/${path.id}`;
+  const label = `${LANGUAGES[path.language].nameVi}: `;
+
+  if (data.status === 'in_progress') {
+    return (
+      <Link to={href} aria-label={`${label}Tiếp tục bài kiểm tra`} className={buttonClasses('ghost')}>
+        Tiếp tục bài kiểm tra
+      </Link>
+    );
+  }
+  const taken = data.status === 'completed' || data.completed_at !== null;
+  if (data.can_start) {
+    const text = taken ? 'Làm lại bài kiểm tra' : 'Làm bài kiểm tra trình độ';
+    return (
+      <Link to={href} aria-label={`${label}${text}`} className={buttonClasses('ghost')}>
+        {text}
+      </Link>
+    );
+  }
+  if (!taken || !data.retake_after) return null;
+  const noteId = `retake-note-${path.id}`;
+  const date = formatDateVi(todayIso(profile?.timezone ?? DEFAULT_TIMEZONE, new Date(data.retake_after)));
+  return (
+    <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+      <Button variant="ghost" disabled aria-label={`${label}Làm lại bài kiểm tra`} aria-describedby={noteId}>
+        Làm lại bài kiểm tra
+      </Button>
+      <span id={noteId} className="text-sm text-muted">
+        Có thể làm lại từ {date}
+      </span>
+    </div>
+  );
+}
 
 function PathItem({ path, onArchived }: { path: LearningPath; onArchived: () => void }) {
   const { upsertPath, reload } = useLearningPaths();
@@ -123,6 +168,7 @@ function PathItem({ path, onArchived }: { path: LearningPath; onArchived: () => 
           Lưu trữ
         </Button>
       </div>
+      <PathDiagnostic path={path} />
       {confirmArchive && (
         <div role="group" aria-label="Xác nhận lưu trữ" className="space-y-3 rounded-2xl bg-error/5 p-3">
           <p className="text-[15px]">
