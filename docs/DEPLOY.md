@@ -29,20 +29,21 @@ push main ─────► Deploy (.github/workflows/deploy.yml)
 4. **Settings → Secrets and variables → Actions → Variables**:
    - `SUPABASE_PROJECT_ID` — project ref
    - `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY`
-   - `VITE_SITE_URL` = `https://<user>.github.io/<repo>`
+   - `VITE_SITE_URL` = `https://nguyenngoctuyen11032003.github.io/Linguo` (phân biệt hoa/thường: `/Linguo`)
    - `VITE_AUTH_GOOGLE_ENABLED` = `true` hoặc `false`
    - `VITE_HERO_VIDEO_URL` (tuỳ chọn)
    - `VITE_BASE_PATH` (tuỳ chọn) — mặc định `/<tên-repo>/`. Đặt `/` khi dùng tên miền riêng hoặc repo dạng `<user>.github.io`.
-5. Supabase **Authentication → URL Configuration** như `docs/SETUP.md` bước 2.
+5. Supabase **Authentication → URL Configuration** như `docs/SETUP.md` bước 2: Site URL `https://nguyenngoctuyen11032003.github.io/Linguo`; Redirect URLs `https://nguyenngoctuyen11032003.github.io/Linguo/**`, `http://localhost:5173/**`, `http://localhost:4173/**`. Cũng đặt **Minimum password length = 8** ở **Sign In / Providers → Email** (xem `docs/SETUP.md`).
 
 ## Quy trình hằng ngày
 1. Tạo nhánh → code → mở PR → CI phải xanh (xem artifact `playwright-report` để duyệt ảnh chụp mobile).
 2. Merge vào `main` → Deploy tự chạy. Có migration mới thì job `migrate` chờ bạn **Approve** `production`.
+   - **Lần deploy đầu tiên** chỉ hỏi duyệt `migrate` một lần: chưa có Edge Function nào nên job `functions` được bỏ qua (job `changes` đặt cờ functions = false khi `supabase/functions` không có `*/index.ts`, kể cả khi chạy tay với `functions = true`).
    - Cổng duyệt của environment chặn ngay từ lúc job bắt đầu, nên người duyệt **chưa thấy** kết quả `db push --dry-run` trước khi bấm. Hãy duyệt dựa trên **SQL migration trong diff của PR** (CI đã áp dụng và test mọi migration trên Supabase local mới tinh).
    - Log `db push --dry-run` chỉ để lưu vết: sau khi duyệt, job in danh sách migration sẽ áp rồi mới chạy `db push --yes`.
    - Một lần push đổi cả migration lẫn Edge Functions sẽ hỏi duyệt **hai lần** (job `migrate` rồi job `functions`, cùng environment `production`).
    - Job `changes` so sánh với commit của lần Deploy **thành công** gần nhất trên `main` (không phải commit trước của lần push), nên migration trong một lần push thất bại/bị thay thế vẫn được áp ở lần sau.
-3. Site: `https://<user>.github.io/<repo>/`.
+3. Site: `https://nguyenngoctuyen11032003.github.io/Linguo/`.
 
 ## Xử lý sự cố
 | Triệu chứng | Cách xử lý |

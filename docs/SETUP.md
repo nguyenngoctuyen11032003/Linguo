@@ -12,17 +12,20 @@ pnpm install
 ## 2. Tạo project Supabase (một lần)
 1. supabase.com → **New project**. Tên `linguo`, region **Southeast Asia (Singapore)**. Lưu lại **Database password**.
 2. Copy **Project URL** ở **Project Settings → Data API** (hoặc nút **Connect** ở đầu trang project), và **Publishable key** (`sb_publishable_…`) ở **Project Settings → API Keys**.
-3. **Authentication → Sign In / Providers → Email**: bật **Confirm email**.
-4. **Authentication → URL Configuration**:
-   - Site URL: `https://<user>.github.io/<repo>`
-   - Redirect URLs: `https://<user>.github.io/<repo>/**`, `http://localhost:5173/**`, `http://localhost:4173/**`
+3. **Authentication → Sign In / Providers → Email**:
+   - Bật **Confirm email**.
+   - Đặt **Minimum password length = 8**. App yêu cầu tối thiểu 8 ký tự, nhưng mặc định của Supabase hosted là 6; không đặt thì ai gọi thẳng API vẫn tạo được mật khẩu 6 ký tự.
+   - (Tuỳ chọn) bật **Secure password change**: đổi mật khẩu yêu cầu đăng nhập gần đây.
+4. **Authentication → URL Configuration** (đường dẫn **phân biệt hoa/thường**: `/Linguo`, không phải `/linguo`):
+   - Site URL: `https://nguyenngoctuyen11032003.github.io/Linguo`
+   - Redirect URLs: `https://nguyenngoctuyen11032003.github.io/Linguo/**`, `http://localhost:5173/**`, `http://localhost:4173/**`
 5. Email mặc định của Supabase chỉ gửi vài email mỗi giờ. Trước khi có người dùng thật, cấu hình **Authentication → Emails → SMTP** (ví dụ Resend).
 
 ## 3. Điền `.env`
 ```bash
 cp .env.example .env
 ```
-Điền `VITE_SUPABASE_URL` và `VITE_SUPABASE_PUBLISHABLE_KEY`. Kiểm tra: `pnpm check-env`.
+Điền `VITE_SUPABASE_URL` và `VITE_SUPABASE_PUBLISHABLE_KEY`. Ở production đặt thêm `VITE_SITE_URL=https://nguyenngoctuyen11032003.github.io/Linguo` (khi chạy local có thể bỏ trống, app dùng origin hiện tại). Kiểm tra: `pnpm check-env`.
 
 ## 4. Áp migration lên project (lần đầu, hoặc để CI làm)
 ```bash
@@ -38,10 +41,11 @@ pnpm db:types   # cần `pnpm db:start` đang chạy
 ```
 
 ## 5. Đăng nhập Google (tuỳ chọn)
-1. console.cloud.google.com → APIs & Services → **Credentials → Create OAuth client ID → Web application**.
-2. Authorized redirect URI: `https://<project-ref>.supabase.co/auth/v1/callback`.
-3. Supabase → **Authentication → Sign In / Providers → Google**: dán Client ID và Client Secret, bật.
-4. Đặt `VITE_AUTH_GOOGLE_ENABLED=true` trong `.env` và trong GitHub Variables.
+1. console.cloud.google.com → APIs & Services → **OAuth consent screen**: cấu hình trước khi tạo client (App name `Linguo`, User support email, Developer contact email).
+2. **Credentials → Create OAuth client ID → Web application**.
+3. Authorized redirect URI: `https://<project-ref>.supabase.co/auth/v1/callback`.
+4. Supabase → **Authentication → Sign In / Providers → Google**: dán Client ID và Client Secret, bật.
+5. Đặt `VITE_AUTH_GOOGLE_ENABLED=true` trong `.env` và trong GitHub Variables.
 
 ## 6. Chạy
 ```bash

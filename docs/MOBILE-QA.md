@@ -19,4 +19,4 @@ Chạy trước mỗi bản phát hành có thay đổi giao diện. Ghi kết q
 - [ ] Tắt mạng: hiện banner ngoại tuyến; lưu hồ sơ báo lỗi, không báo thành công giả
 - [ ] VoiceOver (iOS) / TalkBack (Android): đọc đúng nhãn nút, tab, ô nhập
 - [ ] Phóng chữ 200%: không vỡ bố cục, chữ xuống dòng thay vì tràn
-- [ ] "Thêm vào màn hình chính": icon đúng (không có ô ca-rô), mở vào /app
+- [ ] "Thêm vào màn hình chính": icon đúng (không có ô ca-rô), mở vào trang chủ (đăng nhập rồi sẽ vào app)
