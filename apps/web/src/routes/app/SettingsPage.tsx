@@ -10,6 +10,7 @@ import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useToast } from '@/components/ui/Toast';
 import { useAuth } from '@/features/auth/AuthProvider';
+import { clearLessonCache } from '@/features/lesson-player/lessonCache';
 import { useOutboxSyncContext } from '@/features/lesson-player/OutboxSyncProvider';
 import { markLocalPreferenceEdit } from '@/features/preferences/local-edits';
 import { updatePreferences } from '@/features/preferences/service';
@@ -145,6 +146,9 @@ export function SettingsPage() {
         }
         toast.show({ tone: 'error', message: 'Không đăng xuất được trên máy chủ, đã xoá phiên trên thiết bị này.' });
       }
+      // Queued answers stay in the outbox (sent when this user signs in here again), but the cached lesson text is
+      // only for offline reopening by this user and must not outlive the session on a shared device.
+      if (userId) clearLessonCache(userId);
       navigate('/', { replace: true });
     } catch {
       toast.show({ tone: 'error', message: 'Không đăng xuất được. Vui lòng thử lại.' });

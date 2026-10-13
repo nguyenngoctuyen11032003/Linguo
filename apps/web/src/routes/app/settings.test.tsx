@@ -3,7 +3,8 @@ import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { stubMatchMedia } from '../../../tests/unit/match-media';
 import { renderWithProviders, TEST_USER_ID } from '../../../tests/unit/render';
-import { result, submitArgs } from '@/features/lesson-player/lesson-fixtures';
+import { LESSON_ID, PATH_ID, payload, result, submitArgs } from '@/features/lesson-player/lesson-fixtures';
+import { lessonCacheKey, writeLessonCache } from '@/features/lesson-player/lessonCache';
 import { createOutbox } from '@/features/lesson-player/outbox';
 import { SettingsPage } from './SettingsPage';
 
@@ -103,6 +104,32 @@ describe('SettingsPage', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Vẫn đăng xuất' }));
     await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent(/^\/$/));
     expect(mocks.signOut).toHaveBeenCalledTimes(1);
+  });
+
+  it("clears the user's offline lesson cache on sign-out but keeps the queued answers", async () => {
+    const OTHER_USER = '99999999-9999-4999-8999-999999999999';
+    const mine = lessonCacheKey(TEST_USER_ID, PATH_ID, LESSON_ID);
+    const theirs = lessonCacheKey(OTHER_USER, PATH_ID, LESSON_ID);
+    writeLessonCache(TEST_USER_ID, mine, payload());
+    writeLessonCache(OTHER_USER, theirs, payload());
+    queueAnswer();
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
+    await userEvent.click(await screen.findByRole('button', { name: 'Vẫn đăng xuất' }));
+    await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent(/^\/$/));
+    expect(localStorage.getItem(mine)).toBeNull();
+    expect(localStorage.getItem(theirs)).not.toBeNull();
+    expect(createOutbox(TEST_USER_ID).list()).toHaveLength(1);
+  });
+
+  it('keeps the offline lesson cache when signing out fails', async () => {
+    const key = lessonCacheKey(TEST_USER_ID, PATH_ID, LESSON_ID);
+    writeLessonCache(TEST_USER_ID, key, payload());
+    mocks.signOut.mockResolvedValue({ error: { status: 0 } });
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
+    expect(await screen.findByText('Không đăng xuất được. Vui lòng thử lại.')).toBeInTheDocument();
+    expect(localStorage.getItem(key)).not.toBeNull();
   });
 
   it('can sync the waiting answers from the warning, then signs out without asking again', async () => {
