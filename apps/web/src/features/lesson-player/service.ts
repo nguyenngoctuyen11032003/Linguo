@@ -18,12 +18,18 @@ import type { AppSupabaseClient } from '@/lib/supabase';
 
 /** The generated Database types may not list the spec 2 RPCs yet; the zod contracts are the source of truth. */
 interface UntypedRpcClient {
-  rpc: (fn: string, args: Record<string, unknown>) => PromiseLike<{ data: unknown; error: unknown }>;
+  rpc: (fn: string, args: Record<string, unknown>) => PromiseLike<{ data: unknown; error: unknown; status?: number }>;
 }
 
 async function callRpc(client: AppSupabaseClient, fn: string, args: Record<string, unknown>): Promise<unknown> {
-  const { data, error } = await (client as unknown as UntypedRpcClient).rpc(fn, args);
-  if (error) throw error;
+  const { data, error, status } = await (client as unknown as UntypedRpcClient).rpc(fn, args);
+  if (error) {
+    // PostgrestError carries no HTTP status; keep it so callers can tell a 5xx/401 (transient) from a 4xx answer.
+    if (typeof status === 'number' && typeof error === 'object' && !('status' in error)) {
+      Object.assign(error, { status });
+    }
+    throw error;
+  }
   return data;
 }
 

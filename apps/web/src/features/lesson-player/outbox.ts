@@ -26,8 +26,11 @@ export interface Outbox {
   readonly key: string;
   /** FIFO (oldest first). */
   list: () => OutboxEntry[];
-  /** Ignored when an entry with the same idempotency key is already queued. */
-  add: (entry: NewOutboxEntry) => void;
+  /**
+   * Ignored when an entry with the same idempotency key is already queued. Returns false when the entry could not be
+   * persisted (no storage, quota exceeded, blocked): the caller must not show it as waiting for sync.
+   */
+  add: (entry: NewOutboxEntry) => boolean;
   remove: (idempotencyKey: string) => void;
   /** Counts a failed send and schedules the next try with exponential backoff and jitter. */
   markFailed: (idempotencyKey: string, now?: number) => void;
@@ -76,18 +79,24 @@ export function createOutbox(userId: string, storage: Storage | null = defaultSt
     });
   };
 
-  const write = (entries: OutboxEntry[]) => {
+  /** False when there is no storage or it throws (full, blocked). */
+  const write = (entries: OutboxEntry[]): boolean => {
+    let saved = false;
     try {
-      if (entries.length === 0) storage?.removeItem(key);
-      else storage?.setItem(key, JSON.stringify(entries));
+      if (storage) {
+        if (entries.length === 0) storage.removeItem(key);
+        else storage.setItem(key, JSON.stringify(entries));
+        saved = true;
+      }
     } catch {
-      // Storage full or blocked: the entry stays only in memory of the caller (shown as pending until reload).
+      // Storage full or blocked: reported to the caller.
     }
     try {
       window.dispatchEvent(new CustomEvent(OUTBOX_CHANGE_EVENT, { detail: { key } }));
     } catch {
       // No window (non-DOM caller): nothing to notify.
     }
+    return saved;
   };
 
   return {
@@ -95,7 +104,7 @@ export function createOutbox(userId: string, storage: Storage | null = defaultSt
     list: read,
     add(entry) {
       const entries = read();
-      if (entries.some((e) => e.args.p_idempotency_key === entry.args.p_idempotency_key)) return;
+      if (entries.some((e) => e.args.p_idempotency_key === entry.args.p_idempotency_key)) return true;
       const full: OutboxEntry = {
         args: entry.args,
         queueIndex: entry.queueIndex,
@@ -103,7 +112,7 @@ export function createOutbox(userId: string, storage: Storage | null = defaultSt
         tries: entry.tries ?? 0,
         nextAttemptAt: entry.nextAttemptAt ?? 0,
       };
-      write([...entries, full].slice(-OUTBOX_CAP));
+      return write([...entries, full].slice(-OUTBOX_CAP));
     },
     remove(idempotencyKey) {
       const entries = read();

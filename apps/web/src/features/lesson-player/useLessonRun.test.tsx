@@ -241,6 +241,54 @@ describe('useLessonRun', () => {
     expect(hook.current.api.exerciseState(EX1, 0).status).toBe('pending_sync');
   });
 
+  it('ignores a second submit of the same entry while the first is in flight, and any submit once resolved', async () => {
+    let resolveFirst: (value: { data: unknown }) => void = () => undefined;
+    const rpc = vi.fn((name: string) => {
+      if (name === 'get_lesson') return Promise.resolve({ data: payload(), error: null });
+      return new Promise<{ data: unknown }>((resolve) => {
+        resolveFirst = resolve;
+      }).then((r) => ({ ...r, error: null }));
+    });
+    mocks.client = { rpc };
+    const { result: hook } = renderRun();
+    await ready(hook);
+    const meta = { confidence: null, responseMs: 10, hintCount: 0 };
+    let first: Promise<void> = Promise.resolve();
+    let second: Promise<void> = Promise.resolve();
+    act(() => {
+      // Same tick (double click): React has not re-rendered between the two calls.
+      first = hook.current.api.submit(EX1, 0, { option_id: 'a' }, meta);
+      second = hook.current.api.submit(EX1, 0, { option_id: 'b' }, meta);
+    });
+    await act(async () => {
+      resolveFirst({ data: result() });
+      await Promise.all([first, second]);
+    });
+    const submits = () => rpc.mock.calls.filter(([n]) => n === 'submit_exercise');
+    expect(submits()).toHaveLength(1);
+    expect(hook.current.api.exerciseState(EX1, 0).lastResult?.final).toBe(true);
+    // Resolved: a later submit would be stored as an after-reveal attempt (a fake re-check).
+    await act(() => hook.current.api.submit(EX1, 0, { option_id: 'b' }, meta));
+    expect(submits()).toHaveLength(1);
+  });
+
+  it('does not leave an answer pending forever when the outbox cannot be written', async () => {
+    installClient({ get_lesson: () => ({ data: payload() }), submit_exercise: () => ({ error: NETWORK }) });
+    const { result: hook } = renderRun();
+    await ready(hook);
+    const setItem = vi.spyOn(localStorage, 'setItem').mockImplementation(() => {
+      throw new Error('QuotaExceededError');
+    });
+    try {
+      await act(() => hook.current.api.submit(EX1, 0, { option_id: 'a' }, { confidence: null, responseMs: 10, hintCount: 0 }));
+    } finally {
+      setItem.mockRestore();
+    }
+    expect(hook.current.api.exerciseState(EX1, 0).status).toBe('idle');
+    expect(hook.current.api.pendingCount).toBe(0);
+    expect(await screen.findByText(/^Không kết nối được máy chủ/)).toBeInTheDocument();
+  });
+
   it('restores pending entries of this run after a reload', async () => {
     installClient({ get_lesson: () => ({ data: payload() }), submit_exercise: () => ({ error: NETWORK }) });
     createOutbox(USER_ID).add({
@@ -312,13 +360,31 @@ describe('useLessonRun', () => {
     installClient({ get_lesson: () => (offline ? { error: NETWORK } : { data: payload({ run: run({ cursor: 4 }) }) }) });
     const first = renderRun();
     await ready(first.result);
-    expect(sessionStorage.getItem(lessonCacheKey(USER_ID, LESSON_ID))).not.toBeNull();
+    expect(sessionStorage.getItem(lessonCacheKey(USER_ID, PATH_ID, LESSON_ID))).not.toBeNull();
     first.unmount();
 
     offline = true;
     const { result: hook } = renderRun();
     await ready(hook);
     expect(hook.current.api.stepIndex).toBe(4);
+  });
+
+  it('scopes the offline cache to the path and never reopens a completed run from it', async () => {
+    const OTHER_PATH = '30000000-0000-4000-8000-000000000002';
+    let offline = false;
+    installClient({ get_lesson: () => (offline ? { error: NETWORK } : { data: payload({ run: run({ cursor: 4 }) }) }) });
+    const first = renderRun();
+    await ready(first.result);
+    first.unmount();
+
+    offline = true;
+    const other = renderRun(undefined, OTHER_PATH);
+    await waitFor(() => expect(other.result.current.api.status).toBe('error'));
+    other.unmount();
+
+    sessionStorage.setItem(lessonCacheKey(USER_ID, PATH_ID, LESSON_ID), JSON.stringify(payload({ run: run({ status: 'completed' }) })));
+    const { result: hook } = renderRun();
+    await waitFor(() => expect(hook.current.api.status).toBe('error'));
   });
 
   it('fails offline without a cached lesson', async () => {

@@ -17,7 +17,10 @@ export function buildSteps(payload: LessonPayload, queue: readonly string[]): Le
   queue.forEach((exerciseId, queueIndex) => {
     const exercise = byId.get(exerciseId);
     if (!exercise) return; // unknown id (stale queue): skip rather than render a broken step
-    steps.push({ kind: 'exercise', exerciseId, stage: exercise.stage, recheck: queueIndex >= exercises.length, queueIndex });
+    // A re-check is a repeated id (as in attemptsFor); the queue was built at run start, so its length need not
+    // match the exercises published now.
+    const recheck = queue.indexOf(exerciseId) < queueIndex;
+    steps.push({ kind: 'exercise', exerciseId, stage: exercise.stage, recheck, queueIndex });
   });
   steps.push({ kind: 'summary' }, { kind: 'next_review' });
   return steps;

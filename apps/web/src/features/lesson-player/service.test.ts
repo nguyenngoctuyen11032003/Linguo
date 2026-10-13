@@ -62,6 +62,12 @@ describe('lesson-player service', () => {
     await expect(getLesson(client, LESSON_ID, PATH_ID)).rejects.toBe(error);
   });
 
+  it('keeps the HTTP status on the thrown error so transient failures can be retried', async () => {
+    const error = { message: '<html>Bad gateway</html>', code: '' };
+    const client = { rpc: () => Promise.resolve({ data: null, error, status: 502 }) } as unknown as Parameters<typeof getLesson>[0];
+    await expect(getLesson(client, LESSON_ID, PATH_ID)).rejects.toMatchObject({ message: error.message, status: 502 });
+  });
+
   it('throws invalid_payload when the response does not match the contract', async () => {
     const client = fakeClient({}, { submit_exercise: { data: { verdict: 'maybe' } }, get_lesson: { data: { lesson: null } } });
     await expect(submitExercise(client, submitArgs())).rejects.toThrow('invalid_payload');

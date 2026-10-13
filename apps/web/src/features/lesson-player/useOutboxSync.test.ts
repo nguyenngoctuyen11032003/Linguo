@@ -107,6 +107,23 @@ describe('useOutboxSync', () => {
     expect(outbox.list()).toHaveLength(1);
   });
 
+  it('keeps entries on transient server failures (5xx, expired JWT) instead of dropping the answer', async () => {
+    const a = submitArgs();
+    const outbox = queue(a);
+    const onResult = vi.fn();
+    const gateway = scriptedClient([{ data: null, error: { message: 'Bad gateway', code: '', status: 502 } }]);
+    const first = renderHook(() => useOutboxSync(gateway.client, USER, onResult));
+    await settle();
+    first.unmount();
+    const jwt = scriptedClient([{ data: null, error: { message: 'JWT expired', code: 'PGRST301' } }]);
+    renderHook(() => useOutboxSync(jwt.client, USER, onResult));
+    await settle();
+    expect(gateway.calls).toHaveLength(1);
+    expect(jwt.calls).toHaveLength(1);
+    expect(onResult).not.toHaveBeenCalled();
+    expect(outbox.list()).toMatchObject([{ tries: 2 }]);
+  });
+
   it('retries on the 15 s interval once the backoff has elapsed, and on online', async () => {
     vi.spyOn(Math, 'random').mockReturnValue(0);
     const a = submitArgs();

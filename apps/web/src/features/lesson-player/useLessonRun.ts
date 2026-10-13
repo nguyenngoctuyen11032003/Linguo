@@ -16,7 +16,7 @@ import { getSupabase, type AppSupabaseClient } from '@/lib/supabase';
 import { useOnline } from '@/lib/useOnline';
 import { isNetworkError, lessonErrorMessage } from './error-map';
 import { createOutbox, type OutboxEntry } from './outbox';
-import { buildSteps, exerciseStateFor, initialPlayerState, playerReducer, type EntryRef } from './playerMachine';
+import { buildSteps, entryKey, exerciseStateFor, initialPlayerState, playerReducer, type EntryRef } from './playerMachine';
 import { completeLesson, getLesson, saveCursor, startLesson, submitExercise } from './service';
 import type { ExerciseUiState, LessonRunApi, LessonStep, SubmitMeta } from './types';
 import { useOutboxSync, type OutboxOutcome } from './useOutboxSync';
@@ -28,8 +28,9 @@ const NO_ITEMS: LessonItem[] = [];
 const NO_EXERCISES: Record<string, PublicExercise> = {};
 const NO_STEPS: LessonStep[] = [];
 
-export function lessonCacheKey(userId: string, lessonId: string): string {
-  return `${LESSON_CACHE_PREFIX}${userId}:${lessonId}`;
+/** Scoped per user and path: a run belongs to one learning path, so another path must never reuse it offline. */
+export function lessonCacheKey(userId: string, pathId: string, lessonId: string): string {
+  return `${LESSON_CACHE_PREFIX}${userId}:${pathId}:${lessonId}`;
 }
 
 /** Text-only payload of the lesson being studied, so it can be reopened offline (spec 2 §7.4). */
@@ -38,7 +39,8 @@ function readCache(key: string): LessonPayload | null {
     const raw = sessionStorage.getItem(key);
     if (!raw) return null;
     const parsed = lessonPayloadSchema.safeParse(JSON.parse(raw));
-    return parsed.success && parsed.data.run ? parsed.data : null;
+    // A completed run cannot take new answers; reopening it needs start_lesson, which needs the network.
+    return parsed.success && parsed.data.run?.status === 'in_progress' ? parsed.data : null;
   } catch {
     return null;
   }
@@ -63,7 +65,7 @@ async function loadPayload(client: AppSupabaseClient, userId: string, lessonId: 
   try {
     payload = await getLesson(client, lessonId, pathId);
   } catch (error) {
-    const cached = isNetworkError(error) ? readCache(lessonCacheKey(userId, lessonId)) : null;
+    const cached = isNetworkError(error) ? readCache(lessonCacheKey(userId, pathId, lessonId)) : null;
     if (!cached) throw error;
     return cached;
   }
@@ -99,6 +101,10 @@ export function useLessonRun(lessonId: string): LessonRunApi {
   });
 
   const runIdRef = useRef<string | null>(null);
+  /** Cache key of the loaded run; null while (re)loading so a stale payload is never written under a new key. */
+  const cacheKeyRef = useRef<string | null>(null);
+  /** Queue entries with a submit in flight (guards double submits before React re-renders). */
+  const submittingRef = useRef(new Set<string>());
   /** Outbox results that arrived before the run was loaded; applied right after loading. */
   const earlyResults = useRef<Array<{ outcome: OutboxOutcome; entry: OutboxEntry }>>([]);
   const savedCursor = useRef(0);
@@ -130,6 +136,8 @@ export function useLessonRun(lessonId: string): LessonRunApi {
 
   // ---- loading -------------------------------------------------------------------------------------------
   useEffect(() => {
+    runIdRef.current = null;
+    cacheKeyRef.current = null;
     if (!userId) return;
     if (!client) {
       setLoad({ status: 'error', error: lessonErrorMessage(new Error('supabase_unavailable')) });
@@ -144,7 +152,6 @@ export function useLessonRun(lessonId: string): LessonRunApi {
       return;
     }
     let active = true;
-    runIdRef.current = null;
     setLoad({ status: 'loading', error: null });
     loadPayload(client, userId, lessonId, pathId)
       .then((payload) => {
@@ -158,6 +165,7 @@ export function useLessonRun(lessonId: string): LessonRunApi {
           .filter((e) => e.args.p_run_id === run.id)
           .map((e) => ({ exerciseId: e.args.p_exercise_id, queueIndex: e.queueIndex }));
         runIdRef.current = run.id;
+        cacheKeyRef.current = lessonCacheKey(userId, pathId, lessonId);
         savedCursor.current = run.cursor;
         wantedCursor.current = run.cursor;
         dispatch({ type: 'loaded', payload, run, stepIndex, pending });
@@ -189,9 +197,12 @@ export function useLessonRun(lessonId: string): LessonRunApi {
 
   // ---- offline cache -------------------------------------------------------------------------------------
   useEffect(() => {
-    if (!ready || !userId || !state.payload || !state.run) return;
-    writeCache(lessonCacheKey(userId, lessonId), { ...state.payload, run: state.run, attempts: state.attempts });
-  }, [ready, userId, lessonId, state.payload, state.run, state.attempts]);
+    // Keyed by the run that is loaded, not by the current params: right after the lesson/path changes the state
+    // still holds the previous payload (the loading effect has already cleared the key).
+    const key = cacheKeyRef.current;
+    if (!ready || !key || !state.payload || !state.run) return;
+    writeCache(key, { ...state.payload, run: state.run, attempts: state.attempts });
+  }, [ready, state.payload, state.run, state.attempts]);
 
   // ---- ?buoc= ↔ step index (browser back/forward walk the steps) ------------------------------------------
   useEffect(() => {
@@ -252,6 +263,13 @@ export function useLessonRun(lessonId: string): LessonRunApi {
       const exercise = current.payload?.exercises.find((e) => e.id === exerciseId);
       if (!run || !exercise || !userId) return;
       const ref: EntryRef = { exerciseId, queueIndex };
+      // One answer at a time per queue entry, and none once it is resolved: a second (double-click) submit would be
+      // graded as attempt 2 (revealing the answer), and one after the reveal would count as the re-check.
+      const key = `${run.id}:${entryKey(exerciseId, queueIndex)}`;
+      const known = exerciseStateFor(current, exerciseId, queueIndex);
+      if (submittingRef.current.has(key) || known.status === 'submitting' || known.status === 'pending_sync') return;
+      if (known.lastResult?.final) return;
+      submittingRef.current.add(key);
       const args: SubmitArgs = {
         p_run_id: run.id,
         p_exercise_id: exerciseId,
@@ -263,30 +281,40 @@ export function useLessonRun(lessonId: string): LessonRunApi {
         p_hint_count: Math.max(0, Math.round(meta.hintCount)),
         p_client_at: new Date().toISOString(),
       };
-      dispatch({ type: 'submitting', ...ref });
-      const queueOffline = () => {
-        createOutbox(userId).add({ args, queueIndex });
-        dispatch({ type: 'pending', ...ref });
-      };
-      if (!c) {
+      /** The answer belongs to the run on screen (the learner may have moved to another lesson meanwhile). */
+      const sameRun = () => runIdRef.current === run.id;
+      const fail = (error: unknown) => {
+        if (!sameRun()) return;
         dispatch({ type: 'failed', ...ref });
-        toast.show({ tone: 'error', message: lessonErrorMessage(new Error('supabase_unavailable')) });
-        return;
-      }
-      if (!isOnline) {
-        queueOffline();
-        return;
-      }
+        toast.show({ tone: 'error', message: lessonErrorMessage(error) });
+      };
+      const queueOffline = () => {
+        if (!createOutbox(userId).add({ args, queueIndex })) {
+          // Storage full/blocked: nothing would ever sync it, so do not show it as waiting.
+          fail(new TypeError('Failed to fetch'));
+          return;
+        }
+        if (sameRun()) dispatch({ type: 'pending', ...ref });
+      };
+      dispatch({ type: 'submitting', ...ref });
       try {
-        const result = await submitExercise(c, args);
-        dispatch({ type: 'graded', ...ref, result });
-      } catch (error) {
-        if (isNetworkError(error)) {
+        if (!c) {
+          fail(new Error('supabase_unavailable'));
+          return;
+        }
+        if (!isOnline) {
           queueOffline();
           return;
         }
-        dispatch({ type: 'failed', ...ref });
-        toast.show({ tone: 'error', message: lessonErrorMessage(error) });
+        try {
+          const result = await submitExercise(c, args);
+          if (sameRun()) dispatch({ type: 'graded', ...ref, result });
+        } catch (error) {
+          if (isNetworkError(error)) queueOffline();
+          else fail(error);
+        }
+      } finally {
+        submittingRef.current.delete(key);
       }
     },
     [userId, toast],

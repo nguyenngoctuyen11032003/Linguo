@@ -42,6 +42,19 @@ describe('buildSteps', () => {
     });
   });
 
+  it('marks re-checks by repeated id even when the published exercises changed since the run started', () => {
+    // EX2 was unpublished after the run started: index 1 >= exercises.length but it is not a re-check.
+    const onlyEx1 = payload({ exercises: payload().exercises.filter((e) => e.id === EX1) });
+    expect(buildSteps(onlyEx1, [EX1, EX2, EX1]).flatMap((s) => (s.kind === 'exercise' ? [[s.queueIndex, s.recheck]] : []))).toEqual([
+      [0, false],
+      [2, true],
+    ]);
+    // A third exercise was published after the run started: the appended re-check at index 2 is still a re-check.
+    const ex3 = { ...payload().exercises[0]!, id: '50000000-0000-4000-8000-000000000003' };
+    const more = payload({ exercises: [...payload().exercises, ex3] });
+    expect(buildSteps(more, [EX1, EX2, EX1]).filter((s) => s.kind === 'exercise').at(-1)).toMatchObject({ queueIndex: 2, recheck: true });
+  });
+
   it('skips content steps whose blocks are missing', () => {
     const base = payload();
     const p = payload({ lesson: { ...base.lesson, objectives: [], body: [{ type: 'deep_explain', text: { vi: 'Sâu' } }] } });
