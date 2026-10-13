@@ -122,6 +122,14 @@ describe('learningPathErrorMessage', () => {
     expect(learningPathErrorMessage({ code: 'P0001', message: 'some_new_code' })).toBe('Đã có lỗi xảy ra (mã: some_new_code). Vui lòng thử lại.');
     expect(learningPathErrorMessage(null)).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
   });
+
+  it('treats a postgrest-wrapped fetch failure as a network error', () => {
+    // supabase-js resolves (does not throw) this shape when the request never reaches the server.
+    expect(learningPathErrorMessage({ message: 'TypeError: Failed to fetch', details: '', hint: '', code: '' })).toBe(
+      'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.',
+    );
+    expect(learningPathErrorMessage({ message: 'constructor' })).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
+  });
 });
 
 describe('LearningPathsProvider', () => {

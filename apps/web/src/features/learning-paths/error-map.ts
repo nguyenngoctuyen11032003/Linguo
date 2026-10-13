@@ -1,3 +1,5 @@
+import { isNetworkError } from '@/lib/network-error';
+
 const MESSAGES: Record<string, string> = {
   not_authenticated: 'Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.',
   path_exists_for_language: 'Bạn đã có lộ trình cho ngôn ngữ này.',
@@ -25,10 +27,10 @@ function errorCode(error: object): string | null {
 }
 
 export function learningPathErrorMessage(error: unknown): string {
-  if (error instanceof TypeError) return 'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.';
+  if (isNetworkError(error)) return 'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.';
   if (error && typeof error === 'object') {
     if ('message' in error && typeof error.message === 'string') {
-      const known = MESSAGES[error.message];
+      const known = Object.hasOwn(MESSAGES, error.message) ? MESSAGES[error.message] : undefined;
       if (known) return known;
     }
     const code = errorCode(error);
