@@ -228,7 +228,11 @@ test('the AI sheet fits the phone viewport and closes', async ({ page }) => {
   await expectInsideViewport(page, panel);
   const close = panel.getByRole('button', { name: 'Đóng', exact: true });
   await expectInsideViewport(page, close);
-  await expectInsideViewport(page, panel.getByRole('button', { name: 'Báo lỗi' }));
+  // Long answers scroll inside the sheet: the actions at the end stay reachable on short screens.
+  const report = panel.getByRole('button', { name: 'Báo lỗi' });
+  await report.scrollIntoViewIfNeeded();
+  await expectInsideViewport(page, report);
+  await expectInsideViewport(page, close);
   await closeSheet(panel);
   await expect(page.getByRole('button', { name: 'Giải thích AI', exact: true })).toBeVisible();
 });
@@ -242,6 +246,8 @@ for (const colorScheme of ['light', 'dark'] as const) {
     await page.getByRole('button', { name: 'Giải thích AI', exact: true }).click();
     await expect(page.getByRole('alertdialog', { name: NOTICE_TITLE })).toBeVisible();
     const axe = async () => {
+      // Let the sheet's enter transition settle, like a11y.spec.ts does for pages.
+      await page.waitForTimeout(800);
       const results = await new AxeBuilder({ page }).analyze();
       const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
       expect(serious, JSON.stringify(serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) })), null, 2)).toEqual([]);
