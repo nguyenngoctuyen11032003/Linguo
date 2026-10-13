@@ -32,6 +32,8 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - name: Chặn secret lọt vào biến VITE_*
         run: node scripts/check-public-env.mjs
+      - name: Migration đã deploy không bị sửa
+        run: node scripts/check-migrations-immutable.mjs
       - run: pnpm lint
       - name: Kiểm tra nội dung (content/)
         run: pnpm content:check
