@@ -1,19 +1,34 @@
+const FALLBACK_TIME_ZONE = 'Asia/Ho_Chi_Minh';
 const DAY_FORMATS = new Map<string, Intl.DateTimeFormat>();
+const WEEKDAY_FORMATS = new Map<string, Intl.DateTimeFormat>();
 const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
-/** The user's local calendar date (YYYY-MM-DD) in `timeZone`. */
-export function todayIso(timeZone: string, now: Date = new Date()): string {
-  let format = DAY_FORMATS.get(timeZone);
-  if (!format) {
-    format = new Intl.DateTimeFormat('en-CA', { timeZone, year: 'numeric', month: '2-digit', day: '2-digit' });
-    DAY_FORMATS.set(timeZone, format);
+/** Cached formatter for `timeZone`; an invalid zone (RangeError) falls back to Asia/Ho_Chi_Minh. */
+function cachedFormat(cache: Map<string, Intl.DateTimeFormat>, timeZone: string, options: Intl.DateTimeFormatOptions): Intl.DateTimeFormat {
+  const hit = cache.get(timeZone);
+  if (hit) return hit;
+  let format: Intl.DateTimeFormat;
+  try {
+    format = new Intl.DateTimeFormat('en-US', { ...options, timeZone });
+  } catch (error) {
+    if (!(error instanceof RangeError) || timeZone === FALLBACK_TIME_ZONE) throw error;
+    return cachedFormat(cache, FALLBACK_TIME_ZONE, options);
   }
-  return format.format(now);
+  cache.set(timeZone, format);
+  return format;
 }
 
-/** Monday = 0 … Sunday = 6, in `timeZone`. */
+/** The user's local calendar date (YYYY-MM-DD) in `timeZone`. Invalid zones fall back to Asia/Ho_Chi_Minh. */
+export function todayIso(timeZone: string, now: Date = new Date()): string {
+  const format = cachedFormat(DAY_FORMATS, timeZone, { year: 'numeric', month: '2-digit', day: '2-digit' });
+  const parts = format.formatToParts(now);
+  const part = (type: 'year' | 'month' | 'day') => parts.find((p) => p.type === type)?.value ?? '';
+  return `${part('year').padStart(4, '0')}-${part('month').padStart(2, '0')}-${part('day').padStart(2, '0')}`;
+}
+
+/** Monday = 0 … Sunday = 6, in `timeZone`. Invalid zones fall back to Asia/Ho_Chi_Minh. */
 export function weekdayIndex(timeZone: string, now: Date = new Date()): number {
-  return WEEKDAYS.indexOf(new Intl.DateTimeFormat('en-US', { timeZone, weekday: 'short' }).format(now));
+  return WEEKDAYS.indexOf(cachedFormat(WEEKDAY_FORMATS, timeZone, { weekday: 'short' }).format(now));
 }
 
 export function addMonthsIso(iso: string, months: number): string {
