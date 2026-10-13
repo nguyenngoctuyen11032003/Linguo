@@ -1,0 +1,502 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+language: en
+skill: grammar
+items:
+  # ---------- pre_a1 ----------
+  - key: en:diag:gram-pre-a1-i-am
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "I ___ a student."
+      stem_lang: en
+      options:
+        - { id: a, text: am, lang: en }
+        - { id: b, text: is, lang: en }
+        - { id: c, text: are, lang: en }
+        - { id: d, text: be, lang: en }
+    answer: a
+    explanation: { vi: "Với chủ ngữ “I” ta luôn dùng “am”: “I am a student”. “Is” dùng cho he/she/it, còn “be” là dạng nguyên mẫu, không đứng sau chủ ngữ như vậy." }
+
+  - key: en:diag:gram-pre-a1-this-is
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "This ___ my book."
+      stem_lang: en
+      options:
+        - { id: a, text: are, lang: en }
+        - { id: b, text: is, lang: en }
+        - { id: c, text: am, lang: en }
+        - { id: d, text: be, lang: en }
+    answer: b
+    explanation: { vi: "“This” chỉ một vật số ít nên đi với “is”. “Are” chỉ dùng cho số nhiều hoặc “you”, “am” chỉ dùng với “I”." }
+
+  - key: en:diag:gram-pre-a1-an-apple
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "It is ___ apple."
+      stem_lang: en
+      options:
+        - { id: a, text: a, lang: en }
+        - { id: b, text: two, lang: en }
+        - { id: c, text: an, lang: en }
+        - { id: d, text: many, lang: en }
+    answer: c
+    explanation: { vi: "“Apple” bắt đầu bằng nguyên âm nên dùng “an”: “an apple”. “A” dùng trước phụ âm; “two” và “many” cần danh từ số nhiều (apples) và động từ “are”." }
+
+  - key: en:diag:gram-pre-a1-my-name
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "___ name is Anna."
+      stem_lang: en
+      options:
+        - { id: a, text: I, lang: en }
+        - { id: b, text: Me, lang: en }
+        - { id: c, text: Mine, lang: en }
+        - { id: d, text: My, lang: en }
+    answer: d
+    explanation: { vi: "Trước danh từ “name” cần tính từ sở hữu “my” (của tôi). “I” và “me” là đại từ nhân xưng, “mine” đứng một mình, không đi kèm danh từ." }
+
+  - key: en:diag:gram-pre-a1-they-are
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "They ___ my friends."
+      stem_lang: en
+      options:
+        - { id: a, text: is, lang: en }
+        - { id: b, text: are, lang: en }
+        - { id: c, text: am, lang: en }
+        - { id: d, text: be, lang: en }
+    answer: b
+    explanation: { vi: "Chủ ngữ số nhiều “they” đi với “are”. “Is” chỉ dùng cho chủ ngữ số ít như he/she/it." }
+
+  # ---------- a1 ----------
+  - key: en:diag:gram-a1-she-lives
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "She ___ in Hanoi with her parents."
+      stem_lang: en
+      options:
+        - { id: a, text: live, lang: en }
+        - { id: b, text: living, lang: en }
+        - { id: c, text: lives, lang: en }
+        - { id: d, text: is live, lang: en }
+    answer: c
+    explanation: { vi: "Thì hiện tại đơn với chủ ngữ ngôi thứ ba số ít (she) thì động từ thêm “-s”: “lives”. “Is live” sai vì không dùng “is” cùng động từ nguyên mẫu." }
+
+  - key: en:diag:gram-a1-there-are-two-cats
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "There ___ two cats in the garden."
+      stem_lang: en
+      options:
+        - { id: a, text: are, lang: en }
+        - { id: b, text: is, lang: en }
+        - { id: c, text: has, lang: en }
+        - { id: d, text: have, lang: en }
+    answer: a
+    explanation: { vi: "“Two cats” là số nhiều nên dùng “there are”. Tiếng Việt nói “có”, nhưng tiếng Anh không dùng “has/have” trong cấu trúc “there ___” này." }
+
+  - key: en:diag:gram-a1-fish-in-river
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Many fish swim ___ the river."
+      stem_lang: en
+      options:
+        - { id: a, text: on, lang: en }
+        - { id: b, text: at, lang: en }
+        - { id: c, text: of, lang: en }
+        - { id: d, text: in, lang: en }
+    answer: d
+    explanation: { vi: "Cá bơi bên trong nước sông nên dùng “in”. “On” là trên bề mặt, “at” chỉ một điểm, đều không hợp với cá bơi dưới sông." }
+
+  - key: en:diag:gram-a1-can-play-guitar
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "My brother ___ play the guitar very well."
+      stem_lang: en
+      options:
+        - { id: a, text: cans, lang: en }
+        - { id: b, text: can, lang: en }
+        - { id: c, text: can to, lang: en }
+        - { id: d, text: is can, lang: en }
+    answer: b
+    explanation: { vi: "“Can” là động từ khuyết thiếu: không thêm “-s” và theo sau là động từ nguyên mẫu không “to”. Vì vậy “cans” và “can to” đều sai." }
+
+  - key: en:diag:gram-a1-toms-bike
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "This is ___ bike. He rides it to school every day."
+      stem_lang: en
+      options:
+        - { id: a, text: Toms, lang: en }
+        - { id: b, text: "Toms'", lang: en }
+        - { id: c, text: "Tom's", lang: en }
+        - { id: d, text: Tom, lang: en }
+    answer: c
+    explanation: { vi: "Sở hữu cách của danh từ số ít là thêm “’s”: “Tom’s bike” (xe đạp của Tom). “Toms” không có dấu nháy là sai, còn “Toms’” dùng cho danh từ số nhiều." }
+
+  # ---------- a2 ----------
+  - key: en:diag:gram-a2-went-last-sunday
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "We ___ to the beach last Sunday."
+      stem_lang: en
+      options:
+        - { id: a, text: go, lang: en }
+        - { id: b, text: went, lang: en }
+        - { id: c, text: have gone, lang: en }
+        - { id: d, text: goes, lang: en }
+    answer: b
+    explanation: { vi: "“Last Sunday” là mốc thời gian đã kết thúc nên dùng quá khứ đơn “went” (quá khứ bất quy tắc của “go”). Thì hiện tại hoàn thành “have gone” không đi với mốc thời gian quá khứ cụ thể." }
+
+  - key: en:diag:gram-a2-bigger-than
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "My house is ___ than yours, but yours has a nicer garden."
+      stem_lang: en
+      options:
+        - { id: a, text: more big, lang: en }
+        - { id: b, text: biggest, lang: en }
+        - { id: c, text: bigger, lang: en }
+        - { id: d, text: big, lang: en }
+    answer: c
+    explanation: { vi: "Tính từ ngắn “big” khi so sánh hơn thì gấp đôi phụ âm và thêm “-er”: “bigger than”. “More big” sai vì “more” chỉ dùng với tính từ dài; “biggest” là so sánh nhất." }
+
+  - key: en:diag:gram-a2-going-to-rain
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Look at those dark clouds! It ___ rain."
+      stem_lang: en
+      options:
+        - { id: a, text: is going to, lang: en }
+        - { id: b, text: going to, lang: en }
+        - { id: c, text: goes to, lang: en }
+        - { id: d, text: is go to, lang: en }
+    answer: a
+    explanation: { vi: "Khi dự đoán dựa trên dấu hiệu đang thấy (mây đen), ta dùng “be going to”: “It is going to rain”. Thiếu “is” như “going to” là sai ngữ pháp." }
+
+  - key: en:diag:gram-a2-how-much-sugar
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "How ___ sugar do you want in your tea?"
+      stem_lang: en
+      options:
+        - { id: a, text: many, lang: en }
+        - { id: b, text: few, lang: en }
+        - { id: c, text: lot, lang: en }
+        - { id: d, text: much, lang: en }
+    answer: d
+    explanation: { vi: "“Sugar” là danh từ không đếm được nên hỏi số lượng bằng “how much”. “How many” chỉ dùng với danh từ đếm được số nhiều." }
+
+  - key: en:diag:gram-a2-baby-is-sleeping
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Please be quiet. The baby ___ in the next room."
+      stem_lang: en
+      options:
+        - { id: a, text: sleeps, lang: en }
+        - { id: b, text: is sleeping, lang: en }
+        - { id: c, text: sleep, lang: en }
+        - { id: d, text: are sleeping, lang: en }
+    answer: b
+    explanation: { vi: "Hành động đang diễn ra ngay lúc nói nên dùng hiện tại tiếp diễn: “is sleeping”. “Sleeps” là hiện tại đơn (thói quen), còn “are” không hợp với chủ ngữ số ít “the baby”." }
+
+  # ---------- b1 ----------
+  - key: en:diag:gram-b1-have-lived-since
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "I ___ in this city since 2018, and I still love it."
+      stem_lang: en
+      options:
+        - { id: a, text: lived, lang: en }
+        - { id: b, text: live, lang: en }
+        - { id: c, text: have lived, lang: en }
+        - { id: d, text: am living, lang: en }
+    answer: c
+    explanation: { vi: "“Since 2018” diễn tả việc bắt đầu trong quá khứ và kéo dài đến hiện tại nên dùng hiện tại hoàn thành “have lived”. Người Việt hay chọn “live” hoặc “lived”, nhưng cả hai đều không đi với “since”." }
+
+  - key: en:diag:gram-b1-if-i-had-more-money
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "If I ___ more money, I would buy a new laptop."
+      stem_lang: en
+      options:
+        - { id: a, text: had, lang: en }
+        - { id: b, text: have, lang: en }
+        - { id: c, text: would have, lang: en }
+        - { id: d, text: will have, lang: en }
+    answer: a
+    explanation: { vi: "Câu điều kiện loại 2 (giả định trái hiện tại): mệnh đề “if” dùng quá khứ đơn “had”, mệnh đề chính dùng “would + V”. Không dùng “would” hay “will” trong mệnh đề “if”." }
+
+  - key: en:diag:gram-b1-bridge-was-built
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "This old bridge ___ in 1995."
+      stem_lang: en
+      options:
+        - { id: a, text: built, lang: en }
+        - { id: b, text: was built, lang: en }
+        - { id: c, text: was build, lang: en }
+        - { id: d, text: has built, lang: en }
+    answer: b
+    explanation: { vi: "Cây cầu không tự xây mà “được xây” nên dùng bị động quá khứ: “was + V3” = “was built”. “Built” một mình là chủ động (cầu tự xây), “was build” sai dạng động từ." }
+
+  - key: en:diag:gram-b1-woman-who-lives
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "The woman ___ lives next door is a doctor."
+      stem_lang: en
+      options:
+        - { id: a, text: which, lang: en }
+        - { id: b, text: whose, lang: en }
+        - { id: c, text: what, lang: en }
+        - { id: d, text: who, lang: en }
+    answer: d
+    explanation: { vi: "Đại từ quan hệ thay cho người và làm chủ ngữ là “who”. “Which” dùng cho vật, “whose” chỉ sở hữu, còn “what” không dùng làm đại từ quan hệ sau danh từ." }
+
+  - key: en:diag:gram-b1-used-to-play
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "When I was a child, I ___ play football every afternoon."
+      stem_lang: en
+      options:
+        - { id: a, text: used to, lang: en }
+        - { id: b, text: use to, lang: en }
+        - { id: c, text: was used to, lang: en }
+        - { id: d, text: am used to, lang: en }
+    answer: a
+    explanation: { vi: "“Used to + V” diễn tả thói quen trong quá khứ nay không còn. “Be used to” nghĩa là “quen với” và phải theo sau bởi danh từ/V-ing, nên “was used to play” sai." }
+
+  # ---------- b2 ----------
+  - key: en:diag:gram-b2-would-have-caught
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "If we had left home ten minutes earlier, we ___ the train."
+      stem_lang: en
+      options:
+        - { id: a, text: would catch, lang: en }
+        - { id: b, text: had caught, lang: en }
+        - { id: c, text: would have caught, lang: en }
+        - { id: d, text: will catch, lang: en }
+    answer: c
+    explanation: { vi: "Câu điều kiện loại 3 (giả định trái quá khứ): “if + had V3”, mệnh đề chính “would have + V3”. “Would catch” là cấu trúc loại 2, không hợp với việc lỡ tàu đã xảy ra." }
+
+  - key: en:diag:gram-b2-reported-had-been
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Yesterday Lan told me that she ___ ill the day before, so she had missed the meeting."
+      stem_lang: en
+      options:
+        - { id: a, text: has been, lang: en }
+        - { id: b, text: had been, lang: en }
+        - { id: c, text: is, lang: en }
+        - { id: d, text: will be, lang: en }
+    answer: b
+    explanation: { vi: "Trong câu tường thuật với động từ quá khứ “told”, sự việc xảy ra trước đó (“the day before”) được lùi thì về quá khứ hoàn thành “had been”. “Has been” và “is” không lùi thì nên sai." }
+
+  - key: en:diag:gram-b2-wish-i-knew
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "I wish I ___ how to speak Japanese — it would make this trip so much easier."
+      stem_lang: en
+      options:
+        - { id: a, text: know, lang: en }
+        - { id: b, text: will know, lang: en }
+        - { id: c, text: am knowing, lang: en }
+        - { id: d, text: knew, lang: en }
+    answer: d
+    explanation: { vi: "“Wish” ước điều trái với hiện tại thì động từ lùi về quá khứ đơn: “I wish I knew”. “Know” và “will know” không dùng sau “wish” với nghĩa này; “know” cũng không chia tiếp diễn." }
+
+  - key: en:diag:gram-b2-must-have-gone-out
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "The lights are off and nobody is answering the door. They ___ gone out."
+      stem_lang: en
+      options:
+        - { id: a, text: must have, lang: en }
+        - { id: b, text: "can't have", lang: en }
+        - { id: c, text: should have, lang: en }
+        - { id: d, text: "needn't have", lang: en }
+    answer: a
+    explanation: { vi: "“Must have + V3” diễn tả suy luận gần như chắc chắn về quá khứ dựa trên bằng chứng (đèn tắt, không ai mở cửa). “Can’t have” lại khẳng định điều ngược lại, còn “should have” mang nghĩa “lẽ ra nên”." }
+
+  - key: en:diag:gram-b2-despite-rain
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "___ the heavy rain, the match went ahead as planned."
+      stem_lang: en
+      options:
+        - { id: a, text: Although, lang: en }
+        - { id: b, text: Despite, lang: en }
+        - { id: c, text: However, lang: en }
+        - { id: d, text: Because of, lang: en }
+    answer: b
+    explanation: { vi: "Theo sau là cụm danh từ “the heavy rain” và ý nghĩa nhượng bộ nên dùng “Despite”. “Although” cần một mệnh đề có động từ, còn “Because of” sai về nghĩa." }
+
+  # ---------- c1 ----------
+  - key: en:diag:gram-c1-never-have-i-seen
+    level: c1
+    item_type: cloze_choice
+    prompt:
+      stem: "Never ___ such a breathtaking view as the one from the top of that mountain."
+      stem_lang: en
+      options:
+        - { id: a, text: I have seen, lang: en }
+        - { id: b, text: I saw, lang: en }
+        - { id: c, text: did I saw, lang: en }
+        - { id: d, text: have I seen, lang: en }
+    answer: d
+    explanation: { vi: "Khi trạng từ phủ định “Never” đứng đầu câu, phải đảo trợ động từ lên trước chủ ngữ: “Never have I seen”. “I have seen” không đảo ngữ nên sai; “did I saw” sai vì sau “did” phải là động từ nguyên mẫu." }
+
+  - key: en:diag:gram-c1-mixed-would-be-living
+    level: c1
+    item_type: cloze_choice
+    prompt:
+      stem: "If she had accepted that job in London, she ___ in a much bigger flat now."
+      stem_lang: en
+      options:
+        - { id: a, text: would be living, lang: en }
+        - { id: b, text: would have lived, lang: en }
+        - { id: c, text: will live, lang: en }
+        - { id: d, text: had lived, lang: en }
+    answer: a
+    explanation: { vi: "Đây là câu điều kiện hỗn hợp: điều kiện trái quá khứ (“had accepted”) nhưng kết quả ở hiện tại (“now”), nên dùng “would + V” — ở đây là “would be living”. “Would have lived” chỉ kết quả trong quá khứ, mâu thuẫn với “now”." }
+
+  - key: en:diag:gram-c1-what-i-need-cleft
+    level: c1
+    item_type: cloze_choice
+    prompt:
+      stem: "___ I need right now is a long, quiet holiday by the sea."
+      stem_lang: en
+      options:
+        - { id: a, text: That, lang: en }
+        - { id: b, text: Which, lang: en }
+        - { id: c, text: What, lang: en }
+        - { id: d, text: It, lang: en }
+    answer: c
+    explanation: { vi: "Câu chẻ dạng “What + mệnh đề + is …” dùng để nhấn mạnh: “What I need is…” (Điều tôi cần là…). “That” hay “Which” không thể mở đầu mệnh đề danh từ mang nghĩa “điều mà” trong câu này." }
+
+  - key: en:diag:gram-c1-recommended-that-be
+    level: c1
+    item_type: cloze_choice
+    prompt:
+      stem: "The committee recommended that the proposal ___ postponed until further notice."
+      stem_lang: en
+      options:
+        - { id: a, text: being, lang: en }
+        - { id: b, text: be, lang: en }
+        - { id: c, text: to be, lang: en }
+        - { id: d, text: been, lang: en }
+    answer: b
+    explanation: { vi: "Sau “recommend that”, tiếng Anh trang trọng dùng thể giả định: động từ nguyên mẫu không “to” với mọi chủ ngữ, nên là “be postponed”. “To be” và “being” không thể làm động từ chính của mệnh đề “that”." }
+
+  - key: en:diag:gram-c1-should-you-need
+    level: c1
+    item_type: cloze_choice
+    prompt:
+      stem: "___ you need any further assistance, please do not hesitate to contact our team."
+      stem_lang: en
+      options:
+        - { id: a, text: Would, lang: en }
+        - { id: b, text: Unless, lang: en }
+        - { id: c, text: Had, lang: en }
+        - { id: d, text: Should, lang: en }
+    answer: d
+    explanation: { vi: "“Should + S + V” là dạng đảo ngữ trang trọng của “If you need…”, rất hay gặp trong thư tín. “Unless” (trừ khi) sai nghĩa, còn “Had you need” sai vì “had” đảo ngữ phải đi với V3." }
+
+  # ---------- c2 ----------
+  - key: en:diag:gram-c2-notwithstanding
+    level: c2
+    item_type: cloze_choice
+    prompt:
+      stem: "___ his considerable experience, he was passed over for the promotion."
+      stem_lang: en
+      options:
+        - { id: a, text: Notwithstanding, lang: en }
+        - { id: b, text: Inasmuch as, lang: en }
+        - { id: c, text: Insofar as, lang: en }
+        - { id: d, text: Whereby, lang: en }
+    answer: a
+    explanation: { vi: "“Notwithstanding” là giới từ trang trọng nghĩa là “mặc dù/bất chấp”, đứng trước cụm danh từ. “Inasmuch as” và “insofar as” là liên từ cần một mệnh đề theo sau và mang nghĩa khác (“bởi vì”, “trong chừng mực”)." }
+
+  - key: en:diag:gram-c2-inasmuch-as
+    level: c2
+    item_type: cloze_choice
+    prompt:
+      stem: "The two cases are comparable ___ both involve a breach of client confidentiality."
+      stem_lang: en
+      options:
+        - { id: a, text: notwithstanding, lang: en }
+        - { id: b, text: albeit, lang: en }
+        - { id: c, text: inasmuch as, lang: en }
+        - { id: d, text: lest, lang: en }
+    answer: c
+    explanation: { vi: "“Inasmuch as” (trang trọng) nghĩa là “xét ở chỗ/bởi vì”, nêu lý do hai vụ việc có thể so sánh. “Albeit” mang nghĩa nhượng bộ và thường đứng trước tính từ/cụm từ, còn “lest” nghĩa là “kẻo”, đều sai nghĩa." }
+
+  - key: en:diag:gram-c2-lest-she-wake
+    level: c2
+    item_type: cloze_choice
+    prompt:
+      stem: "She spoke in a whisper ___ she wake the sleeping child."
+      stem_lang: en
+      options:
+        - { id: a, text: unless, lang: en }
+        - { id: b, text: lest, lang: en }
+        - { id: c, text: in case, lang: en }
+        - { id: d, text: whereas, lang: en }
+    answer: b
+    explanation: { vi: "“Lest” (văn phong trang trọng) nghĩa là “để không/kẻo”, theo sau là động từ ở thể giả định — vì thế có “she wake” không chia. “In case” cũng gần nghĩa nhưng đòi hỏi động từ chia thì (“in case she woke”), nên không hợp với “wake”." }
+
+  - key: en:diag:gram-c2-albeit-small-sample
+    level: c2
+    item_type: cloze_choice
+    prompt:
+      stem: "The results were encouraging, ___ based on a very small sample."
+      stem_lang: en
+      options:
+        - { id: a, text: whereas, lang: en }
+        - { id: b, text: whereby, lang: en }
+        - { id: c, text: lest, lang: en }
+        - { id: d, text: albeit, lang: en }
+    answer: d
+    explanation: { vi: "“Albeit” nghĩa là “mặc dù”, đứng trước một cụm từ không có chủ ngữ và động từ chia, ở đây là “based on a very small sample”. “Whereas” cần một mệnh đề đầy đủ để đối lập, còn “whereby” nghĩa là “nhờ đó/theo đó”." }
+
+  - key: en:diag:gram-c2-had-it-not-been-for
+    level: c2
+    item_type: cloze_choice
+    prompt:
+      stem: "___ it not been for your timely intervention, the whole project would have collapsed."
+      stem_lang: en
+      options:
+        - { id: a, text: Were, lang: en }
+        - { id: b, text: Should, lang: en }
+        - { id: c, text: Had, lang: en }
+        - { id: d, text: Did, lang: en }
+    answer: c
+    explanation: { vi: "“Had it not been for…” là đảo ngữ của câu điều kiện loại 3 “If it had not been for…” (nếu không nhờ…), khớp với “would have collapsed”. “Were it not for” cũng tồn tại nhưng không thể đứng trước “been”." }

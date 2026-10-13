@@ -1,0 +1,468 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+language: ko
+skill: vocabulary
+items:
+  # ---------- hangul ----------
+  - key: ko:diag:voc-hangul-mul
+    level: hangul
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “nước”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 불, lang: ko }
+        - { id: b, text: 물, lang: ko }
+        - { id: c, text: 문, lang: ko }
+        - { id: d, text: 무, lang: ko }
+    answer: b
+    explanation: { vi: "“물” (mul) là nước. “불” là lửa, “문” là cửa, “무” là củ cải — chỉ khác một nét hoặc một phụ âm nên bạn cần đọc kỹ từng khối chữ." }
+  - key: ko:diag:voc-hangul-uyu
+    level: hangul
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “sữa”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 오이, lang: ko }
+        - { id: b, text: 우리, lang: ko }
+        - { id: c, text: 우유, lang: ko }
+        - { id: d, text: 여우, lang: ko }
+    answer: c
+    explanation: { vi: "“우유” (u-yu) là sữa. “오이” là dưa chuột, “우리” là chúng tôi, “여우” là con cáo; các từ này dùng nguyên âm gần giống nên dễ nhầm." }
+  - key: ko:diag:voc-hangul-ai
+    level: hangul
+    item_type: mcq
+    prompt:
+      stem: "Từ “아이” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: đứa trẻ, lang: vi }
+        - { id: b, text: dưa chuột, lang: vi }
+        - { id: c, text: sữa, lang: vi }
+        - { id: d, text: con cáo, lang: vi }
+    answer: a
+    explanation: { vi: "“아이” (a-i) nghĩa là đứa trẻ. Dưa chuột là “오이” (o-i) — chỉ khác nguyên âm đầu ㅏ và ㅗ." }
+  - key: ko:diag:voc-hangul-chulgu
+    level: hangul
+    item_type: mcq
+    prompt:
+      stem: "Biển báo “출구” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: lối vào, lang: vi }
+        - { id: b, text: nhà vệ sinh, lang: vi }
+        - { id: c, text: cấm hút thuốc, lang: vi }
+        - { id: d, text: lối ra, lang: vi }
+    answer: d
+    explanation: { vi: "“출구” là lối ra (출 = xuất). Lối vào là “입구” (입 = nhập), nhà vệ sinh là “화장실”." }
+  - key: ko:diag:voc-hangul-hakgyo
+    level: hangul
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “trường học”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 학생, lang: ko }
+        - { id: b, text: 학교, lang: ko }
+        - { id: c, text: 교실, lang: ko }
+        - { id: d, text: 선생님, lang: ko }
+    answer: b
+    explanation: { vi: "“학교” là trường học. “학생” là học sinh, “교실” là lớp học (phòng học), “선생님” là giáo viên." }
+  # ---------- topik1 ----------
+  - key: ko:diag:voc-topik1-eoje
+    level: topik1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “hôm qua”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 오늘, lang: ko }
+        - { id: b, text: 내일, lang: ko }
+        - { id: c, text: 어제, lang: ko }
+        - { id: d, text: 모레, lang: ko }
+    answer: c
+    explanation: { vi: "“어제” là hôm qua. “오늘” là hôm nay, “내일” là ngày mai, “모레” là ngày kia." }
+  - key: ko:diag:voc-topik1-mogyoil
+    level: topik1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “thứ Năm”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 목요일, lang: ko }
+        - { id: b, text: 금요일, lang: ko }
+        - { id: c, text: 수요일, lang: ko }
+        - { id: d, text: 화요일, lang: ko }
+    answer: a
+    explanation: { vi: "“목요일” là thứ Năm. “화요일” là thứ Ba, “수요일” là thứ Tư, “금요일” là thứ Sáu." }
+  - key: ko:diag:voc-topik1-baegopayo
+    level: topik1
+    item_type: mcq
+    prompt:
+      stem: "“배고파요” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: Tôi no rồi., lang: vi }
+        - { id: b, text: Tôi khát nước., lang: vi }
+        - { id: c, text: Tôi mệt., lang: vi }
+        - { id: d, text: Tôi đói bụng., lang: vi }
+    answer: d
+    explanation: { vi: "“배고파요” (từ “배고프다”) nghĩa là đói bụng. No là “배불러요”, khát là “목말라요”, mệt là “피곤해요”." }
+  - key: ko:diag:voc-topik1-bissayo
+    level: topik1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “đắt”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 싸요, lang: ko }
+        - { id: b, text: 비싸요, lang: ko }
+        - { id: c, text: 많아요, lang: ko }
+        - { id: d, text: 작아요, lang: ko }
+    answer: b
+    explanation: { vi: "“비싸요” là đắt. “싸요” ngược lại là rẻ — bạn đừng nhầm vì hai từ có chung âm “싸”; “많아요” là nhiều, “작아요” là nhỏ." }
+  - key: ko:diag:voc-topik1-byeongwon
+    level: topik1
+    item_type: mcq
+    prompt:
+      stem: "Từ “병원” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: hiệu thuốc, lang: vi }
+        - { id: b, text: ngân hàng, lang: vi }
+        - { id: c, text: bệnh viện, lang: vi }
+        - { id: d, text: nhà ga, lang: vi }
+    answer: c
+    explanation: { vi: "“병원” (bệnh viện) là nơi khám chữa bệnh. Hiệu thuốc là “약국”, ngân hàng là “은행”, nhà ga là “역”." }
+  # ---------- topik2 ----------
+  - key: ko:diag:voc-topik2-junbihada
+    level: topik2
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “chuẩn bị”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 연습하다, lang: ko }
+        - { id: b, text: 소개하다, lang: ko }
+        - { id: c, text: 계획하다, lang: ko }
+        - { id: d, text: 준비하다, lang: ko }
+    answer: d
+    explanation: { vi: "“준비하다” (chuẩn bị) là đáp án đúng. “계획하다” là lên kế hoạch, “연습하다” là luyện tập, “소개하다” là giới thiệu." }
+  - key: ko:diag:voc-topik2-yaksok
+    level: topik2
+    item_type: mcq
+    prompt:
+      stem: "Từ “약속” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "cuộc hẹn, lời hứa", lang: vi }
+        - { id: b, text: hiệu thuốc, lang: vi }
+        - { id: c, text: lời xin lỗi, lang: vi }
+        - { id: d, text: buổi họp, lang: vi }
+    answer: a
+    explanation: { vi: "“약속” (ước thúc) là cuộc hẹn hoặc lời hứa. Đừng nhầm với “약” (thuốc) — hiệu thuốc là “약국”; buổi họp là “회의”." }
+  - key: ko:diag:voc-topik2-gabyeopda-opposite
+    level: topik2
+    item_type: mcq
+    prompt:
+      stem: "Từ nào trái nghĩa với “가볍다” (nhẹ)?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 두껍다, lang: ko }
+        - { id: b, text: 무겁다, lang: ko }
+        - { id: c, text: 가깝다, lang: ko }
+        - { id: d, text: 어렵다, lang: ko }
+    answer: b
+    explanation: { vi: "“무겁다” (nặng) trái nghĩa với “가볍다” (nhẹ). “두껍다” là dày (trái nghĩa của “얇다”), “가깝다” là gần, “어렵다” là khó." }
+  - key: ko:diag:voc-topik2-neutjam
+    level: topik2
+    item_type: mcq
+    prompt:
+      stem: "Cụm từ nào có nghĩa là “ngủ dậy muộn, ngủ nướng”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 낮잠을 자다, lang: ko }
+        - { id: b, text: 잠이 들다, lang: ko }
+        - { id: c, text: 늦잠을 자다, lang: ko }
+        - { id: d, text: 꿈을 꾸다, lang: ko }
+    answer: c
+    explanation: { vi: "“늦잠을 자다” là ngủ dậy muộn (늦다 = muộn). “낮잠을 자다” là ngủ trưa, “잠이 들다” là thiếp đi, “꿈을 꾸다” là nằm mơ." }
+  - key: ko:diag:voc-topik2-jigap
+    level: topik2
+    item_type: mcq
+    prompt:
+      stem: "Từ “지갑” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: cái ô, lang: vi }
+        - { id: b, text: túi xách, lang: vi }
+        - { id: c, text: chìa khóa, lang: vi }
+        - { id: d, text: cái ví, lang: vi }
+    answer: d
+    explanation: { vi: "“지갑” là cái ví đựng tiền. Cái ô là “우산”, túi xách là “가방”, chìa khóa là “열쇠”." }
+  # ---------- topik3 ----------
+  - key: ko:diag:voc-topik3-yeollak
+    level: topik3
+    item_type: mcq
+    prompt:
+      stem: "회의 시간이 바뀌면 저에게 꼭 ___ 주세요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 연락해, lang: ko }
+        - { id: b, text: 연습해, lang: ko }
+        - { id: c, text: 출발해, lang: ko }
+        - { id: d, text: 운동해, lang: ko }
+    answer: a
+    explanation: { vi: "Câu nói “Nếu giờ họp thay đổi thì nhất định hãy … cho tôi”, nên cần “연락해 주세요” (liên lạc, báo cho). “연습해” (luyện tập) hay “출발해” (xuất phát) không hợp nghĩa." }
+  - key: ko:diag:voc-topik3-mokjeok
+    level: topik3
+    item_type: mcq
+    prompt:
+      stem: "Từ “목적” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: kết quả, lang: vi }
+        - { id: b, text: mục đích, lang: vi }
+        - { id: c, text: nguyên nhân, lang: vi }
+        - { id: d, text: quá trình, lang: vi }
+    answer: b
+    explanation: { vi: "“목적” là từ Hán Hàn của “mục đích”. Kết quả là “결과”, nguyên nhân là “원인”, quá trình là “과정”." }
+  - key: ko:diag:voc-topik3-seuteureseu-pulda
+    level: topik3
+    item_type: mcq
+    prompt:
+      stem: "스트레스를 ___ 위해서 주말마다 등산을 해요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 받기, lang: ko }
+        - { id: b, text: 쌓기, lang: ko }
+        - { id: c, text: 풀기, lang: ko }
+        - { id: d, text: 주기, lang: ko }
+    answer: c
+    explanation: { vi: "Giải tỏa căng thẳng là “스트레스를 풀다”, nên “풀기 위해서” mới hợp mục đích leo núi. “스트레스를 받다” là bị căng thẳng — ngược với ý câu." }
+  - key: ko:diag:voc-topik3-gyeongheom
+    level: topik3
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “kinh nghiệm, trải nghiệm”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 경제, lang: ko }
+        - { id: b, text: 계획, lang: ko }
+        - { id: c, text: 실험, lang: ko }
+        - { id: d, text: 경험, lang: ko }
+    answer: d
+    explanation: { vi: "“경험” chính là “kinh nghiệm”. “경제” là kinh tế (cùng âm “경”), “계획” là kế hoạch, “실험” là thí nghiệm (cùng âm “험” = nghiệm)." }
+  - key: ko:diag:voc-topik3-gamgi-geollida
+    level: topik3
+    item_type: mcq
+    prompt:
+      stem: "날씨가 갑자기 추워져서 감기에 ___ 사람이 많아요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 걸린, lang: ko }
+        - { id: b, text: 잡힌, lang: ko }
+        - { id: c, text: 들린, lang: ko }
+        - { id: d, text: 받은, lang: ko }
+    answer: a
+    explanation: { vi: "Tiếng Hàn nói “감기에 걸리다” (bị cảm), nên “걸린” là đúng. Không nói “감기에 잡히다/받다” dù tiếng Việt có thể nói “bị nhiễm/mắc”." }
+  # ---------- topik4 ----------
+  - key: ko:diag:voc-topik4-silsu-jeojireuda
+    level: topik4
+    item_type: mcq
+    prompt:
+      stem: "그는 같은 실수를 두 번 다시 ___ 않으려고 노력했다."
+      stem_lang: ko
+      options:
+        - { id: a, text: 일으키지, lang: ko }
+        - { id: b, text: 저지르지, lang: ko }
+        - { id: c, text: 벌이지, lang: ko }
+        - { id: d, text: 끼치지, lang: ko }
+    answer: b
+    explanation: { vi: "Kết hợp cố định là “실수를 저지르다” (phạm sai lầm). “일으키다” đi với “사고” (gây tai nạn), “끼치다” đi với “피해/폐” (gây thiệt hại/phiền), “벌이다” đi với “일/사업”." }
+  - key: ko:diag:voc-topik4-kkujunhi
+    level: topik4
+    item_type: mcq
+    prompt:
+      stem: "“꾸준히” gần nghĩa nhất với cách nói nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: đột ngột, lang: vi }
+        - { id: b, text: thỉnh thoảng, lang: vi }
+        - { id: c, text: "đều đặn, bền bỉ", lang: vi }
+        - { id: d, text: vội vàng, lang: vi }
+    answer: c
+    explanation: { vi: "“꾸준히” nghĩa là đều đặn, bền bỉ không ngừng (vd. “꾸준히 운동하다”). “Thỉnh thoảng” là “가끔” — trái với tính liên tục của “꾸준히”." }
+  - key: ko:diag:voc-topik4-yeonghyang
+    level: topik4
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “ảnh hưởng”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 영양, lang: ko }
+        - { id: b, text: 영상, lang: ko }
+        - { id: c, text: 인상, lang: ko }
+        - { id: d, text: 영향, lang: ko }
+    answer: d
+    explanation: { vi: "“영향” là “ảnh hưởng” (vd. “영향을 미치다”). “영양” là dinh dưỡng, “영상” là video/hình ảnh, “인상” là ấn tượng — đều có âm gần giống." }
+  - key: ko:diag:voc-topik4-jurida
+    level: topik4
+    item_type: mcq
+    prompt:
+      stem: "환경을 보호하기 위해 일회용품 사용을 ___ 노력합시다."
+      stem_lang: ko
+      options:
+        - { id: a, text: 줄이도록, lang: ko }
+        - { id: b, text: 늘리도록, lang: ko }
+        - { id: c, text: 높이도록, lang: ko }
+        - { id: d, text: 키우도록, lang: ko }
+    answer: a
+    explanation: { vi: "Để bảo vệ môi trường thì phải giảm đồ dùng một lần, nên “줄이도록” (giảm) là đúng. “늘리도록” (tăng) ngược nghĩa; “높이다/키우다” không đi với “사용”." }
+  - key: ko:diag:voc-topik4-danghwanghada
+    level: topik4
+    item_type: mcq
+    prompt:
+      stem: "Từ “당황하다” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: tức giận, lang: vi }
+        - { id: b, text: "bối rối, lúng túng", lang: vi }
+        - { id: c, text: thất vọng, lang: vi }
+        - { id: d, text: hồi hộp, lang: vi }
+    answer: b
+    explanation: { vi: "“당황하다” là bối rối, lúng túng khi gặp tình huống bất ngờ. Thất vọng là “실망하다”, hồi hộp là “긴장하다”, tức giận là “화가 나다”." }
+  # ---------- topik5 ----------
+  - key: ko:diag:voc-topik5-jisok-ganeunghan
+    level: topik5
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “bền vững” (như trong “phát triển bền vững”)?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 일시적인, lang: ko }
+        - { id: b, text: 불가피한, lang: ko }
+        - { id: c, text: 지속 가능한, lang: ko }
+        - { id: d, text: 획기적인, lang: ko }
+    answer: c
+    explanation: { vi: "“지속 가능한” (có thể duy trì lâu dài) tương ứng với “bền vững”, như “지속 가능한 발전”. “일시적인” là tạm thời — ngược nghĩa; “획기적인” là mang tính đột phá." }
+  - key: ko:diag:voc-topik5-bulgapihada
+    level: topik5
+    item_type: mcq
+    prompt:
+      stem: "“불가피하다” gần nghĩa nhất với cách nói nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: không thể tin được, lang: vi }
+        - { id: b, text: không cần thiết, lang: vi }
+        - { id: c, text: không thể chấp nhận, lang: vi }
+        - { id: d, text: không thể tránh khỏi, lang: vi }
+    answer: d
+    explanation: { vi: "“불가피하다” (bất khả tị) nghĩa là không thể tránh khỏi. “Không thể tin được” là “믿을 수 없다”, “không thể chấp nhận” là “용납할 수 없다”." }
+  - key: ko:diag:voc-topik5-galdeung-haesohada
+    level: topik5
+    item_type: mcq
+    prompt:
+      stem: "두 나라는 오랜 갈등을 ___ 위해 대화를 시작했다."
+      stem_lang: ko
+      options:
+        - { id: a, text: 해소하기, lang: ko }
+        - { id: b, text: 해제하기, lang: ko }
+        - { id: c, text: 해고하기, lang: ko }
+        - { id: d, text: 해석하기, lang: ko }
+    answer: a
+    explanation: { vi: "“갈등을 해소하다” là giải tỏa, hóa giải mâu thuẫn. “해제하다” dùng cho lệnh, cảnh báo (dỡ bỏ), “해고하다” là sa thải, “해석하다” là giải thích, thông dịch." }
+  - key: ko:diag:voc-topik5-chuse
+    level: topik5
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “xu thế” (chiều hướng thay đổi của số liệu, tình hình)?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 추측, lang: ko }
+        - { id: b, text: 추세, lang: ko }
+        - { id: c, text: 추진, lang: ko }
+        - { id: d, text: 추억, lang: ko }
+    answer: b
+    explanation: { vi: "“추세” là xu thế, ví dụ “감소 추세” (xu hướng giảm). “추측” là suy đoán, “추진” là xúc tiến, thúc đẩy, “추억” là kỷ niệm." }
+  - key: ko:diag:voc-topik5-mohohada
+    level: topik5
+    item_type: mcq
+    prompt:
+      stem: "Từ “모호하다” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: rõ ràng, lang: vi }
+        - { id: b, text: mâu thuẫn, lang: vi }
+        - { id: c, text: "mơ hồ, không rõ ràng", lang: vi }
+        - { id: d, text: khiêm tốn, lang: vi }
+    answer: c
+    explanation: { vi: "“모호하다” (mơ hồ) nghĩa là không rõ ràng, khó xác định. “Rõ ràng” là “명확하다” — trái nghĩa; “mâu thuẫn” là “모순되다”." }
+  # ---------- topik6 ----------
+  - key: ko:diag:voc-topik6-ilseogijo
+    level: topik6
+    item_type: mcq
+    prompt:
+      stem: "Thành ngữ “일석이조” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: Có công mài sắt có ngày nên kim., lang: vi }
+        - { id: b, text: Nước đến chân mới nhảy., lang: vi }
+        - { id: c, text: Một công đôi việc (một mũi tên trúng hai đích)., lang: vi }
+        - { id: d, text: Ăn cháo đá bát., lang: vi }
+    answer: c
+    explanation: { vi: "“일석이조” (nhất thạch nhị điểu) là một hòn đá trúng hai con chim, tức một công đôi việc. Các câu còn lại nói về sự kiên trì, sự chậm trễ và sự vô ơn." }
+  - key: ko:diag:voc-topik6-bari-neolda
+    level: topik6
+    item_type: mcq
+    prompt:
+      stem: "Quán ngữ “발이 넓다” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "quen biết rộng, giao thiệp nhiều", lang: vi }
+        - { id: b, text: hay đi du lịch nhiều nơi, lang: vi }
+        - { id: c, text: tiêu xài hoang phí, lang: vi }
+        - { id: d, text: làm việc chăm chỉ, lang: vi }
+    answer: a
+    explanation: { vi: "“발이 넓다” (chân rộng) chỉ người quen biết nhiều, quan hệ rộng. Dù có chữ “발” (chân), thành ngữ này không nói về việc đi nhiều nơi." }
+  - key: ko:diag:voc-topik6-eomgyeokhada
+    level: topik6
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “nghiêm ngặt, khắt khe” (về quy định, tiêu chuẩn)?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 엄숙하다, lang: ko }
+        - { id: b, text: 온건하다, lang: ko }
+        - { id: c, text: 관대하다, lang: ko }
+        - { id: d, text: 엄격하다, lang: ko }
+    answer: d
+    explanation: { vi: "“엄격하다” (nghiêm cách) là nghiêm ngặt, như “엄격한 기준”. “엄숙하다” là trang nghiêm (về không khí, nghi lễ), “관대하다” là khoan dung — gần như trái nghĩa." }
+  - key: ko:diag:voc-topik6-gojingamnae
+    level: topik6
+    item_type: mcq
+    prompt:
+      stem: "Tục ngữ nào gần nghĩa nhất với “고진감래”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 소 잃고 외양간 고친다, lang: ko }
+        - { id: b, text: 고생 끝에 낙이 온다, lang: ko }
+        - { id: c, text: 가는 말이 고와야 오는 말이 곱다, lang: ko }
+        - { id: d, text: 낮말은 새가 듣고 밤말은 쥐가 듣는다, lang: ko }
+    answer: b
+    explanation: { vi: "“고진감래” (khổ tận cam lai) nghĩa là hết khổ rồi sướng, giống “고생 끝에 낙이 온다”. “소 잃고 외양간 고친다” là mất bò mới lo làm chuồng — nói về việc phản ứng quá muộn." }
+  - key: ko:diag:voc-topik6-byeonsu-tongje
+    level: topik6
+    item_type: mcq
+    prompt:
+      stem: "본 연구는 기존 연구들이 간과해 온 변수를 추가로 ___하여 분석의 타당성을 높였다."
+      stem_lang: ko
+      options:
+        - { id: a, text: 통치, lang: ko }
+        - { id: b, text: 통보, lang: ko }
+        - { id: c, text: 통제, lang: ko }
+        - { id: d, text: 통용, lang: ko }
+    answer: c
+    explanation: { vi: "Trong nghiên cứu, “변수를 통제하다” là kiểm soát biến số để tăng độ tin cậy của phân tích. “통치” là cai trị (đất nước), “통보” là thông báo, “통용” là được dùng phổ biến — không đi với “변수”." }

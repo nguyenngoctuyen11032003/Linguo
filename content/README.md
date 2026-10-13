@@ -70,6 +70,41 @@ Câu trả lời được chấm trên server theo thuật toán trong `packages
 - `known_wrong` của `fill_blank` áp dụng cho mọi ô trống, nhưng mỗi ô so với `accepted` của nó trước. Quy tắc kiểm tra: một đáp án `known_wrong` không được trùng (sau chuẩn hoá) với đáp án đúng của **bất kỳ** ô nào trong bài tập.
 - Công cụ kiểm tra bắt buộc: mọi `accepted`/`blanks`/`orders` chấm **đúng**; mọi phương án nhiễu và `known_wrong` của `translate` chấm **sai**; `known_wrong` của `fill_blank` theo quy tắc ở trên.
 
+## Kho câu hỏi kiểm tra đầu vào (spec 4)
+
+`content/diagnostic/<en|ko>/<kỹ-năng>.yaml`, một file cho mỗi kỹ năng `vocabulary`, `grammar`, `reading` (schema: `packages/shared/src/diagnostic/authoring.ts`).
+
+```yaml
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+language: en
+skill: vocabulary
+items:
+  - key: en:diag:voc-pre-a1-dog
+    level: pre_a1
+    item_type: mcq                 # vocabulary/grammar: mcq | cloze_choice; reading: reading_mcq
+    prompt:
+      stem: Từ nào có nghĩa là “con chó”?
+      stem_lang: vi
+      # passage: "..."             # chỉ reading_mcq, bắt buộc
+      options:
+        - { id: a, text: cat, lang: en }
+        - { id: b, text: dog, lang: en }
+        - { id: c, text: duck, lang: en }
+        - { id: d, text: pig, lang: en }
+    answer: b                      # id phương án đúng
+    explanation:
+      vi: "“Dog” là con chó; “cat” là con mèo, “duck” là con vịt, “pig” là con lợn."
+```
+
+- Mỗi ngôn ngữ có kho phải đủ **≥ 5 câu cho mỗi kỹ năng × cấp độ** (105 câu/ngôn ngữ); `stem` không trùng trong cùng ngôn ngữ; đúng một phương án đúng, phương án nhiễu hợp lý nhưng chắc chắn sai.
+- `difficulty` (tuỳ chọn) mặc định là thứ tự cấp độ + 0,5 (pre_a1/hangul = 0,5 … c2/topik6 = 6,5); nếu ghi thì phải nằm trong dải của cấp.
+- Thứ tự và id phương án trong YAML không lộ ra ngoài: `pnpm content:build` xáo trộn cố định theo key và đổi id thành chuỗi ngẫu nhiên ổn định.
+- File demo giữ `key_confidence: unreviewed` (mặc định), không ghi `reviewed_by`/`reviewed_at`; file không demo phải có cả hai.
+- Dùng `vi: "..."` trong ngoặc kép khi câu có dấu phẩy hoặc dấu hai chấm (cú pháp `{ vi: ... }` cắt chuỗi ở dấu phẩy).
+- Kho được nhập bằng `content_private.import_diagnostic_bundle` (câu lệnh thứ hai trong `supabase/seed.sql`; `pnpm content:push` gọi `public.import_diagnostic_content_bundle`). Câu bị xoá khỏi YAML được lưu trữ (`archived`), không xoá khỏi DB.
+
 ## Lệnh
 
 ```bash

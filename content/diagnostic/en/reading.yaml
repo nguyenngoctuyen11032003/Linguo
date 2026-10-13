@@ -1,0 +1,537 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+language: en
+skill: reading
+items:
+  # ---------------- pre_a1 ----------------
+  - key: en:diag:read-pre-a1-lan-age
+    level: pre_a1
+    item_type: reading_mcq
+    prompt:
+      passage: "Hello! My name is Lan. I am ten."
+      stem: "Theo đoạn giới thiệu, Lan bao nhiêu tuổi?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Hai tuổi", lang: vi }
+        - { id: b, text: "Mười tuổi", lang: vi }
+        - { id: c, text: "Mười hai tuổi", lang: vi }
+        - { id: d, text: "Một tuổi", lang: vi }
+    answer: b
+    explanation: { vi: "“I am ten” nghĩa là “Tôi mười tuổi”. Đừng nhầm “ten” (10) với “two” (2) hay “twelve” (12)." }
+
+  - key: en:diag:read-pre-a1-closed-sign
+    level: pre_a1
+    item_type: reading_mcq
+    prompt:
+      passage: "BOOKSHOP — CLOSED TODAY"
+      stem: "Tấm biển “BOOKSHOP — CLOSED TODAY” cho bạn biết điều gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Hiệu sách hôm nay mở cửa", lang: vi }
+        - { id: b, text: "Hiệu sách hôm nay giảm giá", lang: vi }
+        - { id: c, text: "Hiệu sách hôm nay đóng cửa", lang: vi }
+        - { id: d, text: "Hiệu sách mới khai trương", lang: vi }
+    answer: c
+    explanation: { vi: "“Closed” nghĩa là “đóng cửa”, “today” là “hôm nay”. Nếu hiệu sách mở cửa, biển sẽ ghi “OPEN”." }
+
+  - key: en:diag:read-pre-a1-black-cat
+    level: pre_a1
+    item_type: reading_mcq
+    prompt:
+      passage: "This is my cat. It is black."
+      stem: "Con mèo trong câu “This is my cat. It is black.” có màu gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Màu trắng", lang: vi }
+        - { id: b, text: "Màu nâu", lang: vi }
+        - { id: c, text: "Màu xám", lang: vi }
+        - { id: d, text: "Màu đen", lang: vi }
+    answer: d
+    explanation: { vi: "“Black” là màu đen. Màu trắng là “white”, màu nâu là “brown”, màu xám là “grey”." }
+
+  - key: en:diag:read-pre-a1-two-apples
+    level: pre_a1
+    item_type: reading_mcq
+    prompt:
+      passage: "I have two red apples and one green apple."
+      stem: "Người nói có bao nhiêu quả táo đỏ?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Hai quả", lang: vi }
+        - { id: b, text: "Một quả", lang: vi }
+        - { id: c, text: "Ba quả", lang: vi }
+        - { id: d, text: "Không có quả nào", lang: vi }
+    answer: a
+    explanation: { vi: "“Two red apples” là hai quả táo đỏ. “One green apple” là quả táo xanh, nên tổng cộng có ba quả nhưng chỉ hai quả màu đỏ." }
+
+  - key: en:diag:read-pre-a1-good-morning
+    level: pre_a1
+    item_type: reading_mcq
+    prompt:
+      passage: "Good morning, Mr Hai! — Good morning, Mai!"
+      stem: "Lời chào “Good morning” cho biết hai người gặp nhau vào lúc nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Buổi tối", lang: vi }
+        - { id: b, text: "Ban đêm", lang: vi }
+        - { id: c, text: "Buổi sáng", lang: vi }
+        - { id: d, text: "Buổi chiều", lang: vi }
+    answer: c
+    explanation: { vi: "“Good morning” dùng để chào buổi sáng. Buổi chiều là “Good afternoon”, buổi tối là “Good evening”, còn “Good night” dùng khi chúc ngủ ngon." }
+
+  # ---------------- a1 ----------------
+  - key: en:diag:read-a1-tom-dog-walk
+    level: a1
+    item_type: reading_mcq
+    prompt:
+      passage: "Tom lives in a small house near the park. He has a dog and two cats. He walks his dog every morning."
+      stem: "Theo đoạn văn, Tom dắt chó đi dạo khi nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Mỗi buổi tối", lang: vi }
+        - { id: b, text: "Mỗi buổi sáng", lang: vi }
+        - { id: c, text: "Mỗi cuối tuần", lang: vi }
+        - { id: d, text: "Mỗi buổi trưa", lang: vi }
+    answer: b
+    explanation: { vi: "Câu “He walks his dog every morning” nghĩa là anh ấy dắt chó đi dạo mỗi sáng. “Every evening” mới là mỗi tối." }
+
+  - key: en:diag:read-a1-bag-under-bed
+    level: a1
+    item_type: reading_mcq
+    prompt:
+      passage: "There is a bed, a desk and a big window in my room. My books are on the desk. My bag is under the bed."
+      stem: "Cái túi của người viết nằm ở đâu?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Trên bàn học", lang: vi }
+        - { id: b, text: "Cạnh cửa sổ", lang: vi }
+        - { id: c, text: "Trên giường", lang: vi }
+        - { id: d, text: "Dưới gầm giường", lang: vi }
+    answer: d
+    explanation: { vi: "“My bag is under the bed” nghĩa là túi ở dưới giường. Thứ ở trên bàn (“on the desk”) là sách, không phải túi." }
+
+  - key: en:diag:read-a1-sister-nurse
+    level: a1
+    item_type: reading_mcq
+    prompt:
+      passage: "My sister Hoa is a nurse. She works at a hospital in the city. She can speak English and French."
+      stem: "Chị Hoa trong đoạn văn làm nghề gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Y tá", lang: vi }
+        - { id: b, text: "Bác sĩ", lang: vi }
+        - { id: c, text: "Giáo viên tiếng Anh", lang: vi }
+        - { id: d, text: "Phiên dịch viên", lang: vi }
+    answer: a
+    explanation: { vi: "“Nurse” là y tá; bác sĩ là “doctor”. Việc chị nói được tiếng Anh và tiếng Pháp không có nghĩa chị là giáo viên hay phiên dịch viên." }
+
+  - key: en:diag:read-a1-pool-children
+    level: a1
+    item_type: reading_mcq
+    prompt:
+      passage: "City Swimming Pool. Open Monday to Saturday, 7 am to 8 pm. Children under 10 must swim with an adult."
+      stem: "Theo thông báo của bể bơi, trẻ em dưới 10 tuổi phải làm gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Chỉ được bơi vào Chủ nhật", lang: vi }
+        - { id: b, text: "Không được vào bể bơi", lang: vi }
+        - { id: c, text: "Phải bơi cùng người lớn", lang: vi }
+        - { id: d, text: "Phải bơi trước 8 giờ sáng", lang: vi }
+    answer: c
+    explanation: { vi: "“Must swim with an adult” nghĩa là phải bơi cùng người lớn. Thông báo không cấm trẻ em vào bể, và bể không mở cửa vào Chủ nhật." }
+
+  - key: en:diag:read-a1-sunday-grandparents
+    level: a1
+    item_type: reading_mcq
+    prompt:
+      passage: "We don't have school on Sunday. On Sunday my family visits my grandparents. We have lunch together at their house."
+      stem: "Vào Chủ nhật, gia đình người viết thường làm gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Đi học cả ngày", lang: vi }
+        - { id: b, text: "Mời ông bà đến nhà mình", lang: vi }
+        - { id: c, text: "Đi ăn trưa ở nhà hàng", lang: vi }
+        - { id: d, text: "Đến thăm và ăn trưa cùng ông bà", lang: vi }
+    answer: d
+    explanation: { vi: "“My family visits my grandparents” là gia đình đến thăm ông bà, và “have lunch together at their house” là ăn trưa ở nhà ông bà. Ông bà không đến nhà người viết, và họ cũng không ăn ở nhà hàng." }
+
+  # ---------------- a2 ----------------
+  - key: en:diag:read-a2-beach-cold-water
+    level: a2
+    item_type: reading_mcq
+    prompt:
+      passage: "Hi Ben, Last weekend I went to the beach with my cousins. The weather was sunny, but the water was very cold, so we didn't swim. Instead, we played volleyball and ate fresh seafood at a small restaurant. I bought you a postcard. Next month I'm going to visit you in London! See you soon, Minh"
+      stem: "Vì sao Minh và các anh chị họ không bơi ở biển?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Vì trời mưa", lang: vi }
+        - { id: b, text: "Vì nước biển rất lạnh", lang: vi }
+        - { id: c, text: "Vì họ bận chơi bóng chuyền", lang: vi }
+        - { id: d, text: "Vì bãi biển quá đông", lang: vi }
+    answer: b
+    explanation: { vi: "Câu “the water was very cold, so we didn't swim” nêu rõ lý do là nước rất lạnh. Trời hôm đó nắng (“sunny”), và họ chơi bóng chuyền là việc làm thay cho bơi (“instead”), không phải lý do." }
+
+  - key: en:diag:read-a2-anna-mark-compare
+    level: a2
+    item_type: reading_mcq
+    prompt:
+      passage: "Anna and her brother Mark are very different. Mark is older and taller than Anna, but Anna is the better student. She gets the highest marks in her class. Mark loves sport and plays football three times a week. Anna thinks football is boring; she prefers reading."
+      stem: "Câu nào sau đây đúng về Anna và Mark?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Anna cao hơn Mark", lang: vi }
+        - { id: b, text: "Anna lớn tuổi hơn Mark", lang: vi }
+        - { id: c, text: "Anna học giỏi hơn Mark", lang: vi }
+        - { id: d, text: "Anna thích bóng đá hơn đọc sách", lang: vi }
+    answer: c
+    explanation: { vi: "“Anna is the better student” và cô ấy được điểm cao nhất lớp, nên Anna học giỏi hơn. Còn “Mark is older and taller than Anna” cho biết Mark mới là người lớn tuổi và cao hơn." }
+
+  - key: en:diag:read-a2-tired-advice
+    level: a2
+    item_type: reading_mcq
+    prompt:
+      passage: "Are you feeling tired all the time? You should go to bed earlier and try to sleep for eight hours. You shouldn't drink coffee in the evening. Eat more fruit and vegetables, and don't spend too much time on your phone before bed. A short walk after dinner can help, too."
+      stem: "Theo lời khuyên trong đoạn văn, bạn KHÔNG nên làm gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Uống cà phê vào buổi tối", lang: vi }
+        - { id: b, text: "Đi bộ một chút sau bữa tối", lang: vi }
+        - { id: c, text: "Ăn nhiều rau và hoa quả", lang: vi }
+        - { id: d, text: "Ngủ đủ tám tiếng", lang: vi }
+    answer: a
+    explanation: { vi: "“You shouldn't drink coffee in the evening” là lời khuyên không uống cà phê buổi tối. Ba phương án còn lại đều là những việc đoạn văn khuyên nên làm." }
+
+  - key: en:diag:read-a2-train-late-message
+    level: a2
+    item_type: reading_mcq
+    prompt:
+      passage: "Hi Mum, I'm writing from the train. It's running about forty minutes late because of a problem on the line, so I won't be home for dinner. Please don't wait for me. I'm reading my book and the time is going quickly. I'll call you when I arrive at the station. Love, Kim"
+      stem: "Mục đích chính của tin nhắn Kim gửi mẹ là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Nhờ mẹ ra ga đón", lang: vi }
+        - { id: b, text: "Kể về cuốn sách đang đọc", lang: vi }
+        - { id: c, text: "Hỏi mẹ món ăn tối", lang: vi }
+        - { id: d, text: "Báo rằng mình sẽ về muộn, không kịp ăn tối", lang: vi }
+    answer: d
+    explanation: { vi: "Kim báo tàu chậm khoảng 40 phút nên “I won't be home for dinner” và dặn mẹ đừng chờ. Kim chỉ nói sẽ gọi khi đến ga, không nhờ mẹ ra đón." }
+
+  - key: en:diag:read-a2-party-shopping-rice
+    level: a2
+    item_type: reading_mcq
+    prompt:
+      passage: "We need to go shopping before the party on Saturday. There isn't much milk left in the fridge, and we have only a few eggs, so we need to buy more of both. We have plenty of rice, so don't buy any. Can you also get some bread and a bottle of orange juice? I'll make the cake on Friday evening."
+      stem: "Người viết dặn KHÔNG cần mua thứ gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Sữa", lang: vi }
+        - { id: b, text: "Trứng", lang: vi }
+        - { id: c, text: "Gạo", lang: vi }
+        - { id: d, text: "Bánh mì", lang: vi }
+    answer: c
+    explanation: { vi: "“We have plenty of rice, so don't buy any” nghĩa là còn nhiều gạo, đừng mua. Sữa và trứng thì sắp hết (“isn't much”, “only a few”) nên cần mua thêm." }
+
+  # ---------------- b1 ----------------
+  - key: en:diag:read-b1-danang-autumn-rain
+    level: b1
+    item_type: reading_mcq
+    prompt:
+      passage: "I've lived in Da Nang for three years now, and I've never regretted moving here. When I first arrived, I didn't know anyone, and I used to spend my evenings alone. Since then, I've joined a running club and made lots of friends. The only thing I haven't got used to is the heavy rain in autumn."
+      stem: "Điều gì ở Đà Nẵng người viết vẫn chưa quen được?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Những buổi tối ở một mình", lang: vi }
+        - { id: b, text: "Mưa lớn vào mùa thu", lang: vi }
+        - { id: c, text: "Việc chạy bộ cùng câu lạc bộ", lang: vi }
+        - { id: d, text: "Việc kết bạn với người mới", lang: vi }
+    answer: b
+    explanation: { vi: "“The only thing I haven't got used to is the heavy rain in autumn” cho biết điều duy nhất chưa quen là mưa lớn mùa thu. Những buổi tối một mình chỉ là chuyện trước đây (“used to”), giờ người viết đã có nhiều bạn." }
+
+  - key: en:diag:read-b1-library-renew
+    level: b1
+    item_type: reading_mcq
+    prompt:
+      passage: "Library notice. From 1 March, books can be borrowed for three weeks instead of two. Books that are returned late will be charged 5,000 dong per day. Students who need a book for longer may renew it online, unless another reader has reserved it. The study rooms will be closed during the holiday for repairs."
+      stem: "Theo thông báo thư viện, khi nào sinh viên KHÔNG thể gia hạn sách qua mạng?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Khi sách đã được người khác đặt trước", lang: vi }
+        - { id: b, text: "Khi đã mượn sách quá hai tuần", lang: vi }
+        - { id: c, text: "Khi phòng học đang đóng cửa sửa chữa", lang: vi }
+        - { id: d, text: "Khi chưa trả tiền phạt trả sách muộn", lang: vi }
+    answer: a
+    explanation: { vi: "Câu “may renew it online, unless another reader has reserved it” nghĩa là được gia hạn trực tuyến trừ khi đã có người khác đặt trước. Thông báo không nói việc nợ tiền phạt hay đóng cửa phòng học ảnh hưởng đến gia hạn." }
+
+  - key: en:diag:read-b1-exercise-habit
+    level: b1
+    item_type: reading_mcq
+    prompt:
+      passage: "Many people say they would start exercising if they had more time. However, research suggests that time is rarely the real problem. People who exercise regularly are often just as busy as those who don't; the difference is that they treat exercise like an appointment. If you plan a short workout at the same time every day, it soon becomes a habit rather than a decision."
+      stem: "Ý chính của đoạn văn về việc tập thể dục là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Người bận rộn không nên cố gắng tập thể dục", lang: vi }
+        - { id: b, text: "Người tập thể dục thường xuyên ít bận rộn hơn người khác", lang: vi }
+        - { id: c, text: "Thiếu thời gian hiếm khi là lý do thật; lên lịch tập cố định giúp tạo thói quen", lang: vi }
+        - { id: d, text: "Muốn có hiệu quả thì mỗi buổi tập phải thật dài", lang: vi }
+    answer: c
+    explanation: { vi: "Đoạn văn nói “time is rarely the real problem” và khuyên tập vào cùng một giờ mỗi ngày để thành thói quen. Phương án về người tập ít bận hơn là sai vì đoạn văn nói họ “just as busy” (bận như nhau)." }
+
+  - key: en:diag:read-b1-cafe-job-apply
+    level: b1
+    item_type: reading_mcq
+    prompt:
+      passage: "Are you good at talking to people? Do you enjoy working in a team? Our café is looking for a part-time waiter to work weekend shifts. No experience is needed, as we will train you. You must be at least eighteen and be able to start in June. To apply, send a short email explaining why you'd like to join us."
+      stem: "Theo mẩu tin tuyển dụng của quán cà phê, ứng viên cần làm gì để nộp đơn?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Gửi hồ sơ chứng minh kinh nghiệm làm phục vụ", lang: vi }
+        - { id: b, text: "Gửi một email ngắn nói lý do muốn làm ở quán", lang: vi }
+        - { id: c, text: "Đến quán phỏng vấn vào cuối tuần", lang: vi }
+        - { id: d, text: "Gọi điện cho quán trước tháng Sáu", lang: vi }
+    answer: b
+    explanation: { vi: "“To apply, send a short email explaining why you'd like to join us” là cách nộp đơn. Quán không yêu cầu kinh nghiệm (“No experience is needed”), nên phương án gửi hồ sơ kinh nghiệm là sai." }
+
+  - key: en:diag:read-b1-muddy-road
+    level: b1
+    item_type: reading_mcq
+    prompt:
+      passage: "When Lan's grandmother was young, she used to walk five kilometres to school. She told Lan that the road was muddy in the rainy season, so she often arrived with dirty feet. Despite this, she never missed a lesson, because she knew that education was her chance for a better life. Lan now understands why her grandmother values books so much."
+      stem: "Trong đoạn văn, từ “muddy” (the road was muddy) có nghĩa gần nhất là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Dốc", lang: vi }
+        - { id: b, text: "Đông đúc", lang: vi }
+        - { id: c, text: "Tối tăm", lang: vi }
+        - { id: d, text: "Lầy lội", lang: vi }
+    answer: d
+    explanation: { vi: "Đường “muddy” vào mùa mưa khiến bà đến trường với đôi chân bẩn, nên “muddy” là lầy lội, đầy bùn. Đường dốc hay đông đúc không giải thích được chuyện chân bị bẩn." }
+
+  # ---------------- b2 ----------------
+  - key: en:diag:read-b2-daniel-business-failure
+    level: b2
+    item_type: reading_mcq
+    prompt:
+      passage: "Looking back, Daniel realises that his first business failed for reasons he could have avoided. He had spent most of his savings on a stylish shop in the city centre before testing whether there was real demand for handmade furniture. If he had started by selling online, he would have discovered much sooner that customers loved the designs but found the prices too high. When he launched his second company, he kept costs low, listened carefully to feedback and only expanded once orders were steady. It is now profitable, and Daniel admits that the first failure taught him more than any course could have."
+      stem: "Theo Daniel, sai lầm chính khiến công ty đầu tiên thất bại là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Bỏ nhiều tiền vào cửa hàng trước khi kiểm chứng nhu cầu thị trường", lang: vi }
+        - { id: b, text: "Thiết kế đồ nội thất không hợp gu khách hàng", lang: vi }
+        - { id: c, text: "Bán hàng trực tuyến quá sớm", lang: vi }
+        - { id: d, text: "Không tham gia khóa học kinh doanh nào", lang: vi }
+    answer: a
+    explanation: { vi: "Daniel đã chi phần lớn tiền tiết kiệm cho cửa hàng “before testing whether there was real demand”. Khách hàng thực ra “loved the designs”, vấn đề là giá quá cao; còn bán online là điều anh tiếc đã không làm." }
+
+  - key: en:diag:read-b2-market-council-promise
+    level: b2
+    item_type: reading_mcq
+    prompt:
+      passage: "When the council announced plans to turn the old market into a car park, local residents were furious. At a public meeting, one stallholder said that her family had sold vegetables there for three generations and asked where they were supposed to go. A council spokesperson replied that the building was unsafe and would cost too much to repair. However, he promised that the council would consider alternative proposals if residents could present a realistic plan by the end of the year. A group of volunteers has since begun raising money for an independent survey of the building."
+      stem: "Người phát ngôn của hội đồng đã hứa điều gì với cư dân?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Sẽ sửa chữa khu chợ cũ trước cuối năm", lang: vi }
+        - { id: b, text: "Sẽ xem xét phương án khác nếu cư dân đưa ra kế hoạch khả thi trước cuối năm", lang: vi }
+        - { id: c, text: "Sẽ hủy kế hoạch xây bãi đỗ xe", lang: vi }
+        - { id: d, text: "Sẽ chi tiền cho một cuộc khảo sát độc lập về tòa nhà", lang: vi }
+    answer: b
+    explanation: { vi: "Câu gián tiếp “he promised that the council would consider alternative proposals if residents could present a realistic plan” cho thấy lời hứa có điều kiện. Cuộc khảo sát độc lập do nhóm tình nguyện viên quyên tiền, không phải hội đồng chi trả." }
+
+  - key: en:diag:read-b2-flashbulb-memory
+    level: b2
+    item_type: reading_mcq
+    prompt:
+      passage: "Most of us assume that we remember important events accurately, especially dramatic ones. Yet studies of so-called 'flashbulb memories' tell a different story. Researchers who questioned people the day after a shocking news event and again several years later found that many accounts had changed significantly. What is striking is that people's confidence in their memories remained high even when the details were wrong. In other words, feeling certain about a memory is not a reliable sign that it is true."
+      stem: "Có thể rút ra kết luận nào từ đoạn văn về ký ức của con người?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Ký ức về các sự kiện gây sốc luôn chính xác", lang: vi }
+        - { id: b, text: "Người ta thường quên hoàn toàn các sự kiện quan trọng sau vài năm", lang: vi }
+        - { id: c, text: "Cảm thấy chắc chắn về một ký ức không đảm bảo ký ức đó đúng", lang: vi }
+        - { id: d, text: "Khi chi tiết sai, người ta mất tự tin vào trí nhớ của mình", lang: vi }
+    answer: c
+    explanation: { vi: "Câu cuối nói “feeling certain about a memory is not a reliable sign that it is true”. Phương án về việc mất tự tin là sai vì đoạn văn nói sự tự tin “remained high” ngay cả khi chi tiết sai." }
+
+  - key: en:diag:read-b2-novel-review-attitude
+    level: b2
+    item_type: reading_mcq
+    prompt:
+      passage: "Although the novel has been praised by many critics, I found it rather disappointing. The opening chapters are beautifully written, and the descriptions of rural life in the 1950s are vivid and convincing. Nevertheless, the plot moves so slowly that I struggled to stay interested, and the main character's sudden change of heart near the end felt unconvincing. Readers who enjoy atmosphere more than action may well love it; those who want a gripping story should probably look elsewhere."
+      stem: "Thái độ chung của người viết bài nhận xét đối với cuốn tiểu thuyết là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Hoàn toàn hài lòng, như phần lớn các nhà phê bình", lang: vi }
+        - { id: b, text: "Chê toàn bộ, không thấy điểm nào đáng khen", lang: vi }
+        - { id: c, text: "Trung lập, không đưa ra đánh giá cá nhân", lang: vi }
+        - { id: d, text: "Nhìn chung thất vọng, dù vẫn ghi nhận một vài điểm mạnh", lang: vi }
+    answer: d
+    explanation: { vi: "Người viết nói “I found it rather disappointing” nhưng vẫn khen phần mở đầu và các đoạn miêu tả. Từ nối “Nevertheless” chuyển từ ý khen sang ý chê, nên không thể nói người viết chê toàn bộ." }
+
+  - key: en:diag:read-b2-remote-work-overstated
+    level: b2
+    item_type: reading_mcq
+    prompt:
+      passage: "Remote work was once seen as a perk offered by a handful of technology firms. Today it is commonplace, and many employees say they would never return to the office full-time. Managers, however, are less enthusiastic. Some worry that new staff miss out on the informal learning that happens when they overhear experienced colleagues solving problems. Others argue that this concern is overstated, pointing out that well-designed mentoring can achieve the same result online. What both sides agree on is that the old model is unlikely to come back unchanged."
+      stem: "Trong câu “this concern is overstated”, từ “overstated” gần nghĩa nhất với cụm nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Bị phóng đại quá mức", lang: vi }
+        - { id: b, text: "Bị bỏ qua hoàn toàn", lang: vi }
+        - { id: c, text: "Đã được chứng minh là đúng", lang: vi }
+        - { id: d, text: "Được nhiều người chia sẻ", lang: vi }
+    answer: a
+    explanation: { vi: "“Overstated” nghĩa là bị nói quá, phóng đại; những người này cho rằng mối lo đó không nghiêm trọng vì có thể kèm cặp trực tuyến. Họ không nói mối lo bị bỏ qua hay đã được chứng minh." }
+
+  # ---------------- c1 ----------------
+  - key: en:diag:read-c1-boredom-purpose
+    level: c1
+    item_type: reading_mcq
+    prompt:
+      passage: "It is tempting to regard boredom as a purely negative state, something to be eliminated with the nearest screen. A growing body of research, however, suggests that it serves a purpose. Boredom appears to function as a signal that our current activity is failing to engage us, prompting us to seek out goals that feel more meaningful. Some studies have even found that people who were first given a tedious task subsequently performed better on tests of creative thinking. Not until we stop rushing to fill every idle moment, the argument runs, can we benefit from what boredom has to tell us."
+      stem: "Luận điểm chính của đoạn văn về sự nhàm chán là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Nhàm chán là trạng thái có hại, cần được loại bỏ càng nhanh càng tốt", lang: vi }
+        - { id: b, text: "Nhàm chán có chức năng hữu ích, nên ta không cần vội lấp đầy mọi khoảng trống", lang: vi }
+        - { id: c, text: "Dùng màn hình khi rảnh rỗi giúp tăng khả năng sáng tạo", lang: vi }
+        - { id: d, text: "Mọi công việc tẻ nhạt đều làm tăng năng suất lao động", lang: vi }
+    answer: b
+    explanation: { vi: "Đoạn văn nói nhàm chán “serves a purpose” và chỉ khi thôi vội lấp đầy thời gian rảnh (“Not until… can we…”) ta mới hưởng lợi từ nó. Phương án “có hại, cần loại bỏ” chính là quan niệm mà người viết phản bác." }
+
+  - key: en:diag:read-c1-expertise-feedback
+    level: c1
+    item_type: reading_mcq
+    prompt:
+      passage: "What distinguishes a genuine expert from a merely experienced practitioner is not the number of years they have spent in a field but the quality of feedback they have received. A radiologist who reviews thousands of scans but rarely learns whether her diagnoses were correct may grow more confident without growing more accurate. By contrast, a weather forecaster, whose predictions are tested against reality every day, has constant opportunities to recalibrate. It follows that organisations seeking to develop expertise should invest less in accumulating experience and more in building systems that tell people, quickly and honestly, when they are wrong."
+      stem: "Tác giả đưa ra ví dụ về bác sĩ chẩn đoán hình ảnh (radiologist) nhằm minh họa điều gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Bác sĩ nói chung kém chính xác hơn người dự báo thời tiết", lang: vi }
+        - { id: b, text: "Càng nhiều năm kinh nghiệm thì càng trở thành chuyên gia", lang: vi }
+        - { id: c, text: "Kinh nghiệm thiếu phản hồi có thể tăng sự tự tin mà không tăng độ chính xác", lang: vi }
+        - { id: d, text: "Chẩn đoán hình ảnh là lĩnh vực quá khó để thành thạo", lang: vi }
+    answer: c
+    explanation: { vi: "Bác sĩ này xem hàng nghìn phim nhưng hiếm khi biết mình đúng hay sai, nên “may grow more confident without growing more accurate”. Tác giả không so sánh năng lực hai nghề, mà so sánh việc có hay không có phản hồi." }
+
+  - key: en:diag:read-c1-plastics-report
+    level: c1
+    item_type: reading_mcq
+    prompt:
+      passage: "The committee's report stops short of recommending an outright ban on single-use plastics. Instead, it proposes that manufacturers be required to fund the collection and recycling of the packaging they produce. Critics on one side argue that this merely shifts costs onto consumers, who will inevitably face higher prices; those on the other contend that nothing less than a ban will change behaviour at the necessary scale. The authors acknowledge both objections but insist that a measure which can actually be implemented is preferable to an ideal one that cannot."
+      stem: "Nhận định nào phản ánh đúng quan điểm của nhóm tác giả bản báo cáo về nhựa dùng một lần?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Nên cấm hoàn toàn nhựa dùng một lần", lang: vi }
+        - { id: b, text: "Một biện pháp khả thi tốt hơn một biện pháp lý tưởng nhưng không thực hiện được", lang: vi }
+        - { id: c, text: "Người tiêu dùng nên trả chi phí thu gom và tái chế bao bì", lang: vi }
+        - { id: d, text: "Các ý kiến phản đối đều vô căn cứ và không đáng xem xét", lang: vi }
+    answer: b
+    explanation: { vi: "“Stops short of” nghĩa là chưa đi đến mức đề xuất cấm hẳn; các tác giả khẳng định biện pháp thực thi được “is preferable to an ideal one that cannot”. Họ có ghi nhận (“acknowledge”) các ý kiến phản đối, nên phương án cho rằng chúng vô căn cứ là sai." }
+
+  - key: en:diag:read-c1-panels-not-without
+    level: c1
+    item_type: reading_mcq
+    prompt:
+      passage: "The museum's decision to return the carved panels to the village from which they were taken a century ago was hailed as a landmark gesture. Yet the handover was not without complications. Villagers had no facilities in which to store such fragile objects, and some elders questioned whether items made for a sacred ritual should be displayed at all. The museum ultimately agreed to fund a small climate-controlled building, while leaving decisions about access entirely to the community, an arrangement that one curator described as 'a shift from ownership to stewardship'."
+      stem: "Cụm “the handover was not without complications” ngụ ý điều gì về việc trao trả các tấm gỗ chạm?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Việc trao trả diễn ra hoàn toàn suôn sẻ", lang: vi }
+        - { id: b, text: "Việc trao trả cuối cùng đã bị hủy bỏ", lang: vi }
+        - { id: c, text: "Bảo tàng từ chối hỗ trợ dân làng sau khi trao trả", lang: vi }
+        - { id: d, text: "Việc trao trả gặp phải một số khó khăn nhất định", lang: vi }
+    answer: d
+    explanation: { vi: "“Not without complications” là cách nói phủ định kép, nghĩa là “có những phức tạp”, cụ thể là thiếu chỗ bảo quản và băn khoăn về việc trưng bày. Việc trao trả vẫn diễn ra và bảo tàng còn tài trợ xây nhà bảo quản, nên các phương án b, c sai." }
+
+  - key: en:diag:read-c1-tram-network-irony
+    level: c1
+    item_type: reading_mcq
+    prompt:
+      passage: "Had the city invested in its tram network when the proposal was first made in the 1990s, commuters would not now be spending an average of ninety minutes a day in traffic. Planners at the time dismissed the scheme as an expensive relic, confidently predicting that private cars would meet the city's needs indefinitely. Few of them could have foreseen how rapidly the population would grow. The irony is that the same routes are now being reconsidered, at roughly four times the original cost."
+      stem: "Người viết nhìn nhận quyết định bác bỏ dự án tàu điện vào thập niên 1990 như thế nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Là một quyết định thiển cận mà giờ đây thành phố phải trả giá đắt", lang: vi }
+        - { id: b, text: "Là một quyết định đúng vì ô tô cá nhân đáp ứng đủ nhu cầu", lang: vi }
+        - { id: c, text: "Là một quyết định hợp lý vì dự án ngày nay rẻ hơn trước", lang: vi }
+        - { id: d, text: "Là một quyết định không ảnh hưởng gì đến giao thông hiện nay", lang: vi }
+    answer: a
+    explanation: { vi: "Câu điều kiện hỗn hợp “Had the city invested…, commuters would not now be spending…” cho thấy hậu quả ở hiện tại, và “The irony is…” nhấn mạnh chi phí nay gấp khoảng bốn lần. Việc ô tô đáp ứng đủ nhu cầu chỉ là dự đoán sai của các nhà quy hoạch thời đó." }
+
+  # ---------------- c2 ----------------
+  - key: en:diag:read-c2-annual-report-euphemism
+    level: c2
+    item_type: reading_mcq
+    prompt:
+      passage: "Notwithstanding its avowed commitment to transparency, the organisation's annual report is a masterclass in saying very little at considerable length. Setbacks are 'learning opportunities', redundancies are 'workforce realignments', and a twelve per cent fall in revenue is relegated to a footnote on page forty-seven. One need not impute bad faith to conclude that the document was drafted with the reader's comfort, rather than the reader's understanding, firmly in mind."
+      stem: "Đâu là cách hiểu đúng nhất về thái độ của người viết đối với bản báo cáo thường niên?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Khen ngợi sự minh bạch mà tổ chức đã cam kết", lang: vi }
+        - { id: b, text: "Châm biếm việc báo cáo dùng lời lẽ uyển ngữ để làm lu mờ thông tin bất lợi", lang: vi }
+        - { id: c, text: "Khẳng định tổ chức cố tình gian lận số liệu", lang: vi }
+        - { id: d, text: "Đánh giá khách quan, không bày tỏ quan điểm riêng", lang: vi }
+    answer: b
+    explanation: { vi: "“A masterclass in saying very little at considerable length” là lời mỉa mai, và các ví dụ uyển ngữ cho thấy tin xấu bị làm nhẹ đi. Câu “One need not impute bad faith” cho biết người viết không cần quy kết ác ý, nên phương án “cố tình gian lận” là sai." }
+
+  - key: en:diag:read-c2-moral-luck-inasmuch
+    level: c2
+    item_type: reading_mcq
+    prompt:
+      passage: "The philosopher's argument is persuasive inasmuch as it exposes the inconsistency in our intuitions about luck: we blame the drunk driver who kills a pedestrian far more than the equally drunk driver who happens to arrive home without incident, although their conduct was identical. Where it falters is in its conclusion that we ought therefore to blame both equally. That our judgements are inconsistent does not, by itself, tell us which of them to revise; one might just as coherently conclude that we should blame the unlucky driver less."
+      stem: "Người viết cho rằng lập luận của nhà triết học yếu ở điểm nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Việc chỉ ra sự mâu thuẫn trong trực giác của chúng ta là sai", lang: vi }
+        - { id: b, text: "Hai tài xế say rượu thực ra đã hành xử khác nhau", lang: vi }
+        - { id: c, text: "Kết luận phải trách cả hai như nhau không tất yếu, vì sự mâu thuẫn không cho biết nên sửa phán xét nào", lang: vi }
+        - { id: d, text: "Tài xế gặp may không đáng bị trách chút nào", lang: vi }
+    answer: c
+    explanation: { vi: "“Inasmuch as” (xét ở chỗ) cho thấy người viết đồng ý với phần chỉ ra mâu thuẫn; điểm yếu (“Where it falters”) nằm ở kết luận, vì cũng có thể hợp lý khi trách tài xế kém may ít đi. Đoạn văn khẳng định hành vi của hai người “identical”, nên phương án b sai." }
+
+  - key: en:diag:read-c2-composer-unsparing
+    level: c2
+    item_type: reading_mcq
+    prompt:
+      passage: "Few critics have been as lavish in their praise as they were for the composer's early symphonies, and fewer still as unsparing when her later work took an austere, almost ascetic turn. Yet to read that shift as a failure of nerve is to mistake restraint for poverty of invention. The late quartets, pared back to a handful of motifs, reward the patient listener with a concentration of feeling that the more opulent early scores, for all their brilliance, rarely achieve."
+      stem: "Trong đoạn văn, từ “unsparing” mô tả thái độ của giới phê bình với các tác phẩm về sau như thế nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Hào phóng lời khen", lang: vi }
+        - { id: b, text: "Thờ ơ, không quan tâm", lang: vi }
+        - { id: c, text: "Dè dặt, thận trọng", lang: vi }
+        - { id: d, text: "Khắt khe, chê bai không nương tay", lang: vi }
+    answer: d
+    explanation: { vi: "“Unsparing” ở đây đối lập với “lavish in their praise”, nghĩa là phê bình gay gắt, không nương tay. Dễ nhầm với “hào phóng” vì “spare” còn nghĩa là “dư dả”, nhưng ngữ cảnh cho thấy giới phê bình chê các tác phẩm khắc khổ về sau." }
+
+  - key: en:diag:read-c2-excavation-hedging
+    level: c2
+    item_type: reading_mcq
+    prompt:
+      passage: "It would be an overstatement to claim that the excavation has rewritten the history of the region, though one could be forgiven for thinking so given the breathless coverage it has received. What the finds do establish, with reasonable certainty, is that settled farming began there some centuries earlier than previously supposed. Whether this reflects local innovation or the arrival of migrants bringing established techniques remains, for now, an open question, and one the excavators themselves are notably reluctant to prejudge."
+      stem: "Nhận định nào phù hợp nhất với nội dung đoạn văn về cuộc khai quật?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Cuộc khai quật đã viết lại toàn bộ lịch sử khu vực", lang: vi }
+        - { id: b, text: "Nông nghiệp định cư xuất hiện sớm hơn từng nghĩ, nhưng nguồn gốc của nó vẫn chưa rõ", lang: vi }
+        - { id: c, text: "Người di cư chắc chắn đã mang kỹ thuật canh tác đến khu vực", lang: vi }
+        - { id: d, text: "Báo chí đưa tin về cuộc khai quật rất thận trọng", lang: vi }
+    answer: b
+    explanation: { vi: "Các phát hiện xác lập rằng canh tác định cư bắt đầu sớm hơn vài thế kỷ, còn việc do người địa phương sáng tạo hay người di cư mang đến vẫn là “an open question”. “Breathless coverage” nghĩa là báo chí đưa tin dồn dập, hào hứng thái quá, chứ không thận trọng." }
+
+  - key: en:diag:read-c2-studied-indifference
+    level: c2
+    item_type: reading_mcq
+    prompt:
+      passage: "In negotiations, the side that appears least eager often holds the upper hand. A buyer who signals that walking away would be no great loss forces the seller to make the running, while one who betrays how badly she wants the deal invites the seller to dig in. Seasoned negotiators therefore cultivate an air of studied indifference: not, it should be stressed, genuine indifference, which tends to curdle into carelessness, but a calibrated reserve that conceals rather than abandons their objectives."
+      stem: "Cụm “studied indifference” trong đoạn văn về đàm phán có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Vẻ thờ ơ được cố ý tạo ra để che giấu mục tiêu thật", lang: vi }
+        - { id: b, text: "Sự thờ ơ thật sự vì không còn quan tâm đến thương vụ", lang: vi }
+        - { id: c, text: "Thái độ chăm chỉ nghiên cứu kỹ đối phương", lang: vi }
+        - { id: d, text: "Sự cẩu thả do thiếu kinh nghiệm", lang: vi }
+    answer: a
+    explanation: { vi: "“Studied” ở đây nghĩa là có chủ ý, được dàn dựng, không liên quan đến “học”. Đoạn văn nói rõ đó không phải “genuine indifference” mà là sự kiềm chế “conceals rather than abandons their objectives”." }
