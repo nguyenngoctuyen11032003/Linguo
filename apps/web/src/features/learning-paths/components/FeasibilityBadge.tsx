@@ -4,9 +4,9 @@ import { cn } from '@/lib/cn';
 
 const CONFIG: Record<Feasibility, { label: string; icon: typeof Clock; className: string }> = {
   no_deadline: { label: 'Không đặt hạn', icon: CalendarDays, className: 'bg-text/8 text-text' },
-  feasible: { label: 'Khả thi theo kế hoạch', icon: CheckCircle2, className: 'bg-success/12 text-success' },
+  feasible: { label: 'Khả thi theo kế hoạch', icon: CheckCircle2, className: 'bg-success/12 text-success-text' },
   tight: { label: 'Thời hạn khá căng', icon: AlertTriangle, className: 'bg-warn/15 text-text' },
-  needs_more_time: { label: 'Cần tăng thời lượng', icon: Clock, className: 'bg-error/10 text-error' },
+  needs_more_time: { label: 'Cần tăng thời lượng', icon: Clock, className: 'bg-error/10 text-error-text' },
 };
 
 export function FeasibilityBadge({ feasibility }: { feasibility: Feasibility }) {
