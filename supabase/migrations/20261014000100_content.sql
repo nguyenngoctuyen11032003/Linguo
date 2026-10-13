@@ -824,3 +824,21 @@ comment on function content_private.import_bundle(jsonb) is 'Imports a content b
 
 revoke all on function content_private.import_bundle(jsonb) from public, anon, authenticated;
 grant execute on function content_private.import_bundle(jsonb) to service_role;
+
+-- PostgREST entry point for `pnpm content:push` (spec 2 §4.3). content_private is not an exposed
+-- schema, so this thin wrapper in public lets the importer call POST /rest/v1/rpc/import_content_bundle
+-- with the project-scoped service_role key instead of an account-wide Management API token. It adds no
+-- logic of its own, and like import_bundle only service_role may execute it.
+create or replace function public.import_content_bundle(p_bundle jsonb)
+returns jsonb
+language sql
+security definer
+set search_path = ''
+as $$
+  select content_private.import_bundle(p_bundle);
+$$;
+
+comment on function public.import_content_bundle(jsonb) is 'PostgREST wrapper around content_private.import_bundle for the content importer. service_role only.';
+
+revoke all on function public.import_content_bundle(jsonb) from public, anon, authenticated;
+grant execute on function public.import_content_bundle(jsonb) to service_role;

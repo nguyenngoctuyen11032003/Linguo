@@ -432,6 +432,9 @@ isOneToOne: false
 "grading_text":
 { Args: { "p_accepted": Json,"p_known_wrong": Json,"p_lang": string,"p_rubric": Json,"p_text": string }; Returns: Json
                            },
+"import_content_bundle":
+{ Args: { "p_bundle": Json }; Returns: Json
+                           },
 "learning_path_validate":
 { Args: { "p_current_level": string,"p_goal_type": string,"p_language": string,"p_target_date": string,"p_target_level": string,"p_today": string,"p_weekly_minutes": (number)[] }; Returns: undefined
                            },
