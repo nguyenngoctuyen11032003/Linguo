@@ -1,4 +1,4 @@
-# Cài đặt LexiPath trên máy
+# Cài đặt Linguo trên máy
 
 ## Cần có
 - Node.js 22 (`node -v`), pnpm 10 (`corepack enable` là đủ; phiên bản pnpm được ghim trong `package.json`)
