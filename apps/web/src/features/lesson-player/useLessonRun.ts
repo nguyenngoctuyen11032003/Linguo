@@ -12,9 +12,10 @@ import {
 import { useToast } from '@/components/ui/Toast';
 import { useAuth } from '@/features/auth/AuthProvider';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
+import { isNetworkError } from '@/lib/network-error';
 import { getSupabase, type AppSupabaseClient } from '@/lib/supabase';
 import { useOnline } from '@/lib/useOnline';
-import { isNetworkError, lessonErrorMessage } from './error-map';
+import { lessonErrorMessage } from './error-map';
 import { createOutbox, type OutboxEntry } from './outbox';
 import { buildSteps, entryKey, exerciseStateFor, initialPlayerState, playerReducer, type EntryRef } from './playerMachine';
 import { completeLesson, getLesson, saveCursor, startLesson, submitExercise } from './service';

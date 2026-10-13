@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import type { SubmitResult } from '@linguo/shared';
+import { isNetworkError } from '@/lib/network-error';
 import type { AppSupabaseClient } from '@/lib/supabase';
-import { isNetworkError } from './error-map';
 import { createOutbox, OUTBOX_CHANGE_EVENT, outboxKey, type OutboxEntry } from './outbox';
 import { submitExercise } from './service';
 

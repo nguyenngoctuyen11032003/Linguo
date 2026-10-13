@@ -1,4 +1,5 @@
 import type { LESSON_ERROR_CODES } from '@linguo/shared';
+import { isNetworkError } from '@/lib/network-error';
 
 type LessonErrorCode = (typeof LESSON_ERROR_CODES)[number];
 
@@ -25,22 +26,6 @@ const MESSAGES: Record<string, string> = {
 
 const NETWORK_MESSAGE = 'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.';
 const CODE_PATTERN = /^[a-z][a-z0-9]*(?:_[a-z0-9]+)+$/;
-// fetch() failures across browsers/Node, and postgrest-js's "<name>: <message>" wrapping of them.
-const NETWORK_PATTERN = /^(?:TypeError|FetchError|AbortError):|failed to fetch|fetch failed|networkerror|load failed|network request failed/i;
-
-/** True when the request never got a server answer (offline, DNS, timeout); such submits go to the outbox. */
-export function isNetworkError(error: unknown): boolean {
-  if (error instanceof TypeError) return true;
-  if (!error || typeof error !== 'object') return false;
-  if ('status' in error && error.status === 0) return true;
-  if ('message' in error && typeof error.message === 'string') {
-    // A server error always carries a SQLSTATE / snake_case code; postgrest-js uses '' for fetch failures.
-    const code = 'code' in error && typeof error.code === 'string' ? error.code : '';
-    if (code) return false;
-    return NETWORK_PATTERN.test(error.message);
-  }
-  return false;
-}
 
 /** A snake_case RPC message is the most specific code; otherwise fall back to the error's own `code`. */
 function errorCode(error: object): string | null {
