@@ -67,8 +67,8 @@ enabled = true
 schema_paths = []
 
 [db.seed]
-# No seed data yet; enable and add supabase/seed.sql when needed.
-enabled = false
+# Demo content: supabase/seed.sql is generated from content/ by `pnpm content:build` (scripts/content-import.mjs --emit-sql).
+enabled = true
 # Specifies an ordered list of seed files to load during db reset.
 # Supports glob patterns relative to supabase directory: "./seeds/*.sql"
 sql_paths = ["./seed.sql"]
