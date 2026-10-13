@@ -5,7 +5,99 @@ export type Database = {
   
   "public": {
           Tables: {
-            "attempts": {
+            "assessment_attempts": {
+                  Row: {
+                    "applied_at": string | null,"assessment_id": string,"completed_at": string | null,"current_item_id": string | null,"current_served_at": string | null,"id": string,"last_activity_at": string,"learning_path_id": string,"mode": string,"report": Json | null,"skipped": NonNullable<Json>,"started_at": string,"status": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "applied_at"?: string | null,"assessment_id": string,"completed_at"?: string | null,"current_item_id"?: string | null,"current_served_at"?: string | null,"id"?: string,"last_activity_at"?: string,"learning_path_id": string,"mode"?: string,"report"?: Json | null,"skipped"?: NonNullable<Json>,"started_at"?: string,"status"?: string,"user_id": string
+                  }
+                  Update: {
+                    "applied_at"?: string | null,"assessment_id"?: string,"completed_at"?: string | null,"current_item_id"?: string | null,"current_served_at"?: string | null,"id"?: string,"last_activity_at"?: string,"learning_path_id"?: string,"mode"?: string,"report"?: Json | null,"skipped"?: NonNullable<Json>,"started_at"?: string,"status"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "assessment_attempts_assessment_id_fkey"
+      columns: ["assessment_id"]
+isOneToOne: false
+      referencedRelation: "assessments"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "assessment_attempts_current_item_id_fkey"
+      columns: ["current_item_id"]
+isOneToOne: false
+      referencedRelation: "assessment_items"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "assessment_attempts_learning_path_id_fkey"
+      columns: ["learning_path_id"]
+isOneToOne: false
+      referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"assessment_items": {
+                  Row: {
+                    "answer_key": string,"assessment_id": string,"content_hash": string,"created_at": string,"difficulty": number,"explanation": Json | null,"id": string,"is_demo": boolean,"item_type": string,"key": string,"key_confidence": string,"level_code": string,"prompt": NonNullable<Json>,"skill": string,"status": string,"updated_at": string,"version": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "answer_key": string,"assessment_id": string,"content_hash": string,"created_at"?: string,"difficulty": number,"explanation"?: Json | null,"id": string,"is_demo"?: boolean,"item_type": string,"key": string,"key_confidence"?: string,"level_code": string,"prompt": NonNullable<Json>,"skill": string,"status"?: string,"updated_at"?: string,"version"?: number
+                  }
+                  Update: {
+                    "answer_key"?: string,"assessment_id"?: string,"content_hash"?: string,"created_at"?: string,"difficulty"?: number,"explanation"?: Json | null,"id"?: string,"is_demo"?: boolean,"item_type"?: string,"key"?: string,"key_confidence"?: string,"level_code"?: string,"prompt"?: NonNullable<Json>,"skill"?: string,"status"?: string,"updated_at"?: string,"version"?: number
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "assessment_items_assessment_id_fkey"
+      columns: ["assessment_id"]
+isOneToOne: false
+      referencedRelation: "assessments"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"assessment_responses": {
+                  Row: {
+                    "answered_at": string,"attempt_id": string,"choice": string | null,"is_correct": boolean,"item_id": string,"seq": number,"served_at": string,"skill": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "answered_at"?: string,"attempt_id": string,"choice"?: string | null,"is_correct": boolean,"item_id": string,"seq": number,"served_at": string,"skill": string
+                  }
+                  Update: {
+                    "answered_at"?: string,"attempt_id"?: string,"choice"?: string | null,"is_correct"?: boolean,"item_id"?: string,"seq"?: number,"served_at"?: string,"skill"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "assessment_responses_attempt_id_fkey"
+      columns: ["attempt_id"]
+isOneToOne: false
+      referencedRelation: "assessment_attempts"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "assessment_responses_item_id_fkey"
+      columns: ["item_id"]
+isOneToOne: false
+      referencedRelation: "assessment_items"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"assessments": {
+                  Row: {
+                    "assessment_type": string,"config": NonNullable<Json>,"created_at": string,"id": string,"is_published": boolean,"language_code": string,"version": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "assessment_type"?: string,"config"?: NonNullable<Json>,"created_at"?: string,"id"?: string,"is_published"?: boolean,"language_code": string,"version"?: number
+                  }
+                  Update: {
+                    "assessment_type"?: string,"config"?: NonNullable<Json>,"created_at"?: string,"id"?: string,"is_published"?: boolean,"language_code"?: string,"version"?: number
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"attempts": {
                   Row: {
                     "after_reveal": boolean,"attempt_no": number,"client_at": string | null,"confidence": number | null,"content_version": number,"created_at": string,"error_tags": (string)[],"exercise_id": string,"exercise_type": string,"exercise_version": number,"feedback_json": NonNullable<Json>,"gave_up": boolean,"hint_count": number,"id": string,"idempotency_key": string,"is_correct": boolean,"learning_item_id": string | null,"learning_path_id": string,"lesson_id": string,"lesson_run_id": string,"modality": string | null,"normalized_response": string | null,"payload_hash": string,"response_json": NonNullable<Json>,"response_ms": number,"revealed": boolean,"score": number,"stage": string,"synced_late": boolean,"user_id": string,"verdict": string
                   }
@@ -481,7 +573,13 @@ isOneToOne: false
             [_ in never]: never
           }
           Functions: {
-            "complete_lesson":
+            "accept_diagnostic_placement":
+{ Args: { "p_attempt_id": string }; Returns: Json
+                           },
+"answer_diagnostic":
+{ Args: { "p_attempt_id": string,"p_choice": string,"p_item_id": string }; Returns: Json
+                           },
+"complete_lesson":
 { Args: { "p_run_id": string }; Returns: Json
                            },
 "create_learning_path":
@@ -506,6 +604,12 @@ isOneToOne: false
         isOneToOne: true
         isSetofReturn: false
       } },
+"diagnostic_status":
+{ Args: { "p_path_id": string }; Returns: Json
+                           },
+"finish_diagnostic":
+{ Args: { "p_attempt_id": string }; Returns: Json
+                           },
 "estimate_learning_path":
 { Args: { "p_current_level": string,"p_language": string,"p_target_date": string,"p_target_level": string,"p_today": string,"p_weekly_minutes": (number)[] }; Returns: Json
                            },
@@ -531,6 +635,9 @@ isOneToOne: false
 { Args: { "p_accepted": Json,"p_known_wrong": Json,"p_lang": string,"p_rubric": Json,"p_text": string }; Returns: Json
                            },
 "import_content_bundle":
+{ Args: { "p_bundle": Json }; Returns: Json
+                           },
+"import_diagnostic_content_bundle":
 { Args: { "p_bundle": Json }; Returns: Json
                            },
 "learning_path_validate":
@@ -661,6 +768,9 @@ isOneToOne: false
         isOneToOne: true
         isSetofReturn: false
       } },
+"skip_diagnostic_skill":
+{ Args: { "p_attempt_id": string,"p_reason": string,"p_skill": string }; Returns: Json
+                           },
 "srs_adjust_rating":
 { Args: { "p_confidence": number,"p_hint_count": number,"p_rating": number }; Returns: number
                            },
@@ -708,6 +818,9 @@ isOneToOne: false
                            },
 "srs_update_mastery":
 { Args: { "p_item": string,"p_path": string,"p_user": string }; Returns: boolean
+                           },
+"start_diagnostic":
+{ Args: { "p_mode"?: string,"p_path_id": string }; Returns: Json
                            },
 "start_lesson":
 { Args: { "p_lesson_id": string,"p_path_id": string }; Returns: Json
