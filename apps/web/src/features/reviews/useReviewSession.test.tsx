@@ -187,6 +187,31 @@ describe('useReviewSession', () => {
     expect(createReviewOutbox(USER_ID).list()).toEqual([]);
   });
 
+  it('never counts an unconfirmed grade as saved, and resends it under the key it was first sent with', async () => {
+    let down = true;
+    const fake = installClient({
+      get_review_queue: () => ({ data: queue([card(1), card(2)]) }),
+      grade_review: () => (down ? { error: { message: 'AbortError: signal timed out', code: '' }, status: 0 } : { data: gradeResult(1) }),
+    });
+    const { result: hook } = renderSession();
+    await ready(hook);
+    await act(() => hook.current.grade(2, META));
+    const [sent] = fake.callsOf('grade_review');
+    const [queued] = createReviewOutbox(USER_ID).list();
+    expect(queued!.args.p_idempotency_key).toBe(sent!.p_idempotency_key);
+    // Pending, not graded: no result is shown as saved until the server answers.
+    expect(hook.current.pendingCount).toBe(1);
+    expect(hook.current.graded).toEqual([]);
+
+    down = false;
+    await act(async () => {
+      window.dispatchEvent(new Event('online'));
+    });
+    await waitFor(() => expect(hook.current.pendingCount).toBe(0));
+    expect(new Set(fake.callsOf('grade_review').map((a) => a.p_idempotency_key))).toEqual(new Set([sent!.p_idempotency_key]));
+    expect(hook.current.graded).toEqual([gradeResult(1)]);
+  });
+
   it('queues straight to the outbox when the browser is offline (timeouts and 5xx too)', async () => {
     const fake = installClient({
       get_review_queue: () => ({ data: queue([card(1), card(2), card(3)]) }),

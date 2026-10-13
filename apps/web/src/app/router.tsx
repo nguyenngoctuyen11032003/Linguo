@@ -21,15 +21,17 @@ import { ResetPasswordPage } from '@/routes/auth/ResetPasswordPage';
 import { SignInPage } from '@/routes/auth/SignInPage';
 import { SignUpPage } from '@/routes/auth/SignUpPage';
 import { LandingPage } from '@/routes/landing/LandingPage';
-import { LegalPage } from '@/routes/LegalPage';
+import { LegalPage } from '@/routes/legal/LegalPage';
 import { NotFoundPage } from '@/routes/NotFoundPage';
 import { RouteError } from '@/routes/RouteError';
 
-export const routes: RouteObject[] = [
+/** Layout routes whose element renders `<main>`: error elements below them must not add a second one. */
+const MAIN_LAYOUT = { providesMain: true } as const;
+
+const routeTree: RouteObject[] = [
   {
     path: '/',
     element: <RootLayout />,
-    errorElement: <RouteError />,
     children: [
       { index: true, element: <LandingPage /> },
       { path: 'quyen-rieng-tu', element: <LegalPage kind="privacy" /> },
@@ -40,6 +42,7 @@ export const routes: RouteObject[] = [
             <AuthLayout />
           </RedirectIfAuthed>
         ),
+        handle: MAIN_LAYOUT,
         children: [
           { path: 'dang-nhap', element: <SignInPage /> },
           { path: 'dang-ky', element: <SignUpPage /> },
@@ -49,6 +52,7 @@ export const routes: RouteObject[] = [
       },
       {
         element: <AuthLayout />,
+        handle: MAIN_LAYOUT,
         children: [
           { path: 'auth/callback', element: <AuthCallbackPage /> },
           {
@@ -71,6 +75,7 @@ export const routes: RouteObject[] = [
           { path: 'hoc-tap/bai/:lessonId', element: <LessonPage /> },
           {
             element: <AppLayout />,
+            handle: MAIN_LAYOUT,
             children: [
               { index: true, element: <HomePage /> },
               { path: 'hoc-tap', element: <LearnPage /> },
@@ -87,6 +92,21 @@ export const routes: RouteObject[] = [
     ],
   },
 ];
+
+/**
+ * Every route gets its own error boundary (spec 7 §2): a crash renders RouteError in place of that route only, so
+ * the parent layout (navigation, offline banner) stays usable.
+ */
+function withErrorBoundaries(list: RouteObject[], inMain: boolean): RouteObject[] {
+  return list.map((route) => {
+    const childInMain = inMain || route.handle === MAIN_LAYOUT;
+    const errorElement = route.errorElement ?? <RouteError inMain={inMain} />;
+    if (route.index) return { ...route, errorElement } as RouteObject;
+    return { ...route, errorElement, children: route.children && withErrorBoundaries(route.children, childInMain) } as RouteObject;
+  });
+}
+
+export const routes: RouteObject[] = withErrorBoundaries(routeTree, false);
 
 export function createAppRouter() {
   const basename = import.meta.env.BASE_URL.replace(/\/+$/, '') || '/';
