@@ -1,6 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 
-const PORT = 4173;
+// PLAYWRIGHT_PORT lets parallel checkouts on one machine each serve their own build. A server already on the
+// port is only reused when PLAYWRIGHT_REUSE_SERVER=1: otherwise another checkout's stale preview could be tested.
+const PORT = Number(process.env.PLAYWRIGHT_PORT ?? 4173);
 
 export default defineConfig({
   testDir: './tests/e2e',
@@ -25,7 +27,7 @@ export default defineConfig({
   webServer: {
     command: `pnpm exec vite preview --port ${PORT} --strictPort`,
     url: `http://localhost:${PORT}`,
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: process.env.PLAYWRIGHT_REUSE_SERVER === '1',
     timeout: 60_000,
   },
 });
