@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { GOAL_LABELS, LANGUAGES, LEVEL_INFO, START_POINT_LABELS, type CreatePathInput, type EstimateResult, type LevelCode } from '@linguo/shared';
+import { GOAL_LABELS, isTargetDateInRange, LANGUAGES, LEVEL_INFO, START_POINT_LABELS, type CreatePathInput, type EstimateResult, type LevelCode } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { EstimateSummary } from '@/features/learning-paths/components/EstimateSummary';
@@ -10,6 +10,7 @@ import type { StepNumber } from './logic';
 interface Props {
   input: CreatePathInput;
   estimate: EstimateResult | null;
+  today: string;
   onEdit: (step: StepNumber) => void;
   onApplyMinutes: (minutes: number) => void;
   onApplyDate: (iso: string) => void;
@@ -19,7 +20,7 @@ interface Props {
   errorAction?: ReactNode;
 }
 
-export function StepReview({ input, estimate, onEdit, onApplyMinutes, onApplyDate, onCreate, creating, error, errorAction }: Props) {
+export function StepReview({ input, estimate, today, onEdit, onApplyMinutes, onApplyDate, onCreate, creating, error, errorAction }: Props) {
   const weekly = input.weeklyMinutes.reduce((s, m) => s + m, 0);
   const rows: Array<{ label: string; value: string; step: StepNumber }> = [
     { label: 'Ngôn ngữ', value: LANGUAGES[input.language].nameVi, step: 1 },
@@ -62,7 +63,7 @@ export function StepReview({ input, estimate, onEdit, onApplyMinutes, onApplyDat
                   Dùng {estimate.suggestedMinutesPerDay} phút/ngày
                 </Button>
               )}
-              {estimate.suggestedDate && (
+              {estimate.suggestedDate && isTargetDateInRange(estimate.suggestedDate, today) && (
                 <Button variant="ghost" onClick={() => onApplyDate(estimate.suggestedDate!)}>
                   Dời ngày mục tiêu sang {formatDateVi(estimate.suggestedDate)}
                 </Button>

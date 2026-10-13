@@ -250,6 +250,7 @@ export function OnboardingPage() {
       <StepReview
         input={input.data}
         estimate={estimate}
+        today={today}
         onEdit={go}
         onApplyMinutes={(minutes) => {
           const week = schedule.weeklyMinutes.map((m) => (m > 0 ? minutes : 0));

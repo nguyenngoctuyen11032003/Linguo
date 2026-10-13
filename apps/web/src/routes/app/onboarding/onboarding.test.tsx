@@ -312,6 +312,23 @@ describe('OnboardingPage', () => {
     expect((screen.getByLabelText('Ngày mục tiêu') as HTMLInputElement).value).toMatch(/^\d{4}-\d{2}-\d{2}$/);
   });
 
+  it('does not offer a suggested date beyond the 10-year limit', async () => {
+    seed(6, {
+      language: 'ko',
+      startPoint: 'new',
+      currentLevel: 'hangul',
+      goalType: 'topik_ii',
+      targetLevel: 'topik6',
+      schedulePreset: 'custom',
+      weeklyMinutes: [15, 15, 15, 15, 15, 15, 15],
+      deadlineMode: 'weeks',
+      deadlineAmount: 4,
+    });
+    page();
+    expect(await screen.findByRole('button', { name: /^Dùng \d+ phút\/ngày/ })).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /^Dời ngày mục tiêu sang/ })).not.toBeInTheDocument();
+  });
+
   it('calls the RPC once on a double click', async () => {
     seed(6, FULL);
     page();
