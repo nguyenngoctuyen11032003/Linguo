@@ -22,6 +22,7 @@
     "db:test": "supabase test db",
     "db:lint": "supabase db lint --fail-on error",
     "fixtures:sync": "node scripts/sync-estimate-fixtures.mjs",
+    "fixtures:grading": "node scripts/sync-grading-fixtures.mjs",
     "db:types": "supabase gen types typescript --local --schema public > packages/shared/src/database.types.ts"
   },
   "devDependencies": {
