@@ -1,15 +1,23 @@
 import { useState, type FormEvent } from 'react';
-import { useNavigate } from 'react-router';
+import { Navigate, useNavigate } from 'react-router';
 import { fieldErrors, resetPasswordSchema } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { FormField } from '@/components/ui/FormField';
 import { PasswordInput } from '@/components/ui/PasswordInput';
 import { useToast } from '@/components/ui/Toast';
 import { authErrorMessage } from '@/features/auth/error-map';
+import { clearRecovery, isRecoveryPending } from '@/features/auth/recovery';
 import { requireSupabase } from '@/lib/supabase';
 import { AuthCard, FormAlert } from './AuthCard';
 
 export function ResetPasswordPage() {
+  // Read once: clearing the flag after a successful update must not bounce the page mid-navigation.
+  const [recovering] = useState(isRecoveryPending);
+  if (!recovering) return <Navigate to="/app/cai-dat" replace />;
+  return <ResetPasswordForm />;
+}
+
+function ResetPasswordForm() {
   const navigate = useNavigate();
   const toast = useToast();
   const [password, setPassword] = useState('');
@@ -35,6 +43,7 @@ export function ResetPasswordPage() {
         setFormError(authErrorMessage(error));
         return;
       }
+      clearRecovery();
       toast.show({ tone: 'success', message: 'Đã đặt mật khẩu mới.' });
       navigate('/app', { replace: true });
     } catch (error) {
