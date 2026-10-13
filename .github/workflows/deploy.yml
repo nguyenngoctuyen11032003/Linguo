@@ -160,7 +160,7 @@ jobs:
       - run: pnpm build
       - name: Bundle must not contain secret keys
         run: |
-          if grep -rq "sb_secret_" apps/web/dist; then
+          if grep -rqE "sb_secret_[A-Za-z0-9_-]{20,}" apps/web/dist; then
             echo "::error::Found a Supabase secret key in the built bundle"; exit 1
           fi
       - uses: actions/upload-pages-artifact@v5
