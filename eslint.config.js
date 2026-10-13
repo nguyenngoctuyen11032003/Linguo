@@ -43,10 +43,16 @@ export default tseslint.config(
             'FormAlert',
             'AuthContext',
             'ProfileContext',
+            'LearningPathsContext',
+            'useLearningPaths',
           ],
         },
       ],
     },
+  },
+  {
+    files: ['apps/web/tests/**/*.{ts,tsx}'],
+    rules: { 'react-refresh/only-export-components': 'off' },
   },
   {
     files: ['scripts/**/*.mjs', '**/*.config.{js,ts}', 'apps/web/tests/e2e/**/*.ts'],
