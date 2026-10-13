@@ -159,6 +159,26 @@ describe('useLessonRun', () => {
     expect(fake.callsOf('start_lesson')).toHaveLength(1);
   });
 
+  it('does not carry the old summary ?buoc= into the restarted run or its cursor', async () => {
+    const NEW_RUN = '40000000-0000-4000-8000-000000000002';
+    const fake = installClient({
+      get_lesson: () => ({ data: payload({ run: run({ status: 'completed', summary: {} }) }) }),
+      start_lesson: () => ({ data: run({ id: NEW_RUN }) }),
+    });
+    const { result: hook } = renderRun();
+    await ready(hook);
+    const seen: number[] = [];
+    act(() => hook.current.api.restart());
+    await waitFor(() => {
+      if (hook.current.api.runStatus === 'in_progress') seen.push(hook.current.api.stepIndex);
+      expect(hook.current.location.search).toBe('?buoc=1');
+    });
+    await new Promise((r) => setTimeout(r, 600));
+    expect(seen.every((i) => i === 0)).toBe(true);
+    expect(hook.current.api.stepIndex).toBe(0);
+    expect(fake.callsOf('save_lesson_cursor')).toEqual([]);
+  });
+
   it('resumes from the saved cursor', async () => {
     installClient({ get_lesson: () => ({ data: payload({ run: run({ cursor: 4 }) }) }) });
     const { result: hook } = renderRun();
