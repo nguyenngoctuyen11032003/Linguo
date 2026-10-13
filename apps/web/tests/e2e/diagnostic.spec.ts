@@ -263,4 +263,7 @@ test('the diagnostic mock honours the RPC contracts and never sends answer keys'
   expect(await errorOf('accept_diagnostic_placement', { p_attempt_id: step.attempt_id })).toBe('already_applied');
   expect(diagnosticStatusSchema.parse(await ok('diagnostic_status', { p_path_id: PATH_ID }))).toMatchObject({ status: 'completed', can_start: false });
   expect(await errorOf('start_diagnostic', { p_path_id: PATH_ID })).toBe('diagnostic_cooldown');
+  expect(await errorOf('start_diagnostic', { p_path_id: PATH_ID, p_mode: 'quick' })).toBe('invalid_mode');
+  // The cooldown runs per mode: a finished full test does not block the foundation check.
+  expect(diagnosticStepSchema.parse(await ok('start_diagnostic', { p_path_id: PATH_ID, p_mode: 'foundation' })).mode).toBe('foundation');
 });

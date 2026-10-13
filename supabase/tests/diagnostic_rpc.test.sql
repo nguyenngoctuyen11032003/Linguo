@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(133);
+select plan(139);
 
 -- ===== Item bank: the published EN diagnostic gets a synthetic bank (rolled back) =====
 -- Any seeded bank is removed first so the expectations below do not depend on content.
@@ -113,6 +113,23 @@ begin
 exception when others then
   get stacked diagnostics v_detail = pg_exception_detail;
   return v_detail;
+end;
+$$;
+
+-- Result of a jsonb statement whose effects are rolled back (subtransaction), so it leaves no attempt behind.
+create function public.d4_dry_run(p_sql text) returns jsonb language plpgsql volatile as $$
+declare
+  v_result jsonb;
+  v_detail text;
+begin
+  execute p_sql into v_result;
+  raise exception using errcode = 'P0001', message = 'd4_dry_run', detail = coalesce(v_result::text, 'null');
+exception when others then
+  if sqlerrm <> 'd4_dry_run' then
+    raise;
+  end if;
+  get stacked diagnostics v_detail = pg_exception_detail;
+  return v_detail::jsonb;
 end;
 $$;
 
@@ -318,7 +335,8 @@ select is((select jsonb_build_object('s', j -> 'status', 'c', j -> 'can_start', 
   from (select current_setting('test.st1')::jsonb as j) as t),
   '{"s": "completed", "c": false, "r": true}'::jsonb, 'status after finishing: completed, in cooldown');
 select throws_ok(format('select public.start_diagnostic(%L)', current_setting('test.pa')), 'P0001', 'diagnostic_cooldown', '14-day cooldown');
-select throws_ok(format('select public.start_diagnostic(%L, ''foundation'')', current_setting('test.pa')), 'P0001', 'diagnostic_cooldown', 'cooldown applies to every mode');
+select is(public.d4_dry_run(format('select public.start_diagnostic(%L, ''foundation'')', current_setting('test.pa'))) ->> 'mode', 'foundation',
+  'a full test does not block a foundation check (cooldown per mode)');
 select is(public.d4_err_detail(format('select public.start_diagnostic(%L)', current_setting('test.pa')))::timestamptz,
   (current_setting('test.f1')::jsonb ->> 'retake_after')::timestamptz, 'cooldown error detail carries retake_after');
 
@@ -396,6 +414,15 @@ select is((select jsonb_agg(s ->> 'confidence' order by s ->> 'skill') from json
 set local role authenticated;
 select ok(not exists (select 1 from jsonb_array_elements(current_setting('test.fe')::jsonb -> 'skills') as s where s ->> 'confidence' = 'high'),
   'no high confidence with rapid answers');
+-- Cooldown runs per mode: a finished foundation check blocks another foundation check, not the full test.
+select is((select jsonb_build_object('s', j -> 'status', 'c', j -> 'can_start', 'r', j -> 'retake_after')
+  from (select public.diagnostic_status(current_setting('test.pe')::uuid) as j) as t),
+  '{"s": "completed", "c": true, "r": null}'::jsonb, 'status after a foundation check: the full test can start');
+select throws_ok(format('select public.start_diagnostic(%L, ''foundation'')', current_setting('test.pe')), 'P0001', 'diagnostic_cooldown',
+  'foundation after foundation: cooldown');
+select is(public.d4_err_detail(format('select public.start_diagnostic(%L, ''foundation'')', current_setting('test.pe')))::timestamptz,
+  (current_setting('test.fe')::jsonb ->> 'retake_after')::timestamptz, 'foundation cooldown detail carries its retake_after');
+select is(public.start_diagnostic(current_setting('test.pe')::uuid, 'full') ->> 'mode', 'full', 'a foundation check does not block the full test');
 
 -- ===== F: skip, skip errors, downgrade =====
 select public.d4_as('d4000000-0000-4000-8000-00000000000f');
@@ -486,6 +513,17 @@ select is(public.accept_diagnostic_placement((current_setting('test.sd')::jsonb 
     'outcome', 'no_suggestion', 'estimate', null), 'accept without suggestion: no_suggestion');
 select is((select applied_at from public.assessment_attempts where id = (current_setting('test.sd')::jsonb ->> 'attempt_id')::uuid),
   null, 'no_suggestion does not mark the attempt applied');
+
+-- ===== Engine boundaries: same 1e-9 mass tolerance as packages/shared/src/diagnostic/engine.ts (engine.test.ts) =====
+reset role;
+-- P(θ >= 1) = 0.6999999995: within tolerance of 0.7.
+select is(public.diag_conservative_level((
+  select array_agg(case i when 1 then 0.3000000005::float8 when 7 then 0.6999999995::float8 else 0::float8 end order by i)
+  from generate_series(1, 29) as i)), 1, 'conservative level: 0.7 mass reached within 1e-9');
+-- Cumulative 0.0999999995 at θ = 2 and 0.8999999995 at θ = 3: the 10th/90th percentiles land there.
+select is(public.diag_level_range((
+  select array_agg(case i when 11 then 0.0999999995::float8 when 15 then 0.8::float8 when 23 then 0.1000000005::float8 else 0::float8 end order by i)
+  from generate_series(1, 29) as i)), '{"low": 2, "high": 3}'::jsonb, 'level range: percentiles reached within 1e-9');
 
 select * from finish();
 rollback;

@@ -26,6 +26,7 @@ export const DIAGNOSTIC_ERROR_CODES = [
   'path_not_found',
   'diagnostic_cooldown',
   'bank_unavailable',
+  'invalid_mode',
   'attempt_not_found',
   'attempt_not_active',
   'item_mismatch',

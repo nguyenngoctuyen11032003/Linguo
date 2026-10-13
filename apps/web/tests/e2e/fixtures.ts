@@ -773,7 +773,9 @@ function createDiagnosticBackend(paths: Array<Record<string, unknown>>, opts: Di
     const pathId = String(b.p_path_id);
     if (!pathOf(pathId)) return rpcError('path_not_found');
     const a = latest(pathId);
-    const retakeAfter = a?.completedAt ? addDays(a.completedAt, DIAG_COOLDOWN_DAYS) : null;
+    // Cooldown runs per mode; status describes the full test, which a foundation check does not block.
+    const lastFull = attempts.filter((x) => x.pathId === pathId && x.mode === 'full' && x.completedAt).at(-1);
+    const retakeAfter = lastFull ? addDays(lastFull.completedAt!, DIAG_COOLDOWN_DAYS) : null;
     return {
       json: {
         attempt_id: a?.id ?? null,
@@ -790,12 +792,13 @@ function createDiagnosticBackend(paths: Array<Record<string, unknown>>, opts: Di
     const path = pathOf(b.p_path_id);
     if (!path) return rpcError('path_not_found');
     const pathId = String(path.id);
+    if (b.p_mode !== undefined && b.p_mode !== 'full' && b.p_mode !== 'foundation') return rpcError('invalid_mode');
     if (path.language_code !== 'en') return rpcError('bank_unavailable');
     const open = attempts.find((a) => a.pathId === pathId && a.status === 'in_progress');
     if (open) return { json: step(open, true) };
-    const done = attempts.filter((a) => a.pathId === pathId && a.completedAt).at(-1);
-    if (done && Date.now() < Date.parse(addDays(done.completedAt!, DIAG_COOLDOWN_DAYS))) return rpcError('diagnostic_cooldown');
     const mode = b.p_mode === 'foundation' ? 'foundation' : 'full';
+    const done = attempts.filter((a) => a.pathId === pathId && a.mode === mode && a.completedAt).at(-1);
+    if (done && Date.now() < Date.parse(addDays(done.completedAt!, DIAG_COOLDOWN_DAYS))) return rpcError('diagnostic_cooldown');
     const begin = mode === 'foundation' ? 0 : Math.max(0, levels(path.language_code).indexOf(String(path.current_level)));
     const a: DiagAttempt = {
       id: randomUUID(),

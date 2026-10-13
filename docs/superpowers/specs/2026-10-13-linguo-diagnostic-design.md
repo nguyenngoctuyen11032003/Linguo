@@ -40,8 +40,8 @@ Fixtures chung `packages/shared/src/diagnostic/engine.fixtures.json` (posterior/
 
 | RPC | Hành vi |
 |---|---|
-| `diagnostic_status(p_path_id)` | Lượt gần nhất + `can_start` + `retake_after` |
-| `start_diagnostic(p_path_id, p_mode default 'full')` | Lượt dở → tiếp tục, trả lại đúng câu đang chờ (`resumed`). Lượt dở > 7 ngày → `abandoned`. Cooldown 14 ngày sau lượt `completed` → `diagnostic_cooldown`. Không có kho câu → `bank_unavailable` |
+| `diagnostic_status(p_path_id)` | Lượt gần nhất + `can_start` + `retake_after` (của bài `full`; lượt `foundation` không chặn bài `full`) |
+| `start_diagnostic(p_path_id, p_mode default 'full')` | Lượt dở → tiếp tục, trả lại đúng câu đang chờ (`resumed`). Lượt dở > 7 ngày → `abandoned`. Cooldown 14 ngày sau lượt `completed` cùng chế độ (full sau full, foundation sau foundation) → `diagnostic_cooldown`; `p_mode` lạ → `invalid_mode`. Không có kho câu → `bank_unavailable` |
 | `answer_diagnostic(p_attempt_id, p_item_id, p_choice)` | `p_item_id` phải là câu đang chờ (`item_mismatch` / `already_answered`); `p_choice` null hoặc id phương án hợp lệ (`invalid_choice`). Không trả đúng/sai, không trả đáp án, không trả θ |
 | `skip_diagnostic_skill(p_attempt_id, p_skill, p_reason)` | Bỏ kỹ năng → "chưa đủ dữ liệu" |
 | `finish_diagnostic(p_attempt_id)` | Idempotent; kết thúc sớm được. Ghi `report`, upsert `skill_estimates (source 'diagnostic')` chỉ cho kỹ năng đã ước lượng; không đổi lộ trình |
