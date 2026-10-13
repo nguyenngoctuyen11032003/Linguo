@@ -2,7 +2,7 @@ import { randomUUID } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { expect, type Page } from '@playwright/test';
-import { DEFAULT_RUBRIC, gradeResponse, type ExerciseResponse, type GradeInput } from '@linguo/shared';
+import { DEFAULT_RUBRIC, gradeResponse, sessionPlanSchema, type ExerciseResponse, type GradeInput } from '@linguo/shared';
 
 export const SUPABASE_URL = 'https://e2e.invalid';
 export const USER_ID = '11111111-1111-4111-8111-111111111111';
@@ -1075,6 +1075,189 @@ function createAiBackend(opts: AiMockOptions = {}) {
   };
 }
 
+// ---- session planner backend (spec 6): BEGIN ---------------------------------------------------------------------
+
+export interface SessionMockOptions {
+  /** Today's session already on the server (planned/in_progress/completed). Ids are filled in when missing. */
+  session?: Row | null;
+  /** Rows served by session_recap. */
+  recap?: Row[];
+  /** Today's goal in minutes (default: the path's weekly_minutes for today). */
+  goalMinutes?: number;
+}
+
+/** Stateful stand-in for get_session_inputs / save_session_plan / get_today_session / … / session_recap. */
+function createSessionBackend(paths: Array<Record<string, unknown>>, opts: SessionMockOptions = {}) {
+  const sessions: Row[] = [];
+  const calls: Array<[string, Row]> = [];
+  const isOpen = (s: Row) => s.status === 'planned' || s.status === 'in_progress';
+  const today = () => localDate();
+  const pathOf = (id: unknown) => paths.find((p) => p.id === id && p.status !== 'archived');
+  const goal = (path: Record<string, unknown>) => {
+    if (opts.goalMinutes !== undefined) return opts.goalMinutes;
+    const weekly = (path.weekly_minutes as number[] | undefined) ?? [];
+    const monday0 = (new Date(`${today()}T00:00:00Z`).getUTCDay() + 6) % 7;
+    return weekly[monday0] ?? 0;
+  };
+  const studiedSeconds = (pathId: unknown) =>
+    sessions
+      .filter((s) => s.path_id === pathId && s.local_date === today())
+      .reduce((sum, s) => sum + (s.plan.activities as Row[]).reduce((n, a) => n + Number(a.seconds_spent), 0), 0);
+
+  if (opts.session && paths[0]) {
+    sessions.push({
+      id: randomUUID(),
+      path_id: paths[0].id,
+      local_date: today(),
+      status: 'planned',
+      minutes_planned: opts.session.plan?.minutes ?? 30,
+      created_at: new Date().toISOString(),
+      started_at: null,
+      completed_at: null,
+      ...opts.session,
+    });
+  }
+
+  const latest = (pathId: unknown) =>
+    sessions.filter((s) => s.path_id === pathId && s.local_date === today() && s.status !== 'abandoned').at(-1) ?? null;
+  const copy = (s: Row) => structuredClone(s);
+
+  function inputs(path: Record<string, unknown>) {
+    const lessons = BUNDLE.lessons
+      .filter((l) => l.status === 'published' && l.language_code === path.language_code)
+      .map((l) => ({ lesson: l, unit: BUNDLE.units.find((u) => u.id === l.unit_id)! }))
+      .sort((a, b) => a.unit.order_index - b.unit.order_index || a.lesson.order_index - b.lesson.order_index)
+      .slice(0, 5);
+    return {
+      path_id: path.id,
+      language_code: path.language_code,
+      local_date: today(),
+      daily_goal_minutes: goal(path),
+      studied_seconds_today: studiedSeconds(path.id),
+      due_count: 4,
+      overdue_count: 1,
+      new_card_count: 2,
+      next_lessons: lessons.map(({ lesson, unit }) => ({
+        lesson_id: lesson.id,
+        title_vi: lesson.title.vi,
+        estimated_minutes: lesson.estimated_minutes,
+        skills: lesson.skills,
+        run_status: 'not_started',
+        unit_order: unit.order_index,
+        lesson_order: lesson.order_index,
+      })),
+      skills: [{ skill: 'grammar', level_code: String(path.current_level), confidence: 'low', recent_accuracy: 0.58 }],
+      days_since_last_study: 1,
+    };
+  }
+
+  function save(b: Row) {
+    const path = pathOf(b.p_path_id);
+    if (!path) return rpcError('path_not_found');
+    const parsed = sessionPlanSchema.safeParse(b.p_plan);
+    if (!parsed.success) return rpcError('invalid_plan');
+    const open = sessions.find((s) => s.path_id === path.id && s.local_date === today() && isOpen(s));
+    if (open && !b.p_replace) return { json: copy(open) };
+    if (open) open.status = 'abandoned';
+    const row: Row = {
+      id: randomUUID(),
+      path_id: path.id,
+      local_date: today(),
+      status: 'planned',
+      minutes_planned: parsed.data.minutes,
+      plan: parsed.data,
+      created_at: new Date().toISOString(),
+      started_at: null,
+      completed_at: null,
+    };
+    sessions.push(row);
+    return { json: copy(row) };
+  }
+
+  function openSession(id: unknown): { session: Row; refused: null } | { session: null; refused: { status: number; json: unknown } } {
+    const s = sessions.find((x) => x.id === id);
+    if (!s) return { session: null, refused: rpcError('session_not_found') };
+    if (!isOpen(s)) return { session: null, refused: rpcError('session_closed') };
+    return { session: s, refused: null };
+  }
+
+  function update(b: Row) {
+    const { session: s, refused } = openSession(b.p_session_id);
+    if (!s) return refused;
+    const item = (s.plan.activities as Row[]).find((a) => a.id === b.p_item_id);
+    if (!item) return rpcError('item_not_found');
+    item.status = b.p_status;
+    item.seconds_spent = Number(item.seconds_spent) + Math.min(7200, Math.max(0, Number(b.p_seconds)));
+    if (s.status === 'planned') Object.assign(s, { status: 'in_progress', started_at: new Date().toISOString() });
+    if ((s.plan.activities as Row[]).every((a) => a.status !== 'pending')) Object.assign(s, { status: 'completed', completed_at: new Date().toISOString() });
+    return { json: copy(s) };
+  }
+
+  function reorder(b: Row) {
+    const { session: s, refused } = openSession(b.p_session_id);
+    if (!s) return refused;
+    const order = b.p_order as string[];
+    const activities = s.plan.activities as Row[];
+    const ids = activities.map((a) => a.id as string);
+    if (order.length !== ids.length || [...order].sort().join() !== [...ids].sort().join()) return rpcError('invalid_order');
+    s.plan.activities = order.map((id) => activities.find((a) => a.id === id)!);
+    return { json: copy(s) };
+  }
+
+  function finish(b: Row) {
+    const { session: s, refused } = openSession(b.p_session_id);
+    if (!s) return refused;
+    Object.assign(s, { status: b.p_status, completed_at: new Date().toISOString() });
+    return { json: copy(s) };
+  }
+
+  function handle(pathname: string, b: Row): { status?: number; json: unknown } | null {
+    const name = pathname.replace('/rest/v1/rpc/', '');
+    switch (pathname) {
+      case '/rest/v1/rpc/get_session_inputs': {
+        calls.push([name, b]);
+        const path = pathOf(b.p_path_id);
+        return path ? { json: inputs(path) } : rpcError('path_not_found');
+      }
+      case '/rest/v1/rpc/save_session_plan':
+        calls.push([name, b]);
+        return save(b);
+      case '/rest/v1/rpc/get_today_session': {
+        calls.push([name, b]);
+        const path = pathOf(b.p_path_id);
+        if (!path) return rpcError('path_not_found');
+        const s = latest(path.id);
+        return { json: { session: s ? copy(s) : null, studied_seconds_today: studiedSeconds(path.id), daily_goal_minutes: goal(path) } };
+      }
+      case '/rest/v1/rpc/update_session_item':
+        calls.push([name, b]);
+        return update(b);
+      case '/rest/v1/rpc/reorder_session':
+        calls.push([name, b]);
+        return reorder(b);
+      case '/rest/v1/rpc/finish_session':
+        calls.push([name, b]);
+        return finish(b);
+      case '/rest/v1/rpc/session_recap': {
+        calls.push([name, b]);
+        const s = sessions.find((x) => x.id === b.p_session_id);
+        return s ? { json: opts.recap ?? [] } : rpcError('session_not_found');
+      }
+    }
+    return null;
+  }
+
+  return {
+    handle,
+    controls: {
+      calls: (name?: string) => calls.filter(([n]) => !name || n === name).map(([n, b]) => [n, structuredClone(b)] as [string, Row]),
+      sessions: () => sessions.map(copy),
+    },
+  };
+}
+
+// ---- session planner backend (spec 6): END -----------------------------------------------------------------------
+
 interface MockOptions {
   /** AI tutor function and RPCs (spec 5). */
   ai?: AiMockOptions;
@@ -1087,6 +1270,8 @@ interface MockOptions {
   paths?: Array<Record<string, unknown>>;
   /** Review cards (spec 3); defaults to 4 cards due today on every path. */
   reviews?: ReviewMockOptions;
+  /** Session planner RPCs (spec 6). */
+  session?: SessionMockOptions;
 }
 
 /**
@@ -1100,6 +1285,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
   const reviews = createReviewBackend(paths, opts.reviews);
   const diagnostic = createDiagnosticBackend(paths, opts.diagnostic);
   const ai = createAiBackend(opts.ai);
+  const studySessions = createSessionBackend(paths, opts.session); // spec 6
 
   await page.route(`${SUPABASE_URL}/**`, async (route) => {
     const url = new URL(route.request().url());
@@ -1167,7 +1353,8 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
         ? (lessons.handle(url.pathname, body()) ??
           reviews.handle(url.pathname, body()) ??
           diagnostic.handle(url.pathname, body()) ??
-          ai.handle(url.pathname, body()))
+          ai.handle(url.pathname, body()) ??
+          studySessions.handle(url.pathname, body()))
         : null;
     if (lessonReply) {
       if (lessonReply.status === 204) return route.fulfill({ status: 204, body: '' });
@@ -1182,6 +1369,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
     postponeCalls: reviews.postponeCalls,
     diagnosticAttempts: diagnostic.attempts,
     ai: ai.controls,
+    session: studySessions.controls,
     paths: () => paths.map((p) => ({ ...p })),
   };
 }
