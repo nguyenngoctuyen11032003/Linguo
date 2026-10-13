@@ -84,8 +84,9 @@ export function result(overrides: Partial<SubmitResult> = {}): SubmitResult {
 }
 
 export function attempt(exerciseId: string, overrides: Partial<LessonAttempt> = {}): LessonAttempt {
-  const { replayed: _replayed, ...base } = result();
-  return { ...base, exercise_id: exerciseId, after_reveal: false, created_at: '2026-10-13T08:00:00Z', ...overrides };
+  const base: Partial<SubmitResult> = result();
+  delete base.replayed;
+  return { ...(base as Omit<SubmitResult, 'replayed'>), exercise_id: exerciseId, after_reveal: false, created_at: '2026-10-13T08:00:00Z', ...overrides };
 }
 
 let keySeq = 0;

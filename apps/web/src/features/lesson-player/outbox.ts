@@ -55,7 +55,7 @@ export function createOutbox(userId: string, storage: Storage | null = defaultSt
   const key = outboxKey(userId);
 
   const read = (): OutboxEntry[] => {
-    let raw: string | null = null;
+    let raw: string | null;
     try {
       raw = storage?.getItem(key) ?? null;
     } catch {

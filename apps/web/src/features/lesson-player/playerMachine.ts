@@ -86,10 +86,29 @@ function withQueue(state: PlayerState, queue: string[]): PlayerState {
   return { ...state, run, steps, stepIndex: clamp(state.stepIndex, steps) };
 }
 
-function toAttempt(exerciseId: string, result: SubmitResult, previous: readonly LessonAttempt[]): LessonAttempt {
-  const { replayed: _replayed, ...rest } = result;
+type ResultFields = Omit<SubmitResult, 'replayed'>;
+
+/** The grading fields shared by a submit result and a stored attempt. */
+function resultFields(r: ResultFields): ResultFields {
   return {
-    ...rest,
+    attempt_id: r.attempt_id,
+    attempt_no: r.attempt_no,
+    verdict: r.verdict,
+    is_correct: r.is_correct,
+    score: r.score,
+    error_tags: r.error_tags,
+    feedback_vi: r.feedback_vi,
+    revealed: r.revealed,
+    display_answer: r.display_answer,
+    explanation: r.explanation,
+    final: r.final,
+    requeued: r.requeued,
+  };
+}
+
+function toAttempt(exerciseId: string, result: SubmitResult, previous: readonly LessonAttempt[]): LessonAttempt {
+  return {
+    ...resultFields(result),
     exercise_id: exerciseId,
     // The server decides; locally an attempt after a revealing one is the same rule (spec 2 §5.5).
     after_reveal: previous.some((a) => a.exercise_id === exerciseId && a.revealed),
@@ -147,8 +166,7 @@ export function playerReducer(state: PlayerState, action: PlayerAction): PlayerS
 }
 
 function asResult(attempt: LessonAttempt): SubmitResult {
-  const { exercise_id: _e, after_reveal: _a, created_at: _c, ...rest } = attempt;
-  return { ...rest, replayed: false };
+  return { ...resultFields(attempt), replayed: false };
 }
 
 /**
