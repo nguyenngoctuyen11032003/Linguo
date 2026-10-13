@@ -82,14 +82,16 @@ uuid null → `learning_paths(id)` on delete set null. Thêm vào column-level G
 
 Tất cả: `language plpgsql`, `security definer`, `set search_path = ''`, dùng `auth.uid()` (raise `42501` nếu null), `revoke execute … from public, anon; grant execute … to authenticated`. Lỗi nghiệp vụ dùng `raise exception using errcode = 'P0001', message = '<code>'` với các mã:
 
-`not_authenticated`, `path_exists_for_language`, `invalid_language`, `invalid_goal_for_language`, `invalid_level`, `target_not_above_current`, `invalid_schedule`, `target_date_in_past`, `target_date_too_far`, `invalid_start_point`, `target_not_allowed_for_goal`, `path_not_found`, `invalid_status_transition`.
+`not_authenticated`, `path_exists_for_language`, `invalid_language`, `invalid_goal_for_language`, `invalid_level`, `target_not_above_current`, `invalid_schedule`, `target_date_in_past`, `target_date_too_far`, `invalid_start_point`, `target_not_allowed_for_goal`, `path_not_found`, `invalid_status_transition`, và `invalid_date` (chỉ `estimate_learning_path`, khi có `p_target_date` nhưng thiếu `p_today`).
+
+`create_learning_path`, `set_current_learning_path` và `set_learning_path_status` khoá hàng `profiles` của user (`for update`) ngay sau kiểm tra đăng nhập để tuần tự hoá các thay đổi path hiện tại.
 
 | Hàm | Hành vi |
 |---|---|
 | `create_learning_path(p_language text, p_start_point text, p_goal_type text, p_current_level text, p_target_level text, p_weekly_minutes smallint[], p_target_date date default null)` returns `learning_paths` | Validate; tính `estimate` bằng `public.estimate_learning_path(...)`; insert path; insert 6 `skill_estimates` (`level_code = current_level`, `self_reported`, `self_report`); đặt `profiles.current_learning_path_id` = path mới |
 | `set_current_learning_path(p_id uuid)` returns void | Path phải thuộc user và `status <> 'archived'` |
-| `update_learning_path_plan(p_id uuid, p_goal_type text, p_target_level text, p_weekly_minutes smallint[], p_target_date date default null)` returns `learning_paths` | Validate như trên; tính lại `estimate` |
-| `set_learning_path_status(p_id uuid, p_status text)` returns `learning_paths` | Chuyển hợp lệ: active↔paused, active/paused→archived, active→completed. Lưu trữ path đang là "current" → chuyển current sang path còn lại (nếu có) hoặc null |
+| `update_learning_path_plan(p_id uuid, p_goal_type text, p_target_level text, p_weekly_minutes smallint[], p_target_date date default null)` returns `learning_paths` | Validate như trên; tính lại `estimate`. Bỏ trống `p_target_date` (null) = xoá hạn chót (không có deadline) |
+| `set_learning_path_status(p_id uuid, p_status text)` returns `learning_paths` | Chuyển hợp lệ: active↔paused, active/paused/completed→archived, active→completed. Lưu trữ path đang là "current" → chuyển current sang path còn lại (nếu có) hoặc null |
 | `estimate_learning_path(p_language, p_current_level, p_target_level, p_weekly_minutes, p_target_date, p_today date)` returns jsonb | `stable`, `security invoker`; thuần tính toán (mục 5); grant cho `authenticated` |
 
 Giới hạn: `target_date` trong `[today, today + 3650 ngày]` (theo `profiles.timezone`).

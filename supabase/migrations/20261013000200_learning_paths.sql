@@ -54,7 +54,7 @@ create table public.learning_paths (
     (language_code = 'en' and goal_type in ('foundation', 'daily_communication', 'work_it', 'reading_docs', 'cefr'))
     or (language_code = 'ko' and goal_type in ('hangul_basics', 'communication', 'topik_i', 'topik_ii', 'skill_focus'))
   ),
-  constraint learning_paths_weekly_minutes_shape check (coalesce(array_ndims(weekly_minutes), 0) = 1 and array_length(weekly_minutes, 1) = 7),
+  constraint learning_paths_weekly_minutes_shape check (coalesce(array_ndims(weekly_minutes), 0) = 1 and array_length(weekly_minutes, 1) = 7 and 0 <= all (weekly_minutes) and 720 >= all (weekly_minutes)),
   constraint learning_paths_current_level_fk foreign key (language_code, current_level) references public.level_reference_hours (language_code, level_code),
   constraint learning_paths_target_level_fk foreign key (language_code, target_level) references public.level_reference_hours (language_code, level_code)
 );
@@ -81,8 +81,12 @@ create table public.skill_estimates (
   unique (learning_path_id, skill, source)
 );
 
+comment on column public.skill_estimates.level_code is 'Level code within the path''s language. Validated by the RPCs; there is no composite FK because this table has no language column.';
+
 alter table public.profiles
   add column current_learning_path_id uuid references public.learning_paths (id) on delete set null;
+
+create index profiles_current_learning_path_id_idx on public.profiles (current_learning_path_id);
 
 -- ---------------------------------------------------------------------------
 -- RLS and privileges
@@ -193,6 +197,9 @@ declare
   v_suggested_minutes integer;
   v_suggested_date date;
 begin
+  if p_target_date is not null and p_today is null then
+    raise exception using errcode = 'P0001', message = 'invalid_date';
+  end if;
   select cumulative_hours into v_cur from public.level_reference_hours where language_code = p_language and level_code = p_current_level;
   select cumulative_hours into v_tgt from public.level_reference_hours where language_code = p_language and level_code = p_target_level;
   if v_cur is null or v_tgt is null then
@@ -263,6 +270,7 @@ begin
   if v_uid is null then
     raise exception using errcode = '42501', message = 'not_authenticated';
   end if;
+  perform 1 from public.profiles where id = v_uid for update;
   if p_start_point is null or p_start_point not in ('new', 'some', 'rusty', 'confident', 'unsure') then
     raise exception using errcode = 'P0001', message = 'invalid_start_point';
   end if;
@@ -302,7 +310,8 @@ begin
   if v_uid is null then
     raise exception using errcode = '42501', message = 'not_authenticated';
   end if;
-  if not exists (select 1 from public.learning_paths where id = p_id and user_id = v_uid and status <> 'archived') then
+  perform 1 from public.profiles where id = v_uid for update;
+  if not exists (select 1 from public.learning_paths where id = p_id and user_id = v_uid and status <> 'archived' for share) then
     raise exception using errcode = 'P0001', message = 'path_not_found';
   end if;
   update public.profiles set current_learning_path_id = p_id where id = v_uid;
@@ -347,6 +356,8 @@ begin
 end;
 $$;
 
+comment on function public.update_learning_path_plan(uuid, text, text, smallint[], date) is 'Replaces the plan of an active or paused path. Omitting p_target_date (null) clears the deadline: null means no deadline.';
+
 create or replace function public.set_learning_path_status(p_id uuid, p_status text)
 returns public.learning_paths
 language plpgsql
@@ -361,6 +372,7 @@ begin
   if v_uid is null then
     raise exception using errcode = '42501', message = 'not_authenticated';
   end if;
+  perform 1 from public.profiles where id = v_uid for update;
   select * into v_path from public.learning_paths where id = p_id and user_id = v_uid for update;
   if not found then
     raise exception using errcode = 'P0001', message = 'path_not_found';
@@ -368,6 +380,7 @@ begin
   if not (
     (v_path.status = 'active' and p_status in ('paused', 'completed', 'archived'))
     or (v_path.status = 'paused' and p_status in ('active', 'archived'))
+    or (v_path.status = 'completed' and p_status = 'archived')
   ) then
     raise exception using errcode = 'P0001', message = 'invalid_status_transition';
   end if;
@@ -378,7 +391,7 @@ begin
     select id into v_next
     from public.learning_paths
     where user_id = v_uid and status <> 'archived'
-    order by updated_at desc, created_at desc
+    order by (status = 'active') desc, (status = 'paused') desc, updated_at desc, created_at desc
     limit 1;
     update public.profiles set current_learning_path_id = v_next where id = v_uid;
   end if;
