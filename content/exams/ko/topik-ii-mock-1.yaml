@@ -1,0 +1,518 @@
+# DEMO — chưa kiểm duyệt
+# Bài luyện mô phỏng TOPIK II do Linguo tự soạn (nguồn src:linguo-demo). Không phải đề thi chính thức,
+# không chép đề thật. Số liệu trong câu viết luận là số liệu giả định, chỉ để luyện viết.
+schema_version: 1
+demo: true
+language: ko
+form:
+  key: ko:exam:topik-ii-mock-1
+  family: topik_ii
+  title_vi: TOPIK II — Bài luyện mô phỏng số 1
+  description_vi: >-
+    Bài luyện mô phỏng rút gọn theo cấu trúc TOPIK II (cấp 3–6): 8 câu nghe, 10 câu đọc và 3 câu viết
+    (2 câu điền câu, 1 bài viết ngắn 200–300 ký tự). Nội dung do Linguo tự soạn, không phải đề thi chính thức;
+    điểm quy đổi chỉ để tham khảo, bài viết luận không được chấm tự động.
+  level_from: topik3
+  level_to: topik6
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 20
+    reading: 25
+    writing: 20
+  scoring:
+    verified: false
+    source_note_vi: >-
+      Thang điểm ghi theo cấu trúc TOPIK II tại thời điểm soạn: nghe, đọc, viết mỗi phần 100; cấp 3 từ 120, cấp 4 từ 150,
+      cấp 5 từ 190, cấp 6 từ 230 trên tổng 300. Chưa đối chiếu với quy chế hiện hành; bài viết luận không được tính điểm.
+    section_max:
+      listening: 100
+      reading: 100
+      writing: 100
+    bands:
+      - { level_code: topik3, min_total: 120 }
+      - { level_code: topik4, min_total: 150 }
+      - { level_code: topik5, min_total: 190 }
+      - { level_code: topik6, min_total: 230 }
+    pass_ratio: null
+questions:
+  # ============================== NGHE (듣기) ==============================
+  - key: ko:examq:topik-ii-m1-l01
+    section: listening
+    kind: mcq
+    question_type: topik_ii_listen_next
+    level_code: topik3
+    points: 2
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn câu người phụ nữ có thể nói tiếp.
+      stem: 다음을 듣고 여자가 이어서 할 말로 가장 알맞은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        여자: 이번 주 금요일 회식에 민준 씨도 올 거죠?
+        남자: 가고 싶은데 그날 부산으로 출장을 가게 됐어요.
+      options:
+        - { id: a, text: "아쉽네요. 다음에는 꼭 같이 가요.", lang: ko }
+        - { id: b, text: "그럼 금요일에 회식에서 봐요.", lang: ko }
+        - { id: c, text: "출장 준비를 도와줘서 고마워요.", lang: ko }
+        - { id: d, text: "부산에 가 본 적이 없어요?", lang: ko }
+    answer: a
+    explanation:
+      vi: "Người nam nói không đi được vì phải đi công tác Busan (-게 됐어요: hoàn cảnh bắt buộc), nên người nữ sẽ tỏ ra tiếc và hẹn lần sau. Phương án b sai vì người nam đã từ chối, không thể “gặp ở buổi liên hoan thứ Sáu”."
+
+  - key: ko:examq:topik-ii-m1-l02
+    section: listening
+    kind: mcq
+    question_type: topik_ii_listen_next
+    level_code: topik3
+    points: 2
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn câu người đàn ông có thể nói tiếp.
+      stem: 다음을 듣고 남자가 이어서 할 말로 가장 알맞은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        남자: 그저께 주문한 노트북이 아직도 안 왔어요.
+        여자: 그래요? 배송 조회는 해 봤어요?
+      options:
+        - { id: a, text: "네, 지금 노트북을 사러 가려고요.", lang: ko }
+        - { id: b, text: "아니요, 아직요. 지금 바로 확인해 볼게요.", lang: ko }
+        - { id: c, text: "노트북이 생각보다 가벼워서 좋아요.", lang: ko }
+        - { id: d, text: "택배를 벌써 보냈어요.", lang: ko }
+    answer: b
+    explanation:
+      vi: "Người nữ hỏi đã tra cứu tình trạng giao hàng (배송 조회) chưa, nên câu tiếp theo hợp lý là “chưa, tôi kiểm tra ngay”. Phương án c sai vì máy tính chưa giao tới, người nam không thể nhận xét máy nhẹ."
+
+  - key: ko:examq:topik-ii-m1-l03
+    section: listening
+    kind: mcq
+    question_type: topik_ii_listen_action
+    level_code: topik3
+    points: 2
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn việc người phụ nữ sẽ làm ngay sau đó.
+      stem: 다음을 듣고 여자가 이어서 할 행동으로 가장 알맞은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        남자: 오후 세 시 회의 말이에요, 회의실은 예약했어요?
+        여자: 아, 깜빡했어요. 지금 바로 할게요.
+        남자: 그럼 회의 자료는 제가 복사해 둘게요.
+        여자: 네, 고마워요.
+      options:
+        - { id: a, text: "회의실을 예약한다.", lang: ko }
+        - { id: b, text: "회의 자료를 복사한다.", lang: ko }
+        - { id: c, text: "회의에 참석한다.", lang: ko }
+        - { id: d, text: "남자에게 전화를 건다.", lang: ko }
+    answer: a
+    explanation:
+      vi: "Người nữ quên đặt phòng họp và nói “지금 바로 할게요” (tôi làm ngay), nên việc tiếp theo là đặt phòng. Phương án b là bẫy: việc photo tài liệu do người nam nhận làm (제가 복사해 둘게요)."
+
+  - key: ko:examq:topik-ii-m1-l04
+    section: listening
+    kind: mcq
+    question_type: topik_ii_listen_action
+    level_code: topik4
+    points: 2
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn việc người phụ nữ sẽ làm ngay sau đó.
+      stem: 다음을 듣고 여자가 이어서 할 행동으로 가장 알맞은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        여자: 이 셔츠를 교환하고 싶은데요. 사이즈가 좀 작아서요.
+        남자: 영수증 가지고 오셨어요?
+        여자: 집에 두고 왔는데, 카드로 계산했어요.
+        남자: 그럼 결제하신 카드를 보여 주시겠어요? 카드로 구매 내역을 확인해 드릴게요.
+      options:
+        - { id: a, text: "결제한 카드를 보여 준다.", lang: ko }
+        - { id: b, text: "영수증을 가지러 집에 간다.", lang: ko }
+        - { id: c, text: "더 작은 셔츠를 고른다.", lang: ko }
+        - { id: d, text: "카드로 셔츠값을 계산한다.", lang: ko }
+    answer: a
+    explanation:
+      vi: "Nhân viên nói có thể kiểm tra lịch sử mua bằng thẻ và đề nghị cho xem thẻ đã thanh toán, nên người nữ sẽ đưa thẻ. Phương án b sai vì không cần về nhà lấy hoá đơn nữa; phương án c sai vì áo đang chật, người nữ cần cỡ lớn hơn."
+
+  - key: ko:examq:topik-ii-m1-l05
+    section: listening
+    kind: mcq
+    question_type: topik_ii_listen_detail
+    level_code: topik4
+    points: 2
+    prompt:
+      instruction_vi: Nghe thông báo và chọn câu đúng với nội dung đã nghe.
+      stem: 다음을 듣고 들은 내용과 같은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        남자: 이번 달부터 우리 구청에서는 주말마다 어린이를 위한 무료 요리 교실을 엽니다. 초등학생이면 누구나 참여할 수 있지만, 한 번에 열다섯 명까지만 받습니다. 신청은 구청 홈페이지에서 하시면 되고, 요리 재료는 구청에서 모두 준비합니다.
+      options:
+        - { id: a, text: "요리 교실은 평일에 열린다.", lang: ko }
+        - { id: b, text: "참가자는 재료를 가지고 와야 한다.", lang: ko }
+        - { id: c, text: "요리 교실에 참가하려면 돈을 내야 한다.", lang: ko }
+        - { id: d, text: "한 번에 참여할 수 있는 인원이 정해져 있다.", lang: ko }
+    answer: d
+    explanation:
+      vi: "Thông báo nói mỗi buổi chỉ nhận tối đa 15 em (열다섯 명까지만), tức là số người tham gia có giới hạn. Phương án b là bẫy vì có nhắc tới nguyên liệu, nhưng nguyên liệu do quận chuẩn bị (구청에서 모두 준비합니다)."
+
+  - key: ko:examq:topik-ii-m1-l06
+    section: listening
+    kind: mcq
+    question_type: topik_ii_listen_detail
+    level_code: topik4
+    points: 2
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn câu đúng với nội dung đã nghe.
+      stem: 다음을 듣고 들은 내용과 같은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        여자: 요즘 회사까지 자전거로 다닌다면서요?
+        남자: 네, 지난달부터요. 처음에는 좀 힘들었는데 이제는 아침에 운동도 되고 좋아요.
+        여자: 비 오는 날에는 어떻게 해요?
+        남자: 그런 날은 지하철을 타요.
+      options:
+        - { id: a, text: "남자는 비가 와도 자전거를 탄다.", lang: ko }
+        - { id: b, text: "남자는 지난달부터 자전거로 출근한다.", lang: ko }
+        - { id: c, text: "남자는 자전거 타는 것이 아직도 힘들다.", lang: ko }
+        - { id: d, text: "여자는 남자와 함께 자전거를 탄다.", lang: ko }
+    answer: b
+    explanation:
+      vi: "Người nam xác nhận đi làm bằng xe đạp “từ tháng trước” (지난달부터), nên câu b đúng. Câu c là bẫy: anh chỉ thấy mệt lúc đầu (처음에는), còn bây giờ thấy tốt vì được tập thể dục buổi sáng."
+
+  - key: ko:examq:topik-ii-m1-l07
+    section: listening
+    kind: mcq
+    question_type: topik_ii_listen_main_idea
+    level_code: topik4
+    points: 2
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn suy nghĩ chính của người đàn ông.
+      stem: 다음을 듣고 남자의 중심 생각으로 가장 알맞은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        여자: 요즘은 책을 휴대폰으로 읽는 사람이 많더라고요.
+        남자: 편하긴 하죠. 그래도 저는 종이책이 더 좋아요. 종이책으로 읽어야 내용이 머릿속에 오래 남는 것 같거든요.
+        여자: 그래도 들고 다니기에는 무겁잖아요.
+        남자: 조금 무거워도 집중해서 읽으려면 종이책이 낫다고 생각해요.
+      options:
+        - { id: a, text: "휴대폰으로 책을 읽는 것이 더 편리하다.", lang: ko }
+        - { id: b, text: "집중해서 읽으려면 종이책이 더 좋다.", lang: ko }
+        - { id: c, text: "무거운 책은 들고 다니지 않는 것이 좋다.", lang: ko }
+        - { id: d, text: "책을 많이 읽는 사람이 늘어나야 한다.", lang: ko }
+    answer: b
+    explanation:
+      vi: "Câu cuối của người nam nêu rõ quan điểm: muốn đọc tập trung thì sách giấy tốt hơn (종이책이 낫다고 생각해요). Phương án a là bẫy vì anh có thừa nhận “편하긴 하죠” (tiện thì có tiện), nhưng -긴 하지만/그래도 chỉ là nhượng bộ trước khi nói ý chính."
+
+  - key: ko:examq:topik-ii-m1-l08
+    section: listening
+    kind: mcq
+    question_type: topik_ii_listen_main_idea
+    level_code: topik5
+    points: 2
+    prompt:
+      instruction_vi: Nghe đoạn nói và chọn suy nghĩ chính của người đàn ông.
+      stem: 다음을 듣고 남자의 중심 생각으로 가장 알맞은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        남자: 요즘 회의를 줄이자는 이야기가 많은데요. 저는 회의의 수보다 회의 방식이 더 문제라고 봅니다. 목적 없이 모여서 이야기만 하다가 끝나는 회의는 줄여야겠지만, 미리 자료를 공유하고 결정할 내용을 분명히 해 두면 짧은 회의도 충분히 효과적일 수 있습니다.
+      options:
+        - { id: a, text: "회의는 될 수 있으면 없애야 한다.", lang: ko }
+        - { id: b, text: "회의의 효과는 진행 방식에 따라 달라진다.", lang: ko }
+        - { id: c, text: "회의 자료는 회의가 끝난 후에 공유해야 한다.", lang: ko }
+        - { id: d, text: "회의 시간이 길수록 좋은 결정을 할 수 있다.", lang: ko }
+    answer: b
+    explanation:
+      vi: "Người nam cho rằng vấn đề nằm ở cách họp chứ không phải số cuộc họp (회의의 수보다 회의 방식이 더 문제), nên ý chính là hiệu quả phụ thuộc vào cách tiến hành. Phương án a là bẫy: anh chỉ muốn bớt những cuộc họp không mục đích, không đề nghị bỏ họp."
+
+  # ============================== ĐỌC (읽기) ==============================
+  - key: ko:examq:topik-ii-m1-r01
+    section: reading
+    kind: mcq
+    question_type: topik_ii_read_blank
+    level_code: topik3
+    points: 2
+    prompt:
+      instruction_vi: Chọn ngữ pháp phù hợp nhất để điền vào chỗ trống ( ).
+      stem: ( )에 들어갈 가장 알맞은 것을 고르십시오.
+      stem_lang: ko
+      passage: 아침에 늦게 일어나는 ( ) 수업에 지각했다.
+      options:
+        - { id: a, text: "바람에", lang: ko }
+        - { id: b, text: "덕분에", lang: ko }
+        - { id: c, text: "대신에", lang: ko }
+        - { id: d, text: "김에", lang: ko }
+    answer: a
+    explanation:
+      vi: "-는 바람에 chỉ nguyên nhân dẫn đến kết quả xấu ngoài ý muốn (dậy muộn → đi học muộn). 덕분에 cũng chỉ nguyên nhân nhưng dùng cho kết quả tốt (“nhờ”), nên không hợp với 지각했다."
+
+  - key: ko:examq:topik-ii-m1-r02
+    section: reading
+    kind: mcq
+    question_type: topik_ii_read_blank
+    level_code: topik3
+    points: 2
+    prompt:
+      instruction_vi: Chọn ngữ pháp phù hợp nhất để điền vào chỗ trống ( ).
+      stem: ( )에 들어갈 가장 알맞은 것을 고르십시오.
+      stem_lang: ko
+      passage: 내일 비가 ( ) 등산은 예정대로 갈 거예요.
+      options:
+        - { id: a, text: "오더라도", lang: ko }
+        - { id: b, text: "와서", lang: ko }
+        - { id: c, text: "오니까", lang: ko }
+        - { id: d, text: "오려고", lang: ko }
+    answer: a
+    explanation:
+      vi: "예정대로 (vẫn theo kế hoạch) cho thấy vế sau trái với điều người ta chờ đợi, nên cần -더라도 (“dù… thì vẫn”). 와서 và 오니까 nêu lý do, sẽ thành “vì trời mưa nên vẫn đi leo núi”, vô lý."
+
+  - key: ko:examq:topik-ii-m1-r03
+    section: reading
+    kind: mcq
+    question_type: topik_ii_read_similar
+    level_code: topik3
+    points: 2
+    prompt:
+      instruction_vi: Chọn cách diễn đạt có nghĩa gần nhất với phần trong ngoặc vuông [ ].
+      stem: '[ ] 안의 부분과 의미가 가장 비슷한 것을 고르십시오.'
+      stem_lang: ko
+      passage: 우체국에 [가는 김에] 은행에도 들렀다.
+      options:
+        - { id: a, text: "가는 대신에", lang: ko }
+        - { id: b, text: "가는 길에", lang: ko }
+        - { id: c, text: "가기 위해서", lang: ko }
+        - { id: d, text: "가는 바람에", lang: ko }
+    answer: b
+    explanation:
+      vi: "-는 김에 nghĩa là “nhân tiện làm việc này thì làm luôn việc kia”, gần nghĩa nhất với -는 길에 (“trên đường đi… ghé luôn”). 가는 대신에 là bẫy vì nghĩa là “thay vì đi”, tức là không đến bưu điện nữa."
+
+  - key: ko:examq:topik-ii-m1-r04
+    section: reading
+    kind: mcq
+    question_type: topik_ii_read_similar
+    level_code: topik4
+    points: 2
+    prompt:
+      instruction_vi: Chọn cách diễn đạt có nghĩa gần nhất với phần trong ngoặc vuông [ ].
+      stem: '[ ] 안의 부분과 의미가 가장 비슷한 것을 고르십시오.'
+      stem_lang: ko
+      passage: 이 식당은 음식이 [맛있을 뿐만 아니라] 값도 싸다.
+      options:
+        - { id: a, text: "맛있을뿐더러", lang: ko }
+        - { id: b, text: "맛있는 대신에", lang: ko }
+        - { id: c, text: "맛있기는 하지만", lang: ko }
+        - { id: d, text: "맛있을 테니까", lang: ko }
+    answer: a
+    explanation:
+      vi: "-(으)ㄹ 뿐만 아니라 và -(으)ㄹ뿐더러 đều nghĩa là “không những… mà còn”, cộng thêm một ưu điểm. 맛있기는 하지만 là bẫy vì nó tạo ý đối lập (“ngon thì ngon nhưng…”), trái với ý khen cả hai mặt."
+
+  - key: ko:examq:topik-ii-m1-r05
+    section: reading
+    kind: mcq
+    question_type: topik_ii_read_topic
+    level_code: topik3
+    points: 2
+    prompt:
+      instruction_vi: Đọc quảng cáo hoặc thông báo và chọn nội dung nó nói tới.
+      stem: 다음은 무엇에 대한 글인지 고르십시오.
+      stem_lang: ko
+      passage: |-
+        귀에 쏙, 소리는 선명하게!
+        한 번 충전으로 하루 종일 음악을 즐기세요.
+      options:
+        - { id: a, text: "무선 이어폰", lang: ko }
+        - { id: b, text: "전기밥솥", lang: ko }
+        - { id: c, text: "운동화", lang: ko }
+        - { id: d, text: "여행 가방", lang: ko }
+    answer: a
+    explanation:
+      vi: "귀에 쏙 (vừa khít tai), 소리 (âm thanh), 충전 (sạc pin) và 음악 (âm nhạc) đều chỉ tai nghe không dây. 전기밥솥 (nồi cơm điện) cũng dùng điện nhưng không liên quan đến tai hay âm nhạc."
+
+  - key: ko:examq:topik-ii-m1-r06
+    section: reading
+    kind: mcq
+    question_type: topik_ii_read_topic
+    level_code: topik3
+    points: 2
+    prompt:
+      instruction_vi: Đọc quảng cáo hoặc thông báo và chọn nội dung nó nói tới.
+      stem: 다음은 무엇에 대한 글인지 고르십시오.
+      stem_lang: ko
+      passage: |-
+        다 쓴 건전지는 일반 쓰레기와 함께 버리지 마세요.
+        아파트 1층 입구에 있는 수거함에 넣어 주세요.
+      options:
+        - { id: a, text: "분리배출 안내", lang: ko }
+        - { id: b, text: "제품 설명", lang: ko }
+        - { id: c, text: "이사 안내", lang: ko }
+        - { id: d, text: "판매 장소", lang: ko }
+    answer: a
+    explanation:
+      vi: "Thông báo hướng dẫn không vứt pin đã dùng chung với rác thường mà bỏ vào thùng thu gom riêng, tức là hướng dẫn phân loại rác (분리배출 안내). 제품 설명 là bẫy vì có nhắc đến pin (건전지), nhưng văn bản không giới thiệu sản phẩm."
+
+  - key: ko:examq:topik-ii-m1-r07
+    section: reading
+    kind: mcq
+    question_type: topik_ii_read_detail
+    level_code: topik4
+    points: 2
+    prompt:
+      instruction_vi: Đọc đoạn văn và chọn câu đúng với nội dung.
+      stem: 다음 글의 내용과 같은 것을 고르십시오.
+      stem_lang: ko
+      passage: 한 도시가 다음 달부터 평일에 한해 지하철 막차 시간을 새벽 1시로 30분 늦춘다고 밝혔다. 주말과 공휴일에는 지금처럼 자정에 운행을 마친다. 시는 늦은 시간에 귀가하는 시민들의 불편을 줄이기 위한 조치라고 설명했다.
+      options:
+        - { id: a, text: "주말에도 막차 시간이 늦어진다.", lang: ko }
+        - { id: b, text: "평일에는 새벽 1시까지 지하철을 탈 수 있게 된다.", lang: ko }
+        - { id: c, text: "막차 시간은 이번 달부터 바뀐다.", lang: ko }
+        - { id: d, text: "공휴일에는 새벽 1시까지 지하철이 다닌다.", lang: ko }
+    answer: b
+    explanation:
+      vi: "평일에 한해 (chỉ ngày thường) chuyến cuối được lùi đến 1 giờ sáng, nên câu b đúng. Câu a và d sai vì cuối tuần và ngày lễ vẫn dừng lúc nửa đêm (지금처럼 자정에); câu c sai vì thay đổi bắt đầu từ tháng sau (다음 달부터)."
+
+  - key: ko:examq:topik-ii-m1-r08
+    section: reading
+    kind: mcq
+    question_type: topik_ii_read_detail
+    level_code: topik4
+    points: 2
+    prompt:
+      instruction_vi: Đọc đoạn văn và chọn câu đúng với nội dung.
+      stem: 다음 글의 내용과 같은 것을 고르십시오.
+      stem_lang: ko
+      passage: 김민지 씨는 회사를 그만두고 고향인 제주도로 돌아가 작은 빵집을 열었다. 처음에는 손님이 거의 없었지만, 제주에서 난 귤로 만든 빵이 인터넷에서 알려지면서 지금은 아침마다 줄을 서야 살 수 있을 정도가 되었다.
+      options:
+        - { id: a, text: "김민지 씨는 지금도 회사에 다닌다.", lang: ko }
+        - { id: b, text: "빵집은 문을 연 직후부터 손님이 많았다.", lang: ko }
+        - { id: c, text: "이 빵집의 빵은 인터넷으로만 판다.", lang: ko }
+        - { id: d, text: "귤로 만든 빵이 알려진 뒤 손님이 늘었다.", lang: ko }
+    answer: d
+    explanation:
+      vi: "-(으)면서 ở đây nối nguyên nhân với sự thay đổi: bánh làm từ quýt Jeju nổi tiếng trên mạng, từ đó khách phải xếp hàng mỗi sáng. Câu c là bẫy: bánh nổi tiếng trên mạng (인터넷에서 알려지다), không có nghĩa là chỉ bán qua mạng."
+
+  - key: ko:examq:topik-ii-m1-r09
+    section: reading
+    kind: mcq
+    question_type: topik_ii_read_title
+    level_code: topik5
+    points: 2
+    prompt:
+      instruction_vi: Đọc tiêu đề báo và chọn câu giải thích đúng nhất.
+      stem: 다음 신문 기사의 제목을 가장 잘 설명한 것을 고르십시오.
+      stem_lang: ko
+      passage: 주말 고속도로 '거북이걸음', 귀성 차량 몰려
+      options:
+        - { id: a, text: "주말에 고향에 가는 차가 많아 고속도로에서 차들이 천천히 움직였다.", lang: ko }
+        - { id: b, text: "주말에 고속도로에서 거북이가 발견되어 차들이 멈췄다.", lang: ko }
+        - { id: c, text: "고향에 가는 사람이 줄어 주말 고속도로가 한산했다.", lang: ko }
+        - { id: d, text: "고속도로 공사 때문에 주말에 차가 다닐 수 없었다.", lang: ko }
+    answer: a
+    explanation:
+      vi: "'거북이걸음' (bước rùa) là cách nói ẩn dụ cho xe chạy rất chậm, còn 귀성 차량 몰려 là xe về quê dồn lại đông. Phương án b hiểu theo nghĩa đen là có con rùa trên đường, đây là bẫy thường gặp với tiêu đề báo."
+
+  - key: ko:examq:topik-ii-m1-r10
+    section: reading
+    kind: mcq
+    question_type: topik_ii_read_title
+    level_code: topik5
+    points: 2
+    prompt:
+      instruction_vi: Đọc tiêu đề báo và chọn câu giải thích đúng nhất.
+      stem: 다음 신문 기사의 제목을 가장 잘 설명한 것을 고르십시오.
+      stem_lang: ko
+      passage: 신제품 출시 첫날 '불티', 온라인 주문 한때 마비
+      options:
+        - { id: a, text: "새 제품이 첫날부터 잘 팔려서 온라인 주문이 잠시 되지 않았다.", lang: ko }
+        - { id: b, text: "새 제품에서 불이 나서 첫날 판매가 중단되었다.", lang: ko }
+        - { id: c, text: "첫날 판매가 부진해서 온라인 판매를 멈췄다.", lang: ko }
+        - { id: d, text: "온라인 주문 시스템을 새로 만들어 첫날 공개했다.", lang: ko }
+    answer: a
+    explanation:
+      vi: "불티나다 (bán chạy như tôm tươi) là thành ngữ, còn 한때 마비 là hệ thống bị tê liệt một lúc vì quá nhiều đơn. Phương án b là bẫy hiểu theo nghĩa đen của 불 (lửa); phương án c ngược nghĩa vì sản phẩm bán rất chạy."
+
+  # ============================== VIẾT (쓰기) ==============================
+  - key: ko:examq:topik-ii-m1-w01
+    section: writing
+    kind: short_text
+    question_type: topik_ii_write_51
+    level_code: topik3
+    points: 10
+    prompt:
+      instruction_vi: >-
+        Đọc văn bản và viết phần phù hợp vào chỗ ㉠. Chỉ viết phần cần điền, dùng đuôi câu trang trọng -습니다 giống văn bản,
+        viết cách chữ đúng chính tả.
+      stem: 다음 글의 ㉠에 들어갈 말을 쓰십시오.
+      stem_lang: ko
+      passage: |-
+        제목: 노트북을 찾습니다
+        어제 오후 3시쯤 도서관 2층 열람실에 노트북을 ( ㉠ ).
+        검은색 노트북이고 뒷면에 고양이 스티커가 붙어 있습니다.
+        보신 분은 도서관 안내 데스크에 맡겨 주시면 감사하겠습니다.
+    answer:
+      - 두고 왔습니다
+      - 놓고 왔습니다
+      - 두고 나왔습니다
+      - 놓고 나왔습니다
+      - 잃어버렸습니다
+    explanation:
+      vi: "Văn bản là thông báo tìm đồ thất lạc, nên ㉠ cần nói “tôi đã để quên laptop ở phòng đọc”: 두고 왔습니다 / 놓고 왔습니다 (hoặc 잃어버렸습니다). Phải dùng thì quá khứ và đuôi -습니다 giống các câu còn lại; viết “두고 와요” hay “두고 갔어요” bị trừ điểm vì sai văn phong hoặc sai góc nhìn (người viết đã rời khỏi thư viện)."
+
+  - key: ko:examq:topik-ii-m1-w02
+    section: writing
+    kind: short_text
+    question_type: topik_ii_write_52
+    level_code: topik4
+    points: 10
+    prompt:
+      instruction_vi: >-
+        Đọc đoạn văn và viết phần phù hợp vào chỗ ㉠. Chỉ viết phần cần điền, theo văn viết (-ㄴ다), viết cách chữ đúng chính tả.
+      stem: 다음 글의 ㉠에 들어갈 말을 쓰십시오.
+      stem_lang: ko
+      passage: 사람들은 보통 잠을 많이 자면 피로가 풀린다고 생각한다. 그러나 너무 오래 자면 오히려 몸이 더 무겁게 느껴질 수 있다. 따라서 피로를 풀기 위해서는 무조건 오래 자는 것보다 ( ㉠ ) 더 중요하다.
+    answer:
+      - 적당히 자는 것이
+      - 적당한 시간 동안 자는 것이
+      - 적당한 시간만큼 자는 것이
+      - 알맞은 시간만큼 자는 것이
+      - 알맞게 자는 것이
+    explanation:
+      vi: "Câu có cấu trúc “A보다 B가 더 중요하다”: vì A là “ngủ thật lâu”, B phải là ý đối lập “ngủ vừa đủ”, viết cùng dạng -는 것이 như 자는 것보다. Đáp án kiểu “충분히 자는 것이” sai ý vì đoạn văn vừa nói ngủ quá nhiều không tốt; quên trợ từ 이 (viết “적당히 자는 것”) cũng làm câu không đúng ngữ pháp."
+
+  - key: ko:examq:topik-ii-m1-w03
+    section: writing
+    kind: essay
+    question_type: topik_ii_write_53
+    level_code: topik4
+    points: 30
+    prompt:
+      instruction_vi: >-
+        Viết một đoạn văn 200–300 ký tự (tính cả khoảng trắng) mô tả kết quả khảo sát dưới đây. Dùng văn viết (-ㄴ다/-았다),
+        không viết tiêu đề, không thêm ý kiến cá nhân ngoài số liệu. Số liệu là giả định để luyện tập.
+      stem: 다음은 '20대의 여가 활동'에 대한 조사 결과이다. 이 내용을 200~300자의 글로 쓰십시오. 단, 글의 제목은 쓰지 마십시오.
+      stem_lang: ko
+      passage: |-
+        조사 기관: 한빛연구소 / 조사 대상: 20대 500명
+        • 영상 시청: 2015년 35% → 2025년 52%
+        • 운동: 2015년 20% → 2025년 28%
+        • 독서: 2015년 25% → 2025년 9%
+        • 변화의 원인: 스마트폰 보급, 건강에 대한 관심 증가
+      min_chars: 200
+      max_chars: 300
+    rubric:
+      - key: content
+        label_vi: Nội dung và nhiệm vụ
+        description_vi: Nêu đủ cơ quan và đối tượng khảo sát, xu hướng tăng/giảm của cả ba hoạt động với số liệu chính xác và hai nguyên nhân; không thêm ý kiến cá nhân.
+        max_points: 7
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Giới thiệu khảo sát → mô tả thay đổi → nêu nguyên nhân; dùng từ nối hợp lý (반면, 이러한 변화의 원인은…) để các câu liền mạch.
+        max_points: 7
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Dùng văn viết -ㄴ다/-았다 nhất quán, từ vựng mô tả biến đổi chính xác (증가하다, 감소하다, 차지하다), ngữ pháp và chính tả đúng, đủ 200–300 ký tự.
+        max_points: 16
+    sample_answer: >-
+      한빛연구소에서 20대 500명을 대상으로 여가 활동에 대해 조사하였다. 조사 결과 영상 시청은 2015년 35%에서 2025년 52%로 크게 증가하여 가장 높은 비율을 차지하였다. 운동도 20%에서 28%로 늘어났다. 반면 독서는 25%에서 9%로 크게 감소하였다. 이러한 변화가 나타난 원인은 스마트폰이 널리 보급되면서 영상을 쉽게 볼 수 있게 되었고, 건강에 대한 관심도 높아졌기 때문이라고 할 수 있다.
+    explanation:
+      vi: "Bài 53 kiểm tra khả năng mô tả số liệu bằng văn viết: giới thiệu khảo sát, nêu xu hướng tăng (증가하다, 늘다) và giảm (감소하다, 줄다) kèm con số, rồi nêu nguyên nhân. Lỗi hay gặp là dùng đuôi -아요/어요 của văn nói, chép lại gạch đầu dòng thay vì viết thành câu, hoặc thêm ý kiến riêng không có trong đề."
