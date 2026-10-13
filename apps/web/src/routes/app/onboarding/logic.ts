@@ -3,7 +3,6 @@ import {
   allowedTargets,
   isGoalForLanguage,
   isLevelOf,
-  isoToUtcDays,
   isTargetDateInRange,
   weeklyMinutesSchema,
   type LanguageCode,
@@ -72,15 +71,7 @@ export function isStepValid(step: StepNumber, data: OnboardingDraftData, ctx: St
   }
 }
 
-export const TARGET_DATE_PAST = 'Ngày mục tiêu đã qua.';
-export const TARGET_DATE_TOO_FAR = 'Ngày mục tiêu quá xa (tối đa 10 năm).';
-
-/** Why a resolved target date is unusable, or undefined when it is fine (or absent). */
-export function targetDateError(iso: string | null | undefined, today: string): string | undefined {
-  if (!iso || isTargetDateInRange(iso, today)) return undefined;
-  if (Number.isNaN(isoToUtcDays(iso))) return 'Ngày mục tiêu không hợp lệ.';
-  return iso < today ? TARGET_DATE_PAST : TARGET_DATE_TOO_FAR;
-}
+export { TARGET_DATE_PAST, TARGET_DATE_TOO_FAR, targetDateError } from '@/features/learning-paths/target-date';
 
 /**
  * The step to show for a requested step: the requested step (snapped to a visible one), or the first earlier
