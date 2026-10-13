@@ -5,7 +5,123 @@ export type Database = {
   
   "public": {
           Tables: {
-            "learning_paths": {
+            "attempts": {
+                  Row: {
+                    "after_reveal": boolean,"attempt_no": number,"client_at": string | null,"confidence": number | null,"content_version": number,"created_at": string,"error_tags": (string)[],"exercise_id": string,"exercise_type": string,"exercise_version": number,"feedback_json": NonNullable<Json>,"gave_up": boolean,"hint_count": number,"id": string,"idempotency_key": string,"is_correct": boolean,"learning_item_id": string | null,"learning_path_id": string,"lesson_id": string,"lesson_run_id": string,"modality": string | null,"normalized_response": string | null,"payload_hash": string,"response_json": NonNullable<Json>,"response_ms": number,"revealed": boolean,"score": number,"stage": string,"synced_late": boolean,"user_id": string,"verdict": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "after_reveal": boolean,"attempt_no": number,"client_at"?: string | null,"confidence"?: number | null,"content_version": number,"created_at"?: string,"error_tags"?: (string)[],"exercise_id": string,"exercise_type": string,"exercise_version": number,"feedback_json": NonNullable<Json>,"gave_up": boolean,"hint_count": number,"id"?: string,"idempotency_key": string,"is_correct": boolean,"learning_item_id"?: string | null,"learning_path_id": string,"lesson_id": string,"lesson_run_id": string,"modality"?: string | null,"normalized_response"?: string | null,"payload_hash": string,"response_json": NonNullable<Json>,"response_ms": number,"revealed": boolean,"score": number,"stage": string,"synced_late"?: boolean,"user_id": string,"verdict": string
+                  }
+                  Update: {
+                    "after_reveal"?: boolean,"attempt_no"?: number,"client_at"?: string | null,"confidence"?: number | null,"content_version"?: number,"created_at"?: string,"error_tags"?: (string)[],"exercise_id"?: string,"exercise_type"?: string,"exercise_version"?: number,"feedback_json"?: NonNullable<Json>,"gave_up"?: boolean,"hint_count"?: number,"id"?: string,"idempotency_key"?: string,"is_correct"?: boolean,"learning_item_id"?: string | null,"learning_path_id"?: string,"lesson_id"?: string,"lesson_run_id"?: string,"modality"?: string | null,"normalized_response"?: string | null,"payload_hash"?: string,"response_json"?: NonNullable<Json>,"response_ms"?: number,"revealed"?: boolean,"score"?: number,"stage"?: string,"synced_late"?: boolean,"user_id"?: string,"verdict"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "attempts_exercise_id_fkey"
+      columns: ["exercise_id"]
+isOneToOne: false
+      referencedRelation: "exercises"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "attempts_learning_item_id_fkey"
+      columns: ["learning_item_id"]
+isOneToOne: false
+      referencedRelation: "learning_items"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "attempts_learning_path_id_fkey"
+      columns: ["learning_path_id"]
+isOneToOne: false
+      referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "attempts_lesson_id_fkey"
+      columns: ["lesson_id"]
+isOneToOne: false
+      referencedRelation: "lessons"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "attempts_lesson_run_id_fkey"
+      columns: ["lesson_run_id"]
+isOneToOne: false
+      referencedRelation: "lesson_runs"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"content_sources": {
+                  Row: {
+                    "attribution_required": boolean,"author_or_org": string,"content_hash": string,"created_at": string,"id": string,"is_demo": boolean,"key": string,"license": string,"reviewed_at": string | null,"reviewed_by": string | null,"status": string,"title": string,"updated_at": string,"url": string | null,"version": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "attribution_required"?: boolean,"author_or_org": string,"content_hash": string,"created_at"?: string,"id": string,"is_demo"?: boolean,"key": string,"license": string,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"status"?: string,"title": string,"updated_at"?: string,"url"?: string | null,"version"?: number
+                  }
+                  Update: {
+                    "attribution_required"?: boolean,"author_or_org"?: string,"content_hash"?: string,"created_at"?: string,"id"?: string,"is_demo"?: boolean,"key"?: string,"license"?: string,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"status"?: string,"title"?: string,"updated_at"?: string,"url"?: string | null,"version"?: number
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"exercises": {
+                  Row: {
+                    "answer_lang": string,"content_hash": string,"created_at": string,"difficulty": number,"exercise_type": string,"id": string,"is_demo": boolean,"item_id": string | null,"key": string,"lesson_id": string,"order_index": number,"prompt": NonNullable<Json>,"reviewed_at": string | null,"reviewed_by": string | null,"source_id": string,"stage": string,"status": string,"updated_at": string,"version": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "answer_lang": string,"content_hash": string,"created_at"?: string,"difficulty": number,"exercise_type": string,"id": string,"is_demo"?: boolean,"item_id"?: string | null,"key": string,"lesson_id": string,"order_index": number,"prompt": NonNullable<Json>,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"source_id": string,"stage": string,"status"?: string,"updated_at"?: string,"version"?: number
+                  }
+                  Update: {
+                    "answer_lang"?: string,"content_hash"?: string,"created_at"?: string,"difficulty"?: number,"exercise_type"?: string,"id"?: string,"is_demo"?: boolean,"item_id"?: string | null,"key"?: string,"lesson_id"?: string,"order_index"?: number,"prompt"?: NonNullable<Json>,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"source_id"?: string,"stage"?: string,"status"?: string,"updated_at"?: string,"version"?: number
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "exercises_item_id_fkey"
+      columns: ["item_id"]
+isOneToOne: false
+      referencedRelation: "learning_items"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "exercises_lesson_id_fkey"
+      columns: ["lesson_id"]
+isOneToOne: false
+      referencedRelation: "lessons"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "exercises_source_id_fkey"
+      columns: ["source_id"]
+isOneToOne: false
+      referencedRelation: "content_sources"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"learning_items": {
+                  Row: {
+                    "audio_path": string | null,"back": NonNullable<Json>,"content_hash": string,"created_at": string,"difficulty": number,"front": NonNullable<Json>,"id": string,"is_demo": boolean,"item_type": string,"key": string,"language_code": string,"level_code": string,"reviewed_at": string | null,"reviewed_by": string | null,"skill_tags": (string)[],"source_id": string,"status": string,"updated_at": string,"version": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "audio_path"?: string | null,"back": NonNullable<Json>,"content_hash": string,"created_at"?: string,"difficulty": number,"front": NonNullable<Json>,"id": string,"is_demo"?: boolean,"item_type": string,"key": string,"language_code": string,"level_code": string,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"skill_tags"?: (string)[],"source_id": string,"status"?: string,"updated_at"?: string,"version"?: number
+                  }
+                  Update: {
+                    "audio_path"?: string | null,"back"?: NonNullable<Json>,"content_hash"?: string,"created_at"?: string,"difficulty"?: number,"front"?: NonNullable<Json>,"id"?: string,"is_demo"?: boolean,"item_type"?: string,"key"?: string,"language_code"?: string,"level_code"?: string,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"skill_tags"?: (string)[],"source_id"?: string,"status"?: string,"updated_at"?: string,"version"?: number
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "learning_items_level_fk"
+      columns: ["language_code","level_code"]
+isOneToOne: false
+      referencedRelation: "level_reference_hours"
+      referencedColumns: ["language_code","level_code"]
+    },{
+      foreignKeyName: "learning_items_source_id_fkey"
+      columns: ["source_id"]
+isOneToOne: false
+      referencedRelation: "content_sources"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"learning_paths": {
                   Row: {
                     "created_at": string,"current_level": string,"estimate": NonNullable<Json>,"goal_type": string,"id": string,"language_code": string,"start_point": string,"status": string,"target_date": string | null,"target_level": string,"updated_at": string,"user_id": string,"weekly_minutes": (number)[]
                   }
@@ -29,6 +145,116 @@ isOneToOne: false
 isOneToOne: false
       referencedRelation: "level_reference_hours"
       referencedColumns: ["language_code","level_code"]
+    }
+                  ]
+                },"lesson_items": {
+                  Row: {
+                    "item_id": string,"lesson_id": string,"position": number,"role": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "item_id": string,"lesson_id": string,"position": number,"role": string
+                  }
+                  Update: {
+                    "item_id"?: string,"lesson_id"?: string,"position"?: number,"role"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "lesson_items_item_id_fkey"
+      columns: ["item_id"]
+isOneToOne: false
+      referencedRelation: "learning_items"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "lesson_items_lesson_id_fkey"
+      columns: ["lesson_id"]
+isOneToOne: false
+      referencedRelation: "lessons"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"lesson_prerequisites": {
+                  Row: {
+                    "lesson_id": string,"prerequisite_lesson_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "lesson_id": string,"prerequisite_lesson_id": string
+                  }
+                  Update: {
+                    "lesson_id"?: string,"prerequisite_lesson_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "lesson_prerequisites_lesson_id_fkey"
+      columns: ["lesson_id"]
+isOneToOne: false
+      referencedRelation: "lessons"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "lesson_prerequisites_prerequisite_lesson_id_fkey"
+      columns: ["prerequisite_lesson_id"]
+isOneToOne: false
+      referencedRelation: "lessons"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"lesson_runs": {
+                  Row: {
+                    "completed_at": string | null,"content_version": number,"cursor": number,"id": string,"learning_path_id": string,"lesson_id": string,"next_review_at": string | null,"queue": (string)[],"started_at": string,"status": string,"summary_json": Json | null,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "completed_at"?: string | null,"content_version": number,"cursor"?: number,"id"?: string,"learning_path_id": string,"lesson_id": string,"next_review_at"?: string | null,"queue": (string)[],"started_at"?: string,"status"?: string,"summary_json"?: Json | null,"user_id": string
+                  }
+                  Update: {
+                    "completed_at"?: string | null,"content_version"?: number,"cursor"?: number,"id"?: string,"learning_path_id"?: string,"lesson_id"?: string,"next_review_at"?: string | null,"queue"?: (string)[],"started_at"?: string,"status"?: string,"summary_json"?: Json | null,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "lesson_runs_learning_path_id_fkey"
+      columns: ["learning_path_id"]
+isOneToOne: false
+      referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "lesson_runs_lesson_id_fkey"
+      columns: ["lesson_id"]
+isOneToOne: false
+      referencedRelation: "lessons"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"lessons": {
+                  Row: {
+                    "body": NonNullable<Json>,"content_hash": string,"content_version": number | null,"created_at": string,"estimated_minutes": number,"id": string,"is_demo": boolean,"key": string,"language_code": string,"level_code": string,"objectives": NonNullable<Json>,"order_index": number,"published_at": string | null,"reviewed_at": string | null,"reviewed_by": string | null,"skills": (string)[],"source_id": string,"status": string,"title": NonNullable<Json>,"unit_id": string,"updated_at": string,"version": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "body": NonNullable<Json>,"content_hash": string,"content_version"?: never,"created_at"?: string,"estimated_minutes": number,"id": string,"is_demo"?: boolean,"key": string,"language_code": string,"level_code": string,"objectives": NonNullable<Json>,"order_index": number,"published_at"?: string | null,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"skills": (string)[],"source_id": string,"status"?: string,"title": NonNullable<Json>,"unit_id": string,"updated_at"?: string,"version"?: number
+                  }
+                  Update: {
+                    "body"?: NonNullable<Json>,"content_hash"?: string,"content_version"?: never,"created_at"?: string,"estimated_minutes"?: number,"id"?: string,"is_demo"?: boolean,"key"?: string,"language_code"?: string,"level_code"?: string,"objectives"?: NonNullable<Json>,"order_index"?: number,"published_at"?: string | null,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"skills"?: (string)[],"source_id"?: string,"status"?: string,"title"?: NonNullable<Json>,"unit_id"?: string,"updated_at"?: string,"version"?: number
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "lessons_level_fk"
+      columns: ["language_code","level_code"]
+isOneToOne: false
+      referencedRelation: "level_reference_hours"
+      referencedColumns: ["language_code","level_code"]
+    },{
+      foreignKeyName: "lessons_source_id_fkey"
+      columns: ["source_id"]
+isOneToOne: false
+      referencedRelation: "content_sources"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "lessons_unit_id_fkey"
+      columns: ["unit_id"]
+isOneToOne: false
+      referencedRelation: "units"
+      referencedColumns: ["id"]
     }
                   ]
                 },"level_reference_hours": {
@@ -65,6 +291,38 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
+                },"programs": {
+                  Row: {
+                    "content_hash": string,"created_at": string,"description": NonNullable<Json>,"goal_types": (string)[],"id": string,"is_demo": boolean,"key": string,"kind": string,"language_code": string,"level_from": string,"level_to": string,"order_index": number,"reviewed_at": string | null,"reviewed_by": string | null,"source_id": string,"status": string,"title": NonNullable<Json>,"updated_at": string,"version": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "content_hash": string,"created_at"?: string,"description": NonNullable<Json>,"goal_types"?: (string)[],"id": string,"is_demo"?: boolean,"key": string,"kind": string,"language_code": string,"level_from": string,"level_to": string,"order_index": number,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"source_id": string,"status"?: string,"title": NonNullable<Json>,"updated_at"?: string,"version"?: number
+                  }
+                  Update: {
+                    "content_hash"?: string,"created_at"?: string,"description"?: NonNullable<Json>,"goal_types"?: (string)[],"id"?: string,"is_demo"?: boolean,"key"?: string,"kind"?: string,"language_code"?: string,"level_from"?: string,"level_to"?: string,"order_index"?: number,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"source_id"?: string,"status"?: string,"title"?: NonNullable<Json>,"updated_at"?: string,"version"?: number
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "programs_level_from_fk"
+      columns: ["language_code","level_from"]
+isOneToOne: false
+      referencedRelation: "level_reference_hours"
+      referencedColumns: ["language_code","level_code"]
+    },{
+      foreignKeyName: "programs_level_to_fk"
+      columns: ["language_code","level_to"]
+isOneToOne: false
+      referencedRelation: "level_reference_hours"
+      referencedColumns: ["language_code","level_code"]
+    },{
+      foreignKeyName: "programs_source_id_fkey"
+      columns: ["source_id"]
+isOneToOne: false
+      referencedRelation: "content_sources"
+      referencedColumns: ["id"]
+    }
+                  ]
                 },"skill_estimates": {
                   Row: {
                     "assessed_at": string,"confidence": string,"id": string,"learning_path_id": string,"level_code": string,"sample_size": number,"skill": string,"source": string
@@ -82,6 +340,32 @@ isOneToOne: false
       columns: ["learning_path_id"]
 isOneToOne: false
       referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"units": {
+                  Row: {
+                    "content_hash": string,"created_at": string,"id": string,"is_demo": boolean,"key": string,"order_index": number,"program_id": string,"reviewed_at": string | null,"reviewed_by": string | null,"source_id": string,"status": string,"title": NonNullable<Json>,"updated_at": string,"version": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "content_hash": string,"created_at"?: string,"id": string,"is_demo"?: boolean,"key": string,"order_index": number,"program_id": string,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"source_id": string,"status"?: string,"title": NonNullable<Json>,"updated_at"?: string,"version"?: number
+                  }
+                  Update: {
+                    "content_hash"?: string,"created_at"?: string,"id"?: string,"is_demo"?: boolean,"key"?: string,"order_index"?: number,"program_id"?: string,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"source_id"?: string,"status"?: string,"title"?: NonNullable<Json>,"updated_at"?: string,"version"?: number
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "units_program_id_fkey"
+      columns: ["program_id"]
+isOneToOne: false
+      referencedRelation: "programs"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "units_source_id_fkey"
+      columns: ["source_id"]
+isOneToOne: false
+      referencedRelation: "content_sources"
       referencedColumns: ["id"]
     }
                   ]
@@ -105,7 +389,10 @@ isOneToOne: false
             [_ in never]: never
           }
           Functions: {
-            "create_learning_path":
+            "complete_lesson":
+{ Args: { "p_run_id": string }; Returns: Json
+                           },
+"create_learning_path":
 { Args: { "p_current_level": string,"p_goal_type": string,"p_language": string,"p_start_point": string,"p_target_date"?: string,"p_target_level": string,"p_weekly_minutes": (number)[] }; Returns: {
               "created_at": string,
 "current_level": string,
@@ -130,11 +417,92 @@ isOneToOne: false
 "estimate_learning_path":
 { Args: { "p_current_level": string,"p_language": string,"p_target_date": string,"p_target_level": string,"p_today": string,"p_weekly_minutes": (number)[] }; Returns: Json
                            },
+"get_lesson":
+{ Args: { "p_lesson_id": string,"p_path_id": string }; Returns: Json
+                           },
+"grade_exercise":
+{ Args: { "p_answer": Json,"p_known_wrong": Json,"p_lang": string,"p_response": Json,"p_rubric": Json,"p_type": string }; Returns: Json
+                           },
+"grading_normalize":
+{ Args: { "p_lang": string,"p_rubric": Json,"p_text": string }; Returns: string
+                           },
+"grading_strip_diacritics":
+{ Args: { "p_text": string }; Returns: string
+                           },
+"grading_text":
+{ Args: { "p_accepted": Json,"p_known_wrong": Json,"p_lang": string,"p_rubric": Json,"p_text": string }; Returns: Json
+                           },
 "learning_path_validate":
 { Args: { "p_current_level": string,"p_goal_type": string,"p_language": string,"p_target_date": string,"p_target_level": string,"p_today": string,"p_weekly_minutes": (number)[] }; Returns: undefined
                            },
 "learning_user_today":
 { Args: { "p_user": string }; Returns: string
+                           },
+"lesson_for_path":
+{ Args: { "p_lesson": string,"p_path": string,"p_user": string }; Returns: {
+              "body": NonNullable<Json>,
+"content_hash": string,
+"content_version": number | null,
+"created_at": string,
+"estimated_minutes": number,
+"id": string,
+"is_demo": boolean,
+"key": string,
+"language_code": string,
+"level_code": string,
+"objectives": NonNullable<Json>,
+"order_index": number,
+"published_at": string | null,
+"reviewed_at": string | null,
+"reviewed_by": string | null,
+"skills": (string)[],
+"source_id": string,
+"status": string,
+"title": NonNullable<Json>,
+"unit_id": string,
+"updated_at": string,
+"version": number
+            }
+                          SetofOptions: {
+        from: "*"
+        to: "lessons"
+        isOneToOne: true
+        isSetofReturn: false
+      } },
+"lesson_response_valid":
+{ Args: { "p_response": Json,"p_type": string }; Returns: boolean
+                           },
+"lesson_run_json":
+{ Args: { "p_cursor": number,"p_id": string,"p_next_review_at": string,"p_queue": (string)[],"p_status": string,"p_summary": Json }; Returns: Json
+                           },
+"lesson_run_sync":
+{ Args: { "p_content_version": number,"p_lesson_id": string,"p_run_id": string }; Returns: {
+              "completed_at": string | null,
+"content_version": number,
+"cursor": number,
+"id": string,
+"learning_path_id": string,
+"lesson_id": string,
+"next_review_at": string | null,
+"queue": (string)[],
+"started_at": string,
+"status": string,
+"summary_json": Json | null,
+"user_id": string
+            }
+                          SetofOptions: {
+        from: "*"
+        to: "lesson_runs"
+        isOneToOne: true
+        isSetofReturn: false
+      } },
+"path_lessons":
+{ Args: { "p_path_id": string }; Returns: {
+              "estimated_minutes": number,"is_demo": boolean,"lesson_id": string,"lesson_key": string,"lesson_order": number,"level_code": string,"prerequisite_ids": (string)[],"prerequisites_met": boolean,"program_id": string,"program_title": Json,"run_status": string,"title": Json,"unit_id": string,"unit_order": number,"unit_title": Json
+            }[]
+                           },
+"save_lesson_cursor":
+{ Args: { "p_cursor": number,"p_run_id": string }; Returns: undefined
                            },
 "set_current_learning_path":
 { Args: { "p_id": string }; Returns: undefined
@@ -161,6 +529,12 @@ isOneToOne: false
         isOneToOne: true
         isSetofReturn: false
       } },
+"start_lesson":
+{ Args: { "p_lesson_id": string,"p_path_id": string }; Returns: Json
+                           },
+"submit_exercise":
+{ Args: { "p_client_at": string,"p_confidence": number,"p_exercise_id": string,"p_exercise_version": number,"p_hint_count": number,"p_idempotency_key": string,"p_response": Json,"p_response_ms": number,"p_run_id": string }; Returns: Json
+                           },
 "update_learning_path_plan":
 { Args: { "p_goal_type": string,"p_id": string,"p_target_date"?: string,"p_target_level": string,"p_weekly_minutes": (number)[] }; Returns: {
               "created_at": string,
