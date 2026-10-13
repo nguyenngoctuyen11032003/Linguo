@@ -10,15 +10,29 @@ const MESSAGES: Record<string, string> = {
   invalid_schedule: 'Lịch học không hợp lệ: mỗi ngày 0–720 phút và ít nhất một ngày học.',
   target_date_in_past: 'Ngày mục tiêu đã qua.',
   target_date_too_far: 'Ngày mục tiêu quá xa (tối đa 10 năm).',
+  invalid_date: 'Ngày không hợp lệ.',
   path_not_found: 'Không tìm thấy lộ trình.',
   invalid_status_transition: 'Không thể chuyển trạng thái lộ trình như vậy.',
 };
 
+const CODE_PATTERN = /^[a-z][a-z0-9]*(?:_[a-z0-9]+)+$/;
+
+/** A snake_case RPC message is the most specific code; otherwise fall back to the error's own `code` (e.g. a Postgres SQLSTATE). */
+function errorCode(error: object): string | null {
+  if ('message' in error && typeof error.message === 'string' && CODE_PATTERN.test(error.message)) return error.message;
+  if ('code' in error && typeof error.code === 'string' && error.code) return error.code;
+  return null;
+}
+
 export function learningPathErrorMessage(error: unknown): string {
   if (error instanceof TypeError) return 'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.';
-  if (error && typeof error === 'object' && 'message' in error && typeof error.message === 'string') {
-    const known = MESSAGES[error.message];
-    if (known) return known;
+  if (error && typeof error === 'object') {
+    if ('message' in error && typeof error.message === 'string') {
+      const known = MESSAGES[error.message];
+      if (known) return known;
+    }
+    const code = errorCode(error);
+    if (code) return `Đã có lỗi xảy ra (mã: ${code}). Vui lòng thử lại.`;
   }
   return 'Đã có lỗi xảy ra. Vui lòng thử lại.';
 }

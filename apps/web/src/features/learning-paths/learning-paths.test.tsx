@@ -116,7 +116,11 @@ describe('learningPathErrorMessage', () => {
   it('maps RPC codes, network errors and unknown errors', () => {
     expect(learningPathErrorMessage({ code: 'P0001', message: 'path_exists_for_language' })).toBe('Bạn đã có lộ trình cho ngôn ngữ này.');
     expect(learningPathErrorMessage(new TypeError('Failed to fetch'))).toBe('Không kết nối được máy chủ. Kiểm tra mạng và thử lại.');
+    expect(learningPathErrorMessage({ code: 'P0001', message: 'invalid_date' })).toBe('Ngày không hợp lệ.');
     expect(learningPathErrorMessage({ message: 'weird' })).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
+    expect(learningPathErrorMessage({ code: '42501', message: 'permission denied' })).toBe('Đã có lỗi xảy ra (mã: 42501). Vui lòng thử lại.');
+    expect(learningPathErrorMessage({ code: 'P0001', message: 'some_new_code' })).toBe('Đã có lỗi xảy ra (mã: some_new_code). Vui lòng thử lại.');
+    expect(learningPathErrorMessage(null)).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
   });
 });
 
