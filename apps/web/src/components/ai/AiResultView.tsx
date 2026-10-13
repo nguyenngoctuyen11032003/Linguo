@@ -1,0 +1,177 @@
+import { useState } from 'react';
+import { AlertTriangle, Check, Lightbulb, X } from 'lucide-react';
+import type { AiSuccess, AnalyzeErrorOutput, ExplainConceptOutput, GeneratePracticeOutput } from '@linguo/shared';
+import { cn } from '@/lib/cn';
+import { MarkdownLite } from './MarkdownLite';
+import { parseAiResult } from './parse';
+
+type Lang = 'en' | 'ko';
+
+function SectionTitle({ children }: { children: string }) {
+  return <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">{children}</h3>;
+}
+
+export function ExplainView({ data, language }: { data: ExplainConceptOutput; language: Lang }) {
+  return (
+    <div className="space-y-4 text-[15px] leading-relaxed">
+      {data.summary && <p className="text-[17px] font-semibold">{data.summary}</p>}
+      {data.uncertainty && (
+        <p className="flex items-start gap-2 rounded-2xl bg-warn/12 px-3 py-2 text-sm">
+          <AlertTriangle aria-hidden className="mt-0.5 size-4 shrink-0 text-warn" />
+          <span>
+            <strong>AI chưa chắc chắn:</strong> {data.uncertainty} Hãy đối chiếu với bài học.
+          </span>
+        </p>
+      )}
+      <MarkdownLite text={data.explanation_md} />
+      {data.examples.length > 0 && (
+        <section className="space-y-2">
+          <SectionTitle>Ví dụ</SectionTitle>
+          <ul className="space-y-2">
+            {data.examples.map((ex, i) => (
+              <li key={i} className="rounded-2xl border border-border px-3 py-2">
+                <span lang={language} className="block font-medium">
+                  {ex.target}
+                </span>
+                <span className="block text-muted">{ex.vi}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+      {data.common_mistakes.length > 0 && (
+        <section className="space-y-2">
+          <SectionTitle>Lỗi hay gặp</SectionTitle>
+          <ul className="list-disc space-y-1 pl-5">
+            {data.common_mistakes.map((m, i) => (
+              <li key={i}>{m}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </div>
+  );
+}
+
+const VERDICT: Record<AnalyzeErrorOutput['verdict'], { label: string; className: string }> = {
+  correct: { label: 'Câu trả lời đúng', className: 'bg-success/15 text-success-text' },
+  minor_issue: { label: 'Gần đúng', className: 'bg-warn/15 text-text' },
+  incorrect: { label: 'Chưa đúng', className: 'bg-error/12 text-error-text' },
+};
+
+export function AnalyzeView({ data, language }: { data: AnalyzeErrorOutput; language: Lang }) {
+  const verdict = VERDICT[data.verdict];
+  return (
+    <div className="space-y-4 text-[15px] leading-relaxed">
+      <p className="flex flex-wrap items-center gap-2">
+        <span className={cn('rounded-full px-3 py-1 text-sm font-semibold', verdict.className)}>{verdict.label}</span>
+        {data.error_type && <span className="text-sm text-muted">Loại lỗi: {data.error_type}</span>}
+      </p>
+      <MarkdownLite text={data.explanation_md} />
+      {data.corrected && (
+        <section className="space-y-1">
+          <SectionTitle>Câu đúng</SectionTitle>
+          <p lang={language} className="rounded-2xl border border-success/40 px-3 py-2 font-medium">
+            {data.corrected}
+          </p>
+        </section>
+      )}
+      {data.tip_vi && (
+        <p className="flex items-start gap-2 rounded-2xl bg-primary/10 px-3 py-2">
+          <Lightbulb aria-hidden className="mt-0.5 size-4 shrink-0 text-primary" />
+          <span>{data.tip_vi}</span>
+        </p>
+      )}
+    </div>
+  );
+}
+
+function PracticeItem({ item, index, language }: { item: GeneratePracticeOutput['items'][number]; index: number; language: Lang }) {
+  const [chosen, setChosen] = useState<number | null>(null);
+  const answered = chosen !== null;
+  const isCorrect = (option: string) => option.trim() === item.answer.trim();
+  const right = answered && isCorrect(item.options[chosen] ?? '');
+  return (
+    <li className="space-y-2 rounded-2xl border border-border p-3">
+      <p className="font-semibold">
+        <span className="text-muted">Câu {index + 1}. </span>
+        <span lang={language}>{item.question}</span>
+      </p>
+      <div role="group" aria-label={`Lựa chọn câu ${index + 1}`} className="grid gap-2">
+        {item.options.map((option, i) => {
+          const picked = chosen === i;
+          const correct = answered && isCorrect(option);
+          return (
+            <button
+              key={i}
+              type="button"
+              aria-pressed={picked}
+              disabled={answered}
+              onClick={() => setChosen(i)}
+              className={cn(
+                'flex min-h-12 w-full items-center gap-2 rounded-xl border px-3 py-2 text-left transition-colors',
+                'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 disabled:cursor-default',
+                correct ? 'border-success bg-success/10' : picked ? 'border-error bg-error/10' : 'border-border not-disabled:hover:bg-text/5',
+              )}
+            >
+              <span lang={language} className="min-w-0 flex-1 break-words">
+                {option}
+              </span>
+              {correct && (
+                <span className="inline-flex items-center gap-1 text-sm font-semibold text-success-text">
+                  <Check aria-hidden className="size-4" />
+                  Đáp án đúng
+                </span>
+              )}
+              {picked && !correct && (
+                <span className="inline-flex items-center gap-1 text-sm font-semibold text-error-text">
+                  <X aria-hidden className="size-4" />
+                  Bạn chọn
+                </span>
+              )}
+            </button>
+          );
+        })}
+      </div>
+      {answered && (
+        <div role="status" className="space-y-1 text-[15px]">
+          <p className={cn('font-semibold', right ? 'text-success-text' : 'text-error-text')}>
+            {right ? 'Chính xác!' : 'Chưa đúng.'}
+          </p>
+          <p>{item.explanation_vi}</p>
+        </div>
+      )}
+    </li>
+  );
+}
+
+/** Multiple-choice practice: each answer stays hidden until the learner picks an option. */
+export function PracticeView({ data, language }: { data: GeneratePracticeOutput; language: Lang }) {
+  return (
+    <ol className="space-y-3">
+      {data.items.map((item, i) => (
+        <PracticeItem key={i} item={item} index={i} language={language} />
+      ))}
+    </ol>
+  );
+}
+
+/** Renders any AI success; an answer that fails its schema shows a short error instead. */
+export function AiResultView({ result, language }: { result: AiSuccess; language: Lang }) {
+  const parsed = parseAiResult(result);
+  if (!parsed) {
+    return (
+      <p role="alert" className="text-[15px] text-error-text">
+        Không đọc được câu trả lời của AI. Vui lòng thử lại.
+      </p>
+    );
+  }
+  switch (parsed.task) {
+    case 'explain_concept':
+      return <ExplainView data={parsed.data} language={language} />;
+    case 'analyze_error':
+      return <AnalyzeView data={parsed.data} language={language} />;
+    case 'generate_practice':
+      return <PracticeView data={parsed.data} language={language} />;
+  }
+}
