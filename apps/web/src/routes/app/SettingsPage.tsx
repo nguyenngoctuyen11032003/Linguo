@@ -10,6 +10,7 @@ import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useToast } from '@/components/ui/Toast';
 import { useAuth } from '@/features/auth/AuthProvider';
+import { useOutboxSyncContext } from '@/features/lesson-player/OutboxSyncProvider';
 import { markLocalPreferenceEdit } from '@/features/preferences/local-edits';
 import { updatePreferences } from '@/features/preferences/service';
 import { useProfile } from '@/features/profile/ProfileProvider';
@@ -39,12 +40,16 @@ export function SettingsPage() {
   const motionPrefs = useMotionPrefs();
   const toast = useToast();
   const navigate = useNavigate();
+  const outbox = useOutboxSyncContext();
 
   const [displayName, setDisplayName] = useState('');
   const [timezone, setTimezone] = useState(DEFAULT_TIMEZONE);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [saving, setSaving] = useState(false);
   const [signingOut, setSigningOut] = useState(false);
+  /** Sign-out was asked while answers still wait in the outbox: they only sync once this user signs in here again. */
+  const [confirmSignOut, setConfirmSignOut] = useState(false);
+  const [syncing, setSyncing] = useState(false);
   const prefSeq = useRef(0);
   const prefQueue = useRef<Promise<void>>(Promise.resolve());
   const systemForcesMotion = motionPrefs.reduceMotion && !motionPrefs.userReduceMotion;
@@ -110,8 +115,23 @@ export function SettingsPage() {
     persistPreferences({ theme: theme.preference, reduceMotion: value });
   }
 
-  async function signOut() {
+  async function syncNow() {
+    if (syncing) return;
+    setSyncing(true);
+    try {
+      await outbox.flush();
+    } finally {
+      setSyncing(false);
+    }
+  }
+
+  async function signOut(force = false) {
     if (signingOut) return;
+    if (outbox.pendingCount > 0 && !force) {
+      setConfirmSignOut(true);
+      return;
+    }
+    setConfirmSignOut(false);
     setSigningOut(true);
     try {
       const auth = requireSupabase().auth;
@@ -263,7 +283,24 @@ export function SettingsPage() {
         </SolidCard>
       </section>
 
-      <Button variant="danger" block loading={signingOut} onClick={signOut}>
+      {confirmSignOut && outbox.pendingCount > 0 && (
+        <div role="alert" className="space-y-3 rounded-2xl bg-warn/15 px-4 py-3">
+          <p className="text-[15px]">
+            Còn {outbox.pendingCount} câu trả lời chưa đồng bộ lên máy chủ. Nếu đăng xuất bây giờ, chúng chỉ được gửi khi bạn
+            đăng nhập lại trên thiết bị này.
+          </p>
+          <div className="grid gap-2 sm:grid-cols-2">
+            <Button variant="primary" loading={syncing} onClick={() => void syncNow()}>
+              Đồng bộ ngay
+            </Button>
+            <Button variant="danger" loading={signingOut} onClick={() => void signOut(true)}>
+              Vẫn đăng xuất
+            </Button>
+          </div>
+        </div>
+      )}
+
+      <Button variant="danger" block loading={signingOut} onClick={() => void signOut()}>
         <LogOut aria-hidden className="size-5" />
         Đăng xuất
       </Button>

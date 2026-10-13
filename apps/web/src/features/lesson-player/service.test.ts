@@ -1,7 +1,8 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
+import { isNetworkError } from '@/lib/network-error';
 import { fakeClient } from '../../../tests/unit/fake-supabase';
 import { LESSON_ID, PATH_ID, RUN_ID, pathLesson, payload, result, run, submitArgs } from './lesson-fixtures';
-import { completeLesson, fetchPathLessons, getLesson, saveCursor, startLesson, submitExercise } from './service';
+import { LESSON_RPC_TIMEOUT_MS, completeLesson, fetchPathLessons, getLesson, saveCursor, startLesson, submitExercise } from './service';
 
 const COMPLETE = {
   accuracy_by_stage: { recognition: 1, recall: 0.5, application: null },
@@ -60,6 +61,36 @@ describe('lesson-player service', () => {
     const error = { message: 'lesson_not_found', code: 'P0001' };
     const client = fakeClient({}, { get_lesson: { data: null, error } });
     await expect(getLesson(client, LESSON_ID, PATH_ID)).rejects.toBe(error);
+  });
+
+  it('keeps the HTTP status on the thrown error so transient failures can be retried', async () => {
+    const error = { message: '<html>Bad gateway</html>', code: '' };
+    const client = { rpc: () => Promise.resolve({ data: null, error, status: 502 }) } as unknown as Parameters<typeof getLesson>[0];
+    await expect(getLesson(client, LESSON_ID, PATH_ID)).rejects.toMatchObject({ message: error.message, status: 502 });
+  });
+
+  it('abandons a lesson RPC after the timeout', async () => {
+    let signal: AbortSignal | null = null;
+    const timeout = vi.spyOn(AbortSignal, 'timeout');
+    const builder = {
+      abortSignal(s: AbortSignal) {
+        signal = s;
+        return Promise.resolve({ data: result(), error: null });
+      },
+    };
+    const client = { rpc: () => builder } as unknown as Parameters<typeof submitExercise>[0];
+    await submitExercise(client, submitArgs());
+    expect(timeout).toHaveBeenCalledWith(LESSON_RPC_TIMEOUT_MS);
+    expect(signal).toBeInstanceOf(AbortSignal);
+    timeout.mockRestore();
+  });
+
+  it('reports a timed-out RPC as a network failure', async () => {
+    // What postgrest-js resolves once the abort signal fires.
+    const error = { message: 'AbortError: signal timed out', details: '', hint: 'Request was aborted (timeout or manual cancellation)', code: '' };
+    const client = { rpc: () => ({ abortSignal: () => Promise.resolve({ data: null, error, status: 0 }) }) } as unknown as Parameters<typeof submitExercise>[0];
+    const thrown = await submitExercise(client, submitArgs()).catch((e: unknown) => e);
+    expect(isNetworkError(thrown)).toBe(true);
   });
 
   it('throws invalid_payload when the response does not match the contract', async () => {

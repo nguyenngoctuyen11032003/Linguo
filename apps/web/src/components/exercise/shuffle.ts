@@ -28,3 +28,16 @@ export function seededShuffle<T>(items: readonly T[], seed: string): T[] {
   }
   return out;
 }
+
+/**
+ * Seeded shuffle that never returns the authored order (when there are at least two items): word_bank tokens are
+ * written in answer order, so showing them unshuffled would give the answer away.
+ */
+export function seededShuffleAway<T>(items: readonly T[], seed: string): T[] {
+  if (items.length < 2) return [...items];
+  for (let attempt = 0; attempt < 8; attempt++) {
+    const out = seededShuffle(items, attempt === 0 ? seed : `${seed}#${attempt}`);
+    if (out.some((item, i) => item !== items[i])) return out;
+  }
+  return [...items].reverse();
+}

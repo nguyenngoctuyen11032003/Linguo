@@ -126,6 +126,8 @@ describe('LessonPage', () => {
     expect(frame).toHaveAttribute('data-exercise', EX1);
     expect(frame).toHaveAttribute('data-recheck', 'false');
     expect(run.exerciseState).toHaveBeenCalledWith(EX1, 0);
+    // The run seeds the word_bank order.
+    expect(mocks.frameProps.at(-1)).toMatchObject({ runId: run.runId });
     // Exercise steps bring their own action bar.
     expect(screen.queryByRole('button', { name: 'Tiếp tục' })).not.toBeInTheDocument();
     await userEvent.click(within(frame).getByRole('button', { name: 'Kiểm tra' }));
@@ -151,6 +153,34 @@ describe('LessonPage', () => {
     expect(screen.getByText('Còn 2 câu đang chờ đồng bộ')).toBeInTheDocument();
     expect(run.complete).not.toHaveBeenCalled();
     expect(screen.getByRole('button', { name: 'Tiếp tục' })).toBeDisabled();
+  });
+
+  it('summary lists unanswered exercises and jumps back to one with "Làm tiếp"', async () => {
+    const recheck = { kind: 'exercise' as const, exerciseId: EX1, stage: 'recognition' as const, recheck: true, queueIndex: 2 };
+    const steps = [...makeRun().steps.slice(0, 6), recheck, ...makeRun().steps.slice(6)];
+    const run = makeRun({ steps, stepIndex: 7, canComplete: false, unresolved: [5, 6] });
+    renderLesson(run);
+    expect(screen.getByRole('heading', { level: 1, name: 'Tóm tắt' })).toBeInTheDocument();
+    expect(screen.getByText('Còn 2 câu chưa có kết quả. Làm xong để hoàn thành bài học.')).toBeInTheDocument();
+    const list = screen.getByRole('list', { name: 'Câu chưa có kết quả' });
+    expect(within(list).getAllByRole('listitem').map((li) => li.firstChild?.textContent)).toEqual(['Câu 2', 'Câu 3 (làm lại)']);
+    await userEvent.click(within(list).getByRole('button', { name: 'Làm tiếp Câu 3 (làm lại)' }));
+    expect(run.goTo).toHaveBeenCalledWith(6);
+    expect(run.complete).not.toHaveBeenCalled();
+  });
+
+  it('offers "Học lại" on the summary of a completed lesson', async () => {
+    const run = makeRun({ stepIndex: 6, runStatus: 'completed', completeResult: COMPLETE_RESULT });
+    renderLesson(run);
+    expect(screen.getByText('Kết quả của bạn')).toBeInTheDocument();
+    expect(run.complete).not.toHaveBeenCalled();
+    await userEvent.click(screen.getByRole('button', { name: 'Học lại' }));
+    expect(run.restart).toHaveBeenCalledTimes(1);
+  });
+
+  it('has no "Học lại" while the run is in progress', () => {
+    renderLesson(makeRun({ stepIndex: 6, completeResult: COMPLETE_RESULT }));
+    expect(screen.queryByRole('button', { name: 'Học lại' })).not.toBeInTheDocument();
   });
 
   it('summary completes the lesson once on enter', async () => {

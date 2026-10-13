@@ -1,4 +1,4 @@
-import type { CompleteResult, LessonAttempt, LessonPayload, LessonRun, SubmitResult } from '@linguo/shared';
+import { completeResultSchema, type CompleteResult, type LessonAttempt, type LessonPayload, type LessonRun, type SubmitResult } from '@linguo/shared';
 import type { ExerciseUiState, LessonStep } from './types';
 
 // Spec 2 §7.2: the pure core of the lesson player. Steps follow PRD §6.2; exercise steps mirror the run queue
@@ -17,7 +17,10 @@ export function buildSteps(payload: LessonPayload, queue: readonly string[]): Le
   queue.forEach((exerciseId, queueIndex) => {
     const exercise = byId.get(exerciseId);
     if (!exercise) return; // unknown id (stale queue): skip rather than render a broken step
-    steps.push({ kind: 'exercise', exerciseId, stage: exercise.stage, recheck: queueIndex >= exercises.length, queueIndex });
+    // A re-check is a repeated id (as in attemptsFor); the queue was built at run start, so its length need not
+    // match the exercises published now.
+    const recheck = queue.indexOf(exerciseId) < queueIndex;
+    steps.push({ kind: 'exercise', exerciseId, stage: exercise.stage, recheck, queueIndex });
   });
   steps.push({ kind: 'summary' }, { kind: 'next_review' });
   return steps;
@@ -51,6 +54,10 @@ export type PlayerAction =
   | ({ type: 'failed' } & EntryRef)
   | ({ type: 'graded'; result: SubmitResult } & EntryRef)
   | { type: 'queueChanged'; queue: string[] }
+  /** These entries left the outbox without a result reaching this tab (another tab sent them, or they expired). */
+  | { type: 'outboxCleared'; entries: EntryRef[] }
+  /** Server attempts and queue of this run, refetched after `outboxCleared`. */
+  | { type: 'attemptsSynced'; attempts: LessonAttempt[]; queue: string[] }
   | { type: 'completed'; result: CompleteResult };
 
 export const initialPlayerState: PlayerState = {
@@ -116,6 +123,12 @@ function toAttempt(exerciseId: string, result: SubmitResult, previous: readonly 
   };
 }
 
+/** The summary complete_lesson stored on a completed run (same shape as its result), or null when unreadable. */
+function storedSummary(run: LessonRun): CompleteResult | null {
+  const parsed = completeResultSchema.safeParse({ next_review_at: run.next_review_at, ...run.summary });
+  return parsed.success ? parsed.data : null;
+}
+
 export function playerReducer(state: PlayerState, action: PlayerAction): PlayerState {
   switch (action.type) {
     case 'loaded': {
@@ -129,7 +142,7 @@ export function playerReducer(state: PlayerState, action: PlayerAction): PlayerS
         stepIndex: clamp(action.stepIndex, steps),
         attempts: action.payload.attempts,
         local,
-        completeResult: null,
+        completeResult: action.run.status === 'completed' ? storedSummary(action.run) : null,
       };
     }
     case 'goto':
@@ -156,6 +169,22 @@ export function playerReducer(state: PlayerState, action: PlayerAction): PlayerS
     }
     case 'queueChanged':
       return withQueue(state, action.queue);
+    case 'outboxCleared': {
+      let local = state.local;
+      for (const e of action.entries) {
+        const key = entryKey(e.exerciseId, e.queueIndex);
+        if (local[key] === 'pending_sync') local = withoutLocal(local, key);
+      }
+      return local === state.local ? state : { ...state, local };
+    }
+    case 'attemptsSynced': {
+      // The server list is the truth; keep local results it did not include yet (graded after the refetch started).
+      const known = new Set(action.attempts.map((a) => a.attempt_id));
+      const attempts = [...action.attempts, ...state.attempts.filter((a) => !known.has(a.attempt_id))];
+      // The queue only ever grows, so the longer one is the newer.
+      const queue = state.run && state.run.queue.length > action.queue.length ? state.run.queue : action.queue;
+      return withQueue({ ...state, attempts }, queue);
+    }
     case 'completed': {
       const run = state.run
         ? { ...state.run, status: 'completed' as const, next_review_at: action.result.next_review_at }
@@ -190,4 +219,17 @@ export function exerciseStateFor(state: PlayerState, exerciseId: string, queueIn
   if (local) return { status: local, attempts: own.length, lastResult };
   if (lastResult) return { status: 'graded', attempts: own.length, lastResult };
   return { status: 'idle', attempts: 0, lastResult: null };
+}
+
+/**
+ * Indexes of the exercise steps that still lack a final result (complete_lesson would answer `attempts_incomplete`).
+ * Entries submitting or waiting in the outbox are not listed: they block completion on their own.
+ */
+export function unresolvedSteps(state: PlayerState): number[] {
+  return state.steps.flatMap((step, index) => {
+    if (step.kind !== 'exercise') return [];
+    const { status, lastResult } = exerciseStateFor(state, step.exerciseId, step.queueIndex);
+    if (status === 'submitting' || status === 'pending_sync' || lastResult?.final) return [];
+    return [index];
+  });
 }

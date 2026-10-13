@@ -1,6 +1,6 @@
 import { LESSON_ERROR_CODES } from '@linguo/shared';
 import { describe, expect, it } from 'vitest';
-import { isNetworkError, lessonErrorMessage } from './error-map';
+import { isUnansweredError, lessonErrorMessage } from './error-map';
 
 const GENERIC = /^Đã có lỗi xảy ra/;
 
@@ -26,6 +26,10 @@ describe('lessonErrorMessage', () => {
     expect(lessonErrorMessage(new Error('invalid_payload'))).toBe('Dữ liệu bài học không hợp lệ. Vui lòng thử lại.');
   });
 
+  it('maps an outbox that cannot be written', () => {
+    expect(lessonErrorMessage(new Error('outbox_unavailable'))).toMatch(/^Không lưu được câu trả lời trên thiết bị/);
+  });
+
   it('maps network failures', () => {
     expect(lessonErrorMessage(new TypeError('Failed to fetch'))).toMatch(/^Không kết nối được máy chủ/);
     expect(lessonErrorMessage({ message: 'TypeError: fetch failed', code: '' })).toMatch(/^Không kết nối được máy chủ/);
@@ -38,22 +42,20 @@ describe('lessonErrorMessage', () => {
   });
 });
 
-describe('isNetworkError', () => {
-  it('detects fetch failures', () => {
-    expect(isNetworkError(new TypeError('Failed to fetch'))).toBe(true);
-    expect(isNetworkError(new Error('fetch failed'))).toBe(true);
-    // postgrest-js wraps a failed fetch into a plain error object with an empty code.
-    expect(isNetworkError({ message: 'TypeError: Failed to fetch', details: '', hint: '', code: '' })).toBe(true);
-    expect(isNetworkError({ message: 'FetchError: network down', code: '' })).toBe(true);
-    expect(isNetworkError({ message: 'AbortError: The operation was aborted', code: '' })).toBe(true);
-    expect(isNetworkError({ status: 0 })).toBe(true);
+describe('isUnansweredError', () => {
+  it('covers network failures, timeouts and server failures before grading', () => {
+    expect(isUnansweredError({ message: 'TypeError: Failed to fetch', code: '' })).toBe(true);
+    // postgrest-js resolves an aborted (timed out) request with status 0.
+    expect(isUnansweredError({ message: 'AbortError: signal timed out', code: '', status: 0 })).toBe(true);
+    expect(isUnansweredError({ message: '<html>Bad gateway</html>', code: '', status: 502 })).toBe(true);
+    expect(isUnansweredError({ message: 'boom', code: 'XX000', status: 500 })).toBe(true);
+    expect(isUnansweredError({ message: 'timeout', code: '', status: 408 })).toBe(true);
   });
 
-  it('does not flag server errors', () => {
-    expect(isNetworkError({ message: 'rate_limited', code: 'P0001' })).toBe(false);
-    expect(isNetworkError({ message: 'not_authenticated', code: '42501', status: 401 })).toBe(false);
-    expect(isNetworkError(new Error('invalid_payload'))).toBe(false);
-    expect(isNetworkError(null)).toBe(false);
-    expect(isNetworkError('offline')).toBe(false);
+  it('does not cover answers the server gave', () => {
+    expect(isUnansweredError({ message: 'rate_limited', code: 'P0001', status: 400 })).toBe(false);
+    expect(isUnansweredError({ message: 'not_authenticated', code: '42501', status: 401 })).toBe(false);
+    expect(isUnansweredError(new Error('invalid_payload'))).toBe(false);
+    expect(isUnansweredError(null)).toBe(false);
   });
 });

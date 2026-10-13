@@ -82,12 +82,12 @@ function FeedbackCard({
       {result.feedback_vi && <p className="mt-2 text-[16px]">{result.feedback_vi}</p>}
       {result.display_answer && (
         <p className="mt-3 text-[17px]">
-          <span className="block text-sm font-semibold text-muted">Đáp án</span>
+          <span className="block text-sm font-semibold text-text">Đáp án</span>
           <span className="font-semibold">{result.display_answer}</span>
         </p>
       )}
-      {result.explanation && <p className="mt-2 text-[16px] text-muted">{result.explanation.vi}</p>}
-      {canRetry && <p className="mt-3 text-sm text-muted">Bạn còn một lần thử. Thử lại hoặc xem đáp án.</p>}
+      {result.explanation && <p className="mt-2 text-[16px] text-text">{result.explanation.vi}</p>}
+      {canRetry && <p className="mt-3 text-sm text-text">Bạn còn một lần thử. Thử lại hoặc xem đáp án.</p>}
     </motion.div>
   );
 }

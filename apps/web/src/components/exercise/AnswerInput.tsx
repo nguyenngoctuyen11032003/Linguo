@@ -1,4 +1,4 @@
-import { forwardRef, useContext, useMemo, type InputHTMLAttributes, type KeyboardEvent } from 'react';
+import { forwardRef, useContext, useMemo, useRef, type InputHTMLAttributes, type KeyboardEvent } from 'react';
 import { RESPONSE_TEXT_MAX, type AnswerLang } from '@linguo/shared';
 import { cn } from '@/lib/cn';
 import { CompositionGateContext, createCompositionGate } from './compositionGate';
@@ -25,13 +25,20 @@ export const AnswerInput = forwardRef<HTMLInputElement, AnswerInputProps>(functi
   const shared = useContext(CompositionGateContext);
   const local = useMemo(() => createCompositionGate(), []);
   const gate = shared ?? local;
+  /** A submit request is waiting for the composition to settle: further Enters must not queue a second one. */
+  const queued = useRef(false);
 
   const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
     onKeyDown?.(e);
     if (e.key !== 'Enter' || e.defaultPrevented) return;
     if (e.nativeEvent.isComposing || e.keyCode === 229) return;
     e.preventDefault();
-    if (onSubmitRequest) gate.run(onSubmitRequest);
+    if (!onSubmitRequest || e.repeat || queued.current) return;
+    queued.current = true;
+    gate.run(() => {
+      queued.current = false;
+      onSubmitRequest();
+    });
   };
 
   return (

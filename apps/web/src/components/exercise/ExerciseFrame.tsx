@@ -29,6 +29,8 @@ export interface ExerciseFrameProps {
   exercise: PublicExercise;
   state: ExerciseUiState;
   recheck: boolean;
+  /** Run the exercise belongs to; seeds the word_bank order so it differs per run but survives reloads. */
+  runId?: string | null;
   onSubmit: (response: ExerciseResponse, meta: SubmitMeta) => void;
   /** Shown when `state.lastResult?.final` (and while an attempt waits for sync). */
   onContinue: () => void;
@@ -105,7 +107,7 @@ export function ExerciseFrame(props: ExerciseFrameProps) {
   return <ExerciseFrameInner key={`${props.exercise.id}:${props.exercise.version}:${props.recheck}`} {...props} />;
 }
 
-function ExerciseFrameInner({ exercise, state, recheck, onSubmit, onContinue }: ExerciseFrameProps) {
+function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onContinue }: ExerciseFrameProps) {
   const titleId = useId();
   const parsed = useMemo(() => parsePrompt(exercise), [exercise]);
   const gate = useMemo(() => createCompositionGate(), []);
@@ -116,6 +118,12 @@ function ExerciseFrameInner({ exercise, state, recheck, onSubmit, onContinue }: 
   const [submittedOptionId, setSubmittedOptionId] = useState<string | null>(null);
   const [retries, setRetries] = useState(0);
   const startRef = useRef(Date.now());
+  /**
+   * An answer was handed to onSubmit and the parent has not re-rendered yet: requests queued behind an IME
+   * composition run together with closures from before that render, so `busy` alone cannot stop a second send.
+   */
+  const sentRef = useRef(false);
+  const [sends, setSends] = useState(0);
   const bodyRef = useRef<HTMLDivElement>(null);
   const chipsRef = useRef<HTMLButtonElement>(null);
 
@@ -123,6 +131,12 @@ function ExerciseFrameInner({ exercise, state, recheck, onSubmit, onContinue }: 
     responseRef.current = next;
     setResponseState(next);
   };
+
+  const busyNow = state.status === 'submitting' || state.status === 'pending_sync';
+  // Re-render after every send (`sends`); once the parent is not busy (graded, failed, or ignored) allow the next one.
+  useEffect(() => {
+    if (!busyNow) sentRef.current = false;
+  }, [busyNow, sends, state.lastResult]);
 
   useEffect(() => {
     if (retries === 0) return;
@@ -159,7 +173,9 @@ function ExerciseFrameInner({ exercise, state, recheck, onSubmit, onContinue }: 
     recognition && (parsed.type === 'translate' || parsed.type === 'fill_blank') ? (parsed.prompt.hint_levels ?? []) : [];
 
   const send = (r: ExerciseResponse, confidence: Confidence | null) => {
-    if (busy) return;
+    if (busy || sentRef.current) return;
+    sentRef.current = true;
+    setSends((n) => n + 1);
     if ('option_id' in r) setSubmittedOptionId(r.option_id);
     onSubmit(r, { confidence, responseMs: Math.max(0, Math.round(Date.now() - startRef.current)), hintCount: hintsShown });
   };
@@ -233,6 +249,7 @@ function ExerciseFrameInner({ exercise, state, recheck, onSubmit, onContinue }: 
         <WordBankExercise
           prompt={parsed.prompt}
           lang={exercise.answer_lang}
+          seed={`${runId ?? ''}:${exercise.id}`}
           tokenIds={response && 'token_ids' in response ? response.token_ids : []}
           onChange={(ids) => setResponse(ids.length > 0 ? { token_ids: ids } : null)}
           disabled={locked}

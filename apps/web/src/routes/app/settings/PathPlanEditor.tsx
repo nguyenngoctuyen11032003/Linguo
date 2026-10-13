@@ -8,7 +8,6 @@ import {
   fieldErrors,
   GOAL_LABELS,
   GOALS_BY_LANGUAGE,
-  isTargetDateInRange,
   LEVEL_INFO,
   updatePlanSchema,
   type GoalType,
@@ -21,6 +20,7 @@ import { EstimateSummary } from '@/features/learning-paths/components/EstimateSu
 import { ScheduleEditor, type ScheduleValue } from '@/features/learning-paths/components/ScheduleEditor';
 import { presetFromWeek } from '@/features/learning-paths/components/schedule';
 import { learningPathErrorMessage } from '@/features/learning-paths/error-map';
+import { targetDateError } from '@/features/learning-paths/target-date';
 import { updatePlan, type LearningPath } from '@/features/learning-paths/service';
 import { useReferenceHours } from '@/features/learning-paths/useReferenceHours';
 import { useProfile } from '@/features/profile/ProfileProvider';
@@ -53,11 +53,7 @@ export function PathPlanEditor({ path, onSaved, onCancel, onSavingChange }: Prop
 
   const targets = allowedTargets(path.language, goalType, path.currentLevel);
   const noTargets = targets.length === 0;
-  let dateError: string | undefined;
-  if (targetDate) {
-    if (targetDate < today) dateError = 'Ngày mục tiêu đã qua.';
-    else if (!isTargetDateInRange(targetDate, today)) dateError = 'Ngày mục tiêu quá xa (tối đa 10 năm).';
-  }
+  const dateError = targetDateError(targetDate, today);
   const parsed = updatePlanSchema.safeParse({
     language: path.language,
     goalType,

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { X } from 'lucide-react';
+import { RotateCcw, X } from 'lucide-react';
 import { Link, useNavigate, useParams } from 'react-router';
 import { DEFAULT_TIMEZONE } from '@linguo/shared';
 import { DemoBadge, ExerciseFrame } from '@/components/exercise';
@@ -36,6 +36,12 @@ function stepTitle(run: LessonRunApi, step: LessonStep): string {
     return `Câu ${current}/${total}`;
   }
   return CONTENT_TITLES[step.kind];
+}
+
+function questionLabel(steps: LessonStep[], index: number): string {
+  const step = steps[index];
+  const label = `Câu ${questionPosition(steps, index).current}`;
+  return step?.kind === 'exercise' && step.recheck ? `${label} (làm lại)` : label;
 }
 
 /** Full-screen lesson player at /app/hoc-tap/bai/:lessonId (outside AppLayout, like onboarding). */
@@ -168,6 +174,7 @@ export function LessonPage() {
             exercise={exercise}
             state={run.exerciseState(exerciseId, queueIndex)}
             recheck={step.recheck}
+            runId={run.runId}
             onSubmit={(response, meta) => void run.submit(exerciseId, queueIndex, response, meta)}
             onContinue={run.next}
           />
@@ -185,13 +192,26 @@ export function LessonPage() {
           result={run.completeResult}
           canComplete={run.canComplete}
           pendingCount={run.pendingCount}
+          unresolved={run.unresolved.map((index) => ({ stepIndex: index, label: questionLabel(run.steps, index) }))}
           onComplete={run.complete}
+          onResume={run.goTo}
         />
       );
       footer = (
-        <Button variant="accent" size="lg" block disabled={!run.completeResult} onClick={run.next}>
-          Tiếp tục
-        </Button>
+        <div className="flex gap-3">
+          {/* Reopening a finished lesson shows its summary; a new run starts only from here. */}
+          {run.runStatus === 'completed' && (
+            <Button variant="ghost" size="lg" onClick={run.restart}>
+              <RotateCcw aria-hidden className="size-5" />
+              Học lại
+            </Button>
+          )}
+          <div className="flex-1">
+            <Button variant="accent" size="lg" block disabled={!run.completeResult} onClick={run.next}>
+              Tiếp tục
+            </Button>
+          </div>
+        </div>
       );
       break;
     case 'next_review':

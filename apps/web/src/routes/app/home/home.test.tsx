@@ -5,7 +5,7 @@ import { TEST_KO_PATH, TEST_PATH } from '../../../../tests/unit/learning-fixture
 import { renderWithProviders } from '../../../../tests/unit/render';
 import { HomePage } from '../HomePage';
 import { pathLesson } from '../lesson/lesson-fixtures';
-import { needsSpreadWarning } from './SpreadWarning';
+import { needsSpreadWarning } from './spread';
 
 const mocks = vi.hoisted(() => ({ setPathStatus: vi.fn() }));
 vi.mock('@/lib/supabase', () => ({ getSupabase: () => ({}), requireSupabase: () => ({}) }));
@@ -51,6 +51,15 @@ describe('HomePage', () => {
       profile: { profile: { id: 'u', displayName: '', timezone: 'Asia/Ho_Chi_Minh' } },
     });
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Chào bạn');
+  });
+
+  it('still renders when the profile time zone is unknown to Intl', () => {
+    renderWithProviders(<HomePage />, {
+      route: '/app',
+      profile: { profile: { id: 'u', displayName: 'Minh Anh', timezone: 'Not/AZone' } },
+    });
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Chào Minh Anh');
+    expect(screen.getByText('Lộ trình của bạn')).toBeInTheDocument();
   });
 
   it('redirects to onboarding only when the list loaded empty', () => {

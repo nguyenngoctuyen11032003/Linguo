@@ -1,4 +1,5 @@
 import type { LESSON_ERROR_CODES } from '@linguo/shared';
+import { isNetworkError } from '@/lib/network-error';
 
 type LessonErrorCode = (typeof LESSON_ERROR_CODES)[number];
 
@@ -22,25 +23,22 @@ const MESSAGES: Record<string, string> = {
   ...LESSON_MESSAGES,
   invalid_payload: 'Dữ liệu bài học không hợp lệ. Vui lòng thử lại.',
   supabase_unavailable: 'Chưa cấu hình kết nối máy chủ.',
+  /** The offline outbox could not be written (storage full or blocked). */
+  outbox_unavailable: 'Không lưu được câu trả lời trên thiết bị để gửi sau (bộ nhớ trình duyệt đầy hoặc bị chặn). Khi có mạng, hãy nộp lại.',
 };
 
 const NETWORK_MESSAGE = 'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.';
 const CODE_PATTERN = /^[a-z][a-z0-9]*(?:_[a-z0-9]+)+$/;
-// fetch() failures across browsers/Node, and postgrest-js's "<name>: <message>" wrapping of them.
-const NETWORK_PATTERN = /^(?:TypeError|FetchError|AbortError):|failed to fetch|fetch failed|networkerror|load failed|network request failed/i;
 
-/** True when the request never got a server answer (offline, DNS, timeout); such submits go to the outbox. */
-export function isNetworkError(error: unknown): boolean {
-  if (error instanceof TypeError) return true;
-  if (!error || typeof error !== 'object') return false;
-  if ('status' in error && error.status === 0) return true;
-  if ('message' in error && typeof error.message === 'string') {
-    // A server error always carries a SQLSTATE / snake_case code; postgrest-js uses '' for fetch failures.
-    const code = 'code' in error && typeof error.code === 'string' ? error.code : '';
-    if (code) return false;
-    return NETWORK_PATTERN.test(error.message);
-  }
-  return false;
+/**
+ * The server never graded the request: no answer (offline, DNS, the 15 s timeout) or a gateway/server failure
+ * (408, 5xx) after it was sent. A submit failing this way is resent later with the same idempotency key, which
+ * the server replays if it did grade it after all.
+ */
+export function isUnansweredError(error: unknown): boolean {
+  if (isNetworkError(error)) return true;
+  if (!error || typeof error !== 'object' || !('status' in error) || typeof error.status !== 'number') return false;
+  return error.status === 408 || error.status >= 500;
 }
 
 /** A snake_case RPC message is the most specific code; otherwise fall back to the error's own `code`. */

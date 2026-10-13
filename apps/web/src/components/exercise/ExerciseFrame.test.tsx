@@ -4,7 +4,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { PublicExercise } from '@linguo/shared';
 import type { ExerciseUiState } from '@/features/lesson-player/types';
 import { ExerciseFrame } from './index';
-import { seededShuffle } from './shuffle';
+import { seededShuffle, seededShuffleAway } from './shuffle';
 import { graded, IDLE, makeExercise, makeResult } from './test-fixtures';
 import { renderExercise } from './test-utils';
 
@@ -62,6 +62,22 @@ describe('ExerciseFrame — mcq', () => {
     expect(radios[0]).toHaveAttribute('aria-checked', 'true');
     expect(radios[0]).toHaveAttribute('tabindex', '0');
     expect(radios[2]).toHaveAttribute('tabindex', '-1');
+  });
+
+  it('ignores number keys while a modal dialog is open over the exercise', async () => {
+    setup(makeExercise('mcq'));
+    const dialog = document.createElement('div');
+    dialog.setAttribute('role', 'dialog');
+    dialog.setAttribute('aria-modal', 'true');
+    document.body.append(dialog);
+    try {
+      await userEvent.keyboard('2');
+      expect(screen.getAllByRole('radio', { hidden: true }).some((r) => r.getAttribute('aria-checked') === 'true')).toBe(false);
+    } finally {
+      dialog.remove();
+    }
+    await userEvent.keyboard('2');
+    expect(screen.getByRole('radio', { name: /banana/ })).toHaveAttribute('aria-checked', 'true');
   });
 
   it('shuffles options with a seed derived from the exercise id', () => {
@@ -167,6 +183,20 @@ describe('ExerciseFrame — flow', () => {
     expect(onContinue).toHaveBeenCalled();
   });
 
+  it('keeps the answer and lets the learner send it again when a submit could not be saved', async () => {
+    const { onSubmit, update } = setup(makeExercise('mcq'));
+    await userEvent.click(screen.getByRole('radio', { name: /banana/ }));
+    await userEvent.click(check());
+    update({ status: 'submitting', attempts: 0, lastResult: null });
+    expect(screen.queryByText('Đang chờ đồng bộ — sẽ chấm khi có mạng')).not.toBeInTheDocument();
+    // The outbox write failed: the entry goes back to idle, never to pending_sync.
+    update(IDLE);
+    expect(screen.getByRole('radio', { name: /banana/ })).toHaveAttribute('aria-checked', 'true');
+    expect(screen.queryByText('Đang chờ đồng bộ — sẽ chấm khi có mạng')).not.toBeInTheDocument();
+    await userEvent.click(check());
+    expect(onSubmit).toHaveBeenCalledTimes(2);
+  });
+
   it('shows an inline error with "Tiếp tục" for an invalid prompt', async () => {
     const { onContinue } = setup(makeExercise('mcq', { prompt: { stem: 'x' } }));
     expect(screen.getByRole('alert')).toHaveTextContent('Bài tập bị lỗi định dạng');
@@ -235,8 +265,9 @@ describe('ExerciseFrame — word_bank', () => {
     expect(screen.getByText('Đã thêm am, vị trí 2')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: "Thêm 'am'" })).not.toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: "Thêm 'is'" }));
-    await userEvent.click(screen.getByRole('button', { name: "Bỏ 'is'" }));
-    expect(screen.getByText('Đã bỏ is')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: "Bỏ 'am', vị trí 2/3" })).toBeInTheDocument();
+    await userEvent.click(screen.getByRole('button', { name: "Bỏ 'is', vị trí 3/3" }));
+    expect(screen.getByText('Đã bỏ is khỏi vị trí 3, còn 2 thẻ trong câu')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: "Thêm 'is'" })).toHaveFocus();
     await userEvent.click(screen.getByRole('button', { name: "Thêm 'a'" }));
     await userEvent.click(screen.getByRole('button', { name: "Thêm 'student'" }));
@@ -246,11 +277,30 @@ describe('ExerciseFrame — word_bank', () => {
 
   it('works from the keyboard', async () => {
     setup(makeExercise('word_bank'));
+    const [first, second] = within(screen.getByRole('group', { name: 'Các thẻ từ' })).getAllByRole('button');
+    const text = first!.textContent;
     await userEvent.tab();
-    expect(screen.getByRole('button', { name: "Thêm 'I'" })).toHaveFocus();
+    expect(first).toHaveFocus();
     await userEvent.keyboard('{Enter}');
-    expect(screen.getByRole('button', { name: "Bỏ 'I'" })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: "Thêm 'am'" })).toHaveFocus();
+    expect(screen.getByRole('button', { name: `Bỏ '${text}', vị trí 1/1` })).toBeInTheDocument();
+    expect(screen.getByText(`Đã thêm ${text}, vị trí 1`)).toBeInTheDocument();
+    expect(second).toHaveFocus();
+  });
+
+  it('shows the bank shuffled by run and exercise, never in answer order, stable across renders', () => {
+    const exercise = makeExercise('word_bank');
+    const RUN = '40000000-0000-4000-8000-000000000001';
+    const props = { exercise, state: IDLE, recheck: false, onSubmit: vi.fn(), onContinue: vi.fn() };
+    const view = renderExercise(<ExerciseFrame {...props} runId={RUN} />);
+    const bankOrder = () => within(screen.getByRole('group', { name: 'Các thẻ từ' })).getAllByRole('button').map((b) => b.textContent);
+    const authored = ['I', 'am', 'a', 'student', 'is'];
+    const shown = bankOrder();
+    expect(shown).not.toEqual(authored);
+    expect([...shown].sort()).toEqual([...authored].sort());
+    const ids = seededShuffleAway(['t1', 't2', 't3', 't4', 't5'], `${RUN}:${exercise.id}`);
+    expect(shown).toEqual(ids.map((id) => authored[Number(id.slice(1)) - 1]));
+    view.rerender(<ExerciseFrame {...props} runId={RUN} state={{ ...IDLE }} />);
+    expect(bankOrder()).toEqual(shown);
   });
 });
 
@@ -287,6 +337,19 @@ describe('ExerciseFrame — translate', () => {
     fireEvent.compositionEnd(input);
     await waitFor(() => expect(onSubmit).toHaveBeenCalledTimes(1));
     expect(onSubmit).toHaveBeenCalledWith({ text: '학생' }, expect.anything());
+  });
+
+  it('sends once when Enter and "Kiểm tra" both wait for the same composition', async () => {
+    const { onSubmit } = setup(makeExercise('translate', { answer_lang: 'ko' }));
+    const input = screen.getByRole('textbox');
+    fireEvent.compositionStart(input);
+    fireEvent.change(input, { target: { value: '학생' } });
+    fireEvent.keyDown(input, { key: 'Enter' });
+    fireEvent.click(check());
+    fireEvent.compositionEnd(input);
+    await waitFor(() => expect(onSubmit).toHaveBeenCalled());
+    await new Promise((r) => setTimeout(r, 100));
+    expect(onSubmit).toHaveBeenCalledTimes(1);
   });
 
   it('falls back after 80 ms when compositionend never fires', async () => {

@@ -1,4 +1,13 @@
-import type { CompleteResult, ExerciseResponse, ExerciseStage, LessonItem, LessonPayload, PublicExercise, SubmitResult } from '@linguo/shared';
+import type {
+  CompleteResult,
+  ExerciseResponse,
+  ExerciseStage,
+  LessonItem,
+  LessonPayload,
+  LessonRun,
+  PublicExercise,
+  SubmitResult,
+} from '@linguo/shared';
 
 // Spec 2 §7: contract between the lesson-player data layer (useLessonRun),
 // the exercise components and the lesson screen.
@@ -45,8 +54,15 @@ export interface LessonRunApi {
   submit: (exerciseId: string, queueIndex: number, response: ExerciseResponse, meta: SubmitMeta) => Promise<void>;
   /** Attempts waiting in the offline outbox for this user. */
   pendingCount: number;
+  /** Step indexes of exercises that still need an answer; the lesson cannot be completed until this is empty. */
+  unresolved: number[];
   canComplete: boolean;
   complete: () => Promise<CompleteResult | null>;
   completeResult: CompleteResult | null;
+  runId: string | null;
+  /** A completed run is shown with its summary; nothing can be submitted to it. */
+  runStatus: LessonRun['status'] | null;
   retry: () => void;
+  /** "Học lại": starts a new run of a completed lesson (start_lesson is never called implicitly for one). */
+  restart: () => void;
 }

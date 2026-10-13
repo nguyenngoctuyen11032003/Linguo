@@ -57,6 +57,17 @@ describe('FeedbackPanel', () => {
     expect(screen.getByText('Động từ to be đi với I là am.')).toBeInTheDocument();
   });
 
+  it('keeps secondary text off the muted color, which drops below 4.5:1 on the tinted verdict card', () => {
+    renderExercise(
+      <FeedbackPanel
+        result={makeResult({ verdict: 'correct', is_correct: true, display_answer: 'I am.', explanation: { vi: 'Giải thích.' } })}
+      />,
+    );
+    expect(screen.getByText('Đáp án')).not.toHaveClass('text-muted');
+    expect(screen.getByText('Giải thích.')).not.toHaveClass('text-muted');
+    expect(screen.getByTestId('feedback-card').querySelector('.text-muted')).toBeNull();
+  });
+
   it('suggests one more try when incorrect and not final', () => {
     renderExercise(<FeedbackPanel result={makeResult()} />);
     expect(screen.getByText(/Bạn còn một lần thử/)).toBeInTheDocument();

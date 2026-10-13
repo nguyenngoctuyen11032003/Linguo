@@ -110,10 +110,18 @@ describe('outbox', () => {
     const outbox = createOutbox(USER, broken);
     const a = submitArgs();
     expect(() => outbox.add({ args: a, queueIndex: 0 })).not.toThrow();
+    expect(outbox.add({ args: a, queueIndex: 0 })).toBe(false);
     expect(outbox.list()).toEqual([]);
     expect(() => outbox.remove(a.p_idempotency_key)).not.toThrow();
     expect(() => outbox.markFailed(a.p_idempotency_key)).not.toThrow();
     expect(outbox.prune()).toEqual([]);
+  });
+
+  it('reports whether add persisted the entry', () => {
+    const a = submitArgs();
+    expect(createOutbox(USER).add({ args: a, queueIndex: 0 })).toBe(true);
+    expect(createOutbox(USER).add({ args: a, queueIndex: 0 })).toBe(true); // already queued
+    expect(createOutbox(USER, null).add({ args: submitArgs(), queueIndex: 0 })).toBe(false);
   });
 
   it('notifies same-tab listeners on change', () => {
