@@ -6,6 +6,8 @@ import { renderWithProviders, TEST_USER_ID } from '../../../tests/unit/render';
 import { LESSON_ID, PATH_ID, payload, result, submitArgs } from '@/features/lesson-player/lesson-fixtures';
 import { lessonCacheKey, writeLessonCache } from '@/features/lesson-player/lessonCache';
 import { createOutbox } from '@/features/lesson-player/outbox';
+import { createReviewOutbox } from '@/features/reviews/outbox';
+import { gradeArgs, gradeResult } from '@/features/reviews/review-fixtures';
 import { SettingsPage } from './SettingsPage';
 
 const mocks = vi.hoisted(() => ({
@@ -42,6 +44,11 @@ beforeEach(() => {
 /** One lesson answer waiting in the offline outbox of the test user. */
 function queueAnswer() {
   createOutbox(TEST_USER_ID).add({ args: submitArgs(), queueIndex: 0 });
+}
+
+/** One review grade waiting in the offline review outbox of the test user. */
+function queueGrade() {
+  createReviewOutbox(TEST_USER_ID).add({ args: gradeArgs(1), queueIndex: 0 });
 }
 
 describe('SettingsPage', () => {
@@ -141,6 +148,37 @@ describe('SettingsPage', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Đồng bộ ngay' }));
     await waitFor(() => expect(screen.queryByRole('alert')).not.toBeInTheDocument());
     expect(createOutbox(TEST_USER_ID).list()).toEqual([]);
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
+    await waitFor(() => expect(mocks.signOut).toHaveBeenCalledTimes(1));
+  });
+
+  it('counts review grades waiting to sync in the sign-out warning', async () => {
+    queueGrade();
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
+    expect(await screen.findByRole('alert')).toHaveTextContent('Còn 1 lượt chấm thẻ ôn tập chưa đồng bộ lên máy chủ.');
+    expect(mocks.signOut).not.toHaveBeenCalled();
+    await userEvent.click(screen.getByRole('button', { name: 'Vẫn đăng xuất' }));
+    await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent(/^\/$/));
+    expect(createReviewOutbox(TEST_USER_ID).list()).toHaveLength(1);
+  });
+
+  it('syncs both lesson answers and review grades from the warning', async () => {
+    queueAnswer();
+    queueGrade();
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
+    expect(await screen.findByRole('alert')).toHaveTextContent(
+      'Còn 1 câu trả lời và 1 lượt chấm thẻ ôn tập chưa đồng bộ lên máy chủ.',
+    );
+    mocks.rpc.mockImplementation((fn: string) =>
+      Promise.resolve({ data: fn === 'grade_review' ? gradeResult(1) : result(), error: null }),
+    );
+    await userEvent.click(screen.getByRole('button', { name: 'Đồng bộ ngay' }));
+    await waitFor(() => expect(screen.queryByRole('alert')).not.toBeInTheDocument());
+    expect(createOutbox(TEST_USER_ID).list()).toEqual([]);
+    expect(createReviewOutbox(TEST_USER_ID).list()).toEqual([]);
+    expect(mocks.rpc).toHaveBeenCalledWith('grade_review', expect.anything());
     await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
     await waitFor(() => expect(mocks.signOut).toHaveBeenCalledTimes(1));
   });

@@ -40,13 +40,12 @@ as $$
 declare
   v_lo constant double precision[] := array[0.001, 0.001, 0.001, 0.001, 1, 0.001, 0.001, 0.001, 0, 0, 0.001, 0.001, 0.001, 0.001, 0, 0, 1, 0, 0, 0.01, 0.1];
   v_hi double precision[] := array[100, 100, 100, 100, 10, 4, 4, 0.75, 4.5, 0.8, 3.5, 5, 0.25, 0.9, 4, 1, 6, 2, 2, 0.8, 0.8];
-  v_out double precision[] := '{}';
+  v_out double precision[] := '{}'::double precision[];
   v_w11 double precision;
   v_w13 double precision;
   v_w14 double precision;
   v_value double precision;
   v_ceiling double precision;
-  i integer;
 begin
   if p_w is null or cardinality(p_w) <> 21 then
     raise exception 'invalid_srs_weights';
@@ -219,7 +218,7 @@ create or replace function public.srs_schedule(
 )
 returns jsonb
 language plpgsql
-immutable
+stable
 parallel safe
 set search_path = ''
 as $$
@@ -404,10 +403,9 @@ stable
 set search_path = ''
 as $$
 declare
-  v_out jsonb := '{}';
+  v_out jsonb := '{}'::jsonb;
   v_next jsonb;
   v_keys constant text[] := array['again', 'hard', 'good', 'easy'];
-  i integer;
 begin
   for i in 1..4 loop
     v_next := public.srs_next(p_state, p_step, p_stability, p_difficulty, p_last_review_at, i::smallint, p_now, p_tz);
