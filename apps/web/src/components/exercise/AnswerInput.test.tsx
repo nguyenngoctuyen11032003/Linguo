@@ -44,6 +44,35 @@ describe('AnswerInput', () => {
     fireEvent.keyDown(input, { key: 'Enter' });
     expect(onSubmit).toHaveBeenCalledTimes(1);
   });
+
+  it('queues a single submit for Enters pressed while the composition settles', async () => {
+    const onSubmit = vi.fn();
+    render(<Harness onSubmitRequest={onSubmit} />);
+    const input = screen.getByRole('textbox');
+    fireEvent.compositionStart(input);
+    fireEvent.change(input, { target: { value: '안녕' } });
+    // Some browsers report these Enters as not composing although compositionend has not fired yet.
+    fireEvent.keyDown(input, { key: 'Enter' });
+    fireEvent.keyDown(input, { key: 'Enter' });
+    expect(onSubmit).not.toHaveBeenCalled();
+    fireEvent.compositionEnd(input);
+    await act(async () => {
+      await new Promise((r) => setTimeout(r, 0));
+    });
+    expect(onSubmit).toHaveBeenCalledTimes(1);
+    // Afterwards Enter submits again.
+    fireEvent.keyDown(input, { key: 'Enter' });
+    expect(onSubmit).toHaveBeenCalledTimes(2);
+  });
+
+  it('ignores a held-down (repeating) Enter', () => {
+    const onSubmit = vi.fn();
+    render(<Harness onSubmitRequest={onSubmit} />);
+    const input = screen.getByRole('textbox');
+    fireEvent.keyDown(input, { key: 'Enter' });
+    fireEvent.keyDown(input, { key: 'Enter', repeat: true });
+    expect(onSubmit).toHaveBeenCalledTimes(1);
+  });
 });
 
 describe('createCompositionGate', () => {

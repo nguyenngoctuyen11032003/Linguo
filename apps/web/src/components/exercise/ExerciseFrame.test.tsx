@@ -323,6 +323,19 @@ describe('ExerciseFrame — translate', () => {
     expect(onSubmit).toHaveBeenCalledWith({ text: '학생' }, expect.anything());
   });
 
+  it('sends once when Enter and "Kiểm tra" both wait for the same composition', async () => {
+    const { onSubmit } = setup(makeExercise('translate', { answer_lang: 'ko' }));
+    const input = screen.getByRole('textbox');
+    fireEvent.compositionStart(input);
+    fireEvent.change(input, { target: { value: '학생' } });
+    fireEvent.keyDown(input, { key: 'Enter' });
+    fireEvent.click(check());
+    fireEvent.compositionEnd(input);
+    await waitFor(() => expect(onSubmit).toHaveBeenCalled());
+    await new Promise((r) => setTimeout(r, 100));
+    expect(onSubmit).toHaveBeenCalledTimes(1);
+  });
+
   it('falls back after 80 ms when compositionend never fires', async () => {
     const { onSubmit } = setup(makeExercise('translate', { answer_lang: 'ko' }));
     const input = screen.getByRole('textbox');

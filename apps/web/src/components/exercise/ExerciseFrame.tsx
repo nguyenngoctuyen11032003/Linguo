@@ -118,6 +118,12 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
   const [submittedOptionId, setSubmittedOptionId] = useState<string | null>(null);
   const [retries, setRetries] = useState(0);
   const startRef = useRef(Date.now());
+  /**
+   * An answer was handed to onSubmit and the parent has not re-rendered yet: requests queued behind an IME
+   * composition run together with closures from before that render, so `busy` alone cannot stop a second send.
+   */
+  const sentRef = useRef(false);
+  const [sends, setSends] = useState(0);
   const bodyRef = useRef<HTMLDivElement>(null);
   const chipsRef = useRef<HTMLButtonElement>(null);
 
@@ -125,6 +131,12 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
     responseRef.current = next;
     setResponseState(next);
   };
+
+  const busyNow = state.status === 'submitting' || state.status === 'pending_sync';
+  // Re-render after every send (`sends`); once the parent is not busy (graded, failed, or ignored) allow the next one.
+  useEffect(() => {
+    if (!busyNow) sentRef.current = false;
+  }, [busyNow, sends, state.lastResult]);
 
   useEffect(() => {
     if (retries === 0) return;
@@ -161,7 +173,9 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
     recognition && (parsed.type === 'translate' || parsed.type === 'fill_blank') ? (parsed.prompt.hint_levels ?? []) : [];
 
   const send = (r: ExerciseResponse, confidence: Confidence | null) => {
-    if (busy) return;
+    if (busy || sentRef.current) return;
+    sentRef.current = true;
+    setSends((n) => n + 1);
     if ('option_id' in r) setSubmittedOptionId(r.option_id);
     onSubmit(r, { confidence, responseMs: Math.max(0, Math.round(Date.now() - startRef.current)), hintCount: hintsShown });
   };
