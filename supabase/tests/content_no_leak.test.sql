@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(11);
+select plan(12);
 
 -- ===== privileges (as the migration owner) =====
 select ok(not has_schema_privilege('anon', 'content_private', 'usage'), 'anon has no usage on content_private');
@@ -16,18 +16,41 @@ select is(
 select ok(not has_function_privilege('authenticated', 'content_private.import_bundle(jsonb)', 'execute'), 'authenticated cannot execute import_bundle');
 select ok(not has_function_privilege('anon', 'content_private.import_bundle(jsonb)', 'execute'), 'anon cannot execute import_bundle');
 select ok(has_function_privilege('service_role', 'content_private.import_bundle(jsonb)', 'execute'), 'service_role can execute import_bundle');
+-- Public functions authenticated can execute must not read content_private (signature or body), except
+-- the lesson RPCs, which reveal answers only under their own rules (tested in lesson_runs.test.sql).
+select is(
+  (select coalesce(array_agg(p.oid::regprocedure::text order by p.oid::regprocedure::text), '{}')
+   from pg_catalog.pg_proc p
+   join pg_catalog.pg_namespace n on n.oid = p.pronamespace
+   where n.nspname = 'public'
+     and has_function_privilege('authenticated', p.oid, 'execute')
+     and (pg_catalog.pg_get_function_result(p.oid) ilike '%content_private%'
+       or pg_catalog.pg_get_function_arguments(p.oid) ilike '%content_private%'
+       or p.prosrc ilike '%content_private%'
+       or p.prosrc ilike '%exercise_keys%')
+     and p.proname not in ('get_lesson', 'submit_exercise', 'complete_lesson')),
+  '{}'::text[], 'only the lesson RPCs among client-callable public functions reference content_private');
 select is(
   (select count(*)::int
    from pg_catalog.pg_proc p
    join pg_catalog.pg_namespace n on n.oid = p.pronamespace
    where n.nspname = 'public'
-     and has_function_privilege('authenticated', p.oid, 'execute')
-     and (p.proname ilike '%answer_key%'
-       or pg_catalog.pg_get_function_result(p.oid) ilike any (array['%answer_key%', '%exercise_keys%'])
-       or exists (select 1 from unnest(coalesce(p.proargnames, '{}'::text[])) as a (arg) where a.arg ilike '%answer_key%'))),
-  0, 'no public function callable by authenticated exposes answer keys');
--- supabase/config.toml keeps api.schemas = ["public", "graphql_public"]; config is not visible from SQL.
-select pass('content_private not exposed via config.toml');
+     and p.proname in ('get_lesson', 'submit_exercise', 'complete_lesson')
+     and p.prosrc ilike '%content_private%'
+     and not (p.prosecdef and exists (
+       select 1 from unnest(coalesce(p.proconfig, '{}'::text[])) as c (setting) where c.setting like 'search_path=%'))),
+  0, 'lesson RPCs that read content_private are security definer with a fixed search_path');
+select is(
+  (select count(*)::int
+   from pg_catalog.pg_proc p
+   join pg_catalog.pg_namespace n on n.oid = p.pronamespace
+   cross join (values ('public'), ('anon'), ('authenticated')) as r (role_name)
+   where n.nspname = 'content_private'
+     and (case when r.role_name = 'public'
+               then exists (select 1 from aclexplode(coalesce(p.proacl, acldefault('f', p.proowner))) a
+                            where a.grantee = 0 and a.privilege_type = 'EXECUTE')
+               else has_function_privilege(r.role_name::name, p.oid, 'execute') end)),
+  0, 'no content_private function is executable by public, anon or authenticated');
 
 -- ===== authenticated =====
 set local role authenticated;
