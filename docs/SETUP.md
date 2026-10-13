@@ -73,6 +73,22 @@ Git Bash tự đổi các chuỗi giống đường dẫn Unix thành đường 
 MSYS_NO_PATHCONV=1 VITE_BASE_PATH=/Linguo/ pnpm build
 ```
 
+## 7. Gia sư AI — Gemini (tuỳ chọn)
+Gia sư AI chạy trong Edge Function `supabase/functions/ai-tutor`; key Gemini **chỉ** nằm ở phía server (secret của Edge Function), không bao giờ ở `.env` của web hay biến `VITE_*`. Không có key, app vẫn chạy: nút "Giải thích AI" hiện "Tạm thời không khả dụng" kèm lời giải thích soạn sẵn.
+
+1. **Lấy API key:** vào [Google AI Studio](https://aistudio.google.com/apikey) → đăng nhập Google → **Get API key / Create API key** (chọn hoặc tạo một Google Cloud project). Không bật billing cho project này nếu chỉ muốn dùng gói miễn phí.
+2. **Chọn model:** trong AI Studio (bảng chọn model, hoặc trang [rate limits](https://ai.google.dev/gemini-api/docs/rate-limits)) chọn một model **Flash** có trong **free tier**, ví dụ dạng `gemini-…-flash`. Ghi đúng **model id** (không phải tên hiển thị). Model chỉ đọc từ secret `GEMINI_MODEL`; đổi model không cần sửa code (cache cũ tự không dùng lại vì khoá cache chứa tên model).
+3. **Chạy local:**
+   ```bash
+   cp supabase/functions/.env.example supabase/functions/.env   # file này bị git ignore
+   # điền GEMINI_API_KEY và GEMINI_MODEL
+   pnpm db:start
+   pnpm exec supabase functions serve --env-file supabase/functions/.env
+   ```
+   `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` được Supabase CLI tự cấp, không cần điền. Tuỳ chọn: `GEMINI_DAILY_USER_LIMIT` (mặc định 20 lượt/người/ngày), `GEMINI_MAX_OUTPUT_TOKENS` (1200), `GEMINI_TIMEOUT_MS` (20000).
+4. **Kiểm tra code function** (cần Deno 2, hoặc `npx deno@2`): trong `supabase/functions` chạy `deno check .`, `deno lint`, `deno test --allow-env` (test dùng fetch giả, không gọi Gemini thật).
+5. **Production:** đặt secrets trong GitHub environment `production` (xem `docs/DEPLOY.md` → Gia sư AI); workflow Deploy tự đẩy chúng lên Supabase.
+
 ## Thông tin bạn cần cung cấp — tóm tắt
 | Giá trị | Đặt ở đâu |
 |---|---|
@@ -81,7 +97,7 @@ MSYS_NO_PATHCONV=1 VITE_BASE_PATH=/Linguo/ pnpm build
 | Access token (supabase.com → Account → Access Tokens) | GitHub → Environment `production` → Secrets |
 | Database password | GitHub → Environment `production` → Secrets |
 | Google OAuth Client ID/Secret (tuỳ chọn) | Supabase Dashboard |
-| Gemini API key (spec sau) | `supabase secrets set` |
+| Gemini API key + model id (Google AI Studio) | Local: `supabase/functions/.env`; production: GitHub → Environment `production` → Secrets `GEMINI_API_KEY`, `GEMINI_MODEL` |
 
 ## Bảng giờ tham chiếu (ước lượng thời gian)
 
