@@ -1,7 +1,17 @@
 import { z } from 'zod';
 import { DISPLAY_NAME_MAX, PASSWORD_MAX, PASSWORD_MIN, THEMES } from './constants';
 
+/** Region/City style IANA names (and single-token ones like UTC); excludes offsets such as +07:00 or UTC+7. */
+const IANA_NAME = /^[A-Za-z_]+(\/[A-Za-z0-9_+-]+)*$/;
+
+/**
+ * Accepts IANA zone names only. Engines list canonical names in `Intl.supportedValuesOf`
+ * (V8 lists 'Asia/Saigon' but not its alias 'Asia/Ho_Chi_Minh'), so a name missing from that list
+ * still passes when it is a well-formed IANA name the runtime can resolve.
+ */
 export function isValidTimeZone(tz: string): boolean {
+  if (typeof Intl.supportedValuesOf === 'function' && Intl.supportedValuesOf('timeZone').includes(tz)) return true;
+  if (!IANA_NAME.test(tz)) return false;
   try {
     new Intl.DateTimeFormat('en-US', { timeZone: tz });
     return true;
@@ -19,7 +29,8 @@ export const emailSchema = z
 export const passwordSchema = z
   .string()
   .min(PASSWORD_MIN, { message: `Mật khẩu cần ít nhất ${PASSWORD_MIN} ký tự.` })
-  .max(PASSWORD_MAX, { message: `Mật khẩu tối đa ${PASSWORD_MAX} ký tự.` });
+  // bcrypt (used by Supabase Auth) truncates at 72 *bytes*, so measure bytes, not characters.
+  .refine((v) => new TextEncoder().encode(v).length <= PASSWORD_MAX, { message: 'Mật khẩu quá dài.' });
 
 export const displayNameSchema = z
   .string()

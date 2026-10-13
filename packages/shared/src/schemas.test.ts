@@ -43,6 +43,28 @@ describe('profile and preferences', () => {
   it('validates IANA time zones', () => {
     expect(isValidTimeZone('Asia/Ho_Chi_Minh')).toBe(true);
     expect(isValidTimeZone('Mars/Olympus')).toBe(false);
+    expect(isValidTimeZone('Asia/Tokyo')).toBe(true);
+    expect(isValidTimeZone('UTC')).toBe(true);
+  });
+
+  it('rejects offset-style and malformed zones', () => {
+    for (const tz of ['+07:00', '-05:00', 'UTC+7', 'GMT+07:00', '', ' Asia/Tokyo', 'Asia//Tokyo', 'Asia/Tokyo/']) {
+      expect(isValidTimeZone(tz), tz).toBe(false);
+    }
+  });
+
+  it('limits passwords by UTF-8 bytes, not characters', () => {
+    const ok = signUpSchema.safeParse({ displayName: '', email: 'a@b.vn', password: 'a'.repeat(72) });
+    expect(ok.success).toBe(true);
+    // 37 two-byte characters = 37 chars but 74 bytes
+    const multi = signUpSchema.safeParse({ displayName: '', email: 'a@b.vn', password: 'ê'.repeat(37) });
+    expect(multi.success).toBe(false);
+    if (multi.success) return;
+    expect(fieldErrors(multi.error).password).toBe('Mật khẩu quá dài.');
+    expect(signUpSchema.safeParse({ displayName: '', email: 'a@b.vn', password: 'ê'.repeat(36) }).success).toBe(true);
+  });
+
+  it('rejects unknown zones in profileUpdateSchema', () => {
     expect(profileUpdateSchema.safeParse({ displayName: 'An', timezone: 'Mars/Olympus' }).success).toBe(false);
   });
 

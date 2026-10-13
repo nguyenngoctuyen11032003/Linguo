@@ -15,7 +15,7 @@
     <meta name="theme-color" content="#F6F8FB" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0B1420" media="(prefers-color-scheme: dark)" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="icon" href="%BASE_URL%favicon.ico" sizes="48x48" />
+    <link rel="icon" href="%BASE_URL%favicon.ico" sizes="16x16 32x32 48x48" />
     <link rel="icon" href="%BASE_URL%brand/logo-mark.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="%BASE_URL%icons/apple-touch-icon.png" />
     <link rel="manifest" href="%BASE_URL%manifest.webmanifest" />
@@ -23,16 +23,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400&family=Noto+Sans+KR:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap"
     />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+      />
+    </noscript>
     <script>
       (function () {
         try {
           var p = localStorage.getItem('lp-theme');
+          if (p !== 'light' && p !== 'dark' && p !== 'system') p = 'system';
           var dark = p === 'dark' || ((!p || p === 'system') && matchMedia('(prefers-color-scheme: dark)').matches);
           document.documentElement.dataset.theme = dark ? 'dark' : 'light';
           if (localStorage.getItem('lp-reduce-motion') === 'true') document.documentElement.dataset.reduceMotion = 'true';

@@ -33,6 +33,19 @@ const DARK_MAX = 190; // min(r,g,b) below this => not backdrop (gold/dark antial
 const OUTLINE_MAX = 9; // px: width of the logo's own white outline (≈7-8px in the source)
 const HALO = 3; // px next to colour always kept (anti-aliased edge pixels)
 const GREY_LEVEL = 238; // neutral pixels below this are checker grey squares, not outline
+const POCKET_GREY_RATIO = 0.02; // enclosed region with > this share of checker grey is backdrop, not a bubble
+const HEAL_PASSES = 3; // rounds of dent healing along the cut-out edge
+const HEAL_MIN_NEIGHBOURS = 6; // a bg pixel with >= this many logo neighbours (of 8) is a dent
+const FEATHER_ALPHA = 170; // alpha of the 1px feathered edge (0-255)
+const TRIM_PAD = 8; // px of transparent padding kept around the trimmed logo
+const FULL_LOGO_HEIGHT = 512; // px height of logo-full.png / logo-full.webp
+const WEBP_QUALITY = 90;
+const SVG_DENSITY = 384; // DPI used to rasterise logo-mark.svg (sharp downsamples crisply from this)
+const MASKABLE_MARK_FRAC = 0.62; // mark size / tile size; keeps the mark inside the 80% maskable safe circle
+const APPLE_MARK_FRAC = 0.72; // mark size / tile size for the opaque iOS touch icon
+const APPLE_ICON_SIZE = 180;
+const ICON_SIZES = [192, 512]; // PWA "any" and maskable sizes
+const FAVICON_SIZES = [16, 32, 48]; // frames stored in favicon.ico
 mkdirSync(ICONS, { recursive: true });
 
 // ---- 1. Full logo cut-out -------------------------------------------------
@@ -113,12 +126,12 @@ const bg = new Uint8Array(N);
         }
       }
     }
-    if (grey / comp.length > 0.02) for (const p of comp) bg[p] = 1;
+    if (grey / comp.length > POCKET_GREY_RATIO) for (const p of comp) bg[p] = 1;
   }
 }
 
 // Heal pin-prick dents along the edge (bg pixels almost surrounded by logo).
-for (let pass = 0; pass < 3; pass++) {
+for (let pass = 0; pass < HEAL_PASSES; pass++) {
   const heal = [];
   for (let y = 1; y < H - 1; y++) {
     for (let x = 1; x < W - 1; x++) {
@@ -126,7 +139,7 @@ for (let pass = 0; pass < 3; pass++) {
       if (!bg[p]) continue;
       let n = 0;
       for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) if ((dx || dy) && !bg[p + dy * W + dx]) n++;
-      if (n >= 6) heal.push(p);
+      if (n >= HEAL_MIN_NEIGHBOURS) heal.push(p);
     }
   }
   for (const p of heal) bg[p] = 0;
@@ -158,6 +171,9 @@ for (let p = 0; p < N; p++) {
   }
 }
 
+if (best === -1) {
+  throw new Error(`make-icons: no logo component found in ${SRC}; is the source image blank or fully background?`);
+}
 const keep = (p) => !bg[p] && label[p] === best;
 const out = Buffer.from(data);
 let x0 = W, y0 = H, x1 = 0, y1 = 0;
@@ -169,23 +185,26 @@ for (let p = 0; p < N; p++) {
   }
   const x = p % W, y = (p / W) | 0;
   const edge = (x > 0 && !keep(p - 1)) || (x < W - 1 && !keep(p + 1)) || (y > 0 && !keep(p - W)) || (y < H - 1 && !keep(p + W));
-  out[i + 3] = edge ? 170 : 255; // 1px feather
+  out[i + 3] = edge ? FEATHER_ALPHA : 255; // 1px feather
   if (x < x0) x0 = x;
   if (x > x1) x1 = x;
   if (y < y0) y0 = y;
   if (y > y1) y1 = y;
 }
-const pad = 8;
+const pad = TRIM_PAD;
+if (x1 < x0 || y1 < y0) {
+  throw new Error('make-icons: logo bounding box is empty after cut-out; check the thresholds at the top of the script.');
+}
 const left = Math.max(0, x0 - pad), top = Math.max(0, y0 - pad);
 const fullPng = await sharp(out, { raw: { width: W, height: H, channels: 4 } })
   .extract({ left, top, width: Math.min(W, x1 + pad + 1) - left, height: Math.min(H, y1 + pad + 1) - top })
   .png()
   .toBuffer();
-writeFileSync(join(BRAND, 'logo-full.png'), await sharp(fullPng).resize({ height: 512 }).png({ compressionLevel: 9 }).toBuffer());
-writeFileSync(join(BRAND, 'logo-full.webp'), await sharp(fullPng).resize({ height: 512 }).webp({ quality: 90 }).toBuffer());
+writeFileSync(join(BRAND, 'logo-full.png'), await sharp(fullPng).resize({ height: FULL_LOGO_HEIGHT }).png({ compressionLevel: 9 }).toBuffer());
+writeFileSync(join(BRAND, 'logo-full.webp'), await sharp(fullPng).resize({ height: FULL_LOGO_HEIGHT }).webp({ quality: WEBP_QUALITY }).toBuffer());
 
 // ---- 2. Icons from the mark ------------------------------------------------
-const markAt = (size) => sharp(MARK_SVG, { density: 384 }).resize(size, size).png().toBuffer();
+const markAt = (size) => sharp(MARK_SVG, { density: SVG_DENSITY }).resize(size, size).png().toBuffer();
 async function onTile(size, frac) {
   const inner = Math.round(size * frac);
   const mark = await markAt(inner);
@@ -195,17 +214,16 @@ async function onTile(size, frac) {
     .png({ compressionLevel: 9 })
     .toBuffer();
 }
-writeFileSync(join(ICONS, 'icon-192.png'), await markAt(192));
-writeFileSync(join(ICONS, 'icon-512.png'), await markAt(512));
-writeFileSync(join(ICONS, 'icon-maskable-192.png'), await onTile(192, 0.62)); // inside the 80% safe circle
-writeFileSync(join(ICONS, 'icon-maskable-512.png'), await onTile(512, 0.62));
-writeFileSync(join(ICONS, 'apple-touch-icon.png'), await onTile(180, 0.72)); // iOS needs an opaque square
-const f16 = await markAt(16), f32 = await markAt(32), f48 = await markAt(48);
-writeFileSync(join(ICONS, 'favicon-16.png'), f16);
-writeFileSync(join(ICONS, 'favicon-32.png'), f32);
+writeFileSync(join(ICONS, 'icon-192.png'), await markAt(ICON_SIZES[0]));
+writeFileSync(join(ICONS, 'icon-512.png'), await markAt(ICON_SIZES[1]));
+writeFileSync(join(ICONS, 'icon-maskable-192.png'), await onTile(ICON_SIZES[0], MASKABLE_MARK_FRAC)); // inside the 80% safe circle
+writeFileSync(join(ICONS, 'icon-maskable-512.png'), await onTile(ICON_SIZES[1], MASKABLE_MARK_FRAC));
+writeFileSync(join(ICONS, 'apple-touch-icon.png'), await onTile(APPLE_ICON_SIZE, APPLE_MARK_FRAC)); // iOS needs an opaque square
+const favicons = await Promise.all(FAVICON_SIZES.map((s) => markAt(s)));
+const imgs = FAVICON_SIZES.map((s, k) => [s, favicons[k]]);
+for (const [s, b] of imgs) if (s <= 32) writeFileSync(join(ICONS, `favicon-${s}.png`), b);
 
 // favicon.ico holding PNG-encoded 16/32/48 entries.
-const imgs = [[16, f16], [32, f32], [48, f48]];
 const head = Buffer.alloc(6);
 head.writeUInt16LE(1, 2);
 head.writeUInt16LE(imgs.length, 4);

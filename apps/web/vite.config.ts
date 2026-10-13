@@ -10,14 +10,12 @@ const rootDir = fileURLToPath(new URL('../..', import.meta.url));
 
 /** GitHub Pages serves 404.html for unknown paths; make it the SPA shell so deep links work. */
 function spaFallback(): Plugin {
-  let outDir = 'dist';
   return {
     name: 'linguo-spa-fallback',
     apply: 'build',
-    configResolved(config) {
-      outDir = resolve(config.root, config.build.outDir);
-    },
-    closeBundle() {
+    // writeBundle only runs after a successful write (closeBundle also runs after build errors).
+    writeBundle(options) {
+      const outDir = resolve(options.dir ?? 'dist');
       copyFileSync(resolve(outDir, 'index.html'), resolve(outDir, '404.html'));
     },
   };
@@ -26,6 +24,9 @@ function spaFallback(): Plugin {
 function normalizeBase(value: string | undefined): string {
   if (!value) return '/';
   let base = value.trim();
+  // Relative ('./') and absolute URL bases are passed through untouched (apart from a trailing slash).
+  if (base.startsWith('./') || base.startsWith('http')) return base.endsWith('/') ? base : `${base}/`;
+  base = base.replace(/\/{2,}/g, '/');
   if (!base.startsWith('/')) base = `/${base}`;
   if (!base.endsWith('/')) base = `${base}/`;
   return base;

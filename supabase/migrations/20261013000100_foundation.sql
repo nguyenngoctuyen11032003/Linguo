@@ -39,6 +39,26 @@ create trigger user_preferences_set_updated_at
   before update on public.user_preferences
   for each row execute function public.set_updated_at();
 
+-- Reject timezone values that are not real IANA zones (the column only has a length check).
+create or replace function public.validate_profile_timezone()
+returns trigger
+language plpgsql
+security invoker
+set search_path = ''
+as $$
+begin
+  if not exists (select 1 from pg_catalog.pg_timezone_names where name = new.timezone) then
+    raise exception 'invalid timezone: %', new.timezone
+      using errcode = '23514';
+  end if;
+  return new;
+end;
+$$;
+
+create trigger profiles_validate_timezone
+  before insert or update of timezone on public.profiles
+  for each row execute function public.validate_profile_timezone();
+
 -- Create profile + preferences for every new auth user (email or OAuth).
 create or replace function public.handle_new_user()
 returns trigger
@@ -50,8 +70,10 @@ declare
   raw_name text := coalesce(new.raw_user_meta_data ->> 'display_name', new.raw_user_meta_data ->> 'full_name', '');
 begin
   insert into public.profiles (id, display_name)
-  values (new.id, nullif(left(btrim(raw_name), 60), ''));
-  insert into public.user_preferences (user_id) values (new.id);
+  values (new.id, nullif(left(regexp_replace(raw_name, '^\s+|\s+$', '', 'g'), 60), ''))
+  on conflict do nothing;
+  insert into public.user_preferences (user_id) values (new.id)
+  on conflict do nothing;
   return new;
 end;
 $$;
@@ -76,3 +98,10 @@ create policy "preferences: read own" on public.user_preferences
   for select to authenticated using ((select auth.uid()) = user_id);
 create policy "preferences: update own" on public.user_preferences
   for update to authenticated using ((select auth.uid()) = user_id) with check ((select auth.uid()) = user_id);
+
+-- Privileges: least privilege on top of RLS. Rows are created by the trigger and removed by cascade,
+-- so clients get no INSERT/DELETE, and may update only the user-editable columns.
+revoke all on public.profiles, public.user_preferences from anon, authenticated;
+grant select on public.profiles, public.user_preferences to authenticated;
+grant update (display_name, timezone) on public.profiles to authenticated;
+grant update (theme, reduce_motion) on public.user_preferences to authenticated;

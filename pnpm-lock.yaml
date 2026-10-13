@@ -24,7 +24,7 @@ importers:
         specifier: ^17.13.0
         version: 17.13.0
       sharp:
-        specifier: ^0.35.5
+        specifier: 0.35.5
         version: 0.35.5
       supabase:
         specifier: 2.120.0
