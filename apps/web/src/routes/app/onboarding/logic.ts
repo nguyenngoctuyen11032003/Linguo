@@ -3,6 +3,8 @@ import {
   allowedTargets,
   isGoalForLanguage,
   isLevelOf,
+  isoToUtcDays,
+  isTargetDateInRange,
   weeklyMinutesSchema,
   type LanguageCode,
   type OnboardingDraftData,
@@ -35,7 +37,7 @@ export function resolveTargetDate(data: OnboardingDraftData, today: string): str
   }
 }
 
-interface StepContext {
+export interface StepContext {
   taken: readonly LanguageCode[];
   today: string;
 }
@@ -59,14 +61,37 @@ export function isStepValid(step: StepNumber, data: OnboardingDraftData, ctx: St
       );
     case 5: {
       if (!weeklyMinutesSchema.safeParse(scheduleOf(data).weeklyMinutes).success) return false;
-      if (data.deadlineMode === 'date') {
-        const max = addDaysIso(ctx.today, 3650);
-        return Boolean(data.targetDate && data.targetDate >= ctx.today && data.targetDate <= max);
+      if (data.deadlineMode === 'date' || data.deadlineMode === 'weeks' || data.deadlineMode === 'months') {
+        const resolved = resolveTargetDate(data, ctx.today);
+        return Boolean(resolved && isTargetDateInRange(resolved, ctx.today));
       }
-      if (data.deadlineMode === 'weeks' || data.deadlineMode === 'months') return Boolean(data.deadlineAmount && data.deadlineAmount >= 1);
       return true;
     }
     case 6:
       return true;
   }
+}
+
+export const TARGET_DATE_PAST = 'Ngày mục tiêu đã qua.';
+export const TARGET_DATE_TOO_FAR = 'Ngày mục tiêu quá xa (tối đa 10 năm).';
+
+/** Why a resolved target date is unusable, or undefined when it is fine (or absent). */
+export function targetDateError(iso: string | null | undefined, today: string): string | undefined {
+  if (!iso || isTargetDateInRange(iso, today)) return undefined;
+  if (Number.isNaN(isoToUtcDays(iso))) return 'Ngày mục tiêu không hợp lệ.';
+  return iso < today ? TARGET_DATE_PAST : TARGET_DATE_TOO_FAR;
+}
+
+/**
+ * The step to show for a requested step: the requested step (snapped to a visible one), or the first earlier
+ * visible step that is no longer valid (e.g. the language was taken meanwhile or the target date left the range).
+ */
+export function resolveStep(requested: number, data: OnboardingDraftData, ctx: StepContext): StepNumber {
+  const steps = visibleSteps(data);
+  const wanted = steps.find((s) => s >= requested) ?? steps[steps.length - 1] ?? 1;
+  for (const s of steps) {
+    if (s >= wanted) break;
+    if (!isStepValid(s, data, ctx)) return s;
+  }
+  return wanted;
 }

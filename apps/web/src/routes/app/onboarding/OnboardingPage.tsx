@@ -9,12 +9,14 @@ import {
   fieldErrors,
   isLevelOf,
   LANGUAGE_CODES,
+  LANGUAGES,
   suggestedCurrentLevel,
   type LanguageCode,
 } from '@linguo/shared';
 import { FullScreenLoader } from '@/components/layout/FullScreenLoader';
-import { Button } from '@/components/ui/Button';
+import { Button, buttonClasses } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
+import { Spinner } from '@/components/ui/Spinner';
 import { useToast } from '@/components/ui/Toast';
 import { presetFromWeek } from '@/features/learning-paths/components/schedule';
 import { learningPathErrorMessage } from '@/features/learning-paths/error-map';
@@ -24,7 +26,7 @@ import { useReferenceHours } from '@/features/learning-paths/useReferenceHours';
 import { useProfile } from '@/features/profile/ProfileProvider';
 import { todayIso } from '@/lib/dates';
 import { requireSupabase } from '@/lib/supabase';
-import { isStepValid, resolveTargetDate, scheduleOf, visibleSteps, type StepNumber } from './logic';
+import { isStepValid, resolveStep, resolveTargetDate, scheduleOf, visibleSteps, type StepNumber } from './logic';
 import { OnboardingCelebration } from './OnboardingCelebration';
 import { OnboardingProgress } from './OnboardingProgress';
 import { StepCurrentLevel } from './StepCurrentLevel';
@@ -45,36 +47,65 @@ const TITLES: Record<StepNumber, string> = {
 };
 
 export function OnboardingPage() {
-  const [params] = useSearchParams();
+  const [params, setParams] = useSearchParams();
   const langParam = params.get('lang');
   const initialLanguage = (LANGUAGE_CODES as readonly string[]).includes(langParam ?? '') ? (langParam as LanguageCode) : undefined;
-  const { draft, discarded, update, goTo, clear } = useOnboardingDraft(initialLanguage);
+  const { draft, discarded, update, goTo, reset, clear } = useOnboardingDraft();
   const paths = useLearningPaths();
   const { profile } = useProfile();
   const reference = useReferenceHours();
   const toast = useToast();
   const navigate = useNavigate();
   const titleRef = useRef<HTMLHeadingElement>(null);
+  const creatingRef = useRef(false);
+  const discardedToast = useRef(false);
   const [creating, setCreating] = useState(false);
   const [createError, setCreateError] = useState<string | null>(null);
+  const [pathExists, setPathExists] = useState(false);
   const [created, setCreated] = useState<LearningPath | null>(null);
+  const [langHandled, setLangHandled] = useState(false);
 
   const today = todayIso(profile?.timezone ?? DEFAULT_TIMEZONE);
-  const data = draft.data;
+  const ready = paths.status === 'ready';
   const taken = paths.paths.map((p) => p.language);
+
+  // ?lang= starts a fresh draft at step 2 when that language is free; a taken one is ignored (keeps the draft).
+  if (!langHandled && ready) {
+    setLangHandled(true);
+    if (initialLanguage && LANGUAGES[initialLanguage].available && !taken.includes(initialLanguage) && draft.data.language !== initialLanguage) {
+      reset({ version: 1, step: 2, data: { language: initialLanguage } });
+    }
+  }
+
+  const data = draft.data;
+  const ctx = { taken, today };
   const steps = visibleSteps(data);
-  const step: StepNumber = steps.includes(draft.step as StepNumber) ? (draft.step as StepNumber) : (steps.find((s) => s > draft.step) ?? 1);
+  // The URL (`buoc`) drives the step when it is visible and reachable, so hardware back returns to the previous one;
+  // otherwise the saved step, pulled back to the first earlier step that is no longer valid.
+  const urlStep = Number.parseInt(params.get('buoc') ?? '', 10);
+  const urlStepOk = steps.includes(urlStep as StepNumber) && resolveStep(urlStep, data, ctx) === urlStep;
+  const step: StepNumber = urlStepOk ? (urlStep as StepNumber) : resolveStep(draft.step, data, ctx);
   const index = steps.indexOf(step);
   const schedule = scheduleOf(data);
   const targetDate = resolveTargetDate(data, today);
 
   useEffect(() => {
-    if (discarded) toast.show({ tone: 'info', message: 'Bản nháp cũ không dùng được nữa, mình bắt đầu lại từ đầu nhé.' });
+    if (discarded && !discardedToast.current) {
+      discardedToast.current = true;
+      toast.show({ tone: 'info', message: 'Bản nháp cũ không dùng được nữa, mình bắt đầu lại từ đầu nhé.' });
+    }
   }, [discarded, toast]);
 
   useEffect(() => {
     titleRef.current?.focus();
   }, [step]);
+
+  // Keep the saved draft and the URL in line with the step actually shown (mount, popstate, corrections).
+  useEffect(() => {
+    if (!ready) return;
+    goTo(step);
+    if (params.get('buoc') !== String(step)) setParams({ ...Object.fromEntries(params), buoc: String(step) }, { replace: true });
+  }, [ready, step, params, goTo, setParams]);
 
   const input = useMemo(() => {
     const parsed = createPathSchema.safeParse({
@@ -108,32 +139,46 @@ export function OnboardingPage() {
   }
   if (created) return <OnboardingCelebration path={created} onDone={() => navigate('/app', { replace: true })} />;
 
+  /** Pushes a history entry so the hardware/swipe back gesture returns to the previous step. */
+  const go = (to: StepNumber) => {
+    setCreateError(null);
+    setPathExists(false);
+    goTo(to);
+    setParams({ ...Object.fromEntries(params), buoc: String(to) });
+  };
   const goNext = () => {
     const nextStep = steps[index + 1];
-    if (nextStep) goTo(nextStep);
+    if (nextStep) go(nextStep);
   };
   const goBack = () => {
     const prev = steps[index - 1];
-    if (prev) goTo(prev);
-    else navigate(paths.paths.length > 0 ? '/app' : '/', { replace: false });
+    if (prev) go(prev);
+    else navigate('/app');
   };
 
   async function create() {
-    if (!input.success) {
-      setCreateError(Object.values(fieldErrors(input.error))[0] ?? 'Thông tin chưa hợp lệ.');
-      return;
-    }
-    if (creating) return;
-    setCreating(true);
-    setCreateError(null);
+    if (creatingRef.current) return;
+    creatingRef.current = true;
     try {
+      if (!input.success) {
+        setCreateError(Object.values(fieldErrors(input.error))[0] ?? 'Thông tin chưa hợp lệ.');
+        return;
+      }
+      setCreating(true);
+      setCreateError(null);
+      setPathExists(false);
       const path = await createPath(requireSupabase(), input.data);
       paths.upsertPath(path, { makeCurrent: true });
       clear();
       setCreated(path);
     } catch (error) {
       setCreateError(learningPathErrorMessage(error));
+      if (error && typeof error === 'object' && 'message' in error && error.message === 'path_exists_for_language') {
+        setPathExists(true);
+        paths.reload();
+      }
     } finally {
+      creatingRef.current = false;
       setCreating(false);
     }
   }
@@ -142,7 +187,7 @@ export function OnboardingPage() {
   if (step === 1) {
     body = (
       <StepLanguage
-        value={data.language}
+        value={data.language && taken.includes(data.language) ? undefined : data.language}
         taken={taken}
         onChange={(language) => {
           if (language !== data.language) {
@@ -164,11 +209,14 @@ export function OnboardingPage() {
       />
     );
   } else if (step === 3 && data.language) {
+    const language = data.language;
     body = (
       <StepCurrentLevel
-        language={data.language}
+        language={language}
         value={data.currentLevel}
-        onChange={(currentLevel) => update({ currentLevel, targetLevel: undefined, goalType: data.goalType })}
+        onChange={(currentLevel) =>
+          update({ currentLevel, targetLevel: data.goalType ? (defaultTarget(language, data.goalType, currentLevel) ?? undefined) : undefined })
+        }
       />
     );
   } else if (step === 4 && data.language && data.currentLevel) {
@@ -202,7 +250,7 @@ export function OnboardingPage() {
       <StepReview
         input={input.data}
         estimate={estimate}
-        onEdit={goTo}
+        onEdit={go}
         onApplyMinutes={(minutes) => {
           const week = schedule.weeklyMinutes.map((m) => (m > 0 ? minutes : 0));
           update({ schedulePreset: presetFromWeek(week), weeklyMinutes: week });
@@ -211,15 +259,32 @@ export function OnboardingPage() {
         onCreate={() => void create()}
         creating={creating}
         error={createError}
+        errorAction={
+          pathExists ? (
+            <Link to="/app" className={buttonClasses('ghost')}>
+              Về trang chủ
+            </Link>
+          ) : undefined
+        }
       />
     ) : (
-      <ErrorState title="Thông tin chưa đầy đủ" description="Hãy quay lại các bước trước để hoàn tất." onRetry={() => goTo(1)} retryLabel="Về bước 1" />
+      <ErrorState title="Thông tin chưa đầy đủ" description="Hãy quay lại các bước trước để hoàn tất." onRetry={() => go(1)} retryLabel="Về bước 1" />
     );
   }
 
-  if (reference.status === 'error' && step >= 3) {
+  if (step >= 3 && reference.status === 'error') {
     body = <ErrorState title="Không tải được bảng trình độ" onRetry={reference.retry} />;
+  } else if (step >= 3 && reference.status === 'loading') {
+    body = (
+      <div role="status" className="flex items-center gap-3 py-6 text-muted">
+        <Spinner className="size-5 text-primary" />
+        <span>Đang tải bảng trình độ…</span>
+      </div>
+    );
   }
+
+  const availableCodes = LANGUAGE_CODES.filter((code) => LANGUAGES[code].available);
+  const allTaken = availableCodes.length > 0 && availableCodes.every((code) => taken.includes(code));
 
   const valid = isStepValid(step, data, { taken, today }) && !(step >= 3 && reference.status !== 'ready');
 
@@ -227,14 +292,18 @@ export function OnboardingPage() {
     <div className="flex min-h-hero flex-col bg-bg">
       <header className="pt-safe">
         <div className="mx-auto flex h-14 w-full max-w-xl items-center gap-2 px-safe">
-          <button
-            type="button"
-            onClick={goBack}
-            aria-label="Quay lại"
-            className="inline-flex size-11 shrink-0 items-center justify-center rounded-full hover:bg-text/5"
-          >
-            <ArrowLeft aria-hidden className="size-5" />
-          </button>
+          {index > 0 || paths.paths.length > 0 ? (
+            <button
+              type="button"
+              onClick={goBack}
+              aria-label="Quay lại"
+              className="inline-flex size-11 shrink-0 items-center justify-center rounded-full hover:bg-text/5"
+            >
+              <ArrowLeft aria-hidden className="size-5" />
+            </button>
+          ) : (
+            <span aria-hidden="true" className="size-11 shrink-0" />
+          )}
           <OnboardingProgress current={index + 1} total={steps.length} />
           {paths.paths.length > 0 ? (
             <Link to="/app" aria-label="Thoát tạo lộ trình" className="inline-flex size-11 shrink-0 items-center justify-center rounded-full hover:bg-text/5">
@@ -257,9 +326,18 @@ export function OnboardingPage() {
       {step !== 6 && (
         <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-surface-solid/95 pb-safe backdrop-blur-md">
           <div className="mx-auto w-full max-w-xl px-safe py-3">
-            <Button variant="accent" size="lg" block disabled={!valid} onClick={goNext}>
-              Tiếp tục
-            </Button>
+            {step === 1 && allTaken ? (
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <p className="text-[15px] text-muted">Bạn đã có lộ trình cho cả hai ngôn ngữ.</p>
+                <Link to="/app" className={buttonClasses('accent', 'md')}>
+                  Về trang chủ
+                </Link>
+              </div>
+            ) : (
+              <Button variant="accent" size="lg" block disabled={!valid} onClick={goNext}>
+                Tiếp tục
+              </Button>
+            )}
           </div>
         </footer>
       )}

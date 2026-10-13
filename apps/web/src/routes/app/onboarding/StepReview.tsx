@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { GOAL_LABELS, LANGUAGES, LEVEL_INFO, START_POINT_LABELS, type CreatePathInput, type EstimateResult, type LevelCode } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
@@ -15,9 +16,10 @@ interface Props {
   onCreate: () => void;
   creating: boolean;
   error: string | null;
+  errorAction?: ReactNode;
 }
 
-export function StepReview({ input, estimate, onEdit, onApplyMinutes, onApplyDate, onCreate, creating, error }: Props) {
+export function StepReview({ input, estimate, onEdit, onApplyMinutes, onApplyDate, onCreate, creating, error, errorAction }: Props) {
   const weekly = input.weeklyMinutes.reduce((s, m) => s + m, 0);
   const rows: Array<{ label: string; value: string; step: StepNumber }> = [
     { label: 'Ngôn ngữ', value: LANGUAGES[input.language].nameVi, step: 1 },
@@ -73,9 +75,12 @@ export function StepReview({ input, estimate, onEdit, onApplyMinutes, onApplyDat
       <p className="text-sm text-muted">Trình độ từng kỹ năng sẽ được ghi nhận là tự đánh giá cho tới khi có bài kiểm tra đầu vào.</p>
 
       {error && (
-        <p role="alert" className="rounded-2xl border border-error/30 bg-error/10 px-4 py-3 text-[15px] text-error">
-          {error}
-        </p>
+        <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-error/30 bg-error/10 px-4 py-3">
+          <p role="alert" className="text-[15px] text-error">
+            {error}
+          </p>
+          {errorAction}
+        </div>
       )}
       <Button variant="accent" size="lg" block loading={creating} onClick={onCreate}>
         Tạo lộ trình

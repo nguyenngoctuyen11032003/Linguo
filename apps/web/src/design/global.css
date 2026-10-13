@@ -32,6 +32,7 @@
 
 @layer base {
   html {
+    scroll-padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0px));
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
   }

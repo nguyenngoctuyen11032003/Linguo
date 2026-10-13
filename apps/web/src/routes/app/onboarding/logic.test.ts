@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { isStepValid, resolveTargetDate, scheduleOf, visibleSteps } from './logic';
+import { isStepValid, resolveStep, resolveTargetDate, scheduleOf, targetDateError, visibleSteps } from './logic';
 
 const today = '2026-10-13';
 
@@ -32,5 +32,28 @@ describe('onboarding logic', () => {
     expect(isStepValid(5, { deadlineMode: 'date', targetDate: '2026-10-01' }, ctx)).toBe(false);
     expect(isStepValid(5, { deadlineMode: 'weeks' }, ctx)).toBe(false);
     expect(isStepValid(5, { deadlineMode: 'weeks', deadlineAmount: 8 }, ctx)).toBe(true);
+  });
+
+  it('bounds the deadline to ten years for dates, weeks and months', () => {
+    const ctx = { taken: [], today };
+    expect(isStepValid(5, { deadlineMode: 'date', targetDate: '2036-10-10' }, ctx)).toBe(true);
+    expect(isStepValid(5, { deadlineMode: 'date', targetDate: '2036-10-11' }, ctx)).toBe(false);
+    expect(isStepValid(5, { deadlineMode: 'months', deadlineAmount: 120 }, ctx)).toBe(false);
+    expect(isStepValid(5, { deadlineMode: 'months', deadlineAmount: 119 }, ctx)).toBe(true);
+    expect(isStepValid(5, { deadlineMode: 'weeks', deadlineAmount: 520 }, ctx)).toBe(true);
+    expect(targetDateError('2040-01-01', today)).toBe('Ngày mục tiêu quá xa (tối đa 10 năm).');
+    expect(targetDateError('2026-10-01', today)).toBe('Ngày mục tiêu đã qua.');
+    expect(targetDateError('2027-01-01', today)).toBeUndefined();
+  });
+
+  it('pulls a restored step back to the first invalid earlier step', () => {
+    const full = { language: 'en' as const, startPoint: 'some' as const, currentLevel: 'a2', goalType: 'cefr' as const, targetLevel: 'b2' };
+    const ctx = { taken: [], today };
+    expect(resolveStep(6, full, ctx)).toBe(6);
+    expect(resolveStep(6, { ...full, deadlineMode: 'date', targetDate: '2040-01-01' }, ctx)).toBe(5);
+    expect(resolveStep(6, full, { taken: ['en'], today })).toBe(1);
+    expect(resolveStep(4, { ...full, currentLevel: undefined }, ctx)).toBe(3);
+    expect(resolveStep(3, { ...full, startPoint: 'new' }, ctx)).toBe(4);
+    expect(resolveStep(2, {}, ctx)).toBe(1);
   });
 });
