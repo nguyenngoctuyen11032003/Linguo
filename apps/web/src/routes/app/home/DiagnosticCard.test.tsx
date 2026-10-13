@@ -1,10 +1,11 @@
 import { screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import type { DiagnosticStatus } from '@linguo/shared';
+import { ATTEMPT_ID, status } from '@/features/diagnostic/diagnostic-fixtures';
 import { renderWithProviders } from '../../../../tests/unit/render';
 import { DiagnosticCard } from './DiagnosticCard';
 
-type Hook = { status: 'loading' | 'ready' | 'error'; data: DiagnosticStatus | null; reload: () => void };
+type Hook = { status: 'loading' | 'ready' | 'error'; data: DiagnosticStatus | null; error: string | null; reload: () => void };
 const mocks = vi.hoisted(() => ({ value: null as unknown as Hook, pathIds: [] as Array<string | undefined> }));
 
 vi.mock('@/features/diagnostic/useDiagnosticStatus', () => ({
@@ -14,11 +15,11 @@ vi.mock('@/features/diagnostic/useDiagnosticStatus', () => ({
   },
 }));
 
-const NONE: DiagnosticStatus = { attempt_id: null, status: 'none', completed_at: null, applied_at: null, retake_after: null, can_start: true };
-const ATTEMPT = '22222222-2222-4222-8222-222222222222';
+const NONE: DiagnosticStatus = status();
+const ATTEMPT = ATTEMPT_ID;
 
-function setHook(status: Hook['status'], data: Partial<DiagnosticStatus> | null) {
-  mocks.value = { status, data: data && { ...NONE, ...data }, reload: vi.fn() };
+function setHook(state: Hook['status'], data: Partial<DiagnosticStatus> | null) {
+  mocks.value = { status: state, data: data && { ...NONE, ...data }, error: state === 'error' ? 'Lỗi' : null, reload: vi.fn() };
 }
 
 const render = () => renderWithProviders(<DiagnosticCard pathId="path-en" />, { route: '/app' });
