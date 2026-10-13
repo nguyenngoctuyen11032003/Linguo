@@ -8,7 +8,7 @@ import { AuthContext, type AuthState } from '@/features/auth/AuthProvider';
 import { LearningPathsContext, type LearningPathsContextValue } from '@/features/learning-paths/LearningPathsProvider';
 import { EX1, EX2, LESSON_ID, PATH_ID, RUN_ID, attempt, payload, result, run } from './lesson-fixtures';
 import { OutboxSyncProvider } from './OutboxSyncProvider';
-import { createOutbox } from './outbox';
+import { createOutbox, outboxKey } from './outbox';
 import { lessonCacheKey, useLessonRun } from './useLessonRun';
 
 const USER_ID = '11111111-1111-4111-8111-111111111111';
@@ -296,6 +296,9 @@ describe('useLessonRun', () => {
       queued!.args.p_idempotency_key,
     ]);
     expect(hook.current.api.pendingCount).toBe(0);
+    // This tab applied the result itself: no refetch.
+    await new Promise((r) => setTimeout(r, 10));
+    expect(fake.callsOf('get_lesson')).toHaveLength(1);
     // Synced, but EX2 is still unanswered.
     expect(hook.current.api.unresolved).toEqual([5]);
     expect(hook.current.api.canComplete).toBe(false);
@@ -324,6 +327,46 @@ describe('useLessonRun', () => {
     });
     await waitFor(() => expect(hook.current.api.exerciseState(EX1, 0).status).toBe('graded'));
     expect(new Set(fake.callsOf('submit_exercise').map((a) => a.p_idempotency_key))).toEqual(new Set([sent!.p_idempotency_key]));
+  });
+
+  it('shows the server result when another tab sends a pending answer', async () => {
+    let graded = false;
+    const fake = installClient({
+      get_lesson: () => ({ data: payload({ attempts: graded ? [attempt(EX1)] : [] }) }),
+      submit_exercise: () => ({ error: NETWORK }),
+    });
+    const { result: hook } = renderRun();
+    await ready(hook);
+    await act(() => hook.current.api.submit(EX1, 0, { option_id: 'a' }, { confidence: null, responseMs: 10, hintCount: 0 }));
+    expect(hook.current.api.exerciseState(EX1, 0).status).toBe('pending_sync');
+
+    // The other tab drains the outbox: here only a storage event arrives, never the result.
+    graded = true;
+    localStorage.removeItem(outboxKey(USER_ID));
+    act(() => {
+      window.dispatchEvent(new StorageEvent('storage', { key: outboxKey(USER_ID) }));
+    });
+    await waitFor(() => expect(hook.current.api.exerciseState(EX1, 0).status).toBe('graded'));
+    expect(fake.callsOf('get_lesson')).toHaveLength(2);
+    expect(hook.current.api.pendingCount).toBe(0);
+  });
+
+  it('does not keep an answer pending once it left the outbox, even when the refetch fails', async () => {
+    let offline = false;
+    installClient({
+      get_lesson: () => (offline ? { error: NETWORK } : { data: payload() }),
+      submit_exercise: () => ({ error: NETWORK }),
+    });
+    const { result: hook } = renderRun();
+    await ready(hook);
+    await act(() => hook.current.api.submit(EX1, 0, { option_id: 'a' }, { confidence: null, responseMs: 10, hintCount: 0 }));
+    offline = true;
+    // Expired (pruned after 7 days) in another tab.
+    localStorage.removeItem(outboxKey(USER_ID));
+    act(() => {
+      window.dispatchEvent(new StorageEvent('storage', { key: outboxKey(USER_ID) }));
+    });
+    await waitFor(() => expect(hook.current.api.exerciseState(EX1, 0).status).toBe('idle'));
   });
 
   it('queues straight to the outbox when the browser is offline', async () => {

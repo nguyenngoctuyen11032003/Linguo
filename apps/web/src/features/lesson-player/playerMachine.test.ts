@@ -146,6 +146,33 @@ describe('playerReducer', () => {
   });
 });
 
+describe('outbox sync', () => {
+  it('clears only pending entries that left the outbox', () => {
+    let state = loaded();
+    state = playerReducer(state, { type: 'pending', exerciseId: EX1, queueIndex: 0 });
+    state = playerReducer(state, { type: 'submitting', exerciseId: EX2, queueIndex: 1 });
+    state = playerReducer(state, {
+      type: 'outboxCleared',
+      entries: [
+        { exerciseId: EX1, queueIndex: 0 },
+        { exerciseId: EX2, queueIndex: 1 },
+      ],
+    });
+    expect(state.local).toEqual({ [`${EX2}#1`]: 'submitting' });
+  });
+
+  it('merges refetched attempts with local ones and keeps the longer queue', () => {
+    let state = loaded();
+    const local = result({ verdict: 'incorrect', is_correct: false, revealed: true, requeued: true });
+    state = playerReducer(state, { type: 'graded', exerciseId: EX1, queueIndex: 0, result: local });
+    const server = attempt(EX2);
+    state = playerReducer(state, { type: 'attemptsSynced', attempts: [server], queue: [EX1, EX2] });
+    expect(state.attempts.map((a) => a.attempt_id)).toEqual([server.attempt_id, local.attempt_id]);
+    expect(state.run?.queue).toEqual([EX1, EX2, EX1]);
+    expect(exerciseStateFor(state, EX2, 1).status).toBe('graded');
+  });
+});
+
 describe('exerciseStateFor', () => {
   it('derives graded state from loaded attempts', () => {
     const a1 = attempt(EX1, { verdict: 'incorrect', is_correct: false, final: false });

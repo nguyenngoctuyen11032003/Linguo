@@ -54,6 +54,10 @@ export type PlayerAction =
   | ({ type: 'failed' } & EntryRef)
   | ({ type: 'graded'; result: SubmitResult } & EntryRef)
   | { type: 'queueChanged'; queue: string[] }
+  /** These entries left the outbox without a result reaching this tab (another tab sent them, or they expired). */
+  | { type: 'outboxCleared'; entries: EntryRef[] }
+  /** Server attempts and queue of this run, refetched after `outboxCleared`. */
+  | { type: 'attemptsSynced'; attempts: LessonAttempt[]; queue: string[] }
   | { type: 'completed'; result: CompleteResult };
 
 export const initialPlayerState: PlayerState = {
@@ -165,6 +169,22 @@ export function playerReducer(state: PlayerState, action: PlayerAction): PlayerS
     }
     case 'queueChanged':
       return withQueue(state, action.queue);
+    case 'outboxCleared': {
+      let local = state.local;
+      for (const e of action.entries) {
+        const key = entryKey(e.exerciseId, e.queueIndex);
+        if (local[key] === 'pending_sync') local = withoutLocal(local, key);
+      }
+      return local === state.local ? state : { ...state, local };
+    }
+    case 'attemptsSynced': {
+      // The server list is the truth; keep local results it did not include yet (graded after the refetch started).
+      const known = new Set(action.attempts.map((a) => a.attempt_id));
+      const attempts = [...action.attempts, ...state.attempts.filter((a) => !known.has(a.attempt_id))];
+      // The queue only ever grows, so the longer one is the newer.
+      const queue = state.run && state.run.queue.length > action.queue.length ? state.run.queue : action.queue;
+      return withQueue({ ...state, attempts }, queue);
+    }
     case 'completed': {
       const run = state.run
         ? { ...state.run, status: 'completed' as const, next_review_at: action.result.next_review_at }

@@ -16,7 +16,7 @@ import { isNetworkError } from '@/lib/network-error';
 import { getSupabase, type AppSupabaseClient } from '@/lib/supabase';
 import { useOnline } from '@/lib/useOnline';
 import { isUnansweredError, lessonErrorMessage } from './error-map';
-import { createOutbox, type OutboxEntry } from './outbox';
+import { createOutbox, OUTBOX_CHANGE_EVENT, outboxKey, type OutboxEntry } from './outbox';
 import {
   buildSteps,
   entryKey,
@@ -134,10 +134,14 @@ export function useLessonRun(lessonId: string): LessonRunApi {
   /** Lesson the learner asked to study again ("Học lại"); the next load starts a new run for it. */
   const restartFor = useRef<string | null>(null);
 
+  /** Outbox entries whose result this tab applied: their removal from the outbox is not a vanish (below). */
+  const appliedFromOutbox = useRef(new Set<string>());
+
   const applyOutcome = useCallback(
     (outcome: OutboxOutcome, entry: OutboxEntry) => {
       if (entry.args.p_run_id !== runIdRef.current) return;
       const ref: EntryRef = { exerciseId: entry.args.p_exercise_id, queueIndex: entry.queueIndex };
+      appliedFromOutbox.current.add(`${entry.args.p_run_id}:${entryKey(ref.exerciseId, ref.queueIndex)}`);
       if ('result' in outcome) {
         dispatch({ type: 'graded', ...ref, result: outcome.result });
       } else {
@@ -159,6 +163,65 @@ export function useLessonRun(lessonId: string): LessonRunApi {
   // The provider (mounted for every signed-in screen) replays the outbox; this lesson only listens to its results.
   const { pendingCount, subscribe } = useOutboxSyncContext();
   useEffect(() => subscribe(onOutboxResult), [subscribe, onOutboxResult]);
+
+  // ---- outbox entries that vanish (another tab sent them, or they expired after 7 days) ------------------
+  useEffect(() => {
+    if (!userId || !client || !pathId) return;
+    const key = outboxKey(userId);
+    let timer: number | undefined;
+    let active = true;
+    const check = () => {
+      const applied = appliedFromOutbox.current;
+      appliedFromOutbox.current = new Set();
+      const runId = runIdRef.current;
+      if (!runId) return;
+      const queued = new Set(
+        createOutbox(userId)
+          .list()
+          .filter((e) => e.args.p_run_id === runId)
+          .map((e) => entryKey(e.args.p_exercise_id, e.queueIndex)),
+      );
+      const vanished: EntryRef[] = [];
+      for (const [k, status] of Object.entries(latest.current.state.local)) {
+        if (status !== 'pending_sync' || queued.has(k)) continue;
+        // Sent by this tab: its result was (or is being) applied through the provider.
+        if (applied.has(`${runId}:${k}`)) continue;
+        const at = k.lastIndexOf('#');
+        vanished.push({ exerciseId: k.slice(0, at), queueIndex: Number(k.slice(at + 1)) });
+      }
+      if (vanished.length === 0) return;
+      // Never leave them pending forever; the refetch then shows whatever the server graded.
+      dispatch({ type: 'outboxCleared', entries: vanished });
+      getLesson(client, lessonId, pathId)
+        .then((payload) => {
+          if (!active || runIdRef.current !== runId || payload.run?.id !== runId) return;
+          dispatch({ type: 'attemptsSynced', attempts: payload.attempts, queue: payload.run.queue });
+        })
+        .catch(() => {
+          // Offline: the entries are idle again and can be answered; the next load brings the server state.
+        });
+    };
+    // Deferred: in this tab the drain removes an entry just before it hands over the result.
+    const schedule = () => {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(check, 0);
+    };
+    const onChange = (event: Event) => {
+      const detail = (event as CustomEvent<{ key?: string }>).detail;
+      if (!detail || detail.key === key) schedule();
+    };
+    const onStorage = (event: StorageEvent) => {
+      if (event.key === null || event.key === key) schedule();
+    };
+    window.addEventListener(OUTBOX_CHANGE_EVENT, onChange);
+    window.addEventListener('storage', onStorage);
+    return () => {
+      active = false;
+      window.clearTimeout(timer);
+      window.removeEventListener(OUTBOX_CHANGE_EVENT, onChange);
+      window.removeEventListener('storage', onStorage);
+    };
+  }, [userId, client, pathId, lessonId]);
 
   // ---- loading -------------------------------------------------------------------------------------------
   useEffect(() => {
