@@ -33,7 +33,7 @@ function timeoutSignal(): AbortSignal | null {
   return typeof AbortSignal !== 'undefined' && typeof AbortSignal.timeout === 'function' ? AbortSignal.timeout(LESSON_RPC_TIMEOUT_MS) : null;
 }
 
-async function callRpc(client: AppSupabaseClient, fn: string, args: Record<string, unknown>): Promise<unknown> {
+export async function callRpc(client: AppSupabaseClient, fn: string, args: Record<string, unknown>): Promise<unknown> {
   const builder = (client as unknown as UntypedRpcClient).rpc(fn, args);
   const signal = timeoutSignal();
   const { data, error, status } = await (signal && typeof builder.abortSignal === 'function' ? builder.abortSignal(signal) : builder);
@@ -47,7 +47,7 @@ async function callRpc(client: AppSupabaseClient, fn: string, args: Record<strin
   return data;
 }
 
-function parse<S extends z.ZodType>(schema: S, data: unknown): z.infer<S> {
+export function parse<S extends z.ZodType>(schema: S, data: unknown): z.infer<S> {
   const parsed = schema.safeParse(data);
   if (!parsed.success) throw new Error('invalid_payload');
   return parsed.data;
