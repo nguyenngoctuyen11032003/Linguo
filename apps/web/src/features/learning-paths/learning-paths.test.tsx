@@ -19,6 +19,36 @@ describe('service', () => {
     expect(q.calls).toContainEqual(['neq', ['status', 'archived']]);
   });
 
+  it('orders open paths by created_at with an id tie-breaker', async () => {
+    const q = fakeQuery({ data: [] });
+    await listPaths(fakeClient({ learning_paths: q }));
+    const orders = q.calls.filter(([m]) => m === 'order').map(([, args]) => args);
+    expect(orders).toEqual([['created_at'], ['id']]);
+  });
+
+  it('skips reference rows with an unknown language code', async () => {
+    const q = fakeQuery({
+      data: [
+        { language_code: 'ja', level_code: 'n5', ordinal: 1, cumulative_hours: 300, reviewed: true },
+        { language_code: 'en', level_code: 'a1', ordinal: 1, cumulative_hours: 90, reviewed: false },
+      ],
+    });
+    const grouped = await listReferenceHours(fakeClient({ level_reference_hours: q }));
+    expect(grouped).toEqual({ en: [{ levelCode: 'a1', ordinal: 1, cumulativeHours: 90, reviewed: false }], ko: [] });
+    expect(q.calls).toContainEqual(['order', ['ordinal']]);
+  });
+
+  it('omits the deadline from the plan RPC when targetDate is null (full replace)', async () => {
+    const client = fakeClient({}, { update_learning_path_plan: { data: pathRow() } });
+    await updatePlan(client, 'path-en', {
+      goalType: 'daily_communication',
+      targetLevel: 'b1',
+      weeklyMinutes: [30, 30, 30, 30, 30, 30, 30],
+      targetDate: null,
+    });
+    expect(client.rpcCalls[0]?.[1]).not.toHaveProperty('p_target_date');
+  });
+
   it('reads the current path id', async () => {
     const q = fakeQuery({ data: { current_learning_path_id: 'path-en' } });
     expect(await fetchCurrentPathId(fakeClient({ profiles: q }), 'u1')).toBe('path-en');
@@ -102,6 +132,9 @@ describe('LearningPathsProvider', () => {
         <span data-testid="state">{`${ctx.status}:${ctx.paths.length}:${ctx.current?.id ?? '-'}`}</span>
         <button onClick={() => void ctx.setCurrent('path-ko')}>switch</button>
         <button onClick={() => ctx.upsertPath({ ...TEST_KO_PATH, id: 'path-new' }, { makeCurrent: true })}>add</button>
+        <button onClick={() => void ctx.setCurrent('path-3')}>go-3</button>
+        <button onClick={() => ctx.reload()}>reload</button>
+        <button onClick={() => ctx.current && ctx.upsertPath({ ...ctx.current, status: 'archived' })}>archive-current</button>
       </div>
     );
   }
@@ -150,5 +183,110 @@ describe('LearningPathsProvider', () => {
     });
     renderProvider();
     await waitFor(() => expect(screen.getByTestId('state')).toHaveTextContent('error:0:-'));
+  });
+
+  it('reports an error when there is no Supabase client', async () => {
+    mocks.client = null;
+    renderProvider();
+    await waitFor(() => expect(screen.getByTestId('state')).toHaveTextContent('error:0:-'));
+  });
+
+  /** Query whose result is read when awaited and can be held back until released. */
+  function liveQuery(getResult: () => { data: unknown; error?: unknown }) {
+    const calls: Array<[string, unknown[]]> = [];
+    let gate: Promise<void> = Promise.resolve();
+    const builder: Record<string, unknown> = {};
+    for (const method of ['select', 'eq', 'neq', 'order', 'single']) {
+      builder[method] = (...args: unknown[]) => {
+        calls.push([method, args]);
+        return builder;
+      };
+    }
+    builder.then = (resolve: (v: unknown) => unknown, reject: (e: unknown) => unknown) => {
+      const snapshot = getResult();
+      return gate.then(() => ({ data: snapshot.data, error: snapshot.error ?? null })).then(resolve, reject);
+    };
+    return {
+      query: { calls, builder } as ReturnType<typeof fakeQuery>,
+      selects: () => calls.filter(([m]) => m === 'select').length,
+      hold: () => {
+        let release!: () => void;
+        gate = new Promise<void>((r) => (release = r));
+        return release;
+      },
+    };
+  }
+
+  const koRow = () =>
+    pathRow({ id: 'path-ko', language_code: 'ko', goal_type: 'hangul_basics', current_level: 'hangul', target_level: 'topik1', estimate: ESTIMATE_RECORD });
+
+  it('falls back to the first remaining path when the current path is archived', async () => {
+    mocks.client = fakeClient({
+      learning_paths: fakeQuery({ data: [pathRow(), koRow()] }),
+      profiles: fakeQuery({ data: { current_learning_path_id: 'path-ko' } }),
+    });
+    renderProvider();
+    expect(await screen.findByText('ready:2:path-ko')).toBeInTheDocument();
+    act(() => screen.getByText('archive-current').click());
+    expect(screen.getByTestId('state')).toHaveTextContent('ready:1:path-en');
+  });
+
+  it('discards a reload that started before a local mutation and fetches again', async () => {
+    let rows: unknown[] = [pathRow(), koRow()];
+    let current = 'path-en';
+    const paths = liveQuery(() => ({ data: rows }));
+    const profile = liveQuery(() => ({ data: { current_learning_path_id: current } }));
+    mocks.client = fakeClient({ learning_paths: paths.query, profiles: profile.query });
+    renderProvider();
+    expect(await screen.findByText('ready:2:path-en')).toBeInTheDocument();
+    expect(paths.selects()).toBe(1);
+
+    const release = paths.hold();
+    await act(async () => screen.getByText('reload').click());
+    expect(screen.getByTestId('state')).toHaveTextContent('loading:2:path-en');
+
+    // A local change lands while the reload (which will return the old rows) is in flight.
+    act(() => screen.getByText('add').click());
+    rows = [pathRow(), koRow(), pathRow({ id: 'path-new', created_at: '2026-10-13T01:00:00Z' })];
+    current = 'path-new';
+    await act(async () => release());
+
+    expect(await screen.findByText('ready:3:path-new')).toBeInTheDocument();
+    expect(paths.selects()).toBe(3); // initial load, stale reload, re-triggered reload
+  });
+
+  it('applies only the latest of overlapping setCurrent calls', async () => {
+    const client = fakeClient({
+      learning_paths: fakeQuery({ data: [pathRow(), koRow(), pathRow({ id: 'path-3' })] }),
+      profiles: fakeQuery({ data: { current_learning_path_id: 'path-en' } }),
+    });
+    const resolvers: Array<() => void> = [];
+    (client as unknown as { rpc: unknown }).rpc = () => new Promise((resolve) => resolvers.push(() => resolve({ data: null, error: null })));
+    mocks.client = client;
+    renderProvider();
+    expect(await screen.findByText('ready:3:path-en')).toBeInTheDocument();
+
+    await act(async () => {
+      screen.getByText('switch').click(); // -> path-ko
+      screen.getByText('go-3').click(); // -> path-3
+    });
+    expect(resolvers).toHaveLength(2);
+    await act(async () => resolvers[1]?.());
+    expect(screen.getByTestId('state')).toHaveTextContent('ready:3:path-3');
+    await act(async () => resolvers[0]?.());
+    expect(screen.getByTestId('state')).toHaveTextContent('ready:3:path-3');
+  });
+
+  it('keeps previously loaded paths when a reload fails', async () => {
+    let result: { data: unknown; error?: unknown } = { data: [pathRow(), koRow()] };
+    mocks.client = fakeClient({
+      learning_paths: liveQuery(() => result).query,
+      profiles: fakeQuery({ data: { current_learning_path_id: 'path-en' } }),
+    });
+    renderProvider();
+    expect(await screen.findByText('ready:2:path-en')).toBeInTheDocument();
+    result = { data: null, error: { message: 'boom' } };
+    await act(async () => screen.getByText('reload').click());
+    await waitFor(() => expect(screen.getByTestId('state')).toHaveTextContent('error:2:path-en'));
   });
 });
