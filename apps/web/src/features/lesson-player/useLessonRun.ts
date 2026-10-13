@@ -291,8 +291,9 @@ export function useLessonRun(lessonId: string): LessonRunApi {
       };
       const queueOffline = () => {
         if (!createOutbox(userId).add({ args, queueIndex })) {
-          // Storage full/blocked: nothing would ever sync it, so do not show it as waiting.
-          fail(new TypeError('Failed to fetch'));
+          // Storage full/blocked: nothing would ever sync it, so do not show it as waiting. The answer stays on
+          // screen (the entry goes back to idle) so the learner can send it again once the network is back.
+          fail(new Error('outbox_unavailable'));
           return;
         }
         if (sameRun()) dispatch({ type: 'pending', ...ref });

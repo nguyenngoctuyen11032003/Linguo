@@ -22,6 +22,8 @@ const MESSAGES: Record<string, string> = {
   ...LESSON_MESSAGES,
   invalid_payload: 'Dữ liệu bài học không hợp lệ. Vui lòng thử lại.',
   supabase_unavailable: 'Chưa cấu hình kết nối máy chủ.',
+  /** The offline outbox could not be written (storage full or blocked). */
+  outbox_unavailable: 'Không lưu được câu trả lời trên thiết bị để gửi sau (bộ nhớ trình duyệt đầy hoặc bị chặn). Khi có mạng, hãy nộp lại.',
 };
 
 const NETWORK_MESSAGE = 'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.';

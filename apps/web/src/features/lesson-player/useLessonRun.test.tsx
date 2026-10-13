@@ -311,7 +311,29 @@ describe('useLessonRun', () => {
     }
     expect(hook.current.api.exerciseState(EX1, 0).status).toBe('idle');
     expect(hook.current.api.pendingCount).toBe(0);
-    expect(await screen.findByText(/^Không kết nối được máy chủ/)).toBeInTheDocument();
+    expect(createOutbox(USER_ID).list()).toEqual([]);
+    expect(await screen.findByText(/^Không lưu được câu trả lời trên thiết bị/)).toBeInTheDocument();
+  });
+
+  it('reports a storage failure (not a pending answer) when offline and the outbox is full', async () => {
+    const fake = installClient({ get_lesson: () => ({ data: payload() }) });
+    const { result: hook } = renderRun();
+    await ready(hook);
+    Object.defineProperty(navigator, 'onLine', { value: false, configurable: true });
+    act(() => {
+      window.dispatchEvent(new Event('offline'));
+    });
+    const setItem = vi.spyOn(localStorage, 'setItem').mockImplementation(() => {
+      throw new DOMException('quota', 'QuotaExceededError');
+    });
+    try {
+      await act(() => hook.current.api.submit(EX1, 0, { option_id: 'a' }, { confidence: null, responseMs: 10, hintCount: 0 }));
+    } finally {
+      setItem.mockRestore();
+    }
+    expect(fake.callsOf('submit_exercise')).toEqual([]);
+    expect(hook.current.api.exerciseState(EX1, 0).status).toBe('idle');
+    expect(await screen.findByText(/^Không lưu được câu trả lời trên thiết bị/)).toBeInTheDocument();
   });
 
   it('restores pending entries of this run after a reload', async () => {

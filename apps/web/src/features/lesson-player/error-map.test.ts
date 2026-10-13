@@ -26,6 +26,10 @@ describe('lessonErrorMessage', () => {
     expect(lessonErrorMessage(new Error('invalid_payload'))).toBe('Dữ liệu bài học không hợp lệ. Vui lòng thử lại.');
   });
 
+  it('maps an outbox that cannot be written', () => {
+    expect(lessonErrorMessage(new Error('outbox_unavailable'))).toMatch(/^Không lưu được câu trả lời trên thiết bị/);
+  });
+
   it('maps network failures', () => {
     expect(lessonErrorMessage(new TypeError('Failed to fetch'))).toMatch(/^Không kết nối được máy chủ/);
     expect(lessonErrorMessage({ message: 'TypeError: fetch failed', code: '' })).toMatch(/^Không kết nối được máy chủ/);

@@ -167,6 +167,20 @@ describe('ExerciseFrame — flow', () => {
     expect(onContinue).toHaveBeenCalled();
   });
 
+  it('keeps the answer and lets the learner send it again when a submit could not be saved', async () => {
+    const { onSubmit, update } = setup(makeExercise('mcq'));
+    await userEvent.click(screen.getByRole('radio', { name: /banana/ }));
+    await userEvent.click(check());
+    update({ status: 'submitting', attempts: 0, lastResult: null });
+    expect(screen.queryByText('Đang chờ đồng bộ — sẽ chấm khi có mạng')).not.toBeInTheDocument();
+    // The outbox write failed: the entry goes back to idle, never to pending_sync.
+    update(IDLE);
+    expect(screen.getByRole('radio', { name: /banana/ })).toHaveAttribute('aria-checked', 'true');
+    expect(screen.queryByText('Đang chờ đồng bộ — sẽ chấm khi có mạng')).not.toBeInTheDocument();
+    await userEvent.click(check());
+    expect(onSubmit).toHaveBeenCalledTimes(2);
+  });
+
   it('shows an inline error with "Tiếp tục" for an invalid prompt', async () => {
     const { onContinue } = setup(makeExercise('mcq', { prompt: { stem: 'x' } }));
     expect(screen.getByRole('alert')).toHaveTextContent('Bài tập bị lỗi định dạng');
