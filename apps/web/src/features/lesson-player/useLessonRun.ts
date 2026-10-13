@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useReducer, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router';
 import {
-  lessonPayloadSchema,
   type CompleteResult,
   type ExerciseResponse,
   type LessonItem,
@@ -16,6 +15,7 @@ import { isNetworkError } from '@/lib/network-error';
 import { getSupabase, type AppSupabaseClient } from '@/lib/supabase';
 import { useOnline } from '@/lib/useOnline';
 import { isUnansweredError, lessonErrorMessage } from './error-map';
+import { lessonCacheKey, readLessonCache, writeLessonCache } from './lessonCache';
 import { createOutbox, OUTBOX_CHANGE_EVENT, outboxKey, type OutboxEntry } from './outbox';
 import {
   buildSteps,
@@ -31,39 +31,12 @@ import type { ExerciseUiState, LessonRunApi, LessonStep, SubmitMeta } from './ty
 import { useOutboxSyncContext } from './OutboxSyncProvider';
 import type { OutboxOutcome } from './useOutboxSync';
 
-export const LESSON_CACHE_PREFIX = 'linguo-lesson-v1:';
 export const CURSOR_DEBOUNCE_MS = 500;
 const STEP_PARAM = 'buoc';
 const NO_ITEMS: LessonItem[] = [];
 const NO_EXERCISES: Record<string, PublicExercise> = {};
 const NO_STEPS: LessonStep[] = [];
 const NO_INDEXES: number[] = [];
-
-/** Scoped per user and path: a run belongs to one learning path, so another path must never reuse it offline. */
-export function lessonCacheKey(userId: string, pathId: string, lessonId: string): string {
-  return `${LESSON_CACHE_PREFIX}${userId}:${pathId}:${lessonId}`;
-}
-
-/** Text-only payload of the lesson being studied, so it can be reopened offline (spec 2 §7.4). */
-function readCache(key: string): LessonPayload | null {
-  try {
-    const raw = sessionStorage.getItem(key);
-    if (!raw) return null;
-    const parsed = lessonPayloadSchema.safeParse(JSON.parse(raw));
-    // Only an open run is worth reopening offline: a completed one cannot take answers and "Học lại" needs the network.
-    return parsed.success && parsed.data.run?.status === 'in_progress' ? parsed.data : null;
-  } catch {
-    return null;
-  }
-}
-
-function writeCache(key: string, payload: LessonPayload): void {
-  try {
-    sessionStorage.setItem(key, JSON.stringify(payload));
-  } catch {
-    // Offline reopen simply won't be available.
-  }
-}
 
 /** `?buoc=` is 1-based; returns a 0-based index clamped to the steps, or null when absent/invalid. */
 function parseStepParam(value: string | null, stepCount: number): number | null {
@@ -86,7 +59,7 @@ async function loadPayload(
   try {
     payload = await getLesson(client, lessonId, pathId);
   } catch (error) {
-    const cached = isNetworkError(error) ? readCache(lessonCacheKey(userId, pathId, lessonId)) : null;
+    const cached = isNetworkError(error) ? readLessonCache(lessonCacheKey(userId, pathId, lessonId)) : null;
     if (!cached) throw error;
     return cached;
   }
@@ -296,9 +269,9 @@ export function useLessonRun(lessonId: string): LessonRunApi {
     // Keyed by the run that is loaded, not by the current params: right after the lesson/path changes the state
     // still holds the previous payload (the loading effect has already cleared the key).
     const key = cacheKeyRef.current;
-    if (!ready || !key || !state.payload || !state.run) return;
-    writeCache(key, { ...state.payload, run: state.run, attempts: state.attempts });
-  }, [ready, state.payload, state.run, state.attempts]);
+    if (!ready || !key || !userId || !state.payload || !state.run) return;
+    writeLessonCache(userId, key, { ...state.payload, run: state.run, attempts: state.attempts });
+  }, [ready, userId, state.payload, state.run, state.attempts]);
 
   // ---- ?buoc= ↔ step index (browser back/forward walk the steps) ------------------------------------------
   useEffect(() => {

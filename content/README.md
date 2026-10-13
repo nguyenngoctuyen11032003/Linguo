@@ -43,7 +43,7 @@ Bài tập (khoảng 8 bài) đi theo thứ tự **recognition → recall → ap
 | `recall` | `fill_blank`, `translate` `vi_to_target` | **không** gợi ý |
 | `application` | `translate` hai chiều, `word_bank`, `mcq` tình huống | **không** gợi ý |
 
-- `mcq`/`listen`: `display_answer` phải trùng **chính xác** văn bản phương án đúng (giao diện dùng nó để đánh dấu "Đáp án đúng"). Id phương án là chuỗi ngắn ngẫu nhiên, không lộ thứ tự.
+- `mcq`/`listen`: `display_answer` phải trùng **chính xác** văn bản phương án đúng (giao diện dùng nó để đánh dấu "Đáp án đúng"). Id phương án là chuỗi ngắn ngẫu nhiên, không lộ thứ tự. Thứ tự phương án trong YAML không quan trọng: `pnpm content:build` xáo trộn cố định (theo key bài tập) khi tạo bundle, nên phương án đúng không bao giờ cố định một vị trí.
 - `listen` khi chưa có audio: `audio_asset_id: null`, `fallback_text` là câu được đọc.
 - `word_bank`: liệt kê trong `orders` **mọi** thứ tự đúng. Nếu có hai token giống nhau (ví dụ hai chữ ㅇ trong 오이), phải liệt kê cả hai hoán vị. Danh sách `tokens` phải được xáo trộn: thứ tự viết các token (chỉ xét các token có trong đáp án) không được trùng bất kỳ thứ tự đúng nào.
 - `translate`: `vi_to_target` có `source_lang: vi` và `answer_lang` là ngôn ngữ của bài (`en`/`ko`); `target_to_vi` ngược lại (`source_lang` là ngôn ngữ của bài, `answer_lang: vi`).

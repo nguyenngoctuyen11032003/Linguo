@@ -9,7 +9,8 @@ import { LearningPathsContext, type LearningPathsContextValue } from '@/features
 import { EX1, EX2, LESSON_ID, PATH_ID, RUN_ID, attempt, payload, result, run } from './lesson-fixtures';
 import { OutboxSyncProvider } from './OutboxSyncProvider';
 import { createOutbox, outboxKey } from './outbox';
-import { lessonCacheKey, useLessonRun } from './useLessonRun';
+import { lessonCacheKey, LESSON_CACHE_MAX_AGE_MS } from './lessonCache';
+import { useLessonRun } from './useLessonRun';
 
 const USER_ID = '11111111-1111-4111-8111-111111111111';
 const NETWORK = { message: 'TypeError: Failed to fetch', code: '' };
@@ -71,6 +72,7 @@ async function ready(hook: ReturnType<typeof renderRun>['result']) {
 
 afterEach(() => {
   sessionStorage.clear();
+  localStorage.clear();
   Object.defineProperty(navigator, 'onLine', { value: true, configurable: true });
 });
 
@@ -523,7 +525,7 @@ describe('useLessonRun', () => {
     installClient({ get_lesson: () => (offline ? { error: NETWORK } : { data: payload({ run: run({ cursor: 4 }) }) }) });
     const first = renderRun();
     await ready(first.result);
-    expect(sessionStorage.getItem(lessonCacheKey(USER_ID, PATH_ID, LESSON_ID))).not.toBeNull();
+    expect(localStorage.getItem(lessonCacheKey(USER_ID, PATH_ID, LESSON_ID))).not.toBeNull();
     first.unmount();
 
     offline = true;
@@ -545,9 +547,44 @@ describe('useLessonRun', () => {
     await waitFor(() => expect(other.result.current.api.status).toBe('error'));
     other.unmount();
 
-    sessionStorage.setItem(lessonCacheKey(USER_ID, PATH_ID, LESSON_ID), JSON.stringify(payload({ run: run({ status: 'completed' }) })));
+    localStorage.setItem(
+      lessonCacheKey(USER_ID, PATH_ID, LESSON_ID),
+      JSON.stringify({ savedAt: Date.now(), payload: payload({ run: run({ status: 'completed' }) }) }),
+    );
     const { result: hook } = renderRun();
     await waitFor(() => expect(hook.current.api.status).toBe('error'));
+  });
+
+  it('reopens the open run offline after the installed app is relaunched (new session, same localStorage)', async () => {
+    let offline = false;
+    installClient({ get_lesson: () => (offline ? { error: NETWORK } : { data: payload({ run: run({ cursor: 3 }) }) }) });
+    const first = renderRun();
+    await ready(first.result);
+    first.unmount();
+
+    // Relaunch from the home screen: sessionStorage starts empty, localStorage survives.
+    sessionStorage.clear();
+    offline = true;
+    const { result: hook } = renderRun();
+    await ready(hook);
+    expect(hook.current.api.runStatus).toBe('in_progress');
+    expect(hook.current.api.stepIndex).toBe(3);
+  });
+
+  it('does not reopen an expired or corrupt cached lesson offline', async () => {
+    installClient({ get_lesson: () => ({ error: NETWORK }) });
+    const key = lessonCacheKey(USER_ID, PATH_ID, LESSON_ID);
+    localStorage.setItem(key, JSON.stringify({ savedAt: Date.now() - LESSON_CACHE_MAX_AGE_MS - 1, payload: payload() }));
+    const expired = renderRun();
+    await waitFor(() => expect(expired.result.current.api.status).toBe('error'));
+    expect(localStorage.getItem(key)).toBeNull();
+    expired.unmount();
+
+    localStorage.setItem(key, JSON.stringify({ savedAt: Date.now(), payload: { lesson: 'nope' } }));
+    const corrupt = renderRun();
+    await waitFor(() => expect(corrupt.result.current.api.status).toBe('error'));
+    expect(corrupt.result.current.api.error).toMatch(/^Không kết nối được máy chủ/);
+    expect(localStorage.getItem(key)).toBeNull();
   });
 
   it('fails offline without a cached lesson', async () => {

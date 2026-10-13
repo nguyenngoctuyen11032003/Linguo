@@ -1,7 +1,7 @@
 // Builds the import bundle (packages/shared/src/content/bundle.ts) from checked content and renders
 // supabase/seed.sql. Output is deterministic: rows sorted by key, JSON with sorted object keys.
 import { BUNDLE_VERSION, bundleSchema } from '@linguo/shared';
-import { canonicalJson, hashRow } from './hash.mjs';
+import { canonicalJson, hashRow, sha256Hex } from './hash.mjs';
 import { contentId } from './ids.mjs';
 import { effectiveStatus, formatIssues, indexContent } from './load.mjs';
 
@@ -24,6 +24,29 @@ function review(data, isDemo) {
     reviewed_by: data.reviewed_by ?? null,
     reviewed_at: data.reviewed_at ?? null,
   };
+}
+
+/** Exercise types whose options are picked by id: their order must not hint at the answer. */
+const SHUFFLED_OPTION_TYPES = new Set(['mcq', 'listen']);
+
+/**
+ * Deterministic Fisher-Yates shuffle seeded by `seed` (each draw is a slice of sha256(seed#i)), so the same
+ * content always builds the same bundle while authors never have to vary where the correct option sits.
+ */
+export function seededShuffle(list, seed) {
+  const out = [...list];
+  for (let i = out.length - 1; i > 0; i--) {
+    const draw = Number.parseInt(sha256Hex(`${seed}#${i}`).slice(0, 12), 16) / 2 ** 48;
+    const j = Math.floor(draw * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
+/** The exercise prompt as served: mcq/listen options shuffled by the exercise key (authored YAML order is ignored). */
+export function bundlePrompt(ex) {
+  if (!SHUFFLED_OPTION_TYPES.has(ex.type) || !Array.isArray(ex.prompt?.options)) return ex.prompt;
+  return { ...ex.prompt, options: seededShuffle(ex.prompt.options, ex.key) };
 }
 
 function withHash(row, children) {
@@ -123,7 +146,7 @@ export function buildBundle(loaded, { gitSha = null } = {}) {
         stage: ex.stage,
         answer_lang: ex.answer_lang,
         difficulty: ex.difficulty,
-        prompt: ex.prompt,
+        prompt: bundlePrompt(ex),
         ...lessonReview,
         key_data: {
           answer_key: ex.answer,
