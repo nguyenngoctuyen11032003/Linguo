@@ -140,4 +140,62 @@ describe('LanguagePill', () => {
     expect(screen.getByRole('button', { name: 'Sau' })).toHaveFocus();
     expect(trigger).toHaveAttribute('aria-expanded', 'false');
   });
+
+  it('returns focus to the trigger after selecting a path', async () => {
+    render(withMotion(<LanguagePill paths={paths} currentId="path-en" onSelect={vi.fn()} onAdd={vi.fn()} />));
+    const trigger = screen.getByRole('button', { name: /Ngôn ngữ đang học/ });
+    await userEvent.click(trigger);
+    await userEvent.click(screen.getByRole('button', { name: /Tiếng Hàn/ }));
+    expect(trigger).toHaveFocus();
+    expect(trigger).toHaveAttribute('aria-expanded', 'false');
+  });
+
+  it('returns focus to the trigger after "+ Thêm"', async () => {
+    const onAdd = vi.fn();
+    render(withMotion(<LanguagePill paths={[paths[0]!]} currentId="path-en" onSelect={vi.fn()} onAdd={onAdd} />));
+    const trigger = screen.getByRole('button', { name: /Ngôn ngữ đang học/ });
+    await userEvent.click(trigger);
+    await userEvent.click(screen.getByRole('button', { name: '+ Thêm Tiếng Hàn' }));
+    expect(onAdd).toHaveBeenCalledWith('ko');
+    expect(trigger).toHaveFocus();
+  });
+
+  it('marks the trigger busy and disables the items while pending', async () => {
+    const onSelect = vi.fn();
+    render(withMotion(<LanguagePill paths={paths} currentId="path-en" pending onSelect={onSelect} onAdd={vi.fn()} />));
+    const trigger = screen.getByRole('button', { name: /Ngôn ngữ đang học/ });
+    expect(trigger).toHaveAttribute('aria-busy', 'true');
+    expect(trigger.querySelector('span[aria-hidden="true"]')).not.toBeNull();
+    await userEvent.click(trigger);
+    const items = screen.getAllByRole('button').filter((b) => b !== trigger);
+    expect(items).toHaveLength(2);
+    for (const item of items) expect(item).toBeDisabled();
+    await userEvent.click(items[1]!);
+    expect(onSelect).not.toHaveBeenCalled();
+  });
+
+  it('is not busy by default', () => {
+    render(withMotion(<LanguagePill paths={paths} currentId="path-en" onSelect={vi.fn()} onAdd={vi.fn()} />));
+    expect(screen.getByRole('button', { name: /Ngôn ngữ đang học/ })).not.toHaveAttribute('aria-busy');
+  });
+
+  it('prompts to choose a language without a current path', () => {
+    render(withMotion(<LanguagePill paths={[]} currentId={null} onSelect={vi.fn()} onAdd={vi.fn()} />));
+    expect(screen.getByRole('button', { name: 'Chọn ngôn ngữ học' })).toHaveTextContent('Ngôn ngữ');
+  });
+
+  it('offers no "+ Thêm" when every available language has a path', async () => {
+    render(withMotion(<LanguagePill paths={paths} currentId="path-en" onSelect={vi.fn()} onAdd={vi.fn()} />));
+    await userEvent.click(screen.getByRole('button', { name: /Ngôn ngữ đang học/ }));
+    expect(screen.queryByRole('button', { name: /Thêm/ })).not.toBeInTheDocument();
+  });
+
+  it('keeps the panel inside the viewport on small screens', () => {
+    render(withMotion(<LanguagePill paths={paths} currentId="path-en" onSelect={vi.fn()} onAdd={vi.fn()} />));
+    const panel = screen.getByRole('button', { name: /Ngôn ngữ đang học/ }).nextElementSibling!;
+    expect(panel.className).toContain('max-sm:fixed');
+    expect(panel.className).toContain('max-sm:inset-x-4');
+    expect(panel.className).toContain('max-sm:w-auto');
+    expect(panel.className).toContain('sm:absolute');
+  });
 });

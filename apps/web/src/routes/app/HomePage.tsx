@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Navigate } from 'react-router';
 import { DEFAULT_TIMEZONE } from '@linguo/shared';
 import { ErrorState } from '@/components/ui/ErrorState';
@@ -12,14 +12,17 @@ import { requireSupabase } from '@/lib/supabase';
 import { PathSummaryCard } from './home/PathSummaryCard';
 import { SpreadWarning } from './home/SpreadWarning';
 
-const todayLabel = () => new Intl.DateTimeFormat('vi-VN', { weekday: 'long', day: 'numeric', month: 'long' }).format(new Date());
+const todayLabel = (timeZone: string) =>
+  new Intl.DateTimeFormat('vi-VN', { weekday: 'long', day: 'numeric', month: 'long', timeZone }).format(new Date());
 
 export function HomePage() {
   const { status, profile, reload } = useProfile();
   const paths = useLearningPaths();
   const toast = useToast();
   const [resuming, setResuming] = useState(false);
+  const cardHeadingRef = useRef<HTMLHeadingElement>(null);
   const name = profile?.displayName.trim();
+  const timeZone = profile?.timezone ?? DEFAULT_TIMEZONE;
 
   if (paths.status === 'ready' && paths.paths.length === 0) return <Navigate to="/app/bat-dau" replace />;
 
@@ -28,6 +31,9 @@ export function HomePage() {
     setResuming(true);
     try {
       paths.upsertPath(await setPathStatus(requireSupabase(), paths.current.id, 'active'));
+      toast.show({ tone: 'success', message: 'Đã tiếp tục lộ trình.' });
+      // The "Tiếp tục lộ trình" button disappears; keep keyboard focus inside the card.
+      cardHeadingRef.current?.focus();
     } catch (error) {
       toast.show({ tone: 'error', message: learningPathErrorMessage(error) });
     } finally {
@@ -38,7 +44,7 @@ export function HomePage() {
   return (
     <div className="space-y-6">
       <header className="space-y-1">
-        <p className="text-sm capitalize text-muted">{todayLabel()}</p>
+        <p className="text-sm capitalize text-muted">{todayLabel(timeZone)}</p>
         <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">
           {status === 'loading' ? (
             <>
@@ -52,16 +58,17 @@ export function HomePage() {
       </header>
 
       {status === 'error' && <ErrorState title="Không tải được hồ sơ" onRetry={reload} />}
-      {paths.status === 'loading' && <Skeleton className="block h-64 w-full rounded-3xl" />}
+      {paths.status === 'loading' && paths.paths.length === 0 && <Skeleton className="block h-64 w-full rounded-3xl" />}
       {paths.status === 'error' && <ErrorState title="Không tải được lộ trình" onRetry={paths.reload} />}
-      {paths.status === 'ready' && paths.current && (
+      {paths.status !== 'error' && paths.current && (
         <>
           <SpreadWarning paths={paths.paths} />
           <PathSummaryCard
             path={paths.current}
-            timeZone={profile?.timezone ?? DEFAULT_TIMEZONE}
+            timeZone={timeZone}
             onResume={() => void resume()}
             resuming={resuming}
+            headingRef={cardHeadingRef}
           />
         </>
       )}

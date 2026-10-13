@@ -1,6 +1,7 @@
 import { useEffect, useId, useRef, useState, type FocusEvent } from 'react';
 import { Check, ChevronDown, Plus } from 'lucide-react';
 import { LANGUAGE_CODES, LANGUAGES, type LanguageCode, type PathStatus } from '@linguo/shared';
+import { Spinner } from './Spinner';
 
 export interface PillPath {
   id: string;
@@ -11,6 +12,8 @@ export interface PillPath {
 interface LanguagePillProps {
   paths: readonly PillPath[];
   currentId: string | null;
+  /** A path switch is in flight: the trigger shows a spinner and the items are disabled. */
+  pending?: boolean;
   onSelect: (pathId: string) => void;
   onAdd: (language: LanguageCode) => void;
 }
@@ -19,7 +22,7 @@ interface LanguagePillProps {
  * Current learning language as text ("EN ▾"), never a flag (PRD 12.2).
  * Disclosure pattern: a button toggles a plain list of buttons (not an ARIA menu).
  */
-export function LanguagePill({ paths, currentId, onSelect, onAdd }: LanguagePillProps) {
+export function LanguagePill({ paths, currentId, pending = false, onSelect, onAdd }: LanguagePillProps) {
   const [open, setOpen] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
@@ -53,7 +56,8 @@ export function LanguagePill({ paths, currentId, onSelect, onAdd }: LanguagePill
     if (next instanceof Node && !e.currentTarget.contains(next)) setOpen(false);
   };
 
-  const itemClass = 'flex min-h-11 w-full items-center justify-between gap-3 rounded-xl px-3 text-left text-sm hover:bg-text/5';
+  const itemClass =
+    'flex min-h-11 w-full items-center justify-between gap-3 rounded-xl px-3 text-left text-sm not-disabled:hover:bg-text/5 disabled:cursor-not-allowed disabled:opacity-60';
 
   return (
     <div ref={wrapperRef} className="relative" onBlur={onBlur}>
@@ -62,17 +66,18 @@ export function LanguagePill({ paths, currentId, onSelect, onAdd }: LanguagePill
         type="button"
         aria-expanded={open}
         aria-controls={panelId}
+        aria-busy={pending || undefined}
         aria-label={lang ? `${lang.short} – Ngôn ngữ đang học: ${lang.nameVi}. Đổi ngôn ngữ` : 'Chọn ngôn ngữ học'}
         onClick={() => setOpen((v) => !v)}
         className="glass inline-flex min-h-11 items-center gap-1.5 rounded-full px-4 text-sm font-semibold"
       >
         {lang ? lang.short : 'Ngôn ngữ'}
-        <ChevronDown aria-hidden className="size-4" />
+        {pending ? <Spinner /> : <ChevronDown aria-hidden className="size-4" />}
       </button>
       <ul
         id={panelId}
         hidden={!open}
-        className="absolute right-0 top-full z-50 mt-2 w-64 max-w-[calc(100vw-2rem)] rounded-2xl border border-border bg-surface-solid p-1.5 shadow-[var(--shadow-card)]"
+        className="z-50 rounded-2xl border border-border bg-surface-solid p-1.5 shadow-[var(--shadow-card)] max-sm:fixed max-sm:inset-x-4 max-sm:top-[calc(3.5rem+env(safe-area-inset-top,0px))] max-sm:w-auto sm:absolute sm:right-0 sm:top-full sm:mt-2 sm:w-64"
       >
         {paths.map((path) => {
           const item = LANGUAGES[path.language];
@@ -82,8 +87,10 @@ export function LanguagePill({ paths, currentId, onSelect, onAdd }: LanguagePill
               <button
                 type="button"
                 aria-current={active ? 'true' : undefined}
+                disabled={pending}
                 onClick={() => {
                   setOpen(false);
+                  triggerRef.current?.focus();
                   if (!active) onSelect(path.id);
                 }}
                 className={itemClass}
@@ -101,8 +108,10 @@ export function LanguagePill({ paths, currentId, onSelect, onAdd }: LanguagePill
           <li key={code}>
             <button
               type="button"
+              disabled={pending}
               onClick={() => {
                 setOpen(false);
+                triggerRef.current?.focus();
                 onAdd(code);
               }}
               className={itemClass}

@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { TEST_KO_PATH, TEST_PATH } from '../../../../tests/unit/learning-fixtures';
 import { renderWithProviders } from '../../../../tests/unit/render';
 import { HomePage } from '../HomePage';
@@ -61,6 +61,63 @@ describe('HomePage', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Tiếp tục lộ trình' }));
     expect(mocks.setPathStatus).toHaveBeenCalledWith({}, 'path-en', 'active');
     expect(upsertPath).toHaveBeenCalledWith({ ...TEST_PATH, status: 'active' });
+    expect(await screen.findByText('Đã tiếp tục lộ trình.')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: /Tiếng Anh/ })).toHaveFocus();
+  });
+
+  it('toasts when resuming fails and keeps the button', async () => {
+    mocks.setPathStatus.mockRejectedValue(new TypeError('Failed to fetch'));
+    renderWithProviders(<HomePage />, { route: '/app', paths: { paths: [{ ...TEST_PATH, status: 'paused' }] } });
+    await userEvent.click(screen.getByRole('button', { name: 'Tiếp tục lộ trình' }));
+    expect(await screen.findByText('Không kết nối được máy chủ. Kiểm tra mạng và thử lại.')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Tiếp tục lộ trình' })).toBeEnabled();
+  });
+
+  it('shows the skeleton only while nothing is loaded yet', () => {
+    const { container, unmount } = renderWithProviders(<HomePage />, { route: '/app', paths: { status: 'loading', paths: [] } });
+    expect(container.querySelector('.h-64')).not.toBeNull();
+    unmount();
+    const reloading = renderWithProviders(<HomePage />, { route: '/app', paths: { status: 'loading', paths: [TEST_PATH] } });
+    expect(reloading.container.querySelector('.h-64')).toBeNull();
+    expect(screen.getByText('Lộ trình của bạn')).toBeInTheDocument();
+  });
+
+  it('notes when the reference hours are not reviewed', () => {
+    const unreviewed = { ...TEST_PATH, estimate: { ...TEST_PATH.estimate, assumptions: { ...TEST_PATH.estimate.assumptions, referenceReviewed: false } } };
+    const reviewed = { ...TEST_PATH, estimate: { ...TEST_PATH.estimate, assumptions: { ...TEST_PATH.estimate.assumptions, referenceReviewed: true } } };
+    const note = 'Số giờ tham chiếu chưa được kiểm duyệt, ước lượng chỉ để tham khảo.';
+    const { unmount } = renderWithProviders(<HomePage />, { route: '/app', paths: { paths: [unreviewed] } });
+    expect(screen.getByText(note)).toBeInTheDocument();
+    unmount();
+    renderWithProviders(<HomePage />, { route: '/app', paths: { paths: [reviewed] } });
+    expect(screen.queryByText(note)).not.toBeInTheDocument();
+  });
+
+  describe('with a fixed clock', () => {
+    // Saturday 2026-10-17 20:00 UTC = Sunday 03:00 in Ho Chi Minh City, Saturday 13:00 in Los Angeles.
+    beforeEach(() => {
+      vi.useFakeTimers({ toFake: ['Date'] });
+      vi.setSystemTime(new Date('2026-10-17T20:00:00Z'));
+    });
+    afterEach(() => vi.useRealTimers());
+
+    const sundayOff = { ...TEST_PATH, weeklyMinutes: [30, 30, 30, 30, 30, 30, 0] };
+
+    it('shows the scheduled rest day in the profile timezone', () => {
+      renderWithProviders(<HomePage />, { route: '/app', paths: { paths: [sundayOff] } });
+      expect(screen.getByText('Ngày nghỉ theo lịch')).toBeInTheDocument();
+      expect(screen.getByText(/18 tháng 10/)).toBeInTheDocument();
+    });
+
+    it('uses the profile timezone for the weekday and the date label', () => {
+      renderWithProviders(<HomePage />, {
+        route: '/app',
+        paths: { paths: [sundayOff] },
+        profile: { profile: { id: 'u', displayName: 'An', timezone: 'America/Los_Angeles' } },
+      });
+      expect(screen.getByText('30 phút theo lịch')).toBeInTheDocument();
+      expect(screen.getByText(/17 tháng 10/)).toBeInTheDocument();
+    });
   });
 
   it('warns when two languages share too little time', () => {
@@ -69,5 +126,20 @@ describe('HomePage', () => {
     expect(needsSpreadWarning([TEST_PATH, low(TEST_KO_PATH)])).toBe(false);
     renderWithProviders(<HomePage />, { route: '/app', paths: { paths: [low(TEST_PATH), low(TEST_KO_PATH)] } });
     expect(screen.getByRole('note')).toHaveTextContent('Bạn đang học 2 ngôn ngữ');
+  });
+
+  it('does not warn when the daily average is exactly 15 minutes', () => {
+    const exact = (p: typeof TEST_PATH) => ({ ...p, weeklyMinutes: [15, 15, 15, 15, 15, 15, 15] });
+    const justUnder = (p: typeof TEST_PATH) => ({ ...p, weeklyMinutes: [15, 15, 15, 15, 15, 15, 14] });
+    expect(needsSpreadWarning([exact(TEST_PATH), exact(TEST_KO_PATH)])).toBe(false);
+    expect(needsSpreadWarning([justUnder(TEST_PATH), justUnder(TEST_KO_PATH)])).toBe(true);
+    renderWithProviders(<HomePage />, { route: '/app', paths: { paths: [exact(TEST_PATH), exact(TEST_KO_PATH)] } });
+    expect(screen.queryByRole('note')).not.toBeInTheDocument();
+  });
+
+  it('ignores paused paths when checking the spread', () => {
+    const low = (p: typeof TEST_PATH) => ({ ...p, weeklyMinutes: [10, 10, 10, 10, 10, 10, 10] });
+    expect(needsSpreadWarning([low(TEST_PATH), { ...low(TEST_KO_PATH), status: 'paused' }])).toBe(false);
+    expect(needsSpreadWarning([{ ...low(TEST_PATH), status: 'paused' }, { ...low(TEST_KO_PATH), status: 'paused' }])).toBe(false);
   });
 });

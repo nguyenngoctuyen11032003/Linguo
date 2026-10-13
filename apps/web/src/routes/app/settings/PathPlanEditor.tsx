@@ -1,5 +1,6 @@
-import { useMemo, useState, type FormEvent } from 'react';
+import { useRef, useState, type FormEvent } from 'react';
 import {
+  addDaysIso,
   allowedTargets,
   defaultTarget,
   DEFAULT_TIMEZONE,
@@ -7,11 +8,13 @@ import {
   fieldErrors,
   GOAL_LABELS,
   GOALS_BY_LANGUAGE,
+  isTargetDateInRange,
   LEVEL_INFO,
   updatePlanSchema,
   type GoalType,
 } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
+import { ErrorState } from '@/components/ui/ErrorState';
 import { FormField } from '@/components/ui/FormField';
 import { Input, inputClasses } from '@/components/ui/Input';
 import { EstimateSummary } from '@/features/learning-paths/components/EstimateSummary';
@@ -29,9 +32,11 @@ interface Props {
   path: LearningPath;
   onSaved: (path: LearningPath) => void;
   onCancel: () => void;
+  /** Reports whether a save is in flight so the parent can disable the item's other actions. */
+  onSavingChange?: (saving: boolean) => void;
 }
 
-export function PathPlanEditor({ path, onSaved, onCancel }: Props) {
+export function PathPlanEditor({ path, onSaved, onCancel, onSavingChange }: Props) {
   const { profile } = useProfile();
   const today = todayIso(profile?.timezone ?? DEFAULT_TIMEZONE);
   const reference = useReferenceHours();
@@ -40,10 +45,19 @@ export function PathPlanEditor({ path, onSaved, onCancel }: Props) {
   const [schedule, setSchedule] = useState<ScheduleValue>({ preset: presetFromWeek(path.weeklyMinutes), weeklyMinutes: path.weeklyMinutes });
   const [targetDate, setTargetDate] = useState(path.targetDate ?? '');
   const [saving, setSaving] = useState(false);
+  /** Server/network failures only; validation problems are shown on their fields. */
   const [error, setError] = useState<string | null>(null);
+  const targetRef = useRef<HTMLSelectElement>(null);
+  const scheduleRef = useRef<HTMLDivElement>(null);
+  const dateRef = useRef<HTMLInputElement>(null);
 
   const targets = allowedTargets(path.language, goalType, path.currentLevel);
-  const dateError = targetDate && targetDate < today ? 'Ngày mục tiêu đã qua.' : undefined;
+  const noTargets = targets.length === 0;
+  let dateError: string | undefined;
+  if (targetDate) {
+    if (targetDate < today) dateError = 'Ngày mục tiêu đã qua.';
+    else if (!isTargetDateInRange(targetDate, today)) dateError = 'Ngày mục tiêu quá xa (tối đa 10 năm).';
+  }
   const parsed = updatePlanSchema.safeParse({
     language: path.language,
     goalType,
@@ -52,30 +66,51 @@ export function PathPlanEditor({ path, onSaved, onCancel }: Props) {
     weeklyMinutes: schedule.weeklyMinutes,
     targetDate: targetDate || null,
   });
+  const errors = parsed.success ? {} : fieldErrors(parsed.error);
+  const targetError = noTargets ? 'Bạn đã đạt mục tiêu này. Hãy chọn mục tiêu khác.' : errors.targetLevel;
+  const scheduleError = errors.weeklyMinutes;
 
-  const estimate = useMemo(() => {
-    if (!parsed.success || dateError || !reference.data) return null;
+  let estimate = null;
+  if (parsed.success && !dateError && reference.data) {
     try {
-      return estimatePath({ ...parsed.data, today }, reference.data[path.language]);
+      estimate = estimatePath({ ...parsed.data, today }, reference.data[path.language]);
     } catch {
-      return null;
+      estimate = null;
     }
-  }, [parsed, dateError, reference.data, today, path.language]);
+  }
 
   const idBase = `plan-${path.id}`;
+
+  function changed<T>(setter: (value: T) => void) {
+    return (value: T) => {
+      setError(null);
+      setter(value);
+    };
+  }
+
+  function focusFirstInvalid(): boolean {
+    if (targetError) {
+      targetRef.current?.focus();
+      return true;
+    }
+    if (scheduleError) {
+      scheduleRef.current?.querySelector<HTMLElement>('input')?.focus();
+      return true;
+    }
+    if (dateError || errors.targetDate) {
+      dateRef.current?.focus();
+      return true;
+    }
+    return false;
+  }
 
   async function save(event: FormEvent) {
     event.preventDefault();
     if (saving) return;
-    if (dateError) {
-      setError(dateError);
-      return;
-    }
-    if (!parsed.success) {
-      setError(Object.values(fieldErrors(parsed.error))[0] ?? 'Thông tin chưa hợp lệ.');
-      return;
-    }
+    if (focusFirstInvalid()) return;
+    if (!parsed.success) return;
     setSaving(true);
+    onSavingChange?.(true);
     setError(null);
     try {
       const { goalType: g, targetLevel: t, weeklyMinutes, targetDate: d } = parsed.data;
@@ -84,6 +119,7 @@ export function PathPlanEditor({ path, onSaved, onCancel }: Props) {
       setError(learningPathErrorMessage(err));
     } finally {
       setSaving(false);
+      onSavingChange?.(false);
     }
   }
 
@@ -97,8 +133,10 @@ export function PathPlanEditor({ path, onSaved, onCancel }: Props) {
             value={goalType}
             onChange={(e) => {
               const g = e.target.value as GoalType;
+              setError(null);
               setGoalType(g);
-              setTargetLevel(defaultTarget(path.language, g, path.currentLevel) ?? '');
+              // Coming back to the saved goal restores the saved target instead of a fresh default.
+              setTargetLevel(g === path.goalType ? path.targetLevel : (defaultTarget(path.language, g, path.currentLevel) ?? ''));
             }}
             className={cn(inputClasses(invalid), 'appearance-none')}
           >
@@ -110,13 +148,14 @@ export function PathPlanEditor({ path, onSaved, onCancel }: Props) {
           </select>
         )}
       </FormField>
-      <FormField label="Bậc mục tiêu" error={targets.length === 0 ? 'Bạn đã đạt mục tiêu này. Hãy chọn mục tiêu khác.' : undefined}>
+      <FormField label="Bậc mục tiêu" error={targetError}>
         {({ invalid, ...a11y }) => (
           <select
             {...a11y}
+            ref={targetRef}
             aria-invalid={invalid || undefined}
             value={targetLevel}
-            onChange={(e) => setTargetLevel(e.target.value)}
+            onChange={(e) => changed(setTargetLevel)(e.target.value)}
             className={cn(inputClasses(invalid), 'appearance-none')}
           >
             {targets.map((code) => (
@@ -131,24 +170,38 @@ export function PathPlanEditor({ path, onSaved, onCancel }: Props) {
         <h4 id={`${idBase}-schedule`} className="px-1 text-sm font-medium">
           Thời gian học
         </h4>
-        <ScheduleEditor value={schedule} onChange={setSchedule} labelledBy={`${idBase}-schedule`} />
+        <div ref={scheduleRef}>
+          <ScheduleEditor value={schedule} onChange={changed(setSchedule)} labelledBy={`${idBase}-schedule`} error={scheduleError} />
+        </div>
       </div>
-      <FormField label="Ngày mục tiêu (không bắt buộc)" error={dateError}>
+      <FormField label="Ngày mục tiêu (không bắt buộc)" error={dateError ?? errors.targetDate}>
         {({ invalid, ...a11y }) => (
-          <Input {...a11y} invalid={invalid} type="date" min={today} value={targetDate} onChange={(e) => setTargetDate(e.target.value)} />
+          <Input
+            {...a11y}
+            ref={dateRef}
+            invalid={invalid}
+            type="date"
+            min={today}
+            max={addDaysIso(today, 3650)}
+            value={targetDate}
+            onChange={(e) => changed(setTargetDate)(e.target.value)}
+          />
         )}
       </FormField>
-      {estimate && <EstimateSummary estimate={estimate} />}
+      {reference.status === 'error' && (
+        <ErrorState title="Không tải được số giờ tham chiếu" headingLevel="h3" onRetry={reference.retry} />
+      )}
+      <div aria-live="polite">{estimate && <EstimateSummary estimate={estimate} />}</div>
       {error && (
         <p role="alert" className="px-1 text-sm text-error">
           {error}
         </p>
       )}
       <div className="flex flex-wrap gap-2">
-        <Button type="submit" loading={saving}>
+        <Button type="submit" loading={saving} disabled={noTargets}>
           Lưu kế hoạch
         </Button>
-        <Button variant="ghost" onClick={onCancel}>
+        <Button variant="ghost" disabled={saving} onClick={onCancel}>
           Huỷ
         </Button>
       </div>

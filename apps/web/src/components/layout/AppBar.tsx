@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router';
 import { LanguagePill } from '@/components/ui/LanguagePill';
 import { useToast } from '@/components/ui/Toast';
@@ -13,6 +14,7 @@ export function AppBar() {
   const { paths, currentId, setCurrent } = useLearningPaths();
   const toast = useToast();
   const navigate = useNavigate();
+  const [pending, setPending] = useState(false);
   const initial = (profile?.displayName || user?.email || '?').trim().charAt(0).toUpperCase();
   return (
     <header className="glass sticky top-0 z-30 border-x-0 border-t-0 pt-safe">
@@ -25,8 +27,13 @@ export function AppBar() {
           <LanguagePill
             paths={paths}
             currentId={currentId}
+            pending={pending}
             onSelect={(id) => {
-              setCurrent(id).catch((error: unknown) => toast.show({ tone: 'error', message: learningPathErrorMessage(error) }));
+              if (pending) return;
+              setPending(true);
+              setCurrent(id)
+                .catch((error: unknown) => toast.show({ tone: 'error', message: learningPathErrorMessage(error) }))
+                .finally(() => setPending(false));
             }}
             onAdd={(language) => navigate(`/app/bat-dau?lang=${language}`)}
           />
