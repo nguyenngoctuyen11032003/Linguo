@@ -6,7 +6,7 @@ Không có server riêng. CI/CD chạy trên GitHub; Auth/Database là Supabase 
 Pull Request ──► CI (.github/workflows/ci.yml)
                   ├─ web:      check-public-env → lint → content:check → content:build --check → typecheck → unit tests → build
                   ├─ e2e:      Playwright trên iPhone SE/15 Pro/15 Pro Max/landscape, Pixel 7, Galaxy S9+
-                  └─ database: Supabase local (Docker) → áp mọi migration → db lint → pgTAP (RLS) → kiểm types
+                  └─ database: fixtures SQL ↔ TS (ước lượng, chấm điểm) → Supabase local (Docker) → áp mọi migration + seed.sql → db lint → pgTAP (RLS, chấm điểm, bài học) → kiểm types
 
 push main ─────► Deploy (.github/workflows/deploy.yml)
                   verify (= CI) ─┐
