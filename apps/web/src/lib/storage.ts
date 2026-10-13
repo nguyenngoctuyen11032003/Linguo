@@ -22,3 +22,11 @@ export function readBool(key: string): boolean {
 export function writeBool(key: string, value: boolean): void {
   writeString(key, String(value));
 }
+
+export function removeKey(key: string): void {
+  try {
+    localStorage.removeItem(key);
+  } catch {
+    // Nothing to clean up if storage is unavailable.
+  }
+}

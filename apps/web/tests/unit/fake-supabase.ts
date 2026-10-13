@@ -13,7 +13,7 @@ export function fakeQuery({ data, error = null }: { data: unknown; error?: unkno
   const result = { data, error };
   const calls: FakeQuery['calls'] = [];
   const builder: Record<string, unknown> = {};
-  for (const method of ['select', 'eq', 'update', 'single', 'maybeSingle']) {
+  for (const method of ['select', 'eq', 'neq', 'in', 'order', 'update', 'single', 'maybeSingle']) {
     builder[method] = (...args: unknown[]) => {
       calls.push([method, args]);
       return builder;
@@ -24,12 +24,27 @@ export function fakeQuery({ data, error = null }: { data: unknown; error?: unkno
   return { calls, builder };
 }
 
-export function fakeClient(tables: Record<string, FakeQuery>): AppSupabaseClient {
+export interface FakeRpc {
+  data: unknown;
+  error?: unknown;
+}
+
+export type FakeClient = AppSupabaseClient & { rpcCalls: Array<[string, Record<string, unknown>]> };
+
+export function fakeClient(tables: Record<string, FakeQuery>, rpcs: Record<string, FakeRpc> = {}): FakeClient {
+  const rpcCalls: FakeClient['rpcCalls'] = [];
   return {
+    rpcCalls,
     from: (table: string) => {
       const q = tables[table];
       if (!q) throw new Error(`No fake for table ${table}`);
       return q.builder;
     },
-  } as unknown as AppSupabaseClient;
+    rpc: (name: string, args: Record<string, unknown>) => {
+      rpcCalls.push([name, args]);
+      const r = rpcs[name];
+      if (!r) throw new Error(`No fake for rpc ${name}`);
+      return Promise.resolve({ data: r.data, error: r.error ?? null });
+    },
+  } as unknown as FakeClient;
 }

@@ -3,7 +3,7 @@ import { AppLayout } from '@/components/layout/AppLayout';
 import { AuthLayout } from '@/components/layout/AuthLayout';
 import { RootLayout } from '@/components/layout/RootLayout';
 import { RedirectIfAuthed, RequireAuth } from '@/features/auth/guards';
-import { ProfileProvider } from '@/features/profile/ProfileProvider';
+import { AppRoute } from '@/routes/app/AppRoute';
 import { ComingSoonPage } from '@/routes/app/ComingSoonPage';
 import { HomePage } from '@/routes/app/HomePage';
 import { SettingsPage } from '@/routes/app/SettingsPage';
@@ -56,21 +56,20 @@ export const routes: RouteObject[] = [
       },
       {
         path: 'app',
-        element: (
-          <RequireAuth>
-            <ProfileProvider>
-              <AppLayout />
-            </ProfileProvider>
-          </RequireAuth>
-        ),
+        element: <AppRoute />,
         children: [
-          { index: true, element: <HomePage /> },
-          { path: 'hoc-tap', element: <ComingSoonPage title="Học tập" /> },
-          { path: 'on-tap', element: <ComingSoonPage title="Ôn tập" /> },
-          { path: 'gia-su', element: <ComingSoonPage title="Gia sư AI" /> },
-          { path: 'luyen-thi', element: <ComingSoonPage title="Luyện thi" /> },
-          { path: 'tien-do', element: <ComingSoonPage title="Tiến độ" /> },
-          { path: 'cai-dat', element: <SettingsPage /> },
+          {
+            element: <AppLayout />,
+            children: [
+              { index: true, element: <HomePage /> },
+              { path: 'hoc-tap', element: <ComingSoonPage title="Học tập" /> },
+              { path: 'on-tap', element: <ComingSoonPage title="Ôn tập" /> },
+              { path: 'gia-su', element: <ComingSoonPage title="Gia sư AI" /> },
+              { path: 'luyen-thi', element: <ComingSoonPage title="Luyện thi" /> },
+              { path: 'tien-do', element: <ComingSoonPage title="Tiến độ" /> },
+              { path: 'cai-dat', element: <SettingsPage /> },
+            ],
+          },
         ],
       },
       { path: '*', element: <NotFoundPage /> },
