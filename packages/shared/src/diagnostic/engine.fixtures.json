@@ -1,0 +1,1317 @@
+{
+  "_comment": [
+    "Spec 4 §2 diagnostic engine fixtures. Source of truth: packages/shared/src/diagnostic/engine.ts (cases checked by engine.test.ts); mirrored by SQL via scripts/sync-diagnostic-fixtures.mjs.",
+    "Grid θ = -0.5..6.5 step 0.25 (29 points). Expected floats are rounded to 8 decimals (compare round(x, 8)). Posterior mass comparisons (P(θ ≥ L) ≥ 0.7, 10%/90% quantiles = first grid θ whose cumulative mass ≥ p) use tolerance 1e-9.",
+    "posterior: {name, prior:{mean,sd}, answers:[{b,options,correct}], expected:{mean, sd, level, range:{low,high}}} — mean/sd = EAP/SD of posterior(prior, answers); level = conservativeLevel; range = levelRange.",
+    "confidence: {name, sd, n, rapidShare, expected: \"low\"|\"medium\"|\"high\"} — confidenceFor(sd, n, rapidShare); rapidShare > 0.3 downgrades one step.",
+    "suggest: {name, skills:[{level, confidence}], expected: int|null} — suggestLevel(skills).",
+    "cap: {name, current, suggested, firstApplied, expected: int} — capLevel(current, suggested, firstApplied); firstApplied = no diagnostic applied to the path yet (max +2), else max +1; down always allowed.",
+    "stop: {name, skill, n, sd, bankLeft, expected: bool} — shouldStopSkill(skill, n, sd, bankLeft)."
+  ],
+  "posterior": [
+    {
+      "name": "prior only, a1 start",
+      "prior": {
+        "mean": 1.5,
+        "sd": 1.25
+      },
+      "answers": [],
+      "expected": {
+        "mean": 1.62251053,
+        "sd": 1.13378057,
+        "level": 1,
+        "range": {
+          "low": 0,
+          "high": 3
+        }
+      }
+    },
+    {
+      "name": "prior only, foundation",
+      "prior": {
+        "mean": 0.5,
+        "sd": 1.25
+      },
+      "answers": [],
+      "expected": {
+        "mean": 0.907561,
+        "sd": 0.96763942,
+        "level": 0,
+        "range": {
+          "low": 0,
+          "high": 2
+        }
+      }
+    },
+    {
+      "name": "prior only, c2 start",
+      "prior": {
+        "mean": 6.5,
+        "sd": 1.25
+      },
+      "answers": [],
+      "expected": {
+        "mean": 5.57942669,
+        "sd": 0.77432999,
+        "level": 5,
+        "range": {
+          "low": 4,
+          "high": 6
+        }
+      }
+    },
+    {
+      "name": "prior only, mid",
+      "prior": {
+        "mean": 3.25,
+        "sd": 1.25
+      },
+      "answers": [],
+      "expected": {
+        "mean": 3.24109638,
+        "sd": 1.22591277,
+        "level": 2,
+        "range": {
+          "low": 1,
+          "high": 4
+        }
+      }
+    },
+    {
+      "name": "one correct at b",
+      "prior": {
+        "mean": 1.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 1.5,
+          "options": 4,
+          "correct": true
+        }
+      ],
+      "expected": {
+        "mean": 2.02317238,
+        "sd": 1.08756772,
+        "level": 1,
+        "range": {
+          "low": 0,
+          "high": 3
+        }
+      }
+    },
+    {
+      "name": "one wrong at b",
+      "prior": {
+        "mean": 1.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 1.5,
+          "options": 4,
+          "correct": false
+        }
+      ],
+      "expected": {
+        "mean": 0.90430335,
+        "sd": 0.81602251,
+        "level": 0,
+        "range": {
+          "low": 0,
+          "high": 2
+        }
+      }
+    },
+    {
+      "name": "one correct, 2 options",
+      "prior": {
+        "mean": 1.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 1.5,
+          "options": 2,
+          "correct": true
+        }
+      ],
+      "expected": {
+        "mean": 1.8477366,
+        "sd": 1.12572875,
+        "level": 1,
+        "range": {
+          "low": 0,
+          "high": 3
+        }
+      }
+    },
+    {
+      "name": "one wrong, 5 options",
+      "prior": {
+        "mean": 1.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 1.5,
+          "options": 5,
+          "correct": false
+        }
+      ],
+      "expected": {
+        "mean": 0.90430335,
+        "sd": 0.81602251,
+        "level": 0,
+        "range": {
+          "low": 0,
+          "high": 2
+        }
+      }
+    },
+    {
+      "name": "four right climbing",
+      "prior": {
+        "mean": 1.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 1.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 2.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 4.5,
+          "options": 4,
+          "correct": true
+        }
+      ],
+      "expected": {
+        "mean": 3.18151776,
+        "sd": 1.13833013,
+        "level": 2,
+        "range": {
+          "low": 1,
+          "high": 4
+        }
+      }
+    },
+    {
+      "name": "four wrong falling",
+      "prior": {
+        "mean": 1.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 1.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        }
+      ],
+      "expected": {
+        "mean": 0.00474111,
+        "sd": 0.42204905,
+        "level": 0,
+        "range": {
+          "low": 0,
+          "high": 0
+        }
+      }
+    },
+    {
+      "name": "eight right climbing to c2",
+      "prior": {
+        "mean": 1.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 1.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 2.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 4.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 5.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 6.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 6.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 6.5,
+          "options": 4,
+          "correct": true
+        }
+      ],
+      "expected": {
+        "mean": 3.86228989,
+        "sd": 1.39010685,
+        "level": 3,
+        "range": {
+          "low": 2,
+          "high": 5
+        }
+      }
+    },
+    {
+      "name": "eight wrong at pre-a1",
+      "prior": {
+        "mean": 0.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        }
+      ],
+      "expected": {
+        "mean": -0.30680352,
+        "sd": 0.23589191,
+        "level": 0,
+        "range": {
+          "low": 0,
+          "high": 0
+        }
+      }
+    },
+    {
+      "name": "alternating around b1",
+      "prior": {
+        "mean": 3.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 4.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 4.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 4.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 4.5,
+          "options": 4,
+          "correct": false
+        }
+      ],
+      "expected": {
+        "mean": 3.6347303,
+        "sd": 0.6214559,
+        "level": 3,
+        "range": {
+          "low": 2,
+          "high": 4
+        }
+      }
+    },
+    {
+      "name": "settles at a2",
+      "prior": {
+        "mean": 1.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 1.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 2.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 2.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 2.5,
+          "options": 4,
+          "correct": false
+        }
+      ],
+      "expected": {
+        "mean": 1.92416908,
+        "sd": 0.80624183,
+        "level": 1,
+        "range": {
+          "low": 0,
+          "high": 2
+        }
+      }
+    },
+    {
+      "name": "settles at b2",
+      "prior": {
+        "mean": 3.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 4.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 5.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 5.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 4.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 5.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 5.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 4.5,
+          "options": 4,
+          "correct": true
+        }
+      ],
+      "expected": {
+        "mean": 4.94799659,
+        "sd": 0.69821092,
+        "level": 4,
+        "range": {
+          "low": 4,
+          "high": 5
+        }
+      }
+    },
+    {
+      "name": "mixed options 2..5",
+      "prior": {
+        "mean": 2.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 2.5,
+          "options": 2,
+          "correct": true
+        },
+        {
+          "b": 3.5,
+          "options": 3,
+          "correct": false
+        },
+        {
+          "b": 2.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 3.5,
+          "options": 5,
+          "correct": false
+        }
+      ],
+      "expected": {
+        "mean": 2.38982913,
+        "sd": 0.86801699,
+        "level": 2,
+        "range": {
+          "low": 1,
+          "high": 3
+        }
+      }
+    },
+    {
+      "name": "reading five items",
+      "prior": {
+        "mean": 2.75,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 2.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 4.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 2.5,
+          "options": 4,
+          "correct": true
+        }
+      ],
+      "expected": {
+        "mean": 3.06690915,
+        "sd": 0.77927056,
+        "level": 2,
+        "range": {
+          "low": 2,
+          "high": 4
+        }
+      }
+    },
+    {
+      "name": "non-default difficulties",
+      "prior": {
+        "mean": 2,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 1.8,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 2.35,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 3.1,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 2.65,
+          "options": 4,
+          "correct": true
+        }
+      ],
+      "expected": {
+        "mean": 2.63009427,
+        "sd": 0.81823055,
+        "level": 2,
+        "range": {
+          "low": 1,
+          "high": 3
+        }
+      }
+    },
+    {
+      "name": "narrow prior sd",
+      "prior": {
+        "mean": 3,
+        "sd": 0.5
+      },
+      "answers": [
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 2.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 1.5,
+          "options": 4,
+          "correct": false
+        }
+      ],
+      "expected": {
+        "mean": 2.39859127,
+        "sd": 0.42947423,
+        "level": 2,
+        "range": {
+          "low": 1,
+          "high": 3
+        }
+      }
+    },
+    {
+      "name": "wide prior sd",
+      "prior": {
+        "mean": 3,
+        "sd": 3
+      },
+      "answers": [
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 4.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 5.5,
+          "options": 4,
+          "correct": true
+        }
+      ],
+      "expected": {
+        "mean": 5.2030248,
+        "sd": 1.24645251,
+        "level": 5,
+        "range": {
+          "low": 3,
+          "high": 6
+        }
+      }
+    },
+    {
+      "name": "prior outside grid, low",
+      "prior": {
+        "mean": -2,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": true
+        }
+      ],
+      "expected": {
+        "mean": 0.16502476,
+        "sd": 0.61229263,
+        "level": 0,
+        "range": {
+          "low": 0,
+          "high": 1
+        }
+      }
+    },
+    {
+      "name": "prior outside grid, high",
+      "prior": {
+        "mean": 8,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 6.5,
+          "options": 4,
+          "correct": false
+        }
+      ],
+      "expected": {
+        "mean": 5.87388164,
+        "sd": 0.57666924,
+        "level": 5,
+        "range": {
+          "low": 5,
+          "high": 6
+        }
+      }
+    },
+    {
+      "name": "guesser pattern on c1 items",
+      "prior": {
+        "mean": 5.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 5.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 4.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 4.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 2.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 2.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 1.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 1.5,
+          "options": 4,
+          "correct": false
+        }
+      ],
+      "expected": {
+        "mean": 1.88638524,
+        "sd": 0.6590678,
+        "level": 1,
+        "range": {
+          "low": 1,
+          "high": 2
+        }
+      }
+    },
+    {
+      "name": "strong reversal",
+      "prior": {
+        "mean": 1.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 1.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 1.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 2.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 3.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 4.5,
+          "options": 4,
+          "correct": true
+        },
+        {
+          "b": 5.5,
+          "options": 4,
+          "correct": true
+        }
+      ],
+      "expected": {
+        "mean": 0.31981266,
+        "sd": 0.5872309,
+        "level": 0,
+        "range": {
+          "low": 0,
+          "high": 1
+        }
+      }
+    },
+    {
+      "name": "early stop pattern",
+      "prior": {
+        "mean": 1.5,
+        "sd": 1.25
+      },
+      "answers": [
+        {
+          "b": 1.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        },
+        {
+          "b": 0.5,
+          "options": 4,
+          "correct": false
+        }
+      ],
+      "expected": {
+        "mean": 0.14725635,
+        "sd": 0.49831141,
+        "level": 0,
+        "range": {
+          "low": 0,
+          "high": 0
+        }
+      }
+    }
+  ],
+  "confidence": [
+    {
+      "name": "sd 0.3 n 6 rapid 0",
+      "sd": 0.3,
+      "n": 6,
+      "rapidShare": 0,
+      "expected": "high"
+    },
+    {
+      "name": "sd 0.45 n 6 rapid 0",
+      "sd": 0.45,
+      "n": 6,
+      "rapidShare": 0,
+      "expected": "high"
+    },
+    {
+      "name": "sd 0.45 n 5 rapid 0",
+      "sd": 0.45,
+      "n": 5,
+      "rapidShare": 0,
+      "expected": "medium"
+    },
+    {
+      "name": "sd 0.4500001 n 8 rapid 0",
+      "sd": 0.4500001,
+      "n": 8,
+      "rapidShare": 0,
+      "expected": "medium"
+    },
+    {
+      "name": "sd 0.6 n 4 rapid 0",
+      "sd": 0.6,
+      "n": 4,
+      "rapidShare": 0,
+      "expected": "medium"
+    },
+    {
+      "name": "sd 0.75 n 3 rapid 0",
+      "sd": 0.75,
+      "n": 3,
+      "rapidShare": 0,
+      "expected": "medium"
+    },
+    {
+      "name": "sd 0.7500001 n 8 rapid 0",
+      "sd": 0.7500001,
+      "n": 8,
+      "rapidShare": 0,
+      "expected": "low"
+    },
+    {
+      "name": "sd 1.1 n 1 rapid 0",
+      "sd": 1.1,
+      "n": 1,
+      "rapidShare": 0,
+      "expected": "low"
+    },
+    {
+      "name": "sd 0.4 n 8 rapid 0.3",
+      "sd": 0.4,
+      "n": 8,
+      "rapidShare": 0.3,
+      "expected": "high"
+    },
+    {
+      "name": "sd 0.4 n 8 rapid 0.31",
+      "sd": 0.4,
+      "n": 8,
+      "rapidShare": 0.31,
+      "expected": "medium"
+    },
+    {
+      "name": "sd 0.6 n 8 rapid 0.5",
+      "sd": 0.6,
+      "n": 8,
+      "rapidShare": 0.5,
+      "expected": "low"
+    },
+    {
+      "name": "sd 0.9 n 8 rapid 0.5",
+      "sd": 0.9,
+      "n": 8,
+      "rapidShare": 0.5,
+      "expected": "low"
+    },
+    {
+      "name": "sd 0.45 n 6 rapid 1",
+      "sd": 0.45,
+      "n": 6,
+      "rapidShare": 1,
+      "expected": "medium"
+    },
+    {
+      "name": "sd 0.75 n 8 rapid 0.3000001",
+      "sd": 0.75,
+      "n": 8,
+      "rapidShare": 0.3000001,
+      "expected": "low"
+    }
+  ],
+  "suggest": [
+    {
+      "name": "no skills",
+      "skills": [],
+      "expected": null
+    },
+    {
+      "name": "one high skill",
+      "skills": [
+        {
+          "level": 3,
+          "confidence": "high"
+        }
+      ],
+      "expected": null
+    },
+    {
+      "name": "one high, one low",
+      "skills": [
+        {
+          "level": 3,
+          "confidence": "high"
+        },
+        {
+          "level": 1,
+          "confidence": "low"
+        }
+      ],
+      "expected": null
+    },
+    {
+      "name": "two skills lower of pair",
+      "skills": [
+        {
+          "level": 4,
+          "confidence": "high"
+        },
+        {
+          "level": 2,
+          "confidence": "medium"
+        }
+      ],
+      "expected": 2
+    },
+    {
+      "name": "three skills median",
+      "skills": [
+        {
+          "level": 5,
+          "confidence": "medium"
+        },
+        {
+          "level": 1,
+          "confidence": "high"
+        },
+        {
+          "level": 3,
+          "confidence": "high"
+        }
+      ],
+      "expected": 3
+    },
+    {
+      "name": "three skills one low ignored",
+      "skills": [
+        {
+          "level": 5,
+          "confidence": "medium"
+        },
+        {
+          "level": 0,
+          "confidence": "low"
+        },
+        {
+          "level": 3,
+          "confidence": "high"
+        }
+      ],
+      "expected": 3
+    },
+    {
+      "name": "all low",
+      "skills": [
+        {
+          "level": 2,
+          "confidence": "low"
+        },
+        {
+          "level": 2,
+          "confidence": "low"
+        },
+        {
+          "level": 2,
+          "confidence": "low"
+        }
+      ],
+      "expected": null
+    },
+    {
+      "name": "ties",
+      "skills": [
+        {
+          "level": 2,
+          "confidence": "medium"
+        },
+        {
+          "level": 2,
+          "confidence": "medium"
+        },
+        {
+          "level": 6,
+          "confidence": "high"
+        }
+      ],
+      "expected": 2
+    },
+    {
+      "name": "zeros",
+      "skills": [
+        {
+          "level": 0,
+          "confidence": "medium"
+        },
+        {
+          "level": 0,
+          "confidence": "high"
+        }
+      ],
+      "expected": 0
+    }
+  ],
+  "cap": [
+    {
+      "name": "current 1 suggested 5 first true",
+      "current": 1,
+      "suggested": 5,
+      "firstApplied": true,
+      "expected": 3
+    },
+    {
+      "name": "current 1 suggested 5 first false",
+      "current": 1,
+      "suggested": 5,
+      "firstApplied": false,
+      "expected": 2
+    },
+    {
+      "name": "current 1 suggested 3 first true",
+      "current": 1,
+      "suggested": 3,
+      "firstApplied": true,
+      "expected": 3
+    },
+    {
+      "name": "current 1 suggested 2 first false",
+      "current": 1,
+      "suggested": 2,
+      "firstApplied": false,
+      "expected": 2
+    },
+    {
+      "name": "current 1 suggested 2 first true",
+      "current": 1,
+      "suggested": 2,
+      "firstApplied": true,
+      "expected": 2
+    },
+    {
+      "name": "current 4 suggested 0 first false",
+      "current": 4,
+      "suggested": 0,
+      "firstApplied": false,
+      "expected": 0
+    },
+    {
+      "name": "current 4 suggested 0 first true",
+      "current": 4,
+      "suggested": 0,
+      "firstApplied": true,
+      "expected": 0
+    },
+    {
+      "name": "current 4 suggested 4 first false",
+      "current": 4,
+      "suggested": 4,
+      "firstApplied": false,
+      "expected": 4
+    },
+    {
+      "name": "current 0 suggested 6 first true",
+      "current": 0,
+      "suggested": 6,
+      "firstApplied": true,
+      "expected": 2
+    },
+    {
+      "name": "current 5 suggested 6 first false",
+      "current": 5,
+      "suggested": 6,
+      "firstApplied": false,
+      "expected": 6
+    },
+    {
+      "name": "current 6 suggested 6 first true",
+      "current": 6,
+      "suggested": 6,
+      "firstApplied": true,
+      "expected": 6
+    }
+  ],
+  "stop": [
+    {
+      "name": "vocabulary n 3 sd 0.3 left 10",
+      "skill": "vocabulary",
+      "n": 3,
+      "sd": 0.3,
+      "bankLeft": 10,
+      "expected": false
+    },
+    {
+      "name": "vocabulary n 4 sd 0.45 left 10",
+      "skill": "vocabulary",
+      "n": 4,
+      "sd": 0.45,
+      "bankLeft": 10,
+      "expected": true
+    },
+    {
+      "name": "vocabulary n 4 sd 0.4500001 left 10",
+      "skill": "vocabulary",
+      "n": 4,
+      "sd": 0.4500001,
+      "bankLeft": 10,
+      "expected": false
+    },
+    {
+      "name": "vocabulary n 7 sd 0.8 left 10",
+      "skill": "vocabulary",
+      "n": 7,
+      "sd": 0.8,
+      "bankLeft": 10,
+      "expected": false
+    },
+    {
+      "name": "vocabulary n 8 sd 0.8 left 10",
+      "skill": "vocabulary",
+      "n": 8,
+      "sd": 0.8,
+      "bankLeft": 10,
+      "expected": true
+    },
+    {
+      "name": "grammar n 6 sd 0.44 left 3",
+      "skill": "grammar",
+      "n": 6,
+      "sd": 0.44,
+      "bankLeft": 3,
+      "expected": true
+    },
+    {
+      "name": "grammar n 8 sd 0.9 left 10",
+      "skill": "grammar",
+      "n": 8,
+      "sd": 0.9,
+      "bankLeft": 10,
+      "expected": true
+    },
+    {
+      "name": "grammar n 1 sd 1.2 left 0",
+      "skill": "grammar",
+      "n": 1,
+      "sd": 1.2,
+      "bankLeft": 0,
+      "expected": true
+    },
+    {
+      "name": "reading n 4 sd 0.8 left 10",
+      "skill": "reading",
+      "n": 4,
+      "sd": 0.8,
+      "bankLeft": 10,
+      "expected": false
+    },
+    {
+      "name": "reading n 5 sd 0.8 left 10",
+      "skill": "reading",
+      "n": 5,
+      "sd": 0.8,
+      "bankLeft": 10,
+      "expected": true
+    },
+    {
+      "name": "reading n 0 sd 1.25 left 0",
+      "skill": "reading",
+      "n": 0,
+      "sd": 1.25,
+      "bankLeft": 0,
+      "expected": true
+    },
+    {
+      "name": "reading n 2 sd 0.5 left 1",
+      "skill": "reading",
+      "n": 2,
+      "sd": 0.5,
+      "bankLeft": 1,
+      "expected": false
+    }
+  ]
+}
