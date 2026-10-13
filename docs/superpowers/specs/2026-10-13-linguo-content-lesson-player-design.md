@@ -26,7 +26,7 @@ Nội dung được soạn bằng file trong repo, kiểm tra tự động, nh�
 | Bài tiên quyết | Chỉ gợi ý thứ tự + cảnh báo nhẹ, không khoá |
 | Chấm bài | Chỉ trong Postgres (`grading_normalize`, `grade_exercise`); bản TS của bộ chuẩn hoá chỉ dùng để lint nội dung; hai bản khớp nhau qua fixtures dùng chung |
 | Offline | Hàng chờ trên máy; không chấm ở client; không có đáp án trên client |
-| Ghi dữ liệu học | Chỉ qua RPC `security definer`, `search_path = ''`, `auth.uid()`; lỗi `P0001` với mã snake_case (như spec 1) |
+| Ghi dữ liệu học | Chỉ qua RPC `security definer`, `search_path = ''`, `auth.uid()`; `not_authenticated` giữ SQLSTATE `42501` như spec 1; mọi lỗi khác là `P0001` với mã snake_case |
 | Ghi nội dung | Chỉ qua `content_private.import_bundle(jsonb)`, chỉ `service_role` được gọi |
 
 ## 3. Dữ liệu nội dung (migration `supabase/migrations/20261014000100_content.sql`)
@@ -41,7 +41,7 @@ Mọi bảng nội dung có:
 - `is_demo boolean not null default false`.
 - `reviewed_by text`, `reviewed_at timestamptz`; check `status not in ('approved','published') or is_demo or reviewed_at is not null`.
 - `version int not null default 1`, `content_hash text not null`.
-- `source_id uuid not null references content_sources` (trừ `content_sources`).
+- `source_id uuid not null references content_sources` (trừ `content_sources`). Chương trình, unit, bài và bài tập lấy `source_id` từ `source` của file chương trình; học liệu lấy từ `source` của file items.
 - `created_at`, `updated_at` + trigger `set_updated_at` sẵn có.
 
 Văn bản tiếng Việt dài dùng jsonb bản địa hoá `{"vi": "..."}` với `check (x ? 'vi')`. Văn bản ngôn ngữ đích (từ, câu ví dụ) nằm trong trường kiểu riêng (`text`, `ipa`, `romanization`), không nằm trong map bản địa hoá.
@@ -53,7 +53,7 @@ Văn bản tiếng Việt dài dùng jsonb bản địa hoá `{"vi": "..."}` v�
 | `content_sources` | `title`, `author_or_org`, `url`, `license check in ('own','cc_by','cc_by_sa','public_domain','licensed')`, `attribution_required bool` |
 | `programs` | `language_code check in ('en','ko')`, `title jsonb`, `description jsonb`, `kind check in ('core','goal')`, `goal_types text[]` (rỗng nếu `core`), `level_from`, `level_to` (FK kép tới `level_reference_hours`), `order_index` |
 | `units` | `program_id` FK, `order_index`, `title jsonb`; unique `(program_id, order_index)` |
-| `lessons` | `unit_id` FK, `language_code`, `level_code` (FK kép), `order_index`, `title jsonb`, `objectives jsonb` (mảng ≥ 1), `body jsonb` (mảng khối `objective \| explain \| deep_explain \| example \| common_mistake \| summary`), `estimated_minutes int check 1..60`, `skills text[]`, `content_version int ≥ 1`, `published_at`; unique `(unit_id, order_index)`; index một phần `(language_code, level_code) where status = 'published'`; trigger kiểm tra ngôn ngữ khớp chương trình |
+| `lessons` | `unit_id` FK, `language_code`, `level_code` (FK kép), `order_index`, `title jsonb`, `objectives jsonb` (mảng ≥ 1), `body jsonb` (mảng khối `objective \| explain \| deep_explain \| example \| common_mistake \| summary`), `estimated_minutes int check 1..60`, `skills text[]`, `content_version int generated always as (version) stored`, `published_at`; unique `(unit_id, order_index)`; index một phần `(language_code, level_code) where status = 'published'`; trigger kiểm tra ngôn ngữ khớp chương trình |
 | `lesson_prerequisites` | PK `(lesson_id, prerequisite_lesson_id)`, check khác nhau; trigger chặn vòng lặp (CTE đệ quy → `P0001 prerequisite_cycle`) và chặn khác ngôn ngữ (`prerequisite_language_mismatch`) |
 | `learning_items` | `language_code`, `item_type check in ('vocab','phrase','grammar_point','hangul')`, `front jsonb`, `back jsonb` (PRD §6.4: IPA/romanization, từ loại, nghĩa tiếng Việt, ví dụ + dịch tự nhiên, lỗi hay nhầm), `level_code`, `difficulty smallint 1..5`, `skill_tags text[]`, `audio_path text null` |
 | `lesson_items` | PK `(lesson_id, item_id)`, `position`, `role check in ('introduce','reuse')`; unique một phần `item_id where role = 'introduce'` |
@@ -74,8 +74,8 @@ Trigger trên mọi bảng nội dung chỉ cho phép: `draft → in_review`, `i
 
 ### 3.5 RPC nội dung
 
-- `content_private.import_bundle(p_bundle jsonb) returns jsonb` — `security definer`, chỉ `service_role` có execute. Một transaction: upsert theo `key`, so `content_hash`, tăng `version` (và `lessons.content_version` khi bài hoặc con thay đổi), ghi `revisions`, giữ dòng `exercise_keys` cũ, kiểm tra chuyển trạng thái, archive dòng vắng mặt. Trả `{inserted, updated, archived, unchanged}`.
-- `public.path_lessons(p_path_id uuid)` — `stable`, `security invoker` (RLS của `learning_paths` bảo đảm quyền sở hữu). Trả bài đã xuất bản, sắp theo chương trình → unit → bài, kèm `lesson_id, unit, program, title, level_code, estimated_minutes, is_demo, prerequisites_met bool, run_status ('not_started'|'in_progress'|'completed')`. Điều kiện: cùng ngôn ngữ; `kind = 'core'` hoặc `goal_type = any(goal_types)`; khoảng `[level_from, level_to]` giao `[current_level, target_level]` theo `ordinal`. Lộ trình không thuộc người gọi → tập rỗng.
+- `content_private.import_bundle(p_bundle jsonb) returns jsonb` — `security definer`, chỉ `service_role` có execute. Một transaction: upsert theo `key`, so `content_hash`, tăng `version` khi `content_hash` đổi (`lessons.content_version` sinh từ `version`; hash của bài tính trên bài **cùng** bài tập, liên kết học liệu và bài tiên quyết, nên mọi thay đổi ở con đều tăng phiên bản bài), ghi `revisions`, giữ dòng `exercise_keys` cũ, kiểm tra chuyển trạng thái, archive dòng vắng mặt. Trả `{inserted, updated, archived, unchanged}`.
+- `public.path_lessons(p_path_id uuid)` — nằm trong migration `lesson_runs` (mục 6), không ở migration nội dung, vì `run_status`/`prerequisites_met` đọc `lesson_runs`. `stable`, `security invoker` (RLS của `learning_paths` bảo đảm quyền sở hữu). Trả bài đã xuất bản, sắp theo chương trình → unit → bài, kèm `lesson_id, unit, program, title, level_code, estimated_minutes, is_demo, prerequisites_met bool, run_status ('not_started'|'in_progress'|'completed')`. Điều kiện: cùng ngôn ngữ; `kind = 'core'` hoặc `goal_type = any(goal_types)`; khoảng `[level_from, level_to]` giao `[current_level, target_level]` theo `ordinal`. Lộ trình không thuộc người gọi → tập rỗng.
 
 ## 4. Định dạng nội dung và công cụ nhập
 
@@ -139,7 +139,7 @@ Câu trả lời đặc biệt `{give_up: true}` ("Xem đáp án"). Id phương 
 ### 5.3 Chuẩn hoá (`public.grading_normalize(text, lang, rubric) immutable`, không grant cho client)
 
 1. `normalize(NFC)` (ghép lại jamo rời từ IME iOS).
-2. Ký tự jamo tương thích (U+3131–318E) ghép thành âm tiết bằng bộ ghép riêng (cho bài xếp chữ).
+2. *(Bỏ.)* Không ghép jamo tương thích (U+3131–318E): bài xếp chữ Hangul ghép bằng id token của `word_bank`, không bao giờ từ jamo người học gõ. Bước 1 (NFC) vẫn ghép jamo nối (conjoining).
 3. Trim, gộp khoảng trắng, chữ thường.
 4. `’‘`´` → `'`, `“”` → `"`.
 5. Bỏ dấu câu cuối `. ! ? … 。`; nếu `punctuation = 'ignore'` bỏ mọi dấu câu trừ `'` và `-`.
@@ -251,7 +251,7 @@ Nguồn: "Linguo tự soạn — demo, chưa kiểm duyệt" (`license: own`).
 
 ## 9. Kiểm thử
 
-- **Vitest (shared):** schema từng dạng bài (đề công khai từ chối trường đáp án), `normalize.ts` theo fixtures, ghép jamo.
+- **Vitest (shared):** schema từng dạng bài (đề công khai từ chối trường đáp án), `normalize.ts` theo fixtures (gồm NFC ghép jamo nối).
 - **Vitest (scripts):** `content-import --check` (bài thiếu khối, vòng lặp tiên quyết, đáp án không khớp kiểu, file demo thiếu cờ), `--emit-sql` tất định.
 - **Vitest (web):** `playerMachine` (tiếp tục, hàng làm lại), outbox (thứ tự, chống trùng, giới hạn, dữ liệu hỏng, khoá theo user), `AnswerInput` IME, từng dạng bài (bàn phím, `aria-live`), `LearnPage`, `NextLessonCard`, nhãn demo.
 - **pgTAP:**
@@ -281,8 +281,8 @@ Nguồn: "Linguo tự soạn — demo, chưa kiểm duyệt" (`license: own`).
 | # | Việc | Phụ thuộc |
 |---|---|---|
 | A1 | `packages/shared/src/content/`: zod nội dung + bài tập + câu trả lời, `normalize.ts`, `grading.fixtures.json`, unit test | — |
-| A2 | Migration nội dung (3.1–3.5), `content_private`, triggers, RLS/grants, `import_bundle`, `path_lessons`, `config.toml`, pgTAP nội dung + không lộ đáp án | — |
-| A3 | Migration `lesson_runs`/`attempts`, `grading_normalize`, `grade_exercise`, RPC mục 6.3, `sync-grading-fixtures.mjs`, pgTAP | fixtures A1, bảng A2 |
+| A2 | Migration nội dung (3.1–3.5), `content_private`, triggers, RLS/grants, `import_bundle`, `config.toml`, pgTAP nội dung + không lộ đáp án | — |
+| A3 | Migration `lesson_runs`/`attempts`, `grading_normalize`, `grade_exercise`, RPC mục 6.3, `path_lessons`, `sync-grading-fixtures.mjs`, pgTAP | fixtures A1, bảng A2 |
 | A4 | `scripts/content-import.mjs`, script `pnpm content:*`, CI, `content-publish.yml`, `check-public-env`, `docs/DEPLOY.md` | schema A1 |
 | A5 | YAML demo (mục 8) + `content/README.md` | schema A1 |
 | A6 | Tầng dữ liệu web: `service`, `error-map`, `outbox`, `playerMachine`, `useLessonRun`, `usePathLessons` | hợp đồng 6.3 |
