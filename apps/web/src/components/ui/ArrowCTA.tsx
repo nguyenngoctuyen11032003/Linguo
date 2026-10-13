@@ -28,6 +28,7 @@ export function ArrowCTA({ to, children, className }: ArrowCTAProps) {
       initial="rest"
       animate="rest"
       whileHover="hover"
+      whileFocus="hover"
       whileTap="tap"
       transition={{ duration: 0.35, ease: EXPO_OUT }}
       className={cn(

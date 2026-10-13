@@ -50,6 +50,24 @@ describe('RouteLine', () => {
   });
 });
 
+describe('RouteLine under reduced motion', () => {
+  it('renders stops statically and never mounts the travelling arrow', () => {
+    localStorage.setItem('lp-reduce-motion', 'true');
+    const { container } = render(
+      withMotion(
+        <RouteLine
+          title="Lộ trình"
+          viewBox="0 0 100 50"
+          tracks={[{ id: 'en', d: 'M0 0 L 30 0', color: '#4CA2D1', stops: [{ x: 0, y: 0, label: 'A1' }] }]}
+        />,
+      ),
+    );
+    expect(container.querySelector('polygon')).toBeNull();
+    expect(container.querySelector('animateMotion')).toBeNull();
+    expect(screen.getByText('A1')).toBeInTheDocument();
+  });
+});
+
 describe('ArrowCTA', () => {
   it('is a link with the given label', () => {
     render(withMotion(<ArrowCTA to="/dang-ky">Bắt đầu miễn phí</ArrowCTA>));
@@ -58,17 +76,68 @@ describe('ArrowCTA', () => {
 });
 
 describe('LanguagePill', () => {
-  it('shows text labels, marks Korean as coming soon and closes on Escape', async () => {
+  it('uses a disclosure pattern, marks the current language and Korean as coming soon', async () => {
     render(withMotion(<LanguagePill />));
     const trigger = screen.getByRole('button', { name: /Ngôn ngữ đang học: Tiếng Anh/ });
     expect(trigger).toHaveTextContent('EN');
+    expect(trigger.getAttribute('aria-label')).toMatch(/^EN – Ngôn ngữ đang học: Tiếng Anh\. Đổi ngôn ngữ$/);
+    expect(trigger).toHaveAttribute('aria-expanded', 'false');
+    expect(trigger).not.toHaveAttribute('aria-haspopup');
     await userEvent.click(trigger);
     expect(trigger).toHaveAttribute('aria-expanded', 'true');
-    expect(screen.getByRole('menuitemradio', { name: /Tiếng Anh/ })).toHaveAttribute('aria-checked', 'true');
-    const ko = screen.getByRole('menuitemradio', { name: /Tiếng Hàn/ });
-    expect(ko).toBeDisabled();
+    expect(trigger).toHaveAttribute('aria-controls', screen.getByRole('list').id);
+    expect(screen.queryByRole('menu')).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Tiếng Anh \(/ })).toHaveAttribute('aria-current', 'true');
+    const ko = screen.getByRole('button', { name: /Tiếng Hàn/ });
+    expect(ko).toHaveAttribute('aria-disabled', 'true');
+    expect(ko).not.toBeDisabled();
     expect(ko).toHaveTextContent('Sắp ra mắt');
+    await userEvent.click(ko);
+    expect(trigger).toHaveAttribute('aria-expanded', 'true');
+  });
+
+  it('closes on Escape and returns focus to the trigger', async () => {
+    render(withMotion(<LanguagePill />));
+    const trigger = screen.getByRole('button', { name: /Ngôn ngữ đang học/ });
+    await userEvent.click(trigger);
+    await userEvent.tab();
+    expect(trigger).not.toHaveFocus();
     await userEvent.keyboard('{Escape}');
+    expect(trigger).toHaveAttribute('aria-expanded', 'false');
+    expect(trigger).toHaveFocus();
+  });
+
+  it('closes on an outside click', async () => {
+    render(
+      withMotion(
+        <>
+          <LanguagePill />
+          <p>Bên ngoài</p>
+        </>,
+      ),
+    );
+    const trigger = screen.getByRole('button', { name: /Ngôn ngữ đang học/ });
+    await userEvent.click(trigger);
+    expect(trigger).toHaveAttribute('aria-expanded', 'true');
+    await userEvent.click(screen.getByText('Bên ngoài'));
+    expect(trigger).toHaveAttribute('aria-expanded', 'false');
+  });
+
+  it('closes when focus leaves the widget', async () => {
+    render(
+      withMotion(
+        <>
+          <LanguagePill />
+          <button>Sau</button>
+        </>,
+      ),
+    );
+    const trigger = screen.getByRole('button', { name: /Ngôn ngữ đang học/ });
+    await userEvent.click(trigger);
+    await userEvent.tab(); // English
+    await userEvent.tab(); // Korean (aria-disabled stays focusable)
+    await userEvent.tab(); // out of the widget
+    expect(screen.getByRole('button', { name: 'Sau' })).toHaveFocus();
     expect(trigger).toHaveAttribute('aria-expanded', 'false');
   });
 });

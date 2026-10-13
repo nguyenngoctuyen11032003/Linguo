@@ -1,5 +1,5 @@
-import { createContext, useCallback, useContext, useMemo, useRef, useState, type ReactNode } from 'react';
-import { CheckCircle2, Info, XCircle } from 'lucide-react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { CheckCircle2, Info, X, XCircle } from 'lucide-react';
 import { cn } from '@/lib/cn';
 
 export type ToastTone = 'success' | 'error' | 'info';
@@ -15,16 +15,41 @@ interface ToastApi {
 const ToastContext = createContext<ToastApi | null>(null);
 const ICONS = { success: CheckCircle2, error: XCircle, info: Info } as const;
 const TONE_CLASS: Record<ToastTone, string> = { success: 'text-success', error: 'text-error', info: 'text-primary' };
-const DURATION_MS = 4000;
+/** Errors stay longer so they can be read; everything else is transient. */
+const DURATION_MS: Record<ToastTone, number> = { success: 4000, info: 4000, error: 8000 };
 
 export function ToastProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<ToastItem[]>([]);
   const nextId = useRef(1);
+  const timers = useRef(new Map<number, number>());
 
-  const show = useCallback<ToastApi['show']>(({ tone, message }) => {
-    const id = nextId.current++;
-    setItems((list) => [...list, { id, tone, message }]);
-    window.setTimeout(() => setItems((list) => list.filter((t) => t.id !== id)), DURATION_MS);
+  const dismiss = useCallback((id: number) => {
+    const timer = timers.current.get(id);
+    if (timer !== undefined) {
+      window.clearTimeout(timer);
+      timers.current.delete(id);
+    }
+    setItems((list) => list.filter((t) => t.id !== id));
+  }, []);
+
+  const show = useCallback<ToastApi['show']>(
+    ({ tone, message }) => {
+      const id = nextId.current++;
+      setItems((list) => [...list, { id, tone, message }]);
+      timers.current.set(
+        id,
+        window.setTimeout(() => dismiss(id), DURATION_MS[tone]),
+      );
+    },
+    [dismiss],
+  );
+
+  useEffect(() => {
+    const active = timers.current;
+    return () => {
+      active.forEach((timer) => window.clearTimeout(timer));
+      active.clear();
+    };
   }, []);
 
   const api = useMemo(() => ({ show }), [show]);
@@ -42,10 +67,18 @@ export function ToastProvider({ children }: { children: ReactNode }) {
           return (
             <div
               key={t.id}
-              className="pointer-events-auto flex w-full max-w-sm items-start gap-2.5 rounded-2xl border border-border bg-surface-solid px-4 py-3 text-[15px] shadow-[var(--shadow-card)]"
+              className="pointer-events-auto flex w-full max-w-sm items-start gap-2.5 rounded-2xl border border-border bg-surface-solid py-1 pl-4 pr-1 text-[15px] shadow-[var(--shadow-card)]"
             >
-              <Icon aria-hidden className={cn('mt-0.5 size-5 shrink-0', TONE_CLASS[t.tone])} />
-              <span>{t.message}</span>
+              <Icon aria-hidden className={cn('mt-3 size-5 shrink-0', TONE_CLASS[t.tone])} />
+              <span className="flex-1 py-2.5">{t.message}</span>
+              <button
+                type="button"
+                aria-label="Đóng thông báo"
+                onClick={() => dismiss(t.id)}
+                className="inline-flex size-11 shrink-0 items-center justify-center rounded-full text-muted hover:bg-text/5 hover:text-text"
+              >
+                <X aria-hidden className="size-5" />
+              </button>
             </div>
           );
         })}

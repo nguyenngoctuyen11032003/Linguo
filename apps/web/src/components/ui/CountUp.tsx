@@ -18,14 +18,11 @@ export function CountUp({ to, durationMs = 2200, delayMs = 0, suffix = '', class
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, VIEWPORT_ONCE);
   const { reduceMotion } = useMotionPrefs();
-  const [value, setValue] = useState(reduceMotion ? to : 0);
+  const [value, setValue] = useState(0);
+  const shown = reduceMotion ? to : value;
 
   useEffect(() => {
-    if (reduceMotion) {
-      setValue(to);
-      return;
-    }
-    if (!inView) return;
+    if (reduceMotion || !inView) return;
     let frame = 0;
     let start = 0;
     const tick = (now: number) => {
@@ -46,7 +43,7 @@ export function CountUp({ to, durationMs = 2200, delayMs = 0, suffix = '', class
   return (
     <span ref={ref} className={className}>
       <span aria-hidden="true">
-        {format(value)}
+        {format(shown)}
         {suffix}
       </span>
       <span className="sr-only">

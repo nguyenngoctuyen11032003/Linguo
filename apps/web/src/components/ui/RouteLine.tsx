@@ -1,4 +1,4 @@
-import { useId, useRef } from 'react';
+import { useId, useRef, useState } from 'react';
 import { motion, useInView } from 'motion/react';
 import { EXPO_OUT, SPRING_POP, VIEWPORT_ONCE } from '@/design/motion';
 import { cn } from '@/lib/cn';
@@ -45,6 +45,8 @@ export function RouteLine({ title, viewBox, tracks, className }: RouteLineProps)
   const { reduceMotion } = useMotionPrefs();
   const drawn = reduceMotion || inView;
   const prefix = useId().replace(/[^a-zA-Z0-9_-]/g, '');
+  // SMIL `begin` counts from document load, so each travelling arrow only mounts once its own track has finished drawing.
+  const [arrived, setArrived] = useState<Record<string, boolean>>({});
 
   return (
     <svg ref={ref} viewBox={viewBox} role="img" aria-label={title} className={cn('h-auto w-full overflow-visible', className)}>
@@ -63,18 +65,21 @@ export function RouteLine({ title, viewBox, tracks, className }: RouteLineProps)
               initial={{ pathLength: reduceMotion ? 1 : 0 }}
               animate={{ pathLength: drawn ? 1 : 0 }}
               transition={{ duration: reduceMotion ? 0 : 1.6, ease: EXPO_OUT, delay: ti * 0.25 }}
+              onAnimationComplete={() => {
+                if (drawn && !reduceMotion) setArrived((prev) => (prev[track.id] ? prev : { ...prev, [track.id]: true }));
+              }}
             />
-            {!reduceMotion && drawn && (
+            {!reduceMotion && arrived[track.id] && (
               <polygon points="0,-4 8,0 0,4" fill={track.color}>
-                <animateMotion dur={`${7 + ti}s`} begin={`${1.6 + ti * 0.25}s`} repeatCount="indefinite" rotate="auto">
+                <animateMotion dur={`${7 + ti}s`} begin="0s" repeatCount="indefinite" rotate="auto">
                   <mpath href={`#${pathId}`} />
                 </animateMotion>
               </polygon>
             )}
             {track.stops.map((stop, si) => (
               <motion.g
-                key={stop.label}
-                initial={{ opacity: 0, scale: reduceMotion ? 1 : 0 }}
+                key={`${stop.x},${stop.y}`}
+                initial={reduceMotion ? false : { opacity: 0, scale: 0 }}
                 animate={drawn ? { opacity: 1, scale: 1 } : { opacity: 0 }}
                 transition={{ duration: 0.5, ease: SPRING_POP, delay: reduceMotion ? 0 : 0.4 + ti * 0.25 + si * 0.15 }}
                 style={{ transformOrigin: `${stop.x}px ${stop.y}px`, transformBox: 'view-box' }}
