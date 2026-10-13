@@ -38,15 +38,29 @@ export const ESTIMATE_MULTIPLIERS = [0.8, 1.3] as const;
 export const MAX_MINUTES_PER_DAY = 720;
 const DAY_MS = 86_400_000;
 
+const MAX_TARGET_DAYS = 3650;
+
 export class EstimateError extends Error {}
 
+/** Days since the epoch for an ISO `YYYY-MM-DD` date; `NaN` when the input is malformed or not a real date. */
 export function isoToUtcDays(iso: string): number {
-  const [y, m, d] = iso.split('-').map(Number);
-  return Date.UTC(y ?? 1970, (m ?? 1) - 1, d ?? 1) / DAY_MS;
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
+  if (!match) return Number.NaN;
+  const [y, m, d] = [Number(match[1]), Number(match[2]), Number(match[3])];
+  const ms = Date.UTC(y, m - 1, d);
+  const check = new Date(ms);
+  if (check.getUTCFullYear() !== y || check.getUTCMonth() !== m - 1 || check.getUTCDate() !== d) return Number.NaN;
+  return ms / DAY_MS;
 }
 
 export function addDaysIso(iso: string, days: number): string {
   return new Date((isoToUtcDays(iso) + days) * DAY_MS).toISOString().slice(0, 10);
+}
+
+/** True when `today <= iso <= today + 3650 days`; false for malformed dates. */
+export function isTargetDateInRange(iso: string, today: string): boolean {
+  if (Number.isNaN(isoToUtcDays(iso)) || Number.isNaN(isoToUtcDays(today))) return false;
+  return iso >= today && iso <= addDaysIso(today, MAX_TARGET_DAYS);
 }
 
 /**
@@ -55,6 +69,9 @@ export function addDaysIso(iso: string, days: number): string {
  * estimate.fixtures.json.
  */
 export function estimatePath(input: EstimateInput, reference: readonly ReferenceHours[]): EstimateResult {
+  if (Number.isNaN(isoToUtcDays(input.today)) || (input.targetDate && Number.isNaN(isoToUtcDays(input.targetDate)))) {
+    throw new EstimateError('invalid_date');
+  }
   const current = reference.find((r) => r.levelCode === input.currentLevel);
   const target = reference.find((r) => r.levelCode === input.targetLevel);
   if (!current || !target) throw new EstimateError('invalid_level');
