@@ -48,8 +48,20 @@ describe('PasswordInput', () => {
     );
     const input = screen.getByLabelText('Mật khẩu');
     expect(input).toHaveAttribute('type', 'password');
-    await userEvent.click(screen.getByRole('button', { name: 'Hiện mật khẩu' }));
+    const toggle = screen.getByRole('button', { name: 'Hiện mật khẩu' });
+    expect(toggle).toHaveAttribute('aria-controls', input.id);
+    expect(toggle).not.toHaveAttribute('aria-pressed');
+    await userEvent.click(toggle);
     expect(input).toHaveAttribute('type', 'text');
-    expect(screen.getByRole('button', { name: 'Ẩn mật khẩu' })).toHaveAttribute('aria-pressed', 'true');
+    const hide = screen.getByRole('button', { name: 'Ẩn mật khẩu' });
+    expect(hide).not.toHaveAttribute('aria-pressed');
+    expect(hide).toHaveAttribute('aria-controls', input.id);
+  });
+
+  it('keeps padding for the toggle when a className is passed', () => {
+    render(<PasswordInput aria-label="Mật khẩu" className="bg-red-500" />);
+    const input = screen.getByLabelText('Mật khẩu');
+    expect(input).toHaveClass('pr-14');
+    expect(input).toHaveClass('bg-red-500');
   });
 });
