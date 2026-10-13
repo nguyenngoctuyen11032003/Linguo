@@ -4,7 +4,7 @@ Không có server riêng. CI/CD chạy trên GitHub; Auth/Database là Supabase 
 
 ```text
 Pull Request ──► CI (.github/workflows/ci.yml)
-                  ├─ web:      check-public-env → lint → content:check → content:build --check → typecheck → unit tests → build
+                  ├─ web:      check-public-env → check-migrations-immutable → lint → content:check → content:build --check → typecheck → unit tests → build
                   ├─ e2e:      Playwright trên iPhone SE/15 Pro/15 Pro Max/landscape, Pixel 7, Galaxy S9+
                   └─ database: fixtures SQL ↔ TS (ước lượng, chấm điểm) → Supabase local (Docker) → áp mọi migration + seed.sql → db lint → pgTAP (RLS, chấm điểm, bài học) → kiểm types
 
@@ -17,7 +17,16 @@ push main ─────► Deploy (.github/workflows/deploy.yml)
 
 ## Quy tắc an toàn database
 - CI chỉ chạy `supabase db push`. Không bao giờ chạy `db reset`, `config push`, `db push --include-seed` với project hosted.
-- Mỗi thay đổi schema = một file migration mới (`pnpm exec supabase migration new <ten>`). Không sửa migration đã deploy.
+- Mỗi thay đổi schema = một file migration mới (`pnpm exec supabase migration new <ten>`).
+- **Không bao giờ sửa migration đã deploy; luôn tạo migration mới.** Supabase chỉ áp mỗi file migration **một lần** (theo tên trong `supabase_migrations.schema_migrations`); sửa file đã áp thì project hosted giữ bản cũ, còn `db reset`/CI dùng bản mới, hai bên lệch nhau mà không ai báo. Đã xảy ra một lần: `20261014000100_content.sql` bị sửa sau khi deploy (thêm `public.import_content_bundle`), phải vá bằng `20261014000600_spec2_sync.sql`.
+  - `supabase/migrations-applied.json` ghi sha256 của mọi migration đã deploy. `node scripts/check-migrations-immutable.mjs` (chạy trong CI job web và `pnpm test`) fail khi một file trong danh sách bị sửa, đổi tên hoặc xoá. File migration mới không bị chặn.
+  - **Bước tay sau mỗi lần Deploy có `Supabase db push` thành công:** ghi các migration vừa áp vào danh sách rồi commit thẳng lên `main`:
+    ```bash
+    node scripts/check-migrations-immutable.mjs --record 20261014000600_spec2_sync.sql   # liệt kê mọi file vừa áp
+    git add supabase/migrations-applied.json && git commit -m "chore(db): record deployed migrations"
+    ```
+    Danh sách file vừa áp có trong log bước `db push --dry-run` của job `migrate`. `--record` từ chối ghi đè checksum khác của một file đã có trong danh sách.
+  - Lỡ sửa migration đã deploy: hoàn tác file về bản đã deploy, đưa thay đổi vào một migration mới (`create or replace`, `drop … if exists` rồi tạo lại, `revoke`/`grant` tường minh) sao cho cả DB hosted lẫn DB mới tinh đều ra cùng một schema.
 - Thiết lập Auth trong `supabase/config.toml` chỉ áp dụng local; Auth hosted cấu hình trên Dashboard.
 
 ## Thiết lập một lần
