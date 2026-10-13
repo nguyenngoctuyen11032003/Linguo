@@ -42,6 +42,10 @@ export function ReviewPage() {
   const cardHeadingRef = useRef<HTMLHeadingElement>(null);
   const summaryFocused = useRef(false);
   const cardKey = card ? `${card.card_id}:${position}` : null;
+  const latestStatus = useRef(status);
+  latestStatus.current = status;
+  const liveCardKey = useRef(cardKey);
+  liveCardKey.current = cardKey;
 
   // A new card: reset the per-card inputs, restart the response timer and move focus to the card heading so
   // screen readers announce it and Space/1–4 work without hunting for focus.
@@ -73,9 +77,10 @@ export function ReviewPage() {
 
   const rate = useCallback(
     async (value: Rating) => {
-      // RatingBar and the page shortcut may both see one key press: rate a card once.
+      // Rate a card once, even if a click and a key press land before the next render.
       if (!back || rating.current) return;
       rating.current = true;
+      const ratedKey = liveCardKey.current;
       const answeredAt = flippedAt.current ?? Date.now();
       try {
         await session.grade(value, {
@@ -83,7 +88,8 @@ export function ReviewPage() {
           responseMs: Math.max(0, answeredAt - shownAt.current),
           hintCount: 0,
         });
-        setReviewedCount((n) => n + 1);
+        // The session moves on once the grade is saved or queued; a refused grade keeps the card on screen.
+        if (liveCardKey.current !== ratedKey || latestStatus.current === 'finished') setReviewedCount((n) => n + 1);
       } finally {
         rating.current = false;
       }
@@ -96,8 +102,8 @@ export function ReviewPage() {
       if (postponing) return;
       setPostponing(true);
       try {
+        // The session reports refusals (limit reached, offline) itself; the next card or the summary shows success.
         await session.postpone(all);
-        toast.show({ tone: 'success', message: all ? 'Đã hoãn các thẻ còn lại sang mai.' : 'Đã hoãn thẻ này sang mai.' });
       } catch {
         toast.show({ tone: 'error', message: 'Chưa hoãn được. Kiểm tra mạng rồi thử lại.' });
       } finally {

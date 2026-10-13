@@ -120,6 +120,14 @@ describe('ReviewPage', () => {
     expect(meta.responseMs).toBeGreaterThanOrEqual(0);
   });
 
+  it('does not count a refused grade as reviewed', async () => {
+    const session = setSession({ cardState: { status: 'back' }, total: 1 });
+    render();
+    await userEvent.keyboard('3');
+    update({ ...session, status: 'finished', card: null });
+    expect(screen.getByText(/^Đã ôn 0 thẻ/)).toBeInTheDocument();
+  });
+
   it('rates through the rating bar', async () => {
     const session = setSession({ cardState: { status: 'back' } });
     render();
@@ -171,7 +179,6 @@ describe('ReviewPage', () => {
     render();
     await userEvent.keyboard('p');
     expect(session.postpone).toHaveBeenCalledWith(false);
-    expect(await screen.findByText('Đã hoãn thẻ này sang mai.')).toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: 'Hoãn sang mai' }));
     expect(session.postpone).toHaveBeenCalledTimes(2);
   });
@@ -181,7 +188,6 @@ describe('ReviewPage', () => {
     render();
     await userEvent.click(screen.getByRole('button', { name: 'Hoãn tất cả' }));
     expect(session.postpone).toHaveBeenCalledWith(true);
-    expect(await screen.findByText('Đã hoãn các thẻ còn lại sang mai.')).toBeInTheDocument();
   });
 
   it('hides "Hoãn tất cả" on the last card', () => {
@@ -220,11 +226,7 @@ describe('ReviewPage', () => {
 
   describe('summary', () => {
     it('summarises the session and stops for today', async () => {
-      const session = setSession({ cardState: { status: 'back' } });
-      render();
-      await userEvent.keyboard('3');
-      await act(async () => {});
-      update({
+      const finished = (): ReviewSessionApi => ({
         ...session,
         status: 'finished',
         card: null,
@@ -232,6 +234,14 @@ describe('ReviewPage', () => {
         pendingCount: 1,
         summary: reviewSummary({ retention_30d: 0.87 }),
       });
+      // Grading the last card finishes the session before grade() resolves.
+      const session: ReviewSessionApi = setSession({
+        cardState: { status: 'back' },
+        grade: vi.fn(async () => update(finished())),
+      });
+      render();
+      await userEvent.keyboard('3');
+      await act(async () => {});
       expect(screen.getByRole('heading', { name: 'Xong phiên ôn' })).toHaveFocus();
       expect(screen.getByText('Đã ôn 1 thẻ. Nghỉ ngơi cũng là một phần của việc nhớ lâu.')).toBeInTheDocument();
       expect(screen.getByText('50%')).toBeInTheDocument();
