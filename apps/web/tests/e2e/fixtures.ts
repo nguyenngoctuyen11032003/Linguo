@@ -104,6 +104,13 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
         const row = paths.find((p) => p.id === b.p_id);
         if (!row) return route.fulfill({ status: 400, json: { code: 'P0001', message: 'path_not_found' } });
         row.status = b.p_status;
+        if (b.p_status === 'archived' && currentId === row.id) {
+          // Mirror the RPC: next open path, active first, then paused, then most recently updated.
+          const rank = (p: Record<string, unknown>) => (p.status === 'active' ? 0 : p.status === 'paused' ? 1 : 2);
+          const stamp = (p: Record<string, unknown>) => String(p.updated_at ?? p.created_at);
+          const next = paths.filter((p) => p.status !== 'archived').sort((a, c) => rank(a) - rank(c) || stamp(c).localeCompare(stamp(a)))[0];
+          currentId = (next?.id as string | undefined) ?? null;
+        }
         return route.fulfill({ json: row });
       }
       case '/rest/v1/rpc/update_learning_path_plan': {
