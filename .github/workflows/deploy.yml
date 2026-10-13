@@ -84,6 +84,10 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     environment: production # enable "Required reviewers" so every DB change needs approval
+    # Shared with content-publish.yml: never migrate while content is being imported.
+    concurrency:
+      group: supabase-production
+      cancel-in-progress: false
     env:
       SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
       SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
