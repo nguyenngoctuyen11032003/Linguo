@@ -1,18 +1,32 @@
 import { useEffect, useId, useRef, useState, type FocusEvent } from 'react';
-import { Check, ChevronDown } from 'lucide-react';
-import { cn } from '@/lib/cn';
-import { LANGUAGE_CODES, LANGUAGES, type LanguageCode } from '@linguo/shared';
+import { Check, ChevronDown, Plus } from 'lucide-react';
+import { LANGUAGE_CODES, LANGUAGES, type LanguageCode, type PathStatus } from '@linguo/shared';
+
+export interface PillPath {
+  id: string;
+  language: LanguageCode;
+  status: PathStatus;
+}
+
+interface LanguagePillProps {
+  paths: readonly PillPath[];
+  currentId: string | null;
+  onSelect: (pathId: string) => void;
+  onAdd: (language: LanguageCode) => void;
+}
 
 /**
- * Current learning language as text ("EN ▾"), never a flag (PRD 12.2). Switching arrives in spec 1.
+ * Current learning language as text ("EN ▾"), never a flag (PRD 12.2).
  * Disclosure pattern: a button toggles a plain list of buttons (not an ARIA menu).
  */
-export function LanguagePill({ current = 'en' }: { current?: LanguageCode }) {
+export function LanguagePill({ paths, currentId, onSelect, onAdd }: LanguagePillProps) {
   const [open, setOpen] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const panelId = useId();
-  const lang = LANGUAGES[current];
+  const current = paths.find((p) => p.id === currentId) ?? null;
+  const lang = current ? LANGUAGES[current.language] : null;
+  const missing = LANGUAGE_CODES.filter((code) => LANGUAGES[code].available && !paths.some((p) => p.language === code));
 
   useEffect(() => {
     if (!open) return;
@@ -39,6 +53,8 @@ export function LanguagePill({ current = 'en' }: { current?: LanguageCode }) {
     if (next instanceof Node && !e.currentTarget.contains(next)) setOpen(false);
   };
 
+  const itemClass = 'flex min-h-11 w-full items-center justify-between gap-3 rounded-xl px-3 text-left text-sm hover:bg-text/5';
+
   return (
     <div ref={wrapperRef} className="relative" onBlur={onBlur}>
       <button
@@ -46,11 +62,11 @@ export function LanguagePill({ current = 'en' }: { current?: LanguageCode }) {
         type="button"
         aria-expanded={open}
         aria-controls={panelId}
-        aria-label={`${lang.short} – Ngôn ngữ đang học: ${lang.nameVi}. Đổi ngôn ngữ`}
+        aria-label={lang ? `${lang.short} – Ngôn ngữ đang học: ${lang.nameVi}. Đổi ngôn ngữ` : 'Chọn ngôn ngữ học'}
         onClick={() => setOpen((v) => !v)}
         className="glass inline-flex min-h-11 items-center gap-1.5 rounded-full px-4 text-sm font-semibold"
       >
-        {lang.short}
+        {lang ? lang.short : 'Ngôn ngữ'}
         <ChevronDown aria-hidden className="size-4" />
       </button>
       <ul
@@ -58,37 +74,44 @@ export function LanguagePill({ current = 'en' }: { current?: LanguageCode }) {
         hidden={!open}
         className="absolute right-0 top-full z-50 mt-2 w-64 max-w-[calc(100vw-2rem)] rounded-2xl border border-border bg-surface-solid p-1.5 shadow-[var(--shadow-card)]"
       >
-        {LANGUAGE_CODES.map((code) => {
-          const item = LANGUAGES[code];
-          const active = code === current;
+        {paths.map((path) => {
+          const item = LANGUAGES[path.language];
+          const active = path.id === currentId;
           return (
-            <li key={code}>
+            <li key={path.id}>
               <button
                 type="button"
                 aria-current={active ? 'true' : undefined}
-                aria-disabled={!item.available || undefined}
                 onClick={() => {
-                  if (!item.available) return;
                   setOpen(false);
+                  if (!active) onSelect(path.id);
                 }}
-                className={cn(
-                  'flex min-h-11 w-full items-center justify-between gap-3 rounded-xl px-3 text-left text-sm',
-                  item.available ? 'hover:bg-text/5' : 'cursor-not-allowed opacity-60',
-                )}
+                className={itemClass}
               >
                 <span>
-                  <span className="font-semibold">{item.short}</span> · {item.nameVi}{' '}
-                  <span lang={code}>({item.nativeName})</span>
+                  <span className="font-semibold">{item.short}</span> · {item.nameVi} <span lang={path.language}>({item.nativeName})</span>
+                  {path.status === 'paused' && <span className="text-muted"> · tạm dừng</span>}
                 </span>
-                {active ? (
-                  <Check aria-hidden className="size-4 shrink-0 text-primary" />
-                ) : (
-                  !item.available && <span className="shrink-0 text-xs text-muted">Sắp ra mắt</span>
-                )}
+                {active && <Check aria-hidden className="size-4 shrink-0 text-primary" />}
               </button>
             </li>
           );
         })}
+        {missing.map((code) => (
+          <li key={code}>
+            <button
+              type="button"
+              onClick={() => {
+                setOpen(false);
+                onAdd(code);
+              }}
+              className={itemClass}
+            >
+              <span>+ Thêm {LANGUAGES[code].nameVi}</span>
+              <Plus aria-hidden className="size-4 shrink-0 text-muted" />
+            </button>
+          </li>
+        ))}
       </ul>
     </div>
   );

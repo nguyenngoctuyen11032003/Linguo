@@ -11,7 +11,7 @@ export interface LanguageInfo {
 
 export const LANGUAGES: Record<LanguageCode, LanguageInfo> = {
   en: { code: 'en', short: 'EN', nameVi: 'Tiếng Anh', nativeName: 'English', available: true },
-  ko: { code: 'ko', short: 'KO', nameVi: 'Tiếng Hàn', nativeName: '한국어', available: false },
+  ko: { code: 'ko', short: 'KO', nameVi: 'Tiếng Hàn', nativeName: '한국어', available: true },
 };
 
 export const THEMES = ['light', 'dark', 'system'] as const;
