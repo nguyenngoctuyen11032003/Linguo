@@ -91,6 +91,13 @@ describe('useReviewSession', () => {
     expect(hook.current.totals?.daily_cap).toBe(30);
   });
 
+  it('asks for at most the study session review limit', async () => {
+    const fake = installClient({ get_review_queue: () => ({ data: queue([card(1)]) }) });
+    const { result: hook } = renderHook(() => useReviewSession({ limit: 7 }), { wrapper: wrapper() });
+    await ready(hook);
+    expect(fake.callsOf('get_review_queue')).toEqual([{ p_path_id: PATH_ID, p_limit: 7, p_extra: false }]);
+  });
+
   it('is empty when nothing is due, and loads the summary', async () => {
     const fake = installClient({
       get_review_queue: () => ({ data: queue([]) }),

@@ -14,6 +14,8 @@ interface Props {
   loadingMore: boolean;
   onMore: () => void;
   onDone: () => void;
+  /** Opened from a study session: "Quay lại phiên học" becomes the main action and no extra cards are offered. */
+  session?: { onReturn: () => void; returning: boolean };
 }
 
 function percent(value: number): string {
@@ -21,7 +23,7 @@ function percent(value: number): string {
 }
 
 /** End of a review session: what was done, what is next, and a clear way to stop. */
-export function ReviewSummaryView({ reviewedCount, graded, pendingCount, summary, totals, loadingMore, onMore, onDone }: Props) {
+export function ReviewSummaryView({ reviewedCount, graded, pendingCount, summary, totals, loadingMore, onMore, onDone, session }: Props) {
   const remembered = graded.filter((g) => g.rating_effective >= 3).length;
   const mastered = graded.filter((g) => g.newly_mastered).length;
   const tomorrow = summary?.forecast[1]?.count ?? null;
@@ -66,12 +68,19 @@ export function ReviewSummaryView({ reviewedCount, graded, pendingCount, summary
         )}
 
         <div className="flex flex-col gap-3 sm:flex-row">
+          {session && (
+            <div className="flex-1">
+              <Button variant="accent" size="lg" block loading={session.returning} onClick={session.onReturn}>
+                Quay lại phiên học
+              </Button>
+            </div>
+          )}
           <div className="flex-1">
-            <Button variant="accent" size="lg" block onClick={onDone}>
+            <Button variant={session ? 'ghost' : 'accent'} size="lg" block onClick={onDone}>
               Hôm nay đủ rồi
             </Button>
           </div>
-          {hasMoreCards(totals) && (
+          {!session && hasMoreCards(totals) && (
             <div className="flex-1">
               <Button variant="ghost" size="lg" block loading={loadingMore} onClick={onMore}>
                 +10 thẻ nữa

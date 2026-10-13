@@ -10,6 +10,8 @@ import { Skeleton } from '@/components/ui/Skeleton';
 import type { LessonRunApi, LessonStep } from '@/features/lesson-player/types';
 import { useLessonRun } from '@/features/lesson-player/useLessonRun';
 import { useProfile } from '@/features/profile/ProfileProvider';
+import { SESSION_PAGE_PATH } from '@/features/session-link/params';
+import { useSessionReturn } from '@/features/session-link/useSessionReturn';
 import { ExitSheet } from './ExitSheet';
 import { LessonProgress } from './LessonProgress';
 import { questionPosition } from './progress';
@@ -52,9 +54,28 @@ export function LessonPage() {
   const { profile } = useProfile();
   const navigate = useNavigate();
   const [exitOpen, setExitOpen] = useState(false);
+  /** Opened from a study session (?phien=&muc=): report the activity on completion and lead back to it. */
+  const sessionReturn = useSessionReturn();
+  const fromSession = sessionReturn.link !== null;
+  const [returning, setReturning] = useState(false);
   const closeRef = useRef<HTMLButtonElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const { status, step, stepIndex, lesson } = run;
+  const completed = !!run.completeResult;
+  const { reportDone } = sessionReturn;
+
+  useEffect(() => {
+    if (fromSession && completed) void reportDone();
+  }, [fromSession, completed, reportDone]);
+
+  async function backToSession() {
+    setReturning(true);
+    try {
+      await sessionReturn.returnToSession();
+    } finally {
+      setReturning(false);
+    }
+  }
 
   // Move focus to the new step's heading so screen readers announce it and Tab starts from the top.
   useEffect(() => {
@@ -86,7 +107,7 @@ export function LessonPage() {
     <ExitSheet
       open={exitOpen}
       onClose={() => setExitOpen(false)}
-      onExit={() => navigate(LEARN_PATH)}
+      onExit={() => navigate(fromSession ? SESSION_PAGE_PATH : LEARN_PATH)}
       pendingCount={run.pendingCount}
       triggerRef={closeRef}
     />
@@ -218,7 +239,18 @@ export function LessonPage() {
       break;
     case 'next_review':
       body = <StepNextReview nextReviewAt={run.completeResult?.next_review_at ?? null} timeZone={profile?.timezone ?? DEFAULT_TIMEZONE} />;
-      footer = (
+      footer = fromSession ? (
+        <div className="flex gap-3">
+          <Button variant="ghost" size="lg" onClick={() => navigate('/app')}>
+            Về trang chủ
+          </Button>
+          <div className="flex-1">
+            <Button variant="accent" size="lg" block loading={returning} onClick={() => void backToSession()}>
+              Quay lại phiên học
+            </Button>
+          </div>
+        </div>
+      ) : (
         <Button variant="accent" size="lg" block onClick={() => navigate('/app')}>
           Về trang chủ
         </Button>
