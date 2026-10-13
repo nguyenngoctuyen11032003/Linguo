@@ -39,7 +39,9 @@ function deferred<T>() {
   return { promise, resolve };
 }
 
-beforeEach(() => mocks.fetchPreferences.mockReset());
+beforeEach(() => {
+  mocks.fetchPreferences.mockReset();
+});
 
 describe('usePreferencesSync', () => {
   it('adopts the server preferences when nothing changed locally', async () => {

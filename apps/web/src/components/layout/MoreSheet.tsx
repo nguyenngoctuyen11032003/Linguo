@@ -1,33 +1,37 @@
-import { useEffect, useId, useRef } from 'react';
+import { useEffect, useId, useRef, type RefObject } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { ChevronRight, X } from 'lucide-react';
-import { NavLink } from 'react-router';
+import { NavLink, useLocation } from 'react-router';
 import { functionalTransition } from '@/design/motion';
 import { cn } from '@/lib/cn';
+import { useModalDialog } from '@/lib/useModalDialog';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 import { MORE_NAV } from './nav';
 
-export function MoreSheet({ open, onClose }: { open: boolean; onClose: () => void }) {
+export function MoreSheet({
+  open,
+  onClose,
+  triggerRef,
+}: {
+  open: boolean;
+  onClose: () => void;
+  /** The "Thêm" button; focus returns to it on close (falls back to the element focused on open). */
+  triggerRef?: RefObject<HTMLElement | null>;
+}) {
   const { reduceMotion } = useMotionPrefs();
   const panelRef = useRef<HTMLDivElement>(null);
   const titleId = useId();
+  const { pathname } = useLocation();
+  const lastPathname = useRef(pathname);
 
+  useModalDialog(open, onClose, { triggerRef, containerRef: panelRef });
+
+  // Close when the route changes underneath the sheet (browser back, a link elsewhere on the page).
   useEffect(() => {
-    if (!open) return;
-    const previous = document.activeElement instanceof HTMLElement ? document.activeElement : null;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
-    };
-    document.addEventListener('keydown', onKey);
-    const overflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    panelRef.current?.querySelector<HTMLElement>('button, a')?.focus();
-    return () => {
-      document.removeEventListener('keydown', onKey);
-      document.body.style.overflow = overflow;
-      previous?.focus();
-    };
-  }, [open, onClose]);
+    if (lastPathname.current === pathname) return;
+    lastPathname.current = pathname;
+    if (open) onClose();
+  }, [pathname, open, onClose]);
 
   const offscreen = reduceMotion ? { opacity: 0 } : { y: '100%' };
 
@@ -49,11 +53,12 @@ export function MoreSheet({ open, onClose }: { open: boolean; onClose: () => voi
             role="dialog"
             aria-modal="true"
             aria-labelledby={titleId}
+            tabIndex={-1}
             initial={offscreen}
             animate={{ y: 0, opacity: 1 }}
             exit={offscreen}
             transition={{ ...functionalTransition, duration: 0.28 }}
-            className="absolute inset-x-0 bottom-0 overscroll-contain rounded-t-[28px] border-t border-border bg-surface-solid px-safe pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-3"
+            className="absolute inset-x-0 bottom-0 max-h-[85dvh] overflow-y-auto overscroll-contain rounded-t-[28px] border-t border-border bg-surface-solid px-safe pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-3"
           >
             <div aria-hidden="true" className="mx-auto mb-2 h-1.5 w-10 rounded-full bg-text/20" />
             <div className="flex items-center justify-between">
