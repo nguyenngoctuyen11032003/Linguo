@@ -4,6 +4,7 @@
 // translate `known_wrong` answer must grade `incorrect`; a fill_blank `known_wrong` answer must not
 // be an accepted answer of any blank (see gradingErrors).
 import * as shared from '@linguo/shared';
+import { diagnosticErrors, diagnosticItems } from './diagnostic.mjs';
 import { effectiveStatus, indexContent } from './load.mjs';
 
 const { LEVELS, REQUIRED_BLOCKS, EXERCISE_STAGES, isGoalForLanguage, isLevelOf, levelOrdinal } = shared;
@@ -177,9 +178,10 @@ function findCycles(graph) {
 /**
  * @param loaded result of loadContent()
  * @param options.grade grader with the `gradeResponse` signature (default: the shared one)
+ * @param options.diagnosticMinPerCell minimum diagnostic items per language × skill × level (default 5)
  * @returns string[] of `<file>: <message>` errors (empty when the content is valid)
  */
-export function checkContent(loaded, { grade = sharedGrader() } = {}) {
+export function checkContent(loaded, { grade = sharedGrader(), diagnosticMinPerCell } = {}) {
   const errors = [...loaded.errors];
   const err = (file, message) => errors.push(`${file}: ${message}`);
   const { sources, items, programs, units, lessons } = indexContent(loaded.files);
@@ -212,6 +214,7 @@ export function checkContent(loaded, { grade = sharedGrader() } = {}) {
     claimKey(l.file, l.data.key, l.lang);
     for (const ex of l.data.exercises) claimKey(l.file, ex.key, l.lang);
   }
+  for (const d of diagnosticItems(loaded.files)) claimKey(d.file, d.data.key, d.lang);
 
   const sourceKeys = new Set(sources.map((s) => s.data.key));
   const requireSource = (file, key) => {
@@ -336,6 +339,9 @@ export function checkContent(loaded, { grade = sharedGrader() } = {}) {
   // --- prerequisite cycles -----------------------------------------------------------------------
   const graph = new Map(lessons.map((l) => [l.data.key, l.data.prerequisites]));
   for (const cycle of findCycles(graph)) err(lessonByKey.get(cycle[0]).file, `prerequisite cycle: ${cycle.join(' → ')}`);
+
+  // --- diagnostic item bank ----------------------------------------------------------------------
+  errors.push(...diagnosticErrors(loaded.files, diagnosticMinPerCell === undefined ? {} : { minPerCell: diagnosticMinPerCell }));
 
   return errors;
 }

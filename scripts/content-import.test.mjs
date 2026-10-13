@@ -1,11 +1,11 @@
 // Run with: node --import tsx --test scripts/content-import.test.mjs
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { cpSync, existsSync, mkdtempSync, readdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { bundleSchema, gradeResponse } from '@linguo/shared';
+import { bundleSchema, diagnosticBundleSchema, diagnosticItemSchema, gradeResponse } from '@linguo/shared';
 import { main } from './content-import.mjs';
 import { buildBundle, renderSeedSql } from './content/build.mjs';
 import { checkContent, sharedGrader } from './content/check.mjs';
@@ -13,7 +13,8 @@ import { checkContent, sharedGrader } from './content/check.mjs';
 test('check.mjs uses the shared gradeResponse by default', () => {
   assert.equal(sharedGrader(), gradeResponse);
 });
-import { hashRow } from './content/hash.mjs';
+import { buildDiagnosticBundle, renderDiagnosticSql } from './content/diagnostic.mjs';
+import { canonicalJson, hashRow } from './content/hash.mjs';
 import { contentId, uuidV5 } from './content/ids.mjs';
 import { loadContent } from './content/load.mjs';
 
@@ -698,5 +699,228 @@ test('build leaves other exercise types and the loaded content untouched', () =>
   const authored = authoredExercises(loaded);
   for (const e of bundle.exercises.filter((x) => !OPTION_TYPES.has(x.exercise_type))) {
     assert.deepEqual(e.prompt, authored.get(e.key).prompt, e.key);
+  }
+});
+
+// ---- diagnostic item bank (spec 4 §3) -------------------------------------------------------------------
+
+const DIAG_SKILLS = { vocabulary: ['voc', 'mcq'], grammar: ['gram', 'cloze_choice'], reading: ['read', 'reading_mcq'] };
+const DIAG_LEVELS = { en: ['pre_a1', 'a1', 'a2', 'b1', 'b2', 'c1', 'c2'], ko: ['hangul', 'topik1', 'topik2', 'topik3', 'topik4', 'topik5', 'topik6'] };
+
+/** A complete, valid bank file: `perLevel` items for every level of `lang`. */
+function diagYaml(lang, skill, { perLevel = 5 } = {}) {
+  const [short, type] = DIAG_SKILLS[skill];
+  const lines = ['# DEMO — chưa kiểm duyệt', 'schema_version: 1', 'demo: true', `language: ${lang}`, `skill: ${skill}`, 'items:'];
+  for (const level of DIAG_LEVELS[lang]) {
+    for (let i = 1; i <= perLevel; i++) {
+      const tag = `${skill} ${level} ${i}`;
+      lines.push(
+        `  - key: ${lang}:diag:${short}-${level.replace('_', '-')}-${i}`,
+        `    level: ${level}`,
+        `    item_type: ${type}`,
+        '    prompt:',
+        `      stem: "Câu hỏi ${tag}"`,
+        '      stem_lang: vi',
+        ...(skill === 'reading' ? [`      passage: "Passage ${tag}."`] : []),
+        '      options:',
+        ...['a', 'b', 'c', 'd'].map((id) => `        - { id: ${id}, text: "${tag} ${id}", lang: ${lang} }`),
+        '    answer: b',
+        `    explanation: { vi: "Giải thích ${tag}." }`,
+      );
+    }
+  }
+  return `${lines.join('\n')}\n`;
+}
+
+/** Temp content tree: the lesson fixture plus a full diagnostic bank for `langs`. */
+function diagTree(t, langs = ['en']) {
+  const tree = tempTree(t);
+  for (const lang of langs) {
+    mkdirSync(join(tree.content, 'diagnostic', lang), { recursive: true });
+    for (const skill of Object.keys(DIAG_SKILLS)) writeFileSync(join(tree.content, 'diagnostic', lang, `${skill}.yaml`), diagYaml(lang, skill));
+  }
+  return tree;
+}
+
+const VOCAB_EN = 'diagnostic/en/vocabulary.yaml';
+const loadTree = (content) => loadContent(content, { label: 'content' });
+const servedPrompt = (item) => diagnosticItemSchema.safeParse({ id: item.id, skill: item.skill, item_type: item.item_type, prompt: item.prompt });
+
+test('diagnostic bank: valid files pass and build one row per item with defaults', (t) => {
+  const { content } = diagTree(t, ['en', 'ko']);
+  const loaded = loadTree(content);
+  assert.deepEqual(checkContent(loaded, { grade }), []);
+  const bundle = buildDiagnosticBundle(loaded);
+  assert.ok(diagnosticBundleSchema.safeParse(bundle).success);
+  assert.equal(bundle.items.length, 210);
+  const keys = bundle.items.map((i) => i.key);
+  assert.deepEqual(keys, [...keys].sort());
+  const item = bundle.items.find((i) => i.key === 'en:diag:voc-pre-a1-1');
+  assert.equal(item.id, contentId('en:diag:voc-pre-a1-1'));
+  assert.equal(item.language_code, 'en');
+  assert.equal(item.skill, 'vocabulary');
+  assert.equal(item.item_type, 'mcq');
+  assert.equal(item.status, 'published');
+  assert.equal(item.is_demo, true);
+  assert.equal(item.key_confidence, 'unreviewed');
+  assert.deepEqual([item.reviewed_by, item.reviewed_at], [null, null]);
+  assert.equal('passage' in item.prompt, false);
+  // Default difficulty: level ordinal + 0.5.
+  const difficulty = (key) => bundle.items.find((i) => i.key === key).difficulty;
+  assert.equal(item.difficulty, 0.5);
+  assert.equal(difficulty('en:diag:gram-c2-3'), 6.5);
+  assert.equal(difficulty('ko:diag:read-topik3-2'), 3.5);
+  assert.equal(bundle.items.find((i) => i.key === 'ko:diag:read-hangul-1').prompt.passage, 'Passage reading hangul 1.');
+});
+
+test('diagnostic bank: served options are shuffled and opaquely re-labelled', (t) => {
+  const { content } = diagTree(t, ['en']);
+  const bundle = buildDiagnosticBundle(loadTree(content));
+  assert.equal(canonicalJson(buildDiagnosticBundle(loadTree(content))), canonicalJson(bundle), 'deterministic');
+  const slots = new Set();
+  for (const item of bundle.items) {
+    const ids = item.prompt.options.map((o) => o.id);
+    assert.ok(ids.includes(item.answer_key), item.key);
+    for (const id of ids) assert.match(id, /^o[0-9a-f]{8}$/);
+    // The correct option is the authored "b" one.
+    assert.match(item.prompt.options.find((o) => o.id === item.answer_key).text, / b$/);
+    slots.add(ids.indexOf(item.answer_key));
+    // The public prompt is exactly what the RPCs serve, and carries no answer.
+    assert.ok(servedPrompt(item).success, item.key);
+    assert.equal('answer' in item.prompt || 'answer_key' in item.prompt, false);
+  }
+  assert.equal(slots.size, 4, 'the correct option lands in every slot');
+});
+
+test('diagnostic bank: content_hash follows the edited item only', (t) => {
+  const { content } = diagTree(t, ['en']);
+  const before = buildDiagnosticBundle(loadTree(content));
+  edit(content, VOCAB_EN, 'Giải thích vocabulary a1 2.', 'Giải thích khác.');
+  const after = buildDiagnosticBundle(loadTree(content));
+  const changed = after.items.filter((it, i) => it.content_hash !== before.items[i].content_hash).map((i) => i.key);
+  assert.deepEqual(changed, ['en:diag:voc-a1-2']);
+});
+
+const DIAG_INVALID = [
+  { name: 'answer not an option', from: 'answer: b', to: 'answer: z', message: 'answer "z" is not an option id' },
+  { name: 'duplicate stem', from: 'stem: "Câu hỏi vocabulary a1 2"', to: 'stem: "câu hỏi  vocabulary a1 1"', message: 'duplicate stem' },
+  { name: 'missing demo header', from: '# DEMO — chưa kiểm duyệt\n', to: '', message: 'demo file must start with' },
+  { name: 'level of another language', from: 'level: a2', to: 'level: topik2', message: 'level "topik2" is not a en level' },
+  { name: 'too few items in a cell', from: 'level: b1', to: 'level: b2', message: 'vocabulary b1 has 4 item(s), needs at least 5' },
+  { name: 'duplicate key', from: 'key: en:diag:voc-c1-2', to: 'key: en:diag:voc-c1-1', message: 'duplicate key "en:diag:voc-c1-1"' },
+  { name: 'key of another language', from: 'key: en:diag:voc-c1-2', to: 'key: ko:diag:voc-c1-2', message: 'must start with "en:"' },
+  { name: 'non-NFC text', from: 'Giải thích vocabulary a1 3.', to: 'Giaỉ thích vocabulary a1 3.', message: 'text is not NFC-normalized' },
+  { name: 'passage outside reading', from: '      stem_lang: vi\n', to: '      stem_lang: vi\n      passage: "x"\n', message: 'prompt.passage is only for reading_mcq' },
+  { name: 'reading type outside reading', from: 'item_type: mcq', to: 'item_type: reading_mcq', message: 'item_type reading_mcq is not allowed for vocabulary' },
+  { name: 'language does not match folder', from: 'language: en', to: 'language: ko', message: 'does not match folder' },
+  { name: 'duplicate option text', from: 'text: "vocabulary pre_a1 1 b"', to: 'text: "Vocabulary pre_a1 1 a"', message: 'duplicate option text' },
+  { name: 'demo with reviewed key', from: 'demo: true', to: 'demo: true\nkey_confidence: reviewed', message: 'requires key_confidence unreviewed' },
+  { name: 'non-demo without review', from: 'demo: true', to: 'demo: false', message: 'demo: false requires reviewed_at and reviewed_by' },
+  { name: 'difficulty outside the level band', from: '    level: c2\n', to: '    level: c2\n    difficulty: 2\n', message: 'difficulty 2 is outside the c2 band 6–7' },
+  { name: 'unknown field', from: 'answer: b', to: 'answer: b\n    answer_key: b', message: 'answer_key' },
+];
+
+for (const c of DIAG_INVALID) {
+  test(`--check rejects diagnostic: ${c.name}`, (t) => {
+    const { content } = diagTree(t, ['en']);
+    edit(content, VOCAB_EN, c.from, c.to);
+    const errors = checkContent(loadTree(content), { grade });
+    assert.ok(errors.some((e) => e.includes(c.message)), `expected ${JSON.stringify(c.message)}, got:\n${errors.join('\n')}`);
+    for (const e of errors) assert.match(e, /^content\/\S+: /);
+  });
+}
+
+test('diagnostic bank: reading needs a passage, files are named by skill, layout is enforced', (t) => {
+  const { content } = diagTree(t, ['en']);
+  edit(content, 'diagnostic/en/reading.yaml', '      passage: "Passage reading a1 1."\n', '');
+  renameSync(join(content, 'diagnostic', 'en', 'grammar.yaml'), join(content, 'diagnostic', 'en', 'grammar-2.yaml'));
+  writeFileSync(join(content, 'diagnostic', 'nested.yaml'), diagYaml('en', 'vocabulary'));
+  const errors = checkContent(loadTree(content), { grade }).join('\n');
+  assert.match(errors, /reading_mcq needs prompt\.passage/);
+  assert.match(errors, /grammar-2\.yaml: file name must be grammar\.yaml/);
+  assert.match(errors, /diagnostic\/nested\.yaml: unexpected file location/);
+});
+
+test('diagnostic bank: every skill × level of a language with a bank is required (minimum is configurable)', (t) => {
+  const { content } = diagTree(t, ['en']);
+  rmSync(join(content, 'diagnostic', 'en', 'reading.yaml'));
+  const errors = checkContent(loadTree(content), { grade });
+  assert.ok(errors.includes('content/diagnostic/en/reading.yaml: reading pre_a1 has 0 item(s), needs at least 5'), errors.join('\n'));
+  assert.equal(errors.length, 7);
+  writeFileSync(join(content, 'diagnostic', 'en', 'reading.yaml'), diagYaml('en', 'reading', { perLevel: 2 }));
+  assert.equal(checkContent(loadTree(content), { grade }).length, 7);
+  assert.deepEqual(checkContent(loadTree(content), { grade, diagnosticMinPerCell: 2 }), []);
+});
+
+test('--emit-sql appends the diagnostic import after the lesson import', async (t) => {
+  const { dir, content } = diagTree(t, ['en', 'ko']);
+  const r = await cli(t, ['--emit-sql', '--dir', 'content', '--out', 'seed.sql'], { cwd: dir });
+  assert.equal(r.code, 0, r.err);
+  assert.match(r.out, /210 diagnostic items/);
+  const sql = readFileSync(join(dir, 'seed.sql'), 'utf8');
+  const lessonAt = sql.indexOf('select content_private.import_bundle($bundle$');
+  const diagAt = sql.indexOf('select content_private.import_diagnostic_bundle($diagnostic${\n  "bundle_version": 1,');
+  assert.ok(lessonAt > 0 && diagAt > lessonAt, 'diagnostic statement follows the lesson import');
+  assert.ok(sql.endsWith('$diagnostic$::jsonb);\n'));
+  assert.ok(sql.slice(diagAt).includes('"git_sha": null'));
+  const loaded = loadTree(content);
+  assert.equal(sql, renderSeedSql(buildBundle(loaded), renderDiagnosticSql(buildDiagnosticBundle(loaded))));
+  const check = ['--emit-sql', '--check', '--dir', 'content', '--out', 'seed.sql'];
+  assert.equal((await cli(t, check, { cwd: dir })).code, 0);
+  edit(content, VOCAB_EN, 'Giải thích vocabulary a1 2.', 'Giải thích mới.');
+  const stale = await cli(t, check, { cwd: dir });
+  assert.equal(stale.code, 1);
+  assert.match(stale.err, /out of date/);
+});
+
+test('--apply imports lessons then the diagnostic bank, and fails when the bank import fails', async (t) => {
+  const { dir } = diagTree(t, ['en']);
+  const calls = [];
+  const ok = { inserted: 1, updated: 0, archived: 0, unchanged: 0 };
+  const fetchImpl = async (url, init) => {
+    calls.push({ url, body: JSON.parse(init.body) });
+    return new Response(JSON.stringify(ok), { status: 200 });
+  };
+  const r = await cli(t, ['--apply', '--dir', join(dir, 'content')], { env: APPLY_ENV, fetchImpl });
+  assert.equal(r.code, 0, r.err);
+  assert.deepEqual(
+    calls.map((c) => c.url),
+    [
+      'https://abcdefghijklmnopqrst.supabase.co/rest/v1/rpc/import_content_bundle',
+      'https://abcdefghijklmnopqrst.supabase.co/rest/v1/rpc/import_diagnostic_content_bundle',
+    ],
+  );
+  const bank = diagnosticBundleSchema.parse(calls[1].body.p_bundle);
+  assert.equal(bank.items.length, 105);
+  assert.equal(bank.git_sha, 'deadbeef');
+  assert.match(r.out, /Imported 105 diagnostic items: \{"inserted":1/);
+
+  let n = 0;
+  const failSecond = async () =>
+    ++n === 1
+      ? new Response(JSON.stringify(ok), { status: 200 })
+      : new Response(JSON.stringify({ code: '42501', message: 'permission denied for function import_diagnostic_content_bundle' }), { status: 403 });
+  const denied = await cli(t, ['--apply', '--dir', join(dir, 'content')], { env: APPLY_ENV, fetchImpl: failSecond });
+  assert.equal(denied.code, 1);
+  assert.match(denied.err, /HTTP 403 42501 \| permission denied for function import_diagnostic_content_bundle/);
+});
+
+test('real diagnostic bank: ≥ 5 items per skill × level for both languages, 4 options, valid served prompts', () => {
+  const loaded = loadContent(REAL_CONTENT, { label: 'content' });
+  assert.deepEqual(checkContent(loaded, { grade }), []);
+  const bundle = buildDiagnosticBundle(loaded);
+  for (const lang of ['en', 'ko']) {
+    const items = bundle.items.filter((i) => i.language_code === lang);
+    assert.ok(items.length >= 105, `${lang}: ${items.length} items`);
+    for (const skill of Object.keys(DIAG_SKILLS)) {
+      for (const level of DIAG_LEVELS[lang]) {
+        assert.ok(items.filter((i) => i.skill === skill && i.level_code === level).length >= 5, `${lang} ${skill} ${level}`);
+      }
+    }
+  }
+  for (const item of bundle.items) {
+    assert.equal(item.prompt.options.length, 4, item.key);
+    assert.ok(item.prompt.options.some((o) => o.id === item.answer_key), item.key);
+    assert.ok(servedPrompt(item).success, item.key);
   }
 });

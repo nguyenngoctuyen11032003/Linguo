@@ -7,13 +7,16 @@
 // Options: --dir <content dir> (default content/), --out <seed file> (default supabase/seed.sql).
 // --apply needs SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY (legacy service_role JWT or sb_secret_ key):
 // it posts the bundle to the service_role-only RPC public.import_content_bundle, a thin wrapper around
-// content_private.import_bundle (the same import supabase/seed.sql runs).
+// content_private.import_bundle (the same import supabase/seed.sql runs). When content/diagnostic/ holds
+// items it then posts the diagnostic bank to public.import_diagnostic_content_bundle, the wrapper around
+// content_private.import_diagnostic_bundle (the second statement of supabase/seed.sql).
 import { existsSync, readFileSync, realpathSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { importResultSchema } from '@linguo/shared';
 import { buildBundle, renderSeedSql } from './content/build.mjs';
 import { checkContent, sharedGrader } from './content/check.mjs';
+import { buildDiagnosticBundle, renderDiagnosticSql } from './content/diagnostic.mjs';
 import { loadContent } from './content/load.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -71,14 +74,18 @@ export async function main(
     return 1;
   }
   const lessonCount = loaded.files.filter((f) => f.kind === 'lesson').length;
+  const diagnosticCount = loaded.files.filter((f) => f.kind === 'diagnostic').reduce((n, f) => n + f.data.items.length, 0);
+  const diagnosticNote = diagnosticCount ? `, ${diagnosticCount} diagnostic items` : '';
 
   if (!emitSql && !apply) {
-    log(`Content OK (${loaded.files.length} files, ${lessonCount} lessons).`);
+    log(`Content OK (${loaded.files.length} files, ${lessonCount} lessons${diagnosticNote}).`);
     return 0;
   }
 
   if (emitSql) {
-    const sql = renderSeedSql(buildBundle(loaded, { gitSha: null }));
+    // No diagnostic files → no second statement (a lessons-only tree seeds exactly as before).
+    const diagnosticSql = diagnosticCount ? renderDiagnosticSql(buildDiagnosticBundle(loaded, { gitSha: null })) : null;
+    const sql = renderSeedSql(buildBundle(loaded, { gitSha: null }), diagnosticSql);
     if (check) {
       const current = existsSync(out) ? readFileSync(out, 'utf8') : null;
       if (current !== sql) {
@@ -89,7 +96,7 @@ export async function main(
       return 0;
     }
     writeFileSync(out, sql);
-    log(`Wrote ${outName} (${lessonCount} lessons).`);
+    log(`Wrote ${outName} (${lessonCount} lessons${diagnosticNote}).`);
     return 0;
   }
 
@@ -100,52 +107,64 @@ export async function main(
     error('--apply needs SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY (never VITE_* variables).');
     return 1;
   }
-  let endpoint;
+  let base;
   try {
-    const base = new URL(projectUrl);
+    base = new URL(projectUrl);
     if (base.protocol !== 'https:' && base.protocol !== 'http:') throw new Error('protocol');
-    endpoint = new URL('rest/v1/rpc/import_content_bundle', base.href.endsWith('/') ? base.href : `${base.href}/`).href;
   } catch {
     error('SUPABASE_URL must be the project URL, e.g. https://<ref>.supabase.co.');
     return 1;
   }
+  const rpcUrl = (name) => new URL(`rest/v1/rpc/${name}`, base.href.endsWith('/') ? base.href : `${base.href}/`).href;
   // Never print the key, even if a response or network error happens to contain it.
   const redact = (text) => String(text).split(key).join('<redacted>');
-  const bundle = buildBundle(loaded, { gitSha: env.GITHUB_SHA || null });
-  let res;
-  try {
-    res = await fetchImpl(endpoint, {
-      method: 'POST',
-      // Legacy service_role JWTs and new sb_secret_ keys both work when sent in both headers.
-      headers: { apikey: key, Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ p_bundle: bundle }),
-    });
-  } catch (e) {
-    error(`Import failed: ${redact(e?.message ?? e)}`);
-    return 1;
-  }
-  const body = await res.text();
-  let parsed;
-  try {
-    parsed = JSON.parse(body);
-  } catch {
-    parsed = undefined;
-  }
-  if (!res.ok) {
-    // PostgREST errors are {code, message, details, hint}.
-    const detail =
-      parsed && typeof parsed.message === 'string'
-        ? [parsed.code, parsed.message, parsed.details, parsed.hint].filter(Boolean).join(' | ')
-        : body;
-    error(`Import failed: HTTP ${res.status} ${redact(detail)}`);
-    return 1;
-  }
-  const result = importResultSchema.safeParse(parsed);
-  if (!result.success) {
-    error(`Import returned an unexpected response: ${redact(body)}`);
-    return 1;
-  }
-  log(`Imported ${lessonCount} lessons: ${JSON.stringify(result.data)}`);
+
+  /** POSTs one bundle to a service_role RPC; resolves to the import counts, or null after printing why. */
+  const post = async (rpc, bundle) => {
+    let res;
+    try {
+      res = await fetchImpl(rpcUrl(rpc), {
+        method: 'POST',
+        // Legacy service_role JWTs and new sb_secret_ keys both work when sent in both headers.
+        headers: { apikey: key, Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ p_bundle: bundle }),
+      });
+    } catch (e) {
+      error(`Import failed: ${redact(e?.message ?? e)}`);
+      return null;
+    }
+    const body = await res.text();
+    let parsed;
+    try {
+      parsed = JSON.parse(body);
+    } catch {
+      parsed = undefined;
+    }
+    if (!res.ok) {
+      // PostgREST errors are {code, message, details, hint}.
+      const detail =
+        parsed && typeof parsed.message === 'string'
+          ? [parsed.code, parsed.message, parsed.details, parsed.hint].filter(Boolean).join(' | ')
+          : body;
+      error(`Import failed: HTTP ${res.status} ${redact(detail)}`);
+      return null;
+    }
+    const result = importResultSchema.safeParse(parsed);
+    if (!result.success) {
+      error(`Import returned an unexpected response: ${redact(body)}`);
+      return null;
+    }
+    return result.data;
+  };
+
+  const gitSha = env.GITHUB_SHA || null;
+  const lessons = await post('import_content_bundle', buildBundle(loaded, { gitSha }));
+  if (!lessons) return 1;
+  log(`Imported ${lessonCount} lessons: ${JSON.stringify(lessons)}`);
+  if (!diagnosticCount) return 0;
+  const diagnostic = await post('import_diagnostic_content_bundle', buildDiagnosticBundle(loaded, { gitSha }));
+  if (!diagnostic) return 1;
+  log(`Imported ${diagnosticCount} diagnostic items: ${JSON.stringify(diagnostic)}`);
   return 0;
 }
 

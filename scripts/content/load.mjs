@@ -5,6 +5,7 @@ import { join, relative, sep } from 'node:path';
 import { parse } from 'yaml';
 import {
   LANGUAGE_CODES,
+  diagnosticFileSchema,
   itemsFileSchema,
   lessonFileSchema,
   programFileSchema,
@@ -18,6 +19,7 @@ const SCHEMAS = {
   program: programFileSchema,
   unit: unitFileSchema,
   lesson: lessonFileSchema,
+  diagnostic: diagnosticFileSchema,
 };
 
 function walk(dir) {
@@ -46,6 +48,10 @@ export function effectiveStatus(status, demo) {
 export function classify(parts) {
   const yaml = (name) => YAML_FILE.test(name);
   if (parts.length === 1 && parts[0] === 'sources.yaml') return { kind: 'sources' };
+  // Diagnostic item bank (spec 4 §3): diagnostic/<lang>/<skill>.yaml.
+  if (parts[0] === 'diagnostic') {
+    return parts.length === 3 && LANGUAGE_CODES.includes(parts[1]) && yaml(parts[2]) ? { kind: 'diagnostic', lang: parts[1] } : null;
+  }
   const [lang, area] = parts;
   if (!LANGUAGE_CODES.includes(lang)) return null;
   if (area === 'items' && parts.length === 3 && yaml(parts[2])) return { kind: 'items', lang };
