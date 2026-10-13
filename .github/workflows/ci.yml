@@ -74,6 +74,8 @@ jobs:
         run: supabase start -x studio,imgproxy,vector,logflare,edge-runtime,realtime,mailpit,supavisor
       - name: Lint database schema
         run: supabase db lint --fail-on error
+      - name: Estimate fixtures in sync (SQL ↔ TS)
+        run: node scripts/sync-estimate-fixtures.mjs --check
       - name: RLS + trigger tests (pgTAP)
         run: supabase test db
       - name: Generated types are up to date
