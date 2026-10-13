@@ -1,0 +1,502 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+language: ko
+skill: grammar
+items:
+  # ---------- hangul ----------
+  - key: ko:diag:gram-hangul-haksaeng-ieyo
+    level: hangul
+    item_type: cloze_choice
+    prompt:
+      stem: "저는 학생___."
+      stem_lang: ko
+      options:
+        - { id: a, text: 이에요, lang: ko }
+        - { id: b, text: 예요, lang: ko }
+        - { id: c, text: 을, lang: ko }
+        - { id: d, text: 는, lang: ko }
+    answer: a
+    explanation: { vi: "“학생” kết thúc bằng phụ âm cuối (ㅇ) nên dùng “이에요”. “예요” chỉ dùng sau danh từ kết thúc bằng nguyên âm." }
+
+  - key: ko:diag:gram-hangul-uyu-yeyo
+    level: hangul
+    item_type: cloze_choice
+    prompt:
+      stem: "이것은 우유___."
+      stem_lang: ko
+      options:
+        - { id: a, text: 이에요, lang: ko }
+        - { id: b, text: 예요, lang: ko }
+        - { id: c, text: 를, lang: ko }
+        - { id: d, text: 이, lang: ko }
+    answer: b
+    explanation: { vi: "“우유” kết thúc bằng nguyên âm nên dùng “예요”. “이에요” chỉ dùng sau danh từ có phụ âm cuối." }
+
+  - key: ko:diag:gram-hangul-jeoneun-vietnam
+    level: hangul
+    item_type: cloze_choice
+    prompt:
+      stem: "저___ 베트남 사람이에요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 은, lang: ko }
+        - { id: b, text: 을, lang: ko }
+        - { id: c, text: 는, lang: ko }
+        - { id: d, text: 이, lang: ko }
+    answer: c
+    explanation: { vi: "“저” kết thúc bằng nguyên âm nên trợ từ chủ đề là “는” → “저는”. “은” chỉ dùng sau phụ âm cuối." }
+
+  - key: ko:diag:gram-hangul-seonsaengnim-eun
+    level: hangul
+    item_type: cloze_choice
+    prompt:
+      stem: "선생님___ 한국 사람이에요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 는, lang: ko }
+        - { id: b, text: 은, lang: ko }
+        - { id: c, text: 를, lang: ko }
+        - { id: d, text: 에, lang: ko }
+    answer: b
+    explanation: { vi: "“선생님” kết thúc bằng phụ âm ㅁ nên dùng trợ từ chủ đề “은”. “는” chỉ đi sau nguyên âm; “를” là trợ từ tân ngữ." }
+
+  - key: ko:diag:gram-hangul-aiga-uyu
+    level: hangul
+    item_type: cloze_choice
+    prompt:
+      stem: "아이___ 우유를 마셔요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 이, lang: ko }
+        - { id: b, text: 을, lang: ko }
+        - { id: c, text: 에, lang: ko }
+        - { id: d, text: 가, lang: ko }
+    answer: d
+    explanation: { vi: "“아이” là chủ ngữ và kết thúc bằng nguyên âm nên dùng “가”. “이” chỉ dùng sau phụ âm cuối; “을” là trợ từ tân ngữ." }
+
+  # ---------- topik1 ----------
+  - key: ko:diag:gram-topik1-ppang-eul
+    level: topik1
+    item_type: cloze_choice
+    prompt:
+      stem: "저는 매일 아침에 빵___ 먹어요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 를, lang: ko }
+        - { id: b, text: 을, lang: ko }
+        - { id: c, text: 이, lang: ko }
+        - { id: d, text: 에, lang: ko }
+    answer: b
+    explanation: { vi: "“빵” là tân ngữ của “먹어요” và có phụ âm cuối ㅇ nên dùng “을”. “를” chỉ dùng sau nguyên âm; “이” là trợ từ chủ ngữ." }
+
+  - key: ko:diag:gram-topik1-doseogwan-eseo
+    level: topik1
+    item_type: cloze_choice
+    prompt:
+      stem: "주말에 도서관___ 공부했어요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 에서, lang: ko }
+        - { id: b, text: 에, lang: ko }
+        - { id: c, text: 를, lang: ko }
+        - { id: d, text: 이, lang: ko }
+    answer: a
+    explanation: { vi: "Nơi diễn ra hành động (học bài) dùng “에서”. “에” chỉ đích đến hoặc nơi tồn tại (가다, 있다), không dùng với hành động như “공부하다”." }
+
+  - key: ko:diag:gram-topik1-eoje-mannasseoyo
+    level: topik1
+    item_type: cloze_choice
+    prompt:
+      stem: "어제 친구를 ___."
+      stem_lang: ko
+      options:
+        - { id: a, text: 만나요, lang: ko }
+        - { id: b, text: 만날 거예요, lang: ko }
+        - { id: c, text: 만났어요, lang: ko }
+        - { id: d, text: 만나고 있어요, lang: ko }
+    answer: c
+    explanation: { vi: "“어제” (hôm qua) đòi hỏi thì quá khứ “-았어요” → “만났어요”. “만날 거예요” là tương lai, mâu thuẫn với “어제”." }
+
+  - key: ko:diag:gram-topik1-gago-sipeoyo
+    level: topik1
+    item_type: cloze_choice
+    prompt:
+      stem: "저는 내년에 한국에 ___ 싶어요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 가서, lang: ko }
+        - { id: b, text: 가고, lang: ko }
+        - { id: c, text: 가면, lang: ko }
+        - { id: d, text: 가지, lang: ko }
+    answer: b
+    explanation: { vi: "Mẫu “muốn làm gì” là “động từ + -고 싶다” → “가고 싶어요”. Các dạng “가서”, “가면” không kết hợp với “싶다”." }
+
+  - key: ko:diag:gram-topik1-gongbu-an-haeyo
+    level: topik1
+    item_type: cloze_choice
+    prompt:
+      stem: "저는 주말에는 보통 ___. 집에서 쉬어요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 안 공부해요, lang: ko }
+        - { id: b, text: 공부해요 안, lang: ko }
+        - { id: c, text: 공부 안 해요, lang: ko }
+        - { id: d, text: 공부를 안요, lang: ko }
+    answer: c
+    explanation: { vi: "Với động từ dạng “danh từ + 하다”, “안” đứng trước “하다”: “공부 안 해요”. “안 공부해요” là lỗi thường gặp của người học." }
+
+  # ---------- topik2 ----------
+  - key: ko:diag:gram-topik2-isseul-geoyeyo
+    level: topik2
+    item_type: cloze_choice
+    prompt:
+      stem: "내일 비가 오면 그냥 집에 ___."
+      stem_lang: ko
+      options:
+        - { id: a, text: 있을 거예요, lang: ko }
+        - { id: b, text: 있었어요, lang: ko }
+        - { id: c, text: 있어서, lang: ko }
+        - { id: d, text: 있으니까, lang: ko }
+    answer: a
+    explanation: { vi: "“내일” và “-(으)면” nói về kế hoạch tương lai nên kết câu bằng “-(으)ㄹ 거예요”. “있었어요” là quá khứ; “있어서”, “있으니까” là vĩ tố nối, không kết thúc câu." }
+
+  - key: ko:diag:gram-topik2-onikka-useon
+    level: topik2
+    item_type: cloze_choice
+    prompt:
+      stem: "비가 ___ 우산을 가져가세요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 와서, lang: ko }
+        - { id: b, text: 오지만, lang: ko }
+        - { id: c, text: 오고, lang: ko }
+        - { id: d, text: 오니까, lang: ko }
+    answer: d
+    explanation: { vi: "Khi vế sau là câu mệnh lệnh/đề nghị (“-세요”), chỉ lý do bằng “-(으)니까”. “-아서/어서” không đi với mệnh lệnh nên “와서” sai." }
+
+  - key: ko:diag:gram-topik2-mandeul-su-isseoyo
+    level: topik2
+    item_type: cloze_choice
+    prompt:
+      stem: "저는 한국 음식을 ___ 수 있어요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 만든, lang: ko }
+        - { id: b, text: 만들을, lang: ko }
+        - { id: c, text: 만드는, lang: ko }
+        - { id: d, text: 만들, lang: ko }
+    answer: d
+    explanation: { vi: "“만들다” có gốc kết thúc bằng ㄹ nên với “-(으)ㄹ 수 있다” chỉ giữ nguyên ㄹ: “만들 수 있어요”. “만들을” là thêm thừa “을”." }
+
+  - key: ko:diag:gram-topik2-masitjiman-bissayo
+    level: topik2
+    item_type: cloze_choice
+    prompt:
+      stem: "이 식당은 음식은 ___ 너무 비싸요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 맛있지만, lang: ko }
+        - { id: b, text: 맛있어서, lang: ko }
+        - { id: c, text: 맛있으면, lang: ko }
+        - { id: d, text: 맛있으니까, lang: ko }
+    answer: a
+    explanation: { vi: "Hai vế trái ngược nhau (ngon nhưng đắt) nên dùng “-지만”. “맛있어서” chỉ nguyên nhân, không hợp nghĩa." }
+
+  - key: ko:diag:gram-topik2-halmeoni-jumuseyo
+    level: topik2
+    item_type: cloze_choice
+    prompt:
+      stem: "할머니께서 지금 방에서 ___."
+      stem_lang: ko
+      options:
+        - { id: a, text: 자세요, lang: ko }
+        - { id: b, text: 주무세요, lang: ko }
+        - { id: c, text: 자요, lang: ko }
+        - { id: d, text: 잠이에요, lang: ko }
+    answer: b
+    explanation: { vi: "Chủ ngữ là người lớn tuổi (“께서”) nên phải dùng kính ngữ; kính ngữ của “자다” là động từ riêng “주무시다” → “주무세요”. “자세요” là lỗi vì “자다” không chia kính ngữ bằng “-세요”." }
+
+  # ---------- topik3 ----------
+  - key: ko:diag:gram-topik3-gadaga-chingu
+    level: topik3
+    item_type: cloze_choice
+    prompt:
+      stem: "집에 ___ 길에서 우연히 옛날 친구를 만났어요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 가도록, lang: ko }
+        - { id: b, text: 가다가, lang: ko }
+        - { id: c, text: 가기 때문에, lang: ko }
+        - { id: d, text: 가는 것 같아서, lang: ko }
+    answer: b
+    explanation: { vi: "“-다가” diễn tả đang làm một việc thì xảy ra việc khác: đang đi về nhà thì gặp bạn. “가기 때문에” chỉ nguyên nhân, không hợp nghĩa." }
+
+  - key: ko:diag:gram-topik3-inneun-geot-gatayo
+    level: topik3
+    item_type: cloze_choice
+    prompt:
+      stem: "밖이 정말 시끄럽네요. 밖에 사람이 많이 ___ 것 같아요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 있은, lang: ko }
+        - { id: b, text: 있기, lang: ko }
+        - { id: c, text: 있는, lang: ko }
+        - { id: d, text: 있어, lang: ko }
+    answer: c
+    explanation: { vi: "Phỏng đoán ở hiện tại dùng “-는 것 같다”; “있다/없다” luôn đi với “-는” → “있는 것 같아요”. “있은” là dạng sai." }
+
+  - key: ko:diag:gram-topik3-chwijikharyeogo
+    level: topik3
+    item_type: cloze_choice
+    prompt:
+      stem: "한국 회사에 ___ 요즘 한국어를 열심히 배우고 있어요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 취직하다가, lang: ko }
+        - { id: b, text: 취직하려면, lang: ko }
+        - { id: c, text: 취직하던, lang: ko }
+        - { id: d, text: 취직하려고, lang: ko }
+    answer: d
+    explanation: { vi: "“-(으)려고” diễn tả mục đích/ý định: học tiếng Hàn để xin việc. “-(으)려면” (nếu muốn…) đòi vế sau là điều cần làm như “-아야 해요”, không hợp với “배우고 있어요”." }
+
+  - key: ko:diag:gram-topik3-bappeudago-haesseoyo
+    level: topik3
+    item_type: cloze_choice
+    prompt:
+      stem: "민수 씨가 내일은 바쁘___ 했어요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 다고, lang: ko }
+        - { id: b, text: 라고, lang: ko }
+        - { id: c, text: 냐고, lang: ko }
+        - { id: d, text: 자고, lang: ko }
+    answer: a
+    explanation: { vi: "Tường thuật câu trần thuật với tính từ dùng “-다고 하다” → “바쁘다고 했어요”. “-라고” dùng cho danh từ (이다) hoặc mệnh lệnh, “-냐고” cho câu hỏi." }
+
+  - key: ko:diag:gram-topik3-yorihaneun-dongan
+    level: topik3
+    item_type: cloze_choice
+    prompt:
+      stem: "제가 저녁을 ___ 동생은 방을 청소했어요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 요리하기 동안, lang: ko }
+        - { id: b, text: 요리하는 동안, lang: ko }
+        - { id: c, text: 요리하는 동안에서, lang: ko }
+        - { id: d, text: 요리할 동안에서, lang: ko }
+    answer: b
+    explanation: { vi: "“Trong khi làm gì” là “động từ + -는 동안(에)” → “요리하는 동안”. “동안” không đi với “-기” và không kết hợp với “에서”." }
+
+  # ---------- topik4 ----------
+  - key: ko:diag:gram-topik4-oneun-barame
+    level: topik4
+    item_type: cloze_choice
+    prompt:
+      stem: "갑자기 비가 ___ 바람에 옷이 다 젖었어요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 온, lang: ko }
+        - { id: b, text: 오는, lang: ko }
+        - { id: c, text: 올, lang: ko }
+        - { id: d, text: 오던, lang: ko }
+    answer: b
+    explanation: { vi: "Cấu trúc “-는 바람에” (vì… nên, dẫn đến kết quả ngoài ý muốn) luôn dùng dạng “-는”, kể cả khi sự việc ở quá khứ. “온 바람에” là lỗi thường gặp." }
+
+  - key: ko:diag:gram-topik4-masitdeoragoyo
+    level: topik4
+    item_type: cloze_choice
+    prompt:
+      stem: "어제 그 식당에 처음 가 봤는데 음식이 정말 ___."
+      stem_lang: ko
+      options:
+        - { id: a, text: 맛있을게요, lang: ko }
+        - { id: b, text: 맛있읍시다, lang: ko }
+        - { id: c, text: 맛있더라고요, lang: ko }
+        - { id: d, text: 맛있으려고요, lang: ko }
+    answer: c
+    explanation: { vi: "Kể lại điều bản thân trực tiếp trải nghiệm, cảm nhận trong quá khứ dùng “-더라고요”. “-(으)ㄹ게요”, “-(으)ㅂ시다” là hứa hẹn/rủ rê và không dùng với tính từ." }
+
+  - key: ko:diag:gram-topik4-chulbalhaetdeoramyeon
+    level: topik4
+    item_type: cloze_choice
+    prompt:
+      stem: "조금만 일찍 ___ 기차를 놓치지 않았을 거예요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 출발했더라면, lang: ko }
+        - { id: b, text: 출발하더라면, lang: ko }
+        - { id: c, text: 출발했더니, lang: ko }
+        - { id: d, text: 출발하도록, lang: ko }
+    answer: a
+    explanation: { vi: "Giả định trái với quá khứ (giá mà đã…) dùng “-았/었더라면” đi với “-았을 거예요”. “출발했더니” kể một kết quả có thật, mâu thuẫn với vế sau." }
+
+  - key: ko:diag:gram-topik4-naogi-maryeon
+    level: topik4
+    item_type: cloze_choice
+    prompt:
+      stem: "열심히 노력하면 언젠가는 좋은 결과가 ___ 마련이에요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 나오는, lang: ko }
+        - { id: b, text: 나올, lang: ko }
+        - { id: c, text: 나와서, lang: ko }
+        - { id: d, text: 나오기, lang: ko }
+    answer: d
+    explanation: { vi: "Cấu trúc “-기 마련이다” (lẽ đương nhiên sẽ…) cố định dùng “-기” → “나오기 마련이에요”. Các dạng định ngữ “나오는/나올” không kết hợp với “마련이다”." }
+
+  - key: ko:diag:gram-topik4-kyeon-chaero
+    level: topik4
+    item_type: cloze_choice
+    prompt:
+      stem: "너무 피곤해서 불을 ___ 채로 잠이 들었어요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 켜는, lang: ko }
+        - { id: b, text: 켠, lang: ko }
+        - { id: c, text: 켤, lang: ko }
+        - { id: d, text: 켜기, lang: ko }
+    answer: b
+    explanation: { vi: "“-(으)ㄴ 채로” (giữ nguyên trạng thái đã…) dùng định ngữ quá khứ “-(으)ㄴ” → “켠 채로” (để nguyên đèn bật). “켜는 채로” là sai." }
+
+  # ---------- topik5 ----------
+  - key: ko:diag:gram-topik5-deutgineunkeoneong
+    level: topik5
+    item_type: cloze_choice
+    prompt:
+      stem: "열심히 일했는데 칭찬을 ___ 오히려 꾸중만 들었어요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 듣기는커녕, lang: ko }
+        - { id: b, text: 듣는 한, lang: ko }
+        - { id: c, text: 들을지언정, lang: ko }
+        - { id: d, text: 듣는 셈이라, lang: ko }
+    answer: a
+    explanation: { vi: "“-기는커녕” nghĩa là “đừng nói đến… mà ngược lại”, thường đi với “오히려”: chẳng những không được khen mà còn bị mắng. “들을지언정” (thà… chứ) không hợp nghĩa." }
+
+  - key: ko:diag:gram-topik5-ijeobeoryeosseul-riga
+    level: topik5
+    item_type: cloze_choice
+    prompt:
+      stem: "그렇게 꼼꼼한 사람이 약속을 잊어버렸을 ___ 없어요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 셈이, lang: ko }
+        - { id: b, text: 줄이, lang: ko }
+        - { id: c, text: 리가, lang: ko }
+        - { id: d, text: 뻔이, lang: ko }
+    answer: c
+    explanation: { vi: "“-(으)ㄹ 리가 없다” diễn tả “không lẽ nào lại…”, phủ định mạnh khả năng. “셈”, “줄”, “뻔” không đi với “-이 없다” theo nghĩa này." }
+
+  - key: ko:diag:gram-topik5-ilhaneun-semieyo
+    level: topik5
+    item_type: cloze_choice
+    prompt:
+      stem: "한 달에 두 번만 쉬니까 거의 매일 ___ 셈이에요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 일하기, lang: ko }
+        - { id: b, text: 일하는, lang: ko }
+        - { id: c, text: 일한다는, lang: ko }
+        - { id: d, text: 일하고, lang: ko }
+    answer: b
+    explanation: { vi: "“-는 셈이다” (coi như là, tính ra thì…) dùng định ngữ “-는” với động từ hiện tại → “일하는 셈이에요”. “일하기 셈” là sai cấu trúc." }
+
+  - key: ko:diag:gram-topik5-heorakhaneun-han
+    level: topik5
+    item_type: cloze_choice
+    prompt:
+      stem: "건강이 ___ 은퇴하지 않고 계속 일하고 싶습니다."
+      stem_lang: ko
+      options:
+        - { id: a, text: 허락하기는커녕, lang: ko }
+        - { id: b, text: 허락할지언정, lang: ko }
+        - { id: c, text: 허락하는 마당에, lang: ko }
+        - { id: d, text: 허락하는 한, lang: ko }
+    answer: d
+    explanation: { vi: "“-는 한” nêu điều kiện giới hạn: “chừng nào sức khỏe còn cho phép”. “허락하는 마당에” (trong hoàn cảnh đã…) mang sắc thái tiêu cực, không hợp nghĩa." }
+
+  - key: ko:diag:gram-topik5-haneun-madange
+    level: topik5
+    item_type: cloze_choice
+    prompt:
+      stem: "회사가 문을 닫느냐 마느냐 하는 ___ 보너스 이야기를 꺼낼 수 있겠어요?"
+      stem_lang: ko
+      options:
+        - { id: a, text: 마당에, lang: ko }
+        - { id: b, text: 셈에, lang: ko }
+        - { id: c, text: 한에, lang: ko }
+        - { id: d, text: 리에, lang: ko }
+    answer: a
+    explanation: { vi: "“-는 마당에” nghĩa là “trong tình cảnh (khó khăn) như thế này”, thường đi với câu hỏi tu từ. “셈”, “한”, “리” không kết hợp với “-에” theo nghĩa này." }
+
+  # ---------- topik6 ----------
+  - key: ko:diag:gram-topik6-kkaelsera
+    level: topik6
+    item_type: cloze_choice
+    prompt:
+      stem: "아기가 ___ 엄마는 발소리를 죽이며 조용히 방을 나섰다."
+      stem_lang: ko
+      options:
+        - { id: a, text: 깨건대, lang: ko }
+        - { id: b, text: 깬들, lang: ko }
+        - { id: c, text: 깰세라, lang: ko }
+        - { id: d, text: 깨노라면, lang: ko }
+    answer: c
+    explanation: { vi: "“-(으)ㄹ세라” diễn tả “sợ rằng/e rằng…” nên làm hành động để tránh: sợ con thức giấc nên bước nhẹ. “깬들” (dù có thức thì…) không hợp nghĩa." }
+
+  - key: ko:diag:gram-topik6-saenggakhageondae
+    level: topik6
+    item_type: cloze_choice
+    prompt:
+      stem: "제가 ___ 이번 사업은 당분간 보류하는 것이 바람직할 듯합니다."
+      stem_lang: ko
+      options:
+        - { id: a, text: 생각하건대, lang: ko }
+        - { id: b, text: 생각할세라, lang: ko }
+        - { id: c, text: 생각한들, lang: ko }
+        - { id: d, text: 생각하노라면, lang: ko }
+    answer: a
+    explanation: { vi: "“-건대” đi với động từ nói/nghĩ/nhìn để mở đầu ý kiến của người nói: “theo tôi nghĩ thì…”. “생각한들” (dù có nghĩ thì…) đòi vế sau mang ý phủ định, không hợp." }
+
+  - key: ko:diag:gram-topik6-sanoramyeon
+    level: topik6
+    item_type: cloze_choice
+    prompt:
+      stem: "힘들어도 참고 ___ 언젠가는 좋은 날이 오겠지요."
+      stem_lang: ko
+      options:
+        - { id: a, text: 살노라면, lang: ko }
+        - { id: b, text: 사노라면, lang: ko }
+        - { id: c, text: 산들, lang: ko }
+        - { id: d, text: 살세라, lang: ko }
+    answer: b
+    explanation: { vi: "“-노라면” nghĩa là “cứ tiếp tục… thì (sẽ)”. Gốc “살-” kết thúc bằng ㄹ nên ㄹ rụng trước “ㄴ” → “사노라면”; “살노라면” là sai." }
+
+  - key: ko:diag:gram-topik6-huhoehandeul
+    level: topik6
+    item_type: cloze_choice
+    prompt:
+      stem: "이미 지나간 일인데 이제 와서 ___ 무슨 소용이 있겠어요?"
+      stem_lang: ko
+      options:
+        - { id: a, text: 후회하건대, lang: ko }
+        - { id: b, text: 후회할세라, lang: ko }
+        - { id: c, text: 후회하노라면, lang: ko }
+        - { id: d, text: 후회한들, lang: ko }
+    answer: d
+    explanation: { vi: "“-(으)ㄴ들” nghĩa là “dù có… thì cũng (vô ích)”, thường đi với câu hỏi tu từ như “무슨 소용이 있겠어요?”. “후회할세라” (sợ rằng sẽ hối hận) không hợp nghĩa." }
+
+  - key: ko:diag:gram-topik6-wasinsangdam
+    level: topik6
+    item_type: cloze_choice
+    prompt:
+      stem: "그는 거듭된 실패에도 포기하지 않고 십 년간 ___ 끝에 마침내 재기에 성공했다."
+      stem_lang: ko
+      options:
+        - { id: a, text: 우유부단한, lang: ko }
+        - { id: b, text: 조삼모사한, lang: ko }
+        - { id: c, text: 와신상담한, lang: ko }
+        - { id: d, text: 동문서답한, lang: ko }
+    answer: c
+    explanation: { vi: "“와신상담” (nằm gai nếm mật) chỉ việc chịu đựng gian khổ để chờ ngày thành công, hợp với “끝에 재기에 성공했다”. “우유부단” là thiếu quyết đoán, trái nghĩa với ngữ cảnh." }

@@ -6793,3 +6793,9529 @@ select content_private.import_bundle($bundle${
     }
   ]
 }$bundle$::jsonb);
+select content_private.import_diagnostic_bundle($diagnostic${
+  "bundle_version": 1,
+  "git_sha": null,
+  "items": [
+    {
+      "answer_key": "o3250fdc5",
+      "content_hash": "dc57e3ad5fe200d03b88335009d0733f1d212cf3f83acd924da0b5508b94cdbc",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“Can” là động từ khuyết thiếu: không thêm “-s” và theo sau là động từ nguyên mẫu không “to”. Vì vậy “cans” và “can to” đều sai."
+      },
+      "id": "ee2cf092-4024-5b83-b123-d2907f932d6a",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-a1-can-play-guitar",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o3250fdc5",
+            "lang": "en",
+            "text": "can"
+          },
+          {
+            "id": "oa4ca7600",
+            "lang": "en",
+            "text": "is can"
+          },
+          {
+            "id": "o85b5003c",
+            "lang": "en",
+            "text": "can to"
+          },
+          {
+            "id": "o6ed2a44c",
+            "lang": "en",
+            "text": "cans"
+          }
+        ],
+        "stem": "My brother ___ play the guitar very well.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o5af2e84f",
+      "content_hash": "7a0441b3dc12686b24b01f5d0ebcbec2d7f799d08b4ee5b4748f48b522fce45f",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "Cá bơi bên trong nước sông nên dùng “in”. “On” là trên bề mặt, “at” chỉ một điểm, đều không hợp với cá bơi dưới sông."
+      },
+      "id": "8fd2ea4c-1619-556d-9998-b14c77a54ac9",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-a1-fish-in-river",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o5af2e84f",
+            "lang": "en",
+            "text": "in"
+          },
+          {
+            "id": "oa5b338e9",
+            "lang": "en",
+            "text": "of"
+          },
+          {
+            "id": "o4c6d3f78",
+            "lang": "en",
+            "text": "at"
+          },
+          {
+            "id": "o30286174",
+            "lang": "en",
+            "text": "on"
+          }
+        ],
+        "stem": "Many fish swim ___ the river.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o8d73fe71",
+      "content_hash": "9792798026cbddbd018d311cb7e457f50c72f9aec0752199a38e0b68a304fd5d",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "Thì hiện tại đơn với chủ ngữ ngôi thứ ba số ít (she) thì động từ thêm “-s”: “lives”. “Is live” sai vì không dùng “is” cùng động từ nguyên mẫu."
+      },
+      "id": "0ba63b91-b19b-5ad2-9ed5-0a6a85e98efb",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-a1-she-lives",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o8d73fe71",
+            "lang": "en",
+            "text": "lives"
+          },
+          {
+            "id": "o30155ec7",
+            "lang": "en",
+            "text": "is live"
+          },
+          {
+            "id": "o1da141c6",
+            "lang": "en",
+            "text": "live"
+          },
+          {
+            "id": "o65c08a1a",
+            "lang": "en",
+            "text": "living"
+          }
+        ],
+        "stem": "She ___ in Hanoi with her parents.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o7e8660a0",
+      "content_hash": "f1f3b200bdee4e449b5f88e10576bc7ef1ce2c6bb19dd125325f24571afd102c",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“Two cats” là số nhiều nên dùng “there are”. Tiếng Việt nói “có”, nhưng tiếng Anh không dùng “has/have” trong cấu trúc “there ___” này."
+      },
+      "id": "222e796b-2b95-53b3-95f6-ac350bbe0b2c",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-a1-there-are-two-cats",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o443c9e0e",
+            "lang": "en",
+            "text": "is"
+          },
+          {
+            "id": "oeb853605",
+            "lang": "en",
+            "text": "has"
+          },
+          {
+            "id": "o7e8660a0",
+            "lang": "en",
+            "text": "are"
+          },
+          {
+            "id": "o67bd408f",
+            "lang": "en",
+            "text": "have"
+          }
+        ],
+        "stem": "There ___ two cats in the garden.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob8b146d9",
+      "content_hash": "fd80d2d8bb26dc61ea3f023fd4a26a3bb30f0710c0cc4044890d098766d6f1ab",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "Sở hữu cách của danh từ số ít là thêm “’s”: “Tom’s bike” (xe đạp của Tom). “Toms” không có dấu nháy là sai, còn “Toms’” dùng cho danh từ số nhiều."
+      },
+      "id": "0710829b-486c-5ace-a4dc-074d802654d4",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-a1-toms-bike",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "ob1daec6d",
+            "lang": "en",
+            "text": "Toms"
+          },
+          {
+            "id": "ob8b146d9",
+            "lang": "en",
+            "text": "Tom's"
+          },
+          {
+            "id": "o740250c0",
+            "lang": "en",
+            "text": "Toms'"
+          },
+          {
+            "id": "o846e6d77",
+            "lang": "en",
+            "text": "Tom"
+          }
+        ],
+        "stem": "This is ___ bike. He rides it to school every day.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o13ea8feb",
+      "content_hash": "1b18a1f8e31e7ca43563340dcfdeddb9e80d078e9174c9f5cff86cc216025916",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "Hành động đang diễn ra ngay lúc nói nên dùng hiện tại tiếp diễn: “is sleeping”. “Sleeps” là hiện tại đơn (thói quen), còn “are” không hợp với chủ ngữ số ít “the baby”."
+      },
+      "id": "b5f44397-4a16-5ede-8125-17fc2ec1233b",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-a2-baby-is-sleeping",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o13ea8feb",
+            "lang": "en",
+            "text": "is sleeping"
+          },
+          {
+            "id": "o38aba9c0",
+            "lang": "en",
+            "text": "sleep"
+          },
+          {
+            "id": "of84e803e",
+            "lang": "en",
+            "text": "are sleeping"
+          },
+          {
+            "id": "o7efe7c5e",
+            "lang": "en",
+            "text": "sleeps"
+          }
+        ],
+        "stem": "Please be quiet. The baby ___ in the next room.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o04fe8bda",
+      "content_hash": "b6288b0f1f53e30f1988efaf078df00bf32bb9bb9637cacacf9d60edfaabec03",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "Tính từ ngắn “big” khi so sánh hơn thì gấp đôi phụ âm và thêm “-er”: “bigger than”. “More big” sai vì “more” chỉ dùng với tính từ dài; “biggest” là so sánh nhất."
+      },
+      "id": "14bd9f4f-cf76-5deb-8878-a600b6596fca",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-a2-bigger-than",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o801d3353",
+            "lang": "en",
+            "text": "more big"
+          },
+          {
+            "id": "o04fe8bda",
+            "lang": "en",
+            "text": "bigger"
+          },
+          {
+            "id": "o13a5ebbf",
+            "lang": "en",
+            "text": "biggest"
+          },
+          {
+            "id": "o3394e77c",
+            "lang": "en",
+            "text": "big"
+          }
+        ],
+        "stem": "My house is ___ than yours, but yours has a nicer garden.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "oa0b86f66",
+      "content_hash": "68edeceeb53fefbfff79c4825939e3e4c95afb8a724247a931215f6779566850",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "Khi dự đoán dựa trên dấu hiệu đang thấy (mây đen), ta dùng “be going to”: “It is going to rain”. Thiếu “is” như “going to” là sai ngữ pháp."
+      },
+      "id": "039e4389-66f6-585b-ad30-a78acab67ba5",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-a2-going-to-rain",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "oc923745a",
+            "lang": "en",
+            "text": "goes to"
+          },
+          {
+            "id": "oa0b86f66",
+            "lang": "en",
+            "text": "is going to"
+          },
+          {
+            "id": "of25d0af8",
+            "lang": "en",
+            "text": "is go to"
+          },
+          {
+            "id": "ob5135742",
+            "lang": "en",
+            "text": "going to"
+          }
+        ],
+        "stem": "Look at those dark clouds! It ___ rain.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o92204ab6",
+      "content_hash": "2481ba2f4f1baed1701e53aa5bf83562c51bad8222424d742e230ff1e0644347",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“Sugar” là danh từ không đếm được nên hỏi số lượng bằng “how much”. “How many” chỉ dùng với danh từ đếm được số nhiều."
+      },
+      "id": "f9b68c7b-9a94-5bf0-b052-ea1a595eed06",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-a2-how-much-sugar",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o92204ab6",
+            "lang": "en",
+            "text": "much"
+          },
+          {
+            "id": "od221b5e8",
+            "lang": "en",
+            "text": "lot"
+          },
+          {
+            "id": "o2105096c",
+            "lang": "en",
+            "text": "many"
+          },
+          {
+            "id": "o2a5249ee",
+            "lang": "en",
+            "text": "few"
+          }
+        ],
+        "stem": "How ___ sugar do you want in your tea?",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o5504d127",
+      "content_hash": "a83f6c5075fb0dc1ed4c90525bc0f82779552f586de3ad0f002c18dc3b43e816",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“Last Sunday” là mốc thời gian đã kết thúc nên dùng quá khứ đơn “went” (quá khứ bất quy tắc của “go”). Thì hiện tại hoàn thành “have gone” không đi với mốc thời gian quá khứ cụ thể."
+      },
+      "id": "e3a9bef9-aae6-5d31-b604-67da2ac8f638",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-a2-went-last-sunday",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "oa50df88a",
+            "lang": "en",
+            "text": "goes"
+          },
+          {
+            "id": "o38a069ce",
+            "lang": "en",
+            "text": "go"
+          },
+          {
+            "id": "o55daa4e1",
+            "lang": "en",
+            "text": "have gone"
+          },
+          {
+            "id": "o5504d127",
+            "lang": "en",
+            "text": "went"
+          }
+        ],
+        "stem": "We ___ to the beach last Sunday.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "of47d404a",
+      "content_hash": "8a7be67cdee3aec306e5309417689c66da0e465113b5d7146dd04adf568b8a71",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Cây cầu không tự xây mà “được xây” nên dùng bị động quá khứ: “was + V3” = “was built”. “Built” một mình là chủ động (cầu tự xây), “was build” sai dạng động từ."
+      },
+      "id": "be69fc2e-a7a4-522f-a5ea-865ec8be225f",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-b1-bridge-was-built",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o44072606",
+            "lang": "en",
+            "text": "has built"
+          },
+          {
+            "id": "oe741ff5a",
+            "lang": "en",
+            "text": "built"
+          },
+          {
+            "id": "o318f5e10",
+            "lang": "en",
+            "text": "was build"
+          },
+          {
+            "id": "of47d404a",
+            "lang": "en",
+            "text": "was built"
+          }
+        ],
+        "stem": "This old bridge ___ in 1995.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "oe220df0a",
+      "content_hash": "5e97a274c749a115e38bde6f2d284154dbf976a86ba279e099b9d86e565abde8",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“Since 2018” diễn tả việc bắt đầu trong quá khứ và kéo dài đến hiện tại nên dùng hiện tại hoàn thành “have lived”. Người Việt hay chọn “live” hoặc “lived”, nhưng cả hai đều không đi với “since”."
+      },
+      "id": "1e8754ca-bb99-50d2-9e03-053eb4e71f63",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-b1-have-lived-since",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "oe220df0a",
+            "lang": "en",
+            "text": "have lived"
+          },
+          {
+            "id": "oa9a43cf0",
+            "lang": "en",
+            "text": "am living"
+          },
+          {
+            "id": "o49f04b71",
+            "lang": "en",
+            "text": "live"
+          },
+          {
+            "id": "o89f8dd81",
+            "lang": "en",
+            "text": "lived"
+          }
+        ],
+        "stem": "I ___ in this city since 2018, and I still love it.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "oef0b6479",
+      "content_hash": "6bab5a172629524515f69dd8014113f3ab77be1019a1f9e331063a91b46ac006",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Câu điều kiện loại 2 (giả định trái hiện tại): mệnh đề “if” dùng quá khứ đơn “had”, mệnh đề chính dùng “would + V”. Không dùng “would” hay “will” trong mệnh đề “if”."
+      },
+      "id": "4bf19087-7922-5fbe-aeed-ae036ab92650",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-b1-if-i-had-more-money",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o73b7abd3",
+            "lang": "en",
+            "text": "would have"
+          },
+          {
+            "id": "o3077e6ea",
+            "lang": "en",
+            "text": "have"
+          },
+          {
+            "id": "oeaaa5d08",
+            "lang": "en",
+            "text": "will have"
+          },
+          {
+            "id": "oef0b6479",
+            "lang": "en",
+            "text": "had"
+          }
+        ],
+        "stem": "If I ___ more money, I would buy a new laptop.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o220ff091",
+      "content_hash": "e2f14829d1c2185e77aab70b6f063669891f1b712c83f0fd9e50b0354c3cf58d",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“Used to + V” diễn tả thói quen trong quá khứ nay không còn. “Be used to” nghĩa là “quen với” và phải theo sau bởi danh từ/V-ing, nên “was used to play” sai."
+      },
+      "id": "23e763d2-7282-506d-aa6c-ba01e7af1b42",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-b1-used-to-play",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o360407fc",
+            "lang": "en",
+            "text": "use to"
+          },
+          {
+            "id": "o203c0628",
+            "lang": "en",
+            "text": "am used to"
+          },
+          {
+            "id": "o220ff091",
+            "lang": "en",
+            "text": "used to"
+          },
+          {
+            "id": "o9ba0d9e5",
+            "lang": "en",
+            "text": "was used to"
+          }
+        ],
+        "stem": "When I was a child, I ___ play football every afternoon.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "oec0725d6",
+      "content_hash": "1fa335b155d75e33001fbf94a9694379bcb1d643997b8bc928e630bebe99ec2e",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Đại từ quan hệ thay cho người và làm chủ ngữ là “who”. “Which” dùng cho vật, “whose” chỉ sở hữu, còn “what” không dùng làm đại từ quan hệ sau danh từ."
+      },
+      "id": "053ddfbe-6627-5bc9-bba4-6d08adfde6f4",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-b1-woman-who-lives",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "oa83137b1",
+            "lang": "en",
+            "text": "what"
+          },
+          {
+            "id": "oe3ca7585",
+            "lang": "en",
+            "text": "which"
+          },
+          {
+            "id": "o8da11533",
+            "lang": "en",
+            "text": "whose"
+          },
+          {
+            "id": "oec0725d6",
+            "lang": "en",
+            "text": "who"
+          }
+        ],
+        "stem": "The woman ___ lives next door is a doctor.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o409cae74",
+      "content_hash": "ff58dea6c782580c54e1cea6a4f2f4aa6bd4416fcdfd388b3ecded3e699ccc7f",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Theo sau là cụm danh từ “the heavy rain” và ý nghĩa nhượng bộ nên dùng “Despite”. “Although” cần một mệnh đề có động từ, còn “Because of” sai về nghĩa."
+      },
+      "id": "cebef8d3-2414-55e4-b3ce-8ce8c47d8030",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-b2-despite-rain",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o5823233b",
+            "lang": "en",
+            "text": "Although"
+          },
+          {
+            "id": "o4c77f776",
+            "lang": "en",
+            "text": "However"
+          },
+          {
+            "id": "o409cae74",
+            "lang": "en",
+            "text": "Despite"
+          },
+          {
+            "id": "oe8d1f3a5",
+            "lang": "en",
+            "text": "Because of"
+          }
+        ],
+        "stem": "___ the heavy rain, the match went ahead as planned.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob7d7599b",
+      "content_hash": "70b9c4d99298c4e51ed43dbf1297efe27710b24d34b2759698c8edddb70f562a",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "“Must have + V3” diễn tả suy luận gần như chắc chắn về quá khứ dựa trên bằng chứng (đèn tắt, không ai mở cửa). “Can’t have” lại khẳng định điều ngược lại, còn “should have” mang nghĩa “lẽ ra nên”."
+      },
+      "id": "d808ee40-066f-5639-9830-49915ea5dfca",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-b2-must-have-gone-out",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o08322d21",
+            "lang": "en",
+            "text": "needn't have"
+          },
+          {
+            "id": "ob7d7599b",
+            "lang": "en",
+            "text": "must have"
+          },
+          {
+            "id": "o5dce13d1",
+            "lang": "en",
+            "text": "can't have"
+          },
+          {
+            "id": "oc0f77ab8",
+            "lang": "en",
+            "text": "should have"
+          }
+        ],
+        "stem": "The lights are off and nobody is answering the door. They ___ gone out.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o392ad46f",
+      "content_hash": "ea5c1aadc437ded610d6f0d5a7f48804cef5e6b265128c3215d922105671dbe2",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Trong câu tường thuật với động từ quá khứ “told”, sự việc xảy ra trước đó (“the day before”) được lùi thì về quá khứ hoàn thành “had been”. “Has been” và “is” không lùi thì nên sai."
+      },
+      "id": "9645518c-5ec8-5228-a697-f5b41bae5658",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-b2-reported-had-been",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "oa9b5534d",
+            "lang": "en",
+            "text": "has been"
+          },
+          {
+            "id": "o36924770",
+            "lang": "en",
+            "text": "will be"
+          },
+          {
+            "id": "o392ad46f",
+            "lang": "en",
+            "text": "had been"
+          },
+          {
+            "id": "o8ccd5fee",
+            "lang": "en",
+            "text": "is"
+          }
+        ],
+        "stem": "Yesterday Lan told me that she ___ ill the day before, so she had missed the meeting.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o0745b737",
+      "content_hash": "3c5f43f9d13a2cbdf1cba49021be8abe759494865cbb3ebbd2ca169e22a78fe9",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "“Wish” ước điều trái với hiện tại thì động từ lùi về quá khứ đơn: “I wish I knew”. “Know” và “will know” không dùng sau “wish” với nghĩa này; “know” cũng không chia tiếp diễn."
+      },
+      "id": "b2eae65e-7118-5b72-ad92-8131a87f9119",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-b2-wish-i-knew",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o4bbd345f",
+            "lang": "en",
+            "text": "know"
+          },
+          {
+            "id": "od0b761e4",
+            "lang": "en",
+            "text": "will know"
+          },
+          {
+            "id": "o0745b737",
+            "lang": "en",
+            "text": "knew"
+          },
+          {
+            "id": "o13fcb8bf",
+            "lang": "en",
+            "text": "am knowing"
+          }
+        ],
+        "stem": "I wish I ___ how to speak Japanese — it would make this trip so much easier.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o3999c4e2",
+      "content_hash": "e62217d95dc0d66ddfab455bf00d7308d890fce5b0b0ba2d9679bd4e7028b652",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Câu điều kiện loại 3 (giả định trái quá khứ): “if + had V3”, mệnh đề chính “would have + V3”. “Would catch” là cấu trúc loại 2, không hợp với việc lỡ tàu đã xảy ra."
+      },
+      "id": "bf98d403-9e03-5892-aa24-3578c2964004",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-b2-would-have-caught",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o0df0f567",
+            "lang": "en",
+            "text": "will catch"
+          },
+          {
+            "id": "o3999c4e2",
+            "lang": "en",
+            "text": "would have caught"
+          },
+          {
+            "id": "o6e2e7fb8",
+            "lang": "en",
+            "text": "had caught"
+          },
+          {
+            "id": "oe1fb38f0",
+            "lang": "en",
+            "text": "would catch"
+          }
+        ],
+        "stem": "If we had left home ten minutes earlier, we ___ the train.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "of3464657",
+      "content_hash": "275ddbc0876b66b288f8209309af6206b202625fbcb9bf56d4bde432dd85d111",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "Đây là câu điều kiện hỗn hợp: điều kiện trái quá khứ (“had accepted”) nhưng kết quả ở hiện tại (“now”), nên dùng “would + V” — ở đây là “would be living”. “Would have lived” chỉ kết quả trong quá khứ, mâu thuẫn với “now”."
+      },
+      "id": "473e20a2-711a-5b4f-b371-59d804a272f1",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-c1-mixed-would-be-living",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o768ba537",
+            "lang": "en",
+            "text": "had lived"
+          },
+          {
+            "id": "o8d3307eb",
+            "lang": "en",
+            "text": "would have lived"
+          },
+          {
+            "id": "o89800671",
+            "lang": "en",
+            "text": "will live"
+          },
+          {
+            "id": "of3464657",
+            "lang": "en",
+            "text": "would be living"
+          }
+        ],
+        "stem": "If she had accepted that job in London, she ___ in a much bigger flat now.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o09d17e07",
+      "content_hash": "59ea420885cfed7a02ba3ced4b21d5ace14665247c28cca93ced9d2d2e49727f",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "Khi trạng từ phủ định “Never” đứng đầu câu, phải đảo trợ động từ lên trước chủ ngữ: “Never have I seen”. “I have seen” không đảo ngữ nên sai; “did I saw” sai vì sau “did” phải là động từ nguyên mẫu."
+      },
+      "id": "96d3bd24-1476-5d12-835d-3d2b2bcab439",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-c1-never-have-i-seen",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o07ce2ef8",
+            "lang": "en",
+            "text": "did I saw"
+          },
+          {
+            "id": "o09d17e07",
+            "lang": "en",
+            "text": "have I seen"
+          },
+          {
+            "id": "o2c8246f8",
+            "lang": "en",
+            "text": "I saw"
+          },
+          {
+            "id": "o0bdea48b",
+            "lang": "en",
+            "text": "I have seen"
+          }
+        ],
+        "stem": "Never ___ such a breathtaking view as the one from the top of that mountain.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "oe742c653",
+      "content_hash": "cb1e2ff57d9ddde3d531aa7482a56731156a030d32d1b45f6bcbf8498c1604cb",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "Sau “recommend that”, tiếng Anh trang trọng dùng thể giả định: động từ nguyên mẫu không “to” với mọi chủ ngữ, nên là “be postponed”. “To be” và “being” không thể làm động từ chính của mệnh đề “that”."
+      },
+      "id": "efe6c52b-7694-5bbc-9479-bea8e849319e",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-c1-recommended-that-be",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "oe742c653",
+            "lang": "en",
+            "text": "be"
+          },
+          {
+            "id": "o337043dc",
+            "lang": "en",
+            "text": "being"
+          },
+          {
+            "id": "od7686916",
+            "lang": "en",
+            "text": "been"
+          },
+          {
+            "id": "o8c4792bd",
+            "lang": "en",
+            "text": "to be"
+          }
+        ],
+        "stem": "The committee recommended that the proposal ___ postponed until further notice.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o7058eec5",
+      "content_hash": "a06eb647af00fc02f292e319d92e7db481bb77d432376a36a43aad617c5adda5",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“Should + S + V” là dạng đảo ngữ trang trọng của “If you need…”, rất hay gặp trong thư tín. “Unless” (trừ khi) sai nghĩa, còn “Had you need” sai vì “had” đảo ngữ phải đi với V3."
+      },
+      "id": "273eee25-bdd7-53b4-99e2-b12f9ae39601",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-c1-should-you-need",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o2a906dde",
+            "lang": "en",
+            "text": "Unless"
+          },
+          {
+            "id": "ob5ba7be4",
+            "lang": "en",
+            "text": "Would"
+          },
+          {
+            "id": "ocf976f12",
+            "lang": "en",
+            "text": "Had"
+          },
+          {
+            "id": "o7058eec5",
+            "lang": "en",
+            "text": "Should"
+          }
+        ],
+        "stem": "___ you need any further assistance, please do not hesitate to contact our team.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o030ad44d",
+      "content_hash": "dde872d1f13b7aef83d8f632be86d6fa96d81de0c64213063ce31ba5f76229e3",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "Câu chẻ dạng “What + mệnh đề + is …” dùng để nhấn mạnh: “What I need is…” (Điều tôi cần là…). “That” hay “Which” không thể mở đầu mệnh đề danh từ mang nghĩa “điều mà” trong câu này."
+      },
+      "id": "b2407c2a-430a-5b1f-8ba4-9bf14582fd7d",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-c1-what-i-need-cleft",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "oec378a39",
+            "lang": "en",
+            "text": "Which"
+          },
+          {
+            "id": "o59cce7fe",
+            "lang": "en",
+            "text": "It"
+          },
+          {
+            "id": "o030ad44d",
+            "lang": "en",
+            "text": "What"
+          },
+          {
+            "id": "o9c2bb5a8",
+            "lang": "en",
+            "text": "That"
+          }
+        ],
+        "stem": "___ I need right now is a long, quiet holiday by the sea.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "oae516a86",
+      "content_hash": "8616a913389406470af288a06b23eeacb62c5853a5c5cdfae5744b2d79f35229",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“Albeit” nghĩa là “mặc dù”, đứng trước một cụm từ không có chủ ngữ và động từ chia, ở đây là “based on a very small sample”. “Whereas” cần một mệnh đề đầy đủ để đối lập, còn “whereby” nghĩa là “nhờ đó/theo đó”."
+      },
+      "id": "3906f71f-45d9-57df-b26f-ef29a39c9f80",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-c2-albeit-small-sample",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o3b180e6d",
+            "lang": "en",
+            "text": "whereby"
+          },
+          {
+            "id": "oae516a86",
+            "lang": "en",
+            "text": "albeit"
+          },
+          {
+            "id": "o23b690e3",
+            "lang": "en",
+            "text": "lest"
+          },
+          {
+            "id": "o2a452534",
+            "lang": "en",
+            "text": "whereas"
+          }
+        ],
+        "stem": "The results were encouraging, ___ based on a very small sample.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o9bacc63b",
+      "content_hash": "7e4cc9d19246e4752d074e306339bf7524ffec0d5d2b7f9ded1ffdacd7fb20ca",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“Had it not been for…” là đảo ngữ của câu điều kiện loại 3 “If it had not been for…” (nếu không nhờ…), khớp với “would have collapsed”. “Were it not for” cũng tồn tại nhưng không thể đứng trước “been”."
+      },
+      "id": "2407f56e-3911-5fe8-b71f-6ea43784f184",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-c2-had-it-not-been-for",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o97631ad4",
+            "lang": "en",
+            "text": "Should"
+          },
+          {
+            "id": "o9bacc63b",
+            "lang": "en",
+            "text": "Had"
+          },
+          {
+            "id": "o06ba36ae",
+            "lang": "en",
+            "text": "Were"
+          },
+          {
+            "id": "o206cef97",
+            "lang": "en",
+            "text": "Did"
+          }
+        ],
+        "stem": "___ it not been for your timely intervention, the whole project would have collapsed.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "oc12ebbfd",
+      "content_hash": "1a043a5605c65656b31ea0a320f918e70c9c1a8b4905839b6b866b162e939084",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“Inasmuch as” (trang trọng) nghĩa là “xét ở chỗ/bởi vì”, nêu lý do hai vụ việc có thể so sánh. “Albeit” mang nghĩa nhượng bộ và thường đứng trước tính từ/cụm từ, còn “lest” nghĩa là “kẻo”, đều sai nghĩa."
+      },
+      "id": "b8dd66fa-7348-5f8b-ba6a-5041959a2c18",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-c2-inasmuch-as",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "oc12ebbfd",
+            "lang": "en",
+            "text": "inasmuch as"
+          },
+          {
+            "id": "oab1d50a5",
+            "lang": "en",
+            "text": "albeit"
+          },
+          {
+            "id": "o987cef58",
+            "lang": "en",
+            "text": "notwithstanding"
+          },
+          {
+            "id": "o4215d0b9",
+            "lang": "en",
+            "text": "lest"
+          }
+        ],
+        "stem": "The two cases are comparable ___ both involve a breach of client confidentiality.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "obf97b6ed",
+      "content_hash": "9fbaee84014a3c6e59229ba6f8a2b172398dd77696e9c6740785ed84508eccb3",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“Lest” (văn phong trang trọng) nghĩa là “để không/kẻo”, theo sau là động từ ở thể giả định — vì thế có “she wake” không chia. “In case” cũng gần nghĩa nhưng đòi hỏi động từ chia thì (“in case she woke”), nên không hợp với “wake”."
+      },
+      "id": "1ae87402-0126-5239-9940-d146ac450981",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-c2-lest-she-wake",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "obf97b6ed",
+            "lang": "en",
+            "text": "lest"
+          },
+          {
+            "id": "od6d47481",
+            "lang": "en",
+            "text": "whereas"
+          },
+          {
+            "id": "o8388c2c3",
+            "lang": "en",
+            "text": "in case"
+          },
+          {
+            "id": "o887f6da8",
+            "lang": "en",
+            "text": "unless"
+          }
+        ],
+        "stem": "She spoke in a whisper ___ she wake the sleeping child.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o6f758dad",
+      "content_hash": "5893a57630e76947e9f2ca31d019c520316d4f8a3f58e841603c16a2e5b31402",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“Notwithstanding” là giới từ trang trọng nghĩa là “mặc dù/bất chấp”, đứng trước cụm danh từ. “Inasmuch as” và “insofar as” là liên từ cần một mệnh đề theo sau và mang nghĩa khác (“bởi vì”, “trong chừng mực”)."
+      },
+      "id": "676f7989-6a66-57c6-8f71-8aadfd2901e0",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-c2-notwithstanding",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o6f758dad",
+            "lang": "en",
+            "text": "Notwithstanding"
+          },
+          {
+            "id": "of5c34182",
+            "lang": "en",
+            "text": "Inasmuch as"
+          },
+          {
+            "id": "o9fe69f29",
+            "lang": "en",
+            "text": "Insofar as"
+          },
+          {
+            "id": "o3b7b826b",
+            "lang": "en",
+            "text": "Whereby"
+          }
+        ],
+        "stem": "___ his considerable experience, he was passed over for the promotion.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o7d70987b",
+      "content_hash": "7310921e4434622fdac90371c7d8262c44de68af6782fc2c87f16dc00f0cb299",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“Apple” bắt đầu bằng nguyên âm nên dùng “an”: “an apple”. “A” dùng trước phụ âm; “two” và “many” cần danh từ số nhiều (apples) và động từ “are”."
+      },
+      "id": "032ffed9-96e2-5a1c-9e36-b916275dd6d2",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-pre-a1-an-apple",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o7d70987b",
+            "lang": "en",
+            "text": "an"
+          },
+          {
+            "id": "o36a6e302",
+            "lang": "en",
+            "text": "a"
+          },
+          {
+            "id": "oa4a05d07",
+            "lang": "en",
+            "text": "many"
+          },
+          {
+            "id": "o7669b856",
+            "lang": "en",
+            "text": "two"
+          }
+        ],
+        "stem": "It is ___ apple.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o359e979c",
+      "content_hash": "ca0c3fce3ab7f16e27447d2e186b203b6d3e0523ad4db4e7315754548f75f6bc",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "Với chủ ngữ “I” ta luôn dùng “am”: “I am a student”. “Is” dùng cho he/she/it, còn “be” là dạng nguyên mẫu, không đứng sau chủ ngữ như vậy."
+      },
+      "id": "20c2ff9d-7c9d-514e-8e8a-acef582bff6f",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-pre-a1-i-am",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o359e979c",
+            "lang": "en",
+            "text": "am"
+          },
+          {
+            "id": "o4d0dd681",
+            "lang": "en",
+            "text": "are"
+          },
+          {
+            "id": "o913eee0b",
+            "lang": "en",
+            "text": "be"
+          },
+          {
+            "id": "od9368f1d",
+            "lang": "en",
+            "text": "is"
+          }
+        ],
+        "stem": "I ___ a student.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "oe7b8d6aa",
+      "content_hash": "a849cd1ebd4deac8263edcec661622521922f1c006048fdc50242ba7a23f0831",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "Trước danh từ “name” cần tính từ sở hữu “my” (của tôi). “I” và “me” là đại từ nhân xưng, “mine” đứng một mình, không đi kèm danh từ."
+      },
+      "id": "44562cff-c326-5da9-911a-a6a539ab6b91",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-pre-a1-my-name",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o41495c32",
+            "lang": "en",
+            "text": "Mine"
+          },
+          {
+            "id": "o43e3b9f2",
+            "lang": "en",
+            "text": "Me"
+          },
+          {
+            "id": "oe7b8d6aa",
+            "lang": "en",
+            "text": "My"
+          },
+          {
+            "id": "od6c2dd76",
+            "lang": "en",
+            "text": "I"
+          }
+        ],
+        "stem": "___ name is Anna.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o70afa1f0",
+      "content_hash": "e7c79208b78a9bc76ac9a598209012015b0aaa50de8add4ae6d55c769598242f",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "Chủ ngữ số nhiều “they” đi với “are”. “Is” chỉ dùng cho chủ ngữ số ít như he/she/it."
+      },
+      "id": "566e2510-810a-5a26-9b8f-1c52412e2a11",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-pre-a1-they-are",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o4d9045be",
+            "lang": "en",
+            "text": "is"
+          },
+          {
+            "id": "o0af1f0bd",
+            "lang": "en",
+            "text": "am"
+          },
+          {
+            "id": "odf1c8a4b",
+            "lang": "en",
+            "text": "be"
+          },
+          {
+            "id": "o70afa1f0",
+            "lang": "en",
+            "text": "are"
+          }
+        ],
+        "stem": "They ___ my friends.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o10b06880",
+      "content_hash": "2b7d8ad18620ffdae685621e5128c987b6370771514320d752905d9e83bf72d4",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“This” chỉ một vật số ít nên đi với “is”. “Are” chỉ dùng cho số nhiều hoặc “you”, “am” chỉ dùng với “I”."
+      },
+      "id": "7d842865-f906-542f-adcd-7b90920eb47e",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "en:diag:gram-pre-a1-this-is",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o10b06880",
+            "lang": "en",
+            "text": "is"
+          },
+          {
+            "id": "offee25a1",
+            "lang": "en",
+            "text": "am"
+          },
+          {
+            "id": "o13d29429",
+            "lang": "en",
+            "text": "are"
+          },
+          {
+            "id": "o9456b6a9",
+            "lang": "en",
+            "text": "be"
+          }
+        ],
+        "stem": "This ___ my book.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o5cecb4b1",
+      "content_hash": "2051794c62df474d79c903799ca83dd7a9aa51eb35e270fc60c17cd328e65dd3",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“My bag is under the bed” nghĩa là túi ở dưới giường. Thứ ở trên bàn (“on the desk”) là sách, không phải túi."
+      },
+      "id": "fc4f0596-0bef-5e49-ab6c-6ff5518a1455",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-a1-bag-under-bed",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o5cecb4b1",
+            "lang": "vi",
+            "text": "Dưới gầm giường"
+          },
+          {
+            "id": "o95723f84",
+            "lang": "vi",
+            "text": "Cạnh cửa sổ"
+          },
+          {
+            "id": "oa3f6d5f2",
+            "lang": "vi",
+            "text": "Trên giường"
+          },
+          {
+            "id": "oa4a5b22a",
+            "lang": "vi",
+            "text": "Trên bàn học"
+          }
+        ],
+        "passage": "There is a bed, a desk and a big window in my room. My books are on the desk. My bag is under the bed.",
+        "stem": "Cái túi của người viết nằm ở đâu?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o8bb6304f",
+      "content_hash": "86ff6818348b91db5623c196ba93f934c139ed5b03cdd821d577af45f1d8aff7",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“Must swim with an adult” nghĩa là phải bơi cùng người lớn. Thông báo không cấm trẻ em vào bể, và bể không mở cửa vào Chủ nhật."
+      },
+      "id": "31f0df53-53c3-56f0-b26e-a7ee302e95b3",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-a1-pool-children",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o8bb6304f",
+            "lang": "vi",
+            "text": "Phải bơi cùng người lớn"
+          },
+          {
+            "id": "odc4253ef",
+            "lang": "vi",
+            "text": "Chỉ được bơi vào Chủ nhật"
+          },
+          {
+            "id": "obc0bb7f9",
+            "lang": "vi",
+            "text": "Phải bơi trước 8 giờ sáng"
+          },
+          {
+            "id": "o6c61d0b9",
+            "lang": "vi",
+            "text": "Không được vào bể bơi"
+          }
+        ],
+        "passage": "City Swimming Pool. Open Monday to Saturday, 7 am to 8 pm. Children under 10 must swim with an adult.",
+        "stem": "Theo thông báo của bể bơi, trẻ em dưới 10 tuổi phải làm gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob4ace3cf",
+      "content_hash": "8e732b88f3d8533b89b294b1b043f6f7c836c0a89a761bffb40169c5822c3a56",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“Nurse” là y tá; bác sĩ là “doctor”. Việc chị nói được tiếng Anh và tiếng Pháp không có nghĩa chị là giáo viên hay phiên dịch viên."
+      },
+      "id": "a29ec75e-1102-5f73-a84d-ee04d5881c40",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-a1-sister-nurse",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "oa16a1172",
+            "lang": "vi",
+            "text": "Phiên dịch viên"
+          },
+          {
+            "id": "ob4ace3cf",
+            "lang": "vi",
+            "text": "Y tá"
+          },
+          {
+            "id": "o8ba7e17d",
+            "lang": "vi",
+            "text": "Bác sĩ"
+          },
+          {
+            "id": "obec3f8f1",
+            "lang": "vi",
+            "text": "Giáo viên tiếng Anh"
+          }
+        ],
+        "passage": "My sister Hoa is a nurse. She works at a hospital in the city. She can speak English and French.",
+        "stem": "Chị Hoa trong đoạn văn làm nghề gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o43d27f78",
+      "content_hash": "ee99d7a799dc0d5245a5b4a4fcfa79ac13b4db8668d74f4c621001ac7829f6a8",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“My family visits my grandparents” là gia đình đến thăm ông bà, và “have lunch together at their house” là ăn trưa ở nhà ông bà. Ông bà không đến nhà người viết, và họ cũng không ăn ở nhà hàng."
+      },
+      "id": "5b308b50-8252-5fac-92e3-e1193ac10965",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-a1-sunday-grandparents",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o43d27f78",
+            "lang": "vi",
+            "text": "Đến thăm và ăn trưa cùng ông bà"
+          },
+          {
+            "id": "o99967789",
+            "lang": "vi",
+            "text": "Đi ăn trưa ở nhà hàng"
+          },
+          {
+            "id": "o89a3f48b",
+            "lang": "vi",
+            "text": "Đi học cả ngày"
+          },
+          {
+            "id": "o4f4d9013",
+            "lang": "vi",
+            "text": "Mời ông bà đến nhà mình"
+          }
+        ],
+        "passage": "We don't have school on Sunday. On Sunday my family visits my grandparents. We have lunch together at their house.",
+        "stem": "Vào Chủ nhật, gia đình người viết thường làm gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o9e022229",
+      "content_hash": "ae64b37ac7fb04b4890fe68b56dc294ee04326dfcae17ce22762d7c856ad0617",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "Câu “He walks his dog every morning” nghĩa là anh ấy dắt chó đi dạo mỗi sáng. “Every evening” mới là mỗi tối."
+      },
+      "id": "c1f74432-9e17-55f1-a5af-09c65141d8e8",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-a1-tom-dog-walk",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o6a52b05f",
+            "lang": "vi",
+            "text": "Mỗi cuối tuần"
+          },
+          {
+            "id": "o9e022229",
+            "lang": "vi",
+            "text": "Mỗi buổi sáng"
+          },
+          {
+            "id": "o6ed193d1",
+            "lang": "vi",
+            "text": "Mỗi buổi tối"
+          },
+          {
+            "id": "o21309d66",
+            "lang": "vi",
+            "text": "Mỗi buổi trưa"
+          }
+        ],
+        "passage": "Tom lives in a small house near the park. He has a dog and two cats. He walks his dog every morning.",
+        "stem": "Theo đoạn văn, Tom dắt chó đi dạo khi nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o986f8b53",
+      "content_hash": "2d48ef7ace9e3cecd57237a50404515a33444e7635c96024b77572353a13aa54",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“Anna is the better student” và cô ấy được điểm cao nhất lớp, nên Anna học giỏi hơn. Còn “Mark is older and taller than Anna” cho biết Mark mới là người lớn tuổi và cao hơn."
+      },
+      "id": "ff5c82b5-de76-5330-a20c-daf5c7cd6447",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-a2-anna-mark-compare",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o731e20c5",
+            "lang": "vi",
+            "text": "Anna thích bóng đá hơn đọc sách"
+          },
+          {
+            "id": "o6df0ff0e",
+            "lang": "vi",
+            "text": "Anna lớn tuổi hơn Mark"
+          },
+          {
+            "id": "o986f8b53",
+            "lang": "vi",
+            "text": "Anna học giỏi hơn Mark"
+          },
+          {
+            "id": "o22f275a3",
+            "lang": "vi",
+            "text": "Anna cao hơn Mark"
+          }
+        ],
+        "passage": "Anna and her brother Mark are very different. Mark is older and taller than Anna, but Anna is the better student. She gets the highest marks in her class. Mark loves sport and plays football three times a week. Anna thinks football is boring; she prefers reading.",
+        "stem": "Câu nào sau đây đúng về Anna và Mark?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o20d96b35",
+      "content_hash": "f0965d66aae610f531615f560ce4ae360757cc6afff906f33cb6ff6892b73ffa",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "Câu “the water was very cold, so we didn't swim” nêu rõ lý do là nước rất lạnh. Trời hôm đó nắng (“sunny”), và họ chơi bóng chuyền là việc làm thay cho bơi (“instead”), không phải lý do."
+      },
+      "id": "7fd4d447-e61f-5607-b8e0-1f80c9617766",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-a2-beach-cold-water",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o20d96b35",
+            "lang": "vi",
+            "text": "Vì nước biển rất lạnh"
+          },
+          {
+            "id": "oacea9900",
+            "lang": "vi",
+            "text": "Vì họ bận chơi bóng chuyền"
+          },
+          {
+            "id": "o73d04e24",
+            "lang": "vi",
+            "text": "Vì trời mưa"
+          },
+          {
+            "id": "o126837b3",
+            "lang": "vi",
+            "text": "Vì bãi biển quá đông"
+          }
+        ],
+        "passage": "Hi Ben, Last weekend I went to the beach with my cousins. The weather was sunny, but the water was very cold, so we didn't swim. Instead, we played volleyball and ate fresh seafood at a small restaurant. I bought you a postcard. Next month I'm going to visit you in London! See you soon, Minh",
+        "stem": "Vì sao Minh và các anh chị họ không bơi ở biển?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "oda1431c5",
+      "content_hash": "e77a245c1c286742020e7c7605336a24b0918aac0cd89a37291cb9a691943065",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“We have plenty of rice, so don't buy any” nghĩa là còn nhiều gạo, đừng mua. Sữa và trứng thì sắp hết (“isn't much”, “only a few”) nên cần mua thêm."
+      },
+      "id": "0c607fcc-24f8-546c-b639-c67709ef89b8",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-a2-party-shopping-rice",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "of9e2ca74",
+            "lang": "vi",
+            "text": "Sữa"
+          },
+          {
+            "id": "o2803daba",
+            "lang": "vi",
+            "text": "Trứng"
+          },
+          {
+            "id": "oda1431c5",
+            "lang": "vi",
+            "text": "Gạo"
+          },
+          {
+            "id": "o0d6e130d",
+            "lang": "vi",
+            "text": "Bánh mì"
+          }
+        ],
+        "passage": "We need to go shopping before the party on Saturday. There isn't much milk left in the fridge, and we have only a few eggs, so we need to buy more of both. We have plenty of rice, so don't buy any. Can you also get some bread and a bottle of orange juice? I'll make the cake on Friday evening.",
+        "stem": "Người viết dặn KHÔNG cần mua thứ gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o1d8465b5",
+      "content_hash": "9542df6cf73c262b970701b57ecb3e92efa45c2ae3eb111faf165339250dbb3f",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“You shouldn't drink coffee in the evening” là lời khuyên không uống cà phê buổi tối. Ba phương án còn lại đều là những việc đoạn văn khuyên nên làm."
+      },
+      "id": "e8f07852-4e50-5704-90ea-58e0a5b218e1",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-a2-tired-advice",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o2e6d7a56",
+            "lang": "vi",
+            "text": "Ăn nhiều rau và hoa quả"
+          },
+          {
+            "id": "o1d8465b5",
+            "lang": "vi",
+            "text": "Uống cà phê vào buổi tối"
+          },
+          {
+            "id": "oacac7d38",
+            "lang": "vi",
+            "text": "Ngủ đủ tám tiếng"
+          },
+          {
+            "id": "o25952e3d",
+            "lang": "vi",
+            "text": "Đi bộ một chút sau bữa tối"
+          }
+        ],
+        "passage": "Are you feeling tired all the time? You should go to bed earlier and try to sleep for eight hours. You shouldn't drink coffee in the evening. Eat more fruit and vegetables, and don't spend too much time on your phone before bed. A short walk after dinner can help, too.",
+        "stem": "Theo lời khuyên trong đoạn văn, bạn KHÔNG nên làm gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o4ec57647",
+      "content_hash": "04dd4b517849def0f8940cfeac927e5ffe3af63cd160c5e97cefdee61ccf30e6",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "Kim báo tàu chậm khoảng 40 phút nên “I won't be home for dinner” và dặn mẹ đừng chờ. Kim chỉ nói sẽ gọi khi đến ga, không nhờ mẹ ra đón."
+      },
+      "id": "5d8c537f-17ec-55d6-a2c5-730f1bb6f50e",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-a2-train-late-message",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o8cc20771",
+            "lang": "vi",
+            "text": "Kể về cuốn sách đang đọc"
+          },
+          {
+            "id": "od8c110d9",
+            "lang": "vi",
+            "text": "Nhờ mẹ ra ga đón"
+          },
+          {
+            "id": "o4ec57647",
+            "lang": "vi",
+            "text": "Báo rằng mình sẽ về muộn, không kịp ăn tối"
+          },
+          {
+            "id": "o94061476",
+            "lang": "vi",
+            "text": "Hỏi mẹ món ăn tối"
+          }
+        ],
+        "passage": "Hi Mum, I'm writing from the train. It's running about forty minutes late because of a problem on the line, so I won't be home for dinner. Please don't wait for me. I'm reading my book and the time is going quickly. I'll call you when I arrive at the station. Love, Kim",
+        "stem": "Mục đích chính của tin nhắn Kim gửi mẹ là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o5082574f",
+      "content_hash": "8095f39eefab8ad39e124d86fb12cfa48a3cb7fdeac4453de987e97ea7390981",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“To apply, send a short email explaining why you'd like to join us” là cách nộp đơn. Quán không yêu cầu kinh nghiệm (“No experience is needed”), nên phương án gửi hồ sơ kinh nghiệm là sai."
+      },
+      "id": "17324dd4-994b-579c-89b0-b497c8e2b180",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-b1-cafe-job-apply",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o192fdf7a",
+            "lang": "vi",
+            "text": "Đến quán phỏng vấn vào cuối tuần"
+          },
+          {
+            "id": "o1b824fed",
+            "lang": "vi",
+            "text": "Gọi điện cho quán trước tháng Sáu"
+          },
+          {
+            "id": "o5082574f",
+            "lang": "vi",
+            "text": "Gửi một email ngắn nói lý do muốn làm ở quán"
+          },
+          {
+            "id": "o6d70380b",
+            "lang": "vi",
+            "text": "Gửi hồ sơ chứng minh kinh nghiệm làm phục vụ"
+          }
+        ],
+        "passage": "Are you good at talking to people? Do you enjoy working in a team? Our café is looking for a part-time waiter to work weekend shifts. No experience is needed, as we will train you. You must be at least eighteen and be able to start in June. To apply, send a short email explaining why you'd like to join us.",
+        "stem": "Theo mẩu tin tuyển dụng của quán cà phê, ứng viên cần làm gì để nộp đơn?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o595735d0",
+      "content_hash": "96c4fbb05edf9e845f176946b2b97453b9e3106fed737282726e2c63ef12cc6e",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“The only thing I haven't got used to is the heavy rain in autumn” cho biết điều duy nhất chưa quen là mưa lớn mùa thu. Những buổi tối một mình chỉ là chuyện trước đây (“used to”), giờ người viết đã có nhiều bạn."
+      },
+      "id": "a7871b23-75a1-53ce-b4e4-9d61c6a0a251",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-b1-danang-autumn-rain",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "oc0fdeb14",
+            "lang": "vi",
+            "text": "Việc kết bạn với người mới"
+          },
+          {
+            "id": "o595735d0",
+            "lang": "vi",
+            "text": "Mưa lớn vào mùa thu"
+          },
+          {
+            "id": "o78ca1efd",
+            "lang": "vi",
+            "text": "Những buổi tối ở một mình"
+          },
+          {
+            "id": "o2e608fcf",
+            "lang": "vi",
+            "text": "Việc chạy bộ cùng câu lạc bộ"
+          }
+        ],
+        "passage": "I've lived in Da Nang for three years now, and I've never regretted moving here. When I first arrived, I didn't know anyone, and I used to spend my evenings alone. Since then, I've joined a running club and made lots of friends. The only thing I haven't got used to is the heavy rain in autumn.",
+        "stem": "Điều gì ở Đà Nẵng người viết vẫn chưa quen được?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob3cdeb3d",
+      "content_hash": "fe5e303555e0c8537c6ba5f60a9c7390b293f6f3e966b5572d3e5958a0ec3c3f",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Đoạn văn nói “time is rarely the real problem” và khuyên tập vào cùng một giờ mỗi ngày để thành thói quen. Phương án về người tập ít bận hơn là sai vì đoạn văn nói họ “just as busy” (bận như nhau)."
+      },
+      "id": "40264307-bf60-5abf-9913-e39c693035c3",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-b1-exercise-habit",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "ob3cdeb3d",
+            "lang": "vi",
+            "text": "Thiếu thời gian hiếm khi là lý do thật; lên lịch tập cố định giúp tạo thói quen"
+          },
+          {
+            "id": "o8f9b1515",
+            "lang": "vi",
+            "text": "Người tập thể dục thường xuyên ít bận rộn hơn người khác"
+          },
+          {
+            "id": "o576a1eae",
+            "lang": "vi",
+            "text": "Người bận rộn không nên cố gắng tập thể dục"
+          },
+          {
+            "id": "oe341784b",
+            "lang": "vi",
+            "text": "Muốn có hiệu quả thì mỗi buổi tập phải thật dài"
+          }
+        ],
+        "passage": "Many people say they would start exercising if they had more time. However, research suggests that time is rarely the real problem. People who exercise regularly are often just as busy as those who don't; the difference is that they treat exercise like an appointment. If you plan a short workout at the same time every day, it soon becomes a habit rather than a decision.",
+        "stem": "Ý chính của đoạn văn về việc tập thể dục là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "ocfa5b463",
+      "content_hash": "b163940429e0b47f69269f24f27d751ab3ecd3d6798e9b4d23e3700a887ed0e4",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Câu “may renew it online, unless another reader has reserved it” nghĩa là được gia hạn trực tuyến trừ khi đã có người khác đặt trước. Thông báo không nói việc nợ tiền phạt hay đóng cửa phòng học ảnh hưởng đến gia hạn."
+      },
+      "id": "91ef7204-ccc2-5577-a8dd-f96ca652f445",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-b1-library-renew",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "ocfa5b463",
+            "lang": "vi",
+            "text": "Khi sách đã được người khác đặt trước"
+          },
+          {
+            "id": "o0972c7bd",
+            "lang": "vi",
+            "text": "Khi đã mượn sách quá hai tuần"
+          },
+          {
+            "id": "oc4745439",
+            "lang": "vi",
+            "text": "Khi phòng học đang đóng cửa sửa chữa"
+          },
+          {
+            "id": "of97ef200",
+            "lang": "vi",
+            "text": "Khi chưa trả tiền phạt trả sách muộn"
+          }
+        ],
+        "passage": "Library notice. From 1 March, books can be borrowed for three weeks instead of two. Books that are returned late will be charged 5,000 dong per day. Students who need a book for longer may renew it online, unless another reader has reserved it. The study rooms will be closed during the holiday for repairs.",
+        "stem": "Theo thông báo thư viện, khi nào sinh viên KHÔNG thể gia hạn sách qua mạng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o031e1794",
+      "content_hash": "d487de01cdc080a54c5d07a5062fe97d6b62366552c3c21de154d54bb97a9ceb",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Đường “muddy” vào mùa mưa khiến bà đến trường với đôi chân bẩn, nên “muddy” là lầy lội, đầy bùn. Đường dốc hay đông đúc không giải thích được chuyện chân bị bẩn."
+      },
+      "id": "261aa00b-557d-5583-acd4-f8c58266308d",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-b1-muddy-road",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o73d3a087",
+            "lang": "vi",
+            "text": "Đông đúc"
+          },
+          {
+            "id": "o031e1794",
+            "lang": "vi",
+            "text": "Lầy lội"
+          },
+          {
+            "id": "o09392535",
+            "lang": "vi",
+            "text": "Dốc"
+          },
+          {
+            "id": "o17eb972a",
+            "lang": "vi",
+            "text": "Tối tăm"
+          }
+        ],
+        "passage": "When Lan's grandmother was young, she used to walk five kilometres to school. She told Lan that the road was muddy in the rainy season, so she often arrived with dirty feet. Despite this, she never missed a lesson, because she knew that education was her chance for a better life. Lan now understands why her grandmother values books so much.",
+        "stem": "Trong đoạn văn, từ “muddy” (the road was muddy) có nghĩa gần nhất là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "oa875b2b3",
+      "content_hash": "37f1ffa880ba3256b880fac98a5b8374af466f3910c2892b9f6eeec11c8c45ca",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Daniel đã chi phần lớn tiền tiết kiệm cho cửa hàng “before testing whether there was real demand”. Khách hàng thực ra “loved the designs”, vấn đề là giá quá cao; còn bán online là điều anh tiếc đã không làm."
+      },
+      "id": "329b5a3e-0b3c-5414-855c-b94963b60574",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-b2-daniel-business-failure",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o2ca395d1",
+            "lang": "vi",
+            "text": "Không tham gia khóa học kinh doanh nào"
+          },
+          {
+            "id": "o69361c27",
+            "lang": "vi",
+            "text": "Bán hàng trực tuyến quá sớm"
+          },
+          {
+            "id": "oa875b2b3",
+            "lang": "vi",
+            "text": "Bỏ nhiều tiền vào cửa hàng trước khi kiểm chứng nhu cầu thị trường"
+          },
+          {
+            "id": "oc7c9baf6",
+            "lang": "vi",
+            "text": "Thiết kế đồ nội thất không hợp gu khách hàng"
+          }
+        ],
+        "passage": "Looking back, Daniel realises that his first business failed for reasons he could have avoided. He had spent most of his savings on a stylish shop in the city centre before testing whether there was real demand for handmade furniture. If he had started by selling online, he would have discovered much sooner that customers loved the designs but found the prices too high. When he launched his second company, he kept costs low, listened carefully to feedback and only expanded once orders were steady. It is now profitable, and Daniel admits that the first failure taught him more than any course could have.",
+        "stem": "Theo Daniel, sai lầm chính khiến công ty đầu tiên thất bại là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "oa958e606",
+      "content_hash": "f2f1c80d6740e71f037ad804a314a0e9ca8ef55a1cc2714d7ea495da39588697",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Câu cuối nói “feeling certain about a memory is not a reliable sign that it is true”. Phương án về việc mất tự tin là sai vì đoạn văn nói sự tự tin “remained high” ngay cả khi chi tiết sai."
+      },
+      "id": "7fc55daa-9db5-50b6-ad71-e692c5b25bcd",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-b2-flashbulb-memory",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o8c25fe27",
+            "lang": "vi",
+            "text": "Ký ức về các sự kiện gây sốc luôn chính xác"
+          },
+          {
+            "id": "oa958e606",
+            "lang": "vi",
+            "text": "Cảm thấy chắc chắn về một ký ức không đảm bảo ký ức đó đúng"
+          },
+          {
+            "id": "o13774bdc",
+            "lang": "vi",
+            "text": "Khi chi tiết sai, người ta mất tự tin vào trí nhớ của mình"
+          },
+          {
+            "id": "o647e3b5a",
+            "lang": "vi",
+            "text": "Người ta thường quên hoàn toàn các sự kiện quan trọng sau vài năm"
+          }
+        ],
+        "passage": "Most of us assume that we remember important events accurately, especially dramatic ones. Yet studies of so-called 'flashbulb memories' tell a different story. Researchers who questioned people the day after a shocking news event and again several years later found that many accounts had changed significantly. What is striking is that people's confidence in their memories remained high even when the details were wrong. In other words, feeling certain about a memory is not a reliable sign that it is true.",
+        "stem": "Có thể rút ra kết luận nào từ đoạn văn về ký ức của con người?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o11240dc2",
+      "content_hash": "c758cc9a150171d744996ce5da20c4cd339ff9f217e12c332220e1c6597d9ef2",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Câu gián tiếp “he promised that the council would consider alternative proposals if residents could present a realistic plan” cho thấy lời hứa có điều kiện. Cuộc khảo sát độc lập do nhóm tình nguyện viên quyên tiền, không phải hội đồng chi trả."
+      },
+      "id": "8d60e49e-59c5-5be9-bbb8-2fec90b22327",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-b2-market-council-promise",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "oe32c779c",
+            "lang": "vi",
+            "text": "Sẽ hủy kế hoạch xây bãi đỗ xe"
+          },
+          {
+            "id": "o10370362",
+            "lang": "vi",
+            "text": "Sẽ chi tiền cho một cuộc khảo sát độc lập về tòa nhà"
+          },
+          {
+            "id": "o3419526a",
+            "lang": "vi",
+            "text": "Sẽ sửa chữa khu chợ cũ trước cuối năm"
+          },
+          {
+            "id": "o11240dc2",
+            "lang": "vi",
+            "text": "Sẽ xem xét phương án khác nếu cư dân đưa ra kế hoạch khả thi trước cuối năm"
+          }
+        ],
+        "passage": "When the council announced plans to turn the old market into a car park, local residents were furious. At a public meeting, one stallholder said that her family had sold vegetables there for three generations and asked where they were supposed to go. A council spokesperson replied that the building was unsafe and would cost too much to repair. However, he promised that the council would consider alternative proposals if residents could present a realistic plan by the end of the year. A group of volunteers has since begun raising money for an independent survey of the building.",
+        "stem": "Người phát ngôn của hội đồng đã hứa điều gì với cư dân?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o7ecbd9ee",
+      "content_hash": "32b81e7a62eaad477689474f631abe777480d0ea902b5524f6711a76e9dd832d",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Người viết nói “I found it rather disappointing” nhưng vẫn khen phần mở đầu và các đoạn miêu tả. Từ nối “Nevertheless” chuyển từ ý khen sang ý chê, nên không thể nói người viết chê toàn bộ."
+      },
+      "id": "41d8351d-c74b-51cd-9843-9296b0e9d33a",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-b2-novel-review-attitude",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "oa4ece86e",
+            "lang": "vi",
+            "text": "Trung lập, không đưa ra đánh giá cá nhân"
+          },
+          {
+            "id": "o7ecbd9ee",
+            "lang": "vi",
+            "text": "Nhìn chung thất vọng, dù vẫn ghi nhận một vài điểm mạnh"
+          },
+          {
+            "id": "o929087b2",
+            "lang": "vi",
+            "text": "Chê toàn bộ, không thấy điểm nào đáng khen"
+          },
+          {
+            "id": "of2a007c7",
+            "lang": "vi",
+            "text": "Hoàn toàn hài lòng, như phần lớn các nhà phê bình"
+          }
+        ],
+        "passage": "Although the novel has been praised by many critics, I found it rather disappointing. The opening chapters are beautifully written, and the descriptions of rural life in the 1950s are vivid and convincing. Nevertheless, the plot moves so slowly that I struggled to stay interested, and the main character's sudden change of heart near the end felt unconvincing. Readers who enjoy atmosphere more than action may well love it; those who want a gripping story should probably look elsewhere.",
+        "stem": "Thái độ chung của người viết bài nhận xét đối với cuốn tiểu thuyết là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o1383f335",
+      "content_hash": "bb74e5e2ac4dc1d38e32f217b3f6cdb98b7e5c92c0bbafbcef9b594f7368dcee",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "“Overstated” nghĩa là bị nói quá, phóng đại; những người này cho rằng mối lo đó không nghiêm trọng vì có thể kèm cặp trực tuyến. Họ không nói mối lo bị bỏ qua hay đã được chứng minh."
+      },
+      "id": "fd1e42e1-7bf4-561a-9c57-e30864380a04",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-b2-remote-work-overstated",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o351944eb",
+            "lang": "vi",
+            "text": "Bị bỏ qua hoàn toàn"
+          },
+          {
+            "id": "o1383f335",
+            "lang": "vi",
+            "text": "Bị phóng đại quá mức"
+          },
+          {
+            "id": "oeca61ab2",
+            "lang": "vi",
+            "text": "Được nhiều người chia sẻ"
+          },
+          {
+            "id": "o89a5cbd4",
+            "lang": "vi",
+            "text": "Đã được chứng minh là đúng"
+          }
+        ],
+        "passage": "Remote work was once seen as a perk offered by a handful of technology firms. Today it is commonplace, and many employees say they would never return to the office full-time. Managers, however, are less enthusiastic. Some worry that new staff miss out on the informal learning that happens when they overhear experienced colleagues solving problems. Others argue that this concern is overstated, pointing out that well-designed mentoring can achieve the same result online. What both sides agree on is that the old model is unlikely to come back unchanged.",
+        "stem": "Trong câu “this concern is overstated”, từ “overstated” gần nghĩa nhất với cụm nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o9f185d70",
+      "content_hash": "2af011cb26cd487235198b4289cdd99c3c9a3398000e50b22ae4dd555b6b6458",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "Đoạn văn nói nhàm chán “serves a purpose” và chỉ khi thôi vội lấp đầy thời gian rảnh (“Not until… can we…”) ta mới hưởng lợi từ nó. Phương án “có hại, cần loại bỏ” chính là quan niệm mà người viết phản bác."
+      },
+      "id": "c30ce7b6-d62c-5273-b0e2-303f57ed7741",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-c1-boredom-purpose",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o9f185d70",
+            "lang": "vi",
+            "text": "Nhàm chán có chức năng hữu ích, nên ta không cần vội lấp đầy mọi khoảng trống"
+          },
+          {
+            "id": "o51aab547",
+            "lang": "vi",
+            "text": "Mọi công việc tẻ nhạt đều làm tăng năng suất lao động"
+          },
+          {
+            "id": "oeabe19d8",
+            "lang": "vi",
+            "text": "Dùng màn hình khi rảnh rỗi giúp tăng khả năng sáng tạo"
+          },
+          {
+            "id": "od96e9aba",
+            "lang": "vi",
+            "text": "Nhàm chán là trạng thái có hại, cần được loại bỏ càng nhanh càng tốt"
+          }
+        ],
+        "passage": "It is tempting to regard boredom as a purely negative state, something to be eliminated with the nearest screen. A growing body of research, however, suggests that it serves a purpose. Boredom appears to function as a signal that our current activity is failing to engage us, prompting us to seek out goals that feel more meaningful. Some studies have even found that people who were first given a tedious task subsequently performed better on tests of creative thinking. Not until we stop rushing to fill every idle moment, the argument runs, can we benefit from what boredom has to tell us.",
+        "stem": "Luận điểm chính của đoạn văn về sự nhàm chán là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "oec7217fb",
+      "content_hash": "a6fee2f32c21bbb11f5fb03dd44c00d595f27a5fe0116bf5c8d97c4fecab4783",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "Bác sĩ này xem hàng nghìn phim nhưng hiếm khi biết mình đúng hay sai, nên “may grow more confident without growing more accurate”. Tác giả không so sánh năng lực hai nghề, mà so sánh việc có hay không có phản hồi."
+      },
+      "id": "c7be3679-3aa5-55d1-9a71-d4091f4fe5a8",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-c1-expertise-feedback",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o6156a376",
+            "lang": "vi",
+            "text": "Bác sĩ nói chung kém chính xác hơn người dự báo thời tiết"
+          },
+          {
+            "id": "o568a9c98",
+            "lang": "vi",
+            "text": "Chẩn đoán hình ảnh là lĩnh vực quá khó để thành thạo"
+          },
+          {
+            "id": "oe37c70c1",
+            "lang": "vi",
+            "text": "Càng nhiều năm kinh nghiệm thì càng trở thành chuyên gia"
+          },
+          {
+            "id": "oec7217fb",
+            "lang": "vi",
+            "text": "Kinh nghiệm thiếu phản hồi có thể tăng sự tự tin mà không tăng độ chính xác"
+          }
+        ],
+        "passage": "What distinguishes a genuine expert from a merely experienced practitioner is not the number of years they have spent in a field but the quality of feedback they have received. A radiologist who reviews thousands of scans but rarely learns whether her diagnoses were correct may grow more confident without growing more accurate. By contrast, a weather forecaster, whose predictions are tested against reality every day, has constant opportunities to recalibrate. It follows that organisations seeking to develop expertise should invest less in accumulating experience and more in building systems that tell people, quickly and honestly, when they are wrong.",
+        "stem": "Tác giả đưa ra ví dụ về bác sĩ chẩn đoán hình ảnh (radiologist) nhằm minh họa điều gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "oe2e90b94",
+      "content_hash": "3bd1ad3f4fe215b98fd98e548e80c4e59f698660044604825f967e76e0744745",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“Not without complications” là cách nói phủ định kép, nghĩa là “có những phức tạp”, cụ thể là thiếu chỗ bảo quản và băn khoăn về việc trưng bày. Việc trao trả vẫn diễn ra và bảo tàng còn tài trợ xây nhà bảo quản, nên các phương án b, c sai."
+      },
+      "id": "ac346469-8290-5e21-8a3b-eba5a275242b",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-c1-panels-not-without",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "oe2e90b94",
+            "lang": "vi",
+            "text": "Việc trao trả gặp phải một số khó khăn nhất định"
+          },
+          {
+            "id": "ob43bf7c3",
+            "lang": "vi",
+            "text": "Việc trao trả cuối cùng đã bị hủy bỏ"
+          },
+          {
+            "id": "o3dcc09f9",
+            "lang": "vi",
+            "text": "Bảo tàng từ chối hỗ trợ dân làng sau khi trao trả"
+          },
+          {
+            "id": "o294fc87c",
+            "lang": "vi",
+            "text": "Việc trao trả diễn ra hoàn toàn suôn sẻ"
+          }
+        ],
+        "passage": "The museum's decision to return the carved panels to the village from which they were taken a century ago was hailed as a landmark gesture. Yet the handover was not without complications. Villagers had no facilities in which to store such fragile objects, and some elders questioned whether items made for a sacred ritual should be displayed at all. The museum ultimately agreed to fund a small climate-controlled building, while leaving decisions about access entirely to the community, an arrangement that one curator described as 'a shift from ownership to stewardship'.",
+        "stem": "Cụm “the handover was not without complications” ngụ ý điều gì về việc trao trả các tấm gỗ chạm?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "of3125759",
+      "content_hash": "7775883dba1cb4e7d745352a0e588bca342d3a311e13339272baa0d0df951bbe",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“Stops short of” nghĩa là chưa đi đến mức đề xuất cấm hẳn; các tác giả khẳng định biện pháp thực thi được “is preferable to an ideal one that cannot”. Họ có ghi nhận (“acknowledge”) các ý kiến phản đối, nên phương án cho rằng chúng vô căn cứ là sai."
+      },
+      "id": "cdc6d1dd-65ad-56b9-9121-549b7cee9a1c",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-c1-plastics-report",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "ocbc3af5d",
+            "lang": "vi",
+            "text": "Người tiêu dùng nên trả chi phí thu gom và tái chế bao bì"
+          },
+          {
+            "id": "odc3ea6e6",
+            "lang": "vi",
+            "text": "Các ý kiến phản đối đều vô căn cứ và không đáng xem xét"
+          },
+          {
+            "id": "of3125759",
+            "lang": "vi",
+            "text": "Một biện pháp khả thi tốt hơn một biện pháp lý tưởng nhưng không thực hiện được"
+          },
+          {
+            "id": "o14bc9ffd",
+            "lang": "vi",
+            "text": "Nên cấm hoàn toàn nhựa dùng một lần"
+          }
+        ],
+        "passage": "The committee's report stops short of recommending an outright ban on single-use plastics. Instead, it proposes that manufacturers be required to fund the collection and recycling of the packaging they produce. Critics on one side argue that this merely shifts costs onto consumers, who will inevitably face higher prices; those on the other contend that nothing less than a ban will change behaviour at the necessary scale. The authors acknowledge both objections but insist that a measure which can actually be implemented is preferable to an ideal one that cannot.",
+        "stem": "Nhận định nào phản ánh đúng quan điểm của nhóm tác giả bản báo cáo về nhựa dùng một lần?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob4cd7d3d",
+      "content_hash": "7fba84908ab88c0a2b8bf009a999c871eed394b082ae073455adef1aa8dc867c",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "Câu điều kiện hỗn hợp “Had the city invested…, commuters would not now be spending…” cho thấy hậu quả ở hiện tại, và “The irony is…” nhấn mạnh chi phí nay gấp khoảng bốn lần. Việc ô tô đáp ứng đủ nhu cầu chỉ là dự đoán sai của các nhà quy hoạch thời đó."
+      },
+      "id": "d412aae1-fc29-5377-98b8-cbad933e7ed0",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-c1-tram-network-irony",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o4faccfbe",
+            "lang": "vi",
+            "text": "Là một quyết định đúng vì ô tô cá nhân đáp ứng đủ nhu cầu"
+          },
+          {
+            "id": "oe3435c94",
+            "lang": "vi",
+            "text": "Là một quyết định hợp lý vì dự án ngày nay rẻ hơn trước"
+          },
+          {
+            "id": "ob4cd7d3d",
+            "lang": "vi",
+            "text": "Là một quyết định thiển cận mà giờ đây thành phố phải trả giá đắt"
+          },
+          {
+            "id": "o00b8d452",
+            "lang": "vi",
+            "text": "Là một quyết định không ảnh hưởng gì đến giao thông hiện nay"
+          }
+        ],
+        "passage": "Had the city invested in its tram network when the proposal was first made in the 1990s, commuters would not now be spending an average of ninety minutes a day in traffic. Planners at the time dismissed the scheme as an expensive relic, confidently predicting that private cars would meet the city's needs indefinitely. Few of them could have foreseen how rapidly the population would grow. The irony is that the same routes are now being reconsidered, at roughly four times the original cost.",
+        "stem": "Người viết nhìn nhận quyết định bác bỏ dự án tàu điện vào thập niên 1990 như thế nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o36e379c6",
+      "content_hash": "07dbccfd1a129fa39c000e73ddfd70bce34d1afe067add67c9b442da3872a95a",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“A masterclass in saying very little at considerable length” là lời mỉa mai, và các ví dụ uyển ngữ cho thấy tin xấu bị làm nhẹ đi. Câu “One need not impute bad faith” cho biết người viết không cần quy kết ác ý, nên phương án “cố tình gian lận” là sai."
+      },
+      "id": "06249978-30cb-59c5-bea1-2b1016b2e27a",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-c2-annual-report-euphemism",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o36e379c6",
+            "lang": "vi",
+            "text": "Châm biếm việc báo cáo dùng lời lẽ uyển ngữ để làm lu mờ thông tin bất lợi"
+          },
+          {
+            "id": "o955393d1",
+            "lang": "vi",
+            "text": "Khẳng định tổ chức cố tình gian lận số liệu"
+          },
+          {
+            "id": "o49997b8f",
+            "lang": "vi",
+            "text": "Đánh giá khách quan, không bày tỏ quan điểm riêng"
+          },
+          {
+            "id": "o7224d4c8",
+            "lang": "vi",
+            "text": "Khen ngợi sự minh bạch mà tổ chức đã cam kết"
+          }
+        ],
+        "passage": "Notwithstanding its avowed commitment to transparency, the organisation's annual report is a masterclass in saying very little at considerable length. Setbacks are 'learning opportunities', redundancies are 'workforce realignments', and a twelve per cent fall in revenue is relegated to a footnote on page forty-seven. One need not impute bad faith to conclude that the document was drafted with the reader's comfort, rather than the reader's understanding, firmly in mind.",
+        "stem": "Đâu là cách hiểu đúng nhất về thái độ của người viết đối với bản báo cáo thường niên?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob872c4e5",
+      "content_hash": "9343b4345c6cfa7fe6a8e8c9624afb204835b78512b7491ed159087dffd51153",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“Unsparing” ở đây đối lập với “lavish in their praise”, nghĩa là phê bình gay gắt, không nương tay. Dễ nhầm với “hào phóng” vì “spare” còn nghĩa là “dư dả”, nhưng ngữ cảnh cho thấy giới phê bình chê các tác phẩm khắc khổ về sau."
+      },
+      "id": "682ddd92-c6f2-5dc0-a854-674b3e0744f6",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-c2-composer-unsparing",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o2acdfd94",
+            "lang": "vi",
+            "text": "Hào phóng lời khen"
+          },
+          {
+            "id": "od92aa81b",
+            "lang": "vi",
+            "text": "Thờ ơ, không quan tâm"
+          },
+          {
+            "id": "ob872c4e5",
+            "lang": "vi",
+            "text": "Khắt khe, chê bai không nương tay"
+          },
+          {
+            "id": "o065ed8b7",
+            "lang": "vi",
+            "text": "Dè dặt, thận trọng"
+          }
+        ],
+        "passage": "Few critics have been as lavish in their praise as they were for the composer's early symphonies, and fewer still as unsparing when her later work took an austere, almost ascetic turn. Yet to read that shift as a failure of nerve is to mistake restraint for poverty of invention. The late quartets, pared back to a handful of motifs, reward the patient listener with a concentration of feeling that the more opulent early scores, for all their brilliance, rarely achieve.",
+        "stem": "Trong đoạn văn, từ “unsparing” mô tả thái độ của giới phê bình với các tác phẩm về sau như thế nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o0cdaf5ce",
+      "content_hash": "55c0b3903addf4c993557c0bbbe5fc105b12e4126aedb6ff7017a7f4e528f96d",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "Các phát hiện xác lập rằng canh tác định cư bắt đầu sớm hơn vài thế kỷ, còn việc do người địa phương sáng tạo hay người di cư mang đến vẫn là “an open question”. “Breathless coverage” nghĩa là báo chí đưa tin dồn dập, hào hứng thái quá, chứ không thận trọng."
+      },
+      "id": "eaba14b4-4e17-5e36-a452-dd6c8bae304d",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-c2-excavation-hedging",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o96558e9f",
+            "lang": "vi",
+            "text": "Cuộc khai quật đã viết lại toàn bộ lịch sử khu vực"
+          },
+          {
+            "id": "o140d31d9",
+            "lang": "vi",
+            "text": "Người di cư chắc chắn đã mang kỹ thuật canh tác đến khu vực"
+          },
+          {
+            "id": "o2f828fea",
+            "lang": "vi",
+            "text": "Báo chí đưa tin về cuộc khai quật rất thận trọng"
+          },
+          {
+            "id": "o0cdaf5ce",
+            "lang": "vi",
+            "text": "Nông nghiệp định cư xuất hiện sớm hơn từng nghĩ, nhưng nguồn gốc của nó vẫn chưa rõ"
+          }
+        ],
+        "passage": "It would be an overstatement to claim that the excavation has rewritten the history of the region, though one could be forgiven for thinking so given the breathless coverage it has received. What the finds do establish, with reasonable certainty, is that settled farming began there some centuries earlier than previously supposed. Whether this reflects local innovation or the arrival of migrants bringing established techniques remains, for now, an open question, and one the excavators themselves are notably reluctant to prejudge.",
+        "stem": "Nhận định nào phù hợp nhất với nội dung đoạn văn về cuộc khai quật?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "of9d60e27",
+      "content_hash": "f797a6f34f138e0c2a9f4019e903bb6101140cbf84adb1e67a2e6e937aa1e3eb",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“Inasmuch as” (xét ở chỗ) cho thấy người viết đồng ý với phần chỉ ra mâu thuẫn; điểm yếu (“Where it falters”) nằm ở kết luận, vì cũng có thể hợp lý khi trách tài xế kém may ít đi. Đoạn văn khẳng định hành vi của hai người “identical”, nên phương án b sai."
+      },
+      "id": "9927bb9c-b623-55bd-84b0-3e55969e110b",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-c2-moral-luck-inasmuch",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "of9d60e27",
+            "lang": "vi",
+            "text": "Kết luận phải trách cả hai như nhau không tất yếu, vì sự mâu thuẫn không cho biết nên sửa phán xét nào"
+          },
+          {
+            "id": "o0c4352ee",
+            "lang": "vi",
+            "text": "Việc chỉ ra sự mâu thuẫn trong trực giác của chúng ta là sai"
+          },
+          {
+            "id": "o0c7dd8e7",
+            "lang": "vi",
+            "text": "Tài xế gặp may không đáng bị trách chút nào"
+          },
+          {
+            "id": "o4a88d1ef",
+            "lang": "vi",
+            "text": "Hai tài xế say rượu thực ra đã hành xử khác nhau"
+          }
+        ],
+        "passage": "The philosopher's argument is persuasive inasmuch as it exposes the inconsistency in our intuitions about luck: we blame the drunk driver who kills a pedestrian far more than the equally drunk driver who happens to arrive home without incident, although their conduct was identical. Where it falters is in its conclusion that we ought therefore to blame both equally. That our judgements are inconsistent does not, by itself, tell us which of them to revise; one might just as coherently conclude that we should blame the unlucky driver less.",
+        "stem": "Người viết cho rằng lập luận của nhà triết học yếu ở điểm nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o6eb0b13b",
+      "content_hash": "9bbb6caf30489fcc8a9460c5542ed9796612e657f9e5b9139837236895bb4f05",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“Studied” ở đây nghĩa là có chủ ý, được dàn dựng, không liên quan đến “học”. Đoạn văn nói rõ đó không phải “genuine indifference” mà là sự kiềm chế “conceals rather than abandons their objectives”."
+      },
+      "id": "ac2546d5-ace1-52af-9bee-7e7cfbe11e4b",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-c2-studied-indifference",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o8bb99ce7",
+            "lang": "vi",
+            "text": "Sự cẩu thả do thiếu kinh nghiệm"
+          },
+          {
+            "id": "o6eb0b13b",
+            "lang": "vi",
+            "text": "Vẻ thờ ơ được cố ý tạo ra để che giấu mục tiêu thật"
+          },
+          {
+            "id": "ob962fff0",
+            "lang": "vi",
+            "text": "Thái độ chăm chỉ nghiên cứu kỹ đối phương"
+          },
+          {
+            "id": "o32b0acce",
+            "lang": "vi",
+            "text": "Sự thờ ơ thật sự vì không còn quan tâm đến thương vụ"
+          }
+        ],
+        "passage": "In negotiations, the side that appears least eager often holds the upper hand. A buyer who signals that walking away would be no great loss forces the seller to make the running, while one who betrays how badly she wants the deal invites the seller to dig in. Seasoned negotiators therefore cultivate an air of studied indifference: not, it should be stressed, genuine indifference, which tends to curdle into carelessness, but a calibrated reserve that conceals rather than abandons their objectives.",
+        "stem": "Cụm “studied indifference” trong đoạn văn về đàm phán có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o659c4ea8",
+      "content_hash": "5c13ea2f0df434facaddb74723f405d881d6d2f80772bc95008df5b75732e5dd",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“Black” là màu đen. Màu trắng là “white”, màu nâu là “brown”, màu xám là “grey”."
+      },
+      "id": "a712f362-aea7-5c5c-9abd-7afc1dc23a67",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-pre-a1-black-cat",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o2de43f5b",
+            "lang": "vi",
+            "text": "Màu xám"
+          },
+          {
+            "id": "o7e10eee0",
+            "lang": "vi",
+            "text": "Màu nâu"
+          },
+          {
+            "id": "o67fdf25e",
+            "lang": "vi",
+            "text": "Màu trắng"
+          },
+          {
+            "id": "o659c4ea8",
+            "lang": "vi",
+            "text": "Màu đen"
+          }
+        ],
+        "passage": "This is my cat. It is black.",
+        "stem": "Con mèo trong câu “This is my cat. It is black.” có màu gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob50db376",
+      "content_hash": "248c5bf23d997c4a438af5930fb2c5496c7a16d59cf2decbfb417a4fe1dea7bc",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“Closed” nghĩa là “đóng cửa”, “today” là “hôm nay”. Nếu hiệu sách mở cửa, biển sẽ ghi “OPEN”."
+      },
+      "id": "742b0217-6020-5a5f-b8ab-2f58352b0c5d",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-pre-a1-closed-sign",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o99243d5f",
+            "lang": "vi",
+            "text": "Hiệu sách hôm nay mở cửa"
+          },
+          {
+            "id": "ob50db376",
+            "lang": "vi",
+            "text": "Hiệu sách hôm nay đóng cửa"
+          },
+          {
+            "id": "oa8e0a7db",
+            "lang": "vi",
+            "text": "Hiệu sách hôm nay giảm giá"
+          },
+          {
+            "id": "of91e7f42",
+            "lang": "vi",
+            "text": "Hiệu sách mới khai trương"
+          }
+        ],
+        "passage": "BOOKSHOP — CLOSED TODAY",
+        "stem": "Tấm biển “BOOKSHOP — CLOSED TODAY” cho bạn biết điều gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o629a8ced",
+      "content_hash": "4a8466035587b98a0e9e55f9ec39818dace98906c3a11c134aab543bf6b12319",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“Good morning” dùng để chào buổi sáng. Buổi chiều là “Good afternoon”, buổi tối là “Good evening”, còn “Good night” dùng khi chúc ngủ ngon."
+      },
+      "id": "812d324d-3173-5dff-b690-210611a5338e",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-pre-a1-good-morning",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o56a5e014",
+            "lang": "vi",
+            "text": "Ban đêm"
+          },
+          {
+            "id": "o63eb6017",
+            "lang": "vi",
+            "text": "Buổi chiều"
+          },
+          {
+            "id": "o629a8ced",
+            "lang": "vi",
+            "text": "Buổi sáng"
+          },
+          {
+            "id": "o6deef8a5",
+            "lang": "vi",
+            "text": "Buổi tối"
+          }
+        ],
+        "passage": "Good morning, Mr Hai! — Good morning, Mai!",
+        "stem": "Lời chào “Good morning” cho biết hai người gặp nhau vào lúc nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o8961ed20",
+      "content_hash": "cdddb06d60d13ee56b8465109726af4e076ed650c32364974ac6b22b87d2a7e6",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“I am ten” nghĩa là “Tôi mười tuổi”. Đừng nhầm “ten” (10) với “two” (2) hay “twelve” (12)."
+      },
+      "id": "c7d65e0c-a362-5bf3-bda4-6aa7965fe9f0",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-pre-a1-lan-age",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o8961ed20",
+            "lang": "vi",
+            "text": "Mười tuổi"
+          },
+          {
+            "id": "o2de03a87",
+            "lang": "vi",
+            "text": "Một tuổi"
+          },
+          {
+            "id": "oe49be964",
+            "lang": "vi",
+            "text": "Hai tuổi"
+          },
+          {
+            "id": "o428b0937",
+            "lang": "vi",
+            "text": "Mười hai tuổi"
+          }
+        ],
+        "passage": "Hello! My name is Lan. I am ten.",
+        "stem": "Theo đoạn giới thiệu, Lan bao nhiêu tuổi?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "oc11c203d",
+      "content_hash": "fbbaed34dc39141b1eb303b24381fcf4d6f81106be55c57cfc8d35bfe6ee832a",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“Two red apples” là hai quả táo đỏ. “One green apple” là quả táo xanh, nên tổng cộng có ba quả nhưng chỉ hai quả màu đỏ."
+      },
+      "id": "81103419-b610-5364-aa7f-9cd8a3442437",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "en:diag:read-pre-a1-two-apples",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "oc11c203d",
+            "lang": "vi",
+            "text": "Hai quả"
+          },
+          {
+            "id": "o2be6dd27",
+            "lang": "vi",
+            "text": "Ba quả"
+          },
+          {
+            "id": "oc70c57fd",
+            "lang": "vi",
+            "text": "Không có quả nào"
+          },
+          {
+            "id": "o52f60576",
+            "lang": "vi",
+            "text": "Một quả"
+          }
+        ],
+        "passage": "I have two red apples and one green apple.",
+        "stem": "Người nói có bao nhiêu quả táo đỏ?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o75ea5c19",
+      "content_hash": "4a2d26acca83bee712a08be359bdf6783efae9041eb5215f6df88a57cb595ea7",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“Breakfast” là bữa sáng. Bữa trưa là “lunch”, bữa tối là “dinner”, bữa ăn nhẹ là “snack”."
+      },
+      "id": "212fd093-2c36-5c14-a4b4-bc422eb7469d",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-a1-breakfast",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o0a278fe1",
+            "lang": "vi",
+            "text": "bữa ăn nhẹ"
+          },
+          {
+            "id": "ob361f650",
+            "lang": "vi",
+            "text": "bữa trưa"
+          },
+          {
+            "id": "o75ea5c19",
+            "lang": "vi",
+            "text": "bữa sáng"
+          },
+          {
+            "id": "o1b9f68a4",
+            "lang": "vi",
+            "text": "bữa tối"
+          }
+        ],
+        "stem": "“breakfast” là bữa nào trong ngày?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o32a4a935",
+      "content_hash": "e4311ae40156a25dfcf9342153cb4a6b437b025ddbfd9ce4e711a94cb40fdd2f",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“Cheap” nghĩa là rẻ, trái nghĩa với “expensive”. “Big” (to), “new” (mới) và “easy” (dễ) không nói về giá cả."
+      },
+      "id": "ba765a3c-541f-5463-b233-6ded83015c76",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-a1-cheap",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "of00bc0b7",
+            "lang": "en",
+            "text": "big"
+          },
+          {
+            "id": "o32a4a935",
+            "lang": "en",
+            "text": "cheap"
+          },
+          {
+            "id": "o1c4d27f6",
+            "lang": "en",
+            "text": "new"
+          },
+          {
+            "id": "o7b7345f5",
+            "lang": "en",
+            "text": "easy"
+          }
+        ],
+        "stem": "Từ nào trái nghĩa với “expensive” (đắt)?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o2e672c32",
+      "content_hash": "7651c79b5d8414d2065126861701c913bd941fecd26ca8081fb7c33fb4de3420",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“Kitchen” là nhà bếp, nơi nấu ăn. “Bedroom” là phòng ngủ, “bathroom” là phòng tắm, “garden” là khu vườn."
+      },
+      "id": "bc8e9b34-8afe-5b38-a9fe-2f1f32d074de",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-a1-kitchen",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o4ae05227",
+            "lang": "en",
+            "text": "garden"
+          },
+          {
+            "id": "o8df7d5e4",
+            "lang": "en",
+            "text": "bedroom"
+          },
+          {
+            "id": "ob8af8674",
+            "lang": "en",
+            "text": "bathroom"
+          },
+          {
+            "id": "o2e672c32",
+            "lang": "en",
+            "text": "kitchen"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “nhà bếp”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o5de20168",
+      "content_hash": "53d5291f854bbea5f4c4d6c52e0b9f9a627d4938cdd8eadd947d8ed612a12721",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“Tired” nghĩa là mệt. Đói là “hungry”, buồn là “sad”, lạnh là “cold”."
+      },
+      "id": "84744762-a877-5ada-8ac7-311980e4d60e",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-a1-tired",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o7861b88e",
+            "lang": "vi",
+            "text": "lạnh"
+          },
+          {
+            "id": "o5de20168",
+            "lang": "vi",
+            "text": "mệt"
+          },
+          {
+            "id": "odecf1c79",
+            "lang": "vi",
+            "text": "buồn"
+          },
+          {
+            "id": "o298bd275",
+            "lang": "vi",
+            "text": "đói"
+          }
+        ],
+        "stem": "“tired” gần nghĩa nhất với từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o8bad2f23",
+      "content_hash": "c2528882846027387e7b86b13521d2e533eca61c690434b89938ae18e8d0c6b2",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“Wednesday” là thứ Tư. “Tuesday” là thứ Ba và “Thursday” là thứ Năm — hai từ này rất hay bị nhầm với nhau."
+      },
+      "id": "7ab122fa-b652-5277-ba1b-207d4e6f09ba",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-a1-wednesday",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o9cdd3b81",
+            "lang": "en",
+            "text": "Saturday"
+          },
+          {
+            "id": "o22b62282",
+            "lang": "en",
+            "text": "Tuesday"
+          },
+          {
+            "id": "ob4f1c370",
+            "lang": "en",
+            "text": "Thursday"
+          },
+          {
+            "id": "o8bad2f23",
+            "lang": "en",
+            "text": "Wednesday"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “thứ Tư”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "of7dd9fda",
+      "content_hash": "4b127a3caf7f176ac05fdc0607eaef464b92b0ed8da7b7a448f18225040c8b2a",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“Angry” là tức giận. “Afraid” là sợ, “bored” là chán, “proud” là tự hào."
+      },
+      "id": "d9abd125-b984-59f8-8573-647825a5bb4b",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-a2-angry",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o6f73ffe4",
+            "lang": "en",
+            "text": "proud"
+          },
+          {
+            "id": "oe31d1bb5",
+            "lang": "en",
+            "text": "bored"
+          },
+          {
+            "id": "of7dd9fda",
+            "lang": "en",
+            "text": "angry"
+          },
+          {
+            "id": "o08f46537",
+            "lang": "en",
+            "text": "afraid"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “tức giận”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o1ae5dead",
+      "content_hash": "1947643caffb7604fe322e0ca62107bd39f87e4df1f7dc0476c87b0d6c809f9b",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“Borrow” là mượn (từ ai đó). “Lend” ngược lại, là cho mượn; “rent” là thuê, “return” là trả lại."
+      },
+      "id": "959d1070-8179-539a-9884-424f1977f220",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-a2-borrow",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o1ae5dead",
+            "lang": "en",
+            "text": "borrow"
+          },
+          {
+            "id": "o04f0efbe",
+            "lang": "en",
+            "text": "lend"
+          },
+          {
+            "id": "oc1322886",
+            "lang": "en",
+            "text": "rent"
+          },
+          {
+            "id": "o502b841c",
+            "lang": "en",
+            "text": "return"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “mượn” (lấy đồ của người khác để dùng rồi trả lại)?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "od2afe7be",
+      "content_hash": "3eabde38cf5b2e30a88366232cbacd07a51beb22bad6f0d4ac397ade4b778a24",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“Ill” nghĩa là ốm, bệnh, đồng nghĩa với “sick”. “Poor” là nghèo, “lazy” là lười, “angry” là tức giận."
+      },
+      "id": "6b38b857-ae35-5ab7-b66a-71ee8a979c3f",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-a2-ill",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o6ce1104d",
+            "lang": "en",
+            "text": "poor"
+          },
+          {
+            "id": "od2afe7be",
+            "lang": "en",
+            "text": "sick"
+          },
+          {
+            "id": "o8bb49a39",
+            "lang": "en",
+            "text": "angry"
+          },
+          {
+            "id": "oa3d55bb3",
+            "lang": "en",
+            "text": "lazy"
+          }
+        ],
+        "stem": "“ill” gần nghĩa nhất với từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o3a3ca3fd",
+      "content_hash": "1709eb57cfebec7a72371d1425650ac3344c2ee2313546866dae1cb0ba969fa5",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“Journey” là chuyến đi, gần nghĩa với “trip”. “Ticket” (vé) và “station” (nhà ga) chỉ liên quan đến việc đi lại chứ không cùng nghĩa."
+      },
+      "id": "39def0f7-5e69-5931-ac49-bb76758e3d50",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-a2-journey",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "oa87ae38b",
+            "lang": "en",
+            "text": "ticket"
+          },
+          {
+            "id": "oa83ab77a",
+            "lang": "en",
+            "text": "station"
+          },
+          {
+            "id": "o95c7e473",
+            "lang": "en",
+            "text": "meal"
+          },
+          {
+            "id": "o3a3ca3fd",
+            "lang": "en",
+            "text": "trip"
+          }
+        ],
+        "stem": "“journey” gần nghĩa nhất với từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "oca46149f",
+      "content_hash": "9fd874314c136e78cd03a75b18758f63a4a04d84fbd1cda0e7317aa562048481",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "Ta nói “miss the bus” để chỉ lỡ chuyến xe. “Lose” là làm mất đồ vật, nên “lose the bus” là sai dù người Việt hay dùng nhầm."
+      },
+      "id": "a77516e9-e795-5350-93f5-2e47663b80c3",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-a2-miss",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "a2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o3bfa3aa5",
+            "lang": "en",
+            "text": "leave"
+          },
+          {
+            "id": "ob73002e6",
+            "lang": "en",
+            "text": "lose"
+          },
+          {
+            "id": "oc4c43a16",
+            "lang": "en",
+            "text": "forget"
+          },
+          {
+            "id": "oca46149f",
+            "lang": "en",
+            "text": "miss"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “lỡ” trong cụm “lỡ chuyến xe buýt”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "oeb0a1e0e",
+      "content_hash": "5780376823731947f6d602cc688a80ecdebac07449182cfa8c89ebe4978978f6",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“Can't afford something” nghĩa là không đủ tiền để mua. “Pay” cần đi với “for” (pay for a car), còn “cost” có chủ ngữ là món đồ."
+      },
+      "id": "e8849ffc-b0ab-57cb-af9b-cbb7d57bd3ea",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-b1-afford",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o8ddd888a",
+            "lang": "en",
+            "text": "spend"
+          },
+          {
+            "id": "o3023c73d",
+            "lang": "en",
+            "text": "cost"
+          },
+          {
+            "id": "o8187020f",
+            "lang": "en",
+            "text": "pay"
+          },
+          {
+            "id": "oeb0a1e0e",
+            "lang": "en",
+            "text": "afford"
+          }
+        ],
+        "stem": "We can't ___ a new car this year because we are saving for a house.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob6968e2f",
+      "content_hash": "f1da67eeeeead462c4db2f7228baaf9c4dd1de00717712eff1ed54e2a647a7f0",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Cụm cố định là “make a decision” (đưa ra quyết định). Không nói “do a decision” dù “do” cũng có nghĩa là “làm”."
+      },
+      "id": "7c739d58-d59a-5dcb-a7f7-86b4e31d4a8b",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-b1-make-decision",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o68f07313",
+            "lang": "en",
+            "text": "do"
+          },
+          {
+            "id": "o17575d04",
+            "lang": "en",
+            "text": "get"
+          },
+          {
+            "id": "ob6968e2f",
+            "lang": "en",
+            "text": "make"
+          },
+          {
+            "id": "o6dd1f64a",
+            "lang": "en",
+            "text": "have"
+          }
+        ],
+        "stem": "It took me a long time to ___ a decision about my new job.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o7a11b0dc",
+      "content_hash": "903debf512cf4cb9e90acbe50a6a34717afd8ee7c76f7f141a689a3b27f3de56",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“Postpone” là hoãn lại, đồng nghĩa với “put off”. “Put on” là mặc vào, “put up” là dựng lên hoặc cho ở nhờ, “put away” là cất đi."
+      },
+      "id": "e7929b42-6878-5da9-8def-e1321d5c0744",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-b1-postpone",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o7a11b0dc",
+            "lang": "en",
+            "text": "put off"
+          },
+          {
+            "id": "o059e2bf0",
+            "lang": "en",
+            "text": "put away"
+          },
+          {
+            "id": "odcc1e4c7",
+            "lang": "en",
+            "text": "put up"
+          },
+          {
+            "id": "o6abcfe33",
+            "lang": "en",
+            "text": "put on"
+          }
+        ],
+        "stem": "“postpone” gần nghĩa nhất với cụm động từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "ocd41e0e1",
+      "content_hash": "f3e950fcfa13cdd1318729d32aa587e4a515742f5eb1ba6520625513b6af647a",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“Reliable” nghĩa là đáng tin cậy, hợp với ý “luôn giữ lời hứa”. “Valuable” là có giá trị, thường dùng cho đồ vật, không nói về tính cách giữ lời."
+      },
+      "id": "2c1664fe-b3ac-5670-a323-87a03ef7f458",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-b1-reliable",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "od7fd32e2",
+            "lang": "en",
+            "text": "available"
+          },
+          {
+            "id": "ocd41e0e1",
+            "lang": "en",
+            "text": "reliable"
+          },
+          {
+            "id": "o9b2a2c64",
+            "lang": "en",
+            "text": "comfortable"
+          },
+          {
+            "id": "o9dd49cd9",
+            "lang": "en",
+            "text": "valuable"
+          }
+        ],
+        "stem": "You can always count on Anna to keep her promises; she is very ___.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o1cdfa534",
+      "content_hash": "f0e153939e6e84637f16bf745b697dee46431659c0f54efc62ae710243bf54f8",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Cấu trúc “remind somebody to do something” nghĩa là nhắc ai làm gì. “Remember” là tự mình nhớ, không dùng “remember me to call” theo nghĩa nhắc."
+      },
+      "id": "c6244781-0547-5171-92e9-7269147e55d5",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-b1-remind",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o5e906aee",
+            "lang": "en",
+            "text": "repeat"
+          },
+          {
+            "id": "o1cdfa534",
+            "lang": "en",
+            "text": "remind"
+          },
+          {
+            "id": "oa6fd4645",
+            "lang": "en",
+            "text": "remember"
+          },
+          {
+            "id": "oc8b8a13b",
+            "lang": "en",
+            "text": "recall"
+          }
+        ],
+        "stem": "Please ___ me to call my grandmother tonight, or I will forget.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "oe5b1316e",
+      "content_hash": "b1461345022d60ca0b0f65dc6ea8c33b6ec2362fab90cf19eb49a34136006193",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Cụm đúng là “meet a deadline” (kịp thời hạn). “Achieve” đi với mục tiêu (achieve a goal), không đi với “deadline”."
+      },
+      "id": "00d7becb-f2b3-577c-abe1-3885d2e2ff7c",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-b2-meet-deadline",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o9217a4bc",
+            "lang": "en",
+            "text": "achieve"
+          },
+          {
+            "id": "oe5b1316e",
+            "lang": "en",
+            "text": "meet"
+          },
+          {
+            "id": "o43811fb3",
+            "lang": "en",
+            "text": "catch"
+          },
+          {
+            "id": "o1d22c3c5",
+            "lang": "en",
+            "text": "win"
+          }
+        ],
+        "stem": "Despite working all night, the team failed to ___ the deadline.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob0ea7130",
+      "content_hash": "30db0735bf10ad5b12b3ab86bc5a6b4efe33c58f45681dfdb439e047478abbe9",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Kết hợp cố định là “raise awareness” (nâng cao nhận thức); “raise” là ngoại động từ nên có tân ngữ. “Rise” và “arise” là nội động từ, không thể theo sau bởi tân ngữ."
+      },
+      "id": "2b4d421c-03c8-5dc7-82a6-b44981b0333e",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-b2-raise-awareness",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "ob0ea7130",
+            "lang": "en",
+            "text": "raise"
+          },
+          {
+            "id": "oe31d5456",
+            "lang": "en",
+            "text": "rise"
+          },
+          {
+            "id": "o3cd9bfc9",
+            "lang": "en",
+            "text": "arise"
+          },
+          {
+            "id": "o94ff2a34",
+            "lang": "en",
+            "text": "lift"
+          }
+        ],
+        "stem": "The campaign aims to ___ awareness of plastic pollution among young people.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "od98ccea2",
+      "content_hash": "f8e359516654b25881cac6aad1389e16b81a017c8d8de6bbe7ffa1e6ad904f5e",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "“Reluctant” là miễn cưỡng, không muốn làm, gần nghĩa với “unwilling”. “Unable” là không có khả năng làm — khác với không muốn làm."
+      },
+      "id": "0c5577ce-d50c-5844-9c1a-a95d16df2664",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-b2-reluctant",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "od98ccea2",
+            "lang": "en",
+            "text": "unwilling"
+          },
+          {
+            "id": "o2b5002a6",
+            "lang": "en",
+            "text": "unable"
+          },
+          {
+            "id": "o955a975d",
+            "lang": "en",
+            "text": "unhappy"
+          },
+          {
+            "id": "ofe7d924c",
+            "lang": "en",
+            "text": "unaware"
+          }
+        ],
+        "stem": "“reluctant” gần nghĩa nhất với từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "ofcb28a8f",
+      "content_hash": "3256697512753d88a6b2313e0462a6d3bc7ace2ae82301ddf9ada27b23351551",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Thành ngữ “take something for granted” nghĩa là coi điều gì là hiển nhiên, không biết trân trọng. Các từ còn lại không tạo thành cụm này."
+      },
+      "id": "adfd43d5-ebc9-5816-a873-31d10e6c5be8",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-b2-take-for-granted",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o0f0617d0",
+            "lang": "en",
+            "text": "given"
+          },
+          {
+            "id": "o1e23ac32",
+            "lang": "en",
+            "text": "certain"
+          },
+          {
+            "id": "ofcb28a8f",
+            "lang": "en",
+            "text": "granted"
+          },
+          {
+            "id": "o112ce4a8",
+            "lang": "en",
+            "text": "sure"
+          }
+        ],
+        "stem": "Many people take clean water for ___, but in some places it is a luxury.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "ofdd1aea4",
+      "content_hash": "95e3b61790580280d027d88bcf54db1641742a1f2cfb31490246664c766f92af",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "“Thorough” nghĩa là kỹ lưỡng (a thorough check). “Through” (xuyên qua), “though” (mặc dù) và “thought” (suy nghĩ) chỉ có cách viết gần giống."
+      },
+      "id": "acdaf3c0-d97f-581a-a44d-7f44bc797e28",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-b2-thorough",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "b2",
+      "prompt": {
+        "options": [
+          {
+            "id": "oacf7745b",
+            "lang": "en",
+            "text": "through"
+          },
+          {
+            "id": "ofdd1aea4",
+            "lang": "en",
+            "text": "thorough"
+          },
+          {
+            "id": "od28a6989",
+            "lang": "en",
+            "text": "though"
+          },
+          {
+            "id": "o5ab347cf",
+            "lang": "en",
+            "text": "thought"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “kỹ lưỡng, tỉ mỉ” (ví dụ: một cuộc kiểm tra kỹ lưỡng)?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "oee740e7a",
+      "content_hash": "511033f521f901ecc9da4292b8135c3bc6b2833c479a599cfcaac0c5525f8b3a",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "Cụm cố định “bear the brunt of something” nghĩa là gánh chịu phần nặng nề nhất. “Hold” cũng có nghĩa là giữ nhưng không kết hợp với “brunt”."
+      },
+      "id": "b8a80b00-4a2b-5b55-a5a6-19a77b0b7ef9",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-c1-bear-brunt",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o04e14a87",
+            "lang": "en",
+            "text": "raise"
+          },
+          {
+            "id": "ocecfb046",
+            "lang": "en",
+            "text": "hold"
+          },
+          {
+            "id": "oe98938b3",
+            "lang": "en",
+            "text": "keep"
+          },
+          {
+            "id": "oee740e7a",
+            "lang": "en",
+            "text": "bear"
+          }
+        ],
+        "stem": "Small businesses are likely to ___ the brunt of the new regulations.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o31e6f696",
+      "content_hash": "be12c43e4ecddf2f2c970fc701f8568cac47c8b6893db88748345482ccc109aa",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“Inadvertently” nghĩa là vô tình, không cố ý. “Indifferently” là thờ ơ, “inevitably” là không thể tránh khỏi, còn “deliberately” ngược lại là cố ý."
+      },
+      "id": "5f926089-d2dc-57ad-ab20-4789b44c7adc",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-c1-inadvertently",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o0a8d2c8f",
+            "lang": "en",
+            "text": "deliberately"
+          },
+          {
+            "id": "oc67c6d86",
+            "lang": "en",
+            "text": "indifferently"
+          },
+          {
+            "id": "o31e6f696",
+            "lang": "en",
+            "text": "inadvertently"
+          },
+          {
+            "id": "of7b936dc",
+            "lang": "en",
+            "text": "inevitably"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “vô tình, không cố ý”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o1851c7e8",
+      "content_hash": "23e941fa03a57d174229c7ad7004ca01c7384bada6d18ef9510c5b6b1510185b",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“Mitigate the risk” là giảm nhẹ rủi ro, hợp với ý trồng cây chống lũ. “Militate” (thường đi với “against”) dễ nhầm do cách viết, còn “exacerbate” lại là làm trầm trọng thêm."
+      },
+      "id": "53bd737f-1434-5062-96f6-3ce0186d7df5",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-c1-mitigate",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o1851c7e8",
+            "lang": "en",
+            "text": "mitigate"
+          },
+          {
+            "id": "o04764a95",
+            "lang": "en",
+            "text": "militate"
+          },
+          {
+            "id": "oc94af55b",
+            "lang": "en",
+            "text": "facilitate"
+          },
+          {
+            "id": "o74f88ec6",
+            "lang": "en",
+            "text": "exacerbate"
+          }
+        ],
+        "stem": "Planting trees along the riverbank helps to ___ the risk of flooding.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o021f2cb9",
+      "content_hash": "9d95c8a54d5f3cd9c16ddeb1a954e2d813a56f733c6e3390f48bfb96ba2be12f",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“Come under close scrutiny” nghĩa là bị xem xét kỹ lưỡng. “Observance” là sự tuân thủ (luật lệ, nghi lễ), không phải sự quan sát kỹ."
+      },
+      "id": "600ad048-d2bd-5b6b-a2e2-c51bd6e89d15",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-c1-scrutiny",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o021f2cb9",
+            "lang": "en",
+            "text": "scrutiny"
+          },
+          {
+            "id": "o799206bb",
+            "lang": "en",
+            "text": "observance"
+          },
+          {
+            "id": "o2109f6e7",
+            "lang": "en",
+            "text": "glimpse"
+          },
+          {
+            "id": "ob6b45e6d",
+            "lang": "en",
+            "text": "survey"
+          }
+        ],
+        "stem": "After the scandal, the company's accounts came under close ___.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "oe5dc5c4a",
+      "content_hash": "483ec4c2f52c7321ec1b101c1e0d303ce2f48c7a80495912eeb6f971883ae36e",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“Ubiquitous” nghĩa là có mặt ở khắp nơi (ví dụ: smartphones are ubiquitous). Nghĩa “mơ hồ” là của “ambiguous”, một từ có đuôi gần giống."
+      },
+      "id": "880b160f-938d-5c1d-b2b3-0243e18f2dc3",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-c1-ubiquitous",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c1",
+      "prompt": {
+        "options": [
+          {
+            "id": "oe5dc5c4a",
+            "lang": "vi",
+            "text": "có mặt ở khắp nơi"
+          },
+          {
+            "id": "o9ec638b9",
+            "lang": "vi",
+            "text": "mơ hồ, khó hiểu"
+          },
+          {
+            "id": "o767c8af2",
+            "lang": "vi",
+            "text": "cực kỳ hiếm gặp"
+          },
+          {
+            "id": "oceaa0889",
+            "lang": "vi",
+            "text": "dễ hỏng, dễ vỡ"
+          }
+        ],
+        "stem": "“ubiquitous” gần nghĩa nhất với cách diễn đạt nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob4c51fea",
+      "content_hash": "4bbf8404a70d577dad05a144e5146df54df8f70d86d2629c064cda56dc3ba084",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“A moot point” là vấn đề không còn ý nghĩa thực tế (hoặc còn tranh cãi). “Mute point” là lỗi phổ biến do hai từ phát âm gần giống nhau."
+      },
+      "id": "87784def-c449-5449-b506-15eebaaeb429",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-c2-moot-point",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o5df151fa",
+            "lang": "en",
+            "text": "mute"
+          },
+          {
+            "id": "oe898a381",
+            "lang": "en",
+            "text": "hollow"
+          },
+          {
+            "id": "oba8b3c69",
+            "lang": "en",
+            "text": "vacant"
+          },
+          {
+            "id": "ob4c51fea",
+            "lang": "en",
+            "text": "moot"
+          }
+        ],
+        "stem": "Whether the rule was fair is now a ___ point, since it was abolished last year.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob26f5ed9",
+      "content_hash": "13457e9667bfa6bbb8bfbbab43d83abb7b19cf669dd5be8da39675d4b9609d4d",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“Notwithstanding” là giới từ trang trọng nghĩa là “bất chấp”, đứng trước cụm danh từ. “Inasmuch as”, “insofar as” và “whereas” là liên từ, phải theo sau bởi một mệnh đề."
+      },
+      "id": "8bfe06ca-9608-58e8-8a89-fd0457755419",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-c2-notwithstanding",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o55531539",
+            "lang": "en",
+            "text": "Inasmuch as"
+          },
+          {
+            "id": "ob26f5ed9",
+            "lang": "en",
+            "text": "Notwithstanding"
+          },
+          {
+            "id": "o4fb35a71",
+            "lang": "en",
+            "text": "Insofar as"
+          },
+          {
+            "id": "o7992ab2d",
+            "lang": "en",
+            "text": "Whereas"
+          }
+        ],
+        "stem": "___ the torrential rain, the ceremony went ahead exactly as planned.",
+        "stem_lang": "en"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o297c70ef",
+      "content_hash": "8b41c37d7656c6aef485c2ac7266cc2f5d9220682643171b07732fb9c703c4fd",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“Obsequious” nghĩa là khúm núm, xu nịnh quá mức. “Officious” là hách dịch, thích xen vào việc người khác; “obstreperous” là ồn ào, ngỗ ngược."
+      },
+      "id": "b5657efc-f8ff-52a5-a58d-ad157855f640",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-c2-obsequious",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o3b9e5164",
+            "lang": "en",
+            "text": "obstreperous"
+          },
+          {
+            "id": "ofb9cc58a",
+            "lang": "en",
+            "text": "oblivious"
+          },
+          {
+            "id": "o823c3623",
+            "lang": "en",
+            "text": "officious"
+          },
+          {
+            "id": "o297c70ef",
+            "lang": "en",
+            "text": "obsequious"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “khúm núm, xu nịnh quá mức”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "obb2fc739",
+      "content_hash": "909d90c0fc936f25e433d99e5a0541bc6f8686fe9603dd8f97b9bb3b7172bac2",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“Perfunctory” chỉ việc làm cho có, qua loa, thiếu quan tâm thật sự. Nghĩa “cẩn trọng, chu đáo” hoàn toàn ngược lại."
+      },
+      "id": "9f1239a1-dbb5-505c-8e63-08dd25640c46",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-c2-perfunctory",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "oef3ed314",
+            "lang": "vi",
+            "text": "thô lỗ, xấc xược"
+          },
+          {
+            "id": "o1e99b5e5",
+            "lang": "vi",
+            "text": "kéo dài, dai dẳng"
+          },
+          {
+            "id": "oc999643f",
+            "lang": "vi",
+            "text": "cẩn trọng, chu đáo"
+          },
+          {
+            "id": "obb2fc739",
+            "lang": "vi",
+            "text": "qua loa, chiếu lệ"
+          }
+        ],
+        "stem": "“perfunctory” (như trong “a perfunctory glance”) gần nghĩa nhất với cách diễn đạt nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o42fac363",
+      "content_hash": "ea808722ba033f5b1fe0c83e9ae782ced98c3d4f36f9e681f6898c6a7fd12dc5",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“A Pyrrhic victory” là chiến thắng mà cái giá phải trả lớn đến mức gần như thất bại. Nó không chỉ đơn thuần là thắng bất ngờ hay vẻ vang."
+      },
+      "id": "6a8beb6a-3499-5257-a53d-c87d69f4a837",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-c2-pyrrhic-victory",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "c2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o42fac363",
+            "lang": "vi",
+            "text": "chiến thắng phải trả giá quá đắt"
+          },
+          {
+            "id": "ob3dc64b2",
+            "lang": "vi",
+            "text": "chiến thắng bất ngờ"
+          },
+          {
+            "id": "o60bdfc8a",
+            "lang": "vi",
+            "text": "chiến thắng dễ dàng"
+          },
+          {
+            "id": "o87e54671",
+            "lang": "vi",
+            "text": "chiến thắng vẻ vang"
+          }
+        ],
+        "stem": "Cụm “a Pyrrhic victory” có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o8fbcaf9e",
+      "content_hash": "54b6ce3bb5db0e33381b7c043170fe314e3c79fafe8a7ab4b2d0f7d15e03b5a8",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“Dog” là con chó. “Cat” là con mèo, “duck” là con vịt, “pig” là con lợn."
+      },
+      "id": "3c180213-4c39-56fc-8da4-8d568a44b3c6",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-pre-a1-dog",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o8fbcaf9e",
+            "lang": "en",
+            "text": "dog"
+          },
+          {
+            "id": "ocd9c8e53",
+            "lang": "en",
+            "text": "pig"
+          },
+          {
+            "id": "o7f0f7efc",
+            "lang": "en",
+            "text": "duck"
+          },
+          {
+            "id": "o813f74dd",
+            "lang": "en",
+            "text": "cat"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “con chó”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "oef98c487",
+      "content_hash": "96477df9ad49308ad30ad629588ae6999be91194b1dbbe95756d245f86d17ff9",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“Goodbye” dùng khi chia tay, nghĩa là “tạm biệt”. “Hello” là lời chào khi gặp nhau, không phải khi rời đi."
+      },
+      "id": "dee663b2-0a74-58b4-9eba-b021142c4120",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-pre-a1-goodbye",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "oef98c487",
+            "lang": "en",
+            "text": "goodbye"
+          },
+          {
+            "id": "o3798a7dc",
+            "lang": "en",
+            "text": "hello"
+          },
+          {
+            "id": "o7c4a6c29",
+            "lang": "en",
+            "text": "sorry"
+          },
+          {
+            "id": "ob5ab2656",
+            "lang": "en",
+            "text": "please"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “tạm biệt”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o0d51f3de",
+      "content_hash": "81a542a775eaa778c0d1c4ddfc43fe9fcfb73977d7ae5ddfb009227917c4bdfd",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“Mother” là mẹ. “Father” là bố, “sister” là chị/em gái, “brother” là anh/em trai."
+      },
+      "id": "417ee62e-55db-5766-b586-78ddd1434bda",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-pre-a1-mother",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o552a1b3f",
+            "lang": "en",
+            "text": "brother"
+          },
+          {
+            "id": "o2d22c655",
+            "lang": "en",
+            "text": "father"
+          },
+          {
+            "id": "o71d07a43",
+            "lang": "en",
+            "text": "sister"
+          },
+          {
+            "id": "o0d51f3de",
+            "lang": "en",
+            "text": "mother"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “mẹ”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o8c52a613",
+      "content_hash": "351b4b032b62d69c8e1036693295f26c435e8084dfedee38e1f0399dad93822c",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“Red” là màu đỏ. Màu xanh lá là “green”, màu vàng là “yellow”, màu đen là “black”."
+      },
+      "id": "ebdfdedc-95a5-5114-85f2-f84f4349a26c",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-pre-a1-red",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o26a0f093",
+            "lang": "vi",
+            "text": "màu vàng"
+          },
+          {
+            "id": "o018db1c0",
+            "lang": "vi",
+            "text": "màu xanh lá"
+          },
+          {
+            "id": "o8c52a613",
+            "lang": "vi",
+            "text": "màu đỏ"
+          },
+          {
+            "id": "o6f9524f7",
+            "lang": "vi",
+            "text": "màu đen"
+          }
+        ],
+        "stem": "Từ “red” là màu gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "ofeb1e6f6",
+      "content_hash": "0ee866f1edb3a59c304cd7d6ded6cc1077c4cc8887b9dbfab45a97839e3d607d",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“Seven” là số 7. “Six” là 6, “nine” là 9, còn “eleven” là 11 nên dễ nhầm vì cũng có âm “-ven”."
+      },
+      "id": "b72d9482-c409-59c7-bd21-cf16ee1e0bf1",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "en:diag:voc-pre-a1-seven",
+      "key_confidence": "unreviewed",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "prompt": {
+        "options": [
+          {
+            "id": "oea07d5b6",
+            "lang": "en",
+            "text": "nine"
+          },
+          {
+            "id": "ofeb1e6f6",
+            "lang": "en",
+            "text": "seven"
+          },
+          {
+            "id": "o54d001dd",
+            "lang": "en",
+            "text": "six"
+          },
+          {
+            "id": "ofe73cbe6",
+            "lang": "en",
+            "text": "eleven"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là số “7”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "oc05cd74c",
+      "content_hash": "404682651b0aab0880d9d2333d4ff0c04655327eb4e7a768e9c5bfc42af8bad0",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“아이” là chủ ngữ và kết thúc bằng nguyên âm nên dùng “가”. “이” chỉ dùng sau phụ âm cuối; “을” là trợ từ tân ngữ."
+      },
+      "id": "5328c98c-3a0a-53f6-9b6b-c09e27fac32d",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-hangul-aiga-uyu",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "oc05cd74c",
+            "lang": "ko",
+            "text": "가"
+          },
+          {
+            "id": "obd4c231d",
+            "lang": "ko",
+            "text": "에"
+          },
+          {
+            "id": "o8e58c41e",
+            "lang": "ko",
+            "text": "이"
+          },
+          {
+            "id": "o793b71bf",
+            "lang": "ko",
+            "text": "을"
+          }
+        ],
+        "stem": "아이___ 우유를 마셔요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o591e19df",
+      "content_hash": "d579f79bf39ad596d9e71c9a337c8fc3f4bd1a1f0665104fabf0490eb176d85e",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“학생” kết thúc bằng phụ âm cuối (ㅇ) nên dùng “이에요”. “예요” chỉ dùng sau danh từ kết thúc bằng nguyên âm."
+      },
+      "id": "a1989d6b-a608-5ba6-81a5-960b797a45ed",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-hangul-haksaeng-ieyo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "o5a1306c6",
+            "lang": "ko",
+            "text": "는"
+          },
+          {
+            "id": "o971e468c",
+            "lang": "ko",
+            "text": "예요"
+          },
+          {
+            "id": "o591e19df",
+            "lang": "ko",
+            "text": "이에요"
+          },
+          {
+            "id": "o8aa8de29",
+            "lang": "ko",
+            "text": "을"
+          }
+        ],
+        "stem": "저는 학생___.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "obf62a0cb",
+      "content_hash": "ba0076faaae4d7d5bda16d4ec5ce99a7b806c67aa463fcff3f033f73a1e1bc8a",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“저” kết thúc bằng nguyên âm nên trợ từ chủ đề là “는” → “저는”. “은” chỉ dùng sau phụ âm cuối."
+      },
+      "id": "a814b7b2-2008-51f4-80fd-6dfd1f0034fe",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-hangul-jeoneun-vietnam",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "obf62a0cb",
+            "lang": "ko",
+            "text": "는"
+          },
+          {
+            "id": "ofd68631c",
+            "lang": "ko",
+            "text": "을"
+          },
+          {
+            "id": "oc3ffd743",
+            "lang": "ko",
+            "text": "은"
+          },
+          {
+            "id": "o5ace3bdb",
+            "lang": "ko",
+            "text": "이"
+          }
+        ],
+        "stem": "저___ 베트남 사람이에요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "oc7491a8b",
+      "content_hash": "c79c1cd000e356fb04b8296b33acaa6b238b69910cbc0cfc2225261b813f1f53",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“선생님” kết thúc bằng phụ âm ㅁ nên dùng trợ từ chủ đề “은”. “는” chỉ đi sau nguyên âm; “를” là trợ từ tân ngữ."
+      },
+      "id": "e4f9145e-3a4d-5018-ad45-f7283c8aded6",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-hangul-seonsaengnim-eun",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "ob882aebf",
+            "lang": "ko",
+            "text": "를"
+          },
+          {
+            "id": "oc7491a8b",
+            "lang": "ko",
+            "text": "은"
+          },
+          {
+            "id": "o88bd51f0",
+            "lang": "ko",
+            "text": "는"
+          },
+          {
+            "id": "o313d6249",
+            "lang": "ko",
+            "text": "에"
+          }
+        ],
+        "stem": "선생님___ 한국 사람이에요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "oa8ecfcfc",
+      "content_hash": "7f9a46736ce0e63c2d286b0492aec801828428941a1a6b8b619059702fdb844c",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“우유” kết thúc bằng nguyên âm nên dùng “예요”. “이에요” chỉ dùng sau danh từ có phụ âm cuối."
+      },
+      "id": "19152e2b-dea4-5b2a-9357-efd81f2ab2c0",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-hangul-uyu-yeyo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "ob90949ed",
+            "lang": "ko",
+            "text": "이"
+          },
+          {
+            "id": "oa8ecfcfc",
+            "lang": "ko",
+            "text": "예요"
+          },
+          {
+            "id": "o42cf990c",
+            "lang": "ko",
+            "text": "이에요"
+          },
+          {
+            "id": "o49ce7297",
+            "lang": "ko",
+            "text": "를"
+          }
+        ],
+        "stem": "이것은 우유___.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o8b58c479",
+      "content_hash": "b903edc03108b6c566da8398b3aa75033ec6afdf3703d10f4b4328409affbba8",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "Nơi diễn ra hành động (học bài) dùng “에서”. “에” chỉ đích đến hoặc nơi tồn tại (가다, 있다), không dùng với hành động như “공부하다”."
+      },
+      "id": "adf86ad5-2df5-548a-b20f-5387d3befe55",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik1-doseogwan-eseo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "oe7ca39b3",
+            "lang": "ko",
+            "text": "를"
+          },
+          {
+            "id": "o8b58c479",
+            "lang": "ko",
+            "text": "에서"
+          },
+          {
+            "id": "o33946c09",
+            "lang": "ko",
+            "text": "이"
+          },
+          {
+            "id": "oa01ebd81",
+            "lang": "ko",
+            "text": "에"
+          }
+        ],
+        "stem": "주말에 도서관___ 공부했어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o560c1bf1",
+      "content_hash": "919d6f0336eafe84b2e1743be2e8d4b51371020c42335ee0bf8d88a3b9d2f625",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“어제” (hôm qua) đòi hỏi thì quá khứ “-았어요” → “만났어요”. “만날 거예요” là tương lai, mâu thuẫn với “어제”."
+      },
+      "id": "c570121c-18e3-58b7-aaec-df62ea3e2637",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik1-eoje-mannasseoyo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o560c1bf1",
+            "lang": "ko",
+            "text": "만났어요"
+          },
+          {
+            "id": "od0fc2f6b",
+            "lang": "ko",
+            "text": "만나고 있어요"
+          },
+          {
+            "id": "o56ac6038",
+            "lang": "ko",
+            "text": "만날 거예요"
+          },
+          {
+            "id": "oce6435e9",
+            "lang": "ko",
+            "text": "만나요"
+          }
+        ],
+        "stem": "어제 친구를 ___.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "off623b98",
+      "content_hash": "896e6ab5f65cb381b844b41fb68961ab43c6a818b4bd1aff97a92ab9bc5c9717",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "Mẫu “muốn làm gì” là “động từ + -고 싶다” → “가고 싶어요”. Các dạng “가서”, “가면” không kết hợp với “싶다”."
+      },
+      "id": "5443d834-d990-56dc-9dbb-5edc770d09df",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik1-gago-sipeoyo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o97b9bcf7",
+            "lang": "ko",
+            "text": "가지"
+          },
+          {
+            "id": "o66d530e2",
+            "lang": "ko",
+            "text": "가서"
+          },
+          {
+            "id": "off623b98",
+            "lang": "ko",
+            "text": "가고"
+          },
+          {
+            "id": "oc696005b",
+            "lang": "ko",
+            "text": "가면"
+          }
+        ],
+        "stem": "저는 내년에 한국에 ___ 싶어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o2ed1ce06",
+      "content_hash": "6c9e9afae57580c10430e221b899897ae73148e7cc296d87fb7f48d9037724a4",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "Với động từ dạng “danh từ + 하다”, “안” đứng trước “하다”: “공부 안 해요”. “안 공부해요” là lỗi thường gặp của người học."
+      },
+      "id": "043e1fe5-6c28-57c0-b661-6b63220dc7ad",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik1-gongbu-an-haeyo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o9fedeb5a",
+            "lang": "ko",
+            "text": "안 공부해요"
+          },
+          {
+            "id": "o2ed1ce06",
+            "lang": "ko",
+            "text": "공부 안 해요"
+          },
+          {
+            "id": "oc3124b39",
+            "lang": "ko",
+            "text": "공부해요 안"
+          },
+          {
+            "id": "o3dd89eff",
+            "lang": "ko",
+            "text": "공부를 안요"
+          }
+        ],
+        "stem": "저는 주말에는 보통 ___. 집에서 쉬어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o67024beb",
+      "content_hash": "d2862830e408ec320d97619cfe68e86c731fbddb03e6e61e8a663e1e87994c6d",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“빵” là tân ngữ của “먹어요” và có phụ âm cuối ㅇ nên dùng “을”. “를” chỉ dùng sau nguyên âm; “이” là trợ từ chủ ngữ."
+      },
+      "id": "88262dee-b779-5e7f-8125-ef669f11c2f4",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik1-ppang-eul",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "oa75523c2",
+            "lang": "ko",
+            "text": "를"
+          },
+          {
+            "id": "ob8d5b130",
+            "lang": "ko",
+            "text": "에"
+          },
+          {
+            "id": "o67024beb",
+            "lang": "ko",
+            "text": "을"
+          },
+          {
+            "id": "o1fe196fd",
+            "lang": "ko",
+            "text": "이"
+          }
+        ],
+        "stem": "저는 매일 아침에 빵___ 먹어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o37a06053",
+      "content_hash": "e5895e95b04cb5a5d34fb37e3a065a3ecf0a965ab892915402d2a2a143f3777f",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "Chủ ngữ là người lớn tuổi (“께서”) nên phải dùng kính ngữ; kính ngữ của “자다” là động từ riêng “주무시다” → “주무세요”. “자세요” là lỗi vì “자다” không chia kính ngữ bằng “-세요”."
+      },
+      "id": "e734fb5f-9db8-55ff-b4ec-175133590499",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik2-halmeoni-jumuseyo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o1ed122e5",
+            "lang": "ko",
+            "text": "자요"
+          },
+          {
+            "id": "odac71c37",
+            "lang": "ko",
+            "text": "자세요"
+          },
+          {
+            "id": "oc7088826",
+            "lang": "ko",
+            "text": "잠이에요"
+          },
+          {
+            "id": "o37a06053",
+            "lang": "ko",
+            "text": "주무세요"
+          }
+        ],
+        "stem": "할머니께서 지금 방에서 ___.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o6cb34073",
+      "content_hash": "fa4b6df968b608bf8b97465339ebf84f200bfc8f32c087232015918836d9b265",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“내일” và “-(으)면” nói về kế hoạch tương lai nên kết câu bằng “-(으)ㄹ 거예요”. “있었어요” là quá khứ; “있어서”, “있으니까” là vĩ tố nối, không kết thúc câu."
+      },
+      "id": "2d36e082-a09e-5b55-8cc0-d94b9dde3983",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik2-isseul-geoyeyo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o42c459c0",
+            "lang": "ko",
+            "text": "있었어요"
+          },
+          {
+            "id": "oef7a5b8d",
+            "lang": "ko",
+            "text": "있어서"
+          },
+          {
+            "id": "o6cb34073",
+            "lang": "ko",
+            "text": "있을 거예요"
+          },
+          {
+            "id": "o5c0a4a7b",
+            "lang": "ko",
+            "text": "있으니까"
+          }
+        ],
+        "stem": "내일 비가 오면 그냥 집에 ___.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob1737aff",
+      "content_hash": "8c618e15f93f68e97b22e5698ac11f55bdd147480e5fde092bf017f10bd5b3eb",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“만들다” có gốc kết thúc bằng ㄹ nên với “-(으)ㄹ 수 있다” chỉ giữ nguyên ㄹ: “만들 수 있어요”. “만들을” là thêm thừa “을”."
+      },
+      "id": "08b64120-3415-5017-b188-7f493c203c41",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik2-mandeul-su-isseoyo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o959f2d67",
+            "lang": "ko",
+            "text": "만들을"
+          },
+          {
+            "id": "ob1737aff",
+            "lang": "ko",
+            "text": "만들"
+          },
+          {
+            "id": "o2b596554",
+            "lang": "ko",
+            "text": "만드는"
+          },
+          {
+            "id": "o605432f0",
+            "lang": "ko",
+            "text": "만든"
+          }
+        ],
+        "stem": "저는 한국 음식을 ___ 수 있어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o3ef87921",
+      "content_hash": "7cd3a633fcb5e0347aa4e4ecafe2030a1cbb5d788236b4b4b2221cc23e21809d",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "Hai vế trái ngược nhau (ngon nhưng đắt) nên dùng “-지만”. “맛있어서” chỉ nguyên nhân, không hợp nghĩa."
+      },
+      "id": "1c5f0a03-d1e0-588c-a5e2-7c2a39a53855",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik2-masitjiman-bissayo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o2433edc2",
+            "lang": "ko",
+            "text": "맛있으면"
+          },
+          {
+            "id": "o3ef87921",
+            "lang": "ko",
+            "text": "맛있지만"
+          },
+          {
+            "id": "oda6ede2c",
+            "lang": "ko",
+            "text": "맛있어서"
+          },
+          {
+            "id": "o6c12dc75",
+            "lang": "ko",
+            "text": "맛있으니까"
+          }
+        ],
+        "stem": "이 식당은 음식은 ___ 너무 비싸요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob0c4bde1",
+      "content_hash": "ba116336998850c2a4cd7b8a65523203c9b558cb7e945ce5ad1f34e68f8125c3",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "Khi vế sau là câu mệnh lệnh/đề nghị (“-세요”), chỉ lý do bằng “-(으)니까”. “-아서/어서” không đi với mệnh lệnh nên “와서” sai."
+      },
+      "id": "a16ebb0e-3567-5527-8b43-4b02e9823a3c",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik2-onikka-useon",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "oed85213b",
+            "lang": "ko",
+            "text": "와서"
+          },
+          {
+            "id": "oe376966c",
+            "lang": "ko",
+            "text": "오고"
+          },
+          {
+            "id": "o9da1d14c",
+            "lang": "ko",
+            "text": "오지만"
+          },
+          {
+            "id": "ob0c4bde1",
+            "lang": "ko",
+            "text": "오니까"
+          }
+        ],
+        "stem": "비가 ___ 우산을 가져가세요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob5eb4b1c",
+      "content_hash": "a8c77375c07b1395585c5c7581e2016e5cc55bad1dccd635b8a4b6bb5ebf6432",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Tường thuật câu trần thuật với tính từ dùng “-다고 하다” → “바쁘다고 했어요”. “-라고” dùng cho danh từ (이다) hoặc mệnh lệnh, “-냐고” cho câu hỏi."
+      },
+      "id": "b9997ebd-9f63-5c49-b21f-48807c8cda69",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik3-bappeudago-haesseoyo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "of457c0a0",
+            "lang": "ko",
+            "text": "자고"
+          },
+          {
+            "id": "o432c692a",
+            "lang": "ko",
+            "text": "라고"
+          },
+          {
+            "id": "obff3a089",
+            "lang": "ko",
+            "text": "냐고"
+          },
+          {
+            "id": "ob5eb4b1c",
+            "lang": "ko",
+            "text": "다고"
+          }
+        ],
+        "stem": "민수 씨가 내일은 바쁘___ 했어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o9334ff7a",
+      "content_hash": "e2d3095e41bb3e0b4ac0194dc52638d6475f3783fee5dcd62b682f7599d07fb0",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“-(으)려고” diễn tả mục đích/ý định: học tiếng Hàn để xin việc. “-(으)려면” (nếu muốn…) đòi vế sau là điều cần làm như “-아야 해요”, không hợp với “배우고 있어요”."
+      },
+      "id": "765e07c9-2b4f-51fd-9526-7b178c586919",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik3-chwijikharyeogo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "o95910a2f",
+            "lang": "ko",
+            "text": "취직하던"
+          },
+          {
+            "id": "o9334ff7a",
+            "lang": "ko",
+            "text": "취직하려고"
+          },
+          {
+            "id": "of564ab84",
+            "lang": "ko",
+            "text": "취직하다가"
+          },
+          {
+            "id": "oc1b0ed2c",
+            "lang": "ko",
+            "text": "취직하려면"
+          }
+        ],
+        "stem": "한국 회사에 ___ 요즘 한국어를 열심히 배우고 있어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o28df4b4a",
+      "content_hash": "d213665c572a32f968e761f1986e770d0f5d9cdbb392f41daff08af7d3878f56",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“-다가” diễn tả đang làm một việc thì xảy ra việc khác: đang đi về nhà thì gặp bạn. “가기 때문에” chỉ nguyên nhân, không hợp nghĩa."
+      },
+      "id": "4e794f0c-a5cf-5c82-8fc4-5ab804d6e955",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik3-gadaga-chingu",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "ocfe3697a",
+            "lang": "ko",
+            "text": "가기 때문에"
+          },
+          {
+            "id": "oe3f99fa8",
+            "lang": "ko",
+            "text": "가는 것 같아서"
+          },
+          {
+            "id": "o28df4b4a",
+            "lang": "ko",
+            "text": "가다가"
+          },
+          {
+            "id": "of8962a24",
+            "lang": "ko",
+            "text": "가도록"
+          }
+        ],
+        "stem": "집에 ___ 길에서 우연히 옛날 친구를 만났어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o12eac28f",
+      "content_hash": "4d1482e17cb3e0ad7301ac28aa0704627d7efda64d9d233a3461fe3dcd2ac3ae",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Phỏng đoán ở hiện tại dùng “-는 것 같다”; “있다/없다” luôn đi với “-는” → “있는 것 같아요”. “있은” là dạng sai."
+      },
+      "id": "e691230b-75f6-598b-88f3-eb0855bcf641",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik3-inneun-geot-gatayo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "o4f3df788",
+            "lang": "ko",
+            "text": "있기"
+          },
+          {
+            "id": "o12eac28f",
+            "lang": "ko",
+            "text": "있는"
+          },
+          {
+            "id": "o6167b45b",
+            "lang": "ko",
+            "text": "있은"
+          },
+          {
+            "id": "o199fa0fb",
+            "lang": "ko",
+            "text": "있어"
+          }
+        ],
+        "stem": "밖이 정말 시끄럽네요. 밖에 사람이 많이 ___ 것 같아요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "oae39d6ee",
+      "content_hash": "baaa853464248e30d85a71fea601bf74945bf0e09c747466abd7afafe4784b60",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“Trong khi làm gì” là “động từ + -는 동안(에)” → “요리하는 동안”. “동안” không đi với “-기” và không kết hợp với “에서”."
+      },
+      "id": "3f63d4a4-3b88-5b3e-91e9-8f973138b2f3",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik3-yorihaneun-dongan",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "ocdb0abb2",
+            "lang": "ko",
+            "text": "요리할 동안에서"
+          },
+          {
+            "id": "oae39d6ee",
+            "lang": "ko",
+            "text": "요리하는 동안"
+          },
+          {
+            "id": "of576e0b3",
+            "lang": "ko",
+            "text": "요리하기 동안"
+          },
+          {
+            "id": "od6957e64",
+            "lang": "ko",
+            "text": "요리하는 동안에서"
+          }
+        ],
+        "stem": "제가 저녁을 ___ 동생은 방을 청소했어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "oecb25cdd",
+      "content_hash": "18f729891c40f4b4cb35acaae34c12c364e08f547309106bcbaa8ed9619a98d5",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Giả định trái với quá khứ (giá mà đã…) dùng “-았/었더라면” đi với “-았을 거예요”. “출발했더니” kể một kết quả có thật, mâu thuẫn với vế sau."
+      },
+      "id": "b4ca31c0-7104-5b7a-b747-caf37b3c7a38",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik4-chulbalhaetdeoramyeon",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "o7939a2fd",
+            "lang": "ko",
+            "text": "출발하도록"
+          },
+          {
+            "id": "oecb25cdd",
+            "lang": "ko",
+            "text": "출발했더라면"
+          },
+          {
+            "id": "o13bc66f0",
+            "lang": "ko",
+            "text": "출발하더라면"
+          },
+          {
+            "id": "o1b737d79",
+            "lang": "ko",
+            "text": "출발했더니"
+          }
+        ],
+        "stem": "조금만 일찍 ___ 기차를 놓치지 않았을 거예요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "oc8a03f32",
+      "content_hash": "cac9e24815264efb6366950ce5b6aa0afc58dcbf978c44be4323ba1991f29ed4",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "“-(으)ㄴ 채로” (giữ nguyên trạng thái đã…) dùng định ngữ quá khứ “-(으)ㄴ” → “켠 채로” (để nguyên đèn bật). “켜는 채로” là sai."
+      },
+      "id": "90461f60-8562-5133-a2ff-96ff3b2ec39b",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik4-kyeon-chaero",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "o67847c5f",
+            "lang": "ko",
+            "text": "켜기"
+          },
+          {
+            "id": "oc8a03f32",
+            "lang": "ko",
+            "text": "켠"
+          },
+          {
+            "id": "o74b36422",
+            "lang": "ko",
+            "text": "켤"
+          },
+          {
+            "id": "o3bf7c8e5",
+            "lang": "ko",
+            "text": "켜는"
+          }
+        ],
+        "stem": "너무 피곤해서 불을 ___ 채로 잠이 들었어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o62369652",
+      "content_hash": "35bfa36bbdac2b055fc1230c15212d66703d65c1c065277e9e288f0f673ee720",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Kể lại điều bản thân trực tiếp trải nghiệm, cảm nhận trong quá khứ dùng “-더라고요”. “-(으)ㄹ게요”, “-(으)ㅂ시다” là hứa hẹn/rủ rê và không dùng với tính từ."
+      },
+      "id": "d9edaa88-8532-5645-be3d-74cbc0973eb7",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik4-masitdeoragoyo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "o62369652",
+            "lang": "ko",
+            "text": "맛있더라고요"
+          },
+          {
+            "id": "ofe693101",
+            "lang": "ko",
+            "text": "맛있으려고요"
+          },
+          {
+            "id": "o0d844fac",
+            "lang": "ko",
+            "text": "맛있을게요"
+          },
+          {
+            "id": "o7e933934",
+            "lang": "ko",
+            "text": "맛있읍시다"
+          }
+        ],
+        "stem": "어제 그 식당에 처음 가 봤는데 음식이 정말 ___.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o119b285c",
+      "content_hash": "17db52dd0b7d5c2015d489c298e51b55d49d4019cfca48573742450cfd4550e7",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Cấu trúc “-기 마련이다” (lẽ đương nhiên sẽ…) cố định dùng “-기” → “나오기 마련이에요”. Các dạng định ngữ “나오는/나올” không kết hợp với “마련이다”."
+      },
+      "id": "9a593bad-5470-5e97-a689-502bb8013d55",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik4-naogi-maryeon",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "o119b285c",
+            "lang": "ko",
+            "text": "나오기"
+          },
+          {
+            "id": "o951622a1",
+            "lang": "ko",
+            "text": "나오는"
+          },
+          {
+            "id": "o4a7e2fc3",
+            "lang": "ko",
+            "text": "나올"
+          },
+          {
+            "id": "ofe32649b",
+            "lang": "ko",
+            "text": "나와서"
+          }
+        ],
+        "stem": "열심히 노력하면 언젠가는 좋은 결과가 ___ 마련이에요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o33dc64e8",
+      "content_hash": "617dbe02f5d76e9d11c7ca62f98811e03a6cecd45629d1aefe1ae1c1d3ef764c",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Cấu trúc “-는 바람에” (vì… nên, dẫn đến kết quả ngoài ý muốn) luôn dùng dạng “-는”, kể cả khi sự việc ở quá khứ. “온 바람에” là lỗi thường gặp."
+      },
+      "id": "509323fa-7fb0-59b3-8644-f118de10aaf0",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik4-oneun-barame",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "o0694afc6",
+            "lang": "ko",
+            "text": "올"
+          },
+          {
+            "id": "o25cd500d",
+            "lang": "ko",
+            "text": "오던"
+          },
+          {
+            "id": "o33dc64e8",
+            "lang": "ko",
+            "text": "오는"
+          },
+          {
+            "id": "ob930070c",
+            "lang": "ko",
+            "text": "온"
+          }
+        ],
+        "stem": "갑자기 비가 ___ 바람에 옷이 다 젖었어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o7bdf37e0",
+      "content_hash": "345a894d6c90ce3572307a395d00661b2ad382ab652c0265ef17792729705d65",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“-기는커녕” nghĩa là “đừng nói đến… mà ngược lại”, thường đi với “오히려”: chẳng những không được khen mà còn bị mắng. “들을지언정” (thà… chứ) không hợp nghĩa."
+      },
+      "id": "b58b4633-c8a0-51ae-ae76-2524f566b299",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik5-deutgineunkeoneong",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "of2e5d175",
+            "lang": "ko",
+            "text": "듣는 한"
+          },
+          {
+            "id": "ofdb29e62",
+            "lang": "ko",
+            "text": "들을지언정"
+          },
+          {
+            "id": "o7bdf37e0",
+            "lang": "ko",
+            "text": "듣기는커녕"
+          },
+          {
+            "id": "oa60aa307",
+            "lang": "ko",
+            "text": "듣는 셈이라"
+          }
+        ],
+        "stem": "열심히 일했는데 칭찬을 ___ 오히려 꾸중만 들었어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "oe06b6a95",
+      "content_hash": "3c8967650db9d8063dbec6887f652f16f7bb925b08f4d52128fbf0b4fe8c1610",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“-는 마당에” nghĩa là “trong tình cảnh (khó khăn) như thế này”, thường đi với câu hỏi tu từ. “셈”, “한”, “리” không kết hợp với “-에” theo nghĩa này."
+      },
+      "id": "8e3b4611-589e-5d9c-a578-69f5c6e3a40f",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik5-haneun-madange",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "o8e10f464",
+            "lang": "ko",
+            "text": "리에"
+          },
+          {
+            "id": "o33908a66",
+            "lang": "ko",
+            "text": "한에"
+          },
+          {
+            "id": "o6c8fcab9",
+            "lang": "ko",
+            "text": "셈에"
+          },
+          {
+            "id": "oe06b6a95",
+            "lang": "ko",
+            "text": "마당에"
+          }
+        ],
+        "stem": "회사가 문을 닫느냐 마느냐 하는 ___ 보너스 이야기를 꺼낼 수 있겠어요?",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o07844fba",
+      "content_hash": "367bb6bf6abfd1453a7246068e5fd86b999079e55425655f3ab31e8ce8bceb19",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“-는 한” nêu điều kiện giới hạn: “chừng nào sức khỏe còn cho phép”. “허락하는 마당에” (trong hoàn cảnh đã…) mang sắc thái tiêu cực, không hợp nghĩa."
+      },
+      "id": "a69d8a4f-e96e-5b33-a252-b41d746db346",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik5-heorakhaneun-han",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "o391cc04b",
+            "lang": "ko",
+            "text": "허락할지언정"
+          },
+          {
+            "id": "o07844fba",
+            "lang": "ko",
+            "text": "허락하는 한"
+          },
+          {
+            "id": "ocb7aa0cb",
+            "lang": "ko",
+            "text": "허락하는 마당에"
+          },
+          {
+            "id": "oa33938db",
+            "lang": "ko",
+            "text": "허락하기는커녕"
+          }
+        ],
+        "stem": "건강이 ___ 은퇴하지 않고 계속 일하고 싶습니다.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o6c591b6f",
+      "content_hash": "3c4d6994100a6ce32f41fc35c75fc66475bb00884288ab09035725dd592e9ba4",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“-(으)ㄹ 리가 없다” diễn tả “không lẽ nào lại…”, phủ định mạnh khả năng. “셈”, “줄”, “뻔” không đi với “-이 없다” theo nghĩa này."
+      },
+      "id": "d1fbbe8b-69a0-58a0-9fc2-8075991ce064",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik5-ijeobeoryeosseul-riga",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "o6c591b6f",
+            "lang": "ko",
+            "text": "리가"
+          },
+          {
+            "id": "o3d9b2ebd",
+            "lang": "ko",
+            "text": "줄이"
+          },
+          {
+            "id": "o9370fb0e",
+            "lang": "ko",
+            "text": "셈이"
+          },
+          {
+            "id": "ofe974493",
+            "lang": "ko",
+            "text": "뻔이"
+          }
+        ],
+        "stem": "그렇게 꼼꼼한 사람이 약속을 잊어버렸을 ___ 없어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "od4b26df8",
+      "content_hash": "15aac97005f2a8113f8222aecd0350370b64de10b9bdf2de868aa8a343a57f3c",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“-는 셈이다” (coi như là, tính ra thì…) dùng định ngữ “-는” với động từ hiện tại → “일하는 셈이에요”. “일하기 셈” là sai cấu trúc."
+      },
+      "id": "05500d97-5a9a-5ace-8255-e1a163a8ea37",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik5-ilhaneun-semieyo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "oec08b20e",
+            "lang": "ko",
+            "text": "일하기"
+          },
+          {
+            "id": "o451923a0",
+            "lang": "ko",
+            "text": "일한다는"
+          },
+          {
+            "id": "oeb8e854f",
+            "lang": "ko",
+            "text": "일하고"
+          },
+          {
+            "id": "od4b26df8",
+            "lang": "ko",
+            "text": "일하는"
+          }
+        ],
+        "stem": "한 달에 두 번만 쉬니까 거의 매일 ___ 셈이에요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o8f610d43",
+      "content_hash": "99e93114f50cf25f0922ce3d100a1b69bb42a1c7df457bbc5c7f226780c3766a",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“-(으)ㄴ들” nghĩa là “dù có… thì cũng (vô ích)”, thường đi với câu hỏi tu từ như “무슨 소용이 있겠어요?”. “후회할세라” (sợ rằng sẽ hối hận) không hợp nghĩa."
+      },
+      "id": "609bea0d-b473-59b7-9e02-a43696d39bd6",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik6-huhoehandeul",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "o8f610d43",
+            "lang": "ko",
+            "text": "후회한들"
+          },
+          {
+            "id": "od8377766",
+            "lang": "ko",
+            "text": "후회할세라"
+          },
+          {
+            "id": "oa2e2690f",
+            "lang": "ko",
+            "text": "후회하노라면"
+          },
+          {
+            "id": "o0f7278e1",
+            "lang": "ko",
+            "text": "후회하건대"
+          }
+        ],
+        "stem": "이미 지나간 일인데 이제 와서 ___ 무슨 소용이 있겠어요?",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o5bca5e46",
+      "content_hash": "bb7da4e0aeef633ad9ebacd7bb40a091509cbf1ca036f78775c75fe5c894a76f",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“-(으)ㄹ세라” diễn tả “sợ rằng/e rằng…” nên làm hành động để tránh: sợ con thức giấc nên bước nhẹ. “깬들” (dù có thức thì…) không hợp nghĩa."
+      },
+      "id": "4a022f12-2da5-5176-9708-1df9b1726c60",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik6-kkaelsera",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "oc1c47d1b",
+            "lang": "ko",
+            "text": "깨건대"
+          },
+          {
+            "id": "o5bca5e46",
+            "lang": "ko",
+            "text": "깰세라"
+          },
+          {
+            "id": "oba4e25a4",
+            "lang": "ko",
+            "text": "깨노라면"
+          },
+          {
+            "id": "o12bc1427",
+            "lang": "ko",
+            "text": "깬들"
+          }
+        ],
+        "stem": "아기가 ___ 엄마는 발소리를 죽이며 조용히 방을 나섰다.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o27aa5a33",
+      "content_hash": "ce964eb35df6209fcf2efada5d16d2fe678f0aacbde392d850344055ad1675f3",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“-건대” đi với động từ nói/nghĩ/nhìn để mở đầu ý kiến của người nói: “theo tôi nghĩ thì…”. “생각한들” (dù có nghĩ thì…) đòi vế sau mang ý phủ định, không hợp."
+      },
+      "id": "07d97332-6346-59f5-8197-cbf8ad5cad89",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik6-saenggakhageondae",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "o5aa34295",
+            "lang": "ko",
+            "text": "생각하노라면"
+          },
+          {
+            "id": "o089518e0",
+            "lang": "ko",
+            "text": "생각할세라"
+          },
+          {
+            "id": "oebb5b858",
+            "lang": "ko",
+            "text": "생각한들"
+          },
+          {
+            "id": "o27aa5a33",
+            "lang": "ko",
+            "text": "생각하건대"
+          }
+        ],
+        "stem": "제가 ___ 이번 사업은 당분간 보류하는 것이 바람직할 듯합니다.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o67357b6b",
+      "content_hash": "e2eba49b9271c0d3bb02b5d7ca90bd6d7d0d748eb5fdb6e1b75cd7b840ca7cdd",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“-노라면” nghĩa là “cứ tiếp tục… thì (sẽ)”. Gốc “살-” kết thúc bằng ㄹ nên ㄹ rụng trước “ㄴ” → “사노라면”; “살노라면” là sai."
+      },
+      "id": "a06d27ee-1c75-5dae-bdea-107fcd728bcd",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik6-sanoramyeon",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "o92981d11",
+            "lang": "ko",
+            "text": "살노라면"
+          },
+          {
+            "id": "o205e0a5e",
+            "lang": "ko",
+            "text": "산들"
+          },
+          {
+            "id": "o78e60689",
+            "lang": "ko",
+            "text": "살세라"
+          },
+          {
+            "id": "o67357b6b",
+            "lang": "ko",
+            "text": "사노라면"
+          }
+        ],
+        "stem": "힘들어도 참고 ___ 언젠가는 좋은 날이 오겠지요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o5199ff89",
+      "content_hash": "d3d9945924805d7f23a835efba27a7b058bbd77ad7d8c53a7bfc256ed7fb5aa4",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“와신상담” (nằm gai nếm mật) chỉ việc chịu đựng gian khổ để chờ ngày thành công, hợp với “끝에 재기에 성공했다”. “우유부단” là thiếu quyết đoán, trái nghĩa với ngữ cảnh."
+      },
+      "id": "85a57c2e-8566-5552-beba-14b508f556d4",
+      "is_demo": true,
+      "item_type": "cloze_choice",
+      "key": "ko:diag:gram-topik6-wasinsangdam",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "o1eb92623",
+            "lang": "ko",
+            "text": "조삼모사한"
+          },
+          {
+            "id": "obe16fc8d",
+            "lang": "ko",
+            "text": "동문서답한"
+          },
+          {
+            "id": "o1e84aa9c",
+            "lang": "ko",
+            "text": "우유부단한"
+          },
+          {
+            "id": "o5199ff89",
+            "lang": "ko",
+            "text": "와신상담한"
+          }
+        ],
+        "stem": "그는 거듭된 실패에도 포기하지 않고 십 년간 ___ 끝에 마침내 재기에 성공했다.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "grammar",
+      "status": "published"
+    },
+    {
+      "answer_key": "o36f75f4d",
+      "content_hash": "24fd5a390a25d0006f14acecac23de45577c6a3668e1626ca30a56e091a882b0",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“동생” là em (em trai hoặc em gái); “아이” chỉ có nghĩa là đứa trẻ. Con của mình thì nói “제 아이” hoặc “제 아들/딸”."
+      },
+      "id": "28f98407-2322-5cc7-9d4a-3b8e85633832",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-hangul-child-sibling",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "ocb1dc218",
+            "lang": "vi",
+            "text": "Bạn của người nói"
+          },
+          {
+            "id": "obb16e6c3",
+            "lang": "vi",
+            "text": "Con của người nói"
+          },
+          {
+            "id": "o36f75f4d",
+            "lang": "vi",
+            "text": "Em của người nói"
+          },
+          {
+            "id": "o23fd7890",
+            "lang": "vi",
+            "text": "Học trò của người nói"
+          }
+        ],
+        "passage": "이 아이는 제 동생이에요.",
+        "stem": "Trong câu “이 아이는 제 동생이에요.”, đứa trẻ là ai của người nói?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o91837844",
+      "content_hash": "1bfdbebc74a6d53a3953451d65d517eff2c35fe80525b286b8882acd26094d15",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“출구” nghĩa là lối ra. Lối vào là “입구”, rất dễ nhầm vì cùng có chữ “구”."
+      },
+      "id": "a2ca4427-25ec-5f43-849d-c717e0627db4",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-hangul-exit-sign",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "o91837844",
+            "lang": "vi",
+            "text": "Lối ra"
+          },
+          {
+            "id": "o076cfa36",
+            "lang": "vi",
+            "text": "Nhà vệ sinh"
+          },
+          {
+            "id": "of826b4a7",
+            "lang": "vi",
+            "text": "Lối vào"
+          },
+          {
+            "id": "ob6b48d3c",
+            "lang": "vi",
+            "text": "Thang máy"
+          }
+        ],
+        "passage": "출구",
+        "stem": "Tấm biển ghi “출구” cho bạn biết điều gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o6a3b0617",
+      "content_hash": "48402a491fa65650384f17d51edaf337e0cb90745872cf4617ee7870eed93f11",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“우유” là sữa. Nước là “물”, cà phê là “커피”, bánh mì là “빵”."
+      },
+      "id": "1aa04c26-d4cd-5ad7-917c-0e3b14740b80",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-hangul-milk-price",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "o41f75380",
+            "lang": "vi",
+            "text": "Bánh mì"
+          },
+          {
+            "id": "o6343fc63",
+            "lang": "vi",
+            "text": "Nước"
+          },
+          {
+            "id": "o65ddbaee",
+            "lang": "vi",
+            "text": "Cà phê"
+          },
+          {
+            "id": "o6a3b0617",
+            "lang": "vi",
+            "text": "Sữa"
+          }
+        ],
+        "passage": "우유 1,000원",
+        "stem": "Nhãn giá “우유 1,000원” là giá của món gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o32851fb4",
+      "content_hash": "530e9d372b4dd5bd7775017471d99b9a548a8cab33a60216cce424a5005fcaf4",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“학생이에요” là “là học sinh”, “이름은 민수예요” là “tên là Minsu”. Giáo viên là “선생님”, không xuất hiện trong câu."
+      },
+      "id": "55008d3c-0935-5047-97c9-70154598ab8d",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-hangul-student-minsu",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "oc299371a",
+            "lang": "vi",
+            "text": "Giáo viên tên Minsu"
+          },
+          {
+            "id": "oddf1b3d0",
+            "lang": "vi",
+            "text": "Học sinh có bạn tên Minsu"
+          },
+          {
+            "id": "o7ddfb9d1",
+            "lang": "vi",
+            "text": "Bác sĩ tên Minsu"
+          },
+          {
+            "id": "o32851fb4",
+            "lang": "vi",
+            "text": "Học sinh tên Minsu"
+          }
+        ],
+        "passage": "저는 학생이에요. 이름은 민수예요.",
+        "stem": "Theo câu “저는 학생이에요. 이름은 민수예요.”, người nói là ai?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o3d9a27df",
+      "content_hash": "685e216edec580c9307f758e02e9ad96d041f98c78c20f59c329c70b606db5ed",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“화장실” nghĩa là nhà vệ sinh. Nhà ăn là “식당”, phòng học là “교실”."
+      },
+      "id": "b1d91b46-1e25-5c3e-9830-b662e622b1ef",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-hangul-toilet-arrow",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "o6c0be241",
+            "lang": "vi",
+            "text": "Phòng học"
+          },
+          {
+            "id": "o2885b520",
+            "lang": "vi",
+            "text": "Nhà ăn"
+          },
+          {
+            "id": "ocbda8013",
+            "lang": "vi",
+            "text": "Lối thoát hiểm"
+          },
+          {
+            "id": "o3d9a27df",
+            "lang": "vi",
+            "text": "Nhà vệ sinh"
+          }
+        ],
+        "passage": "화장실 →",
+        "stem": "Mũi tên trên biển “화장실 →” chỉ đường đến đâu?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "of9685585",
+      "content_hash": "2fa6ac668fdf3d99f5fd07634508f1f39f917c3251d9c5f5649b2cb0eed522e0",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“네 명” là 4 người: bố, mẹ, chị gái và người viết. Bạn đừng quên tính cả “저” (tôi) nên không phải 3 người."
+      },
+      "id": "fcd3769f-495e-547b-94e6-f694ee9e8b01",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik1-family-four",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "of9685585",
+            "lang": "vi",
+            "text": "4 người"
+          },
+          {
+            "id": "o7ef074aa",
+            "lang": "vi",
+            "text": "3 người"
+          },
+          {
+            "id": "of7fbfd3b",
+            "lang": "vi",
+            "text": "5 người"
+          },
+          {
+            "id": "o42d5102e",
+            "lang": "vi",
+            "text": "2 người"
+          }
+        ],
+        "passage": "우리 가족은 네 명이에요. 아버지, 어머니, 언니, 그리고 저예요.",
+        "stem": "Gia đình của người viết đoạn “우리 가족은 네 명이에요…” có mấy người?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "of5f2b2d8",
+      "content_hash": "49aa55b0490f9bc0619506a2bdef7c61451cf0f17ab0588c61f612b02057dbfd",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“내일은 녹차를 마시고 싶어요” nghĩa là ngày mai muốn uống trà xanh. Nước ép (주스) là thứ người viết thường uống, còn cà phê thì không thích."
+      },
+      "id": "b2975ccb-b10b-52de-837d-000619ce0de9",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik1-green-tea-tomorrow",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "of12c7770",
+            "lang": "vi",
+            "text": "Nước ép"
+          },
+          {
+            "id": "of5f2b2d8",
+            "lang": "vi",
+            "text": "Trà xanh"
+          },
+          {
+            "id": "oac81da6f",
+            "lang": "vi",
+            "text": "Cà phê"
+          },
+          {
+            "id": "oabcb94a0",
+            "lang": "vi",
+            "text": "Sữa"
+          }
+        ],
+        "passage": "저는 커피를 안 좋아해요. 그래서 카페에서 주스를 마셔요. 내일은 녹차를 마시고 싶어요.",
+        "stem": "Ngày mai người viết muốn uống gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o4f9e9f0f",
+      "content_hash": "2bf9175a62270d08af3810cb95ba29c1d57efb6146c8e5c9c560d7c734d0acec",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“토요일, 일요일에는 문을 닫아요” nghĩa là thứ Bảy và Chủ nhật đóng cửa. Thứ Hai đến thứ Sáu thư viện mở từ 9 giờ sáng đến 6 giờ chiều."
+      },
+      "id": "46b2df2d-e9fa-5878-8abc-3d8dfd64a76c",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik1-library-hours",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o2fd9cf79",
+            "lang": "vi",
+            "text": "Thứ Hai và thứ Sáu"
+          },
+          {
+            "id": "o5bcc5d3f",
+            "lang": "vi",
+            "text": "Mỗi ngày sau 9 giờ sáng"
+          },
+          {
+            "id": "o4244e34d",
+            "lang": "vi",
+            "text": "Chỉ Chủ nhật"
+          },
+          {
+            "id": "o4f9e9f0f",
+            "lang": "vi",
+            "text": "Thứ Bảy và Chủ nhật"
+          }
+        ],
+        "passage": "도서관 이용 시간: 월요일~금요일 오전 9시~오후 6시. 토요일, 일요일에는 문을 닫아요.",
+        "stem": "Theo thông báo giờ mở cửa thư viện, thư viện đóng cửa vào ngày nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o9120c0fe",
+      "content_hash": "956ca56dc6a476789e4587ed8de56ec8c4189c7b4e7c2262a25ecfb2ed1e7365",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“집에서 한국어를 공부해요” nghĩa là học tiếng Hàn ở nhà. “학교에 안 가요” cho biết thứ Hai người viết không đến trường."
+      },
+      "id": "35761408-45ec-5917-9cc7-fac1fa5fb309",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik1-monday-home-study",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "ofb83400a",
+            "lang": "vi",
+            "text": "Ở thư viện"
+          },
+          {
+            "id": "o9bd0c22c",
+            "lang": "vi",
+            "text": "Ở quán cà phê"
+          },
+          {
+            "id": "o9120c0fe",
+            "lang": "vi",
+            "text": "Ở nhà"
+          },
+          {
+            "id": "oca5f7702",
+            "lang": "vi",
+            "text": "Ở trường"
+          }
+        ],
+        "passage": "오늘은 월요일이에요. 저는 월요일에 학교에 안 가요. 집에서 한국어를 공부해요.",
+        "stem": "Hôm nay (thứ Hai) người viết học tiếng Hàn ở đâu?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o33dd3e51",
+      "content_hash": "ae35ecf3f6fba1a2134314ff63b0c3180b7d67a27e8de564b80c7e4465d0a8fa",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "Câu cuối nói “식당에서 비빔밥을 먹었어요” (đã ăn bibimbap ở nhà hàng). Các món còn lại không được nhắc đến."
+      },
+      "id": "637127ca-3458-53de-aa6a-e0d0f9f7f267",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik1-weekend-movie",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "ob19e34b7",
+            "lang": "ko",
+            "text": "김밥"
+          },
+          {
+            "id": "o33dd3e51",
+            "lang": "ko",
+            "text": "비빔밥"
+          },
+          {
+            "id": "o65e13610",
+            "lang": "ko",
+            "text": "불고기"
+          },
+          {
+            "id": "oda4b478d",
+            "lang": "ko",
+            "text": "라면"
+          }
+        ],
+        "passage": "저는 주말에 친구를 만났어요. 같이 영화를 봤어요. 그리고 식당에서 비빔밥을 먹었어요.",
+        "stem": "Cuối tuần, người viết đã ăn món gì ở nhà hàng cùng bạn?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o9aefb762",
+      "content_hash": "4e0567867328c518449c270479e2810e73db33d52c7e3500a8334ab9a2be3fc2",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "Người viết bị đau đầu (“머리가 아파서”) nên không đi được hôm nay và đề nghị gặp vào thứ Bảy tuần sau. Chính người viết sẽ tự tìm nhà hàng, không hỏi Minji."
+      },
+      "id": "9e7e9508-054c-5dbd-9b09-6f92dda88dd2",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik2-cancel-dinner-message",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "ob51a3dca",
+            "lang": "vi",
+            "text": "Báo cho Minji biết mình phải đi bệnh viện"
+          },
+          {
+            "id": "ofdfea622",
+            "lang": "vi",
+            "text": "Mời Minji đến nhà ăn tối"
+          },
+          {
+            "id": "ofd971c96",
+            "lang": "vi",
+            "text": "Hỏi Minji tên một nhà hàng ngon"
+          },
+          {
+            "id": "o9aefb762",
+            "lang": "vi",
+            "text": "Hủy buổi ăn tối hôm nay và hẹn gặp vào thứ Bảy tuần sau"
+          }
+        ],
+        "passage": "민지 씨, 오늘 저녁에 같이 밥을 먹기로 했지요? 그런데 제가 아침부터 머리가 아파서 오늘은 못 가요. 정말 미안해요. 다음 주 토요일에는 시간이 있으니까 그때 만나면 어때요? 제가 맛있는 식당을 찾아볼게요. 답장 기다릴게요.",
+        "stem": "Mục đích chính của tin nhắn gửi Minji là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o33eb7ddb",
+      "content_hash": "24d7155ea690b078cbf32d61bb085b29070a618b8ac702b3bb323a89d23f38f3",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“계단을 이용하세요” là lời yêu cầu dùng cầu thang bộ vì thang máy đang được kiểm tra. Đồ nặng phải chuyển trước, chậm nhất là thứ Năm (“목요일까지”)."
+      },
+      "id": "d16c0caf-f65c-5b5a-980c-33e9ff40d80b",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik2-elevator-inspection",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "oa3e60eea",
+            "lang": "vi",
+            "text": "Ở yên trong nhà"
+          },
+          {
+            "id": "od856cba3",
+            "lang": "vi",
+            "text": "Chuyển đồ nặng"
+          },
+          {
+            "id": "o3e2077cf",
+            "lang": "vi",
+            "text": "Kiểm tra thang máy"
+          },
+          {
+            "id": "o33eb7ddb",
+            "lang": "vi",
+            "text": "Đi cầu thang bộ"
+          }
+        ],
+        "passage": "아파트 주민 여러분, 이번 주 금요일 오전 10시부터 오후 2시까지 엘리베이터 점검이 있습니다. 이 시간에는 엘리베이터를 사용할 수 없으니까 계단을 이용하세요. 무거운 물건이 있으면 목요일까지 옮기세요. 불편을 드려서 죄송합니다.",
+        "stem": "Theo thông báo của chung cư, từ 10 giờ sáng đến 2 giờ chiều thứ Sáu cư dân nên làm gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o89251077",
+      "content_hash": "b2fed3b9d1e55fa0bbbc0ed4bf14ad73b151f3d76d158bdf73f8df4a0ef1b0a6",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“지금은 회사까지 혼자 갈 수 있어요” nghĩa là bây giờ có thể tự đi đến công ty. Việc đi nhầm tàu chỉ xảy ra lúc đầu (“처음에는”), công viên ở gần nhà, còn bạn ở quê sẽ đến vào tháng sau."
+      },
+      "id": "212fb7f1-efce-5084-8355-e10a47eeb7de",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik2-moved-to-seoul",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o046d54d1",
+            "lang": "vi",
+            "text": "Đi dạo ở công viên gần công ty mỗi tối"
+          },
+          {
+            "id": "o89251077",
+            "lang": "vi",
+            "text": "Có thể tự đi đến công ty một mình"
+          },
+          {
+            "id": "obe76c53e",
+            "lang": "vi",
+            "text": "Tháng trước có bạn ở quê đến chơi"
+          },
+          {
+            "id": "o09e72570",
+            "lang": "vi",
+            "text": "Vẫn thường xuyên đi nhầm tàu điện ngầm"
+          }
+        ],
+        "passage": "저는 지난달에 서울로 이사했어요. 처음에는 길을 잘 몰라서 지하철을 자주 잘못 탔어요. 그런데 지금은 회사까지 혼자 갈 수 있어요. 집 근처에 큰 공원이 있는데 저녁마다 거기에서 산책해요. 다음 달에는 고향 친구가 놀러 올 거예요.",
+        "stem": "Theo đoạn văn về việc chuyển đến Seoul, hiện nay người viết thế nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o5e4d9406",
+      "content_hash": "dba37ed208d89c830bf8cb3b4ccfbc95bd19d2cc9dbe53da74a3141884d74af6",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“비가 오면 집에서 요가를 하고” nghĩa là nếu trời mưa thì tập yoga ở nhà. Đạp xe là khi trời đẹp, còn đọc sách là sở thích của người viết chứ không phải của em."
+      },
+      "id": "cd00cdd3-8fee-57e7-bc00-a9b5e06e5172",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik2-sister-yoga-rain",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "oe6e11d5d",
+            "lang": "vi",
+            "text": "Đọc sách ở nhà"
+          },
+          {
+            "id": "o5e4d9406",
+            "lang": "vi",
+            "text": "Tập yoga ở nhà"
+          },
+          {
+            "id": "o01fbe2fe",
+            "lang": "vi",
+            "text": "Ra ngoài chơi với bạn"
+          },
+          {
+            "id": "oa4af69e8",
+            "lang": "vi",
+            "text": "Đạp xe ở công viên"
+          }
+        ],
+        "passage": "제 동생은 운동을 아주 좋아해요. 비가 오면 집에서 요가를 하고, 날씨가 좋으면 공원에서 자전거를 타요. 하지만 저는 운동보다 책 읽기를 더 좋아해요. 그래서 주말에 동생은 밖에 나가지만 저는 보통 집에 있어요.",
+        "stem": "Khi trời mưa, em của người viết làm gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o76677850",
+      "content_hash": "8f7cbf455e23d1b30cda5c1c428e66a1dc198a17ed309190c895d1f5f01ae1cb",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "Lớp học vào thứ Ba và thứ Năm (“화요일과 목요일”) lúc 7 giờ tối, tức hai buổi mỗi tuần. Học phí 50.000 won là cho một tháng (“한 달에”), và đăng ký qua trang web."
+      },
+      "id": "c65f0bc7-8b64-5e84-b5ce-d31b45777628",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik2-speaking-class-ad",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o881c6f06",
+            "lang": "vi",
+            "text": "Lớp học vào buổi sáng"
+          },
+          {
+            "id": "o85f938aa",
+            "lang": "vi",
+            "text": "Phải đến văn phòng trường để đăng ký"
+          },
+          {
+            "id": "o76677850",
+            "lang": "vi",
+            "text": "Mỗi tuần có hai buổi học"
+          },
+          {
+            "id": "o88b02e81",
+            "lang": "vi",
+            "text": "Học phí là 50.000 won mỗi buổi"
+          }
+        ],
+        "passage": "한국어 말하기 반 학생을 모집합니다. 수업은 매주 화요일과 목요일 저녁 7시에 있습니다. 한국 사람과 이야기하고 싶지만 말하기가 어려운 분은 신청하세요. 수업료는 한 달에 5만 원입니다. 신청은 학교 홈페이지에서 할 수 있습니다.",
+        "stem": "Điều nào đúng với thông báo tuyển học viên lớp nói tiếng Hàn?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "ocf7a89f6",
+      "content_hash": "e5b267ce6770647c86384e6303c4581a8ea9faa307d38387b0a820f92dfa33b5",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Đuôi “-도록” chỉ mục đích: “서로 편하게 이야기할 수 있도록” là để mọi người có thể thoải mái trò chuyện. Năm cuốn là số sách tối đa mỗi người được đổi, không liên quan đến trà bánh."
+      },
+      "id": "c1ca681a-4b2b-523a-8c70-e3a38bd4b7bf",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik3-book-swap-event",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "ocf7a89f6",
+            "lang": "vi",
+            "text": "Để cư dân có thể thoải mái trò chuyện với nhau"
+          },
+          {
+            "id": "o3010d047",
+            "lang": "vi",
+            "text": "Để bán thêm đồ ăn cho cư dân"
+          },
+          {
+            "id": "o47e7212c",
+            "lang": "vi",
+            "text": "Để cảm ơn người mang đến hơn năm cuốn sách"
+          },
+          {
+            "id": "o87696bd9",
+            "lang": "vi",
+            "text": "Để cư dân đọc sách lâu hơn ở thư viện"
+          }
+        ],
+        "passage": "다음 달 우리 동네 도서관에서 '책 바꾸기 행사'가 열립니다. 다 읽은 책을 가져오시면 다른 사람이 가져온 책과 바꿀 수 있습니다. 한 사람이 최대 다섯 권까지 바꿀 수 있습니다. 주민들이 책을 나누면서 서로 편하게 이야기할 수 있도록 행사장에 차와 간식도 준비했습니다.",
+        "stem": "Trong sự kiện đổi sách ở thư viện, vì sao ban tổ chức chuẩn bị trà và đồ ăn nhẹ?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o0e315123",
+      "content_hash": "a94beaf74af201effc275caccce3c6e5c68aa4d2c331d61300cb26162378836e",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“집에 오다가” (đang trên đường về nhà thì…) cho biết người viết nhặt ví lúc về nhà. Người viết không liên lạc được với chủ ví, và lời cảm ơn chỉ được nhắn qua đồn cảnh sát."
+      },
+      "id": "9385d37f-c856-555e-b482-9854b4192015",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik3-found-wallet",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "o4c0e3f1b",
+            "lang": "vi",
+            "text": "Trong ví không có giấy tờ tùy thân"
+          },
+          {
+            "id": "oa440d3f3",
+            "lang": "vi",
+            "text": "Người viết đã gọi điện trực tiếp cho chủ ví"
+          },
+          {
+            "id": "od6ab38ba",
+            "lang": "vi",
+            "text": "Chủ ví đến tận nhà người viết để cảm ơn"
+          },
+          {
+            "id": "o0e315123",
+            "lang": "vi",
+            "text": "Người viết nhặt được ví trên đường về nhà"
+          }
+        ],
+        "passage": "어제 집에 오다가 길에서 지갑을 주웠어요. 지갑 안에 신분증이 있었지만 주인에게 직접 연락할 방법이 없었어요. 그래서 가까운 경찰서에 가져다주었어요. 오늘 아침에 경찰서에서 전화가 왔는데, 주인이 지갑을 찾아갔다고 했어요. 주인이 저에게 고맙다는 말을 꼭 전해 달라고 했대요.",
+        "stem": "Điều nào đúng với câu chuyện về chiếc ví nhặt được?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "oe9584e66",
+      "content_hash": "905d3d40fa289747324c4d6f980c7769cf4fcd17d5dc1d8eae8edf3406ca82d0",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Câu “퇴근 후에는 피곤하거나 약속이 있어서 운동할 시간이 없기 때문이다” nêu rõ lý do. Họ vẫn ăn trưa, chỉ ăn đơn giản (“간단하게 먹고”), nên không phải bỏ bữa."
+      },
+      "id": "ffd1ba6a-82e8-507b-8d49-cebf91ca5d33",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik3-lunchtime-exercise",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "o4e3a11af",
+            "lang": "vi",
+            "text": "Vì phòng tập miễn phí vào buổi trưa"
+          },
+          {
+            "id": "o8ac95cc0",
+            "lang": "vi",
+            "text": "Vì công ty bắt buộc nhân viên tập thể dục"
+          },
+          {
+            "id": "oc4e463aa",
+            "lang": "vi",
+            "text": "Vì họ muốn bỏ bữa trưa để giảm cân"
+          },
+          {
+            "id": "oe9584e66",
+            "lang": "vi",
+            "text": "Vì sau giờ làm họ mệt hoặc có hẹn nên không có thời gian"
+          }
+        ],
+        "passage": "요즘 회사원들 사이에서 점심시간에 운동하는 사람이 늘고 있다고 한다. 퇴근 후에는 피곤하거나 약속이 있어서 운동할 시간이 없기 때문이다. 이들은 점심을 간단하게 먹고 회사 근처 헬스장에서 30분 정도 운동한다. 짧은 시간이지만 운동을 하면 오후에 덜 졸리고 일에 더 집중할 수 있다고 한다.",
+        "stem": "Theo bài, vì sao nhiều nhân viên văn phòng tập thể dục vào giờ nghỉ trưa?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "of8df7f29",
+      "content_hash": "a2c725e51afb5db26717deee44f17b21473c7e95dbbe9ece3800f29d7ef5dad4",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“출퇴근하는 지하철 안에서 단어를 외워요” là học thuộc từ trên tàu điện ngầm lúc đi làm và tan làm. “일하는 동안에는 공부할 시간이 없어서” cho biết trong giờ làm thì không có thời gian học."
+      },
+      "id": "885a0bdd-2a94-5a2e-916f-a0606e11a4a6",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik3-subway-vocabulary",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "of8df7f29",
+            "lang": "vi",
+            "text": "Trên tàu điện ngầm khi đi làm và về nhà"
+          },
+          {
+            "id": "o1f88977b",
+            "lang": "vi",
+            "text": "Trong giờ làm việc ở công ty"
+          },
+          {
+            "id": "of0a93b21",
+            "lang": "vi",
+            "text": "Ở trung tâm ngoại ngữ vào cuối tuần"
+          },
+          {
+            "id": "oe1d8f05f",
+            "lang": "vi",
+            "text": "Ở nhà vào buổi tối"
+          }
+        ],
+        "passage": "저는 한국 회사에 취직하려고 한국어를 배우기 시작했어요. 일하는 동안에는 공부할 시간이 없어서 출퇴근하는 지하철 안에서 단어를 외워요. 처음에는 힘들었지만 지금은 습관이 돼서 하루에 단어를 스무 개씩 외워요.",
+        "stem": "Người viết học từ vựng tiếng Hàn chủ yếu vào lúc nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "of41e64b5",
+      "content_hash": "e7f516a1ade8aa68cd8778a4c2cd435c488529aabf2cc644caf9da381c2afdea",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“퇴근할 때 같이 차라도 한잔하자고 해야겠어요” nghĩa là định rủ Sujin uống trà lúc tan làm. Giờ ăn trưa đã qua và Sujin hầu như không ăn."
+      },
+      "id": "6188a9e3-3fe8-595e-aad8-1e8b4ad68162",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik3-sujin-worried",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "o089707f6",
+            "lang": "vi",
+            "text": "Gọi điện cho Sujin vào buổi tối"
+          },
+          {
+            "id": "of41e64b5",
+            "lang": "vi",
+            "text": "Rủ Sujin đi uống trà khi tan làm"
+          },
+          {
+            "id": "o043e70e1",
+            "lang": "vi",
+            "text": "Hỏi chuyện Sujin trong giờ ăn trưa"
+          },
+          {
+            "id": "o1a4b9dce",
+            "lang": "vi",
+            "text": "Để Sujin ở một mình cho yên tĩnh"
+          }
+        ],
+        "passage": "수진 씨가 오늘 하루 종일 말이 없었어요. 점심도 거의 안 먹고 창밖만 보고 있었어요. 아까는 휴대폰을 보다가 갑자기 눈물을 흘렸어요. 무슨 일이 있는 것 같아서 걱정이 돼요. 퇴근할 때 같이 차라도 한잔하자고 해야겠어요.",
+        "stem": "Người viết định làm gì cho Sujin?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "od444dbde",
+      "content_hash": "1a8db58d18b667c05673341df37646fdaa1a94d0a2de1c90faa4208c49e1992a",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Câu then chốt là “문제는 실수 자체가 아니라 실수를 대하는 태도이다”. “-기 마련이다” cho thấy mắc lỗi là điều tất yếu, nên phương án “tuyệt đối không được mắc lỗi” trái với ý bài."
+      },
+      "id": "9de0c813-7a50-5e8d-8393-f502c8fe3521",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik4-attitude-to-mistakes",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "oa1220645",
+            "lang": "vi",
+            "text": "Nên che giấu những lỗi nhỏ để giữ không khí tốt"
+          },
+          {
+            "id": "od444dbde",
+            "lang": "vi",
+            "text": "Điều quan trọng là thái độ đối với sai lầm chứ không phải bản thân sai lầm"
+          },
+          {
+            "id": "ob5a844dc",
+            "lang": "vi",
+            "text": "Nhân viên mới tuyệt đối không được mắc lỗi"
+          },
+          {
+            "id": "oa71fc5ef",
+            "lang": "vi",
+            "text": "Doanh nghiệp nên phạt nặng nhân viên mắc lỗi"
+          }
+        ],
+        "passage": "새로운 환경에 처음 들어가면 누구나 실수를 하기 마련이다. 문제는 실수 자체가 아니라 실수를 대하는 태도이다. 실수를 감추려고 하면 같은 실수를 반복하기 쉽지만, 실수를 인정하고 원인을 분석하면 오히려 성장의 기회로 삼을 수 있다. 실제로 많은 기업에서는 신입 사원이 실수를 솔직하게 보고할 수 있는 분위기를 만들기 위해 노력하고 있다. 실수를 두려워하는 조직에서는 새로운 시도도 나오기 어렵기 때문이다.",
+        "stem": "Ý chính của đoạn văn bàn về việc mắc lỗi ở môi trường mới là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o8fee4b90",
+      "content_hash": "66618032e5988b474581c7ed82a563ec01b99a9368277eab348a9009fbc644ea",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Câu cuối “계획대로 되지 않은 여행이었지만 오히려 가장 기억에 남는 여행이 됐어요” thể hiện cảm nghĩ tích cực. Người viết khen con đường tường đá đẹp và chủ quán còn cho thêm món ăn kèm, nên không hề thất vọng."
+      },
+      "id": "c60b99b8-4152-59b6-84cc-11f4e105e53c",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik4-jeju-unplanned-trip",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "ocd8e53ae",
+            "lang": "vi",
+            "text": "Rất tiếc vì chuyến đi thuyền bị hủy"
+          },
+          {
+            "id": "oe2657d83",
+            "lang": "vi",
+            "text": "Thất vọng vì ngôi làng không nhộn nhịp như khu du lịch"
+          },
+          {
+            "id": "o22bb0991",
+            "lang": "vi",
+            "text": "Không vui vì chủ quán ăn đối xử lạnh nhạt"
+          },
+          {
+            "id": "o8fee4b90",
+            "lang": "vi",
+            "text": "Dù không theo kế hoạch nhưng lại là chuyến đi đáng nhớ nhất"
+          }
+        ],
+        "passage": "얼마 전 제주도에 다녀왔는데 생각보다 바람이 많이 불더라고요. 그래서 계획했던 배 여행은 취소됐지만, 대신 현지 사람이 추천해 준 작은 마을을 걸어 다녔어요. 관광지처럼 화려하지는 않았지만 돌담길이 정말 아름답더라고요. 마을 식당 주인은 우리가 관광객인 걸 알고 반찬을 더 챙겨 주시기도 했어요. 계획대로 되지 않은 여행이었지만 오히려 가장 기억에 남는 여행이 됐어요.",
+        "stem": "Người viết cảm thấy thế nào về chuyến đi Jeju?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o8d64feb6",
+      "content_hash": "15ab00cf5222ddfc13c8256f12789fde58a0d3d8df4bd1ceff3b0e1a53cd0f3c",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Cấu trúc “-았/었더라면” diễn tả sự tiếc nuối: “알람을 한 번만 더 확인했더라면” (giá mà kiểm tra báo thức thêm một lần). Người viết có chuẩn bị câu trả lời (“준비한 답변”), chỉ là vì căng thẳng nên trả lời không tốt."
+      },
+      "id": "e226cc98-c28c-5f38-9609-de94378e92ef",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik4-late-interview-regret",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "o46d9f450",
+            "lang": "vi",
+            "text": "Nói với người phỏng vấn rằng mình không sao"
+          },
+          {
+            "id": "o8d64feb6",
+            "lang": "vi",
+            "text": "Không kiểm tra lại báo thức vào tối hôm trước"
+          },
+          {
+            "id": "oed4e6a38",
+            "lang": "vi",
+            "text": "Đi taxi thay vì đi tàu điện ngầm"
+          },
+          {
+            "id": "o35464774",
+            "lang": "vi",
+            "text": "Không chuẩn bị câu trả lời cho buổi phỏng vấn"
+          }
+        ],
+        "passage": "지난주 중요한 면접이 있던 날, 알람이 울리지 않는 바람에 늦잠을 자고 말았다. 서둘러 택시를 탔지만 길까지 막혀 결국 10분이나 늦게 도착했다. 면접관들은 괜찮다고 했지만 나는 긴장한 탓에 준비한 답변을 제대로 하지 못했다. 전날 밤 알람을 한 번만 더 확인했더라면 이런 일은 없었을 것이다. 그날 이후 나는 중요한 일이 있는 날에는 알람을 두 개씩 맞춰 둔다.",
+        "stem": "Người viết hối tiếc nhất về điều gì trong ngày phỏng vấn?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o99c42120",
+      "content_hash": "ee632ed54c9de181b3f8ce45ec2b6108ded5483621db20265618bd36674e6063",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Bài nói hộ một người tăng làm thay đổi cách tiêu dùng, nên hàng đóng gói nhỏ (“소포장 상품”) được ưa chuộng. Bài không nói siêu thị ngừng bán hàng dung lượng lớn, mà chỉ nói họ bắt đầu bán thêm rau quả cỡ nhỏ."
+      },
+      "id": "b1d88a93-061e-5fb2-af84-3a210ec85889",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik4-single-households-packaging",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "o99c42120",
+            "lang": "vi",
+            "text": "Hộ một người tăng nhanh khiến hàng đóng gói nhỏ được ưa chuộng"
+          },
+          {
+            "id": "o8690a7b9",
+            "lang": "vi",
+            "text": "Mua sản phẩm dung lượng lớn luôn tiết kiệm hơn"
+          },
+          {
+            "id": "o35566f80",
+            "lang": "vi",
+            "text": "Người sống một mình chủ yếu mua đồ ăn ở cửa hàng tiện lợi"
+          },
+          {
+            "id": "o2c629835",
+            "lang": "vi",
+            "text": "Siêu thị lớn đã ngừng bán sản phẩm dung lượng lớn"
+          }
+        ],
+        "passage": "최근 혼자 사는 1인 가구가 빠르게 늘면서 소비 방식도 달라지고 있다. 예전에는 대용량 제품을 사는 것이 경제적이라고 여겼지만, 혼자 사는 사람들은 음식을 다 먹지 못하고 버리는 경우가 많았다. 이 때문에 최근에는 적은 양을 포장한 소포장 상품이 인기를 끌고 있다. 편의점뿐만 아니라 대형 마트에서도 한 번에 먹기 좋은 크기의 채소와 과일을 판매하기 시작했다. 전문가들은 이러한 변화가 앞으로 더욱 확대될 것이라고 전망한다.",
+        "stem": "Nội dung chính của bài viết về hộ gia đình một người là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o544dae46",
+      "content_hash": "3c23cb92b364c30dca913b23d1807a186ddf54efcbed4f6236dc967da987e95c",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "“빛이 잠을 부르는 호르몬의 분비를 방해하는 탓에” nêu nguyên nhân: ánh sáng cản trở hormone gây ngủ. Âm thanh thông báo hay nội dung căng thẳng không hề được nhắc đến."
+      },
+      "id": "e0f6a23f-a55c-5043-a093-eed79e39b50a",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik4-smartphone-sleep",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "o36fc97ab",
+            "lang": "vi",
+            "text": "Vì dùng điện thoại làm giảm thời gian đọc sách"
+          },
+          {
+            "id": "o22637d30",
+            "lang": "vi",
+            "text": "Vì âm thanh thông báo làm người dùng tỉnh giấc"
+          },
+          {
+            "id": "o544dae46",
+            "lang": "vi",
+            "text": "Vì ánh sáng màn hình cản trở việc tiết hormone gây buồn ngủ"
+          },
+          {
+            "id": "o8a5abadf",
+            "lang": "vi",
+            "text": "Vì nội dung trên mạng gây căng thẳng"
+          }
+        ],
+        "passage": "잠들기 직전까지 스마트폰을 보는 습관은 수면의 질을 떨어뜨린다. 화면에서 나오는 빛이 잠을 부르는 호르몬의 분비를 방해하는 탓에 잠드는 시간이 늦어지기 때문이다. 특히 불을 끈 채로 어두운 방에서 화면을 보면 눈의 피로도 커진다. 전문가들은 잠자리에 들기 최소 한 시간 전에는 스마트폰을 멀리 두고, 대신 가벼운 독서나 스트레칭을 하라고 조언한다.",
+        "stem": "Theo bài, vì sao xem điện thoại ngay trước khi ngủ khiến ta ngủ muộn hơn?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o1692c589",
+      "content_hash": "8e67dcae6c0ed62e507c2aa5d56167d64af91b1df86e8565dec2b6ea5834245e",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“-는 마당에” (trong hoàn cảnh đang…) và “공감할 리가 없다” (không đời nào đồng cảm) thể hiện sự phê phán; câu cuối yêu cầu lãnh đạo “솔선수범” (làm gương trước). Người viết không trách nhân viên."
+      },
+      "id": "2134dbf7-080d-5fcb-9dec-c45823e3b4dd",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik5-executive-bonus-critique",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "o6add699f",
+            "lang": "vi",
+            "text": "Đề nghị tăng tiền thưởng cho nhân viên"
+          },
+          {
+            "id": "o1692c589",
+            "lang": "vi",
+            "text": "Phê phán và yêu cầu ban lãnh đạo phải làm gương trước"
+          },
+          {
+            "id": "o7b31da97",
+            "lang": "vi",
+            "text": "Cho rằng nhân viên thiếu tinh thần hợp tác"
+          },
+          {
+            "id": "oef1aeccc",
+            "lang": "vi",
+            "text": "Ủng hộ việc đóng băng lương để vượt qua khủng hoảng"
+          }
+        ],
+        "passage": "회사 측은 경영 악화를 이유로 직원들에게 임금 동결을 요청했다. 그러나 같은 시기에 경영진의 성과급은 오히려 인상된 것으로 드러났다. 직원들에게 고통 분담을 요구하는 마당에 경영진이 자기 몫부터 챙긴다면 직원들이 회사의 호소에 공감할 리가 없다. 위기를 극복하려면 무엇보다 경영진이 먼저 솔선수범하는 모습을 보여야 한다.",
+        "stem": "Thái độ của người viết đối với ban lãnh đạo công ty là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o9230170d",
+      "content_hash": "cc90ce7f56b72b55877cd4f681e20884833ea0ee32d8631ef0a321c714134d84",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“-(으)ㄹ지언정” nghĩa là “thà… chứ không…”: “가난하게 살지언정 의롭지 않은 재물은 탐하지 않는 것”. Bài nói việc học “출세의 수단이기 이전에” là để tu dưỡng nhân cách, nên phương án thăng quan tiến chức là sai."
+      },
+      "id": "0d69318c-531c-5080-b919-4d9ed5f53bec",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik5-joseon-seonbi-integrity",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "ob2c46c97",
+            "lang": "vi",
+            "text": "Bắt buộc mọi nho sĩ phải làm quan"
+          },
+          {
+            "id": "od23d99f4",
+            "lang": "vi",
+            "text": "Học tập chủ yếu để thăng quan tiến chức"
+          },
+          {
+            "id": "oe480b776",
+            "lang": "vi",
+            "text": "Tích lũy của cải để giúp đỡ dân nghèo"
+          },
+          {
+            "id": "o9230170d",
+            "lang": "vi",
+            "text": "Thà sống nghèo còn hơn tham của cải bất chính"
+          }
+        ],
+        "passage": "조선 시대의 선비들은 가난하게 살지언정 의롭지 않은 재물은 탐하지 않는 것을 미덕으로 여겼다. 그들에게 학문은 출세의 수단이기 이전에 인격을 수양하는 과정이었다. 물론 모든 선비가 이러한 이상을 실천한 것은 아니지만, 청렴을 중시하는 이 같은 가치관은 오늘날까지도 공직자에게 요구되는 덕목으로 이어지고 있다.",
+        "stem": "Theo bài, các 선비 (nho sĩ) thời Joseon coi điều gì là mỹ đức?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o28a92152",
+      "content_hash": "d69e3b8eb2756310548c967fd7521806c211d98e3ce5a7b301386d2ef21a6768",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“간과하다” (看過) nghĩa là xem nhẹ, bỏ qua không chú ý. Ngữ cảnh: nếu bỏ qua xu hướng chỉ tin thông tin hợp ý mình thì khó ngăn tin giả lan rộng; “kiểm chứng” lại là việc bài khuyên nên làm."
+      },
+      "id": "b6354d79-4e3e-5392-b4bd-6b961dbde6c2",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik5-misinformation-overlook",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "obd4dc761",
+            "lang": "vi",
+            "text": "Nếu chấp nhận hoàn toàn"
+          },
+          {
+            "id": "o9f16d600",
+            "lang": "vi",
+            "text": "Nếu phóng đại"
+          },
+          {
+            "id": "o2bd784c8",
+            "lang": "vi",
+            "text": "Nếu kiểm chứng kỹ"
+          },
+          {
+            "id": "o28a92152",
+            "lang": "vi",
+            "text": "Nếu bỏ qua, không lưu tâm"
+          }
+        ],
+        "passage": "디지털 기술의 발달로 누구나 손쉽게 정보를 생산하고 공유할 수 있게 되었다. 그러나 정보의 양이 폭증하면서 출처가 불분명한 정보가 사실처럼 유통되는 부작용도 커지고 있다. 사람들은 자신이 이미 믿고 있는 내용과 일치하는 정보만 선택적으로 받아들이는 경향이 있는데, 이 점을 간과하면 허위 정보의 확산을 막기 어렵다. 따라서 정보를 비판적으로 읽고 검증하는 능력을 기르는 교육이 시급하다.",
+        "stem": "Từ “간과하면” trong bài viết về thông tin sai lệch gần nghĩa nhất với cách diễn đạt nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "oafc6fe55",
+      "content_hash": "7523e6a12658b713897aec7dfbecd9c0f36223410e939048b302c8fcbc94eb8f",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "Bài nói “낮 동안 흡수한 열을 밤에 천천히 방출하고”, khớp với phương án đúng. Cây xanh “그늘을 만들 뿐만 아니라” còn làm bay hơi nước để hạ nhiệt, nên “chỉ tạo bóng râm” là sai."
+      },
+      "id": "0a795654-c54e-564b-a48d-6c00e3ea20a3",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik5-urban-heat-island",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "oafc6fe55",
+            "lang": "vi",
+            "text": "Nhựa đường và bê tông tỏa ra vào ban đêm lượng nhiệt đã hấp thụ ban ngày"
+          },
+          {
+            "id": "o0699e88f",
+            "lang": "vi",
+            "text": "Nhờ nhà cửa dày đặc nên gió lưu thông tốt hơn"
+          },
+          {
+            "id": "ob8d23b04",
+            "lang": "vi",
+            "text": "Nhiệt độ thành phố thường thấp hơn vùng xung quanh"
+          },
+          {
+            "id": "o390f17d9",
+            "lang": "vi",
+            "text": "Cây xanh chỉ có tác dụng tạo bóng râm"
+          }
+        ],
+        "passage": "도시의 기온이 주변 지역보다 높게 나타나는 현상을 '열섬 현상'이라고 한다. 아스팔트와 콘크리트는 낮 동안 흡수한 열을 밤에 천천히 방출하고, 건물이 밀집해 있어 바람의 흐름도 원활하지 않기 때문이다. 이를 완화하기 위해 일부 도시에서는 건물 옥상에 정원을 조성하거나 도로에 물을 뿌리는 방안을 시행하고 있다. 녹지는 그늘을 만들 뿐만 아니라 수분을 증발시키며 주변 온도를 낮추는 역할을 한다.",
+        "stem": "Câu nào phù hợp với nội dung bài viết về hiện tượng “đảo nhiệt” (열섬 현상)?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o75fa013b",
+      "content_hash": "71d16c5ad7250a5fb1970b670807eef0de0f826ccf2da82d7e69a047e04637db",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "Câu cuối nói thành bại “달려 있는 셈이다” (rốt cuộc phụ thuộc vào) việc tạo ra việc làm ổn định, lâu dài. Bài phê phán chính hợp đồng ngắn hạn: “-기는커녕” cho thấy bất ổn không những không giảm mà còn tăng."
+      },
+      "id": "0132b03e-c2a8-57fd-9baf-db781c429fb8",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik5-youth-employment-policy",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "o10c0b6b1",
+            "lang": "vi",
+            "text": "Tăng mức trợ cấp cho doanh nghiệp"
+          },
+          {
+            "id": "o75fa013b",
+            "lang": "vi",
+            "text": "Tạo ra bao nhiêu việc làm ổn định giúp thanh niên tích lũy kinh nghiệm lâu dài"
+          },
+          {
+            "id": "o340867d7",
+            "lang": "vi",
+            "text": "Bãi bỏ toàn bộ các chính sách hỗ trợ hiện có"
+          },
+          {
+            "id": "o4502969e",
+            "lang": "vi",
+            "text": "Tăng số lượng hợp đồng ngắn hạn càng nhiều càng tốt"
+          }
+        ],
+        "passage": "정부가 청년 고용을 늘리기 위해 다양한 지원책을 내놓았지만 현장의 반응은 냉담하다. 지원금을 받는 기업 중 상당수가 단기 계약직만 채용하는 탓에 청년들의 고용 불안은 해소되기는커녕 오히려 심화되었다는 지적이 나온다. 전문가들은 일자리의 양보다 질에 초점을 맞추지 않는 한 이러한 악순환은 계속될 것이라고 경고한다. 결국 정책의 성패는 청년들이 장기적으로 경력을 쌓을 수 있는 안정적인 일자리를 얼마나 만들어 내느냐에 달려 있는 셈이다.",
+        "stem": "Theo bài viết về chính sách việc làm cho thanh niên, điều gì quyết định sự thành bại của chính sách?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "oe0ab3990",
+      "content_hash": "fb3379a2df8f8ccc9b5a56ec5a0d4ee0379779eeb3acef29f4d02b53803a5d1f",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "Câu cuối nói rõ “그 기준에 대한 합의가 부재하다는 점이 문제의 핵심이다”. “-다손 치더라도” chỉ là giả định nhượng bộ (cứ cho là bắt chước hoàn hảo đi nữa), không phải khẳng định AI chưa bắt chước được."
+      },
+      "id": "2395ddc4-0554-52f6-b8f3-2e590fb6f5ac",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik6-ai-understanding-criteria",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "oe0ab3990",
+            "lang": "vi",
+            "text": "Chưa có sự đồng thuận về tiêu chuẩn thế nào là “hiểu”"
+          },
+          {
+            "id": "o4cc58dea",
+            "lang": "vi",
+            "text": "Trí tuệ nhân tạo đã thực sự hiểu được ý nghĩa"
+          },
+          {
+            "id": "o8c6d8b99",
+            "lang": "vi",
+            "text": "Con người không thể trải nghiệm thế giới thông qua ký hiệu"
+          },
+          {
+            "id": "o54759789",
+            "lang": "vi",
+            "text": "Trí tuệ nhân tạo vẫn chưa bắt chước được ngôn ngữ con người một cách hoàn hảo"
+          }
+        ],
+        "passage": "인공지능이 인간의 언어를 완벽하게 모방할 수 있게 되었다손 치더라도, 그것이 곧 인공지능이 의미를 이해한다는 증거가 되지는 않는다. 기호를 규칙에 따라 조작하는 능력과 그 기호가 가리키는 세계를 경험하는 능력은 본질적으로 다르기 때문이다. 이른바 '이해'의 기준을 무엇으로 삼느냐에 따라 이 논쟁의 결론은 얼마든지 달라질 수 있으며, 바로 그 기준에 대한 합의가 부재하다는 점이 문제의 핵심이다.",
+        "stem": "Theo tác giả, cốt lõi của cuộc tranh luận về việc trí tuệ nhân tạo có “hiểu” ngôn ngữ hay không là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "od71b1f27",
+      "content_hash": "8db9d9fe16b79b2d549afcb710df608d9f18fba9ecf7a44065dffcb760740a0e",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "Bài viết: “이러한 일방적 위계에 대한 반성에서 비롯된 것”, tức xuất phát từ sự tự phản tỉnh về thứ bậc một chiều. Thống nhất quốc gia là danh nghĩa của việc ban hành tiếng chuẩn, chứ không phải nguồn gốc của phong trào đánh giá lại phương ngữ."
+      },
+      "id": "b2e2118f-47d2-5177-a55c-ebff09f4759c",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik6-dialect-reevaluation",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "oca37841e",
+            "lang": "vi",
+            "text": "Từ nhu cầu giao tiếp hiệu quả hơn giữa các vùng"
+          },
+          {
+            "id": "oe9891ef5",
+            "lang": "vi",
+            "text": "Từ mục tiêu thống nhất quốc gia của chính sách ngôn ngữ chuẩn"
+          },
+          {
+            "id": "oc473f0cb",
+            "lang": "vi",
+            "text": "Từ việc phương ngữ nay được dùng phổ biến hơn tiếng chuẩn"
+          },
+          {
+            "id": "od71b1f27",
+            "lang": "vi",
+            "text": "Từ sự tự phản tỉnh về thứ bậc áp đặt một chiều giữa tiếng chuẩn và phương ngữ"
+          }
+        ],
+        "passage": "역사를 돌아보건대 한 사회의 언어 정책은 단순히 의사소통의 효율성만을 고려한 결과가 아니었다. 표준어의 제정은 국가 통합이라는 명분 아래 추진되었으나, 그 이면에서는 지역 방언이 '교양 없는 말'로 낙인찍히는 부작용이 뒤따랐다. 최근 방언을 지역 고유의 문화 자산으로 재평가하려는 움직임은 이러한 일방적 위계에 대한 반성에서 비롯된 것이라 할 수 있다. 언어의 다양성을 보존하는 일이 곧 공동체의 기억을 지키는 일이라는 인식이 확산되고 있는 것이다.",
+        "stem": "Theo bài, xu hướng đánh giá lại phương ngữ gần đây bắt nguồn từ đâu?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o5d911b17",
+      "content_hash": "98b144f80541fc66ea23c06380d753a0eefd9f6767235794be626a329f822e3a",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“길을 잃었다 한들 조급해할 까닭이 없다” (dù có lạc đường thì cũng chẳng việc gì phải vội) và câu cuối khẳng định lạc lối là một phần của việc tìm đường. Tác giả nói điều quý giá nhất lại đến “계획이 어긋난 자리에서”, trái với phương án về kế hoạch."
+      },
+      "id": "e82d9fd3-b6b6-5ebf-9204-b2ca5d544212",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik6-lost-way-essay",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "o5d911b17",
+            "lang": "vi",
+            "text": "Lạc lối cũng là một phần của hành trình tìm đường nên không cần nóng vội"
+          },
+          {
+            "id": "o261caf22",
+            "lang": "vi",
+            "text": "Sự lang thang thời trẻ là một thất bại cần tránh"
+          },
+          {
+            "id": "oc1e1345e",
+            "lang": "vi",
+            "text": "Những điều quý giá chỉ đến khi mọi việc diễn ra đúng kế hoạch"
+          },
+          {
+            "id": "o6dda9d7d",
+            "lang": "vi",
+            "text": "Cần lập kế hoạch thật chặt chẽ để tránh thất bại"
+          }
+        ],
+        "passage": "살다 보면 뜻대로 되지 않는 일이 더 많다. 그러나 묵묵히 제 길을 걷노라면 언젠가는 지나온 길이 하나의 무늬가 되어 있음을 깨닫게 된다. 젊은 날의 방황을 실패라 단정할 일은 아니다. 돌이켜 보건대 내 삶에서 가장 값진 깨달음은 늘 계획이 어긋난 자리에서 찾아왔다. 그러니 지금 길을 잃었다 한들 조급해할 까닭이 없다. 길을 잃는 것 또한 길을 찾는 과정의 일부이기 때문이다.",
+        "stem": "Thông điệp chính của bài tùy bút về việc “lạc đường” trong cuộc sống là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o5e3110c5",
+      "content_hash": "a23931fff897cb55581b79e2400b32027893f303540d00babcdad6f6fdbcc316",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“-(으)ㄹ세라” nghĩa là “e rằng, sợ rằng (điều gì) sẽ xảy ra”: “아들이 깰세라” là sợ con trai thức giấc. Hàng xóm không được nhắc đến, và sự im lặng là vì con chứ không phải để giấu việc làm cơm hộp."
+      },
+      "id": "228e9f09-b107-53a3-8c1b-b55aa857bcb8",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik6-mother-quiet-dawn",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "odb7f6f87",
+            "lang": "vi",
+            "text": "Vì sợ hàng xóm phàn nàn về tiếng ồn"
+          },
+          {
+            "id": "o866187bc",
+            "lang": "vi",
+            "text": "Vì bà quá mệt mỏi sau một ngày làm việc"
+          },
+          {
+            "id": "oeaf8cd3a",
+            "lang": "vi",
+            "text": "Vì bà không muốn con biết mình chuẩn bị cơm hộp"
+          },
+          {
+            "id": "o5e3110c5",
+            "lang": "vi",
+            "text": "Vì sợ con trai bị đánh thức"
+          }
+        ],
+        "passage": "어머니는 새벽마다 아들이 깰세라 발소리를 죽이며 부엌으로 향했다. 도시락을 싸는 손길은 분주했지만 그릇 부딪는 소리 하나 내지 않았다. 아들은 훗날 자식을 키우고 나서야 그 고요함이 얼마나 고단한 정성이었는지 헤아리게 되었다. 당연하게 누렸던 아침의 평온 뒤에는 누군가의 숨죽인 수고가 있었던 것이다.",
+        "stem": "Vì sao mỗi sáng sớm người mẹ lại đi rón rén vào bếp?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "o7ca6d140",
+      "content_hash": "580b7acb73eb59f3f836c0b257a63296868fad2c0a80c0f53b14cc5be8fa0aef",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“소탐대실” (小貪大失) là tham cái nhỏ mà mất cái lớn: cắt ngân sách nghiên cứu vì lợi nhuận ngắn hạn rồi mất thị phần. “Mất bò mới lo làm chuồng” là “소 잃고 외양간 고친다”, dễ nhầm vì cùng có chữ “소”."
+      },
+      "id": "dcc84bbd-4a03-5a43-a528-e1b0dafa77f4",
+      "is_demo": true,
+      "item_type": "reading_mcq",
+      "key": "ko:diag:read-topik6-sotamdaesil-rnd-cut",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "o7ca6d140",
+            "lang": "vi",
+            "text": "Tham lợi nhỏ trước mắt mà mất cái lớn"
+          },
+          {
+            "id": "o962ac250",
+            "lang": "vi",
+            "text": "Mất bò mới lo làm chuồng"
+          },
+          {
+            "id": "o8c0d6d10",
+            "lang": "vi",
+            "text": "Kiên nhẫn chờ đợi ắt sẽ thành công"
+          },
+          {
+            "id": "oc1a7debb",
+            "lang": "vi",
+            "text": "Một công đôi việc"
+          }
+        ],
+        "passage": "한 기업이 단기 실적을 올리기 위해 연구 개발 예산을 대폭 삭감하고 그 돈으로 주주 배당을 늘렸다. 당장은 주가가 올라 경영진이 찬사를 받았지만, 몇 년 뒤 경쟁사들이 신기술을 앞세워 시장을 장악하자 이 기업은 속수무책으로 점유율을 잃었다. 눈앞의 이익에 급급해 장래의 성장 동력을 스스로 허문 셈이니, 이야말로 소탐대실의 전형이라 하겠다.",
+        "stem": "Trong bài, thành ngữ “소탐대실” dùng để chỉ điều gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "reading",
+      "status": "published"
+    },
+    {
+      "answer_key": "oe116bac1",
+      "content_hash": "aaeab7002ea7d24d37547452516833af9f83a7d760ddfa719e9e86137d5b9dea",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“아이” (a-i) nghĩa là đứa trẻ. Dưa chuột là “오이” (o-i) — chỉ khác nguyên âm đầu ㅏ và ㅗ."
+      },
+      "id": "37e4cc1b-58af-568a-92f6-95f36e619bd4",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-hangul-ai",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "o5eb0c8a6",
+            "lang": "vi",
+            "text": "dưa chuột"
+          },
+          {
+            "id": "o61acadc6",
+            "lang": "vi",
+            "text": "con cáo"
+          },
+          {
+            "id": "ob10c7462",
+            "lang": "vi",
+            "text": "sữa"
+          },
+          {
+            "id": "oe116bac1",
+            "lang": "vi",
+            "text": "đứa trẻ"
+          }
+        ],
+        "stem": "Từ “아이” có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o7698d03e",
+      "content_hash": "e7fc49120f44bc92124fb156502c83dc2d7e36825e56291842cd47836a3d7726",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“출구” là lối ra (출 = xuất). Lối vào là “입구” (입 = nhập), nhà vệ sinh là “화장실”."
+      },
+      "id": "0df341ff-8a6c-5d02-8c61-7ed9de190b72",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-hangul-chulgu",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "ob4eff0b3",
+            "lang": "vi",
+            "text": "cấm hút thuốc"
+          },
+          {
+            "id": "o956e3ce5",
+            "lang": "vi",
+            "text": "nhà vệ sinh"
+          },
+          {
+            "id": "o7698d03e",
+            "lang": "vi",
+            "text": "lối ra"
+          },
+          {
+            "id": "o9c4cb22b",
+            "lang": "vi",
+            "text": "lối vào"
+          }
+        ],
+        "stem": "Biển báo “출구” có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o62f1af64",
+      "content_hash": "34db7f9dd1e0929413a917ab205340063843d69f86d2d6fdc7d2a022e129d1fd",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“학교” là trường học. “학생” là học sinh, “교실” là lớp học (phòng học), “선생님” là giáo viên."
+      },
+      "id": "5a3f8397-6ed2-5507-9824-eb07f2be08da",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-hangul-hakgyo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "oae5cc7f7",
+            "lang": "ko",
+            "text": "교실"
+          },
+          {
+            "id": "o640a970f",
+            "lang": "ko",
+            "text": "선생님"
+          },
+          {
+            "id": "o62f1af64",
+            "lang": "ko",
+            "text": "학교"
+          },
+          {
+            "id": "ob642ff5f",
+            "lang": "ko",
+            "text": "학생"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “trường học”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob4f45e13",
+      "content_hash": "455ccac4345f2386b90a33029f63ff349a117b9f195e3ecf72caaab1658e07a9",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“물” (mul) là nước. “불” là lửa, “문” là cửa, “무” là củ cải — chỉ khác một nét hoặc một phụ âm nên bạn cần đọc kỹ từng khối chữ."
+      },
+      "id": "0335df55-640a-50c8-9225-db6dbae52c4f",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-hangul-mul",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "ob4f45e13",
+            "lang": "ko",
+            "text": "물"
+          },
+          {
+            "id": "o2cffc0e7",
+            "lang": "ko",
+            "text": "불"
+          },
+          {
+            "id": "ob96242d2",
+            "lang": "ko",
+            "text": "무"
+          },
+          {
+            "id": "o1eeecea9",
+            "lang": "ko",
+            "text": "문"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “nước”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "od3ccc330",
+      "content_hash": "0bfa77fbbeb43c3d97ec8a9dc6cef0f5f7df67de4df27a8c103c9ba9c1d631a6",
+      "difficulty": 0.5,
+      "explanation": {
+        "vi": "“우유” (u-yu) là sữa. “오이” là dưa chuột, “우리” là chúng tôi, “여우” là con cáo; các từ này dùng nguyên âm gần giống nên dễ nhầm."
+      },
+      "id": "30143b8d-bc58-54f7-8b44-60e9663165f0",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-hangul-uyu",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "hangul",
+      "prompt": {
+        "options": [
+          {
+            "id": "o008bf897",
+            "lang": "ko",
+            "text": "여우"
+          },
+          {
+            "id": "o86735997",
+            "lang": "ko",
+            "text": "우리"
+          },
+          {
+            "id": "oa166cbb0",
+            "lang": "ko",
+            "text": "오이"
+          },
+          {
+            "id": "od3ccc330",
+            "lang": "ko",
+            "text": "우유"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “sữa”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "oba3a06e8",
+      "content_hash": "de2f9bb15d55fd6fb61436ab1b2537d543e7c34b6eb6b6da156f5441bc0e12f1",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“배고파요” (từ “배고프다”) nghĩa là đói bụng. No là “배불러요”, khát là “목말라요”, mệt là “피곤해요”."
+      },
+      "id": "6be19a57-65e6-5b95-9495-23f4be88a10b",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik1-baegopayo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o7eba2c68",
+            "lang": "vi",
+            "text": "Tôi khát nước."
+          },
+          {
+            "id": "o74e79c36",
+            "lang": "vi",
+            "text": "Tôi mệt."
+          },
+          {
+            "id": "o2c7771f7",
+            "lang": "vi",
+            "text": "Tôi no rồi."
+          },
+          {
+            "id": "oba3a06e8",
+            "lang": "vi",
+            "text": "Tôi đói bụng."
+          }
+        ],
+        "stem": "“배고파요” có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o192df54d",
+      "content_hash": "f7d57f36ddca585be70c3e332f1bd79f538f3ed30cd71f38212b40791bfdcb52",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“비싸요” là đắt. “싸요” ngược lại là rẻ — bạn đừng nhầm vì hai từ có chung âm “싸”; “많아요” là nhiều, “작아요” là nhỏ."
+      },
+      "id": "255caac3-7f96-50f7-b444-881cf6c13f7d",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik1-bissayo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o89753054",
+            "lang": "ko",
+            "text": "작아요"
+          },
+          {
+            "id": "o192df54d",
+            "lang": "ko",
+            "text": "비싸요"
+          },
+          {
+            "id": "o0591729a",
+            "lang": "ko",
+            "text": "싸요"
+          },
+          {
+            "id": "ocde41a4f",
+            "lang": "ko",
+            "text": "많아요"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “đắt”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "oc3bb304c",
+      "content_hash": "7cfb3aead9a198cdaa5a6ebb3dc04f230c3528ff46e7abda0160f1326114156e",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“병원” (bệnh viện) là nơi khám chữa bệnh. Hiệu thuốc là “약국”, ngân hàng là “은행”, nhà ga là “역”."
+      },
+      "id": "1ffe777d-d434-5927-a8b4-ba0fe59a94b5",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik1-byeongwon",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "odd0685c9",
+            "lang": "vi",
+            "text": "nhà ga"
+          },
+          {
+            "id": "oafd8a73c",
+            "lang": "vi",
+            "text": "ngân hàng"
+          },
+          {
+            "id": "oadd6f971",
+            "lang": "vi",
+            "text": "hiệu thuốc"
+          },
+          {
+            "id": "oc3bb304c",
+            "lang": "vi",
+            "text": "bệnh viện"
+          }
+        ],
+        "stem": "Từ “병원” có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "oddd979cf",
+      "content_hash": "f676ed0413492a835b76571a85bb68cff5408114c0a8d9485052a455a316b3d4",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“어제” là hôm qua. “오늘” là hôm nay, “내일” là ngày mai, “모레” là ngày kia."
+      },
+      "id": "3254970a-d2e7-5b41-af02-79155602940a",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik1-eoje",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "oddd979cf",
+            "lang": "ko",
+            "text": "어제"
+          },
+          {
+            "id": "ob932b048",
+            "lang": "ko",
+            "text": "내일"
+          },
+          {
+            "id": "ob9f0a466",
+            "lang": "ko",
+            "text": "모레"
+          },
+          {
+            "id": "o9334a5d5",
+            "lang": "ko",
+            "text": "오늘"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “hôm qua”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o56e5f2b7",
+      "content_hash": "0aec52aeaf996660a800eaed8702b6a643f3714e6cd8b57a378be692f2301600",
+      "difficulty": 1.5,
+      "explanation": {
+        "vi": "“목요일” là thứ Năm. “화요일” là thứ Ba, “수요일” là thứ Tư, “금요일” là thứ Sáu."
+      },
+      "id": "236ad9e2-2661-57b9-b898-e1a1da4eadd8",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik1-mogyoil",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik1",
+      "prompt": {
+        "options": [
+          {
+            "id": "o706185a6",
+            "lang": "ko",
+            "text": "금요일"
+          },
+          {
+            "id": "o56e5f2b7",
+            "lang": "ko",
+            "text": "목요일"
+          },
+          {
+            "id": "o4f7edbef",
+            "lang": "ko",
+            "text": "수요일"
+          },
+          {
+            "id": "o555b8ff4",
+            "lang": "ko",
+            "text": "화요일"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “thứ Năm”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o71eec370",
+      "content_hash": "7bd376c4e1015989970e3e66cf7a5badfed00b495897f01f5d2d574b47ecea49",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“무겁다” (nặng) trái nghĩa với “가볍다” (nhẹ). “두껍다” là dày (trái nghĩa của “얇다”), “가깝다” là gần, “어렵다” là khó."
+      },
+      "id": "c6190cd5-62fe-50aa-979f-faa3b34a28f1",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik2-gabyeopda-opposite",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "ob95249a9",
+            "lang": "ko",
+            "text": "어렵다"
+          },
+          {
+            "id": "o8d8b6040",
+            "lang": "ko",
+            "text": "가깝다"
+          },
+          {
+            "id": "oa4c1d112",
+            "lang": "ko",
+            "text": "두껍다"
+          },
+          {
+            "id": "o71eec370",
+            "lang": "ko",
+            "text": "무겁다"
+          }
+        ],
+        "stem": "Từ nào trái nghĩa với “가볍다” (nhẹ)?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o8772bfaf",
+      "content_hash": "f5f471ff3a341fa9e05e9763a18da282f24f0b8baf3f29606d41653d7fe4f3a0",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“지갑” là cái ví đựng tiền. Cái ô là “우산”, túi xách là “가방”, chìa khóa là “열쇠”."
+      },
+      "id": "9550d9dc-b3fe-5593-87f0-94c4a638b9c6",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik2-jigap",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "o4616e60b",
+            "lang": "vi",
+            "text": "túi xách"
+          },
+          {
+            "id": "o8772bfaf",
+            "lang": "vi",
+            "text": "cái ví"
+          },
+          {
+            "id": "ob4205b60",
+            "lang": "vi",
+            "text": "cái ô"
+          },
+          {
+            "id": "o533f5ffb",
+            "lang": "vi",
+            "text": "chìa khóa"
+          }
+        ],
+        "stem": "Từ “지갑” có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o100c6ec1",
+      "content_hash": "17a141902e46365ee31781172c123a766495bb484ba5c8deaada3616154952cf",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“준비하다” (chuẩn bị) là đáp án đúng. “계획하다” là lên kế hoạch, “연습하다” là luyện tập, “소개하다” là giới thiệu."
+      },
+      "id": "36dce1e7-8c77-5109-8d7c-0fdc68aca492",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik2-junbihada",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "oae05ad62",
+            "lang": "ko",
+            "text": "연습하다"
+          },
+          {
+            "id": "o100c6ec1",
+            "lang": "ko",
+            "text": "준비하다"
+          },
+          {
+            "id": "o5fae1b62",
+            "lang": "ko",
+            "text": "계획하다"
+          },
+          {
+            "id": "o316c0c50",
+            "lang": "ko",
+            "text": "소개하다"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “chuẩn bị”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "of04f70d5",
+      "content_hash": "c833713cf3e2b71e8a5ae35ba6230d8895c3ace850310e54525d8b137a1e93c2",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“늦잠을 자다” là ngủ dậy muộn (늦다 = muộn). “낮잠을 자다” là ngủ trưa, “잠이 들다” là thiếp đi, “꿈을 꾸다” là nằm mơ."
+      },
+      "id": "97111626-c795-5795-a77f-88e3d36268d8",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik2-neutjam",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "of04f70d5",
+            "lang": "ko",
+            "text": "늦잠을 자다"
+          },
+          {
+            "id": "o9f626f67",
+            "lang": "ko",
+            "text": "꿈을 꾸다"
+          },
+          {
+            "id": "o7ab31d5e",
+            "lang": "ko",
+            "text": "낮잠을 자다"
+          },
+          {
+            "id": "oa0711f07",
+            "lang": "ko",
+            "text": "잠이 들다"
+          }
+        ],
+        "stem": "Cụm từ nào có nghĩa là “ngủ dậy muộn, ngủ nướng”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o1e982faf",
+      "content_hash": "618fcca385161070ad684899f3186529f19c6bce028dd94a549c14711e6b38fb",
+      "difficulty": 2.5,
+      "explanation": {
+        "vi": "“약속” (ước thúc) là cuộc hẹn hoặc lời hứa. Đừng nhầm với “약” (thuốc) — hiệu thuốc là “약국”; buổi họp là “회의”."
+      },
+      "id": "a0303157-31bb-515b-ae5e-b4ea018d2314",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik2-yaksok",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik2",
+      "prompt": {
+        "options": [
+          {
+            "id": "od1873e57",
+            "lang": "vi",
+            "text": "hiệu thuốc"
+          },
+          {
+            "id": "o55b8ee1d",
+            "lang": "vi",
+            "text": "buổi họp"
+          },
+          {
+            "id": "o1e982faf",
+            "lang": "vi",
+            "text": "cuộc hẹn, lời hứa"
+          },
+          {
+            "id": "o4d0b9299",
+            "lang": "vi",
+            "text": "lời xin lỗi"
+          }
+        ],
+        "stem": "Từ “약속” có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "oa00d8aec",
+      "content_hash": "481b2e30881a95c49dec88c51dc7db4140658bef66572265ce628024f93eeac4",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Tiếng Hàn nói “감기에 걸리다” (bị cảm), nên “걸린” là đúng. Không nói “감기에 잡히다/받다” dù tiếng Việt có thể nói “bị nhiễm/mắc”."
+      },
+      "id": "2cbf80a7-b71b-5517-a09b-bd7cb7cfa18a",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik3-gamgi-geollida",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "od3776f22",
+            "lang": "ko",
+            "text": "잡힌"
+          },
+          {
+            "id": "oa44ad7b6",
+            "lang": "ko",
+            "text": "받은"
+          },
+          {
+            "id": "oa00d8aec",
+            "lang": "ko",
+            "text": "걸린"
+          },
+          {
+            "id": "o8783acc7",
+            "lang": "ko",
+            "text": "들린"
+          }
+        ],
+        "stem": "날씨가 갑자기 추워져서 감기에 ___ 사람이 많아요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o656f6f26",
+      "content_hash": "3b155cd3db6e0e7efbbc75732c8b10c4b187df9679f06aa16fb79d4dbd1f5ef7",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“경험” chính là “kinh nghiệm”. “경제” là kinh tế (cùng âm “경”), “계획” là kế hoạch, “실험” là thí nghiệm (cùng âm “험” = nghiệm)."
+      },
+      "id": "f205e554-0283-57eb-be95-25c6455a18cf",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik3-gyeongheom",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "o656f6f26",
+            "lang": "ko",
+            "text": "경험"
+          },
+          {
+            "id": "o0509fdd3",
+            "lang": "ko",
+            "text": "계획"
+          },
+          {
+            "id": "oc80a84cf",
+            "lang": "ko",
+            "text": "경제"
+          },
+          {
+            "id": "oac6245c6",
+            "lang": "ko",
+            "text": "실험"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “kinh nghiệm, trải nghiệm”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o1411521c",
+      "content_hash": "c14b35b17292056463d709b18292949473c467d6106c2891c56a04c04ead273c",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "“목적” là từ Hán Hàn của “mục đích”. Kết quả là “결과”, nguyên nhân là “원인”, quá trình là “과정”."
+      },
+      "id": "cc5fa341-ec63-5279-9989-0f61163c823b",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik3-mokjeok",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "o8e40f4a2",
+            "lang": "vi",
+            "text": "quá trình"
+          },
+          {
+            "id": "o1411521c",
+            "lang": "vi",
+            "text": "mục đích"
+          },
+          {
+            "id": "o33083754",
+            "lang": "vi",
+            "text": "nguyên nhân"
+          },
+          {
+            "id": "o2dfeb5cc",
+            "lang": "vi",
+            "text": "kết quả"
+          }
+        ],
+        "stem": "Từ “목적” có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "oaa88dc44",
+      "content_hash": "804f4ee9878a711393278b4354c31f564dd970f56f69e566867b36dc503bde39",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Giải tỏa căng thẳng là “스트레스를 풀다”, nên “풀기 위해서” mới hợp mục đích leo núi. “스트레스를 받다” là bị căng thẳng — ngược với ý câu."
+      },
+      "id": "f1398fd9-6609-5714-acb7-7a8d4e150124",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik3-seuteureseu-pulda",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "o259624a1",
+            "lang": "ko",
+            "text": "주기"
+          },
+          {
+            "id": "oa980a197",
+            "lang": "ko",
+            "text": "받기"
+          },
+          {
+            "id": "oaa88dc44",
+            "lang": "ko",
+            "text": "풀기"
+          },
+          {
+            "id": "o9daea483",
+            "lang": "ko",
+            "text": "쌓기"
+          }
+        ],
+        "stem": "스트레스를 ___ 위해서 주말마다 등산을 해요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o4b566448",
+      "content_hash": "b1d568a6da7ec4a5c2e9c5f7db0eb9ddb3607c1013bdffdbca738783dcea611e",
+      "difficulty": 3.5,
+      "explanation": {
+        "vi": "Câu nói “Nếu giờ họp thay đổi thì nhất định hãy … cho tôi”, nên cần “연락해 주세요” (liên lạc, báo cho). “연습해” (luyện tập) hay “출발해” (xuất phát) không hợp nghĩa."
+      },
+      "id": "763f734a-5aab-5d88-93b0-0a7b0e0edff4",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik3-yeollak",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "prompt": {
+        "options": [
+          {
+            "id": "oe62de037",
+            "lang": "ko",
+            "text": "출발해"
+          },
+          {
+            "id": "o6261f1e6",
+            "lang": "ko",
+            "text": "연습해"
+          },
+          {
+            "id": "oca488740",
+            "lang": "ko",
+            "text": "운동해"
+          },
+          {
+            "id": "o4b566448",
+            "lang": "ko",
+            "text": "연락해"
+          }
+        ],
+        "stem": "회의 시간이 바뀌면 저에게 꼭 ___ 주세요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "oe56f1933",
+      "content_hash": "9ded7b72b5e2877d095a5117e3952c22cfccf70df8449136885e04dce0b1fe6b",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "“당황하다” là bối rối, lúng túng khi gặp tình huống bất ngờ. Thất vọng là “실망하다”, hồi hộp là “긴장하다”, tức giận là “화가 나다”."
+      },
+      "id": "f8c1efee-5159-5cdf-80ef-5bfa57a0bd3d",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik4-danghwanghada",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "ofb2dd7e4",
+            "lang": "vi",
+            "text": "hồi hộp"
+          },
+          {
+            "id": "o23e6535c",
+            "lang": "vi",
+            "text": "thất vọng"
+          },
+          {
+            "id": "oe56f1933",
+            "lang": "vi",
+            "text": "bối rối, lúng túng"
+          },
+          {
+            "id": "o4bd65f6b",
+            "lang": "vi",
+            "text": "tức giận"
+          }
+        ],
+        "stem": "Từ “당황하다” có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o295e9cab",
+      "content_hash": "134fb18a446b32c8a05136561131ef5540ec479734053f5afad09e0e709478c0",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Để bảo vệ môi trường thì phải giảm đồ dùng một lần, nên “줄이도록” (giảm) là đúng. “늘리도록” (tăng) ngược nghĩa; “높이다/키우다” không đi với “사용”."
+      },
+      "id": "03c164a5-d488-56a0-b058-434c4ec3dd5f",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik4-jurida",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "o295e9cab",
+            "lang": "ko",
+            "text": "줄이도록"
+          },
+          {
+            "id": "o6d6c8fd3",
+            "lang": "ko",
+            "text": "늘리도록"
+          },
+          {
+            "id": "o4b910b4d",
+            "lang": "ko",
+            "text": "높이도록"
+          },
+          {
+            "id": "oe5f19979",
+            "lang": "ko",
+            "text": "키우도록"
+          }
+        ],
+        "stem": "환경을 보호하기 위해 일회용품 사용을 ___ 노력합시다.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "od9f26f2d",
+      "content_hash": "4cabd261371de9170de08a2b6dc227072ecfebabd7a5c72e57567dc69c8887ec",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "“꾸준히” nghĩa là đều đặn, bền bỉ không ngừng (vd. “꾸준히 운동하다”). “Thỉnh thoảng” là “가끔” — trái với tính liên tục của “꾸준히”."
+      },
+      "id": "edc19fd2-0b35-5e51-a4a5-382c6983ff8e",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik4-kkujunhi",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "od9f26f2d",
+            "lang": "vi",
+            "text": "đều đặn, bền bỉ"
+          },
+          {
+            "id": "oa4133a33",
+            "lang": "vi",
+            "text": "đột ngột"
+          },
+          {
+            "id": "o632483f4",
+            "lang": "vi",
+            "text": "vội vàng"
+          },
+          {
+            "id": "ocadbac10",
+            "lang": "vi",
+            "text": "thỉnh thoảng"
+          }
+        ],
+        "stem": "“꾸준히” gần nghĩa nhất với cách nói nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "ob5f9a892",
+      "content_hash": "b17b93f2176fc85e8c5b2e6b3402acbe720f415462f6f5405fecea194990dc2b",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "Kết hợp cố định là “실수를 저지르다” (phạm sai lầm). “일으키다” đi với “사고” (gây tai nạn), “끼치다” đi với “피해/폐” (gây thiệt hại/phiền), “벌이다” đi với “일/사업”."
+      },
+      "id": "74ed70eb-8535-5025-b599-44bc2ac7674b",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik4-silsu-jeojireuda",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "oec528307",
+            "lang": "ko",
+            "text": "끼치지"
+          },
+          {
+            "id": "o17063e3a",
+            "lang": "ko",
+            "text": "일으키지"
+          },
+          {
+            "id": "of8b9bc36",
+            "lang": "ko",
+            "text": "벌이지"
+          },
+          {
+            "id": "ob5f9a892",
+            "lang": "ko",
+            "text": "저지르지"
+          }
+        ],
+        "stem": "그는 같은 실수를 두 번 다시 ___ 않으려고 노력했다.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o775028be",
+      "content_hash": "5392dc13d755339c8ef7275d5d523b22a28182e810068e90c632ab7a4cfe011e",
+      "difficulty": 4.5,
+      "explanation": {
+        "vi": "“영향” là “ảnh hưởng” (vd. “영향을 미치다”). “영양” là dinh dưỡng, “영상” là video/hình ảnh, “인상” là ấn tượng — đều có âm gần giống."
+      },
+      "id": "1ae6f293-6c06-5fcd-b112-8459821abc8a",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik4-yeonghyang",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "prompt": {
+        "options": [
+          {
+            "id": "oc95fdfaa",
+            "lang": "ko",
+            "text": "영상"
+          },
+          {
+            "id": "o1a9775ff",
+            "lang": "ko",
+            "text": "인상"
+          },
+          {
+            "id": "o775028be",
+            "lang": "ko",
+            "text": "영향"
+          },
+          {
+            "id": "o0dac7f89",
+            "lang": "ko",
+            "text": "영양"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “ảnh hưởng”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o72bdff0c",
+      "content_hash": "e3e79f6408c623e3a98b3d5b3c28b254b1e55cf0874907cda1ec65ea4bc8c108",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“불가피하다” (bất khả tị) nghĩa là không thể tránh khỏi. “Không thể tin được” là “믿을 수 없다”, “không thể chấp nhận” là “용납할 수 없다”."
+      },
+      "id": "7e9baf46-294e-5476-aed2-55f0c0960c77",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik5-bulgapihada",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "o270a2f1d",
+            "lang": "vi",
+            "text": "không cần thiết"
+          },
+          {
+            "id": "o72bdff0c",
+            "lang": "vi",
+            "text": "không thể tránh khỏi"
+          },
+          {
+            "id": "oac1cf7a0",
+            "lang": "vi",
+            "text": "không thể chấp nhận"
+          },
+          {
+            "id": "o24b43a15",
+            "lang": "vi",
+            "text": "không thể tin được"
+          }
+        ],
+        "stem": "“불가피하다” gần nghĩa nhất với cách nói nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "oa4612025",
+      "content_hash": "dff8e0dd051bba07026243d6e0c2efda940ae80f8daf749bca5adf9ea2a9f9ac",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“추세” là xu thế, ví dụ “감소 추세” (xu hướng giảm). “추측” là suy đoán, “추진” là xúc tiến, thúc đẩy, “추억” là kỷ niệm."
+      },
+      "id": "2a0e3b3d-b667-56ed-94e1-22bbd5d1d745",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik5-chuse",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "ob77e6ae4",
+            "lang": "ko",
+            "text": "추억"
+          },
+          {
+            "id": "o1545c37e",
+            "lang": "ko",
+            "text": "추측"
+          },
+          {
+            "id": "oa4612025",
+            "lang": "ko",
+            "text": "추세"
+          },
+          {
+            "id": "o0cc51456",
+            "lang": "ko",
+            "text": "추진"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “xu thế” (chiều hướng thay đổi của số liệu, tình hình)?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o01a7e1de",
+      "content_hash": "0fd1553665a56e187a7b214ff8c741fb8879834cf6407bd51152fa4cbf1e27e4",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“갈등을 해소하다” là giải tỏa, hóa giải mâu thuẫn. “해제하다” dùng cho lệnh, cảnh báo (dỡ bỏ), “해고하다” là sa thải, “해석하다” là giải thích, thông dịch."
+      },
+      "id": "c4e302f4-5e44-59eb-b6c2-4815c9f1db0b",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik5-galdeung-haesohada",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "o99e7fdd9",
+            "lang": "ko",
+            "text": "해제하기"
+          },
+          {
+            "id": "o8e8c40a6",
+            "lang": "ko",
+            "text": "해고하기"
+          },
+          {
+            "id": "o645ba9fd",
+            "lang": "ko",
+            "text": "해석하기"
+          },
+          {
+            "id": "o01a7e1de",
+            "lang": "ko",
+            "text": "해소하기"
+          }
+        ],
+        "stem": "두 나라는 오랜 갈등을 ___ 위해 대화를 시작했다.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o276ddc02",
+      "content_hash": "33ef3b9439180120557581c305b85d34047644cc304d3c06bd243ca2789807aa",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“지속 가능한” (có thể duy trì lâu dài) tương ứng với “bền vững”, như “지속 가능한 발전”. “일시적인” là tạm thời — ngược nghĩa; “획기적인” là mang tính đột phá."
+      },
+      "id": "35f4e512-bbf6-523d-95e6-91b8b63959ec",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik5-jisok-ganeunghan",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "o276ddc02",
+            "lang": "ko",
+            "text": "지속 가능한"
+          },
+          {
+            "id": "obffc0623",
+            "lang": "ko",
+            "text": "일시적인"
+          },
+          {
+            "id": "o1444c581",
+            "lang": "ko",
+            "text": "불가피한"
+          },
+          {
+            "id": "od2e5142d",
+            "lang": "ko",
+            "text": "획기적인"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “bền vững” (như trong “phát triển bền vững”)?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "od05d74b6",
+      "content_hash": "5570137957fdcea00119a7e5a325b07db1fc724cf287ee80ef595b7525bbcec1",
+      "difficulty": 5.5,
+      "explanation": {
+        "vi": "“모호하다” (mơ hồ) nghĩa là không rõ ràng, khó xác định. “Rõ ràng” là “명확하다” — trái nghĩa; “mâu thuẫn” là “모순되다”."
+      },
+      "id": "14c7a3bf-5139-55d3-aeee-342429e0b475",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik5-mohohada",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "prompt": {
+        "options": [
+          {
+            "id": "o41cc347b",
+            "lang": "vi",
+            "text": "mâu thuẫn"
+          },
+          {
+            "id": "o36563486",
+            "lang": "vi",
+            "text": "khiêm tốn"
+          },
+          {
+            "id": "od05d74b6",
+            "lang": "vi",
+            "text": "mơ hồ, không rõ ràng"
+          },
+          {
+            "id": "o343db9de",
+            "lang": "vi",
+            "text": "rõ ràng"
+          }
+        ],
+        "stem": "Từ “모호하다” có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o2e273496",
+      "content_hash": "93cf427f29b34b3d586962fa00774947a0c2e73a4c1f5732a3c7c11233b84b83",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“발이 넓다” (chân rộng) chỉ người quen biết nhiều, quan hệ rộng. Dù có chữ “발” (chân), thành ngữ này không nói về việc đi nhiều nơi."
+      },
+      "id": "1544b1ec-181d-5a9a-a8da-34b49490d874",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik6-bari-neolda",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "o6d0daa13",
+            "lang": "vi",
+            "text": "tiêu xài hoang phí"
+          },
+          {
+            "id": "ocad1e7c1",
+            "lang": "vi",
+            "text": "làm việc chăm chỉ"
+          },
+          {
+            "id": "o3ff1099c",
+            "lang": "vi",
+            "text": "hay đi du lịch nhiều nơi"
+          },
+          {
+            "id": "o2e273496",
+            "lang": "vi",
+            "text": "quen biết rộng, giao thiệp nhiều"
+          }
+        ],
+        "stem": "Quán ngữ “발이 넓다” có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "ocf459135",
+      "content_hash": "b3170278ad01d7347734f0e0be5cfd7975543758f9ff7ff78842b606691698df",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "Trong nghiên cứu, “변수를 통제하다” là kiểm soát biến số để tăng độ tin cậy của phân tích. “통치” là cai trị (đất nước), “통보” là thông báo, “통용” là được dùng phổ biến — không đi với “변수”."
+      },
+      "id": "e688a1be-3550-5ea4-9d28-b6cb491337a3",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik6-byeonsu-tongje",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "o0a79436d",
+            "lang": "ko",
+            "text": "통치"
+          },
+          {
+            "id": "o49a284a1",
+            "lang": "ko",
+            "text": "통용"
+          },
+          {
+            "id": "ocf459135",
+            "lang": "ko",
+            "text": "통제"
+          },
+          {
+            "id": "o3a6cd244",
+            "lang": "ko",
+            "text": "통보"
+          }
+        ],
+        "stem": "본 연구는 기존 연구들이 간과해 온 변수를 추가로 ___하여 분석의 타당성을 높였다.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o4126a16e",
+      "content_hash": "b15feb42093c3ffa38d6f6c4baba5b8680958fafe4c2422b73148117adf6aef4",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“엄격하다” (nghiêm cách) là nghiêm ngặt, như “엄격한 기준”. “엄숙하다” là trang nghiêm (về không khí, nghi lễ), “관대하다” là khoan dung — gần như trái nghĩa."
+      },
+      "id": "f85fa474-cce5-5f48-a57a-1f1fcdff1ef8",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik6-eomgyeokhada",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "o4126a16e",
+            "lang": "ko",
+            "text": "엄격하다"
+          },
+          {
+            "id": "oaec39881",
+            "lang": "ko",
+            "text": "관대하다"
+          },
+          {
+            "id": "oc2268709",
+            "lang": "ko",
+            "text": "엄숙하다"
+          },
+          {
+            "id": "od03f7bba",
+            "lang": "ko",
+            "text": "온건하다"
+          }
+        ],
+        "stem": "Từ nào có nghĩa là “nghiêm ngặt, khắt khe” (về quy định, tiêu chuẩn)?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o659c27c9",
+      "content_hash": "bb838e302de9c985b9fe3e7e297561ce2991b4cda1aaf2843c3bdaa5a91044ad",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“고진감래” (khổ tận cam lai) nghĩa là hết khổ rồi sướng, giống “고생 끝에 낙이 온다”. “소 잃고 외양간 고친다” là mất bò mới lo làm chuồng — nói về việc phản ứng quá muộn."
+      },
+      "id": "0034da46-cf1f-5e5c-ac7f-84bc14713f92",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik6-gojingamnae",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "o659c27c9",
+            "lang": "ko",
+            "text": "고생 끝에 낙이 온다"
+          },
+          {
+            "id": "oa66462b2",
+            "lang": "ko",
+            "text": "소 잃고 외양간 고친다"
+          },
+          {
+            "id": "o0c307339",
+            "lang": "ko",
+            "text": "가는 말이 고와야 오는 말이 곱다"
+          },
+          {
+            "id": "offb4a330",
+            "lang": "ko",
+            "text": "낮말은 새가 듣고 밤말은 쥐가 듣는다"
+          }
+        ],
+        "stem": "Tục ngữ nào gần nghĩa nhất với “고진감래”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    },
+    {
+      "answer_key": "o94312994",
+      "content_hash": "71a956bfeee90e4a1550319b4c82648a458390179199cb3f9eaf269d92c370e2",
+      "difficulty": 6.5,
+      "explanation": {
+        "vi": "“일석이조” (nhất thạch nhị điểu) là một hòn đá trúng hai con chim, tức một công đôi việc. Các câu còn lại nói về sự kiên trì, sự chậm trễ và sự vô ơn."
+      },
+      "id": "82b382cc-32ed-5d82-923c-67e11a44af32",
+      "is_demo": true,
+      "item_type": "mcq",
+      "key": "ko:diag:voc-topik6-ilseogijo",
+      "key_confidence": "unreviewed",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "prompt": {
+        "options": [
+          {
+            "id": "o347ea02b",
+            "lang": "vi",
+            "text": "Nước đến chân mới nhảy."
+          },
+          {
+            "id": "ob0547c71",
+            "lang": "vi",
+            "text": "Ăn cháo đá bát."
+          },
+          {
+            "id": "o94312994",
+            "lang": "vi",
+            "text": "Một công đôi việc (một mũi tên trúng hai đích)."
+          },
+          {
+            "id": "o9cc6c503",
+            "lang": "vi",
+            "text": "Có công mài sắt có ngày nên kim."
+          }
+        ],
+        "stem": "Thành ngữ “일석이조” có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill": "vocabulary",
+      "status": "published"
+    }
+  ]
+}$diagnostic$::jsonb);

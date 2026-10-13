@@ -1,0 +1,503 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+language: en
+skill: vocabulary
+items:
+  # ---------- pre_a1 ----------
+  - key: en:diag:voc-pre-a1-dog
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “con chó”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: cat, lang: en }
+        - { id: b, text: dog, lang: en }
+        - { id: c, text: duck, lang: en }
+        - { id: d, text: pig, lang: en }
+    answer: b
+    explanation:
+      vi: "“Dog” là con chó. “Cat” là con mèo, “duck” là con vịt, “pig” là con lợn."
+  - key: en:diag:voc-pre-a1-red
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Từ “red” là màu gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: màu xanh lá, lang: vi }
+        - { id: b, text: màu vàng, lang: vi }
+        - { id: c, text: màu đỏ, lang: vi }
+        - { id: d, text: màu đen, lang: vi }
+    answer: c
+    explanation:
+      vi: "“Red” là màu đỏ. Màu xanh lá là “green”, màu vàng là “yellow”, màu đen là “black”."
+  - key: en:diag:voc-pre-a1-seven
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là số “7”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: six, lang: en }
+        - { id: b, text: eleven, lang: en }
+        - { id: c, text: nine, lang: en }
+        - { id: d, text: seven, lang: en }
+    answer: d
+    explanation:
+      vi: "“Seven” là số 7. “Six” là 6, “nine” là 9, còn “eleven” là 11 nên dễ nhầm vì cũng có âm “-ven”."
+  - key: en:diag:voc-pre-a1-mother
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “mẹ”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: mother, lang: en }
+        - { id: b, text: father, lang: en }
+        - { id: c, text: sister, lang: en }
+        - { id: d, text: brother, lang: en }
+    answer: a
+    explanation:
+      vi: "“Mother” là mẹ. “Father” là bố, “sister” là chị/em gái, “brother” là anh/em trai."
+  - key: en:diag:voc-pre-a1-goodbye
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “tạm biệt”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: hello, lang: en }
+        - { id: b, text: goodbye, lang: en }
+        - { id: c, text: please, lang: en }
+        - { id: d, text: sorry, lang: en }
+    answer: b
+    explanation:
+      vi: "“Goodbye” dùng khi chia tay, nghĩa là “tạm biệt”. “Hello” là lời chào khi gặp nhau, không phải khi rời đi."
+  # ---------- a1 ----------
+  - key: en:diag:voc-a1-kitchen
+    level: a1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “nhà bếp”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: bedroom, lang: en }
+        - { id: b, text: bathroom, lang: en }
+        - { id: c, text: kitchen, lang: en }
+        - { id: d, text: garden, lang: en }
+    answer: c
+    explanation:
+      vi: "“Kitchen” là nhà bếp, nơi nấu ăn. “Bedroom” là phòng ngủ, “bathroom” là phòng tắm, “garden” là khu vườn."
+  - key: en:diag:voc-a1-tired
+    level: a1
+    item_type: mcq
+    prompt:
+      stem: "“tired” gần nghĩa nhất với từ nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: đói, lang: vi }
+        - { id: b, text: buồn, lang: vi }
+        - { id: c, text: lạnh, lang: vi }
+        - { id: d, text: mệt, lang: vi }
+    answer: d
+    explanation:
+      vi: "“Tired” nghĩa là mệt. Đói là “hungry”, buồn là “sad”, lạnh là “cold”."
+  - key: en:diag:voc-a1-wednesday
+    level: a1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “thứ Tư”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: Wednesday, lang: en }
+        - { id: b, text: Tuesday, lang: en }
+        - { id: c, text: Thursday, lang: en }
+        - { id: d, text: Saturday, lang: en }
+    answer: a
+    explanation:
+      vi: "“Wednesday” là thứ Tư. “Tuesday” là thứ Ba và “Thursday” là thứ Năm — hai từ này rất hay bị nhầm với nhau."
+  - key: en:diag:voc-a1-cheap
+    level: a1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào trái nghĩa với “expensive” (đắt)?"
+      stem_lang: vi
+      options:
+        - { id: a, text: big, lang: en }
+        - { id: b, text: cheap, lang: en }
+        - { id: c, text: new, lang: en }
+        - { id: d, text: easy, lang: en }
+    answer: b
+    explanation:
+      vi: "“Cheap” nghĩa là rẻ, trái nghĩa với “expensive”. “Big” (to), “new” (mới) và “easy” (dễ) không nói về giá cả."
+  - key: en:diag:voc-a1-breakfast
+    level: a1
+    item_type: mcq
+    prompt:
+      stem: "“breakfast” là bữa nào trong ngày?"
+      stem_lang: vi
+      options:
+        - { id: a, text: bữa trưa, lang: vi }
+        - { id: b, text: bữa tối, lang: vi }
+        - { id: c, text: bữa sáng, lang: vi }
+        - { id: d, text: bữa ăn nhẹ, lang: vi }
+    answer: c
+    explanation:
+      vi: "“Breakfast” là bữa sáng. Bữa trưa là “lunch”, bữa tối là “dinner”, bữa ăn nhẹ là “snack”."
+  # ---------- a2 ----------
+  - key: en:diag:voc-a2-borrow
+    level: a2
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “mượn” (lấy đồ của người khác để dùng rồi trả lại)?"
+      stem_lang: vi
+      options:
+        - { id: a, text: lend, lang: en }
+        - { id: b, text: rent, lang: en }
+        - { id: c, text: return, lang: en }
+        - { id: d, text: borrow, lang: en }
+    answer: d
+    explanation:
+      vi: "“Borrow” là mượn (từ ai đó). “Lend” ngược lại, là cho mượn; “rent” là thuê, “return” là trả lại."
+  - key: en:diag:voc-a2-journey
+    level: a2
+    item_type: mcq
+    prompt:
+      stem: "“journey” gần nghĩa nhất với từ nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: trip, lang: en }
+        - { id: b, text: ticket, lang: en }
+        - { id: c, text: station, lang: en }
+        - { id: d, text: meal, lang: en }
+    answer: a
+    explanation:
+      vi: "“Journey” là chuyến đi, gần nghĩa với “trip”. “Ticket” (vé) và “station” (nhà ga) chỉ liên quan đến việc đi lại chứ không cùng nghĩa."
+  - key: en:diag:voc-a2-angry
+    level: a2
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “tức giận”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: afraid, lang: en }
+        - { id: b, text: angry, lang: en }
+        - { id: c, text: bored, lang: en }
+        - { id: d, text: proud, lang: en }
+    answer: b
+    explanation:
+      vi: "“Angry” là tức giận. “Afraid” là sợ, “bored” là chán, “proud” là tự hào."
+  - key: en:diag:voc-a2-miss
+    level: a2
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “lỡ” trong cụm “lỡ chuyến xe buýt”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: lose, lang: en }
+        - { id: b, text: forget, lang: en }
+        - { id: c, text: miss, lang: en }
+        - { id: d, text: leave, lang: en }
+    answer: c
+    explanation:
+      vi: "Ta nói “miss the bus” để chỉ lỡ chuyến xe. “Lose” là làm mất đồ vật, nên “lose the bus” là sai dù người Việt hay dùng nhầm."
+  - key: en:diag:voc-a2-ill
+    level: a2
+    item_type: mcq
+    prompt:
+      stem: "“ill” gần nghĩa nhất với từ nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: angry, lang: en }
+        - { id: b, text: lazy, lang: en }
+        - { id: c, text: poor, lang: en }
+        - { id: d, text: sick, lang: en }
+    answer: d
+    explanation:
+      vi: "“Ill” nghĩa là ốm, bệnh, đồng nghĩa với “sick”. “Poor” là nghèo, “lazy” là lười, “angry” là tức giận."
+  # ---------- b1 ----------
+  - key: en:diag:voc-b1-make-decision
+    level: b1
+    item_type: mcq
+    prompt:
+      stem: "It took me a long time to ___ a decision about my new job."
+      stem_lang: en
+      options:
+        - { id: a, text: make, lang: en }
+        - { id: b, text: do, lang: en }
+        - { id: c, text: get, lang: en }
+        - { id: d, text: have, lang: en }
+    answer: a
+    explanation:
+      vi: "Cụm cố định là “make a decision” (đưa ra quyết định). Không nói “do a decision” dù “do” cũng có nghĩa là “làm”."
+  - key: en:diag:voc-b1-reliable
+    level: b1
+    item_type: mcq
+    prompt:
+      stem: "You can always count on Anna to keep her promises; she is very ___."
+      stem_lang: en
+      options:
+        - { id: a, text: available, lang: en }
+        - { id: b, text: reliable, lang: en }
+        - { id: c, text: comfortable, lang: en }
+        - { id: d, text: valuable, lang: en }
+    answer: b
+    explanation:
+      vi: "“Reliable” nghĩa là đáng tin cậy, hợp với ý “luôn giữ lời hứa”. “Valuable” là có giá trị, thường dùng cho đồ vật, không nói về tính cách giữ lời."
+  - key: en:diag:voc-b1-afford
+    level: b1
+    item_type: mcq
+    prompt:
+      stem: "We can't ___ a new car this year because we are saving for a house."
+      stem_lang: en
+      options:
+        - { id: a, text: spend, lang: en }
+        - { id: b, text: pay, lang: en }
+        - { id: c, text: afford, lang: en }
+        - { id: d, text: cost, lang: en }
+    answer: c
+    explanation:
+      vi: "“Can't afford something” nghĩa là không đủ tiền để mua. “Pay” cần đi với “for” (pay for a car), còn “cost” có chủ ngữ là món đồ."
+  - key: en:diag:voc-b1-postpone
+    level: b1
+    item_type: mcq
+    prompt:
+      stem: "“postpone” gần nghĩa nhất với cụm động từ nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: put on, lang: en }
+        - { id: b, text: put up, lang: en }
+        - { id: c, text: put away, lang: en }
+        - { id: d, text: put off, lang: en }
+    answer: d
+    explanation:
+      vi: "“Postpone” là hoãn lại, đồng nghĩa với “put off”. “Put on” là mặc vào, “put up” là dựng lên hoặc cho ở nhờ, “put away” là cất đi."
+  - key: en:diag:voc-b1-remind
+    level: b1
+    item_type: mcq
+    prompt:
+      stem: "Please ___ me to call my grandmother tonight, or I will forget."
+      stem_lang: en
+      options:
+        - { id: a, text: remind, lang: en }
+        - { id: b, text: remember, lang: en }
+        - { id: c, text: recall, lang: en }
+        - { id: d, text: repeat, lang: en }
+    answer: a
+    explanation:
+      vi: "Cấu trúc “remind somebody to do something” nghĩa là nhắc ai làm gì. “Remember” là tự mình nhớ, không dùng “remember me to call” theo nghĩa nhắc."
+  # ---------- b2 ----------
+  - key: en:diag:voc-b2-reluctant
+    level: b2
+    item_type: mcq
+    prompt:
+      stem: "“reluctant” gần nghĩa nhất với từ nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: unable, lang: en }
+        - { id: b, text: unaware, lang: en }
+        - { id: c, text: unwilling, lang: en }
+        - { id: d, text: unhappy, lang: en }
+    answer: c
+    explanation:
+      vi: "“Reluctant” là miễn cưỡng, không muốn làm, gần nghĩa với “unwilling”. “Unable” là không có khả năng làm — khác với không muốn làm."
+  - key: en:diag:voc-b2-raise-awareness
+    level: b2
+    item_type: mcq
+    prompt:
+      stem: "The campaign aims to ___ awareness of plastic pollution among young people."
+      stem_lang: en
+      options:
+        - { id: a, text: raise, lang: en }
+        - { id: b, text: rise, lang: en }
+        - { id: c, text: arise, lang: en }
+        - { id: d, text: lift, lang: en }
+    answer: a
+    explanation:
+      vi: "Kết hợp cố định là “raise awareness” (nâng cao nhận thức); “raise” là ngoại động từ nên có tân ngữ. “Rise” và “arise” là nội động từ, không thể theo sau bởi tân ngữ."
+  - key: en:diag:voc-b2-meet-deadline
+    level: b2
+    item_type: mcq
+    prompt:
+      stem: "Despite working all night, the team failed to ___ the deadline."
+      stem_lang: en
+      options:
+        - { id: a, text: catch, lang: en }
+        - { id: b, text: meet, lang: en }
+        - { id: c, text: win, lang: en }
+        - { id: d, text: achieve, lang: en }
+    answer: b
+    explanation:
+      vi: "Cụm đúng là “meet a deadline” (kịp thời hạn). “Achieve” đi với mục tiêu (achieve a goal), không đi với “deadline”."
+  - key: en:diag:voc-b2-thorough
+    level: b2
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “kỹ lưỡng, tỉ mỉ” (ví dụ: một cuộc kiểm tra kỹ lưỡng)?"
+      stem_lang: vi
+      options:
+        - { id: a, text: through, lang: en }
+        - { id: b, text: though, lang: en }
+        - { id: c, text: thought, lang: en }
+        - { id: d, text: thorough, lang: en }
+    answer: d
+    explanation:
+      vi: "“Thorough” nghĩa là kỹ lưỡng (a thorough check). “Through” (xuyên qua), “though” (mặc dù) và “thought” (suy nghĩ) chỉ có cách viết gần giống."
+  - key: en:diag:voc-b2-take-for-granted
+    level: b2
+    item_type: mcq
+    prompt:
+      stem: "Many people take clean water for ___, but in some places it is a luxury."
+      stem_lang: en
+      options:
+        - { id: a, text: given, lang: en }
+        - { id: b, text: sure, lang: en }
+        - { id: c, text: granted, lang: en }
+        - { id: d, text: certain, lang: en }
+    answer: c
+    explanation:
+      vi: "Thành ngữ “take something for granted” nghĩa là coi điều gì là hiển nhiên, không biết trân trọng. Các từ còn lại không tạo thành cụm này."
+  # ---------- c1 ----------
+  - key: en:diag:voc-c1-ubiquitous
+    level: c1
+    item_type: mcq
+    prompt:
+      stem: "“ubiquitous” gần nghĩa nhất với cách diễn đạt nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: có mặt ở khắp nơi, lang: vi }
+        - { id: b, text: cực kỳ hiếm gặp, lang: vi }
+        - { id: c, text: "mơ hồ, khó hiểu", lang: vi }
+        - { id: d, text: "dễ hỏng, dễ vỡ", lang: vi }
+    answer: a
+    explanation:
+      vi: "“Ubiquitous” nghĩa là có mặt ở khắp nơi (ví dụ: smartphones are ubiquitous). Nghĩa “mơ hồ” là của “ambiguous”, một từ có đuôi gần giống."
+  - key: en:diag:voc-c1-bear-brunt
+    level: c1
+    item_type: mcq
+    prompt:
+      stem: "Small businesses are likely to ___ the brunt of the new regulations."
+      stem_lang: en
+      options:
+        - { id: a, text: hold, lang: en }
+        - { id: b, text: bear, lang: en }
+        - { id: c, text: keep, lang: en }
+        - { id: d, text: raise, lang: en }
+    answer: b
+    explanation:
+      vi: "Cụm cố định “bear the brunt of something” nghĩa là gánh chịu phần nặng nề nhất. “Hold” cũng có nghĩa là giữ nhưng không kết hợp với “brunt”."
+  - key: en:diag:voc-c1-mitigate
+    level: c1
+    item_type: mcq
+    prompt:
+      stem: "Planting trees along the riverbank helps to ___ the risk of flooding."
+      stem_lang: en
+      options:
+        - { id: a, text: militate, lang: en }
+        - { id: b, text: exacerbate, lang: en }
+        - { id: c, text: facilitate, lang: en }
+        - { id: d, text: mitigate, lang: en }
+    answer: d
+    explanation:
+      vi: "“Mitigate the risk” là giảm nhẹ rủi ro, hợp với ý trồng cây chống lũ. “Militate” (thường đi với “against”) dễ nhầm do cách viết, còn “exacerbate” lại là làm trầm trọng thêm."
+  - key: en:diag:voc-c1-scrutiny
+    level: c1
+    item_type: mcq
+    prompt:
+      stem: "After the scandal, the company's accounts came under close ___."
+      stem_lang: en
+      options:
+        - { id: a, text: survey, lang: en }
+        - { id: b, text: observance, lang: en }
+        - { id: c, text: scrutiny, lang: en }
+        - { id: d, text: glimpse, lang: en }
+    answer: c
+    explanation:
+      vi: "“Come under close scrutiny” nghĩa là bị xem xét kỹ lưỡng. “Observance” là sự tuân thủ (luật lệ, nghi lễ), không phải sự quan sát kỹ."
+  - key: en:diag:voc-c1-inadvertently
+    level: c1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “vô tình, không cố ý”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: inadvertently, lang: en }
+        - { id: b, text: indifferently, lang: en }
+        - { id: c, text: inevitably, lang: en }
+        - { id: d, text: deliberately, lang: en }
+    answer: a
+    explanation:
+      vi: "“Inadvertently” nghĩa là vô tình, không cố ý. “Indifferently” là thờ ơ, “inevitably” là không thể tránh khỏi, còn “deliberately” ngược lại là cố ý."
+  # ---------- c2 ----------
+  - key: en:diag:voc-c2-notwithstanding
+    level: c2
+    item_type: mcq
+    prompt:
+      stem: "___ the torrential rain, the ceremony went ahead exactly as planned."
+      stem_lang: en
+      options:
+        - { id: a, text: Inasmuch as, lang: en }
+        - { id: b, text: Notwithstanding, lang: en }
+        - { id: c, text: Insofar as, lang: en }
+        - { id: d, text: Whereas, lang: en }
+    answer: b
+    explanation:
+      vi: "“Notwithstanding” là giới từ trang trọng nghĩa là “bất chấp”, đứng trước cụm danh từ. “Inasmuch as”, “insofar as” và “whereas” là liên từ, phải theo sau bởi một mệnh đề."
+  - key: en:diag:voc-c2-perfunctory
+    level: c2
+    item_type: mcq
+    prompt:
+      stem: "“perfunctory” (như trong “a perfunctory glance”) gần nghĩa nhất với cách diễn đạt nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "cẩn trọng, chu đáo", lang: vi }
+        - { id: b, text: "thô lỗ, xấc xược", lang: vi }
+        - { id: c, text: "qua loa, chiếu lệ", lang: vi }
+        - { id: d, text: "kéo dài, dai dẳng", lang: vi }
+    answer: c
+    explanation:
+      vi: "“Perfunctory” chỉ việc làm cho có, qua loa, thiếu quan tâm thật sự. Nghĩa “cẩn trọng, chu đáo” hoàn toàn ngược lại."
+  - key: en:diag:voc-c2-moot-point
+    level: c2
+    item_type: mcq
+    prompt:
+      stem: "Whether the rule was fair is now a ___ point, since it was abolished last year."
+      stem_lang: en
+      options:
+        - { id: a, text: mute, lang: en }
+        - { id: b, text: vacant, lang: en }
+        - { id: c, text: hollow, lang: en }
+        - { id: d, text: moot, lang: en }
+    answer: d
+    explanation:
+      vi: "“A moot point” là vấn đề không còn ý nghĩa thực tế (hoặc còn tranh cãi). “Mute point” là lỗi phổ biến do hai từ phát âm gần giống nhau."
+  - key: en:diag:voc-c2-pyrrhic-victory
+    level: c2
+    item_type: mcq
+    prompt:
+      stem: "Cụm “a Pyrrhic victory” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: chiến thắng phải trả giá quá đắt, lang: vi }
+        - { id: b, text: chiến thắng dễ dàng, lang: vi }
+        - { id: c, text: chiến thắng bất ngờ, lang: vi }
+        - { id: d, text: chiến thắng vẻ vang, lang: vi }
+    answer: a
+    explanation:
+      vi: "“A Pyrrhic victory” là chiến thắng mà cái giá phải trả lớn đến mức gần như thất bại. Nó không chỉ đơn thuần là thắng bất ngờ hay vẻ vang."
+  - key: en:diag:voc-c2-obsequious
+    level: c2
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “khúm núm, xu nịnh quá mức”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: obstreperous, lang: en }
+        - { id: b, text: obsequious, lang: en }
+        - { id: c, text: officious, lang: en }
+        - { id: d, text: oblivious, lang: en }
+    answer: b
+    explanation:
+      vi: "“Obsequious” nghĩa là khúm núm, xu nịnh quá mức. “Officious” là hách dịch, thích xen vào việc người khác; “obstreperous” là ồn ào, ngỗ ngược."

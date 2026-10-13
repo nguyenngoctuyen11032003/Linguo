@@ -1,0 +1,538 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+language: ko
+skill: reading
+items:
+  # ---------------- hangul ----------------
+  - key: ko:diag:read-hangul-exit-sign
+    level: hangul
+    item_type: reading_mcq
+    prompt:
+      passage: "출구"
+      stem: Tấm biển ghi “출구” cho bạn biết điều gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Lối ra", lang: vi }
+        - { id: b, text: "Lối vào", lang: vi }
+        - { id: c, text: "Nhà vệ sinh", lang: vi }
+        - { id: d, text: "Thang máy", lang: vi }
+    answer: a
+    explanation:
+      vi: "“출구” nghĩa là lối ra. Lối vào là “입구”, rất dễ nhầm vì cùng có chữ “구”."
+  - key: ko:diag:read-hangul-student-minsu
+    level: hangul
+    item_type: reading_mcq
+    prompt:
+      passage: "저는 학생이에요. 이름은 민수예요."
+      stem: Theo câu “저는 학생이에요. 이름은 민수예요.”, người nói là ai?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Giáo viên tên Minsu", lang: vi }
+        - { id: b, text: "Học sinh tên Minsu", lang: vi }
+        - { id: c, text: "Học sinh có bạn tên Minsu", lang: vi }
+        - { id: d, text: "Bác sĩ tên Minsu", lang: vi }
+    answer: b
+    explanation:
+      vi: "“학생이에요” là “là học sinh”, “이름은 민수예요” là “tên là Minsu”. Giáo viên là “선생님”, không xuất hiện trong câu."
+  - key: ko:diag:read-hangul-milk-price
+    level: hangul
+    item_type: reading_mcq
+    prompt:
+      passage: "우유 1,000원"
+      stem: Nhãn giá “우유 1,000원” là giá của món gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Nước", lang: vi }
+        - { id: b, text: "Cà phê", lang: vi }
+        - { id: c, text: "Sữa", lang: vi }
+        - { id: d, text: "Bánh mì", lang: vi }
+    answer: c
+    explanation:
+      vi: "“우유” là sữa. Nước là “물”, cà phê là “커피”, bánh mì là “빵”."
+  - key: ko:diag:read-hangul-toilet-arrow
+    level: hangul
+    item_type: reading_mcq
+    prompt:
+      passage: "화장실 →"
+      stem: Mũi tên trên biển “화장실 →” chỉ đường đến đâu?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Nhà ăn", lang: vi }
+        - { id: b, text: "Lối thoát hiểm", lang: vi }
+        - { id: c, text: "Phòng học", lang: vi }
+        - { id: d, text: "Nhà vệ sinh", lang: vi }
+    answer: d
+    explanation:
+      vi: "“화장실” nghĩa là nhà vệ sinh. Nhà ăn là “식당”, phòng học là “교실”."
+  - key: ko:diag:read-hangul-child-sibling
+    level: hangul
+    item_type: reading_mcq
+    prompt:
+      passage: "이 아이는 제 동생이에요."
+      stem: Trong câu “이 아이는 제 동생이에요.”, đứa trẻ là ai của người nói?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Em của người nói", lang: vi }
+        - { id: b, text: "Con của người nói", lang: vi }
+        - { id: c, text: "Bạn của người nói", lang: vi }
+        - { id: d, text: "Học trò của người nói", lang: vi }
+    answer: a
+    explanation:
+      vi: "“동생” là em (em trai hoặc em gái); “아이” chỉ có nghĩa là đứa trẻ. Con của mình thì nói “제 아이” hoặc “제 아들/딸”."
+  # ---------------- topik1 ----------------
+  - key: ko:diag:read-topik1-weekend-movie
+    level: topik1
+    item_type: reading_mcq
+    prompt:
+      passage: "저는 주말에 친구를 만났어요. 같이 영화를 봤어요. 그리고 식당에서 비빔밥을 먹었어요."
+      stem: Cuối tuần, người viết đã ăn món gì ở nhà hàng cùng bạn?
+      stem_lang: vi
+      options:
+        - { id: a, text: "불고기", lang: ko }
+        - { id: b, text: "비빔밥", lang: ko }
+        - { id: c, text: "김밥", lang: ko }
+        - { id: d, text: "라면", lang: ko }
+    answer: b
+    explanation:
+      vi: "Câu cuối nói “식당에서 비빔밥을 먹었어요” (đã ăn bibimbap ở nhà hàng). Các món còn lại không được nhắc đến."
+  - key: ko:diag:read-topik1-monday-home-study
+    level: topik1
+    item_type: reading_mcq
+    prompt:
+      passage: "오늘은 월요일이에요. 저는 월요일에 학교에 안 가요. 집에서 한국어를 공부해요."
+      stem: Hôm nay (thứ Hai) người viết học tiếng Hàn ở đâu?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Ở trường", lang: vi }
+        - { id: b, text: "Ở thư viện", lang: vi }
+        - { id: c, text: "Ở nhà", lang: vi }
+        - { id: d, text: "Ở quán cà phê", lang: vi }
+    answer: c
+    explanation:
+      vi: "“집에서 한국어를 공부해요” nghĩa là học tiếng Hàn ở nhà. “학교에 안 가요” cho biết thứ Hai người viết không đến trường."
+  - key: ko:diag:read-topik1-family-four
+    level: topik1
+    item_type: reading_mcq
+    prompt:
+      passage: "우리 가족은 네 명이에요. 아버지, 어머니, 언니, 그리고 저예요."
+      stem: Gia đình của người viết đoạn “우리 가족은 네 명이에요…” có mấy người?
+      stem_lang: vi
+      options:
+        - { id: a, text: "3 người", lang: vi }
+        - { id: b, text: "5 người", lang: vi }
+        - { id: c, text: "2 người", lang: vi }
+        - { id: d, text: "4 người", lang: vi }
+    answer: d
+    explanation:
+      vi: "“네 명” là 4 người: bố, mẹ, chị gái và người viết. Bạn đừng quên tính cả “저” (tôi) nên không phải 3 người."
+  - key: ko:diag:read-topik1-green-tea-tomorrow
+    level: topik1
+    item_type: reading_mcq
+    prompt:
+      passage: "저는 커피를 안 좋아해요. 그래서 카페에서 주스를 마셔요. 내일은 녹차를 마시고 싶어요."
+      stem: Ngày mai người viết muốn uống gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Cà phê", lang: vi }
+        - { id: b, text: "Trà xanh", lang: vi }
+        - { id: c, text: "Nước ép", lang: vi }
+        - { id: d, text: "Sữa", lang: vi }
+    answer: b
+    explanation:
+      vi: "“내일은 녹차를 마시고 싶어요” nghĩa là ngày mai muốn uống trà xanh. Nước ép (주스) là thứ người viết thường uống, còn cà phê thì không thích."
+  - key: ko:diag:read-topik1-library-hours
+    level: topik1
+    item_type: reading_mcq
+    prompt:
+      passage: "도서관 이용 시간: 월요일~금요일 오전 9시~오후 6시. 토요일, 일요일에는 문을 닫아요."
+      stem: Theo thông báo giờ mở cửa thư viện, thư viện đóng cửa vào ngày nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Thứ Bảy và Chủ nhật", lang: vi }
+        - { id: b, text: "Thứ Hai và thứ Sáu", lang: vi }
+        - { id: c, text: "Chỉ Chủ nhật", lang: vi }
+        - { id: d, text: "Mỗi ngày sau 9 giờ sáng", lang: vi }
+    answer: a
+    explanation:
+      vi: "“토요일, 일요일에는 문을 닫아요” nghĩa là thứ Bảy và Chủ nhật đóng cửa. Thứ Hai đến thứ Sáu thư viện mở từ 9 giờ sáng đến 6 giờ chiều."
+  # ---------------- topik2 ----------------
+  - key: ko:diag:read-topik2-cancel-dinner-message
+    level: topik2
+    item_type: reading_mcq
+    prompt:
+      passage: "민지 씨, 오늘 저녁에 같이 밥을 먹기로 했지요? 그런데 제가 아침부터 머리가 아파서 오늘은 못 가요. 정말 미안해요. 다음 주 토요일에는 시간이 있으니까 그때 만나면 어때요? 제가 맛있는 식당을 찾아볼게요. 답장 기다릴게요."
+      stem: Mục đích chính của tin nhắn gửi Minji là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Mời Minji đến nhà ăn tối", lang: vi }
+        - { id: b, text: "Hỏi Minji tên một nhà hàng ngon", lang: vi }
+        - { id: c, text: "Hủy buổi ăn tối hôm nay và hẹn gặp vào thứ Bảy tuần sau", lang: vi }
+        - { id: d, text: "Báo cho Minji biết mình phải đi bệnh viện", lang: vi }
+    answer: c
+    explanation:
+      vi: "Người viết bị đau đầu (“머리가 아파서”) nên không đi được hôm nay và đề nghị gặp vào thứ Bảy tuần sau. Chính người viết sẽ tự tìm nhà hàng, không hỏi Minji."
+  - key: ko:diag:read-topik2-speaking-class-ad
+    level: topik2
+    item_type: reading_mcq
+    prompt:
+      passage: "한국어 말하기 반 학생을 모집합니다. 수업은 매주 화요일과 목요일 저녁 7시에 있습니다. 한국 사람과 이야기하고 싶지만 말하기가 어려운 분은 신청하세요. 수업료는 한 달에 5만 원입니다. 신청은 학교 홈페이지에서 할 수 있습니다."
+      stem: Điều nào đúng với thông báo tuyển học viên lớp nói tiếng Hàn?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Lớp học vào buổi sáng", lang: vi }
+        - { id: b, text: "Mỗi tuần có hai buổi học", lang: vi }
+        - { id: c, text: "Học phí là 50.000 won mỗi buổi", lang: vi }
+        - { id: d, text: "Phải đến văn phòng trường để đăng ký", lang: vi }
+    answer: b
+    explanation:
+      vi: "Lớp học vào thứ Ba và thứ Năm (“화요일과 목요일”) lúc 7 giờ tối, tức hai buổi mỗi tuần. Học phí 50.000 won là cho một tháng (“한 달에”), và đăng ký qua trang web."
+  - key: ko:diag:read-topik2-moved-to-seoul
+    level: topik2
+    item_type: reading_mcq
+    prompt:
+      passage: "저는 지난달에 서울로 이사했어요. 처음에는 길을 잘 몰라서 지하철을 자주 잘못 탔어요. 그런데 지금은 회사까지 혼자 갈 수 있어요. 집 근처에 큰 공원이 있는데 저녁마다 거기에서 산책해요. 다음 달에는 고향 친구가 놀러 올 거예요."
+      stem: Theo đoạn văn về việc chuyển đến Seoul, hiện nay người viết thế nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Vẫn thường xuyên đi nhầm tàu điện ngầm", lang: vi }
+        - { id: b, text: "Đi dạo ở công viên gần công ty mỗi tối", lang: vi }
+        - { id: c, text: "Tháng trước có bạn ở quê đến chơi", lang: vi }
+        - { id: d, text: "Có thể tự đi đến công ty một mình", lang: vi }
+    answer: d
+    explanation:
+      vi: "“지금은 회사까지 혼자 갈 수 있어요” nghĩa là bây giờ có thể tự đi đến công ty. Việc đi nhầm tàu chỉ xảy ra lúc đầu (“처음에는”), công viên ở gần nhà, còn bạn ở quê sẽ đến vào tháng sau."
+  - key: ko:diag:read-topik2-elevator-inspection
+    level: topik2
+    item_type: reading_mcq
+    prompt:
+      passage: "아파트 주민 여러분, 이번 주 금요일 오전 10시부터 오후 2시까지 엘리베이터 점검이 있습니다. 이 시간에는 엘리베이터를 사용할 수 없으니까 계단을 이용하세요. 무거운 물건이 있으면 목요일까지 옮기세요. 불편을 드려서 죄송합니다."
+      stem: Theo thông báo của chung cư, từ 10 giờ sáng đến 2 giờ chiều thứ Sáu cư dân nên làm gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Đi cầu thang bộ", lang: vi }
+        - { id: b, text: "Chuyển đồ nặng", lang: vi }
+        - { id: c, text: "Ở yên trong nhà", lang: vi }
+        - { id: d, text: "Kiểm tra thang máy", lang: vi }
+    answer: a
+    explanation:
+      vi: "“계단을 이용하세요” là lời yêu cầu dùng cầu thang bộ vì thang máy đang được kiểm tra. Đồ nặng phải chuyển trước, chậm nhất là thứ Năm (“목요일까지”)."
+  - key: ko:diag:read-topik2-sister-yoga-rain
+    level: topik2
+    item_type: reading_mcq
+    prompt:
+      passage: "제 동생은 운동을 아주 좋아해요. 비가 오면 집에서 요가를 하고, 날씨가 좋으면 공원에서 자전거를 타요. 하지만 저는 운동보다 책 읽기를 더 좋아해요. 그래서 주말에 동생은 밖에 나가지만 저는 보통 집에 있어요."
+      stem: Khi trời mưa, em của người viết làm gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Đạp xe ở công viên", lang: vi }
+        - { id: b, text: "Tập yoga ở nhà", lang: vi }
+        - { id: c, text: "Đọc sách ở nhà", lang: vi }
+        - { id: d, text: "Ra ngoài chơi với bạn", lang: vi }
+    answer: b
+    explanation:
+      vi: "“비가 오면 집에서 요가를 하고” nghĩa là nếu trời mưa thì tập yoga ở nhà. Đạp xe là khi trời đẹp, còn đọc sách là sở thích của người viết chứ không phải của em."
+  # ---------------- topik3 ----------------
+  - key: ko:diag:read-topik3-lunchtime-exercise
+    level: topik3
+    item_type: reading_mcq
+    prompt:
+      passage: "요즘 회사원들 사이에서 점심시간에 운동하는 사람이 늘고 있다고 한다. 퇴근 후에는 피곤하거나 약속이 있어서 운동할 시간이 없기 때문이다. 이들은 점심을 간단하게 먹고 회사 근처 헬스장에서 30분 정도 운동한다. 짧은 시간이지만 운동을 하면 오후에 덜 졸리고 일에 더 집중할 수 있다고 한다."
+      stem: Theo bài, vì sao nhiều nhân viên văn phòng tập thể dục vào giờ nghỉ trưa?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Vì phòng tập miễn phí vào buổi trưa", lang: vi }
+        - { id: b, text: "Vì công ty bắt buộc nhân viên tập thể dục", lang: vi }
+        - { id: c, text: "Vì sau giờ làm họ mệt hoặc có hẹn nên không có thời gian", lang: vi }
+        - { id: d, text: "Vì họ muốn bỏ bữa trưa để giảm cân", lang: vi }
+    answer: c
+    explanation:
+      vi: "Câu “퇴근 후에는 피곤하거나 약속이 있어서 운동할 시간이 없기 때문이다” nêu rõ lý do. Họ vẫn ăn trưa, chỉ ăn đơn giản (“간단하게 먹고”), nên không phải bỏ bữa."
+  - key: ko:diag:read-topik3-found-wallet
+    level: topik3
+    item_type: reading_mcq
+    prompt:
+      passage: "어제 집에 오다가 길에서 지갑을 주웠어요. 지갑 안에 신분증이 있었지만 주인에게 직접 연락할 방법이 없었어요. 그래서 가까운 경찰서에 가져다주었어요. 오늘 아침에 경찰서에서 전화가 왔는데, 주인이 지갑을 찾아갔다고 했어요. 주인이 저에게 고맙다는 말을 꼭 전해 달라고 했대요."
+      stem: Điều nào đúng với câu chuyện về chiếc ví nhặt được?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Người viết nhặt được ví trên đường về nhà", lang: vi }
+        - { id: b, text: "Người viết đã gọi điện trực tiếp cho chủ ví", lang: vi }
+        - { id: c, text: "Chủ ví đến tận nhà người viết để cảm ơn", lang: vi }
+        - { id: d, text: "Trong ví không có giấy tờ tùy thân", lang: vi }
+    answer: a
+    explanation:
+      vi: "“집에 오다가” (đang trên đường về nhà thì…) cho biết người viết nhặt ví lúc về nhà. Người viết không liên lạc được với chủ ví, và lời cảm ơn chỉ được nhắn qua đồn cảnh sát."
+  - key: ko:diag:read-topik3-book-swap-event
+    level: topik3
+    item_type: reading_mcq
+    prompt:
+      passage: "다음 달 우리 동네 도서관에서 '책 바꾸기 행사'가 열립니다. 다 읽은 책을 가져오시면 다른 사람이 가져온 책과 바꿀 수 있습니다. 한 사람이 최대 다섯 권까지 바꿀 수 있습니다. 주민들이 책을 나누면서 서로 편하게 이야기할 수 있도록 행사장에 차와 간식도 준비했습니다."
+      stem: Trong sự kiện đổi sách ở thư viện, vì sao ban tổ chức chuẩn bị trà và đồ ăn nhẹ?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Để bán thêm đồ ăn cho cư dân", lang: vi }
+        - { id: b, text: "Để cư dân có thể thoải mái trò chuyện với nhau", lang: vi }
+        - { id: c, text: "Để cảm ơn người mang đến hơn năm cuốn sách", lang: vi }
+        - { id: d, text: "Để cư dân đọc sách lâu hơn ở thư viện", lang: vi }
+    answer: b
+    explanation:
+      vi: "Đuôi “-도록” chỉ mục đích: “서로 편하게 이야기할 수 있도록” là để mọi người có thể thoải mái trò chuyện. Năm cuốn là số sách tối đa mỗi người được đổi, không liên quan đến trà bánh."
+  - key: ko:diag:read-topik3-sujin-worried
+    level: topik3
+    item_type: reading_mcq
+    prompt:
+      passage: "수진 씨가 오늘 하루 종일 말이 없었어요. 점심도 거의 안 먹고 창밖만 보고 있었어요. 아까는 휴대폰을 보다가 갑자기 눈물을 흘렸어요. 무슨 일이 있는 것 같아서 걱정이 돼요. 퇴근할 때 같이 차라도 한잔하자고 해야겠어요."
+      stem: Người viết định làm gì cho Sujin?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Hỏi chuyện Sujin trong giờ ăn trưa", lang: vi }
+        - { id: b, text: "Gọi điện cho Sujin vào buổi tối", lang: vi }
+        - { id: c, text: "Để Sujin ở một mình cho yên tĩnh", lang: vi }
+        - { id: d, text: "Rủ Sujin đi uống trà khi tan làm", lang: vi }
+    answer: d
+    explanation:
+      vi: "“퇴근할 때 같이 차라도 한잔하자고 해야겠어요” nghĩa là định rủ Sujin uống trà lúc tan làm. Giờ ăn trưa đã qua và Sujin hầu như không ăn."
+  - key: ko:diag:read-topik3-subway-vocabulary
+    level: topik3
+    item_type: reading_mcq
+    prompt:
+      passage: "저는 한국 회사에 취직하려고 한국어를 배우기 시작했어요. 일하는 동안에는 공부할 시간이 없어서 출퇴근하는 지하철 안에서 단어를 외워요. 처음에는 힘들었지만 지금은 습관이 돼서 하루에 단어를 스무 개씩 외워요."
+      stem: Người viết học từ vựng tiếng Hàn chủ yếu vào lúc nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Trong giờ làm việc ở công ty", lang: vi }
+        - { id: b, text: "Trên tàu điện ngầm khi đi làm và về nhà", lang: vi }
+        - { id: c, text: "Ở nhà vào buổi tối", lang: vi }
+        - { id: d, text: "Ở trung tâm ngoại ngữ vào cuối tuần", lang: vi }
+    answer: b
+    explanation:
+      vi: "“출퇴근하는 지하철 안에서 단어를 외워요” là học thuộc từ trên tàu điện ngầm lúc đi làm và tan làm. “일하는 동안에는 공부할 시간이 없어서” cho biết trong giờ làm thì không có thời gian học."
+  # ---------------- topik4 ----------------
+  - key: ko:diag:read-topik4-single-households-packaging
+    level: topik4
+    item_type: reading_mcq
+    prompt:
+      passage: "최근 혼자 사는 1인 가구가 빠르게 늘면서 소비 방식도 달라지고 있다. 예전에는 대용량 제품을 사는 것이 경제적이라고 여겼지만, 혼자 사는 사람들은 음식을 다 먹지 못하고 버리는 경우가 많았다. 이 때문에 최근에는 적은 양을 포장한 소포장 상품이 인기를 끌고 있다. 편의점뿐만 아니라 대형 마트에서도 한 번에 먹기 좋은 크기의 채소와 과일을 판매하기 시작했다. 전문가들은 이러한 변화가 앞으로 더욱 확대될 것이라고 전망한다."
+      stem: Nội dung chính của bài viết về hộ gia đình một người là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Siêu thị lớn đã ngừng bán sản phẩm dung lượng lớn", lang: vi }
+        - { id: b, text: "Người sống một mình chủ yếu mua đồ ăn ở cửa hàng tiện lợi", lang: vi }
+        - { id: c, text: "Hộ một người tăng nhanh khiến hàng đóng gói nhỏ được ưa chuộng", lang: vi }
+        - { id: d, text: "Mua sản phẩm dung lượng lớn luôn tiết kiệm hơn", lang: vi }
+    answer: c
+    explanation:
+      vi: "Bài nói hộ một người tăng làm thay đổi cách tiêu dùng, nên hàng đóng gói nhỏ (“소포장 상품”) được ưa chuộng. Bài không nói siêu thị ngừng bán hàng dung lượng lớn, mà chỉ nói họ bắt đầu bán thêm rau quả cỡ nhỏ."
+  - key: ko:diag:read-topik4-late-interview-regret
+    level: topik4
+    item_type: reading_mcq
+    prompt:
+      passage: "지난주 중요한 면접이 있던 날, 알람이 울리지 않는 바람에 늦잠을 자고 말았다. 서둘러 택시를 탔지만 길까지 막혀 결국 10분이나 늦게 도착했다. 면접관들은 괜찮다고 했지만 나는 긴장한 탓에 준비한 답변을 제대로 하지 못했다. 전날 밤 알람을 한 번만 더 확인했더라면 이런 일은 없었을 것이다. 그날 이후 나는 중요한 일이 있는 날에는 알람을 두 개씩 맞춰 둔다."
+      stem: Người viết hối tiếc nhất về điều gì trong ngày phỏng vấn?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Không kiểm tra lại báo thức vào tối hôm trước", lang: vi }
+        - { id: b, text: "Đi taxi thay vì đi tàu điện ngầm", lang: vi }
+        - { id: c, text: "Không chuẩn bị câu trả lời cho buổi phỏng vấn", lang: vi }
+        - { id: d, text: "Nói với người phỏng vấn rằng mình không sao", lang: vi }
+    answer: a
+    explanation:
+      vi: "Cấu trúc “-았/었더라면” diễn tả sự tiếc nuối: “알람을 한 번만 더 확인했더라면” (giá mà kiểm tra báo thức thêm một lần). Người viết có chuẩn bị câu trả lời (“준비한 답변”), chỉ là vì căng thẳng nên trả lời không tốt."
+  - key: ko:diag:read-topik4-attitude-to-mistakes
+    level: topik4
+    item_type: reading_mcq
+    prompt:
+      passage: "새로운 환경에 처음 들어가면 누구나 실수를 하기 마련이다. 문제는 실수 자체가 아니라 실수를 대하는 태도이다. 실수를 감추려고 하면 같은 실수를 반복하기 쉽지만, 실수를 인정하고 원인을 분석하면 오히려 성장의 기회로 삼을 수 있다. 실제로 많은 기업에서는 신입 사원이 실수를 솔직하게 보고할 수 있는 분위기를 만들기 위해 노력하고 있다. 실수를 두려워하는 조직에서는 새로운 시도도 나오기 어렵기 때문이다."
+      stem: Ý chính của đoạn văn bàn về việc mắc lỗi ở môi trường mới là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Nhân viên mới tuyệt đối không được mắc lỗi", lang: vi }
+        - { id: b, text: "Điều quan trọng là thái độ đối với sai lầm chứ không phải bản thân sai lầm", lang: vi }
+        - { id: c, text: "Nên che giấu những lỗi nhỏ để giữ không khí tốt", lang: vi }
+        - { id: d, text: "Doanh nghiệp nên phạt nặng nhân viên mắc lỗi", lang: vi }
+    answer: b
+    explanation:
+      vi: "Câu then chốt là “문제는 실수 자체가 아니라 실수를 대하는 태도이다”. “-기 마련이다” cho thấy mắc lỗi là điều tất yếu, nên phương án “tuyệt đối không được mắc lỗi” trái với ý bài."
+  - key: ko:diag:read-topik4-jeju-unplanned-trip
+    level: topik4
+    item_type: reading_mcq
+    prompt:
+      passage: "얼마 전 제주도에 다녀왔는데 생각보다 바람이 많이 불더라고요. 그래서 계획했던 배 여행은 취소됐지만, 대신 현지 사람이 추천해 준 작은 마을을 걸어 다녔어요. 관광지처럼 화려하지는 않았지만 돌담길이 정말 아름답더라고요. 마을 식당 주인은 우리가 관광객인 걸 알고 반찬을 더 챙겨 주시기도 했어요. 계획대로 되지 않은 여행이었지만 오히려 가장 기억에 남는 여행이 됐어요."
+      stem: Người viết cảm thấy thế nào về chuyến đi Jeju?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Rất tiếc vì chuyến đi thuyền bị hủy", lang: vi }
+        - { id: b, text: "Thất vọng vì ngôi làng không nhộn nhịp như khu du lịch", lang: vi }
+        - { id: c, text: "Không vui vì chủ quán ăn đối xử lạnh nhạt", lang: vi }
+        - { id: d, text: "Dù không theo kế hoạch nhưng lại là chuyến đi đáng nhớ nhất", lang: vi }
+    answer: d
+    explanation:
+      vi: "Câu cuối “계획대로 되지 않은 여행이었지만 오히려 가장 기억에 남는 여행이 됐어요” thể hiện cảm nghĩ tích cực. Người viết khen con đường tường đá đẹp và chủ quán còn cho thêm món ăn kèm, nên không hề thất vọng."
+  - key: ko:diag:read-topik4-smartphone-sleep
+    level: topik4
+    item_type: reading_mcq
+    prompt:
+      passage: "잠들기 직전까지 스마트폰을 보는 습관은 수면의 질을 떨어뜨린다. 화면에서 나오는 빛이 잠을 부르는 호르몬의 분비를 방해하는 탓에 잠드는 시간이 늦어지기 때문이다. 특히 불을 끈 채로 어두운 방에서 화면을 보면 눈의 피로도 커진다. 전문가들은 잠자리에 들기 최소 한 시간 전에는 스마트폰을 멀리 두고, 대신 가벼운 독서나 스트레칭을 하라고 조언한다."
+      stem: Theo bài, vì sao xem điện thoại ngay trước khi ngủ khiến ta ngủ muộn hơn?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Vì âm thanh thông báo làm người dùng tỉnh giấc", lang: vi }
+        - { id: b, text: "Vì ánh sáng màn hình cản trở việc tiết hormone gây buồn ngủ", lang: vi }
+        - { id: c, text: "Vì nội dung trên mạng gây căng thẳng", lang: vi }
+        - { id: d, text: "Vì dùng điện thoại làm giảm thời gian đọc sách", lang: vi }
+    answer: b
+    explanation:
+      vi: "“빛이 잠을 부르는 호르몬의 분비를 방해하는 탓에” nêu nguyên nhân: ánh sáng cản trở hormone gây ngủ. Âm thanh thông báo hay nội dung căng thẳng không hề được nhắc đến."
+  # ---------------- topik5 ----------------
+  - key: ko:diag:read-topik5-youth-employment-policy
+    level: topik5
+    item_type: reading_mcq
+    prompt:
+      passage: "정부가 청년 고용을 늘리기 위해 다양한 지원책을 내놓았지만 현장의 반응은 냉담하다. 지원금을 받는 기업 중 상당수가 단기 계약직만 채용하는 탓에 청년들의 고용 불안은 해소되기는커녕 오히려 심화되었다는 지적이 나온다. 전문가들은 일자리의 양보다 질에 초점을 맞추지 않는 한 이러한 악순환은 계속될 것이라고 경고한다. 결국 정책의 성패는 청년들이 장기적으로 경력을 쌓을 수 있는 안정적인 일자리를 얼마나 만들어 내느냐에 달려 있는 셈이다."
+      stem: Theo bài viết về chính sách việc làm cho thanh niên, điều gì quyết định sự thành bại của chính sách?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Tạo ra bao nhiêu việc làm ổn định giúp thanh niên tích lũy kinh nghiệm lâu dài", lang: vi }
+        - { id: b, text: "Tăng số lượng hợp đồng ngắn hạn càng nhiều càng tốt", lang: vi }
+        - { id: c, text: "Tăng mức trợ cấp cho doanh nghiệp", lang: vi }
+        - { id: d, text: "Bãi bỏ toàn bộ các chính sách hỗ trợ hiện có", lang: vi }
+    answer: a
+    explanation:
+      vi: "Câu cuối nói thành bại “달려 있는 셈이다” (rốt cuộc phụ thuộc vào) việc tạo ra việc làm ổn định, lâu dài. Bài phê phán chính hợp đồng ngắn hạn: “-기는커녕” cho thấy bất ổn không những không giảm mà còn tăng."
+  - key: ko:diag:read-topik5-joseon-seonbi-integrity
+    level: topik5
+    item_type: reading_mcq
+    prompt:
+      passage: "조선 시대의 선비들은 가난하게 살지언정 의롭지 않은 재물은 탐하지 않는 것을 미덕으로 여겼다. 그들에게 학문은 출세의 수단이기 이전에 인격을 수양하는 과정이었다. 물론 모든 선비가 이러한 이상을 실천한 것은 아니지만, 청렴을 중시하는 이 같은 가치관은 오늘날까지도 공직자에게 요구되는 덕목으로 이어지고 있다."
+      stem: Theo bài, các 선비 (nho sĩ) thời Joseon coi điều gì là mỹ đức?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Học tập chủ yếu để thăng quan tiến chức", lang: vi }
+        - { id: b, text: "Tích lũy của cải để giúp đỡ dân nghèo", lang: vi }
+        - { id: c, text: "Thà sống nghèo còn hơn tham của cải bất chính", lang: vi }
+        - { id: d, text: "Bắt buộc mọi nho sĩ phải làm quan", lang: vi }
+    answer: c
+    explanation:
+      vi: "“-(으)ㄹ지언정” nghĩa là “thà… chứ không…”: “가난하게 살지언정 의롭지 않은 재물은 탐하지 않는 것”. Bài nói việc học “출세의 수단이기 이전에” là để tu dưỡng nhân cách, nên phương án thăng quan tiến chức là sai."
+  - key: ko:diag:read-topik5-urban-heat-island
+    level: topik5
+    item_type: reading_mcq
+    prompt:
+      passage: "도시의 기온이 주변 지역보다 높게 나타나는 현상을 '열섬 현상'이라고 한다. 아스팔트와 콘크리트는 낮 동안 흡수한 열을 밤에 천천히 방출하고, 건물이 밀집해 있어 바람의 흐름도 원활하지 않기 때문이다. 이를 완화하기 위해 일부 도시에서는 건물 옥상에 정원을 조성하거나 도로에 물을 뿌리는 방안을 시행하고 있다. 녹지는 그늘을 만들 뿐만 아니라 수분을 증발시키며 주변 온도를 낮추는 역할을 한다."
+      stem: Câu nào phù hợp với nội dung bài viết về hiện tượng “đảo nhiệt” (열섬 현상)?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Nhiệt độ thành phố thường thấp hơn vùng xung quanh", lang: vi }
+        - { id: b, text: "Nhờ nhà cửa dày đặc nên gió lưu thông tốt hơn", lang: vi }
+        - { id: c, text: "Cây xanh chỉ có tác dụng tạo bóng râm", lang: vi }
+        - { id: d, text: "Nhựa đường và bê tông tỏa ra vào ban đêm lượng nhiệt đã hấp thụ ban ngày", lang: vi }
+    answer: d
+    explanation:
+      vi: "Bài nói “낮 동안 흡수한 열을 밤에 천천히 방출하고”, khớp với phương án đúng. Cây xanh “그늘을 만들 뿐만 아니라” còn làm bay hơi nước để hạ nhiệt, nên “chỉ tạo bóng râm” là sai."
+  - key: ko:diag:read-topik5-executive-bonus-critique
+    level: topik5
+    item_type: reading_mcq
+    prompt:
+      passage: "회사 측은 경영 악화를 이유로 직원들에게 임금 동결을 요청했다. 그러나 같은 시기에 경영진의 성과급은 오히려 인상된 것으로 드러났다. 직원들에게 고통 분담을 요구하는 마당에 경영진이 자기 몫부터 챙긴다면 직원들이 회사의 호소에 공감할 리가 없다. 위기를 극복하려면 무엇보다 경영진이 먼저 솔선수범하는 모습을 보여야 한다."
+      stem: Thái độ của người viết đối với ban lãnh đạo công ty là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Ủng hộ việc đóng băng lương để vượt qua khủng hoảng", lang: vi }
+        - { id: b, text: "Phê phán và yêu cầu ban lãnh đạo phải làm gương trước", lang: vi }
+        - { id: c, text: "Cho rằng nhân viên thiếu tinh thần hợp tác", lang: vi }
+        - { id: d, text: "Đề nghị tăng tiền thưởng cho nhân viên", lang: vi }
+    answer: b
+    explanation:
+      vi: "“-는 마당에” (trong hoàn cảnh đang…) và “공감할 리가 없다” (không đời nào đồng cảm) thể hiện sự phê phán; câu cuối yêu cầu lãnh đạo “솔선수범” (làm gương trước). Người viết không trách nhân viên."
+  - key: ko:diag:read-topik5-misinformation-overlook
+    level: topik5
+    item_type: reading_mcq
+    prompt:
+      passage: "디지털 기술의 발달로 누구나 손쉽게 정보를 생산하고 공유할 수 있게 되었다. 그러나 정보의 양이 폭증하면서 출처가 불분명한 정보가 사실처럼 유통되는 부작용도 커지고 있다. 사람들은 자신이 이미 믿고 있는 내용과 일치하는 정보만 선택적으로 받아들이는 경향이 있는데, 이 점을 간과하면 허위 정보의 확산을 막기 어렵다. 따라서 정보를 비판적으로 읽고 검증하는 능력을 기르는 교육이 시급하다."
+      stem: Từ “간과하면” trong bài viết về thông tin sai lệch gần nghĩa nhất với cách diễn đạt nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Nếu kiểm chứng kỹ", lang: vi }
+        - { id: b, text: "Nếu phóng đại", lang: vi }
+        - { id: c, text: "Nếu bỏ qua, không lưu tâm", lang: vi }
+        - { id: d, text: "Nếu chấp nhận hoàn toàn", lang: vi }
+    answer: c
+    explanation:
+      vi: "“간과하다” (看過) nghĩa là xem nhẹ, bỏ qua không chú ý. Ngữ cảnh: nếu bỏ qua xu hướng chỉ tin thông tin hợp ý mình thì khó ngăn tin giả lan rộng; “kiểm chứng” lại là việc bài khuyên nên làm."
+  # ---------------- topik6 ----------------
+  - key: ko:diag:read-topik6-sotamdaesil-rnd-cut
+    level: topik6
+    item_type: reading_mcq
+    prompt:
+      passage: "한 기업이 단기 실적을 올리기 위해 연구 개발 예산을 대폭 삭감하고 그 돈으로 주주 배당을 늘렸다. 당장은 주가가 올라 경영진이 찬사를 받았지만, 몇 년 뒤 경쟁사들이 신기술을 앞세워 시장을 장악하자 이 기업은 속수무책으로 점유율을 잃었다. 눈앞의 이익에 급급해 장래의 성장 동력을 스스로 허문 셈이니, 이야말로 소탐대실의 전형이라 하겠다."
+      stem: Trong bài, thành ngữ “소탐대실” dùng để chỉ điều gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Mất bò mới lo làm chuồng", lang: vi }
+        - { id: b, text: "Tham lợi nhỏ trước mắt mà mất cái lớn", lang: vi }
+        - { id: c, text: "Một công đôi việc", lang: vi }
+        - { id: d, text: "Kiên nhẫn chờ đợi ắt sẽ thành công", lang: vi }
+    answer: b
+    explanation:
+      vi: "“소탐대실” (小貪大失) là tham cái nhỏ mà mất cái lớn: cắt ngân sách nghiên cứu vì lợi nhuận ngắn hạn rồi mất thị phần. “Mất bò mới lo làm chuồng” là “소 잃고 외양간 고친다”, dễ nhầm vì cùng có chữ “소”."
+  - key: ko:diag:read-topik6-ai-understanding-criteria
+    level: topik6
+    item_type: reading_mcq
+    prompt:
+      passage: "인공지능이 인간의 언어를 완벽하게 모방할 수 있게 되었다손 치더라도, 그것이 곧 인공지능이 의미를 이해한다는 증거가 되지는 않는다. 기호를 규칙에 따라 조작하는 능력과 그 기호가 가리키는 세계를 경험하는 능력은 본질적으로 다르기 때문이다. 이른바 '이해'의 기준을 무엇으로 삼느냐에 따라 이 논쟁의 결론은 얼마든지 달라질 수 있으며, 바로 그 기준에 대한 합의가 부재하다는 점이 문제의 핵심이다."
+      stem: Theo tác giả, cốt lõi của cuộc tranh luận về việc trí tuệ nhân tạo có “hiểu” ngôn ngữ hay không là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Trí tuệ nhân tạo vẫn chưa bắt chước được ngôn ngữ con người một cách hoàn hảo", lang: vi }
+        - { id: b, text: "Trí tuệ nhân tạo đã thực sự hiểu được ý nghĩa", lang: vi }
+        - { id: c, text: "Chưa có sự đồng thuận về tiêu chuẩn thế nào là “hiểu”", lang: vi }
+        - { id: d, text: "Con người không thể trải nghiệm thế giới thông qua ký hiệu", lang: vi }
+    answer: c
+    explanation:
+      vi: "Câu cuối nói rõ “그 기준에 대한 합의가 부재하다는 점이 문제의 핵심이다”. “-다손 치더라도” chỉ là giả định nhượng bộ (cứ cho là bắt chước hoàn hảo đi nữa), không phải khẳng định AI chưa bắt chước được."
+  - key: ko:diag:read-topik6-lost-way-essay
+    level: topik6
+    item_type: reading_mcq
+    prompt:
+      passage: "살다 보면 뜻대로 되지 않는 일이 더 많다. 그러나 묵묵히 제 길을 걷노라면 언젠가는 지나온 길이 하나의 무늬가 되어 있음을 깨닫게 된다. 젊은 날의 방황을 실패라 단정할 일은 아니다. 돌이켜 보건대 내 삶에서 가장 값진 깨달음은 늘 계획이 어긋난 자리에서 찾아왔다. 그러니 지금 길을 잃었다 한들 조급해할 까닭이 없다. 길을 잃는 것 또한 길을 찾는 과정의 일부이기 때문이다."
+      stem: Thông điệp chính của bài tùy bút về việc “lạc đường” trong cuộc sống là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Cần lập kế hoạch thật chặt chẽ để tránh thất bại", lang: vi }
+        - { id: b, text: "Sự lang thang thời trẻ là một thất bại cần tránh", lang: vi }
+        - { id: c, text: "Những điều quý giá chỉ đến khi mọi việc diễn ra đúng kế hoạch", lang: vi }
+        - { id: d, text: "Lạc lối cũng là một phần của hành trình tìm đường nên không cần nóng vội", lang: vi }
+    answer: d
+    explanation:
+      vi: "“길을 잃었다 한들 조급해할 까닭이 없다” (dù có lạc đường thì cũng chẳng việc gì phải vội) và câu cuối khẳng định lạc lối là một phần của việc tìm đường. Tác giả nói điều quý giá nhất lại đến “계획이 어긋난 자리에서”, trái với phương án về kế hoạch."
+  - key: ko:diag:read-topik6-mother-quiet-dawn
+    level: topik6
+    item_type: reading_mcq
+    prompt:
+      passage: "어머니는 새벽마다 아들이 깰세라 발소리를 죽이며 부엌으로 향했다. 도시락을 싸는 손길은 분주했지만 그릇 부딪는 소리 하나 내지 않았다. 아들은 훗날 자식을 키우고 나서야 그 고요함이 얼마나 고단한 정성이었는지 헤아리게 되었다. 당연하게 누렸던 아침의 평온 뒤에는 누군가의 숨죽인 수고가 있었던 것이다."
+      stem: Vì sao mỗi sáng sớm người mẹ lại đi rón rén vào bếp?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Vì sợ con trai bị đánh thức", lang: vi }
+        - { id: b, text: "Vì sợ hàng xóm phàn nàn về tiếng ồn", lang: vi }
+        - { id: c, text: "Vì bà quá mệt mỏi sau một ngày làm việc", lang: vi }
+        - { id: d, text: "Vì bà không muốn con biết mình chuẩn bị cơm hộp", lang: vi }
+    answer: a
+    explanation:
+      vi: "“-(으)ㄹ세라” nghĩa là “e rằng, sợ rằng (điều gì) sẽ xảy ra”: “아들이 깰세라” là sợ con trai thức giấc. Hàng xóm không được nhắc đến, và sự im lặng là vì con chứ không phải để giấu việc làm cơm hộp."
+  - key: ko:diag:read-topik6-dialect-reevaluation
+    level: topik6
+    item_type: reading_mcq
+    prompt:
+      passage: "역사를 돌아보건대 한 사회의 언어 정책은 단순히 의사소통의 효율성만을 고려한 결과가 아니었다. 표준어의 제정은 국가 통합이라는 명분 아래 추진되었으나, 그 이면에서는 지역 방언이 '교양 없는 말'로 낙인찍히는 부작용이 뒤따랐다. 최근 방언을 지역 고유의 문화 자산으로 재평가하려는 움직임은 이러한 일방적 위계에 대한 반성에서 비롯된 것이라 할 수 있다. 언어의 다양성을 보존하는 일이 곧 공동체의 기억을 지키는 일이라는 인식이 확산되고 있는 것이다."
+      stem: Theo bài, xu hướng đánh giá lại phương ngữ gần đây bắt nguồn từ đâu?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Từ nhu cầu giao tiếp hiệu quả hơn giữa các vùng", lang: vi }
+        - { id: b, text: "Từ sự tự phản tỉnh về thứ bậc áp đặt một chiều giữa tiếng chuẩn và phương ngữ", lang: vi }
+        - { id: c, text: "Từ mục tiêu thống nhất quốc gia của chính sách ngôn ngữ chuẩn", lang: vi }
+        - { id: d, text: "Từ việc phương ngữ nay được dùng phổ biến hơn tiếng chuẩn", lang: vi }
+    answer: b
+    explanation:
+      vi: "Bài viết: “이러한 일방적 위계에 대한 반성에서 비롯된 것”, tức xuất phát từ sự tự phản tỉnh về thứ bậc một chiều. Thống nhất quốc gia là danh nghĩa của việc ban hành tiếng chuẩn, chứ không phải nguồn gốc của phong trào đánh giá lại phương ngữ."
