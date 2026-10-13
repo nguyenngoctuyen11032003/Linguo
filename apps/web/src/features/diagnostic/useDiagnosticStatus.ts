@@ -1,44 +1,59 @@
-// placeholder: replaced by Task D6
-// Minimal stand-in so the D8 entry points (Home card, onboarding, settings) build and run before D6 lands.
 import { useEffect, useReducer, useState } from 'react';
-import { diagnosticStatusSchema, type DiagnosticStatus } from '@linguo/shared';
-import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
-import { callRpc, parse } from '@/features/lesson-player/service';
+import type { DiagnosticStatus } from '@linguo/shared';
+import { useAuth } from '@/features/auth/AuthProvider';
 import { getSupabase } from '@/lib/supabase';
+import { diagnosticErrorMessage } from './error-map';
+import { diagnosticStatus } from './service';
 
 export interface DiagnosticStatusState {
   status: 'loading' | 'ready' | 'error';
   data: DiagnosticStatus | null;
+  /** Vietnamese message when status is 'error'. */
+  error: string | null;
   reload: () => void;
 }
 
-export function useDiagnosticStatus(pathId?: string): DiagnosticStatusState {
-  const { currentId } = useLearningPaths();
-  const path = pathId ?? currentId;
+interface Loaded {
+  key: string;
+  status: DiagnosticStatusState['status'];
+  data: DiagnosticStatus | null;
+  error: string | null;
+}
+
+/** `diagnostic_status` of a learning path (Home card, settings "Làm lại bài kiểm tra"). */
+export function useDiagnosticStatus(pathId: string | null | undefined): DiagnosticStatusState {
+  const { user } = useAuth();
+  const userId = user?.id ?? null;
   const client = getSupabase();
   const [attempt, reload] = useReducer((n: number) => n + 1, 0);
-  const [loaded, setLoaded] = useState<{ key: string; status: DiagnosticStatusState['status']; data: DiagnosticStatus | null }>({
-    key: '',
-    status: 'loading',
-    data: null,
-  });
-  const key = `${path ?? ''}:${attempt}`;
+  const key = `${userId ?? ''}:${pathId ?? ''}`;
+  const [loaded, setLoaded] = useState<Loaded>({ key, status: 'loading', data: null, error: null });
 
   useEffect(() => {
-    if (!client || !path) return;
+    if (!userId) return;
+    if (!client) {
+      setLoaded({ key, status: 'error', data: null, error: diagnosticErrorMessage(new Error('supabase_unavailable')) });
+      return;
+    }
+    if (!pathId) {
+      setLoaded({ key, status: 'error', data: null, error: diagnosticErrorMessage({ message: 'path_not_found' }) });
+      return;
+    }
     let active = true;
-    callRpc(client, 'diagnostic_status', { p_path_id: path })
+    // Keep showing the previous status of the same path while refreshing.
+    setLoaded((prev) => (prev.key === key ? prev : { key, status: 'loading', data: null, error: null }));
+    diagnosticStatus(client, pathId)
       .then((data) => {
-        if (active) setLoaded({ key, status: 'ready', data: parse(diagnosticStatusSchema, data) });
+        if (active) setLoaded({ key, status: 'ready', data, error: null });
       })
-      .catch(() => {
-        if (active) setLoaded({ key, status: 'error', data: null });
+      .catch((error: unknown) => {
+        if (active) setLoaded({ key, status: 'error', data: null, error: diagnosticErrorMessage(error) });
       });
     return () => {
       active = false;
     };
-  }, [client, path, key]);
+  }, [client, userId, pathId, key, attempt]);
 
-  if (!client) return { status: 'error', data: null, reload };
-  return loaded.key === key ? { status: loaded.status, data: loaded.data, reload } : { status: 'loading', data: null, reload };
+  const current = loaded.key === key ? loaded : { status: 'loading' as const, data: null, error: null };
+  return { status: current.status, data: current.data, error: current.error, reload };
 }
