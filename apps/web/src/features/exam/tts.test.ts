@@ -53,7 +53,7 @@ describe('tts', () => {
   it('prefers ko-KR / en-US and resolves when speech ends', async () => {
     const synth = fakeSynth(['en-GB', 'en_US', 'ko-KR']);
     const done = speak('Hello there', 'en', { rate: 0.8 });
-    const [u] = synth.spoken;
+    const u = synth.spoken[0]!;
     expect(u.text).toBe('Hello there');
     expect(u.lang).toBe('en-US');
     expect(u.voice).toEqual({ lang: 'en_US', name: 'Voice en_US' });
@@ -86,7 +86,7 @@ describe('tts', () => {
   it('rejects on a synthesis error', async () => {
     const synth = fakeSynth(['ko-KR']);
     const done = speak('안녕하세요', 'ko');
-    synth.spoken[0].onerror?.({ error: 'synthesis-failed' });
+    synth.spoken[0]!.onerror?.({ error: 'synthesis-failed' });
     await expect(done).rejects.toThrow('tts_failed');
   });
 

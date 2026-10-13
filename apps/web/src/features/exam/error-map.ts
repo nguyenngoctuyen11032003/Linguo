@@ -20,6 +20,8 @@ const MESSAGES: Record<string, string> = {
   ...EXAM_MESSAGES,
   invalid_payload: 'Dữ liệu bài thi không hợp lệ. Vui lòng thử lại.',
   supabase_unavailable: 'Chưa cấu hình kết nối máy chủ.',
+  /** Local: submit refused because answers are still queued while offline. */
+  answers_unsaved: 'Mất kết nối nên chưa lưu được hết câu trả lời. Kiểm tra mạng rồi nộp lại.',
 };
 
 const NETWORK_MESSAGE = 'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.';

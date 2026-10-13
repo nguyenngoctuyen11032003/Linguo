@@ -14,6 +14,9 @@ describe('examErrorMessage', () => {
   it('maps local failures', () => {
     expect(examErrorMessage(new Error('invalid_payload'))).toBe('Dữ liệu bài thi không hợp lệ. Vui lòng thử lại.');
     expect(examErrorMessage(new Error('supabase_unavailable'))).toBe('Chưa cấu hình kết nối máy chủ.');
+    expect(examErrorMessage(new Error('answers_unsaved'))).toBe(
+      'Mất kết nối nên chưa lưu được hết câu trả lời. Kiểm tra mạng rồi nộp lại.',
+    );
   });
 
   it('maps network failures', () => {
