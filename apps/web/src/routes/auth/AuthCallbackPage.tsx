@@ -11,10 +11,14 @@ import { AuthCard } from './AuthCard';
 /** The only place password-recovery links point to (see ForgotPasswordPage). */
 const RECOVERY_PATH = '/dat-lai-mat-khau';
 
-/** Query params are attacker-controlled: never render them, only map known codes to our own text. */
-function providerErrorMessage(params: URLSearchParams): string | null {
-  if (!params.has('error') && !params.has('error_code') && !params.has('error_description')) return null;
-  const code = params.get('error_code') ?? params.get('error');
+/**
+ * Supabase reports expired/used links in the URL hash (`#error=access_denied&error_code=otp_expired`)
+ * as often as in the query, so look at both. Both are attacker-controlled: never render them, only map
+ * known codes to our own text. Returns null when there is neither an error code nor an error.
+ */
+function providerErrorMessage(query: URLSearchParams, hash: URLSearchParams): string | null {
+  const code = query.get('error_code') ?? hash.get('error_code') ?? query.get('error') ?? hash.get('error');
+  if (!code) return null;
   return isKnownAuthErrorCode(code) ? authErrorMessage({ code }) : authErrorMessage(undefined);
 }
 
@@ -22,7 +26,7 @@ export function AuthCallbackPage() {
   const [params] = useSearchParams();
   const navigate = useNavigate();
   const started = useRef(false);
-  const providerError = providerErrorMessage(params);
+  const providerError = providerErrorMessage(params, new URLSearchParams(window.location.hash.slice(1)));
   const [error, setError] = useState<string | null>(providerError);
 
   useEffect(() => {

@@ -179,7 +179,37 @@ describe('AuthCallbackPage', () => {
     at('/auth/callback?error=weird_thing&error_description=Secret%20detail', '/auth/callback', <AuthCallbackPage />);
     expect(await screen.findByText('Đã có lỗi xảy ra. Vui lòng thử lại.')).toBeInTheDocument();
     expect(screen.queryByText('Secret detail')).not.toBeInTheDocument();
-    expect(screen.queryByText('weird_thing')).not.toBeInTheDocument();  });
+    expect(screen.queryByText('weird_thing')).not.toBeInTheDocument();
+  });
+
+  describe('errors reported in the URL hash', () => {
+    afterEach(() => {
+      window.location.hash = '';
+    });
+
+    it('maps a hash otp_expired to the expired-link message without rendering error_description', async () => {
+      window.location.hash = '#error=access_denied&error_code=otp_expired&error_description=%3Cb%3EInjected%3C%2Fb%3E%20raw%20text';
+      at('/auth/callback', '/auth/callback', <AuthCallbackPage />);
+      expect(await screen.findByText('Liên kết đã hết hạn. Vui lòng yêu cầu liên kết mới.')).toBeInTheDocument();
+      expect(screen.queryByText(/raw text/)).not.toBeInTheDocument();
+      expect(mocks.auth.exchangeCodeForSession).not.toHaveBeenCalled();
+    });
+
+    it('shows the generic message for an unknown hash code', async () => {
+      window.location.hash = '#error=access_denied&error_code=weird_thing&error_description=Secret%20detail';
+      at('/auth/callback', '/auth/callback', <AuthCallbackPage />);
+      expect(await screen.findByText('Đã có lỗi xảy ra. Vui lòng thử lại.')).toBeInTheDocument();
+      expect(screen.queryByText('Secret detail')).not.toBeInTheDocument();
+      expect(screen.queryByText('weird_thing')).not.toBeInTheDocument();
+    });
+
+    it('still redirects to sign-in when there is neither a code nor an error', async () => {
+      window.location.hash = '#foo=bar';
+      at('/auth/callback', '/auth/callback', <AuthCallbackPage />);
+      await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent('/dang-nhap'));
+      expect(mocks.auth.exchangeCodeForSession).not.toHaveBeenCalled();
+    });
+  });
 });
 
 describe('ResetPasswordPage', () => {
