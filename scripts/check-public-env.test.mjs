@@ -28,3 +28,32 @@ test('strict mode requires values; non-strict allows empty', () => {
 test('rejects non-https URLs', () => {
   assert.match(checkPublicEnv({ ...ok, VITE_SUPABASE_URL: 'http://abc.supabase.co' })[0], /https/);
 });
+
+test('rejects half-configured env in any mode', () => {
+  const urlOnly = { VITE_SUPABASE_URL: 'https://abc.supabase.co' };
+  const keyOnly = { VITE_SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_123' };
+  for (const strict of [false, true]) {
+    assert.match(checkPublicEnv(urlOnly, { strict })[0], /VITE_SUPABASE_PUBLISHABLE_KEY/);
+    assert.match(checkPublicEnv(keyOnly, { strict })[0], /VITE_SUPABASE_URL/);
+  }
+});
+
+test('rejects placeholder and malformed URLs', () => {
+  for (const bad of ['https://<project-ref>.supabase.co', 'https://localhost', 'https://abc.supabase.co/rest']) {
+    assert.ok(checkPublicEnv({ ...ok, VITE_SUPABASE_URL: bad }).length > 0, bad);
+  }
+  assert.deepEqual(checkPublicEnv({ ...ok, VITE_SUPABASE_URL: 'https://abc.supabase.co/' }), []);
+});
+
+test('JWT key must have role anon explicitly', () => {
+  const noRole = `eyJhbGciOiJIUzI1NiJ9.${Buffer.from('{}').toString('base64url')}.sig`;
+  assert.ok(checkPublicEnv({ ...ok, VITE_SUPABASE_PUBLISHABLE_KEY: noRole }).length > 0);
+  assert.match(checkPublicEnv({ ...ok, VITE_SUPABASE_PUBLISHABLE_KEY: jwt('authenticated') })[0], /authenticated/);
+});
+
+test('scans every VITE_ value for secrets', () => {
+  assert.match(checkPublicEnv({ ...ok, VITE_SUPABASE_ANON_KEY: 'sb_secret_x' })[0], /sb_secret_/);
+  assert.match(checkPublicEnv({ ...ok, VITE_OTHER: jwt('service_role') })[0], /service_role/);
+  assert.deepEqual(checkPublicEnv({ ...ok, VITE_OTHER: jwt('anon') }), []);
+  assert.deepEqual(checkPublicEnv({ ...ok, VITE_SITE_URL: 'https://x.github.io/Linguo' }), []);
+});
