@@ -3,12 +3,29 @@ import { LANGUAGE_CODES } from '../constants';
 import { FEASIBILITIES, type EstimateResult } from './estimate';
 import { allowedTargets, GOAL_TYPES, isGoalForLanguage, isLevelOf, START_POINTS } from './levels';
 
-export const isoDateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, { message: 'Ngày không hợp lệ.' });
+const INVALID_DATE = 'Ngày không hợp lệ.';
+const INVALID_MINUTES = 'Số phút không hợp lệ.';
+const INVALID_WEEK = 'Lịch học cần đủ 7 ngày.';
 
-export const weeklyMinutesSchema = z
-  .array(z.number().int().min(0).max(720, { message: 'Tối đa 720 phút mỗi ngày.' }))
-  .length(7)
-  .refine((week) => week.some((m) => m > 0), { message: 'Hãy chọn ít nhất một ngày học.' });
+export const isoDateSchema = z
+  .string({ error: INVALID_DATE })
+  .regex(/^\d{4}-\d{2}-\d{2}$/, { message: INVALID_DATE })
+  .refine(
+    (s) => {
+      const parsed = new Date(`${s}T00:00:00Z`);
+      return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === s && s >= '1900-01-01';
+    },
+    { message: INVALID_DATE },
+  );
+
+const dayMinutesSchema = z
+  .number({ error: INVALID_MINUTES })
+  .int({ message: INVALID_MINUTES })
+  .min(0, { message: INVALID_MINUTES })
+  .max(720, { message: 'Tối đa 720 phút mỗi ngày.' });
+const weekMinutesBaseSchema = z.array(dayMinutesSchema, { error: INVALID_WEEK }).length(7, { message: INVALID_WEEK });
+
+export const weeklyMinutesSchema = weekMinutesBaseSchema.refine((week) => week.some((m) => m > 0), { message: 'Hãy chọn ít nhất một ngày học.' });
 
 const planShape = {
   language: z.enum(LANGUAGE_CODES),
@@ -47,7 +64,11 @@ export type DeadlineMode = (typeof DEADLINE_MODES)[number];
 
 export const onboardingDraftSchema = z.object({
   version: z.literal(1),
-  step: z.number().int().min(1).max(6),
+  step: z
+    .number({ error: 'Bước không hợp lệ.' })
+    .int({ message: 'Bước không hợp lệ.' })
+    .min(1, { message: 'Bước không hợp lệ.' })
+    .max(6, { message: 'Bước không hợp lệ.' }),
   data: z.object({
     language: z.enum(LANGUAGE_CODES).optional(),
     startPoint: z.enum(START_POINTS).optional(),
@@ -55,10 +76,15 @@ export const onboardingDraftSchema = z.object({
     goalType: z.enum(GOAL_TYPES).optional(),
     targetLevel: z.string().max(16).optional(),
     schedulePreset: z.enum(SCHEDULE_PRESETS).optional(),
-    weeklyMinutes: z.array(z.number().int().min(0).max(720)).length(7).optional(),
+    weeklyMinutes: weekMinutesBaseSchema.optional(),
     deadlineMode: z.enum(DEADLINE_MODES).optional(),
     targetDate: isoDateSchema.nullable().optional(),
-    deadlineAmount: z.number().int().min(1).max(520).optional(),
+    deadlineAmount: z
+      .number({ error: 'Thời hạn không hợp lệ.' })
+      .int({ message: 'Thời hạn không hợp lệ.' })
+      .min(1, { message: 'Thời hạn không hợp lệ.' })
+      .max(520, { message: 'Thời hạn tối đa 520.' })
+      .optional(),
   }),
 });
 export type OnboardingDraft = z.infer<typeof onboardingDraftSchema>;
