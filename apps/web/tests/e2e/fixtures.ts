@@ -359,10 +359,255 @@ function createLessonBackend(paths: Array<Record<string, unknown>>) {
   return { handle, submitCalls: () => submitCalls };
 }
 
+// ---- review backend: FSRS cards over the seed learning items (spec 3 §4), scheduling faked -----------------
+
+export interface ReviewMockOptions {
+  /** Cards due today (default 4): seed items introduced by the path's lessons, alternating recognize/recall. */
+  due?: number;
+  /** New cards "+10 thẻ nữa" can add after the session (default: the next 10 seed items). */
+  extra?: number;
+  /** Daily cap reported in the totals (default 45). */
+  cap?: number;
+  /** Report recovery mode with this many cards left for the coming days. */
+  recoveryBacklog?: number;
+}
+
+interface MockCard {
+  id: string;
+  pathId: string;
+  item: Row;
+  direction: 'recognize' | 'recall';
+  state: 'new' | 'learning' | 'review' | 'relearning';
+  dueToday: boolean;
+  /** In the "+10 thẻ nữa" pool until a p_extra fetch adds it to today. */
+  pooled: boolean;
+  gradedToday: boolean;
+  postponedToday: boolean;
+}
+
+export interface MockGrade {
+  key: string;
+  cardId: string;
+  rating: number;
+  confidence: number | null;
+  replayed: boolean;
+}
+
+const REVIEW_MINUTES = { again: 1, hard: 10, good: 1440, easy: 4 * 1440 } as const;
+const DAY_MS = 86_400_000;
+
+/** YYYY-MM-DD in Asia/Ho_Chi_Minh (UTC+7, no DST), the mocked profile time zone. */
+function localDate(offsetDays = 0): string {
+  return new Date(Date.now() + 7 * 3_600_000 + offsetDays * DAY_MS).toISOString().slice(0, 10);
+}
+
+/** Learning items introduced by the published lessons of a language, in lesson order, without repeats. */
+function introducedItems(language: string): Row[] {
+  const lessons = BUNDLE.lessons
+    .filter((l) => l.status === 'published' && l.language_code === language)
+    .map((l) => ({ lesson: l, unit: BUNDLE.units.find((u) => u.id === l.unit_id)! }))
+    .sort((a, b) => a.unit.order_index - b.unit.order_index || a.lesson.order_index - b.lesson.order_index);
+  const seen = new Set<string>();
+  const items: Row[] = [];
+  for (const { lesson } of lessons) {
+    const links = BUNDLE.lesson_items.filter((x) => x.lesson_id === lesson.id && x.role === 'introduce').sort((a, b) => a.position - b.position);
+    for (const li of links) {
+      if (seen.has(li.item_id)) continue;
+      seen.add(li.item_id);
+      items.push(BUNDLE.learning_items.find((i) => i.id === li.item_id)!);
+    }
+  }
+  return items;
+}
+
+/** Stateful stand-in for get_review_queue / grade_review / postpone_reviews / review_summary. */
+function createReviewBackend(paths: Array<Record<string, unknown>>, opts: ReviewMockOptions = {}) {
+  const dueCount = opts.due ?? 4;
+  const cap = opts.cap ?? 45;
+  const cards: MockCard[] = [];
+  for (const path of paths) {
+    const items = introducedItems(String(path.language_code));
+    items.slice(0, dueCount + (opts.extra ?? 10)).forEach((item, i) => {
+      const pooled = i >= dueCount;
+      cards.push({
+        id: randomUUID(),
+        pathId: String(path.id),
+        item,
+        direction: i % 2 === 0 ? 'recognize' : 'recall',
+        state: pooled || i % 3 === 0 ? 'new' : 'review',
+        dueToday: !pooled,
+        pooled,
+        gradedToday: false,
+        postponedToday: false,
+      });
+    });
+  }
+  const grades: MockGrade[] = [];
+  const gradeResults = new Map<string, { hash: string; result: Row }>();
+  const postpones = new Map<string, Row>();
+  const postponeCalls: Array<string[] | null> = [];
+
+  const due = (pathId: string) => cards.filter((c) => c.pathId === pathId && c.dueToday);
+  const reviewedToday = (pathId: string) => cards.filter((c) => c.pathId === pathId && c.gradedToday).length;
+  const remainingToday = (pathId: string) => Math.min(due(pathId).length, Math.max(0, cap - reviewedToday(pathId)));
+  const pathOf = (pathId: string) => paths.find((p) => p.id === pathId);
+
+  function cardJson(c: MockCard) {
+    const at = (minutes: number) => new Date(Date.now() + minutes * 60_000).toISOString();
+    return {
+      card_id: c.id,
+      item_id: c.item.id,
+      direction: c.direction,
+      state: c.state,
+      is_new: c.state === 'new',
+      due_at: new Date().toISOString(),
+      postpone_count: c.postponedToday ? 1 : 0,
+      item: {
+        language_code: c.item.language_code,
+        item_type: c.item.item_type,
+        front: c.item.front,
+        back: c.item.back,
+        audio_path: c.item.audio_path ?? null,
+      },
+      previews: Object.fromEntries(Object.entries(REVIEW_MINUTES).map(([k, m]) => [k, { interval_minutes: m, due_at: at(m) }])),
+    };
+  }
+
+  function queue(b: Row) {
+    const pathId = String(b.p_path_id);
+    const path = pathOf(pathId);
+    if (!path) return rpcError('path_not_found');
+    if (path.status !== 'active') return rpcError('path_not_active');
+    let limit = Math.min(Number(b.p_limit ?? 20), Math.max(0, cap - reviewedToday(pathId)));
+    if (b.p_extra) {
+      for (const c of cards.filter((x) => x.pathId === pathId && x.pooled).slice(0, 10)) Object.assign(c, { pooled: false, dueToday: true });
+      limit += 10;
+    }
+    // One direction per learning item in a single fetch.
+    const seenItems = new Set<string>();
+    const served = due(pathId)
+      .filter((c) => !seenItems.has(c.item.id) && Boolean(seenItems.add(c.item.id)))
+      .slice(0, limit);
+    const dueTotal = due(pathId).length;
+    return {
+      json: {
+        cards: served.map(cardJson),
+        totals: {
+          due_total: dueTotal,
+          served: served.length,
+          backlog_remaining: opts.recoveryBacklog ?? Math.max(0, dueTotal - served.length),
+          new_available: Math.min(10, cards.filter((c) => c.pathId === pathId && c.pooled).length),
+          daily_cap: cap,
+          reviewed_today: reviewedToday(pathId),
+          recovery_mode: opts.recoveryBacklog !== undefined,
+        },
+      },
+    };
+  }
+
+  function grade(b: Row) {
+    const key = String(b.p_idempotency_key);
+    const confidence = (b.p_confidence as number | null) ?? null;
+    const hash = `${String(b.p_card_id)}|${String(b.p_rating)}|${String(confidence)}`;
+    const previous = gradeResults.get(key);
+    if (previous) {
+      if (previous.hash !== hash) return rpcError('idempotency_conflict');
+      grades.push({ key, cardId: String(b.p_card_id), rating: Number(b.p_rating), confidence, replayed: true });
+      return { json: { ...previous.result, replayed: true } };
+    }
+    const card = cards.find((c) => c.id === b.p_card_id);
+    if (!card) return rpcError('card_not_found');
+    const rating = Number(b.p_rating);
+    if (![1, 2, 3, 4].includes(rating)) return rpcError('invalid_rating');
+    // srs_adjust_rating: hints cap at Hard; a right answer with confidence 1 counts as Hard.
+    const effective = Number(b.p_hint_count) > 0 ? Math.min(rating, 2) : rating >= 3 && confidence === 1 ? 2 : rating;
+    const minutes = Object.values(REVIEW_MINUTES)[effective - 1]!;
+    card.state = effective === 1 ? (card.state === 'review' ? 'relearning' : 'learning') : effective === 2 && card.state === 'new' ? 'learning' : 'review';
+    Object.assign(card, { gradedToday: true, dueToday: false });
+    const result = {
+      card_id: card.id,
+      log_id: randomUUID(),
+      state: card.state,
+      due_at: new Date(Date.now() + minutes * 60_000).toISOString(),
+      interval_minutes: minutes,
+      rating_effective: effective,
+      item_status: card.state,
+      newly_mastered: false,
+    };
+    gradeResults.set(key, { hash, result });
+    grades.push({ key, cardId: card.id, rating, confidence, replayed: false });
+    return { json: { ...result, replayed: false } };
+  }
+
+  function postpone(b: Row) {
+    const key = String(b.p_idempotency_key);
+    const previous = postpones.get(key);
+    if (previous) return { json: { ...previous, replayed: true } };
+    const pathId = String(b.p_path_id);
+    if (!pathOf(pathId)) return rpcError('path_not_found');
+    const ids = Array.isArray(b.p_card_ids) ? (b.p_card_ids as string[]) : null;
+    postponeCalls.push(ids);
+    const targets = ids ? cards.filter((c) => c.pathId === pathId && ids.includes(c.id)) : due(pathId);
+    let postponed = 0;
+    let skipped = 0;
+    for (const c of targets) {
+      if (c.postponedToday || !c.dueToday) {
+        skipped += 1;
+        continue;
+      }
+      Object.assign(c, { postponedToday: true, dueToday: false });
+      postponed += 1;
+    }
+    const result = { postponed, skipped };
+    postpones.set(key, result);
+    return { json: { ...result, replayed: false } };
+  }
+
+  function summary(b: Row) {
+    const pathId = String(b.p_path_id);
+    if (!pathOf(pathId)) return rpcError('path_not_found');
+    const tomorrow = cards.filter((c) => c.pathId === pathId && (c.postponedToday || c.gradedToday)).length;
+    return {
+      json: {
+        reviewed_today: reviewedToday(pathId),
+        remaining_today: remainingToday(pathId),
+        forecast: Array.from({ length: 7 }, (_, i) => ({
+          date: localDate(i),
+          count: i === 0 ? remainingToday(pathId) : i === 1 ? tomorrow : 0,
+        })),
+        retention_30d: null,
+        retention_sample: 0,
+        mastered_total: 0,
+        mastered_this_week: 0,
+        recovery_mode: opts.recoveryBacklog !== undefined,
+      },
+    };
+  }
+
+  /** Returns a fulfil spec for review RPC paths, or null when the path is not a review RPC. */
+  function handle(pathname: string, b: Row): { status?: number; json: unknown } | null {
+    switch (pathname) {
+      case '/rest/v1/rpc/get_review_queue':
+        return queue(b);
+      case '/rest/v1/rpc/grade_review':
+        return grade(b);
+      case '/rest/v1/rpc/postpone_reviews':
+        return postpone(b);
+      case '/rest/v1/rpc/review_summary':
+        return summary(b);
+    }
+    return null;
+  }
+
+  return { handle, grades: () => [...grades], postponeCalls: () => [...postponeCalls] };
+}
+
 interface MockOptions {
   displayName?: string;
   /** Learning path rows; defaults to one English path so existing app tests keep their home screen. */
   paths?: Array<Record<string, unknown>>;
+  /** Review cards (spec 3); defaults to 4 cards due today on every path. */
+  reviews?: ReviewMockOptions;
 }
 
 /**
@@ -373,6 +618,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
   const paths = (opts.paths ?? [pathRow()]).map((p) => ({ ...p }));
   let currentId = (paths[0]?.id as string | undefined) ?? null;
   const lessons = createLessonBackend(paths);
+  const reviews = createReviewBackend(paths, opts.reviews);
 
   await page.route(`${SUPABASE_URL}/**`, async (route) => {
     const url = new URL(route.request().url());
@@ -435,7 +681,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
         return route.fulfill({ json: row });
       }
     }
-    const lessonReply = url.pathname.startsWith('/rest/v1/rpc/') ? lessons.handle(url.pathname, body()) : null;
+    const lessonReply = url.pathname.startsWith('/rest/v1/rpc/') ? (lessons.handle(url.pathname, body()) ?? reviews.handle(url.pathname, body())) : null;
     if (lessonReply) {
       if (lessonReply.status === 204) return route.fulfill({ status: 204, body: '' });
       return route.fulfill({ status: lessonReply.status ?? 200, json: lessonReply.json });
@@ -443,7 +689,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
     if (url.pathname.startsWith('/auth/v1/logout')) return route.fulfill({ status: 204, body: '' });
     return route.fulfill({ status: 404, json: { message: `not mocked: ${method} ${url.pathname}` } });
   });
-  return { submitCalls: lessons.submitCalls };
+  return { submitCalls: lessons.submitCalls, reviewGrades: reviews.grades, postponeCalls: reviews.postponeCalls };
 }
 
 function fakeJwt(payload: Record<string, unknown>): string {
