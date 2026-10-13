@@ -144,10 +144,10 @@ exercises:
     prompt:
       instruction: Ghép các chữ cái thành âm tiết đọc là "ô".
       tokens:
-        - { id: j4, text: ㅇ }
-        - { id: r7, text: ㅓ }
         - { id: c2, text: ㅗ }
+        - { id: r7, text: ㅓ }
         - { id: n9, text: ㅜ }
+        - { id: j4, text: ㅇ }
     answer:
       orders:
         - [j4, c2]
@@ -252,12 +252,12 @@ exercises:
     prompt:
       instruction: Ghép các chữ cái thành từ có nghĩa "dưa chuột".
       tokens:
-        - { id: q1, text: ㅇ }
-        - { id: e5, text: ㅗ }
-        - { id: l8, text: ㅇ }
-        - { id: t3, text: ㅣ }
         - { id: u6, text: ㅓ }
+        - { id: e5, text: ㅗ }
+        - { id: t3, text: ㅣ }
+        - { id: l8, text: ㅇ }
         - { id: g2, text: ㅡ }
+        - { id: q1, text: ㅇ }
     answer:
       orders:
         - [q1, e5, l8, t3]
