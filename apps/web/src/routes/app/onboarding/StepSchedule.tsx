@@ -1,8 +1,9 @@
-import { DEADLINE_MODES, type DeadlineMode } from '@linguo/shared';
+import { addDaysIso, DEADLINE_MODES, type DeadlineMode } from '@linguo/shared';
 import { FormField } from '@/components/ui/FormField';
 import { Input } from '@/components/ui/Input';
 import { ChoiceList } from '@/features/learning-paths/components/ChoiceList';
 import { ScheduleEditor, type ScheduleValue } from '@/features/learning-paths/components/ScheduleEditor';
+import { resolveTargetDate, targetDateError } from './logic';
 
 const MODE_LABELS: Record<DeadlineMode, string> = {
   none: 'Không đặt thời hạn',
@@ -24,10 +25,13 @@ interface Props {
 }
 
 export function StepSchedule({ schedule, onSchedule, mode, onMode, targetDate, onTargetDate, amount, onAmount, today }: Props) {
-  const dateError = mode === 'date' && targetDate && targetDate < today ? 'Ngày mục tiêu đã qua.' : undefined;
+  const noDays = schedule.weeklyMinutes.reduce((sum, m) => sum + m, 0) === 0;
+  const resolved = resolveTargetDate({ deadlineMode: mode, targetDate, deadlineAmount: amount }, today);
+  const dateError = mode === 'date' ? (targetDate ? targetDateError(targetDate, today) : 'Chọn ngày mục tiêu.') : undefined;
+  const amountError = mode === 'weeks' || mode === 'months' ? (amount ? targetDateError(resolved, today) : mode === 'weeks' ? 'Nhập số tuần' : 'Nhập số tháng') : undefined;
   return (
     <div className="space-y-6">
-      <ScheduleEditor value={schedule} onChange={onSchedule} labelledBy="onboarding-title" />
+      <ScheduleEditor value={schedule} onChange={onSchedule} labelledBy="onboarding-title" error={noDays ? 'Hãy chọn ít nhất một ngày học.' : undefined} />
       <section className="space-y-3">
         <h2 id="deadline-heading" className="text-lg font-bold">
           Thời hạn
@@ -43,12 +47,12 @@ export function StepSchedule({ schedule, onSchedule, mode, onMode, targetDate, o
         {mode === 'date' && (
           <FormField label="Ngày mục tiêu" error={dateError}>
             {({ invalid, ...a11y }) => (
-              <Input {...a11y} invalid={invalid} type="date" min={today} value={targetDate ?? ''} onChange={(e) => onTargetDate(e.target.value || null)} />
+              <Input {...a11y} invalid={invalid} type="date" min={today} max={addDaysIso(today, 3650)} value={targetDate ?? ''} onChange={(e) => onTargetDate(e.target.value || null)} />
             )}
           </FormField>
         )}
         {(mode === 'weeks' || mode === 'months') && (
-          <FormField label={mode === 'weeks' ? 'Số tuần' : 'Số tháng'}>
+          <FormField label={mode === 'weeks' ? 'Số tuần' : 'Số tháng'} error={amountError}>
             {({ invalid, ...a11y }) => (
               <Input
                 {...a11y}
