@@ -20,6 +20,16 @@ test('rejects secret-looking VITE_ names', () => {
   assert.equal(errors.length, 2);
 });
 
+test('rejects any VITE_ name containing SERVICE_ROLE or GEMINI (spec 2 §4.4)', () => {
+  for (const name of ['VITE_SUPABASE_SERVICE_ROLE_KEY', 'VITE_service_role', 'VITE_GEMINI_MODEL', 'VITE_USE_GEMINI']) {
+    const errors = checkPublicEnv({ ...ok, [name]: 'x' });
+    assert.equal(errors.length, 1, name);
+    assert.match(errors[0], new RegExp(name));
+  }
+  // Non-VITE_ server-side variables are not bundled and stay allowed.
+  assert.deepEqual(checkPublicEnv({ ...ok, SUPABASE_SERVICE_ROLE_KEY: 'x', GEMINI_API_KEY: 'y', SUPABASE_ACCESS_TOKEN: 'z' }), []);
+});
+
 test('strict mode requires values; non-strict allows empty', () => {
   assert.deepEqual(checkPublicEnv({}), []);
   assert.equal(checkPublicEnv({}, { strict: true }).length, 1);
