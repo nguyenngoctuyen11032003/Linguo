@@ -593,7 +593,27 @@ isOneToOne: false
                     "cap_max"?: number,"cap_min"?: number,"cap_per_minute"?: number,"daily_new_limit"?: number,"desired_retention"?: number,"id"?: boolean,"learning_steps_minutes"?: (number)[],"mastery_min_days"?: number,"mastery_min_recall_stability"?: number,"mastery_min_successes"?: number,"maximum_interval"?: number,"recovery_factor"?: number,"relearning_steps_minutes"?: (number)[],"updated_at"?: string,"weights"?: (number)[]
                   }
                   Relationships: [
-                    
+
+                  ]
+                },"study_sessions": {
+                  Row: {
+                    "completed_at": string | null,"created_at": string,"id": string,"local_date": string,"minutes_planned": number,"path_id": string,"plan": Json,"started_at": string | null,"status": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "completed_at"?: string | null,"created_at"?: string,"id"?: string,"local_date": string,"minutes_planned": number,"path_id": string,"plan": Json,"started_at"?: string | null,"status"?: string,"user_id": string
+                  }
+                  Update: {
+                    "completed_at"?: string | null,"created_at"?: string,"id"?: string,"local_date"?: string,"minutes_planned"?: number,"path_id"?: string,"plan"?: Json,"started_at"?: string | null,"status"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "study_sessions_path_id_fkey"
+      columns: ["path_id"]
+isOneToOne: false
+      referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    }
                   ]
                 },"units": {
                   Row: {
@@ -794,11 +814,20 @@ isOneToOne: false
 "finish_diagnostic":
 { Args: { "p_attempt_id": string }; Returns: Json
                            },
+"finish_session":
+{ Args: { "p_session_id": string,"p_status": string }; Returns: Json
+                           },
 "get_lesson":
 { Args: { "p_lesson_id": string,"p_path_id": string }; Returns: Json
                            },
 "get_review_queue":
 { Args: { "p_extra"?: boolean,"p_limit"?: number,"p_path_id": string }; Returns: Json
+                           },
+"get_session_inputs":
+{ Args: { "p_path_id": string }; Returns: Json
+                           },
+"get_today_session":
+{ Args: { "p_path_id": string }; Returns: Json
                            },
 "grade_exercise":
 { Args: { "p_answer": Json,"p_known_wrong": Json,"p_lang": string,"p_response": Json,"p_rubric": Json,"p_type": string }; Returns: Json
@@ -893,6 +922,9 @@ isOneToOne: false
 "postpone_reviews":
 { Args: { "p_card_ids": (string)[],"p_idempotency_key": string,"p_path_id": string }; Returns: Json
                            },
+"reorder_session":
+{ Args: { "p_order": (string)[],"p_session_id": string }; Returns: Json
+                           },
 "review_day_totals":
 { Args: { "p_extra": boolean,"p_now": string,"p_path_id": string,"p_user": string,"p_weekly_minutes": (number)[] }; Returns: Json
                            },
@@ -923,6 +955,30 @@ isOneToOne: false
                            },
 "save_lesson_cursor":
 { Args: { "p_cursor": number,"p_run_id": string }; Returns: undefined
+                           },
+"save_session_plan":
+{ Args: { "p_path_id": string,"p_plan": Json,"p_replace": boolean }; Returns: Json
+                           },
+"session_answer_text":
+{ Args: { "p_prompt": Json,"p_response": Json,"p_type": string }; Returns: string
+                           },
+"session_json_int":
+{ Args: { "p": Json,"p_max": number,"p_min": number }; Returns: boolean
+                           },
+"session_json_text":
+{ Args: { "p": Json,"p_max": number,"p_min": number }; Returns: boolean
+                           },
+"session_plan_normalize":
+{ Args: { "p_path_id": string,"p_plan": Json }; Returns: Json
+                           },
+"session_prompt_text":
+{ Args: { "p_prompt": Json,"p_type": string }; Returns: string
+                           },
+"session_recap":
+{ Args: { "p_session_id": string }; Returns: Json
+                           },
+"session_seconds_on":
+{ Args: { "p_date": string,"p_path_id": string,"p_user": string }; Returns: number
                            },
 "set_current_learning_path":
 { Args: { "p_id": string }; Returns: undefined
@@ -1006,6 +1062,9 @@ isOneToOne: false
 "start_lesson":
 { Args: { "p_lesson_id": string,"p_path_id": string }; Returns: Json
                            },
+"study_session_json":
+{ Args: { "p_id": string }; Returns: Json
+                           },
 "submit_exercise":
 { Args: { "p_client_at": string,"p_confidence": number,"p_exercise_id": string,"p_exercise_version": number,"p_hint_count": number,"p_idempotency_key": string,"p_response": Json,"p_response_ms": number,"p_run_id": string }; Returns: Json
                            },
@@ -1030,7 +1089,10 @@ isOneToOne: false
         to: "learning_paths"
         isOneToOne: true
         isSetofReturn: false
-      } }
+      } },
+"update_session_item":
+{ Args: { "p_item_id": string,"p_seconds": number,"p_session_id": string,"p_status": string }; Returns: Json
+                           }
           }
           Enums: {
             [_ in never]: never
