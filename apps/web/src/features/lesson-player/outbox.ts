@@ -1,8 +1,9 @@
-import { submitArgsSchema } from '@linguo/shared';
+import { submitArgsSchema, type SubmitArgs } from '@linguo/shared';
 import { z } from 'zod';
 
 // Spec 2 §7.4: submits that never reached the server wait here and are replayed FIFO with the same
-// idempotency key, so a retry can never be graded twice.
+// idempotency key, so a retry can never be graded twice. Spec 3 reuses the same store for review grades
+// (a second outbox kind, see features/reviews/outbox.ts).
 
 export const OUTBOX_KEY_PREFIX = 'linguo-outbox-v1:';
 export const OUTBOX_CAP = 200;
@@ -11,32 +12,51 @@ export const OUTBOX_MAX_BACKOFF_MS = 60_000;
 /** Dispatched on window after every write so hooks in the same tab can refresh their count. */
 export const OUTBOX_CHANGE_EVENT = 'linguo-outbox-change';
 
-const entrySchema = z.object({
-  args: submitArgsSchema,
-  queueIndex: z.number().int().min(0),
-  createdAt: z.string(),
-  tries: z.number().int().min(0),
-  nextAttemptAt: z.number(),
-});
-export type OutboxEntry = z.infer<typeof entrySchema>;
+/** What every queued RPC call carries: the key the server dedupes (and replays) on. */
+export interface IdempotentArgs {
+  p_idempotency_key: string;
+}
 
-export type NewOutboxEntry = Pick<OutboxEntry, 'args' | 'queueIndex'> & Partial<Omit<OutboxEntry, 'args' | 'queueIndex'>>;
+/** One queued call; `queueIndex` is caller data (lesson queue position, review session position). */
+export interface OutboxEntryOf<A extends IdempotentArgs> {
+  args: A;
+  queueIndex: number;
+  createdAt: string;
+  tries: number;
+  nextAttemptAt: number;
+}
 
-export interface Outbox {
+export type NewOutboxEntryOf<A extends IdempotentArgs> = Pick<OutboxEntryOf<A>, 'args' | 'queueIndex'> &
+  Partial<Omit<OutboxEntryOf<A>, 'args' | 'queueIndex'>>;
+
+export interface OutboxOf<A extends IdempotentArgs> {
   readonly key: string;
   /** FIFO (oldest first). */
-  list: () => OutboxEntry[];
+  list: () => OutboxEntryOf<A>[];
   /**
    * Ignored when an entry with the same idempotency key is already queued. Returns false when the entry could not be
    * persisted (no storage, quota exceeded, blocked): the caller must not show it as waiting for sync.
    */
-  add: (entry: NewOutboxEntry) => boolean;
+  add: (entry: NewOutboxEntryOf<A>) => boolean;
   remove: (idempotencyKey: string) => void;
   /** Counts a failed send and schedules the next try with exponential backoff and jitter. */
   markFailed: (idempotencyKey: string, now?: number) => void;
   /** Drops entries older than 7 days; returns what is left. */
-  prune: (now?: number) => OutboxEntry[];
+  prune: (now?: number) => OutboxEntryOf<A>[];
 }
+
+/** A kind of outbox: its storage key prefix (`<keyPrefix><userId>`) and the schema queued args must satisfy. */
+export interface OutboxKind<A extends IdempotentArgs> {
+  keyPrefix: string;
+  argsSchema: z.ZodType<A>;
+}
+
+/** The spec 2 lesson outbox (submit_exercise). */
+export const LESSON_OUTBOX: OutboxKind<SubmitArgs> = { keyPrefix: OUTBOX_KEY_PREFIX, argsSchema: submitArgsSchema };
+
+export type OutboxEntry = OutboxEntryOf<SubmitArgs>;
+export type NewOutboxEntry = NewOutboxEntryOf<SubmitArgs>;
+export type Outbox = OutboxOf<SubmitArgs>;
 
 export function outboxKey(userId: string): string {
   return `${OUTBOX_KEY_PREFIX}${userId}`;
@@ -54,10 +74,23 @@ function defaultStorage(): Storage | null {
   }
 }
 
-export function createOutbox(userId: string, storage: Storage | null = defaultStorage()): Outbox {
-  const key = outboxKey(userId);
+/** Opens the outbox of `kind` for one user. */
+export function openOutbox<A extends IdempotentArgs>(
+  kind: OutboxKind<A>,
+  userId: string,
+  storage: Storage | null = defaultStorage(),
+): OutboxOf<A> {
+  type Entry = OutboxEntryOf<A>;
+  const key = `${kind.keyPrefix}${userId}`;
+  const entrySchema = z.object({
+    args: kind.argsSchema,
+    queueIndex: z.number().int().min(0),
+    createdAt: z.string(),
+    tries: z.number().int().min(0),
+    nextAttemptAt: z.number(),
+  });
 
-  const read = (): OutboxEntry[] => {
+  const read = (): Entry[] => {
     let raw: string | null;
     try {
       raw = storage?.getItem(key) ?? null;
@@ -75,12 +108,12 @@ export function createOutbox(userId: string, storage: Storage | null = defaultSt
     // Keep every valid entry even when a neighbour is corrupt.
     return json.flatMap((item) => {
       const parsed = entrySchema.safeParse(item);
-      return parsed.success ? [parsed.data] : [];
+      return parsed.success ? [parsed.data as Entry] : [];
     });
   };
 
   /** False when there is no storage or it throws (full, blocked). */
-  const write = (entries: OutboxEntry[]): boolean => {
+  const write = (entries: Entry[]): boolean => {
     let saved = false;
     try {
       if (storage) {
@@ -105,7 +138,7 @@ export function createOutbox(userId: string, storage: Storage | null = defaultSt
     add(entry) {
       const entries = read();
       if (entries.some((e) => e.args.p_idempotency_key === entry.args.p_idempotency_key)) return true;
-      const full: OutboxEntry = {
+      const full: Entry = {
         args: entry.args,
         queueIndex: entry.queueIndex,
         createdAt: entry.createdAt ?? new Date().toISOString(),
@@ -139,4 +172,9 @@ export function createOutbox(userId: string, storage: Storage | null = defaultSt
       return left;
     },
   };
+}
+
+/** The lesson outbox (`linguo-outbox-v1:<userId>`). */
+export function createOutbox(userId: string, storage: Storage | null = defaultStorage()): Outbox {
+  return openOutbox(LESSON_OUTBOX, userId, storage);
 }
