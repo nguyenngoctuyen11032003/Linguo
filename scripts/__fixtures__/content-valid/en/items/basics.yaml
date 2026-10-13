@@ -1,0 +1,22 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+source: src:fixture
+items:
+  - key: en:item:hello
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    front: { text: hello, ipa: /həˈləʊ/, pos: interjection }
+    back:
+      meaning: { vi: xin chào }
+      examples:
+        - target: Hello, Lan!
+          translation: { vi: Chào Lan! }
+  - key: en:item:student
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    front: { text: student, ipa: /ˈstjuːdənt/, pos: noun }
+    back:
+      meaning: { vi: "học sinh, sinh viên" }
