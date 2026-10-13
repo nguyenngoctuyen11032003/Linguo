@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import type { Session, User } from '@supabase/supabase-js';
+import { clearRecovery } from './recovery';
 import { getSupabase, type AppSupabaseClient } from '@/lib/supabase';
 
 export interface AuthState {
@@ -30,7 +31,8 @@ export function AuthProvider({ children, client = getSupabase() }: AuthProviderP
     client.auth.getSession().then(({ data }) => {
       if (active) setState(fromSession(data.session));
     });
-    const { data } = client.auth.onAuthStateChange((_event, session) => {
+    const { data } = client.auth.onAuthStateChange((event, session) => {
+      if (event === 'SIGNED_OUT') clearRecovery(); // a recovery session must not outlive the sign-out
       if (active) setState(fromSession(session));
     });
     return () => {

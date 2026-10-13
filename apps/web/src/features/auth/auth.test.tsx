@@ -109,6 +109,30 @@ describe('AuthProvider', () => {
     expect(screen.getByTestId('status')).toHaveTextContent('signed-out:-');
   });
 
+  it('clears the recovery flag when the user signs out', async () => {
+    let listener: ((event: string, session: Session | null) => void) | undefined;
+    const client = {
+      auth: {
+        getSession: vi.fn().mockResolvedValue({ data: { session: null } }),
+        onAuthStateChange: vi.fn((cb) => {
+          listener = cb;
+          return { data: { subscription: { unsubscribe: vi.fn() } } };
+        }),
+      },
+    } as unknown as AppSupabaseClient;
+    render(
+      <AuthProvider client={client}>
+        <span>child</span>
+      </AuthProvider>,
+    );
+    await screen.findByText('child');
+    markRecoveryPending();
+    act(() => listener?.('TOKEN_REFRESHED', null));
+    expect(isRecoveryPending()).toBe(true);
+    act(() => listener?.('SIGNED_OUT', null));
+    expect(isRecoveryPending()).toBe(false);
+  });
+
   it('is "unconfigured" without a client', () => {
     function Probe() {
       return <span>{useAuth().status}</span>;
