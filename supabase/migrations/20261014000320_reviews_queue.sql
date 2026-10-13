@@ -39,10 +39,11 @@ $$;
 --   base_cap        = clamp(weekly_minutes[local ISO weekday] x cap_per_minute, cap_min, cap_max)
 --   daily_cap       = base_cap (+ 10 when p_extra)
 --   reviewed_today  = grade logs of the path on the local day
---   due_total       = non-new cards due today (see the header)
---   recovery_mode   = due_total > recovery_factor x base_cap
+--   due_total       = items with a non-new card due today (see the header); one per item, because
+--                     get_review_queue serves at most one direction per item
+--   recovery_mode   = non-new cards due today (every direction) > recovery_factor x base_cap
 --   new_quota       = daily_new_limit - new cards first graded today (0 in recovery mode)
---   new_eligible    = new cards due today
+--   new_eligible    = items whose only cards due today are new (one per item, as served)
 --   new_available   = least(new_quota, new_eligible)
 -- plus the local day bounds used by the callers.
 -- Scalar arguments (not a learning_paths row) so that PostgREST and the type generator do not expose it as a
@@ -65,6 +66,7 @@ declare
   v_cap integer;
   v_reviewed integer;
   v_due integer;
+  v_due_cards integer;
   v_new_eligible integer;
   v_new_started integer;
   v_recovery boolean;
@@ -86,16 +88,26 @@ begin
   from public.review_logs l
   where l.user_id = p_user and l.learning_path_id = p_path_id and l.kind = 'grade' and l.local_day = v_today;
 
-  select count(*) filter (where c.fsrs_state <> 'new')::integer,
-         count(*) filter (where c.fsrs_state = 'new')::integer
-    into v_due, v_new_eligible
-  from public.review_cards c
-  join public.learning_items i on i.id = c.learning_item_id and i.status = 'published'
-  where c.user_id = p_user and c.learning_path_id = p_path_id and c.suspended_at is null
-    and (
-      (c.fsrs_state in ('learning', 'relearning') and c.due_at <= p_now)
-      or (c.fsrs_state in ('review', 'new') and c.due_at < v_day_end)
-    );
+  -- Per item, like get_review_queue: an item with any non-new card due counts once in due_total (its other
+  -- direction waits), an item with only new cards due counts once in new_eligible. v_due_cards keeps the
+  -- per-card backlog for the recovery threshold.
+  select count(*) filter (where not s.only_new)::integer,
+         count(*) filter (where s.only_new)::integer,
+         coalesce(sum(s.due_cards), 0)::integer
+    into v_due, v_new_eligible, v_due_cards
+  from (
+    select c.learning_item_id,
+           bool_and(c.fsrs_state = 'new') as only_new,
+           count(*) filter (where c.fsrs_state <> 'new') as due_cards
+    from public.review_cards c
+    join public.learning_items i on i.id = c.learning_item_id and i.status = 'published'
+    where c.user_id = p_user and c.learning_path_id = p_path_id and c.suspended_at is null
+      and (
+        (c.fsrs_state in ('learning', 'relearning') and c.due_at <= p_now)
+        or (c.fsrs_state in ('review', 'new') and c.due_at < v_day_end)
+      )
+    group by c.learning_item_id
+  ) as s;
 
   -- A new card "started" today when its first grade falls on the local day (independent of the shape of
   -- review_logs.state_before).
@@ -108,7 +120,7 @@ begin
     having min(l.local_day) = v_today
   ) as s;
 
-  v_recovery := v_due > v_cfg.recovery_factor * v_base_cap;
+  v_recovery := v_due_cards > v_cfg.recovery_factor * v_base_cap;
   v_new_quota := case when v_recovery then 0 else greatest(0, v_cfg.daily_new_limit::integer - v_new_started) end;
 
   return jsonb_build_object(
@@ -279,8 +291,8 @@ declare
   v_prev public.review_logs;
   v_ids uuid[];
   v_card public.review_cards;
-  v_postponed uuid[] := '{}';
-  v_before jsonb := '[]';
+  v_postponed uuid[] := '{}'::uuid[];
+  v_before jsonb := '[]'::jsonb;
   v_after jsonb;
   v_skipped integer := 0;
   v_result jsonb;
@@ -379,7 +391,8 @@ $$;
 -- ---------------------------------------------------------------------------
 
 -- reviewSummarySchema for one of the caller's paths (any status). Definitions:
---   remaining_today    = least(daily_cap - reviewed_today, due_total + new_available), floored at 0
+--   remaining_today    = least(daily_cap - reviewed_today, due_total + new_available), floored at 0; both terms
+--                        count one card per item, i.e. what a get_review_queue session started now serves
 --   forecast           = 7 local days from today; today counts every non-new card due before the end of the
 --                        local day (overdue included), later days the non-new cards due within that day
 --   retention_30d      = share of Good/Easy (rating_effective >= 3) among grades in the last 30 days whose

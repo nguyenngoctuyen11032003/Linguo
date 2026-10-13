@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(81);
+select plan(82);
 
 -- ===== Content: one EN core program with one lesson introducing 40 vocab items (positions 1..40) =====
 -- Imported as the migration owner; the import archives seeded content absent from this bundle (rolled back).
@@ -160,9 +160,11 @@ select ok(current_setting('test.a5')::uuid = any (public.b4_ids(current_setting(
 select ok(not (current_setting('test.a9')::uuid = any (public.b4_ids(current_setting('test.q')::jsonb))), 'suspended card is not served');
 select ok(not (current_setting('test.a10')::uuid = any (public.b4_ids(current_setting('test.q')::jsonb))), 'new card enrolled for tomorrow is not served');
 select is(current_setting('test.q')::jsonb -> 'totals',
-  jsonb_build_object('due_total', 5, 'served', 6, 'backlog_remaining', 1, 'new_available', 3,
+  jsonb_build_object('due_total', 4, 'served', 6, 'backlog_remaining', 0, 'new_available', 2,
     'daily_cap', 15 * extract(isodow from current_setting('test.a_today')::date)::integer, 'reviewed_today', 0, 'recovery_mode', false),
-  'totals: due counts both directions, backlog keeps the deduplicated sibling');
+  'totals count one card per item, as served (item 1 and item 7 count once)');
+select is((public.review_summary(current_setting('test.pa')::uuid) ->> 'remaining_today')::integer,
+  jsonb_array_length(current_setting('test.q')::jsonb -> 'cards'), 'summary remaining_today = cards a session serves now');
 select is(
   (select count(*)::int from jsonb_array_elements(current_setting('test.q')::jsonb -> 'cards') as c,
      unnest(array['again', 'hard', 'good', 'easy']) as k
@@ -179,7 +181,7 @@ select is(current_setting('test.q')::jsonb #>> '{cards,4,is_new}', 'true', 'new 
 select is(current_setting('test.q')::jsonb #>> '{cards,4,direction}', 'recognize', 'a new item starts with recognize');
 select is(public.b4_ids(public.get_review_queue(current_setting('test.pa')::uuid, 2)),
   array[current_setting('test.a1rec'), current_setting('test.a2')]::uuid[], 'p_limit bounds the batch');
-select is((public.get_review_queue(current_setting('test.pa')::uuid, 2) #>> '{totals,backlog_remaining}')::integer, 3, 'backlog after a 2-card batch');
+select is((public.get_review_queue(current_setting('test.pa')::uuid, 2) #>> '{totals,backlog_remaining}')::integer, 2, 'backlog after a 2-card batch');
 
 -- Path must be active.
 select lives_ok(format($$select public.set_learning_path_status(%L, 'paused')$$, current_setting('test.pa')), 'A pauses the path');
