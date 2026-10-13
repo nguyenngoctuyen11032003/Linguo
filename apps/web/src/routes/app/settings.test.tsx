@@ -29,6 +29,10 @@ function deferred<T = void>() {
 vi.mock('@/features/profile/service', () => ({ updateProfile: mocks.updateProfile }));
 vi.mock('@/features/preferences/service', () => ({ updatePreferences: mocks.updatePreferences }));
 vi.mock('@/features/diagnostic/useDiagnosticStatus', () => ({ useDiagnosticStatus: () => ({ status: 'loading', data: null, reload: () => {} }) }));
+// The AI privacy section has its own tests (settings/ai-privacy-section.test.tsx).
+vi.mock('@/features/ai-tutor/useAiNotice', () => ({
+  useAiNotice: () => ({ status: 'loading', acknowledged: false, ackAt: null, saving: false, error: null, ack: async () => false }),
+}));
 vi.mock('@/lib/supabase', () => ({
   getSupabase: () => ({ auth: { signOut: mocks.signOut }, rpc: mocks.rpc }),
   requireSupabase: () => ({ auth: { signOut: mocks.signOut }, rpc: mocks.rpc }),

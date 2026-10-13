@@ -1,9 +1,13 @@
-import { useEffect, useRef, type RefObject } from 'react';
+import { useEffect, useRef, useState, type RefObject } from 'react';
+import { HelpCircle, Sparkles } from 'lucide-react';
 import { motion } from 'motion/react';
 import type { SubmitResult, Verdict } from '@linguo/shared';
+import { AiExplainSheet } from '@/components/ai';
+import { Button } from '@/components/ui/Button';
 import { reveal } from '@/design/motion';
 import { cn } from '@/lib/cn';
 import { useMotionPrefs } from '@/providers/MotionProvider';
+import { feedbackAiRequests, type AiSheetState, type ExerciseAiInput } from './ai-context';
 import { ERROR_TAG_MESSAGES } from './exercise-utils';
 
 const VERDICT_UI: Record<Verdict, { icon: string; label: string; tone: string; iconTone: string }> = {
@@ -15,13 +19,15 @@ const VERDICT_UI: Record<Verdict, { icon: string; label: string; tone: string; i
 export interface FeedbackPanelProps {
   result: SubmitResult | null;
   className?: string;
+  /** Lets the learner ask the AI tutor about a revealed or right answer (spec 5 §5). Omit to hide the buttons. */
+  ai?: ExerciseAiInput;
 }
 
 /**
  * Verdict feedback. The `role="status"` wrapper stays mounted so screen readers register it before content
  * appears; focus moves to the heading when a new result arrives (not on mount, e.g. when resuming).
  */
-export function FeedbackPanel({ result, className }: FeedbackPanelProps) {
+export function FeedbackPanel({ result, className, ai }: FeedbackPanelProps) {
   const { reduceMotion } = useMotionPrefs();
   const headingRef = useRef<HTMLHeadingElement>(null);
   const attemptId = result?.attempt_id ?? null;
@@ -34,9 +40,44 @@ export function FeedbackPanel({ result, className }: FeedbackPanelProps) {
   }, [attemptId]);
 
   return (
-    <div role="status" aria-live="polite" className={className}>
-      {result && <FeedbackCard key={result.attempt_id} result={result} reduceMotion={reduceMotion} headingRef={headingRef} />}
+    <div className={className}>
+      <div role="status" aria-live="polite">
+        {result && <FeedbackCard key={result.attempt_id} result={result} reduceMotion={reduceMotion} headingRef={headingRef} />}
+      </div>
+      {result && ai && <FeedbackAiActions key={result.attempt_id} result={result} ai={ai} />}
     </div>
+  );
+}
+
+/** "Vì sao?" (analyze_error) and "Giải thích AI" (explain_concept) under a revealed or right answer. */
+function FeedbackAiActions({ result, ai }: { result: SubmitResult; ai: ExerciseAiInput }) {
+  const [sheet, setSheet] = useState<AiSheetState | null>(null);
+  const [open, setOpen] = useState(false);
+  const requests = feedbackAiRequests(result, ai);
+  if (!requests) return null;
+  const { why, explain } = requests;
+
+  const show = (state: AiSheetState) => {
+    setSheet(state);
+    setOpen(true);
+  };
+
+  return (
+    <>
+      <div className="mt-3 flex flex-wrap gap-2">
+        {why && (
+          <Button variant="ghost" onClick={() => show(why)}>
+            <HelpCircle aria-hidden className="size-5" />
+            Vì sao?
+          </Button>
+        )}
+        <Button variant="ghost" onClick={() => show(explain)}>
+          <Sparkles aria-hidden className="size-5" />
+          Giải thích AI
+        </Button>
+      </div>
+      {sheet && <AiExplainSheet open={open} onClose={() => setOpen(false)} request={sheet.request} fallback={sheet.fallback} />}
+    </>
   );
 }
 

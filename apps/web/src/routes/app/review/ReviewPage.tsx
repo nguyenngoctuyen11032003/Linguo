@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { CalendarCheck, CloudOff, Info } from 'lucide-react';
+import { CalendarCheck, CloudOff, Info, Sparkles } from 'lucide-react';
 import { Link, useNavigate } from 'react-router';
 import type { Rating } from '@linguo/shared';
+import { AiExplainSheet } from '@/components/ai';
 import { Flashcard, RatingBar } from '@/components/flashcard';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -10,6 +11,8 @@ import { Skeleton } from '@/components/ui/Skeleton';
 import { useToast } from '@/components/ui/Toast';
 import type { Confidence } from '@/features/reviews/types';
 import { useReviewSession } from '@/features/reviews/useReviewSession';
+import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
+import { levelForCard, reviewAiState } from './ai';
 import { RecallConfidence } from './RecallConfidence';
 import { hasMoreCards } from './more';
 import { ReviewSummaryView } from './ReviewSummaryView';
@@ -30,9 +33,12 @@ export function ReviewPage() {
   const session = useReviewSession();
   const toast = useToast();
   const navigate = useNavigate();
+  const learningPaths = useLearningPaths();
   const { status, card, cardState, position, total, totals, pendingCount } = session;
 
   const [confidence, setConfidence] = useState<Confidence | null>(null);
+  /** "Giải thích AI" sheet over the card's back; rating keys stay off while it is open. */
+  const [aiOpen, setAiOpen] = useState(false);
   /** Cards this visit sent a grade for (saved or queued in the outbox). */
   const [ratedIds, setRatedIds] = useState<string[]>([]);
   const [postponing, setPostponing] = useState(false);
@@ -51,6 +57,7 @@ export function ReviewPage() {
   // screen readers announce it and Space/1–4 work without hunting for focus.
   useEffect(() => {
     setConfidence(null);
+    setAiOpen(false);
     shownAt.current = Date.now();
     flippedAt.current = null;
     if (cardKey) cardHeadingRef.current?.focus();
@@ -127,7 +134,7 @@ export function ReviewPage() {
   // Space/Enter (flip) and 1–4 (rate) live in Flashcard and RatingBar; the page only adds P (postpone).
   const hasCard = status === 'ready' && !!card;
   useEffect(() => {
-    if (!hasCard) return;
+    if (!hasCard || aiOpen) return;
     function onKey(event: KeyboardEvent) {
       if (event.key !== 'p' && event.key !== 'P') return;
       if (event.repeat || event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || isTypingTarget(event.target)) return;
@@ -136,7 +143,7 @@ export function ReviewPage() {
     }
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [hasCard, postpone]);
+  }, [hasCard, aiOpen, postpone]);
 
   if (status === 'loading') {
     return (
@@ -251,9 +258,24 @@ export function ReviewPage() {
 
       {showConfidence && <RecallConfidence value={confidence} onChange={setConfidence} />}
 
+      {flipped && (
+        <div>
+          <Button variant="ghost" onClick={() => setAiOpen(true)}>
+            <Sparkles aria-hidden className="size-5" />
+            Giải thích AI
+          </Button>
+          <AiExplainSheet
+            key={cardKey}
+            open={aiOpen}
+            onClose={() => setAiOpen(false)}
+            {...reviewAiState(card, levelForCard(card, learningPaths.paths, learningPaths.current))}
+          />
+        </div>
+      )}
+
       <RatingBar
         previews={card.previews}
-        revealed={flipped}
+        revealed={flipped && !aiOpen}
         submitting={cardState.status === 'submitting'}
         onRate={(value) => void rate(value)}
       />

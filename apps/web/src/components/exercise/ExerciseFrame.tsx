@@ -14,6 +14,7 @@ import {
 } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import type { Confidence, ExerciseUiState, SubmitMeta } from '@/features/lesson-player/types';
+import { exercisePromptText, responseText, type LessonAiContext } from './ai-context';
 import { CompositionGateContext, createCompositionGate } from './compositionGate';
 import { PendingSyncBadge } from './Badges';
 import { ConfidenceChips } from './ConfidenceChips';
@@ -34,6 +35,8 @@ export interface ExerciseFrameProps {
   onSubmit: (response: ExerciseResponse, meta: SubmitMeta) => void;
   /** Shown when `state.lastResult?.final` (and while an attempt waits for sync). */
   onContinue: () => void;
+  /** Lesson facts for the AI tutor buttons under the feedback; omit to hide them. */
+  ai?: LessonAiContext;
 }
 
 type Parsed =
@@ -107,7 +110,7 @@ export function ExerciseFrame(props: ExerciseFrameProps) {
   return <ExerciseFrameInner key={`${props.exercise.id}:${props.exercise.version}:${props.recheck}`} {...props} />;
 }
 
-function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onContinue }: ExerciseFrameProps) {
+function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onContinue, ai }: ExerciseFrameProps) {
   const titleId = useId();
   const parsed = useMemo(() => parsePrompt(exercise), [exercise]);
   const gate = useMemo(() => createCompositionGate(), []);
@@ -116,6 +119,8 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
   const [hintsShown, setHintsShown] = useState(0);
   const [dismissedId, setDismissedId] = useState<string | null>(null);
   const [submittedOptionId, setSubmittedOptionId] = useState<string | null>(null);
+  /** The last graded answer for the AI tutor; "Xem đáp án" keeps the answer it follows. */
+  const [sentResponse, setSentResponse] = useState<ExerciseResponse | null>(null);
   const [retries, setRetries] = useState(0);
   const startRef = useRef(Date.now());
   /**
@@ -177,6 +182,7 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
     sentRef.current = true;
     setSends((n) => n + 1);
     if ('option_id' in r) setSubmittedOptionId(r.option_id);
+    if (!('give_up' in r)) setSentResponse(r);
     onSubmit(r, { confidence, responseMs: Math.max(0, Math.round(Date.now() - startRef.current)), hintCount: hintsShown });
   };
 
@@ -203,6 +209,7 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
 
   const giveUp = () => send({ give_up: true }, null);
 
+  const aiInput = ai ? { ai, prompt: exercisePromptText(exercise), answer: responseText(exercise, sentResponse) } : undefined;
   const choiceMarks = showResult && result ? { chosenId: submittedOptionId, correctText: result.display_answer } : null;
   const selectedId = response && 'option_id' in response ? response.option_id : null;
 
@@ -336,7 +343,7 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
           <div role="status" className="mt-4 empty:hidden">
             {pending && <PendingSyncBadge />}
           </div>
-          <FeedbackPanel result={showResult ? result : null} className="mt-4" />
+          <FeedbackPanel result={showResult ? result : null} className="mt-4" ai={aiInput} />
         </div>
         <ActionBar>{actions}</ActionBar>
       </section>

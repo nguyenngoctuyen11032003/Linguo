@@ -3,6 +3,7 @@ import { RotateCcw, X } from 'lucide-react';
 import { Link, useNavigate, useParams } from 'react-router';
 import { DEFAULT_TIMEZONE } from '@linguo/shared';
 import { DemoBadge, ExerciseFrame } from '@/components/exercise';
+import { lessonAiContext } from '@/components/exercise/ai-context';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
@@ -177,6 +178,7 @@ export function LessonPage() {
             runId={run.runId}
             onSubmit={(response, meta) => void run.submit(exerciseId, queueIndex, response, meta)}
             onContinue={run.next}
+            ai={lessonAiContext(lesson, exercise, run.items)}
           />
         );
       } else {
