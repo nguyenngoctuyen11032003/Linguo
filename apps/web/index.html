@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+    />
+    <title>LexiPath — Học tiếng Anh & tiếng Hàn thông minh</title>
+    <meta
+      name="description"
+      content="Lộ trình tiếng Anh và tiếng Hàn cá nhân hoá cho người Việt: nhớ lại chủ động, ôn tập ngắt quãng, phản hồi có giải thích."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#F6F8FB" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0B1420" media="(prefers-color-scheme: dark)" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400&family=Noto+Sans+KR:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <script>
+      (function () {
+        try {
+          var p = localStorage.getItem('lp-theme');
+          var dark = p === 'dark' || ((!p || p === 'system') && matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+          if (localStorage.getItem('lp-reduce-motion') === 'true') document.documentElement.dataset.reduceMotion = 'true';
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/app/main.tsx"></script>
+  </body>
+</html>

@@ -14,6 +14,7 @@ export default tseslint.config(
       '**/test-results/**',
       'packages/shared/src/database.types.ts',
       'supabase/**',
+      '.claude/**',
     ],
   },
   js.configs.recommended,
