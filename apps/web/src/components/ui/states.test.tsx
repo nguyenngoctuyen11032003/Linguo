@@ -125,8 +125,9 @@ describe('OfflineBanner', () => {
     act(() => {
       window.dispatchEvent(new Event('offline'));
     });
-    expect(screen.getByText(/ngoại tuyến/)).toBeInTheDocument();
+    expect(screen.getByText('Bạn đang ngoại tuyến — tiến độ sẽ được lưu khi có mạng')).toBeInTheDocument();
     expect(screen.getByRole('status')).toBe(region);
+    expect(region).toHaveAttribute('aria-live', 'polite');
     Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => true });
     act(() => {
       window.dispatchEvent(new Event('online'));

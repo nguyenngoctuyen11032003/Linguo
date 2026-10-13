@@ -41,9 +41,29 @@ describe('routes', () => {
     expect(await screen.findByRole('heading', { name: 'Không tìm thấy trang' })).toBeInTheDocument();
   });
 
-  it('renders legal drafts', async () => {
+  it('renders the public legal pages', async () => {
     renderAt('/quyen-rieng-tu', signedOut);
-    expect(await screen.findByRole('heading', { name: 'Quyền riêng tư' })).toBeInTheDocument();
-    expect(screen.getByText(/Bản nháp/)).toBeInTheDocument();
+    expect(await screen.findByRole('heading', { level: 1, name: 'Quyền riêng tư' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Gia sư AI và Gemini' })).toBeInTheDocument();
+  });
+
+  it('renders the terms page', async () => {
+    renderAt('/dieu-khoan', signedOut);
+    expect(await screen.findByRole('heading', { level: 1, name: 'Điều khoản sử dụng' })).toBeInTheDocument();
+  });
+});
+
+describe('route error boundaries', () => {
+  it('gives every route its own errorElement', () => {
+    const missing: string[] = [];
+    const visit = (list: typeof routes, trail: string) => {
+      for (const route of list) {
+        const name = `${trail}/${route.path ?? (route.index ? '(index)' : '(layout)')}`;
+        if (!route.errorElement) missing.push(name);
+        if (route.children) visit(route.children, name);
+      }
+    };
+    visit(routes, '');
+    expect(missing).toEqual([]);
   });
 });

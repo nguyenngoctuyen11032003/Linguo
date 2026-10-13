@@ -20,6 +20,7 @@ import { cn } from '@/lib/cn';
 import { requireSupabase } from '@/lib/supabase';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 import { useTheme } from '@/providers/ThemeProvider';
+import { AccountDataSection } from './settings/AccountDataSection';
 import { AiPrivacySection } from './settings/AiPrivacySection';
 import { LearningPathsSection } from './settings/LearningPathsSection';
 
@@ -303,6 +304,8 @@ export function SettingsPage() {
       </section>
 
       <AiPrivacySection />
+
+      <AccountDataSection />
 
       {confirmSignOut && pendingTotal > 0 && (
         <div role="alert" className="space-y-3 rounded-2xl bg-warn/15 px-4 py-3">
