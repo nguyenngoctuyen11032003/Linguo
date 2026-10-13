@@ -74,3 +74,26 @@ test('rubric is merged over the default and score follows the verdict', () => {
     rmSync(dir, { recursive: true, force: true });
   }
 });
+
+test('invisible characters are written as U& escapes', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'grading-fixtures-'));
+  try {
+    const fx = join(dir, 'fixtures.json');
+    const out = join(dir, 'grading.test.sql');
+    const bom = String.fromCodePoint(0xfeff);
+    const nbsp = String.fromCodePoint(0xa0);
+    writeFileSync(
+      fx,
+      JSON.stringify({
+        normalize: [{ name: 'bom', lang: 'en', rubric: {}, input: `${bom}it's\\x${nbsp}`, expected: "it's" }],
+        grade: [],
+      }),
+    );
+    assert.equal(run([], { GRADING_FIXTURES: fx, GRADING_OUT: out }).status, 0);
+    const sql = readFileSync(out, 'utf8');
+    assert.ok(sql.includes(String.raw`public.grading_normalize(U&'\FEFFit''s\\x\00A0', 'en'`));
+    assert.ok(!sql.includes(bom) && !sql.includes(nbsp));
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});

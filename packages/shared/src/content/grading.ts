@@ -22,7 +22,16 @@ import {
 // must pass every case in grading.fixtures.json.
 
 const IGNORED_PUNCTUATION = /[.,!?;:"()[\]{}…。、「」『』«»¿¡？！，]/gu;
-const TRAILING_PUNCTUATION = /[.!?…。？！]+$/u;
+/** Runs after whitespace is collapsed, so "end. " and "end ." both lose the mark. */
+const TRAILING_PUNCTUATION = /[.!?…。？！ ]+$/u;
+/**
+ * Whitespace is an explicit list (not \s, which differs from PG [[:space:]]): JS \s plus U+0085,
+ * minus U+FEFF. Each becomes a plain space; zero-width chars (BOM, ZWSP, ZWNJ, ZWJ, WJ) are dropped.
+ */
+const WHITESPACE = /[\t\n\v\f\r\u{85}\u{A0}\u{1680}\u{2000}-\u{200A}\u{2028}\u{2029}\u{202F}\u{205F}\u{3000}]/gu;
+const ZERO_WIDTH = /[\u{200B}-\u{200D}\u{2060}\u{FEFF}]/gu;
+/** Word characters as PG's \y sees them under pg_c_utf8: Alphabetic, ASCII digits, underscore. */
+const WORD_CHAR = String.raw`[\p{Alphabetic}0-9_]`;
 
 const CONTRACTIONS: Record<string, string> = {
   'can not': 'cannot',
@@ -52,13 +61,12 @@ const CONTRACTIONS: Record<string, string> = {
   "you've": 'you have',
   "we've": 'we have',
   "they've": 'they have',
-  "i'd": 'i would',
 };
 const CONTRACTION_RE = new RegExp(
-  `\\b(${Object.keys(CONTRACTIONS)
+  `(?<!${WORD_CHAR})(${Object.keys(CONTRACTIONS)
     .sort((a, b) => b.length - a.length)
-    .join('|')})\\b`,
-  'g',
+    .join('|')})(?!${WORD_CHAR})`,
+  'gu',
 );
 
 /** Old-style Vietnamese tone placement → new style, only at the end of a word. */
@@ -79,13 +87,17 @@ const VI_TONES: Record<string, string> = {
   uỹ: 'ũy',
   uỵ: 'ụy',
 };
-const VI_TONE_RE = new RegExp(`(${Object.keys(VI_TONES).join('|')})(?!\\p{L})`, 'gu');
+/** Not after `q`: in the `qu` cluster the u is a glide, so quý/quỳ already carry the tone correctly. */
+const VI_TONE_RE = new RegExp(`(?<!q)(${Object.keys(VI_TONES).join('|')})(?!\\p{Alphabetic})`, 'gu');
 
-const collapse = (s: string) => s.replace(/\s+/gu, ' ').trim();
+/** Only U+0020 is left after WHITESPACE runs, so collapse/trim look at nothing else. */
+const collapse = (s: string) => s.replace(/ {2,}/gu, ' ').replace(/^ | $/gu, '');
 
 export function normalizeAnswer(input: string, lang: AnswerLang, rubric: Rubric): string {
-  let s = input.normalize('NFC').toLowerCase();
+  let s = input.replace(ZERO_WIDTH, '').replace(WHITESPACE, ' ');
+  s = s.normalize('NFC').toLowerCase();
   s = s.replace(/[’‘`´]/gu, "'").replace(/[“”„]/gu, '"');
+  s = collapse(s);
   s = rubric.punctuation === 'ignore' ? s.replace(IGNORED_PUNCTUATION, ' ') : s.replace(TRAILING_PUNCTUATION, '');
   s = collapse(s);
   if (lang === 'en' && rubric.expand_contractions) s = s.replace(CONTRACTION_RE, (m) => CONTRACTIONS[m] ?? m);
@@ -93,9 +105,22 @@ export function normalizeAnswer(input: string, lang: AnswerLang, rubric: Rubric)
   return collapse(s);
 }
 
+/** The combining-mark blocks grading_strip_diacritics removes (not all of \p{M}, to stay identical). */
+const COMBINING_MARK_RANGES: [number, number][] = [
+  [0x300, 0x36f],
+  [0x1ab0, 0x1aff],
+  [0x1dc0, 0x1dff],
+  [0x20d0, 0x20ff],
+  [0xfe20, 0xfe2f],
+];
+const COMBINING_MARKS = new RegExp(
+  `[${COMBINING_MARK_RANGES.map(([a, b]) => `\\u{${a.toString(16)}}-\\u{${b.toString(16)}}`).join('')}]`,
+  'gu',
+);
+
 /** NFD, drop combining marks, map đ/Đ to d. */
 export function stripDiacritics(s: string): string {
-  return s.normalize('NFD').replace(/\p{M}/gu, '').replace(/[đĐ]/gu, 'd').normalize('NFC');
+  return s.normalize('NFD').replace(COMBINING_MARKS, '').replace(/[đĐ]/gu, 'd').normalize('NFC');
 }
 
 /** Levenshtein distance over code points. */
@@ -139,15 +164,27 @@ const result = (verdict: Verdict, errorTags: string[] = [], feedbackVi: string |
 });
 
 const ARTICLES = new Set(['a', 'an', 'the']);
-const TYPO_EXCLUDED = new Set(['a', 'an', 'the', 'am', 'is', 'are']);
-const KO_PARTICLE_PAIRS: [string, string][] = [
-  ['이에요', '예요'],
-  ['으로', '로'],
-  ['은', '는'],
-  ['이', '가'],
-  ['을', '를'],
-  ['와', '과'],
+const TYPO_EXCLUDED = new Set(['a', 'an', 'the', 'am', 'is', 'are', 'was', 'were', 'be', 'been', 'being']);
+/** extensions.levenshtein (fuzzystrmatch) rejects arguments longer than this; both sides skip them. */
+const LEVENSHTEIN_MAX = 255;
+
+/** Particle allomorphs: the form after a final consonant (batchim), the form after a vowel, and whether ㄹ batchim takes the vowel form. */
+interface ParticlePair {
+  batchim: string;
+  vowel: string;
+  rieulTakesVowel: boolean;
+}
+const KO_PARTICLE_PAIRS: ParticlePair[] = [
+  { batchim: '이에요', vowel: '예요', rieulTakesVowel: false },
+  { batchim: '으로', vowel: '로', rieulTakesVowel: true },
+  { batchim: '은', vowel: '는', rieulTakesVowel: false },
+  { batchim: '이', vowel: '가', rieulTakesVowel: false },
+  { batchim: '을', vowel: '를', rieulTakesVowel: false },
+  { batchim: '과', vowel: '와', rieulTakesVowel: false },
 ];
+const HANGUL_FIRST = 0xac00;
+const HANGUL_LAST = 0xd7a3;
+const RIEUL = 8;
 
 const noSpaces = (s: string) => s.replace(/ /gu, '');
 const withoutArticles = (s: string) =>
@@ -165,23 +202,37 @@ function isSingleTypo(r: string, a: string): boolean {
   if (diffs.length !== 1) return false;
   const x = rt[diffs[0]!]!;
   const y = at[diffs[0]!]!;
-  if (Array.from(x).length < 5 || Array.from(y).length < 5) return false;
+  const xl = Array.from(x).length;
+  const yl = Array.from(y).length;
+  if (xl < 5 || yl < 5 || xl > LEVENSHTEIN_MAX || yl > LEVENSHTEIN_MAX || Math.abs(xl - yl) > 1) return false;
   if (TYPO_EXCLUDED.has(x) || TYPO_EXCLUDED.has(y)) return false;
   return levenshtein(x, y) === 1;
 }
 
-/** Swapping one word-final particle of `a` for its allomorph yields `r` (spaces ignored). */
+/** The allomorph the syllable before position `i` of `a` calls for, or null if that is not a Hangul syllable. */
+function expectedAllomorph(a: string, i: number, pair: ParticlePair): string | null {
+  if (i === 0) return null;
+  const code = a.charCodeAt(i - 1);
+  if (code < HANGUL_FIRST || code > HANGUL_LAST) return null;
+  const jong = (code - HANGUL_FIRST) % 28;
+  return jong === 0 || (pair.rieulTakesVowel && jong === RIEUL) ? pair.vowel : pair.batchim;
+}
+
+/**
+ * `a` has a word-final particle that is the right allomorph for the Hangul syllable before it,
+ * and swapping it for the other member of its pair yields `r` (spaces ignored).
+ */
 function isParticleAllomorph(r: string, a: string): boolean {
   const target = noSpaces(r);
-  for (const [p, q] of KO_PARTICLE_PAIRS) {
+  for (const pair of KO_PARTICLE_PAIRS) {
     for (const [from, to] of [
-      [p, q],
-      [q, p],
+      [pair.batchim, pair.vowel],
+      [pair.vowel, pair.batchim],
     ] as const) {
       let i = a.indexOf(from);
       while (i !== -1) {
         const end = i + from.length;
-        if (end === a.length || a[end] === ' ') {
+        if ((end === a.length || a[end] === ' ') && expectedAllomorph(a, i, pair) === from) {
           if (noSpaces(a.slice(0, i) + to + a.slice(end)) === target) return true;
         }
         i = a.indexOf(from, i + 1);
@@ -235,11 +286,16 @@ export function gradeResponse(input: GradeInput, response: ExerciseResponse): Gr
       return gradeText((response as TextResponse).text, (input.answer as TranslateAnswer).accepted, input);
     case 'fill_blank': {
       const given = (response as FillBlankResponse).blanks ?? {};
+      const blanks = (input.answer as FillBlankAnswer).blanks;
+      // Blank ids are ASCII (choiceIdSchema), so the default UTF-16 sort is code point order,
+      // matching SQL's `order by k collate "C"`.
+      const ids = Object.keys(blanks).sort();
+      if (ids.length === 0) return result('incorrect');
       let verdict: Verdict = 'correct';
       const tags: string[] = [];
       let feedback: string | null = null;
-      for (const [id, accepted] of Object.entries((input.answer as FillBlankAnswer).blanks)) {
-        const r = gradeText(given[id], accepted, input);
+      for (const id of ids) {
+        const r = gradeText(given[id], blanks[id]!, input);
         if (RANK[r.verdict] < RANK[verdict]) verdict = r.verdict;
         for (const t of r.errorTags) if (!tags.includes(t)) tags.push(t);
         feedback ??= r.feedbackVi;

@@ -23,7 +23,29 @@ const DEFAULT_RUBRIC = {
 const SCORES = { correct: 1, almost: 0.8, incorrect: 0 };
 
 const fixtures = JSON.parse(readFileSync(FIXTURES, 'utf8'));
-const lit = (s) => `'${String(s).replaceAll("'", "''")}'`;
+// Control, invisible/space-like and combining chars are written as U&'' escapes so the generated
+// SQL stays readable and survives editors that strip or normalise them.
+const INVISIBLE_RANGES = [
+  [0x0, 0x1f],
+  [0x7f, 0xa0],
+  [0xad, 0xad],
+  [0x300, 0x36f],
+  [0x1680, 0x1680],
+  [0x2000, 0x200f],
+  [0x2028, 0x202f],
+  [0x205f, 0x206f],
+  [0x3000, 0x3000],
+  [0xfeff, 0xfeff],
+];
+const INVISIBLE = new RegExp(`[${INVISIBLE_RANGES.map(([a, b]) => `\\u{${a.toString(16)}}-\\u{${b.toString(16)}}`).join('')}]`, 'gu');
+const lit = (s) => {
+  const str = String(s).replaceAll("'", "''");
+  if (!str.match(INVISIBLE)) return `'${str}'`;
+  const escaped = str
+    .replaceAll('\\', '\\\\')
+    .replace(INVISIBLE, (ch) => `\\${ch.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')}`);
+  return `U&'${escaped}'`;
+};
 const json = (v) => `${lit(JSON.stringify(v))}::jsonb`;
 const lines = [];
 let count = 0;

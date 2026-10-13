@@ -93,7 +93,11 @@ export type ListenPrompt = z.infer<typeof listenPromptSchema>;
 // ---------------------------------------------------------------------------
 
 export const choiceAnswerSchema = z.strictObject({ correct_option_id: choiceIdSchema });
-export const fillBlankAnswerSchema = z.strictObject({ blanks: z.record(choiceIdSchema, z.array(textSchema).min(1)) });
+export const fillBlankAnswerSchema = z.strictObject({
+  blanks: z
+    .record(choiceIdSchema, z.array(textSchema).min(1))
+    .refine((b) => Object.keys(b).length > 0, { message: 'blanks_empty' }),
+});
 export const wordBankAnswerSchema = z.strictObject({ orders: z.array(z.array(choiceIdSchema).min(1)).min(1) });
 export const translateAnswerSchema = z.strictObject({ accepted: z.array(textSchema).min(1) });
 
