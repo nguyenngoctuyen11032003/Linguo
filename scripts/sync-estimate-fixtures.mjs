@@ -40,7 +40,11 @@ for (const c of fixtures.cases) {
     suggested_minutes_per_day: c.expected.suggestedMinutesPerDay,
     suggested_date: c.expected.suggestedDate,
   };
-  const targetDate = c.targetDate === null ? 'null' : `date ${lit(c.targetDate)}`;
+  const wm = c.weeklyMinutes;
+  if (!Array.isArray(wm) || wm.length !== 7 || !wm.every((m) => Number.isInteger(m) && m >= 0 && m <= 720)) {
+    throw new Error(`Fixture "${c.name}": weeklyMinutes must be 7 integers between 0 and 720, got ${JSON.stringify(wm)}`);
+  }
+  const targetDate = c.targetDate == null ? 'null' : `date ${lit(c.targetDate)}`;
   test(
     `select is(public.estimate_learning_path(${lit(c.language)}, ${lit(c.currentLevel)}, ${lit(c.targetLevel)}, array[${c.weeklyMinutes.join(', ')}]::smallint[], ${targetDate}, date ${lit(fixtures.today)}) - 'assumptions', ${lit(JSON.stringify(expected))}::jsonb, ${lit(`estimate: ${c.name}`)});`,
   );
