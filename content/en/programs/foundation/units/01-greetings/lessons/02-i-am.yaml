@@ -177,12 +177,12 @@ exercises:
     prompt:
       instruction: "Sắp xếp thành câu tiếng Anh: \"Anh ấy là giáo viên.\""
       tokens:
-        - { id: k-he, text: He }
-        - { id: k-is, text: is }
-        - { id: k-a, text: a }
-        - { id: k-teacher, text: teacher }
-        - { id: k-an, text: an }
         - { id: k-are, text: are }
+        - { id: k-a, text: a }
+        - { id: k-he, text: He }
+        - { id: k-an, text: an }
+        - { id: k-is, text: is }
+        - { id: k-teacher, text: teacher }
     answer:
       orders:
         - [k-he, k-is, k-a, k-teacher]
@@ -358,12 +358,12 @@ exercises:
     prompt:
       instruction: "Sắp xếp thành câu tiếng Anh: \"Chúng tôi là kỹ sư.\""
       tokens:
-        - { id: p-we, text: We }
-        - { id: p-are, text: are }
         - { id: p-engineers, text: engineers }
-        - { id: p-is, text: is }
-        - { id: p-an, text: an }
+        - { id: p-are, text: are }
         - { id: p-engineer, text: engineer }
+        - { id: p-an, text: an }
+        - { id: p-we, text: We }
+        - { id: p-is, text: is }
     answer:
       orders:
         - [p-we, p-are, p-engineers]

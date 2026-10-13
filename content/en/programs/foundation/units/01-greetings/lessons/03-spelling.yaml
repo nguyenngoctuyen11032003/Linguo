@@ -139,14 +139,14 @@ exercises:
     prompt:
       instruction: "Sắp xếp thành câu hỏi: \"Tên bạn đánh vần thế nào?\""
       tokens:
-        - { id: o-how, text: How }
         - { id: o-do, text: do }
-        - { id: o-you, text: you }
-        - { id: o-spell, text: spell }
-        - { id: o-your, text: your }
-        - { id: o-name, text: name }
-        - { id: o-what, text: what }
         - { id: o-is, text: is }
+        - { id: o-your, text: your }
+        - { id: o-what, text: what }
+        - { id: o-name, text: name }
+        - { id: o-spell, text: spell }
+        - { id: o-how, text: How }
+        - { id: o-you, text: you }
     answer:
       orders:
         - [o-how, o-do, o-you, o-spell, o-your, o-name]
@@ -296,14 +296,14 @@ exercises:
     prompt:
       instruction: "Bạn chưa nghe rõ tên một người. Sắp xếp thành câu: \"Bạn đánh vần lại giúp mình được không?\""
       tokens:
-        - { id: g-can, text: can }
-        - { id: g-you, text: you }
         - { id: g-spell, text: spell }
-        - { id: g-that, text: that }
-        - { id: g-again, text: again }
-        - { id: g-please, text: please }
         - { id: g-do, text: do }
+        - { id: g-can, text: can }
         - { id: g-how, text: how }
+        - { id: g-that, text: that }
+        - { id: g-please, text: please }
+        - { id: g-again, text: again }
+        - { id: g-you, text: you }
     answer:
       orders:
         - [g-can, g-you, g-spell, g-that, g-again, g-please]

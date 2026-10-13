@@ -193,7 +193,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "559778a38e99a314055ff3b7ec3500da832d8ee52b4a7d7df9acd95ee313f215",
+      "content_hash": "153cc7c98532f06f2ba7b6f1c8afee96e51ce989560dd1349f3dd28c40b494d8",
       "difficulty": 1,
       "exercise_type": "word_bank",
       "id": "6e9e4aba-46fe-5701-8e96-c301fee1d07c",
@@ -230,24 +230,24 @@ select content_private.import_bundle($bundle${
         "instruction": "Sắp xếp thành câu tiếng Anh: \"Mình tên là Lan.\"",
         "tokens": [
           {
-            "id": "t-my",
-            "text": "My"
+            "id": "t-lan",
+            "text": "Lan"
           },
           {
             "id": "t-name",
             "text": "name"
           },
           {
-            "id": "t-is",
-            "text": "is"
-          },
-          {
-            "id": "t-lan",
-            "text": "Lan"
+            "id": "t-my",
+            "text": "My"
           },
           {
             "id": "t-your",
             "text": "your"
+          },
+          {
+            "id": "t-is",
+            "text": "is"
           },
           {
             "id": "t-are",
@@ -263,7 +263,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "11778fa29c1c54bf5059e7dd1d73b2cc656b74ffffa009e439563db90b2c40e9",
+      "content_hash": "80d1fb83b7817eb4612a92472930a4d4eb81964a495e88f3a91b550c5650de60",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "c845f738-52a9-53ba-bff2-71999020343f",
@@ -301,20 +301,12 @@ select content_private.import_bundle($bundle${
         "instruction": "Bạn vừa được giới thiệu với Minh. Sắp xếp thành câu: \"Rất vui được gặp bạn, Minh.\"",
         "tokens": [
           {
-            "id": "w-nice",
-            "text": "Nice"
-          },
-          {
             "id": "w-to",
             "text": "to"
           },
           {
-            "id": "w-meet",
-            "text": "meet"
-          },
-          {
-            "id": "w-you",
-            "text": "you"
+            "id": "w-for",
+            "text": "for"
           },
           {
             "id": "w-minh",
@@ -325,8 +317,16 @@ select content_private.import_bundle($bundle${
             "text": "see"
           },
           {
-            "id": "w-for",
-            "text": "for"
+            "id": "w-you",
+            "text": "you"
+          },
+          {
+            "id": "w-nice",
+            "text": "Nice"
+          },
+          {
+            "id": "w-meet",
+            "text": "meet"
           }
         ]
       },
@@ -882,7 +882,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "5d4de2ec66d3b0cdbea366a8d6f7f26bd84818e21df0386de4245725e9ffa341",
+      "content_hash": "57c9c1793816a347f361e2d0f900a85e4b7dc906e7a37e5cca09bf227661ae76",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "f269277d-b6dc-5693-9c42-89e9f0191b96",
@@ -918,28 +918,28 @@ select content_private.import_bundle($bundle${
         "instruction": "Sắp xếp thành câu tiếng Anh: \"Chúng tôi là kỹ sư.\"",
         "tokens": [
           {
-            "id": "p-we",
-            "text": "We"
+            "id": "p-engineers",
+            "text": "engineers"
           },
           {
             "id": "p-are",
             "text": "are"
           },
           {
-            "id": "p-engineers",
-            "text": "engineers"
-          },
-          {
-            "id": "p-is",
-            "text": "is"
+            "id": "p-engineer",
+            "text": "engineer"
           },
           {
             "id": "p-an",
             "text": "an"
           },
           {
-            "id": "p-engineer",
-            "text": "engineer"
+            "id": "p-we",
+            "text": "We"
+          },
+          {
+            "id": "p-is",
+            "text": "is"
           }
         ]
       },
@@ -951,7 +951,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "a7cc4a76b743e8a5719e6051d8a6142ce82301a090764a741ca157cc2797493c",
+      "content_hash": "598da03d569c380063dce8718e3bd3ca25841155b9103310c2a33e80111a5aa0",
       "difficulty": 1,
       "exercise_type": "word_bank",
       "id": "e508f928-f293-573f-9ec1-eec78361fa7b",
@@ -988,28 +988,28 @@ select content_private.import_bundle($bundle${
         "instruction": "Sắp xếp thành câu tiếng Anh: \"Anh ấy là giáo viên.\"",
         "tokens": [
           {
-            "id": "k-he",
-            "text": "He"
-          },
-          {
-            "id": "k-is",
-            "text": "is"
+            "id": "k-are",
+            "text": "are"
           },
           {
             "id": "k-a",
             "text": "a"
           },
           {
-            "id": "k-teacher",
-            "text": "teacher"
+            "id": "k-he",
+            "text": "He"
           },
           {
             "id": "k-an",
             "text": "an"
           },
           {
-            "id": "k-are",
-            "text": "are"
+            "id": "k-is",
+            "text": "is"
+          },
+          {
+            "id": "k-teacher",
+            "text": "teacher"
           }
         ]
       },
@@ -1628,7 +1628,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "47ecd78ba0cdee0abe089d0702018ce28a2b5beb45c64bb5498e62a41ab64cbb",
+      "content_hash": "1573ff4404d33d1f41532dc53390575f29a944f734a02ea21486a0f2ae693082",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "887eb5fd-82f1-58be-89d5-e12c354af861",
@@ -1690,36 +1690,36 @@ select content_private.import_bundle($bundle${
         "instruction": "Bạn chưa nghe rõ tên một người. Sắp xếp thành câu: \"Bạn đánh vần lại giúp mình được không?\"",
         "tokens": [
           {
-            "id": "g-can",
-            "text": "can"
-          },
-          {
-            "id": "g-you",
-            "text": "you"
-          },
-          {
             "id": "g-spell",
             "text": "spell"
-          },
-          {
-            "id": "g-that",
-            "text": "that"
-          },
-          {
-            "id": "g-again",
-            "text": "again"
-          },
-          {
-            "id": "g-please",
-            "text": "please"
           },
           {
             "id": "g-do",
             "text": "do"
           },
           {
+            "id": "g-can",
+            "text": "can"
+          },
+          {
             "id": "g-how",
             "text": "how"
+          },
+          {
+            "id": "g-that",
+            "text": "that"
+          },
+          {
+            "id": "g-please",
+            "text": "please"
+          },
+          {
+            "id": "g-again",
+            "text": "again"
+          },
+          {
+            "id": "g-you",
+            "text": "you"
           }
         ]
       },
@@ -1731,7 +1731,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "182b05df3621c669f4440415f9981ddf74bb7b87500eeb23b691e7690bb05e99",
+      "content_hash": "b02ba2b8bc7ef7f768741df08eaa4f619833fc6f6443def217f5c30c448a07f3",
       "difficulty": 1,
       "exercise_type": "word_bank",
       "id": "0377dee4-4dd6-5986-9e1b-5dee7f8caa4a",
@@ -1770,36 +1770,36 @@ select content_private.import_bundle($bundle${
         "instruction": "Sắp xếp thành câu hỏi: \"Tên bạn đánh vần thế nào?\"",
         "tokens": [
           {
-            "id": "o-how",
-            "text": "How"
-          },
-          {
             "id": "o-do",
             "text": "do"
           },
           {
-            "id": "o-you",
-            "text": "you"
-          },
-          {
-            "id": "o-spell",
-            "text": "spell"
+            "id": "o-is",
+            "text": "is"
           },
           {
             "id": "o-your",
             "text": "your"
           },
           {
-            "id": "o-name",
-            "text": "name"
-          },
-          {
             "id": "o-what",
             "text": "what"
           },
           {
-            "id": "o-is",
-            "text": "is"
+            "id": "o-name",
+            "text": "name"
+          },
+          {
+            "id": "o-spell",
+            "text": "spell"
+          },
+          {
+            "id": "o-how",
+            "text": "How"
+          },
+          {
+            "id": "o-you",
+            "text": "you"
           }
         ]
       },
@@ -1927,7 +1927,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ko",
-      "content_hash": "820b947c58bfe78a770abd65b5d1f1199e8d0000d12db30f42f9b3763f756226",
+      "content_hash": "6d04f34b1a81804cedfcb1d8b681df98cc5147537b5993ea560ecff6454d0c58",
       "difficulty": 1,
       "exercise_type": "word_bank",
       "id": "f39f047f-918b-5f03-8f5f-8b668fd73fc9",
@@ -1962,20 +1962,20 @@ select content_private.import_bundle($bundle${
         "instruction": "Trong bộ ba 가 / 카 / 까, hãy ghép âm tiết có phụ âm bật hơi.",
         "tokens": [
           {
-            "id": "k1",
-            "text": "ㄱ"
-          },
-          {
-            "id": "k2",
-            "text": "ㅋ"
+            "id": "k4",
+            "text": "ㅏ"
           },
           {
             "id": "k3",
             "text": "ㄲ"
           },
           {
-            "id": "k4",
-            "text": "ㅏ"
+            "id": "k1",
+            "text": "ㄱ"
+          },
+          {
+            "id": "k2",
+            "text": "ㅋ"
           }
         ]
       },
@@ -2179,7 +2179,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ko",
-      "content_hash": "accaf25b7d22823edb955822f103e689b31f2288c63d6fc96c85f84006863a2b",
+      "content_hash": "2b0576fef66edeaab1e1520a52710fd31c6be22c87d6ac5a13d8a05458d68b01",
       "difficulty": 1,
       "exercise_type": "word_bank",
       "id": "82c6236f-44a1-5c5f-a698-c8d8f319f5fb",
@@ -2214,24 +2214,24 @@ select content_private.import_bundle($bundle${
         "instruction": "Ghép các chữ cái thành âm tiết đọc là \"ma\".",
         "tokens": [
           {
-            "id": "b6",
-            "text": "ㅁ"
+            "id": "z7",
+            "text": "ㅂ"
           },
           {
             "id": "h2",
             "text": "ㄴ"
           },
           {
-            "id": "w9",
-            "text": "ㅏ"
-          },
-          {
             "id": "f4",
             "text": "ㅓ"
           },
           {
-            "id": "z7",
-            "text": "ㅂ"
+            "id": "w9",
+            "text": "ㅏ"
+          },
+          {
+            "id": "b6",
+            "text": "ㅁ"
           }
         ]
       },
@@ -2243,7 +2243,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ko",
-      "content_hash": "441a526d9ab922ca7c5da5b717c856db777529d54d04d985ec523a455f14dbd5",
+      "content_hash": "adf3d54b084063759ed638c629ea2f8c36dfff4c4179747bef6bb5e6dd6a0cd3",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "1d3dcde1-853c-5eab-ac3b-6531771e2810",
@@ -2280,24 +2280,24 @@ select content_private.import_bundle($bundle${
         "instruction": "Ghép các chữ cái thành từ có nghĩa \"cái mũ\".",
         "tokens": [
           {
-            "id": "m3",
-            "text": "ㅁ"
+            "id": "e9",
+            "text": "ㅓ"
           },
           {
             "id": "o8",
             "text": "ㅗ"
           },
           {
-            "id": "j5",
-            "text": "ㅈ"
-          },
-          {
             "id": "a1",
             "text": "ㅏ"
           },
           {
-            "id": "e9",
-            "text": "ㅓ"
+            "id": "j5",
+            "text": "ㅈ"
+          },
+          {
+            "id": "m3",
+            "text": "ㅁ"
           },
           {
             "id": "s6",
@@ -2839,7 +2839,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ko",
-      "content_hash": "2e3f6911dc19175ac91bb65777dc7c8898cdbbd0bac649b03f864496f35e7b79",
+      "content_hash": "f68d98a9f67af0b38590d0dc3f2f2833e79020e4459a9a0ffd1eb068ebe114ef",
       "difficulty": 1,
       "exercise_type": "word_bank",
       "id": "e69c9a73-e8da-5388-baa3-7fa6618b7f2c",
@@ -2874,20 +2874,20 @@ select content_private.import_bundle($bundle${
         "instruction": "Ghép các chữ cái thành âm tiết đọc là \"ô\".",
         "tokens": [
           {
-            "id": "j4",
-            "text": "ㅇ"
+            "id": "c2",
+            "text": "ㅗ"
           },
           {
             "id": "r7",
             "text": "ㅓ"
           },
           {
-            "id": "c2",
-            "text": "ㅗ"
-          },
-          {
             "id": "n9",
             "text": "ㅜ"
+          },
+          {
+            "id": "j4",
+            "text": "ㅇ"
           }
         ]
       },
@@ -2899,7 +2899,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ko",
-      "content_hash": "23ff2c8dc18a5440367326db5619448181917c238e50c08109f9bac03413ea28",
+      "content_hash": "997fd28cdc063d46b6a98325a2364c57536734d15c5dfc149fdcadb663c258af",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "e3078432-d029-5d06-99d5-fa9439666b9e",
@@ -2942,28 +2942,28 @@ select content_private.import_bundle($bundle${
         "instruction": "Ghép các chữ cái thành từ có nghĩa \"dưa chuột\".",
         "tokens": [
           {
-            "id": "q1",
-            "text": "ㅇ"
+            "id": "u6",
+            "text": "ㅓ"
           },
           {
             "id": "e5",
             "text": "ㅗ"
           },
           {
-            "id": "l8",
-            "text": "ㅇ"
-          },
-          {
             "id": "t3",
             "text": "ㅣ"
           },
           {
-            "id": "u6",
-            "text": "ㅓ"
+            "id": "l8",
+            "text": "ㅇ"
           },
           {
             "id": "g2",
             "text": "ㅡ"
+          },
+          {
+            "id": "q1",
+            "text": "ㅇ"
           }
         ]
       },
@@ -3339,7 +3339,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ko",
-      "content_hash": "5108832ad8bb0c303d065c8d150de2d274ae7efccee974a7a758cc02a979581a",
+      "content_hash": "fcde48b9db7678ec974f0e308d3a604095a77b3d9c50c124eb480161f3f51f3e",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "3541d3c1-a6b9-5730-9c6d-36499d8fece4",
@@ -3376,20 +3376,16 @@ select content_private.import_bundle($bundle${
         "instruction": "Ghép các chữ cái thành từ có nghĩa \"quả táo\".",
         "tokens": [
           {
+            "id": "c6",
+            "text": "ㅘ"
+          },
+          {
             "id": "c4",
             "text": "ㅅ"
           },
           {
-            "id": "c8",
-            "text": "ㅏ"
-          },
-          {
             "id": "c1",
             "text": "ㄱ"
-          },
-          {
-            "id": "c6",
-            "text": "ㅘ"
           },
           {
             "id": "c3",
@@ -3398,6 +3394,10 @@ select content_private.import_bundle($bundle${
           {
             "id": "c9",
             "text": "ㅋ"
+          },
+          {
+            "id": "c8",
+            "text": "ㅏ"
           }
         ]
       },
@@ -6035,7 +6035,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "459d373df8a1cf55c7ac7783f80e5f8522a92534a2e1ad5092917bd2809f7ec8",
+      "content_hash": "5135f43031c2513a126afd06664e37e681d9b729f391ab769b19c538e87a28ca",
       "estimated_minutes": 8,
       "id": "69dc577d-a377-5093-af0f-9c23deb82650",
       "is_demo": true,
@@ -6163,7 +6163,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "015f499a6d5257dbeab9bc3f1a5df732e912946a99cbd41d2dca98a48cce9248",
+      "content_hash": "0913f45035695ab2139afeda3119069dfccbc0f5a600745c586b12de34783f6a",
       "estimated_minutes": 10,
       "id": "28c72bd3-e8c2-5350-8395-12f93e0a3f42",
       "is_demo": true,
@@ -6279,7 +6279,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "af62bb8fcb3e437715d03b272b44166af9b2c3918b506a77a3bae0cbc7162c80",
+      "content_hash": "1df6dc29c290579414a32c2e790d8ce03ed158baf4793b76df82a2a73a4557f0",
       "estimated_minutes": 8,
       "id": "31e10657-8731-5185-b926-11758cb0a7fd",
       "is_demo": true,
@@ -6418,7 +6418,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "3d2767af40b2003180a96ccb27202c27ab132c2c68261a15d6ad3e5f8dd31934",
+      "content_hash": "416e53a0023d5d1b13c4afdfd8344ca44b6d935b146d36dc183df67463fe2ac5",
       "estimated_minutes": 12,
       "id": "ba8b8110-f82c-51ce-a412-7f612118c84b",
       "is_demo": true,
@@ -6546,7 +6546,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "3d9bf9d21a9802e5a15949b810d0d07715224c2c66a7402091ed7f9d0fc202f9",
+      "content_hash": "cc1d338ddc7112df2e0610666ff783a5bdea288ba10fcbcdd87386f9832afbcc",
       "estimated_minutes": 12,
       "id": "e2d3c4af-d841-5d56-bb65-1d26b4799d10",
       "is_demo": true,
@@ -6664,7 +6664,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "82be7a0e461751377ced3d5f4152d95bb2ab53277310153fd7b819ceff34634c",
+      "content_hash": "c66cef19a41c438962ded4f98bd10304612cfc609fdf7967c3a3223118d15189",
       "estimated_minutes": 10,
       "id": "1a7609ea-0d21-5335-b740-d01c03ee6dd3",
       "is_demo": true,
