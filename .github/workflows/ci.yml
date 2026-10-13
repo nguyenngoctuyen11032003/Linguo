@@ -79,10 +79,12 @@ jobs:
       - name: Generated types are up to date
         run: |
           supabase gen types typescript --local --schema public > packages/shared/src/database.types.ts
-          git diff --exit-code -- packages/shared/src/database.types.ts || {
-            echo "::error::packages/shared/src/database.types.ts is stale. Run 'pnpm db:types' and commit."
+          # --porcelain also reports the file when it is untracked (never committed).
+          if [ -n "$(git status --porcelain -- packages/shared/src/database.types.ts)" ]; then
+            git --no-pager diff -- packages/shared/src/database.types.ts || true
+            echo "::error::packages/shared/src/database.types.ts is stale or untracked. Run 'pnpm db:types' and commit."
             exit 1
-          }
+          fi
       - name: Stop local stack
         if: always()
         run: supabase stop --no-backup
