@@ -1,17 +1,22 @@
 import { expect, test } from '@playwright/test';
-import { expectNoHorizontalScroll, mockSupabase, signIn } from './fixtures';
+import { expectNoHorizontalScroll, mockSupabase, settleAnimations, signIn } from './fixtures';
 
 const PUBLIC_PATHS = ['/', '/dang-nhap', '/dang-ky', '/quen-mat-khau', '/quyen-rieng-tu', '/khong-ton-tai'];
 
 test.describe('public pages fit every screen', () => {
+  // Entrance slides start off-screen and are JS-driven (not in document.getAnimations()), so a fixed wait raced
+  // them. Reduced motion keeps the same final layout with opacity-only reveals, which settleAnimations awaits.
+  test.use({ reducedMotion: 'reduce' });
+
   for (const path of PUBLIC_PATHS) {
     test(`no horizontal scroll on ${path}`, async ({ page }) => {
       await mockSupabase(page);
       await page.goto(path);
-      await page.waitForTimeout(1500); // entrance animations settle (slides start off-screen)
+      await expect(page.locator('h1').first()).toBeVisible();
+      await settleAnimations(page);
       await expectNoHorizontalScroll(page);
       await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-      await page.waitForTimeout(1200);
+      await settleAnimations(page);
       await expectNoHorizontalScroll(page);
     });
   }
