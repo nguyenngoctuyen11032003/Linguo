@@ -16,7 +16,14 @@ export function HomePage() {
       <header className="space-y-1">
         <p className="text-sm capitalize text-muted">{todayLabel()}</p>
         <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">
-          {status === 'loading' ? <Skeleton className="h-8 w-52 align-middle" /> : `Chào ${name || 'bạn'}`}
+          {status === 'loading' ? (
+            <>
+              <span className="sr-only">Đang tải…</span>
+              <Skeleton className="h-8 w-52 align-middle" />
+            </>
+          ) : (
+            `Chào ${name || 'bạn'}`
+          )}
         </h1>
       </header>
 

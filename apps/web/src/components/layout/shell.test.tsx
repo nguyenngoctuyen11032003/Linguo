@@ -59,6 +59,11 @@ describe('HomePage', () => {
     expect(screen.queryByText(/%/)).not.toBeInTheDocument();
   });
 
+  it('announces loading in the heading while the profile loads', () => {
+    renderWithProviders(<HomePage />, { route: '/app', profile: { status: 'loading', profile: null } });
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Đang tải…');
+  });
+
   it('falls back to "bạn" without a name', () => {
     renderWithProviders(<HomePage />, {
       route: '/app',
