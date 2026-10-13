@@ -9,6 +9,8 @@ export interface RouteStop {
   y: number;
   label: string;
   labelPosition?: 'top' | 'bottom' | 'left' | 'right';
+  /** Horizontal text anchor for top/bottom labels. `start`/`end` keep a label inside the viewBox edge (aligned with the stop's rim). Default `middle`. */
+  anchor?: 'start' | 'middle' | 'end';
 }
 
 export interface RouteTrack {
@@ -25,16 +27,20 @@ interface RouteLineProps {
   className?: string;
 }
 
+const STOP_RADIUS = 7;
+
 function labelProps(stop: RouteStop) {
+  const anchor = stop.anchor ?? 'middle';
+  const x = anchor === 'start' ? stop.x - STOP_RADIUS : anchor === 'end' ? stop.x + STOP_RADIUS : stop.x;
   switch (stop.labelPosition ?? 'top') {
     case 'bottom':
-      return { x: stop.x, y: stop.y + 22, textAnchor: 'middle' as const };
+      return { x, y: stop.y + 22, textAnchor: anchor };
     case 'left':
       return { x: stop.x - 12, y: stop.y + 4, textAnchor: 'end' as const };
     case 'right':
       return { x: stop.x + 12, y: stop.y + 4, textAnchor: 'start' as const };
     default:
-      return { x: stop.x, y: stop.y - 13, textAnchor: 'middle' as const };
+      return { x, y: stop.y - 13, textAnchor: anchor };
   }
 }
 
@@ -84,7 +90,7 @@ export function RouteLine({ title, viewBox, tracks, className }: RouteLineProps)
                 transition={{ duration: 0.5, ease: SPRING_POP, delay: reduceMotion ? 0 : 0.4 + ti * 0.25 + si * 0.15 }}
                 style={{ transformOrigin: `${stop.x}px ${stop.y}px`, transformBox: 'view-box' }}
               >
-                <circle cx={stop.x} cy={stop.y} r={7} fill={track.color} />
+                <circle cx={stop.x} cy={stop.y} r={STOP_RADIUS} fill={track.color} />
                 <circle cx={stop.x} cy={stop.y} r={2.6} fill="var(--bg)" />
                 <text {...labelProps(stop)} fill="currentColor" fontSize={11} fontWeight={600}>
                   {stop.label}
