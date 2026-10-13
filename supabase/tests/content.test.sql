@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(46);
+select plan(58);
 
 -- ===== schema =====
 select has_table('public', 'content_sources', 'content_sources exists');
@@ -110,6 +110,28 @@ select set_config('test.b3', jsonb_set(jsonb_set(current_setting('test.b2')::jso
 select set_config('test.b4', jsonb_set(jsonb_set(current_setting('test.b3')::jsonb,
   '{lessons}', jsonb_build_array(current_setting('test.b3')::jsonb -> 'lessons' -> 0)),
   '{lesson_prerequisites}', '[]')::text, true);
+-- b5: + unit U2 (order 1) and lesson L6 at (U2, 0). b6: L1 and L6 swap units at the same order_index
+-- (both hashes change). b7: L1 goes from demo to reviewed with the same content (same hash).
+select set_config('test.b5', jsonb_set(jsonb_set(current_setting('test.b4')::jsonb,
+  '{units}', (current_setting('test.b4')::jsonb -> 'units') || jsonb_build_array($json$
+    {"id": "c0000000-0000-4000-8000-000000000010", "key": "en:unit:pgtap-unit2", "source_id": "c0000000-0000-4000-8000-000000000001",
+     "program_id": "c0000000-0000-4000-8000-000000000002", "order_index": 1, "title": {"vi": "Chủ đề 2"},
+     "status": "published", "is_demo": true, "reviewed_by": null, "reviewed_at": null}$json$::jsonb
+    || jsonb_build_object('content_hash', repeat('a', 64)))),
+  '{lessons}', (current_setting('test.b4')::jsonb -> 'lessons') || jsonb_build_array($json$
+    {"id": "c0000000-0000-4000-8000-000000000011", "key": "en:lesson:pgtap-l6", "source_id": "c0000000-0000-4000-8000-000000000001",
+     "unit_id": "c0000000-0000-4000-8000-000000000010", "language_code": "en", "level_code": "pre_a1", "order_index": 0,
+     "title": {"vi": "Bài 6"}, "objectives": [{"vi": "Mục tiêu"}], "body": [], "estimated_minutes": 5, "skills": ["reading"],
+     "status": "published", "is_demo": true, "reviewed_by": null, "reviewed_at": null}$json$::jsonb
+    || jsonb_build_object('content_hash', repeat('b', 64))))::text, true);
+select set_config('test.b6', jsonb_set(jsonb_set(jsonb_set(jsonb_set(current_setting('test.b5')::jsonb,
+  '{lessons,0,unit_id}', '"c0000000-0000-4000-8000-000000000010"'),
+  '{lessons,0,content_hash}', to_jsonb(repeat('d', 64))),
+  '{lessons,1,unit_id}', '"c0000000-0000-4000-8000-000000000003"'),
+  '{lessons,1,content_hash}', to_jsonb(repeat('e', 64)))::text, true);
+select set_config('test.b7', jsonb_set(current_setting('test.b6')::jsonb, '{lessons,0}',
+  (current_setting('test.b6')::jsonb -> 'lessons' -> 0)
+  || '{"is_demo": false, "reviewed_by": "reviewer", "reviewed_at": "2026-10-01T00:00:00+00:00"}'::jsonb)::text, true);
 
 -- Content already loaded by supabase/seed.sql is absent from the test bundle, so the first import archives it.
 select set_config('test.pre_live', (
@@ -139,6 +161,21 @@ select is(content_private.import_bundle(current_setting('test.b3')::jsonb),
 select is(content_private.import_bundle(current_setting('test.b4')::jsonb),
   '{"inserted": 0, "updated": 0, "archived": 1, "unchanged": 8}'::jsonb,
   'a lesson missing from the bundle is archived');
+select is(content_private.import_bundle(current_setting('test.b5')::jsonb),
+  '{"inserted": 2, "updated": 0, "archived": 0, "unchanged": 8}'::jsonb,
+  'a new unit and lesson are inserted');
+select is(content_private.import_bundle(current_setting('test.b6')::jsonb),
+  '{"inserted": 0, "updated": 2, "archived": 0, "unchanged": 8}'::jsonb,
+  'lessons swap units at the same order_index without a unique violation');
+select is((select unit_id::text || ':' || order_index from public.lessons where id = 'c0000000-0000-4000-8000-000000000005'),
+  'c0000000-0000-4000-8000-000000000010:0', 'L1 moved to U2 at order_index 0');
+select is(content_private.import_bundle(current_setting('test.b7')::jsonb),
+  '{"inserted": 0, "updated": 1, "archived": 0, "unchanged": 9}'::jsonb,
+  'a published demo lesson becomes reviewed without a content change');
+select is((select is_demo::text || ':' || version from public.lessons where id = 'c0000000-0000-4000-8000-000000000005'),
+  'false:3', 'a review-only change keeps the version');
+select throws_ok($$select content_private.import_bundle(jsonb_set(current_setting('test.b7')::jsonb, '{lessons}', '[]'))$$,
+  'P0001', 'empty_bundle', 'a bundle without lessons cannot archive every published lesson');
 select throws_ok($$select content_private.import_bundle('{"bundle_version": 2}'::jsonb)$$,
   'P0001', 'invalid_bundle', 'unknown bundle version is rejected');
 select throws_ok($$select content_private.import_bundle('{"bundle_version": 1, "git_sha": null}'::jsonb)$$,
@@ -152,7 +189,7 @@ select is((select count(*)::int from content_private.exercise_keys where exercis
   'answer keys are kept for both exercise versions');
 select is((select count(*)::int from content_private.revisions where entity_id = 'c0000000-0000-4000-8000-000000000007'), 2,
   'one revision per exercise version');
-select is((select content_version from public.lessons where id = 'c0000000-0000-4000-8000-000000000005'), 2,
+select is((select content_version from public.lessons where id = 'c0000000-0000-4000-8000-000000000005'), 3,
   'lessons.content_version follows version');
 select is((select status || ':' || version from public.learning_items where id = 'c0000000-0000-4000-8000-000000000004'), 'in_review:1',
   'status-only change keeps the version');
@@ -160,9 +197,31 @@ select is((select status from public.lessons where id = 'c0000000-0000-4000-8000
 select isnt((select published_at from public.lessons where id = 'c0000000-0000-4000-8000-000000000005'), null, 'published lesson has published_at');
 
 -- ===== prerequisites and language guards =====
-select throws_ok($$insert into public.lesson_prerequisites (lesson_id, prerequisite_lesson_id)
+-- L2 (archived) still requires L1; archived lessons' edges do not count toward cycles.
+select lives_ok($$insert into public.lesson_prerequisites (lesson_id, prerequisite_lesson_id)
   values ('c0000000-0000-4000-8000-000000000005', 'c0000000-0000-4000-8000-000000000006')$$,
-  'P0001', 'prerequisite_cycle', 'L1 cannot require L2 when L2 requires L1');
+  'edges of an archived lesson do not count toward a cycle');
+delete from public.lesson_prerequisites
+where lesson_id = 'c0000000-0000-4000-8000-000000000005' and prerequisite_lesson_id = 'c0000000-0000-4000-8000-000000000006';
+
+-- L3, L4, L5 (draft, U1): L4 requires L3, L5 requires L4.
+insert into public.lessons (id, key, source_id, unit_id, language_code, level_code, order_index, title, objectives, body,
+  estimated_minutes, skills, status, content_hash)
+select ('c0000000-0000-4000-8000-0000000000' || n)::uuid, 'en:lesson:pgtap-l' || n, 'c0000000-0000-4000-8000-000000000001',
+  'c0000000-0000-4000-8000-000000000003', 'en', 'pre_a1', n::int, '{"vi": "Bài"}', '[{"vi": "Mục tiêu"}]', '[]',
+  5, '{reading}', 'draft', repeat('c', 64)
+from unnest(array['12', '13', '14']) as t (n);
+insert into public.lesson_prerequisites (lesson_id, prerequisite_lesson_id) values
+  ('c0000000-0000-4000-8000-000000000013', 'c0000000-0000-4000-8000-000000000012'),
+  ('c0000000-0000-4000-8000-000000000014', 'c0000000-0000-4000-8000-000000000013');
+
+select throws_ok($$insert into public.lesson_prerequisites (lesson_id, prerequisite_lesson_id)
+  values ('c0000000-0000-4000-8000-000000000012', 'c0000000-0000-4000-8000-000000000014')$$,
+  'P0001', 'prerequisite_cycle', 'a three-lesson cycle is rejected');
+select lives_ok($$update public.lesson_prerequisites
+  set lesson_id = 'c0000000-0000-4000-8000-000000000012', prerequisite_lesson_id = 'c0000000-0000-4000-8000-000000000013'
+  where lesson_id = 'c0000000-0000-4000-8000-000000000013' and prerequisite_lesson_id = 'c0000000-0000-4000-8000-000000000012'$$,
+  'reversing an edge is not a cycle with the edge it replaces');
 
 insert into public.programs (id, key, source_id, language_code, title, description, kind, level_from, level_to, order_index,
   status, is_demo, reviewed_by, reviewed_at, content_hash)
@@ -204,6 +263,33 @@ select throws_ok($$update public.lessons set status = 'published' where id = 'c0
   'P0001', 'invalid_status_transition', 'draft cannot jump to published');
 select lives_ok($$update public.programs set status = 'archived' where id = 'c0000000-0000-4000-8000-00000000000a'$$,
   'published -> archived is allowed');
+-- L1 is published and reviewed since b7.
+select throws_ok($$update public.lessons set is_demo = true, estimated_minutes = 9 where id = 'c0000000-0000-4000-8000-000000000005'$$,
+  'P0001', 'invalid_status_transition', 'flipping a reviewed row to demo does not allow an unreviewed content edit');
+select lives_ok($$update public.lessons set reviewed_by = 'reviewer2', reviewed_at = reviewed_at + interval '1 day'
+  where id = 'c0000000-0000-4000-8000-000000000005'$$, 'a review-only change of a published row is allowed');
+
+-- Parent chain: published L7 under draft unit U3 (published program); published L8 under published
+-- unit U4 under draft program P3.
+insert into public.units (id, key, source_id, program_id, order_index, title, status, content_hash)
+values ('c0000000-0000-4000-8000-000000000015', 'en:unit:pgtap-draft', 'c0000000-0000-4000-8000-000000000001',
+  'c0000000-0000-4000-8000-000000000002', 2, '{"vi": "Chủ đề nháp"}', 'draft', repeat('b', 64));
+insert into public.programs (id, key, source_id, language_code, title, description, kind, level_from, level_to, order_index,
+  status, content_hash)
+values ('c0000000-0000-4000-8000-000000000017', 'en:program:pgtap-draft', 'c0000000-0000-4000-8000-000000000001', 'en',
+  '{"vi": "Chương trình nháp"}', '{"vi": "Mô tả"}', 'core', 'pre_a1', 'a1', 1, 'draft', repeat('a', 64));
+insert into public.units (id, key, source_id, program_id, order_index, title, status, is_demo, content_hash)
+values ('c0000000-0000-4000-8000-000000000018', 'en:unit:pgtap-orphan', 'c0000000-0000-4000-8000-000000000001',
+  'c0000000-0000-4000-8000-000000000017', 0, '{"vi": "Chủ đề"}', 'published', true, repeat('b', 64));
+insert into public.lessons (id, key, source_id, unit_id, language_code, level_code, order_index, title, objectives, body,
+  estimated_minutes, skills, status, is_demo, content_hash)
+values
+  ('c0000000-0000-4000-8000-000000000016', 'en:lesson:pgtap-l7', 'c0000000-0000-4000-8000-000000000001',
+   'c0000000-0000-4000-8000-000000000015', 'en', 'pre_a1', 0, '{"vi": "Bài"}', '[{"vi": "Mục tiêu"}]', '[]',
+   5, '{reading}', 'published', true, repeat('c', 64)),
+  ('c0000000-0000-4000-8000-000000000019', 'en:lesson:pgtap-l8', 'c0000000-0000-4000-8000-000000000001',
+   'c0000000-0000-4000-8000-000000000018', 'en', 'pre_a1', 0, '{"vi": "Bài"}', '[{"vi": "Mục tiêu"}]', '[]',
+   5, '{reading}', 'published', true, repeat('c', 64));
 
 -- ===== authenticated: published only =====
 set local role authenticated;
@@ -222,6 +308,11 @@ select is((select count(*)::int from public.lesson_items where lesson_id = 'c000
 select is((select count(*)::int from public.lesson_prerequisites where lesson_id = 'c0000000-0000-4000-8000-000000000006'), 0,
   'prerequisites of an archived lesson are hidden');
 select is((select count(*)::int from public.programs where id = 'c0000000-0000-4000-8000-00000000000a'), 0, 'archived program hidden');
+select is((select count(*)::int from public.lessons
+  where id in ('c0000000-0000-4000-8000-000000000016', 'c0000000-0000-4000-8000-000000000019')), 0,
+  'published lessons under a draft unit or program are hidden');
+select is((select count(*)::int from public.units where id = 'c0000000-0000-4000-8000-000000000018'), 0,
+  'a published unit under a draft program is hidden');
 select throws_ok($$update public.lessons set estimated_minutes = 7$$, '42501', null, 'authenticated cannot write content');
 select throws_ok(format('select content_private.import_bundle(%L::jsonb)', current_setting('test.bundle')), '42501', null,
   'authenticated cannot import');

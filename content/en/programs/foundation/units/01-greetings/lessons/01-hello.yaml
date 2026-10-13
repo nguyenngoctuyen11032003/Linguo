@@ -147,11 +147,11 @@ exercises:
     prompt:
       instruction: "Sắp xếp thành câu tiếng Anh: \"Mình tên là Lan.\""
       tokens:
-        - { id: t-my, text: My }
-        - { id: t-name, text: name }
-        - { id: t-is, text: is }
         - { id: t-lan, text: Lan }
+        - { id: t-name, text: name }
+        - { id: t-my, text: My }
         - { id: t-your, text: your }
+        - { id: t-is, text: is }
         - { id: t-are, text: are }
     answer:
       orders:
@@ -299,13 +299,13 @@ exercises:
     prompt:
       instruction: "Bạn vừa được giới thiệu với Minh. Sắp xếp thành câu: \"Rất vui được gặp bạn, Minh.\""
       tokens:
-        - { id: w-nice, text: Nice }
         - { id: w-to, text: to }
-        - { id: w-meet, text: meet }
-        - { id: w-you, text: you }
+        - { id: w-for, text: for }
         - { id: w-minh, text: Minh }
         - { id: w-see, text: see }
-        - { id: w-for, text: for }
+        - { id: w-you, text: you }
+        - { id: w-nice, text: Nice }
+        - { id: w-meet, text: meet }
     answer:
       orders:
         - [w-nice, w-to, w-meet, w-you, w-minh]

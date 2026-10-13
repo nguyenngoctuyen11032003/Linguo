@@ -32,6 +32,16 @@ const reviewFields = {
   reviewed_by: z.string().min(1).max(120).nullable().default(null),
   reviewed_at: z.iso.datetime({ offset: true }).nullable().default(null),
 };
+/**
+ * Review fields of learning items (per items file) and sources (per entry). `status` has no
+ * default: demo rows import as `published`, non-demo rows must set it explicitly
+ * (scripts/content/check.mjs).
+ */
+const optionalReviewFields = {
+  status: z.enum(CONTENT_STATUSES).optional(),
+  reviewed_by: z.string().min(1).max(120).nullable().default(null),
+  reviewed_at: z.iso.datetime({ offset: true }).nullable().default(null),
+};
 
 // ---------------------------------------------------------------------------
 // Lesson body blocks (PRD §6.2)
@@ -139,12 +149,18 @@ export const sourcesFileSchema = z.strictObject({
         license: z.enum(LICENSES),
         attribution_required: z.boolean().default(false),
         demo: z.boolean(),
+        ...optionalReviewFields,
       }),
     )
     .min(1),
 });
 
-export const itemsFileSchema = z.strictObject({ ...fileHeader, source: contentKeySchema, items: z.array(itemSchema).min(1) });
+export const itemsFileSchema = z.strictObject({
+  ...fileHeader,
+  ...optionalReviewFields,
+  source: contentKeySchema,
+  items: z.array(itemSchema).min(1),
+});
 
 export const programFileSchema = z.strictObject({
   ...fileHeader,

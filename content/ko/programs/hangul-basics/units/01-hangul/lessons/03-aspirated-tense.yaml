@@ -159,10 +159,10 @@ exercises:
     prompt:
       instruction: Trong bộ ba 가 / 카 / 까, hãy ghép âm tiết có phụ âm bật hơi.
       tokens:
+        - { id: k4, text: ㅏ }
+        - { id: k3, text: ㄲ }
         - { id: k1, text: ㄱ }
         - { id: k2, text: ㅋ }
-        - { id: k3, text: ㄲ }
-        - { id: k4, text: ㅏ }
     answer:
       orders:
         - [k2, k4]
@@ -286,12 +286,12 @@ exercises:
     prompt:
       instruction: Ghép các chữ cái thành từ có nghĩa "quả táo".
       tokens:
-        - { id: c4, text: ㅅ }
-        - { id: c8, text: ㅏ }
-        - { id: c1, text: ㄱ }
         - { id: c6, text: ㅘ }
+        - { id: c4, text: ㅅ }
+        - { id: c1, text: ㄱ }
         - { id: c3, text: ㅗ }
         - { id: c9, text: ㅋ }
+        - { id: c8, text: ㅏ }
     answer:
       orders:
         - [c4, c8, c1, c6]

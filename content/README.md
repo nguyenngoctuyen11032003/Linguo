@@ -23,10 +23,13 @@ content/
 
 - Mọi file bắt đầu bằng dòng `# DEMO — chưa kiểm duyệt` khi là nội dung demo, có `schema_version: 1` và `demo: true|false`.
 - File demo không đặt `reviewed_by`/`reviewed_at` (để `null`).
+- Trạng thái duyệt (`status`, `reviewed_by`, `reviewed_at`): chương trình, unit, bài đặt ở đầu file; học liệu đặt ở đầu file items (áp dụng cho mọi item trong file); nguồn đặt trong từng mục của `sources.yaml`. Nội dung demo bỏ trống `status` thì được nhập là `published`; nội dung **không** demo phải ghi rõ `status`, và khi `approved`/`published` phải có cả `reviewed_by` lẫn `reviewed_at`.
+- Bài `published` chỉ được liên kết (và dùng trong bài tập) học liệu `published`, nếu không học liệu sẽ không hiện ra.
 - **Key** ổn định, không đổi sau khi xuất bản (id trong DB sinh từ key): `<lang>:<loại>:<tên>`, ví dụ `en:lesson:i-am`, `ko:item:vowel-eo`, `en:exercise:i-am-translate-student`; nguồn dùng `src:<tên>`. Chỉ chữ thường, số, gạch ngang.
 - Cấp độ: EN `pre_a1 … c2`, KO `hangul, topik1 … topik6`; cấp của bài phải nằm trong khoảng `level_from…level_to` của chương trình.
 - Mỗi học liệu chỉ được `introduce` ở một bài; các bài khác dùng `role: reuse`.
-- Văn bản tiếng Việt đủ dấu, chuẩn hoá **NFC** (gõ bằng bộ gõ Unicode dựng sẵn).
+- Văn bản tiếng Việt đủ dấu, chuẩn hoá **NFC** (gõ bằng bộ gõ Unicode dựng sẵn). Công cụ kiểm tra từng chuỗi sau khi đọc YAML, nên cả chuỗi viết bằng escape (`"Tôi"`) cũng bị bắt; ký tự điều khiển (trừ xuống dòng và tab) và U+FFFE/U+FFFF bị cấm.
+- Trong `content/` chỉ có file `.yaml`/`.yml` (nội dung) và `.md` (tài liệu); file khác bị báo lỗi.
 
 ## Một bài học gồm gì (PRD §6.2)
 
@@ -42,7 +45,8 @@ Bài tập (khoảng 8 bài) đi theo thứ tự **recognition → recall → ap
 
 - `mcq`/`listen`: `display_answer` phải trùng **chính xác** văn bản phương án đúng (giao diện dùng nó để đánh dấu "Đáp án đúng"). Id phương án là chuỗi ngắn ngẫu nhiên, không lộ thứ tự.
 - `listen` khi chưa có audio: `audio_asset_id: null`, `fallback_text` là câu được đọc.
-- `word_bank`: liệt kê trong `orders` **mọi** thứ tự đúng. Nếu có hai token giống nhau (ví dụ hai chữ ㅇ trong 오이), phải liệt kê cả hai hoán vị.
+- `word_bank`: liệt kê trong `orders` **mọi** thứ tự đúng. Nếu có hai token giống nhau (ví dụ hai chữ ㅇ trong 오이), phải liệt kê cả hai hoán vị. Danh sách `tokens` phải được xáo trộn: thứ tự viết các token (chỉ xét các token có trong đáp án) không được trùng bất kỳ thứ tự đúng nào.
+- `translate`: `vi_to_target` có `source_lang: vi` và `answer_lang` là ngôn ngữ của bài (`en`/`ko`); `target_to_vi` ngược lại (`source_lang` là ngôn ngữ của bài, `answer_lang: vi`).
 - Ghép chữ Hangul luôn dùng `word_bank` với token là chữ cái rời; không bắt người học gõ jamo.
 
 ## Hướng dẫn viết
@@ -63,7 +67,8 @@ Câu trả lời được chấm trên server theo thuật toán trong `packages
 - Đáp án tiếng Anh dài: `rubric.typo_tolerance: 1` (một lỗi gõ ở từ ≥ 5 chữ cái được tính "gần đúng"; mạo từ sai luôn là sai).
 - Đáp án tiếng Hàn: `ko_spacing: lenient` (mặc định) - sai khoảng cách là "gần đúng"; sai biến thể trợ từ (은/는, 이/가…) là sai.
 - `known_wrong`: thêm các lỗi dự đoán được của người Việt kèm `feedback_vi` ngắn và `error_tag` dạng snake_case (`missing_be`, `article`, `be_form`, `possessive`, `vowel_eo_o`, `consonant_tense`, `romanization`…).
-- Công cụ kiểm tra bắt buộc: mọi `accepted`/`blanks`/`orders` chấm **đúng**; mọi phương án nhiễu và `known_wrong` chấm **sai**.
+- `known_wrong` của `fill_blank` áp dụng cho mọi ô trống, nhưng mỗi ô so với `accepted` của nó trước. Quy tắc kiểm tra: một đáp án `known_wrong` không được trùng (sau chuẩn hoá) với đáp án đúng của **bất kỳ** ô nào trong bài tập.
+- Công cụ kiểm tra bắt buộc: mọi `accepted`/`blanks`/`orders` chấm **đúng**; mọi phương án nhiễu và `known_wrong` của `translate` chấm **sai**; `known_wrong` của `fill_blank` theo quy tắc ở trên.
 
 ## Lệnh
 

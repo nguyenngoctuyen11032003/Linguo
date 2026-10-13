@@ -17,9 +17,12 @@ import { loadContent } from './content/load.mjs';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const USAGE = 'Usage: content-import.mjs [--dir <dir>] (--check | --emit-sql [--check] [--out <file>] | --apply)';
 
+/** Value of `--name <value>`: undefined when absent, null when the value is missing. */
 function option(argv, name) {
   const i = argv.indexOf(name);
-  return i === -1 ? undefined : argv[i + 1];
+  if (i === -1) return undefined;
+  const value = argv[i + 1];
+  return value === undefined || value === '' || value.startsWith('--') ? null : value;
 }
 
 const display = (path, cwd) => relative(cwd, path).split(sep).join('/') || '.';
@@ -39,8 +42,15 @@ export async function main(
     return 2;
   }
   const dirArg = option(argv, '--dir');
+  const outArg = option(argv, '--out');
+  for (const [name, value] of [['--dir', dirArg], ['--out', outArg]]) {
+    if (value === null) {
+      error(`${name} needs a value.\n${USAGE}`);
+      return 2;
+    }
+  }
   const dir = dirArg ? resolve(cwd, dirArg) : join(root, 'content');
-  const out = resolve(cwd, option(argv, '--out') ?? join(root, 'supabase', 'seed.sql'));
+  const out = resolve(cwd, outArg ?? join(root, 'supabase', 'seed.sql'));
   const outName = display(out, cwd);
 
   if (!existsSync(dir) && !apply) {

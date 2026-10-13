@@ -65,10 +65,10 @@ exercises:
     prompt:
       instruction: Sắp xếp thành câu "Tôi là Lan."
       tokens:
+        - { id: t4, text: is }
+        - { id: t3, text: Lan }
         - { id: t1, text: I }
         - { id: t2, text: am }
-        - { id: t3, text: Lan }
-        - { id: t4, text: is }
     answer:
       orders: [[t1, t2, t3]]
     explanation: { vi: Chủ ngữ + am + tên. }

@@ -1,9 +1,10 @@
 // Cross-file content checks (spec 2 §4.3). Every message is `<file>: <message>`.
 // Grading checks call the shared TS grader (`gradeResponse` from @linguo/shared): every accepted
 // answer / blank entry / word order must grade `correct`; every mcq/listen distractor and every
-// `known_wrong` answer must grade `incorrect`.
+// translate `known_wrong` answer must grade `incorrect`; a fill_blank `known_wrong` answer must not
+// be an accepted answer of any blank (see gradingErrors).
 import * as shared from '@linguo/shared';
-import { indexContent } from './load.mjs';
+import { effectiveStatus, indexContent } from './load.mjs';
 
 const { LEVELS, REQUIRED_BLOCKS, EXERCISE_STAGES, isGoalForLanguage, isLevelOf, levelOrdinal } = shared;
 
@@ -16,20 +17,50 @@ export function sharedGrader() {
 
 const q = (s) => JSON.stringify(s);
 
-function nfcError(raw) {
-  if (raw.normalize('NFC') === raw) return null;
-  const lines = raw.split('\n');
-  const line = lines.findIndex((l) => l.normalize('NFC') !== l) + 1;
-  return `text is not NFC-normalized (line ${line})`;
+// C0 controls other than \t and \n, plus the noncharacters U+FFFE/U+FFFF. Postgres jsonb rejects
+// \u0000 outright; the rest are never intended in learning content.
+// eslint-disable-next-line no-control-regex
+const FORBIDDEN_CHAR = /[\x00-\x08\x0B-\x1F\u{FFFE}\u{FFFF}]/u;
+
+const codePoint = (ch) => `U+${ch.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')}`;
+
+/**
+ * Checks every string (keys and values) of a parsed YAML document. Runs on parsed values, not the
+ * file text, so YAML escapes such as "Tôi" or "\0" are caught too.
+ */
+function textErrors(value, path = []) {
+  const errors = [];
+  const at = path.length ? path.join('.') : '(root)';
+  const checkString = (s, where) => {
+    if (s.normalize('NFC') !== s) errors.push(`text is not NFC-normalized at ${where}`);
+    const bad = s.match(FORBIDDEN_CHAR);
+    if (bad) errors.push(`forbidden character ${codePoint(bad[0])} at ${where} (control characters other than \\n and \\t are not allowed)`);
+  };
+  if (typeof value === 'string') checkString(value, at);
+  else if (Array.isArray(value)) value.forEach((v, i) => errors.push(...textErrors(v, [...path, i])));
+  else if (value && typeof value === 'object') {
+    for (const [k, v] of Object.entries(value)) {
+      checkString(k, `${[...path, k].join('.')} (key)`);
+      errors.push(...textErrors(v, [...path, k]));
+    }
+  }
+  return errors;
 }
 
+/**
+ * Review rules, for every row kind (sources per entry, items per file, programs, units, lessons):
+ * - demo rows are unreviewed: no reviewed_at/reviewed_by;
+ * - non-demo rows need an explicit status (sources and items have no default);
+ * - non-demo approved/published rows need both reviewed_at and reviewed_by.
+ */
 function reviewErrors(data, demo) {
   const errors = [];
   if (demo && (data.reviewed_at || data.reviewed_by)) {
     errors.push('demo: true but reviewed_at/reviewed_by is set (demo content is unreviewed)');
   }
-  if (!demo && ['approved', 'published'].includes(data.status) && !data.reviewed_at) {
-    errors.push(`status ${data.status} requires reviewed_at unless the file is demo: true`);
+  if (!demo && !data.status) errors.push('demo: false requires an explicit status');
+  if (!demo && ['approved', 'published'].includes(data.status) && (!data.reviewed_at || !data.reviewed_by)) {
+    errors.push(`status ${data.status} requires reviewed_at and reviewed_by unless the file is demo: true`);
   }
   return errors;
 }
@@ -38,9 +69,20 @@ function levelError(lang, level, field = 'level') {
   return isLevelOf(lang, level) ? null : `${field} ${q(level)} is not a ${lang} level (${LEVELS[lang].join(', ')})`;
 }
 
-/** Shape checks that zod cannot express because they relate prompt and answer. */
-function answerShapeErrors(ex) {
+/**
+ * Shape checks that zod cannot express because they relate prompt, answer and lesson language.
+ * `lang` is the lesson's language (en | ko).
+ */
+function answerShapeErrors(ex, lang) {
   const errors = [];
+  if (ex.type === 'translate') {
+    // vi_to_target: Vietnamese source, answer in the lesson language; target_to_vi: the reverse.
+    const [from, to] = ex.prompt.direction === 'vi_to_target' ? ['vi', lang] : [lang, 'vi'];
+    if (ex.answer_lang !== to) errors.push(`translate ${ex.prompt.direction} needs answer_lang ${q(to)}, got ${q(ex.answer_lang)}`);
+    if (ex.prompt.source_lang !== from) {
+      errors.push(`translate ${ex.prompt.direction} needs source_lang ${q(from)}, got ${q(ex.prompt.source_lang)}`);
+    }
+  }
   if (ex.type === 'mcq' || ex.type === 'listen') {
     const ids = ex.prompt.options.map((o) => o.id);
     if (!ids.includes(ex.answer.correct_option_id)) {
@@ -52,6 +94,13 @@ function answerShapeErrors(ex) {
     ex.answer.orders.forEach((order, i) => {
       for (const id of order) if (!ids.has(id)) errors.push(`word_bank order ${i} token ${q(id)} is not a token`);
       if (new Set(order).size !== order.length) errors.push(`word_bank order ${i} uses a token twice`);
+      // The token list must not give the answer away: the authored token order, restricted to
+      // the tokens this order uses, must differ from the order itself.
+      const used = new Set(order);
+      const authored = ex.prompt.tokens.map((t) => t.id).filter((id) => used.has(id));
+      if (authored.length === order.length && authored.every((id, j) => id === order[j])) {
+        errors.push(`word_bank tokens are listed in the order of answer order ${i} (shuffle them so the list does not reveal the answer)`);
+      }
     });
   }
   if (ex.type === 'fill_blank') {
@@ -88,12 +137,17 @@ function gradingErrors(ex, grade) {
     for (const kw of ex.known_wrong) expect({ text: kw.answer }, 'incorrect', `known_wrong answer ${q(kw.answer)}`);
   }
   if (ex.type === 'fill_blank') {
+    // known_wrong rule for fill_blank: the grader compares every blank's response against the
+    // exercise-wide known_wrong list, but only after that blank's accepted list. A known_wrong
+    // answer is therefore rejected exactly when it is an accepted answer of some blank (the key
+    // contradicts itself there); in any other blank whatever the grader returns is fine.
     const blanks = ex.answer.blanks;
     const base = Object.fromEntries(Object.entries(blanks).map(([id, list]) => [id, list[0]]));
     for (const [id, list] of Object.entries(blanks)) {
       for (const a of list) expect({ blanks: { ...base, [id]: a } }, 'correct', `accepted answer ${q(a)} for blank ${q(id)}`);
       for (const kw of ex.known_wrong) {
-        expect({ blanks: { ...base, [id]: kw.answer } }, 'incorrect', `known_wrong answer ${q(kw.answer)} in blank ${q(id)}`);
+        const { verdict } = grade(input, { blanks: { ...base, [id]: kw.answer } });
+        if (verdict === 'correct') errors.push(`known_wrong answer ${q(kw.answer)} is an accepted answer of blank ${q(id)}`);
       }
     }
   }
@@ -130,16 +184,17 @@ export function checkContent(loaded, { grade = sharedGrader() } = {}) {
   const err = (file, message) => errors.push(`${file}: ${message}`);
   const { sources, items, programs, units, lessons } = indexContent(loaded.files);
 
-  // --- per file: NFC, demo header -------------------------------------------------------------
+  // --- per file: NFC and forbidden characters in every string, demo header, item review --------
   const sourcesFiles = loaded.files.filter((f) => f.kind === 'sources');
   if (sourcesFiles.length === 0 && !loaded.errors.some((e) => e.includes('sources.yaml'))) {
     err(`${loaded.label}/sources.yaml`, 'missing (every row needs a licensed source)');
   }
   for (const f of loaded.files) {
-    const nfc = nfcError(f.raw);
-    if (nfc) err(f.file, nfc);
+    for (const e of textErrors(f.doc)) err(f.file, e);
     if (f.data.demo === true && !f.raw.startsWith(DEMO_HEADER)) err(f.file, `demo file must start with "${DEMO_HEADER}"`);
+    if (f.kind === 'items') for (const e of reviewErrors(f.data, f.data.demo)) err(f.file, e);
   }
+  for (const s of sources) for (const e of reviewErrors(s.data, s.data.demo)) err(s.file, `source ${q(s.data.key)}: ${e}`);
 
   // --- keys --------------------------------------------------------------------------------------
   const seen = new Map();
@@ -163,6 +218,7 @@ export function checkContent(loaded, { grade = sharedGrader() } = {}) {
     if (!sourceKeys.has(key)) err(file, `unknown source ${q(key)} (not in sources.yaml)`);
   };
   const itemByKey = new Map(items.map((i) => [i.data.key, i]));
+  const itemStatus = (item) => effectiveStatus(item.review.status, item.demo);
   const lessonByKey = new Map(lessons.map((l) => [l.data.key, l]));
 
   // --- items -------------------------------------------------------------------------------------
@@ -244,6 +300,10 @@ export function checkContent(loaded, { grade = sharedGrader() } = {}) {
       const item = itemByKey.get(link.item);
       if (!item) err(l.file, `unknown item ${q(link.item)}`);
       else if (item.lang !== l.lang) err(l.file, `item ${q(link.item)} is in another language (${item.lang})`);
+      else if (d.status === 'published' && itemStatus(item) !== 'published') {
+        // get_lesson only returns published items: a published lesson would silently lose this one.
+        err(l.file, `published lesson links item ${q(link.item)} whose status is ${itemStatus(item) ?? 'missing'} (must be published)`);
+      }
       if (linked.has(link.item)) err(l.file, `item ${q(link.item)} linked twice`);
       linked.add(link.item);
       if (link.role === 'introduce') {
@@ -258,8 +318,11 @@ export function checkContent(loaded, { grade = sharedGrader() } = {}) {
         const item = itemByKey.get(ex.item);
         if (!item) err(l.file, `${at}: unknown item ${q(ex.item)}`);
         else if (item.lang !== l.lang) err(l.file, `${at}: item ${q(ex.item)} is in another language (${item.lang})`);
+        else if (d.status === 'published' && itemStatus(item) !== 'published') {
+          err(l.file, `${at}: published lesson uses item ${q(ex.item)} whose status is ${itemStatus(item) ?? 'missing'} (must be published)`);
+        }
       }
-      const shape = answerShapeErrors(ex);
+      const shape = answerShapeErrors(ex, l.lang);
       for (const e of shape) err(l.file, `${at}: ${e}`);
       if (shape.length) return; // grading a malformed key would only add noise
       if (!grade) {

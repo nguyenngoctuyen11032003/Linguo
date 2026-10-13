@@ -1,7 +1,9 @@
 # Manually publishes content/ into the hosted Supabase project (spec 2 §4.4).
 # Runs `pnpm content:check` then `pnpm content:push`, which sends the same SQL as supabase/seed.sql
 # (content_private.import_bundle) through the Supabase Management API. The `production`
-# environment requires a reviewer's approval before the job starts.
+# environment requires a reviewer's approval before the job starts. Full CI (ci.yml) must pass
+# first, and the import shares the `supabase-production` concurrency group with deploy.yml's
+# migration job so content never imports while migrations are being applied (or vice versa).
 name: Publish content
 
 on:
@@ -15,11 +17,19 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  verify:
+    name: CI
+    uses: ./.github/workflows/ci.yml
+
   publish:
     name: Validate and import content
+    needs: verify
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     environment: production
+    concurrency:
+      group: supabase-production
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v7
       - uses: pnpm/action-setup@v6
