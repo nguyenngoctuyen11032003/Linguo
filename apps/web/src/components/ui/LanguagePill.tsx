@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Check, ChevronDown } from 'lucide-react';
-import { LANGUAGE_CODES, LANGUAGES, type LanguageCode } from '@lexipath/shared';
+import { LANGUAGE_CODES, LANGUAGES, type LanguageCode } from '@linguo/shared';
 
 /** Current learning language as text ("EN ▾"), never a flag (PRD 12.2). Switching arrives in spec 1. */
 export function LanguagePill({ current = 'en' }: { current?: LanguageCode }) {
