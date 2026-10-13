@@ -2,7 +2,7 @@
 
 **Ngày:** 2026-10-13
 **Trạng thái:** Đã duyệt thiết kế, chờ review văn bản
-**Nguồn yêu cầu:** [Dac_ta_LexiPath_English_Korean.md](./Dac_ta_LexiPath_English_Korean.md) mục 2.1E, 4.1, 4.2, 5.1, 5.2, 14, 14.1, 20.1
+**Nguồn yêu cầu:** [Dac_ta_Linguo_English_Korean.md](./Dac_ta_Linguo_English_Korean.md) mục 2.1E, 4.1, 4.2, 5.1, 5.2, 14, 14.1, 20.1
 **Nền tảng:** [Spec 0 — Nền móng](./2026-10-13-linguo-foundation-design.md) (đã merge vào `main`)
 
 ---
