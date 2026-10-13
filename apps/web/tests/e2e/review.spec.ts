@@ -22,6 +22,8 @@ async function openReview(page: Page) {
   await expect(page.getByRole('heading', { level: 1, name: 'Ôn tập' })).toBeVisible();
   // Loading waits for the profile, the paths and the queue; allow for slow CI devices.
   await expect(counter(page)).toBeVisible({ timeout: 15_000 });
+  // Focus lands on the card heading in the same effects pass that installs the keyboard shortcuts.
+  await expect(counter(page)).toBeFocused();
 }
 
 function focused(page: Page) {
@@ -62,7 +64,7 @@ test('home shows the cards due today and links to the review', async ({ page }) 
   await expect(page.getByRole('heading', { level: 2, name: 'Ôn tập hôm nay: 4 thẻ' })).toBeVisible({ timeout: 15_000 });
   await page.getByRole('link', { name: 'Ôn ngay' }).click();
   await expect(page).toHaveURL(/\/app\/on-tap$/);
-  await expect(counter(page)).toHaveText('Thẻ 1/4');
+  await expect(counter(page)).toHaveText('Thẻ 1/4', { timeout: 15_000 });
 });
 
 test('a whole session can be done with the keyboard only', async ({ page }) => {
