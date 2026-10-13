@@ -12,6 +12,11 @@ describe('diagnosticErrorMessage', () => {
     expect(message).not.toContain(code);
   });
 
+  it('explains an unknown test mode', () => {
+    expect(DIAGNOSTIC_ERROR_CODES).toContain('invalid_mode');
+    expect(diagnosticErrorMessage({ message: 'invalid_mode', code: 'P0001' })).toBe('Loại bài kiểm tra không hợp lệ.');
+  });
+
   it('names the retake date of a cooldown from the error details', () => {
     const error = { message: 'diagnostic_cooldown', code: 'P0001', details: '2026-10-27T10:00:00+00:00', hint: null };
     expect(diagnosticErrorMessage(error, { timeZone: TZ })).toBe(

@@ -10,6 +10,7 @@ const DIAGNOSTIC_MESSAGES: Record<DiagnosticErrorCode, string> = {
   path_not_found: 'Không tìm thấy lộ trình.',
   diagnostic_cooldown: 'Bạn vừa làm bài kiểm tra gần đây. Hãy học thêm một thời gian rồi làm lại nhé.',
   bank_unavailable: 'Bài kiểm tra cho ngôn ngữ này chưa sẵn sàng. Vui lòng quay lại sau.',
+  invalid_mode: 'Loại bài kiểm tra không hợp lệ.',
   attempt_not_found: 'Không tìm thấy lượt kiểm tra. Hãy bắt đầu lại.',
   attempt_not_active: 'Lượt kiểm tra này đã kết thúc. Hãy mở lại bài kiểm tra.',
   item_mismatch: 'Câu hỏi đã thay đổi. Đang tải lại câu hiện tại.',

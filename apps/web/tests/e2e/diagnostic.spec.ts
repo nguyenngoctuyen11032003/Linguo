@@ -19,7 +19,7 @@ interface Step {
 
 /** Records every diagnostic RPC answer the page receives and fails on any answer-key-like field. */
 function watchDiagnostic(page: Page) {
-  const state = { last: null as Step | null, leaks: [] as string[], calls: [] as string[] };
+  const state = { last: null as Step | null, leaks: [] as string[], calls: [] as string[], scanned: [] as string[] };
   const scan = (value: unknown, where: string): void => {
     if (Array.isArray(value)) value.forEach((v, i) => scan(v, `${where}[${i}]`));
     else if (value && typeof value === 'object') {
@@ -41,6 +41,7 @@ function watchDiagnostic(page: Page) {
       return;
     }
     scan(json, fn);
+    state.scanned.push(fn);
     if (/^(start_diagnostic|answer_diagnostic|skip_diagnostic_skill)$/.test(fn) && json && typeof json === 'object' && 'attempt_id' in json) {
       state.last = json as Step;
     }
@@ -52,6 +53,16 @@ async function axe(page: Page, testInfo: TestInfo, label: string) {
   if (!A11Y_PROJECTS.includes(testInfo.project.name)) return;
   for (const colorScheme of ['light', 'dark'] as const) {
     await page.emulateMedia({ reducedMotion: 'reduce', colorScheme });
+    // ThemeProvider applies the scheme from an effect; let it land before measuring contrast. WebKit can keep stale
+    // inherited `color: var(--text)` values after a live data-theme switch, so force a full style recalc.
+    await expect(page.locator('html')).toHaveAttribute('data-theme', colorScheme);
+    await page.evaluate(async () => {
+      const root = document.documentElement;
+      root.style.display = 'none';
+      void root.offsetHeight;
+      root.style.display = '';
+      await new Promise<void>((resolve) => requestAnimationFrame(() => requestAnimationFrame(() => resolve())));
+    });
     const results = await new AxeBuilder({ page }).analyze();
     const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
     expect(serious, `${label} (${colorScheme}): ${JSON.stringify(serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) })), null, 2)}`).toEqual([]);
@@ -65,14 +76,14 @@ async function next(page: Page) {
   await button.click();
 }
 
-const dontKnow = (page: Page) => page.getByRole('radio', { name: 'Tôi không biết' }).or(page.getByRole('button', { name: 'Tôi không biết' }));
+const dontKnow = (page: Page) => page.getByRole('button', { name: 'Tôi không biết', exact: true });
 
 /** Gets past the intro (or the resume screen) to a question. */
 async function reachQuestion(page: Page) {
-  const start = page.getByRole('button', { name: /^(Bắt đầu|Tiếp tục|Làm tiếp)/ });
-  await expect(dontKnow(page).or(start).first()).toBeVisible({ timeout: 15_000 });
-  if (!(await dontKnow(page).first().isVisible())) await start.first().click();
-  await expect(dontKnow(page).first()).toBeVisible();
+  const start = page.getByRole('button', { name: /^(Bắt đầu|Làm tiếp)$/ });
+  await expect(dontKnow(page).or(start)).toBeVisible({ timeout: 15_000 });
+  if (await start.isVisible()) await start.click();
+  await expect(dontKnow(page)).toBeVisible();
 }
 
 /** Answers the question on screen through the UI (right answer from the local bank) and waits for the next step. */
@@ -80,9 +91,8 @@ async function answerRight(page: Page, state: ReturnType<typeof watchDiagnostic>
   await expect.poll(() => state.last?.item?.id ?? null).not.toBeNull();
   const id = state.last!.item!.id;
   const text = diagnosticCorrectText(id);
-  await page.getByRole('radio', { name: text, exact: true }).or(page.getByRole('button', { name: text, exact: true })).first().click();
-  const submit = page.getByRole('button', { name: /^(Trả lời|Xác nhận|Tiếp theo|Tiếp tục|Gửi)$/ });
-  if (await submit.isVisible()) await submit.click();
+  await page.getByRole('radiogroup').getByRole('radio', { name: text, exact: true }).click();
+  await page.getByRole('button', { name: 'Tiếp tục', exact: true }).click();
   await expect.poll(() => (state.last?.done ? 'done' : (state.last?.item?.id ?? null))).not.toBe(id);
 }
 
@@ -123,9 +133,9 @@ test('"chưa chắc" onboarding leads to the test, which pauses, resumes, skips 
   await answerRight(page, state);
   await answerRight(page, state);
   const pending = state.last!.item!.id;
-  await page.getByRole('button', { name: /^Tạm dừng/ }).click();
-  const confirmPause = page.getByRole('dialog').getByRole('button', { name: /Tạm dừng/ });
-  if (await confirmPause.isVisible()) await confirmPause.click();
+  // Pausing needs no confirmation: answers are already on the server, so it goes straight Home.
+  await page.getByRole('button', { name: 'Tạm dừng', exact: true }).click();
+  await expect(page).toHaveURL(/\/app$/);
 
   // Coming back resumes the same pending question; so does a reload in the middle of it.
   await page.goto(`/app/kiem-tra/${pathId}`);
@@ -144,9 +154,9 @@ test('"chưa chắc" onboarding leads to the test, which pauses, resumes, skips 
   expect(state.last?.item?.skill).toBe('reading');
   await expectNoHorizontalScroll(page);
   await page.getByRole('button', { name: 'Bỏ qua kỹ năng này' }).click();
-  const sheet = page.getByRole('dialog');
-  await sheet.getByRole('radio').first().check();
-  await sheet.getByRole('button', { name: /Bỏ qua/ }).click();
+  const sheet = page.getByRole('dialog', { name: 'Bỏ qua phần đọc hiểu?' });
+  await sheet.getByRole('radio', { name: 'Tôi không có đủ thời gian' }).click();
+  await sheet.getByRole('button', { name: 'Bỏ qua kỹ năng này' }).click();
 
   // Report: reading has no estimate; the suggestion is capped at +2 levels (A1 → B1).
   await expect(page).toHaveURL(new RegExp(`/app/kiem-tra/${pathId}/ket-qua$`), { timeout: 15_000 });
@@ -157,6 +167,8 @@ test('"chưa chắc" onboarding leads to the test, which pauses, resumes, skips 
   await page.getByRole('button', { name: /Cập nhật trình độ lộ trình thành B1/ }).click();
   await expect.poll(() => mock.paths().find((p) => p.id === pathId)?.current_level).toBe('b1');
 
+  // Response events (and their body scans) can land after the mocked state changed; wait for them.
+  await expect.poll(() => state.scanned).toContain('accept_diagnostic_placement');
   expect(state.calls).toContain('finish_diagnostic');
   expect(state.calls).toContain('accept_diagnostic_placement');
   expect(state.leaks, 'diagnostic responses must not carry answer keys or correctness').toEqual([]);
@@ -251,4 +263,7 @@ test('the diagnostic mock honours the RPC contracts and never sends answer keys'
   expect(await errorOf('accept_diagnostic_placement', { p_attempt_id: step.attempt_id })).toBe('already_applied');
   expect(diagnosticStatusSchema.parse(await ok('diagnostic_status', { p_path_id: PATH_ID }))).toMatchObject({ status: 'completed', can_start: false });
   expect(await errorOf('start_diagnostic', { p_path_id: PATH_ID })).toBe('diagnostic_cooldown');
+  expect(await errorOf('start_diagnostic', { p_path_id: PATH_ID, p_mode: 'quick' })).toBe('invalid_mode');
+  // The cooldown runs per mode: a finished full test does not block the foundation check.
+  expect(diagnosticStepSchema.parse(await ok('start_diagnostic', { p_path_id: PATH_ID, p_mode: 'foundation' })).mode).toBe('foundation');
 });

@@ -505,10 +505,12 @@ begin
     end if;
   end if;
 
+  -- Cooldown runs per mode: can_start/retake_after describe the full test, which a finished
+  -- foundation check does not block.
   select a.completed_at + make_interval(days => public.diagnostic_config(coalesce(v_assessment, a.assessment_id), 'cooldown_days', 14)::integer)
     into v_retake
   from public.assessment_attempts a
-  where a.learning_path_id = p_path_id and a.status = 'completed'
+  where a.learning_path_id = p_path_id and a.status = 'completed' and a.mode = 'full'
   order by a.completed_at desc limit 1;
 
   return jsonb_build_object(
@@ -566,10 +568,11 @@ begin
   end if;
 
   v_assessment := public.diagnostic_assessment_for(v_path.language_code);
+  -- Cooldown per mode: full after full, foundation after foundation.
   select a.completed_at + make_interval(days => public.diagnostic_config(coalesce(v_assessment, a.assessment_id), 'cooldown_days', 14)::integer)
     into v_retake
   from public.assessment_attempts a
-  where a.learning_path_id = p_path_id and a.status = 'completed'
+  where a.learning_path_id = p_path_id and a.status = 'completed' and a.mode = p_mode
   order by a.completed_at desc limit 1;
   if v_retake > now() then
     -- detail: retake_after as ISO 8601 (same text as the jsonb timestamps), for the client's message.
