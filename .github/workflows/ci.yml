@@ -78,6 +78,9 @@ jobs:
         run: node scripts/sync-estimate-fixtures.mjs --check
       - name: Grading fixtures in sync (SQL ↔ TS)
         run: node scripts/sync-grading-fixtures.mjs --check
+      # fsrs.fixtures.json ↔ ts-fsrs is checked by `pnpm test` in the web job (needs node_modules).
+      - name: FSRS fixtures in sync (SQL ↔ ts-fsrs)
+        run: node scripts/sync-fsrs-fixtures.mjs --check
       # Must be `supabase start` (not `db start`) so Auth/REST come up too.
       - name: Apply all migrations on a fresh local stack
         run: supabase start -x studio,imgproxy,vector,logflare,edge-runtime,realtime,mailpit,supavisor
