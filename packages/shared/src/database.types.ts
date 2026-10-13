@@ -5,7 +5,35 @@ export type Database = {
   
   "public": {
           Tables: {
-            "ai_cache": {
+            "account_deletions": {
+                  Row: {
+                    "deleted_at": string,"id": string,"reason_code": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "deleted_at"?: string,"id"?: string,"reason_code"?: string
+                  }
+                  Update: {
+                    "deleted_at"?: string,"id"?: string,"reason_code"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"account_export_requests": {
+                  Row: {
+                    "id": string,"requested_at": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "id"?: string,"requested_at"?: string,"user_id": string
+                  }
+                  Update: {
+                    "id"?: string,"requested_at"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"ai_cache": {
                   Row: {
                     "created_at": string,"expires_at": string,"hits": number,"key": string,"model": string,"payload": NonNullable<Json>,"prompt_version": string,"task": string
                   }
@@ -644,6 +672,9 @@ isOneToOne: false
             "accept_diagnostic_placement":
 { Args: { "p_attempt_id": string }; Returns: Json
                            },
+"account_optional_tables":
+{ Args: Record<PropertyKey, never>; Returns: (string)[]
+                           },
 "ack_ai_notice":
 { Args: Record<PropertyKey, never>; Returns: string
                            },
@@ -702,6 +733,9 @@ isOneToOne: false
         isOneToOne: true
         isSetofReturn: false
       } },
+"delete_my_account":
+{ Args: { "p_confirm": string }; Returns: undefined
+                           },
 "diag_cap_level":
 { Args: { "p_current": number,"p_first_applied": boolean,"p_suggested": number }; Returns: number
                            },
@@ -790,6 +824,9 @@ isOneToOne: false
                            },
 "estimate_learning_path":
 { Args: { "p_current_level": string,"p_language": string,"p_target_date": string,"p_target_level": string,"p_today": string,"p_weekly_minutes": (number)[] }; Returns: Json
+                           },
+"export_my_data":
+{ Args: Record<PropertyKey, never>; Returns: Json
                            },
 "finish_diagnostic":
 { Args: { "p_attempt_id": string }; Returns: Json
@@ -892,6 +929,9 @@ isOneToOne: false
                            },
 "postpone_reviews":
 { Args: { "p_card_ids": (string)[],"p_idempotency_key": string,"p_path_id": string }; Returns: Json
+                           },
+"purge_expired_data":
+{ Args: Record<PropertyKey, never>; Returns: Json
                            },
 "review_day_totals":
 { Args: { "p_extra": boolean,"p_now": string,"p_path_id": string,"p_user": string,"p_weekly_minutes": (number)[] }; Returns: Json
