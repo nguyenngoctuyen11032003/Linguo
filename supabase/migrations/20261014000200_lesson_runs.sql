@@ -394,21 +394,64 @@ begin
 end;
 $$;
 
--- lessonRunSchema shape.
-create or replace function public.lesson_run_json(p_run public.lesson_runs)
+-- lessonRunSchema shape. Scalar arguments (not a lesson_runs row) so that PostgREST and the type generator
+-- do not expose it as a computed column of lesson_runs.
+create or replace function public.lesson_run_json(
+  p_id uuid, p_status text, p_cursor smallint, p_queue uuid[], p_next_review_at timestamptz, p_summary jsonb
+)
 returns jsonb
 language sql
-stable
+immutable
 set search_path = ''
 as $$
   select jsonb_build_object(
-    'id', p_run.id,
-    'status', p_run.status,
-    'cursor', p_run.cursor,
-    'queue', to_jsonb(p_run.queue),
-    'next_review_at', p_run.next_review_at,
-    'summary', p_run.summary_json
+    'id', p_id,
+    'status', p_status,
+    'cursor', p_cursor,
+    'queue', to_jsonb(p_queue),
+    'next_review_at', p_next_review_at,
+    'summary', p_summary
   );
+$$;
+
+-- Brings an open run in line with the lesson's current content (spec §6.2). A run's queue is frozen at
+-- start_lesson; when an import later changes the lesson (content_version bump), the run's queue is rewritten:
+-- entries whose exercise is no longer published in this lesson are dropped (re-check duplicates included),
+-- the surviving entries keep their order, and newly published exercises are appended in stage/order_index
+-- order. Attempts are kept, the cursor is left as is (clients clamp it), and the run takes the lesson's
+-- content_version. Completed runs and runs already on the current version are returned unchanged.
+-- Scalar arguments for the same reason as lesson_run_json.
+create or replace function public.lesson_run_sync(p_run_id uuid, p_lesson_id uuid, p_content_version integer)
+returns public.lesson_runs
+language plpgsql
+volatile
+set search_path = ''
+as $$
+declare
+  v_run public.lesson_runs;
+begin
+  update public.lesson_runs r
+  set queue = coalesce((
+        select array_agg(q.e order by q.n)
+        from unnest(r.queue) with ordinality as q(e, n)
+        where exists (
+          select 1 from public.exercises e where e.id = q.e and e.lesson_id = p_lesson_id and e.status = 'published'
+        )
+      ), '{}'::uuid[])
+      || coalesce((
+        select array_agg(e.id order by array_position(array['recognition', 'recall', 'application']::text[], e.stage), e.order_index)
+        from public.exercises e
+        where e.lesson_id = p_lesson_id and e.status = 'published' and not (e.id = any (r.queue))
+      ), '{}'::uuid[]),
+      content_version = p_content_version
+  where r.id = p_run_id and r.lesson_id = p_lesson_id and r.status = 'in_progress' and r.content_version <> p_content_version
+  returning r.* into v_run;
+  if not found then
+    -- Nothing to sync (completed, already current, or a concurrent call synced it first).
+    select r.* into v_run from public.lesson_runs r where r.id = p_run_id;
+  end if;
+  return v_run;
+end;
 $$;
 
 -- Shape of a learner response for an exercise type (or the universal {"give_up": true}).
@@ -466,10 +509,11 @@ $$;
 -- ---------------------------------------------------------------------------
 
 -- lessonPayloadSchema: lesson, items, public exercises (never any answer field), run and its attempts.
+-- Volatile: an open run on an older content_version is synced first (lesson_run_sync).
 create or replace function public.get_lesson(p_lesson_id uuid, p_path_id uuid)
 returns jsonb
 language plpgsql
-stable
+volatile
 security definer
 set search_path = ''
 as $$
@@ -544,9 +588,15 @@ begin
   where r.user_id = v_uid and r.learning_path_id = p_path_id and r.lesson_id = v_lesson.id
   order by (r.status = 'in_progress') desc, r.completed_at desc nulls last, r.started_at desc
   limit 1;
+  if v_run.id is not null and v_run.status = 'in_progress' and v_run.content_version <> v_lesson.content_version then
+    v_run := public.lesson_run_sync(v_run.id, v_lesson.id, v_lesson.content_version);
+  end if;
 
+  -- Answer fields are omitted (not null) from attempts that did not reveal the answer.
   if v_run.id is not null then
-    select coalesce(jsonb_agg(a.feedback_json || jsonb_build_object(
+    select coalesce(jsonb_agg(
+        case when a.revealed then a.feedback_json else a.feedback_json - 'display_answer' - 'explanation' end
+        || jsonb_build_object(
         'attempt_id', a.id,
         'exercise_id', a.exercise_id,
         'after_reveal', a.after_reveal,
@@ -561,7 +611,8 @@ begin
     'lesson', v_lesson_json,
     'items', v_items,
     'exercises', v_exercises,
-    'run', case when v_run.id is null then 'null'::jsonb else public.lesson_run_json(v_run) end,
+    'run', case when v_run.id is null then 'null'::jsonb
+      else public.lesson_run_json(v_run.id, v_run.status, v_run.cursor, v_run.queue, v_run.next_review_at, v_run.summary_json) end,
     'attempts', v_attempts
   );
 end;
@@ -589,7 +640,10 @@ begin
   from public.lesson_runs r
   where r.user_id = v_uid and r.learning_path_id = p_path_id and r.lesson_id = v_lesson.id and r.status = 'in_progress';
   if found then
-    return public.lesson_run_json(v_run);
+    if v_run.content_version <> v_lesson.content_version then
+      v_run := public.lesson_run_sync(v_run.id, v_lesson.id, v_lesson.content_version);
+    end if;
+    return public.lesson_run_json(v_run.id, v_run.status, v_run.cursor, v_run.queue, v_run.next_review_at, v_run.summary_json);
   end if;
 
   insert into public.lesson_runs (user_id, learning_path_id, lesson_id, content_version, queue)
@@ -602,10 +656,12 @@ begin
     ), '{}'::uuid[])
   )
   returning * into v_run;
-  return public.lesson_run_json(v_run);
+  return public.lesson_run_json(v_run.id, v_run.status, v_run.cursor, v_run.queue, v_run.next_review_at, v_run.summary_json);
 end;
 $$;
 
+-- The cursor only moves forward. A negative (or null) cursor is refused; a larger one is clamped to the most
+-- steps the lesson can have: every body block, every queue entry twice and some slack for intro/summary.
 create or replace function public.save_lesson_cursor(p_run_id uuid, p_cursor smallint)
 returns void
 language plpgsql
@@ -614,19 +670,29 @@ set search_path = ''
 as $$
 declare
   v_uid uuid := auth.uid();
-  v_status text;
+  v_run public.lesson_runs;
+  v_max integer;
 begin
   if v_uid is null then
     raise exception using errcode = '42501', message = 'not_authenticated';
   end if;
-  select r.status into v_status from public.lesson_runs r where r.id = p_run_id and r.user_id = v_uid for update;
+  select r.* into v_run from public.lesson_runs r where r.id = p_run_id and r.user_id = v_uid for update;
   if not found then
     raise exception using errcode = 'P0001', message = 'run_not_found';
   end if;
-  if v_status <> 'in_progress' then
+  if v_run.status <> 'in_progress' then
     raise exception using errcode = 'P0001', message = 'run_not_active';
   end if;
-  update public.lesson_runs set cursor = greatest(cursor, coalesce(p_cursor, 0::smallint)) where id = p_run_id;
+  if p_cursor is null or p_cursor < 0 then
+    raise exception using errcode = 'P0001', message = 'invalid_cursor';
+  end if;
+  select coalesce(jsonb_array_length(l.body), 0) + 2 * cardinality(v_run.queue) + 10
+    into v_max
+  from public.lessons l
+  where l.id = v_run.lesson_id;
+  update public.lesson_runs
+  set cursor = greatest(cursor::integer, least(p_cursor::integer, coalesce(v_max, 10)))::smallint
+  where id = p_run_id;
 end;
 $$;
 
@@ -667,18 +733,17 @@ begin
     raise exception using errcode = 'P0001', message = 'invalid_response';
   end if;
 
-  -- Replays return the stored result; the same key with another payload is a conflict.
-  v_hash := md5(coalesce(p_exercise_id::text, '') || coalesce(p_response::text, ''));
+  -- Replays return the stored result; the same key with another payload (run, exercise, exercise version
+  -- or response) is a conflict.
+  v_hash := md5(concat_ws('|',
+    coalesce(p_run_id::text, ''), coalesce(p_exercise_id::text, ''), coalesce(p_exercise_version::text, ''),
+    coalesce(p_response::text, '')));
   select a.* into v_prev from public.attempts a where a.user_id = v_uid and a.idempotency_key = p_idempotency_key;
   if found then
     if v_prev.payload_hash = v_hash then
       return v_prev.feedback_json || jsonb_build_object('attempt_id', v_prev.id, 'replayed', true);
     end if;
     raise exception using errcode = 'P0001', message = 'idempotency_conflict';
-  end if;
-
-  if (select count(*) from public.attempts a where a.user_id = v_uid and a.created_at > now() - interval '10 seconds') >= 30 then
-    raise exception using errcode = 'P0001', message = 'rate_limited';
   end if;
 
   select r.* into v_run from public.lesson_runs r where r.id = p_run_id and r.user_id = v_uid for update;
@@ -689,7 +754,17 @@ begin
     raise exception using errcode = 'P0001', message = 'run_not_active';
   end if;
 
-  select e.* into v_ex from public.exercises e where e.id = p_exercise_id and e.lesson_id = v_run.lesson_id;
+  -- Counted per user, after the run lock so that concurrent submits on one run are counted in turn.
+  if (select count(*) from public.attempts a where a.user_id = v_uid and a.created_at > now() - interval '10 seconds') >= 30 then
+    raise exception using errcode = 'P0001', message = 'rate_limited';
+  end if;
+
+  -- Only a published exercise of the run's queue can be answered. Exercise ids derive from public keys, so a
+  -- draft, in_review, approved or archived exercise must never reach the reveal below.
+  select e.* into v_ex
+  from public.exercises e
+  where e.id = p_exercise_id and e.lesson_id = v_run.lesson_id and e.status = 'published'
+    and p_exercise_id = any (v_run.queue);
   if not found then
     raise exception using errcode = 'P0001', message = 'exercise_not_in_lesson';
   end if;
@@ -798,8 +873,11 @@ begin
     return v_run.summary_json;
   end if;
 
+  -- Only queue entries whose exercise is still published are required: an exercise archived after the run
+  -- started can no longer be answered (submit_exercise refuses it) and must not keep the run open forever.
   if exists (
        select 1 from (select distinct q.e from unnest(v_run.queue) as q(e)) as d
+       join public.exercises e on e.id = d.e and e.status = 'published'
        where not exists (
          select 1 from public.attempts a
          where a.lesson_run_id = v_run.id and a.exercise_id = d.e and (a.verdict <> 'incorrect' or a.revealed)
@@ -807,7 +885,9 @@ begin
      )
      or exists (
        select 1 from public.attempts a
+       join public.exercises e on e.id = a.exercise_id and e.status = 'published'
        where a.lesson_run_id = v_run.id and a.verdict = 'incorrect' and a.revealed and not a.after_reveal
+         and a.exercise_id = any (v_run.queue)
          and not exists (
            select 1 from public.attempts b
            where b.lesson_run_id = v_run.id and b.exercise_id = a.exercise_id and b.after_reveal
@@ -942,7 +1022,8 @@ revoke all on function public.grading_strip_diacritics(text) from public, anon, 
 revoke all on function public.grading_text(text, jsonb, jsonb, text, jsonb) from public, anon, authenticated;
 revoke all on function public.grade_exercise(text, jsonb, jsonb, jsonb, text, jsonb) from public, anon, authenticated;
 revoke all on function public.lesson_for_path(uuid, uuid, uuid) from public, anon, authenticated;
-revoke all on function public.lesson_run_json(public.lesson_runs) from public, anon, authenticated;
+revoke all on function public.lesson_run_json(uuid, text, smallint, uuid[], timestamptz, jsonb) from public, anon, authenticated;
+revoke all on function public.lesson_run_sync(uuid, uuid, integer) from public, anon, authenticated;
 revoke all on function public.lesson_response_valid(text, jsonb) from public, anon, authenticated;
 
 revoke all on function public.get_lesson(uuid, uuid) from public, anon;

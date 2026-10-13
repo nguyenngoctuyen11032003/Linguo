@@ -22,6 +22,7 @@ export const LESSON_ERROR_CODES = [
   'idempotency_conflict',
   'rate_limited',
   'attempts_incomplete',
+  'invalid_cursor',
 ] as const;
 
 export const pathLessonSchema = z.object({
@@ -101,6 +102,9 @@ export const submitResultSchema = z.object({
 export type SubmitResult = z.infer<typeof submitResultSchema>;
 
 export const lessonAttemptSchema = submitResultSchema.omit({ replayed: true }).extend({
+  /** get_lesson omits the answer fields of attempts that did not reveal the answer. */
+  display_answer: z.string().nullable().default(null),
+  explanation: localizedTextSchema.nullable().default(null),
   exercise_id: z.uuid(),
   after_reveal: z.boolean(),
   created_at: z.string(),
