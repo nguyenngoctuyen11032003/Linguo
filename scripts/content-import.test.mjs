@@ -549,32 +549,93 @@ test('missing content dir is tolerated only while seed.sql is absent', async (t)
   assert.equal(existsSync(join(dir, 'nope')), false);
 });
 
-test('--apply refuses without credentials and posts the seed SQL to the Management API', async (t) => {
-  const none = await cli(t, ['--apply', '--dir', VALID], { env: {} });
-  assert.equal(none.code, 1);
-  assert.match(none.err, /SUPABASE_ACCESS_TOKEN and SUPABASE_PROJECT_ID/);
-  const onlyToken = await cli(t, ['--apply', '--dir', VALID], { env: { SUPABASE_ACCESS_TOKEN: 't' } });
-  assert.equal(onlyToken.code, 1);
+const APPLY_KEY = 'sb_secret_test-key-0123456789';
+const APPLY_ENV = { SUPABASE_URL: 'https://abcdefghijklmnopqrst.supabase.co', SUPABASE_SERVICE_ROLE_KEY: APPLY_KEY, GITHUB_SHA: 'deadbeef' };
+const noFetch = async () => assert.fail('fetch must not be called');
 
+test('--apply refuses without SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY', async (t) => {
+  for (const env of [
+    {},
+    { SUPABASE_URL: APPLY_ENV.SUPABASE_URL },
+    { SUPABASE_SERVICE_ROLE_KEY: APPLY_KEY },
+    // The old Management API credentials are no longer accepted.
+    { SUPABASE_ACCESS_TOKEN: 'tok', SUPABASE_PROJECT_ID: 'abcdefghijklmnopqrst' },
+  ]) {
+    const r = await cli(t, ['--apply', '--dir', VALID], { env, fetchImpl: noFetch });
+    assert.equal(r.code, 1, JSON.stringify(env));
+    assert.match(r.err, /SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY/);
+    assert.ok(!r.err.includes(APPLY_KEY) && !r.out.includes(APPLY_KEY), 'never prints the key');
+  }
+  const bad = await cli(t, ['--apply', '--dir', VALID], { env: { ...APPLY_ENV, SUPABASE_URL: 'abcdefghijklmnopqrst' }, fetchImpl: noFetch });
+  assert.equal(bad.code, 1);
+  assert.match(bad.err, /SUPABASE_URL must be the project URL/);
+});
+
+test('--apply posts the bundle to the import_content_bundle RPC with the service key', async (t) => {
   const calls = [];
   const fetchImpl = async (url, init) => {
     calls.push({ url, init });
-    return new Response(JSON.stringify([{ import_bundle: { inserted: 15, updated: 0, archived: 0, unchanged: 0 } }]), { status: 201 });
+    return new Response(JSON.stringify({ inserted: 15, updated: 0, archived: 0, unchanged: 0 }), { status: 200 });
   };
-  const env = { SUPABASE_ACCESS_TOKEN: 'tok', SUPABASE_PROJECT_ID: 'abcdefghijklmnopqrst', GITHUB_SHA: 'deadbeef' };
-  const r = await cli(t, ['--apply', '--dir', VALID], { env, fetchImpl });
-  assert.equal(r.code, 0, r.err);
-  assert.equal(calls.length, 1);
-  assert.equal(calls[0].url, 'https://api.supabase.com/v1/projects/abcdefghijklmnopqrst/database/query');
-  assert.equal(calls[0].init.headers.Authorization, 'Bearer tok');
-  const { query } = JSON.parse(calls[0].init.body);
-  assert.match(query, /select content_private\.import_bundle\(\$bundle\$/);
-  assert.ok(query.includes('"git_sha": "deadbeef"'));
-  assert.match(r.out, /"inserted":15/);
+  for (const url of [APPLY_ENV.SUPABASE_URL, `${APPLY_ENV.SUPABASE_URL}/`]) {
+    const r = await cli(t, ['--apply', '--dir', VALID], { env: { ...APPLY_ENV, SUPABASE_URL: url }, fetchImpl });
+    assert.equal(r.code, 0, r.err);
+    assert.match(r.out, /Imported \d+ lessons: \{"inserted":15,"updated":0,"archived":0,"unchanged":0\}/);
+    assert.ok(!r.out.includes(APPLY_KEY), 'never prints the key');
+  }
+  assert.equal(calls.length, 2);
+  for (const { url } of calls) assert.equal(url, 'https://abcdefghijklmnopqrst.supabase.co/rest/v1/rpc/import_content_bundle');
+  const { init } = calls[0];
+  assert.equal(init.method, 'POST');
+  assert.deepEqual(init.headers, { apikey: APPLY_KEY, Authorization: `Bearer ${APPLY_KEY}`, 'Content-Type': 'application/json' });
+  const body = JSON.parse(init.body);
+  assert.deepEqual(Object.keys(body), ['p_bundle']);
+  const bundle = bundleSchema.parse(body.p_bundle);
+  assert.equal(bundle.git_sha, 'deadbeef');
+  assert.ok(bundle.lessons.length > 0);
+});
 
-  const failing = await cli(t, ['--apply', '--dir', VALID], { env, fetchImpl: async () => new Response('nope', { status: 401 }) });
-  assert.equal(failing.code, 1);
-  assert.match(failing.err, /HTTP 401/);
+test('--apply surfaces PostgREST errors and rejects unexpected responses', async (t) => {
+  const pgError = {
+    code: '42501',
+    message: 'permission denied for function import_content_bundle',
+    details: null,
+    hint: null,
+  };
+  const denied = await cli(t, ['--apply', '--dir', VALID], {
+    env: APPLY_ENV,
+    fetchImpl: async () => new Response(JSON.stringify(pgError), { status: 403 }),
+  });
+  assert.equal(denied.code, 1);
+  assert.match(denied.err, /HTTP 403 42501 \| permission denied for function import_content_bundle/);
+
+  const raw = await cli(t, ['--apply', '--dir', VALID], { env: APPLY_ENV, fetchImpl: async () => new Response('Bad Gateway', { status: 502 }) });
+  assert.equal(raw.code, 1);
+  assert.match(raw.err, /HTTP 502 Bad Gateway/);
+
+  const echo = await cli(t, ['--apply', '--dir', VALID], {
+    env: APPLY_ENV,
+    fetchImpl: async () => new Response(JSON.stringify({ message: `Invalid API key ${APPLY_KEY}` }), { status: 401 }),
+  });
+  assert.equal(echo.code, 1);
+  assert.match(echo.err, /HTTP 401 Invalid API key <redacted>/);
+  assert.ok(!echo.err.includes(APPLY_KEY), 'never prints the key');
+
+  const network = await cli(t, ['--apply', '--dir', VALID], {
+    env: APPLY_ENV,
+    fetchImpl: async () => {
+      throw new TypeError('fetch failed');
+    },
+  });
+  assert.equal(network.code, 1);
+  assert.match(network.err, /Import failed: fetch failed/);
+
+  const unexpected = await cli(t, ['--apply', '--dir', VALID], {
+    env: APPLY_ENV,
+    fetchImpl: async () => new Response(JSON.stringify({ inserted: 1 }), { status: 200 }),
+  });
+  assert.equal(unexpected.code, 1);
+  assert.match(unexpected.err, /unexpected response/);
 });
 
 test('usage errors exit 2', async (t) => {

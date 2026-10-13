@@ -76,7 +76,7 @@ Câu trả lời được chấm trên server theo thuật toán trong `packages
 pnpm content:check          # kiểm tra schema, key, tiền quyết, cấp độ, đáp án (không cần DB)
 pnpm content:build          # sinh supabase/seed.sql từ content/
 pnpm content:build --check  # CI: báo lỗi nếu seed.sql lệch với content/
-pnpm content:push           # nhập lên Supabase hosted (cần SUPABASE_ACCESS_TOKEN và SUPABASE_PROJECT_ID)
+pnpm content:push           # nhập lên Supabase hosted (cần SUPABASE_URL và SUPABASE_SERVICE_ROLE_KEY)
 ```
 
 Xem thêm `docs/DEPLOY.md`, mục "Xuất bản nội dung".
