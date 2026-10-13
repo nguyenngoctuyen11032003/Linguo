@@ -17,6 +17,7 @@ vi.mock('@/features/lesson-player/usePathLessons', () => ({
     lessons: [pathLesson({ title: { vi: 'Chào hỏi cơ bản' }, run_status: 'in_progress' })],
   }),
 }));
+vi.mock('@/features/reviews/useReviewDue', () => ({ useReviewDue: () => ({ status: 'ready', count: 8, reload: () => {} }) }));
 vi.mock('@/features/learning-paths/service', async (importOriginal) => ({
   ...(await importOriginal<typeof import('@/features/learning-paths/service')>()),
   setPathStatus: mocks.setPathStatus,
@@ -38,6 +39,14 @@ describe('HomePage', () => {
     expect(screen.getByText('Bài tiếp theo')).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'Chào hỏi cơ bản' })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Tiếp tục' })).toHaveAttribute('href', expect.stringMatching(/^\/app\/hoc-tap\/bai\//));
+  });
+
+  it('shows the cards due today above the next lesson', () => {
+    renderWithProviders(<HomePage />, { route: '/app' });
+    const review = screen.getByRole('heading', { level: 2, name: 'Ôn tập hôm nay: 8 thẻ' });
+    const lesson = screen.getByRole('heading', { level: 2, name: 'Chào hỏi cơ bản' });
+    expect(review.compareDocumentPosition(lesson) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(screen.getByRole('link', { name: 'Ôn ngay' })).toHaveAttribute('href', '/app/on-tap');
   });
 
   it('announces loading in the heading while the profile loads', () => {

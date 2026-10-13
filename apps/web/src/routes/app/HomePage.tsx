@@ -12,6 +12,7 @@ import { resolveTimeZone } from '@/lib/dates';
 import { requireSupabase } from '@/lib/supabase';
 import { NextLessonCard } from './home/NextLessonCard';
 import { PathSummaryCard } from './home/PathSummaryCard';
+import { ReviewDueCard } from './home/ReviewDueCard';
 import { SpreadWarning } from './home/SpreadWarning';
 
 const todayLabel = (timeZone: string) =>
@@ -72,6 +73,7 @@ export function HomePage() {
             resuming={resuming}
             headingRef={cardHeadingRef}
           />
+          <ReviewDueCard />
           <NextLessonCard />
         </>
       )}

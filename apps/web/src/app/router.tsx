@@ -9,6 +9,7 @@ import { HomePage } from '@/routes/app/HomePage';
 import { LearnPage } from '@/routes/app/learn/LearnPage';
 import { LessonPage } from '@/routes/app/lesson/LessonPage';
 import { OnboardingPage } from '@/routes/app/onboarding/OnboardingPage';
+import { ReviewPage } from '@/routes/app/review/ReviewPage';
 import { SettingsPage } from '@/routes/app/SettingsPage';
 import { AuthCallbackPage } from '@/routes/auth/AuthCallbackPage';
 import { CheckEmailPage } from '@/routes/auth/CheckEmailPage';
@@ -68,7 +69,7 @@ export const routes: RouteObject[] = [
             children: [
               { index: true, element: <HomePage /> },
               { path: 'hoc-tap', element: <LearnPage /> },
-              { path: 'on-tap', element: <ComingSoonPage title="Ôn tập" /> },
+              { path: 'on-tap', element: <ReviewPage /> },
               { path: 'gia-su', element: <ComingSoonPage title="Gia sư AI" /> },
               { path: 'luyen-thi', element: <ComingSoonPage title="Luyện thi" /> },
               { path: 'tien-do', element: <ComingSoonPage title="Tiến độ" /> },
