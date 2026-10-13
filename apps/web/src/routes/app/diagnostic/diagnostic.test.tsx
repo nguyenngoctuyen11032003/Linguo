@@ -21,8 +21,8 @@ vi.mock('@/features/diagnostic/useDiagnosticRun', async () => {
     return () => mocks.listeners.delete(listener);
   };
   return {
-    useDiagnosticRun: (pathId: string) => {
-      mocks.useDiagnosticRun(pathId);
+    useDiagnosticRun: (pathId: string, options?: unknown) => {
+      mocks.useDiagnosticRun(pathId, options);
       return useSyncExternalStore(subscribe, () => mocks.run);
     },
   };
@@ -56,9 +56,9 @@ beforeEach(() => {
 
 describe('DiagnosticPage — intro', () => {
   it('explains the adaptive test honestly and starts on demand', async () => {
-    const run = makeRun({ status: 'intro', item: null, progress: null });
+    const run = makeRun({ status: 'intro', mode: null, item: null, progress: null, resumable: false });
     renderAt(run);
-    expect(mocks.useDiagnosticRun).toHaveBeenCalledWith(PATH_ID);
+    expect(mocks.useDiagnosticRun).toHaveBeenCalledWith(PATH_ID, { mode: 'full' });
     const heading = screen.getByRole('heading', {
       level: 1,
       name: 'Kiểm tra trình độ',
@@ -72,17 +72,28 @@ describe('DiagnosticPage — intro', () => {
     expect(location()).toBe('/app');
   });
 
-  it('uses the short copy in foundation mode', () => {
+  it('asks for a foundation attempt from the query and uses the short copy', () => {
     renderAt(
-      makeRun({
-        status: 'intro',
-        mode: 'foundation',
-        item: null,
-        progress: null,
-      }),
+      makeRun({ status: 'intro', mode: null, item: null, progress: null, resumable: false }),
+      `/app/kiem-tra/${PATH_ID}?che-do=nen-tang`,
     );
+    expect(mocks.useDiagnosticRun).toHaveBeenCalledWith(PATH_ID, { mode: 'foundation' });
     expect(screen.getByRole('heading', { level: 1, name: 'Kiểm tra nền tảng' })).toBeInTheDocument();
     expect(screen.getByText(/Khoảng 2–3 phút/)).toBeInTheDocument();
+  });
+
+  it('offers to continue an attempt in progress in its own mode', async () => {
+    const run = makeRun({ status: 'intro', mode: 'foundation', item: null, progress: null, resumable: true });
+    renderAt(run);
+    expect(screen.getByRole('heading', { level: 1, name: 'Kiểm tra nền tảng' })).toBeInTheDocument();
+    expect(screen.getByText(/Bạn đang làm dở bài kiểm tra/)).toBeInTheDocument();
+    await userEvent.click(screen.getByRole('button', { name: 'Làm tiếp' }));
+    expect(run.start).toHaveBeenCalled();
+  });
+
+  it('shows when a retake is allowed', () => {
+    renderAt(makeRun({ status: 'intro', item: null, progress: null, resumable: false, retakeAfter: '2026-10-27T03:00:00Z' }));
+    expect(screen.getByText(/Bạn có thể làm lại bài kiểm tra từ ngày 27\/10\/2026/)).toBeInTheDocument();
   });
 });
 
@@ -264,8 +275,8 @@ describe('DiagnosticReportPage', () => {
         estimate: null,
       }),
     });
-    const reload = vi.fn();
-    renderAt(run, reportRoute, { paths: { reload } });
+    renderAt(run, reportRoute);
+    expect(mocks.useDiagnosticRun).toHaveBeenCalledWith(PATH_ID, { preferReport: true });
     expect(screen.getByText(/Kết quả kiểm tra ở mức B2, nhưng mỗi lần Linguo chỉ nâng/)).toBeInTheDocument();
     await userEvent.click(
       screen.getByRole('button', {
@@ -274,8 +285,19 @@ describe('DiagnosticReportPage', () => {
     );
     expect(run.accept).toHaveBeenCalled();
     expect(await screen.findByText(/Đã cập nhật trình độ lộ trình thành B1/)).toBeInTheDocument();
-    expect(reload).toHaveBeenCalled();
     expect(screen.queryByRole('button', { name: /Cập nhật trình độ/ })).toBeNull();
+  });
+
+  it('shows a report from navigation state while the hook loads, without allowing accept yet', () => {
+    mocks.run = makeRun({ status: 'loading', item: null, report: null });
+    renderWithProviders(
+      <Routes>
+        <Route path="/app/kiem-tra/:pathId/ket-qua" element={<DiagnosticReportPage />} />
+      </Routes>,
+      { route: { pathname: reportRoute, state: { report: REPORT } } as unknown as string },
+    );
+    expect(screen.getByRole('heading', { level: 1, name: 'Kết quả kiểm tra' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Cập nhật trình độ lộ trình thành B1/ })).toBeDisabled();
   });
 
   it('does not explain a cap when the suggestion was not capped', () => {

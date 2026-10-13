@@ -52,7 +52,7 @@ describe('diagnostic routes', () => {
         name: 'Kiểm tra trình độ',
       }),
     ).toBeInTheDocument();
-    expect(mocks.useDiagnosticRun).toHaveBeenCalledWith('p1', expect.anything());
+    expect(mocks.useDiagnosticRun).toHaveBeenCalledWith('p1', { mode: 'full' });
     expect(screen.queryByRole('navigation', { name: 'Điều hướng chính' })).not.toBeInTheDocument();
   });
 

@@ -9,7 +9,7 @@ import { SolidCard } from '@/components/ui/SolidCard';
 import { useDiagnosticRun } from '@/features/diagnostic/useDiagnosticRun';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { cn } from '@/lib/cn';
-import { CONFIDENCE_LABELS, levelLabel, missingReason, rangeLabel, SKILL_LABELS } from './labels';
+import { CONFIDENCE_LABELS, formatDate, levelLabel, missingReason, rangeLabel, SKILL_LABELS } from './labels';
 
 const HOME = '/app';
 const SETTINGS_PATHS = '/app/cai-dat#lo-trinh';
@@ -75,26 +75,17 @@ function SkillCard({ row }: { row: SkillRow }) {
   );
 }
 
-function formatDate(iso: string): string {
-  const date = new Date(iso);
-  return Number.isNaN(date.getTime())
-    ? iso
-    : date.toLocaleDateString('vi-VN', {
-        day: 'numeric',
-        month: 'numeric',
-        year: 'numeric',
-      });
-}
-
 interface PlacementProps {
   report: DiagnosticReport;
   targetLevel: string | undefined;
+  /** The hook reloads the learning paths itself after an applied placement. */
   accept: () => Promise<PlacementResult | null>;
   acceptError: string | null;
-  onApplied: () => void;
+  /** The hook has loaded the report itself (a report passed in navigation state shows first). */
+  ready: boolean;
 }
 
-function Placement({ report, targetLevel, accept, acceptError, onApplied }: PlacementProps) {
+function Placement({ report, targetLevel, accept, acceptError, ready }: PlacementProps) {
   const navigate = useNavigate();
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<PlacementResult | null>(null);
@@ -112,10 +103,8 @@ function Placement({ report, targetLevel, accept, acceptError, onApplied }: Plac
     setFailed(false);
     try {
       const outcome = await accept();
-      if (outcome) {
-        setResult(outcome);
-        if (outcome.outcome === 'applied') onApplied();
-      } else setFailed(true);
+      if (outcome) setResult(outcome);
+      else setFailed(true);
     } catch {
       setFailed(true);
     } finally {
@@ -216,7 +205,7 @@ function Placement({ report, targetLevel, accept, acceptError, onApplied }: Plac
         </p>
       )}
       <div className="grid gap-2">
-        <Button variant="accent" size="lg" block loading={busy} onClick={() => void onAccept()}>
+        <Button variant="accent" size="lg" block loading={busy || !ready} onClick={() => void onAccept()}>
           Cập nhật trình độ lộ trình thành {levelLabel(capped)}
         </Button>
         <Button variant="ghost" size="lg" block disabled={busy} onClick={() => navigate(HOME)}>
@@ -232,7 +221,7 @@ export function DiagnosticReportPage() {
   const { pathId = '' } = useParams();
   const location = useLocation();
   const run = useDiagnosticRun(pathId, { preferReport: true });
-  const { paths, reload } = useLearningPaths();
+  const { paths } = useLearningPaths();
   const headingRef = useRef<HTMLHeadingElement>(null);
   const stateReport = (location.state as { report?: DiagnosticReport | null } | null)?.report ?? null;
   const report = run.report ?? stateReport;
@@ -323,7 +312,13 @@ export function DiagnosticReportPage() {
             Trình độ lộ trình
           </h2>
           <div className="mt-3">
-            <Placement report={report} targetLevel={path?.targetLevel} accept={run.accept} acceptError={run.error} onApplied={reload} />
+            <Placement
+              report={report}
+              targetLevel={path?.targetLevel}
+              accept={run.accept}
+              acceptError={run.error}
+              ready={run.status === 'report'}
+            />
           </div>
         </section>
         <p className="text-sm text-muted">Bạn có thể làm lại bài kiểm tra từ ngày {formatDate(report.retake_after)}.</p>

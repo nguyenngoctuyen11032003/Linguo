@@ -2,7 +2,7 @@ import { useEffect, useId, useRef, useState, type ReactNode, type RefObject } fr
 import { Clock, HelpCircle, Pause, PauseCircle, ShieldCheck, Sparkles, X } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router';
-import type { DiagnosticItem, DiagnosticSkill } from '@linguo/shared';
+import type { DiagnosticItem, DiagnosticMode, DiagnosticSkill } from '@linguo/shared';
 import { ChoiceGroup } from '@/components/exercise/ChoiceGroup';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
@@ -11,13 +11,11 @@ import { functionalTransition } from '@/design/motion';
 import { useDiagnosticRun } from '@/features/diagnostic/useDiagnosticRun';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { useMotionPrefs } from '@/providers/MotionProvider';
-import { SKILL_LABELS, type SkipReason } from './labels';
+import { formatDate, FOUNDATION_MODE_VALUE, MODE_PARAM, SKILL_LABELS, type SkipReason } from './labels';
 import { SkillProgress } from './SkillProgress';
 import { SkipSkillSheet } from './SkipSkillSheet';
 
 const HOME = '/app';
-
-type Run = ReturnType<typeof useDiagnosticRun>;
 
 const reportPath = (pathId: string) => `/app/kiem-tra/${pathId}/ket-qua`;
 
@@ -40,10 +38,16 @@ function Shell({ header, children, footer }: { header: ReactNode; children: Reac
   );
 }
 
-function Intro({ run }: { run: Run }) {
+interface IntroProps {
+  mode: DiagnosticMode;
+  resumable: boolean;
+  retakeAfter: string | null;
+}
+
+function Intro({ mode, resumable, retakeAfter }: IntroProps) {
   const headingRef = useRef<HTMLHeadingElement>(null);
   useEffect(() => headingRef.current?.focus(), []);
-  const foundation = run.mode === 'foundation';
+  const foundation = mode === 'foundation';
   const points = [
     {
       icon: Clock,
@@ -72,6 +76,14 @@ function Intro({ run }: { run: Run }) {
         {foundation ? 'Kiểm tra nền tảng' : 'Kiểm tra trình độ'}
       </h1>
       <p className="mt-2 text-muted">Giúp Linguo chọn bài học vừa sức với bạn.</p>
+      {resumable && (
+        <p className="mt-4 rounded-2xl bg-primary/10 p-3 text-[15px]">
+          Bạn đang làm dở bài kiểm tra. Các câu đã trả lời được giữ lại, bạn sẽ làm tiếp từ câu đang dừng.
+        </p>
+      )}
+      {!resumable && retakeAfter && (
+        <p className="mt-4 rounded-2xl bg-text/5 p-3 text-[15px]">Bạn có thể làm lại bài kiểm tra từ ngày {formatDate(retakeAfter)}.</p>
+      )}
       <ul className="mt-6 space-y-4">
         {points.map(({ icon: Icon, text }) => (
           <li key={text} className="flex gap-3">
@@ -166,8 +178,9 @@ function Question({ item, pathLanguage, busy, nearEnd, onAnswer, onOpenSkip, ski
 /** Full-screen adaptive placement test at /app/kiem-tra/:pathId (outside AppLayout, like the lesson player). */
 export function DiagnosticPage() {
   const { pathId = '' } = useParams();
-  const [searchParams] = useSearchParams();
-  const run = useDiagnosticRun(pathId, { mode: searchParams.get('che-do') === 'nen-tang' ? 'foundation' : 'full' });
+  const [params] = useSearchParams();
+  const requestedMode: DiagnosticMode = params.get(MODE_PARAM) === FOUNDATION_MODE_VALUE ? 'foundation' : 'full';
+  const run = useDiagnosticRun(pathId, { mode: requestedMode });
   const { paths } = useLearningPaths();
   const navigate = useNavigate();
   const [skipOpen, setSkipOpen] = useState(false);
@@ -182,7 +195,9 @@ export function DiagnosticPage() {
   const inTest = status === 'question' || status === 'submitting';
 
   const pause = () => {
-    void Promise.resolve(run.pause()).finally(() => navigate(HOME));
+    // Answers are already on the server; the next visit resumes at the pending item.
+    run.pause();
+    navigate(HOME);
   };
 
   const header = (
@@ -254,14 +269,14 @@ export function DiagnosticPage() {
               Để sau
             </Link>
             <div className="flex-1">
-              <Button variant="accent" size="lg" block onClick={() => void run.start()}>
-                Bắt đầu
+              <Button variant="accent" size="lg" block onClick={() => run.start()}>
+                {run.resumable ? 'Làm tiếp' : 'Bắt đầu'}
               </Button>
             </div>
           </div>
         }
       >
-        <Intro run={run} />
+        <Intro mode={run.mode ?? requestedMode} resumable={run.resumable} retakeAfter={run.retakeAfter} />
       </Shell>
     );
   }
@@ -275,7 +290,7 @@ export function DiagnosticPage() {
         pathLanguage={path?.language}
         busy={busy}
         nearEnd={progress?.near_end ?? false}
-        onAnswer={(choice) => void run.answer(choice)}
+        onAnswer={(choice) => run.answer(choice)}
         onOpenSkip={() => setSkipOpen(true)}
         skipTriggerRef={skipTriggerRef}
       />
@@ -288,7 +303,7 @@ export function DiagnosticPage() {
         onSkip={(reason: SkipReason) => {
           const skill: DiagnosticSkill = item.skill;
           setSkipOpen(false);
-          void run.skip(skill, reason);
+          run.skip(skill, reason);
         }}
       />
     </Shell>
