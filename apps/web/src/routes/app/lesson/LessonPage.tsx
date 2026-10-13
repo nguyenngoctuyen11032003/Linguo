@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { X } from 'lucide-react';
+import { RotateCcw, X } from 'lucide-react';
 import { Link, useNavigate, useParams } from 'react-router';
 import { DEFAULT_TIMEZONE } from '@linguo/shared';
 import { DemoBadge, ExerciseFrame } from '@/components/exercise';
@@ -197,9 +197,20 @@ export function LessonPage() {
         />
       );
       footer = (
-        <Button variant="accent" size="lg" block disabled={!run.completeResult} onClick={run.next}>
-          Tiếp tục
-        </Button>
+        <div className="flex gap-3">
+          {/* Reopening a finished lesson shows its summary; a new run starts only from here. */}
+          {run.runStatus === 'completed' && (
+            <Button variant="ghost" size="lg" onClick={run.restart}>
+              <RotateCcw aria-hidden className="size-5" />
+              Học lại
+            </Button>
+          )}
+          <div className="flex-1">
+            <Button variant="accent" size="lg" block disabled={!run.completeResult} onClick={run.next}>
+              Tiếp tục
+            </Button>
+          </div>
+        </div>
       );
       break;
     case 'next_review':

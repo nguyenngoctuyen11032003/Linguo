@@ -154,7 +154,8 @@ describe('LessonPage', () => {
   });
 
   it('summary lists unanswered exercises and jumps back to one with "Làm tiếp"', async () => {
-    const steps = [...makeRun().steps.slice(0, 6), { kind: 'exercise' as const, exerciseId: EX1, stage: 'recognition' as const, recheck: true, queueIndex: 2 }, ...makeRun().steps.slice(6)];
+    const recheck = { kind: 'exercise' as const, exerciseId: EX1, stage: 'recognition' as const, recheck: true, queueIndex: 2 };
+    const steps = [...makeRun().steps.slice(0, 6), recheck, ...makeRun().steps.slice(6)];
     const run = makeRun({ steps, stepIndex: 7, canComplete: false, unresolved: [5, 6] });
     renderLesson(run);
     expect(screen.getByRole('heading', { level: 1, name: 'Tóm tắt' })).toBeInTheDocument();
@@ -164,6 +165,20 @@ describe('LessonPage', () => {
     await userEvent.click(within(list).getByRole('button', { name: 'Làm tiếp Câu 3 (làm lại)' }));
     expect(run.goTo).toHaveBeenCalledWith(6);
     expect(run.complete).not.toHaveBeenCalled();
+  });
+
+  it('offers "Học lại" on the summary of a completed lesson', async () => {
+    const run = makeRun({ stepIndex: 6, runStatus: 'completed', completeResult: COMPLETE_RESULT });
+    renderLesson(run);
+    expect(screen.getByText('Kết quả của bạn')).toBeInTheDocument();
+    expect(run.complete).not.toHaveBeenCalled();
+    await userEvent.click(screen.getByRole('button', { name: 'Học lại' }));
+    expect(run.restart).toHaveBeenCalledTimes(1);
+  });
+
+  it('has no "Học lại" while the run is in progress', () => {
+    renderLesson(makeRun({ stepIndex: 6, completeResult: COMPLETE_RESULT }));
+    expect(screen.queryByRole('button', { name: 'Học lại' })).not.toBeInTheDocument();
   });
 
   it('summary completes the lesson once on enter', async () => {

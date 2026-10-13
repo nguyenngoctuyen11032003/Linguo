@@ -98,15 +98,60 @@ describe('useLessonRun', () => {
     expect(hook.current.api.steps).toHaveLength(8);
   });
 
-  it('starts a fresh run (without old attempts) when the latest run is completed', async () => {
-    const newRun = run({ id: '40000000-0000-4000-8000-000000000002' });
-    installClient({
-      get_lesson: () => ({ data: payload({ run: run({ status: 'completed' }), attempts: [attempt(EX1)] }) }),
-      start_lesson: () => ({ data: newRun }),
+  it('reopens a completed run on its stored summary without starting a new one', async () => {
+    const summary = {
+      accuracy_by_stage: { recognition: 1, recall: 0.5, application: null },
+      almost_count: 1,
+      confident_wrong: 0,
+      unsure_right: 0,
+      next_review_at: '2026-10-14T00:00:00+07:00',
+      completed_at: '2026-10-13T08:00:00Z',
+    };
+    const fake = installClient({
+      get_lesson: () => ({
+        data: payload({
+          run: run({ status: 'completed', cursor: 5, next_review_at: summary.next_review_at, summary }),
+          attempts: [attempt(EX1), attempt(EX2)],
+        }),
+      }),
+      start_lesson: () => ({ data: run({ id: '40000000-0000-4000-8000-000000000002' }) }),
+    });
+    const { result: hook } = renderRun(`/app/hoc-tap/bai/${LESSON_ID}?buoc=2`);
+    await ready(hook);
+    expect(fake.callsOf('start_lesson')).toEqual([]);
+    expect(hook.current.api.runStatus).toBe('completed');
+    expect(hook.current.api.step).toEqual({ kind: 'summary' });
+    expect(hook.current.location.search).toBe('?buoc=7');
+    expect(hook.current.api.completeResult).toEqual(summary);
+    expect(hook.current.api.exerciseState(EX1, 0).status).toBe('graded');
+    // Nothing can be sent to a finished run.
+    await act(() => hook.current.api.submit(EX1, 0, { option_id: 'a' }, { confidence: null, responseMs: 10, hintCount: 0 }));
+    expect(fake.callsOf('submit_exercise')).toEqual([]);
+  });
+
+  it('starts a fresh run (without old attempts) only on an explicit restart', async () => {
+    const NEW_RUN = '40000000-0000-4000-8000-000000000002';
+    const fake = installClient({
+      get_lesson: () => ({ data: payload({ run: run({ status: 'completed', summary: {} }), attempts: [attempt(EX1)] }) }),
+      start_lesson: () => ({ data: run({ id: NEW_RUN }) }),
     });
     const { result: hook } = renderRun();
     await ready(hook);
+    expect(fake.callsOf('start_lesson')).toEqual([]);
+    expect(hook.current.api.runStatus).toBe('completed');
+
+    act(() => hook.current.api.restart());
+    await waitFor(() => expect(hook.current.api.runStatus).toBe('in_progress'));
+    expect(fake.callsOf('start_lesson')).toEqual([{ p_lesson_id: LESSON_ID, p_path_id: PATH_ID }]);
     expect(hook.current.api.exerciseState(EX1, 0).status).toBe('idle');
+    expect(hook.current.api.completeResult).toBeNull();
+    expect(hook.current.api.stepIndex).toBe(0);
+    expect(hook.current.location.search).toBe('?buoc=1');
+
+    // A later reload of the same lesson does not start yet another run.
+    act(() => hook.current.api.retry());
+    await ready(hook);
+    expect(fake.callsOf('start_lesson')).toHaveLength(1);
   });
 
   it('resumes from the saved cursor', async () => {

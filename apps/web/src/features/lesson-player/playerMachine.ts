@@ -1,4 +1,4 @@
-import type { CompleteResult, LessonAttempt, LessonPayload, LessonRun, SubmitResult } from '@linguo/shared';
+import { completeResultSchema, type CompleteResult, type LessonAttempt, type LessonPayload, type LessonRun, type SubmitResult } from '@linguo/shared';
 import type { ExerciseUiState, LessonStep } from './types';
 
 // Spec 2 §7.2: the pure core of the lesson player. Steps follow PRD §6.2; exercise steps mirror the run queue
@@ -119,6 +119,12 @@ function toAttempt(exerciseId: string, result: SubmitResult, previous: readonly 
   };
 }
 
+/** The summary complete_lesson stored on a completed run (same shape as its result), or null when unreadable. */
+function storedSummary(run: LessonRun): CompleteResult | null {
+  const parsed = completeResultSchema.safeParse({ next_review_at: run.next_review_at, ...run.summary });
+  return parsed.success ? parsed.data : null;
+}
+
 export function playerReducer(state: PlayerState, action: PlayerAction): PlayerState {
   switch (action.type) {
     case 'loaded': {
@@ -132,7 +138,7 @@ export function playerReducer(state: PlayerState, action: PlayerAction): PlayerS
         stepIndex: clamp(action.stepIndex, steps),
         attempts: action.payload.attempts,
         local,
-        completeResult: null,
+        completeResult: action.run.status === 'completed' ? storedSummary(action.run) : null,
       };
     }
     case 'goto':

@@ -49,7 +49,7 @@ function readCache(key: string): LessonPayload | null {
     const raw = sessionStorage.getItem(key);
     if (!raw) return null;
     const parsed = lessonPayloadSchema.safeParse(JSON.parse(raw));
-    // A completed run cannot take new answers; reopening it needs start_lesson, which needs the network.
+    // Only an open run is worth reopening offline: a completed one cannot take answers and "Học lại" needs the network.
     return parsed.success && parsed.data.run?.status === 'in_progress' ? parsed.data : null;
   } catch {
     return null;
@@ -70,7 +70,17 @@ function parseStepParam(value: string | null, stepCount: number): number | null 
   return Math.min(Math.max(Number(value), 1), stepCount) - 1;
 }
 
-async function loadPayload(client: AppSupabaseClient, userId: string, lessonId: string, pathId: string): Promise<LessonPayload> {
+/**
+ * The open run, else the latest completed one as is (reopening a finished lesson shows its summary). A new run is
+ * started only when there is none yet or when the learner asked to study a completed lesson again (`restart`).
+ */
+async function loadPayload(
+  client: AppSupabaseClient,
+  userId: string,
+  lessonId: string,
+  pathId: string,
+  restart: boolean,
+): Promise<LessonPayload> {
   let payload: LessonPayload;
   try {
     payload = await getLesson(client, lessonId, pathId);
@@ -80,6 +90,7 @@ async function loadPayload(client: AppSupabaseClient, userId: string, lessonId: 
     return cached;
   }
   if (payload.run?.status === 'in_progress') return payload;
+  if (payload.run && !restart) return payload;
   const run = await startLesson(client, lessonId, pathId);
   // A new run starts with no attempts; the payload's attempts belonged to the previous (completed) run.
   return { ...payload, run, attempts: run.id === payload.run?.id ? payload.attempts : [] };
@@ -119,6 +130,8 @@ export function useLessonRun(lessonId: string): LessonRunApi {
   const earlyResults = useRef<Array<{ outcome: OutboxOutcome; entry: OutboxEntry }>>([]);
   const savedCursor = useRef(0);
   const wantedCursor = useRef(0);
+  /** Lesson the learner asked to study again ("Học lại"); the next load starts a new run for it. */
+  const restartFor = useRef<string | null>(null);
 
   const applyOutcome = useCallback(
     (outcome: OutboxOutcome, entry: OutboxEntry) => {
@@ -163,13 +176,20 @@ export function useLessonRun(lessonId: string): LessonRunApi {
     }
     let active = true;
     setLoad({ status: 'loading', error: null });
-    loadPayload(client, userId, lessonId, pathId)
+    const restart = restartFor.current === lessonId;
+    loadPayload(client, userId, lessonId, pathId, restart)
       .then((payload) => {
         if (!active) return;
+        if (restart) restartFor.current = null;
         const run = payload.run!;
         const steps = buildSteps(payload, run.queue);
         const { searchParams: params, setSearchParams: setParams } = latest.current;
-        const stepIndex = parseStepParam(params.get(STEP_PARAM), steps.length) ?? Math.min(Math.max(run.cursor, 0), Math.max(steps.length - 1, 0));
+        const cursorIndex = Math.min(Math.max(run.cursor, 0), Math.max(steps.length - 1, 0));
+        // A completed run opens on its summary; a restarted one from its (new) cursor, not the old ?buoc=.
+        const stepIndex =
+          run.status === 'completed'
+            ? steps.findIndex((s) => s.kind === 'summary')
+            : ((restart ? null : parseStepParam(params.get(STEP_PARAM), steps.length)) ?? cursorIndex);
         const pending = createOutbox(userId)
           .list()
           .filter((e) => e.args.p_run_id === run.id)
@@ -271,7 +291,7 @@ export function useLessonRun(lessonId: string): LessonRunApi {
       const { state: current, client: c, online: isOnline } = latest.current;
       const run = current.run;
       const exercise = current.payload?.exercises.find((e) => e.id === exerciseId);
-      if (!run || !exercise || !userId) return;
+      if (!run || run.status !== 'in_progress' || !exercise || !userId) return;
       const ref: EntryRef = { exerciseId, queueIndex };
       // One answer at a time per queue entry, and none once it is resolved: a second (double-click) submit would be
       // graded as attempt 2 (revealing the answer), and one after the reveal would count as the re-check.
@@ -358,6 +378,11 @@ export function useLessonRun(lessonId: string): LessonRunApi {
 
   const retry = useCallback(() => setLoadAttempt((n) => n + 1), []);
 
+  const restart = useCallback(() => {
+    restartFor.current = lessonId;
+    setLoadAttempt((n) => n + 1);
+  }, [lessonId]);
+
   const exerciseState = useCallback(
     (exerciseId: string, queueIndex: number): ExerciseUiState => exerciseStateFor(state, exerciseId, queueIndex),
     [state],
@@ -391,6 +416,8 @@ export function useLessonRun(lessonId: string): LessonRunApi {
     canComplete,
     complete,
     completeResult: state.completeResult,
+    runStatus: ready ? (state.run?.status ?? null) : null,
     retry,
+    restart,
   };
 }
