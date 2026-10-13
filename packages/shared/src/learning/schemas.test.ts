@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { fieldErrors } from '../schemas';
-import { createPathSchema, fromEstimateRecord, onboardingDraftSchema, updatePlanSchema, weeklyMinutesSchema } from './schemas';
+import { createPathSchema, fromEstimateRecord, isoDateSchema, onboardingDraftSchema, updatePlanSchema, weeklyMinutesSchema } from './schemas';
 
 const valid = {
   language: 'en',
@@ -29,6 +29,42 @@ describe('learning schemas', () => {
     const week = weeklyMinutesSchema.safeParse([0, 0, 0, 0, 0, 0, 0]);
     expect(week.success).toBe(false);
     expect(weeklyMinutesSchema.safeParse([721, 0, 0, 0, 0, 0, 0]).success).toBe(false);
+  });
+
+  it('rejects impossible and out-of-range calendar dates', () => {
+    expect(isoDateSchema.safeParse('2026-02-31').success).toBe(false);
+    expect(isoDateSchema.safeParse('0050-01-01').success).toBe(false);
+    expect(isoDateSchema.safeParse('2026-13-01').success).toBe(false);
+    expect(isoDateSchema.safeParse('2027-02-29').success).toBe(false);
+    expect(isoDateSchema.safeParse('2028-02-29').success).toBe(true);
+    expect(isoDateSchema.safeParse('1900-01-01').success).toBe(true);
+    const r = updatePlanSchema.safeParse({ ...valid, targetDate: '2026-02-31' });
+    expect(r.success).toBe(false);
+    if (!r.success) expect(fieldErrors(r.error).targetDate).toBe('Ngày không hợp lệ.');
+  });
+
+  it('reports Vietnamese messages for schedule and draft checks', () => {
+    const negative = updatePlanSchema.safeParse({ ...valid, weeklyMinutes: [-5, 0, 0, 0, 0, 0, 0] });
+    expect(negative.success).toBe(false);
+    if (!negative.success) expect(fieldErrors(negative.error).weeklyMinutes).toBe('Số phút không hợp lệ.');
+
+    const fractional = updatePlanSchema.safeParse({ ...valid, weeklyMinutes: [30.5, 0, 0, 0, 0, 0, 0] });
+    if (!fractional.success) expect(fieldErrors(fractional.error).weeklyMinutes).toBe('Số phút không hợp lệ.');
+    expect(fractional.success).toBe(false);
+
+    const short = updatePlanSchema.safeParse({ ...valid, weeklyMinutes: [30, 30, 30, 30, 30, 30] });
+    expect(short.success).toBe(false);
+    if (!short.success) expect(fieldErrors(short.error).weeklyMinutes).toBe('Lịch học cần đủ 7 ngày.');
+
+    const direct = weeklyMinutesSchema.safeParse([30, 30, 30]);
+    if (!direct.success) expect(direct.error.issues.every((i) => i.message === 'Lịch học cần đủ 7 ngày.')).toBe(true);
+
+    const draft = onboardingDraftSchema.safeParse({ version: 1, step: 2, data: { weeklyMinutes: [-5, 0, 0, 0, 0, 0, 0] } });
+    expect(draft.success).toBe(false);
+    if (!draft.success) expect(draft.error.issues[0]?.message).toBe('Số phút không hợp lệ.');
+    const draftShort = onboardingDraftSchema.safeParse({ version: 1, step: 2, data: { weeklyMinutes: [1, 2] } });
+    if (!draftShort.success) expect(draftShort.error.issues[0]?.message).toBe('Lịch học cần đủ 7 ngày.');
+    expect(draftShort.success).toBe(false);
   });
 
   it('validates the onboarding draft shape', () => {

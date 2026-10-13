@@ -68,6 +68,24 @@
       "language": "en", "currentLevel": "a1", "targetLevel": "a2",
       "weeklyMinutes": [30, 30, 30, 30, 30, 30, 30], "targetDate": "2026-10-13",
       "expected": { "hoursNeeded": 100, "weeksMin": 24, "weeksMid": 29, "weeksMax": 38, "feasibility": "needs_more_time", "suggestedMinutesPerDay": 720, "suggestedDate": "2027-05-04" }
+    },
+    {
+      "name": "en b1 to b2, 60 min every day, deadline exactly at weeksMax is feasible",
+      "language": "en", "currentLevel": "b1", "targetLevel": "b2",
+      "weeklyMinutes": [60, 60, 60, 60, 60, 60, 60], "targetDate": "2027-07-06",
+      "expected": { "hoursNeeded": 200, "weeksMin": 24, "weeksMid": 29, "weeksMax": 38, "feasibility": "feasible", "suggestedMinutesPerDay": null, "suggestedDate": null }
+    },
+    {
+      "name": "en b1 to b2, 60 min every day, deadline exactly at weeksMid is tight",
+      "language": "en", "currentLevel": "b1", "targetLevel": "b2",
+      "weeklyMinutes": [60, 60, 60, 60, 60, 60, 60], "targetDate": "2027-05-04",
+      "expected": { "hoursNeeded": 200, "weeksMin": 24, "weeksMid": 29, "weeksMax": 38, "feasibility": "tight", "suggestedMinutesPerDay": null, "suggestedDate": null }
+    },
+    {
+      "name": "en b1 to b2, 60 min every day, deadline in the past needs more time",
+      "language": "en", "currentLevel": "b1", "targetLevel": "b2",
+      "weeklyMinutes": [60, 60, 60, 60, 60, 60, 60], "targetDate": "2026-10-01",
+      "expected": { "hoursNeeded": 200, "weeksMin": 24, "weeksMid": 29, "weeksMax": 38, "feasibility": "needs_more_time", "suggestedMinutesPerDay": 720, "suggestedDate": "2027-05-04" }
     }
   ]
 }

@@ -23,6 +23,12 @@ describe('levels', () => {
     expect(allowedTargets('ko', 'topik_i', 'topik2')).toEqual([]);
   });
 
+  it('allows no targets when the current level is unknown', () => {
+    expect(allowedTargets('en', 'cefr', 'z9')).toEqual([]);
+    expect(allowedTargets('en', 'cefr', 'topik1')).toEqual([]);
+    expect(defaultTarget('en', 'cefr', 'z9')).toBeNull();
+  });
+
   it('suggests defaults', () => {
     expect(defaultTarget('en', 'daily_communication', 'a2')).toBe('b1');
     expect(defaultTarget('en', 'daily_communication', 'b2')).toBe('c1');

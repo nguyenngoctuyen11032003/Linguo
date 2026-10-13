@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import fixtures from './estimate.fixtures.json';
-import { addDaysIso, estimatePath, EstimateError, type ReferenceHours } from './estimate';
+import { addDaysIso, estimatePath, EstimateError, isoToUtcDays, isTargetDateInRange, type ReferenceHours } from './estimate';
 
 const reference = (language: 'en' | 'ko', reviewed = false): ReferenceHours[] =>
   fixtures.referenceHours[language].map((r) => ({ ...r, reviewed }));
@@ -39,6 +39,31 @@ describe('estimatePath details', () => {
     const base = { currentLevel: 'a2', targetLevel: 'b1', weeklyMinutes: [30, 30, 30, 30, 30, 30, 30], targetDate: null, today: '2026-10-13' };
     expect(() => estimatePath({ ...base, targetLevel: 'z9' }, reference('en'))).toThrow(EstimateError);
     expect(() => estimatePath({ ...base, weeklyMinutes: [0, 0, 0, 0, 0, 0, 0] }, reference('en'))).toThrow('invalid_schedule');
+  });
+
+  it('throws invalid_date for malformed or impossible dates', () => {
+    const base = { currentLevel: 'a2', targetLevel: 'b1', weeklyMinutes: [30, 30, 30, 30, 30, 30, 30], targetDate: null, today: '2026-10-13' };
+    expect(() => estimatePath({ ...base, today: 'abc' }, reference('en'))).toThrow('invalid_date');
+    expect(() => estimatePath({ ...base, today: '2026-02-31' }, reference('en'))).toThrow(EstimateError);
+    expect(() => estimatePath({ ...base, targetDate: '2027-13-01' }, reference('en'))).toThrow('invalid_date');
+    expect(() => estimatePath({ ...base, targetDate: 'not-a-date' }, reference('en'))).toThrow(EstimateError);
+    expect(() => estimatePath({ ...base, targetDate: '2027-01-13' }, reference('en'))).not.toThrow();
+  });
+
+  it('isoToUtcDays returns NaN for malformed input', () => {
+    expect(isoToUtcDays('')).toBeNaN();
+    expect(isoToUtcDays('2026-10')).toBeNaN();
+    expect(isoToUtcDays('2026-02-30')).toBeNaN();
+    expect(isoToUtcDays('1970-01-02')).toBe(1);
+  });
+
+  it('checks the target date window (today .. today + 3650 days)', () => {
+    expect(isTargetDateInRange('2026-10-13', '2026-10-13')).toBe(true);
+    expect(isTargetDateInRange('2026-10-12', '2026-10-13')).toBe(false);
+    expect(isTargetDateInRange(addDaysIso('2026-10-13', 3650), '2026-10-13')).toBe(true);
+    expect(isTargetDateInRange(addDaysIso('2026-10-13', 3651), '2026-10-13')).toBe(false);
+    expect(isTargetDateInRange('2026-02-31', '2026-10-13')).toBe(false);
+    expect(isTargetDateInRange('2027-01-01', 'bad')).toBe(false);
   });
 
   it('adds days across month and leap boundaries', () => {

@@ -2,7 +2,7 @@
 -- Do not edit by hand: run `pnpm fixtures:sync`.
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(24);
+select plan(27);
 select is((select count(*)::int from public.level_reference_hours where language_code = 'en'), 7, 'reference hours: en has 7 levels');
 select is((select array[ordinal::int, cumulative_hours] from public.level_reference_hours where language_code = 'en' and level_code = 'pre_a1'), array[0, 0], 'reference hours: en/pre_a1');
 select is((select array[ordinal::int, cumulative_hours] from public.level_reference_hours where language_code = 'en' and level_code = 'a1'), array[1, 90], 'reference hours: en/a1');
@@ -27,5 +27,8 @@ select is(public.estimate_learning_path('en', 'b1', 'b2', array[60, 60, 60, 60, 
 select is(public.estimate_learning_path('ko', 'hangul', 'topik2', array[15, 15, 15, 15, 15, 30, 0]::smallint[], null, date '2026-10-13') - 'assumptions', '{"hours_needed":300,"weeks_min":138,"weeks_mid":172,"weeks_max":224,"feasibility":"no_deadline","suggested_minutes_per_day":null,"suggested_date":null}'::jsonb, 'estimate: ko hangul to topik2, weekdays 15 and saturday 30');
 select is(public.estimate_learning_path('ko', 'topik3', 'topik4', array[60, 60, 0, 60, 60, 0, 0]::smallint[], date '2026-11-13', date '2026-10-13') - 'assumptions', '{"hours_needed":350,"weeks_min":71,"weeks_mid":88,"weeks_max":115,"feasibility":"needs_more_time","suggested_minutes_per_day":720,"suggested_date":"2028-06-20"}'::jsonb, 'estimate: ko topik3 to topik4, four study days, one month left, suggestion capped');
 select is(public.estimate_learning_path('en', 'a1', 'a2', array[30, 30, 30, 30, 30, 30, 30]::smallint[], date '2026-10-13', date '2026-10-13') - 'assumptions', '{"hours_needed":100,"weeks_min":24,"weeks_mid":29,"weeks_max":38,"feasibility":"needs_more_time","suggested_minutes_per_day":720,"suggested_date":"2027-05-04"}'::jsonb, 'estimate: en a1 to a2, deadline today');
+select is(public.estimate_learning_path('en', 'b1', 'b2', array[60, 60, 60, 60, 60, 60, 60]::smallint[], date '2027-07-06', date '2026-10-13') - 'assumptions', '{"hours_needed":200,"weeks_min":24,"weeks_mid":29,"weeks_max":38,"feasibility":"feasible","suggested_minutes_per_day":null,"suggested_date":null}'::jsonb, 'estimate: en b1 to b2, 60 min every day, deadline exactly at weeksMax is feasible');
+select is(public.estimate_learning_path('en', 'b1', 'b2', array[60, 60, 60, 60, 60, 60, 60]::smallint[], date '2027-05-04', date '2026-10-13') - 'assumptions', '{"hours_needed":200,"weeks_min":24,"weeks_mid":29,"weeks_max":38,"feasibility":"tight","suggested_minutes_per_day":null,"suggested_date":null}'::jsonb, 'estimate: en b1 to b2, 60 min every day, deadline exactly at weeksMid is tight');
+select is(public.estimate_learning_path('en', 'b1', 'b2', array[60, 60, 60, 60, 60, 60, 60]::smallint[], date '2026-10-01', date '2026-10-13') - 'assumptions', '{"hours_needed":200,"weeks_min":24,"weeks_mid":29,"weeks_max":38,"feasibility":"needs_more_time","suggested_minutes_per_day":720,"suggested_date":"2027-05-04"}'::jsonb, 'estimate: en b1 to b2, 60 min every day, deadline in the past needs more time');
 select * from finish();
 rollback;
