@@ -1,0 +1,84 @@
+import { createBrowserRouter, type RouteObject } from 'react-router';
+import { AppLayout } from '@/components/layout/AppLayout';
+import { AuthLayout } from '@/components/layout/AuthLayout';
+import { RootLayout } from '@/components/layout/RootLayout';
+import { RedirectIfAuthed, RequireAuth } from '@/features/auth/guards';
+import { ProfileProvider } from '@/features/profile/ProfileProvider';
+import { ComingSoonPage } from '@/routes/app/ComingSoonPage';
+import { HomePage } from '@/routes/app/HomePage';
+import { SettingsPage } from '@/routes/app/SettingsPage';
+import { AuthCallbackPage } from '@/routes/auth/AuthCallbackPage';
+import { CheckEmailPage } from '@/routes/auth/CheckEmailPage';
+import { ForgotPasswordPage } from '@/routes/auth/ForgotPasswordPage';
+import { ResetPasswordPage } from '@/routes/auth/ResetPasswordPage';
+import { SignInPage } from '@/routes/auth/SignInPage';
+import { SignUpPage } from '@/routes/auth/SignUpPage';
+import { LandingPage } from '@/routes/landing/LandingPage';
+import { LegalPage } from '@/routes/LegalPage';
+import { NotFoundPage } from '@/routes/NotFoundPage';
+import { RouteError } from '@/routes/RouteError';
+
+export const routes: RouteObject[] = [
+  {
+    path: '/',
+    element: <RootLayout />,
+    errorElement: <RouteError />,
+    children: [
+      { index: true, element: <LandingPage /> },
+      { path: 'quyen-rieng-tu', element: <LegalPage kind="privacy" /> },
+      { path: 'dieu-khoan', element: <LegalPage kind="terms" /> },
+      {
+        element: (
+          <RedirectIfAuthed>
+            <AuthLayout />
+          </RedirectIfAuthed>
+        ),
+        children: [
+          { path: 'dang-nhap', element: <SignInPage /> },
+          { path: 'dang-ky', element: <SignUpPage /> },
+          { path: 'quen-mat-khau', element: <ForgotPasswordPage /> },
+          { path: 'kiem-tra-email', element: <CheckEmailPage /> },
+        ],
+      },
+      {
+        element: <AuthLayout />,
+        children: [
+          { path: 'auth/callback', element: <AuthCallbackPage /> },
+          {
+            path: 'dat-lai-mat-khau',
+            element: (
+              <RequireAuth>
+                <ResetPasswordPage />
+              </RequireAuth>
+            ),
+          },
+        ],
+      },
+      {
+        path: 'app',
+        element: (
+          <RequireAuth>
+            <ProfileProvider>
+              <AppLayout />
+            </ProfileProvider>
+          </RequireAuth>
+        ),
+        children: [
+          { index: true, element: <HomePage /> },
+          { path: 'hoc-tap', element: <ComingSoonPage title="Học tập" /> },
+          { path: 'on-tap', element: <ComingSoonPage title="Ôn tập" /> },
+          { path: 'gia-su', element: <ComingSoonPage title="Gia sư AI" /> },
+          { path: 'luyen-thi', element: <ComingSoonPage title="Luyện thi" /> },
+          { path: 'tien-do', element: <ComingSoonPage title="Tiến độ" /> },
+          { path: 'cai-dat', element: <SettingsPage /> },
+        ],
+      },
+      { path: '*', element: <NotFoundPage /> },
+    ],
+  },
+];
+
+export function createAppRouter() {
+  const basename = import.meta.env.BASE_URL.replace(/\/+$/, '') || '/';
+  return createBrowserRouter(routes, { basename });
+}
