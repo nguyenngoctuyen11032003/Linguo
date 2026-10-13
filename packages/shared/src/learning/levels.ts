@@ -106,6 +106,7 @@ export function levelOrdinal(language: LanguageCode, level: string): number {
 /** Levels the user may aim for: strictly above `current`, restricted to the TOPIK band for TOPIK goals. */
 export function allowedTargets(language: LanguageCode, goal: GoalType, current: string): LevelCode[] {
   const from = levelOrdinal(language, current);
+  if (from < 0) return [];
   let levels = (LEVELS[language] as readonly LevelCode[]).filter((_, i) => i > from);
   if (goal === 'topik_i') levels = levels.filter((l) => TOPIK_I.includes(l));
   if (goal === 'topik_ii') levels = levels.filter((l) => TOPIK_II.includes(l));
