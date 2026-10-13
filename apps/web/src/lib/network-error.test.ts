@@ -9,6 +9,7 @@ describe('isNetworkError', () => {
     expect(isNetworkError({ message: 'TypeError: Failed to fetch', details: '', hint: '', code: '' })).toBe(true);
     expect(isNetworkError({ message: 'FetchError: network down', code: '' })).toBe(true);
     expect(isNetworkError({ message: 'AbortError: The operation was aborted', code: '' })).toBe(true);
+    expect(isNetworkError({ message: 'TimeoutError: signal timed out', code: '' })).toBe(true);
     expect(isNetworkError({ status: 0 })).toBe(true);
   });
 

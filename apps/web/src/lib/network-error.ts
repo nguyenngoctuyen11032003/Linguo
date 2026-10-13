@@ -1,5 +1,5 @@
 // fetch() failures across browsers/Node, and postgrest-js's "<name>: <message>" wrapping of them.
-const NETWORK_PATTERN = /^(?:TypeError|FetchError|AbortError):|failed to fetch|fetch failed|networkerror|load failed|network request failed/i;
+const NETWORK_PATTERN = /^(?:TypeError|FetchError|AbortError|TimeoutError):|failed to fetch|fetch failed|networkerror|load failed|network request failed/i;
 
 /**
  * True when the request never got a server answer (offline, DNS, timeout). supabase-js does not throw on

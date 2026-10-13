@@ -27,6 +27,17 @@ const MESSAGES: Record<string, string> = {
 const NETWORK_MESSAGE = 'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.';
 const CODE_PATTERN = /^[a-z][a-z0-9]*(?:_[a-z0-9]+)+$/;
 
+/**
+ * The server never graded the request: no answer (offline, DNS, the 15 s timeout) or a gateway/server failure
+ * (408, 5xx) after it was sent. A submit failing this way is resent later with the same idempotency key, which
+ * the server replays if it did grade it after all.
+ */
+export function isUnansweredError(error: unknown): boolean {
+  if (isNetworkError(error)) return true;
+  if (!error || typeof error !== 'object' || !('status' in error) || typeof error.status !== 'number') return false;
+  return error.status === 408 || error.status >= 500;
+}
+
 /** A snake_case RPC message is the most specific code; otherwise fall back to the error's own `code`. */
 function errorCode(error: object): string | null {
   if ('message' in error && typeof error.message === 'string' && CODE_PATTERN.test(error.message)) return error.message;

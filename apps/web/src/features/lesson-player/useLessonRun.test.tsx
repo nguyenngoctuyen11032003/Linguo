@@ -13,7 +13,7 @@ import { lessonCacheKey, useLessonRun } from './useLessonRun';
 const USER_ID = '11111111-1111-4111-8111-111111111111';
 const NETWORK = { message: 'TypeError: Failed to fetch', code: '' };
 
-type Handler = (args: Record<string, unknown>) => { data?: unknown; error?: unknown };
+type Handler = (args: Record<string, unknown>) => { data?: unknown; error?: unknown; status?: number };
 
 const mocks = vi.hoisted(() => ({ client: null as unknown }));
 vi.mock('@/lib/supabase', () => ({ getSupabase: () => mocks.client, requireSupabase: () => mocks.client }));
@@ -22,8 +22,8 @@ function installClient(handlers: Record<string, Handler>) {
   const rpc = vi.fn((name: string, args: Record<string, unknown>) => {
     const handler = handlers[name];
     if (!handler) return Promise.resolve({ data: null, error: { message: `no fake for ${name}`, code: 'X' } });
-    const { data = null, error = null } = handler(args);
-    return Promise.resolve({ data, error });
+    const { data = null, error = null, status } = handler(args);
+    return Promise.resolve({ data, error, ...(status === undefined ? {} : { status }) });
   });
   mocks.client = { rpc };
   const callsOf = (name: string) => rpc.mock.calls.filter(([n]) => n === name).map(([, a]) => a);
@@ -226,6 +226,31 @@ describe('useLessonRun', () => {
     ]);
     expect(hook.current.api.pendingCount).toBe(0);
     expect(hook.current.api.canComplete).toBe(true);
+  });
+
+  it.each([
+    ['times out', { message: 'AbortError: signal timed out', code: '', status: 0 }],
+    ['fails on the server before grading', { message: 'upstream error', code: '', status: 503 }],
+  ])('queues the answer under the same idempotency key when the submit %s', async (_case, failure) => {
+    let down = true;
+    const fake = installClient({
+      get_lesson: () => ({ data: payload() }),
+      submit_exercise: () => (down ? { error: { message: failure.message, code: failure.code }, status: failure.status } : { data: result() }),
+    });
+    const { result: hook } = renderRun();
+    await ready(hook);
+    await act(() => hook.current.api.submit(EX1, 0, { option_id: 'a' }, { confidence: null, responseMs: 10, hintCount: 0 }));
+    expect(hook.current.api.exerciseState(EX1, 0).status).toBe('pending_sync');
+    const [sent] = fake.callsOf('submit_exercise');
+    const [queued] = createOutbox(USER_ID).list();
+    expect(queued!.args.p_idempotency_key).toBe(sent!.p_idempotency_key);
+
+    down = false;
+    await act(async () => {
+      window.dispatchEvent(new Event('online'));
+    });
+    await waitFor(() => expect(hook.current.api.exerciseState(EX1, 0).status).toBe('graded'));
+    expect(new Set(fake.callsOf('submit_exercise').map((a) => a.p_idempotency_key))).toEqual(new Set([sent!.p_idempotency_key]));
   });
 
   it('queues straight to the outbox when the browser is offline', async () => {

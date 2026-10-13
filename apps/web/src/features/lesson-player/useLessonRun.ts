@@ -15,7 +15,7 @@ import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvide
 import { isNetworkError } from '@/lib/network-error';
 import { getSupabase, type AppSupabaseClient } from '@/lib/supabase';
 import { useOnline } from '@/lib/useOnline';
-import { lessonErrorMessage } from './error-map';
+import { isUnansweredError, lessonErrorMessage } from './error-map';
 import { createOutbox, type OutboxEntry } from './outbox';
 import { buildSteps, entryKey, exerciseStateFor, initialPlayerState, playerReducer, type EntryRef } from './playerMachine';
 import { completeLesson, getLesson, saveCursor, startLesson, submitExercise } from './service';
@@ -311,7 +311,8 @@ export function useLessonRun(lessonId: string): LessonRunApi {
           const result = await submitExercise(c, args);
           if (sameRun()) dispatch({ type: 'graded', ...ref, result });
         } catch (error) {
-          if (isNetworkError(error)) queueOffline();
+          // Timed out or failed on the server before grading: resend later under the same idempotency key.
+          if (isUnansweredError(error)) queueOffline();
           else fail(error);
         }
       } finally {

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import type { SubmitResult } from '@linguo/shared';
-import { isNetworkError } from '@/lib/network-error';
 import type { AppSupabaseClient } from '@/lib/supabase';
+import { isUnansweredError } from './error-map';
 import { createOutbox, OUTBOX_CHANGE_EVENT, outboxKey, type OutboxEntry } from './outbox';
 import { submitExercise } from './service';
 
@@ -11,10 +11,8 @@ const LOCK_NAME = 'linguo-outbox';
 const RETRYABLE_MESSAGES = new Set(['rate_limited', 'not_authenticated']);
 /** PostgREST JWT errors (expired/invalid token before the session refreshes). */
 const RETRYABLE_CODES = new Set(['PGRST301', 'PGRST303']);
-/** HTTP statuses where the server did not grade the answer: unauthorized, timeout, too many requests, 5xx. */
-function isRetryableStatus(status: number): boolean {
-  return status === 401 || status === 408 || status === 429 || status >= 500;
-}
+/** HTTP statuses (besides timeouts and 5xx) where the server did not grade the answer: unauthorized, too many requests. */
+const RETRYABLE_STATUSES = new Set([401, 429]);
 
 export type OutboxOutcome = { result: SubmitResult } | { error: unknown };
 export type OutboxResultHandler = (idempotencyKey: string, outcome: OutboxOutcome, entry: OutboxEntry) => void;
@@ -26,11 +24,11 @@ export interface OutboxSync {
 }
 
 function isRetryable(error: unknown): boolean {
-  if (isNetworkError(error)) return true;
+  if (isUnansweredError(error)) return true;
   if (!error || typeof error !== 'object') return false;
   if ('message' in error && typeof error.message === 'string' && RETRYABLE_MESSAGES.has(error.message)) return true;
   if ('code' in error && typeof error.code === 'string' && RETRYABLE_CODES.has(error.code)) return true;
-  return 'status' in error && typeof error.status === 'number' && isRetryableStatus(error.status);
+  return 'status' in error && typeof error.status === 'number' && RETRYABLE_STATUSES.has(error.status);
 }
 
 interface LockManagerLike {
