@@ -39,7 +39,7 @@ Một người dùng thật, trên điện thoại thật (iOS Safari / Android 
 | Đăng nhập | Email/mật khẩu (xác minh email, quên/đặt lại mật khẩu) + Google OAuth (nút tự ẩn nếu chưa cấu hình) |
 | Phong cách | **Glass Path** (mục 6) |
 | Logo | Script tách nền ca-rô của `logo.png` + vẽ mark SVG đơn giản cho favicon |
-| Package manager | pnpm workspaces, Node 22 LTS |
+| Package manager | pnpm 10 workspaces, Node 22 LTS |
 
 ## 4. Kiến trúc
 
@@ -60,7 +60,7 @@ Trình duyệt (iOS / Android / desktop)
 ```
 apps/web/
   index.html
-  public/icons/ (sinh bởi script), favicon.ico, manifest.webmanifest, media/hero-poster.webp
+  public/icons/, public/brand/ (sinh bởi script), favicon.ico, manifest.webmanifest
   src/
     app/        main.tsx, App.tsx, router.tsx, providers (AuthProvider, ThemeProvider, MotionProvider)
     routes/     landing/, auth/, app/ (home, learn, review, tutor, more, settings), errors/
@@ -69,7 +69,7 @@ apps/web/
     design/     tokens.css, motion.ts (EXPO_OUT, presets), fonts.css
     lib/        supabase.ts, env.ts, viewport.ts, cn.ts
   tests/        unit (Vitest), e2e (Playwright)
-  vite.config.ts, tailwind.config.ts, playwright.config.ts, package.json
+  vite.config.ts, playwright.config.ts, package.json (Tailwind v4 cấu hình bằng `@theme` trong CSS, không có tailwind.config)
 packages/shared/
   src/ database.types.ts (sinh tự động), schemas.ts (zod), constants.ts (LanguageCode, Skill, Theme)
 supabase/
@@ -98,11 +98,11 @@ Theme áp qua `data-theme="light|dark"` trên `<html>`; mặc định theo `pref
 | `--surface-solid` | `#121C29` | `#FFFFFF` |
 | `--text` | `#EEF3F8` | `#0F1C2B` |
 | `--muted` | `#9AA9B8` | `#5B6B7C` |
-| `--primary` | `#4CA2D1` | `#2F7FB5` |
-| `--primary-strong` | `#3380B6` | `#246A99` |
+| `--primary` | `#4CA2D1` | `#276FA0` (5.4:1 trên trắng) |
+| `--primary-strong` | `#3380B6` | `#1F5C86` |
 | `--accent` (CTA) | `#F37D25` | `#F37D25` nền / `#C2560F` chữ |
 | `--gold` (chỉ thành tích) | `#D9A13B` | `#B07D1E` |
-| `--success` / `--warn` / `--error` | `#2E9E6A` / `#C98A0B` / `#D2453B` | như bên tối |
+| `--success` / `--warn` / `--error` | `#3FB67F` / `#E0A526` / `#EF6A5F` | `#1F7A50` / `#C98A0B` / `#D2453B` |
 
 Quy tắc: màu trạng thái luôn kèm icon + chữ; văn bản dài đặt trên `--surface-solid`, không đặt trên kính mờ.
 
@@ -144,11 +144,11 @@ Mọi component tương tác: vùng chạm ≥44×44px, `:focus-visible` rõ (t�
 
 ### 7.1 Landing `/` (luôn theme tối)
 
-1. **Hero** (`min-height: 100svh`): video nền `muted autoplay loop playsinline preload="metadata"` + poster; gradient đáy tan vào `--bg`. Navbar: logo + "LexiPath" trượt từ trái; nút "Đăng nhập" + menu trượt từ phải. Tiêu đề Barlow Condensed: "HỌC THÔNG MINH" (trắng, từ trái) / "NHỚ LÂU HƠN" (xanh, căn phải, từ phải), delay 0 / 0.13s, 0.85s expo-out. Dòng phụ Be Vietnam Pro. `ArrowCTA` "Bắt đầu miễn phí" → `/dang-ky`.
-   - Video: biến `VITE_HERO_VIDEO_URL` (tùy chọn); trống hoặc bật Save-Data / reduced-motion → chỉ hiện poster (gradient + RouteLine tĩnh). Không dùng video của các mẫu tham khảo.
+1. **Hero** (`min-height: 100svh`): nền CSS/SVG (gradient xanh/cam + lưới mờ) đóng vai poster; video `muted autoplay loop playsinline preload="metadata"` mờ dần lên trên khi `canplay`; gradient đáy tan vào `--bg`. Navbar: logo + "LexiPath" trượt từ trái; nút "Đăng nhập" + menu trượt từ phải. Tiêu đề Barlow Condensed: "HỌC THÔNG MINH" (trắng, từ trái) / "NHỚ LÂU HƠN" (xanh, căn phải, từ phải), delay 0 / 0.13s, 0.85s expo-out. Dòng phụ Be Vietnam Pro. `ArrowCTA` "Bắt đầu miễn phí" → `/dang-ky`.
+   - Video: biến `VITE_HERO_VIDEO_URL` (tùy chọn); trống hoặc bật Save-Data / reduced-motion → chỉ hiện nền CSS/SVG. Không dùng video của các mẫu tham khảo.
 2. **Lộ trình**: tiêu đề "MỘT LỘ TRÌNH" + phụ đề; `RouteLine` hai nhánh trên nền gradient xanh→cam nhạt: EN (Nền tảng → A1 → B1 → C1) và KO (Hangul → TOPIK I → TOPIK II); điểm mốc pop-in; 3 icon nổi (sách, tai nghe, bong bóng chat) dao động y vô hạn 2.5–3.3s.
 3. **Phương pháp**: 3 `GlassCard` — Nhớ lại chủ động, Ôn tập ngắt quãng, Phản hồi có giải thích; blur-reveal lệch nhịp.
-4. **Con số sản phẩm**: `CountUp` + gradient-fade numerals — "2 ngôn ngữ", "7 kỹ năng theo dõi", "6 cấp TOPIK". Chỉ số mô tả sản phẩm; **không** số người dùng/kết quả giả.
+4. **Con số sản phẩm**: `CountUp` + gradient-fade numerals — "2 ngôn ngữ", "6 kỹ năng theo dõi" (từ vựng, ngữ pháp, đọc, nghe, viết, nói — PRD 5.3), "12 cấp độ mục tiêu" (CEFR A1–C2 + TOPIK 1–6). Chỉ số mô tả sản phẩm; **không** số người dùng/kết quả giả.
 5. **Trưng bày thiết bị** (chỉ ≥900px): khung iPhone CSS (tỉ lệ 393:852, Dynamic Island, home indicator) chứa ảnh chụp màn hình app; ẩn dưới 900px.
 6. **CTA cuối + footer**: "Bắt đầu lộ trình của bạn" + `ArrowCTA`; liên kết Quyền riêng tư, Điều khoản (`/quyen-rieng-tu`, `/dieu-khoan` — trang tạm ghi rõ "bản nháp"); © 2026 LexiPath.
 
@@ -253,13 +253,13 @@ Bước thủ công một lần (ghi trong `docs/DEPLOY.md`): tạo repo GitHub 
 
 - **Vitest** (`happy-dom`): `error-map`, `env` (phát hiện thiếu cấu hình), `ThemeProvider` (system/light/dark), `MotionProvider` (gộp reduced-motion), `RequireAuth` (chuyển hướng + `next` an toàn), form đăng nhập/đăng ký (validate, khóa submit), service preferences (mock supabase).
 - **pgTAP**: mục 8.
-- **Playwright** (mọi project ở mục 11): landing không cuộn ngang (`scrollWidth <= innerWidth`); BottomNav nằm trên safe area; font-size input ≥16px; vùng chạm ≥44px trên các nút chính; route guard; ảnh chụp so sánh landing + đăng nhập + app home ở light/dark; `@axe-core/playwright` không có vi phạm mức serious/critical. Test e2e không gọi Supabase thật: build e2e dùng `VITE_SUPABASE_URL=https://e2e.invalid` + key giả dạng `sb_publishable_e2e`, và mọi request tới host đó được mock bằng `page.route`.
+- **Playwright** (mọi project ở mục 11): landing không cuộn ngang (`scrollWidth <= innerWidth`); BottomNav nằm trên safe area; font-size input ≥16px; vùng chạm ≥44px trên các nút chính; route guard; ảnh chụp landing + đăng nhập + app home ở light/dark đính kèm vào báo cáo Playwright để xem bằng mắt (không so pixel tự động vì baseline Windows/Linux khác nhau); `@axe-core/playwright` không có vi phạm mức serious/critical. Test e2e không gọi Supabase thật: build e2e dùng `VITE_SUPABASE_URL=https://e2e.invalid` + key giả dạng `sb_publishable_e2e`, và mọi request tới host đó được mock bằng `page.route`.
 - **Kiểm tra tay** (`docs/MOBILE-QA.md`): iOS Safari thật, Android Chrome thật, Samsung Internet; bàn phím mở/đóng; xoay màn hình; VoiceOver/TalkBack; phóng chữ 200%; bật reduced-motion.
 
 ## 14. Tiêu chí hoàn thành
 
 1. Push lên `main` → CI xanh → (duyệt) migration → GitHub Pages cập nhật, không thao tác tay.
 2. Trên điện thoại thật: đăng ký email → xác minh → đăng nhập (hoặc Google nếu đã cấu hình) → sửa tên hiển thị + theme → tải lại vẫn giữ.
-3. pgTAP RLS A/B pass; bundle không chứa secret (`check-public-env --strict` + grep bundle trong CI không thấy `sb_secret_`/`service_role`).
+3. pgTAP RLS A/B pass; bundle không chứa secret (`check-public-env --strict` + grep bundle trong CI không thấy `sb_secret_`).
 4. CI xanh cho lint, typecheck, Vitest, Playwright mobile, database.
 5. `.env.example`, `docs/SETUP.md`, `docs/DEPLOY.md`, `docs/MOBILE-QA.md`, `README.md` đầy đủ và khớp với workflow.
