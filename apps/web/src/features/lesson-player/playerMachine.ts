@@ -194,3 +194,16 @@ export function exerciseStateFor(state: PlayerState, exerciseId: string, queueIn
   if (lastResult) return { status: 'graded', attempts: own.length, lastResult };
   return { status: 'idle', attempts: 0, lastResult: null };
 }
+
+/**
+ * Indexes of the exercise steps that still lack a final result (complete_lesson would answer `attempts_incomplete`).
+ * Entries submitting or waiting in the outbox are not listed: they block completion on their own.
+ */
+export function unresolvedSteps(state: PlayerState): number[] {
+  return state.steps.flatMap((step, index) => {
+    if (step.kind !== 'exercise') return [];
+    const { status, lastResult } = exerciseStateFor(state, step.exerciseId, step.queueIndex);
+    if (status === 'submitting' || status === 'pending_sync' || lastResult?.final) return [];
+    return [index];
+  });
+}

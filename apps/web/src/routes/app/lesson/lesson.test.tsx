@@ -153,6 +153,19 @@ describe('LessonPage', () => {
     expect(screen.getByRole('button', { name: 'Tiếp tục' })).toBeDisabled();
   });
 
+  it('summary lists unanswered exercises and jumps back to one with "Làm tiếp"', async () => {
+    const steps = [...makeRun().steps.slice(0, 6), { kind: 'exercise' as const, exerciseId: EX1, stage: 'recognition' as const, recheck: true, queueIndex: 2 }, ...makeRun().steps.slice(6)];
+    const run = makeRun({ steps, stepIndex: 7, canComplete: false, unresolved: [5, 6] });
+    renderLesson(run);
+    expect(screen.getByRole('heading', { level: 1, name: 'Tóm tắt' })).toBeInTheDocument();
+    expect(screen.getByText('Còn 2 câu chưa có kết quả. Làm xong để hoàn thành bài học.')).toBeInTheDocument();
+    const list = screen.getByRole('list', { name: 'Câu chưa có kết quả' });
+    expect(within(list).getAllByRole('listitem').map((li) => li.firstChild?.textContent)).toEqual(['Câu 2', 'Câu 3 (làm lại)']);
+    await userEvent.click(within(list).getByRole('button', { name: 'Làm tiếp Câu 3 (làm lại)' }));
+    expect(run.goTo).toHaveBeenCalledWith(6);
+    expect(run.complete).not.toHaveBeenCalled();
+  });
+
   it('summary completes the lesson once on enter', async () => {
     const run = makeRun({ stepIndex: 6 });
     renderLesson(run);

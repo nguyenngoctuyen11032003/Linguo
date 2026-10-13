@@ -10,16 +10,25 @@ const STAGE_LABELS = [
   ['application', 'Vận dụng'],
 ] as const;
 
+/** An exercise step without a final result, labelled for the learner ("Câu 3"). */
+export interface UnresolvedStep {
+  stepIndex: number;
+  label: string;
+}
+
 interface Props {
   blocks: LessonBlock[];
   result: CompleteResult | null;
   canComplete: boolean;
   pendingCount: number;
+  unresolved: UnresolvedStep[];
   onComplete: () => Promise<CompleteResult | null>;
+  /** Jumps back to an unresolved exercise. */
+  onResume: (stepIndex: number) => void;
 }
 
 /** Summary points and run stats; completes the lesson on enter once every attempt is synced. */
-export function StepSummary({ blocks, result, canComplete, pendingCount, onComplete }: Props) {
+export function StepSummary({ blocks, result, canComplete, pendingCount, unresolved, onComplete, onResume }: Props) {
   const points = blocks.flatMap((b) => (b.type === 'summary' ? b.points.map((p) => p.vi) : []));
   const [completing, setCompleting] = useState(false);
   const [failed, setFailed] = useState(false);
@@ -87,9 +96,27 @@ export function StepSummary({ blocks, result, canComplete, pendingCount, onCompl
           {result.almost_count > 0 && <p className="text-[15px]">{result.almost_count} câu gần đúng</p>}
         </section>
       ) : !canComplete ? (
-        <p role="status" className="rounded-2xl bg-warn/15 px-4 py-3 text-[15px]">
-          {pendingCount > 0 ? `Còn ${pendingCount} câu đang chờ đồng bộ` : 'Chưa thể hoàn thành bài học.'}
-        </p>
+        <div className="space-y-3">
+          <p role="status" className="rounded-2xl bg-warn/15 px-4 py-3 text-[15px]">
+            {pendingCount > 0
+              ? `Còn ${pendingCount} câu đang chờ đồng bộ`
+              : unresolved.length > 0
+                ? `Còn ${unresolved.length} câu chưa có kết quả. Làm xong để hoàn thành bài học.`
+                : 'Chưa thể hoàn thành bài học.'}
+          </p>
+          {unresolved.length > 0 && (
+            <ul aria-label="Câu chưa có kết quả" className="divide-y divide-border rounded-2xl border border-border bg-surface-solid">
+              {unresolved.map(({ stepIndex, label }) => (
+                <li key={stepIndex} className="flex items-center justify-between gap-3 px-4 py-2">
+                  <span className="font-medium">{label}</span>
+                  <Button variant="ghost" aria-label={`Làm tiếp ${label}`} onClick={() => onResume(stepIndex)}>
+                    Làm tiếp
+                  </Button>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       ) : failed ? (
         <div role="alert" className="space-y-3">
           <p className="text-[15px]">Chưa lưu được kết quả bài học.</p>

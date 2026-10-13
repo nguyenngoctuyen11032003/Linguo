@@ -17,7 +17,15 @@ import { getSupabase, type AppSupabaseClient } from '@/lib/supabase';
 import { useOnline } from '@/lib/useOnline';
 import { isUnansweredError, lessonErrorMessage } from './error-map';
 import { createOutbox, type OutboxEntry } from './outbox';
-import { buildSteps, entryKey, exerciseStateFor, initialPlayerState, playerReducer, type EntryRef } from './playerMachine';
+import {
+  buildSteps,
+  entryKey,
+  exerciseStateFor,
+  initialPlayerState,
+  playerReducer,
+  unresolvedSteps,
+  type EntryRef,
+} from './playerMachine';
 import { completeLesson, getLesson, saveCursor, startLesson, submitExercise } from './service';
 import type { ExerciseUiState, LessonRunApi, LessonStep, SubmitMeta } from './types';
 import { useOutboxSync, type OutboxOutcome } from './useOutboxSync';
@@ -28,6 +36,7 @@ const STEP_PARAM = 'buoc';
 const NO_ITEMS: LessonItem[] = [];
 const NO_EXERCISES: Record<string, PublicExercise> = {};
 const NO_STEPS: LessonStep[] = [];
+const NO_INDEXES: number[] = [];
 
 /** Scoped per user and path: a run belongs to one learning path, so another path must never reuse it offline. */
 export function lessonCacheKey(userId: string, pathId: string, lessonId: string): string {
@@ -325,7 +334,9 @@ export function useLessonRun(lessonId: string): LessonRunApi {
 
   // ---- completion ----------------------------------------------------------------------------------------
   const inFlight = Object.keys(state.local).length > 0;
-  const canComplete = ready && !!state.run && pendingCount === 0 && !inFlight;
+  // complete_lesson refuses a run with an unanswered queue entry; checking here keeps the summary from waiting forever.
+  const unresolved = useMemo(() => (ready ? unresolvedSteps(state) : NO_INDEXES), [ready, state]);
+  const canComplete = ready && !!state.run && pendingCount === 0 && !inFlight && unresolved.length === 0;
   const canCompleteRef = useRef(canComplete);
   useLayoutEffect(() => {
     canCompleteRef.current = canComplete;
@@ -376,6 +387,7 @@ export function useLessonRun(lessonId: string): LessonRunApi {
     exerciseState,
     submit,
     pendingCount,
+    unresolved,
     canComplete,
     complete,
     completeResult: state.completeResult,

@@ -45,6 +45,8 @@ export interface LessonRunApi {
   submit: (exerciseId: string, queueIndex: number, response: ExerciseResponse, meta: SubmitMeta) => Promise<void>;
   /** Attempts waiting in the offline outbox for this user. */
   pendingCount: number;
+  /** Step indexes of exercises that still need an answer; the lesson cannot be completed until this is empty. */
+  unresolved: number[];
   canComplete: boolean;
   complete: () => Promise<CompleteResult | null>;
   completeResult: CompleteResult | null;

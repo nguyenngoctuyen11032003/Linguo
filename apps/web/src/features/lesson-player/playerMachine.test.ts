@@ -1,7 +1,15 @@
 import type { LessonPayload } from '@linguo/shared';
 import { describe, expect, it } from 'vitest';
 import { EX1, EX2, attempt, payload, result, run } from './lesson-fixtures';
-import { attemptsFor, buildSteps, exerciseStateFor, initialPlayerState, playerReducer, type PlayerState } from './playerMachine';
+import {
+  attemptsFor,
+  buildSteps,
+  exerciseStateFor,
+  initialPlayerState,
+  playerReducer,
+  unresolvedSteps,
+  type PlayerState,
+} from './playerMachine';
 
 const COMPLETE = {
   accuracy_by_stage: { recognition: 1, recall: null, application: null },
@@ -169,5 +177,23 @@ describe('exerciseStateFor', () => {
     state = playerReducer(state, { type: 'graded', exerciseId: EX1, queueIndex: 2, result: result() });
     expect(exerciseStateFor(state, EX1, 2)).toMatchObject({ status: 'graded', attempts: 1 });
     expect(exerciseStateFor(state, EX1, 0).attempts).toBe(1);
+  });
+});
+
+describe('unresolvedSteps', () => {
+  it('lists exercise steps without a final result, skipping entries in flight', () => {
+    const wrong = attempt(EX2, { verdict: 'incorrect', is_correct: false, score: 0, final: false });
+    let state = loaded({ attempts: [wrong] });
+    expect(unresolvedSteps(state)).toEqual([4, 5]);
+    state = playerReducer(state, { type: 'pending', exerciseId: EX1, queueIndex: 0 });
+    expect(unresolvedSteps(state)).toEqual([5]);
+    state = playerReducer(state, { type: 'graded', exerciseId: EX2, queueIndex: 1, result: result() });
+    expect(unresolvedSteps(state)).toEqual([]);
+  });
+
+  it('keeps a re-check entry unresolved until it has its own final attempt', () => {
+    const revealed = attempt(EX1, { verdict: 'incorrect', is_correct: false, score: 0, revealed: true, final: true, requeued: true });
+    const state = loaded({ run: run({ queue: [EX1, EX2, EX1] }), attempts: [revealed, attempt(EX2)] });
+    expect(unresolvedSteps(state)).toEqual([6]);
   });
 });

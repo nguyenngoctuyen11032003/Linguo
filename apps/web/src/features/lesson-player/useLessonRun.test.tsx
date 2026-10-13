@@ -169,6 +169,29 @@ describe('useLessonRun', () => {
     expect(args!.p_idempotency_key).toMatch(/^[0-9a-f-]{36}$/);
     expect(Number.isNaN(Date.parse(String(args!.p_client_at)))).toBe(false);
     expect(hook.current.api.exerciseState(EX2, 1)).toEqual({ status: 'graded', attempts: 1, lastResult: graded });
+    // EX1 (step index 4) has no answer yet.
+    expect(hook.current.api.unresolved).toEqual([4]);
+    expect(hook.current.api.canComplete).toBe(false);
+  });
+
+  it('only allows completing once every queue entry has a final result', async () => {
+    const fake = installClient({
+      get_lesson: () => ({
+        data: payload({ attempts: [attempt(EX1), attempt(EX2, { verdict: 'incorrect', is_correct: false, score: 0, final: false })] }),
+      }),
+      submit_exercise: () => ({ data: result() }),
+      complete_lesson: () => ({ data: null }),
+    });
+    const { result: hook } = renderRun();
+    await ready(hook);
+    expect(hook.current.api.unresolved).toEqual([5]);
+    expect(hook.current.api.pendingCount).toBe(0);
+    expect(hook.current.api.canComplete).toBe(false);
+    expect(await act(() => hook.current.api.complete())).toBeNull();
+    expect(fake.callsOf('complete_lesson')).toEqual([]);
+
+    await act(() => hook.current.api.submit(EX2, 1, { option_id: 'a' }, { confidence: 2, responseMs: 10, hintCount: 0 }));
+    expect(hook.current.api.unresolved).toEqual([]);
     expect(hook.current.api.canComplete).toBe(true);
   });
 
@@ -225,7 +248,9 @@ describe('useLessonRun', () => {
       queued!.args.p_idempotency_key,
     ]);
     expect(hook.current.api.pendingCount).toBe(0);
-    expect(hook.current.api.canComplete).toBe(true);
+    // Synced, but EX2 is still unanswered.
+    expect(hook.current.api.unresolved).toEqual([5]);
+    expect(hook.current.api.canComplete).toBe(false);
   });
 
   it.each([
@@ -366,7 +391,7 @@ describe('useLessonRun', () => {
       next_review_at: '2026-10-14T00:00:00+07:00',
       completed_at: '2026-10-13T08:00:00Z',
     };
-    const fake = installClient({ get_lesson: () => ({ data: payload() }), complete_lesson: () => ({ data: done }) });
+    const fake = installClient({ get_lesson: () => ({ data: payload({ attempts: [attempt(EX1), attempt(EX2)] }) }), complete_lesson: () => ({ data: done }) });
     const { result: hook } = renderRun();
     await ready(hook);
     let returned: unknown;

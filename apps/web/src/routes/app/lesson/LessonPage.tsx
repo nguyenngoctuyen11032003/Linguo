@@ -38,6 +38,12 @@ function stepTitle(run: LessonRunApi, step: LessonStep): string {
   return CONTENT_TITLES[step.kind];
 }
 
+function questionLabel(steps: LessonStep[], index: number): string {
+  const step = steps[index];
+  const label = `Câu ${questionPosition(steps, index).current}`;
+  return step?.kind === 'exercise' && step.recheck ? `${label} (làm lại)` : label;
+}
+
 /** Full-screen lesson player at /app/hoc-tap/bai/:lessonId (outside AppLayout, like onboarding). */
 export function LessonPage() {
   const { lessonId = '' } = useParams();
@@ -185,7 +191,9 @@ export function LessonPage() {
           result={run.completeResult}
           canComplete={run.canComplete}
           pendingCount={run.pendingCount}
+          unresolved={run.unresolved.map((index) => ({ stepIndex: index, label: questionLabel(run.steps, index) }))}
           onComplete={run.complete}
+          onResume={run.goTo}
         />
       );
       footer = (
