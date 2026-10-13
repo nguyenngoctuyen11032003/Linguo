@@ -1,0 +1,75 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+key: en:lesson:hello
+order_index: 0
+level: pre_a1
+title: { vi: Xin chào }
+objectives:
+  - { vi: Chào hỏi bằng tiếng Anh. }
+estimated_minutes: 5
+skills: [vocabulary]
+items:
+  - { item: en:item:hello }
+  - { item: en:item:student }
+body:
+  - type: objective
+    text: { vi: Bạn sẽ chào hỏi được. }
+  - type: explain
+    text: { vi: "Dùng \"hello\" để chào." }
+  - type: example
+    target: Hello!
+    target_lang: en
+    translation: { vi: Xin chào! }
+  - type: common_mistake
+    wrong: I student.
+    right: I am a student.
+    target_lang: en
+    note: { vi: Tiếng Anh cần động từ "be". }
+  - type: summary
+    points:
+      - { vi: "\"Hello\" nghĩa là xin chào." }
+exercises:
+  - key: en:ex:hello-mcq
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    item: en:item:hello
+    prompt:
+      stem: hello
+      stem_lang: en
+      options:
+        - { id: a, text: xin chào, lang: vi }
+        - { id: b, text: tạm biệt, lang: vi }
+    answer: { correct_option_id: a }
+    explanation: { vi: "\"Hello\" là lời chào." }
+    display_answer: xin chào
+  - key: en:ex:hello-blank
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    prompt:
+      template: "I {{b1}} a student."
+      blanks: [{ id: b1 }]
+    answer:
+      blanks: { b1: [am] }
+    known_wrong:
+      - { answer: is, feedback_vi: Với "I" dùng "am"., error_tag: be_agreement }
+    explanation: { vi: Với "I" dùng "am". }
+    display_answer: I am a student.
+  - key: en:ex:hello-translate
+    type: translate
+    stage: application
+    answer_lang: en
+    prompt:
+      source_text: Tôi là học sinh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted: [I am a student., I'm a student., I am a pupil.]
+    rubric: { typo_tolerance: 1 }
+    known_wrong:
+      - { answer: I student., feedback_vi: Thiếu động từ "am"., error_tag: missing_be }
+    explanation: { vi: Câu cần "am" và mạo từ "a". }
+    display_answer: I am a student.

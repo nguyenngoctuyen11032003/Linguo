@@ -1,0 +1,75 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+key: en:lesson:i-am
+order_index: 1
+level: a1
+title: { vi: Tôi là… }
+objectives:
+  - { vi: Giới thiệu bản thân. }
+estimated_minutes: 8
+skills: [grammar, listening]
+prerequisites: [en:lesson:hello]
+items:
+  - { item: en:item:hello, role: reuse }
+body:
+  - type: objective
+    text: { vi: Bạn sẽ nói được "Tôi là…". }
+  - type: explain
+    text: { vi: "I am + danh từ." }
+  - type: example
+    target: I am Lan.
+    target_lang: en
+    translation: { vi: Tôi là Lan. }
+  - type: common_mistake
+    wrong: I is Lan.
+    right: I am Lan.
+    target_lang: en
+    note: { vi: Với "I" luôn dùng "am". }
+  - type: summary
+    points:
+      - { vi: I am … }
+exercises:
+  - key: en:ex:i-am-listen
+    type: listen
+    stage: recognition
+    answer_lang: en
+    prompt:
+      audio_asset_id: null
+      fallback_text: I am Lan.
+      options:
+        - { id: a, text: I am Lan., lang: en }
+        - { id: b, text: I is Lan., lang: en }
+        - { id: c, text: Lan am I., lang: en }
+    answer: { correct_option_id: a }
+    explanation: { vi: Câu đúng là "I am Lan". }
+    display_answer: I am Lan.
+  - key: en:ex:i-am-translate
+    type: translate
+    stage: recall
+    answer_lang: vi
+    prompt:
+      source_text: I am Lan.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted: [Tôi là Lan., Mình là Lan., Tớ là Lan.]
+    rubric: { diacritics: lenient }
+    explanation: { vi: '"I am" = "Tôi là".' }
+    display_answer: Tôi là Lan.
+  - key: en:ex:i-am-order
+    type: word_bank
+    stage: application
+    answer_lang: en
+    prompt:
+      instruction: Sắp xếp thành câu "Tôi là Lan."
+      tokens:
+        - { id: t1, text: I }
+        - { id: t2, text: am }
+        - { id: t3, text: Lan }
+        - { id: t4, text: is }
+    answer:
+      orders: [[t1, t2, t3]]
+    explanation: { vi: Chủ ngữ + am + tên. }
+    display_answer: I am Lan.

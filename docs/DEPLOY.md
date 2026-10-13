@@ -4,7 +4,7 @@ Không có server riêng. CI/CD chạy trên GitHub; Auth/Database là Supabase 
 
 ```text
 Pull Request ──► CI (.github/workflows/ci.yml)
-                  ├─ web:      check-public-env → lint → typecheck → unit tests → build
+                  ├─ web:      check-public-env → lint → content:check → content:build --check → typecheck → unit tests → build
                   ├─ e2e:      Playwright trên iPhone SE/15 Pro/15 Pro Max/landscape, Pixel 7, Galaxy S9+
                   └─ database: Supabase local (Docker) → áp mọi migration → db lint → pgTAP (RLS) → kiểm types
 
@@ -44,6 +44,16 @@ push main ─────► Deploy (.github/workflows/deploy.yml)
    - Một lần push đổi cả migration lẫn Edge Functions sẽ hỏi duyệt **hai lần** (job `migrate` rồi job `functions`, cùng environment `production`).
    - Job `changes` so sánh với commit của lần Deploy **thành công** gần nhất trên `main` (không phải commit trước của lần push), nên migration trong một lần push thất bại/bị thay thế vẫn được áp ở lần sau.
 3. Site: `https://nguyenngoctuyen11032003.github.io/Linguo/`.
+
+## Xuất bản nội dung
+Nội dung bài học nằm trong `content/**/*.yaml`. Deploy **không** tự nhập nội dung vào database hosted; việc này chạy tay qua workflow riêng.
+
+1. Sửa YAML → `pnpm content:check` (kiểm tra schema, khoá, bài tiên quyết, đáp án chấm đúng/sai) → `pnpm content:build` (ghi lại `supabase/seed.sql`, dùng cho Supabase local và CI) → commit cả hai. CI fail nếu `seed.sql` lệch với `content/`.
+2. Merge vào `main` (migration nội dung, nếu có, phải được Deploy áp trước).
+3. Actions → **Publish content** → **Run workflow**, rồi **Approve** environment `production`. Job chạy `pnpm content:check` rồi `pnpm content:push`: gửi SQL `content_private.import_bundle(...)` qua Supabase Management API (`POST /v1/projects/{ref}/database/query`) và in kết quả `{inserted, updated, archived, unchanged}`. Nhập lại cùng nội dung không đổi gì; dòng vắng mặt khỏi `content/` bị chuyển `archived` (không xoá).
+   - Dùng lại secret `SUPABASE_ACCESS_TOKEN` (environment `production`) và variable `SUPABASE_PROJECT_ID` ở trên; không cần secret mới.
+4. Chạy `pnpm content:push` từ máy local chỉ khi thật cần: phải đặt **cả hai** biến môi trường `SUPABASE_ACCESS_TOKEN` và `SUPABASE_PROJECT_ID` trong shell (script từ chối chạy nếu thiếu).
+5. **Không bao giờ** đặt token/khoá server vào biến `VITE_*` (chúng bị đóng gói vào JavaScript công khai). `scripts/check-public-env.mjs` chặn mọi biến `VITE_*` có tên chứa `SERVICE_ROLE`, `GEMINI`, `SECRET`, `ACCESS_TOKEN`…
 
 ## Xử lý sự cố
 | Triệu chứng | Cách xử lý |
