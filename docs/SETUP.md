@@ -82,3 +82,7 @@ MSYS_NO_PATHCONV=1 VITE_BASE_PATH=/Linguo/ pnpm build
 | Database password | GitHub → Environment `production` → Secrets |
 | Google OAuth Client ID/Secret (tuỳ chọn) | Supabase Dashboard |
 | Gemini API key (spec sau) | `supabase secrets set` |
+
+## Bảng giờ tham chiếu (ước lượng thời gian)
+
+Ước lượng thời gian của lộ trình dựa trên bảng `public.level_reference_hours` (giờ học cộng dồn mỗi bậc). Giá trị hiện tại là **tham khảo, chưa kiểm duyệt** (`reviewed = false`) và UI luôn ghi rõ điều đó. Muốn chỉnh số giờ: tạo migration mới cập nhật bảng, sửa `packages/shared/src/learning/estimate.fixtures.json` nếu ca kiểm thử bị ảnh hưởng, chạy `pnpm fixtures:sync` và commit cả hai.

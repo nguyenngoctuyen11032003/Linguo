@@ -5,19 +5,85 @@ export type Database = {
   
   "public": {
           Tables: {
-            "profiles": {
+            "learning_paths": {
                   Row: {
-                    "created_at": string,"display_name": string | null,"id": string,"locale": string,"timezone": string,"updated_at": string
+                    "created_at": string,"current_level": string,"estimate": NonNullable<Json>,"goal_type": string,"id": string,"language_code": string,"start_point": string,"status": string,"target_date": string | null,"target_level": string,"updated_at": string,"user_id": string,"weekly_minutes": (number)[]
                   }
                   ComputedFields: never
                   Insert: {
-                    "created_at"?: string,"display_name"?: string | null,"id": string,"locale"?: string,"timezone"?: string,"updated_at"?: string
+                    "created_at"?: string,"current_level": string,"estimate": NonNullable<Json>,"goal_type": string,"id"?: string,"language_code": string,"start_point": string,"status"?: string,"target_date"?: string | null,"target_level": string,"updated_at"?: string,"user_id": string,"weekly_minutes": (number)[]
                   }
                   Update: {
-                    "created_at"?: string,"display_name"?: string | null,"id"?: string,"locale"?: string,"timezone"?: string,"updated_at"?: string
+                    "created_at"?: string,"current_level"?: string,"estimate"?: NonNullable<Json>,"goal_type"?: string,"id"?: string,"language_code"?: string,"start_point"?: string,"status"?: string,"target_date"?: string | null,"target_level"?: string,"updated_at"?: string,"user_id"?: string,"weekly_minutes"?: (number)[]
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "learning_paths_current_level_fk"
+      columns: ["language_code","current_level"]
+isOneToOne: false
+      referencedRelation: "level_reference_hours"
+      referencedColumns: ["language_code","level_code"]
+    },{
+      foreignKeyName: "learning_paths_target_level_fk"
+      columns: ["language_code","target_level"]
+isOneToOne: false
+      referencedRelation: "level_reference_hours"
+      referencedColumns: ["language_code","level_code"]
+    }
+                  ]
+                },"level_reference_hours": {
+                  Row: {
+                    "cumulative_hours": number,"language_code": string,"level_code": string,"ordinal": number,"reviewed": boolean,"source": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "cumulative_hours": number,"language_code": string,"level_code": string,"ordinal": number,"reviewed"?: boolean,"source": string
+                  }
+                  Update: {
+                    "cumulative_hours"?: number,"language_code"?: string,"level_code"?: string,"ordinal"?: number,"reviewed"?: boolean,"source"?: string
                   }
                   Relationships: [
                     
+                  ]
+                },"profiles": {
+                  Row: {
+                    "created_at": string,"current_learning_path_id": string | null,"display_name": string | null,"id": string,"locale": string,"timezone": string,"updated_at": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "created_at"?: string,"current_learning_path_id"?: string | null,"display_name"?: string | null,"id": string,"locale"?: string,"timezone"?: string,"updated_at"?: string
+                  }
+                  Update: {
+                    "created_at"?: string,"current_learning_path_id"?: string | null,"display_name"?: string | null,"id"?: string,"locale"?: string,"timezone"?: string,"updated_at"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "profiles_current_learning_path_id_fkey"
+      columns: ["current_learning_path_id"]
+isOneToOne: false
+      referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"skill_estimates": {
+                  Row: {
+                    "assessed_at": string,"confidence": string,"id": string,"learning_path_id": string,"level_code": string,"sample_size": number,"skill": string,"source": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "assessed_at"?: string,"confidence": string,"id"?: string,"learning_path_id": string,"level_code": string,"sample_size"?: number,"skill": string,"source": string
+                  }
+                  Update: {
+                    "assessed_at"?: string,"confidence"?: string,"id"?: string,"learning_path_id"?: string,"level_code"?: string,"sample_size"?: number,"skill"?: string,"source"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "skill_estimates_learning_path_id_fkey"
+      columns: ["learning_path_id"]
+isOneToOne: false
+      referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    }
                   ]
                 },"user_preferences": {
                   Row: {
@@ -39,7 +105,84 @@ export type Database = {
             [_ in never]: never
           }
           Functions: {
-            [_ in never]: never
+            "create_learning_path":
+{ Args: { "p_current_level": string,"p_goal_type": string,"p_language": string,"p_start_point": string,"p_target_date"?: string,"p_target_level": string,"p_weekly_minutes": (number)[] }; Returns: {
+              "created_at": string,
+"current_level": string,
+"estimate": NonNullable<Json>,
+"goal_type": string,
+"id": string,
+"language_code": string,
+"start_point": string,
+"status": string,
+"target_date": string | null,
+"target_level": string,
+"updated_at": string,
+"user_id": string,
+"weekly_minutes": (number)[]
+            }
+                          SetofOptions: {
+        from: "*"
+        to: "learning_paths"
+        isOneToOne: true
+        isSetofReturn: false
+      } },
+"estimate_learning_path":
+{ Args: { "p_current_level": string,"p_language": string,"p_target_date": string,"p_target_level": string,"p_today": string,"p_weekly_minutes": (number)[] }; Returns: Json
+                           },
+"learning_path_validate":
+{ Args: { "p_current_level": string,"p_goal_type": string,"p_language": string,"p_target_date": string,"p_target_level": string,"p_today": string,"p_weekly_minutes": (number)[] }; Returns: undefined
+                           },
+"learning_user_today":
+{ Args: { "p_user": string }; Returns: string
+                           },
+"set_current_learning_path":
+{ Args: { "p_id": string }; Returns: undefined
+                           },
+"set_learning_path_status":
+{ Args: { "p_id": string,"p_status": string }; Returns: {
+              "created_at": string,
+"current_level": string,
+"estimate": NonNullable<Json>,
+"goal_type": string,
+"id": string,
+"language_code": string,
+"start_point": string,
+"status": string,
+"target_date": string | null,
+"target_level": string,
+"updated_at": string,
+"user_id": string,
+"weekly_minutes": (number)[]
+            }
+                          SetofOptions: {
+        from: "*"
+        to: "learning_paths"
+        isOneToOne: true
+        isSetofReturn: false
+      } },
+"update_learning_path_plan":
+{ Args: { "p_goal_type": string,"p_id": string,"p_target_date"?: string,"p_target_level": string,"p_weekly_minutes": (number)[] }; Returns: {
+              "created_at": string,
+"current_level": string,
+"estimate": NonNullable<Json>,
+"goal_type": string,
+"id": string,
+"language_code": string,
+"start_point": string,
+"status": string,
+"target_date": string | null,
+"target_level": string,
+"updated_at": string,
+"user_id": string,
+"weekly_minutes": (number)[]
+            }
+                          SetofOptions: {
+        from: "*"
+        to: "learning_paths"
+        isOneToOne: true
+        isSetofReturn: false
+      } }
           }
           Enums: {
             [_ in never]: never
