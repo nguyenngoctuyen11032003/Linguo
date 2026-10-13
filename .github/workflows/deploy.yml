@@ -32,6 +32,10 @@ jobs:
   changes:
     name: Detect migration / function changes
     runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: read # gh run list
     outputs:
       migrations: ${{ steps.diff.outputs.migrations }}
       functions: ${{ steps.diff.outputs.functions }}
@@ -44,9 +48,13 @@ jobs:
           EVENT: ${{ github.event_name }}
           FORCE: ${{ inputs.migrate }}
           FORCE_FUNCTIONS: ${{ inputs.functions }}
-          BEFORE: ${{ github.event.before }}
           AFTER: ${{ github.sha }}
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
         run: |
+          # Diff against the head SHA of the last SUCCESSFUL Deploy run on main (not
+          # github.event.before), so a migration from a failed or superseded push is not skipped.
+          BEFORE=$(gh run list --workflow deploy.yml --branch main --status success --limit 1 --json headSha -q '.[0].headSha' || true)
           changed() {
             if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] \
                || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
@@ -138,7 +146,7 @@ jobs:
       VITE_SITE_URL: ${{ vars.VITE_SITE_URL }}
       VITE_AUTH_GOOGLE_ENABLED: ${{ vars.VITE_AUTH_GOOGLE_ENABLED }}
       VITE_HERO_VIDEO_URL: ${{ vars.VITE_HERO_VIDEO_URL }}
-      VITE_BASE_PATH: /${{ github.event.repository.name }}/
+      VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || format('/{0}/', github.event.repository.name) }}
     steps:
       - uses: actions/checkout@v7
       - uses: pnpm/action-setup@v4
@@ -164,6 +172,7 @@ jobs:
     needs: build
     if: always() && needs.build.result == 'success'
     runs-on: ubuntu-24.04
+    timeout-minutes: 10
     permissions:
       pages: write
       id-token: write
