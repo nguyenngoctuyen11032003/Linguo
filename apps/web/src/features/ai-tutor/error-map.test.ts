@@ -24,6 +24,12 @@ describe('aiErrorMessage', () => {
     expect(aiErrorMessage(aiError('quota_exceeded'))).toBe('Bạn đã dùng hết lượt hỏi AI hôm nay. Lượt mới sẽ có vào ngày mai.');
   });
 
+  it('treats quota_exceeded with only a retry delay as the per-IP burst limit', () => {
+    expect(aiErrorMessage(aiError('quota_exceeded', { retry_after_sec: 42 }))).toBe(
+      'Bạn đang gửi quá nhiều yêu cầu. Thử lại sau khoảng 42 giây.',
+    );
+  });
+
   it('mentions the retry delay of an open breaker', () => {
     expect(aiErrorMessage(aiError('ai_unavailable', { retry_after_sec: 30 }))).toMatch(/Thử lại sau khoảng 30 giây\.$/);
     expect(aiErrorMessage(aiError('ai_unavailable', { retry_after_sec: 90 }))).toMatch(/Thử lại sau khoảng 2 phút\.$/);

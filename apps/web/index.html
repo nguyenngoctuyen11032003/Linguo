@@ -26,12 +26,8 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap"
     />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
-      media="print"
-      onload="this.media='all'"
-    />
+    <!-- Pretendard (Korean) loads without blocking render: appended by the inline script below, since the
+         CSP (injected at build, apps/web/build/csp.ts) allows no inline event handlers such as onload. -->
     <noscript>
       <link
         rel="stylesheet"
@@ -47,6 +43,10 @@
           document.documentElement.dataset.theme = dark ? 'dark' : 'light';
           if (localStorage.getItem('linguo-reduce-motion') === 'true') document.documentElement.dataset.reduceMotion = 'true';
         } catch (e) {}
+        var font = document.createElement('link');
+        font.rel = 'stylesheet';
+        font.href = 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css';
+        document.head.appendChild(font);
       })();
     </script>
   </head>

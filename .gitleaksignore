@@ -1,0 +1,10 @@
+# Reviewed gitleaks false positives (commit:file:rule:line), one finding per line.
+# Each is a fake test fixture, never a real key: a dummy publishable key, a dummy secret key and a fixed
+# test UUID. Add a line here only after reviewing the finding; rotate anything real instead (docs/RUNBOOK.md).
+# Do not quote the flagged values in this file: gitleaks scans it too.
+0f4a6d33c11a561079407a30100b82fd31cda517:supabase/tests/diagnostic_schema.test.sql:generic-api-key:147
+afd37deee0d0ce20bf7361699ad8feebc1d643bc:scripts/content-import.test.mjs:generic-api-key:552
+9fc3ceaca136873aa66bcc570c3ff36e53b0ef73:scripts/check-public-env.test.mjs:generic-api-key:34
+c6e88e1faed905c70b814a76f784d888b15a8fb1:scripts/check-public-env.test.mjs:generic-api-key:34
+1dc1e9002349032adbe964418834a4481c748acf:scripts/check-public-env.test.mjs:generic-api-key:6
+12aa46dde5f4b715e8cf04480c276147837cac2a:docs/superpowers/plans/2026-10-13-lexipath-foundation.md:generic-api-key:6481

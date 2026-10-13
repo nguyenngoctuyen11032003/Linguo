@@ -1503,6 +1503,31 @@ export async function signIn(page: Page) {
   await page.addInitScript(([key, value]) => window.localStorage.setItem(key, value), [STORAGE_KEY, JSON.stringify(session)] as const);
 }
 
+/**
+ * Waits until no finite Web Animation / CSS transition is running (infinite ones, such as spinners, are
+ * skipped). Polls instead of awaiting `animation.finished` (WebKit can leave that pending for an animation whose
+ * element was removed) and needs three idle checks in a row, so animations started a moment later by a scroll
+ * or an IntersectionObserver are seen. Pair with `reducedMotion: 'reduce'`: Motion's JS-driven transforms are
+ * not Web Animations.
+ */
+export async function settleAnimations(page: Page) {
+  await page.evaluate(() => {
+    (window as unknown as { __idleChecks: number }).__idleChecks = 0;
+  });
+  await page.waitForFunction(
+    () => {
+      const w = window as unknown as { __idleChecks: number };
+      const running = document
+        .getAnimations()
+        .some((a) => a.playState === 'running' && Number.isFinite(Number(a.effect?.getComputedTiming().endTime)));
+      w.__idleChecks = running ? 0 : (w.__idleChecks ?? 0) + 1;
+      return w.__idleChecks >= 3;
+    },
+    undefined,
+    { polling: 50 },
+  );
+}
+
 export async function expectNoHorizontalScroll(page: Page) {
   const { scrollWidth, innerWidth } = await page.evaluate(() => ({
     scrollWidth: document.documentElement.scrollWidth,

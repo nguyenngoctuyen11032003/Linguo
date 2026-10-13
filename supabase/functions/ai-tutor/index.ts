@@ -2,11 +2,15 @@
 import { createClient } from '@supabase/supabase-js';
 import { CORS_HEADERS, type DbResult, handle, type HandlerDeps, type SupabaseLike } from './handler.ts';
 import { createBreaker } from './lib/breaker.ts';
+import { createIpLimiter } from './lib/ip-limiter.ts';
 
 const env = (k: string) => Deno.env.get(k);
 
 // One breaker per isolate (in memory, spec §3 step 7).
 const breaker = createBreaker({ failureThreshold: 5, windowMs: 60_000, openMs: 60_000, now: Date.now });
+
+// Spec 7 §3: at most 30 requests per minute per client IP, per isolate.
+const ipLimiter = createIpLimiter({ limit: 30, windowMs: 60_000, now: Date.now });
 
 const NO_SESSION = { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false };
 
@@ -35,6 +39,7 @@ const deps: HandlerDeps = {
   random: Math.random,
   sleep: (ms) => new Promise((resolve) => setTimeout(resolve, ms)),
   breaker,
+  ipLimiter,
   // Anon key + the caller's Authorization: every query and RPC runs as the user, under RLS.
   supabase: (authHeader) =>
     adapt(
