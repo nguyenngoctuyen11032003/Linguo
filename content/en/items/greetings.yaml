@@ -1,0 +1,363 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Chào hỏi & giới thiệu". IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+source: src:linguo-demo
+items:
+  - key: en:item:hello
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: hello
+      ipa: UK /həˈləʊ/ · US /həˈloʊ/
+      pos: thán từ
+    back:
+      meaning:
+        vi: xin chào (dùng được với mọi người, mọi lúc)
+      examples:
+        - target: Hello, I'm Minh.
+          translation:
+            vi: Xin chào, mình là Minh.
+      pronunciation_note:
+        vi: Nhấn vào âm thứ hai (lo). Âm đầu đọc nhẹ, gần "hơ".
+      confusion:
+        vi: Tiếng Anh không đổi lời chào theo tuổi hay vai vế như "chào anh", "chào chị"; chỉ cần Hello hoặc Hello kèm tên.
+
+  - key: en:item:hi
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: hi
+      ipa: /haɪ/
+      pos: thán từ
+    back:
+      meaning:
+        vi: chào (thân mật, dùng với bạn bè, người quen)
+      examples:
+        - target: Hi, Lan!
+          translation:
+            vi: Chào Lan!
+      confusion:
+        vi: Hi thân mật hơn Hello. Trong email công việc hoặc khi gặp người lớn tuổi lần đầu, Hello an toàn hơn.
+
+  - key: en:item:goodbye
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: goodbye
+      ipa: /ˌɡʊdˈbaɪ/
+      pos: thán từ
+    back:
+      meaning:
+        vi: tạm biệt
+      examples:
+        - target: Goodbye! See you tomorrow.
+          translation:
+            vi: Tạm biệt! Hẹn gặp lại ngày mai.
+      confusion:
+        vi: Bye ngắn và thân mật hơn Goodbye. Cả hai đều dùng khi chia tay, không dùng để chào lúc gặp.
+
+  - key: en:item:name
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: name
+      ipa: /neɪm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tên
+      examples:
+        - target: My name is Lan.
+          translation:
+            vi: Mình tên là Lan.
+        - target: What's your name?
+          translation:
+            vi: Bạn tên là gì?
+      pronunciation_note:
+        vi: Âm /eɪ/ đọc lướt từ "ê" sang "i", gần "nêim". Chữ e cuối câm.
+      confusion:
+        vi: Phải có my, your… trước name. Tiếng Việt nói "tên bạn", nhưng tiếng Anh không nói "you name".
+
+  - key: en:item:meet
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: meet
+      ipa: /miːt/
+      pos: động từ
+    back:
+      meaning:
+        vi: gặp, làm quen (thường là lần đầu)
+      examples:
+        - target: Nice to meet you.
+          translation:
+            vi: Rất vui được gặp bạn.
+      pronunciation_note:
+        vi: Âm /iː/ kéo dài như "i" trong "đi", đuôi /t/ bật nhẹ.
+      confusion:
+        vi: Meet dùng khi gặp lần đầu; gặp lại người quen thì thường dùng see (Nice to see you).
+
+  - key: en:item:nice-to-meet-you
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: Nice to meet you.
+      ipa: /ˌnaɪs tə ˈmiːt juː/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Rất vui được gặp bạn. (câu nói khi làm quen)
+      examples:
+        - target: "A: I'm Nam. B: Nice to meet you, Nam."
+          translation:
+            vi: "A: Mình là Nam. B: Rất vui được gặp bạn, Nam."
+      confusion:
+        vi: Người kia thường đáp Nice to meet you, too. Gặp lại người quen thì nói Nice to see you.
+
+  - key: en:item:student
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: student
+      ipa: UK /ˈstjuːdnt/ · US /ˈstuːdnt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: học sinh, sinh viên
+      examples:
+        - target: I am a student.
+          translation:
+            vi: Tôi là sinh viên.
+      pronunciation_note:
+        vi: Người Anh đọc gần "xtiu-đần", người Mỹ gần "xtu-đần". Chú ý âm /s/ ở đầu, không đọc thành "xờ-tu".
+      confusion:
+        vi: Student bắt đầu bằng âm phụ âm /s/, nên dùng a student, không dùng an.
+
+  - key: en:item:teacher
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: teacher
+      ipa: UK /ˈtiːtʃə/ · US /ˈtiːtʃɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: giáo viên
+      examples:
+        - target: She is a teacher.
+          translation:
+            vi: Cô ấy là giáo viên.
+
+  - key: en:item:engineer
+    type: vocab
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: engineer
+      ipa: UK /ˌendʒɪˈnɪə/ · US /ˌendʒɪˈnɪr/
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỹ sư
+      examples:
+        - target: He is an engineer.
+          translation:
+            vi: Anh ấy là kỹ sư.
+      pronunciation_note:
+        vi: Nhấn vào âm cuối (neer), không nhấn âm đầu.
+      confusion:
+        vi: Engineer bắt đầu bằng nguyên âm /e/, nên dùng an engineer.
+
+  - key: en:item:doctor
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: doctor
+      ipa: UK /ˈdɒktə/ · US /ˈdɑːktɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bác sĩ
+      examples:
+        - target: My mother is a doctor.
+          translation:
+            vi: Mẹ tôi là bác sĩ.
+
+  - key: en:item:from
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: from
+      ipa: UK /frɒm/ · US /frʌm/ (đọc nhẹ /frəm/)
+      pos: giới từ
+    back:
+      meaning:
+        vi: từ, đến từ (nói về quê quán, nơi xuất phát)
+      examples:
+        - target: We are from Vietnam.
+          translation:
+            vi: Chúng tôi đến từ Việt Nam.
+      confusion:
+        vi: Nói quê quán cần cả be và from - We are from Vietnam - không nói "We from Vietnam".
+
+  - key: en:item:be-present
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: am / is / are
+      ipa: am /æm/ · is /ɪz/ · are UK /ɑː/ · US /ɑːr/
+      pos: động từ be (hiện tại)
+    back:
+      meaning:
+        vi: "là, thì, ở: I → am; he, she, it → is; you, we, they → are"
+      examples:
+        - target: I am a student.
+          translation:
+            vi: Tôi là sinh viên.
+        - target: They are teachers.
+          translation:
+            vi: Họ là giáo viên.
+      confusion:
+        vi: Tiếng Việt có thể bỏ "là" (Tôi sinh viên), nhưng tiếng Anh không bao giờ được bỏ be trong câu kiểu này.
+
+  - key: en:item:a-an
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: a / an
+      ipa: a /ə/ · an /ən/
+      pos: mạo từ
+    back:
+      meaning:
+        vi: một (đứng trước danh từ số ít đếm được, ví dụ nghề nghiệp)
+      examples:
+        - target: She is a teacher.
+          translation:
+            vi: Cô ấy là giáo viên.
+        - target: He is an engineer.
+          translation:
+            vi: Anh ấy là kỹ sư.
+      confusion:
+        vi: Chọn theo âm đầu khi đọc, không theo chữ cái - an hour (h câm), nhưng a university (đọc bắt đầu bằng âm /j/).
+
+  - key: en:item:alphabet
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: alphabet
+      ipa: /ˈælfəbet/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảng chữ cái
+      examples:
+        - target: The English alphabet has 26 letters.
+          translation:
+            vi: Bảng chữ cái tiếng Anh có 26 chữ cái.
+
+  - key: en:item:letter
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: letter
+      ipa: UK /ˈletə/ · US /ˈletɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chữ cái; lá thư
+      examples:
+        - target: A is the first letter.
+          translation:
+            vi: A là chữ cái đầu tiên.
+      pronunciation_note:
+        vi: Người Mỹ thường đọc tt giữa từ rất nhẹ, gần "le-đờ".
+
+  - key: en:item:spell
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: spell
+      ipa: /spel/
+      pos: động từ
+    back:
+      meaning:
+        vi: đánh vần
+      examples:
+        - target: How do you spell your name?
+          translation:
+            vi: Tên bạn đánh vần thế nào?
+        - target: Can you spell that, please?
+          translation:
+            vi: Bạn đánh vần giúp mình từ đó được không?
+
+  - key: en:item:double
+    type: vocab
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: double
+      ipa: /ˈdʌbl/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đôi, hai lần (khi đánh vần, double L nghĩa là hai chữ L liền nhau)
+      examples:
+        - target: Bell is B-E-double L.
+          translation:
+            vi: Bell đánh vần là B-E-L-L.
+      confusion:
+        vi: Riêng chữ W tên là double U /ˈdʌbl juː/, dù trông như "hai chữ V".
+
+  - key: en:item:letter-names
+    type: vocab
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: A, E, I, G, J, H, R, Y, Z
+      ipa: A /eɪ/ · E /iː/ · I /aɪ/ · G /dʒiː/ · J /dʒeɪ/ · H /eɪtʃ/ · R UK /ɑː/ · US /ɑːr/ · Y /waɪ/ · Z UK /zed/ · US /ziː/
+      pos: tên chữ cái
+    back:
+      meaning:
+        vi: Những chữ cái người Việt hay đọc nhầm khi đánh vần
+      examples:
+        - target: "J-A-M-E-S"
+          translation:
+            vi: "Đọc: jây - ây - em - i - ét"
+      pronunciation_note:
+        vi: Tên chữ cái tiếng Anh khác tiếng Việt - A đọc "ây", E đọc "i", I đọc "ai".
+      confusion:
+        vi: G /dʒiː/ (gần "ji") và J /dʒeɪ/ (gần "jây") rất dễ đảo ngược. Z người Anh đọc "zed", người Mỹ đọc "zi".

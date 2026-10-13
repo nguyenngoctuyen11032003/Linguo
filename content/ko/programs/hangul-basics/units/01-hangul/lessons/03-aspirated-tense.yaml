@@ -1,0 +1,300 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:aspirated-tense
+order_index: 3
+level: hangul
+title:
+  vi: Phụ âm bật hơi, phụ âm căng và nguyên âm ghép
+objectives:
+  - vi: Phân biệt bộ ba phụ âm thường - bật hơi - căng, ví dụ 가 / 카 / 까.
+  - vi: Đọc và viết nguyên âm ghép ㅑ ㅕ ㅛ ㅠ ㅘ ㅝ.
+  - vi: Đọc và viết các từ 커피, 아빠, 우유, 사과.
+estimated_minutes: 12
+skills: [reading, writing, listening, vocabulary]
+prerequisites: [ko:lesson:consonants]
+items:
+  - item: ko:item:aspirated
+  - item: ko:item:tense
+  - item: ko:item:y-vowels
+  - item: ko:item:w-vowels
+  - item: ko:item:keopi
+  - item: ko:item:appa
+  - item: ko:item:uyu
+  - item: ko:item:sagwa
+  - item: ko:item:giyeok
+    role: reuse
+  - item: ko:item:bieup
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nghe và viết đúng các cặp 가 / 카 / 까, và đọc được các từ có nguyên âm ghép như 우유, 사과.
+  - type: explain
+    text:
+      vi: Nhiều phụ âm tiếng Hàn đi thành bộ ba - thường (ㄱ ㄷ ㅂ ㅈ), bật hơi (ㅋ ㅌ ㅍ ㅊ) và căng (ㄲ ㄸ ㅃ ㅉ); ㅅ có cặp căng ㅆ. Phụ âm bật hơi đẩy ra một luồng hơi mạnh, giống "th" trong tiếng Việt. Phụ âm căng thì siết cổ họng, không có hơi, gần "t" trong "tôi".
+  - type: explain
+    text:
+      vi: Thêm một nét vào nguyên âm để có âm "y" phía trước - ㅑ (ya), ㅕ (yơ), ㅛ (yô), ㅠ (yu). Ghép hai nguyên âm để có âm "w" - ㅗ + ㅏ = ㅘ (oa), ㅜ + ㅓ = ㅝ (uơ).
+  - type: deep_explain
+    text:
+      vi: Đặt một tờ giấy mỏng trước miệng - đọc 카 thì giấy rung mạnh, đọc 가 rung nhẹ, đọc 까 gần như không rung. Bộ ba này khác nghĩa hoàn toàn, nên bạn cần nghe và viết đúng. Lưu ý ㅍ không phải "ph" tiếng Việt (âm "f") - hai môi phải chạm nhau rồi bật hơi ra; ㅋ cũng không phải "kh" tiếng Việt.
+  - type: example
+    target: 커피
+    target_lang: ko
+    translation:
+      vi: cà phê
+    note:
+      vi: ㅋ và ㅍ đều bật hơi.
+  - type: example
+    target: 아빠
+    target_lang: ko
+    translation:
+      vi: bố
+    note:
+      vi: ㅃ căng, không bật hơi.
+  - type: example
+    target: 우유
+    target_lang: ko
+    translation:
+      vi: sữa
+    note:
+      vi: Âm tiết thứ hai 유 dùng ㅠ ("yu").
+  - type: example
+    target: 사과
+    target_lang: ko
+    translation:
+      vi: quả táo
+    note:
+      vi: 과 = ㄱ + ㅘ, đọc gần "qua".
+  - type: common_mistake
+    wrong: 아파
+    right: 아빠
+    target_lang: ko
+    note:
+      vi: 아파 (với ㅍ bật hơi) nghĩa là "đau"; bố là 아빠 với ㅃ căng. Một luồng hơi thừa làm đổi hẳn nghĩa.
+  - type: common_mistake
+    wrong: 거피
+    right: 커피
+    target_lang: ko
+    note:
+      vi: Cà phê bắt đầu bằng ㅋ bật hơi, không phải ㄱ thường.
+  - type: summary
+    points:
+      - vi: Bộ ba thường / bật hơi / căng - ㄱ ㅋ ㄲ, ㄷ ㅌ ㄸ, ㅂ ㅍ ㅃ, ㅈ ㅊ ㅉ; thêm ㅅ ㅆ.
+      - vi: Bật hơi có luồng hơi mạnh (như "th"); căng thì không có hơi (như "t" trong "tôi").
+      - vi: ㅑ ㅕ ㅛ ㅠ thêm âm "y"; ㅘ = ㅗ + ㅏ, ㅝ = ㅜ + ㅓ.
+      - vi: 커피 cà phê · 아빠 bố · 우유 sữa · 사과 quả táo.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:aspirated-which
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:aspirated
+    prompt:
+      stem: Phụ âm nào là phụ âm bật hơi?
+      stem_lang: vi
+      options:
+        - { id: i5g, text: ㄱ, lang: ko }
+        - { id: t2v, text: ㅋ, lang: ko }
+        - { id: e8l, text: ㄲ, lang: ko }
+        - { id: q4o, text: ㅇ, lang: ko }
+    answer:
+      correct_option_id: t2v
+    explanation:
+      vi: ㅋ là phụ âm bật hơi (có luồng hơi mạnh). ㄱ là phụ âm thường, ㄲ là phụ âm căng, ㅇ đầu âm tiết thì câm.
+    display_answer: ㅋ
+
+  - key: ko:exercise:tense-which
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:tense
+    prompt:
+      stem: Phụ âm nào là phụ âm căng, đọc gần "t" trong "tôi"?
+      stem_lang: vi
+      options:
+        - { id: c7d, text: ㄷ, lang: ko }
+        - { id: x3j, text: ㅌ, lang: ko }
+        - { id: m9u, text: ㄸ, lang: ko }
+        - { id: w5r, text: ㅅ, lang: ko }
+    answer:
+      correct_option_id: m9u
+    explanation:
+      vi: ㄸ là phụ âm căng - siết cổ, không có hơi, gần "t" trong "tôi". ㅌ bật hơi (gần "th"), ㄷ là phụ âm thường.
+    display_answer: ㄸ
+
+  - key: ko:exercise:aspirated-listen-coffee
+    type: listen
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:keopi
+    prompt:
+      audio_asset_id: null
+      fallback_text: 커피
+      options:
+        - { id: z6b, text: cà phê, lang: vi }
+        - { id: h1n, text: sữa, lang: vi }
+        - { id: o4s, text: quả táo, lang: vi }
+        - { id: j8f, text: bố, lang: vi }
+    answer:
+      correct_option_id: z6b
+    explanation:
+      vi: 커피 (với ㅋ và ㅍ bật hơi) nghĩa là cà phê. Sữa là 우유, quả táo là 사과, bố là 아빠.
+    display_answer: cà phê
+
+  - key: ko:exercise:aspirated-build-ka
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:aspirated
+    prompt:
+      instruction: Trong bộ ba 가 / 카 / 까, hãy ghép âm tiết có phụ âm bật hơi.
+      tokens:
+        - { id: k1, text: ㄱ }
+        - { id: k2, text: ㅋ }
+        - { id: k3, text: ㄲ }
+        - { id: k4, text: ㅏ }
+    answer:
+      orders:
+        - [k2, k4]
+    explanation:
+      vi: 'ㅋ là phụ âm bật hơi - ㅋ + ㅏ = 카. 가 dùng ㄱ thường, 까 dùng ㄲ căng.'
+    display_answer: 카
+
+  - key: ko:exercise:y-vowels-fill-uyu
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:uyu
+    prompt:
+      template: "Sữa - 우{{b1}}"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Từ này đọc là "u-yu".
+        - Âm "yu" dùng nguyên âm ㅠ, thêm ㅇ câm phía trên.
+    answer:
+      blanks:
+        b1: [유]
+    known_wrong:
+      - answer: 우
+        feedback_vi: Âm tiết thứ hai là "yu" (ㅠ), không phải "u" (ㅜ).
+        error_tag: vowel_u_yu
+      - answer: ㅠ
+        feedback_vi: Nguyên âm không đứng một mình thành chữ; thêm ㅇ câm - 유.
+        error_tag: missing_ieung
+    explanation:
+      vi: Sữa là 우유 (u-yu). Âm tiết thứ hai là ㅇ câm + ㅠ = 유.
+    display_answer: 우유
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:tense-write-appa
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:appa
+    prompt:
+      source_text: bố
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 아빠
+        - 아버지
+    known_wrong:
+      - answer: 아파
+        feedback_vi: 아파 (với ㅍ bật hơi) nghĩa là "đau". Bố là 아빠 với ㅃ căng.
+        error_tag: consonant_tense
+      - answer: 아바
+        feedback_vi: Bố là 아빠 với ㅃ căng (phụ âm đôi), không phải ㅂ thường.
+        error_tag: consonant_tense
+      - answer: appa
+        feedback_vi: Hãy gõ bằng chữ Hangul (아빠), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Bố là 아빠 (thân mật) - 아 + 빠, với ㅃ căng. Cách gọi trang trọng là 아버지.
+    display_answer: 아빠
+
+  - key: ko:exercise:aspirated-fill-words
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:keopi
+    prompt:
+      template: "Cà phê - {{b1}}피. Quả táo - 사{{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [커]
+        b2: [과]
+    known_wrong:
+      - answer: 거
+        feedback_vi: Cà phê dùng ㅋ bật hơi - 커피, không dùng ㄱ thường.
+        error_tag: consonant_aspirated
+      - answer: 꺼
+        feedback_vi: Cà phê dùng ㅋ bật hơi - 커피, không dùng ㄲ căng.
+        error_tag: consonant_aspirated
+      - answer: 고
+        feedback_vi: Quả táo là 사과 - âm "qua" cần nguyên âm ghép ㅘ (ㅗ + ㅏ).
+        error_tag: compound_vowel
+    explanation:
+      vi: 커피 = ㅋ + ㅓ, rồi ㅍ + ㅣ. 사과 = ㅅ + ㅏ, rồi ㄱ + ㅘ.
+    display_answer: 커피, 사과
+
+  # ---------------- application ----------------
+  - key: ko:exercise:y-vowels-meaning-uyu
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:uyu
+    prompt:
+      source_text: 우유
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - sữa
+        - sữa tươi
+        - sữa bò
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: 우유 là sữa (thường là sữa bò).
+    display_answer: sữa
+
+  - key: ko:exercise:w-vowels-build-sagwa
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:sagwa
+    prompt:
+      instruction: Ghép các chữ cái thành từ có nghĩa "quả táo".
+      tokens:
+        - { id: c4, text: ㅅ }
+        - { id: c8, text: ㅏ }
+        - { id: c1, text: ㄱ }
+        - { id: c6, text: ㅘ }
+        - { id: c3, text: ㅗ }
+        - { id: c9, text: ㅋ }
+    answer:
+      orders:
+        - [c4, c8, c1, c6]
+    explanation:
+      vi: '사과 = (ㅅ + ㅏ) + (ㄱ + ㅘ). Âm "qua" cần nguyên âm ghép ㅘ và phụ âm thường ㄱ, không phải ㅋ bật hơi.'
+    display_answer: 사과

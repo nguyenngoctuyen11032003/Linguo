@@ -1,0 +1,299 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:consonants
+order_index: 2
+level: hangul
+title:
+  vi: Phụ âm cơ bản
+objectives:
+  - vi: Đọc và viết mười phụ âm cơ bản ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅎ.
+  - vi: Ghép phụ âm với nguyên âm thành âm tiết, đặt đúng vị trí bên trái hoặc bên trên.
+  - vi: Đọc và viết các từ 나무, 바다, 하나, 모자, 어머니.
+estimated_minutes: 12
+skills: [reading, writing, listening, vocabulary]
+prerequisites: [ko:lesson:vowels]
+items:
+  - item: ko:item:giyeok
+  - item: ko:item:nieun
+  - item: ko:item:digeut
+  - item: ko:item:rieul
+  - item: ko:item:mieum
+  - item: ko:item:bieup
+  - item: ko:item:siot
+  - item: ko:item:jieut
+  - item: ko:item:hieut
+  - item: ko:item:namu
+  - item: ko:item:bada
+  - item: ko:item:hana
+  - item: ko:item:moja
+  - item: ko:item:eomeoni
+  - item: ko:item:ieung
+    role: reuse
+  - item: ko:item:vowel-u
+    role: reuse
+  - item: ko:item:vowel-eu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được mọi âm tiết ghép từ phụ âm cơ bản và nguyên âm đã học, và viết được năm từ đầu tiên.
+  - type: explain
+    text:
+      vi: Phụ âm thay chỗ của ㅇ câm trong khối âm tiết. Với nguyên âm dọc, phụ âm đứng bên trái - 가, 나, 마. Với nguyên âm ngang, phụ âm đứng bên trên - 고, 누, 므.
+  - type: explain
+    text:
+      vi: ㄴ ㅁ ㅎ đọc như "n", "m", "h" tiếng Việt; ㅅ gần "x". Bốn phụ âm ㄱ ㄷ ㅂ ㅈ ở đầu từ đọc nhẹ, gần "c", "t", "p", "ch" không bật hơi; khi đứng giữa hai nguyên âm, chúng nghe gần "g", "đ", "b", "j". Vì vậy 바다 (biển) đọc gần "pa-đa".
+  - type: deep_explain
+    text:
+      vi: ㄹ giữa hai nguyên âm là một cái chạm lưỡi rất nhẹ, nghe như giữa "r" và "l" - 다리 (cái chân). Ở cuối âm tiết, ㄹ đọc gần "l". Sự thay đổi ㄱ ㄷ ㅂ ㅈ giữa đầu từ và giữa từ là tự nhiên, người Hàn không coi đó là hai âm khác nhau, nên bạn không cần cố đọc thật đúng "g" hay "c".
+  - type: example
+    target: 나무
+    target_lang: ko
+    translation:
+      vi: cái cây
+    note:
+      vi: ㄴ + ㅏ = 나, ㅁ + ㅜ = 무.
+  - type: example
+    target: 바다
+    target_lang: ko
+    translation:
+      vi: biển
+    note:
+      vi: Đọc gần "pa-đa".
+  - type: example
+    target: 하나
+    target_lang: ko
+    translation:
+      vi: một (số đếm)
+  - type: example
+    target: 어머니
+    target_lang: ko
+    translation:
+      vi: mẹ
+    note:
+      vi: Hai âm tiết đầu dùng ㅓ ("ơ") - 어, 머.
+  - type: common_mistake
+    wrong: 나므
+    right: 나무
+    target_lang: ko
+    note:
+      vi: ㅡ ("ư", môi dẹt) và ㅜ ("u", môi tròn) dễ nhầm. Cái cây là 나무 với ㅜ.
+  - type: summary
+    points:
+      - vi: Phụ âm đứng bên trái nguyên âm dọc, bên trên nguyên âm ngang.
+      - vi: ㄱ ㄷ ㅂ ㅈ đầu từ nhẹ như "c, t, p, ch"; giữa hai nguyên âm gần "g, đ, b, j".
+      - vi: ㄹ giữa hai nguyên âm là cái chạm lưỡi nhẹ; ㅇ đầu âm tiết vẫn câm.
+      - vi: 나무 cây · 바다 biển · 하나 một · 모자 mũ · 어머니 mẹ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:consonants-n
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:nieun
+    prompt:
+      stem: Phụ âm nào đọc là "n"?
+      stem_lang: vi
+      options:
+        - { id: a4k, text: ㄷ, lang: ko }
+        - { id: y7s, text: ㄹ, lang: ko }
+        - { id: c1m, text: ㄴ, lang: ko }
+        - { id: o9p, text: ㅁ, lang: ko }
+    answer:
+      correct_option_id: c1m
+    explanation:
+      vi: ㄴ là "n". ㄷ gần "t/đ", ㄹ gần "r/l", ㅁ là "m".
+    display_answer: ㄴ
+
+  - key: ko:exercise:consonants-namu
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:namu
+    prompt:
+      stem: 나무 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: r2b, text: biển, lang: vi }
+        - { id: g6x, text: cái cây, lang: vi }
+        - { id: l3f, text: mẹ, lang: vi }
+        - { id: d8z, text: cái mũ, lang: vi }
+    answer:
+      correct_option_id: g6x
+    explanation:
+      vi: 나무 (na-mu) là cái cây. Biển là 바다, mẹ là 어머니, cái mũ là 모자.
+    display_answer: cái cây
+
+  - key: ko:exercise:consonants-listen-bada
+    type: listen
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:bada
+    prompt:
+      audio_asset_id: null
+      fallback_text: 바다
+      options:
+        - { id: n5w, text: biển, lang: vi }
+        - { id: k7e, text: cái cây, lang: vi }
+        - { id: s3h, text: cái mũ, lang: vi }
+        - { id: u1c, text: một, lang: vi }
+    answer:
+      correct_option_id: n5w
+    explanation:
+      vi: 바다 đọc gần "pa-đa", nghĩa là biển.
+    display_answer: biển
+
+  - key: ko:exercise:consonants-build-ma
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:mieum
+    prompt:
+      instruction: Ghép các chữ cái thành âm tiết đọc là "ma".
+      tokens:
+        - { id: b6, text: ㅁ }
+        - { id: h2, text: ㄴ }
+        - { id: w9, text: ㅏ }
+        - { id: f4, text: ㅓ }
+        - { id: z7, text: ㅂ }
+    answer:
+      orders:
+        - [b6, w9]
+    explanation:
+      vi: '"m" là ㅁ, "a" là ㅏ - ㅁ + ㅏ = 마. ㄴ là "n", ㅂ gần "p/b", ㅓ là "ơ".'
+    display_answer: 마
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:consonants-fill-words
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:namu
+    prompt:
+      template: "Cái cây - 나{{b1}}. Một - 하{{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [무]
+        b2: [나]
+    known_wrong:
+      - answer: 므
+        feedback_vi: ㅡ là "ư". Cái cây là 나무 với ㅜ ("u", tròn môi).
+        error_tag: vowel_eu_u
+      - answer: 너
+        feedback_vi: ㅓ là "ơ". Một là 하나 với ㅏ ("a").
+        error_tag: vowel_a_eo
+    explanation:
+      vi: 나무 = 나 + 무 (ㅁ + ㅜ). 하나 = 하 + 나 (ㄴ + ㅏ).
+    display_answer: 나무, 하나
+
+  - key: ko:exercise:consonants-write-bada
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:bada
+    prompt:
+      source_text: biển
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 바다
+    known_wrong:
+      - answer: 파다
+        feedback_vi: ㅍ là phụ âm bật hơi (học ở bài sau). Biển là 바다 với ㅂ nhẹ.
+        error_tag: consonant_aspirated
+      - answer: 바타
+        feedback_vi: ㅌ là phụ âm bật hơi. Biển là 바다 với ㄷ nhẹ, đọc gần "đ".
+        error_tag: consonant_aspirated
+      - answer: bada
+        feedback_vi: Hãy gõ bằng chữ Hangul (바다), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Biển là 바다 - ㅂ + ㅏ, rồi ㄷ + ㅏ. Đọc gần "pa-đa" nhưng viết bằng ㅂ và ㄷ.
+    display_answer: 바다
+
+  - key: ko:exercise:consonants-write-mother
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:eomeoni
+    prompt:
+      source_text: mẹ
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 어머니
+        - 엄마
+    known_wrong:
+      - answer: 오모니
+        feedback_vi: Hai âm tiết đầu dùng ㅓ ("ơ", không tròn môi) - 어머니.
+        error_tag: vowel_eo_o
+      - answer: 어머느
+        feedback_vi: Âm tiết cuối là 니 với ㅣ ("i"), không phải ㅡ ("ư").
+        error_tag: vowel_eu_i
+      - answer: eomeoni
+        feedback_vi: Hãy gõ bằng chữ Hangul (어머니), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Mẹ là 어머니 (trang trọng) - 어 + 머 + 니. Trong gia đình, cách gọi thân mật là 엄마.
+    display_answer: 어머니
+
+  # ---------------- application ----------------
+  - key: ko:exercise:consonants-meaning-hana
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:hana
+    prompt:
+      source_text: 하나
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - một
+        - số một
+        - "1"
+        - một cái
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: 하나 là "một" trong cách đếm thuần Hàn - 하나, 둘, 셋 (một, hai, ba).
+    display_answer: một
+
+  - key: ko:exercise:consonants-build-moja
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:moja
+    prompt:
+      instruction: Ghép các chữ cái thành từ có nghĩa "cái mũ".
+      tokens:
+        - { id: m3, text: ㅁ }
+        - { id: o8, text: ㅗ }
+        - { id: j5, text: ㅈ }
+        - { id: a1, text: ㅏ }
+        - { id: e9, text: ㅓ }
+        - { id: s6, text: ㅅ }
+    answer:
+      orders:
+        - [m3, o8, j5, a1]
+    explanation:
+      vi: '모자 = (ㅁ + ㅗ) + (ㅈ + ㅏ). ㅗ nằm ngang nên đặt dưới ㅁ; ㅏ đứng dọc nên đặt bên phải ㅈ.'
+    display_answer: 모자

@@ -1,0 +1,314 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:hello
+order_index: 1
+level: pre_a1
+title:
+  vi: Xin chào!
+objectives:
+  - vi: Chào và tạm biệt bằng Hello, Hi, Goodbye cho đúng tình huống.
+  - vi: Hỏi tên người khác bằng What's your name? và nói tên mình bằng My name is… hoặc I'm…
+  - vi: Đáp lại khi làm quen bằng Nice to meet you.
+estimated_minutes: 8
+skills: [vocabulary, speaking, listening]
+prerequisites: []
+items:
+  - item: en:item:hello
+  - item: en:item:hi
+  - item: en:item:goodbye
+  - item: en:item:name
+  - item: en:item:meet
+  - item: en:item:nice-to-meet-you
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn chào hỏi, hỏi tên, giới thiệu tên mình và tạm biệt được trong một lần gặp đầu tiên.
+  - type: explain
+    text:
+      vi: Hello dùng được với mọi người; Hi thân mật hơn, hợp với bạn bè. Khác tiếng Việt, tiếng Anh không đổi lời chào theo tuổi hay vai vế - không có "chào anh", "chào chị", bạn chỉ cần Hello hoặc Hello kèm tên. Khi chia tay, bạn nói Goodbye hoặc Bye.
+  - type: explain
+    text:
+      vi: Để hỏi tên, bạn nói What's your name? (What's là cách nói ngắn của What is). Để trả lời, bạn nói My name is Lan. hoặc ngắn hơn I'm Lan. Lần đầu gặp, hai người thường nói Nice to meet you.
+  - type: deep_explain
+    text:
+      vi: "Your nghĩa là \"của bạn\", my nghĩa là \"của tôi\". Tiếng Việt nói \"tên bạn\" mà không cần chữ \"của\", nhưng tiếng Anh bắt buộc có your hoặc my trước name. Người được chào thường đáp Nice to meet you, too. Còn khi gặp lại người đã quen, người ta nói Nice to see you, không dùng meet."
+  - type: example
+    target: Hello, I'm Minh.
+    target_lang: en
+    translation:
+      vi: Xin chào, mình là Minh.
+  - type: example
+    target: "A: What's your name? B: My name is Lan."
+    target_lang: en
+    translation:
+      vi: "A: Bạn tên là gì? B: Mình tên là Lan."
+    note:
+      vi: Câu hỏi dùng your (của bạn), câu trả lời dùng my (của tôi).
+  - type: example
+    target: Nice to meet you, Lan.
+    target_lang: en
+    translation:
+      vi: Rất vui được gặp bạn, Lan.
+  - type: example
+    target: Goodbye! See you tomorrow.
+    target_lang: en
+    translation:
+      vi: Tạm biệt! Hẹn gặp lại ngày mai.
+  - type: common_mistake
+    wrong: What is you name?
+    right: What is your name?
+    target_lang: en
+    note:
+      vi: You là "bạn", your là "của bạn". Trước danh từ name phải dùng your.
+  - type: common_mistake
+    wrong: My name Lan.
+    right: My name is Lan.
+    target_lang: en
+    note:
+      vi: Tiếng Việt có thể nói "Mình tên Lan", nhưng tiếng Anh cần is giữa My name và tên.
+  - type: summary
+    points:
+      - vi: Hello dùng với mọi người, Hi thân mật hơn; tạm biệt là Goodbye hoặc Bye.
+      - vi: "Hỏi tên: What's your name? - Trả lời: My name is… hoặc I'm…"
+      - vi: Lần đầu gặp nói Nice to meet you; gặp lại người quen nói Nice to see you.
+      - vi: Luôn có your/my trước name và có is trong My name is…
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:hello-goodbye-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:goodbye
+    prompt:
+      stem: Goodbye nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: q7k, text: Xin chào, lang: vi }
+        - { id: m2d, text: Tạm biệt, lang: vi }
+        - { id: x4p, text: Cảm ơn, lang: vi }
+        - { id: b9t, text: Rất vui được gặp bạn, lang: vi }
+    answer:
+      correct_option_id: m2d
+    explanation:
+      vi: Goodbye dùng khi chia tay, nghĩa là "tạm biệt". Xin chào là Hello hoặc Hi.
+    display_answer: Tạm biệt
+
+  - key: en:exercise:hello-listen-nice
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:nice-to-meet-you
+    prompt:
+      audio_asset_id: null
+      fallback_text: Nice to meet you.
+      options:
+        - { id: r5w, text: Rất vui được gặp bạn., lang: vi }
+        - { id: h3n, text: Bạn tên là gì?, lang: vi }
+        - { id: z8c, text: Hẹn gặp lại ngày mai., lang: vi }
+        - { id: e1v, text: Tạm biệt., lang: vi }
+    answer:
+      correct_option_id: r5w
+    explanation:
+      vi: Nice to meet you là câu nói khi làm quen lần đầu, nghĩa là "Rất vui được gặp bạn".
+    display_answer: Rất vui được gặp bạn.
+
+  - key: en:exercise:hello-your-name
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:name
+    prompt:
+      stem: Câu nào hỏi tên đúng?
+      stem_lang: vi
+      options:
+        - { id: k6f, text: What's you name?, lang: en }
+        - { id: u2j, text: What your name?, lang: en }
+        - { id: d7s, text: What's your name?, lang: en }
+        - { id: w4g, text: How your name?, lang: en }
+    answer:
+      correct_option_id: d7s
+    explanation:
+      vi: Câu đúng cần What's (What is) và your (của bạn) trước name. You là "bạn", không đứng trước danh từ để chỉ "của bạn".
+    display_answer: What's your name?
+
+  - key: en:exercise:hello-order-my-name
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:name
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Mình tên là Lan.\""
+      tokens:
+        - { id: t-my, text: My }
+        - { id: t-name, text: name }
+        - { id: t-is, text: is }
+        - { id: t-lan, text: Lan }
+        - { id: t-your, text: your }
+        - { id: t-are, text: are }
+    answer:
+      orders:
+        - [t-my, t-name, t-is, t-lan]
+    explanation:
+      vi: "Thứ tự là My name is + tên. Your (của bạn) và are không dùng ở đây: tên của mình thì dùng my, và name đi với is."
+    display_answer: My name is Lan.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:hello-fill-your-my
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:name
+    prompt:
+      template: "A: What's {{b1}} name? B: {{b2}} name is Minh."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [your]
+        b2: [my]
+    known_wrong:
+      - answer: you
+        feedback_vi: Trước name cần your (của bạn), không phải you (bạn).
+        error_tag: possessive
+      - answer: I
+        feedback_vi: Trước name cần my (của tôi), không phải I (tôi).
+        error_tag: possessive
+    explanation:
+      vi: Hỏi tên người khác dùng your (của bạn); nói tên mình dùng my (của tôi).
+    display_answer: "A: What's your name? B: My name is Minh."
+
+  - key: en:exercise:hello-translate-nice
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:nice-to-meet-you
+    prompt:
+      source_text: Rất vui được gặp bạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Nice to meet you.
+        - Pleased to meet you.
+        - Glad to meet you.
+        - It's nice to meet you.
+        - It is nice to meet you.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Nice to see you.
+        feedback_vi: Nice to see you dùng khi gặp lại người quen. Lần đầu gặp, bạn nói Nice to meet you.
+        error_tag: word_choice
+      - answer: Nice meet you.
+        feedback_vi: Thiếu to - Nice to meet you.
+        error_tag: missing_to
+      - answer: Happy to see you.
+        feedback_vi: Câu này dùng khi gặp lại người quen. Lần đầu gặp, bạn nói Nice to meet you.
+        error_tag: word_choice
+    explanation:
+      vi: Khi làm quen lần đầu, cách nói tự nhiên nhất là Nice to meet you. Pleased to meet you trang trọng hơn một chút.
+    display_answer: Nice to meet you.
+
+  # ---------------- application ----------------
+  - key: en:exercise:hello-translate-goodbye
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:goodbye
+    prompt:
+      source_text: Goodbye! See you tomorrow.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tạm biệt! Hẹn gặp lại ngày mai.
+        - Tạm biệt! Hẹn gặp lại vào ngày mai.
+        - Tạm biệt! Hẹn gặp lại ngày mai nhé.
+        - Tạm biệt! Hẹn mai gặp lại.
+        - Tạm biệt! Hẹn mai gặp lại nhé.
+        - Tạm biệt! Mai gặp lại.
+        - Tạm biệt! Mai gặp lại nhé.
+        - Tạm biệt! Ngày mai gặp lại.
+        - Tạm biệt! Ngày mai gặp lại nhé.
+        - Tạm biệt! Hẹn gặp bạn ngày mai.
+        - Tạm biệt! Hẹn gặp lại bạn ngày mai.
+        - Tạm biệt! Mai gặp nhé.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Goodbye là "tạm biệt"; See you tomorrow nghĩa đen là "gặp bạn ngày mai", tiếng Việt tự nhiên nói "Hẹn gặp lại ngày mai".
+    display_answer: Tạm biệt! Hẹn gặp lại ngày mai.
+
+  - key: en:exercise:hello-translate-intro
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:name
+    prompt:
+      source_text: Xin chào, mình tên là Lan.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Hello, my name is Lan.
+        - Hi, my name is Lan.
+        - Hello, I'm Lan.
+        - Hi, I'm Lan.
+        - Hello, I am Lan.
+        - Hi, I am Lan.
+        - Hello, my name's Lan.
+        - Hi, my name's Lan.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Hello, my name Lan.
+        feedback_vi: Thiếu is - My name is Lan.
+        error_tag: missing_be
+      - answer: Hi, my name Lan.
+        feedback_vi: Thiếu is - My name is Lan.
+        error_tag: missing_be
+      - answer: Hello, I Lan.
+        feedback_vi: Thiếu am - I am Lan (hoặc I'm Lan).
+        error_tag: missing_be
+      - answer: Hello, you name is Lan.
+        feedback_vi: Tên của mình thì dùng my, không dùng you.
+        error_tag: possessive
+    explanation:
+      vi: "Có hai cách tự nhiên: My name is Lan hoặc I'm Lan. Câu nào cũng phải có is hoặc am."
+    display_answer: Hello, my name is Lan.
+
+  - key: en:exercise:hello-order-nice
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:nice-to-meet-you
+    prompt:
+      instruction: "Bạn vừa được giới thiệu với Minh. Sắp xếp thành câu: \"Rất vui được gặp bạn, Minh.\""
+      tokens:
+        - { id: w-nice, text: Nice }
+        - { id: w-to, text: to }
+        - { id: w-meet, text: meet }
+        - { id: w-you, text: you }
+        - { id: w-minh, text: Minh }
+        - { id: w-see, text: see }
+        - { id: w-for, text: for }
+    answer:
+      orders:
+        - [w-nice, w-to, w-meet, w-you, w-minh]
+    explanation:
+      vi: Lần đầu gặp dùng meet, không dùng see; tên người đặt ở cuối câu.
+    display_answer: Nice to meet you, Minh.
