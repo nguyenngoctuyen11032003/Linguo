@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { lessonFileSchema } from './authoring';
 import { bundleSchema } from './bundle';
-import { EXERCISE_TYPES, PROMPT_SCHEMAS, fillBlankPromptSchema, responseSchemaFor } from './exercises';
+import { EXERCISE_TYPES, PROMPT_SCHEMAS, fillBlankAnswerSchema, fillBlankPromptSchema, responseSchemaFor } from './exercises';
 import { lessonPayloadSchema } from './rpc';
 
 const options = [
@@ -36,6 +36,11 @@ describe('prompt schemas never carry answer keys', () => {
   it('fill_blank rejects a blank id missing from the template', () => {
     const r = fillBlankPromptSchema.safeParse({ template: 'Nice to {{b1}} you', blanks: [{ id: 'b1' }, { id: 'b2' }] });
     expect(r.success).toBe(false);
+  });
+
+  it('fill_blank answer needs at least one blank', () => {
+    expect(fillBlankAnswerSchema.safeParse({ blanks: { b1: ['meet'] } }).success).toBe(true);
+    expect(fillBlankAnswerSchema.safeParse({ blanks: {} }).success).toBe(false);
   });
 });
 
