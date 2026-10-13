@@ -69,6 +69,14 @@ function harness(steps: Step[], random = 0.5): Harness {
   return { deps, requests, sleeps, clock };
 }
 
+function request(h: Harness, i: number): Harness['requests'][number] {
+  const r = h.requests[i];
+  assert.ok(r, `expected request #${i}`);
+  return r;
+}
+
+const generationConfig = (h: Harness, i: number) => request(h, i).body.generationConfig as Record<string, unknown>;
+
 async function rejects(p: Promise<unknown>): Promise<GeminiError> {
   try {
     await p;
@@ -83,7 +91,7 @@ Deno.test('success: url, key header, body shape', async () => {
   const h = harness([ok()]);
   const res = await callGemini(baseCall(), h.deps);
   assert.deepEqual(res, { text: '{"a":"x"}', attempts: 1, usedSchema: true });
-  const [r] = h.requests;
+  const r = request(h, 0);
   assert.equal(r.url, `${GEMINI_BASE_URL}/gemini-test:generateContent`);
   assert.ok(!r.url.includes(KEY));
   assert.equal(r.init.method, 'POST');
@@ -107,7 +115,7 @@ Deno.test('null responseSchema → no responseSchema field, usedSchema false', a
   const h = harness([ok()]);
   const res = await callGemini(baseCall({ responseSchema: null }), h.deps);
   assert.equal(res.usedSchema, false);
-  const gc = h.requests[0].body.generationConfig as Record<string, unknown>;
+  const gc = generationConfig(h, 0);
   assert.ok(!('responseSchema' in gc));
   assert.equal(gc.responseMimeType, 'application/json');
 });
@@ -223,8 +231,8 @@ Deno.test('400 schema → one retry without responseSchema', async () => {
   const h = harness([err(400, { error: { message: 'Invalid JSON payload: response_schema unknown field' } }), ok()]);
   const res = await callGemini(baseCall(), h.deps);
   assert.deepEqual(res, { text: '{"a":"x"}', attempts: 2, usedSchema: false });
-  assert.ok('responseSchema' in (h.requests[0].body.generationConfig as object));
-  assert.ok(!('responseSchema' in (h.requests[1].body.generationConfig as object)));
+  assert.ok('responseSchema' in generationConfig(h, 0));
+  assert.ok(!('responseSchema' in generationConfig(h, 1)));
   assert.deepEqual(h.sleeps, []);
 });
 
