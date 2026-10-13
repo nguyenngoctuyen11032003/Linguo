@@ -1,7 +1,18 @@
 import { LEVEL_INFO, type DiagnosticConfidence, type DiagnosticReport, type ReportSkill } from '@linguo/shared';
+import type { SkipReason } from '@/features/diagnostic/service';
 
-export type SkipReason = 'no_time' | 'too_hard' | 'not_my_goal' | 'other';
+export type { SkipReason };
 type ReportSkillRow = DiagnosticReport['skills'][number];
+
+/** `/app/kiem-tra/:pathId?che-do=nen-tang` starts a foundation-mode attempt (2–3 minutes); a resumed attempt keeps its mode. */
+export const MODE_PARAM = 'che-do';
+export const FOUNDATION_MODE_VALUE = 'nen-tang';
+
+/** "27/10/2026" (vi-VN); unparseable input is returned as-is. */
+export function formatDate(iso: string): string {
+  const date = new Date(iso);
+  return Number.isNaN(date.getTime()) ? iso : date.toLocaleDateString('vi-VN', { day: 'numeric', month: 'numeric', year: 'numeric' });
+}
 
 export const SKILL_LABELS: Record<ReportSkill, string> = {
   vocabulary: 'Từ vựng',
