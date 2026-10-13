@@ -3,6 +3,7 @@ import userEvent from '@testing-library/user-event';
 import { useRef, useState } from 'react';
 import { useNavigate } from 'react-router';
 import { describe, expect, it, vi } from 'vitest';
+import { TEST_KO_PATH, TEST_PATH } from '../../../tests/unit/learning-fixtures';
 import { renderWithProviders } from '../../../tests/unit/render';
 import { ComingSoonPage } from '@/routes/app/ComingSoonPage';
 import { AppBar } from './AppBar';
@@ -104,6 +105,46 @@ describe('AppBar', () => {
     renderWithProviders(<AppBar />, { route: '/app' });
     expect(screen.getByRole('button', { name: /Ngôn ngữ đang học/ })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Tài khoản và cài đặt' })).toHaveTextContent('M');
+  });
+
+  it('switches the current path', async () => {
+    const setCurrent = vi.fn().mockResolvedValue(undefined);
+    renderWithProviders(<AppBar />, { route: '/app', paths: { paths: [TEST_PATH, TEST_KO_PATH], setCurrent } });
+    await userEvent.click(screen.getByRole('button', { name: /Ngôn ngữ đang học/ }));
+    await userEvent.click(screen.getByRole('button', { name: /Tiếng Hàn/ }));
+    expect(setCurrent).toHaveBeenCalledWith('path-ko');
+    await waitFor(() => expect(screen.getByRole('button', { name: /Ngôn ngữ đang học/ })).not.toHaveAttribute('aria-busy'));
+  });
+
+  it('shows a busy trigger while switching and ignores new selections', async () => {
+    let resolve!: () => void;
+    const setCurrent = vi.fn().mockReturnValue(new Promise<void>((r) => (resolve = r)));
+    renderWithProviders(<AppBar />, { route: '/app', paths: { paths: [TEST_PATH, TEST_KO_PATH], setCurrent } });
+    const trigger = screen.getByRole('button', { name: /Ngôn ngữ đang học/ });
+    await userEvent.click(trigger);
+    await userEvent.click(screen.getByRole('button', { name: /Tiếng Hàn/ }));
+    expect(trigger).toHaveAttribute('aria-busy', 'true');
+    await userEvent.click(trigger);
+    expect(screen.getByRole('button', { name: /Tiếng Hàn/ })).toBeDisabled();
+    expect(setCurrent).toHaveBeenCalledTimes(1);
+    resolve();
+    await waitFor(() => expect(trigger).not.toHaveAttribute('aria-busy'));
+  });
+
+  it('toasts an error when switching fails', async () => {
+    const setCurrent = vi.fn().mockRejectedValue(new TypeError('Failed to fetch'));
+    renderWithProviders(<AppBar />, { route: '/app', paths: { paths: [TEST_PATH, TEST_KO_PATH], setCurrent } });
+    await userEvent.click(screen.getByRole('button', { name: /Ngôn ngữ đang học/ }));
+    await userEvent.click(screen.getByRole('button', { name: /Tiếng Hàn/ }));
+    expect(await screen.findByText('Không kết nối được máy chủ. Kiểm tra mạng và thử lại.')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Ngôn ngữ đang học/ })).not.toHaveAttribute('aria-busy');
+  });
+
+  it('navigates to onboarding for a missing language', async () => {
+    renderWithProviders(<AppBar />, { route: '/app' });
+    await userEvent.click(screen.getByRole('button', { name: /Ngôn ngữ đang học/ }));
+    await userEvent.click(screen.getByRole('button', { name: '+ Thêm Tiếng Hàn' }));
+    expect(screen.getByTestId('location')).toHaveTextContent('/app/bat-dau?lang=ko');
   });
 });
 
