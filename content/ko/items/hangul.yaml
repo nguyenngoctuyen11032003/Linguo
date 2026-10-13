@@ -1,0 +1,646 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Bảng chữ Hangul". Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+schema_version: 1
+demo: true
+source: src:linguo-demo
+items:
+  # ---------------- nguyên âm cơ bản ----------------
+  - key: ko:item:vowel-a
+    type: hangul
+    level: hangul
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: ㅏ
+      romanization: a
+      pos: nguyên âm dọc
+    back:
+      meaning:
+        vi: Nguyên âm "a"
+      examples:
+        - target: 아이
+          translation:
+            vi: đứa trẻ
+      pronunciation_note:
+        vi: Đọc như "a" trong tiếng Việt.
+
+  - key: ko:item:vowel-eo
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: ㅓ
+      romanization: eo
+      pos: nguyên âm dọc
+    back:
+      meaning:
+        vi: Nguyên âm "ơ" (mở miệng rộng)
+      examples:
+        - target: 어머니
+          translation:
+            vi: mẹ
+      pronunciation_note:
+        vi: Gần "ơ" nhưng miệng mở rộng hơn, môi không tròn.
+      confusion:
+        vi: Dễ nhầm với ㅗ ("ô", tròn môi). Nét ngắn của ㅓ hướng sang trái, của ㅗ hướng lên trên.
+
+  - key: ko:item:vowel-o
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: ㅗ
+      romanization: o
+      pos: nguyên âm ngang
+    back:
+      meaning:
+        vi: Nguyên âm "ô"
+      examples:
+        - target: 오이
+          translation:
+            vi: dưa chuột
+      pronunciation_note:
+        vi: Gần "ô" trong tiếng Việt, môi tròn.
+      confusion:
+        vi: Dễ nhầm với ㅓ ("ơ", không tròn môi).
+
+  - key: ko:item:vowel-u
+    type: hangul
+    level: hangul
+    difficulty: 1
+    skill_tags: [reading, listening]
+    front:
+      text: ㅜ
+      romanization: u
+      pos: nguyên âm ngang
+    back:
+      meaning:
+        vi: Nguyên âm "u"
+      examples:
+        - target: 나무
+          translation:
+            vi: cây
+      pronunciation_note:
+        vi: Đọc như "u" trong tiếng Việt, môi tròn và hơi chu ra.
+      confusion:
+        vi: Dễ nhầm với ㅡ ("ư", môi dẹt).
+
+  - key: ko:item:vowel-eu
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: ㅡ
+      romanization: eu
+      pos: nguyên âm ngang
+    back:
+      meaning:
+        vi: Nguyên âm "ư"
+      examples:
+        - target: 으
+          translation:
+            vi: âm "ư" viết thành âm tiết với ㅇ câm
+      pronunciation_note:
+        vi: Gần "ư" trong tiếng Việt, môi dẹt, kéo sang hai bên.
+      confusion:
+        vi: Dễ nhầm với ㅜ ("u", tròn môi).
+
+  - key: ko:item:vowel-i
+    type: hangul
+    level: hangul
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: ㅣ
+      romanization: i
+      pos: nguyên âm dọc
+    back:
+      meaning:
+        vi: Nguyên âm "i"
+      examples:
+        - target: 오이
+          translation:
+            vi: dưa chuột
+      pronunciation_note:
+        vi: Đọc như "i" trong tiếng Việt.
+
+  - key: ko:item:vowel-ae
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading]
+    front:
+      text: ㅐ
+      romanization: ae
+      pos: nguyên âm dọc
+    back:
+      meaning:
+        vi: Nguyên âm "e"
+      examples:
+        - target: 애
+          translation:
+            vi: đứa trẻ (cách nói ngắn của 아이)
+      pronunciation_note:
+        vi: Gần "e" trong tiếng Việt. Người Seoul hiện nay đọc ㅐ và ㅔ gần như giống nhau.
+      confusion:
+        vi: Khi nghe khó phân biệt với ㅔ; bạn cần nhớ cách viết của từng từ.
+
+  - key: ko:item:vowel-e
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading]
+    front:
+      text: ㅔ
+      romanization: e
+      pos: nguyên âm dọc
+    back:
+      meaning:
+        vi: Nguyên âm "ê"
+      examples:
+        - target: 네
+          translation:
+            vi: vâng, dạ
+      pronunciation_note:
+        vi: Gần "ê" trong tiếng Việt. Trong tiếng Seoul hiện nay, ㅔ và ㅐ đọc gần như giống nhau.
+
+  # ---------------- phụ âm cơ bản ----------------
+  - key: ko:item:ieung
+    type: hangul
+    level: hangul
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: ㅇ
+      romanization: (câm) / ng
+      pos: phụ âm
+    back:
+      meaning:
+        vi: Phụ âm câm khi đứng đầu âm tiết; đọc "ng" khi đứng cuối âm tiết
+      examples:
+        - target: 아
+          translation:
+            vi: âm "a" viết thành âm tiết
+      pronunciation_note:
+        vi: Âm tiết nào không có phụ âm đầu thì phải viết ㅇ vào chỗ đó, nhưng không đọc.
+
+  - key: ko:item:giyeok
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: ㄱ
+      romanization: g / k
+      pos: phụ âm
+    back:
+      meaning:
+        vi: Phụ âm gần "c/k" (đầu từ) hoặc "g" (giữa hai nguyên âm)
+      examples:
+        - target: 가다
+          translation:
+            vi: đi
+      pronunciation_note:
+        vi: Đầu từ đọc nhẹ, gần "c" trong "ca" nhưng không bật hơi; giữa hai nguyên âm gần "g".
+
+  - key: ko:item:nieun
+    type: hangul
+    level: hangul
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: ㄴ
+      romanization: n
+      pos: phụ âm
+    back:
+      meaning:
+        vi: Phụ âm "n"
+      examples:
+        - target: 나무
+          translation:
+            vi: cây
+      pronunciation_note:
+        vi: Đọc như "n" trong tiếng Việt.
+
+  - key: ko:item:digeut
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: ㄷ
+      romanization: d / t
+      pos: phụ âm
+    back:
+      meaning:
+        vi: Phụ âm gần "t" (đầu từ) hoặc "đ" (giữa hai nguyên âm)
+      examples:
+        - target: 바다
+          translation:
+            vi: biển
+      pronunciation_note:
+        vi: Đầu từ đọc nhẹ, gần "t"; giữa hai nguyên âm gần "đ", nên 바다 đọc gần "pa-đa".
+
+  - key: ko:item:rieul
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: ㄹ
+      romanization: r / l
+      pos: phụ âm
+    back:
+      meaning:
+        vi: Phụ âm "r" lướt nhẹ (giữa hai nguyên âm) hoặc "l" (cuối âm tiết)
+      examples:
+        - target: 다리
+          translation:
+            vi: cái chân; cây cầu
+      pronunciation_note:
+        vi: Giữa hai nguyên âm, đầu lưỡi chạm nhẹ lợi trên một lần rồi bật ra - nghe như giữa "r" và "l", không rung lưỡi.
+
+  - key: ko:item:mieum
+    type: hangul
+    level: hangul
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: ㅁ
+      romanization: m
+      pos: phụ âm
+    back:
+      meaning:
+        vi: Phụ âm "m"
+      examples:
+        - target: 모자
+          translation:
+            vi: cái mũ
+      pronunciation_note:
+        vi: Đọc như "m" trong tiếng Việt.
+
+  - key: ko:item:bieup
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: ㅂ
+      romanization: b / p
+      pos: phụ âm
+    back:
+      meaning:
+        vi: Phụ âm gần "p" nhẹ (đầu từ) hoặc "b" (giữa hai nguyên âm)
+      examples:
+        - target: 바다
+          translation:
+            vi: biển
+      pronunciation_note:
+        vi: Đầu từ đọc nhẹ, gần "p" không bật hơi; giữa hai nguyên âm gần "b".
+
+  - key: ko:item:siot
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading]
+    front:
+      text: ㅅ
+      romanization: s
+      pos: phụ âm
+    back:
+      meaning:
+        vi: Phụ âm "x/s" nhẹ
+      examples:
+        - target: 사자
+          translation:
+            vi: con sư tử
+      pronunciation_note:
+        vi: Gần "x" trong tiếng Việt. Trước ㅣ, ㅅ đọc gần "s" uốn lưỡi nhẹ - 시 nghe gần "shi".
+
+  - key: ko:item:jieut
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: ㅈ
+      romanization: j
+      pos: phụ âm
+    back:
+      meaning:
+        vi: Phụ âm gần "ch" nhẹ
+      examples:
+        - target: 모자
+          translation:
+            vi: cái mũ
+      pronunciation_note:
+        vi: Đầu từ gần "ch" trong tiếng Việt nhưng nhẹ hơn; giữa hai nguyên âm nghe gần "j" trong tiếng Anh.
+
+  - key: ko:item:hieut
+    type: hangul
+    level: hangul
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: ㅎ
+      romanization: h
+      pos: phụ âm
+    back:
+      meaning:
+        vi: Phụ âm "h"
+      examples:
+        - target: 하나
+          translation:
+            vi: một
+      pronunciation_note:
+        vi: Đọc như "h" trong tiếng Việt.
+
+  # ---------------- phụ âm bật hơi, căng và nguyên âm ghép ----------------
+  - key: ko:item:aspirated
+    type: hangul
+    level: hangul
+    difficulty: 3
+    skill_tags: [reading, listening]
+    front:
+      text: ㅋ ㅌ ㅍ ㅊ
+      romanization: k · t · p · ch
+      pos: phụ âm bật hơi
+    back:
+      meaning:
+        vi: Bốn phụ âm bật hơi - đọc kèm một luồng hơi mạnh
+      examples:
+        - target: 커피
+          translation:
+            vi: cà phê
+      pronunciation_note:
+        vi: ㅌ gần "th" trong tiếng Việt. ㅋ là "k" bật hơi, khác "kh" tiếng Việt. ㅍ là "p" bật hơi, hai môi chạm nhau, không phải "ph".
+      confusion:
+        vi: "Mỗi phụ âm bật hơi có cặp thường và căng: ㄱ/ㅋ/ㄲ, ㄷ/ㅌ/ㄸ, ㅂ/ㅍ/ㅃ, ㅈ/ㅊ/ㅉ."
+
+  - key: ko:item:tense
+    type: hangul
+    level: hangul
+    difficulty: 3
+    skill_tags: [reading, listening]
+    front:
+      text: ㄲ ㄸ ㅃ ㅆ ㅉ
+      romanization: kk · tt · pp · ss · jj
+      pos: phụ âm căng
+    back:
+      meaning:
+        vi: Năm phụ âm căng - siết cổ họng, không có hơi
+      examples:
+        - target: 아빠
+          translation:
+            vi: bố
+      pronunciation_note:
+        vi: ㄸ gần "t" trong "tôi", ㄲ gần "c" trong "cô" nhưng căng hơn. Đặt tờ giấy trước miệng - đọc phụ âm căng thì giấy gần như không rung.
+      confusion:
+        vi: 아빠 (bố) khác 아파 (đau) - chỉ khác ㅃ căng và ㅍ bật hơi.
+
+  - key: ko:item:y-vowels
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading]
+    front:
+      text: ㅑ ㅕ ㅛ ㅠ
+      romanization: ya · yeo · yo · yu
+      pos: nguyên âm ghép
+    back:
+      meaning:
+        vi: Nguyên âm có âm "y" phía trước - thêm một nét vào ㅏ ㅓ ㅗ ㅜ
+      examples:
+        - target: 우유
+          translation:
+            vi: sữa
+      pronunciation_note:
+        vi: ㅑ "ya", ㅕ "yơ", ㅛ "yô", ㅠ "yu".
+
+  - key: ko:item:w-vowels
+    type: hangul
+    level: hangul
+    difficulty: 3
+    skill_tags: [reading]
+    front:
+      text: ㅘ ㅝ
+      romanization: wa · wo
+      pos: nguyên âm ghép
+    back:
+      meaning:
+        vi: Nguyên âm có âm "w" phía trước - ㅗ + ㅏ = ㅘ, ㅜ + ㅓ = ㅝ
+      examples:
+        - target: 사과
+          translation:
+            vi: quả táo
+      pronunciation_note:
+        vi: ㅘ gần "oa" trong "hoa", ㅝ gần "uơ" trong "thuở".
+
+  # ---------------- từ vựng ----------------
+  - key: ko:item:ai
+    type: vocab
+    level: hangul
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 아이
+      romanization: ai
+      pos: danh từ
+    back:
+      meaning:
+        vi: đứa trẻ, trẻ con; con (của ai đó)
+      examples:
+        - target: 아이예요.
+          translation:
+            vi: Đó là một đứa trẻ.
+      confusion:
+        vi: Trong văn nói, 아이 thường rút gọn thành 애.
+
+  - key: ko:item:oi
+    type: vocab
+    level: hangul
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 오이
+      romanization: oi
+      pos: danh từ
+    back:
+      meaning:
+        vi: dưa chuột, dưa leo
+      examples:
+        - target: 오이예요.
+          translation:
+            vi: Đây là dưa chuột.
+      confusion:
+        vi: Viết với ㅗ ("ô"); 어이 (với ㅓ) là tiếng gọi "này!", không phải dưa chuột.
+
+  - key: ko:item:namu
+    type: vocab
+    level: hangul
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 나무
+      romanization: namu
+      pos: danh từ
+    back:
+      meaning:
+        vi: cây, cái cây; gỗ
+      examples:
+        - target: 나무예요.
+          translation:
+            vi: Đây là cái cây.
+      confusion:
+        vi: Âm cuối là ㅜ ("u", tròn môi), không phải ㅡ ("ư").
+
+  - key: ko:item:bada
+    type: vocab
+    level: hangul
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 바다
+      romanization: bada
+      pos: danh từ
+    back:
+      meaning:
+        vi: biển
+      examples:
+        - target: 바다예요.
+          translation:
+            vi: Đây là biển.
+      pronunciation_note:
+        vi: Đọc gần "pa-đa" - ㅂ đầu từ nhẹ như "p", ㄷ giữa hai nguyên âm gần "đ".
+
+  - key: ko:item:hana
+    type: vocab
+    level: hangul
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 하나
+      romanization: hana
+      pos: số từ
+    back:
+      meaning:
+        vi: một (số đếm thuần Hàn)
+      examples:
+        - target: 하나, 둘, 셋
+          translation:
+            vi: một, hai, ba
+
+  - key: ko:item:eomeoni
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 어머니
+      romanization: eomeoni
+      pos: danh từ
+    back:
+      meaning:
+        vi: mẹ (trang trọng)
+      examples:
+        - target: 어머니예요.
+          translation:
+            vi: Đây là mẹ tôi.
+      confusion:
+        vi: Trong gia đình, cách gọi thân mật là 엄마 (má, mẹ).
+
+  - key: ko:item:moja
+    type: vocab
+    level: hangul
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 모자
+      romanization: moja
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái mũ, cái nón
+      examples:
+        - target: 모자예요.
+          translation:
+            vi: Đây là cái mũ.
+
+  - key: ko:item:keopi
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 커피
+      romanization: keopi
+      pos: danh từ
+    back:
+      meaning:
+        vi: cà phê
+      examples:
+        - target: 커피예요.
+          translation:
+            vi: Đây là cà phê.
+      pronunciation_note:
+        vi: Cả ㅋ và ㅍ đều bật hơi; nguyên âm đầu là ㅓ ("ơ"), nên đọc gần "kơ-pi" với hơi bật mạnh ở cả hai phụ âm.
+
+  - key: ko:item:appa
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 아빠
+      romanization: appa
+      pos: danh từ
+    back:
+      meaning:
+        vi: bố, ba (thân mật)
+      examples:
+        - target: 아빠예요.
+          translation:
+            vi: Đây là bố tôi.
+      confusion:
+        vi: 아빠 (bố, ㅃ căng) khác 아파 (đau, ㅍ bật hơi). Cách gọi trang trọng là 아버지.
+
+  - key: ko:item:uyu
+    type: vocab
+    level: hangul
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 우유
+      romanization: uyu
+      pos: danh từ
+    back:
+      meaning:
+        vi: sữa
+      examples:
+        - target: 우유예요.
+          translation:
+            vi: Đây là sữa.
+      confusion:
+        vi: Âm tiết thứ hai dùng ㅠ ("yu"), không phải ㅜ ("u").
+
+  - key: ko:item:sagwa
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 사과
+      romanization: sagwa
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả táo; lời xin lỗi
+      examples:
+        - target: 사과예요.
+          translation:
+            vi: Đây là quả táo.
+      pronunciation_note:
+        vi: Âm tiết thứ hai 과 dùng nguyên âm ghép ㅘ, đọc gần "qua".

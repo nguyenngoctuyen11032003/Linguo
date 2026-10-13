@@ -1,0 +1,18 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+key: en:program:foundation
+language: en
+title:
+  vi: Nền tảng tiếng Anh
+description:
+  vi: Chào hỏi, giới thiệu bản thân, động từ be và đánh vần - những câu đầu tiên cho người mới bắt đầu (Pre-A1 đến A1). Nội dung demo, chưa qua kiểm duyệt.
+kind: core
+goal_types: []
+level_from: pre_a1
+level_to: a1
+order_index: 1

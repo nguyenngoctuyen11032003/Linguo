@@ -1,0 +1,267 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:vowels
+order_index: 1
+level: hangul
+title:
+  vi: Nguyên âm cơ bản
+objectives:
+  - vi: Đọc và viết tám nguyên âm cơ bản ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ ㅐ ㅔ.
+  - vi: Viết âm tiết chỉ có nguyên âm bằng cách thêm ㅇ câm, đặt nguyên âm đúng vị trí dọc hoặc ngang.
+  - vi: Phân biệt các cặp dễ nhầm ㅓ/ㅗ và ㅡ/ㅜ trong từ 아이, 오이.
+estimated_minutes: 10
+skills: [reading, writing, listening]
+prerequisites: []
+items:
+  - item: ko:item:vowel-a
+  - item: ko:item:vowel-eo
+  - item: ko:item:vowel-o
+  - item: ko:item:vowel-u
+  - item: ko:item:vowel-eu
+  - item: ko:item:vowel-i
+  - item: ko:item:vowel-ae
+  - item: ko:item:vowel-e
+  - item: ko:item:ieung
+  - item: ko:item:ai
+  - item: ko:item:oi
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc và viết được tám nguyên âm cơ bản, và đọc được hai từ đầu tiên - 아이 (đứa trẻ) và 오이 (dưa chuột).
+  - type: explain
+    text:
+      vi: Chữ Hàn không viết từng chữ cái nối thành hàng như tiếng Việt, mà ghép thành từng khối vuông, mỗi khối là một âm tiết. Mỗi khối phải bắt đầu bằng một phụ âm. Nếu âm tiết không có phụ âm đầu, bạn viết ㅇ vào chỗ đó - lúc này ㅇ câm, không đọc. Vì vậy "a" được viết là 아.
+  - type: explain
+    text:
+      vi: Nguyên âm có nét dài đứng dọc (ㅏ ㅓ ㅣ ㅐ ㅔ) đặt bên phải ㅇ - 아, 어, 이, 애, 에. Nguyên âm có nét dài nằm ngang (ㅗ ㅜ ㅡ) đặt bên dưới ㅇ - 오, 우, 으.
+  - type: deep_explain
+    text:
+      vi: Hai cặp người Việt hay nhầm - ㅓ đọc gần "ơ" nhưng mở miệng rộng hơn, môi không tròn; ㅗ đọc gần "ô", môi tròn. ㅡ gần "ư", môi dẹt; ㅜ gần "u", môi tròn. Còn ㅐ (gần "e") và ㅔ (gần "ê") thì trong tiếng Seoul hiện nay đọc gần như giống nhau, bạn phân biệt chủ yếu khi viết.
+  - type: example
+    target: 아이
+    target_lang: ko
+    translation:
+      vi: đứa trẻ
+    note:
+      vi: Hai âm tiết 아 + 이, mỗi âm tiết đều có ㅇ câm phía trước.
+  - type: example
+    target: 오이
+    target_lang: ko
+    translation:
+      vi: dưa chuột
+    note:
+      vi: Đổi ㅏ thành ㅗ là đổi hẳn nghĩa - 아이 (đứa trẻ) và 오이 (dưa chuột).
+  - type: common_mistake
+    wrong: ㅏㅣ
+    right: 아이
+    target_lang: ko
+    note:
+      vi: Nguyên âm không đứng một mình thành chữ. Âm tiết luôn cần phụ âm đầu; nếu không có thì thêm ㅇ câm.
+  - type: common_mistake
+    wrong: 어이
+    right: 오이
+    target_lang: ko
+    note:
+      vi: Dưa chuột là 오이 với ㅗ ("ô", tròn môi). 어이 với ㅓ ("ơ") là tiếng gọi "này!", nghĩa khác hẳn.
+  - type: summary
+    points:
+      - vi: Mỗi âm tiết là một khối, luôn bắt đầu bằng phụ âm; không có phụ âm thì viết ㅇ câm.
+      - vi: Nguyên âm dọc (ㅏ ㅓ ㅣ ㅐ ㅔ) đặt bên phải, nguyên âm ngang (ㅗ ㅜ ㅡ) đặt bên dưới.
+      - vi: ㅓ "ơ" khác ㅗ "ô"; ㅡ "ư" khác ㅜ "u".
+      - vi: 아이 là đứa trẻ, 오이 là dưa chuột.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:vowels-eo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:vowel-eo
+    prompt:
+      stem: Nguyên âm nào đọc gần "ơ" trong tiếng Việt?
+      stem_lang: vi
+      options:
+        - { id: v3m, text: ㅗ, lang: ko }
+        - { id: k8d, text: ㅓ, lang: ko }
+        - { id: p1s, text: ㅡ, lang: ko }
+        - { id: x6a, text: ㅜ, lang: ko }
+    answer:
+      correct_option_id: k8d
+    explanation:
+      vi: ㅓ đọc gần "ơ", môi không tròn. ㅗ là "ô", ㅡ là "ư", ㅜ là "u".
+    display_answer: ㅓ
+
+  - key: ko:exercise:vowels-horizontal
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:vowel-eu
+    prompt:
+      stem: Âm tiết nào có nguyên âm nằm ngang, đặt bên dưới ㅇ?
+      stem_lang: vi
+      options:
+        - { id: h5c, text: 이, lang: ko }
+        - { id: z2r, text: 어, lang: ko }
+        - { id: d9w, text: 으, lang: ko }
+        - { id: m4y, text: 애, lang: ko }
+    answer:
+      correct_option_id: d9w
+    explanation:
+      vi: 으 gồm ㅇ và ㅡ nằm ngang bên dưới. 이, 어, 애 đều có nguyên âm dọc đặt bên phải ㅇ.
+    display_answer: 으
+
+  - key: ko:exercise:vowels-listen-ai
+    type: listen
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:ai
+    prompt:
+      audio_asset_id: null
+      fallback_text: 아이
+      options:
+        - { id: f7n, text: đứa trẻ, lang: vi }
+        - { id: b3q, text: dưa chuột, lang: vi }
+        - { id: s8j, text: cái cây, lang: vi }
+        - { id: w1t, text: biển, lang: vi }
+    answer:
+      correct_option_id: f7n
+    explanation:
+      vi: 아이 (a-i) nghĩa là đứa trẻ. Dưa chuột là 오이 (ô-i) - chỉ khác nguyên âm đầu.
+    display_answer: đứa trẻ
+
+  - key: ko:exercise:vowels-build-o
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:vowel-o
+    prompt:
+      instruction: Ghép các chữ cái thành âm tiết đọc là "ô".
+      tokens:
+        - { id: j4, text: ㅇ }
+        - { id: r7, text: ㅓ }
+        - { id: c2, text: ㅗ }
+        - { id: n9, text: ㅜ }
+    answer:
+      orders:
+        - [j4, c2]
+    explanation:
+      vi: '"ô" là ㅗ. Âm tiết không có phụ âm đầu nên thêm ㅇ câm - ㅇ + ㅗ = 오. ㅓ là "ơ", ㅜ là "u".'
+    display_answer: 오
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:vowels-fill-ieung
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ieung
+    prompt:
+      template: "Nguyên âm ㅏ viết thành âm tiết là {{b1}}; nguyên âm ㅜ viết thành âm tiết là {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [아]
+        b2: [우]
+    known_wrong:
+      - answer: ㅏ
+        feedback_vi: Nguyên âm không đứng một mình thành chữ; thêm ㅇ câm phía trước - 아.
+        error_tag: missing_ieung
+      - answer: ㅜ
+        feedback_vi: Nguyên âm không đứng một mình thành chữ; thêm ㅇ câm phía trên - 우.
+        error_tag: missing_ieung
+      - answer: 으
+        feedback_vi: 으 là "ư" (ㅡ). "u" tròn môi là ㅜ - 우.
+        error_tag: vowel_eu_u
+    explanation:
+      vi: Âm tiết không có phụ âm đầu thì viết ㅇ câm. ㅏ là nguyên âm dọc nên đặt bên phải (아); ㅜ là nguyên âm ngang nên đặt bên dưới (우).
+    display_answer: 아, 우
+
+  - key: ko:exercise:vowels-write-oi
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:oi
+    prompt:
+      source_text: dưa chuột
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 오이
+    known_wrong:
+      - answer: 어이
+        feedback_vi: ㅓ là "ơ". Dưa chuột là 오이 với ㅗ ("ô", tròn môi).
+        error_tag: vowel_eo_o
+      - answer: 우이
+        feedback_vi: ㅜ là "u". Dưa chuột là 오이 với ㅗ ("ô").
+        error_tag: vowel_o_u
+      - answer: oi
+        feedback_vi: Hãy gõ bằng chữ Hangul (오이), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Dưa chuột là 오이 - ㅇ câm + ㅗ, rồi ㅇ câm + ㅣ.
+    display_answer: 오이
+
+  # ---------------- application ----------------
+  - key: ko:exercise:vowels-meaning-ai
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:ai
+    prompt:
+      source_text: 아이
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - đứa trẻ
+        - trẻ con
+        - trẻ em
+        - đứa bé
+        - em bé
+        - đứa con
+        - con
+        - bé
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: dưa chuột
+        feedback_vi: Dưa chuột là 오이 (ô-i). 아이 (a-i) là đứa trẻ.
+        error_tag: vowel_a_o
+    explanation:
+      vi: 아이 nghĩa là đứa trẻ, cũng dùng để nói "con" của ai đó.
+    display_answer: đứa trẻ
+
+  - key: ko:exercise:vowels-build-oi
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:oi
+    prompt:
+      instruction: Ghép các chữ cái thành từ có nghĩa "dưa chuột".
+      tokens:
+        - { id: q1, text: ㅇ }
+        - { id: e5, text: ㅗ }
+        - { id: l8, text: ㅇ }
+        - { id: t3, text: ㅣ }
+        - { id: u6, text: ㅓ }
+        - { id: g2, text: ㅡ }
+    answer:
+      orders:
+        - [q1, e5, l8, t3]
+        - [l8, e5, q1, t3]
+    explanation:
+      vi: '오이 = (ㅇ + ㅗ) + (ㅇ + ㅣ). Dùng ㅗ ("ô"), không dùng ㅓ ("ơ").'
+    display_answer: 오이

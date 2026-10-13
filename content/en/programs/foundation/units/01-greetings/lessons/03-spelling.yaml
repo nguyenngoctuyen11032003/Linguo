@@ -1,0 +1,315 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:spelling
+order_index: 3
+level: pre_a1
+title:
+  vi: Bảng chữ cái & đánh vần tên
+objectives:
+  - vi: Đọc đúng tên các chữ cái dễ nhầm A, E, I, G, J, H, R, Y, Z.
+  - vi: Hỏi người khác đánh vần bằng How do you spell…? và Can you spell that, please?
+  - vi: Đánh vần tên mình, kể cả chữ cái đôi như double L.
+estimated_minutes: 8
+skills: [listening, speaking, vocabulary]
+prerequisites: [en:lesson:hello]
+items:
+  - item: en:item:alphabet
+  - item: en:item:letter
+  - item: en:item:spell
+  - item: en:item:double
+  - item: en:item:letter-names
+  - item: en:item:name
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đánh vần được tên mình và nhờ người khác đánh vần khi chưa nghe rõ.
+  - type: explain
+    text:
+      vi: Bảng chữ cái tiếng Anh có 26 chữ, nhưng tên chữ cái đọc khác tiếng Việt. A đọc "ây", E đọc "i", I đọc "ai" - ba chữ này người Việt hay đọc nhầm nhất.
+  - type: explain
+    text:
+      vi: Để hỏi cách viết một tên, bạn nói How do you spell your name? Nếu chưa nghe rõ, bạn nói Can you spell that, please? Khi đánh vần hai chữ giống nhau liền nhau, người bản xứ thường nói double, ví dụ Bell là B-E-double L.
+  - type: deep_explain
+    text:
+      vi: G đọc /dʒiː/ (gần "ji"), còn J đọc /dʒeɪ/ (gần "jây") - hai chữ này rất dễ bị đảo. H đọc /eɪtʃ/ (gần "ây-ch"), Y đọc /waɪ/ (gần "uai"). Z có hai cách - người Anh đọc /zed/, người Mỹ đọc /ziː/; cả hai đều đúng. W tên là double U.
+  - type: example
+    target: "A: How do you spell your name? B: N-A-M."
+    target_lang: en
+    translation:
+      vi: "A: Tên bạn đánh vần thế nào? B: N-A-M."
+  - type: example
+    target: Can you spell that, please?
+    target_lang: en
+    translation:
+      vi: Bạn đánh vần giúp mình từ đó được không?
+    note:
+      vi: Please làm câu nhờ vả lịch sự hơn.
+  - type: example
+    target: "Bell: B-E-double L."
+    target_lang: en
+    translation:
+      vi: "Bell: B-E-L-L."
+    note:
+      vi: Double L nghĩa là hai chữ L liền nhau.
+  - type: common_mistake
+    wrong: How you spell your name?
+    right: How do you spell your name?
+    target_lang: en
+    note:
+      vi: Câu hỏi với động từ thường cần trợ động từ do đứng sau How. Tiếng Việt không có từ tương ứng nên người Việt hay bỏ quên.
+  - type: summary
+    points:
+      - vi: A "ây", E "i", I "ai" - đọc tên chữ cái khác tiếng Việt.
+      - vi: G là "ji", J là "jây"; Z là "zed" (Anh) hoặc "zi" (Mỹ).
+      - vi: "Hỏi đánh vần: How do you spell your name? / Can you spell that, please?"
+      - vi: Hai chữ giống nhau liền nhau nói double, ví dụ double L.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:spelling-letter-a
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:letter-names
+    prompt:
+      stem: Chữ cái nào có tên đọc là /eɪ/ (gần "ây")?
+      stem_lang: vi
+      options:
+        - { id: a7r, text: E, lang: en }
+        - { id: h2c, text: A, lang: en }
+        - { id: m5y, text: I, lang: en }
+        - { id: t8w, text: Y, lang: en }
+    answer:
+      correct_option_id: h2c
+    explanation:
+      vi: A đọc /eɪ/ ("ây"). E đọc /iː/ ("i"), I đọc /aɪ/ ("ai"), Y đọc /waɪ/ ("uai").
+    display_answer: A
+
+  - key: en:exercise:spelling-letter-g
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:letter-names
+    prompt:
+      stem: Tên chữ cái G đọc thế nào?
+      stem_lang: vi
+      options:
+        - { id: e4n, text: /dʒeɪ/, lang: en }
+        - { id: z1k, text: /ɡeɪ/, lang: en }
+        - { id: b6s, text: /dʒiː/, lang: en }
+        - { id: q3v, text: /ɡiː/, lang: en }
+    answer:
+      correct_option_id: b6s
+    explanation:
+      vi: G đọc /dʒiː/ (gần "ji"). /dʒeɪ/ (gần "jây") là tên của chữ J - hai chữ này rất hay bị đảo.
+    display_answer: /dʒiː/
+
+  - key: en:exercise:spelling-listen-question
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:spell
+    prompt:
+      audio_asset_id: null
+      fallback_text: How do you spell your name?
+      options:
+        - { id: s9d, text: Tên bạn đánh vần thế nào?, lang: vi }
+        - { id: k2m, text: Bạn tên là gì?, lang: vi }
+        - { id: u6p, text: Bạn đến từ đâu?, lang: vi }
+        - { id: f3x, text: Bạn nói chậm lại được không?, lang: vi }
+    answer:
+      correct_option_id: s9d
+    explanation:
+      vi: Spell là "đánh vần". How do you spell your name? là hỏi cách viết tên, khác với What's your name? (hỏi tên).
+    display_answer: Tên bạn đánh vần thế nào?
+
+  - key: en:exercise:spelling-order-question
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:spell
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: \"Tên bạn đánh vần thế nào?\""
+      tokens:
+        - { id: o-how, text: How }
+        - { id: o-do, text: do }
+        - { id: o-you, text: you }
+        - { id: o-spell, text: spell }
+        - { id: o-your, text: your }
+        - { id: o-name, text: name }
+        - { id: o-what, text: what }
+        - { id: o-is, text: is }
+    answer:
+      orders:
+        - [o-how, o-do, o-you, o-spell, o-your, o-name]
+    explanation:
+      vi: Câu hỏi có dạng How + do + you + spell + your name. Không thiếu được do.
+    display_answer: How do you spell your name?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:spelling-fill-spell
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 1
+    item: en:item:spell
+    prompt:
+      template: "A: How do you {{b1}} your name? B: L-A-N."
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [spell]
+    known_wrong:
+      - answer: say
+        feedback_vi: B trả lời bằng từng chữ cái, nên câu hỏi là về cách đánh vần - spell.
+        error_tag: word_choice
+      - answer: read
+        feedback_vi: B trả lời bằng từng chữ cái, nên câu hỏi là về cách đánh vần - spell.
+        error_tag: word_choice
+    explanation:
+      vi: Spell nghĩa là "đánh vần". Câu trả lời L-A-N cho thấy người hỏi muốn biết từng chữ cái.
+    display_answer: "A: How do you spell your name? B: L-A-N."
+
+  - key: en:exercise:spelling-fill-double
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:double
+    prompt:
+      template: "Tên Bill được đánh vần là B-I-{{b1}} L."
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [double]
+    known_wrong:
+      - answer: two
+        feedback_vi: Khi đánh vần, hai chữ giống nhau liền nhau được gọi là double, không nói two.
+        error_tag: word_choice
+    explanation:
+      vi: Bill có hai chữ L liền nhau, nên đánh vần là B-I-double L.
+    display_answer: B-I-double L
+
+  - key: en:exercise:spelling-translate-ask
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:spell
+    prompt:
+      source_text: Tên bạn đánh vần thế nào?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - How do you spell your name?
+        - How do you spell your name, please?
+        - Can you spell your name?
+        - Can you spell your name, please?
+        - Could you spell your name, please?
+        - Could you spell your name?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: How you spell your name?
+        feedback_vi: Thiếu do - How do you spell your name?
+        error_tag: missing_do
+      - answer: How do you spell you name?
+        feedback_vi: Trước name cần your (của bạn), không phải you.
+        error_tag: possessive
+      - answer: What is your name?
+        feedback_vi: Câu này chỉ hỏi tên. Để hỏi cách viết, dùng How do you spell your name?
+        error_tag: word_choice
+    explanation:
+      vi: Mẫu câu là How do you spell + từ cần đánh vần. Cũng có thể nhờ lịch sự - Can you spell your name, please?
+    display_answer: How do you spell your name?
+
+  # ---------------- application ----------------
+  - key: en:exercise:spelling-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:spell
+    prompt:
+      stem: "Bạn tên Huy. Người đối diện hỏi: \"How do you spell that?\" Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: w8j, text: My name is Huy., lang: en }
+        - { id: c3t, text: H-U-Y., lang: en }
+        - { id: r1f, text: "Yes, I can.", lang: en }
+        - { id: n7q, text: "Nice to meet you, too.", lang: en }
+    answer:
+      correct_option_id: c3t
+    explanation:
+      vi: Người kia đã biết tên bạn và muốn biết cách viết, nên bạn đọc từng chữ cái - H-U-Y (đọc "ây-ch, iu, uai").
+    display_answer: H-U-Y.
+
+  - key: en:exercise:spelling-translate-please
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:spell
+    prompt:
+      source_text: Can you spell that, please?
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bạn đánh vần giúp mình từ đó được không?
+        - Bạn đánh vần giúp tôi từ đó được không?
+        - Bạn có thể đánh vần từ đó được không?
+        - Bạn có thể đánh vần từ đó không?
+        - Bạn có thể đánh vần giúp tôi được không?
+        - Bạn có thể đánh vần giúp mình được không?
+        - Bạn đánh vần giúp tôi được không?
+        - Bạn đánh vần giúp mình được không?
+        - Bạn đánh vần từ đó được không?
+        - Bạn đánh vần cái đó được không?
+        - Bạn có thể đánh vần cái đó không?
+        - Bạn có thể đánh vần nó không?
+        - Bạn đánh vần giúp tôi nhé?
+        - Bạn đánh vần giúp mình nhé?
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Can you…, please? là lời nhờ lịch sự, tương đương "Bạn… giúp mình được không?". That chỉ từ hoặc tên vừa được nói đến.
+    display_answer: Bạn đánh vần giúp mình từ đó được không?
+
+  - key: en:exercise:spelling-order-again
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:spell
+    prompt:
+      instruction: "Bạn chưa nghe rõ tên một người. Sắp xếp thành câu: \"Bạn đánh vần lại giúp mình được không?\""
+      tokens:
+        - { id: g-can, text: can }
+        - { id: g-you, text: you }
+        - { id: g-spell, text: spell }
+        - { id: g-that, text: that }
+        - { id: g-again, text: again }
+        - { id: g-please, text: please }
+        - { id: g-do, text: do }
+        - { id: g-how, text: how }
+    answer:
+      orders:
+        - [g-can, g-you, g-spell, g-that, g-again, g-please]
+        - [g-please, g-can, g-you, g-spell, g-that, g-again]
+        - [g-can, g-you, g-please, g-spell, g-that, g-again]
+        - [g-can, g-you, g-spell, g-that, g-again]
+    explanation:
+      vi: Lời nhờ lịch sự bắt đầu bằng Can you + động từ; please đứng cuối câu (hoặc đầu câu, hoặc ngay sau you). Again là "lại", đứng sau that.
+    display_answer: Can you spell that again, please?

@@ -1,0 +1,10 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+sources:
+  - key: src:linguo-demo
+    title: Linguo tự soạn — demo, chưa kiểm duyệt
+    author_or_org: Linguo
+    url: null
+    license: own
+    attribution_required: false
+    demo: true

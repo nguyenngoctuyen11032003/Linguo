@@ -1,0 +1,372 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:i-am
+order_index: 2
+level: pre_a1
+title:
+  vi: Tôi là…
+objectives:
+  - vi: Giới thiệu nghề nghiệp của mình và người khác bằng I am, He is, She is, They are.
+  - vi: Chọn đúng a hoặc an trước nghề nghiệp theo âm đầu của từ.
+  - vi: Nói câu có đủ động từ be, không bỏ như khi nói tiếng Việt.
+estimated_minutes: 10
+skills: [grammar, vocabulary, writing]
+prerequisites: [en:lesson:hello]
+items:
+  - item: en:item:be-present
+  - item: en:item:a-an
+  - item: en:item:student
+  - item: en:item:teacher
+  - item: en:item:engineer
+  - item: en:item:doctor
+  - item: en:item:from
+  - item: en:item:name
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Tôi là sinh viên", "Cô ấy là kỹ sư", "Họ đến từ Hà Nội" bằng tiếng Anh với đúng am/is/are và a/an.
+  - type: explain
+    text:
+      vi: Tiếng Việt có thể nói "Tôi sinh viên" mà người nghe vẫn hiểu, nhưng tiếng Anh luôn cần động từ be ở giữa - I am a student. Be đổi dạng theo chủ ngữ - I đi với am; he, she, it đi với is; you, we, they đi với are.
+  - type: explain
+    text:
+      vi: Trước một nghề ở số ít, bạn cần a hoặc an (giống "một"). Dùng an trước từ bắt đầu bằng âm nguyên âm (an engineer), dùng a trước âm phụ âm (a teacher, a doctor). Số nhiều thì bỏ a/an và thêm -s - They are teachers.
+  - type: deep_explain
+    text:
+      vi: Bạn chọn a hay an theo âm đầu khi đọc, không theo chữ cái viết. University đọc bắt đầu bằng âm /j/ (gần "giu"), nên nói a university; hour có h câm, đọc bắt đầu bằng nguyên âm, nên nói an hour. Khi nói nhanh, I am thường rút gọn thành I'm, he is thành he's, they are thành they're.
+  - type: example
+    target: I am a student.
+    target_lang: en
+    translation:
+      vi: Tôi là sinh viên.
+    note:
+      vi: Tiếng Việt không cần "một", nhưng tiếng Anh cần a trước student.
+  - type: example
+    target: She is an engineer.
+    target_lang: en
+    translation:
+      vi: Cô ấy là kỹ sư.
+    note:
+      vi: Engineer bắt đầu bằng âm /e/ nên dùng an.
+  - type: example
+    target: They are teachers from Hanoi.
+    target_lang: en
+    translation:
+      vi: Họ là giáo viên đến từ Hà Nội.
+    note:
+      vi: Số nhiều - are, bỏ a, thêm -s vào teacher.
+  - type: common_mistake
+    wrong: I student.
+    right: I am a student.
+    target_lang: en
+    note:
+      vi: Thiếu am và a. Tiếng Anh không có kiểu câu "Tôi sinh viên"; luôn cần be, và cần a/an trước nghề ở số ít.
+  - type: common_mistake
+    wrong: He is a engineer.
+    right: He is an engineer.
+    target_lang: en
+    note:
+      vi: Engineer bắt đầu bằng âm nguyên âm /e/, nên phải dùng an.
+  - type: summary
+    points:
+      - vi: I am · he/she/it is · you/we/they are - không được bỏ be.
+      - vi: Nghề ở số ít cần a/an; an trước âm nguyên âm, a trước âm phụ âm.
+      - vi: Chọn a/an theo âm đọc, không theo chữ viết - a university, an hour.
+      - vi: Số nhiều bỏ a/an và thêm -s - They are teachers.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:i-am-mcq-is
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:be-present
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: She ___ a teacher."
+      stem_lang: vi
+      options:
+        - { id: p3a, text: am, lang: en }
+        - { id: f8e, text: is, lang: en }
+        - { id: y1m, text: are, lang: en }
+        - { id: c5r, text: be, lang: en }
+    answer:
+      correct_option_id: f8e
+    explanation:
+      vi: She (cô ấy) là ngôi thứ ba số ít, nên đi với is.
+    display_answer: is
+
+  - key: en:exercise:i-am-mcq-an
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:a-an
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: He is ___ engineer."
+      stem_lang: vi
+      options:
+        - { id: n6h, text: a, lang: en }
+        - { id: s2q, text: an, lang: en }
+        - { id: j9u, text: (không cần từ nào), lang: vi }
+    answer:
+      correct_option_id: s2q
+    explanation:
+      vi: Engineer bắt đầu bằng âm nguyên âm /e/, nên dùng an. Nghề ở số ít không được bỏ mạo từ.
+    display_answer: an
+
+  - key: en:exercise:i-am-listen-we
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:be-present
+    prompt:
+      audio_asset_id: null
+      fallback_text: We are students.
+      options:
+        - { id: g4z, text: Chúng tôi là sinh viên., lang: vi }
+        - { id: v7b, text: Họ là sinh viên., lang: vi }
+        - { id: o2x, text: Tôi là sinh viên., lang: vi }
+        - { id: l8k, text: Chúng tôi là giáo viên., lang: vi }
+    answer:
+      correct_option_id: g4z
+    explanation:
+      vi: We là "chúng tôi", students là "sinh viên" (số nhiều). "Họ" là they, giáo viên là teachers.
+    display_answer: Chúng tôi là sinh viên.
+
+  - key: en:exercise:i-am-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:a-an
+    prompt:
+      template: "I {{b1}} {{b2}} engineer."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi là kỹ sư."
+        - "Gợi ý: I đi với am; engineer bắt đầu bằng âm nguyên âm."
+    answer:
+      blanks:
+        b1: [am]
+        b2: [an]
+    known_wrong:
+      - answer: is
+        feedback_vi: Với I, động từ be là am.
+        error_tag: be_form
+      - answer: are
+        feedback_vi: Với I, động từ be là am.
+        error_tag: be_form
+    explanation:
+      vi: I luôn đi với am. Engineer bắt đầu bằng âm /e/ nên dùng an.
+    display_answer: I am an engineer.
+
+  - key: en:exercise:i-am-order-teacher
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:teacher
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Anh ấy là giáo viên.\""
+      tokens:
+        - { id: k-he, text: He }
+        - { id: k-is, text: is }
+        - { id: k-a, text: a }
+        - { id: k-teacher, text: teacher }
+        - { id: k-an, text: an }
+        - { id: k-are, text: are }
+    answer:
+      orders:
+        - [k-he, k-is, k-a, k-teacher]
+    explanation:
+      vi: He đi với is; teacher bắt đầu bằng âm phụ âm /t/ nên dùng a.
+    display_answer: He is a teacher.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:i-am-fill-are-is
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:be-present
+    prompt:
+      template: "We {{b1}} from Vietnam. Minh {{b2}} a doctor."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [are]
+        b2: [is]
+    explanation:
+      vi: We (chúng tôi) đi với are. Minh là một người, tương đương he/she, nên đi với is.
+    display_answer: We are from Vietnam. Minh is a doctor.
+
+  - key: en:exercise:i-am-translate-student
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:student
+    prompt:
+      source_text: Tôi là sinh viên.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I am a student.
+        - I'm a student.
+        - I am a university student.
+        - I'm a university student.
+        - I am a college student.
+        - I'm a college student.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I student.
+        feedback_vi: Thiếu am và a - I am a student.
+        error_tag: missing_be
+      - answer: I a student.
+        feedback_vi: Thiếu am - I am a student.
+        error_tag: missing_be
+      - answer: I am student.
+        feedback_vi: Thiếu a trước student - I am a student.
+        error_tag: article
+      - answer: I am an student.
+        feedback_vi: Student bắt đầu bằng âm phụ âm /s/, nên dùng a - I am a student.
+        error_tag: article
+      - answer: I is a student.
+        feedback_vi: Với I, động từ be là am - I am a student.
+        error_tag: be_form
+    explanation:
+      vi: Câu cần đủ ba phần - I + am + a student. Có thể nói gọn I'm a student.
+    display_answer: I am a student.
+
+  - key: en:exercise:i-am-translate-engineer
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:engineer
+    prompt:
+      source_text: Cô ấy là kỹ sư.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - She is an engineer.
+        - She's an engineer.
+        - She works as an engineer.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: She is a engineer.
+        feedback_vi: Engineer bắt đầu bằng âm nguyên âm /e/, nên dùng an.
+        error_tag: article
+      - answer: She engineer.
+        feedback_vi: Thiếu is và an - She is an engineer.
+        error_tag: missing_be
+      - answer: She an engineer.
+        feedback_vi: Thiếu is - She is an engineer.
+        error_tag: missing_be
+      - answer: She are an engineer.
+        feedback_vi: She đi với is, không phải are.
+        error_tag: be_form
+    explanation:
+      vi: She đi với is; engineer bắt đầu bằng âm nguyên âm nên dùng an.
+    display_answer: She is an engineer.
+
+  # ---------------- application ----------------
+  - key: en:exercise:i-am-translate-they
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:from
+    prompt:
+      source_text: They are teachers from Hanoi.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Họ là giáo viên đến từ Hà Nội.
+        - Họ là giáo viên từ Hà Nội.
+        - Họ là những giáo viên đến từ Hà Nội.
+        - Họ là những giáo viên từ Hà Nội.
+        - Họ là các giáo viên đến từ Hà Nội.
+        - Họ là các giáo viên từ Hà Nội.
+        - Họ là giáo viên người Hà Nội.
+        - Họ là giáo viên ở Hà Nội.
+        - Họ là thầy cô giáo đến từ Hà Nội.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: They là "họ", teachers là "giáo viên" (số nhiều), from Hanoi là "đến từ Hà Nội". Tiếng Việt không bắt buộc thêm "những".
+    display_answer: Họ là giáo viên đến từ Hà Nội.
+
+  - key: en:exercise:i-am-translate-two
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:a-an
+    prompt:
+      source_text: Anh ấy là kỹ sư, còn tôi là giáo viên.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - He is an engineer, and I am a teacher.
+        - He's an engineer, and I'm a teacher.
+        - He is an engineer, but I am a teacher.
+        - He's an engineer, but I'm a teacher.
+        - He is an engineer. I am a teacher.
+        - He's an engineer. I'm a teacher.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: He is a engineer, and I am a teacher.
+        feedback_vi: Engineer bắt đầu bằng âm nguyên âm, nên dùng an engineer.
+        error_tag: article
+      - answer: He engineer, and I teacher.
+        feedback_vi: Thiếu be và mạo từ - He is an engineer, and I am a teacher.
+        error_tag: missing_be
+      - answer: He is an engineer, and I is a teacher.
+        feedback_vi: I đi với am, không phải is.
+        error_tag: be_form
+      - answer: He is an engineer, and I am teacher.
+        feedback_vi: Thiếu a trước teacher.
+        error_tag: article
+    explanation:
+      vi: Mỗi vế cần đủ chủ ngữ + be + a/an + nghề - He is an engineer và I am a teacher. "Còn" có thể dịch là and hoặc but.
+    display_answer: He is an engineer, and I am a teacher.
+
+  - key: en:exercise:i-am-order-plural
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:engineer
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Chúng tôi là kỹ sư.\""
+      tokens:
+        - { id: p-we, text: We }
+        - { id: p-are, text: are }
+        - { id: p-engineers, text: engineers }
+        - { id: p-is, text: is }
+        - { id: p-an, text: an }
+        - { id: p-engineer, text: engineer }
+    answer:
+      orders:
+        - [p-we, p-are, p-engineers]
+    explanation:
+      vi: We đi với are. Nhiều người thì dùng số nhiều engineers và bỏ an.
+    display_answer: We are engineers.

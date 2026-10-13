@@ -1,0 +1,18 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+key: ko:program:hangul-basics
+language: ko
+title:
+  vi: Hangul và giao tiếp nền tảng
+description:
+  vi: Đọc và viết bảng chữ Hangul - nguyên âm, phụ âm, phụ âm bật hơi và căng - làm nền cho những câu giao tiếp đầu tiên (Hangul đến TOPIK 1). Nội dung demo, chưa qua kiểm duyệt.
+kind: core
+goal_types: []
+level_from: hangul
+level_to: topik1
+order_index: 1
