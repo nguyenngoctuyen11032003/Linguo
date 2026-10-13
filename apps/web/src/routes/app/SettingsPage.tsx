@@ -33,6 +33,14 @@ function timeZones(current: string): string[] {
   return all.includes(current) ? all : [current, ...all];
 }
 
+/** "3 câu trả lời", "2 lượt chấm thẻ ôn tập" or both: what still waits in the offline outboxes. */
+function pendingSummary(answers: number, grades: number): string {
+  const parts: string[] = [];
+  if (answers > 0) parts.push(`${answers} câu trả lời`);
+  if (grades > 0) parts.push(`${grades} lượt chấm thẻ ôn tập`);
+  return parts.join(' và ');
+}
+
 export function SettingsPage() {
   const { user } = useAuth();
   const userId = user?.id ?? '';
@@ -42,13 +50,19 @@ export function SettingsPage() {
   const toast = useToast();
   const navigate = useNavigate();
   const outbox = useOutboxSyncContext();
+  const pendingAnswers = outbox.pendingCount;
+  const pendingGrades = outbox.reviews.pendingCount;
+  const pendingTotal = pendingAnswers + pendingGrades;
 
   const [displayName, setDisplayName] = useState('');
   const [timezone, setTimezone] = useState(DEFAULT_TIMEZONE);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [saving, setSaving] = useState(false);
   const [signingOut, setSigningOut] = useState(false);
-  /** Sign-out was asked while answers still wait in the outbox: they only sync once this user signs in here again. */
+  /**
+   * Sign-out was asked while lesson answers or review grades still wait in their outboxes: they only sync once this
+   * user signs in here again.
+   */
   const [confirmSignOut, setConfirmSignOut] = useState(false);
   const [syncing, setSyncing] = useState(false);
   const prefSeq = useRef(0);
@@ -120,7 +134,7 @@ export function SettingsPage() {
     if (syncing) return;
     setSyncing(true);
     try {
-      await outbox.flush();
+      await Promise.all([outbox.flush(), outbox.reviews.flush()]);
     } finally {
       setSyncing(false);
     }
@@ -128,7 +142,7 @@ export function SettingsPage() {
 
   async function signOut(force = false) {
     if (signingOut) return;
-    if (outbox.pendingCount > 0 && !force) {
+    if (pendingTotal > 0 && !force) {
       setConfirmSignOut(true);
       return;
     }
@@ -146,7 +160,7 @@ export function SettingsPage() {
         }
         toast.show({ tone: 'error', message: 'Không đăng xuất được trên máy chủ, đã xoá phiên trên thiết bị này.' });
       }
-      // Queued answers stay in the outbox (sent when this user signs in here again), but the cached lesson text is
+      // Queued answers and grades stay in their outboxes (sent when this user signs in here again), but the cached lesson text is
       // only for offline reopening by this user and must not outlive the session on a shared device.
       if (userId) clearLessonCache(userId);
       navigate('/', { replace: true });
@@ -287,11 +301,11 @@ export function SettingsPage() {
         </SolidCard>
       </section>
 
-      {confirmSignOut && outbox.pendingCount > 0 && (
+      {confirmSignOut && pendingTotal > 0 && (
         <div role="alert" className="space-y-3 rounded-2xl bg-warn/15 px-4 py-3">
           <p className="text-[15px]">
-            Còn {outbox.pendingCount} câu trả lời chưa đồng bộ lên máy chủ. Nếu đăng xuất bây giờ, chúng chỉ được gửi khi bạn
-            đăng nhập lại trên thiết bị này.
+            Còn {pendingSummary(pendingAnswers, pendingGrades)} chưa đồng bộ lên máy chủ. Nếu đăng xuất bây giờ, chúng chỉ được
+            gửi khi bạn đăng nhập lại trên thiết bị này.
           </p>
           <div className="grid gap-2 sm:grid-cols-2">
             <Button variant="primary" loading={syncing} onClick={() => void syncNow()}>
