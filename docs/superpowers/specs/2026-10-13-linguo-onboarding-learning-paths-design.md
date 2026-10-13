@@ -60,7 +60,7 @@ GRANT: `select` cho `anon`, `authenticated`; không có quyền ghi.
 | `weekly_minutes` smallint[7] | Thứ Hai → Chủ nhật; mỗi phần tử 0–720; tổng > 0 |
 | `target_date` date null | |
 | `status` text check in ('active','paused','completed','archived') default 'active' | |
-| `estimate` jsonb not null | `{hours_needed, weeks_min, weeks_max, feasibility, suggested_minutes_per_day, suggested_date, assumptions}` |
+| `estimate` jsonb not null | `{hours_needed, weeks_min, weeks_mid, weeks_max, feasibility, suggested_minutes_per_day, suggested_date, assumptions}` |
 | `created_at`, `updated_at` timestamptz | trigger `set_updated_at` (đã có) |
 
 Ràng buộc: `target_level` có `ordinal` > `current_level`; unique index một phần `(user_id, language_code) where status <> 'archived'`.
@@ -126,7 +126,8 @@ UI luôn ghi "ước lượng", hiển thị giả định và nhãn "số giờ
 - LanguagePill: mục "+ Thêm ngôn ngữ" → `/app/bat-dau?lang=<code>` khi còn ngôn ngữ chưa có lộ trình.
 
 ### 6.2 Wizard `/app/bat-dau` (6 bước)
-Chung: thanh tiến độ RouteLine nhỏ vẽ giữa các bước (200ms, tôn trọng giảm chuyển động); nút "Tiếp tục" cố định đáy có `pb-safe`; nút "Quay lại"; tiêu đề `h1` mỗi bước và focus chuyển vào tiêu đề khi đổi bước; bản nháp `localStorage['linguo-onboarding-draft']` dạng `{ version: 1, step, data }`, kiểm bằng zod — sai/hỏng → xoá, về bước 1, toast thông báo; xoá bản nháp khi tạo thành công.
+Chung: chỉ báo tiến độ là một thanh (`role="progressbar"`, chuyển 200ms, tôn trọng giảm chuyển động); nút "Tiếp tục" cố định đáy có `pb-safe`; nút "Quay lại"; tiêu đề `h1` mỗi bước và focus chuyển vào tiêu đề khi đổi bước; bản nháp `localStorage['linguo-onboarding-draft']` dạng `{ version: 1, step, data }`, kiểm bằng zod — sai/hỏng → xoá, về bước 1, toast thông báo; xoá bản nháp khi tạo thành công.
+Bước hiện tại nằm trên URL qua tham số `buoc` (`?buoc=<n>`): nút Back của thiết bị/trình duyệt chuyển giữa các bước. `?lang=<code>` với ngôn ngữ còn khả dụng (chưa có lộ trình) bắt đầu một bản nháp mới ở bước 2 (đã chọn ngôn ngữ). Bản nháp khôi phục từ `localStorage` luôn được kiểm lại (zod và các ràng buộc theo ngôn ngữ/bậc/lịch) trước khi dùng.
 
 1. **Ngôn ngữ** — 2 thẻ "Tiếng Anh · English" / "Tiếng Hàn · 한국어" (`lang` cho chữ Hàn); thẻ đã có lộ trình bị khóa với nhãn "Đã có lộ trình". `?lang=` chọn sẵn.
 2. **Điểm xuất phát** — 5 lựa chọn (PRD 4.1 bước 2); "Chưa chắc" kèm ghi chú bài kiểm tra đầu vào sắp có.
@@ -165,7 +166,7 @@ supabase/migrations/<ts>_learning_paths.sql
 supabase/tests/learning_paths.test.sql
 ```
 
-`AppLayout`: `ProfileProvider > LearningPathsProvider > …`. Router thêm `/app/bat-dau`. `LanguagePill` đổi API sang props (`paths`, `currentId`, `onSelect`, `onAdd`), AppBar truyền dữ liệu từ provider.
+Các provider (`ProfileProvider > LearningPathsProvider`) nằm trong `routes/app/AppRoute.tsx` (route bọc `/app`), nên `/app/bat-dau` render ngoài `AppLayout` (không có AppBar/thanh điều hướng) nhưng vẫn dùng chung dữ liệu. Router thêm `/app/bat-dau`. `LanguagePill` đổi API sang props (`paths`, `currentId`, `onSelect`, `onAdd`), AppBar truyền dữ liệu từ provider.
 
 ## 8. Xử lý lỗi
 
