@@ -5,6 +5,7 @@
 // be an accepted answer of any blank (see gradingErrors).
 import * as shared from '@linguo/shared';
 import { diagnosticErrors, diagnosticItems } from './diagnostic.mjs';
+import { examErrors, examFiles } from './exam.mjs';
 import { effectiveStatus, indexContent } from './load.mjs';
 
 const { LEVELS, REQUIRED_BLOCKS, EXERCISE_STAGES, isGoalForLanguage, isLevelOf, levelOrdinal } = shared;
@@ -215,6 +216,10 @@ export function checkContent(loaded, { grade = sharedGrader(), diagnosticMinPerC
     for (const ex of l.data.exercises) claimKey(l.file, ex.key, l.lang);
   }
   for (const d of diagnosticItems(loaded.files)) claimKey(d.file, d.data.key, d.lang);
+  for (const f of examFiles(loaded.files)) {
+    claimKey(f.file, f.data.form.key, f.lang);
+    for (const qn of f.data.questions) claimKey(f.file, qn.key, f.lang);
+  }
 
   const sourceKeys = new Set(sources.map((s) => s.data.key));
   const requireSource = (file, key) => {
@@ -342,6 +347,9 @@ export function checkContent(loaded, { grade = sharedGrader(), diagnosticMinPerC
 
   // --- diagnostic item bank ----------------------------------------------------------------------
   errors.push(...diagnosticErrors(loaded.files, diagnosticMinPerCell === undefined ? {} : { minPerCell: diagnosticMinPerCell }));
+
+  // --- exam practice forms -----------------------------------------------------------------------
+  errors.push(...examErrors(loaded.files, { sourceKeys }));
 
   return errors;
 }

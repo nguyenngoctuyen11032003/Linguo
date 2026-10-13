@@ -1,0 +1,453 @@
+# DEMO — chưa kiểm duyệt
+# Bài luyện mô phỏng trình độ CEFR A2 do Linguo tự soạn (nguồn src:linguo-demo). Không phải đề thi của
+# Cambridge hay bất kỳ tổ chức nào, không chép đề thật. CEFR không quy đổi điểm: chỉ đánh giá "đạt mức" theo phần.
+schema_version: 1
+demo: true
+language: en
+form:
+  key: en:exam:cefr-a2-mock-1
+  family: cefr
+  title_vi: CEFR A2 — Bài luyện mô phỏng số 1
+  description_vi: >-
+    Bài luyện mô phỏng trình độ A2: 8 câu nghe, 10 câu đọc và 1 email ngắn. Nội dung do Linguo tự soạn, không phải
+    đề thi chính thức; kết quả cho biết bạn đạt mức A2 ở từng phần hay chưa, không quy đổi sang điểm của kỳ thi nào.
+  level_from: a1
+  level_to: a2
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 15
+    reading: 20
+    writing: 20
+  scoring:
+    verified: false
+    source_note_vi: >-
+      Ngưỡng “đạt mức A2” (đúng từ 60% số điểm mỗi phần) do Linguo đặt để luyện tập, không phải quy định của CEFR hay
+      của kỳ thi nào. Chưa được đối chiếu; bài viết email không được chấm tự động.
+    section_max: {}
+    bands: []
+    pass_ratio: 0.6
+questions:
+  # ============================== NGHE (Listening) ==============================
+  - key: en:examq:cefr-a2-m1-l01
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_detail
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: What time will they see the film?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Woman: Shall we see the new film tonight?
+        Man: Sure. What time does it start?
+        Woman: There's one at half past six, but I finish work at six. Let's go to the eight o'clock one.
+        Man: OK, eight it is.
+      options:
+        - { id: a, text: "6:00", lang: en }
+        - { id: b, text: "6:30", lang: en }
+        - { id: c, text: "8:00", lang: en }
+    answer: c
+    explanation:
+      vi: "Người nữ tan làm lúc 6 giờ nên đề nghị xem suất 8 giờ, và người nam đồng ý (“eight it is”). 6:30 (“half past six”) là bẫy: suất đó có thật nhưng họ không chọn vì không kịp."
+
+  - key: en:examq:cefr-a2-m1-l02
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_detail
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: How much does the man pay for the trainers?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Man: Excuse me, how much are these trainers?
+        Woman: They're forty-five pounds. But everything in the shop is twenty percent off today, so you pay thirty-six pounds.
+        Man: Great. I'll take them.
+      options:
+        - { id: a, text: "£45", lang: en }
+        - { id: b, text: "£36", lang: en }
+        - { id: c, text: "£20", lang: en }
+    answer: b
+    explanation:
+      vi: "Giá gốc là 45 bảng nhưng hôm nay giảm 20%, nên người nam trả 36 bảng (“you pay thirty-six pounds”). 45 bảng là bẫy vì được nghe đầu tiên; còn 20 là phần trăm giảm giá chứ không phải số tiền."
+
+  - key: en:examq:cefr-a2-m1-l03
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_detail
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe tin nhắn thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Why can't Anna meet Tom on Saturday?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Woman: Hi Tom, it's Anna. I'm sorry, but I can't meet you at the café on Saturday. My grandmother is coming to visit us for the weekend. Can we meet on Sunday morning instead? Call me back. Bye!
+      options:
+        - { id: a, text: "She has to work.", lang: en }
+        - { id: b, text: "Her grandmother is visiting.", lang: en }
+        - { id: c, text: "The café is closed.", lang: en }
+    answer: b
+    explanation:
+      vi: "Anna nói bà của cô sẽ đến thăm vào cuối tuần (“My grandmother is coming to visit us”). Phương án “The café is closed” là bẫy vì có nhắc quán cà phê, nhưng đó chỉ là nơi hẹn, không phải lý do."
+
+  - key: en:examq:cefr-a2-m1-l04
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_gist
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn câu mô tả đúng việc đang diễn ra.
+      stem: What is the man doing?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Man: Excuse me, I think I left my umbrella here yesterday. It's black with a wooden handle.
+        Woman: Let me check the lost property box... Is this it?
+        Man: Yes, that's it! Thank you so much.
+      options:
+        - { id: a, text: "He is buying a new umbrella.", lang: en }
+        - { id: b, text: "He is looking for something he lost.", lang: en }
+        - { id: c, text: "He is asking about the weather.", lang: en }
+    answer: b
+    explanation:
+      vi: "“I left my umbrella here” (tôi để quên ô ở đây) và “lost property” (đồ thất lạc) cho thấy người nam đang tìm lại đồ bị quên. Phương án a là bẫy vì có từ umbrella, nhưng anh không mua ô mới."
+
+  - key: en:examq:cefr-a2-m1-l05
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_gist
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn nói và chọn chủ đề chính.
+      stem: What is the teacher mainly talking about?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Woman: Good morning, everyone. Before we start today's lesson, I want to remind you about the school trip to the science museum next Friday. Please bring the form, signed by your parents, by Wednesday.
+      options:
+        - { id: a, text: "a test next Friday", lang: en }
+        - { id: b, text: "a school trip", lang: en }
+        - { id: c, text: "a new science teacher", lang: en }
+    answer: b
+    explanation:
+      vi: "Cô giáo nhắc về chuyến tham quan bảo tàng khoa học (“the school trip to the science museum”) và hạn nộp giấy đồng ý. Phương án a và c là bẫy vì lặp lại từ “Friday” và “science”, nhưng không có bài kiểm tra hay giáo viên mới nào."
+
+  - key: en:examq:cefr-a2-m1-l06
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_announcement
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo và chọn đáp án đúng cho câu hỏi.
+      stem: Which platform does the train to Manchester leave from now?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Attention, please. The train to Manchester, which was leaving from platform four, will now leave from platform seven. The train is also running ten minutes late. We are sorry for the delay.
+      options:
+        - { id: a, text: "Platform 4", lang: en }
+        - { id: b, text: "Platform 7", lang: en }
+        - { id: c, text: "Platform 10", lang: en }
+    answer: b
+    explanation:
+      vi: "“Will now leave from platform seven” nghĩa là bây giờ tàu chạy từ sân ga số 7. Sân ga số 4 là bẫy vì đó là chỗ cũ (“was leaving from”); còn 10 là số phút tàu bị trễ."
+
+  - key: en:examq:cefr-a2-m1-l07
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_announcement
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo và chọn đáp án đúng cho câu hỏi.
+      stem: What can't visitors do today?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Welcome to City Sports Centre. The swimming pool is closed today for cleaning. It will open again tomorrow at seven a.m. The gym and the tennis courts are open as usual.
+      options:
+        - { id: a, text: "use the gym", lang: en }
+        - { id: b, text: "go swimming", lang: en }
+        - { id: c, text: "play tennis", lang: en }
+    answer: b
+    explanation:
+      vi: "Hồ bơi đóng cửa hôm nay để vệ sinh (“closed today for cleaning”), nên khách không thể bơi. Phòng gym và sân tennis vẫn mở như thường (“open as usual”), vì vậy hai phương án kia sai."
+
+  - key: en:examq:cefr-a2-m1-l08
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_announcement
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo và chọn đáp án đúng cho câu hỏi.
+      stem: What does the announcement say?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Good afternoon, shoppers. The supermarket will close in fifteen minutes. Please take your shopping to the checkouts now. Thank you.
+      options:
+        - { id: a, text: "The supermarket is opening now.", lang: en }
+        - { id: b, text: "The supermarket will close soon.", lang: en }
+        - { id: c, text: "The checkouts are closed.", lang: en }
+    answer: b
+    explanation:
+      vi: "“Will close in fifteen minutes” nghĩa là siêu thị sẽ đóng cửa sau 15 phút nữa. Phương án c sai vì khách được mời mang hàng đến quầy thanh toán ngay, tức là quầy vẫn đang mở."
+
+  # ============================== ĐỌC (Reading) ==============================
+  - key: en:examq:cefr-a2-m1-r01
+    section: reading
+    kind: mcq
+    question_type: cefr_read_notice
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Đọc biển báo và chọn câu có nghĩa giống nhất.
+      stem: What does the sign say?
+      stem_lang: en
+      passage: PLEASE DO NOT FEED THE ANIMALS
+      options:
+        - { id: a, text: "You can buy food for the animals here.", lang: en }
+        - { id: b, text: "You must not give food to the animals.", lang: en }
+        - { id: c, text: "The animals are hungry.", lang: en }
+    answer: b
+    explanation:
+      vi: "“Do not feed” nghĩa là không cho ăn, giống “must not give food” (không được đưa thức ăn). Phương án a là bẫy vì có chữ food, nhưng biển báo không nói về việc bán thức ăn."
+
+  - key: en:examq:cefr-a2-m1-r02
+    section: reading
+    kind: mcq
+    question_type: cefr_read_notice
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc thông báo và chọn câu có nghĩa giống nhất.
+      stem: What does the notice say?
+      stem_lang: en
+      passage: Library books must be returned within 14 days.
+      options:
+        - { id: a, text: "You can borrow 14 books at a time.", lang: en }
+        - { id: b, text: "You must bring books back in two weeks or less.", lang: en }
+        - { id: c, text: "The library is closed for 14 days.", lang: en }
+    answer: b
+    explanation:
+      vi: "“Within 14 days” là trong vòng 14 ngày, tức là hai tuần hoặc sớm hơn, và “return” = “bring back”. Phương án a là bẫy vì con số 14 chỉ số ngày, không phải số sách được mượn."
+
+  - key: en:examq:cefr-a2-m1-r03
+    section: reading
+    kind: mcq
+    question_type: cefr_read_notice
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc lời nhắn và chọn việc người nhận cần làm.
+      stem: What should Mia do?
+      stem_lang: en
+      passage: |-
+        Mia,
+        Dad called. He'll pick you up from football at 5:30, not 5:00. Don't forget your boots!
+        Mum
+      options:
+        - { id: a, text: "Wait for her dad until 5:30.", lang: en }
+        - { id: b, text: "Call her dad at 5:00.", lang: en }
+        - { id: c, text: "Buy new football boots.", lang: en }
+    answer: a
+    explanation:
+      vi: "Bố sẽ đón Mia lúc 5:30 thay vì 5:00, nên Mia cần chờ đến 5:30. Phương án b sai vì người gọi điện là bố (“Dad called”), Mia không cần gọi lại; lời nhắn chỉ dặn đừng quên giày chứ không bảo mua giày mới."
+
+  - key: en:examq:cefr-a2-m1-r04
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the word that best fits the gap.
+      stem_lang: en
+      passage: My brother is a doctor. He ___ in a hospital in the city centre.
+      options:
+        - { id: a, text: "works", lang: en }
+        - { id: b, text: "work", lang: en }
+        - { id: c, text: "working", lang: en }
+    answer: a
+    explanation:
+      vi: "Chủ ngữ He ở thì hiện tại đơn nên động từ thêm -s: “He works”. Người Việt hay quên -s (“He work”) vì tiếng Việt không chia động từ; “working” thì cần có “is” đứng trước."
+
+  - key: en:examq:cefr-a2-m1-r05
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the word that best fits the gap.
+      stem_lang: en
+      passage: I've lived in this town ___ 2019.
+      options:
+        - { id: a, text: "since", lang: en }
+        - { id: b, text: "for", lang: en }
+        - { id: c, text: "from", lang: en }
+    answer: a
+    explanation:
+      vi: "Với thì hiện tại hoàn thành, “since” đi với mốc thời gian (since 2019), còn “for” đi với khoảng thời gian (for five years). “From” cần có “to/until” đi kèm và không dùng kiểu này với “I've lived”."
+
+  - key: en:examq:cefr-a2-m1-r06
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the word that best fits the gap.
+      stem_lang: en
+      passage: I'm really ___ in history, so I read a lot of books about it.
+      options:
+        - { id: a, text: "interested", lang: en }
+        - { id: b, text: "interesting", lang: en }
+        - { id: c, text: "interest", lang: en }
+    answer: a
+    explanation:
+      vi: "Tính từ đuôi -ed tả cảm xúc của người (I'm interested in… = tôi thích, quan tâm), đuôi -ing tả tính chất của sự vật (History is interesting). “I'm interesting” nghĩa là “tôi là người thú vị”, không hợp với “in history”."
+
+  - key: en:examq:cefr-a2-m1-r07
+    section: reading
+    kind: mcq
+    question_type: cefr_read_detail
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc email và chọn đáp án đúng cho câu hỏi.
+      stem: Where is Lucy staying?
+      stem_lang: en
+      passage: |-
+        Hi Sam,
+        Thanks for your email. I'm having a great time in Edinburgh! I'm staying with my aunt and uncle in a small flat near the castle. The weather isn't great – it rained on Monday and Tuesday – but today it's sunny, so we're going to walk up the hill behind the city this afternoon. Yesterday we went to a museum about the history of Scotland. It was free, and I loved it. I'm coming home next Saturday by train because it's cheaper than flying.
+        See you soon,
+        Lucy
+      options:
+        - { id: a, text: "in a hotel near the castle", lang: en }
+        - { id: b, text: "with members of her family", lang: en }
+        - { id: c, text: "in a flat with some friends", lang: en }
+    answer: b
+    explanation:
+      vi: "Lucy ở với cô và chú (“my aunt and uncle”), tức là người trong gia đình. Phương án a là bẫy vì nhắc lâu đài (castle), nhưng cô ở căn hộ chứ không phải khách sạn; phương án c sai vì ở cùng họ hàng chứ không phải bạn bè."
+
+  - key: en:examq:cefr-a2-m1-r08
+    section: reading
+    kind: mcq
+    question_type: cefr_read_detail
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc email và chọn đáp án đúng cho câu hỏi.
+      stem: What is Lucy going to do this afternoon?
+      stem_lang: en
+      passage: |-
+        Hi Sam,
+        Thanks for your email. I'm having a great time in Edinburgh! I'm staying with my aunt and uncle in a small flat near the castle. The weather isn't great – it rained on Monday and Tuesday – but today it's sunny, so we're going to walk up the hill behind the city this afternoon. Yesterday we went to a museum about the history of Scotland. It was free, and I loved it. I'm coming home next Saturday by train because it's cheaper than flying.
+        See you soon,
+        Lucy
+      options:
+        - { id: a, text: "visit a museum", lang: en }
+        - { id: b, text: "go for a walk", lang: en }
+        - { id: c, text: "take a train home", lang: en }
+    answer: b
+    explanation:
+      vi: "“We're going to walk up the hill … this afternoon” cho biết chiều nay họ đi bộ lên đồi. Bảo tàng là việc đã làm hôm qua (“Yesterday”), còn đi tàu về nhà là thứ Bảy tuần sau."
+
+  - key: en:examq:cefr-a2-m1-r09
+    section: reading
+    kind: mcq
+    question_type: cefr_read_detail
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc email và chọn đáp án đúng cho câu hỏi.
+      stem: Why is Lucy going home by train?
+      stem_lang: en
+      passage: |-
+        Hi Sam,
+        Thanks for your email. I'm having a great time in Edinburgh! I'm staying with my aunt and uncle in a small flat near the castle. The weather isn't great – it rained on Monday and Tuesday – but today it's sunny, so we're going to walk up the hill behind the city this afternoon. Yesterday we went to a museum about the history of Scotland. It was free, and I loved it. I'm coming home next Saturday by train because it's cheaper than flying.
+        See you soon,
+        Lucy
+      options:
+        - { id: a, text: "It is faster than flying.", lang: en }
+        - { id: b, text: "It costs less than flying.", lang: en }
+        - { id: c, text: "She is afraid of flying.", lang: en }
+    answer: b
+    explanation:
+      vi: "“Because it's cheaper than flying” nghĩa là đi tàu rẻ hơn máy bay, tức là “costs less”. Email không nói đi tàu nhanh hơn hay Lucy sợ đi máy bay; thực tế máy bay thường nhanh hơn."
+
+  - key: en:examq:cefr-a2-m1-r10
+    section: reading
+    kind: mcq
+    question_type: cefr_read_detail
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc tin tuyển dụng và chọn câu đúng.
+      stem: Which sentence about the job is true?
+      stem_lang: en
+      passage: |-
+        WAITER / WAITRESS WANTED
+        Green Street Café is looking for a part-time waiter or waitress. You must be 18 or older and able to work on Saturdays and Sundays. No experience is needed – we will train you. To apply, please come to the café and ask for Maria.
+      options:
+        - { id: a, text: "You need to have experience.", lang: en }
+        - { id: b, text: "You must be able to work at the weekend.", lang: en }
+        - { id: c, text: "You should send an email to Maria.", lang: en }
+    answer: b
+    explanation:
+      vi: "Tin tuyển dụng yêu cầu làm được thứ Bảy và Chủ nhật, tức là cuối tuần (“at the weekend”). Phương án a sai vì “No experience is needed”; phương án c sai vì phải đến quán gặp Maria, không gửi email."
+
+  # ============================== VIẾT (Writing) ==============================
+  - key: en:examq:cefr-a2-m1-w01
+    section: writing
+    kind: essay
+    question_type: cefr_write_email
+    level_code: a2
+    points: 10
+    prompt:
+      instruction_vi: >-
+        Viết một email ngắn bằng tiếng Anh (khoảng 25–60 từ) trả lời đủ ba ý trong đề. Viết thành câu hoàn chỉnh,
+        có lời chào và lời kết.
+      stem: |-
+        You want to go to the cinema with your English friend, Alex, on Saturday. Write an email to Alex. In your email:
+        • suggest a film
+        • say what time you want to meet
+        • say where you want to meet.
+        Write 25 words or more.
+      stem_lang: en
+      min_chars: 120
+      max_chars: 600
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Trả lời đủ ba ý (gợi ý phim, giờ gặp, chỗ gặp) rõ ràng để Alex hiểu ngay; thiếu một ý là mất điểm phần này.
+        max_points: 4
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Có lời chào (Hi Alex,), nội dung theo thứ tự hợp lý, lời kết và tên (See you soon, …); câu nối bằng and, but, because, so.
+        max_points: 3
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Dùng đúng cấu trúc rủ rê và hẹn giờ (Let's…, Shall we…?, at 6 o'clock, outside the cinema), chia động từ và chính tả đúng ở mức A2.
+        max_points: 3
+    sample_answer: |-
+      Hi Alex,
+      Shall we go to the cinema on Saturday? Let's see the new space film – my brother says it's really exciting. It starts at 7 p.m., so let's meet at 6:30 outside the cinema on King Street. We can buy some popcorn before it starts.
+      See you soon,
+      Linh
+    explanation:
+      vi: "Bài email A2 được chấm chủ yếu ở việc trả lời đủ cả ba ý và viết câu đúng, đơn giản. Lỗi hay gặp là quên một ý (thường là chỗ gặp), viết “meet in 6:30” thay vì “at 6:30”, hoặc thiếu lời chào và lời kết."
