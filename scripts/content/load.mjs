@@ -30,9 +30,21 @@ function walk(dir) {
   return out;
 }
 
+const YAML_FILE = /\.ya?ml$/i;
+const DOC_FILE = /\.md$/i;
+const BOM = '\u{FEFF}';
+
+/**
+ * Review status a row is imported with: the authored one, else `published` for demo content.
+ * Non-demo rows without a status are rejected by check.mjs (undefined here).
+ */
+export function effectiveStatus(status, demo) {
+  return status ?? (demo ? 'published' : undefined);
+}
+
 /** Classifies a path relative to the content root (posix segments) per spec 2 §4.1. */
 export function classify(parts) {
-  const yaml = (name) => name.endsWith('.yaml');
+  const yaml = (name) => YAML_FILE.test(name);
   if (parts.length === 1 && parts[0] === 'sources.yaml') return { kind: 'sources' };
   const [lang, area] = parts;
   if (!LANGUAGE_CODES.includes(lang)) return null;
@@ -54,7 +66,8 @@ export function formatIssues(error) {
 /**
  * Loads `dir`. `label` is the display prefix for file paths in messages (default: the path of
  * `dir` relative to the cwd, e.g. `content`).
- * Returns { files: [{ file, kind, lang?, program?, unit?, raw, data }], errors: string[] }.
+ * Returns { files: [{ file, kind, lang?, program?, unit?, raw, doc, data }], errors: string[] }
+ * (`raw`: file text without a BOM, `doc`: parsed YAML, `data`: the schema-validated document).
  * Files that fail YAML parsing or schema validation are reported and left out of `files`.
  */
 export function loadContent(dir, { label } = {}) {
@@ -66,13 +79,19 @@ export function loadContent(dir, { label } = {}) {
   for (const full of walk(dir)) {
     const parts = relative(dir, full).split(sep);
     const file = `${prefix}/${parts.join('/')}`;
-    if (!/\.ya?ml$/.test(full)) continue; // README.md and other docs
+    if (DOC_FILE.test(full)) continue; // README.md and other docs
+    if (!YAML_FILE.test(full)) {
+      errors.push(`${file}: unexpected file (content/ holds only .yaml/.yml content files and .md docs)`);
+      continue;
+    }
     const where = classify(parts);
     if (!where) {
       errors.push(`${file}: unexpected file location (see spec 2 §4.1 for the content layout)`);
       continue;
     }
-    const raw = readFileSync(full, 'utf8');
+    // An editor-added UTF-8 BOM must not hide the demo header (check.mjs reads `raw`).
+    let raw = readFileSync(full, 'utf8');
+    if (raw.startsWith(BOM)) raw = raw.slice(BOM.length);
     let doc;
     try {
       doc = parse(raw, { uniqueKeys: true, prettyErrors: true });
@@ -85,7 +104,7 @@ export function loadContent(dir, { label } = {}) {
       for (const msg of formatIssues(result.error)) errors.push(`${file}: ${msg}`);
       continue;
     }
-    files.push({ file, ...where, raw, data: result.data });
+    files.push({ file, ...where, raw, doc, data: result.data });
   }
   return { label: prefix, files, errors };
 }
@@ -106,7 +125,9 @@ export function indexContent(files) {
   for (const f of files) {
     if (f.kind === 'sources') for (const src of f.data.sources) sources.push({ file: f.file, data: src });
     if (f.kind === 'items') {
-      for (const item of f.data.items) items.push({ file: f.file, lang: f.lang, source: f.data.source, demo: f.data.demo, data: item });
+      const { demo, source, status, reviewed_by, reviewed_at } = f.data;
+      const review = { status, reviewed_by, reviewed_at };
+      for (const item of f.data.items) items.push({ file: f.file, lang: f.lang, source, demo, review, data: item });
     }
     if (f.kind === 'program') {
       const p = { file: f.file, lang: f.lang, raw: f.raw, data: f.data };

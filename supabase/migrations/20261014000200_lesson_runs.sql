@@ -13,10 +13,13 @@ create extension if not exists fuzzystrmatch with schema extensions;
 
 -- Plan "Grading algorithm" normalize(text, lang, rubric). Lowercasing and regex classes use the builtin
 -- C.UTF-8 collation so that Unicode letters behave the same whatever the database locale is.
+-- Whitespace is an explicit list shared with grading.ts (neither JS \s nor [[:space:]]: they disagree on
+-- U+FEFF and U+0085). Every listed char becomes U+0020 up front, so later collapsing/trimming only ever
+-- sees U+0020 and btrim(.., ' ') matches the JS trim exactly.
 create or replace function public.grading_normalize(p_text text, p_lang text, p_rubric jsonb)
 returns text
 language plpgsql
-immutable
+stable
 set search_path = ''
 as $$
 declare
@@ -24,7 +27,15 @@ declare
     || coalesce(p_rubric, '{}'::jsonb);
   v text collate pg_catalog.pg_c_utf8;
   v_punct constant text := '.,!?;:"()[]{}…。、「」『』«»¿¡？！，';
-  -- Longest first, whole words only. 's is never expanded.
+  -- TAB LF VT FF CR, NEL, NBSP, OGHAM SPACE, U+2000-U+200A, LS, PS, NNBSP, MMSP, IDEOGRAPHIC SPACE.
+  v_ws constant text := chr(9) || chr(10) || chr(11) || chr(12) || chr(13) || chr(133) || chr(160) || chr(5760)
+    || chr(8192) || chr(8193) || chr(8194) || chr(8195) || chr(8196) || chr(8197) || chr(8198) || chr(8199)
+    || chr(8200) || chr(8201) || chr(8202) || chr(8232) || chr(8233) || chr(8239) || chr(8287) || chr(12288);
+  -- Dropped outright: ZWSP, ZWNJ, ZWJ, WORD JOINER, BOM/ZWNBSP.
+  v_zw constant text := chr(8203) || chr(8204) || chr(8205) || chr(8288) || chr(65279);
+  -- Word characters as in grading.ts WORD_CHAR ([[:alpha:]] is Unicode Alphabetic under pg_c_utf8).
+  v_word constant text := '[[:alpha:]0-9_]';
+  -- Longest first, whole words only. 's is never expanded; i'd is ambiguous (had/would) and left alone.
   v_contractions constant text[] := array[
     ['shouldn''t', 'should not'], ['couldn''t', 'could not'], ['wouldn''t', 'would not'],
     ['doesn''t', 'does not'], ['haven''t', 'have not'], ['weren''t', 'were not'],
@@ -33,9 +44,10 @@ declare
     ['didn''t', 'did not'], ['hasn''t', 'has not'], ['you''ll', 'you will'], ['you''ve', 'you have'],
     ['we''re', 'we are'], ['isn''t', 'is not'], ['don''t', 'do not'], ['we''ll', 'we will'],
     ['we''ve', 'we have'], ['can''t', 'cannot'], ['won''t', 'will not'],
-    ['i''ll', 'i will'], ['i''ve', 'i have'], ['i''m', 'i am'], ['i''d', 'i would']
+    ['i''ll', 'i will'], ['i''ve', 'i have'], ['i''m', 'i am']
   ];
-  -- Old-style Vietnamese tone placement -> new style, only at the end of a word.
+  -- Old-style Vietnamese tone placement -> new style, only at the end of a word and never after q
+  -- (in "qu" the u is a glide: quý / quỳ are already correct).
   v_vi_tones constant text[] := array[
     ['oà', 'òa'], ['oá', 'óa'], ['oả', 'ỏa'], ['oã', 'õa'], ['oạ', 'ọa'],
     ['oè', 'òe'], ['oé', 'óe'], ['oẻ', 'ỏe'], ['oẽ', 'õe'], ['oẹ', 'ọe'],
@@ -46,27 +58,31 @@ begin
   if p_text is null then
     return null;
   end if;
-  v := normalize(p_text, NFC);
+  v := translate(p_text, v_zw, '');
+  v := translate(v, v_ws, repeat(' ', char_length(v_ws)));
+  v := normalize(v, NFC);
   v := lower(v collate pg_catalog.pg_c_utf8);
   v := translate(v, '’‘`´“”„', repeat(chr(39), 4) || '"""');
+  v := btrim(regexp_replace(v collate pg_catalog.pg_c_utf8, ' {2,}', ' ', 'g'), ' ');
   if v_rubric ->> 'punctuation' = 'strict' then
-    v := regexp_replace(v collate pg_catalog.pg_c_utf8, '[.!?…。？！]+$', '');
+    -- After the collapse above, so "end. " and "end ." both lose the trailing mark.
+    v := regexp_replace(v collate pg_catalog.pg_c_utf8, '[.!?…。？！ ]+$', '');
   else
     v := translate(v, v_punct, repeat(' ', char_length(v_punct)));
   end if;
-  v := btrim(regexp_replace(v collate pg_catalog.pg_c_utf8, '[[:space:]]+', ' ', 'g'), ' ');
+  v := btrim(regexp_replace(v collate pg_catalog.pg_c_utf8, ' {2,}', ' ', 'g'), ' ');
 
   if p_lang = 'en' and coalesce((v_rubric ->> 'expand_contractions')::boolean, true) then
     foreach v_pair slice 1 in array v_contractions loop
-      v := regexp_replace(v collate pg_catalog.pg_c_utf8, '\y' || v_pair[1] || '\y', v_pair[2], 'g');
+      v := regexp_replace(v collate pg_catalog.pg_c_utf8, '(?<!' || v_word || ')' || v_pair[1] || '(?!' || v_word || ')', v_pair[2], 'g');
     end loop;
   elsif p_lang = 'vi' then
     foreach v_pair slice 1 in array v_vi_tones loop
-      v := regexp_replace(v collate pg_catalog.pg_c_utf8, normalize(v_pair[1], NFC) || '(?![[:alpha:]])', normalize(v_pair[2], NFC), 'g');
+      v := regexp_replace(v collate pg_catalog.pg_c_utf8, '(?<!q)' || normalize(v_pair[1], NFC) || '(?![[:alpha:]])', normalize(v_pair[2], NFC), 'g');
     end loop;
   end if;
 
-  return btrim(regexp_replace(v collate pg_catalog.pg_c_utf8, '[[:space:]]+', ' ', 'g'), ' ');
+  return btrim(regexp_replace(v collate pg_catalog.pg_c_utf8, ' {2,}', ' ', 'g'), ' ');
 end;
 $$;
 
@@ -74,7 +90,7 @@ $$;
 create or replace function public.grading_strip_diacritics(p_text text)
 returns text
 language sql
-immutable
+stable
 set search_path = ''
 as $$
   select normalize(
@@ -93,7 +109,7 @@ $$;
 create or replace function public.grading_text(p_text text, p_accepted jsonb, p_known_wrong jsonb, p_lang text, p_rubric jsonb)
 returns jsonb
 language plpgsql
-immutable
+stable
 set search_path = ''
 as $$
 declare
@@ -108,15 +124,21 @@ declare
   v_r_noart text[];
   v_diff integer;
   v_di integer;
-  v_i integer;
-  v_pairs constant text[] := array[['이에요', '예요'], ['으로', '로'], ['은', '는'], ['이', '가'], ['을', '를'], ['와', '과']];
+  v_x text;
+  v_y text;
+  v_typo_excluded constant text[] := array['a', 'an', 'the', 'am', 'is', 'are', 'was', 'were', 'be', 'been', 'being'];
+  -- [after a final consonant (batchim), after a vowel, 'y' if ㄹ batchim takes the vowel form].
+  v_pairs constant text[] := array[
+    ['이에요', '예요', 'n'], ['으로', '로', 'y'], ['은', '는', 'n'], ['이', '가', 'n'], ['을', '를', 'n'], ['과', '와', 'n']
+  ];
   v_pair text[];
-  v_d integer;
   v_from text;
   v_to text;
   v_pos integer;
   v_idx integer;
   v_end integer;
+  v_prev integer;
+  v_jong integer;
   v_r_ns text;
 begin
   v_r := coalesce(public.grading_normalize(p_text, p_lang, v_rubric), '');
@@ -164,12 +186,17 @@ begin
               v_di := v_i;
             end if;
           end loop;
+          v_x := v_rt[v_di];
+          v_y := v_at[v_di];
+          -- extensions.levenshtein raises above 255 chars, so it is only reached inside this guard
+          -- (a nested IF, since AND operands have no guaranteed evaluation order).
           if v_diff = 1
-             and char_length(v_rt[v_di]) >= 5 and char_length(v_at[v_di]) >= 5
-             and v_rt[v_di] <> all (array['a', 'an', 'the', 'am', 'is', 'are'])
-             and v_at[v_di] <> all (array['a', 'an', 'the', 'am', 'is', 'are'])
-             and extensions.levenshtein(v_rt[v_di], v_at[v_di]) = 1 then
-            return jsonb_build_object('verdict', 'almost', 'error_tags', '["typo"]'::jsonb, 'feedback_vi', 'null'::jsonb);
+             and char_length(v_x) between 5 and 255 and char_length(v_y) between 5 and 255
+             and abs(char_length(v_x) - char_length(v_y)) <= 1
+             and v_x <> all (v_typo_excluded) and v_y <> all (v_typo_excluded) then
+            if extensions.levenshtein(v_x, v_y) = 1 then
+              return jsonb_build_object('verdict', 'almost', 'error_tags', '["typo"]'::jsonb, 'feedback_vi', 'null'::jsonb);
+            end if;
           end if;
         end if;
       end loop;
@@ -186,7 +213,8 @@ begin
         end if;
       end loop;
     end if;
-    -- 6. one word-final particle swapped for its allomorph
+    -- 6. a word-final particle that is the right allomorph for the Hangul syllable before it,
+    --    swapped for the other member of its pair
     foreach v_a in array v_accepted loop
       foreach v_pair slice 1 in array v_pairs loop
         for v_d in 1 .. 2 loop
@@ -198,9 +226,15 @@ begin
             exit when v_idx = 0;
             v_pos := v_pos + v_idx;
             v_end := v_pos + char_length(v_from);
-            if v_end > char_length(v_a) or substr(v_a, v_end, 1) = ' ' then
-              if replace(substr(v_a, 1, v_pos - 1) || v_to || substr(v_a, v_end), ' ', '') = v_r_ns then
-                return jsonb_build_object('verdict', 'incorrect', 'error_tags', '["particle_allomorph"]'::jsonb, 'feedback_vi', 'null'::jsonb);
+            if v_pos > 1 and (v_end > char_length(v_a) or substr(v_a, v_end, 1) = ' ') then
+              v_prev := ascii(substr(v_a, v_pos - 1, 1));
+              if v_prev between 44032 and 55203 then
+                v_jong := (v_prev - 44032) % 28;
+                -- v_d = 1: v_from is the after-batchim form; v_d = 2: the after-vowel form.
+                if (v_d = 2) = (v_jong = 0 or (v_pair[3] = 'y' and v_jong = 8))
+                   and replace(substr(v_a, 1, v_pos - 1) || v_to || substr(v_a, v_end), ' ', '') = v_r_ns then
+                  return jsonb_build_object('verdict', 'incorrect', 'error_tags', '["particle_allomorph"]'::jsonb, 'feedback_vi', 'null'::jsonb);
+                end if;
               end if;
             end if;
           end loop;
@@ -226,7 +260,7 @@ $$;
 create or replace function public.grade_exercise(p_type text, p_answer jsonb, p_rubric jsonb, p_known_wrong jsonb, p_lang text, p_response jsonb)
 returns jsonb
 language plpgsql
-immutable
+stable
 set search_path = ''
 as $$
 declare
@@ -256,9 +290,10 @@ begin
     v_tags := v_g -> 'error_tags';
     v_feedback := v_g -> 'feedback_vi';
   elsif p_type = 'fill_blank' and jsonb_typeof(p_answer -> 'blanks') = 'object' and p_answer -> 'blanks' <> '{}'::jsonb then
-    -- Blank order is jsonb key order. Overall verdict is the worst blank (2 correct, 1 almost, 0 incorrect).
+    -- Blanks in code point order of their ids (as grading.ts sorts them), not jsonb key order.
+    -- Overall verdict is the worst blank (2 correct, 1 almost, 0 incorrect).
     v_worst := 2;
-    for v_blank in select k from jsonb_object_keys(p_answer -> 'blanks') as k loop
+    for v_blank in select k from jsonb_object_keys(p_answer -> 'blanks') as k order by k collate "C" loop
       v_g := public.grading_text(
         case when jsonb_typeof(p_response -> 'blanks') = 'object' then p_response -> 'blanks' ->> v_blank end,
         p_answer -> 'blanks' -> v_blank, p_known_wrong, p_lang, p_rubric);
@@ -394,21 +429,64 @@ begin
 end;
 $$;
 
--- lessonRunSchema shape.
-create or replace function public.lesson_run_json(p_run public.lesson_runs)
+-- lessonRunSchema shape. Scalar arguments (not a lesson_runs row) so that PostgREST and the type generator
+-- do not expose it as a computed column of lesson_runs.
+create or replace function public.lesson_run_json(
+  p_id uuid, p_status text, p_cursor smallint, p_queue uuid[], p_next_review_at timestamptz, p_summary jsonb
+)
 returns jsonb
 language sql
-stable
+immutable
 set search_path = ''
 as $$
   select jsonb_build_object(
-    'id', p_run.id,
-    'status', p_run.status,
-    'cursor', p_run.cursor,
-    'queue', to_jsonb(p_run.queue),
-    'next_review_at', p_run.next_review_at,
-    'summary', p_run.summary_json
+    'id', p_id,
+    'status', p_status,
+    'cursor', p_cursor,
+    'queue', to_jsonb(p_queue),
+    'next_review_at', p_next_review_at,
+    'summary', p_summary
   );
+$$;
+
+-- Brings an open run in line with the lesson's current content (spec §6.2). A run's queue is frozen at
+-- start_lesson; when an import later changes the lesson (content_version bump), the run's queue is rewritten:
+-- entries whose exercise is no longer published in this lesson are dropped (re-check duplicates included),
+-- the surviving entries keep their order, and newly published exercises are appended in stage/order_index
+-- order. Attempts are kept, the cursor is left as is (clients clamp it), and the run takes the lesson's
+-- content_version. Completed runs and runs already on the current version are returned unchanged.
+-- Scalar arguments for the same reason as lesson_run_json.
+create or replace function public.lesson_run_sync(p_run_id uuid, p_lesson_id uuid, p_content_version integer)
+returns public.lesson_runs
+language plpgsql
+volatile
+set search_path = ''
+as $$
+declare
+  v_run public.lesson_runs;
+begin
+  update public.lesson_runs r
+  set queue = coalesce((
+        select array_agg(q.e order by q.n)
+        from unnest(r.queue) with ordinality as q(e, n)
+        where exists (
+          select 1 from public.exercises e where e.id = q.e and e.lesson_id = p_lesson_id and e.status = 'published'
+        )
+      ), '{}'::uuid[])
+      || coalesce((
+        select array_agg(e.id order by array_position(array['recognition', 'recall', 'application']::text[], e.stage), e.order_index)
+        from public.exercises e
+        where e.lesson_id = p_lesson_id and e.status = 'published' and not (e.id = any (r.queue))
+      ), '{}'::uuid[]),
+      content_version = p_content_version
+  where r.id = p_run_id and r.lesson_id = p_lesson_id and r.status = 'in_progress' and r.content_version <> p_content_version
+  returning r.* into v_run;
+  if not found then
+    -- Nothing to sync (completed, already current, or a concurrent call synced it first).
+    select r.* into v_run from public.lesson_runs r where r.id = p_run_id;
+  end if;
+  return v_run;
+end;
 $$;
 
 -- Shape of a learner response for an exercise type (or the universal {"give_up": true}).
@@ -466,10 +544,11 @@ $$;
 -- ---------------------------------------------------------------------------
 
 -- lessonPayloadSchema: lesson, items, public exercises (never any answer field), run and its attempts.
+-- Volatile: an open run on an older content_version is synced first (lesson_run_sync).
 create or replace function public.get_lesson(p_lesson_id uuid, p_path_id uuid)
 returns jsonb
 language plpgsql
-stable
+volatile
 security definer
 set search_path = ''
 as $$
@@ -544,9 +623,15 @@ begin
   where r.user_id = v_uid and r.learning_path_id = p_path_id and r.lesson_id = v_lesson.id
   order by (r.status = 'in_progress') desc, r.completed_at desc nulls last, r.started_at desc
   limit 1;
+  if v_run.id is not null and v_run.status = 'in_progress' and v_run.content_version <> v_lesson.content_version then
+    v_run := public.lesson_run_sync(v_run.id, v_lesson.id, v_lesson.content_version);
+  end if;
 
+  -- Answer fields are omitted (not null) from attempts that did not reveal the answer.
   if v_run.id is not null then
-    select coalesce(jsonb_agg(a.feedback_json || jsonb_build_object(
+    select coalesce(jsonb_agg(
+        case when a.revealed then a.feedback_json else a.feedback_json - 'display_answer' - 'explanation' end
+        || jsonb_build_object(
         'attempt_id', a.id,
         'exercise_id', a.exercise_id,
         'after_reveal', a.after_reveal,
@@ -561,7 +646,8 @@ begin
     'lesson', v_lesson_json,
     'items', v_items,
     'exercises', v_exercises,
-    'run', case when v_run.id is null then 'null'::jsonb else public.lesson_run_json(v_run) end,
+    'run', case when v_run.id is null then 'null'::jsonb
+      else public.lesson_run_json(v_run.id, v_run.status, v_run.cursor, v_run.queue, v_run.next_review_at, v_run.summary_json) end,
     'attempts', v_attempts
   );
 end;
@@ -589,7 +675,10 @@ begin
   from public.lesson_runs r
   where r.user_id = v_uid and r.learning_path_id = p_path_id and r.lesson_id = v_lesson.id and r.status = 'in_progress';
   if found then
-    return public.lesson_run_json(v_run);
+    if v_run.content_version <> v_lesson.content_version then
+      v_run := public.lesson_run_sync(v_run.id, v_lesson.id, v_lesson.content_version);
+    end if;
+    return public.lesson_run_json(v_run.id, v_run.status, v_run.cursor, v_run.queue, v_run.next_review_at, v_run.summary_json);
   end if;
 
   insert into public.lesson_runs (user_id, learning_path_id, lesson_id, content_version, queue)
@@ -602,10 +691,12 @@ begin
     ), '{}'::uuid[])
   )
   returning * into v_run;
-  return public.lesson_run_json(v_run);
+  return public.lesson_run_json(v_run.id, v_run.status, v_run.cursor, v_run.queue, v_run.next_review_at, v_run.summary_json);
 end;
 $$;
 
+-- The cursor only moves forward. A negative (or null) cursor is refused; a larger one is clamped to the most
+-- steps the lesson can have: every body block, every queue entry twice and some slack for intro/summary.
 create or replace function public.save_lesson_cursor(p_run_id uuid, p_cursor smallint)
 returns void
 language plpgsql
@@ -614,19 +705,29 @@ set search_path = ''
 as $$
 declare
   v_uid uuid := auth.uid();
-  v_status text;
+  v_run public.lesson_runs;
+  v_max integer;
 begin
   if v_uid is null then
     raise exception using errcode = '42501', message = 'not_authenticated';
   end if;
-  select r.status into v_status from public.lesson_runs r where r.id = p_run_id and r.user_id = v_uid for update;
+  select r.* into v_run from public.lesson_runs r where r.id = p_run_id and r.user_id = v_uid for update;
   if not found then
     raise exception using errcode = 'P0001', message = 'run_not_found';
   end if;
-  if v_status <> 'in_progress' then
+  if v_run.status <> 'in_progress' then
     raise exception using errcode = 'P0001', message = 'run_not_active';
   end if;
-  update public.lesson_runs set cursor = greatest(cursor, coalesce(p_cursor, 0::smallint)) where id = p_run_id;
+  if p_cursor is null or p_cursor < 0 then
+    raise exception using errcode = 'P0001', message = 'invalid_cursor';
+  end if;
+  select coalesce(jsonb_array_length(l.body), 0) + 2 * cardinality(v_run.queue) + 10
+    into v_max
+  from public.lessons l
+  where l.id = v_run.lesson_id;
+  update public.lesson_runs
+  set cursor = greatest(cursor::integer, least(p_cursor::integer, coalesce(v_max, 10)))::smallint
+  where id = p_run_id;
 end;
 $$;
 
@@ -667,18 +768,17 @@ begin
     raise exception using errcode = 'P0001', message = 'invalid_response';
   end if;
 
-  -- Replays return the stored result; the same key with another payload is a conflict.
-  v_hash := md5(coalesce(p_exercise_id::text, '') || coalesce(p_response::text, ''));
+  -- Replays return the stored result; the same key with another payload (run, exercise, exercise version
+  -- or response) is a conflict.
+  v_hash := md5(concat_ws('|',
+    coalesce(p_run_id::text, ''), coalesce(p_exercise_id::text, ''), coalesce(p_exercise_version::text, ''),
+    coalesce(p_response::text, '')));
   select a.* into v_prev from public.attempts a where a.user_id = v_uid and a.idempotency_key = p_idempotency_key;
   if found then
     if v_prev.payload_hash = v_hash then
       return v_prev.feedback_json || jsonb_build_object('attempt_id', v_prev.id, 'replayed', true);
     end if;
     raise exception using errcode = 'P0001', message = 'idempotency_conflict';
-  end if;
-
-  if (select count(*) from public.attempts a where a.user_id = v_uid and a.created_at > now() - interval '10 seconds') >= 30 then
-    raise exception using errcode = 'P0001', message = 'rate_limited';
   end if;
 
   select r.* into v_run from public.lesson_runs r where r.id = p_run_id and r.user_id = v_uid for update;
@@ -689,7 +789,17 @@ begin
     raise exception using errcode = 'P0001', message = 'run_not_active';
   end if;
 
-  select e.* into v_ex from public.exercises e where e.id = p_exercise_id and e.lesson_id = v_run.lesson_id;
+  -- Counted per user, after the run lock so that concurrent submits on one run are counted in turn.
+  if (select count(*) from public.attempts a where a.user_id = v_uid and a.created_at > now() - interval '10 seconds') >= 30 then
+    raise exception using errcode = 'P0001', message = 'rate_limited';
+  end if;
+
+  -- Only a published exercise of the run's queue can be answered. Exercise ids derive from public keys, so a
+  -- draft, in_review, approved or archived exercise must never reach the reveal below.
+  select e.* into v_ex
+  from public.exercises e
+  where e.id = p_exercise_id and e.lesson_id = v_run.lesson_id and e.status = 'published'
+    and p_exercise_id = any (v_run.queue);
   if not found then
     raise exception using errcode = 'P0001', message = 'exercise_not_in_lesson';
   end if;
@@ -798,8 +908,11 @@ begin
     return v_run.summary_json;
   end if;
 
+  -- Only queue entries whose exercise is still published are required: an exercise archived after the run
+  -- started can no longer be answered (submit_exercise refuses it) and must not keep the run open forever.
   if exists (
        select 1 from (select distinct q.e from unnest(v_run.queue) as q(e)) as d
+       join public.exercises e on e.id = d.e and e.status = 'published'
        where not exists (
          select 1 from public.attempts a
          where a.lesson_run_id = v_run.id and a.exercise_id = d.e and (a.verdict <> 'incorrect' or a.revealed)
@@ -807,7 +920,9 @@ begin
      )
      or exists (
        select 1 from public.attempts a
+       join public.exercises e on e.id = a.exercise_id and e.status = 'published'
        where a.lesson_run_id = v_run.id and a.verdict = 'incorrect' and a.revealed and not a.after_reveal
+         and a.exercise_id = any (v_run.queue)
          and not exists (
            select 1 from public.attempts b
            where b.lesson_run_id = v_run.id and b.exercise_id = a.exercise_id and b.after_reveal
@@ -942,7 +1057,8 @@ revoke all on function public.grading_strip_diacritics(text) from public, anon, 
 revoke all on function public.grading_text(text, jsonb, jsonb, text, jsonb) from public, anon, authenticated;
 revoke all on function public.grade_exercise(text, jsonb, jsonb, jsonb, text, jsonb) from public, anon, authenticated;
 revoke all on function public.lesson_for_path(uuid, uuid, uuid) from public, anon, authenticated;
-revoke all on function public.lesson_run_json(public.lesson_runs) from public, anon, authenticated;
+revoke all on function public.lesson_run_json(uuid, text, smallint, uuid[], timestamptz, jsonb) from public, anon, authenticated;
+revoke all on function public.lesson_run_sync(uuid, uuid, integer) from public, anon, authenticated;
 revoke all on function public.lesson_response_valid(text, jsonb) from public, anon, authenticated;
 
 revoke all on function public.get_lesson(uuid, uuid) from public, anon;

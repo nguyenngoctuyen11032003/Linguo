@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(58);
+select plan(60);
 
 -- ===== schema =====
 select has_table('public', 'content_sources', 'content_sources exists');
@@ -174,6 +174,9 @@ select is(content_private.import_bundle(current_setting('test.b7')::jsonb),
   'a published demo lesson becomes reviewed without a content change');
 select is((select is_demo::text || ':' || version from public.lessons where id = 'c0000000-0000-4000-8000-000000000005'),
   'false:3', 'a review-only change keeps the version');
+select is(public.import_content_bundle(current_setting('test.b7')::jsonb),
+  '{"inserted": 0, "updated": 0, "archived": 0, "unchanged": 10}'::jsonb,
+  'the public import_content_bundle wrapper returns the import_bundle counts');
 select throws_ok($$select content_private.import_bundle(jsonb_set(current_setting('test.b7')::jsonb, '{lessons}', '[]'))$$,
   'P0001', 'empty_bundle', 'a bundle without lessons cannot archive every published lesson');
 select throws_ok($$select content_private.import_bundle('{"bundle_version": 2}'::jsonb)$$,
@@ -316,6 +319,8 @@ select is((select count(*)::int from public.units where id = 'c0000000-0000-4000
 select throws_ok($$update public.lessons set estimated_minutes = 7$$, '42501', null, 'authenticated cannot write content');
 select throws_ok(format('select content_private.import_bundle(%L::jsonb)', current_setting('test.bundle')), '42501', null,
   'authenticated cannot import');
+select throws_ok(format('select public.import_content_bundle(%L::jsonb)', current_setting('test.bundle')), '42501', null,
+  'authenticated cannot import through import_content_bundle');
 
 -- ===== anon: nothing =====
 set local role anon;

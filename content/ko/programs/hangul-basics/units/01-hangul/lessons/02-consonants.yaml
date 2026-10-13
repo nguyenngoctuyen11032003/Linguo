@@ -159,11 +159,11 @@ exercises:
     prompt:
       instruction: Ghép các chữ cái thành âm tiết đọc là "ma".
       tokens:
-        - { id: b6, text: ㅁ }
-        - { id: h2, text: ㄴ }
-        - { id: w9, text: ㅏ }
-        - { id: f4, text: ㅓ }
         - { id: z7, text: ㅂ }
+        - { id: h2, text: ㄴ }
+        - { id: f4, text: ㅓ }
+        - { id: w9, text: ㅏ }
+        - { id: b6, text: ㅁ }
     answer:
       orders:
         - [b6, w9]
@@ -285,11 +285,11 @@ exercises:
     prompt:
       instruction: Ghép các chữ cái thành từ có nghĩa "cái mũ".
       tokens:
-        - { id: m3, text: ㅁ }
-        - { id: o8, text: ㅗ }
-        - { id: j5, text: ㅈ }
-        - { id: a1, text: ㅏ }
         - { id: e9, text: ㅓ }
+        - { id: o8, text: ㅗ }
+        - { id: a1, text: ㅏ }
+        - { id: j5, text: ㅈ }
+        - { id: m3, text: ㅁ }
         - { id: s6, text: ㅅ }
     answer:
       orders:

@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { lessonFileSchema } from './authoring';
 import { bundleSchema } from './bundle';
-import { EXERCISE_TYPES, PROMPT_SCHEMAS, fillBlankPromptSchema, responseSchemaFor } from './exercises';
-import { lessonPayloadSchema } from './rpc';
+import { EXERCISE_TYPES, PROMPT_SCHEMAS, fillBlankAnswerSchema, fillBlankPromptSchema, responseSchemaFor } from './exercises';
+import { lessonAttemptSchema, lessonPayloadSchema } from './rpc';
 
 const options = [
   { id: 'a', text: 'Hello', lang: 'en' },
@@ -36,6 +36,11 @@ describe('prompt schemas never carry answer keys', () => {
   it('fill_blank rejects a blank id missing from the template', () => {
     const r = fillBlankPromptSchema.safeParse({ template: 'Nice to {{b1}} you', blanks: [{ id: 'b1' }, { id: 'b2' }] });
     expect(r.success).toBe(false);
+  });
+
+  it('fill_blank answer needs at least one blank', () => {
+    expect(fillBlankAnswerSchema.safeParse({ blanks: { b1: ['meet'] } }).success).toBe(true);
+    expect(fillBlankAnswerSchema.safeParse({ blanks: {} }).success).toBe(false);
   });
 });
 
@@ -196,5 +201,27 @@ describe('lessonPayloadSchema', () => {
       attempts: [],
     };
     expect(lessonPayloadSchema.safeParse(payload).success).toBe(true);
+  });
+});
+
+describe('lessonAttemptSchema', () => {
+  it('defaults the answer fields that get_lesson omits before a reveal', () => {
+    const parsed = lessonAttemptSchema.parse({
+      attempt_id: uuid(20),
+      attempt_no: 1,
+      verdict: 'incorrect',
+      is_correct: false,
+      score: 0,
+      error_tags: [],
+      feedback_vi: null,
+      revealed: false,
+      final: false,
+      requeued: false,
+      exercise_id: uuid(10),
+      after_reveal: false,
+      created_at: '2026-10-13T08:00:00Z',
+    });
+    expect(parsed.display_answer).toBeNull();
+    expect(parsed.explanation).toBeNull();
   });
 });

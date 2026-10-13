@@ -5,11 +5,13 @@
 //   node --import tsx scripts/content-import.mjs --emit-sql --check    fail if seed.sql is stale
 //   node --import tsx scripts/content-import.mjs --apply               import into hosted Supabase (pnpm content:push)
 // Options: --dir <content dir> (default content/), --out <seed file> (default supabase/seed.sql).
-// --apply needs SUPABASE_ACCESS_TOKEN and SUPABASE_PROJECT_ID: content_private is not exposed
-// through PostgREST, so it runs the seed SQL via the Supabase Management API.
+// --apply needs SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY (legacy service_role JWT or sb_secret_ key):
+// it posts the bundle to the service_role-only RPC public.import_content_bundle, a thin wrapper around
+// content_private.import_bundle (the same import supabase/seed.sql runs).
 import { existsSync, readFileSync, realpathSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { importResultSchema } from '@linguo/shared';
 import { buildBundle, renderSeedSql } from './content/build.mjs';
 import { checkContent, sharedGrader } from './content/check.mjs';
 import { loadContent } from './content/load.mjs';
@@ -17,9 +19,12 @@ import { loadContent } from './content/load.mjs';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const USAGE = 'Usage: content-import.mjs [--dir <dir>] (--check | --emit-sql [--check] [--out <file>] | --apply)';
 
+/** Value of `--name <value>`: undefined when absent, null when the value is missing. */
 function option(argv, name) {
   const i = argv.indexOf(name);
-  return i === -1 ? undefined : argv[i + 1];
+  if (i === -1) return undefined;
+  const value = argv[i + 1];
+  return value === undefined || value === '' || value.startsWith('--') ? null : value;
 }
 
 const display = (path, cwd) => relative(cwd, path).split(sep).join('/') || '.';
@@ -39,8 +44,15 @@ export async function main(
     return 2;
   }
   const dirArg = option(argv, '--dir');
+  const outArg = option(argv, '--out');
+  for (const [name, value] of [['--dir', dirArg], ['--out', outArg]]) {
+    if (value === null) {
+      error(`${name} needs a value.\n${USAGE}`);
+      return 2;
+    }
+  }
   const dir = dirArg ? resolve(cwd, dirArg) : join(root, 'content');
-  const out = resolve(cwd, option(argv, '--out') ?? join(root, 'supabase', 'seed.sql'));
+  const out = resolve(cwd, outArg ?? join(root, 'supabase', 'seed.sql'));
   const outName = display(out, cwd);
 
   if (!existsSync(dir) && !apply) {
@@ -82,35 +94,58 @@ export async function main(
   }
 
   // --apply
-  const token = env.SUPABASE_ACCESS_TOKEN;
-  const projectId = env.SUPABASE_PROJECT_ID;
-  if (!token || !projectId) {
-    error('--apply needs SUPABASE_ACCESS_TOKEN and SUPABASE_PROJECT_ID (never VITE_* variables).');
+  const key = env.SUPABASE_SERVICE_ROLE_KEY;
+  const projectUrl = env.SUPABASE_URL;
+  if (!key || !projectUrl) {
+    error('--apply needs SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY (never VITE_* variables).');
     return 1;
   }
-  if (!/^[a-z0-9-]+$/i.test(projectId)) {
-    error('SUPABASE_PROJECT_ID must be the project ref (letters and digits only).');
-    return 1;
-  }
-  const sql = renderSeedSql(buildBundle(loaded, { gitSha: env.GITHUB_SHA || null }));
-  const res = await fetchImpl(`https://api.supabase.com/v1/projects/${projectId}/database/query`, {
-    method: 'POST',
-    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query: sql }),
-  });
-  const body = await res.text();
-  if (!res.ok) {
-    error(`Import failed: HTTP ${res.status} ${body}`);
-    return 1;
-  }
-  let result = body;
+  let endpoint;
   try {
-    const rows = JSON.parse(body);
-    result = JSON.stringify(Array.isArray(rows) && rows[0] ? (rows[0].import_bundle ?? rows[0]) : rows);
+    const base = new URL(projectUrl);
+    if (base.protocol !== 'https:' && base.protocol !== 'http:') throw new Error('protocol');
+    endpoint = new URL('rest/v1/rpc/import_content_bundle', base.href.endsWith('/') ? base.href : `${base.href}/`).href;
   } catch {
-    // keep the raw body
+    error('SUPABASE_URL must be the project URL, e.g. https://<ref>.supabase.co.');
+    return 1;
   }
-  log(`Imported ${lessonCount} lessons: ${result}`);
+  // Never print the key, even if a response or network error happens to contain it.
+  const redact = (text) => String(text).split(key).join('<redacted>');
+  const bundle = buildBundle(loaded, { gitSha: env.GITHUB_SHA || null });
+  let res;
+  try {
+    res = await fetchImpl(endpoint, {
+      method: 'POST',
+      // Legacy service_role JWTs and new sb_secret_ keys both work when sent in both headers.
+      headers: { apikey: key, Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ p_bundle: bundle }),
+    });
+  } catch (e) {
+    error(`Import failed: ${redact(e?.message ?? e)}`);
+    return 1;
+  }
+  const body = await res.text();
+  let parsed;
+  try {
+    parsed = JSON.parse(body);
+  } catch {
+    parsed = undefined;
+  }
+  if (!res.ok) {
+    // PostgREST errors are {code, message, details, hint}.
+    const detail =
+      parsed && typeof parsed.message === 'string'
+        ? [parsed.code, parsed.message, parsed.details, parsed.hint].filter(Boolean).join(' | ')
+        : body;
+    error(`Import failed: HTTP ${res.status} ${redact(detail)}`);
+    return 1;
+  }
+  const result = importResultSchema.safeParse(parsed);
+  if (!result.success) {
+    error(`Import returned an unexpected response: ${redact(body)}`);
+    return 1;
+  }
+  log(`Imported ${lessonCount} lessons: ${JSON.stringify(result.data)}`);
   return 0;
 }
 

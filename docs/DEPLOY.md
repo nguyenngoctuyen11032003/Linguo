@@ -26,6 +26,7 @@ push main ─────► Deploy (.github/workflows/deploy.yml)
 3. **Settings → Environments → New environment `production`**: bật **Required reviewers** (chọn bạn), Deployment branches = `main`. Thêm secrets:
    - `SUPABASE_ACCESS_TOKEN` — supabase.com → Account → Access Tokens. Đây là token cá nhân, có quyền trên **mọi project** của tài khoản; chỉ đặt trong environment `production` (không đặt ở repo secrets) và thu hồi ngay nếu nghi bị lộ.
    - `SUPABASE_DB_PASSWORD` — mật khẩu database của project
+   - `SUPABASE_SERVICE_ROLE_KEY` — Supabase Dashboard → Project Settings → API Keys: **secret key** (`sb_secret_…`) hoặc key `service_role` (legacy JWT). Chỉ dùng cho workflow **Publish content**; chỉ có quyền trên project này nhưng bỏ qua RLS, nên chỉ đặt trong environment `production` và thu hồi/đổi ngay nếu nghi bị lộ.
 4. **Settings → Secrets and variables → Actions → Variables**:
    - `SUPABASE_PROJECT_ID` — project ref
    - `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY`
@@ -50,9 +51,10 @@ Nội dung bài học nằm trong `content/**/*.yaml`. Deploy **không** tự nh
 
 1. Sửa YAML → `pnpm content:check` (kiểm tra schema, khoá, bài tiên quyết, đáp án chấm đúng/sai) → `pnpm content:build` (ghi lại `supabase/seed.sql`, dùng cho Supabase local và CI) → commit cả hai. CI fail nếu `seed.sql` lệch với `content/`.
 2. Merge vào `main` (migration nội dung, nếu có, phải được Deploy áp trước).
-3. Actions → **Publish content** → **Run workflow**, rồi **Approve** environment `production`. Job chạy `pnpm content:check` rồi `pnpm content:push`: gửi SQL `content_private.import_bundle(...)` qua Supabase Management API (`POST /v1/projects/{ref}/database/query`) và in kết quả `{inserted, updated, archived, unchanged}`. Nhập lại cùng nội dung không đổi gì; dòng vắng mặt khỏi `content/` bị chuyển `archived` (không xoá).
-   - Dùng lại secret `SUPABASE_ACCESS_TOKEN` (environment `production`) và variable `SUPABASE_PROJECT_ID` ở trên; không cần secret mới.
-4. Chạy `pnpm content:push` từ máy local chỉ khi thật cần: phải đặt **cả hai** biến môi trường `SUPABASE_ACCESS_TOKEN` và `SUPABASE_PROJECT_ID` trong shell (script từ chối chạy nếu thiếu).
+3. Actions → **Publish content** → **Run workflow**, rồi **Approve** environment `production`. Job chạy `pnpm content:check` rồi `pnpm content:push`: gửi bundle nội dung tới RPC `public.import_content_bundle` (`POST {SUPABASE_URL}/rest/v1/rpc/import_content_bundle`, chỉ `service_role` được gọi; hàm này chỉ bọc `content_private.import_bundle`, đúng import mà `seed.sql` chạy) và in kết quả `{inserted, updated, archived, unchanged}`. Nhập lại cùng nội dung không đổi gì; dòng vắng mặt khỏi `content/` bị chuyển `archived` (không xoá).
+   - Cần secret `SUPABASE_SERVICE_ROLE_KEY` trong environment `production` (bước 3 ở trên). URL lấy từ variable `VITE_SUPABASE_URL` sẵn có (URL project là công khai), truyền vào script dưới tên `SUPABASE_URL`.
+   - Không dùng `SUPABASE_ACCESS_TOKEN` (token cá nhân có quyền trên mọi project): token đó chỉ còn dùng cho `supabase db push`/`functions deploy` trong Deploy.
+4. Chạy `pnpm content:push` từ máy local chỉ khi thật cần: phải đặt **cả hai** biến môi trường `SUPABASE_URL` và `SUPABASE_SERVICE_ROLE_KEY` trong shell, không ghi vào file nào được commit (script từ chối chạy nếu thiếu và không bao giờ in key ra). Ví dụ (Git Bash): `SUPABASE_URL=https://<ref>.supabase.co SUPABASE_SERVICE_ROLE_KEY=sb_secret_… pnpm content:push`.
 5. **Không bao giờ** đặt token/khoá server vào biến `VITE_*` (chúng bị đóng gói vào JavaScript công khai). `scripts/check-public-env.mjs` chặn mọi biến `VITE_*` có tên chứa `SERVICE_ROLE`, `GEMINI`, `SECRET`, `ACCESS_TOKEN`…
 
 ## Xử lý sự cố
@@ -60,6 +62,8 @@ Nội dung bài học nằm trong `content/**/*.yaml`. Deploy **không** tự nh
 |---|---|
 | Build báo thiếu `VITE_SUPABASE_URL` | Chưa tạo Variables (bước 4) |
 | `migrate` báo `Thiếu SUPABASE_…` | Secrets chưa đặt trong environment `production` |
+| Publish content báo `--apply needs SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY` | Thiếu secret `SUPABASE_SERVICE_ROLE_KEY` trong environment `production` hoặc variable `VITE_SUPABASE_URL` |
+| Publish content báo `HTTP 404 … import_content_bundle` | Migration nội dung chưa được Deploy áp lên project hosted |
 | Migration chưa được áp | Actions → Deploy → **Run workflow** với `migrate = true` |
 | Pages 404 ở trang chủ | Kiểm tra bước 2 (Source = GitHub Actions) |
 | Link email mở sai địa chỉ | Kiểm tra Site URL / Redirect URLs trên Supabase |

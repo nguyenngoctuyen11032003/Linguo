@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(12);
+select plan(15);
 
 -- ===== privileges (as the migration owner) =====
 select ok(not has_schema_privilege('anon', 'content_private', 'usage'), 'anon has no usage on content_private');
@@ -16,6 +16,10 @@ select is(
 select ok(not has_function_privilege('authenticated', 'content_private.import_bundle(jsonb)', 'execute'), 'authenticated cannot execute import_bundle');
 select ok(not has_function_privilege('anon', 'content_private.import_bundle(jsonb)', 'execute'), 'anon cannot execute import_bundle');
 select ok(has_function_privilege('service_role', 'content_private.import_bundle(jsonb)', 'execute'), 'service_role can execute import_bundle');
+-- public.import_content_bundle is the PostgREST wrapper the importer calls with the service_role key.
+select ok(not has_function_privilege('anon', 'public.import_content_bundle(jsonb)', 'execute'), 'anon cannot execute import_content_bundle');
+select ok(not has_function_privilege('authenticated', 'public.import_content_bundle(jsonb)', 'execute'), 'authenticated cannot execute import_content_bundle');
+select ok(has_function_privilege('service_role', 'public.import_content_bundle(jsonb)', 'execute'), 'service_role can execute import_content_bundle');
 -- Public functions authenticated can execute must not read content_private (signature or body), except
 -- the lesson RPCs, which reveal answers only under their own rules (tested in lesson_runs.test.sql).
 select is(

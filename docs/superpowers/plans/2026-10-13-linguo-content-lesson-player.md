@@ -36,28 +36,32 @@ These files are the single source of truth for every task. **Do not change their
 ### Grading algorithm (normative, both TS and SQL)
 
 `normalize(text, lang, rubric)`:
-1. Unicode NFC.
-2. Lowercase.
-3. `’ ‘ ` ´` → `'`; `“ ” „` → `"`.
-4. If `rubric.punctuation = 'ignore'`: replace every char in `.,!?;:"()[]{}…。、「」『』«»¿¡？！，` with a space. If `'strict'`: remove only trailing `[.!?…。？！]+`.
-5. Collapse whitespace to one space, trim.
-6. `en` and `rubric.expand_contractions`: replace whole words (`\b`) using this table, longest first: `can not→cannot`, `can't→cannot`, `won't→will not`, `n't→ not` is NOT generic — use the explicit list: `i'm→i am`, `you're→you are`, `we're→we are`, `they're→they are`, `isn't→is not`, `aren't→are not`, `wasn't→was not`, `weren't→were not`, `don't→do not`, `doesn't→does not`, `didn't→did not`, `haven't→have not`, `hasn't→has not`, `couldn't→could not`, `shouldn't→should not`, `wouldn't→would not`, `i'll→i will`, `you'll→you will`, `we'll→we will`, `they'll→they will`, `i've→i have`, `you've→you have`, `we've→we have`, `they've→they have`, `i'd→i would`. Never expand `'s`.
-7. `vi`: at word end only (not followed by a letter) map `oà→òa, oá→óa, oả→ỏa, oã→õa, oạ→ọa, oè→òe, oé→óe, oẻ→ỏe, oẽ→õe, oẹ→ọe, uỳ→ùy, uý→úy, uỷ→ủy, uỹ→ũy, uỵ→ụy`.
-8. Collapse whitespace and trim again.
+1. Whitespace and invisible chars, with an explicit list on both sides (never JS `\s` or PG `[[:space:]]`, which disagree on U+FEFF and U+0085): delete U+200B, U+200C, U+200D, U+2060, U+FEFF; replace U+0009–U+000D, U+0085, U+00A0, U+1680, U+2000–U+200A, U+2028, U+2029, U+202F, U+205F, U+3000 with U+0020. From here on "whitespace" means U+0020 only.
+2. Unicode NFC.
+3. Lowercase (SQL: under `pg_c_utf8`).
+4. `’ ‘ ` ´` → `'`; `“ ” „` → `"`.
+5. Collapse runs of spaces to one, trim.
+6. If `rubric.punctuation = 'ignore'`: replace every char in `.,!?;:"()[]{}…。、「」『』«»¿¡？！，` with a space. If `'strict'`: remove the trailing run of `[.!?…。？！ ]` (marks and spaces), so `"end. "` and `"end ."` both become `"end"`.
+7. Collapse and trim again.
+8. `en` and `rubric.expand_contractions`: replace whole words (not preceded or followed by a word char = Unicode Alphabetic, `0-9` or `_`; JS `[\p{Alphabetic}0-9_]`, SQL `[[:alpha:]0-9_]` under `pg_c_utf8`) using this table, longest first: `can not→cannot`, `can't→cannot`, `won't→will not`, `n't→ not` is NOT generic — use the explicit list: `i'm→i am`, `you're→you are`, `we're→we are`, `they're→they are`, `isn't→is not`, `aren't→are not`, `wasn't→was not`, `weren't→were not`, `don't→do not`, `doesn't→does not`, `didn't→did not`, `haven't→have not`, `hasn't→has not`, `couldn't→could not`, `shouldn't→should not`, `wouldn't→would not`, `i'll→i will`, `you'll→you will`, `we'll→we will`, `they'll→they will`, `i've→i have`, `you've→you have`, `we've→we have`, `they've→they have`. Never expand `'s`; `i'd` (had/would) is ambiguous and is not expanded.
+9. `vi`: at word end only (not followed by an Alphabetic char) and not preceded by `q` (in `qu` the u is a glide, so `quý`/`quỳ` stay as they are) map `oà→òa, oá→óa, oả→ỏa, oã→õa, oạ→ọa, oè→òe, oé→óe, oẻ→ỏe, oẽ→õe, oẹ→ọe, uỳ→ùy, uý→úy, uỷ→ủy, uỹ→ũy, uỵ→ụy`.
+10. Collapse and trim again.
 
 `grade(type, answer, rubric, known_wrong, lang, response)` → `{verdict, score, error_tags, feedback_vi}` (score 1 / 0.8 / 0):
 1. `give_up` → incorrect.
 2. `mcq`/`listen`: `option_id = correct_option_id`.
 3. `word_bank`: `token_ids` equals any array in `orders` (same length, same order).
-4. Text (`translate`: the response text against every `accepted`; `fill_blank`: each blank against its list, missing/empty blank = incorrect, overall verdict = worst blank, tags = de-duplicated union in blank order, feedback = first non-null). For one text `r = normalize(response)`; empty → incorrect; accepted `A = normalize(a)` for each:
+4. Text (`translate`: the response text against every `accepted`; `fill_blank`: each blank against its list, blanks visited in code point order of their ids (SQL `order by id collate "C"`, TS `Object.keys(..).sort()`; ids are ASCII), an answer with no blanks = incorrect, missing/empty blank = incorrect, overall verdict = worst blank, tags = de-duplicated union in blank order, feedback = first non-null). For one text `r = normalize(response)`; empty → incorrect; accepted `A = normalize(a)` for each:
    1. `r = A` for some A → correct.
    2. `r = normalize(kw.answer)` for some known_wrong → incorrect, `[kw.error_tag]`, `kw.feedback_vi`.
    3. `en`: tokens (split on space) with `a`/`an`/`the` removed equal for some A while `r ≠ A` → incorrect `['article']`.
-   4. `en` and `typo_tolerance = 1`: same token count as some A, exactly one position differs, both tokens ≥ 5 chars, neither in `{a, an, the, am, is, are}`, Levenshtein = 1 → almost `['typo']`.
+   4. `en` and `typo_tolerance = 1`: same token count as some A, exactly one position differs, both tokens 5–255 chars (code points; `extensions.levenshtein` rejects longer input, so it is only called inside this guard) and lengths differ by ≤ 1, neither in `{a, an, the, am, is, are, was, were, be, been, being}`, Levenshtein = 1 → almost `['typo']`.
    5. `ko` and `ko_spacing = 'lenient'`: `r` without spaces = some A without spaces → almost `['spacing']`.
-   6. `ko`: for some A, pairs in order `[이에요,예요] [으로,로] [은,는] [이,가] [을,를] [와,과]` (both directions), replacing one occurrence of one member that sits at a word end (followed by space or end) with the other gives a string whose space-less form equals `r` space-less → incorrect `['particle_allomorph']`.
-   7. `vi` and `diacritics = 'lenient'`: strip combining marks (NFD) and map `đ→d` on both; equal for some A → almost `['missing_diacritics']`.
+   6. `ko`: pairs (after-batchim form, after-vowel form) `[이에요,예요] [으로,로] [은,는] [이,가] [을,를] [과,와]`. For some A, one occurrence of a pair member that sits at a word end (followed by space or end) and directly follows a Hangul syllable (U+AC00–U+D7A3; no stem → no tag) whose batchim `(code − 0xAC00) % 28` calls for exactly that member (0 = vowel-final → after-vowel form; for `으로/로` batchim 8 = ㄹ also takes `로`; otherwise the after-batchim form), replaced with the other member, gives a string whose space-less form equals `r` space-less → incorrect `['particle_allomorph']`. A word that merely ends in a pair member's letters but has the wrong allomorph for its stem (e.g. accepted `아이`, response `아가`) is plain incorrect.
+   7. `vi` and `diacritics = 'lenient'`: NFD, strip combining marks in U+0300–U+036F, U+1AB0–U+1AFF, U+1DC0–U+1DFF, U+20D0–U+20FF, U+FE20–U+FE2F, map `đ→d`, NFC, on both; equal for some A → almost `['missing_diacritics']`.
    8. Otherwise incorrect, `[]`, null.
+
+The SQL grading functions are `STABLE` (not `IMMUTABLE`): they call expressions PG classifies as stable.
 
 ---
 

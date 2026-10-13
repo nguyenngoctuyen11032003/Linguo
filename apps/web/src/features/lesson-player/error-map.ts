@@ -16,6 +16,7 @@ const LESSON_MESSAGES: Record<LessonErrorCode, string> = {
   idempotency_conflict: 'Câu trả lời này đã được gửi với nội dung khác.',
   rate_limited: 'Bạn đang gửi quá nhanh. Đợi một chút rồi thử lại.',
   attempts_incomplete: 'Còn bài tập chưa có kết quả. Hãy hoàn thành trước khi kết thúc bài.',
+  invalid_cursor: 'Vị trí bài học không hợp lệ. Hãy mở lại bài học.',
 };
 
 const MESSAGES: Record<string, string> = {

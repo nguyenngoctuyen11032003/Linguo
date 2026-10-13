@@ -1,7 +1,7 @@
 // Run with: node --import tsx --test scripts/content-import.test.mjs
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { cpSync, existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdtempSync, readdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -22,6 +22,7 @@ const VALID = join(here, '__fixtures__', 'content-valid');
 const LESSON_1 = 'en/programs/basics/units/01-hello/lessons/01-hello.yaml';
 const LESSON_2 = 'en/programs/basics/units/01-hello/lessons/02-i-am.yaml';
 const PROGRAM = 'en/programs/basics/program.yaml';
+const ITEMS = 'en/items/basics.yaml';
 
 const grade = gradeResponse;
 
@@ -153,7 +154,56 @@ const INVALID = [
     file: PROGRAM,
     from: 'demo: true',
     to: 'demo: false',
-    message: `content/${PROGRAM}: status published requires reviewed_at unless the file is demo: true`,
+    message: `content/${PROGRAM}: status published requires reviewed_at and reviewed_by unless the file is demo: true`,
+  },
+  {
+    name: 'non-demo published lesson with reviewed_at but no reviewed_by',
+    file: LESSON_1,
+    from: 'demo: true',
+    to: "demo: false\nreviewed_at: '2026-10-01T00:00:00Z'",
+    message: `content/${LESSON_1}: status published requires reviewed_at and reviewed_by`,
+  },
+  {
+    name: 'non-demo items file without an explicit status',
+    file: ITEMS,
+    from: 'demo: true',
+    to: 'demo: false',
+    message: `content/${ITEMS}: demo: false requires an explicit status`,
+  },
+  {
+    name: 'non-demo published items file without review',
+    file: ITEMS,
+    from: 'demo: true',
+    to: 'demo: false\nstatus: published',
+    message: `content/${ITEMS}: status published requires reviewed_at and reviewed_by`,
+  },
+  {
+    name: 'demo items file with reviewed_by set',
+    file: ITEMS,
+    from: 'demo: true',
+    to: 'demo: true\nreviewed_by: someone',
+    message: `content/${ITEMS}: demo: true but reviewed_at/reviewed_by is set`,
+  },
+  {
+    name: 'non-demo source entry without an explicit status',
+    file: 'sources.yaml',
+    from: '    demo: true',
+    to: '    demo: false',
+    message: 'content/sources.yaml: source "src:fixture": demo: false requires an explicit status',
+  },
+  {
+    name: 'published lesson linking a draft item',
+    file: ITEMS,
+    from: 'demo: true',
+    to: 'demo: true\nstatus: draft',
+    message: `content/${LESSON_1}: published lesson links item "en:item:hello" whose status is draft (must be published)`,
+  },
+  {
+    name: 'published lesson exercise using a draft item',
+    file: ITEMS,
+    from: 'demo: true',
+    to: 'demo: true\nstatus: in_review',
+    message: 'exercises[0] "en:ex:hello-mcq": published lesson uses item "en:item:hello" whose status is in_review',
   },
   {
     name: 'level code invalid for language',
@@ -163,11 +213,60 @@ const INVALID = [
     message: `content/${LESSON_2}: level "topik1" is not a en level`,
   },
   {
-    name: 'accepted answer that grades incorrect',
+    name: 'fill_blank known_wrong that is an accepted answer of its blank',
     file: LESSON_1,
     from: 'answer:\n      blanks: { b1: [am] }',
     to: 'answer:\n      blanks: { b1: [am, is] }',
-    message: 'known_wrong answer "is" in blank "b1" grades correct, expected incorrect',
+    message: 'known_wrong answer "is" is an accepted answer of blank "b1"',
+  },
+  {
+    name: 'fill_blank known_wrong that is an accepted answer of another blank',
+    file: LESSON_1,
+    from: 'template: "I {{b1}} a student."\n      blanks: [{ id: b1 }]\n    answer:\n      blanks: { b1: [am] }',
+    to: 'template: "I {{b1}} a student. He {{b2}} a student."\n      blanks: [{ id: b1 }, { id: b2 }]\n    answer:\n      blanks: { b1: [am], b2: [is] }',
+    message: 'known_wrong answer "is" is an accepted answer of blank "b2"',
+  },
+  {
+    name: 'fill_blank accepted answer that grades incorrect',
+    file: LESSON_1,
+    from: 'answer:\n      blanks: { b1: [am] }',
+    to: "answer:\n      blanks: { b1: [am, '...'] }",
+    message: 'accepted answer "..." for blank "b1" grades incorrect, expected correct',
+  },
+  {
+    name: 'word_bank tokens listed in the answer order',
+    file: LESSON_2,
+    from: '        - { id: t4, text: is }\n        - { id: t3, text: Lan }\n        - { id: t1, text: I }\n        - { id: t2, text: am }',
+    to: '        - { id: t1, text: I }\n        - { id: t4, text: is }\n        - { id: t2, text: am }\n        - { id: t3, text: Lan }',
+    message: 'word_bank tokens are listed in the order of answer order 0',
+  },
+  {
+    name: 'translate vi_to_target with answer_lang vi',
+    file: LESSON_1,
+    from: 'answer_lang: en\n    prompt:\n      source_text: Tôi là học sinh.',
+    to: 'answer_lang: vi\n    prompt:\n      source_text: Tôi là học sinh.',
+    message: 'exercises[2] "en:ex:hello-translate": translate vi_to_target needs answer_lang "en", got "vi"',
+  },
+  {
+    name: 'translate vi_to_target with a non-Vietnamese source_lang',
+    file: LESSON_1,
+    from: 'source_lang: vi',
+    to: 'source_lang: en',
+    message: 'translate vi_to_target needs source_lang "vi", got "en"',
+  },
+  {
+    name: 'translate target_to_vi with answer_lang of the lesson language',
+    file: LESSON_2,
+    from: 'answer_lang: vi',
+    to: 'answer_lang: en',
+    message: 'translate target_to_vi needs answer_lang "vi", got "en"',
+  },
+  {
+    name: 'translate target_to_vi with source_lang of another language',
+    file: LESSON_2,
+    from: 'source_lang: en',
+    to: 'source_lang: ko',
+    message: 'translate target_to_vi needs source_lang "en", got "ko"',
   },
   {
     name: 'mcq distractor that grades correct',
@@ -205,7 +304,35 @@ const INVALID = [
     file: LESSON_1,
     from: 'title: { vi: Xin chào }',
     to: `title: { vi: ${'Xin chào'.normalize('NFD')} }`,
-    message: `content/${LESSON_1}: text is not NFC-normalized (line 8)`,
+    message: `content/${LESSON_1}: text is not NFC-normalized at title.vi`,
+  },
+  {
+    name: 'non-NFC text written as a YAML escape',
+    file: LESSON_1,
+    from: 'title: { vi: Xin chào }',
+    to: 'title: { vi: "To\\u0302i" }',
+    message: `content/${LESSON_1}: text is not NFC-normalized at title.vi`,
+  },
+  {
+    name: 'NUL character (YAML escape)',
+    file: LESSON_1,
+    from: 'title: { vi: Xin chào }',
+    to: 'title: { vi: "Xin\\0chào" }',
+    message: `content/${LESSON_1}: forbidden character U+0000 at title.vi`,
+  },
+  {
+    name: 'C0 control character in a nested value',
+    file: ITEMS,
+    from: 'meaning: { vi: xin chào }',
+    to: 'meaning: { vi: "xin\\u001bchào" }',
+    message: `content/${ITEMS}: forbidden character U+001B at items.0.back.meaning.vi`,
+  },
+  {
+    name: 'noncharacter U+FFFF',
+    file: LESSON_2,
+    from: 'display_answer: I am Lan.\n  - key: en:ex:i-am-translate',
+    to: 'display_answer: "I am Lan.\\uFFFF"\n  - key: en:ex:i-am-translate',
+    message: `content/${LESSON_2}: forbidden character U+FFFF at exercises.0.display_answer`,
   },
   {
     name: 'duplicate YAML key',
@@ -235,6 +362,125 @@ for (const c of INVALID) {
     for (const e of errors) assert.match(e, /^content\/\S+: /);
   });
 }
+
+const check = (content) => checkContent(loadContent(content, { label: 'content' }), { grade });
+const REVIEW = "reviewed_by: Reviewer\nreviewed_at: '2026-10-01T00:00:00Z'";
+
+test('reviewed non-demo content imports every row kind as published', (t) => {
+  const { content } = tempTree(t);
+  edit(content, 'sources.yaml', '    demo: true', `    demo: false\n    status: published\n${REVIEW.replace(/^/gm, '    ')}`);
+  edit(content, ITEMS, 'demo: true', `demo: false\nstatus: published\n${REVIEW}`);
+  for (const f of [PROGRAM, 'en/programs/basics/units/01-hello/unit.yaml', LESSON_1, LESSON_2]) {
+    edit(content, f, 'demo: true', `demo: false\n${REVIEW}`);
+  }
+  const loaded = loadContent(content, { label: 'content' });
+  assert.deepEqual(checkContent(loaded, { grade }), []);
+  const bundle = buildBundle(loaded);
+  for (const kind of ['sources', 'programs', 'units', 'lessons', 'learning_items', 'exercises']) {
+    for (const row of bundle[kind]) {
+      assert.equal(row.status, 'published', `${kind} ${row.key}`);
+      assert.equal(row.is_demo, false, `${kind} ${row.key}`);
+      assert.equal(row.reviewed_by, 'Reviewer', `${kind} ${row.key}`);
+    }
+  }
+});
+
+test('an explicit item status is imported as authored', (t) => {
+  const { content } = tempTree(t);
+  edit(content, ITEMS, 'demo: true', 'demo: true\nstatus: archived');
+  for (const f of [LESSON_1, LESSON_2]) edit(content, f, 'status: published', 'status: draft');
+  const loaded = loadContent(content, { label: 'content' });
+  assert.deepEqual(checkContent(loaded, { grade }), []);
+  assert.deepEqual(buildBundle(loaded).learning_items.map((i) => i.status), ['archived', 'archived']);
+});
+
+test('fill_blank known_wrong may be wrong in one blank and unrelated to another', (t) => {
+  const { content } = tempTree(t);
+  edit(
+    content,
+    LESSON_1,
+    'template: "I {{b1}} a student."\n      blanks: [{ id: b1 }]\n    answer:\n      blanks: { b1: [am] }',
+    'template: "I {{b1}} a {{b2}}."\n      blanks: [{ id: b1 }, { id: b2 }]\n    answer:\n      blanks: { b1: [am], b2: [student, pupil] }',
+  );
+  assert.deepEqual(check(content), []);
+});
+
+test('YAML extensions are matched case-insensitively; other files are rejected', (t) => {
+  const { content } = tempTree(t);
+  renameSync(join(content, ITEMS), join(content, 'en/items/basics.YML'));
+  writeFileSync(join(content, 'NOTES.MD'), '# notes\n');
+  const loaded = loadContent(content, { label: 'content' });
+  assert.deepEqual(checkContent(loaded, { grade }), []);
+  assert.equal(buildBundle(loaded).learning_items.length, 2);
+
+  writeFileSync(join(content, 'en/items/extra.txt'), 'hello\n');
+  writeFileSync(join(content, 'en/.gitkeep'), '');
+  const errors = check(content);
+  assert.ok(errors.includes('content/en/items/extra.txt: unexpected file (content/ holds only .yaml/.yml content files and .md docs)'), errors.join('\n'));
+  assert.ok(errors.some((e) => e.startsWith('content/en/.gitkeep: unexpected file')), errors.join('\n'));
+});
+
+test('a UTF-8 BOM does not hide the demo header', (t) => {
+  const { content } = tempTree(t);
+  for (const f of [PROGRAM, ITEMS, 'sources.yaml']) {
+    const path = join(content, f);
+    writeFileSync(path, `\u{FEFF}${readFileSync(path, 'utf8')}`);
+  }
+  assert.deepEqual(check(content), []);
+});
+
+test('duplicate key across files', (t) => {
+  const { content } = tempTree(t);
+  cpSync(join(content, ITEMS), join(content, 'en/items/more.yaml'));
+  const errors = check(content);
+  assert.ok(
+    errors.includes(`content/en/items/more.yaml: duplicate key "en:item:hello" (also in content/${ITEMS})`),
+    errors.join('\n'),
+  );
+});
+
+/** Adds a ko copy of the en fixture tree (keys, languages and levels mapped to Korean). */
+function addKoreanCopy(content) {
+  cpSync(join(content, 'en'), join(content, 'ko'), { recursive: true });
+  const files = readdirSync(join(content, 'ko'), { recursive: true }).filter((f) => f.endsWith('.yaml'));
+  for (const f of files) {
+    const path = join(content, 'ko', f);
+    const text = readFileSync(path, 'utf8')
+      .replaceAll('en:', 'ko:')
+      .replace(/: en\b/g, ': ko')
+      .replaceAll('pre_a1', 'hangul')
+      .replace(/\ba1\b/g, 'topik1');
+    writeFileSync(path, text);
+  }
+}
+
+test('cross-language prerequisite is rejected', (t) => {
+  const { content } = tempTree(t);
+  addKoreanCopy(content);
+  assert.deepEqual(check(content), [], 'the ko copy itself is valid');
+  edit(content, LESSON_2, 'prerequisites: [en:lesson:hello]', 'prerequisites: [ko:lesson:hello]');
+  const errors = check(content);
+  assert.ok(errors.includes(`content/${LESSON_2}: prerequisite "ko:lesson:hello" is in another language (ko)`), errors.join('\n'));
+});
+
+test('seed SQL does not depend on authoring order (file names, item order, key order)', (t) => {
+  const expected = renderSeedSql(buildBundle(loadContent(VALID, { label: 'content' })));
+  const { content } = tempTree(t);
+  // Items listed in the opposite order, in a file that sorts last.
+  const items = readFileSync(join(content, ITEMS), 'utf8');
+  const [head, list] = items.split('items:\n');
+  const at = list.indexOf('  - key: en:item:student');
+  rmSync(join(content, ITEMS));
+  writeFileSync(join(content, 'en/items/zz-basics.yaml'), `${head}items:\n${list.slice(at)}${list.slice(0, at)}`);
+  // Top-level keys of program.yaml and lesson keys reordered.
+  edit(content, PROGRAM, 'order_index: 0\n', '');
+  edit(content, PROGRAM, 'schema_version: 1\n', 'schema_version: 1\norder_index: 0\n');
+  edit(content, LESSON_1, 'estimated_minutes: 5\n', '');
+  edit(content, LESSON_1, 'key: en:lesson:hello\n', 'estimated_minutes: 5\nkey: en:lesson:hello\n');
+  const loaded = loadContent(content, { label: 'content' });
+  assert.deepEqual(checkContent(loaded, { grade }), []);
+  assert.equal(renderSeedSql(buildBundle(loaded)), expected);
+});
 
 test('every exercise is reported when no grader is available', () => {
   const errors = checkContent(loadContent(VALID, { label: 'content' }), { grade: null });
@@ -303,35 +549,104 @@ test('missing content dir is tolerated only while seed.sql is absent', async (t)
   assert.equal(existsSync(join(dir, 'nope')), false);
 });
 
-test('--apply refuses without credentials and posts the seed SQL to the Management API', async (t) => {
-  const none = await cli(t, ['--apply', '--dir', VALID], { env: {} });
-  assert.equal(none.code, 1);
-  assert.match(none.err, /SUPABASE_ACCESS_TOKEN and SUPABASE_PROJECT_ID/);
-  const onlyToken = await cli(t, ['--apply', '--dir', VALID], { env: { SUPABASE_ACCESS_TOKEN: 't' } });
-  assert.equal(onlyToken.code, 1);
+const APPLY_KEY = 'sb_secret_test-key-0123456789';
+const APPLY_ENV = { SUPABASE_URL: 'https://abcdefghijklmnopqrst.supabase.co', SUPABASE_SERVICE_ROLE_KEY: APPLY_KEY, GITHUB_SHA: 'deadbeef' };
+const noFetch = async () => assert.fail('fetch must not be called');
 
+test('--apply refuses without SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY', async (t) => {
+  for (const env of [
+    {},
+    { SUPABASE_URL: APPLY_ENV.SUPABASE_URL },
+    { SUPABASE_SERVICE_ROLE_KEY: APPLY_KEY },
+    // The old Management API credentials are no longer accepted.
+    { SUPABASE_ACCESS_TOKEN: 'tok', SUPABASE_PROJECT_ID: 'abcdefghijklmnopqrst' },
+  ]) {
+    const r = await cli(t, ['--apply', '--dir', VALID], { env, fetchImpl: noFetch });
+    assert.equal(r.code, 1, JSON.stringify(env));
+    assert.match(r.err, /SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY/);
+    assert.ok(!r.err.includes(APPLY_KEY) && !r.out.includes(APPLY_KEY), 'never prints the key');
+  }
+  const bad = await cli(t, ['--apply', '--dir', VALID], { env: { ...APPLY_ENV, SUPABASE_URL: 'abcdefghijklmnopqrst' }, fetchImpl: noFetch });
+  assert.equal(bad.code, 1);
+  assert.match(bad.err, /SUPABASE_URL must be the project URL/);
+});
+
+test('--apply posts the bundle to the import_content_bundle RPC with the service key', async (t) => {
   const calls = [];
   const fetchImpl = async (url, init) => {
     calls.push({ url, init });
-    return new Response(JSON.stringify([{ import_bundle: { inserted: 15, updated: 0, archived: 0, unchanged: 0 } }]), { status: 201 });
+    return new Response(JSON.stringify({ inserted: 15, updated: 0, archived: 0, unchanged: 0 }), { status: 200 });
   };
-  const env = { SUPABASE_ACCESS_TOKEN: 'tok', SUPABASE_PROJECT_ID: 'abcdefghijklmnopqrst', GITHUB_SHA: 'deadbeef' };
-  const r = await cli(t, ['--apply', '--dir', VALID], { env, fetchImpl });
-  assert.equal(r.code, 0, r.err);
-  assert.equal(calls.length, 1);
-  assert.equal(calls[0].url, 'https://api.supabase.com/v1/projects/abcdefghijklmnopqrst/database/query');
-  assert.equal(calls[0].init.headers.Authorization, 'Bearer tok');
-  const { query } = JSON.parse(calls[0].init.body);
-  assert.match(query, /select content_private\.import_bundle\(\$bundle\$/);
-  assert.ok(query.includes('"git_sha": "deadbeef"'));
-  assert.match(r.out, /"inserted":15/);
+  for (const url of [APPLY_ENV.SUPABASE_URL, `${APPLY_ENV.SUPABASE_URL}/`]) {
+    const r = await cli(t, ['--apply', '--dir', VALID], { env: { ...APPLY_ENV, SUPABASE_URL: url }, fetchImpl });
+    assert.equal(r.code, 0, r.err);
+    assert.match(r.out, /Imported \d+ lessons: \{"inserted":15,"updated":0,"archived":0,"unchanged":0\}/);
+    assert.ok(!r.out.includes(APPLY_KEY), 'never prints the key');
+  }
+  assert.equal(calls.length, 2);
+  for (const { url } of calls) assert.equal(url, 'https://abcdefghijklmnopqrst.supabase.co/rest/v1/rpc/import_content_bundle');
+  const { init } = calls[0];
+  assert.equal(init.method, 'POST');
+  assert.deepEqual(init.headers, { apikey: APPLY_KEY, Authorization: `Bearer ${APPLY_KEY}`, 'Content-Type': 'application/json' });
+  const body = JSON.parse(init.body);
+  assert.deepEqual(Object.keys(body), ['p_bundle']);
+  const bundle = bundleSchema.parse(body.p_bundle);
+  assert.equal(bundle.git_sha, 'deadbeef');
+  assert.ok(bundle.lessons.length > 0);
+});
 
-  const failing = await cli(t, ['--apply', '--dir', VALID], { env, fetchImpl: async () => new Response('nope', { status: 401 }) });
-  assert.equal(failing.code, 1);
-  assert.match(failing.err, /HTTP 401/);
+test('--apply surfaces PostgREST errors and rejects unexpected responses', async (t) => {
+  const pgError = {
+    code: '42501',
+    message: 'permission denied for function import_content_bundle',
+    details: null,
+    hint: null,
+  };
+  const denied = await cli(t, ['--apply', '--dir', VALID], {
+    env: APPLY_ENV,
+    fetchImpl: async () => new Response(JSON.stringify(pgError), { status: 403 }),
+  });
+  assert.equal(denied.code, 1);
+  assert.match(denied.err, /HTTP 403 42501 \| permission denied for function import_content_bundle/);
+
+  const raw = await cli(t, ['--apply', '--dir', VALID], { env: APPLY_ENV, fetchImpl: async () => new Response('Bad Gateway', { status: 502 }) });
+  assert.equal(raw.code, 1);
+  assert.match(raw.err, /HTTP 502 Bad Gateway/);
+
+  const echo = await cli(t, ['--apply', '--dir', VALID], {
+    env: APPLY_ENV,
+    fetchImpl: async () => new Response(JSON.stringify({ message: `Invalid API key ${APPLY_KEY}` }), { status: 401 }),
+  });
+  assert.equal(echo.code, 1);
+  assert.match(echo.err, /HTTP 401 Invalid API key <redacted>/);
+  assert.ok(!echo.err.includes(APPLY_KEY), 'never prints the key');
+
+  const network = await cli(t, ['--apply', '--dir', VALID], {
+    env: APPLY_ENV,
+    fetchImpl: async () => {
+      throw new TypeError('fetch failed');
+    },
+  });
+  assert.equal(network.code, 1);
+  assert.match(network.err, /Import failed: fetch failed/);
+
+  const unexpected = await cli(t, ['--apply', '--dir', VALID], {
+    env: APPLY_ENV,
+    fetchImpl: async () => new Response(JSON.stringify({ inserted: 1 }), { status: 200 }),
+  });
+  assert.equal(unexpected.code, 1);
+  assert.match(unexpected.err, /unexpected response/);
 });
 
 test('usage errors exit 2', async (t) => {
   assert.equal((await cli(t, [])).code, 2);
   assert.equal((await cli(t, ['--apply', '--check'])).code, 2);
+});
+
+test('--dir and --out without a value exit 2', async (t) => {
+  for (const argv of [['--check', '--dir'], ['--dir', '--check'], ['--emit-sql', '--out'], ['--emit-sql', '--out', '--check']]) {
+    const r = await cli(t, argv);
+    assert.equal(r.code, 2, argv.join(' '));
+    assert.match(r.err, /needs a value/);
+  }
 });
