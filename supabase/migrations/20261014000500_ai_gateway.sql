@@ -1,8 +1,12 @@
 -- Linguo spec 5 §4: data behind the ai-tutor Edge Function — daily quota, shared response cache,
 -- content-free usage log, learner reports and the AI privacy notice acknowledgement.
--- The Edge Function calls these RPCs with the caller's JWT, so every RPC is security definer, derives the
--- user from auth.uid() only, and is executable by authenticated (never anon). Clients never write the
--- tables directly; ai_cache is not readable at all except through ai_cache_get.
+-- Every RPC is security definer with an empty search_path and is never executable by anon.
+-- Learner-facing RPCs (ai_quota_consume, ai_quota_status, ai_report, ack_ai_notice) are granted to
+-- authenticated and take the user from auth.uid() only. RPCs that write shared or accounting state
+-- (ai_cache_get/put, ai_usage_log, ai_quota_refund) are granted to service_role only, so learners cannot
+-- poison the shared cache, forge usage rows or win back requests; the Edge Function calls them with a
+-- service client and passes the user id it verified from the caller's token.
+-- Clients never write the tables directly; ai_cache is not readable by clients at all.
 
 -- ---------------------------------------------------------------------------
 -- Tables
@@ -163,22 +167,21 @@ end;
 $$;
 
 -- Gives back one request taken today after a failed AI call; at most 10 refunds per local day.
-create or replace function public.ai_quota_refund()
+-- Service role only (the Edge Function passes the verified user id).
+create or replace function public.ai_quota_refund(p_user_id uuid)
 returns boolean
 language plpgsql
 volatile
 security definer
 set search_path = ''
 as $$
-declare
-  v_uid uuid := auth.uid();
 begin
-  if v_uid is null then
-    raise exception using errcode = '42501', message = 'not_authenticated';
+  if p_user_id is null then
+    raise exception using errcode = '22023', message = 'invalid_user';
   end if;
   update public.ai_quota q
   set count = q.count - 1, refunded = q.refunded + 1, updated_at = now()
-  where q.user_id = v_uid and q.used_on = public.learning_user_today(v_uid)
+  where q.user_id = p_user_id and q.used_on = public.learning_user_today(p_user_id)
     and q.count > 0 and q.refunded < 10;
   return found;
 end;
@@ -213,7 +216,7 @@ $$;
 -- Cache
 -- ---------------------------------------------------------------------------
 
--- Payload of an unexpired entry (and counts the hit), or null.
+-- Payload of an unexpired entry (and counts the hit), or null. Service role only.
 create or replace function public.ai_cache_get(p_key text)
 returns jsonb
 language plpgsql
@@ -224,9 +227,6 @@ as $$
 declare
   v_payload jsonb;
 begin
-  if auth.uid() is null then
-    raise exception using errcode = '42501', message = 'not_authenticated';
-  end if;
   update public.ai_cache c
   set hits = c.hits + 1
   where c.key = p_key and c.expires_at > now()
@@ -235,7 +235,8 @@ begin
 end;
 $$;
 
--- Stores (or replaces) an entry for 30 days and drops expired entries.
+-- Stores (or replaces) an entry for 30 days and drops expired entries. Service role only: entries are
+-- shared across users, so only the Edge Function may write validated outputs.
 create or replace function public.ai_cache_put(
   p_key text, p_task text, p_prompt_version text, p_model text, p_payload jsonb
 )
@@ -246,9 +247,6 @@ security definer
 set search_path = ''
 as $$
 begin
-  if auth.uid() is null then
-    raise exception using errcode = '42501', message = 'not_authenticated';
-  end if;
   if p_key is null or p_key !~ '^[0-9a-f]{64}$' then
     raise exception using errcode = '22023', message = 'invalid_key';
   end if;
@@ -280,10 +278,10 @@ $$;
 -- Usage log and reports
 -- ---------------------------------------------------------------------------
 
--- Records one request (metadata only) and drops rows older than 90 days. Returns the row id, which the
--- function hands to the client as response_id.
+-- Records one request (metadata only) for p_user_id and drops rows older than 90 days. Returns the row id,
+-- which the function hands to the client as response_id. Service role only.
 create or replace function public.ai_usage_log(
-  p_task text, p_prompt_version text, p_model text, p_status text, p_http_status integer,
+  p_user_id uuid, p_task text, p_prompt_version text, p_model text, p_status text, p_http_status integer,
   p_latency_ms integer, p_attempts integer, p_input_chars integer, p_cached boolean, p_repaired boolean
 )
 returns uuid
@@ -293,11 +291,10 @@ security definer
 set search_path = ''
 as $$
 declare
-  v_uid uuid := auth.uid();
   v_id uuid;
 begin
-  if v_uid is null then
-    raise exception using errcode = '42501', message = 'not_authenticated';
+  if p_user_id is null or not exists (select 1 from auth.users u where u.id = p_user_id) then
+    raise exception using errcode = '22023', message = 'invalid_user';
   end if;
   if p_task is null or p_task not in ('explain_concept', 'generate_practice', 'analyze_error') then
     raise exception using errcode = '22023', message = 'invalid_task';
@@ -316,7 +313,7 @@ begin
 
   insert into public.ai_usage (user_id, task, prompt_version, model, status, http_status, latency_ms, attempts,
     input_chars, cached, repaired)
-  values (v_uid, p_task, p_prompt_version, p_model, p_status, p_http_status, coalesce(p_latency_ms, 0),
+  values (p_user_id, p_task, p_prompt_version, p_model, p_status, p_http_status, coalesce(p_latency_ms, 0),
     coalesce(p_attempts, 0), coalesce(p_input_chars, 0), coalesce(p_cached, false), coalesce(p_repaired, false))
   returning id into v_id;
   return v_id;
@@ -392,19 +389,22 @@ $$;
 revoke all on function public.ai_quota_resets_at(uuid) from public, anon, authenticated;
 revoke all on function public.ai_check_limit(integer) from public, anon, authenticated;
 
+-- Learner-facing RPCs: authenticated only.
 revoke all on function public.ai_quota_consume(integer) from public, anon;
-revoke all on function public.ai_quota_refund() from public, anon;
 revoke all on function public.ai_quota_status(integer) from public, anon;
-revoke all on function public.ai_cache_get(text) from public, anon;
-revoke all on function public.ai_cache_put(text, text, text, text, jsonb) from public, anon;
-revoke all on function public.ai_usage_log(text, text, text, text, integer, integer, integer, integer, boolean, boolean) from public, anon;
 revoke all on function public.ai_report(uuid, text, text) from public, anon;
 revoke all on function public.ack_ai_notice() from public, anon;
 grant execute on function public.ai_quota_consume(integer) to authenticated;
-grant execute on function public.ai_quota_refund() to authenticated;
 grant execute on function public.ai_quota_status(integer) to authenticated;
-grant execute on function public.ai_cache_get(text) to authenticated;
-grant execute on function public.ai_cache_put(text, text, text, text, jsonb) to authenticated;
-grant execute on function public.ai_usage_log(text, text, text, text, integer, integer, integer, integer, boolean, boolean) to authenticated;
 grant execute on function public.ai_report(uuid, text, text) to authenticated;
 grant execute on function public.ack_ai_notice() to authenticated;
+
+-- Edge-Function-only RPCs: service_role only.
+revoke all on function public.ai_quota_refund(uuid) from public, anon, authenticated;
+revoke all on function public.ai_cache_get(text) from public, anon, authenticated;
+revoke all on function public.ai_cache_put(text, text, text, text, jsonb) from public, anon, authenticated;
+revoke all on function public.ai_usage_log(uuid, text, text, text, text, integer, integer, integer, integer, boolean, boolean) from public, anon, authenticated;
+grant execute on function public.ai_quota_refund(uuid) to service_role;
+grant execute on function public.ai_cache_get(text) to service_role;
+grant execute on function public.ai_cache_put(text, text, text, text, jsonb) to service_role;
+grant execute on function public.ai_usage_log(uuid, text, text, text, text, integer, integer, integer, integer, boolean, boolean) to service_role;
