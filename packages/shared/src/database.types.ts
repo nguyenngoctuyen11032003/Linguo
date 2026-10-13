@@ -325,14 +325,14 @@ isOneToOne: false
                   ]
                 },"review_cards": {
                   Row: {
-                    "created_at": string,"difficulty": number,"direction": string,"due_at": string,"fsrs_state": string,"id": string,"lapses": number,"last_postponed_on": string | null,"last_review_at": string | null,"learning_item_id": string,"learning_path_id": string,"postpone_count": number,"reps": number,"scheduled_days": number,"stability": number,"step": number,"suspended_at": string | null,"updated_at": string,"user_id": string
+                    "created_at": string,"difficulty": number | null,"direction": string,"due_at": string,"fsrs_state": string,"id": string,"lapses": number,"last_postponed_on": string | null,"last_review_at": string | null,"learning_item_id": string,"learning_path_id": string,"postpone_count": number,"reps": number,"scheduled_days": number,"stability": number | null,"step": number,"suspended_at": string | null,"updated_at": string,"user_id": string
                   }
                   ComputedFields: never
                   Insert: {
-                    "created_at"?: string,"difficulty"?: number,"direction": string,"due_at": string,"fsrs_state"?: string,"id"?: string,"lapses"?: number,"last_postponed_on"?: string | null,"last_review_at"?: string | null,"learning_item_id": string,"learning_path_id": string,"postpone_count"?: number,"reps"?: number,"scheduled_days"?: number,"stability"?: number,"step"?: number,"suspended_at"?: string | null,"updated_at"?: string,"user_id": string
+                    "created_at"?: string,"difficulty"?: number | null,"direction": string,"due_at": string,"fsrs_state"?: string,"id"?: string,"lapses"?: number,"last_postponed_on"?: string | null,"last_review_at"?: string | null,"learning_item_id": string,"learning_path_id": string,"postpone_count"?: number,"reps"?: number,"scheduled_days"?: number,"stability"?: number | null,"step"?: number,"suspended_at"?: string | null,"updated_at"?: string,"user_id": string
                   }
                   Update: {
-                    "created_at"?: string,"difficulty"?: number,"direction"?: string,"due_at"?: string,"fsrs_state"?: string,"id"?: string,"lapses"?: number,"last_postponed_on"?: string | null,"last_review_at"?: string | null,"learning_item_id"?: string,"learning_path_id"?: string,"postpone_count"?: number,"reps"?: number,"scheduled_days"?: number,"stability"?: number,"step"?: number,"suspended_at"?: string | null,"updated_at"?: string,"user_id"?: string
+                    "created_at"?: string,"difficulty"?: number | null,"direction"?: string,"due_at"?: string,"fsrs_state"?: string,"id"?: string,"lapses"?: number,"last_postponed_on"?: string | null,"last_review_at"?: string | null,"learning_item_id"?: string,"learning_path_id"?: string,"postpone_count"?: number,"reps"?: number,"scheduled_days"?: number,"stability"?: number | null,"step"?: number,"suspended_at"?: string | null,"updated_at"?: string,"user_id"?: string
                   }
                   Relationships: [
                     {
@@ -377,14 +377,14 @@ isOneToOne: false
                   ]
                 },"review_logs": {
                   Row: {
-                    "card_id": string,"client_at": string | null,"confidence": number | null,"created_at": string,"hint_count": number | null,"id": string,"idempotency_key": string,"kind": string,"learning_path_id": string,"local_day": string,"payload_hash": string | null,"rating_effective": number | null,"rating_raw": number | null,"response_ms": number | null,"result": Json | null,"state_after": Json | null,"state_before": Json | null,"user_id": string
+                    "card_id": string | null,"client_at": string | null,"confidence": number | null,"created_at": string,"hint_count": number | null,"id": string,"idempotency_key": string,"kind": string,"learning_path_id": string,"local_day": string,"payload_hash": string,"rating_effective": number | null,"rating_raw": number | null,"response_ms": number | null,"result": Json | null,"state_after": Json | null,"state_before": Json | null,"user_id": string
                   }
                   ComputedFields: never
                   Insert: {
-                    "card_id": string,"client_at"?: string | null,"confidence"?: number | null,"created_at"?: string,"hint_count"?: number | null,"id"?: string,"idempotency_key": string,"kind": string,"learning_path_id": string,"local_day": string,"payload_hash"?: string | null,"rating_effective"?: number | null,"rating_raw"?: number | null,"response_ms"?: number | null,"result"?: Json | null,"state_after"?: Json | null,"state_before"?: Json | null,"user_id": string
+                    "card_id"?: string | null,"client_at"?: string | null,"confidence"?: number | null,"created_at"?: string,"hint_count"?: number | null,"id"?: string,"idempotency_key": string,"kind": string,"learning_path_id": string,"local_day": string,"payload_hash": string,"rating_effective"?: number | null,"rating_raw"?: number | null,"response_ms"?: number | null,"result"?: Json | null,"state_after"?: Json | null,"state_before"?: Json | null,"user_id": string
                   }
                   Update: {
-                    "card_id"?: string,"client_at"?: string | null,"confidence"?: number | null,"created_at"?: string,"hint_count"?: number | null,"id"?: string,"idempotency_key"?: string,"kind"?: string,"learning_path_id"?: string,"local_day"?: string,"payload_hash"?: string | null,"rating_effective"?: number | null,"rating_raw"?: number | null,"response_ms"?: number | null,"result"?: Json | null,"state_after"?: Json | null,"state_before"?: Json | null,"user_id"?: string
+                    "card_id"?: string | null,"client_at"?: string | null,"confidence"?: number | null,"created_at"?: string,"hint_count"?: number | null,"id"?: string,"idempotency_key"?: string,"kind"?: string,"learning_path_id"?: string,"local_day"?: string,"payload_hash"?: string,"rating_effective"?: number | null,"rating_raw"?: number | null,"response_ms"?: number | null,"result"?: Json | null,"state_after"?: Json | null,"state_before"?: Json | null,"user_id"?: string
                   }
                   Relationships: [
                     {
@@ -423,17 +423,17 @@ isOneToOne: false
                   ]
                 },"srs_config": {
                   Row: {
-                    "cap_max": number,"cap_min": number,"cap_per_minute": number,"daily_new_limit": number,"desired_retention": number,"id": boolean,"learning_steps_minutes": (number)[],"mastery_min_days": number,"mastery_min_successes": number,"mastery_recall_stability_days": number,"maximum_interval": number,"recovery_factor": number,"relearning_steps_minutes": (number)[],"weights": (number)[]
+                    "cap_max": number,"cap_min": number,"cap_per_minute": number,"daily_new_limit": number,"desired_retention": number,"id": boolean,"learning_steps_minutes": (number)[],"mastery_min_days": number,"mastery_min_recall_stability": number,"mastery_min_successes": number,"maximum_interval": number,"recovery_factor": number,"relearning_steps_minutes": (number)[],"updated_at": string,"weights": (number)[]
                   }
                   ComputedFields: never
                   Insert: {
-                    "cap_max"?: number,"cap_min"?: number,"cap_per_minute"?: number,"daily_new_limit"?: number,"desired_retention"?: number,"id"?: boolean,"learning_steps_minutes"?: (number)[],"mastery_min_days"?: number,"mastery_min_successes"?: number,"mastery_recall_stability_days"?: number,"maximum_interval"?: number,"recovery_factor"?: number,"relearning_steps_minutes"?: (number)[],"weights": (number)[]
+                    "cap_max"?: number,"cap_min"?: number,"cap_per_minute"?: number,"daily_new_limit"?: number,"desired_retention"?: number,"id"?: boolean,"learning_steps_minutes"?: (number)[],"mastery_min_days"?: number,"mastery_min_recall_stability"?: number,"mastery_min_successes"?: number,"maximum_interval"?: number,"recovery_factor"?: number,"relearning_steps_minutes"?: (number)[],"updated_at"?: string,"weights": (number)[]
                   }
                   Update: {
-                    "cap_max"?: number,"cap_min"?: number,"cap_per_minute"?: number,"daily_new_limit"?: number,"desired_retention"?: number,"id"?: boolean,"learning_steps_minutes"?: (number)[],"mastery_min_days"?: number,"mastery_min_successes"?: number,"mastery_recall_stability_days"?: number,"maximum_interval"?: number,"recovery_factor"?: number,"relearning_steps_minutes"?: (number)[],"weights"?: (number)[]
+                    "cap_max"?: number,"cap_min"?: number,"cap_per_minute"?: number,"daily_new_limit"?: number,"desired_retention"?: number,"id"?: boolean,"learning_steps_minutes"?: (number)[],"mastery_min_days"?: number,"mastery_min_recall_stability"?: number,"mastery_min_successes"?: number,"maximum_interval"?: number,"recovery_factor"?: number,"relearning_steps_minutes"?: (number)[],"updated_at"?: string,"weights"?: (number)[]
                   }
                   Relationships: [
-
+                    
                   ]
                 },"units": {
                   Row: {
@@ -605,6 +605,31 @@ isOneToOne: false
 "postpone_reviews":
 { Args: { "p_card_ids": (string)[],"p_idempotency_key": string,"p_path_id": string }; Returns: Json
                            },
+"review_day_totals":
+{ Args: { "p_extra": boolean,"p_now": string,"p_path_id": string,"p_user": string,"p_weekly_minutes": (number)[] }; Returns: Json
+                           },
+"review_path_for_user":
+{ Args: { "p_path_id": string,"p_require_active": boolean,"p_user": string }; Returns: {
+              "created_at": string,
+"current_level": string,
+"estimate": NonNullable<Json>,
+"goal_type": string,
+"id": string,
+"language_code": string,
+"start_point": string,
+"status": string,
+"target_date": string | null,
+"target_level": string,
+"updated_at": string,
+"user_id": string,
+"weekly_minutes": (number)[]
+            }
+                          SetofOptions: {
+        from: "*"
+        to: "learning_paths"
+        isOneToOne: true
+        isSetofReturn: false
+      } },
 "review_summary":
 { Args: { "p_path_id": string }; Returns: Json
                            },
@@ -639,11 +664,32 @@ isOneToOne: false
 "srs_adjust_rating":
 { Args: { "p_confidence": number,"p_hint_count": number,"p_rating": number }; Returns: number
                            },
+"srs_card_state_json":
+{ Args: { "p_difficulty": number,"p_due_at": string,"p_lapses": number,"p_last_review_at": string,"p_reps": number,"p_scheduled_days": number,"p_stability": number,"p_state": string,"p_step": number }; Returns: Json
+                           },
+"srs_clip_weights":
+{ Args: { "p_num_relearning_steps": number,"p_w": (number)[] }; Returns: (number)[]
+                           },
+"srs_decay_factor":
+{ Args: { "p_w": (number)[] }; Returns: (number)[]
+                           },
 "srs_enroll_lesson":
 { Args: { "p_lesson": string,"p_path": string,"p_user": string }; Returns: number
                            },
+"srs_forgetting_curve":
+{ Args: { "p_elapsed_days": number,"p_stability": number,"p_w": (number)[] }; Returns: number
+                           },
+"srs_init_difficulty":
+{ Args: { "p_g": number,"p_w": (number)[] }; Returns: number
+                           },
+"srs_interval_days":
+{ Args: { "p_desired_retention": number,"p_maximum_interval": number,"p_stability": number,"p_w": (number)[] }; Returns: number
+                           },
 "srs_next":
 { Args: { "p_difficulty": number,"p_last_review_at": string,"p_now": string,"p_rating": number,"p_stability": number,"p_state": string,"p_step": number,"p_tz": string }; Returns: Json
+                           },
+"srs_next_memory":
+{ Args: { "p_d": number,"p_g": number,"p_r": number,"p_s": number,"p_t": number,"p_w": (number)[] }; Returns: (number)[]
                            },
 "srs_previews":
 { Args: { "p_difficulty": number,"p_last_review_at": string,"p_now": string,"p_stability": number,"p_state": string,"p_step": number,"p_tz": string }; Returns: Json
@@ -651,8 +697,17 @@ isOneToOne: false
 "srs_retrievability":
 { Args: { "p_elapsed_days": number,"p_stability": number }; Returns: number
                            },
+"srs_round8":
+{ Args: { "p_x": number }; Returns: number
+                           },
+"srs_schedule":
+{ Args: { "p_desired_retention": number,"p_difficulty": number,"p_elapsed_days": number,"p_learning_steps": (number)[],"p_maximum_interval": number,"p_rating": number,"p_relearning_steps": (number)[],"p_stability": number,"p_state": string,"p_step": number,"p_w": (number)[] }; Returns: Json
+                           },
+"srs_step_info":
+{ Args: { "p_g": number,"p_learning_steps": (number)[],"p_relearning_steps": (number)[],"p_state": string,"p_step": number }; Returns: (number)[]
+                           },
 "srs_update_mastery":
-{ Args: { "p_item": string,"p_path": string,"p_user": string }; Returns: undefined
+{ Args: { "p_item": string,"p_path": string,"p_user": string }; Returns: boolean
                            },
 "start_lesson":
 { Args: { "p_lesson_id": string,"p_path_id": string }; Returns: Json
