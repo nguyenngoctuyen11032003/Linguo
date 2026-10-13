@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { aiErrorSchema, aiSuccessSchema } from '../_shared/ai-contract.ts';
 import { type DbResult, handle, type HandlerDeps, type SupabaseLike } from './handler.ts';
 import { createBreaker } from './lib/breaker.ts';
+import { createIpLimiter } from './lib/ip-limiter.ts';
 import { cacheKey, normalizeText } from './lib/cache-key.ts';
 
 // ---------------------------------------------------------------------------
@@ -200,6 +201,7 @@ function harness(
     supabase: db.factory,
     serviceSupabase: db.service,
     breaker: o.breaker ?? createBreaker({ failureThreshold: 5, windowMs: 60_000, openMs: 60_000, now: () => NOW }),
+    ipLimiter: createIpLimiter({ limit: 30, windowMs: 60_000, now: () => NOW }),
   };
   return { deps, db, fetch: f, sleeps };
 }
@@ -285,6 +287,31 @@ Deno.test('body over 8 KB or not JSON → 400 bad_request', async () => {
   await expectError(await handle(post('{not json'), h.deps), 400, 'bad_request');
   await expectError(await handle(post({ task: 'write_essay', language: 'en', level: 'a2' }), h.deps), 400, 'bad_request');
   assert.equal(h.db.calls.length, 0);
+});
+
+Deno.test('per-IP limit: the 31st request in a minute → 429 quota_exceeded with retry_after_sec, nothing consumed', async () => {
+  const h = harness({ db: fakeDb({ validToken: false }) });
+  const from = (ip: string) => post(explainBody(), { authorization: 'Bearer good-token', 'x-forwarded-for': `${ip}, 10.0.0.1` });
+  for (let i = 0; i < 30; i++) await expectError(await handle(from('203.0.113.7'), h.deps), 401, 'unauthorized');
+  const body = await expectError(await handle(from('203.0.113.7'), h.deps), 429, 'quota_exceeded');
+  assert.equal(body.retry_after_sec, 60);
+  assert.equal(body.quota, null);
+  assert.equal(h.db.count('ai_quota_consume'), 0);
+  assert.equal(h.fetch.bodies.length, 0);
+  // Another address, and requests without x-forwarded-for ('unknown'), still get through.
+  await expectError(await handle(from('198.51.100.2'), h.deps), 401, 'unauthorized');
+  await expectError(await handle(post(explainBody()), h.deps), 401, 'unauthorized');
+});
+
+Deno.test('per-IP limit is checked before the daily quota: a refused request consumes nothing', async () => {
+  const h = harness({ env: { GEMINI_DAILY_USER_LIMIT: '100' }, steps: Array.from({ length: 30 }, () => geminiOk(ANALYZE_OUTPUT)) });
+  for (let i = 0; i < 30; i++) await expectSuccess(await handle(post(analyzeBody()), h.deps));
+  assert.equal(h.db.count('ai_quota_consume'), 30);
+  const callsBefore = h.db.calls.length;
+  await expectError(await handle(post(analyzeBody()), h.deps), 429, 'quota_exceeded');
+  assert.equal(h.db.calls.length, callsBefore);
+  assert.equal(h.db.used, 30);
+  assert.equal(h.fetch.bodies.length, 30);
 });
 
 // ---------------------------------------------------------------------------

@@ -3,6 +3,7 @@
 import { AI_REQUEST_MAX_BYTES, type AiErrorCode, type AiRequest, aiRequestSchema } from '../_shared/ai-contract.ts';
 import { callGemini, type GeminiDeps, GeminiError } from './lib/gemini.ts';
 import type { createBreaker } from './lib/breaker.ts';
+import { clientIp, type IpLimiter } from './lib/ip-limiter.ts';
 import { type PromptModule, PROMPTS } from './lib/prompts/index.ts';
 import { extractJson, repairPrompt, sanitizeOutput } from './lib/text.ts';
 import { cacheKey } from './lib/cache-key.ts';
@@ -25,6 +26,8 @@ export interface HandlerDeps extends GeminiDeps {
   /** service_role client: ai_cache_get / ai_cache_put / ai_usage_log / ai_quota_refund only. */
   serviceSupabase: () => SupabaseLike;
   breaker: ReturnType<typeof createBreaker>;
+  /** Per-IP burst limit (in memory, per isolate), checked before auth and any database work. */
+  ipLimiter: IpLimiter;
 }
 
 export const CORS_HEADERS: Record<string, string> = {
@@ -177,6 +180,14 @@ export async function handle(req: Request, deps: HandlerDeps): Promise<Response>
   // 1. Method + size.
   if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS_HEADERS });
   if (req.method !== 'POST') return fail(405, 'bad_request');
+
+  // 1b. Per-IP burst limit (spec 7 §3): refused before auth and the daily quota, so nothing is consumed.
+  const ipHit = deps.ipLimiter.hit(clientIp(req));
+  if (!ipHit.allowed) {
+    await req.body?.cancel().catch(() => {});
+    return fail(429, 'quota_exceeded', { retryAfterSec: ipHit.retryAfterSec });
+  }
+
   const raw = await readLimited(req);
   if (raw === null) return fail(400, 'bad_request');
 

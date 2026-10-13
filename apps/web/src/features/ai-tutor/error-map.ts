@@ -37,15 +37,19 @@ export interface AiErrorMessageOptions {
 export function aiErrorMessage(error: AiError | AiErrorCode, options: AiErrorMessageOptions = {}): string {
   const e: AiError = typeof error === 'string' ? { error, message: '', retry_after_sec: null, quota: null } : error;
   const base = AI_MESSAGES[e.error] ?? 'Đã có lỗi xảy ra. Vui lòng thử lại.';
+  const wait =
+    e.retry_after_sec !== null && e.retry_after_sec > 0
+      ? e.retry_after_sec < 60
+        ? `${e.retry_after_sec} giây`
+        : `${Math.ceil(e.retry_after_sec / 60)} phút`
+      : null;
   if (e.error === 'quota_exceeded') {
+    // Per-IP burst limit (no daily quota attached, only a short retry delay): not "used up for today".
+    if (!e.quota && wait) return `Bạn đang gửi quá nhiều yêu cầu. Thử lại sau khoảng ${wait}.`;
     const at = e.quota ? formatResetTime(e.quota.resets_at, options.timeZone) : null;
     return at ? `${base} Lượt mới sẽ có lúc ${at}.` : `${base} Lượt mới sẽ có vào ngày mai.`;
   }
-  if (e.error === 'ai_unavailable' && e.retry_after_sec !== null && e.retry_after_sec > 0) {
-    const minutes = Math.ceil(e.retry_after_sec / 60);
-    const wait = e.retry_after_sec < 60 ? `${e.retry_after_sec} giây` : `${minutes} phút`;
-    return `${base} Thử lại sau khoảng ${wait}.`;
-  }
+  if (e.error === 'ai_unavailable' && wait) return `${base} Thử lại sau khoảng ${wait}.`;
   return base;
 }
 
