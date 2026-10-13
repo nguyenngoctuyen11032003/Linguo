@@ -53,7 +53,8 @@ describe('SettingsPage', () => {
     renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
     const name = screen.getByLabelText('Tên hiển thị');
     await userEvent.clear(name);
-    await userEvent.type(name, 'a'.repeat(61));
+    await userEvent.click(name);
+    await userEvent.paste('a'.repeat(61));
     await userEvent.click(screen.getByRole('button', { name: 'Lưu hồ sơ' }));
     expect(screen.getByText('Tên hiển thị tối đa 60 ký tự.')).toBeInTheDocument();
     expect(mocks.updateProfile).not.toHaveBeenCalled();
