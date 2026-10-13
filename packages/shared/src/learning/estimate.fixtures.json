@@ -1,0 +1,73 @@
+{
+  "today": "2026-10-13",
+  "referenceHours": {
+    "en": [
+      { "levelCode": "pre_a1", "ordinal": 0, "cumulativeHours": 0 },
+      { "levelCode": "a1", "ordinal": 1, "cumulativeHours": 90 },
+      { "levelCode": "a2", "ordinal": 2, "cumulativeHours": 190 },
+      { "levelCode": "b1", "ordinal": 3, "cumulativeHours": 375 },
+      { "levelCode": "b2", "ordinal": 4, "cumulativeHours": 575 },
+      { "levelCode": "c1", "ordinal": 5, "cumulativeHours": 775 },
+      { "levelCode": "c2", "ordinal": 6, "cumulativeHours": 1100 }
+    ],
+    "ko": [
+      { "levelCode": "hangul", "ordinal": 0, "cumulativeHours": 0 },
+      { "levelCode": "topik1", "ordinal": 1, "cumulativeHours": 120 },
+      { "levelCode": "topik2", "ordinal": 2, "cumulativeHours": 300 },
+      { "levelCode": "topik3", "ordinal": 3, "cumulativeHours": 650 },
+      { "levelCode": "topik4", "ordinal": 4, "cumulativeHours": 1000 },
+      { "levelCode": "topik5", "ordinal": 5, "cumulativeHours": 1500 },
+      { "levelCode": "topik6", "ordinal": 6, "cumulativeHours": 2200 }
+    ]
+  },
+  "cases": [
+    {
+      "name": "en a2 to b1, 30 min every day, no deadline",
+      "language": "en", "currentLevel": "a2", "targetLevel": "b1",
+      "weeklyMinutes": [30, 30, 30, 30, 30, 30, 30], "targetDate": null,
+      "expected": { "hoursNeeded": 185, "weeksMin": 43, "weeksMid": 53, "weeksMax": 69, "feasibility": "no_deadline", "suggestedMinutesPerDay": null, "suggestedDate": null }
+    },
+    {
+      "name": "en pre_a1 to c2, 120 min on weekdays, no deadline",
+      "language": "en", "currentLevel": "pre_a1", "targetLevel": "c2",
+      "weeklyMinutes": [120, 120, 120, 120, 120, 0, 0], "targetDate": null,
+      "expected": { "hoursNeeded": 1100, "weeksMin": 88, "weeksMid": 110, "weeksMax": 143, "feasibility": "no_deadline", "suggestedMinutesPerDay": null, "suggestedDate": null }
+    },
+    {
+      "name": "en b1 to b2, 60 min every day, feasible deadline",
+      "language": "en", "currentLevel": "b1", "targetLevel": "b2",
+      "weeklyMinutes": [60, 60, 60, 60, 60, 60, 60], "targetDate": "2027-07-13",
+      "expected": { "hoursNeeded": 200, "weeksMin": 24, "weeksMid": 29, "weeksMax": 38, "feasibility": "feasible", "suggestedMinutesPerDay": null, "suggestedDate": null }
+    },
+    {
+      "name": "en b1 to b2, 60 min every day, tight deadline",
+      "language": "en", "currentLevel": "b1", "targetLevel": "b2",
+      "weeklyMinutes": [60, 60, 60, 60, 60, 60, 60], "targetDate": "2027-05-13",
+      "expected": { "hoursNeeded": 200, "weeksMin": 24, "weeksMid": 29, "weeksMax": 38, "feasibility": "tight", "suggestedMinutesPerDay": null, "suggestedDate": null }
+    },
+    {
+      "name": "en b1 to b2, 60 min every day, deadline too close",
+      "language": "en", "currentLevel": "b1", "targetLevel": "b2",
+      "weeklyMinutes": [60, 60, 60, 60, 60, 60, 60], "targetDate": "2027-01-13",
+      "expected": { "hoursNeeded": 200, "weeksMin": 24, "weeksMid": 29, "weeksMax": 38, "feasibility": "needs_more_time", "suggestedMinutesPerDay": 132, "suggestedDate": "2027-05-04" }
+    },
+    {
+      "name": "ko hangul to topik2, weekdays 15 and saturday 30",
+      "language": "ko", "currentLevel": "hangul", "targetLevel": "topik2",
+      "weeklyMinutes": [15, 15, 15, 15, 15, 30, 0], "targetDate": null,
+      "expected": { "hoursNeeded": 300, "weeksMin": 138, "weeksMid": 172, "weeksMax": 224, "feasibility": "no_deadline", "suggestedMinutesPerDay": null, "suggestedDate": null }
+    },
+    {
+      "name": "ko topik3 to topik4, four study days, one month left, suggestion capped",
+      "language": "ko", "currentLevel": "topik3", "targetLevel": "topik4",
+      "weeklyMinutes": [60, 60, 0, 60, 60, 0, 0], "targetDate": "2026-11-13",
+      "expected": { "hoursNeeded": 350, "weeksMin": 71, "weeksMid": 88, "weeksMax": 115, "feasibility": "needs_more_time", "suggestedMinutesPerDay": 720, "suggestedDate": "2028-06-20" }
+    },
+    {
+      "name": "en a1 to a2, deadline today",
+      "language": "en", "currentLevel": "a1", "targetLevel": "a2",
+      "weeklyMinutes": [30, 30, 30, 30, 30, 30, 30], "targetDate": "2026-10-13",
+      "expected": { "hoursNeeded": 100, "weeksMin": 24, "weeksMid": 29, "weeksMax": 38, "feasibility": "needs_more_time", "suggestedMinutesPerDay": 720, "suggestedDate": "2027-05-04" }
+    }
+  ]
+}
