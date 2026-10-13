@@ -1,0 +1,88 @@
+# Runs on every Pull Request and is called by deploy.yml before any deploy.
+# No secrets needed: web uses public vars, e2e mocks Supabase, database runs Supabase locally in Docker.
+name: CI
+
+on:
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  web:
+    name: Lint, typecheck, unit tests, build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+      VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Chặn secret lọt vào biến VITE_*
+        run: node scripts/check-public-env.mjs
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm build
+
+  e2e:
+    name: Playwright (iPhone / Android)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Install Playwright browsers
+        run: pnpm --filter @lexipath/web exec playwright install --with-deps chromium webkit
+      - run: pnpm e2e
+      - name: Upload Playwright report (screenshots for review)
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: apps/web/playwright-report
+          retention-days: 14
+
+  database:
+    name: Database migrations + RLS tests (local Supabase)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7
+      - uses: supabase/setup-cli@v3
+        with:
+          version: 2.120.0
+      # Must be `supabase start` (not `db start`) so Auth/REST come up too.
+      - name: Apply all migrations on a fresh local stack
+        run: supabase start -x studio,imgproxy,vector,logflare,edge-runtime,realtime,mailpit,supavisor
+      - name: Lint database schema
+        run: supabase db lint --fail-on error
+      - name: RLS + trigger tests (pgTAP)
+        run: supabase test db
+      - name: Generated types are up to date
+        run: |
+          supabase gen types typescript --local --schema public > packages/shared/src/database.types.ts
+          git diff --exit-code -- packages/shared/src/database.types.ts || {
+            echo "::error::packages/shared/src/database.types.ts is stale. Run 'pnpm db:types' and commit."
+            exit 1
+          }
+      - name: Stop local stack
+        if: always()
+        run: supabase stop --no-backup

@@ -1,0 +1,175 @@
+# push main → CI → (Supabase migrations if changed, needs approval) → (Edge Functions if changed) → build → GitHub Pages.
+#
+# DATABASE SAFETY: only `supabase db push` (applies new migrations). Never reset / config push / seed hosted DB.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      migrate:
+        description: Run the Supabase migration step even without new migration files
+        type: boolean
+        default: false
+      functions:
+        description: Deploy all Edge Functions even if supabase/functions did not change
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: CI
+    uses: ./.github/workflows/ci.yml
+
+  changes:
+    name: Detect migration / function changes
+    runs-on: ubuntu-24.04
+    outputs:
+      migrations: ${{ steps.diff.outputs.migrations }}
+      functions: ${{ steps.diff.outputs.functions }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - id: diff
+        env:
+          EVENT: ${{ github.event_name }}
+          FORCE: ${{ inputs.migrate }}
+          FORCE_FUNCTIONS: ${{ inputs.functions }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          changed() {
+            if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] \
+               || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+              echo true
+            elif git diff --quiet "$BEFORE" "$AFTER" -- "$1"; then
+              echo false
+            else
+              echo true
+            fi
+          }
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            migrations="$FORCE"; functions="$FORCE_FUNCTIONS"
+          else
+            migrations=$(changed supabase/migrations); functions=$(changed supabase/functions)
+          fi
+          echo "migrations=$migrations" >> "$GITHUB_OUTPUT"
+          echo "functions=$functions" >> "$GITHUB_OUTPUT"
+
+  migrate:
+    name: Supabase db push
+    needs: [verify, changes]
+    if: needs.changes.outputs.migrations == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    environment: production # enable "Required reviewers" so every DB change needs approval
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+      SUPABASE_PROJECT_ID: ${{ vars.SUPABASE_PROJECT_ID }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: supabase/setup-cli@v3
+        with:
+          version: 2.120.0
+      - name: Check required secrets
+        run: |
+          missing=0
+          for v in SUPABASE_ACCESS_TOKEN SUPABASE_DB_PASSWORD SUPABASE_PROJECT_ID; do
+            if [ -z "${!v}" ]; then echo "::error::Thiếu $v (xem docs/DEPLOY.md)"; missing=1; fi
+          done
+          exit $missing
+      - run: supabase link --project-ref "$SUPABASE_PROJECT_ID"
+      - name: Preview migrations to apply
+        run: supabase db push --dry-run
+      - name: Apply migrations
+        run: supabase db push --yes
+
+  functions:
+    name: Supabase functions deploy
+    needs: [verify, changes, migrate]
+    if: >-
+      always() &&
+      needs.verify.result == 'success' &&
+      needs.changes.result == 'success' &&
+      needs.changes.outputs.functions == 'true' &&
+      (needs.migrate.result == 'success' || needs.migrate.result == 'skipped')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    environment: production
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      SUPABASE_PROJECT_ID: ${{ vars.SUPABASE_PROJECT_ID }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: supabase/setup-cli@v3
+        with:
+          version: 2.120.0
+      - name: Deploy all Edge Functions
+        run: |
+          if ls supabase/functions/*/index.ts >/dev/null 2>&1; then
+            supabase functions deploy --project-ref "$SUPABASE_PROJECT_ID"
+          else
+            echo "No Edge Functions yet."
+          fi
+
+  build:
+    name: Build site
+    needs: [verify, changes, migrate]
+    if: >-
+      always() &&
+      needs.verify.result == 'success' &&
+      needs.changes.result == 'success' &&
+      (needs.migrate.result == 'success' || needs.migrate.result == 'skipped')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+      VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}
+      VITE_SITE_URL: ${{ vars.VITE_SITE_URL }}
+      VITE_AUTH_GOOGLE_ENABLED: ${{ vars.VITE_AUTH_GOOGLE_ENABLED }}
+      VITE_HERO_VIDEO_URL: ${{ vars.VITE_HERO_VIDEO_URL }}
+      VITE_BASE_PATH: /${{ github.event.repository.name }}/
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Chặn secret lọt vào biến VITE_*
+        run: node scripts/check-public-env.mjs --strict
+      - run: pnpm build
+      - name: Bundle must not contain secret keys
+        run: |
+          if grep -rq "sb_secret_" apps/web/dist; then
+            echo "::error::Found a Supabase secret key in the built bundle"; exit 1
+          fi
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: apps/web/dist
+
+  pages:
+    name: Deploy to GitHub Pages
+    needs: build
+    if: always() && needs.build.result == 'success'
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
