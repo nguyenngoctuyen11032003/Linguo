@@ -5,7 +5,27 @@ export type Database = {
   
   "public": {
           Tables: {
-            "ai_cache": {
+            "activity_days": {
+                  Row: {
+                    "active_ms": number,"answers": number,"correct_first": number,"learning_path_id": string,"lessons": number,"local_day": string,"reviews": number,"updated_at": string,"user_id": string,"xp": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "active_ms"?: number,"answers"?: number,"correct_first"?: number,"learning_path_id": string,"lessons"?: number,"local_day": string,"reviews"?: number,"updated_at"?: string,"user_id": string,"xp"?: number
+                  }
+                  Update: {
+                    "active_ms"?: number,"answers"?: number,"correct_first"?: number,"learning_path_id"?: string,"lessons"?: number,"local_day"?: string,"reviews"?: number,"updated_at"?: string,"user_id"?: string,"xp"?: number
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "activity_days_learning_path_id_fkey"
+      columns: ["learning_path_id"]
+isOneToOne: false
+      referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"ai_cache": {
                   Row: {
                     "created_at": string,"expires_at": string,"hits": number,"key": string,"model": string,"payload": NonNullable<Json>,"prompt_version": string,"task": string
                   }
@@ -63,6 +83,20 @@ isOneToOne: true
                   }
                   Update: {
                     "attempts"?: number,"cached"?: boolean,"created_at"?: string,"http_status"?: number | null,"id"?: string,"input_chars"?: number,"latency_ms"?: number,"model"?: string,"prompt_version"?: string,"repaired"?: boolean,"status"?: string,"task"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"analytics_events": {
+                  Row: {
+                    "client_at": string | null,"created_at": string,"id": number,"name": string,"props": NonNullable<Json>,"route": string | null,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "client_at"?: string | null,"created_at"?: string,"id"?: never,"name": string,"props"?: NonNullable<Json>,"route"?: string | null,"user_id": string
+                  }
+                  Update: {
+                    "client_at"?: string | null,"created_at"?: string,"id"?: never,"name"?: string,"props"?: NonNullable<Json>,"route"?: string | null,"user_id"?: string
                   }
                   Relationships: [
                     
@@ -621,16 +655,36 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
-                },"user_preferences": {
+                },"user_badges": {
                   Row: {
-                    "ai_notice_ack_at": string | null,"reduce_motion": boolean,"theme": string,"updated_at": string,"user_id": string
+                    "badge_key": string,"earned_at": string,"learning_path_id": string,"user_id": string
                   }
                   ComputedFields: never
                   Insert: {
-                    "ai_notice_ack_at"?: string | null,"reduce_motion"?: boolean,"theme"?: string,"updated_at"?: string,"user_id": string
+                    "badge_key": string,"earned_at"?: string,"learning_path_id": string,"user_id": string
                   }
                   Update: {
-                    "ai_notice_ack_at"?: string | null,"reduce_motion"?: boolean,"theme"?: string,"updated_at"?: string,"user_id"?: string
+                    "badge_key"?: string,"earned_at"?: string,"learning_path_id"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "user_badges_learning_path_id_fkey"
+      columns: ["learning_path_id"]
+isOneToOne: false
+      referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"user_preferences": {
+                  Row: {
+                    "ai_notice_ack_at": string | null,"analytics_opt_out": boolean,"reduce_motion": boolean,"show_motivation": boolean,"theme": string,"updated_at": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "ai_notice_ack_at"?: string | null,"analytics_opt_out"?: boolean,"reduce_motion"?: boolean,"show_motivation"?: boolean,"theme"?: string,"updated_at"?: string,"user_id": string
+                  }
+                  Update: {
+                    "ai_notice_ack_at"?: string | null,"analytics_opt_out"?: boolean,"reduce_motion"?: boolean,"show_motivation"?: boolean,"theme"?: string,"updated_at"?: string,"user_id"?: string
                   }
                   Relationships: [
                     
@@ -797,6 +851,9 @@ isOneToOne: false
 "get_lesson":
 { Args: { "p_lesson_id": string,"p_path_id": string }; Returns: Json
                            },
+"get_progress_dashboard":
+{ Args: { "p_path_id": string,"p_range_days": number }; Returns: Json
+                           },
 "get_review_queue":
 { Args: { "p_extra"?: boolean,"p_limit"?: number,"p_path_id": string }; Returns: Json
                            },
@@ -892,6 +949,32 @@ isOneToOne: false
                            },
 "postpone_reviews":
 { Args: { "p_card_ids": (string)[],"p_idempotency_key": string,"p_path_id": string }; Returns: Json
+                           },
+"progress_answer_day":
+{ Args: { "p_client_at": string,"p_created_at": string,"p_user": string }; Returns: string
+                           },
+"progress_bump":
+{ Args: { "p_active_ms": number,"p_answers": number,"p_correct_first": number,"p_day": string,"p_lessons": number,"p_path": string,"p_reviews": number,"p_user": string,"p_xp": number }; Returns: undefined
+                           },
+"progress_day_active":
+{ Args: { "p_active_ms": number,"p_lessons": number,"p_reviews": number }; Returns: boolean
+                           },
+"progress_local_day":
+{ Args: { "p_at": string,"p_user": string }; Returns: string
+                           },
+"progress_prompt_text":
+{ Args: { "p_prompt": Json,"p_type": string }; Returns: string
+                           },
+"progress_run_xp":
+{ Args: { "p_run_id": string }; Returns: number
+                           },
+"progress_streak":
+{ Args: { "p_path": string,"p_user": string }; Returns: {
+              "best": number,"current": number,"grace_left": number
+            }[]
+                           },
+"purge_analytics":
+{ Args: Record<PropertyKey, never>; Returns: number
                            },
 "review_day_totals":
 { Args: { "p_extra": boolean,"p_now": string,"p_path_id": string,"p_user": string,"p_weekly_minutes": (number)[] }; Returns: Json
@@ -1008,6 +1091,9 @@ isOneToOne: false
                            },
 "submit_exercise":
 { Args: { "p_client_at": string,"p_confidence": number,"p_exercise_id": string,"p_exercise_version": number,"p_hint_count": number,"p_idempotency_key": string,"p_response": Json,"p_response_ms": number,"p_run_id": string }; Returns: Json
+                           },
+"track_events":
+{ Args: { "p_events": Json }; Returns: number
                            },
 "update_learning_path_plan":
 { Args: { "p_goal_type": string,"p_id": string,"p_target_date"?: string,"p_target_level": string,"p_weekly_minutes": (number)[] }; Returns: {
