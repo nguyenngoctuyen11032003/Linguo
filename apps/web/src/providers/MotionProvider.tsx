@@ -3,7 +3,7 @@ import { MotionConfig } from 'motion/react';
 import { readBool, writeBool } from '@/lib/storage';
 import { useMediaQuery } from '@/lib/useMediaQuery';
 
-const STORAGE_KEY = 'lp-reduce-motion';
+const STORAGE_KEY = 'linguo-reduce-motion';
 
 interface MotionPrefs {
   /** Effective value: system preference OR the in-app toggle. */

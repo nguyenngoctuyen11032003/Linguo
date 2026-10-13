@@ -31,7 +31,7 @@ describe('BottomNav', () => {
 
 describe('MoreSheet', () => {
   it('lists secondary destinations and closes on Escape', async () => {
-    localStorage.setItem('lp-reduce-motion', 'true');
+    localStorage.setItem('linguo-reduce-motion', 'true');
     const onClose = vi.fn();
     renderWithProviders(<MoreSheet open onClose={onClose} />, { route: '/app' });
     const dialog = screen.getByRole('dialog', { name: 'Thêm' });
@@ -61,7 +61,7 @@ function MoreHarness() {
 
 describe('MoreSheet focus management', () => {
   it('moves focus in, traps Tab, and restores focus to "Thêm" on Escape', async () => {
-    localStorage.setItem('lp-reduce-motion', 'true');
+    localStorage.setItem('linguo-reduce-motion', 'true');
     renderWithProviders(<MoreHarness />, { route: '/app' });
     const trigger = screen.getByRole('button', { name: 'Thêm' });
     expect(trigger).toHaveAttribute('aria-expanded', 'false');
@@ -91,7 +91,7 @@ describe('MoreSheet focus management', () => {
   });
 
   it('closes when the route changes', async () => {
-    localStorage.setItem('lp-reduce-motion', 'true');
+    localStorage.setItem('linguo-reduce-motion', 'true');
     renderWithProviders(<MoreHarness />, { route: '/app' });
     await userEvent.click(screen.getByRole('button', { name: 'Thêm' }));
     expect(screen.getByRole('dialog', { name: 'Thêm' })).toBeInTheDocument();

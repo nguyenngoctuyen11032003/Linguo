@@ -145,7 +145,7 @@ describe('SettingsPage', () => {
   });
 
   it('exposes the theme as a native radio group that follows arrow keys', async () => {
-    localStorage.setItem('lp-theme', 'light');
+    localStorage.setItem('linguo-theme', 'light');
     renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
     expect(screen.getByRole('group', { name: 'Chủ đề màu' })).toBeInTheDocument();
     const light = screen.getByRole('radio', { name: 'Sáng' });

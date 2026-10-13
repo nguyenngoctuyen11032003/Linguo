@@ -29,7 +29,7 @@ const signedOut: AuthState = { status: 'signed-out', session: null, user: null }
 
 describe('routes', () => {
   it('redirects /app to sign in when signed out', async () => {
-    localStorage.setItem('lp-reduce-motion', 'true');
+    localStorage.setItem('linguo-reduce-motion', 'true');
     const router = renderAt('/app/cai-dat', signedOut);
     expect(await screen.findByRole('heading', { name: 'Chào mừng trở lại' })).toBeInTheDocument();
     expect(router.state.location.pathname).toBe('/dang-nhap');

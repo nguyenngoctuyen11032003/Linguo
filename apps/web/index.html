@@ -41,11 +41,11 @@
     <script>
       (function () {
         try {
-          var p = localStorage.getItem('lp-theme');
+          var p = localStorage.getItem('linguo-theme');
           if (p !== 'light' && p !== 'dark' && p !== 'system') p = 'system';
           var dark = p === 'dark' || ((!p || p === 'system') && matchMedia('(prefers-color-scheme: dark)').matches);
           document.documentElement.dataset.theme = dark ? 'dark' : 'light';
-          if (localStorage.getItem('lp-reduce-motion') === 'true') document.documentElement.dataset.reduceMotion = 'true';
+          if (localStorage.getItem('linguo-reduce-motion') === 'true') document.documentElement.dataset.reduceMotion = 'true';
         } catch (e) {}
       })();
     </script>

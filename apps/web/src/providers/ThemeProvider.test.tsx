@@ -35,6 +35,6 @@ describe('ThemeProvider', () => {
     act(() => screen.getByText('dark').click());
     expect(screen.getByTestId('state')).toHaveTextContent('dark:dark');
     expect(document.documentElement.dataset.theme).toBe('dark');
-    expect(localStorage.getItem('lp-theme')).toBe('dark');
+    expect(localStorage.getItem('linguo-theme')).toBe('dark');
   });
 });

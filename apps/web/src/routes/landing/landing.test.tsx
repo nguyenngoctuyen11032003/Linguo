@@ -113,7 +113,7 @@ describe('HeroSection video', () => {
 
 describe('LandingPage', () => {
   it('renders the hero, learning route, method and CTA', () => {
-    localStorage.setItem('lp-reduce-motion', 'true');
+    localStorage.setItem('linguo-reduce-motion', 'true');
     renderWithProviders(<LandingPage />, signedOut);
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/Học thông minh/i);
     expect(screen.getAllByRole('link', { name: 'Bắt đầu miễn phí' })[0]).toHaveAttribute('href', '/dang-ky');
@@ -124,7 +124,7 @@ describe('LandingPage', () => {
   });
 
   it('opens the menu overlay, traps focus, and restores focus to "Mở menu" on Escape', async () => {
-    localStorage.setItem('lp-reduce-motion', 'true');
+    localStorage.setItem('linguo-reduce-motion', 'true');
     renderWithProviders(<LandingPage />, signedOut);
     const trigger = screen.getByRole('button', { name: 'Mở menu' });
     await userEvent.click(trigger);

@@ -17,7 +17,7 @@ const withMotion = (ui: ReactNode) => (
 
 describe('CountUp', () => {
   it('shows the final value immediately when motion is reduced and exposes it to screen readers', () => {
-    localStorage.setItem('lp-reduce-motion', 'true');
+    localStorage.setItem('linguo-reduce-motion', 'true');
     render(withMotion(<CountUp to={1200} suffix="+" />));
     expect(screen.getAllByText('1.200+')).toHaveLength(2);
   });
@@ -52,7 +52,7 @@ describe('RouteLine', () => {
 
 describe('RouteLine under reduced motion', () => {
   it('renders stops statically and never mounts the travelling arrow', () => {
-    localStorage.setItem('lp-reduce-motion', 'true');
+    localStorage.setItem('linguo-reduce-motion', 'true');
     const { container } = render(
       withMotion(
         <RouteLine

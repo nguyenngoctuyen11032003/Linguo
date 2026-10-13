@@ -4,7 +4,7 @@ import { readString, writeString } from '@/lib/storage';
 import { useMediaQuery } from '@/lib/useMediaQuery';
 
 export type ResolvedTheme = 'light' | 'dark';
-const STORAGE_KEY = 'lp-theme';
+const STORAGE_KEY = 'linguo-theme';
 
 interface ThemeContextValue {
   preference: ThemePreference;

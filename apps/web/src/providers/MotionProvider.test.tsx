@@ -24,7 +24,7 @@ describe('MotionProvider', () => {
     act(() => screen.getByTestId('probe').click());
     expect(screen.getByTestId('probe')).toHaveTextContent('true');
     expect(document.documentElement.dataset.reduceMotion).toBe('true');
-    expect(localStorage.getItem('lp-reduce-motion')).toBe('true');
+    expect(localStorage.getItem('linguo-reduce-motion')).toBe('true');
   });
 
   it('honours prefers-reduced-motion', () => {
