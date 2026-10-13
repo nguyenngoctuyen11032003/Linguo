@@ -12,6 +12,10 @@ create schema content_private;
 
 comment on schema content_private is 'Answer keys, explanations and revisions. Never exposed to anon/authenticated.';
 
+-- Per-schema default privileges can only reverse a per-schema grant, so this does not undo the global
+-- PUBLIC execute default: every content_private function still revokes execute explicitly below.
+alter default privileges in schema content_private revoke execute on functions from public;
+
 -- ---------------------------------------------------------------------------
 -- Tables (public)
 -- ---------------------------------------------------------------------------
@@ -233,10 +237,13 @@ create trigger exercises_set_updated_at before update on public.exercises
   for each row execute function public.set_updated_at();
 
 -- Status workflow (spec §3.3): draft → in_review → approved → published → archived → draft,
--- with in_review/approved → draft. A published non-demo row may only change together with a
--- version bump and a new review. import_bundle sets linguo.content_import (transaction-local) to
--- 'archive' while archiving rows absent from a bundle (any status → archived), and to 'reorder'
--- while it parks order_index values of rows it is about to rewrite.
+-- with in_review/approved → draft. The content of a published row may change only while it stays a
+-- demo (demo before and after) or together with a version bump and a new review; a review-only change
+-- (is_demo, reviewed_by, reviewed_at) with unchanged content is always allowed, since content_hash
+-- excludes those fields and the importer does not bump the version for them. import_bundle sets
+-- linguo.content_import (transaction-local) to 'archive' while archiving rows absent from a bundle
+-- (any status → archived), and to 'reorder' while it parks order_index values of rows it is about
+-- to rewrite.
 create or replace function public.content_status_transition()
 returns trigger
 language plpgsql
@@ -244,12 +251,17 @@ set search_path = ''
 as $$
 declare
   v_mode text := coalesce(current_setting('linguo.content_import', true), '');
+  -- Review/publication state and trigger-maintained columns; every other column is content.
+  v_non_content constant text[] := array[
+    'status', 'is_demo', 'reviewed_by', 'reviewed_at', 'updated_at', 'published_at', 'content_version'
+  ];
 begin
   if old.status = new.status then
     if new.status <> 'published'
-       or new.is_demo
+       or (old.is_demo and new.is_demo)
        or (new.version > old.version and new.reviewed_at is distinct from old.reviewed_at)
-       or v_mode = 'reorder' then
+       or v_mode = 'reorder'
+       or (to_jsonb(new) - v_non_content) = (to_jsonb(old) - v_non_content) then
       return new;
     end if;
   elsif (old.status = 'draft' and new.status = 'in_review')
@@ -317,13 +329,21 @@ create trigger lessons_language_matches_program before insert or update of unit_
   for each row execute function public.lessons_language_matches_program();
 
 -- Prerequisites: same language, no cycles. A row (lesson, prerequisite) closes a cycle when the
--- lesson is reachable from the prerequisite by following existing prerequisite edges.
+-- lesson is reachable from the prerequisite by following existing prerequisite edges. The edge being
+-- replaced by an UPDATE and edges touching archived lessons are not followed.
 create or replace function public.lesson_prerequisites_guard()
 returns trigger
 language plpgsql
 set search_path = ''
 as $$
+declare
+  v_old_lesson uuid;
+  v_old_prerequisite uuid;
 begin
+  if tg_op = 'UPDATE' then
+    v_old_lesson := old.lesson_id;
+    v_old_prerequisite := old.prerequisite_lesson_id;
+  end if;
   if (select language_code from public.lessons where id = new.lesson_id)
      is distinct from (select language_code from public.lessons where id = new.prerequisite_lesson_id) then
     raise exception using errcode = 'P0001', message = 'prerequisite_language_mismatch';
@@ -335,6 +355,10 @@ begin
       select lp.prerequisite_lesson_id
       from public.lesson_prerequisites lp
       join reach r on lp.lesson_id = r.id
+      join public.lessons l on l.id = lp.lesson_id
+      join public.lessons pl on pl.id = lp.prerequisite_lesson_id
+      where l.status <> 'archived' and pl.status <> 'archived'
+        and (lp.lesson_id, lp.prerequisite_lesson_id) is distinct from (v_old_lesson, v_old_prerequisite)
     )
     select 1 from reach where id = new.lesson_id
   ) then
@@ -452,6 +476,13 @@ begin
      ) then
     raise exception using errcode = 'P0001', message = 'invalid_bundle';
   end if;
+  -- An empty lesson list would archive every lesson; refuse it while anything is published.
+  if jsonb_array_length(p_bundle -> 'lessons') = 0
+     and exists (select 1 from public.lessons where status = 'published') then
+    raise exception using errcode = 'P0001', message = 'empty_bundle';
+  end if;
+  -- Concurrent imports would interleave their archive/park/upsert steps; run them one at a time.
+  perform pg_advisory_xact_lock(hashtext('linguo_content_import'));
   v_git := p_bundle ->> 'git_sha';
 
   -- ===== content_sources =====
@@ -477,7 +508,7 @@ begin
       insert into content_private.revisions (entity_type, entity_id, version, snapshot, content_hash, git_sha)
       values ('content_sources', (r ->> 'id')::uuid, 1, r, r ->> 'content_hash', v_git);
       v_ins := v_ins + 1;
-    elsif v_src.content_hash <> r ->> 'content_hash' then
+    elsif v_src.content_hash is distinct from r ->> 'content_hash' then
       update public.content_sources set
         key = r ->> 'key', title = r ->> 'title', author_or_org = r ->> 'author_or_org', url = r ->> 'url',
         license = r ->> 'license', attribution_required = (r ->> 'attribution_required')::boolean,
@@ -524,7 +555,7 @@ begin
       insert into content_private.revisions (entity_type, entity_id, version, snapshot, content_hash, git_sha)
       values ('programs', (r ->> 'id')::uuid, 1, r, r ->> 'content_hash', v_git);
       v_ins := v_ins + 1;
-    elsif v_prog.content_hash <> r ->> 'content_hash' then
+    elsif v_prog.content_hash is distinct from r ->> 'content_hash' then
       update public.programs set
         key = r ->> 'key', source_id = (r ->> 'source_id')::uuid, language_code = r ->> 'language_code',
         title = r -> 'title', description = r -> 'description', kind = r ->> 'kind',
@@ -559,8 +590,8 @@ begin
   perform set_config('linguo.content_import', 'reorder', true);
   update public.units t set order_index = -1 - t.order_index
   from jsonb_array_elements(p_bundle -> 'units') x
-  where t.id = (x ->> 'id')::uuid and t.content_hash <> x ->> 'content_hash'
-    and t.order_index <> (x ->> 'order_index')::integer;
+  where t.id = (x ->> 'id')::uuid and t.content_hash is distinct from x ->> 'content_hash'
+    and (t.program_id, t.order_index) is distinct from ((x ->> 'program_id')::uuid, (x ->> 'order_index')::integer);
   perform set_config('linguo.content_import', '', true);
 
   for r in select value from jsonb_array_elements(p_bundle -> 'units') loop
@@ -577,7 +608,7 @@ begin
       insert into content_private.revisions (entity_type, entity_id, version, snapshot, content_hash, git_sha)
       values ('units', (r ->> 'id')::uuid, 1, r, r ->> 'content_hash', v_git);
       v_ins := v_ins + 1;
-    elsif v_unit.content_hash <> r ->> 'content_hash' then
+    elsif v_unit.content_hash is distinct from r ->> 'content_hash' then
       update public.units set
         key = r ->> 'key', source_id = (r ->> 'source_id')::uuid, program_id = (r ->> 'program_id')::uuid,
         order_index = (r ->> 'order_index')::integer, title = r -> 'title',
@@ -624,7 +655,7 @@ begin
       insert into content_private.revisions (entity_type, entity_id, version, snapshot, content_hash, git_sha)
       values ('learning_items', (r ->> 'id')::uuid, 1, r, r ->> 'content_hash', v_git);
       v_ins := v_ins + 1;
-    elsif v_item.content_hash <> r ->> 'content_hash' then
+    elsif v_item.content_hash is distinct from r ->> 'content_hash' then
       update public.learning_items set
         key = r ->> 'key', source_id = (r ->> 'source_id')::uuid, language_code = r ->> 'language_code',
         item_type = r ->> 'item_type', level_code = r ->> 'level_code', difficulty = (r ->> 'difficulty')::smallint,
@@ -659,8 +690,8 @@ begin
   perform set_config('linguo.content_import', 'reorder', true);
   update public.lessons t set order_index = -1 - t.order_index
   from jsonb_array_elements(p_bundle -> 'lessons') x
-  where t.id = (x ->> 'id')::uuid and t.content_hash <> x ->> 'content_hash'
-    and t.order_index <> (x ->> 'order_index')::integer;
+  where t.id = (x ->> 'id')::uuid and t.content_hash is distinct from x ->> 'content_hash'
+    and (t.unit_id, t.order_index) is distinct from ((x ->> 'unit_id')::uuid, (x ->> 'order_index')::integer);
   perform set_config('linguo.content_import', '', true);
 
   for r in select value from jsonb_array_elements(p_bundle -> 'lessons') loop
@@ -678,7 +709,7 @@ begin
       insert into content_private.revisions (entity_type, entity_id, version, snapshot, content_hash, git_sha)
       values ('lessons', (r ->> 'id')::uuid, 1, r, r ->> 'content_hash', v_git);
       v_ins := v_ins + 1;
-    elsif v_lesson.content_hash <> r ->> 'content_hash' then
+    elsif v_lesson.content_hash is distinct from r ->> 'content_hash' then
       update public.lessons set
         key = r ->> 'key', source_id = (r ->> 'source_id')::uuid, unit_id = (r ->> 'unit_id')::uuid,
         language_code = r ->> 'language_code', level_code = r ->> 'level_code', order_index = (r ->> 'order_index')::integer,
@@ -731,8 +762,8 @@ begin
   perform set_config('linguo.content_import', 'reorder', true);
   update public.exercises t set order_index = -1 - t.order_index
   from jsonb_array_elements(p_bundle -> 'exercises') x
-  where t.id = (x ->> 'id')::uuid and t.content_hash <> x ->> 'content_hash'
-    and t.order_index <> (x ->> 'order_index')::integer;
+  where t.id = (x ->> 'id')::uuid and t.content_hash is distinct from x ->> 'content_hash'
+    and (t.lesson_id, t.order_index) is distinct from ((x ->> 'lesson_id')::uuid, (x ->> 'order_index')::integer);
   perform set_config('linguo.content_import', '', true);
 
   for r in select value from jsonb_array_elements(p_bundle -> 'exercises') loop
@@ -750,7 +781,7 @@ begin
       );
       v_version := 1;
       v_ins := v_ins + 1;
-    elsif v_ex.content_hash <> r ->> 'content_hash' then
+    elsif v_ex.content_hash is distinct from r ->> 'content_hash' then
       update public.exercises set
         key = r ->> 'key', source_id = (r ->> 'source_id')::uuid, lesson_id = (r ->> 'lesson_id')::uuid,
         item_id = (r ->> 'item_id')::uuid, order_index = (r ->> 'order_index')::integer,
