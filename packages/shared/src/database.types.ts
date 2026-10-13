@@ -21,14 +21,14 @@ export type Database = {
                   ]
                 },"ai_quota": {
                   Row: {
-                    "count": number,"refunded": number,"used_on": string,"user_id": string
+                    "count": number,"refunded": number,"updated_at": string,"used_on": string,"user_id": string
                   }
                   ComputedFields: never
                   Insert: {
-                    "count"?: number,"refunded"?: number,"used_on": string,"user_id": string
+                    "count"?: number,"refunded"?: number,"updated_at"?: string,"used_on": string,"user_id": string
                   }
                   Update: {
-                    "count"?: number,"refunded"?: number,"used_on"?: string,"user_id"?: string
+                    "count"?: number,"refunded"?: number,"updated_at"?: string,"used_on"?: string,"user_id"?: string
                   }
                   Relationships: [
                     
@@ -48,21 +48,21 @@ export type Database = {
                     {
       foreignKeyName: "ai_reports_usage_id_fkey"
       columns: ["usage_id"]
-isOneToOne: false
+isOneToOne: true
       referencedRelation: "ai_usage"
       referencedColumns: ["id"]
     }
                   ]
                 },"ai_usage": {
                   Row: {
-                    "attempts": number,"cached": boolean,"created_at": string,"http_status": number,"id": string,"input_chars": number,"latency_ms": number,"model": string,"prompt_version": string,"repaired": boolean,"status": string,"task": string,"user_id": string
+                    "attempts": number,"cached": boolean,"created_at": string,"http_status": number | null,"id": string,"input_chars": number,"latency_ms": number,"model": string,"prompt_version": string,"repaired": boolean,"status": string,"task": string,"user_id": string
                   }
                   ComputedFields: never
                   Insert: {
-                    "attempts"?: number,"cached"?: boolean,"created_at"?: string,"http_status": number,"id"?: string,"input_chars"?: number,"latency_ms"?: number,"model": string,"prompt_version": string,"repaired"?: boolean,"status": string,"task": string,"user_id": string
+                    "attempts"?: number,"cached"?: boolean,"created_at"?: string,"http_status"?: number | null,"id"?: string,"input_chars"?: number,"latency_ms"?: number,"model": string,"prompt_version": string,"repaired"?: boolean,"status": string,"task": string,"user_id": string
                   }
                   Update: {
-                    "attempts"?: number,"cached"?: boolean,"created_at"?: string,"http_status"?: number,"id"?: string,"input_chars"?: number,"latency_ms"?: number,"model"?: string,"prompt_version"?: string,"repaired"?: boolean,"status"?: string,"task"?: string,"user_id"?: string
+                    "attempts"?: number,"cached"?: boolean,"created_at"?: string,"http_status"?: number | null,"id"?: string,"input_chars"?: number,"latency_ms"?: number,"model"?: string,"prompt_version"?: string,"repaired"?: boolean,"status"?: string,"task"?: string,"user_id"?: string
                   }
                   Relationships: [
                     
@@ -653,20 +653,26 @@ isOneToOne: false
 "ai_cache_put":
 { Args: { "p_key": string,"p_model": string,"p_payload": Json,"p_prompt_version": string,"p_task": string }; Returns: undefined
                            },
+"ai_check_limit":
+{ Args: { "p_limit": number }; Returns: undefined
+                           },
 "ai_quota_consume":
 { Args: { "p_limit": number }; Returns: Json
                            },
 "ai_quota_refund":
-{ Args: Record<PropertyKey, never>; Returns: boolean
+{ Args: { "p_user_id": string }; Returns: boolean
+                           },
+"ai_quota_resets_at":
+{ Args: { "p_user": string }; Returns: string
                            },
 "ai_quota_status":
 { Args: { "p_limit": number }; Returns: Json
                            },
 "ai_report":
-{ Args: { "p_note"?: string,"p_reason": string,"p_usage_id": string }; Returns: string
+{ Args: { "p_note": string,"p_reason": string,"p_usage_id": string }; Returns: string
                            },
 "ai_usage_log":
-{ Args: { "p_attempts": number,"p_cached": boolean,"p_http_status": number,"p_input_chars": number,"p_latency_ms": number,"p_model": string,"p_prompt_version": string,"p_repaired": boolean,"p_status": string,"p_task": string }; Returns: string
+{ Args: { "p_attempts": number,"p_cached": boolean,"p_http_status": number,"p_input_chars": number,"p_latency_ms": number,"p_model": string,"p_prompt_version": string,"p_repaired": boolean,"p_status": string,"p_task": string,"p_user_id": string }; Returns: string
                            },
 "answer_diagnostic":
 { Args: { "p_attempt_id": string,"p_choice": string,"p_item_id": string }; Returns: Json
