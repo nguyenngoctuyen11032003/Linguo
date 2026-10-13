@@ -76,6 +76,8 @@ jobs:
       # Needs no database, so it fails fast before the stack starts.
       - name: Estimate fixtures in sync (SQL ↔ TS)
         run: node scripts/sync-estimate-fixtures.mjs --check
+      - name: Grading fixtures in sync (SQL ↔ TS)
+        run: node scripts/sync-grading-fixtures.mjs --check
       # Must be `supabase start` (not `db start`) so Auth/REST come up too.
       - name: Apply all migrations on a fresh local stack
         run: supabase start -x studio,imgproxy,vector,logflare,edge-runtime,realtime,mailpit,supavisor

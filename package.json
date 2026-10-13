@@ -12,7 +12,7 @@
     "preview": "pnpm --filter @linguo/web preview",
     "lint": "eslint .",
     "typecheck": "pnpm -r typecheck",
-    "test": "pnpm -r test && node --test scripts/check-public-env.test.mjs && node --import tsx --test scripts/content-import.test.mjs",
+    "test": "pnpm -r test && node --test scripts/check-public-env.test.mjs scripts/sync-grading-fixtures.test.mjs && node --import tsx --test scripts/content-import.test.mjs",
     "e2e": "pnpm --filter @linguo/web e2e",
     "icons": "node scripts/make-icons.mjs",
     "check-env": "node scripts/check-public-env.mjs",
@@ -25,6 +25,7 @@
     "content:check": "node --import tsx scripts/content-import.mjs --check",
     "content:build": "node --import tsx scripts/content-import.mjs --emit-sql",
     "content:push": "node --import tsx scripts/content-import.mjs --apply",
+    "fixtures:grading": "node scripts/sync-grading-fixtures.mjs",
     "db:types": "supabase gen types typescript --local --schema public > packages/shared/src/database.types.ts"
   },
   "devDependencies": {
