@@ -1,0 +1,13 @@
+# gitleaks config for the `secrets` CI job (spec 7 §3): default rules, scanned over the full Git history.
+# Only example/template files are allowlisted; a real secret anywhere else fails CI.
+# If a real secret is ever found: rotate it first (docs/RUNBOOK.md), then decide about history rewriting.
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Example env templates hold placeholders only"
+paths = [
+  '''(^|/)\.env\.example$''',
+  '''(^|/)\.env\.e2e$''',
+]
