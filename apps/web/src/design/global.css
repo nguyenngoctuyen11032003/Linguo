@@ -19,9 +19,11 @@
   --color-on-accent: var(--on-accent);
   --color-gold: var(--gold);
   --color-success: var(--success);
+  --color-success-text: var(--success-text);
   --color-warn: var(--warn);
   --color-on-warn: var(--on-warn);
   --color-error: var(--error);
+  --color-error-text: var(--error-text);
   --font-sans: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-display: 'Barlow Condensed', 'Be Vietnam Pro', system-ui, sans-serif;
   --font-serif: 'Newsreader', Georgia, serif;

@@ -10,6 +10,17 @@ describe('dates', () => {
     expect(weekdayIndex('America/New_York', instant)).toBe(0); // Monday
   });
 
+  it('falls back to Asia/Ho_Chi_Minh on an invalid time zone', () => {
+    const instant = new Date('2026-10-12T20:00:00Z');
+    expect(todayIso('Not/AZone', instant)).toBe('2026-10-13');
+    expect(weekdayIndex('Not/AZone', instant)).toBe(1);
+    expect(todayIso('', instant)).toBe('2026-10-13');
+  });
+
+  it('zero-pads month and day', () => {
+    expect(todayIso('UTC', new Date('2026-01-05T12:00:00Z'))).toBe('2026-01-05');
+  });
+
   it('adds months clamping to the last day', () => {
     expect(addMonthsIso('2026-10-13', 3)).toBe('2027-01-13');
     expect(addMonthsIso('2027-01-31', 1)).toBe('2027-02-28');

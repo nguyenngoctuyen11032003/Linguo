@@ -49,7 +49,7 @@ export function toLearningPath(row: PathRow): LearningPath {
 }
 
 export async function listPaths(client: AppSupabaseClient): Promise<LearningPath[]> {
-  const { data, error } = await client.from('learning_paths').select('*').neq('status', 'archived').order('created_at');
+  const { data, error } = await client.from('learning_paths').select('*').neq('status', 'archived').order('created_at').order('id');
   if (error) throw error;
   return (data ?? []).map(toLearningPath);
 }
@@ -68,7 +68,9 @@ export async function listReferenceHours(client: AppSupabaseClient): Promise<Ref
   if (error) throw error;
   const grouped: ReferenceHoursByLanguage = { en: [], ko: [] };
   for (const row of data ?? []) {
-    grouped[row.language_code as LanguageCode].push({
+    const bucket = (grouped as Partial<ReferenceHoursByLanguage>)[row.language_code as LanguageCode];
+    if (!bucket) continue; // unknown language code: skip rather than crash
+    bucket.push({
       levelCode: row.level_code,
       ordinal: row.ordinal,
       cumulativeHours: row.cumulative_hours,
@@ -97,6 +99,7 @@ export async function setCurrentPath(client: AppSupabaseClient, id: string): Pro
   if (error) throw error;
 }
 
+/** Full replace, not a patch: a null/omitted `targetDate` clears the deadline. */
 export async function updatePlan(
   client: AppSupabaseClient,
   id: string,
@@ -107,7 +110,7 @@ export async function updatePlan(
     p_goal_type: input.goalType,
     p_target_level: input.targetLevel,
     p_weekly_minutes: input.weeklyMinutes,
-    ...(input.targetDate ? { p_target_date: input.targetDate } : {}),
+    ...(input.targetDate != null ? { p_target_date: input.targetDate } : {}),
   });
   if (error) throw error;
   return toLearningPath(data as PathRow);
