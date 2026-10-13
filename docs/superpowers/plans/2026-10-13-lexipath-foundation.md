@@ -7079,7 +7079,7 @@ Chạy trước mỗi bản phát hành có thay đổi giao diện. Ghi kết q
 
 Nền tảng học tiếng Anh và tiếng Hàn cá nhân hoá cho người Việt. Web app mobile-first trên GitHub Pages, backend Supabase (Auth + Postgres + RLS), CI/CD bằng GitHub Actions.
 
-- Đặc tả sản phẩm: [Dac_ta_LexiPath_English_Korean.md](Dac_ta_LexiPath_English_Korean.md)
+- Đặc tả sản phẩm: [docs/superpowers/specs/Dac_ta_LexiPath_English_Korean.md](docs/superpowers/specs/Dac_ta_LexiPath_English_Korean.md)
 - Thiết kế spec 0 (nền móng): [docs/superpowers/specs/2026-10-13-lexipath-foundation-design.md](docs/superpowers/specs/2026-10-13-lexipath-foundation-design.md)
 - Cài đặt local và các key cần cung cấp: [docs/SETUP.md](docs/SETUP.md)
 - Deploy: [docs/DEPLOY.md](docs/DEPLOY.md) · Kiểm thử thiết bị thật: [docs/MOBILE-QA.md](docs/MOBILE-QA.md)

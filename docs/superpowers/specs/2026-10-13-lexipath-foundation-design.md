@@ -2,7 +2,7 @@
 
 **Ngày:** 2026-10-13
 **Trạng thái:** Đã duyệt thiết kế, chờ review văn bản
-**Nguồn yêu cầu:** [Dac_ta_LexiPath_English_Korean.md](../../../Dac_ta_LexiPath_English_Korean.md) (PRD/SRS v1.0)
+**Nguồn yêu cầu:** [Dac_ta_LexiPath_English_Korean.md](./Dac_ta_LexiPath_English_Korean.md) (PRD/SRS v1.0)
 **Mô hình tham chiếu:** dự án `D:\Code\Tuyen\Note_mytasks` (GitHub Actions + GitHub Pages + Supabase, không server riêng)
 
 ---
