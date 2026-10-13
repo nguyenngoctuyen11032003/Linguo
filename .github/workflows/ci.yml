@@ -33,6 +33,10 @@ jobs:
       - name: Chặn secret lọt vào biến VITE_*
         run: node scripts/check-public-env.mjs
       - run: pnpm lint
+      - name: Kiểm tra nội dung (content/)
+        run: pnpm content:check
+      - name: supabase/seed.sql khớp với content/
+        run: pnpm content:build --check
       - run: pnpm typecheck
       - run: pnpm test
       - run: pnpm build

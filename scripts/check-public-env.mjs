@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Everything in VITE_* is bundled into public JavaScript. Fail if the Supabase key is not the
-// publishable/anon key, or if any VITE_* variable looks like a secret.
+// publishable/anon key, or if any VITE_* variable looks like a secret (names containing
+// SERVICE_ROLE or GEMINI always fail: spec 2 §4.4).
 //
 // Usage: node scripts/check-public-env.mjs [--strict]
 //   --strict  require VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY (production deploy)
