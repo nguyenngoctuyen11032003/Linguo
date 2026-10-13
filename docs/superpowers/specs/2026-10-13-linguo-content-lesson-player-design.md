@@ -101,7 +101,7 @@ Zod cho: văn bản bản địa hoá, khối nội dung bài, học liệu, ch�
 
 - `--check` (không cần DB): zod hợp lệ; `key` duy nhất; bài tiên quyết tồn tại, không vòng lặp, cùng ngôn ngữ; `level_code` hợp lệ cho ngôn ngữ; mỗi bài có đủ khối §6.2 (mục tiêu, giải thích, ví dụ, lỗi thường gặp, tóm tắt) và đủ ba giai đoạn bài tập; mỗi bài tập có đáp án khớp kiểu (vd đáp án mcq là id phương án có thật) và lời giải thích `vi`; mỗi dòng có nguồn có giấy phép; file `demo: true` thì mọi dòng `is_demo`; chuẩn hoá NFC; **mọi đáp án chấp nhận chấm đúng và mọi phương án nhiễu/`known_wrong` chấm sai** theo bộ chuẩn hoá TS.
 - `--emit-sql`: ghi `supabase/seed.sql` tất định (`select content_private.import_bundle('<json>'::jsonb);`). Bật `[db.seed]` trong `config.toml`.
-- `--apply`: gọi RPC trên Supabase hosted bằng `SUPABASE_SERVICE_ROLE_KEY` (biến môi trường local hoặc secret CI). Không bao giờ là biến `VITE_*`.
+- `--apply`: gọi RPC `public.import_content_bundle(p_bundle jsonb)` (`POST {SUPABASE_URL}/rest/v1/rpc/import_content_bundle`, gửi key ở cả `apikey` và `Authorization: Bearer`, chấp nhận key `service_role` JWT lẫn `sb_secret_…`) trên Supabase hosted bằng `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY` (biến môi trường local hoặc secret CI). Hàm này chỉ bọc `content_private.import_bundle` (schema `content_private` không được PostgREST phơi ra), `security definer`, chỉ `service_role` có execute. Không dùng token Management API (quyền trên mọi project của tài khoản). Không bao giờ là biến `VITE_*`.
 - `--emit-sql --check`: CI fail nếu `seed.sql` lệch với `content/`.
 
 ### 4.4 CI
@@ -109,7 +109,7 @@ Zod cho: văn bản bản địa hoá, khối nội dung bài, học liệu, ch�
 - Job web: `pnpm content:check` và `content:build --check`.
 - Job database: `db reset` nạp seed → pgTAP chạy trên nội dung demo thật.
 - `scripts/check-public-env.mjs` chặn `SERVICE_ROLE` và `GEMINI` trong biến `VITE_*`.
-- Workflow `content-publish.yml` (`workflow_dispatch`, environment `production` có người duyệt) chạy `--apply`. Cần secret `SUPABASE_SERVICE_ROLE_KEY` (thêm vào `docs/DEPLOY.md`).
+- Workflow `content-publish.yml` (`workflow_dispatch`, environment `production` có người duyệt) chạy `--apply`. Cần secret `SUPABASE_SERVICE_ROLE_KEY` trong environment `production`; `SUPABASE_URL` lấy từ variable `VITE_SUPABASE_URL` (thêm vào `docs/DEPLOY.md`).
 
 ## 5. Bài tập và chấm điểm
 
