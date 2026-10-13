@@ -27,7 +27,7 @@ test('a new user creates an English path through the wizard', async ({ page }, t
   await mockSupabase(page, { paths: [] });
   await signIn(page);
   await page.goto('/app');
-  await expect(page).toHaveURL(/\/app\/bat-dau$/);
+  await expect(page).toHaveURL(/\/app\/bat-dau(\?|$)/);
 
   await atStep(page, 'Bạn muốn học ngôn ngữ nào?', testInfo, '1-language');
   await page.getByRole('radio', { name: /Tiếng Anh/ }).check();
@@ -69,7 +69,10 @@ test('adding Korean from the language pill preselects it and switching works', a
   await page.goto('/app');
   await page.getByRole('button', { name: /Ngôn ngữ đang học/ }).click();
   await page.getByRole('button', { name: '+ Thêm Tiếng Hàn' }).click();
-  await expect(page).toHaveURL(/\/app\/bat-dau\?lang=ko$/);
+  // An explicit language choice starts a fresh Korean draft at step 2 (step 1 is already answered).
+  await expect(page).toHaveURL(/\/app\/bat-dau\?.*lang=ko/);
+  await expect(page.getByRole('heading', { level: 1, name: 'Bạn đang ở đâu?' })).toBeVisible();
+  await page.getByRole('button', { name: 'Quay lại' }).click();
   await expect(page.getByRole('radio', { name: /Tiếng Hàn/ })).toBeChecked();
 });
 
