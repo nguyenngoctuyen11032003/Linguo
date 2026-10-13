@@ -1,6 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
-import { DEMO_LESSONS, expectNoHorizontalScroll, mockSupabase, pathRow, signIn, type SessionMockOptions } from './fixtures';
+import { DEMO_LESSONS, expectNoHorizontalScroll, mockSupabase, pathRow, signIn, type PlannerMockOptions } from './fixtures';
 
 // Spec 6 §5: the session page against mocked RPCs. Returning from a lesson/review to the session is covered with the
 // lesson player and review integration.
@@ -24,11 +24,26 @@ function seededPlan(statuses: string[] = ['pending', 'pending', 'pending', 'pend
   return { minutes: 30, focus_vi: 'Ưu tiên ôn tập: 4 thẻ đến hạn', backlog_mode: false, activities };
 }
 
-async function setup(page: Page, session: SessionMockOptions = {}) {
+/** A session_recap row as the SQL returns it. */
+function recapRow(n: number, prompt: string, expected: string | null, answer: string | null, lessonId: string) {
+  const id = (prefix: string) => `${prefix}-0000-4000-8000-${String(n).padStart(12, '0')}`;
+  return {
+    attempt_id: id('7ecab000'),
+    lesson_id: lessonId,
+    exercise_id: id('7ecab001'),
+    exercise_type: 'mcq',
+    prompt_text: prompt,
+    expected_answer: expected,
+    learner_answer: answer,
+    created_at: new Date().toISOString(),
+  };
+}
+
+async function setup(page: Page, planner: PlannerMockOptions = {}) {
   // Each flow reloads the app at least once; WebKit devices are slow when the whole suite runs in parallel.
   if (test.info().timeout < 60_000) test.setTimeout(60_000);
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  const mock = await mockSupabase(page, { paths: [EN_PATH], session });
+  const mock = await mockSupabase(page, { paths: [EN_PATH], planner });
   await signIn(page);
   return mock;
 }
@@ -64,14 +79,14 @@ test('restores a planned session, reorders it with the keyboard and keeps the or
   await expect(page.getByText(`Đã chuyển “${HELLO.title.vi}” lên vị trí 1/4.`)).toBeAttached();
   // First now: the up arrow is disabled and focus stays on the same row.
   await expect(page.getByRole('button', { name: `Đưa “${HELLO.title.vi}” xuống` })).toBeFocused();
-  await expect.poll(() => mock.session.calls('reorder_session').length).toBe(1);
+  await expect.poll(() => mock.planner.calls('reorder_session').length).toBe(1);
 
   await page.reload();
   await expect(page.getByRole('heading', { name: 'Ưu tiên ôn tập: 4 thẻ đến hạn' })).toBeVisible({ timeout: 15_000 });
   expect(await titles(page)).toEqual([HELLO.title.vi, 'Ôn thẻ đến hạn', I_AM.title.vi, 'Tổng kết']);
 
   await page.getByRole('button', { name: 'Bắt đầu phiên học' }).click();
-  const sessionId = String(mock.session.sessions()[0]?.id);
+  const sessionId = String(mock.planner.sessions()[0]?.id);
   await expect(page).toHaveURL(new RegExp(`/app/hoc-tap/bai/${HELLO.id}\\?phien=${sessionId}&muc=a2$`));
 });
 
@@ -79,8 +94,8 @@ test('skips an activity, runs the recap and completes the session', async ({ pag
   const mock = await setup(page, {
     session: { status: 'in_progress', started_at: new Date().toISOString(), plan: seededPlan(['done', 'done', 'pending', 'pending']) },
     recap: [
-      { prompt: 'Chọn: I ___ a student', expected: 'am', answer: 'is', lesson_id: I_AM.id },
-      { prompt: 'Dịch: xin chào', expected: 'hello', answer: '', lesson_id: HELLO.id },
+      recapRow(1, 'Chọn: I ___ a student', 'am', 'is', I_AM.id),
+      recapRow(2, 'Dịch: xin chào', null, null, HELLO.id),
     ],
   });
   await openSessionPage(page);
@@ -97,7 +112,7 @@ test('skips an activity, runs the recap and completes the session', async ({ pag
 
   await page.getByRole('button', { name: 'Xong phần tổng kết' }).click();
   await expect(page.getByRole('heading', { name: 'Hoàn thành phiên học' })).toBeFocused();
-  expect(mock.session.calls('update_session_item').map(([, b]) => [b.p_item_id, b.p_status])).toEqual([
+  expect(mock.planner.calls('update_session_item').map(([, b]) => [b.p_item_id, b.p_status])).toEqual([
     ['a3', 'skipped'],
     ['a4', 'done'],
   ]);
@@ -115,18 +130,28 @@ test('plans a new session with the shared planner and shortens it', async ({ pag
   await expect(page.getByRole('button', { name: '30 phút', exact: true })).toHaveAttribute('aria-pressed', 'true');
 
   await page.getByRole('button', { name: 'Lập kế hoạch 30 phút' }).click();
-  const failed = page.getByRole('alert').filter({ hasText: 'Chưa lập được kế hoạch' });
-  await expect(page.getByRole('button', { name: 'Bắt đầu phiên học' }).or(failed)).toBeVisible();
-  test.skip(await failed.isVisible(), 'planSession is not implemented in this build yet');
-
-  expect(mock.session.calls('save_session_plan').map(([, b]) => b.p_replace)).toEqual([false]);
+  await expect(page.getByRole('button', { name: 'Bắt đầu phiên học' })).toBeVisible();
+  expect(mock.planner.calls('save_session_plan').map(([, b]) => b.p_replace)).toEqual([false]);
+  await expect(page.getByText('Phiên 30 phút')).toBeVisible();
   await expect(page.getByText('Tiến độ: 0/')).toBeVisible();
-  const shorten = page.getByRole('button', { name: 'Rút gọn còn 10 phút' });
-  if (await shorten.isVisible()) {
-    await shorten.click();
-    await expect(page.getByText(/^Phiên (?:[5-9]|10) phút$/)).toBeVisible();
-    expect(mock.session.calls('save_session_plan').map(([, b]) => b.p_replace)).toEqual([false, true]);
-  }
+
+  await page.getByRole('button', { name: 'Rút gọn còn 10 phút' }).click();
+  await expect(page.getByText(/^Phiên (?:[5-9]|10) phút$/)).toBeVisible();
+  expect(mock.planner.calls('save_session_plan').map(([, b]) => b.p_replace)).toEqual([false, true]);
+
+  // The 4 due cards come first: the review opens with its card limit.
+  await page.getByRole('button', { name: 'Bắt đầu phiên học' }).click();
+  await expect(page).toHaveURL(/\/app\/on-tap\?phien=[0-9a-f-]{36}&muc=a\d+&so-the=\d+$/);
+});
+
+test('?phut=10 from the home card preselects a 10-minute session', async ({ page }) => {
+  const mock = await setup(page);
+  await page.goto('/app/phien-hoc?phut=10');
+  await expect(page.getByRole('button', { name: '10 phút', exact: true })).toHaveAttribute('aria-pressed', 'true', { timeout: 15_000 });
+  await page.getByRole('button', { name: 'Lập kế hoạch 10 phút' }).click();
+  await expect(page.getByRole('button', { name: 'Bắt đầu phiên học' })).toBeVisible();
+  const saved = mock.planner.calls('save_session_plan')[0]?.[1];
+  expect(saved?.p_plan.minutes).toBeLessThanOrEqual(10);
 });
 
 for (const colorScheme of ['light', 'dark'] as const) {
@@ -135,7 +160,7 @@ for (const colorScheme of ['light', 'dark'] as const) {
     test.setTimeout(90_000);
     await setup(page, {
       session: { status: 'in_progress', started_at: new Date().toISOString(), plan: seededPlan(['done', 'done', 'skipped', 'pending']) },
-      recap: [{ prompt: 'Chọn: I ___ a student', expected: 'am', answer: 'is', lesson_id: I_AM.id }],
+      recap: [recapRow(1, 'Chọn: I ___ a student', 'am', 'is', I_AM.id)],
     });
     await page.emulateMedia({ reducedMotion: 'reduce', colorScheme });
     await openSessionPage(page);

@@ -6,11 +6,13 @@ import {
   LESSON_A,
   SESSION_ID,
   inputs,
+  mistake,
   plan,
   sessionWithStatuses,
   studySession,
   todayResult,
 } from '@/features/session/session-fixtures';
+import { TEST_PATH } from '../../../../tests/unit/learning-fixtures';
 import { renderWithProviders } from '../../../../tests/unit/render';
 import { SessionPage } from './SessionPage';
 
@@ -137,7 +139,7 @@ describe('planning a session', () => {
     render();
     await ready();
     expect(screen.queryByText(/Mục tiêu hôm nay/)).not.toBeInTheDocument();
-    expect(screen.getByRole('button', { name: '10 phút' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('button', { name: '15 phút' })).toHaveAttribute('aria-pressed', 'true');
   });
 
   it('shows a planner failure', async () => {
@@ -150,6 +152,39 @@ describe('planning a session', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Lập kế hoạch 30 phút' }));
     expect(await screen.findByRole('alert')).toHaveTextContent('Chưa lập được kế hoạch cho hôm nay');
     expect(calls('save_session_plan')).toEqual([]);
+  });
+
+  it('preselects ?phut=10 from the home card, even after a completed session', async () => {
+    serve(todayResult(sessionWithStatuses(['done', 'done', 'done', 'done'], { status: 'completed' })));
+    render({ route: '/app/phien-hoc?phut=10' });
+    await ready();
+    expect(screen.queryByRole('heading', { name: 'Hoàn thành phiên học' })).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: '10 phút' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('button', { name: 'Lập kế hoạch 10 phút' })).toBeInTheDocument();
+  });
+
+  it('offers to replan a planned session at ?phut=10', async () => {
+    serve(todayResult(studySession()));
+    render({ route: '/app/phien-hoc?phut=10' });
+    await ready();
+    expect(screen.getByRole('button', { name: 'Lập lại kế hoạch 10 phút' })).toBeInTheDocument();
+  });
+
+  it('shows a paused path instead of planning', async () => {
+    serve(todayResult(null));
+    render({ paths: { paths: [{ ...TEST_PATH, status: 'paused' }] } });
+    await ready();
+    expect(screen.getByRole('heading', { name: 'Lộ trình đang tạm dừng' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Về trang chủ' })).toHaveAttribute('href', '/app');
+    expect(screen.queryByRole('button', { name: /^Lập kế hoạch/ })).not.toBeInTheDocument();
+  });
+
+  it('shows the paused state when the server refuses to plan with path_not_active', async () => {
+    serve(todayResult(null), { get_session_inputs: { error: { message: 'path_not_active', code: 'P0001' } } });
+    render();
+    await ready();
+    await userEvent.click(screen.getByRole('button', { name: 'Lập kế hoạch 30 phút' }));
+    expect(await screen.findByRole('heading', { name: 'Lộ trình đang tạm dừng' })).toBeInTheDocument();
   });
 
   it('replans a planned session with another length, replacing it', async () => {
@@ -193,7 +228,7 @@ describe('a running session', () => {
     render();
     await ready();
     await userEvent.click(screen.getByRole('button', { name: 'Bắt đầu phiên học' }));
-    expect(location()).toBe(`/app/on-tap?phien=${SESSION_ID}&muc=a1`);
+    expect(location()).toBe(`/app/on-tap?phien=${SESSION_ID}&muc=a1&so-the=25`);
   });
 
   it('reorders with the arrow buttons, keeping keyboard focus and announcing the move', async () => {
@@ -286,10 +321,7 @@ describe('a running session', () => {
 });
 
 describe('recap and completion', () => {
-  const mistakes = [
-    { prompt: 'Chọn: I ___ a student', expected: 'am', answer: 'is', lesson_id: LESSON_A },
-    { prompt: 'Dịch: tạm biệt', expected: 'goodbye', answer: null, lesson_id: null },
-  ];
+  const mistakes = [mistake(1), mistake(2, { prompt_text: 'Dịch: tạm biệt', expected_answer: null, learner_answer: null })];
 
   it("lists today's mistakes with an AI explanation, then completes the session", async () => {
     vi.useFakeTimers({ shouldAdvanceTime: true, toFake: ['Date'] });
@@ -303,7 +335,9 @@ describe('recap and completion', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Tiếp tục' }));
     expect(screen.getByRole('heading', { name: 'Tổng kết: lỗi sai hôm nay' })).toHaveFocus();
     expect(await screen.findByText('Chọn: I ___ a student')).toBeInTheDocument();
-    expect(screen.getByText('(bỏ trống)')).toBeInTheDocument();
+    // An answer key never revealed is not shown; a give-up shows as such.
+    expect(screen.getAllByText('Đáp án đúng:')).toHaveLength(1);
+    expect(screen.getByText('(bỏ qua)')).toBeInTheDocument();
     expect(calls('session_recap')).toEqual([{ p_session_id: SESSION_ID }]);
 
     await userEvent.click(screen.getAllByRole('button', { name: 'Giải thích AI' })[0]!);

@@ -93,17 +93,19 @@ export function RecapView({ sessionId, learner, saving, onDone, onBack }: Props)
           {loaded.mistakes.map((mistake, index) => {
             const state = learner ? recapAiState(mistake, learner) : null;
             return (
-              <li key={index}>
+              <li key={mistake.attempt_id}>
                 <SolidCard className="space-y-2">
-                  <h3 className="text-[17px] font-bold leading-snug break-words">{mistake.prompt || `Lỗi ${index + 1}`}</h3>
+                  <h3 className="text-[17px] font-bold leading-snug break-words">{mistake.prompt_text || `Lỗi ${index + 1}`}</h3>
                   <dl className="space-y-1 text-[15px]">
-                    <div>
-                      <dt className="inline text-muted">Đáp án đúng: </dt>
-                      <dd className="inline font-semibold break-words">{mistake.expected || '—'}</dd>
-                    </div>
+                    {mistake.expected_answer !== null && (
+                      <div>
+                        <dt className="inline text-muted">Đáp án đúng: </dt>
+                        <dd className="inline font-semibold break-words">{mistake.expected_answer}</dd>
+                      </div>
+                    )}
                     <div>
                       <dt className="inline text-muted">Bạn trả lời: </dt>
-                      <dd className="inline break-words">{mistake.answer || '(bỏ trống)'}</dd>
+                      <dd className="inline break-words">{mistake.learner_answer || '(bỏ qua)'}</dd>
                     </div>
                   </dl>
                   {state && (

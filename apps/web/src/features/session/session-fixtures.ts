@@ -1,4 +1,5 @@
 import type { SessionActivity, SessionInputs, SessionPlan, StudySession, TodaySessionResult } from '@linguo/shared';
+import type { SessionMistake } from './service';
 
 // Shared by the session feature and SessionPage tests.
 
@@ -87,6 +88,22 @@ export function sessionWithStatuses(statuses: SessionActivity['status'][], overr
 
 export function todayResult(session: StudySession | null = studySession(), overrides: Partial<TodaySessionResult> = {}): TodaySessionResult {
   return { session, studied_seconds_today: 0, daily_goal_minutes: 30, ...overrides };
+}
+
+/** A session_recap row. */
+export function mistake(n: number, overrides: Partial<SessionMistake> = {}): SessionMistake {
+  const id = (prefix: string) => `${prefix}-0000-4000-8000-${String(n).padStart(12, '0')}`;
+  return {
+    attempt_id: id('70000000'),
+    lesson_id: LESSON_A,
+    exercise_id: id('80000000'),
+    exercise_type: 'mcq',
+    prompt_text: 'Chọn: I ___ a student',
+    expected_answer: 'am',
+    learner_answer: 'is',
+    created_at: '2026-10-13T02:00:00Z',
+    ...overrides,
+  };
 }
 
 export function inputs(overrides: Partial<SessionInputs> = {}): SessionInputs {

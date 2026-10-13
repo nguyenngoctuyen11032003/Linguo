@@ -1,13 +1,14 @@
 import { SESSION_LENGTHS, type SessionLength } from '@linguo/shared';
 
-/** The session length chip closest to today's goal (ties go to the shorter one: no pressure). */
-export function defaultSessionLength(goalMinutes: number): SessionLength {
-  let best: SessionLength = SESSION_LENGTHS[0];
-  for (const length of SESSION_LENGTHS) {
-    if (Math.abs(length - goalMinutes) < Math.abs(best - goalMinutes)) best = length;
-  }
-  return best;
-}
-
-/** The length the "Rút gọn" button shortens to. */
+/** The length the "Rút gọn" button and the home "Chỉ có 10 phút?" link use. */
 export const SHORT_SESSION_MINUTES: SessionLength = 10;
+
+/** Query param of /app/phien-hoc that preselects a length, e.g. `?phut=10` from the home card. */
+export const LENGTH_QUERY = 'phut';
+
+/** A session length from the URL, or null when absent or not one of the chips. */
+export function readLengthParam(params: URLSearchParams): SessionLength | null {
+  const raw = params.get(LENGTH_QUERY);
+  if (raw === null || !/^\d+$/.test(raw)) return null;
+  return SESSION_LENGTHS.find((l) => l === Number(raw)) ?? null;
+}

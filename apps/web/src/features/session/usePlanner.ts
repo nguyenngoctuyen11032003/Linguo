@@ -1,7 +1,7 @@
 import { useCallback, useRef, useState } from 'react';
 import { planSession, shortenPlan, type SessionInputs, type SessionPlan, type StudySession } from '@linguo/shared';
 import { getSupabase } from '@/lib/supabase';
-import { sessionErrorMessage } from './error-map';
+import { isPathPaused, sessionErrorMessage } from './error-map';
 import { getSessionInputs, saveSessionPlan } from './service';
 
 export interface PlannerFns {
@@ -13,6 +13,8 @@ export interface PlannerApi {
   busy: boolean;
   /** Vietnamese message of the last failure; cleared by the next call. */
   error: string | null;
+  /** The last failure was path_not_active: the learning path is paused. */
+  paused: boolean;
   /** get_session_inputs → planSession → save_session_plan. Null on failure (see `error`). */
   create: (pathId: string, minutes: number, replace?: boolean) => Promise<StudySession | null>;
   /** shortenPlan on the session's plan, saved over today's open session. Null on failure. */
@@ -27,6 +29,7 @@ export function usePlanner(fns: Partial<PlannerFns> = {}): PlannerApi {
   const shortenFn = fns.shorten ?? DEFAULT_FNS.shorten;
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [paused, setPaused] = useState(false);
   const running = useRef(false);
 
   const run = useCallback(async (job: (client: NonNullable<ReturnType<typeof getSupabase>>) => Promise<StudySession>) => {
@@ -39,10 +42,12 @@ export function usePlanner(fns: Partial<PlannerFns> = {}): PlannerApi {
     running.current = true;
     setBusy(true);
     setError(null);
+    setPaused(false);
     try {
       return await job(client);
     } catch (e: unknown) {
       setError(sessionErrorMessage(e));
+      setPaused(isPathPaused(e));
       return null;
     } finally {
       running.current = false;
@@ -79,5 +84,5 @@ export function usePlanner(fns: Partial<PlannerFns> = {}): PlannerApi {
     [run, shortenFn],
   );
 
-  return { busy, error, create, shorten };
+  return { busy, error, paused, create, shorten };
 }

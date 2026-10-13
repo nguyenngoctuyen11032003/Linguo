@@ -29,6 +29,11 @@ function errorCode(error: object): string | null {
   return null;
 }
 
+/** True when the server refused because the learning path is paused (get_session_inputs / save_session_plan). */
+export function isPathPaused(error: unknown): boolean {
+  return !!error && typeof error === 'object' && 'message' in error && error.message === 'path_not_active';
+}
+
 /** Vietnamese message for a session planner RPC failure. */
 export function sessionErrorMessage(error: unknown): string {
   if (isNetworkError(error)) return NETWORK_MESSAGE;

@@ -1,5 +1,4 @@
 import {
-  SESSION_QUERY,
   sessionInputsSchema,
   studySessionSchema,
   todaySessionResultSchema,
@@ -12,21 +11,24 @@ import {
 } from '@linguo/shared';
 import { z } from 'zod';
 import { callRpc, parse } from '@/features/lesson-player/service';
+import { sessionLinkSearch } from '@/features/session-link/params';
 import type { AppSupabaseClient } from '@/lib/supabase';
 
 // Spec 6 §3/§4. Same transport as the lesson and review RPCs: jsonb validated with the shared zod contracts,
 // abandoned after 15 s (reported like a network failure).
 
-/** One of today's mistakes from `session_recap(p_session_id)` (at most 10). */
+/** One of today's mistakes from `session_recap(p_session_id)` (at most 10, newest first). */
 export const sessionMistakeSchema = z.object({
-  prompt: z.string(),
-  expected: z.string(),
-  /** '' (or null from SQL) when the learner revealed the answer without trying. */
-  answer: z
-    .string()
-    .nullable()
-    .transform((v) => v ?? ''),
-  lesson_id: z.uuid().nullable(),
+  attempt_id: z.uuid(),
+  lesson_id: z.uuid(),
+  exercise_id: z.uuid(),
+  exercise_type: z.string(),
+  prompt_text: z.string(),
+  /** null when the answer was never revealed to the learner: then only the prompt and their answer are shown. */
+  expected_answer: z.string().nullable(),
+  /** null for a give-up. */
+  learner_answer: z.string().nullable(),
+  created_at: z.string(),
 });
 export type SessionMistake = z.infer<typeof sessionMistakeSchema>;
 const sessionRecapSchema = z.array(sessionMistakeSchema).max(10);
@@ -75,22 +77,25 @@ export async function getSessionRecap(client: AppSupabaseClient, sessionId: stri
   return parse(sessionRecapSchema, data ?? []);
 }
 
-export const SESSION_PAGE = '/app/phien-hoc';
 export const LESSON_ROUTE = '/app/hoc-tap/bai';
 export const REVIEW_ROUTE = '/app/on-tap';
 
 /**
- * Where an activity is played, with `?phien=<session>&muc=<item>` so the lesson player / review returns to the
- * session when done. null for `recap` (a screen of SessionPage) and for a lesson activity without a lesson.
+ * Where an activity is played, with `?phien=<session>&muc=<item>` (and `&so-the=<review_limit>` for a review) so
+ * the lesson player / review returns to the session when done. null for `recap` (a screen of SessionPage) and for
+ * a lesson activity without a lesson.
  */
-export function sessionLink(session: Pick<StudySession, 'id'>, activity: Pick<SessionActivity, 'id' | 'kind' | 'lesson_id'>): string | null {
-  const query = new URLSearchParams({ [SESSION_QUERY.session]: session.id, [SESSION_QUERY.item]: activity.id }).toString();
+export function sessionLink(
+  session: Pick<StudySession, 'id'>,
+  activity: Pick<SessionActivity, 'id' | 'kind' | 'lesson_id' | 'review_limit'>,
+): string | null {
+  const link = { sessionId: session.id, itemId: activity.id };
   switch (activity.kind) {
     case 'review':
-      return `${REVIEW_ROUTE}?${query}`;
+      return `${REVIEW_ROUTE}${sessionLinkSearch({ ...link, reviewLimit: activity.review_limit })}`;
     case 'lesson':
     case 'practice':
-      return activity.lesson_id ? `${LESSON_ROUTE}/${activity.lesson_id}?${query}` : null;
+      return activity.lesson_id ? `${LESSON_ROUTE}/${activity.lesson_id}${sessionLinkSearch({ ...link, reviewLimit: null })}` : null;
     case 'recap':
       return null;
   }

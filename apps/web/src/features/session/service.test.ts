@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { fakeClient } from '../../../tests/unit/fake-supabase';
-import { defaultSessionLength } from './lengths';
+import { readLengthParam } from './lengths';
 import {
   finishSession,
   firstPending,
@@ -13,7 +13,7 @@ import {
   sessionProgress,
   updateSessionItem,
 } from './service';
-import { LESSON_A, SESSION_ID, SESSION_PATH_ID, activity, inputs, plan, sessionWithStatuses, studySession, todayResult } from './session-fixtures';
+import { LESSON_A, SESSION_ID, SESSION_PATH_ID, activity, inputs, mistake, plan, sessionWithStatuses, studySession, todayResult } from './session-fixtures';
 
 describe('session service', () => {
   it('gets the planner inputs', async () => {
@@ -61,13 +61,10 @@ describe('session service', () => {
     ]);
   });
 
-  it('reads the recap, normalising a null answer', async () => {
-    const rows = [
-      { prompt: 'Chọn: I ___ a student', expected: 'am', answer: 'is', lesson_id: LESSON_A },
-      { prompt: 'Dịch: xin chào', expected: 'hello', answer: null, lesson_id: null },
-    ];
+  it('reads the recap, with unknown answer keys and give-ups as null', async () => {
+    const rows = [mistake(1), mistake(2, { expected_answer: null, learner_answer: null })];
     const client = fakeClient({}, { session_recap: { data: rows } });
-    expect(await getSessionRecap(client, SESSION_ID)).toEqual([rows[0], { ...rows[1], answer: '' }]);
+    expect(await getSessionRecap(client, SESSION_ID)).toEqual(rows);
     expect(client.rpcCalls).toEqual([['session_recap', { p_session_id: SESSION_ID }]]);
     const none = fakeClient({}, { session_recap: { data: null } });
     expect(await getSessionRecap(none, SESSION_ID)).toEqual([]);
@@ -98,6 +95,9 @@ describe('sessionLink', () => {
   const session = { id: SESSION_ID };
 
   it('opens the review with the session params', () => {
+    expect(sessionLink(session, activity({ id: 'a1', kind: 'review', lesson_id: null, review_limit: 25 }))).toBe(
+      `/app/on-tap?phien=${SESSION_ID}&muc=a1&so-the=25`,
+    );
     expect(sessionLink(session, activity({ id: 'a1', kind: 'review', lesson_id: null }))).toBe(`/app/on-tap?phien=${SESSION_ID}&muc=a1`);
   });
 
@@ -123,15 +123,12 @@ describe('session helpers', () => {
   });
 
   it.each([
-    [0, 10],
-    [12, 10],
-    [13, 15],
-    [25, 30],
-    [40, 45],
-    [75, 60],
-    [100, 90],
-    [500, 120],
-  ])('picks the length chip nearest to a %i-minute goal', (goal, length) => {
-    expect(defaultSessionLength(goal)).toBe(length);
+    ['?phut=10', 10],
+    ['?phut=45', 45],
+    ['?phut=11', null],
+    ['?phut=abc', null],
+    ['', null],
+  ])('reads the length param %s', (search, length) => {
+    expect(readLengthParam(new URLSearchParams(search))).toBe(length);
   });
 });

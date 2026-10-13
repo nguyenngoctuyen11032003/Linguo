@@ -1,15 +1,16 @@
 import { useRef, useState } from 'react';
-import { Leaf, Scissors } from 'lucide-react';
-import { Navigate, useNavigate } from 'react-router';
-import { SESSION_LENGTHS, type SessionActivity, type SessionLength, type StudySession } from '@linguo/shared';
-import { Button } from '@/components/ui/Button';
+import { Leaf, PauseCircle, Scissors } from 'lucide-react';
+import { Link, Navigate, useNavigate, useSearchParams } from 'react-router';
+import { nearestSessionLength, SESSION_LENGTHS, type SessionActivity, type SessionLength, type StudySession } from '@linguo/shared';
+import { Button, buttonClasses } from '@/components/ui/Button';
+import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useToast } from '@/components/ui/Toast';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { sessionErrorMessage } from '@/features/session/error-map';
-import { defaultSessionLength, SHORT_SESSION_MINUTES } from '@/features/session/lengths';
+import { readLengthParam, SHORT_SESSION_MINUTES } from '@/features/session/lengths';
 import { finishSession, firstPending, reorderSession, sessionLink, sessionProgress, updateSessionItem } from '@/features/session/service';
 import { usePlanner } from '@/features/session/usePlanner';
 import { useTodaySession } from '@/features/session/useTodaySession';
@@ -40,9 +41,12 @@ export function SessionPage() {
   const navigate = useNavigate();
   const { session, setSession } = today;
 
-  const [chosen, setChosen] = useState<SessionLength | null>(null);
+  const [searchParams] = useSearchParams();
+  // ?phut=10 from the home card preselects that length (and skips the completion screen of an earlier session).
+  const [lengthParam] = useState(() => readLengthParam(searchParams));
+  const [chosen, setChosen] = useState<SessionLength | null>(lengthParam);
   const [recapItemId, setRecapItemId] = useState<string | null>(null);
-  const [planningAgain, setPlanningAgain] = useState(false);
+  const [planningAgain, setPlanningAgain] = useState(lengthParam !== null);
   const [saving, setSaving] = useState(false);
   const [announcement, setAnnouncement] = useState('');
   /** Reorders are applied on screen at once and sent to the server one after the other. */
@@ -175,7 +179,7 @@ export function SessionPage() {
     const pendingMinutes = pending.reduce((sum, a) => sum + a.minutes, 0);
     const planned = session.status === 'planned';
     const current = asLength(session.minutes_planned);
-    const selected = chosen ?? current ?? defaultSessionLength(session.minutes_planned);
+    const selected = chosen ?? current ?? nearestSessionLength(session.minutes_planned);
     body = (
       <div className="space-y-5">
         <SolidCard className="space-y-4">
@@ -255,9 +259,22 @@ export function SessionPage() {
         </section>
       </div>
     );
+  } else if (paths.current?.status === 'paused' || planner.paused) {
+    body = (
+      <EmptyState
+        icon={PauseCircle}
+        title="Lộ trình đang tạm dừng"
+        description="Bật lại lộ trình ở trang chủ để Linguo lập phiên học mới cho bạn."
+        action={
+          <Link to="/app" className={buttonClasses('accent')}>
+            Về trang chủ
+          </Link>
+        }
+      />
+    );
   } else {
     const goal = today.dailyGoalMinutes;
-    const selected = chosen ?? defaultSessionLength(goal);
+    const selected = chosen ?? nearestSessionLength(goal);
     body = (
       <SolidCard className="space-y-4">
         <section aria-labelledby="session-new-title" className="space-y-4">

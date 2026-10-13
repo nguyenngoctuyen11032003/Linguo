@@ -1075,9 +1075,12 @@ function createAiBackend(opts: AiMockOptions = {}) {
   };
 }
 
-// ---- session planner backend (spec 6): BEGIN ---------------------------------------------------------------------
+// ==== BEGIN session page planner mocks (spec 6, task P3: /app/phien-hoc) ==========================================
+// Stateful get_session_inputs / save_session_plan / get_today_session / update_session_item / reorder_session /
+// finish_session / session_recap. Only active when mockSupabase gets a `planner` option; it must come before the
+// P4 session mocks in the RPC chain so the session page specs get one consistent store.
 
-export interface SessionMockOptions {
+export interface PlannerMockOptions {
   /** Today's session already on the server (planned/in_progress/completed). Ids are filled in when missing. */
   session?: Row | null;
   /** Rows served by session_recap. */
@@ -1087,7 +1090,8 @@ export interface SessionMockOptions {
 }
 
 /** Stateful stand-in for get_session_inputs / save_session_plan / get_today_session / … / session_recap. */
-function createSessionBackend(paths: Array<Record<string, unknown>>, opts: SessionMockOptions = {}) {
+function createPlannerBackend(paths: Array<Record<string, unknown>>, options: PlannerMockOptions | undefined) {
+  const opts = options ?? {};
   const sessions: Row[] = [];
   const calls: Array<[string, Row]> = [];
   const isOpen = (s: Row) => s.status === 'planned' || s.status === 'in_progress';
@@ -1154,8 +1158,14 @@ function createSessionBackend(paths: Array<Record<string, unknown>>, opts: Sessi
   function save(b: Row) {
     const path = pathOf(b.p_path_id);
     if (!path) return rpcError('path_not_found');
+    if (path.status === 'paused') return rpcError('path_not_active');
     const parsed = sessionPlanSchema.safeParse(b.p_plan);
     if (!parsed.success) return rpcError('invalid_plan');
+    // Like the SQL: lesson/practice need a lesson, review/recap have none, review_limit only on a review.
+    const shapeOk = parsed.data.activities.every((a) =>
+      (a.kind === 'lesson' || a.kind === 'practice' ? a.lesson_id !== null : a.lesson_id === null) && (a.kind === 'review' || a.review_limit === null),
+    );
+    if (!shapeOk) return rpcError('invalid_plan');
     const open = sessions.find((s) => s.path_id === path.id && s.local_date === today() && isOpen(s));
     if (open && !b.p_replace) return { json: copy(open) };
     if (open) open.status = 'abandoned';
@@ -1205,6 +1215,8 @@ function createSessionBackend(paths: Array<Record<string, unknown>>, opts: Sessi
   }
 
   function finish(b: Row) {
+    const same = sessions.find((x) => x.id === b.p_session_id && x.status === b.p_status);
+    if (same) return { json: copy(same) }; // idempotent like the SQL
     const { session: s, refused } = openSession(b.p_session_id);
     if (!s) return refused;
     Object.assign(s, { status: b.p_status, completed_at: new Date().toISOString() });
@@ -1212,12 +1224,14 @@ function createSessionBackend(paths: Array<Record<string, unknown>>, opts: Sessi
   }
 
   function handle(pathname: string, b: Row): { status?: number; json: unknown } | null {
+    if (!options) return null;
     const name = pathname.replace('/rest/v1/rpc/', '');
     switch (pathname) {
       case '/rest/v1/rpc/get_session_inputs': {
         calls.push([name, b]);
         const path = pathOf(b.p_path_id);
-        return path ? { json: inputs(path) } : rpcError('path_not_found');
+        if (!path) return rpcError('path_not_found');
+        return path.status === 'paused' ? rpcError('path_not_active') : { json: inputs(path) };
       }
       case '/rest/v1/rpc/save_session_plan':
         calls.push([name, b]);
@@ -1256,7 +1270,7 @@ function createSessionBackend(paths: Array<Record<string, unknown>>, opts: Sessi
   };
 }
 
-// ---- session planner backend (spec 6): END -----------------------------------------------------------------------
+// ==== END session page planner mocks =============================================================================
 
 interface MockOptions {
   /** AI tutor function and RPCs (spec 5). */
@@ -1270,8 +1284,8 @@ interface MockOptions {
   paths?: Array<Record<string, unknown>>;
   /** Review cards (spec 3); defaults to 4 cards due today on every path. */
   reviews?: ReviewMockOptions;
-  /** Session planner RPCs (spec 6). */
-  session?: SessionMockOptions;
+  /** Session page planner RPCs (spec 6, P3); off unless set. */
+  planner?: PlannerMockOptions;
 }
 
 /**
@@ -1285,7 +1299,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
   const reviews = createReviewBackend(paths, opts.reviews);
   const diagnostic = createDiagnosticBackend(paths, opts.diagnostic);
   const ai = createAiBackend(opts.ai);
-  const studySessions = createSessionBackend(paths, opts.session); // spec 6
+  const planner = createPlannerBackend(paths, opts.planner); // spec 6, P3
 
   await page.route(`${SUPABASE_URL}/**`, async (route) => {
     const url = new URL(route.request().url());
@@ -1354,7 +1368,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
           reviews.handle(url.pathname, body()) ??
           diagnostic.handle(url.pathname, body()) ??
           ai.handle(url.pathname, body()) ??
-          studySessions.handle(url.pathname, body()))
+          planner.handle(url.pathname, body()))
         : null;
     if (lessonReply) {
       if (lessonReply.status === 204) return route.fulfill({ status: 204, body: '' });
@@ -1369,7 +1383,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
     postponeCalls: reviews.postponeCalls,
     diagnosticAttempts: diagnostic.attempts,
     ai: ai.controls,
-    session: studySessions.controls,
+    planner: planner.controls,
     paths: () => paths.map((p) => ({ ...p })),
   };
 }
