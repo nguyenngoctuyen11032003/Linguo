@@ -29,7 +29,7 @@ describe('readEnv', () => {
   });
 
   it('prefers VITE_SITE_URL and strips trailing slashes', () => {
-    const env = readEnv({ BASE_URL: '/', VITE_SITE_URL: 'https://lexipath.vn/' }, 'http://x');
-    expect(env.siteUrl).toBe('https://lexipath.vn');
+    const env = readEnv({ BASE_URL: '/', VITE_SITE_URL: 'https://linguo.vn/' }, 'http://x');
+    expect(env.siteUrl).toBe('https://linguo.vn');
   });
 });

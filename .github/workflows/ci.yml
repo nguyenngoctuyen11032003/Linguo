@@ -50,7 +50,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - name: Install Playwright browsers
-        run: pnpm --filter @lexipath/web exec playwright install --with-deps chromium webkit
+        run: pnpm --filter @linguo/web exec playwright install --with-deps chromium webkit
       - run: pnpm e2e
       - name: Upload Playwright report (screenshots for review)
         if: ${{ !cancelled() }}

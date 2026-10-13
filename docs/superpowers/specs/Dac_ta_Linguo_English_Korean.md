@@ -1,7 +1,7 @@
 # ĐẶC TẢ SẢN PHẨM & KỸ THUẬT
 ## Nền tảng học ngoại ngữ thông minh: Tiếng Anh + Tiếng Hàn
 
-**Tên dự án tạm thời:** LexiPath  
+**Tên dự án:** Linguo  
 **Phiên bản đặc tả:** 1.0  
 **Ngày:** 13/10/2026  
 **Loại tài liệu:** Product Requirements Document (PRD) + Software Requirements Specification (SRS)  
@@ -16,7 +16,7 @@
 
 # 1. Tóm tắt điều hành
 
-LexiPath là nền tảng tự học ngoại ngữ cá nhân hóa, ban đầu hỗ trợ tiếng Anh và tiếng Hàn. Người dùng chọn một ngôn ngữ để học tại mỗi thời điểm, trình độ hiện tại, mục tiêu, thời hạn dự kiến và thời gian học mỗi ngày/tuần. Hệ thống tạo kế hoạch học linh hoạt, điều chỉnh theo kết quả thật và giúp người dùng biết chính xác cần học gì tiếp theo.
+Linguo là nền tảng tự học ngoại ngữ cá nhân hóa, ban đầu hỗ trợ tiếng Anh và tiếng Hàn. Người dùng chọn một ngôn ngữ để học tại mỗi thời điểm, trình độ hiện tại, mục tiêu, thời hạn dự kiến và thời gian học mỗi ngày/tuần. Hệ thống tạo kế hoạch học linh hoạt, điều chỉnh theo kết quả thật và giúp người dùng biết chính xác cần học gì tiếp theo.
 
 Sản phẩm không chỉ là flashcard hay chatbot. Nó là một vòng lặp học tập hoàn chỉnh:
 
@@ -891,7 +891,7 @@ Một tính năng chỉ được coi là hoàn thành khi có đủ:
 
 # 23. Prompt giao cho AI lập trình
 
-Sử dụng nội dung của đặc tả này làm nguồn yêu cầu chính. Hãy phát triển LexiPath thành web app thật có thể chạy, không chỉ dựng giao diện demo.
+Sử dụng nội dung của đặc tả này làm nguồn yêu cầu chính. Hãy phát triển Linguo thành web app thật có thể chạy, không chỉ dựng giao diện demo.
 
 **Yêu cầu bắt buộc:**
 - Next.js + TypeScript, UI responsive, Supabase Auth/PostgreSQL/RLS.

@@ -1,5 +1,5 @@
 {
-  "name": "lexipath",
+  "name": "linguo",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@10.34.6",
@@ -7,13 +7,13 @@
     "node": ">=22"
   },
   "scripts": {
-    "dev": "pnpm --filter @lexipath/web dev",
-    "build": "pnpm --filter @lexipath/web build",
-    "preview": "pnpm --filter @lexipath/web preview",
+    "dev": "pnpm --filter @linguo/web dev",
+    "build": "pnpm --filter @linguo/web build",
+    "preview": "pnpm --filter @linguo/web preview",
     "lint": "eslint .",
     "typecheck": "pnpm -r typecheck",
     "test": "pnpm -r test && node --test scripts/check-public-env.test.mjs",
-    "e2e": "pnpm --filter @lexipath/web e2e",
+    "e2e": "pnpm --filter @linguo/web e2e",
     "icons": "node scripts/make-icons.mjs",
     "check-env": "node scripts/check-public-env.mjs",
     "db:start": "supabase start",

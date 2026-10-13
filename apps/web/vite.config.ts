@@ -12,7 +12,7 @@ const rootDir = fileURLToPath(new URL('../..', import.meta.url));
 function spaFallback(): Plugin {
   let outDir = 'dist';
   return {
-    name: 'lexipath-spa-fallback',
+    name: 'linguo-spa-fallback',
     apply: 'build',
     configResolved(config) {
       outDir = resolve(config.root, config.build.outDir);

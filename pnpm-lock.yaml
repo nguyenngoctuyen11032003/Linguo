@@ -38,7 +38,7 @@ importers:
 
   apps/web:
     dependencies:
-      '@lexipath/shared':
+      '@linguo/shared':
         specifier: workspace:*
         version: link:../../packages/shared
       '@supabase/supabase-js':

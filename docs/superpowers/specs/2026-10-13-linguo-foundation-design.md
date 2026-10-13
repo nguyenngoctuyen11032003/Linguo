@@ -1,8 +1,8 @@
-# LexiPath — Spec 0: Nền móng (Foundation)
+# Linguo — Spec 0: Nền móng (Foundation)
 
 **Ngày:** 2026-10-13
 **Trạng thái:** Đã duyệt thiết kế, chờ review văn bản
-**Nguồn yêu cầu:** [Dac_ta_LexiPath_English_Korean.md](./Dac_ta_LexiPath_English_Korean.md) (PRD/SRS v1.0)
+**Nguồn yêu cầu:** [Dac_ta_Linguo_English_Korean.md](./Dac_ta_Linguo_English_Korean.md) (PRD/SRS v1.0)
 **Mô hình tham chiếu:** dự án `D:\Code\Tuyen\Note_mytasks` (GitHub Actions + GitHub Pages + Supabase, không server riêng)
 
 ---
@@ -35,7 +35,7 @@ Một người dùng thật, trên điện thoại thật (iOS Safari / Android 
 | Hosting | **Không server riêng.** Web tĩnh trên **GitHub Pages**; backend là **Supabase** hosted |
 | Frontend | React 18 + TypeScript + Vite + Tailwind CSS + `motion` (`motion/react`) + `lucide-react` + React Router |
 | Backend | Supabase Auth + Postgres + RLS. Logic nghiệp vụ quan trọng (spec sau) nằm trong hàm Postgres (RPC); AI nằm trong Supabase Edge Function. **Không NestJS, không Next.js** |
-| Supabase | **Project mới, riêng** cho LexiPath (không dùng chung với Note_mytasks/Fitora) |
+| Supabase | **Project mới, riêng** cho Linguo (không dùng chung với Note_mytasks/Fitora) |
 | Đăng nhập | Email/mật khẩu (xác minh email, quên/đặt lại mật khẩu) + Google OAuth (nút tự ẩn nếu chưa cấu hình) |
 | Phong cách | **Glass Path** (mục 6) |
 | Logo | Script tách nền ca-rô của `logo.png` + vẽ mark SVG đơn giản cho favicon |
@@ -144,13 +144,13 @@ Mọi component tương tác: vùng chạm ≥44×44px, `:focus-visible` rõ (t�
 
 ### 7.1 Landing `/` (luôn theme tối)
 
-1. **Hero** (`min-height: 100svh`): nền CSS/SVG (gradient xanh/cam + lưới mờ) đóng vai poster; video `muted autoplay loop playsinline preload="metadata"` mờ dần lên trên khi `canplay`; gradient đáy tan vào `--bg`. Navbar: logo + "LexiPath" trượt từ trái; nút "Đăng nhập" + menu trượt từ phải. Tiêu đề Barlow Condensed: "HỌC THÔNG MINH" (trắng, từ trái) / "NHỚ LÂU HƠN" (xanh, căn phải, từ phải), delay 0 / 0.13s, 0.85s expo-out. Dòng phụ Be Vietnam Pro. `ArrowCTA` "Bắt đầu miễn phí" → `/dang-ky`.
+1. **Hero** (`min-height: 100svh`): nền CSS/SVG (gradient xanh/cam + lưới mờ) đóng vai poster; video `muted autoplay loop playsinline preload="metadata"` mờ dần lên trên khi `canplay`; gradient đáy tan vào `--bg`. Navbar: logo + "Linguo" trượt từ trái; nút "Đăng nhập" + menu trượt từ phải. Tiêu đề Barlow Condensed: "HỌC THÔNG MINH" (trắng, từ trái) / "NHỚ LÂU HƠN" (xanh, căn phải, từ phải), delay 0 / 0.13s, 0.85s expo-out. Dòng phụ Be Vietnam Pro. `ArrowCTA` "Bắt đầu miễn phí" → `/dang-ky`.
    - Video: biến `VITE_HERO_VIDEO_URL` (tùy chọn); trống hoặc bật Save-Data / reduced-motion → chỉ hiện nền CSS/SVG. Không dùng video của các mẫu tham khảo.
 2. **Lộ trình**: tiêu đề "MỘT LỘ TRÌNH" + phụ đề; `RouteLine` hai nhánh trên nền gradient xanh→cam nhạt: EN (Nền tảng → A1 → B1 → C1) và KO (Hangul → TOPIK I → TOPIK II); điểm mốc pop-in; 3 icon nổi (sách, tai nghe, bong bóng chat) dao động y vô hạn 2.5–3.3s.
 3. **Phương pháp**: 3 `GlassCard` — Nhớ lại chủ động, Ôn tập ngắt quãng, Phản hồi có giải thích; blur-reveal lệch nhịp.
 4. **Con số sản phẩm**: `CountUp` + gradient-fade numerals — "2 ngôn ngữ", "6 kỹ năng theo dõi" (từ vựng, ngữ pháp, đọc, nghe, viết, nói — PRD 5.3), "12 cấp độ mục tiêu" (CEFR A1–C2 + TOPIK 1–6). Chỉ số mô tả sản phẩm; **không** số người dùng/kết quả giả.
 5. **Trưng bày thiết bị** (chỉ ≥900px): khung iPhone CSS (tỉ lệ 393:852, Dynamic Island, home indicator) chứa ảnh chụp màn hình app; ẩn dưới 900px.
-6. **CTA cuối + footer**: "Bắt đầu lộ trình của bạn" + `ArrowCTA`; liên kết Quyền riêng tư, Điều khoản (`/quyen-rieng-tu`, `/dieu-khoan` — trang tạm ghi rõ "bản nháp"); © 2026 LexiPath.
+6. **CTA cuối + footer**: "Bắt đầu lộ trình của bạn" + `ArrowCTA`; liên kết Quyền riêng tư, Điều khoản (`/quyen-rieng-tu`, `/dieu-khoan` — trang tạm ghi rõ "bản nháp"); © 2026 Linguo.
 
 ### 7.2 Xác thực (theme theo cài đặt; nền gradient tĩnh xanh→cam độ mờ thấp)
 

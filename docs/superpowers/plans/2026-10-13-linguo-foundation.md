@@ -1,14 +1,14 @@
-# LexiPath Foundation Implementation Plan
+# Linguo Foundation Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Ship the LexiPath foundation: a pnpm monorepo with a mobile-first React SPA (landing, auth, app shell, settings) on GitHub Pages, backed by a new Supabase project (Auth + Postgres + RLS), with CI/CD in GitHub Actions.
+**Goal:** Ship the Linguo foundation: a pnpm monorepo with a mobile-first React SPA (landing, auth, app shell, settings) on GitHub Pages, backed by a new Supabase project (Auth + Postgres + RLS), with CI/CD in GitHub Actions.
 
 **Architecture:** Static SPA (Vite + React 18 + TS + Tailwind v4 + motion) talks directly to Supabase with the publishable key; Row Level Security protects data. No custom server. GitHub Actions runs lint/typecheck/unit/e2e/database tests on PRs and, on `main`, applies migrations (after approval) and deploys to GitHub Pages. Pattern copied from `D:\Code\Tuyen\Note_mytasks`.
 
 **Tech Stack:** pnpm 10 workspaces, Node 22, Vite, React 18.3, TypeScript (strict), Tailwind CSS v4 (`@tailwindcss/vite`), `motion` (`motion/react`), `lucide-react`, `react-router` v7, `@supabase/supabase-js` v2, `zod`, Vitest + happy-dom + Testing Library, Playwright + `@axe-core/playwright`, Supabase CLI 2.120.0 + pgTAP, `sharp` (icon script).
 
-**Spec:** [docs/superpowers/specs/2026-10-13-lexipath-foundation-design.md](../specs/2026-10-13-lexipath-foundation-design.md) — read it first.
+**Spec:** [docs/superpowers/specs/2026-10-13-linguo-foundation-design.md](../specs/2026-10-13-linguo-foundation-design.md) — read it first.
 
 ---
 
@@ -82,19 +82,19 @@ git checkout -b feat/foundation
 `package.json`:
 ```json
 {
-  "name": "lexipath",
+  "name": "linguo",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@10.34.6",
   "engines": { "node": ">=22" },
   "scripts": {
-    "dev": "pnpm --filter @lexipath/web dev",
-    "build": "pnpm --filter @lexipath/web build",
-    "preview": "pnpm --filter @lexipath/web preview",
+    "dev": "pnpm --filter @linguo/web dev",
+    "build": "pnpm --filter @linguo/web build",
+    "preview": "pnpm --filter @linguo/web preview",
     "lint": "eslint .",
     "typecheck": "pnpm -r typecheck",
     "test": "pnpm -r test",
-    "e2e": "pnpm --filter @lexipath/web e2e",
+    "e2e": "pnpm --filter @linguo/web e2e",
     "icons": "node scripts/make-icons.mjs",
     "check-env": "node scripts/check-public-env.mjs",
     "db:start": "supabase start",
@@ -236,7 +236,7 @@ git commit -m "chore: set up pnpm workspace, TypeScript base config and ESLint"
 `packages/shared/package.json`:
 ```json
 {
-  "name": "@lexipath/shared",
+  "name": "@linguo/shared",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -258,8 +258,8 @@ git commit -m "chore: set up pnpm workspace, TypeScript base config and ESLint"
 ```
 
 ```bash
-pnpm --filter @lexipath/shared add zod
-pnpm --filter @lexipath/shared add -D vitest typescript
+pnpm --filter @linguo/shared add zod
+pnpm --filter @linguo/shared add -D vitest typescript
 ```
 
 - [ ] **Step 2: Write the failing test** — `packages/shared/src/schemas.test.ts`
@@ -330,7 +330,7 @@ describe('constants', () => {
 
 - [ ] **Step 3: Run it to verify it fails**
 
-Run: `pnpm --filter @lexipath/shared test`
+Run: `pnpm --filter @linguo/shared test`
 Expected: FAIL — cannot resolve `./schemas`.
 
 - [ ] **Step 4: Implement**
@@ -455,7 +455,7 @@ export * from './schemas';
 
 - [ ] **Step 5: Run tests and typecheck**
 
-Run: `pnpm --filter @lexipath/shared test && pnpm --filter @lexipath/shared typecheck`
+Run: `pnpm --filter @linguo/shared test && pnpm --filter @linguo/shared typecheck`
 Expected: all tests PASS, no type errors.
 
 - [ ] **Step 6: Commit**
@@ -477,7 +477,7 @@ git commit -m "feat(shared): add language constants and zod validation schemas"
 `apps/web/package.json`:
 ```json
 {
-  "name": "@lexipath/web",
+  "name": "@linguo/web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -494,8 +494,8 @@ git commit -m "feat(shared): add language constants and zod validation schemas"
 ```
 
 ```bash
-pnpm --filter @lexipath/web add react@^18.3.1 react-dom@^18.3.1 react-router@^7 motion@^12 lucide-react @supabase/supabase-js@^2 zod "@lexipath/shared@workspace:*"
-pnpm --filter @lexipath/web add -D vite @vitejs/plugin-react tailwindcss @tailwindcss/vite typescript @types/react@^18 @types/react-dom@^18 @types/node vitest happy-dom @testing-library/react @testing-library/dom @testing-library/user-event @testing-library/jest-dom @playwright/test @axe-core/playwright
+pnpm --filter @linguo/web add react@^18.3.1 react-dom@^18.3.1 react-router@^7 motion@^12 lucide-react @supabase/supabase-js@^2 zod "@linguo/shared@workspace:*"
+pnpm --filter @linguo/web add -D vite @vitejs/plugin-react tailwindcss @tailwindcss/vite typescript @types/react@^18 @types/react-dom@^18 @types/node vitest happy-dom @testing-library/react @testing-library/dom @testing-library/user-event @testing-library/jest-dom @playwright/test @axe-core/playwright
 ```
 
 - [ ] **Step 2: TypeScript configs**
@@ -554,7 +554,7 @@ const rootDir = fileURLToPath(new URL('../..', import.meta.url));
 function spaFallback(): Plugin {
   let outDir = 'dist';
   return {
-    name: 'lexipath-spa-fallback',
+    name: 'linguo-spa-fallback',
     apply: 'build',
     configResolved(config) {
       outDir = resolve(config.root, config.build.outDir);
@@ -605,7 +605,7 @@ export default defineConfig(({ mode }) => {
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
     />
-    <title>LexiPath — Học tiếng Anh & tiếng Hàn thông minh</title>
+    <title>Linguo — Học tiếng Anh & tiếng Hàn thông minh</title>
     <meta
       name="description"
       content="Lộ trình tiếng Anh và tiếng Hàn cá nhân hoá cho người Việt: nhớ lại chủ động, ôn tập ngắt quãng, phản hồi có giải thích."
@@ -651,7 +651,7 @@ import { createRoot } from 'react-dom/client';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <p>LexiPath</p>
+    <p>Linguo</p>
   </StrictMode>,
 );
 ```
@@ -708,7 +708,7 @@ if (!('IntersectionObserver' in globalThis)) {
 
 - [ ] **Step 6: Verify build, typecheck, lint**
 
-Run: `pnpm --filter @lexipath/web build && pnpm --filter @lexipath/web typecheck && pnpm lint`
+Run: `pnpm --filter @linguo/web build && pnpm --filter @linguo/web typecheck && pnpm lint`
 Expected: build writes `apps/web/dist/index.html` and `apps/web/dist/404.html`; typecheck and lint exit 0.
 
 Run: `ls apps/web/dist`
@@ -915,14 +915,14 @@ import '@/design/global.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <p className="glass m-6 rounded-3xl p-6 font-display text-5xl uppercase text-primary">LexiPath</p>
+    <p className="glass m-6 rounded-3xl p-6 font-display text-5xl uppercase text-primary">Linguo</p>
   </StrictMode>,
 );
 ```
 
 - [ ] **Step 4: Verify**
 
-Run: `pnpm --filter @lexipath/web build`
+Run: `pnpm --filter @linguo/web build`
 Expected: build succeeds; `grep -c "backdrop-filter" apps/web/dist/assets/*.css` prints a number ≥ 1.
 
 - [ ] **Step 5: Commit**
@@ -975,8 +975,8 @@ describe('readEnv', () => {
   });
 
   it('prefers VITE_SITE_URL and strips trailing slashes', () => {
-    const env = readEnv({ BASE_URL: '/', VITE_SITE_URL: 'https://lexipath.vn/' }, 'http://x');
-    expect(env.siteUrl).toBe('https://lexipath.vn');
+    const env = readEnv({ BASE_URL: '/', VITE_SITE_URL: 'https://linguo.vn/' }, 'http://x');
+    expect(env.siteUrl).toBe('https://linguo.vn');
   });
 });
 ```
@@ -1035,7 +1035,7 @@ describe('installKeyboardAwareness', () => {
 
 - [ ] **Step 2: Run to verify failure**
 
-Run: `pnpm --filter @lexipath/web test`
+Run: `pnpm --filter @linguo/web test`
 Expected: FAIL — modules not found.
 
 - [ ] **Step 3: Implement**
@@ -1190,7 +1190,7 @@ export function useSaveData(): boolean {
 
 - [ ] **Step 4: Run tests**
 
-Run: `pnpm --filter @lexipath/web test`
+Run: `pnpm --filter @linguo/web test`
 Expected: PASS (env, storage, viewport).
 
 - [ ] **Step 5: Commit**
@@ -1320,7 +1320,7 @@ describe('MotionProvider', () => {
 
 - [ ] **Step 2: Run to verify failure**
 
-Run: `pnpm --filter @lexipath/web test`
+Run: `pnpm --filter @linguo/web test`
 Expected: FAIL — modules not found.
 
 - [ ] **Step 3: Implement**
@@ -1379,7 +1379,7 @@ export const functionalTransition: Transition = { duration: DUR.base, ease: EASE
 `apps/web/src/providers/ThemeProvider.tsx`:
 ```tsx
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { THEMES, type ThemePreference } from '@lexipath/shared';
+import { THEMES, type ThemePreference } from '@linguo/shared';
 import { readString, writeString } from '@/lib/storage';
 import { useMediaQuery } from '@/lib/useMediaQuery';
 
@@ -1483,7 +1483,7 @@ export function useMotionPrefs(): MotionPrefs {
 
 - [ ] **Step 4: Run tests**
 
-Run: `pnpm --filter @lexipath/web test`
+Run: `pnpm --filter @linguo/web test`
 Expected: PASS.
 
 - [ ] **Step 5: Commit**
@@ -1563,7 +1563,7 @@ describe('PasswordInput', () => {
 
 - [ ] **Step 2: Run to verify failure**
 
-Run: `pnpm --filter @lexipath/web test -- form`
+Run: `pnpm --filter @linguo/web test -- form`
 Expected: FAIL — modules not found.
 
 - [ ] **Step 3: Implement**
@@ -1730,7 +1730,7 @@ export function FormField({ label, hint, error, children }: FormFieldProps) {
 
 - [ ] **Step 4: Run tests**
 
-Run: `pnpm --filter @lexipath/web test -- form`
+Run: `pnpm --filter @linguo/web test -- form`
 Expected: PASS.
 
 - [ ] **Step 5: Commit**
@@ -1819,7 +1819,7 @@ describe('OfflineBanner', () => {
 
 - [ ] **Step 2: Run to verify failure**
 
-Run: `pnpm --filter @lexipath/web test -- states`
+Run: `pnpm --filter @linguo/web test -- states`
 Expected: FAIL — modules not found.
 
 - [ ] **Step 3: Implement**
@@ -2008,7 +2008,7 @@ export function OfflineBanner() {
 
 - [ ] **Step 4: Run tests**
 
-Run: `pnpm --filter @lexipath/web test -- states`
+Run: `pnpm --filter @linguo/web test -- states`
 Expected: PASS.
 
 - [ ] **Step 5: Commit**
@@ -2107,7 +2107,7 @@ describe('LanguagePill', () => {
 
 - [ ] **Step 2: Run to verify failure**
 
-Run: `pnpm --filter @lexipath/web test -- expressive`
+Run: `pnpm --filter @linguo/web test -- expressive`
 Expected: FAIL — modules not found.
 
 - [ ] **Step 3: Implement**
@@ -2332,7 +2332,7 @@ export function ArrowCTA({ to, children, className }: ArrowCTAProps) {
 ```tsx
 import { useEffect, useRef, useState } from 'react';
 import { Check, ChevronDown } from 'lucide-react';
-import { LANGUAGE_CODES, LANGUAGES, type LanguageCode } from '@lexipath/shared';
+import { LANGUAGE_CODES, LANGUAGES, type LanguageCode } from '@linguo/shared';
 
 /** Current learning language as text ("EN ▾"), never a flag (PRD 12.2). Switching arrives in spec 1. */
 export function LanguagePill({ current = 'en' }: { current?: LanguageCode }) {
@@ -2410,7 +2410,7 @@ export function LanguagePill({ current = 'en' }: { current?: LanguageCode }) {
 
 - [ ] **Step 4: Run tests and typecheck**
 
-Run: `pnpm --filter @lexipath/web test -- expressive && pnpm --filter @lexipath/web typecheck`
+Run: `pnpm --filter @linguo/web test -- expressive && pnpm --filter @linguo/web typecheck`
 Expected: PASS, no type errors.
 
 - [ ] **Step 5: Commit**
@@ -2433,7 +2433,7 @@ git commit -m "feat(ui): add CountUp, RouteLine route map, ArrowCTA and Language
 
 A blue speech bubble holding a script "L" with an orange tail and a small sparkle; no text, legible at 16px.
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="LexiPath">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Linguo">
   <path d="M32 5C17.1 5 5 15.9 5 29.3c0 7.6 3.9 14.4 10 18.9L12.6 58l11.6-6.3c2.5.6 5.1.9 7.8.9 14.9 0 27-10.9 27-24.3S46.9 5 32 5Z" fill="#4CA2D1"/>
   <path d="M27.5 16.5c2.6-2.6 6.3-1.6 6.1 2.2-.3 5.2-6.4 10.4-7.6 17.4-.6 3.3.9 5.4 4.2 5.4h12.3" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M42.5 41.5c4.3 0 7.8 2.6 9.5 6.5 1 2.3 3 3.8 5.5 4" fill="none" stroke="#F37D25" stroke-width="4.2" stroke-linecap="round"/>
@@ -2602,8 +2602,8 @@ Re-inspect until clean.
 
 ```json
 {
-  "name": "LexiPath — Học tiếng Anh & tiếng Hàn",
-  "short_name": "LexiPath",
+  "name": "Linguo — Học tiếng Anh & tiếng Hàn",
+  "short_name": "Linguo",
   "lang": "vi",
   "start_url": "./app",
   "scope": "./",
@@ -2630,7 +2630,7 @@ Re-inspect until clean.
 
 - [ ] **Step 7: Verify the build resolves the paths with a base path**
 
-Run: `VITE_BASE_PATH=/Linguo/ pnpm --filter @lexipath/web build && grep -o 'href="/Linguo/[^"]*"' apps/web/dist/index.html`
+Run: `VITE_BASE_PATH=/Linguo/ pnpm --filter @linguo/web build && grep -o 'href="/Linguo/[^"]*"' apps/web/dist/index.html`
 Expected: includes `href="/Linguo/favicon.ico"`, `href="/Linguo/brand/logo-mark.svg"`, `href="/Linguo/manifest.webmanifest"`.
 
 - [ ] **Step 8: Commit**
@@ -2661,7 +2661,7 @@ Expected: `supabase/config.toml` created.
 - [ ] **Step 2: Edit `supabase/config.toml`** — change these keys only (leave the rest as generated):
 
 ```toml
-project_id = "lexipath"
+project_id = "linguo"
 
 [auth]
 site_url = "http://localhost:5173"
@@ -2729,7 +2729,7 @@ Expected: FAIL — `relation "public.profiles" does not exist`.
 - [ ] **Step 5: Write the migration** — `supabase/migrations/20261013000100_foundation.sql`
 
 ```sql
--- LexiPath foundation: profiles + user_preferences, created by trigger on sign-up, protected by RLS.
+-- Linguo foundation: profiles + user_preferences, created by trigger on sign-up, protected by RLS.
 
 create table public.profiles (
   id uuid primary key references auth.users (id) on delete cascade,
@@ -2824,7 +2824,7 @@ Append to `packages/shared/src/index.ts`:
 export type { Database, Json } from './database.types';
 ```
 
-Run: `pnpm --filter @lexipath/shared typecheck`
+Run: `pnpm --filter @linguo/shared typecheck`
 Expected: exit 0.
 
 - [ ] **Step 8: Commit**
@@ -2956,7 +2956,7 @@ describe('guards', () => {
 
 - [ ] **Step 2: Run to verify failure**
 
-Run: `pnpm --filter @lexipath/web test -- auth.test`
+Run: `pnpm --filter @linguo/web test -- auth.test`
 Expected: FAIL — modules not found.
 
 - [ ] **Step 3: Implement**
@@ -2964,7 +2964,7 @@ Expected: FAIL — modules not found.
 `apps/web/src/lib/supabase.ts`:
 ```ts
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
-import type { Database } from '@lexipath/shared';
+import type { Database } from '@linguo/shared';
 import { env } from './env';
 
 export type AppSupabaseClient = SupabaseClient<Database>;
@@ -3177,7 +3177,7 @@ export function RedirectIfAuthed({ children }: { children: ReactNode }) {
 
 - [ ] **Step 4: Run tests and typecheck**
 
-Run: `pnpm --filter @lexipath/web test -- auth.test && pnpm --filter @lexipath/web typecheck`
+Run: `pnpm --filter @linguo/web test -- auth.test && pnpm --filter @linguo/web typecheck`
 Expected: PASS.
 
 - [ ] **Step 5: Commit**
@@ -3239,7 +3239,7 @@ import { render } from '@testing-library/react';
 import type { User } from '@supabase/supabase-js';
 import { MemoryRouter, useLocation } from 'react-router';
 import { vi } from 'vitest';
-import { DEFAULT_TIMEZONE } from '@lexipath/shared';
+import { DEFAULT_TIMEZONE } from '@linguo/shared';
 import { ToastProvider } from '@/components/ui/Toast';
 import { AuthContext, type AuthState } from '@/features/auth/AuthProvider';
 import { ProfileContext, type ProfileContextValue } from '@/features/profile/ProfileProvider';
@@ -3364,14 +3364,14 @@ describe('ProfileProvider', () => {
 
 - [ ] **Step 3: Run to verify failure**
 
-Run: `pnpm --filter @lexipath/web test -- profile.test`
+Run: `pnpm --filter @linguo/web test -- profile.test`
 Expected: FAIL — modules not found.
 
 - [ ] **Step 4: Implement**
 
 `apps/web/src/features/profile/service.ts`:
 ```ts
-import type { ProfileUpdateInput } from '@lexipath/shared';
+import type { ProfileUpdateInput } from '@linguo/shared';
 import type { AppSupabaseClient } from '@/lib/supabase';
 
 export interface Profile {
@@ -3397,7 +3397,7 @@ export async function updateProfile(client: AppSupabaseClient, userId: string, i
 
 `apps/web/src/features/preferences/service.ts`:
 ```ts
-import type { PreferencesUpdateInput, ThemePreference } from '@lexipath/shared';
+import type { PreferencesUpdateInput, ThemePreference } from '@linguo/shared';
 import type { AppSupabaseClient } from '@/lib/supabase';
 
 export interface Preferences {
@@ -3518,7 +3518,7 @@ export function usePreferencesSync(): void {
 
 - [ ] **Step 5: Run tests and typecheck**
 
-Run: `pnpm --filter @lexipath/web test && pnpm --filter @lexipath/web typecheck`
+Run: `pnpm --filter @linguo/web test && pnpm --filter @linguo/web typecheck`
 Expected: PASS.
 
 - [ ] **Step 6: Commit**
@@ -3660,7 +3660,7 @@ describe('AuthCallbackPage', () => {
 
 - [ ] **Step 2: Run to verify failure**
 
-Run: `pnpm --filter @lexipath/web test -- auth-pages`
+Run: `pnpm --filter @linguo/web test -- auth-pages`
 Expected: FAIL — modules not found.
 
 - [ ] **Step 3: Implement layout and shared pieces**
@@ -3681,7 +3681,7 @@ export function AuthLayout() {
         <header className="flex items-center py-3">
           <Link to="/" className="inline-flex min-h-11 items-center gap-2 text-lg font-bold tracking-[-0.02em]">
             <img src={asset('brand/logo-mark.svg')} alt="" width={32} height={32} className="size-8" />
-            LexiPath
+            Linguo
           </Link>
         </header>
         <main id="main" className="flex flex-1 flex-col justify-center py-6">
@@ -3781,7 +3781,7 @@ export function GoogleButton({ next, onError }: { next: string; onError: (messag
 ```tsx
 import { useState, type FormEvent } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router';
-import { fieldErrors, signInSchema } from '@lexipath/shared';
+import { fieldErrors, signInSchema } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { FormField } from '@/components/ui/FormField';
 import { Input } from '@/components/ui/Input';
@@ -3887,7 +3887,7 @@ export function SignInPage() {
 ```tsx
 import { useState, type FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router';
-import { fieldErrors, signUpSchema } from '@lexipath/shared';
+import { fieldErrors, signUpSchema } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { FormField } from '@/components/ui/FormField';
 import { Input } from '@/components/ui/Input';
@@ -4094,7 +4094,7 @@ export function CheckEmailPage() {
 ```tsx
 import { useState, type FormEvent } from 'react';
 import { Link } from 'react-router';
-import { fieldErrors, forgotPasswordSchema } from '@lexipath/shared';
+import { fieldErrors, forgotPasswordSchema } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { FormField } from '@/components/ui/FormField';
 import { Input } from '@/components/ui/Input';
@@ -4180,7 +4180,7 @@ export function ForgotPasswordPage() {
 ```tsx
 import { useState, type FormEvent } from 'react';
 import { useNavigate } from 'react-router';
-import { fieldErrors, resetPasswordSchema } from '@lexipath/shared';
+import { fieldErrors, resetPasswordSchema } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { FormField } from '@/components/ui/FormField';
 import { PasswordInput } from '@/components/ui/PasswordInput';
@@ -4303,7 +4303,7 @@ export function AuthCallbackPage() {
 
 - [ ] **Step 5: Run tests, typecheck, lint**
 
-Run: `pnpm --filter @lexipath/web test -- auth-pages && pnpm --filter @lexipath/web typecheck && pnpm lint`
+Run: `pnpm --filter @linguo/web test -- auth-pages && pnpm --filter @linguo/web typecheck && pnpm lint`
 Expected: PASS, exit 0.
 
 - [ ] **Step 6: Commit**
@@ -4407,7 +4407,7 @@ describe('ComingSoonPage', () => {
 
 - [ ] **Step 2: Run to verify failure**
 
-Run: `pnpm --filter @lexipath/web test -- shell`
+Run: `pnpm --filter @linguo/web test -- shell`
 Expected: FAIL — modules not found.
 
 - [ ] **Step 3: Implement navigation config and components**
@@ -4593,7 +4593,7 @@ export function Sidebar({ className }: { className?: string }) {
     <aside className={cn('sticky top-0 h-app flex-col gap-6 border-r border-border bg-surface-solid px-4 py-6', className)}>
       <Link to="/app" className="inline-flex min-h-11 items-center gap-2 px-2 text-lg font-bold tracking-[-0.02em]">
         <img src={asset('brand/logo-mark.svg')} alt="" width={32} height={32} className="size-8" />
-        LexiPath
+        Linguo
       </Link>
       <nav aria-label="Điều hướng chính (máy tính)">
         <ul className="space-y-1">
@@ -4635,7 +4635,7 @@ export function AppBar() {
       <div className="mx-auto flex h-14 max-w-3xl items-center justify-between gap-3 px-safe">
         <Link to="/app" className="inline-flex min-h-11 items-center gap-2 font-bold tracking-[-0.02em] lg:invisible">
           <img src={asset('brand/logo-mark.svg')} alt="" width={28} height={28} className="size-7" />
-          <span>LexiPath</span>
+          <span>Linguo</span>
         </Link>
         <div className="flex items-center gap-2">
           <LanguagePill />
@@ -4716,7 +4716,7 @@ export function HomePage() {
       <EmptyState
         icon={Route}
         title="Bắt đầu lộ trình đầu tiên"
-        description="Chọn ngôn ngữ, mục tiêu và thời gian học mỗi ngày. LexiPath sẽ lập kế hoạch và điều chỉnh theo kết quả thật của bạn."
+        description="Chọn ngôn ngữ, mục tiêu và thời gian học mỗi ngày. Linguo sẽ lập kế hoạch và điều chỉnh theo kết quả thật của bạn."
         action={
           <Button variant="accent" size="lg" disabled aria-describedby="onboarding-soon">
             Tạo lộ trình
@@ -4750,7 +4750,7 @@ export function ComingSoonPage({ title }: { title: string }) {
 
 - [ ] **Step 4: Run tests and typecheck**
 
-Run: `pnpm --filter @lexipath/web test -- shell && pnpm --filter @lexipath/web typecheck`
+Run: `pnpm --filter @linguo/web test -- shell && pnpm --filter @linguo/web typecheck`
 Expected: PASS.
 
 - [ ] **Step 5: Commit**
@@ -4849,7 +4849,7 @@ describe('SettingsPage', () => {
 
 - [ ] **Step 2: Run to verify failure**
 
-Run: `pnpm --filter @lexipath/web test -- settings`
+Run: `pnpm --filter @linguo/web test -- settings`
 Expected: FAIL — module not found.
 
 - [ ] **Step 3: Implement** — `apps/web/src/routes/app/SettingsPage.tsx`
@@ -4858,7 +4858,7 @@ Expected: FAIL — module not found.
 import { useEffect, useMemo, useState, type FormEvent } from 'react';
 import { LogOut, Monitor, Moon, Sun } from 'lucide-react';
 import { useNavigate } from 'react-router';
-import { DEFAULT_TIMEZONE, fieldErrors, profileUpdateSchema, type ThemePreference } from '@lexipath/shared';
+import { DEFAULT_TIMEZONE, fieldErrors, profileUpdateSchema, type ThemePreference } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { FormField } from '@/components/ui/FormField';
@@ -5081,7 +5081,7 @@ export function SettingsPage() {
 
 - [ ] **Step 4: Run tests and typecheck**
 
-Run: `pnpm --filter @lexipath/web test -- settings && pnpm --filter @lexipath/web typecheck`
+Run: `pnpm --filter @linguo/web test -- settings && pnpm --filter @linguo/web typecheck`
 Expected: PASS.
 
 - [ ] **Step 5: Commit**
@@ -5160,7 +5160,7 @@ describe('LandingPage', () => {
 
 - [ ] **Step 2: Run to verify failure**
 
-Run: `pnpm --filter @lexipath/web test -- landing`
+Run: `pnpm --filter @linguo/web test -- landing`
 Expected: FAIL — modules not found.
 
 - [ ] **Step 3: Hero readiness gate** — `apps/web/src/routes/landing/useHeroReady.ts`
@@ -5256,7 +5256,7 @@ export function LandingNav({ ready }: { ready: boolean }) {
       <header className="absolute inset-x-0 top-0 z-20 pt-safe">
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-safe">
           <motion.div variants={reveal('slideLeft', reduceMotion)} initial="hidden" animate={state}>
-            <Link to="/" className="inline-flex min-h-11 items-center gap-2" aria-label="LexiPath — trang chủ">
+            <Link to="/" className="inline-flex min-h-11 items-center gap-2" aria-label="Linguo — trang chủ">
               <img src={asset('brand/logo-mark.svg')} alt="" width={34} height={34} className="size-[34px]" />
               <span className="font-display text-[clamp(22px,6vw,30px)] uppercase leading-none tracking-wide">
                 Lexi<span className="text-primary">Path</span>
@@ -5581,7 +5581,7 @@ export function MethodSection() {
           ))}
         </ul>
         <p className="mt-8 max-w-2xl border-l-2 border-gold pl-4 text-[15px] leading-relaxed text-muted">
-          LexiPath không hứa “thành thạo siêu tốc”. Mọi dự báo tiến độ là ước lượng từ kết quả học thật của bạn và được cập nhật
+          Linguo không hứa “thành thạo siêu tốc”. Mọi dự báo tiến độ là ước lượng từ kết quả học thật của bạn và được cập nhật
           liên tục.
         </p>
       </div>
@@ -5613,7 +5613,7 @@ export function StatsSection() {
   const state = inView || reduceMotion ? 'shown' : 'hidden';
 
   return (
-    <section aria-label="LexiPath trong con số" className="overflow-x-clip bg-bg px-safe pb-[clamp(64px,12vh,120px)]">
+    <section aria-label="Linguo trong con số" className="overflow-x-clip bg-bg px-safe pb-[clamp(64px,12vh,120px)]">
       <div ref={ref} className="mx-auto flex max-w-3xl flex-col gap-8">
         {STATS.map((s, i) => (
           <motion.div
@@ -5652,7 +5652,7 @@ function PhonePreview() {
       <div className="flex h-24 items-end justify-between px-5 pb-3">
         <span className="inline-flex items-center gap-2 font-bold">
           <img src={asset('brand/logo-mark.svg')} alt="" className="size-7" />
-          LexiPath
+          Linguo
         </span>
         <span className="glass rounded-full px-4 py-2 text-sm font-semibold">EN ▾</span>
       </div>
@@ -5768,7 +5768,7 @@ export function FinalCtaSection() {
               Điều khoản
             </Link>
           </nav>
-          <p>© 2026 LexiPath</p>
+          <p>© 2026 Linguo</p>
         </div>
       </footer>
     </>
@@ -5807,7 +5807,7 @@ export function LandingPage() {
 
 - [ ] **Step 8: Run tests, typecheck, lint**
 
-Run: `pnpm --filter @lexipath/web test -- landing && pnpm --filter @lexipath/web typecheck && pnpm lint`
+Run: `pnpm --filter @linguo/web test -- landing && pnpm --filter @linguo/web typecheck && pnpm lint`
 Expected: PASS, exit 0.
 
 - [ ] **Step 9: Commit**
@@ -5882,7 +5882,7 @@ describe('routes', () => {
 
 - [ ] **Step 2: Run to verify failure**
 
-Run: `pnpm --filter @lexipath/web test -- router`
+Run: `pnpm --filter @linguo/web test -- router`
 Expected: FAIL — module not found.
 
 - [ ] **Step 3: Implement**
@@ -5952,7 +5952,7 @@ const CONTENT = {
   privacy: {
     title: 'Quyền riêng tư',
     body: [
-      'LexiPath lưu email, tên hiển thị, múi giờ và tuỳ chọn giao diện để vận hành tài khoản của bạn.',
+      'Linguo lưu email, tên hiển thị, múi giờ và tuỳ chọn giao diện để vận hành tài khoản của bạn.',
       'Dữ liệu học tập chỉ bạn xem được; chúng tôi không công khai bảng xếp hạng và không bán dữ liệu.',
       'Bạn có thể yêu cầu xuất hoặc xoá dữ liệu. Chi tiết về lưu trữ, thời hạn và AI sẽ được bổ sung trước khi ra mắt chính thức.',
     ],
@@ -5960,7 +5960,7 @@ const CONTENT = {
   terms: {
     title: 'Điều khoản sử dụng',
     body: [
-      'LexiPath là công cụ hỗ trợ tự học; kết quả và dự báo tiến độ là ước lượng, không phải cam kết đạt chứng chỉ.',
+      'Linguo là công cụ hỗ trợ tự học; kết quả và dự báo tiến độ là ước lượng, không phải cam kết đạt chứng chỉ.',
       'Không dùng dịch vụ để phát tán nội dung vi phạm bản quyền hoặc gây hại.',
       'Điều khoản đầy đủ sẽ được công bố trước khi ra mắt chính thức.',
     ],
@@ -6446,13 +6446,13 @@ for (const colorScheme of ['light', 'dark'] as const) {
 
 - [ ] **Step 5: Install browsers and run**
 
-Run: `pnpm --filter @lexipath/web exec playwright install chromium webkit`
+Run: `pnpm --filter @linguo/web exec playwright install chromium webkit`
 Run: `pnpm e2e`
 Expected: all tests PASS (skipped ones are reported as skipped). If a layout test fails, fix the component (common causes: an element wider than the viewport — add `min-w-0`, `overflow-x-clip` on the section, or remove a fixed width) rather than loosening the test. If an axe test fails on colour contrast, adjust the token in `tokens.css`, not the test.
 
 - [ ] **Step 6: Review screenshots**
 
-Run: `pnpm --filter @lexipath/web exec playwright show-report`
+Run: `pnpm --filter @linguo/web exec playwright show-report`
 Expected: open the "screenshots" tests and check each attachment: no clipped Vietnamese diacritics in headings, no content under the bottom nav, logo without checkerboard.
 
 - [ ] **Step 7: Commit**
@@ -6656,7 +6656,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - name: Install Playwright browsers
-        run: pnpm --filter @lexipath/web exec playwright install --with-deps chromium webkit
+        run: pnpm --filter @linguo/web exec playwright install --with-deps chromium webkit
       - run: pnpm e2e
       - name: Upload Playwright report (screenshots for review)
         if: ${{ !cancelled() }}
@@ -6942,7 +6942,7 @@ VITE_BASE_PATH=
 - [ ] **Step 2: `docs/SETUP.md`** (Vietnamese; this is the "what you must provide" guide)
 
 ```markdown
-# Cài đặt LexiPath trên máy
+# Cài đặt Linguo trên máy
 
 ## Cần có
 - Node.js 22 (`node -v`), pnpm 10 (`corepack enable && corepack prepare pnpm@10.34.6 --activate`)
@@ -6952,7 +6952,7 @@ VITE_BASE_PATH=
     pnpm install
 
 ## 2. Tạo project Supabase (một lần)
-1. supabase.com → **New project**. Tên `lexipath`, region **Southeast Asia (Singapore)**. Lưu lại **Database password**.
+1. supabase.com → **New project**. Tên `linguo`, region **Southeast Asia (Singapore)**. Lưu lại **Database password**.
 2. **Project Settings → API Keys**: copy **Project URL** và **Publishable key** (`sb_publishable_…`).
 3. **Authentication → Sign In / Providers → Email**: bật **Confirm email**.
 4. **Authentication → URL Configuration**:
@@ -7075,12 +7075,12 @@ Chạy trước mỗi bản phát hành có thay đổi giao diện. Ghi kết q
 - [ ] **Step 5: `README.md`**
 
 ```markdown
-# LexiPath
+# Linguo
 
 Nền tảng học tiếng Anh và tiếng Hàn cá nhân hoá cho người Việt. Web app mobile-first trên GitHub Pages, backend Supabase (Auth + Postgres + RLS), CI/CD bằng GitHub Actions.
 
-- Đặc tả sản phẩm: [docs/superpowers/specs/Dac_ta_LexiPath_English_Korean.md](docs/superpowers/specs/Dac_ta_LexiPath_English_Korean.md)
-- Thiết kế spec 0 (nền móng): [docs/superpowers/specs/2026-10-13-lexipath-foundation-design.md](docs/superpowers/specs/2026-10-13-lexipath-foundation-design.md)
+- Đặc tả sản phẩm: [docs/superpowers/specs/Dac_ta_Linguo_English_Korean.md](docs/superpowers/specs/Dac_ta_Linguo_English_Korean.md)
+- Thiết kế spec 0 (nền móng): [docs/superpowers/specs/2026-10-13-linguo-foundation-design.md](docs/superpowers/specs/2026-10-13-linguo-foundation-design.md)
 - Cài đặt local và các key cần cung cấp: [docs/SETUP.md](docs/SETUP.md)
 - Deploy: [docs/DEPLOY.md](docs/DEPLOY.md) · Kiểm thử thiết bị thật: [docs/MOBILE-QA.md](docs/MOBILE-QA.md)
 

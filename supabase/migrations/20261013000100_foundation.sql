@@ -1,4 +1,4 @@
--- LexiPath foundation: profiles + user_preferences, created by trigger on sign-up, protected by RLS.
+-- Linguo foundation: profiles + user_preferences, created by trigger on sign-up, protected by RLS.
 
 create table public.profiles (
   id uuid primary key references auth.users (id) on delete cascade,

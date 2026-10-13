@@ -1,4 +1,4 @@
-# Cài đặt LexiPath trên máy
+# Cài đặt Linguo trên máy
 
 ## Cần có
 - Node.js 22 (`node -v`), pnpm 10 (`corepack enable && corepack prepare pnpm@10.34.6 --activate`)
@@ -10,7 +10,7 @@ pnpm install
 ```
 
 ## 2. Tạo project Supabase (một lần)
-1. supabase.com → **New project**. Tên `lexipath`, region **Southeast Asia (Singapore)**. Lưu lại **Database password**.
+1. supabase.com → **New project**. Tên `linguo`, region **Southeast Asia (Singapore)**. Lưu lại **Database password**.
 2. **Project Settings → API Keys**: copy **Project URL** và **Publishable key** (`sb_publishable_…`).
 3. **Authentication → Sign In / Providers → Email**: bật **Confirm email**.
 4. **Authentication → URL Configuration**:

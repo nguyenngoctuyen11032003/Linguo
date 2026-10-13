@@ -2,9 +2,9 @@
 # https://supabase.com/docs/guides/local-development/cli/config
 # A string used to distinguish different Supabase projects on the same host. Defaults to the
 # working directory name when running `supabase init`.
-project_id = "lexipath"
+project_id = "linguo"
 # Local ports use 553xx: this Windows machine reserves TCP 54237-54336 (see netsh excludedportrange),
-# and it lets LexiPath run alongside other local Supabase stacks that use the default 543xx.
+# and it lets Linguo run alongside other local Supabase stacks that use the default 543xx.
 
 [api]
 enabled = true

@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { THEMES, type ThemePreference } from '@lexipath/shared';
+import { THEMES, type ThemePreference } from '@linguo/shared';
 import { readString, writeString } from '@/lib/storage';
 import { useMediaQuery } from '@/lib/useMediaQuery';
 
