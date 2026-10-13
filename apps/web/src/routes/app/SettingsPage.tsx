@@ -18,6 +18,7 @@ import { cn } from '@/lib/cn';
 import { requireSupabase } from '@/lib/supabase';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 import { useTheme } from '@/providers/ThemeProvider';
+import { LearningPathsSection } from './settings/LearningPathsSection';
 
 const THEME_OPTIONS: Array<{ value: ThemePreference; label: string; icon: typeof Sun }> = [
   { value: 'light', label: 'Sáng', icon: Sun },
@@ -182,6 +183,8 @@ export function SettingsPage() {
           )}
         </SolidCard>
       </section>
+
+      <LearningPathsSection />
 
       <section aria-labelledby="display-heading">
         <SolidCard className="space-y-5">
