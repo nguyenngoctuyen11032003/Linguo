@@ -144,7 +144,7 @@ as $$
 $$;
 
 -- ---------------------------------------------------------------------------
--- Reported level: largest L in 0..6 with P(θ >= L) >= 0.7; none → 0.
+-- Reported level: largest L in 0..6 with P(θ >= L) >= 0.7 (1e-9 tolerance, as the TS engine); none → 0.
 -- ---------------------------------------------------------------------------
 create or replace function public.diag_conservative_level(p_weights double precision[])
 returns integer
@@ -167,7 +167,7 @@ begin
         v_tail := v_tail + p_weights[i];
       end if;
     end loop;
-    if v_tail >= 0.7 then
+    if v_tail >= 0.7 - 1e-9 then
       return v_level;
     end if;
   end loop;
@@ -177,7 +177,7 @@ $$;
 
 -- ---------------------------------------------------------------------------
 -- Level range: floor(10th percentile) .. floor(90th percentile), clamped to 0..6.
--- Percentile q = first grid θ whose cumulative weight reaches q.
+-- Percentile q = first grid θ whose cumulative weight reaches q - 1e-9 (same tolerance as the TS engine).
 -- ---------------------------------------------------------------------------
 create or replace function public.diag_level_range(p_weights double precision[])
 returns jsonb
@@ -198,10 +198,10 @@ begin
   end if;
   for i in 1..v_n loop
     v_cum := v_cum + p_weights[i];
-    if v_low is null and v_cum >= 0.1 then
+    if v_low is null and v_cum >= 0.1 - 1e-9 then
       v_low := v_grid[i];
     end if;
-    if v_high is null and v_cum >= 0.9 then
+    if v_high is null and v_cum >= 0.9 - 1e-9 then
       v_high := v_grid[i];
     end if;
   end loop;

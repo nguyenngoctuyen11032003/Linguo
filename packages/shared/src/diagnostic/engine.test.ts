@@ -195,6 +195,19 @@ describe('pickItem', () => {
   });
 });
 
+// Same weights as the boundary cases of supabase/tests/diagnostic_rpc.test.sql (SQL uses the same 1e-9 tolerance).
+describe('mass tolerance at boundaries', () => {
+  const weightsAt = (entries: Record<number, number>) => Array.from({ length: 29 }, (_, i) => entries[i] ?? 0);
+
+  it('reaches the 0.7 level mass within 1e-9', () => {
+    expect(conservativeLevel(weightsAt({ 0: 0.3000000005, 6: 0.6999999995 }))).toBe(1);
+  });
+
+  it('reaches the 10th/90th percentiles within 1e-9', () => {
+    expect(levelRange(weightsAt({ 10: 0.0999999995, 14: 0.8, 22: 0.1000000005 }))).toEqual({ low: 2, high: 3 });
+  });
+});
+
 // ---------------------------------------------------------------------------
 // Shared fixtures (mirrored by SQL via scripts/sync-diagnostic-fixtures.mjs)
 // ---------------------------------------------------------------------------
