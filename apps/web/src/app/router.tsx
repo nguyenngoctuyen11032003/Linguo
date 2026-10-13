@@ -6,6 +6,7 @@ import { RedirectIfAuthed, RequireAuth } from '@/features/auth/guards';
 import { AppRoute } from '@/routes/app/AppRoute';
 import { ComingSoonPage } from '@/routes/app/ComingSoonPage';
 import { HomePage } from '@/routes/app/HomePage';
+import { OnboardingPage } from '@/routes/app/onboarding/OnboardingPage';
 import { SettingsPage } from '@/routes/app/SettingsPage';
 import { AuthCallbackPage } from '@/routes/auth/AuthCallbackPage';
 import { CheckEmailPage } from '@/routes/auth/CheckEmailPage';
@@ -58,6 +59,7 @@ export const routes: RouteObject[] = [
         path: 'app',
         element: <AppRoute />,
         children: [
+          { path: 'bat-dau', element: <OnboardingPage /> },
           {
             element: <AppLayout />,
             children: [
