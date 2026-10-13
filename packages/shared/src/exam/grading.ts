@@ -11,13 +11,13 @@ import type { ExamQuestionKind } from './contract';
 //   5. lower-case with the Unicode default mapping (String#toLowerCase, never locale-sensitive)
 
 /** Whitespace for trim/collapse: ASCII space, \t \n \v \f \r, NO-BREAK SPACE, IDEOGRAPHIC SPACE. */
-export const EXAM_WHITESPACE = ' \t\n\u000b\f\r 　';
+export const EXAM_WHITESPACE = ' \t\n\u000b\f\r\u00a0\u3000';
 /** Stripped from the end of a short_text answer (any run of them). */
 export const EXAM_TRAILING_PUNCTUATION = '.?!,;:。、…';
 
-const LEADING_WS = /^[ \t\n\v\f\r 　]+/u;
-const TRAILING_WS = /[ \t\n\v\f\r 　]+$/u;
-const WS_RUN = /[ \t\n\v\f\r 　]+/gu;
+const LEADING_WS = /^[ \t\n\v\f\r\u00a0\u3000]+/u;
+const TRAILING_WS = /[ \t\n\v\f\r\u00a0\u3000]+$/u;
+const WS_RUN = /[ \t\n\v\f\r\u00a0\u3000]+/gu;
 const TRAILING_PUNCT = /[.?!,;:。、…]+$/u;
 
 export function normalizeExamText(s: string): string {
