@@ -4,7 +4,7 @@ Không có server riêng. CI/CD chạy trên GitHub; Auth/Database là Supabase 
 
 ```text
 Pull Request ──► CI (.github/workflows/ci.yml)
-                  ├─ web:      check-public-env → lint → content:check → content:build --check → typecheck → unit tests → build
+                  ├─ web:      check-public-env → check-migrations-immutable → lint → content:check → content:build --check → typecheck → unit tests → build
                   ├─ e2e:      Playwright trên iPhone SE/15 Pro/15 Pro Max/landscape, Pixel 7, Galaxy S9+
                   └─ database: fixtures SQL ↔ TS (ước lượng, chấm điểm) → Supabase local (Docker) → áp mọi migration + seed.sql → db lint → pgTAP (RLS, chấm điểm, bài học) → kiểm types
 
@@ -17,7 +17,16 @@ push main ─────► Deploy (.github/workflows/deploy.yml)
 
 ## Quy tắc an toàn database
 - CI chỉ chạy `supabase db push`. Không bao giờ chạy `db reset`, `config push`, `db push --include-seed` với project hosted.
-- Mỗi thay đổi schema = một file migration mới (`pnpm exec supabase migration new <ten>`). Không sửa migration đã deploy.
+- Mỗi thay đổi schema = một file migration mới (`pnpm exec supabase migration new <ten>`).
+- **Không bao giờ sửa migration đã deploy; luôn tạo migration mới.** Supabase chỉ áp mỗi file migration **một lần** (theo tên trong `supabase_migrations.schema_migrations`); sửa file đã áp thì project hosted giữ bản cũ, còn `db reset`/CI dùng bản mới, hai bên lệch nhau mà không ai báo. Đã xảy ra một lần: `20261014000100_content.sql` bị sửa sau khi deploy (thêm `public.import_content_bundle`), phải vá bằng `20261014000600_spec2_sync.sql`.
+  - `supabase/migrations-applied.json` ghi sha256 của mọi migration đã deploy. `node scripts/check-migrations-immutable.mjs` (chạy trong CI job web và `pnpm test`) fail khi một file trong danh sách bị sửa, đổi tên hoặc xoá. File migration mới không bị chặn.
+  - **Bước tay sau mỗi lần Deploy có `Supabase db push` thành công:** ghi các migration vừa áp vào danh sách rồi commit thẳng lên `main`:
+    ```bash
+    node scripts/check-migrations-immutable.mjs --record 20261014000600_spec2_sync.sql   # liệt kê mọi file vừa áp
+    git add supabase/migrations-applied.json && git commit -m "chore(db): record deployed migrations"
+    ```
+    Danh sách file vừa áp có trong log bước `db push --dry-run` của job `migrate`. `--record` từ chối ghi đè checksum khác của một file đã có trong danh sách.
+  - Lỡ sửa migration đã deploy: hoàn tác file về bản đã deploy, đưa thay đổi vào một migration mới (`create or replace`, `drop … if exists` rồi tạo lại, `revoke`/`grant` tường minh) sao cho cả DB hosted lẫn DB mới tinh đều ra cùng một schema.
 - Thiết lập Auth trong `supabase/config.toml` chỉ áp dụng local; Auth hosted cấu hình trên Dashboard.
 
 ## Thiết lập một lần
@@ -35,6 +44,18 @@ push main ─────► Deploy (.github/workflows/deploy.yml)
    - `VITE_HERO_VIDEO_URL` (tuỳ chọn)
    - `VITE_BASE_PATH` (tuỳ chọn) — mặc định `/<tên-repo>/`. Đặt `/` khi dùng tên miền riêng hoặc repo dạng `<user>.github.io`.
 5. Supabase **Authentication → URL Configuration** như `docs/SETUP.md` bước 2: Site URL `https://nguyenngoctuyen11032003.github.io/Linguo`; Redirect URLs `https://nguyenngoctuyen11032003.github.io/Linguo/**`, `http://localhost:5173/**`, `http://localhost:4173/**`. Cũng đặt **Minimum password length = 8** ở **Sign In / Providers → Email** (xem `docs/SETUP.md`).
+
+## Gia sư AI (Gemini)
+Edge Function `ai-tutor` (`verify_jwt = true`) đọc key và model từ **secret của Supabase**, không từ `VITE_*` hay GitHub Variables.
+
+1. Lấy key và chọn model Flash miễn phí như `docs/SETUP.md` bước 7.
+2. GitHub → **Settings → Environments → `production` → Secrets** (không đặt ở repo secrets/variables):
+   - `GEMINI_API_KEY` — key từ Google AI Studio (bắt buộc)
+   - `GEMINI_MODEL` — model id, ví dụ một model `gemini-…-flash` thuộc free tier (bắt buộc)
+   - Tuỳ chọn: `GEMINI_DAILY_USER_LIMIT` (mặc định `20`), `GEMINI_MAX_OUTPUT_TOKENS` (`1200`), `GEMINI_TIMEOUT_MS` (`20000`)
+3. Job `functions` của Deploy chạy bước **Set Edge Function secrets (Gemini)** trước `functions deploy`: chỉ gửi những secret **có giá trị** qua `supabase secrets set --env-file` (giá trị không bao giờ được in ra; secret GitHub bỏ trống không xoá giá trị đang có trên Supabase). `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` do Supabase tự cấp cho Edge Functions.
+4. Job `functions` chỉ chạy khi `supabase/functions` đổi. Đổi key/model mà không đổi code: Actions → Deploy → **Run workflow** với `functions = true` (rồi Approve `production`). Hoặc đặt tay từ máy: `pnpm exec supabase secrets set --project-ref <ref> GEMINI_MODEL=<model-id>` (key nên đặt qua GitHub để không lưu vào lịch sử shell).
+5. Thiếu `GEMINI_API_KEY`/`GEMINI_MODEL` thì function trả 503 `ai_unavailable` (không trừ lượt) và web hiện phương án dự phòng; phần còn lại của app không bị ảnh hưởng.
 
 ## Quy trình hằng ngày
 1. Tạo nhánh → code → mở PR → CI phải xanh (xem artifact `playwright-report` để duyệt ảnh chụp mobile).
@@ -65,6 +86,8 @@ Nội dung bài học nằm trong `content/**/*.yaml`. Deploy **không** tự nh
 | Publish content báo `--apply needs SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY` | Thiếu secret `SUPABASE_SERVICE_ROLE_KEY` trong environment `production` hoặc variable `VITE_SUPABASE_URL` |
 | Publish content báo `HTTP 404 … import_content_bundle` | Migration nội dung chưa được Deploy áp lên project hosted |
 | Migration chưa được áp | Actions → Deploy → **Run workflow** với `migrate = true` |
+| Gia sư AI luôn "Tạm thời không khả dụng" | Thiếu secret `GEMINI_API_KEY`/`GEMINI_MODEL` trong environment `production`, hoặc chưa chạy lại Deploy với `functions = true` sau khi thêm; kiểm tra model id còn trong free tier |
+| Gia sư AI đang chạy rồi bỗng không khả dụng với mọi người | Model hết quota ngày của free tier (breaker mở, thử lại sau); chờ quota reset hoặc đổi `GEMINI_MODEL` rồi chạy lại Deploy với `functions = true` |
 | Pages 404 ở trang chủ | Kiểm tra bước 2 (Source = GitHub Actions) |
 | Link email mở sai địa chỉ | Kiểm tra Site URL / Redirect URLs trên Supabase |
 | "Hãy mở liên kết trên cùng trình duyệt" | Liên kết PKCE phải mở trên trình duyệt đã gửi yêu cầu |

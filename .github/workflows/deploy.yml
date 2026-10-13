@@ -130,6 +130,37 @@ jobs:
       - uses: supabase/setup-cli@v3
         with:
           version: 2.120.0
+      # Spec 5: push the Gemini secrets to the project from environment `production` secrets.
+      # Only non-empty values are set (an unset GitHub secret never wipes the Supabase one), values
+      # go through a 0600 env file (never argv / echo), and the file is removed right after.
+      - name: Set Edge Function secrets (Gemini)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
+          GEMINI_DAILY_USER_LIMIT: ${{ secrets.GEMINI_DAILY_USER_LIMIT }}
+          GEMINI_MAX_OUTPUT_TOKENS: ${{ secrets.GEMINI_MAX_OUTPUT_TOKENS }}
+          GEMINI_TIMEOUT_MS: ${{ secrets.GEMINI_TIMEOUT_MS }}
+        run: |
+          set +x
+          if ! ls supabase/functions/*/index.ts >/dev/null 2>&1; then
+            echo "No Edge Functions yet."; exit 0
+          fi
+          umask 077
+          secrets_file="$(mktemp)"
+          trap 'rm -f "$secrets_file"' EXIT
+          names=()
+          for v in GEMINI_API_KEY GEMINI_MODEL GEMINI_DAILY_USER_LIMIT GEMINI_MAX_OUTPUT_TOKENS GEMINI_TIMEOUT_MS; do
+            if [ -n "${!v}" ]; then
+              printf '%s=%s\n' "$v" "${!v}" >> "$secrets_file"
+              names+=("$v")
+            fi
+          done
+          if [ ${#names[@]} -eq 0 ]; then
+            echo "::warning::No GEMINI_* secrets in environment production; the AI tutor answers 503 until they are set (docs/DEPLOY.md)."
+            exit 0
+          fi
+          supabase secrets set --env-file "$secrets_file" --project-ref "$SUPABASE_PROJECT_ID" >/dev/null
+          echo "Updated Edge Function secrets: ${names[*]}"
       - name: Deploy all Edge Functions
         run: |
           if ls supabase/functions/*/index.ts >/dev/null 2>&1; then

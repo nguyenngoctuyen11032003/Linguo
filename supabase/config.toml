@@ -388,6 +388,12 @@ deno_version = 2
 # [edge_runtime.secrets]
 # secret_key = "env(SECRET_VALUE)"
 
+# Spec 5: the AI tutor gateway only accepts signed-in users (the handler re-checks the token too).
+# Secrets (GEMINI_API_KEY, GEMINI_MODEL, …) come from supabase/functions/.env locally and
+# `supabase secrets set` in production; see docs/SETUP.md and docs/DEPLOY.md.
+[functions.ai-tutor]
+verify_jwt = true
+
 [analytics]
 enabled = true
 port = 55327

@@ -13,6 +13,7 @@ import { LessonPage } from '@/routes/app/lesson/LessonPage';
 import { OnboardingPage } from '@/routes/app/onboarding/OnboardingPage';
 import { ReviewPage } from '@/routes/app/review/ReviewPage';
 import { SettingsPage } from '@/routes/app/SettingsPage';
+import { TutorPage } from '@/routes/app/tutor/TutorPage';
 import { AuthCallbackPage } from '@/routes/auth/AuthCallbackPage';
 import { CheckEmailPage } from '@/routes/auth/CheckEmailPage';
 import { ForgotPasswordPage } from '@/routes/auth/ForgotPasswordPage';
@@ -74,7 +75,7 @@ export const routes: RouteObject[] = [
               { index: true, element: <HomePage /> },
               { path: 'hoc-tap', element: <LearnPage /> },
               { path: 'on-tap', element: <ReviewPage /> },
-              { path: 'gia-su', element: <ComingSoonPage title="Gia sư AI" /> },
+              { path: 'gia-su', element: <TutorPage /> },
               { path: 'luyen-thi', element: <ComingSoonPage title="Luyện thi" /> },
               { path: 'tien-do', element: <ComingSoonPage title="Tiến độ" /> },
               { path: 'cai-dat', element: <SettingsPage /> },
