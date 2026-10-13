@@ -75,9 +75,9 @@ describe('profile and preferences', () => {
 });
 
 describe('constants', () => {
-  it('has six skills and Korean marked as not yet available', () => {
+  it('has six skills and both languages available', () => {
     expect(SKILLS).toHaveLength(6);
     expect(LANGUAGES.en.available).toBe(true);
-    expect(LANGUAGES.ko.available).toBe(false);
+    expect(LANGUAGES.ko.available).toBe(true);
   });
 });

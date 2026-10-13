@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { MotionProvider } from '@/providers/MotionProvider';
 import { ArrowCTA } from './ArrowCTA';
 import { CountUp } from './CountUp';
@@ -76,50 +76,50 @@ describe('ArrowCTA', () => {
 });
 
 describe('LanguagePill', () => {
-  it('uses a disclosure pattern, marks the current language and Korean as coming soon', async () => {
-    render(withMotion(<LanguagePill />));
-    const trigger = screen.getByRole('button', { name: /Ngôn ngữ đang học: Tiếng Anh/ });
-    expect(trigger).toHaveTextContent('EN');
-    expect(trigger.getAttribute('aria-label')).toMatch(/^EN – Ngôn ngữ đang học: Tiếng Anh\. Đổi ngôn ngữ$/);
-    expect(trigger).toHaveAttribute('aria-expanded', 'false');
-    expect(trigger).not.toHaveAttribute('aria-haspopup');
-    await userEvent.click(trigger);
-    expect(trigger).toHaveAttribute('aria-expanded', 'true');
-    expect(trigger).toHaveAttribute('aria-controls', screen.getByRole('list').id);
-    expect(screen.queryByRole('menu')).not.toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /Tiếng Anh \(/ })).toHaveAttribute('aria-current', 'true');
-    const ko = screen.getByRole('button', { name: /Tiếng Hàn/ });
-    expect(ko).toHaveAttribute('aria-disabled', 'true');
-    expect(ko).not.toBeDisabled();
-    expect(ko).toHaveTextContent('Sắp ra mắt');
-    await userEvent.click(ko);
-    expect(trigger).toHaveAttribute('aria-expanded', 'true');
-  });
+  const paths = [
+    { id: 'path-en', language: 'en' as const, status: 'active' as const },
+    { id: 'path-ko', language: 'ko' as const, status: 'paused' as const },
+  ];
 
-  it('closes on Escape and returns focus to the trigger', async () => {
-    render(withMotion(<LanguagePill />));
-    const trigger = screen.getByRole('button', { name: /Ngôn ngữ đang học/ });
+  it('shows the current language as text, lists paths and returns focus on Escape', async () => {
+    render(withMotion(<LanguagePill paths={paths} currentId="path-en" onSelect={vi.fn()} onAdd={vi.fn()} />));
+    const trigger = screen.getByRole('button', { name: /^EN – Ngôn ngữ đang học: Tiếng Anh/ });
+    expect(trigger).toHaveTextContent('EN');
     await userEvent.click(trigger);
-    await userEvent.tab();
-    expect(trigger).not.toHaveFocus();
+    expect(trigger).toHaveAttribute('aria-expanded', 'true');
+    expect(screen.getByRole('button', { name: /Tiếng Anh/, current: true })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Tiếng Hàn.*tạm dừng/ })).toBeInTheDocument();
     await userEvent.keyboard('{Escape}');
     expect(trigger).toHaveAttribute('aria-expanded', 'false');
     expect(trigger).toHaveFocus();
   });
 
-  it('closes on an outside click', async () => {
+  it('switches path and offers to add a missing language', async () => {
+    const onSelect = vi.fn();
+    const onAdd = vi.fn();
+    const { rerender } = render(withMotion(<LanguagePill paths={paths} currentId="path-en" onSelect={onSelect} onAdd={onAdd} />));
+    await userEvent.click(screen.getByRole('button', { name: /Ngôn ngữ đang học/ }));
+    await userEvent.click(screen.getByRole('button', { name: /Tiếng Hàn/ }));
+    expect(onSelect).toHaveBeenCalledWith('path-ko');
+
+    rerender(withMotion(<LanguagePill paths={[paths[0]!]} currentId="path-en" onSelect={onSelect} onAdd={onAdd} />));
+    await userEvent.click(screen.getByRole('button', { name: /Ngôn ngữ đang học/ }));
+    await userEvent.click(screen.getByRole('button', { name: '+ Thêm Tiếng Hàn' }));
+    expect(onAdd).toHaveBeenCalledWith('ko');
+  });
+
+  it('closes on outside click', async () => {
     render(
       withMotion(
-        <>
-          <LanguagePill />
-          <p>Bên ngoài</p>
-        </>,
+        <div>
+          <LanguagePill paths={paths} currentId="path-en" onSelect={vi.fn()} onAdd={vi.fn()} />
+          <button>outside</button>
+        </div>,
       ),
     );
     const trigger = screen.getByRole('button', { name: /Ngôn ngữ đang học/ });
     await userEvent.click(trigger);
-    expect(trigger).toHaveAttribute('aria-expanded', 'true');
-    await userEvent.click(screen.getByText('Bên ngoài'));
+    await userEvent.click(screen.getByText('outside'));
     expect(trigger).toHaveAttribute('aria-expanded', 'false');
   });
 
@@ -127,7 +127,7 @@ describe('LanguagePill', () => {
     render(
       withMotion(
         <>
-          <LanguagePill />
+          <LanguagePill paths={paths} currentId="path-en" onSelect={vi.fn()} onAdd={vi.fn()} />
           <button>Sau</button>
         </>,
       ),
@@ -135,7 +135,7 @@ describe('LanguagePill', () => {
     const trigger = screen.getByRole('button', { name: /Ngôn ngữ đang học/ });
     await userEvent.click(trigger);
     await userEvent.tab(); // English
-    await userEvent.tab(); // Korean (aria-disabled stays focusable)
+    await userEvent.tab(); // Korean
     await userEvent.tab(); // out of the widget
     expect(screen.getByRole('button', { name: 'Sau' })).toHaveFocus();
     expect(trigger).toHaveAttribute('aria-expanded', 'false');

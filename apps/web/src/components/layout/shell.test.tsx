@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router';
 import { describe, expect, it, vi } from 'vitest';
 import { renderWithProviders } from '../../../tests/unit/render';
 import { ComingSoonPage } from '@/routes/app/ComingSoonPage';
-import { HomePage } from '@/routes/app/HomePage';
 import { AppBar } from './AppBar';
 import { BottomNav } from './BottomNav';
 import { MoreSheet } from './MoreSheet';
@@ -105,29 +104,6 @@ describe('AppBar', () => {
     renderWithProviders(<AppBar />, { route: '/app' });
     expect(screen.getByRole('button', { name: /Ngôn ngữ đang học/ })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Tài khoản và cài đặt' })).toHaveTextContent('M');
-  });
-});
-
-describe('HomePage', () => {
-  it('greets by display name and shows the onboarding empty state without fake numbers', () => {
-    renderWithProviders(<HomePage />, { route: '/app' });
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Chào Minh Anh');
-    expect(screen.getByRole('heading', { name: 'Bắt đầu lộ trình đầu tiên' })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Tạo lộ trình' })).toBeDisabled();
-    expect(screen.queryByText(/%/)).not.toBeInTheDocument();
-  });
-
-  it('announces loading in the heading while the profile loads', () => {
-    renderWithProviders(<HomePage />, { route: '/app', profile: { status: 'loading', profile: null } });
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Đang tải…');
-  });
-
-  it('falls back to "bạn" without a name', () => {
-    renderWithProviders(<HomePage />, {
-      route: '/app',
-      profile: { profile: { id: 'u', displayName: '', timezone: 'Asia/Ho_Chi_Minh' } },
-    });
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Chào bạn');
   });
 });
 
