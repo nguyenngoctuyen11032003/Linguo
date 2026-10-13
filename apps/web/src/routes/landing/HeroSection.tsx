@@ -9,14 +9,15 @@ import { useSaveData } from '@/lib/useSaveData';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 import { HeroBackdrop } from './HeroBackdrop';
 import { LandingNav } from './LandingNav';
-import { useHeroReady } from './useHeroReady';
+import { useHeroReady, useVideoVisible } from './useHeroReady';
 
 export function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const { reduceMotion } = useMotionPrefs();
   const saveData = useSaveData();
   const videoUrl = !reduceMotion && !saveData ? env.heroVideoUrl : null;
-  const ready = useHeroReady(videoUrl ? videoRef : null);
+  const ready = useHeroReady();
+  const videoVisible = useVideoVisible(videoRef, Boolean(videoUrl));
   const state = ready ? 'shown' : 'hidden';
 
   return (
@@ -32,7 +33,7 @@ export function HeroSection() {
           playsInline
           preload="metadata"
           aria-hidden="true"
-          className={cn('absolute inset-0 -z-10 h-full w-full object-cover transition-opacity duration-1000', ready ? 'opacity-55' : 'opacity-0')}
+          className={cn('absolute inset-0 -z-10 h-full w-full object-cover transition-opacity duration-1000', videoVisible ? 'opacity-55' : 'opacity-0')}
         />
       )}
       <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-2/3 bg-gradient-to-b from-transparent to-bg" />
