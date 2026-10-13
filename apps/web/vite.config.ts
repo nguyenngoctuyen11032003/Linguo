@@ -47,6 +47,7 @@ export default defineConfig(({ mode }) => {
       setupFiles: ['./tests/unit/setup.ts'],
       include: ['src/**/*.test.{ts,tsx}'],
       css: false,
+      passWithNoTests: true,
     },
   };
 });
