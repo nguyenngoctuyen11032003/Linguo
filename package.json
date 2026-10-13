@@ -12,7 +12,7 @@
     "preview": "pnpm --filter @lexipath/web preview",
     "lint": "eslint .",
     "typecheck": "pnpm -r typecheck",
-    "test": "pnpm -r test",
+    "test": "pnpm -r test && node --test scripts/check-public-env.test.mjs",
     "e2e": "pnpm --filter @lexipath/web e2e",
     "icons": "node scripts/make-icons.mjs",
     "check-env": "node scripts/check-public-env.mjs",
