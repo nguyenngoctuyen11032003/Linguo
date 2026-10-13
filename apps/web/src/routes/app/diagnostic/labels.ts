@@ -1,0 +1,61 @@
+import { LEVEL_INFO, type DiagnosticConfidence, type DiagnosticReport, type ReportSkill } from '@linguo/shared';
+
+export type SkipReason = 'no_time' | 'too_hard' | 'not_my_goal' | 'other';
+type ReportSkillRow = DiagnosticReport['skills'][number];
+
+export const SKILL_LABELS: Record<ReportSkill, string> = {
+  vocabulary: 'Từ vựng',
+  grammar: 'Ngữ pháp',
+  reading: 'Đọc hiểu',
+  listening: 'Nghe',
+  writing: 'Viết',
+  speaking: 'Nói',
+};
+
+export const CONFIDENCE_LABELS: Record<DiagnosticConfidence, string> = {
+  high: 'Cao',
+  medium: 'Trung bình',
+  low: 'Thấp',
+};
+
+export const SKIP_REASON_LABELS: Record<SkipReason, string> = {
+  no_time: 'Tôi không có đủ thời gian',
+  too_hard: 'Phần này quá khó với tôi',
+  not_my_goal: 'Kỹ năng này không phải mục tiêu của tôi',
+  other: 'Lý do khác',
+};
+
+/** Display label of a level code ("a2" → "A2", "topik1" → "TOPIK 1"); unknown codes are shown as-is. */
+export function levelLabel(code: string | null | undefined): string {
+  if (!code) return '—';
+  return (LEVEL_INFO as Record<string, { label: string } | undefined>)[code]?.label ?? code;
+}
+
+/** "A1–B1", or a single label when both ends are the same level. */
+export function rangeLabel(range: { low: string; high: string } | null): string | null {
+  if (!range) return null;
+  return range.low === range.high ? levelLabel(range.low) : `${levelLabel(range.low)}–${levelLabel(range.high)}`;
+}
+
+const SHORT_SKIP_REASONS: Record<SkipReason, string> = {
+  no_time: 'không đủ thời gian',
+  too_hard: 'quá khó',
+  not_my_goal: 'không phải mục tiêu',
+  other: 'lý do khác',
+};
+
+/** Why a skill has no estimate, in plain Vietnamese. */
+export function missingReason(row: ReportSkillRow): string {
+  switch (row.status) {
+    case 'skipped': {
+      const reason = row.reason && row.reason in SHORT_SKIP_REASONS ? SHORT_SKIP_REASONS[row.reason as SkipReason] : null;
+      return reason ? `Bạn đã bỏ qua kỹ năng này (${reason}).` : 'Bạn đã bỏ qua kỹ năng này.';
+    }
+    case 'not_supported':
+      return row.skill === 'listening' ? 'Bài kiểm tra chưa có phần nghe.' : 'Bài trắc nghiệm không đánh giá được kỹ năng này.';
+    case 'insufficient':
+      return row.sample_size > 0 ? 'Số câu đã trả lời chưa đủ để ước lượng đáng tin.' : 'Bạn chưa trả lời câu nào của kỹ năng này.';
+    default:
+      return '';
+  }
+}

@@ -5,6 +5,8 @@ import { RootLayout } from '@/components/layout/RootLayout';
 import { RedirectIfAuthed, RequireAuth } from '@/features/auth/guards';
 import { AppRoute } from '@/routes/app/AppRoute';
 import { ComingSoonPage } from '@/routes/app/ComingSoonPage';
+import { DiagnosticPage } from '@/routes/app/diagnostic/DiagnosticPage';
+import { DiagnosticReportPage } from '@/routes/app/diagnostic/DiagnosticReportPage';
 import { HomePage } from '@/routes/app/HomePage';
 import { LearnPage } from '@/routes/app/learn/LearnPage';
 import { LessonPage } from '@/routes/app/lesson/LessonPage';
@@ -63,6 +65,8 @@ export const routes: RouteObject[] = [
         element: <AppRoute />,
         children: [
           { path: 'bat-dau', element: <OnboardingPage /> },
+          { path: 'kiem-tra/:pathId', element: <DiagnosticPage /> },
+          { path: 'kiem-tra/:pathId/ket-qua', element: <DiagnosticReportPage /> },
           { path: 'hoc-tap/bai/:lessonId', element: <LessonPage /> },
           {
             element: <AppLayout />,
