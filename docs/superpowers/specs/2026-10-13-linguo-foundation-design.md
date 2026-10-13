@@ -212,7 +212,7 @@ Migration `supabase/migrations/<ts>_foundation.sql`:
 
 ### `ci.yml` — `pull_request`, `workflow_dispatch`, `workflow_call`; concurrency hủy run cũ của PR
 
-- **web**: checkout → pnpm (`pnpm/action-setup`) + Node 22 (cache pnpm) → `pnpm install --frozen-lockfile` → `node scripts/check-public-env.mjs` → lint (ESLint) → typecheck (`tsc -b`) → Vitest → build.
+- **web**: checkout → pnpm (`pnpm/action-setup`) + Node 22 (cache pnpm) → `pnpm install --frozen-lockfile` → `node scripts/check-public-env.mjs` → lint (ESLint) → typecheck (`tsc -p tsconfig.json && tsc -p tsconfig.node.json`) → Vitest → build.
 - **e2e**: build → Playwright (`vite preview`) với projects: iPhone SE, iPhone 15 Pro, iPhone 15 Pro Max, Pixel 7, Galaxy S9+ (360px), iPhone 15 Pro landscape; trình duyệt WebKit + Chromium. Upload report khi lỗi.
 - **database**: `supabase/setup-cli` (ghim version) → `supabase start -x studio,imgproxy,vector,logflare,edge-runtime,realtime,postgres-meta,supavisor` → `supabase db lint --fail-on error` → `supabase test db` → sinh types và `git diff --exit-code packages/shared/src/database.types.ts` → `supabase stop`.
 
@@ -235,7 +235,7 @@ Migration `supabase/migrations/<ts>_foundation.sql`:
 |---|---|---|---|
 | `VITE_SUPABASE_URL` | `.env` + GitHub Variables | Có | Có |
 | `VITE_SUPABASE_PUBLISHABLE_KEY` | `.env` + GitHub Variables | Có | Có |
-| `VITE_SITE_URL` (vd `https://<user>.github.io/<repo>`) | `.env` + GitHub Variables | Có | Có |
+| `VITE_SITE_URL` (vd `https://nguyenngoctuyen11032003.github.io/Linguo`) | `.env` + GitHub Variables | Không (mặc định origin + base path; nên đặt ở production) | Có |
 | `VITE_AUTH_GOOGLE_ENABLED` | `.env` + GitHub Variables | Có | Không (mặc định `false`) |
 | `VITE_HERO_VIDEO_URL` | `.env` + GitHub Variables | Có | Không |
 | `SUPABASE_PROJECT_ID` | GitHub Variables | Có | Có |
@@ -260,6 +260,6 @@ Bước thủ công một lần (ghi trong `docs/DEPLOY.md`): tạo repo GitHub 
 
 1. Push lên `main` → CI xanh → (duyệt) migration → GitHub Pages cập nhật, không thao tác tay.
 2. Trên điện thoại thật: đăng ký email → xác minh → đăng nhập (hoặc Google nếu đã cấu hình) → sửa tên hiển thị + theme → tải lại vẫn giữ.
-3. pgTAP RLS A/B pass; bundle không chứa secret (`check-public-env --strict` + grep bundle trong CI không thấy `sb_secret_`).
+3. pgTAP RLS A/B pass; bundle không chứa secret (`check-public-env --strict` + grep bundle trong CI không thấy key thật `sb_secret_` + ≥20 ký tự).
 4. CI xanh cho lint, typecheck, Vitest, Playwright mobile, database.
 5. `.env.example`, `docs/SETUP.md`, `docs/DEPLOY.md`, `docs/MOBILE-QA.md`, `README.md` đầy đủ và khớp với workflow.
