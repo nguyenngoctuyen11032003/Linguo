@@ -323,6 +323,84 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
+                },"review_cards": {
+                  Row: {
+                    "created_at": string,"difficulty": number,"direction": string,"due_at": string,"fsrs_state": string,"id": string,"lapses": number,"last_postponed_on": string | null,"last_review_at": string | null,"learning_item_id": string,"learning_path_id": string,"postpone_count": number,"reps": number,"scheduled_days": number,"stability": number,"step": number,"suspended_at": string | null,"updated_at": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "created_at"?: string,"difficulty"?: number,"direction": string,"due_at": string,"fsrs_state"?: string,"id"?: string,"lapses"?: number,"last_postponed_on"?: string | null,"last_review_at"?: string | null,"learning_item_id": string,"learning_path_id": string,"postpone_count"?: number,"reps"?: number,"scheduled_days"?: number,"stability"?: number,"step"?: number,"suspended_at"?: string | null,"updated_at"?: string,"user_id": string
+                  }
+                  Update: {
+                    "created_at"?: string,"difficulty"?: number,"direction"?: string,"due_at"?: string,"fsrs_state"?: string,"id"?: string,"lapses"?: number,"last_postponed_on"?: string | null,"last_review_at"?: string | null,"learning_item_id"?: string,"learning_path_id"?: string,"postpone_count"?: number,"reps"?: number,"scheduled_days"?: number,"stability"?: number,"step"?: number,"suspended_at"?: string | null,"updated_at"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "review_cards_learning_item_id_fkey"
+      columns: ["learning_item_id"]
+isOneToOne: false
+      referencedRelation: "learning_items"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "review_cards_learning_path_id_fkey"
+      columns: ["learning_path_id"]
+isOneToOne: false
+      referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"review_item_mastery": {
+                  Row: {
+                    "learning_item_id": string,"learning_path_id": string,"mastered_at": string | null,"updated_at": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "learning_item_id": string,"learning_path_id": string,"mastered_at"?: string | null,"updated_at"?: string,"user_id": string
+                  }
+                  Update: {
+                    "learning_item_id"?: string,"learning_path_id"?: string,"mastered_at"?: string | null,"updated_at"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "review_item_mastery_learning_item_id_fkey"
+      columns: ["learning_item_id"]
+isOneToOne: false
+      referencedRelation: "learning_items"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "review_item_mastery_learning_path_id_fkey"
+      columns: ["learning_path_id"]
+isOneToOne: false
+      referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"review_logs": {
+                  Row: {
+                    "card_id": string,"client_at": string | null,"confidence": number | null,"created_at": string,"hint_count": number | null,"id": string,"idempotency_key": string,"kind": string,"learning_path_id": string,"local_day": string,"payload_hash": string | null,"rating_effective": number | null,"rating_raw": number | null,"response_ms": number | null,"result": Json | null,"state_after": Json | null,"state_before": Json | null,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "card_id": string,"client_at"?: string | null,"confidence"?: number | null,"created_at"?: string,"hint_count"?: number | null,"id"?: string,"idempotency_key": string,"kind": string,"learning_path_id": string,"local_day": string,"payload_hash"?: string | null,"rating_effective"?: number | null,"rating_raw"?: number | null,"response_ms"?: number | null,"result"?: Json | null,"state_after"?: Json | null,"state_before"?: Json | null,"user_id": string
+                  }
+                  Update: {
+                    "card_id"?: string,"client_at"?: string | null,"confidence"?: number | null,"created_at"?: string,"hint_count"?: number | null,"id"?: string,"idempotency_key"?: string,"kind"?: string,"learning_path_id"?: string,"local_day"?: string,"payload_hash"?: string | null,"rating_effective"?: number | null,"rating_raw"?: number | null,"response_ms"?: number | null,"result"?: Json | null,"state_after"?: Json | null,"state_before"?: Json | null,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "review_logs_card_id_fkey"
+      columns: ["card_id"]
+isOneToOne: false
+      referencedRelation: "review_cards"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "review_logs_learning_path_id_fkey"
+      columns: ["learning_path_id"]
+isOneToOne: false
+      referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    }
+                  ]
                 },"skill_estimates": {
                   Row: {
                     "assessed_at": string,"confidence": string,"id": string,"learning_path_id": string,"level_code": string,"sample_size": number,"skill": string,"source": string
@@ -342,6 +420,20 @@ isOneToOne: false
       referencedRelation: "learning_paths"
       referencedColumns: ["id"]
     }
+                  ]
+                },"srs_config": {
+                  Row: {
+                    "cap_max": number,"cap_min": number,"cap_per_minute": number,"daily_new_limit": number,"desired_retention": number,"id": boolean,"learning_steps_minutes": (number)[],"mastery_min_days": number,"mastery_min_successes": number,"mastery_recall_stability_days": number,"maximum_interval": number,"recovery_factor": number,"relearning_steps_minutes": (number)[],"weights": (number)[]
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "cap_max"?: number,"cap_min"?: number,"cap_per_minute"?: number,"daily_new_limit"?: number,"desired_retention"?: number,"id"?: boolean,"learning_steps_minutes"?: (number)[],"mastery_min_days"?: number,"mastery_min_successes"?: number,"mastery_recall_stability_days"?: number,"maximum_interval"?: number,"recovery_factor"?: number,"relearning_steps_minutes"?: (number)[],"weights": (number)[]
+                  }
+                  Update: {
+                    "cap_max"?: number,"cap_min"?: number,"cap_per_minute"?: number,"daily_new_limit"?: number,"desired_retention"?: number,"id"?: boolean,"learning_steps_minutes"?: (number)[],"mastery_min_days"?: number,"mastery_min_successes"?: number,"mastery_recall_stability_days"?: number,"maximum_interval"?: number,"recovery_factor"?: number,"relearning_steps_minutes"?: (number)[],"weights"?: (number)[]
+                  }
+                  Relationships: [
+
                   ]
                 },"units": {
                   Row: {
@@ -420,8 +512,14 @@ isOneToOne: false
 "get_lesson":
 { Args: { "p_lesson_id": string,"p_path_id": string }; Returns: Json
                            },
+"get_review_queue":
+{ Args: { "p_extra"?: boolean,"p_limit"?: number,"p_path_id": string }; Returns: Json
+                           },
 "grade_exercise":
 { Args: { "p_answer": Json,"p_known_wrong": Json,"p_lang": string,"p_response": Json,"p_rubric": Json,"p_type": string }; Returns: Json
+                           },
+"grade_review":
+{ Args: { "p_card_id": string,"p_client_at": string,"p_confidence": number,"p_hint_count": number,"p_idempotency_key": string,"p_rating": number,"p_response_ms": number }; Returns: Json
                            },
 "grading_normalize":
 { Args: { "p_lang": string,"p_rubric": Json,"p_text": string }; Returns: string
@@ -504,6 +602,12 @@ isOneToOne: false
               "estimated_minutes": number,"is_demo": boolean,"lesson_id": string,"lesson_key": string,"lesson_order": number,"level_code": string,"prerequisite_ids": (string)[],"prerequisites_met": boolean,"program_id": string,"program_title": Json,"run_status": string,"title": Json,"unit_id": string,"unit_order": number,"unit_title": Json
             }[]
                            },
+"postpone_reviews":
+{ Args: { "p_card_ids": (string)[],"p_idempotency_key": string,"p_path_id": string }; Returns: Json
+                           },
+"review_summary":
+{ Args: { "p_path_id": string }; Returns: Json
+                           },
 "save_lesson_cursor":
 { Args: { "p_cursor": number,"p_run_id": string }; Returns: undefined
                            },
@@ -532,6 +636,24 @@ isOneToOne: false
         isOneToOne: true
         isSetofReturn: false
       } },
+"srs_adjust_rating":
+{ Args: { "p_confidence": number,"p_hint_count": number,"p_rating": number }; Returns: number
+                           },
+"srs_enroll_lesson":
+{ Args: { "p_lesson": string,"p_path": string,"p_user": string }; Returns: number
+                           },
+"srs_next":
+{ Args: { "p_difficulty": number,"p_last_review_at": string,"p_now": string,"p_rating": number,"p_stability": number,"p_state": string,"p_step": number,"p_tz": string }; Returns: Json
+                           },
+"srs_previews":
+{ Args: { "p_difficulty": number,"p_last_review_at": string,"p_now": string,"p_stability": number,"p_state": string,"p_step": number,"p_tz": string }; Returns: Json
+                           },
+"srs_retrievability":
+{ Args: { "p_elapsed_days": number,"p_stability": number }; Returns: number
+                           },
+"srs_update_mastery":
+{ Args: { "p_item": string,"p_path": string,"p_user": string }; Returns: undefined
+                           },
 "start_lesson":
 { Args: { "p_lesson_id": string,"p_path_id": string }; Returns: Json
                            },
