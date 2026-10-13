@@ -30,9 +30,15 @@ export function ForgotPasswordPage() {
       const { error: authError } = await requireSupabase().auth.resetPasswordForEmail(parsed.data.email, {
         redirectTo: authRedirect(`/auth/callback?next=${encodeURIComponent('/dat-lai-mat-khau')}`),
       });
-      // Never reveal whether the email exists: only network / rate-limit problems are shown.
-      if (authError && (authError.status === 0 || authError.status === 429)) setFormError(authErrorMessage(authError));
-      else setSent(true);
+      // Never reveal whether the email exists: only network, rate-limit and server problems are shown.
+      const status = authError?.status;
+      if (authError && (status === 0 || status === 429)) {
+        setFormError(authErrorMessage(authError));
+      } else if (authError && typeof status === 'number' && status >= 500) {
+        setFormError(authErrorMessage(undefined)); // generic: server details are not for the user
+      } else {
+        setSent(true);
+      }
     } catch (err) {
       setFormError(authErrorMessage(err));
     } finally {

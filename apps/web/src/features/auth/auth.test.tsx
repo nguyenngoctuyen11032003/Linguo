@@ -1,11 +1,12 @@
 import { act, render, screen } from '@testing-library/react';
 import type { Session } from '@supabase/supabase-js';
 import { MemoryRouter, Route, Routes } from 'react-router';
-import { describe, expect, it, vi } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { AppSupabaseClient } from '@/lib/supabase';
 import { AuthContext, AuthProvider, useAuth, type AuthState } from './AuthProvider';
-import { authErrorMessage } from './error-map';
+import { authErrorMessage, isKnownAuthErrorCode } from './error-map';
 import { RedirectIfAuthed, RequireAuth } from './guards';
+import { clearRecovery, isRecoveryPending, markRecoveryPending } from './recovery';
 import { safeNext } from './safe-next';
 
 describe('authErrorMessage', () => {
@@ -18,15 +19,64 @@ describe('authErrorMessage', () => {
     expect(authErrorMessage({ code: 'something_new' })).toBe('Đã có lỗi xảy ra (mã: something_new). Vui lòng thử lại.');
     expect(authErrorMessage(undefined)).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
   });
+
+  it.each([
+    ['reauthentication_needed', /đăng nhập lại/],
+    ['session_expired', /hết hạn/],
+    ['refresh_token_not_found', /hết hạn/],
+    ['bad_code_verifier', /cùng trình duyệt/],
+    ['validation_failed', /chưa hợp lệ/],
+    ['user_banned', /tạm khoá/],
+  ])('has a Vietnamese message for %s', (code, pattern) => {
+    expect(authErrorMessage({ code })).toMatch(pattern);
+    expect(authErrorMessage({ code })).not.toMatch(/mã:/);
+  });
+
+  it('knows which codes it can translate', () => {
+    expect(isKnownAuthErrorCode('user_banned')).toBe(true);
+    expect(isKnownAuthErrorCode('toString')).toBe(false);
+    expect(isKnownAuthErrorCode(undefined)).toBe(false);
+  });
 });
 
 describe('safeNext', () => {
   it('only allows internal paths', () => {
     expect(safeNext('/app/cai-dat')).toBe('/app/cai-dat');
+    expect(safeNext('/dat-lai-mat-khau')).toBe('/dat-lai-mat-khau');
     expect(safeNext('https://evil.com')).toBe('/app');
     expect(safeNext('//evil.com')).toBe('/app');
     expect(safeNext('/\\evil.com')).toBe('/app');
     expect(safeNext(null)).toBe('/app');
+  });
+
+  it('rejects control characters and whitespace', () => {
+    expect(safeNext('/app\n/x')).toBe('/app');
+    expect(safeNext('/app\t')).toBe('/app');
+    expect(safeNext('/ app')).toBe('/app');
+    expect(safeNext('/app\u0000')).toBe('/app');
+    expect(safeNext('/app\u007F')).toBe('/app');
+    expect(safeNext('/app\\x')).toBe('/app');
+  });
+
+  it('does not bounce back into the auth screens', () => {
+    for (const next of ['/dang-nhap', '/dang-nhap?next=%2Fapp', '/dang-ky', '/auth/callback', '/auth/callback?code=1']) {
+      expect(safeNext(next)).toBe('/app');
+    }
+    expect(safeNext('/dang-nhap', '/')).toBe('/');
+    expect(safeNext('/dang-nhap-sau')).toBe('/dang-nhap-sau');
+  });
+});
+
+describe('recovery flag', () => {
+  afterEach(() => sessionStorage.clear());
+
+  it('is set, read and cleared via sessionStorage', () => {
+    expect(isRecoveryPending()).toBe(false);
+    markRecoveryPending();
+    expect(sessionStorage.getItem('linguo-recovery')).toBe('1');
+    expect(isRecoveryPending()).toBe(true);
+    clearRecovery();
+    expect(isRecoveryPending()).toBe(false);
   });
 });
 

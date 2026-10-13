@@ -1,5 +1,7 @@
 import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { useRef, useState } from 'react';
+import { useNavigate } from 'react-router';
 import { describe, expect, it, vi } from 'vitest';
 import { renderWithProviders } from '../../../tests/unit/render';
 import { ComingSoonPage } from '@/routes/app/ComingSoonPage';
@@ -42,6 +44,62 @@ describe('MoreSheet', () => {
   });
 });
 
+function MoreHarness() {
+  const [open, setOpen] = useState(false);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const navigate = useNavigate();
+  return (
+    <>
+      <button type="button" onClick={() => navigate('/app/tien-do')}>
+        Đi tới tiến độ
+      </button>
+      <BottomNav onMore={() => setOpen(true)} moreOpen={open} moreTriggerRef={triggerRef} />
+      <MoreSheet open={open} onClose={() => setOpen(false)} triggerRef={triggerRef} />
+    </>
+  );
+}
+
+describe('MoreSheet focus management', () => {
+  it('moves focus in, traps Tab, and restores focus to "Thêm" on Escape', async () => {
+    localStorage.setItem('lp-reduce-motion', 'true');
+    renderWithProviders(<MoreHarness />, { route: '/app' });
+    const trigger = screen.getByRole('button', { name: 'Thêm' });
+    expect(trigger).toHaveAttribute('aria-expanded', 'false');
+
+    await userEvent.click(trigger);
+    expect(trigger).toHaveAttribute('aria-expanded', 'true');
+    const dialog = screen.getByRole('dialog', { name: 'Thêm' });
+    const close = screen.getByRole('button', { name: 'Đóng' });
+    expect(close).toHaveFocus();
+    expect(document.body.style.overflow).toBe('hidden');
+
+    const links = screen.getAllByRole('link').filter((link) => dialog.contains(link));
+    const last = links[links.length - 1]!;
+    await userEvent.tab({ shift: true });
+    expect(last).toHaveFocus(); // Shift+Tab from the first element wraps to the last
+    await userEvent.tab();
+    expect(close).toHaveFocus(); // Tab from the last element wraps to the first
+    for (let i = 0; i < links.length + 1; i++) {
+      await userEvent.tab();
+      expect(dialog).toContainElement(document.activeElement as HTMLElement);
+    }
+
+    await userEvent.keyboard('{Escape}');
+    await waitFor(() => expect(trigger).toHaveFocus());
+    expect(trigger).toHaveAttribute('aria-expanded', 'false');
+    expect(document.body.style.overflow).toBe('');
+  });
+
+  it('closes when the route changes', async () => {
+    localStorage.setItem('lp-reduce-motion', 'true');
+    renderWithProviders(<MoreHarness />, { route: '/app' });
+    await userEvent.click(screen.getByRole('button', { name: 'Thêm' }));
+    expect(screen.getByRole('dialog', { name: 'Thêm' })).toBeInTheDocument();
+    await userEvent.click(screen.getByRole('button', { name: 'Đi tới tiến độ' }));
+    await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument());
+  });
+});
+
 describe('AppBar', () => {
   it('shows the language pill and an avatar link to settings', () => {
     renderWithProviders(<AppBar />, { route: '/app' });
@@ -57,6 +115,11 @@ describe('HomePage', () => {
     expect(screen.getByRole('heading', { name: 'Bắt đầu lộ trình đầu tiên' })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Tạo lộ trình' })).toBeDisabled();
     expect(screen.queryByText(/%/)).not.toBeInTheDocument();
+  });
+
+  it('announces loading in the heading while the profile loads', () => {
+    renderWithProviders(<HomePage />, { route: '/app', profile: { status: 'loading', profile: null } });
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Đang tải…');
   });
 
   it('falls back to "bạn" without a name', () => {

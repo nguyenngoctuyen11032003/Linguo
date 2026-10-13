@@ -5,8 +5,12 @@ export interface FakeQuery {
   builder: Record<string, unknown>;
 }
 
-/** Chainable, awaitable stand-in for a PostgREST query builder. */
-export function fakeQuery(result: { data: unknown; error: unknown }): FakeQuery {
+/**
+ * Chainable, awaitable stand-in for a PostgREST query builder. `data` may be a row, an array of rows
+ * (an UPDATE ... SELECT result) or `[]` (an UPDATE that matched nothing, e.g. blocked by RLS).
+ */
+export function fakeQuery({ data, error = null }: { data: unknown; error?: unknown }): FakeQuery {
+  const result = { data, error };
   const calls: FakeQuery['calls'] = [];
   const builder: Record<string, unknown> = {};
   for (const method of ['select', 'eq', 'update', 'single', 'maybeSingle']) {

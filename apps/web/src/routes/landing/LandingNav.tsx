@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router';
 import { EXPO_OUT, reveal } from '@/design/motion';
 import { asset } from '@/lib/asset';
+import { useModalDialog } from '@/lib/useModalDialog';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 
 const MENU = [
@@ -14,20 +15,10 @@ const MENU = [
 export function LandingNav({ ready }: { ready: boolean }) {
   const { reduceMotion } = useMotionPrefs();
   const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    if (!open) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setOpen(false);
-    };
-    const overflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    document.addEventListener('keydown', onKey);
-    return () => {
-      document.body.style.overflow = overflow;
-      document.removeEventListener('keydown', onKey);
-    };
-  }, [open]);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const close = useCallback(() => setOpen(false), []);
+  useModalDialog(open, close, { triggerRef, containerRef: dialogRef });
 
   const state = ready ? 'shown' : 'hidden';
 
@@ -48,6 +39,7 @@ export function LandingNav({ ready }: { ready: boolean }) {
               Đăng nhập
             </Link>
             <button
+              ref={triggerRef}
               type="button"
               aria-label="Mở menu"
               aria-expanded={open}
@@ -64,9 +56,11 @@ export function LandingNav({ ready }: { ready: boolean }) {
       <AnimatePresence>
         {open && (
           <motion.div
+            ref={dialogRef}
             role="dialog"
             aria-modal="true"
             aria-label="Menu"
+            tabIndex={-1}
             className="fixed inset-0 z-[99] flex flex-col bg-[linear-gradient(160deg,#0B1420_0%,#12324A_45%,#2F7FB5_100%)] px-safe pb-safe pt-safe"
             initial={{ opacity: 0, scale: reduceMotion ? 1 : 1.04 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -79,7 +73,6 @@ export function LandingNav({ ready }: { ready: boolean }) {
                 aria-label="Đóng menu"
                 onClick={() => setOpen(false)}
                 className="inline-flex size-11 items-center justify-center rounded-full"
-                autoFocus
               >
                 <X aria-hidden className="size-7" />
               </button>

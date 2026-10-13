@@ -14,6 +14,13 @@ const BY_CODE: Record<string, string> = {
   flow_state_not_found: 'Liên kết không hợp lệ hoặc đã được dùng. Vui lòng yêu cầu liên kết mới.',
   otp_expired: 'Liên kết đã hết hạn. Vui lòng yêu cầu liên kết mới.',
   session_not_found: 'Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.',
+  session_expired: 'Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.',
+  refresh_token_not_found: 'Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.',
+  reauthentication_needed: 'Vì lý do bảo mật, hãy đăng nhập lại rồi thử lại.',
+  bad_code_verifier: 'Liên kết phải được mở trên cùng trình duyệt bạn đã dùng để yêu cầu. Vui lòng yêu cầu liên kết mới.',
+  validation_failed: 'Thông tin chưa hợp lệ. Vui lòng kiểm tra lại.',
+  user_banned: 'Tài khoản này đang bị tạm khoá. Vui lòng liên hệ hỗ trợ.',
+  access_denied: 'Bạn đã huỷ hoặc chưa cấp quyền đăng nhập. Hãy thử lại.',
 };
 
 const BY_NAME: Record<string, string> = {
@@ -22,13 +29,16 @@ const BY_NAME: Record<string, string> = {
   AuthRetryableFetchError: 'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.',
 };
 
+/** True when there is a Vietnamese message for this Supabase / OAuth error code. */
+export function isKnownAuthErrorCode(code: unknown): code is string {
+  return typeof code === 'string' && Object.hasOwn(BY_CODE, code);
+}
+
 export function authErrorMessage(error: unknown): string {
   if (error && typeof error === 'object') {
     const e = error as { code?: unknown; name?: unknown; status?: unknown };
-    if (typeof e.code === 'string') {
-      const byCode = BY_CODE[e.code];
-      if (byCode) return byCode;
-    }
+    const byCode = isKnownAuthErrorCode(e.code) ? BY_CODE[e.code] : undefined;
+    if (byCode) return byCode;
     if (typeof e.name === 'string') {
       const byName = BY_NAME[e.name];
       if (byName) return byName;

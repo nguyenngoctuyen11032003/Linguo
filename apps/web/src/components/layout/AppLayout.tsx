@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { Outlet } from 'react-router';
 import { usePreferencesSync } from '@/features/preferences/usePreferencesSync';
 import { AppBar } from './AppBar';
@@ -8,6 +8,7 @@ import { Sidebar } from './Sidebar';
 
 export function AppLayout() {
   const [moreOpen, setMoreOpen] = useState(false);
+  const moreTriggerRef = useRef<HTMLButtonElement>(null);
   const closeMore = useCallback(() => setMoreOpen(false), []);
   usePreferencesSync();
 
@@ -23,8 +24,8 @@ export function AppLayout() {
           <Outlet />
         </main>
       </div>
-      <BottomNav className="lg:hidden" onMore={() => setMoreOpen(true)} />
-      <MoreSheet open={moreOpen} onClose={closeMore} />
+      <BottomNav className="lg:hidden" onMore={() => setMoreOpen(true)} moreOpen={moreOpen} moreTriggerRef={moreTriggerRef} />
+      <MoreSheet open={moreOpen} onClose={closeMore} triggerRef={moreTriggerRef} />
     </div>
   );
 }

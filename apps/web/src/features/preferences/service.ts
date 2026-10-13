@@ -13,9 +13,11 @@ export async function fetchPreferences(client: AppSupabaseClient, userId: string
 }
 
 export async function updatePreferences(client: AppSupabaseClient, userId: string, input: PreferencesUpdateInput): Promise<void> {
-  const { error } = await client
+  const { data, error } = await client
     .from('user_preferences')
     .update({ theme: input.theme, reduce_motion: input.reduceMotion })
-    .eq('user_id', userId);
+    .eq('user_id', userId)
+    .select('user_id');
   if (error) throw error;
+  if (!data || data.length === 0) throw new Error('NO_ROWS_UPDATED');
 }
