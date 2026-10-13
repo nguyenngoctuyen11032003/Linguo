@@ -39,22 +39,28 @@ isOneToOne: false
                   ]
                 },"assessment_items": {
                   Row: {
-                    "answer_key": string,"assessment_id": string,"content_hash": string,"created_at": string,"difficulty": number,"explanation": Json | null,"id": string,"is_demo": boolean,"item_type": string,"key": string,"key_confidence": string,"level_code": string,"prompt": NonNullable<Json>,"skill": string,"status": string,"updated_at": string,"version": number
+                    "answer_key": string,"assessment_id": string,"content_hash": string,"created_at": string,"difficulty": number,"explanation": Json | null,"id": string,"is_demo": boolean,"item_type": string,"key": string,"key_confidence": string,"language_code": string,"level_code": string,"prompt": NonNullable<Json>,"reviewed_at": string | null,"reviewed_by": string | null,"skill": string,"status": string,"updated_at": string,"version": number
                   }
                   ComputedFields: never
                   Insert: {
-                    "answer_key": string,"assessment_id": string,"content_hash": string,"created_at"?: string,"difficulty": number,"explanation"?: Json | null,"id": string,"is_demo"?: boolean,"item_type": string,"key": string,"key_confidence"?: string,"level_code": string,"prompt": NonNullable<Json>,"skill": string,"status"?: string,"updated_at"?: string,"version"?: number
+                    "answer_key": string,"assessment_id": string,"content_hash": string,"created_at"?: string,"difficulty": number,"explanation"?: Json | null,"id": string,"is_demo"?: boolean,"item_type": string,"key": string,"key_confidence"?: string,"language_code": string,"level_code": string,"prompt": NonNullable<Json>,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"skill": string,"status"?: string,"updated_at"?: string,"version"?: number
                   }
                   Update: {
-                    "answer_key"?: string,"assessment_id"?: string,"content_hash"?: string,"created_at"?: string,"difficulty"?: number,"explanation"?: Json | null,"id"?: string,"is_demo"?: boolean,"item_type"?: string,"key"?: string,"key_confidence"?: string,"level_code"?: string,"prompt"?: NonNullable<Json>,"skill"?: string,"status"?: string,"updated_at"?: string,"version"?: number
+                    "answer_key"?: string,"assessment_id"?: string,"content_hash"?: string,"created_at"?: string,"difficulty"?: number,"explanation"?: Json | null,"id"?: string,"is_demo"?: boolean,"item_type"?: string,"key"?: string,"key_confidence"?: string,"language_code"?: string,"level_code"?: string,"prompt"?: NonNullable<Json>,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"skill"?: string,"status"?: string,"updated_at"?: string,"version"?: number
                   }
                   Relationships: [
                     {
-      foreignKeyName: "assessment_items_assessment_id_fkey"
-      columns: ["assessment_id"]
+      foreignKeyName: "assessment_items_assessment_fk"
+      columns: ["assessment_id","language_code"]
 isOneToOne: false
       referencedRelation: "assessments"
-      referencedColumns: ["id"]
+      referencedColumns: ["id","language_code"]
+    },{
+      foreignKeyName: "assessment_items_level_fk"
+      columns: ["language_code","level_code"]
+isOneToOne: false
+      referencedRelation: "level_reference_hours"
+      referencedColumns: ["language_code","level_code"]
     }
                   ]
                 },"assessment_responses": {
@@ -85,14 +91,14 @@ isOneToOne: false
                   ]
                 },"assessments": {
                   Row: {
-                    "assessment_type": string,"config": NonNullable<Json>,"created_at": string,"id": string,"is_published": boolean,"language_code": string,"version": number
+                    "assessment_type": string,"config": NonNullable<Json>,"created_at": string,"id": string,"is_published": boolean,"key": string,"language_code": string,"updated_at": string,"version": number
                   }
                   ComputedFields: never
                   Insert: {
-                    "assessment_type"?: string,"config"?: NonNullable<Json>,"created_at"?: string,"id"?: string,"is_published"?: boolean,"language_code": string,"version"?: number
+                    "assessment_type": string,"config": NonNullable<Json>,"created_at"?: string,"id": string,"is_published"?: boolean,"key": string,"language_code": string,"updated_at"?: string,"version"?: number
                   }
                   Update: {
-                    "assessment_type"?: string,"config"?: NonNullable<Json>,"created_at"?: string,"id"?: string,"is_published"?: boolean,"language_code"?: string,"version"?: number
+                    "assessment_type"?: string,"config"?: NonNullable<Json>,"created_at"?: string,"id"?: string,"is_published"?: boolean,"key"?: string,"language_code"?: string,"updated_at"?: string,"version"?: number
                   }
                   Relationships: [
                     
@@ -604,14 +610,97 @@ isOneToOne: false
         isOneToOne: true
         isSetofReturn: false
       } },
+"diag_cap_level":
+{ Args: { "p_current": number,"p_first_applied": boolean,"p_suggested": number }; Returns: number
+                           },
+"diag_confidence":
+{ Args: { "p_n": number,"p_rapid_share": number,"p_sd": number }; Returns: string
+                           },
+"diag_conservative_level":
+{ Args: { "p_weights": (number)[] }; Returns: number
+                           },
+"diag_eap":
+{ Args: { "p_weights": (number)[] }; Returns: Json
+                           },
+"diag_grid":
+{ Args: Record<PropertyKey, never>; Returns: (number)[]
+                           },
+"diag_level_range":
+{ Args: { "p_weights": (number)[] }; Returns: Json
+                           },
+"diag_posterior":
+{ Args: { "p_b": (number)[],"p_correct": (boolean)[],"p_mean": number,"p_options": (number)[],"p_sd": number }; Returns: (number)[]
+                           },
+"diag_should_stop_skill":
+{ Args: { "p_bank_left": number,"p_n": number,"p_sd": number,"p_skill": string }; Returns: boolean
+                           },
+"diag_suggest_level":
+{ Args: { "p_confidences": (string)[],"p_levels": (number)[] }; Returns: number
+                           },
+"diagnostic_active_attempt":
+{ Args: { "p_attempt_id": string,"p_user": string }; Returns: {
+              "applied_at": string | null,
+"assessment_id": string,
+"completed_at": string | null,
+"current_item_id": string | null,
+"current_served_at": string | null,
+"id": string,
+"last_activity_at": string,
+"learning_path_id": string,
+"mode": string,
+"report": Json | null,
+"skipped": NonNullable<Json>,
+"started_at": string,
+"status": string,
+"user_id": string
+            }
+                          SetofOptions: {
+        from: "*"
+        to: "assessment_attempts"
+        isOneToOne: true
+        isSetofReturn: false
+      } },
+"diagnostic_advance":
+{ Args: { "p_attempt_id": string }; Returns: undefined
+                           },
+"diagnostic_assessment_for":
+{ Args: { "p_language": string }; Returns: string
+                           },
+"diagnostic_attempt_state":
+{ Args: { "p_attempt_id": string }; Returns: Json
+                           },
+"diagnostic_bank_available":
+{ Args: { "p_assessment_id": string,"p_mode": string }; Returns: boolean
+                           },
+"diagnostic_bank_left":
+{ Args: { "p_attempt_id": string,"p_skill": string }; Returns: number
+                           },
+"diagnostic_build_report":
+{ Args: { "p_attempt_id": string,"p_completed_at": string }; Returns: Json
+                           },
+"diagnostic_config":
+{ Args: { "p_assessment_id": string,"p_default": number,"p_key": string }; Returns: number
+                           },
+"diagnostic_level_code":
+{ Args: { "p_language": string,"p_ordinal": number }; Returns: string
+                           },
+"diagnostic_level_ordinal":
+{ Args: { "p_language": string,"p_level": string }; Returns: number
+                           },
+"diagnostic_pick_item":
+{ Args: { "p_attempt_id": string,"p_eap": number,"p_seq": number,"p_skill": string }; Returns: string
+                           },
 "diagnostic_status":
 { Args: { "p_path_id": string }; Returns: Json
                            },
-"finish_diagnostic":
-{ Args: { "p_attempt_id": string }; Returns: Json
+"diagnostic_step_json":
+{ Args: { "p_attempt_id": string,"p_resumed": boolean }; Returns: Json
                            },
 "estimate_learning_path":
 { Args: { "p_current_level": string,"p_language": string,"p_target_date": string,"p_target_level": string,"p_today": string,"p_weekly_minutes": (number)[] }; Returns: Json
+                           },
+"finish_diagnostic":
+{ Args: { "p_attempt_id": string }; Returns: Json
                            },
 "get_lesson":
 { Args: { "p_lesson_id": string,"p_path_id": string }; Returns: Json
