@@ -35,7 +35,7 @@ push main ─────► Deploy (.github/workflows/deploy.yml)
 3. **Settings → Environments → New environment `production`**: bật **Required reviewers** (chọn bạn), Deployment branches = `main`. Thêm secrets:
    - `SUPABASE_ACCESS_TOKEN` — supabase.com → Account → Access Tokens. Đây là token cá nhân, có quyền trên **mọi project** của tài khoản; chỉ đặt trong environment `production` (không đặt ở repo secrets) và thu hồi ngay nếu nghi bị lộ.
    - `SUPABASE_DB_PASSWORD` — mật khẩu database của project
-   - `SUPABASE_SERVICE_ROLE_KEY` — Supabase Dashboard → Project Settings → API Keys: **secret key** (`sb_secret_…`) hoặc key `service_role` (legacy JWT). Chỉ dùng cho workflow **Publish content**; chỉ có quyền trên project này nhưng bỏ qua RLS, nên chỉ đặt trong environment `production` và thu hồi/đổi ngay nếu nghi bị lộ.
+   - `SUPABASE_SERVICE_ROLE_KEY` — Supabase Dashboard → Project Settings → API Keys: **secret key** (`sb_secret_…`) hoặc key `service_role` (legacy JWT). Chỉ dùng cho workflow **Publish content** và **Maintenance**; chỉ có quyền trên project này nhưng bỏ qua RLS, nên chỉ đặt trong environment `production` và thu hồi/đổi ngay nếu nghi bị lộ.
 4. **Settings → Secrets and variables → Actions → Variables**:
    - `SUPABASE_PROJECT_ID` — project ref
    - `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY`
@@ -78,6 +78,22 @@ Nội dung bài học nằm trong `content/**/*.yaml`. Deploy **không** tự nh
 4. Chạy `pnpm content:push` từ máy local chỉ khi thật cần: phải đặt **cả hai** biến môi trường `SUPABASE_URL` và `SUPABASE_SERVICE_ROLE_KEY` trong shell, không ghi vào file nào được commit (script từ chối chạy nếu thiếu và không bao giờ in key ra). Ví dụ (Git Bash): `SUPABASE_URL=https://<ref>.supabase.co SUPABASE_SERVICE_ROLE_KEY=sb_secret_… pnpm content:push`.
 5. **Không bao giờ** đặt token/khoá server vào biến `VITE_*` (chúng bị đóng gói vào JavaScript công khai). `scripts/check-public-env.mjs` chặn mọi biến `VITE_*` có tên chứa `SERVICE_ROLE`, `GEMINI`, `SECRET`, `ACCESS_TOKEN`…
 
+## Bảo trì dữ liệu (Maintenance)
+Workflow `.github/workflows/maintenance.yml` chạy **hằng ngày** (cron `17 19 * * *` UTC, tức 02:17 giờ Việt Nam) và chạy tay được qua Actions → **Maintenance** → **Run workflow**.
+
+- Job gọi `POST {VITE_SUPABASE_URL}/rest/v1/rpc/purge_expired_data` bằng secret `SUPABASE_SERVICE_ROLE_KEY` của environment `production` (cùng secret với Publish content). RPC này chỉ `service_role` gọi được. Nó xoá:
+  - `ai_cache` đã hết hạn;
+  - `ai_usage` quá 90 ngày;
+  - `ai_quota` quá 60 ngày;
+  - `account_export_requests` (đếm giới hạn 5 lần xuất dữ liệu/giờ) quá 1 ngày;
+  - `study_sessions` chưa hoàn thành, tạo quá 180 ngày (nếu bảng đã có).
+
+  Kết quả trả về là số dòng đã xoá của từng bảng, in ra log.
+- Key chỉ được ghi vào một file cấu hình curl quyền 0600 rồi xoá ngay. Key không nằm trong argv và không bị in ra log. HTTP khác 2xx thì job fail.
+- Job dùng chung concurrency group `supabase-production` với `migrate` (Deploy) và Publish content, nên không bao giờ chạy cùng lúc với migration.
+- Environment `production` đang bật **Required reviewers**, nên mỗi lần chạy theo lịch cũng chờ bấm **Approve**. Không duyệt thì run hết hạn sau 30 ngày; dữ liệu chỉ được dọn muộn hơn, không mất gì. Nếu muốn chạy tự động hoàn toàn, tạo một environment riêng (ví dụ `maintenance`, chỉ cho nhánh `main`, không cần reviewer), chỉ chứa `SUPABASE_SERVICE_ROLE_KEY`, rồi đổi `environment:` trong workflow.
+- Xoá tài khoản (`delete_my_account`) và xuất dữ liệu (`export_my_data`) chạy trực tiếp từ web. Bảng `account_deletions` chỉ ghi thời điểm và `reason_code`, không lưu user id hay email.
+
 ## Xử lý sự cố
 | Triệu chứng | Cách xử lý |
 |---|---|
@@ -85,6 +101,8 @@ Nội dung bài học nằm trong `content/**/*.yaml`. Deploy **không** tự nh
 | `migrate` báo `Thiếu SUPABASE_…` | Secrets chưa đặt trong environment `production` |
 | Publish content báo `--apply needs SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY` | Thiếu secret `SUPABASE_SERVICE_ROLE_KEY` trong environment `production` hoặc variable `VITE_SUPABASE_URL` |
 | Publish content báo `HTTP 404 … import_content_bundle` | Migration nội dung chưa được Deploy áp lên project hosted |
+| Maintenance báo `HTTP 404 … purge_expired_data` | Migration `20261014000910_account_data.sql` chưa được Deploy áp lên project hosted |
+| Maintenance báo `HTTP 401`/`403` | `SUPABASE_SERVICE_ROLE_KEY` sai hoặc đã bị xoay vòng; cập nhật secret trong environment `production` |
 | Migration chưa được áp | Actions → Deploy → **Run workflow** với `migrate = true` |
 | Gia sư AI luôn "Tạm thời không khả dụng" | Thiếu secret `GEMINI_API_KEY`/`GEMINI_MODEL` trong environment `production`, hoặc chưa chạy lại Deploy với `functions = true` sau khi thêm; kiểm tra model id còn trong free tier |
 | Gia sư AI đang chạy rồi bỗng không khả dụng với mọi người | Model hết quota ngày của free tier (breaker mở, thử lại sau); chờ quota reset hoặc đổi `GEMINI_MODEL` rồi chạy lại Deploy với `functions = true` |

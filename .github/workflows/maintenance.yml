@@ -1,0 +1,58 @@
+# Daily data retention (spec 7 §1): calls the service_role-only RPC public.purge_expired_data, which deletes
+# expired ai_cache rows, ai_usage older than 90 days, ai_quota older than 60 days, export rate-limit rows
+# older than a day and unfinished study_sessions older than 180 days, and returns the counts.
+# Uses SUPABASE_SERVICE_ROLE_KEY from environment `production` (never printed: it only goes into a 0600
+# curl config file, not argv or logs) and shares the `supabase-production` concurrency group with
+# deploy.yml's migration job and content-publish.yml, so it never runs while migrations are applied.
+name: Maintenance
+
+on:
+  schedule:
+    - cron: '17 19 * * *' # 02:17 Asia/Ho_Chi_Minh
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: maintenance
+  cancel-in-progress: false
+
+jobs:
+  purge:
+    name: Purge expired data
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    environment: production
+    concurrency:
+      group: supabase-production
+      cancel-in-progress: false
+    env:
+      SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+    steps:
+      - name: Call purge_expired_data
+        run: |
+          set +x
+          missing=0
+          for v in SUPABASE_URL SUPABASE_SERVICE_ROLE_KEY; do
+            if [ -z "${!v}" ]; then echo "::error::Thiếu $v (xem docs/DEPLOY.md)"; missing=1; fi
+          done
+          [ "$missing" -eq 0 ] || exit 1
+          umask 077
+          cfg="$(mktemp)"
+          body="$(mktemp)"
+          trap 'rm -f "$cfg" "$body"' EXIT
+          # Legacy service_role JWTs and new sb_secret_ keys both work when sent in both headers.
+          printf 'header = "apikey: %s"\nheader = "Authorization: Bearer %s"\n' \
+            "$SUPABASE_SERVICE_ROLE_KEY" "$SUPABASE_SERVICE_ROLE_KEY" > "$cfg"
+          status=$(curl --silent --show-error --max-time 60 --config "$cfg" \
+            --request POST --header 'Content-Type: application/json' --data '{}' \
+            --output "$body" --write-out '%{http_code}' \
+            "${SUPABASE_URL%/}/rest/v1/rpc/purge_expired_data") || { echo "::error::Không gọi được Supabase"; exit 1; }
+          echo "HTTP $status"
+          cat "$body"; echo
+          if [ "$status" -lt 200 ] || [ "$status" -ge 300 ]; then
+            echo "::error::purge_expired_data trả HTTP $status"
+            exit 1
+          fi
