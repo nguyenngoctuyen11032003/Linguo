@@ -11,11 +11,17 @@ export function GoogleButton({ next, onError }: { next: string; onError: (messag
 
   async function onClick() {
     setLoading(true);
-    const { error } = await requireSupabase().auth.signInWithOAuth({
-      provider: 'google',
-      options: { redirectTo: authRedirect(`/auth/callback?next=${encodeURIComponent(next)}`) },
-    });
-    if (error) {
+    try {
+      const { error } = await requireSupabase().auth.signInWithOAuth({
+        provider: 'google',
+        options: { redirectTo: authRedirect(`/auth/callback?next=${encodeURIComponent(next)}`) },
+      });
+      // On success the browser is already navigating to Google, so the spinner stays until it unloads.
+      if (error) {
+        setLoading(false);
+        onError(authErrorMessage(error));
+      }
+    } catch (error) {
       setLoading(false);
       onError(authErrorMessage(error));
     }

@@ -22,18 +22,23 @@ export function CheckEmailPage() {
   }, [cooldown]);
 
   async function resend() {
-    if (!email) return;
+    if (!email || loading) return;
     setLoading(true);
-    const { error } = await requireSupabase().auth.resend({
-      type: 'signup',
-      email,
-      options: { emailRedirectTo: authRedirect('/auth/callback') },
-    });
-    setLoading(false);
-    if (error) setMessage({ tone: 'error', text: authErrorMessage(error) });
-    else {
-      setMessage({ tone: 'ok', text: 'Đã gửi lại email xác minh.' });
-      setCooldown(COOLDOWN_S);
+    try {
+      const { error } = await requireSupabase().auth.resend({
+        type: 'signup',
+        email,
+        options: { emailRedirectTo: authRedirect('/auth/callback') },
+      });
+      if (error) setMessage({ tone: 'error', text: authErrorMessage(error) });
+      else {
+        setMessage({ tone: 'ok', text: 'Đã gửi lại email xác minh.' });
+        setCooldown(COOLDOWN_S);
+      }
+    } catch (error) {
+      setMessage({ tone: 'error', text: authErrorMessage(error) });
+    } finally {
+      setLoading(false);
     }
   }
 
