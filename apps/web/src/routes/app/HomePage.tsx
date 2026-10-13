@@ -8,6 +8,7 @@ import { learningPathErrorMessage } from '@/features/learning-paths/error-map';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { setPathStatus } from '@/features/learning-paths/service';
 import { useProfile } from '@/features/profile/ProfileProvider';
+import { resolveTimeZone } from '@/lib/dates';
 import { requireSupabase } from '@/lib/supabase';
 import { NextLessonCard } from './home/NextLessonCard';
 import { PathSummaryCard } from './home/PathSummaryCard';
@@ -23,7 +24,7 @@ export function HomePage() {
   const [resuming, setResuming] = useState(false);
   const cardHeadingRef = useRef<HTMLHeadingElement>(null);
   const name = profile?.displayName.trim();
-  const timeZone = profile?.timezone ?? DEFAULT_TIMEZONE;
+  const timeZone = resolveTimeZone(profile?.timezone ?? DEFAULT_TIMEZONE);
 
   if (paths.status === 'ready' && paths.paths.length === 0) return <Navigate to="/app/bat-dau" replace />;
 

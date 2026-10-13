@@ -18,9 +18,19 @@ function cachedFormat(cache: Map<string, Intl.DateTimeFormat>, timeZone: string,
   return format;
 }
 
+const dayFormat = (timeZone: string) => cachedFormat(DAY_FORMATS, timeZone, { year: 'numeric', month: '2-digit', day: '2-digit' });
+
+/**
+ * `timeZone` when this browser's Intl knows it, else Asia/Ho_Chi_Minh. Use it before passing a profile zone to
+ * Intl directly: the database accepts any `pg_timezone_names` entry, some of which Intl rejects with a RangeError.
+ */
+export function resolveTimeZone(timeZone: string): string {
+  return dayFormat(timeZone).resolvedOptions().timeZone;
+}
+
 /** The user's local calendar date (YYYY-MM-DD) in `timeZone`. Invalid zones fall back to Asia/Ho_Chi_Minh. */
 export function todayIso(timeZone: string, now: Date = new Date()): string {
-  const format = cachedFormat(DAY_FORMATS, timeZone, { year: 'numeric', month: '2-digit', day: '2-digit' });
+  const format = dayFormat(timeZone);
   const parts = format.formatToParts(now);
   const part = (type: 'year' | 'month' | 'day') => parts.find((p) => p.type === type)?.value ?? '';
   return `${part('year').padStart(4, '0')}-${part('month').padStart(2, '0')}-${part('day').padStart(2, '0')}`;

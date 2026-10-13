@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { addMonthsIso, formatDateVi, todayIso, weekdayIndex } from './dates';
+import { addMonthsIso, formatDateVi, resolveTimeZone, todayIso, weekdayIndex } from './dates';
 
 describe('dates', () => {
   it('uses the user time zone for today and weekday', () => {
@@ -15,6 +15,12 @@ describe('dates', () => {
     expect(todayIso('Not/AZone', instant)).toBe('2026-10-13');
     expect(weekdayIndex('Not/AZone', instant)).toBe(1);
     expect(todayIso('', instant)).toBe('2026-10-13');
+  });
+
+  it('resolves a zone Intl rejects to Asia/Ho_Chi_Minh so it can be passed to Intl directly', () => {
+    expect(resolveTimeZone('America/New_York')).toBe('America/New_York');
+    expect(() => new Intl.DateTimeFormat('vi-VN', { timeZone: resolveTimeZone('Not/AZone') })).not.toThrow();
+    expect(todayIso(resolveTimeZone('Not/AZone'), new Date('2026-10-12T20:00:00Z'))).toBe('2026-10-13');
   });
 
   it('zero-pads month and day', () => {
