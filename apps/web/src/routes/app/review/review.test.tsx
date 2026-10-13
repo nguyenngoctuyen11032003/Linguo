@@ -121,9 +121,12 @@ describe('ReviewPage', () => {
   });
 
   it('does not count a refused grade as reviewed', async () => {
+    // grade() resolves but the session keeps the card on its back side (refused); the learner then postpones it.
     const session = setSession({ cardState: { status: 'back' }, total: 1 });
     render();
     await userEvent.keyboard('3');
+    expect(session.grade).toHaveBeenCalled();
+    await userEvent.click(screen.getByRole('button', { name: 'Hoãn sang mai' }));
     update({ ...session, status: 'finished', card: null });
     expect(screen.getByText(/^Đã ôn 0 thẻ/)).toBeInTheDocument();
   });

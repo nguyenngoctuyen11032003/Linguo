@@ -33,7 +33,8 @@ export function ReviewPage() {
   const { status, card, cardState, position, total, totals, pendingCount } = session;
 
   const [confidence, setConfidence] = useState<Confidence | null>(null);
-  const [reviewedCount, setReviewedCount] = useState(0);
+  /** Cards this visit sent a grade for (saved or queued in the outbox). */
+  const [ratedIds, setRatedIds] = useState<string[]>([]);
   const [postponing, setPostponing] = useState(false);
   const [loadingMore, setLoadingMore] = useState(false);
   const shownAt = useRef(0);
@@ -42,10 +43,9 @@ export function ReviewPage() {
   const cardHeadingRef = useRef<HTMLHeadingElement>(null);
   const summaryFocused = useRef(false);
   const cardKey = card ? `${card.card_id}:${position}` : null;
-  const latestStatus = useRef(status);
-  latestStatus.current = status;
-  const liveCardKey = useRef(cardKey);
-  liveCardKey.current = cardKey;
+  // A refused grade puts the card back on screen to answer again: it is not reviewed yet.
+  const answering = !!card && (cardState.status === 'front' || cardState.status === 'back');
+  const reviewedCount = ratedIds.filter((id) => !(answering && id === card?.card_id)).length;
 
   // A new card: reset the per-card inputs, restart the response timer and move focus to the card heading so
   // screen readers announce it and Space/1–4 work without hunting for focus.
@@ -80,7 +80,8 @@ export function ReviewPage() {
       // Rate a card once, even if a click and a key press land before the next render.
       if (!back || rating.current) return;
       rating.current = true;
-      const ratedKey = liveCardKey.current;
+      const cardId = card?.card_id;
+      if (cardId) setRatedIds((ids) => (ids.includes(cardId) ? ids : [...ids, cardId]));
       const answeredAt = flippedAt.current ?? Date.now();
       try {
         await session.grade(value, {
@@ -88,8 +89,6 @@ export function ReviewPage() {
           responseMs: Math.max(0, answeredAt - shownAt.current),
           hintCount: 0,
         });
-        // The session moves on once the grade is saved or queued; a refused grade keeps the card on screen.
-        if (liveCardKey.current !== ratedKey || latestStatus.current === 'finished') setReviewedCount((n) => n + 1);
       } finally {
         rating.current = false;
       }
@@ -101,6 +100,9 @@ export function ReviewPage() {
     async (all = false) => {
       if (postponing) return;
       setPostponing(true);
+      // A card whose grade was refused and is now postponed was not reviewed.
+      const cardId = answering ? card?.card_id : undefined;
+      if (cardId) setRatedIds((ids) => ids.filter((id) => id !== cardId));
       try {
         // The session reports refusals (limit reached, offline) itself; the next card or the summary shows success.
         await session.postpone(all);
@@ -110,7 +112,7 @@ export function ReviewPage() {
         setPostponing(false);
       }
     },
-    [postponing, session, toast],
+    [postponing, session, toast, answering, card],
   );
 
   async function more() {
