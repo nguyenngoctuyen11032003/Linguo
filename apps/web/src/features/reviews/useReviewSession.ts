@@ -139,8 +139,11 @@ function queuedCardIds(userId: string): Set<string> {
  * Spec 3 §6: a review session for the current learning path. Loads the queue, flips and grades cards (each grade
  * has its own idempotency key; offline or unanswered grades go to the review outbox and the session moves on),
  * postpones, serves "+10 thẻ nữa" and loads the summary after the last card.
+ *
+ * `limit` caps the batch (spec 6: a review activity of a study session takes at most its review_limit cards; the
+ * server serves at most 100 per call). Default: REVIEW_QUEUE_LIMIT.
  */
-export function useReviewSession(): ReviewSessionApi {
+export function useReviewSession({ limit }: { limit?: number } = {}): ReviewSessionApi {
   const { user } = useAuth();
   const userId = user?.id ?? null;
   const { currentId: pathId, status: pathsStatus } = useLearningPaths();
@@ -183,7 +186,7 @@ export function useReviewSession(): ReviewSessionApi {
       return;
     }
     dispatch({ type: 'loading' });
-    getReviewQueue(client, pathId)
+    getReviewQueue(client, pathId, limit ? { limit } : {})
       .then((queue) => {
         if (sessionRef.current !== session) return;
         const queued = queuedCardIds(userId);
@@ -193,7 +196,7 @@ export function useReviewSession(): ReviewSessionApi {
         if (sessionRef.current !== session) return;
         dispatch({ type: 'failed', error: reviewErrorMessage(error) });
       });
-  }, [client, userId, pathId, waitingForPath, loadAttempt]);
+  }, [client, userId, pathId, waitingForPath, loadAttempt, limit]);
 
   // ---- summary (after the last card, or when there was nothing to review) ---------------------------------
   const summaryRequest = useRef(0);

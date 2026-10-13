@@ -1075,6 +1075,88 @@ function createAiBackend(opts: AiMockOptions = {}) {
   };
 }
 
+// ==== BEGIN session planner mocks (spec 6, task P4: home TodayCard + lesson/review return) =====================
+// get_today_session and update_session_item only. The session page's own RPCs (get_session_inputs,
+// save_session_plan, reorder_session, finish_session) are expected to join this block when it lands.
+
+export const SESSION_ID = '5e551011-0000-4000-8000-000000000001';
+
+export interface SessionMockOptions {
+  /** The study session get_today_session returns (default none). Its activities are updated in place. */
+  session?: Row | null;
+  /** Default 30. */
+  dailyGoalMinutes?: number;
+  /** Default 0. */
+  studiedSecondsToday?: number;
+  /** Answer like PostgREST when the function is not deployed (404 PGRST202). */
+  missing?: boolean;
+}
+
+export interface MockSessionItemUpdate {
+  sessionId: string;
+  itemId: string;
+  status: string;
+  seconds: number;
+}
+
+/** A study session row as get_today_session returns it; activities default to a review, a lesson and a practice. */
+export function studySessionRow(overrides: Row = {}, activities?: Row[]): Row {
+  const activity = (a: Row): Row => ({ lesson_id: null, review_limit: null, priority: 50, status: 'pending', seconds_spent: 0, ...a });
+  return {
+    id: SESSION_ID,
+    path_id: '5e551011-0000-4000-8000-0000000000aa',
+    local_date: localDate(),
+    status: 'in_progress',
+    minutes_planned: 30,
+    plan: {
+      minutes: 30,
+      activities: (
+        activities ?? [
+          { id: 'a1', kind: 'review', minutes: 6, review_limit: 2, title_vi: 'Ôn thẻ đến hạn', reason_vi: 'Có 4 thẻ đến hạn hôm nay.', priority: 90 },
+          { id: 'a2', kind: 'lesson', minutes: 10, lesson_id: DEMO_LESSONS.enHello.id, title_vi: 'Xin chào!', reason_vi: 'Bài tiếp theo trong lộ trình.', priority: 70 },
+          { id: 'a3', kind: 'practice', minutes: 10, lesson_id: DEMO_LESSONS.enHello.id, title_vi: 'Nghe', reason_vi: 'Kỹ năng nghe đang yếu nhất.', priority: 60 },
+        ]
+      ).map(activity),
+      focus_vi: 'Ưu tiên ôn tập: 4 thẻ đến hạn',
+      backlog_mode: false,
+    },
+    created_at: '2026-10-13T01:00:00Z',
+    started_at: '2026-10-13T01:05:00Z',
+    completed_at: null,
+    ...overrides,
+  };
+}
+
+function createSessionBackend(opts: SessionMockOptions = {}) {
+  const session: Row | null = opts.session ? structuredClone(opts.session) : null;
+  const updates: MockSessionItemUpdate[] = [];
+  let studied = opts.studiedSecondsToday ?? 0;
+  const missing = { status: 404, json: { code: 'PGRST202', message: 'Could not find the function', details: null, hint: null } };
+
+  function handle(pathname: string, b: Row): { status?: number; json: unknown } | null {
+    switch (pathname) {
+      case '/rest/v1/rpc/get_today_session':
+        if (opts.missing) return missing;
+        return { json: { session, studied_seconds_today: studied, daily_goal_minutes: opts.dailyGoalMinutes ?? 30 } };
+      case '/rest/v1/rpc/update_session_item': {
+        if (opts.missing) return missing;
+        if (!session || b.p_session_id !== session.id) return rpcError('session_not_found');
+        const item = (session.plan.activities as Row[]).find((a) => a.id === b.p_item_id);
+        if (!item) return rpcError('item_not_found');
+        const seconds = Math.min(7200, Math.max(0, Number(b.p_seconds)));
+        updates.push({ sessionId: String(b.p_session_id), itemId: String(b.p_item_id), status: String(b.p_status), seconds });
+        Object.assign(item, { status: b.p_status, seconds_spent: item.seconds_spent + seconds });
+        studied += seconds;
+        return { status: 204, json: null };
+      }
+    }
+    return null;
+  }
+
+  return { handle, updates: () => [...updates] };
+}
+// ==== END session planner mocks ==================================================================================
+
 interface MockOptions {
   /** AI tutor function and RPCs (spec 5). */
   ai?: AiMockOptions;
@@ -1087,6 +1169,8 @@ interface MockOptions {
   paths?: Array<Record<string, unknown>>;
   /** Review cards (spec 3); defaults to 4 cards due today on every path. */
   reviews?: ReviewMockOptions;
+  /** Study session planner (spec 6): get_today_session / update_session_item. */
+  session?: SessionMockOptions;
 }
 
 /**
@@ -1100,6 +1184,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
   const reviews = createReviewBackend(paths, opts.reviews);
   const diagnostic = createDiagnosticBackend(paths, opts.diagnostic);
   const ai = createAiBackend(opts.ai);
+  const sessions = createSessionBackend(opts.session);
 
   await page.route(`${SUPABASE_URL}/**`, async (route) => {
     const url = new URL(route.request().url());
@@ -1167,7 +1252,8 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
         ? (lessons.handle(url.pathname, body()) ??
           reviews.handle(url.pathname, body()) ??
           diagnostic.handle(url.pathname, body()) ??
-          ai.handle(url.pathname, body()))
+          ai.handle(url.pathname, body()) ??
+          sessions.handle(url.pathname, body()))
         : null;
     if (lessonReply) {
       if (lessonReply.status === 204) return route.fulfill({ status: 204, body: '' });
@@ -1183,6 +1269,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
     diagnosticAttempts: diagnostic.attempts,
     ai: ai.controls,
     paths: () => paths.map((p) => ({ ...p })),
+    sessionUpdates: sessions.updates,
   };
 }
 

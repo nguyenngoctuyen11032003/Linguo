@@ -18,6 +18,9 @@ vi.mock('@/features/lesson-player/usePathLessons', () => ({
   }),
 }));
 vi.mock('@/features/reviews/useReviewDue', () => ({ useReviewDue: () => ({ status: 'ready', count: 8, reload: () => {} }) }));
+vi.mock('@/features/session-link/useTodaySession', () => ({
+  useTodaySession: () => ({ status: 'ready', data: { session: null, studied_seconds_today: 0, daily_goal_minutes: 30 }, reload: () => {} }),
+}));
 vi.mock('@/features/diagnostic/useDiagnosticStatus', () => ({
   useDiagnosticStatus: () => ({
     status: 'ready',
@@ -38,7 +41,14 @@ describe('HomePage', () => {
     expect(screen.getByText('A2 → B1')).toBeInTheDocument();
     expect(screen.getByText('Khoảng 43–69 tuần')).toBeInTheDocument();
     expect(screen.getByText('Chưa đủ dữ liệu (tự đánh giá)')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Bắt đầu phiên học' })).toBeDisabled();
+  });
+
+  it('puts the study session card of today first', () => {
+    renderWithProviders(<HomePage />, { route: '/app' });
+    const today = screen.getByRole('heading', { level: 2, name: 'Hôm nay' });
+    expect(today.compareDocumentPosition(screen.getByText('Lộ trình của bạn')) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(screen.getByRole('link', { name: 'Bắt đầu phiên học' })).toHaveAttribute('href', '/app/phien-hoc');
+    expect(screen.queryByRole('button', { name: 'Bắt đầu phiên học' })).not.toBeInTheDocument();
   });
 
   it('shows the next lesson under the path card', () => {
@@ -105,6 +115,7 @@ describe('HomePage', () => {
     mocks.setPathStatus.mockResolvedValue({ ...TEST_PATH, status: 'active' });
     renderWithProviders(<HomePage />, { route: '/app', paths: { paths: [{ ...TEST_PATH, status: 'paused' }], upsertPath } });
     expect(screen.getByText('Đang tạm dừng')).toBeInTheDocument();
+    expect(screen.queryByRole('heading', { level: 2, name: 'Hôm nay' })).not.toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: 'Tiếp tục lộ trình' }));
     expect(mocks.setPathStatus).toHaveBeenCalledWith({}, 'path-en', 'active');
     expect(upsertPath).toHaveBeenCalledWith({ ...TEST_PATH, status: 'active' });

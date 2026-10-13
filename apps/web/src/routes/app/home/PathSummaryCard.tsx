@@ -52,19 +52,11 @@ export function PathSummaryCard({ path, timeZone, onResume, resuming, headingRef
           <dd className="font-semibold">Chưa đủ dữ liệu (tự đánh giá)</dd>
         </div>
       </dl>
-      {path.status === 'paused' ? (
+      {/* Starting a study session lives in TodayCard above. */}
+      {path.status === 'paused' && (
         <Button variant="primary" size="lg" block loading={resuming} onClick={onResume}>
           Tiếp tục lộ trình
         </Button>
-      ) : (
-        <div className="space-y-2">
-          <Button variant="accent" size="lg" block disabled aria-describedby="session-soon">
-            Bắt đầu phiên học
-          </Button>
-          <p id="session-soon" className="text-center text-sm text-muted">
-            Sắp ra mắt trong bản cập nhật tới.
-          </p>
-        </div>
       )}
       <Link to="/app/cai-dat#lo-trinh" className="inline-flex min-h-11 items-center font-semibold text-primary underline-offset-4 hover:underline">
         Sửa kế hoạch

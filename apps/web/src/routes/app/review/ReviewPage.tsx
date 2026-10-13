@@ -12,6 +12,7 @@ import { useToast } from '@/components/ui/Toast';
 import type { Confidence } from '@/features/reviews/types';
 import { useReviewSession } from '@/features/reviews/useReviewSession';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
+import { useSessionReturn } from '@/features/session-link/useSessionReturn';
 import { levelForCard, reviewAiState } from './ai';
 import { RecallConfidence } from './RecallConfidence';
 import { hasMoreCards } from './more';
@@ -30,7 +31,11 @@ function Heading() {
 
 /** /app/on-tap: the daily flashcard review (spec 3 §6). Scheduling stays on the server; this screen only rates. */
 export function ReviewPage() {
-  const session = useReviewSession();
+  /** Opened from a study session (?phien=&muc=&so-the=): take at most so-the cards, then report and lead back. */
+  const sessionReturn = useSessionReturn();
+  const fromSession = sessionReturn.link !== null;
+  const reviewLimit = sessionReturn.link?.reviewLimit ?? undefined;
+  const session = useReviewSession({ limit: reviewLimit });
   const toast = useToast();
   const navigate = useNavigate();
   const learningPaths = useLearningPaths();
@@ -43,6 +48,7 @@ export function ReviewPage() {
   const [ratedIds, setRatedIds] = useState<string[]>([]);
   const [postponing, setPostponing] = useState(false);
   const [loadingMore, setLoadingMore] = useState(false);
+  const [returning, setReturning] = useState(false);
   const shownAt = useRef(0);
   const flippedAt = useRef<number | null>(null);
   const rating = useRef(false);
@@ -72,6 +78,23 @@ export function ReviewPage() {
     summaryFocused.current = true;
     document.getElementById('review-summary-title')?.focus();
   }, [status]);
+
+  // The activity is over when the (limited) queue is done or there was nothing to review.
+  const activityOver = status === 'finished' || status === 'empty';
+  const { reportDone } = sessionReturn;
+  useEffect(() => {
+    if (fromSession && activityOver) void reportDone();
+  }, [fromSession, activityOver, reportDone]);
+
+  async function backToSession() {
+    setReturning(true);
+    try {
+      await sessionReturn.returnToSession();
+    } finally {
+      setReturning(false);
+    }
+  }
+  const sessionAction = fromSession ? { onReturn: () => void backToSession(), returning } : undefined;
 
   const front = cardState.status === 'front';
   const back = cardState.status === 'back';
@@ -178,10 +201,15 @@ export function ReviewPage() {
           description="Học bài mới để có thêm thẻ, hoặc quay lại vào ngày mai."
           action={
             <div className="flex w-full max-w-xs flex-col gap-3">
-              <Link to="/app/hoc-tap" className={buttonClasses('accent', 'lg', true)}>
+              {sessionAction && (
+                <Button variant="accent" size="lg" block loading={returning} onClick={sessionAction.onReturn}>
+                  Quay lại phiên học
+                </Button>
+              )}
+              <Link to="/app/hoc-tap" className={buttonClasses(sessionAction ? 'ghost' : 'accent', 'lg', true)}>
                 Học bài mới
               </Link>
-              {hasMoreCards(totals) && (
+              {!sessionAction && hasMoreCards(totals) && (
                 <Button variant="ghost" size="lg" block loading={loadingMore} onClick={() => void more()}>
                   +10 thẻ nữa
                 </Button>
@@ -206,6 +234,7 @@ export function ReviewPage() {
           loadingMore={loadingMore}
           onMore={() => void more()}
           onDone={() => navigate('/app')}
+          session={sessionAction}
         />
       </div>
     );

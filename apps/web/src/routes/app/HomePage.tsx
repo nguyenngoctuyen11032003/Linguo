@@ -15,6 +15,7 @@ import { NextLessonCard } from './home/NextLessonCard';
 import { PathSummaryCard } from './home/PathSummaryCard';
 import { ReviewDueCard } from './home/ReviewDueCard';
 import { SpreadWarning } from './home/SpreadWarning';
+import { TodayCard } from './home/TodayCard';
 
 const todayLabel = (timeZone: string) =>
   new Intl.DateTimeFormat('vi-VN', { weekday: 'long', day: 'numeric', month: 'long', timeZone }).format(new Date());
@@ -66,6 +67,8 @@ export function HomePage() {
       {paths.status === 'error' && <ErrorState title="Không tải được lộ trình" onRetry={paths.reload} />}
       {paths.status !== 'error' && paths.current && (
         <>
+          {/* A paused path has no study session; its summary card offers to resume it. */}
+          {paths.current.status === 'active' && <TodayCard key={paths.current.id} pathId={paths.current.id} />}
           <SpreadWarning paths={paths.paths} />
           <PathSummaryCard
             path={paths.current}
