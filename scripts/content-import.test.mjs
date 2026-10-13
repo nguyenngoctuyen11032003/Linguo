@@ -650,3 +650,53 @@ test('--dir and --out without a value exit 2', async (t) => {
     assert.match(r.err, /needs a value/);
   }
 });
+
+// ---- mcq/listen option order (the authored order must not hint at the answer) ---------------------------
+
+const REAL_CONTENT = join(here, '..', 'content');
+const OPTION_TYPES = new Set(['mcq', 'listen']);
+
+function authoredExercises(loaded) {
+  return new Map(loaded.files.filter((f) => f.kind === 'lesson').flatMap((f) => f.data.exercises.map((ex) => [ex.key, ex])));
+}
+
+test('build shuffles mcq/listen options deterministically by exercise key', () => {
+  const loaded = loadContent(REAL_CONTENT, { label: 'content' });
+  assert.deepEqual(checkContent(loaded, { grade }), []);
+  const first = buildBundle(loaded);
+  const second = buildBundle(loadContent(REAL_CONTENT, { label: 'content' }));
+  assert.equal(renderSeedSql(first), renderSeedSql(second), 'two builds are identical');
+
+  const authored = authoredExercises(loaded);
+  const optionExercises = first.exercises.filter((e) => OPTION_TYPES.has(e.exercise_type));
+  assert.ok(optionExercises.length >= 10, 'real content has mcq/listen exercises');
+
+  let reordered = 0;
+  const correctSlots = new Set();
+  const byId = (list) => [...list].sort((a, b) => (a.id < b.id ? -1 : 1));
+  for (const e of optionExercises) {
+    const source = authored.get(e.key);
+    // Same options (ids, texts, langs); only their order may differ.
+    assert.deepEqual(byId(e.prompt.options), byId(source.prompt.options), e.key);
+    // Everything else in the prompt is untouched.
+    assert.deepEqual({ ...e.prompt, options: null }, { ...source.prompt, options: null }, e.key);
+    if (e.prompt.options.some((o, i) => o.id !== source.prompt.options[i].id)) reordered++;
+    const slot = e.prompt.options.findIndex((o) => o.id === e.key_data.answer_key.correct_option_id);
+    assert.ok(slot >= 0, e.key);
+    correctSlots.add(slot === e.prompt.options.length - 1 ? 'last' : slot);
+  }
+  assert.ok(reordered > 0, 'some options are reordered');
+  assert.ok(correctSlots.size > 1, 'the correct option is not always in the same slot');
+  assert.ok(correctSlots.has('last'), 'the correct option sometimes sits in the last slot');
+});
+
+test('build leaves other exercise types and the loaded content untouched', () => {
+  const loaded = loadContent(REAL_CONTENT, { label: 'content' });
+  const before = JSON.stringify(loaded.files.map((f) => f.data));
+  const bundle = buildBundle(loaded);
+  assert.equal(JSON.stringify(loaded.files.map((f) => f.data)), before, 'loaded content is not mutated');
+  const authored = authoredExercises(loaded);
+  for (const e of bundle.exercises.filter((x) => !OPTION_TYPES.has(x.exercise_type))) {
+    assert.deepEqual(e.prompt, authored.get(e.key).prompt, e.key);
+  }
+});
