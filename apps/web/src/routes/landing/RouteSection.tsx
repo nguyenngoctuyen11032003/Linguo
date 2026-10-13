@@ -9,31 +9,34 @@ const TRACKS: RouteTrack[] = [
   {
     id: 'en',
     color: '#4CA2D1',
-    d: 'M20 50 C60 10 100 90 140 60 C180 30 220 100 260 70 C285 52 295 40 304 34',
+    d: 'M28 50 C64 10 104 90 140 60 C180 30 220 100 260 70 C280 56 286 44 292 34',
     stops: [
-      { x: 20, y: 50, label: 'Nền tảng', labelPosition: 'bottom' },
+      { x: 28, y: 50, label: 'Nền tảng', labelPosition: 'bottom', anchor: 'start' },
       { x: 140, y: 60, label: 'A1–A2', labelPosition: 'bottom' },
       { x: 260, y: 70, label: 'B1–B2', labelPosition: 'bottom' },
-      { x: 304, y: 34, label: 'C1–C2', labelPosition: 'top' },
+      { x: 292, y: 34, label: 'C1–C2', labelPosition: 'top', anchor: 'end' },
     ],
   },
   {
     id: 'ko',
     color: '#F37D25',
-    d: 'M20 190 C70 230 110 140 150 170 C190 200 230 130 270 150 C290 160 298 172 304 186',
+    d: 'M28 190 C72 230 110 140 150 170 C190 200 230 130 270 150 C284 160 290 172 292 186',
     stops: [
-      { x: 20, y: 190, label: 'Hangul', labelPosition: 'top' },
+      { x: 28, y: 190, label: 'Hangul', labelPosition: 'top', anchor: 'start' },
       { x: 150, y: 170, label: 'TOPIK I', labelPosition: 'bottom' },
       { x: 270, y: 150, label: 'TOPIK II', labelPosition: 'top' },
-      { x: 304, y: 186, label: 'Cấp 5–6', labelPosition: 'bottom' },
+      { x: 292, y: 186, label: 'Cấp 5–6', labelPosition: 'bottom', anchor: 'end' },
     ],
   },
 ];
 
+// Badge centres as % of the 320x240 viewBox (x/320, y/240). Each sits in an empty pocket of the map, clear of both
+// tracks, every stop and every stop label by >= ~26 viewBox units (badge radius <= 17.6 + 8px float travel).
+//   Đọc (150,16) above the EN track; Nghe (212,118) and Nói (62,118) in the gap between the two tracks.
 const FLOATERS: Array<{ icon: LucideIcon; label: string; left: string; top: string; duration: number }> = [
-  { icon: BookOpen, label: 'Đọc', left: '30%', top: '8%', duration: 2.8 },
-  { icon: Headphones, label: 'Nghe', left: '68%', top: '40%', duration: 3.3 },
-  { icon: MessageCircle, label: 'Nói', left: '12%', top: '62%', duration: 2.5 },
+  { icon: BookOpen, label: 'Đọc', left: '46.9%', top: '6.7%', duration: 2.8 },
+  { icon: Headphones, label: 'Nghe', left: '66.3%', top: '49.2%', duration: 3.3 },
+  { icon: MessageCircle, label: 'Nói', left: '19.4%', top: '49.2%', duration: 2.5 },
 ];
 
 export function RouteSection() {
@@ -66,7 +69,7 @@ export function RouteSection() {
             <motion.span
               key={label}
               aria-hidden="true"
-              className="absolute inline-flex w-[13%] max-w-14 items-center justify-center rounded-full bg-white p-[3%] text-[#0B1420] shadow-[0_8px_24px_rgb(0_0_0/0.35)]"
+              className="absolute inline-flex w-[11%] max-w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#0B1420] shadow-[0_8px_24px_rgb(0_0_0/0.35)]"
               style={{ left, top, aspectRatio: '1 / 1' }}
               initial={{ opacity: 0, scale: reduceMotion ? 1 : 0.5 }}
               animate={state === 'shown' ? { opacity: 1, scale: 1, y: reduceMotion ? 0 : [0, -8, 0] } : { opacity: 0 }}
@@ -76,7 +79,7 @@ export function RouteSection() {
                 y: { duration, repeat: Infinity, ease: 'easeInOut' },
               }}
             >
-              <Icon className="size-full" />
+              <Icon className="size-[56%]" />
             </motion.span>
           ))}
         </div>
