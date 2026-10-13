@@ -198,11 +198,9 @@ jobs:
       - name: Chặn secret lọt vào biến VITE_*
         run: node scripts/check-public-env.mjs --strict
       - run: pnpm build
-      - name: Bundle must not contain secret keys
-        run: |
-          if grep -rqE "sb_secret_[A-Za-z0-9_-]{20,}" apps/web/dist; then
-            echo "::error::Found a Supabase secret key in the built bundle"; exit 1
-          fi
+      # Google/Supabase secret keys, service_role JWTs and source maps (scripts/check-bundle-secrets.mjs).
+      - name: Bundle must not contain secret keys or source maps
+        run: pnpm check:bundle
       - uses: actions/upload-pages-artifact@v5
         with:
           path: apps/web/dist
