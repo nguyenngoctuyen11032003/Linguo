@@ -70,6 +70,10 @@ jobs:
           else
             migrations=$(changed supabase/migrations); functions=$(changed supabase/functions)
           fi
+          # No Edge Functions in the repo yet (no supabase/functions/*/index.ts): never request the
+          # second "production" approval for a job that would deploy nothing. This also overrides a
+          # forced workflow_dispatch "functions = true" (there is nothing to deploy anyway).
+          ls supabase/functions/*/index.ts >/dev/null 2>&1 || functions=false
           echo "migrations=$migrations" >> "$GITHUB_OUTPUT"
           echo "functions=$functions" >> "$GITHUB_OUTPUT"
 
