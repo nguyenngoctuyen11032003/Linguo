@@ -602,8 +602,357 @@ function createReviewBackend(paths: Array<Record<string, unknown>>, opts: Review
   return { handle, grades: () => [...grades], postponeCalls: () => [...postponeCalls] };
 }
 
+// ---- diagnostic backend: spec 4 §4 RPCs over a tiny English bank, scored with a simple staircase -----------------
+
+const DIAG_SKILLS = ['vocabulary', 'grammar', 'reading'] as const;
+type DiagSkill = (typeof DIAG_SKILLS)[number];
+const DIAG_MAX: Record<DiagSkill, number> = { vocabulary: 4, grammar: 4, reading: 3 };
+const DIAG_TOTAL_MAX = { full: 11, foundation: 6 } as const;
+const DIAG_COOLDOWN_DAYS = 14;
+const DIAG_REASONS = ['no_time', 'too_hard', 'not_my_goal', 'other'];
+
+export interface DiagnosticBankItem {
+  id: string;
+  skill: DiagSkill;
+  /** Level ordinal 0..6 (pre_a1..c2); the item difficulty is ordinal + 0.5. */
+  level: number;
+  item_type: 'mcq' | 'cloze_choice' | 'reading_mcq';
+  stem: string;
+  stem_lang: 'en' | 'vi';
+  passage: string | null;
+  options: Array<{ id: string; text: string }>;
+  /** Private: never sent to the browser. */
+  answer: string;
+}
+
+const diagId = (n: number) => `d1a90000-0000-4000-8000-${String(n).padStart(12, '0')}`;
+
+const VOCAB: Array<[string, string, string[]]> = [
+  ['Chọn nghĩa của "apple"', 'quả táo', ['con mèo', 'cái bàn', 'màu xanh']],
+  ['Chọn nghĩa của "kitchen"', 'nhà bếp', ['phòng ngủ', 'khu vườn', 'cửa sổ']],
+  ['Chọn nghĩa của "borrow"', 'mượn', ['bán', 'đánh rơi', 'sửa chữa']],
+  ['Chọn nghĩa của "reliable"', 'đáng tin cậy', ['ồn ào', 'đắt đỏ', 'mệt mỏi']],
+  ['Chọn nghĩa của "to postpone"', 'hoãn lại', ['phóng đại', 'bày tỏ', 'thăng chức']],
+  ['Chọn nghĩa của "meticulous"', 'tỉ mỉ', ['hời hợt', 'liều lĩnh', 'thờ ơ']],
+  ['Chọn nghĩa của "ubiquitous"', 'có mặt khắp nơi', ['hiếm hoi', 'mơ hồ', 'lỗi thời']],
+];
+const GRAMMAR: Array<[string, string, string[]]> = [
+  ['She ___ a student.', 'is', ['am', 'are', 'be']],
+  ['I ___ coffee every morning.', 'drink', ['drinks', 'drinking', 'drank to']],
+  ['We ___ to Da Nang last summer.', 'went', ['go', 'have gone', 'going']],
+  ['If it rains, we ___ at home.', 'will stay', ['stayed', 'would stayed', 'staying']],
+  ['The report ___ by Friday.', 'must be finished', ['must finish', 'must finished', 'must be finish']],
+  ['Had I known, I ___ earlier.', 'would have left', ['will leave', 'had leave', 'would leave to']],
+  ['Not until the results came out ___ the scale of the problem.', 'did we realise', ['we realised', 'we did realise', 'realised we']],
+];
+const READING: Array<[string, string, string, string[]]> = [
+  ['Tom has a dog. The dog is black. It likes to run in the park.', 'What colour is the dog?', 'Black', ['White', 'Brown', 'Grey']],
+  ['The library opens at 9 a.m. on weekdays and at 10 a.m. on Saturdays. It is closed on Sundays.', 'When does the library open on Saturday?', 'At 10 a.m.', ['At 9 a.m.', 'It is closed', 'At noon']],
+  ['Remote work saves commuting time, but some employees report feeling isolated from their teams.', 'What problem do some remote workers mention?', 'Feeling isolated', ['Long commutes', 'Low salaries', 'Too many meetings']],
+  ['Although the policy was intended to cut emissions, critics argue it merely shifted pollution to neighbouring regions.', 'What do critics say about the policy?', 'It moved pollution elsewhere', ['It cut emissions sharply', 'It had no critics', 'It raised taxes']],
+];
+
+export const DIAGNOSTIC_BANK: DiagnosticBankItem[] = (() => {
+  const bank: DiagnosticBankItem[] = [];
+  let n = 0;
+  const add = (skill: DiagSkill, level: number, item_type: DiagnosticBankItem['item_type'], stem: string, stem_lang: 'en' | 'vi', passage: string | null, right: string, wrong: string[]) => {
+    n += 1;
+    // Rotate the right answer so its position carries no signal.
+    const texts = [...wrong];
+    texts.splice(n % (wrong.length + 1), 0, right);
+    const options = texts.map((text, i) => ({ id: `o${i + 1}`, text }));
+    bank.push({ id: diagId(n), skill, level, item_type, stem, stem_lang, passage, options, answer: options.find((o) => o.text === right)!.id });
+  };
+  VOCAB.forEach(([stem, right, wrong], level) => add('vocabulary', level, 'mcq', stem, 'vi', null, right, wrong));
+  GRAMMAR.forEach(([stem, right, wrong], level) => add('grammar', level, 'cloze_choice', stem, 'en', null, right, wrong));
+  READING.forEach(([passage, stem, right, wrong], i) => add('reading', i + 1, 'reading_mcq', stem, 'en', passage, right, wrong));
+  return bank;
+})();
+
+/** Text of the right option for a bank item (specs answer through the UI; the key never crosses the network). */
+export function diagnosticCorrectText(itemId: string): string {
+  const item = DIAGNOSTIC_BANK.find((i) => i.id === itemId);
+  if (!item) throw new Error(`unknown diagnostic item ${itemId}`);
+  return item.options.find((o) => o.id === item.answer)!.text;
+}
+
+interface DiagResponse {
+  itemId: string;
+  skill: DiagSkill;
+  choice: string | null;
+  correct: boolean;
+}
+
+interface DiagAttempt {
+  id: string;
+  pathId: string;
+  mode: 'full' | 'foundation';
+  status: 'in_progress' | 'completed' | 'abandoned';
+  skill: DiagSkill | null;
+  /** Staircase position per skill (level ordinal). */
+  stair: Record<DiagSkill, number>;
+  currentItemId: string | null;
+  responses: DiagResponse[];
+  skipped: Partial<Record<DiagSkill, string>>;
+  report: Row | null;
+  completedAt: string | null;
+  appliedAt: string | null;
+}
+
+export interface DiagnosticMockOptions {
+  /** Seed a completed attempt per path id, finished at the given ISO time (cooldown runs 14 days from it). */
+  completedAt?: Record<string, string>;
+}
+
+/** Stateful stand-in for diagnostic_status / start / answer / skip / finish / accept (spec 4 §4). */
+function createDiagnosticBackend(paths: Array<Record<string, unknown>>, opts: DiagnosticMockOptions = {}) {
+  const attempts: DiagAttempt[] = [];
+  const levels = (lang: unknown) => (lang === 'ko' ? ['hangul', 'topik1', 'topik2', 'topik3', 'topik4', 'topik5', 'topik6'] : ['pre_a1', 'a1', 'a2', 'b1', 'b2', 'c1', 'c2']);
+  const pathOf = (pathId: unknown) => paths.find((p) => p.id === pathId && p.status !== 'archived');
+  const latest = (pathId: string) => attempts.filter((a) => a.pathId === pathId).at(-1);
+  const addDays = (iso: string, days: number) => new Date(new Date(iso).getTime() + days * DAY_MS).toISOString();
+  const newStair = (n: number): Record<DiagSkill, number> => ({ vocabulary: n, grammar: n, reading: n });
+
+  for (const [pathId, completedAt] of Object.entries(opts.completedAt ?? {})) {
+    const report = { completed_at: completedAt };
+    attempts.push({ id: randomUUID(), pathId, mode: 'full', status: 'completed', skill: null, stair: newStair(1), currentItemId: null, responses: [], skipped: {}, report, completedAt, appliedAt: null });
+  }
+
+  const answered = (a: DiagAttempt, skill: DiagSkill) => a.responses.filter((r) => r.skill === skill).length;
+  const skillDone = (a: DiagAttempt, skill: DiagSkill) => skill in a.skipped || answered(a, skill) >= DIAG_MAX[skill] || !candidates(a, skill).length;
+  function candidates(a: DiagAttempt, skill: DiagSkill) {
+    const seen = new Set(a.responses.map((r) => r.itemId));
+    return DIAGNOSTIC_BANK.filter((i) => i.skill === skill && !seen.has(i.id) && (a.mode === 'full' || i.level <= 1));
+  }
+
+  /** Moves to the next item: same skill until its stop rule, then the next skill; null when the test is over. */
+  function advance(a: DiagAttempt) {
+    a.currentItemId = null;
+    if (a.responses.length >= DIAG_TOTAL_MAX[a.mode]) {
+      a.skill = null;
+      return;
+    }
+    a.skill = DIAG_SKILLS.find((s) => !skillDone(a, s)) ?? null;
+    if (!a.skill) return;
+    const target = a.stair[a.skill];
+    const pool = candidates(a, a.skill).sort((x, y) => Math.abs(x.level - target) - Math.abs(y.level - target) || x.id.localeCompare(y.id));
+    a.currentItemId = pool[0]?.id ?? null;
+  }
+
+  function publicItem(id: string | null) {
+    const item = DIAGNOSTIC_BANK.find((i) => i.id === id);
+    if (!item) return null;
+    return {
+      id: item.id,
+      skill: item.skill,
+      item_type: item.item_type,
+      prompt: { stem: item.stem, stem_lang: item.stem_lang, passage: item.passage, options: item.options.map((o) => ({ id: o.id, text: o.text, lang: item.stem_lang === 'vi' ? 'vi' : 'en' })) },
+    };
+  }
+
+  function step(a: DiagAttempt, resumed = false) {
+    const done = a.status !== 'in_progress' || a.currentItemId === null;
+    return {
+      attempt_id: a.id,
+      mode: a.mode,
+      item: done ? null : publicItem(a.currentItemId),
+      progress: {
+        skills: DIAG_SKILLS.map((s) => ({
+          skill: s,
+          status: s in a.skipped ? 'skipped' : a.skill === s ? 'active' : skillDone(a, s) ? 'done' : 'pending',
+          fill: Math.min(1, answered(a, s) / DIAG_MAX[s]),
+        })),
+        near_end: a.responses.length >= DIAG_TOTAL_MAX[a.mode] - 2,
+      },
+      done,
+      resumed,
+    };
+  }
+
+  function status(b: Row) {
+    const pathId = String(b.p_path_id);
+    if (!pathOf(pathId)) return rpcError('path_not_found');
+    const a = latest(pathId);
+    const retakeAfter = a?.completedAt ? addDays(a.completedAt, DIAG_COOLDOWN_DAYS) : null;
+    return {
+      json: {
+        attempt_id: a?.id ?? null,
+        status: a?.status ?? 'none',
+        completed_at: a?.completedAt ?? null,
+        applied_at: a?.appliedAt ?? null,
+        retake_after: retakeAfter,
+        can_start: a?.status === 'in_progress' || !retakeAfter || Date.now() >= Date.parse(retakeAfter),
+      },
+    };
+  }
+
+  function start(b: Row) {
+    const path = pathOf(b.p_path_id);
+    if (!path) return rpcError('path_not_found');
+    const pathId = String(path.id);
+    if (path.language_code !== 'en') return rpcError('bank_unavailable');
+    const open = attempts.find((a) => a.pathId === pathId && a.status === 'in_progress');
+    if (open) return { json: step(open, true) };
+    const done = attempts.filter((a) => a.pathId === pathId && a.completedAt).at(-1);
+    if (done && Date.now() < Date.parse(addDays(done.completedAt!, DIAG_COOLDOWN_DAYS))) return rpcError('diagnostic_cooldown');
+    const mode = b.p_mode === 'foundation' ? 'foundation' : 'full';
+    const begin = mode === 'foundation' ? 0 : Math.max(0, levels(path.language_code).indexOf(String(path.current_level)));
+    const a: DiagAttempt = {
+      id: randomUUID(),
+      pathId,
+      mode,
+      status: 'in_progress',
+      skill: 'vocabulary',
+      stair: newStair(begin),
+      currentItemId: null,
+      responses: [],
+      skipped: {},
+      report: null,
+      completedAt: null,
+      appliedAt: null,
+    };
+    attempts.push(a);
+    advance(a);
+    return { json: step(a) };
+  }
+
+  const activeAttempt = (id: unknown): DiagAttempt | { error: ReturnType<typeof rpcError> } => {
+    const a = attempts.find((x) => x.id === id);
+    if (!a) return { error: rpcError('attempt_not_found') };
+    if (a.status !== 'in_progress') return { error: rpcError('attempt_not_active') };
+    return a;
+  };
+
+  function answer(b: Row) {
+    const a = activeAttempt(b.p_attempt_id);
+    if ('error' in a) return a.error;
+    if (a.responses.some((r) => r.itemId === b.p_item_id)) return rpcError('already_answered');
+    if (b.p_item_id !== a.currentItemId) return rpcError('item_mismatch');
+    const item = DIAGNOSTIC_BANK.find((i) => i.id === a.currentItemId)!;
+    const choice = (b.p_choice as string | null | undefined) ?? null;
+    if (choice !== null && !item.options.some((o) => o.id === choice)) return rpcError('invalid_choice');
+    const correct = choice === item.answer;
+    a.responses.push({ itemId: item.id, skill: item.skill, choice, correct });
+    a.stair[item.skill] = Math.min(6, Math.max(0, a.stair[item.skill] + (correct ? 1 : -1)));
+    advance(a);
+    return { json: step(a) };
+  }
+
+  function skip(b: Row) {
+    const a = activeAttempt(b.p_attempt_id);
+    if ('error' in a) return a.error;
+    const skill = b.p_skill as DiagSkill;
+    if (!DIAG_SKILLS.includes(skill)) return rpcError('invalid_skill');
+    if (!DIAG_REASONS.includes(String(b.p_reason))) return rpcError('invalid_reason');
+    a.skipped[skill] = String(b.p_reason);
+    advance(a);
+    return { json: step(a) };
+  }
+
+  function buildReport(a: DiagAttempt, path: Row) {
+    const codes = levels(path.language_code);
+    const skills = ['vocabulary', 'grammar', 'reading', 'listening', 'writing', 'speaking'].map((skill) => {
+      const own = a.responses.filter((r) => r.skill === skill);
+      const base = { skill, level_code: null, range: null, confidence: null, sample_size: own.length, reason: null };
+      if (skill === 'listening' || skill === 'writing' || skill === 'speaking') {
+        return { ...base, status: 'not_supported', reason: skill === 'listening' ? 'no_audio' : 'not_inferred' };
+      }
+      if (skill in a.skipped) return { ...base, status: 'skipped', reason: a.skipped[skill as DiagSkill] ?? null };
+      if (own.length < 3) return { ...base, status: 'insufficient' };
+      // Staircase estimate: the highest level answered correctly (0 when none).
+      const level = Math.max(0, ...own.filter((r) => r.correct).map((r) => DIAGNOSTIC_BANK.find((i) => i.id === r.itemId)!.level));
+      return {
+        ...base,
+        status: 'estimated',
+        level_code: codes[level],
+        range: { low: codes[Math.max(0, level - 1)], high: codes[Math.min(6, level + 1)] },
+        confidence: own.length >= 4 ? 'medium' : 'low',
+      };
+    });
+    const confident = skills.filter((s) => s.status === 'estimated' && s.confidence !== 'low').map((s) => codes.indexOf(String(s.level_code))).sort((x, y) => x - y);
+    const suggested = confident.length >= 2 ? confident[Math.floor((confident.length - 1) / 2)]! : null;
+    const current = codes.indexOf(String(path.current_level));
+    const firstApplied = !attempts.some((x) => x.pathId === a.pathId && x.appliedAt);
+    const capped = suggested === null ? null : Math.min(suggested, current + (firstApplied ? 2 : 1));
+    return {
+      attempt_id: a.id,
+      learning_path_id: a.pathId,
+      language_code: path.language_code,
+      mode: a.mode,
+      completed_at: a.completedAt,
+      skills,
+      current_level: path.current_level,
+      suggested_level: suggested === null ? null : codes[suggested],
+      capped_level: capped === null ? null : codes[capped],
+      early_stop: false,
+      rapid_answer_share: 0,
+      bank_unreviewed: true,
+      applied_at: a.appliedAt,
+      retake_after: addDays(a.completedAt!, DIAG_COOLDOWN_DAYS),
+    };
+  }
+
+  function finish(b: Row) {
+    const a = attempts.find((x) => x.id === b.p_attempt_id);
+    if (!a) return rpcError('attempt_not_found');
+    const path = pathOf(a.pathId);
+    if (!path) return rpcError('path_not_found');
+    if (a.status === 'in_progress') {
+      Object.assign(a, { status: 'completed', completedAt: new Date().toISOString(), currentItemId: null, skill: null });
+      a.report = buildReport(a, path);
+    }
+    if (!a.report) return rpcError('attempt_not_completed');
+    return { json: { ...a.report, applied_at: a.appliedAt } };
+  }
+
+  function accept(b: Row) {
+    const a = attempts.find((x) => x.id === b.p_attempt_id);
+    if (!a) return rpcError('attempt_not_found');
+    if (a.status !== 'completed' || !a.report) return rpcError('attempt_not_completed');
+    if (a.appliedAt) return rpcError('already_applied');
+    const path = pathOf(a.pathId);
+    if (!path) return rpcError('path_not_found');
+    const codes = levels(path.language_code);
+    const previous = String(path.current_level);
+    const capped = a.report.capped_level as string | null;
+    const result = (outcome: string, newLevel: string) => ({
+      json: { learning_path_id: path.id, previous_level: previous, new_level: newLevel, outcome, estimate: outcome === 'applied' ? path.estimate : null },
+    });
+    if (!capped) return result('no_suggestion', previous);
+    if (capped === previous) return result('unchanged', previous);
+    if (codes.indexOf(capped) >= codes.indexOf(String(path.target_level))) return result('needs_target_update', previous);
+    Object.assign(path, { current_level: capped, updated_at: new Date().toISOString() });
+    a.appliedAt = new Date().toISOString();
+    return result('applied', capped);
+  }
+
+  function handle(pathname: string, b: Row): { status?: number; json: unknown } | null {
+    switch (pathname) {
+      case '/rest/v1/rpc/diagnostic_status':
+        return status(b);
+      case '/rest/v1/rpc/start_diagnostic':
+        return start(b);
+      case '/rest/v1/rpc/answer_diagnostic':
+        return answer(b);
+      case '/rest/v1/rpc/skip_diagnostic_skill':
+        return skip(b);
+      case '/rest/v1/rpc/finish_diagnostic':
+        return finish(b);
+      case '/rest/v1/rpc/accept_diagnostic_placement':
+        return accept(b);
+    }
+    return null;
+  }
+
+  return { handle, attempts: () => attempts.map((a) => ({ ...a, responses: [...a.responses] })) };
+}
+
 interface MockOptions {
   displayName?: string;
+  /** Placement test backend (spec 4). */
+  diagnostic?: DiagnosticMockOptions;
+  /** `uuid`: create_learning_path returns a UUID id like the real RPC (default `path-<lang>`). */
+  pathIds?: 'slug' | 'uuid';
   /** Learning path rows; defaults to one English path so existing app tests keep their home screen. */
   paths?: Array<Record<string, unknown>>;
   /** Review cards (spec 3); defaults to 4 cards due today on every path. */
@@ -619,6 +968,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
   let currentId = (paths[0]?.id as string | undefined) ?? null;
   const lessons = createLessonBackend(paths);
   const reviews = createReviewBackend(paths, opts.reviews);
+  const diagnostic = createDiagnosticBackend(paths, opts.diagnostic);
 
   await page.route(`${SUPABASE_URL}/**`, async (route) => {
     const url = new URL(route.request().url());
@@ -642,7 +992,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
       case '/rest/v1/rpc/create_learning_path': {
         const b = body();
         const row = pathRow({
-          id: `path-${String(b.p_language)}`,
+          id: opts.pathIds === 'uuid' ? randomUUID() : `path-${String(b.p_language)}`,
           language_code: b.p_language,
           start_point: b.p_start_point,
           goal_type: b.p_goal_type,
@@ -681,7 +1031,9 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
         return route.fulfill({ json: row });
       }
     }
-    const lessonReply = url.pathname.startsWith('/rest/v1/rpc/') ? (lessons.handle(url.pathname, body()) ?? reviews.handle(url.pathname, body())) : null;
+    const lessonReply = url.pathname.startsWith('/rest/v1/rpc/')
+      ? (lessons.handle(url.pathname, body()) ?? reviews.handle(url.pathname, body()) ?? diagnostic.handle(url.pathname, body()))
+      : null;
     if (lessonReply) {
       if (lessonReply.status === 204) return route.fulfill({ status: 204, body: '' });
       return route.fulfill({ status: lessonReply.status ?? 200, json: lessonReply.json });
@@ -689,7 +1041,13 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
     if (url.pathname.startsWith('/auth/v1/logout')) return route.fulfill({ status: 204, body: '' });
     return route.fulfill({ status: 404, json: { message: `not mocked: ${method} ${url.pathname}` } });
   });
-  return { submitCalls: lessons.submitCalls, reviewGrades: reviews.grades, postponeCalls: reviews.postponeCalls };
+  return {
+    submitCalls: lessons.submitCalls,
+    reviewGrades: reviews.grades,
+    postponeCalls: reviews.postponeCalls,
+    diagnosticAttempts: diagnostic.attempts,
+    paths: () => paths.map((p) => ({ ...p })),
+  };
 }
 
 function fakeJwt(payload: Record<string, unknown>): string {

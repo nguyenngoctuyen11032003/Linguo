@@ -18,6 +18,13 @@ vi.mock('@/features/lesson-player/usePathLessons', () => ({
   }),
 }));
 vi.mock('@/features/reviews/useReviewDue', () => ({ useReviewDue: () => ({ status: 'ready', count: 8, reload: () => {} }) }));
+vi.mock('@/features/diagnostic/useDiagnosticStatus', () => ({
+  useDiagnosticStatus: () => ({
+    status: 'ready',
+    data: { attempt_id: null, status: 'none', completed_at: null, applied_at: null, retake_after: null, can_start: true },
+    reload: () => {},
+  }),
+}));
 vi.mock('@/features/learning-paths/service', async (importOriginal) => ({
   ...(await importOriginal<typeof import('@/features/learning-paths/service')>()),
   setPathStatus: mocks.setPathStatus,
@@ -47,6 +54,12 @@ describe('HomePage', () => {
     const lesson = screen.getByRole('heading', { level: 2, name: 'Chào hỏi cơ bản' });
     expect(review.compareDocumentPosition(lesson) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     expect(screen.getByRole('link', { name: 'Ôn ngay' })).toHaveAttribute('href', '/app/on-tap');
+  });
+
+  it('offers the placement test for the current path', () => {
+    renderWithProviders(<HomePage />, { route: '/app' });
+    expect(screen.getByRole('heading', { level: 2, name: 'Kiểm tra trình độ' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Bắt đầu kiểm tra' })).toHaveAttribute('href', '/app/kiem-tra/path-en');
   });
 
   it('announces loading in the heading while the profile loads', () => {

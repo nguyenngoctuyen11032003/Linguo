@@ -9,6 +9,10 @@ const mocks = vi.hoisted(() => ({
   setPathStatus: vi.fn(),
   updatePlan: vi.fn(),
   reference: vi.fn(),
+  diagnostic: vi.fn(),
+}));
+vi.mock('@/features/diagnostic/useDiagnosticStatus', () => ({
+  useDiagnosticStatus: (pathId?: string) => mocks.diagnostic(pathId),
 }));
 vi.mock('@/lib/supabase', () => ({ getSupabase: () => ({}), requireSupabase: () => ({}) }));
 vi.mock('@/features/learning-paths/useReferenceHours', () => ({
@@ -38,6 +42,54 @@ beforeEach(() => {
   mocks.updatePlan.mockReset();
   retry.mockReset();
   mocks.reference.mockReset().mockReturnValue({ status: 'ready', data: REFERENCE, retry });
+  mocks.diagnostic.mockReset().mockReturnValue({ status: 'loading', data: null, reload: vi.fn() });
+});
+
+const DIAG_NONE = { attempt_id: null, status: 'none', completed_at: null, applied_at: null, retake_after: null, can_start: true };
+const DIAG_ATTEMPT = '22222222-2222-4222-8222-222222222222';
+const diagnostic = (data: Record<string, unknown>) =>
+  mocks.diagnostic.mockReturnValue({ status: 'ready', data: { ...DIAG_NONE, ...data }, reload: vi.fn() });
+
+describe('placement test per path', () => {
+  it('offers a retake once the cooldown is over', () => {
+    diagnostic({ attempt_id: DIAG_ATTEMPT, status: 'completed', completed_at: '2026-09-01T03:00:00Z', retake_after: '2026-09-15T03:00:00Z' });
+    renderWithProviders(<LearningPathsSection />, { route: '/app/cai-dat' });
+    expect(mocks.diagnostic).toHaveBeenCalledWith('path-en');
+    expect(screen.getByRole('link', { name: 'Tiếng Anh: Làm lại bài kiểm tra' })).toHaveAttribute('href', '/app/kiem-tra/path-en');
+  });
+
+  it('disables the retake during the cooldown and shows the date it opens', () => {
+    diagnostic({
+      attempt_id: DIAG_ATTEMPT,
+      status: 'completed',
+      completed_at: '2026-10-10T03:00:00Z',
+      retake_after: '2026-10-24T18:00:00Z',
+      can_start: false,
+    });
+    renderWithProviders(<LearningPathsSection />, { route: '/app/cai-dat' });
+    const button = screen.getByRole('button', { name: 'Tiếng Anh: Làm lại bài kiểm tra' });
+    expect(button).toBeDisabled();
+    // 18:00 UTC is already the next day in Asia/Ho_Chi_Minh.
+    expect(button).toHaveAccessibleDescription('Có thể làm lại từ 25/10/2026');
+    expect(screen.queryByRole('link', { name: /bài kiểm tra/ })).not.toBeInTheDocument();
+  });
+
+  it('resumes an open attempt and offers a first test otherwise', () => {
+    diagnostic({ attempt_id: DIAG_ATTEMPT, status: 'in_progress' });
+    const first = renderWithProviders(<LearningPathsSection />, { route: '/app/cai-dat' });
+    expect(screen.getByRole('link', { name: 'Tiếng Anh: Tiếp tục bài kiểm tra' })).toHaveAttribute('href', '/app/kiem-tra/path-en');
+    first.unmount();
+    diagnostic({});
+    renderWithProviders(<LearningPathsSection />, { route: '/app/cai-dat' });
+    expect(screen.getByRole('link', { name: 'Tiếng Anh: Làm bài kiểm tra trình độ' })).toHaveAttribute('href', '/app/kiem-tra/path-en');
+  });
+
+  it('shows nothing while the status loads or fails', () => {
+    mocks.diagnostic.mockReturnValue({ status: 'error', data: null, reload: vi.fn() });
+    renderWithProviders(<LearningPathsSection />, { route: '/app/cai-dat' });
+    expect(screen.queryByRole('link', { name: /bài kiểm tra/ })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /bài kiểm tra/ })).not.toBeInTheDocument();
+  });
 });
 
 describe('LearningPathsSection', () => {

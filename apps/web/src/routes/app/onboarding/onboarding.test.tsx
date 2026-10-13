@@ -339,4 +339,55 @@ describe('OnboardingPage', () => {
     resolve(TEST_PATH);
     expect(await screen.findByRole('heading', { name: 'Lộ trình đã sẵn sàng!' })).toBeInTheDocument();
   });
+
+  describe('placement test offers (spec 4)', () => {
+    it('explains the test on the "unsure" start point', async () => {
+      page();
+      await userEvent.click(screen.getByRole('radio', { name: /Tiếng Anh/ }));
+      await next();
+      expect(screen.getByRole('radio', { name: /Tôi chưa chắc trình độ của mình/ })).toHaveAccessibleName(/bài kiểm tra \(~12 phút\)/);
+      expect(screen.queryByText(/bản cập nhật tới/)).not.toBeInTheDocument();
+    });
+
+    it('offers the full test after creating an "unsure" path, or lets the user go home', async () => {
+      seed(6, { ...FULL, startPoint: 'unsure', currentLevel: 'a1', targetLevel: 'a2' });
+      page();
+      mocks.createPath.mockResolvedValue({ ...TEST_PATH, startPoint: 'unsure', currentLevel: 'a1', targetLevel: 'a2' });
+      await userEvent.click(screen.getByRole('button', { name: 'Tạo lộ trình' }));
+      expect(await screen.findByText(/A1 chỉ là trình độ tạm tính/)).toBeInTheDocument();
+      expect(screen.queryByRole('button', { name: 'Vào trang chủ' })).not.toBeInTheDocument();
+      expect(screen.queryByRole('button', { name: /Kiểm tra nền tảng/ })).not.toBeInTheDocument();
+      await userEvent.click(screen.getByRole('button', { name: 'Làm bài kiểm tra (~12 phút)' }));
+      expect(location()).toHaveTextContent(/^\/app\/kiem-tra\/path-en$/);
+    });
+
+    it('"Để sau" goes home', async () => {
+      seed(6, { ...FULL, startPoint: 'unsure', currentLevel: 'a1', targetLevel: 'a2' });
+      page();
+      mocks.createPath.mockResolvedValue({ ...TEST_PATH, startPoint: 'unsure', currentLevel: 'a1', targetLevel: 'a2' });
+      await userEvent.click(screen.getByRole('button', { name: 'Tạo lộ trình' }));
+      await userEvent.click(await screen.findByRole('button', { name: 'Để sau' }));
+      expect(location()).toHaveTextContent(/^\/app$/);
+    });
+
+    it('offers the optional foundation check to complete beginners', async () => {
+      seed(6, { language: 'en', startPoint: 'new', currentLevel: 'pre_a1', goalType: 'daily_communication', targetLevel: 'a1' });
+      page();
+      mocks.createPath.mockResolvedValue({ ...TEST_PATH, startPoint: 'new', currentLevel: 'pre_a1', targetLevel: 'a1' });
+      await userEvent.click(screen.getByRole('button', { name: 'Tạo lộ trình' }));
+      expect(await screen.findByRole('button', { name: 'Vào trang chủ' })).toBeInTheDocument();
+      expect(screen.queryByRole('button', { name: /Làm bài kiểm tra/ })).not.toBeInTheDocument();
+      await userEvent.click(screen.getByRole('button', { name: 'Kiểm tra nền tảng (2–3 phút)' }));
+      expect(location()).toHaveTextContent(/^\/app\/kiem-tra\/path-en\?che-do=nen-tang$/);
+    });
+
+    it('offers no test to learners who picked their level', async () => {
+      seed(6, FULL);
+      page();
+      mocks.createPath.mockResolvedValue(TEST_PATH);
+      await userEvent.click(screen.getByRole('button', { name: 'Tạo lộ trình' }));
+      expect(await screen.findByRole('button', { name: 'Vào trang chủ' })).toBeInTheDocument();
+      expect(screen.queryByRole('button', { name: /kiểm tra/i })).not.toBeInTheDocument();
+    });
+  });
 });

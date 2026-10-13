@@ -28,6 +28,7 @@ function deferred<T = void>() {
 }
 vi.mock('@/features/profile/service', () => ({ updateProfile: mocks.updateProfile }));
 vi.mock('@/features/preferences/service', () => ({ updatePreferences: mocks.updatePreferences }));
+vi.mock('@/features/diagnostic/useDiagnosticStatus', () => ({ useDiagnosticStatus: () => ({ status: 'loading', data: null, reload: () => {} }) }));
 vi.mock('@/lib/supabase', () => ({
   getSupabase: () => ({ auth: { signOut: mocks.signOut }, rpc: mocks.rpc }),
   requireSupabase: () => ({ auth: { signOut: mocks.signOut }, rpc: mocks.rpc }),
