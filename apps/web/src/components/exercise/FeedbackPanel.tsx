@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState, type RefObject } from 'react';
 import { HelpCircle, Sparkles } from 'lucide-react';
 import { motion } from 'motion/react';
-import type { SubmitResult, Verdict } from '@linguo/shared';
+import type { ReportTargetKind, SubmitResult, Verdict } from '@linguo/shared';
 import { AiExplainSheet } from '@/components/ai';
+import { ReportContentButton } from '@/components/report';
 import { Button } from '@/components/ui/Button';
 import { reveal } from '@/design/motion';
 import { cn } from '@/lib/cn';
@@ -21,13 +22,15 @@ export interface FeedbackPanelProps {
   className?: string;
   /** Lets the learner ask the AI tutor about a revealed or right answer (spec 5 §5). Omit to hide the buttons. */
   ai?: ExerciseAiInput;
+  /** Content the "Báo lỗi nội dung" button reports (spec 11 §2). Omit to hide the button. */
+  report?: { kind: ReportTargetKind; id: string };
 }
 
 /**
  * Verdict feedback. The `role="status"` wrapper stays mounted so screen readers register it before content
  * appears; focus moves to the heading when a new result arrives (not on mount, e.g. when resuming).
  */
-export function FeedbackPanel({ result, className, ai }: FeedbackPanelProps) {
+export function FeedbackPanel({ result, className, ai, report }: FeedbackPanelProps) {
   const { reduceMotion } = useMotionPrefs();
   const headingRef = useRef<HTMLHeadingElement>(null);
   const attemptId = result?.attempt_id ?? null;
@@ -45,6 +48,11 @@ export function FeedbackPanel({ result, className, ai }: FeedbackPanelProps) {
         {result && <FeedbackCard key={result.attempt_id} result={result} reduceMotion={reduceMotion} headingRef={headingRef} />}
       </div>
       {result && ai && <FeedbackAiActions key={result.attempt_id} result={result} ai={ai} />}
+      {result && report && (
+        <div className="mt-3">
+          <ReportContentButton targetKind={report.kind} targetId={report.id} />
+        </div>
+      )}
     </div>
   );
 }
