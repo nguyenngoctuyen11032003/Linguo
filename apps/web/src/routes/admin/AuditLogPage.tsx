@@ -44,7 +44,8 @@ export function AuditLogPage() {
       ) : data.length === 0 ? (
         <EmptyState icon={ScrollText} title="Chưa có thao tác nào" description="Các thao tác thay đổi dữ liệu của quản trị viên sẽ xuất hiện ở đây." />
       ) : (
-        <div className="overflow-x-auto rounded-3xl border border-border bg-surface-solid">
+        <div tabIndex={0} role="region" aria-label="Các thao tác gần đây" className="overflow-x-auto rounded-3xl border border-border bg-surface-solid focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40">
+          {/* Focusable so keyboard users can scroll the wide table (axe scrollable-region-focusable). */}
           <table className="w-full text-left text-[15px]">
             <caption className="px-4 pt-4 text-left font-semibold">Các thao tác gần đây</caption>
             <thead className="text-sm text-muted">

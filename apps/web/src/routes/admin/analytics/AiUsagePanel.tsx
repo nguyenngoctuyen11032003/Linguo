@@ -28,7 +28,8 @@ export function AiUsagePanel({ usage }: { usage: AdminAiUsage }) {
       {rows.length === 0 ? (
         <p className="text-[15px] text-muted">Chưa có request AI nào trong khoảng này.</p>
       ) : (
-        <div className="overflow-x-auto rounded-2xl border border-border">
+        <div tabIndex={0} role="region" aria-label="Số request AI theo tác vụ và trạng thái" className="overflow-x-auto rounded-2xl border border-border focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40">
+          {/* Focusable so keyboard users can scroll the wide table (axe scrollable-region-focusable). */}
           <table className="w-full min-w-[480px] text-left text-[15px]">
             <caption className="sr-only">Số request AI theo tác vụ và trạng thái</caption>
             <thead className="border-b border-border text-sm text-muted">

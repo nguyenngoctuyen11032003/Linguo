@@ -81,7 +81,7 @@ export function AdminLayout() {
                   className={({ isActive }) =>
                     cn(
                       'flex min-h-11 items-center gap-2 whitespace-nowrap rounded-2xl px-3 text-[15px] font-medium',
-                      isActive ? 'bg-primary/12 text-primary' : 'text-muted hover:bg-text/5 hover:text-text',
+                      isActive ? 'bg-primary/12 font-semibold text-text' : 'text-muted hover:bg-text/5 hover:text-text',
                     )
                   }
                 >
