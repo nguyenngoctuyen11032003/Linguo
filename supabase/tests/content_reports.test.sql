@@ -1,12 +1,15 @@
--- Spec 11 §2: report_content (published targets of the 5 kinds, note limit, daily limit, 24 h duplicates),
+-- Spec 11 §2: report_content (published targets of the 5 kinds, note limit, daily limit, duplicate rules of 20261016000500),
 -- list_my_reports, RLS select-own and the account export. Targets come from the demo content in seed.sql.
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(43);
+select plan(54);
 
 insert into auth.users (id, email, raw_user_meta_data, created_at) values
   ('aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa', 'a@test.dev', '{}', now()),
-  ('bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb', 'b@test.dev', '{}', now());
+  ('bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb', 'b@test.dev', '{}', now()),
+  ('cccccccc-cccc-4ccc-8ccc-cccccccccccc', 'c@test.dev', '{}', now()),
+  ('dddddddd-dddd-4ddd-8ddd-dddddddddddd', 'd@test.dev', '{}', now()),
+  ('eeeeeeee-eeee-4eee-8eee-eeeeeeeeeeee', 'e@test.dev', '{}', now());
 
 create function public.c1r_as(p_user uuid) returns void language sql as $$
   select set_config('request.jwt.claims', json_build_object('sub', p_user, 'role', 'authenticated')::text, true);
@@ -71,11 +74,15 @@ select is(public.report_content('assessment_item', current_setting('test.assess'
   'open', 'assessment item reported');
 select is(public.report_content('exam_question', current_setting('test.examq')::uuid, 'translation', null) ->> 'status',
   'open', 'exam question reported');
+select set_config('test.lesson_report', (select id::text from public.content_reports where target_kind = 'lesson'), true);
 select is(public.report_content('lesson', current_setting('test.lesson')::uuid, 'other', repeat('x', 500)) ->> 'status',
-  'duplicate', 'reporting the same target again within 24 h is a duplicate');
-select ok((public.report_content('learning_item', current_setting('test.item')::uuid, 'typo', null) ->> 'report_id') is not null,
-  'a duplicate still returns its report id');
-select is((select count(*)::integer from public.content_reports), 7, 'A sees all 7 of A''s reports, duplicates included');
+  'duplicate', 'filing a second unresolved report on a target is a duplicate');
+select is(public.report_content('learning_item', current_setting('test.item')::uuid, 'typo', null) ->> 'report_id',
+  (select id::text from public.content_reports where target_kind = 'learning_item'),
+  'a duplicate returns the learner''s existing report id');
+select is(public.report_content('lesson', current_setting('test.lesson')::uuid, 'unclear', null) ->> 'report_id',
+  current_setting('test.lesson_report'), 'whatever the reason, the existing report stands');
+select is((select count(*)::integer from public.content_reports), 5, 'A has 5 reports: a repeat by the same learner writes nothing');
 select is((select note from public.content_reports where reason = 'typo' and target_kind = 'lesson'),
   'Sai chính tả ở tiêu đề', 'note is trimmed');
 select is((select note from public.content_reports where reason = 'audio'), null, 'blank note is stored as null');
@@ -85,7 +92,7 @@ select is((select content_version from public.content_reports where target_kind 
 -- ===== Another learner: duplicate across users, RLS =====
 select public.c1r_as('bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb');
 select is(public.report_content('exercise', current_setting('test.exercise')::uuid, 'wrong_answer', 'Đáp án B mới đúng') ->> 'status',
-  'duplicate', 'a target reported by someone else within 24 h is a duplicate');
+  'duplicate', 'the same reason and version as an unresolved report of someone else is a duplicate');
 select is((select count(*)::integer from public.content_reports), 1, 'B sees only B''s report');
 select is(jsonb_array_length(public.list_my_reports()), 1, 'list_my_reports returns only B''s report');
 select is((select count(*)::integer from public.content_reports where user_id = 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa'), 0,
@@ -96,10 +103,10 @@ select throws_ok($$update public.content_reports set status = 'fixed'$$, '42501'
 -- All rows of this transaction share now(): make A's last report the newest.
 reset role;
 update public.content_reports set created_at = created_at + interval '1 second'
-where user_id = 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa' and target_kind = 'learning_item' and reason = 'typo';
+where user_id = 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa' and target_kind = 'learning_item' and reason = 'audio';
 set local role authenticated;
 select public.c1r_as('aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa');
-select is(jsonb_array_length(public.list_my_reports()), 7, 'A lists 7 reports');
+select is(jsonb_array_length(public.list_my_reports()), 5, 'A lists 5 reports');
 select is(jsonb_array_length(public.list_my_reports(2)), 2, 'p_limit caps the list');
 select is(public.list_my_reports(1) -> 0 ->> 'target_kind', 'learning_item', 'newest report first');
 select is((select r ->> 'target_label' from jsonb_array_elements(public.list_my_reports()) r where r ->> 'target_kind' = 'lesson' limit 1),
@@ -110,22 +117,67 @@ select ok((select bool_and(r ?& array['id', 'target_kind', 'target_id', 'target_
     'resolution_note', 'created_at', 'resolved_at'] and not r ? 'user_id')
   from jsonb_array_elements(public.list_my_reports()) r), 'list items match myReportSchema and carry no user id');
 
+-- ===== Duplicate rules: only an unresolved report with the same reason and version makes a duplicate =====
+-- A's open reports: exercise wrong_answer, assessment item unclear, exam question translation, item audio.
+-- A sockpuppet's harmless typo report on the exercise does not hide anyone's wrong_answer report.
+select public.c1r_as('cccccccc-cccc-4ccc-8ccc-cccccccccccc');
+select is(public.report_content('exercise', current_setting('test.exercise')::uuid, 'typo', null) ->> 'status',
+  'open', 'another reason on a reported target is a new open report');
+select is(public.report_content('assessment_item', current_setting('test.assess')::uuid, 'typo', null) ->> 'status',
+  'open', 'a typo report on the assessment item');
+select public.c1r_as('dddddddd-dddd-4ddd-8ddd-dddddddddddd');
+select is(public.report_content('assessment_item', current_setting('test.assess')::uuid, 'wrong_answer', null) ->> 'status',
+  'open', 'a wrong_answer report is not suppressed by earlier typo / unclear reports');
+-- Staff resolve A's exam question report: the same reason may be reported again, by anyone, as a fresh open report.
+reset role;
+update public.content_reports set status = 'fixed', resolved_at = now()
+where user_id = 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa' and target_kind = 'exam_question';
+set local role authenticated;
+select public.c1r_as('dddddddd-dddd-4ddd-8ddd-dddddddddddd');
+select is(public.report_content('exam_question', current_setting('test.examq')::uuid, 'translation', null) ->> 'status',
+  'open', 'after staff resolved the earlier report, a new one is open (visible in the queue)');
+select public.c1r_as('aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa');
+select is(public.report_content('exam_question', current_setting('test.examq')::uuid, 'other', null) ->> 'status',
+  'open', 'a learner whose earlier report was resolved can report the target again');
+select is((select count(*)::integer from public.content_reports where user_id = 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa'), 6,
+  'A now has 6 reports');
+-- A content fix bumps the version: the same reason on the new version is not a duplicate of the old version's report.
+reset role;
+update public.learning_items set version = version + 1, reviewed_at = coalesce(reviewed_at, now()) + interval '1 second'
+where id = current_setting('test.item')::uuid;
+set local role authenticated;
+select public.c1r_as('eeeeeeee-eeee-4eee-8eee-eeeeeeeeeeee');
+select is(public.report_content('learning_item', current_setting('test.item')::uuid, 'audio', null) ->> 'status',
+  'open', 'the same reason on a newer content version is not a duplicate');
+reset role;
+select is((select count(*)::integer from public.content_reports
+  where target_kind = 'assessment_item' and reason = 'wrong_answer' and status in ('open', 'triaged')), 1,
+  'the open queue holds the wrong_answer report');
+select throws_ok(format($q$insert into public.content_reports (user_id, target_kind, target_id, content_version, reason)
+  values ('eeeeeeee-eeee-4eee-8eee-eeeeeeeeeeee', 'learning_item', %L, 1, 'typo')$q$, current_setting('test.item')),
+  '23505', null, 'the database allows one unresolved report per learner and target');
+select ok(exists (select 1 from pg_indexes where schemaname = 'public' and indexname = 'content_reports_one_unresolved_idx'),
+  'the one-unresolved-report index exists');
+set local role authenticated;
+
 -- ===== Daily limit (20 in 24 h) and the duplicate window =====
 reset role;
 insert into public.content_reports (user_id, target_kind, target_id, content_version, reason, status, created_at)
 select 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa', 'lesson', current_setting('test.lesson')::uuid, 1, 'other', 'duplicate', now() - interval '1 hour'
-from generate_series(1, 13);
+from generate_series(1, 14);
 set local role authenticated;
 select public.c1r_as('aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa');
 select throws_ok(format('select public.report_content(''lesson'', %L, ''typo'', null)', current_setting('test.lesson')),
   'P0001', 'rate_limited', 'the 21st report within 24 hours is refused');
 reset role;
--- Push everything back by 25 hours: the limit and the duplicate window are rolling 24-hour windows.
+-- Push everything back by 25 hours (the limit is a rolling 24-hour window) and let staff resolve A's reports.
 update public.content_reports set created_at = created_at - interval '25 hours';
+update public.content_reports set status = 'fixed', resolved_at = now()
+where user_id = 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa' and status in ('open', 'triaged');
 set local role authenticated;
 select public.c1r_as('aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa');
 select is(public.report_content('exam_question', current_setting('test.examq')::uuid, 'audio', null) ->> 'status',
-  'open', 'after 24 hours the limit resets and the target is no longer a duplicate');
+  'open', 'after 24 hours the limit resets and a resolved target can be reported again');
 
 -- ===== Account export =====
 select set_config('test.export', public.export_my_data()::text, true);

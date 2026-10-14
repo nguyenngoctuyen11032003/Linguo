@@ -1,9 +1,10 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(13);
+select plan(16);
 
--- B5/B6 of the backend review (20261015000800_answer_integrity.sql): submit_exercise ignores a client_at that
--- predates the run (or lies in the future) and grades with an older answer key only for an offline replay.
+-- B5/B6 of the backend review (20261015000800_answer_integrity.sql, B5 tightened by 20261016000500): submit_exercise
+-- ignores a client_at that predates the run, is older than 48 hours or lies in the future, and grades with an older
+-- answer key only for an offline replay.
 -- Uses the published seed content: the first lesson of a fresh English path, answered with give_up (valid for
 -- every exercise type).
 
@@ -42,15 +43,25 @@ select is((select client_at from public.attempts where idempotency_key = 'd50000
 select is((select synced_late from public.attempts where idempotency_key = 'd5000000-0000-4000-8000-000000000001'), false,
   'and the answer is not marked as synced late');
 
--- A genuine offline replay: the run started five days ago, the answer was given two days ago.
+-- The run started five days ago (opened on day D, still in progress).
 reset role;
 update public.lesson_runs set started_at = now() - interval '5 days' where id = current_setting('test.run')::uuid;
 set local role authenticated;
-select lives_ok(format('select public.d5_submit(%L, %L, 1, now() - interval ''2 days'')', current_setting('test.e2'), 'd5000000-0000-4000-8000-000000000002'),
+-- A genuine offline replay answered 30 hours ago (after the run started, within 48 hours) keeps its client_at.
+select lives_ok(format('select public.d5_submit(%L, %L, 1, now() - interval ''30 hours'')', current_setting('test.e2'), 'd5000000-0000-4000-8000-000000000002'),
   'an offline replay answered after the run started is accepted');
-select ok((select client_at from public.attempts where idempotency_key = 'd5000000-0000-4000-8000-000000000002') < now() - interval '47 hours',
+select ok((select client_at from public.attempts where idempotency_key = 'd5000000-0000-4000-8000-000000000002')
+    between now() - interval '31 hours' and now() - interval '29 hours',
   'its client_at is kept');
 select is((select synced_late from public.attempts where idempotency_key = 'd5000000-0000-4000-8000-000000000002'), true, 'and it is marked as synced late');
+-- B5 follow-up: a client_at 60 hours old is after the run started but older than 48 hours: the answer counts on the
+-- server day, so an old run cannot be used to backfill a missed day.
+select lives_ok(format('select public.d5_submit(%L, %L, 1, now() - interval ''60 hours'')', current_setting('test.e1'), 'd5000000-0000-4000-8000-000000000007'),
+  'an answer claiming to be 60 hours old on a run opened 5 days ago is accepted');
+select is((select client_at from public.attempts where idempotency_key = 'd5000000-0000-4000-8000-000000000007'), null,
+  'a client_at older than 48 hours is ignored');
+select is((select synced_late from public.attempts where idempotency_key = 'd5000000-0000-4000-8000-000000000007'), false,
+  'and the answer is not marked as synced late');
 
 -- A client_at in the future is clamped to now.
 select lives_ok(format('select public.d5_submit(%L, %L, 1, now() + interval ''1 day'')', current_setting('test.e3'), 'd5000000-0000-4000-8000-000000000003'),

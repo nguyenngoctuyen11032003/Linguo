@@ -2,7 +2,7 @@
 -- audit log, aggregate-only analytics) and the import precedence of 20261015000420. Uses the seed demo content.
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(119);
+select plan(139);
 
 -- L learner, E editor, R reviewer, A admin.
 insert into auth.users (id, email, raw_user_meta_data, created_at) values
@@ -383,6 +383,94 @@ select is((content_private.import_bundle(jsonb_set(current_setting('test.bundle'
    from jsonb_array_elements(current_setting('test.bundle')::jsonb -> 'lessons') l))) ->> 'updated')::integer, 1,
   'a published lesson can still be archived by the import');
 select is((select status from public.lessons where id = current_setting('test.hello')::uuid), 'archived', 'hello archived');
+
+-- ===== Import vs the report gate and human decisions (20261016000500) =====
+-- The learning item "hello" was written by the YAML (reviewed_by is a reviewer name, not a user id). A reviewer sent it
+-- back to review because of a report; the YAML now says `approved` / `published`.
+create function pg_temp.c1a_bundle_item(p_status text) returns jsonb language sql as $$
+  select jsonb_set(pg_temp.c1a_bundle(), '{learning_items}',
+    (select jsonb_agg(case when i ->> 'id' = current_setting('test.item') then i || jsonb_build_object('status', p_status) else i end)
+     from jsonb_array_elements(pg_temp.c1a_bundle() -> 'learning_items') i));
+$$;
+select set_config('linguo.content_import', 'admin', true);
+update public.learning_items set status = 'in_review' where id = current_setting('test.item')::uuid;
+select set_config('linguo.content_import', '', true);
+insert into public.content_reports (user_id, target_kind, target_id, reason, status) values
+  ('11111111-1111-4111-8111-111111111111', 'learning_item', current_setting('test.item')::uuid, 'typo', 'open');
+select content_private.import_bundle(pg_temp.c1a_bundle_item('approved'));
+select is((select status from public.learning_items where id = current_setting('test.item')::uuid), 'in_review',
+  'the import does not approve a row with an unresolved report');
+update public.content_reports set status = 'fixed', resolved_at = now()
+where target_id = current_setting('test.item')::uuid and status = 'open';
+select content_private.import_bundle(pg_temp.c1a_bundle_item('approved'));
+select is((select status from public.learning_items where id = current_setting('test.item')::uuid), 'approved',
+  'once the report is resolved the import approves it');
+insert into public.content_reports (user_id, target_kind, target_id, reason, status) values
+  ('11111111-1111-4111-8111-111111111111', 'learning_item', current_setting('test.item')::uuid, 'audio', 'triaged');
+select content_private.import_bundle(pg_temp.c1a_bundle_item('published'));
+select is((select status from public.learning_items where id = current_setting('test.item')::uuid), 'approved',
+  'the import does not publish a row with a triaged report');
+update public.content_reports set status = 'rejected', resolved_at = now()
+where target_id = current_setting('test.item')::uuid and status = 'triaged';
+select content_private.import_bundle(pg_temp.c1a_bundle_item('published'));
+select is((select status from public.learning_items where id = current_setting('test.item')::uuid), 'published',
+  'once nothing is unresolved the import publishes it');
+-- A reviewer deliberately sends the (now published) item back: admin_set_status stamps the reviewer on the row, and a
+-- stale YAML status does not undo that decision.
+set local role authenticated;
+select public.c1a_as('33333333-3333-4333-8333-333333333333');
+select is(public.admin_set_status('learning_item', current_setting('test.item')::uuid, 'in_review', 'Cần xem lại') ->> 'status', 'in_review',
+  'a reviewer sends the item back to review');
+reset role;
+select is((select reviewed_by from public.learning_items where id = current_setting('test.item')::uuid),
+  '33333333-3333-4333-8333-333333333333', 'every admin status change stamps the reviewer on the row');
+select content_private.import_bundle(pg_temp.c1a_bundle_item('approved'));
+select is((select status from public.learning_items where id = current_setting('test.item')::uuid), 'in_review',
+  'a stale YAML approved does not re-approve a row an admin sent back');
+select is(content_private.import_keep_stored('lesson', gen_random_uuid(), 'in_review', 'Claude (AI)', 'approved'), false,
+  'a YAML-written, report-free row still advances one workflow step');
+
+-- ===== Audit log: append-only, answer reads audited =====
+select throws_ok($$update public.admin_audit_log set action = 'forged'$$, 'P0001', 'audit_log_append_only', 'audit rows cannot be updated');
+select throws_ok($$delete from public.admin_audit_log$$, 'P0001', 'audit_log_append_only', 'audit rows cannot be deleted');
+select throws_ok($$truncate public.admin_audit_log$$, 'P0001', 'audit_log_append_only', 'the audit log cannot be truncated');
+-- The editor read hello's exercise answer key earlier: one row; reading it again within 10 minutes adds none.
+set local role authenticated;
+select public.c1a_as('22222222-2222-4222-8222-222222222222');
+select ok((public.admin_get_content('exercise', current_setting('test.hello_ex')::uuid) #> '{private,answer_key}') is not null,
+  'the editor reads the answer key again');
+select public.admin_get_content('program', current_setting('test.program')::uuid);
+reset role;
+select is((select count(*)::integer from public.admin_audit_log where action = 'read_answers' and target_kind = 'exercise'
+    and target_id = current_setting('test.hello_ex') and actor = '22222222-2222-4222-8222-222222222222'), 1,
+  'reading answers is audited once per staff member and target within 10 minutes');
+select is((select count(*)::integer from public.admin_audit_log where action = 'read_answers' and target_kind = 'program'), 0,
+  'content without answers is not audited');
+alter table public.admin_audit_log disable trigger admin_audit_log_append_only_row;
+update public.admin_audit_log set created_at = created_at - interval '11 minutes' where action = 'read_answers';
+alter table public.admin_audit_log enable trigger admin_audit_log_append_only_row;
+set local role authenticated;
+select public.c1a_as('22222222-2222-4222-8222-222222222222');
+select public.admin_get_content('exercise', current_setting('test.hello_ex')::uuid);
+reset role;
+select is((select count(*)::integer from public.admin_audit_log where action = 'read_answers' and target_kind = 'exercise'
+    and target_id = current_setting('test.hello_ex') and actor = '22222222-2222-4222-8222-222222222222'), 2,
+  'a read after the 10-minute window is audited again');
+
+-- ===== The last admin cannot be removed or demoted =====
+set local role authenticated;
+select public.c1a_as('44444444-4444-4444-8444-444444444444');
+select throws_ok('select public.admin_grant_role(''44444444-4444-4444-8444-444444444444'', ''editor'')', 'P0001', 'last_admin_required',
+  'the only admin cannot demote themselves');
+select throws_ok('select public.admin_grant_role(''44444444-4444-4444-8444-444444444444'', null)', 'P0001', 'last_admin_required',
+  'the only admin cannot remove their own role');
+select is(public.admin_grant_role('11111111-1111-4111-8111-111111111111', 'admin') ->> 'role', 'admin', 'a second admin can be added');
+select is(public.admin_grant_role('44444444-4444-4444-8444-444444444444', 'editor') ->> 'role', 'editor',
+  'with two admins one may step down');
+select public.c1a_as('11111111-1111-4111-8111-111111111111');
+select throws_ok('select public.admin_grant_role(''11111111-1111-4111-8111-111111111111'', ''reviewer'')', 'P0001', 'last_admin_required',
+  'the remaining admin cannot demote themselves either');
+reset role;
 
 select * from finish();
 rollback;
