@@ -39,7 +39,8 @@ export function buildCsp(o: CspOptions = {}): string {
     ['style-src', ["'self'", GOOGLE_FONTS_CSS, JSDELIVR]],
     ['font-src', ["'self'", GOOGLE_FONTS_FILES, JSDELIVR]],
     ['img-src', ["'self'"]],
-    ['media-src', uniq(["'self'", supabase, video])],
+    // blob: lets the speaking practice replay a recording held in memory (never uploaded; see features/speaking).
+    ['media-src', uniq(["'self'", 'blob:', supabase, video])],
     // No Realtime channels in the app, so no wss:// origin.
     ['connect-src', uniq(["'self'", supabase])],
     ['manifest-src', ["'self'"]],

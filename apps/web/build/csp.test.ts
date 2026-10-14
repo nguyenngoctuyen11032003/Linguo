@@ -11,7 +11,7 @@ describe('buildCsp', () => {
     expect(directive(csp, 'default-src')).toBe("default-src 'self'");
     expect(directive(csp, 'script-src')).toBe("script-src 'self' 'sha256-xyz='");
     expect(directive(csp, 'connect-src')).toBe("connect-src 'self' https://abc.supabase.co");
-    expect(directive(csp, 'media-src')).toBe("media-src 'self' https://abc.supabase.co");
+    expect(directive(csp, 'media-src')).toBe("media-src 'self' blob: https://abc.supabase.co");
     expect(directive(csp, 'object-src')).toBe("object-src 'none'");
     expect(directive(csp, 'base-uri')).toBe("base-uri 'self'");
     expect(directive(csp, 'form-action')).toBe("form-action 'self'");
@@ -25,7 +25,7 @@ describe('buildCsp', () => {
   it('adds the hero video origin to media-src and skips unusable URLs', () => {
     const csp = buildCsp({ supabaseUrl: 'not a url', heroVideoUrl: 'https://cdn.example.com/hero.mp4' });
     expect(directive(csp, 'connect-src')).toBe("connect-src 'self'");
-    expect(directive(csp, 'media-src')).toBe("media-src 'self' https://cdn.example.com");
+    expect(directive(csp, 'media-src')).toBe("media-src 'self' blob: https://cdn.example.com");
   });
 
   it('originOf only accepts http(s) URLs', () => {
