@@ -6,6 +6,7 @@ import { FormField } from '@/components/ui/FormField';
 import { Input } from '@/components/ui/Input';
 import { PasswordInput } from '@/components/ui/PasswordInput';
 import { authErrorMessage } from '@/features/auth/error-map';
+import { useFocusFirstInvalid } from '@/features/auth/useFocusFirstInvalid';
 import { authRedirect, requireSupabase } from '@/lib/supabase';
 import { AuthCard, FormAlert, textLinkClass } from './AuthCard';
 import { GoogleButton } from './GoogleButton';
@@ -18,6 +19,7 @@ export function SignUpPage() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [formError, setFormError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const { formRef, focusFirstInvalid } = useFocusFirstInvalid();
 
   async function onSubmit(event: FormEvent) {
     event.preventDefault();
@@ -25,6 +27,7 @@ export function SignUpPage() {
     const parsed = signUpSchema.safeParse({ displayName, email, password });
     if (!parsed.success) {
       setErrors(fieldErrors(parsed.error));
+      focusFirstInvalid();
       return;
     }
     setErrors({});
@@ -64,7 +67,7 @@ export function SignUpPage() {
       }
     >
       <GoogleButton next="/app" onError={setFormError} />
-      <form noValidate onSubmit={onSubmit} className="space-y-4">
+      <form ref={formRef} noValidate onSubmit={onSubmit} className="space-y-4">
         {formError && <FormAlert>{formError}</FormAlert>}
         <FormField label="Tên hiển thị (không bắt buộc)" error={errors.displayName}>
           {({ invalid, ...a11y }) => (
@@ -93,7 +96,7 @@ export function SignUpPage() {
             />
           )}
         </FormField>
-        <FormField label="Mật khẩu" hint="Ít nhất 8 ký tự." error={errors.password}>
+        <FormField label="Mật khẩu" hint={errors.password ? undefined : 'Ít nhất 8 ký tự.'} error={errors.password}>
           {({ invalid, ...a11y }) => (
             <PasswordInput
               {...a11y}

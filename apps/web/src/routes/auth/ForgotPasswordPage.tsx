@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/Button';
 import { FormField } from '@/components/ui/FormField';
 import { Input } from '@/components/ui/Input';
 import { authErrorMessage } from '@/features/auth/error-map';
+import { useFocusFirstInvalid } from '@/features/auth/useFocusFirstInvalid';
 import { authRedirect, requireSupabase } from '@/lib/supabase';
 import { AuthCard, FormAlert, textLinkClass } from './AuthCard';
 
@@ -14,6 +15,7 @@ export function ForgotPasswordPage() {
   const [formError, setFormError] = useState<string | null>(null);
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const { formRef, focusFirstInvalid } = useFocusFirstInvalid();
 
   async function onSubmit(event: FormEvent) {
     event.preventDefault();
@@ -21,6 +23,7 @@ export function ForgotPasswordPage() {
     const parsed = forgotPasswordSchema.safeParse({ email });
     if (!parsed.success) {
       setError(fieldErrors(parsed.error).email);
+      focusFirstInvalid();
       return;
     }
     setError(undefined);
@@ -49,7 +52,7 @@ export function ForgotPasswordPage() {
   return (
     <AuthCard
       title="Quên mật khẩu"
-      subtitle="Nhập email đã đăng ký. Chúng tôi sẽ gửi liên kết để đặt mật khẩu mới."
+      subtitle="Nhập email đã đăng ký. Mình sẽ gửi liên kết để đặt mật khẩu mới."
       footer={
         <Link to="/dang-nhap" className={textLinkClass}>
           Quay lại đăng nhập
@@ -62,7 +65,7 @@ export function ForgotPasswordPage() {
           này.
         </p>
       ) : (
-        <form noValidate onSubmit={onSubmit} className="space-y-4">
+        <form ref={formRef} noValidate onSubmit={onSubmit} className="space-y-4">
           {formError && <FormAlert>{formError}</FormAlert>}
           <FormField label="Email" error={error}>
             {({ invalid, ...a11y }) => (

@@ -48,7 +48,7 @@ export function CheckEmailPage() {
       subtitle={
         email ? (
           <>
-            Chúng tôi đã gửi liên kết xác minh tới <strong className="text-text">{email}</strong>. Mở liên kết trên{' '}
+            Mình đã gửi liên kết xác minh tới <strong className="text-text">{email}</strong>. Mở liên kết trên{' '}
             <strong className="text-text">cùng trình duyệt này</strong> để hoàn tất.
           </>
         ) : (

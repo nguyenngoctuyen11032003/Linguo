@@ -2,6 +2,7 @@ import { act, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Navigate, Route, Routes } from 'react-router';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 import { renderWithProviders } from '../../../tests/unit/render';
 import type { ReactElement } from 'react';
 import { AuthCallbackPage } from './AuthCallbackPage';
@@ -57,6 +58,20 @@ describe('SignInPage', () => {
     expect(mocks.auth.signInWithPassword).not.toHaveBeenCalled();
   });
 
+  it('moves focus to the first invalid field and wires the error to it', async () => {
+    at('/dang-nhap', '/dang-nhap', <SignInPage />);
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng nhập' }));
+    const email = screen.getByLabelText('Email');
+    await waitFor(() => expect(email).toHaveFocus());
+    expect(email).toHaveAttribute('aria-invalid', 'true');
+    const describedBy = email.getAttribute('aria-describedby') ?? '';
+    expect(document.getElementById(describedBy)).toHaveAttribute('role', 'alert');
+
+    await userEvent.type(email, 'a@b.vn');
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng nhập' }));
+    await waitFor(() => expect(screen.getByLabelText('Mật khẩu')).toHaveFocus());
+  });
+
   it('signs in and goes to the safe next path', async () => {
     mocks.auth.signInWithPassword.mockResolvedValue({ data: {}, error: null });
     at('/dang-nhap?next=%2Fapp%2Fcai-dat', '/dang-nhap', <SignInPage />);
@@ -78,6 +93,20 @@ describe('SignInPage', () => {
 });
 
 describe('SignUpPage', () => {
+  it('shows the password hint, and replaces it with the error once the password is invalid', async () => {
+    at('/dang-ky', '/dang-ky', <SignUpPage />);
+    expect(screen.getByText('Ít nhất 8 ký tự.')).toBeInTheDocument();
+    await userEvent.type(screen.getByLabelText('Email'), 'a@b.vn');
+    await userEvent.type(screen.getByLabelText('Mật khẩu'), 'abc');
+    await userEvent.click(screen.getByRole('button', { name: 'Tạo tài khoản' }));
+    const password = screen.getByLabelText('Mật khẩu');
+    await waitFor(() => expect(password).toHaveFocus());
+    expect(password).toHaveAttribute('aria-invalid', 'true');
+    expect(screen.queryByText('Ít nhất 8 ký tự.')).not.toBeInTheDocument();
+    expect(password.getAttribute('aria-describedby')).toMatch(/-error$/);
+    expect(mocks.auth.signUp).not.toHaveBeenCalled();
+  });
+
   it('sends the display name and goes to the check-email screen', async () => {
     mocks.auth.signUp.mockResolvedValue({ data: { session: null, user: { id: 'u1' } }, error: null });
     at('/dang-ky', '/dang-ky', <SignUpPage />);
@@ -117,7 +146,7 @@ describe('ForgotPasswordPage errors', () => {
   it('shows a generic error for server failures instead of a false confirmation', async () => {
     mocks.auth.resetPasswordForEmail.mockResolvedValue({ data: null, error: { status: 500, code: 'unexpected_failure' } });
     await submit();
-    expect(await screen.findByText('Đã có lỗi xảy ra. Vui lòng thử lại.')).toBeInTheDocument();
+    expect(await screen.findByText(GENERIC_ERROR_MESSAGE)).toBeInTheDocument();
     expect(screen.queryByText(/Nếu email này có tài khoản/)).not.toBeInTheDocument();
   });
 
@@ -177,7 +206,7 @@ describe('AuthCallbackPage', () => {
     first.unmount();
 
     at('/auth/callback?error=weird_thing&error_description=Secret%20detail', '/auth/callback', <AuthCallbackPage />);
-    expect(await screen.findByText('Đã có lỗi xảy ra. Vui lòng thử lại.')).toBeInTheDocument();
+    expect(await screen.findByText(GENERIC_ERROR_MESSAGE)).toBeInTheDocument();
     expect(screen.queryByText('Secret detail')).not.toBeInTheDocument();
     expect(screen.queryByText('weird_thing')).not.toBeInTheDocument();
   });
@@ -198,7 +227,7 @@ describe('AuthCallbackPage', () => {
     it('shows the generic message for an unknown hash code', async () => {
       window.location.hash = '#error=access_denied&error_code=weird_thing&error_description=Secret%20detail';
       at('/auth/callback', '/auth/callback', <AuthCallbackPage />);
-      expect(await screen.findByText('Đã có lỗi xảy ra. Vui lòng thử lại.')).toBeInTheDocument();
+      expect(await screen.findByText(GENERIC_ERROR_MESSAGE)).toBeInTheDocument();
       expect(screen.queryByText('Secret detail')).not.toBeInTheDocument();
       expect(screen.queryByText('weird_thing')).not.toBeInTheDocument();
     });

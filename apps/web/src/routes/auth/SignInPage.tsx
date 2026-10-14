@@ -6,6 +6,7 @@ import { FormField } from '@/components/ui/FormField';
 import { Input } from '@/components/ui/Input';
 import { PasswordInput } from '@/components/ui/PasswordInput';
 import { authErrorMessage } from '@/features/auth/error-map';
+import { useFocusFirstInvalid } from '@/features/auth/useFocusFirstInvalid';
 import { safeNext } from '@/features/auth/safe-next';
 import { requireSupabase } from '@/lib/supabase';
 import { AuthCard, FormAlert, textLinkClass } from './AuthCard';
@@ -20,6 +21,7 @@ export function SignInPage() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [formError, setFormError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const { formRef, focusFirstInvalid } = useFocusFirstInvalid();
 
   async function onSubmit(event: FormEvent) {
     event.preventDefault();
@@ -27,6 +29,7 @@ export function SignInPage() {
     const parsed = signInSchema.safeParse({ email, password });
     if (!parsed.success) {
       setErrors(fieldErrors(parsed.error));
+      focusFirstInvalid();
       return;
     }
     setErrors({});
@@ -60,7 +63,7 @@ export function SignInPage() {
       }
     >
       <GoogleButton next={next} onError={setFormError} />
-      <form noValidate onSubmit={onSubmit} className="space-y-4">
+      <form ref={formRef} noValidate onSubmit={onSubmit} className="space-y-4">
         {formError && <FormAlert>{formError}</FormAlert>}
         <FormField label="Email" error={errors.email}>
           {({ invalid, ...a11y }) => (

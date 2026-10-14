@@ -6,6 +6,7 @@ import { FormField } from '@/components/ui/FormField';
 import { PasswordInput } from '@/components/ui/PasswordInput';
 import { useToast } from '@/components/ui/Toast';
 import { authErrorMessage } from '@/features/auth/error-map';
+import { useFocusFirstInvalid } from '@/features/auth/useFocusFirstInvalid';
 import { clearRecovery, isRecoveryPending } from '@/features/auth/recovery';
 import { requireSupabase } from '@/lib/supabase';
 import { AuthCard, FormAlert } from './AuthCard';
@@ -25,6 +26,7 @@ function ResetPasswordForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [formError, setFormError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const { formRef, focusFirstInvalid } = useFocusFirstInvalid();
 
   async function onSubmit(event: FormEvent) {
     event.preventDefault();
@@ -32,6 +34,7 @@ function ResetPasswordForm() {
     const parsed = resetPasswordSchema.safeParse({ password, confirm });
     if (!parsed.success) {
       setErrors(fieldErrors(parsed.error));
+      focusFirstInvalid();
       return;
     }
     setErrors({});
@@ -55,9 +58,9 @@ function ResetPasswordForm() {
 
   return (
     <AuthCard title="Đặt mật khẩu mới" subtitle="Chọn mật khẩu mới cho tài khoản của bạn.">
-      <form noValidate onSubmit={onSubmit} className="space-y-4">
+      <form ref={formRef} noValidate onSubmit={onSubmit} className="space-y-4">
         {formError && <FormAlert>{formError}</FormAlert>}
-        <FormField label="Mật khẩu mới" hint="Ít nhất 8 ký tự." error={errors.password}>
+        <FormField label="Mật khẩu mới" hint={errors.password ? undefined : 'Ít nhất 8 ký tự.'} error={errors.password}>
           {({ invalid, ...a11y }) => (
             <PasswordInput {...a11y} invalid={invalid} autoComplete="new-password" value={password} onChange={(e) => setPassword(e.target.value)} />
           )}
