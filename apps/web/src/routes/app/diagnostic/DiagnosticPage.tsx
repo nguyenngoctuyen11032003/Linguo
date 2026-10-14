@@ -8,6 +8,7 @@ import { Button, buttonClasses } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { functionalTransition } from '@/design/motion';
+import { track } from '@/features/analytics';
 import { useDiagnosticRun } from '@/features/diagnostic/useDiagnosticRun';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { useMotionPrefs } from '@/providers/MotionProvider';
@@ -188,6 +189,16 @@ export function DiagnosticPage() {
   const { status, item, progress, report } = run;
   const path = paths.find((p) => p.id === pathId);
 
+  // Analytics: a report reached after answering here is a completion; reopening a finished attempt is not.
+  const answeredHere = useRef(false);
+  useEffect(() => {
+    if (status === 'question') answeredHere.current = true;
+    if (status === 'report' && answeredHere.current) {
+      answeredHere.current = false;
+      track('diagnostic_completed', { mode: report?.mode ?? requestedMode });
+    }
+  }, [status, report, requestedMode]);
+
   useEffect(() => {
     if (status === 'report') navigate(reportPath(pathId), { replace: true, state: { report } });
   }, [status, report, pathId, navigate]);
@@ -269,7 +280,15 @@ export function DiagnosticPage() {
               Để sau
             </Link>
             <div className="flex-1">
-              <Button variant="accent" size="lg" block onClick={() => run.start()}>
+              <Button
+                variant="accent"
+                size="lg"
+                block
+                onClick={() => {
+                  track('diagnostic_started', { mode: run.mode ?? requestedMode, resumed: run.resumable });
+                  run.start();
+                }}
+              >
                 {run.resumable ? 'Làm tiếp' : 'Bắt đầu'}
               </Button>
             </div>

@@ -9,6 +9,7 @@ import {
   type SubmitArgs,
 } from '@linguo/shared';
 import { useToast } from '@/components/ui/Toast';
+import { track } from '@/features/analytics';
 import { useAuth } from '@/features/auth/AuthProvider';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { isNetworkError } from '@/lib/network-error';
@@ -66,6 +67,7 @@ async function loadPayload(
   if (payload.run?.status === 'in_progress') return payload;
   if (payload.run && !restart) return payload;
   const run = await startLesson(client, lessonId, pathId);
+  track('lesson_started', { restart: !!payload.run });
   // A new run starts with no attempts; the payload's attempts belonged to the previous (completed) run.
   return { ...payload, run, attempts: run.id === payload.run?.id ? payload.attempts : [] };
 }
@@ -417,6 +419,7 @@ export function useLessonRun(lessonId: string): LessonRunApi {
     try {
       const result = await completeLesson(c, current.run.id);
       dispatch({ type: 'completed', result });
+      track('lesson_completed');
       return result;
     } catch (error) {
       toast.show({ tone: 'error', message: lessonErrorMessage(error) });

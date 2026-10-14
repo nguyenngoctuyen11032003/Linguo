@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { RouterProvider } from 'react-router';
 import { ToastProvider } from '@/components/ui/Toast';
+import { AnalyticsProvider } from '@/features/analytics';
 import { AuthProvider } from '@/features/auth/AuthProvider';
 import { MotionProvider } from '@/providers/MotionProvider';
 import { ThemeProvider } from '@/providers/ThemeProvider';
@@ -12,9 +13,11 @@ export function App() {
     <ThemeProvider>
       <MotionProvider>
         <AuthProvider>
-          <ToastProvider>
-            <RouterProvider router={router} />
-          </ToastProvider>
+          <AnalyticsProvider>
+            <ToastProvider>
+              <RouterProvider router={router} />
+            </ToastProvider>
+          </AnalyticsProvider>
         </AuthProvider>
       </MotionProvider>
     </ThemeProvider>

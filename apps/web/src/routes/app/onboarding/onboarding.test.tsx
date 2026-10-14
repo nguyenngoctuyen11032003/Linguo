@@ -9,8 +9,9 @@ import { REFERENCE, TEST_KO_PATH, TEST_PATH } from '../../../../tests/unit/learn
 import { renderWithProviders } from '../../../../tests/unit/render';
 import { OnboardingPage } from './OnboardingPage';
 
-const mocks = vi.hoisted(() => ({ createPath: vi.fn() }));
+const mocks = vi.hoisted(() => ({ createPath: vi.fn(), track: vi.fn() }));
 vi.mock('@/lib/supabase', () => ({ getSupabase: () => ({}), requireSupabase: () => ({}) }));
+vi.mock('@/features/analytics', () => ({ track: mocks.track }));
 vi.mock('@/features/learning-paths/useReferenceHours', () => ({
   useReferenceHours: () => ({ status: 'ready', data: REFERENCE, retry: vi.fn() }),
 }));
@@ -42,6 +43,7 @@ const next = () => userEvent.click(screen.getByRole('button', { name: 'Tiếp t�
 
 beforeEach(() => {
   mocks.createPath.mockReset();
+  mocks.track.mockReset();
 });
 
 describe('OnboardingPage', () => {
@@ -81,6 +83,11 @@ describe('OnboardingPage', () => {
     expect(upsertPath).toHaveBeenCalledWith(TEST_PATH, { makeCurrent: true });
     expect(await screen.findByRole('heading', { name: 'Lộ trình đã sẵn sàng!' })).toBeInTheDocument();
     expect(localStorage.getItem('linguo-onboarding-draft')).toBeNull();
+    expect(mocks.track).toHaveBeenCalledWith('onboarding_completed', {
+      language: TEST_PATH.language,
+      start_point: TEST_PATH.startPoint,
+      goal_type: TEST_PATH.goalType,
+    });
     await userEvent.click(screen.getByRole('button', { name: 'Vào trang chủ' }));
     expect(screen.getByTestId('location')).toHaveTextContent(/^\/app$/);
   });

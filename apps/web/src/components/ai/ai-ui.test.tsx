@@ -18,7 +18,9 @@ const mocks = vi.hoisted(() => ({
   notice: null as unknown as UseAiNotice,
   report: vi.fn(),
   client: { fake: true },
+  track: vi.fn(),
 }));
+vi.mock('@/features/analytics', () => ({ track: mocks.track }));
 
 vi.mock('@/features/ai-tutor/useAiTutor', () => ({ useAiTutor: () => mocks.ai }));
 vi.mock('@/features/ai-tutor/useAiQuota', () => ({ useAiQuota: () => mocks.quota }));
@@ -46,6 +48,7 @@ beforeEach(() => {
   mocks.quota = { status: 'ready', quota: QUOTA, remaining: 17, error: null, refresh: vi.fn() };
   mocks.notice = notice(true, vi.fn().mockResolvedValue(true));
   mocks.report.mockReset().mockResolvedValue(undefined);
+  mocks.track.mockReset();
 });
 
 function renderSheet(props: Partial<Parameters<typeof AiExplainSheet>[0]> = {}) {
@@ -88,6 +91,7 @@ describe('AiExplainSheet', () => {
     setAi({ state: 'loading' });
     renderSheet();
     expect(mocks.ai.run).toHaveBeenCalledWith(REQUEST);
+    expect(mocks.track).toHaveBeenCalledWith('ai_sheet_opened', { task: 'explain_concept' });
     const dialog = screen.getByRole('dialog', { name: 'Giải thích AI' });
     expect(within(dialog).getByText('Giải thích AI · có thể chưa chính xác')).toBeInTheDocument();
     expect(within(dialog).getByRole('status')).toHaveTextContent('Đang soạn giải thích…');
