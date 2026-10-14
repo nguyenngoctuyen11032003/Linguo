@@ -1354,6 +1354,152 @@ function createSessionBackend(opts: SessionMockOptions = {}) {
 }
 // ==== END session planner mocks ==================================================================================
 
+// ==== BEGIN progress + analytics mocks (spec 8, task G4) ==========================================================
+// get_progress_dashboard, track_events and the user_preferences columns show_motivation / analytics_opt_out.
+
+/** A learning path id the progress contract accepts (path_id is validated as a UUID). */
+export const PROGRESS_PATH_ID = '30000000-0000-4000-8000-0000000000e1';
+
+export interface ProgressMockOptions {
+  /** Initial user_preferences.show_motivation (default true). */
+  showMotivation?: boolean;
+  /** Initial user_preferences.analytics_opt_out (default false). */
+  analyticsOptOut?: boolean;
+  /** Badges reported in `new_badges` by the first dashboard call only (like the RPC awarding them once). */
+  newBadges?: string[];
+  /** Days without any activity: the "no data yet" state. */
+  empty?: boolean;
+}
+
+/** A get_progress_dashboard payload for `range` days ending today (Asia/Ho_Chi_Minh), Sundays as rest days. */
+export function progressDashboardRow(pathId: string, range: number, opts: { empty?: boolean; motivation?: Row | null } = {}): Row {
+  const days = Array.from({ length: range }, (_, i) => {
+    const date = localDate(i - (range - 1));
+    const rest = new Date(`${date}T00:00:00Z`).getUTCDay() === 0;
+    const minutes = opts.empty || rest ? 0 : 8 + ((i * 7) % 25);
+    return {
+      date,
+      minutes,
+      xp: minutes * 2,
+      lessons: minutes > 20 ? 1 : 0,
+      reviews: minutes > 0 ? 10 : 0,
+      answers: minutes,
+      goal_minutes: rest ? 0 : 30,
+      active: minutes >= 5,
+    };
+  });
+  const sum = (key: 'minutes' | 'lessons' | 'reviews') => days.reduce((n, d) => n + d[key], 0);
+  const week = days.slice(-7);
+  const accuracy = (attempts: number, value: number) => ({ attempts, accuracy: attempts >= 10 ? value : null });
+  const skills = ['vocabulary', 'grammar', 'reading', 'listening', 'writing', 'speaking'].map((skill, i) => ({
+    skill,
+    ...(opts.empty ? accuracy(0, 0) : accuracy([42, 25, 12, 4, 0, 0][i]!, [0.82, 0.64, 0.75, 0, 0, 0][i]!)),
+    prev_attempts: opts.empty ? 0 : 20,
+    prev_accuracy: opts.empty || i > 2 ? null : 0.7,
+  }));
+  const types = ['mcq', 'fill_blank', 'word_bank', 'translate', 'listen'].map((exercise_type, i) => ({
+    exercise_type,
+    ...(opts.empty ? accuracy(0, 0) : accuracy([30, 14, 9, 11, 0][i]!, [0.9, 0.71, 0, 0.55, 0][i]!)),
+    prev_attempts: opts.empty ? 0 : 10,
+    prev_accuracy: opts.empty || i === 2 || i === 4 ? null : 0.7,
+  }));
+  return {
+    path_id: pathId,
+    range_days: range,
+    today: localDate(),
+    days,
+    totals: {
+      today_minutes: days[days.length - 1]!.minutes,
+      week_minutes: week.reduce((n, d) => n + d.minutes, 0),
+      week_goal_minutes: week.reduce((n, d) => n + d.goal_minutes, 0),
+      range_minutes: sum('minutes'),
+      lessons_completed: sum('lessons'),
+      reviews_done: sum('reviews'),
+      application_done: opts.empty ? 0 : 6,
+    },
+    skills,
+    exercise_types: types,
+    estimates: [
+      { skill: 'vocabulary', level_code: 'a2', confidence: 'medium', source: 'diagnostic', sample_size: 18, assessed_at: '2026-10-01T09:15:00Z' },
+      { skill: 'grammar', level_code: 'a2', confidence: 'self_reported', source: 'self_report', sample_size: 0, assessed_at: '2026-09-15T07:00:00Z' },
+    ],
+    mistakes: opts.empty
+      ? []
+      : [
+          {
+            prompt: 'She ___ to school every day.',
+            lesson_id: DEMO_LESSONS.enHello.id,
+            lesson_title: 'Xin chào!',
+            wrong_count: 3,
+            last_wrong_at: '2026-10-12T10:00:00Z',
+          },
+        ],
+    motivation: opts.motivation === undefined ? null : opts.motivation,
+  };
+}
+
+function createProgressBackend(opts: ProgressMockOptions = {}) {
+  const prefs = { show_motivation: opts.showMotivation ?? true, analytics_opt_out: opts.analyticsOptOut ?? false };
+  let pendingBadges = [...(opts.newBadges ?? [])];
+  const dashboardCalls: Array<{ pathId: string; range: number }> = [];
+  const events: Row[] = [];
+
+  function motivation(): Row | null {
+    if (!prefs.show_motivation) return null;
+    const fresh = pendingBadges;
+    pendingBadges = [];
+    return {
+      xp_total: 1240,
+      xp_week: 180,
+      streak_current: 6,
+      streak_best: 11,
+      grace_left: 1,
+      weekly_challenge: { target_days: 5, done_days: 2, completed: false, completed_weeks: 3 },
+      badges: [
+        { key: 'first_lesson', earned_at: '2026-09-20T08:00:00Z' },
+        { key: 'streak_7', earned_at: '2026-10-05T12:30:00Z' },
+        ...fresh.map((key) => ({ key, earned_at: new Date().toISOString() })),
+      ],
+      new_badges: fresh,
+    };
+  }
+
+  function handle(pathname: string, b: Row): { status?: number; json: unknown } | null {
+    switch (pathname) {
+      case '/rest/v1/rpc/get_progress_dashboard': {
+        const range = Number(b.p_range_days);
+        if (![7, 14, 28].includes(range)) return rpcError('invalid_range');
+        dashboardCalls.push({ pathId: String(b.p_path_id), range });
+        return { json: progressDashboardRow(String(b.p_path_id), range, { empty: opts.empty, motivation: motivation() }) };
+      }
+      case '/rest/v1/rpc/track_events': {
+        const batch = Array.isArray(b.p_events) ? (b.p_events as Row[]) : [];
+        // Every event the client sends is recorded, so a test can check that an opted-out client sends none.
+        // The client ignores the count, so 0 (what the RPC answers for an opted-out user) is a safe default.
+        events.push(...batch);
+        return { json: 0 };
+      }
+    }
+    return null;
+  }
+
+  return {
+    handle,
+    prefs,
+    /** Applies a PATCH on user_preferences to the stateful columns. */
+    patchPrefs(body: Row) {
+      if (typeof body.show_motivation === 'boolean') prefs.show_motivation = body.show_motivation;
+      if (typeof body.analytics_opt_out === 'boolean') prefs.analytics_opt_out = body.analytics_opt_out;
+    },
+    controls: {
+      dashboardCalls: () => [...dashboardCalls],
+      events: () => events.map((e) => ({ ...e })),
+      prefs: () => ({ ...prefs }),
+    },
+  };
+}
+// ==== END progress + analytics mocks =============================================================================
+
 interface MockOptions {
   /** AI tutor function and RPCs (spec 5). */
   ai?: AiMockOptions;
@@ -1370,6 +1516,8 @@ interface MockOptions {
   planner?: PlannerMockOptions;
   /** Study session planner (spec 6, P4): get_today_session / update_session_item. */
   session?: SessionMockOptions;
+  /** Progress dashboard, analytics and motivation preferences (spec 8). Always mocked; track_events answers 0. */
+  progress?: ProgressMockOptions;
 }
 
 /**
@@ -1385,6 +1533,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
   const ai = createAiBackend(opts.ai);
   const planner = createPlannerBackend(paths, opts.planner); // spec 6, P3
   const sessions = createSessionBackend(opts.session);
+  const progress = createProgressBackend(opts.progress); // spec 8, G4
 
   await page.route(`${SUPABASE_URL}/**`, async (route) => {
     const url = new URL(route.request().url());
@@ -1399,8 +1548,11 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
         }
         return route.fulfill({ json: [{ id: USER_ID }] });
       case '/rest/v1/user_preferences':
-        if (method === 'GET') return route.fulfill({ json: { theme: 'system', reduce_motion: false, ai_notice_ack_at: ai.ackAt() } });
-        return route.fulfill({ json: [{ user_id: USER_ID }] });
+        if (method === 'GET') {
+          return route.fulfill({ json: { theme: 'system', reduce_motion: false, ai_notice_ack_at: ai.ackAt(), ...progress.prefs } });
+        }
+        if (method === 'PATCH') progress.patchPrefs(body());
+        return route.fulfill({ json: [{ user_id: USER_ID, ...progress.prefs }] });
       case '/rest/v1/learning_paths':
         return route.fulfill({ json: paths.filter((p) => p.status !== 'archived') });
       case '/rest/v1/level_reference_hours':
@@ -1454,7 +1606,8 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
           diagnostic.handle(url.pathname, body()) ??
           ai.handle(url.pathname, body()) ??
           planner.handle(url.pathname, body()) ??
-          sessions.handle(url.pathname, body()))
+          sessions.handle(url.pathname, body()) ??
+          progress.handle(url.pathname, body()))
         : null;
     if (lessonReply) {
       if (lessonReply.status === 204) return route.fulfill({ status: 204, body: '' });
@@ -1471,6 +1624,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
     ai: ai.controls,
     planner: planner.controls,
     sessionUpdates: sessions.updates,
+    progress: progress.controls,
     paths: () => paths.map((p) => ({ ...p })),
   };
 }
