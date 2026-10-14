@@ -278156,9 +278156,9 @@ select content_private.import_bundle($bundle${
       }
     },
     {
-      "content_hash": "1b16f5dd4b414ecc147fb512b1d959ffc0d4b448da90d1856484467cb7970cda",
+      "content_hash": "dc557caf2063b7a3756a01ba307df3f5fc6ec976f9826ae41de6b69844287625",
       "description": {
-        "vi": "Chào hỏi, giới thiệu bản thân, động từ be và đánh vần - những câu đầu tiên cho người mới bắt đầu (Pre-A1 đến A1)."
+        "vi": "Chào hỏi, số đếm và thời gian, gia đình, sinh hoạt hằng ngày, ăn uống và mua sắm, nơi chốn và chỉ đường, thời gian rảnh và thời tiết - nền tảng cho người mới bắt đầu (Pre-A1 đến A1)."
       },
       "goal_types": [],
       "id": "71c965e2-2cc8-54bf-8c0e-0a00bae9b06b",
@@ -278266,9 +278266,9 @@ select content_private.import_bundle($bundle${
       }
     },
     {
-      "content_hash": "27bc80202c8e3bad5770642a7b2eec5fa7c52c77b68b2c664ec31659bc418dae",
+      "content_hash": "ed7745197b268e5f644af90299ef1d1296b7357bd94893e5e2a89dd6bbfdb123",
       "description": {
-        "vi": "Đọc và viết bảng chữ Hangul - nguyên âm, phụ âm, phụ âm bật hơi và căng - làm nền cho những câu giao tiếp đầu tiên (Hangul đến TOPIK 1)."
+        "vi": "Bảng chữ Hangul đầy đủ (nguyên âm ghép, patchim, nối âm) rồi giao tiếp đầu tiên - chào hỏi, số đếm và thời gian, sinh hoạt hằng ngày, ăn uống và mua sắm, gia đình (Hangul đến TOPIK 1)."
       },
       "goal_types": [],
       "id": "06732786-3fc8-5227-9538-9456b47fbdee",

@@ -9,7 +9,7 @@ language: ko
 title:
   vi: Hangul và giao tiếp nền tảng
 description:
-  vi: Đọc và viết bảng chữ Hangul - nguyên âm, phụ âm, phụ âm bật hơi và căng - làm nền cho những câu giao tiếp đầu tiên (Hangul đến TOPIK 1).
+  vi: Bảng chữ Hangul đầy đủ (nguyên âm ghép, patchim, nối âm) rồi giao tiếp đầu tiên - chào hỏi, số đếm và thời gian, sinh hoạt hằng ngày, ăn uống và mua sắm, gia đình (Hangul đến TOPIK 1).
 kind: core
 goal_types: []
 level_from: hangul
