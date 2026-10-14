@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 key: ko:lesson:vowels
 order_index: 1
 level: hangul
@@ -12,7 +11,7 @@ title:
 objectives:
   - vi: Đọc và viết tám nguyên âm cơ bản ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ ㅐ ㅔ.
   - vi: Viết âm tiết chỉ có nguyên âm bằng cách thêm ㅇ câm, đặt nguyên âm đúng vị trí dọc hoặc ngang.
-  - vi: Phân biệt các cặp dễ nhầm ㅓ/ㅗ và ㅡ/ㅜ trong từ 아이, 오이.
+  - vi: Phân biệt các cặp dễ nhầm ㅓ/ㅗ và ㅡ/ㅜ; đọc và viết hai từ 아이, 오이.
 estimated_minutes: 10
 skills: [reading, writing, listening]
 prerequisites: []
@@ -34,7 +33,7 @@ body:
       vi: Sau bài này, bạn đọc và viết được tám nguyên âm cơ bản, và đọc được hai từ đầu tiên - 아이 (đứa trẻ) và 오이 (dưa chuột).
   - type: explain
     text:
-      vi: Chữ Hàn không viết từng chữ cái nối thành hàng như tiếng Việt, mà ghép thành từng khối vuông, mỗi khối là một âm tiết. Mỗi khối phải bắt đầu bằng một phụ âm. Nếu âm tiết không có phụ âm đầu, bạn viết ㅇ vào chỗ đó - lúc này ㅇ câm, không đọc. Vì vậy "a" được viết là 아.
+      vi: Chữ Hàn không viết từng chữ cái nối thành hàng như tiếng Việt, mà ghép thành từng khối vuông, mỗi khối là một âm tiết. Mỗi khối luôn bắt đầu bằng một phụ âm; nếu âm tiết không có phụ âm đầu, bạn viết ㅇ vào chỗ đó - lúc này ㅇ câm, không đọc. Vì vậy "a" được viết là 아.
   - type: explain
     text:
       vi: Nguyên âm có nét dài đứng dọc (ㅏ ㅓ ㅣ ㅐ ㅔ) đặt bên phải ㅇ - 아, 어, 이, 애, 에. Nguyên âm có nét dài nằm ngang (ㅗ ㅜ ㅡ) đặt bên dưới ㅇ - 오, 우, 으.

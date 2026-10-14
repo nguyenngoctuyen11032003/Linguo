@@ -1,8 +1,10 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 language: ko
 skill: vocabulary
+key_confidence: reviewed
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 items:
   # ---------- hangul ----------
   - key: ko:diag:voc-hangul-mul
@@ -17,7 +19,7 @@ items:
         - { id: c, text: 문, lang: ko }
         - { id: d, text: 무, lang: ko }
     answer: b
-    explanation: { vi: "“물” (mul) là nước. “불” là lửa, “문” là cửa, “무” là củ cải — chỉ khác một nét hoặc một phụ âm nên bạn cần đọc kỹ từng khối chữ." }
+    explanation: { vi: "“물” (mul) là nước. “불” là lửa, “문” là cửa, “무” là củ cải — các từ chỉ khác nhau một chữ cái nên bạn cần đọc kỹ từng khối chữ." }
   - key: ko:diag:voc-hangul-uyu
     level: hangul
     item_type: mcq
@@ -333,7 +335,7 @@ items:
         - { id: c, text: thất vọng, lang: vi }
         - { id: d, text: hồi hộp, lang: vi }
     answer: b
-    explanation: { vi: "“당황하다” là bối rối, lúng túng khi gặp tình huống bất ngờ. Thất vọng là “실망하다”, hồi hộp là “긴장하다”, tức giận là “화가 나다”." }
+    explanation: { vi: "“당황하다” là bối rối, lúng túng khi gặp tình huống bất ngờ. Thất vọng là “실망하다”, hồi hộp, căng thẳng là “긴장하다”, tức giận là “화가 나다”." }
   # ---------- topik5 ----------
   - key: ko:diag:voc-topik5-jisok-ganeunghan
     level: topik5

@@ -1,7 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Chào hỏi & giới thiệu". IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 source: src:linguo-demo
 items:
   - key: en:item:hello
@@ -144,7 +146,7 @@ items:
           translation:
             vi: Tôi là sinh viên.
       pronunciation_note:
-        vi: Người Anh đọc gần "xtiu-đần", người Mỹ gần "xtu-đần". Chú ý âm /s/ ở đầu, không đọc thành "xờ-tu".
+        vi: Người Anh đọc gần "xtiu-đần", người Mỹ gần "xtu-đần". Hai âm /s/ và /t/ đọc liền nhau, không chèn thêm "xờ" thành "xờ-tiu-đần".
       confusion:
         vi: Student bắt đầu bằng âm phụ âm /s/, nên dùng a student, không dùng an.
 

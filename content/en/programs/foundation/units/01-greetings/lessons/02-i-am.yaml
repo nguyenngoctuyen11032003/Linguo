@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 key: en:lesson:i-am
 order_index: 2
 level: pre_a1
@@ -164,6 +163,9 @@ exercises:
       - answer: are
         feedback_vi: Với I, động từ be là am.
         error_tag: be_form
+      - answer: a
+        feedback_vi: Engineer bắt đầu bằng âm nguyên âm /e/, nên dùng an.
+        error_tag: article
     explanation:
       vi: I luôn đi với am. Engineer bắt đầu bằng âm /e/ nên dùng an.
     display_answer: I am an engineer.
@@ -206,6 +208,10 @@ exercises:
       blanks:
         b1: [are]
         b2: [is]
+    known_wrong:
+      - answer: am
+        feedback_vi: Am chỉ đi với I. We đi với are, Minh (một người) đi với is.
+        error_tag: be_form
     explanation:
       vi: We (chúng tôi) đi với are. Minh là một người, tương đương he/she, nên đi với is.
     display_answer: We are from Vietnam. Minh is a doctor.
@@ -265,6 +271,7 @@ exercises:
         - She is an engineer.
         - She's an engineer.
         - She works as an engineer.
+        - She is an engineer by profession.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -330,6 +337,8 @@ exercises:
         - He's an engineer, but I'm a teacher.
         - He is an engineer. I am a teacher.
         - He's an engineer. I'm a teacher.
+        - He is an engineer, while I am a teacher.
+        - He's an engineer, while I'm a teacher.
     rubric:
       typo_tolerance: 1
     known_wrong:

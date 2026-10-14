@@ -1,6 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
+key_confidence: reviewed
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 language: en
 skill: vocabulary
 items:
@@ -259,7 +261,7 @@ items:
         - { id: d, text: cost, lang: en }
     answer: c
     explanation:
-      vi: "“Can't afford something” nghĩa là không đủ tiền để mua. “Pay” cần đi với “for” (pay for a car), còn “cost” có chủ ngữ là món đồ."
+      vi: "“Can't afford something” nghĩa là không đủ tiền để mua. “Spend” cần “on” (spend money on a car), “pay” cần đi với “for” (pay for a car), còn “cost” có chủ ngữ là món đồ."
   - key: en:diag:voc-b1-postpone
     level: b1
     item_type: mcq
@@ -500,4 +502,4 @@ items:
         - { id: d, text: oblivious, lang: en }
     answer: b
     explanation:
-      vi: "“Obsequious” nghĩa là khúm núm, xu nịnh quá mức. “Officious” là hách dịch, thích xen vào việc người khác; “obstreperous” là ồn ào, ngỗ ngược."
+      vi: "“Obsequious” nghĩa là khúm núm, xu nịnh quá mức. “Officious” là hách dịch, thích xen vào việc người khác; “obstreperous” là ồn ào, ngỗ ngược; “oblivious” là không hề hay biết."

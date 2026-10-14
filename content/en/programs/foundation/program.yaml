@@ -1,16 +1,15 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 source: src:linguo-demo
 key: en:program:foundation
 language: en
 title:
   vi: Nền tảng tiếng Anh
 description:
-  vi: Chào hỏi, giới thiệu bản thân, động từ be và đánh vần - những câu đầu tiên cho người mới bắt đầu (Pre-A1 đến A1). Nội dung demo, chưa qua kiểm duyệt.
+  vi: Chào hỏi, giới thiệu bản thân, động từ be và đánh vần - những câu đầu tiên cho người mới bắt đầu (Pre-A1 đến A1).
 kind: core
 goal_types: []
 level_from: pre_a1

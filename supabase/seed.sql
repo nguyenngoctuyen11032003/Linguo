@@ -10,7 +10,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "839f9651-e821-596d-9438-7fb948b265bc",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "916b07b1-4964-5bf9-b5da-d96be7576852",
       "key": "en:exercise:hello-fill-your-my",
       "key_data": {
@@ -63,8 +63,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "A: What's {{b1}} name? B: {{b2}} name is Minh."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -75,7 +75,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "mcq",
       "id": "fc17d36f-6a96-5043-aeaf-c6a846cf9bf4",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "e99be19a-9939-5a37-a96b-bc873e27621c",
       "key": "en:exercise:hello-goodbye-meaning",
       "key_data": {
@@ -124,8 +124,8 @@ select content_private.import_bundle($bundle${
         "stem": "Goodbye nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -136,7 +136,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "listen",
       "id": "0fec2f30-5e07-56e2-99b0-22484990c404",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8bee4d66-4fc9-5429-87ee-0920518216a7",
       "key": "en:exercise:hello-listen-nice",
       "key_data": {
@@ -185,19 +185,19 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "153cc7c98532f06f2ba7b6f1c8afee96e51ce989560dd1349f3dd28c40b494d8",
+      "content_hash": "8672e0ad95417278368c56efcbeb57fd724bffba1183d2238734413231576e45",
       "difficulty": 1,
       "exercise_type": "word_bank",
       "id": "6e9e4aba-46fe-5701-8e96-c301fee1d07c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "916b07b1-4964-5bf9-b5da-d96be7576852",
       "key": "en:exercise:hello-order-my-name",
       "key_data": {
@@ -208,12 +208,18 @@ select content_private.import_bundle($bundle${
               "t-name",
               "t-is",
               "t-lan"
+            ],
+            [
+              "t-lan",
+              "t-is",
+              "t-my",
+              "t-name"
             ]
           ]
         },
         "display_answer": "My name is Lan.",
         "explanation": {
-          "vi": "Thứ tự là My name is + tên. Your (của bạn) và are không dùng ở đây: tên của mình thì dùng my, và name đi với is."
+          "vi": "Thứ tự thường dùng là My name is + tên (Lan is my name cũng đúng). Your (của bạn) và are không dùng ở đây: tên của mình thì dùng my, và name đi với is."
         },
         "known_wrong": [],
         "rubric": {
@@ -255,19 +261,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "80d1fb83b7817eb4612a92472930a4d4eb81964a495e88f3a91b550c5650de60",
+      "content_hash": "7e744d75fdab4f4586fea6dde47079a8217a4ec043e740faff06eb609613807d",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "c845f738-52a9-53ba-bff2-71999020343f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8bee4d66-4fc9-5429-87ee-0920518216a7",
       "key": "en:exercise:hello-order-nice",
       "key_data": {
@@ -279,12 +285,19 @@ select content_private.import_bundle($bundle${
               "w-meet",
               "w-you",
               "w-minh"
+            ],
+            [
+              "w-minh",
+              "w-nice",
+              "w-to",
+              "w-meet",
+              "w-you"
             ]
           ]
         },
         "display_answer": "Nice to meet you, Minh.",
         "explanation": {
-          "vi": "Lần đầu gặp dùng meet, không dùng see; tên người đặt ở cuối câu."
+          "vi": "Lần đầu gặp dùng meet, không dùng see (see dùng khi gặp lại người quen). Tên người có thể đặt ở cuối hoặc đầu câu."
         },
         "known_wrong": [],
         "rubric": {
@@ -330,8 +343,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -342,7 +355,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "translate",
       "id": "3032374a-8fe9-5aae-8da1-97ec279786d0",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "e99be19a-9939-5a37-a96b-bc873e27621c",
       "key": "en:exercise:hello-translate-goodbye",
       "key_data": {
@@ -382,8 +395,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Goodbye! See you tomorrow."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -394,7 +407,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "translate",
       "id": "614f15f3-72a7-5e5b-9971-3408d63df44f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "916b07b1-4964-5bf9-b5da-d96be7576852",
       "key": "en:exercise:hello-translate-intro",
       "key_data": {
@@ -451,19 +464,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Xin chào, mình tên là Lan."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "f7a2b0ffc70c250ef6bf26d47b9b55abfdffca9fdfbd51fa0a7530283e54fc80",
+      "content_hash": "90c40084de670b92e3375cb3da7e896252f71692d713c6baa4ef60062ed67d44",
       "difficulty": 2,
       "exercise_type": "translate",
       "id": "e37bb10e-175f-5fa4-81f5-09cda4856361",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8bee4d66-4fc9-5429-87ee-0920518216a7",
       "key": "en:exercise:hello-translate-nice",
       "key_data": {
@@ -473,7 +486,10 @@ select content_private.import_bundle($bundle${
             "Pleased to meet you.",
             "Glad to meet you.",
             "It's nice to meet you.",
-            "It is nice to meet you."
+            "It is nice to meet you.",
+            "Very nice to meet you.",
+            "It's a pleasure to meet you.",
+            "It is a pleasure to meet you."
           ]
         },
         "display_answer": "Nice to meet you.",
@@ -512,8 +528,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Rất vui được gặp bạn."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -524,7 +540,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "mcq",
       "id": "ce6ecef6-655f-521d-8b1a-e816138c53d2",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "916b07b1-4964-5bf9-b5da-d96be7576852",
       "key": "en:exercise:hello-your-name",
       "key_data": {
@@ -573,19 +589,19 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào hỏi tên đúng?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "e7bb3c418100fe75d2914c6ffb20f40755c69d7975d3da77245bf9882d175e6a",
+      "content_hash": "2bb8f1a178afe67b80c7ccbd1f185a8a113776963b0073e6bed629c7044f2f29",
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "64aee19e-e311-5f1d-bb97-41e9a874f933",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "5ee16b02-3c6f-50a8-8c6c-1a77ec153ab5",
       "key": "en:exercise:i-am-fill-are-is",
       "key_data": {
@@ -603,7 +619,13 @@ select content_private.import_bundle($bundle${
         "explanation": {
           "vi": "We (chúng tôi) đi với are. Minh là một người, tương đương he/she, nên đi với is."
         },
-        "known_wrong": [],
+        "known_wrong": [
+          {
+            "answer": "am",
+            "error_tag": "be_form",
+            "feedback_vi": "Am chỉ đi với I. We đi với are, Minh (một người) đi với is."
+          }
+        ],
         "rubric": {
           "diacritics": "strict",
           "expand_contractions": true,
@@ -627,19 +649,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "We {{b1}} from Vietnam. Minh {{b2}} a doctor."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "d3b4f2b05012195406640dd744780d0c87c347b94026a7d666b12f9b1e530d1c",
+      "content_hash": "624406f4c680a88e159497cc469ff369a13df6701b1bd9616a514d919dcc667a",
       "difficulty": 1,
       "exercise_type": "fill_blank",
       "id": "29f5b2c4-7b3f-5602-a7a3-acd7ed2fe187",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "62117db1-caaa-5cff-9277-ba3d4e049936",
       "key": "en:exercise:i-am-fill-hinted",
       "key_data": {
@@ -667,6 +689,11 @@ select content_private.import_bundle($bundle${
             "answer": "are",
             "error_tag": "be_form",
             "feedback_vi": "Với I, động từ be là am."
+          },
+          {
+            "answer": "a",
+            "error_tag": "article",
+            "feedback_vi": "Engineer bắt đầu bằng âm nguyên âm /e/, nên dùng an."
           }
         ],
         "rubric": {
@@ -696,8 +723,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "I {{b1}} {{b2}} engineer."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -708,7 +735,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "listen",
       "id": "ccd6f52e-d7d5-5a0a-a18a-b7b2b50107a5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "5ee16b02-3c6f-50a8-8c6c-1a77ec153ab5",
       "key": "en:exercise:i-am-listen-we",
       "key_data": {
@@ -757,8 +784,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -769,7 +796,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "mcq",
       "id": "9758b70f-2e94-5ee3-a910-d092e5846f4d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "62117db1-caaa-5cff-9277-ba3d4e049936",
       "key": "en:exercise:i-am-mcq-an",
       "key_data": {
@@ -813,8 +840,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn từ đúng cho chỗ trống: He is ___ engineer.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -825,7 +852,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "mcq",
       "id": "e7b8ece1-85cb-513f-a508-255735818fb5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "5ee16b02-3c6f-50a8-8c6c-1a77ec153ab5",
       "key": "en:exercise:i-am-mcq-is",
       "key_data": {
@@ -874,8 +901,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn từ đúng cho chỗ trống: She ___ a teacher.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -886,7 +913,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "f269277d-b6dc-5693-9c42-89e9f0191b96",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3a28f81c-88b2-5dcb-897b-be3f2dd4b3c4",
       "key": "en:exercise:i-am-order-plural",
       "key_data": {
@@ -943,8 +970,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -955,7 +982,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "word_bank",
       "id": "e508f928-f293-573f-9ec1-eec78361fa7b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "94944b18-9ee2-57cc-a1ed-da78555cbb99",
       "key": "en:exercise:i-am-order-teacher",
       "key_data": {
@@ -1013,19 +1040,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "be8a68d3c8aae4a8c46289506b0392764abca2d981c4535c00d049f1283717c3",
+      "content_hash": "3910494904c729a1db84364ec9443e0c4ce7d9ffdc4e9ff07d4f6efed92f25a1",
       "difficulty": 2,
       "exercise_type": "translate",
       "id": "4279678a-e074-51a2-9959-ad2673177ca2",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3a28f81c-88b2-5dcb-897b-be3f2dd4b3c4",
       "key": "en:exercise:i-am-translate-engineer",
       "key_data": {
@@ -1033,7 +1060,8 @@ select content_private.import_bundle($bundle${
           "accepted": [
             "She is an engineer.",
             "She's an engineer.",
-            "She works as an engineer."
+            "She works as an engineer.",
+            "She is an engineer by profession."
           ]
         },
         "display_answer": "She is an engineer.",
@@ -1077,8 +1105,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Cô ấy là kỹ sư."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -1089,7 +1117,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "translate",
       "id": "96ecfb64-c5b3-575f-8d3f-d42d446f77fb",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "43545982-544e-5c8e-a722-aa6ed610525a",
       "key": "en:exercise:i-am-translate-student",
       "key_data": {
@@ -1149,8 +1177,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tôi là sinh viên."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -1161,7 +1189,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "translate",
       "id": "8939d937-902c-59cd-8bac-bd8e7dc053a3",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2a5d28c2-8655-517a-b324-bf74397571a6",
       "key": "en:exercise:i-am-translate-they",
       "key_data": {
@@ -1198,19 +1226,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "They are teachers from Hanoi."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "befb2d0edaac5397ae1e5b14348594ca13b81066d8fd4b6ad147058fb35778be",
+      "content_hash": "f24d7920fb771ae30ecfb8d6b63be1d7e3e8d9820d2c2c509c0000bb68ffecfa",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "fe898145-9c78-504f-a88e-992ae72e07d8",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "62117db1-caaa-5cff-9277-ba3d4e049936",
       "key": "en:exercise:i-am-translate-two",
       "key_data": {
@@ -1221,7 +1249,9 @@ select content_private.import_bundle($bundle${
             "He is an engineer, but I am a teacher.",
             "He's an engineer, but I'm a teacher.",
             "He is an engineer. I am a teacher.",
-            "He's an engineer. I'm a teacher."
+            "He's an engineer. I'm a teacher.",
+            "He is an engineer, while I am a teacher.",
+            "He's an engineer, while I'm a teacher."
           ]
         },
         "display_answer": "He is an engineer, and I am a teacher.",
@@ -1265,8 +1295,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Anh ấy là kỹ sư, còn tôi là giáo viên."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -1277,7 +1307,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "f55fe4ee-253c-50f9-9058-cc21534a065d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "e410d484-64cf-5be6-b72f-a84fbfc6fd63",
       "key": "en:exercise:spelling-fill-double",
       "key_data": {
@@ -1318,8 +1348,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Tên Bill được đánh vần là B-I-{{b1}} L."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -1330,7 +1360,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "fill_blank",
       "id": "63e8f4f1-78b8-5259-a9d1-0bc967aae7bf",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "16abdabb-9baa-50f3-979b-c5f542d8756a",
       "key": "en:exercise:spelling-fill-spell",
       "key_data": {
@@ -1376,8 +1406,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "A: How do you {{b1}} your name? B: L-A-N."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -1388,7 +1418,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "mcq",
       "id": "aa141495-061d-5bce-ab13-335ad26caac5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f9d07717-c08d-5859-83ec-1b2edf32ea00",
       "key": "en:exercise:spelling-letter-a",
       "key_data": {
@@ -1437,8 +1467,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chữ cái nào có tên đọc là /eɪ/ (gần \"ây\")?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -1449,7 +1479,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "90d8baa6-753c-5ebd-8ec7-ae3e3aee25fa",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f9d07717-c08d-5859-83ec-1b2edf32ea00",
       "key": "en:exercise:spelling-letter-g",
       "key_data": {
@@ -1498,8 +1528,8 @@ select content_private.import_bundle($bundle${
         "stem": "Tên chữ cái G đọc thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -1510,7 +1540,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "listen",
       "id": "ecd29798-bb7a-5854-a897-0941798bbde5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "16abdabb-9baa-50f3-979b-c5f542d8756a",
       "key": "en:exercise:spelling-listen-question",
       "key_data": {
@@ -1559,8 +1589,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -1571,7 +1601,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "da042e9e-21f8-5880-a36c-85b99549aa7d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "16abdabb-9baa-50f3-979b-c5f542d8756a",
       "key": "en:exercise:spelling-mcq-reply",
       "key_data": {
@@ -1620,8 +1650,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn tên Huy. Người đối diện hỏi: \"How do you spell that?\" Bạn trả lời thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -1632,7 +1662,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "887eb5fd-82f1-58be-89d5-e12c354af861",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "16abdabb-9baa-50f3-979b-c5f542d8756a",
       "key": "en:exercise:spelling-order-again",
       "key_data": {
@@ -1723,8 +1753,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -1735,7 +1765,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "word_bank",
       "id": "0377dee4-4dd6-5986-9e1b-5dee7f8caa4a",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "16abdabb-9baa-50f3-979b-c5f542d8756a",
       "key": "en:exercise:spelling-order-question",
       "key_data": {
@@ -1803,8 +1833,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -1815,7 +1845,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "translate",
       "id": "894ef00b-626d-5cfe-9ab3-fb4d689dcc06",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "16abdabb-9baa-50f3-979b-c5f542d8756a",
       "key": "en:exercise:spelling-translate-ask",
       "key_data": {
@@ -1865,8 +1895,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tên bạn đánh vần thế nào?"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -1877,7 +1907,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "translate",
       "id": "8485b73c-3b2a-5984-b867-226e1705eafa",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "16abdabb-9baa-50f3-979b-c5f542d8756a",
       "key": "en:exercise:spelling-translate-please",
       "key_data": {
@@ -1919,8 +1949,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Can you spell that, please?"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -1931,7 +1961,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "word_bank",
       "id": "f39f047f-918b-5f03-8f5f-8b668fd73fc9",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "6c928f8c-2737-523d-82b9-17b522559af1",
       "key": "ko:exercise:aspirated-build-ka",
       "key_data": {
@@ -1979,8 +2009,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -1991,7 +2021,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "b1617f25-9de1-5709-bcaf-7ba9400e40b5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8ffbed18-1a40-526e-9248-a82debc8983a",
       "key": "ko:exercise:aspirated-fill-words",
       "key_data": {
@@ -2049,8 +2079,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Cà phê - {{b1}}피. Quả táo - 사{{b2}}."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -2061,7 +2091,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "listen",
       "id": "219f1f2d-7150-5136-bd68-30ee9b97df32",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8ffbed18-1a40-526e-9248-a82debc8983a",
       "key": "ko:exercise:aspirated-listen-coffee",
       "key_data": {
@@ -2110,8 +2140,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -2122,7 +2152,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "mcq",
       "id": "16bb5b6a-b3d8-5399-8f2a-391e20b5f628",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "6c928f8c-2737-523d-82b9-17b522559af1",
       "key": "ko:exercise:aspirated-which",
       "key_data": {
@@ -2171,8 +2201,8 @@ select content_private.import_bundle($bundle${
         "stem": "Phụ âm nào là phụ âm bật hơi?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -2183,7 +2213,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "word_bank",
       "id": "82c6236f-44a1-5c5f-a698-c8d8f319f5fb",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "bf3533ef-d7dd-5240-9ab4-5ebd86122bff",
       "key": "ko:exercise:consonants-build-ma",
       "key_data": {
@@ -2235,8 +2265,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -2247,7 +2277,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "1d3dcde1-853c-5eab-ac3b-6531771e2810",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "ebcde95a-b6b0-5352-93d8-2c98fd1aa768",
       "key": "ko:exercise:consonants-build-moja",
       "key_data": {
@@ -2305,8 +2335,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -2317,7 +2347,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "f0d520c4-57bb-50e6-b24b-2a27ea60ba34",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "1f130113-7301-5418-bfda-fdf09cfc39d1",
       "key": "ko:exercise:consonants-fill-words",
       "key_data": {
@@ -2370,8 +2400,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Cái cây - 나{{b1}}. Một - 하{{b2}}."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -2382,7 +2412,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "listen",
       "id": "b6cfa3ff-4b55-5b93-9107-8f2dfff5efb7",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "eb944379-b935-5caa-81b4-6f28b6a5a324",
       "key": "ko:exercise:consonants-listen-bada",
       "key_data": {
@@ -2431,8 +2461,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -2443,7 +2473,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "translate",
       "id": "386e255f-33a1-5a51-9987-2ea335646e63",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "aafed08b-687c-5c7e-9494-598a9451676b",
       "key": "ko:exercise:consonants-meaning-hana",
       "key_data": {
@@ -2475,8 +2505,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "ko",
         "source_text": "하나"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -2487,7 +2517,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "mcq",
       "id": "9493b204-e656-54e3-8e0b-6bdee1ce392f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "830dcfba-08ea-51bb-b9e1-c6776ec8fd71",
       "key": "ko:exercise:consonants-n",
       "key_data": {
@@ -2536,8 +2566,8 @@ select content_private.import_bundle($bundle${
         "stem": "Phụ âm nào đọc là \"n\"?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -2548,7 +2578,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "mcq",
       "id": "06d6865e-5752-51f4-9063-d6a96a49038f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "1f130113-7301-5418-bfda-fdf09cfc39d1",
       "key": "ko:exercise:consonants-namu",
       "key_data": {
@@ -2597,8 +2627,8 @@ select content_private.import_bundle($bundle${
         "stem": "나무 nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -2609,7 +2639,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "translate",
       "id": "c1bfd04d-e994-574c-b73b-5a9903a9787c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "eb944379-b935-5caa-81b4-6f28b6a5a324",
       "key": "ko:exercise:consonants-write-bada",
       "key_data": {
@@ -2654,8 +2684,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "biển"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -2666,7 +2696,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "c8016e67-7708-5e40-8e4e-09157b30b525",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "0fb5ee3c-8543-50ae-8d06-a6e3890b0148",
       "key": "ko:exercise:consonants-write-mother",
       "key_data": {
@@ -2712,8 +2742,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "mẹ"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -2724,7 +2754,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "b7b944ee-d058-5d3e-9477-9eaa5fd484bd",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "ae90436c-f812-5d69-9f1c-63a1f731dadd",
       "key": "ko:exercise:tense-which",
       "key_data": {
@@ -2773,8 +2803,8 @@ select content_private.import_bundle($bundle${
         "stem": "Phụ âm nào là phụ âm căng, đọc gần \"t\" trong \"tôi\"?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -2785,7 +2815,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "translate",
       "id": "af6966b2-b4de-56d3-a3b2-cb22f8500cab",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "0b1d59c2-0d11-5846-8d8c-6246cc207c56",
       "key": "ko:exercise:tense-write-appa",
       "key_data": {
@@ -2831,8 +2861,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "bố"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -2843,7 +2873,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "word_bank",
       "id": "e69c9a73-e8da-5388-baa3-7fa6618b7f2c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2df7bf63-6482-507e-a00b-558e781e68bc",
       "key": "ko:exercise:vowels-build-o",
       "key_data": {
@@ -2891,8 +2921,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -2903,7 +2933,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "e3078432-d029-5d06-99d5-fa9439666b9e",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f536d3eb-d3a7-5304-97bf-19175e2ae94b",
       "key": "ko:exercise:vowels-build-oi",
       "key_data": {
@@ -2967,8 +2997,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -2979,7 +3009,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "mcq",
       "id": "c23e537f-978b-52b5-aa55-8ab48d81c6a6",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3ecdddb3-fe5a-59d5-9cd7-001fc01538f6",
       "key": "ko:exercise:vowels-eo",
       "key_data": {
@@ -3028,8 +3058,8 @@ select content_private.import_bundle($bundle${
         "stem": "Nguyên âm nào đọc gần \"ơ\" trong tiếng Việt?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -3040,7 +3070,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "777ff750-e0a7-58bd-a895-03b1c932646e",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "fb73a7f0-09c4-5e4c-ac5e-2ad43000fc2f",
       "key": "ko:exercise:vowels-fill-ieung",
       "key_data": {
@@ -3098,8 +3128,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Nguyên âm ㅏ viết thành âm tiết là {{b1}}; nguyên âm ㅜ viết thành âm tiết là {{b2}}."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -3110,7 +3140,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "mcq",
       "id": "23f30124-3160-5486-bf12-160741c0383d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "05c1d40f-00d7-5cc6-ae23-5fb34fc03b39",
       "key": "ko:exercise:vowels-horizontal",
       "key_data": {
@@ -3159,8 +3189,8 @@ select content_private.import_bundle($bundle${
         "stem": "Âm tiết nào có nguyên âm nằm ngang, đặt bên dưới ㅇ?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -3171,7 +3201,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "listen",
       "id": "118bcecd-62e2-521d-a269-f0c52ff70436",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "cc365ae8-b182-525b-b7b0-62a6512bbf7d",
       "key": "ko:exercise:vowels-listen-ai",
       "key_data": {
@@ -3220,8 +3250,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -3232,7 +3262,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "translate",
       "id": "5acbbf86-59c7-5b27-aa20-11b9f335dc2d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "cc365ae8-b182-525b-b7b0-62a6512bbf7d",
       "key": "ko:exercise:vowels-meaning-ai",
       "key_data": {
@@ -3274,8 +3304,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "ko",
         "source_text": "아이"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -3286,7 +3316,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "translate",
       "id": "0ce864a5-6cc0-54f2-9271-9b07615d7fe4",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f536d3eb-d3a7-5304-97bf-19175e2ae94b",
       "key": "ko:exercise:vowels-write-oi",
       "key_data": {
@@ -3331,8 +3361,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "dưa chuột"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -3343,7 +3373,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "3541d3c1-a6b9-5730-9c6d-36499d8fece4",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b3aeaf3b-cb05-58af-8a4d-e66318821442",
       "key": "ko:exercise:w-vowels-build-sagwa",
       "key_data": {
@@ -3401,8 +3431,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -3413,7 +3443,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 1,
       "exercise_type": "fill_blank",
       "id": "cbb97593-5710-539c-9456-dc8a3a3f6185",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "5139fc5c-a1e5-5a91-a7b8-bf1189924679",
       "key": "ko:exercise:y-vowels-fill-uyu",
       "key_data": {
@@ -3463,8 +3493,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Sữa - 우{{b1}}"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -3475,7 +3505,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "translate",
       "id": "ff6195a7-ac00-5dcd-a055-e0848c0e5b15",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "5139fc5c-a1e5-5a91-a7b8-bf1189924679",
       "key": "ko:exercise:y-vowels-meaning-uyu",
       "key_data": {
@@ -3506,8 +3536,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "ko",
         "source_text": "우유"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -3547,13 +3577,13 @@ select content_private.import_bundle($bundle${
         "text": "a / an"
       },
       "id": "62117db1-caaa-5cff-9277-ba3d4e049936",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:a-an",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -3583,13 +3613,13 @@ select content_private.import_bundle($bundle${
         "text": "alphabet"
       },
       "id": "a674cc7e-c232-56e6-882f-d530c2bc1c45",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:alphabet",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -3628,13 +3658,13 @@ select content_private.import_bundle($bundle${
         "text": "am / is / are"
       },
       "id": "5ee16b02-3c6f-50a8-8c6c-1a77ec153ab5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:be-present",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -3664,13 +3694,13 @@ select content_private.import_bundle($bundle${
         "text": "doctor"
       },
       "id": "efdcf6c8-b650-5dca-83cc-4b7e42e81732",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:doctor",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -3703,13 +3733,13 @@ select content_private.import_bundle($bundle${
         "text": "double"
       },
       "id": "e410d484-64cf-5be6-b72f-a84fbfc6fd63",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:double",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -3746,13 +3776,13 @@ select content_private.import_bundle($bundle${
         "text": "engineer"
       },
       "id": "3a28f81c-88b2-5dcb-897b-be3f2dd4b3c4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:engineer",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -3785,13 +3815,13 @@ select content_private.import_bundle($bundle${
         "text": "from"
       },
       "id": "2a5d28c2-8655-517a-b324-bf74397571a6",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:from",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "grammar"
@@ -3825,13 +3855,13 @@ select content_private.import_bundle($bundle${
         "text": "goodbye"
       },
       "id": "e99be19a-9939-5a37-a96b-bc873e27621c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:goodbye",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -3868,13 +3898,13 @@ select content_private.import_bundle($bundle${
         "text": "hello"
       },
       "id": "4ed8838c-0d9a-5b5f-ba3d-cd734a9ce425",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:hello",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -3908,13 +3938,13 @@ select content_private.import_bundle($bundle${
         "text": "hi"
       },
       "id": "421f1208-1809-5a1c-82ce-2dc72e949e33",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:hi",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -3948,13 +3978,13 @@ select content_private.import_bundle($bundle${
         "text": "letter"
       },
       "id": "484745fd-06c1-5f2d-99bc-794176a05758",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:letter",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -3990,13 +4020,13 @@ select content_private.import_bundle($bundle${
         "text": "A, E, I, G, J, H, R, Y, Z"
       },
       "id": "f9d07717-c08d-5859-83ec-1b2edf32ea00",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:letter-names",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "listening"
@@ -4033,13 +4063,13 @@ select content_private.import_bundle($bundle${
         "text": "meet"
       },
       "id": "b39b2a8a-0df4-5913-9dc5-0955744cbe37",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:meet",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -4081,13 +4111,13 @@ select content_private.import_bundle($bundle${
         "text": "name"
       },
       "id": "916b07b1-4964-5bf9-b5da-d96be7576852",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:name",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -4120,13 +4150,13 @@ select content_private.import_bundle($bundle${
         "text": "Nice to meet you."
       },
       "id": "8bee4d66-4fc9-5429-87ee-0920518216a7",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:nice-to-meet-you",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -4163,13 +4193,13 @@ select content_private.import_bundle($bundle${
         "text": "spell"
       },
       "id": "16abdabb-9baa-50f3-979b-c5f542d8756a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:spell",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -4195,10 +4225,10 @@ select content_private.import_bundle($bundle${
           "vi": "học sinh, sinh viên"
         },
         "pronunciation_note": {
-          "vi": "Người Anh đọc gần \"xtiu-đần\", người Mỹ gần \"xtu-đần\". Chú ý âm /s/ ở đầu, không đọc thành \"xờ-tu\"."
+          "vi": "Người Anh đọc gần \"xtiu-đần\", người Mỹ gần \"xtu-đần\". Hai âm /s/ và /t/ đọc liền nhau, không chèn thêm \"xờ\" thành \"xờ-tiu-đần\"."
         }
       },
-      "content_hash": "31f46786dedab184ced0b4ae886e46878ecadc817e803fd74cba46859e95891b",
+      "content_hash": "36edf06b13453510eb7ec070b314648a65bc345cd5f7366f624c53ab00e1d57d",
       "difficulty": 1,
       "front": {
         "ipa": "UK /ˈstjuːdnt/ · US /ˈstuːdnt/",
@@ -4206,13 +4236,13 @@ select content_private.import_bundle($bundle${
         "text": "student"
       },
       "id": "43545982-544e-5c8e-a722-aa6ed610525a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:student",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -4242,13 +4272,13 @@ select content_private.import_bundle($bundle${
         "text": "teacher"
       },
       "id": "94944b18-9ee2-57cc-a1ed-da78555cbb99",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:teacher",
       "language_code": "en",
       "level_code": "pre_a1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -4281,13 +4311,13 @@ select content_private.import_bundle($bundle${
         "text": "아이"
       },
       "id": "cc365ae8-b182-525b-b7b0-62a6512bbf7d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "ko:item:ai",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -4320,13 +4350,13 @@ select content_private.import_bundle($bundle${
         "text": "아빠"
       },
       "id": "0b1d59c2-0d11-5846-8d8c-6246cc207c56",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "ko:item:appa",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -4351,10 +4381,10 @@ select content_private.import_bundle($bundle${
           "vi": "Bốn phụ âm bật hơi - đọc kèm một luồng hơi mạnh"
         },
         "pronunciation_note": {
-          "vi": "ㅌ gần \"th\" trong tiếng Việt. ㅋ là \"k\" bật hơi, khác \"kh\" tiếng Việt. ㅍ là \"p\" bật hơi, hai môi chạm nhau, không phải \"ph\"."
+          "vi": "ㅌ gần \"th\" trong tiếng Việt; ㅊ là \"ch\" kèm luồng hơi mạnh. ㅋ là \"k\" bật hơi, khác \"kh\" tiếng Việt (không cọ xát trong cổ họng). ㅍ là \"p\" bật hơi, hai môi chạm nhau, không phải \"ph\"."
         }
       },
-      "content_hash": "8beb75c40d6f0f3bc0dffca9f0fbe98432430e60bdce79d8b6d21dbfa81e5026",
+      "content_hash": "4e349e46ca6f4b0418f6d38a6b02f10a11ed5904ef9dad8cb2d0cc7b2369baa7",
       "difficulty": 3,
       "front": {
         "pos": "phụ âm bật hơi",
@@ -4362,13 +4392,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅋ ㅌ ㅍ ㅊ"
       },
       "id": "6c928f8c-2737-523d-82b9-17b522559af1",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:aspirated",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading",
         "listening"
@@ -4402,13 +4432,13 @@ select content_private.import_bundle($bundle${
         "text": "바다"
       },
       "id": "eb944379-b935-5caa-81b4-6f28b6a5a324",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "ko:item:bada",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -4430,10 +4460,10 @@ select content_private.import_bundle($bundle${
           "vi": "Phụ âm gần \"p\" nhẹ (đầu từ) hoặc \"b\" (giữa hai nguyên âm)"
         },
         "pronunciation_note": {
-          "vi": "Đầu từ đọc nhẹ, gần \"p\" không bật hơi; giữa hai nguyên âm gần \"b\"."
+          "vi": "Đầu từ đọc nhẹ, gần \"p\" kèm một chút hơi (ít hơn nhiều so với ㅍ); giữa hai nguyên âm gần \"b\"."
         }
       },
-      "content_hash": "c259766203ad2bfcd742155af702e5119b79458038f4c853b3fe2ad00d577942",
+      "content_hash": "477f19bf14f6514773d1ea9e194a3dbce4dcd7c199b41943884a2def03940b54",
       "difficulty": 2,
       "front": {
         "pos": "phụ âm",
@@ -4441,13 +4471,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅂ"
       },
       "id": "3e87c775-c123-5c1a-94f4-6eeb78cfa066",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:bieup",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading",
         "listening"
@@ -4470,10 +4500,10 @@ select content_private.import_bundle($bundle${
           "vi": "Phụ âm gần \"t\" (đầu từ) hoặc \"đ\" (giữa hai nguyên âm)"
         },
         "pronunciation_note": {
-          "vi": "Đầu từ đọc nhẹ, gần \"t\"; giữa hai nguyên âm gần \"đ\", nên 바다 đọc gần \"pa-đa\"."
+          "vi": "Đầu từ đọc nhẹ, gần \"t\" kèm một chút hơi (ít hơn nhiều so với ㅌ); giữa hai nguyên âm gần \"đ\", nên 바다 đọc gần \"pa-đa\"."
         }
       },
-      "content_hash": "59132df0fb53b30fdf6c45944c751a047b614bcc598704a3515edc02320f0db5",
+      "content_hash": "31cf1b8d78fd8fcfc7d5c78cb683a29828d82551cee8c6a2f31d645251adc0b6",
       "difficulty": 2,
       "front": {
         "pos": "phụ âm",
@@ -4481,13 +4511,13 @@ select content_private.import_bundle($bundle${
         "text": "ㄷ"
       },
       "id": "cbb817a8-cd74-5750-b284-a7135244d811",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:digeut",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading",
         "listening"
@@ -4521,13 +4551,13 @@ select content_private.import_bundle($bundle${
         "text": "어머니"
       },
       "id": "0fb5ee3c-8543-50ae-8d06-a6e3890b0148",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "ko:item:eomeoni",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -4549,10 +4579,10 @@ select content_private.import_bundle($bundle${
           "vi": "Phụ âm gần \"c/k\" (đầu từ) hoặc \"g\" (giữa hai nguyên âm)"
         },
         "pronunciation_note": {
-          "vi": "Đầu từ đọc nhẹ, gần \"c\" trong \"ca\" nhưng không bật hơi; giữa hai nguyên âm gần \"g\"."
+          "vi": "Đầu từ đọc nhẹ, gần \"c\" trong \"ca\" kèm một chút hơi (ít hơn nhiều so với ㅋ); giữa hai nguyên âm gần \"g\"."
         }
       },
-      "content_hash": "d82abcac37911ea85141844d0f4aeb5817bcb12e23051f8f8b7329d6db537c95",
+      "content_hash": "52ee6d3e2af326886f4267f0b1cac72d432afc09b133088b996847b68e9fdccd",
       "difficulty": 2,
       "front": {
         "pos": "phụ âm",
@@ -4560,13 +4590,13 @@ select content_private.import_bundle($bundle${
         "text": "ㄱ"
       },
       "id": "d7d01396-f8d6-59fb-b4e4-d959ef8c6163",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:giyeok",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading",
         "listening"
@@ -4597,13 +4627,13 @@ select content_private.import_bundle($bundle${
         "text": "하나"
       },
       "id": "aafed08b-687c-5c7e-9494-598a9451676b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "ko:item:hana",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -4636,13 +4666,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅎ"
       },
       "id": "8987f7b0-5b17-581a-9949-cf7066dcc001",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:hieut",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading"
       ],
@@ -4675,13 +4705,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅇ"
       },
       "id": "fb73a7f0-09c4-5e4c-ac5e-2ad43000fc2f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:ieung",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading"
       ],
@@ -4714,13 +4744,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅈ"
       },
       "id": "d1801372-21cd-5193-806d-18fefe1acbf1",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:jieut",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading",
         "listening"
@@ -4754,13 +4784,13 @@ select content_private.import_bundle($bundle${
         "text": "커피"
       },
       "id": "8ffbed18-1a40-526e-9248-a82debc8983a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "ko:item:keopi",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -4793,13 +4823,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅁ"
       },
       "id": "bf3533ef-d7dd-5240-9ab4-5ebd86122bff",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:mieum",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading"
       ],
@@ -4829,13 +4859,13 @@ select content_private.import_bundle($bundle${
         "text": "모자"
       },
       "id": "ebcde95a-b6b0-5352-93d8-2c98fd1aa768",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "ko:item:moja",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -4868,13 +4898,13 @@ select content_private.import_bundle($bundle${
         "text": "나무"
       },
       "id": "1f130113-7301-5418-bfda-fdf09cfc39d1",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "ko:item:namu",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -4907,13 +4937,13 @@ select content_private.import_bundle($bundle${
         "text": "ㄴ"
       },
       "id": "830dcfba-08ea-51bb-b9e1-c6776ec8fd71",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:nieun",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading"
       ],
@@ -4946,13 +4976,13 @@ select content_private.import_bundle($bundle${
         "text": "오이"
       },
       "id": "f536d3eb-d3a7-5304-97bf-19175e2ae94b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "ko:item:oi",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -4985,13 +5015,13 @@ select content_private.import_bundle($bundle${
         "text": "ㄹ"
       },
       "id": "76414518-94e4-58a0-8305-88093e58c1e0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:rieul",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading",
         "listening"
@@ -5025,13 +5055,13 @@ select content_private.import_bundle($bundle${
         "text": "사과"
       },
       "id": "b3aeaf3b-cb05-58af-8a4d-e66318821442",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "ko:item:sagwa",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -5064,13 +5094,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅅ"
       },
       "id": "97de116f-df46-523e-a659-b501d52642c1",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:siot",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading"
       ],
@@ -5106,13 +5136,13 @@ select content_private.import_bundle($bundle${
         "text": "ㄲ ㄸ ㅃ ㅆ ㅉ"
       },
       "id": "ae90436c-f812-5d69-9f1c-63a1f731dadd",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:tense",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading",
         "listening"
@@ -5146,13 +5176,13 @@ select content_private.import_bundle($bundle${
         "text": "우유"
       },
       "id": "5139fc5c-a1e5-5a91-a7b8-bf1189924679",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "ko:item:uyu",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -5185,13 +5215,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅏ"
       },
       "id": "c3124d07-1152-5f06-b567-4dedcb5c65c1",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:vowel-a",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading"
       ],
@@ -5227,13 +5257,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅐ"
       },
       "id": "a28d1034-e2bd-57c9-aebe-f70cf07692b2",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:vowel-ae",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading"
       ],
@@ -5266,13 +5296,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅔ"
       },
       "id": "0b4afe9e-39b1-5093-b259-bdff7fd73263",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:vowel-e",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading"
       ],
@@ -5308,13 +5338,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅓ"
       },
       "id": "3ecdddb3-fe5a-59d5-9cd7-001fc01538f6",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:vowel-eo",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading",
         "listening"
@@ -5351,13 +5381,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅡ"
       },
       "id": "05c1d40f-00d7-5cc6-ae23-5fb34fc03b39",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:vowel-eu",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading",
         "listening"
@@ -5391,13 +5421,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅣ"
       },
       "id": "d650147e-95b3-5868-b66f-a2e7fc59514c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:vowel-i",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading"
       ],
@@ -5433,13 +5463,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅗ"
       },
       "id": "2df7bf63-6482-507e-a00b-558e781e68bc",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:vowel-o",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading",
         "listening"
@@ -5476,13 +5506,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅜ"
       },
       "id": "4895d2d6-db1c-54b5-bda8-a68491040182",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:vowel-u",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading",
         "listening"
@@ -5516,13 +5546,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅘ ㅝ"
       },
       "id": "d5a594fe-bbc7-5ce8-aaf6-21fb4313d7bd",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:w-vowels",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading"
       ],
@@ -5555,13 +5585,13 @@ select content_private.import_bundle($bundle${
         "text": "ㅑ ㅕ ㅛ ㅠ"
       },
       "id": "d3f86885-1b22-5553-bbeb-0a2c4ce70070",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "hangul",
       "key": "ko:item:y-vowels",
       "language_code": "ko",
       "level_code": "hangul",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "reading"
       ],
@@ -6035,10 +6065,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "ce0645a3764ea0266f1cb3aa86bcd821ad72cb4561d1d51e8918818a4b2fd5a7",
+      "content_hash": "ec7af3cbc0cc546c4b7c300b0ad8d7b764f85e1cf13b26551f89557359de1a19",
       "estimated_minutes": 8,
       "id": "69dc577d-a377-5093-af0f-9c23deb82650",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:hello",
       "language_code": "en",
       "level_code": "pre_a1",
@@ -6054,8 +6084,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 1,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "vocabulary",
         "speaking",
@@ -6163,10 +6193,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "c521eaf280760438182d721bc49230c90b385ba936e8d16e74fc77724f3c977e",
+      "content_hash": "7ecbe006f5ce212067f83a8f999d0b858ce94bb75f64a687b570be93bf66c751",
       "estimated_minutes": 10,
       "id": "28c72bd3-e8c2-5350-8395-12f93e0a3f42",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:i-am",
       "language_code": "en",
       "level_code": "pre_a1",
@@ -6182,8 +6212,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 2,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "vocabulary",
@@ -6282,7 +6312,7 @@ select content_private.import_bundle($bundle${
       "content_hash": "3fc95a6ed966c98e586bc450a032b05d90dd60157ef297f4f85f237a761de543",
       "estimated_minutes": 8,
       "id": "31e10657-8731-5185-b926-11758cb0a7fd",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:spelling",
       "language_code": "en",
       "level_code": "pre_a1",
@@ -6298,8 +6328,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 3,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "listening",
         "speaking",
@@ -6421,7 +6451,7 @@ select content_private.import_bundle($bundle${
       "content_hash": "d38fc5303ddcce6bac3d16d1011029e688212e9e8ee8d594a4af367bec879f1d",
       "estimated_minutes": 12,
       "id": "ba8b8110-f82c-51ce-a412-7f612118c84b",
-      "is_demo": true,
+      "is_demo": false,
       "key": "ko:lesson:aspirated-tense",
       "language_code": "ko",
       "level_code": "hangul",
@@ -6437,8 +6467,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 3,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "reading",
         "writing",
@@ -6468,7 +6498,7 @@ select content_private.import_bundle($bundle${
         },
         {
           "text": {
-            "vi": "ㄴ ㅁ ㅎ đọc như \"n\", \"m\", \"h\" tiếng Việt; ㅅ gần \"x\". Bốn phụ âm ㄱ ㄷ ㅂ ㅈ ở đầu từ đọc nhẹ, gần \"c\", \"t\", \"p\", \"ch\" không bật hơi; khi đứng giữa hai nguyên âm, chúng nghe gần \"g\", \"đ\", \"b\", \"j\". Vì vậy 바다 (biển) đọc gần \"pa-đa\"."
+            "vi": "ㄴ ㅁ ㅎ đọc như \"n\", \"m\", \"h\" tiếng Việt; ㅅ gần \"x\". Bốn phụ âm ㄱ ㄷ ㅂ ㅈ ở đầu từ đọc nhẹ, gần \"c\", \"t\", \"p\", \"ch\", chỉ kèm một chút hơi (ít hơn nhiều so với phụ âm bật hơi); khi đứng giữa hai nguyên âm, chúng nghe gần \"g\", \"đ\", \"b\", \"j\". Vì vậy 바다 (biển) đọc gần \"pa-đa\"."
           },
           "type": "explain"
         },
@@ -6546,10 +6576,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "599bee4aaf6e3598efff3f278350b62462fbaa9d2a85752f270508816ab318fb",
+      "content_hash": "37d189786d98b09e56964b0e1afcc086fda064bf8d7eac7062463431fb0149a7",
       "estimated_minutes": 12,
       "id": "e2d3c4af-d841-5d56-bb65-1d26b4799d10",
-      "is_demo": true,
+      "is_demo": false,
       "key": "ko:lesson:consonants",
       "language_code": "ko",
       "level_code": "hangul",
@@ -6565,8 +6595,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 2,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "reading",
         "writing",
@@ -6590,7 +6620,7 @@ select content_private.import_bundle($bundle${
         },
         {
           "text": {
-            "vi": "Chữ Hàn không viết từng chữ cái nối thành hàng như tiếng Việt, mà ghép thành từng khối vuông, mỗi khối là một âm tiết. Mỗi khối phải bắt đầu bằng một phụ âm. Nếu âm tiết không có phụ âm đầu, bạn viết ㅇ vào chỗ đó - lúc này ㅇ câm, không đọc. Vì vậy \"a\" được viết là 아."
+            "vi": "Chữ Hàn không viết từng chữ cái nối thành hàng như tiếng Việt, mà ghép thành từng khối vuông, mỗi khối là một âm tiết. Mỗi khối luôn bắt đầu bằng một phụ âm; nếu âm tiết không có phụ âm đầu, bạn viết ㅇ vào chỗ đó - lúc này ㅇ câm, không đọc. Vì vậy \"a\" được viết là 아."
           },
           "type": "explain"
         },
@@ -6664,10 +6694,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "cda8e480ac891fa39b4a7e92b090b566793d38e3775caa592fdb9d6a82e66a82",
+      "content_hash": "b3d2e5c22ce311cffb5f0904c8607505babb32ab47754be01cedf7d8c59642c5",
       "estimated_minutes": 10,
       "id": "1a7609ea-0d21-5335-b740-d01c03ee6dd3",
-      "is_demo": true,
+      "is_demo": false,
       "key": "ko:lesson:vowels",
       "language_code": "ko",
       "level_code": "hangul",
@@ -6679,12 +6709,12 @@ select content_private.import_bundle($bundle${
           "vi": "Viết âm tiết chỉ có nguyên âm bằng cách thêm ㅇ câm, đặt nguyên âm đúng vị trí dọc hoặc ngang."
         },
         {
-          "vi": "Phân biệt các cặp dễ nhầm ㅓ/ㅗ và ㅡ/ㅜ trong từ 아이, 오이."
+          "vi": "Phân biệt các cặp dễ nhầm ㅓ/ㅗ và ㅡ/ㅜ; đọc và viết hai từ 아이, 오이."
         }
       ],
       "order_index": 1,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "reading",
         "writing",
@@ -6700,21 +6730,21 @@ select content_private.import_bundle($bundle${
   ],
   "programs": [
     {
-      "content_hash": "693d4b2d1ce3db085cee3a66e89252572ea2c90f4af9ca02bd0d3017bea7b124",
+      "content_hash": "1b16f5dd4b414ecc147fb512b1d959ffc0d4b448da90d1856484467cb7970cda",
       "description": {
-        "vi": "Chào hỏi, giới thiệu bản thân, động từ be và đánh vần - những câu đầu tiên cho người mới bắt đầu (Pre-A1 đến A1). Nội dung demo, chưa qua kiểm duyệt."
+        "vi": "Chào hỏi, giới thiệu bản thân, động từ be và đánh vần - những câu đầu tiên cho người mới bắt đầu (Pre-A1 đến A1)."
       },
       "goal_types": [],
       "id": "71c965e2-2cc8-54bf-8c0e-0a00bae9b06b",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:program:foundation",
       "kind": "core",
       "language_code": "en",
       "level_from": "pre_a1",
       "level_to": "a1",
       "order_index": 1,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
       "title": {
@@ -6722,21 +6752,21 @@ select content_private.import_bundle($bundle${
       }
     },
     {
-      "content_hash": "54316bc60261f99e6a6c4ab13a9d3adf8cf4ab43dd21f01afcdaa82295503ee1",
+      "content_hash": "27bc80202c8e3bad5770642a7b2eec5fa7c52c77b68b2c664ec31659bc418dae",
       "description": {
-        "vi": "Đọc và viết bảng chữ Hangul - nguyên âm, phụ âm, phụ âm bật hơi và căng - làm nền cho những câu giao tiếp đầu tiên (Hangul đến TOPIK 1). Nội dung demo, chưa qua kiểm duyệt."
+        "vi": "Đọc và viết bảng chữ Hangul - nguyên âm, phụ âm, phụ âm bật hơi và căng - làm nền cho những câu giao tiếp đầu tiên (Hangul đến TOPIK 1)."
       },
       "goal_types": [],
       "id": "06732786-3fc8-5227-9538-9456b47fbdee",
-      "is_demo": true,
+      "is_demo": false,
       "key": "ko:program:hangul-basics",
       "kind": "core",
       "language_code": "ko",
       "level_from": "hangul",
       "level_to": "topik1",
       "order_index": 1,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
       "title": {
@@ -6748,15 +6778,15 @@ select content_private.import_bundle($bundle${
     {
       "attribution_required": false,
       "author_or_org": "Linguo",
-      "content_hash": "b42eb4b4a4e9f5805f125bd036d6e5a8029fbe410e9526932bec06db683c7dac",
+      "content_hash": "bc92e6fed221eac89b12dd2f3ff5d6f2654ab73b12573e2cda4793773fbe49c2",
       "id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
-      "is_demo": true,
+      "is_demo": false,
       "key": "src:linguo-demo",
       "license": "own",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "status": "published",
-      "title": "Linguo tự soạn — demo, chưa kiểm duyệt",
+      "title": "Linguo tự soạn",
       "url": null
     }
   ],
@@ -6764,12 +6794,12 @@ select content_private.import_bundle($bundle${
     {
       "content_hash": "f3d0bc33471973993d07fb5289678830b5c8eab13efec190913ad248480d5035",
       "id": "d0a536c4-6a29-5fc5-b0e7-0699945981fa",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:unit:greetings",
       "order_index": 1,
       "program_id": "71c965e2-2cc8-54bf-8c0e-0a00bae9b06b",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
       "title": {
@@ -6779,12 +6809,12 @@ select content_private.import_bundle($bundle${
     {
       "content_hash": "8dc68c8c5c19443889200ceb6af64995e5e0f6b54c36161965c9e84e773a30be",
       "id": "49b9ffe4-4bf1-5b64-96dc-a5fa0edf69de",
-      "is_demo": true,
+      "is_demo": false,
       "key": "ko:unit:hangul",
       "order_index": 1,
       "program_id": "06732786-3fc8-5227-9538-9456b47fbdee",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
       "title": {
@@ -6799,16 +6829,16 @@ select content_private.import_diagnostic_bundle($diagnostic${
   "items": [
     {
       "answer_key": "o3250fdc5",
-      "content_hash": "dc57e3ad5fe200d03b88335009d0733f1d212cf3f83acd924da0b5508b94cdbc",
+      "content_hash": "fb31842a7305dc4176cb50c6a9ae590a1b93ecf933b70dc062e635be8e3c00f5",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“Can” là động từ khuyết thiếu: không thêm “-s” và theo sau là động từ nguyên mẫu không “to”. Vì vậy “cans” và “can to” đều sai."
       },
       "id": "ee2cf092-4024-5b83-b123-d2907f932d6a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-a1-can-play-guitar",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -6837,23 +6867,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "My brother ___ play the guitar very well.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o5af2e84f",
-      "content_hash": "7a0441b3dc12686b24b01f5d0ebcbec2d7f799d08b4ee5b4748f48b522fce45f",
+      "content_hash": "c91f24efcc0b6074d7a3845587a1767f0d25d195e876f283499215efe0ef9779",
       "difficulty": 1.5,
       "explanation": {
         "vi": "Cá bơi bên trong nước sông nên dùng “in”. “On” là trên bề mặt, “at” chỉ một điểm, đều không hợp với cá bơi dưới sông."
       },
       "id": "8fd2ea4c-1619-556d-9998-b14c77a54ac9",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-a1-fish-in-river",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -6882,23 +6912,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Many fish swim ___ the river.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o8d73fe71",
-      "content_hash": "9792798026cbddbd018d311cb7e457f50c72f9aec0752199a38e0b68a304fd5d",
+      "content_hash": "f98dc72e777eddd7a32f6c4fd3f80ca3fee229d111c55e26245990178824e0fd",
       "difficulty": 1.5,
       "explanation": {
         "vi": "Thì hiện tại đơn với chủ ngữ ngôi thứ ba số ít (she) thì động từ thêm “-s”: “lives”. “Is live” sai vì không dùng “is” cùng động từ nguyên mẫu."
       },
       "id": "0ba63b91-b19b-5ad2-9ed5-0a6a85e98efb",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-a1-she-lives",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -6927,23 +6957,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "She ___ in Hanoi with her parents.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o7e8660a0",
-      "content_hash": "f1f3b200bdee4e449b5f88e10576bc7ef1ce2c6bb19dd125325f24571afd102c",
+      "content_hash": "cb9cbed86a6b852ebd2f5c1a79d476ae3c40ffab9881c693c40ae5fcfbfa6766",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“Two cats” là số nhiều nên dùng “there are”. Tiếng Việt nói “có”, nhưng tiếng Anh không dùng “has/have” trong cấu trúc “there ___” này."
       },
       "id": "222e796b-2b95-53b3-95f6-ac350bbe0b2c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-a1-there-are-two-cats",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -6972,23 +7002,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "There ___ two cats in the garden.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "ob8b146d9",
-      "content_hash": "fd80d2d8bb26dc61ea3f023fd4a26a3bb30f0710c0cc4044890d098766d6f1ab",
+      "content_hash": "3dccd249186ad73485150f781ff4c0fc9bfefc7ca842a9f34a674bf85ed37055",
       "difficulty": 1.5,
       "explanation": {
         "vi": "Sở hữu cách của danh từ số ít là thêm “’s”: “Tom’s bike” (xe đạp của Tom). “Toms” không có dấu nháy là sai, còn “Toms’” dùng cho danh từ số nhiều."
       },
       "id": "0710829b-486c-5ace-a4dc-074d802654d4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-a1-toms-bike",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -7017,23 +7047,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "This is ___ bike. He rides it to school every day.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o13ea8feb",
-      "content_hash": "1b18a1f8e31e7ca43563340dcfdeddb9e80d078e9174c9f5cff86cc216025916",
+      "content_hash": "43b6161f39f05e81f3490eaf63446a794c4e66366f85626e94e30e37cf1c6854",
       "difficulty": 2.5,
       "explanation": {
         "vi": "Hành động đang diễn ra ngay lúc nói nên dùng hiện tại tiếp diễn: “is sleeping”. “Sleeps” là hiện tại đơn (thói quen), còn “are” không hợp với chủ ngữ số ít “the baby”."
       },
       "id": "b5f44397-4a16-5ede-8125-17fc2ec1233b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-a2-baby-is-sleeping",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -7062,23 +7092,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Please be quiet. The baby ___ in the next room.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o04fe8bda",
-      "content_hash": "b6288b0f1f53e30f1988efaf078df00bf32bb9bb9637cacacf9d60edfaabec03",
+      "content_hash": "71f47a1b2629ecf09332c30a99a42055f8a225f4a9f6823a66dfc9fe60809441",
       "difficulty": 2.5,
       "explanation": {
         "vi": "Tính từ ngắn “big” khi so sánh hơn thì gấp đôi phụ âm và thêm “-er”: “bigger than”. “More big” sai vì “more” chỉ dùng với tính từ dài; “biggest” là so sánh nhất."
       },
       "id": "14bd9f4f-cf76-5deb-8878-a600b6596fca",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-a2-bigger-than",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -7107,23 +7137,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "My house is ___ than yours, but yours has a nicer garden.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "oa0b86f66",
-      "content_hash": "68edeceeb53fefbfff79c4825939e3e4c95afb8a724247a931215f6779566850",
+      "content_hash": "a6318ff7952b983ecf435e0a7d6bbd0fb73dadc4728123a2b3927ada01f54b91",
       "difficulty": 2.5,
       "explanation": {
         "vi": "Khi dự đoán dựa trên dấu hiệu đang thấy (mây đen), ta dùng “be going to”: “It is going to rain”. Thiếu “is” như “going to” là sai ngữ pháp."
       },
       "id": "039e4389-66f6-585b-ad30-a78acab67ba5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-a2-going-to-rain",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -7152,23 +7182,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Look at those dark clouds! It ___ rain.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o92204ab6",
-      "content_hash": "2481ba2f4f1baed1701e53aa5bf83562c51bad8222424d742e230ff1e0644347",
+      "content_hash": "f7aa44b400d4ad3fbde8eacb6e7b4e620b2c99f8686a04a6996915afb0c52f6a",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“Sugar” là danh từ không đếm được nên hỏi số lượng bằng “how much”. “How many” chỉ dùng với danh từ đếm được số nhiều."
       },
       "id": "f9b68c7b-9a94-5bf0-b052-ea1a595eed06",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-a2-how-much-sugar",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -7197,23 +7227,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "How ___ sugar do you want in your tea?",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o5504d127",
-      "content_hash": "a83f6c5075fb0dc1ed4c90525bc0f82779552f586de3ad0f002c18dc3b43e816",
+      "content_hash": "74fdeedc0a1bc0e1216d9e90b6625ab6bc06a1376e1a531e5d6f1d48feb5836c",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“Last Sunday” là mốc thời gian đã kết thúc nên dùng quá khứ đơn “went” (quá khứ bất quy tắc của “go”). Thì hiện tại hoàn thành “have gone” không đi với mốc thời gian quá khứ cụ thể."
       },
       "id": "e3a9bef9-aae6-5d31-b604-67da2ac8f638",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-a2-went-last-sunday",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -7242,23 +7272,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "We ___ to the beach last Sunday.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "of47d404a",
-      "content_hash": "8a7be67cdee3aec306e5309417689c66da0e465113b5d7146dd04adf568b8a71",
+      "content_hash": "c6779c435cb367831fb49884f91bde9f7732d3d638f158c51479411cc05c096e",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Cây cầu không tự xây mà “được xây” nên dùng bị động quá khứ: “was + V3” = “was built”. “Built” một mình là chủ động (cầu tự xây), “was build” sai dạng động từ."
       },
       "id": "be69fc2e-a7a4-522f-a5ea-865ec8be225f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-b1-bridge-was-built",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -7287,23 +7317,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "This old bridge ___ in 1995.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "oe220df0a",
-      "content_hash": "5e97a274c749a115e38bde6f2d284154dbf976a86ba279e099b9d86e565abde8",
+      "content_hash": "d81cab40bd750fc8670812d8485262b4f6c48a31d13272b24ab1916e7e7f8141",
       "difficulty": 3.5,
       "explanation": {
         "vi": "“Since 2018” diễn tả việc bắt đầu trong quá khứ và kéo dài đến hiện tại nên dùng hiện tại hoàn thành “have lived”. Người Việt hay chọn “live” hoặc “lived”, nhưng cả hai đều không đi với “since”."
       },
       "id": "1e8754ca-bb99-50d2-9e03-053eb4e71f63",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-b1-have-lived-since",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -7332,23 +7362,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "I ___ in this city since 2018, and I still love it.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "oef0b6479",
-      "content_hash": "6bab5a172629524515f69dd8014113f3ab77be1019a1f9e331063a91b46ac006",
+      "content_hash": "1175bcbf397afa7baece19a1b9f1617110d3af8e383946fcc7c4630aa28822a7",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Câu điều kiện loại 2 (giả định trái hiện tại): mệnh đề “if” dùng quá khứ đơn “had”, mệnh đề chính dùng “would + V”. Không dùng “would” hay “will” trong mệnh đề “if”."
       },
       "id": "4bf19087-7922-5fbe-aeed-ae036ab92650",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-b1-if-i-had-more-money",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -7377,23 +7407,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "If I ___ more money, I would buy a new laptop.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o220ff091",
-      "content_hash": "e2f14829d1c2185e77aab70b6f063669891f1b712c83f0fd9e50b0354c3cf58d",
+      "content_hash": "1d7e3d8d56883335544e8eb9c88b55789f286bf7abbd03ddcacf2354ea4e44f4",
       "difficulty": 3.5,
       "explanation": {
-        "vi": "“Used to + V” diễn tả thói quen trong quá khứ nay không còn. “Be used to” nghĩa là “quen với” và phải theo sau bởi danh từ/V-ing, nên “was used to play” sai."
+        "vi": "“Used to + V” diễn tả thói quen trong quá khứ nay không còn. “Be used to” nghĩa là “quen với” và phải theo sau bởi danh từ/V-ing, nên “was used to play” sai. “Use to” chỉ đúng sau “did/didn’t” (I didn’t use to…)."
       },
       "id": "23e763d2-7282-506d-aa6c-ba01e7af1b42",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-b1-used-to-play",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -7422,23 +7452,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "When I was a child, I ___ play football every afternoon.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "oec0725d6",
-      "content_hash": "1fa335b155d75e33001fbf94a9694379bcb1d643997b8bc928e630bebe99ec2e",
+      "content_hash": "437c76dd07fb1dcbdc06af71e4b9f6c0636aaa8af4d041968ea82f6d7c3a1a2a",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Đại từ quan hệ thay cho người và làm chủ ngữ là “who”. “Which” dùng cho vật, “whose” chỉ sở hữu, còn “what” không dùng làm đại từ quan hệ sau danh từ."
       },
       "id": "053ddfbe-6627-5bc9-bba4-6d08adfde6f4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-b1-woman-who-lives",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -7467,23 +7497,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "The woman ___ lives next door is a doctor.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o409cae74",
-      "content_hash": "ff58dea6c782580c54e1cea6a4f2f4aa6bd4416fcdfd388b3ecded3e699ccc7f",
+      "content_hash": "e769a813575aec1195e4e118362154a6902851dd1954dfa6a3fdb349d35590f3",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Theo sau là cụm danh từ “the heavy rain” và ý nghĩa nhượng bộ nên dùng “Despite”. “Although” cần một mệnh đề có động từ, còn “Because of” sai về nghĩa."
       },
       "id": "cebef8d3-2414-55e4-b3ce-8ce8c47d8030",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-b2-despite-rain",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -7512,23 +7542,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "___ the heavy rain, the match went ahead as planned.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "ob7d7599b",
-      "content_hash": "70b9c4d99298c4e51ed43dbf1297efe27710b24d34b2759698c8edddb70f562a",
+      "content_hash": "e0e518c00246ad0794f75e8963122d981ce92abd65ce77a129aac60ef881b945",
       "difficulty": 4.5,
       "explanation": {
-        "vi": "“Must have + V3” diễn tả suy luận gần như chắc chắn về quá khứ dựa trên bằng chứng (đèn tắt, không ai mở cửa). “Can’t have” lại khẳng định điều ngược lại, còn “should have” mang nghĩa “lẽ ra nên”."
+        "vi": "“Must have + V3” diễn tả suy luận gần như chắc chắn về quá khứ dựa trên bằng chứng (đèn tắt, không ai mở cửa). “Can’t have” và “couldn’t have” lại khẳng định điều ngược với bằng chứng, còn “needn’t have” nghĩa là “lẽ ra không cần”."
       },
       "id": "d808ee40-066f-5639-9830-49915ea5dfca",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-b2-must-have-gone-out",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -7551,29 +7581,29 @@ select content_private.import_diagnostic_bundle($diagnostic${
           {
             "id": "oc0f77ab8",
             "lang": "en",
-            "text": "should have"
+            "text": "couldn't have"
           }
         ],
         "stem": "The lights are off and nobody is answering the door. They ___ gone out.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o392ad46f",
-      "content_hash": "ea5c1aadc437ded610d6f0d5a7f48804cef5e6b265128c3215d922105671dbe2",
+      "content_hash": "8f0aa06e5acf1af489a3777c5747be09beb3080dc199a0a8179ef2a919e16dd5",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Trong câu tường thuật với động từ quá khứ “told”, sự việc xảy ra trước đó (“the day before”) được lùi thì về quá khứ hoàn thành “had been”. “Has been” và “is” không lùi thì nên sai."
       },
       "id": "9645518c-5ec8-5228-a697-f5b41bae5658",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-b2-reported-had-been",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -7602,23 +7632,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Yesterday Lan told me that she ___ ill the day before, so she had missed the meeting.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o0745b737",
-      "content_hash": "3c5f43f9d13a2cbdf1cba49021be8abe759494865cbb3ebbd2ca169e22a78fe9",
+      "content_hash": "8fc7a30f2eeedd33e0fada8a4090980d1e42385dec29de0f339e0d85f5c845b8",
       "difficulty": 4.5,
       "explanation": {
         "vi": "“Wish” ước điều trái với hiện tại thì động từ lùi về quá khứ đơn: “I wish I knew”. “Know” và “will know” không dùng sau “wish” với nghĩa này; “know” cũng không chia tiếp diễn."
       },
       "id": "b2eae65e-7118-5b72-ad92-8131a87f9119",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-b2-wish-i-knew",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -7647,23 +7677,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "I wish I ___ how to speak Japanese — it would make this trip so much easier.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o3999c4e2",
-      "content_hash": "e62217d95dc0d66ddfab455bf00d7308d890fce5b0b0ba2d9679bd4e7028b652",
+      "content_hash": "b1867cfd61d9287048fb8a9c867430e7176620c222d33a40a6e88decc02e5ca5",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Câu điều kiện loại 3 (giả định trái quá khứ): “if + had V3”, mệnh đề chính “would have + V3”. “Would catch” là cấu trúc loại 2, không hợp với việc lỡ tàu đã xảy ra."
       },
       "id": "bf98d403-9e03-5892-aa24-3578c2964004",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-b2-would-have-caught",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -7692,23 +7722,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "If we had left home ten minutes earlier, we ___ the train.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "of3464657",
-      "content_hash": "275ddbc0876b66b288f8209309af6206b202625fbcb9bf56d4bde432dd85d111",
+      "content_hash": "0a35c7234221f00806bfc7a9db44671d10a38b57f9cd7dba7d489f319757f6c6",
       "difficulty": 5.5,
       "explanation": {
         "vi": "Đây là câu điều kiện hỗn hợp: điều kiện trái quá khứ (“had accepted”) nhưng kết quả ở hiện tại (“now”), nên dùng “would + V” — ở đây là “would be living”. “Would have lived” chỉ kết quả trong quá khứ, mâu thuẫn với “now”."
       },
       "id": "473e20a2-711a-5b4f-b371-59d804a272f1",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-c1-mixed-would-be-living",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -7737,23 +7767,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "If she had accepted that job in London, she ___ in a much bigger flat now.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o09d17e07",
-      "content_hash": "59ea420885cfed7a02ba3ced4b21d5ace14665247c28cca93ced9d2d2e49727f",
+      "content_hash": "ef8b877e7a049cb1e53b7d85c5f5aa73e309bd461eb5b41a5d5e8db9ea963b48",
       "difficulty": 5.5,
       "explanation": {
         "vi": "Khi trạng từ phủ định “Never” đứng đầu câu, phải đảo trợ động từ lên trước chủ ngữ: “Never have I seen”. “I have seen” không đảo ngữ nên sai; “did I saw” sai vì sau “did” phải là động từ nguyên mẫu."
       },
       "id": "96d3bd24-1476-5d12-835d-3d2b2bcab439",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-c1-never-have-i-seen",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -7782,23 +7812,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Never ___ such a breathtaking view as the one from the top of that mountain.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "oe742c653",
-      "content_hash": "cb1e2ff57d9ddde3d531aa7482a56731156a030d32d1b45f6bcbf8498c1604cb",
+      "content_hash": "8eb54e819e094cc11b7af790900564224e12ea7c9c1856f2512c59e0d5e1124e",
       "difficulty": 5.5,
       "explanation": {
         "vi": "Sau “recommend that”, tiếng Anh trang trọng dùng thể giả định: động từ nguyên mẫu không “to” với mọi chủ ngữ, nên là “be postponed”. “To be” và “being” không thể làm động từ chính của mệnh đề “that”."
       },
       "id": "efe6c52b-7694-5bbc-9479-bea8e849319e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-c1-recommended-that-be",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -7827,23 +7857,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "The committee recommended that the proposal ___ postponed until further notice.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o7058eec5",
-      "content_hash": "a06eb647af00fc02f292e319d92e7db481bb77d432376a36a43aad617c5adda5",
+      "content_hash": "b96393eef7af632dec2d3fd736393cebade9b930f61ec76bcc557509c4775050",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“Should + S + V” là dạng đảo ngữ trang trọng của “If you need…”, rất hay gặp trong thư tín. “Unless” (trừ khi) sai nghĩa, còn “Had you need” sai vì “had” đảo ngữ phải đi với V3."
       },
       "id": "273eee25-bdd7-53b4-99e2-b12f9ae39601",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-c1-should-you-need",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -7872,23 +7902,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "___ you need any further assistance, please do not hesitate to contact our team.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o030ad44d",
-      "content_hash": "dde872d1f13b7aef83d8f632be86d6fa96d81de0c64213063ce31ba5f76229e3",
+      "content_hash": "cd52ae91f157e6304a18385f28e2eaa76c6ae33c97a23320d759236151ae7eb6",
       "difficulty": 5.5,
       "explanation": {
         "vi": "Câu chẻ dạng “What + mệnh đề + is …” dùng để nhấn mạnh: “What I need is…” (Điều tôi cần là…). “That” hay “Which” không thể mở đầu mệnh đề danh từ mang nghĩa “điều mà” trong câu này."
       },
       "id": "b2407c2a-430a-5b1f-8ba4-9bf14582fd7d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-c1-what-i-need-cleft",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -7917,23 +7947,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "___ I need right now is a long, quiet holiday by the sea.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "oae516a86",
-      "content_hash": "8616a913389406470af288a06b23eeacb62c5853a5c5cdfae5744b2d79f35229",
+      "content_hash": "4a77668a050ff1561bed177eb1e8a1fd9399bc9d73b3d6cdf876a7024a827e6f",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“Albeit” nghĩa là “mặc dù”, đứng trước một cụm từ không có chủ ngữ và động từ chia, ở đây là “based on a very small sample”. “Whereas” cần một mệnh đề đầy đủ để đối lập, còn “whereby” nghĩa là “nhờ đó/theo đó”."
       },
       "id": "3906f71f-45d9-57df-b26f-ef29a39c9f80",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-c2-albeit-small-sample",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -7962,23 +7992,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "The results were encouraging, ___ based on a very small sample.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o9bacc63b",
-      "content_hash": "7e4cc9d19246e4752d074e306339bf7524ffec0d5d2b7f9ded1ffdacd7fb20ca",
+      "content_hash": "67ef73ccc8b955741bc283ba7d260a8c595b112394f75a5c7043cab7b637f1e2",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“Had it not been for…” là đảo ngữ của câu điều kiện loại 3 “If it had not been for…” (nếu không nhờ…), khớp với “would have collapsed”. “Were it not for” cũng tồn tại nhưng không thể đứng trước “been”."
       },
       "id": "2407f56e-3911-5fe8-b71f-6ea43784f184",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-c2-had-it-not-been-for",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -8007,23 +8037,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "___ it not been for your timely intervention, the whole project would have collapsed.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "oc12ebbfd",
-      "content_hash": "1a043a5605c65656b31ea0a320f918e70c9c1a8b4905839b6b866b162e939084",
+      "content_hash": "3e79b9ff50c38eddb7f89553e0dba17f6e3192a81206634267cee74693595820",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“Inasmuch as” (trang trọng) nghĩa là “xét ở chỗ/bởi vì”, nêu lý do hai vụ việc có thể so sánh. “Albeit” mang nghĩa nhượng bộ và thường đứng trước tính từ/cụm từ, còn “lest” nghĩa là “kẻo”, đều sai nghĩa."
       },
       "id": "b8dd66fa-7348-5f8b-ba6a-5041959a2c18",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-c2-inasmuch-as",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -8052,23 +8082,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "The two cases are comparable ___ both involve a breach of client confidentiality.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "obf97b6ed",
-      "content_hash": "9fbaee84014a3c6e59229ba6f8a2b172398dd77696e9c6740785ed84508eccb3",
+      "content_hash": "3cb9b698dc9867ef58ef0918dd933850593e5fdb779b85c7fa6755a08d4282cc",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“Lest” (văn phong trang trọng) nghĩa là “để không/kẻo”, theo sau là động từ ở thể giả định — vì thế có “she wake” không chia. “In case” cũng gần nghĩa nhưng đòi hỏi động từ chia thì (“in case she woke”), nên không hợp với “wake”."
       },
       "id": "1ae87402-0126-5239-9940-d146ac450981",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-c2-lest-she-wake",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -8097,23 +8127,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "She spoke in a whisper ___ she wake the sleeping child.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o6f758dad",
-      "content_hash": "5893a57630e76947e9f2ca31d019c520316d4f8a3f58e841603c16a2e5b31402",
+      "content_hash": "1d9bef2d2b5f6021b41cbc8daa4e2b4d97c1b04c1b3de83a5684422871a4252e",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“Notwithstanding” là giới từ trang trọng nghĩa là “mặc dù/bất chấp”, đứng trước cụm danh từ. “Inasmuch as” và “insofar as” là liên từ cần một mệnh đề theo sau và mang nghĩa khác (“bởi vì”, “trong chừng mực”)."
       },
       "id": "676f7989-6a66-57c6-8f71-8aadfd2901e0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-c2-notwithstanding",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -8142,23 +8172,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "___ his considerable experience, he was passed over for the promotion.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o7d70987b",
-      "content_hash": "7310921e4434622fdac90371c7d8262c44de68af6782fc2c87f16dc00f0cb299",
+      "content_hash": "a90a389ce6fc62752ed88e48d3a6738ebde9a4d73e2c8d6fd66b394d56c3dfdc",
       "difficulty": 0.5,
       "explanation": {
-        "vi": "“Apple” bắt đầu bằng nguyên âm nên dùng “an”: “an apple”. “A” dùng trước phụ âm; “two” và “many” cần danh từ số nhiều (apples) và động từ “are”."
+        "vi": "“Apple” bắt đầu bằng âm nguyên âm /æ/ nên dùng “an”: “an apple”. “A” dùng trước âm phụ âm; “two” và “many” cần danh từ số nhiều (apples) và động từ “are”."
       },
       "id": "032ffed9-96e2-5a1c-9e36-b916275dd6d2",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-pre-a1-an-apple",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -8187,23 +8217,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "It is ___ apple.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o359e979c",
-      "content_hash": "ca0c3fce3ab7f16e27447d2e186b203b6d3e0523ad4db4e7315754548f75f6bc",
+      "content_hash": "9cba09efa503b7bdaa34065c20e2ecc7ec541709c73551414a512f69e562dd2d",
       "difficulty": 0.5,
       "explanation": {
         "vi": "Với chủ ngữ “I” ta luôn dùng “am”: “I am a student”. “Is” dùng cho he/she/it, còn “be” là dạng nguyên mẫu, không đứng sau chủ ngữ như vậy."
       },
       "id": "20c2ff9d-7c9d-514e-8e8a-acef582bff6f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-pre-a1-i-am",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -8232,23 +8262,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "I ___ a student.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "oe7b8d6aa",
-      "content_hash": "a849cd1ebd4deac8263edcec661622521922f1c006048fdc50242ba7a23f0831",
+      "content_hash": "599e61ddbd1c955e6f4daeed25dabfcb43bf342ae60cdb25f8dff745f18445be",
       "difficulty": 0.5,
       "explanation": {
         "vi": "Trước danh từ “name” cần tính từ sở hữu “my” (của tôi). “I” và “me” là đại từ nhân xưng, “mine” đứng một mình, không đi kèm danh từ."
       },
       "id": "44562cff-c326-5da9-911a-a6a539ab6b91",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-pre-a1-my-name",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -8277,23 +8307,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "___ name is Anna.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o70afa1f0",
-      "content_hash": "e7c79208b78a9bc76ac9a598209012015b0aaa50de8add4ae6d55c769598242f",
+      "content_hash": "656bbb762af094b0b71b48cdb4241d7b6b60135970335cb24c5d0711d2a4d881",
       "difficulty": 0.5,
       "explanation": {
         "vi": "Chủ ngữ số nhiều “they” đi với “are”. “Is” chỉ dùng cho chủ ngữ số ít như he/she/it."
       },
       "id": "566e2510-810a-5a26-9b8f-1c52412e2a11",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-pre-a1-they-are",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -8322,23 +8352,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "They ___ my friends.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o10b06880",
-      "content_hash": "2b7d8ad18620ffdae685621e5128c987b6370771514320d752905d9e83bf72d4",
+      "content_hash": "f416181316b1b4c8fafd3d9e8fb2c60909bf127d60cbb2638b74d5887c0f0132",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“This” chỉ một vật số ít nên đi với “is”. “Are” chỉ dùng cho số nhiều hoặc “you”, “am” chỉ dùng với “I”."
       },
       "id": "7d842865-f906-542f-adcd-7b90920eb47e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "en:diag:gram-pre-a1-this-is",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -8367,23 +8397,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "This ___ my book.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o5cecb4b1",
-      "content_hash": "2051794c62df474d79c903799ca83dd7a9aa51eb35e270fc60c17cd328e65dd3",
+      "content_hash": "d53df63b79e1ab8343457174eebced7520f41ea44a0b9951c94bc936cff31843",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“My bag is under the bed” nghĩa là túi ở dưới giường. Thứ ở trên bàn (“on the desk”) là sách, không phải túi."
       },
       "id": "fc4f0596-0bef-5e49-ab6c-6ff5518a1455",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-a1-bag-under-bed",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -8413,23 +8443,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Cái túi của người viết nằm ở đâu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o8bb6304f",
-      "content_hash": "86ff6818348b91db5623c196ba93f934c139ed5b03cdd821d577af45f1d8aff7",
+      "content_hash": "712e32e61b55d75805bb8da1881bfc45fa5f2d64b0920cdade4de7a3b5d457fd",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“Must swim with an adult” nghĩa là phải bơi cùng người lớn. Thông báo không cấm trẻ em vào bể, và bể không mở cửa vào Chủ nhật."
       },
       "id": "31f0df53-53c3-56f0-b26e-a7ee302e95b3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-a1-pool-children",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -8459,23 +8489,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo thông báo của bể bơi, trẻ em dưới 10 tuổi phải làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "ob4ace3cf",
-      "content_hash": "8e732b88f3d8533b89b294b1b043f6f7c836c0a89a761bffb40169c5822c3a56",
+      "content_hash": "083ba271ce9947d58933be30a44807e4559dacf061a4d59895c3dad9f2f306ab",
       "difficulty": 1.5,
       "explanation": {
-        "vi": "“Nurse” là y tá; bác sĩ là “doctor”. Việc chị nói được tiếng Anh và tiếng Pháp không có nghĩa chị là giáo viên hay phiên dịch viên."
+        "vi": "“Nurse” là y tá; bác sĩ là “doctor”. Việc Hoa nói được tiếng Anh và tiếng Pháp không có nghĩa Hoa là giáo viên hay phiên dịch viên."
       },
       "id": "a29ec75e-1102-5f73-a84d-ee04d5881c40",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-a1-sister-nurse",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -8502,26 +8532,26 @@ select content_private.import_diagnostic_bundle($diagnostic${
           }
         ],
         "passage": "My sister Hoa is a nurse. She works at a hospital in the city. She can speak English and French.",
-        "stem": "Chị Hoa trong đoạn văn làm nghề gì?",
+        "stem": "Hoa trong đoạn văn làm nghề gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o43d27f78",
-      "content_hash": "ee99d7a799dc0d5245a5b4a4fcfa79ac13b4db8668d74f4c621001ac7829f6a8",
+      "content_hash": "e6653ab3541e62b8d958f70bb3d15cf83c6d29bd3e48deaded350fad5e65b2cc",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“My family visits my grandparents” là gia đình đến thăm ông bà, và “have lunch together at their house” là ăn trưa ở nhà ông bà. Ông bà không đến nhà người viết, và họ cũng không ăn ở nhà hàng."
       },
       "id": "5b308b50-8252-5fac-92e3-e1193ac10965",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-a1-sunday-grandparents",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -8551,23 +8581,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Vào Chủ nhật, gia đình người viết thường làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o9e022229",
-      "content_hash": "ae64b37ac7fb04b4890fe68b56dc294ee04326dfcae17ce22762d7c856ad0617",
+      "content_hash": "61de009698d44f10b43bdbb31760a58ed98fc985fde0dec376dbeac0323b4c9f",
       "difficulty": 1.5,
       "explanation": {
         "vi": "Câu “He walks his dog every morning” nghĩa là anh ấy dắt chó đi dạo mỗi sáng. “Every evening” mới là mỗi tối."
       },
       "id": "c1f74432-9e17-55f1-a5af-09c65141d8e8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-a1-tom-dog-walk",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -8597,23 +8627,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo đoạn văn, Tom dắt chó đi dạo khi nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o986f8b53",
-      "content_hash": "2d48ef7ace9e3cecd57237a50404515a33444e7635c96024b77572353a13aa54",
+      "content_hash": "b89179475433e9d36814724d1145a038c19fed4a95423ad5b121dfd55e58c3be",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“Anna is the better student” và cô ấy được điểm cao nhất lớp, nên Anna học giỏi hơn. Còn “Mark is older and taller than Anna” cho biết Mark mới là người lớn tuổi và cao hơn."
       },
       "id": "ff5c82b5-de76-5330-a20c-daf5c7cd6447",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-a2-anna-mark-compare",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -8643,23 +8673,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Câu nào sau đây đúng về Anna và Mark?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o20d96b35",
-      "content_hash": "f0965d66aae610f531615f560ce4ae360757cc6afff906f33cb6ff6892b73ffa",
+      "content_hash": "6bea06890e45dde988f37cfc7d9a53cfbc161447464d0f2961e252716aae66d6",
       "difficulty": 2.5,
       "explanation": {
         "vi": "Câu “the water was very cold, so we didn't swim” nêu rõ lý do là nước rất lạnh. Trời hôm đó nắng (“sunny”), và họ chơi bóng chuyền là việc làm thay cho bơi (“instead”), không phải lý do."
       },
       "id": "7fd4d447-e61f-5607-b8e0-1f80c9617766",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-a2-beach-cold-water",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -8689,23 +8719,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Vì sao Minh và các anh chị họ không bơi ở biển?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "oda1431c5",
-      "content_hash": "e77a245c1c286742020e7c7605336a24b0918aac0cd89a37291cb9a691943065",
+      "content_hash": "66c3657f9ee35dbbc49f0dffaae64f149089deb30c5a22199dc8f84f438aa395",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“We have plenty of rice, so don't buy any” nghĩa là còn nhiều gạo, đừng mua. Sữa và trứng thì sắp hết (“isn't much”, “only a few”) nên cần mua thêm."
       },
       "id": "0c607fcc-24f8-546c-b639-c67709ef89b8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-a2-party-shopping-rice",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -8735,23 +8765,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết dặn KHÔNG cần mua thứ gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o1d8465b5",
-      "content_hash": "9542df6cf73c262b970701b57ecb3e92efa45c2ae3eb111faf165339250dbb3f",
+      "content_hash": "dba972204b9d49f131728523b82be782484b4ac8b37250e9bef0949f217459ae",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“You shouldn't drink coffee in the evening” là lời khuyên không uống cà phê buổi tối. Ba phương án còn lại đều là những việc đoạn văn khuyên nên làm."
       },
       "id": "e8f07852-4e50-5704-90ea-58e0a5b218e1",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-a2-tired-advice",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -8781,23 +8811,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo lời khuyên trong đoạn văn, bạn KHÔNG nên làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o4ec57647",
-      "content_hash": "04dd4b517849def0f8940cfeac927e5ffe3af63cd160c5e97cefdee61ccf30e6",
+      "content_hash": "086ca0a965a0ae5c01789f0e0c98d03bdf62ed58dcd18cba0aaa50d5a84b07b1",
       "difficulty": 2.5,
       "explanation": {
         "vi": "Kim báo tàu chậm khoảng 40 phút nên “I won't be home for dinner” và dặn mẹ đừng chờ. Kim chỉ nói sẽ gọi khi đến ga, không nhờ mẹ ra đón."
       },
       "id": "5d8c537f-17ec-55d6-a2c5-730f1bb6f50e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-a2-train-late-message",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -8827,23 +8857,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Mục đích chính của tin nhắn Kim gửi mẹ là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o5082574f",
-      "content_hash": "8095f39eefab8ad39e124d86fb12cfa48a3cb7fdeac4453de987e97ea7390981",
+      "content_hash": "6cdda491d5b29301c901997e3a5a63381250e71fafb96b3d4fbac2549c823091",
       "difficulty": 3.5,
       "explanation": {
         "vi": "“To apply, send a short email explaining why you'd like to join us” là cách nộp đơn. Quán không yêu cầu kinh nghiệm (“No experience is needed”), nên phương án gửi hồ sơ kinh nghiệm là sai."
       },
       "id": "17324dd4-994b-579c-89b0-b497c8e2b180",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-b1-cafe-job-apply",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -8873,23 +8903,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo mẩu tin tuyển dụng của quán cà phê, ứng viên cần làm gì để nộp đơn?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o595735d0",
-      "content_hash": "96c4fbb05edf9e845f176946b2b97453b9e3106fed737282726e2c63ef12cc6e",
+      "content_hash": "f082c5c4f2ca10d89c4d5da74262684c36500a545a27fdb9640200fad4545626",
       "difficulty": 3.5,
       "explanation": {
         "vi": "“The only thing I haven't got used to is the heavy rain in autumn” cho biết điều duy nhất chưa quen là mưa lớn mùa thu. Những buổi tối một mình chỉ là chuyện trước đây (“used to”), giờ người viết đã có nhiều bạn."
       },
       "id": "a7871b23-75a1-53ce-b4e4-9d61c6a0a251",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-b1-danang-autumn-rain",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -8919,23 +8949,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Điều gì ở Đà Nẵng người viết vẫn chưa quen được?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "ob3cdeb3d",
-      "content_hash": "fe5e303555e0c8537c6ba5f60a9c7390b293f6f3e966b5572d3e5958a0ec3c3f",
+      "content_hash": "91280699c99dc4315606cb0dc889011807424ea7c5860e2b23f0a73296fd0dab",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Đoạn văn nói “time is rarely the real problem” và khuyên tập vào cùng một giờ mỗi ngày để thành thói quen. Phương án về người tập ít bận hơn là sai vì đoạn văn nói họ “just as busy” (bận như nhau)."
       },
       "id": "40264307-bf60-5abf-9913-e39c693035c3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-b1-exercise-habit",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -8965,23 +8995,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ý chính của đoạn văn về việc tập thể dục là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "ocfa5b463",
-      "content_hash": "b163940429e0b47f69269f24f27d751ab3ecd3d6798e9b4d23e3700a887ed0e4",
+      "content_hash": "db5822b8301b37fe592ea18cf315e92c8fa0b6f326f12ee7be615488eb4d6983",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Câu “may renew it online, unless another reader has reserved it” nghĩa là được gia hạn trực tuyến trừ khi đã có người khác đặt trước. Thông báo không nói việc nợ tiền phạt hay đóng cửa phòng học ảnh hưởng đến gia hạn."
       },
       "id": "91ef7204-ccc2-5577-a8dd-f96ca652f445",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-b1-library-renew",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -9011,23 +9041,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo thông báo thư viện, khi nào sinh viên KHÔNG thể gia hạn sách qua mạng?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o031e1794",
-      "content_hash": "d487de01cdc080a54c5d07a5062fe97d6b62366552c3c21de154d54bb97a9ceb",
+      "content_hash": "45875caa6402e03f62059bbc0604f1fd67908cc0ff4d12359861ddf5f69e6ceb",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Đường “muddy” vào mùa mưa khiến bà đến trường với đôi chân bẩn, nên “muddy” là lầy lội, đầy bùn. Đường dốc hay đông đúc không giải thích được chuyện chân bị bẩn."
       },
       "id": "261aa00b-557d-5583-acd4-f8c58266308d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-b1-muddy-road",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -9057,23 +9087,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Trong đoạn văn, từ “muddy” (the road was muddy) có nghĩa gần nhất là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "oa875b2b3",
-      "content_hash": "37f1ffa880ba3256b880fac98a5b8374af466f3910c2892b9f6eeec11c8c45ca",
+      "content_hash": "9fbb6d6316d63fcf8d91f6363eccef8f99b7cd1b8f9fde0af71c29f24bb4fc25",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Daniel đã chi phần lớn tiền tiết kiệm cho cửa hàng “before testing whether there was real demand”. Khách hàng thực ra “loved the designs”, vấn đề là giá quá cao; còn bán online là điều anh tiếc đã không làm."
       },
       "id": "329b5a3e-0b3c-5414-855c-b94963b60574",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-b2-daniel-business-failure",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -9103,23 +9133,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo Daniel, sai lầm chính khiến công ty đầu tiên thất bại là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "oa958e606",
-      "content_hash": "f2f1c80d6740e71f037ad804a314a0e9ca8ef55a1cc2714d7ea495da39588697",
+      "content_hash": "a66f8bb37abbcba3421cc1f9ebf4dbc723fb1e94df69a5141359af5d87fb0285",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Câu cuối nói “feeling certain about a memory is not a reliable sign that it is true”. Phương án về việc mất tự tin là sai vì đoạn văn nói sự tự tin “remained high” ngay cả khi chi tiết sai."
       },
       "id": "7fc55daa-9db5-50b6-ad71-e692c5b25bcd",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-b2-flashbulb-memory",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -9149,23 +9179,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Có thể rút ra kết luận nào từ đoạn văn về ký ức của con người?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o11240dc2",
-      "content_hash": "c758cc9a150171d744996ce5da20c4cd339ff9f217e12c332220e1c6597d9ef2",
+      "content_hash": "d517e1c90689b273c84a538ccc88335e1424084faad825ca019c5b1387ad0070",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Câu gián tiếp “he promised that the council would consider alternative proposals if residents could present a realistic plan” cho thấy lời hứa có điều kiện. Cuộc khảo sát độc lập do nhóm tình nguyện viên quyên tiền, không phải hội đồng chi trả."
       },
       "id": "8d60e49e-59c5-5be9-bbb8-2fec90b22327",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-b2-market-council-promise",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -9195,23 +9225,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người phát ngôn của hội đồng đã hứa điều gì với cư dân?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o7ecbd9ee",
-      "content_hash": "32b81e7a62eaad477689474f631abe777480d0ea902b5524f6711a76e9dd832d",
+      "content_hash": "70a4952d384fdcbc9efa09c5e9341c6e0e35e4386020f8e6010990b2af27fb7a",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Người viết nói “I found it rather disappointing” nhưng vẫn khen phần mở đầu và các đoạn miêu tả. Từ nối “Nevertheless” chuyển từ ý khen sang ý chê, nên không thể nói người viết chê toàn bộ."
       },
       "id": "41d8351d-c74b-51cd-9843-9296b0e9d33a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-b2-novel-review-attitude",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -9241,23 +9271,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Thái độ chung của người viết bài nhận xét đối với cuốn tiểu thuyết là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o1383f335",
-      "content_hash": "bb74e5e2ac4dc1d38e32f217b3f6cdb98b7e5c92c0bbafbcef9b594f7368dcee",
+      "content_hash": "f24affe2d19849b393e6b5b7a3660715df2dd2431f0ff8aa565c07fb623ce847",
       "difficulty": 4.5,
       "explanation": {
         "vi": "“Overstated” nghĩa là bị nói quá, phóng đại; những người này cho rằng mối lo đó không nghiêm trọng vì có thể kèm cặp trực tuyến. Họ không nói mối lo bị bỏ qua hay đã được chứng minh."
       },
       "id": "fd1e42e1-7bf4-561a-9c57-e30864380a04",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-b2-remote-work-overstated",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -9287,23 +9317,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Trong câu “this concern is overstated”, từ “overstated” gần nghĩa nhất với cụm nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o9f185d70",
-      "content_hash": "2af011cb26cd487235198b4289cdd99c3c9a3398000e50b22ae4dd555b6b6458",
+      "content_hash": "09f7c8f43fd5d7be1971ba37a1922c8d14ddd3dc2a629c0a1d95d42a0798eebc",
       "difficulty": 5.5,
       "explanation": {
         "vi": "Đoạn văn nói nhàm chán “serves a purpose” và chỉ khi thôi vội lấp đầy thời gian rảnh (“Not until… can we…”) ta mới hưởng lợi từ nó. Phương án “có hại, cần loại bỏ” chính là quan niệm mà người viết phản bác."
       },
       "id": "c30ce7b6-d62c-5273-b0e2-303f57ed7741",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-c1-boredom-purpose",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -9333,23 +9363,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Luận điểm chính của đoạn văn về sự nhàm chán là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "oec7217fb",
-      "content_hash": "a6fee2f32c21bbb11f5fb03dd44c00d595f27a5fe0116bf5c8d97c4fecab4783",
+      "content_hash": "36c4de9cf5c099cd5207e23e181716c53208d3c7e0ffdbb304e9215ae61eaca2",
       "difficulty": 5.5,
       "explanation": {
         "vi": "Bác sĩ này xem hàng nghìn phim nhưng hiếm khi biết mình đúng hay sai, nên “may grow more confident without growing more accurate”. Tác giả không so sánh năng lực hai nghề, mà so sánh việc có hay không có phản hồi."
       },
       "id": "c7be3679-3aa5-55d1-9a71-d4091f4fe5a8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-c1-expertise-feedback",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -9379,23 +9409,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Tác giả đưa ra ví dụ về bác sĩ chẩn đoán hình ảnh (radiologist) nhằm minh họa điều gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "oe2e90b94",
-      "content_hash": "3bd1ad3f4fe215b98fd98e548e80c4e59f698660044604825f967e76e0744745",
+      "content_hash": "7a60aa237d6ea37dbac8428ac68bf4c1a57c0c918ebad9256bc517b03d590da8",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“Not without complications” là cách nói phủ định kép, nghĩa là “có những phức tạp”, cụ thể là thiếu chỗ bảo quản và băn khoăn về việc trưng bày. Việc trao trả vẫn diễn ra và bảo tàng còn tài trợ xây nhà bảo quản, nên các phương án b, c sai."
       },
       "id": "ac346469-8290-5e21-8a3b-eba5a275242b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-c1-panels-not-without",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -9425,23 +9455,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Cụm “the handover was not without complications” ngụ ý điều gì về việc trao trả các tấm gỗ chạm?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "of3125759",
-      "content_hash": "7775883dba1cb4e7d745352a0e588bca342d3a311e13339272baa0d0df951bbe",
+      "content_hash": "3ef682f75f31cdcd8dddea5316e28fd30faf19efb0e9807accda8246dad7f2a9",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“Stops short of” nghĩa là chưa đi đến mức đề xuất cấm hẳn; các tác giả khẳng định biện pháp thực thi được “is preferable to an ideal one that cannot”. Họ có ghi nhận (“acknowledge”) các ý kiến phản đối, nên phương án cho rằng chúng vô căn cứ là sai."
       },
       "id": "cdc6d1dd-65ad-56b9-9121-549b7cee9a1c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-c1-plastics-report",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -9471,23 +9501,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Nhận định nào phản ánh đúng quan điểm của nhóm tác giả bản báo cáo về nhựa dùng một lần?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "ob4cd7d3d",
-      "content_hash": "7fba84908ab88c0a2b8bf009a999c871eed394b082ae073455adef1aa8dc867c",
+      "content_hash": "25df5bd14dc06838d0e39ea8d4d59c57f7627e67eb49da91825b27030a9bd423",
       "difficulty": 5.5,
       "explanation": {
         "vi": "Câu điều kiện hỗn hợp “Had the city invested…, commuters would not now be spending…” cho thấy hậu quả ở hiện tại, và “The irony is…” nhấn mạnh chi phí nay gấp khoảng bốn lần. Việc ô tô đáp ứng đủ nhu cầu chỉ là dự đoán sai của các nhà quy hoạch thời đó."
       },
       "id": "d412aae1-fc29-5377-98b8-cbad933e7ed0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-c1-tram-network-irony",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -9517,23 +9547,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết nhìn nhận quyết định bác bỏ dự án tàu điện vào thập niên 1990 như thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o36e379c6",
-      "content_hash": "07dbccfd1a129fa39c000e73ddfd70bce34d1afe067add67c9b442da3872a95a",
+      "content_hash": "48f49a067aea909767f850c3c2a2ceeb7615738ab7e6226710eed456a27d2cdc",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“A masterclass in saying very little at considerable length” là lời mỉa mai, và các ví dụ uyển ngữ cho thấy tin xấu bị làm nhẹ đi. Câu “One need not impute bad faith” cho biết người viết không cần quy kết ác ý, nên phương án “cố tình gian lận” là sai."
       },
       "id": "06249978-30cb-59c5-bea1-2b1016b2e27a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-c2-annual-report-euphemism",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -9563,23 +9593,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Đâu là cách hiểu đúng nhất về thái độ của người viết đối với bản báo cáo thường niên?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "ob872c4e5",
-      "content_hash": "9343b4345c6cfa7fe6a8e8c9624afb204835b78512b7491ed159087dffd51153",
+      "content_hash": "727087bf895a3007796b2343660c18c7e020579f9a49457daeef2473e514dd0f",
       "difficulty": 6.5,
       "explanation": {
-        "vi": "“Unsparing” ở đây đối lập với “lavish in their praise”, nghĩa là phê bình gay gắt, không nương tay. Dễ nhầm với “hào phóng” vì “spare” còn nghĩa là “dư dả”, nhưng ngữ cảnh cho thấy giới phê bình chê các tác phẩm khắc khổ về sau."
+        "vi": "“Unsparing” ở đây đối lập với “lavish in their praise”, nghĩa là phê bình gay gắt, không nương tay. Trong ngữ cảnh khác, “unsparing” có thể nghĩa là “hào phóng” (unsparing in praise), nhưng ở đây ngữ cảnh cho thấy giới phê bình chê các tác phẩm khắc khổ về sau."
       },
       "id": "682ddd92-c6f2-5dc0-a854-674b3e0744f6",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-c2-composer-unsparing",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -9609,23 +9639,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Trong đoạn văn, từ “unsparing” mô tả thái độ của giới phê bình với các tác phẩm về sau như thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o0cdaf5ce",
-      "content_hash": "55c0b3903addf4c993557c0bbbe5fc105b12e4126aedb6ff7017a7f4e528f96d",
+      "content_hash": "d1991863705da27624c8b867ad01c5e6ebad21b5c52d123c40cb9e42fdbfb8e1",
       "difficulty": 6.5,
       "explanation": {
         "vi": "Các phát hiện xác lập rằng canh tác định cư bắt đầu sớm hơn vài thế kỷ, còn việc do người địa phương sáng tạo hay người di cư mang đến vẫn là “an open question”. “Breathless coverage” nghĩa là báo chí đưa tin dồn dập, hào hứng thái quá, chứ không thận trọng."
       },
       "id": "eaba14b4-4e17-5e36-a452-dd6c8bae304d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-c2-excavation-hedging",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -9655,23 +9685,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Nhận định nào phù hợp nhất với nội dung đoạn văn về cuộc khai quật?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "of9d60e27",
-      "content_hash": "f797a6f34f138e0c2a9f4019e903bb6101140cbf84adb1e67a2e6e937aa1e3eb",
+      "content_hash": "c504c3842796dd197b4d30399b22c890cc3cccf613b58b380681046521f70978",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“Inasmuch as” (xét ở chỗ) cho thấy người viết đồng ý với phần chỉ ra mâu thuẫn; điểm yếu (“Where it falters”) nằm ở kết luận, vì cũng có thể hợp lý khi trách tài xế kém may ít đi. Đoạn văn khẳng định hành vi của hai người “identical”, nên phương án b sai."
       },
       "id": "9927bb9c-b623-55bd-84b0-3e55969e110b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-c2-moral-luck-inasmuch",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -9701,23 +9731,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết cho rằng lập luận của nhà triết học yếu ở điểm nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o6eb0b13b",
-      "content_hash": "9bbb6caf30489fcc8a9460c5542ed9796612e657f9e5b9139837236895bb4f05",
+      "content_hash": "6fb2c17fdbde3070fd9b95b8e1225a0e4ae9565cb5d1d97da0f37dcaaca3655d",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“Studied” ở đây nghĩa là có chủ ý, được dàn dựng, không liên quan đến “học”. Đoạn văn nói rõ đó không phải “genuine indifference” mà là sự kiềm chế “conceals rather than abandons their objectives”."
       },
       "id": "ac2546d5-ace1-52af-9bee-7e7cfbe11e4b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-c2-studied-indifference",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -9747,23 +9777,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Cụm “studied indifference” trong đoạn văn về đàm phán có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o659c4ea8",
-      "content_hash": "5c13ea2f0df434facaddb74723f405d881d6d2f80772bc95008df5b75732e5dd",
+      "content_hash": "9bdacd75d4a09f7d43db981d648918ff3c7b35aa4c3b2d97e1137520ba571d81",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“Black” là màu đen. Màu trắng là “white”, màu nâu là “brown”, màu xám là “grey”."
       },
       "id": "a712f362-aea7-5c5c-9abd-7afc1dc23a67",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-pre-a1-black-cat",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -9793,23 +9823,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Con mèo trong câu “This is my cat. It is black.” có màu gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "ob50db376",
-      "content_hash": "248c5bf23d997c4a438af5930fb2c5496c7a16d59cf2decbfb417a4fe1dea7bc",
+      "content_hash": "95e33bf3075eee454cd783c94e643cbafafedf8d75d53104e4a46f4d747b09c1",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“Closed” nghĩa là “đóng cửa”, “today” là “hôm nay”. Nếu hiệu sách mở cửa, biển sẽ ghi “OPEN”."
       },
       "id": "742b0217-6020-5a5f-b8ab-2f58352b0c5d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-pre-a1-closed-sign",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -9839,23 +9869,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Tấm biển “BOOKSHOP — CLOSED TODAY” cho bạn biết điều gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o629a8ced",
-      "content_hash": "4a8466035587b98a0e9e55f9ec39818dace98906c3a11c134aab543bf6b12319",
+      "content_hash": "a451c0f01d2e4339f4bd140218efae438d2c51d69d836e634db913a59347794d",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“Good morning” dùng để chào buổi sáng. Buổi chiều là “Good afternoon”, buổi tối là “Good evening”, còn “Good night” dùng khi chúc ngủ ngon."
       },
       "id": "812d324d-3173-5dff-b690-210611a5338e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-pre-a1-good-morning",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -9885,23 +9915,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Lời chào “Good morning” cho biết hai người gặp nhau vào lúc nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o8961ed20",
-      "content_hash": "cdddb06d60d13ee56b8465109726af4e076ed650c32364974ac6b22b87d2a7e6",
+      "content_hash": "3be9706e0b6d03302654b129f690551ee81cfea49fd9583229d6774a8e6cb936",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“I am ten” nghĩa là “Tôi mười tuổi”. Đừng nhầm “ten” (10) với “two” (2) hay “twelve” (12)."
       },
       "id": "c7d65e0c-a362-5bf3-bda4-6aa7965fe9f0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-pre-a1-lan-age",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -9931,23 +9961,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo đoạn giới thiệu, Lan bao nhiêu tuổi?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "oc11c203d",
-      "content_hash": "fbbaed34dc39141b1eb303b24381fcf4d6f81106be55c57cfc8d35bfe6ee832a",
+      "content_hash": "ba29f8671860f73981155d96aca6ba0f7e58ff830236bacbe1a2df0f403486a3",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“Two red apples” là hai quả táo đỏ. “One green apple” là quả táo xanh, nên tổng cộng có ba quả nhưng chỉ hai quả màu đỏ."
       },
       "id": "81103419-b610-5364-aa7f-9cd8a3442437",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "en:diag:read-pre-a1-two-apples",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -9977,23 +10007,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người nói có bao nhiêu quả táo đỏ?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o75ea5c19",
-      "content_hash": "4a2d26acca83bee712a08be359bdf6783efae9041eb5215f6df88a57cb595ea7",
+      "content_hash": "6b6a57b7b8fba705b1dfca9cdd3fd0615bd0fd85f8dbc5b6692b37edf4dcc41f",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“Breakfast” là bữa sáng. Bữa trưa là “lunch”, bữa tối là “dinner”, bữa ăn nhẹ là “snack”."
       },
       "id": "212fd093-2c36-5c14-a4b4-bc422eb7469d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-a1-breakfast",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -10022,23 +10052,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "“breakfast” là bữa nào trong ngày?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o32a4a935",
-      "content_hash": "e4311ae40156a25dfcf9342153cb4a6b437b025ddbfd9ce4e711a94cb40fdd2f",
+      "content_hash": "e172f5d7cee925cebe058945376e53b65d7744c791e55f5f5d1c6f901a1d0157",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“Cheap” nghĩa là rẻ, trái nghĩa với “expensive”. “Big” (to), “new” (mới) và “easy” (dễ) không nói về giá cả."
       },
       "id": "ba765a3c-541f-5463-b233-6ded83015c76",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-a1-cheap",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -10067,23 +10097,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào trái nghĩa với “expensive” (đắt)?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o2e672c32",
-      "content_hash": "7651c79b5d8414d2065126861701c913bd941fecd26ca8081fb7c33fb4de3420",
+      "content_hash": "a241b3ed8d8d6254bb2e4cf07e80b88a05bfa80e74962f16c372ca57430da32c",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“Kitchen” là nhà bếp, nơi nấu ăn. “Bedroom” là phòng ngủ, “bathroom” là phòng tắm, “garden” là khu vườn."
       },
       "id": "bc8e9b34-8afe-5b38-a9fe-2f1f32d074de",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-a1-kitchen",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -10112,23 +10142,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “nhà bếp”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o5de20168",
-      "content_hash": "53d5291f854bbea5f4c4d6c52e0b9f9a627d4938cdd8eadd947d8ed612a12721",
+      "content_hash": "545224fdd056b07a09bcbee52c932472fc6255e9c2012aa6afa5d298b63d6cfc",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“Tired” nghĩa là mệt. Đói là “hungry”, buồn là “sad”, lạnh là “cold”."
       },
       "id": "84744762-a877-5ada-8ac7-311980e4d60e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-a1-tired",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -10157,23 +10187,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "“tired” gần nghĩa nhất với từ nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o8bad2f23",
-      "content_hash": "c2528882846027387e7b86b13521d2e533eca61c690434b89938ae18e8d0c6b2",
+      "content_hash": "e1516ce01c12a6452822ca340210f930e84c4f68168c6df90a8c6f98e3d183c8",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“Wednesday” là thứ Tư. “Tuesday” là thứ Ba và “Thursday” là thứ Năm — hai từ này rất hay bị nhầm với nhau."
       },
       "id": "7ab122fa-b652-5277-ba1b-207d4e6f09ba",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-a1-wednesday",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a1",
       "prompt": {
@@ -10202,23 +10232,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “thứ Tư”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "of7dd9fda",
-      "content_hash": "4b127a3caf7f176ac05fdc0607eaef464b92b0ed8da7b7a448f18225040c8b2a",
+      "content_hash": "9c293850a42400917e73c4eb24f37c57d7d956b844d1b5b0df21569155c5b863",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“Angry” là tức giận. “Afraid” là sợ, “bored” là chán, “proud” là tự hào."
       },
       "id": "d9abd125-b984-59f8-8573-647825a5bb4b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-a2-angry",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -10247,23 +10277,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “tức giận”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o1ae5dead",
-      "content_hash": "1947643caffb7604fe322e0ca62107bd39f87e4df1f7dc0476c87b0d6c809f9b",
+      "content_hash": "e83b6d09e770f6001c13d5d067f0e677c11ecfc89a349eda3099d5b8c805e9c6",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“Borrow” là mượn (từ ai đó). “Lend” ngược lại, là cho mượn; “rent” là thuê, “return” là trả lại."
       },
       "id": "959d1070-8179-539a-9884-424f1977f220",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-a2-borrow",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -10292,23 +10322,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “mượn” (lấy đồ của người khác để dùng rồi trả lại)?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "od2afe7be",
-      "content_hash": "3eabde38cf5b2e30a88366232cbacd07a51beb22bad6f0d4ac397ade4b778a24",
+      "content_hash": "c1ff22f7288928c59957c4dcaf4ab592de89a65747cf6ff737fe260b80542b20",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“Ill” nghĩa là ốm, bệnh, đồng nghĩa với “sick”. “Poor” là nghèo, “lazy” là lười, “angry” là tức giận."
       },
       "id": "6b38b857-ae35-5ab7-b66a-71ee8a979c3f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-a2-ill",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -10337,23 +10367,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "“ill” gần nghĩa nhất với từ nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o3a3ca3fd",
-      "content_hash": "1709eb57cfebec7a72371d1425650ac3344c2ee2313546866dae1cb0ba969fa5",
+      "content_hash": "958ce6c166b3578d2e412bedf1b539fcdc67f14faa615bbee3dd933a63577e70",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“Journey” là chuyến đi, gần nghĩa với “trip”. “Ticket” (vé) và “station” (nhà ga) chỉ liên quan đến việc đi lại chứ không cùng nghĩa."
       },
       "id": "39def0f7-5e69-5931-ac49-bb76758e3d50",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-a2-journey",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -10382,23 +10412,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "“journey” gần nghĩa nhất với từ nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "oca46149f",
-      "content_hash": "9fd874314c136e78cd03a75b18758f63a4a04d84fbd1cda0e7317aa562048481",
+      "content_hash": "bb181c2e260722e3793f0659b040399d6cfb9dbb8afe6f1b063b7f3031dc1fff",
       "difficulty": 2.5,
       "explanation": {
         "vi": "Ta nói “miss the bus” để chỉ lỡ chuyến xe. “Lose” là làm mất đồ vật, nên “lose the bus” là sai dù người Việt hay dùng nhầm."
       },
       "id": "a77516e9-e795-5350-93f5-2e47663b80c3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-a2-miss",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "a2",
       "prompt": {
@@ -10427,23 +10457,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “lỡ” trong cụm “lỡ chuyến xe buýt”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "oeb0a1e0e",
-      "content_hash": "5780376823731947f6d602cc688a80ecdebac07449182cfa8c89ebe4978978f6",
+      "content_hash": "7bbb9eb49b01768c59f852de31654d53b4076144318b0ff7fdec20e7f25ffacb",
       "difficulty": 3.5,
       "explanation": {
-        "vi": "“Can't afford something” nghĩa là không đủ tiền để mua. “Pay” cần đi với “for” (pay for a car), còn “cost” có chủ ngữ là món đồ."
+        "vi": "“Can't afford something” nghĩa là không đủ tiền để mua. “Spend” cần “on” (spend money on a car), “pay” cần đi với “for” (pay for a car), còn “cost” có chủ ngữ là món đồ."
       },
       "id": "e8849ffc-b0ab-57cb-af9b-cbb7d57bd3ea",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-b1-afford",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -10472,23 +10502,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "We can't ___ a new car this year because we are saving for a house.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "ob6968e2f",
-      "content_hash": "f1da67eeeeead462c4db2f7228baaf9c4dd1de00717712eff1ed54e2a647a7f0",
+      "content_hash": "3d6bab39d816461efb0252fb41a727391c1cf67f18f18ffef971b08c126a94c9",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Cụm cố định là “make a decision” (đưa ra quyết định). Không nói “do a decision” dù “do” cũng có nghĩa là “làm”."
       },
       "id": "7c739d58-d59a-5dcb-a7f7-86b4e31d4a8b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-b1-make-decision",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -10517,23 +10547,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "It took me a long time to ___ a decision about my new job.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o7a11b0dc",
-      "content_hash": "903debf512cf4cb9e90acbe50a6a34717afd8ee7c76f7f141a689a3b27f3de56",
+      "content_hash": "2d1fe47444b4491101017ba548e2c25c668277d10ac750d3fd6b677974951841",
       "difficulty": 3.5,
       "explanation": {
         "vi": "“Postpone” là hoãn lại, đồng nghĩa với “put off”. “Put on” là mặc vào, “put up” là dựng lên hoặc cho ở nhờ, “put away” là cất đi."
       },
       "id": "e7929b42-6878-5da9-8def-e1321d5c0744",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-b1-postpone",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -10562,23 +10592,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "“postpone” gần nghĩa nhất với cụm động từ nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "ocd41e0e1",
-      "content_hash": "f3e950fcfa13cdd1318729d32aa587e4a515742f5eb1ba6520625513b6af647a",
+      "content_hash": "a887d545e339f2605201feb32da8b149cc93f409c9812077442ed90b5397d18e",
       "difficulty": 3.5,
       "explanation": {
         "vi": "“Reliable” nghĩa là đáng tin cậy, hợp với ý “luôn giữ lời hứa”. “Valuable” là có giá trị, thường dùng cho đồ vật, không nói về tính cách giữ lời."
       },
       "id": "2c1664fe-b3ac-5670-a323-87a03ef7f458",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-b1-reliable",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -10607,23 +10637,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "You can always count on Anna to keep her promises; she is very ___.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o1cdfa534",
-      "content_hash": "f0e153939e6e84637f16bf745b697dee46431659c0f54efc62ae710243bf54f8",
+      "content_hash": "820bf62d666ebeeb50a40c9ea5b89e7d8e96dfa0fd4a41fc4fae8b932f0eb305",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Cấu trúc “remind somebody to do something” nghĩa là nhắc ai làm gì. “Remember” là tự mình nhớ, không dùng “remember me to call” theo nghĩa nhắc."
       },
       "id": "c6244781-0547-5171-92e9-7269147e55d5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-b1-remind",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b1",
       "prompt": {
@@ -10652,23 +10682,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Please ___ me to call my grandmother tonight, or I will forget.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "oe5b1316e",
-      "content_hash": "b1461345022d60ca0b0f65dc6ea8c33b6ec2362fab90cf19eb49a34136006193",
+      "content_hash": "7fb5556b509b6fe4a7771d9d631fd9b8ac2435db9d71d13c494303dcd60feb48",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Cụm đúng là “meet a deadline” (kịp thời hạn). “Achieve” đi với mục tiêu (achieve a goal), không đi với “deadline”."
       },
       "id": "00d7becb-f2b3-577c-abe1-3885d2e2ff7c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-b2-meet-deadline",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -10697,23 +10727,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Despite working all night, the team failed to ___ the deadline.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "ob0ea7130",
-      "content_hash": "30db0735bf10ad5b12b3ab86bc5a6b4efe33c58f45681dfdb439e047478abbe9",
+      "content_hash": "2af2ab155e65e7a23e829ede4d7b397106d9bbfca2bcd014169c588d0460d8c8",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Kết hợp cố định là “raise awareness” (nâng cao nhận thức); “raise” là ngoại động từ nên có tân ngữ. “Rise” và “arise” là nội động từ, không thể theo sau bởi tân ngữ."
       },
       "id": "2b4d421c-03c8-5dc7-82a6-b44981b0333e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-b2-raise-awareness",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -10742,23 +10772,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "The campaign aims to ___ awareness of plastic pollution among young people.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "od98ccea2",
-      "content_hash": "f8e359516654b25881cac6aad1389e16b81a017c8d8de6bbe7ffa1e6ad904f5e",
+      "content_hash": "8da762eb2102d4de7b71b15418f6aeff995520c42c6830371ac7f7b654ca4864",
       "difficulty": 4.5,
       "explanation": {
         "vi": "“Reluctant” là miễn cưỡng, không muốn làm, gần nghĩa với “unwilling”. “Unable” là không có khả năng làm — khác với không muốn làm."
       },
       "id": "0c5577ce-d50c-5844-9c1a-a95d16df2664",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-b2-reluctant",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -10787,23 +10817,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "“reluctant” gần nghĩa nhất với từ nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "ofcb28a8f",
-      "content_hash": "3256697512753d88a6b2313e0462a6d3bc7ace2ae82301ddf9ada27b23351551",
+      "content_hash": "622215a394d42db55951c28874e3638c81773a52dfd26a840c78b409efc34121",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Thành ngữ “take something for granted” nghĩa là coi điều gì là hiển nhiên, không biết trân trọng. Các từ còn lại không tạo thành cụm này."
       },
       "id": "adfd43d5-ebc9-5816-a873-31d10e6c5be8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-b2-take-for-granted",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -10832,23 +10862,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Many people take clean water for ___, but in some places it is a luxury.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "ofdd1aea4",
-      "content_hash": "95e3b61790580280d027d88bcf54db1641742a1f2cfb31490246664c766f92af",
+      "content_hash": "6863b5dedec226aec23d8789de00132e61f9af874d8af390b5df3784736b036e",
       "difficulty": 4.5,
       "explanation": {
         "vi": "“Thorough” nghĩa là kỹ lưỡng (a thorough check). “Through” (xuyên qua), “though” (mặc dù) và “thought” (suy nghĩ) chỉ có cách viết gần giống."
       },
       "id": "acdaf3c0-d97f-581a-a44d-7f44bc797e28",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-b2-thorough",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "b2",
       "prompt": {
@@ -10877,23 +10907,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “kỹ lưỡng, tỉ mỉ” (ví dụ: một cuộc kiểm tra kỹ lưỡng)?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "oee740e7a",
-      "content_hash": "511033f521f901ecc9da4292b8135c3bc6b2833c479a599cfcaac0c5525f8b3a",
+      "content_hash": "0f6dfec4a8fcf0c16b1092527016b89b57679e83c4e6cf609b2fefdcf4087886",
       "difficulty": 5.5,
       "explanation": {
         "vi": "Cụm cố định “bear the brunt of something” nghĩa là gánh chịu phần nặng nề nhất. “Hold” cũng có nghĩa là giữ nhưng không kết hợp với “brunt”."
       },
       "id": "b8a80b00-4a2b-5b55-a5a6-19a77b0b7ef9",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-c1-bear-brunt",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -10922,23 +10952,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Small businesses are likely to ___ the brunt of the new regulations.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o31e6f696",
-      "content_hash": "be12c43e4ecddf2f2c970fc701f8568cac47c8b6893db88748345482ccc109aa",
+      "content_hash": "b67d67a372dc38f411907bdea167dffc3711b954770a26322d477005abc43b5d",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“Inadvertently” nghĩa là vô tình, không cố ý. “Indifferently” là thờ ơ, “inevitably” là không thể tránh khỏi, còn “deliberately” ngược lại là cố ý."
       },
       "id": "5f926089-d2dc-57ad-ab20-4789b44c7adc",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-c1-inadvertently",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -10967,23 +10997,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “vô tình, không cố ý”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o1851c7e8",
-      "content_hash": "23e941fa03a57d174229c7ad7004ca01c7384bada6d18ef9510c5b6b1510185b",
+      "content_hash": "03a22261cee4bca7656b432b47bd1f719917fab5a30b44ca01dbd0f405386386",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“Mitigate the risk” là giảm nhẹ rủi ro, hợp với ý trồng cây chống lũ. “Militate” (thường đi với “against”) dễ nhầm do cách viết, còn “exacerbate” lại là làm trầm trọng thêm."
       },
       "id": "53bd737f-1434-5062-96f6-3ce0186d7df5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-c1-mitigate",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -11012,23 +11042,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Planting trees along the riverbank helps to ___ the risk of flooding.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o021f2cb9",
-      "content_hash": "9d95c8a54d5f3cd9c16ddeb1a954e2d813a56f733c6e3390f48bfb96ba2be12f",
+      "content_hash": "b33a4e5a973566461d15208bd0a8ff2643a3e2d5e05b67f145354b04138d39dd",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“Come under close scrutiny” nghĩa là bị xem xét kỹ lưỡng. “Observance” là sự tuân thủ (luật lệ, nghi lễ), không phải sự quan sát kỹ."
       },
       "id": "600ad048-d2bd-5b6b-a2e2-c51bd6e89d15",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-c1-scrutiny",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -11057,23 +11087,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "After the scandal, the company's accounts came under close ___.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "oe5dc5c4a",
-      "content_hash": "483ec4c2f52c7321ec1b101c1e0d303ce2f48c7a80495912eeb6f971883ae36e",
+      "content_hash": "42d2b29c5ea3532d58196501f940e1950188c993748a6b7de8c1fe44db35ca83",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“Ubiquitous” nghĩa là có mặt ở khắp nơi (ví dụ: smartphones are ubiquitous). Nghĩa “mơ hồ” là của “ambiguous”, một từ có đuôi gần giống."
       },
       "id": "880b160f-938d-5c1d-b2b3-0243e18f2dc3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-c1-ubiquitous",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c1",
       "prompt": {
@@ -11102,23 +11132,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "“ubiquitous” gần nghĩa nhất với cách diễn đạt nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "ob4c51fea",
-      "content_hash": "4bbf8404a70d577dad05a144e5146df54df8f70d86d2629c064cda56dc3ba084",
+      "content_hash": "56c058c880a1b1a856b0f7823d200d326b7079131264733e87d569a721f28af1",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“A moot point” là vấn đề không còn ý nghĩa thực tế (hoặc còn tranh cãi). “Mute point” là lỗi phổ biến do hai từ phát âm gần giống nhau."
       },
       "id": "87784def-c449-5449-b506-15eebaaeb429",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-c2-moot-point",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -11147,23 +11177,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Whether the rule was fair is now a ___ point, since it was abolished last year.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "ob26f5ed9",
-      "content_hash": "13457e9667bfa6bbb8bfbbab43d83abb7b19cf669dd5be8da39675d4b9609d4d",
+      "content_hash": "c780e62f110e347ed1a6639bacbe53c1313fb0007b8e94266ab84a27ed51e973",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“Notwithstanding” là giới từ trang trọng nghĩa là “bất chấp”, đứng trước cụm danh từ. “Inasmuch as”, “insofar as” và “whereas” là liên từ, phải theo sau bởi một mệnh đề."
       },
       "id": "8bfe06ca-9608-58e8-8a89-fd0457755419",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-c2-notwithstanding",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -11192,23 +11222,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "___ the torrential rain, the ceremony went ahead exactly as planned.",
         "stem_lang": "en"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o297c70ef",
-      "content_hash": "8b41c37d7656c6aef485c2ac7266cc2f5d9220682643171b07732fb9c703c4fd",
+      "content_hash": "602a3e3aaa348c7c5e9c45d420731d4b6b0655f136da3a628504266dc94eefd1",
       "difficulty": 6.5,
       "explanation": {
-        "vi": "“Obsequious” nghĩa là khúm núm, xu nịnh quá mức. “Officious” là hách dịch, thích xen vào việc người khác; “obstreperous” là ồn ào, ngỗ ngược."
+        "vi": "“Obsequious” nghĩa là khúm núm, xu nịnh quá mức. “Officious” là hách dịch, thích xen vào việc người khác; “obstreperous” là ồn ào, ngỗ ngược; “oblivious” là không hề hay biết."
       },
       "id": "b5657efc-f8ff-52a5-a58d-ad157855f640",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-c2-obsequious",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -11237,23 +11267,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “khúm núm, xu nịnh quá mức”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "obb2fc739",
-      "content_hash": "909d90c0fc936f25e433d99e5a0541bc6f8686fe9603dd8f97b9bb3b7172bac2",
+      "content_hash": "5c2dd3c6cb994ffc014000b253924f8ef9d0f5282af03fd9535e01c0ae7dbcdb",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“Perfunctory” chỉ việc làm cho có, qua loa, thiếu quan tâm thật sự. Nghĩa “cẩn trọng, chu đáo” hoàn toàn ngược lại."
       },
       "id": "9f1239a1-dbb5-505c-8e63-08dd25640c46",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-c2-perfunctory",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -11282,23 +11312,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "“perfunctory” (như trong “a perfunctory glance”) gần nghĩa nhất với cách diễn đạt nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o42fac363",
-      "content_hash": "ea808722ba033f5b1fe0c83e9ae782ced98c3d4f36f9e681f6898c6a7fd12dc5",
+      "content_hash": "accaaa28ffbcfdf76221e8b17f019962f98b58cf8f0f92b65685505a2ce60938",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“A Pyrrhic victory” là chiến thắng mà cái giá phải trả lớn đến mức gần như thất bại. Nó không chỉ đơn thuần là thắng bất ngờ hay vẻ vang."
       },
       "id": "6a8beb6a-3499-5257-a53d-c87d69f4a837",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-c2-pyrrhic-victory",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "c2",
       "prompt": {
@@ -11327,23 +11357,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Cụm “a Pyrrhic victory” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o8fbcaf9e",
-      "content_hash": "54b6ce3bb5db0e33381b7c043170fe314e3c79fafe8a7ab4b2d0f7d15e03b5a8",
+      "content_hash": "6dcd6959a135723a2e2a34910a03972200ad3da13ed17b0fd57e0703c9790e70",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“Dog” là con chó. “Cat” là con mèo, “duck” là con vịt, “pig” là con lợn."
       },
       "id": "3c180213-4c39-56fc-8da4-8d568a44b3c6",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-pre-a1-dog",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -11372,23 +11402,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “con chó”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "oef98c487",
-      "content_hash": "96477df9ad49308ad30ad629588ae6999be91194b1dbbe95756d245f86d17ff9",
+      "content_hash": "b3dd2af956e56e87a7a21802d4b03eb8e65619241f6311295fe35f9bfa97088d",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“Goodbye” dùng khi chia tay, nghĩa là “tạm biệt”. “Hello” là lời chào khi gặp nhau, không phải khi rời đi."
       },
       "id": "dee663b2-0a74-58b4-9eba-b021142c4120",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-pre-a1-goodbye",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -11417,23 +11447,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “tạm biệt”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o0d51f3de",
-      "content_hash": "81a542a775eaa778c0d1c4ddfc43fe9fcfb73977d7ae5ddfb009227917c4bdfd",
+      "content_hash": "90da8ad7d8affb6a717f2e0e03c447e1b0154c0e18acafcccd17b03c732b2f5e",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“Mother” là mẹ. “Father” là bố, “sister” là chị/em gái, “brother” là anh/em trai."
       },
       "id": "417ee62e-55db-5766-b586-78ddd1434bda",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-pre-a1-mother",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -11462,23 +11492,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “mẹ”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o8c52a613",
-      "content_hash": "351b4b032b62d69c8e1036693295f26c435e8084dfedee38e1f0399dad93822c",
+      "content_hash": "74026f207228bcadac1eb1f742ac040286ecca49e110bbfd6fd728438dbd5711",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“Red” là màu đỏ. Màu xanh lá là “green”, màu vàng là “yellow”, màu đen là “black”."
       },
       "id": "ebdfdedc-95a5-5114-85f2-f84f4349a26c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-pre-a1-red",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -11507,23 +11537,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “red” là màu gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "ofeb1e6f6",
-      "content_hash": "0ee866f1edb3a59c304cd7d6ded6cc1077c4cc8887b9dbfab45a97839e3d607d",
+      "content_hash": "621276c45c6ec05fd4174a9a6c041c0b3f48ee2bce734534b1961c8dcc7b2735",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“Seven” là số 7. “Six” là 6, “nine” là 9, còn “eleven” là 11 nên dễ nhầm vì cũng có âm “-ven”."
       },
       "id": "b72d9482-c409-59c7-bd21-cf16ee1e0bf1",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "en:diag:voc-pre-a1-seven",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "en",
       "level_code": "pre_a1",
       "prompt": {
@@ -11552,23 +11582,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là số “7”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "oc05cd74c",
-      "content_hash": "404682651b0aab0880d9d2333d4ff0c04655327eb4e7a768e9c5bfc42af8bad0",
+      "content_hash": "cdcbf9baf3a008a0d1daa4e58f2f2e5c312d8afd004540f81cb9af9e6c714461",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“아이” là chủ ngữ và kết thúc bằng nguyên âm nên dùng “가”. “이” chỉ dùng sau phụ âm cuối; “을” là trợ từ tân ngữ."
       },
       "id": "5328c98c-3a0a-53f6-9b6b-c09e27fac32d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-hangul-aiga-uyu",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -11597,23 +11627,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "아이___ 우유를 마셔요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o591e19df",
-      "content_hash": "d579f79bf39ad596d9e71c9a337c8fc3f4bd1a1f0665104fabf0490eb176d85e",
+      "content_hash": "b915c82d698128d8157f62d304f40ed0446df4b226c9632d08ca597eb0c8ff00",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“학생” kết thúc bằng phụ âm cuối (ㅇ) nên dùng “이에요”. “예요” chỉ dùng sau danh từ kết thúc bằng nguyên âm."
       },
       "id": "a1989d6b-a608-5ba6-81a5-960b797a45ed",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-hangul-haksaeng-ieyo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -11642,23 +11672,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "저는 학생___.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "obf62a0cb",
-      "content_hash": "ba0076faaae4d7d5bda16d4ec5ce99a7b806c67aa463fcff3f033f73a1e1bc8a",
+      "content_hash": "28f27f766aa357dc6d45d88c2fe85c482e1fe82fbd341ee1077bc9088bb1203a",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“저” kết thúc bằng nguyên âm nên trợ từ chủ đề là “는” → “저는”. “은” chỉ dùng sau phụ âm cuối."
       },
       "id": "a814b7b2-2008-51f4-80fd-6dfd1f0034fe",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-hangul-jeoneun-vietnam",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -11687,23 +11717,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "저___ 베트남 사람이에요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "oc7491a8b",
-      "content_hash": "c79c1cd000e356fb04b8296b33acaa6b238b69910cbc0cfc2225261b813f1f53",
+      "content_hash": "7f2a353bfdf45cff4c4f081db521ba409daf5f4fc0abf20faef19b56ecb014bb",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“선생님” kết thúc bằng phụ âm ㅁ nên dùng trợ từ chủ đề “은”. “는” chỉ đi sau nguyên âm; “를” là trợ từ tân ngữ."
       },
       "id": "e4f9145e-3a4d-5018-ad45-f7283c8aded6",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-hangul-seonsaengnim-eun",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -11732,23 +11762,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "선생님___ 한국 사람이에요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "oa8ecfcfc",
-      "content_hash": "7f9a46736ce0e63c2d286b0492aec801828428941a1a6b8b619059702fdb844c",
+      "content_hash": "212f17a3baafa398ab1c48416f223e3d2dda9811345af5728c11552aef2fd466",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“우유” kết thúc bằng nguyên âm nên dùng “예요”. “이에요” chỉ dùng sau danh từ có phụ âm cuối."
       },
       "id": "19152e2b-dea4-5b2a-9357-efd81f2ab2c0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-hangul-uyu-yeyo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -11777,23 +11807,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "이것은 우유___.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o8b58c479",
-      "content_hash": "b903edc03108b6c566da8398b3aa75033ec6afdf3703d10f4b4328409affbba8",
+      "content_hash": "0d86671436fcfe510fb459abce929decff0fb8025a85610a543877caee7767e1",
       "difficulty": 1.5,
       "explanation": {
         "vi": "Nơi diễn ra hành động (học bài) dùng “에서”. “에” chỉ đích đến hoặc nơi tồn tại (가다, 있다), không dùng với hành động như “공부하다”."
       },
       "id": "adf86ad5-2df5-548a-b20f-5387d3befe55",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik1-doseogwan-eseo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -11822,23 +11852,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "주말에 도서관___ 공부했어요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o560c1bf1",
-      "content_hash": "919d6f0336eafe84b2e1743be2e8d4b51371020c42335ee0bf8d88a3b9d2f625",
+      "content_hash": "f1bad43e5d51f2d0c5b27d107974dc86a62c797c755e10b450acb6e3296d0307",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“어제” (hôm qua) đòi hỏi thì quá khứ “-았어요” → “만났어요”. “만날 거예요” là tương lai, mâu thuẫn với “어제”."
       },
       "id": "c570121c-18e3-58b7-aaec-df62ea3e2637",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik1-eoje-mannasseoyo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -11867,23 +11897,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "어제 친구를 ___.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "off623b98",
-      "content_hash": "896e6ab5f65cb381b844b41fb68961ab43c6a818b4bd1aff97a92ab9bc5c9717",
+      "content_hash": "1e6f76fa5ac172e0648f9c2969daf678503c5590218d66ba4d19dc835ac024e6",
       "difficulty": 1.5,
       "explanation": {
         "vi": "Mẫu “muốn làm gì” là “động từ + -고 싶다” → “가고 싶어요”. Các dạng “가서”, “가면” không kết hợp với “싶다”."
       },
       "id": "5443d834-d990-56dc-9dbb-5edc770d09df",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik1-gago-sipeoyo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -11912,23 +11942,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "저는 내년에 한국에 ___ 싶어요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o2ed1ce06",
-      "content_hash": "6c9e9afae57580c10430e221b899897ae73148e7cc296d87fb7f48d9037724a4",
+      "content_hash": "c4e30b696ebe3efb050e94d8ded1a2664560caa371bb36e0e391f25d0318dae0",
       "difficulty": 1.5,
       "explanation": {
         "vi": "Với động từ dạng “danh từ + 하다”, “안” đứng trước “하다”: “공부 안 해요”. “안 공부해요” là lỗi thường gặp của người học."
       },
       "id": "043e1fe5-6c28-57c0-b661-6b63220dc7ad",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik1-gongbu-an-haeyo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -11957,23 +11987,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "저는 주말에는 보통 ___. 집에서 쉬어요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o67024beb",
-      "content_hash": "d2862830e408ec320d97619cfe68e86c731fbddb03e6e61e8a663e1e87994c6d",
+      "content_hash": "b7f69ab65fa635f41d099260bbd7a0e045f19aef2cf2f887f253a3271cac472a",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“빵” là tân ngữ của “먹어요” và có phụ âm cuối ㅇ nên dùng “을”. “를” chỉ dùng sau nguyên âm; “이” là trợ từ chủ ngữ."
       },
       "id": "88262dee-b779-5e7f-8125-ef669f11c2f4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik1-ppang-eul",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -12002,23 +12032,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "저는 매일 아침에 빵___ 먹어요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o37a06053",
-      "content_hash": "e5895e95b04cb5a5d34fb37e3a065a3ecf0a965ab892915402d2a2a143f3777f",
+      "content_hash": "c6ac540f3cc2645ca24995affdc57e786533ba9e97ea0020a3d499ff5b144abf",
       "difficulty": 2.5,
       "explanation": {
         "vi": "Chủ ngữ là người lớn tuổi (“께서”) nên phải dùng kính ngữ; kính ngữ của “자다” là động từ riêng “주무시다” → “주무세요”. “자세요” là lỗi vì “자다” không chia kính ngữ bằng “-세요”."
       },
       "id": "e734fb5f-9db8-55ff-b4ec-175133590499",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik2-halmeoni-jumuseyo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -12047,23 +12077,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "할머니께서 지금 방에서 ___.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o6cb34073",
-      "content_hash": "fa4b6df968b608bf8b97465339ebf84f200bfc8f32c087232015918836d9b265",
+      "content_hash": "0e04be947377a382a3951a9ed5fd5e1f06517d43f16a7094eee45d90db67b3a3",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“내일” và “-(으)면” nói về kế hoạch tương lai nên kết câu bằng “-(으)ㄹ 거예요”. “있었어요” là quá khứ; “있어서”, “있으니까” là vĩ tố nối, không kết thúc câu."
       },
       "id": "2d36e082-a09e-5b55-8cc0-d94b9dde3983",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik2-isseul-geoyeyo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -12092,23 +12122,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "내일 비가 오면 그냥 집에 ___.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "ob1737aff",
-      "content_hash": "8c618e15f93f68e97b22e5698ac11f55bdd147480e5fde092bf017f10bd5b3eb",
+      "content_hash": "b9a1b67db85cf6186a42021b512afaced594062e53f357cde3584e44163de4b8",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“만들다” có gốc kết thúc bằng ㄹ nên với “-(으)ㄹ 수 있다” chỉ giữ nguyên ㄹ: “만들 수 있어요”. “만들을” là thêm thừa “을”."
       },
       "id": "08b64120-3415-5017-b188-7f493c203c41",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik2-mandeul-su-isseoyo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -12137,23 +12167,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "저는 한국 음식을 ___ 수 있어요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o3ef87921",
-      "content_hash": "7cd3a633fcb5e0347aa4e4ecafe2030a1cbb5d788236b4b4b2221cc23e21809d",
+      "content_hash": "b6a7bd6d546ebc1f5f3aec244e724e7a4774c6f329bf6154ab666b93fbf48cfa",
       "difficulty": 2.5,
       "explanation": {
         "vi": "Hai vế trái ngược nhau (ngon nhưng đắt) nên dùng “-지만”. “맛있어서” chỉ nguyên nhân, không hợp nghĩa."
       },
       "id": "1c5f0a03-d1e0-588c-a5e2-7c2a39a53855",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik2-masitjiman-bissayo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -12182,23 +12212,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "이 식당은 음식은 ___ 너무 비싸요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "ob0c4bde1",
-      "content_hash": "ba116336998850c2a4cd7b8a65523203c9b558cb7e945ce5ad1f34e68f8125c3",
+      "content_hash": "e6c6f0f0bc38c1166879c8cd11132f09a6c75855393854c8dd0c6d1f8fc31714",
       "difficulty": 2.5,
       "explanation": {
         "vi": "Khi vế sau là câu mệnh lệnh/đề nghị (“-세요”), chỉ lý do bằng “-(으)니까”. “-아서/어서” không đi với mệnh lệnh nên “와서” sai."
       },
       "id": "a16ebb0e-3567-5527-8b43-4b02e9823a3c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik2-onikka-useon",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -12227,23 +12257,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "비가 ___ 우산을 가져가세요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "ob5eb4b1c",
-      "content_hash": "a8c77375c07b1395585c5c7581e2016e5cc55bad1dccd635b8a4b6bb5ebf6432",
+      "content_hash": "5a98b5de7b73906b3e8e009f5597cab681bd75fb22b164eb98c86e5fbfa3a3f0",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Tường thuật câu trần thuật với tính từ dùng “-다고 하다” → “바쁘다고 했어요”. “-라고” dùng cho danh từ (이다) hoặc mệnh lệnh, “-냐고” cho câu hỏi."
       },
       "id": "b9997ebd-9f63-5c49-b21f-48807c8cda69",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik3-bappeudago-haesseoyo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -12272,23 +12302,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "민수 씨가 내일은 바쁘___ 했어요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o9334ff7a",
-      "content_hash": "e2d3095e41bb3e0b4ac0194dc52638d6475f3783fee5dcd62b682f7599d07fb0",
+      "content_hash": "935e33870406b1c051b73c812f04d45731e8124bf984e3b925d26236c14b7317",
       "difficulty": 3.5,
       "explanation": {
         "vi": "“-(으)려고” diễn tả mục đích/ý định: học tiếng Hàn để xin việc. “-(으)려면” (nếu muốn…) đòi vế sau là điều cần làm như “-아야 해요”, không hợp với “배우고 있어요”."
       },
       "id": "765e07c9-2b4f-51fd-9526-7b178c586919",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik3-chwijikharyeogo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -12317,23 +12347,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "한국 회사에 ___ 요즘 한국어를 열심히 배우고 있어요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o28df4b4a",
-      "content_hash": "d213665c572a32f968e761f1986e770d0f5d9cdbb392f41daff08af7d3878f56",
+      "content_hash": "451f6d6cea2af382546da143798660b9cf4f04f64839a46f02375e1490814a40",
       "difficulty": 3.5,
       "explanation": {
         "vi": "“-다가” diễn tả đang làm một việc thì xảy ra việc khác: đang đi về nhà thì gặp bạn. “가기 때문에” chỉ nguyên nhân, không hợp nghĩa."
       },
       "id": "4e794f0c-a5cf-5c82-8fc4-5ab804d6e955",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik3-gadaga-chingu",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -12362,23 +12392,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "집에 ___ 길에서 우연히 옛날 친구를 만났어요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o12eac28f",
-      "content_hash": "4d1482e17cb3e0ad7301ac28aa0704627d7efda64d9d233a3461fe3dcd2ac3ae",
+      "content_hash": "121f12b8482e658027c2543dfd406ee841b7ca4c4eb78c915a2f2072587f506a",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Phỏng đoán ở hiện tại dùng “-는 것 같다”; “있다/없다” luôn đi với “-는” → “있는 것 같아요”. “있은” là dạng sai."
       },
       "id": "e691230b-75f6-598b-88f3-eb0855bcf641",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik3-inneun-geot-gatayo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -12407,23 +12437,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "밖이 정말 시끄럽네요. 밖에 사람이 많이 ___ 것 같아요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "oae39d6ee",
-      "content_hash": "baaa853464248e30d85a71fea601bf74945bf0e09c747466abd7afafe4784b60",
+      "content_hash": "a43b8412eb88059d2fff688576382b9f2ea780675c3b39fde8f4fb388da26183",
       "difficulty": 3.5,
       "explanation": {
         "vi": "“Trong khi làm gì” là “động từ + -는 동안(에)” → “요리하는 동안”. “동안” không đi với “-기” và không kết hợp với “에서”."
       },
       "id": "3f63d4a4-3b88-5b3e-91e9-8f973138b2f3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik3-yorihaneun-dongan",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -12452,23 +12482,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "제가 저녁을 ___ 동생은 방을 청소했어요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "oecb25cdd",
-      "content_hash": "18f729891c40f4b4cb35acaae34c12c364e08f547309106bcbaa8ed9619a98d5",
+      "content_hash": "22fa16cbf876c96f6c7e17039bcf8a55a3d57b1f1391ea0949589e68e64cdf77",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Giả định trái với quá khứ (giá mà đã…) dùng “-았/었더라면” đi với “-았을 거예요”. “출발했더니” kể một kết quả có thật, mâu thuẫn với vế sau."
       },
       "id": "b4ca31c0-7104-5b7a-b747-caf37b3c7a38",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik4-chulbalhaetdeoramyeon",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -12497,23 +12527,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "조금만 일찍 ___ 기차를 놓치지 않았을 거예요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "oc8a03f32",
-      "content_hash": "cac9e24815264efb6366950ce5b6aa0afc58dcbf978c44be4323ba1991f29ed4",
+      "content_hash": "584e80e69998147c75567844f9e41b473b1a4160a38cd0608a0d7cede835c7d2",
       "difficulty": 4.5,
       "explanation": {
         "vi": "“-(으)ㄴ 채로” (giữ nguyên trạng thái đã…) dùng định ngữ quá khứ “-(으)ㄴ” → “켠 채로” (để nguyên đèn bật). “켜는 채로” là sai."
       },
       "id": "90461f60-8562-5133-a2ff-96ff3b2ec39b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik4-kyeon-chaero",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -12542,23 +12572,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "너무 피곤해서 불을 ___ 채로 잠이 들었어요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o62369652",
-      "content_hash": "35bfa36bbdac2b055fc1230c15212d66703d65c1c065277e9e288f0f673ee720",
+      "content_hash": "435add414df5871622d0ee8bbee6f43ac0a708fbebe877df005e2407ffddf60a",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Kể lại điều bản thân trực tiếp trải nghiệm, cảm nhận trong quá khứ dùng “-더라고요”. “-(으)ㄹ게요”, “-(으)ㅂ시다” là hứa hẹn/rủ rê và không dùng với tính từ."
       },
       "id": "d9edaa88-8532-5645-be3d-74cbc0973eb7",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik4-masitdeoragoyo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -12587,23 +12617,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "어제 그 식당에 처음 가 봤는데 음식이 정말 ___.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o119b285c",
-      "content_hash": "17db52dd0b7d5c2015d489c298e51b55d49d4019cfca48573742450cfd4550e7",
+      "content_hash": "96c4c964089f0c9ba1084111fe817b2f13ac9a04b83c87950312b9b94ec23067",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Cấu trúc “-기 마련이다” (lẽ đương nhiên sẽ…) cố định dùng “-기” → “나오기 마련이에요”. Các dạng định ngữ “나오는/나올” không kết hợp với “마련이다”."
       },
       "id": "9a593bad-5470-5e97-a689-502bb8013d55",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik4-naogi-maryeon",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -12632,23 +12662,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "열심히 노력하면 언젠가는 좋은 결과가 ___ 마련이에요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o33dc64e8",
-      "content_hash": "617dbe02f5d76e9d11c7ca62f98811e03a6cecd45629d1aefe1ae1c1d3ef764c",
+      "content_hash": "c8a0a4853273745a9e1ad6dd368bd06736dc50822d5f22307672a479be1aa646",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Cấu trúc “-는 바람에” (vì… nên, dẫn đến kết quả ngoài ý muốn) luôn dùng dạng “-는”, kể cả khi sự việc ở quá khứ. “온 바람에” là lỗi thường gặp."
       },
       "id": "509323fa-7fb0-59b3-8644-f118de10aaf0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik4-oneun-barame",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -12677,23 +12707,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "갑자기 비가 ___ 바람에 옷이 다 젖었어요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o7bdf37e0",
-      "content_hash": "345a894d6c90ce3572307a395d00661b2ad382ab652c0265ef17792729705d65",
+      "content_hash": "079aec0ca1a6cc15116a96aa4a5caa3922d6ee6e6fdf2c9d74fa69caf4dc58da",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“-기는커녕” nghĩa là “đừng nói đến… mà ngược lại”, thường đi với “오히려”: chẳng những không được khen mà còn bị mắng. “들을지언정” (thà… chứ) không hợp nghĩa."
       },
       "id": "b58b4633-c8a0-51ae-ae76-2524f566b299",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik5-deutgineunkeoneong",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -12722,23 +12752,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "열심히 일했는데 칭찬을 ___ 오히려 꾸중만 들었어요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "oe06b6a95",
-      "content_hash": "3c8967650db9d8063dbec6887f652f16f7bb925b08f4d52128fbf0b4fe8c1610",
+      "content_hash": "914e4c8e66fff9f6283830a79df552e5ad2b1b4fb2a088722b9291fe59881714",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“-는 마당에” nghĩa là “trong tình cảnh (khó khăn) như thế này”, thường đi với câu hỏi tu từ. “셈”, “한”, “리” không kết hợp với “-에” theo nghĩa này."
       },
       "id": "8e3b4611-589e-5d9c-a578-69f5c6e3a40f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik5-haneun-madange",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -12767,23 +12797,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "회사가 문을 닫느냐 마느냐 하는 ___ 보너스 이야기를 꺼낼 수 있겠어요?",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o07844fba",
-      "content_hash": "367bb6bf6abfd1453a7246068e5fd86b999079e55425655f3ab31e8ce8bceb19",
+      "content_hash": "f6f236d8b527f83e55e2ee5e0fa84a57f0f620ca1d2563d9bd96dde5af081f1a",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“-는 한” nêu điều kiện giới hạn: “chừng nào sức khỏe còn cho phép”. “허락하는 마당에” (trong hoàn cảnh đã…) mang sắc thái tiêu cực, không hợp nghĩa."
       },
       "id": "a69d8a4f-e96e-5b33-a252-b41d746db346",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik5-heorakhaneun-han",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -12812,23 +12842,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "건강이 ___ 은퇴하지 않고 계속 일하고 싶습니다.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o6c591b6f",
-      "content_hash": "3c4d6994100a6ce32f41fc35c75fc66475bb00884288ab09035725dd592e9ba4",
+      "content_hash": "c8ad8c75fd90e0454b37e417b9e3ce78d62d2b41ac6481d49c4846ec147dd6c5",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“-(으)ㄹ 리가 없다” diễn tả “không lẽ nào lại…”, phủ định mạnh khả năng. “셈”, “줄”, “뻔” không đi với “-이 없다” theo nghĩa này."
       },
       "id": "d1fbbe8b-69a0-58a0-9fc2-8075991ce064",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik5-ijeobeoryeosseul-riga",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -12857,23 +12887,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "그렇게 꼼꼼한 사람이 약속을 잊어버렸을 ___ 없어요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "od4b26df8",
-      "content_hash": "15aac97005f2a8113f8222aecd0350370b64de10b9bdf2de868aa8a343a57f3c",
+      "content_hash": "ab26c0d0eb7ef9114c37597510e70c51ad65a55c4c68c9e624460c45180fd4e5",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“-는 셈이다” (coi như là, tính ra thì…) dùng định ngữ “-는” với động từ hiện tại → “일하는 셈이에요”. “일하기 셈” là sai cấu trúc."
       },
       "id": "05500d97-5a9a-5ace-8255-e1a163a8ea37",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik5-ilhaneun-semieyo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -12902,23 +12932,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "한 달에 두 번만 쉬니까 거의 매일 ___ 셈이에요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o8f610d43",
-      "content_hash": "99e93114f50cf25f0922ce3d100a1b69bb42a1c7df457bbc5c7f226780c3766a",
+      "content_hash": "646099d06172fe15b33cf9ed0aaf122c61f5a9b1d19c0e4e54c21dbd42f9d8ee",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“-(으)ㄴ들” nghĩa là “dù có… thì cũng (vô ích)”, thường đi với câu hỏi tu từ như “무슨 소용이 있겠어요?”. “후회할세라” (sợ rằng sẽ hối hận) không hợp nghĩa."
       },
       "id": "609bea0d-b473-59b7-9e02-a43696d39bd6",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik6-huhoehandeul",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -12947,23 +12977,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "이미 지나간 일인데 이제 와서 ___ 무슨 소용이 있겠어요?",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o5bca5e46",
-      "content_hash": "bb7da4e0aeef633ad9ebacd7bb40a091509cbf1ca036f78775c75fe5c894a76f",
+      "content_hash": "ce6d546dd911c5cb02ddfbd46ab15055f9af1a7bce0f97779a4d9cf13e5138d0",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“-(으)ㄹ세라” diễn tả “sợ rằng/e rằng…” nên làm hành động để tránh: sợ con thức giấc nên bước nhẹ. “깬들” (dù có thức thì…) không hợp nghĩa."
       },
       "id": "4a022f12-2da5-5176-9708-1df9b1726c60",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik6-kkaelsera",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -12992,23 +13022,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "아기가 ___ 엄마는 발소리를 죽이며 조용히 방을 나섰다.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o27aa5a33",
-      "content_hash": "ce964eb35df6209fcf2efada5d16d2fe678f0aacbde392d850344055ad1675f3",
+      "content_hash": "f67ac2f9380ae7809c5e2b1a4a25067ef8876b4e46af435083cf1c0412899e4d",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“-건대” đi với động từ nói/nghĩ/nhìn để mở đầu ý kiến của người nói: “theo tôi nghĩ thì…”. “생각한들” (dù có nghĩ thì…) đòi vế sau mang ý phủ định, không hợp."
       },
       "id": "07d97332-6346-59f5-8197-cbf8ad5cad89",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik6-saenggakhageondae",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -13037,23 +13067,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "제가 ___ 이번 사업은 당분간 보류하는 것이 바람직할 듯합니다.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o67357b6b",
-      "content_hash": "e2eba49b9271c0d3bb02b5d7ca90bd6d7d0d748eb5fdb6e1b75cd7b840ca7cdd",
+      "content_hash": "00d7a12d59b86dc6215cc999785b773a8e92abb2e918faa3892075bb556f7768",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“-노라면” nghĩa là “cứ tiếp tục… thì (sẽ)”. Gốc “살-” kết thúc bằng ㄹ nên ㄹ rụng trước “ㄴ” → “사노라면”; “살노라면” là sai."
       },
       "id": "a06d27ee-1c75-5dae-bdea-107fcd728bcd",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik6-sanoramyeon",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -13082,23 +13112,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "힘들어도 참고 ___ 언젠가는 좋은 날이 오겠지요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o5199ff89",
-      "content_hash": "d3d9945924805d7f23a835efba27a7b058bbd77ad7d8c53a7bfc256ed7fb5aa4",
+      "content_hash": "8753d5d4802e5ea80d8b748738de22d21f341e632af46e337865f01c974ed214",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“와신상담” (nằm gai nếm mật) chỉ việc chịu đựng gian khổ để chờ ngày thành công, hợp với “끝에 재기에 성공했다”. “우유부단” là thiếu quyết đoán, trái nghĩa với ngữ cảnh."
       },
       "id": "85a57c2e-8566-5552-beba-14b508f556d4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "cloze_choice",
       "key": "ko:diag:gram-topik6-wasinsangdam",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -13127,23 +13157,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "그는 거듭된 실패에도 포기하지 않고 십 년간 ___ 끝에 마침내 재기에 성공했다.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
     },
     {
       "answer_key": "o36f75f4d",
-      "content_hash": "24fd5a390a25d0006f14acecac23de45577c6a3668e1626ca30a56e091a882b0",
+      "content_hash": "2941256975ba04ac0c4001da7403a4566d7a917ebe6836071ee1be4920e67c0f",
       "difficulty": 0.5,
       "explanation": {
-        "vi": "“동생” là em (em trai hoặc em gái); “아이” chỉ có nghĩa là đứa trẻ. Con của mình thì nói “제 아이” hoặc “제 아들/딸”."
+        "vi": "“동생” là em (em trai hoặc em gái), còn “이 아이” chỉ là “đứa trẻ này”. Nếu là con của mình, người nói sẽ dùng “제 아이” hoặc “제 아들/딸”."
       },
       "id": "28f98407-2322-5cc7-9d4a-3b8e85633832",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-hangul-child-sibling",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -13173,23 +13203,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Trong câu “이 아이는 제 동생이에요.”, đứa trẻ là ai của người nói?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o91837844",
-      "content_hash": "1bfdbebc74a6d53a3953451d65d517eff2c35fe80525b286b8882acd26094d15",
+      "content_hash": "0a5c83f14b6b0f7dd84e5544226b9de264c0cea745406e2c120fa17194d67976",
       "difficulty": 0.5,
       "explanation": {
-        "vi": "“출구” nghĩa là lối ra. Lối vào là “입구”, rất dễ nhầm vì cùng có chữ “구”."
+        "vi": "“출구” nghĩa là lối ra, mũi tên của nó chỉ sang phải. “입구” là lối vào, rất dễ nhầm vì cùng có chữ “구”."
       },
       "id": "a2ca4427-25ec-5f43-849d-c717e0627db4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-hangul-exit-sign",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -13197,45 +13227,45 @@ select content_private.import_diagnostic_bundle($diagnostic${
           {
             "id": "o91837844",
             "lang": "vi",
-            "text": "Lối ra"
+            "text": "Sang phải, theo mũi tên “출구”"
           },
           {
             "id": "o076cfa36",
             "lang": "vi",
-            "text": "Nhà vệ sinh"
+            "text": "Đi thẳng lên tầng trên"
           },
           {
             "id": "of826b4a7",
             "lang": "vi",
-            "text": "Lối vào"
+            "text": "Sang trái, theo mũi tên “입구”"
           },
           {
             "id": "ob6b48d3c",
             "lang": "vi",
-            "text": "Thang máy"
+            "text": "Quay lại phía sau"
           }
         ],
-        "passage": "출구",
-        "stem": "Tấm biển ghi “출구” cho bạn biết điều gì?",
+        "passage": "← 입구    출구 →",
+        "stem": "Bạn muốn ra khỏi tòa nhà. Theo tấm biển này, bạn nên đi về hướng nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o6a3b0617",
-      "content_hash": "48402a491fa65650384f17d51edaf337e0cb90745872cf4617ee7870eed93f11",
+      "content_hash": "edbc1ce22d29847ce9704e2e74a0558b6b4c89b22e9d65a09fde37666b3c7e0c",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“우유” là sữa. Nước là “물”, cà phê là “커피”, bánh mì là “빵”."
       },
       "id": "1aa04c26-d4cd-5ad7-917c-0e3b14740b80",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-hangul-milk-price",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -13265,23 +13295,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Nhãn giá “우유 1,000원” là giá của món gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o32851fb4",
-      "content_hash": "530e9d372b4dd5bd7775017471d99b9a548a8cab33a60216cce424a5005fcaf4",
+      "content_hash": "b86704a8697a45fd61c3c751c417852a5e058d690b974aab29eb1c84d1af0438",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“학생이에요” là “là học sinh”, “이름은 민수예요” là “tên là Minsu”. Giáo viên là “선생님”, không xuất hiện trong câu."
       },
       "id": "55008d3c-0935-5047-97c9-70154598ab8d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-hangul-student-minsu",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -13311,23 +13341,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo câu “저는 학생이에요. 이름은 민수예요.”, người nói là ai?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o3d9a27df",
-      "content_hash": "685e216edec580c9307f758e02e9ad96d041f98c78c20f59c329c70b606db5ed",
+      "content_hash": "b359579baef1d5574417b179d09accdf8dcb9259c7d74bc2cb8510e76f6db138",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“화장실” nghĩa là nhà vệ sinh. Nhà ăn là “식당”, phòng học là “교실”."
       },
       "id": "b1d91b46-1e25-5c3e-9830-b662e622b1ef",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-hangul-toilet-arrow",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -13357,23 +13387,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Mũi tên trên biển “화장실 →” chỉ đường đến đâu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "of9685585",
-      "content_hash": "2fa6ac668fdf3d99f5fd07634508f1f39f917c3251d9c5f5649b2cb0eed522e0",
+      "content_hash": "1adf74dfb8f48442767437d5af5bb3d4e2b49e89f0591a4913ae6c52a7fd1199",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“네 명” là 4 người: bố, mẹ, chị gái và người viết. Bạn đừng quên tính cả “저” (tôi) nên không phải 3 người."
       },
       "id": "fcd3769f-495e-547b-94e6-f694ee9e8b01",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik1-family-four",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -13403,23 +13433,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Gia đình của người viết đoạn “우리 가족은 네 명이에요…” có mấy người?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "of5f2b2d8",
-      "content_hash": "49aa55b0490f9bc0619506a2bdef7c61451cf0f17ab0588c61f612b02057dbfd",
+      "content_hash": "a8cf580533c94b0043f6885def5d04d27812ac8f3866849521877cbc1bc319a4",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“내일은 녹차를 마시고 싶어요” nghĩa là ngày mai muốn uống trà xanh. Nước ép (주스) là thứ người viết thường uống, còn cà phê thì không thích."
       },
       "id": "b2975ccb-b10b-52de-837d-000619ce0de9",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik1-green-tea-tomorrow",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -13449,23 +13479,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ngày mai người viết muốn uống gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o4f9e9f0f",
-      "content_hash": "2bf9175a62270d08af3810cb95ba29c1d57efb6146c8e5c9c560d7c734d0acec",
+      "content_hash": "d8ea4fca94f4c3e9d595a55fcd881d66e081b148b2da33324c2ad9921e602674",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“토요일, 일요일에는 문을 닫아요” nghĩa là thứ Bảy và Chủ nhật đóng cửa. Thứ Hai đến thứ Sáu thư viện mở từ 9 giờ sáng đến 6 giờ chiều."
       },
       "id": "46b2df2d-e9fa-5878-8abc-3d8dfd64a76c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik1-library-hours",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -13495,23 +13525,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo thông báo giờ mở cửa thư viện, thư viện đóng cửa vào ngày nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o9120c0fe",
-      "content_hash": "956ca56dc6a476789e4587ed8de56ec8c4189c7b4e7c2262a25ecfb2ed1e7365",
+      "content_hash": "26cc5f2fa3761c9fc5f5865259f9abf898d8d5962676b8c44eb595c51a755e2a",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“집에서 한국어를 공부해요” nghĩa là học tiếng Hàn ở nhà. “학교에 안 가요” cho biết thứ Hai người viết không đến trường."
       },
       "id": "35761408-45ec-5917-9cc7-fac1fa5fb309",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik1-monday-home-study",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -13541,23 +13571,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Hôm nay (thứ Hai) người viết học tiếng Hàn ở đâu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o33dd3e51",
-      "content_hash": "ae35ecf3f6fba1a2134314ff63b0c3180b7d67a27e8de564b80c7e4465d0a8fa",
+      "content_hash": "0ba81a1c20babb4cb9c740a8a68117fc2f87ea057bc106e03ef5ccc9080a420f",
       "difficulty": 1.5,
       "explanation": {
         "vi": "Câu cuối nói “식당에서 비빔밥을 먹었어요” (đã ăn bibimbap ở nhà hàng). Các món còn lại không được nhắc đến."
       },
       "id": "637127ca-3458-53de-aa6a-e0d0f9f7f267",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik1-weekend-movie",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -13587,23 +13617,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Cuối tuần, người viết đã ăn món gì ở nhà hàng cùng bạn?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o9aefb762",
-      "content_hash": "4e0567867328c518449c270479e2810e73db33d52c7e3500a8334ab9a2be3fc2",
+      "content_hash": "ea9abe9f6b0c5f1867b14144cc52d636c1274e81bd34a6314f26b2e5fb24b503",
       "difficulty": 2.5,
       "explanation": {
         "vi": "Người viết bị đau đầu (“머리가 아파서”) nên không đi được hôm nay và đề nghị gặp vào thứ Bảy tuần sau. Chính người viết sẽ tự tìm nhà hàng, không hỏi Minji."
       },
       "id": "9e7e9508-054c-5dbd-9b09-6f92dda88dd2",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik2-cancel-dinner-message",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -13633,23 +13663,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Mục đích chính của tin nhắn gửi Minji là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o33eb7ddb",
-      "content_hash": "24d7155ea690b078cbf32d61bb085b29070a618b8ac702b3bb323a89d23f38f3",
+      "content_hash": "67638f694e0d4571143292eaa483dafcedf6f6bf756c9fccaab65114e64d98eb",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“계단을 이용하세요” là lời yêu cầu dùng cầu thang bộ vì thang máy đang được kiểm tra. Đồ nặng phải chuyển trước, chậm nhất là thứ Năm (“목요일까지”)."
       },
       "id": "d16c0caf-f65c-5b5a-980c-33e9ff40d80b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik2-elevator-inspection",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -13679,23 +13709,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo thông báo của chung cư, từ 10 giờ sáng đến 2 giờ chiều thứ Sáu cư dân nên làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o89251077",
-      "content_hash": "b2fed3b9d1e55fa0bbbc0ed4bf14ad73b151f3d76d158bdf73f8df4a0ef1b0a6",
+      "content_hash": "79158a2a99b1cf20ca272e03ba2774693a8bda63d1e5a242fd18730129b6a028",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“지금은 회사까지 혼자 갈 수 있어요” nghĩa là bây giờ có thể tự đi đến công ty. Việc đi nhầm tàu chỉ xảy ra lúc đầu (“처음에는”), công viên ở gần nhà, còn bạn ở quê sẽ đến vào tháng sau."
       },
       "id": "212fb7f1-efce-5084-8355-e10a47eeb7de",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik2-moved-to-seoul",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -13725,23 +13755,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo đoạn văn về việc chuyển đến Seoul, hiện nay người viết thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o5e4d9406",
-      "content_hash": "dba37ed208d89c830bf8cb3b4ccfbc95bd19d2cc9dbe53da74a3141884d74af6",
+      "content_hash": "f6bf5954fcd7ed9ec0a0e2a512140bbdc9856003b85e2e2a726941e87814dd42",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“비가 오면 집에서 요가를 하고” nghĩa là nếu trời mưa thì tập yoga ở nhà. Đạp xe là khi trời đẹp, còn đọc sách là sở thích của người viết chứ không phải của em."
       },
       "id": "cd00cdd3-8fee-57e7-bc00-a9b5e06e5172",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik2-sister-yoga-rain",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -13771,23 +13801,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Khi trời mưa, em của người viết làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o76677850",
-      "content_hash": "8f7cbf455e23d1b30cda5c1c428e66a1dc198a17ed309190c895d1f5f01ae1cb",
+      "content_hash": "b0f79e77beb95fcb041f665abc1b380e392c3b44eb8660be2b30024356b65e94",
       "difficulty": 2.5,
       "explanation": {
         "vi": "Lớp học vào thứ Ba và thứ Năm (“화요일과 목요일”) lúc 7 giờ tối, tức hai buổi mỗi tuần. Học phí 50.000 won là cho một tháng (“한 달에”), và đăng ký qua trang web."
       },
       "id": "c65f0bc7-8b64-5e84-b5ce-d31b45777628",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik2-speaking-class-ad",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -13817,23 +13847,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Điều nào đúng với thông báo tuyển học viên lớp nói tiếng Hàn?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "ocf7a89f6",
-      "content_hash": "e5b267ce6770647c86384e6303c4581a8ea9faa307d38387b0a820f92dfa33b5",
+      "content_hash": "4f68fc6e685ef50263016ac119db3aa3b060d3d30fbd69d8d873b6c2aee091f1",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Đuôi “-도록” chỉ mục đích: “서로 편하게 이야기할 수 있도록” là để mọi người có thể thoải mái trò chuyện. Năm cuốn là số sách tối đa mỗi người được đổi, không liên quan đến trà bánh."
       },
       "id": "c1ca681a-4b2b-523a-8c70-e3a38bd4b7bf",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik3-book-swap-event",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -13863,23 +13893,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Trong sự kiện đổi sách ở thư viện, vì sao ban tổ chức chuẩn bị trà và đồ ăn nhẹ?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o0e315123",
-      "content_hash": "a94beaf74af201effc275caccce3c6e5c68aa4d2c331d61300cb26162378836e",
+      "content_hash": "32f484ff4f96376c8ca7f89e4bddbcbcd90f7ee4d0e1b0b9b04cf70956eca8a4",
       "difficulty": 3.5,
       "explanation": {
         "vi": "“집에 오다가” (đang trên đường về nhà thì…) cho biết người viết nhặt ví lúc về nhà. Người viết không liên lạc được với chủ ví, và lời cảm ơn chỉ được nhắn qua đồn cảnh sát."
       },
       "id": "9385d37f-c856-555e-b482-9854b4192015",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik3-found-wallet",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -13909,23 +13939,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Điều nào đúng với câu chuyện về chiếc ví nhặt được?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "oe9584e66",
-      "content_hash": "905d3d40fa289747324c4d6f980c7769cf4fcd17d5dc1d8eae8edf3406ca82d0",
+      "content_hash": "765d07d3fe96e1385ccbb1b29d07bc4adc7390917bd6b5bdc363e6d611e7e39f",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Câu “퇴근 후에는 피곤하거나 약속이 있어서 운동할 시간이 없기 때문이다” nêu rõ lý do. Họ vẫn ăn trưa, chỉ ăn đơn giản (“간단하게 먹고”), nên không phải bỏ bữa."
       },
       "id": "ffd1ba6a-82e8-507b-8d49-cebf91ca5d33",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik3-lunchtime-exercise",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -13955,23 +13985,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo bài, vì sao nhiều nhân viên văn phòng tập thể dục vào giờ nghỉ trưa?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "of8df7f29",
-      "content_hash": "a2c725e51afb5db26717deee44f17b21473c7e95dbbe9ece3800f29d7ef5dad4",
+      "content_hash": "03c3b2b7d18f1f0388aca0dde2883adebdc40f256fd16a8970b17d75829de37c",
       "difficulty": 3.5,
       "explanation": {
         "vi": "“출퇴근하는 지하철 안에서 단어를 외워요” là học thuộc từ trên tàu điện ngầm lúc đi làm và tan làm. “일하는 동안에는 공부할 시간이 없어서” cho biết trong giờ làm thì không có thời gian học."
       },
       "id": "885a0bdd-2a94-5a2e-916f-a0606e11a4a6",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik3-subway-vocabulary",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -14001,23 +14031,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết học từ vựng tiếng Hàn chủ yếu vào lúc nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "of41e64b5",
-      "content_hash": "e7f516a1ade8aa68cd8778a4c2cd435c488529aabf2cc644caf9da381c2afdea",
+      "content_hash": "3650a85a12a6ef48038aef1739c37309697371278710afd0ae55f7213177d613",
       "difficulty": 3.5,
       "explanation": {
         "vi": "“퇴근할 때 같이 차라도 한잔하자고 해야겠어요” nghĩa là định rủ Sujin uống trà lúc tan làm. Giờ ăn trưa đã qua và Sujin hầu như không ăn."
       },
       "id": "6188a9e3-3fe8-595e-aad8-1e8b4ad68162",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik3-sujin-worried",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -14047,23 +14077,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết định làm gì cho Sujin?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "od444dbde",
-      "content_hash": "1a8db58d18b667c05673341df37646fdaa1a94d0a2de1c90faa4208c49e1992a",
+      "content_hash": "4964ac680b1fe9dcbfcf6bb16323edad552f27dbb4444a42587b168fab10a5d7",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Câu then chốt là “문제는 실수 자체가 아니라 실수를 대하는 태도이다”. “-기 마련이다” cho thấy mắc lỗi là điều tất yếu, nên phương án “tuyệt đối không được mắc lỗi” trái với ý bài."
       },
       "id": "9de0c813-7a50-5e8d-8393-f502c8fe3521",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik4-attitude-to-mistakes",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -14093,23 +14123,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ý chính của đoạn văn bàn về việc mắc lỗi ở môi trường mới là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o8fee4b90",
-      "content_hash": "66618032e5988b474581c7ed82a563ec01b99a9368277eab348a9009fbc644ea",
+      "content_hash": "e612e2ae8a8f21d69248593c67680b201bce4548890dae43df41f71ce0cef7b9",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Câu cuối “계획대로 되지 않은 여행이었지만 오히려 가장 기억에 남는 여행이 됐어요” thể hiện cảm nghĩ tích cực. Người viết khen con đường tường đá đẹp và chủ quán còn cho thêm món ăn kèm, nên không hề thất vọng."
       },
       "id": "c60b99b8-4152-59b6-84cc-11f4e105e53c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik4-jeju-unplanned-trip",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -14139,23 +14169,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết cảm thấy thế nào về chuyến đi Jeju?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o8d64feb6",
-      "content_hash": "15ab00cf5222ddfc13c8256f12789fde58a0d3d8df4bd1ceff3b0e1a53cd0f3c",
+      "content_hash": "1209a6ab2a21aac5dfa8350b92c677bd545e8c2735803bb5c6e5514393ca26bc",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Cấu trúc “-았/었더라면” diễn tả sự tiếc nuối: “알람을 한 번만 더 확인했더라면” (giá mà kiểm tra báo thức thêm một lần). Người viết có chuẩn bị câu trả lời (“준비한 답변”), chỉ là vì căng thẳng nên trả lời không tốt."
       },
       "id": "e226cc98-c28c-5f38-9609-de94378e92ef",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik4-late-interview-regret",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -14185,23 +14215,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết hối tiếc nhất về điều gì trong ngày phỏng vấn?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o99c42120",
-      "content_hash": "ee632ed54c9de181b3f8ce45ec2b6108ded5483621db20265618bd36674e6063",
+      "content_hash": "c3596a2b1170ccfd96a92e00cf7a1349c8db8f66a38bb8a2b6a383f7d15220ff",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Bài nói hộ một người tăng làm thay đổi cách tiêu dùng, nên hàng đóng gói nhỏ (“소포장 상품”) được ưa chuộng. Bài không nói siêu thị ngừng bán hàng dung lượng lớn, mà chỉ nói họ bắt đầu bán thêm rau quả cỡ nhỏ."
       },
       "id": "b1d88a93-061e-5fb2-af84-3a210ec85889",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik4-single-households-packaging",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -14231,23 +14261,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Nội dung chính của bài viết về hộ gia đình một người là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o544dae46",
-      "content_hash": "3c23cb92b364c30dca913b23d1807a186ddf54efcbed4f6236dc967da987e95c",
+      "content_hash": "d59d7e415aa3e167929fd0145d9fe288a3bb79067d8cac28e9ed1d9104860ce1",
       "difficulty": 4.5,
       "explanation": {
         "vi": "“빛이 잠을 부르는 호르몬의 분비를 방해하는 탓에” nêu nguyên nhân: ánh sáng cản trở hormone gây ngủ. Âm thanh thông báo hay nội dung căng thẳng không hề được nhắc đến."
       },
       "id": "e0f6a23f-a55c-5043-a093-eed79e39b50a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik4-smartphone-sleep",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -14277,23 +14307,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo bài, vì sao xem điện thoại ngay trước khi ngủ khiến ta ngủ muộn hơn?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o1692c589",
-      "content_hash": "8e67dcae6c0ed62e507c2aa5d56167d64af91b1df86e8565dec2b6ea5834245e",
+      "content_hash": "3c502792b709095f6c0c960e2ebaf119a4f3f5531889c11cf0edb7679b9b35f9",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“-는 마당에” (trong hoàn cảnh đang…) và “공감할 리가 없다” (không đời nào đồng cảm) thể hiện sự phê phán; câu cuối yêu cầu lãnh đạo “솔선수범” (làm gương trước). Người viết không trách nhân viên."
       },
       "id": "2134dbf7-080d-5fcb-9dec-c45823e3b4dd",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik5-executive-bonus-critique",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -14323,23 +14353,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Thái độ của người viết đối với ban lãnh đạo công ty là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o9230170d",
-      "content_hash": "cc90ce7f56b72b55877cd4f681e20884833ea0ee32d8631ef0a321c714134d84",
+      "content_hash": "12f3367e144cbcbdfbe9ed1e6578ba88b179b1b75d4c0636c9a04a3613c33e8a",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“-(으)ㄹ지언정” nghĩa là “thà… chứ không…”: “가난하게 살지언정 의롭지 않은 재물은 탐하지 않는 것”. Bài nói việc học “출세의 수단이기 이전에” là để tu dưỡng nhân cách, nên phương án thăng quan tiến chức là sai."
       },
       "id": "0d69318c-531c-5080-b919-4d9ed5f53bec",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik5-joseon-seonbi-integrity",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -14369,23 +14399,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo bài, các 선비 (nho sĩ) thời Joseon coi điều gì là mỹ đức?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o28a92152",
-      "content_hash": "d69e3b8eb2756310548c967fd7521806c211d98e3ce5a7b301386d2ef21a6768",
+      "content_hash": "112990f82cfd354bfafbe0064c2c15212d449188f90c9a864aad272d7111407c",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“간과하다” (看過) nghĩa là xem nhẹ, bỏ qua không chú ý. Ngữ cảnh: nếu bỏ qua xu hướng chỉ tin thông tin hợp ý mình thì khó ngăn tin giả lan rộng; “kiểm chứng” lại là việc bài khuyên nên làm."
       },
       "id": "b6354d79-4e3e-5392-b4bd-6b961dbde6c2",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik5-misinformation-overlook",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -14415,23 +14445,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “간과하면” trong bài viết về thông tin sai lệch gần nghĩa nhất với cách diễn đạt nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "oafc6fe55",
-      "content_hash": "7523e6a12658b713897aec7dfbecd9c0f36223410e939048b302c8fcbc94eb8f",
+      "content_hash": "b46425fbf9ad990648364decc0056e641b51a35b9dc9791724457eb71b96ec70",
       "difficulty": 5.5,
       "explanation": {
         "vi": "Bài nói “낮 동안 흡수한 열을 밤에 천천히 방출하고”, khớp với phương án đúng. Cây xanh “그늘을 만들 뿐만 아니라” còn làm bay hơi nước để hạ nhiệt, nên “chỉ tạo bóng râm” là sai."
       },
       "id": "0a795654-c54e-564b-a48d-6c00e3ea20a3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik5-urban-heat-island",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -14461,23 +14491,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Câu nào phù hợp với nội dung bài viết về hiện tượng “đảo nhiệt” (열섬 현상)?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o75fa013b",
-      "content_hash": "71d16c5ad7250a5fb1970b670807eef0de0f826ccf2da82d7e69a047e04637db",
+      "content_hash": "7bedbf4dcfdf7612e75ed1f2d1d4ce287e112d39083b4493fa76fac1117a6b07",
       "difficulty": 5.5,
       "explanation": {
         "vi": "Câu cuối nói thành bại “달려 있는 셈이다” (rốt cuộc phụ thuộc vào) việc tạo ra việc làm ổn định, lâu dài. Bài phê phán chính hợp đồng ngắn hạn: “-기는커녕” cho thấy bất ổn không những không giảm mà còn tăng."
       },
       "id": "0132b03e-c2a8-57fd-9baf-db781c429fb8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik5-youth-employment-policy",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -14507,23 +14537,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo bài viết về chính sách việc làm cho thanh niên, điều gì quyết định sự thành bại của chính sách?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "oe0ab3990",
-      "content_hash": "fb3379a2df8f8ccc9b5a56ec5a0d4ee0379779eeb3acef29f4d02b53803a5d1f",
+      "content_hash": "7e8d030b2cf1f15ec1af86ca29684b2426c36e3efbc2a1dbad92355b237c42bc",
       "difficulty": 6.5,
       "explanation": {
         "vi": "Câu cuối nói rõ “그 기준에 대한 합의가 부재하다는 점이 문제의 핵심이다”. “-다손 치더라도” chỉ là giả định nhượng bộ (cứ cho là bắt chước hoàn hảo đi nữa), không phải khẳng định AI chưa bắt chước được."
       },
       "id": "2395ddc4-0554-52f6-b8f3-2e590fb6f5ac",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik6-ai-understanding-criteria",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -14553,23 +14583,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo tác giả, cốt lõi của cuộc tranh luận về việc trí tuệ nhân tạo có “hiểu” ngôn ngữ hay không là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "od71b1f27",
-      "content_hash": "8db9d9fe16b79b2d549afcb710df608d9f18fba9ecf7a44065dffcb760740a0e",
+      "content_hash": "7e67c24f3d51ef1cdefb1b3766e45faed98540906ce7de9de0d6adab6dd48d6c",
       "difficulty": 6.5,
       "explanation": {
         "vi": "Bài viết: “이러한 일방적 위계에 대한 반성에서 비롯된 것”, tức xuất phát từ sự tự phản tỉnh về thứ bậc một chiều. Thống nhất quốc gia là danh nghĩa của việc ban hành tiếng chuẩn, chứ không phải nguồn gốc của phong trào đánh giá lại phương ngữ."
       },
       "id": "b2e2118f-47d2-5177-a55c-ebff09f4759c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik6-dialect-reevaluation",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -14599,23 +14629,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo bài, xu hướng đánh giá lại phương ngữ gần đây bắt nguồn từ đâu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o5d911b17",
-      "content_hash": "98b144f80541fc66ea23c06380d753a0eefd9f6767235794be626a329f822e3a",
+      "content_hash": "b11974a514289fc39aaa7475657af10802037bf5110944c10970b33d58542ae3",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“길을 잃었다 한들 조급해할 까닭이 없다” (dù có lạc đường thì cũng chẳng việc gì phải vội) và câu cuối khẳng định lạc lối là một phần của việc tìm đường. Tác giả nói điều quý giá nhất lại đến “계획이 어긋난 자리에서”, trái với phương án về kế hoạch."
       },
       "id": "e82d9fd3-b6b6-5ebf-9204-b2ca5d544212",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik6-lost-way-essay",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -14645,23 +14675,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Thông điệp chính của bài tùy bút về việc “lạc đường” trong cuộc sống là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o5e3110c5",
-      "content_hash": "a23931fff897cb55581b79e2400b32027893f303540d00babcdad6f6fdbcc316",
+      "content_hash": "bf61bc24d2a66798bb810d18e3027ccb62e8c6907634caed5641cd7d2d8a1cc7",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“-(으)ㄹ세라” nghĩa là “e rằng, sợ rằng (điều gì) sẽ xảy ra”: “아들이 깰세라” là sợ con trai thức giấc. Hàng xóm không được nhắc đến, và sự im lặng là vì con chứ không phải để giấu việc làm cơm hộp."
       },
       "id": "228e9f09-b107-53a3-8c1b-b55aa857bcb8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik6-mother-quiet-dawn",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -14691,23 +14721,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Vì sao mỗi sáng sớm người mẹ lại đi rón rén vào bếp?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "o7ca6d140",
-      "content_hash": "580b7acb73eb59f3f836c0b257a63296868fad2c0a80c0f53b14cc5be8fa0aef",
+      "content_hash": "3da1146ea7f5b148cca5ff79dd84c3495864053a355bb5390270ecd4cd783544",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“소탐대실” (小貪大失) là tham cái nhỏ mà mất cái lớn: cắt ngân sách nghiên cứu vì lợi nhuận ngắn hạn rồi mất thị phần. “Mất bò mới lo làm chuồng” là “소 잃고 외양간 고친다”, dễ nhầm vì cùng có chữ “소”."
       },
       "id": "dcc84bbd-4a03-5a43-a528-e1b0dafa77f4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "reading_mcq",
       "key": "ko:diag:read-topik6-sotamdaesil-rnd-cut",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -14737,23 +14767,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Trong bài, thành ngữ “소탐대실” dùng để chỉ điều gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
     },
     {
       "answer_key": "oe116bac1",
-      "content_hash": "aaeab7002ea7d24d37547452516833af9f83a7d760ddfa719e9e86137d5b9dea",
+      "content_hash": "1f77a0229e4f849301283a2cbc3fee49a34872d2a48a32d3fdcc4367f3267ffc",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“아이” (a-i) nghĩa là đứa trẻ. Dưa chuột là “오이” (o-i) — chỉ khác nguyên âm đầu ㅏ và ㅗ."
       },
       "id": "37e4cc1b-58af-568a-92f6-95f36e619bd4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-hangul-ai",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -14782,23 +14812,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “아이” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o7698d03e",
-      "content_hash": "e7fc49120f44bc92124fb156502c83dc2d7e36825e56291842cd47836a3d7726",
+      "content_hash": "cc983d56f7864051b500776cc5f878d8a961650d030ded568af6c850b744c4e9",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“출구” là lối ra (출 = xuất). Lối vào là “입구” (입 = nhập), nhà vệ sinh là “화장실”."
       },
       "id": "0df341ff-8a6c-5d02-8c61-7ed9de190b72",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-hangul-chulgu",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -14827,23 +14857,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Biển báo “출구” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o62f1af64",
-      "content_hash": "34db7f9dd1e0929413a917ab205340063843d69f86d2d6fdc7d2a022e129d1fd",
+      "content_hash": "f6de616689285345a076761d634f607c0388b7ed61887934b739e260547c591b",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“학교” là trường học. “학생” là học sinh, “교실” là lớp học (phòng học), “선생님” là giáo viên."
       },
       "id": "5a3f8397-6ed2-5507-9824-eb07f2be08da",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-hangul-hakgyo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -14872,23 +14902,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “trường học”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "ob4f45e13",
-      "content_hash": "455ccac4345f2386b90a33029f63ff349a117b9f195e3ecf72caaab1658e07a9",
+      "content_hash": "9ac38cfa699a18c20db657afb1a85fef26ffd9f22d19be68abf7529ed0859a98",
       "difficulty": 0.5,
       "explanation": {
-        "vi": "“물” (mul) là nước. “불” là lửa, “문” là cửa, “무” là củ cải — chỉ khác một nét hoặc một phụ âm nên bạn cần đọc kỹ từng khối chữ."
+        "vi": "“물” (mul) là nước. “불” là lửa, “문” là cửa, “무” là củ cải — các từ chỉ khác nhau một chữ cái nên bạn cần đọc kỹ từng khối chữ."
       },
       "id": "0335df55-640a-50c8-9225-db6dbae52c4f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-hangul-mul",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -14917,23 +14947,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “nước”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "od3ccc330",
-      "content_hash": "0bfa77fbbeb43c3d97ec8a9dc6cef0f5f7df67de4df27a8c103c9ba9c1d631a6",
+      "content_hash": "26996b6d00d1c67acb64a7509b357a6992183054605281113b3bc057d4b37e38",
       "difficulty": 0.5,
       "explanation": {
         "vi": "“우유” (u-yu) là sữa. “오이” là dưa chuột, “우리” là chúng tôi, “여우” là con cáo; các từ này dùng nguyên âm gần giống nên dễ nhầm."
       },
       "id": "30143b8d-bc58-54f7-8b44-60e9663165f0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-hangul-uyu",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "hangul",
       "prompt": {
@@ -14962,23 +14992,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “sữa”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "oba3a06e8",
-      "content_hash": "de2f9bb15d55fd6fb61436ab1b2537d543e7c34b6eb6b6da156f5441bc0e12f1",
+      "content_hash": "fad76527f9de1dffdc7787f8dc142ef98444e93305f8c33ac03345abd5392fdd",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“배고파요” (từ “배고프다”) nghĩa là đói bụng. No là “배불러요”, khát là “목말라요”, mệt là “피곤해요”."
       },
       "id": "6be19a57-65e6-5b95-9495-23f4be88a10b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik1-baegopayo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -15007,23 +15037,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "“배고파요” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o192df54d",
-      "content_hash": "f7d57f36ddca585be70c3e332f1bd79f538f3ed30cd71f38212b40791bfdcb52",
+      "content_hash": "b49c3e1ce6ebaad07d981fbc6f5476dae1885202cac9724932ed0dc7cf822f7a",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“비싸요” là đắt. “싸요” ngược lại là rẻ — bạn đừng nhầm vì hai từ có chung âm “싸”; “많아요” là nhiều, “작아요” là nhỏ."
       },
       "id": "255caac3-7f96-50f7-b444-881cf6c13f7d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik1-bissayo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -15052,23 +15082,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “đắt”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "oc3bb304c",
-      "content_hash": "7cfb3aead9a198cdaa5a6ebb3dc04f230c3528ff46e7abda0160f1326114156e",
+      "content_hash": "5cf352f75d333cc4b98023c30458c10705837efec054f2b242d8c66db05f0f16",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“병원” (bệnh viện) là nơi khám chữa bệnh. Hiệu thuốc là “약국”, ngân hàng là “은행”, nhà ga là “역”."
       },
       "id": "1ffe777d-d434-5927-a8b4-ba0fe59a94b5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik1-byeongwon",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -15097,23 +15127,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “병원” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "oddd979cf",
-      "content_hash": "f676ed0413492a835b76571a85bb68cff5408114c0a8d9485052a455a316b3d4",
+      "content_hash": "0eaec791a06924baeeaba0fffdc7412d9532a16d010a95deacc320d7650ff646",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“어제” là hôm qua. “오늘” là hôm nay, “내일” là ngày mai, “모레” là ngày kia."
       },
       "id": "3254970a-d2e7-5b41-af02-79155602940a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik1-eoje",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -15142,23 +15172,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “hôm qua”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o56e5f2b7",
-      "content_hash": "0aec52aeaf996660a800eaed8702b6a643f3714e6cd8b57a378be692f2301600",
+      "content_hash": "f2d38d8b5093425a6e0c94746d51607582be0fd5cf62ab4026b8c4f8e8d63ba7",
       "difficulty": 1.5,
       "explanation": {
         "vi": "“목요일” là thứ Năm. “화요일” là thứ Ba, “수요일” là thứ Tư, “금요일” là thứ Sáu."
       },
       "id": "236ad9e2-2661-57b9-b898-e1a1da4eadd8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik1-mogyoil",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik1",
       "prompt": {
@@ -15187,23 +15217,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “thứ Năm”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o71eec370",
-      "content_hash": "7bd376c4e1015989970e3e66cf7a5badfed00b495897f01f5d2d574b47ecea49",
+      "content_hash": "35ee220964dfdb3d4b0b558763381f7c81cb60ab2d7d138a19b73093469734b4",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“무겁다” (nặng) trái nghĩa với “가볍다” (nhẹ). “두껍다” là dày (trái nghĩa của “얇다”), “가깝다” là gần, “어렵다” là khó."
       },
       "id": "c6190cd5-62fe-50aa-979f-faa3b34a28f1",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik2-gabyeopda-opposite",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -15232,23 +15262,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào trái nghĩa với “가볍다” (nhẹ)?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o8772bfaf",
-      "content_hash": "f5f471ff3a341fa9e05e9763a18da282f24f0b8baf3f29606d41653d7fe4f3a0",
+      "content_hash": "c9c5a176ecea0ce0c1299fd55fe2bb62118a3762ed0a5ed8923259b04e339dd9",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“지갑” là cái ví đựng tiền. Cái ô là “우산”, túi xách là “가방”, chìa khóa là “열쇠”."
       },
       "id": "9550d9dc-b3fe-5593-87f0-94c4a638b9c6",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik2-jigap",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -15277,23 +15307,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “지갑” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o100c6ec1",
-      "content_hash": "17a141902e46365ee31781172c123a766495bb484ba5c8deaada3616154952cf",
+      "content_hash": "e5a599c35f518acda8b91daeac68697e6a0a200ab6e95b0bd54c79f50f0a1e2d",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“준비하다” (chuẩn bị) là đáp án đúng. “계획하다” là lên kế hoạch, “연습하다” là luyện tập, “소개하다” là giới thiệu."
       },
       "id": "36dce1e7-8c77-5109-8d7c-0fdc68aca492",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik2-junbihada",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -15322,23 +15352,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “chuẩn bị”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "of04f70d5",
-      "content_hash": "c833713cf3e2b71e8a5ae35ba6230d8895c3ace850310e54525d8b137a1e93c2",
+      "content_hash": "d0d5011b2057e2b796ab4ef3d9a635f79619c0bf89b28e1ae5456e81c3a62294",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“늦잠을 자다” là ngủ dậy muộn (늦다 = muộn). “낮잠을 자다” là ngủ trưa, “잠이 들다” là thiếp đi, “꿈을 꾸다” là nằm mơ."
       },
       "id": "97111626-c795-5795-a77f-88e3d36268d8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik2-neutjam",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -15367,23 +15397,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Cụm từ nào có nghĩa là “ngủ dậy muộn, ngủ nướng”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o1e982faf",
-      "content_hash": "618fcca385161070ad684899f3186529f19c6bce028dd94a549c14711e6b38fb",
+      "content_hash": "5a61588780b0579efb7895164fe635f7ca6cdbf8d3357f6b2a68b097051d3b8b",
       "difficulty": 2.5,
       "explanation": {
         "vi": "“약속” (ước thúc) là cuộc hẹn hoặc lời hứa. Đừng nhầm với “약” (thuốc) — hiệu thuốc là “약국”; buổi họp là “회의”."
       },
       "id": "a0303157-31bb-515b-ae5e-b4ea018d2314",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik2-yaksok",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik2",
       "prompt": {
@@ -15412,23 +15442,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “약속” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "oa00d8aec",
-      "content_hash": "481b2e30881a95c49dec88c51dc7db4140658bef66572265ce628024f93eeac4",
+      "content_hash": "4dd8f73359b382d38920ae6f2a0a0f210d9b5494305d6c5c2d57b823e4cb2724",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Tiếng Hàn nói “감기에 걸리다” (bị cảm), nên “걸린” là đúng. Không nói “감기에 잡히다/받다” dù tiếng Việt có thể nói “bị nhiễm/mắc”."
       },
       "id": "2cbf80a7-b71b-5517-a09b-bd7cb7cfa18a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik3-gamgi-geollida",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -15457,23 +15487,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "날씨가 갑자기 추워져서 감기에 ___ 사람이 많아요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o656f6f26",
-      "content_hash": "3b155cd3db6e0e7efbbc75732c8b10c4b187df9679f06aa16fb79d4dbd1f5ef7",
+      "content_hash": "89a0b63ee65bea518ef16f6a1fee5d66d9450db362d847aa14736622ba2beb1f",
       "difficulty": 3.5,
       "explanation": {
         "vi": "“경험” chính là “kinh nghiệm”. “경제” là kinh tế (cùng âm “경”), “계획” là kế hoạch, “실험” là thí nghiệm (cùng âm “험” = nghiệm)."
       },
       "id": "f205e554-0283-57eb-be95-25c6455a18cf",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik3-gyeongheom",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -15502,23 +15532,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “kinh nghiệm, trải nghiệm”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o1411521c",
-      "content_hash": "c14b35b17292056463d709b18292949473c467d6106c2891c56a04c04ead273c",
+      "content_hash": "7e454a005650a01a440ede1faac36dc7df086a16af0524924ce941e98aa4891c",
       "difficulty": 3.5,
       "explanation": {
         "vi": "“목적” là từ Hán Hàn của “mục đích”. Kết quả là “결과”, nguyên nhân là “원인”, quá trình là “과정”."
       },
       "id": "cc5fa341-ec63-5279-9989-0f61163c823b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik3-mokjeok",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -15547,23 +15577,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “목적” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "oaa88dc44",
-      "content_hash": "804f4ee9878a711393278b4354c31f564dd970f56f69e566867b36dc503bde39",
+      "content_hash": "8fa1a608993288cf5f791f1501c42111cf04861f8267eeb9242ceea7ea4fb57c",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Giải tỏa căng thẳng là “스트레스를 풀다”, nên “풀기 위해서” mới hợp mục đích leo núi. “스트레스를 받다” là bị căng thẳng — ngược với ý câu."
       },
       "id": "f1398fd9-6609-5714-acb7-7a8d4e150124",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik3-seuteureseu-pulda",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -15592,23 +15622,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "스트레스를 ___ 위해서 주말마다 등산을 해요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o4b566448",
-      "content_hash": "b1d568a6da7ec4a5c2e9c5f7db0eb9ddb3607c1013bdffdbca738783dcea611e",
+      "content_hash": "a848bd0822aaae2f7a7617770e7515cf25a2531c8cc4340948b4e4e8f6e0c82c",
       "difficulty": 3.5,
       "explanation": {
         "vi": "Câu nói “Nếu giờ họp thay đổi thì nhất định hãy … cho tôi”, nên cần “연락해 주세요” (liên lạc, báo cho). “연습해” (luyện tập) hay “출발해” (xuất phát) không hợp nghĩa."
       },
       "id": "763f734a-5aab-5d88-93b0-0a7b0e0edff4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik3-yeollak",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik3",
       "prompt": {
@@ -15637,23 +15667,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "회의 시간이 바뀌면 저에게 꼭 ___ 주세요.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "oe56f1933",
-      "content_hash": "9ded7b72b5e2877d095a5117e3952c22cfccf70df8449136885e04dce0b1fe6b",
+      "content_hash": "817d1bc65ce48b5e44a1381a4edfaef858b53c683024d6c9f3080c1624951ad8",
       "difficulty": 4.5,
       "explanation": {
-        "vi": "“당황하다” là bối rối, lúng túng khi gặp tình huống bất ngờ. Thất vọng là “실망하다”, hồi hộp là “긴장하다”, tức giận là “화가 나다”."
+        "vi": "“당황하다” là bối rối, lúng túng khi gặp tình huống bất ngờ. Thất vọng là “실망하다”, hồi hộp, căng thẳng là “긴장하다”, tức giận là “화가 나다”."
       },
       "id": "f8c1efee-5159-5cdf-80ef-5bfa57a0bd3d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik4-danghwanghada",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -15682,23 +15712,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “당황하다” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o295e9cab",
-      "content_hash": "134fb18a446b32c8a05136561131ef5540ec479734053f5afad09e0e709478c0",
+      "content_hash": "e3d108beaabf587e810fc8c8257801b071ef765216d9fd03ba2c8fb6a9828cf8",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Để bảo vệ môi trường thì phải giảm đồ dùng một lần, nên “줄이도록” (giảm) là đúng. “늘리도록” (tăng) ngược nghĩa; “높이다/키우다” không đi với “사용”."
       },
       "id": "03c164a5-d488-56a0-b058-434c4ec3dd5f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik4-jurida",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -15727,23 +15757,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "환경을 보호하기 위해 일회용품 사용을 ___ 노력합시다.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "od9f26f2d",
-      "content_hash": "4cabd261371de9170de08a2b6dc227072ecfebabd7a5c72e57567dc69c8887ec",
+      "content_hash": "3d25e2c1ceb987e89806cf899dc4646fbf6a274c73f35db99698c9659205a828",
       "difficulty": 4.5,
       "explanation": {
         "vi": "“꾸준히” nghĩa là đều đặn, bền bỉ không ngừng (vd. “꾸준히 운동하다”). “Thỉnh thoảng” là “가끔” — trái với tính liên tục của “꾸준히”."
       },
       "id": "edc19fd2-0b35-5e51-a4a5-382c6983ff8e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik4-kkujunhi",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -15772,23 +15802,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "“꾸준히” gần nghĩa nhất với cách nói nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "ob5f9a892",
-      "content_hash": "b17b93f2176fc85e8c5b2e6b3402acbe720f415462f6f5405fecea194990dc2b",
+      "content_hash": "20e64b7583ec90706c01ad24d123e8a81d4cc4c39da52faabe1db0a143e96f2d",
       "difficulty": 4.5,
       "explanation": {
         "vi": "Kết hợp cố định là “실수를 저지르다” (phạm sai lầm). “일으키다” đi với “사고” (gây tai nạn), “끼치다” đi với “피해/폐” (gây thiệt hại/phiền), “벌이다” đi với “일/사업”."
       },
       "id": "74ed70eb-8535-5025-b599-44bc2ac7674b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik4-silsu-jeojireuda",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -15817,23 +15847,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "그는 같은 실수를 두 번 다시 ___ 않으려고 노력했다.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o775028be",
-      "content_hash": "5392dc13d755339c8ef7275d5d523b22a28182e810068e90c632ab7a4cfe011e",
+      "content_hash": "7eb2d6560c94296ba10ba808e9200b2010e78d9442239a683aa97c1dbe57e710",
       "difficulty": 4.5,
       "explanation": {
         "vi": "“영향” là “ảnh hưởng” (vd. “영향을 미치다”). “영양” là dinh dưỡng, “영상” là video/hình ảnh, “인상” là ấn tượng — đều có âm gần giống."
       },
       "id": "1ae6f293-6c06-5fcd-b112-8459821abc8a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik4-yeonghyang",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik4",
       "prompt": {
@@ -15862,23 +15892,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “ảnh hưởng”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o72bdff0c",
-      "content_hash": "e3e79f6408c623e3a98b3d5b3c28b254b1e55cf0874907cda1ec65ea4bc8c108",
+      "content_hash": "e42ed648c67299c9870a9d709c93964ba11acc5724c59421507f3c88fb66c25e",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“불가피하다” (bất khả tị) nghĩa là không thể tránh khỏi. “Không thể tin được” là “믿을 수 없다”, “không thể chấp nhận” là “용납할 수 없다”."
       },
       "id": "7e9baf46-294e-5476-aed2-55f0c0960c77",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik5-bulgapihada",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -15907,23 +15937,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "“불가피하다” gần nghĩa nhất với cách nói nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "oa4612025",
-      "content_hash": "dff8e0dd051bba07026243d6e0c2efda940ae80f8daf749bca5adf9ea2a9f9ac",
+      "content_hash": "f6001b7cde236460031d43447c00c9a33f3ac16526b789593eb243e31e0767f6",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“추세” là xu thế, ví dụ “감소 추세” (xu hướng giảm). “추측” là suy đoán, “추진” là xúc tiến, thúc đẩy, “추억” là kỷ niệm."
       },
       "id": "2a0e3b3d-b667-56ed-94e1-22bbd5d1d745",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik5-chuse",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -15952,23 +15982,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “xu thế” (chiều hướng thay đổi của số liệu, tình hình)?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o01a7e1de",
-      "content_hash": "0fd1553665a56e187a7b214ff8c741fb8879834cf6407bd51152fa4cbf1e27e4",
+      "content_hash": "948cc1dc91559fdde409f27ca0f91e438eb7f857209b8d14f90bfe15e94f50b9",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“갈등을 해소하다” là giải tỏa, hóa giải mâu thuẫn. “해제하다” dùng cho lệnh, cảnh báo (dỡ bỏ), “해고하다” là sa thải, “해석하다” là giải thích, thông dịch."
       },
       "id": "c4e302f4-5e44-59eb-b6c2-4815c9f1db0b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik5-galdeung-haesohada",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -15997,23 +16027,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "두 나라는 오랜 갈등을 ___ 위해 대화를 시작했다.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o276ddc02",
-      "content_hash": "33ef3b9439180120557581c305b85d34047644cc304d3c06bd243ca2789807aa",
+      "content_hash": "06638deb5abfeb98c01a714284b3e4fc3992372539ec22f28ab42a59d00a36f2",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“지속 가능한” (có thể duy trì lâu dài) tương ứng với “bền vững”, như “지속 가능한 발전”. “일시적인” là tạm thời — ngược nghĩa; “획기적인” là mang tính đột phá."
       },
       "id": "35f4e512-bbf6-523d-95e6-91b8b63959ec",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik5-jisok-ganeunghan",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -16042,23 +16072,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “bền vững” (như trong “phát triển bền vững”)?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "od05d74b6",
-      "content_hash": "5570137957fdcea00119a7e5a325b07db1fc724cf287ee80ef595b7525bbcec1",
+      "content_hash": "eca07d653697a464236a820a0dcd9593226dab5e512aa7fb68d5a90823164745",
       "difficulty": 5.5,
       "explanation": {
         "vi": "“모호하다” (mơ hồ) nghĩa là không rõ ràng, khó xác định. “Rõ ràng” là “명확하다” — trái nghĩa; “mâu thuẫn” là “모순되다”."
       },
       "id": "14c7a3bf-5139-55d3-aeee-342429e0b475",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik5-mohohada",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik5",
       "prompt": {
@@ -16087,23 +16117,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “모호하다” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o2e273496",
-      "content_hash": "93cf427f29b34b3d586962fa00774947a0c2e73a4c1f5732a3c7c11233b84b83",
+      "content_hash": "9afda72f4e39ff8fecf79e28e0049e99a8d8ef814c1336a8a451e94cc74a12af",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“발이 넓다” (chân rộng) chỉ người quen biết nhiều, quan hệ rộng. Dù có chữ “발” (chân), thành ngữ này không nói về việc đi nhiều nơi."
       },
       "id": "1544b1ec-181d-5a9a-a8da-34b49490d874",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik6-bari-neolda",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -16132,23 +16162,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Quán ngữ “발이 넓다” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "ocf459135",
-      "content_hash": "b3170278ad01d7347734f0e0be5cfd7975543758f9ff7ff78842b606691698df",
+      "content_hash": "efd55c0da8db8614da397282e52c01afb2ba2612d177068ee1e2c744b94fabff",
       "difficulty": 6.5,
       "explanation": {
         "vi": "Trong nghiên cứu, “변수를 통제하다” là kiểm soát biến số để tăng độ tin cậy của phân tích. “통치” là cai trị (đất nước), “통보” là thông báo, “통용” là được dùng phổ biến — không đi với “변수”."
       },
       "id": "e688a1be-3550-5ea4-9d28-b6cb491337a3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik6-byeonsu-tongje",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -16177,23 +16207,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "본 연구는 기존 연구들이 간과해 온 변수를 추가로 ___하여 분석의 타당성을 높였다.",
         "stem_lang": "ko"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o4126a16e",
-      "content_hash": "b15feb42093c3ffa38d6f6c4baba5b8680958fafe4c2422b73148117adf6aef4",
+      "content_hash": "4e51badced9dffbaa8035e05cb85672212d9eb3c755e6ec42f3827e3213c3d61",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“엄격하다” (nghiêm cách) là nghiêm ngặt, như “엄격한 기준”. “엄숙하다” là trang nghiêm (về không khí, nghi lễ), “관대하다” là khoan dung — gần như trái nghĩa."
       },
       "id": "f85fa474-cce5-5f48-a57a-1f1fcdff1ef8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik6-eomgyeokhada",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -16222,23 +16252,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “nghiêm ngặt, khắt khe” (về quy định, tiêu chuẩn)?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o659c27c9",
-      "content_hash": "bb838e302de9c985b9fe3e7e297561ce2991b4cda1aaf2843c3bdaa5a91044ad",
+      "content_hash": "b7cafa76b7e3e15f5b301214eb14f75baa4cccae688068a819db80027d6ef6e8",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“고진감래” (khổ tận cam lai) nghĩa là hết khổ rồi sướng, giống “고생 끝에 낙이 온다”. “소 잃고 외양간 고친다” là mất bò mới lo làm chuồng — nói về việc phản ứng quá muộn."
       },
       "id": "0034da46-cf1f-5e5c-ac7f-84bc14713f92",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik6-gojingamnae",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -16267,23 +16297,23 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Tục ngữ nào gần nghĩa nhất với “고진감래”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     },
     {
       "answer_key": "o94312994",
-      "content_hash": "71a956bfeee90e4a1550319b4c82648a458390179199cb3f9eaf269d92c370e2",
+      "content_hash": "781ef04b506ced5042aa93f43421b8e78b57284aa9a21f21cc47b423b6136e75",
       "difficulty": 6.5,
       "explanation": {
         "vi": "“일석이조” (nhất thạch nhị điểu) là một hòn đá trúng hai con chim, tức một công đôi việc. Các câu còn lại nói về sự kiên trì, sự chậm trễ và sự vô ơn."
       },
       "id": "82b382cc-32ed-5d82-923c-67e11a44af32",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "mcq",
       "key": "ko:diag:voc-topik6-ilseogijo",
-      "key_confidence": "unreviewed",
+      "key_confidence": "reviewed",
       "language_code": "ko",
       "level_code": "topik6",
       "prompt": {
@@ -16312,8 +16342,8 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Thành ngữ “일석이조” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
     }
@@ -16323,11 +16353,11 @@ select public.import_exam_content_bundle($exam${
   "bundle_version": 1,
   "forms": [
     {
-      "content_hash": "fd2201496d52e63bf1b851505247893e35a1db7c9e18bb9e9081ed95a034137b",
+      "content_hash": "9ad3c84f245bc5966091d11a49060527aebd0cb51b4ca487595652db57b1859c",
       "description_vi": "Bài luyện mô phỏng trình độ A2: 8 câu nghe, 10 câu đọc và 1 email ngắn. Nội dung do Linguo tự soạn, không phải đề thi chính thức; kết quả cho biết bạn đạt mức A2 ở từng phần hay chưa, không quy đổi sang điểm của kỳ thi nào.",
       "family": "cefr",
       "id": "526d0573-1cfe-5892-bef2-dacef974afb1",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:exam:cefr-a2-mock-1",
       "language_code": "en",
       "level_from": "a1",
@@ -16999,9 +17029,9 @@ select public.import_exam_content_bundle($exam${
         },
         {
           "answer": "o2c75b0da",
-          "content_hash": "535456ab76f8d06b03f323a2dac70facd52ca9a746d38b495e16b788322d9acf",
+          "content_hash": "723c0ae2a89dac7b8ece4371905f29319cb3ef238835e3b6fb2e90d4c210726a",
           "explanation": {
-            "vi": "“Because it's cheaper than flying” nghĩa là đi tàu rẻ hơn máy bay, tức là “costs less”. Email không nói đi tàu nhanh hơn hay Lucy sợ đi máy bay; thực tế máy bay thường nhanh hơn."
+            "vi": "“Because it's cheaper than flying” nghĩa là đi tàu rẻ hơn máy bay, tức là “costs less”. Email không hề nói đi tàu nhanh hơn hay Lucy sợ đi máy bay, nên hai phương án kia không có căn cứ."
           },
           "id": "79cad1aa-fc97-5ddc-9d9b-f467df88ddaa",
           "key": "en:examq:cefr-a2-m1-r09",
@@ -17127,13 +17157,13 @@ select public.import_exam_content_bundle($exam${
           "seq": 19
         }
       ],
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "scoring": {
         "bands": [],
         "pass_ratio": 0.6,
         "section_max": {},
-        "source_note_vi": "Ngưỡng “đạt mức A2” (đúng từ 60% số điểm mỗi phần) do Linguo đặt để luyện tập, không phải quy định của CEFR hay của kỳ thi nào. Chưa được đối chiếu; bài viết email không được chấm tự động.",
+        "source_note_vi": "Ngưỡng “đạt mức A2” (đúng từ 60% số điểm mỗi phần) do Linguo tự đặt để luyện tập. CEFR chỉ mô tả trình độ, không quy định thang điểm hay ngưỡng đạt cho bài thi, nên ngưỡng này không có căn cứ chính thức. Bài email không được chấm tự động.",
         "verified": false
       },
       "source_key": "src:linguo-demo",
@@ -17145,11 +17175,11 @@ select public.import_exam_content_bundle($exam${
       "title_vi": "CEFR A2 — Bài luyện mô phỏng số 1"
     },
     {
-      "content_hash": "515d535c022243b93d5a56ce8d14cae1ad367e20a091d92e650c24e659d961c1",
+      "content_hash": "33e2e0da8a924cecd67c4cebc34c67c3903cedef40b9fd7c62e2a44ac98f7619",
       "description_vi": "Bài luyện mô phỏng rút gọn theo cấu trúc TOPIK I (cấp 1–2): 10 câu nghe và 14 câu đọc, mỗi câu 4 lựa chọn. Nội dung do Linguo tự soạn, không phải đề thi chính thức; điểm quy đổi chỉ để tham khảo.",
       "family": "topik_i",
       "id": "95a3ec27-a3f3-52e1-a196-42c605d945a9",
-      "is_demo": true,
+      "is_demo": false,
       "key": "ko:exam:topik-i-mock-1",
       "language_code": "ko",
       "level_from": "topik1",
@@ -18274,8 +18304,8 @@ select public.import_exam_content_bundle($exam${
           "seq": 24
         }
       ],
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "scoring": {
         "bands": [
           {
@@ -18292,8 +18322,8 @@ select public.import_exam_content_bundle($exam${
           "listening": 100,
           "reading": 100
         },
-        "source_note_vi": "Thang điểm ghi theo cấu trúc TOPIK I tại thời điểm soạn: nghe 100, đọc 100; cấp 1 từ 80 điểm, cấp 2 từ 140 điểm trên tổng 200. Chưa đối chiếu với quy chế hiện hành, bạn cần kiểm tra lại thông báo mới nhất trước khi dùng.",
-        "verified": false
+        "source_note_vi": "Đã đối chiếu ngày 14/10/2026 với thông báo 2025-317 của Bộ Giáo dục Hàn Quốc (kế hoạch TOPIK 2026, đăng trên niied.go.kr): TOPIK I bản giấy (PBT) gồm nghe 100, đọc 100, tổng 200; cấp 1 từ 80, cấp 2 từ 140 điểm, xếp cấp theo tổng điểm. TOPIK IBT dùng thang khác.",
+        "verified": true
       },
       "source_key": "src:linguo-demo",
       "time_limits": {
@@ -18303,11 +18333,11 @@ select public.import_exam_content_bundle($exam${
       "title_vi": "TOPIK I — Bài luyện mô phỏng số 1"
     },
     {
-      "content_hash": "40c34e474bdd92e2c5728dcf3e5055ca315856a7ee585369ee5af3e0f396d0d9",
+      "content_hash": "f377879c639007531e8b1cb2f6a61b43cbdad4bff7d8aedf627dfbf781fe14ea",
       "description_vi": "Bài luyện mô phỏng rút gọn theo cấu trúc TOPIK II (cấp 3–6): 8 câu nghe, 10 câu đọc và 3 câu viết (2 câu điền câu, 1 bài viết ngắn 200–300 ký tự). Nội dung do Linguo tự soạn, không phải đề thi chính thức; điểm quy đổi chỉ để tham khảo, bài viết luận không được chấm tự động.",
       "family": "topik_ii",
       "id": "d9ebe389-8909-5e74-bd5a-3b675cfdaa19",
-      "is_demo": true,
+      "is_demo": false,
       "key": "ko:exam:topik-ii-mock-1",
       "language_code": "ko",
       "level_from": "topik3",
@@ -18965,7 +18995,7 @@ select public.import_exam_content_bundle($exam${
         },
         {
           "answer": "o57b0c559",
-          "content_hash": "eaefd2101804e84de0263f8469ae2a19f30a3f33149b6712637d9ed3f366295c",
+          "content_hash": "58e953c3c1dffc1275bd4da73ec4b17cf67018c919dd8a8dd51609e747e527f0",
           "explanation": {
             "vi": "평일에 한해 (chỉ ngày thường) chuyến cuối được lùi đến 1 giờ sáng, nên câu b đúng. Câu a và d sai vì cuối tuần và ngày lễ vẫn dừng lúc nửa đêm (지금처럼 자정에); câu c sai vì thay đổi bắt đầu từ tháng sau (다음 달부터)."
           },
@@ -18999,7 +19029,7 @@ select public.import_exam_content_bundle($exam${
                 "text": "막차 시간은 이번 달부터 바뀐다."
               }
             ],
-            "passage": "한 도시가 다음 달부터 평일에 한해 지하철 막차 시간을 새벽 1시로 30분 늦춘다고 밝혔다. 주말과 공휴일에는 지금처럼 자정에 운행을 마친다. 시는 늦은 시간에 귀가하는 시민들의 불편을 줄이기 위한 조치라고 설명했다.",
+            "passage": "한 도시가 다음 달부터 평일에 한해 지하철 막차 시간을 새벽 1시로 1시간 늦춘다고 밝혔다. 주말과 공휴일에는 지금처럼 자정에 운행을 마친다. 시는 늦은 시간에 귀가하는 시민들의 불편을 줄이기 위한 조치라고 설명했다.",
             "stem": "다음 글의 내용과 같은 것을 고르십시오.",
             "stem_lang": "ko"
           },
@@ -19157,11 +19187,20 @@ select public.import_exam_content_bundle($exam${
             "놓고 왔습니다",
             "두고 나왔습니다",
             "놓고 나왔습니다",
-            "잃어버렸습니다"
+            "놔두고 왔습니다",
+            "놓아두고 왔습니다",
+            "두고 와 버렸습니다",
+            "놓고 와 버렸습니다",
+            "깜빡 두고 왔습니다",
+            "깜빡 놓고 왔습니다",
+            "깜박 두고 왔습니다",
+            "깜빡하고 두고 왔습니다",
+            "두고 온 것 같습니다",
+            "놓고 온 것 같습니다"
           ],
-          "content_hash": "a174b24cfc35b40345ed4e7e10eaf2fdcb94f39bb92802b03be6af7ab15be41e",
+          "content_hash": "ab5a0aa94d96b222bca7510b90be436002b6ad487180c05e8f008df410763e98",
           "explanation": {
-            "vi": "Văn bản là thông báo tìm đồ thất lạc, nên ㉠ cần nói “tôi đã để quên laptop ở phòng đọc”: 두고 왔습니다 / 놓고 왔습니다 (hoặc 잃어버렸습니다). Phải dùng thì quá khứ và đuôi -습니다 giống các câu còn lại; viết “두고 와요” hay “두고 갔어요” bị trừ điểm vì sai văn phong hoặc sai góc nhìn (người viết đã rời khỏi thư viện)."
+            "vi": "Văn bản là thông báo tìm đồ thất lạc, nên ㉠ cần nói “tôi đã để quên laptop ở phòng đọc”: 두고 왔습니다 / 놓고 왔습니다. Câu dùng 열람실에 (trợ từ 에 chỉ chỗ đặt đồ) nên đi với 두다/놓다; “잃어버렸습니다” cần 열람실에서 nên không khớp. Phải dùng thì quá khứ và đuôi -습니다 giống các câu khác; “두고 와요” sai văn phong."
           },
           "id": "25f48fa6-92b1-5f35-b84f-ea35b5876cdc",
           "key": "ko:examq:topik-ii-m1-w01",
@@ -19188,9 +19227,19 @@ select public.import_exam_content_bundle($exam${
             "적당한 시간 동안 자는 것이",
             "적당한 시간만큼 자는 것이",
             "알맞은 시간만큼 자는 것이",
-            "알맞게 자는 것이"
+            "알맞게 자는 것이",
+            "적당하게 자는 것이",
+            "적당히 잠을 자는 것이",
+            "적당한 시간을 자는 것이",
+            "적당한 시간만 자는 것이",
+            "알맞은 시간 동안 자는 것이",
+            "적절히 자는 것이",
+            "적절하게 자는 것이",
+            "적절한 시간 동안 자는 것이",
+            "필요한 만큼만 자는 것이",
+            "필요한 만큼 자는 것이"
           ],
-          "content_hash": "bc7e652748b58426629d618c6f29c80089f6ae527413dc70255b35921e9e9ba2",
+          "content_hash": "863bf7a6833c2bc6256994ef4c8dab228fc2f6b01d30604a618f1d3a792fabca",
           "explanation": {
             "vi": "Câu có cấu trúc “A보다 B가 더 중요하다”: vì A là “ngủ thật lâu”, B phải là ý đối lập “ngủ vừa đủ”, viết cùng dạng -는 것이 như 자는 것보다. Đáp án kiểu “충분히 자는 것이” sai ý vì đoạn văn vừa nói ngủ quá nhiều không tốt; quên trợ từ 이 (viết “적당히 자는 것”) cũng làm câu không đúng ngữ pháp."
           },
@@ -19260,8 +19309,8 @@ select public.import_exam_content_bundle($exam${
           "seq": 21
         }
       ],
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T12:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "scoring": {
         "bands": [
           {
@@ -19287,8 +19336,8 @@ select public.import_exam_content_bundle($exam${
           "reading": 100,
           "writing": 100
         },
-        "source_note_vi": "Thang điểm ghi theo cấu trúc TOPIK II tại thời điểm soạn: nghe, đọc, viết mỗi phần 100; cấp 3 từ 120, cấp 4 từ 150, cấp 5 từ 190, cấp 6 từ 230 trên tổng 300. Chưa đối chiếu với quy chế hiện hành; bài viết luận không được tính điểm.",
-        "verified": false
+        "source_note_vi": "Đã đối chiếu ngày 14/10/2026 với thông báo 2025-317 của Bộ Giáo dục Hàn Quốc (kế hoạch TOPIK 2026, niied.go.kr): TOPIK II bản giấy gồm nghe, viết, đọc mỗi phần 100, tổng 300; cấp 3 từ 120, cấp 4 từ 150, cấp 5 từ 190, cấp 6 từ 230. Bài luận ở đây không được chấm tự động.",
+        "verified": true
       },
       "source_key": "src:linguo-demo",
       "time_limits": {

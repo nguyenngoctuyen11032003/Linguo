@@ -1,8 +1,7 @@
-# DEMO — chưa kiểm duyệt
 # Bài luyện mô phỏng TOPIK I do Linguo tự soạn (nguồn src:linguo-demo). Không phải đề thi chính thức,
 # không chép đề thật. Nghe: lời thoại trong `script`, ứng dụng đọc bằng giọng máy khi chưa có audio.
 schema_version: 1
-demo: true
+demo: false
 language: ko
 form:
   key: ko:exam:topik-i-mock-1
@@ -18,10 +17,11 @@ form:
     listening: 15
     reading: 25
   scoring:
-    verified: false
+    verified: true
     source_note_vi: >-
-      Thang điểm ghi theo cấu trúc TOPIK I tại thời điểm soạn: nghe 100, đọc 100; cấp 1 từ 80 điểm, cấp 2 từ 140 điểm
-      trên tổng 200. Chưa đối chiếu với quy chế hiện hành, bạn cần kiểm tra lại thông báo mới nhất trước khi dùng.
+      Đã đối chiếu ngày 14/10/2026 với thông báo 2025-317 của Bộ Giáo dục Hàn Quốc (kế hoạch TOPIK 2026, đăng trên
+      niied.go.kr): TOPIK I bản giấy (PBT) gồm nghe 100, đọc 100, tổng 200; cấp 1 từ 80, cấp 2 từ 140 điểm, xếp cấp theo
+      tổng điểm. TOPIK IBT dùng thang khác.
     section_max:
       listening: 100
       reading: 100
@@ -29,6 +29,8 @@ form:
       - { level_code: topik1, min_total: 80 }
       - { level_code: topik2, min_total: 140 }
     pass_ratio: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 questions:
   # ============================== NGHE (듣기) ==============================
   - key: ko:examq:topik-i-m1-l01

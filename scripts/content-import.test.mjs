@@ -1262,8 +1262,9 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
     assert.equal(count(form, 'listening', 'mcq'), want.listening, `${key} listening`);
     assert.equal(count(form, 'reading', 'mcq'), want.reading, `${key} reading`);
     assert.deepEqual(form.time_limits, want.time, `${key} time`);
-    assert.equal(form.is_demo, true);
-    assert.equal(form.scoring.verified, false);
+    assert.equal(form.is_demo, false);
+    // TOPIK bands are checked against the official notice; CEFR has no official pass mark.
+    assert.equal(form.scoring.verified, key.startsWith('ko:'), `${key} scoring.verified`);
     assert.ok(new Set(form.questions.map((q) => q.question_type)).size >= 4, `${key}: at least 4 question types`);
     for (const q of form.questions.filter((x) => x.section === 'listening')) assert.ok(q.script && q.prompt.audio_asset_id === null, q.key);
   }

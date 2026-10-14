@@ -1,6 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
+key_confidence: reviewed
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 language: en
 skill: grammar
 items:
@@ -45,7 +47,7 @@ items:
         - { id: c, text: an, lang: en }
         - { id: d, text: many, lang: en }
     answer: c
-    explanation: { vi: "“Apple” bắt đầu bằng nguyên âm nên dùng “an”: “an apple”. “A” dùng trước phụ âm; “two” và “many” cần danh từ số nhiều (apples) và động từ “are”." }
+    explanation: { vi: "“Apple” bắt đầu bằng âm nguyên âm /æ/ nên dùng “an”: “an apple”. “A” dùng trước âm phụ âm; “two” và “many” cần danh từ số nhiều (apples) và động từ “are”." }
 
   - key: en:diag:gram-pre-a1-my-name
     level: pre_a1
@@ -286,7 +288,7 @@ items:
         - { id: c, text: was used to, lang: en }
         - { id: d, text: am used to, lang: en }
     answer: a
-    explanation: { vi: "“Used to + V” diễn tả thói quen trong quá khứ nay không còn. “Be used to” nghĩa là “quen với” và phải theo sau bởi danh từ/V-ing, nên “was used to play” sai." }
+    explanation: { vi: "“Used to + V” diễn tả thói quen trong quá khứ nay không còn. “Be used to” nghĩa là “quen với” và phải theo sau bởi danh từ/V-ing, nên “was used to play” sai. “Use to” chỉ đúng sau “did/didn’t” (I didn’t use to…)." }
 
   # ---------- b2 ----------
   - key: en:diag:gram-b2-would-have-caught
@@ -340,10 +342,10 @@ items:
       options:
         - { id: a, text: must have, lang: en }
         - { id: b, text: "can't have", lang: en }
-        - { id: c, text: should have, lang: en }
+        - { id: c, text: "couldn't have", lang: en }
         - { id: d, text: "needn't have", lang: en }
     answer: a
-    explanation: { vi: "“Must have + V3” diễn tả suy luận gần như chắc chắn về quá khứ dựa trên bằng chứng (đèn tắt, không ai mở cửa). “Can’t have” lại khẳng định điều ngược lại, còn “should have” mang nghĩa “lẽ ra nên”." }
+    explanation: { vi: "“Must have + V3” diễn tả suy luận gần như chắc chắn về quá khứ dựa trên bằng chứng (đèn tắt, không ai mở cửa). “Can’t have” và “couldn’t have” lại khẳng định điều ngược với bằng chứng, còn “needn’t have” nghĩa là “lẽ ra không cần”." }
 
   - key: en:diag:gram-b2-despite-rain
     level: b2

@@ -1,8 +1,7 @@
-# DEMO — chưa kiểm duyệt
 # Bài luyện mô phỏng TOPIK II do Linguo tự soạn (nguồn src:linguo-demo). Không phải đề thi chính thức,
 # không chép đề thật. Số liệu trong câu viết luận là số liệu giả định, chỉ để luyện viết.
 schema_version: 1
-demo: true
+demo: false
 language: ko
 form:
   key: ko:exam:topik-ii-mock-1
@@ -20,10 +19,11 @@ form:
     reading: 25
     writing: 20
   scoring:
-    verified: false
+    verified: true
     source_note_vi: >-
-      Thang điểm ghi theo cấu trúc TOPIK II tại thời điểm soạn: nghe, đọc, viết mỗi phần 100; cấp 3 từ 120, cấp 4 từ 150,
-      cấp 5 từ 190, cấp 6 từ 230 trên tổng 300. Chưa đối chiếu với quy chế hiện hành; bài viết luận không được tính điểm.
+      Đã đối chiếu ngày 14/10/2026 với thông báo 2025-317 của Bộ Giáo dục Hàn Quốc (kế hoạch TOPIK 2026, niied.go.kr):
+      TOPIK II bản giấy gồm nghe, viết, đọc mỗi phần 100, tổng 300; cấp 3 từ 120, cấp 4 từ 150, cấp 5 từ 190, cấp 6 từ 230.
+      Bài luận ở đây không được chấm tự động.
     section_max:
       listening: 100
       reading: 100
@@ -34,6 +34,8 @@ form:
       - { level_code: topik5, min_total: 190 }
       - { level_code: topik6, min_total: 230 }
     pass_ratio: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 questions:
   # ============================== NGHE (듣기) ==============================
   - key: ko:examq:topik-ii-m1-l01
@@ -361,7 +363,7 @@ questions:
       instruction_vi: Đọc đoạn văn và chọn câu đúng với nội dung.
       stem: 다음 글의 내용과 같은 것을 고르십시오.
       stem_lang: ko
-      passage: 한 도시가 다음 달부터 평일에 한해 지하철 막차 시간을 새벽 1시로 30분 늦춘다고 밝혔다. 주말과 공휴일에는 지금처럼 자정에 운행을 마친다. 시는 늦은 시간에 귀가하는 시민들의 불편을 줄이기 위한 조치라고 설명했다.
+      passage: 한 도시가 다음 달부터 평일에 한해 지하철 막차 시간을 새벽 1시로 1시간 늦춘다고 밝혔다. 주말과 공휴일에는 지금처럼 자정에 운행을 마친다. 시는 늦은 시간에 귀가하는 시민들의 불편을 줄이기 위한 조치라고 설명했다.
       options:
         - { id: a, text: "주말에도 막차 시간이 늦어진다.", lang: ko }
         - { id: b, text: "평일에는 새벽 1시까지 지하철을 탈 수 있게 된다.", lang: ko }
@@ -454,9 +456,18 @@ questions:
       - 놓고 왔습니다
       - 두고 나왔습니다
       - 놓고 나왔습니다
-      - 잃어버렸습니다
+      - 놔두고 왔습니다
+      - 놓아두고 왔습니다
+      - 두고 와 버렸습니다
+      - 놓고 와 버렸습니다
+      - 깜빡 두고 왔습니다
+      - 깜빡 놓고 왔습니다
+      - 깜박 두고 왔습니다
+      - 깜빡하고 두고 왔습니다
+      - 두고 온 것 같습니다
+      - 놓고 온 것 같습니다
     explanation:
-      vi: "Văn bản là thông báo tìm đồ thất lạc, nên ㉠ cần nói “tôi đã để quên laptop ở phòng đọc”: 두고 왔습니다 / 놓고 왔습니다 (hoặc 잃어버렸습니다). Phải dùng thì quá khứ và đuôi -습니다 giống các câu còn lại; viết “두고 와요” hay “두고 갔어요” bị trừ điểm vì sai văn phong hoặc sai góc nhìn (người viết đã rời khỏi thư viện)."
+      vi: "Văn bản là thông báo tìm đồ thất lạc, nên ㉠ cần nói “tôi đã để quên laptop ở phòng đọc”: 두고 왔습니다 / 놓고 왔습니다. Câu dùng 열람실에 (trợ từ 에 chỉ chỗ đặt đồ) nên đi với 두다/놓다; “잃어버렸습니다” cần 열람실에서 nên không khớp. Phải dùng thì quá khứ và đuôi -습니다 giống các câu khác; “두고 와요” sai văn phong."
 
   - key: ko:examq:topik-ii-m1-w02
     section: writing
@@ -476,6 +487,16 @@ questions:
       - 적당한 시간만큼 자는 것이
       - 알맞은 시간만큼 자는 것이
       - 알맞게 자는 것이
+      - 적당하게 자는 것이
+      - 적당히 잠을 자는 것이
+      - 적당한 시간을 자는 것이
+      - 적당한 시간만 자는 것이
+      - 알맞은 시간 동안 자는 것이
+      - 적절히 자는 것이
+      - 적절하게 자는 것이
+      - 적절한 시간 동안 자는 것이
+      - 필요한 만큼만 자는 것이
+      - 필요한 만큼 자는 것이
     explanation:
       vi: "Câu có cấu trúc “A보다 B가 더 중요하다”: vì A là “ngủ thật lâu”, B phải là ý đối lập “ngủ vừa đủ”, viết cùng dạng -는 것이 như 자는 것보다. Đáp án kiểu “충분히 자는 것이” sai ý vì đoạn văn vừa nói ngủ quá nhiều không tốt; quên trợ từ 이 (viết “적당히 자는 것”) cũng làm câu không đúng ngữ pháp."
 

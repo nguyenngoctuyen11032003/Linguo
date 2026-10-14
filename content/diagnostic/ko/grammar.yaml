@@ -1,8 +1,10 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 language: ko
 skill: grammar
+key_confidence: reviewed
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 items:
   # ---------- hangul ----------
   - key: ko:diag:gram-hangul-haksaeng-ieyo

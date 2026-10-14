@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 key: ko:lesson:consonants
 order_index: 2
 level: hangul
@@ -46,7 +45,7 @@ body:
       vi: Phụ âm thay chỗ của ㅇ câm trong khối âm tiết. Với nguyên âm dọc, phụ âm đứng bên trái - 가, 나, 마. Với nguyên âm ngang, phụ âm đứng bên trên - 고, 누, 므.
   - type: explain
     text:
-      vi: ㄴ ㅁ ㅎ đọc như "n", "m", "h" tiếng Việt; ㅅ gần "x". Bốn phụ âm ㄱ ㄷ ㅂ ㅈ ở đầu từ đọc nhẹ, gần "c", "t", "p", "ch" không bật hơi; khi đứng giữa hai nguyên âm, chúng nghe gần "g", "đ", "b", "j". Vì vậy 바다 (biển) đọc gần "pa-đa".
+      vi: ㄴ ㅁ ㅎ đọc như "n", "m", "h" tiếng Việt; ㅅ gần "x". Bốn phụ âm ㄱ ㄷ ㅂ ㅈ ở đầu từ đọc nhẹ, gần "c", "t", "p", "ch", chỉ kèm một chút hơi (ít hơn nhiều so với phụ âm bật hơi); khi đứng giữa hai nguyên âm, chúng nghe gần "g", "đ", "b", "j". Vì vậy 바다 (biển) đọc gần "pa-đa".
   - type: deep_explain
     text:
       vi: ㄹ giữa hai nguyên âm là một cái chạm lưỡi rất nhẹ, nghe như giữa "r" và "l" - 다리 (cái chân). Ở cuối âm tiết, ㄹ đọc gần "l". Sự thay đổi ㄱ ㄷ ㅂ ㅈ giữa đầu từ và giữa từ là tự nhiên, người Hàn không coi đó là hai âm khác nhau, nên bạn không cần cố đọc thật đúng "g" hay "c".

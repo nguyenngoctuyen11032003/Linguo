@@ -1,8 +1,10 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Bảng chữ Hangul". Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 schema_version: 1
-demo: true
+demo: false
 source: src:linguo-demo
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 items:
   # ---------------- nguyên âm cơ bản ----------------
   - key: ko:item:vowel-a
@@ -204,7 +206,7 @@ items:
           translation:
             vi: đi
       pronunciation_note:
-        vi: Đầu từ đọc nhẹ, gần "c" trong "ca" nhưng không bật hơi; giữa hai nguyên âm gần "g".
+        vi: Đầu từ đọc nhẹ, gần "c" trong "ca" kèm một chút hơi (ít hơn nhiều so với ㅋ); giữa hai nguyên âm gần "g".
 
   - key: ko:item:nieun
     type: hangul
@@ -242,7 +244,7 @@ items:
           translation:
             vi: biển
       pronunciation_note:
-        vi: Đầu từ đọc nhẹ, gần "t"; giữa hai nguyên âm gần "đ", nên 바다 đọc gần "pa-đa".
+        vi: Đầu từ đọc nhẹ, gần "t" kèm một chút hơi (ít hơn nhiều so với ㅌ); giữa hai nguyên âm gần "đ", nên 바다 đọc gần "pa-đa".
 
   - key: ko:item:rieul
     type: hangul
@@ -299,7 +301,7 @@ items:
           translation:
             vi: biển
       pronunciation_note:
-        vi: Đầu từ đọc nhẹ, gần "p" không bật hơi; giữa hai nguyên âm gần "b".
+        vi: Đầu từ đọc nhẹ, gần "p" kèm một chút hơi (ít hơn nhiều so với ㅍ); giữa hai nguyên âm gần "b".
 
   - key: ko:item:siot
     type: hangul
@@ -376,7 +378,7 @@ items:
           translation:
             vi: cà phê
       pronunciation_note:
-        vi: ㅌ gần "th" trong tiếng Việt. ㅋ là "k" bật hơi, khác "kh" tiếng Việt. ㅍ là "p" bật hơi, hai môi chạm nhau, không phải "ph".
+        vi: ㅌ gần "th" trong tiếng Việt; ㅊ là "ch" kèm luồng hơi mạnh. ㅋ là "k" bật hơi, khác "kh" tiếng Việt (không cọ xát trong cổ họng). ㅍ là "p" bật hơi, hai môi chạm nhau, không phải "ph".
       confusion:
         vi: "Mỗi phụ âm bật hơi có cặp thường và căng: ㄱ/ㅋ/ㄲ, ㄷ/ㅌ/ㄸ, ㅂ/ㅍ/ㅃ, ㅈ/ㅊ/ㅉ."
 

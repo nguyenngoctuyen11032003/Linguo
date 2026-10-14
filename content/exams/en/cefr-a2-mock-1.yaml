@@ -1,8 +1,7 @@
-# DEMO — chưa kiểm duyệt
 # Bài luyện mô phỏng trình độ CEFR A2 do Linguo tự soạn (nguồn src:linguo-demo). Không phải đề thi của
 # Cambridge hay bất kỳ tổ chức nào, không chép đề thật. CEFR không quy đổi điểm: chỉ đánh giá "đạt mức" theo phần.
 schema_version: 1
-demo: true
+demo: false
 language: en
 form:
   key: en:exam:cefr-a2-mock-1
@@ -21,11 +20,14 @@ form:
   scoring:
     verified: false
     source_note_vi: >-
-      Ngưỡng “đạt mức A2” (đúng từ 60% số điểm mỗi phần) do Linguo đặt để luyện tập, không phải quy định của CEFR hay
-      của kỳ thi nào. Chưa được đối chiếu; bài viết email không được chấm tự động.
+      Ngưỡng “đạt mức A2” (đúng từ 60% số điểm mỗi phần) do Linguo tự đặt để luyện tập. CEFR chỉ mô tả trình độ, không
+      quy định thang điểm hay ngưỡng đạt cho bài thi, nên ngưỡng này không có căn cứ chính thức. Bài email không được chấm
+      tự động.
     section_max: {}
     bands: []
     pass_ratio: 0.6
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 questions:
   # ============================== NGHE (Listening) ==============================
   - key: en:examq:cefr-a2-m1-l01
@@ -388,7 +390,7 @@ questions:
         - { id: c, text: "She is afraid of flying.", lang: en }
     answer: b
     explanation:
-      vi: "“Because it's cheaper than flying” nghĩa là đi tàu rẻ hơn máy bay, tức là “costs less”. Email không nói đi tàu nhanh hơn hay Lucy sợ đi máy bay; thực tế máy bay thường nhanh hơn."
+      vi: "“Because it's cheaper than flying” nghĩa là đi tàu rẻ hơn máy bay, tức là “costs less”. Email không hề nói đi tàu nhanh hơn hay Lucy sợ đi máy bay, nên hai phương án kia không có căn cứ."
 
   - key: en:examq:cefr-a2-m1-r10
     section: reading

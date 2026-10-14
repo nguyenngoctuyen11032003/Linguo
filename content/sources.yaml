@@ -1,10 +1,12 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
 sources:
   - key: src:linguo-demo
-    title: Linguo tự soạn — demo, chưa kiểm duyệt
+    title: Linguo tự soạn
     author_or_org: Linguo
     url: null
     license: own
     attribution_required: false
-    demo: true
+    demo: false
+    status: published
+    reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+    reviewed_at: "2026-10-14T12:00:00+07:00"

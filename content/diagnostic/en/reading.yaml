@@ -1,6 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
+key_confidence: reviewed
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 language: en
 skill: reading
 items:
@@ -116,7 +118,7 @@ items:
     item_type: reading_mcq
     prompt:
       passage: "My sister Hoa is a nurse. She works at a hospital in the city. She can speak English and French."
-      stem: "Chị Hoa trong đoạn văn làm nghề gì?"
+      stem: "Hoa trong đoạn văn làm nghề gì?"
       stem_lang: vi
       options:
         - { id: a, text: "Y tá", lang: vi }
@@ -124,7 +126,7 @@ items:
         - { id: c, text: "Giáo viên tiếng Anh", lang: vi }
         - { id: d, text: "Phiên dịch viên", lang: vi }
     answer: a
-    explanation: { vi: "“Nurse” là y tá; bác sĩ là “doctor”. Việc chị nói được tiếng Anh và tiếng Pháp không có nghĩa chị là giáo viên hay phiên dịch viên." }
+    explanation: { vi: "“Nurse” là y tá; bác sĩ là “doctor”. Việc Hoa nói được tiếng Anh và tiếng Pháp không có nghĩa Hoa là giáo viên hay phiên dịch viên." }
 
   - key: en:diag:read-a1-pool-children
     level: a1
@@ -504,7 +506,7 @@ items:
         - { id: c, text: "Dè dặt, thận trọng", lang: vi }
         - { id: d, text: "Khắt khe, chê bai không nương tay", lang: vi }
     answer: d
-    explanation: { vi: "“Unsparing” ở đây đối lập với “lavish in their praise”, nghĩa là phê bình gay gắt, không nương tay. Dễ nhầm với “hào phóng” vì “spare” còn nghĩa là “dư dả”, nhưng ngữ cảnh cho thấy giới phê bình chê các tác phẩm khắc khổ về sau." }
+    explanation: { vi: "“Unsparing” ở đây đối lập với “lavish in their praise”, nghĩa là phê bình gay gắt, không nương tay. Trong ngữ cảnh khác, “unsparing” có thể nghĩa là “hào phóng” (unsparing in praise), nhưng ở đây ngữ cảnh cho thấy giới phê bình chê các tác phẩm khắc khổ về sau." }
 
   - key: en:diag:read-c2-excavation-hedging
     level: c2

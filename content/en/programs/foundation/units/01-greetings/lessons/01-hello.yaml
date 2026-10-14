@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 key: en:lesson:hello
 order_index: 1
 level: pre_a1
@@ -156,8 +155,9 @@ exercises:
     answer:
       orders:
         - [t-my, t-name, t-is, t-lan]
+        - [t-lan, t-is, t-my, t-name]
     explanation:
-      vi: "Thứ tự là My name is + tên. Your (của bạn) và are không dùng ở đây: tên của mình thì dùng my, và name đi với is."
+      vi: "Thứ tự thường dùng là My name is + tên (Lan is my name cũng đúng). Your (của bạn) và are không dùng ở đây: tên của mình thì dùng my, và name đi với is."
     display_answer: My name is Lan.
 
   # ---------------- recall ----------------
@@ -204,6 +204,9 @@ exercises:
         - Glad to meet you.
         - It's nice to meet you.
         - It is nice to meet you.
+        - Very nice to meet you.
+        - It's a pleasure to meet you.
+        - It is a pleasure to meet you.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -309,6 +312,7 @@ exercises:
     answer:
       orders:
         - [w-nice, w-to, w-meet, w-you, w-minh]
+        - [w-minh, w-nice, w-to, w-meet, w-you]
     explanation:
-      vi: Lần đầu gặp dùng meet, không dùng see; tên người đặt ở cuối câu.
+      vi: Lần đầu gặp dùng meet, không dùng see (see dùng khi gặp lại người quen). Tên người có thể đặt ở cuối hoặc đầu câu.
     display_answer: Nice to meet you, Minh.

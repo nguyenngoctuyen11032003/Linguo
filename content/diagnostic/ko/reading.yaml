@@ -1,25 +1,27 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 language: ko
 skill: reading
+key_confidence: reviewed
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 items:
   # ---------------- hangul ----------------
   - key: ko:diag:read-hangul-exit-sign
     level: hangul
     item_type: reading_mcq
     prompt:
-      passage: "출구"
-      stem: Tấm biển ghi “출구” cho bạn biết điều gì?
+      passage: "← 입구    출구 →"
+      stem: Bạn muốn ra khỏi tòa nhà. Theo tấm biển này, bạn nên đi về hướng nào?
       stem_lang: vi
       options:
-        - { id: a, text: "Lối ra", lang: vi }
-        - { id: b, text: "Lối vào", lang: vi }
-        - { id: c, text: "Nhà vệ sinh", lang: vi }
-        - { id: d, text: "Thang máy", lang: vi }
+        - { id: a, text: "Sang phải, theo mũi tên “출구”", lang: vi }
+        - { id: b, text: "Sang trái, theo mũi tên “입구”", lang: vi }
+        - { id: c, text: "Đi thẳng lên tầng trên", lang: vi }
+        - { id: d, text: "Quay lại phía sau", lang: vi }
     answer: a
     explanation:
-      vi: "“출구” nghĩa là lối ra. Lối vào là “입구”, rất dễ nhầm vì cùng có chữ “구”."
+      vi: "“출구” nghĩa là lối ra, mũi tên của nó chỉ sang phải. “입구” là lối vào, rất dễ nhầm vì cùng có chữ “구”."
   - key: ko:diag:read-hangul-student-minsu
     level: hangul
     item_type: reading_mcq
@@ -79,7 +81,7 @@ items:
         - { id: d, text: "Học trò của người nói", lang: vi }
     answer: a
     explanation:
-      vi: "“동생” là em (em trai hoặc em gái); “아이” chỉ có nghĩa là đứa trẻ. Con của mình thì nói “제 아이” hoặc “제 아들/딸”."
+      vi: "“동생” là em (em trai hoặc em gái), còn “이 아이” chỉ là “đứa trẻ này”. Nếu là con của mình, người nói sẽ dùng “제 아이” hoặc “제 아들/딸”."
   # ---------------- topik1 ----------------
   - key: ko:diag:read-topik1-weekend-movie
     level: topik1

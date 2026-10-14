@@ -2,7 +2,7 @@
 
 Toàn bộ nội dung học (chương trình, unit, bài, học liệu, bài tập kèm đáp án) được viết bằng YAML trong thư mục này. `scripts/content-import.mjs` kiểm tra bằng schema zod dùng chung (`packages/shared/src/content/authoring.ts`), rồi nhập vào Supabase. Đáp án được tách sang schema `content_private`, client không bao giờ đọc được trước khi trả lời.
 
-> Nội dung hiện tại là **demo, chưa kiểm duyệt** (`demo: true`). Ứng dụng hiển thị nhãn demo cho các bài này.
+> Nội dung hiện tại đã được duyệt ngày 14/10/2026 (`demo: false`, `status: published`). Người duyệt là AI (Claude) được chủ dự án ủy quyền, chưa qua giáo viên bản ngữ; khi có người duyệt thì cập nhật `reviewed_by`/`reviewed_at`.
 
 ## Cấu trúc thư mục
 

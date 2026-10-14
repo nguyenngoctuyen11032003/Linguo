@@ -1,16 +1,15 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
 source: src:linguo-demo
 key: ko:program:hangul-basics
 language: ko
 title:
   vi: Hangul và giao tiếp nền tảng
 description:
-  vi: Đọc và viết bảng chữ Hangul - nguyên âm, phụ âm, phụ âm bật hơi và căng - làm nền cho những câu giao tiếp đầu tiên (Hangul đến TOPIK 1). Nội dung demo, chưa qua kiểm duyệt.
+  vi: Đọc và viết bảng chữ Hangul - nguyên âm, phụ âm, phụ âm bật hơi và căng - làm nền cho những câu giao tiếp đầu tiên (Hangul đến TOPIK 1).
 kind: core
 goal_types: []
 level_from: hangul
