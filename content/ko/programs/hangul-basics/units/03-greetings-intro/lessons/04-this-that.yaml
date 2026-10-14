@@ -1,0 +1,366 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:this-that
+order_index: 4
+level: topik1
+title:
+  vi: Cái này là gì? - 이것, 그것, 저것
+objectives:
+  - vi: Hỏi và trả lời về đồ vật bằng 이것/그것/저것 + 뭐예요?
+  - vi: Trả lời 네 / 아니요 và phủ định bằng N이/가 아니에요.
+  - vi: Gọi tên đồ dùng trong lớp - 책, 공책, 연필, 가방, 의자, 책상.
+estimated_minutes: 14
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ko:lesson:name-nationality]
+items:
+  - item: ko:item:demonstratives
+  - item: ko:item:mwo
+  - item: ko:item:ne-aniyo
+  - item: ko:item:i-ga-anieyo
+  - item: ko:item:chaek
+    role: reuse
+  - item: ko:item:yeonpil
+  - item: ko:item:gabang
+  - item: ko:item:uija
+    role: reuse
+  - item: ko:item:chaeksang
+  - item: ko:item:gongchaek
+  - item: ko:item:copula-ieyo-yeyo
+    role: reuse
+  - item: ko:item:topic-eun-neun
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn chỉ vào đồ vật và hỏi 이것은 뭐예요?, trả lời 그건 책이에요, và nói “không phải” bằng 책이 아니에요.
+  - type: explain
+    text:
+      vi: 이것 là “cái này” (gần người nói), 그것 là “cái đó” (gần người nghe), 저것 là “cái kia” (xa cả hai). Giống “này / đó / kia” của tiếng Việt, nhưng tiếng Hàn rất chú ý vật đang ở gần ai.
+  - type: explain
+    text:
+      vi: Hỏi “Cái này là gì?” - 이것은 뭐예요? Khi nói nhanh, người Hàn rút gọn 이것은 → 이건, 그것은 → 그건, 저것은 → 저건. 것 có patchim ㅅ nên đi với 은.
+  - type: explain
+    text:
+      vi: 네 là “vâng / đúng”, 아니요 là “không”. Phủ định “không phải là N” - N이 아니에요 nếu có patchim (책이 아니에요), N가 아니에요 nếu không có patchim (의자가 아니에요).
+  - type: deep_explain
+    text:
+      vi: Khi người kia cầm vật và hỏi 이것은 뭐예요?, vật đó gần họ, nên bạn trả lời bằng 그것 (그건 책이에요) - người Việt hay lặp lại 이것 theo câu hỏi. 저 trong 저것 (kia) trùng chữ với 저 (tôi), bạn phân biệt nhờ từ đi sau. Trong văn nói, trợ từ trước 아니에요 đôi khi bị lược (학생 아니에요), nhưng khi viết bạn nên giữ 이/가.
+  - type: example
+    target: 이것은 뭐예요? - 그건 연필이에요.
+    target_lang: ko
+    translation:
+      vi: Cái này là gì? - Cái đó là bút chì.
+    note:
+      vi: Người hỏi cầm bút, nên người trả lời dùng 그건.
+  - type: example
+    target: 저건 책상이에요?
+    target_lang: ko
+    translation:
+      vi: Cái kia là cái bàn à?
+    note:
+      vi: Câu hỏi có/không chỉ cần lên giọng ở cuối.
+  - type: example
+    target: 아니요, 책이 아니에요. 공책이에요.
+    target_lang: ko
+    translation:
+      vi: Không, không phải sách. Là quyển vở.
+    note:
+      vi: 책 có patchim ㄱ nên dùng 이 아니에요.
+  - type: example
+    target: 그건 의자가 아니에요.
+    target_lang: ko
+    translation:
+      vi: Cái đó không phải cái ghế.
+    note:
+      vi: 자 không có patchim nên dùng 가 아니에요.
+  - type: common_mistake
+    wrong: 연필가 아니에요.
+    right: 연필이 아니에요.
+    target_lang: ko
+    note:
+      vi: 필 có patchim ㄹ nên dùng 이. Quy tắc patchim giống 이에요/예요 - có patchim thì có thêm 이.
+  - type: common_mistake
+    wrong: 의자가 아니예요.
+    right: 의자가 아니에요.
+    target_lang: ko
+    note:
+      vi: 아니에요 luôn viết 에요 - 아니 không phải danh từ nên không theo quy tắc 예요. Viết 아니예요 là lỗi chính tả rất phổ biến.
+  - type: common_mistake
+    wrong: 이것는 뭐예요?
+    right: 이것은 뭐예요?
+    target_lang: ko
+    note:
+      vi: 것 có patchim ㅅ nên đi với 은 (đọc [이거슨]). Đừng viết theo tai nghe thành 이거슨.
+  - type: summary
+    points:
+      - vi: 이것 cái này (gần tôi) · 그것 cái đó (gần bạn) · 저것 cái kia (xa cả hai).
+      - vi: 이것은 뭐예요? - Cái này là gì? Rút gọn - 이건, 그건, 저건.
+      - vi: 네 vâng · 아니요 không.
+      - vi: N이 아니에요 (có patchim) / N가 아니에요 (không patchim) - không phải là N.
+      - vi: 책 sách · 공책 vở · 연필 bút chì · 가방 cặp · 의자 ghế · 책상 bàn.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:this-mcq-geugeot
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:demonstratives
+    prompt:
+      stem: Bạn của bạn đang cầm một vật lạ trong tay. Bạn muốn hỏi “Cái đó là gì?”. Điền vào chỗ trống - ___은 뭐예요?
+      stem_lang: vi
+      options:
+        - { id: c5n, text: 그것, lang: ko }
+        - { id: y8a, text: 이것, lang: ko }
+        - { id: t3w, text: 저것, lang: ko }
+        - { id: l1e, text: 저, lang: ko }
+    answer:
+      correct_option_id: c5n
+    explanation:
+      vi: Vật ở gần người nghe (bạn của bạn) nên dùng 그것 - cái đó. 이것 là vật gần bạn, 저것 là vật xa cả hai, còn 저 đứng một mình là “tôi”.
+    display_answer: 그것
+
+  - key: ko:exercise:this-listen-bag
+    type: listen
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:gabang
+    prompt:
+      audio_asset_id: null
+      fallback_text: 이건 가방이에요.
+      options:
+        - { id: p7r, text: Đây là cái cặp., lang: vi }
+        - { id: e4k, text: Kia là cái ghế., lang: vi }
+        - { id: m9h, text: Đó là quyển sách., lang: vi }
+        - { id: a2s, text: Đây không phải cái cặp., lang: vi }
+    answer:
+      correct_option_id: p7r
+    explanation:
+      vi: 이건 là dạng rút gọn của 이것은 (cái này), 가방 là cái cặp, câu kết thúc bằng 이에요 (là) chứ không phải 아니에요 (không phải).
+    display_answer: Đây là cái cặp.
+
+  - key: ko:exercise:this-mcq-ga-anieyo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:i-ga-anieyo
+    prompt:
+      stem: "Chọn trợ từ đúng: 그건 의자___ 아니에요."
+      stem_lang: vi
+      options:
+        - { id: b6g, text: 가, lang: ko }
+        - { id: o2u, text: 이, lang: ko }
+        - { id: f9l, text: 이에요, lang: ko }
+        - { id: i3x, text: 를, lang: ko }
+    answer:
+      correct_option_id: b6g
+    explanation:
+      vi: 의자 kết thúc bằng 자 - không có patchim, nên dùng 가 아니에요. 이 dành cho danh từ có patchim như 책이 아니에요.
+    display_answer: 가
+
+  - key: ko:exercise:this-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ne-aniyo
+    prompt:
+      template: "이것은 {{b1}}이에요? - 아니요, 책{{b2}} 아니에요. 공책이에요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Cái này là sách à? - Không, không phải sách. Là quyển vở."
+        - 책 có patchim ㄱ.
+    answer:
+      blanks:
+        b1: [책]
+        b2: [이]
+    known_wrong:
+      - answer: 가
+        feedback_vi: 책 có patchim ㄱ nên dùng 이 - 책이 아니에요.
+        error_tag: particle_i_ga
+      - answer: 공책
+        feedback_vi: Người trả lời nói “không phải sách”, nên câu hỏi là 이것은 책이에요?
+        error_tag: meaning
+    explanation:
+      vi: Câu hỏi đoán “sách”, người kia phủ định - 책이 아니에요 - rồi nói đúng là 공책 (vở). 책 có patchim nên dùng 이 trước 아니에요.
+    display_answer: 이것은 책이에요? - 아니요, 책이 아니에요. 공책이에요.
+
+  - key: ko:exercise:this-order-desk
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:chaeksang
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: “Cái kia là cái bàn.”"
+      tokens:
+        - { id: d1, text: 이에요 }
+        - { id: d2, text: 이것 }
+        - { id: d3, text: 책상 }
+        - { id: d4, text: 는 }
+        - { id: d5, text: 저것 }
+        - { id: d6, text: 예요 }
+        - { id: d7, text: 은 }
+    answer:
+      orders:
+        - [d5, d7, d3, d1]
+    explanation:
+      vi: “Cái kia” là 저것; 것 có patchim ㅅ nên đi với 은. 책상 có patchim ㅇ nên dùng 이에요.
+    display_answer: 저것은 책상이에요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:this-fill-chair-pencil
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:i-ga-anieyo
+    prompt:
+      template: "Đây là cái ghế - 이것은 의자{{b1}}. Đó không phải bút chì - 그것은 연필{{b2}} 아니에요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [예요, 입니다]
+        b2: [이]
+    known_wrong:
+      - answer: 이에요
+        feedback_vi: 의자 không có patchim nên dùng 예요 - 의자예요.
+        error_tag: copula_form
+      - answer: 이예요
+        feedback_vi: Không có dạng 이예요; sau 의자 (không patchim) viết 예요.
+        error_tag: copula_form
+      - answer: 가
+        feedback_vi: 필 có patchim ㄹ nên dùng 이 - 연필이 아니에요.
+        error_tag: particle_i_ga
+    explanation:
+      vi: 의자 không có patchim → 의자예요. 연필 có patchim ㄹ → 연필이 아니에요. Hai chỗ cùng một quy tắc patchim.
+    display_answer: 이것은 의자예요. / 그것은 연필이 아니에요.
+
+  - key: ko:exercise:this-write-what
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:mwo
+    prompt:
+      source_text: Cái này là gì?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이것은 뭐예요?
+        - 이건 뭐예요?
+        - 이게 뭐예요?
+        - 이것은 무엇이에요?
+        - 이건 무엇이에요?
+        - 이것은 무엇입니까?
+    known_wrong:
+      - answer: 이것은 뭐이에요?
+        feedback_vi: 뭐 không có patchim nên dùng 예요 - 뭐예요.
+        error_tag: copula_form
+      - answer: 이것는 뭐예요?
+        feedback_vi: 것 có patchim ㅅ nên đi với 은 - 이것은.
+        error_tag: particle_eun_neun
+      - answer: 그것은 뭐예요?
+        feedback_vi: 그것 là “cái đó” (gần người nghe). “Cái này” là 이것.
+        error_tag: demonstrative_distance
+      - answer: 이거슨 뭐예요?
+        feedback_vi: Đọc [이거슨] nhưng viết 이것은 - viết theo chữ, không theo tai nghe.
+        error_tag: spelling_by_sound
+    explanation:
+      vi: “Cái này” là 이것 (gần người nói), “là gì” là 뭐예요 - 뭐 không có patchim nên dùng 예요. Dạng rút gọn 이건 뭐예요? rất hay dùng khi nói.
+    display_answer: 이것은 뭐예요?
+
+  - key: ko:exercise:this-write-not-student
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:i-ga-anieyo
+    prompt:
+      source_text: Tôi không phải là học sinh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 저는 학생이 아니에요.
+        - 전 학생이 아니에요.
+        - 학생이 아니에요.
+        - 저는 학생이 아닙니다.
+        - 전 학생이 아닙니다.
+        - 학생이 아닙니다.
+        - 저는 학생 아니에요.
+    known_wrong:
+      - answer: 저는 학생가 아니에요.
+        feedback_vi: 생 có patchim ㅇ nên dùng 이 - 학생이 아니에요.
+        error_tag: particle_i_ga
+      - answer: 저는 학생이 아니예요.
+        feedback_vi: Viết đúng là 아니에요, không phải 아니예요.
+        error_tag: anieyo_spelling
+      - answer: 저는 학생이 아니요.
+        feedback_vi: 아니요 là câu trả lời “không”. “Không phải là” cần 아니에요.
+        error_tag: aniyo_anieyo
+      - answer: 저는 아니 학생이에요.
+        feedback_vi: Tiếng Hàn đặt phần phủ định ở cuối câu - 학생이 아니에요.
+        error_tag: word_order
+    explanation:
+      vi: 저는 + 학생이 + 아니에요. 생 có patchim nên dùng 이; phủ định luôn đứng cuối câu, không đứng trước danh từ như “không phải” tiếng Việt.
+    display_answer: 저는 학생이 아니에요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:this-translate-bag-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gabang
+    prompt:
+      source_text: 아니요, 그건 제 가방이 아니에요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không, đó không phải cặp của tôi.
+        - Không, đó không phải là cặp của tôi.
+        - Không, cái đó không phải cặp của tôi.
+        - Không, cái đó không phải là cặp của tôi.
+        - Không, đó không phải túi của tôi.
+        - Không, cái đó không phải túi của tôi.
+        - Không, đó không phải ba lô của tôi.
+        - Không, cái đó không phải là túi của tôi.
+        - Không, đó không phải cái cặp của tôi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: 아니요 là “không”; 그건 là “cái đó”; 제 là “của tôi”; 가방이 아니에요 là “không phải cái cặp/túi”. Tiếng Việt đặt “của tôi” sau danh từ, còn tiếng Hàn đặt 제 trước.
+    display_answer: Không, đó không phải cặp của tôi.
+
+  - key: ko:exercise:this-mcq-reply-notebook
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gongchaek
+    prompt:
+      stem: Bạn Hàn Quốc cầm quyển vở của bạn lên và hỏi - 이것은 책이에요? Bạn trả lời thế nào cho đúng?
+      stem_lang: vi
+      options:
+        - { id: s6v, text: "아니요, 그건 공책이에요.", lang: ko }
+        - { id: k1p, text: "네, 그건 공책이에요.", lang: ko }
+        - { id: h7d, text: "아니요, 그건 공책가 아니에요.", lang: ko }
+        - { id: x4z, text: "아니요, 그건 공책예요.", lang: ko }
+    answer:
+      correct_option_id: s6v
+    explanation:
+      vi: Đó là vở, không phải sách, nên trả lời 아니요; vật ở trong tay người hỏi nên dùng 그건. 공책 có patchim ㄱ nên là 공책이에요, không phải 공책예요.
+    display_answer: 아니요, 그건 공책이에요.

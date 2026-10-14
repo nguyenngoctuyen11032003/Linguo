@@ -1,0 +1,342 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:y-vowels
+order_index: 1
+level: hangul
+title:
+  vi: Nguyên âm "y" đầy đủ và cặp ㅐ/ㅔ
+objectives:
+  - vi: Đọc và viết đủ sáu nguyên âm "y" - ㅑ ㅕ ㅛ ㅠ ㅒ ㅖ.
+  - vi: Hiểu vì sao ㅐ/ㅔ và ㅒ/ㅖ nghe gần như giống nhau trong tiếng Seoul, và nhớ cách viết theo từng từ.
+  - vi: Đọc và viết các từ 여자, 야구, 요리, 얘기, 시계.
+estimated_minutes: 12
+skills: [reading, writing, listening, vocabulary]
+prerequisites: [ko:lesson:aspirated-tense]
+items:
+  - item: ko:item:vowel-yae-ye
+  - item: ko:item:yeoja
+  - item: ko:item:yagu
+  - item: ko:item:yori
+  - item: ko:item:yaegi
+  - item: ko:item:sigye
+  - item: ko:item:y-vowels
+    role: reuse
+  - item: ko:item:vowel-ae
+    role: reuse
+  - item: ko:item:vowel-e
+    role: reuse
+  - item: ko:item:uyu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc và viết được cả sáu nguyên âm có âm "y" phía trước, và đọc đúng những từ quen thuộc như 여자 (phụ nữ), 야구 (bóng chày), 시계 (đồng hồ).
+  - type: explain
+    text:
+      vi: Quy tắc rất đều - thêm một nét ngắn vào nguyên âm cơ bản là có thêm âm "y" phía trước. ㅏ → ㅑ (ya), ㅓ → ㅕ (yơ), ㅗ → ㅛ (yô), ㅜ → ㅠ (yu), và hai nguyên âm mới của bài này ㅐ → ㅒ, ㅔ → ㅖ.
+  - type: explain
+    text:
+      vi: Trong tiếng Seoul hiện nay, ㅐ ("e") và ㅔ ("ê") đọc gần như giống nhau, nên ㅒ và ㅖ cũng nghe gần như một - gần "yê" trong "yên". Vì vậy 개 (con chó) và 게 (con cua) gần như đồng âm; người Hàn phân biệt nhờ ngữ cảnh, còn khi viết thì phải đúng chữ.
+  - type: deep_explain
+    text:
+      vi: Hai cặp người Việt hay nhầm là ㅕ/ㅛ và ㅓ/ㅕ. ㅕ là "yơ" - miệng mở, môi không tròn; ㅛ là "yô" - môi tròn, hai nét ngắn chĩa lên trên. Ngoài ra, ㅖ đứng sau phụ âm thường được đọc như ㅔ - 시계 nghe như [시게] - nhưng 예 (vâng) vẫn đọc rõ "yê".
+  - type: example
+    target: 여자
+    target_lang: ko
+    translation:
+      vi: phụ nữ, con gái
+    note:
+      vi: 여 = ㅇ câm + ㅕ, đọc "yơ" với môi không tròn.
+  - type: example
+    target: 요리
+    target_lang: ko
+    translation:
+      vi: món ăn; nấu ăn
+    note:
+      vi: 요 = ㅇ câm + ㅛ, đọc "yô" với môi tròn.
+  - type: example
+    target: 얘기
+    target_lang: ko
+    translation:
+      vi: câu chuyện
+    note:
+      vi: 얘 dùng ㅒ (thêm nét vào ㅐ), đọc gần "yê".
+  - type: example
+    target: 시계
+    target_lang: ko
+    translation:
+      vi: đồng hồ
+    note:
+      vi: 계 = ㄱ + ㅖ; người Seoul thường đọc [시게].
+  - type: common_mistake
+    wrong: 요자
+    right: 여자
+    target_lang: ko
+    note:
+      vi: Phụ nữ là 여자 với ㅕ ("yơ", môi không tròn). Người Việt hay tròn môi thành "yô" (ㅛ) vì quen âm "yo".
+  - type: common_mistake
+    wrong: 시게
+    right: 시계
+    target_lang: ko
+    note:
+      vi: Bạn nghe [시게] nhưng chữ viết vẫn là 시계 với ㅖ. Đừng viết theo tai nghe - hãy nhớ mặt chữ của từ.
+  - type: common_mistake
+    wrong: 어자
+    right: 여자
+    target_lang: ko
+    note:
+      vi: Thiếu một nét ngắn là mất âm "y" - 어 là "ơ", 여 là "yơ".
+  - type: summary
+    points:
+      - vi: Thêm một nét để có âm "y" - ㅑ ㅕ ㅛ ㅠ ㅒ ㅖ.
+      - vi: ㅕ "yơ" (môi không tròn) khác ㅛ "yô" (môi tròn).
+      - vi: ㅐ/ㅔ và ㅒ/ㅖ gần như đọc giống nhau ở Seoul; bạn học thuộc cách viết theo từ.
+      - vi: ㅖ sau phụ âm thường đọc như ㅔ - 시계 [시게].
+      - vi: 여자 phụ nữ · 야구 bóng chày · 요리 món ăn · 얘기 câu chuyện · 시계 đồng hồ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:y-vowels-which-yeo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:y-vowels
+    prompt:
+      stem: Nguyên âm nào đọc là "yơ" (môi không tròn)?
+      stem_lang: vi
+      options:
+        - { id: p3k, text: ㅛ, lang: ko }
+        - { id: w8d, text: ㅕ, lang: ko }
+        - { id: a5m, text: ㅓ, lang: ko }
+        - { id: z1q, text: ㅑ, lang: ko }
+    answer:
+      correct_option_id: w8d
+    explanation:
+      vi: ㅕ là ㅓ ("ơ") thêm một nét, nên đọc "yơ". ㅛ là "yô" (môi tròn), ㅓ chưa có âm "y", ㅑ là "ya".
+    display_answer: ㅕ
+
+  - key: ko:exercise:y-vowels-listen-yeoja
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:yeoja
+    prompt:
+      audio_asset_id: null
+      fallback_text: 여자
+      options:
+        - { id: h4t, text: phụ nữ, lang: vi }
+        - { id: c9e, text: bóng chày, lang: vi }
+        - { id: r2u, text: món ăn, lang: vi }
+        - { id: m7s, text: sữa, lang: vi }
+    answer:
+      correct_option_id: h4t
+    explanation:
+      vi: 여자 (yơ-ja) nghĩa là phụ nữ. Bóng chày là 야구, món ăn là 요리, sữa là 우유.
+    display_answer: phụ nữ
+
+  - key: ko:exercise:y-vowels-ae-e-merge
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:vowel-ae
+    prompt:
+      stem: Trong tiếng Seoul hiện nay, 개 (con chó) và 게 (con cua) khi nói khác nhau thế nào?
+      stem_lang: vi
+      options:
+        - { id: n6b, text: Gần như giống nhau; người nghe phân biệt nhờ ngữ cảnh, lang: vi }
+        - { id: f2x, text: 개 phải tròn môi còn 게 thì không, lang: vi }
+        - { id: j5o, text: 게 có luồng hơi bật mạnh còn 개 thì không, lang: vi }
+        - { id: u3r, text: 개 có âm "y" phía trước còn 게 thì không, lang: vi }
+    answer:
+      correct_option_id: n6b
+    explanation:
+      vi: ㅐ và ㅔ ngày nay gần như đã nhập làm một trong tiếng Seoul, nên 개 và 게 nghe gần giống nhau. Cả hai không tròn môi, không có âm "y" và không bật hơi - khác biệt chỉ còn ở chữ viết.
+    display_answer: Gần như giống nhau; người nghe phân biệt nhờ ngữ cảnh
+
+  - key: ko:exercise:y-vowels-fill-sigye
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:sigye
+    prompt:
+      template: "Đồng hồ - 시{{b1}}"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Người Seoul đọc [시게], nhưng chữ viết dùng nguyên âm "yê".
+        - Âm tiết thứ hai là ㄱ + ㅖ.
+    answer:
+      blanks:
+        b1: [계]
+    known_wrong:
+      - answer: 게
+        feedback_vi: Bạn viết theo tai nghe rồi. 시계 đọc [시게] nhưng viết với ㅖ.
+        error_tag: vowel_ye_e
+      - answer: 개
+        feedback_vi: Đồng hồ là 시계 với ㅖ; ㅐ ở đây là sai chính tả.
+        error_tag: vowel_ae_e
+      - answer: 걔
+        feedback_vi: Gần đúng về âm, nhưng đồng hồ viết với ㅖ (thêm nét vào ㅔ), không phải ㅒ.
+        error_tag: vowel_yae_ye
+    explanation:
+      vi: 시계 = 시 + 계 (ㄱ + ㅖ). ㅖ sau phụ âm thường đọc như ㅔ nên bạn nghe [시게], nhưng chính tả vẫn giữ ㅖ.
+    display_answer: 시계
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:y-vowels-write-yeoja
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:yeoja
+    prompt:
+      source_text: phụ nữ
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 여자
+    known_wrong:
+      - answer: 요자
+        feedback_vi: 요 là "yô" (môi tròn). Phụ nữ là 여자 với ㅕ ("yơ").
+        error_tag: vowel_yeo_yo
+      - answer: 어자
+        feedback_vi: Thiếu âm "y" - cần ㅕ (ㅓ thêm một nét), viết là 여자.
+        error_tag: missing_y_stroke
+      - answer: yeoja
+        feedback_vi: Hãy gõ bằng chữ Hangul (여자), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Phụ nữ là 여자 - 여 (ㅇ câm + ㅕ "yơ") rồi 자 (ㅈ + ㅏ).
+    display_answer: 여자
+
+  - key: ko:exercise:y-vowels-fill-words
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:yagu
+    prompt:
+      template: "Bóng chày - {{b1}}구. Món ăn - {{b2}}리."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [야]
+        b2: [요]
+    known_wrong:
+      - answer: 아
+        feedback_vi: Thiếu âm "y" - bóng chày là 야구 với ㅑ ("ya").
+        error_tag: missing_y_stroke
+      - answer: 여
+        feedback_vi: 여 là "yơ" (môi không tròn). Món ăn là 요리 với ㅛ ("yô").
+        error_tag: vowel_yeo_yo
+      - answer: 오
+        feedback_vi: Thiếu âm "y" - món ăn là 요리 với ㅛ, không phải ㅗ.
+        error_tag: missing_y_stroke
+    explanation:
+      vi: 야구 bắt đầu bằng "ya" (ㅑ), 요리 bắt đầu bằng "yô" (ㅛ). Cả hai đều cần ㅇ câm phía trước vì không có phụ âm đầu.
+    display_answer: 야구, 요리
+
+  - key: ko:exercise:y-vowels-write-yaegi
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:yaegi
+    prompt:
+      source_text: câu chuyện
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 얘기
+        - 이야기
+    known_wrong:
+      - answer: 예기
+        feedback_vi: Nghe gần giống, nhưng "câu chuyện" viết với ㅒ - 얘기 (rút gọn của 이야기).
+        error_tag: vowel_yae_ye
+      - answer: 애기
+        feedback_vi: 애기 là cách nói "em bé"; câu chuyện cần âm "y" - 얘기.
+        error_tag: missing_y_stroke
+      - answer: yaegi
+        feedback_vi: Hãy gõ bằng chữ Hangul (얘기), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: 얘기 là dạng rút gọn của 이야기 - 이 + 야 nhập lại thành 얘, nên dùng ㅒ chứ không dùng ㅖ.
+    display_answer: 얘기
+
+  # ---------------- application ----------------
+  - key: ko:exercise:y-vowels-build-yeoja
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:yeoja
+    prompt:
+      instruction: Ghép các chữ cái thành từ có nghĩa "phụ nữ".
+      tokens:
+        - { id: q5, text: ㅈ }
+        - { id: q2, text: ㅛ }
+        - { id: q8, text: ㅏ }
+        - { id: q1, text: ㅇ }
+        - { id: q6, text: ㅓ }
+        - { id: q3, text: ㅕ }
+    answer:
+      orders:
+        - [q1, q3, q5, q8]
+    explanation:
+      vi: '여자 = (ㅇ + ㅕ) + (ㅈ + ㅏ). Cần ㅕ "yơ" có âm "y"; ㅛ là "yô", ㅓ là "ơ" chưa có "y".'
+    display_answer: 여자
+
+  - key: ko:exercise:y-vowels-meaning-yori
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:yori
+    prompt:
+      source_text: 요리예요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đây là món ăn.
+        - Đó là món ăn.
+        - Đây là một món ăn.
+        - Món ăn đấy.
+        - Là món ăn.
+        - Đây là đồ ăn.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: 요리 là món ăn (hoặc việc nấu ăn), 예요 nghĩa là "là". 요리 kết thúc bằng nguyên âm nên đi với 예요.
+    display_answer: Đây là món ăn.
+
+  - key: ko:exercise:y-vowels-spell-sigye
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:sigye
+    prompt:
+      stem: Người bạn Hàn nói [시게] khi chỉ vào cái đồng hồ. Bạn viết từ này thế nào?
+      stem_lang: vi
+      options:
+        - { id: k6y, text: 시계, lang: ko }
+        - { id: d3w, text: 시게, lang: ko }
+        - { id: s8n, text: 시개, lang: ko }
+        - { id: e1h, text: 씨계, lang: ko }
+    answer:
+      correct_option_id: k6y
+    explanation:
+      vi: Chính tả là 시계 với ㅖ; [시게] chỉ là cách đọc vì ㅖ sau phụ âm thường nghe như ㅔ. 씨계 sai vì ㅅ ở đây là phụ âm thường, không phải ㅆ căng.
+    display_answer: 시계

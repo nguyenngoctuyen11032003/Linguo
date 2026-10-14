@@ -1,0 +1,396 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:object-eseo
+order_index: 4
+level: topik1
+title:
+  vi: Tôi đọc sách ở thư viện - 을/를, 에서 và trật tự câu
+objectives:
+  - vi: Đặt câu theo trật tự chủ ngữ - tân ngữ - động từ (SOV), khác với tiếng Việt.
+  - vi: Chọn đúng 을 hoặc 를 theo patchim của tân ngữ.
+  - vi: Phân biệt 에서 (nơi làm việc gì) với 에 (nơi đi tới, nơi ở).
+estimated_minutes: 15
+skills: [grammar, vocabulary, writing, reading]
+prerequisites: [ko:lesson:present-tense]
+items:
+  - item: ko:item:gram-sov
+  - item: ko:item:gram-eul-reul
+  - item: ko:item:gram-eseo
+  - item: ko:item:verb-ikda
+  - item: ko:item:verb-sseuda
+  - item: ko:item:verb-mannada
+  - item: ko:item:noun-chaek
+  - item: ko:item:verb-meokda
+    role: reuse
+  - item: ko:item:verb-boda
+    role: reuse
+  - item: ko:item:verb-gongbuhada
+    role: reuse
+  - item: ko:item:verb-ilhada
+    role: reuse
+  - item: ko:item:gram-e-destination
+    role: reuse
+  - item: ko:item:place-doseogwan
+    role: reuse
+  - item: ko:item:place-hoesa
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được những câu đầy đủ như "Tôi đọc sách ở thư viện", "Tôi gặp bạn" với đúng trật tự và trợ từ tiếng Hàn.
+  - type: explain
+    text:
+      vi: Tiếng Việt nói "Tôi ăn cơm" - động từ đứng giữa. Tiếng Hàn luôn đặt động từ ở cuối - 저는 밥을 먹어요, tức "tôi cơm ăn".
+  - type: explain
+    text:
+      vi: Tân ngữ (cái bị ăn, đọc, xem, người được gặp) đi với 을 hoặc 를. Danh từ có patchim dùng 을 - 책을, 밥을; không có patchim dùng 를 - 영화를, 친구를.
+  - type: explain
+    text:
+      vi: Tiếng Việt dùng "ở" cho mọi nơi chốn, nhưng tiếng Hàn tách làm hai. Nơi bạn làm một việc gì đó dùng 에서 - 도서관에서 공부해요; nơi bạn đi tới hoặc đang có mặt dùng 에 - 도서관에 가요, 도서관에 있어요.
+  - type: deep_explain
+    text:
+      vi: Nhờ trợ từ đánh dấu vai trò, các cụm trước động từ có thể đổi chỗ - 저는 도서관에서 책을 읽어요 và 저는 책을 도서관에서 읽어요 đều đúng, chỉ có động từ phải ở cuối. Thứ tự thường gặp nhất là người - nơi chốn - tân ngữ - động từ. Một mẹo nhỏ là hỏi "làm gì ở đó?" - nếu có hành động (học, ăn, làm việc) thì dùng 에서; nếu chỉ đi tới hoặc có mặt thì dùng 에.
+  - type: example
+    target: 저는 책을 읽어요.
+    target_lang: ko
+    translation:
+      vi: Tôi đọc sách.
+    note:
+      vi: 책 có patchim ㄱ nên dùng 을; 읽어요 đứng cuối câu.
+  - type: example
+    target: 도서관에서 공부해요.
+    target_lang: ko
+    translation:
+      vi: Tôi học ở thư viện.
+    note:
+      vi: Học là hành động diễn ra ở thư viện, nên dùng 에서.
+  - type: example
+    target: 도서관에 가요.
+    target_lang: ko
+    translation:
+      vi: Tôi đi thư viện.
+    note:
+      vi: Thư viện là nơi đi tới, nên dùng 에.
+  - type: example
+    target: 친구를 만나요.
+    target_lang: ko
+    translation:
+      vi: Tôi gặp bạn.
+    note:
+      vi: 구 không có patchim nên dùng 를. Người được gặp là tân ngữ của 만나요.
+  - type: example
+    target: 집에서 편지를 써요.
+    target_lang: ko
+    translation:
+      vi: Tôi viết thư ở nhà.
+    note:
+      vi: 쓰 + 어요 → 써요 (ㅡ rơi mất).
+  - type: common_mistake
+    wrong: 저는 먹어요 밥을.
+    right: 저는 밥을 먹어요.
+    target_lang: ko
+    note:
+      vi: Giữ thứ tự tiếng Việt "ăn cơm" là lỗi phổ biến nhất của người Việt. Động từ tiếng Hàn luôn đứng cuối câu.
+  - type: common_mistake
+    wrong: 도서관에 공부해요.
+    right: 도서관에서 공부해요.
+    target_lang: ko
+    note:
+      vi: Cả hai đều dịch là "ở thư viện", nhưng học là một hành động diễn ra tại đó, nên cần 에서.
+  - type: common_mistake
+    wrong: 책를 읽어요.
+    right: 책을 읽어요.
+    target_lang: ko
+    note:
+      vi: Chọn 을/를 theo chữ cuối của danh từ - 책 có patchim ㄱ nên dùng 을.
+  - type: common_mistake
+    wrong: 친구가 만나요.
+    right: 친구를 만나요.
+    target_lang: ko
+    note:
+      vi: 친구가 만나요 nghĩa là "bạn tôi gặp (ai đó)". Người mà bạn gặp phải đi với 을/를.
+  - type: summary
+    points:
+      - vi: Trật tự S - O - V, động từ luôn đứng cuối - 저는 책을 읽어요.
+      - vi: Tân ngữ có patchim + 을 (책을, 밥을); không có patchim + 를 (영화를, 친구를).
+      - vi: 에서 = nơi làm việc gì (도서관에서 공부해요); 에 = nơi đi tới, nơi có mặt (도서관에 가요, 집에 있어요).
+      - vi: 읽다 đọc → 읽어요 · 쓰다 viết → 써요 · 만나다 gặp → 만나요 · 책 sách.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:dl-obj-mcq-book-particle
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:gram-eul-reul
+    prompt:
+      stem: "Chọn trợ từ đúng cho chỗ trống: 책___ 읽어요."
+      stem_lang: vi
+      options:
+        - { id: s4q, text: 을, lang: ko }
+        - { id: y8c, text: 를, lang: ko }
+        - { id: l2h, text: 이, lang: ko }
+        - { id: p6u, text: 에서, lang: ko }
+    answer:
+      correct_option_id: s4q
+    explanation:
+      vi: 책 là thứ được đọc (tân ngữ) và có patchim ㄱ, nên dùng 을. 를 chỉ dùng sau danh từ không có patchim; 이 đánh dấu chủ ngữ, 에서 chỉ nơi chốn.
+    display_answer: 을
+
+  - key: ko:exercise:dl-obj-mcq-study-library
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eseo
+    prompt:
+      stem: Câu nào nghĩa là "Tôi học ở thư viện"?
+      stem_lang: vi
+      options:
+        - { id: v3n, text: 도서관에서 공부해요., lang: ko }
+        - { id: k9z, text: 도서관에 공부해요., lang: ko }
+        - { id: a7f, text: 공부해요 도서관에서., lang: ko }
+        - { id: i1x, text: 도서관을 공부해요., lang: ko }
+    answer:
+      correct_option_id: v3n
+    explanation:
+      vi: Học là hành động diễn ra ở thư viện nên dùng 에서, và động từ đứng cuối câu. 에 dùng cho nơi đi tới; 도서관을 biến thư viện thành thứ được học.
+    display_answer: 도서관에서 공부해요.
+
+  - key: ko:exercise:dl-obj-listen-work-company
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-eseo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 저는 회사에서 일해요.
+      options:
+        - { id: m5d, text: Tôi làm việc ở công ty., lang: vi }
+        - { id: b9j, text: Tôi đi đến công ty., lang: vi }
+        - { id: w2s, text: Tôi không làm việc ở công ty., lang: vi }
+        - { id: h7g, text: Tôi ở công ty., lang: vi }
+    answer:
+      correct_option_id: m5d
+    explanation:
+      vi: 회사에서 là "ở công ty" với hành động, 일해요 là "làm việc". "Đi đến công ty" là 회사에 가요, "ở công ty" (chỉ có mặt) là 회사에 있어요, và câu không có 안.
+    display_answer: Tôi làm việc ở công ty.
+
+  - key: ko:exercise:dl-obj-fill-eul-reul-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eul-reul
+    prompt:
+      template: "영화{{b1}} 봐요. 신문{{b2}} 읽어요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Tôi xem phim. Tôi đọc báo."
+        - "Gợi ý: 화 không có patchim; 문 có patchim ㄴ."
+    answer:
+      blanks:
+        b1: [를]
+        b2: [을]
+    known_wrong:
+      - answer: 이
+        feedback_vi: 이/가 đánh dấu chủ ngữ. Thứ được xem, được đọc cần 을/를.
+        error_tag: particle_eul_reul
+      - answer: 가
+        feedback_vi: 이/가 đánh dấu chủ ngữ. Thứ được xem, được đọc cần 을/를.
+        error_tag: particle_eul_reul
+      - answer: 에
+        feedback_vi: 에 chỉ nơi chốn. Thứ được xem, được đọc cần 을/를.
+        error_tag: particle_eul_reul
+    explanation:
+      vi: 영화 kết thúc bằng 화 (không có patchim) nên dùng 를. 신문 kết thúc bằng patchim ㄴ nên dùng 을.
+    display_answer: 영화를 봐요. 신문을 읽어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:dl-obj-fill-eseo
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eseo
+    prompt:
+      template: "Tôi học ở thư viện. - 저는 도서관{{b1}} 공부해요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [에서]
+    known_wrong:
+      - answer: 에
+        feedback_vi: 에 dùng cho nơi đi tới hoặc có mặt. Học là hành động ở thư viện nên cần 에서.
+        error_tag: particle_e_eseo
+      - answer: 을
+        feedback_vi: Thư viện không phải thứ được học. Nơi diễn ra hành động dùng 에서.
+        error_tag: particle_e_eseo
+      - answer: 이
+        feedback_vi: Thư viện không phải chủ ngữ. Nơi diễn ra hành động dùng 에서.
+        error_tag: particle_e_eseo
+    explanation:
+      vi: 공부해요 là một hành động diễn ra tại thư viện, nên nơi chốn đi với 에서. Nếu câu là "đi thư viện" thì mới dùng 에.
+    display_answer: 저는 도서관에서 공부해요.
+
+  - key: ko:exercise:dl-obj-translate-meet-friend
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:verb-mannada
+    prompt:
+      source_text: Tôi gặp bạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 친구를 만나요.
+        - 저는 친구를 만나요.
+        - 전 친구를 만나요.
+        - 친구하고 만나요.
+        - 저는 친구하고 만나요.
+        - 친구와 만나요.
+    known_wrong:
+      - answer: 저는 친구가 만나요.
+        feedback_vi: 친구가 biến bạn thành người đi gặp. Người được gặp dùng 를 - 친구를 만나요.
+        error_tag: particle_eul_reul
+      - answer: 저는 만나요 친구를.
+        feedback_vi: Động từ luôn đứng cuối câu - 저는 친구를 만나요.
+        error_tag: word_order
+      - answer: 저는 친구을 만나요.
+        feedback_vi: 구 không có patchim nên dùng 를 - 친구를.
+        error_tag: particle_eul_reul
+      - answer: 저는 친구를 만나다.
+        feedback_vi: 만나다 là dạng từ điển. Khi nói hãy dùng 만나요.
+        error_tag: dictionary_form
+    explanation:
+      vi: Từ "bạn" là 친구; người được gặp là tân ngữ nên thêm 를 (구 không có patchim). 만나 kết thúc bằng ㅏ nên chỉ thêm 요, động từ đứng cuối.
+    display_answer: 저는 친구를 만나요.
+
+  - key: ko:exercise:dl-obj-translate-read-book
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:verb-ikda
+    prompt:
+      source_text: Tôi đọc sách.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 책을 읽어요.
+        - 저는 책을 읽어요.
+        - 전 책을 읽어요.
+        - 책 읽어요.
+    known_wrong:
+      - answer: 저는 읽어요 책을.
+        feedback_vi: Động từ luôn đứng cuối - 저는 책을 읽어요.
+        error_tag: word_order
+      - answer: 저는 책를 읽어요.
+        feedback_vi: 책 có patchim ㄱ nên dùng 을 - 책을.
+        error_tag: particle_eul_reul
+      - answer: 저는 책을 읽다.
+        feedback_vi: 읽다 là dạng từ điển. Khi nói hãy dùng 읽어요.
+        error_tag: dictionary_form
+      - answer: 저는 책을 익어요.
+        feedback_vi: Viết là 읽어요 (patchim ㄺ), dù nghe gần [일거요]. 익어요 là "chín".
+        error_tag: spelling
+      - answer: jeoneun chaegeul ilgeoyo
+        feedback_vi: Hãy gõ bằng chữ Hangul (저는 책을 읽어요), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Sách là 책, có patchim nên thêm 을; động từ 읽어요 đứng cuối câu. Khi nói thân mật có thể bỏ trợ từ - 책 읽어요.
+    display_answer: 저는 책을 읽어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:dl-obj-order-read-library
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-sov
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi đọc sách ở thư viện.\""
+      tokens:
+        - { id: t-ilgeo, text: 읽어요 }
+        - { id: t-chaekreul, text: 책를 }
+        - { id: t-chaekeul, text: 책을 }
+        - { id: t-dosegwane, text: 도서관에 }
+        - { id: t-jeoneun, text: 저는 }
+        - { id: t-dosegwaneseo, text: 도서관에서 }
+    answer:
+      orders:
+        - [t-jeoneun, t-dosegwaneseo, t-chaekeul, t-ilgeo]
+        - [t-jeoneun, t-chaekeul, t-dosegwaneseo, t-ilgeo]
+        - [t-dosegwaneseo, t-jeoneun, t-chaekeul, t-ilgeo]
+        - [t-dosegwaneseo, t-chaekeul, t-jeoneun, t-ilgeo]
+        - [t-chaekeul, t-jeoneun, t-dosegwaneseo, t-ilgeo]
+        - [t-chaekeul, t-dosegwaneseo, t-jeoneun, t-ilgeo]
+        - [t-dosegwaneseo, t-chaekeul, t-ilgeo]
+        - [t-chaekeul, t-dosegwaneseo, t-ilgeo]
+    explanation:
+      vi: Đọc sách là hành động ở thư viện nên dùng 도서관에서; 책 có patchim nên dùng 책을. Các cụm có trợ từ có thể đổi chỗ (tự nhiên nhất là 저는 도서관에서 책을), nhưng 읽어요 luôn đứng cuối.
+    display_answer: 저는 도서관에서 책을 읽어요.
+
+  - key: ko:exercise:dl-obj-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-eseo
+    prompt:
+      source_text: 저는 회사에서 일해요. 집에서 운동해요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi làm việc ở công ty. Tôi tập thể dục ở nhà.
+        - Tôi làm việc ở công ty, tập thể dục ở nhà.
+        - Tôi làm việc ở công ty và tập thể dục ở nhà.
+        - Tôi làm việc ở công ty còn tập thể dục ở nhà.
+        - Tôi làm việc ở công ty. Ở nhà tôi tập thể dục.
+        - Tôi làm việc tại công ty. Tôi tập thể dục tại nhà.
+        - Tôi làm ở công ty. Tôi tập thể dục ở nhà.
+        - Tôi làm việc ở công ty. Tôi tập thể dục ở nhà mình.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đi đến công ty. Tôi tập thể dục ở nhà.
+        feedback_vi: 회사에서 일해요 là "làm việc ở công ty". "Đi đến công ty" sẽ là 회사에 가요.
+        error_tag: particle_e_eseo
+      - answer: Tôi làm việc ở nhà. Tôi tập thể dục ở công ty.
+        feedback_vi: Bạn đảo hai nơi rồi - 회사 là công ty, 집 là nhà.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 회사에서 일해요 là "làm việc ở công ty", 집에서 운동해요 là "tập thể dục ở nhà". 에서 cho biết hành động diễn ra ở đâu, tiếng Việt dịch là "ở" hoặc "tại".
+    display_answer: Tôi làm việc ở công ty. Tôi tập thể dục ở nhà.
+
+  - key: ko:exercise:dl-obj-mcq-write-letter
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:verb-sseuda
+    prompt:
+      stem: Bạn muốn nói "Tôi viết thư ở nhà" (thư = 편지). Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: c2t, text: 집에서 편지를 써요., lang: ko }
+        - { id: r8b, text: 집에 편지를 써요., lang: ko }
+        - { id: n4w, text: 집에서 편지를 쓰어요., lang: ko }
+        - { id: f6p, text: 집에서 써요 편지를., lang: ko }
+    answer:
+      correct_option_id: c2t
+    explanation:
+      vi: Viết là hành động ở nhà nên dùng 에서; 지 không có patchim nên dùng 를; 쓰 + 어요 gộp thành 써요 vì ㅡ rơi mất. Các phương án khác sai trợ từ, chưa gộp nguyên âm hoặc đặt động từ giữa câu.
+    display_answer: 집에서 편지를 써요.

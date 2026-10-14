@@ -1,0 +1,369 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:have-got
+order_index: 3
+level: a1
+title:
+  vi: Tôi có hai chị gái
+objectives:
+  - vi: Nói mình có những ai trong gia đình bằng have/has và have got/has got.
+  - vi: Hỏi và trả lời Have you got any brothers or sisters? - Yes, I have. / No, I haven't.
+  - vi: Dùng đúng số nhiều child → children và nói "con một" bằng an only child.
+estimated_minutes: 12
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:whose-family]
+items:
+  - item: en:item:have-has
+  - item: en:item:have-got
+  - item: en:item:child
+  - item: en:item:baby
+  - item: en:item:husband
+  - item: en:item:wife
+  - item: en:item:only-child
+  - item: en:item:twin
+  - item: en:item:brother
+    role: reuse
+  - item: en:item:sister
+    role: reuse
+  - item: en:item:older-younger
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được gia đình mình có bao nhiêu người - "Tôi có hai chị gái và một em trai" - và hỏi lại người khác.
+  - type: explain
+    text:
+      vi: Để nói "có" (sở hữu, có người thân), tiếng Anh dùng have. I, you, we, they đi với have; he, she và một người cụ thể (Lan, my mother) đi với has - She has a brother.
+  - type: explain
+    text:
+      vi: Trong văn nói, nhất là tiếng Anh-Anh, người ta hay dùng have got/has got với cùng nghĩa, thường rút gọn - I've got two sisters, She's got a son. She's got ở đây là She has got, không phải She is.
+  - type: explain
+    text:
+      vi: "Với have got, câu hỏi đưa have/has lên đầu và phủ định thêm not: Have you got a brother? - Yes, I have. / No, I haven't. Với have không có got, bạn dùng do/does: Do you have a brother? - Yes, I do."
+  - type: deep_explain
+    text:
+      vi: "Hỏi về người thân nói chung, người ta dùng any và danh từ số nhiều - Have you got any brothers or sisters? Đừng trộn hai mẫu câu thành \"Do you have got…?\". Một số danh từ có số nhiều bất quy tắc: child → children, wife → wives; baby → babies. Tiếng Việt nói \"tôi có hai chị gái\" không đổi chữ nào, còn tiếng Anh phải thêm -s - two sisters."
+  - type: example
+    target: I've got two sisters and a younger brother.
+    target_lang: en
+    translation:
+      vi: Tôi có hai chị em gái và một em trai.
+    note:
+      vi: I've got = I have got. Hai người thì thêm -s - sisters.
+  - type: example
+    target: My aunt has three children.
+    target_lang: en
+    translation:
+      vi: Dì tôi có ba người con.
+    note:
+      vi: My aunt là một người (giống she) nên dùng has. Children là số nhiều của child.
+  - type: example
+    target: "A: Have you got any brothers or sisters? B: No, I haven't. I'm an only child."
+    target_lang: en
+    translation:
+      vi: "A: Bạn có anh chị em không? B: Không. Mình là con một."
+    note:
+      vi: Câu trả lời ngắn lặp lại have - Yes, I have / No, I haven't - không lặp lại got.
+  - type: example
+    target: He's got a wife and a baby son.
+    target_lang: en
+    translation:
+      vi: Anh ấy có vợ và một bé trai.
+  - type: common_mistake
+    wrong: She have a brother.
+    right: She has a brother.
+    target_lang: en
+    note:
+      vi: Tiếng Việt "có" không đổi theo chủ ngữ, nhưng tiếng Anh dùng has với he, she và một người cụ thể.
+  - type: common_mistake
+    wrong: I have two sister.
+    right: I have two sisters.
+    target_lang: en
+    note:
+      vi: Tiếng Việt không có số nhiều ("hai chị gái"), nên người Việt hay quên -s. Từ hai trở lên phải thêm -s.
+  - type: common_mistake
+    wrong: Do you have got any children?
+    right: Have you got any children?
+    target_lang: en
+    note:
+      vi: Have got không đi với do. Bạn chọn một trong hai - Have you got…? hoặc Do you have…?
+  - type: summary
+    points:
+      - vi: I/you/we/they have · he/she/Lan has.
+      - vi: I've got = I have got; she's got = she has got.
+      - vi: "Hỏi: Have you got…? / Do you have…? - không trộn thành Do you have got…?"
+      - vi: "Trả lời ngắn: Yes, I have. / No, I haven't."
+      - vi: Từ hai trở lên thêm -s (two sisters); child → children.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:have-got-mcq-has
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:have-has
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: My mother ___ a sister."
+      stem_lang: vi
+      options:
+        - { id: l2v, text: has, lang: en }
+        - { id: d8o, text: have, lang: en }
+        - { id: u5k, text: is, lang: en }
+        - { id: m3y, text: are, lang: en }
+    answer:
+      correct_option_id: l2v
+    explanation:
+      vi: My mother là một người (giống she) nên dùng has. Is/are là "là", không mang nghĩa "có".
+    display_answer: has
+
+  - key: en:exercise:have-got-listen-sisters
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:have-got
+    prompt:
+      audio_asset_id: null
+      fallback_text: I've got two sisters.
+      options:
+        - { id: p7h, text: Tôi có hai chị em gái., lang: vi }
+        - { id: a4s, text: Tôi có hai anh em trai., lang: vi }
+        - { id: r9x, text: Cô ấy có hai chị em gái., lang: vi }
+        - { id: x1f, text: Tôi là chị gái., lang: vi }
+    answer:
+      correct_option_id: p7h
+    explanation:
+      vi: I've got là I have got - "tôi có". Sisters là chị em gái; anh em trai là brothers, "cô ấy có" là she's got.
+    display_answer: Tôi có hai chị em gái.
+
+  - key: en:exercise:have-got-mcq-children
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:child
+    prompt:
+      stem: "Số nhiều của child là gì? (They have three ___.)"
+      stem_lang: vi
+      options:
+        - { id: o6t, text: childs, lang: en }
+        - { id: k1w, text: children, lang: en }
+        - { id: e3j, text: childrens, lang: en }
+        - { id: y8q, text: childes, lang: en }
+    answer:
+      correct_option_id: k1w
+    explanation:
+      vi: Child có số nhiều bất quy tắc là children, không thêm -s. Children đã là số nhiều nên cũng không thêm -s nữa.
+    display_answer: children
+
+  - key: en:exercise:have-got-fill-hasnt-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:have-got
+    prompt:
+      template: "A: Has he {{b1}} any children? B: No, he {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa: A: Anh ấy có con chưa? B: Chưa, anh ấy chưa có."
+        - "Gợi ý: câu hỏi dùng has … got; câu trả lời ngắn là has + not, viết gọn."
+    answer:
+      blanks:
+        b1: [got]
+        b2: [hasn't, has not]
+    known_wrong:
+      - answer: haven't
+        feedback_vi: He đi với has, nên câu trả lời là No, he hasn't.
+        error_tag: have_has
+      - answer: doesn't
+        feedback_vi: Câu hỏi dùng Has he got…? nên câu trả lời lặp lại has - No, he hasn't.
+        error_tag: have_got_do
+      - answer: isn't
+        feedback_vi: Câu hỏi về "có" dùng has, không dùng is - No, he hasn't.
+        error_tag: be_have
+    explanation:
+      vi: Câu hỏi Has he got…? trả lời ngắn bằng has - Yes, he has / No, he hasn't. Không lặp lại got trong câu trả lời ngắn.
+    display_answer: "A: Has he got any children? B: No, he hasn't."
+
+  - key: en:exercise:have-got-order-younger
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:have-got
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Cô ấy có một em trai.\""
+      tokens:
+        - { id: h-brother, text: brother }
+        - { id: h-got, text: got }
+        - { id: h-she, text: She }
+        - { id: h-older, text: older }
+        - { id: h-a, text: a }
+        - { id: h-has, text: has }
+        - { id: h-have, text: have }
+        - { id: h-younger, text: younger }
+    answer:
+      orders:
+        - [h-she, h-has, h-got, h-a, h-younger, h-brother]
+        - [h-she, h-has, h-a, h-younger, h-brother]
+    explanation:
+      vi: She đi với has (có thể thêm got). Em trai là younger brother, younger đứng trước brother.
+    display_answer: She has got a younger brother.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:have-got-fill-have-has
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:have-has
+    prompt:
+      template: "I {{b1}} a husband, and my sister {{b2}} two children."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [have]
+        b2: [has]
+    known_wrong:
+      - answer: am
+        feedback_vi: Nói "có" dùng have/has, không dùng be. I đi với have.
+        error_tag: be_have
+      - answer: is
+        feedback_vi: Nói "có" dùng have/has, không dùng be. My sister đi với has.
+        error_tag: be_have
+    explanation:
+      vi: I đi với have. My sister là một người (giống she) nên đi với has.
+    display_answer: I have a husband, and my sister has two children.
+
+  - key: en:exercise:have-got-translate-only-child
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:only-child
+    prompt:
+      source_text: Tôi là con một.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I am an only child.
+        - I'm an only child.
+        - I haven't got any brothers or sisters.
+        - I don't have any brothers or sisters.
+        - I have no brothers or sisters.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I am a only child.
+        feedback_vi: Only bắt đầu bằng âm nguyên âm, nên dùng an - an only child.
+        error_tag: article
+      - answer: I am only child.
+        feedback_vi: Thiếu an - I am an only child.
+        error_tag: article
+      - answer: I only child.
+        feedback_vi: Thiếu am và an - I am an only child.
+        error_tag: missing_be
+      - answer: I am one child.
+        feedback_vi: Con một là an only child. One child là "một đứa trẻ".
+        error_tag: word_choice
+    explanation:
+      vi: Cụm "con một" là an only child - cần am và an (vì only bắt đầu bằng nguyên âm). Cũng có thể nói mình không có anh chị em nào.
+    display_answer: I am an only child.
+
+  - key: en:exercise:have-got-translate-wife
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:wife
+    prompt:
+      source_text: Anh ấy có vợ và hai con.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - He has a wife and two children.
+        - He has got a wife and two children.
+        - He's got a wife and two children.
+        - He has a wife and two kids.
+        - He's got a wife and two kids.
+        - He has got a wife and two kids.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: He have a wife and two children.
+        feedback_vi: He đi với has - He has a wife and two children.
+        error_tag: have_has
+      - answer: He has a wife and two childs.
+        feedback_vi: Số nhiều của child là children, không thêm -s.
+        error_tag: plural
+      - answer: He has a wife and two child.
+        feedback_vi: Hai người con thì dùng số nhiều children.
+        error_tag: plural
+      - answer: He has wife and two children.
+        feedback_vi: Thiếu a trước wife - a wife.
+        error_tag: article
+      - answer: He is a wife and two children.
+        feedback_vi: Nghĩa "có" dùng has, không phải is.
+        error_tag: be_have
+    explanation:
+      vi: He đi với has (hoặc has got / 's got). Một người vợ cần a; hai người con là two children (số nhiều bất quy tắc).
+    display_answer: He has a wife and two children.
+
+  # ---------------- application ----------------
+  - key: en:exercise:have-got-translate-any-siblings
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:have-got
+    prompt:
+      source_text: Have you got any brothers or sisters?
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bạn có anh chị em không?
+        - Bạn có anh chị em nào không?
+        - Bạn có anh chị em ruột không?
+        - Bạn có anh chị em gì không?
+        - Bạn có anh em hay chị em gì không?
+        - Bạn có anh chị em không vậy?
+        - Bạn có anh chị em nào không vậy?
+        - Bạn có anh em trai hay chị em gái không?
+        - Bạn có anh chị em gì chưa?
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Have you got…? là câu hỏi "Bạn có… không?". Brothers or sisters gộp lại tự nhiên nhất là "anh chị em".
+    display_answer: Bạn có anh chị em không?
+
+  - key: en:exercise:have-got-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:baby
+    prompt:
+      stem: "Bạn có một bé gái. Một đồng nghiệp hỏi: \"Have you got any children?\" Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: q4n, text: "Yes, I have. I've got a baby girl.", lang: en }
+        - { id: c7r, text: "Yes, I am. I've got a baby girl.", lang: en }
+        - { id: v2d, text: "Yes, I do got. I've got a baby girl.", lang: en }
+        - { id: t9e, text: "Yes, I have got. I has a baby girl.", lang: en }
+    answer:
+      correct_option_id: q4n
+    explanation:
+      vi: Câu hỏi Have you got…? trả lời ngắn bằng Yes, I have - không dùng am, do, và không lặp got. Với I thì dùng have/'ve got, không dùng has.
+    display_answer: "Yes, I have. I've got a baby girl."

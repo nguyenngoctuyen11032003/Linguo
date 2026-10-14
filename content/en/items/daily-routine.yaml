@@ -1,0 +1,902 @@
+# Học liệu unit "Sinh hoạt hằng ngày". IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Một ngày của tôi ----------------
+  - key: en:item:get-up
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: get up
+      ipa: /ˌɡet ˈʌp/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: thức dậy, ra khỏi giường
+      examples:
+        - target: I get up early every day.
+          translation:
+            vi: Ngày nào tôi cũng dậy sớm.
+      pronunciation_note:
+        vi: Đọc nối t với u thành "ghe-tắp", nhấn vào up.
+      confusion:
+        vi: Wake up là tỉnh giấc (mở mắt), get up là rời khỏi giường. Bạn có thể wake up lúc 6 giờ nhưng 6 rưỡi mới get up.
+
+  - key: en:item:have-breakfast
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: have breakfast
+      ipa: /ˌhæv ˈbrekfəst/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: ăn sáng
+      examples:
+        - target: We have breakfast at home.
+          translation:
+            vi: Chúng tôi ăn sáng ở nhà.
+      pronunciation_note:
+        vi: Breakfast đọc là "brếc-phất", không đọc "brếc-phát" theo chữ a. Chữ ea ở đây đọc /e/.
+      confusion:
+        vi: Tiếng Anh nói have breakfast, không có a hay the - không nói "have a breakfast" hay "eat the breakfast" trong câu thông thường.
+
+  - key: en:item:go-to-work
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: go to work
+      ipa: UK /ˌɡəʊ tə ˈwɜːk/ · US /ˌɡoʊ tə ˈwɝːk/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi làm
+      examples:
+        - target: They go to work by bus.
+          translation:
+            vi: Họ đi làm bằng xe buýt.
+      confusion:
+        vi: Nói go to work, không thêm the hay my - không nói "go to the work". To ở đây đọc nhẹ, gần "tờ".
+
+  - key: en:item:go-to-school
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: go to school
+      ipa: UK /ˌɡəʊ tə ˈskuːl/ · US /ˌɡoʊ tə ˈskuːl/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi học
+      examples:
+        - target: The children go to school in the morning.
+          translation:
+            vi: Bọn trẻ đi học vào buổi sáng.
+      pronunciation_note:
+        vi: School đọc /skuːl/, hai âm s và k dính liền, không chèn "xờ" thành "xờ-cun". Nhớ bật nhẹ âm l ở cuối.
+      confusion:
+        vi: Đi học là go to school, không có the. Go to the school là đến ngôi trường đó vì việc khác, ví dụ đi họp phụ huynh.
+
+  - key: en:item:start
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: start
+      ipa: UK /stɑːt/ · US /stɑːrt/
+      pos: động từ
+    back:
+      meaning:
+        vi: bắt đầu
+      examples:
+        - target: We start work early.
+          translation:
+            vi: Chúng tôi bắt đầu làm việc sớm.
+      pronunciation_note:
+        vi: Âm cuối /t/ phải bật ra nhẹ. Người Việt hay nuốt mất, nghe thành "xta".
+      confusion:
+        vi: Start work (bắt đầu làm việc) khác go to work (đi đến chỗ làm).
+
+  - key: en:item:finish
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: finish
+      ipa: /ˈfɪnɪʃ/
+      pos: động từ
+    back:
+      meaning:
+        vi: kết thúc, xong
+      examples:
+        - target: I finish work late.
+          translation:
+            vi: Tôi tan làm muộn.
+      pronunciation_note:
+        vi: Nhấn âm đầu "FI-nish". Âm cuối /ʃ/ là "sh" (chu môi), không đọc thành "s".
+      confusion:
+        vi: Finish work là tan làm, finish school là tan học (hoặc học xong cấp học).
+
+  - key: en:item:go-home
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: go home
+      ipa: UK /ˌɡəʊ ˈhəʊm/ · US /ˌɡoʊ ˈhoʊm/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: về nhà
+      examples:
+        - target: They go home at night.
+          translation:
+            vi: Buổi tối họ về nhà.
+      confusion:
+        vi: Không có to trước home - nói go home, không nói "go to home". Đây là lỗi rất hay gặp vì người Việt quen nói go to work, go to school.
+
+  - key: en:item:watch-tv
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: watch TV
+      ipa: UK /ˌwɒtʃ ˌtiːˈviː/ · US /ˌwɑːtʃ ˌtiːˈviː/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: xem ti vi
+      examples:
+        - target: I watch TV in the evening.
+          translation:
+            vi: Buổi tối tôi xem ti vi.
+      pronunciation_note:
+        vi: TV đọc theo tên hai chữ cái "ti-vi", nhấn vào vi.
+      confusion:
+        vi: Xem ti vi, phim, bóng đá dùng watch; nhìn thoáng qua thì dùng look at. Không nói "see TV".
+
+  - key: en:item:go-to-bed
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: go to bed
+      ipa: UK /ˌɡəʊ tə ˈbed/ · US /ˌɡoʊ tə ˈbed/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi ngủ (lên giường để ngủ)
+      examples:
+        - target: We go to bed late on weekends.
+          translation:
+            vi: Cuối tuần chúng tôi đi ngủ muộn.
+      confusion:
+        vi: Không có the hay my - nói go to bed, không nói "go to the bed". Go to bed là lên giường đi ngủ, còn sleep là trạng thái đang ngủ.
+
+  - key: en:item:present-simple
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: I / you / we / they + động từ nguyên mẫu
+      pos: thì hiện tại đơn
+    back:
+      meaning:
+        vi: "Nói về thói quen, việc lặp lại hằng ngày: I work, you study, we go, they watch."
+      examples:
+        - target: I get up early.
+          translation:
+            vi: Tôi dậy sớm.
+        - target: They go to school every day.
+          translation:
+            vi: Ngày nào họ cũng đi học.
+      confusion:
+        vi: Câu có động từ thường thì không thêm be - nói I get up, không nói "I am get up". Tiếng Việt không chia động từ nên người Việt hay chèn am cho "đủ câu".
+
+  - key: en:item:every-day
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: every day
+      ipa: /ˌevri ˈdeɪ/
+      pos: cụm trạng từ chỉ thời gian
+    back:
+      meaning:
+        vi: mỗi ngày, hằng ngày
+      examples:
+        - target: I go to work every day.
+          translation:
+            vi: Ngày nào tôi cũng đi làm.
+      pronunciation_note:
+        vi: Every thường đọc hai âm "ÉV-ri", không đọc đủ ba âm "e-vơ-ri".
+      confusion:
+        vi: Every day (hai từ) là "mỗi ngày", thường đặt cuối câu. Everyday (viết liền) là tính từ "thường ngày", như everyday life.
+
+  - key: en:item:in-the-morning
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: in the morning
+      ipa: UK /ɪn ðə ˈmɔːnɪŋ/ · US /ɪn ðə ˈmɔːrnɪŋ/
+      pos: cụm trạng từ chỉ thời gian
+    back:
+      meaning:
+        vi: vào buổi sáng
+      examples:
+        - target: She has breakfast in the morning.
+          translation:
+            vi: Cô ấy ăn sáng vào buổi sáng.
+      confusion:
+        vi: Buổi trong ngày dùng in the - in the morning, in the afternoon, in the evening. Riêng ban đêm là at night, không có the.
+
+  - key: en:item:at-night
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: at night
+      ipa: /ət ˈnaɪt/
+      pos: cụm trạng từ chỉ thời gian
+    back:
+      meaning:
+        vi: vào ban đêm, buổi tối muộn
+      examples:
+        - target: I read at night.
+          translation:
+            vi: Tôi đọc sách vào buổi tối.
+      confusion:
+        vi: Nói at night, không nói "in the night" hay "at the night". Đây là ngoại lệ so với in the morning, in the evening.
+
+  # ---------------- Bài 2: Cô ấy làm việc ----------------
+  - key: en:item:work-verb
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: work
+      ipa: UK /wɜːk/ · US /wɝːk/
+      pos: động từ
+    back:
+      meaning:
+        vi: làm việc
+      examples:
+        - target: She works in a bank.
+          translation:
+            vi: Cô ấy làm việc ở ngân hàng.
+      pronunciation_note:
+        vi: Âm /ɜː/ giống "ơ" kéo dài, môi không tròn. Đừng đọc thành "wok" /wɔːk/ - đó là walk (đi bộ).
+      confusion:
+        vi: Work và walk dễ nhầm khi nghe. Works đọc /wɜːks/, đuôi -s là âm /s/.
+
+  - key: en:item:study
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: study
+      ipa: /ˈstʌdi/
+      pos: động từ
+    back:
+      meaning:
+        vi: học (tự học, học bài, học ở trường)
+      examples:
+        - target: He studies English at night.
+          translation:
+            vi: Buổi tối anh ấy học tiếng Anh.
+      confusion:
+        vi: Với he, she, it, y sau phụ âm đổi thành -ies - studies, không viết "studys".
+
+  - key: en:item:get-dressed
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: get dressed
+      ipa: /ˌɡet ˈdrest/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: mặc quần áo, thay đồ
+      examples:
+        - target: She gets dressed after breakfast.
+          translation:
+            vi: Cô ấy thay đồ sau bữa sáng.
+      pronunciation_note:
+        vi: Dressed chỉ có một âm tiết /drest/, đuôi -ed đọc /t/, không đọc "đrét-xét".
+      confusion:
+        vi: Nói get dressed cho hành động mặc đồ buổi sáng; không nói "wear clothes" cho nghĩa này.
+
+  - key: en:item:take-a-shower
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: take a shower
+      ipa: UK /ˌteɪk ə ˈʃaʊə/ · US /ˌteɪk ə ˈʃaʊɚ/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: tắm (bằng vòi sen)
+      examples:
+        - target: He takes a shower in the morning.
+          translation:
+            vi: Anh ấy tắm vào buổi sáng.
+      confusion:
+        vi: Cần a - take a shower. Người Anh cũng hay nói have a shower; cả hai đều đúng.
+
+  - key: en:item:brush-your-teeth
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: brush your teeth
+      ipa: UK /ˌbrʌʃ jɔː ˈtiːθ/ · US /ˌbrʌʃ jʊr ˈtiːθ/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đánh răng
+      examples:
+        - target: I brush my teeth before bed.
+          translation:
+            vi: Tôi đánh răng trước khi đi ngủ.
+      pronunciation_note:
+        vi: Teeth kết thúc bằng /θ/ - đặt đầu lưỡi giữa hai hàm răng rồi thổi hơi, không đọc thành "tít".
+      confusion:
+        vi: Tiếng Anh cần từ sở hữu đổi theo người - I brush my teeth, she brushes her teeth. Brush có đuôi -sh nên thêm -es.
+
+  - key: en:item:do-homework
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: do homework
+      ipa: UK /ˌduː ˈhəʊmwɜːk/ · US /ˌduː ˈhoʊmwɝːk/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: làm bài tập về nhà
+      examples:
+        - target: My brother does his homework after school.
+          translation:
+            vi: Em trai tôi làm bài tập sau giờ học.
+      confusion:
+        vi: Dùng do, không dùng make - không nói "make homework". Với he, she, do thành does /dʌz/, đọc gần "đâz", không đọc "đu-ét".
+
+  - key: en:item:read
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: read
+      ipa: /riːd/
+      pos: động từ
+    back:
+      meaning:
+        vi: đọc (sách, báo, tin nhắn)
+      examples:
+        - target: She reads the news every morning.
+          translation:
+            vi: Sáng nào cô ấy cũng đọc tin tức.
+      confusion:
+        vi: Reads đọc /riːdz/ - đuôi là âm /z/ vì d là âm hữu thanh.
+
+  - key: en:item:listen-to-music
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: listen to music
+      ipa: /ˌlɪsn tə ˈmjuːzɪk/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: nghe nhạc
+      examples:
+        - target: He listens to music on the bus.
+          translation:
+            vi: Anh ấy nghe nhạc trên xe buýt.
+      pronunciation_note:
+        vi: Chữ t trong listen câm - đọc "LI-sần". Music đọc "MIU-zík".
+      confusion:
+        vi: Listen luôn cần to trước thứ được nghe - listen to music, không nói "listen music".
+
+  - key: en:item:third-person-s
+    type: grammar_point
+    level: a1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: he / she / it + động từ thêm -s / -es / -ies
+      pos: thì hiện tại đơn, ngôi thứ ba số ít
+    back:
+      meaning:
+        vi: "Với he, she, it (hoặc một người, một vật), động từ thêm -s: works; thêm -es sau s, sh, ch, x, o: watches, goes, does; phụ âm + y đổi thành -ies: studies. Have thành has."
+      examples:
+        - target: She works in a hospital.
+          translation:
+            vi: Cô ấy làm việc ở bệnh viện.
+        - target: He watches TV and she studies.
+          translation:
+            vi: Anh ấy xem ti vi còn cô ấy học bài.
+      confusion:
+        vi: Tiếng Việt không đổi động từ theo người nên người Việt rất hay quên -s - nói "She work". Nguyên âm + y chỉ thêm -s - plays, không viết "plaies".
+
+  - key: en:item:s-ending-sounds
+    type: grammar_point
+    level: a1
+    difficulty: 3
+    skill_tags: [grammar, speaking, listening]
+    front:
+      text: "-s / -es: /s/ · /z/ · /ɪz/"
+      ipa: works /wɜːks/ · reads /riːdz/ · watches /ˈwɒtʃɪz/
+      pos: cách đọc đuôi -s
+    back:
+      meaning:
+        vi: "Đuôi -s có ba cách đọc: /s/ sau âm vô thanh p, t, k, f (works, gets); /ɪz/ sau âm s, z, sh, ch, j (watches, brushes); /z/ trong các trường hợp còn lại (reads, goes, studies)."
+      examples:
+        - target: He gets up, brushes his teeth and goes to work.
+          translation:
+            vi: Anh ấy dậy, đánh răng rồi đi làm.
+      pronunciation_note:
+        vi: Chỉ đuôi /ɪz/ thêm một âm tiết - watches đọc "UOT-chiz" (2 âm tiết). Works vẫn chỉ 1 âm tiết, đừng đọc "uớc-xơ".
+      confusion:
+        vi: Người Việt hay nuốt hẳn âm cuối, nên người nghe không biết bạn nói work hay works. Hãy cố bật nhẹ "s" hoặc "z" ở cuối.
+
+  # ---------------- Bài 3: Tôi không… ----------------
+  - key: en:item:dont-doesnt
+    type: grammar_point
+    level: a1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: don't / doesn't + động từ nguyên mẫu
+      ipa: UK /dəʊnt/ · US /doʊnt/ · /ˈdʌznt/
+      pos: phủ định thì hiện tại đơn
+    back:
+      meaning:
+        vi: "Câu phủ định: I/you/we/they + don't (do not) + V; he/she/it + doesn't (does not) + V nguyên mẫu, không thêm -s."
+      examples:
+        - target: I don't watch TV.
+          translation:
+            vi: Tôi không xem ti vi.
+        - target: She doesn't work on weekends.
+          translation:
+            vi: Cuối tuần cô ấy không làm việc.
+      confusion:
+        vi: -s đã nằm ở does, nên động từ phía sau quay về nguyên mẫu - không nói "She doesn't works". Cũng không nói "She don't" hay "I not work".
+
+  - key: en:item:on-weekends
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: on weekends
+      ipa: UK /ɒn ˌwiːkˈendz/ · US /ɑːn ˈwiːkendz/
+      pos: cụm trạng từ chỉ thời gian
+    back:
+      meaning:
+        vi: vào cuối tuần (mỗi cuối tuần)
+      examples:
+        - target: We don't get up early on weekends.
+          translation:
+            vi: Cuối tuần chúng tôi không dậy sớm.
+      pronunciation_note:
+        vi: Người Anh nhấn "week-ENDS", người Mỹ nhấn "WEEK-ends".
+      confusion:
+        vi: On weekends là cách nói Mỹ; người Anh hay nói at the weekend hoặc at weekends. Cả hai đều đúng, nhưng đừng nói "in weekends".
+
+  - key: en:item:early
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: early
+      ipa: UK /ˈɜːli/ · US /ˈɝːli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: sớm
+      examples:
+        - target: My father gets up early.
+          translation:
+            vi: Bố tôi dậy sớm.
+      pronunciation_note:
+        vi: Âm đầu là "ơ" dài (giống work), không đọc "ia-li".
+      confusion:
+        vi: Early thường đứng sau động từ hoặc cuối câu - get up early, không nói "early get up".
+
+  - key: en:item:late
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: late
+      ipa: /leɪt/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: muộn, trễ
+      examples:
+        - target: He doesn't go to bed late.
+          translation:
+            vi: Anh ấy không đi ngủ muộn.
+      confusion:
+        vi: Late (muộn) khác lately (gần đây). Đi ngủ muộn là go to bed late, không phải "go to bed lately".
+
+  - key: en:item:exercise-verb
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: exercise
+      ipa: UK /ˈeksəsaɪz/ · US /ˈeksɚsaɪz/
+      pos: động từ
+    back:
+      meaning:
+        vi: tập thể dục, vận động
+      examples:
+        - target: She exercises in the morning.
+          translation:
+            vi: Cô ấy tập thể dục vào buổi sáng.
+      pronunciation_note:
+        vi: Nhấn âm đầu "ÉC-xơ-xai". Exercises có đuôi /ɪz/ vì kết thúc bằng âm /z/ - đọc "ÉC-xơ-xai-zịz".
+      confusion:
+        vi: Đã có exercise là đủ, không nói "do exercise sport". Có thể nói do exercise, nhưng exercise một mình tự nhiên hơn.
+
+  - key: en:item:take-the-bus
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: take the bus
+      ipa: /ˌteɪk ðə ˈbʌs/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi xe buýt
+      examples:
+        - target: I don't take the bus. I walk.
+          translation:
+            vi: Tôi không đi xe buýt. Tôi đi bộ.
+      confusion:
+        vi: Dùng take, không dùng "go the bus" hay "ride the bus" cho nghĩa thông thường. Cũng có thể nói go by bus (không có the).
+
+  - key: en:item:cook
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: cook
+      ipa: /kʊk/
+      pos: động từ
+    back:
+      meaning:
+        vi: nấu ăn
+      examples:
+        - target: My mother cooks dinner every day.
+          translation:
+            vi: Ngày nào mẹ tôi cũng nấu bữa tối.
+      pronunciation_note:
+        vi: Âm /ʊ/ ngắn, gần "cúc" - không kéo dài thành "cu-uk".
+      confusion:
+        vi: Cook vừa là động từ (nấu ăn) vừa là danh từ (đầu bếp). Cooker là cái bếp, không phải người nấu.
+
+  - key: en:item:sleep
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: sleep
+      ipa: /sliːp/
+      pos: động từ
+    back:
+      meaning:
+        vi: ngủ
+      examples:
+        - target: The baby sleeps a lot.
+          translation:
+            vi: Em bé ngủ nhiều.
+      pronunciation_note:
+        vi: Âm /iː/ kéo dài; nếu đọc ngắn sẽ nghe gần slip (trượt).
+      confusion:
+        vi: Sleep là ngủ, còn go to bed là lên giường đi ngủ. Nói "Tôi đi ngủ lúc 11 giờ" dùng go to bed.
+
+  - key: en:item:relax
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: relax
+      ipa: /rɪˈlæks/
+      pos: động từ
+    back:
+      meaning:
+        vi: nghỉ ngơi, thư giãn
+      examples:
+        - target: We relax on weekends.
+          translation:
+            vi: Cuối tuần chúng tôi nghỉ ngơi.
+      pronunciation_note:
+        vi: Nhấn âm sau "ri-LÉCS". Relaxes thêm -es vì kết thúc bằng x, đọc /ɪz/.
+      confusion:
+        vi: Relax không cần myself trong câu thông thường - nói I relax, không nói "I relax myself".
+
+  - key: en:item:walk-verb
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: walk
+      ipa: UK /wɔːk/ · US /wɔːk/ ~ /wɑːk/
+      pos: động từ
+    back:
+      meaning:
+        vi: đi bộ
+      examples:
+        - target: She doesn't take the bus. She walks to work.
+          translation:
+            vi: Cô ấy không đi xe buýt. Cô ấy đi bộ đi làm.
+      pronunciation_note:
+        vi: Chữ l câm - walk đọc /wɔːk/, gần "uooc". Đừng nhầm với work /wɜːk/ (âm "ơ").
+      confusion:
+        vi: Đi bộ đến đâu dùng walk to - walk to work, walk to school. Riêng nhà vẫn không có to - walk home.
+
+  - key: en:item:play-games
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: play games
+      ipa: /ˌpleɪ ˈɡeɪmz/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: chơi game, chơi trò chơi
+      examples:
+        - target: My son plays games on his phone.
+          translation:
+            vi: Con trai tôi chơi game trên điện thoại.
+      confusion:
+        vi: Play kết thúc bằng nguyên âm + y nên chỉ thêm -s - plays, không viết "plaies". Plays đọc /pleɪz/.
+
+  # ---------------- Bài 4: Bạn có thường…? ----------------
+  - key: en:item:do-does-questions
+    type: grammar_point
+    level: a1
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: Do / Does + chủ ngữ + động từ nguyên mẫu?
+      ipa: do /duː/ (đọc nhẹ /də/) · does /dʌz/
+      pos: câu hỏi thì hiện tại đơn
+    back:
+      meaning:
+        vi: "Câu hỏi Có/Không: Do I/you/we/they + V? Does he/she/it + V? Trả lời ngắn: Yes, I do. / No, she doesn't."
+      examples:
+        - target: "A: Do you work on weekends? B: No, I don't."
+          translation:
+            vi: "A: Cuối tuần bạn có làm việc không? B: Không."
+        - target: "A: Does he cook? B: Yes, he does."
+          translation:
+            vi: "A: Anh ấy có nấu ăn không? B: Có."
+      confusion:
+        vi: Does đã mang -s nên động từ sau quay về nguyên mẫu - Does she work?, không nói "Does she works?" hay "Do she work?". Trả lời ngắn lặp lại do/does, không trả lời "Yes, I work".
+
+  - key: en:item:frequency-adverbs
+    type: grammar_point
+    level: a1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: always · usually · often · sometimes · never
+      pos: trạng từ chỉ tần suất
+    back:
+      meaning:
+        vi: "Nói mức độ thường xuyên. Vị trí: trước động từ thường (I usually get up early), nhưng sau be (She is always late)."
+      examples:
+        - target: I often watch TV at night.
+          translation:
+            vi: Tôi hay xem ti vi vào buổi tối.
+        - target: He is never late.
+          translation:
+            vi: Anh ấy không bao giờ đến muộn.
+      confusion:
+        vi: Người Việt hay đặt trạng từ ở cuối câu như "Tôi đi làm muộn luôn luôn" hoặc đặt sau động từ - không nói "I get up always early". Với be thì đặt sau be - không nói "She always is late".
+
+  - key: en:item:always
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: always
+      ipa: /ˈɔːlweɪz/
+      pos: trạng từ tần suất
+    back:
+      meaning:
+        vi: luôn luôn (100%)
+      examples:
+        - target: She always has breakfast at home.
+          translation:
+            vi: Cô ấy lúc nào cũng ăn sáng ở nhà.
+      pronunciation_note:
+        vi: Nhấn âm đầu "ÔL-uêiz", đuôi là âm /z/.
+
+  - key: en:item:usually
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: usually
+      ipa: /ˈjuːʒuəli/
+      pos: trạng từ tần suất
+    back:
+      meaning:
+        vi: thường, thường thường (khoảng 80-90%)
+      examples:
+        - target: I usually take the bus to work.
+          translation:
+            vi: Tôi thường đi làm bằng xe buýt.
+      pronunciation_note:
+        vi: Âm giữa /ʒ/ giống "giơ" uốn lưỡi nhẹ - đọc "DIU-giu-ơ-li", nhanh thì gần "DIU-giơ-li".
+
+  - key: en:item:often
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: often
+      ipa: UK /ˈɒfn/ · US /ˈɔːfn/
+      pos: trạng từ tần suất
+    back:
+      meaning:
+        vi: hay, thường xuyên (khoảng 60-70%)
+      examples:
+        - target: We often cook at home.
+          translation:
+            vi: Chúng tôi hay nấu ăn ở nhà.
+      pronunciation_note:
+        vi: Chữ t thường câm - "Ó-phần". Một số người đọc có t (/ˈɒftən/); cả hai đều được chấp nhận.
+
+  - key: en:item:sometimes
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: sometimes
+      ipa: /ˈsʌmtaɪmz/
+      pos: trạng từ tần suất
+    back:
+      meaning:
+        vi: thỉnh thoảng, đôi khi (khoảng 30-50%)
+      examples:
+        - target: He sometimes works at night.
+          translation:
+            vi: Thỉnh thoảng anh ấy làm ca đêm.
+      confusion:
+        vi: Sometimes viết liền và có -s. Sometime (không có s) nghĩa là "một lúc nào đó", khác nghĩa. Sometimes cũng có thể đứng đầu câu.
+
+  - key: en:item:never
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: never
+      ipa: UK /ˈnevə/ · US /ˈnevɚ/
+      pos: trạng từ tần suất
+    back:
+      meaning:
+        vi: không bao giờ (0%)
+      examples:
+        - target: I never drink coffee at night.
+          translation:
+            vi: Tôi không bao giờ uống cà phê vào buổi tối.
+      confusion:
+        vi: Never đã mang nghĩa phủ định, nên không dùng thêm don't - nói I never watch TV, không nói "I don't never watch TV". Động từ sau never vẫn chia - She never watches TV.
+
+  - key: en:item:how-often
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: How often…?
+      ipa: UK /haʊ ˈɒfn/ · US /haʊ ˈɔːfn/
+      pos: cụm từ để hỏi
+    back:
+      meaning:
+        vi: Bao lâu một lần…? Có thường… không? (hỏi tần suất)
+      examples:
+        - target: How often do you exercise?
+          translation:
+            vi: Bạn tập thể dục có thường xuyên không?
+      confusion:
+        vi: Sau How often vẫn cần do/does - How often does she cook?, không nói "How often she cooks?".
+
+  # ---------------- Bài 5: Ôn tập ----------------
+  - key: en:item:and-then
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: and then
+      ipa: /ən ˈðen/
+      pos: cụm liên từ
+    back:
+      meaning:
+        vi: rồi, sau đó (nối các việc theo thứ tự)
+      examples:
+        - target: I get up, and then I take a shower.
+          translation:
+            vi: Tôi dậy, rồi đi tắm.
+      pronunciation_note:
+        vi: Then bắt đầu bằng /ð/ - đặt lưỡi giữa răng và rung, không đọc thành "đen" hay "zen".
+      confusion:
+        vi: Kể nhiều việc liên tiếp, bạn có thể dùng then hoặc after that thay vì lặp lại and nhiều lần.
+
+  - key: en:item:routine
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: routine
+      ipa: /ruːˈtiːn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thói quen hằng ngày, lịch sinh hoạt
+      examples:
+        - target: What's your daily routine?
+          translation:
+            vi: Lịch sinh hoạt hằng ngày của bạn thế nào?
+      pronunciation_note:
+        vi: Nhấn âm sau "ru-TIN", âm i kéo dài.
+      confusion:
+        vi: Routine là chuỗi việc làm đều đặn mỗi ngày; habit là một thói quen riêng lẻ (tốt hoặc xấu).

@@ -1,0 +1,350 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:food-drinks
+order_index: 1
+level: topik1
+title:
+  vi: Món ăn, đồ uống và khen ngon
+objectives:
+  - vi: Gọi tên các món Hàn quen thuộc (밥, 김치, 비빔밥, 불고기, 라면, 떡볶이) và đồ uống (물, 차, 주스, 맥주, 커피).
+  - vi: Khen hoặc chê món ăn bằng 맛있어요 / 맛없어요.
+  - vi: Đọc đúng các từ có biến âm như 비빔밥 [비빔빱], 맛있어요 [마시써요].
+estimated_minutes: 12
+skills: [vocabulary, listening, speaking, reading]
+prerequisites: [ko:lesson:daily-life-review]
+items:
+  - item: ko:item:bap
+    role: reuse
+  - item: ko:item:gimchi
+  - item: ko:item:bibimbap
+  - item: ko:item:bulgogi
+  - item: ko:item:ramyeon
+  - item: ko:item:tteokbokki
+  - item: ko:item:mul
+  - item: ko:item:cha
+  - item: ko:item:juseu
+  - item: ko:item:maekju
+  - item: ko:item:masisseoyo
+  - item: ko:item:maseopseoyo
+  - item: ko:item:keopi
+    role: reuse
+  - item: ko:item:uyu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi được tên món ăn, đồ uống phổ biến ở Hàn Quốc và nói được "Món này ngon!" hoặc "Không ngon".
+  - type: explain
+    text:
+      vi: Phần lớn tên món Hàn là danh từ ngắn, đứng một mình như tiếng Việt - 김치 (kim chi), 라면 (mì gói), 물 (nước). Đồ uống mượn tiếng Anh viết theo Hangul - 커피 (coffee), 주스 (juice), nên bạn đoán nghĩa khá dễ.
+  - type: explain
+    text:
+      vi: Để khen, bạn nói N이/가 맛있어요 (N ngon); để chê, nói 맛없어요 (không ngon). Danh từ có patchim dùng 이 (김밥이), không có patchim dùng 가 (김치가).
+  - type: deep_explain
+    text:
+      vi: 맛있어요 gồm 맛 (vị) + 있어요 (có) - nghĩa đen là "có vị", tức là ngon; 맛없어요 là "không có vị", tức là dở. Vì vậy người Hàn không nói 안 맛있어요 mà dùng 맛없어요. Khi đọc, patchim ㅅ nối sang 있 thành [마시써요], còn 맛없어요 đọc [마덥써요].
+  - type: example
+    target: 김치가 맛있어요.
+    target_lang: ko
+    translation:
+      vi: Kim chi ngon.
+    note:
+      vi: 김치 không có patchim nên dùng 가.
+  - type: example
+    target: 불고기가 정말 맛있어요.
+    target_lang: ko
+    translation:
+      vi: Bulgogi ngon thật đấy.
+    note:
+      vi: 정말 = thật sự, đứng trước 맛있어요 để nhấn mạnh.
+  - type: example
+    target: 이 라면은 맛없어요.
+    target_lang: ko
+    translation:
+      vi: Mì này không ngon.
+    note:
+      vi: Dùng 맛없어요, không dùng 안 맛있어요.
+  - type: example
+    target: 비빔밥하고 물 주세요.
+    target_lang: ko
+    translation:
+      vi: Cho tôi cơm trộn và nước.
+    note:
+      vi: Câu gọi món bạn sẽ học kỹ ở bài sau.
+  - type: common_mistake
+    wrong: 안 맛있어요
+    right: 맛없어요
+    target_lang: ko
+    note:
+      vi: Người Việt hay ghép "không" + "ngon" thành 안 맛있어요. Tiếng Hàn đã có từ riêng cho "không ngon" là 맛없어요.
+  - type: common_mistake
+    wrong: 김치이 맛있어요
+    right: 김치가 맛있어요
+    target_lang: ko
+    note:
+      vi: 김치 kết thúc bằng nguyên âm (không có patchim), nên dùng 가. Chỉ dùng 이 sau patchim, ví dụ 김밥이, 밥이.
+  - type: common_mistake
+    wrong: 김치가 마시써요.
+    right: 김치가 맛있어요.
+    target_lang: ko
+    note:
+      vi: Bạn nghe [마시써요] nhưng khi viết phải giữ gốc 맛 + 있어요. Tiếng Việt viết sao đọc vậy, còn Hangul viết theo gốc từ.
+  - type: summary
+    points:
+      - vi: Món ăn - 밥 cơm · 김치 kim chi · 비빔밥 cơm trộn · 불고기 bò nướng · 라면 mì gói · 떡볶이 bánh gạo cay.
+      - vi: Đồ uống - 물 nước · 차 trà · 주스 nước ép · 맥주 bia · 커피 cà phê · 우유 sữa.
+      - vi: N이/가 맛있어요 (ngon) · N이/가 맛없어요 (không ngon) - không nói 안 맛있어요.
+      - vi: Chú ý biến âm - 비빔밥 [비빔빱], 떡볶이 [떡뽀끼], 맥주 [맥쭈], 맛있어요 [마시써요].
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:food-drinks-mcq-water
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:mul
+    prompt:
+      stem: Từ nào có nghĩa là "nước (nước lọc)"?
+      stem_lang: vi
+      options:
+        - { id: q7m, text: 불, lang: ko }
+        - { id: a2x, text: 물, lang: ko }
+        - { id: z9c, text: 밥, lang: ko }
+        - { id: h4t, text: 차, lang: ko }
+    answer:
+      correct_option_id: a2x
+    explanation:
+      vi: 물 (bắt đầu bằng ㅁ) là nước. 불 (ㅂ) là lửa, 밥 là cơm, 차 là trà - 물 và 불 chỉ khác phụ âm đầu nên rất dễ nhầm.
+    display_answer: 물
+
+  - key: ko:exercise:food-drinks-listen-tteokbokki
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:tteokbokki
+    prompt:
+      audio_asset_id: null
+      fallback_text: 떡볶이
+      options:
+        - { id: m3r, text: bánh gạo cay, lang: vi }
+        - { id: k8d, text: cơm trộn, lang: vi }
+        - { id: w1p, text: bò nướng, lang: vi }
+        - { id: s5j, text: mì gói, lang: vi }
+    answer:
+      correct_option_id: m3r
+    explanation:
+      vi: 떡볶이 (đọc [떡뽀끼]) là bánh gạo xào sốt cay. Cơm trộn là 비빔밥, bò nướng là 불고기, mì gói là 라면.
+    display_answer: bánh gạo cay
+
+  - key: ko:exercise:food-drinks-mcq-tasty
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:maseopseoyo
+    prompt:
+      stem: Bạn ăn món mì và thấy không ngon. Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: n6b, text: 라면이 맛없어요., lang: ko }
+        - { id: e2u, text: 라면이 안 맛있어요., lang: ko }
+        - { id: r7y, text: 라면이 맛있어요., lang: ko }
+        - { id: t3o, text: 라면가 맛없어요., lang: ko }
+    answer:
+      correct_option_id: n6b
+    explanation:
+      vi: '"Không ngon" có từ riêng là 맛없어요, không ghép 안 + 맛있어요. 라면 có patchim ㄴ nên dùng 이, không dùng 가.'
+    display_answer: 라면이 맛없어요.
+
+  - key: ko:exercise:food-drinks-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:masisseoyo
+    prompt:
+      template: "김치가 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Kim chi ngon."
+        - "Gợi ý: 맛 (vị) + 있어요 (có)."
+    answer:
+      blanks:
+        b1: [맛있어요]
+    known_wrong:
+      - answer: 마시써요
+        feedback_vi: Đó là cách đọc. Khi viết, giữ nguyên 맛 + 있어요 - 맛있어요.
+        error_tag: spelling_pronunciation
+      - answer: 맛없어요
+        feedback_vi: 맛없어요 là "không ngon". "Ngon" là 맛있어요.
+        error_tag: antonym
+    explanation:
+      vi: Ngon là 맛있어요 - nghĩa đen "có vị". Viết là 맛있어요 dù đọc [마시써요].
+    display_answer: 김치가 맛있어요.
+
+  - key: ko:exercise:food-drinks-wb-bibimbap
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:bibimbap
+    prompt:
+      instruction: Ghép các âm tiết thành từ "cơm trộn".
+      tokens:
+        - { id: v3, text: 밥 }
+        - { id: v1, text: 비 }
+        - { id: v4, text: 빱 }
+        - { id: v2, text: 빔 }
+    answer:
+      orders:
+        - [v1, v2, v3]
+    explanation:
+      vi: Cơm trộn viết là 비빔밥 (비 + 빔 + 밥) - 밥 nghĩa là cơm. Âm cuối nghe như [빱] nhưng chữ viết vẫn là 밥.
+    display_answer: 비빔밥
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:food-drinks-translate-beer
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:maekju
+    prompt:
+      source_text: bia
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 맥주
+        - 맥주요
+        - 맥주예요
+    known_wrong:
+      - answer: 맥쭈
+        feedback_vi: Đó là cách đọc [맥쭈]. Khi viết, dùng ㅈ thường - 맥주.
+        error_tag: spelling_pronunciation
+      - answer: maekju
+        feedback_vi: Hãy gõ bằng chữ Hangul (맥주), không dùng phiên âm Latinh.
+        error_tag: romanization
+      - answer: 주스
+        feedback_vi: 주스 là nước ép. Bia là 맥주.
+        error_tag: vocab_confusion
+    explanation:
+      vi: Bia là 맥주 (麥酒 - "rượu lúa mạch"). ㅈ sau patchim ㄱ đọc căng thành [맥쭈], nhưng viết vẫn là 주.
+    display_answer: 맥주
+
+  - key: ko:exercise:food-drinks-fill-drinks
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:cha
+    prompt:
+      template: "Trà - {{b1}}. Nước ép - {{b2}}. Cơm - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [차]
+        b2: [주스]
+        b3: [밥]
+    known_wrong:
+      - answer: 자
+        feedback_vi: Trà dùng ㅊ bật hơi - 차. 자 (ㅈ thường) là từ khác.
+        error_tag: consonant_aspirated
+      - answer: 주수
+        feedback_vi: Âm cuối của 주스 là ㅡ ("ư"), không phải ㅜ ("u").
+        error_tag: vowel_eu_u
+      - answer: 빱
+        feedback_vi: Cơm viết là 밥 với ㅂ thường.
+        error_tag: consonant_tense
+    explanation:
+      vi: 차 có ㅊ bật hơi; 주스 kết thúc bằng 스 (ㅡ); 밥 là cơm, hai ㅂ thường.
+    display_answer: 차, 주스, 밥
+
+  - key: ko:exercise:food-drinks-translate-bulgogi
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:masisseoyo
+    prompt:
+      source_text: Bulgogi ngon.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 불고기가 맛있어요.
+        - 불고기 맛있어요.
+        - 불고기는 맛있어요.
+        - 불고기가 정말 맛있어요.
+    known_wrong:
+      - answer: 불고기이 맛있어요.
+        feedback_vi: 불고기 không có patchim nên dùng 가 - 불고기가.
+        error_tag: particle_i_ga
+      - answer: 불고기가 마시써요.
+        feedback_vi: '[마시써요] là cách đọc; viết đúng là 맛있어요.'
+        error_tag: spelling_pronunciation
+      - answer: 맛있어요 불고기.
+        feedback_vi: Tiếng Hàn đặt tính từ ở cuối câu - 불고기가 맛있어요.
+        error_tag: word_order
+    explanation:
+      vi: Câu là N + 이/가 + 맛있어요. 불고기 kết thúc bằng nguyên âm nên đi với 가; khi nói có thể bỏ trợ từ.
+    display_answer: 불고기가 맛있어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:food-drinks-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:maseopseoyo
+    prompt:
+      source_text: 이 라면은 맛없어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mì này không ngon.
+        - Mì gói này không ngon.
+        - Món mì này không ngon.
+        - Mì này dở.
+        - Mì gói này dở.
+        - Mì ăn liền này không ngon.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mì này ngon.
+        feedback_vi: 맛없어요 là "không ngon"; "ngon" mới là 맛있어요.
+        error_tag: antonym
+    explanation:
+      vi: 이 = này, 라면 = mì gói, 맛없어요 = không ngon. 은 chỉ đánh dấu chủ đề, không cần dịch.
+    display_answer: Mì này không ngon.
+
+  - key: ko:exercise:food-drinks-wb-coffee
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:masisseoyo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Cà phê ngon thật.\""
+      tokens:
+        - { id: c4, text: 맛있어요 }
+        - { id: c2, text: 커피가 }
+        - { id: c5, text: 커피이 }
+        - { id: c3, text: 정말 }
+        - { id: c6, text: 맛없어요 }
+    answer:
+      orders:
+        - [c2, c3, c4]
+    explanation:
+      vi: 커피 không có patchim nên dùng 가. 정말 (thật) đứng ngay trước 맛있어요, và tính từ luôn ở cuối câu.
+    display_answer: 커피가 정말 맛있어요.

@@ -1,0 +1,373 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:hangul-advanced-review
+order_index: 5
+level: hangul
+title:
+  vi: "Ôn tập: đọc và viết Hangul nâng cao"
+objectives:
+  - vi: Đọc to những từ và câu ngắn có nguyên âm ghép, patchim, nối âm và đồng hoá mũi.
+  - vi: Viết đúng chính tả những từ "đọc khác viết" như 옷, 부엌, 한국어, 시계.
+  - vi: Chọn đúng 이에요/예요 theo patchim của danh từ.
+estimated_minutes: 15
+skills: [reading, writing, listening, vocabulary]
+prerequisites: [ko:lesson:linking-nasalization]
+items:
+  - item: ko:item:final-sounds
+    role: reuse
+  - item: ko:item:linking
+    role: reuse
+  - item: ko:item:nasalization
+    role: reuse
+  - item: ko:item:vowel-ui
+    role: reuse
+  - item: ko:item:uisa
+    role: reuse
+  - item: ko:item:uija
+    role: reuse
+  - item: ko:item:sagwa
+    role: reuse
+  - item: ko:item:sigye
+    role: reuse
+  - item: ko:item:haksaeng
+    role: reuse
+  - item: ko:item:bueok
+    role: reuse
+  - item: ko:item:ot
+    role: reuse
+  - item: ko:item:hanguk
+    role: reuse
+  - item: ko:item:eumak
+    role: reuse
+  - item: ko:item:hoesa
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này gom lại cả unit - bạn đọc trơn và viết đúng chính tả các từ, các câu ngắn có nguyên âm ghép và patchim, như 한국 음악이에요 hay 저는 학생이에요.
+  - type: explain
+    text:
+      vi: Khi đọc một từ mới, bạn đi theo ba bước. Một - xác định nguyên âm (kể cả nguyên âm ghép như ㅚ, ㅢ). Hai - đọc patchim bằng bảy âm đại diện; ba - xem âm tiết sau bắt đầu bằng ㅇ câm (nối âm) hay ㄴ ㅁ (đồng hoá mũi).
+  - type: explain
+    text:
+      vi: Khi viết, làm ngược lại - đừng viết theo tai nghe. [오시에요] viết là 옷이에요, [한구거] viết là 한국어, [시게] viết là 시계. Mỗi từ có một chính tả cố định, bạn nên học thuộc mặt chữ cùng với nghĩa.
+  - type: deep_explain
+    text:
+      vi: Patchim còn quyết định đuôi câu "là" - danh từ có patchim đi với 이에요 (학생이에요, 교실이에요), không có patchim đi với 예요 (의자예요, 사과예요). Đây là lỗi người Việt gặp nhiều nhất ở giai đoạn đầu, vì tiếng Việt chỉ có một chữ "là". Khi đọc, 이에요 cũng làm patchim nối sang - 학생이에요 [학쌩이에요], 옷이에요 [오시에요].
+  - type: example
+    target: 저는 학생이에요.
+    target_lang: ko
+    translation:
+      vi: Tôi là học sinh.
+    note:
+      vi: 학생 có patchim ㅇ nên dùng 이에요; ㅇ không nối sang, đọc [학쌩이에요].
+  - type: example
+    target: 의자예요.
+    target_lang: ko
+    translation:
+      vi: Đây là cái ghế.
+    note:
+      vi: 의자 không có patchim nên dùng 예요; 의 đầu từ đọc "ưi".
+  - type: example
+    target: 한국 음악이에요.
+    target_lang: ko
+    translation:
+      vi: Đây là nhạc Hàn Quốc.
+    note:
+      vi: Đọc [한국 으마기에요] - hai lần nối âm trong 음악이에요.
+  - type: example
+    target: 부엌이에요.
+    target_lang: ko
+    translation:
+      vi: Đây là nhà bếp.
+    note:
+      vi: Đứng một mình đọc [부억], nhưng nối với 이에요 thì ㅋ hiện lại - [부어키에요].
+  - type: common_mistake
+    wrong: 학생예요.
+    right: 학생이에요.
+    target_lang: ko
+    note:
+      vi: 학생 kết thúc bằng patchim ㅇ, nên phải dùng 이에요. 예요 chỉ dùng sau danh từ kết thúc bằng nguyên âm như 의자, 사과.
+  - type: common_mistake
+    wrong: 오시에요.
+    right: 옷이에요.
+    target_lang: ko
+    note:
+      vi: '[오시에요] là cách đọc nối âm. Khi viết, bạn giữ nguyên danh từ 옷 rồi thêm 이에요.'
+  - type: common_mistake
+    wrong: 의자이에요.
+    right: 의자예요.
+    target_lang: ko
+    note:
+      vi: 의자 không có patchim nên dùng 예요. Chữ "이" trong 이에요 chỉ cần khi có phụ âm cuối đứng trước.
+  - type: summary
+    points:
+      - vi: Đọc theo ba bước - nguyên âm, patchim (bảy âm đại diện), rồi nối âm hoặc đồng hoá mũi.
+      - vi: Viết theo chính tả, không theo tai nghe - 옷이에요, 한국어, 시계, 부엌.
+      - vi: Có patchim → 이에요; không có patchim → 예요.
+      - vi: ㅢ đầu từ đọc "ưi" (의사); ㅙ ㅚ ㅞ gần như giống nhau ("uê").
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:hangul-review-listen-uisa
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:uisa
+    prompt:
+      audio_asset_id: null
+      fallback_text: 의사
+      options:
+        - { id: v4c, text: bác sĩ, lang: vi }
+        - { id: q7j, text: cái ghế, lang: vi }
+        - { id: z2e, text: công ty, lang: vi }
+        - { id: b5x, text: đồng hồ, lang: vi }
+    answer:
+      correct_option_id: v4c
+    explanation:
+      vi: 의사 (ưi-xa) là bác sĩ. 의자 (cái ghế) chỉ khác ở âm tiết thứ hai - ㅈ thay cho ㅅ; công ty là 회사, đồng hồ là 시계.
+    display_answer: bác sĩ
+
+  - key: ko:exercise:hangul-review-read-osieyo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:linking
+    prompt:
+      stem: 옷이에요 (Đây là quần áo.) được đọc thế nào?
+      stem_lang: vi
+      options:
+        - { id: k9s, text: '[오시에요]', lang: ko }
+        - { id: f3d, text: '[오디에요]', lang: ko }
+        - { id: n5u, text: '[오이에요]', lang: ko }
+        - { id: t1a, text: '[옫씨에요]', lang: ko }
+    answer:
+      correct_option_id: k9s
+    explanation:
+      vi: 이 bắt đầu bằng ㅇ câm nên ㅅ của 옷 nối sang, và khi nối nó giữ âm gốc [ㅅ] - [오시에요]. Âm đại diện [ㄷ] chỉ dùng khi ㅅ đứng cuối không có nguyên âm theo sau, nên [오디에요] sai.
+    display_answer: '[오시에요]'
+
+  - key: ko:exercise:hangul-review-final-k
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:final-sounds
+    prompt:
+      stem: Từ nào đứng một mình có âm cuối đọc là [ㄱ]?
+      stem_lang: vi
+      options:
+        - { id: p6r, text: 부엌, lang: ko }
+        - { id: e8w, text: 옷, lang: ko }
+        - { id: y3n, text: 앞, lang: ko }
+        - { id: g1m, text: 꽃, lang: ko }
+    answer:
+      correct_option_id: p6r
+    explanation:
+      vi: ㅋ cuối mất hơi và đọc [ㄱ], nên 부엌 là [부억]. 옷 [옫] và 꽃 [꼳] kết thúc bằng [ㄷ], còn 앞 [압] kết thúc bằng [ㅂ].
+    display_answer: 부엌
+
+  - key: ko:exercise:hangul-review-fill-vowels
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:sigye
+    prompt:
+      template: "Quả táo - 사{{b1}}. Đồng hồ - 시{{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - 사과 đọc gần "xa-qua"; 시계 đọc gần "shi-ghê".
+        - Âm tiết cần điền là ㄱ + ㅘ và ㄱ + ㅖ.
+    answer:
+      blanks:
+        b1: [과]
+        b2: [계]
+    known_wrong:
+      - answer: 고
+        feedback_vi: Âm "qua" cần nguyên âm ghép ㅘ (ㅗ + ㅏ) - 사과.
+        error_tag: compound_vowel
+      - answer: 게
+        feedback_vi: 시계 đọc [시게] nhưng viết với ㅖ.
+        error_tag: vowel_ye_e
+      - answer: 개
+        feedback_vi: Đồng hồ là 시계 với ㅖ, không phải ㅐ.
+        error_tag: vowel_ae_e
+    explanation:
+      vi: 사과 = 사 + 과 (ㄱ + ㅘ); 시계 = 시 + 계 (ㄱ + ㅖ). Cả hai đều là chữ có nguyên âm ghép, đọc nghe đơn giản hơn chữ viết.
+    display_answer: 사과, 시계
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:hangul-review-write-haksaeng
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:haksaeng
+    prompt:
+      source_text: học sinh
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 학생
+    known_wrong:
+      - answer: 학쌩
+        feedback_vi: '[학쌩] là cách đọc. Chính tả là 학생 với ㅅ thường.'
+        error_tag: spelling_as_sound
+      - answer: 학셍
+        feedback_vi: Nguyên âm của 생 là ㅐ - 학생. ㅐ và ㅔ nghe giống nhau nên bạn cần nhớ mặt chữ.
+        error_tag: vowel_ae_e
+      - answer: 하생
+        feedback_vi: Thiếu patchim ㄱ ở âm tiết đầu - 학생.
+        error_tag: missing_batchim
+      - answer: haksaeng
+        feedback_vi: Hãy gõ bằng chữ Hangul (학생), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Học sinh là 학생 = 학 (ㅎ + ㅏ + ㄱ) + 생 (ㅅ + ㅐ + ㅇ). Đọc [학쌩] vì ㅅ sau âm cuối [ㄱ] bị đọc căng, nhưng chữ viết không đổi.
+    display_answer: 학생
+
+  - key: ko:exercise:hangul-review-fill-ieyo
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:uija
+    prompt:
+      template: "Tôi là học sinh. - 저는 학생{{b1}}. Đây là cái ghế. - 의자{{b2}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [이에요]
+        b2: [예요]
+    known_wrong:
+      - answer: 이예요
+        feedback_vi: Không có đuôi 이예요. Sau patchim viết 이에요, sau nguyên âm viết 예요.
+        error_tag: ieyo_spelling
+      - answer: 에요
+        feedback_vi: Sau danh từ có patchim như 학생, bạn cần 이에요.
+        error_tag: ieyo_choice
+    explanation:
+      vi: 학생 kết thúc bằng patchim ㅇ nên dùng 이에요; 의자 kết thúc bằng nguyên âm ㅏ nên dùng 예요.
+    display_answer: 학생이에요, 의자예요
+
+  - key: ko:exercise:hangul-review-write-bueok
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:bueok
+    prompt:
+      source_text: nhà bếp
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 부엌
+    known_wrong:
+      - answer: 부억
+        feedback_vi: '[부억] là cách đọc. Nhà bếp viết với patchim ㅋ - 부엌.'
+        error_tag: spelling_as_sound
+      - answer: 부어
+        feedback_vi: Thiếu patchim - nhà bếp là 부엌.
+        error_tag: missing_batchim
+      - answer: bueok
+        feedback_vi: Hãy gõ bằng chữ Hangul (부엌), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Nhà bếp là 부엌 - patchim ㅋ được đọc thành [ㄱ] khi đứng một mình, nhưng chính tả vẫn là ㅋ (và nó hiện lại trong 부엌이에요 [부어키에요]).
+    display_answer: 부엌
+
+  # ---------------- application ----------------
+  - key: ko:exercise:hangul-review-build-hanguk
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hanguk
+    prompt:
+      instruction: Ghép các chữ cái thành từ có nghĩa "Hàn Quốc".
+      tokens:
+        - { id: w5, text: ㄱ }
+        - { id: w2, text: ㅜ }
+        - { id: w8, text: ㅇ }
+        - { id: w1, text: ㄴ }
+        - { id: w6, text: ㅏ }
+        - { id: w9, text: ㅗ }
+        - { id: w3, text: ㄱ }
+        - { id: w7, text: ㅎ }
+    answer:
+      orders:
+        - [w7, w6, w1, w5, w2, w3]
+        - [w7, w6, w1, w3, w2, w5]
+    explanation:
+      vi: '한국 = (ㅎ + ㅏ + ㄴ) + (ㄱ + ㅜ + ㄱ). Patchim của 한 là ㄴ, không phải ㅇ; nguyên âm của 국 là ㅜ ("u").'
+    display_answer: 한국
+
+  - key: ko:exercise:hangul-review-meaning-music
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:eumak
+    prompt:
+      source_text: 한국 음악이에요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đây là nhạc Hàn Quốc.
+        - Đây là âm nhạc Hàn Quốc.
+        - Đó là nhạc Hàn Quốc.
+        - Đây là nhạc Hàn.
+        - Đó là nhạc Hàn.
+        - Là nhạc Hàn Quốc.
+        - Nhạc Hàn Quốc đấy.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: 한국 là Hàn Quốc, 음악 là âm nhạc, 이에요 là "là". 음악 có patchim ㄱ nên đi với 이에요, và cả câu đọc [한국 으마기에요].
+    display_answer: Đây là nhạc Hàn Quốc.
+
+  - key: ko:exercise:hangul-review-write-clothes
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ot
+    prompt:
+      source_text: Đây là quần áo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 옷이에요.
+        - 이것은 옷이에요.
+        - 이건 옷이에요.
+        - 이거 옷이에요.
+    known_wrong:
+      - answer: 오시에요.
+        feedback_vi: '[오시에요] là cách đọc. Hãy viết danh từ 옷 rồi thêm 이에요 - 옷이에요.'
+        error_tag: spelling_as_sound
+      - answer: 옫이에요.
+        feedback_vi: 옷 đọc [옫] khi đứng một mình, nhưng chính tả là 옷 với ㅅ.
+        error_tag: spelling_as_sound
+      - answer: 옷예요.
+        feedback_vi: 옷 có patchim ㅅ, nên dùng 이에요 - 옷이에요.
+        error_tag: ieyo_choice
+      - answer: ot ieyo
+        feedback_vi: Hãy gõ bằng chữ Hangul (옷이에요), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Quần áo là 옷; vì có patchim nên "là" phải là 이에요. Câu viết 옷이에요 nhưng đọc liền [오시에요].
+    display_answer: 옷이에요.

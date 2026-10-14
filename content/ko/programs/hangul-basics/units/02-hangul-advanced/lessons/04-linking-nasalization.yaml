@@ -1,0 +1,355 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:linking-nasalization
+order_index: 4
+level: hangul
+title:
+  vi: Nối âm, đồng hoá mũi và patchim kép
+objectives:
+  - vi: Đọc nối patchim sang âm tiết bắt đầu bằng ㅇ câm - 한국어 [한구거], 음악 [으막].
+  - vi: Đọc đúng đồng hoá mũi - 합니다 [함니다], 국물 [궁물].
+  - vi: Đọc hai patchim kép thường gặp - 읽다 [익따], 앉다 [안따].
+estimated_minutes: 15
+skills: [reading, listening, writing, vocabulary]
+prerequisites: [ko:lesson:batchim]
+items:
+  - item: ko:item:linking
+  - item: ko:item:nasalization
+  - item: ko:item:double-batchim
+  - item: ko:item:hangugeo
+  - item: ko:item:eumak
+  - item: ko:item:gungmul
+  - item: ko:item:ikda
+  - item: ko:item:anda
+  - item: ko:item:final-sounds
+    role: reuse
+  - item: ko:item:ot
+    role: reuse
+  - item: ko:item:chaek
+    role: reuse
+  - item: ko:item:uija
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc trôi chảy những từ có patchim đứng cạnh nhau như 한국어, 음악, 감사합니다, và không còn đọc rời từng chữ như khi đọc tiếng Việt.
+  - type: explain
+    text:
+      vi: Nối âm - khi âm tiết sau bắt đầu bằng ㅇ câm, patchim của âm tiết trước "chuyển nhà" sang lấp chỗ trống đó. 한국어 đọc [한구거], 음악 đọc [으막], 옷이에요 đọc [오시에요]. Patchim ㅇ thì không chuyển - 고양이 vẫn đọc [고양이].
+  - type: explain
+    text:
+      vi: Đồng hoá mũi - âm cuối [ㄱ ㄷ ㅂ] đứng trước ㄴ hoặc ㅁ sẽ đổi thành âm mũi [ㅇ ㄴ ㅁ]. 합니다 đọc [함니다], 국물 đọc [궁물], 감사합니다 đọc [감사함니다]. Bạn chỉ đổi cách đọc, chữ viết giữ nguyên.
+  - type: explain
+    text:
+      vi: Patchim kép là hai phụ âm khác nhau cùng nằm dưới, như ㄺ trong 읽다 và ㄵ trong 앉다. Trước phụ âm, bạn chỉ đọc một - 읽다 [익따], 앉다 [안따]; trước nguyên âm, phụ âm thứ hai nối sang - 읽어요 [일거요], 앉아요 [안자요].
+  - type: deep_explain
+    text:
+      vi: Khi nối âm, patchim mang theo âm gốc của nó chứ không phải âm đại diện - 옷이 là [오시], không phải [오디]; 부엌에 là [부어케]. Ngoài ra, sau âm cuối [ㄱ ㄷ ㅂ], phụ âm ㄱ ㄷ ㅂ ㅅ ㅈ đứng đầu âm tiết sau thường bị đọc căng - 학생 [학쌩], 읽다 [익따]. Người Việt quen đọc rời từng tiếng nên hay bỏ qua cả hai hiện tượng này; hãy luyện đọc liền cả từ.
+  - type: example
+    target: 한국어
+    target_lang: ko
+    translation:
+      vi: tiếng Hàn
+    note:
+      vi: Đọc [한구거] - ㄱ của 국 nối sang 어.
+  - type: example
+    target: 음악
+    target_lang: ko
+    translation:
+      vi: âm nhạc
+    note:
+      vi: Đọc [으막] - ㅁ của 음 nối sang 악.
+  - type: example
+    target: 감사합니다.
+    target_lang: ko
+    translation:
+      vi: Cảm ơn ạ.
+    note:
+      vi: Đọc [감사함니다] - ㅂ trước ㄴ đổi thành [ㅁ].
+  - type: example
+    target: 국물이 맛있어요.
+    target_lang: ko
+    translation:
+      vi: Nước canh ngon quá.
+    note:
+      vi: 국물 đọc [궁물]; 국물이 nối âm thành [궁무리].
+  - type: example
+    target: 책을 읽어요.
+    target_lang: ko
+    translation:
+      vi: Tôi đọc sách.
+    note:
+      vi: Đọc [채글 일거요] - ㄱ của 책 nối sang 을, ㄱ của ㄺ nối sang 어.
+  - type: common_mistake
+    wrong: 한구거
+    right: 한국어
+    target_lang: ko
+    note:
+      vi: '[한구거] chỉ là cách đọc. Khi viết, bạn giữ nguyên từng âm tiết - 한국 + 어 = 한국어.'
+  - type: common_mistake
+    wrong: 감사합니다 [감사합-니다]
+    right: 감사합니다 [감사함니다]
+    target_lang: ko
+    note:
+      vi: Người Việt hay dừng sau "합" rồi mới đọc "니다". Hãy để ㅂ hoà vào ㄴ thành [ㅁ] - đọc liền [감사함니다].
+  - type: common_mistake
+    wrong: 의자에 안자요.
+    right: 의자에 앉아요.
+    target_lang: ko
+    note:
+      vi: Bạn nghe [안자요] nhưng phải viết 앉아요 - giữ patchim kép ㄵ của 앉다. 안아요 lại là "ôm", nghĩa khác hẳn.
+  - type: summary
+    points:
+      - vi: Nối âm - patchim + ㅇ câm → phụ âm chuyển sang âm tiết sau - 한국어 [한구거], 음악 [으막].
+      - vi: Khi nối, giữ âm gốc - 옷이 [오시], không phải [오디]; patchim ㅇ không nối.
+      - vi: Đồng hoá mũi - [ㄱ ㄷ ㅂ] + ㄴ/ㅁ → [ㅇ ㄴ ㅁ] - 합니다 [함니다], 국물 [궁물].
+      - vi: Patchim kép trước phụ âm chỉ đọc một - 읽다 [익따], 앉다 [안따]; trước nguyên âm thì nối - 읽어요 [일거요].
+      - vi: Mọi quy tắc này chỉ đổi cách đọc, không đổi chính tả.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:linking-read-hangugeo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:hangugeo
+    prompt:
+      stem: 한국어 (tiếng Hàn) được đọc thế nào?
+      stem_lang: vi
+      options:
+        - { id: c5w, text: '[한구거]', lang: ko }
+        - { id: l2f, text: '[한구커]', lang: ko }
+        - { id: y8r, text: '[항구거]', lang: ko }
+        - { id: e3m, text: '[하누거]', lang: ko }
+    answer:
+      correct_option_id: c5w
+    explanation:
+      vi: 어 bắt đầu bằng ㅇ câm, nên ㄱ cuối của 국 nối sang thành [거] - 한국어 đọc [한구거]. ㄱ không thành ㅋ bật hơi, và ㄴ của 한 vẫn ở nguyên chỗ vì 국 đã có phụ âm đầu.
+    display_answer: '[한구거]'
+
+  - key: ko:exercise:linking-listen-eumak
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:eumak
+    prompt:
+      audio_asset_id: null
+      fallback_text: 음악
+      options:
+        - { id: u6k, text: âm nhạc, lang: vi }
+        - { id: d1s, text: tiếng Hàn, lang: vi }
+        - { id: n9p, text: nước canh, lang: vi }
+        - { id: i4z, text: quần áo, lang: vi }
+    answer:
+      correct_option_id: u6k
+    explanation:
+      vi: Bạn nghe [으막] - đó là 음악, nghĩa là âm nhạc, với ㅁ của 음 nối sang 악. Tiếng Hàn là 한국어, nước canh là 국물, quần áo là 옷.
+    display_answer: âm nhạc
+
+  - key: ko:exercise:nasalization-fill-hamnida
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:nasalization
+    prompt:
+      template: "합니다 đọc là [{{b1}}니다]"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - ㅂ cuối đứng trước ㄴ sẽ đổi thành âm mũi.
+        - "[ㅂ] trước ㄴ hoặc ㅁ đổi thành [ㅁ]."
+    answer:
+      blanks:
+        b1: [함]
+    known_wrong:
+      - answer: 합
+        feedback_vi: Đó là cách viết. Khi đọc, ㅂ trước ㄴ đổi thành [ㅁ] - [함니다].
+        error_tag: no_nasalization
+      - answer: 한
+        feedback_vi: '[ㄴ] là kết quả của [ㄷ]. ㅂ đổi thành âm mũi cùng chỗ khép môi - [ㅁ].'
+        error_tag: nasalization_wrong
+      - answer: 항
+        feedback_vi: '[ㅇ] là kết quả của [ㄱ]. ㅂ đổi thành [ㅁ] - [함니다].'
+        error_tag: nasalization_wrong
+    explanation:
+      vi: ㄴ là âm mũi nên kéo ㅂ đứng trước thành âm mũi cùng vị trí khép môi, tức [ㅁ]. Vì vậy 합니다 đọc [함니다].
+    display_answer: '[함니다]'
+
+  - key: ko:exercise:double-batchim-read-ikda
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:double-batchim
+    prompt:
+      stem: 읽다 (đọc) được đọc thế nào?
+      stem_lang: vi
+      options:
+        - { id: o2h, text: '[익따]', lang: ko }
+        - { id: a7v, text: '[일따]', lang: ko }
+        - { id: g5c, text: '[일그다]', lang: ko }
+        - { id: s9e, text: '[이따]', lang: ko }
+    answer:
+      correct_option_id: o2h
+    explanation:
+      vi: Trước phụ âm, ㄺ chỉ đọc [ㄱ], và ㄷ sau [ㄱ] bị đọc căng thành [ㄸ], nên 읽다 là [익따]. Không đọc cả hai phụ âm, không thêm nguyên âm [그], cũng không bỏ hẳn âm cuối.
+    display_answer: '[익따]'
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:linking-fill-sounds
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gungmul
+    prompt:
+      template: "국물 đọc là [{{b1}}물]. 음악 đọc là [{{b2}}막]."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [궁]
+        b2: [으]
+    known_wrong:
+      - answer: 국
+        feedback_vi: Đó là cách viết. ㄱ cuối đứng trước ㅁ đổi thành âm mũi [ㅇ] - [궁물].
+        error_tag: no_nasalization
+      - answer: 음
+        feedback_vi: Đó là cách viết. ㅁ của 음 đã nối sang 악 thành [막], nên âm tiết đầu chỉ còn [으].
+        error_tag: no_linking
+      - answer: 굼
+        feedback_vi: ㄱ đổi thành âm mũi [ㅇ] (cùng vị trí trong họng), không phải [ㅁ].
+        error_tag: nasalization_wrong
+    explanation:
+      vi: 국물 - ㄱ trước ㅁ đổi thành [ㅇ], đọc [궁물] (đồng hoá mũi). 음악 - ㅁ nối sang ㅇ câm của 악, đọc [으막] (nối âm).
+    display_answer: '[궁물], [으막]'
+
+  - key: ko:exercise:linking-write-hangugeo
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:hangugeo
+    prompt:
+      source_text: tiếng Hàn
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 한국어
+        - 한국말
+    known_wrong:
+      - answer: 한구거
+        feedback_vi: '[한구거] là cách đọc. Khi viết, giữ nguyên 한국 + 어 = 한국어.'
+        error_tag: spelling_as_sound
+      - answer: 한국
+        feedback_vi: 한국 là "Hàn Quốc". Tiếng Hàn cần thêm 어 (ngôn ngữ) - 한국어.
+        error_tag: missing_syllable
+      - answer: hangugeo
+        feedback_vi: Hãy gõ bằng chữ Hangul (한국어), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Tiếng Hàn là 한국어 (한국 "Hàn Quốc" + 어 "ngôn ngữ"); trong hội thoại cũng hay nói 한국말. Bạn đọc [한구거] nhưng viết đủ 한국어.
+    display_answer: 한국어
+
+  - key: ko:exercise:linking-write-eumak
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:eumak
+    prompt:
+      source_text: âm nhạc
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 음악
+    known_wrong:
+      - answer: 으막
+        feedback_vi: '[으막] là cách đọc. Âm nhạc viết là 음악 - ㅁ nằm ở dưới 으.'
+        error_tag: spelling_as_sound
+      - answer: 움악
+        feedback_vi: Âm đầu là ㅡ ("ư", môi dẹt), không phải ㅜ ("u") - 음악.
+        error_tag: vowel_eu_u
+      - answer: eumak
+        feedback_vi: Hãy gõ bằng chữ Hangul (음악), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Âm nhạc là 음악 = 음 + 악. Khi đọc, ㅁ nối sang thành [으막], nhưng chính tả giữ nguyên 음악.
+    display_answer: 음악
+
+  # ---------------- application ----------------
+  - key: ko:exercise:linking-build-eumak
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:eumak
+    prompt:
+      instruction: Ghép các chữ cái thành từ có nghĩa "âm nhạc" (viết theo chính tả, không theo cách đọc).
+      tokens:
+        - { id: m6, text: ㄱ }
+        - { id: m2, text: ㅇ }
+        - { id: m9, text: ㅏ }
+        - { id: m4, text: ㅁ }
+        - { id: m7, text: ㅜ }
+        - { id: m3, text: ㅡ }
+        - { id: m1, text: ㅇ }
+    answer:
+      orders:
+        - [m1, m3, m4, m2, m9, m6]
+        - [m2, m3, m4, m1, m9, m6]
+    explanation:
+      vi: '음악 = (ㅇ + ㅡ + ㅁ) + (ㅇ + ㅏ + ㄱ). ㅁ là patchim của 음 dù khi đọc nó nối sang [막]; âm đầu là ㅡ, không phải ㅜ.'
+    display_answer: 음악
+
+  - key: ko:exercise:double-batchim-choose-anjayo
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:anda
+    prompt:
+      stem: Bạn muốn viết "Tôi ngồi xuống ghế." Câu nào đúng chính tả?
+      stem_lang: vi
+      options:
+        - { id: w3t, text: 의자에 앉아요., lang: ko }
+        - { id: h6b, text: 의자에 안자요., lang: ko }
+        - { id: k1o, text: 의자에 안아요., lang: ko }
+        - { id: r8g, text: 의자에 앉자요., lang: ko }
+    answer:
+      correct_option_id: w3t
+    explanation:
+      vi: 앉다 (ngồi) + 아요 = 앉아요, đọc [안자요] vì ㅈ của ㄵ nối sang. 안자요 là viết theo tai nghe, 안아요 nghĩa là "ôm", còn 앉자요 lặp ㅈ thừa.
+    display_answer: 의자에 앉아요.
+
+  - key: ko:exercise:double-batchim-meaning-read-book
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ikda
+    prompt:
+      source_text: 책을 읽어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi đọc sách.
+        - Tôi đang đọc sách.
+        - Đọc sách.
+        - Mình đọc sách.
+        - Tôi đọc sách ạ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: 책 là sách, 을 đánh dấu tân ngữ, 읽어요 là "đọc" (từ 읽다). Câu đọc liền là [채글 일거요] vì cả hai patchim đều nối sang nguyên âm phía sau.
+    display_answer: Tôi đọc sách.

@@ -1,0 +1,626 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Chào hỏi & giới thiệu bản thân" (TOPIK 1). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+schema_version: 1
+demo: true
+source: src:linguo-demo
+items:
+  # ---------------- bài 1: chào hỏi, cảm ơn, xin lỗi ----------------
+  - key: ko:item:annyeonghaseyo
+    type: phrase
+    level: topik1
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: 안녕하세요
+      romanization: annyeonghaseyo
+      pos: câu chào
+    back:
+      meaning:
+        vi: Xin chào (lịch sự, dùng được với hầu hết mọi người, mọi lúc trong ngày).
+      examples:
+        - target: 안녕하세요? 저는 란이에요.
+          translation:
+            vi: Xin chào. Tôi là Lan.
+      pronunciation_note:
+        vi: Đọc gần "an-nhơng-ha-xê-yô"; ㅎ ở giữa câu thường đọc rất nhẹ. Cuối câu hơi lên giọng như câu hỏi cũng được.
+
+  - key: ko:item:annyeonghi-gaseyo
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: 안녕히 가세요
+      romanization: annyeonghi gaseyo
+      pos: câu chào tạm biệt
+    back:
+      meaning:
+        vi: Tạm biệt (người ở lại nói với người ra về - nghĩa đen "đi bình an nhé").
+      examples:
+        - target: 손님, 안녕히 가세요.
+          translation:
+            vi: Chào quý khách, quý khách đi cẩn thận ạ.
+      pronunciation_note:
+        vi: 안녕히 thường đọc gần [안녕이] vì ㅎ giữa hai âm bị nuốt nhẹ.
+      confusion:
+        vi: 가세요 có 가 (đi) - dành cho người đang rời đi. Người ra về thì nói 안녕히 계세요.
+
+  - key: ko:item:annyeonghi-gyeseyo
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: 안녕히 계세요
+      romanization: annyeonghi gyeseyo
+      pos: câu chào tạm biệt
+    back:
+      meaning:
+        vi: Tạm biệt (người ra về nói với người ở lại - nghĩa đen "ở lại bình an nhé").
+      examples:
+        - target: 선생님, 안녕히 계세요.
+          translation:
+            vi: Em chào thầy/cô ạ, em về đây.
+      pronunciation_note:
+        vi: 계 đọc gần "kê" - trong tiếng Seoul ㅖ sau phụ âm thường đọc như ㅔ.
+      confusion:
+        vi: 계세요 nghĩa là "hãy ở lại" - dành cho người ở lại. Nếu cả hai cùng đi thì cả hai nói 안녕히 가세요.
+
+  - key: ko:item:gamsahamnida
+    type: phrase
+    level: topik1
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: 감사합니다
+      romanization: gamsahamnida
+      pos: câu cảm ơn
+    back:
+      meaning:
+        vi: Cảm ơn (trang trọng, lịch sự - dùng an toàn với mọi người).
+      examples:
+        - target: 도와주셔서 감사합니다.
+          translation:
+            vi: Cảm ơn bạn đã giúp đỡ.
+      pronunciation_note:
+        vi: Viết 합니다 nhưng đọc [함니다] - ㅂ đứng trước ㄴ biến thành ㅁ.
+
+  - key: ko:item:gomapseumnida
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: 고맙습니다
+      romanization: gomapseumnida
+      pos: câu cảm ơn
+    back:
+      meaning:
+        vi: Cảm ơn (lịch sự nhưng gần gũi hơn 감사합니다 một chút); dạng 해요체 là 고마워요.
+      examples:
+        - target: 정말 고맙습니다.
+          translation:
+            vi: Thật sự cảm ơn bạn.
+      pronunciation_note:
+        vi: Đọc [고맙씀니다] - ㅅ sau ㅂ thành âm căng ㅆ, và 습 trước 니 đọc thành [씀].
+
+  - key: ko:item:joesonghamnida
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: 죄송합니다
+      romanization: joesonghamnida
+      pos: câu xin lỗi
+    back:
+      meaning:
+        vi: Xin lỗi (trang trọng - với người lớn tuổi, cấp trên, khách hàng, người lạ).
+      examples:
+        - target: 늦어서 죄송합니다.
+          translation:
+            vi: Xin lỗi vì tôi đến muộn.
+      pronunciation_note:
+        vi: 죄 đọc gần "chuê" (ㅚ hiện nay thường đọc như "uê"); 합니다 đọc [함니다].
+
+  - key: ko:item:mianhaeyo
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: 미안해요
+      romanization: mianhaeyo
+      pos: câu xin lỗi
+    back:
+      meaning:
+        vi: Xin lỗi (lịch sự nhưng thân mật hơn - với bạn bè, người ngang hàng hoặc nhỏ tuổi hơn).
+      examples:
+        - target: 미안해요, 제가 잊었어요.
+          translation:
+            vi: Xin lỗi nhé, mình quên mất.
+      pronunciation_note:
+        vi: ㅎ giữa câu đọc nhẹ nên nghe gần [미아내요].
+      confusion:
+        vi: Với người lớn tuổi hay cấp trên, 미안해요 có thể nghe thiếu lễ phép - dùng 죄송합니다.
+
+  - key: ko:item:bangapseumnida
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: 반갑습니다
+      romanization: bangapseumnida
+      pos: câu chào khi gặp mặt
+    back:
+      meaning:
+        vi: Rất vui được gặp (bạn) - trang trọng, hay dùng khi làm quen.
+      examples:
+        - target: 처음 뵙겠습니다. 반갑습니다.
+          translation:
+            vi: Lần đầu được gặp, rất hân hạnh.
+      pronunciation_note:
+        vi: Đọc [반갑씀니다], giống quy tắc của 고맙습니다.
+
+  - key: ko:item:mannaseo-bangawoyo
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: 만나서 반가워요
+      romanization: mannaseo bangawoyo
+      pos: câu chào khi gặp mặt
+    back:
+      meaning:
+        vi: Rất vui được gặp bạn (lịch sự, mềm mại hơn 반갑습니다).
+      examples:
+        - target: 저는 민수예요. 만나서 반가워요.
+          translation:
+            vi: Tôi là Minsu. Rất vui được gặp bạn.
+      pronunciation_note:
+        vi: 반가워요 đọc gần "pan-ga-uơ-yô"; ㅝ là ㅜ + ㅓ.
+      confusion:
+        vi: Viết 반가워요, không viết 반가와요 hay 반갑아요.
+
+  # ---------------- bài 2: 저는 학생이에요 ----------------
+  - key: ko:item:jeo-na
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: 저
+      romanization: jeo
+      pos: đại từ
+    back:
+      meaning:
+        vi: Tôi, em, con, cháu (khiêm nhường, lịch sự). Dạng thân mật là 나 (tôi, tớ, mình).
+      examples:
+        - target: 저는 베트남 사람이에요.
+          translation:
+            vi: Tôi là người Việt Nam.
+      pronunciation_note:
+        vi: Đọc gần "chơ", miệng mở rộng (ㅓ), không tròn môi thành "chô".
+      confusion:
+        vi: Dùng 저 với người lạ, người lớn và khi nói 해요체; 나 chỉ dùng với bạn thân hoặc người nhỏ tuổi hơn, đi với lối nói thân mật.
+
+  - key: ko:item:topic-eun-neun
+    type: grammar_point
+    level: topik1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N은/는
+      romanization: eun / neun
+      pos: trợ từ chủ đề
+    back:
+      meaning:
+        vi: Trợ từ đánh dấu chủ đề câu, gần "thì / là / còn" trong tiếng Việt - 저는 (tôi thì), 란 씨는 (còn Lan thì). Có patchim dùng 은, không có patchim dùng 는.
+      examples:
+        - target: 저는 학생이에요. 선생님은 한국 사람이에요.
+          translation:
+            vi: Tôi là học sinh. Còn thầy giáo là người Hàn.
+      pronunciation_note:
+        vi: Patchim nối sang 은 - 선생님은 đọc [선생니믄].
+      confusion:
+        vi: Nhìn âm tiết ngay trước - 저 (không patchim) → 저는; 선생님 (có ㅁ) → 선생님은.
+
+  - key: ko:item:copula-ieyo-yeyo
+    type: grammar_point
+    level: topik1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N이에요/예요
+      romanization: ieyo / yeyo
+      pos: đuôi "là" (해요체)
+    back:
+      meaning:
+        vi: “Là N” ở đuôi lịch sự 해요체, gắn liền vào danh từ. Có patchim dùng 이에요 (학생이에요), không có patchim dùng 예요 (의사예요). Dạng trang trọng là N입니다.
+      examples:
+        - target: 저는 의사예요. 제 친구는 학생이에요.
+          translation:
+            vi: Tôi là bác sĩ. Bạn tôi là sinh viên.
+      pronunciation_note:
+        vi: 예요 thường đọc gần [에요]; 학생이에요 đọc nối [학쌩이에요].
+      confusion:
+        vi: Không viết 의사이에요 hay 학생예요. Câu hỏi giữ nguyên dạng, chỉ lên giọng - 학생이에요?
+
+  - key: ko:item:seonsaengnim
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 선생님
+      romanization: seonsaengnim
+      pos: danh từ
+    back:
+      meaning:
+        vi: Thầy giáo, cô giáo; cũng là cách gọi kính trọng (bác sĩ, luật sư…). 님 là hậu tố tôn kính.
+      examples:
+        - target: 김 선생님은 한국 사람이에요.
+          translation:
+            vi: Thầy Kim là người Hàn Quốc.
+      pronunciation_note:
+        vi: Đọc "xơn-xeng-nim"; patchim ㄴ, ㅇ, ㅁ đều phải giữ rõ.
+      confusion:
+        vi: Không tự gọi mình là 선생님 - nói 저는 교사예요 (tôi làm giáo viên) hoặc 저는 한국어 선생님이에요 khi giới thiệu nghề.
+
+  - key: ko:item:hoesawon
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 회사원
+      romanization: hoesawon
+      pos: danh từ
+    back:
+      meaning:
+        vi: Nhân viên công ty.
+      examples:
+        - target: 우리 형은 회사원이에요.
+          translation:
+            vi: Anh trai tôi là nhân viên công ty.
+      pronunciation_note:
+        vi: 회 đọc gần "huê"; 원 là ㅇ + ㅝ + ㄴ, đọc gần "uơn".
+
+  - key: ko:item:ganhosa
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 간호사
+      romanization: ganhosa
+      pos: danh từ
+    back:
+      meaning:
+        vi: Y tá, điều dưỡng.
+      examples:
+        - target: 제 동생은 간호사예요.
+          translation:
+            vi: Em tôi là y tá.
+      pronunciation_note:
+        vi: ㅎ giữa từ đọc nhẹ, nghe gần [가노사].
+
+  - key: ko:item:yorisa
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 요리사
+      romanization: yorisa
+      pos: danh từ
+    back:
+      meaning:
+        vi: Đầu bếp.
+      examples:
+        - target: 민수 씨는 요리사예요.
+          translation:
+            vi: Anh Minsu là đầu bếp.
+      pronunciation_note:
+        vi: ㄹ giữa hai nguyên âm đọc như "r" bật nhẹ một lần, không rung lưỡi.
+
+  # ---------------- bài 3: tên và quốc tịch ----------------
+  - key: ko:item:ireum
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 이름
+      romanization: ireum
+      pos: danh từ
+    back:
+      meaning:
+        vi: Tên.
+      examples:
+        - target: 제 이름은 란이에요.
+          translation:
+            vi: Tên tôi là Lan.
+      pronunciation_note:
+        vi: 름 dùng nguyên âm ㅡ (môi dẹt, như "ư"), không phải ㅜ.
+
+  - key: ko:item:ireumi-mwoyeyo
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: 이름이 뭐예요?
+      romanization: ireumi mwoyeyo
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Tên bạn là gì? (lịch sự, dùng với người ngang hàng). Trang trọng hơn - 성함이 어떻게 되세요?
+      examples:
+        - target: 이름이 뭐예요? - 저는 란이에요.
+          translation:
+            vi: Bạn tên là gì? - Tôi là Lan.
+      pronunciation_note:
+        vi: Nối âm - đọc [이르미 뭐예요].
+      confusion:
+        vi: Tiếng Hàn thường bỏ "bạn" trong câu hỏi; không cần thêm 당신 (nghe xa cách, thậm chí bất lịch sự).
+
+  - key: ko:item:ssi
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: 이름 + 씨
+      romanization: ssi
+      pos: hậu tố gọi tên
+    back:
+      meaning:
+        vi: Đặt sau tên người khác để gọi lịch sự, gần “anh/chị/bạn + tên” - 란 씨 (chị Lan), 민수 씨 (anh Minsu). Không bao giờ dùng 씨 cho chính mình.
+      examples:
+        - target: 란 씨는 베트남 사람이에요.
+          translation:
+            vi: Chị Lan là người Việt Nam.
+      pronunciation_note:
+        vi: ㅆ là phụ âm căng, đọc gần "xi" gắt, không bật hơi.
+      confusion:
+        vi: Không dùng 씨 với thầy cô, cấp trên hay người lớn hơn nhiều - gọi bằng chức danh như 선생님.
+
+  - key: ko:item:nara
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 나라
+      romanization: nara
+      pos: danh từ
+    back:
+      meaning:
+        vi: Đất nước, quốc gia.
+      examples:
+        - target: 어느 나라 사람이에요?
+          translation:
+            vi: Bạn là người nước nào?
+      pronunciation_note:
+        vi: ㄹ giữa hai nguyên âm đọc như "r" nhẹ - "na-ra".
+
+  - key: ko:item:saram
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 사람
+      romanization: saram
+      pos: danh từ
+    back:
+      meaning:
+        vi: Người. Tên nước + 사람 = người nước đó (베트남 사람 người Việt Nam).
+      examples:
+        - target: 저는 한국 사람이에요.
+          translation:
+            vi: Tôi là người Hàn Quốc.
+      pronunciation_note:
+        vi: Có patchim ㅁ nên đi với 이에요 - 사람이에요 đọc [사라미에요].
+
+  - key: ko:item:beteunam
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 베트남
+      romanization: beteunam
+      pos: danh từ riêng
+    back:
+      meaning:
+        vi: Việt Nam.
+      examples:
+        - target: 저는 베트남 사람이에요.
+          translation:
+            vi: Tôi là người Việt Nam.
+      pronunciation_note:
+        vi: Đọc "pê-thư-nam"; 트 có ㅡ để tách phụ âm "t" ra thành một âm tiết.
+
+  - key: ko:item:eoneu-nara-saram
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: 어느 나라 사람이에요?
+      romanization: eoneu nara saramieyo
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Bạn là người nước nào? 어느 nghĩa là "nào" (chọn trong nhiều cái).
+      examples:
+        - target: 어느 나라 사람이에요? - 베트남 사람이에요.
+          translation:
+            vi: Bạn là người nước nào? - Tôi là người Việt Nam.
+      pronunciation_note:
+        vi: 어느 đọc "ơ-nư", cả hai nguyên âm đều không tròn môi.
+
+  # ---------------- bài 4: 이것/그것/저것, 네/아니요, 아니에요 ----------------
+  - key: ko:item:demonstratives
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: 이것 / 그것 / 저것
+      romanization: igeot / geugeot / jeogeot
+      pos: đại từ chỉ định
+    back:
+      meaning:
+        vi: Cái này (gần người nói) / cái đó (gần người nghe) / cái kia (xa cả hai). Khi nói nhanh, 이것은 → 이건, 그것은 → 그건, 저것은 → 저건.
+      examples:
+        - target: 이것은 뭐예요? - 그건 책이에요.
+          translation:
+            vi: Cái này là gì? - Cái đó là quyển sách.
+      pronunciation_note:
+        vi: 이것 đọc [이걷]; khi thêm 은 thì nối âm - 이것은 [이거슨].
+      confusion:
+        vi: 저 trong 저것 (kia) khác 저 (tôi) - nhìn từ đi sau để phân biệt.
+
+  - key: ko:item:mwo
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 뭐
+      romanization: mwo
+      pos: đại từ nghi vấn
+    back:
+      meaning:
+        vi: Cái gì, gì (dạng nói của 무엇). 뭐예요? = Là gì vậy?
+      examples:
+        - target: 그건 뭐예요?
+          translation:
+            vi: Cái đó là gì?
+      pronunciation_note:
+        vi: 뭐 = ㅁ + ㅝ, đọc lướt "muơ" thành một âm.
+      confusion:
+        vi: 뭐 kết thúc bằng nguyên âm nên đi với 예요 - 뭐예요, không phải 뭐이에요.
+
+  - key: ko:item:ne-aniyo
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 네 / 아니요
+      romanization: ne / aniyo
+      pos: thán từ trả lời
+    back:
+      meaning:
+        vi: Vâng, dạ, đúng vậy / Không, không phải. 네 còn dùng để "dạ" khi nghe người khác nói.
+      examples:
+        - target: 학생이에요? - 네, 학생이에요.
+          translation:
+            vi: Bạn là học sinh à? - Vâng, tôi là học sinh.
+      pronunciation_note:
+        vi: 네 đọc "nê"; 아니요 thường nói nhanh thành [아뇨].
+
+  - key: ko:item:i-ga-anieyo
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N이/가 아니에요
+      romanization: i / ga anieyo
+      pos: phủ định "không phải là"
+    back:
+      meaning:
+        vi: “Không phải là N”. Có patchim dùng 이 (학생이 아니에요), không có patchim dùng 가 (의사가 아니에요). Dạng trang trọng là N이/가 아닙니다.
+      examples:
+        - target: 저는 의사가 아니에요. 간호사예요.
+          translation:
+            vi: Tôi không phải bác sĩ. Tôi là y tá.
+      pronunciation_note:
+        vi: Nối âm - 학생이 아니에요 đọc liền [학쌩이 아니에요]; 책이 아니에요 đọc [채기 아니에요].
+      confusion:
+        vi: Viết 아니에요, không viết 아니예요. Đừng dùng 은/는 thay cho 이/가 trong cấu trúc này.
+
+  - key: ko:item:yeonpil
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 연필
+      romanization: yeonpil
+      pos: danh từ
+    back:
+      meaning:
+        vi: Bút chì.
+      examples:
+        - target: 그건 연필이에요.
+          translation:
+            vi: Cái đó là bút chì.
+      pronunciation_note:
+        vi: ㅍ bật hơi, hai môi phải chạm nhau - không đọc như "ph" (f) tiếng Việt. Patchim ㄹ cuối đọc như "l".
+
+  - key: ko:item:gabang
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 가방
+      romanization: gabang
+      pos: danh từ
+    back:
+      meaning:
+        vi: Cái cặp, cái túi, ba lô.
+      examples:
+        - target: 저건 제 가방이 아니에요.
+          translation:
+            vi: Cái kia không phải cặp của tôi.
+      pronunciation_note:
+        vi: Đọc "ka-pang"; patchim ㅇ là âm "ng".
+
+  - key: ko:item:chaeksang
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 책상
+      romanization: chaeksang
+      pos: danh từ
+    back:
+      meaning:
+        vi: Cái bàn (bàn học, bàn làm việc).
+      examples:
+        - target: 저건 선생님 책상이에요.
+          translation:
+            vi: Cái kia là bàn của thầy giáo.
+      pronunciation_note:
+        vi: Đọc [책쌍] - ㅅ sau patchim ㄱ thành ㅆ.
+      confusion:
+        vi: 책상 (cái bàn) khác 책 (sách) - đừng chỉ nhìn âm tiết đầu.
+
+  - key: ko:item:gongchaek
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 공책
+      romanization: gongchaek
+      pos: danh từ
+    back:
+      meaning:
+        vi: Quyển vở.
+      examples:
+        - target: 이건 공책이에요. 책이 아니에요.
+          translation:
+            vi: Đây là quyển vở, không phải sách.
+      pronunciation_note:
+        vi: Đọc "kông-chhec"; ㅊ bật hơi.

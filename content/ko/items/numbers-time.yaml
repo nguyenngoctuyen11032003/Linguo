@@ -1,0 +1,765 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Số đếm, thời gian & ngày tháng". Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+schema_version: 1
+demo: true
+source: src:linguo-demo
+items:
+  # ---------------- số Hán-Hàn, điện thoại, ngày tháng ----------------
+  - key: ko:item:sino-numbers
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 일 이 삼 사 오 육 칠 팔 구 십
+      romanization: il i sam sa o yuk chil pal gu sip
+      pos: số từ (Hán-Hàn)
+    back:
+      meaning:
+        vi: số Hán-Hàn từ 1 đến 10 (dùng cho số điện thoại, tiền, ngày tháng, phút)
+      examples:
+        - target: 일, 이, 삼, 사, 오
+          translation:
+            vi: một, hai, ba, bốn, năm
+        - target: 칠월 팔일
+          translation:
+            vi: ngày 8 tháng 7
+      pronunciation_note:
+        vi: 육 đứng sau nguyên âm hoặc ㄹ thường đọc thành [륙] (오육 [오륙]), sau phụ âm khác thì thành [뉵] (십육 [심뉵]). 십 đọc gần "síp", âm cuối ㅂ ngậm môi, không bật ra.
+      confusion:
+        vi: Nhiều số nghe gần âm Hán-Việt (삼 - tam, 사 - tứ, 구 - cửu), bạn có thể dùng điều này để nhớ. Cẩn thận 일 (một) và 이 (hai) chỉ khác nhau âm cuối ㄹ.
+
+  - key: ko:item:sino-compounds
+    type: grammar_point
+    level: topik1
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: 십일 · 이십 · 이십오 · 구십구
+      romanization: sibil · isip · isibo · gusipgu
+      pos: cách ghép số
+    back:
+      meaning:
+        vi: ghép số Hán-Hàn từ 11 đến 99 - (hàng chục) 십 (hàng đơn vị), không nói 일 trước 십
+      examples:
+        - target: 이십오
+          translation:
+            vi: hai mươi lăm (25)
+        - target: 십육
+          translation:
+            vi: mười sáu (16)
+      pronunciation_note:
+        vi: 십일 đọc nối [시빌], 이십오 [이시보]; 십육 đọc [심뉵], 육십 đọc [육씹], 칠십 và 팔십 đọc [칠씹], [팔씹].
+      confusion:
+        vi: Giống tiếng Việt "hai mươi lăm" = 이십오, nhưng 10 chỉ là 십, không phải 일십 (giống "mười", không phải "một mươi").
+
+  - key: ko:item:number-zero
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 공 / 영
+      romanization: gong / yeong
+      pos: số từ
+    back:
+      meaning:
+        vi: số không (공 khi đọc số điện thoại, số phòng; 영 trong toán, nhiệt độ, tỉ số)
+      examples:
+        - target: 공일공
+          translation:
+            vi: 010 (đầu số di động Hàn Quốc)
+        - target: 영 도
+          translation:
+            vi: không độ
+      pronunciation_note:
+        vi: 공 có âm cuối ㅇ như "ng" trong "công"; 영 đọc gần "yơng".
+
+  - key: ko:item:phone-number
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 전화번호
+      romanization: jeonhwa beonho
+      pos: danh từ
+    back:
+      meaning:
+        vi: số điện thoại
+      examples:
+        - target: 전화번호가 뭐예요?
+          translation:
+            vi: Số điện thoại của bạn là bao nhiêu?
+        - target: 공일공에 일이삼사에 오육칠팔이에요.
+          translation:
+            vi: Là 010-1234-5678.
+      pronunciation_note:
+        vi: Khi nói tự nhiên, ㅎ bị yếu đi nên nghe gần [저놔번호]. Dấu gạch ngang trong số điện thoại đọc là 에.
+
+  - key: ko:item:month-day
+    type: grammar_point
+    level: topik1
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: 월 · 일
+      romanization: wol · il
+      pos: danh từ đơn vị
+    back:
+      meaning:
+        vi: tháng · ngày (đi sau số Hán-Hàn - 삼월 tháng 3, 오일 ngày 5)
+      examples:
+        - target: 삼월 이십일 일
+          translation:
+            vi: ngày 21 tháng 3
+        - target: 생일이 팔월 오일이에요.
+          translation:
+            vi: Sinh nhật (của tôi) là ngày 5 tháng 8.
+      pronunciation_note:
+        vi: 월 đọc gần "uơl"; sau phụ âm cuối thì nối âm - 일월 [이뤌], 삼월 [사뭘], 칠월 [치뤌].
+      confusion:
+        vi: Tiếng Hàn nói tháng trước, ngày sau (삼월 오일), ngược với tiếng Việt "ngày 5 tháng 3". 일 vừa là "một" vừa là "ngày", bạn dựa vào vị trí để phân biệt.
+
+  - key: ko:item:irregular-months
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 유월 · 시월
+      romanization: yuwol · siwol
+      pos: danh từ
+    back:
+      meaning:
+        vi: tháng 6 và tháng 10 - hai tháng bất quy tắc, rơi mất phụ âm cuối của 육 và 십
+      examples:
+        - target: 유월 십오 일
+          translation:
+            vi: ngày 15 tháng 6
+        - target: 시월 삼 일
+          translation:
+            vi: ngày 3 tháng 10
+      pronunciation_note:
+        vi: Viết và đọc đúng là 유월 [유월], 시월 [시월] - không phải 육월, 십월.
+      confusion:
+        vi: Người học hay ghép máy móc 육 + 월 = 육월, 십 + 월 = 십월; hai dạng này đều sai chính tả.
+
+  - key: ko:item:myeochil
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking, vocabulary]
+    front:
+      text: 며칠이에요?
+      romanization: myeochirieyo?
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Ngày mấy? / Ngày bao nhiêu?
+      examples:
+        - target: 오늘이 며칠이에요?
+          translation:
+            vi: Hôm nay là ngày bao nhiêu?
+        - target: 생일이 며칠이에요?
+          translation:
+            vi: Sinh nhật bạn là ngày nào?
+      pronunciation_note:
+        vi: Đọc nối [며치리에요]. Viết là 며칠, không viết 몇 일.
+
+  # ---------------- số lớn, tiền ----------------
+  - key: ko:item:baek
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 백
+      romanization: baek
+      pos: số từ (Hán-Hàn)
+    back:
+      meaning:
+        vi: một trăm (100)
+      examples:
+        - target: 오백 원
+          translation:
+            vi: 500 won
+        - target: 백 원
+          translation:
+            vi: 100 won
+      pronunciation_note:
+        vi: Âm cuối ㄱ không bật ra; trước nguyên âm thì nối âm - 백 원 [배권], trước ㅁ thì thành [뱅] - 백만 [뱅만].
+
+  - key: ko:item:cheon
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 천
+      romanization: cheon
+      pos: số từ (Hán-Hàn)
+    back:
+      meaning:
+        vi: một nghìn (1.000)
+      examples:
+        - target: 오천 원
+          translation:
+            vi: 5.000 won
+        - target: 이천이십육 년
+          translation:
+            vi: năm 2026
+      pronunciation_note:
+        vi: ㅊ bật hơi mạnh, đọc gần "chhơn"; 천 원 đọc nối [처눤].
+
+  - key: ko:item:man
+    type: vocab
+    level: topik1
+    difficulty: 3
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 만
+      romanization: man
+      pos: số từ (Hán-Hàn)
+    back:
+      meaning:
+        vi: mười nghìn (10.000) - tiếng Hàn có một từ riêng cho đơn vị này
+      examples:
+        - target: 만 원
+          translation:
+            vi: 10.000 won
+        - target: 삼만 오천 원
+          translation:
+            vi: 35.000 won
+        - target: 십만 원
+          translation:
+            vi: 100.000 won
+      pronunciation_note:
+        vi: 만 원 đọc nối [마눤]; 십만 đọc [심만], 백만 đọc [뱅만].
+      confusion:
+        vi: Tiếng Việt gom số theo nghìn (mười nghìn, trăm nghìn), tiếng Hàn gom theo vạn (만). Vì vậy 10.000 là 만 chứ không phải 십천, và 100.000 là 십만.
+
+  - key: ko:item:won
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 원
+      romanization: won
+      pos: danh từ đơn vị
+    back:
+      meaning:
+        vi: won (đơn vị tiền Hàn Quốc), đi sau số Hán-Hàn
+      examples:
+        - target: 천 원이에요.
+          translation:
+            vi: 1.000 won.
+        - target: 이만 원
+          translation:
+            vi: 20.000 won
+      pronunciation_note:
+        vi: 원 đọc gần "uơn"; nối âm với phụ âm cuối phía trước - 천 원 [처눤], 삼백 원 [삼배권].
+
+  - key: ko:item:eolmayeyo
+    type: phrase
+    level: topik1
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: 얼마예요?
+      romanization: eolmayeyo?
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Bao nhiêu tiền? / Giá bao nhiêu?
+      examples:
+        - target: 이거 얼마예요?
+          translation:
+            vi: Cái này bao nhiêu tiền?
+        - target: 오천 원이에요.
+          translation:
+            vi: 5.000 won.
+      pronunciation_note:
+        vi: 예 sau 마 thường đọc nhẹ như [에] - [얼마에요]; giọng lên ở cuối khi hỏi.
+
+  - key: ko:item:year-nyeon
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 년
+      romanization: nyeon
+      pos: danh từ đơn vị
+    back:
+      meaning:
+        vi: năm (đi sau số Hán-Hàn khi nói năm dương lịch)
+      examples:
+        - target: 이천이십육 년
+          translation:
+            vi: năm 2026
+        - target: 이천 년
+          translation:
+            vi: năm 2000
+      pronunciation_note:
+        vi: Trước 년, âm cuối ㄱ đổi thành [ㅇ] - 육 년 [융년], nên 이천이십육 년 đọc [이천이심늉년].
+
+  # ---------------- số thuần Hàn, đơn vị đếm ----------------
+  - key: ko:item:native-numbers
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 하나 둘 셋 넷 다섯 여섯 일곱 여덟 아홉 열
+      romanization: hana dul set net daseot yeoseot ilgop yeodeol ahop yeol
+      pos: số từ (thuần Hàn)
+    back:
+      meaning:
+        vi: số thuần Hàn từ 1 đến 10 (dùng để đếm đồ vật, người, tuổi, giờ)
+      examples:
+        - target: 하나, 둘, 셋!
+          translation:
+            vi: Một, hai, ba!
+        - target: 열한 개
+          translation:
+            vi: 11 cái
+      pronunciation_note:
+        vi: 셋 [섿], 넷 [넫], 다섯 [다섣], 여섯 [여섣] - âm cuối ㅅ đọc như "t" không bật. 여덟 đọc [여덜], ㅂ câm.
+      confusion:
+        vi: Số thuần Hàn không giống âm Hán-Việt nên khó nhớ hơn; 11-19 ghép với 열 (열하나, 열둘…).
+
+  - key: ko:item:seumul
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 스물
+      romanization: seumul
+      pos: số từ (thuần Hàn)
+    back:
+      meaning:
+        vi: hai mươi (20, thuần Hàn)
+      examples:
+        - target: 스무 살
+          translation:
+            vi: 20 tuổi
+        - target: 스물한 살
+          translation:
+            vi: 21 tuổi
+      pronunciation_note:
+        vi: Đọc gần "sư-mul"; ㅡ không tròn môi, khác ㅜ.
+      confusion:
+        vi: Đứng ngay trước đơn vị đếm, 스물 rút gọn thành 스무 (스무 살), nhưng 21 trở lên vẫn giữ 스물 (스물한 살).
+
+  - key: ko:item:native-short-forms
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: 한 · 두 · 세 · 네 · 스무
+      romanization: han · du · se · ne · seumu
+      pos: dạng rút gọn trước đơn vị
+    back:
+      meaning:
+        vi: dạng rút gọn của 하나, 둘, 셋, 넷, 스물 khi đứng ngay trước đơn vị đếm
+      examples:
+        - target: 사과 한 개
+          translation:
+            vi: một quả táo
+        - target: 학생 두 명
+          translation:
+            vi: hai học sinh
+        - target: 열세 살
+          translation:
+            vi: 13 tuổi
+      pronunciation_note:
+        vi: Các dạng rút gọn đọc liền với đơn vị như một từ - 한 개 [한개], 세 권 [세권].
+      confusion:
+        vi: Người học hay nói 하나 개, 셋 명; trước đơn vị bắt buộc dùng 한, 세. Từ 다섯 trở đi thì không đổi (다섯 개).
+
+  - key: ko:item:counter-gae
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 개
+      romanization: gae
+      pos: đơn vị đếm
+    back:
+      meaning:
+        vi: cái, chiếc, quả (đếm đồ vật nói chung)
+      examples:
+        - target: 사과 세 개 주세요.
+          translation:
+            vi: Cho tôi ba quả táo.
+        - target: 몇 개예요?
+          translation:
+            vi: Mấy cái?
+      pronunciation_note:
+        vi: Sau ㅅ/ㄷ cuối, 개 đọc căng [깨] - 몇 개 [멷깨].
+
+  - key: ko:item:counter-myeong
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 명
+      romanization: myeong
+      pos: đơn vị đếm
+    back:
+      meaning:
+        vi: người (đơn vị đếm người)
+      examples:
+        - target: 학생이 다섯 명 있어요.
+          translation:
+            vi: Có năm học sinh.
+        - target: 몇 명이에요?
+          translation:
+            vi: Mấy người?
+      pronunciation_note:
+        vi: 몇 명 đọc [면명] vì ㅊ cuối gặp ㅁ thì mũi hoá.
+      confusion:
+        vi: Khi lịch sự (ví dụ ở nhà hàng hỏi khách), người Hàn dùng 분 thay 명 - 몇 분이세요?
+
+  - key: ko:item:counter-sal
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 살
+      romanization: sal
+      pos: đơn vị đếm
+    back:
+      meaning:
+        vi: tuổi (đi với số thuần Hàn)
+      examples:
+        - target: 스무 살이에요.
+          translation:
+            vi: Tôi 20 tuổi.
+        - target: 몇 살이에요?
+          translation:
+            vi: Bạn bao nhiêu tuổi?
+      pronunciation_note:
+        vi: 살이에요 đọc nối [사리에요]; 몇 살 đọc [멷쌀].
+      confusion:
+        vi: Không dùng số Hán-Hàn với 살 (이십 살 là sai). Văn bản trang trọng dùng 세 với số Hán-Hàn (이십 세), nhưng khi nói chuyện bạn dùng 살.
+
+  - key: ko:item:counter-byeong
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 병
+      romanization: byeong
+      pos: đơn vị đếm
+    back:
+      meaning:
+        vi: chai, lọ
+      examples:
+        - target: 물 두 병 주세요.
+          translation:
+            vi: Cho tôi hai chai nước.
+      pronunciation_note:
+        vi: 병 đọc gần "byơng"; 몇 병 đọc [멷뼝].
+
+  - key: ko:item:counter-jan
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 잔
+      romanization: jan
+      pos: đơn vị đếm
+    back:
+      meaning:
+        vi: cốc, ly, chén
+      examples:
+        - target: 커피 한 잔 주세요.
+          translation:
+            vi: Cho tôi một ly cà phê.
+      pronunciation_note:
+        vi: ㅈ thường, đọc gần "ch" nhẹ; 몇 잔 đọc [멷짠].
+
+  - key: ko:item:counter-gwon
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 권
+      romanization: gwon
+      pos: đơn vị đếm
+    back:
+      meaning:
+        vi: quyển, cuốn (đếm sách, vở)
+      examples:
+        - target: 책 세 권
+          translation:
+            vi: ba quyển sách
+      pronunciation_note:
+        vi: 권 = ㄱ + ㅝ + ㄴ, đọc gần "kuơn"; giống âm Hán-Việt "quyển".
+
+  - key: ko:item:myeot
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 몇
+      romanization: myeot
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: mấy, bao nhiêu (hỏi số lượng, luôn đi trước đơn vị đếm)
+      examples:
+        - target: 몇 개예요?
+          translation:
+            vi: Mấy cái?
+        - target: 몇 살이에요?
+          translation:
+            vi: Bạn bao nhiêu tuổi?
+      pronunciation_note:
+        vi: Đứng riêng đọc [멷]; làm phụ âm sau căng lên - 몇 개 [멷깨], 몇 시 [멷씨] - hoặc mũi hoá trước ㅁ - 몇 명 [면명].
+
+  # ---------------- giờ, thứ ----------------
+  - key: ko:item:hour-si
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 시
+      romanization: si
+      pos: danh từ đơn vị
+    back:
+      meaning:
+        vi: giờ (khi nói giờ đồng hồ, đi với số thuần Hàn)
+      examples:
+        - target: 세 시예요.
+          translation:
+            vi: Ba giờ.
+        - target: 열두 시
+          translation:
+            vi: mười hai giờ
+      pronunciation_note:
+        vi: 시 đọc gần "shi"; 여덟 시 đọc [여덜씨], 몇 시 [멷씨].
+      confusion:
+        vi: Giờ dùng số thuần Hàn - 세 시 (3 giờ). 삼 시 nghe như người nước ngoài đếm sai.
+
+  - key: ko:item:minute-bun
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 분
+      romanization: bun
+      pos: danh từ đơn vị
+    back:
+      meaning:
+        vi: phút (đi với số Hán-Hàn)
+      examples:
+        - target: 십 분
+          translation:
+            vi: 10 phút
+        - target: 두 시 사십오 분
+          translation:
+            vi: 2 giờ 45 phút
+      pronunciation_note:
+        vi: Sau ㅂ cuối, 분 đọc căng - 십 분 [십뿐], 삼십 분 [삼십뿐].
+
+  - key: ko:item:half-ban
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 반
+      romanization: ban
+      pos: danh từ
+    back:
+      meaning:
+        vi: rưỡi, một nửa (세 시 반 = 3 giờ rưỡi)
+      examples:
+        - target: 세 시 반이에요.
+          translation:
+            vi: Ba giờ rưỡi.
+      pronunciation_note:
+        vi: 반이에요 đọc nối [바니에요].
+      confusion:
+        vi: Giống "rưỡi" trong tiếng Việt - 세 시 반 và 세 시 삼십 분 nghĩa như nhau.
+
+  - key: ko:item:ojeon
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 오전
+      romanization: ojeon
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi sáng, trước 12 giờ trưa (AM)
+      examples:
+        - target: 오전 아홉 시
+          translation:
+            vi: 9 giờ sáng
+      pronunciation_note:
+        vi: Đọc gần "ô-chơn"; ㅓ mở miệng, không tròn môi.
+      confusion:
+        vi: 오전 đứng trước giờ (오전 아홉 시), ngược với tiếng Việt "9 giờ sáng".
+
+  - key: ko:item:ohu
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 오후
+      romanization: ohu
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi chiều, sau 12 giờ trưa (PM)
+      examples:
+        - target: 오후 세 시 반
+          translation:
+            vi: 3 giờ rưỡi chiều
+      pronunciation_note:
+        vi: Đọc gần "ô-hu"; ㅎ ở giữa từ rất nhẹ.
+      confusion:
+        vi: 오후 bao gồm cả buổi chiều và tối khi nói giờ; 오후 일곱 시 là 7 giờ tối.
+
+  - key: ko:item:myeot-si
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: 몇 시예요?
+      romanization: myeot siyeyo?
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Mấy giờ rồi? / Mấy giờ?
+      examples:
+        - target: 지금 몇 시예요?
+          translation:
+            vi: Bây giờ là mấy giờ?
+        - target: 수업이 몇 시예요?
+          translation:
+            vi: Lớp học lúc mấy giờ?
+      pronunciation_note:
+        vi: Đọc [멷씨예요]; ㅅ sau 몇 thành âm căng.
+
+  - key: ko:item:weekdays
+    type: vocab
+    level: topik1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 월요일 화요일 수요일 목요일 금요일 토요일 일요일
+      romanization: woryoil hwayoil suyoil mogyoil geumyoil toyoil iryoil
+      pos: danh từ
+    back:
+      meaning:
+        vi: thứ Hai, thứ Ba, thứ Tư, thứ Năm, thứ Sáu, thứ Bảy, Chủ nhật
+      examples:
+        - target: 오늘은 금요일이에요.
+          translation:
+            vi: Hôm nay là thứ Sáu.
+        - target: 일요일
+          translation:
+            vi: Chủ nhật
+      pronunciation_note:
+        vi: Nối âm - 월요일 [워료일], 목요일 [모교일], 금요일 [그묘일], 일요일 [이료일].
+      confusion:
+        vi: 월요일 là thứ Hai (không phải "tháng"), 일요일 là Chủ nhật (không phải "ngày một"). Tên thứ dựa trên mặt trăng, lửa, nước, gỗ, vàng, đất, mặt trời - âm Hán-Việt nguyệt, hoả, thuỷ, mộc, kim, thổ, nhật.
+
+  - key: ko:item:oneul
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 오늘
+      romanization: oneul
+      pos: danh từ
+    back:
+      meaning:
+        vi: hôm nay
+      examples:
+        - target: 오늘은 월요일이에요.
+          translation:
+            vi: Hôm nay là thứ Hai.
+      pronunciation_note:
+        vi: 늘 dùng ㅡ (không tròn môi), đọc gần "ô-nưl".
+
+  - key: ko:item:naeil
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 내일
+      romanization: naeil
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày mai
+      examples:
+        - target: 내일은 토요일이에요.
+          translation:
+            vi: Ngày mai là thứ Bảy.
+      pronunciation_note:
+        vi: Đọc gần "ne-il"; ㅐ trong tiếng Seoul hiện nay gần như trùng ㅔ.
+
+  - key: ko:item:eoje
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 어제
+      romanization: eoje
+      pos: danh từ
+    back:
+      meaning:
+        vi: hôm qua
+      examples:
+        - target: 어제는 일요일이었어요.
+          translation:
+            vi: Hôm qua là Chủ nhật.
+      pronunciation_note:
+        vi: 어 là "ơ" mở miệng rộng, không phải "ô" - đừng đọc thành 오제.
+
+  - key: ko:item:museun-yoil
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: 무슨 요일이에요?
+      romanization: museun yoirieyo?
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Thứ mấy?
+      examples:
+        - target: 오늘이 무슨 요일이에요?
+          translation:
+            vi: Hôm nay là thứ mấy?
+      pronunciation_note:
+        vi: Khi nói tự nhiên thường chèn âm ㄴ - [무슨뇨이리에요].
+      confusion:
+        vi: Hỏi thứ dùng 무슨 요일, hỏi ngày dùng 며칠; đừng dùng 몇 요일.

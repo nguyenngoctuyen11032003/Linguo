@@ -1,0 +1,374 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:directions
+order_index: 4
+level: a1
+title:
+  vi: Chỉ đường, phương tiện & can
+objectives:
+  - vi: Hỏi đường bằng How do I get to…? và hiểu lời chỉ đường đơn giản.
+  - vi: Chỉ đường bằng go straight on, turn left/right, take the second left, it's on your right.
+  - vi: Dùng can/can't để nói khả năng (I can swim) và khả năng xảy ra (You can walk there).
+  - vi: Nói phương tiện bằng by bus, by taxi, on foot.
+estimated_minutes: 12
+skills: [speaking, listening, grammar, vocabulary]
+prerequisites: [en:lesson:where-is-it]
+items:
+  - item: en:item:how-do-i-get-to
+  - item: en:item:go-straight
+  - item: en:item:turn-left-right
+  - item: en:item:take-the-second-left
+  - item: en:item:on-your-left-right
+  - item: en:item:can-cant
+  - item: en:item:swim
+  - item: en:item:by-bus
+  - item: en:item:on-foot
+  - item: en:item:far
+  - item: en:item:excuse-me
+    role: reuse
+  - item: en:item:bank
+    role: reuse
+  - item: en:item:bus-station
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn chỉ được đường cho một du khách - "Đi thẳng, rẽ trái ở ngã thứ hai, nó ở bên tay phải bạn" - và nói họ có thể đi bộ hay đi xe buýt.
+  - type: explain
+    text:
+      vi: Lời chỉ đường dùng động từ đứng đầu câu, không cần chủ ngữ - Go straight on. Turn left. Take the second right. Giống tiếng Việt "Đi thẳng, rẽ trái", bạn không cần nói You must go hay Please you turn.
+  - type: explain
+    text:
+      vi: Turn left không có to, và "rẽ ở đâu" dùng at - Turn left at the bank. Take the second left nghĩa là rẽ trái ở ngã rẽ thứ hai; dùng first, second, third chứ không dùng one, two. Khi đến nơi, nói It's on your left/right.
+  - type: explain
+    text:
+      vi: "Can + động từ nguyên mẫu nói về khả năng (I can swim - tôi biết bơi) hoặc việc có thể làm được (You can walk there - bạn đi bộ đến đó được). Sau can không có to, không thêm -s hay -ing; phủ định là can't (cannot)."
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt "biết bơi", "có thể đi bộ" đều dịch là can, không dùng know - I can swim, không nói I know swim. Phương tiện dùng by + tên phương tiện, không có a/the (by bus, by taxi), riêng đi bộ là on foot. Khi nghe, can trong câu khẳng định đọc rất nhẹ /kən/, còn can't đọc rõ /kɑːnt/ - đó là dấu hiệu để phân biệt.
+  - type: example
+    target: Excuse me, how do I get to the bus station?
+    target_lang: en
+    translation:
+      vi: Xin lỗi, đi đến bến xe buýt thế nào ạ?
+    note:
+      vi: How do I get to…? là câu hỏi đường phổ biến nhất; get to là "đến nơi".
+  - type: example
+    target: Go straight on and take the second left. It's on your right.
+    target_lang: en
+    translation:
+      vi: Bạn đi thẳng rồi rẽ trái ở ngã rẽ thứ hai. Nó ở bên tay phải bạn.
+    note:
+      vi: Câu chỉ đường bắt đầu bằng động từ; tiếng Việt có thể thêm "bạn" cho tự nhiên.
+  - type: example
+    target: It isn't far. You can walk there, or you can go by bus.
+    target_lang: en
+    translation:
+      vi: Không xa đâu. Bạn có thể đi bộ đến đó, hoặc đi xe buýt.
+    note:
+      vi: Can + walk/go (nguyên mẫu); by bus không có a/the.
+  - type: example
+    target: Can you swim? - No, I can't.
+    target_lang: en
+    translation:
+      vi: Bạn biết bơi không? - Không, mình không biết.
+    note:
+      vi: Câu hỏi đảo can lên đầu; trả lời ngắn lặp lại can/can't.
+  - type: common_mistake
+    wrong: Turn to left at the bank.
+    right: Turn left at the bank.
+    target_lang: en
+    note:
+      vi: Left/right đứng ngay sau turn, không thêm to. "Ở ngân hàng" dùng at.
+  - type: common_mistake
+    wrong: I can to swim.
+    right: I can swim.
+    target_lang: en
+    note:
+      vi: Sau can là động từ nguyên mẫu, không có to. Cũng không nói I know swim cho "tôi biết bơi".
+  - type: common_mistake
+    wrong: It's in your right.
+    right: It's on your right.
+    target_lang: en
+    note:
+      vi: Bên tay trái/phải dùng on, không dùng in hay at.
+  - type: summary
+    points:
+      - vi: Hỏi đường - How do I get to the…? / Where is the…?
+      - vi: Chỉ đường - Go straight on · Turn left/right at… · Take the first/second left · It's on your left/right.
+      - vi: Can + động từ nguyên mẫu, không to; phủ định can't; hỏi Can you…?
+      - vi: "\"Biết bơi\" là can swim, không phải know swim."
+      - vi: by bus / by taxi (không a/the) · on foot (đi bộ).
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:directions-mcq-second-left
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:take-the-second-left
+    prompt:
+      stem: "Câu nào nghĩa là \"Rẽ trái ở ngã rẽ thứ hai\"?"
+      stem_lang: vi
+      options:
+        - { id: y3h, text: Take the second left., lang: en }
+        - { id: i8c, text: Take the two left., lang: en }
+        - { id: d5v, text: Take second the left., lang: en }
+        - { id: o2m, text: Take the left second., lang: en }
+    answer:
+      correct_option_id: y3h
+    explanation:
+      vi: Ngã rẽ thứ hai dùng số thứ tự second, đặt sau the và trước left. Two là số đếm nên không dùng ở đây.
+    display_answer: Take the second left.
+
+  - key: en:exercise:directions-listen-turn-right
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:turn-left-right
+    prompt:
+      audio_asset_id: null
+      fallback_text: Go straight on and turn right at the bank.
+      options:
+        - { id: j6t, text: Đi thẳng rồi rẽ phải ở ngân hàng., lang: vi }
+        - { id: q1x, text: Đi thẳng rồi rẽ trái ở ngân hàng., lang: vi }
+        - { id: u9p, text: Rẽ phải rồi đi thẳng đến ngân hàng., lang: vi }
+        - { id: b7w, text: "Đi thẳng đến ngân hàng, nó ở bên phải.", lang: vi }
+    answer:
+      correct_option_id: j6t
+    explanation:
+      vi: Thứ tự là go straight on (đi thẳng) trước, rồi turn right (rẽ phải) at the bank (ở ngân hàng). Right là phải, left là trái.
+    display_answer: Đi thẳng rồi rẽ phải ở ngân hàng.
+
+  - key: en:exercise:directions-mcq-can-swim
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:can-cant
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: I ___ swim, but I can't drive."
+      stem_lang: vi
+      options:
+        - { id: h2n, text: can, lang: en }
+        - { id: a6r, text: can to, lang: en }
+        - { id: e4k, text: know, lang: en }
+        - { id: w8s, text: cans, lang: en }
+    answer:
+      correct_option_id: h2n
+    explanation:
+      vi: "\"Biết bơi\" là can swim. Sau can không có to, can không bao giờ thêm -s, và know không đứng trực tiếp trước động từ swim."
+    display_answer: can
+
+  - key: en:exercise:directions-fill-on-right-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:on-your-left-right
+    prompt:
+      template: "The post office? It's {{b1}} your {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Bưu điện à? Nó ở bên tay phải bạn."
+        - "Gợi ý: giới từ hai chữ cái; phải là right."
+    answer:
+      blanks:
+        b1: [on]
+        b2: [right]
+    known_wrong:
+      - answer: in
+        feedback_vi: Bên tay trái/phải dùng on - on your right.
+        error_tag: preposition_on_your_right
+      - answer: at
+        feedback_vi: Bên tay trái/phải dùng on - on your right.
+        error_tag: preposition_on_your_right
+      - answer: left
+        feedback_vi: Left là bên trái. Bên phải là right.
+        error_tag: left_right
+    explanation:
+      vi: Chỉ vị trí bên tay phải người nghe dùng on your right. In và at không đi với your left/right.
+    display_answer: The post office? It's on your right.
+
+  - key: en:exercise:directions-order-turn-left
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:turn-left-right
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Đến ngân hàng thì rẽ trái.\""
+      tokens:
+        - { id: t-bank, text: bank }
+        - { id: t-left, text: left }
+        - { id: t-at, text: at }
+        - { id: t-turn, text: Turn }
+        - { id: t-to, text: to }
+        - { id: t-the, text: the }
+        - { id: t-on, text: on }
+        - { id: t-right, text: right }
+    answer:
+      orders:
+        - [t-turn, t-left, t-at, t-the, t-bank]
+    explanation:
+      vi: Câu chỉ đường bắt đầu bằng động từ Turn, left đứng ngay sau (không có to), và "ở ngân hàng" là at the bank.
+    display_answer: Turn left at the bank.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:directions-fill-on-foot
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:on-foot
+    prompt:
+      template: "The park isn't far. It's five minutes {{b1}} foot."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [on]
+    known_wrong:
+      - answer: by
+        feedback_vi: Phương tiện khác dùng by (by bus), nhưng đi bộ nói chuẩn là on foot.
+        error_tag: on_foot
+      - answer: with
+        feedback_vi: Đi bộ là on foot, không dùng with.
+        error_tag: on_foot
+      - answer: in
+        feedback_vi: Đi bộ là on foot, không dùng in.
+        error_tag: on_foot
+    explanation:
+      vi: Đi bộ là on foot - cụm cố định. Đừng áp quy tắc by bus vào đây.
+    display_answer: The park isn't far. It's five minutes on foot.
+
+  - key: en:exercise:directions-translate-by-bus
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:by-bus
+    prompt:
+      source_text: Bạn có thể đến đó bằng xe buýt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - You can go there by bus.
+        - You can get there by bus.
+        - You can take a bus there.
+        - You can take the bus there.
+        - You can go by bus.
+        - You can get there on the bus.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: You can to go there by bus.
+        feedback_vi: Sau can không có to - You can go there by bus.
+        error_tag: can_to
+      - answer: You can going there by bus.
+        feedback_vi: Sau can dùng động từ nguyên mẫu go, không dùng going.
+        error_tag: can_verb_form
+      - answer: You can go there by a bus.
+        feedback_vi: By + phương tiện không có a/the - by bus.
+        error_tag: by_transport
+      - answer: You can go there with bus.
+        feedback_vi: Phương tiện dùng by, không dùng with - by bus.
+        error_tag: by_transport
+      - answer: You can go to there by bus.
+        feedback_vi: There đã có nghĩa "đến đó", không thêm to - go there.
+        error_tag: go_to_there
+    explanation:
+      vi: "\"Có thể\" là can + động từ nguyên mẫu (go/get). \"Bằng xe buýt\" là by bus, không có a/the; hoặc nói take a bus."
+    display_answer: You can go there by bus.
+
+  - key: en:exercise:directions-translate-swim-drive
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:swim
+    prompt:
+      source_text: Tôi biết bơi nhưng không biết lái xe.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I can swim, but I can't drive.
+        - I can swim, but I don't know how to drive.
+        - I know how to swim, but I can't drive.
+        - I know how to swim, but I don't know how to drive.
+        - I can swim, but I can't drive a car.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I know swim, but I don't know drive.
+        feedback_vi: "\"Biết bơi\" là can swim (hoặc know how to swim), không nói know swim."
+        error_tag: know_for_can
+      - answer: I can to swim, but I can't to drive.
+        feedback_vi: Sau can và can't không có to.
+        error_tag: can_to
+      - answer: I can swimming, but I can't driving.
+        feedback_vi: Sau can dùng động từ nguyên mẫu - swim, drive.
+        error_tag: can_verb_form
+      - answer: I can swim, but I don't can drive.
+        feedback_vi: Phủ định của can là can't (cannot), không dùng don't.
+        error_tag: can_negative
+    explanation:
+      vi: "\"Biết làm gì\" (kỹ năng) là can + nguyên mẫu; \"không biết\" là can't. Know chỉ dùng được trong cụm know how to."
+    display_answer: I can swim, but I can't drive.
+
+  # ---------------- application ----------------
+  - key: en:exercise:directions-translate-route
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:go-straight
+    prompt:
+      source_text: Go straight on, then take the first left. It's on your right.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đi thẳng, rồi rẽ trái ở ngã rẽ đầu tiên. Nó ở bên tay phải bạn.
+        - Đi thẳng, rồi rẽ trái ở ngã rẽ thứ nhất. Nó ở bên tay phải bạn.
+        - Đi thẳng, sau đó rẽ trái ở ngã rẽ đầu tiên. Nó ở bên phải bạn.
+        - Đi thẳng, sau đó rẽ trái ở ngã rẽ đầu tiên. Nó ở bên tay phải bạn.
+        - Đi thẳng, rồi rẽ trái ở ngã rẽ đầu tiên. Nó ở bên phải bạn.
+        - Bạn đi thẳng, rồi rẽ trái ở ngã rẽ đầu tiên. Nó ở bên tay phải bạn.
+        - Bạn đi thẳng, rồi rẽ trái ở ngã rẽ đầu tiên. Nó ở bên tay phải.
+        - Đi thẳng rồi rẽ trái ở ngã rẽ đầu tiên. Nó nằm bên tay phải bạn.
+        - Đi thẳng rồi rẽ trái ở chỗ rẽ đầu tiên. Nó ở bên tay phải bạn.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Go straight on là "đi thẳng", take the first left là "rẽ trái ở ngã rẽ đầu tiên", on your right là "bên tay phải bạn". Take ở đây không có nghĩa "cầm, lấy".
+    display_answer: Đi thẳng, rồi rẽ trái ở ngã rẽ đầu tiên. Nó ở bên tay phải bạn.
+
+  - key: en:exercise:directions-mcq-walk-there
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:far
+    prompt:
+      stem: "Một du khách hỏi bạn: \"Is it far? Can I walk there?\" Chỗ đó rất gần. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: g6z, text: "No, it isn't. You can walk there.", lang: en }
+        - { id: m3u, text: "No, it isn't. You can to walk there.", lang: en }
+        - { id: c8j, text: "No, it isn't far. You can walking there.", lang: en }
+        - { id: s5f, text: "No, it hasn't. You can walk there.", lang: en }
+    answer:
+      correct_option_id: g6z
+    explanation:
+      vi: Câu hỏi Is it far? trả lời bằng is - No, it isn't. Sau can là động từ nguyên mẫu walk, không có to, không thêm -ing.
+    display_answer: "No, it isn't. You can walk there."

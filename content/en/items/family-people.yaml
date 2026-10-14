@@ -1,0 +1,860 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Gia đình & con người". IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Gia đình tôi ----------------
+  - key: en:item:family
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: family
+      ipa: /ˈfæməli/
+      pos: danh từ
+    back:
+      meaning:
+        vi: gia đình
+      examples:
+        - target: This is my family.
+          translation:
+            vi: Đây là gia đình tôi.
+        - target: I have a big family.
+          translation:
+            vi: Tôi có một gia đình đông người.
+      pronunciation_note:
+        vi: Nhấn âm đầu (FA). Âm giữa đọc rất nhẹ, nhiều người đọc gần như "phem-li".
+      confusion:
+        vi: Gia đình đông người là a big family, không nói "a many family".
+
+  - key: en:item:mother
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: mother
+      ipa: UK /ˈmʌðə/ · US /ˈmʌðɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: mẹ
+      examples:
+        - target: My mother is a teacher.
+          translation:
+            vi: Mẹ tôi là giáo viên.
+      pronunciation_note:
+        vi: Âm th ở giữa là /ð/ - đặt đầu lưỡi giữa hai hàm răng rồi rung, không đọc thành "đ" hay "z".
+      confusion:
+        vi: Khi nói chuyện thân mật, người Anh gọi mẹ là mum, người Mỹ gọi là mom.
+
+  - key: en:item:father
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: father
+      ipa: UK /ˈfɑːðə/ · US /ˈfɑːðɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bố, ba, cha
+      examples:
+        - target: My father is a doctor.
+          translation:
+            vi: Bố tôi là bác sĩ.
+      pronunciation_note:
+        vi: Âm a kéo dài /ɑː/ như "a" trong "ba", th là /ð/ có rung như trong mother.
+      confusion:
+        vi: Cách gọi thân mật là dad. Bạn có thể nói my dad thay cho my father khi nói chuyện hằng ngày.
+
+  - key: en:item:parents
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: parents
+      ipa: UK /ˈpeərənts/ · US /ˈperənts/
+      pos: danh từ (số nhiều)
+    back:
+      meaning:
+        vi: bố mẹ, cha mẹ
+      examples:
+        - target: These are my parents.
+          translation:
+            vi: Đây là bố mẹ tôi.
+      pronunciation_note:
+        vi: Nhấn âm đầu (PEA), đuôi -nts đọc gọn, đừng bỏ âm /s/ cuối.
+      confusion:
+        vi: Parents luôn chỉ hai người (bố và mẹ) nên đi với are và these - These are my parents. Parents không có nghĩa là "họ hàng" (họ hàng là relatives).
+
+  - key: en:item:brother
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: brother
+      ipa: UK /ˈbrʌðə/ · US /ˈbrʌðɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: anh trai hoặc em trai
+      examples:
+        - target: This is my brother, Nam.
+          translation:
+            vi: Đây là anh trai tôi, Nam.
+      pronunciation_note:
+        vi: Âm o đọc là /ʌ/ (gần "ă"), không đọc "bro-thơ". Th là /ð/ có rung.
+      confusion:
+        vi: Tiếng Anh không có từ riêng cho "anh" và "em". Nếu cần nói rõ, bạn thêm older (anh trai) hoặc younger (em trai).
+
+  - key: en:item:sister
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: sister
+      ipa: UK /ˈsɪstə/ · US /ˈsɪstɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chị gái hoặc em gái
+      examples:
+        - target: My sister is a student.
+          translation:
+            vi: Chị (em) gái tôi là sinh viên.
+      confusion:
+        vi: Sister dùng cho cả chị và em gái. Chị gái là older sister, em gái là younger sister.
+
+  - key: en:item:son
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: son
+      ipa: /sʌn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: con trai (của bố mẹ)
+      examples:
+        - target: This is our son, Bao.
+          translation:
+            vi: Đây là con trai chúng tôi, Bảo.
+      pronunciation_note:
+        vi: Đọc giống hệt sun (mặt trời) - /sʌn/, gần "xăn", không đọc "xon".
+      confusion:
+        vi: Son chỉ quan hệ con của bố mẹ. Cậu bé nói chung là boy.
+
+  - key: en:item:daughter
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: daughter
+      ipa: UK /ˈdɔːtə/ · US /ˈdɑːtɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: con gái (của bố mẹ)
+      examples:
+        - target: Their daughter is a doctor.
+          translation:
+            vi: Con gái họ là bác sĩ.
+      pronunciation_note:
+        vi: Chữ gh câm - đọc gần "đo-tờ" (Anh) hoặc "đa-đờ" (Mỹ).
+      confusion:
+        vi: Daughter chỉ quan hệ con của bố mẹ. Cô bé nói chung là girl.
+
+  - key: en:item:grandmother
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: grandmother
+      ipa: UK /ˈɡrænmʌðə/ · US /ˈɡrænmʌðɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bà (nội hoặc ngoại)
+      examples:
+        - target: My grandmother is very kind.
+          translation:
+            vi: Bà tôi rất hiền.
+      pronunciation_note:
+        vi: Chữ d trong grand thường không đọc - gần "gren-mă-đờ".
+      confusion:
+        vi: Tiếng Anh không phân biệt bà nội và bà ngoại. Muốn nói rõ, bạn nói my mother's mother (bà ngoại) hoặc my father's mother (bà nội). Cách gọi thân mật là grandma.
+
+  - key: en:item:grandfather
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: grandfather
+      ipa: UK /ˈɡrænfɑːðə/ · US /ˈɡrænfɑːðɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ông (nội hoặc ngoại)
+      examples:
+        - target: This is my grandfather.
+          translation:
+            vi: Đây là ông tôi.
+      confusion:
+        vi: Giống grandmother, grandfather dùng cho cả ông nội và ông ngoại. Cách gọi thân mật là grandpa. Ông bà nói chung là grandparents.
+
+  - key: en:item:older-younger
+    type: vocab
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: older / younger
+      ipa: older UK /ˈəʊldə/ · US /ˈoʊldɚ/ · younger UK /ˈjʌŋɡə/ · US /ˈjʌŋɡɚ/
+      pos: tính từ (so sánh)
+    back:
+      meaning:
+        vi: "lớn tuổi hơn / nhỏ tuổi hơn: older brother = anh trai, younger sister = em gái"
+      examples:
+        - target: I have an older brother.
+          translation:
+            vi: Tôi có một anh trai.
+        - target: My younger sister is a student.
+          translation:
+            vi: Em gái tôi là sinh viên.
+      pronunciation_note:
+        vi: Younger có âm /ɡ/ sau ng - đọc gần "giăng-gơ", khác young /jʌŋ/ không có /ɡ/.
+      confusion:
+        vi: Older đứng trước brother/sister, giống mọi tính từ. Nói an older brother (older bắt đầu bằng nguyên âm) nhưng a younger sister.
+
+  - key: en:item:this-that-these-those
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: this / that / these / those
+      ipa: this /ðɪs/ · that /ðæt/ · these /ðiːz/ · those UK /ðəʊz/ · US /ðoʊz/
+      pos: từ chỉ định
+    back:
+      meaning:
+        vi: "đây/kia: this (một người, ở gần), that (một người, ở xa), these (nhiều người, ở gần), those (nhiều người, ở xa)"
+      examples:
+        - target: This is my sister.
+          translation:
+            vi: Đây là chị gái tôi.
+        - target: These are my parents.
+          translation:
+            vi: Đây là bố mẹ tôi.
+        - target: Is that your brother?
+          translation:
+            vi: Kia có phải anh trai bạn không?
+      pronunciation_note:
+        vi: This /ðɪs/ âm i ngắn, these /ðiːz/ âm i dài và kết thúc bằng /z/ - phân biệt rõ hai từ này để người nghe biết một hay nhiều người.
+      confusion:
+        vi: Tiếng Việt dùng "đây" cho cả một hay nhiều người, nhưng tiếng Anh phải đổi - this is (một người), these are (nhiều người).
+
+  # ---------------- Bài 2: Của ai? ----------------
+  - key: en:item:possessive-adjectives
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: my / your / his / her / our / their
+      ipa: my /maɪ/ · your /jɔː(r)/ · his /hɪz/ · her /hɜː(r)/ · our /ˈaʊə(r)/ · their /ðeə(r)/ (US đọc rõ r)
+      pos: tính từ sở hữu
+    back:
+      meaning:
+        vi: "của tôi, của bạn, của anh ấy, của cô ấy, của chúng tôi, của họ - luôn đứng trước danh từ"
+      examples:
+        - target: My mother is a doctor.
+          translation:
+            vi: Mẹ tôi là bác sĩ.
+        - target: Their son is a student.
+          translation:
+            vi: Con trai họ là sinh viên.
+      confusion:
+        vi: Tiếng Việt đặt "của tôi" sau danh từ (mẹ tôi), còn tiếng Anh đặt my trước (my mother). Không dùng I, he, she, they trước danh từ - không nói "I mother".
+
+  - key: en:item:his
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: his
+      ipa: /hɪz/
+      pos: tính từ sở hữu
+    back:
+      meaning:
+        vi: của anh ấy, của ông ấy, của cậu ấy (người sở hữu là nam)
+      examples:
+        - target: Minh is with his sister.
+          translation:
+            vi: Minh đang đi cùng chị gái của cậu ấy.
+      pronunciation_note:
+        vi: Đuôi là âm /z/ có rung, gần "hiz", không đọc "hít".
+      confusion:
+        vi: His hay her phụ thuộc vào người sở hữu, không phụ thuộc vào người được nói tới - Minh's sister là his sister (vì Minh là nam).
+
+  - key: en:item:her
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: her
+      ipa: UK /hɜː/ · US /hɝː/
+      pos: tính từ sở hữu
+    back:
+      meaning:
+        vi: của cô ấy, của bà ấy, của chị ấy (người sở hữu là nữ)
+      examples:
+        - target: Lan loves her brother.
+          translation:
+            vi: Lan rất thương em trai mình.
+      confusion:
+        vi: Lan's brother là her brother (vì Lan là nữ), dù brother là nam. Người Việt hay chọn theo người được nói tới và nói nhầm "his brother".
+
+  - key: en:item:our
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: our
+      ipa: UK /ˈaʊə/ · US /ˈaʊɚ/
+      pos: tính từ sở hữu
+    back:
+      meaning:
+        vi: của chúng tôi, của chúng ta
+      examples:
+        - target: Our parents are teachers.
+          translation:
+            vi: Bố mẹ chúng tôi là giáo viên.
+      pronunciation_note:
+        vi: Đọc gần "ao-ơ", nhiều người đọc gần giống hour (giờ). Chữ o không đọc thành "ô".
+      confusion:
+        vi: We là "chúng tôi" (chủ ngữ), our là "của chúng tôi" (đứng trước danh từ). Không nói "we parents".
+
+  - key: en:item:their
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: their
+      ipa: UK /ðeə/ · US /ðer/
+      pos: tính từ sở hữu
+    back:
+      meaning:
+        vi: của họ
+      examples:
+        - target: Their daughter is a teacher.
+          translation:
+            vi: Con gái họ là giáo viên.
+      pronunciation_note:
+        vi: Their, there và they're đọc giống nhau /ðeə/ nhưng viết khác và nghĩa khác.
+      confusion:
+        vi: They là "họ" (chủ ngữ), their là "của họ". Their đứng trước danh từ - their son, không nói "they son".
+
+  - key: en:item:possessive-s
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "'s (Lan's mother)"
+      ipa: "'s /s/ sau âm vô thanh (Mark's) · /z/ sau âm hữu thanh (Lan's) · /ɪz/ sau âm gió (Rose's)"
+      pos: sở hữu cách
+    back:
+      meaning:
+        vi: "của (người): tên người + 's + danh từ - Lan's mother = mẹ của Lan"
+      examples:
+        - target: Lan's mother is a doctor.
+          translation:
+            vi: Mẹ của Lan là bác sĩ.
+        - target: This is my sister's son.
+          translation:
+            vi: Đây là con trai của chị gái tôi.
+      confusion:
+        vi: Thứ tự ngược tiếng Việt - "mẹ của Lan" là Lan's mother, không nói "mother of Lan" hay "mother Lan". Nhớ có dấu nháy ' trước s.
+
+  - key: en:item:uncle
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: uncle
+      ipa: /ˈʌŋkl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chú, bác (trai), cậu, dượng
+      examples:
+        - target: My uncle is my father's brother.
+          translation:
+            vi: Chú tôi là em trai của bố tôi.
+      confusion:
+        vi: Một từ uncle thay cho chú, bác, cậu, dượng của tiếng Việt. Uncle bắt đầu bằng nguyên âm nên nói an uncle.
+
+  - key: en:item:aunt
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: aunt
+      ipa: UK /ɑːnt/ · US /ænt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cô, dì, bác (gái), thím, mợ
+      examples:
+        - target: Her aunt is a nurse.
+          translation:
+            vi: Dì của cô ấy là y tá.
+      pronunciation_note:
+        vi: Người Anh đọc /ɑːnt/ (gần "an-t"), người Mỹ đọc /ænt/ giống ant (con kiến).
+      confusion:
+        vi: Aunt thay cho cô, dì, bác gái, thím, mợ. Aunt bắt đầu bằng nguyên âm nên nói an aunt.
+
+  - key: en:item:cousin
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: cousin
+      ipa: /ˈkʌzn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: anh, chị, em họ
+      examples:
+        - target: Hoa is my cousin.
+          translation:
+            vi: Hoa là em họ tôi.
+      pronunciation_note:
+        vi: Chữ ou đọc là /ʌ/ (gần "ă") và s đọc /z/ - gần "cădn", không đọc "cu-xin".
+      confusion:
+        vi: Cousin dùng cho cả nam, nữ, lớn tuổi hơn hay nhỏ tuổi hơn - không cần thêm older hay younger như brother/sister.
+
+  # ---------------- Bài 3: Tôi có… ----------------
+  - key: en:item:have-has
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: have / has
+      ipa: have /hæv/ · has /hæz/
+      pos: động từ
+    back:
+      meaning:
+        vi: "có: I, you, we, they → have; he, she, it → has"
+      examples:
+        - target: I have two sisters.
+          translation:
+            vi: Tôi có hai chị em gái.
+        - target: She has a brother.
+          translation:
+            vi: Cô ấy có một anh trai.
+      confusion:
+        vi: He, she và tên một người (Lan, my mother) luôn đi với has. Phủ định và câu hỏi dùng do/does + have - She doesn't have a brother, Do you have a sister?
+
+  - key: en:item:have-got
+    type: grammar_point
+    level: a1
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: have got / has got
+      ipa: have got /hæv ˈɡɒt/ (US /ˈɡɑːt/) · I've got /aɪv ˈɡɒt/ · she's got /ʃiːz ˈɡɒt/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: "có (giống have, hay dùng trong văn nói Anh): I've got a brother. She's got two sons."
+      examples:
+        - target: I've got an older sister.
+          translation:
+            vi: Tôi có một chị gái.
+        - target: Has he got any children?
+          translation:
+            vi: Anh ấy có con chưa?
+        - target: We haven't got a car.
+          translation:
+            vi: Chúng tôi không có xe hơi.
+      confusion:
+        vi: "Câu hỏi và phủ định với have got không dùng do: Have you got a brother? (không nói Do you have got…?). She's got ở đây là She has got, không phải She is."
+
+  - key: en:item:child
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: child / children
+      ipa: child /tʃaɪld/ · children /ˈtʃɪldrən/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đứa con, đứa trẻ / những đứa con, trẻ em (số nhiều bất quy tắc)
+      examples:
+        - target: They have three children.
+          translation:
+            vi: Họ có ba người con.
+        - target: She is an only child.
+          translation:
+            vi: Cô ấy là con một.
+      pronunciation_note:
+        vi: Child đọc /aɪ/ (gần "chai-ld"), nhưng children đọc /ɪ/ ngắn (gần "chil-đrần") - nguyên âm thay đổi.
+      confusion:
+        vi: Số nhiều là children, không phải "childs" hay "childrens".
+
+  - key: en:item:baby
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: baby
+      ipa: /ˈbeɪbi/
+      pos: danh từ
+    back:
+      meaning:
+        vi: em bé
+      examples:
+        - target: My sister has got a baby boy.
+          translation:
+            vi: Chị tôi có một bé trai.
+      pronunciation_note:
+        vi: Âm đầu là /eɪ/ - "bây-bi", không đọc "ba-bi".
+      confusion:
+        vi: Số nhiều đổi y thành ies - babies.
+
+  - key: en:item:husband
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: husband
+      ipa: /ˈhʌzbənd/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chồng
+      examples:
+        - target: Her husband is an engineer.
+          translation:
+            vi: Chồng cô ấy là kỹ sư.
+      pronunciation_note:
+        vi: Chữ s đọc /z/, âm sau rất nhẹ - gần "hăz-bần".
+
+  - key: en:item:wife
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: wife
+      ipa: /waɪf/
+      pos: danh từ
+    back:
+      meaning:
+        vi: vợ
+      examples:
+        - target: This is my wife, Mai.
+          translation:
+            vi: Đây là vợ tôi, Mai.
+      confusion:
+        vi: Số nhiều là wives (f đổi thành v). Giới thiệu vợ mình thì dùng my wife, vợ của anh ấy là his wife.
+
+  - key: en:item:only-child
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: an only child
+      ipa: UK /ən ˌəʊnli ˈtʃaɪld/ · US /ən ˌoʊnli ˈtʃaɪld/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: con một (không có anh chị em ruột)
+      examples:
+        - target: I'm an only child.
+          translation:
+            vi: Tôi là con một.
+      confusion:
+        vi: Only bắt đầu bằng nguyên âm nên nói an only child. Cũng có thể nói I haven't got any brothers or sisters.
+
+  - key: en:item:twin
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: twin
+      ipa: /twɪn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: anh/chị/em sinh đôi
+      examples:
+        - target: Mai and Hoa are twins.
+          translation:
+            vi: Mai và Hoa là chị em sinh đôi.
+        - target: I've got a twin brother.
+          translation:
+            vi: Tôi có một anh (em) trai sinh đôi.
+      confusion:
+        vi: Hai người sinh đôi là twins (số nhiều). Một người là a twin brother hoặc a twin sister.
+
+  # ---------------- Bài 4: Miêu tả người ----------------
+  - key: en:item:adjective-before-noun
+    type: grammar_point
+    level: a1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: a kind teacher / She is kind.
+      pos: vị trí tính từ
+    back:
+      meaning:
+        vi: "Tính từ đứng trước danh từ (a tall man), hoặc đứng sau be (He is tall). Tính từ không bao giờ thêm -s."
+      examples:
+        - target: She is a kind teacher.
+          translation:
+            vi: Cô ấy là một giáo viên tốt bụng.
+        - target: My brothers are tall.
+          translation:
+            vi: Các anh trai tôi đều cao.
+      confusion:
+        vi: Tiếng Việt nói "giáo viên tốt bụng" (danh từ trước), tiếng Anh ngược lại - a kind teacher, không nói "a teacher kind". Và luôn cần be - She is kind, không nói "She kind".
+
+  - key: en:item:tall
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: tall
+      ipa: UK /tɔːl/ · US /tɑːl/
+      pos: tính từ
+    back:
+      meaning:
+        vi: cao (người, cây, toà nhà)
+      examples:
+        - target: My father is tall.
+          translation:
+            vi: Bố tôi cao.
+      pronunciation_note:
+        vi: Âm a đọc /ɔː/ dài (gần "to"), đuôi l đọc rõ.
+      confusion:
+        vi: Người cao dùng tall, không dùng high. High dùng cho núi, tường, giá cả.
+
+  - key: en:item:short
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: short
+      ipa: UK /ʃɔːt/ · US /ʃɔːrt/
+      pos: tính từ
+    back:
+      meaning:
+        vi: thấp (người); ngắn (tóc, đồ vật)
+      examples:
+        - target: My sister is short.
+          translation:
+            vi: Em gái tôi thấp.
+        - target: He has got short hair.
+          translation:
+            vi: Anh ấy để tóc ngắn.
+      confusion:
+        vi: Short là trái nghĩa của tall (người) và của long (tóc). Người thấp không dùng low.
+
+  - key: en:item:kind
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: kind
+      ipa: /kaɪnd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: tốt bụng, hiền, tử tế
+      examples:
+        - target: My grandmother is very kind.
+          translation:
+            vi: Bà tôi rất hiền.
+      pronunciation_note:
+        vi: Âm i đọc /aɪ/ - "cai-nd", không đọc "kin".
+      confusion:
+        vi: Kind là tính từ nên cần be phía trước - She is kind, không nói "She kind".
+
+  - key: en:item:friendly
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: friendly
+      ipa: /ˈfrendli/
+      pos: tính từ
+    back:
+      meaning:
+        vi: thân thiện, dễ gần
+      examples:
+        - target: Her parents are very friendly.
+          translation:
+            vi: Bố mẹ cô ấy rất thân thiện.
+      pronunciation_note:
+        vi: Chữ ie đọc là /e/ - "phren-li", không đọc "phrai".
+      confusion:
+        vi: Friendly có đuôi -ly nhưng là tính từ, không phải trạng từ. Nói a friendly man, He is friendly.
+
+  - key: en:item:funny
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: funny
+      ipa: /ˈfʌni/
+      pos: tính từ
+    back:
+      meaning:
+        vi: vui tính, hài hước, buồn cười
+      examples:
+        - target: My uncle is very funny.
+          translation:
+            vi: Chú tôi rất vui tính.
+      confusion:
+        vi: Funny là hài hước, làm người khác cười. Fun là vui (một hoạt động vui) - đừng nhầm hai từ này.
+
+  - key: en:item:shy
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: shy
+      ipa: /ʃaɪ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhút nhát, ngại ngùng
+      examples:
+        - target: My younger brother is shy.
+          translation:
+            vi: Em trai tôi nhút nhát.
+      pronunciation_note:
+        vi: Sh đọc /ʃ/ (gần "s" uốn lưỡi), y đọc /aɪ/ - gần "sai".
+
+  - key: en:item:beautiful
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: beautiful
+      ipa: /ˈbjuːtɪfl/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đẹp (thường dùng cho phụ nữ, cảnh vật)
+      examples:
+        - target: Her mother is beautiful.
+          translation:
+            vi: Mẹ cô ấy rất đẹp.
+      pronunciation_note:
+        vi: Nhấn âm đầu, đọc gần "biu-ti-phồ". Chữ eau đọc /juː/.
+      confusion:
+        vi: Đàn ông đẹp trai thường dùng handsome. Beautiful viết với eau - hay bị viết sai thành "beatiful".
+
+  - key: en:item:handsome
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: handsome
+      ipa: /ˈhænsəm/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đẹp trai
+      examples:
+        - target: Her brother is very handsome.
+          translation:
+            vi: Anh trai cô ấy rất đẹp trai.
+      pronunciation_note:
+        vi: Chữ d câm - đọc gần "hen-xầm".
+      confusion:
+        vi: Handsome thường dùng cho nam. Với nữ, bạn dùng beautiful hoặc pretty.
+
+  # ---------------- Bài 5: Ôn tập ----------------
+  - key: en:item:look-like
+    type: phrase
+    level: a1
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: look like
+      ipa: /ˈlʊk laɪk/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: trông giống (ai đó)
+      examples:
+        - target: She looks like her mother.
+          translation:
+            vi: Cô ấy trông giống mẹ.
+        - target: Who do you look like?
+          translation:
+            vi: Bạn trông giống ai?
+      confusion:
+        vi: Sau he, she phải thêm -s - She looks like…, không nói "She look like". Không cần be - không nói "She is look like".
+
+  - key: en:item:married
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: married
+      ipa: /ˈmærid/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đã kết hôn, có gia đình
+      examples:
+        - target: My sister is married.
+          translation:
+            vi: Chị tôi đã lập gia đình.
+        - target: Are you married?
+          translation:
+            vi: Bạn đã kết hôn chưa?
+      pronunciation_note:
+        vi: Đuôi -ed đọc /d/, không đọc thành âm tiết riêng - "me-rịd".
+      confusion:
+        vi: Married là tính từ nên đi với be - She is married, không nói "She married" khi muốn nói tình trạng hiện tại. Chưa kết hôn là single.

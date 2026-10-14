@@ -1,0 +1,372 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:where-is-it
+order_index: 3
+level: a1
+title:
+  vi: Ở đâu? - Giới từ chỉ vị trí
+objectives:
+  - vi: Hỏi một nơi ở đâu một cách lịch sự bằng Excuse me, where is…?
+  - vi: Mô tả vị trí bằng next to, between… and…, opposite, behind, in front of.
+  - vi: Nói một nơi ở góc phố hay trên một con phố - on the corner, on Le Loi Street.
+estimated_minutes: 12
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [en:lesson:at-home]
+items:
+  - item: en:item:where-is
+  - item: en:item:excuse-me
+  - item: en:item:next-to
+  - item: en:item:between
+  - item: en:item:opposite
+  - item: en:item:behind
+  - item: en:item:in-front-of
+  - item: en:item:corner
+  - item: en:item:street
+  - item: en:item:bank
+    role: reuse
+  - item: en:item:post-office
+    role: reuse
+  - item: en:item:pharmacy
+    role: reuse
+  - item: en:item:in-on-under
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được "Xin lỗi, bưu điện ở đâu ạ?" và trả lời "Nó ở cạnh ngân hàng, đối diện công viên".
+  - type: explain
+    text:
+      vi: Tiếng Việt đặt "ở đâu" ở cuối câu (Bưu điện ở đâu?), còn tiếng Anh đặt Where lên đầu, rồi đến is/are, rồi mới đến nơi cần hỏi - Where is the post office? Nói nhanh thì Where is thành Where's. Mở đầu bằng Excuse me để câu hỏi lịch sự với người lạ.
+  - type: explain
+    text:
+      vi: "Các cụm chỉ vị trí đứng sau is/are và trước nơi làm mốc: next to (cạnh), between A and B (giữa A và B), opposite (đối diện), behind (phía sau), in front of (phía trước). Câu trả lời cần đủ be - The bank is next to the park, không nói The bank next to the park."
+  - type: explain
+    text:
+      vi: Có cụm phải có giới từ đi kèm, có cụm thì không. Next to cần to, in front of cần of; còn opposite và behind đứng một mình - opposite the bank, behind the bank.
+  - type: deep_explain
+    text:
+      vi: Nơi ở góc phố dùng on the corner, còn góc trong phòng dùng in the corner. Nằm trên một con phố dùng on (on Le Loi Street), có số nhà thì dùng at (at 25 Le Loi Street). Người Mỹ hay nói across from thay cho opposite, và before không bao giờ dùng để chỉ "phía trước" một nơi - before là "trước khi" về thời gian.
+  - type: example
+    target: Excuse me, where is the post office?
+    target_lang: en
+    translation:
+      vi: Xin lỗi, bưu điện ở đâu ạ?
+    note:
+      vi: Excuse me thay cho "Xin lỗi, cho tôi hỏi" và làm câu hỏi lịch sự hơn, giống "ạ" trong tiếng Việt.
+  - type: example
+    target: It's opposite the bank, next to the park.
+    target_lang: en
+    translation:
+      vi: Nó ở đối diện ngân hàng, cạnh công viên.
+    note:
+      vi: Opposite không cần of; next to luôn có to.
+  - type: example
+    target: The pharmacy is between the bank and the supermarket.
+    target_lang: en
+    translation:
+      vi: Hiệu thuốc ở giữa ngân hàng và siêu thị.
+    note:
+      vi: Between nối hai nơi bằng and.
+  - type: example
+    target: There's a café on the corner of Le Loi Street.
+    target_lang: en
+    translation:
+      vi: Ở góc phố Lê Lợi có một quán cà phê.
+    note:
+      vi: Góc phố dùng on the corner; tên phố viết hoa và không cần the.
+  - type: common_mistake
+    wrong: The bank is opposite of the post office.
+    right: The bank is opposite the post office.
+    target_lang: en
+    note:
+      vi: Opposite làm giới từ thì đứng ngay trước nơi làm mốc, không thêm of.
+  - type: common_mistake
+    wrong: The bus stop is in front the bank.
+    right: The bus stop is in front of the bank.
+    target_lang: en
+    note:
+      vi: In front of là một cụm ba từ; thiếu of là sai.
+  - type: common_mistake
+    wrong: Excuse me, the bank where?
+    right: Excuse me, where is the bank?
+    target_lang: en
+    note:
+      vi: Không giữ trật tự câu tiếng Việt. Where đứng đầu, sau đó là is rồi đến the bank.
+  - type: summary
+    points:
+      - vi: Hỏi đường lịch sự - Excuse me, where is (where's) the…?
+      - vi: next to · between A and B · opposite · behind · in front of.
+      - vi: Next to cần to, in front of cần of; opposite và behind không cần thêm gì.
+      - vi: on the corner (góc phố) · on + tên phố · at + số nhà.
+      - vi: Câu trả lời cần be - The bank is next to the park.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:where-is-it-mcq-opposite
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:opposite
+    prompt:
+      stem: "Ngân hàng ở đối diện bưu điện: The bank is ___ the post office."
+      stem_lang: vi
+      options:
+        - { id: r8f, text: opposite, lang: en }
+        - { id: a5d, text: behind, lang: en }
+        - { id: x3n, text: next to, lang: en }
+        - { id: t6u, text: between, lang: en }
+    answer:
+      correct_option_id: r8f
+    explanation:
+      vi: Đối diện (ở hai bên nhìn sang nhau) là opposite. Behind là phía sau, next to là bên cạnh, between cần hai nơi làm mốc.
+    display_answer: opposite
+
+  - key: en:exercise:where-is-it-listen-between
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:between
+    prompt:
+      audio_asset_id: null
+      fallback_text: The pharmacy is between the bank and the park.
+      options:
+        - { id: v2q, text: Hiệu thuốc ở giữa ngân hàng và công viên., lang: vi }
+        - { id: c9j, text: Ngân hàng ở giữa hiệu thuốc và công viên., lang: vi }
+        - { id: h4e, text: Hiệu thuốc ở sau ngân hàng và công viên., lang: vi }
+        - { id: n1w, text: Hiệu thuốc ở giữa bệnh viện và công viên., lang: vi }
+    answer:
+      correct_option_id: v2q
+    explanation:
+      vi: Chủ ngữ là the pharmacy (hiệu thuốc); between the bank and the park là "giữa ngân hàng và công viên". Behind mới là "phía sau".
+    display_answer: Hiệu thuốc ở giữa ngân hàng và công viên.
+
+  - key: en:exercise:where-is-it-mcq-polite
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:excuse-me
+    prompt:
+      stem: Bạn muốn hỏi một người lạ trên phố xem bến xe buýt ở đâu. Câu nào đúng và lịch sự?
+      stem_lang: vi
+      options:
+        - { id: e7k, text: "Excuse me, where is the bus station?", lang: en }
+        - { id: l3z, text: "Excuse me, the bus station where?", lang: en }
+        - { id: s6p, text: "Excuse me, where the bus station is?", lang: en }
+        - { id: g9y, text: "Hey, where bus station?", lang: en }
+    answer:
+      correct_option_id: e7k
+    explanation:
+      vi: Câu hỏi đặt Where lên đầu, rồi đến is, rồi đến nơi cần hỏi; Excuse me giúp câu lịch sự. Hai câu giữa sai trật tự từ, câu cuối thiếu is, thiếu the và kém lịch sự.
+    display_answer: "Excuse me, where is the bus station?"
+
+  - key: en:exercise:where-is-it-fill-front-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:in-front-of
+    prompt:
+      template: "The bus stop is in {{b1}} {{b2}} the bank."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Trạm xe buýt ở phía trước ngân hàng."
+        - "Gợi ý: cụm ba từ in … of."
+    answer:
+      blanks:
+        b1: [front]
+        b2: [of]
+    known_wrong:
+      - answer: before
+        feedback_vi: Before là "trước khi" về thời gian; chỉ vị trí phía trước dùng in front of.
+        error_tag: preposition_place
+      - answer: to
+        feedback_vi: In front đi với of, không đi với to - in front of.
+        error_tag: preposition_place
+    explanation:
+      vi: Phía trước một nơi là in front of, đủ ba từ. Thiếu of hoặc dùng before đều sai.
+    display_answer: The bus stop is in front of the bank.
+
+  - key: en:exercise:where-is-it-order-where
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:where-is
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Anh: \"Bưu điện ở đâu?\""
+      tokens:
+        - { id: q-office, text: office }
+        - { id: q-the, text: the }
+        - { id: q-where, text: Where }
+        - { id: q-at, text: at }
+        - { id: q-post, text: post }
+        - { id: q-are, text: are }
+        - { id: q-is, text: is }
+        - { id: q-what, text: What }
+    answer:
+      orders:
+        - [q-where, q-is, q-the, q-post, q-office]
+    explanation:
+      vi: Where đứng đầu, sau đó là is (một bưu điện, số ít), rồi đến the post office. Ở đâu là where, không phải what.
+    display_answer: Where is the post office?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:where-is-it-fill-between
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:between
+    prompt:
+      template: "The pharmacy is {{b1}} the bank {{b2}} the post office."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [between]
+        b2: [and]
+    known_wrong:
+      - answer: with
+        feedback_vi: Between nối hai nơi bằng and, không dùng with.
+        error_tag: between_and
+      - answer: or
+        feedback_vi: Between A and B dùng and, không dùng or.
+        error_tag: between_and
+      - answer: middle
+        feedback_vi: Ở giữa hai nơi là between; middle là danh từ (in the middle of).
+        error_tag: preposition_place
+    explanation:
+      vi: Ở giữa hai nơi là between A and B. Hai nơi làm mốc được nối bằng and.
+    display_answer: The pharmacy is between the bank and the post office.
+
+  - key: en:exercise:where-is-it-translate-opposite
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:opposite
+    prompt:
+      source_text: Ngân hàng ở đối diện công viên.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The bank is opposite the park.
+        - The bank's opposite the park.
+        - The bank is across from the park.
+        - The bank's across from the park.
+        - The bank is across the street from the park.
+        - The bank's across the street from the park.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The bank is opposite of the park.
+        feedback_vi: Opposite không cần of - The bank is opposite the park.
+        error_tag: opposite_of
+      - answer: The bank opposite the park.
+        feedback_vi: Thiếu is - The bank is opposite the park.
+        error_tag: missing_be
+      - answer: The bank is in front of the park.
+        feedback_vi: In front of là phía trước. Đối diện (bên kia đường nhìn sang) là opposite.
+        error_tag: preposition_place
+      - answer: The bank is behind the park.
+        feedback_vi: Behind là phía sau. Đối diện là opposite.
+        error_tag: preposition_place
+    explanation:
+      vi: Câu cần đủ chủ ngữ + is + opposite + nơi làm mốc. Opposite đứng ngay trước the park, không thêm of; người Mỹ hay nói across from.
+    display_answer: The bank is opposite the park.
+
+  - key: en:exercise:where-is-it-translate-ask
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:where-is
+    prompt:
+      source_text: Xin lỗi, hiệu thuốc ở đâu ạ?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Excuse me, where is the pharmacy?
+        - Excuse me, where's the pharmacy?
+        - Excuse me, where is the drugstore?
+        - Excuse me, where's the drugstore?
+        - Excuse me, where is the chemist's?
+        - Excuse me, where's the chemist's?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Excuse me, the pharmacy where?
+        feedback_vi: Where phải đứng đầu câu hỏi - Excuse me, where is the pharmacy?
+        error_tag: question_word_order
+      - answer: Excuse me, where the pharmacy is?
+        feedback_vi: Trong câu hỏi trực tiếp, is đứng trước the pharmacy - where is the pharmacy?
+        error_tag: question_word_order
+      - answer: Excuse me, where the pharmacy?
+        feedback_vi: Thiếu is - Excuse me, where is the pharmacy?
+        error_tag: missing_be
+      - answer: Excuse me, where is pharmacy?
+        feedback_vi: Hiệu thuốc cụ thể mà cả hai người đều hiểu thì cần the - where is the pharmacy?
+        error_tag: article
+    explanation:
+      vi: "\"Xin lỗi… ạ\" ứng với Excuse me. Câu hỏi đặt where lên đầu, rồi is, rồi the pharmacy."
+    display_answer: Excuse me, where is the pharmacy?
+
+  # ---------------- application ----------------
+  - key: en:exercise:where-is-it-translate-behind
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:behind
+    prompt:
+      source_text: The supermarket is behind the hospital, next to the park.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Siêu thị ở phía sau bệnh viện, cạnh công viên.
+        - Siêu thị ở sau bệnh viện, cạnh công viên.
+        - Siêu thị ở phía sau bệnh viện, bên cạnh công viên.
+        - Siêu thị ở sau bệnh viện, bên cạnh công viên.
+        - Siêu thị ở đằng sau bệnh viện, cạnh công viên.
+        - Siêu thị ở đằng sau bệnh viện, bên cạnh công viên.
+        - Siêu thị nằm phía sau bệnh viện, cạnh công viên.
+        - Siêu thị nằm sau bệnh viện, bên cạnh công viên.
+        - Siêu thị nằm phía sau bệnh viện, bên cạnh công viên.
+        - Siêu thị nằm sau bệnh viện, cạnh công viên.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Behind là "phía sau", next to là "bên cạnh". Chủ ngữ là the supermarket (siêu thị), còn bệnh viện và công viên là hai nơi làm mốc.
+    display_answer: Siêu thị ở phía sau bệnh viện, cạnh công viên.
+
+  - key: en:exercise:where-is-it-mcq-corner
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:corner
+    prompt:
+      stem: Hiệu thuốc nằm ngay chỗ hai con phố gặp nhau. Bạn nhắn cho bạn mình câu nào?
+      stem_lang: vi
+      options:
+        - { id: w5b, text: The pharmacy is on the corner., lang: en }
+        - { id: f1m, text: The pharmacy is at corner., lang: en }
+        - { id: z8r, text: The pharmacy on the corner., lang: en }
+        - { id: k4d, text: The pharmacy is corner., lang: en }
+    answer:
+      correct_option_id: w5b
+    explanation:
+      vi: Góc phố là on the corner, và câu cần is. Các câu kia thiếu the, thiếu is hoặc thiếu giới từ.
+    display_answer: The pharmacy is on the corner.

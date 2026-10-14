@@ -1,0 +1,383 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:present-tense
+order_index: 3
+level: topik1
+title:
+  vi: Động từ thì hiện tại -아요/-어요 và phủ định 안
+objectives:
+  - vi: Chia động từ sang đuôi lịch sự -아요 / -어요 / -해요, kể cả các dạng gộp nguyên âm như 와요, 봐요, 마셔요.
+  - vi: Nói các hoạt động hằng ngày - ngủ, dậy, ăn, uống, xem, học, làm việc, tập thể dục.
+  - vi: Phủ định bằng 안, đặt đúng chỗ với động từ có 하다 (공부 안 해요).
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ko:lesson:location-going]
+items:
+  - item: ko:item:gram-haeyo-present
+  - item: ko:item:gram-an-negation
+  - item: ko:item:verb-jada
+  - item: ko:item:verb-ireonada
+  - item: ko:item:verb-meokda
+  - item: ko:item:verb-masida
+  - item: ko:item:verb-boda
+  - item: ko:item:verb-gongbuhada
+  - item: ko:item:verb-ilhada
+  - item: ko:item:verb-undonghada
+  - item: ko:item:verb-gada
+    role: reuse
+  - item: ko:item:verb-oda
+    role: reuse
+  - item: ko:item:gram-e-destination
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự chia được động từ tiếng Hàn sang dạng nói lịch sự và nói được "Tôi không học", "Tôi không đi" một cách tự nhiên.
+  - type: explain
+    text:
+      vi: Động từ tiếng Việt không bao giờ đổi hình dạng, còn động từ tiếng Hàn đổi đuôi. Từ điển ghi dạng có 다 (먹다, 가다); khi nói lịch sự, bạn bỏ 다 rồi thêm -아요 hoặc -어요.
+  - type: explain
+    text:
+      vi: Nhìn nguyên âm cuối của phần còn lại - nếu là ㅏ hoặc ㅗ thì thêm -아요, các nguyên âm khác thêm -어요. Riêng động từ có 하다 thì 하다 luôn thành 해요 - 공부하다 → 공부해요.
+  - type: explain
+    text:
+      vi: Khi không có patchim, hai nguyên âm gộp lại cho gọn - 가 + 아요 → 가요, 오 + 아요 → 와요, 보 + 아요 → 봐요, 마시 + 어요 → 마셔요. Có patchim thì giữ nguyên - 먹어요.
+  - type: explain
+    text:
+      vi: Muốn nói "không", bạn đặt 안 ngay trước động từ - 안 가요, 안 먹어요. Với động từ "danh từ + 하다", 안 chen vào giữa - 공부 안 해요, 일 안 해요.
+  - type: deep_explain
+    text:
+      vi: Một dạng -아요/-어요 dùng cho cả "làm", "đang làm" và "thường làm", nên 자요 có thể là "ngủ" hoặc "đang ngủ" - giống tiếng Việt không bắt buộc "đang". Câu hỏi chỉ cần lên giọng - 먹어요? Ngoài 안, tiếng Hàn còn cách phủ định dài -지 않아요 (먹지 않아요), nghĩa giống nhau nhưng trang trọng hơn một chút.
+  - type: example
+    target: 저는 일찍 일어나요.
+    target_lang: ko
+    translation:
+      vi: Tôi dậy sớm.
+    note:
+      vi: 일어나 kết thúc bằng ㅏ, nên ㅏ + 아요 gộp thành 일어나요.
+  - type: example
+    target: 동생이 자요.
+    target_lang: ko
+    translation:
+      vi: Em tôi đang ngủ.
+    note:
+      vi: Không cần từ riêng cho "đang" - 자요 vừa là "ngủ" vừa là "đang ngủ".
+  - type: example
+    target: 밥 먹어요? - 네, 먹어요.
+    target_lang: ko
+    translation:
+      vi: Bạn ăn cơm không? - Vâng, tôi ăn.
+    note:
+      vi: 먹 có patchim nên giữ nguyên và thêm 어요. Khi nói thân mật, trợ từ sau 밥 hay bị bỏ; bài sau bạn sẽ học trợ từ này.
+  - type: example
+    target: 저는 공부 안 해요. 운동해요.
+    target_lang: ko
+    translation:
+      vi: Tôi không học. Tôi tập thể dục.
+    note:
+      vi: 안 đứng ngay trước 해요, không đứng trước 공부.
+  - type: common_mistake
+    wrong: 저는 먹다.
+    right: 저는 먹어요.
+    target_lang: ko
+    note:
+      vi: Dạng 다 chỉ dùng để tra từ điển. Người Việt học từ vựng theo dạng 다 nên hay nói nguyên dạng đó - khi giao tiếp hãy luôn đổi sang -아요/-어요.
+  - type: common_mistake
+    wrong: 마시요
+    right: 마셔요
+    target_lang: ko
+    note:
+      vi: 마시 kết thúc bằng ㅣ, không phải ㅏ/ㅗ, nên phải thêm -어요; ㅣ + 어 gộp thành ㅕ - 마셔요.
+  - type: common_mistake
+    wrong: 저는 안 공부해요.
+    right: 저는 공부 안 해요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt đặt "không" trước cả cụm "học bài", nhưng tiếng Hàn đặt 안 sát 해요. 공부 là danh từ, 해요 mới là động từ.
+  - type: common_mistake
+    wrong: 오아요
+    right: 와요
+    target_lang: ko
+    note:
+      vi: 오 không có patchim nên ㅗ + 아 gộp thành ㅘ - 와요. Tương tự 보다 → 봐요.
+  - type: summary
+    points:
+      - vi: Bỏ 다; nguyên âm cuối ㅏ/ㅗ → -아요, nguyên âm khác → -어요, 하다 → 해요.
+      - vi: Không có patchim thì gộp - 가요, 자요, 와요, 봐요, 마셔요; có patchim thì không - 먹어요.
+      - vi: 안 + động từ - 안 가요; danh từ + 안 해요 - 공부 안 해요, 일 안 해요.
+      - vi: 자다 ngủ · 일어나다 dậy · 먹다 ăn · 마시다 uống · 보다 xem · 공부하다 học · 일하다 làm việc · 운동하다 tập thể dục.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:dl-present-mcq-meokda
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:verb-meokda
+    prompt:
+      stem: Dạng nói lịch sự của 먹다 (ăn) là gì?
+      stem_lang: vi
+      options:
+        - { id: f2n, text: 먹어요, lang: ko }
+        - { id: u7a, text: 먹아요, lang: ko }
+        - { id: c4s, text: 먹요, lang: ko }
+        - { id: g9d, text: 먹다요, lang: ko }
+    answer:
+      correct_option_id: f2n
+    explanation:
+      vi: Bỏ 다 còn 먹; nguyên âm ㅓ không phải ㅏ/ㅗ nên thêm -어요. 먹 có patchim nên không gộp - 먹어요.
+    display_answer: 먹어요
+
+  - key: ko:exercise:dl-present-mcq-boda
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:verb-boda
+    prompt:
+      stem: Dạng nói lịch sự của 보다 (xem) là gì?
+      stem_lang: vi
+      options:
+        - { id: x5k, text: 보어요, lang: ko }
+        - { id: h3r, text: 봐요, lang: ko }
+        - { id: b8m, text: 보요, lang: ko }
+        - { id: z1e, text: 바요, lang: ko }
+    answer:
+      correct_option_id: h3r
+    explanation:
+      vi: 보 có nguyên âm ㅗ nên thêm -아요, và vì không có patchim nên ㅗ + 아 gộp thành ㅘ - 봐요. 보어요 dùng sai đuôi, 보요 thiếu 아.
+    display_answer: 봐요
+
+  - key: ko:exercise:dl-present-listen-not-study
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-an-negation
+    prompt:
+      audio_asset_id: null
+      fallback_text: 저는 공부 안 해요.
+      options:
+        - { id: o6w, text: Tôi không học., lang: vi }
+        - { id: t2j, text: Tôi học., lang: vi }
+        - { id: r9v, text: Tôi không làm việc., lang: vi }
+        - { id: e4y, text: Tôi không tập thể dục., lang: vi }
+    answer:
+      correct_option_id: o6w
+    explanation:
+      vi: 공부 là "học", 안 해요 là "không làm", ghép lại là "không học". "Làm việc" là 일, "tập thể dục" là 운동.
+    display_answer: Tôi không học.
+
+  - key: ko:exercise:dl-present-fill-masida
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:verb-masida
+    prompt:
+      template: "마시다 (uống) → {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - Nguyên âm cuối là ㅣ, nên dùng -어요.
+        - ㅣ + 어 gộp lại thành ㅕ.
+    answer:
+      blanks:
+        b1: [마셔요, 마시어요]
+    known_wrong:
+      - answer: 마시요
+        feedback_vi: Thiếu 어. Nguyên âm ㅣ đi với -어요, rồi ㅣ + 어 gộp thành ㅕ - 마셔요.
+        error_tag: verb_conjugation
+      - answer: 마사요
+        feedback_vi: Không đổi ㅣ thành ㅏ. ㅣ + 어 gộp thành ㅕ - 마셔요.
+        error_tag: verb_conjugation
+      - answer: 마시다
+        feedback_vi: 마시다 là dạng từ điển. Dạng nói lịch sự là 마셔요.
+        error_tag: dictionary_form
+    explanation:
+      vi: Bỏ 다 còn 마시; ㅣ không phải ㅏ/ㅗ nên thêm -어요. 시 không có patchim nên ㅣ + 어 gộp thành ㅕ - 마셔요. Dạng chưa gộp 마시어요 vẫn đúng nhưng hầu như chỉ gặp trong văn viết.
+    display_answer: 마셔요
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:dl-present-fill-not-go
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-an-negation
+    prompt:
+      template: "Hôm nay tôi không đi học. - 오늘은 학교에 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [안 가요, 가지 않아요]
+    known_wrong:
+      - answer: 가요 안
+        feedback_vi: 안 phải đứng trước động từ - 안 가요.
+        error_tag: negation_position
+      - answer: 안 가다
+        feedback_vi: 가다 là dạng từ điển. Khi nói hãy dùng 안 가요.
+        error_tag: dictionary_form
+      - answer: 없어요
+        feedback_vi: 없어요 là "không có". "Không đi" là 안 가요.
+        error_tag: negation_eopda
+    explanation:
+      vi: Phủ định động từ bằng cách đặt 안 ngay trước nó - 안 가요. Cách dài 가지 않아요 cũng đúng.
+    display_answer: 오늘은 학교에 안 가요.
+
+  - key: ko:exercise:dl-present-fill-not-work
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:verb-ilhada
+    prompt:
+      template: "Tôi không làm việc. - 저는 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [일 안 해요, 일하지 않아요]
+    known_wrong:
+      - answer: 안 일해요
+        feedback_vi: Với động từ "danh từ + 하다", 안 chen vào giữa - 일 안 해요.
+        error_tag: negation_position
+      - answer: 일 안 하요
+        feedback_vi: 하다 luôn thành 해요 - 일 안 해요.
+        error_tag: verb_conjugation
+      - answer: 일 없어요
+        feedback_vi: 일 없어요 nghĩa là "không có việc". "Không làm việc" là 일 안 해요.
+        error_tag: negation_eopda
+    explanation:
+      vi: 일하다 = 일 (việc) + 하다, nên 안 đứng trước 해요 - 일 안 해요. Cách dài 일하지 않아요 cũng đúng.
+    display_answer: 저는 일 안 해요.
+
+  - key: ko:exercise:dl-present-translate-exercise
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:verb-undonghada
+    prompt:
+      source_text: Tôi tập thể dục.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 운동해요.
+        - 저는 운동해요.
+        - 전 운동해요.
+    known_wrong:
+      - answer: 저는 운동하다.
+        feedback_vi: 운동하다 là dạng từ điển. Khi nói hãy dùng 운동해요.
+        error_tag: dictionary_form
+      - answer: 저는 운동하요.
+        feedback_vi: 하다 luôn thành 해요 - 운동해요.
+        error_tag: verb_conjugation
+      - answer: 저는 운동해.
+        feedback_vi: Thiếu 요 - không có 요 là cách nói thân mật với bạn bè. Hãy dùng 운동해요.
+        error_tag: polite_ending
+      - answer: undonghaeyo
+        feedback_vi: Hãy gõ bằng chữ Hangul (운동해요), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: 운동하다 có 하다 nên chia thành 운동해요. "Tôi" có thể là 저는, 전 hoặc bỏ đi khi đã rõ.
+    display_answer: 저는 운동해요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:dl-present-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:verb-gongbuhada
+    prompt:
+      source_text: 아빠는 일해요. 저는 공부해요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bố làm việc. Tôi học.
+        - Bố tôi làm việc. Tôi học.
+        - Bố làm việc, còn tôi học.
+        - Bố tôi làm việc, còn tôi học.
+        - Bố làm việc, còn tôi học bài.
+        - Bố tôi làm việc, còn tôi học bài.
+        - Bố đang làm việc. Tôi đang học.
+        - Bố tôi đang làm việc, còn tôi đang học.
+        - Bố đang làm việc, còn tôi đang học bài.
+        - Ba làm việc, còn tôi học.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bố học. Tôi làm việc.
+        feedback_vi: 일해요 là "làm việc", 공부해요 là "học" - bạn đã đảo hai việc.
+        error_tag: vocab_meaning
+      - answer: Bố không làm việc. Tôi học.
+        feedback_vi: Câu không có 안, nên không phải phủ định.
+        error_tag: negation_an
+    explanation:
+      vi: 아빠 là bố, 일해요 là làm việc, 공부해요 là học. Tiếng Việt tự nhiên hay nối hai vế bằng "còn" và có thể thêm "đang".
+    display_answer: Bố làm việc, còn tôi học.
+
+  - key: ko:exercise:dl-present-translate-not-eat
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-an-negation
+    prompt:
+      source_text: Tôi không ăn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 안 먹어요.
+        - 저는 안 먹어요.
+        - 전 안 먹어요.
+        - 먹지 않아요.
+        - 저는 먹지 않아요.
+    known_wrong:
+      - answer: 저는 먹어요 안.
+        feedback_vi: 안 đứng ngay trước động từ - 저는 안 먹어요.
+        error_tag: negation_position
+      - answer: 저는 안 먹다.
+        feedback_vi: 먹다 là dạng từ điển. Khi nói hãy dùng 안 먹어요.
+        error_tag: dictionary_form
+      - answer: 저는 안 먹아요.
+        feedback_vi: 먹 có nguyên âm ㅓ nên thêm -어요 - 먹어요.
+        error_tag: verb_conjugation
+      - answer: 저는 먹어요.
+        feedback_vi: Câu này là "tôi ăn". Muốn nói "không ăn" hãy thêm 안 - 안 먹어요.
+        error_tag: negation_an
+    explanation:
+      vi: Đặt 안 ngay trước động từ đã chia - 안 먹어요. Cách dài 먹지 않아요 cũng đúng.
+    display_answer: 저는 안 먹어요.
+
+  - key: ko:exercise:dl-present-order-not-study
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:verb-gongbuhada
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi không học.\""
+      tokens:
+        - { id: t-an, text: 안 }
+        - { id: t-haeyo, text: 해요 }
+        - { id: t-gongbuhaeyo, text: 공부해요 }
+        - { id: t-jeoneun, text: 저는 }
+        - { id: t-hayo, text: 하요 }
+        - { id: t-gongbu, text: 공부 }
+    answer:
+      orders:
+        - [t-jeoneun, t-gongbu, t-an, t-haeyo]
+        - [t-gongbu, t-an, t-haeyo]
+    explanation:
+      vi: 공부하다 là "danh từ + 하다", nên 안 chen giữa - 공부 안 해요; 하다 chia thành 해요, không phải 하요. 저는 có thể bỏ khi đã rõ người nói.
+    display_answer: 저는 공부 안 해요.

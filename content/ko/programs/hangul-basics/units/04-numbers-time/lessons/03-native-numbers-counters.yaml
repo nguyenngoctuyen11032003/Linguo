@@ -1,0 +1,369 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:native-numbers-counters
+order_index: 3
+level: topik1
+title:
+  vi: Số thuần Hàn và đơn vị đếm
+objectives:
+  - vi: Đếm từ 하나 đến 스물 bằng số thuần Hàn.
+  - vi: Dùng đúng dạng rút gọn 한, 두, 세, 네, 스무 trước đơn vị đếm.
+  - vi: Đếm đồ vật, người, tuổi, chai, cốc, sách với 개, 명, 살, 병, 잔, 권 và hỏi bằng 몇.
+estimated_minutes: 15
+skills: [vocabulary, grammar, speaking, listening]
+prerequisites: [ko:lesson:big-numbers-money]
+items:
+  - item: ko:item:native-numbers
+  - item: ko:item:seumul
+  - item: ko:item:native-short-forms
+  - item: ko:item:counter-gae
+  - item: ko:item:counter-myeong
+  - item: ko:item:counter-sal
+  - item: ko:item:counter-byeong
+  - item: ko:item:counter-jan
+  - item: ko:item:counter-gwon
+  - item: ko:item:myeot
+  - item: ko:item:hana
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi được "hai ly cà phê", nói được tuổi của mình và đếm người, đồ vật bằng tiếng Hàn.
+  - type: explain
+    text:
+      vi: Bộ số thuần Hàn - 하나, 둘, 셋, 넷, 다섯, 여섯, 일곱, 여덟, 아홉, 열 - dùng để đếm đồ vật, người, tuổi và nói giờ. 11-19 ghép với 열 (열하나, 열둘…), 20 là 스물.
+  - type: explain
+    text:
+      vi: Khi đếm, tiếng Hàn đặt danh từ trước, rồi số, rồi đơn vị - 사과 세 개 (táo - ba - quả), ngược với tiếng Việt "ba quả táo". Mỗi loại vật có đơn vị riêng - 개 (cái, quả), 명 (người), 살 (tuổi), 병 (chai), 잔 (ly, cốc), 권 (quyển).
+  - type: explain
+    text:
+      vi: Đứng ngay trước đơn vị, năm số đổi dạng - 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네, 스물 → 스무. Từ 다섯 trở đi thì giữ nguyên - 다섯 개, 열 명.
+  - type: deep_explain
+    text:
+      vi: Số ghép cũng rút gọn ở chữ số cuối - 열한 개, 열두 명, 스물세 살; chỉ đúng 20 mới là 스무 (스무 살), còn 21 là 스물한 살. Tuổi khi nói chuyện luôn dùng số thuần Hàn + 살; giấy tờ trang trọng mới dùng số Hán-Hàn + 세 (이십 세). Hỏi số lượng dùng 몇 + đơn vị - 몇 개, 몇 명, 몇 살.
+  - type: example
+    target: 사과 세 개 주세요.
+    target_lang: ko
+    translation:
+      vi: Cho tôi ba quả táo.
+    note:
+      vi: Danh từ - số - đơn vị; 셋 rút gọn thành 세.
+  - type: example
+    target: 커피 한 잔 주세요.
+    target_lang: ko
+    translation:
+      vi: Cho tôi một ly cà phê.
+    note:
+      vi: 하나 → 한 trước 잔.
+  - type: example
+    target: 학생이 다섯 명 있어요.
+    target_lang: ko
+    translation:
+      vi: Có năm học sinh.
+    note:
+      vi: 다섯 không có dạng rút gọn.
+  - type: example
+    target: 저는 스무 살이에요.
+    target_lang: ko
+    translation:
+      vi: Tôi 20 tuổi.
+    note:
+      vi: 스물 → 스무 trước 살.
+  - type: example
+    target: 책 네 권
+    target_lang: ko
+    translation:
+      vi: bốn quyển sách
+    note:
+      vi: 넷 → 네 trước 권.
+  - type: common_mistake
+    wrong: 하나 개
+    right: 한 개
+    target_lang: ko
+    note:
+      vi: Trước đơn vị đếm, 하나 phải rút gọn thành 한. Tương tự 둘 → 두, 셋 → 세, 넷 → 네.
+  - type: common_mistake
+    wrong: 이십 살
+    right: 스무 살
+    target_lang: ko
+    note:
+      vi: 살 đi với số thuần Hàn. 이십 là số Hán-Hàn, nghe như bạn đọc tuổi theo kiểu số điện thoại.
+  - type: common_mistake
+    wrong: 세 개 사과
+    right: 사과 세 개
+    target_lang: ko
+    note:
+      vi: Người Việt hay đặt số trước như "ba quả táo". Câu tự nhiên trong tiếng Hàn là danh từ trước, số và đơn vị sau.
+  - type: summary
+    points:
+      - vi: 하나 둘 셋 넷 다섯 여섯 일곱 여덟 아홉 열 · 스물 (20) - số thuần Hàn.
+      - vi: Trước đơn vị - 한, 두, 세, 네, 스무; từ 다섯 trở đi giữ nguyên.
+      - vi: Thứ tự - danh từ + số + đơn vị (사과 세 개).
+      - vi: 개 cái/quả · 명 người · 살 tuổi · 병 chai · 잔 ly · 권 quyển.
+      - vi: Hỏi số lượng - 몇 + đơn vị (몇 개, 몇 명, 몇 살).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:native-counters-listen-coffee
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:counter-jan
+    prompt:
+      audio_asset_id: null
+      fallback_text: 커피 두 잔 주세요.
+      options:
+        - { id: e4w, text: Cho tôi hai ly cà phê., lang: vi }
+        - { id: r8b, text: Cho tôi hai chai cà phê., lang: vi }
+        - { id: k1y, text: Cho tôi một ly cà phê., lang: vi }
+        - { id: n7g, text: Cho tôi ba ly cà phê., lang: vi }
+    answer:
+      correct_option_id: e4w
+    explanation:
+      vi: 두 là dạng rút gọn của 둘 (hai), 잔 là ly/cốc. Chai là 병, một là 한, ba là 세.
+    display_answer: Cho tôi hai ly cà phê.
+
+  - key: ko:exercise:native-counters-mcq-books
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:counter-gwon
+    prompt:
+      stem: "Chọn đơn vị đếm đúng cho \"ba quyển sách\": 책 세 ___"
+      stem_lang: vi
+      options:
+        - { id: q2x, text: 권, lang: ko }
+        - { id: v6d, text: 개, lang: ko }
+        - { id: c9t, text: 명, lang: ko }
+        - { id: h5u, text: 병, lang: ko }
+    answer:
+      correct_option_id: q2x
+    explanation:
+      vi: Sách, vở đếm bằng 권 (giống âm Hán-Việt "quyển"). 명 dùng cho người, 병 cho chai; 개 là đơn vị chung cho đồ vật nhưng sách có đơn vị riêng.
+    display_answer: 권
+
+  - key: ko:exercise:native-counters-fill-one-apple
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:native-short-forms
+    prompt:
+      template: "Một quả táo - 사과 {{b1}} 개"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Đếm đồ vật bằng số thuần Hàn - "một" là 하나.
+        - Trước đơn vị đếm, 하나 rút gọn thành một âm tiết.
+    answer:
+      blanks:
+        b1: [한]
+    known_wrong:
+      - answer: 하나
+        feedback_vi: Trước đơn vị đếm, 하나 rút gọn thành 한 - 사과 한 개.
+        error_tag: counter_form
+      - answer: 일
+        feedback_vi: Đếm đồ vật với 개 dùng số thuần Hàn - 한 개, không phải 일 개.
+        error_tag: number_system
+    explanation:
+      vi: 개 đi với số thuần Hàn, và 하나 đứng trước đơn vị thì rút gọn thành 한. Vì vậy "một quả táo" là 사과 한 개.
+    display_answer: 사과 한 개
+
+  - key: ko:exercise:native-counters-order-students
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:counter-myeong
+    prompt:
+      instruction: "Sắp xếp theo thứ tự tiếng Hàn: \"hai học sinh\""
+      tokens:
+        - { id: s3, text: 명 }
+        - { id: s5, text: 둘 }
+        - { id: s1, text: 학생 }
+        - { id: s4, text: 개 }
+        - { id: s2, text: 두 }
+    answer:
+      orders:
+        - [s1, s2, s3]
+    explanation:
+      vi: Thứ tự là danh từ (학생) + số (두) + đơn vị (명). Dùng 두 chứ không dùng 둘 vì đứng ngay trước đơn vị, và người đếm bằng 명, không bằng 개.
+    display_answer: 학생 두 명
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:native-counters-write-20-years
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:seumul
+    prompt:
+      source_text: 20 tuổi (viết bằng chữ Hangul)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 스무 살
+    known_wrong:
+      - answer: 이십 살
+        feedback_vi: 살 đi với số thuần Hàn - 스무 살, không dùng 이십.
+        error_tag: number_system
+      - answer: 스물 살
+        feedback_vi: Ngay trước đơn vị, 스물 rút gọn thành 스무 - 스무 살.
+        error_tag: counter_form
+      - answer: 20살
+        feedback_vi: Bài này yêu cầu viết bằng chữ Hangul - 스무 살.
+        error_tag: digits_not_words
+      - answer: seumu sal
+        feedback_vi: Hãy gõ bằng chữ Hangul (스무 살), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Tuổi dùng số thuần Hàn + 살. 20 là 스물, nhưng đứng ngay trước 살 thì rơi ㄹ thành 스무.
+    display_answer: 스무 살
+
+  - key: ko:exercise:native-counters-fill-13
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:native-short-forms
+    prompt:
+      template: "Tôi 13 tuổi. - 저는 {{b1}} 살이에요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [열세]
+    known_wrong:
+      - answer: 열셋
+        feedback_vi: Chữ số cuối đứng trước đơn vị cũng rút gọn - 셋 → 세, nên là 열세 살.
+        error_tag: counter_form
+      - answer: 십삼
+        feedback_vi: Tuổi dùng số thuần Hàn - 열세, không dùng 십삼.
+        error_tag: number_system
+      - answer: 열삼
+        feedback_vi: Không trộn hai bộ số - 13 thuần Hàn là 열셋, trước 살 thành 열세.
+        error_tag: number_system
+    explanation:
+      vi: 13 thuần Hàn là 열셋 (열 + 셋). Trước đơn vị 살, chữ số cuối 셋 rút gọn thành 세, nên là 열세 살.
+    display_answer: 저는 열세 살이에요.
+
+  - key: ko:exercise:native-counters-translate-how-old
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:myeot
+    prompt:
+      source_text: Bạn bao nhiêu tuổi?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 몇 살이에요?
+        - 나이가 몇 살이에요?
+        - 몇 살이세요?
+    known_wrong:
+      - answer: 몇 살예요?
+        feedback_vi: 살 có phụ âm cuối ㄹ nên dùng 이에요 - 몇 살이에요?
+        error_tag: copula_form
+      - answer: 얼마 살이에요?
+        feedback_vi: 얼마 dùng để hỏi giá. Hỏi số lượng (kể cả tuổi) dùng 몇 + đơn vị - 몇 살이에요?
+        error_tag: question_word
+      - answer: 몇 개예요?
+        feedback_vi: 개 dùng đếm đồ vật. Hỏi tuổi dùng 몇 살이에요?
+        error_tag: counter_choice
+    explanation:
+      vi: 몇 (mấy) luôn đi với đơn vị - hỏi tuổi thì 몇 살. 살 có phụ âm cuối nên đi với 이에요. Với người lớn tuổi hơn, người Hàn hỏi lịch sự hơn - 연세가 어떻게 되세요?
+    display_answer: 몇 살이에요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:native-counters-translate-water
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:counter-byeong
+    prompt:
+      source_text: Cho tôi hai chai nước.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 물 두 병 주세요.
+        - 물을 두 병 주세요.
+        - 물 2병 주세요.
+        - 물 두 병만 주세요.
+    known_wrong:
+      - answer: 물 둘 병 주세요.
+        feedback_vi: Trước đơn vị, 둘 rút gọn thành 두 - 물 두 병.
+        error_tag: counter_form
+      - answer: 물 이 병 주세요.
+        feedback_vi: 병 đi với số thuần Hàn - 두 병, không phải 이 병.
+        error_tag: number_system
+      - answer: 두 병 물 주세요.
+        feedback_vi: Tiếng Hàn đặt danh từ trước - 물 두 병 주세요.
+        error_tag: word_order
+      - answer: 물 두 잔 주세요.
+        feedback_vi: 잔 là ly/cốc. "Chai" là 병 - 물 두 병.
+        error_tag: counter_choice
+    explanation:
+      vi: Thứ tự là 물 (nước) + 두 (hai, dạng rút gọn của 둘) + 병 (chai) + 주세요 (cho tôi). Bạn có thể thêm 을 sau 물 hoặc 만 (chỉ) sau 병.
+    display_answer: 물 두 병 주세요.
+
+  - key: ko:exercise:native-counters-translate-five-students
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:counter-myeong
+    prompt:
+      source_text: 학생이 다섯 명 있어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Có năm học sinh.
+        - Có 5 học sinh.
+        - Có năm bạn học sinh.
+        - Có 5 bạn học sinh.
+        - Có năm em học sinh.
+        - Có năm sinh viên.
+        - Có 5 sinh viên.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Có bốn học sinh.
+        feedback_vi: 다섯 là năm; bốn là 넷 (trước đơn vị là 네).
+        error_tag: number_value
+      - answer: Có sáu học sinh.
+        feedback_vi: 다섯 là năm; sáu là 여섯.
+        error_tag: number_value
+    explanation:
+      vi: 다섯 là năm (số thuần Hàn), 명 là đơn vị đếm người, 있어요 là "có". Tiếng Việt đảo lại thành "có năm học sinh".
+    display_answer: Có năm học sinh.
+
+  - key: ko:exercise:native-counters-mcq-order-coffee
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:native-short-forms
+    prompt:
+      stem: Ở quán cà phê, bạn muốn gọi ba ly cà phê. Bạn nói câu nào?
+      stem_lang: vi
+      options:
+        - { id: b7m, text: 커피 세 잔 주세요., lang: ko }
+        - { id: f3s, text: 커피 셋 잔 주세요., lang: ko }
+        - { id: x8h, text: 커피 삼 잔 주세요., lang: ko }
+        - { id: l4c, text: 커피 세 병 주세요., lang: ko }
+    answer:
+      correct_option_id: b7m
+    explanation:
+      vi: 잔 đi với số thuần Hàn, và 셋 trước đơn vị rút gọn thành 세 - 커피 세 잔. 삼 là số Hán-Hàn, còn 병 là chai chứ không phải ly.
+    display_answer: 커피 세 잔 주세요.

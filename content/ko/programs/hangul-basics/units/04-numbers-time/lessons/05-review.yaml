@@ -1,0 +1,384 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:numbers-time-review
+order_index: 5
+level: topik1
+title:
+  vi: Ôn tập - số đếm, thời gian & ngày tháng
+objectives:
+  - vi: Chọn đúng bộ số (Hán-Hàn hay thuần Hàn) cho từng tình huống.
+  - vi: Kết hợp số, đơn vị, giờ, ngày, thứ và giá tiền trong một câu.
+  - vi: Tránh các lỗi quen thuộc - 삼 시, 하나 개, 이십 살, 육월, 십천.
+estimated_minutes: 15
+skills: [vocabulary, listening, speaking, writing]
+prerequisites: [ko:lesson:time-days]
+items:
+  - item: ko:item:sino-numbers
+    role: reuse
+  - item: ko:item:sino-compounds
+    role: reuse
+  - item: ko:item:man
+    role: reuse
+  - item: ko:item:won
+    role: reuse
+  - item: ko:item:eolmayeyo
+    role: reuse
+  - item: ko:item:month-day
+    role: reuse
+  - item: ko:item:irregular-months
+    role: reuse
+  - item: ko:item:native-short-forms
+    role: reuse
+  - item: ko:item:seumul
+    role: reuse
+  - item: ko:item:counter-sal
+    role: reuse
+  - item: ko:item:counter-gae
+    role: reuse
+  - item: ko:item:counter-jan
+    role: reuse
+  - item: ko:item:counter-byeong
+    role: reuse
+  - item: ko:item:hour-si
+    role: reuse
+  - item: ko:item:minute-bun
+    role: reuse
+  - item: ko:item:myeot-si
+    role: reuse
+  - item: ko:item:weekdays
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này giúp bạn tự tin chọn đúng bộ số trong mọi tình huống - mua đồ, hẹn giờ, nói tuổi, nói ngày sinh.
+  - type: explain
+    text:
+      vi: Số Hán-Hàn (일, 이, 삼…) dùng cho số điện thoại, tiền (원), năm (년), tháng (월), ngày (일) và phút (분). Số thuần Hàn (하나, 둘, 셋…) dùng để đếm với đơn vị (개, 명, 병, 잔, 권), nói tuổi (살) và giờ (시).
+  - type: explain
+    text:
+      vi: Số thuần Hàn trước đơn vị và trước 시 rút gọn - 한, 두, 세, 네, 스무. Số Hán-Hàn lớn gom theo 만 (10.000) chứ không theo nghìn như tiếng Việt.
+  - type: deep_explain
+    text:
+      vi: Một mẹo nhớ - cái gì "đếm được bằng tay" (đồ vật, người, tuổi, giờ trên mặt đồng hồ) thì dùng số thuần Hàn; cái gì là "con số để đọc" (tiền, ngày tháng, số điện thoại, phút) thì dùng số Hán-Hàn. Câu 오후 세 시 삼십 분 dùng cả hai bộ số, nên hãy luyện nói to nhiều lần.
+  - type: example
+    target: 사과 두 개하고 커피 한 잔 주세요.
+    target_lang: ko
+    translation:
+      vi: Cho tôi hai quả táo và một ly cà phê.
+    note:
+      vi: Đếm đồ vật - số thuần Hàn rút gọn (두, 한).
+  - type: example
+    target: 다 해서 만 이천 원이에요.
+    target_lang: ko
+    translation:
+      vi: Tổng cộng 12.000 won.
+    note:
+      vi: Tiền - số Hán-Hàn, gom theo 만.
+  - type: example
+    target: 목요일 오후 일곱 시에 만나요.
+    target_lang: ko
+    translation:
+      vi: Gặp nhau lúc 7 giờ tối thứ Năm nhé.
+    note:
+      vi: Thứ, rồi 오후, rồi giờ thuần Hàn.
+  - type: example
+    target: 제 생일은 시월 이십 일이에요.
+    target_lang: ko
+    translation:
+      vi: Sinh nhật của tôi là ngày 20 tháng 10.
+    note:
+      vi: Ngày tháng - số Hán-Hàn; tháng 10 là 시월.
+  - type: common_mistake
+    wrong: 세 시 서른 분
+    right: 세 시 삼십 분
+    target_lang: ko
+    note:
+      vi: Giờ thuần Hàn nhưng phút Hán-Hàn. Đừng dùng một bộ số cho cả cụm.
+  - type: common_mistake
+    wrong: 이십 살
+    right: 스무 살
+    target_lang: ko
+    note:
+      vi: Tuổi dùng số thuần Hàn, và 스물 rút gọn thành 스무 trước 살.
+  - type: common_mistake
+    wrong: 십천 원
+    right: 만 원
+    target_lang: ko
+    note:
+      vi: 10.000 là 만. Tách số theo 4 chữ số từ phải sang để đọc.
+  - type: summary
+    points:
+      - vi: Hán-Hàn - số điện thoại, 원, 년, 월, 일, 분.
+      - vi: Thuần Hàn - 개, 명, 병, 잔, 권, 살, 시.
+      - vi: Rút gọn trước đơn vị - 한, 두, 세, 네, 스무.
+      - vi: 만 = 10.000; 유월, 시월 bất quy tắc.
+      - vi: 몇 시예요? · 며칠이에요? · 무슨 요일이에요? · 얼마예요?
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:numbers-review-mcq-native-use
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:native-short-forms
+    prompt:
+      stem: Trường hợp nào dùng số thuần Hàn (하나, 둘, 셋…)?
+      stem_lang: vi
+      options:
+        - { id: k8s, text: Nói tuổi (살), lang: vi }
+        - { id: r3z, text: Nói phút (분), lang: vi }
+        - { id: q6n, text: Nói giá tiền (원), lang: vi }
+        - { id: v1h, text: Nói tháng (월), lang: vi }
+    answer:
+      correct_option_id: k8s
+    explanation:
+      vi: Tuổi dùng số thuần Hàn - 스무 살, 열세 살. Phút, tiền và tháng đều dùng số Hán-Hàn - 삼십 분, 오천 원, 삼월.
+    display_answer: Nói tuổi (살)
+
+  - key: ko:exercise:numbers-review-listen-date
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:irregular-months
+    prompt:
+      audio_asset_id: null
+      fallback_text: 유월 이십 일이에요.
+      options:
+        - { id: f2j, text: Ngày 20 tháng 6., lang: vi }
+        - { id: l7p, text: Ngày 2 tháng 6., lang: vi }
+        - { id: x4e, text: Ngày 20 tháng 10., lang: vi }
+        - { id: n9b, text: Ngày 6 tháng 2., lang: vi }
+    answer:
+      correct_option_id: f2j
+    explanation:
+      vi: 유월 là tháng 6 (bất quy tắc), 이십 일 là ngày 20. Tháng 10 là 시월, ngày 2 là 이 일; tháng nói trước ngày.
+    display_answer: Ngày 20 tháng 6.
+
+  - key: ko:exercise:numbers-review-order-320
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:minute-bun
+    prompt:
+      instruction: "Sắp xếp thành giờ tiếng Hàn: \"3 giờ 20 phút\""
+      tokens:
+        - { id: m4, text: 분 }
+        - { id: m3, text: 이십 }
+        - { id: m6, text: 스무 }
+        - { id: m2, text: 시 }
+        - { id: m5, text: 삼 }
+        - { id: m1, text: 세 }
+    answer:
+      orders:
+        - [m1, m2, m3, m4]
+    explanation:
+      vi: Giờ dùng số thuần Hàn rút gọn (세 시), phút dùng số Hán-Hàn (이십 분). 삼 시 và 스무 분 đều dùng nhầm bộ số.
+    display_answer: 세 시 이십 분
+
+  - key: ko:exercise:numbers-review-fill-20000
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:man
+    prompt:
+      template: "Cái này 20.000 won. - 이거 {{b1}} 원이에요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - 20.000 = 2 × 10.000.
+        - 10.000 là 만; tiền dùng số Hán-Hàn.
+    answer:
+      blanks:
+        b1: [이만]
+    known_wrong:
+      - answer: 이십천
+        feedback_vi: Tiếng Hàn gom theo 만 - 20.000 là 이만, không phải 이십천.
+        error_tag: number_system_man
+      - answer: 이십만
+        feedback_vi: 이십만 là 200.000. 20.000 là 이만.
+        error_tag: number_system_man
+      - answer: 두만
+        feedback_vi: Tiền dùng số Hán-Hàn - 이만, không dùng 두.
+        error_tag: number_system
+    explanation:
+      vi: 20.000 tách theo 4 chữ số là 2|0000, tức 2 vạn - 이만. Tiền luôn dùng số Hán-Hàn.
+    display_answer: 이거 이만 원이에요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:numbers-review-translate-what-time
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:myeot-si
+    prompt:
+      source_text: Bây giờ là mấy giờ?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 지금 몇 시예요?
+        - 몇 시예요?
+        - 지금은 몇 시예요?
+    known_wrong:
+      - answer: 지금 며칠이에요?
+        feedback_vi: 며칠 là hỏi ngày. Hỏi giờ dùng 몇 시 - 지금 몇 시예요?
+        error_tag: question_word
+      - answer: 지금 몇 시이에요?
+        feedback_vi: 시 kết thúc bằng nguyên âm nên dùng 예요 - 몇 시예요?
+        error_tag: copula_form
+      - answer: 지금 무슨 시예요?
+        feedback_vi: Hỏi giờ dùng 몇 (mấy) - 몇 시예요? 무슨 dùng để hỏi thứ (무슨 요일).
+        error_tag: question_word
+    explanation:
+      vi: 지금 là "bây giờ", 몇 시 là "mấy giờ". 시 kết thúc bằng nguyên âm nên đi với 예요.
+    display_answer: 지금 몇 시예요?
+
+  - key: ko:exercise:numbers-review-fill-21
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:seumul
+    prompt:
+      template: "Tôi 21 tuổi. - 저는 {{b1}} 살이에요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [스물한]
+    known_wrong:
+      - answer: 스무한
+        feedback_vi: Chỉ đúng 20 mới rút gọn thành 스무. 21 giữ 스물 và rút gọn chữ số cuối - 스물한 살.
+        error_tag: counter_form
+      - answer: 스물하나
+        feedback_vi: Trước 살, 하나 rút gọn thành 한 - 스물한 살.
+        error_tag: counter_form
+      - answer: 이십일
+        feedback_vi: Tuổi dùng số thuần Hàn - 스물한, không dùng 이십일.
+        error_tag: number_system
+    explanation:
+      vi: 21 thuần Hàn là 스물하나. Trước 살, chỉ chữ số cuối rút gọn (하나 → 한), còn 스물 giữ nguyên vì không đứng sát đơn vị.
+    display_answer: 저는 스물한 살이에요.
+
+  - key: ko:exercise:numbers-review-write-oct-6
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:month-day
+    prompt:
+      source_text: ngày 6 tháng 10 (viết bằng chữ Hangul)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 시월 육 일
+    known_wrong:
+      - answer: 십월 육 일
+        feedback_vi: Tháng 10 là 시월 (bỏ ㅂ của 십).
+        error_tag: irregular_month
+      - answer: 육 일 시월
+        feedback_vi: Tiếng Hàn nói tháng trước, ngày sau - 시월 육 일.
+        error_tag: date_order
+      - answer: 시월 여섯 일
+        feedback_vi: Ngày dùng số Hán-Hàn - 육 일, không phải 여섯.
+        error_tag: number_system
+      - answer: 10월 6일
+        feedback_vi: Bài này yêu cầu viết bằng chữ Hangul - 시월 육 일.
+        error_tag: digits_not_words
+    explanation:
+      vi: Tháng trước, ngày sau, đều bằng số Hán-Hàn. Tháng 10 là dạng bất quy tắc 시월, ngày 6 là 육 일.
+    display_answer: 시월 육 일
+
+  # ---------------- application ----------------
+  - key: ko:exercise:numbers-review-translate-order
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:counter-jan
+    prompt:
+      source_text: 사과 두 개하고 커피 한 잔 주세요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cho tôi hai quả táo và một ly cà phê.
+        - Cho tôi 2 quả táo và 1 ly cà phê.
+        - Cho tôi hai quả táo và một cốc cà phê.
+        - Cho tôi hai quả táo với một ly cà phê.
+        - Cho tôi hai quả táo và một tách cà phê.
+        - Lấy cho tôi hai quả táo và một ly cà phê.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cho tôi một quả táo và hai ly cà phê.
+        feedback_vi: 두 개 là hai cái (quả), 한 잔 là một ly - bạn đã đảo hai con số.
+        error_tag: number_value
+      - answer: Cho tôi hai quả táo và một chai cà phê.
+        feedback_vi: 잔 là ly/cốc; chai là 병.
+        error_tag: counter_choice
+    explanation:
+      vi: 두 개 là hai cái (với táo là "hai quả"), 한 잔 là một ly, 하고 nghĩa là "và". Tiếng Việt đưa số lên trước danh từ.
+    display_answer: Cho tôi hai quả táo và một ly cà phê.
+
+  - key: ko:exercise:numbers-review-translate-water-price
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:eolmayeyo
+    prompt:
+      source_text: Hai chai nước bao nhiêu tiền?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 물 두 병 얼마예요?
+        - 물 두 병에 얼마예요?
+        - 물 두 병은 얼마예요?
+        - 물 2병 얼마예요?
+    known_wrong:
+      - answer: 물 둘 병 얼마예요?
+        feedback_vi: Trước đơn vị, 둘 rút gọn thành 두 - 물 두 병.
+        error_tag: counter_form
+      - answer: 물 이 병 얼마예요?
+        feedback_vi: Đếm chai dùng số thuần Hàn - 두 병.
+        error_tag: number_system
+      - answer: 물 두 병 몇 개예요?
+        feedback_vi: 몇 개 hỏi số lượng. Hỏi giá dùng 얼마예요?
+        error_tag: question_word
+      - answer: 물 두 병 얼마이에요?
+        feedback_vi: 얼마 kết thúc bằng nguyên âm nên dùng 예요 - 얼마예요?
+        error_tag: copula_form
+    explanation:
+      vi: 물 두 병 là "hai chai nước" (danh từ + số thuần Hàn rút gọn + đơn vị), 얼마예요 là "bao nhiêu tiền". Thêm 에 (cho) hoặc 은 sau 병 cũng tự nhiên.
+    display_answer: 물 두 병 얼마예요?
+
+  - key: ko:exercise:numbers-review-mcq-appointment
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:weekdays
+    prompt:
+      stem: Bạn muốn hẹn bạn Hàn Quốc lúc 7 giờ tối thứ Năm. Cách nói nào đúng?
+      stem_lang: vi
+      options:
+        - { id: s5d, text: 목요일 오후 일곱 시, lang: ko }
+        - { id: j3x, text: 목요일 오후 칠 시, lang: ko }
+        - { id: u8w, text: 금요일 오후 일곱 시, lang: ko }
+        - { id: e6c, text: 목요일 일곱 시 오후, lang: ko }
+    answer:
+      correct_option_id: s5d
+    explanation:
+      vi: Thứ Năm là 목요일 (mộc), 오후 đứng trước giờ, và giờ dùng số thuần Hàn 일곱. 칠 시 sai bộ số, 금요일 là thứ Sáu.
+    display_answer: 목요일 오후 일곱 시

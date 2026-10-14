@@ -1,0 +1,387 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:greetings-intro-review
+order_index: 5
+level: topik1
+title:
+  vi: Ôn tập - Cuộc gặp đầu tiên
+objectives:
+  - vi: Ghép chào hỏi, tên, quốc tịch, nghề nghiệp thành một đoạn hội thoại làm quen hoàn chỉnh.
+  - vi: Chọn đúng 은/는, 이/가, 이에요/예요 trong câu dài hơn.
+  - vi: Dùng đúng 씨, 이것/그것 và câu chia tay theo tình huống.
+estimated_minutes: 15
+skills: [speaking, listening, grammar, writing]
+prerequisites: [ko:lesson:this-that]
+items:
+  - item: ko:item:annyeonghaseyo
+    role: reuse
+  - item: ko:item:mannaseo-bangawoyo
+    role: reuse
+  - item: ko:item:annyeonghi-gyeseyo
+    role: reuse
+  - item: ko:item:gamsahamnida
+    role: reuse
+  - item: ko:item:jeo-na
+    role: reuse
+  - item: ko:item:topic-eun-neun
+    role: reuse
+  - item: ko:item:copula-ieyo-yeyo
+    role: reuse
+  - item: ko:item:ireum
+    role: reuse
+  - item: ko:item:ssi
+    role: reuse
+  - item: ko:item:hanguk
+    role: reuse
+  - item: ko:item:beteunam
+    role: reuse
+  - item: ko:item:hoesawon
+    role: reuse
+  - item: ko:item:uisa
+    role: reuse
+  - item: ko:item:ne-aniyo
+    role: reuse
+  - item: ko:item:i-ga-anieyo
+    role: reuse
+  - item: ko:item:demonstratives
+    role: reuse
+  - item: ko:item:chaek
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự tin làm quen với một người Hàn - chào, giới thiệu tên, quốc tịch, nghề, hỏi về đồ vật và chào tạm biệt đúng cách.
+  - type: explain
+    text:
+      vi: Một cuộc làm quen thường đi theo thứ tự - 안녕하세요 → giới thiệu tên (저는 … 이에요/예요) → 만나서 반가워요 → hỏi quốc tịch, nghề → chia tay. Bạn đã có đủ mẫu câu cho từng bước.
+  - type: explain
+    text:
+      vi: Hầu hết lỗi của người Việt nằm ở một quy tắc - xét patchim của âm tiết đứng ngay trước. Có patchim - 은, 이, 이에요; không patchim - 는, 가, 예요.
+  - type: deep_explain
+    text:
+      vi: Khi gọi người đối diện, người Hàn dùng tên + 씨 thay cho “bạn”, và chỉ dùng 저 (không dùng 씨) khi nói về mình. Câu hỏi có/không giữ nguyên dạng câu kể, chỉ lên giọng ở cuối - 회사원이에요? Những chủ đề tiếp theo như số đếm, giờ giấc, đồ ăn hay động từ đuôi -아요/어요 sẽ xây tiếp trên các mẫu câu này.
+  - type: example
+    target: 안녕하세요? 저는 김민수예요. - 안녕하세요? 저는 란이에요. 만나서 반가워요.
+    target_lang: ko
+    translation:
+      vi: Xin chào, tôi là Kim Minsu. - Xin chào, tôi là Lan. Rất vui được gặp anh.
+    note:
+      vi: 수 không patchim → 예요; 란 có patchim → 이에요.
+  - type: example
+    target: 란 씨는 어느 나라 사람이에요? - 베트남 사람이에요.
+    target_lang: ko
+    translation:
+      vi: Chị Lan là người nước nào? - Tôi là người Việt Nam.
+    note:
+      vi: Minsu gọi Lan bằng 란 씨; Lan trả lời không cần 저는.
+  - type: example
+    target: 민수 씨는 학생이에요? - 아니요, 학생이 아니에요. 회사원이에요.
+    target_lang: ko
+    translation:
+      vi: Anh Minsu là sinh viên à? - Không, tôi không phải sinh viên. Tôi là nhân viên công ty.
+    note:
+      vi: Phủ định 학생이 아니에요, rồi nói lại nghề đúng.
+  - type: example
+    target: 이건 뭐예요? - 그건 한국어 책이에요.
+    target_lang: ko
+    translation:
+      vi: Cái này là gì? - Cái đó là sách tiếng Hàn.
+    note:
+      vi: Vật ở trong tay người hỏi nên người trả lời dùng 그건.
+  - type: example
+    target: 민수 씨, 안녕히 가세요. - 네, 란 씨, 안녕히 계세요.
+    target_lang: ko
+    translation:
+      vi: Anh Minsu về cẩn thận nhé. - Vâng, chào chị Lan nhé.
+    note:
+      vi: Lan ở lại nên nói 가세요; Minsu ra về nên nói 계세요.
+  - type: common_mistake
+    wrong: 저는 란 씨예요. 베트남 사람예요.
+    right: 저는 란이에요. 베트남 사람이에요.
+    target_lang: ko
+    note:
+      vi: Hai lỗi trong một câu - không gắn 씨 cho chính mình, và 사람 có patchim ㅁ nên phải dùng 이에요.
+  - type: common_mistake
+    wrong: 민수 씨은 의사이 아니에요.
+    right: 민수 씨는 의사가 아니에요.
+    target_lang: ko
+    note:
+      vi: Trợ từ gắn sau 씨 (không patchim) nên là 는; 의사 không patchim nên là 가 아니에요.
+  - type: summary
+    points:
+      - vi: Làm quen - 안녕하세요 → 저는 + tên + 이에요/예요 → 만나서 반가워요.
+      - vi: Hỏi - 이름이 뭐예요? · 어느 나라 사람이에요? · 학생이에요?
+      - vi: Có patchim - 은 / 이 / 이에요; không patchim - 는 / 가 / 예요.
+      - vi: Gọi người khác - tên + 씨; nói về mình - 저, không có 씨.
+      - vi: Chia tay - người ở lại 안녕히 가세요, người ra về 안녕히 계세요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:gi-review-mcq-aniyo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:ne-aniyo
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống. Lan - 민수 씨는 학생이에요? Minsu - ___, 회사원이에요."
+      stem_lang: vi
+      options:
+        - { id: z8q, text: 아니요, lang: ko }
+        - { id: c3t, text: 네, lang: ko }
+        - { id: w6f, text: 감사합니다, lang: ko }
+        - { id: j1k, text: 안녕하세요, lang: ko }
+    answer:
+      correct_option_id: z8q
+    explanation:
+      vi: Minsu là nhân viên công ty, không phải sinh viên, nên phải trả lời 아니요 (không). 네 nghĩa là “vâng, đúng vậy” - mâu thuẫn với phần sau.
+    display_answer: 아니요
+
+  - key: ko:exercise:gi-review-listen-intro
+    type: listen
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:mannaseo-bangawoyo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 저는 란이에요. 만나서 반가워요.
+      options:
+        - { id: r2m, text: Tôi là Lan. Rất vui được gặp bạn., lang: vi }
+        - { id: e9w, text: Tôi là Lan. Cảm ơn bạn., lang: vi }
+        - { id: b4n, text: Chị Lan là người Việt Nam., lang: vi }
+        - { id: y7c, text: Tôi không phải là Lan., lang: vi }
+    answer:
+      correct_option_id: r2m
+    explanation:
+      vi: 저는 란이에요 là “tôi là Lan”; 만나서 반가워요 là “rất vui được gặp bạn”. Cảm ơn là 감사합니다, còn “không phải” cần 아니에요.
+    display_answer: Tôi là Lan. Rất vui được gặp bạn.
+
+  - key: ko:exercise:gi-review-order-not-doctor
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:i-ga-anieyo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: “Anh Minsu không phải là bác sĩ.”"
+      tokens:
+        - { id: w1, text: 아니에요 }
+        - { id: w2, text: 이 }
+        - { id: w3, text: 의사 }
+        - { id: w4, text: 씨 }
+        - { id: w5, text: 은 }
+        - { id: w6, text: 가 }
+        - { id: w7, text: 민수 }
+        - { id: w8, text: 는 }
+    answer:
+      orders:
+        - [w7, w4, w8, w3, w6, w1]
+    explanation:
+      vi: 민수 씨 + 는 (씨 không patchim) + 의사 + 가 (사 không patchim) + 아니에요. Phần phủ định đứng cuối câu.
+    display_answer: 민수 씨는 의사가 아니에요.
+
+  - key: ko:exercise:gi-review-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:jeo-na
+    prompt:
+      template: "A - 안녕하세요? 저{{b1}} 김민수예요. B - 안녕하세요? 만나서 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Xin chào, tôi là Kim Minsu. - Xin chào, rất vui được gặp anh."
+        - 저 không có patchim; “rất vui” là 반가워요.
+    answer:
+      blanks:
+        b1: [는]
+        b2: [반가워요, 반갑습니다]
+    known_wrong:
+      - answer: 은
+        feedback_vi: 저 không có patchim nên đi với 는 - 저는.
+        error_tag: particle_eun_neun
+      - answer: 반가와요
+        feedback_vi: Viết là 반가워요 (워 = ㅇ + ㅝ).
+        error_tag: spelling
+      - answer: 감사합니다
+        feedback_vi: 감사합니다 là “cảm ơn”. Khi mới gặp, nói 만나서 반가워요.
+        error_tag: wrong_expression
+    explanation:
+      vi: 저 không có patchim → 저는. Đáp lại lời giới thiệu, người Hàn nói 만나서 반가워요 (hoặc trang trọng hơn 만나서 반갑습니다).
+    display_answer: 저는 김민수예요. / 만나서 반가워요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:gi-review-write-nice
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:mannaseo-bangawoyo
+    prompt:
+      source_text: Rất vui được gặp bạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 만나서 반가워요.
+        - 반가워요.
+        - 만나서 반갑습니다.
+        - 반갑습니다.
+    known_wrong:
+      - answer: 만나서 반가와요.
+        feedback_vi: Viết là 반가워요, không phải 반가와요.
+        error_tag: spelling
+      - answer: 만나서 반갑씀니다.
+        feedback_vi: Đọc [반갑씀니다] nhưng viết 반갑습니다.
+        error_tag: spelling_by_sound
+      - answer: mannaseo bangawoyo
+        feedback_vi: Hãy gõ bằng chữ Hangul (만나서 반가워요), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: 만나서 (vì được gặp) + 반가워요 (vui mừng). Dạng trang trọng là 반갑습니다; khi nói nhanh có thể chỉ nói 반가워요.
+    display_answer: 만나서 반가워요.
+
+  - key: ko:exercise:gi-review-fill-goodbye-teacher
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:annyeonghi-gyeseyo
+    prompt:
+      template: "Hết giờ, Lan ra về và chào thầy giáo còn ở lại lớp - 선생님, 감사{{b1}}. 안녕히 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [합니다, 해요]
+        b2: [계세요]
+    known_wrong:
+      - answer: 가세요
+        feedback_vi: Lan là người ra về, thầy ở lại, nên Lan nói 안녕히 계세요.
+        error_tag: leave_stay
+      - answer: 함니다
+        feedback_vi: Đọc [함니다] nhưng viết 합니다.
+        error_tag: spelling_by_sound
+    explanation:
+      vi: Cảm ơn thầy - 감사합니다. Lan rời đi, thầy ở lại, nên Lan chúc thầy “ở lại bình an” - 안녕히 계세요.
+    display_answer: 선생님, 감사합니다. 안녕히 계세요.
+
+  - key: ko:exercise:gi-review-write-ask-korean
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ssi
+    prompt:
+      source_text: Anh Minsu là người Hàn Quốc à?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 민수 씨는 한국 사람이에요?
+        - 민수 씨는 한국 사람입니까?
+        - 민수 씨는 한국인이에요?
+        - 민수 씨, 한국 사람이에요?
+        - 민수 씨는 한국 사람인가요?
+    known_wrong:
+      - answer: 민수 씨은 한국 사람이에요?
+        feedback_vi: 씨 không có patchim nên đi với 는 - 민수 씨는.
+        error_tag: particle_eun_neun
+      - answer: 민수 씨는 한국 사람예요?
+        feedback_vi: 람 có patchim ㅁ nên dùng 이에요 - 사람이에요.
+        error_tag: copula_form
+      - answer: 민수 씨는 사람 한국이에요?
+        feedback_vi: Tên nước đứng trước 사람 - 한국 사람.
+        error_tag: word_order
+    explanation:
+      vi: “Anh Minsu” là 민수 씨; câu hỏi có/không giữ nguyên câu kể 한국 사람이에요 và lên giọng ở cuối.
+    display_answer: 민수 씨는 한국 사람이에요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:gi-review-translate-intro-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:beteunam
+    prompt:
+      source_text: 안녕하세요? 제 이름은 란이에요. 베트남 사람이에요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin chào. Tên tôi là Lan. Tôi là người Việt Nam.
+        - Xin chào, tên tôi là Lan. Tôi là người Việt Nam.
+        - Xin chào. Tôi tên là Lan. Tôi là người Việt Nam.
+        - Xin chào. Tôi tên Lan. Tôi là người Việt Nam.
+        - Chào bạn. Tên tôi là Lan. Tôi là người Việt Nam.
+        - Xin chào. Tên mình là Lan. Mình là người Việt Nam.
+        - Xin chào. Tên tôi là Lan. Tôi là người Việt.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: 제 이름은 란이에요 là “tên tôi là Lan”; 베트남 사람이에요 là “(tôi) là người Việt Nam” - tiếng Hàn bỏ chủ ngữ khi đã rõ, còn tiếng Việt nên thêm “tôi”.
+    display_answer: Xin chào. Tên tôi là Lan. Tôi là người Việt Nam.
+
+  - key: ko:exercise:gi-review-write-nam
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ireum
+    prompt:
+      source_text: Tôi tên là Nam. Tôi là người Việt Nam.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 저는 남이에요. 베트남 사람이에요.
+        - 저는 남이에요. 저는 베트남 사람이에요.
+        - 제 이름은 남이에요. 베트남 사람이에요.
+        - 제 이름은 남이에요. 저는 베트남 사람이에요.
+        - 전 남이에요. 베트남 사람이에요.
+        - 저는 남입니다. 베트남 사람입니다.
+        - 제 이름은 남입니다. 저는 베트남 사람입니다.
+    known_wrong:
+      - answer: 저는 남 씨예요. 베트남 사람이에요.
+        feedback_vi: Không dùng 씨 cho chính mình - chỉ nói 저는 남이에요.
+        error_tag: ssi_self
+      - answer: 저는 남예요. 베트남 사람이에요.
+        feedback_vi: 남 có patchim ㅁ nên dùng 이에요 - 남이에요.
+        error_tag: copula_form
+      - answer: 저는 남이에요. 사람 베트남이에요.
+        feedback_vi: Tên nước đứng trước 사람 - 베트남 사람.
+        error_tag: word_order
+      - answer: 제 이름는 남이에요. 베트남 사람이에요.
+        feedback_vi: 름 có patchim ㅁ nên đi với 은 - 제 이름은.
+        error_tag: particle_eun_neun
+    explanation:
+      vi: Tên 남 có patchim ㅁ nên dùng 이에요 - 남이에요. Không thêm 씨 cho mình; quốc tịch là 베트남 사람 + 이에요.
+    display_answer: 저는 남이에요. 베트남 사람이에요.
+
+  - key: ko:exercise:gi-review-mcq-igeon
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:demonstratives
+    prompt:
+      stem: Minsu đang cầm một quyển sách. Lan chỉ vào nó và hỏi - 그건 뭐예요? Minsu trả lời thế nào cho đúng?
+      stem_lang: vi
+      options:
+        - { id: n5x, text: 이건 한국어 책이에요., lang: ko }
+        - { id: a7g, text: 그건 한국어 책이에요., lang: ko }
+        - { id: u2s, text: 이건 한국어 책예요., lang: ko }
+        - { id: o9d, text: 이건 한국어 책가 아니에요., lang: ko }
+    answer:
+      correct_option_id: n5x
+    explanation:
+      vi: Sách nằm trong tay Minsu (người nói) nên Minsu dùng 이건 - cái này. 책 có patchim ㄱ nên là 책이에요, và phủ định phải là 책이 아니에요.
+    display_answer: 이건 한국어 책이에요.

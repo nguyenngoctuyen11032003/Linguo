@@ -1,0 +1,589 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Ăn uống & mua sắm" (TOPIK 1). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+# Số đếm, đơn vị đếm (개, 병, 잔…) và động từ chung (먹다, 마시다…) thuộc unit khác, chỉ dùng trong câu.
+schema_version: 1
+demo: true
+source: src:linguo-demo
+items:
+  # ---------------- bài 1: món ăn, đồ uống, ngon/dở ----------------
+  - key: ko:item:gimchi
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 김치
+      romanization: gimchi
+      pos: danh từ
+    back:
+      meaning:
+        vi: kim chi
+      examples:
+        - target: 김치가 맛있어요.
+          translation:
+            vi: Kim chi ngon.
+      pronunciation_note:
+        vi: Đọc "kim-chi"; ㅊ bật hơi nhẹ, gần "ch" tiếng Việt kèm hơi.
+
+  - key: ko:item:bibimbap
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 비빔밥
+      romanization: bibimbap
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơm trộn bibimbap
+      examples:
+        - target: 비빔밥 하나 주세요.
+          translation:
+            vi: Cho tôi một phần cơm trộn.
+      pronunciation_note:
+        vi: Thực tế đọc là [비빔빱] - ㅂ sau patchim ㅁ thường được đọc căng thành ㅃ.
+
+  - key: ko:item:bulgogi
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 불고기
+      romanization: bulgogi
+      pos: danh từ
+    back:
+      meaning:
+        vi: thịt bò nướng ướp kiểu Hàn (bulgogi)
+      examples:
+        - target: 불고기를 좋아해요.
+          translation:
+            vi: Tôi thích bulgogi.
+      pronunciation_note:
+        vi: Đọc "bul-gô-gi"; ㄹ cuối 불 uốn nhẹ đầu lưỡi như "l".
+
+  - key: ko:item:ramyeon
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 라면
+      romanization: ramyeon
+      pos: danh từ
+    back:
+      meaning:
+        vi: mì gói, mì ăn liền
+      examples:
+        - target: 라면이 매워요.
+          translation:
+            vi: Mì cay.
+      pronunciation_note:
+        vi: Đọc "ra-myơn"; ㅕ là "yơ", không phải "yô".
+      confusion:
+        vi: 라면 là mì gói ăn liền; mì lạnh là 냉면, đừng dùng 라면 cho mọi loại mì.
+
+  - key: ko:item:tteokbokki
+    type: vocab
+    level: topik1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 떡볶이
+      romanization: tteokbokki
+      pos: danh từ
+    back:
+      meaning:
+        vi: bánh gạo cay tteokbokki
+      examples:
+        - target: 떡볶이가 너무 매워요.
+          translation:
+            vi: Tteokbokki cay quá.
+      pronunciation_note:
+        vi: Đọc là [떡뽀끼] - ㄸ căng ở đầu, ㅂ sau patchim ㄱ đọc căng thành ㅃ, ㄲ ở cuối nối sang 이.
+
+  - key: ko:item:mul
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 물
+      romanization: mul
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước (nước lọc)
+      examples:
+        - target: 물 좀 주세요.
+          translation:
+            vi: Cho tôi xin chút nước.
+      pronunciation_note:
+        vi: Đọc "mul", patchim ㄹ giữ đầu lưỡi chạm lợi như "l" cuối.
+      confusion:
+        vi: Dễ nhầm với 불 (lửa) - 물 bắt đầu bằng ㅁ, 불 bắt đầu bằng ㅂ.
+
+  - key: ko:item:cha
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 차
+      romanization: cha
+      pos: danh từ
+    back:
+      meaning:
+        vi: trà
+      examples:
+        - target: 차 한 잔 주세요.
+          translation:
+            vi: Cho tôi một tách trà.
+      pronunciation_note:
+        vi: ㅊ bật hơi, gần "ch" kèm luồng hơi; khác 자 (ㅈ thường).
+      confusion:
+        vi: 차 cũng có nghĩa là "xe ô tô"; ngữ cảnh gọi đồ uống sẽ cho bạn biết là trà.
+
+  - key: ko:item:juseu
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 주스
+      romanization: juseu
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước ép, nước hoa quả
+      examples:
+        - target: 오렌지 주스 주세요.
+          translation:
+            vi: Cho tôi nước cam.
+      pronunciation_note:
+        vi: Đọc "chu-sư"; âm cuối là ㅡ ("ư"), không phải ㅜ ("u").
+
+  - key: ko:item:maekju
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 맥주
+      romanization: maekju
+      pos: danh từ
+    back:
+      meaning:
+        vi: bia
+      examples:
+        - target: 맥주 한 병 주세요.
+          translation:
+            vi: Cho tôi một chai bia.
+      pronunciation_note:
+        vi: Đọc là [맥쭈] - ㅈ sau patchim ㄱ đọc căng thành ㅉ.
+
+  - key: ko:item:masisseoyo
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 맛있어요
+      romanization: masisseoyo
+      pos: tính từ (해요체)
+    back:
+      meaning:
+        vi: ngon
+      examples:
+        - target: 불고기가 정말 맛있어요.
+          translation:
+            vi: Bulgogi ngon thật.
+      pronunciation_note:
+        vi: Đọc là [마시써요] - patchim ㅅ của 맛 nối sang âm tiết sau thành ㅆ.
+
+  - key: ko:item:maseopseoyo
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 맛없어요
+      romanization: maseopseoyo
+      pos: tính từ (해요체)
+    back:
+      meaning:
+        vi: không ngon, dở
+      examples:
+        - target: 이 라면은 맛없어요.
+          translation:
+            vi: Mì này không ngon.
+      pronunciation_note:
+        vi: Đọc là [마덥써요] - khác hẳn cách đọc 맛있어요, nên hãy nghe kỹ âm "đ".
+      confusion:
+        vi: Không nói 안 맛있어요 để chê đồ ăn; người Hàn dùng 맛없어요.
+
+  # ---------------- bài 2: gọi món ----------------
+  - key: ko:item:gimbap
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 김밥
+      romanization: gimbap
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơm cuộn rong biển (kimbap)
+      examples:
+        - target: 김밥 두 개 주세요.
+          translation:
+            vi: Cho tôi hai cuộn kimbap.
+      pronunciation_note:
+        vi: Đọc "kim-bap"; nhiều người Seoul đọc [김빱], cả hai đều được chấp nhận.
+
+  - key: ko:item:juseyo
+    type: grammar_point
+    level: topik1
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: N(을/를) 주세요
+      romanization: (eul/reul) juseyo
+      pos: cấu trúc nhờ, gọi món
+    back:
+      meaning:
+        vi: Cho tôi N (gọi món, mua hàng, nhờ đưa đồ)
+      examples:
+        - target: 물 한 병 주세요.
+          translation:
+            vi: Cho tôi một chai nước.
+        - target: 비빔밥을 주세요.
+          translation:
+            vi: Cho tôi cơm trộn.
+      pronunciation_note:
+        vi: 주세요 đọc "chu-sê-yô", lên giọng nhẹ ở cuối cho lịch sự.
+      confusion:
+        vi: Tiếng Việt nói "cho tôi nước", còn tiếng Hàn đặt món trước, 주세요 cuối câu - 물 주세요. Số lượng đứng sau danh từ - 김밥 두 개 주세요.
+
+  - key: ko:item:yeogiyo
+    type: phrase
+    level: topik1
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: 여기요 / 저기요
+      romanization: yeogiyo / jeogiyo
+      pos: câu gọi người phục vụ
+    back:
+      meaning:
+        vi: Anh/chị ơi! (gọi nhân viên trong quán)
+      examples:
+        - target: 여기요, 메뉴 좀 주세요.
+          translation:
+            vi: Anh ơi, cho tôi xem thực đơn.
+      pronunciation_note:
+        vi: 여기요 đọc "yơ-gi-yô", 저기요 đọc "chơ-gi-yô"; nói to, rõ, lên giọng ở cuối.
+      confusion:
+        vi: 여기요 nghĩa đen là "ở đây ạ" - gọi người đến chỗ mình. 저기요 cũng dùng để bắt chuyện với người lạ.
+
+  - key: ko:item:menyu
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 메뉴
+      romanization: menyu
+      pos: danh từ
+    back:
+      meaning:
+        vi: thực đơn, món (trong thực đơn)
+      examples:
+        - target: 메뉴 좀 보여 주세요.
+          translation:
+            vi: Cho tôi xem thực đơn.
+      pronunciation_note:
+        vi: Đọc "mê-nyu"; 뉴 là ㄴ + ㅠ.
+
+  - key: ko:item:pojang
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: 포장해 주세요
+      romanization: pojanghae juseyo
+      pos: câu nhờ
+    back:
+      meaning:
+        vi: Gói mang về giúp tôi
+      examples:
+        - target: 떡볶이 포장해 주세요.
+          translation:
+            vi: Gói tteokbokki mang về giúp tôi.
+      pronunciation_note:
+        vi: ㅍ ở 포 bật hơi mạnh, hai môi chạm nhau - không đọc thành "phô" (âm f).
+      confusion:
+        vi: Ăn tại quán thì nói 여기서 먹을게요; mang về thì nói 포장해 주세요.
+
+  - key: ko:item:kadeu-gyesan
+    type: phrase
+    level: topik1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: 카드로 계산할게요
+      romanization: kadeuro gyesanhalgeyo
+      pos: câu khi thanh toán
+    back:
+      meaning:
+        vi: Tôi thanh toán bằng thẻ
+      examples:
+        - target: 카드로 계산할게요.
+          translation:
+            vi: Tôi trả bằng thẻ nhé.
+        - target: 현금으로 계산할게요.
+          translation:
+            vi: Tôi trả bằng tiền mặt.
+      pronunciation_note:
+        vi: 계산 đọc "kyê-san"; 할게요 thực tế đọc [할께요].
+      confusion:
+        vi: 로/으로 nghĩa là "bằng" - 카드 không có patchim nên dùng 로, 현금 có patchim nên dùng 으로.
+
+  # ---------------- bài 3: thích, muốn, vị ----------------
+  - key: ko:item:joahaeyo
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N을/를 좋아해요 · N이/가 좋아요
+      romanization: joahaeyo · joayo
+      pos: động từ / tính từ (thích)
+    back:
+      meaning:
+        vi: thích N - 좋아해요 đi với 을/를, 좋아요 đi với 이/가
+      examples:
+        - target: 저는 김치를 좋아해요.
+          translation:
+            vi: Tôi thích kim chi.
+        - target: 저는 김치가 좋아요.
+          translation:
+            vi: Tôi thích kim chi (kim chi thì tôi thấy thích).
+      pronunciation_note:
+        vi: ㅎ trong 좋 gần như câm - 좋아해요 đọc [조아해요], 좋아요 đọc [조아요].
+      confusion:
+        vi: Người Việt hay nói 김치를 좋아요 - sai trợ từ. 좋아해요 là động từ nên cần 을/를; 좋아요 là tính từ ("tốt, thích") nên cần 이/가.
+
+  - key: ko:item:sireohaeyo
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 싫어해요
+      romanization: sireohaeyo
+      pos: động từ
+    back:
+      meaning:
+        vi: ghét, không thích
+      examples:
+        - target: 동생은 매운 음식을 싫어해요.
+          translation:
+            vi: Em tôi không thích đồ cay.
+      pronunciation_note:
+        vi: Đọc là [시러해요] - ㅎ trong patchim ㅀ câm, ㄹ nối sang 어.
+      confusion:
+        vi: Giống 좋아해요, 싫어해요 đi với 을/를 - 김치를 싫어해요.
+
+  - key: ko:item:go-sipeoyo
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-고 싶어요
+      romanization: -go sipeoyo
+      pos: đuôi câu (mong muốn)
+    back:
+      meaning:
+        vi: muốn làm V (nói về mình, hoặc hỏi người nghe)
+      examples:
+        - target: 비빔밥을 먹고 싶어요.
+          translation:
+            vi: Tôi muốn ăn cơm trộn.
+        - target: 뭐 마시고 싶어요?
+          translation:
+            vi: Bạn muốn uống gì?
+      pronunciation_note:
+        vi: 싶어요 đọc [시퍼요] - patchim ㅍ nối sang 어.
+      confusion:
+        vi: Nói về người thứ ba thì dùng -고 싶어해요 (민수 씨는 라면을 먹고 싶어해요), vì bạn không biết chắc mong muốn trong lòng người khác.
+
+  - key: ko:item:hago-wa-gwa
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N하고 N · N와/과 N
+      romanization: hago · wa/gwa
+      pos: trợ từ nối danh từ
+    back:
+      meaning:
+        vi: và (nối hai danh từ)
+      examples:
+        - target: 김밥하고 라면 주세요.
+          translation:
+            vi: Cho tôi kimbap và mì.
+        - target: 밥과 김치를 먹어요.
+          translation:
+            vi: Tôi ăn cơm và kim chi.
+      pronunciation_note:
+        vi: 하고 đọc "ha-gô"; 과 đọc gần "qua", 와 đọc "oa".
+      confusion:
+        vi: 하고 dùng cho mọi danh từ và hay dùng khi nói. 와 sau danh từ không có patchim (커피와), 과 sau danh từ có patchim (밥과) - ngược với cảm giác của nhiều người.
+
+  - key: ko:item:maewoyo
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 매워요
+      romanization: maewoyo
+      pos: tính từ (해요체)
+    back:
+      meaning:
+        vi: cay
+      examples:
+        - target: 떡볶이가 좀 매워요.
+          translation:
+            vi: Tteokbokki hơi cay.
+      pronunciation_note:
+        vi: Đọc "me-uơ-yô"; gốc là 맵다, ㅂ biến thành 우 khi nối với 어요.
+
+  - key: ko:item:darayo
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 달아요
+      romanization: darayo
+      pos: tính từ (해요체)
+    back:
+      meaning:
+        vi: ngọt
+      examples:
+        - target: 이 주스는 너무 달아요.
+          translation:
+            vi: Nước ép này ngọt quá.
+      pronunciation_note:
+        vi: Đọc là [다라요] - patchim ㄹ nối sang 아 thành "r" nhẹ.
+
+  - key: ko:item:jjayo
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 짜요
+      romanization: jjayo
+      pos: tính từ (해요체)
+    back:
+      meaning:
+        vi: mặn
+      examples:
+        - target: 라면이 좀 짜요.
+          translation:
+            vi: Mì hơi mặn.
+      pronunciation_note:
+        vi: ㅉ căng, siết cổ, không có hơi; khác 차요 (ㅊ bật hơi) và 자요 (ngủ).
+      confusion:
+        vi: 자요 (ㅈ thường) nghĩa là "ngủ" - một âm căng sai là đổi nghĩa.
+
+  # ---------------- bài 4: mua sắm ----------------
+  - key: ko:item:sinbal
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 신발
+      romanization: sinbal
+      pos: danh từ
+    back:
+      meaning:
+        vi: giày, giày dép
+      examples:
+        - target: 이 신발 얼마예요?
+          translation:
+            vi: Đôi giày này bao nhiêu tiền?
+      pronunciation_note:
+        vi: Đọc "sin-bal"; ㅅ trước ㅣ đọc gần "shi".
+
+  - key: ko:item:bissayo
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 비싸요
+      romanization: bissayo
+      pos: tính từ (해요체)
+    back:
+      meaning:
+        vi: đắt
+      examples:
+        - target: 이 옷은 너무 비싸요.
+          translation:
+            vi: Bộ đồ này đắt quá.
+      pronunciation_note:
+        vi: ㅆ căng, đọc "bi-ssa-yô" với "s" mạnh, rít.
+      confusion:
+        vi: Dễ nhầm với 싸요 (rẻ) - chỉ khác chữ 비 phía trước nhưng nghĩa trái ngược.
+
+  - key: ko:item:ssayo
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 싸요
+      romanization: ssayo
+      pos: tính từ (해요체)
+    back:
+      meaning:
+        vi: rẻ
+      examples:
+        - target: 시장 옷이 싸요.
+          translation:
+            vi: Quần áo ở chợ rẻ.
+      pronunciation_note:
+        vi: ㅆ căng; đừng đọc thành 사요 (ㅅ thường) - 사요 nghĩa là "mua".
+      confusion:
+        vi: 싸요 là rẻ, 사요 là mua, 비싸요 là đắt - ba từ rất giống nhau khi nghe nhanh.
+
+  - key: ko:item:kkakka-juseyo
+    type: phrase
+    level: topik1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: 좀 깎아 주세요
+      romanization: jom kkakka juseyo
+      pos: câu nhờ (mặc cả)
+    back:
+      meaning:
+        vi: Bớt cho tôi một chút
+      examples:
+        - target: 너무 비싸요. 좀 깎아 주세요.
+          translation:
+            vi: Đắt quá. Bớt cho tôi chút đi.
+      pronunciation_note:
+        vi: 깎아 đọc [까까] - ㄲ căng ở cả hai âm tiết, không có hơi.
+      confusion:
+        vi: Chỉ mặc cả ở chợ hoặc cửa hàng nhỏ; ở siêu thị, cửa hàng lớn, giá cố định.

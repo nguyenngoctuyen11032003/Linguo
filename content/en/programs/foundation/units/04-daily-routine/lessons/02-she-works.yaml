@@ -1,0 +1,381 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
+key: en:lesson:she-works
+order_index: 2
+level: a1
+title:
+  vi: Cô ấy làm việc - động từ thêm -s
+objectives:
+  - vi: Thêm đúng -s, -es, -ies vào động từ khi chủ ngữ là he, she, it hoặc một người.
+  - vi: Đọc đúng đuôi -s theo ba cách /s/, /z/, /ɪz/.
+  - vi: Kể thói quen buổi sáng, buổi tối của người khác - She gets up, he brushes his teeth, she studies.
+estimated_minutes: 12
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [en:lesson:my-day]
+items:
+  - item: en:item:third-person-s
+  - item: en:item:s-ending-sounds
+  - item: en:item:work-verb
+  - item: en:item:study
+  - item: en:item:get-dressed
+  - item: en:item:take-a-shower
+  - item: en:item:brush-your-teeth
+  - item: en:item:do-homework
+  - item: en:item:read
+  - item: en:item:listen-to-music
+  - item: en:item:present-simple
+    role: reuse
+  - item: en:item:get-up
+    role: reuse
+  - item: en:item:go-to-work
+    role: reuse
+  - item: en:item:watch-tv
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được thói quen của người khác - "Cô ấy dậy sớm, tắm rồi đi làm", "Anh ấy học tiếng Anh vào buổi tối" - với động từ chia đúng.
+  - type: explain
+    text:
+      vi: Tiếng Việt nói "tôi làm", "cô ấy làm" - động từ không đổi. Tiếng Anh thì khác - khi chủ ngữ là he, she, it hoặc một người (Lan, my mother), động từ phải thêm -s - I work nhưng she works.
+  - type: explain
+    text:
+      vi: "Động từ tận cùng bằng s, sh, ch, x, o thêm -es - watches, brushes, goes, does. Phụ âm + y thì đổi y thành -ies - study → studies; nguyên âm + y chỉ thêm -s - play → plays. Have là trường hợp đặc biệt: she has."
+  - type: explain
+    text:
+      vi: "Đuôi -s có ba cách đọc. Sau âm p, t, k, f đọc /s/ (works, gets); sau âm s, sh, ch, x, z đọc /ɪz/ và thêm một âm tiết (watches, brushes); còn lại đọc /z/ (reads, studies, goes)."
+  - type: deep_explain
+    text:
+      vi: Người Việt hay nuốt âm cuối, nên dù viết đúng works, khi nói vẫn nghe thành work. Hãy tập bật nhẹ "s" hoặc "z" ở cuối, nhất là khi từ sau bắt đầu bằng nguyên âm - works in nối thành "uớc-xin". Does đọc /dʌz/ (gần "đâz") và goes đọc /ɡəʊz/ (gần "gâuz"), không đọc "đu-ét", "gô-ét".
+  - type: example
+    target: She gets up early and takes a shower.
+    target_lang: en
+    translation:
+      vi: Cô ấy dậy sớm và đi tắm.
+    note:
+      vi: Cả hai động từ đều thêm -s vì chủ ngữ là she.
+  - type: example
+    target: He watches TV and brushes his teeth.
+    target_lang: en
+    translation:
+      vi: Anh ấy xem ti vi rồi đánh răng.
+    note:
+      vi: Watch và brush tận cùng bằng ch, sh nên thêm -es, đọc /ɪz/. My teeth đổi thành his teeth.
+  - type: example
+    target: Lan studies English and does her homework at night.
+    target_lang: en
+    translation:
+      vi: Buổi tối Lan học tiếng Anh và làm bài tập.
+    note:
+      vi: Lan là một người, như she. Study → studies, do → does.
+  - type: example
+    target: My father reads the news and listens to music.
+    target_lang: en
+    translation:
+      vi: Bố tôi đọc tin tức và nghe nhạc.
+    note:
+      vi: Reads và listens đều đọc đuôi /z/.
+  - type: common_mistake
+    wrong: She work in a bank.
+    right: She works in a bank.
+    target_lang: en
+    note:
+      vi: Đây là lỗi phổ biến nhất của người Việt. Chủ ngữ là she nên động từ phải có -s.
+  - type: common_mistake
+    wrong: He studys English and watchs TV.
+    right: He studies English and watches TV.
+    target_lang: en
+    note:
+      vi: Phụ âm + y đổi thành -ies (studies); tận cùng ch thêm -es (watches).
+  - type: common_mistake
+    wrong: They works every day.
+    right: They work every day.
+    target_lang: en
+    note:
+      vi: Chỉ he, she, it mới thêm -s. They, we, you, I giữ nguyên động từ.
+  - type: summary
+    points:
+      - vi: he/she/it hoặc một người → động từ thêm -s - she works.
+      - vi: s, sh, ch, x, o → -es (watches, goes, does); phụ âm + y → -ies (studies); have → has.
+      - vi: "Đọc đuôi -s: /s/ (works), /z/ (reads), /ɪz/ (watches)."
+      - vi: I, you, we, they giữ nguyên động từ - they work.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:she-works-mcq-works
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:third-person-s
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: She ___ in a hospital."
+      stem_lang: vi
+      options:
+        - { id: v2k, text: works, lang: en }
+        - { id: a9h, text: work, lang: en }
+        - { id: n4e, text: workes, lang: en }
+        - { id: g6u, text: is work, lang: en }
+    answer:
+      correct_option_id: v2k
+    explanation:
+      vi: Chủ ngữ she nên động từ thêm -s. Work tận cùng bằng k nên chỉ thêm -s, không thêm -es; và không cần is vì đã có động từ work.
+    display_answer: works
+
+  - key: en:exercise:she-works-mcq-iz-sound
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:s-ending-sounds
+    prompt:
+      stem: Từ nào có đuôi -s đọc là /ɪz/ (thêm một âm tiết)?
+      stem_lang: vi
+      options:
+        - { id: x3p, text: watches, lang: en }
+        - { id: l7f, text: works, lang: en }
+        - { id: d1z, text: reads, lang: en }
+        - { id: o8m, text: studies, lang: en }
+    answer:
+      correct_option_id: x3p
+    explanation:
+      vi: Watch kết thúc bằng âm /tʃ/ (ch) nên đuôi đọc /ɪz/ - "UOT-chiz". Works đọc /s/, reads và studies đọc /z/, không thêm âm tiết.
+    display_answer: watches
+
+  - key: en:exercise:she-works-listen-studies
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:study
+    prompt:
+      audio_asset_id: null
+      fallback_text: He watches TV and she studies.
+      options:
+        - { id: k5s, text: "Anh ấy xem ti vi còn cô ấy học bài.", lang: vi }
+        - { id: e7w, text: "Anh ấy học bài còn cô ấy xem ti vi.", lang: vi }
+        - { id: p2c, text: "Họ xem ti vi và học bài.", lang: vi }
+        - { id: i9t, text: "Anh ấy xem ti vi còn cô ấy đọc sách.", lang: vi }
+    answer:
+      correct_option_id: k5s
+    explanation:
+      vi: He đi với watches (xem), she đi với studies (học). Đọc sách là reads, còn "họ" là they.
+    display_answer: Anh ấy xem ti vi còn cô ấy học bài.
+
+  - key: en:exercise:she-works-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:third-person-s
+    prompt:
+      template: "My sister {{b1}} TV and {{b2}} English every day."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa của câu: Ngày nào chị tôi cũng xem ti vi và học tiếng Anh."
+        - "Gợi ý: watch tận cùng bằng ch; study tận cùng bằng phụ âm + y."
+    answer:
+      blanks:
+        b1: [watches]
+        b2: [studies, learns]
+    known_wrong:
+      - answer: watch
+        feedback_vi: My sister là một người (như she), nên động từ phải thêm -es - watches.
+        error_tag: third_person_s
+      - answer: watchs
+        feedback_vi: Watch tận cùng bằng ch nên thêm -es - watches.
+        error_tag: spelling_es
+      - answer: study
+        feedback_vi: My sister là một người (như she), nên động từ phải đổi thành studies.
+        error_tag: third_person_s
+      - answer: studys
+        feedback_vi: Phụ âm + y đổi y thành -ies - studies.
+        error_tag: spelling_ies
+    explanation:
+      vi: My sister tương đương she nên cả hai động từ phải chia. Watch tận cùng bằng ch thêm -es; study là phụ âm + y nên đổi thành -ies.
+    display_answer: My sister watches TV and studies English every day.
+
+  - key: en:exercise:she-works-order-teeth
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:brush-your-teeth
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Anh ấy đánh răng và đi tắm.\""
+      tokens:
+        - { id: t-a, text: a }
+        - { id: t-teeth, text: teeth }
+        - { id: t-take, text: take }
+        - { id: t-he, text: He }
+        - { id: t-shower, text: shower }
+        - { id: t-brush, text: brush }
+        - { id: t-his, text: his }
+        - { id: t-takes, text: takes }
+        - { id: t-and, text: and }
+        - { id: t-brushes, text: brushes }
+    answer:
+      orders:
+        - [t-he, t-brushes, t-his, t-teeth, t-and, t-takes, t-a, t-shower]
+    explanation:
+      vi: Chủ ngữ he nên cả hai động từ đều chia - brushes (thêm -es vì tận cùng sh) và takes. Răng của anh ấy là his teeth.
+    display_answer: He brushes his teeth and takes a shower.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:she-works-fill-morning
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:get-dressed
+    prompt:
+      template: "She {{b1}} up early, {{b2}} dressed and {{b3}} to work."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [gets]
+        b2: [gets]
+        b3: [goes, walks]
+    known_wrong:
+      - answer: get
+        feedback_vi: Chủ ngữ she nên động từ phải thêm -s - gets.
+        error_tag: third_person_s
+      - answer: go
+        feedback_vi: Chủ ngữ she nên go thành goes.
+        error_tag: third_person_s
+      - answer: gos
+        feedback_vi: Go tận cùng bằng o nên thêm -es - goes.
+        error_tag: spelling_es
+      - answer: getes
+        feedback_vi: Get chỉ thêm -s - gets.
+        error_tag: spelling_es
+    explanation:
+      vi: Chủ ngữ she nên cả ba động từ đều chia. Get thêm -s (gets); go tận cùng bằng o nên thêm -es (goes).
+    display_answer: She gets up early, gets dressed and goes to work.
+
+  - key: en:exercise:she-works-translate-studies
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:study
+    prompt:
+      source_text: Buổi tối anh ấy học tiếng Anh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - He studies English at night.
+        - At night he studies English.
+        - He studies English in the evening.
+        - In the evening he studies English.
+        - He learns English in the evening.
+        - He learns English at night.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: He study English at night.
+        feedback_vi: Chủ ngữ he nên động từ phải chia - studies.
+        error_tag: third_person_s
+      - answer: He studys English at night.
+        feedback_vi: Phụ âm + y đổi thành -ies - studies.
+        error_tag: spelling_ies
+      - answer: He is study English at night.
+        feedback_vi: Câu có động từ thường thì không thêm is - He studies English.
+        error_tag: be_with_verb
+      - answer: He studies English in the night.
+        feedback_vi: Buổi tối là at night hoặc in the evening, không nói in the night.
+        error_tag: preposition_time
+    explanation:
+      vi: He là ngôi thứ ba số ít nên study đổi thành studies. "Buổi tối" dùng at night hoặc in the evening.
+    display_answer: He studies English at night.
+
+  # ---------------- application ----------------
+  - key: en:exercise:she-works-translate-homework
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:do-homework
+    prompt:
+      source_text: Cô ấy làm bài tập về nhà sau giờ học.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - She does her homework after school.
+        - She does homework after school.
+        - She does her homework after class.
+        - She does homework after class.
+        - After school she does her homework.
+        - After school she does homework.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: She do her homework after school.
+        feedback_vi: Chủ ngữ she nên do phải thành does.
+        error_tag: third_person_s
+      - answer: She dos her homework after school.
+        feedback_vi: Do tận cùng bằng o nên thêm -es - does.
+        error_tag: spelling_es
+      - answer: She makes her homework after school.
+        feedback_vi: Làm bài tập là do homework, không dùng make.
+        error_tag: do_make
+      - answer: She is do her homework after school.
+        feedback_vi: Câu có động từ thường thì không thêm is - She does her homework.
+        error_tag: be_with_verb
+    explanation:
+      vi: Làm bài tập là do homework; chủ ngữ she nên do → does (tận cùng bằng o thêm -es). Có thể thêm her trước homework cho tự nhiên.
+    display_answer: She does her homework after school.
+
+  - key: en:exercise:she-works-translate-music
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:listen-to-music
+    prompt:
+      source_text: He gets up late and listens to music.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh ấy dậy muộn và nghe nhạc.
+        - Anh ấy thức dậy muộn và nghe nhạc.
+        - Anh ấy dậy trễ và nghe nhạc.
+        - Anh ấy thức dậy trễ và nghe nhạc.
+        - Anh ấy dậy muộn rồi nghe nhạc.
+        - Cậu ấy dậy muộn và nghe nhạc.
+        - Ông ấy dậy muộn và nghe nhạc.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Gets up late là "dậy muộn", listens to music là "nghe nhạc". Đuôi -s chỉ cho biết chủ ngữ là he, tiếng Việt không có từ tương ứng.
+    display_answer: Anh ấy dậy muộn và nghe nhạc.
+
+  - key: en:exercise:she-works-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:read
+    prompt:
+      stem: Bạn kể về thói quen buổi sáng của mẹ bạn. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: u4n, text: "She gets up early and reads the news.", lang: en }
+        - { id: h8b, text: "She get up early and read the news.", lang: en }
+        - { id: c3v, text: "She gets up early and read the news.", lang: en }
+        - { id: z6j, text: "She is get up early and reads the news.", lang: en }
+    answer:
+      correct_option_id: u4n
+    explanation:
+      vi: Mẹ bạn là she, nên mọi động từ trong câu đều phải thêm -s, kể cả động từ thứ hai sau and. Câu có động từ thường thì không thêm is.
+    display_answer: She gets up early and reads the news.

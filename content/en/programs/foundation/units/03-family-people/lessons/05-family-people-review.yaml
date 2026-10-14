@@ -1,0 +1,396 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:family-people-review
+order_index: 5
+level: a1
+title:
+  vi: "Ôn tập: Kể về gia đình bạn"
+objectives:
+  - vi: Kết hợp This is…, my/his/her, 's, have got và tính từ để giới thiệu cả gia đình.
+  - vi: Nói ai trông giống ai bằng look like và hỏi Are you married?
+  - vi: Đọc hiểu một đoạn giới thiệu gia đình ngắn và tìm ra quan hệ giữa các người.
+estimated_minutes: 15
+skills: [speaking, reading, writing, listening]
+prerequisites: [en:lesson:describing-people]
+items:
+  - item: en:item:look-like
+  - item: en:item:married
+  - item: en:item:family
+    role: reuse
+  - item: en:item:parents
+    role: reuse
+  - item: en:item:father
+    role: reuse
+  - item: en:item:older-younger
+    role: reuse
+  - item: en:item:this-that-these-those
+    role: reuse
+  - item: en:item:possessive-adjectives
+    role: reuse
+  - item: en:item:possessive-s
+    role: reuse
+  - item: en:item:her
+    role: reuse
+  - item: en:item:have-got
+    role: reuse
+  - item: en:item:child
+    role: reuse
+  - item: en:item:husband
+    role: reuse
+  - item: en:item:twin
+    role: reuse
+  - item: en:item:adjective-before-noun
+    role: reuse
+  - item: en:item:kind
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn giới thiệu được gia đình mình trong 4–5 câu - mỗi người là ai, trông thế nào, tính cách ra sao - và hiểu khi người khác kể về gia đình họ.
+  - type: explain
+    text:
+      vi: "Một đoạn giới thiệu gia đình thường theo thứ tự: giới thiệu người (This is my…), nói về họ (She's got two children), rồi miêu tả (He's tall and kind). Bạn đã học đủ cả ba phần trong unit này."
+  - type: explain
+    text:
+      vi: Để nói ai giống ai về ngoại hình, bạn dùng look like - She looks like her mother. Với he, she và một người cụ thể phải thêm -s (looks), và không thêm be phía trước.
+  - type: explain
+    text:
+      vi: Để nói ai đó đã có gia đình, bạn dùng be + married - My sister is married. Câu hỏi là Are you married? - lịch sự hơn khi bạn đã quen người kia.
+  - type: deep_explain
+    text:
+      vi: "Hãy chú ý các chữ 's: She's got = She has got (có), She's kind = She is kind (là), Lan's mother = mẹ của Lan (sở hữu). Bạn phân biệt bằng từ đứng sau: got → has, tính từ hoặc danh từ có a/an → is, danh từ trơn → sở hữu. Tiếng Việt không có những dạng rút gọn này, nên lúc đầu bạn nên đọc chậm và tách ra."
+  - type: example
+    target: "This is my family. These are my parents, and this is my older sister, Mai."
+    target_lang: en
+    translation:
+      vi: Đây là gia đình tôi. Đây là bố mẹ tôi, còn đây là chị gái tôi, Mai.
+  - type: example
+    target: "Mai is married. Her husband is a doctor, and they've got two children."
+    target_lang: en
+    translation:
+      vi: Chị Mai đã lập gia đình. Chồng chị ấy là bác sĩ, và họ có hai con.
+    note:
+      vi: Người sở hữu là Mai (nữ) nên dùng her husband. They've got = they have got.
+  - type: example
+    target: "Mai's children are twins. They look like their father."
+    target_lang: en
+    translation:
+      vi: Các con của chị Mai là sinh đôi. Chúng trông giống bố.
+    note:
+      vi: Mai's children - sở hữu với tên người. They đi với look (không thêm -s).
+  - type: example
+    target: "My father is tall and funny, and my mother is a kind teacher."
+    target_lang: en
+    translation:
+      vi: Bố tôi cao và vui tính, còn mẹ tôi là một giáo viên hiền hậu.
+  - type: common_mistake
+    wrong: She is look like her mother.
+    right: She looks like her mother.
+    target_lang: en
+    note:
+      vi: Look like đã là động từ, không thêm is. Với she thì look thêm -s thành looks.
+  - type: common_mistake
+    wrong: Mai is married. His husband is a doctor.
+    right: Mai is married. Her husband is a doctor.
+    target_lang: en
+    note:
+      vi: Husband là nam, nhưng người sở hữu là Mai (nữ), nên dùng her.
+  - type: common_mistake
+    wrong: Are you marry?
+    right: Are you married?
+    target_lang: en
+    note:
+      vi: Để hỏi tình trạng hôn nhân, dùng tính từ married sau be. Marry là động từ "cưới", không đứng sau are.
+  - type: summary
+    points:
+      - vi: "Giới thiệu: This is my… / These are my… / Is that your…?"
+      - vi: "Sở hữu: my/your/his/her/our/their + danh từ; tên + 's (Mai's children)."
+      - vi: "Có: I have / she has; I've got / she's got."
+      - vi: "Miêu tả: be + tính từ (She is kind); tính từ + danh từ (a kind teacher)."
+      - vi: "Trông giống: She looks like her mother. Đã kết hôn: be married."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:family-review-listen-looks-like
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:look-like
+    prompt:
+      audio_asset_id: null
+      fallback_text: She looks like her mother.
+      options:
+        - { id: z4r, text: Cô ấy trông giống mẹ., lang: vi }
+        - { id: c1y, text: Cô ấy thích mẹ mình., lang: vi }
+        - { id: i7m, text: Cô ấy trông giống bố., lang: vi }
+        - { id: q2s, text: Cô ấy đang nhìn mẹ., lang: vi }
+    answer:
+      correct_option_id: z4r
+    explanation:
+      vi: Look like là "trông giống", không phải "thích" (like) hay "nhìn" (look at). Her mother là mẹ của cô ấy.
+    display_answer: Cô ấy trông giống mẹ.
+
+  - key: en:exercise:family-review-mcq-her-husband
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:her
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: Lan is married. ___ husband is an engineer."
+      stem_lang: vi
+      options:
+        - { id: v6k, text: Her, lang: en }
+        - { id: l9b, text: His, lang: en }
+        - { id: t3x, text: She, lang: en }
+        - { id: a5f, text: Their, lang: en }
+    answer:
+      correct_option_id: v6k
+    explanation:
+      vi: Người sở hữu là Lan (nữ) nên dùng Her, dù husband là nam. She là chủ ngữ, không đứng trước danh từ để chỉ "của cô ấy".
+    display_answer: Her
+
+  - key: en:exercise:family-review-order-looks-like
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:look-like
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Anh ấy trông giống bố.\""
+      tokens:
+        - { id: l-like, text: like }
+        - { id: l-father, text: father }
+        - { id: l-is, text: is }
+        - { id: l-his, text: his }
+        - { id: l-he, text: He }
+        - { id: l-look, text: look }
+        - { id: l-looks, text: looks }
+        - { id: l-her, text: her }
+    answer:
+      orders:
+        - [l-he, l-looks, l-like, l-his, l-father]
+    explanation:
+      vi: He đi với looks (thêm -s), không cần is. "Bố anh ấy" là his father - tiếng Anh cần từ sở hữu ở đây, dù tiếng Việt chỉ nói "bố".
+    display_answer: He looks like his father.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:family-review-fill-mai
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:married
+    prompt:
+      template: "Mai {{b1}} married. She {{b2}} got two children. {{b3}} husband is very kind."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [is]
+        b2: [has]
+        b3: [her]
+    known_wrong:
+      - answer: have
+        feedback_vi: She đi với has - She has got two children.
+        error_tag: have_has
+      - answer: his
+        feedback_vi: Người sở hữu là Mai (nữ), nên dùng her husband.
+        error_tag: his_her
+      - answer: she
+        feedback_vi: She là chủ ngữ. Trước danh từ husband cần her.
+        error_tag: possessive
+    explanation:
+      vi: Married là tính từ nên cần is. She đi với has got. Chồng của Mai là her husband, vì người sở hữu là nữ.
+    display_answer: Mai is married. She has got two children. Her husband is very kind.
+
+  - key: en:exercise:family-review-translate-married
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:married
+    prompt:
+      source_text: Bạn đã kết hôn chưa?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Are you married?
+        - Are you married yet?
+        - Are you married now?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: You married?
+        feedback_vi: Câu hỏi cần Are ở đầu - Are you married?
+        error_tag: missing_be
+      - answer: Are you marry?
+        feedback_vi: Sau are dùng tính từ married, không dùng động từ marry.
+        error_tag: word_form
+      - answer: Do you married?
+        feedback_vi: Married là tính từ nên câu hỏi dùng be - Are you married?
+        error_tag: be_do
+      - answer: Is you married?
+        feedback_vi: You đi với are - Are you married?
+        error_tag: be_form
+    explanation:
+      vi: Married là tính từ chỉ tình trạng, nên câu hỏi dùng be và đưa Are lên đầu. Tiếng Việt có "chưa", nhưng tiếng Anh thường không cần từ nào thay cho nó.
+    display_answer: Are you married?
+
+  - key: en:exercise:family-review-translate-nams-mother
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:possessive-s
+    prompt:
+      source_text: Mẹ của Nam rất tốt bụng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Nam's mother is very kind.
+        - Nam's mum is very kind.
+        - Nam's mom is very kind.
+        - Nam's mother is so kind.
+        - Nam's mother is really kind.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Mother of Nam is very kind.
+        feedback_vi: Tiếng Anh không nói "mother of Nam". Dùng Nam's mother.
+        error_tag: possessive_s
+      - answer: Nam mother is very kind.
+        feedback_vi: Thiếu 's - Nam's mother.
+        error_tag: possessive_s
+      - answer: Nam's mother very kind.
+        feedback_vi: Thiếu is trước very kind.
+        error_tag: missing_be
+      - answer: Nam's mother is a very kind.
+        feedback_vi: Sau very kind không có danh từ, nên không dùng a.
+        error_tag: article
+    explanation:
+      vi: Tên + 's + danh từ - Nam's mother. Sau đó cần is trước tính từ, và không thêm a khi không có danh từ đi kèm.
+    display_answer: Nam's mother is very kind.
+
+  # ---------------- application ----------------
+  - key: en:exercise:family-review-translate-sister
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:look-like
+    prompt:
+      source_text: This is my older sister. She's tall and she looks like our father.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đây là chị gái tôi. Chị ấy cao và trông giống bố chúng tôi.
+        - Đây là chị gái tôi. Chị ấy cao và trông giống bố tôi.
+        - Đây là chị gái tôi. Chị ấy cao và trông giống bố.
+        - Đây là chị gái tôi. Chị ấy cao và giống bố chúng tôi.
+        - Đây là chị gái tôi. Chị ấy cao và giống bố.
+        - Đây là chị tôi. Chị ấy cao và trông giống bố chúng tôi.
+        - Đây là chị tôi. Chị ấy cao và trông giống bố.
+        - Đây là chị gái mình. Chị ấy cao và trông giống bố mình.
+        - Đây là chị gái mình. Chị ấy cao và trông giống bố.
+        - Đây là chị gái tôi. Chị ấy cao và trông giống ba chúng tôi.
+        - Đây là chị gái tôi. Chị ấy cao và trông giống ba.
+        - Đây là chị gái tôi. Chị cao và trông giống bố.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Older sister là chị gái; She's ở đây là She is (đi với tính từ tall). Looks like là "trông giống"; our father có thể dịch "bố chúng tôi" hoặc chỉ "bố".
+    display_answer: Đây là chị gái tôi. Chị ấy cao và trông giống bố chúng tôi.
+
+  - key: en:exercise:family-review-translate-twins
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:twin
+    prompt:
+      source_text: Tôi có hai em gái. Họ là chị em sinh đôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I have two younger sisters. They are twins.
+        - I have two younger sisters. They're twins.
+        - I've got two younger sisters. They are twins.
+        - I've got two younger sisters. They're twins.
+        - I have got two younger sisters. They are twins.
+        - I have two younger sisters, and they are twins.
+        - I've got two younger sisters, and they're twins.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I has two younger sisters. They are twins.
+        feedback_vi: I đi với have, không phải has.
+        error_tag: have_has
+      - answer: I have two sisters younger. They are twins.
+        feedback_vi: Younger đứng trước sisters - two younger sisters.
+        error_tag: adjective_order
+      - answer: I have two younger sister. They are twins.
+        feedback_vi: Hai người thì cần số nhiều - sisters.
+        error_tag: plural
+      - answer: I have two younger sisters. They twins.
+        feedback_vi: Thiếu are - They are twins.
+        error_tag: missing_be
+      - answer: I have two younger sisters. They are twin.
+        feedback_vi: Hai người sinh đôi là twins (số nhiều).
+        error_tag: plural
+    explanation:
+      vi: I đi với have (hoặc I've got); "em gái" là younger sister, hai người thì thêm -s. Câu sau cần are và twins số nhiều.
+    display_answer: I have two younger sisters. They are twins.
+
+  - key: en:exercise:family-review-order-children
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:child
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Bố mẹ tôi có ba người con.\""
+      tokens:
+        - { id: c-three, text: three }
+        - { id: c-children, text: children }
+        - { id: c-has, text: has }
+        - { id: c-my, text: My }
+        - { id: c-childs, text: childs }
+        - { id: c-have, text: have }
+        - { id: c-parents, text: parents }
+    answer:
+      orders:
+        - [c-my, c-parents, c-have, c-three, c-children]
+    explanation:
+      vi: My parents là số nhiều (giống they) nên đi với have. Số nhiều của child là children, không phải childs.
+    display_answer: My parents have three children.
+
+  - key: en:exercise:family-review-mcq-reading
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:possessive-s
+    prompt:
+      stem: "Đọc đoạn văn: \"Hi, I'm Tom. I've got one sister, Kate. Kate's husband is Ben. They have a baby son.\" Ben là ai đối với Tom?"
+      stem_lang: vi
+      options:
+        - { id: x8j, text: Anh/em rể (chồng của chị/em gái Tom), lang: vi }
+        - { id: m4c, text: Anh trai của Tom, lang: vi }
+        - { id: e6w, text: Con trai của Tom, lang: vi }
+        - { id: r2h, text: Anh/em họ của Tom, lang: vi }
+    answer:
+      correct_option_id: x8j
+    explanation:
+      vi: Kate là chị/em gái của Tom, và Kate's husband (chồng của Kate) là Ben. Vậy Ben là anh/em rể của Tom; baby son là con trai của Kate và Ben.
+    display_answer: Anh/em rể (chồng của chị/em gái Tom)

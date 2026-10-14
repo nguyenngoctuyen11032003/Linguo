@@ -1,0 +1,358 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:some-any-like
+order_index: 2
+level: a1
+title:
+  vi: Some, any & sở thích ăn uống
+objectives:
+  - vi: Dùng some trong câu khẳng định, any trong câu phủ định và câu hỏi.
+  - vi: Nói mình thích, rất thích, không thích món gì bằng like, love, don't like + danh từ hoặc -ing.
+  - vi: Gọi tên thêm các món như fish, meat, vegetables, juice, cake, cheese và nói được "cay".
+estimated_minutes: 12
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:food-drink]
+items:
+  - item: en:item:some-any
+  - item: en:item:like
+  - item: en:item:love
+  - item: en:item:like-ing
+  - item: en:item:vegetables
+  - item: en:item:fish
+  - item: en:item:meat
+  - item: en:item:juice
+  - item: en:item:cake
+  - item: en:item:sugar
+  - item: en:item:cheese
+  - item: en:item:spicy
+  - item: en:item:countable-uncountable
+    role: reuse
+  - item: en:item:milk
+    role: reuse
+  - item: en:item:egg
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Nhà mình còn ít trứng nhưng hết sữa rồi" và "Mình mê cá nhưng không thích đồ cay" bằng tiếng Anh.
+  - type: explain
+    text:
+      vi: Some và any đều mang nghĩa "một ít, vài". Câu khẳng định dùng some (We have some eggs); câu phủ định và câu hỏi dùng any (We don't have any milk. Do you have any juice?). Cả hai đi được với danh từ không đếm được và danh từ đếm được số nhiều.
+  - type: explain
+    text:
+      vi: Để nói sở thích, bạn dùng love (rất thích), like (thích), don't like (không thích). Theo sau là danh từ (I like fish) hoặc động từ thêm -ing (I like cooking). Với món đếm được, khi nói chung bạn dùng số nhiều - I love bananas.
+  - type: deep_explain
+    text:
+      vi: Có một ngoại lệ hay gặp - khi mời hoặc xin, câu hỏi vẫn dùng some vì người nói mong câu trả lời là "có" (Would you like some cake? Can I have some water?). Với he, she, like thêm -s và phủ định dùng doesn't - She likes tea, He doesn't like meat; bạn sẽ gặp lại quy tắc này ở các bài về thói quen hằng ngày.
+  - type: example
+    target: We have some eggs, but we don't have any milk.
+    target_lang: en
+    translation:
+      vi: Nhà mình còn ít trứng, nhưng hết sữa rồi.
+    note:
+      vi: Vế khẳng định dùng some, vế phủ định dùng any.
+  - type: example
+    target: I love fish, but I don't like spicy food.
+    target_lang: en
+    translation:
+      vi: Mình mê cá, nhưng không thích đồ cay.
+    note:
+      vi: Phủ định cần don't trước like; spicy là tính từ nên cần thêm food.
+  - type: example
+    target: Do you like cooking?
+    target_lang: en
+    translation:
+      vi: Bạn có thích nấu ăn không?
+    note:
+      vi: Sau like dùng dạng -ing - cooking, không dùng cook.
+  - type: common_mistake
+    wrong: I not like fish.
+    right: I don't like fish.
+    target_lang: en
+    note:
+      vi: Tiếng Việt chỉ cần thêm "không", nhưng tiếng Anh cần trợ động từ don't (do not) trước like.
+  - type: common_mistake
+    wrong: We don't have some milk.
+    right: We don't have any milk.
+    target_lang: en
+    note:
+      vi: Câu phủ định dùng any, không dùng some.
+  - type: common_mistake
+    wrong: I like cook.
+    right: I like cooking.
+    target_lang: en
+    note:
+      vi: Sau like, love cần danh từ hoặc dạng -ing. Người Việt hay giữ nguyên động từ như "thích nấu".
+  - type: summary
+    points:
+      - vi: "Khẳng định: some - We have some eggs."
+      - vi: "Phủ định và câu hỏi: any - We don't have any milk. Do you have any juice?"
+      - vi: Mời, xin vẫn dùng some - Would you like some cake?
+      - vi: love > like > don't like; theo sau là danh từ hoặc -ing - I like cooking.
+      - vi: Phủ định cần don't - I don't like meat, không nói I not like.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:some-any-like-listen-cheese
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:cheese
+    prompt:
+      audio_asset_id: null
+      fallback_text: We don't have any cheese.
+      options:
+        - { id: a5x, text: Nhà mình hết phô mai rồi., lang: vi }
+        - { id: i2r, text: Nhà mình còn ít phô mai., lang: vi }
+        - { id: v9j, text: Nhà mình hết sữa rồi., lang: vi }
+        - { id: q1z, text: Bạn có phô mai không?, lang: vi }
+    answer:
+      correct_option_id: a5x
+    explanation:
+      vi: Don't have any là "không có chút nào", tức là hết. Cheese là phô mai, còn sữa là milk.
+    display_answer: Nhà mình hết phô mai rồi.
+
+  - key: en:exercise:some-any-like-mcq-any
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:some-any
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: We don't have ___ sugar."
+      stem_lang: vi
+      options:
+        - { id: k7f, text: some, lang: en }
+        - { id: p2s, text: any, lang: en }
+        - { id: g8c, text: a, lang: en }
+        - { id: x5n, text: an, lang: en }
+    answer:
+      correct_option_id: p2s
+    explanation:
+      vi: Câu phủ định (don't have) dùng any. Sugar không đếm được nên không dùng a/an.
+    display_answer: any
+
+  - key: en:exercise:some-any-like-fill-love
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:love
+    prompt:
+      template: "I {{b1}} fish, but I don't {{b2}} meat."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Mình mê cá, nhưng không thích thịt."
+        - "Gợi ý: \"mê, rất thích\" là love; \"thích\" là like."
+    answer:
+      blanks:
+        b1: [love]
+        b2: [like]
+    known_wrong:
+      - answer: likes
+        feedback_vi: Với I, động từ giữ nguyên, không thêm -s.
+        error_tag: verb_s
+      - answer: loves
+        feedback_vi: Với I, động từ giữ nguyên, không thêm -s.
+        error_tag: verb_s
+    explanation:
+      vi: "\"Mê\" là love, mạnh hơn like. Sau don't, động từ giữ nguyên dạng gốc - don't like."
+    display_answer: I love fish, but I don't like meat.
+
+  - key: en:exercise:some-any-like-order-cooking
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:like-ing
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Mình thích nấu ăn.\""
+      tokens:
+        - { id: c-cooking, text: cooking }
+        - { id: c-i, text: I }
+        - { id: c-cook, text: cook }
+        - { id: c-likes, text: likes }
+        - { id: c-like, text: like }
+    answer:
+      orders:
+        - [c-i, c-like, c-cooking]
+    explanation:
+      vi: Sau like dùng động từ thêm -ing - cooking. Với I, like không thêm -s.
+    display_answer: I like cooking.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:some-any-like-fill-some-any
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:some-any
+    prompt:
+      template: "We have {{b1}} vegetables, but we don't have {{b2}} fish."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [some]
+        b2: [any]
+    known_wrong:
+      - answer: a
+        feedback_vi: Vegetables là số nhiều, fish ở đây là món ăn không đếm được, nên không dùng a.
+        error_tag: article
+      - answer: an
+        feedback_vi: Vegetables là số nhiều, fish ở đây là món ăn không đếm được, nên không dùng an.
+        error_tag: article
+    explanation:
+      vi: Vế đầu là câu khẳng định nên dùng some. Vế sau có don't, là câu phủ định nên dùng any.
+    display_answer: We have some vegetables, but we don't have any fish.
+
+  - key: en:exercise:some-any-like-translate-spicy
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:like
+    prompt:
+      source_text: Mình không thích đồ cay.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I don't like spicy food.
+        - I do not like spicy food.
+        - I don't like eating spicy food.
+        - I do not like eating spicy food.
+        - I don't like spicy dishes.
+        - I don't like hot food.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I not like spicy food.
+        feedback_vi: Phủ định cần don't - I don't like spicy food.
+        error_tag: missing_do
+      - answer: I no like spicy food.
+        feedback_vi: Tiếng Anh không dùng no trước động từ; nói I don't like.
+        error_tag: missing_do
+      - answer: I don't like spicy.
+        feedback_vi: Spicy là tính từ "cay"; "đồ cay" cần thêm danh từ - spicy food.
+        error_tag: adjective_noun
+      - answer: I doesn't like spicy food.
+        feedback_vi: Với I dùng don't; doesn't chỉ dùng với he, she, it.
+        error_tag: do_form
+    explanation:
+      vi: Câu phủ định với like cần don't (do not). "Đồ cay" là spicy food - spicy chỉ là tính từ, cần có danh từ food đi kèm.
+    display_answer: I don't like spicy food.
+
+  - key: en:exercise:some-any-like-translate-eggs
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:some-any
+    prompt:
+      source_text: Bạn có trứng không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Do you have any eggs?
+        - Do you have eggs?
+        - Have you got any eggs?
+        - Have you got eggs?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: You have any eggs?
+        feedback_vi: Câu hỏi cần Do ở đầu - Do you have any eggs?
+        error_tag: missing_do
+      - answer: Do you have any egg?
+        feedback_vi: Sau any, danh từ đếm được dùng số nhiều - any eggs.
+        error_tag: plural_s
+      - answer: Do you have some egg?
+        feedback_vi: Câu hỏi thông thường dùng any, và egg cần số nhiều - any eggs.
+        error_tag: some_any
+      - answer: Do you have a eggs?
+        feedback_vi: Eggs là số nhiều nên không dùng a; dùng any eggs.
+        error_tag: article
+    explanation:
+      vi: Câu hỏi với have cần Do ở đầu. Hỏi chung "có… không" dùng any, và egg là danh từ đếm được nên dùng số nhiều eggs.
+    display_answer: Do you have any eggs?
+
+  # ---------------- application ----------------
+  - key: en:exercise:some-any-like-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:love
+    prompt:
+      stem: "Bạn của bạn hỏi: \"Do you like coffee?\" Bạn rất thích cà phê. Trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: h3m, text: "Yes, I love it.", lang: en }
+        - { id: t6q, text: "Yes, I love.", lang: en }
+        - { id: b9w, text: "Yes, I'm love coffee.", lang: en }
+        - { id: e4k, text: "Yes, I like.", lang: en }
+    answer:
+      correct_option_id: h3m
+    explanation:
+      vi: Love và like luôn cần tân ngữ phía sau, nên phải có it (thay cho coffee). I'm love sai vì không dùng be trước động từ love.
+    display_answer: "Yes, I love it."
+
+  - key: en:exercise:some-any-like-translate-noodles
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:vegetables
+    prompt:
+      source_text: He loves noodles, but he doesn't like vegetables.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh ấy rất thích mì, nhưng anh ấy không thích rau.
+        - Anh ấy rất thích mì nhưng không thích rau.
+        - Anh ấy mê mì, nhưng anh ấy không thích rau.
+        - Anh ấy mê mì nhưng không thích rau.
+        - Anh ấy rất thích ăn mì nhưng không thích ăn rau.
+        - Cậu ấy rất thích mì nhưng không thích rau.
+        - Cậu ấy mê mì nhưng không thích rau.
+        - Anh ấy rất thích mì nhưng không thích rau củ.
+        - Anh ấy thích mì lắm nhưng không thích rau.
+        - Anh ấy rất thích các món mì nhưng không thích rau.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Love với đồ ăn là "rất thích, mê", doesn't like là "không thích". Noodles là mì (các món sợi), vegetables là rau.
+    display_answer: Anh ấy rất thích mì, nhưng anh ấy không thích rau.
+
+  - key: en:exercise:some-any-like-order-milk
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:milk
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Nhà mình hết sữa rồi.\" (Chúng mình không có chút sữa nào.)"
+      tokens:
+        - { id: m-any, text: any }
+        - { id: m-milk, text: milk }
+        - { id: m-we, text: We }
+        - { id: m-some, text: some }
+        - { id: m-have, text: have }
+        - { id: m-dont, text: "don't" }
+        - { id: m-not, text: not }
+    answer:
+      orders:
+        - [m-we, m-dont, m-have, m-any, m-milk]
+    explanation:
+      vi: Phủ định với have cần don't. Câu phủ định dùng any, không dùng some.
+    display_answer: We don't have any milk.

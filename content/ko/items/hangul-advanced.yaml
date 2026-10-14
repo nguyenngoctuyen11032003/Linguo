@@ -1,0 +1,753 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Hangul nâng cao: nguyên âm ghép & patchim". Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+# Cách đọc chuẩn Seoul ghi trong ngoặc vuông, ví dụ 옷 [옫], 한국어 [한구거].
+schema_version: 1
+demo: true
+source: src:linguo-demo
+items:
+  # ---------------- nguyên âm "y" còn lại và nguyên âm "w" ----------------
+  - key: ko:item:vowel-yae-ye
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: ㅒ ㅖ
+      romanization: yae · ye
+      pos: nguyên âm ghép
+    back:
+      meaning:
+        vi: Nguyên âm có âm "y" phía trước - thêm một nét vào ㅐ và ㅔ
+      examples:
+        - target: 얘기
+          translation:
+            vi: câu chuyện
+        - target: 시계
+          translation:
+            vi: đồng hồ
+      pronunciation_note:
+        vi: ㅒ và ㅖ đều đọc gần "yê" như trong "yên", vì ㅐ và ㅔ gần như trùng nhau trong tiếng Seoul. Sau phụ âm (trừ 례), ㅖ thường đọc như ㅔ - 시계 nghe như [시게].
+      confusion:
+        vi: Khi nghe khó phân biệt ㅒ với ㅖ; bạn cần nhớ cách viết của từng từ (얘기 với ㅒ, 시계 với ㅖ).
+
+  - key: ko:item:we-vowels
+    type: hangul
+    level: hangul
+    difficulty: 3
+    skill_tags: [reading, listening]
+    front:
+      text: ㅙ ㅚ ㅞ
+      romanization: wae · oe · we
+      pos: nguyên âm ghép
+    back:
+      meaning:
+        vi: Ba nguyên âm có âm "w" phía trước - ㅗ + ㅐ = ㅙ, ㅗ + ㅣ = ㅚ, ㅜ + ㅔ = ㅞ
+      examples:
+        - target: 회사
+          translation:
+            vi: công ty
+        - target: 돼지
+          translation:
+            vi: con lợn
+      pronunciation_note:
+        vi: Trong tiếng Seoul hiện nay, cả ba đọc gần như giống nhau, gần "uê" trong "Huế" (hoặc "oe" trong "khoẻ"). ㅚ trông như ㅗ + ㅣ nhưng không đọc "ôi".
+      confusion:
+        vi: Nghe giống nhau nên dễ viết nhầm 돼지 thành 되지 hay 퇴사 thành 퇘사; hãy học thuộc mặt chữ của từng từ.
+
+  - key: ko:item:vowel-wi
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: ㅟ
+      romanization: wi
+      pos: nguyên âm ghép
+    back:
+      meaning:
+        vi: Nguyên âm "uy" - ㅜ + ㅣ
+      examples:
+        - target: 귀
+          translation:
+            vi: tai
+      pronunciation_note:
+        vi: Gần "uy" trong "uy tín" - môi tròn rồi nhanh chóng chuyển sang "i". 귀 đọc gần "kuy" (ㄱ nhẹ, không bật hơi).
+      confusion:
+        vi: Đừng đọc tách thành hai âm tiết "u-i"; ㅟ chỉ là một âm tiết.
+
+  - key: ko:item:vowel-ui
+    type: hangul
+    level: hangul
+    difficulty: 3
+    skill_tags: [reading, listening]
+    front:
+      text: ㅢ
+      romanization: ui
+      pos: nguyên âm ghép
+    back:
+      meaning:
+        vi: Nguyên âm "ưi" - ㅡ + ㅣ, có ba cách đọc tuỳ vị trí
+      examples:
+        - target: 의사
+          translation:
+            vi: bác sĩ
+        - target: 희망
+          translation:
+            vi: hy vọng (đọc [히망])
+        - target: 우리의 집
+          translation:
+            vi: nhà của chúng tôi (의 đọc [에])
+      pronunciation_note:
+        vi: Đầu từ, 의 đọc "ưi" như trong "gửi" - 의사, 의자. Có phụ âm đứng trước thì đọc [ㅣ] - 희망 [히망]. Khi là trợ từ "của", 의 thường đọc [에] - 우리의 [우리에].
+      confusion:
+        vi: Đừng đọc ㅢ thành "ui" (ㅜ + ㅣ) - môi phải dẹt như "ư", không tròn.
+
+  # ---------------- patchim ----------------
+  - key: ko:item:batchim
+    type: hangul
+    level: hangul
+    difficulty: 2
+    skill_tags: [reading, writing]
+    front:
+      text: 받침
+      romanization: batchim
+      pos: quy tắc viết
+    back:
+      meaning:
+        vi: Patchim - phụ âm cuối, viết ở phần dưới của khối âm tiết
+      examples:
+        - target: 밥
+          translation:
+            vi: cơm (ㅂ + ㅏ + ㅂ ở dưới)
+        - target: 한국
+          translation:
+            vi: Hàn Quốc
+      pronunciation_note:
+        vi: Giống phụ âm cuối trong tiếng Việt ("cơm", "học", "sáp"), patchim đọc gọn, không bật hơi ra. Khác tiếng Việt là bạn phải viết nó xuống dưới, không viết thêm sang phải.
+      confusion:
+        vi: Âm tiết có patchim vẫn là một khối vuông; 밥 không phải ba khối ㅂ ㅏ ㅂ.
+
+  - key: ko:item:final-sounds
+    type: hangul
+    level: hangul
+    difficulty: 3
+    skill_tags: [reading, listening]
+    front:
+      text: ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅇ
+      romanization: k · n · t · l · m · p · ng
+      pos: âm cuối đại diện
+    back:
+      meaning:
+        vi: Bảy âm cuối đại diện - mọi patchim chỉ được đọc bằng một trong bảy âm này
+      examples:
+        - target: 옷
+          translation:
+            vi: quần áo (đọc [옫])
+        - target: 부엌
+          translation:
+            vi: nhà bếp (đọc [부억])
+        - target: 앞
+          translation:
+            vi: phía trước (đọc [압])
+      pronunciation_note:
+        vi: ㄱ ㅋ ㄲ cuối đọc [ㄱ] như "c" trong "học"; ㄷ ㅌ ㅅ ㅆ ㅈ ㅊ ㅎ cuối đọc [ㄷ] như "t" trong "mát"; ㅂ ㅍ cuối đọc [ㅂ] như "p" trong "sáp". ㄴ ㅁ ㅇ giống "n, m, ng" tiếng Việt; ㄹ cuối là "l" giữ lưỡi trên lợi, tiếng Việt không có.
+      confusion:
+        vi: Chỉ đổi cách đọc, không đổi cách viết - 옷 vẫn viết với ㅅ dù đọc [옫].
+
+  - key: ko:item:double-batchim
+    type: hangul
+    level: hangul
+    difficulty: 4
+    skill_tags: [reading]
+    front:
+      text: ㄺ ㄵ ㅄ
+      romanization: lg · nj · bs
+      pos: patchim kép
+    back:
+      meaning:
+        vi: Patchim kép - hai phụ âm khác nhau cùng nằm ở dưới; trước phụ âm chỉ đọc một
+      examples:
+        - target: 읽다
+          translation:
+            vi: đọc (đọc [익따])
+        - target: 앉다
+          translation:
+            vi: ngồi (đọc [안따])
+      pronunciation_note:
+        vi: Tiếng Việt không có hai phụ âm cuối, và tiếng Hàn cũng chỉ đọc một - ㄺ đọc [ㄱ], ㄵ đọc [ㄴ], ㅄ đọc [ㅂ]. Khi sau đó là nguyên âm, phụ âm thứ hai chuyển sang âm tiết sau - 읽어요 [일거요], 앉아요 [안자요].
+      confusion:
+        vi: Đừng cố đọc cả hai phụ âm như "ilk-ta"; 읽다 chỉ là [익따].
+
+  # ---------------- quy tắc biến âm ----------------
+  - key: ko:item:linking
+    type: hangul
+    level: hangul
+    difficulty: 3
+    skill_tags: [reading, listening]
+    front:
+      text: 연음
+      romanization: yeoneum
+      pos: quy tắc phát âm
+    back:
+      meaning:
+        vi: Nối âm - patchim chuyển sang đọc ở đầu âm tiết sau khi âm tiết sau bắt đầu bằng ㅇ câm
+      examples:
+        - target: 한국어
+          translation:
+            vi: tiếng Hàn (đọc [한구거])
+        - target: 음악
+          translation:
+            vi: âm nhạc (đọc [으막])
+        - target: 옷이에요.
+          translation:
+            vi: Đây là quần áo. (đọc [오시에요])
+      pronunciation_note:
+        vi: Tiếng Việt đọc rời từng tiếng ("Hàn - Quốc"), còn tiếng Hàn nối liền - ㄱ cuối của 국 lấp vào chỗ ㅇ câm của 어, thành [구거]. Patchim được nối với âm gốc của nó (옷이 [오시]), không phải âm đại diện.
+      confusion:
+        vi: Patchim ㅇ không nối sang - 고양이 vẫn đọc [고양이].
+
+  - key: ko:item:nasalization
+    type: hangul
+    level: hangul
+    difficulty: 4
+    skill_tags: [reading, listening]
+    front:
+      text: 비음화
+      romanization: bieumhwa
+      pos: quy tắc phát âm
+    back:
+      meaning:
+        vi: Đồng hoá mũi - âm cuối [ㄱ ㄷ ㅂ] đứng trước ㄴ hoặc ㅁ đổi thành [ㅇ ㄴ ㅁ]
+      examples:
+        - target: 합니다
+          translation:
+            vi: làm (đuôi trang trọng; đọc [함니다])
+        - target: 국물
+          translation:
+            vi: nước canh (đọc [궁물])
+        - target: 감사합니다.
+          translation:
+            vi: Cảm ơn ạ. (đọc [감사함니다])
+      pronunciation_note:
+        vi: "[ㄱ] thành [ㅇ], [ㄷ] thành [ㄴ], [ㅂ] thành [ㅁ] - giống khi người Việt nói nhanh \"học nghề\" gần như \"họng nghề\". Lý do là ㄴ và ㅁ là âm mũi, kéo âm cuối phía trước thành âm mũi theo."
+      confusion:
+        vi: Chỉ đổi cách đọc - bạn vẫn viết 합니다, không viết 함니다.
+
+  # ---------------- từ vựng: nguyên âm "y" ----------------
+  - key: ko:item:yeoja
+    type: vocab
+    level: hangul
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 여자
+      romanization: yeoja
+      pos: danh từ
+    back:
+      meaning:
+        vi: phụ nữ, con gái
+      examples:
+        - target: 여자예요.
+          translation:
+            vi: Đó là một cô gái.
+      pronunciation_note:
+        vi: 여 là "yơ" (ㅕ, miệng mở rộng, môi không tròn), không phải "yô". ㅈ giữa hai nguyên âm nghe gần "j" - đọc gần "yơ-ja".
+      confusion:
+        vi: 여자 (ㅕ "yơ") khác 요자 - không có từ này; đừng tròn môi khi đọc 여.
+
+  - key: ko:item:yagu
+    type: vocab
+    level: hangul
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 야구
+      romanization: yagu
+      pos: danh từ
+    back:
+      meaning:
+        vi: bóng chày
+      examples:
+        - target: 야구예요.
+          translation:
+            vi: Đó là bóng chày.
+      pronunciation_note:
+        vi: Đọc gần "ya-gu" - ㄱ đứng giữa hai nguyên âm nên nghe gần "g" tiếng Việt, không phải "c".
+
+  - key: ko:item:yori
+    type: vocab
+    level: hangul
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 요리
+      romanization: yori
+      pos: danh từ
+    back:
+      meaning:
+        vi: món ăn; việc nấu ăn
+      examples:
+        - target: 한국 요리예요.
+          translation:
+            vi: Đây là món ăn Hàn Quốc.
+      pronunciation_note:
+        vi: 요 là "yô", môi tròn. ㄹ giữa hai nguyên âm là "r" lướt nhẹ, không rung lưỡi - đọc gần "yô-ri".
+      confusion:
+        vi: 요리 (ㅛ "yô") khác 여리 - người Việt hay nhầm ㅛ với ㅕ vì cùng có hai nét ngắn.
+
+  - key: ko:item:yaegi
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 얘기
+      romanization: yaegi
+      pos: danh từ
+    back:
+      meaning:
+        vi: câu chuyện, chuyện (nói tắt của 이야기)
+      examples:
+        - target: 재미있는 얘기예요.
+          translation:
+            vi: Đó là một câu chuyện thú vị.
+      pronunciation_note:
+        vi: 얘 đọc gần "yê" - ㅒ ngày nay nghe gần như ㅖ. ㄱ giữa hai nguyên âm gần "g", nên cả từ gần "yê-ghi".
+      confusion:
+        vi: Trong văn viết trang trọng, bạn sẽ gặp dạng đầy đủ 이야기.
+
+  - key: ko:item:sigye
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 시계
+      romanization: sigye
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồng hồ
+      examples:
+        - target: 시계예요.
+          translation:
+            vi: Đây là cái đồng hồ.
+      pronunciation_note:
+        vi: Người Seoul thường đọc [시게] - ㅖ sau phụ âm nghe như ㅔ "ê". ㅅ trước ㅣ gần "s" uốn lưỡi nhẹ, nên gần "shi-ghê".
+      confusion:
+        vi: Đọc [시게] nhưng phải viết 시계 với ㅖ.
+
+  # ---------------- từ vựng: nguyên âm "w" và ㅢ ----------------
+  - key: ko:item:hoesa
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 회사
+      romanization: hoesa
+      pos: danh từ
+    back:
+      meaning:
+        vi: công ty
+      examples:
+        - target: 회사예요.
+          translation:
+            vi: Đây là công ty.
+      pronunciation_note:
+        vi: 회 đọc gần "huê" (như "Huế" không dấu) - ㅚ không phải "ôi". Cả từ gần "huê-xa".
+      confusion:
+        vi: Đừng viết 훼사 hay 해사 dù nghe gần giống; công ty là 회사 với ㅚ.
+
+  - key: ko:item:dwaeji
+    type: vocab
+    level: hangul
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 돼지
+      romanization: dwaeji
+      pos: danh từ
+    back:
+      meaning:
+        vi: con lợn, con heo
+      examples:
+        - target: 돼지예요.
+          translation:
+            vi: Đó là con lợn.
+      pronunciation_note:
+        vi: 돼 đọc gần "tuê" (ㄷ đầu từ nhẹ như "t"), với ㅙ gần "oe" trong "khoẻ". Cả từ gần "tuê-ji".
+      confusion:
+        vi: 돼지 viết với ㅙ (ㅗ + ㅐ), không phải ㅚ hay ㅞ dù ba nguyên âm nghe gần như nhau.
+
+  - key: ko:item:gwi
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 귀
+      romanization: gwi
+      pos: danh từ
+    back:
+      meaning:
+        vi: tai, cái tai
+      examples:
+        - target: 귀가 커요.
+          translation:
+            vi: Tai to quá.
+      pronunciation_note:
+        vi: Một âm tiết duy nhất, gần "kuy" - ㄱ đầu từ nhẹ, không bật hơi, rồi "uy" như trong "uy tín".
+
+  - key: ko:item:uija
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 의자
+      romanization: uija
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái ghế
+      examples:
+        - target: 의자예요.
+          translation:
+            vi: Đây là cái ghế.
+      pronunciation_note:
+        vi: 의 ở đầu từ đọc đủ "ưi" như trong "gửi" - môi dẹt, không tròn. Cả từ gần "ưi-ja".
+      confusion:
+        vi: Đừng viết 우이자 (môi tròn ㅜ) hay 이자 (nghĩa là "tiền lãi").
+
+  - key: ko:item:uisa
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 의사
+      romanization: uisa
+      pos: danh từ
+    back:
+      meaning:
+        vi: bác sĩ
+      examples:
+        - target: 의사예요.
+          translation:
+            vi: Tôi là bác sĩ.
+      pronunciation_note:
+        vi: Giống 의자, 의 đầu từ đọc "ưi" với môi dẹt. Cả từ gần "ưi-xa".
+      confusion:
+        vi: 의사 (bác sĩ) và 의자 (cái ghế) chỉ khác ㅅ và ㅈ ở âm tiết thứ hai.
+
+  # ---------------- từ vựng: patchim ----------------
+  - key: ko:item:haksaeng
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 학생
+      romanization: haksaeng
+      pos: danh từ
+    back:
+      meaning:
+        vi: học sinh, sinh viên
+      examples:
+        - target: 저는 학생이에요.
+          translation:
+            vi: Tôi là học sinh.
+      pronunciation_note:
+        vi: Đọc [학쌩] - ㄱ cuối gọn như "c" trong "học", và ㅅ sau nó bị đọc căng thành [ㅆ]. 생 có patchim ㅇ như "ng" trong "sanh".
+      confusion:
+        vi: Vì 학생 có patchim, sau nó dùng 이에요 (학생이에요), không dùng 예요.
+
+  - key: ko:item:hanguk
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 한국
+      romanization: Hanguk
+      pos: danh từ
+    back:
+      meaning:
+        vi: Hàn Quốc
+      examples:
+        - target: 한국 사람이에요.
+          translation:
+            vi: Tôi là người Hàn Quốc.
+      pronunciation_note:
+        vi: Gần "Han-cúc" đọc nhanh - ㄴ cuối như "n", ㄱ cuối gọn như "c" trong "cúc". Không tròn môi đóng lại ở cuối như cách người Việt đọc "úc".
+      confusion:
+        vi: Chữ "Hàn" là 한 (ㅏ), không phải 헌 (ㅓ).
+
+  - key: ko:item:bap
+    type: vocab
+    level: hangul
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 밥
+      romanization: bap
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơm; bữa ăn
+      examples:
+        - target: 밥이에요.
+          translation:
+            vi: Đây là cơm.
+      pronunciation_note:
+        vi: Gần "báp" - ㅂ đầu nhẹ như "p", ㅂ cuối khép môi gọn như "p" trong "sáp", không bật hơi ra.
+      confusion:
+        vi: Khi nối với nguyên âm, ㅂ cuối nghe như "b" - 밥이에요 [바비에요].
+
+  - key: ko:item:jip
+    type: vocab
+    level: hangul
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 집
+      romanization: jip
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà, ngôi nhà
+      examples:
+        - target: 우리 집이에요.
+          translation:
+            vi: Đây là nhà tôi.
+      pronunciation_note:
+        vi: Gần "chíp" đọc nhẹ - ㅈ đầu từ gần "ch" nhẹ, ㅂ cuối khép môi như "p" trong "kíp".
+
+  - key: ko:item:ot
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 옷
+      romanization: ot
+      pos: danh từ
+    back:
+      meaning:
+        vi: quần áo
+      examples:
+        - target: 옷이에요.
+          translation:
+            vi: Đây là quần áo.
+      pronunciation_note:
+        vi: Đọc [옫], gần "ốt" - ㅅ ở cuối không đọc "x" mà thành [ㄷ] gọn như "t" trong "tốt".
+      confusion:
+        vi: Khi có nguyên âm theo sau, ㅅ hiện lại - 옷이 đọc [오시], không phải [오디].
+
+  - key: ko:item:chaek
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 책
+      romanization: chaek
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyển sách
+      examples:
+        - target: 한국어 책이에요.
+          translation:
+            vi: Đây là sách tiếng Hàn.
+      pronunciation_note:
+        vi: Gần "chéc" - ㅊ bật hơi mạnh hơn "ch" tiếng Việt, ㄱ cuối gọn như "c" trong "séc".
+      confusion:
+        vi: Đầu từ là ㅊ bật hơi; 잭 (ㅈ thường) không phải "sách".
+
+  - key: ko:item:bueok
+    type: vocab
+    level: hangul
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 부엌
+      romanization: bueok
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà bếp
+      examples:
+        - target: 부엌이에요.
+          translation:
+            vi: Đây là nhà bếp.
+      pronunciation_note:
+        vi: Đọc [부억], gần "pu-ơc" - ㅋ ở cuối mất hơi, thành [ㄱ] gọn như "c". Khi nối với nguyên âm thì ㅋ hiện lại - 부엌이 [부어키].
+      confusion:
+        vi: Đọc [부억] nhưng phải viết 부엌 với ㅋ.
+
+  - key: ko:item:ap
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 앞
+      romanization: ap
+      pos: danh từ
+    back:
+      meaning:
+        vi: phía trước, đằng trước
+      examples:
+        - target: 집 앞이에요.
+          translation:
+            vi: Ở trước nhà.
+      pronunciation_note:
+        vi: Đọc [압], gần "áp" - ㅍ ở cuối mất hơi, khép môi gọn như "p" trong "áp".
+      confusion:
+        vi: Viết 앞 với ㅍ dù đọc [압]; 압 là một chữ khác.
+
+  - key: ko:item:kkot
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 꽃
+      romanization: kkot
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoa, bông hoa
+      examples:
+        - target: 꽃이 예뻐요.
+          translation:
+            vi: Hoa đẹp quá.
+      pronunciation_note:
+        vi: Đọc [꼳], gần "cốt" - ㄲ căng như "c" trong "cô", ㅊ cuối thành [ㄷ] gọn như "t".
+      confusion:
+        vi: Có nguyên âm theo sau thì ㅊ hiện lại - 꽃이 [꼬치].
+
+  - key: ko:item:gyosil
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 교실
+      romanization: gyosil
+      pos: danh từ
+    back:
+      meaning:
+        vi: lớp học, phòng học
+      examples:
+        - target: 교실이에요.
+          translation:
+            vi: Đây là lớp học.
+      pronunciation_note:
+        vi: Gần "kyô-shil" - ㄹ cuối là "l" giữ đầu lưỡi chạm lợi trên, tiếng Việt không có âm cuối này nên đừng đọc thành "n".
+      confusion:
+        vi: 교 dùng ㅛ ("yô"), không phải ㅗ - 고실 là sai.
+
+  # ---------------- từ vựng: nối âm, đồng hoá mũi, patchim kép ----------------
+  - key: ko:item:hangugeo
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 한국어
+      romanization: Hangugeo
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiếng Hàn
+      examples:
+        - target: 한국어 책이에요.
+          translation:
+            vi: Đây là sách tiếng Hàn.
+      pronunciation_note:
+        vi: Đọc [한구거] - ㄱ cuối của 국 nối sang ㅇ câm của 어. Người Việt hay đọc rời "Han-cúc-ơ"; hãy đọc liền "han-gu-gơ".
+
+  - key: ko:item:eumak
+    type: vocab
+    level: hangul
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 음악
+      romanization: eumak
+      pos: danh từ
+    back:
+      meaning:
+        vi: âm nhạc
+      examples:
+        - target: 한국 음악이에요.
+          translation:
+            vi: Đây là nhạc Hàn Quốc.
+      pronunciation_note:
+        vi: Đọc [으막] - ㅁ cuối của 음 nối sang 악, giống như nói "ư-mác". Âm đầu là ㅡ (môi dẹt "ư"), không phải ㅜ.
+
+  - key: ko:item:gungmul
+    type: vocab
+    level: hangul
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 국물
+      romanization: gungmul
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước canh, nước dùng
+      examples:
+        - target: 국물이 맛있어요.
+          translation:
+            vi: Nước canh ngon quá.
+      pronunciation_note:
+        vi: Đọc [궁물] - ㄱ cuối gặp ㅁ nên đổi thành "ng", giống người Việt nói nhanh "học máy" thành gần "họng máy".
+      confusion:
+        vi: Viết 국물 (국 + 물), không viết 궁물.
+
+  - key: ko:item:ikda
+    type: vocab
+    level: hangul
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 읽다
+      romanization: ikda
+      pos: động từ
+    back:
+      meaning:
+        vi: đọc (sách, chữ)
+      examples:
+        - target: 책을 읽어요.
+          translation:
+            vi: Tôi đọc sách.
+      pronunciation_note:
+        vi: 읽다 đọc [익따] - ㄺ chỉ đọc [ㄱ] như "c" trong "ích", và ㄷ sau đó căng thành [ㄸ]. 읽어요 đọc [일거요] vì ㄱ nối sang âm tiết sau.
+      confusion:
+        vi: Đừng viết 익다 - đó là từ khác (chín, quen tay).
+
+  - key: ko:item:anda
+    type: vocab
+    level: hangul
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 앉다
+      romanization: anda
+      pos: động từ
+    back:
+      meaning:
+        vi: ngồi
+      examples:
+        - target: 의자에 앉아요.
+          translation:
+            vi: Tôi ngồi xuống ghế.
+      pronunciation_note:
+        vi: 앉다 đọc [안따] - ㄵ chỉ đọc [ㄴ] như "n" trong "an". 앉아요 đọc [안자요] vì ㅈ nối sang âm tiết sau.
+      confusion:
+        vi: Viết 앉 với patchim kép ㄵ; 안다 là từ khác (ôm).

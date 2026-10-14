@@ -1,0 +1,357 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:food-drink
+order_index: 1
+level: a1
+title:
+  vi: Đồ ăn, thức uống - a banana, some rice
+objectives:
+  - vi: Gọi tên 12 món ăn, đồ uống quen thuộc như rice, bread, noodles, coffee, tea, water, milk.
+  - vi: Phân biệt danh từ đếm được (a banana, two eggs) và không đếm được (some rice, some milk).
+  - vi: Tránh lỗi a rice, two waters, milks khi nói chung về đồ ăn, thức uống.
+estimated_minutes: 10
+skills: [vocabulary, grammar, writing]
+prerequisites: [en:lesson:daily-routine-review]
+items:
+  - item: en:item:rice
+  - item: en:item:bread
+  - item: en:item:noodles
+  - item: en:item:chicken
+  - item: en:item:egg
+  - item: en:item:banana
+  - item: en:item:apple
+  - item: en:item:fruit
+  - item: en:item:coffee
+  - item: en:item:tea
+  - item: en:item:water
+  - item: en:item:milk
+  - item: en:item:countable-uncountable
+  - item: en:item:a-an
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được mình ăn uống gì - "Mình ăn một quả chuối và ít cơm" - với đúng a/an, some và số nhiều.
+  - type: explain
+    text:
+      vi: Tiếng Anh chia danh từ làm hai loại. Danh từ đếm được (banana, egg, apple) đi với a/an khi là một cái, và thêm -s khi từ hai trở lên - a banana, two eggs. Danh từ không đếm được (rice, bread, water, milk, fruit) không có a/an và không thêm -s.
+  - type: explain
+    text:
+      vi: Với danh từ không đếm được, bạn dùng some (một ít) hoặc không dùng gì cả - some rice, some milk, I drink water. Tiếng Việt nói "một cơm", "hai nước" khi gọi món được, nhưng tiếng Anh nói chung thì không.
+  - type: deep_explain
+    text:
+      vi: Đồ uống là trường hợp đặc biệt. Nói chung thì coffee, tea không đếm được (I like coffee), nhưng khi gọi theo phần ở quán, người bản xứ nói a coffee, two coffees, nghĩa là một ly, hai ly. Với water, milk, bạn nên đếm bằng vật chứa - a glass of water, a bottle of milk; số đếm one, two… bạn đã học ở bài về số.
+  - type: example
+    target: I eat a banana and some rice.
+    target_lang: en
+    translation:
+      vi: Mình ăn một quả chuối và ít cơm.
+    note:
+      vi: Banana đếm được nên có a; rice không đếm được nên dùng some.
+  - type: example
+    target: We need some bread and two eggs.
+    target_lang: en
+    translation:
+      vi: Chúng mình cần ít bánh mì và hai quả trứng.
+    note:
+      vi: Bread không có số nhiều; egg từ hai quả trở lên thì thành eggs.
+  - type: example
+    target: Two coffees and an apple, please.
+    target_lang: en
+    translation:
+      vi: Cho mình hai ly cà phê và một quả táo nhé.
+    note:
+      vi: Ở quán, two coffees nghĩa là hai ly. Apple bắt đầu bằng âm nguyên âm nên dùng an.
+  - type: common_mistake
+    wrong: I eat a rice for lunch.
+    right: I eat rice for lunch.
+    target_lang: en
+    note:
+      vi: Rice không đếm được nên không có a. Muốn nói "một bát cơm" thì dùng a bowl of rice.
+  - type: common_mistake
+    wrong: I drink two waters every day.
+    right: I drink two glasses of water every day.
+    target_lang: en
+    note:
+      vi: Water không đếm được nên không thêm -s khi nói chung. Đếm bằng vật chứa - two glasses of water, two bottles of water.
+  - type: common_mistake
+    wrong: I have a egg.
+    right: I have an egg.
+    target_lang: en
+    note:
+      vi: Egg bắt đầu bằng âm nguyên âm /e/, nên dùng an như an apple.
+  - type: summary
+    points:
+      - vi: "Đếm được: a/an + số ít, thêm -s khi số nhiều - a banana, two eggs."
+      - vi: "Không đếm được: không a/an, không -s; dùng some - some rice, some milk."
+      - vi: Rice, bread, water, milk, fruit, meat thường không đếm được.
+      - vi: Gọi đồ uống ở quán được đếm theo phần - two coffees; còn lại đếm bằng a glass of, a bottle of.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:food-drink-mcq-milk
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:milk
+    prompt:
+      stem: Từ nào có nghĩa là "sữa"?
+      stem_lang: vi
+      options:
+        - { id: r7k, text: meat, lang: en }
+        - { id: w2d, text: milk, lang: en }
+        - { id: h9s, text: water, lang: en }
+        - { id: z4p, text: rice, lang: en }
+    answer:
+      correct_option_id: w2d
+    explanation:
+      vi: Milk /mɪlk/ là sữa. Meat là thịt (gần giống chữ đầu), water là nước, rice là cơm.
+    display_answer: milk
+
+  - key: en:exercise:food-drink-listen-lunch
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:noodles
+    prompt:
+      audio_asset_id: null
+      fallback_text: I have noodles and chicken for lunch.
+      options:
+        - { id: k3v, text: Mình ăn mì với thịt gà vào bữa trưa., lang: vi }
+        - { id: m8a, text: Mình ăn cơm với thịt gà vào bữa trưa., lang: vi }
+        - { id: t5y, text: Mình ăn mì với trứng vào bữa trưa., lang: vi }
+        - { id: e1q, text: Mình ăn bánh mì với thịt gà vào bữa sáng., lang: vi }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: Noodles là mì, chicken là thịt gà, lunch là bữa trưa. Cơm là rice, trứng là eggs, bánh mì là bread.
+    display_answer: Mình ăn mì với thịt gà vào bữa trưa.
+
+  - key: en:exercise:food-drink-mcq-some-rice
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:countable-uncountable
+    prompt:
+      stem: "Chọn cách nói đúng cho \"ít cơm\":"
+      stem_lang: vi
+      options:
+        - { id: b6n, text: a rice, lang: en }
+        - { id: u3c, text: some rice, lang: en }
+        - { id: x8f, text: two rices, lang: en }
+        - { id: j5g, text: an rice, lang: en }
+    answer:
+      correct_option_id: u3c
+    explanation:
+      vi: Rice không đếm được, nên không đi với a/an và không thêm -s. Dùng some để nói "một ít".
+    display_answer: some rice
+
+  - key: en:exercise:food-drink-fill-a-an
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:egg
+    prompt:
+      template: "I eat {{b1}} banana and {{b2}} egg every morning."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Sáng nào mình cũng ăn một quả chuối và một quả trứng."
+        - "Gợi ý: banana bắt đầu bằng âm phụ âm /b/; egg bắt đầu bằng âm nguyên âm /e/."
+    answer:
+      blanks:
+        b1: [a]
+        b2: [an]
+    known_wrong:
+      - answer: some
+        feedback_vi: Banana và egg ở đây là một quả, đếm được số ít, nên dùng a/an chứ không dùng some.
+        error_tag: countable_some
+    explanation:
+      vi: Banana và egg đều đếm được, nói một quả thì cần a/an. Banana bắt đầu bằng âm phụ âm nên dùng a; egg bắt đầu bằng âm nguyên âm nên dùng an.
+    display_answer: I eat a banana and an egg every morning.
+
+  - key: en:exercise:food-drink-order-milk
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:coffee
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Mình uống cà phê với sữa.\""
+      tokens:
+        - { id: w-milk, text: milk }
+        - { id: w-a, text: a }
+        - { id: w-coffee, text: coffee }
+        - { id: w-i, text: I }
+        - { id: w-with, text: with }
+        - { id: w-milks, text: milks }
+        - { id: w-drink, text: drink }
+    answer:
+      orders:
+        - [w-i, w-drink, w-coffee, w-with, w-milk]
+    explanation:
+      vi: Nói chung về cà phê và sữa thì cả hai đều không đếm được, nên không có a và không thêm -s - coffee with milk.
+    display_answer: I drink coffee with milk.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:food-drink-fill-need
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:countable-uncountable
+    prompt:
+      template: "We need {{b1}} rice and two {{b2}} (trứng)."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [some]
+        b2: [eggs]
+    known_wrong:
+      - answer: a
+        feedback_vi: Rice không đếm được nên không đi với a; dùng some.
+        error_tag: uncountable_article
+      - answer: egg
+        feedback_vi: Hai quả trứng là số nhiều, cần thêm -s - two eggs.
+        error_tag: plural_s
+      - answer: any
+        feedback_vi: Câu khẳng định dùng some; any dùng trong câu phủ định và câu hỏi.
+        error_tag: some_any
+    explanation:
+      vi: Rice không đếm được nên dùng some (một ít). Egg đếm được, two là số nhiều nên phải thêm -s thành eggs.
+    display_answer: We need some rice and two eggs.
+
+  - key: en:exercise:food-drink-translate-banana
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:countable-uncountable
+    prompt:
+      source_text: Mình ăn một quả chuối và ít cơm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I eat a banana and some rice.
+        - I have a banana and some rice.
+        - I'm eating a banana and some rice.
+        - I am eating a banana and some rice.
+        - I eat one banana and some rice.
+        - I eat a banana and a little rice.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I eat a banana and a rice.
+        feedback_vi: Rice không đếm được nên không dùng a; "ít cơm" là some rice.
+        error_tag: uncountable_article
+      - answer: I eat banana and some rice.
+        feedback_vi: Một quả chuối thì cần a - a banana.
+        error_tag: article
+      - answer: I eat a banana and some rices.
+        feedback_vi: Rice không đếm được nên không thêm -s.
+        error_tag: uncountable_plural
+      - answer: I eat an banana and some rice.
+        feedback_vi: Banana bắt đầu bằng âm phụ âm /b/, nên dùng a.
+        error_tag: article
+    explanation:
+      vi: Chuối đếm được nên nói a banana. Cơm không đếm được nên "ít cơm" là some rice, không có a và không có -s.
+    display_answer: I eat a banana and some rice.
+
+  # ---------------- application ----------------
+  - key: en:exercise:food-drink-translate-milk-eggs
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:egg
+    prompt:
+      source_text: Mình uống sữa và ăn hai quả trứng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I drink milk and eat two eggs.
+        - I drink milk and I eat two eggs.
+        - I drink some milk and eat two eggs.
+        - I drink some milk and I eat two eggs.
+        - I have milk and two eggs.
+        - I have some milk and two eggs.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I drink a milk and eat two eggs.
+        feedback_vi: Milk không đếm được nên không dùng a.
+        error_tag: uncountable_article
+      - answer: I drink milk and eat two egg.
+        feedback_vi: Hai quả trứng là số nhiều - two eggs.
+        error_tag: plural_s
+      - answer: I drink milks and eat two eggs.
+        feedback_vi: Milk không đếm được nên không thêm -s.
+        error_tag: uncountable_plural
+    explanation:
+      vi: Milk không đếm được nên đứng một mình hoặc đi với some. Egg đếm được, hai quả thì thêm -s thành two eggs.
+    display_answer: I drink milk and eat two eggs.
+
+  - key: en:exercise:food-drink-translate-bread
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:bread
+    prompt:
+      source_text: We have some bread and two apples.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chúng tôi có ít bánh mì và hai quả táo.
+        - Chúng tôi có một ít bánh mì và hai quả táo.
+        - Chúng tôi có một chút bánh mì và hai quả táo.
+        - Chúng mình có ít bánh mì và hai quả táo.
+        - Chúng mình có một ít bánh mì và hai quả táo.
+        - Chúng ta có ít bánh mì và hai quả táo.
+        - Chúng ta có một ít bánh mì và hai quả táo.
+        - Nhà mình có ít bánh mì và hai quả táo.
+        - Chúng tôi có bánh mì và hai quả táo.
+        - Chúng mình có bánh mì và hai quả táo.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Some bread là "ít bánh mì" vì bread không đếm được; two apples là "hai quả táo". We có thể dịch là "chúng tôi", "chúng mình" hoặc "chúng ta".
+    display_answer: Chúng tôi có ít bánh mì và hai quả táo.
+
+  - key: en:exercise:food-drink-order-coffees
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:apple
+    prompt:
+      instruction: "Sắp xếp thành câu gọi đồ ở quán: \"Cho mình hai ly cà phê và một quả táo nhé.\""
+      tokens:
+        - { id: g-apple, text: apple }
+        - { id: g-a, text: a }
+        - { id: g-please, text: please }
+        - { id: g-coffees, text: coffees }
+        - { id: g-an, text: an }
+        - { id: g-two, text: Two }
+        - { id: g-coffee, text: coffee }
+        - { id: g-and, text: and }
+    answer:
+      orders:
+        - [g-two, g-coffees, g-and, g-an, g-apple, g-please]
+        - [g-an, g-apple, g-and, g-two, g-coffees, g-please]
+    explanation:
+      vi: Khi gọi đồ uống theo phần ở quán, coffee được đếm - two coffees là hai ly. Apple bắt đầu bằng âm nguyên âm nên dùng an.
+    display_answer: Two coffees and an apple, please.

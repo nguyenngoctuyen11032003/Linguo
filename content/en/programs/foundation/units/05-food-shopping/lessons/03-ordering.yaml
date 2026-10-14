@@ -1,0 +1,377 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:ordering
+order_index: 3
+level: a1
+title:
+  vi: Gọi món ở quán cà phê, nhà hàng
+objectives:
+  - vi: Gọi món lịch sự bằng Can I have…, please? và I'd like…, please.
+  - vi: Hiểu và trả lời câu nhân viên hỏi như Would you like…? và Anything else?
+  - vi: Gọi đồ uống bằng a cup of, a glass of, a bottle of và xin tính tiền.
+estimated_minutes: 12
+skills: [speaking, listening, vocabulary]
+prerequisites: [en:lesson:some-any-like]
+items:
+  - item: en:item:can-i-have
+  - item: en:item:id-like
+  - item: en:item:would-you-like
+  - item: en:item:anything-else
+  - item: en:item:thats-all
+  - item: en:item:the-bill
+  - item: en:item:menu
+  - item: en:item:a-cup-of
+  - item: en:item:coffee
+    role: reuse
+  - item: en:item:tea
+    role: reuse
+  - item: en:item:water
+    role: reuse
+  - item: en:item:juice
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi được một bữa ở quán từ đầu đến cuối - xin thực đơn, gọi đồ, trả lời nhân viên và xin tính tiền - bằng câu lịch sự.
+  - type: explain
+    text:
+      vi: Hai mẫu câu gọi món an toàn nhất là Can I have…, please? và I'd like…, please. Please làm câu mềm và lịch sự; câu "Give me a coffee" giống ra lệnh nên người bản xứ thấy thô.
+  - type: explain
+    text:
+      vi: Nhân viên thường hỏi What would you like? (Anh chị dùng gì?) hoặc Would you like some water? Bạn trả lời Yes, please hoặc No, thank you. Khi họ hỏi Anything else?, nếu đã gọi đủ thì nói No, that's all, thanks.
+  - type: deep_explain
+    text:
+      vi: I'd like là dạng ngắn của I would like (muốn - lịch sự), khác I like (thích nói chung). Đồ uống không đếm được thì đếm bằng vật chứa - a cup of tea (tách, đồ nóng), a glass of water (ly, cốc), a bottle of water (chai); số nhiều thêm -s vào vật chứa - two glasses of water. Người Anh nói the bill, người Mỹ nói the check.
+  - type: example
+    target: Can I have the menu, please?
+    target_lang: en
+    translation:
+      vi: Cho mình xem thực đơn nhé.
+    note:
+      vi: Dùng the vì là thực đơn của chính quán này.
+  - type: example
+    target: "A: What would you like? B: I'd like a cup of tea and a glass of water, please."
+    target_lang: en
+    translation:
+      vi: "A: Anh chị dùng gì ạ? B: Cho mình một tách trà và một ly nước nhé."
+    note:
+      vi: Tea và water không đếm được, nên đếm bằng a cup of, a glass of.
+  - type: example
+    target: "A: Anything else? B: No, that's all, thanks."
+    target_lang: en
+    translation:
+      vi: "A: Còn gì nữa không ạ? B: Không, vậy thôi, cảm ơn."
+  - type: example
+    target: Excuse me, can I have the bill, please?
+    target_lang: en
+    translation:
+      vi: Xin lỗi, cho mình tính tiền nhé.
+    note:
+      vi: Excuse me dùng để gọi nhân viên một cách lịch sự.
+  - type: common_mistake
+    wrong: I like a coffee, please.
+    right: I'd like a coffee, please.
+    target_lang: en
+    note:
+      vi: I like là "tôi thích" (nói chung). Khi gọi món, bạn cần I'd like (I would like) - "tôi muốn".
+  - type: common_mistake
+    wrong: Give me the bill.
+    right: Can I have the bill, please?
+    target_lang: en
+    note:
+      vi: Dịch thẳng "đưa tôi hoá đơn" nghe như ra lệnh. Dùng câu hỏi Can I have…, please? để lịch sự.
+  - type: common_mistake
+    wrong: Two glass of waters, please.
+    right: Two glasses of water, please.
+    target_lang: en
+    note:
+      vi: Thêm -s vào vật chứa (glasses), còn water không đếm được nên giữ nguyên.
+  - type: summary
+    points:
+      - vi: "Gọi món: Can I have…, please? / I'd like…, please."
+      - vi: I'd like = I would like (muốn), khác I like (thích).
+      - vi: "Trả lời lời mời: Yes, please. / No, thank you."
+      - vi: "Anything else? → No, that's all, thanks."
+      - vi: "Đếm đồ uống: a cup of tea, a glass of water, two bottles of water."
+      - vi: "Xin tính tiền: Can I have the bill (Mỹ: the check), please?"
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:ordering-listen-anything
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:anything-else
+    prompt:
+      audio_asset_id: null
+      fallback_text: Anything else?
+      options:
+        - { id: s8d, text: Còn gì nữa không ạ?, lang: vi }
+        - { id: r3x, text: Anh chị dùng gì ạ?, lang: vi }
+        - { id: n6c, text: Cho mình tính tiền nhé., lang: vi }
+        - { id: f1v, text: Bạn có muốn uống nước không?, lang: vi }
+    answer:
+      correct_option_id: s8d
+    explanation:
+      vi: Anything else nghĩa là "còn gì khác nữa không", nhân viên hỏi sau khi bạn gọi món. "Anh chị dùng gì ạ?" là What would you like?
+    display_answer: Còn gì nữa không ạ?
+
+  - key: en:exercise:ordering-mcq-polite
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:can-i-have
+    prompt:
+      stem: Câu nào là cách gọi một ly cà phê lịch sự?
+      stem_lang: vi
+      options:
+        - { id: z9g, text: "Give me a coffee.", lang: en }
+        - { id: e6p, text: "Can I have a coffee, please?", lang: en }
+        - { id: u1h, text: "I want coffee now.", lang: en }
+        - { id: o8s, text: "I like a coffee.", lang: en }
+    answer:
+      correct_option_id: e6p
+    explanation:
+      vi: Can I have…, please? là câu hỏi xin lịch sự. Give me và I want… now nghe như ra lệnh; I like a coffee sai nghĩa vì like là "thích".
+    display_answer: "Can I have a coffee, please?"
+
+  - key: en:exercise:ordering-fill-cup
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:a-cup-of
+    prompt:
+      template: "Can I have {{b1}} cup {{b2}} tea, please?"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Cho mình một tách trà nhé."
+        - "Gợi ý: cụm đếm đồ uống là a cup of…"
+    answer:
+      blanks:
+        b1: [a, one]
+        b2: [of]
+    known_wrong:
+      - answer: an
+        feedback_vi: Cup bắt đầu bằng âm phụ âm /k/, nên dùng a.
+        error_tag: article
+      - answer: the
+        feedback_vi: Gọi một tách bất kỳ thì dùng a cup, không dùng the.
+        error_tag: article
+    explanation:
+      vi: Tea không đếm được, nên đếm bằng vật chứa - a cup of tea. Cup bắt đầu bằng âm phụ âm nên dùng a, và luôn có of trước tên đồ uống.
+    display_answer: Can I have a cup of tea, please?
+
+  - key: en:exercise:ordering-order-glass
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:id-like
+    prompt:
+      instruction: "Sắp xếp thành câu gọi đồ: \"Cho mình một ly nước nhé.\""
+      tokens:
+        - { id: o-water, text: water }
+        - { id: o-of, text: of }
+        - { id: o-id, text: "I'd" }
+        - { id: o-please, text: please }
+        - { id: o-glass, text: glass }
+        - { id: o-a, text: a }
+        - { id: o-like, text: like }
+        - { id: o-waters, text: waters }
+    answer:
+      orders:
+        - [o-id, o-like, o-a, o-glass, o-of, o-water, o-please]
+    explanation:
+      vi: I'd like… please là mẫu câu gọi món lịch sự. Water không đếm được nên đếm bằng a glass of water, không thêm -s.
+    display_answer: I'd like a glass of water, please.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:ordering-fill-else
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:thats-all
+    prompt:
+      template: "A: Anything {{b1}}? B: No, that's {{b2}}, thanks."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [else]
+        b2: [all]
+    known_wrong:
+      - answer: other
+        feedback_vi: Câu cố định là Anything else? - else nghĩa là "khác, thêm nữa".
+        error_tag: fixed_phrase
+      - answer: more
+        feedback_vi: Câu nhân viên hay hỏi là Anything else?, không phải Anything more.
+        error_tag: fixed_phrase
+    explanation:
+      vi: Anything else? là câu cố định nghĩa "Còn gì nữa không?". Trả lời gọi đủ rồi bằng No, that's all, thanks - all nghĩa là "tất cả, chỉ vậy thôi".
+    display_answer: "A: Anything else? B: No, that's all, thanks."
+
+  - key: en:exercise:ordering-translate-coffee
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:id-like
+    prompt:
+      source_text: Cho mình một ly cà phê nhé.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Can I have a coffee, please?
+        - Can I have a coffee?
+        - Could I have a coffee, please?
+        - I'd like a coffee, please.
+        - I would like a coffee, please.
+        - I'd like a coffee.
+        - I would like a coffee.
+        - A coffee, please.
+        - Can I have a cup of coffee, please?
+        - I'd like a cup of coffee, please.
+        - I would like a cup of coffee, please.
+        - Can I get a coffee, please?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I like a coffee, please.
+        feedback_vi: I like là "tôi thích". Gọi món cần I'd like (I would like).
+        error_tag: like_vs_would_like
+      - answer: Give me a coffee.
+        feedback_vi: Câu này nghe như ra lệnh. Lịch sự hơn - Can I have a coffee, please?
+        error_tag: politeness
+      - answer: Give me a coffee, please.
+        feedback_vi: Give me nghe khá cộc dù có please. Dùng Can I have… hoặc I'd like…
+        error_tag: politeness
+      - answer: Can I have an coffee, please?
+        feedback_vi: Coffee bắt đầu bằng âm phụ âm /k/, nên dùng a.
+        error_tag: article
+    explanation:
+      vi: Gọi món lịch sự dùng Can I have…, please? hoặc I'd like…, please. Ở quán, a coffee nghĩa là một ly cà phê.
+    display_answer: Can I have a coffee, please?
+
+  - key: en:exercise:ordering-translate-bill
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:the-bill
+    prompt:
+      source_text: Cho mình tính tiền nhé.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Can I have the bill, please?
+        - Can I have the bill?
+        - Could I have the bill, please?
+        - Can we have the bill, please?
+        - The bill, please.
+        - Can I have the check, please?
+        - Could I have the check, please?
+        - The check, please.
+        - Can I get the check, please?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Give me the bill.
+        feedback_vi: Câu này nghe như ra lệnh. Lịch sự hơn - Can I have the bill, please?
+        error_tag: politeness
+      - answer: Can I have a bill, please?
+        feedback_vi: Hoá đơn của chính bàn bạn nên dùng the bill.
+        error_tag: article
+      - answer: Can I pay money?
+        feedback_vi: Người bản xứ không nói vậy. Xin tính tiền là Can I have the bill, please?
+        error_tag: literal_translation
+    explanation:
+      vi: Xin tính tiền ở nhà hàng là Can I have the bill, please? (Anh) hoặc the check (Mỹ). Dùng the vì đó là hoá đơn của bàn bạn.
+    display_answer: Can I have the bill, please?
+
+  # ---------------- application ----------------
+  - key: en:exercise:ordering-mcq-yes-please
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:would-you-like
+    prompt:
+      stem: "Nhân viên hỏi: \"Would you like some water?\" Bạn muốn uống. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: k2y, text: "Yes, please.", lang: en }
+        - { id: d7n, text: "Yes, I would like.", lang: en }
+        - { id: p4f, text: "Yes, I like.", lang: en }
+        - { id: v5c, text: "Yes, give me.", lang: en }
+    answer:
+      correct_option_id: k2y
+    explanation:
+      vi: Câu trả lời tự nhiên cho lời mời Would you like…? là Yes, please hoặc No, thank you. Like luôn cần tân ngữ phía sau, nên I would like hay I like đứng một mình là sai.
+    display_answer: "Yes, please."
+
+  - key: en:exercise:ordering-translate-bottle
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:a-cup-of
+    prompt:
+      source_text: I'd like a bottle of water, please.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cho mình một chai nước nhé.
+        - Cho tôi một chai nước nhé.
+        - Cho mình một chai nước.
+        - Cho tôi một chai nước.
+        - Cho tôi một chai nước ạ.
+        - Cho mình một chai nước ạ.
+        - Tôi muốn một chai nước.
+        - Mình muốn một chai nước.
+        - Tôi muốn gọi một chai nước.
+        - Làm ơn cho tôi một chai nước.
+        - Vui lòng cho tôi một chai nước.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: I'd like… please khi gọi đồ tương đương "Cho mình… nhé". A bottle of water là "một chai nước".
+    display_answer: Cho mình một chai nước nhé.
+
+  - key: en:exercise:ordering-order-two-cups
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:a-cup-of
+    prompt:
+      instruction: "Sắp xếp thành câu gọi đồ: \"Cho mình hai tách trà nhé.\""
+      tokens:
+        - { id: t-cups, text: cups }
+        - { id: t-two, text: two }
+        - { id: t-of, text: of }
+        - { id: t-can, text: Can }
+        - { id: t-tea, text: tea }
+        - { id: t-have, text: have }
+        - { id: t-i, text: I }
+        - { id: t-cup, text: cup }
+        - { id: t-an, text: an }
+        - { id: t-please, text: please }
+    answer:
+      orders:
+        - [t-can, t-i, t-have, t-two, t-cups, t-of, t-tea, t-please]
+    explanation:
+      vi: Hai tách thì thêm -s vào vật chứa - two cups; tea không đếm được nên giữ nguyên. Câu gọi món mở đầu bằng Can I have.
+    display_answer: Can I have two cups of tea, please?

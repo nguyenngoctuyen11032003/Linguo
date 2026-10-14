@@ -1,0 +1,350 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:sino-numbers
+order_index: 1
+level: topik1
+title:
+  vi: Số Hán-Hàn, số điện thoại và ngày tháng
+objectives:
+  - vi: Đếm và đọc số Hán-Hàn từ 0 đến 99 (일, 이, 삼… 구십구).
+  - vi: Đọc số điện thoại theo cách người Hàn nói (공일공에…).
+  - vi: Nói ngày tháng, kể cả hai tháng bất quy tắc 유월 và 시월, và hỏi 며칠이에요?
+estimated_minutes: 14
+skills: [vocabulary, listening, speaking, writing]
+prerequisites: [ko:lesson:greetings-intro-review]
+items:
+  - item: ko:item:sino-numbers
+  - item: ko:item:sino-compounds
+  - item: ko:item:number-zero
+  - item: ko:item:phone-number
+  - item: ko:item:month-day
+  - item: ko:item:irregular-months
+  - item: ko:item:myeochil
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được số điện thoại như 010-1234-5678 và nói được ngày như "ngày 15 tháng 6" bằng tiếng Hàn.
+  - type: explain
+    text:
+      vi: Tiếng Hàn có hai bộ số. Bộ Hán-Hàn (일, 이, 삼…) nghe khá giống âm Hán-Việt - 삼 (tam), 사 (tứ), 구 (cửu) - và được dùng cho số điện thoại, tiền, ngày tháng, phút. Bộ thuần Hàn (하나, 둘…) bạn sẽ học ở bài 3.
+  - type: explain
+    text:
+      vi: Số từ 11 đến 99 ghép giống tiếng Việt - 이십오 là "hai mươi lăm". Nhưng 10 chỉ là 십, không nói 일십, giống như tiếng Việt nói "mười" chứ không nói "một mươi".
+  - type: explain
+    text:
+      vi: Ngày tháng dùng số Hán-Hàn + 월 (tháng) + 일 (ngày), và nói tháng trước, ngày sau - 삼월 오 일 là ngày 5 tháng 3. Hai tháng bất quy tắc là 유월 (tháng 6) và 시월 (tháng 10).
+  - type: deep_explain
+    text:
+      vi: Khi đọc số điện thoại, người Hàn đọc từng chữ số, số 0 đọc là 공, dấu gạch ngang đọc là 에 - 010-1234-5678 thành 공일공에 일이삼사에 오육칠팔. Hỏi ngày dùng 며칠이에요? - viết là 며칠, không viết 몇 일. Số 육 hay đổi âm - 십육 đọc [심뉵], 오육 đọc [오륙].
+  - type: example
+    target: 공일공에 일이삼사에 오육칠팔이에요.
+    target_lang: ko
+    translation:
+      vi: (Số của tôi) là 010-1234-5678.
+    note:
+      vi: Đọc từng chữ số; 0 là 공, dấu gạch ngang là 에.
+  - type: example
+    target: 오늘이 며칠이에요?
+    target_lang: ko
+    translation:
+      vi: Hôm nay là ngày bao nhiêu?
+    note:
+      vi: 며칠 dùng để hỏi ngày trong tháng.
+  - type: example
+    target: 유월 십오 일이에요.
+    target_lang: ko
+    translation:
+      vi: Ngày 15 tháng 6.
+    note:
+      vi: Tháng 6 là 유월, không phải 육월; tháng nói trước ngày.
+  - type: example
+    target: 시월 삼 일
+    target_lang: ko
+    translation:
+      vi: ngày 3 tháng 10
+    note:
+      vi: Tháng 10 là 시월 - 십 rơi mất ㅂ.
+  - type: common_mistake
+    wrong: 육월
+    right: 유월
+    target_lang: ko
+    note:
+      vi: Ghép máy móc 육 + 월 là sai chính tả. Tháng 6 luôn là 유월 (và tháng 10 là 시월, không phải 십월).
+  - type: common_mistake
+    wrong: 일십
+    right: 십
+    target_lang: ko
+    note:
+      vi: Số 10 chỉ là 십, giống "mười" trong tiếng Việt. Tương tự, 11 là 십일 chứ không phải 일십일.
+  - type: common_mistake
+    wrong: 오일 삼월
+    right: 삼월 오 일
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói "ngày 5 tháng 3", nhưng tiếng Hàn nói tháng trước rồi mới đến ngày - 삼월 오 일.
+  - type: summary
+    points:
+      - vi: 일 이 삼 사 오 육 칠 팔 구 십 - số Hán-Hàn, dùng cho số điện thoại, ngày tháng, tiền, phút.
+      - vi: 11-99 ghép như tiếng Việt (이십오 = 25); 10 là 십, không phải 일십.
+      - vi: Số điện thoại - 0 là 공, gạch ngang là 에.
+      - vi: Ngày tháng - tháng trước, ngày sau; nhớ 유월 (tháng 6), 시월 (tháng 10).
+      - vi: Hỏi ngày - 며칠이에요? (không viết 몇 일).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:sino-numbers-mcq-seven
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:sino-numbers
+    prompt:
+      stem: Số 7 trong bộ số Hán-Hàn (dùng cho số điện thoại, ngày tháng) là gì?
+      stem_lang: vi
+      options:
+        - { id: r4m, text: 팔, lang: ko }
+        - { id: x9c, text: 칠, lang: ko }
+        - { id: b2t, text: 일곱, lang: ko }
+        - { id: h7q, text: 칠십, lang: ko }
+    answer:
+      correct_option_id: x9c
+    explanation:
+      vi: 칠 là số 7 Hán-Hàn (giống âm "thất"). 팔 là 8, 칠십 là 70, còn 일곱 cũng là 7 nhưng thuộc bộ thuần Hàn, không dùng cho số điện thoại hay ngày tháng.
+    display_answer: 칠
+
+  - key: ko:exercise:sino-numbers-listen-25
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:sino-compounds
+    prompt:
+      audio_asset_id: null
+      fallback_text: 이십오
+      options:
+        - { id: k3p, text: "25", lang: vi }
+        - { id: w8n, text: "52", lang: vi }
+        - { id: d5j, text: "205", lang: vi }
+        - { id: s1u, text: "15", lang: vi }
+    answer:
+      correct_option_id: k3p
+    explanation:
+      vi: 이십오 = 이 (2) + 십 (10) + 오 (5), tức "hai mươi lăm", ghép theo đúng thứ tự như tiếng Việt. 52 là 오십이, 15 là 십오.
+    display_answer: "25"
+
+  - key: ko:exercise:sino-numbers-mcq-june
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:irregular-months
+    prompt:
+      stem: Tháng 6 trong tiếng Hàn viết thế nào?
+      stem_lang: vi
+      options:
+        - { id: f6a, text: 육월, lang: ko }
+        - { id: m2z, text: 유월, lang: ko }
+        - { id: q8e, text: 여섯 월, lang: ko }
+        - { id: v3g, text: 율월, lang: ko }
+    answer:
+      correct_option_id: m2z
+    explanation:
+      vi: Tháng 6 là tháng bất quy tắc - 육 rơi mất ㄱ thành 유월. 육월 là lỗi ghép máy móc, còn 여섯 là số thuần Hàn, không dùng cho tháng.
+    display_answer: 유월
+
+  - key: ko:exercise:sino-numbers-fill-october
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:irregular-months
+    prompt:
+      template: "Ngày 10 tháng 10 - {{b1}}월 십 일"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Tháng 10 là một trong hai tháng bất quy tắc.
+        - 십 + 월 rơi mất phụ âm cuối ㅂ.
+    answer:
+      blanks:
+        b1: [시]
+    known_wrong:
+      - answer: 십
+        feedback_vi: Tháng 10 là 시월, không phải 십월 - 십 rơi mất ㅂ khi đứng trước 월.
+        error_tag: irregular_month
+      - answer: 열
+        feedback_vi: 열 là số thuần Hàn; tháng dùng số Hán-Hàn, và tháng 10 là 시월.
+        error_tag: number_system
+    explanation:
+      vi: Tháng 10 là 시월 (bất quy tắc, bỏ ㅂ của 십). Ngày 10 thì giữ bình thường là 십 일.
+    display_answer: 시월 십 일
+
+  - key: ko:exercise:sino-numbers-order-date
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:month-day
+    prompt:
+      instruction: "Sắp xếp thành ngày tháng tiếng Hàn: \"ngày 21 tháng 3\""
+      tokens:
+        - { id: d1, text: 일 }
+        - { id: d4, text: 이십 }
+        - { id: d2, text: 삼월 }
+        - { id: d5, text: 삼 }
+        - { id: d3, text: 이십일 }
+    answer:
+      orders:
+        - [d2, d3, d1]
+    explanation:
+      vi: Tiếng Hàn nói tháng trước, ngày sau - 삼월 (tháng 3) rồi 이십일 일 (ngày 21). 이십 chỉ là 20, nên 삼월 이십 일 là ngày 20.
+    display_answer: 삼월 이십일 일
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:sino-numbers-fill-phone
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:number-zero
+    prompt:
+      template: "Viết cách đọc bằng chữ Hangul - 010-4827: {{b1}}에 {{b2}}"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [공일공, 영일영]
+        b2: [사팔이칠]
+    known_wrong:
+      - answer: 공하나공
+        feedback_vi: Số điện thoại đọc bằng số Hán-Hàn - 1 là 일, không phải 하나.
+        error_tag: number_system
+      - answer: 넷여덟둘일곱
+        feedback_vi: Số điện thoại đọc bằng số Hán-Hàn - 사팔이칠, không dùng số thuần Hàn.
+        error_tag: number_system
+      - answer: 사천팔백이십칠
+        feedback_vi: Số điện thoại đọc từng chữ số một - 사팔이칠, không đọc thành "bốn nghìn tám trăm…".
+        error_tag: phone_digit_by_digit
+      - answer: "010"
+        feedback_vi: Hãy viết cách đọc bằng chữ Hangul - 공일공.
+        error_tag: digits_not_words
+    explanation:
+      vi: Số điện thoại đọc từng chữ số bằng số Hán-Hàn; số 0 thường đọc là 공 (영 cũng được hiểu). Vì vậy 010-4827 đọc là 공일공에 사팔이칠.
+    display_answer: 공일공에 사팔이칠
+
+  - key: ko:exercise:sino-numbers-write-october
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:irregular-months
+    prompt:
+      source_text: tháng 10 (viết bằng chữ Hangul, không dùng chữ số)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 시월
+    known_wrong:
+      - answer: 십월
+        feedback_vi: Tháng 10 là tháng bất quy tắc - 십 rơi mất ㅂ thành 시월.
+        error_tag: irregular_month
+      - answer: 열월
+        feedback_vi: Tháng dùng số Hán-Hàn, không dùng 열 (thuần Hàn). Tháng 10 là 시월.
+        error_tag: number_system
+      - answer: 10월
+        feedback_vi: Viết 10월 vẫn đúng trong đời thường, nhưng bài này yêu cầu viết bằng chữ - 시월.
+        error_tag: digits_not_words
+      - answer: siwol
+        feedback_vi: Hãy gõ bằng chữ Hangul (시월), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: 십 + 월 lẽ ra là 십월, nhưng tiếng Hàn bỏ ㅂ cho dễ đọc nên thành 시월. Tương tự, tháng 6 là 유월.
+    display_answer: 시월
+
+  - key: ko:exercise:sino-numbers-translate-what-date
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:myeochil
+    prompt:
+      source_text: Hôm nay là ngày bao nhiêu?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 오늘이 며칠이에요?
+        - 오늘은 며칠이에요?
+        - 오늘 며칠이에요?
+    known_wrong:
+      - answer: 오늘이 몇 일이에요?
+        feedback_vi: Chính tả đúng là 며칠, không viết 몇 일 - 오늘이 며칠이에요?
+        error_tag: spelling_myeochil
+      - answer: 오늘이 몇 시예요?
+        feedback_vi: 몇 시 là hỏi giờ. Hỏi ngày dùng 며칠 - 오늘이 며칠이에요?
+        error_tag: question_word
+      - answer: 오늘이 무슨 요일이에요?
+        feedback_vi: Câu này hỏi thứ mấy. Hỏi ngày bao nhiêu dùng 며칠.
+        error_tag: question_word
+    explanation:
+      vi: 며칠 là "ngày mấy", đi với 이에요 vì có phụ âm cuối ㄹ. 오늘 (hôm nay) có thể đi với 이, 은 hoặc đứng không.
+    display_answer: 오늘이 며칠이에요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:sino-numbers-translate-birthday
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:month-day
+    prompt:
+      source_text: 제 생일은 유월 십육 일이에요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sinh nhật của tôi là ngày 16 tháng 6.
+        - Sinh nhật tôi là ngày 16 tháng 6.
+        - Sinh nhật của tôi là ngày mười sáu tháng sáu.
+        - Sinh nhật tôi là ngày mười sáu tháng sáu.
+        - Sinh nhật của tôi là 16/6.
+        - Sinh nhật tôi là 16/6.
+        - Sinh nhật của tôi vào ngày 16 tháng 6.
+        - Sinh nhật tôi vào ngày 16 tháng 6.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sinh nhật của tôi là ngày 6 tháng 16.
+        feedback_vi: Tiếng Hàn nói tháng trước - 유월 là tháng 6, 십육 일 là ngày 16.
+        error_tag: date_order
+      - answer: Sinh nhật của tôi là ngày 16 tháng 10.
+        feedback_vi: 유월 là tháng 6; tháng 10 là 시월.
+        error_tag: irregular_month
+    explanation:
+      vi: 유월 là tháng 6 (dạng bất quy tắc của 육월), 십육 일 là ngày 16. Tiếng Hàn nói tháng trước, nên khi dịch bạn đảo lại thành "ngày 16 tháng 6".
+    display_answer: Sinh nhật của tôi là ngày 16 tháng 6.
+
+  - key: ko:exercise:sino-numbers-mcq-read-phone
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:phone-number
+    prompt:
+      stem: "Bạn đọc số điện thoại 010-3729-1468 cho một người Hàn. Cách đọc nào tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: p5w, text: 공일공에 삼칠이구에 일사육팔, lang: ko }
+        - { id: z1k, text: 공하나공에 셋일곱둘아홉에 하나넷여섯여덟, lang: ko }
+        - { id: c6y, text: 십에 삼천칠백이십구에 천사백육십팔, lang: ko }
+        - { id: n4b, text: 공일공 삼칠이구 일사육팔에, lang: ko }
+    answer:
+      correct_option_id: p5w
+    explanation:
+      vi: Số điện thoại đọc từng chữ số bằng số Hán-Hàn, 0 là 공 và dấu gạch ngang là 에. Không dùng số thuần Hàn (하나, 셋…) và không đọc gộp thành hàng nghìn.
+    display_answer: 공일공에 삼칠이구에 일사육팔

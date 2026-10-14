@@ -1,0 +1,375 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
+key: en:lesson:my-day
+order_index: 1
+level: a1
+title:
+  vi: Một ngày của tôi
+objectives:
+  - vi: Gọi tên các việc hằng ngày - get up, have breakfast, go to work, go home, go to bed…
+  - vi: Kể thói quen của mình bằng thì hiện tại đơn với I, you, we, they.
+  - vi: Thêm thời gian vào câu - every day, in the morning, at night.
+estimated_minutes: 12
+skills: [vocabulary, grammar, speaking]
+prerequisites: [en:lesson:family-people-review]
+items:
+  - item: en:item:get-up
+  - item: en:item:have-breakfast
+  - item: en:item:go-to-work
+  - item: en:item:go-to-school
+  - item: en:item:start
+  - item: en:item:finish
+  - item: en:item:go-home
+  - item: en:item:watch-tv
+  - item: en:item:go-to-bed
+  - item: en:item:early
+  - item: en:item:late
+  - item: en:item:present-simple
+  - item: en:item:every-day
+  - item: en:item:in-the-morning
+  - item: en:item:at-night
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được một ngày bình thường của mình - "Tôi dậy sớm, ăn sáng, đi làm, buổi tối về nhà xem ti vi".
+  - type: explain
+    text:
+      vi: Khi nói về thói quen, việc lặp lại hằng ngày, tiếng Anh dùng thì hiện tại đơn. Với I, you, we, they, bạn chỉ cần chủ ngữ + động từ nguyên mẫu - I get up, we go to work. Giống tiếng Việt, động từ không đổi hình dạng.
+  - type: explain
+    text:
+      vi: Câu có động từ thường thì không cần am/is/are. Người Việt hay nói "I am go to work" vì nghĩ câu nào cũng cần be, nhưng đúng là I go to work.
+  - type: explain
+    text:
+      vi: Thời gian thường đặt ở cuối câu - I go to work every day. Buổi sáng là in the morning, còn ban đêm là at night (không có the).
+  - type: deep_explain
+    text:
+      vi: Một số cụm đi theo khuôn cố định, không thêm the hay my - go to work, go to school, go to bed, have breakfast. Riêng home không cần to - go home, vì home ở đây đã mang nghĩa "về nhà". Get up là rời khỏi giường, còn wake up là tỉnh giấc; trong câu kể thói quen, get up phổ biến hơn.
+  - type: example
+    target: I get up early and have breakfast at home.
+    target_lang: en
+    translation:
+      vi: Tôi dậy sớm và ăn sáng ở nhà.
+    note:
+      vi: Have breakfast không có a hay the. Early đứng sau get up.
+  - type: example
+    target: We go to work every day.
+    target_lang: en
+    translation:
+      vi: Ngày nào chúng tôi cũng đi làm.
+    note:
+      vi: Không có are trước go. Every day đặt cuối câu.
+  - type: example
+    target: They go home and watch TV at night.
+    target_lang: en
+    translation:
+      vi: Buổi tối họ về nhà và xem ti vi.
+    note:
+      vi: Go home không có to; at night không có the.
+  - type: example
+    target: I start work early and finish late.
+    target_lang: en
+    translation:
+      vi: Tôi bắt đầu làm việc sớm và tan làm muộn.
+    note:
+      vi: Start work và finish work là "vào làm" và "tan làm".
+  - type: common_mistake
+    wrong: I am go to work every day.
+    right: I go to work every day.
+    target_lang: en
+    note:
+      vi: Đã có động từ go thì không thêm am. Am/is/are chỉ dùng khi không có động từ thường, như I am a student.
+  - type: common_mistake
+    wrong: I go to home at night.
+    right: I go home at night.
+    target_lang: en
+    note:
+      vi: Home không cần to phía trước. Bạn nói go to work, go to school, go to bed nhưng go home.
+  - type: common_mistake
+    wrong: I go to the bed in the night.
+    right: I go to bed at night.
+    target_lang: en
+    note:
+      vi: Go to bed là cụm cố định, không có the. Ban đêm là at night, khác với in the morning.
+  - type: summary
+    points:
+      - vi: Thói quen dùng thì hiện tại đơn - I/you/we/they + động từ nguyên mẫu.
+      - vi: Có động từ thường thì không thêm am/is/are - I go, không phải I am go.
+      - vi: go to work, go to school, go to bed - nhưng go home (không có to).
+      - vi: every day, in the morning, at night thường đứng cuối câu.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:my-day-mcq-get-up
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: en:item:get-up
+    prompt:
+      stem: "\"I get up early.\" nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: r4w, text: "Tôi dậy sớm.", lang: vi }
+        - { id: m8c, text: "Tôi đi ngủ sớm.", lang: vi }
+        - { id: e2v, text: "Tôi về nhà sớm.", lang: vi }
+        - { id: k7d, text: "Tôi ăn sáng sớm.", lang: vi }
+    answer:
+      correct_option_id: r4w
+    explanation:
+      vi: Get up là rời giường, thức dậy. Đi ngủ là go to bed, về nhà là go home, ăn sáng là have breakfast.
+    display_answer: Tôi dậy sớm.
+
+  - key: en:exercise:my-day-listen-home
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: en:item:go-home
+    prompt:
+      audio_asset_id: null
+      fallback_text: They go home and watch TV at night.
+      options:
+        - { id: h3t, text: "Buổi tối họ về nhà và xem ti vi.", lang: vi }
+        - { id: z9p, text: "Buổi sáng họ về nhà và xem ti vi.", lang: vi }
+        - { id: u5b, text: "Buổi tối họ đi làm và xem ti vi.", lang: vi }
+        - { id: c1q, text: "Buổi tối chúng tôi về nhà và đi ngủ.", lang: vi }
+    answer:
+      correct_option_id: h3t
+    explanation:
+      vi: They là "họ", go home là "về nhà", at night là "buổi tối, ban đêm". Buổi sáng sẽ là in the morning, đi làm là go to work.
+    display_answer: Buổi tối họ về nhà và xem ti vi.
+
+  - key: en:exercise:my-day-mcq-correct-sentence
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:present-simple
+    prompt:
+      stem: Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: w6n, text: "I go home every day.", lang: en }
+        - { id: f2s, text: "I go to home every day.", lang: en }
+        - { id: j8y, text: "I am go home every day.", lang: en }
+        - { id: d4k, text: "I home every day.", lang: en }
+    answer:
+      correct_option_id: w6n
+    explanation:
+      vi: Home không cần to phía trước. Câu có động từ go thì không thêm am, và câu phải có động từ - "I home" thiếu go.
+    display_answer: I go home every day.
+
+  - key: en:exercise:my-day-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:have-breakfast
+    prompt:
+      template: "I {{b1}} up early and {{b2}} breakfast at home."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi dậy sớm và ăn sáng ở nhà."
+        - "Gợi ý: thức dậy là get up; ăn sáng là have breakfast."
+    answer:
+      blanks:
+        b1: [get, wake]
+        b2: [have, eat]
+    known_wrong:
+      - answer: gets
+        feedback_vi: Với I, động từ giữ nguyên, không thêm -s.
+        error_tag: verb_s_with_i
+      - answer: has
+        feedback_vi: Với I dùng have; has chỉ dùng với he, she, it.
+        error_tag: verb_s_with_i
+    explanation:
+      vi: Chủ ngữ là I nên động từ ở dạng nguyên mẫu - get up, have breakfast. Wake up và eat breakfast cũng đúng nghĩa.
+    display_answer: I get up early and have breakfast at home.
+
+  - key: en:exercise:my-day-order-school
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:go-to-school
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Ngày nào chúng tôi cũng đi học.\""
+      tokens:
+        - { id: s-day, text: day }
+        - { id: s-the, text: the }
+        - { id: s-go, text: go }
+        - { id: s-every, text: every }
+        - { id: s-we, text: We }
+        - { id: s-school, text: school }
+        - { id: s-are, text: are }
+        - { id: s-to, text: to }
+    answer:
+      orders:
+        - [s-we, s-go, s-to, s-school, s-every, s-day]
+        - [s-every, s-day, s-we, s-go, s-to, s-school]
+    explanation:
+      vi: Đi học là go to school (không có the); câu có động từ go nên không cần are. Every day thường đứng cuối câu.
+    display_answer: We go to school every day.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:my-day-fill-evening
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:at-night
+    prompt:
+      template: "I {{b1}} home, watch TV {{b2}} night and go {{b3}} bed."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [go, come, get]
+        b2: [at]
+        b3: [to]
+    known_wrong:
+      - answer: goes
+        feedback_vi: Với I, động từ giữ nguyên - I go home.
+        error_tag: verb_s_with_i
+      - answer: in
+        feedback_vi: Ban đêm là at night, không phải in night.
+        error_tag: preposition_time
+      - answer: on
+        feedback_vi: Ban đêm là at night, không phải on night.
+        error_tag: preposition_time
+      - answer: the
+        feedback_vi: Đi ngủ là go to bed - cần to, không có the.
+        error_tag: article
+    explanation:
+      vi: Về nhà là go home (không có to), ban đêm là at night, đi ngủ là go to bed. Ba cụm này đi theo khuôn cố định nên bạn nên học thuộc cả cụm.
+    display_answer: I go home, watch TV at night and go to bed.
+
+  - key: en:exercise:my-day-translate-work
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:go-to-work
+    prompt:
+      source_text: Ngày nào tôi cũng đi làm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I go to work every day.
+        - Every day I go to work.
+        - I go to work daily.
+        - I work every day.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I am go to work every day.
+        feedback_vi: Câu đã có động từ go nên không thêm am - I go to work every day.
+        error_tag: be_with_verb
+      - answer: I go to the work every day.
+        feedback_vi: Đi làm là go to work, không có the.
+        error_tag: article
+      - answer: I go work every day.
+        feedback_vi: Thiếu to - go to work.
+        error_tag: missing_to
+      - answer: I goes to work every day.
+        feedback_vi: Với I, động từ giữ nguyên - I go.
+        error_tag: verb_s_with_i
+      - answer: I go to work everyday.
+        feedback_vi: Mỗi ngày là every day (hai từ). Everyday viết liền là tính từ "thường ngày".
+        error_tag: spelling
+    explanation:
+      vi: Thói quen hằng ngày dùng hiện tại đơn - I + go to work. "Ngày nào… cũng" chính là every day, thường đặt cuối câu.
+    display_answer: I go to work every day.
+
+  # ---------------- application ----------------
+  - key: en:exercise:my-day-translate-evening
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:watch-tv
+    prompt:
+      source_text: Buổi tối tôi về nhà và xem ti vi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I go home and watch TV at night.
+        - At night I go home and watch TV.
+        - I go home at night and watch TV.
+        - I go home and watch TV in the evening.
+        - In the evening I go home and watch TV.
+        - I go home in the evening and watch TV.
+        - I come home and watch TV in the evening.
+        - I come home and watch TV at night.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I go to home and watch TV at night.
+        feedback_vi: Home không cần to - go home.
+        error_tag: go_to_home
+      - answer: I go home and watch TV in the night.
+        feedback_vi: Ban đêm/buổi tối là at night, không phải in the night.
+        error_tag: preposition_time
+      - answer: I go home and see TV at night.
+        feedback_vi: Xem ti vi là watch TV, không dùng see.
+        error_tag: word_choice
+      - answer: I am go home and watch TV at night.
+        feedback_vi: Câu có động từ thường thì không thêm am.
+        error_tag: be_with_verb
+    explanation:
+      vi: Hai việc nối bằng and, mỗi việc dùng động từ nguyên mẫu vì chủ ngữ là I. "Buổi tối" có thể là at night hoặc in the evening, đặt đầu hoặc cuối câu đều được.
+    display_answer: I go home and watch TV at night.
+
+  - key: en:exercise:my-day-translate-breakfast
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:have-breakfast
+    prompt:
+      source_text: We get up early and have breakfast at home.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chúng tôi dậy sớm và ăn sáng ở nhà.
+        - Chúng tôi thức dậy sớm và ăn sáng ở nhà.
+        - Chúng tôi dậy sớm rồi ăn sáng ở nhà.
+        - Chúng tôi thức dậy sớm rồi ăn sáng ở nhà.
+        - Chúng mình dậy sớm và ăn sáng ở nhà.
+        - Chúng ta dậy sớm và ăn sáng ở nhà.
+        - Bọn tôi dậy sớm và ăn sáng ở nhà.
+        - Chúng tôi dậy sớm và ăn sáng tại nhà.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: We là "chúng tôi", get up early là "dậy sớm", have breakfast là "ăn sáng", at home là "ở nhà". Thì hiện tại đơn ở đây nói về thói quen, tiếng Việt không cần thêm từ chỉ thời gian.
+    display_answer: Chúng tôi dậy sớm và ăn sáng ở nhà.
+
+  - key: en:exercise:my-day-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:go-to-bed
+    prompt:
+      stem: Bạn muốn kể rằng ngày nào bạn cũng đi ngủ muộn. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: q5x, text: "I go to bed late every day.", lang: en }
+        - { id: t3m, text: "I go to the bed late every day.", lang: en }
+        - { id: b7g, text: "I am go to bed late every day.", lang: en }
+        - { id: y2r, text: "I go bed late every day.", lang: en }
+    answer:
+      correct_option_id: q5x
+    explanation:
+      vi: Đi ngủ là cụm cố định go to bed - cần to, không có the. Câu có động từ go nên không thêm am.
+    display_answer: I go to bed late every day.

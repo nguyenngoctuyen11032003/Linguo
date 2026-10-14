@@ -1,0 +1,371 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:at-home
+order_index: 2
+level: a1
+title:
+  vi: Trong nhà - Is there…? Are there any…?
+objectives:
+  - vi: Gọi tên các phòng và đồ vật quen thuộc trong nhà.
+  - vi: Hỏi và trả lời "có… không?" bằng Is there…? / Are there any…? và câu trả lời ngắn.
+  - vi: Dùng some trong câu khẳng định, any trong câu hỏi và câu phủ định.
+  - vi: Nói vị trí đồ vật bằng in, on, under.
+estimated_minutes: 12
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:places-in-town]
+items:
+  - item: en:item:is-there-are-there
+  - item: en:item:some-any
+    role: reuse
+  - item: en:item:in-on-under
+  - item: en:item:kitchen
+  - item: en:item:bedroom
+  - item: en:item:bathroom
+  - item: en:item:living-room
+  - item: en:item:table
+  - item: en:item:chair
+  - item: en:item:bed
+  - item: en:item:sofa
+  - item: en:item:there-is-there-are
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được "Trong bếp có ghế không?", trả lời "Có" / "Không có", và nói đồ vật nằm trong, trên hay dưới cái gì.
+  - type: explain
+    text:
+      vi: Để hỏi "có… không?", bạn chỉ cần đảo is/are lên trước there - Is there a sofa? Are there any chairs? Trả lời ngắn lặp lại there và is/are - Yes, there is. / No, there aren't.
+  - type: explain
+    text:
+      vi: Với danh từ số nhiều, câu khẳng định dùng some (vài, một số), còn câu hỏi và câu phủ định dùng any. Tiếng Việt "có cái ghế nào không?" và "không có cái ghế nào" đều ứng với any.
+  - type: explain
+    text:
+      vi: In là "ở trong" (in the kitchen), on là "ở trên và chạm vào mặt" (on the table), under là "ở dưới" (under the bed). Tiếng Việt hay nói "trong" và "trên" lẫn lộn, còn tiếng Anh chọn theo cách vật tiếp xúc với nhau.
+  - type: deep_explain
+    text:
+      vi: "Câu trả lời ngắn khẳng định không được rút gọn - Yes, there is, không nói Yes, there's; câu phủ định thì rút gọn được - No, there isn't / No, there aren't. Khi nói về một vật cụ thể đã biết (điện thoại của tôi, con mèo nhà tôi), dùng vật đó làm chủ ngữ - My phone is on the table, không dùng There is my phone. Ở trên nhưng không chạm (đèn treo trên bàn) là above, không phải on."
+  - type: example
+    target: There's a big table in the kitchen.
+    target_lang: en
+    translation:
+      vi: Trong bếp có một cái bàn lớn.
+    note:
+      vi: Kitchen là một căn phòng, mình ở bên trong nó, nên dùng in.
+  - type: example
+    target: Are there any chairs in the bedroom? - No, there aren't.
+    target_lang: en
+    translation:
+      vi: Trong phòng ngủ có cái ghế nào không? - Không có.
+    note:
+      vi: Chairs số nhiều nên hỏi Are there any…; trả lời phủ định rút gọn aren't.
+  - type: example
+    target: Is there a TV in the living room? - Yes, there is. It's on the table.
+    target_lang: en
+    translation:
+      vi: Phòng khách có tivi không? - Có. Nó ở trên bàn.
+    note:
+      vi: Trả lời khẳng định đầy đủ Yes, there is; sau đó dùng It để chỉ chính cái tivi đó.
+  - type: example
+    target: The cat is under the bed.
+    target_lang: en
+    translation:
+      vi: Con mèo ở dưới gầm giường.
+    note:
+      vi: Con mèo cụ thể nên dùng The cat is…, không dùng There is.
+  - type: common_mistake
+    wrong: Have a TV in the bedroom?
+    right: Is there a TV in the bedroom?
+    target_lang: en
+    note:
+      vi: Câu hỏi "có… không?" về sự tồn tại dùng Is there/Are there, không dịch "có" thành have.
+  - type: common_mistake
+    wrong: Is there any chairs in the kitchen?
+    right: Are there any chairs in the kitchen?
+    target_lang: en
+    note:
+      vi: Chairs là số nhiều nên phải hỏi Are there. Is there đi với một vật - Is there a chair?
+  - type: common_mistake
+    wrong: My phone is in the table.
+    right: My phone is on the table.
+    target_lang: en
+    note:
+      vi: Điện thoại nằm trên mặt bàn, chạm vào bàn, nên dùng on. In chỉ dùng khi vật nằm bên trong (in the bag).
+  - type: summary
+    points:
+      - vi: Hỏi Is there a…? (số ít) / Are there any…? (số nhiều).
+      - vi: Trả lời Yes, there is / No, there isn't · Yes, there are / No, there aren't; không nói Yes, there's.
+      - vi: Some trong câu khẳng định; any trong câu hỏi và câu phủ định.
+      - vi: in = ở trong · on = ở trên, chạm mặt · under = ở dưới.
+      - vi: Vật cụ thể đã biết làm chủ ngữ - The cat is under the bed.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:at-home-mcq-short-answer
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:is-there-are-there
+    prompt:
+      stem: "Chọn câu trả lời đúng: Is there a sofa in the living room? - Yes, ___."
+      stem_lang: vi
+      options:
+        - { id: d8s, text: there is, lang: en }
+        - { id: j3q, text: there's, lang: en }
+        - { id: x5m, text: there are, lang: en }
+        - { id: f2t, text: it has, lang: en }
+    answer:
+      correct_option_id: d8s
+    explanation:
+      vi: Câu hỏi Is there… thì trả lời Yes, there is. Câu trả lời ngắn khẳng định không rút gọn thành there's, và a sofa là số ít nên không dùng are.
+    display_answer: there is
+
+  - key: en:exercise:at-home-listen-any-chairs
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:some-any
+    prompt:
+      audio_asset_id: null
+      fallback_text: Are there any chairs in the kitchen?
+      options:
+        - { id: p6k, text: Trong bếp có cái ghế nào không?, lang: vi }
+        - { id: s9b, text: Trong phòng khách có cái ghế nào không?, lang: vi }
+        - { id: l4n, text: Trong bếp có mấy cái ghế., lang: vi }
+        - { id: y7e, text: Trong bếp có cái bàn nào không?, lang: vi }
+    answer:
+      correct_option_id: p6k
+    explanation:
+      vi: Are there any…? là câu hỏi "có… nào không?". Kitchen là bếp, chairs là ghế; phòng khách là living room, bàn là table.
+    display_answer: Trong bếp có cái ghế nào không?
+
+  - key: en:exercise:at-home-mcq-under
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:in-on-under
+    prompt:
+      stem: "Con mèo ở dưới gầm giường: The cat is ___ the bed."
+      stem_lang: vi
+      options:
+        - { id: o3h, text: under, lang: en }
+        - { id: e8w, text: on, lang: en }
+        - { id: g5c, text: in, lang: en }
+        - { id: i1z, text: at, lang: en }
+    answer:
+      correct_option_id: o3h
+    explanation:
+      vi: Under là "ở dưới". On the bed là nằm trên mặt giường, in the bed là nằm trong chăn trên giường (đang ngủ), còn at không dùng để chỉ vị trí kiểu này.
+    display_answer: under
+
+  - key: en:exercise:at-home-fill-some-any-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:some-any
+    prompt:
+      template: "There are {{b1}} chairs in the kitchen, but there aren't {{b2}} chairs in the bedroom."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Trong bếp có mấy cái ghế, nhưng trong phòng ngủ không có cái ghế nào."
+        - "Gợi ý: câu khẳng định dùng some, câu phủ định dùng any."
+    answer:
+      blanks:
+        b1: [some]
+        b2: [any]
+    known_wrong:
+      - answer: a
+        feedback_vi: Chairs là số nhiều nên không dùng a; dùng some hoặc any.
+        error_tag: article
+      - answer: many
+        feedback_vi: Câu này không nhấn mạnh "nhiều". Câu khẳng định dùng some, câu phủ định dùng any.
+        error_tag: some_any
+    explanation:
+      vi: Vế đầu là câu khẳng định nên dùng some. Vế sau có aren't (phủ định) nên dùng any.
+    display_answer: There are some chairs in the kitchen, but there aren't any chairs in the bedroom.
+
+  - key: en:exercise:at-home-order-table
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:table
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Anh: \"Trong bếp có cái bàn nào không?\""
+      tokens:
+        - { id: h-kitchen, text: kitchen }
+        - { id: h-a, text: a }
+        - { id: h-is, text: Is }
+        - { id: h-the, text: the }
+        - { id: h-have, text: Have }
+        - { id: h-table, text: table }
+        - { id: h-in, text: in }
+        - { id: h-on, text: on }
+        - { id: h-there, text: there }
+        - { id: h-are, text: Are }
+    answer:
+      orders:
+        - [h-is, h-there, h-a, h-table, h-in, h-the, h-kitchen]
+    explanation:
+      vi: Hỏi "có… không?" với một vật thì đảo Is lên trước there - Is there a table…? Ở trong căn bếp dùng in, không dùng on; không dịch "có" thành Have.
+    display_answer: Is there a table in the kitchen?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:at-home-fill-are-arent
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:is-there-are-there
+    prompt:
+      template: "{{b1}} there any chairs in the living room? - No, there {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Are]
+        b2: ["aren't", are not]
+    known_wrong:
+      - answer: Is
+        feedback_vi: Chairs là số nhiều nên hỏi Are there, không phải Is there.
+        error_tag: there_be_agreement
+      - answer: "isn't"
+        feedback_vi: Câu hỏi dùng are thì câu trả lời cũng dùng are - No, there aren't.
+        error_tag: there_be_agreement
+      - answer: Have
+        feedback_vi: Hỏi "có… không?" về sự tồn tại thì dùng Are there, không dùng have.
+        error_tag: have_for_there_is
+    explanation:
+      vi: Chairs số nhiều nên hỏi Are there any…? Câu trả lời ngắn lặp lại are và thêm not - No, there aren't.
+    display_answer: Are there any chairs in the living room? - No, there aren't.
+
+  - key: en:exercise:at-home-translate-sofa
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:sofa
+    prompt:
+      source_text: Trong phòng khách có một cái ghế sofa.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - There is a sofa in the living room.
+        - There's a sofa in the living room.
+        - There is a couch in the living room.
+        - There's a couch in the living room.
+        - In the living room, there is a sofa.
+        - In the living room, there's a sofa.
+        - The living room has a sofa.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: In the living room has a sofa.
+        feedback_vi: In the living room không làm chủ ngữ được. Hãy nói There is a sofa in the living room.
+        error_tag: have_for_there_is
+      - answer: It has a sofa in the living room.
+        feedback_vi: "\"Có\" ở đây nói về sự tồn tại - dùng There is, không dùng It has."
+        error_tag: have_for_there_is
+      - answer: There are a sofa in the living room.
+        feedback_vi: Một cái sofa là số ít nên dùng is.
+        error_tag: there_be_agreement
+      - answer: There is a sofa on the living room.
+        feedback_vi: Ở bên trong một căn phòng dùng in - in the living room.
+        error_tag: preposition_in_on
+    explanation:
+      vi: Câu nói về sự tồn tại nên dùng There is a sofa, và căn phòng là không gian bao quanh nên dùng in the living room. The living room has a sofa cũng đúng vì căn phòng làm chủ ngữ.
+    display_answer: There is a sofa in the living room.
+
+  - key: en:exercise:at-home-translate-phone-on
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:in-on-under
+    prompt:
+      source_text: Điện thoại của tôi ở trên bàn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My phone is on the table.
+        - My phone's on the table.
+        - My mobile is on the table.
+        - My cell phone is on the table.
+        - My mobile phone is on the table.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My phone is in the table.
+        feedback_vi: Điện thoại nằm trên mặt bàn nên dùng on, không dùng in.
+        error_tag: preposition_in_on
+      - answer: My phone on the table.
+        feedback_vi: Thiếu is - My phone is on the table.
+        error_tag: missing_be
+      - answer: There is my phone on the table.
+        feedback_vi: Với vật cụ thể đã biết (điện thoại của tôi), dùng nó làm chủ ngữ - My phone is on the table.
+        error_tag: there_is_definite
+      - answer: My phone is above the table.
+        feedback_vi: Above là ở phía trên mà không chạm. Điện thoại nằm trên mặt bàn nên dùng on.
+        error_tag: preposition_on_above
+    explanation:
+      vi: Điện thoại là vật cụ thể nên làm chủ ngữ, cần is ở giữa. Nó nằm chạm mặt bàn nên dùng on the table.
+    display_answer: My phone is on the table.
+
+  # ---------------- application ----------------
+  - key: en:exercise:at-home-translate-no-chairs
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:kitchen
+    prompt:
+      source_text: There aren't any chairs in the kitchen.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trong bếp không có cái ghế nào.
+        - Trong bếp không có ghế.
+        - Trong nhà bếp không có cái ghế nào.
+        - Trong nhà bếp không có ghế.
+        - Nhà bếp không có ghế.
+        - Trong bếp không có chiếc ghế nào.
+        - Trong bếp chẳng có cái ghế nào.
+        - Ở trong bếp không có cái ghế nào.
+        - Bếp không có cái ghế nào.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: There aren't any… là "không có… nào". Any trong câu phủ định ứng với "nào" trong tiếng Việt, kitchen là nhà bếp.
+    display_answer: Trong bếp không có cái ghế nào.
+
+  - key: en:exercise:at-home-mcq-guest
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:bathroom
+    prompt:
+      stem: Bạn đến chơi nhà một người bạn nước ngoài và muốn hỏi trên tầng này có phòng tắm không. Câu nào tự nhiên và đúng?
+      stem_lang: vi
+      options:
+        - { id: u2r, text: Is there a bathroom on this floor?, lang: en }
+        - { id: k7v, text: Have a bathroom on this floor?, lang: en }
+        - { id: b4g, text: Are there a bathroom on this floor?, lang: en }
+        - { id: m1x, text: Is there bathroom on this floor?, lang: en }
+    answer:
+      correct_option_id: u2r
+    explanation:
+      vi: Hỏi về một phòng tắm (số ít) thì dùng Is there a…? Have là dịch từng chữ "có"; are không đi với a bathroom; thiếu a trước bathroom là sai mạo từ.
+    display_answer: Is there a bathroom on this floor?

@@ -1,0 +1,365 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:name-nationality
+order_index: 3
+level: topik1
+title:
+  vi: Tên và quốc tịch
+objectives:
+  - vi: Hỏi và trả lời tên - 이름이 뭐예요? / 저는 란이에요.
+  - vi: Nói quốc tịch bằng tên nước + 사람 - 베트남 사람, 한국 사람.
+  - vi: Dùng 씨 đúng cách - sau tên người khác, không bao giờ cho chính mình.
+estimated_minutes: 14
+skills: [speaking, listening, grammar, vocabulary]
+prerequisites: [ko:lesson:i-am-student]
+items:
+  - item: ko:item:ireum
+  - item: ko:item:ireumi-mwoyeyo
+  - item: ko:item:ssi
+  - item: ko:item:nara
+  - item: ko:item:saram
+  - item: ko:item:beteunam
+  - item: ko:item:hanguk
+    role: reuse
+  - item: ko:item:eoneu-nara-saram
+  - item: ko:item:copula-ieyo-yeyo
+    role: reuse
+  - item: ko:item:topic-eun-neun
+    role: reuse
+  - item: ko:item:jeo-na
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi tên, hỏi quốc tịch và tự giới thiệu - 저는 란이에요. 베트남 사람이에요. - đồng thời gọi người khác lịch sự bằng 씨.
+  - type: explain
+    text:
+      vi: Hỏi tên - 이름이 뭐예요? (Tên là gì?). Trả lời bằng chính mẫu câu bài trước - 저는 + tên + 이에요/예요, xét patchim của âm tiết cuối trong tên - 란이에요, 민수예요. Bạn cũng có thể nói 제 이름은 란이에요 (Tên tôi là Lan).
+  - type: explain
+    text:
+      vi: Quốc tịch = tên nước + 사람 (người). Thứ tự ngược tiếng Việt - “người Việt Nam” là 베트남 사람, “người Hàn Quốc” là 한국 사람; tương tự 중국 사람 (người Trung Quốc), 일본 사람 (người Nhật), 미국 사람 (người Mỹ).
+  - type: explain
+    text:
+      vi: 씨 đặt sau tên người khác để gọi lịch sự, giống “anh/chị/bạn + tên” - 란 씨, 민수 씨. Không bao giờ dùng 씨 cho chính mình, và không dùng với thầy cô hay cấp trên (gọi 선생님).
+  - type: deep_explain
+    text:
+      vi: Người Hàn ít dùng “bạn” khi nói chuyện - họ gọi tên + 씨 hoặc bỏ hẳn chủ ngữ. Từ 당신 trong từ điển dịch là “bạn” nhưng khi nói trực tiếp nghe xa cách, có khi gây khó chịu, nên bạn đừng dùng. Với người lớn hơn hẳn, câu hỏi tên lịch sự hơn là 성함이 어떻게 되세요?
+  - type: example
+    target: 이름이 뭐예요? - 저는 란이에요.
+    target_lang: ko
+    translation:
+      vi: Bạn tên là gì? - Tôi là Lan.
+    note:
+      vi: 란 có patchim ㄴ nên dùng 이에요.
+  - type: example
+    target: 어느 나라 사람이에요? - 베트남 사람이에요.
+    target_lang: ko
+    translation:
+      vi: Bạn là người nước nào? - Tôi là người Việt Nam.
+    note:
+      vi: Câu trả lời bỏ 저는 vì đã rõ đang nói về mình.
+  - type: example
+    target: 민수 씨는 한국 사람이에요.
+    target_lang: ko
+    translation:
+      vi: Anh Minsu là người Hàn Quốc.
+    note:
+      vi: 씨 không có patchim nên đi với 는 - 민수 씨는.
+  - type: common_mistake
+    wrong: 저는 란 씨예요.
+    right: 저는 란이에요.
+    target_lang: ko
+    note:
+      vi: 씨 là cách tôn trọng khi gọi người khác; tự gắn 씨 cho mình nghe như đang tự khen mình. Khi giới thiệu, chỉ nói tên.
+  - type: common_mistake
+    wrong: 저는 사람 베트남이에요.
+    right: 저는 베트남 사람이에요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói “người Việt Nam”, nhưng tiếng Hàn đặt tên nước trước - 베트남 사람.
+  - type: common_mistake
+    wrong: 저는 베트남이에요.
+    right: 저는 베트남 사람이에요.
+    target_lang: ko
+    note:
+      vi: Thiếu 사람 thì câu thành “Tôi là nước Việt Nam”. Muốn nói quốc tịch phải có 사람.
+  - type: summary
+    points:
+      - vi: 이름이 뭐예요? - Tên bạn là gì? Trả lời - 저는 + tên + 이에요/예요.
+      - vi: 어느 나라 사람이에요? - Người nước nào? Trả lời - 베트남 사람이에요.
+      - vi: Tên nước + 사람 = người nước đó (đảo thứ tự so với tiếng Việt).
+      - vi: Tên + 씨 khi gọi người khác; không dùng cho mình, không dùng với thầy cô.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:name-mcq-vietnamese
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:saram
+    prompt:
+      stem: 베트남 사람 nghĩa là gì?
+      stem_lang: ko
+      options:
+        - { id: u4k, text: người Việt Nam, lang: vi }
+        - { id: d9s, text: nước Việt Nam, lang: vi }
+        - { id: x2h, text: người Hàn Quốc, lang: vi }
+        - { id: f7p, text: tiếng Việt, lang: vi }
+    answer:
+      correct_option_id: u4k
+    explanation:
+      vi: 베트남 là Việt Nam, 사람 là người - tên nước đứng trước 사람. Nước Việt Nam chỉ là 베트남; người Hàn Quốc là 한국 사람.
+    display_answer: người Việt Nam
+
+  - key: ko:exercise:name-listen-nationality
+    type: listen
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:eoneu-nara-saram
+    prompt:
+      audio_asset_id: null
+      fallback_text: 어느 나라 사람이에요?
+      options:
+        - { id: w3t, text: Bạn là người nước nào?, lang: vi }
+        - { id: n8c, text: Bạn tên là gì?, lang: vi }
+        - { id: j5y, text: Bạn làm nghề gì?, lang: vi }
+        - { id: r1o, text: Bạn có khỏe không?, lang: vi }
+    answer:
+      correct_option_id: w3t
+    explanation:
+      vi: 어느 là “nào”, 나라 là “đất nước”, 사람 là “người” - người nước nào? Hỏi tên là 이름이 뭐예요?
+    display_answer: Bạn là người nước nào?
+
+  - key: ko:exercise:name-mcq-ssi
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ssi
+    prompt:
+      stem: Câu nào dùng 씨 đúng?
+      stem_lang: vi
+      options:
+        - { id: g6m, text: 민수 씨는 회사원이에요., lang: ko }
+        - { id: z3b, text: 저는 란 씨예요., lang: ko }
+        - { id: q8e, text: 김 씨 선생님은 한국 사람이에요., lang: ko }
+        - { id: h2v, text: 씨 민수는 학생이에요., lang: ko }
+    answer:
+      correct_option_id: g6m
+    explanation:
+      vi: 씨 đứng sau tên người khác - 민수 씨. Không dùng 씨 cho chính mình, không ghép với 선생님 và không đặt trước tên.
+    display_answer: 민수 씨는 회사원이에요.
+
+  - key: ko:exercise:name-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ireumi-mwoyeyo
+    prompt:
+      template: "이름{{b1}} 뭐예요? - 제 이름{{b2}} 민수예요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Bạn tên là gì? - Tên tôi là Minsu."
+        - 이름 kết thúc bằng 름 có patchim ㅁ. Câu hỏi dùng 이/가, câu trả lời dùng 은/는.
+    answer:
+      blanks:
+        b1: [이]
+        b2: [은]
+    known_wrong:
+      - answer: 가
+        feedback_vi: 름 có patchim ㅁ nên dùng 이 - 이름이.
+        error_tag: particle_i_ga
+      - answer: 는
+        feedback_vi: 름 có patchim ㅁ nên dùng 은 - 이름은.
+        error_tag: particle_eun_neun
+    explanation:
+      vi: Câu hỏi cố định là 이름이 뭐예요? (đọc [이르미 뭐예요]). Khi trả lời, 제 이름은… (tên tôi thì…) dùng 은 vì 름 có patchim.
+    display_answer: 이름이 뭐예요? - 제 이름은 민수예요.
+
+  - key: ko:exercise:name-order-vietnamese
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:beteunam
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: “Tôi là người Việt Nam.”"
+      tokens:
+        - { id: v1, text: 사람 }
+        - { id: v2, text: 예요 }
+        - { id: v3, text: 는 }
+        - { id: v4, text: 나라 }
+        - { id: v5, text: 이에요 }
+        - { id: v6, text: 베트남 }
+        - { id: v7, text: 저 }
+    answer:
+      orders:
+        - [v7, v3, v6, v1, v5]
+    explanation:
+      vi: 저는 + 베트남 사람 + 이에요. Tên nước đứng trước 사람; 람 có patchim ㅁ nên dùng 이에요.
+    display_answer: 저는 베트남 사람이에요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:name-fill-korean
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:hanguk
+    prompt:
+      template: "{{b1}} 나라 사람이에요? - 저는 {{b2}} 사람이에요. (Tôi là người Hàn Quốc.)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [어느]
+        b2: [한국]
+    known_wrong:
+      - answer: 하국
+        feedback_vi: Hàn Quốc viết là 한국 - âm tiết đầu có patchim ㄴ.
+        error_tag: spelling
+      - answer: 한굿
+        feedback_vi: Hàn Quốc viết là 한국, patchim cuối là ㄱ.
+        error_tag: spelling
+      - answer: 어너
+        feedback_vi: “Nào” là 어느 - âm tiết thứ hai dùng ㅡ, không phải ㅓ.
+        error_tag: vowel_eu
+    explanation:
+      vi: 어느 nghĩa là “nào”, nên 어느 나라 사람 là “người nước nào”. Người Hàn Quốc là 한국 사람 (đọc [한국싸람]).
+    display_answer: 어느 나라 사람이에요? - 저는 한국 사람이에요.
+
+  - key: ko:exercise:name-write-vietnamese
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:saram
+    prompt:
+      source_text: Tôi là người Việt Nam.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 저는 베트남 사람이에요.
+        - 전 베트남 사람이에요.
+        - 베트남 사람이에요.
+        - 저는 베트남 사람입니다.
+        - 전 베트남 사람입니다.
+        - 베트남 사람입니다.
+        - 저는 베트남인이에요.
+        - 저는 베트남인입니다.
+    known_wrong:
+      - answer: 저는 사람 베트남이에요.
+        feedback_vi: Tên nước đứng trước 사람 - 베트남 사람.
+        error_tag: word_order
+      - answer: 저는 베트남 사람예요.
+        feedback_vi: 람 có patchim ㅁ nên dùng 이에요 - 사람이에요.
+        error_tag: copula_form
+      - answer: 저는 베트남이에요.
+        feedback_vi: Thiếu 사람 - câu này nghĩa là “Tôi là nước Việt Nam”.
+        error_tag: missing_saram
+      - answer: 저은 베트남 사람이에요.
+        feedback_vi: 저 không có patchim nên đi với 는 - 저는.
+        error_tag: particle_eun_neun
+    explanation:
+      vi: 저는 + 베트남 사람 + 이에요. Tên nước đứng trước 사람, và 사람 có patchim ㅁ nên dùng 이에요.
+    display_answer: 저는 베트남 사람이에요.
+
+  - key: ko:exercise:name-write-ask-name
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ireum
+    prompt:
+      source_text: Bạn tên là gì?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이름이 뭐예요?
+        - 이름이 무엇이에요?
+        - 이름이 무엇입니까?
+        - 이름이 어떻게 되세요?
+        - 성함이 어떻게 되세요?
+    known_wrong:
+      - answer: 이름이 뭐이에요?
+        feedback_vi: 뭐 không có patchim nên dùng 예요 - 뭐예요.
+        error_tag: copula_form
+      - answer: 이름가 뭐예요?
+        feedback_vi: 름 có patchim ㅁ nên dùng 이 - 이름이.
+        error_tag: particle_i_ga
+      - answer: 당신 이름이 뭐예요?
+        feedback_vi: Không cần 당신 - từ này nghe xa cách, thậm chí thiếu lịch sự. Chỉ cần 이름이 뭐예요?
+        error_tag: pronoun_dangsin
+    explanation:
+      vi: Câu hỏi tên quen thuộc là 이름이 뭐예요? - không cần “bạn” vì người Hàn thường bỏ chủ ngữ. Lịch sự hơn có 이름이 어떻게 되세요?, với người lớn dùng 성함이 어떻게 되세요?
+    display_answer: 이름이 뭐예요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:name-translate-minsu-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:hanguk
+    prompt:
+      source_text: 민수 씨는 한국 사람이에요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh Minsu là người Hàn Quốc.
+        - Minsu là người Hàn Quốc.
+        - Anh Minsu là người Hàn.
+        - Minsu là người Hàn.
+        - Bạn Minsu là người Hàn Quốc.
+        - Anh Min-su là người Hàn Quốc.
+        - Min-su là người Hàn Quốc.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: 민수 씨 là cách gọi lịch sự “anh Minsu”; 한국 사람 là “người Hàn Quốc”. 씨 không dịch từng chữ mà tương ứng “anh/chị/bạn” tuỳ ngữ cảnh.
+    display_answer: Anh Minsu là người Hàn Quốc.
+
+  - key: ko:exercise:name-write-lan
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ssi
+    prompt:
+      source_text: Chị Lan là người Việt Nam.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 란 씨는 베트남 사람이에요.
+        - 란 씨는 베트남 사람입니다.
+        - 란 씨는 베트남인이에요.
+        - 란 씨는 베트남인입니다.
+    known_wrong:
+      - answer: 란 씨은 베트남 사람이에요.
+        feedback_vi: Trợ từ gắn sau 씨 (không có patchim), nên dùng 는 - 란 씨는.
+        error_tag: particle_eun_neun
+      - answer: 란 씨는 베트남 사람예요.
+        feedback_vi: 람 có patchim ㅁ nên dùng 이에요 - 사람이에요.
+        error_tag: copula_form
+      - answer: 란 씨는 사람 베트남이에요.
+        feedback_vi: Tên nước đứng trước 사람 - 베트남 사람.
+        error_tag: word_order
+      - answer: 씨 란은 베트남 사람이에요.
+        feedback_vi: 씨 đứng sau tên - 란 씨, không đứng trước.
+        error_tag: ssi_position
+    explanation:
+      vi: “Chị Lan” là 란 씨; trợ từ xét âm tiết cuối là 씨 (không patchim) nên dùng 는. Sau đó là 베트남 사람 + 이에요.
+    display_answer: 란 씨는 베트남 사람이에요.

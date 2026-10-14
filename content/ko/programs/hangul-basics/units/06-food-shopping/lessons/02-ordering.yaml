@@ -1,0 +1,353 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:ordering-food
+order_index: 2
+level: topik1
+title:
+  vi: Gọi món, hỏi giá và thanh toán
+objectives:
+  - vi: Gọi món bằng N(을/를) 주세요, kèm số lượng (김밥 두 개 주세요, 물 한 병 주세요).
+  - vi: Hỏi giá bằng 얼마예요? và hiểu câu trả lời bằng 원.
+  - vi: Dùng các câu trong quán - 여기요, 메뉴 좀 주세요, 포장해 주세요, 카드로 계산할게요.
+estimated_minutes: 14
+skills: [speaking, listening, grammar]
+prerequisites: [ko:lesson:food-drinks]
+items:
+  - item: ko:item:juseyo
+  - item: ko:item:gimbap
+  - item: ko:item:eolmayeyo
+    role: reuse
+  - item: ko:item:yeogiyo
+  - item: ko:item:menyu
+  - item: ko:item:pojang
+  - item: ko:item:kadeu-gyesan
+  - item: ko:item:bibimbap
+    role: reuse
+  - item: ko:item:mul
+    role: reuse
+  - item: ko:item:maekju
+    role: reuse
+  - item: ko:item:tteokbokki
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự gọi món trong quán Hàn - gọi nhân viên, gọi món có số lượng, hỏi giá, xin mang về và trả tiền.
+  - type: explain
+    text:
+      vi: Tiếng Việt nói "Cho tôi + món", còn tiếng Hàn đặt món trước rồi mới đến 주세요 ở cuối câu - 물 주세요. Có thể thêm 을/를 sau món (비빔밥을 주세요), nhưng khi gọi món người Hàn thường bỏ đi.
+  - type: explain
+    text:
+      vi: Số lượng đi theo thứ tự món + số + đơn vị đếm + 주세요 - 김밥 두 개 주세요, 맥주 한 병 주세요. Thứ tự này ngược với tiếng Việt ("hai cuộn kimbap"), và số dùng số thuần Hàn (한, 두, 세), không dùng 일, 이, 삼.
+  - type: explain
+    text:
+      vi: Hỏi giá bằng 얼마예요? (bao nhiêu tiền). Giá trả lời bằng số Hán Hàn + 원 (won), ví dụ 오천 원 (5.000 won), 만 원 (10.000 won); 원 có patchim nên câu kết thúc bằng 이에요.
+  - type: deep_explain
+    text:
+      vi: 주세요 vốn là "hãy cho" ở dạng lịch sự, nên cũng dùng để nhờ - 포장해 주세요 (gói giúp tôi). 할게요 trong 카드로 계산할게요 báo cho người nghe điều bạn sắp làm, nghe mềm và tự nhiên hơn 계산해요. Trong quán, 여기요 (ở đây ạ) gọi nhân viên đến bàn mình; 저기요 (ở kia ạ) cũng dùng được, nhất là khi gọi từ xa.
+  - type: example
+    target: 여기요, 메뉴 좀 주세요.
+    target_lang: ko
+    translation:
+      vi: Anh ơi, cho tôi xem thực đơn.
+    note:
+      vi: 좀 (một chút) làm lời nhờ mềm hơn.
+  - type: example
+    target: 김밥 두 개하고 물 한 병 주세요.
+    target_lang: ko
+    translation:
+      vi: Cho tôi hai cuộn kimbap và một chai nước.
+    note:
+      vi: Mỗi món đi kèm số và đơn vị đếm ngay sau nó.
+  - type: example
+    target: 떡볶이 얼마예요? - 오천 원이에요.
+    target_lang: ko
+    translation:
+      vi: Tteokbokki bao nhiêu tiền? - 5.000 won.
+    note:
+      vi: Giá dùng số Hán Hàn - 오천 (năm nghìn).
+  - type: example
+    target: 포장해 주세요. 카드로 계산할게요.
+    target_lang: ko
+    translation:
+      vi: Gói mang về giúp tôi. Tôi trả bằng thẻ.
+  - type: common_mistake
+    wrong: 주세요 물.
+    right: 물 주세요.
+    target_lang: ko
+    note:
+      vi: Người Việt hay dịch thẳng "cho tôi nước". Tiếng Hàn luôn đặt 주세요 ở cuối câu, sau món bạn muốn.
+  - type: common_mistake
+    wrong: 두 개 김밥 주세요.
+    right: 김밥 두 개 주세요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói "hai cuộn kimbap" (số trước), tiếng Hàn nói 김밥 두 개 (món trước, số và đơn vị sau).
+  - type: common_mistake
+    wrong: 카드으로 계산할게요.
+    right: 카드로 계산할게요.
+    target_lang: ko
+    note:
+      vi: 카드 không có patchim nên dùng 로. Chỉ dùng 으로 sau patchim, ví dụ 현금으로 (bằng tiền mặt).
+  - type: summary
+    points:
+      - vi: Món + (을/를) + 주세요 - 주세요 luôn ở cuối câu.
+      - vi: Món + số thuần Hàn + đơn vị đếm + 주세요 - 김밥 두 개 주세요, 물 한 병 주세요.
+      - vi: 얼마예요? - bao nhiêu tiền; trả lời bằng số Hán Hàn + 원이에요 (만 원이에요).
+      - vi: 여기요/저기요 gọi nhân viên · 메뉴 좀 주세요 · 포장해 주세요 · 카드로 계산할게요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:ordering-mcq-water-bottle
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:juseyo
+    prompt:
+      stem: Câu nào có nghĩa "Cho tôi một chai nước"?
+      stem_lang: vi
+      options:
+        - { id: d4k, text: 물 한 병 주세요., lang: ko }
+        - { id: u8s, text: 주세요 물 한 병., lang: ko }
+        - { id: b2g, text: 한 병 물 주세요., lang: ko }
+        - { id: y6n, text: 물 한 잔 주세요., lang: ko }
+    answer:
+      correct_option_id: d4k
+    explanation:
+      vi: Thứ tự đúng là món + số + đơn vị đếm + 주세요. 주세요 không đứng đầu câu, số không đứng trước món; 잔 là "cốc", còn chai là 병.
+    display_answer: 물 한 병 주세요.
+
+  - key: ko:exercise:ordering-listen-price
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:eolmayeyo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 김밥 얼마예요?
+      options:
+        - { id: f3w, text: Kimbap bao nhiêu tiền?, lang: vi }
+        - { id: l7a, text: Cho tôi kimbap., lang: vi }
+        - { id: p1e, text: Kimbap có ngon không?, lang: vi }
+        - { id: i9z, text: Gói kimbap mang về giúp tôi., lang: vi }
+    answer:
+      correct_option_id: f3w
+    explanation:
+      vi: 얼마예요? là câu hỏi giá - "bao nhiêu tiền?". "Cho tôi" là 주세요, "ngon không" là 맛있어요?, "mang về" là 포장해 주세요.
+    display_answer: Kimbap bao nhiêu tiền?
+
+  - key: ko:exercise:ordering-mcq-call-staff
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:yeogiyo
+    prompt:
+      stem: Bạn ngồi trong quán và muốn gọi nhân viên đến bàn. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - { id: o5c, text: 여기요!, lang: ko }
+        - { id: g2h, text: 얼마예요?, lang: ko }
+        - { id: x8q, text: 맛있어요!, lang: ko }
+        - { id: j4r, text: 포장해 주세요., lang: ko }
+    answer:
+      correct_option_id: o5c
+    explanation:
+      vi: 여기요 (nghĩa đen "ở đây ạ") là cách lịch sự để gọi nhân viên, giống "Anh/chị ơi!". Các câu còn lại dùng để hỏi giá, khen món và xin mang về.
+    display_answer: 여기요!
+
+  - key: ko:exercise:ordering-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:juseyo
+    prompt:
+      template: "김밥 두 개 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Cho tôi hai cuộn kimbap."
+        - "Gợi ý: từ lịch sự nghĩa là \"hãy cho\", đứng cuối câu."
+    answer:
+      blanks:
+        b1: [주세요]
+    known_wrong:
+      - answer: 주새요
+        feedback_vi: Viết là 주세요 với ㅔ. ㅐ và ㅔ nghe gần như nhau, nhưng chính tả khác.
+        error_tag: vowel_ae_e
+      - answer: 줘
+        feedback_vi: 줘 là thân mật (nói với bạn bè). Với nhân viên quán, dùng 주세요.
+        error_tag: politeness
+    explanation:
+      vi: Gọi món luôn kết thúc bằng 주세요 (cho tôi), sau món và số lượng.
+    display_answer: 김밥 두 개 주세요.
+
+  - key: ko:exercise:ordering-wb-gimbap
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gimbap
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Cho tôi hai cuộn kimbap.\""
+      tokens:
+        - { id: g4, text: 주세요 }
+        - { id: g2, text: 두 }
+        - { id: g1, text: 김밥 }
+        - { id: g5, text: 이 }
+        - { id: g3, text: 개 }
+    answer:
+      orders:
+        - [g1, g2, g3, g4]
+    explanation:
+      vi: Món đứng trước (김밥), rồi số thuần Hàn 두 (hai) và đơn vị 개, cuối cùng là 주세요. 이 là số Hán Hàn, không dùng để đếm đồ vật.
+    display_answer: 김밥 두 개 주세요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:ordering-translate-gimbap
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:juseyo
+    prompt:
+      source_text: Cho tôi hai cuộn kimbap.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 김밥 두 개 주세요.
+        - 김밥을 두 개 주세요.
+        - 김밥 두 줄 주세요.
+        - 김밥을 두 줄 주세요.
+        - 김밥 두 개만 주세요.
+    known_wrong:
+      - answer: 주세요 김밥 두 개.
+        feedback_vi: 주세요 luôn đứng cuối câu - 김밥 두 개 주세요.
+        error_tag: word_order
+      - answer: 두 개 김밥 주세요.
+        feedback_vi: Món đứng trước, số và đơn vị đếm đứng sau - 김밥 두 개 주세요.
+        error_tag: counter_order
+      - answer: 김밥 이 개 주세요.
+        feedback_vi: Đếm đồ vật dùng số thuần Hàn - 두 개, không dùng 이 개.
+        error_tag: native_number
+      - answer: 김밥 둘 개 주세요.
+        feedback_vi: Trước đơn vị đếm, 둘 rút gọn thành 두 - 두 개.
+        error_tag: native_number
+    explanation:
+      vi: Thứ tự là món + số + đơn vị + 주세요. 두 là "hai" dạng đứng trước đơn vị đếm; với kimbap cũng có thể dùng đơn vị 줄 (cuộn).
+    display_answer: 김밥 두 개 주세요.
+
+  - key: ko:exercise:ordering-fill-price
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:eolmayeyo
+    prompt:
+      template: "A: 비빔밥 {{b1}}? B: 만 원{{b2}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [얼마예요]
+        b2: [이에요]
+    known_wrong:
+      - answer: 얼마이에요
+        feedback_vi: 얼마 kết thúc bằng nguyên âm nên dùng 예요 - 얼마예요.
+        error_tag: copula_ieyo_yeyo
+      - answer: 예요
+        feedback_vi: 원 có patchim ㄴ nên dùng 이에요 - 만 원이에요.
+        error_tag: copula_ieyo_yeyo
+    explanation:
+      vi: Hỏi giá là 얼마예요 (얼마 không có patchim → 예요). Trả lời 만 원이에요, vì 원 có patchim → 이에요.
+    display_answer: "A: 비빔밥 얼마예요? B: 만 원이에요."
+
+  # ---------------- application ----------------
+  - key: ko:exercise:ordering-mcq-takeaway
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:pojang
+    prompt:
+      stem: Bạn mua tteokbokki nhưng muốn mang về nhà ăn. Bạn nói gì với nhân viên?
+      stem_lang: vi
+      options:
+        - { id: s6m, text: 떡볶이 포장해 주세요., lang: ko }
+        - { id: w3t, text: 떡볶이 여기서 먹을게요., lang: ko }
+        - { id: k9b, text: 떡볶이 맛없어요., lang: ko }
+        - { id: e1v, text: 주세요 떡볶이 포장., lang: ko }
+    answer:
+      correct_option_id: s6m
+    explanation:
+      vi: 포장해 주세요 nghĩa là "gói mang về giúp tôi". 여기서 먹을게요 là ăn tại quán; 주세요 không bao giờ đứng đầu câu.
+    display_answer: 떡볶이 포장해 주세요.
+
+  - key: ko:exercise:ordering-translate-card
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:kadeu-gyesan
+    prompt:
+      source_text: Tôi trả bằng thẻ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 카드로 계산할게요.
+        - 카드로 계산해요.
+        - 카드로 할게요.
+        - 카드로 결제할게요.
+        - 카드로 계산해 주세요.
+    known_wrong:
+      - answer: 카드으로 계산할게요.
+        feedback_vi: 카드 không có patchim nên dùng 로, không dùng 으로.
+        error_tag: particle_ro_euro
+      - answer: 카드를 계산할게요.
+        feedback_vi: '"Bằng thẻ" cần 로 (phương tiện) - 카드로. 카드를 계산 nghĩa là "tính tiền cái thẻ".'
+        error_tag: particle_ro_euro
+      - answer: kadeuro gyesanhalgeyo
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: 로/으로 nghĩa là "bằng"; 카드 không có patchim nên là 카드로. 계산할게요 báo điều bạn sắp làm - "tôi sẽ thanh toán".
+    display_answer: 카드로 계산할게요.
+
+  - key: ko:exercise:ordering-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:yeogiyo
+    prompt:
+      source_text: 여기요, 맥주 한 병하고 물 주세요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh ơi, cho tôi một chai bia và nước.
+        - Chị ơi, cho tôi một chai bia và nước.
+        - Em ơi, cho tôi một chai bia và nước.
+        - Anh ơi, cho tôi một chai bia với nước.
+        - Chị ơi, cho tôi một chai bia với nước.
+        - Em ơi, cho anh một chai bia với nước.
+        - Cho tôi một chai bia và nước.
+        - Cho tôi một chai bia và một ít nước.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Anh ơi, cho tôi một cốc bia và nước.
+        feedback_vi: 병 là "chai"; "cốc, ly" là 잔.
+        error_tag: counter_meaning
+    explanation:
+      vi: 여기요 là câu gọi nhân viên ("anh/chị ơi"), 맥주 한 병 là một chai bia, 하고 là "và", 주세요 là "cho tôi".
+    display_answer: Anh ơi, cho tôi một chai bia và nước.

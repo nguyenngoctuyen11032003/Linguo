@@ -1,0 +1,368 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:food-shopping-review
+order_index: 5
+level: topik1
+title:
+  vi: Ôn tập - Ở quán ăn và cửa hàng
+objectives:
+  - vi: Nối các mẫu câu đã học thành một hội thoại trọn vẹn ở quán ăn - gọi nhân viên, gọi món, hỏi giá, trả tiền.
+  - vi: Dùng đúng trợ từ trong 을/를 좋아해요, 이/가 좋아요, 하고 và 와/과.
+  - vi: Phân biệt -고 싶어요 (mình) và -고 싶어해요 (người khác) khi đi ăn cùng bạn.
+estimated_minutes: 15
+skills: [speaking, listening, grammar, writing]
+prerequisites: [ko:lesson:shopping-clothes]
+items:
+  - item: ko:item:yeogiyo
+    role: reuse
+  - item: ko:item:menyu
+    role: reuse
+  - item: ko:item:juseyo
+    role: reuse
+  - item: ko:item:gimbap
+    role: reuse
+  - item: ko:item:maekju
+    role: reuse
+  - item: ko:item:bibimbap
+    role: reuse
+  - item: ko:item:eolmayeyo
+    role: reuse
+  - item: ko:item:kadeu-gyesan
+    role: reuse
+  - item: ko:item:joahaeyo
+    role: reuse
+  - item: ko:item:go-sipeoyo
+    role: reuse
+  - item: ko:item:hago-wa-gwa
+    role: reuse
+  - item: ko:item:maewoyo
+    role: reuse
+  - item: ko:item:bissayo
+    role: reuse
+  - item: ko:item:masisseoyo
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài ôn này, bạn tự tin đi trọn một bữa ăn ở quán Hàn - từ lúc gọi nhân viên đến lúc trả tiền - và nói được mình thích gì, muốn ăn gì.
+  - type: explain
+    text:
+      vi: 'Một bữa ăn thường đi theo thứ tự - gọi nhân viên (여기요), xem thực đơn (메뉴 좀 주세요), gọi món (김밥 두 개하고 맥주 한 병 주세요), hỏi giá (얼마예요?) và trả tiền (카드로 계산할게요). Mỗi câu nhờ đều kết thúc bằng 주세요.'
+  - type: explain
+    text:
+      vi: Ba cặp trợ từ cần nhớ - 을/를 + 좋아해요 và 이/가 + 좋아요; 와 sau nguyên âm, 과 sau patchim (hoặc dùng 하고 cho mọi từ); 로 sau nguyên âm, 으로 sau patchim (카드로, 현금으로).
+  - type: deep_explain
+    text:
+      vi: Khi đi ăn với bạn, bạn sẽ nói cả mong muốn của mình lẫn của người khác. Với mình - 저는 비빔밥을 먹고 싶어요; với người thứ ba - 친구는 불고기를 먹고 싶어해요. Người nghe Hàn nhận ra ngay khi bạn dùng 싶어요 cho người khác, vì nghe như bạn đọc được suy nghĩ của họ.
+  - type: example
+    target: 여기요, 메뉴 좀 주세요.
+    target_lang: ko
+    translation:
+      vi: Anh ơi, cho tôi xem thực đơn.
+  - type: example
+    target: 저는 비빔밥을 먹고 싶어요. 친구는 불고기를 먹고 싶어해요.
+    target_lang: ko
+    translation:
+      vi: Tôi muốn ăn cơm trộn. Bạn tôi muốn ăn bulgogi.
+    note:
+      vi: 싶어요 cho mình, 싶어해요 cho bạn.
+  - type: example
+    target: 비빔밥 하나하고 불고기 하나 주세요. 그리고 물도 주세요.
+    target_lang: ko
+    translation:
+      vi: Cho tôi một cơm trộn và một bulgogi. Và cho tôi cả nước nữa.
+    note:
+      vi: Gọi món có thể dùng 하나 (một phần); 도 nghĩa là "cũng, cả".
+  - type: example
+    target: 전부 얼마예요? - 이만 오천 원이에요. - 카드로 계산할게요.
+    target_lang: ko
+    translation:
+      vi: Tất cả bao nhiêu tiền? - 25.000 won. - Tôi trả bằng thẻ.
+  - type: common_mistake
+    wrong: 주세요 메뉴.
+    right: 메뉴 좀 주세요.
+    target_lang: ko
+    note:
+      vi: Dù câu dài hay ngắn, 주세요 luôn ở cuối. Đừng dịch thẳng thứ tự "cho tôi + thực đơn".
+  - type: common_mistake
+    wrong: 김밥와 라면
+    right: 김밥과 라면 / 김밥하고 라면
+    target_lang: ko
+    note:
+      vi: 김밥 có patchim ㅂ nên dùng 과. Khi nói nhanh, dùng 하고 sẽ an toàn vì không phụ thuộc patchim.
+  - type: common_mistake
+    wrong: 친구는 맥주를 마시고 싶어요.
+    right: 친구는 맥주를 마시고 싶어해요.
+    target_lang: ko
+    note:
+      vi: Mong muốn của người khác dùng -고 싶어해요. -고 싶어요 chỉ dành cho bạn hoặc khi hỏi người nghe.
+  - type: summary
+    points:
+      - vi: 여기요 → 메뉴 좀 주세요 → món + số + đơn vị + 주세요 → 얼마예요? → 카드로 계산할게요.
+      - vi: 을/를 좋아해요 · 이/가 좋아요; 와 (nguyên âm) / 과 (patchim) / 하고 (mọi từ).
+      - vi: -고 싶어요 cho mình, -고 싶어해요 cho người khác.
+      - vi: 맛있어요 · 맛없어요 · 매워요 · 달아요 · 짜요 · 비싸요 · 싸요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:food-shopping-review-listen-order
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:juseyo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 여기요, 김밥 두 개하고 맥주 한 병 주세요.
+      options:
+        - { id: n4c, text: "Anh ơi, cho tôi hai cuộn kimbap và một chai bia.", lang: vi }
+        - { id: a9r, text: "Anh ơi, cho tôi một cuộn kimbap và hai chai bia.", lang: vi }
+        - { id: e3m, text: "Anh ơi, kimbap và bia bao nhiêu tiền?", lang: vi }
+        - { id: z7u, text: "Anh ơi, gói hai cuộn kimbap mang về giúp tôi.", lang: vi }
+    answer:
+      correct_option_id: n4c
+    explanation:
+      vi: Số và đơn vị đứng ngay sau món - 김밥 두 개 (hai cuộn kimbap), 맥주 한 병 (một chai bia). Câu kết thúc bằng 주세요 nên là gọi món, không phải hỏi giá hay xin mang về.
+    display_answer: Anh ơi, cho tôi hai cuộn kimbap và một chai bia.
+
+  - key: ko:exercise:food-shopping-review-mcq-gwa
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:hago-wa-gwa
+    prompt:
+      stem: "Chọn từ đúng: 김밥___ 라면 주세요. (Cho tôi kimbap và mì.)"
+      stem_lang: vi
+      options:
+        - { id: f6s, text: 과, lang: ko }
+        - { id: w2b, text: 와, lang: ko }
+        - { id: q8t, text: 을, lang: ko }
+        - { id: d5x, text: 이, lang: ko }
+    answer:
+      correct_option_id: f6s
+    explanation:
+      vi: 김밥 có patchim ㅂ nên dùng 과. 와 chỉ đứng sau nguyên âm; 을 và 이 là trợ từ khác, không có nghĩa "và".
+    display_answer: 과
+
+  - key: ko:exercise:food-shopping-review-mcq-price
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:eolmayeyo
+    prompt:
+      stem: "Khách hỏi 전부 얼마예요? Nhân viên trả lời \"15.000 won\". Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: l1y, text: 만 오천 원이에요., lang: ko }
+        - { id: p4g, text: 만 오천 원예요., lang: ko }
+        - { id: h7k, text: 열다섯 원이에요., lang: ko }
+        - { id: c9j, text: 만 오천 개예요., lang: ko }
+    answer:
+      correct_option_id: l1y
+    explanation:
+      vi: Giá dùng số Hán Hàn (만 오천 = 15.000) + 원. 원 có patchim nên dùng 이에요; 열다섯 là số thuần Hàn (15), và 개 là đơn vị đếm đồ vật, không phải tiền.
+    display_answer: 만 오천 원이에요.
+
+  - key: ko:exercise:food-shopping-review-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:joahaeyo
+    prompt:
+      template: "저는 김치{{b1}} 좋아해요. 그리고 떡볶이{{b2}} 좋아요."
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi thích kim chi. Và tôi cũng thích tteokbokki."
+        - "Gợi ý: 좋아해요 đi với 을/를, 좋아요 đi với 이/가; cả hai từ đều không có patchim."
+    answer:
+      blanks:
+        b1: [를]
+        b2: [가, 도]
+    known_wrong:
+      - answer: 을
+        feedback_vi: 김치 không có patchim nên dùng 를, không dùng 을.
+        error_tag: particle_eul_reul
+      - answer: 이
+        feedback_vi: 떡볶이 không có patchim nên dùng 가, không dùng 이.
+        error_tag: particle_i_ga
+    explanation:
+      vi: 좋아해요 là động từ → 김치를. 좋아요 là tính từ → 떡볶이가 (hoặc 떡볶이도 - "cũng"). Cả 김치 và 떡볶이 đều kết thúc bằng nguyên âm.
+    display_answer: 저는 김치를 좋아해요. 그리고 떡볶이가 좋아요.
+
+  - key: ko:exercise:food-shopping-review-wb-menu
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:yeogiyo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Anh ơi, cho tôi xem thực đơn.\""
+      tokens:
+        - { id: m3, text: 좀 }
+        - { id: m5, text: 얼마예요 }
+        - { id: m4, text: 주세요 }
+        - { id: m1, text: 여기요 }
+        - { id: m2, text: 메뉴 }
+    answer:
+      orders:
+        - [m1, m2, m3, m4]
+    explanation:
+      vi: 여기요 (gọi nhân viên) đứng đầu, rồi món cần (메뉴), 좀 làm câu mềm hơn, và 주세요 luôn ở cuối. 얼마예요 là hỏi giá, không dùng ở đây.
+    display_answer: 여기요, 메뉴 좀 주세요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:food-shopping-review-translate-order
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:juseyo
+    prompt:
+      source_text: Cho tôi một chai bia và hai cuộn kimbap.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 맥주 한 병하고 김밥 두 개 주세요.
+        - 맥주 한 병과 김밥 두 개 주세요.
+        - 맥주 한 병이랑 김밥 두 개 주세요.
+        - 맥주 한 병하고 김밥 두 줄 주세요.
+        - 맥주 한 병과 김밥 두 줄 주세요.
+        - 맥주 한 병하고 김밥 두 개를 주세요.
+    known_wrong:
+      - answer: 맥주 한 병와 김밥 두 개 주세요.
+        feedback_vi: 병 có patchim ㅇ nên dùng 과 (hoặc 하고) - 한 병과.
+        error_tag: particle_wa_gwa
+      - answer: 한 병 맥주하고 두 개 김밥 주세요.
+        feedback_vi: Món đứng trước, số và đơn vị đứng sau - 맥주 한 병, 김밥 두 개.
+        error_tag: counter_order
+      - answer: 주세요 맥주 한 병하고 김밥 두 개.
+        feedback_vi: 주세요 luôn đứng cuối câu.
+        error_tag: word_order
+      - answer: 맥주 일 병하고 김밥 이 개 주세요.
+        feedback_vi: Đếm đồ vật dùng số thuần Hàn - 한 병, 두 개.
+        error_tag: native_number
+    explanation:
+      vi: Mỗi món theo mẫu món + số thuần Hàn + đơn vị (맥주 한 병, 김밥 두 개), nối bằng 하고 hoặc 과 (병 có patchim), rồi kết thúc bằng 주세요.
+    display_answer: 맥주 한 병하고 김밥 두 개 주세요.
+
+  - key: ko:exercise:food-shopping-review-fill-want
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:go-sipeoyo
+    prompt:
+      template: "A: 뭐 먹고 {{b1}}? B: 저는 불고기를 먹고 싶어요. 그런데 동생은 라면을 먹고 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [싶어요]
+        b2: [싶어해요]
+    known_wrong:
+      - answer: 싶다
+        feedback_vi: Trong hội thoại, dùng đuôi 해요체 - 싶어요 / 싶어해요, không dùng dạng từ điển 싶다.
+        error_tag: dictionary_form
+      - answer: 시퍼요
+        feedback_vi: '[시퍼요] là cách đọc; viết đúng là 싶어요.'
+        error_tag: spelling_pronunciation
+    explanation:
+      vi: Hỏi người nghe muốn gì - 먹고 싶어요? Nói về em (người thứ ba) - 먹고 싶어해요.
+    display_answer: "A: 뭐 먹고 싶어요? B: 저는 불고기를 먹고 싶어요. 그런데 동생은 라면을 먹고 싶어해요."
+
+  - key: ko:exercise:food-shopping-review-translate-spicy
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:maewoyo
+    prompt:
+      source_text: Món này cay quá.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이거 너무 매워요.
+        - 이건 너무 매워요.
+        - 이 음식은 너무 매워요.
+        - 이 음식 너무 매워요.
+        - 이 음식이 너무 매워요.
+        - 이것은 너무 매워요.
+    known_wrong:
+      - answer: 이거 너무 맵어요.
+        feedback_vi: 맵다 đổi ㅂ thành 우 khi thêm 어요 - 매워요, không phải 맵어요.
+        error_tag: irregular_b
+      - answer: 이거 너무 짜요.
+        feedback_vi: 짜요 là "mặn"; "cay" là 매워요.
+        error_tag: taste_word
+      - answer: 너무 매워요 이거.
+        feedback_vi: Tính từ đứng cuối câu - 이거 너무 매워요.
+        error_tag: word_order
+    explanation:
+      vi: 이거 (cái này) + 너무 (quá) + 매워요 (cay). Gốc 맵다 là bất quy tắc ㅂ - ㅂ biến thành 우, nên thành 매워요.
+    display_answer: 이거 너무 매워요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:food-shopping-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:bissayo
+    prompt:
+      source_text: 비빔밥은 맛있어요. 그런데 좀 비싸요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cơm trộn ngon. Nhưng hơi đắt.
+        - Cơm trộn ngon, nhưng hơi đắt.
+        - Cơm trộn thì ngon. Nhưng hơi đắt.
+        - Cơm trộn thì ngon, nhưng hơi đắt.
+        - Bibimbap ngon. Nhưng hơi đắt.
+        - Bibimbap ngon, nhưng hơi đắt.
+        - Bibimbap thì ngon, nhưng hơi đắt.
+        - Cơm trộn ngon nhưng hơi đắt.
+        - Cơm trộn ngon. Nhưng mà hơi đắt.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cơm trộn ngon. Nhưng hơi rẻ.
+        feedback_vi: 비싸요 là "đắt"; "rẻ" là 싸요.
+        error_tag: antonym
+      - answer: Cơm trộn không ngon. Nhưng hơi đắt.
+        feedback_vi: 맛있어요 là "ngon"; "không ngon" là 맛없어요.
+        error_tag: antonym
+    explanation:
+      vi: 맛있어요 = ngon, 그런데 = nhưng, 좀 = hơi, 비싸요 = đắt. 은 nhấn chủ đề nên có thể dịch là "thì".
+    display_answer: Cơm trộn ngon. Nhưng hơi đắt.
+
+  - key: ko:exercise:food-shopping-review-mcq-pay
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:kadeu-gyesan
+    prompt:
+      stem: Ăn xong, bạn ra quầy và muốn trả tiền bằng thẻ. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: v6e, text: 카드로 계산할게요., lang: ko }
+        - { id: i2w, text: 카드으로 계산할게요., lang: ko }
+        - { id: o8h, text: 카드를 주세요., lang: ko }
+        - { id: k5a, text: 현금으로 계산할게요., lang: ko }
+    answer:
+      correct_option_id: v6e
+    explanation:
+      vi: 카드 không có patchim nên dùng 로 - 카드로 (bằng thẻ). 카드를 주세요 là "đưa thẻ cho tôi"; 현금으로 là trả bằng tiền mặt.
+    display_answer: 카드로 계산할게요.

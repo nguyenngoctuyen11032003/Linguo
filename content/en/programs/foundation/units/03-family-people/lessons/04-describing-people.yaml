@@ -1,0 +1,369 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:describing-people
+order_index: 4
+level: a1
+title:
+  vi: Người ấy thế nào?
+objectives:
+  - vi: Miêu tả ngoại hình bằng tall, short, young, beautiful, handsome.
+  - vi: Miêu tả tính cách bằng kind, friendly, funny, shy.
+  - vi: Đặt tính từ đúng chỗ - trước danh từ (a kind teacher) hoặc sau be (She is kind).
+estimated_minutes: 12
+skills: [vocabulary, grammar, writing]
+prerequisites: [en:lesson:have-got]
+items:
+  - item: en:item:adjective-before-noun
+  - item: en:item:tall
+  - item: en:item:short
+  - item: en:item:young
+    role: reuse
+  - item: en:item:kind
+  - item: en:item:friendly
+  - item: en:item:funny
+  - item: en:item:shy
+  - item: en:item:beautiful
+  - item: en:item:handsome
+  - item: en:item:this-that-these-those
+    role: reuse
+  - item: en:item:teacher
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được người thân của mình trông thế nào và tính cách ra sao - "Bố tôi cao và vui tính", "Cô ấy là một giáo viên tốt bụng".
+  - type: explain
+    text:
+      vi: Tính từ đứng sau be giống tiếng Việt, nhưng không được bỏ be - My father is tall, không nói "My father tall". Muốn nhấn mạnh, bạn thêm very trước tính từ - She is very kind.
+  - type: explain
+    text:
+      vi: Khi tính từ đi cùng danh từ, tiếng Anh đặt tính từ lên trước - a kind teacher (một giáo viên tốt bụng), a young man. Tiếng Việt thì ngược lại, nên người Việt hay nói nhầm "a teacher kind".
+  - type: explain
+    text:
+      vi: Tính từ tiếng Anh không bao giờ thêm -s, kể cả khi nói về nhiều người - My brothers are tall, không nói "talls". Mạo từ a/an chọn theo âm đầu của tính từ - an old man nhưng a young man.
+  - type: deep_explain
+    text:
+      vi: "Tall và short dùng cho chiều cao người; với tóc thì dùng long và short (short hair). Beautiful thường dùng cho phụ nữ, handsome cho đàn ông; pretty (xinh) cũng hay dùng cho con gái. Để hỏi tính cách, người ta nói What's he like? (Anh ấy là người thế nào?) - câu này không hỏi về sở thích."
+  - type: example
+    target: My father is tall and very funny.
+    target_lang: en
+    translation:
+      vi: Bố tôi cao và rất vui tính.
+    note:
+      vi: Có is trước tall; very đứng trước funny để nhấn mạnh.
+  - type: example
+    target: She is a kind teacher.
+    target_lang: en
+    translation:
+      vi: Cô ấy là một giáo viên tốt bụng.
+    note:
+      vi: Kind đứng trước teacher, ngược với "giáo viên tốt bụng".
+  - type: example
+    target: Those are my cousins. They are young and friendly.
+    target_lang: en
+    translation:
+      vi: Kia là các anh chị em họ của tôi. Họ còn trẻ và rất thân thiện.
+    note:
+      vi: Nhiều người ở xa dùng Those are. Young và friendly không thêm -s.
+  - type: example
+    target: My younger brother is short and shy.
+    target_lang: en
+    translation:
+      vi: Em trai tôi thấp và nhút nhát.
+  - type: common_mistake
+    wrong: She is a teacher kind.
+    right: She is a kind teacher.
+    target_lang: en
+    note:
+      vi: Tiếng Việt nói "giáo viên tốt bụng", nhưng tiếng Anh đặt tính từ trước danh từ - a kind teacher.
+  - type: common_mistake
+    wrong: My mother beautiful.
+    right: My mother is beautiful.
+    target_lang: en
+    note:
+      vi: Tiếng Việt nói "Mẹ tôi đẹp" không cần "là", nhưng tiếng Anh luôn cần be trước tính từ.
+  - type: common_mistake
+    wrong: My brothers are talls.
+    right: My brothers are tall.
+    target_lang: en
+    note:
+      vi: Chỉ danh từ mới thêm -s ở số nhiều; tính từ luôn giữ nguyên.
+  - type: summary
+    points:
+      - vi: "Ngoại hình: tall, short, young, beautiful (nữ), handsome (nam)."
+      - vi: "Tính cách: kind, friendly, funny, shy."
+      - vi: Be + tính từ - She is kind (không bỏ be); very đứng trước tính từ.
+      - vi: Tính từ + danh từ - a kind teacher, không nói a teacher kind.
+      - vi: Tính từ không thêm -s - They are tall.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:describing-mcq-kind
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:kind
+    prompt:
+      stem: Kind nghĩa là gì khi nói về một người?
+      stem_lang: vi
+      options:
+        - { id: b6h, text: tốt bụng, lang: vi }
+        - { id: j2z, text: cao, lang: vi }
+        - { id: n8e, text: nhút nhát, lang: vi }
+        - { id: s4m, text: vui tính, lang: vi }
+    answer:
+      correct_option_id: b6h
+    explanation:
+      vi: Kind là tốt bụng, hiền. Cao là tall, nhút nhát là shy, vui tính là funny.
+    display_answer: tốt bụng
+
+  - key: en:exercise:describing-mcq-order
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:adjective-before-noun
+    prompt:
+      stem: Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: w7p, text: She is a teacher kind., lang: en }
+        - { id: g3a, text: She is a kind teacher., lang: en }
+        - { id: r5o, text: She is kind teacher., lang: en }
+        - { id: e9u, text: She kind teacher., lang: en }
+    answer:
+      correct_option_id: g3a
+    explanation:
+      vi: Tính từ kind đứng trước danh từ teacher, câu vẫn cần is và a. Đặt kind sau teacher là theo thứ tự tiếng Việt, không đúng trong tiếng Anh.
+    display_answer: She is a kind teacher.
+
+  - key: en:exercise:describing-listen-tall-funny
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:funny
+    prompt:
+      audio_asset_id: null
+      fallback_text: My brother is tall and funny.
+      options:
+        - { id: y1c, text: Anh trai tôi cao và vui tính., lang: vi }
+        - { id: m6x, text: Anh trai tôi thấp và vui tính., lang: vi }
+        - { id: f2q, text: Anh trai tôi cao và nhút nhát., lang: vi }
+        - { id: o8w, text: Chị gái tôi cao và vui tính., lang: vi }
+    answer:
+      correct_option_id: y1c
+    explanation:
+      vi: Tall là cao (thấp là short), funny là vui tính (nhút nhát là shy). Brother là anh/em trai, không phải chị gái.
+    display_answer: Anh trai tôi cao và vui tính.
+
+  - key: en:exercise:describing-fill-friendly-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:friendly
+    prompt:
+      template: "Her parents are very {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa của câu: Bố mẹ cô ấy rất thân thiện."
+        - "Gợi ý: tính từ bắt đầu bằng fr…, kết thúc bằng -ly."
+    answer:
+      blanks:
+        b1: [friendly]
+    known_wrong:
+      - answer: friend
+        feedback_vi: Friend là danh từ (người bạn). "Thân thiện" là tính từ friendly.
+        error_tag: word_form
+      - answer: friendlys
+        feedback_vi: Tính từ không thêm -s, kể cả khi nói về nhiều người - friendly.
+        error_tag: adjective_plural
+    explanation:
+      vi: Sau are và very cần một tính từ. Friendly (thân thiện) là tính từ, dù có đuôi -ly; tính từ giữ nguyên dù parents là số nhiều.
+    display_answer: Her parents are very friendly.
+
+  - key: en:exercise:describing-order-young-teacher
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:young
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Cô ấy là một giáo viên trẻ.\""
+      tokens:
+        - { id: y-teacher, text: teacher }
+        - { id: y-a, text: a }
+        - { id: y-young, text: young }
+        - { id: y-is, text: is }
+        - { id: y-an, text: an }
+        - { id: y-she, text: She }
+    answer:
+      orders:
+        - [y-she, y-is, y-a, y-young, y-teacher]
+    explanation:
+      vi: Young đứng trước teacher. Young bắt đầu bằng âm phụ âm /j/ nên dùng a, không dùng an.
+    display_answer: She is a young teacher.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:describing-fill-opposites
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:tall
+    prompt:
+      template: "My father is {{b1}}, but my mother is short. My grandmother is old, but my cousin is {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [tall]
+        b2: [young]
+    known_wrong:
+      - answer: high
+        feedback_vi: Người cao dùng tall. High dùng cho núi, tường, giá cả.
+        error_tag: word_choice
+      - answer: long
+        feedback_vi: Long (dài) dùng cho tóc, đồ vật. Người cao dùng tall.
+        error_tag: word_choice
+      - answer: new
+        feedback_vi: New là "mới" (đồ vật). Trái nghĩa của old khi nói về người là young.
+        error_tag: word_choice
+    explanation:
+      vi: But (nhưng) nối hai ý trái ngược. Trái nghĩa với short (thấp) là tall; trái nghĩa với old (già) khi nói về người là young.
+    display_answer: My father is tall, but my mother is short. My grandmother is old, but my cousin is young.
+
+  - key: en:exercise:describing-translate-kind-man
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:adjective-before-noun
+    prompt:
+      source_text: Anh ấy là một người đàn ông tốt bụng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - He is a kind man.
+        - He's a kind man.
+        - He is a kind person.
+        - He's a kind person.
+        - He is a very kind man.
+        - He's a very kind man.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: He is a man kind.
+        feedback_vi: Tính từ đứng trước danh từ - a kind man.
+        error_tag: adjective_order
+      - answer: He a kind man.
+        feedback_vi: Thiếu is - He is a kind man.
+        error_tag: missing_be
+      - answer: He is kind man.
+        feedback_vi: Thiếu a trước kind man.
+        error_tag: article
+      - answer: He is an kind man.
+        feedback_vi: Kind bắt đầu bằng âm phụ âm /k/, nên dùng a.
+        error_tag: article
+    explanation:
+      vi: Mẫu câu He is + a + tính từ + danh từ. Kind đứng trước man, và a chọn theo âm đầu của kind.
+    display_answer: He is a kind man.
+
+  # ---------------- application ----------------
+  - key: en:exercise:describing-translate-those-cousins
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:funny
+    prompt:
+      source_text: Kia là các anh chị em họ của tôi. Họ rất vui tính.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Those are my cousins. They are very funny.
+        - Those are my cousins. They're very funny.
+        - Those are my cousins, and they are very funny.
+        - Those are my cousins, and they're very funny.
+        - Those people are my cousins. They are very funny.
+        - Those people are my cousins. They're very funny.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: That is my cousins. They are very funny.
+        feedback_vi: Nhiều người ở xa dùng Those are, không dùng That is.
+        error_tag: this_these
+      - answer: These are my cousins. They are very funny.
+        feedback_vi: "\"Kia\" là ở xa, nên dùng those. These dùng cho người ở gần."
+        error_tag: this_that
+      - answer: Those are my cousins. They very funny.
+        feedback_vi: Thiếu are trước very funny - They are very funny.
+        error_tag: missing_be
+      - answer: Those are my cousins. They are very funnys.
+        feedback_vi: Tính từ không thêm -s - very funny.
+        error_tag: adjective_plural
+      - answer: Those are my cousin. They are very funny.
+        feedback_vi: Nhiều người thì danh từ cần -s - my cousins.
+        error_tag: plural
+    explanation:
+      vi: Nhiều người ở xa - Those are; cousins thêm -s vì là số nhiều. Câu sau cần are, và funny giữ nguyên không thêm -s.
+    display_answer: Those are my cousins. They are very funny.
+
+  - key: en:exercise:describing-translate-shy
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:shy
+    prompt:
+      source_text: My younger brother is shy, but my sister is very friendly.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Em trai tôi nhút nhát, nhưng chị gái tôi rất thân thiện.
+        - Em trai tôi nhút nhát, nhưng em gái tôi rất thân thiện.
+        - Em trai tôi nhút nhát, nhưng chị tôi rất thân thiện.
+        - Em trai tôi nhút nhát, còn chị gái tôi rất thân thiện.
+        - Em trai tôi nhút nhát, còn em gái tôi rất thân thiện.
+        - Em trai mình nhút nhát, nhưng chị gái mình rất thân thiện.
+        - Em trai mình nhút nhát, nhưng em gái mình rất thân thiện.
+        - Em trai tôi hay ngại, nhưng chị gái tôi rất thân thiện.
+        - Em trai tôi hay ngại, nhưng em gái tôi rất thân thiện.
+        - Em trai tôi rụt rè, nhưng chị gái tôi rất thân thiện.
+        - Em trai tôi nhút nhát, nhưng chị gái tôi rất dễ gần.
+        - Em trai tôi nhút nhát, nhưng em gái tôi rất dễ gần.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Younger brother là em trai; sister không nói rõ tuổi nên có thể dịch chị gái hoặc em gái. Shy là nhút nhát, friendly là thân thiện, dễ gần.
+    display_answer: Em trai tôi nhút nhát, nhưng chị gái tôi rất thân thiện.
+
+  - key: en:exercise:describing-mcq-handsome
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:handsome
+    prompt:
+      stem: Bạn muốn khoe với bạn bè rằng bố bạn rất đẹp trai. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: d4t, text: My father is very handsome., lang: en }
+        - { id: k8l, text: My father very handsome., lang: en }
+        - { id: u1v, text: My father is a very handsome., lang: en }
+        - { id: h5n, text: My father is a man very handsome., lang: en }
+    answer:
+      correct_option_id: d4t
+    explanation:
+      vi: Be + very + tính từ - is very handsome. Không bỏ is, không thêm a khi sau đó không có danh từ, và tính từ không đứng sau danh từ man.
+    display_answer: My father is very handsome.

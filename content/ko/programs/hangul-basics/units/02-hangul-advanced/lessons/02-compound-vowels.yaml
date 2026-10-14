@@ -1,0 +1,351 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:compound-vowels
+order_index: 2
+level: hangul
+title:
+  vi: Nguyên âm ghép "w" và ㅢ
+objectives:
+  - vi: Đọc và viết các nguyên âm ghép ㅘ ㅙ ㅚ ㅝ ㅞ ㅟ ㅢ.
+  - vi: Biết ㅙ ㅚ ㅞ đọc gần như giống nhau, và ㅢ có ba cách đọc tuỳ vị trí.
+  - vi: Đọc và viết các từ 회사, 돼지, 귀, 의자, 의사.
+estimated_minutes: 14
+skills: [reading, writing, listening, vocabulary]
+prerequisites: [ko:lesson:y-vowels]
+items:
+  - item: ko:item:we-vowels
+  - item: ko:item:vowel-wi
+  - item: ko:item:vowel-ui
+  - item: ko:item:hoesa
+  - item: ko:item:dwaeji
+  - item: ko:item:gwi
+  - item: ko:item:uija
+  - item: ko:item:uisa
+  - item: ko:item:w-vowels
+    role: reuse
+  - item: ko:item:sagwa
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc và viết được mọi nguyên âm ghép còn lại, và đọc đúng 의 trong 의사 (bác sĩ), 희망 (hy vọng) và 우리의 (của chúng tôi).
+  - type: explain
+    text:
+      vi: Nguyên âm "w" được ghép từ ㅗ hoặc ㅜ với một nguyên âm khác. ㅗ đi với ㅏ ㅐ ㅣ - ㅘ (oa), ㅙ, ㅚ; ㅜ đi với ㅓ ㅔ ㅣ - ㅝ (uơ), ㅞ, ㅟ (uy). Mẹo nhớ - ㅗ chỉ ghép với ㅏ ㅐ, ㅜ chỉ ghép với ㅓ ㅔ, còn ㅣ ghép được với cả hai.
+  - type: explain
+    text:
+      vi: Trong tiếng Seoul hiện nay, ㅙ ㅚ ㅞ đọc gần như giống nhau, gần "uê" trong "Huế" - nên 회사 đọc gần "huê-xa". ㅟ đọc như "uy" trong "uy tín", còn ㅢ là ㅡ + ㅣ, đọc "ưi" như trong "gửi".
+  - type: deep_explain
+    text:
+      vi: ㅢ có ba cách đọc. Ở đầu từ và không có phụ âm đứng trước, đọc đủ "ưi" - 의사, 의자. Có phụ âm đứng trước thì đọc [ㅣ] - 희망 [히망]; khi là trợ từ "của" thì người Seoul thường đọc [에] - 우리의 집 [우리에 집].
+  - type: example
+    target: 회사
+    target_lang: ko
+    translation:
+      vi: công ty
+    note:
+      vi: 회 = ㅎ + ㅚ, đọc gần "huê", không phải "hôi".
+  - type: example
+    target: 돼지
+    target_lang: ko
+    translation:
+      vi: con lợn
+    note:
+      vi: 돼 = ㄷ + ㅙ (ㅗ + ㅐ), đọc gần "tuê".
+  - type: example
+    target: 귀
+    target_lang: ko
+    translation:
+      vi: tai
+    note:
+      vi: ㅟ là một âm tiết "uy", không tách thành "gu-i".
+  - type: example
+    target: 의사
+    target_lang: ko
+    translation:
+      vi: bác sĩ
+    note:
+      vi: 의 ở đầu từ đọc đủ "ưi", môi dẹt.
+  - type: example
+    target: 우리의 집
+    target_lang: ko
+    translation:
+      vi: nhà của chúng tôi
+    note:
+      vi: 의 là trợ từ "của", người Seoul thường đọc [우리에 집].
+  - type: common_mistake
+    wrong: 되지
+    right: 돼지
+    target_lang: ko
+    note:
+      vi: ㅙ và ㅚ nghe gần như giống nhau, nên người học hay viết sai. Con lợn là 돼지 với ㅙ - bạn cần thuộc mặt chữ của từ.
+  - type: common_mistake
+    wrong: 우이자
+    right: 의자
+    target_lang: ko
+    note:
+      vi: Người Việt hay đọc ㅢ thành "ui" với môi tròn. ㅢ bắt đầu bằng ㅡ ("ư", môi dẹt), giống "ưi" trong "gửi".
+  - type: common_mistake
+    wrong: 회사 [호이사]
+    right: 회사 [훼사]
+    target_lang: ko
+    note:
+      vi: ㅚ trông như ㅗ + ㅣ nhưng không đọc tách thành "ô-i". Nó đọc gần "uê", nên 회사 nghe gần "huê-xa".
+  - type: summary
+    points:
+      - vi: ㅗ + ㅏ ㅐ ㅣ → ㅘ ㅙ ㅚ; ㅜ + ㅓ ㅔ ㅣ → ㅝ ㅞ ㅟ.
+      - vi: ㅙ ㅚ ㅞ đọc gần như giống nhau ("uê"); ㅟ đọc "uy".
+      - vi: ㅢ đầu từ đọc "ưi" (의사); sau phụ âm đọc [ㅣ] (희망 [히망]); trợ từ "của" thường đọc [에].
+      - vi: 회사 công ty · 돼지 con lợn · 귀 tai · 의자 cái ghế · 의사 bác sĩ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:compound-vowels-o-plus-i
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:we-vowels
+    prompt:
+      stem: ㅗ ghép với ㅣ thành nguyên âm nào?
+      stem_lang: vi
+      options:
+        - { id: g4n, text: ㅚ, lang: ko }
+        - { id: t8c, text: ㅟ, lang: ko }
+        - { id: y2l, text: ㅢ, lang: ko }
+        - { id: b6p, text: ㅘ, lang: ko }
+    answer:
+      correct_option_id: g4n
+    explanation:
+      vi: ㅗ + ㅣ = ㅚ, đọc gần "uê". ㅟ là ㅜ + ㅣ ("uy"), ㅢ là ㅡ + ㅣ ("ưi"), ㅘ là ㅗ + ㅏ ("oa").
+    display_answer: ㅚ
+
+  - key: ko:exercise:compound-vowels-listen-gwi
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:gwi
+    prompt:
+      audio_asset_id: null
+      fallback_text: 귀
+      options:
+        - { id: x3a, text: tai, lang: vi }
+        - { id: o7m, text: cái ghế, lang: vi }
+        - { id: l1v, text: công ty, lang: vi }
+        - { id: i9s, text: bác sĩ, lang: vi }
+    answer:
+      correct_option_id: x3a
+    explanation:
+      vi: 귀 (một âm tiết, gần "kuy") nghĩa là tai. Cái ghế là 의자, công ty là 회사, bác sĩ là 의사.
+    display_answer: tai
+
+  - key: ko:exercise:compound-vowels-read-huimang
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:vowel-ui
+    prompt:
+      stem: 희망 (hy vọng) được đọc thế nào?
+      stem_lang: vi
+      options:
+        - { id: f5u, text: '[히망]', lang: ko }
+        - { id: r3e, text: '[흐망]', lang: ko }
+        - { id: w9z, text: '[휘망]', lang: ko }
+        - { id: k2g, text: '[해망]', lang: ko }
+    answer:
+      correct_option_id: f5u
+    explanation:
+      vi: Khi ㅢ đứng sau một phụ âm (ở đây là ㅎ), nó được đọc [ㅣ], nên 희망 đọc [히망]. [휘망] là ㅟ ("uy"), còn [흐망] bỏ mất âm "i".
+    display_answer: '[히망]'
+
+  - key: ko:exercise:compound-vowels-fill-uija
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:uija
+    prompt:
+      template: "Cái ghế - {{b1}}자"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Từ này đọc gần "ưi-ja", môi dẹt ở âm đầu.
+        - Âm "ưi" là ㅢ (ㅡ + ㅣ), thêm ㅇ câm phía trước.
+    answer:
+      blanks:
+        b1: [의]
+    known_wrong:
+      - answer: 위
+        feedback_vi: 위 dùng ㅟ ("uy", môi tròn). Cái ghế là 의자 với ㅢ ("ưi", môi dẹt).
+        error_tag: vowel_ui_wi
+      - answer: 우
+        feedback_vi: Thiếu ㅣ và sai môi - cần ㅢ ("ưi"), viết là 의.
+        error_tag: vowel_ui_wi
+      - answer: 이
+        feedback_vi: 이자 nghĩa là "tiền lãi". Cái ghế là 의자 - âm đầu là ㅢ ("ưi").
+        error_tag: vowel_ui_i
+    explanation:
+      vi: 의자 = 의 (ㅇ câm + ㅢ) + 자. Ở đầu từ, ㅢ đọc đủ "ưi" với môi dẹt.
+    display_answer: 의자
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:compound-vowels-write-hoesa
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:hoesa
+    prompt:
+      source_text: công ty
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 회사
+    known_wrong:
+      - answer: 훼사
+        feedback_vi: Nghe giống, nhưng "công ty" viết với ㅚ - 회사.
+        error_tag: we_vowel_spelling
+      - answer: 해사
+        feedback_vi: Thiếu âm "w" - cần ㅚ (ㅗ + ㅣ), viết là 회사.
+        error_tag: we_vowel_spelling
+      - answer: 호이사
+        feedback_vi: ㅚ là một nguyên âm, viết trong một khối - 회, không tách thành 호이.
+        error_tag: split_syllable
+      - answer: hoesa
+        feedback_vi: Hãy gõ bằng chữ Hangul (회사), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Công ty là 회사 - 회 (ㅎ + ㅚ) + 사. ㅙ ㅚ ㅞ nghe như nhau, nên bạn phải nhớ từ này dùng ㅚ.
+    display_answer: 회사
+
+  - key: ko:exercise:compound-vowels-fill-words
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:dwaeji
+    prompt:
+      template: "Con lợn - {{b1}}지. Bác sĩ - {{b2}}사."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [돼]
+        b2: [의]
+    known_wrong:
+      - answer: 되
+        feedback_vi: Nghe giống, nhưng con lợn viết với ㅙ (ㅗ + ㅐ) - 돼지.
+        error_tag: we_vowel_spelling
+      - answer: 뒈
+        feedback_vi: Con lợn viết với ㅙ (ㅗ + ㅐ) - 돼지, không phải ㅞ.
+        error_tag: we_vowel_spelling
+      - answer: 위
+        feedback_vi: 위 là "uy" (môi tròn). Bác sĩ là 의사 với ㅢ ("ưi").
+        error_tag: vowel_ui_wi
+    explanation:
+      vi: 돼지 dùng ㅙ (돼 = ㄷ + ㅙ); 의사 dùng ㅢ ở đầu từ, đọc "ưi". Ba nguyên âm ㅙ ㅚ ㅞ nghe như nhau nên phải nhớ mặt chữ.
+    display_answer: 돼지, 의사
+
+  - key: ko:exercise:compound-vowels-write-gwi
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gwi
+    prompt:
+      source_text: tai
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 귀
+    known_wrong:
+      - answer: 구이
+        feedback_vi: Không tách thành hai âm tiết - ㅟ (ㅜ + ㅣ) nằm trong một khối, viết là 귀. 구이 là "món nướng".
+        error_tag: split_syllable
+      - answer: 기
+        feedback_vi: Thiếu âm "u" - tai là 귀 với ㅟ ("uy").
+        error_tag: vowel_wi_i
+      - answer: 긔
+        feedback_vi: ㅢ là "ưi" (môi dẹt). Tai là 귀 với ㅟ ("uy", môi tròn).
+        error_tag: vowel_ui_wi
+      - answer: gwi
+        feedback_vi: Hãy gõ bằng chữ Hangul (귀), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Tai là 귀 = ㄱ + ㅟ. ㅟ là ㅜ + ㅣ, đọc nhanh thành một âm "uy".
+    display_answer: 귀
+
+  # ---------------- application ----------------
+  - key: ko:exercise:compound-vowels-build-hoesa
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hoesa
+    prompt:
+      instruction: Ghép các chữ cái thành từ có nghĩa "công ty".
+      tokens:
+        - { id: s4, text: ㅙ }
+        - { id: s7, text: ㅏ }
+        - { id: s2, text: ㅚ }
+        - { id: s9, text: ㅅ }
+        - { id: s1, text: ㅗ }
+        - { id: s6, text: ㅎ }
+    answer:
+      orders:
+        - [s6, s2, s9, s7]
+    explanation:
+      vi: '회사 = (ㅎ + ㅚ) + (ㅅ + ㅏ). ㅙ nghe giống nhưng sai chính tả; ㅗ một mình thì đọc "hô".'
+    display_answer: 회사
+
+  - key: ko:exercise:compound-vowels-possessive-ui
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:vowel-ui
+    prompt:
+      stem: Trong cụm 우리의 집 (nhà của chúng tôi), người Seoul thường đọc 의 thế nào?
+      stem_lang: vi
+      options:
+        - { id: m2c, text: '[에]', lang: ko }
+        - { id: h8w, text: '[우]', lang: ko }
+        - { id: z4j, text: '[오]', lang: ko }
+        - { id: a6t, text: '[위]', lang: ko }
+    answer:
+      correct_option_id: m2c
+    explanation:
+      vi: Khi 의 là trợ từ "của", cách đọc tự nhiên ở Seoul là [에] - 우리의 집 nghe như [우리에 집]. Đọc đủ [의] cũng đúng chuẩn nhưng ít gặp trong hội thoại; [우], [오], [위] đều tròn môi nên sai.
+    display_answer: '[에]'
+
+  - key: ko:exercise:compound-vowels-meaning-uisa
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:uisa
+    prompt:
+      source_text: 의사예요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi là bác sĩ.
+        - Đó là bác sĩ.
+        - Là bác sĩ.
+        - Anh ấy là bác sĩ.
+        - Cô ấy là bác sĩ.
+        - Người đó là bác sĩ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: 의사 là bác sĩ, 예요 là "là". Tiếng Hàn thường bỏ chủ ngữ, nên bạn tự thêm "tôi", "anh ấy"… theo ngữ cảnh.
+    display_answer: Tôi là bác sĩ.

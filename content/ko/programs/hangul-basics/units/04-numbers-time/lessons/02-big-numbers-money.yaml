@@ -1,0 +1,364 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:big-numbers-money
+order_index: 2
+level: topik1
+title:
+  vi: Số lớn, tiền won và năm
+objectives:
+  - vi: Đọc số lớn với 백, 천, 만 - đặc biệt hiểu 만 là 10.000.
+  - vi: Hỏi giá bằng 얼마예요? và nói giá bằng 원.
+  - vi: Đọc năm như 이천이십육 년.
+estimated_minutes: 14
+skills: [vocabulary, listening, speaking]
+prerequisites: [ko:lesson:sino-numbers]
+items:
+  - item: ko:item:baek
+  - item: ko:item:cheon
+  - item: ko:item:man
+  - item: ko:item:won
+  - item: ko:item:eolmayeyo
+  - item: ko:item:year-nyeon
+  - item: ko:item:sino-numbers
+    role: reuse
+  - item: ko:item:sino-compounds
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được giá bằng 얼마예요? và hiểu ngay khi người bán nói 삼만 오천 원 hay 십만 원.
+  - type: explain
+    text:
+      vi: 백 là 100, 천 là 1.000, 만 là 10.000. Giống 십, khi là "một" thì không nói 일 phía trước - 100 là 백, 1.000 là 천, 10.000 là 만.
+  - type: explain
+    text:
+      vi: Tiếng Việt gom số theo nghìn (mười nghìn, trăm nghìn), còn tiếng Hàn gom theo 만 (vạn). Vì vậy 10.000 là 만, 50.000 là 오만, 100.000 là 십만 (mười vạn), 1.000.000 là 백만.
+  - type: explain
+    text:
+      vi: Giá tiền = số Hán-Hàn + 원 - 오천 원 (5.000 won). Hỏi giá dùng 얼마예요?, trả lời bằng ... 원이에요 (원 có phụ âm cuối nên dùng 이에요).
+  - type: deep_explain
+    text:
+      vi: Mẹo đọc số lớn - tách 4 chữ số từ phải sang trái thay vì 3. Ví dụ 35.000 → 3|5000 → 삼만 오천; 120.000 → 12|0000 → 십이만. Năm cũng đọc như số thường rồi thêm 년 - 2026 là 이천이십육 년, không đọc từng chữ số như số điện thoại.
+  - type: example
+    target: 이거 얼마예요?
+    target_lang: ko
+    translation:
+      vi: Cái này bao nhiêu tiền?
+    note:
+      vi: 얼마 = bao nhiêu; 예요 vì 얼마 kết thúc bằng nguyên âm.
+  - type: example
+    target: 오천 원이에요.
+    target_lang: ko
+    translation:
+      vi: 5.000 won.
+    note:
+      vi: 천 không cần 일 phía trước; 원 + 이에요 đọc nối [워니에요].
+  - type: example
+    target: 삼만 오천 원
+    target_lang: ko
+    translation:
+      vi: 35.000 won
+    note:
+      vi: 35.000 = 3 vạn + 5 nghìn.
+  - type: example
+    target: 십만 원
+    target_lang: ko
+    translation:
+      vi: 100.000 won
+    note:
+      vi: '"Một trăm nghìn" của tiếng Việt là "mười vạn" - 십만, đọc [심만].'
+  - type: example
+    target: 이천이십육 년
+    target_lang: ko
+    translation:
+      vi: năm 2026
+    note:
+      vi: Đọc như số thường - hai nghìn hai mươi sáu.
+  - type: common_mistake
+    wrong: 십천 원
+    right: 만 원
+    target_lang: ko
+    note:
+      vi: Theo thói quen "mười nghìn", người Việt hay nói 십천. Tiếng Hàn có từ riêng cho 10.000 là 만.
+  - type: common_mistake
+    wrong: 오십천 원
+    right: 오만 원
+    target_lang: ko
+    note:
+      vi: 50.000 là 5 vạn - 오만 원. 오십만 원 lại là 500.000, nên nhầm một chữ là lệch cả chục lần.
+  - type: common_mistake
+    wrong: 일천 원
+    right: 천 원
+    target_lang: ko
+    note:
+      vi: Khi là "một nghìn", "một trăm", "mười nghìn", bạn bỏ 일 - 천 원, 백 원, 만 원.
+  - type: summary
+    points:
+      - vi: 백 100 · 천 1.000 · 만 10.000; không nói 일 trước 백, 천, 만.
+      - vi: Tiếng Hàn gom theo 만 - 십만 100.000, 백만 1.000.000. Tách 4 chữ số từ phải để đọc.
+      - vi: Hỏi giá - 얼마예요? Trả lời - 오천 원이에요.
+      - vi: Năm - đọc như số thường + 년 - 이천이십육 년.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:big-numbers-mcq-man
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:man
+    prompt:
+      stem: Số 10.000 trong tiếng Hàn là gì?
+      stem_lang: vi
+      options:
+        - { id: u3h, text: 십천, lang: ko }
+        - { id: e7r, text: 만, lang: ko }
+        - { id: l2s, text: 천, lang: ko }
+        - { id: g9d, text: 십만, lang: ko }
+    answer:
+      correct_option_id: e7r
+    explanation:
+      vi: Tiếng Hàn có từ riêng cho 10.000 là 만, không ghép thành 십천 như "mười nghìn". 천 là 1.000, còn 십만 là 100.000.
+    display_answer: 만
+
+  - key: ko:exercise:big-numbers-listen-35000
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:man
+    prompt:
+      audio_asset_id: null
+      fallback_text: 삼만 오천 원이에요.
+      options:
+        - { id: a8x, text: 35.000 won, lang: vi }
+        - { id: o5c, text: 3.500 won, lang: vi }
+        - { id: i1v, text: 350.000 won, lang: vi }
+        - { id: t6m, text: 30.500 won, lang: vi }
+    answer:
+      correct_option_id: a8x
+    explanation:
+      vi: 삼만 = 3 × 10.000 = 30.000, cộng 오천 = 5.000, thành 35.000 won. 3.500 sẽ là 삼천오백, còn 350.000 là 삼십오만.
+    display_answer: 35.000 won
+
+  - key: ko:exercise:big-numbers-mcq-100won
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:baek
+    prompt:
+      stem: Đồng xu 100 won đọc là gì?
+      stem_lang: vi
+      options:
+        - { id: y4f, text: 백 원, lang: ko }
+        - { id: j7w, text: 일백 원, lang: ko }
+        - { id: h3n, text: 십 원, lang: ko }
+        - { id: b8k, text: 천 원, lang: ko }
+    answer:
+      correct_option_id: y4f
+    explanation:
+      vi: 100 là 백, và khi là "một trăm" thì không thêm 일 - nói 백 원, đọc nối [배권]. 십 원 là 10 won, 천 원 là 1.000 won.
+    display_answer: 백 원
+
+  - key: ko:exercise:big-numbers-fill-how-much
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:eolmayeyo
+    prompt:
+      template: "Cái này bao nhiêu tiền? - 이거 {{b1}}?"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - '"Bao nhiêu" là 얼마.'
+        - 얼마 kết thúc bằng nguyên âm nên đi với 예요.
+    answer:
+      blanks:
+        b1: [얼마예요]
+    known_wrong:
+      - answer: 얼마이에요
+        feedback_vi: 얼마 kết thúc bằng nguyên âm nên dùng 예요 - 얼마예요.
+        error_tag: copula_form
+      - answer: 몇 개예요
+        feedback_vi: 몇 개예요 hỏi số lượng (mấy cái). Hỏi giá dùng 얼마예요.
+        error_tag: question_word
+      - answer: 몇 원이에요
+        feedback_vi: Người Hàn hỏi giá bằng 얼마예요, không nói 몇 원이에요.
+        error_tag: question_word
+    explanation:
+      vi: 얼마 nghĩa là "bao nhiêu (tiền)"; vì kết thúc bằng nguyên âm nên đi với 예요 thành 얼마예요?
+    display_answer: 이거 얼마예요?
+
+  - key: ko:exercise:big-numbers-order-12000
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:man
+    prompt:
+      instruction: "Sắp xếp thành giá tiền tiếng Hàn: \"12.000 won\""
+      tokens:
+        - { id: t1, text: 원 }
+        - { id: t4, text: 십이천 }
+        - { id: t2, text: 이천 }
+        - { id: t5, text: 이만 }
+        - { id: t3, text: 만 }
+    answer:
+      orders:
+        - [t3, t2, t1]
+    explanation:
+      vi: 12.000 = 1 vạn + 2 nghìn, nên đọc 만 이천 원 (không cần 일 trước 만). 십이천 là cách ghép theo kiểu "mười hai nghìn" của tiếng Việt, tiếng Hàn không dùng.
+    display_answer: 만 이천 원
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:big-numbers-write-50000
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:man
+    prompt:
+      source_text: 50.000 won (viết bằng chữ Hangul)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 오만 원
+    known_wrong:
+      - answer: 오십천 원
+        feedback_vi: Tiếng Hàn gom số theo 만 (10.000) - 50.000 là 5 vạn, tức 오만 원.
+        error_tag: number_system_man
+      - answer: 오십만 원
+        feedback_vi: 오십만 là 500.000. 50.000 chỉ là 오만 원.
+        error_tag: number_system_man
+      - answer: 오천 원
+        feedback_vi: 오천 là 5.000. 50.000 là 오만 원.
+        error_tag: number_system_man
+      - answer: 50000원
+        feedback_vi: Bài này yêu cầu viết bằng chữ Hangul - 오만 원.
+        error_tag: digits_not_words
+      - answer: oman won
+        feedback_vi: Hãy gõ bằng chữ Hangul (오만 원), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: 50.000 tách theo 4 chữ số từ phải sang là 5|0000, tức 5 vạn - 오만. Thêm đơn vị tiền 원 phía sau.
+    display_answer: 오만 원
+
+  - key: ko:exercise:big-numbers-fill-year
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:year-nyeon
+    prompt:
+      template: "Năm 2026 - {{b1}} 년"
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [이천이십육]
+    known_wrong:
+      - answer: 이공이육
+        feedback_vi: Năm đọc như số thường (hai nghìn hai mươi sáu) - 이천이십육, không đọc từng chữ số.
+        error_tag: year_digit_by_digit
+      - answer: 이천이십여섯
+        feedback_vi: Năm dùng số Hán-Hàn hoàn toàn - 육, không phải 여섯.
+        error_tag: number_system
+      - answer: 일이천이십육
+        feedback_vi: Không nói 일 trước 천 - 이천이십육.
+        error_tag: number_system
+    explanation:
+      vi: 2026 = 이천 (2.000) + 이십 (20) + 육 (6). Năm luôn dùng số Hán-Hàn và đọc như một số bình thường, rồi thêm 년.
+    display_answer: 이천이십육 년
+
+  - key: ko:exercise:big-numbers-translate-3000
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:won
+    prompt:
+      source_text: Cái này 3.000 won.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이거 삼천 원이에요.
+        - 이건 삼천 원이에요.
+        - 이것은 삼천 원이에요.
+        - 이거 3000원이에요.
+        - 이거 3,000원이에요.
+    known_wrong:
+      - answer: 이거 삼천 원예요.
+        feedback_vi: 원 có phụ âm cuối ㄴ nên dùng 이에요 - 삼천 원이에요.
+        error_tag: copula_form
+      - answer: 이거 셋천 원이에요.
+        feedback_vi: Tiền dùng số Hán-Hàn - 삼천, không phải 셋천.
+        error_tag: number_system
+      - answer: 이거 삼백 원이에요.
+        feedback_vi: 삼백 là 300. 3.000 là 삼천.
+        error_tag: number_value
+    explanation:
+      vi: Giá tiền dùng số Hán-Hàn - 삼천 (3.000) + 원. 원 kết thúc bằng phụ âm ㄴ nên đi với 이에요.
+    display_answer: 이거 삼천 원이에요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:big-numbers-translate-coffee-price
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:cheon
+    prompt:
+      source_text: 커피는 사천오백 원이에요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cà phê giá 4.500 won.
+        - Cà phê giá 4500 won.
+        - Cà phê có giá 4.500 won.
+        - Cà phê có giá 4500 won.
+        - Cà phê là 4.500 won.
+        - Cà phê là 4500 won.
+        - Cà phê 4.500 won.
+        - Cà phê 4500 won.
+        - Cà phê giá bốn nghìn năm trăm won.
+        - Cà phê giá bốn ngàn rưỡi won.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cà phê giá 45.000 won.
+        feedback_vi: 사천 là 4.000 (천 = nghìn), không có 만 nên chưa tới hàng chục nghìn - 4.500 won.
+        error_tag: number_system_man
+      - answer: Cà phê giá 4.050 won.
+        feedback_vi: 오백 là 500, nên 사천오백 là 4.500.
+        error_tag: number_value
+    explanation:
+      vi: 사천 = 4.000, 오백 = 500, cộng lại 4.500 won. Câu không có 만 nên số nhỏ hơn 10.000.
+    display_answer: Cà phê giá 4.500 won.
+
+  - key: ko:exercise:big-numbers-mcq-market
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:man
+    prompt:
+      stem: "Ở cửa hàng, người bán nói: \"십만 원이에요.\" Bạn cần trả bao nhiêu?"
+      stem_lang: vi
+      options:
+        - { id: m6q, text: 100.000 won, lang: vi }
+        - { id: s9e, text: 10.000 won, lang: vi }
+        - { id: w2j, text: 1.000.000 won, lang: vi }
+        - { id: z5p, text: 1.000 won, lang: vi }
+    answer:
+      correct_option_id: m6q
+    explanation:
+      vi: 십만 là "mười vạn" = 10 × 10.000 = 100.000 won. Người Việt hay nghe 십 rồi nghĩ ngay "mười nghìn", nhưng 10.000 chỉ là 만.
+    display_answer: 100.000 won

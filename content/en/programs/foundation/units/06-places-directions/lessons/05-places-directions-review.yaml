@@ -1,0 +1,419 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:places-directions-review
+order_index: 5
+level: a1
+title:
+  vi: Ôn tập - Hỏi đường trọn vẹn một cuộc hội thoại
+objectives:
+  - vi: Dẫn trọn một cuộc hội thoại hỏi đường - mở lời, hỏi có/ở đâu, nghe chỉ đường, hỏi xa gần, cảm ơn.
+  - vi: Kết hợp There is/are, giới từ chỉ vị trí, lời chỉ đường và can trong cùng một tình huống.
+  - vi: Hiểu và dùng thêm traffic lights và cross the street khi chỉ đường.
+estimated_minutes: 12
+skills: [speaking, listening, grammar]
+prerequisites: [en:lesson:directions]
+items:
+  - item: en:item:traffic-lights
+  - item: en:item:cross
+  - item: en:item:there-is-there-are
+    role: reuse
+  - item: en:item:is-there-are-there
+    role: reuse
+  - item: en:item:excuse-me
+    role: reuse
+  - item: en:item:where-is
+    role: reuse
+  - item: en:item:how-do-i-get-to
+    role: reuse
+  - item: en:item:go-straight
+    role: reuse
+  - item: en:item:turn-left-right
+    role: reuse
+  - item: en:item:take-the-second-left
+    role: reuse
+  - item: en:item:on-your-left-right
+    role: reuse
+  - item: en:item:next-to
+    role: reuse
+  - item: en:item:between
+    role: reuse
+  - item: en:item:can-cant
+    role: reuse
+  - item: en:item:on-foot
+    role: reuse
+  - item: en:item:far
+    role: reuse
+  - item: en:item:bank
+    role: reuse
+  - item: en:item:post-office
+    role: reuse
+  - item: en:item:pharmacy
+    role: reuse
+  - item: en:item:hospital
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự tin hỏi đường và chỉ đường cho người nước ngoài từ câu đầu tiên đến lời cảm ơn, không mắc các lỗi quen thuộc của người Việt.
+  - type: explain
+    text:
+      vi: "Một cuộc hỏi đường thường đi theo bốn bước: mở lời bằng Excuse me; hỏi Is there a… near here? hoặc Where is / How do I get to…?; nghe chỉ đường; hỏi thêm Is it far? Can I walk there? rồi cảm ơn. Bài này ghép lại tất cả những gì bạn đã học trong unit."
+  - type: explain
+    text:
+      vi: Ba lỗi người Việt hay mắc nhất là dịch "có" thành have (It has a bank near here), dùng sai is/are (There is two banks) và thêm to sau can hay turn (I can to walk, turn to left). Trước khi nói, hãy tự kiểm tra ba điểm này.
+  - type: explain
+    text:
+      vi: Hai từ mới giúp chỉ đường rõ hơn - traffic lights (đèn giao thông) và cross (sang đường). Turn left at the traffic lights là "đến đèn giao thông thì rẽ trái"; cross the street không cần thêm giới từ.
+  - type: deep_explain
+    text:
+      vi: Nếu chưa nghe rõ lời chỉ đường, bạn có thể nói Sorry, can you say that again, please? - can ở đây dùng để nhờ vả lịch sự. Người bản xứ hay nhắc lại mốc dễ thấy (the traffic lights, the bank on the corner) thay vì tên phố, nên hãy chú ý nghe các giới từ next to, opposite, on your left. Khi kết thúc, Thank you very much hoặc Thanks a lot là đủ lịch sự.
+  - type: example
+    target: Excuse me, is there a pharmacy near here?
+    target_lang: en
+    translation:
+      vi: Xin lỗi, gần đây có hiệu thuốc nào không ạ?
+    note:
+      vi: Mở lời bằng Excuse me và hỏi bằng Is there a…, không dùng Have.
+  - type: example
+    target: Yes, there is. Go straight on and turn left at the traffic lights. It's next to the bank.
+    target_lang: en
+    translation:
+      vi: Có. Bạn đi thẳng rồi đến đèn giao thông thì rẽ trái. Nó ở cạnh ngân hàng.
+    note:
+      vi: Trả lời ngắn Yes, there is, rồi chỉ đường bằng động từ đầu câu và mô tả vị trí bằng next to.
+  - type: example
+    target: Is it far? Can I walk there? - No, it isn't. It's five minutes on foot.
+    target_lang: en
+    translation:
+      vi: Có xa không? Mình đi bộ đến đó được không? - Không xa đâu. Đi bộ năm phút thôi.
+    note:
+      vi: Can + walk để hỏi việc có làm được không; đi bộ là on foot.
+  - type: example
+    target: Cross the street at the traffic lights. The hospital is on your left.
+    target_lang: en
+    translation:
+      vi: Bạn sang đường ở chỗ đèn giao thông. Bệnh viện ở bên tay trái bạn.
+    note:
+      vi: Cross the street không cần thêm giới từ; bên tay trái dùng on your left.
+  - type: common_mistake
+    wrong: It has a bank near here.
+    right: There is a bank near here.
+    target_lang: en
+    note:
+      vi: Chữ "có" chỉ sự tồn tại luôn là There is/are, không phải have/has.
+  - type: common_mistake
+    wrong: Turn to left in the traffic lights.
+    right: Turn left at the traffic lights.
+    target_lang: en
+    note:
+      vi: Turn left không có to, và rẽ "ở" một điểm mốc dùng at.
+  - type: common_mistake
+    wrong: Yes, there's. It's next the bank.
+    right: Yes, there is. It's next to the bank.
+    target_lang: en
+    note:
+      vi: Câu trả lời ngắn khẳng định không rút gọn there's; next luôn đi với to.
+  - type: summary
+    points:
+      - vi: Mở lời Excuse me → hỏi Is there…? / Where is…? / How do I get to…?
+      - vi: Chỉ đường - go straight on, turn left/right at…, take the second left, cross the street.
+      - vi: Vị trí - next to, between… and…, opposite, behind, in front of, on your left/right.
+      - vi: "\"Có\" (tồn tại) = There is/are; số nhiều dùng are."
+      - vi: Can + nguyên mẫu, không to; đi bộ là on foot, xe buýt là by bus.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:places-directions-review-listen-bank
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:is-there-are-there
+    prompt:
+      audio_asset_id: null
+      fallback_text: Is there a bank near here? - Yes, there is. It's next to the post office.
+      options:
+        - { id: r2v, text: "Gần đây có ngân hàng không? - Có. Nó ở cạnh bưu điện.", lang: vi }
+        - { id: k9d, text: "Gần đây có ngân hàng không? - Có. Nó ở đối diện bưu điện.", lang: vi }
+        - { id: f5s, text: "Ngân hàng ở đâu? - Nó ở cạnh bưu điện.", lang: vi }
+        - { id: x1g, text: "Gần đây có bưu điện không? - Có. Nó ở cạnh ngân hàng.", lang: vi }
+    answer:
+      correct_option_id: r2v
+    explanation:
+      vi: Is there a bank…? là "có ngân hàng không?", không phải Where is (ở đâu). Next to là "cạnh", còn đối diện là opposite.
+    display_answer: "Gần đây có ngân hàng không? - Có. Nó ở cạnh bưu điện."
+
+  - key: en:exercise:places-directions-review-mcq-at-lights
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:traffic-lights
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: Turn left ___ the traffic lights."
+      stem_lang: vi
+      options:
+        - { id: n4c, text: at, lang: en }
+        - { id: p7e, text: in, lang: en }
+        - { id: z3w, text: to, lang: en }
+        - { id: l6q, text: on, lang: en }
+    answer:
+      correct_option_id: n4c
+    explanation:
+      vi: Rẽ ở một điểm mốc trên đường (đèn giao thông, ngân hàng, góc phố) dùng at. In là ở bên trong, to là hướng tới, on không dùng với điểm rẽ.
+    display_answer: at
+
+  - key: en:exercise:places-directions-review-order-cross
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:cross
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Sang đường ở chỗ đèn giao thông.\""
+      tokens:
+        - { id: c-lights, text: lights }
+        - { id: c-the1, text: the }
+        - { id: c-cross, text: Cross }
+        - { id: c-at, text: at }
+        - { id: c-go, text: Go }
+        - { id: c-street, text: street }
+        - { id: c-the2, text: the }
+        - { id: c-on, text: on }
+        - { id: c-traffic, text: traffic }
+    answer:
+      orders:
+        - [c-cross, c-the1, c-street, c-at, c-the2, c-traffic, c-lights]
+        - [c-cross, c-the2, c-street, c-at, c-the1, c-traffic, c-lights]
+    explanation:
+      vi: Câu chỉ đường bắt đầu bằng động từ Cross, ngay sau là the street (không cần giới từ). Chỗ đèn giao thông là at the traffic lights.
+    display_answer: Cross the street at the traffic lights.
+
+  - key: en:exercise:places-directions-review-fill-is-there-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:is-there-are-there
+    prompt:
+      template: "{{b1}} there a pharmacy near here? - Yes, there {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Gần đây có hiệu thuốc nào không? - Có."
+        - "Gợi ý: một hiệu thuốc là số ít; câu trả lời ngắn lặp lại cùng động từ."
+    answer:
+      blanks:
+        b1: [Is]
+        b2: [is]
+    known_wrong:
+      - answer: Are
+        feedback_vi: A pharmacy là số ít nên hỏi Is there, trả lời there is.
+        error_tag: there_be_agreement
+      - answer: Have
+        feedback_vi: Hỏi "có… không?" về sự tồn tại dùng Is there, không dùng have.
+        error_tag: have_for_there_is
+      - answer: has
+        feedback_vi: Trả lời câu Is there…? là Yes, there is, không dùng has.
+        error_tag: have_for_there_is
+    explanation:
+      vi: Một hiệu thuốc là số ít nên hỏi Is there…? Câu trả lời ngắn lặp lại is - Yes, there is.
+    display_answer: Is there a pharmacy near here? - Yes, there is.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:places-directions-review-fill-route
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:on-your-left-right
+    prompt:
+      template: "Go straight {{b1}}, turn left {{b2}} the bank, and it's {{b3}} your right."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 2 }
+        - { id: b3, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [on, ahead]
+        b2: [at]
+        b3: [on]
+    known_wrong:
+      - answer: to
+        feedback_vi: Turn left không cần to; rẽ ở ngân hàng dùng at.
+        error_tag: turn_to
+      - answer: in
+        feedback_vi: Rẽ ở một điểm mốc dùng at; bên tay phải dùng on your right.
+        error_tag: preposition_place
+      - answer: straightly
+        feedback_vi: Straight vừa là tính từ vừa là trạng từ, không thêm -ly. Đi thẳng là go straight on.
+        error_tag: go_straight
+    explanation:
+      vi: Đi thẳng là go straight on (hoặc go straight ahead). Rẽ ở một điểm mốc dùng at the bank, và bên tay phải là on your right.
+    display_answer: Go straight on, turn left at the bank, and it's on your right.
+
+  - key: en:exercise:places-directions-review-translate-any-bank
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:there-is-there-are
+    prompt:
+      source_text: Xin lỗi, gần đây có ngân hàng nào không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Excuse me, is there a bank near here?
+        - Excuse me, is there a bank nearby?
+        - Excuse me, is there a bank around here?
+        - Excuse me, are there any banks near here?
+        - Excuse me, are there any banks nearby?
+        - Excuse me, is there any bank near here?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Excuse me, have a bank near here?
+        feedback_vi: Không dịch "có" thành have. Hỏi sự tồn tại dùng is there - is there a bank near here?
+        error_tag: have_for_there_is
+      - answer: Excuse me, has a bank near here?
+        feedback_vi: Không dịch "có" thành has. Hỏi sự tồn tại dùng is there.
+        error_tag: have_for_there_is
+      - answer: Excuse me, are there a bank near here?
+        feedback_vi: A bank là số ít nên dùng is there.
+        error_tag: there_be_agreement
+      - answer: Excuse me, near here have a bank?
+        feedback_vi: Không giữ trật tự câu tiếng Việt. Is there đứng đầu, near here ở cuối.
+        error_tag: have_for_there_is
+    explanation:
+      vi: "\"Có… nào không?\" là câu hỏi về sự tồn tại - đảo is lên trước there: Is there a bank near here? Nếu hỏi nhiều ngân hàng thì Are there any banks…?"
+    display_answer: Excuse me, is there a bank near here?
+
+  - key: en:exercise:places-directions-review-translate-between
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:between
+    prompt:
+      source_text: Bưu điện ở giữa ngân hàng và hiệu thuốc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The post office is between the bank and the pharmacy.
+        - The post office is between the bank and the drugstore.
+        - The post office is between the bank and the chemist's.
+        - The post office is between the pharmacy and the bank.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The post office is between the bank with the pharmacy.
+        feedback_vi: Between nối hai nơi bằng and, không dùng with.
+        error_tag: between_and
+      - answer: The post office between the bank and the pharmacy.
+        feedback_vi: Thiếu is - The post office is between…
+        error_tag: missing_be
+      - answer: The post office is in the middle the bank and the pharmacy.
+        feedback_vi: Ở giữa hai nơi là between, không dùng in the middle.
+        error_tag: preposition_place
+      - answer: The post office is between the bank or the pharmacy.
+        feedback_vi: Between A and B dùng and, không dùng or.
+        error_tag: between_and
+    explanation:
+      vi: Chủ ngữ the post office + is + between the bank and the pharmacy. Between luôn nối hai nơi bằng and.
+    display_answer: The post office is between the bank and the pharmacy.
+
+  # ---------------- application ----------------
+  - key: en:exercise:places-directions-review-translate-cross
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:cross
+    prompt:
+      source_text: Cross the street at the traffic lights. The hospital is on your left.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sang đường ở chỗ đèn giao thông. Bệnh viện ở bên tay trái bạn.
+        - Băng qua đường ở chỗ đèn giao thông. Bệnh viện ở bên tay trái bạn.
+        - Qua đường ở chỗ đèn giao thông. Bệnh viện ở bên tay trái bạn.
+        - Sang đường ở đèn giao thông. Bệnh viện ở bên trái bạn.
+        - Sang đường ở chỗ đèn giao thông. Bệnh viện ở bên trái bạn.
+        - Băng qua đường ở đèn giao thông. Bệnh viện ở bên trái bạn.
+        - Sang đường ở chỗ đèn xanh đèn đỏ. Bệnh viện ở bên tay trái bạn.
+        - Bạn sang đường ở chỗ đèn giao thông. Bệnh viện ở bên tay trái bạn.
+        - Bạn sang đường ở chỗ đèn giao thông. Bệnh viện ở bên tay trái.
+        - Sang đường ở chỗ đèn giao thông. Bệnh viện nằm bên tay trái bạn.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Cross the street là "sang đường", at the traffic lights là "ở chỗ đèn giao thông", on your left là "bên tay trái bạn". Câu tiếng Anh không có chủ ngữ, tiếng Việt có thể thêm "bạn" cho tự nhiên.
+    display_answer: Sang đường ở chỗ đèn giao thông. Bệnh viện ở bên tay trái bạn.
+
+  - key: en:exercise:places-directions-review-translate-walk
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:can-cant
+    prompt:
+      source_text: Không xa đâu. Bạn có thể đi bộ đến đó.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It isn't far. You can walk there.
+        - It's not far. You can walk there.
+        - It isn't far. You can go there on foot.
+        - It's not far. You can go there on foot.
+        - It isn't far. You can walk.
+        - It's not far. You can walk.
+        - It isn't far. You can get there on foot.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It isn't far. You can to walk there.
+        feedback_vi: Sau can không có to - You can walk there.
+        error_tag: can_to
+      - answer: It not far. You can walk there.
+        feedback_vi: Thiếu is - It isn't far (It is not far).
+        error_tag: missing_be
+      - answer: It isn't far. You can go there by foot.
+        feedback_vi: Đi bộ nói chuẩn là on foot, không phải by foot.
+        error_tag: on_foot
+      - answer: It isn't far. You can walking there.
+        feedback_vi: Sau can dùng động từ nguyên mẫu walk, không dùng walking.
+        error_tag: can_verb_form
+      - answer: It isn't far. You can walk to there.
+        feedback_vi: There đã có nghĩa "đến đó", không thêm to - walk there.
+        error_tag: go_to_there
+    explanation:
+      vi: "\"Không xa\" cần be - It isn't far. \"Có thể đi bộ\" là can + walk (nguyên mẫu), hoặc go there on foot."
+    display_answer: It isn't far. You can walk there.
+
+  - key: en:exercise:places-directions-review-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:take-the-second-left
+    prompt:
+      stem: "Một du khách hỏi: \"Excuse me, is there a pharmacy near here?\" Câu trả lời nào đúng hoàn toàn?"
+      stem_lang: vi
+      options:
+        - { id: v8h, text: "Yes, there is. Go straight on and take the second right. It's next to the bank.", lang: en }
+        - { id: a2y, text: "Yes, there's. Go straight on and take the second right. It's next to the bank.", lang: en }
+        - { id: j7m, text: "Yes, it has. Go straight on and take the second right. It's next to the bank.", lang: en }
+        - { id: d4t, text: "Yes, there is. Go straight on and take the two right. It's next the bank.", lang: en }
+    answer:
+      correct_option_id: v8h
+    explanation:
+      vi: Câu hỏi Is there…? trả lời Yes, there is (không rút gọn there's, không dùng has). Ngã rẽ thứ hai là the second right, và next luôn đi với to.
+    display_answer: "Yes, there is. Go straight on and take the second right. It's next to the bank."

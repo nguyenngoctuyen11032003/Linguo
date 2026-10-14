@@ -1,0 +1,397 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:daily-life-review
+order_index: 5
+level: topik1
+title:
+  vi: Ôn tập - Một ngày của bạn
+objectives:
+  - vi: Hỏi và trả lời "Bạn đang làm gì?", "Bạn đi đâu?", "… ở đâu?" trong một đoạn hội thoại ngắn.
+  - vi: Kết hợp đúng các trợ từ 이/가, 을/를, 에, 에서 trong cùng một câu.
+  - vi: Chia động từ -아요/-어요 và phủ định bằng 안 một cách chắc chắn.
+estimated_minutes: 15
+skills: [speaking, listening, grammar, writing]
+prerequisites: [ko:lesson:object-eseo]
+items:
+  - item: ko:item:phrase-mwo-haeyo
+  - item: ko:item:gram-itda-eopda
+    role: reuse
+  - item: ko:item:gram-e-location
+    role: reuse
+  - item: ko:item:gram-e-destination
+    role: reuse
+  - item: ko:item:gram-haeyo-present
+    role: reuse
+  - item: ko:item:gram-an-negation
+    role: reuse
+  - item: ko:item:gram-eul-reul
+    role: reuse
+  - item: ko:item:gram-eseo
+    role: reuse
+  - item: ko:item:gram-sov
+    role: reuse
+  - item: ko:item:q-eodi
+    role: reuse
+  - item: ko:item:pos-ap
+    role: reuse
+  - item: ko:item:place-pyeonuijeom
+    role: reuse
+  - item: ko:item:place-hoesa
+    role: reuse
+  - item: ko:item:verb-boda
+    role: reuse
+  - item: ko:item:verb-meokda
+    role: reuse
+  - item: ko:item:verb-undonghada
+    role: reuse
+  - item: ko:item:verb-mannada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự nói được một đoạn hội thoại ngắn về sinh hoạt hằng ngày - đang làm gì, đi đâu, cái gì ở đâu - với đúng trợ từ và đuôi động từ.
+  - type: explain
+    text:
+      vi: 뭐 해요? nghĩa là "Bạn (đang) làm gì?". Bạn trả lời bằng một câu có động từ đã chia ở cuối - 책을 읽어요, 운동해요 - và thường bỏ 저는 vì người hỏi đã biết đang nói về bạn.
+  - type: explain
+    text:
+      vi: Khi đặt một câu, hãy kiểm tra ba bước - động từ ở cuối và đã chia -아요/-어요; mỗi danh từ có đúng trợ từ; nếu phủ định thì 안 đứng sát động từ. Đây chính là những chỗ người Việt hay sai nhất.
+  - type: explain
+    text:
+      vi: Nhớ nhanh bốn trợ từ - 이/가 cho thứ "có/không có"; 을/를 cho thứ bị tác động (ăn, đọc, gặp); 에 cho nơi đi tới hoặc nơi có mặt; 에서 cho nơi diễn ra hành động.
+  - type: deep_explain
+    text:
+      vi: Trong hội thoại, người Hàn bỏ rất nhiều thứ đã rõ - chủ ngữ, đôi khi cả trợ từ (밥 먹어요?, 어디 가요?). Khi mới học, bạn nên nói đủ trợ từ để luyện phản xạ chọn 을/를, 에/에서; nói đủ không bao giờ sai. Một câu hỏi có/không được trả lời bằng 네 hoặc 아니요 rồi lặp lại động từ - 가요? → 네, 가요 / 아니요, 안 가요.
+  - type: example
+    target: 지금 뭐 해요? - 도서관에서 공부해요.
+    target_lang: ko
+    translation:
+      vi: Bây giờ bạn đang làm gì? - Tôi đang học ở thư viện.
+    note:
+      vi: Học là hành động ở thư viện nên dùng 에서.
+  - type: example
+    target: 도서관이 어디에 있어요? - 학교 옆에 있어요.
+    target_lang: ko
+    translation:
+      vi: Thư viện ở đâu? - Ở bên cạnh trường học.
+    note:
+      vi: Chỉ vị trí với 있어요 thì dùng 에.
+  - type: example
+    target: 오늘 회사에 가요? - 아니요, 안 가요. 집에서 영화를 봐요.
+    target_lang: ko
+    translation:
+      vi: Hôm nay bạn có đi làm không? - Không, tôi không đi. Tôi xem phim ở nhà.
+    note:
+      vi: 회사에 (nơi đi tới) và 집에서 (nơi xem phim) dùng hai trợ từ khác nhau.
+  - type: example
+    target: 편의점에 가요? - 네, 집에 우유가 없어요.
+    target_lang: ko
+    translation:
+      vi: Bạn đi cửa hàng tiện lợi à? - Vâng, ở nhà hết sữa rồi.
+    note:
+      vi: 집에 우유가 없어요 nghĩa đen là "ở nhà không có sữa".
+  - type: common_mistake
+    wrong: 저는 도서관에 책을 읽어요.
+    right: 저는 도서관에서 책을 읽어요.
+    target_lang: ko
+    note:
+      vi: Đọc sách là hành động diễn ra ở thư viện, nên dùng 에서. Tiếng Việt chỉ có một chữ "ở" nên người Việt rất dễ dùng nhầm 에.
+  - type: common_mistake
+    wrong: 지금 뭐 해요? - 운동하다.
+    right: 지금 뭐 해요? - 운동해요.
+    target_lang: ko
+    note:
+      vi: Trả lời bằng dạng từ điển nghe như đang đọc từ điển và thiếu lịch sự. Hãy chia sang -아요/-어요 - 운동해요.
+  - type: common_mistake
+    wrong: 저는 안 운동해요.
+    right: 저는 운동 안 해요.
+    target_lang: ko
+    note:
+      vi: Với động từ "danh từ + 하다", 안 đứng sát 해요, không đứng trước danh từ.
+  - type: summary
+    points:
+      - vi: 뭐 해요? - Bạn (đang) làm gì?; trả lời bằng động từ đã chia ở cuối câu.
+      - vi: 이/가 + 있어요/없어요 · 을/를 + động từ tác động · 에 + 가요/와요/있어요 · 에서 + hành động.
+      - vi: Động từ luôn đứng cuối; các cụm có trợ từ đứng trước có thể đổi chỗ.
+      - vi: 안 đứng sát động từ - 안 가요, 운동 안 해요; "không có" là 없어요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:dl-review-listen-mwo-haeyo
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:phrase-mwo-haeyo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 지금 뭐 해요?
+      options:
+        - { id: q2m, text: Bây giờ bạn đang làm gì?, lang: vi }
+        - { id: w6z, text: Bây giờ bạn đi đâu?, lang: vi }
+        - { id: e9h, text: Bây giờ bạn ở đâu?, lang: vi }
+        - { id: r3k, text: Bây giờ bạn có gì?, lang: vi }
+    answer:
+      correct_option_id: q2m
+    explanation:
+      vi: 뭐 là "gì", 해요 là "làm", nên 뭐 해요? là "làm gì?". "Đi đâu?" là 어디에 가요?, "ở đâu?" là 어디에 있어요?
+    display_answer: Bây giờ bạn đang làm gì?
+
+  - key: ko:exercise:dl-review-mcq-where-go
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:gram-e-destination
+    prompt:
+      stem: "A hỏi 어디에 가요? Chọn câu trả lời đúng của B: \"Tôi đi ngân hàng.\""
+      stem_lang: vi
+      options:
+        - { id: t5a, text: 은행에 가요., lang: ko }
+        - { id: y1s, text: 은행에서 가요., lang: ko }
+        - { id: u8d, text: 은행이 있어요., lang: ko }
+        - { id: i4f, text: 은행을 가요., lang: ko }
+    answer:
+      correct_option_id: t5a
+    explanation:
+      vi: Ngân hàng là nơi đi tới với 가요, nên dùng 에. 에서 dành cho nơi làm việc gì, 은행이 있어요 là "có ngân hàng", còn 을 không dùng cho nơi đến trong bài này.
+    display_answer: 은행에 가요.
+
+  - key: ko:exercise:dl-review-fill-particles-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eseo
+    prompt:
+      template: "도서관{{b1}} 친구{{b2}} 만나요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Tôi gặp bạn ở thư viện."
+        - "Gợi ý: gặp là hành động diễn ra ở thư viện; 구 không có patchim."
+    answer:
+      blanks:
+        b1: [에서]
+        b2: [를]
+    known_wrong:
+      - answer: 에
+        feedback_vi: Gặp bạn là hành động ở thư viện, nên dùng 에서 chứ không phải 에.
+        error_tag: particle_e_eseo
+      - answer: 을
+        feedback_vi: 구 không có patchim nên dùng 를 - 친구를.
+        error_tag: particle_eul_reul
+      - answer: 가
+        feedback_vi: 친구가 biến bạn thành người đi gặp. Người được gặp dùng 를.
+        error_tag: particle_eul_reul
+    explanation:
+      vi: Gặp gỡ diễn ra ở thư viện nên dùng 도서관에서. Người được gặp là tân ngữ, 구 không có patchim nên dùng 친구를.
+    display_answer: 도서관에서 친구를 만나요.
+
+  - key: ko:exercise:dl-review-mcq-negation
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-an-negation
+    prompt:
+      stem: Câu nào nghĩa là "Tôi không tập thể dục"?
+      stem_lang: vi
+      options:
+        - { id: o7b, text: 운동 안 해요., lang: ko }
+        - { id: p2n, text: 안 운동해요., lang: ko }
+        - { id: a6c, text: 운동해요 안., lang: ko }
+        - { id: s9v, text: 운동 없어요., lang: ko }
+    answer:
+      correct_option_id: o7b
+    explanation:
+      vi: 운동하다 là "danh từ + 하다", nên 안 đứng sát 해요 - 운동 안 해요. 안 không đứng sau động từ, và 없어요 là "không có", không phải "không làm".
+    display_answer: 운동 안 해요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:dl-review-fill-watch
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:verb-boda
+    prompt:
+      template: "A - 지금 뭐 해요? B - 집에서 영화를 {{b1}}. (xem)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [봐요, 보아요]
+    known_wrong:
+      - answer: 보요
+        feedback_vi: 보 có nguyên âm ㅗ nên thêm -아요, rồi ㅗ + 아 gộp thành ㅘ - 봐요.
+        error_tag: verb_conjugation
+      - answer: 보어요
+        feedback_vi: Nguyên âm ㅗ đi với -아요, không phải -어요 - 봐요.
+        error_tag: verb_conjugation
+      - answer: 보다
+        feedback_vi: 보다 là dạng từ điển. Khi trả lời hãy dùng 봐요.
+        error_tag: dictionary_form
+      - answer: 봐
+        feedback_vi: Thiếu 요 - không có 요 là cách nói thân mật. Hãy dùng 봐요.
+        error_tag: polite_ending
+    explanation:
+      vi: 보다 có nguyên âm ㅗ nên thêm -아요; không có patchim nên gộp thành 봐요. Dạng chưa gộp 보아요 cũng đúng nhưng ít dùng khi nói.
+    display_answer: 집에서 영화를 봐요.
+
+  - key: ko:exercise:dl-review-translate-store-front
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:pos-ap
+    prompt:
+      source_text: Trước nhà tôi có cửa hàng tiện lợi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 집 앞에 편의점이 있어요.
+        - 우리 집 앞에 편의점이 있어요.
+        - 저희 집 앞에 편의점이 있어요.
+        - 편의점이 집 앞에 있어요.
+        - 편의점이 우리 집 앞에 있어요.
+        - 편의점이 저희 집 앞에 있어요.
+    known_wrong:
+      - answer: 앞 집에 편의점이 있어요.
+        feedback_vi: Từ vị trí đứng sau danh từ - "trước nhà" là 집 앞에.
+        error_tag: word_order
+      - answer: 집 앞에서 편의점이 있어요.
+        feedback_vi: Với 있어요, vị trí dùng 에, không dùng 에서.
+        error_tag: particle_e_eseo
+      - answer: 집 앞에 편의점가 있어요.
+        feedback_vi: 점 có patchim ㅁ nên dùng 이 - 편의점이.
+        error_tag: particle_i_ga
+      - answer: 집 앞에 편의점이 있다.
+        feedback_vi: 있다 là dạng từ điển. Khi nói hãy dùng 있어요.
+        error_tag: dictionary_form
+    explanation:
+      vi: Cụm "trước nhà" là 집 앞 + 에 (vị trí với 있어요); cửa hàng tiện lợi là thứ "có" nên đi với 이. "Nhà tôi" thường nói là 우리 집 hoặc 저희 집, hoặc chỉ 집 khi đã rõ.
+    display_answer: 집 앞에 편의점이 있어요.
+
+  - key: ko:exercise:dl-review-translate-not-company
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-an-negation
+    prompt:
+      source_text: Tôi không đi đến công ty.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 회사에 안 가요.
+        - 저는 회사에 안 가요.
+        - 전 회사에 안 가요.
+        - 회사에 가지 않아요.
+        - 저는 회사에 가지 않아요.
+    known_wrong:
+      - answer: 저는 안 회사에 가요.
+        feedback_vi: 안 phải đứng sát động từ - 회사에 안 가요.
+        error_tag: negation_position
+      - answer: 저는 회사에서 안 가요.
+        feedback_vi: Công ty là nơi đi tới, nên dùng 에 - 회사에 안 가요.
+        error_tag: particle_e_eseo
+      - answer: 저는 회사에 없어요.
+        feedback_vi: 회사에 없어요 là "tôi không có mặt ở công ty". "Không đi" là 안 가요.
+        error_tag: negation_eopda
+      - answer: 저는 회사에 안 와요.
+        feedback_vi: Bạn đi ra xa chỗ mình đang ở để tới công ty, nên dùng 가요.
+        error_tag: verb_ga_wa
+    explanation:
+      vi: Công ty là nơi đi tới nên dùng 회사에; phủ định bằng 안 đặt sát động từ - 안 가요. Cách dài 가지 않아요 cũng đúng.
+    display_answer: 저는 회사에 안 가요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:dl-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:phrase-mwo-haeyo
+    prompt:
+      source_text: 지금 도서관에서 책을 읽어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bây giờ tôi đang đọc sách ở thư viện.
+        - Bây giờ tôi đọc sách ở thư viện.
+        - Tôi đang đọc sách ở thư viện.
+        - Giờ tôi đang đọc sách ở thư viện.
+        - Bây giờ tôi đang đọc sách trong thư viện.
+        - Bây giờ tôi đang đọc sách tại thư viện.
+        - Hiện giờ tôi đang đọc sách ở thư viện.
+        - Bây giờ mình đang đọc sách ở thư viện.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bây giờ tôi đi đến thư viện đọc sách.
+        feedback_vi: Câu dùng 도서관에서 - hành động đọc sách đang diễn ra ở thư viện, không phải đi tới thư viện.
+        error_tag: particle_e_eseo
+      - answer: Bây giờ tôi đang viết sách ở thư viện.
+        feedback_vi: 읽어요 là "đọc"; "viết" là 써요.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 지금 là "bây giờ", 도서관에서 là "ở thư viện" (nơi hành động diễn ra), 책을 읽어요 là "đọc sách". Đuôi -어요 dùng cả cho "đang", nên tiếng Việt thêm "đang" rất tự nhiên.
+    display_answer: Bây giờ tôi đang đọc sách ở thư viện.
+
+  - key: ko:exercise:dl-review-order-not-eat-home
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-sov
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi không ăn cơm ở nhà.\""
+      tokens:
+        - { id: t-meogeo, text: 먹어요 }
+        - { id: t-an, text: 안 }
+        - { id: t-babreul, text: 밥를 }
+        - { id: t-jibe, text: 집에 }
+        - { id: t-babeul, text: 밥을 }
+        - { id: t-jeoneun, text: 저는 }
+        - { id: t-jibeseo, text: 집에서 }
+    answer:
+      orders:
+        - [t-jeoneun, t-jibeseo, t-babeul, t-an, t-meogeo]
+        - [t-jeoneun, t-babeul, t-jibeseo, t-an, t-meogeo]
+        - [t-jibeseo, t-jeoneun, t-babeul, t-an, t-meogeo]
+        - [t-jibeseo, t-babeul, t-jeoneun, t-an, t-meogeo]
+        - [t-babeul, t-jeoneun, t-jibeseo, t-an, t-meogeo]
+        - [t-babeul, t-jibeseo, t-jeoneun, t-an, t-meogeo]
+        - [t-jibeseo, t-babeul, t-an, t-meogeo]
+        - [t-babeul, t-jibeseo, t-an, t-meogeo]
+    explanation:
+      vi: Ăn là hành động ở nhà nên dùng 집에서; 밥 có patchim nên dùng 밥을; 안 đứng sát 먹어요 ở cuối câu. Các cụm có trợ từ có thể đổi chỗ, tự nhiên nhất là 저는 집에서 밥을 안 먹어요.
+    display_answer: 저는 집에서 밥을 안 먹어요.
+
+  - key: ko:exercise:dl-review-mcq-dialogue
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:place-hoesa
+    prompt:
+      stem: Đồng nghiệp hỏi 오늘 회사에 가요? Hôm nay bạn không đi làm mà ở nhà xem phim. Câu trả lời nào đúng?
+      stem_lang: vi
+      options:
+        - { id: d3x, text: "아니요, 안 가요. 집에서 영화를 봐요.", lang: ko }
+        - { id: f7q, text: "아니요, 안 가요. 집에 영화를 봐요.", lang: ko }
+        - { id: g1w, text: "아니요, 가요 안. 집에서 영화를 봐요.", lang: ko }
+        - { id: h5e, text: "아니요, 없어요. 집에서 영화를 봐요.", lang: ko }
+    answer:
+      correct_option_id: d3x
+    explanation:
+      vi: 안 đứng trước động từ - 안 가요; xem phim là hành động ở nhà nên dùng 집에서. Các phương án khác dùng 에 thay cho 에서, đặt 안 sau động từ, hoặc dùng 없어요 ("không có") thay cho "không đi".
+    display_answer: 아니요, 안 가요. 집에서 영화를 봐요.

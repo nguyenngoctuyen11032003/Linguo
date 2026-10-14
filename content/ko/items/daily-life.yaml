@@ -1,0 +1,784 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Sinh hoạt hằng ngày". Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+schema_version: 1
+demo: true
+source: src:linguo-demo
+items:
+  # ================= bài 1: có / không có + nơi chốn =================
+  - key: ko:item:gram-itda-eopda
+    type: grammar_point
+    level: topik1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N이/가 있어요 · N이/가 없어요
+      romanization: i/ga isseoyo · i/ga eopseoyo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Có N / không có N (sở hữu hoặc tồn tại). Danh từ có patchim + 이, không có patchim + 가.
+      examples:
+        - target: 은행이 있어요.
+          translation:
+            vi: Có ngân hàng.
+        - target: 시간이 없어요.
+          translation:
+            vi: Tôi không có thời gian.
+      pronunciation_note:
+        vi: 있어요 đọc nối thành [이써요]; 없어요 đọc là [업써요] - ㅅ trong ㅄ chuyển sang âm sau và đọc căng.
+      confusion:
+        vi: Tiếng Việt nói "không có" bằng cách thêm "không", còn tiếng Hàn dùng hẳn một từ khác là 없어요. Không nói "안 있어요".
+
+  - key: ko:item:place-jip
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 집
+      romanization: jip
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà
+      examples:
+        - target: 집에 가요.
+          translation:
+            vi: Tôi về nhà.
+      pronunciation_note:
+        vi: ㅂ cuối từ chỉ khép môi, không bật ra, gần "xíp" ngậm môi. Khi thêm 에 thì nối âm - 집에 [지베].
+
+  - key: ko:item:place-hakgyo
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 학교
+      romanization: hakgyo
+      pos: danh từ
+    back:
+      meaning:
+        vi: trường học
+      examples:
+        - target: 학교가 있어요.
+          translation:
+            vi: Có trường học.
+      pronunciation_note:
+        vi: Đọc là [학꾜] - ㄱ đứng sau patchim ㄱ thì đọc căng thành ㄲ.
+
+  - key: ko:item:place-hoesa
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 회사
+      romanization: hoesa
+      pos: danh từ
+    back:
+      meaning:
+        vi: công ty
+      examples:
+        - target: 회사에 가요.
+          translation:
+            vi: Tôi đi làm (đến công ty).
+      pronunciation_note:
+        vi: 회 trong tiếng Seoul hiện nay thường đọc gần [훼], tức "huê". Không đọc thành "hô-i" hai âm tiết.
+
+  - key: ko:item:place-doseogwan
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 도서관
+      romanization: doseogwan
+      pos: danh từ
+    back:
+      meaning:
+        vi: thư viện
+      examples:
+        - target: 도서관이 어디에 있어요?
+          translation:
+            vi: Thư viện ở đâu?
+      pronunciation_note:
+        vi: 서 có nguyên âm ㅓ ("ơ", không tròn môi), không phải 소. 관 = ㄱ + ㅘ + ㄴ, đọc gần "quan".
+
+  - key: ko:item:place-eunhaeng
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 은행
+      romanization: eunhaeng
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngân hàng
+      examples:
+        - target: 은행에 가요.
+          translation:
+            vi: Tôi đi ngân hàng.
+      pronunciation_note:
+        vi: Khi nói tự nhiên, ㅎ giữa hai âm yếu đi nên nghe gần [으냉]. ㅡ là "ư", không phải "u".
+
+  - key: ko:item:place-byeongwon
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 병원
+      romanization: byeongwon
+      pos: danh từ
+    back:
+      meaning:
+        vi: bệnh viện
+      examples:
+        - target: 병원이 학교 옆에 있어요.
+          translation:
+            vi: Bệnh viện ở bên cạnh trường học.
+      pronunciation_note:
+        vi: 병 đọc gần "biơng", 원 gần "uơn". Âm Hán Việt "bệnh viện" giúp bạn nhớ từ này.
+
+  - key: ko:item:place-sijang
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 시장
+      romanization: sijang
+      pos: danh từ
+    back:
+      meaning:
+        vi: chợ
+      examples:
+        - target: 시장에 가요.
+          translation:
+            vi: Tôi đi chợ.
+      pronunciation_note:
+        vi: 시 đọc gần "si", 장 gần "chang" với ㅈ không bật hơi. Âm Hán Việt là "thị trường".
+
+  - key: ko:item:place-pyeonuijeom
+    type: vocab
+    level: topik1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 편의점
+      romanization: pyeonuijeom
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa hàng tiện lợi
+      examples:
+        - target: 집 앞에 편의점이 있어요.
+          translation:
+            vi: Trước nhà có cửa hàng tiện lợi.
+      pronunciation_note:
+        vi: Đọc là [펴니점] - ㄴ nối sang âm sau, và ㅢ sau phụ âm đọc thành ㅣ. ㅍ bật hơi, hai môi chạm nhau, không phải "ph" (f) tiếng Việt.
+
+  # ================= bài 2: vị trí, đi và đến =================
+  - key: ko:item:gram-e-location
+    type: grammar_point
+    level: topik1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N에 있어요
+      romanization: e isseoyo
+      pos: trợ từ chỉ nơi chốn
+    back:
+      meaning:
+        vi: Ở N (vị trí của người, vật). 에 gắn ngay sau danh từ chỉ nơi chốn, không đổi theo patchim.
+      examples:
+        - target: 친구가 집에 있어요.
+          translation:
+            vi: Bạn tôi ở nhà.
+        - target: 책이 가방 안에 있어요.
+          translation:
+            vi: Quyển sách ở trong cặp.
+      pronunciation_note:
+        vi: 에 đọc như "ê" và nối với patchim phía trước - 집에 [지베], 학교에 [학꾜에].
+      confusion:
+        vi: Tiếng Việt đặt "ở" trước nơi chốn, còn tiếng Hàn đặt 에 sau nơi chốn - "ở nhà" là 집에, không phải 에 집.
+
+  - key: ko:item:pos-wi
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 위
+      romanization: wi
+      pos: danh từ chỉ vị trí
+    back:
+      meaning:
+        vi: trên, phía trên
+      examples:
+        - target: 책상 위에 책이 있어요.
+          translation:
+            vi: Trên bàn có sách.
+      pronunciation_note:
+        vi: Đọc gần "uy" lướt nhanh thành một âm. ㅟ = ㅜ + ㅣ.
+
+  - key: ko:item:pos-arae
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 아래
+      romanization: arae
+      pos: danh từ chỉ vị trí
+    back:
+      meaning:
+        vi: dưới, phía dưới
+      examples:
+        - target: 의자 아래에 가방이 있어요.
+          translation:
+            vi: Dưới ghế có cái cặp.
+      pronunciation_note:
+        vi: ㄹ giữa hai nguyên âm đọc nhẹ như "r" lướt - [아래] gần "a-re". ㅐ đọc như "e".
+
+  - key: ko:item:pos-ap
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 앞
+      romanization: ap
+      pos: danh từ chỉ vị trí
+    back:
+      meaning:
+        vi: trước, phía trước
+      examples:
+        - target: 학교 앞에 시장이 있어요.
+          translation:
+            vi: Trước trường có chợ.
+      pronunciation_note:
+        vi: Đứng một mình đọc [압] (ngậm môi). Thêm 에 thì ㅍ nối sang - 앞에 [아페].
+
+  - key: ko:item:pos-dwi
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 뒤
+      romanization: dwi
+      pos: danh từ chỉ vị trí
+    back:
+      meaning:
+        vi: sau, phía sau
+      examples:
+        - target: 집 뒤에 공원이 있어요.
+          translation:
+            vi: Sau nhà có công viên.
+      pronunciation_note:
+        vi: Đọc gần "tuy" lướt một âm, ㄷ không bật hơi. Đừng nhầm với 위 (trên).
+
+  - key: ko:item:pos-yeop
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 옆
+      romanization: yeop
+      pos: danh từ chỉ vị trí
+    back:
+      meaning:
+        vi: bên cạnh
+      examples:
+        - target: 은행 옆에 편의점이 있어요.
+          translation:
+            vi: Bên cạnh ngân hàng có cửa hàng tiện lợi.
+      pronunciation_note:
+        vi: Đứng một mình đọc [엽] gần "yớp" ngậm môi; 옆에 nối âm thành [여페].
+
+  - key: ko:item:pos-an
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 안
+      romanization: an
+      pos: danh từ chỉ vị trí
+    back:
+      meaning:
+        vi: trong, bên trong
+      examples:
+        - target: 가방 안에 책이 있어요.
+          translation:
+            vi: Trong cặp có sách.
+      pronunciation_note:
+        vi: Đọc như "an"; 안에 nối âm thành [아내].
+      confusion:
+        vi: 안 (bên trong) viết giống hệt 안 (không) dùng để phủ định động từ. 안 đứng sau danh từ và có 에 là "bên trong"; 안 đứng ngay trước động từ là "không".
+
+  - key: ko:item:q-eodi
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 어디
+      romanization: eodi
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: đâu, ở đâu
+      examples:
+        - target: 화장실이 어디에 있어요?
+          translation:
+            vi: Nhà vệ sinh ở đâu?
+        - target: 어디에 가요?
+          translation:
+            vi: Bạn đi đâu đấy?
+      pronunciation_note:
+        vi: 어 là "ơ" không tròn môi, không đọc thành 오 "ô". Khi nói nhanh, 어디에 thường rút còn 어디 - 어디 가요?
+
+  - key: ko:item:gram-e-destination
+    type: grammar_point
+    level: topik1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N에 가요 · N에 와요
+      romanization: e gayo · e wayo
+      pos: trợ từ chỉ điểm đến
+    back:
+      meaning:
+        vi: Đi đến N / đến N. Với động từ chuyển động, 에 đánh dấu nơi bạn đi tới.
+      examples:
+        - target: 학교에 가요.
+          translation:
+            vi: Tôi đi học (đến trường).
+        - target: 친구가 집에 와요.
+          translation:
+            vi: Bạn tôi đến nhà.
+      pronunciation_note:
+        vi: 에 nối với patchim phía trước - 은행에 [은행에], 시장에 [시장에]. 와요 đọc lướt "oa-yô".
+      confusion:
+        vi: Tiếng Việt nói "đi chợ", "về nhà" không cần giới từ, nhưng tiếng Hàn bắt buộc có 에 - 시장에 가요, khi nói nhanh người Hàn đôi khi bỏ 에, nhưng bạn nên luôn giữ 에.
+
+  - key: ko:item:verb-gada
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 가다
+      romanization: gada
+      pos: động từ
+    back:
+      meaning:
+        vi: đi
+      examples:
+        - target: 회사에 가요.
+          translation:
+            vi: Tôi đi đến công ty.
+      pronunciation_note:
+        vi: ㄱ đầu từ đọc nhẹ, gần giữa "c" và "g". Dạng nói lịch sự là 가요, không nói 가다 khi giao tiếp.
+
+  - key: ko:item:verb-oda
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 오다
+      romanization: oda
+      pos: động từ
+    back:
+      meaning:
+        vi: đến, tới (về phía người nói)
+      examples:
+        - target: 동생이 와요.
+          translation:
+            vi: Em tôi đang đến.
+      pronunciation_note:
+        vi: 오 + 아요 gộp thành 와요, đọc lướt "oa-yô" thành hai âm tiết.
+
+  # ================= bài 3: thì hiện tại 해요체 + phủ định 안 =================
+  - key: ko:item:gram-haeyo-present
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: -아요 · -어요 · -해요
+      romanization: -ayo · -eoyo · -haeyo
+      pos: đuôi câu lịch sự (hiện tại)
+    back:
+      meaning:
+        vi: Đuôi lịch sự thì hiện tại. Bỏ 다; nguyên âm cuối của thân là ㅏ hoặc ㅗ thì thêm -아요, nguyên âm khác thêm -어요, động từ 하다 thành 해요.
+      examples:
+        - target: 가다 → 가요, 오다 → 와요, 보다 → 봐요
+          translation:
+            vi: thân có ㅏ/ㅗ + 아요, nguyên âm gộp lại
+        - target: 먹다 → 먹어요, 마시다 → 마셔요, 쓰다 → 써요
+          translation:
+            vi: nguyên âm khác + 어요
+        - target: 공부하다 → 공부해요
+          translation:
+            vi: 하다 → 해요
+      pronunciation_note:
+        vi: Thân có patchim thì nối âm - 먹어요 [머거요], 읽어요 [일거요]. Đuôi 요 đọc "yô" nhẹ, lên giọng ở câu hỏi.
+      confusion:
+        vi: Dạng có 다 (먹다, 가다) chỉ là dạng tra từ điển; nói chuyện với người lạ, người lớn thì dùng 먹어요, 가요.
+
+  - key: ko:item:gram-an-negation
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: 안 + động từ
+      romanization: an
+      pos: phủ định
+    back:
+      meaning:
+        vi: Không (làm gì). 안 đứng ngay trước động từ; với động từ "danh từ + 하다", 안 chen vào giữa - 공부 안 해요.
+      examples:
+        - target: 오늘은 학교에 안 가요.
+          translation:
+            vi: Hôm nay tôi không đi học.
+        - target: 주말에는 일 안 해요.
+          translation:
+            vi: Cuối tuần tôi không làm việc.
+      pronunciation_note:
+        vi: 안 nối âm với động từ bắt đầu bằng nguyên âm - 안 와요 [아놔요], 안 일어나요 [아니러나요].
+      confusion:
+        vi: Không nói 안 공부해요 - 안 phải đứng ngay trước 해요. Và "không có" là 없어요, không phải 안 있어요.
+
+  - key: ko:item:verb-jada
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 자다
+      romanization: jada
+      pos: động từ
+    back:
+      meaning:
+        vi: ngủ
+      examples:
+        - target: 동생이 자요.
+          translation:
+            vi: Em tôi đang ngủ.
+      pronunciation_note:
+        vi: 자 + 아요 gộp thành 자요. ㅈ đầu từ không bật hơi, gần "ch" nhẹ.
+
+  - key: ko:item:verb-ireonada
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 일어나다
+      romanization: ireonada
+      pos: động từ
+    back:
+      meaning:
+        vi: thức dậy, đứng dậy
+      examples:
+        - target: 저는 일찍 일어나요.
+          translation:
+            vi: Tôi dậy sớm.
+      pronunciation_note:
+        vi: ㄹ nối sang âm sau nên đọc [이러나다], 일어나요 [이러나요]. Thân kết thúc bằng ㅏ nên chỉ thêm 요.
+
+  - key: ko:item:verb-meokda
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 먹다
+      romanization: meokda
+      pos: động từ
+    back:
+      meaning:
+        vi: ăn
+      examples:
+        - target: 밥을 먹어요.
+          translation:
+            vi: Tôi ăn cơm.
+      pronunciation_note:
+        vi: 먹다 đọc [먹따]; 먹어요 nối âm thành [머거요]. 머 là "mơ", không phải "mô".
+
+  - key: ko:item:verb-masida
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 마시다
+      romanization: masida
+      pos: động từ
+    back:
+      meaning:
+        vi: uống
+      examples:
+        - target: 물을 마셔요.
+          translation:
+            vi: Tôi uống nước.
+      pronunciation_note:
+        vi: 시 + 어요 gộp thành 셔요, nên 마셔요 đọc gần "ma-syơ-yô". Đừng viết 마시어요 khi nói chuyện.
+
+  - key: ko:item:verb-boda
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 보다
+      romanization: boda
+      pos: động từ
+    back:
+      meaning:
+        vi: xem, nhìn
+      examples:
+        - target: 영화를 봐요.
+          translation:
+            vi: Tôi xem phim.
+      pronunciation_note:
+        vi: 보 + 아요 gộp thành 봐요, đọc lướt "boa-yô".
+
+  - key: ko:item:verb-gongbuhada
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 공부하다
+      romanization: gongbuhada
+      pos: động từ
+    back:
+      meaning:
+        vi: học, học bài
+      examples:
+        - target: 저는 한국어를 공부해요.
+          translation:
+            vi: Tôi học tiếng Hàn.
+      pronunciation_note:
+        vi: 공 là "công" và ㅂ trong 부 đọc nhẹ gần "bu". Âm Hán Việt "công phu" giúp bạn nhớ.
+
+  - key: ko:item:verb-ilhada
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 일하다
+      romanization: ilhada
+      pos: động từ
+    back:
+      meaning:
+        vi: làm việc
+      examples:
+        - target: 형은 은행에서 일해요.
+          translation:
+            vi: Anh tôi làm việc ở ngân hàng.
+      pronunciation_note:
+        vi: ㅎ sau ㄹ gần như mất khi nói, nên 일해요 nghe như [이래요].
+
+  - key: ko:item:verb-undonghada
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 운동하다
+      romanization: undonghada
+      pos: động từ
+    back:
+      meaning:
+        vi: tập thể dục, chơi thể thao
+      examples:
+        - target: 저는 매일 운동해요.
+          translation:
+            vi: Tôi tập thể dục mỗi ngày.
+      pronunciation_note:
+        vi: 운 là "un", 동 đọc gần "đông" vì ㄷ sau âm mũi đọc nhẹ, không bật hơi. Âm Hán Việt là "vận động".
+
+  # ================= bài 4: tân ngữ 을/를, 에서, trật tự SOV =================
+  - key: ko:item:gram-eul-reul
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N을 · N를
+      romanization: eul · reul
+      pos: trợ từ tân ngữ
+    back:
+      meaning:
+        vi: Đánh dấu tân ngữ (cái bị ăn, đọc, xem…). Danh từ có patchim + 을, không có patchim + 를.
+      examples:
+        - target: 책을 읽어요.
+          translation:
+            vi: Tôi đọc sách.
+        - target: 친구를 만나요.
+          translation:
+            vi: Tôi gặp bạn.
+      pronunciation_note:
+        vi: 을 nối âm với patchim trước - 책을 [채글], 밥을 [바블]. 를 đọc gần "rưl", ㅡ là "ư".
+      confusion:
+        vi: Chọn theo chữ cuối của danh từ, không theo động từ - 물을 (có ㄹ) nhưng 커피를 (không có patchim).
+
+  - key: ko:item:gram-eseo
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N에서
+      romanization: eseo
+      pos: trợ từ nơi diễn ra hành động
+    back:
+      meaning:
+        vi: Ở N (nơi bạn làm một việc gì đó). Dùng với động từ hành động như 공부해요, 일해요, 먹어요.
+      examples:
+        - target: 도서관에서 공부해요.
+          translation:
+            vi: Tôi học ở thư viện.
+        - target: 회사에서 일해요.
+          translation:
+            vi: Tôi làm việc ở công ty.
+      pronunciation_note:
+        vi: 에서 đọc "ê-xơ", nối với patchim trước - 집에서 [지베서]. 서 là "xơ", không phải "xô".
+      confusion:
+        vi: Tiếng Việt dùng "ở" cho cả hai, nhưng tiếng Hàn tách ra - đang ở đâu (있어요) hay đi đâu (가요) dùng 에, làm việc gì ở đâu dùng 에서.
+
+  - key: ko:item:gram-sov
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Chủ ngữ + Tân ngữ + Động từ
+      romanization: S-O-V
+      pos: trật tự câu
+    back:
+      meaning:
+        vi: Câu tiếng Hàn luôn kết thúc bằng động từ. Tiếng Việt là "Tôi ăn cơm" (S-V-O), tiếng Hàn là 저는 밥을 먹어요 (S-O-V).
+      examples:
+        - target: 저는 책을 읽어요.
+          translation:
+            vi: Tôi đọc sách.
+        - target: 친구가 도서관에서 숙제를 해요.
+          translation:
+            vi: Bạn tôi làm bài tập ở thư viện.
+      pronunciation_note:
+        vi: Đọc liền mỗi cụm "danh từ + trợ từ" như một khối, hơi ngắt nhẹ giữa các cụm - 저는 / 책을 / 읽어요.
+      confusion:
+        vi: Nhờ có trợ từ, các cụm trước động từ có thể đổi chỗ cho nhau, nhưng động từ thì luôn đứng cuối.
+
+  - key: ko:item:verb-ikda
+    type: vocab
+    level: topik1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 읽다
+      romanization: ikda
+      pos: động từ
+    back:
+      meaning:
+        vi: đọc
+      examples:
+        - target: 신문을 읽어요.
+          translation:
+            vi: Tôi đọc báo.
+      pronunciation_note:
+        vi: 읽다 đọc [익따], nhưng 읽어요 đọc [일거요] - ㄱ trong ㄺ nối sang âm sau. Nguyên âm ㅣ nên thêm -어요.
+
+  - key: ko:item:verb-sseuda
+    type: vocab
+    level: topik1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 쓰다
+      romanization: sseuda
+      pos: động từ
+    back:
+      meaning:
+        vi: viết
+      examples:
+        - target: 편지를 써요.
+          translation:
+            vi: Tôi viết thư.
+      pronunciation_note:
+        vi: ㅆ căng, gần "x" nén mạnh. ㅡ gặp -어요 thì rơi mất - 쓰 + 어요 → 써요.
+
+  - key: ko:item:verb-mannada
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 만나다
+      romanization: mannada
+      pos: động từ
+    back:
+      meaning:
+        vi: gặp
+      examples:
+        - target: 친구를 만나요.
+          translation:
+            vi: Tôi gặp bạn.
+      pronunciation_note:
+        vi: Hai ㄴ liền nhau đọc kéo dài "man-na". Thân kết thúc bằng ㅏ nên chỉ thêm 요 - 만나요.
+      confusion:
+        vi: Tiếng Việt nói "gặp bạn", nên người Việt hay dùng 친구가 hoặc 친구와. Người được gặp đi với 을/를 - 친구를 만나요.
+
+  - key: ko:item:noun-chaek
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 책
+      romanization: chaek
+      pos: danh từ
+    back:
+      meaning:
+        vi: sách, quyển sách
+      examples:
+        - target: 도서관에 책이 많아요.
+          translation:
+            vi: Thư viện có nhiều sách.
+      pronunciation_note:
+        vi: ㅊ bật hơi, ㄱ cuối chỉ chặn hơi, không bật ra - gần "chéc". Thêm trợ từ thì nối âm - 책을 [채글].
+
+  # ================= bài 5: ôn tập =================
+  - key: ko:item:phrase-mwo-haeyo
+    type: phrase
+    level: topik1
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: 뭐 해요?
+      romanization: mwo haeyo?
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Bạn làm gì đấy? / Bạn đang làm gì?
+      examples:
+        - target: 지금 뭐 해요? - 책을 읽어요.
+          translation:
+            vi: Bây giờ bạn làm gì đấy? - Tôi đang đọc sách.
+      pronunciation_note:
+        vi: 뭐 đọc lướt gần "muơ" một âm tiết. Câu hỏi lên giọng ở cuối, còn câu trả lời thì hạ giọng.
+      confusion:
+        vi: Tiếng Hàn dùng chung đuôi -아요/-어요 cho cả "làm" và "đang làm", nên 책을 읽어요 vừa là "tôi đọc sách" vừa là "tôi đang đọc sách".

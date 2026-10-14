@@ -1,0 +1,353 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:whose-family
+order_index: 2
+level: a1
+title:
+  vi: Của tôi, của anh ấy, của Lan
+objectives:
+  - vi: Dùng đúng my, your, his, her, our, their trước danh từ.
+  - vi: Chọn his hay her theo người sở hữu, không theo người được nói tới.
+  - vi: Nói "mẹ của Lan" bằng Lan's mother và gọi tên họ hàng (uncle, aunt, cousin).
+estimated_minutes: 12
+skills: [grammar, vocabulary, writing]
+prerequisites: [en:lesson:my-family]
+items:
+  - item: en:item:possessive-adjectives
+  - item: en:item:his
+  - item: en:item:her
+  - item: en:item:our
+  - item: en:item:their
+  - item: en:item:possessive-s
+  - item: en:item:uncle
+  - item: en:item:aunt
+  - item: en:item:cousin
+  - item: en:item:mother
+    role: reuse
+  - item: en:item:brother
+    role: reuse
+  - item: en:item:sister
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "anh trai cô ấy", "bố mẹ chúng tôi", "mẹ của Lan" bằng tiếng Anh mà không dịch từng chữ.
+  - type: explain
+    text:
+      vi: "Mỗi đại từ có một dạng \"của\" riêng: I → my, you → your, he → his, she → her, we → our, they → their. Dạng này luôn đứng trước danh từ - my mother, their son - ngược với tiếng Việt \"mẹ tôi\", \"con trai họ\"."
+  - type: explain
+    text:
+      vi: His hay her phụ thuộc vào người sở hữu. Lan có một em trai - đó là her brother (vì Lan là nữ), dù em trai là nam. Minh có một chị gái - đó là his sister.
+  - type: explain
+    text:
+      vi: Với tên người, bạn thêm 's rồi đặt danh từ phía sau - Lan's mother (mẹ của Lan), my sister's son (con trai của chị tôi). Không nói "mother of Lan" hay "mother Lan".
+  - type: deep_explain
+    text:
+      vi: "'s đọc theo âm cuối của tên: /s/ sau âm vô thanh (Mark's), /z/ sau âm hữu thanh (Lan's, Nam's), /ɪz/ sau âm gió (Rose's). Nếu danh từ số nhiều đã có -s, chỉ thêm dấu nháy - my parents' house (nhà của bố mẹ tôi). Họ hàng trong tiếng Anh ít từ hơn tiếng Việt: uncle là chú, bác, cậu, dượng; aunt là cô, dì, thím, mợ; cousin là mọi anh chị em họ."
+  - type: example
+    target: Lan loves her younger brother.
+    target_lang: en
+    translation:
+      vi: Lan rất thương em trai mình.
+    note:
+      vi: Người sở hữu là Lan (nữ) nên dùng her, dù brother là nam.
+  - type: example
+    target: Our parents are teachers, and their son is a doctor.
+    target_lang: en
+    translation:
+      vi: Bố mẹ chúng tôi là giáo viên, còn con trai họ là bác sĩ.
+  - type: example
+    target: Lan's mother is my aunt, so Lan is my cousin.
+    target_lang: en
+    translation:
+      vi: Mẹ của Lan là dì tôi, vì vậy Lan là em họ tôi.
+    note:
+      vi: Lan's mother - tên người + 's + danh từ, thứ tự ngược với "mẹ của Lan".
+  - type: example
+    target: My uncle is my father's brother.
+    target_lang: en
+    translation:
+      vi: Chú tôi là em trai của bố tôi.
+    note:
+      vi: Một từ uncle thay cho chú, bác, cậu; tiếng Việt phải chọn theo tuổi và bên nội/ngoại.
+  - type: common_mistake
+    wrong: Lan loves his brother.
+    right: Lan loves her brother.
+    target_lang: en
+    note:
+      vi: Người Việt hay chọn his vì brother là nam. Nhưng người sở hữu là Lan (nữ), nên phải dùng her.
+  - type: common_mistake
+    wrong: This is mother of Lan.
+    right: This is Lan's mother.
+    target_lang: en
+    note:
+      vi: Đừng dịch từng chữ "mẹ của Lan". Tiếng Anh nói Lan's mother - tên trước, 's, rồi danh từ.
+  - type: common_mistake
+    wrong: They son is a student.
+    right: Their son is a student.
+    target_lang: en
+    note:
+      vi: They là "họ" (chủ ngữ); trước danh từ phải dùng their (của họ). Tương tự, không nói "we parents" mà nói our parents.
+  - type: summary
+    points:
+      - vi: "I → my · you → your · he → his · she → her · we → our · they → their."
+      - vi: Từ sở hữu đứng trước danh từ - their son, our parents.
+      - vi: His/her chọn theo người sở hữu - Lan's brother = her brother.
+      - vi: "Tên người + 's + danh từ: Lan's mother, my sister's son."
+      - vi: uncle = chú/bác/cậu, aunt = cô/dì/mợ, cousin = anh chị em họ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:whose-family-mcq-his
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:his
+    prompt:
+      stem: "Minh là con trai. Chọn từ đúng: Minh is with ___ sister."
+      stem_lang: vi
+      options:
+        - { id: c4w, text: his, lang: en }
+        - { id: y7f, text: her, lang: en }
+        - { id: a2q, text: he, lang: en }
+        - { id: o9l, text: him, lang: en }
+    answer:
+      correct_option_id: c4w
+    explanation:
+      vi: Người sở hữu là Minh (nam) nên dùng his, dù sister là nữ. He và him không đứng trước danh từ để chỉ "của anh ấy".
+    display_answer: his
+
+  - key: en:exercise:whose-family-mcq-lans
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:possessive-s
+    prompt:
+      stem: "\"Mẹ của Lan\" trong tiếng Anh là gì?"
+      stem_lang: vi
+      options:
+        - { id: j3e, text: Lan mother, lang: en }
+        - { id: s6v, text: Lan's mother, lang: en }
+        - { id: p1z, text: Mother Lan, lang: en }
+        - { id: i8d, text: Mother's Lan, lang: en }
+    answer:
+      correct_option_id: s6v
+    explanation:
+      vi: Tiếng Anh đặt người sở hữu trước, thêm 's, rồi mới đến danh từ - Lan's mother. Thiếu 's hoặc đảo thứ tự như tiếng Việt đều sai.
+    display_answer: Lan's mother
+
+  - key: en:exercise:whose-family-listen-their
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:their
+    prompt:
+      audio_asset_id: null
+      fallback_text: Their son is a doctor.
+      options:
+        - { id: b5r, text: Con trai họ là bác sĩ., lang: vi }
+        - { id: e2n, text: Con trai chúng tôi là bác sĩ., lang: vi }
+        - { id: k7g, text: Con gái họ là bác sĩ., lang: vi }
+        - { id: h9t, text: Con trai cô ấy là bác sĩ., lang: vi }
+    answer:
+      correct_option_id: b5r
+    explanation:
+      vi: Their là "của họ", son là "con trai". "Của chúng tôi" là our, "của cô ấy" là her, con gái là daughter.
+    display_answer: Con trai họ là bác sĩ.
+
+  - key: en:exercise:whose-family-fill-her-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:her
+    prompt:
+      template: "Lan loves {{b1}} brother."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Lan rất thương em trai mình."
+        - "Gợi ý: Lan là nữ - chọn từ sở hữu theo Lan, không theo brother."
+    answer:
+      blanks:
+        b1: [her]
+    known_wrong:
+      - answer: his
+        feedback_vi: Người sở hữu là Lan (nữ), nên dùng her - dù brother là nam.
+        error_tag: his_her
+      - answer: she
+        feedback_vi: She là chủ ngữ. Trước danh từ cần her (của cô ấy).
+        error_tag: possessive
+    explanation:
+      vi: His/her chọn theo người sở hữu. Lan là nữ nên "em trai của Lan" là her brother.
+    display_answer: Lan loves her brother.
+
+  - key: en:exercise:whose-family-order-lans
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:possessive-s
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Mẹ của Lan là bác sĩ.\""
+      tokens:
+        - { id: s-doctor, text: doctor }
+        - { id: s-of, text: of }
+        - { id: s-is, text: is }
+        - { id: s-mother, text: mother }
+        - { id: s-a, text: a }
+        - { id: s-lans, text: Lan's }
+        - { id: s-lan, text: Lan }
+    answer:
+      orders:
+        - [s-lans, s-mother, s-is, s-a, s-doctor]
+    explanation:
+      vi: Cụm "mẹ của Lan" là Lan's mother - không dùng of. Nghề số ít cần a - a doctor.
+    display_answer: Lan's mother is a doctor.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:whose-family-fill-our-their
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:possessive-adjectives
+    prompt:
+      template: "We are students. {{b1}} teacher is from Hanoi. They are doctors. {{b2}} son is a student."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [our]
+        b2: [their]
+    known_wrong:
+      - answer: we
+        feedback_vi: We là chủ ngữ. Trước danh từ teacher cần our (của chúng tôi).
+        error_tag: possessive
+      - answer: they
+        feedback_vi: They là chủ ngữ. Trước danh từ son cần their (của họ).
+        error_tag: possessive
+      - answer: there
+        feedback_vi: There (ở đó) đọc giống their nhưng nghĩa khác. "Của họ" viết là their.
+        error_tag: spelling
+    explanation:
+      vi: Câu đầu nói về we, nên "giáo viên của chúng tôi" là our teacher. Câu sau nói về they, nên "con trai họ" là their son.
+    display_answer: We are students. Our teacher is from Hanoi. They are doctors. Their son is a student.
+
+  - key: en:exercise:whose-family-translate-nams-sister
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:possessive-s
+    prompt:
+      source_text: Chị gái của Nam là giáo viên.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Nam's older sister is a teacher.
+        - Nam's elder sister is a teacher.
+        - Nam's big sister is a teacher.
+        - Nam's sister is a teacher.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Nam sister is a teacher.
+        feedback_vi: Thiếu 's - "chị gái của Nam" là Nam's sister.
+        error_tag: possessive_s
+      - answer: Older sister of Nam is a teacher.
+        feedback_vi: Tiếng Anh không nói "sister of Nam". Dùng Nam's older sister.
+        error_tag: possessive_s
+      - answer: Nam's sister older is a teacher.
+        feedback_vi: Older phải đứng trước sister - Nam's older sister.
+        error_tag: adjective_order
+      - answer: Nam's older sister is teacher.
+        feedback_vi: Nghề số ít cần a - a teacher.
+        error_tag: article
+      - answer: Nam's older sister a teacher.
+        feedback_vi: Thiếu is - Nam's older sister is a teacher.
+        error_tag: missing_be
+    explanation:
+      vi: Tên + 's + danh từ - Nam's older sister. Sau đó vẫn cần is và a trước nghề.
+    display_answer: Nam's older sister is a teacher.
+
+  # ---------------- application ----------------
+  - key: en:exercise:whose-family-translate-uncle
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:uncle
+    prompt:
+      source_text: My uncle is my mother's brother.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cậu tôi là em trai của mẹ tôi.
+        - Cậu tôi là anh trai của mẹ tôi.
+        - Cậu tôi là em trai mẹ tôi.
+        - Cậu tôi là anh trai mẹ tôi.
+        - Cậu của tôi là em trai của mẹ tôi.
+        - Cậu mình là em trai của mẹ mình.
+        - Cậu mình là em trai mẹ mình.
+        - Bác tôi là anh trai của mẹ tôi.
+        - Bác tôi là anh trai mẹ tôi.
+        - Bác mình là anh trai của mẹ mình.
+        - Cậu tôi là anh em trai của mẹ tôi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Mother's brother là anh hoặc em trai của mẹ. Tiếng Việt gọi em trai của mẹ là cậu, anh trai của mẹ là bác, còn tiếng Anh chỉ có một từ uncle.
+    display_answer: Cậu tôi là em trai của mẹ tôi.
+
+  - key: en:exercise:whose-family-mcq-cousin
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:cousin
+    prompt:
+      stem: Bạn giới thiệu Hoa - con gái của dì bạn - với một người bạn. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: g6u, text: "This is my cousin, Hoa.", lang: en }
+        - { id: w3m, text: "This is my sister, Hoa.", lang: en }
+        - { id: z9b, text: "This is my aunt, Hoa.", lang: en }
+        - { id: f5c, text: "This is cousin my, Hoa.", lang: en }
+    answer:
+      correct_option_id: g6u
+    explanation:
+      vi: Con của dì là anh chị em họ - cousin. Sister là chị em ruột, aunt là dì. My luôn đứng trước danh từ.
+    display_answer: "This is my cousin, Hoa."
+
+  - key: en:exercise:whose-family-order-sisters-son
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:possessive-s
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Đây là con trai của chị gái tôi.\""
+      tokens:
+        - { id: n-son, text: son }
+        - { id: n-me, text: me }
+        - { id: n-sisters, text: "sister's" }
+        - { id: n-is, text: is }
+        - { id: n-of, text: of }
+        - { id: n-this, text: This }
+        - { id: n-my, text: my }
+    answer:
+      orders:
+        - [n-this, n-is, n-my, n-sisters, n-son]
+    explanation:
+      vi: "\"Con trai của chị gái tôi\" xếp từ người sở hữu đi ra: my sister's son. Không cần of và me."
+    display_answer: This is my sister's son.

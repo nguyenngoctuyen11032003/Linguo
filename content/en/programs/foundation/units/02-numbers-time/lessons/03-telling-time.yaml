@@ -1,0 +1,388 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:telling-time
+order_index: 3
+level: a1
+title:
+  vi: Mấy giờ rồi?
+objectives:
+  - vi: Hỏi giờ bằng What time is it? và trả lời bằng It's…
+  - vi: Nói giờ theo hai cách - seven thirty và half past seven, quarter past, quarter to.
+  - vi: Phân biệt sáng/chiều bằng a.m. và p.m., không dịch "giờ" thành hours.
+estimated_minutes: 12
+skills: [listening, speaking, vocabulary]
+prerequisites: [en:lesson:age-phone]
+items:
+  - item: en:item:what-time-is-it
+  - item: en:item:oclock
+  - item: en:item:half-past
+  - item: en:item:quarter-past
+  - item: en:item:quarter-to
+  - item: en:item:past-to
+  - item: en:item:digital-time
+  - item: en:item:am-pm
+  - item: en:item:time
+  - item: en:item:hour
+  - item: en:item:minute
+  - item: en:item:compound-numbers
+    role: reuse
+  - item: en:item:oh-zero
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được giờ, đọc được giờ trên đồng hồ theo cả cách đơn giản lẫn cách dùng past/to, và hẹn giờ có a.m./p.m.
+  - type: explain
+    text:
+      vi: Hỏi giờ, bạn nói What time is it? hoặc What's the time? Câu trả lời luôn bắt đầu bằng It's - It's seven o'clock. O'clock chỉ dùng cho giờ chẵn, và "7 giờ" không bao giờ là seven hours.
+  - type: explain
+    text:
+      vi: Cách dễ nhất là đọc như đồng hồ số - giờ trước, phút sau - 7:30 là seven thirty, 9:05 là nine oh five. Cách này giống tiếng Việt và người Mỹ dùng rất nhiều.
+  - type: explain
+    text:
+      vi: Cách thứ hai nói phút trước, giờ sau - past là "hơn" (đã qua), to là "kém" (còn bao lâu đến giờ sau). Half past seven là 7:30, quarter past nine là 9:15, quarter to eight là 7:45 - giống "tám giờ kém mười lăm".
+  - type: deep_explain
+    text:
+      vi: Past dùng cho phút 1–30, to dùng cho phút 31–59 và đi với giờ sắp tới, nên twenty to five là 4:40. Khi nói giờ, người ta thường bỏ chữ minutes (ten past six), trừ khi số phút lẻ (seven minutes past six). A.m. là từ nửa đêm đến trưa, p.m. là từ trưa đến nửa đêm; bạn dùng a.m./p.m. hoặc o'clock, không dùng cả hai cùng lúc.
+  - type: example
+    target: "A: What time is it? B: It's half past seven."
+    target_lang: en
+    translation:
+      vi: "A: Mấy giờ rồi? B: Bảy giờ rưỡi."
+    note:
+      vi: Half past = đã qua nửa giờ, giống "rưỡi".
+  - type: example
+    target: It's quarter to eight.
+    target_lang: en
+    translation:
+      vi: Bây giờ là tám giờ kém mười lăm.
+    note:
+      vi: Là 7:45 - to đi với giờ sắp tới, giống "kém" trong tiếng Việt.
+  - type: example
+    target: The bank opens at 8 a.m. and closes at 4:30 p.m.
+    target_lang: en
+    translation:
+      vi: Ngân hàng mở cửa lúc 8 giờ sáng và đóng cửa lúc 4 giờ 30 chiều.
+    note:
+      vi: Nói giờ cụ thể của một việc thì dùng at; 4:30 đọc là four thirty.
+  - type: example
+    target: The film is two hours long.
+    target_lang: en
+    translation:
+      vi: Bộ phim dài hai tiếng.
+    note:
+      vi: Hours chỉ khoảng thời gian (bao lâu), không chỉ giờ trên đồng hồ.
+  - type: common_mistake
+    wrong: It's seven hours.
+    right: It's seven o'clock.
+    target_lang: en
+    note:
+      vi: Tiếng Việt dùng "giờ" cho cả giờ đồng hồ lẫn số tiếng, tiếng Anh thì tách riêng - giờ đồng hồ là o'clock, số tiếng là hours.
+  - type: common_mistake
+    wrong: How many hours?
+    right: What time is it?
+    target_lang: en
+    note:
+      vi: Dịch từng chữ "mấy giờ" thành How many hours thì nghĩa là "bao nhiêu tiếng". Hỏi giờ luôn dùng What time.
+  - type: common_mistake
+    wrong: It's seven thirty o'clock.
+    right: It's seven thirty.
+    target_lang: en
+    note:
+      vi: O'clock chỉ đi với giờ chẵn. Có phút thì bỏ o'clock.
+  - type: summary
+    points:
+      - vi: What time is it? / What's the time? → It's…
+      - vi: Giờ chẵn - seven o'clock; không nói seven hours.
+      - vi: Cách đơn giản - giờ + phút (seven thirty, nine oh five).
+      - vi: past = hơn (half past, quarter past); to = kém, đi với giờ sắp tới (quarter to eight = 7:45).
+      - vi: a.m. sáng (0h–12h trưa), p.m. chiều tối; không dùng chung với o'clock.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:telling-time-mcq-half-past
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:half-past
+    prompt:
+      stem: "\"It's half past seven.\" là mấy giờ?"
+      stem_lang: vi
+      options:
+        - { id: r6t, text: "6:30", lang: en }
+        - { id: g3m, text: "7:30", lang: en }
+        - { id: n8v, text: "7:15", lang: en }
+        - { id: x1c, text: "8:30", lang: en }
+    answer:
+      correct_option_id: g3m
+    explanation:
+      vi: Half past seven là đã qua bảy giờ nửa tiếng, tức 7:30 - giống "bảy giờ rưỡi". Past luôn tính từ giờ được nói (seven), không phải giờ trước đó.
+    display_answer: "7:30"
+
+  - key: en:exercise:telling-time-listen-quarter-to
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:quarter-to
+    prompt:
+      audio_asset_id: null
+      fallback_text: It's quarter to eight.
+      options:
+        - { id: b7k, text: "7:45", lang: en }
+        - { id: y4p, text: "8:15", lang: en }
+        - { id: e2w, text: "8:45", lang: en }
+        - { id: m5j, text: "7:15", lang: en }
+    answer:
+      correct_option_id: b7k
+    explanation:
+      vi: To nghĩa là "kém" - còn mười lăm phút nữa mới đến tám giờ, tức 7:45. Nếu là 8:15, người ta nói quarter past eight.
+    display_answer: "7:45"
+
+  - key: en:exercise:telling-time-fill-oclock-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:oclock
+    prompt:
+      template: "A: What time is it? B: It's six {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa của câu: Mấy giờ rồi? - Sáu giờ."
+        - "Gợi ý: từ chỉ giờ chẵn, viết có dấu nháy - o'c…"
+    answer:
+      blanks:
+        b1: ["o'clock"]
+    known_wrong:
+      - answer: hours
+        feedback_vi: Hours là số tiếng (khoảng thời gian). Giờ trên đồng hồ là o'clock.
+        error_tag: hour_oclock
+      - answer: hour
+        feedback_vi: Giờ trên đồng hồ là o'clock, không phải hour.
+        error_tag: hour_oclock
+    explanation:
+      vi: Đúng sáu giờ (6:00) là giờ chẵn, nên dùng o'clock - It's six o'clock.
+    display_answer: "A: What time is it? B: It's six o'clock."
+
+  - key: en:exercise:telling-time-order-ten-to
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:past-to
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Bây giờ là chín giờ kém mười.\" (8:50)"
+      tokens:
+        - { id: t-nine, text: nine }
+        - { id: t-past, text: past }
+        - { id: t-ten, text: ten }
+        - { id: t-its, text: "It's" }
+        - { id: t-eight, text: eight }
+        - { id: t-to, text: to }
+        - { id: t-hours, text: hours }
+    answer:
+      orders:
+        - [t-its, t-ten, t-to, t-nine]
+    explanation:
+      vi: Kém dịch là to, và phút đứng trước giờ - ten to nine. Giờ đi với to là giờ sắp tới (nine), không phải giờ hiện tại (eight).
+    display_answer: "It's ten to nine."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:telling-time-fill-past-to
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:past-to
+    prompt:
+      template: "9:15 = It's quarter {{b1}} nine. · 4:40 = It's twenty {{b2}} five."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [past, after]
+        b2: [to]
+    known_wrong:
+      - answer: before
+        feedback_vi: Phút còn thiếu đến giờ sau dùng to - twenty to five.
+        error_tag: past_to
+      - answer: over
+        feedback_vi: Phút đã qua dùng past - quarter past nine.
+        error_tag: past_to
+    explanation:
+      vi: 9:15 là đã qua chín giờ 15 phút, nên dùng past (người Mỹ cũng nói after). 4:40 là còn 20 phút nữa đến năm giờ, nên dùng to và nói giờ sắp tới (five).
+    display_answer: "9:15 = It's quarter past nine. · 4:40 = It's twenty to five."
+
+  - key: en:exercise:telling-time-translate-seven
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:oclock
+    prompt:
+      source_text: Bây giờ là bảy giờ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "It's seven o'clock."
+        - "It is seven o'clock."
+        - "It's seven."
+        - "It is seven."
+        - "It's 7 o'clock."
+        - "It is 7 o'clock."
+        - "It's 7:00."
+        - "It is 7:00."
+        - "It's seven o'clock now."
+        - "It is seven o'clock now."
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: "It's seven hours."
+        feedback_vi: Seven hours là "bảy tiếng". Giờ trên đồng hồ là seven o'clock.
+        error_tag: hour_oclock
+      - answer: "It is seven hours."
+        feedback_vi: Seven hours là "bảy tiếng". Giờ trên đồng hồ là seven o'clock.
+        error_tag: hour_oclock
+      - answer: "Now is seven o'clock."
+        feedback_vi: Câu nói giờ bắt đầu bằng It's, không bắt đầu bằng Now is.
+        error_tag: missing_it
+      - answer: "Is seven o'clock."
+        feedback_vi: Tiếng Anh cần chủ ngữ It - It's seven o'clock.
+        error_tag: missing_it
+    explanation:
+      vi: Câu nói giờ luôn có chủ ngữ It (It's…), dù tiếng Việt không có từ tương ứng. Bảy giờ chẵn là seven o'clock hoặc chỉ seven.
+    display_answer: "It's seven o'clock."
+
+  - key: en:exercise:telling-time-translate-ask
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:what-time-is-it
+    prompt:
+      source_text: Mấy giờ rồi?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - What time is it?
+        - What time is it now?
+        - "What's the time?"
+        - What is the time?
+        - "What's the time now?"
+        - Do you have the time?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: How many hours?
+        feedback_vi: How many hours là "bao nhiêu tiếng". Hỏi giờ dùng What time is it?
+        error_tag: hour_oclock
+      - answer: How many hours is it?
+        feedback_vi: How many hours hỏi số tiếng. Hỏi giờ dùng What time is it?
+        error_tag: hour_oclock
+      - answer: What hour is it?
+        feedback_vi: Câu hỏi giờ chuẩn dùng time - What time is it?
+        error_tag: word_choice
+      - answer: What time is now?
+        feedback_vi: Cần chủ ngữ it - What time is it now?
+        error_tag: missing_it
+    explanation:
+      vi: Hỏi giờ dùng What time + is it? hoặc What's the time? "Mấy giờ" không dịch từng chữ thành How many hours.
+    display_answer: What time is it?
+
+  # ---------------- application ----------------
+  - key: en:exercise:telling-time-mcq-pm
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:am-pm
+    prompt:
+      stem: "Bạn nhắn cho bạn nước ngoài: lớp học bắt đầu lúc 8 giờ tối. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: f1z, text: The class starts at 8 p.m., lang: en }
+        - { id: w6r, text: The class starts at 8 a.m., lang: en }
+        - { id: a4g, text: The class starts at 8 hours p.m., lang: en }
+        - { id: o7b, text: The class starts at 8 hours., lang: en }
+    answer:
+      correct_option_id: f1z
+    explanation:
+      vi: Tám giờ tối là sau buổi trưa, nên dùng p.m.; a.m. là buổi sáng. Không thêm hours vào sau giờ.
+    display_answer: The class starts at 8 p.m.
+
+  - key: en:exercise:telling-time-translate-quarter-past
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:quarter-past
+    prompt:
+      source_text: "It's quarter past ten."
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bây giờ là mười giờ mười lăm.
+        - Bây giờ là mười giờ mười lăm phút.
+        - Mười giờ mười lăm.
+        - Mười giờ mười lăm phút.
+        - Bây giờ là 10 giờ 15.
+        - Bây giờ là 10 giờ 15 phút.
+        - 10 giờ 15.
+        - 10 giờ 15 phút.
+        - Bây giờ là 10:15.
+        - Bây giờ là mười giờ mười lăm rồi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Quarter là một phần tư giờ (15 phút), past là "hơn", nên quarter past ten là 10:15. Tiếng Việt nói giờ trước, phút sau.
+    display_answer: Bây giờ là mười giờ mười lăm.
+
+  - key: en:exercise:telling-time-translate-half-six
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:digital-time
+    prompt:
+      source_text: Bây giờ là sáu giờ rưỡi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "It's half past six."
+        - "It is half past six."
+        - "It's six thirty."
+        - "It is six thirty."
+        - "It's 6:30."
+        - "It is 6:30."
+        - "It's half six."
+        - "It's half past six now."
+        - "It's six thirty now."
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: "It's six and a half."
+        feedback_vi: Tiếng Anh không nói giờ bằng and a half. Dùng half past six hoặc six thirty.
+        error_tag: half_past
+      - answer: "It's six thirty o'clock."
+        feedback_vi: O'clock chỉ đi với giờ chẵn - It's six thirty.
+        error_tag: oclock_minutes
+      - answer: "It's half past seven."
+        feedback_vi: Half past tính từ giờ được nói - half past seven là 7:30. Sáu rưỡi là half past six.
+        error_tag: half_past
+      - answer: "It's six hours thirty."
+        feedback_vi: Giờ trên đồng hồ không dùng hours - It's six thirty.
+        error_tag: hour_oclock
+    explanation:
+      vi: Sáu giờ rưỡi có hai cách nói - six thirty (giờ + phút) hoặc half past six (đã qua sáu giờ nửa tiếng). Câu luôn bắt đầu bằng It's.
+    display_answer: "It's half past six."

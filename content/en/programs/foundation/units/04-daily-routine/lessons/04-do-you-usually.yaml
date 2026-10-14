@@ -1,0 +1,384 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
+key: en:lesson:do-you-usually
+order_index: 4
+level: a1
+title:
+  vi: Bạn có thường…? - câu hỏi và tần suất
+objectives:
+  - vi: Hỏi về thói quen bằng Do/Does… ? và trả lời ngắn Yes, I do / No, she doesn't.
+  - vi: Nói mức độ thường xuyên với always, usually, often, sometimes, never.
+  - vi: Đặt trạng từ tần suất đúng chỗ - trước động từ thường, sau be.
+estimated_minutes: 14
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [en:lesson:dont-doesnt]
+items:
+  - item: en:item:do-does-questions
+  - item: en:item:frequency-adverbs
+  - item: en:item:always
+  - item: en:item:usually
+  - item: en:item:often
+  - item: en:item:sometimes
+  - item: en:item:never
+  - item: en:item:how-often
+  - item: en:item:dont-doesnt
+    role: reuse
+  - item: en:item:third-person-s
+    role: reuse
+  - item: en:item:exercise-verb
+    role: reuse
+  - item: en:item:cook
+    role: reuse
+  - item: en:item:take-the-bus
+    role: reuse
+  - item: en:item:late
+    role: reuse
+  - item: en:item:go-to-bed
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được "Bạn có hay nấu ăn không?", "Bao lâu bạn tập thể dục một lần?" và trả lời "Tôi thường…", "Tôi không bao giờ…".
+  - type: explain
+    text:
+      vi: Tiếng Việt hỏi bằng cách thêm "có… không?". Tiếng Anh đặt Do hoặc Does lên đầu câu - Do you cook? Does she work? Động từ chính giữ nguyên mẫu, giống câu phủ định ở bài trước.
+  - type: explain
+    text:
+      vi: Trả lời ngắn bằng cách lặp lại do/does - Yes, I do. / No, she doesn't. Không trả lời "Yes, I cook" hay chỉ "Yes, I".
+  - type: explain
+    text:
+      vi: "Trạng từ tần suất xếp từ nhiều đến ít: always (luôn luôn) → usually (thường) → often (hay) → sometimes (thỉnh thoảng) → never (không bao giờ). Chúng đứng trước động từ thường (I usually get up early) nhưng sau be (She is always late)."
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt khá tự do - "Tôi luôn dậy sớm" hay "Lúc nào tôi cũng dậy sớm" đều được, nên người Việt hay đặt sai chỗ, như "I get up always early". Sometimes có thể đứng đầu câu (Sometimes I cook), còn always và never thì không. Never đã mang nghĩa phủ định nên không đi với don't. Muốn hỏi tần suất, dùng How often + do/does - How often do you exercise?
+  - type: example
+    target: "A: Do you usually cook at home? B: Yes, I do."
+    target_lang: en
+    translation:
+      vi: "A: Bạn có thường nấu ăn ở nhà không? B: Có."
+    note:
+      vi: Usually đứng giữa chủ ngữ và động từ cook. Trả lời ngắn lặp lại do.
+  - type: example
+    target: "A: Does he take the bus? B: No, he doesn't. He walks."
+    target_lang: en
+    translation:
+      vi: "A: Anh ấy có đi xe buýt không? B: Không. Anh ấy đi bộ."
+    note:
+      vi: Hỏi với does thì take giữ nguyên mẫu; câu khẳng định He walks thì lại có -s.
+  - type: example
+    target: She is never late, and she always goes to bed early.
+    target_lang: en
+    translation:
+      vi: Cô ấy không bao giờ đến muộn, và lúc nào cũng đi ngủ sớm.
+    note:
+      vi: Never đứng sau is; always đứng trước động từ goes.
+  - type: example
+    target: "A: How often do you exercise? B: Sometimes, on weekends."
+    target_lang: en
+    translation:
+      vi: "A: Bạn có hay tập thể dục không? B: Thỉnh thoảng, vào cuối tuần."
+    note:
+      vi: How often hỏi mức độ thường xuyên, nên câu trả lời là trạng từ tần suất, không phải Yes/No.
+  - type: common_mistake
+    wrong: Do she work on weekends?
+    right: Does she work on weekends?
+    target_lang: en
+    note:
+      vi: She, he, it đi với does - giống doesn't ở câu phủ định.
+  - type: common_mistake
+    wrong: Does he cooks every day?
+    right: Does he cook every day?
+    target_lang: en
+    note:
+      vi: Does đã mang -s, nên động từ sau quay về nguyên mẫu.
+  - type: common_mistake
+    wrong: I go always to work by bus.
+    right: I always go to work by bus.
+    target_lang: en
+    note:
+      vi: Trạng từ tần suất đứng trước động từ thường, không đứng sau như trong nhiều câu tiếng Việt.
+  - type: common_mistake
+    wrong: She always is late.
+    right: She is always late.
+    target_lang: en
+    note:
+      vi: Với be (am/is/are), trạng từ tần suất đứng sau be.
+  - type: summary
+    points:
+      - vi: Do + I/you/we/they + V? · Does + he/she/it + V (nguyên mẫu)?
+      - vi: Trả lời ngắn - Yes, I do. / No, she doesn't.
+      - vi: always → usually → often → sometimes → never.
+      - vi: Trạng từ tần suất đứng trước động từ thường, sau be.
+      - vi: How often do you…? hỏi bao lâu một lần; never không đi với don't.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:do-you-usually-mcq-does
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:do-does-questions
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: ___ she work on weekends?"
+      stem_lang: vi
+      options:
+        - { id: k4f, text: Does, lang: en }
+        - { id: v9s, text: Do, lang: en }
+        - { id: p1a, text: Is, lang: en }
+        - { id: h7e, text: Are, lang: en }
+    answer:
+      correct_option_id: k4f
+    explanation:
+      vi: Câu hỏi với động từ thường work cần Do/Does; she là ngôi thứ ba số ít nên dùng Does. Is/Are chỉ dùng cho câu có be.
+    display_answer: Does
+
+  - key: en:exercise:do-you-usually-listen-cook
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:usually
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Do you usually cook at home? Yes, I do."
+      options:
+        - { id: q3n, text: "Bạn có thường nấu ăn ở nhà không? Có.", lang: vi }
+        - { id: t8d, text: "Bạn có luôn nấu ăn ở nhà không? Có.", lang: vi }
+        - { id: z5c, text: "Bạn có thường nấu ăn ở nhà không? Không.", lang: vi }
+        - { id: g2w, text: "Anh ấy có thường nấu ăn ở nhà không? Có.", lang: vi }
+    answer:
+      correct_option_id: q3n
+    explanation:
+      vi: Usually là "thường" (always mới là "luôn"). Do you hỏi "bạn", còn "anh ấy" sẽ là Does he. Yes, I do là câu trả lời "có".
+    display_answer: Bạn có thường nấu ăn ở nhà không? Có.
+
+  - key: en:exercise:do-you-usually-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:do-does-questions
+    prompt:
+      template: "{{b1}} he {{b2}} the bus? No, he doesn't."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Anh ấy có đi xe buýt không? Không."
+        - "Gợi ý: he đi với Does; sau Does là động từ nguyên mẫu."
+    answer:
+      blanks:
+        b1: [Does]
+        b2: [take, catch]
+    known_wrong:
+      - answer: Do
+        feedback_vi: He đi với Does, không phải Do.
+        error_tag: do_does
+      - answer: takes
+        feedback_vi: Sau Does, động từ giữ nguyên mẫu - take.
+        error_tag: doesnt_plus_s
+      - answer: Is
+        feedback_vi: Is chỉ dùng với be; động từ thường take cần Does.
+        error_tag: be_question
+    explanation:
+      vi: He là ngôi thứ ba số ít nên câu hỏi bắt đầu bằng Does. -s đã nằm ở Does, nên take giữ nguyên mẫu.
+    display_answer: Does he take the bus? No, he doesn't.
+
+  - key: en:exercise:do-you-usually-mcq-be-position
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:frequency-adverbs
+    prompt:
+      stem: Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: n6b, text: "She is always late.", lang: en }
+        - { id: e1r, text: "She always is late.", lang: en }
+        - { id: u7k, text: "She is late always.", lang: en }
+        - { id: c4m, text: "Always she is late.", lang: en }
+    answer:
+      correct_option_id: n6b
+    explanation:
+      vi: Câu có be (is) thì trạng từ tần suất đứng ngay sau be - She is always late. Với động từ thường thì ngược lại, đứng trước - She always gets up late.
+    display_answer: She is always late.
+
+  - key: en:exercise:do-you-usually-order-bed
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:usually
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Tôi thường đi ngủ muộn.\""
+      tokens:
+        - { id: u-late, text: late }
+        - { id: u-to, text: to }
+        - { id: u-goes, text: goes }
+        - { id: u-i, text: I }
+        - { id: u-bed, text: bed }
+        - { id: u-usually, text: usually }
+        - { id: u-go, text: go }
+        - { id: u-am, text: am }
+    answer:
+      orders:
+        - [u-i, u-usually, u-go, u-to, u-bed, u-late]
+    explanation:
+      vi: Usually đứng trước động từ thường go. I đi với go (không -es) và không cần am vì đã có động từ.
+    display_answer: I usually go to bed late.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:do-you-usually-fill-short-answer
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:do-does-questions
+    prompt:
+      template: "A: {{b1}} you exercise every day? B: Yes, I {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [Do]
+        b2: [do]
+    known_wrong:
+      - answer: Does
+        feedback_vi: You đi với Do; Does chỉ dùng cho he, she, it.
+        error_tag: do_does
+      - answer: Are
+        feedback_vi: Exercise là động từ thường nên câu hỏi dùng Do, không dùng Are.
+        error_tag: be_question
+      - answer: am
+        feedback_vi: Câu hỏi bằng Do thì trả lời ngắn cũng dùng do - Yes, I do.
+        error_tag: short_answer
+    explanation:
+      vi: You đi với Do. Câu trả lời ngắn lặp lại đúng trợ động từ của câu hỏi - hỏi Do thì đáp Yes, I do.
+    display_answer: "A: Do you exercise every day? B: Yes, I do."
+
+  - key: en:exercise:do-you-usually-translate-cook
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:often
+    prompt:
+      source_text: Cô ấy có hay nấu ăn không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Does she often cook?
+        - Does she cook often?
+        - Does she usually cook?
+        - Does she cook a lot?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Do she often cook?
+        feedback_vi: She đi với Does - Does she often cook?
+        error_tag: do_does
+      - answer: Does she often cooks?
+        feedback_vi: Sau Does, động từ giữ nguyên mẫu - cook.
+        error_tag: doesnt_plus_s
+      - answer: Is she often cook?
+        feedback_vi: Cook là động từ thường nên câu hỏi dùng Does, không dùng Is.
+        error_tag: be_question
+      - answer: Does often she cook?
+        feedback_vi: Trạng từ tần suất đứng sau chủ ngữ, ngay trước động từ - Does she often cook?
+        error_tag: adverb_position
+    explanation:
+      vi: Mẫu "có… không?" với she thành Does she…? Often đứng ngay trước động từ cook (hoặc cuối câu), và cook giữ nguyên mẫu.
+    display_answer: Does she often cook?
+
+  # ---------------- application ----------------
+  - key: en:exercise:do-you-usually-translate-never
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:never
+    prompt:
+      source_text: Tôi không bao giờ đi làm muộn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I never go to work late.
+        - I am never late for work.
+        - I'm never late for work.
+        - I am never late to work.
+        - I'm never late to work.
+        - I never arrive at work late.
+        - I never get to work late.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I don't never go to work late.
+        feedback_vi: Never đã mang nghĩa phủ định, không dùng thêm don't.
+        error_tag: double_negative
+      - answer: I go never to work late.
+        feedback_vi: Never đứng trước động từ thường - I never go.
+        error_tag: adverb_position
+      - answer: I never am late for work.
+        feedback_vi: Với be, never đứng sau - I am never late.
+        error_tag: adverb_position
+      - answer: I go to work late never.
+        feedback_vi: Never không đứng cuối câu - I never go to work late.
+        error_tag: adverb_position
+    explanation:
+      vi: Never đứng trước động từ thường (I never go…) hoặc sau be (I am never late…). Never đã là phủ định nên không thêm don't.
+    display_answer: I never go to work late.
+
+  - key: en:exercise:do-you-usually-translate-sometimes
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:sometimes
+    prompt:
+      source_text: He sometimes works at night.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thỉnh thoảng anh ấy làm việc vào ban đêm.
+        - Anh ấy thỉnh thoảng làm việc vào ban đêm.
+        - Thỉnh thoảng anh ấy làm việc ban đêm.
+        - Anh ấy thỉnh thoảng làm việc ban đêm.
+        - Thỉnh thoảng anh ấy làm việc vào buổi tối.
+        - Anh ấy thỉnh thoảng làm việc vào buổi tối.
+        - Đôi khi anh ấy làm việc vào ban đêm.
+        - Anh ấy đôi khi làm việc vào ban đêm.
+        - Thỉnh thoảng anh ấy làm ca đêm.
+        - Anh ấy thỉnh thoảng làm ca đêm.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Sometimes là "thỉnh thoảng/đôi khi", works at night là "làm việc ban đêm". Tiếng Việt đặt "thỉnh thoảng" ở đầu câu hay sau chủ ngữ đều tự nhiên.
+    display_answer: Thỉnh thoảng anh ấy làm việc vào ban đêm.
+
+  - key: en:exercise:do-you-usually-mcq-how-often
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:how-often
+    prompt:
+      stem: "Đồng nghiệp hỏi bạn: \"How often do you take the bus?\" Ngày nào bạn cũng đi xe buýt. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: r2y, text: "I always take the bus.", lang: en }
+        - { id: f9g, text: "Yes, I do.", lang: en }
+        - { id: m5p, text: "I take always the bus.", lang: en }
+        - { id: s3h, text: "I never take the bus.", lang: en }
+    answer:
+      correct_option_id: r2y
+    explanation:
+      vi: How often hỏi mức độ thường xuyên, nên phải trả lời bằng trạng từ tần suất, không trả lời Yes/No. Ngày nào cũng đi là always, đặt trước động từ take.
+    display_answer: I always take the bus.

@@ -1,0 +1,376 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:age-phone
+order_index: 2
+level: pre_a1
+title:
+  vi: Tuổi & số điện thoại
+objectives:
+  - vi: Hỏi và nói tuổi bằng How old are you? và I'm 20 (years old).
+  - vi: Dùng be khi nói tuổi, không dùng have như cách nghĩ "có… tuổi".
+  - vi: Hỏi, đọc và nghe số điện thoại theo từng chữ số, với oh và double.
+estimated_minutes: 10
+skills: [speaking, listening, grammar]
+prerequisites: [en:lesson:numbers]
+items:
+  - item: en:item:how-old-are-you
+  - item: en:item:years-old
+  - item: en:item:age
+  - item: en:item:old
+  - item: en:item:young
+  - item: en:item:phone-number
+  - item: en:item:whats-your-phone-number
+  - item: en:item:oh-zero
+  - item: en:item:call
+  - item: en:item:double
+    role: reuse
+  - item: en:item:compound-numbers
+    role: reuse
+  - item: en:item:teen-numbers
+    role: reuse
+  - item: en:item:zero
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi và trả lời được câu về tuổi, đồng thời cho và xin số điện thoại một cách tự nhiên.
+  - type: explain
+    text:
+      vi: Để hỏi tuổi, bạn nói How old are you? (hỏi về người khác thì How old is he/she?). Để trả lời, bạn dùng be + số - I'm twenty. hoặc đầy đủ hơn I'm twenty years old. Tiếng Anh coi tuổi là trạng thái "là", nên không dùng have.
+  - type: explain
+    text:
+      vi: Để xin số điện thoại, bạn hỏi What's your phone number? và trả lời My number is… hoặc It's… Số điện thoại được đọc từng chữ số, ngắt nghỉ theo nhóm, không gộp thành số lớn như "chín trăm mười hai".
+  - type: explain
+    text:
+      vi: Số 0 trong số điện thoại thường đọc là oh (như chữ O), người Mỹ hay đọc zero. Hai chữ số giống nhau liền nhau, người Anh thường nói double - 55 là double five.
+  - type: deep_explain
+    text:
+      vi: Bạn có thể nói chỉ số (I'm twenty.) hoặc đầy đủ (I'm twenty years old.), nhưng không dừng giữa chừng ở I'm twenty years. Trong How old và years old, old không mang nghĩa "già" - em bé một tuổi vẫn là one year old (số ít year khi là một). Người Mỹ ít nói double, họ đọc từng số - five, five; khi cho số, người ta thường thêm lời nhờ như Call me tonight.
+  - type: example
+    target: "A: How old are you? B: I'm nineteen."
+    target_lang: en
+    translation:
+      vi: "A: Bạn bao nhiêu tuổi? B: Mình mười chín tuổi."
+    note:
+      vi: Trả lời ngắn chỉ cần I'm + số.
+  - type: example
+    target: My grandmother is eighty-two years old.
+    target_lang: en
+    translation:
+      vi: Bà tôi tám mươi hai tuổi.
+    note:
+      vi: Chủ ngữ là một người khác nên dùng is; số ghép có gạch ngang.
+  - type: example
+    target: "My number is 0903 225 117 - oh nine oh three, double two five, one one seven."
+    target_lang: en
+    translation:
+      vi: "Số của tôi là 0903 225 117 - không chín không ba, hai hai năm, một một bảy."
+    note:
+      vi: Số 0 đọc oh, 22 đọc double two; nghỉ ngắn giữa các nhóm số.
+  - type: example
+    target: She's young. She's only twenty-three.
+    target_lang: en
+    translation:
+      vi: Cô ấy còn trẻ. Cô ấy mới hai mươi ba tuổi.
+  - type: common_mistake
+    wrong: I have twenty years old.
+    right: I'm twenty years old.
+    target_lang: en
+    note:
+      vi: Tiếng Việt nói "có… tuổi" nên người Việt hay dùng have. Tiếng Anh nói tuổi bằng be - I am / I'm.
+  - type: common_mistake
+    wrong: I'm twenty years.
+    right: I'm twenty. / I'm twenty years old.
+    target_lang: en
+    note:
+      vi: Hoặc chỉ nói số, hoặc nói đủ years old. Dừng ở years nghe giống đang nói khoảng thời gian, không phải tuổi.
+  - type: common_mistake
+    wrong: My number is nine hundred three, two hundred twenty-five…
+    right: My number is oh nine oh three, double two five…
+    target_lang: en
+    note:
+      vi: Số điện thoại luôn đọc từng chữ số theo nhóm, không đọc như số tiền.
+  - type: summary
+    points:
+      - vi: How old are you? → I'm 20. / I'm 20 years old. - dùng be, không dùng have.
+      - vi: Không dừng ở years - nói I'm 20 hoặc I'm 20 years old.
+      - vi: What's your phone number? → My number is… / It's…
+      - vi: Đọc số điện thoại từng chữ số; 0 đọc oh (Anh) hoặc zero (Mỹ); 55 có thể đọc double five.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:age-phone-mcq-twenty
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:years-old
+    prompt:
+      stem: "Câu nào nói đúng \"Tôi hai mươi tuổi\"?"
+      stem_lang: vi
+      options:
+        - { id: u3h, text: I have twenty years old., lang: en }
+        - { id: a8x, text: I'm twenty years old., lang: en }
+        - { id: f6m, text: I have twenty years., lang: en }
+        - { id: j2b, text: I'm twenty years., lang: en }
+    answer:
+      correct_option_id: a8x
+    explanation:
+      vi: Tiếng Anh nói tuổi bằng be (I'm), không dùng have. Nếu đã nói years thì phải có old ở cuối.
+    display_answer: I'm twenty years old.
+
+  - key: en:exercise:age-phone-listen-number
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:oh-zero
+    prompt:
+      audio_asset_id: null
+      fallback_text: My number is oh nine oh four, double six two.
+      options:
+        - { id: i4w, text: 0904 662, lang: en }
+        - { id: l7q, text: 0904 626, lang: en }
+        - { id: p2z, text: 0904 2662, lang: en }
+        - { id: d8c, text: 9940 662, lang: en }
+    answer:
+      correct_option_id: i4w
+    explanation:
+      vi: Oh là số 0, double six là hai số 6 liền nhau (66). Vậy oh nine oh four, double six two là 0904 662.
+    display_answer: 0904 662
+
+  - key: en:exercise:age-phone-order-ask
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:whats-your-phone-number
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: \"Số điện thoại của bạn là gì?\""
+      tokens:
+        - { id: w-number, text: number }
+        - { id: w-how, text: How }
+        - { id: w-your, text: your }
+        - { id: w-many, text: many }
+        - { id: w-whats, text: "What's" }
+        - { id: w-you, text: you }
+        - { id: w-phone, text: phone }
+    answer:
+      orders:
+        - [w-whats, w-your, w-phone, w-number]
+    explanation:
+      vi: Tiếng Việt hỏi "là bao nhiêu" nhưng tiếng Anh dùng What's. Phone đứng trước number (ngược với "số điện thoại"), và cần your (của bạn), không phải you.
+    display_answer: What's your phone number?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:age-phone-fill-old
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 1
+    item: en:item:how-old-are-you
+    prompt:
+      template: "A: How {{b1}} are you? B: I'm eighteen."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [old]
+    known_wrong:
+      - answer: many
+        feedback_vi: How many hỏi số lượng. Câu trả lời là tuổi, nên câu hỏi là How old.
+        error_tag: how_many_age
+      - answer: age
+        feedback_vi: Câu hỏi tuổi là How old are you? - không nói How age.
+        error_tag: word_choice
+    explanation:
+      vi: B trả lời I'm eighteen (mười tám tuổi), nên A hỏi tuổi - How old are you?
+    display_answer: "A: How old are you? B: I'm eighteen."
+
+  - key: en:exercise:age-phone-fill-is-old
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:years-old
+    prompt:
+      template: "My sister {{b1}} seven years {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [is]
+        b2: [old]
+    known_wrong:
+      - answer: has
+        feedback_vi: Tiếng Anh nói tuổi bằng be, không dùng have/has - My sister is seven.
+        error_tag: have_age
+      - answer: are
+        feedback_vi: My sister là một người (she), nên dùng is.
+        error_tag: be_form
+      - answer: young
+        feedback_vi: Cấu trúc nói tuổi luôn là years old, kể cả với trẻ nhỏ.
+        error_tag: word_choice
+    explanation:
+      vi: My sister là ngôi thứ ba số ít nên dùng is. Cấu trúc nói tuổi là be + số + years old.
+    display_answer: My sister is seven years old.
+
+  - key: en:exercise:age-phone-translate-twenty
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:years-old
+    prompt:
+      source_text: Tôi hai mươi tuổi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I am twenty.
+        - I'm twenty.
+        - I am twenty years old.
+        - I'm twenty years old.
+        - I am 20.
+        - I'm 20.
+        - I am 20 years old.
+        - I'm 20 years old.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I have twenty years old.
+        feedback_vi: Nói tuổi dùng be, không dùng have - I'm twenty years old.
+        error_tag: have_age
+      - answer: I have twenty years.
+        feedback_vi: Nói tuổi dùng be, không dùng have - I'm twenty.
+        error_tag: have_age
+      - answer: I twenty years old.
+        feedback_vi: Thiếu am - I am twenty years old.
+        error_tag: missing_be
+      - answer: I am twenty years.
+        feedback_vi: Thiếu old. Nói I'm twenty hoặc I'm twenty years old.
+        error_tag: missing_old
+      - answer: I am twenty year old.
+        feedback_vi: Hai mươi năm là số nhiều - years old.
+        error_tag: plural_noun
+    explanation:
+      vi: Mẫu câu là I + am + số (+ years old). Cả I'm twenty và I'm twenty years old đều tự nhiên.
+    display_answer: I'm twenty years old.
+
+  # ---------------- application ----------------
+  - key: en:exercise:age-phone-mcq-read-number
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:oh-zero
+    prompt:
+      stem: "Một người bạn mới hỏi: \"What's your phone number?\" Số của bạn là 0985 112 340. Cách đọc nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: c2y, text: "Oh nine eight five, double one two, three four oh.", lang: en }
+        - { id: k5e, text: "Nine hundred eighty-five, one hundred twelve, three hundred forty.", lang: en }
+        - { id: t9u, text: "Oh nine eight five, eleven two, thirty-four oh.", lang: en }
+        - { id: h3s, text: "Oh ninety-eight five, double one two, three forty.", lang: en }
+    answer:
+      correct_option_id: c2y
+    explanation:
+      vi: Số điện thoại đọc từng chữ số - 0 là oh, 11 là double one. Các cách còn lại gộp số thành mười một, ba mươi tư hay chín trăm…, người nghe sẽ ghi sai.
+    display_answer: "Oh nine eight five, double one two, three four oh."
+
+  - key: en:exercise:age-phone-translate-brother
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:old
+    prompt:
+      source_text: My brother is fifteen years old.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh trai tôi mười lăm tuổi.
+        - Em trai tôi mười lăm tuổi.
+        - Anh tôi mười lăm tuổi.
+        - Em tôi mười lăm tuổi.
+        - Anh trai tôi 15 tuổi.
+        - Em trai tôi 15 tuổi.
+        - Anh trai mình mười lăm tuổi.
+        - Em trai mình mười lăm tuổi.
+        - Anh trai của tôi mười lăm tuổi.
+        - Em trai của tôi mười lăm tuổi.
+        - Em trai tôi năm nay mười lăm tuổi.
+        - Anh trai tôi năm nay mười lăm tuổi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Brother có thể là anh trai hoặc em trai. Fifteen years old là "mười lăm tuổi" - old không có nghĩa "già" ở đây.
+    display_answer: Em trai tôi mười lăm tuổi.
+
+  - key: en:exercise:age-phone-translate-ask-number
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:whats-your-phone-number
+    prompt:
+      source_text: Số điện thoại của bạn là bao nhiêu?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - What's your phone number?
+        - What is your phone number?
+        - What's your number?
+        - What is your number?
+        - What's your mobile number?
+        - What is your mobile number?
+        - Can I have your phone number?
+        - Can I have your number?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: How many is your phone number?
+        feedback_vi: Tiếng Việt hỏi "bao nhiêu", nhưng tiếng Anh hỏi số điện thoại bằng What.
+        error_tag: word_choice
+      - answer: What is your number phone?
+        feedback_vi: Phone đứng trước number - phone number.
+        error_tag: word_order
+      - answer: What is you phone number?
+        feedback_vi: Cần your (của bạn), không phải you.
+        error_tag: possessive
+      - answer: How much is your phone number?
+        feedback_vi: How much hỏi giá tiền. Hỏi số điện thoại dùng What's your phone number?
+        error_tag: word_choice
+    explanation:
+      vi: Số điện thoại là một thông tin, nên tiếng Anh hỏi bằng What, không dùng How many hay How much. Phone number đặt từ phone trước, number sau.
+    display_answer: What's your phone number?
+
+  - key: en:exercise:age-phone-order-sister
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:years-old
+    prompt:
+      instruction: "Một người hỏi tuổi em gái bạn. Sắp xếp thành câu trả lời: \"Em ấy tám tuổi.\""
+      tokens:
+        - { id: s-eight, text: eight }
+        - { id: s-old, text: old }
+        - { id: s-has, text: has }
+        - { id: s-she, text: She }
+        - { id: s-years, text: years }
+        - { id: s-is, text: is }
+        - { id: s-year, text: year }
+    answer:
+      orders:
+        - [s-she, s-is, s-eight, s-years, s-old]
+        - [s-she, s-is, s-eight]
+    explanation:
+      vi: Nói tuổi bằng be - She is eight (years old). Không dùng has, và tám năm là số nhiều nên dùng years.
+    display_answer: She is eight years old.

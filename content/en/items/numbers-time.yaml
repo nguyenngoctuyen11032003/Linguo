@@ -1,0 +1,928 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Số đếm, tuổi & thời gian". IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: số đếm 0–100 ----------------
+  - key: en:item:zero
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, listening]
+    front:
+      text: zero
+      ipa: UK /ˈzɪərəʊ/ · US /ˈzɪroʊ/
+      pos: số từ
+    back:
+      meaning:
+        vi: số không (0)
+      examples:
+        - target: The answer is zero.
+          translation:
+            vi: Đáp án là số không.
+      pronunciation_note:
+        vi: Âm đầu /z/ rung nhẹ như "d" nói lướt, không đọc thành "giê-rô" hay "xê-rô".
+      confusion:
+        vi: Khi đọc số điện thoại, người Anh hay đọc số 0 là oh (giống chữ O), người Mỹ hay đọc zero.
+
+  - key: en:item:numbers-1-10
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, listening, speaking]
+    front:
+      text: one, two, three, four, five, six, seven, eight, nine, ten
+      ipa: one /wʌn/ · two /tuː/ · three /θriː/ · four UK /fɔː/ · US /fɔːr/ · eight /eɪt/
+      pos: số từ
+    back:
+      meaning:
+        vi: các số từ 1 đến 10
+      examples:
+        - target: I have three brothers.
+          translation:
+            vi: Tôi có ba anh em trai.
+        - target: Room eight, please.
+          translation:
+            vi: Cho tôi phòng số tám.
+      pronunciation_note:
+        vi: One đọc /wʌn/ gần "goan", không đọc "ôn". Three bắt đầu bằng /θ/ (đặt đầu lưỡi giữa hai hàm răng thổi hơi), khác tree /triː/ (cái cây).
+      confusion:
+        vi: Two, too và to đọc giống nhau /tuː/ nhưng nghĩa khác nhau. Eight /eɪt/ có âm /t/ cuối, đừng bỏ đi thành "ây".
+
+  - key: en:item:eleven-twelve
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: eleven, twelve
+      ipa: eleven /ɪˈlevn/ · twelve /twelv/
+      pos: số từ
+    back:
+      meaning:
+        vi: mười một (11), mười hai (12)
+      examples:
+        - target: She is twelve.
+          translation:
+            vi: Cô bé mười hai tuổi.
+      pronunciation_note:
+        vi: Eleven nhấn âm thứ hai (le). Twelve kết thúc bằng /lv/, môi dưới chạm răng trên ở âm /v/.
+      confusion:
+        vi: Hai số này không theo mẫu -teen; không có "oneteen" hay "twoteen".
+
+  - key: en:item:teen-numbers
+    type: vocab
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen
+      ipa: thirteen UK /ˌθɜːˈtiːn/ · US /ˌθɝːˈtiːn/ · fifteen /ˌfɪfˈtiːn/
+      pos: số từ
+    back:
+      meaning:
+        vi: các số từ 13 đến 19 (đuôi -teen)
+      examples:
+        - target: My sister is fifteen.
+          translation:
+            vi: Em gái tôi mười lăm tuổi.
+      pronunciation_note:
+        vi: Đuôi -teen kéo dài /tiːn/ và có âm /n/ rõ ở cuối; khi đọc riêng, trọng âm rơi vào -teen.
+      confusion:
+        vi: Tiếng Việt nói "mười ba" (mười trước, ba sau), còn thirteen là thir (3) + teen (10). Chú ý viết thirteen, fifteen, eighteen (chỉ một chữ t), không viết threeteen, fiveteen.
+
+  - key: en:item:tens
+    type: vocab
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety
+      ipa: thirty UK /ˈθɜːti/ · US /ˈθɝːt̬i/ · forty UK /ˈfɔːti/ · US /ˈfɔːrt̬i/
+      pos: số từ
+    back:
+      meaning:
+        vi: các số tròn chục từ 20 đến 90 (đuôi -ty)
+      examples:
+        - target: There are thirty students in my class.
+          translation:
+            vi: Lớp tôi có ba mươi học sinh.
+      pronunciation_note:
+        vi: Đuôi -ty ngắn, trọng âm rơi vào phần đầu (THIR-ty). Người Mỹ đọc t giữa từ rất nhẹ, nghe gần "thơ-đi".
+      confusion:
+        vi: Forty viết không có u (không phải fourty), dù four có u.
+
+  - key: en:item:teen-vs-ty
+    type: grammar_point
+    level: pre_a1
+    difficulty: 3
+    skill_tags: [listening, speaking]
+    front:
+      text: thirteen ≠ thirty
+      ipa: UK /ˌθɜːˈtiːn/ ≠ /ˈθɜːti/ · US /ˌθɝːˈtiːn/ ≠ /ˈθɝːt̬i/
+      pos: phân biệt phát âm
+    back:
+      meaning:
+        vi: Cách nghe và nói phân biệt số -teen (13–19) với số -ty (30–90)
+      examples:
+        - target: "A: Thirteen? B: No, thirty. Three, zero."
+          translation:
+            vi: "A: Mười ba à? B: Không, ba mươi. Ba, không."
+      pronunciation_note:
+        vi: -teen có nguyên âm dài /iː/ và âm /n/ cuối, nhấn vào -teen. -ty có nguyên âm ngắn /i/, không có /n/, nhấn vào phần đầu.
+      confusion:
+        vi: Khi chưa chắc, người bản xứ cũng hỏi lại và đọc từng chữ số - one, five (15) hay five, zero (50).
+
+  - key: en:item:compound-numbers
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: twenty-one … ninety-nine
+      ipa: twenty-one /ˌtwenti ˈwʌn/ · forty-five UK /ˌfɔːti ˈfaɪv/ · US /ˌfɔːrt̬i ˈfaɪv/
+      pos: số ghép
+    back:
+      meaning:
+        vi: Số từ 21 đến 99 - số chục + gạch nối + số đơn vị
+      examples:
+        - target: My father is forty-five.
+          translation:
+            vi: Bố tôi bốn mươi lăm tuổi.
+        - target: It costs ninety-nine thousand dong.
+          translation:
+            vi: Cái này giá chín mươi chín nghìn đồng.
+      confusion:
+        vi: Thứ tự giống tiếng Việt (hai mươi + mốt = twenty-one), nhưng không có từ "mươi" riêng và không đổi "một" thành "mốt", "năm" thành "lăm". Khi viết bằng chữ, nối hai phần bằng dấu gạch ngang.
+
+  - key: en:item:hundred
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: a hundred / one hundred
+      ipa: /ˈhʌndrəd/
+      pos: số từ
+    back:
+      meaning:
+        vi: một trăm (100)
+      examples:
+        - target: I got a hundred on the test.
+          translation:
+            vi: Tôi được một trăm điểm bài kiểm tra.
+      pronunciation_note:
+        vi: Nhấn âm đầu HUN; âm cuối /drəd/ đọc nhẹ, có /d/ ở cuối.
+      confusion:
+        vi: Phải có a hoặc one trước hundred - nói a hundred, không nói "hundred" đứng một mình. Hai trăm là two hundred, không thêm -s.
+
+  - key: en:item:number
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: number
+      ipa: UK /ˈnʌmbə/ · US /ˈnʌmbɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: số, con số
+      examples:
+        - target: Seven is my lucky number.
+          translation:
+            vi: Bảy là con số may mắn của tôi.
+      pronunciation_note:
+        vi: Âm đầu /ʌ/ gần "ă" ngắn, nghe gần "năm-bơ", không đọc "num-bơ".
+
+  - key: en:item:how-many
+    type: phrase
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: How many…?
+      ipa: /ˌhaʊ ˈmeni/
+      pos: cụm hỏi
+    back:
+      meaning:
+        vi: Bao nhiêu…? / Mấy…? (hỏi số lượng thứ đếm được)
+      examples:
+        - target: How many students are there?
+          translation:
+            vi: Có bao nhiêu học sinh?
+        - target: "A: How many apples? B: Twelve."
+          translation:
+            vi: "A: Mấy quả táo? B: Mười hai."
+      confusion:
+        vi: Danh từ sau How many luôn ở số nhiều (How many students, không nói How many student). Không dùng How many để hỏi giờ hay tuổi.
+
+  # ---------------- Bài 2: tuổi & số điện thoại ----------------
+  - key: en:item:how-old-are-you
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: How old are you?
+      ipa: UK /ˌhaʊ ˈəʊld ə juː/ · US /ˌhaʊ ˈoʊld ɚ juː/
+      pos: cụm hỏi
+    back:
+      meaning:
+        vi: Bạn bao nhiêu tuổi?
+      examples:
+        - target: "A: How old are you? B: I'm nineteen."
+          translation:
+            vi: "A: Bạn bao nhiêu tuổi? B: Mình mười chín tuổi."
+        - target: How old is your brother?
+          translation:
+            vi: Anh trai bạn bao nhiêu tuổi?
+      confusion:
+        vi: Câu hỏi dùng be (are/is), không dùng have. Với người lớn hoặc người mới gặp, hỏi tuổi có thể bị coi là bất lịch sự.
+
+  - key: en:item:years-old
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: I'm 20. / I'm 20 years old.
+      ipa: years old UK /ˌjɪəz ˈəʊld/ · US /ˌjɪrz ˈoʊld/
+      pos: cấu trúc nói tuổi
+    back:
+      meaning:
+        vi: Nói tuổi bằng be + số (+ years old), không dùng have
+      examples:
+        - target: I'm twenty years old.
+          translation:
+            vi: Tôi hai mươi tuổi.
+        - target: She is six.
+          translation:
+            vi: Bé ấy sáu tuổi.
+      confusion:
+        vi: Tiếng Việt nói "Tôi có… tuổi" và một số ngôn ngữ dùng "có", nhưng tiếng Anh dùng be - I'm 20, không nói I have 20 years. Hoặc chỉ nói số, hoặc nói đủ years old; không dừng ở years.
+
+  - key: en:item:age
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: age
+      ipa: /eɪdʒ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuổi, độ tuổi
+      examples:
+        - target: Please write your name and age.
+          translation:
+            vi: Vui lòng viết tên và tuổi của bạn.
+      pronunciation_note:
+        vi: Đọc /eɪdʒ/ gần "ây-ch", âm /dʒ/ cuối rung nhẹ.
+      confusion:
+        vi: Age là danh từ, hay gặp trong biểu mẫu. Khi nói chuyện, người ta hỏi How old are you? chứ ít khi hỏi What is your age?
+
+  - key: en:item:old
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: old
+      ipa: UK /əʊld/ · US /oʊld/
+      pos: tính từ
+    back:
+      meaning:
+        vi: già; cũ; (trong câu nói tuổi) … tuổi
+      examples:
+        - target: My grandfather is old.
+          translation:
+            vi: Ông tôi đã già.
+        - target: The baby is two years old.
+          translation:
+            vi: Em bé hai tuổi.
+      pronunciation_note:
+        vi: Âm /əʊ/ hoặc /oʊ/ lướt từ "ơ/ô" sang "u", gần "âul", có /l/ và /d/ ở cuối.
+      confusion:
+        vi: Trong How old và years old, old không có nghĩa "già" - em bé hai tuổi vẫn là two years old.
+
+  - key: en:item:young
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: young
+      ipa: /jʌŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: trẻ, còn nhỏ tuổi
+      examples:
+        - target: My teacher is young.
+          translation:
+            vi: Cô giáo tôi còn trẻ.
+      pronunciation_note:
+        vi: Đọc gần "dăng", kết thúc bằng /ŋ/ (giống "ng"), không đọc âm /g/ ở cuối.
+
+  - key: en:item:phone-number
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: phone number
+      ipa: UK /ˈfəʊn ˌnʌmbə/ · US /ˈfoʊn ˌnʌmbɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: số điện thoại
+      examples:
+        - target: My phone number is 0912 345 678.
+          translation:
+            vi: Số điện thoại của tôi là 0912 345 678.
+      confusion:
+        vi: Thứ tự ngược với tiếng Việt - phone (điện thoại) đứng trước, number (số) đứng sau. Cũng nói mobile number (Anh) hoặc cell phone number (Mỹ).
+
+  - key: en:item:whats-your-phone-number
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: What's your phone number?
+      ipa: UK /ˌwɒts jɔː ˈfəʊn ˌnʌmbə/ · US /ˌwʌts jɚ ˈfoʊn ˌnʌmbɚ/
+      pos: cụm hỏi
+    back:
+      meaning:
+        vi: Số điện thoại của bạn là gì? / Số điện thoại của bạn là bao nhiêu?
+      examples:
+        - target: "A: What's your phone number? B: It's 0987 654 321."
+          translation:
+            vi: "A: Số điện thoại của bạn là bao nhiêu? B: Là 0987 654 321."
+      confusion:
+        vi: Tiếng Việt hỏi "là bao nhiêu", nhưng tiếng Anh dùng What, không dùng How many. Trả lời bằng It's… hoặc My number is…
+
+  - key: en:item:oh-zero
+    type: vocab
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [listening, speaking]
+    front:
+      text: oh (0)
+      ipa: UK /əʊ/ · US /oʊ/
+      pos: cách đọc số
+    back:
+      meaning:
+        vi: cách đọc số 0 trong số điện thoại, số phòng (giống đọc chữ O)
+      examples:
+        - target: Oh nine one two, three four five, six seven eight.
+          translation:
+            vi: Không chín một hai, ba bốn năm, sáu bảy tám. (0912 345 678)
+      pronunciation_note:
+        vi: Đọc như tên chữ O - "âu", không đọc "ô".
+      confusion:
+        vi: Đọc số điện thoại thì nói từng chữ số, không gộp thành "nine hundred twelve". Oh dùng trong số điện thoại; trong toán học hay nhiệt độ thì dùng zero.
+
+  - key: en:item:call
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: call
+      ipa: /kɔːl/ (US cũng đọc /kɑːl/)
+      pos: động từ
+    back:
+      meaning:
+        vi: gọi điện (cho ai)
+      examples:
+        - target: Please call me tonight.
+          translation:
+            vi: Tối nay gọi cho mình nhé.
+      confusion:
+        vi: Call me, không nói call to me - tiếng Việt "gọi cho tôi" có chữ "cho", nhưng tiếng Anh không cần giới từ.
+
+  # ---------------- Bài 3: xem giờ ----------------
+  - key: en:item:what-time-is-it
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: What time is it?
+      ipa: UK /ˌwɒt ˈtaɪm ɪz ɪt/ · US /ˌwʌt ˈtaɪm ɪz ɪt/
+      pos: cụm hỏi
+    back:
+      meaning:
+        vi: Mấy giờ rồi?
+      examples:
+        - target: "A: What time is it? B: It's three o'clock."
+          translation:
+            vi: "A: Mấy giờ rồi? B: Ba giờ."
+        - target: Excuse me, what's the time?
+          translation:
+            vi: Xin lỗi, bây giờ là mấy giờ ạ?
+      confusion:
+        vi: Tiếng Việt hỏi "mấy giờ", nhưng tiếng Anh không nói How many hours? (câu này hỏi "bao nhiêu tiếng đồng hồ"). Trả lời luôn bắt đầu bằng It's.
+
+  - key: en:item:oclock
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: o'clock
+      ipa: UK /əˈklɒk/ · US /əˈklɑːk/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: (… giờ) đúng, chỉ giờ chẵn
+      examples:
+        - target: It's seven o'clock.
+          translation:
+            vi: Bây giờ là bảy giờ.
+      pronunciation_note:
+        vi: Nhấn âm sau (CLOCK); âm đầu /ə/ đọc rất nhẹ.
+      confusion:
+        vi: Chỉ dùng o'clock với giờ chẵn - không nói seven thirty o'clock. Không dịch "giờ" thành hours.
+
+  - key: en:item:half-past
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: half past
+      ipa: UK /ˌhɑːf ˈpɑːst/ · US /ˌhæf ˈpæst/
+      pos: cụm chỉ giờ
+    back:
+      meaning:
+        vi: … rưỡi (đã qua 30 phút)
+      examples:
+        - target: It's half past seven.
+          translation:
+            vi: Bây giờ là bảy giờ rưỡi.
+      confusion:
+        vi: Half past seven là 7:30, giống "bảy rưỡi" của tiếng Việt. Người Mỹ hay nói seven thirty hơn.
+
+  - key: en:item:quarter-past
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: quarter past
+      ipa: UK /ˌkwɔːtə ˈpɑːst/ · US /ˌkwɔːrt̬ɚ ˈpæst/
+      pos: cụm chỉ giờ
+    back:
+      meaning:
+        vi: … giờ mười lăm (đã qua 15 phút)
+      examples:
+        - target: It's quarter past nine.
+          translation:
+            vi: Bây giờ là chín giờ mười lăm.
+      confusion:
+        vi: Quarter là "một phần tư" (của một giờ), tức 15 phút. Có thể nói a quarter past nine hoặc quarter past nine.
+
+  - key: en:item:quarter-to
+    type: phrase
+    level: a1
+    difficulty: 3
+    skill_tags: [vocabulary, listening]
+    front:
+      text: quarter to
+      ipa: UK /ˌkwɔːtə ˈtuː/ · US /ˌkwɔːrt̬ɚ ˈtuː/
+      pos: cụm chỉ giờ
+    back:
+      meaning:
+        vi: … giờ kém mười lăm (còn 15 phút nữa)
+      examples:
+        - target: It's quarter to eight.
+          translation:
+            vi: Bây giờ là tám giờ kém mười lăm. (7:45)
+      confusion:
+        vi: Quarter to eight là 7:45, giống "tám giờ kém mười lăm", không phải 8:15. Người Mỹ cũng nói seven forty-five.
+
+  - key: en:item:past-to
+    type: grammar_point
+    level: a1
+    difficulty: 3
+    skill_tags: [grammar, listening]
+    front:
+      text: … past / … to
+      ipa: past UK /pɑːst/ · US /pæst/ · to /tuː/ (đọc nhẹ /tə/)
+      pos: cách nói giờ
+    back:
+      meaning:
+        vi: "past = hơn (phút 1–30, đã qua giờ đó); to = kém (phút 31–59, sắp đến giờ sau)"
+      examples:
+        - target: It's ten past six.
+          translation:
+            vi: Bây giờ là sáu giờ mười.
+        - target: It's twenty to five.
+          translation:
+            vi: Bây giờ là năm giờ kém hai mươi. (4:40)
+      confusion:
+        vi: Tiếng Anh nói phút trước, giờ sau (ten past six), ngược với tiếng Việt "sáu giờ mười". Với to, giờ là giờ sắp tới - twenty to five là 4:40.
+
+  - key: en:item:digital-time
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: seven thirty / nine fifteen
+      ipa: seven thirty UK /ˌsevn ˈθɜːti/ · US /ˌsevn ˈθɝːt̬i/
+      pos: cách nói giờ
+    back:
+      meaning:
+        vi: Cách nói giờ đơn giản - giờ trước, phút sau, giống đồng hồ số
+      examples:
+        - target: The class starts at seven thirty.
+          translation:
+            vi: Lớp học bắt đầu lúc bảy giờ ba mươi.
+        - target: It's nine oh five.
+          translation:
+            vi: Bây giờ là chín giờ không năm. (9:05)
+      confusion:
+        vi: Cách này giống tiếng Việt nhất và dùng được ở mọi nơi. Phút từ 01 đến 09 đọc oh + số - nine oh five là 9:05.
+
+  - key: en:item:am-pm
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: a.m. / p.m.
+      ipa: a.m. /ˌeɪ ˈem/ · p.m. /ˌpiː ˈem/
+      pos: viết tắt
+    back:
+      meaning:
+        vi: a.m. = từ nửa đêm đến trưa (sáng); p.m. = từ trưa đến nửa đêm (chiều, tối)
+      examples:
+        - target: The shop opens at 8 a.m.
+          translation:
+            vi: Cửa hàng mở cửa lúc 8 giờ sáng.
+        - target: I go to bed at 11 p.m.
+          translation:
+            vi: Tôi đi ngủ lúc 11 giờ đêm.
+      confusion:
+        vi: Không dùng a.m./p.m. cùng với o'clock - nói 8 a.m. hoặc eight o'clock, không nói eight o'clock a.m. 12 p.m. là 12 giờ trưa, 12 a.m. là nửa đêm.
+
+  - key: en:item:time
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: time
+      ipa: /taɪm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời gian; giờ (trên đồng hồ)
+      examples:
+        - target: What's the time, please?
+          translation:
+            vi: Cho hỏi bây giờ là mấy giờ?
+      confusion:
+        vi: Hỏi giờ dùng time (What time is it?), không dùng hour.
+
+  - key: en:item:hour
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: hour
+      ipa: UK /ˈaʊə/ · US /ˈaʊɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ, tiếng đồng hồ (khoảng thời gian 60 phút)
+      examples:
+        - target: The film is two hours long.
+          translation:
+            vi: Bộ phim dài hai tiếng.
+      pronunciation_note:
+        vi: Chữ h câm - đọc gần "ao-ơ", giống our. Vì vậy nói an hour, không nói a hour.
+      confusion:
+        vi: Hour chỉ độ dài thời gian (hai tiếng), không dùng để nói giờ trên đồng hồ - "7 giờ" là seven o'clock, không phải seven hours.
+
+  - key: en:item:minute
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: minute
+      ipa: /ˈmɪnɪt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phút
+      examples:
+        - target: Wait a minute, please.
+          translation:
+            vi: Vui lòng đợi một chút.
+        - target: The bus comes in ten minutes.
+          translation:
+            vi: Mười phút nữa xe buýt đến.
+      pronunciation_note:
+        vi: Nhấn âm đầu MIN; nghe gần "mi-nít", không đọc "mai-niu".
+      confusion:
+        vi: Từ minute đọc /maɪˈnjuːt/ là một tính từ khác (rất nhỏ). Khi nói giờ, thường bỏ minutes - ten past six, không cần ten minutes past six.
+
+  # ---------------- Bài 4: thứ, tháng, ngày ----------------
+  - key: en:item:days-of-week
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+      ipa: Tuesday UK /ˈtjuːzdeɪ/ · US /ˈtuːzdeɪ/ · Wednesday /ˈwenzdeɪ/ · Thursday UK /ˈθɜːzdeɪ/ · US /ˈθɝːzdeɪ/
+      pos: danh từ riêng
+    back:
+      meaning:
+        vi: thứ Hai, thứ Ba, thứ Tư, thứ Năm, thứ Sáu, thứ Bảy, Chủ nhật
+      examples:
+        - target: I have English class on Monday.
+          translation:
+            vi: Tôi có lớp tiếng Anh vào thứ Hai.
+        - target: Today is Friday.
+          translation:
+            vi: Hôm nay là thứ Sáu.
+      pronunciation_note:
+        vi: Wednesday đọc gần "goen-dây", chữ d đầu tiên câm. Tuesday bắt đầu bằng /t/, Thursday bắt đầu bằng /θ/ (lưỡi giữa răng) - đừng đọc giống nhau.
+      confusion:
+        vi: Thứ Hai là Monday, không phải "second day"; tuần trong tiếng Anh đặt tên riêng cho từng ngày. Tên thứ luôn viết hoa chữ cái đầu.
+
+  - key: en:item:weekend
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: weekend
+      ipa: UK /ˌwiːkˈend/ · US /ˈwiːkend/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuối tuần (thứ Bảy và Chủ nhật)
+      examples:
+        - target: What do you do at the weekend?
+          translation:
+            vi: Bạn làm gì vào cuối tuần?
+      pronunciation_note:
+        vi: Người Anh nhấn âm sau (week-END), người Mỹ nhấn âm đầu (WEEK-end).
+      confusion:
+        vi: Người Anh nói at the weekend, người Mỹ nói on the weekend - cả hai đều đúng.
+
+  - key: en:item:months
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: January, February, March, April, May, June, July, August, September, October, November, December
+      ipa: January UK /ˈdʒænjuəri/ · US /ˈdʒænjueri/ · June /dʒuːn/ · July /dʒuˈlaɪ/ · August /ˈɔːɡəst/
+      pos: danh từ riêng
+    back:
+      meaning:
+        vi: tháng Một đến tháng Mười Hai
+      examples:
+        - target: My birthday is in June.
+          translation:
+            vi: Sinh nhật tôi vào tháng Sáu.
+        - target: Tet is usually in January or February.
+          translation:
+            vi: Tết thường rơi vào tháng Một hoặc tháng Hai.
+      pronunciation_note:
+        vi: June /dʒuːn/ (một âm tiết) và July /dʒuˈlaɪ/ (nhấn âm sau) rất dễ nhầm khi nghe.
+      confusion:
+        vi: Tiếng Việt gọi tháng bằng số (tháng 6), còn tiếng Anh mỗi tháng có tên riêng; không nói "month six". Tên tháng luôn viết hoa.
+
+  - key: en:item:day
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: day
+      ipa: /deɪ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày; ban ngày
+      examples:
+        - target: There are seven days in a week.
+          translation:
+            vi: Một tuần có bảy ngày.
+      confusion:
+        vi: Day là ngày nói chung hoặc thứ trong tuần (What day is it?); ngày tháng cụ thể như 5/6 gọi là date.
+
+  - key: en:item:week
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: week
+      ipa: /wiːk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuần
+      examples:
+        - target: I study English three times a week.
+          translation:
+            vi: Tôi học tiếng Anh ba buổi một tuần.
+      pronunciation_note:
+        vi: Âm /iː/ kéo dài, /k/ cuối bật nhẹ - không đọc thành "huých".
+
+  - key: en:item:month
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: month
+      ipa: /mʌnθ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tháng
+      examples:
+        - target: There are twelve months in a year.
+          translation:
+            vi: Một năm có mười hai tháng.
+      pronunciation_note:
+        vi: Kết thúc bằng /nθ/ - sau "n", đưa đầu lưỡi ra giữa răng thổi hơi. Months /mʌnθs/ khó đọc, nhiều người nói gần "mănts".
+
+  - key: en:item:today
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: today
+      ipa: /təˈdeɪ/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: hôm nay
+      examples:
+        - target: Today is Tuesday.
+          translation:
+            vi: Hôm nay là thứ Ba.
+      confusion:
+        vi: Không đặt on hay in trước today - nói I'm free today, không nói on today.
+
+  - key: en:item:tomorrow
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: tomorrow
+      ipa: UK /təˈmɒrəʊ/ · US /təˈmɑːroʊ/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ngày mai
+      examples:
+        - target: See you tomorrow!
+          translation:
+            vi: Mai gặp lại nhé!
+      confusion:
+        vi: Viết một chữ m, hai chữ r (tomorrow). Giống today, không có giới từ đứng trước.
+
+  - key: en:item:ordinal-numbers
+    type: vocab
+    level: a1
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: first, second, third, fourth, fifth … twentieth, twenty-first
+      ipa: first UK /fɜːst/ · US /fɝːst/ · third UK /θɜːd/ · US /θɝːd/ · fifth /fɪfθ/
+      pos: số thứ tự
+    back:
+      meaning:
+        vi: số thứ tự (thứ nhất, thứ hai, thứ ba…), dùng để nói ngày trong tháng
+      examples:
+        - target: Today is the third of May.
+          translation:
+            vi: Hôm nay là ngày 3 tháng 5.
+        - target: My birthday is on June 21st.
+          translation:
+            vi: Sinh nhật tôi vào ngày 21 tháng 6.
+      pronunciation_note:
+        vi: Phần lớn thêm -th /θ/ (fourth, sixth); riêng 1, 2, 3 là first, second, third. Viết tắt 1st, 2nd, 3rd, 4th, 21st, 22nd.
+      confusion:
+        vi: Nói ngày phải dùng số thứ tự - May fifth hoặc the fifth of May, không nói May five. Chú ý chính tả fifth, ninth (không có e), twelfth, twentieth.
+
+  - key: en:item:date
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: date
+      ipa: /deɪt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày tháng (ngày cụ thể trong lịch)
+      examples:
+        - target: What's the date today?
+          translation:
+            vi: Hôm nay là ngày bao nhiêu?
+      confusion:
+        vi: Hỏi thứ dùng What day is it?, hỏi ngày tháng dùng What's the date? Người Anh hay viết ngày trước (5 May), người Mỹ viết tháng trước (May 5).
+
+  - key: en:item:birthday
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: birthday
+      ipa: UK /ˈbɜːθdeɪ/ · US /ˈbɝːθdeɪ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sinh nhật
+      examples:
+        - target: When is your birthday?
+          translation:
+            vi: Sinh nhật bạn là khi nào?
+        - target: Happy birthday!
+          translation:
+            vi: Chúc mừng sinh nhật!
+      pronunciation_note:
+        vi: Âm /θ/ ở giữa - lưỡi đặt giữa răng; đừng đọc thành "bớt-đây".
+
+  - key: en:item:on-in-at
+    type: grammar_point
+    level: a1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: on Monday · in May · at 7 o'clock
+      ipa: on UK /ɒn/ · US /ɑːn/ · in /ɪn/ · at /æt/ (đọc nhẹ /ət/)
+      pos: giới từ chỉ thời gian
+    back:
+      meaning:
+        vi: "at + giờ; on + thứ, ngày cụ thể; in + tháng, năm, buổi (đều có thể dịch là \"vào/lúc\")"
+      examples:
+        - target: The meeting is on Monday at 9 a.m.
+          translation:
+            vi: Cuộc họp vào thứ Hai lúc 9 giờ sáng.
+        - target: My birthday is in May. It's on May 5th.
+          translation:
+            vi: Sinh nhật tôi vào tháng Năm, ngày 5 tháng 5.
+      confusion:
+        vi: Tiếng Việt chỉ cần "vào" hoặc "lúc", còn tiếng Anh chọn theo độ dài thời gian - điểm giờ (at), ngày (on), tháng/năm (in). Có ngày cụ thể thì dùng on, kể cả khi có tên tháng - on May 5th.
+
+  # ---------------- Bài 5: ôn tập ----------------
+  - key: en:item:what-day-is-it
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: What day is it today?
+      ipa: UK /ˌwɒt ˈdeɪ ɪz ɪt təˈdeɪ/ · US /ˌwʌt ˈdeɪ ɪz ɪt təˈdeɪ/
+      pos: cụm hỏi
+    back:
+      meaning:
+        vi: Hôm nay là thứ mấy?
+      examples:
+        - target: "A: What day is it today? B: It's Wednesday."
+          translation:
+            vi: "A: Hôm nay thứ mấy? B: Thứ Tư."
+      confusion:
+        vi: Câu này hỏi thứ; muốn hỏi ngày tháng thì nói What's the date today? Trả lời bằng It's + thứ, không cần on.
+
+  - key: en:item:see-you
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: See you on… / See you at…
+      ipa: /ˈsiː juː/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Hẹn gặp bạn vào… / lúc…
+      examples:
+        - target: See you on Friday at six!
+          translation:
+            vi: Hẹn gặp bạn thứ Sáu lúc sáu giờ nhé!
+      confusion:
+        vi: Khi hẹn, giữ đúng giới từ - See you on Friday, See you at six, See you in July; riêng See you tomorrow không có giới từ.

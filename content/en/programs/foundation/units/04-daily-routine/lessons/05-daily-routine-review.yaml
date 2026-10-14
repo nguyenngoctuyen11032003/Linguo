@@ -1,0 +1,395 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
+key: en:lesson:daily-routine-review
+order_index: 5
+level: a1
+title:
+  vi: Ôn tập - Một ngày của bạn
+objectives:
+  - vi: Kể trọn một ngày của mình và của người khác theo thứ tự, dùng and then.
+  - vi: Kết hợp câu khẳng định, phủ định và câu hỏi thì hiện tại đơn trong một đoạn hội thoại.
+  - vi: Dùng đúng -s, don't/doesn't, Do/Does và trạng từ tần suất cùng lúc.
+estimated_minutes: 15
+skills: [speaking, listening, grammar, writing]
+prerequisites: [en:lesson:do-you-usually]
+items:
+  - item: en:item:and-then
+  - item: en:item:routine
+  - item: en:item:present-simple
+    role: reuse
+  - item: en:item:third-person-s
+    role: reuse
+  - item: en:item:dont-doesnt
+    role: reuse
+  - item: en:item:do-does-questions
+    role: reuse
+  - item: en:item:frequency-adverbs
+    role: reuse
+  - item: en:item:get-up
+    role: reuse
+  - item: en:item:take-a-shower
+    role: reuse
+  - item: en:item:have-breakfast
+    role: reuse
+  - item: en:item:go-to-work
+    role: reuse
+  - item: en:item:watch-tv
+    role: reuse
+  - item: en:item:play-games
+    role: reuse
+  - item: en:item:on-weekends
+    role: reuse
+  - item: en:item:always
+    role: reuse
+  - item: en:item:never
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi và kể được lịch sinh hoạt hằng ngày trong một cuộc trò chuyện ngắn - "Tôi dậy, đi tắm rồi ăn sáng", "Cuối tuần chị ấy có làm việc không?".
+  - type: explain
+    text:
+      vi: "Ba dạng câu của thì hiện tại đơn dùng chung một quy tắc: chỉ có một chỗ mang -s. Khẳng định - she works; phủ định - she doesn't work; câu hỏi - Does she work? Với I, you, we, they thì không có -s ở đâu cả."
+  - type: explain
+    text:
+      vi: Khi kể nhiều việc theo thứ tự, bạn nối bằng and then (rồi, sau đó) - I get up, take a shower, and then I have breakfast. Giống "rồi" trong tiếng Việt, then giúp người nghe theo kịp trình tự.
+  - type: explain
+    text:
+      vi: Trạng từ tần suất không làm thay đổi quy tắc -s - She always gets up early. Người Việt hay quên -s khi có always hoặc usually chen giữa chủ ngữ và động từ.
+  - type: deep_explain
+    text:
+      vi: Trong hội thoại thật, người bản xứ hỏi What's your daily routine? hoặc What do you usually do in the morning? rồi trả lời bằng một chuỗi việc. Khi được hỏi Yes/No, hãy trả lời ngắn (Yes, I do / No, she doesn't) rồi thêm một câu thông tin - No, she doesn't. She relaxes at home. Cách trả lời này nghe tự nhiên hơn nhiều so với chỉ nói "No".
+  - type: example
+    target: "A: What's your daily routine? B: I get up early, take a shower, and then I have breakfast."
+    target_lang: en
+    translation:
+      vi: "A: Lịch sinh hoạt hằng ngày của bạn thế nào? B: Tôi dậy sớm, đi tắm rồi ăn sáng."
+    note:
+      vi: And then đặt trước việc cuối cùng trong chuỗi.
+  - type: example
+    target: "A: Does your sister work on weekends? B: No, she doesn't. She relaxes at home."
+    target_lang: en
+    translation:
+      vi: "A: Cuối tuần chị bạn có đi làm không? B: Không. Chị ấy nghỉ ngơi ở nhà."
+    note:
+      vi: Câu hỏi và câu trả lời ngắn không có -s ở động từ chính, nhưng câu khẳng định She relaxes thì có.
+  - type: example
+    target: My father always reads the news, but he never watches TV.
+    target_lang: en
+    translation:
+      vi: Bố tôi lúc nào cũng đọc tin tức, nhưng không bao giờ xem ti vi.
+    note:
+      vi: Always và never đứng trước động từ, và động từ vẫn thêm -s.
+  - type: common_mistake
+    wrong: Does she goes to work by bus?
+    right: Does she go to work by bus?
+    target_lang: en
+    note:
+      vi: Chỉ một chỗ mang -s - does đã có thì go giữ nguyên.
+  - type: common_mistake
+    wrong: I am usually get up early.
+    right: I usually get up early.
+    target_lang: en
+    note:
+      vi: Câu có động từ thường get up thì không thêm am. Am/is/are chỉ đi với trạng từ khi không có động từ khác - I am usually tired.
+  - type: common_mistake
+    wrong: My mother always get up early.
+    right: My mother always gets up early.
+    target_lang: en
+    note:
+      vi: Always chen giữa không làm mất -s. My mother là một người nên động từ vẫn phải thêm -s.
+  - type: summary
+    points:
+      - vi: "Chỉ một chỗ mang -s: she works · she doesn't work · Does she work?"
+      - vi: I/you/we/they không có -s - I work · I don't work · Do you work?
+      - vi: Trạng từ tần suất trước động từ thường, sau be; không làm mất -s.
+      - vi: Kể theo thứ tự với and then; trả lời ngắn rồi thêm một câu thông tin.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:daily-routine-review-mcq-nam
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:third-person-s
+    prompt:
+      stem: Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: c8f, text: "Nam gets up early, but he doesn't have breakfast.", lang: en }
+        - { id: w3z, text: "Nam get up early, but he don't have breakfast.", lang: en }
+        - { id: j6t, text: "Nam gets up early, but he doesn't has breakfast.", lang: en }
+        - { id: o1v, text: "Nam gets up early, but he don't have breakfast.", lang: en }
+    answer:
+      correct_option_id: c8f
+    explanation:
+      vi: Nam là một người nên câu khẳng định cần gets. Câu phủ định dùng doesn't, và sau doesn't là have nguyên mẫu (không phải has).
+    display_answer: Nam gets up early, but he doesn't have breakfast.
+
+  - key: en:exercise:daily-routine-review-listen-routine
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:and-then
+    prompt:
+      audio_asset_id: null
+      fallback_text: "What's your daily routine? I get up, and then I take a shower."
+      options:
+        - { id: b4k, text: "Lịch sinh hoạt hằng ngày của bạn thế nào? Tôi dậy rồi đi tắm.", lang: vi }
+        - { id: y9e, text: "Lịch sinh hoạt hằng ngày của bạn thế nào? Tôi đi tắm rồi mới dậy.", lang: vi }
+        - { id: l5r, text: "Lịch sinh hoạt hằng ngày của bạn thế nào? Tôi dậy rồi ăn sáng.", lang: vi }
+        - { id: h2m, text: "Bạn thường làm gì cuối tuần? Tôi dậy rồi đi tắm.", lang: vi }
+    answer:
+      correct_option_id: b4k
+    explanation:
+      vi: Daily routine là "lịch sinh hoạt hằng ngày". And then cho biết thứ tự - dậy trước, rồi mới take a shower (đi tắm). Ăn sáng sẽ là have breakfast.
+    display_answer: Lịch sinh hoạt hằng ngày của bạn thế nào? Tôi dậy rồi đi tắm.
+
+  - key: en:exercise:daily-routine-review-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:frequency-adverbs
+    prompt:
+      template: "She usually {{b1}} up early, and then she {{b2}} a shower."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Cô ấy thường dậy sớm, rồi đi tắm."
+        - "Gợi ý: she → động từ thêm -s, kể cả khi có usually đứng trước."
+    answer:
+      blanks:
+        b1: [gets]
+        b2: [takes, has]
+    known_wrong:
+      - answer: get
+        feedback_vi: Chủ ngữ she nên phải là gets - usually không làm mất -s.
+        error_tag: third_person_s
+      - answer: take
+        feedback_vi: Chủ ngữ she nên phải là takes.
+        error_tag: third_person_s
+      - answer: "is get"
+        feedback_vi: Câu có động từ thường thì không thêm is - She usually gets up.
+        error_tag: be_with_verb
+    explanation:
+      vi: Chủ ngữ she nên cả hai động từ đều thêm -s. Usually đứng giữa chủ ngữ và động từ nhưng không thay đổi quy tắc -s.
+    display_answer: She usually gets up early, and then she takes a shower.
+
+  - key: en:exercise:daily-routine-review-order-question
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:do-does-questions
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: \"Anh ấy có hay xem ti vi không?\""
+      tokens:
+        - { id: q-tv, text: TV }
+        - { id: q-often, text: often }
+        - { id: q-watch, text: watch }
+        - { id: q-does, text: Does }
+        - { id: q-he, text: he }
+        - { id: q-watches, text: watches }
+        - { id: q-do, text: Do }
+        - { id: q-is, text: is }
+    answer:
+      orders:
+        - [q-does, q-he, q-often, q-watch, q-tv]
+        - [q-does, q-he, q-watch, q-tv, q-often]
+    explanation:
+      vi: He đi với Does; sau Does là watch nguyên mẫu. Often đứng ngay trước động từ hoặc ở cuối câu.
+    display_answer: Does he often watch TV?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:daily-routine-review-fill-brother
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:dont-doesnt
+    prompt:
+      template: "My brother {{b1}} cook. He {{b2}} games and {{b3}} TV."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: ["doesn't", "never"]
+        b2: [plays]
+        b3: [watches]
+    known_wrong:
+      - answer: "don't"
+        feedback_vi: My brother là một người (như he), nên dùng doesn't.
+        error_tag: dont_doesnt
+      - answer: play
+        feedback_vi: Câu khẳng định với he cần -s - plays.
+        error_tag: third_person_s
+      - answer: watch
+        feedback_vi: Câu khẳng định với he cần -es - watches.
+        error_tag: third_person_s
+      - answer: watchs
+        feedback_vi: Watch tận cùng bằng ch nên thêm -es - watches.
+        error_tag: spelling_es
+    explanation:
+      vi: Câu phủ định với my brother (như he) dùng doesn't + cook nguyên mẫu. Hai câu khẳng định sau thì động từ phải chia - plays, watches.
+    display_answer: My brother doesn't cook. He plays games and watches TV.
+
+  - key: en:exercise:daily-routine-review-translate-weekends
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:on-weekends
+    prompt:
+      source_text: Cuối tuần bạn có đi làm không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Do you go to work on weekends?
+        - Do you work on weekends?
+        - Do you go to work at the weekend?
+        - Do you work at the weekend?
+        - Do you go to work at weekends?
+        - Do you work at weekends?
+        - On weekends do you go to work?
+        - On weekends do you work?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Are you go to work on weekends?
+        feedback_vi: Go là động từ thường nên câu hỏi dùng Do, không dùng Are.
+        error_tag: be_question
+      - answer: Does you go to work on weekends?
+        feedback_vi: You đi với Do; Does chỉ dùng cho he, she, it.
+        error_tag: do_does
+      - answer: Do you go to work in weekends?
+        feedback_vi: Cuối tuần là on weekends hoặc at the weekend, không dùng in.
+        error_tag: preposition_time
+      - answer: Do you go to the work on weekends?
+        feedback_vi: Đi làm là go to work, không có the.
+        error_tag: article
+    explanation:
+      vi: Câu hỏi Có/Không với you bắt đầu bằng Do, động từ giữ nguyên mẫu. "Cuối tuần" là on weekends (Mỹ) hoặc at the weekend (Anh).
+    display_answer: Do you go to work on weekends?
+
+  # ---------------- application ----------------
+  - key: en:exercise:daily-routine-review-translate-parents
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:always
+    prompt:
+      source_text: Mẹ tôi lúc nào cũng dậy sớm, nhưng bố tôi thì không.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My mother always gets up early, but my father doesn't.
+        - My mom always gets up early, but my dad doesn't.
+        - My mum always gets up early, but my dad doesn't.
+        - My mother always wakes up early, but my father doesn't.
+        - My mom always wakes up early, but my dad doesn't.
+        - My mum always wakes up early, but my dad doesn't.
+        - My mother always gets up early, but my dad doesn't.
+        - My mother always gets up early, but my father never does.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My mother always get up early, but my father doesn't.
+        feedback_vi: My mother là một người nên động từ cần -s - gets up. Always không làm mất -s.
+        error_tag: third_person_s
+      - answer: My mother gets up always early, but my father doesn't.
+        feedback_vi: Always đứng trước động từ - always gets up.
+        error_tag: adverb_position
+      - answer: My mother always gets up early, but my father don't.
+        feedback_vi: My father như he, nên dùng doesn't.
+        error_tag: dont_doesnt
+      - answer: My mother always gets up early, but my father not.
+        feedback_vi: Phần "thì không" cần doesn't - but my father doesn't.
+        error_tag: missing_do
+      - answer: My mother always gets up early, but my father isn't.
+        feedback_vi: Get up là động từ thường nên phần rút gọn dùng doesn't, không dùng isn't.
+        error_tag: be_negative
+    explanation:
+      vi: Vế đầu - always đứng trước gets up, và gets vẫn có -s. Vế sau "thì không" rút gọn thành my father doesn't (không lặp lại get up early).
+    display_answer: My mother always gets up early, but my father doesn't.
+
+  - key: en:exercise:daily-routine-review-translate-sequence
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:and-then
+    prompt:
+      source_text: I get up, take a shower, and then I have breakfast.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi dậy, đi tắm rồi ăn sáng.
+        - Tôi thức dậy, đi tắm rồi ăn sáng.
+        - Tôi dậy, tắm rồi ăn sáng.
+        - Tôi thức dậy, tắm rồi ăn sáng.
+        - Tôi dậy, đi tắm, sau đó ăn sáng.
+        - Tôi thức dậy, đi tắm, sau đó ăn sáng.
+        - Tôi dậy, đi tắm, rồi tôi ăn sáng.
+        - Tôi dậy, đi tắm và sau đó ăn sáng.
+        - Mình dậy, đi tắm rồi ăn sáng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: And then là "rồi, sau đó", nối việc cuối cùng trong chuỗi. Take a shower là "đi tắm", have breakfast là "ăn sáng".
+    display_answer: Tôi dậy, đi tắm rồi ăn sáng.
+
+  - key: en:exercise:daily-routine-review-order-never
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:never
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Cô ấy không bao giờ đi ngủ muộn.\""
+      tokens:
+        - { id: n-bed, text: bed }
+        - { id: n-never, text: never }
+        - { id: n-late, text: late }
+        - { id: n-she, text: She }
+        - { id: n-go, text: go }
+        - { id: n-to, text: to }
+        - { id: n-goes, text: goes }
+        - { id: n-doesnt, text: "doesn't" }
+    answer:
+      orders:
+        - [n-she, n-never, n-goes, n-to, n-bed, n-late]
+    explanation:
+      vi: Never đã là phủ định nên không dùng doesn't; vì là câu khẳng định với she, động từ phải là goes. Never đứng trước động từ.
+    display_answer: She never goes to bed late.
+
+  - key: en:exercise:daily-routine-review-mcq-dialogue
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:do-does-questions
+    prompt:
+      stem: "Bạn của bạn hỏi: \"Does your sister work on weekends?\" Chị bạn ở nhà nghỉ ngơi vào cuối tuần. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: a7p, text: "No, she doesn't. She relaxes at home.", lang: en }
+        - { id: e4w, text: "No, she don't. She relaxes at home.", lang: en }
+        - { id: i2c, text: "No, she isn't. She relaxes at home.", lang: en }
+        - { id: u6s, text: "No, she doesn't. She relax at home.", lang: en }
+    answer:
+      correct_option_id: a7p
+    explanation:
+      vi: Hỏi bằng Does thì trả lời ngắn bằng doesn't (không phải isn't hay don't). Câu thông tin thêm là câu khẳng định với she nên relax phải thêm -es.
+    display_answer: No, she doesn't. She relaxes at home.

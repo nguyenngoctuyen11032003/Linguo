@@ -1,0 +1,377 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T12:00:00+07:00"
+key: en:lesson:dont-doesnt
+order_index: 3
+level: a1
+title:
+  vi: Tôi không… - don't và doesn't
+objectives:
+  - vi: Nói câu phủ định với don't (I, you, we, they) và doesn't (he, she, it).
+  - vi: Giữ động từ ở dạng nguyên mẫu sau doesn't - She doesn't work, không phải doesn't works.
+  - vi: Kể việc làm và không làm vào cuối tuần - on weekends.
+estimated_minutes: 12
+skills: [grammar, vocabulary, writing]
+prerequisites: [en:lesson:she-works]
+items:
+  - item: en:item:dont-doesnt
+  - item: en:item:on-weekends
+  - item: en:item:exercise-verb
+  - item: en:item:take-the-bus
+  - item: en:item:walk-verb
+  - item: en:item:cook
+  - item: en:item:sleep
+  - item: en:item:relax
+  - item: en:item:play-games
+  - item: en:item:third-person-s
+    role: reuse
+  - item: en:item:present-simple
+    role: reuse
+  - item: en:item:get-up
+    role: reuse
+  - item: en:item:early
+    role: reuse
+  - item: en:item:watch-tv
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Tôi không đi xe buýt", "Cuối tuần cô ấy không làm việc" với đúng don't hoặc doesn't.
+  - type: explain
+    text:
+      vi: Tiếng Việt chỉ cần thêm "không" trước động từ. Tiếng Anh với động từ thường thì cần thêm trợ động từ - I don't work, không nói "I not work".
+  - type: explain
+    text:
+      vi: I, you, we, they dùng don't (do not); he, she, it dùng doesn't (does not). Đây cũng là quy tắc -s của bài trước - does chính là do thêm -es.
+  - type: explain
+    text:
+      vi: Vì -s đã nằm ở doesn't, động từ phía sau quay về nguyên mẫu - She doesn't work, He doesn't watch TV. Không bao giờ có -s ở cả hai chỗ.
+  - type: deep_explain
+    text:
+      vi: Không dùng isn't/aren't với động từ thường - "She isn't cook" là sai, phải là She doesn't cook. Isn't chỉ dùng trong câu có be, như She isn't a teacher. Khi nói, người bản xứ hầu như luôn dùng dạng rút gọn don't /dəʊnt/, doesn't /ˈdʌznt/; dạng đầy đủ do not, does not dùng để nhấn mạnh hoặc trong văn viết trang trọng.
+  - type: example
+    target: I don't take the bus. I walk to work.
+    target_lang: en
+    translation:
+      vi: Tôi không đi xe buýt. Tôi đi bộ đi làm.
+    note:
+      vi: I đi với don't. Walk to work là đi bộ đến chỗ làm.
+  - type: example
+    target: She doesn't work on weekends.
+    target_lang: en
+    translation:
+      vi: Cuối tuần cô ấy không làm việc.
+    note:
+      vi: She đi với doesn't, và work giữ nguyên, không thêm -s.
+  - type: example
+    target: My parents don't cook on weekends. They relax.
+    target_lang: en
+    translation:
+      vi: Cuối tuần bố mẹ tôi không nấu ăn. Họ nghỉ ngơi.
+    note:
+      vi: My parents là số nhiều (như they), nên dùng don't.
+  - type: example
+    target: He doesn't sleep a lot, but he exercises every day.
+    target_lang: en
+    translation:
+      vi: Anh ấy không ngủ nhiều, nhưng ngày nào cũng tập thể dục.
+    note:
+      vi: Câu phủ định dùng sleep nguyên mẫu, nhưng câu khẳng định vẫn cần -es - exercises.
+  - type: common_mistake
+    wrong: She don't cook.
+    right: She doesn't cook.
+    target_lang: en
+    note:
+      vi: She, he, it phải đi với doesn't. Bạn có thể nghe "She don't" trong bài hát hay phim, nhưng đó là văn nói không chuẩn.
+  - type: common_mistake
+    wrong: He doesn't works on weekends.
+    right: He doesn't work on weekends.
+    target_lang: en
+    note:
+      vi: -s đã nằm ở doesn't, nên động từ sau quay về nguyên mẫu.
+  - type: common_mistake
+    wrong: I not take the bus.
+    right: I don't take the bus.
+    target_lang: en
+    note:
+      vi: Tiếng Việt chỉ thêm "không", nhưng tiếng Anh phải có don't trước động từ thường. Cũng không nói "I am not take the bus".
+  - type: summary
+    points:
+      - vi: I/you/we/they + don't + động từ nguyên mẫu.
+      - vi: he/she/it + doesn't + động từ nguyên mẫu (không thêm -s).
+      - vi: Không dùng not một mình hay isn't/aren't với động từ thường.
+      - vi: on weekends (Mỹ) = at the weekend (Anh) - vào cuối tuần.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:dont-doesnt-mcq-doesnt
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:dont-doesnt
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: He ___ work on weekends."
+      stem_lang: vi
+      options:
+        - { id: f5r, text: doesn't, lang: en }
+        - { id: w1c, text: don't, lang: en }
+        - { id: b8q, text: isn't, lang: en }
+        - { id: m3y, text: not, lang: en }
+    answer:
+      correct_option_id: f5r
+    explanation:
+      vi: He đi với doesn't. Don't dùng cho I, you, we, they; isn't chỉ dùng với be; not một mình không đứng trước động từ thường.
+    display_answer: doesn't
+
+  - key: en:exercise:dont-doesnt-mcq-base-verb
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:dont-doesnt
+    prompt:
+      stem: Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: j2d, text: "She doesn't cook.", lang: en }
+        - { id: r6k, text: "She doesn't cooks.", lang: en }
+        - { id: n9w, text: "She don't cook.", lang: en }
+        - { id: s4x, text: "She not cook.", lang: en }
+    answer:
+      correct_option_id: j2d
+    explanation:
+      vi: She đi với doesn't, và động từ sau doesn't giữ nguyên mẫu (cook) vì -s đã nằm ở does.
+    display_answer: She doesn't cook.
+
+  - key: en:exercise:dont-doesnt-listen-bus
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: en:item:take-the-bus
+    prompt:
+      audio_asset_id: null
+      fallback_text: We don't take the bus. We walk.
+      options:
+        - { id: y7h, text: "Chúng tôi không đi xe buýt. Chúng tôi đi bộ.", lang: vi }
+        - { id: e3b, text: "Chúng tôi đi xe buýt. Chúng tôi không đi bộ.", lang: vi }
+        - { id: o5m, text: "Họ không đi xe buýt. Họ đi bộ.", lang: vi }
+        - { id: a8t, text: "Chúng tôi không đi bộ. Chúng tôi đi xe buýt.", lang: vi }
+    answer:
+      correct_option_id: y7h
+    explanation:
+      vi: Don't đứng trước take the bus nên phủ định việc đi xe buýt; we walk là câu khẳng định "chúng tôi đi bộ". "Họ" sẽ là they.
+    display_answer: Chúng tôi không đi xe buýt. Chúng tôi đi bộ.
+
+  - key: en:exercise:dont-doesnt-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:cook
+    prompt:
+      template: "I {{b1}} cook, but my mother {{b2}} every day."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi không nấu ăn, nhưng ngày nào mẹ tôi cũng nấu."
+        - "Gợi ý: I dùng don't; my mother như she, động từ khẳng định thêm -s."
+    answer:
+      blanks:
+        b1: ["don't"]
+        b2: [cooks]
+    known_wrong:
+      - answer: "doesn't"
+        feedback_vi: Với I dùng don't; doesn't chỉ dùng cho he, she, it.
+        error_tag: dont_doesnt
+      - answer: not
+        feedback_vi: Động từ thường cần don't, không dùng not một mình.
+        error_tag: missing_do
+      - answer: "am not"
+        feedback_vi: Không dùng am not với động từ thường - I don't cook.
+        error_tag: be_negative
+      - answer: cook
+        feedback_vi: My mother là một người (như she), nên câu khẳng định cần -s - cooks.
+        error_tag: third_person_s
+    explanation:
+      vi: Vế đầu phủ định với I nên dùng don't. Vế sau là câu khẳng định với my mother (như she), nên cook phải thêm -s.
+    display_answer: I don't cook, but my mother cooks every day.
+
+  - key: en:exercise:dont-doesnt-order-weekends
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:on-weekends
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Cuối tuần cô ấy không tập thể dục.\""
+      tokens:
+        - { id: w-weekends, text: weekends }
+        - { id: w-exercise, text: exercise }
+        - { id: w-in, text: in }
+        - { id: w-doesnt, text: "doesn't" }
+        - { id: w-she, text: She }
+        - { id: w-exercises, text: exercises }
+        - { id: w-dont, text: "don't" }
+        - { id: w-on, text: on }
+    answer:
+      orders:
+        - [w-she, w-doesnt, w-exercise, w-on, w-weekends]
+    explanation:
+      vi: She đi với doesn't, sau doesn't là động từ nguyên mẫu exercise (không phải exercises). Cuối tuần là on weekends, không dùng in.
+    display_answer: She doesn't exercise on weekends.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:dont-doesnt-fill-games
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:play-games
+    prompt:
+      template: "He {{b1}} {{b2}} games at night."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: ["doesn't"]
+        b2: [play]
+    known_wrong:
+      - answer: "don't"
+        feedback_vi: He đi với doesn't, không phải don't.
+        error_tag: dont_doesnt
+      - answer: plays
+        feedback_vi: Sau doesn't, động từ giữ nguyên mẫu - play.
+        error_tag: doesnt_plus_s
+      - answer: "isn't"
+        feedback_vi: Isn't chỉ dùng với be; động từ thường cần doesn't.
+        error_tag: be_negative
+    explanation:
+      vi: Chủ ngữ he nên phủ định dùng doesn't. -s đã nằm ở does, nên play giữ nguyên mẫu.
+    display_answer: He doesn't play games at night.
+
+  - key: en:exercise:dont-doesnt-translate-bus
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:dont-doesnt
+    prompt:
+      source_text: Anh ấy không đi xe buýt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - He doesn't take the bus.
+        - He does not take the bus.
+        - He doesn't go by bus.
+        - He doesn't ride the bus.
+        - He doesn't catch the bus.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: He don't take the bus.
+        feedback_vi: He đi với doesn't, không phải don't.
+        error_tag: dont_doesnt
+      - answer: He doesn't takes the bus.
+        feedback_vi: Sau doesn't, động từ giữ nguyên mẫu - take.
+        error_tag: doesnt_plus_s
+      - answer: He not take the bus.
+        feedback_vi: Động từ thường cần doesn't để phủ định - He doesn't take the bus.
+        error_tag: missing_do
+      - answer: He isn't take the bus.
+        feedback_vi: Isn't chỉ dùng với be; động từ take cần doesn't.
+        error_tag: be_negative
+    explanation:
+      vi: Chủ ngữ he + doesn't + động từ nguyên mẫu take. Đi xe buýt thường nói take the bus hoặc go by bus.
+    display_answer: He doesn't take the bus.
+
+  # ---------------- application ----------------
+  - key: en:exercise:dont-doesnt-translate-weekends
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:on-weekends
+    prompt:
+      source_text: Cuối tuần tôi không dậy sớm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I don't get up early on weekends.
+        - On weekends I don't get up early.
+        - I don't get up early at weekends.
+        - At weekends I don't get up early.
+        - I don't get up early at the weekend.
+        - At the weekend I don't get up early.
+        - I don't wake up early on weekends.
+        - On weekends I don't wake up early.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I doesn't get up early on weekends.
+        feedback_vi: I đi với don't; doesn't chỉ dùng cho he, she, it.
+        error_tag: dont_doesnt
+      - answer: I not get up early on weekends.
+        feedback_vi: Cần don't trước động từ thường - I don't get up.
+        error_tag: missing_do
+      - answer: I am not get up early on weekends.
+        feedback_vi: Không dùng am not với động từ thường - I don't get up.
+        error_tag: be_negative
+      - answer: I don't get up early in weekends.
+        feedback_vi: Cuối tuần là on weekends (Mỹ) hoặc at the weekend (Anh), không dùng in.
+        error_tag: preposition_time
+    explanation:
+      vi: I + don't + get up early. "Cuối tuần" là on weekends (Mỹ) hoặc at the weekend (Anh), đặt đầu hoặc cuối câu đều được.
+    display_answer: I don't get up early on weekends.
+
+  - key: en:exercise:dont-doesnt-translate-reads
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:dont-doesnt
+    prompt:
+      source_text: She doesn't watch TV. She reads.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cô ấy không xem ti vi. Cô ấy đọc sách.
+        - Cô ấy không xem tivi. Cô ấy đọc sách.
+        - Cô ấy không xem ti vi mà đọc sách.
+        - Cô ấy không xem tivi mà đọc sách.
+        - Chị ấy không xem ti vi. Chị ấy đọc sách.
+        - Chị ấy không xem ti vi mà đọc sách.
+        - Cô ấy không xem ti vi. Cô ấy đọc.
+        - Cô ấy không xem truyền hình. Cô ấy đọc sách.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Doesn't watch là "không xem", còn she reads là câu khẳng định "cô ấy đọc (sách)". Tiếng Việt tự nhiên hay thêm "sách" và có thể nối hai câu bằng "mà".
+    display_answer: Cô ấy không xem ti vi. Cô ấy đọc sách.
+
+  - key: en:exercise:dont-doesnt-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sleep
+    prompt:
+      stem: Bạn muốn nói về em gái mình - "Em ấy không ngủ nhiều." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: g8p, text: "She doesn't sleep a lot.", lang: en }
+        - { id: d5u, text: "She don't sleep a lot.", lang: en }
+        - { id: l2n, text: "She doesn't sleeps a lot.", lang: en }
+        - { id: x6e, text: "She isn't sleep a lot.", lang: en }
+    answer:
+      correct_option_id: g8p
+    explanation:
+      vi: Em gái là she nên dùng doesn't; sau doesn't động từ giữ nguyên mẫu sleep. Isn't không dùng với động từ thường.
+    display_answer: She doesn't sleep a lot.

@@ -1,0 +1,350 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:shopping-clothes
+order_index: 4
+level: topik1
+title:
+  vi: Mua quần áo, giày, túi
+objectives:
+  - vi: Gọi tên 옷, 신발, 가방 và hỏi giá bằng 이 N 얼마예요?
+  - vi: Nhận xét giá bằng 비싸요 / 싸요 và mặc cả bằng 좀 깎아 주세요.
+  - vi: Phân biệt ba từ dễ nhầm 싸요 (rẻ) - 사요 (mua) - 비싸요 (đắt).
+estimated_minutes: 12
+skills: [vocabulary, speaking, listening]
+prerequisites: [ko:lesson:likes-wants]
+items:
+  - item: ko:item:ot
+    role: reuse
+  - item: ko:item:sinbal
+  - item: ko:item:gabang
+    role: reuse
+  - item: ko:item:bissayo
+  - item: ko:item:ssayo
+  - item: ko:item:kkakka-juseyo
+  - item: ko:item:eolmayeyo
+    role: reuse
+  - item: ko:item:go-sipeoyo
+    role: reuse
+  - item: ko:item:juseyo
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đi chợ hoặc cửa hàng quần áo ở Hàn, hỏi giá, chê đắt và xin bớt giá.
+  - type: explain
+    text:
+      vi: Muốn hỏi giá món đồ trước mặt, bạn đặt 이 (này) trước danh từ - 이 가방 얼마예요? (Cái túi này bao nhiêu tiền?). Tiếng Việt nói "túi này", tiếng Hàn nói 이 가방 - "này" đứng trước.
+  - type: explain
+    text:
+      vi: 비싸요 là đắt, 싸요 là rẻ. Ở chợ hoặc cửa hàng nhỏ, bạn có thể nói 좀 깎아 주세요 (bớt cho tôi chút) - cùng mẫu V-아/어 주세요 như 포장해 주세요.
+  - type: deep_explain
+    text:
+      vi: 싸요 (ㅆ căng) là rẻ, còn 사요 (ㅅ thường) là mua - từ 사다. Vì vậy "tôi muốn mua quần áo" là 옷을 사고 싶어요, không phải 싸고 싶어요. Khi đọc, 옷 đứng một mình nghe như [옫], nhưng 옷을 nối âm thành [오슬].
+  - type: example
+    target: 이 신발 얼마예요?
+    target_lang: ko
+    translation:
+      vi: Đôi giày này bao nhiêu tiền?
+    note:
+      vi: 이 (này) đứng trước danh từ.
+  - type: example
+    target: 너무 비싸요. 좀 깎아 주세요.
+    target_lang: ko
+    translation:
+      vi: Đắt quá. Bớt cho tôi chút đi.
+  - type: example
+    target: 시장 옷이 싸요.
+    target_lang: ko
+    translation:
+      vi: Quần áo ở chợ rẻ.
+    note:
+      vi: 옷 có patchim nên dùng 이.
+  - type: example
+    target: 가방을 사고 싶어요.
+    target_lang: ko
+    translation:
+      vi: Tôi muốn mua túi.
+    note:
+      vi: 사다 (mua) + -고 싶어요.
+  - type: common_mistake
+    wrong: 옷을 싸고 싶어요.
+    right: 옷을 사고 싶어요.
+    target_lang: ko
+    note:
+      vi: 싸다 là rẻ, 사다 là mua. Người Việt hay đọc và viết ㅅ/ㅆ lẫn nhau vì tiếng Việt không có âm căng.
+  - type: common_mistake
+    wrong: 가방 이 얼마예요?
+    right: 이 가방 얼마예요?
+    target_lang: ko
+    note:
+      vi: Theo thói quen "túi này", người học hay đặt 이 sau danh từ. Trong tiếng Hàn, 이 (này) luôn đứng trước - 이 가방.
+  - type: common_mistake
+    wrong: 깎아요 주세요.
+    right: 깎아 주세요.
+    target_lang: ko
+    note:
+      vi: Trước 주세요 chỉ dùng dạng 깎아, không giữ đuôi 요. Giống 포장해 주세요, không phải 포장해요 주세요.
+  - type: summary
+    points:
+      - vi: 옷 quần áo · 신발 giày · 가방 túi.
+      - vi: 이 + N + 얼마예요? - "này" đứng trước danh từ.
+      - vi: 비싸요 đắt · 싸요 rẻ · 사요 mua - chú ý ㅅ/ㅆ.
+      - vi: 좀 깎아 주세요 - xin bớt giá ở chợ, cửa hàng nhỏ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:shopping-mcq-cheap
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ssayo
+    prompt:
+      stem: Từ nào có nghĩa là "rẻ"?
+      stem_lang: vi
+      options:
+        - { id: k2r, text: 싸요, lang: ko }
+        - { id: f9a, text: 사요, lang: ko }
+        - { id: u4m, text: 비싸요, lang: ko }
+        - { id: o7c, text: 짜요, lang: ko }
+    answer:
+      correct_option_id: k2r
+    explanation:
+      vi: 싸요 (ㅆ căng) là rẻ. 사요 (ㅅ thường) là mua, 비싸요 là đắt, 짜요 là mặn.
+    display_answer: 싸요
+
+  - key: ko:exercise:shopping-listen-shoes
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:sinbal
+    prompt:
+      audio_asset_id: null
+      fallback_text: 이 신발 얼마예요?
+      options:
+        - { id: t1q, text: Đôi giày này bao nhiêu tiền?, lang: vi }
+        - { id: g8e, text: Cái túi này bao nhiêu tiền?, lang: vi }
+        - { id: w5h, text: Bộ quần áo này bao nhiêu tiền?, lang: vi }
+        - { id: m3z, text: Đôi giày này đắt quá., lang: vi }
+    answer:
+      correct_option_id: t1q
+    explanation:
+      vi: 신발 là giày, 얼마예요? là hỏi giá. Túi là 가방, quần áo là 옷, "đắt quá" là 너무 비싸요.
+    display_answer: Đôi giày này bao nhiêu tiền?
+
+  - key: ko:exercise:shopping-mcq-haggle
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:kkakka-juseyo
+    prompt:
+      stem: Ở chợ, bạn muốn xin người bán bớt giá. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - { id: s4v, text: 좀 깎아 주세요., lang: ko }
+        - { id: j7p, text: 포장해 주세요., lang: ko }
+        - { id: b6i, text: 카드로 계산할게요., lang: ko }
+        - { id: x2n, text: 좀 깎아요 주세요., lang: ko }
+    answer:
+      correct_option_id: s4v
+    explanation:
+      vi: 깎다 là "cắt bớt", 깎아 주세요 là "bớt cho tôi". 포장해 주세요 là xin gói mang về, còn 깎아요 주세요 sai vì trước 주세요 không có 요.
+    display_answer: 좀 깎아 주세요.
+
+  - key: ko:exercise:shopping-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:bissayo
+    prompt:
+      template: "이 가방은 너무 {{b1}}. 좀 깎아 주세요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Cái túi này đắt quá. Bớt cho tôi chút."
+        - "Gợi ý: 비 + từ nghĩa là \"rẻ\"."
+    answer:
+      blanks:
+        b1: [비싸요]
+    known_wrong:
+      - answer: 비사요
+        feedback_vi: Đắt là 비싸요 với ㅆ căng, không phải ㅅ thường.
+        error_tag: consonant_tense
+      - answer: 싸요
+        feedback_vi: 싸요 là rẻ - đã rẻ thì không cần xin bớt giá. Đắt là 비싸요.
+        error_tag: antonym
+    explanation:
+      vi: Bạn xin bớt giá vì món đồ đắt, nên dùng 비싸요. 너무 là "quá".
+    display_answer: 이 가방은 너무 비싸요. 좀 깎아 주세요.
+
+  - key: ko:exercise:shopping-wb-buy-clothes
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ot
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi muốn mua quần áo.\""
+      tokens:
+        - { id: o4, text: 싶어요 }
+        - { id: o5, text: 싸고 }
+        - { id: o2, text: 사고 }
+        - { id: o1, text: 옷을 }
+        - { id: o3, text: 옷이 }
+    answer:
+      orders:
+        - [o1, o2, o4]
+    explanation:
+      vi: 사다 (mua) + -고 싶어요 = 사고 싶어요. 옷 là tân ngữ của "mua" nên dùng 을; 싸고 là từ "rẻ", không phải "mua".
+    display_answer: 옷을 사고 싶어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:shopping-translate-bag-price
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gabang
+    prompt:
+      source_text: Cái túi này bao nhiêu tiền?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이 가방 얼마예요?
+        - 이 가방은 얼마예요?
+        - 이 가방이 얼마예요?
+        - 이 가방 가격이 얼마예요?
+        - 이 가방은 가격이 얼마예요?
+    known_wrong:
+      - answer: 가방 이 얼마예요?
+        feedback_vi: 이 (này) đứng trước danh từ - 이 가방.
+        error_tag: demonstrative_order
+      - answer: 이 가방 얼마이에요?
+        feedback_vi: 얼마 kết thúc bằng nguyên âm nên dùng 예요 - 얼마예요.
+        error_tag: copula_ieyo_yeyo
+      - answer: 이 가방 비싸요?
+        feedback_vi: 비싸요? là "có đắt không?". Hỏi giá phải dùng 얼마예요?
+        error_tag: question_word
+    explanation:
+      vi: 이 (này) + 가방 (túi) + 얼마예요? (bao nhiêu tiền). Tiếng Hàn đặt "này" trước danh từ, ngược với tiếng Việt.
+    display_answer: 이 가방 얼마예요?
+
+  - key: ko:exercise:shopping-fill-words
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:sinbal
+    prompt:
+      template: "Giày - {{b1}}. Quần áo - {{b2}}. Túi - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [신발]
+        b2: [옷]
+        b3: [가방]
+    known_wrong:
+      - answer: 옫
+        feedback_vi: '[옫] là cách đọc khi đứng một mình. Khi viết, quần áo là 옷 với patchim ㅅ.'
+        error_tag: spelling_pronunciation
+      - answer: 까방
+        feedback_vi: Túi là 가방 với ㄱ thường, không phải ㄲ căng.
+        error_tag: consonant_tense
+    explanation:
+      vi: 신발 là giày dép, 옷 là quần áo (viết với ㅅ dù đọc [옫]), 가방 là túi hoặc cặp.
+    display_answer: 신발, 옷, 가방
+
+  # ---------------- application ----------------
+  - key: ko:exercise:shopping-mcq-dialogue
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:kkakka-juseyo
+    prompt:
+      stem: "A: 이 옷 얼마예요? - B: 오만 원이에요. - A: ___ (Bạn thấy đắt và muốn được bớt giá.)"
+      stem_lang: vi
+      options:
+        - { id: h8w, text: 너무 비싸요. 좀 깎아 주세요., lang: ko }
+        - { id: c1d, text: 너무 싸요. 좀 깎아 주세요., lang: ko }
+        - { id: r5o, text: 너무 비싸요. 포장해 주세요., lang: ko }
+        - { id: l3k, text: 옷을 싸고 싶어요., lang: ko }
+    answer:
+      correct_option_id: h8w
+    explanation:
+      vi: Chê đắt là 너무 비싸요, rồi xin bớt bằng 좀 깎아 주세요. Nói 싸요 (rẻ) thì không hợp lý; 포장해 주세요 là xin gói mang về; 싸고 싶어요 dùng sai từ "rẻ" thay cho "mua".
+    display_answer: 너무 비싸요. 좀 깎아 주세요.
+
+  - key: ko:exercise:shopping-translate-haggle-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:kkakka-juseyo
+    prompt:
+      source_text: 신발이 너무 비싸요. 좀 깎아 주세요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Giày đắt quá. Bớt cho tôi một chút.
+        - Giày đắt quá. Bớt cho tôi chút đi.
+        - Giày đắt quá. Giảm giá cho tôi một chút.
+        - Đôi giày đắt quá. Bớt cho tôi một chút nhé.
+        - Đôi giày đắt quá. Bớt cho tôi chút đi.
+        - Giày đắt quá, bớt cho tôi một chút.
+        - Giày đắt quá. Bớt chút đi.
+        - Giày đắt quá. Giảm giá chút đi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Giày rẻ quá. Bớt cho tôi một chút.
+        feedback_vi: 비싸요 là "đắt"; "rẻ" là 싸요.
+        error_tag: antonym
+      - answer: Túi đắt quá. Bớt cho tôi một chút.
+        feedback_vi: 신발 là giày; túi là 가방.
+        error_tag: vocab_confusion
+    explanation:
+      vi: 신발 = giày, 너무 비싸요 = đắt quá, 좀 깎아 주세요 = bớt cho tôi chút.
+    display_answer: Giày đắt quá. Bớt cho tôi một chút.
+
+  - key: ko:exercise:shopping-translate-buy-shoes
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:go-sipeoyo
+    prompt:
+      source_text: Tôi muốn mua giày.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 신발을 사고 싶어요.
+        - 신발 사고 싶어요.
+        - 저는 신발을 사고 싶어요.
+        - 저는 신발 사고 싶어요.
+        - 제가 신발을 사고 싶어요.
+    known_wrong:
+      - answer: 신발을 싸고 싶어요.
+        feedback_vi: 싸다 là "rẻ"; "mua" là 사다 với ㅅ thường - 사고 싶어요.
+        error_tag: consonant_tense
+      - answer: 신발을 사 싶어요.
+        feedback_vi: Trước 싶어요 dùng dạng -고 - 사고 싶어요.
+        error_tag: go_sipeoyo_form
+      - answer: 신발을 사고 싶어해요.
+        feedback_vi: 싶어해요 dùng cho người thứ ba. Nói về mình thì dùng 싶어요.
+        error_tag: third_person_want
+    explanation:
+      vi: 사다 (mua) bỏ 다, thêm -고 싶어요 → 사고 싶어요. 신발 có patchim nên dùng 을.
+    display_answer: 신발을 사고 싶어요.

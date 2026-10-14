@@ -1,0 +1,368 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:time-days
+order_index: 4
+level: topik1
+title:
+  vi: Giờ giấc và các ngày trong tuần
+objectives:
+  - vi: Nói giờ với 시 (số thuần Hàn) và 분 (số Hán-Hàn), kể cả 반 và 오전/오후.
+  - vi: Gọi tên bảy ngày trong tuần và dùng 오늘, 내일, 어제.
+  - vi: Hỏi 몇 시예요? và 무슨 요일이에요?
+estimated_minutes: 15
+skills: [vocabulary, listening, speaking]
+prerequisites: [ko:lesson:native-numbers-counters]
+items:
+  - item: ko:item:hour-si
+  - item: ko:item:minute-bun
+  - item: ko:item:half-ban
+  - item: ko:item:ojeon
+  - item: ko:item:ohu
+  - item: ko:item:myeot-si
+  - item: ko:item:weekdays
+  - item: ko:item:oneul
+  - item: ko:item:naeil
+  - item: ko:item:eoje
+  - item: ko:item:museun-yoil
+  - item: ko:item:native-short-forms
+    role: reuse
+  - item: ko:item:sino-compounds
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn trả lời được "Mấy giờ rồi?" như 오후 세 시 반이에요 và nói được hôm nay, ngày mai là thứ mấy.
+  - type: explain
+    text:
+      vi: Khi nói giờ, tiếng Hàn dùng hai bộ số cùng lúc - giờ dùng số thuần Hàn (세 시), phút dùng số Hán-Hàn (삼십 분). Tiếng Việt chỉ có một bộ số nên đây là chỗ người Việt hay sai nhất.
+  - type: explain
+    text:
+      vi: Trước 시, số thuần Hàn cũng rút gọn như với đơn vị đếm - 한 시, 두 시, 세 시, 네 시, 열한 시, 열두 시. 30 phút có thể nói 반 (rưỡi), và 오전 (sáng) / 오후 (chiều) đứng trước giờ - 오후 세 시 반.
+  - type: explain
+    text:
+      vi: Bảy ngày trong tuần đều kết thúc bằng 요일 - 월요일 (thứ Hai), 화요일, 수요일, 목요일, 금요일, 토요일, 일요일 (Chủ nhật). Hỏi giờ dùng 몇 시예요?, hỏi thứ dùng 무슨 요일이에요?
+  - type: deep_explain
+    text:
+      vi: Tên thứ dựa trên mặt trăng, lửa, nước, gỗ, vàng, đất, mặt trời - giống âm Hán-Việt nguyệt, hoả, thuỷ, mộc, kim, thổ, nhật. Nhớ vậy để không nhầm 월요일 (thứ Hai) với 월 (tháng), hay 일요일 (Chủ nhật) với "ngày một". 오늘, 내일, 어제 thường đi với 은/는 khi nói về thứ - 오늘은 금요일이에요.
+  - type: example
+    target: 지금 몇 시예요?
+    target_lang: ko
+    translation:
+      vi: Bây giờ là mấy giờ?
+    note:
+      vi: 몇 시 đọc [멷씨].
+  - type: example
+    target: 오후 세 시 반이에요.
+    target_lang: ko
+    translation:
+      vi: 3 giờ rưỡi chiều.
+    note:
+      vi: 오후 đứng trước; 세 là số thuần Hàn rút gọn.
+  - type: example
+    target: 아홉 시 십오 분이에요.
+    target_lang: ko
+    translation:
+      vi: 9 giờ 15 phút.
+    note:
+      vi: Giờ thuần Hàn (아홉), phút Hán-Hàn (십오).
+  - type: example
+    target: 오늘은 금요일이에요.
+    target_lang: ko
+    translation:
+      vi: Hôm nay là thứ Sáu.
+    note:
+      vi: 금요일 đọc nối [그묘일].
+  - type: example
+    target: 내일은 토요일이에요.
+    target_lang: ko
+    translation:
+      vi: Ngày mai là thứ Bảy.
+  - type: common_mistake
+    wrong: 삼 시
+    right: 세 시
+    target_lang: ko
+    note:
+      vi: Giờ dùng số thuần Hàn - 3 giờ là 세 시. 삼 chỉ dùng cho phút (삼 분 = 3 phút).
+  - type: common_mistake
+    wrong: 세 시 서른 분
+    right: 세 시 삼십 분
+    target_lang: ko
+    note:
+      vi: Phút dùng số Hán-Hàn - 삼십 분, không dùng 서른. Hoặc nói gọn 세 시 반.
+  - type: common_mistake
+    wrong: 아홉 시 오전
+    right: 오전 아홉 시
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói "9 giờ sáng", nhưng tiếng Hàn đặt 오전/오후 trước giờ.
+  - type: common_mistake
+    wrong: 몇 요일이에요?
+    right: 무슨 요일이에요?
+    target_lang: ko
+    note:
+      vi: Hỏi thứ dùng 무슨 (gì), không dùng 몇. 몇 dùng với số đếm như 몇 시, 몇 개.
+  - type: summary
+    points:
+      - vi: Giờ - số thuần Hàn + 시 (한 시, 세 시, 열두 시); phút - số Hán-Hàn + 분 (삼십 분).
+      - vi: 30 phút = 반; 오전 (sáng) / 오후 (chiều) đứng trước giờ.
+      - vi: 월요일 화요일 수요일 목요일 금요일 토요일 일요일 - thứ Hai đến Chủ nhật.
+      - vi: 오늘 hôm nay · 내일 ngày mai · 어제 hôm qua.
+      - vi: Hỏi giờ - 몇 시예요? Hỏi thứ - 무슨 요일이에요?
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:time-days-listen-330
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:minute-bun
+    prompt:
+      audio_asset_id: null
+      fallback_text: 세 시 삼십 분이에요.
+      options:
+        - { id: g2r, text: "3:30", lang: vi }
+        - { id: u9k, text: "3:13", lang: vi }
+        - { id: y5d, text: "4:30", lang: vi }
+        - { id: j6w, text: "3:03", lang: vi }
+    answer:
+      correct_option_id: g2r
+    explanation:
+      vi: 세 시 là 3 giờ (số thuần Hàn), 삼십 분 là 30 phút (số Hán-Hàn). 4 giờ là 네 시, 13 phút là 십삼 분, 3 phút là 삼 분.
+    display_answer: "3:30"
+
+  - key: ko:exercise:time-days-mcq-monday
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:weekdays
+    prompt:
+      stem: Thứ Hai trong tiếng Hàn là gì?
+      stem_lang: vi
+      options:
+        - { id: o3v, text: 월요일, lang: ko }
+        - { id: i8f, text: 일요일, lang: ko }
+        - { id: a1n, text: 일월, lang: ko }
+        - { id: p6z, text: 화요일, lang: ko }
+    answer:
+      correct_option_id: o3v
+    explanation:
+      vi: 월요일 là thứ Hai (월 - nguyệt, mặt trăng). 일요일 là Chủ nhật, 화요일 là thứ Ba, còn 일월 là tháng Một.
+    display_answer: 월요일
+
+  - key: ko:exercise:time-days-mcq-9am
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ojeon
+    prompt:
+      stem: '"9 giờ sáng" nói thế nào?'
+      stem_lang: vi
+      options:
+        - { id: w7c, text: 오전 아홉 시, lang: ko }
+        - { id: d4m, text: 아홉 시 오전, lang: ko }
+        - { id: e2s, text: 오후 아홉 시, lang: ko }
+        - { id: t8b, text: 오전 구 시, lang: ko }
+    answer:
+      correct_option_id: w7c
+    explanation:
+      vi: 오전 (sáng) đứng trước giờ, và giờ dùng số thuần Hàn 아홉. 오후 아홉 시 là 9 giờ tối, còn 구 시 dùng sai bộ số.
+    display_answer: 오전 아홉 시
+
+  - key: ko:exercise:time-days-fill-three-oclock
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:hour-si
+    prompt:
+      template: "Bây giờ là 3 giờ. - 지금 {{b1}} 시예요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Giờ dùng số thuần Hàn - 3 là 셋.
+        - Trước 시, 셋 rút gọn giống như trước đơn vị đếm.
+    answer:
+      blanks:
+        b1: [세]
+    known_wrong:
+      - answer: 삼
+        feedback_vi: Giờ dùng số thuần Hàn - 세 시. 삼 chỉ dùng cho phút.
+        error_tag: number_system
+      - answer: 셋
+        feedback_vi: Trước 시, 셋 rút gọn thành 세 - 세 시.
+        error_tag: counter_form
+    explanation:
+      vi: Giờ dùng số thuần Hàn, và 셋 đứng ngay trước 시 thì rút gọn thành 세. Vì vậy 3 giờ là 세 시.
+    display_answer: 지금 세 시예요.
+
+  - key: ko:exercise:time-days-order-what-day
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:museun-yoil
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Hôm nay là thứ mấy?\""
+      tokens:
+        - { id: w3, text: 요일이에요? }
+        - { id: w4, text: 몇 }
+        - { id: w2, text: 무슨 }
+        - { id: w5, text: 며칠이에요? }
+        - { id: w1, text: 오늘이 }
+    answer:
+      orders:
+        - [w1, w2, w3]
+    explanation:
+      vi: Hỏi thứ dùng 무슨 요일이에요? (thứ gì). 몇 dùng với số đếm, còn 며칠이에요? là hỏi ngày trong tháng.
+    display_answer: 오늘이 무슨 요일이에요?
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:time-days-fill-245
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:minute-bun
+    prompt:
+      template: "2 giờ 45 phút - {{b1}} 시 {{b2}} 분"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [두]
+        b2: [사십오]
+    known_wrong:
+      - answer: 이
+        feedback_vi: Giờ dùng số thuần Hàn - 2 giờ là 두 시.
+        error_tag: number_system
+      - answer: 둘
+        feedback_vi: Trước 시, 둘 rút gọn thành 두.
+        error_tag: counter_form
+      - answer: 마흔다섯
+        feedback_vi: Phút dùng số Hán-Hàn - 45 phút là 사십오 분.
+        error_tag: number_system
+    explanation:
+      vi: Giờ dùng số thuần Hàn (둘 → 두 trước 시), phút dùng số Hán-Hàn (사십오 = 4 × 10 + 5). Hai bộ số đứng chung trong một cụm.
+    display_answer: 두 시 사십오 분
+
+  - key: ko:exercise:time-days-translate-330pm
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:half-ban
+    prompt:
+      source_text: 3 giờ rưỡi chiều
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 오후 세 시 반
+        - 오후 세 시 삼십 분
+        - 오후 3시 반
+        - 오후 3시 30분
+    known_wrong:
+      - answer: 세 시 반 오후
+        feedback_vi: 오후 đứng trước giờ - 오후 세 시 반.
+        error_tag: word_order
+      - answer: 오후 삼 시 반
+        feedback_vi: Giờ dùng số thuần Hàn - 세 시, không phải 삼 시.
+        error_tag: number_system
+      - answer: 오후 세 시 서른 분
+        feedback_vi: Phút dùng số Hán-Hàn - 삼십 분, hoặc nói gọn 반.
+        error_tag: number_system
+      - answer: 오전 세 시 반
+        feedback_vi: 오전 là buổi sáng. Buổi chiều là 오후.
+        error_tag: am_pm
+    explanation:
+      vi: 오후 (chiều) đứng trước, rồi 세 시 (giờ thuần Hàn), rồi 반 (rưỡi). Có thể thay 반 bằng 삼십 분 vì phút dùng số Hán-Hàn.
+    display_answer: 오후 세 시 반
+
+  - key: ko:exercise:time-days-translate-tomorrow-saturday
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:naeil
+    prompt:
+      source_text: Ngày mai là thứ Bảy.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 내일은 토요일이에요.
+        - 내일이 토요일이에요.
+        - 내일 토요일이에요.
+    known_wrong:
+      - answer: 내일은 일요일이에요.
+        feedback_vi: 일요일 là Chủ nhật. Thứ Bảy là 토요일.
+        error_tag: weekday
+      - answer: 어제는 토요일이에요.
+        feedback_vi: 어제 là hôm qua. Ngày mai là 내일.
+        error_tag: time_word
+      - answer: 내일은 토요일예요.
+        feedback_vi: 토요일 có phụ âm cuối ㄹ nên dùng 이에요 - 토요일이에요.
+        error_tag: copula_form
+    explanation:
+      vi: 내일 là ngày mai, 토요일 là thứ Bảy (토 - thổ, đất). 요일 kết thúc bằng phụ âm ㄹ nên đi với 이에요.
+    display_answer: 내일은 토요일이에요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:time-days-translate-class-time
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ojeon
+    prompt:
+      source_text: 수업은 오전 열 시 반이에요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Lớp học lúc 10 giờ rưỡi sáng.
+        - Lớp học lúc mười giờ rưỡi sáng.
+        - Lớp học lúc 10 giờ 30 sáng.
+        - Buổi học lúc 10 giờ rưỡi sáng.
+        - Giờ học là 10 giờ rưỡi sáng.
+        - Lớp học bắt đầu lúc 10 giờ rưỡi sáng.
+        - Lớp học là 10 giờ rưỡi sáng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Lớp học lúc 10 giờ rưỡi tối.
+        feedback_vi: 오전 là buổi sáng; tối là 오후 (hoặc 저녁).
+        error_tag: am_pm
+      - answer: Lớp học lúc 10 giờ 15 sáng.
+        feedback_vi: 반 là rưỡi, tức 30 phút.
+        error_tag: number_value
+    explanation:
+      vi: 오전 là buổi sáng, 열 시 là 10 giờ (số thuần Hàn), 반 là rưỡi. Tiếng Việt đưa "sáng" ra sau - 10 giờ rưỡi sáng.
+    display_answer: Lớp học lúc 10 giờ rưỡi sáng.
+
+  - key: ko:exercise:time-days-mcq-answer-day
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:museun-yoil
+    prompt:
+      stem: "Bạn của bạn hỏi: \"오늘이 무슨 요일이에요?\" Câu trả lời nào phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: c5x, text: 금요일이에요., lang: ko }
+        - { id: h2q, text: 세 시예요., lang: ko }
+        - { id: m8t, text: 유월 오 일이에요., lang: ko }
+        - { id: z4g, text: 오천 원이에요., lang: ko }
+    answer:
+      correct_option_id: c5x
+    explanation:
+      vi: 무슨 요일 hỏi thứ mấy, nên trả lời bằng tên thứ - 금요일이에요 (thứ Sáu). 세 시예요 trả lời 몇 시, 유월 오 일 trả lời 며칠, 오천 원 trả lời 얼마.
+    display_answer: 금요일이에요.

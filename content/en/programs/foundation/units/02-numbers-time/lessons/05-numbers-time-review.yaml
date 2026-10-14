@@ -1,0 +1,383 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:numbers-time-review
+order_index: 5
+level: a1
+title:
+  vi: Ôn tập - Hẹn lịch và hỏi thông tin
+objectives:
+  - vi: Kết hợp số, tuổi, giờ, thứ và ngày tháng trong một cuộc hội thoại ngắn.
+  - vi: Hỏi thứ bằng What day is it today? và hẹn gặp bằng See you on… at…
+  - vi: Tránh các lỗi quen thuộc - thirteen/thirty, have + tuổi, hours thay cho o'clock, sai on/in/at.
+estimated_minutes: 12
+skills: [listening, speaking, writing]
+prerequisites: [en:lesson:days-dates]
+items:
+  - item: en:item:what-day-is-it
+  - item: en:item:see-you
+  - item: en:item:teen-vs-ty
+    role: reuse
+  - item: en:item:how-old-are-you
+    role: reuse
+  - item: en:item:years-old
+    role: reuse
+  - item: en:item:half-past
+    role: reuse
+  - item: en:item:digital-time
+    role: reuse
+  - item: en:item:am-pm
+    role: reuse
+  - item: en:item:days-of-week
+    role: reuse
+  - item: en:item:months
+    role: reuse
+  - item: en:item:ordinal-numbers
+    role: reuse
+  - item: en:item:date
+    role: reuse
+  - item: en:item:on-in-at
+    role: reuse
+  - item: en:item:tomorrow
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự tin hẹn một buổi gặp - hỏi thứ, ngày, giờ và xác nhận lại bằng tiếng Anh, không nhầm số và giới từ.
+  - type: explain
+    text:
+      vi: Một cuộc hẹn thường có ba câu hỏi - What day…? (thứ mấy), What's the date? (ngày bao nhiêu), What time…? (mấy giờ). Câu trả lời đều bắt đầu bằng It's, và khi nói việc xảy ra lúc nào thì dùng on + thứ/ngày, at + giờ.
+  - type: explain
+    text:
+      vi: Để chốt lịch, bạn nói See you on Friday at six! Riêng today, tomorrow không có giới từ - See you tomorrow!
+  - type: explain
+    text:
+      vi: Khi nghe số, hãy để ý đuôi -teen (dài, có /n/) và -ty (ngắn). Nếu chưa chắc, bạn hỏi lại bằng cách đọc từng chữ số - Thirteen? One, three?
+  - type: deep_explain
+    text:
+      vi: Hội thoại thật thường gom nhiều thông tin vào một câu, theo thứ tự từ nhỏ đến lớn hoặc ngược lại - at six on Friday hay on Friday at six đều đúng. Bạn chỉ cần mỗi mốc thời gian đi với đúng giới từ của nó. Lặp lại thông tin để xác nhận (So, Friday the 15th at 6 p.m.?) là cách người bản xứ tránh nhầm lẫn.
+  - type: example
+    target: "A: What day is it today? B: It's Wednesday. A: And what's the date? B: It's May 14th."
+    target_lang: en
+    translation:
+      vi: "A: Hôm nay thứ mấy? B: Thứ Tư. A: Thế hôm nay ngày bao nhiêu? B: Ngày 14 tháng 5."
+    note:
+      vi: Day hỏi thứ, date hỏi ngày tháng; 14th đọc fourteenth.
+  - type: example
+    target: "A: What time is the class? B: At half past six on Friday. A: Great, see you on Friday!"
+    target_lang: en
+    translation:
+      vi: "A: Lớp học lúc mấy giờ? B: Sáu giờ rưỡi tối thứ Sáu. A: Tuyệt, hẹn gặp bạn thứ Sáu nhé!"
+    note:
+      vi: At đi với giờ, on đi với thứ.
+  - type: example
+    target: "My son is thirteen - one, three - not thirty!"
+    target_lang: en
+    translation:
+      vi: "Con trai tôi mười ba tuổi - một, ba - không phải ba mươi đâu!"
+    note:
+      vi: Đọc từng chữ số giúp người nghe không nhầm -teen và -ty.
+  - type: common_mistake
+    wrong: See you in Friday at six.
+    right: See you on Friday at six.
+    target_lang: en
+    note:
+      vi: Thứ luôn đi với on, dù tiếng Việt chỉ nói "vào thứ Sáu".
+  - type: common_mistake
+    wrong: What date is it today? - It's Monday.
+    right: What day is it today? - It's Monday.
+    target_lang: en
+    note:
+      vi: Day hỏi thứ (Monday), date hỏi ngày tháng (May 14th). Hai từ gần giống nhau nên người học hay dùng lẫn.
+  - type: common_mistake
+    wrong: See you on tomorrow.
+    right: See you tomorrow.
+    target_lang: en
+    note:
+      vi: Today, tomorrow đã chỉ thời điểm, nên không thêm on, in hay at.
+  - type: summary
+    points:
+      - vi: What day is it today? → thứ · What's the date today? → ngày · What time…? → giờ.
+      - vi: Hẹn gặp - See you on Friday at six! · See you tomorrow!
+      - vi: Tuổi - I'm 13 (years old), không dùng have.
+      - vi: Nghe số - -teen dài có /n/, -ty ngắn; nghi ngờ thì hỏi lại từng chữ số.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:nt-review-listen-what-day
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:what-day-is-it
+    prompt:
+      audio_asset_id: null
+      fallback_text: What day is it today?
+      options:
+        - { id: a5v, text: Hôm nay thứ mấy?, lang: vi }
+        - { id: r8c, text: Hôm nay ngày bao nhiêu?, lang: vi }
+        - { id: m2h, text: Mấy giờ rồi?, lang: vi }
+        - { id: x6y, text: Hôm nay bạn rảnh không?, lang: vi }
+    answer:
+      correct_option_id: a5v
+    explanation:
+      vi: Day hỏi thứ trong tuần, nên câu này là "Hôm nay thứ mấy?". Hỏi ngày tháng thì dùng date - What's the date today?
+    display_answer: Hôm nay thứ mấy?
+
+  - key: en:exercise:nt-review-mcq-date
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:date
+    prompt:
+      stem: "A: What's the date today? B: ___"
+      stem_lang: en
+      options:
+        - { id: d3p, text: "It's May 2nd.", lang: en }
+        - { id: f9g, text: "It's Monday.", lang: en }
+        - { id: k1b, text: "It's two o'clock.", lang: en }
+        - { id: w4z, text: "It's on May two.", lang: en }
+    answer:
+      correct_option_id: d3p
+    explanation:
+      vi: Date hỏi ngày tháng, nên câu trả lời là ngày - May 2nd (đọc May second). It's Monday trả lời câu hỏi thứ; ngày phải dùng số thứ tự và không cần on sau It's.
+    display_answer: "It's May 2nd."
+
+  - key: en:exercise:nt-review-order-see-you
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:see-you
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Hẹn gặp bạn thứ Sáu lúc sáu giờ nhé!\""
+      tokens:
+        - { id: y-at, text: at }
+        - { id: y-friday, text: Friday }
+        - { id: y-in, text: in }
+        - { id: y-you, text: you }
+        - { id: y-six, text: six }
+        - { id: y-see, text: See }
+        - { id: y-on, text: "on" }
+    answer:
+      orders:
+        - [y-see, y-you, y-on, y-friday, y-at, y-six]
+        - [y-see, y-you, y-at, y-six, y-on, y-friday]
+    explanation:
+      vi: Thứ đi với on (on Friday), giờ đi với at (at six). Hai mốc có thể đổi chỗ cho nhau, nhưng không dùng in.
+    display_answer: See you on Friday at six!
+
+  # ---------------- recall ----------------
+  - key: en:exercise:nt-review-fill-son
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:how-old-are-you
+    prompt:
+      template: "A: How {{b1}} is your son? B: He's {{b2}}. (13)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [old]
+        b2: [thirteen, "13", thirteen years old, 13 years old]
+    known_wrong:
+      - answer: thirty
+        feedback_vi: Thirty là 30. Mười ba là thirteen - đuôi -teen.
+        error_tag: teen_ty
+      - answer: threeteen
+        feedback_vi: 13 viết là thirteen, phần đầu đổi thành thir-.
+        error_tag: spelling
+      - answer: many
+        feedback_vi: Hỏi tuổi dùng How old, không dùng How many.
+        error_tag: how_many_age
+    explanation:
+      vi: Hỏi tuổi dùng How old. 13 có đuôi -teen - thirteen, khác thirty (30).
+    display_answer: "A: How old is your son? B: He's thirteen."
+
+  - key: en:exercise:nt-review-fill-tomorrow
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 1
+    item: en:item:days-of-week
+    prompt:
+      template: "Today is Wednesday, so tomorrow is {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [Thursday]
+    known_wrong:
+      - answer: Tuesday
+        feedback_vi: Tuesday là thứ Ba (hôm qua). Sau thứ Tư là thứ Năm - Thursday.
+        error_tag: day_name
+      - answer: Friday
+        feedback_vi: Friday là thứ Sáu. Ngày mai của thứ Tư là thứ Năm - Thursday.
+        error_tag: day_name
+    explanation:
+      vi: Wednesday là thứ Tư, nên ngày mai là thứ Năm - Thursday. Tuesday (thứ Ba) và Thursday (thứ Năm) rất dễ nhầm.
+    display_answer: Today is Wednesday, so tomorrow is Thursday.
+
+  - key: en:exercise:nt-review-translate-see-you
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:see-you
+    prompt:
+      source_text: Hẹn gặp bạn vào thứ Hai lúc chín giờ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - See you on Monday at nine.
+        - See you on Monday at nine o'clock.
+        - See you on Monday at 9.
+        - See you on Monday at 9 o'clock.
+        - See you at nine on Monday.
+        - See you at nine o'clock on Monday.
+        - See you at 9 on Monday.
+        - See you Monday at nine.
+        - See you on Monday at 9 a.m.
+        - See you on Monday at nine a.m.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: See you in Monday at nine.
+        feedback_vi: Thứ trong tuần đi với on - on Monday.
+        error_tag: preposition_time
+      - answer: See you on Monday in nine.
+        feedback_vi: Giờ đi với at - at nine.
+        error_tag: preposition_time
+      - answer: See you at Monday at nine.
+        feedback_vi: Thứ đi với on, giờ mới đi với at - on Monday at nine.
+        error_tag: preposition_time
+      - answer: See you on Monday at nine hours.
+        feedback_vi: Giờ trên đồng hồ là nine hoặc nine o'clock, không dùng hours.
+        error_tag: hour_oclock
+    explanation:
+      vi: Hẹn gặp là See you + thời điểm. Thứ Hai đi với on, chín giờ đi với at; hai mốc có thể đổi chỗ.
+    display_answer: See you on Monday at nine.
+
+  # ---------------- application ----------------
+  - key: en:exercise:nt-review-listen-lan
+    type: listen
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:teen-vs-ty
+    prompt:
+      audio_asset_id: null
+      fallback_text: "I'm thirty, and my birthday is on the fifteenth of August."
+      options:
+        - { id: g7e, text: "Người nói 30 tuổi, sinh nhật ngày 15/8.", lang: vi }
+        - { id: b2n, text: "Người nói 13 tuổi, sinh nhật ngày 15/8.", lang: vi }
+        - { id: s6r, text: "Người nói 30 tuổi, sinh nhật ngày 5/8.", lang: vi }
+        - { id: j9t, text: "Người nói 30 tuổi, sinh nhật ngày 15/10.", lang: vi }
+    answer:
+      correct_option_id: g7e
+    explanation:
+      vi: Thirty (ngắn, nhấn đầu, không có /n/) là 30. Fifteenth là số thứ tự của 15, và August là tháng Tám.
+    display_answer: "Người nói 30 tuổi, sinh nhật ngày 15/8."
+
+  - key: en:exercise:nt-review-mcq-film
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:digital-time
+    prompt:
+      stem: "Bạn của bạn hỏi: \"What time is the film?\" Phim chiếu lúc 7:45 tối. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: h1m, text: At seven forty-five p.m., lang: en }
+        - { id: v8u, text: At quarter to seven p.m., lang: en }
+        - { id: e5w, text: At quarter past seven p.m., lang: en }
+        - { id: q4i, text: On seven forty-five p.m., lang: en }
+    answer:
+      correct_option_id: h1m
+    explanation:
+      vi: 7:45 đọc seven forty-five (hoặc quarter to eight), và giờ đi với at. Quarter to seven là 6:45, quarter past seven là 7:15.
+    display_answer: At seven forty-five p.m.
+
+  - key: en:exercise:nt-review-translate-shop-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:half-past
+    prompt:
+      source_text: The shop opens at half past eight on Saturday.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cửa hàng mở cửa lúc tám giờ rưỡi vào thứ Bảy.
+        - Cửa hàng mở cửa lúc tám giờ rưỡi thứ Bảy.
+        - Thứ Bảy cửa hàng mở cửa lúc tám giờ rưỡi.
+        - Vào thứ Bảy cửa hàng mở cửa lúc tám giờ rưỡi.
+        - Thứ Bảy, cửa hàng mở cửa lúc tám giờ rưỡi.
+        - Cửa hàng mở cửa lúc 8 giờ rưỡi vào thứ Bảy.
+        - Cửa hàng mở cửa lúc 8 giờ 30 vào thứ Bảy.
+        - Cửa hàng mở cửa lúc 8:30 vào thứ Bảy.
+        - Thứ Bảy cửa hàng mở cửa lúc 8 giờ rưỡi.
+        - Thứ Bảy cửa hàng mở cửa lúc 8 giờ 30.
+        - Cửa hàng mở lúc tám giờ rưỡi vào thứ Bảy.
+        - Thứ Bảy cửa hàng mở lúc tám giờ rưỡi.
+        - Cửa hàng mở cửa lúc tám rưỡi vào thứ Bảy.
+        - Thứ Bảy cửa hàng mở cửa lúc tám rưỡi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Half past eight là tám giờ rưỡi (8:30), Saturday là thứ Bảy. Tiếng Việt tự nhiên có thể đưa "thứ Bảy" lên đầu câu.
+    display_answer: Cửa hàng mở cửa lúc tám giờ rưỡi vào thứ Bảy.
+
+  - key: en:exercise:nt-review-translate-father
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:years-old
+    prompt:
+      source_text: Bố tôi bốn mươi tuổi và sinh nhật bố vào tháng Tư.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My father is forty, and his birthday is in April.
+        - My father is forty and his birthday is in April.
+        - My father is forty years old, and his birthday is in April.
+        - My father is forty years old and his birthday is in April.
+        - My father is 40, and his birthday is in April.
+        - My father is 40 years old, and his birthday is in April.
+        - "My father's forty, and his birthday's in April."
+        - "My father's forty, and his birthday is in April."
+        - My dad is forty, and his birthday is in April.
+        - My dad is forty years old, and his birthday is in April.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My father has forty years, and his birthday is in April.
+        feedback_vi: Nói tuổi dùng be - My father is forty.
+        error_tag: have_age
+      - answer: My father is fourteen, and his birthday is in April.
+        feedback_vi: Fourteen là 14. Bốn mươi là forty - đuôi -ty, không có u.
+        error_tag: teen_ty
+      - answer: My father is forty, and his birthday is on April.
+        feedback_vi: Chỉ có tháng thì dùng in - in April.
+        error_tag: preposition_time
+      - answer: My father is forty years, and his birthday is in April.
+        feedback_vi: Nói forty hoặc forty years old, không dừng ở years.
+        error_tag: missing_old
+      - answer: My father is forty, and his birthday in April.
+        feedback_vi: Vế sau thiếu is - his birthday is in April.
+        error_tag: missing_be
+    explanation:
+      vi: Hai vế đều là câu "là" nên đều cần is - My father is forty, his birthday is in April. Bốn mươi là forty, và tháng (không có ngày) đi với in; "bố" ở vế sau dịch là his.
+    display_answer: My father is forty, and his birthday is in April.

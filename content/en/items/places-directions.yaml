@@ -1,0 +1,850 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Nơi chốn & chỉ đường". IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Nơi chốn trong thành phố ----------------
+  - key: en:item:bank
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: bank
+      ipa: /bæŋk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngân hàng
+      examples:
+        - target: There is a bank on this street.
+          translation:
+            vi: Trên con phố này có một ngân hàng.
+      pronunciation_note:
+        vi: Âm /æ/ mở miệng rộng, giữa "a" và "e"; đuôi /ŋk/ gần "ăng-k", bật nhẹ âm /k/ ở cuối.
+      confusion:
+        vi: Bank cũng có nghĩa là "bờ sông" (river bank), nhưng trong thành phố gần như luôn là ngân hàng.
+
+  - key: en:item:hospital
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: hospital
+      ipa: UK /ˈhɒspɪtl/ · US /ˈhɑːspɪtl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bệnh viện
+      examples:
+        - target: The hospital is next to the park.
+          translation:
+            vi: Bệnh viện ở cạnh công viên.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu HOS; âm cuối -tal đọc rất nhẹ, gần "tồ", không đọc rõ "tan".
+      confusion:
+        vi: Phòng khám nhỏ là clinic; hospital là bệnh viện lớn có nhiều khoa.
+
+  - key: en:item:supermarket
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: supermarket
+      ipa: UK /ˈsuːpəmɑːkɪt/ · US /ˈsuːpɚmɑːrkɪt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: siêu thị
+      examples:
+        - target: Is there a supermarket near here?
+          translation:
+            vi: Gần đây có siêu thị nào không?
+      pronunciation_note:
+        vi: Nhấn vào âm đầu SU; -ket ở cuối đọc nhẹ, gần "kít".
+      confusion:
+        vi: Chợ truyền thống là market; supermarket là siêu thị có quầy tính tiền.
+
+  - key: en:item:post-office
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: post office
+      ipa: UK /ˈpəʊst ˌɒfɪs/ · US /ˈpoʊst ˌɑːfɪs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bưu điện
+      examples:
+        - target: The post office is opposite the bank.
+          translation:
+            vi: Bưu điện ở đối diện ngân hàng.
+      pronunciation_note:
+        vi: Nhấn vào POST; âm /t/ của post thường gần như mất khi nói nhanh (pos-office).
+      confusion:
+        vi: Post office là hai từ tách rời và luôn đi với a/an hoặc the - a post office, an office.
+
+  - key: en:item:bus-station
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: bus station
+      ipa: /ˈbʌs ˌsteɪʃn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bến xe buýt (bến lớn, nơi nhiều tuyến xe xuất phát)
+      examples:
+        - target: Excuse me, where is the bus station?
+          translation:
+            vi: Xin lỗi, bến xe buýt ở đâu ạ?
+      pronunciation_note:
+        vi: Bus đọc /bʌs/, gần "bợt-x", không đọc "buýt" như tiếng Việt.
+      confusion:
+        vi: Điểm dừng nhỏ ven đường là bus stop; bus station là bến lớn có nhà chờ.
+
+  - key: en:item:pharmacy
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: pharmacy
+      ipa: UK /ˈfɑːməsi/ · US /ˈfɑːrməsi/
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiệu thuốc, nhà thuốc
+      examples:
+        - target: There's a pharmacy on the corner.
+          translation:
+            vi: Có một hiệu thuốc ở góc phố.
+      pronunciation_note:
+        vi: Ph đọc là /f/; nhấn vào âm đầu PHAR.
+      confusion:
+        vi: Người Anh cũng hay nói chemist's, người Mỹ nói drugstore; pharmacy thì ai cũng hiểu.
+
+  - key: en:item:park
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: park
+      ipa: UK /pɑːk/ · US /pɑːrk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: công viên
+      examples:
+        - target: There are two parks in my town.
+          translation:
+            vi: Thị trấn của mình có hai công viên.
+      pronunciation_note:
+        vi: Âm /ɑː/ dài như "a" kéo dài; giọng Mỹ cong lưỡi thêm âm r.
+      confusion:
+        vi: Park còn là động từ "đỗ xe" (park the car); nơi đỗ xe là car park (UK) hay parking lot (US).
+
+  - key: en:item:library
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: library
+      ipa: UK /ˈlaɪbrəri/ · US /ˈlaɪbreri/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thư viện
+      examples:
+        - target: Is there a library in this town?
+          translation:
+            vi: Thị trấn này có thư viện không?
+      pronunciation_note:
+        vi: Nhấn vào LAI; đừng bỏ âm r thứ nhất (li-bra-ry, không phải "lai-be-ri").
+      confusion:
+        vi: Library là thư viện (mượn sách), không phải hiệu sách; hiệu sách là bookshop (UK) hay bookstore (US).
+
+  - key: en:item:there-is-there-are
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: there is / there are
+      ipa: there's UK /ðeəz/ · US /ðerz/ · there are UK /ˌðeər ˈɑː/ · US /ˌðer ˈɑːr/
+      pos: cấu trúc câu
+    back:
+      meaning:
+        vi: "có (cái gì đó ở đâu): there is + danh từ số ít, there are + danh từ số nhiều"
+      examples:
+        - target: There is a bank near here.
+          translation:
+            vi: Gần đây có một ngân hàng.
+        - target: There are three hospitals in the city.
+          translation:
+            vi: Thành phố có ba bệnh viện.
+      pronunciation_note:
+        vi: There is thường nói gọn là there's /ðeəz/; th đặt đầu lưỡi giữa hai hàm răng, không đọc thành "đe".
+      confusion:
+        vi: Chữ "có" để nói một thứ tồn tại ở đâu đó là there is/are, không phải have. Không nói It has a bank near here hay Have a bank near here.
+
+  - key: en:item:near-here
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: near here
+      ipa: UK /ˌnɪə ˈhɪə/ · US /ˌnɪr ˈhɪr/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: gần đây (gần chỗ mình đang đứng)
+      examples:
+        - target: Is there a pharmacy near here?
+          translation:
+            vi: Gần đây có hiệu thuốc nào không?
+      confusion:
+        vi: Không cần thêm "to" - near here, không nói near to here. Đặt ở cuối câu, không đặt đầu câu như "Gần đây có…".
+
+  # ---------------- Bài 2: Trong nhà ----------------
+  - key: en:item:kitchen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: kitchen
+      ipa: /ˈkɪtʃɪn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà bếp
+      examples:
+        - target: There's a big table in the kitchen.
+          translation:
+            vi: Trong bếp có một cái bàn lớn.
+      pronunciation_note:
+        vi: Tch đọc là /tʃ/ gần "ch"; nhấn vào KIT.
+      confusion:
+        vi: Đừng nhầm với chicken (con gà) - kitchen /ˈkɪtʃɪn/ có âm "ch" ở giữa, chicken /ˈtʃɪkɪn/ có "ch" ở đầu.
+
+  - key: en:item:bedroom
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: bedroom
+      ipa: /ˈbedruːm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng ngủ
+      examples:
+        - target: There are two bedrooms in my flat.
+          translation:
+            vi: Căn hộ của mình có hai phòng ngủ.
+      confusion:
+        vi: Bedroom là một từ ghép viết liền (bed + room). Phòng ngủ của tôi là my bedroom, không nói room sleep.
+
+  - key: en:item:bathroom
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: bathroom
+      ipa: UK /ˈbɑːθruːm/ · US /ˈbæθruːm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng tắm (thường có cả nhà vệ sinh)
+      examples:
+        - target: The bathroom is next to the bedroom.
+          translation:
+            vi: Phòng tắm ở cạnh phòng ngủ.
+      pronunciation_note:
+        vi: Th ở giữa là /θ/ - đặt đầu lưỡi giữa răng rồi thổi hơi, không đọc thành "t" hay "ph".
+      confusion:
+        vi: Ở nơi công cộng, nhà vệ sinh thường gọi là toilet (UK) hoặc restroom (US).
+
+  - key: en:item:living-room
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: living room
+      ipa: /ˈlɪvɪŋ ruːm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng khách
+      examples:
+        - target: There's a sofa in the living room.
+          translation:
+            vi: Trong phòng khách có một cái ghế sofa.
+      confusion:
+        vi: Không dịch từng chữ "phòng khách" thành guest room - guest room là phòng ngủ dành cho khách.
+
+  - key: en:item:table
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: table
+      ipa: /ˈteɪbl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái bàn
+      examples:
+        - target: The keys are on the table.
+          translation:
+            vi: Chìa khoá ở trên bàn.
+      pronunciation_note:
+        vi: Đọc /ˈteɪbl/ gần "tây-bồ", không đọc "ta-ble".
+      confusion:
+        vi: Bàn làm việc, bàn học có ngăn kéo thường gọi là desk; table là bàn nói chung, bàn ăn.
+
+  - key: en:item:chair
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: chair
+      ipa: UK /tʃeə/ · US /tʃer/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái ghế (có tựa lưng, cho một người)
+      examples:
+        - target: There are four chairs in the kitchen.
+          translation:
+            vi: Trong bếp có bốn cái ghế.
+      confusion:
+        vi: Ghế dài nhiều người ngồi trong phòng khách là sofa, không phải chair.
+
+  - key: en:item:bed
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: bed
+      ipa: /bed/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái giường
+      examples:
+        - target: My shoes are under the bed.
+          translation:
+            vi: Giày của mình ở dưới gầm giường.
+      pronunciation_note:
+        vi: Âm cuối /d/ phải phát ra nhẹ; nếu nuốt mất, người nghe dễ nghe thành bet hoặc bad.
+      confusion:
+        vi: Bed (giường) và bad (tệ) khác nguyên âm - bed miệng mở vừa như "e", bad mở rộng hơn như "e-a".
+
+  - key: en:item:sofa
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: sofa
+      ipa: UK /ˈsəʊfə/ · US /ˈsoʊfə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ghế sofa, ghế dài có đệm
+      examples:
+        - target: The cat is on the sofa.
+          translation:
+            vi: Con mèo ở trên ghế sofa.
+      pronunciation_note:
+        vi: Nhấn vào SO, đọc gần "sâu-phờ", không đọc "sô-pha" như tiếng Việt.
+
+  - key: en:item:is-there-are-there
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: Is there…? / Are there any…?
+      ipa: is there UK /ɪz ˈðeə/ · US /ɪz ˈðer/
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: "có… không?: đảo is/are lên trước there để hỏi"
+      examples:
+        - target: Is there a TV in the bedroom? - Yes, there is.
+          translation:
+            vi: Trong phòng ngủ có tivi không? - Có.
+        - target: Are there any chairs in the kitchen? - No, there aren't.
+          translation:
+            vi: Trong bếp có cái ghế nào không? - Không có.
+      confusion:
+        vi: Câu trả lời ngắn không rút gọn ở dạng khẳng định - Yes, there is (không nói Yes, there's). Không hỏi Have a TV in the bedroom?
+
+  - key: en:item:in-on-under
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: in / on / under
+      ipa: in /ɪn/ · on UK /ɒn/ · US /ɑːn/ · under UK /ˈʌndə/ · US /ˈʌndɚ/
+      pos: giới từ chỉ vị trí
+    back:
+      meaning:
+        vi: "in: ở trong · on: ở trên (chạm mặt) · under: ở dưới"
+      examples:
+        - target: The phone is on the table.
+          translation:
+            vi: Điện thoại ở trên bàn.
+        - target: The cat is under the bed.
+          translation:
+            vi: Con mèo ở dưới gầm giường.
+      confusion:
+        vi: Tiếng Việt hay nói "trong bàn", "trên tường", nhưng tiếng Anh xét chỗ tiếp xúc - on the table, on the wall. In chỉ dùng khi vật nằm bên trong (in the box, in the kitchen).
+
+  # ---------------- Bài 3: Ở đâu? ----------------
+  - key: en:item:next-to
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: next to
+      ipa: /ˈnekst tə/
+      pos: giới từ chỉ vị trí
+    back:
+      meaning:
+        vi: bên cạnh, sát bên
+      examples:
+        - target: The bank is next to the supermarket.
+          translation:
+            vi: Ngân hàng ở bên cạnh siêu thị.
+      pronunciation_note:
+        vi: Khi nói nhanh, âm /t/ của next gần như mất - "neks-tə".
+      confusion:
+        vi: Luôn cần to - next to the bank, không nói next the bank. Near là "gần" (có thể cách vài nhà), next to là sát ngay cạnh.
+
+  - key: en:item:between
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: between
+      ipa: /bɪˈtwiːn/
+      pos: giới từ chỉ vị trí
+    back:
+      meaning:
+        vi: ở giữa (hai vật, hai nơi)
+      examples:
+        - target: The pharmacy is between the bank and the post office.
+          translation:
+            vi: Hiệu thuốc ở giữa ngân hàng và bưu điện.
+      pronunciation_note:
+        vi: Nhấn vào âm sau TWEEN, âm /iː/ kéo dài.
+      confusion:
+        vi: Between A and B dùng and, không dùng with hay or. Tiếng Việt "ở giữa" đứng một mình được, nhưng between cần nói rõ hai vật.
+
+  - key: en:item:opposite
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: opposite
+      ipa: UK /ˈɒpəzɪt/ · US /ˈɑːpəzɪt/
+      pos: giới từ chỉ vị trí
+    back:
+      meaning:
+        vi: đối diện (ở bên kia đường, nhìn sang nhau)
+      examples:
+        - target: The park is opposite the hospital.
+          translation:
+            vi: Công viên ở đối diện bệnh viện.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu OP; -site đọc nhẹ /zɪt/, không đọc "sai" như site.
+      confusion:
+        vi: Làm giới từ thì không thêm of hay to - opposite the bank, không nói opposite of the bank. Người Mỹ hay nói across from the bank.
+
+  - key: en:item:behind
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: behind
+      ipa: /bɪˈhaɪnd/
+      pos: giới từ chỉ vị trí
+    back:
+      meaning:
+        vi: phía sau, đằng sau
+      examples:
+        - target: There's a car park behind the supermarket.
+          translation:
+            vi: Phía sau siêu thị có một bãi đỗ xe.
+      confusion:
+        vi: Behind không cần of - behind the school. Đừng nhầm với after, vốn chỉ thời gian (sau khi).
+
+  - key: en:item:in-front-of
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: in front of
+      ipa: /ɪn ˈfrʌnt əv/
+      pos: giới từ chỉ vị trí
+    back:
+      meaning:
+        vi: phía trước, đằng trước
+      examples:
+        - target: The bus stop is in front of the bank.
+          translation:
+            vi: Trạm xe buýt ở phía trước ngân hàng.
+      pronunciation_note:
+        vi: Front đọc /frʌnt/ gần "frăn-t", không đọc "phờ-rông". Of đọc nhẹ /əv/.
+      confusion:
+        vi: Phải đủ ba từ in front of. Before chỉ thời gian ("trước khi"), không dùng để chỉ vị trí.
+
+  - key: en:item:corner
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: corner
+      ipa: UK /ˈkɔːnə/ · US /ˈkɔːrnɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: góc (góc phố, góc phòng)
+      examples:
+        - target: The pharmacy is on the corner.
+          translation:
+            vi: Hiệu thuốc ở góc phố.
+      confusion:
+        vi: Góc phố dùng on the corner; góc bên trong phòng dùng in the corner.
+
+  - key: en:item:street
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: street
+      ipa: /striːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: con phố, con đường trong thành phố
+      examples:
+        - target: The bank is on Le Loi Street.
+          translation:
+            vi: Ngân hàng ở trên phố Lê Lợi.
+      pronunciation_note:
+        vi: Ba phụ âm str đọc liền nhau, không chèn nguyên âm thành "xơ-tri".
+      confusion:
+        vi: Ở trên một con phố thì dùng on - on Le Loi Street; có số nhà thì dùng at - at 25 Le Loi Street.
+
+  - key: en:item:excuse-me
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: Excuse me.
+      ipa: /ɪkˈskjuːz miː/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Xin lỗi (cho tôi hỏi) - câu mở đầu lịch sự để gọi người lạ
+      examples:
+        - target: Excuse me, is there a bank near here?
+          translation:
+            vi: Xin lỗi, gần đây có ngân hàng nào không ạ?
+      pronunciation_note:
+        vi: Nhấn vào CUSE; s đọc là /z/.
+      confusion:
+        vi: Dùng Excuse me trước khi hỏi hoặc nhờ ai; Sorry dùng khi đã làm phiền hay làm sai.
+
+  - key: en:item:where-is
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [speaking, grammar]
+    front:
+      text: Where is…?
+      ipa: where's UK /weəz/ · US /werz/
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: … ở đâu?
+      examples:
+        - target: Where is the post office?
+          translation:
+            vi: Bưu điện ở đâu?
+        - target: Where are the toilets?
+          translation:
+            vi: Nhà vệ sinh ở đâu?
+      confusion:
+        vi: Tiếng Việt đặt "ở đâu" cuối câu, tiếng Anh đặt where ở đầu và cần is/are - không nói The bank where? hay Where the bank?
+
+  # ---------------- Bài 4: Chỉ đường, phương tiện, can ----------------
+  - key: en:item:go-straight
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: go straight on
+      ipa: UK /ˌɡəʊ ˈstreɪt ɒn/ · US /ˌɡoʊ ˈstreɪt ɑːn/
+      pos: cụm chỉ đường
+    back:
+      meaning:
+        vi: đi thẳng
+      examples:
+        - target: Go straight on for two minutes.
+          translation:
+            vi: Đi thẳng khoảng hai phút.
+      pronunciation_note:
+        vi: Straight đọc /streɪt/ - chữ gh câm, gần "s-trây-t".
+      confusion:
+        vi: Người Anh nói go straight on, người Mỹ hay nói go straight ahead; đều đúng. Không nói go straightly.
+
+  - key: en:item:turn-left-right
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: turn left / turn right
+      ipa: UK /tɜːn ˈleft/ · US /tɝːn ˈleft/ · right /raɪt/
+      pos: cụm chỉ đường
+    back:
+      meaning:
+        vi: rẽ trái / rẽ phải
+      examples:
+        - target: Turn right at the bank.
+          translation:
+            vi: Đến ngân hàng thì rẽ phải.
+      pronunciation_note:
+        vi: Right đọc /raɪt/ gần "rai-t"; đừng nuốt âm /t/ cuối kẻo nghe thành rye.
+      confusion:
+        vi: Không thêm to - turn left, không nói turn to left. "Rẽ ở ngân hàng" dùng at - turn left at the bank.
+
+  - key: en:item:take-the-second-left
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: take the second left
+      ipa: /ˌteɪk ðə ˌsekənd ˈleft/
+      pos: cụm chỉ đường
+    back:
+      meaning:
+        vi: rẽ trái ở ngã rẽ thứ hai
+      examples:
+        - target: Take the first right, then go straight on.
+          translation:
+            vi: Rẽ phải ở ngã rẽ đầu tiên, rồi đi thẳng.
+      confusion:
+        vi: Take ở đây không phải "cầm, lấy" mà là "đi vào (con đường)". Dùng số thứ tự first, second, third, không dùng two, three.
+
+  - key: en:item:on-your-left-right
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: It's on your left / right.
+      ipa: UK /ɪts ɒn jɔː ˈleft/ · US /ɪts ɑːn jʊr ˈleft/
+      pos: cụm chỉ đường
+    back:
+      meaning:
+        vi: Nó ở bên tay trái / tay phải của bạn.
+      examples:
+        - target: The post office is on your right.
+          translation:
+            vi: Bưu điện ở bên tay phải bạn.
+      confusion:
+        vi: Dùng on, không dùng in hay at - on your left. Cần your, không nói on left hay on the left hand.
+
+  - key: en:item:how-do-i-get-to
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: How do I get to…?
+      ipa: /ˌhaʊ də aɪ ˈɡet tə/
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Làm sao để tôi đến…? Đi đến… thế nào?
+      examples:
+        - target: Excuse me, how do I get to the bus station?
+          translation:
+            vi: Xin lỗi, đi đến bến xe buýt thế nào ạ?
+      confusion:
+        vi: Get to nghĩa là "đến nơi"; cần to trước địa điểm. Riêng here, there thì bỏ to - How do I get there?
+
+  - key: en:item:can-cant
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: can / can't
+      ipa: can /kæn/ (nói nhanh /kən/) · can't UK /kɑːnt/ · US /kænt/
+      pos: động từ khuyết thiếu
+    back:
+      meaning:
+        vi: "có thể, biết (làm gì): can + động từ nguyên mẫu, phủ định là can't/cannot"
+      examples:
+        - target: I can swim, but I can't drive.
+          translation:
+            vi: Mình biết bơi nhưng không biết lái xe.
+        - target: Can I walk there? - Yes, you can.
+          translation:
+            vi: Mình đi bộ đến đó được không? - Được chứ.
+      pronunciation_note:
+        vi: Trong câu khẳng định can đọc rất nhẹ /kən/; can't luôn đọc rõ và có /t/ ở cuối, đó là cách phân biệt khi nghe.
+      confusion:
+        vi: Sau can không thêm to và không thêm -s hay -ing - She can swim, không nói She can to swim hay She cans swim. "Biết bơi" là can swim, không nói know swim.
+
+  - key: en:item:swim
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: swim
+      ipa: /swɪm/
+      pos: động từ
+    back:
+      meaning:
+        vi: bơi
+      examples:
+        - target: Can you swim? - Yes, I can.
+          translation:
+            vi: Bạn biết bơi không? - Có, mình biết.
+      confusion:
+        vi: Đi bơi là go swimming; nhưng sau can thì dùng nguyên mẫu - I can swim.
+
+  - key: en:item:by-bus
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: by bus / by taxi
+      ipa: /baɪ ˈbʌs/ · /baɪ ˈtæksi/
+      pos: cụm chỉ phương tiện
+    back:
+      meaning:
+        vi: bằng xe buýt / bằng taxi
+      examples:
+        - target: You can go there by bus.
+          translation:
+            vi: Bạn có thể đến đó bằng xe buýt.
+      confusion:
+        vi: Sau by không có a/the - by bus, không nói by a bus hay by the bus. Hỏi phương tiện dùng How - How can I get there?
+
+  - key: en:item:on-foot
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: on foot
+      ipa: UK /ɒn ˈfʊt/ · US /ɑːn ˈfʊt/
+      pos: cụm chỉ phương tiện
+    back:
+      meaning:
+        vi: đi bộ (bằng chân)
+      examples:
+        - target: It's ten minutes on foot.
+          translation:
+            vi: Đi bộ mất mười phút.
+      confusion:
+        vi: Đi bộ là on foot, không phải by foot. Trong câu nói thường, người bản xứ cũng hay dùng động từ walk - You can walk there.
+
+  - key: en:item:far
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: far
+      ipa: UK /fɑː/ · US /fɑːr/
+      pos: tính từ, trạng từ
+    back:
+      meaning:
+        vi: xa
+      examples:
+        - target: Is it far? - No, it isn't. It's near here.
+          translation:
+            vi: Có xa không? - Không, gần đây thôi.
+      confusion:
+        vi: Câu khẳng định người ta hay nói a long way (It's a long way) thay cho It's far. Hỏi khoảng cách thì dùng Is it far?, không bỏ is.
+
+  # ---------------- Bài 5: Ôn tập ----------------
+  - key: en:item:traffic-lights
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: traffic lights
+      ipa: /ˈtræfɪk laɪts/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đèn giao thông, đèn xanh đèn đỏ
+      examples:
+        - target: Turn left at the traffic lights.
+          translation:
+            vi: Đến đèn giao thông thì rẽ trái.
+      pronunciation_note:
+        vi: Nhấn vào TRAF; lights đọc có /ts/ ở cuối, gần "lai-tx".
+      confusion:
+        vi: Thường dùng số nhiều the traffic lights, dù chỉ một cột đèn.
+
+  - key: en:item:cross
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: cross
+      ipa: UK /krɒs/ · US /krɔːs/
+      pos: động từ
+    back:
+      meaning:
+        vi: băng qua, sang (đường, cầu)
+      examples:
+        - target: Cross the street at the traffic lights.
+          translation:
+            vi: Sang đường ở chỗ đèn giao thông.
+      confusion:
+        vi: Cross the street không cần thêm giới từ - không nói cross over to the street hay go cross the street.

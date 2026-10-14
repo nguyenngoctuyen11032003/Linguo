@@ -1,0 +1,1029 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Ăn uống & mua sắm". IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: đồ ăn, thức uống, đếm được / không đếm được ----------------
+  - key: en:item:rice
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: rice
+      ipa: /raɪs/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: cơm, gạo
+      examples:
+        - target: I have rice for lunch.
+          translation:
+            vi: Mình ăn cơm vào bữa trưa.
+        - target: Can I have some rice, please?
+          translation:
+            vi: Cho mình xin ít cơm nhé.
+      pronunciation_note:
+        vi: Đọc gần "rai-x", phải bật rõ âm /s/ ở cuối. Bỏ /s/ thì nghe thành rye hoặc như "rai".
+      confusion:
+        vi: Rice không đếm được, nên không nói a rice hay two rices. Muốn nói "một bát cơm" thì dùng a bowl of rice.
+
+  - key: en:item:bread
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: bread
+      ipa: /bred/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: bánh mì
+      examples:
+        - target: I eat bread and eggs for breakfast.
+          translation:
+            vi: Mình ăn bánh mì với trứng vào bữa sáng.
+      pronunciation_note:
+        vi: Chữ ea ở đây đọc /e/ ngắn, gần "bred", không đọc "brít".
+      confusion:
+        vi: Bread không đếm được - nói some bread hoặc a slice of bread (một lát bánh mì), không nói a bread. Một ổ bánh mì kẹp nhân thì gọi là a sandwich (đếm được).
+
+  - key: en:item:noodles
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: noodles
+      ipa: /ˈnuːdlz/
+      pos: danh từ (số nhiều)
+    back:
+      meaning:
+        vi: mì, bún, phở (các loại sợi)
+      examples:
+        - target: I love noodles.
+          translation:
+            vi: Mình rất thích các món sợi như mì, phở.
+        - target: Pho is a noodle soup from Vietnam.
+          translation:
+            vi: Phở là món súp sợi của Việt Nam.
+      pronunciation_note:
+        vi: Âm /uː/ kéo dài như "u" trong "đu", nhấn âm đầu "NU-đồl".
+      confusion:
+        vi: Noodles đếm được và thường dùng ở số nhiều (I like noodles). Khi đứng trước danh từ khác thì bỏ s - noodle soup.
+
+  - key: en:item:chicken
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: chicken
+      ipa: /ˈtʃɪkɪn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thịt gà; con gà
+      examples:
+        - target: I'd like chicken and rice, please.
+          translation:
+            vi: Cho mình cơm gà nhé.
+      pronunciation_note:
+        vi: Nhấn âm đầu "CHI-kin"; âm /tʃ/ bật hơi, không đọc thành "xi".
+      confusion:
+        vi: Khi là món ăn (thịt gà), chicken không đếm được - some chicken. A chicken là "một con gà" nguyên con.
+
+  - key: en:item:egg
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: egg
+      ipa: /eɡ/
+      pos: danh từ (đếm được)
+    back:
+      meaning:
+        vi: quả trứng
+      examples:
+        - target: I have two eggs for breakfast.
+          translation:
+            vi: Mình ăn hai quả trứng vào bữa sáng.
+      pronunciation_note:
+        vi: Đọc /e/ ngắn và kết thúc bằng /ɡ/ nhẹ, gần "eg", không đọc "ếch".
+      confusion:
+        vi: Egg bắt đầu bằng âm nguyên âm nên nói an egg, không nói a egg. Hai quả trở lên thêm -s - two eggs.
+
+  - key: en:item:banana
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: banana
+      ipa: UK /bəˈnɑːnə/ · US /bəˈnænə/
+      pos: danh từ (đếm được)
+    back:
+      meaning:
+        vi: quả chuối
+      examples:
+        - target: I eat a banana every morning.
+          translation:
+            vi: Sáng nào mình cũng ăn một quả chuối.
+      pronunciation_note:
+        vi: Nhấn âm giữa "bơ-NA-nơ". Người Anh đọc /ɑː/ như "a" dài, người Mỹ đọc /æ/ gần "e-a".
+      confusion:
+        vi: Banana đếm được - a banana, two bananas. Tiếng Việt nói "một nải chuối" thì tiếng Anh là a bunch of bananas.
+
+  - key: en:item:apple
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: apple
+      ipa: /ˈæpl/
+      pos: danh từ (đếm được)
+    back:
+      meaning:
+        vi: quả táo
+      examples:
+        - target: Would you like an apple?
+          translation:
+            vi: Bạn ăn một quả táo không?
+      pronunciation_note:
+        vi: Âm /æ/ mở miệng rộng, giữa "e" và "a"; âm cuối /l/ nhẹ, gần "ÉP-pồl".
+      confusion:
+        vi: Apple bắt đầu bằng âm nguyên âm nên dùng an apple, không phải a apple.
+
+  - key: en:item:fruit
+    type: vocab
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: fruit
+      ipa: /fruːt/
+      pos: danh từ (thường không đếm được)
+    back:
+      meaning:
+        vi: trái cây, hoa quả
+      examples:
+        - target: I eat a lot of fruit.
+          translation:
+            vi: Mình ăn nhiều trái cây.
+      pronunciation_note:
+        vi: Chữ ui đọc /uː/ dài, gần "frút"; không đọc "fru-ít".
+      confusion:
+        vi: Khi nói chung về hoa quả, fruit không đếm được và không thêm s - some fruit, a lot of fruit. Muốn đếm thì gọi tên quả - two apples, a piece of fruit.
+
+  - key: en:item:coffee
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: coffee
+      ipa: UK /ˈkɒfi/ · US /ˈkɑːfi/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cà phê
+      examples:
+        - target: I drink coffee every morning.
+          translation:
+            vi: Sáng nào mình cũng uống cà phê.
+        - target: Two coffees, please.
+          translation:
+            vi: Cho hai ly cà phê nhé.
+      pronunciation_note:
+        vi: Nhấn âm đầu "KÓP-fi", không đọc theo kiểu "cà phê" nhấn âm cuối.
+      confusion:
+        vi: Coffee nói chung không đếm được (I like coffee). Nhưng khi gọi đồ ở quán, a coffee hoặc two coffees nghĩa là một hoặc hai ly.
+
+  - key: en:item:tea
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: tea
+      ipa: /tiː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: trà
+      examples:
+        - target: Do you want tea or coffee?
+          translation:
+            vi: Bạn muốn uống trà hay cà phê?
+        - target: A cup of tea, please.
+          translation:
+            vi: Cho mình một tách trà nhé.
+      pronunciation_note:
+        vi: Âm /iː/ kéo dài như "ti", âm /t/ bật hơi nhẹ, không đọc "tê".
+      confusion:
+        vi: Tea nói chung không đếm được - some tea. Ở quán có thể gọi two teas (hai cốc trà), nhưng a cup of tea tự nhiên hơn.
+
+  - key: en:item:water
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: water
+      ipa: UK /ˈwɔːtə/ · US /ˈwɑːtɚ/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: nước
+      examples:
+        - target: Can I have some water, please?
+          translation:
+            vi: Cho mình xin ít nước nhé.
+        - target: A bottle of water, please.
+          translation:
+            vi: Cho mình một chai nước.
+      pronunciation_note:
+        vi: Người Anh đọc gần "UO-tơ"; người Mỹ đọc âm t giữa rất nhẹ như /d/, gần "UA-đờ".
+      confusion:
+        vi: Water không đếm được, không nói a water hay two waters khi nói chung. Muốn đếm thì dùng a glass of water hoặc two bottles of water.
+
+  - key: en:item:milk
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: milk
+      ipa: /mɪlk/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: sữa
+      examples:
+        - target: Coffee with milk, please.
+          translation:
+            vi: Cho mình cà phê sữa nhé.
+      pronunciation_note:
+        vi: Âm /ɪ/ ngắn, và phải đọc cả /l/ lẫn /k/ ở cuối - gần "mi-ồ-k", không đọc "mít".
+      confusion:
+        vi: Milk không đếm được - some milk, a glass of milk. Không nói a milk hay milks.
+
+  - key: en:item:countable-uncountable
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: a banana / some rice
+      ipa: a /ə/ · an /ən/ · some /sʌm/ (đọc nhẹ /səm/)
+      pos: danh từ đếm được / không đếm được
+    back:
+      meaning:
+        vi: "Danh từ đếm được dùng a/an và có số nhiều (a banana, two bananas); danh từ không đếm được không có a/an, không thêm -s, dùng some (some rice)."
+      examples:
+        - target: I'd like a banana and some milk.
+          translation:
+            vi: Cho mình một quả chuối và ít sữa.
+        - target: We need some rice and two eggs.
+          translation:
+            vi: Chúng mình cần ít gạo và hai quả trứng.
+      confusion:
+        vi: Tiếng Việt nói "một cơm", "hai nước" khi gọi món được, nhưng tiếng Anh không nói a rice hay two waters khi nói chung. Chỉ đồ uống gọi theo phần ở quán (two coffees) mới đếm như vậy.
+
+  # ---------------- Bài 2: some/any, like/love ----------------
+  - key: en:item:some-any
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: some / any
+      ipa: some /sʌm/ · any /ˈeni/
+      pos: từ hạn định
+    back:
+      meaning:
+        vi: "một ít, một vài: some trong câu khẳng định; any trong câu phủ định và câu hỏi"
+      examples:
+        - target: We have some eggs.
+          translation:
+            vi: Nhà mình có mấy quả trứng.
+        - target: We don't have any milk.
+          translation:
+            vi: Nhà mình không còn chút sữa nào.
+        - target: Do you have any bread?
+          translation:
+            vi: Bạn có bánh mì không?
+      confusion:
+        vi: Some và any dùng được với cả danh từ không đếm được (some rice) và đếm được số nhiều (some eggs), nhưng không dùng với danh từ số ít (không nói some egg). Khi mời hoặc xin, vẫn dùng some trong câu hỏi - Would you like some tea?
+
+  - key: en:item:like
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: like
+      ipa: /laɪk/
+      pos: động từ
+    back:
+      meaning:
+        vi: thích
+      examples:
+        - target: I like fish.
+          translation:
+            vi: Mình thích cá.
+        - target: She doesn't like spicy food.
+          translation:
+            vi: Cô ấy không thích đồ cay.
+      pronunciation_note:
+        vi: Đọc gần "lai-k", bật nhẹ /k/ ở cuối, không đọc thành "lai".
+      confusion:
+        vi: Phủ định cần don't hoặc doesn't - I don't like milk, không nói I not like milk. Với he, she thì thêm -s - She likes tea.
+
+  - key: en:item:love
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: love
+      ipa: /lʌv/
+      pos: động từ
+    back:
+      meaning:
+        vi: rất thích, mê (cũng có nghĩa là yêu)
+      examples:
+        - target: I love Vietnamese coffee.
+          translation:
+            vi: Mình mê cà phê Việt Nam.
+      pronunciation_note:
+        vi: Chữ o đọc /ʌ/ gần "â", và âm cuối /v/ phải rung môi - "lâv", không đọc "lớp" hay "lốp".
+      confusion:
+        vi: Love với đồ ăn chỉ là "rất thích", không phải "yêu". Thang mức độ - love > like > don't like > hate.
+
+  - key: en:item:like-ing
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: like / love / don't like + noun / -ing
+      ipa: /laɪk/ · /lʌv/ · /dəʊnt laɪk/ UK · /doʊnt laɪk/ US
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: "Sau like, love, don't like dùng danh từ (I like tea) hoặc động từ thêm -ing (I like cooking)."
+      examples:
+        - target: I like cooking.
+          translation:
+            vi: Mình thích nấu ăn.
+        - target: He doesn't like eating vegetables.
+          translation:
+            vi: Anh ấy không thích ăn rau.
+      confusion:
+        vi: Không nói I like cook vì sau like cần danh từ hoặc dạng -ing. Khi nói chung về một loại đồ ăn đếm được, dùng số nhiều - I like bananas, không nói I like banana.
+
+  - key: en:item:vegetables
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: vegetables
+      ipa: /ˈvedʒtəblz/
+      pos: danh từ (số nhiều)
+    back:
+      meaning:
+        vi: rau, rau củ
+      examples:
+        - target: I eat vegetables every day.
+          translation:
+            vi: Ngày nào mình cũng ăn rau.
+      pronunciation_note:
+        vi: Chỉ có ba âm tiết "VÉDJ-tơ-bồlz", chữ e thứ hai câm. Người Việt hay đọc thành bốn âm "ve-giơ-ta-bồ".
+      confusion:
+        vi: Vegetables đếm được, thường dùng số nhiều. Không nói I like vegetable khi nói chung về rau.
+
+  - key: en:item:fish
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: fish
+      ipa: /fɪʃ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cá; món cá
+      examples:
+        - target: Do you like fish?
+          translation:
+            vi: Bạn có thích ăn cá không?
+      pronunciation_note:
+        vi: Âm cuối /ʃ/ là "sh" (môi chu ra), không đọc thành "fít" hay "fis".
+      confusion:
+        vi: Khi là món ăn, fish không đếm được - some fish. Số nhiều của con cá vẫn thường là fish (two fish).
+
+  - key: en:item:meat
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: meat
+      ipa: /miːt/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: thịt
+      examples:
+        - target: I don't eat meat.
+          translation:
+            vi: Mình không ăn thịt.
+      pronunciation_note:
+        vi: Đọc giống hệt meet (gặp) - /miːt/, "i" kéo dài và bật nhẹ /t/.
+      confusion:
+        vi: Meat không đếm được, không nói a meat. Các loại thịt - chicken (gà), beef (bò), pork (heo, lợn).
+
+  - key: en:item:juice
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: juice
+      ipa: /dʒuːs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước ép, nước trái cây
+      examples:
+        - target: A glass of orange juice, please.
+          translation:
+            vi: Cho mình một ly nước cam.
+      pronunciation_note:
+        vi: Đọc gần "jus", chữ i câm; cuối là /s/, không đọc "giu-ít".
+      confusion:
+        vi: Tên quả đứng trước juice - orange juice (nước cam), apple juice (nước táo), không nói juice orange.
+
+  - key: en:item:cake
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: cake
+      ipa: /keɪk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bánh ngọt, bánh kem
+      examples:
+        - target: Would you like some cake?
+          translation:
+            vi: Bạn ăn chút bánh không?
+      pronunciation_note:
+        vi: Âm /eɪ/ lướt từ "ê" sang "i", gần "kêik"; chữ e cuối câm.
+      confusion:
+        vi: A cake là cả cái bánh; một miếng là a piece of cake. Nói chung về bánh thì không đếm - I love cake.
+
+  - key: en:item:sugar
+    type: vocab
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sugar
+      ipa: UK /ˈʃʊɡə/ · US /ˈʃʊɡɚ/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: đường
+      examples:
+        - target: Coffee with no sugar, please.
+          translation:
+            vi: Cho mình cà phê không đường nhé.
+      pronunciation_note:
+        vi: Chữ s đầu đọc /ʃ/ "sh", gần "SHU-gơ", không đọc "xu-ga".
+      confusion:
+        vi: Sugar không đếm được - some sugar, no sugar. Hỏi có cần đường không - Do you take sugar?
+
+  - key: en:item:cheese
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: cheese
+      ipa: /tʃiːz/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: phô mai
+      examples:
+        - target: We don't have any cheese.
+          translation:
+            vi: Nhà mình hết phô mai rồi.
+      pronunciation_note:
+        vi: Âm cuối /z/ rung, gần "chiiz"; không đọc thành "chít".
+      confusion:
+        vi: Cheese không đếm được - some cheese, a piece of cheese. Không nói a cheese khi nói về món ăn.
+
+  - key: en:item:spicy
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: spicy
+      ipa: /ˈspaɪsi/
+      pos: tính từ
+    back:
+      meaning:
+        vi: cay
+      examples:
+        - target: I love spicy food.
+          translation:
+            vi: Mình mê đồ cay.
+        - target: Is it spicy?
+          translation:
+            vi: Món này có cay không?
+      pronunciation_note:
+        vi: Bắt đầu bằng cụm /sp/ - đọc liền "SPAI-xi", không chèn thêm "xờ" thành "xờ-pai-xi".
+      confusion:
+        vi: Hot cũng có thể nghĩa là cay, nhưng hot còn là "nóng". Nói spicy để rõ nghĩa "cay".
+
+  # ---------------- Bài 3: gọi món ở quán ----------------
+  - key: en:item:can-i-have
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: Can I have…?
+      ipa: /kən aɪ ˈhæv/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Cho tôi… được không? (câu gọi món, xin đồ lịch sự)
+      examples:
+        - target: Can I have a coffee, please?
+          translation:
+            vi: Cho mình một ly cà phê nhé.
+        - target: Can I have the menu, please?
+          translation:
+            vi: Cho mình xem thực đơn nhé.
+      pronunciation_note:
+        vi: Can đọc nhẹ /kən/ gần "cần", nối liền với I - "cơ-nai-HEV".
+      confusion:
+        vi: Thêm please để câu lịch sự. Câu "Give me a coffee" nghe như ra lệnh, người bản xứ thấy cộc lốc.
+
+  - key: en:item:id-like
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [speaking, grammar]
+    front:
+      text: I'd like…
+      ipa: /aɪd ˈlaɪk/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Tôi muốn… / Cho tôi… (cách nói lịch sự khi gọi món, mua hàng)
+      examples:
+        - target: I'd like a cup of tea, please.
+          translation:
+            vi: Cho mình một tách trà nhé.
+        - target: I'd like the chicken, please.
+          translation:
+            vi: Cho mình món gà nhé.
+      pronunciation_note:
+        vi: I'd đọc "aid", âm /d/ rất nhẹ nhưng vẫn có, rồi nối sang like.
+      confusion:
+        vi: I'd like là I would like (muốn, lịch sự), khác hẳn I like (thích nói chung). Gọi món mà nói I like a coffee là sai nghĩa.
+
+  - key: en:item:would-you-like
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [listening, speaking]
+    front:
+      text: Would you like…?
+      ipa: /wʊd juː ˈlaɪk/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Bạn có muốn… không? / Anh chị dùng gì ạ? (câu mời, câu nhân viên hỏi khách)
+      examples:
+        - target: Would you like some water?
+          translation:
+            vi: Bạn uống chút nước không?
+        - target: "A: What would you like? B: I'd like a tea, please."
+          translation:
+            vi: "A: Anh chị dùng gì ạ? B: Cho mình một ly trà nhé."
+      pronunciation_note:
+        vi: Chữ l trong would câm. Would you nối thành "wu-giu", nghe gần "Wu-giu-LAIK".
+      confusion:
+        vi: Trả lời bằng Yes, please hoặc No, thank you - không trả lời Yes, I would like.
+
+  - key: en:item:anything-else
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [listening]
+    front:
+      text: Anything else?
+      ipa: /ˈeniθɪŋ ˈels/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Còn gì nữa không ạ? / Anh chị có gọi thêm gì không?
+      examples:
+        - target: "A: Anything else? B: No, that's all, thanks."
+          translation:
+            vi: "A: Còn gì nữa không ạ? B: Không, vậy thôi, cảm ơn."
+      pronunciation_note:
+        vi: Âm /θ/ đặt đầu lưỡi giữa hai hàm răng rồi thổi hơi, không đọc thành "t" hay "ph".
+      confusion:
+        vi: Nhân viên hỏi câu này sau khi bạn gọi món. Nếu muốn thêm, bạn nói Yes, can I have… ; nếu không, nói No, that's all.
+
+  - key: en:item:thats-all
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: That's all, thanks.
+      ipa: UK /ðæts ˈɔːl θæŋks/ · US /ðæts ˈɑːl θæŋks/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Vậy thôi, cảm ơn. (khi gọi xong)
+      examples:
+        - target: "No, that's all, thanks."
+          translation:
+            vi: Không, vậy thôi, cảm ơn.
+      pronunciation_note:
+        vi: That's bắt đầu bằng /ð/ - đầu lưỡi giữa hai răng, rung; không đọc thành "đét".
+      confusion:
+        vi: Người Việt hay nói No more hoặc Enough - nghe cộc. That's all, thanks lịch sự và tự nhiên hơn.
+
+  - key: en:item:the-bill
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: Can I have the bill, please?
+      ipa: /kən aɪ hæv ðə ˈbɪl pliːz/ (Mỹ - the check /tʃek/)
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Cho mình xin hoá đơn / tính tiền nhé.
+      examples:
+        - target: Excuse me, can I have the bill, please?
+          translation:
+            vi: Xin lỗi, cho mình tính tiền nhé.
+        - target: Can we have the check, please?
+          translation:
+            vi: Cho chúng mình tính tiền nhé. (kiểu Mỹ)
+      pronunciation_note:
+        vi: Bill đọc /bɪl/ ngắn, gần "biu"; không kéo dài thành "biiil".
+      confusion:
+        vi: Người Anh nói the bill, người Mỹ nói the check. Dùng the vì là hoá đơn của chính bàn bạn - không nói a bill.
+
+  - key: en:item:menu
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: menu
+      ipa: /ˈmenjuː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thực đơn
+      examples:
+        - target: Can I see the menu, please?
+          translation:
+            vi: Cho mình xem thực đơn nhé.
+      pronunciation_note:
+        vi: Nhấn âm đầu "ME-niu", âm cuối là "niu" chứ không phải "nu".
+      confusion:
+        vi: Hỏi thực đơn của quán thì dùng the menu, không nói a menu.
+
+  - key: en:item:a-cup-of
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: a cup of / a glass of / a bottle of
+      ipa: cup /kʌp/ · glass UK /ɡlɑːs/ · US /ɡlæs/ · bottle UK /ˈbɒtl/ · US /ˈbɑːtl/
+      pos: cụm chỉ lượng
+    back:
+      meaning:
+        vi: "một tách/cốc (đồ nóng) / một ly (đồ lạnh, nước) / một chai"
+      examples:
+        - target: A cup of coffee and a glass of water, please.
+          translation:
+            vi: Cho mình một tách cà phê và một ly nước nhé.
+        - target: Two bottles of water, please.
+          translation:
+            vi: Cho mình hai chai nước nhé.
+      confusion:
+        vi: Đây là cách đếm danh từ không đếm được. Số nhiều thêm -s vào cup, glass, bottle - two glasses of milk, không nói two glass of milks.
+
+  # ---------------- Bài 4: mua sắm, giá tiền, quần áo ----------------
+  - key: en:item:how-much
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: How much is it? / How much are they?
+      ipa: /haʊ ˈmʌtʃ ɪz ɪt/ · /haʊ ˈmʌtʃ ɑː ðeɪ/ UK · /haʊ ˈmʌtʃ ɑːr ðeɪ/ US
+      pos: câu hỏi giá
+    back:
+      meaning:
+        vi: "Bao nhiêu tiền? Một món: How much is…? → It's…; nhiều món hoặc đồ đi theo đôi: How much are…? → They're…"
+      examples:
+        - target: "A: How much is this shirt? B: It's twenty dollars."
+          translation:
+            vi: "A: Cái áo sơ mi này bao nhiêu tiền? B: Hai mươi đô."
+        - target: "A: How much are these shoes? B: They're forty pounds."
+          translation:
+            vi: "A: Đôi giày này bao nhiêu tiền? B: Bốn mươi bảng."
+      confusion:
+        vi: Is hay are đi theo món hàng, không theo số tiền. Shoes, jeans là số nhiều nên dùng are và They're, dù tiếng Việt chỉ nói "đôi giày", "cái quần".
+
+  - key: en:item:dollar
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: dollar ($)
+      ipa: UK /ˈdɒlə/ · US /ˈdɑːlɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đô la; cent /sent/ là xu (1 dollar = 100 cents)
+      examples:
+        - target: It's five dollars.
+          translation:
+            vi: Năm đô.
+        - target: "$3.50 - three dollars fifty"
+          translation:
+            vi: Ba đô năm mươi xu.
+      pronunciation_note:
+        vi: Nhấn âm đầu "ĐO-lơ" (Anh) hoặc "ĐA-lờ" (Mỹ); âm cuối không có "a".
+      confusion:
+        vi: Viết $5 nhưng đọc five dollars - ký hiệu đứng trước, chữ đứng sau. Từ hai đô trở lên thêm -s - one dollar, two dollars.
+
+  - key: en:item:pound
+    type: vocab
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: pound (£)
+      ipa: /paʊnd/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảng Anh; penny/pence /ˈpeni/, /pens/ là xu Anh (1 pound = 100 pence)
+      examples:
+        - target: It's ten pounds.
+          translation:
+            vi: Mười bảng.
+        - target: "£2.50 - two pounds fifty"
+          translation:
+            vi: Hai bảng năm mươi xu.
+      pronunciation_note:
+        vi: Âm /aʊ/ lướt từ "a" sang "u", gần "pao-nd"; nhớ đọc /d/ cuối.
+      confusion:
+        vi: Viết £10 nhưng đọc ten pounds. Khi có xu, người Anh thường bỏ chữ pence - two pounds fifty.
+
+  - key: en:item:cheap
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: cheap
+      ipa: /tʃiːp/
+      pos: tính từ
+    back:
+      meaning:
+        vi: rẻ
+      examples:
+        - target: This T-shirt is very cheap.
+          translation:
+            vi: Cái áo phông này rẻ lắm.
+      pronunciation_note:
+        vi: Âm /iː/ dài, kết thúc /p/ ngậm môi - "chíp", không đọc "chép".
+      confusion:
+        vi: Đôi khi cheap mang nghĩa "rẻ tiền, kém chất lượng". Khen giá tốt có thể nói It's a good price.
+
+  - key: en:item:expensive
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: expensive
+      ipa: /ɪkˈspensɪv/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đắt
+      examples:
+        - target: These shoes are too expensive.
+          translation:
+            vi: Đôi giày này đắt quá.
+      pronunciation_note:
+        vi: Nhấn âm giữa "ik-XPEN-xiv"; âm cuối /v/ rung môi, không đọc "síp".
+      confusion:
+        vi: Phải có be - It's expensive, không nói It expensive. Đắt đến mức không muốn mua thì nói too expensive; very expensive chỉ là "rất đắt".
+
+  - key: en:item:shirt
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: shirt
+      ipa: UK /ʃɜːt/ · US /ʃɝːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: áo sơ mi (T-shirt là áo phông)
+      examples:
+        - target: How much is this shirt?
+          translation:
+            vi: Cái áo sơ mi này bao nhiêu tiền?
+      pronunciation_note:
+        vi: Âm /ɜː/ giống "ơ" dài; người Mỹ cong lưỡi thêm âm r. Không đọc thành "sớt" hay "sợt".
+      confusion:
+        vi: Shirt là áo có cổ, cài cúc; áo phông là T-shirt. Shirt là danh từ số ít - It's twenty dollars.
+
+  - key: en:item:shoes
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: shoes
+      ipa: /ʃuːz/
+      pos: danh từ (số nhiều)
+    back:
+      meaning:
+        vi: giày, đôi giày
+      examples:
+        - target: These shoes are nice.
+          translation:
+            vi: Đôi giày này đẹp.
+      pronunciation_note:
+        vi: Âm cuối /z/ rung, gần "shuuz". Một chiếc giày là shoe /ʃuː/.
+      confusion:
+        vi: Tiếng Việt nói "đôi giày" là số ít, nhưng tiếng Anh dùng số nhiều shoes - These shoes are…, They're… Có thể nói a pair of shoes (một đôi giày).
+
+  - key: en:item:jeans
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: jeans
+      ipa: /dʒiːnz/
+      pos: danh từ (số nhiều)
+    back:
+      meaning:
+        vi: quần bò, quần jean
+      examples:
+        - target: How much are these jeans?
+          translation:
+            vi: Cái quần bò này bao nhiêu tiền?
+      pronunciation_note:
+        vi: Đọc gần "jiinz", nhớ âm /z/ cuối.
+      confusion:
+        vi: Jeans luôn số nhiều dù chỉ là một cái quần - these jeans, they're. Không nói a jean hay this jeans.
+
+  - key: en:item:dress
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: dress
+      ipa: /dres/
+      pos: danh từ
+    back:
+      meaning:
+        vi: váy liền, đầm
+      examples:
+        - target: I like this dress.
+          translation:
+            vi: Mình thích cái đầm này.
+      pronunciation_note:
+        vi: Cụm /dr/ đọc liền "dr-", gần "jres"; âm /s/ cuối phải rõ.
+      confusion:
+        vi: Dress là đầm liền thân; chân váy là skirt. Dress số ít - This dress is…, It's…
+
+  - key: en:item:size
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: size
+      ipa: /saɪz/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cỡ, kích thước (small - nhỏ, medium - vừa, large - lớn)
+      examples:
+        - target: Do you have this in a small?
+          translation:
+            vi: Cái này có cỡ nhỏ không?
+        - target: "A: What size are you? B: Medium."
+          translation:
+            vi: "A: Bạn mặc cỡ nào? B: Cỡ M."
+      pronunciation_note:
+        vi: Âm cuối /z/ rung - "saiz", không đọc "sai".
+      confusion:
+        vi: Hỏi cỡ của người mua nói What size are you?, không nói What size you wear? Thiếu cỡ thì nói It's too big (rộng quá) hoặc It's too small (chật quá).
+
+  - key: en:item:try-it-on
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: Can I try it on?
+      ipa: UK /kən aɪ ˌtraɪ ɪt ˈɒn/ · US /kən aɪ ˌtraɪ ɪt ˈɑːn/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Tôi mặc thử được không?
+      examples:
+        - target: I like this dress. Can I try it on?
+          translation:
+            vi: Mình thích cái đầm này. Mình mặc thử được không?
+        - target: Can I try them on?
+          translation:
+            vi: Mình thử đôi này / cái quần này được không?
+      pronunciation_note:
+        vi: Ba từ nối liền "trai-i-TON", nhấn vào on.
+      confusion:
+        vi: It hoặc them đứng giữa try và on - try it on, không nói try on it. Với shoes, jeans dùng them vì là số nhiều.
+
+  # ---------------- Bài 5: ôn tập hội thoại ----------------
+  - key: en:item:here-you-are
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [listening, speaking]
+    front:
+      text: Here you are.
+      ipa: UK /ˈhɪə juː ɑː/ · US /ˈhɪr juː ɑːr/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Của bạn đây. / Gửi bạn. (khi đưa đồ, đưa tiền)
+      examples:
+        - target: "A: Your coffee. Here you are. B: Thank you."
+          translation:
+            vi: "A: Cà phê của bạn đây ạ. B: Cảm ơn."
+      pronunciation_note:
+        vi: Nhấn vào here; you are nói nhanh, gần "HIA-diu-a".
+      confusion:
+        vi: Đây là câu cố định khi đưa vật gì cho ai; không dịch từng chữ thành "Bạn đang ở đây".
+
+  - key: en:item:pay-by-card
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: Can I pay by card?
+      ipa: UK /kən aɪ ˌpeɪ baɪ ˈkɑːd/ · US /kən aɪ ˌpeɪ baɪ ˈkɑːrd/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Tôi trả bằng thẻ được không?
+      examples:
+        - target: Can I pay by card, or cash only?
+          translation:
+            vi: Mình trả bằng thẻ được không, hay chỉ nhận tiền mặt?
+      pronunciation_note:
+        vi: Card có âm /ɑː/ dài, "kaad"; người Mỹ cong lưỡi âm r.
+      confusion:
+        vi: Trả bằng thẻ nói pay by card (hoặc pay with a card). Trả tiền mặt thì nói pay in cash, không nói pay by cash.

@@ -1,0 +1,339 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:batchim
+order_index: 3
+level: hangul
+title:
+  vi: Patchim và bảy âm cuối đại diện
+objectives:
+  - vi: Viết âm tiết có patchim (phụ âm cuối) đúng vị trí trong khối chữ.
+  - vi: Đọc mọi patchim bằng một trong bảy âm cuối đại diện [ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅇ].
+  - vi: Đọc và viết các từ 밥, 집, 옷, 책, 앞, 부엌, 꽃, 학생, 한국, 교실.
+estimated_minutes: 15
+skills: [reading, writing, listening, vocabulary]
+prerequisites: [ko:lesson:compound-vowels]
+items:
+  - item: ko:item:batchim
+  - item: ko:item:final-sounds
+  - item: ko:item:bap
+  - item: ko:item:jip
+  - item: ko:item:ot
+  - item: ko:item:chaek
+  - item: ko:item:ap
+  - item: ko:item:bueok
+  - item: ko:item:kkot
+  - item: ko:item:haksaeng
+  - item: ko:item:hanguk
+  - item: ko:item:gyosil
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được âm tiết có phụ âm cuối như 밥, 한국, và đọc đúng những chữ "viết một đằng, đọc một nẻo" như 옷 [옫], 부엌 [부억], 앞 [압].
+  - type: explain
+    text:
+      vi: Patchim (받침) là phụ âm đứng cuối âm tiết, luôn viết ở phần dưới của khối chữ - 바 thêm ㅂ ở dưới thành 밥. Âm tiết dù có patchim vẫn chỉ là một khối vuông. Tiếng Việt cũng có phụ âm cuối ("cơm", "học", "sáp"), nên bạn đã quen với ý tưởng này.
+  - type: explain
+    text:
+      vi: Có nhiều phụ âm được viết làm patchim, nhưng khi đọc chỉ có bảy âm cuối - [ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅇ]. ㄱ ㅋ ㄲ đọc [ㄱ]; ㄷ ㅌ ㅅ ㅆ ㅈ ㅊ ㅎ đọc [ㄷ]; ㅂ ㅍ đọc [ㅂ]. Vì vậy 옷 đọc [옫], 부엌 đọc [부억], 앞 đọc [압].
+  - type: deep_explain
+    text:
+      vi: Tin vui cho người Việt - âm cuối [ㄱ ㄷ ㅂ] được "nuốt" gọn, không bật hơi, giống hệt "c", "t", "p" cuối trong "học", "mát", "sáp". [ㄴ ㅁ ㅇ] giống "n, m, ng". Khó nhất là [ㄹ] - giữ đầu lưỡi chạm lợi trên như "l", đừng biến nó thành "n"; và với ㄱ cuối sau ㅗ ㅜ (한국), đừng khép môi như khi người Việt đọc "úc".
+  - type: example
+    target: 밥
+    target_lang: ko
+    translation:
+      vi: cơm
+    note:
+      vi: ㅂ + ㅏ + ㅂ (ở dưới), đọc gần "báp", ㅂ cuối khép môi gọn.
+  - type: example
+    target: 옷
+    target_lang: ko
+    translation:
+      vi: quần áo
+    note:
+      vi: Viết với ㅅ nhưng đọc [옫], gần "ốt".
+  - type: example
+    target: 부엌
+    target_lang: ko
+    translation:
+      vi: nhà bếp
+    note:
+      vi: ㅋ cuối mất hơi, đọc [부억].
+  - type: example
+    target: 저는 학생이에요.
+    target_lang: ko
+    translation:
+      vi: Tôi là học sinh.
+    note:
+      vi: 학생 có patchim nên đi với 이에요. 학생 đọc [학쌩] - ㅅ sau ㄱ cuối bị đọc căng.
+  - type: example
+    target: 교실이에요.
+    target_lang: ko
+    translation:
+      vi: Đây là lớp học.
+    note:
+      vi: ㄹ cuối của 실 là "l" - giữ lưỡi chạm lợi trên.
+  - type: common_mistake
+    wrong: 옫
+    right: 옷
+    target_lang: ko
+    note:
+      vi: Bạn nghe [옫] nhưng chữ viết là 옷 với ㅅ. Âm cuối đại diện chỉ thay đổi cách đọc, không thay đổi chính tả.
+  - type: common_mistake
+    wrong: 교실예요.
+    right: 교실이에요.
+    target_lang: ko
+    note:
+      vi: Danh từ có patchim đi với 이에요, không có patchim mới đi với 예요. 교실 kết thúc bằng ㄹ, nên là 교실이에요.
+  - type: common_mistake
+    wrong: 바ㅂ
+    right: 밥
+    target_lang: ko
+    note:
+      vi: Patchim không viết thêm sang bên phải như tiếng Việt; nó nằm dưới ㅂ và ㅏ trong cùng một khối.
+  - type: summary
+    points:
+      - vi: Patchim là phụ âm cuối, viết ở phần dưới khối chữ - 밥, 한국.
+      - vi: Bảy âm cuối đại diện - [ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅇ].
+      - vi: ㄱ ㅋ ㄲ → [ㄱ]; ㄷ ㅌ ㅅ ㅆ ㅈ ㅊ ㅎ → [ㄷ]; ㅂ ㅍ → [ㅂ].
+      - vi: Đọc thay đổi, viết giữ nguyên - 옷 [옫], 부엌 [부억], 앞 [압], 꽃 [꼳].
+      - vi: Có patchim → 이에요 (학생이에요); không có patchim → 예요 (의자예요).
+      - vi: 밥 cơm · 집 nhà · 옷 quần áo · 책 sách · 앞 phía trước · 부엌 nhà bếp · 꽃 hoa · 학생 học sinh · 한국 Hàn Quốc · 교실 lớp học.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:batchim-position
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:batchim
+    prompt:
+      stem: Trong chữ 밥, chữ ㅂ thứ hai (patchim) nằm ở đâu?
+      stem_lang: vi
+      options:
+        - { id: d7k, text: Ở phần dưới của khối chữ, lang: vi }
+        - { id: n2v, text: Bên phải ㅏ trên cùng một hàng, lang: vi }
+        - { id: e5c, text: Bên trái ㅂ đầu tiên, lang: vi }
+        - { id: u8x, text: Đứng riêng thành một khối thứ hai, lang: vi }
+    answer:
+      correct_option_id: d7k
+    explanation:
+      vi: Patchim luôn nằm ở phần dưới của khối âm tiết - ㅂ và ㅏ ở trên, ㅂ cuối ở dưới. Âm tiết có patchim vẫn chỉ là một khối, không tách ra.
+    display_answer: Ở phần dưới của khối chữ
+
+  - key: ko:exercise:batchim-listen-chaek
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:chaek
+    prompt:
+      audio_asset_id: null
+      fallback_text: 책
+      options:
+        - { id: s3f, text: quyển sách, lang: vi }
+        - { id: j6q, text: quần áo, lang: vi }
+        - { id: w1b, text: ngôi nhà, lang: vi }
+        - { id: c4h, text: cơm, lang: vi }
+    answer:
+      correct_option_id: s3f
+    explanation:
+      vi: 책 (gần "chéc", ㅊ bật hơi) nghĩa là quyển sách. Quần áo là 옷, nhà là 집, cơm là 밥.
+    display_answer: quyển sách
+
+  - key: ko:exercise:batchim-read-ot
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ot
+    prompt:
+      stem: 옷 (quần áo) được đọc thế nào?
+      stem_lang: vi
+      options:
+        - { id: v5r, text: '[옫]', lang: ko }
+        - { id: g9t, text: '[오스]', lang: ko }
+        - { id: p1l, text: '[오]', lang: ko }
+        - { id: z7m, text: '[옥]', lang: ko }
+    answer:
+      correct_option_id: v5r
+    explanation:
+      vi: ㅅ ở cuối âm tiết đọc bằng âm đại diện [ㄷ], gọn như "t" trong "tốt", nên 옷 đọc [옫]. Không thêm nguyên âm thành [오스], cũng không bỏ âm cuối.
+    display_answer: '[옫]'
+
+  - key: ko:exercise:batchim-build-bap
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:bap
+    prompt:
+      instruction: Ghép các chữ cái thành từ có nghĩa "cơm" (một âm tiết có patchim).
+      tokens:
+        - { id: t3, text: ㅏ }
+        - { id: t8, text: ㅂ }
+        - { id: t5, text: ㅍ }
+        - { id: t1, text: ㅂ }
+    answer:
+      orders:
+        - [t1, t3, t8]
+        - [t8, t3, t1]
+    explanation:
+      vi: '밥 = ㅂ (đầu) + ㅏ + ㅂ (patchim ở dưới). Hai chữ ㅂ giống nhau nên thứ tự nào cũng đúng; ㅍ là phụ âm bật hơi, không dùng ở đây.'
+    display_answer: 밥
+
+  - key: ko:exercise:batchim-fill-bueok
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:bueok
+    prompt:
+      template: "부엌 (nhà bếp) đọc là [부{{b1}}]"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - ㅋ ở cuối âm tiết mất hơi và đọc bằng một trong bảy âm đại diện.
+        - ㄱ ㅋ ㄲ ở cuối đều đọc [ㄱ].
+    answer:
+      blanks:
+        b1: [억]
+    known_wrong:
+      - answer: 엌
+        feedback_vi: Đó là cách viết. Câu hỏi hỏi cách đọc - ㅋ cuối đọc [ㄱ], nên là [부억].
+        error_tag: spelling_not_sound
+      - answer: 어
+        feedback_vi: Không bỏ âm cuối - ㅋ cuối vẫn được đọc, nhưng là [ㄱ] gọn như "c".
+        error_tag: dropped_final
+      - answer: 업
+        feedback_vi: ㅋ cuối đọc [ㄱ], không phải [ㅂ]. [ㅂ] dành cho ㅂ ㅍ cuối.
+        error_tag: final_sound
+    explanation:
+      vi: ㄱ ㅋ ㄲ ở cuối đều đọc [ㄱ], gọn như "c" trong "học". Vì vậy 부엌 đọc [부억], dù chữ viết vẫn giữ ㅋ.
+    display_answer: '[부억]'
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:batchim-write-bap
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:bap
+    prompt:
+      source_text: cơm
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 밥
+    known_wrong:
+      - answer: 바
+        feedback_vi: Thiếu patchim - cơm là 밥, có ㅂ ở dưới.
+        error_tag: missing_batchim
+      - answer: 밮
+        feedback_vi: Âm cuối [ㅂ] ở đây viết bằng ㅂ thường - 밥, không phải ㅍ.
+        error_tag: batchim_spelling
+      - answer: bap
+        feedback_vi: Hãy gõ bằng chữ Hangul (밥), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Cơm là 밥 - một âm tiết, ㅂ ở đầu và ㅂ làm patchim ở dưới.
+    display_answer: 밥
+
+  - key: ko:exercise:batchim-fill-ot-ap
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ap
+    prompt:
+      template: "Quần áo - {{b1}}. Phía trước - {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [옷]
+        b2: [앞]
+    known_wrong:
+      - answer: 옫
+        feedback_vi: Bạn viết theo cách đọc [옫]. Quần áo viết là 옷 với patchim ㅅ.
+        error_tag: spelling_as_sound
+      - answer: 압
+        feedback_vi: Bạn viết theo cách đọc [압]. Phía trước viết là 앞 với patchim ㅍ.
+        error_tag: spelling_as_sound
+      - answer: 오
+        feedback_vi: Thiếu patchim - quần áo là 옷.
+        error_tag: missing_batchim
+    explanation:
+      vi: 옷 (đọc [옫]) và 앞 (đọc [압]) là hai từ "đọc khác viết". Âm đại diện chỉ áp dụng khi đọc; chính tả giữ nguyên ㅅ và ㅍ.
+    display_answer: 옷, 앞
+
+  # ---------------- application ----------------
+  - key: ko:exercise:batchim-build-haksaeng
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:haksaeng
+    prompt:
+      instruction: Ghép các chữ cái thành từ có nghĩa "học sinh".
+      tokens:
+        - { id: h5, text: ㅅ }
+        - { id: h2, text: ㅇ }
+        - { id: h9, text: ㅆ }
+        - { id: h1, text: ㅏ }
+        - { id: h7, text: ㄱ }
+        - { id: h3, text: ㅐ }
+        - { id: h8, text: ㅎ }
+        - { id: h4, text: ㅔ }
+    answer:
+      orders:
+        - [h8, h1, h7, h5, h3, h2]
+    explanation:
+      vi: '학생 = (ㅎ + ㅏ + ㄱ) + (ㅅ + ㅐ + ㅇ). Từ này đọc [학쌩] nhưng viết với ㅅ thường, không phải ㅆ; nguyên âm là ㅐ.'
+    display_answer: 학생
+
+  - key: ko:exercise:batchim-choose-ieyo
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gyosil
+    prompt:
+      stem: Bạn muốn nói "Đây là lớp học." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: b8e, text: 교실이에요., lang: ko }
+        - { id: o3w, text: 교실예요., lang: ko }
+        - { id: q6n, text: 교시리에요., lang: ko }
+        - { id: r4y, text: 고실이에요., lang: ko }
+    answer:
+      correct_option_id: b8e
+    explanation:
+      vi: 교실 có patchim ㄹ nên đi với 이에요. 교시리에요 là viết theo cách đọc (nối âm), còn 고실 thiếu âm "y" của ㅛ.
+    display_answer: 교실이에요.
+
+  - key: ko:exercise:batchim-same-final-kkot
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:final-sounds
+    prompt:
+      stem: Từ nào có âm cuối đọc giống âm cuối của 옷 [옫]?
+      stem_lang: vi
+      options:
+        - { id: x2d, text: 꽃, lang: ko }
+        - { id: k7p, text: 책, lang: ko }
+        - { id: f9a, text: 앞, lang: ko }
+        - { id: m5j, text: 집, lang: ko }
+    answer:
+      correct_option_id: x2d
+    explanation:
+      vi: ㅊ cuối cũng đọc [ㄷ] như ㅅ, nên 꽃 đọc [꼳] và có cùng âm cuối với 옷 [옫]. 책 kết thúc bằng [ㄱ], còn 앞 [압] và 집 [집] kết thúc bằng [ㅂ].
+    display_answer: 꽃

@@ -1,0 +1,10 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:unit:food-shopping
+order_index: 6
+title:
+  vi: Ăn uống & mua sắm

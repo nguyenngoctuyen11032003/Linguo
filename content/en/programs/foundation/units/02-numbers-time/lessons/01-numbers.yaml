@@ -1,0 +1,355 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:numbers
+order_index: 1
+level: pre_a1
+title:
+  vi: Số đếm từ 0 đến 100
+objectives:
+  - vi: Đếm và đọc đúng các số từ 0 đến 100.
+  - vi: Nghe và nói phân biệt số -teen (13–19) với số -ty (30–90).
+  - vi: Hỏi số lượng bằng How many…? với danh từ số nhiều.
+estimated_minutes: 10
+skills: [vocabulary, listening, speaking]
+prerequisites: [en:lesson:spelling]
+items:
+  - item: en:item:zero
+  - item: en:item:numbers-1-10
+  - item: en:item:eleven-twelve
+  - item: en:item:teen-numbers
+  - item: en:item:tens
+  - item: en:item:teen-vs-ty
+  - item: en:item:compound-numbers
+  - item: en:item:hundred
+  - item: en:item:number
+  - item: en:item:how-many
+  - item: en:item:student
+    role: reuse
+  - item: en:item:teacher
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đếm được từ zero đến a hundred, nghe không nhầm thirteen với thirty và hỏi được "Có bao nhiêu…?" bằng tiếng Anh.
+  - type: explain
+    text:
+      vi: Các số 0–12 có tên riêng (zero, one… ten, eleven, twelve) nên bạn cần học thuộc. Từ 13 đến 19 thêm đuôi -teen - thirteen, fourteen… nineteen. Các số tròn chục 20–90 thêm đuôi -ty - twenty, thirty… ninety.
+  - type: explain
+    text:
+      vi: Số từ 21 đến 99 ghép giống tiếng Việt - số chục rồi số đơn vị, nối bằng gạch ngang khi viết (twenty-one, forty-five). Khác tiếng Việt, bạn không thêm "mươi" và không đổi "một" thành "mốt" hay "năm" thành "lăm". 100 là a hundred hoặc one hundred.
+  - type: explain
+    text:
+      vi: Để hỏi số lượng, bạn dùng How many + danh từ số nhiều - How many students are there? (Có bao nhiêu học sinh?).
+  - type: deep_explain
+    text:
+      vi: Thirteen và thirty là cặp người Việt hay nghe nhầm nhất. Số -teen có nguyên âm dài /iː/ và âm /n/ ở cuối, trọng âm thường rơi vào -teen (thir-TEEN); số -ty ngắn, không có /n/, nhấn vào phần đầu (THIR-ty). Khi -teen đứng ngay trước danh từ, trọng âm có thể dời lên đầu (THIRteen students), nên âm /n/ cuối là dấu hiệu chắc chắn nhất; nếu còn nghi ngờ, bạn cứ hỏi lại - One, three? or three, zero?
+  - type: example
+    target: "A: How many students are there? B: Thirty."
+    target_lang: en
+    translation:
+      vi: "A: Có bao nhiêu học sinh? B: Ba mươi."
+    note:
+      vi: Students ở số nhiều vì đi sau How many.
+  - type: example
+    target: Fourteen, fifteen, sixteen, seventeen.
+    target_lang: en
+    translation:
+      vi: Mười bốn, mười lăm, mười sáu, mười bảy.
+    note:
+      vi: Fifteen viết fif-, không viết five-; nhấn vào -teen.
+  - type: example
+    target: There are twenty-one teachers in my school.
+    target_lang: en
+    translation:
+      vi: Trường tôi có hai mươi mốt giáo viên.
+    note:
+      vi: Twenty-one viết có gạch ngang; tiếng Việt đổi "một" thành "mốt", tiếng Anh vẫn là one.
+  - type: common_mistake
+    wrong: fourty
+    right: forty
+    target_lang: en
+    note:
+      vi: Four có u, nhưng forty bỏ u. Đây là lỗi chính tả rất phổ biến, cả với người bản xứ.
+  - type: common_mistake
+    wrong: How many student are there?
+    right: How many students are there?
+    target_lang: en
+    note:
+      vi: Tiếng Việt không đổi danh từ khi đếm ("bao nhiêu học sinh"), nhưng sau How many danh từ phải ở số nhiều, thêm -s.
+  - type: common_mistake
+    wrong: fiveteen
+    right: fifteen
+    target_lang: en
+    note:
+      vi: 15 viết là fifteen, 13 là thirteen (không phải threeteen). Phần đầu của hai số này đổi cách viết và cách đọc.
+  - type: summary
+    points:
+      - vi: 0–12 học thuộc; 13–19 thêm -teen; 20, 30… 90 thêm -ty.
+      - vi: -teen dài, có /n/ cuối; -ty ngắn, nhấn phần đầu - thirteen ≠ thirty.
+      - vi: 21–99 = số chục + gạch ngang + số đơn vị (forty-five); 100 = a hundred.
+      - vi: Chú ý chính tả forty, fifteen, thirteen.
+      - vi: How many + danh từ số nhiều - How many students?
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:numbers-mcq-thirteen
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:teen-numbers
+    prompt:
+      stem: thirteen là số nào?
+      stem_lang: vi
+      options:
+        - { id: q7w, text: "30", lang: en }
+        - { id: t2k, text: "13", lang: en }
+        - { id: m9a, text: "3", lang: en }
+        - { id: z4e, text: "31", lang: en }
+    answer:
+      correct_option_id: t2k
+    explanation:
+      vi: Đuôi -teen chỉ các số từ 13 đến 19, nên thirteen là 13. Số 30 là thirty, đuôi -ty.
+    display_answer: "13"
+
+  - key: en:exercise:numbers-listen-fifty
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:teen-vs-ty
+    prompt:
+      audio_asset_id: null
+      fallback_text: Fifty.
+      options:
+        - { id: b5r, text: "15", lang: en }
+        - { id: h8d, text: "50", lang: en }
+        - { id: x3n, text: "5", lang: en }
+        - { id: c6u, text: "55", lang: en }
+    answer:
+      correct_option_id: h8d
+    explanation:
+      vi: Fifty nhấn vào phần đầu (FIF-ty), đuôi ngắn và không có âm /n/, nên là 50. Fifteen (15) có đuôi -teen dài, kết thúc bằng /n/.
+    display_answer: "50"
+
+  - key: en:exercise:numbers-mcq-forty
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:tens
+    prompt:
+      stem: Số 40 viết bằng chữ thế nào?
+      stem_lang: vi
+      options:
+        - { id: r1v, text: fourty, lang: en }
+        - { id: k8p, text: forty, lang: en }
+        - { id: e5s, text: fourteen, lang: en }
+        - { id: w2g, text: fourtie, lang: en }
+    answer:
+      correct_option_id: k8p
+    explanation:
+      vi: Bốn là four, nhưng bốn mươi bỏ chữ u thành forty. Fourteen là 14, còn fourty là lỗi chính tả.
+    display_answer: forty
+
+  - key: en:exercise:numbers-order-how-many
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:how-many
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: \"Có bao nhiêu giáo viên?\""
+      tokens:
+        - { id: m-teachers, text: teachers }
+        - { id: m-much, text: much }
+        - { id: m-there, text: there }
+        - { id: m-how, text: How }
+        - { id: m-teacher, text: teacher }
+        - { id: m-are, text: are }
+        - { id: m-many, text: many }
+    answer:
+      orders:
+        - [m-how, m-many, m-teachers, m-are, m-there]
+    explanation:
+      vi: Hỏi số lượng thứ đếm được dùng How many + danh từ số nhiều (teachers), rồi đến are there. Much dùng cho thứ không đếm được, nên không hợp ở đây.
+    display_answer: How many teachers are there?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:numbers-fill-thirty
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:tens
+    prompt:
+      template: "ten, twenty, {{b1}}, forty, fifty"
+      blanks:
+        - { id: b1, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [thirty]
+    known_wrong:
+      - answer: thirteen
+        feedback_vi: Thirteen là 13. Dãy này tăng mỗi lần 10, nên số tiếp theo là 30 - thirty.
+        error_tag: teen_ty
+      - answer: threety
+        feedback_vi: 30 viết là thirty, phần đầu đổi thành thir-, không viết three-.
+        error_tag: spelling
+    explanation:
+      vi: Dãy số tròn chục 10, 20, 30… nên chỗ trống là 30. Các số tròn chục có đuôi -ty, và ba mươi viết thirty.
+    display_answer: ten, twenty, thirty, forty, fifty
+
+  - key: en:exercise:numbers-fill-twelve-fifteen
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:eleven-twelve
+    prompt:
+      template: "12 = {{b1}} · 15 = {{b2}}"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [twelve]
+        b2: [fifteen]
+    known_wrong:
+      - answer: twoteen
+        feedback_vi: 12 có tên riêng là twelve, không theo mẫu -teen.
+        error_tag: spelling
+      - answer: fiveteen
+        feedback_vi: 15 viết là fifteen, phần đầu đổi thành fif-.
+        error_tag: spelling
+      - answer: fifty
+        feedback_vi: Fifty là 50. Số 15 có đuôi -teen - fifteen.
+        error_tag: teen_ty
+    explanation:
+      vi: 11 và 12 có tên riêng (eleven, twelve). Từ 13 trở đi mới thêm -teen, và 15 viết là fifteen.
+    display_answer: 12 = twelve · 15 = fifteen
+
+  - key: en:exercise:numbers-translate-how-many
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:how-many
+    prompt:
+      source_text: Có bao nhiêu học sinh?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - How many students are there?
+        - How many students?
+        - How many students are there in the class?
+        - How many students are in the class?
+        - How many students are there in your class?
+        - How many students are in your class?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: How many student are there?
+        feedback_vi: Sau How many, danh từ phải ở số nhiều - students.
+        error_tag: plural_noun
+      - answer: How much students are there?
+        feedback_vi: Students đếm được, nên dùng How many, không dùng How much.
+        error_tag: many_much
+      - answer: How many students there are?
+        feedback_vi: Trong câu hỏi, are đứng trước there - How many students are there?
+        error_tag: word_order
+      - answer: How many students have?
+        feedback_vi: Tiếng Anh dùng there are để nói "có" (tồn tại) - How many students are there?
+        error_tag: there_be
+    explanation:
+      vi: Mẫu hỏi số lượng là How many + danh từ số nhiều + are there? Chữ "có" trong câu này là there are, không phải have.
+    display_answer: How many students are there?
+
+  # ---------------- application ----------------
+  - key: en:exercise:numbers-mcq-price
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:teen-vs-ty
+    prompt:
+      stem: "Ở quầy bán vé, nhân viên nói: \"Thirteen dollars, please.\" Bạn cần đưa bao nhiêu tiền?"
+      stem_lang: vi
+      options:
+        - { id: v4c, text: $13, lang: en }
+        - { id: n1j, text: $30, lang: en }
+        - { id: y7f, text: $3, lang: en }
+        - { id: d9l, text: $33, lang: en }
+    answer:
+      correct_option_id: v4c
+    explanation:
+      vi: Thirteen có đuôi -teen nên là 13 đô. Nếu là 30, nhân viên sẽ nói thirty, không có âm /n/ ở cuối.
+    display_answer: $13
+
+  - key: en:exercise:numbers-translate-class
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:compound-numbers
+    prompt:
+      source_text: Lớp tôi có ba mươi lăm học sinh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - There are thirty-five students in my class.
+        - There are thirty five students in my class.
+        - There are 35 students in my class.
+        - My class has thirty-five students.
+        - My class has thirty five students.
+        - My class has 35 students.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: There are thirty-five student in my class.
+        feedback_vi: Số lớn hơn một thì danh từ ở số nhiều - students.
+        error_tag: plural_noun
+      - answer: There are thirteen-five students in my class.
+        feedback_vi: Ba mươi là thirty, không phải thirteen (13). Ba mươi lăm là thirty-five.
+        error_tag: teen_ty
+      - answer: There are thirty-fifteen students in my class.
+        feedback_vi: Tiếng Việt đổi "năm" thành "lăm", nhưng tiếng Anh vẫn dùng five - thirty-five.
+        error_tag: compound_number
+      - answer: My class have thirty-five students.
+        feedback_vi: My class là một lớp (số ít), nên dùng has.
+        error_tag: subject_verb
+    explanation:
+      vi: Ba mươi lăm là thirty + five, nối bằng gạch ngang. Có hai cách nói "có" - There are… in my class hoặc My class has…, và students phải ở số nhiều.
+    display_answer: There are thirty-five students in my class.
+
+  - key: en:exercise:numbers-translate-teachers-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:hundred
+    prompt:
+      source_text: There are a hundred teachers in my school.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trường tôi có một trăm giáo viên.
+        - Trường mình có một trăm giáo viên.
+        - Trường của tôi có một trăm giáo viên.
+        - Trường tôi có 100 giáo viên.
+        - Trường mình có 100 giáo viên.
+        - Có một trăm giáo viên ở trường tôi.
+        - Có một trăm giáo viên trong trường tôi.
+        - Có 100 giáo viên ở trường tôi.
+        - Ở trường tôi có một trăm giáo viên.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: A hundred là "một trăm" - chữ a ở đây chính là "một". There are… in my school dịch tự nhiên là "Trường tôi có…".
+    display_answer: Trường tôi có một trăm giáo viên.

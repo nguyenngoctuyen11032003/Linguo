@@ -1,0 +1,369 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:likes-wants
+order_index: 3
+level: topik1
+title:
+  vi: Thích, muốn và mùi vị
+objectives:
+  - vi: Nói mình thích/không thích gì bằng N을/를 좋아해요, N을/를 싫어해요 và N이/가 좋아요.
+  - vi: Nói mình muốn làm gì bằng V-고 싶어요, và dùng -고 싶어해요 cho người khác.
+  - vi: Nối hai món bằng 하고 hoặc 와/과, và tả vị bằng 매워요, 달아요, 짜요.
+estimated_minutes: 14
+skills: [grammar, speaking, writing]
+prerequisites: [ko:lesson:ordering-food]
+items:
+  - item: ko:item:joahaeyo
+  - item: ko:item:sireohaeyo
+  - item: ko:item:go-sipeoyo
+  - item: ko:item:hago-wa-gwa
+  - item: ko:item:maewoyo
+  - item: ko:item:darayo
+  - item: ko:item:jjayo
+  - item: ko:item:gimchi
+    role: reuse
+  - item: ko:item:tteokbokki
+    role: reuse
+  - item: ko:item:ramyeon
+    role: reuse
+  - item: ko:item:cha
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Tôi thích kim chi nhưng không thích đồ cay", "Tôi muốn ăn tteokbokki" và tả món ăn cay, ngọt, mặn.
+  - type: explain
+    text:
+      vi: Có hai cách nói "thích". 좋아해요 là động từ nên đi với 을/를 - 김치를 좋아해요; 좋아요 là tính từ ("tốt, thích") nên đi với 이/가 - 김치가 좋아요. 싫어해요 (không thích, ghét) đi với 을/를 giống 좋아해요.
+  - type: explain
+    text:
+      vi: Muốn làm gì thì bỏ 다 ở động từ gốc rồi thêm -고 싶어요 - 먹다 → 먹고 싶어요 (muốn ăn), 마시다 → 마시고 싶어요 (muốn uống). Câu này dùng cho chính bạn hoặc để hỏi người nghe (뭐 먹고 싶어요?).
+  - type: explain
+    text:
+      vi: '"Và" giữa hai danh từ là 하고 (dùng được với mọi từ, phổ biến khi nói) hoặc 와/과 (hay dùng khi viết). 와 sau từ không có patchim - 커피와 차; 과 sau từ có patchim - 밥과 김치.'
+  - type: deep_explain
+    text:
+      vi: Tiếng Hàn tách biệt cảm giác của bản thân với điều mình thấy ở người khác. Vì không biết chắc người khác muốn gì, khi nói về người thứ ba bạn dùng -고 싶어해요 (민수 씨는 라면을 먹고 싶어해요). Vị cay, ngọt, mặn là tính từ - 매워요 (từ 맵다), 달아요 (달다), 짜요 (짜다) - đứng cuối câu như 맛있어요.
+  - type: example
+    target: 저는 김치를 좋아해요. 그런데 매운 음식은 싫어해요.
+    target_lang: ko
+    translation:
+      vi: Tôi thích kim chi. Nhưng tôi không thích đồ cay.
+    note:
+      vi: Cả 좋아해요 và 싫어해요 đều đi với 을/를 (은 ở đây để nhấn ý tương phản).
+  - type: example
+    target: 커피와 주스가 좋아요.
+    target_lang: ko
+    translation:
+      vi: Tôi thích cà phê và nước ép.
+    note:
+      vi: 커피 không có patchim nên dùng 와; 좋아요 đi với 가.
+  - type: example
+    target: 떡볶이를 먹고 싶어요.
+    target_lang: ko
+    translation:
+      vi: Tôi muốn ăn tteokbokki.
+  - type: example
+    target: 동생은 라면하고 김밥을 먹고 싶어해요.
+    target_lang: ko
+    translation:
+      vi: Em tôi muốn ăn mì và kimbap.
+    note:
+      vi: Nói về người khác nên dùng -고 싶어해요.
+  - type: example
+    target: 이 주스는 너무 달아요.
+    target_lang: ko
+    translation:
+      vi: Nước ép này ngọt quá.
+  - type: common_mistake
+    wrong: 저는 김치를 좋아요.
+    right: 저는 김치를 좋아해요. / 저는 김치가 좋아요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt chỉ có một từ "thích", nên người học hay ghép 을/를 với 좋아요. Hãy nhớ cặp cố định - 을/를 + 좋아해요, 이/가 + 좋아요.
+  - type: common_mistake
+    wrong: 커피과 차
+    right: 커피와 차
+    target_lang: ko
+    note:
+      vi: 커피 kết thúc bằng nguyên âm nên dùng 와; 과 chỉ đứng sau patchim (밥과). Nếu chưa chắc, bạn dùng 하고 - 커피하고 차.
+  - type: common_mistake
+    wrong: 민수 씨는 라면을 먹고 싶어요.
+    right: 민수 씨는 라면을 먹고 싶어해요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói "Minsu muốn ăn mì" giống như "tôi muốn". Tiếng Hàn dùng -고 싶어해요 khi nói mong muốn của người thứ ba.
+  - type: summary
+    points:
+      - vi: N을/를 좋아해요 · N을/를 싫어해요 · N이/가 좋아요 - không trộn 을/를 với 좋아요.
+      - vi: V(bỏ 다)-고 싶어요 - tôi muốn / bạn muốn…?; người khác - V-고 싶어해요.
+      - vi: 하고 dùng với mọi từ; 와 sau nguyên âm, 과 sau patchim.
+      - vi: 매워요 cay · 달아요 ngọt · 짜요 mặn.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:likes-wants-mcq-particle
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:joahaeyo
+    prompt:
+      stem: "Chọn trợ từ đúng: 저는 김치___ 좋아해요."
+      stem_lang: vi
+      options:
+        - { id: a8p, text: 를, lang: ko }
+        - { id: m2c, text: 을, lang: ko }
+        - { id: t5w, text: 가, lang: ko }
+        - { id: r9e, text: 이, lang: ko }
+    answer:
+      correct_option_id: a8p
+    explanation:
+      vi: 좋아해요 là động từ nên cần 을/를. 김치 không có patchim nên dùng 를; 이/가 đi với 좋아요, không đi với 좋아해요.
+    display_answer: 를
+
+  - key: ko:exercise:likes-wants-listen-spicy
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:maewoyo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 떡볶이가 너무 매워요.
+      options:
+        - { id: c3h, text: Tteokbokki cay quá., lang: vi }
+        - { id: n7d, text: Tteokbokki ngọt quá., lang: vi }
+        - { id: q1s, text: Tteokbokki mặn quá., lang: vi }
+        - { id: z4f, text: Tteokbokki không ngon., lang: vi }
+    answer:
+      correct_option_id: c3h
+    explanation:
+      vi: 매워요 là "cay", 너무 là "quá". Ngọt là 달아요, mặn là 짜요, không ngon là 맛없어요.
+    display_answer: Tteokbokki cay quá.
+
+  - key: ko:exercise:likes-wants-mcq-gwa
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:hago-wa-gwa
+    prompt:
+      stem: "Chọn từ đúng để nói \"cơm và kim chi\": 밥___ 김치"
+      stem_lang: vi
+      options:
+        - { id: e6u, text: 과, lang: ko }
+        - { id: h3y, text: 와, lang: ko }
+        - { id: v8k, text: 를, lang: ko }
+        - { id: b1o, text: 가, lang: ko }
+    answer:
+      correct_option_id: e6u
+    explanation:
+      vi: 밥 có patchim ㅂ nên dùng 과. 와 chỉ đứng sau từ kết thúc bằng nguyên âm; 를 và 가 không mang nghĩa "và".
+    display_answer: 과
+
+  - key: ko:exercise:likes-wants-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:go-sipeoyo
+    prompt:
+      template: "비빔밥을 먹고 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi muốn ăn cơm trộn."
+        - "Gợi ý: V-고 + từ nghĩa là \"muốn\" (đuôi 해요체)."
+    answer:
+      blanks:
+        b1: [싶어요]
+    known_wrong:
+      - answer: 시퍼요
+        feedback_vi: Đó là cách đọc [시퍼요]. Khi viết là 싶어요.
+        error_tag: spelling_pronunciation
+      - answer: 싶어해요
+        feedback_vi: 싶어해요 dùng cho người thứ ba. Câu này nói về chính bạn nên dùng 싶어요.
+        error_tag: third_person_want
+    explanation:
+      vi: Nói mong muốn của mình - V-고 싶어요. 먹다 bỏ 다 thành 먹고, rồi thêm 싶어요.
+    display_answer: 비빔밥을 먹고 싶어요.
+
+  - key: ko:exercise:likes-wants-wb-coffee-juice
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:hago-wa-gwa
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi thích cà phê và nước ép.\""
+      tokens:
+        - { id: w5, text: 좋아해요 }
+        - { id: w3, text: 주스를 }
+        - { id: w6, text: 좋아요 }
+        - { id: w1, text: 저는 }
+        - { id: w4, text: 커피과 }
+        - { id: w2, text: 커피하고 }
+    answer:
+      orders:
+        - [w1, w2, w3, w5]
+    explanation:
+      vi: 커피하고 là "cà phê và"; 주스를 có 를 nên động từ phải là 좋아해요 (좋아요 đi với 이/가). 커피과 sai vì 커피 không có patchim.
+    display_answer: 저는 커피하고 주스를 좋아해요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:likes-wants-translate-want
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:go-sipeoyo
+    prompt:
+      source_text: Tôi muốn ăn tteokbokki.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 떡볶이를 먹고 싶어요.
+        - 떡볶이 먹고 싶어요.
+        - 저는 떡볶이를 먹고 싶어요.
+        - 저는 떡볶이 먹고 싶어요.
+        - 제가 떡볶이를 먹고 싶어요.
+    known_wrong:
+      - answer: 떡볶이를 먹어 싶어요.
+        feedback_vi: Trước 싶어요 dùng dạng -고 - 먹고 싶어요.
+        error_tag: go_sipeoyo_form
+      - answer: 떡볶이를 싶어요.
+        feedback_vi: Thiếu động từ "ăn". Tiếng Hàn cần V-고 싶어요 - 먹고 싶어요.
+        error_tag: missing_verb
+      - answer: 떡볶이를 먹고 싶어해요.
+        feedback_vi: 싶어해요 dùng cho người thứ ba. Nói về mình thì dùng 싶어요.
+        error_tag: third_person_want
+      - answer: 저는 싶어요 먹고 떡볶이.
+        feedback_vi: Tiếng Hàn đặt động từ cuối câu - 떡볶이를 먹고 싶어요.
+        error_tag: word_order
+    explanation:
+      vi: Muốn ăn = 먹다 → 먹고 싶어요; món ăn đứng trước với 를. Tiếng Việt "muốn" đứng trước động từ, còn tiếng Hàn 싶어요 đứng sau.
+    display_answer: 떡볶이를 먹고 싶어요.
+
+  - key: ko:exercise:likes-wants-fill-like-dislike
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:sireohaeyo
+    prompt:
+      template: "(Minsu không thích kim chi.) 민수 씨는 김치를 {{b1}}. (Còn tôi thích kim chi.) 저는 김치{{b2}} 좋아요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [싫어해요]
+        b2: [가, 는]
+    known_wrong:
+      - answer: 싫어요
+        feedback_vi: Câu có 김치를 (을/를) nên cần động từ 싫어해요; 싫어요 đi với 이/가.
+        error_tag: particle_like_verb
+      - answer: 를
+        feedback_vi: 좋아요 là tính từ nên đi với 이/가 - 김치가 좋아요.
+        error_tag: particle_like_verb
+      - answer: 이
+        feedback_vi: 김치 không có patchim nên dùng 가, không dùng 이.
+        error_tag: particle_i_ga
+    explanation:
+      vi: 김치를 + 싫어해요 (động từ đi với 을/를). 좋아요 là tính từ nên đi với 가 (hoặc 는 khi muốn nhấn "còn tôi thì").
+    display_answer: 민수 씨는 김치를 싫어해요. 저는 김치가 좋아요.
+
+  - key: ko:exercise:likes-wants-translate-coffee-tea
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:joahaeyo
+    prompt:
+      source_text: Tôi thích cà phê và trà.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 커피하고 차를 좋아해요.
+        - 저는 커피하고 차를 좋아해요.
+        - 커피와 차를 좋아해요.
+        - 저는 커피와 차를 좋아해요.
+        - 커피하고 차가 좋아요.
+        - 저는 커피하고 차가 좋아요.
+        - 커피와 차가 좋아요.
+        - 저는 커피와 차가 좋아요.
+        - 저는 커피랑 차를 좋아해요.
+        - 커피랑 차를 좋아해요.
+    known_wrong:
+      - answer: 저는 커피과 차를 좋아해요.
+        feedback_vi: 커피 không có patchim nên dùng 와 - 커피와 차.
+        error_tag: particle_wa_gwa
+      - answer: 저는 커피하고 차를 좋아요.
+        feedback_vi: 차를 (을/를) đi với 좋아해요; nếu muốn dùng 좋아요 thì đổi thành 차가.
+        error_tag: particle_like_verb
+      - answer: 저는 커피하고 차가 좋아해요.
+        feedback_vi: 좋아해요 đi với 을/를 - 차를 좋아해요.
+        error_tag: particle_like_verb
+    explanation:
+      vi: '"Và" là 하고 hoặc 와 (커피 không có patchim). Sau đó chọn một cặp: 차를 좋아해요 hoặc 차가 좋아요.'
+    display_answer: 저는 커피하고 차를 좋아해요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:likes-wants-mcq-third-person
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:go-sipeoyo
+    prompt:
+      stem: Bạn kể với nhân viên rằng "Minsu muốn uống bia". Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: p7x, text: 민수 씨는 맥주를 마시고 싶어해요., lang: ko }
+        - { id: d2l, text: 민수 씨는 맥주를 마시고 싶어요., lang: ko }
+        - { id: i6g, text: 민수 씨는 맥주를 마셔 싶어해요., lang: ko }
+        - { id: y3b, text: 민수 씨는 맥주를 싶어해요., lang: ko }
+    answer:
+      correct_option_id: p7x
+    explanation:
+      vi: Nói mong muốn của người thứ ba thì dùng -고 싶어해요. -고 싶어요 chỉ dùng cho mình hoặc khi hỏi người nghe; trước 싶어해요 phải là dạng -고 của động từ.
+    display_answer: 민수 씨는 맥주를 마시고 싶어해요.
+
+  - key: ko:exercise:likes-wants-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:jjayo
+    prompt:
+      source_text: 라면이 좀 짜요. 그리고 너무 매워요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mì hơi mặn. Và cay quá.
+        - Mì hơi mặn, và cay quá.
+        - Mì hơi mặn. Với lại cay quá.
+        - Mì hơi mặn. Mà còn cay quá.
+        - Mì hơi mặn và quá cay.
+        - Mì gói hơi mặn. Và cay quá.
+        - Mì hơi mặn, lại còn cay quá.
+        - Mì hơi mặn. Còn nữa, cay quá.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mì hơi ngọt. Và cay quá.
+        feedback_vi: 짜요 là "mặn"; "ngọt" là 달아요.
+        error_tag: taste_word
+      - answer: Mì hơi mặn. Và ngon quá.
+        feedback_vi: 매워요 là "cay"; "ngon" là 맛있어요.
+        error_tag: taste_word
+    explanation:
+      vi: 좀 = hơi, 짜요 = mặn, 그리고 = và, 너무 = quá, 매워요 = cay.
+    display_answer: Mì hơi mặn. Và cay quá.

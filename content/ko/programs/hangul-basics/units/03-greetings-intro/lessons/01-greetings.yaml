@@ -1,0 +1,345 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:greetings-basic
+order_index: 1
+level: topik1
+title:
+  vi: Chào hỏi, cảm ơn và xin lỗi
+objectives:
+  - vi: Chào hỏi bằng 안녕하세요 và chọn đúng 안녕히 가세요 / 안녕히 계세요 khi chia tay.
+  - vi: Nói cảm ơn và xin lỗi với mức lịch sự phù hợp người nghe.
+  - vi: Nói “rất vui được gặp bạn” khi làm quen.
+estimated_minutes: 12
+skills: [speaking, listening, vocabulary]
+prerequisites: [ko:lesson:hangul-advanced-review]
+items:
+  - item: ko:item:annyeonghaseyo
+  - item: ko:item:annyeonghi-gaseyo
+  - item: ko:item:annyeonghi-gyeseyo
+  - item: ko:item:gamsahamnida
+  - item: ko:item:gomapseumnida
+  - item: ko:item:joesonghamnida
+  - item: ko:item:mianhaeyo
+  - item: ko:item:bangapseumnida
+  - item: ko:item:mannaseo-bangawoyo
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn chào, tạm biệt, cảm ơn và xin lỗi bằng tiếng Hàn một cách lịch sự, đúng người đúng lúc.
+  - type: explain
+    text:
+      vi: 안녕하세요 là câu chào dùng được cả sáng, trưa, tối và với hầu hết mọi người. Tiếng Hàn không có “chào anh”, “chào chị” như tiếng Việt - một câu 안녕하세요 là đủ lịch sự.
+  - type: explain
+    text:
+      vi: Khi chia tay, tiếng Hàn phân biệt ai đi, ai ở. Người ở lại nói 안녕히 가세요 (đi bình an nhé) với người ra về; người ra về nói 안녕히 계세요 (ở lại bình an nhé) với người ở lại. Nếu cả hai cùng rời đi, cả hai nói 안녕히 가세요.
+  - type: explain
+    text:
+      vi: Cảm ơn có 감사합니다 (trang trọng) và 고맙습니다 (gần gũi hơn một chút); xin lỗi có 죄송합니다 (trang trọng) và 미안해요 (thân mật hơn). Khi không chắc, bạn cứ dùng 감사합니다 và 죄송합니다 - không bao giờ bị coi là thất lễ.
+  - type: deep_explain
+    text:
+      vi: Các câu kết thúc bằng -ㅂ니다/-습니다 thuộc lối nói trang trọng, hay nghe ở cửa hàng, công sở, bản tin; lối 해요체 (반가워요, 미안해요) mềm mại hơn và là lối nói chính trong khoá học này. Chữ viết và cách đọc khác nhau - 감사합니다 đọc [감사함니다], 반갑습니다 đọc [반갑씀니다] - nên bạn viết theo chữ, không viết theo tai nghe. Gặp lần đầu, người Hàn hay nói 처음 뵙겠습니다 (lần đầu được gặp) rồi 반갑습니다.
+  - type: example
+    target: 안녕하세요? 만나서 반가워요.
+    target_lang: ko
+    translation:
+      vi: Xin chào. Rất vui được gặp bạn.
+    note:
+      vi: Câu mở đầu quen thuộc khi làm quen.
+  - type: example
+    target: 선생님, 안녕히 계세요.
+    target_lang: ko
+    translation:
+      vi: Em chào thầy/cô ạ, em về đây.
+    note:
+      vi: Học sinh ra về, thầy cô ở lại lớp nên học sinh dùng 계세요.
+  - type: example
+    target: 손님, 감사합니다. 안녕히 가세요.
+    target_lang: ko
+    translation:
+      vi: Cảm ơn quý khách. Quý khách đi cẩn thận ạ.
+    note:
+      vi: Nhân viên cửa hàng ở lại, khách ra về nên nhân viên dùng 가세요.
+  - type: example
+    target: 늦어서 죄송합니다.
+    target_lang: ko
+    translation:
+      vi: Xin lỗi vì tôi đến muộn.
+    note:
+      vi: Xin lỗi thầy cô hay cấp trên thì dùng 죄송합니다.
+  - type: common_mistake
+    wrong: 안녕히 가세요.
+    right: 안녕히 계세요.
+    target_lang: ko
+    note:
+      vi: Khi bạn ra về và chào chủ nhà, người Việt hay nói nhầm 가세요 vì quen một câu “tạm biệt” cho mọi trường hợp. Bạn là người đi, chủ nhà ở lại, nên phải chúc họ “ở lại bình an” - 계세요.
+  - type: common_mistake
+    wrong: 감사함니다
+    right: 감사합니다
+    target_lang: ko
+    note:
+      vi: Bạn nghe [함니다] nhưng chữ viết vẫn là 합니다. ㅂ chỉ đổi thành âm ㅁ khi đọc vì đứng trước ㄴ.
+  - type: common_mistake
+    wrong: 부장님, 미안해요.
+    right: 부장님, 죄송합니다.
+    target_lang: ko
+    note:
+      vi: 부장님 là “trưởng phòng” - cấp trên của bạn. 미안해요 hợp với bạn bè, người ngang hàng; với người lớn tuổi hay cấp trên, 죄송합니다 mới đủ lễ phép.
+  - type: summary
+    points:
+      - vi: 안녕하세요 - xin chào, dùng mọi lúc, với hầu hết mọi người.
+      - vi: Người ở lại nói 안녕히 가세요; người ra về nói 안녕히 계세요.
+      - vi: Cảm ơn - 감사합니다 (trang trọng), 고맙습니다 / 고마워요 (gần gũi hơn).
+      - vi: Xin lỗi - 죄송합니다 (trang trọng), 미안해요 (thân mật hơn).
+      - vi: Rất vui được gặp - 반갑습니다, 만나서 반가워요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:greet-mcq-leaving-guest
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:annyeonghi-gyeseyo
+    prompt:
+      stem: Bạn đến chơi nhà bạn Hàn Quốc và giờ ra về, chủ nhà ở lại. Bạn chào chủ nhà thế nào?
+      stem_lang: vi
+      options:
+        - { id: r7k, text: 안녕히 계세요., lang: ko }
+        - { id: m2f, text: 안녕히 가세요., lang: ko }
+        - { id: x9p, text: 반갑습니다., lang: ko }
+        - { id: d4w, text: 죄송합니다., lang: ko }
+    answer:
+      correct_option_id: r7k
+    explanation:
+      vi: Bạn là người đi, chủ nhà ở lại, nên bạn chúc họ “ở lại bình an” - 안녕히 계세요. 안녕히 가세요 là câu chủ nhà nói với bạn.
+    display_answer: 안녕히 계세요.
+
+  - key: ko:exercise:greet-listen-thanks
+    type: listen
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:gamsahamnida
+    prompt:
+      audio_asset_id: null
+      fallback_text: 감사합니다.
+      options:
+        - { id: q3n, text: Cảm ơn., lang: vi }
+        - { id: h8s, text: Xin lỗi., lang: vi }
+        - { id: b5v, text: Xin chào., lang: vi }
+        - { id: z1c, text: Rất vui được gặp bạn., lang: vi }
+    answer:
+      correct_option_id: q3n
+    explanation:
+      vi: 감사합니다 (đọc [감사함니다]) là lời cảm ơn trang trọng. Xin lỗi là 죄송합니다, xin chào là 안녕하세요.
+    display_answer: Cảm ơn.
+
+  - key: ko:exercise:greet-mcq-sorry-polite
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:mianhaeyo
+    prompt:
+      stem: 미안해요 và 죄송합니다 đều là “xin lỗi”. Câu nào đúng về cách dùng?
+      stem_lang: vi
+      options:
+        - { id: f6t, text: 죄송합니다 trang trọng hơn - dùng với người lớn tuổi hay cấp trên., lang: vi }
+        - { id: j2a, text: 미안해요 trang trọng hơn - dùng với sếp., lang: vi }
+        - { id: u8e, text: Hai câu hoàn toàn như nhau trong mọi tình huống., lang: vi }
+        - { id: k4m, text: 죄송합니다 chỉ dùng với bạn thân., lang: vi }
+    answer:
+      correct_option_id: f6t
+    explanation:
+      vi: 죄송합니다 là lời xin lỗi trang trọng, an toàn với người lớn và cấp trên. 미안해요 vẫn lịch sự nhưng thân mật hơn, hợp với người ngang hàng.
+    display_answer: 죄송합니다 trang trọng hơn - dùng với người lớn tuổi hay cấp trên.
+
+  - key: ko:exercise:greet-fill-nice-to-meet
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:mannaseo-bangawoyo
+    prompt:
+      template: "만나서 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Rất vui được gặp bạn."
+        - Từ cần điền bắt đầu bằng 반가…
+    answer:
+      blanks:
+        b1: [반가워요, 반갑습니다]
+    known_wrong:
+      - answer: 반가와요
+        feedback_vi: Viết là 반가워요 (워 = ㅇ + ㅝ), không phải 반가와요.
+        error_tag: spelling
+      - answer: 반갑아요
+        feedback_vi: 반갑다 chia 해요체 thành 반가워요, không phải 반갑아요.
+        error_tag: spelling
+      - answer: 감사합니다
+        feedback_vi: 감사합니다 là “cảm ơn”. “Rất vui được gặp” là 반가워요.
+        error_tag: wrong_expression
+    explanation:
+      vi: 만나서 반가워요 nghĩa là “gặp (bạn) nên vui” - rất vui được gặp bạn. Dạng trang trọng 만나서 반갑습니다 cũng đúng.
+    display_answer: 만나서 반가워요.
+
+  - key: ko:exercise:greet-order-host
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:annyeonghi-gaseyo
+    prompt:
+      instruction: Bạn là nhân viên cửa hàng, khách vừa ra về. Ghép câu chào tạm biệt khách.
+      tokens:
+        - { id: g1, text: 가세요 }
+        - { id: g2, text: 계세요 }
+        - { id: g3, text: 안녕히 }
+        - { id: g4, text: 안녕하세요 }
+    answer:
+      orders:
+        - [g3, g1]
+    explanation:
+      vi: Khách là người đi, bạn ở lại cửa hàng, nên chúc khách “đi bình an” - 안녕히 가세요. 계세요 là câu khách nói với bạn.
+    display_answer: 안녕히 가세요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:greet-write-thanks
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gomapseumnida
+    prompt:
+      source_text: Cảm ơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 감사합니다
+        - 고맙습니다
+        - 고마워요
+        - 감사해요
+    known_wrong:
+      - answer: 감사함니다
+        feedback_vi: Đọc [함니다] nhưng viết 합니다 - 감사합니다.
+        error_tag: spelling_by_sound
+      - answer: 고맙씀니다
+        feedback_vi: Đọc [고맙씀니다] nhưng viết 고맙습니다.
+        error_tag: spelling_by_sound
+      - answer: gamsahamnida
+        feedback_vi: Hãy gõ bằng chữ Hangul (감사합니다), không dùng phiên âm Latinh.
+        error_tag: romanization
+      - answer: 죄송합니다
+        feedback_vi: 죄송합니다 là “xin lỗi”. Cảm ơn là 감사합니다 hoặc 고맙습니다.
+        error_tag: wrong_expression
+    explanation:
+      vi: Cảm ơn là 감사합니다 (trang trọng) hoặc 고맙습니다 / 고마워요 (gần gũi hơn). Viết theo chữ 합니다, 습니다 dù khi đọc nghe như [함니다], [씀니다].
+    display_answer: 감사합니다
+
+  - key: ko:exercise:greet-write-sorry
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:joesonghamnida
+    prompt:
+      source_text: Xin lỗi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 죄송합니다
+        - 미안해요
+        - 죄송해요
+        - 미안합니다
+    known_wrong:
+      - answer: 죄송함니다
+        feedback_vi: Đọc [함니다] nhưng viết 합니다 - 죄송합니다.
+        error_tag: spelling_by_sound
+      - answer: 재송합니다
+        feedback_vi: Âm đầu là 죄 (ㅈ + ㅚ), không phải 재.
+        error_tag: vowel_oe
+      - answer: joesonghamnida
+        feedback_vi: Hãy gõ bằng chữ Hangul (죄송합니다), không dùng phiên âm Latinh.
+        error_tag: romanization
+      - answer: 감사합니다
+        feedback_vi: 감사합니다 là “cảm ơn”. Xin lỗi là 죄송합니다 hoặc 미안해요.
+        error_tag: wrong_expression
+    explanation:
+      vi: Xin lỗi trang trọng là 죄송합니다, thân mật hơn là 미안해요. Cả hai đều đúng; với người lớn hãy chọn 죄송합니다.
+    display_answer: 죄송합니다
+
+  - key: ko:exercise:greet-fill-goodbye-stay
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:annyeonghi-gaseyo
+    prompt:
+      template: "Lan ra về, Minsu ở lại. Lan nói - 안녕히 {{b1}}. Minsu đáp - 안녕히 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [계세요]
+        b2: [가세요]
+    known_wrong:
+      - answer: 개세요
+        feedback_vi: Viết là 계세요 (ㄱ + ㅖ), dù trong tiếng Seoul hai âm nghe gần giống nhau.
+        error_tag: vowel_ye_ae
+    explanation:
+      vi: Lan đi nên chúc người ở lại “ở bình an” - 계세요; Minsu ở lại nên chúc Lan “đi bình an” - 가세요. Đảo ngược hai câu là lỗi người Việt rất hay mắc.
+    display_answer: 안녕히 계세요. / 안녕히 가세요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:greet-translate-nice-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:bangapseumnida
+    prompt:
+      source_text: 안녕하세요? 만나서 반갑습니다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin chào. Rất vui được gặp bạn.
+        - Xin chào, rất vui được gặp bạn.
+        - Chào bạn. Rất vui được gặp bạn.
+        - Xin chào. Rất vui được làm quen với bạn.
+        - Xin chào. Rất vui được gặp.
+        - Xin chào. Rất hân hạnh được gặp bạn.
+        - Xin chào. Hân hạnh được gặp bạn.
+        - Xin chào. Rất vui được làm quen.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: 안녕하세요 là “xin chào”; 만나서 반갑습니다 là “gặp nên vui” - rất vui được gặp bạn. Tiếng Hàn bỏ chủ ngữ, còn tiếng Việt tự nhiên hơn khi thêm “bạn”.
+    display_answer: Xin chào. Rất vui được gặp bạn.
+
+  - key: ko:exercise:greet-mcq-bump-elder
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:joesonghamnida
+    prompt:
+      stem: Trên tàu điện, bạn lỡ giẫm vào chân một bác lớn tuổi. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: w5h, text: 죄송합니다., lang: ko }
+        - { id: e3r, text: 고맙습니다., lang: ko }
+        - { id: n7y, text: 안녕히 계세요., lang: ko }
+        - { id: s2l, text: 반갑습니다., lang: ko }
+    answer:
+      correct_option_id: w5h
+    explanation:
+      vi: Lỡ làm phiền người lớn tuổi thì xin lỗi trang trọng - 죄송합니다. 고맙습니다 là cảm ơn, 안녕히 계세요 là tạm biệt, 반갑습니다 là rất vui được gặp.
+    display_answer: 죄송합니다.

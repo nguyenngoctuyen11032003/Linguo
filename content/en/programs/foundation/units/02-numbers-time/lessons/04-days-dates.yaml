@@ -1,0 +1,375 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:days-dates
+order_index: 4
+level: a1
+title:
+  vi: Thứ, tháng & ngày tháng
+objectives:
+  - vi: Gọi đúng tên bảy ngày trong tuần và mười hai tháng, viết hoa chữ cái đầu.
+  - vi: Nói ngày tháng bằng số thứ tự - May 5th, the third of May.
+  - vi: Chọn đúng giới từ chỉ thời gian - at + giờ, on + thứ/ngày, in + tháng/năm.
+estimated_minutes: 12
+skills: [vocabulary, grammar, writing]
+prerequisites: [en:lesson:telling-time]
+items:
+  - item: en:item:days-of-week
+  - item: en:item:weekend
+  - item: en:item:months
+  - item: en:item:day
+  - item: en:item:week
+  - item: en:item:month
+  - item: en:item:today
+  - item: en:item:tomorrow
+  - item: en:item:ordinal-numbers
+  - item: en:item:date
+  - item: en:item:birthday
+  - item: en:item:on-in-at
+  - item: en:item:am-pm
+    role: reuse
+  - item: en:item:oclock
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được hôm nay là thứ mấy, ngày bao nhiêu, sinh nhật mình vào ngày nào và hẹn lịch với đúng on, in, at.
+  - type: explain
+    text:
+      vi: Tiếng Việt gọi thứ và tháng bằng số (thứ Hai, tháng 6), còn tiếng Anh mỗi ngày, mỗi tháng có tên riêng - Monday, June. Tên thứ và tháng luôn viết hoa chữ cái đầu. Tuần trong tiếng Anh thường được coi là bắt đầu từ Sunday hoặc Monday, nhưng Monday luôn là thứ Hai.
+  - type: explain
+    text:
+      vi: Ngày trong tháng dùng số thứ tự - first (1st), second (2nd), third (3rd), rồi thêm -th - fourth, fifth, twentieth. Người Mỹ thường nói May fifth (viết May 5th), người Anh hay nói the fifth of May (viết 5 May).
+  - type: explain
+    text:
+      vi: Tiếng Việt chỉ cần "vào" hoặc "lúc", nhưng tiếng Anh có ba giới từ - at + giờ (at 7 o'clock), on + thứ hoặc ngày cụ thể (on Monday, on May 5th), in + tháng, năm (in May, in 2025). Today và tomorrow không cần giới từ.
+  - type: deep_explain
+    text:
+      vi: Hãy hình dung từ nhỏ đến lớn - điểm giờ dùng at, một ngày dùng on, khoảng dài hơn như tháng, năm dùng in. Khi có ngày cụ thể thì dùng on, kể cả có tên tháng đi kèm (on May 5th, không phải in May 5th). Hỏi thứ dùng What day is it today?, hỏi ngày tháng dùng What's the date today?; cuối tuần người Anh nói at the weekend, người Mỹ nói on the weekend.
+  - type: example
+    target: "A: When is your birthday? B: It's on June 21st."
+    target_lang: en
+    translation:
+      vi: "A: Sinh nhật bạn là khi nào? B: Vào ngày 21 tháng 6."
+    note:
+      vi: 21st đọc twenty-first - số thứ tự, có on vì là ngày cụ thể.
+  - type: example
+    target: I have English class on Tuesday and Thursday at 6 p.m.
+    target_lang: en
+    translation:
+      vi: Tôi có lớp tiếng Anh vào thứ Ba và thứ Năm lúc 6 giờ tối.
+    note:
+      vi: Thứ đi với on, giờ đi với at.
+  - type: example
+    target: "A: What's the date today? B: It's the third of May."
+    target_lang: en
+    translation:
+      vi: "A: Hôm nay là ngày bao nhiêu? B: Ngày 3 tháng 5."
+    note:
+      vi: Third là số thứ tự của 3; không nói the three of May.
+  - type: example
+    target: Tet is usually in January or February.
+    target_lang: en
+    translation:
+      vi: Tết thường rơi vào tháng Một hoặc tháng Hai.
+    note:
+      vi: Chỉ có tháng, không có ngày cụ thể, nên dùng in.
+  - type: common_mistake
+    wrong: I have class in Monday.
+    right: I have class on Monday.
+    target_lang: en
+    note:
+      vi: Người Việt hay dịch "vào" thành in cho mọi trường hợp. Thứ trong tuần luôn đi với on.
+  - type: common_mistake
+    wrong: My birthday is on May.
+    right: My birthday is in May.
+    target_lang: en
+    note:
+      vi: Chỉ có tháng thì dùng in; có ngày cụ thể mới dùng on - on May 5th.
+  - type: common_mistake
+    wrong: Today is May five.
+    right: Today is May fifth.
+    target_lang: en
+    note:
+      vi: Ngày trong tháng dùng số thứ tự (fifth), không dùng số đếm (five).
+  - type: summary
+    points:
+      - vi: Thứ - Monday… Sunday; tháng - January… December; luôn viết hoa.
+      - vi: Ngày dùng số thứ tự - first, second, third, fourth… (1st, 2nd, 3rd, 4th).
+      - vi: at + giờ · on + thứ / ngày cụ thể · in + tháng / năm.
+      - vi: Không có giới từ trước today, tomorrow.
+      - vi: Hỏi thứ - What day is it today? · Hỏi ngày - What's the date today?
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:days-dates-mcq-tuesday
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:days-of-week
+    prompt:
+      stem: Thứ Ba trong tiếng Anh là gì?
+      stem_lang: vi
+      options:
+        - { id: k3u, text: Thursday, lang: en }
+        - { id: z9e, text: Tuesday, lang: en }
+        - { id: p6y, text: Wednesday, lang: en }
+        - { id: l2a, text: Monday, lang: en }
+    answer:
+      correct_option_id: z9e
+    explanation:
+      vi: Tuần bắt đầu Monday (thứ Hai), nên Tuesday là thứ Ba. Thursday là thứ Năm - hai từ này hay bị nhầm vì đều bắt đầu bằng T và có -s-.
+    display_answer: Tuesday
+
+  - key: en:exercise:days-dates-listen-july
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:months
+    prompt:
+      audio_asset_id: null
+      fallback_text: My birthday is in July.
+      options:
+        - { id: j8f, text: Sinh nhật tôi vào tháng Bảy., lang: vi }
+        - { id: d1w, text: Sinh nhật tôi vào tháng Sáu., lang: vi }
+        - { id: q5b, text: Sinh nhật tôi vào ngày 7., lang: vi }
+        - { id: u7n, text: Sinh nhật tôi vào tháng Tám., lang: vi }
+    answer:
+      correct_option_id: j8f
+    explanation:
+      vi: July /dʒuˈlaɪ/ có hai âm tiết, nhấn âm sau - là tháng Bảy. June /dʒuːn/ (tháng Sáu) chỉ có một âm tiết. In + tháng, không phải ngày.
+    display_answer: Sinh nhật tôi vào tháng Bảy.
+
+  - key: en:exercise:days-dates-fill-third-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:ordinal-numbers
+    prompt:
+      template: "Today is the {{b1}} of May."
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Hôm nay là ngày 3 tháng 5."
+        - "Gợi ý: số thứ tự của 3 - th…"
+    answer:
+      blanks:
+        b1: [third, 3rd]
+    known_wrong:
+      - answer: three
+        feedback_vi: Ngày trong tháng dùng số thứ tự - third, không dùng số đếm three.
+        error_tag: ordinal
+      - answer: threeth
+        feedback_vi: 1, 2, 3 có dạng riêng - first, second, third.
+        error_tag: ordinal
+      - answer: thirdth
+        feedback_vi: Third đã là số thứ tự, không thêm -th.
+        error_tag: ordinal
+    explanation:
+      vi: Ngày tháng dùng số thứ tự. Số 3 có dạng riêng là third (viết tắt 3rd), không theo quy tắc thêm -th.
+    display_answer: Today is the third of May.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:days-dates-fill-on-at
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:on-in-at
+    prompt:
+      template: "The party is {{b1}} Saturday {{b2}} 7 p.m."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: ["on"]
+        b2: [at]
+    known_wrong:
+      - answer: in
+        feedback_vi: In dùng cho tháng, năm. Thứ dùng on, giờ dùng at.
+        error_tag: preposition_time
+    explanation:
+      vi: Saturday là một ngày nên đi với on; 7 p.m. là một điểm giờ nên đi với at.
+    display_answer: The party is on Saturday at 7 p.m.
+
+  - key: en:exercise:days-dates-fill-in-on
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:on-in-at
+    prompt:
+      template: "My birthday is {{b1}} October. It's {{b2}} October 9th."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [in]
+        b2: ["on"]
+    known_wrong:
+      - answer: at
+        feedback_vi: At chỉ dùng cho giờ. Tháng dùng in, ngày cụ thể dùng on.
+        error_tag: preposition_time
+    explanation:
+      vi: Câu đầu chỉ có tháng nên dùng in. Câu sau có ngày cụ thể (October 9th) nên dùng on, dù có tên tháng.
+    display_answer: My birthday is in October. It's on October 9th.
+
+  - key: en:exercise:days-dates-translate-friday
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:today
+    prompt:
+      source_text: Hôm nay là thứ Sáu.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Today is Friday.
+        - "Today's Friday."
+        - "It's Friday today."
+        - It is Friday today.
+        - "It's Friday."
+        - It is Friday.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Today is on Friday.
+        feedback_vi: Câu "hôm nay là…" không cần on - Today is Friday.
+        error_tag: preposition_time
+      - answer: Today is Thursday.
+        feedback_vi: Thursday là thứ Năm. Thứ Sáu là Friday.
+        error_tag: day_name
+      - answer: Today is Saturday.
+        feedback_vi: Saturday là thứ Bảy. Thứ Sáu là Friday.
+        error_tag: day_name
+      - answer: Today Friday.
+        feedback_vi: Thiếu is - Today is Friday.
+        error_tag: missing_be
+    explanation:
+      vi: Thứ Sáu là Friday. Câu cần động từ be (Today is…), và không dùng on vì Friday ở đây là thông tin, không phải thời điểm diễn ra việc gì.
+    display_answer: Today is Friday.
+
+  # ---------------- application ----------------
+  - key: en:exercise:days-dates-mcq-meeting
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:on-in-at
+    prompt:
+      stem: "Bạn báo lịch họp: thứ Hai, ngày 5 tháng 5, lúc 9 giờ sáng. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: e3t, text: "The meeting is on Monday, May 5th, at 9 a.m.", lang: en }
+        - { id: h7q, text: "The meeting is in Monday, May 5th, at 9 a.m.", lang: en }
+        - { id: y2s, text: "The meeting is on Monday, in May 5th, at 9 a.m.", lang: en }
+        - { id: n4k, text: "The meeting is at Monday, May 5th, in 9 a.m.", lang: en }
+    answer:
+      correct_option_id: e3t
+    explanation:
+      vi: Thứ và ngày cụ thể đi với on (on Monday, May 5th), giờ đi với at (at 9 a.m.). In chỉ dùng khi có tháng mà không có ngày.
+    display_answer: "The meeting is on Monday, May 5th, at 9 a.m."
+
+  - key: en:exercise:days-dates-translate-birthday-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:birthday
+    prompt:
+      source_text: My birthday is on March 3rd.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sinh nhật tôi vào ngày 3 tháng 3.
+        - Sinh nhật tôi là ngày 3 tháng 3.
+        - Sinh nhật của tôi vào ngày 3 tháng 3.
+        - Sinh nhật của tôi là ngày 3 tháng 3.
+        - Sinh nhật mình vào ngày 3 tháng 3.
+        - Sinh nhật mình là ngày 3 tháng 3.
+        - Sinh nhật tôi vào ngày mùng 3 tháng 3.
+        - Sinh nhật tôi là ngày mùng 3 tháng 3.
+        - Sinh nhật tôi vào ngày 3/3.
+        - Sinh nhật tôi là ngày 3/3.
+        - Sinh nhật tôi vào mùng 3 tháng 3.
+        - Sinh nhật tôi vào ngày ba tháng ba.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: March là tháng Ba, 3rd (third) là ngày 3. Tiếng Anh dùng on trước ngày cụ thể; tiếng Việt dịch tự nhiên là "vào ngày" hoặc "là ngày".
+    display_answer: Sinh nhật tôi vào ngày 3 tháng 3.
+
+  - key: en:exercise:days-dates-translate-december
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:months
+    prompt:
+      source_text: Sinh nhật tôi vào tháng Mười Hai.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My birthday is in December.
+        - "My birthday's in December."
+        - My birthday is in December too.
+        - "My birthday's in December too."
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My birthday is on December.
+        feedback_vi: Chỉ có tháng thì dùng in - in December.
+        error_tag: preposition_time
+      - answer: My birthday is at December.
+        feedback_vi: At dùng cho giờ. Tháng dùng in - in December.
+        error_tag: preposition_time
+      - answer: My birthday in December.
+        feedback_vi: Thiếu is - My birthday is in December.
+        error_tag: missing_be
+      - answer: My birthday is in month twelve.
+        feedback_vi: Tháng trong tiếng Anh có tên riêng - tháng Mười Hai là December.
+        error_tag: month_name
+      - answer: My birthday is in November.
+        feedback_vi: November là tháng Mười Một. Tháng Mười Hai là December.
+        error_tag: month_name
+    explanation:
+      vi: Tháng Mười Hai là December. Chỉ có tháng, không có ngày, nên dùng in; câu vẫn cần is như mọi câu "là".
+    display_answer: My birthday is in December.
+
+  - key: en:exercise:days-dates-order-class
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:days-of-week
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi có lớp tiếng Anh vào thứ Ba và thứ Năm.\""
+      tokens:
+        - { id: c-thursday, text: Thursday }
+        - { id: c-in, text: in }
+        - { id: c-class, text: class }
+        - { id: c-i, text: I }
+        - { id: c-and, text: and }
+        - { id: c-on, text: "on" }
+        - { id: c-english, text: English }
+        - { id: c-tuesday, text: Tuesday }
+        - { id: c-have, text: have }
+        - { id: c-at, text: at }
+    answer:
+      orders:
+        - [c-i, c-have, c-english, c-class, c-on, c-tuesday, c-and, c-thursday]
+        - [c-i, c-have, c-english, c-class, c-on, c-thursday, c-and, c-tuesday]
+    explanation:
+      vi: Thứ Ba là Tuesday, thứ Năm là Thursday. Thứ trong tuần đi với on, và chỉ cần một on cho cả hai ngày.
+    display_answer: I have English class on Tuesday and Thursday.

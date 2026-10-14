@@ -1,0 +1,364 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:i-am-student
+order_index: 2
+level: topik1
+title:
+  vi: 저는 학생이에요 - Tôi là…
+objectives:
+  - vi: Nói “Tôi là + nghề” bằng 저는 N이에요/예요.
+  - vi: Chọn đúng 은/는 và 이에요/예요 theo patchim của âm tiết cuối.
+  - vi: Gọi tên sáu nghề - 학생, 선생님, 회사원, 의사, 간호사, 요리사.
+estimated_minutes: 14
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ko:lesson:greetings-basic]
+items:
+  - item: ko:item:jeo-na
+  - item: ko:item:topic-eun-neun
+  - item: ko:item:copula-ieyo-yeyo
+  - item: ko:item:haksaeng
+    role: reuse
+  - item: ko:item:seonsaengnim
+  - item: ko:item:hoesawon
+  - item: ko:item:uisa
+    role: reuse
+  - item: ko:item:ganhosa
+  - item: ko:item:yorisa
+  - item: ko:item:annyeonghaseyo
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự giới thiệu nghề của mình, ví dụ 저는 학생이에요 (Tôi là học sinh), 저는 의사예요 (Tôi là bác sĩ), với đúng trợ từ và đuôi câu.
+  - type: explain
+    text:
+      vi: Câu “Tôi là học sinh” tiếng Hàn có thứ tự 저 + 는 + 학생 + 이에요 - tức “tôi + thì + học sinh + là”. Chữ “là” đứng cuối câu và dính liền vào danh từ, khác hẳn tiếng Việt.
+  - type: explain
+    text:
+      vi: Hai chỗ đổi dạng theo patchim (phụ âm cuối) của âm tiết đứng ngay trước. Có patchim - 은 và 이에요 (선생님은, 학생이에요); không có patchim - 는 và 예요 (저는, 의사예요).
+  - type: explain
+    text:
+      vi: 저 là “tôi” khiêm nhường, dùng khi nói lịch sự với người lạ hay người lớn. 나 cũng là “tôi/tớ” nhưng thân mật, chỉ dùng với bạn thân hoặc người nhỏ tuổi hơn.
+  - type: deep_explain
+    text:
+      vi: 은/는 đánh dấu “điều đang nói tới”, gần “thì/còn” của tiếng Việt (저는… - còn tôi thì…). Trong lối nói trang trọng, bạn dùng N입니다 cho mọi danh từ, không cần xét patchim - 저는 학생입니다, 저는 의사입니다. Khi nói chuyện, người Hàn hay rút 저는 thành 전, hoặc bỏ hẳn chủ ngữ nếu đã rõ - 학생이에요.
+  - type: example
+    target: 안녕하세요? 저는 학생이에요.
+    target_lang: ko
+    translation:
+      vi: Xin chào. Tôi là học sinh.
+    note:
+      vi: 생 có patchim ㅇ nên dùng 이에요.
+  - type: example
+    target: 저는 의사예요.
+    target_lang: ko
+    translation:
+      vi: Tôi là bác sĩ.
+    note:
+      vi: 사 không có patchim nên dùng 예요.
+  - type: example
+    target: 선생님은 한국 사람이에요.
+    target_lang: ko
+    translation:
+      vi: Thầy giáo là người Hàn Quốc.
+    note:
+      vi: 님 có patchim ㅁ nên dùng 은.
+  - type: example
+    target: 저는 요리사입니다.
+    target_lang: ko
+    translation:
+      vi: Tôi là đầu bếp.
+    note:
+      vi: Dạng trang trọng 입니다 không đổi theo patchim.
+  - type: common_mistake
+    wrong: 저는 의사이에요.
+    right: 저는 의사예요.
+    target_lang: ko
+    note:
+      vi: 의사 kết thúc bằng nguyên âm (không có patchim) nên dùng 예요. 이에요 chỉ dùng sau danh từ có patchim như 학생.
+  - type: common_mistake
+    wrong: 저는 학생예요.
+    right: 저는 학생이에요.
+    target_lang: ko
+    note:
+      vi: 생 có patchim ㅇ nên phải dùng 이에요. Đọc to sẽ thấy 이에요 giúp nối âm tự nhiên - [학쌩이에요].
+  - type: common_mistake
+    wrong: 저은 학생이에요.
+    right: 저는 학생이에요.
+    target_lang: ko
+    note:
+      vi: 저 không có patchim nên đi với 는. Bạn xét patchim của từ đứng trước trợ từ, không xét từ đứng sau.
+  - type: summary
+    points:
+      - vi: 저는 + N + 이에요/예요 = Tôi là N.
+      - vi: Có patchim → 은, 이에요 (학생이에요); không patchim → 는, 예요 (의사예요).
+      - vi: Trang trọng - N입니다 với mọi danh từ.
+      - vi: 저 là “tôi” lịch sự; 나 chỉ dùng với người thân thiết.
+      - vi: 학생 học sinh · 선생님 giáo viên · 회사원 nhân viên công ty · 의사 bác sĩ · 간호사 y tá · 요리사 đầu bếp.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:iam-mcq-yeyo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:copula-ieyo-yeyo
+    prompt:
+      stem: "Chọn đuôi đúng cho chỗ trống: 저는 의사___."
+      stem_lang: vi
+      options:
+        - { id: v3c, text: 예요, lang: ko }
+        - { id: a8n, text: 이에요, lang: ko }
+        - { id: l5q, text: 이예요, lang: ko }
+        - { id: t1g, text: 은, lang: ko }
+    answer:
+      correct_option_id: v3c
+    explanation:
+      vi: 의사 kết thúc bằng 사 - không có patchim, nên dùng 예요. 이에요 dành cho danh từ có patchim; 이예요 là cách viết sai.
+    display_answer: 예요
+
+  - key: ko:exercise:iam-mcq-eun
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:topic-eun-neun
+    prompt:
+      stem: "Chọn trợ từ đúng: 선생님___ 한국 사람이에요."
+      stem_lang: vi
+      options:
+        - { id: h4e, text: 은, lang: ko }
+        - { id: p9x, text: 는, lang: ko }
+        - { id: c2j, text: 를, lang: ko }
+        - { id: y6b, text: 예요, lang: ko }
+    answer:
+      correct_option_id: h4e
+    explanation:
+      vi: 님 có patchim ㅁ nên trợ từ chủ đề là 은 - 선생님은 (đọc [선생니믄]). 는 chỉ dùng sau âm tiết không có patchim như 저는.
+    display_answer: 은
+
+  - key: ko:exercise:iam-listen-office
+    type: listen
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:hoesawon
+    prompt:
+      audio_asset_id: null
+      fallback_text: 저는 회사원이에요.
+      options:
+        - { id: o7m, text: Tôi là nhân viên công ty., lang: vi }
+        - { id: i3w, text: Tôi là bác sĩ., lang: vi }
+        - { id: g8r, text: Tôi là đầu bếp., lang: vi }
+        - { id: s5d, text: Tôi là y tá., lang: vi }
+    answer:
+      correct_option_id: o7m
+    explanation:
+      vi: 회사원 là nhân viên công ty (회사 = công ty, 원 = người làm). Bác sĩ là 의사, đầu bếp là 요리사, y tá là 간호사.
+    display_answer: Tôi là nhân viên công ty.
+
+  - key: ko:exercise:iam-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:copula-ieyo-yeyo
+    prompt:
+      template: "저{{b1}} 학생{{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi là học sinh."
+        - 저 không có patchim; 생 có patchim ㅇ.
+    answer:
+      blanks:
+        b1: [는]
+        b2: [이에요, 입니다]
+    known_wrong:
+      - answer: 은
+        feedback_vi: 저 không có patchim nên đi với 는 - 저는.
+        error_tag: particle_eun_neun
+      - answer: 예요
+        feedback_vi: 생 có patchim ㅇ nên dùng 이에요 - 학생이에요.
+        error_tag: copula_form
+      - answer: 이예요
+        feedback_vi: Không có dạng 이예요. Sau patchim viết 이에요.
+        error_tag: copula_form
+    explanation:
+      vi: 저 không có patchim → 는; 학생 kết thúc bằng 생 có patchim ㅇ → 이에요. Dạng trang trọng 학생입니다 cũng đúng.
+    display_answer: 저는 학생이에요.
+
+  - key: ko:exercise:iam-order-nurse
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ganhosa
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: “Tôi là y tá.”"
+      tokens:
+        - { id: n1, text: 예요 }
+        - { id: n2, text: 은 }
+        - { id: n3, text: 간호사 }
+        - { id: n4, text: 이에요 }
+        - { id: n5, text: 저 }
+        - { id: n6, text: 는 }
+    answer:
+      orders:
+        - [n5, n6, n3, n1]
+    explanation:
+      vi: Thứ tự là 저 + 는 + 간호사 + 예요. 저 không có patchim nên dùng 는; 간호사 kết thúc bằng 사 (không patchim) nên dùng 예요. “Là” luôn đứng cuối câu.
+    display_answer: 저는 간호사예요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:iam-fill-jobs
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:yorisa
+    prompt:
+      template: "Đầu bếp - 요리사{{b1}}. Nhân viên công ty - 회사원{{b2}}. Giáo viên - 선생님{{b3}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [예요, 입니다]
+        b2: [이에요, 입니다]
+        b3: [이에요, 입니다]
+    known_wrong:
+      - answer: 이예요
+        feedback_vi: Không có dạng 이예요. Sau patchim viết 이에요, sau nguyên âm viết 예요.
+        error_tag: copula_form
+      - answer: 에요
+        feedback_vi: Sau danh từ, viết 이에요 (có patchim) hoặc 예요 (không patchim), không viết 에요.
+        error_tag: copula_form
+    explanation:
+      vi: 요리사 kết thúc bằng 사 (không patchim) → 예요; 회사원 có patchim ㄴ, 선생님 có patchim ㅁ → 이에요. Dạng trang trọng 입니다 dùng được cho cả ba.
+    display_answer: 요리사예요 / 회사원이에요 / 선생님이에요
+
+  - key: ko:exercise:iam-write-doctor
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:uisa
+    prompt:
+      source_text: Tôi là bác sĩ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 저는 의사예요.
+        - 전 의사예요.
+        - 의사예요.
+        - 저는 의사입니다.
+        - 전 의사입니다.
+        - 의사입니다.
+    known_wrong:
+      - answer: 저는 의사이에요.
+        feedback_vi: 의사 không có patchim nên dùng 예요 - 저는 의사예요.
+        error_tag: copula_form
+      - answer: 저는 의사에요.
+        feedback_vi: Viết đúng là 의사예요 (예 có nét ㅖ), dù khi nói nghe gần [에요].
+        error_tag: copula_form
+      - answer: 저은 의사예요.
+        feedback_vi: 저 không có patchim nên đi với 는 - 저는.
+        error_tag: particle_eun_neun
+      - answer: 저는 의사.
+        feedback_vi: Thiếu đuôi “là” - cần 예요 ở cuối - 저는 의사예요.
+        error_tag: missing_copula
+      - answer: jeoneun uisayeyo
+        feedback_vi: Hãy gõ bằng chữ Hangul (저는 의사예요), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: 저는 (tôi thì) + 의사 (bác sĩ) + 예요 (là). 의사 không có patchim nên dùng 예요; có thể rút 저는 thành 전 hoặc bỏ hẳn khi đã rõ.
+    display_answer: 저는 의사예요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:iam-translate-nurse-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:ganhosa
+    prompt:
+      source_text: 안녕하세요? 저는 간호사예요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin chào. Tôi là y tá.
+        - Xin chào, tôi là y tá.
+        - Chào bạn. Tôi là y tá.
+        - Xin chào. Tôi là điều dưỡng.
+        - Xin chào, tôi là điều dưỡng.
+        - Xin chào. Tôi làm y tá.
+        - Xin chào. Mình là y tá.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: 안녕하세요 là “xin chào”; 저는 간호사예요 là “tôi là y tá” - 간호사 nghĩa là y tá, điều dưỡng.
+    display_answer: Xin chào. Tôi là y tá.
+
+  - key: ko:exercise:iam-mcq-professor
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:jeo-na
+    prompt:
+      stem: Lần đầu gặp giáo sư người Hàn, bạn muốn nói “Em là học sinh”. Câu nào đúng và lịch sự nhất?
+      stem_lang: vi
+      options:
+        - { id: k7u, text: 저는 학생이에요., lang: ko }
+        - { id: e2z, text: 나는 학생이에요., lang: ko }
+        - { id: b9f, text: 저는 학생예요., lang: ko }
+        - { id: m4a, text: 저은 학생이에요., lang: ko }
+    answer:
+      correct_option_id: k7u
+    explanation:
+      vi: Với người lớn phải dùng 저 (khiêm nhường), không dùng 나 (thân mật). 학생 có patchim nên dùng 이에요, và 저 không có patchim nên dùng 는.
+    display_answer: 저는 학생이에요.
+
+  - key: ko:exercise:iam-write-office-intro
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hoesawon
+    prompt:
+      source_text: Xin chào, tôi là nhân viên công ty.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 안녕하세요? 저는 회사원이에요.
+        - 안녕하세요? 전 회사원이에요.
+        - 안녕하세요? 회사원이에요.
+        - 안녕하세요? 저는 회사원입니다.
+        - 안녕하세요? 전 회사원입니다.
+        - 안녕하세요? 회사원입니다.
+    known_wrong:
+      - answer: 안녕하세요? 저는 회사원예요.
+        feedback_vi: 원 có patchim ㄴ nên dùng 이에요 - 회사원이에요.
+        error_tag: copula_form
+      - answer: 안녕하세요? 저은 회사원이에요.
+        feedback_vi: 저 không có patchim nên đi với 는 - 저는.
+        error_tag: particle_eun_neun
+      - answer: 안녕하세요? 나는 회사원이에요.
+        feedback_vi: Khi giới thiệu lịch sự, dùng 저 (khiêm nhường), không dùng 나 (thân mật).
+        error_tag: pronoun_politeness
+      - answer: 안녕하세요? 저는 회사원.
+        feedback_vi: Thiếu đuôi “là” - 저는 회사원이에요.
+        error_tag: missing_copula
+    explanation:
+      vi: 안녕하세요 + 저는 + 회사원 + 이에요. 회사원 kết thúc bằng patchim ㄴ nên dùng 이에요; khi giới thiệu với người lạ, dùng 저 chứ không dùng 나.
+    display_answer: 안녕하세요? 저는 회사원이에요.

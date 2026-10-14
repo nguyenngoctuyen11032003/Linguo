@@ -1,0 +1,10 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:unit:greetings-intro
+order_index: 3
+title:
+  vi: Chào hỏi & giới thiệu bản thân

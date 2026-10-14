@@ -1,0 +1,366 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:location-going
+order_index: 2
+level: topik1
+title:
+  vi: Ở đâu? Đi đâu? - 에 있어요, 에 가요
+objectives:
+  - vi: Nói vị trí bằng N에 있어요 và các từ 위, 아래, 앞, 뒤, 옆, 안.
+  - vi: Nói nơi mình đi đến bằng N에 가요 / N에 와요.
+  - vi: Hỏi "ở đâu?", "đi đâu?" bằng 어디.
+estimated_minutes: 13
+skills: [grammar, vocabulary, listening, speaking]
+prerequisites: [ko:lesson:places-existence]
+items:
+  - item: ko:item:gram-e-location
+  - item: ko:item:pos-wi
+  - item: ko:item:pos-arae
+  - item: ko:item:pos-ap
+  - item: ko:item:pos-dwi
+  - item: ko:item:pos-yeop
+  - item: ko:item:pos-an
+  - item: ko:item:q-eodi
+  - item: ko:item:gram-e-destination
+  - item: ko:item:verb-gada
+  - item: ko:item:verb-oda
+  - item: ko:item:gram-itda-eopda
+    role: reuse
+  - item: ko:item:place-eunhaeng
+    role: reuse
+  - item: ko:item:place-byeongwon
+    role: reuse
+  - item: ko:item:place-doseogwan
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Ngân hàng ở bên cạnh bệnh viện", "Tôi đi thư viện" và hỏi được "Thư viện ở đâu?" bằng tiếng Hàn.
+  - type: explain
+    text:
+      vi: Tiếng Việt đặt "ở" trước nơi chốn (ở nhà), còn tiếng Hàn đặt 에 sau nơi chốn - 집에. Ghép với 있어요 thành "ở đâu đó" - 친구가 집에 있어요 (bạn tôi ở nhà).
+  - type: explain
+    text:
+      vi: Từ chỉ vị trí đứng sau danh từ, ngược với tiếng Việt - "trên bàn" là 책상 위, "trước trường" là 학교 앞. Sau đó mới thêm 에 - 학교 앞에 있어요.
+  - type: explain
+    text:
+      vi: Với động từ di chuyển, 에 chỉ nơi bạn đi tới - 학교에 가요 (đi đến trường), 집에 와요 (đến nhà). 가요 là đi ra xa người nói, 와요 là đi về phía người nói.
+  - type: deep_explain
+    text:
+      vi: Có hai cách nói cùng một vị trí - 편의점이 은행 옆에 있어요 là "cửa hàng tiện lợi ở cạnh ngân hàng", còn 은행 옆에 편의점이 있어요 là "cạnh ngân hàng có cửa hàng tiện lợi". Hỏi "ở đâu?" thì thay nơi chốn bằng 어디 - 은행이 어디에 있어요? Khi nói nhanh, người Hàn hay rút 어디에 thành 어디, nhưng bạn vẫn nên viết đủ.
+  - type: example
+    target: 은행이 병원 옆에 있어요.
+    target_lang: ko
+    translation:
+      vi: Ngân hàng ở bên cạnh bệnh viện.
+    note:
+      vi: 병원 옆 = "cạnh bệnh viện" - từ vị trí 옆 đứng sau danh từ.
+  - type: example
+    target: 가방 안에 책이 있어요.
+    target_lang: ko
+    translation:
+      vi: Trong cặp có sách.
+    note:
+      vi: 안에 nối âm thành [아내].
+  - type: example
+    target: 도서관이 어디에 있어요? - 학교 뒤에 있어요.
+    target_lang: ko
+    translation:
+      vi: Thư viện ở đâu? - Ở sau trường học.
+    note:
+      vi: Câu trả lời bỏ chủ ngữ vì người nghe đã biết đang nói về thư viện.
+  - type: example
+    target: 저는 회사에 가요. 친구가 집에 와요.
+    target_lang: ko
+    translation:
+      vi: Tôi đi đến công ty. Bạn tôi đến nhà (tôi).
+    note:
+      vi: 가요 là đi xa khỏi người nói, 와요 là đến chỗ người nói.
+  - type: common_mistake
+    wrong: 위 책상에 있어요.
+    right: 책상 위에 있어요.
+    target_lang: ko
+    note:
+      vi: Người Việt hay giữ thứ tự "trên bàn". Trong tiếng Hàn, danh từ đứng trước, từ vị trí đứng sau rồi mới đến 에.
+  - type: common_mistake
+    wrong: 저는 가요 학교에.
+    right: 저는 학교에 가요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói "tôi đi đến trường" (động từ ở giữa), nhưng tiếng Hàn luôn đặt động từ ở cuối câu.
+  - type: common_mistake
+    wrong: 친구가 우리 집에 가요.
+    right: 친구가 우리 집에 와요.
+    target_lang: ko
+    note:
+      vi: Bạn đến nhà mình (chỗ người nói) thì dùng 와요. 가요 là đi đến một nơi khác, xa người nói.
+  - type: summary
+    points:
+      - vi: N에 있어요 = ở N; 에 đứng sau nơi chốn, không đổi theo patchim.
+      - vi: Danh từ + từ vị trí + 에 - 책상 위에, 학교 앞에, 가방 안에.
+      - vi: 위 trên · 아래 dưới · 앞 trước · 뒤 sau · 옆 bên cạnh · 안 bên trong.
+      - vi: N에 가요 = đi đến N; N에 와요 = đến N (về phía người nói).
+      - vi: Hỏi vị trí - 어디에 있어요?; hỏi nơi đến - 어디에 가요?
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:dl-loc-mcq-on-desk
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:pos-wi
+    prompt:
+      stem: "\"Trên bàn\" là 책상 ___에. Chọn từ đúng."
+      stem_lang: vi
+      options:
+        - { id: q8w, text: 위, lang: ko }
+        - { id: l3b, text: 아래, lang: ko }
+        - { id: v6m, text: 앞, lang: ko }
+        - { id: s1h, text: 뒤, lang: ko }
+    answer:
+      correct_option_id: q8w
+    explanation:
+      vi: 위 là "trên". 아래 là "dưới", 앞 là "trước", 뒤 là "sau"; tất cả đều đứng sau danh từ - 책상 위에.
+    display_answer: 위
+
+  - key: ko:exercise:dl-loc-mcq-an-inside
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:pos-an
+    prompt:
+      stem: Trong câu 가방 안에 책이 있어요, từ 안 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: j2f, text: bên trong, lang: vi }
+        - { id: x9c, text: không, lang: vi }
+        - { id: o4p, text: bên cạnh, lang: vi }
+        - { id: y7t, text: phía trên, lang: vi }
+    answer:
+      correct_option_id: j2f
+    explanation:
+      vi: 안 đứng sau danh từ 가방 và có 에 đi kèm, nên là "bên trong". 안 nghĩa "không" thì đứng ngay trước động từ; "bên cạnh" là 옆, "phía trên" là 위.
+    display_answer: bên trong
+
+  - key: ko:exercise:dl-loc-listen-next-to
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:pos-yeop
+    prompt:
+      audio_asset_id: null
+      fallback_text: 은행이 병원 옆에 있어요.
+      options:
+        - { id: a5z, text: Ngân hàng ở bên cạnh bệnh viện., lang: vi }
+        - { id: n2u, text: Bệnh viện ở bên cạnh ngân hàng., lang: vi }
+        - { id: e8k, text: Ngân hàng ở phía sau bệnh viện., lang: vi }
+        - { id: i6r, text: Ngân hàng ở trước bệnh viện., lang: vi }
+    answer:
+      correct_option_id: a5z
+    explanation:
+      vi: 은행이 (ngân hàng) là thứ được nói vị trí, 병원 옆에 là "cạnh bệnh viện". Phía sau là 뒤, phía trước là 앞.
+    display_answer: Ngân hàng ở bên cạnh bệnh viện.
+
+  - key: ko:exercise:dl-loc-fill-go-library
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:gram-e-destination
+    prompt:
+      template: "저는 도서관{{b1}} 가요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Tôi đi đến thư viện."
+        - "Gợi ý: nơi bạn đi tới dùng trợ từ một chữ, không đổi theo patchim."
+    answer:
+      blanks:
+        b1: [에]
+    known_wrong:
+      - answer: 에서
+        feedback_vi: 에서 chỉ nơi bạn làm việc gì đó. Nơi bạn đi tới với 가요 dùng 에.
+        error_tag: particle_e_eseo
+      - answer: 이
+        feedback_vi: 이/가 đánh dấu chủ ngữ. Nơi bạn đi tới cần 에 - 도서관에 가요.
+        error_tag: particle_e_destination
+      - answer: 을
+        feedback_vi: Với 가요, nơi đến dùng 에, không dùng 을/를.
+        error_tag: particle_e_destination
+    explanation:
+      vi: 가요 là động từ di chuyển, nên nơi đến được đánh dấu bằng 에. 에 không đổi theo patchim - 도서관에, 학교에 đều giống nhau.
+    display_answer: 저는 도서관에 가요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:dl-loc-fill-come
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:verb-oda
+    prompt:
+      template: "Bạn tôi đến nhà (tôi). - 친구가 집에 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [와요]
+    known_wrong:
+      - answer: 가요
+        feedback_vi: Bạn đến chỗ người nói thì dùng 와요; 가요 là đi ra xa người nói.
+        error_tag: verb_ga_wa
+      - answer: 오요
+        feedback_vi: 오 + 아요 gộp lại thành 와요, không viết 오요.
+        error_tag: verb_conjugation
+      - answer: 오다
+        feedback_vi: 오다 là dạng từ điển. Khi nói chuyện lịch sự hãy dùng 와요.
+        error_tag: dictionary_form
+    explanation:
+      vi: Bạn đến nhà mình tức là đi về phía người nói, nên dùng 오다. Dạng lịch sự của 오다 là 와요 vì 오 và 아요 gộp thành 와.
+    display_answer: 친구가 집에 와요.
+
+  - key: ko:exercise:dl-loc-translate-go-bank
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:verb-gada
+    prompt:
+      source_text: Tôi đi ngân hàng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 은행에 가요.
+        - 저는 은행에 가요.
+        - 전 은행에 가요.
+        - 제가 은행에 가요.
+    known_wrong:
+      - answer: 저는 가요 은행에.
+        feedback_vi: Động từ luôn đứng cuối câu tiếng Hàn - 저는 은행에 가요.
+        error_tag: word_order
+      - answer: 저는 은행에서 가요.
+        feedback_vi: 에서 chỉ nơi làm việc gì đó. Nơi đi tới dùng 에 - 은행에 가요.
+        error_tag: particle_e_eseo
+      - answer: 저는 은행에 가다.
+        feedback_vi: 가다 là dạng từ điển. Khi nói chuyện lịch sự hãy dùng 가요.
+        error_tag: dictionary_form
+      - answer: eunhaenge gayo
+        feedback_vi: Hãy gõ bằng chữ Hangul (은행에 가요), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Nơi đến 은행 + 에, động từ 가요 đứng cuối. "Tôi" có thể là 저는, 전 (rút gọn) hoặc bỏ hẳn khi đã rõ.
+    display_answer: 저는 은행에 가요.
+
+  - key: ko:exercise:dl-loc-translate-where-library
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:q-eodi
+    prompt:
+      source_text: Thư viện ở đâu?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 도서관이 어디에 있어요?
+        - 도서관은 어디에 있어요?
+        - 도서관이 어디 있어요?
+        - 도서관은 어디 있어요?
+    known_wrong:
+      - answer: 도서관가 어디에 있어요?
+        feedback_vi: 관 có patchim ㄴ nên dùng 이 - 도서관이.
+        error_tag: particle_i_ga
+      - answer: 도서관이 어디에서 있어요?
+        feedback_vi: Với 있어요, vị trí dùng 에, không dùng 에서.
+        error_tag: particle_e_eseo
+      - answer: 도서관이 있어요 어디에?
+        feedback_vi: Động từ 있어요 phải đứng cuối câu - 도서관이 어디에 있어요?
+        error_tag: word_order
+    explanation:
+      vi: Thư viện 도서관 + 이 (vì có patchim), "ở đâu" là 어디에 있어요 với động từ đứng cuối. Khi nói nhanh có thể bỏ 에 - 어디 있어요?
+    display_answer: 도서관이 어디에 있어요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:dl-loc-translate-behind-bank
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:pos-dwi
+    prompt:
+      source_text: 은행 뒤에 편의점이 있어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sau ngân hàng có cửa hàng tiện lợi.
+        - Phía sau ngân hàng có cửa hàng tiện lợi.
+        - Đằng sau ngân hàng có cửa hàng tiện lợi.
+        - Cửa hàng tiện lợi ở sau ngân hàng.
+        - Cửa hàng tiện lợi ở phía sau ngân hàng.
+        - Cửa hàng tiện lợi ở đằng sau ngân hàng.
+        - Có cửa hàng tiện lợi ở sau ngân hàng.
+        - Có cửa hàng tiện lợi ở phía sau ngân hàng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trước ngân hàng có cửa hàng tiện lợi.
+        feedback_vi: 뒤 là "sau"; "trước" là 앞.
+        error_tag: position_word
+      - answer: Sau cửa hàng tiện lợi có ngân hàng.
+        feedback_vi: Danh từ đứng trước 뒤 là mốc - 은행 뒤 là "sau ngân hàng".
+        error_tag: word_order
+    explanation:
+      vi: 은행 뒤에 là "ở sau ngân hàng" - từ vị trí 뒤 đứng sau danh từ mốc 은행. 편의점이 있어요 là "có cửa hàng tiện lợi".
+    display_answer: Sau ngân hàng có cửa hàng tiện lợi.
+
+  - key: ko:exercise:dl-loc-mcq-where-going
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-e-destination
+    prompt:
+      stem: Bạn đang trên đường đến thư viện thì gặp người quen. Người đó hỏi 어디에 가요? Bạn trả lời thế nào?
+      stem_lang: vi
+      options:
+        - { id: d4g, text: 도서관에 가요., lang: ko }
+        - { id: m1s, text: 도서관에 와요., lang: ko }
+        - { id: k7x, text: 도서관이 가요., lang: ko }
+        - { id: w3e, text: 도서관에 있어요., lang: ko }
+    answer:
+      correct_option_id: d4g
+    explanation:
+      vi: Bạn đang đi xa khỏi chỗ đang đứng để tới thư viện, nên dùng 에 + 가요. 와요 là đến chỗ người nói, 도서관이 biến thư viện thành chủ ngữ, còn 도서관에 있어요 là "đang ở thư viện".
+    display_answer: 도서관에 가요.
+
+  - key: ko:exercise:dl-loc-order-next-to-school
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-e-location
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Bệnh viện ở bên cạnh trường học.\""
+      tokens:
+        - { id: t-iss, text: 있어요 }
+        - { id: t-yeop, text: 옆에 }
+        - { id: t-ap, text: 앞에 }
+        - { id: t-byeongga, text: 병원가 }
+        - { id: t-hakgyo, text: 학교 }
+        - { id: t-byeongi, text: 병원이 }
+    answer:
+      orders:
+        - [t-byeongi, t-hakgyo, t-yeop, t-iss]
+        - [t-hakgyo, t-yeop, t-byeongi, t-iss]
+    explanation:
+      vi: 병원 có patchim ㄴ nên dùng 이; "bên cạnh trường" là 학교 옆에 (danh từ trước, từ vị trí sau). Hai cụm này có thể đổi chỗ, nhưng 있어요 luôn đứng cuối.
+    display_answer: 병원이 학교 옆에 있어요.

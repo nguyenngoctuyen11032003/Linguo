@@ -1,0 +1,356 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:places-existence
+order_index: 1
+level: topik1
+title:
+  vi: Có và không có - những nơi quen thuộc
+objectives:
+  - vi: Nói "có" và "không có" bằng N이/가 있어요 và N이/가 없어요.
+  - vi: Chọn đúng 이 hoặc 가 theo patchim của danh từ.
+  - vi: Gọi tên tám nơi quen thuộc - 집, 학교, 회사, 도서관, 은행, 병원, 시장, 편의점.
+estimated_minutes: 12
+skills: [grammar, vocabulary, reading, listening]
+prerequisites: [ko:lesson:numbers-time-review]
+items:
+  - item: ko:item:gram-itda-eopda
+  - item: ko:item:place-jip
+  - item: ko:item:place-hakgyo
+  - item: ko:item:place-hoesa
+  - item: ko:item:place-doseogwan
+  - item: ko:item:place-eunhaeng
+  - item: ko:item:place-byeongwon
+  - item: ko:item:place-sijang
+  - item: ko:item:place-pyeonuijeom
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi và trả lời được "Có ngân hàng không?", "Không có cửa hàng tiện lợi" bằng tiếng Hàn, với đúng trợ từ 이/가.
+  - type: explain
+    text:
+      vi: 있어요 nghĩa là "có", 없어요 nghĩa là "không có". Tiếng Việt chỉ cần thêm "không" trước "có", còn tiếng Hàn dùng hẳn một từ riêng - 없어요.
+  - type: explain
+    text:
+      vi: Thứ "có" hay "không có" đi kèm trợ từ 이 hoặc 가, đặt sau danh từ. Danh từ có patchim (phụ âm cuối) thì dùng 이 - 은행이; không có patchim thì dùng 가 - 학교가.
+  - type: explain
+    text:
+      vi: Muốn hỏi, bạn giữ nguyên câu và lên giọng ở cuối - 은행이 있어요? Trả lời "có" là 네, 있어요; "không có" là 아니요, 없어요.
+  - type: deep_explain
+    text:
+      vi: Một câu như 은행이 있어요 có thể là "có ngân hàng" (tồn tại) hoặc "tôi có…" (sở hữu), tuỳ ngữ cảnh - giống chữ "có" trong tiếng Việt. Chủ ngữ "tôi" thường được bỏ khi đã rõ, như 시간이 없어요 (tôi không có thời gian). Bạn sẽ thấy 은/는 trong 저는 - đó là trợ từ chủ đề; còn thứ được "có" hay "không có" thì đi với 이/가.
+  - type: example
+    target: 은행이 있어요.
+    target_lang: ko
+    translation:
+      vi: Có ngân hàng.
+    note:
+      vi: 행 có patchim ㅇ nên dùng 이.
+  - type: example
+    target: 편의점이 없어요.
+    target_lang: ko
+    translation:
+      vi: Không có cửa hàng tiện lợi.
+    note:
+      vi: 점 có patchim ㅁ nên dùng 이; "không có" là 없어요.
+  - type: example
+    target: 학교가 있어요? - 네, 있어요.
+    target_lang: ko
+    translation:
+      vi: Có trường học không? - Vâng, có.
+    note:
+      vi: 교 không có patchim nên dùng 가; câu hỏi chỉ cần lên giọng.
+  - type: example
+    target: 시간이 없어요.
+    target_lang: ko
+    translation:
+      vi: Tôi không có thời gian.
+    note:
+      vi: Chủ ngữ "tôi" được bỏ, như rất nhiều câu tiếng Hàn.
+  - type: common_mistake
+    wrong: 은행가 있어요.
+    right: 은행이 있어요.
+    target_lang: ko
+    note:
+      vi: 은행 kết thúc bằng patchim ㅇ, nên dùng 이. Người Việt hay nghĩ ㅇ "câm" nên chọn 가, nhưng ㅇ ở cuối âm tiết là âm "ng" thật sự.
+  - type: common_mistake
+    wrong: 병원이 안 있어요.
+    right: 병원이 없어요.
+    target_lang: ko
+    note:
+      vi: Dịch từng chữ "không có" thành 안 있어요 là sai. "Không có" luôn là 없어요.
+  - type: common_mistake
+    wrong: 회사이 있어요.
+    right: 회사가 있어요.
+    target_lang: ko
+    note:
+      vi: 사 không có patchim nên dùng 가. Hãy nhìn chữ cuối của danh từ trước khi chọn trợ từ.
+  - type: summary
+    points:
+      - vi: N이/가 있어요 = có N; N이/가 없어요 = không có N (không nói 안 있어요).
+      - vi: Có patchim + 이 (은행이, 편의점이); không có patchim + 가 (학교가, 회사가).
+      - vi: Câu hỏi giữ nguyên, lên giọng cuối câu - 은행이 있어요?
+      - vi: 집 nhà · 학교 trường · 회사 công ty · 도서관 thư viện · 은행 ngân hàng · 병원 bệnh viện · 시장 chợ · 편의점 cửa hàng tiện lợi.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:dl-exist-mcq-particle-bank
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:gram-itda-eopda
+    prompt:
+      stem: "Chọn trợ từ đúng cho chỗ trống: 은행___ 있어요."
+      stem_lang: vi
+      options:
+        - { id: r4k, text: 가, lang: ko }
+        - { id: m8t, text: 이, lang: ko }
+        - { id: a2w, text: 을, lang: ko }
+        - { id: z7q, text: 에서, lang: ko }
+    answer:
+      correct_option_id: m8t
+    explanation:
+      vi: 은행 kết thúc bằng patchim ㅇ (âm "ng"), nên dùng 이. 가 chỉ dùng sau danh từ không có patchim; 을 là trợ từ tân ngữ, không đi với 있어요.
+    display_answer: 이
+
+  - key: ko:exercise:dl-exist-listen-library
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:place-doseogwan
+    prompt:
+      audio_asset_id: null
+      fallback_text: 도서관이 없어요.
+      options:
+        - { id: k3v, text: Không có thư viện., lang: vi }
+        - { id: d9e, text: Có thư viện., lang: vi }
+        - { id: u5n, text: Không có bệnh viện., lang: vi }
+        - { id: p1c, text: Có ngân hàng., lang: vi }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: 도서관 là thư viện và 없어요 là "không có". Bệnh viện là 병원, ngân hàng là 은행; "có" sẽ là 있어요.
+    display_answer: Không có thư viện.
+
+  - key: ko:exercise:dl-exist-mcq-hospital
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:place-byeongwon
+    prompt:
+      stem: Từ nào nghĩa là "bệnh viện"?
+      stem_lang: vi
+      options:
+        - { id: h6s, text: 은행, lang: ko }
+        - { id: b2x, text: 병원, lang: ko }
+        - { id: f4j, text: 학교, lang: ko }
+        - { id: w8o, text: 편의점, lang: ko }
+    answer:
+      correct_option_id: b2x
+    explanation:
+      vi: 병원 đọc gần "biơng-uơn", gần âm Hán Việt "bệnh viện". 은행 là ngân hàng, 학교 là trường học, 편의점 là cửa hàng tiện lợi.
+    display_answer: 병원
+
+  - key: ko:exercise:dl-exist-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-itda-eopda
+    prompt:
+      template: "학교{{b1}} 있어요. 집{{b2}} 없어요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Có trường học. Không có nhà."
+        - "Gợi ý: 교 không có patchim; 집 có patchim ㅂ."
+    answer:
+      blanks:
+        b1: [가]
+        b2: [이]
+    known_wrong:
+      - answer: 는
+        feedback_vi: 는 là trợ từ chủ đề. Thứ "có" hay "không có" ở đây cần 이/가.
+        error_tag: particle_i_ga
+      - answer: 을
+        feedback_vi: 을/를 đánh dấu tân ngữ, không dùng với 있어요/없어요. Hãy dùng 이/가.
+        error_tag: particle_i_ga
+      - answer: 를
+        feedback_vi: 을/를 đánh dấu tân ngữ, không dùng với 있어요/없어요. Hãy dùng 이/가.
+        error_tag: particle_i_ga
+    explanation:
+      vi: 학교 kết thúc bằng 교 (không có patchim) nên dùng 가. 집 kết thúc bằng patchim ㅂ nên dùng 이.
+    display_answer: 학교가 있어요. 집이 없어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:dl-exist-translate-no-hospital
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-itda-eopda
+    prompt:
+      source_text: Không có bệnh viện.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 병원이 없어요.
+        - 병원은 없어요.
+        - 병원 없어요.
+    known_wrong:
+      - answer: 병원이 안 있어요.
+        feedback_vi: Cụm "không có" là 없어요, không ghép 안 với 있어요.
+        error_tag: negation_eopda
+      - answer: 병원가 없어요.
+        feedback_vi: 원 có patchim ㄴ nên dùng 이 - 병원이 없어요.
+        error_tag: particle_i_ga
+      - answer: 병원이 있어요.
+        feedback_vi: 있어요 là "có". "Không có" là 없어요.
+        error_tag: negation_eopda
+      - answer: byeongwoni eopseoyo
+        feedback_vi: Hãy gõ bằng chữ Hangul (병원이 없어요), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Bệnh viện là 병원; 원 có patchim nên thêm 이; "không có" dùng từ riêng 없어요. Khi nói nhanh, người Hàn có thể bỏ trợ từ - 병원 없어요.
+    display_answer: 병원이 없어요.
+
+  - key: ko:exercise:dl-exist-fill-store
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:place-pyeonuijeom
+    prompt:
+      template: "Không có cửa hàng tiện lợi. - 편의점{{b1}} {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [이]
+        b2: [없어요]
+    known_wrong:
+      - answer: 가
+        feedback_vi: 점 có patchim ㅁ nên dùng 이 - 편의점이.
+        error_tag: particle_i_ga
+      - answer: 안 있어요
+        feedback_vi: Cụm "không có" là 없어요, không nói 안 있어요.
+        error_tag: negation_eopda
+      - answer: 있어요
+        feedback_vi: 있어요 là "có"; câu này cần "không có" - 없어요.
+        error_tag: negation_eopda
+      - answer: 업어요
+        feedback_vi: Viết là 없어요 (patchim ㅄ), dù đọc là [업써요].
+        error_tag: spelling
+    explanation:
+      vi: 편의점 kết thúc bằng 점 có patchim ㅁ, nên dùng 이. "Không có" là 없어요, viết với patchim ㅄ.
+    display_answer: 편의점이 없어요.
+
+  - key: ko:exercise:dl-exist-translate-market-q
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:place-sijang
+    prompt:
+      source_text: Có chợ không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 시장이 있어요?
+        - 시장 있어요?
+        - 시장은 있어요?
+    known_wrong:
+      - answer: 시장가 있어요?
+        feedback_vi: 장 có patchim ㅇ nên dùng 이 - 시장이 있어요?
+        error_tag: particle_i_ga
+      - answer: 시장이 없어요?
+        feedback_vi: 없어요? là "không có à?". Hỏi "có… không?" dùng 있어요?
+        error_tag: negation_eopda
+      - answer: sijangi isseoyo
+        feedback_vi: Hãy gõ bằng chữ Hangul (시장이 있어요?), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Tiếng Hàn không có từ riêng cho "không?" ở cuối câu hỏi; bạn chỉ cần lên giọng ở 있어요. 장 có patchim ㅇ nên dùng 이.
+    display_answer: 시장이 있어요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:dl-exist-mcq-ask-store
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:place-pyeonuijeom
+    prompt:
+      stem: Bạn muốn mua nước gần nhà người bạn Hàn Quốc. Bạn hỏi xem gần đó có cửa hàng tiện lợi không. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: c5y, text: 편의점이 있어요?, lang: ko }
+        - { id: g1l, text: 편의점가 있어요?, lang: ko }
+        - { id: n7d, text: 편의점을 있어요?, lang: ko }
+        - { id: e3r, text: 편의점이 안 있어요?, lang: ko }
+    answer:
+      correct_option_id: c5y
+    explanation:
+      vi: 점 có patchim nên dùng 이, và hỏi "có… không?" chỉ cần 있어요? lên giọng. 가 sai theo patchim, 을 không đi với 있어요, còn 안 있어요 không tồn tại trong tiếng Hàn.
+    display_answer: 편의점이 있어요?
+
+  - key: ko:exercise:dl-exist-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:place-eunhaeng
+    prompt:
+      source_text: 도서관이 있어요. 은행이 없어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Có thư viện. Không có ngân hàng.
+        - Có thư viện nhưng không có ngân hàng.
+        - Có thư viện còn ngân hàng thì không có.
+        - Có thư viện, ngân hàng thì không có.
+        - Ở đây có thư viện. Không có ngân hàng.
+        - Ở đây có thư viện nhưng không có ngân hàng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Có thư viện. Có ngân hàng.
+        feedback_vi: 없어요 là "không có", nên câu thứ hai là "không có ngân hàng".
+        error_tag: negation_eopda
+      - answer: Không có thư viện. Có ngân hàng.
+        feedback_vi: Bạn đảo nghĩa rồi - 있어요 là "có", 없어요 là "không có".
+        error_tag: negation_eopda
+    explanation:
+      vi: 도서관 là thư viện, 은행 là ngân hàng. 있어요 là "có", 없어요 là "không có"; tiếng Việt tự nhiên có thể nối bằng "nhưng".
+    display_answer: Có thư viện. Không có ngân hàng.
+
+  - key: ko:exercise:dl-exist-order-company
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:place-hoesa
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Không có công ty.\""
+      tokens:
+        - { id: t-eopseo, text: 없어요 }
+        - { id: t-an, text: 안 }
+        - { id: t-hoesai, text: 회사이 }
+        - { id: t-isseo, text: 있어요 }
+        - { id: t-hoesaga, text: 회사가 }
+    answer:
+      orders:
+        - [t-hoesaga, t-eopseo]
+    explanation:
+      vi: 사 không có patchim nên dùng 가 - 회사가. "Không có" là 없어요 và động từ luôn đứng cuối câu.
+    display_answer: 회사가 없어요.

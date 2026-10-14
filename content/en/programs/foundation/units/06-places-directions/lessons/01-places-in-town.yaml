@@ -1,0 +1,364 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:places-in-town
+order_index: 1
+level: a1
+title:
+  vi: Nơi chốn trong thành phố - There is / There are
+objectives:
+  - vi: Gọi tên các nơi quen thuộc trong thành phố - ngân hàng, bệnh viện, siêu thị, bưu điện, bến xe buýt, hiệu thuốc, công viên, thư viện.
+  - vi: Nói "ở đâu đó có cái gì" bằng There is (số ít) và There are (số nhiều).
+  - vi: Không dùng have/has để dịch chữ "có" khi nói về một nơi tồn tại ở đâu đó.
+estimated_minutes: 10
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:food-shopping-review]
+items:
+  - item: en:item:there-is-there-are
+  - item: en:item:bank
+  - item: en:item:hospital
+  - item: en:item:supermarket
+  - item: en:item:post-office
+  - item: en:item:bus-station
+  - item: en:item:pharmacy
+  - item: en:item:park
+  - item: en:item:library
+  - item: en:item:near-here
+  - item: en:item:a-an
+    role: reuse
+  - item: en:item:be-present
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Gần đây có một ngân hàng", "Thị trấn mình có hai công viên" bằng tiếng Anh, đúng is/are và không dùng nhầm have.
+  - type: explain
+    text:
+      vi: Khi tiếng Việt nói "Ở đâu đó có cái gì" (Gần đây có ngân hàng), tiếng Anh dùng There is hoặc There are. Câu thường đi theo khuôn There is/are + vật + nơi chốn - There is a bank near here. Nói nhanh thì There is rút gọn thành There's.
+  - type: explain
+    text:
+      vi: Is hay are tuỳ vào danh từ đứng ngay sau. Một vật (số ít) dùng There is a/an…; hai vật trở lên dùng There are + danh từ thêm -s - There are two parks.
+  - type: explain
+    text:
+      vi: Người Việt hay dịch "có" thành have và nói It has a bank near here. Have chỉ dùng khi có người hay nơi "sở hữu" làm chủ ngữ (My town has two parks); còn câu bắt đầu bằng "Gần đây có…", "Ở đây có…" thì luôn dùng There is/are.
+  - type: deep_explain
+    text:
+      vi: There trong There is không có nghĩa là "ở đó"; nó chỉ là chủ ngữ hình thức vì câu tiếng Anh không được thiếu chủ ngữ. Khi liệt kê nhiều vật, is/are theo vật đứng đầu - There is a bank and two cafés, nhưng There are two cafés and a bank. Dạng rút gọn there's rất phổ biến khi nói, còn there are thì không viết tắt thành there're trong văn viết.
+  - type: example
+    target: There is a bank near here.
+    target_lang: en
+    translation:
+      vi: Gần đây có một ngân hàng.
+    note:
+      vi: Tiếng Việt đặt "gần đây" lên đầu, tiếng Anh thường để near here ở cuối câu.
+  - type: example
+    target: There are two parks in my town.
+    target_lang: en
+    translation:
+      vi: Thị trấn của mình có hai công viên.
+    note:
+      vi: Hai công viên là số nhiều nên dùng are và thêm -s vào park.
+  - type: example
+    target: There's a pharmacy opposite the hospital.
+    target_lang: en
+    translation:
+      vi: Đối diện bệnh viện có một hiệu thuốc.
+    note:
+      vi: There's là dạng rút gọn của There is, dùng nhiều khi nói chuyện.
+  - type: common_mistake
+    wrong: It has a bank near here.
+    right: There is a bank near here.
+    target_lang: en
+    note:
+      vi: Chữ "có" trong "Gần đây có ngân hàng" nói về sự tồn tại, không phải sở hữu. Tiếng Anh dùng There is, không dùng have/has.
+  - type: common_mistake
+    wrong: There is two banks on this street.
+    right: There are two banks on this street.
+    target_lang: en
+    note:
+      vi: Two banks là số nhiều, nên phải dùng are. Is chỉ đi với một vật.
+  - type: common_mistake
+    wrong: There is supermarket near here.
+    right: There is a supermarket near here.
+    target_lang: en
+    note:
+      vi: Một nơi ở số ít cần a/an, giống như "một" trong tiếng Việt nhưng không được bỏ.
+  - type: summary
+    points:
+      - vi: "\"Ở đâu đó có…\" = There is + số ít / There are + số nhiều."
+      - vi: There is thường rút gọn thành There's khi nói.
+      - vi: Không nói It has… hay Have… để diễn tả "có" theo nghĩa tồn tại.
+      - vi: Danh từ số ít cần a/an - a bank, an office; số nhiều thêm -s - two parks.
+      - vi: Near here đặt ở cuối câu - There's a pharmacy near here.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:places-in-town-mcq-there-is
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:there-is-there-are
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: There ___ a bank near here."
+      stem_lang: vi
+      options:
+        - { id: t4w, text: is, lang: en }
+        - { id: m9c, text: are, lang: en }
+        - { id: z2k, text: has, lang: en }
+        - { id: r7p, text: have, lang: en }
+    answer:
+      correct_option_id: t4w
+    explanation:
+      vi: A bank là một vật (số ít) nên dùng There is. Has/have nói về sở hữu, không dùng sau There để nói "có" một nơi nào đó.
+    display_answer: is
+
+  - key: en:exercise:places-in-town-mcq-post-office
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:post-office
+    prompt:
+      stem: "\"Bưu điện\" trong tiếng Anh là gì?"
+      stem_lang: vi
+      options:
+        - { id: q8d, text: post office, lang: en }
+        - { id: h3v, text: bus station, lang: en }
+        - { id: e6n, text: pharmacy, lang: en }
+        - { id: u1s, text: library, lang: en }
+    answer:
+      correct_option_id: q8d
+    explanation:
+      vi: Post là thư từ, office là văn phòng - post office là nơi gửi thư, bưu phẩm. Bus station là bến xe buýt, pharmacy là hiệu thuốc, library là thư viện.
+    display_answer: post office
+
+  - key: en:exercise:places-in-town-listen-pharmacy
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:pharmacy
+    prompt:
+      audio_asset_id: null
+      fallback_text: There's a pharmacy near here.
+      options:
+        - { id: b5x, text: Gần đây có một hiệu thuốc., lang: vi }
+        - { id: k2j, text: Gần đây có một bệnh viện., lang: vi }
+        - { id: w9g, text: Gần đây không có hiệu thuốc nào., lang: vi }
+        - { id: a4y, text: Hiệu thuốc ở đâu?, lang: vi }
+    answer:
+      correct_option_id: b5x
+    explanation:
+      vi: There's là There is - "có". Pharmacy là hiệu thuốc, còn bệnh viện là hospital. Câu khẳng định, không phải câu hỏi hay phủ định.
+    display_answer: Gần đây có một hiệu thuốc.
+
+  - key: en:exercise:places-in-town-fill-parks-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:park
+    prompt:
+      template: "There {{b1}} two {{b2}} in my town."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Thị trấn của mình có hai công viên."
+        - "Gợi ý: hai vật là số nhiều; danh từ số nhiều thêm -s."
+    answer:
+      blanks:
+        b1: [are]
+        b2: [parks]
+    known_wrong:
+      - answer: is
+        feedback_vi: Two parks là số nhiều nên dùng are, không dùng is.
+        error_tag: there_be_agreement
+      - answer: park
+        feedback_vi: Có hai công viên thì danh từ phải ở số nhiều - parks.
+        error_tag: plural_noun
+      - answer: has
+        feedback_vi: Câu nói về sự tồn tại dùng There are, không dùng has.
+        error_tag: have_for_there_is
+    explanation:
+      vi: Sau two là danh từ số nhiều parks, nên động từ là are. There are two parks là "có hai công viên".
+    display_answer: There are two parks in my town.
+
+  - key: en:exercise:places-in-town-order-bank
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:near-here
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Gần đây có một ngân hàng.\""
+      tokens:
+        - { id: w-bank, text: bank }
+        - { id: w-has, text: has }
+        - { id: w-near, text: near }
+        - { id: w-there, text: There }
+        - { id: w-a, text: a }
+        - { id: w-are, text: are }
+        - { id: w-here, text: here }
+        - { id: w-is, text: is }
+        - { id: w-it, text: It }
+    answer:
+      orders:
+        - [w-there, w-is, w-a, w-bank, w-near, w-here]
+    explanation:
+      vi: Khuôn câu là There is + a bank + near here. Không dùng It has, vì "có" ở đây nói về sự tồn tại, và một ngân hàng là số ít nên dùng is.
+    display_answer: There is a bank near here.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:places-in-town-fill-is-are
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:there-is-there-are
+    prompt:
+      template: "There {{b1}} a library in this town. There {{b2}} three banks."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [is]
+        b2: [are]
+    known_wrong:
+      - answer: has
+        feedback_vi: Nói "có" theo nghĩa tồn tại thì dùng There is/are, không dùng has.
+        error_tag: have_for_there_is
+      - answer: have
+        feedback_vi: Nói "có" theo nghĩa tồn tại thì dùng There is/are, không dùng have.
+        error_tag: have_for_there_is
+    explanation:
+      vi: A library là một vật nên dùng There is. Three banks là số nhiều nên dùng There are.
+    display_answer: There is a library in this town. There are three banks.
+
+  - key: en:exercise:places-in-town-translate-pharmacy
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:there-is-there-are
+    prompt:
+      source_text: Gần đây có một hiệu thuốc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - There is a pharmacy near here.
+        - There's a pharmacy near here.
+        - There is a pharmacy nearby.
+        - There's a pharmacy nearby.
+        - There is a drugstore near here.
+        - There's a drugstore near here.
+        - There's a chemist's near here.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It has a pharmacy near here.
+        feedback_vi: "\"Có\" ở đây nói về sự tồn tại - dùng There is, không dùng It has."
+        error_tag: have_for_there_is
+      - answer: Have a pharmacy near here.
+        feedback_vi: Tiếng Anh không bắt đầu câu bằng Have để nói "có". Dùng There is a pharmacy near here.
+        error_tag: have_for_there_is
+      - answer: Near here has a pharmacy.
+        feedback_vi: Near here không làm chủ ngữ được. Hãy nói There is a pharmacy near here.
+        error_tag: have_for_there_is
+      - answer: There are a pharmacy near here.
+        feedback_vi: Một hiệu thuốc là số ít nên dùng is.
+        error_tag: there_be_agreement
+      - answer: There is pharmacy near here.
+        feedback_vi: Thiếu a trước pharmacy - There is a pharmacy near here.
+        error_tag: article
+    explanation:
+      vi: "\"Gần đây có…\" là câu nói về sự tồn tại, nên dùng There is + a pharmacy + near here. Có thể rút gọn There's."
+    display_answer: There is a pharmacy near here.
+
+  - key: en:exercise:places-in-town-translate-hospitals
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:hospital
+    prompt:
+      source_text: Trong thành phố có hai bệnh viện.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - There are two hospitals in the city.
+        - There are two hospitals in the town.
+        - The city has two hospitals.
+        - In the city, there are two hospitals.
+        - There are 2 hospitals in the city.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: There is two hospitals in the city.
+        feedback_vi: Two hospitals là số nhiều nên dùng are - There are two hospitals.
+        error_tag: there_be_agreement
+      - answer: There are two hospital in the city.
+        feedback_vi: Sau two cần danh từ số nhiều - hospitals.
+        error_tag: plural_noun
+      - answer: It has two hospitals in the city.
+        feedback_vi: It không có nghĩa gì ở đây. Dùng There are, hoặc lấy thành phố làm chủ ngữ - The city has two hospitals.
+        error_tag: have_for_there_is
+      - answer: In the city has two hospitals.
+        feedback_vi: In the city không làm chủ ngữ được. Hãy nói There are two hospitals in the city.
+        error_tag: have_for_there_is
+    explanation:
+      vi: Hai bệnh viện là số nhiều nên dùng There are + hospitals. Cách The city has two hospitals cũng đúng, vì lúc này thành phố là chủ ngữ "sở hữu" các bệnh viện.
+    display_answer: There are two hospitals in the city.
+
+  # ---------------- application ----------------
+  - key: en:exercise:places-in-town-translate-park-library
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:library
+    prompt:
+      source_text: There's a park and a library near here.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Gần đây có một công viên và một thư viện.
+        - Gần đây có công viên và thư viện.
+        - Ở gần đây có một công viên và một thư viện.
+        - Ở gần đây có công viên và thư viện.
+        - Gần đây có một công viên và thư viện.
+        - Gần đây có công viên với thư viện.
+        - Quanh đây có một công viên và một thư viện.
+        - Quanh đây có công viên và thư viện.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: There's là "có", park là công viên, library là thư viện (không phải hiệu sách), near here là "gần đây". Tiếng Việt tự nhiên đưa "gần đây" lên đầu câu.
+    display_answer: Gần đây có một công viên và một thư viện.
+
+  - key: en:exercise:places-in-town-mcq-ask-supermarket
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:supermarket
+    prompt:
+      stem: Bạn vừa chuyển đến một khu phố mới và muốn hỏi hàng xóm gần đây có siêu thị không. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: c3f, text: Is there a supermarket near here?, lang: en }
+        - { id: n7r, text: Have a supermarket near here?, lang: en }
+        - { id: g1l, text: Is there supermarket near here?, lang: en }
+        - { id: v6h, text: Are there a supermarket near here?, lang: en }
+    answer:
+      correct_option_id: c3f
+    explanation:
+      vi: Để hỏi "có… không?", bạn đảo is lên trước there - Is there a supermarket…? Câu Have… dịch từng chữ từ "có"; câu thiếu a sai mạo từ; are không đi với một siêu thị.
+    display_answer: Is there a supermarket near here?

@@ -1,0 +1,361 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:my-family
+order_index: 1
+level: pre_a1
+title:
+  vi: Gia đình tôi
+objectives:
+  - vi: Gọi tên các thành viên trong gia đình bằng tiếng Anh (mother, father, parents, brother, sister, son, daughter…).
+  - vi: Nói rõ anh/chị hay em bằng older và younger.
+  - vi: Giới thiệu người thân bằng This is… / These are… và hỏi Is that…?
+estimated_minutes: 10
+skills: [vocabulary, speaking, listening]
+prerequisites: [en:lesson:numbers-time-review]
+items:
+  - item: en:item:family
+  - item: en:item:mother
+  - item: en:item:father
+  - item: en:item:parents
+  - item: en:item:brother
+  - item: en:item:sister
+  - item: en:item:son
+  - item: en:item:daughter
+  - item: en:item:grandmother
+  - item: en:item:grandfather
+  - item: en:item:older-younger
+  - item: en:item:this-that-these-those
+  - item: en:item:be-present
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn cầm một tấm ảnh gia đình và giới thiệu được từng người - "Đây là bố mẹ tôi, còn đây là em gái tôi."
+  - type: explain
+    text:
+      vi: Tiếng Việt chia theo tuổi - anh, chị, em - còn tiếng Anh chia theo giới tính. Brother là anh trai hoặc em trai, sister là chị gái hoặc em gái. Muốn nói rõ hơn, bạn thêm older (lớn tuổi hơn) hoặc younger (nhỏ tuổi hơn) phía trước - my older sister là chị gái tôi.
+  - type: explain
+    text:
+      vi: Để giới thiệu một người, bạn nói This is my mother. Nhiều người thì đổi thành These are my parents - cả this lẫn is đều phải đổi. Người ở xa hơn thì dùng that (một người) và those (nhiều người).
+  - type: explain
+    text:
+      vi: Tiếng Việt nói "mẹ tôi" (danh từ trước), tiếng Anh nói my mother (my đứng trước). Bạn đã gặp my trong My name is…; với người thân cũng vậy.
+  - type: deep_explain
+    text:
+      vi: "Trong gia đình, người ta thường gọi thân mật hơn: mum (Anh) hoặc mom (Mỹ) thay cho mother, dad thay cho father, grandma và grandpa thay cho grandmother, grandfather. Tiếng Anh không phân biệt nội hay ngoại - nếu cần, bạn nói my mother's mother (bà ngoại). Older brother cũng có thể nói elder brother hoặc big brother (thân mật), nhưng older là cách thông dụng nhất."
+  - type: example
+    target: This is my family.
+    target_lang: en
+    translation:
+      vi: Đây là gia đình tôi.
+  - type: example
+    target: These are my parents, and this is my younger sister.
+    target_lang: en
+    translation:
+      vi: Đây là bố mẹ tôi, còn đây là em gái tôi.
+    note:
+      vi: Parents là hai người nên dùng These are; em gái là một người nên dùng this is.
+  - type: example
+    target: "A: Is that your brother? B: Yes, that's my older brother, Nam."
+    target_lang: en
+    translation:
+      vi: "A: Kia có phải anh trai bạn không? B: Ừ, đó là anh trai mình, Nam."
+    note:
+      vi: Câu hỏi đưa is lên đầu câu. That's là cách nói ngắn của that is.
+  - type: example
+    target: My grandmother and my grandfather are teachers.
+    target_lang: en
+    translation:
+      vi: Ông bà tôi đều là giáo viên.
+  - type: common_mistake
+    wrong: This is my brother older.
+    right: This is my older brother.
+    target_lang: en
+    note:
+      vi: Tiếng Việt nói "anh trai" (danh từ trước), nhưng trong tiếng Anh older phải đứng trước brother.
+  - type: common_mistake
+    wrong: This is my parents.
+    right: These are my parents.
+    target_lang: en
+    note:
+      vi: Tiếng Việt dùng "đây là" cho cả một hay nhiều người. Tiếng Anh thì nhiều người phải dùng These are.
+  - type: common_mistake
+    wrong: This is mother of me.
+    right: This is my mother.
+    target_lang: en
+    note:
+      vi: Đừng dịch từng chữ "mẹ của tôi". Tiếng Anh chỉ cần my đặt trước mother.
+  - type: summary
+    points:
+      - vi: brother = anh/em trai, sister = chị/em gái; thêm older/younger khi cần nói rõ.
+      - vi: Older/younger đứng trước danh từ - my older brother, my younger sister.
+      - vi: Một người - This is…; nhiều người - These are…; ở xa - that, those.
+      - vi: My đứng trước danh từ - my mother, my parents.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:my-family-mcq-sister
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:sister
+    prompt:
+      stem: Sister nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: v3k, text: chị gái hoặc em gái, lang: vi }
+        - { id: q8m, text: anh trai hoặc em trai, lang: vi }
+        - { id: d1x, text: con gái, lang: vi }
+        - { id: z6p, text: mẹ, lang: vi }
+    answer:
+      correct_option_id: v3k
+    explanation:
+      vi: Tiếng Anh không có từ riêng cho "chị" và "em", nên sister dùng cho cả hai. Anh/em trai là brother, con gái là daughter.
+    display_answer: chị gái hoặc em gái
+
+  - key: en:exercise:my-family-mcq-these
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:this-that-these-those
+    prompt:
+      stem: "Bạn đứng cạnh bố mẹ và giới thiệu với bạn mới. Chọn từ đúng: ___ are my parents."
+      stem_lang: vi
+      options:
+        - { id: r7t, text: This, lang: en }
+        - { id: h2w, text: These, lang: en }
+        - { id: m9c, text: That, lang: en }
+        - { id: k4u, text: He, lang: en }
+    answer:
+      correct_option_id: h2w
+    explanation:
+      vi: Parents là hai người và đang ở gần, nên dùng These đi với are. This và That chỉ dùng cho một người.
+    display_answer: These
+
+  - key: en:exercise:my-family-listen-younger
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:older-younger
+    prompt:
+      audio_asset_id: null
+      fallback_text: This is my younger brother.
+      options:
+        - { id: g5n, text: Đây là em trai tôi., lang: vi }
+        - { id: w2b, text: Đây là anh trai tôi., lang: vi }
+        - { id: e8s, text: Đây là em gái tôi., lang: vi }
+        - { id: u3j, text: Kia là em trai tôi., lang: vi }
+    answer:
+      correct_option_id: g5n
+    explanation:
+      vi: Younger là "nhỏ tuổi hơn", brother là anh/em trai, nên younger brother là em trai. This là "đây" (ở gần), kia là that.
+    display_answer: Đây là em trai tôi.
+
+  - key: en:exercise:my-family-fill-older-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:older-younger
+    prompt:
+      template: "This is my {{b1}} sister."
+      blanks:
+        - { id: b1, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa của câu: Đây là chị gái tôi."
+        - "Gợi ý: từ có nghĩa \"lớn tuổi hơn\", bắt đầu bằng o."
+    answer:
+      blanks:
+        b1: [older, elder, big]
+    known_wrong:
+      - answer: younger
+        feedback_vi: Younger sister là em gái. Chị gái lớn tuổi hơn bạn nên dùng older.
+        error_tag: older_younger
+      - answer: old
+        feedback_vi: Old là "già". Để nói lớn tuổi hơn, bạn dùng older.
+        error_tag: comparative
+    explanation:
+      vi: Chị gái là người lớn tuổi hơn bạn, nên thêm older trước sister. Elder và big (thân mật) cũng dùng được.
+    display_answer: This is my older sister.
+
+  - key: en:exercise:my-family-order-parents
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:parents
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Đây là bố mẹ tôi.\""
+      tokens:
+        - { id: f-are, text: are }
+        - { id: f-my, text: my }
+        - { id: f-this, text: This }
+        - { id: f-parents, text: parents }
+        - { id: f-these, text: These }
+        - { id: f-is, text: is }
+    answer:
+      orders:
+        - [f-these, f-are, f-my, f-parents]
+    explanation:
+      vi: Bố mẹ là hai người nên dùng These are, không dùng This is. My đứng trước parents.
+    display_answer: These are my parents.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:my-family-fill-members
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:parents
+    prompt:
+      template: "Bố và mẹ: my {{b1}}. Con trai: a {{b2}}. Con gái: a {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [parents]
+        b2: [son]
+        b3: [daughter]
+    known_wrong:
+      - answer: parent
+        feedback_vi: Bố và mẹ là hai người, nên dùng số nhiều parents.
+        error_tag: plural
+      - answer: boy
+        feedback_vi: Boy là cậu bé nói chung. Con trai của bố mẹ là son.
+        error_tag: word_choice
+      - answer: girl
+        feedback_vi: Girl là cô bé nói chung. Con gái của bố mẹ là daughter.
+        error_tag: word_choice
+    explanation:
+      vi: Parents là bố mẹ (luôn số nhiều). Son và daughter chỉ quan hệ con cái trong gia đình, khác boy và girl (cậu bé, cô bé nói chung).
+    display_answer: "my parents · a son · a daughter"
+
+  - key: en:exercise:my-family-translate-brother
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:brother
+    prompt:
+      source_text: Đây là anh trai tôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - This is my older brother.
+        - This is my elder brother.
+        - This is my big brother.
+        - This is my brother.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: This is my brother older.
+        feedback_vi: Older phải đứng trước brother - my older brother.
+        error_tag: adjective_order
+      - answer: This my older brother.
+        feedback_vi: Thiếu is - This is my older brother.
+        error_tag: missing_be
+      - answer: This is older brother of me.
+        feedback_vi: Không dịch từng chữ "của tôi". Tiếng Anh dùng my trước danh từ - my older brother.
+        error_tag: possessive
+      - answer: This is my younger brother.
+        feedback_vi: Younger brother là em trai. Anh trai là older brother.
+        error_tag: older_younger
+      - answer: These are my older brother.
+        feedback_vi: Một người thì dùng This is, không dùng These are.
+        error_tag: this_these
+    explanation:
+      vi: Một người ở gần - This is; "anh trai" là brother, thêm older để nói rõ lớn tuổi hơn. My đứng trước older brother.
+    display_answer: This is my older brother.
+
+  # ---------------- application ----------------
+  - key: en:exercise:my-family-translate-photo
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:this-that-these-those
+    prompt:
+      source_text: These are my parents, and this is my younger sister.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đây là bố mẹ tôi, còn đây là em gái tôi.
+        - Đây là bố mẹ tôi, và đây là em gái tôi.
+        - Đây là bố mẹ mình, còn đây là em gái mình.
+        - Đây là bố mẹ mình, và đây là em gái mình.
+        - Đây là ba mẹ tôi, còn đây là em gái tôi.
+        - Đây là ba mẹ mình, còn đây là em gái mình.
+        - Đây là ba mẹ tôi, và đây là em gái tôi.
+        - Đây là cha mẹ tôi, còn đây là em gái tôi.
+        - Đây là bố mẹ của tôi, còn đây là em gái của tôi.
+        - Đây là bố mẹ tôi và đây là em gái tôi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: These are dùng cho nhiều người, this is cho một người, nhưng tiếng Việt đều nói "đây là". Younger sister là em gái.
+    display_answer: Đây là bố mẹ tôi, còn đây là em gái tôi.
+
+  - key: en:exercise:my-family-mcq-older-sister
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:older-younger
+    prompt:
+      stem: Bạn muốn nói "Chị gái tôi là giáo viên." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: t6a, text: My older sister is a teacher., lang: en }
+        - { id: n1r, text: My sister older is a teacher., lang: en }
+        - { id: b8y, text: My younger sister is a teacher., lang: en }
+        - { id: x5h, text: My older brother is a teacher., lang: en }
+    answer:
+      correct_option_id: t6a
+    explanation:
+      vi: Chị gái là sister lớn tuổi hơn - older sister, older đứng trước. Younger sister là em gái, older brother là anh trai.
+    display_answer: My older sister is a teacher.
+
+  - key: en:exercise:my-family-translate-that
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:father
+    prompt:
+      source_text: Kia có phải bố bạn không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Is that your father?
+        - Is that your dad?
+        - Is that man your father?
+        - Is that man your dad?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Is that you father?
+        feedback_vi: Trước father cần your (của bạn), không phải you.
+        error_tag: possessive
+      - answer: Is this your father?
+        feedback_vi: Người ở xa ("kia") dùng that, không dùng this.
+        error_tag: this_that
+      - answer: That your father?
+        feedback_vi: Thiếu is - câu hỏi bắt đầu bằng Is that…?
+        error_tag: missing_be
+      - answer: Is that father of you?
+        feedback_vi: Tiếng Anh không nói "father of you". Dùng your trước danh từ - your father.
+        error_tag: possessive
+    explanation:
+      vi: Câu hỏi với be đưa is lên đầu - Is that…? "Kia" là người ở xa nên dùng that, "bố bạn" là your father.
+    display_answer: Is that your father?

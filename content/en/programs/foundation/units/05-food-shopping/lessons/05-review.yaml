@@ -1,0 +1,385 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:food-shopping-review
+order_index: 5
+level: a1
+title:
+  vi: Ôn tập - Ở quán cà phê và cửa hàng
+objectives:
+  - vi: Đi trọn một hội thoại gọi món và trả tiền ở quán cà phê.
+  - vi: Đi trọn một hội thoại mua quần áo - hỏi giá, hỏi cỡ, mặc thử.
+  - vi: Ôn lại a/an, some/any, is/are và It's/They're trong tình huống thật.
+estimated_minutes: 12
+skills: [speaking, listening, grammar]
+prerequisites: [en:lesson:shopping]
+items:
+  - item: en:item:here-you-are
+  - item: en:item:pay-by-card
+  - item: en:item:countable-uncountable
+    role: reuse
+  - item: en:item:some-any
+    role: reuse
+  - item: en:item:id-like
+    role: reuse
+  - item: en:item:can-i-have
+    role: reuse
+  - item: en:item:anything-else
+    role: reuse
+  - item: en:item:thats-all
+    role: reuse
+  - item: en:item:a-cup-of
+    role: reuse
+  - item: en:item:how-much
+    role: reuse
+  - item: en:item:size
+    role: reuse
+  - item: en:item:shoes
+    role: reuse
+  - item: en:item:dress
+    role: reuse
+  - item: en:item:juice
+    role: reuse
+  - item: en:item:cake
+    role: reuse
+  - item: en:item:noodles
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn ghép mọi mẫu câu của unit thành hai hội thoại hoàn chỉnh - gọi món ở quán cà phê và mua quần áo ở cửa hàng.
+  - type: explain
+    text:
+      vi: "Một lượt gọi món thường đi theo thứ tự: nhân viên hỏi What would you like?, bạn gọi bằng I'd like… hoặc Can I have…, please?, nhân viên hỏi Anything else?, bạn đáp No, that's all, thanks. Khi đưa đồ, họ nói Here you are, bạn đáp Thank you."
+  - type: explain
+    text:
+      vi: "Ở cửa hàng, bạn hỏi giá bằng How much is…? (một món) hoặc How much are…? (nhiều món, shoes, jeans), hỏi mặc thử bằng Can I try it on?, rồi hỏi cách trả tiền - Can I pay by card?"
+  - type: deep_explain
+    text:
+      vi: Hai câu mới của bài này là Here you are (Của bạn đây) - câu cố định khi đưa vật gì cho ai - và Can I pay by card? (Trả bằng thẻ được không?). Trả tiền mặt nói pay in cash, không nói pay by cash. Cả hai câu dùng được ở cả quán ăn lẫn cửa hàng.
+  - type: example
+    target: "A: What would you like? B: I'd like a cup of coffee and some cake, please. A: Anything else? B: No, that's all, thanks."
+    target_lang: en
+    translation:
+      vi: "A: Anh chị dùng gì ạ? B: Cho mình một tách cà phê và ít bánh ngọt nhé. A: Còn gì nữa không ạ? B: Không, vậy thôi, cảm ơn."
+    note:
+      vi: Coffee đếm bằng a cup of; cake nói chung dùng some.
+  - type: example
+    target: "A: Your coffee. Here you are. B: Thank you. Can I pay by card? A: Sure."
+    target_lang: en
+    translation:
+      vi: "A: Cà phê của bạn đây ạ. B: Cảm ơn. Mình trả bằng thẻ được không? A: Được ạ."
+  - type: example
+    target: "A: How much are these shoes? B: They're fifty dollars. A: Can I try them on? B: Of course. What size are you?"
+    target_lang: en
+    translation:
+      vi: "A: Đôi giày này bao nhiêu tiền? B: Năm mươi đô. A: Mình thử được không? B: Tất nhiên rồi. Bạn đi cỡ nào?"
+    note:
+      vi: Shoes số nhiều nên dùng are, They're và them.
+  - type: common_mistake
+    wrong: Can I pay by cash?
+    right: Can I pay in cash?
+    target_lang: en
+    note:
+      vi: Tiền mặt đi với in (pay in cash), còn thẻ đi với by (pay by card). Tiếng Việt đều nói "trả bằng" nên người Việt hay dùng chung một từ.
+  - type: common_mistake
+    wrong: Can I have a bread and a coffee, please?
+    right: Can I have some bread and a coffee, please?
+    target_lang: en
+    note:
+      vi: Bread không đếm được nên dùng some. Coffee ở quán được đếm theo ly nên a coffee vẫn đúng.
+  - type: common_mistake
+    wrong: How much is these jeans?
+    right: How much are these jeans?
+    target_lang: en
+    note:
+      vi: Jeans luôn số nhiều nên đi với are và They're, dù tiếng Việt chỉ nói "cái quần".
+  - type: summary
+    points:
+      - vi: "Gọi món: What would you like? → I'd like… / Can I have…, please?"
+      - vi: "Anything else? → No, that's all, thanks."
+      - vi: "Đưa đồ: Here you are. → Thank you."
+      - vi: "Hỏi giá: How much is it? → It's… / How much are they? → They're…"
+      - vi: "Trả tiền: Can I pay by card? / pay in cash."
+      - vi: "Không đếm được dùng some, không a/an: some bread, some rice, some water."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:food-shopping-review-listen-here
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:here-you-are
+    prompt:
+      audio_asset_id: null
+      fallback_text: Your tea. Here you are.
+      options:
+        - { id: v2s, text: Trà của bạn đây ạ., lang: vi }
+        - { id: b7d, text: Bạn đang ở đây à?, lang: vi }
+        - { id: m4x, text: Bạn muốn uống trà không?, lang: vi }
+        - { id: o9q, text: Hết trà rồi ạ., lang: vi }
+    answer:
+      correct_option_id: v2s
+    explanation:
+      vi: Here you are là câu cố định khi đưa đồ cho ai - "của bạn đây". Không hiểu từng chữ thành "bạn ở đây".
+    display_answer: Trà của bạn đây ạ.
+
+  - key: en:exercise:food-shopping-review-mcq-thats-all
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:thats-all
+    prompt:
+      stem: "Nhân viên hỏi \"Anything else?\" Bạn đã gọi đủ. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: c5n, text: "No, that's all, thanks.", lang: en }
+        - { id: t3r, text: "No, I'm all.", lang: en }
+        - { id: z8u, text: "No, anything.", lang: en }
+        - { id: h6e, text: "Yes, no more.", lang: en }
+    answer:
+      correct_option_id: c5n
+    explanation:
+      vi: That's all nghĩa là "vậy là đủ rồi", câu đáp tự nhiên và lịch sự cho Anything else? Các phương án còn lại là dịch từng chữ và không có nghĩa trong tiếng Anh.
+    display_answer: "No, that's all, thanks."
+
+  - key: en:exercise:food-shopping-review-order-card
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:pay-by-card
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Mình trả bằng thẻ được không?\""
+      tokens:
+        - { id: p-card, text: card }
+        - { id: p-pay, text: pay }
+        - { id: p-by, text: by }
+        - { id: p-can, text: Can }
+        - { id: p-cash, text: cash }
+        - { id: p-i, text: I }
+        - { id: p-in, text: in }
+    answer:
+      orders:
+        - [p-can, p-i, p-pay, p-by, p-card]
+    explanation:
+      vi: Trả bằng thẻ là pay by card; câu hỏi xin phép đưa Can lên đầu. Cash (tiền mặt) đi với in, không đi với by.
+    display_answer: Can I pay by card?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:food-shopping-review-fill-noodles
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:how-much
+    prompt:
+      template: "A: How much {{b1}} the noodles? B: {{b2}} four pounds fifty."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [are]
+        b2: ["They're", They are]
+    known_wrong:
+      - answer: is
+        feedback_vi: Noodles là số nhiều nên dùng are.
+        error_tag: be_form
+      - answer: "It's"
+        feedback_vi: Noodles là số nhiều nên trả lời bằng They're.
+        error_tag: it_they
+      - answer: Their
+        feedback_vi: Their là "của họ". Cần They're = They are.
+        error_tag: their_theyre
+    explanation:
+      vi: Noodles là danh từ số nhiều, nên hỏi bằng How much are…? và trả lời They're… £4.50 đọc là four pounds fifty.
+    display_answer: "A: How much are the noodles? B: They're four pounds fifty."
+
+  - key: en:exercise:food-shopping-review-translate-juice
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:countable-uncountable
+    prompt:
+      source_text: Cho mình một ly nước cam và ít bánh mì nhé.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Can I have a glass of orange juice and some bread, please?
+        - Can I have an orange juice and some bread, please?
+        - I'd like a glass of orange juice and some bread, please.
+        - I would like a glass of orange juice and some bread, please.
+        - I'd like an orange juice and some bread, please.
+        - I would like an orange juice and some bread, please.
+        - Could I have a glass of orange juice and some bread, please?
+        - A glass of orange juice and some bread, please.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Can I have a glass of orange juice and a bread, please?
+        feedback_vi: Bread không đếm được nên không dùng a; "ít bánh mì" là some bread.
+        error_tag: uncountable_article
+      - answer: I like a glass of orange juice and some bread, please.
+        feedback_vi: Gọi món cần I'd like (I would like), không phải I like (thích).
+        error_tag: like_vs_would_like
+      - answer: Can I have a glass of juice orange and some bread, please?
+        feedback_vi: Tên quả đứng trước juice - orange juice.
+        error_tag: word_order
+      - answer: Can I have a glass of orange juice and some breads, please?
+        feedback_vi: Bread không đếm được nên không thêm -s.
+        error_tag: uncountable_plural
+    explanation:
+      vi: Gọi món lịch sự dùng Can I have…, please? hoặc I'd like…, please. Nước cam đếm bằng a glass of (hoặc an orange juice ở quán), còn bread không đếm được nên dùng some.
+    display_answer: Can I have a glass of orange juice and some bread, please?
+
+  - key: en:exercise:food-shopping-review-translate-card
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:pay-by-card
+    prompt:
+      source_text: Mình trả bằng thẻ được không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Can I pay by card?
+        - Could I pay by card?
+        - May I pay by card?
+        - Can I pay by credit card?
+        - Can I pay with a card?
+        - Can I pay with my card?
+        - Can I pay by card, please?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I can pay by card?
+        feedback_vi: Câu hỏi đảo Can lên đầu - Can I pay by card?
+        error_tag: word_order
+      - answer: Can I pay card?
+        feedback_vi: Thiếu by - pay by card.
+        error_tag: missing_preposition
+      - answer: Can I pay in card?
+        feedback_vi: Thẻ đi với by (pay by card); in dùng cho tiền mặt (pay in cash).
+        error_tag: preposition
+    explanation:
+      vi: Hỏi xin phép dùng Can I…? ở đầu câu. Trả bằng thẻ là pay by card (hoặc pay with a card).
+    display_answer: Can I pay by card?
+
+  # ---------------- application ----------------
+  - key: en:exercise:food-shopping-review-mcq-too-small
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:size
+    prompt:
+      stem: Bạn mặc thử cái đầm cỡ S nhưng nó chật quá. Bạn nói gì với người bán?
+      stem_lang: vi
+      options:
+        - { id: w3a, text: "It's too small. Do you have a medium?", lang: en }
+        - { id: k8i, text: "It's too big. Do you have a small?", lang: en }
+        - { id: n5z, text: "They're too small. Do you have a medium?", lang: en }
+        - { id: e2b, text: "It's too small. Can I try on it?", lang: en }
+    answer:
+      correct_option_id: w3a
+    explanation:
+      vi: Chật là too small, và cần cỡ lớn hơn (medium). Dress là một món nên dùng It's, không dùng They're; còn try on it sai trật tự (phải là try it on).
+    display_answer: "It's too small. Do you have a medium?"
+
+  - key: en:exercise:food-shopping-review-translate-cake
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:cake
+    prompt:
+      source_text: I'd like two coffees and some cake, please.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cho mình hai ly cà phê và ít bánh ngọt nhé.
+        - Cho tôi hai ly cà phê và ít bánh ngọt nhé.
+        - Cho mình hai ly cà phê và một ít bánh ngọt nhé.
+        - Cho tôi hai ly cà phê và một ít bánh ngọt.
+        - Cho mình hai cốc cà phê và ít bánh ngọt nhé.
+        - Cho mình hai ly cà phê và ít bánh nhé.
+        - Cho tôi hai ly cà phê và ít bánh.
+        - Tôi muốn hai ly cà phê và một ít bánh ngọt.
+        - Mình muốn hai ly cà phê và ít bánh ngọt.
+        - Cho tôi hai cà phê và ít bánh ngọt.
+        - Cho mình hai ly cà phê và một chút bánh ngọt nhé.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Two coffees ở quán là "hai ly cà phê"; some cake là "ít bánh ngọt" vì cake nói chung không đếm được. I'd like… please tương đương "Cho mình… nhé".
+    display_answer: Cho mình hai ly cà phê và ít bánh ngọt nhé.
+
+  - key: en:exercise:food-shopping-review-order-shoes
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:shoes
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Đôi giày này bao nhiêu tiền?\""
+      tokens:
+        - { id: s-these, text: these }
+        - { id: s-much, text: much }
+        - { id: s-shoes, text: shoes }
+        - { id: s-how, text: How }
+        - { id: s-are, text: are }
+        - { id: s-is, text: is }
+        - { id: s-this, text: this }
+        - { id: s-many, text: many }
+    answer:
+      orders:
+        - [s-how, s-much, s-are, s-these, s-shoes]
+    explanation:
+      vi: Hỏi giá dùng How much. Shoes là số nhiều nên đi với these và are, dù tiếng Việt chỉ nói "đôi giày này".
+    display_answer: How much are these shoes?
+
+  - key: en:exercise:food-shopping-review-translate-dress
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:dress
+    prompt:
+      source_text: Mình thích cái đầm này. Nó bao nhiêu tiền?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I like this dress. How much is it?
+        - I like this dress. How much does it cost?
+        - I love this dress. How much is it?
+        - I really like this dress. How much is it?
+        - I like this dress. How much is this?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I like this dress. How much it is?
+        feedback_vi: Câu hỏi đặt is trước it - How much is it?
+        error_tag: word_order
+      - answer: I like this dress. How much are it?
+        feedback_vi: It (một món) đi với is.
+        error_tag: be_form
+      - answer: I like this dress. How much is?
+        feedback_vi: Thiếu it - How much is it?
+        error_tag: missing_subject
+      - answer: I like this dress. It how much?
+        feedback_vi: Tiếng Anh đặt từ hỏi lên đầu - How much is it?
+        error_tag: word_order
+    explanation:
+      vi: "\"Thích\" là like. Hỏi giá một món dùng How much is it? - từ hỏi lên đầu, is đứng trước it, khác thứ tự tiếng Việt \"nó bao nhiêu tiền\"."
+    display_answer: I like this dress. How much is it?

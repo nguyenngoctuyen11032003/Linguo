@@ -1,0 +1,391 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:shopping
+order_index: 4
+level: a1
+title:
+  vi: Mua sắm - How much is it?
+objectives:
+  - vi: Hỏi giá bằng How much is…? và How much are…? và trả lời bằng It's… / They're…
+  - vi: Đọc giá tiền đô la và bảng Anh như $5, £2.50.
+  - vi: Hỏi cỡ và xin mặc thử quần áo bằng What size are you? và Can I try it on?
+estimated_minutes: 12
+skills: [speaking, listening, vocabulary]
+prerequisites: [en:lesson:ordering]
+items:
+  - item: en:item:how-much
+  - item: en:item:dollar
+  - item: en:item:pound
+  - item: en:item:cheap
+  - item: en:item:expensive
+  - item: en:item:shirt
+  - item: en:item:shoes
+  - item: en:item:jeans
+  - item: en:item:dress
+  - item: en:item:size
+  - item: en:item:try-it-on
+  - item: en:item:be-present
+    role: reuse
+  - item: en:item:can-i-have
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đi mua quần áo được bằng tiếng Anh - hỏi giá, nghe giá, hỏi cỡ và xin mặc thử.
+  - type: explain
+    text:
+      vi: Hỏi giá một món dùng How much is…? và trả lời It's… (How much is this shirt? - It's twenty dollars). Nhiều món, hoặc đồ luôn ở số nhiều như shoes, jeans, dùng How much are…? và They're…
+  - type: explain
+    text:
+      vi: Ký hiệu tiền viết trước số nhưng đọc sau số - $5 đọc five dollars, £10 đọc ten pounds. Từ hai trở lên thêm -s - dollars, pounds. Giá lẻ thường đọc gọn - £2.50 là two pounds fifty, $3.99 là three ninety-nine.
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt nói "đôi giày", "cái quần" như một món, nhưng tiếng Anh coi shoes, jeans là số nhiều, nên đi với these, are, they, them. Khi mặc thử, it hoặc them đứng giữa try và on - Can I try it on?, Can I try them on? Nếu không vừa, bạn nói It's too big (rộng quá) hoặc It's too small (chật quá). Cách đọc số đếm bạn xem lại ở bài về số.
+  - type: example
+    target: "A: How much is this dress? B: It's thirty pounds."
+    target_lang: en
+    translation:
+      vi: "A: Cái đầm này bao nhiêu tiền? B: Ba mươi bảng."
+    note:
+      vi: Dress là một món nên dùng is và It's.
+  - type: example
+    target: "A: How much are these jeans? B: They're forty dollars."
+    target_lang: en
+    translation:
+      vi: "A: Cái quần bò này bao nhiêu tiền? B: Bốn mươi đô."
+    note:
+      vi: Jeans luôn số nhiều nên dùng are, these và They're.
+  - type: example
+    target: "I like this shirt. Can I try it on? - Sure. What size are you?"
+    target_lang: en
+    translation:
+      vi: "Mình thích cái áo sơ mi này. Mình mặc thử được không? - Được chứ. Bạn mặc cỡ nào?"
+  - type: example
+    target: These shoes are nice, but they're too expensive.
+    target_lang: en
+    translation:
+      vi: Đôi giày này đẹp, nhưng đắt quá.
+    note:
+      vi: Too expensive là "đắt quá (không muốn mua)", mạnh hơn very expensive.
+  - type: common_mistake
+    wrong: How much is these shoes?
+    right: How much are these shoes?
+    target_lang: en
+    note:
+      vi: Shoes là số nhiều nên dùng are, dù tiếng Việt chỉ nói "đôi giày này".
+  - type: common_mistake
+    wrong: It's five dollar.
+    right: It's five dollars.
+    target_lang: en
+    note:
+      vi: Từ hai đô trở lên phải thêm -s. Tiếng Việt không đổi "đô" theo số lượng nên người Việt hay quên.
+  - type: common_mistake
+    wrong: Can I try on it?
+    right: Can I try it on?
+    target_lang: en
+    note:
+      vi: Với it, them, từ on phải đứng sau - try it on, try them on.
+  - type: summary
+    points:
+      - vi: "Một món: How much is…? → It's…"
+      - vi: "Nhiều món, hoặc shoes, jeans: How much are…? → They're…"
+      - vi: $5 đọc five dollars; £2.50 đọc two pounds fifty; nhớ -s khi từ hai trở lên.
+      - vi: cheap (rẻ) ↔ expensive (đắt); too expensive (đắt quá).
+      - vi: "Hỏi cỡ: What size are you? Mặc thử: Can I try it on / them on?"
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:shopping-listen-jeans
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:jeans
+    prompt:
+      audio_asset_id: null
+      fallback_text: How much are these jeans?
+      options:
+        - { id: i3v, text: Cái quần bò này bao nhiêu tiền?, lang: vi }
+        - { id: l9k, text: Cái áo sơ mi này bao nhiêu tiền?, lang: vi }
+        - { id: g5r, text: Đôi giày này bao nhiêu tiền?, lang: vi }
+        - { id: x1d, text: Cái quần bò này cỡ nào?, lang: vi }
+    answer:
+      correct_option_id: i3v
+    explanation:
+      vi: How much hỏi giá; jeans là quần bò. Áo sơ mi là shirt, giày là shoes, còn hỏi cỡ là What size…?
+    display_answer: Cái quần bò này bao nhiêu tiền?
+
+  - key: en:exercise:shopping-fill-pounds
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:pound
+    prompt:
+      template: "A: How much is this dress? B: {{b1}} thirty {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: A: Cái đầm này bao nhiêu tiền? B: Ba mươi bảng (£30)."
+        - "Gợi ý: một món thì trả lời bằng It's…; ba mươi bảng là số nhiều."
+    answer:
+      blanks:
+        b1: ["It's", It is]
+        b2: [pounds]
+    known_wrong:
+      - answer: pound
+        feedback_vi: Ba mươi bảng là số nhiều, cần thêm -s - thirty pounds.
+        error_tag: plural_s
+      - answer: "They're"
+        feedback_vi: Dress là một món, nên trả lời bằng It's, không dùng They're.
+        error_tag: it_they
+      - answer: Its
+        feedback_vi: Thiếu dấu nháy - It's là It is; its là "của nó".
+        error_tag: its_its
+    explanation:
+      vi: Câu hỏi dùng is cho một món, nên trả lời It's (It is). £30 đọc thirty pounds - từ hai trở lên thêm -s.
+    display_answer: "A: How much is this dress? B: It's thirty pounds."
+
+  - key: en:exercise:shopping-order-try-on
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:try-it-on
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Mình mặc thử được không?\""
+      tokens:
+        - { id: y-on, text: on }
+        - { id: y-try, text: try }
+        - { id: y-i, text: I }
+        - { id: y-it, text: it }
+        - { id: y-can, text: Can }
+        - { id: y-wear, text: wear }
+        - { id: y-in, text: in }
+    answer:
+      orders:
+        - [y-can, y-i, y-try, y-it, y-on]
+    explanation:
+      vi: "\"Mặc thử\" là try on, và it phải đứng giữa - try it on. Không nói try on it."
+    display_answer: Can I try it on?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:shopping-fill-it-they
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:how-much
+    prompt:
+      template: "These jeans are $60. {{b1}} too expensive. This shirt is $8. {{b2}} cheap."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: ["They're", They are]
+        b2: ["It's", It is]
+    known_wrong:
+      - answer: Its
+        feedback_vi: Thiếu dấu nháy - It's là It is; its là "của nó".
+        error_tag: its_its
+      - answer: Their
+        feedback_vi: Their là "của họ". "Chúng (thì)" là They're = They are.
+        error_tag: their_theyre
+      - answer: It
+        feedback_vi: Thiếu be - It's (It is) cheap.
+        error_tag: missing_be
+      - answer: They
+        feedback_vi: Thiếu be - They're (They are) too expensive.
+        error_tag: missing_be
+    explanation:
+      vi: Jeans là số nhiều nên thay bằng They're (They are). Shirt là một món nên thay bằng It's (It is). Cả hai câu đều cần be trước tính từ.
+    display_answer: These jeans are $60. They're too expensive. This shirt is $8. It's cheap.
+
+  - key: en:exercise:shopping-translate-shirt
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:shirt
+    prompt:
+      source_text: Cái áo sơ mi này bao nhiêu tiền?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - How much is this shirt?
+        - How much does this shirt cost?
+        - How much is the shirt?
+        - How much is this shirt, please?
+        - What's the price of this shirt?
+        - What is the price of this shirt?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: How much this shirt?
+        feedback_vi: Thiếu be - How much is this shirt?
+        error_tag: missing_be
+      - answer: How much are this shirt?
+        feedback_vi: Shirt là một món nên dùng is.
+        error_tag: be_form
+      - answer: How many is this shirt?
+        feedback_vi: Hỏi giá tiền dùng How much, không dùng How many.
+        error_tag: much_many
+      - answer: This shirt how much?
+        feedback_vi: Tiếng Anh đặt từ hỏi lên đầu - How much is this shirt?
+        error_tag: word_order
+    explanation:
+      vi: Hỏi giá dùng How much, đặt ở đầu câu, theo sau là is vì shirt là một món. Tiếng Việt để "bao nhiêu tiền" ở cuối, còn tiếng Anh đưa lên trước.
+    display_answer: How much is this shirt?
+
+  - key: en:exercise:shopping-translate-try
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:try-it-on
+    prompt:
+      source_text: Mình mặc thử cái này được không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Can I try it on?
+        - Could I try it on?
+        - May I try it on?
+        - Can I try this on?
+        - Could I try this on?
+        - May I try this on?
+        - Can I try it on, please?
+        - Can I try this on, please?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Can I try on it?
+        feedback_vi: Với it, on phải đứng sau - try it on.
+        error_tag: phrasal_order
+      - answer: Can I try it?
+        feedback_vi: Thiếu on - "mặc thử" quần áo là try it on.
+        error_tag: missing_particle
+      - answer: I can try it on?
+        feedback_vi: Câu hỏi đảo Can lên đầu - Can I try it on?
+        error_tag: word_order
+    explanation:
+      vi: "\"Mặc thử\" là try on. Khi tân ngữ là it hoặc this, nó đứng giữa try và on - Can I try it on?"
+    display_answer: Can I try it on?
+
+  # ---------------- application ----------------
+  - key: en:exercise:shopping-mcq-theyre
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:dollar
+    prompt:
+      stem: "Khách hỏi: \"How much are these shoes?\" Giá là $25. Người bán trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: s5h, text: "They're twenty-five dollars.", lang: en }
+        - { id: k1o, text: "They're twenty-five dollar.", lang: en }
+        - { id: e8w, text: "Its twenty-five dollars.", lang: en }
+        - { id: u6a, text: "They twenty-five dollars.", lang: en }
+    answer:
+      correct_option_id: s5h
+    explanation:
+      vi: Shoes là số nhiều nên trả lời They're (They are); 25 đô là số nhiều nên dùng dollars. They twenty-five dollars thiếu be, còn Its là "của nó".
+    display_answer: "They're twenty-five dollars."
+
+  - key: en:exercise:shopping-translate-too-expensive
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:shoes
+    prompt:
+      source_text: These shoes are nice, but they're too expensive.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đôi giày này đẹp, nhưng đắt quá.
+        - Đôi giày này đẹp nhưng đắt quá.
+        - Đôi giày này đẹp, nhưng nó đắt quá.
+        - Đôi giày này đẹp, nhưng chúng đắt quá.
+        - Đôi giày này đẹp nhưng quá đắt.
+        - Đôi giày này đẹp, nhưng quá đắt.
+        - Đôi giày này đẹp nhưng đắt quá rồi.
+        - Mấy đôi giày này đẹp nhưng đắt quá.
+        - Những đôi giày này đẹp nhưng đắt quá.
+        - Đôi giày này đẹp nhưng mắc quá.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: These shoes thường dịch là "đôi giày này", dù tiếng Anh dùng số nhiều. Too expensive là "đắt quá", nghĩa là đắt đến mức không muốn mua.
+    display_answer: Đôi giày này đẹp, nhưng đắt quá.
+
+  - key: en:exercise:shopping-translate-tshirt
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:dollar
+    prompt:
+      source_text: Cái áo phông này năm đô.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - This T-shirt is five dollars.
+        - This T-shirt is 5 dollars.
+        - This T-shirt is $5.
+        - This T-shirt costs five dollars.
+        - This T-shirt costs $5.
+        - This T-shirt costs 5 dollars.
+        - The T-shirt is five dollars.
+        - This tshirt is five dollars.
+        - This tee is five dollars.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: This T-shirt five dollars.
+        feedback_vi: Thiếu be - This T-shirt is five dollars.
+        error_tag: missing_be
+      - answer: This T-shirt is five dollar.
+        feedback_vi: Năm đô là số nhiều, cần thêm -s - five dollars.
+        error_tag: plural_s
+      - answer: This T-shirt are five dollars.
+        feedback_vi: T-shirt là một món nên dùng is.
+        error_tag: be_form
+      - answer: This T-shirt is dollars five.
+        feedback_vi: Số đứng trước đơn vị tiền - five dollars.
+        error_tag: word_order
+    explanation:
+      vi: Tiếng Việt nói "cái áo này năm đô" không cần "là", nhưng tiếng Anh cần is (hoặc dùng costs). Năm đô là số nhiều nên viết five dollars.
+    display_answer: This T-shirt is five dollars.
+
+  - key: en:exercise:shopping-order-size
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:size
+    prompt:
+      instruction: "Người bán hỏi bạn mặc cỡ nào. Sắp xếp thành câu: \"Bạn mặc cỡ nào?\""
+      tokens:
+        - { id: z-are, text: are }
+        - { id: z-you, text: you }
+        - { id: z-size, text: size }
+        - { id: z-what, text: What }
+        - { id: z-do, text: do }
+        - { id: z-is, text: is }
+    answer:
+      orders:
+        - [z-what, z-size, z-are, z-you]
+    explanation:
+      vi: Hỏi cỡ của một người dùng What size are you? - be (are) đứng trước you vì là câu hỏi. Không nói What size you are?
+    display_answer: What size are you?
