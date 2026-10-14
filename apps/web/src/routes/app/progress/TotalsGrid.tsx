@@ -1,13 +1,15 @@
 import type { ReactNode } from 'react';
 import type { ProgressDashboard } from '@linguo/shared';
 import { formatMinutes } from '@/features/learning-paths/components/schedule';
-import { percent } from './labels';
+import { PROGRESS_TERMS, percent } from './labels';
 
 interface TotalsGridProps {
   totals: ProgressDashboard['totals'];
   /** review_summary.retention_30d / retention_sample. */
   retention: { value: number | null; sample: number };
   masteredTotal: number;
+  /** Length of the selected range, for the range-minutes label. */
+  rangeDays: number;
 }
 
 function Stat({ term, children, hint }: { term: string; children: ReactNode; hint?: ReactNode }) {
@@ -23,7 +25,7 @@ function Stat({ term, children, hint }: { term: string; children: ReactNode; hin
 const count = (n: number) => n.toLocaleString('vi-VN');
 
 /** Activity totals (time, lessons, reviews, application) and learning numbers (retention, mastered items). */
-export function TotalsGrid({ totals, retention, masteredTotal }: TotalsGridProps) {
+export function TotalsGrid({ totals, retention, masteredTotal, rangeDays }: TotalsGridProps) {
   const weekGoal = totals.week_goal_minutes;
   const weekShare = weekGoal > 0 ? Math.min(1, totals.week_minutes / weekGoal) : 0;
   return (
@@ -48,14 +50,14 @@ export function TotalsGrid({ totals, retention, masteredTotal }: TotalsGridProps
       >
         {formatMinutes(totals.week_minutes)}
       </Stat>
-      <Stat term="Trong khoảng">{formatMinutes(totals.range_minutes)}</Stat>
+      <Stat term={PROGRESS_TERMS.rangeMinutes(rangeDays)}>{formatMinutes(totals.range_minutes)}</Stat>
       <Stat term="Bài đã xong">{count(totals.lessons_completed)}</Stat>
       <Stat term="Lượt ôn">{count(totals.reviews_done)}</Stat>
-      <Stat term="Bài vận dụng" hint="Câu vận dụng làm đúng ngay lần đầu">
+      <Stat term={PROGRESS_TERMS.applicationCorrect} hint={PROGRESS_TERMS.applicationCorrectHint}>
         {count(totals.application_done)}
       </Stat>
       <Stat
-        term="Giữ lại sau trì hoãn"
+        term={PROGRESS_TERMS.longTermRecall}
         hint={retention.value === null ? 'Cần thêm lượt ôn thẻ cũ' : `Trong 30 ngày, trên ${count(retention.sample)} lượt ôn`}
       >
         {retention.value === null ? <span className="text-base font-semibold text-muted">Chưa đủ dữ liệu</span> : percent(retention.value)}

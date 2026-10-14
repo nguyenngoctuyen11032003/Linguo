@@ -103,7 +103,7 @@ describe('ProgressPage', () => {
     renderWithProviders(<ProgressPage />, { route: '/app/tien-do' });
     expect(screen.getByRole('heading', { level: 1, name: 'Tiến độ' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'Hoạt động' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 2, name: 'Học tập' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'Kết quả làm bài' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'Năng lực ước lượng' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'Lỗi thường gặp' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'Động lực' })).toBeInTheDocument();

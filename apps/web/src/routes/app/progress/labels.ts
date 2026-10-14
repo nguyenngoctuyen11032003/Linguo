@@ -23,6 +23,18 @@ export const ESTIMATE_SOURCE_LABELS: Record<SkillEstimate['source'], string> = {
   assessment: 'Bài đánh giá',
 };
 
+/** Plain-Vietnamese names for the Tiến độ page; the page, its tests and "Cách tính" all read them from here. */
+export const PROGRESS_TERMS = {
+  /** Section with the accuracy lists (the lessons tab keeps the name "Học tập"). */
+  resultsSection: 'Kết quả làm bài',
+  /** Application-stage exercises answered correctly on the first try. */
+  applicationCorrect: 'Câu vận dụng đúng',
+  applicationCorrectHint: 'Làm đúng ngay lần đầu',
+  /** Share of spaced review cards (7+ days apart) still remembered. */
+  longTermRecall: 'Tỷ lệ nhớ lâu',
+  rangeMinutes: (rangeDays: number) => `Trong ${rangeDays} ngày qua`,
+} as const;
+
 export interface AccuracyRow {
   key: string;
   label: string;

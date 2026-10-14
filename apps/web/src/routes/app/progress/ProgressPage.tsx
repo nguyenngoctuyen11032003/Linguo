@@ -18,7 +18,7 @@ import { AccuracyList } from './AccuracyList';
 import { ActivityChart } from './ActivityChart';
 import { EstimatesCard } from './EstimatesCard';
 import { HowCalculated } from './HowCalculated';
-import { skillAccuracyRows, typeAccuracyRows } from './labels';
+import { PROGRESS_TERMS, skillAccuracyRows, typeAccuracyRows } from './labels';
 import { MistakesList } from './MistakesList';
 import { MotivationPanel } from './MotivationPanel';
 import { isEmptyDashboard, parseRange, RANGE_PARAM } from './page-logic';
@@ -146,9 +146,10 @@ export function ProgressPage() {
                 totals={data.totals}
                 retention={{ value: summary?.retention_30d ?? null, sample: summary?.retention_sample ?? 0 }}
                 masteredTotal={summary?.mastered_total ?? 0}
+                rangeDays={shownRange}
               />
             </Layer>
-            <Layer title="Học tập" intro={`Độ chính xác ở lần trả lời đầu tiên, so với ${shownRange} ngày trước đó.`}>
+            <Layer title={PROGRESS_TERMS.resultsSection} intro={`Độ chính xác ở lần trả lời đầu tiên, so với ${shownRange} ngày trước đó.`}>
               <div className="grid gap-6 md:grid-cols-2">
                 <AccuracyList title="Theo kỹ năng" rows={skillAccuracyRows(data.skills)} rangeDays={shownRange} />
                 <AccuracyList title="Theo dạng bài" rows={typeAccuracyRows(data.exercise_types)} rangeDays={shownRange} />

@@ -24,7 +24,7 @@ export function MistakesList({ mistakes, action }: { mistakes: Mistake[]; /** e.
           <div className="flex items-start gap-3 rounded-2xl bg-text/5 p-4">
             <Sprout aria-hidden className="mt-0.5 size-5 shrink-0 text-success-text" />
             <div>
-              <p className="font-semibold">Không có lỗi nào lặp lại trong khoảng này</p>
+              <p className="font-semibold">Không có lỗi nào lặp lại trong giai đoạn này</p>
               <p className="text-sm text-muted">Sai là một phần của việc học. Khi có câu bạn hay nhầm, chúng sẽ hiện ở đây để bạn ôn lại.</p>
             </div>
           </div>

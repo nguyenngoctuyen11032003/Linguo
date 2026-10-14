@@ -23,7 +23,7 @@ async function openProgress(page: Page, query = '') {
 test('shows activity, learning, competence, mistakes and motivation apart', async ({ page }) => {
   const mock = await setup(page);
   await openProgress(page);
-  for (const name of ['Hoạt động', 'Học tập', 'Năng lực ước lượng', 'Lỗi thường gặp', 'Động lực']) {
+  for (const name of ['Hoạt động', 'Kết quả làm bài', 'Năng lực ước lượng', 'Lỗi thường gặp', 'Động lực']) {
     await expect(h2(page, name)).toBeVisible();
   }
   await expect(page.getByRole('heading', { level: 3, name: 'Theo kỹ năng' })).toBeVisible();

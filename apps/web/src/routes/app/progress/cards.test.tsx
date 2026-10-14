@@ -32,27 +32,27 @@ describe('RangeToggle', () => {
 
 describe('TotalsGrid', () => {
   it('shows activity totals and learning numbers', () => {
-    renderWithProviders(<TotalsGrid totals={dashboard.totals} retention={{ value: 0.873, sample: 42 }} masteredTotal={31} />);
+    renderWithProviders(<TotalsGrid totals={dashboard.totals} retention={{ value: 0.873, sample: 42 }} masteredTotal={31} rangeDays={30} />);
     const term = (name: string) => screen.getByText(name, { selector: 'dt' }).parentElement!;
     expect(term('Hôm nay')).toHaveTextContent('15 phút');
     expect(term('Tuần này')).toHaveTextContent('45 / 100 phút mục tiêu');
-    expect(term('Trong khoảng')).toHaveTextContent('1 giờ 30 phút');
+    expect(term('Trong 30 ngày qua')).toHaveTextContent('1 giờ 30 phút');
     expect(term('Bài đã xong')).toHaveTextContent('4');
     expect(term('Lượt ôn')).toHaveTextContent('62');
-    expect(term('Bài vận dụng')).toHaveTextContent('7');
-    expect(term('Giữ lại sau trì hoãn')).toHaveTextContent('87%');
-    expect(term('Giữ lại sau trì hoãn')).toHaveTextContent('42 lượt ôn');
+    expect(term('Câu vận dụng đúng')).toHaveTextContent('7');
+    expect(term('Tỷ lệ nhớ lâu')).toHaveTextContent('87%');
+    expect(term('Tỷ lệ nhớ lâu')).toHaveTextContent('42 lượt ôn');
     expect(term('Mục đã thành thạo')).toHaveTextContent('31');
   });
 
   it('says "Chưa đủ dữ liệu" when retention is unknown', () => {
-    renderWithProviders(<TotalsGrid totals={dashboard.totals} retention={{ value: null, sample: 3 }} masteredTotal={0} />);
-    expect(screen.getByText('Giữ lại sau trì hoãn', { selector: 'dt' }).parentElement).toHaveTextContent('Chưa đủ dữ liệu');
+    renderWithProviders(<TotalsGrid totals={dashboard.totals} retention={{ value: null, sample: 3 }} masteredTotal={0} rangeDays={30} />);
+    expect(screen.getByText('Tỷ lệ nhớ lâu', { selector: 'dt' }).parentElement).toHaveTextContent('Chưa đủ dữ liệu');
   });
 
   it('handles a week without a goal', () => {
     renderWithProviders(
-      <TotalsGrid totals={{ ...dashboard.totals, week_goal_minutes: 0 }} retention={{ value: null, sample: 0 }} masteredTotal={0} />,
+      <TotalsGrid totals={{ ...dashboard.totals, week_goal_minutes: 0 }} retention={{ value: null, sample: 0 }} masteredTotal={0} rangeDays={30} />,
     );
     expect(screen.getByText('Tuần này', { selector: 'dt' }).parentElement).toHaveTextContent('Không có mục tiêu tuần này');
   });
@@ -121,7 +121,7 @@ describe('MistakesList', () => {
 
   it('shows an encouraging empty state', () => {
     renderWithProviders(<MistakesList mistakes={[]} />);
-    expect(screen.getByText('Không có lỗi nào lặp lại trong khoảng này')).toBeInTheDocument();
+    expect(screen.getByText('Không có lỗi nào lặp lại trong giai đoạn này')).toBeInTheDocument();
     expect(screen.queryByRole('list')).not.toBeInTheDocument();
   });
 });
@@ -133,7 +133,7 @@ describe('HowCalculated', () => {
     expect(details).not.toHaveAttribute('open');
     await userEvent.click(screen.getByText('Cách tính các số liệu'));
     expect(details).toHaveAttribute('open');
-    for (const heading of ['Hoạt động', 'Học tập', 'Năng lực', 'Động lực']) {
+    for (const heading of ['Hoạt động', 'Kết quả làm bài', 'Năng lực', 'Động lực']) {
       expect(within(details).getByRole('heading', { level: 3, name: heading })).toBeInTheDocument();
     }
     expect(details).toHaveTextContent('tối đa 2 phút');

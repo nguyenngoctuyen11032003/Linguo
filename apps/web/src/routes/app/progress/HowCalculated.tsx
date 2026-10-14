@@ -1,5 +1,6 @@
 import { ChevronDown } from 'lucide-react';
 import { ACTIVE_MS_CAP_PER_ANSWER, MIN_ACCURACY_SAMPLE, STREAK_RULES, XP_RULES } from '@linguo/shared';
+import { PROGRESS_TERMS } from './labels';
 
 const CAP_MINUTES = ACTIVE_MS_CAP_PER_ANSWER / 60_000;
 
@@ -20,15 +21,15 @@ export function HowCalculated() {
           <h3 className="font-bold">Hoạt động</h3>
           <p>
             Phút học là tổng thời gian trả lời câu hỏi và ôn thẻ, mỗi câu tính tối đa {CAP_MINUTES} phút để lúc bỏ máy đó không làm tăng số
-            phút. Bài đã xong, lượt ôn và bài vận dụng làm đúng ngay lần đầu được đếm trong khoảng ngày đang chọn. Mục tiêu mỗi ngày lấy từ lịch
+            phút. Bài đã xong, lượt ôn và câu vận dụng đúng ngay lần đầu được đếm trong khoảng ngày đang chọn. Mục tiêu mỗi ngày lấy từ lịch
             học của lộ trình; ngày không có lịch là ngày nghỉ.
           </p>
         </section>
         <section>
-          <h3 className="font-bold">Học tập</h3>
+          <h3 className="font-bold">{PROGRESS_TERMS.resultsSection}</h3>
           <p>
             Độ chính xác chỉ tính lần trả lời đầu tiên của mỗi câu, không tính câu làm lại sau khi đã xem đáp án. Cần ít nhất{' '}
-            {MIN_ACCURACY_SAMPLE} câu trong khoảng mới hiện tỷ lệ, và được so với khoảng ngày dài bằng ngay trước đó. Giữ lại sau trì hoãn là
+            {MIN_ACCURACY_SAMPLE} câu trong giai đoạn đang chọn mới hiện tỷ lệ, và được so với giai đoạn dài bằng ngay trước đó. {PROGRESS_TERMS.longTermRecall} là
             tỷ lệ nhớ được thẻ ôn đã giãn cách từ 7 ngày trở lên, trong 30 ngày gần nhất.
           </p>
         </section>
