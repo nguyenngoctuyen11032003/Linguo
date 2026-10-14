@@ -1,0 +1,552 @@
+# DEMO — chưa kiểm duyệt
+# Bài luyện mô phỏng TOPIK I do Linguo tự soạn (nguồn src:linguo-demo). Không phải đề thi chính thức,
+# không chép đề thật. Nghe: lời thoại trong `script`, ứng dụng đọc bằng giọng máy khi chưa có audio.
+schema_version: 1
+demo: true
+language: ko
+form:
+  key: ko:exam:topik-i-mock-1
+  family: topik_i
+  title_vi: TOPIK I — Bài luyện mô phỏng số 1
+  description_vi: >-
+    Bài luyện mô phỏng rút gọn theo cấu trúc TOPIK I (cấp 1–2): 10 câu nghe và 14 câu đọc, mỗi câu 4 lựa chọn.
+    Nội dung do Linguo tự soạn, không phải đề thi chính thức; điểm quy đổi chỉ để tham khảo.
+  level_from: topik1
+  level_to: topik2
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 15
+    reading: 25
+  scoring:
+    verified: false
+    source_note_vi: >-
+      Thang điểm ghi theo cấu trúc TOPIK I tại thời điểm soạn: nghe 100, đọc 100; cấp 1 từ 80 điểm, cấp 2 từ 140 điểm
+      trên tổng 200. Chưa đối chiếu với quy chế hiện hành, bạn cần kiểm tra lại thông báo mới nhất trước khi dùng.
+    section_max:
+      listening: 100
+      reading: 100
+    bands:
+      - { level_code: topik1, min_total: 80 }
+      - { level_code: topik2, min_total: 140 }
+    pass_ratio: null
+questions:
+  # ============================== NGHE (듣기) ==============================
+  - key: ko:examq:topik-i-m1-l01
+    section: listening
+    kind: mcq
+    question_type: topik_i_listen_response
+    level_code: topik1
+    points: 3
+    prompt:
+      instruction_vi: Nghe câu hỏi và chọn câu trả lời phù hợp.
+      stem: 다음을 듣고 물음에 맞는 대답을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        여자: 우산이 있어요?
+      options:
+        - { id: a, text: "네, 우산이 있어요.", lang: ko }
+        - { id: b, text: "네, 우산이 아니에요.", lang: ko }
+        - { id: c, text: "아니요, 우산이에요.", lang: ko }
+        - { id: d, text: "아니요, 우산을 좋아해요.", lang: ko }
+    answer: a
+    explanation:
+      vi: "“우산이 있어요?” hỏi “Bạn có ô không?”, nên câu trả lời phải dùng 있어요/없어요: “네, 우산이 있어요.” Phương án “네, 우산이 아니에요” dễ chọn nhầm vì có chữ 우산, nhưng 아니에요 phủ định “là”, không trả lời câu hỏi “có hay không”."
+
+  - key: ko:examq:topik-i-m1-l02
+    section: listening
+    kind: mcq
+    question_type: topik_i_listen_response
+    level_code: topik1
+    points: 3
+    prompt:
+      instruction_vi: Nghe câu hỏi và chọn câu trả lời phù hợp.
+      stem: 다음을 듣고 물음에 맞는 대답을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        남자: 주말에 뭐 했어요?
+      options:
+        - { id: a, text: "친구하고 영화를 봤어요.", lang: ko }
+        - { id: b, text: "주말에 시간이 있어요.", lang: ko }
+        - { id: c, text: "영화관이 아주 멀어요.", lang: ko }
+        - { id: d, text: "다음 주에 친구를 만날 거예요.", lang: ko }
+    answer: a
+    explanation:
+      vi: "Câu hỏi dùng thì quá khứ 했어요 (“cuối tuần bạn đã làm gì?”), nên cần kể việc đã làm: “친구하고 영화를 봤어요.” Phương án “다음 주에 친구를 만날 거예요” nói về tương lai (-ㄹ 거예요) nên không khớp với câu hỏi."
+
+  - key: ko:examq:topik-i-m1-l03
+    section: listening
+    kind: mcq
+    question_type: topik_i_listen_next
+    level_code: topik1
+    points: 3
+    prompt:
+      instruction_vi: Nghe câu nói và chọn câu nói tiếp theo phù hợp.
+      stem: 다음을 듣고 이어지는 말을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        남자: 생일 축하해요. 이거 선물이에요.
+      options:
+        - { id: a, text: "고맙습니다.", lang: ko }
+        - { id: b, text: "괜찮습니다.", lang: ko }
+        - { id: c, text: "실례합니다.", lang: ko }
+        - { id: d, text: "어서 오세요.", lang: ko }
+    answer: a
+    explanation:
+      vi: "Khi được chúc mừng sinh nhật và nhận quà, người Hàn đáp “고맙습니다” (cảm ơn). “괜찮습니다” dễ gây nhầm vì người Việt hay nói “không sao”, nhưng câu này dùng để đáp lời xin lỗi hoặc từ chối khéo, không dùng khi nhận quà."
+
+  - key: ko:examq:topik-i-m1-l04
+    section: listening
+    kind: mcq
+    question_type: topik_i_listen_next
+    level_code: topik1
+    points: 3
+    prompt:
+      instruction_vi: Nghe câu nói và chọn câu nói tiếp theo phù hợp.
+      stem: 다음을 듣고 이어지는 말을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        여자: 늦어서 죄송합니다.
+      options:
+        - { id: a, text: "괜찮아요.", lang: ko }
+        - { id: b, text: "감사합니다.", lang: ko }
+        - { id: c, text: "반갑습니다.", lang: ko }
+        - { id: d, text: "잘 먹겠습니다.", lang: ko }
+    answer: a
+    explanation:
+      vi: "Người nói xin lỗi vì đến muộn (늦어서 죄송합니다), nên đáp lại tự nhiên nhất là “괜찮아요” (không sao). “감사합니다” là lời cảm ơn, không dùng để đáp lại lời xin lỗi."
+
+  - key: ko:examq:topik-i-m1-l05
+    section: listening
+    kind: mcq
+    question_type: topik_i_listen_place
+    level_code: topik1
+    points: 3
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn nơi diễn ra cuộc nói chuyện.
+      stem: 여기는 어디입니까? 알맞은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        남자: 이 책을 빌리고 싶어요.
+        여자: 학생증을 보여 주세요. 2주 후에 돌려주세요.
+      options:
+        - { id: a, text: "서점", lang: ko }
+        - { id: b, text: "도서관", lang: ko }
+        - { id: c, text: "교실", lang: ko }
+        - { id: d, text: "우체국", lang: ko }
+    answer: b
+    explanation:
+      vi: "Các từ khoá 빌리다 (mượn) và 돌려주다 (trả lại) cho thấy đây là thư viện (도서관). 서점 (hiệu sách) dễ chọn nhầm vì cũng có sách, nhưng ở hiệu sách bạn mua sách chứ không mượn rồi trả lại sau hai tuần."
+
+  - key: ko:examq:topik-i-m1-l06
+    section: listening
+    kind: mcq
+    question_type: topik_i_listen_place
+    level_code: topik1
+    points: 3
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn nơi diễn ra cuộc nói chuyện.
+      stem: 여기는 어디입니까? 알맞은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        여자: 어디가 아프세요?
+        남자: 어제부터 목이 아프고 열이 나요.
+        여자: 입을 크게 벌려 보세요. 감기네요. 주사를 맞고 가세요.
+      options:
+        - { id: a, text: "병원", lang: ko }
+        - { id: b, text: "약국", lang: ko }
+        - { id: c, text: "시장", lang: ko }
+        - { id: d, text: "식당", lang: ko }
+    answer: a
+    explanation:
+      vi: "Người phụ nữ hỏi bệnh, khám họng và bảo tiêm (주사를 맞다), nên đây là bệnh viện (병원). 약국 (hiệu thuốc) dễ gây nhầm vì cũng liên quan đến bệnh, nhưng ở hiệu thuốc không khám bệnh hay tiêm."
+
+  - key: ko:examq:topik-i-m1-l07
+    section: listening
+    kind: mcq
+    question_type: topik_i_listen_topic
+    level_code: topik1
+    points: 3
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn chủ đề hai người đang nói.
+      stem: 무엇에 대해 말하고 있습니까? 알맞은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        남자: 동생이 몇 살이에요?
+        여자: 열다섯 살이에요. 중학생이에요.
+      options:
+        - { id: a, text: "나이", lang: ko }
+        - { id: b, text: "직업", lang: ko }
+        - { id: c, text: "학교", lang: ko }
+        - { id: d, text: "이름", lang: ko }
+    answer: a
+    explanation:
+      vi: "Câu hỏi “몇 살이에요?” (mấy tuổi?) và câu trả lời “열다섯 살” đều nói về tuổi (나이). 학교 dễ chọn nhầm vì có từ 중학생, nhưng từ này chỉ giải thích thêm cho số tuổi, không phải chủ đề chính."
+
+  - key: ko:examq:topik-i-m1-l08
+    section: listening
+    kind: mcq
+    question_type: topik_i_listen_topic
+    level_code: topik2
+    points: 4
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn chủ đề hai người đang nói.
+      stem: 무엇에 대해 말하고 있습니까? 알맞은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        여자: 저는 봄을 좋아해요. 따뜻하고 꽃이 많이 피어요.
+        남자: 저는 눈이 와서 겨울이 좋아요.
+      options:
+        - { id: a, text: "계절", lang: ko }
+        - { id: b, text: "날씨", lang: ko }
+        - { id: c, text: "취미", lang: ko }
+        - { id: d, text: "여행", lang: ko }
+    answer: a
+    explanation:
+      vi: "Hai người nói mùa mình thích: 봄 (mùa xuân) và 겨울 (mùa đông), nên chủ đề là 계절 (mùa). 날씨 (thời tiết) là bẫy: 따뜻하다, 눈이 오다 chỉ là lý do vì sao họ thích mùa đó."
+
+  - key: ko:examq:topik-i-m1-l09
+    section: listening
+    kind: mcq
+    question_type: topik_i_listen_detail
+    level_code: topik2
+    points: 4
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn câu đúng với nội dung đã nghe.
+      stem: 다음을 듣고 들은 내용과 같은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        여자: 민수 씨, 내일 같이 등산 갈래요?
+        남자: 미안해요. 내일은 아르바이트가 있어요. 일요일은 어때요?
+        여자: 좋아요. 그럼 일요일 아침 일곱 시에 학교 앞에서 만나요.
+      options:
+        - { id: a, text: "남자는 내일 등산을 갑니다.", lang: ko }
+        - { id: b, text: "여자는 일요일에 아르바이트를 합니다.", lang: ko }
+        - { id: c, text: "두 사람은 일요일에 등산을 갈 겁니다.", lang: ko }
+        - { id: d, text: "두 사람은 산 앞에서 만납니다.", lang: ko }
+    answer: c
+    explanation:
+      vi: "Người nam bận làm thêm ngày mai nên đề nghị Chủ nhật, người nữ đồng ý (좋아요), vậy hai người sẽ leo núi vào Chủ nhật. Phương án b sai vì người có việc làm thêm (아르바이트) là người nam, và việc đó diễn ra ngày mai chứ không phải Chủ nhật."
+
+  - key: ko:examq:topik-i-m1-l10
+    section: listening
+    kind: mcq
+    question_type: topik_i_listen_detail
+    level_code: topik2
+    points: 4
+    prompt:
+      instruction_vi: Nghe thông báo và chọn câu đúng với nội dung đã nghe.
+      stem: 다음을 듣고 들은 내용과 같은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: |-
+        여자: 손님 여러분께 알려 드립니다. 오늘 저녁 8시까지 1층 식품 매장에서 과일을 30% 싸게 팝니다. 그리고 3만 원 이상 사시면 주차가 무료입니다. 감사합니다.
+      options:
+        - { id: a, text: "할인은 내일 저녁까지 합니다.", lang: ko }
+        - { id: b, text: "식품 매장은 2층에 있습니다.", lang: ko }
+        - { id: c, text: "3만 원 이상 사면 주차비를 내지 않습니다.", lang: ko }
+        - { id: d, text: "모든 물건을 30% 싸게 팝니다.", lang: ko }
+    answer: c
+    explanation:
+      vi: "Thông báo nói mua từ 30.000 won trở lên thì đỗ xe miễn phí (주차가 무료), tức là không phải trả phí đỗ xe. Phương án d sai vì chỉ có trái cây (과일) được giảm 30%, không phải mọi món hàng."
+
+  # ============================== ĐỌC (읽기) ==============================
+  - key: ko:examq:topik-i-m1-r01
+    section: reading
+    kind: mcq
+    question_type: topik_i_read_topic
+    level_code: topik1
+    points: 3
+    prompt:
+      instruction_vi: Đọc câu và chọn chủ đề phù hợp.
+      stem: 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오.
+      stem_lang: ko
+      passage: 사과가 맛있습니다. 바나나도 좋아합니다.
+      options:
+        - { id: a, text: "과일", lang: ko }
+        - { id: b, text: "공부", lang: ko }
+        - { id: c, text: "날씨", lang: ko }
+        - { id: d, text: "주말", lang: ko }
+    answer: a
+    explanation:
+      vi: "사과 (táo) và 바나나 (chuối) đều là trái cây, nên chủ đề là 과일. Các phương án còn lại (học tập, thời tiết, cuối tuần) không có từ nào liên quan trong câu."
+
+  - key: ko:examq:topik-i-m1-r02
+    section: reading
+    kind: mcq
+    question_type: topik_i_read_topic
+    level_code: topik1
+    points: 3
+    prompt:
+      instruction_vi: Đọc câu và chọn chủ đề phù hợp.
+      stem: 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오.
+      stem_lang: ko
+      passage: 아버지는 회사원입니다. 어머니는 선생님입니다.
+      options:
+        - { id: a, text: "직업", lang: ko }
+        - { id: b, text: "나이", lang: ko }
+        - { id: c, text: "고향", lang: ko }
+        - { id: d, text: "취미", lang: ko }
+    answer: a
+    explanation:
+      vi: "회사원 (nhân viên công ty) và 선생님 (giáo viên) là nghề nghiệp, nên chủ đề là 직업. Câu không nói tuổi (나이) hay quê quán (고향) của bố mẹ."
+
+  - key: ko:examq:topik-i-m1-r03
+    section: reading
+    kind: mcq
+    question_type: topik_i_read_topic
+    level_code: topik1
+    points: 3
+    prompt:
+      instruction_vi: Đọc câu và chọn chủ đề phù hợp.
+      stem: 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오.
+      stem_lang: ko
+      passage: 저는 서울에 삽니다. 동생은 부산에 삽니다.
+      options:
+        - { id: a, text: "장소", lang: ko }
+        - { id: b, text: "쇼핑", lang: ko }
+        - { id: c, text: "계절", lang: ko }
+        - { id: d, text: "음식", lang: ko }
+    answer: a
+    explanation:
+      vi: "Hai câu nói mỗi người sống ở đâu (서울, 부산), nên chủ đề là nơi chốn (장소). Lưu ý 삽니다 là dạng lịch sự của 살다 (sống), không phải 사다 (mua), nên 쇼핑 là phương án bẫy."
+
+  - key: ko:examq:topik-i-m1-r04
+    section: reading
+    kind: mcq
+    question_type: topik_i_read_blank
+    level_code: topik1
+    points: 3
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống ( ).
+      stem: ( )에 들어갈 가장 알맞은 것을 고르십시오.
+      stem_lang: ko
+      passage: 목이 마릅니다. 물을 ( ).
+      options:
+        - { id: a, text: "마십니다", lang: ko }
+        - { id: b, text: "먹습니다", lang: ko }
+        - { id: c, text: "읽습니다", lang: ko }
+        - { id: d, text: "씁니다", lang: ko }
+    answer: a
+    explanation:
+      vi: "Khát nước (목이 마르다) thì uống nước, và tiếng Hàn nói 물을 마시다. 먹습니다 là bẫy với người Việt vì 먹다 là “ăn”; với đồ uống như nước, người Hàn dùng 마시다."
+
+  - key: ko:examq:topik-i-m1-r05
+    section: reading
+    kind: mcq
+    question_type: topik_i_read_blank
+    level_code: topik1
+    points: 3
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống ( ).
+      stem: ( )에 들어갈 가장 알맞은 것을 고르십시오.
+      stem_lang: ko
+      passage: 오늘은 일요일입니다. 회사에 ( ) 않습니다.
+      options:
+        - { id: a, text: "가지", lang: ko }
+        - { id: b, text: "가고", lang: ko }
+        - { id: c, text: "가서", lang: ko }
+        - { id: d, text: "가면", lang: ko }
+    answer: a
+    explanation:
+      vi: "Phủ định dài trong tiếng Hàn có dạng động từ + -지 않다, nên 가지 않습니다 nghĩa là “không đi”. 가고 (và rồi) hay 가서 (đi rồi…) không ghép được với 않습니다."
+
+  - key: ko:examq:topik-i-m1-r06
+    section: reading
+    kind: mcq
+    question_type: topik_i_read_blank
+    level_code: topik1
+    points: 3
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống ( ).
+      stem: ( )에 들어갈 가장 알맞은 것을 고르십시오.
+      stem_lang: ko
+      passage: 날씨가 춥습니다. 그래서 두꺼운 ( )를 입었습니다.
+      options:
+        - { id: a, text: "코트", lang: ko }
+        - { id: b, text: "모자", lang: ko }
+        - { id: c, text: "구두", lang: ko }
+        - { id: d, text: "장갑", lang: ko }
+    answer: a
+    explanation:
+      vi: "Động từ 입다 (mặc) đi với quần áo như 코트 (áo khoác). Tiếng Việt nói “đội mũ, đi giày, đeo găng”, tiếng Hàn cũng tách riêng: 모자를 쓰다, 구두를 신다, 장갑을 끼다, nên các phương án đó không hợp với 입었습니다."
+
+  - key: ko:examq:topik-i-m1-r07
+    section: reading
+    kind: mcq
+    question_type: topik_i_read_blank
+    level_code: topik2
+    points: 4
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống ( ).
+      stem: ( )에 들어갈 가장 알맞은 것을 고르십시오.
+      stem_lang: ko
+      passage: 어제 친구( ) 같이 도서관에 갔습니다.
+      options:
+        - { id: a, text: "하고", lang: ko }
+        - { id: b, text: "에서", lang: ko }
+        - { id: c, text: "를", lang: ko }
+        - { id: d, text: "에게", lang: ko }
+    answer: a
+    explanation:
+      vi: "Trợ từ 하고 đi với 같이 thành “cùng với (bạn)”: 친구하고 같이. 에게 (cho, tới ai) dễ gây nhầm vì cũng gắn sau người, nhưng nó chỉ người nhận hành động, không mang nghĩa “cùng với”."
+
+  - key: ko:examq:topik-i-m1-r08
+    section: reading
+    kind: mcq
+    question_type: topik_i_read_notice
+    level_code: topik2
+    points: 4
+    prompt:
+      instruction_vi: Đọc thông báo và chọn câu KHÔNG đúng với nội dung.
+      stem: 다음을 읽고 맞지 않는 것을 고르십시오.
+      stem_lang: ko
+      passage: |-
+        한국어 말하기 대회
+        • 날짜: 10월 25일(토) 오후 2시
+        • 장소: 학생회관 3층
+        • 신청: 10월 18일까지 이메일로
+        ※ 1등에게는 비행기표를 드립니다.
+      options:
+        - { id: a, text: "대회는 토요일에 합니다.", lang: ko }
+        - { id: b, text: "대회는 오후에 시작합니다.", lang: ko }
+        - { id: c, text: "신청은 전화로 합니다.", lang: ko }
+        - { id: d, text: "1등을 하면 비행기표를 받습니다.", lang: ko }
+    answer: c
+    explanation:
+      vi: "Thông báo ghi đăng ký bằng email (이메일로), nên câu “신청은 전화로 합니다” (đăng ký qua điện thoại) là câu sai, cần chọn. Các câu còn lại đều đúng: (토) là thứ Bảy, 오후 2시 là buổi chiều, giải nhất nhận vé máy bay."
+
+  - key: ko:examq:topik-i-m1-r09
+    section: reading
+    kind: mcq
+    question_type: topik_i_read_notice
+    level_code: topik2
+    points: 4
+    prompt:
+      instruction_vi: Đọc tin nhắn và chọn câu KHÔNG đúng với nội dung.
+      stem: 다음을 읽고 맞지 않는 것을 고르십시오.
+      stem_lang: ko
+      passage: |-
+        수진 씨, 오늘 수업이 끝나고 같이 저녁 먹어요.
+        학교 앞 식당에서 여섯 시에 기다릴게요.
+        - 지훈
+      options:
+        - { id: a, text: "지훈 씨가 수진 씨에게 보냈습니다.", lang: ko }
+        - { id: b, text: "두 사람은 저녁을 먹을 겁니다.", lang: ko }
+        - { id: c, text: "두 사람은 학교 앞에서 만납니다.", lang: ko }
+        - { id: d, text: "지훈 씨는 수업 전에 만나고 싶어 합니다.", lang: ko }
+    answer: d
+    explanation:
+      vi: "Tin nhắn hẹn gặp sau khi tan học (수업이 끝나고), không phải trước giờ học, nên câu d sai. Câu c đúng vì nhà hàng ở trước cổng trường (학교 앞 식당)."
+
+  - key: ko:examq:topik-i-m1-r10
+    section: reading
+    kind: mcq
+    question_type: topik_i_read_detail
+    level_code: topik2
+    points: 4
+    prompt:
+      instruction_vi: Đọc đoạn văn và chọn câu đúng với nội dung.
+      stem: 다음의 내용과 같은 것을 고르십시오.
+      stem_lang: ko
+      passage: 저는 매일 아침 공원에서 자전거를 탑니다. 오늘은 비가 와서 집에서 요가를 했습니다.
+      options:
+        - { id: a, text: "저는 오늘 자전거를 탔습니다.", lang: ko }
+        - { id: b, text: "오늘은 날씨가 맑았습니다.", lang: ko }
+        - { id: c, text: "저는 오늘 집에서 운동했습니다.", lang: ko }
+        - { id: d, text: "저는 저녁마다 공원에 갑니다.", lang: ko }
+    answer: c
+    explanation:
+      vi: "Hôm nay trời mưa nên người viết tập yoga ở nhà; yoga là một môn thể dục, vậy “집에서 운동했습니다” là đúng. Câu a sai vì đạp xe là thói quen mỗi sáng, còn hôm nay vì mưa nên không đạp xe."
+
+  - key: ko:examq:topik-i-m1-r11
+    section: reading
+    kind: mcq
+    question_type: topik_i_read_detail
+    level_code: topik2
+    points: 4
+    prompt:
+      instruction_vi: Đọc đoạn văn và chọn câu đúng với nội dung.
+      stem: 다음의 내용과 같은 것을 고르십시오.
+      stem_lang: ko
+      passage: 제 동생은 요리를 잘합니다. 주말마다 가족에게 맛있는 음식을 만들어 줍니다. 저는 요리를 못해서 설거지를 합니다.
+      options:
+        - { id: a, text: "저는 요리를 잘합니다.", lang: ko }
+        - { id: b, text: "동생은 주말에 요리를 합니다.", lang: ko }
+        - { id: c, text: "동생이 설거지를 합니다.", lang: ko }
+        - { id: d, text: "가족이 동생에게 음식을 만들어 줍니다.", lang: ko }
+    answer: b
+    explanation:
+      vi: "주말마다 … 음식을 만들어 줍니다 cho biết em nấu ăn vào mỗi cuối tuần, nên câu b đúng. Câu d đảo ngược quan hệ: em nấu cho gia đình (가족에게), không phải gia đình nấu cho em."
+
+  - key: ko:examq:topik-i-m1-r12
+    section: reading
+    kind: mcq
+    question_type: topik_i_read_main_idea
+    level_code: topik2
+    points: 4
+    prompt:
+      instruction_vi: Đọc đoạn văn và chọn ý chính (suy nghĩ chính của người viết).
+      stem: 다음을 읽고 중심 생각을 고르십시오.
+      stem_lang: ko
+      passage: 저는 다음 달에 한국으로 여행을 갑니다. 그런데 한국어를 잘 못합니다. 그래서 요즘 매일 한국어를 공부합니다.
+      options:
+        - { id: a, text: "한국 여행을 가기 전에 한국어를 잘하고 싶습니다.", lang: ko }
+        - { id: b, text: "한국어 공부는 너무 어렵습니다.", lang: ko }
+        - { id: c, text: "다음 달에 한국에서 일하고 싶습니다.", lang: ko }
+        - { id: d, text: "매일 여행을 가고 싶습니다.", lang: ko }
+    answer: a
+    explanation:
+      vi: "Người viết sắp đi Hàn Quốc nhưng chưa giỏi tiếng Hàn nên học mỗi ngày, tức là muốn giỏi tiếng Hàn trước chuyến đi. Câu b là bẫy: đoạn văn không nói tiếng Hàn khó, chỉ nói “tôi chưa giỏi” (잘 못합니다)."
+
+  - key: ko:examq:topik-i-m1-r13
+    section: reading
+    kind: mcq
+    question_type: topik_i_read_main_idea
+    level_code: topik2
+    points: 4
+    prompt:
+      instruction_vi: Đọc đoạn văn và chọn ý chính (suy nghĩ chính của người viết).
+      stem: 다음을 읽고 중심 생각을 고르십시오.
+      stem_lang: ko
+      passage: 우리 집 근처에 큰 마트가 생겼습니다. 물건이 많고 값도 쌉니다. 그런데 집 앞 작은 가게 아저씨는 친절하고 물건이 신선해서 저는 지금도 그 가게에 자주 갑니다.
+      options:
+        - { id: a, text: "큰 마트에 자주 가고 싶습니다.", lang: ko }
+        - { id: b, text: "저는 집 앞의 작은 가게가 좋습니다.", lang: ko }
+        - { id: c, text: "큰 마트는 물건값이 너무 비쌉니다.", lang: ko }
+        - { id: d, text: "가게 아저씨가 마트에서 일합니다.", lang: ko }
+    answer: b
+    explanation:
+      vi: "Sau từ 그런데 (nhưng), người viết nói vẫn hay đến cửa hàng nhỏ vì chủ tiệm thân thiện và đồ tươi: đó là ý chính. Câu a là bẫy vì nửa đầu khen siêu thị lớn, nhưng ý của người viết nằm ở phần sau 그런데."
+
+  - key: ko:examq:topik-i-m1-r14
+    section: reading
+    kind: mcq
+    question_type: topik_i_read_order
+    level_code: topik2
+    points: 4
+    prompt:
+      instruction_vi: Sắp xếp các câu (가)–(라) theo thứ tự hợp lý.
+      stem: 다음을 순서대로 맞게 배열한 것을 고르십시오.
+      stem_lang: ko
+      passage: |-
+        (가) 그래서 오늘 아침에 우산을 사러 편의점에 갔습니다.
+        (나) 어제 버스에 우산을 두고 내렸습니다.
+        (다) 그런데 편의점에 우산이 다 팔리고 없었습니다.
+        (라) 결국 비를 맞으면서 학교에 갔습니다.
+      options:
+        - { id: a, text: "(나)-(가)-(다)-(라)", lang: ko }
+        - { id: b, text: "(나)-(다)-(가)-(라)", lang: ko }
+        - { id: c, text: "(가)-(나)-(라)-(다)", lang: ko }
+        - { id: d, text: "(가)-(다)-(나)-(라)", lang: ko }
+    answer: a
+    explanation:
+      vi: "Câu mở đầu không thể bắt đầu bằng từ nối 그래서 hay 그런데, nên (나) đứng đầu: hôm qua để quên ô trên xe buýt → (가) vì vậy đi mua ô → (다) nhưng hết ô → (라) cuối cùng dầm mưa đến trường. Thứ tự (나)-(다)-(가) sai vì “hết ô ở cửa hàng” phải xảy ra sau khi đã đến cửa hàng."

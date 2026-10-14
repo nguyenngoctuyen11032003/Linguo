@@ -5,7 +5,7 @@ import { cpSync, existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, 
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { bundleSchema, diagnosticBundleSchema, diagnosticItemSchema, gradeResponse } from '@linguo/shared';
+import { bundleSchema, diagnosticBundleSchema, diagnosticItemSchema, examBundleSchema, examServedQuestionSchema, gradeExamAnswer, gradeResponse } from '@linguo/shared';
 import { main } from './content-import.mjs';
 import { buildBundle, renderSeedSql } from './content/build.mjs';
 import { checkContent, sharedGrader } from './content/check.mjs';
@@ -14,6 +14,7 @@ test('check.mjs uses the shared gradeResponse by default', () => {
   assert.equal(sharedGrader(), gradeResponse);
 });
 import { buildDiagnosticBundle, renderDiagnosticSql } from './content/diagnostic.mjs';
+import { buildExamBundle, renderExamSql } from './content/exam.mjs';
 import { canonicalJson, hashRow } from './content/hash.mjs';
 import { contentId, uuidV5 } from './content/ids.mjs';
 import { loadContent } from './content/load.mjs';
@@ -923,4 +924,385 @@ test('real diagnostic bank: ≥ 5 items per skill × level for both languages, 4
     assert.ok(item.prompt.options.some((o) => o.id === item.answer_key), item.key);
     assert.ok(servedPrompt(item).success, item.key);
   }
+});
+
+// ---- exam practice forms (spec 9 §2) ---------------------------------------------------------------------
+
+const EXAM_FILE = 'exams/ko/mock.yaml';
+
+/** A small valid TOPIK II form: listening + reading mcq, one short_text and one essay. */
+const EXAM_YAML = `# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+language: ko
+form:
+  key: ko:exam:mock
+  family: topik_ii
+  title_vi: Đề thử
+  description_vi: Đề thử cho kiểm thử.
+  level_from: topik3
+  level_to: topik6
+  source_key: src:fixture
+  time_limits: { listening: 20, reading: 25, writing: 20 }
+  scoring:
+    verified: false
+    source_note_vi: Chưa đối chiếu.
+    section_max: { listening: 100, reading: 100, writing: 100 }
+    bands:
+      - { level_code: topik3, min_total: 120 }
+      - { level_code: topik4, min_total: 150 }
+    pass_ratio: null
+questions:
+  - key: ko:examq:mock-l01
+    section: listening
+    kind: mcq
+    question_type: topik_ii_listen_detail
+    level_code: topik3
+    points: 2
+    prompt:
+      instruction_vi: Nghe và chọn.
+      stem: 들은 내용과 같은 것을 고르십시오.
+      stem_lang: ko
+      audio_asset_id: null
+      script: "남자: 안녕하세요."
+      options:
+        - { id: a, text: "가", lang: ko }
+        - { id: b, text: "나", lang: ko }
+        - { id: c, text: "다", lang: ko }
+        - { id: d, text: "라", lang: ko }
+    answer: b
+    explanation: { vi: "Giải thích nghe." }
+  - key: ko:examq:mock-r01
+    section: reading
+    kind: mcq
+    question_type: topik_ii_read_blank
+    level_code: topik4
+    points: 2
+    prompt:
+      instruction_vi: Đọc và chọn.
+      stem: 빈칸에 알맞은 것을 고르십시오.
+      stem_lang: ko
+      passage: "비가 ( ) 갑니다."
+      options:
+        - { id: a, text: "오더라도", lang: ko }
+        - { id: b, text: "와서", lang: ko }
+    answer: a
+    explanation: { vi: "Giải thích đọc." }
+  - key: ko:examq:mock-w01
+    section: writing
+    kind: short_text
+    question_type: topik_ii_write_51
+    level_code: topik3
+    points: 10
+    prompt:
+      instruction_vi: Viết vào chỗ trống.
+      stem: ㉠에 들어갈 말을 쓰십시오.
+      stem_lang: ko
+      passage: "노트북을 ( ㉠ )."
+    answer: [두고 왔습니다, 놓고 왔습니다]
+    explanation: { vi: "Giải thích viết." }
+  - key: ko:examq:mock-w02
+    section: writing
+    kind: essay
+    question_type: topik_ii_write_53
+    level_code: topik4
+    points: 30
+    prompt:
+      instruction_vi: Viết đoạn văn.
+      stem: 200~300자로 쓰십시오.
+      stem_lang: ko
+      min_chars: 200
+      max_chars: 300
+    rubric:
+      - { key: content, label_vi: Nội dung, description_vi: Đủ ý., max_points: 7 }
+      - { key: language, label_vi: Ngôn ngữ, description_vi: Đúng ngữ pháp., max_points: 16 }
+    sample_answer: "예시 답안입니다."
+    explanation: { vi: "Giải thích bài luận." }
+`;
+
+/** Temp content tree: the lesson fixture plus one exam form. */
+function examTree(t, yaml = EXAM_YAML) {
+  const tree = tempTree(t);
+  mkdirSync(join(tree.content, 'exams', 'ko'), { recursive: true });
+  writeFileSync(join(tree.content, EXAM_FILE), yaml);
+  return tree;
+}
+
+test('exam forms: a valid form passes and builds a bundle with public prompts and private keys', (t) => {
+  const { content } = examTree(t);
+  const loaded = loadTree(content);
+  assert.deepEqual(checkContent(loaded, { grade }), []);
+  const bundle = buildExamBundle(loaded);
+  assert.ok(examBundleSchema.safeParse(bundle).success);
+  assert.equal(canonicalJson(buildExamBundle(loadTree(content))), canonicalJson(bundle), 'deterministic');
+  assert.equal(bundle.bundle_version, 1);
+  const [form] = bundle.forms;
+  assert.equal(form.id, contentId('ko:exam:mock'));
+  assert.equal(form.language_code, 'ko');
+  assert.equal(form.source_key, 'src:fixture');
+  assert.equal(form.is_demo, true);
+  assert.deepEqual([form.reviewed_by, form.reviewed_at], [null, null]);
+  assert.deepEqual(
+    form.questions.map((q) => [q.seq, q.section, q.kind]),
+    [
+      [1, 'listening', 'mcq'],
+      [2, 'reading', 'mcq'],
+      [3, 'writing', 'short_text'],
+      [4, 'writing', 'essay'],
+    ],
+  );
+  const [listen, read, short, essay] = form.questions;
+  assert.equal(listen.id, contentId('ko:examq:mock-l01'));
+  // Listening: the script is private; the public prompt keeps audio_asset_id null.
+  assert.equal(listen.script, '남자: 안녕하세요.');
+  assert.equal('script' in listen.prompt, false);
+  assert.equal(listen.prompt.audio_asset_id, null);
+  // mcq options are shuffled and opaquely re-labelled (diagnostic precedent); the answer follows.
+  for (const q of [listen, read]) {
+    for (const o of q.prompt.options) assert.match(o.id, /^o[0-9a-f]{8}$/);
+    assert.ok(q.prompt.options.some((o) => o.id === q.answer), q.key);
+    assert.equal(gradeExamAnswer('mcq', q.answer, q.answer), true);
+  }
+  assert.equal(listen.prompt.options.find((o) => o.id === listen.answer).text, '나');
+  assert.equal(read.prompt.options.find((o) => o.id === read.answer).text, '오더라도');
+  assert.deepEqual(short.answer, ['두고 왔습니다', '놓고 왔습니다']);
+  assert.equal('options' in short.prompt, false);
+  assert.equal(essay.answer, null);
+  assert.equal(essay.rubric.length, 2);
+  assert.equal(essay.sample_answer, '예시 답안입니다.');
+  assert.deepEqual([essay.prompt.min_chars, essay.prompt.max_chars], [200, 300]);
+  for (const q of form.questions) {
+    assert.deepEqual([q.script === null, q.rubric === null], [q.section !== 'listening', q.kind !== 'essay'], q.key);
+    // The public prompt fits what the RPCs serve (examServedQuestionSchema; tts_text is added server-side).
+    const served = { question_id: q.id, seq: q.seq, section: q.section, kind: q.kind, question_type: q.question_type, points: q.points, prompt: q.prompt, answer: null, flagged: false };
+    assert.ok(examServedQuestionSchema.safeParse(served).success, q.key);
+  }
+});
+
+test('exam forms: editing a question changes its hash and the form hash only', (t) => {
+  const { content } = examTree(t);
+  const before = buildExamBundle(loadTree(content)).forms[0];
+  edit(content, EXAM_FILE, 'Giải thích đọc.', 'Giải thích khác.');
+  const after = buildExamBundle(loadTree(content)).forms[0];
+  assert.notEqual(after.content_hash, before.content_hash);
+  const changed = after.questions.filter((q, i) => q.content_hash !== before.questions[i].content_hash).map((q) => q.key);
+  assert.deepEqual(changed, ['ko:examq:mock-r01']);
+});
+
+const RUBRIC = '    rubric:\n      - { key: content, label_vi: Nội dung, description_vi: Đủ ý., max_points: 7 }\n      - { key: language, label_vi: Ngôn ngữ, description_vi: Đúng ngữ pháp., max_points: 16 }\n';
+const BANDS = '    bands:\n      - { level_code: topik3, min_total: 120 }\n      - { level_code: topik4, min_total: 150 }\n';
+const ACCEPTED = 'answer: [두고 왔습니다, 놓고 왔습니다]';
+
+const EXAM_INVALID = [
+  { name: 'mcq answer not an option', from: 'answer: b', to: 'answer: z', message: 'answer "z" is not an option id' },
+  { name: 'mcq answer is a list', from: 'answer: b', to: 'answer: [b]', message: 'mcq answer must be the id of one option' },
+  { name: 'mcq without options', from: '      options:\n        - { id: a, text: "오더라도", lang: ko }\n        - { id: b, text: "와서", lang: ko }\n', to: '', message: 'mcq needs prompt.options' },
+  { name: 'duplicate option text', from: 'text: "다"', to: 'text: "가"', message: 'duplicate option text' },
+  { name: 'mcq in writing', from: '    section: writing\n    kind: short_text', to: '    section: writing\n    kind: mcq', message: 'writing questions are short_text or essay' },
+  { name: 'short_text outside writing', from: '    section: writing\n    kind: short_text', to: '    section: reading\n    kind: short_text', message: 'short_text belongs to the writing section' },
+  { name: 'short_text answer is an option id', from: ACCEPTED, to: 'answer: a', message: 'short_text answer must be a list of accepted answers' },
+  { name: 'short_text answers equal after normalisation', from: ACCEPTED, to: 'answer: [두고 왔습니다, "두고  왔습니다."]', message: 'are the same after normalisation' },
+  { name: 'short_text answer empty after normalisation', from: ACCEPTED, to: 'answer: [두고 왔습니다, "..."]', message: 'is empty after normalisation' },
+  { name: 'short_text without answer', from: `    ${ACCEPTED}\n`, to: '', message: 'short_text needs an answer' },
+  { name: 'essay with an answer', from: '    sample_answer: "예시 답안입니다."\n', to: '    sample_answer: "예시 답안입니다."\n    answer: [x]\n', message: 'essay has no answer' },
+  { name: 'essay without rubric', from: RUBRIC, to: '', message: 'essay needs a rubric' },
+  { name: 'essay min_chars above max_chars', from: 'min_chars: 200', to: 'min_chars: 400', message: 'min_chars 400 is above max_chars 300' },
+  { name: 'rubric outside essay', from: '    explanation: { vi: "Giải thích viết." }\n', to: '    explanation: { vi: "Giải thích viết." }\n    rubric: [{ key: content, label_vi: x, description_vi: y, max_points: 1 }]\n', message: 'rubric is only for essay' },
+  { name: 'listening without script or audio', from: '      script: "남자: 안녕하세요."\n', to: '', message: 'listening needs prompt.script or prompt.audio_asset_id' },
+  { name: 'script outside listening', from: '      passage: "비가 ( ) 갑니다."\n', to: '      passage: "비가 ( ) 갑니다."\n      script: "x"\n', message: 'prompt.script and prompt.audio_asset_id are only for listening' },
+  { name: 'missing time limit', from: 'time_limits: { listening: 20, reading: 25, writing: 20 }', to: 'time_limits: { listening: 20, reading: 25 }', message: 'time_limits.writing is missing' },
+  { name: 'time limit for an empty section', from: '  - key: ko:examq:mock-l01\n    section: listening', to: '  - key: ko:examq:mock-l01\n    section: reading', message: 'time_limits.listening is set but the section has no questions' },
+  { name: 'level of another language', from: 'level_code: topik4\n    points: 2', to: 'level_code: b1\n    points: 2', message: 'level_code "b1" is not a ko level' },
+  { name: 'level outside the form range', from: 'level_code: topik4\n    points: 2', to: 'level_code: topik2\n    points: 2', message: 'outside the form range topik3–topik6' },
+  { name: 'missing demo header', from: '# DEMO — chưa kiểm duyệt\n', to: '', message: 'demo file must start with' },
+  { name: 'demo scale marked verified', from: 'verified: false', to: 'verified: true', message: 'demo: true requires scoring.verified false' },
+  { name: 'demo with review', from: 'demo: true', to: 'demo: true\nreviewed_by: someone', message: 'demo: true but reviewed_at/reviewed_by is set' },
+  { name: 'non-demo without review', from: 'demo: true', to: 'demo: false', message: 'demo: false requires reviewed_at and reviewed_by' },
+  { name: 'language does not match folder', from: 'language: ko', to: 'language: en', message: 'does not match folder' },
+  { name: 'family of another language', from: 'family: topik_ii', to: 'family: cefr', message: 'family cefr is a en exam, not ko' },
+  { name: 'unknown source', from: 'source_key: src:fixture', to: 'source_key: src:nope', message: 'unknown source "src:nope"' },
+  { name: 'bands not ascending', from: 'min_total: 150', to: 'min_total: 100', message: 'scoring.bands must be ascending' },
+  { name: 'band above the maximum total', from: 'min_total: 150', to: 'min_total: 400', message: 'is above the section_max total 300' },
+  { name: 'topik without bands', from: BANDS, to: '    bands: []\n', message: 'topik_ii forms need scoring.bands' },
+  { name: 'topik with pass_ratio', from: 'pass_ratio: null', to: 'pass_ratio: 0.6', message: 'topik_ii forms have pass_ratio null' },
+  { name: 'missing section_max', from: 'section_max: { listening: 100, reading: 100, writing: 100 }', to: 'section_max: { listening: 100, reading: 100 }', message: 'scoring.section_max.writing is missing' },
+  { name: 'question_type of another family', from: 'question_type: topik_ii_read_blank', to: 'question_type: topik_i_read_blank', message: 'question_type must start with "topik_ii_"' },
+  { name: 'question_type reused in another section', from: 'question_type: topik_ii_read_blank', to: 'question_type: topik_ii_listen_detail', message: 'one section and kind per type' },
+  { name: 'duplicate question key', from: 'key: ko:examq:mock-r01', to: 'key: ko:examq:mock-l01', message: 'duplicate key "ko:examq:mock-l01"' },
+  { name: 'key of another language', from: 'key: ko:examq:mock-r01', to: 'key: en:examq:mock-r01', message: 'must start with "ko:"' },
+  { name: 'non-NFC text', from: 'Giải thích viết.', to: 'Giải thích viết.', message: 'text is not NFC-normalized' },
+  { name: 'unknown field', from: 'answer: b', to: 'answer: b\n    answer_key: b', message: 'answer_key' },
+];
+
+for (const c of EXAM_INVALID) {
+  test(`--check rejects exam: ${c.name}`, (t) => {
+    const { content } = examTree(t);
+    edit(content, EXAM_FILE, c.from, c.to);
+    const errors = checkContent(loadTree(content), { grade });
+    assert.ok(errors.some((e) => e.includes(c.message)), `expected ${JSON.stringify(c.message)}, got:\n${errors.join('\n')}`);
+    for (const e of errors) assert.match(e, /^content\/\S+: /);
+  });
+}
+
+test('exam forms: section order, contiguity, form level range and layout are enforced', (t) => {
+  const { content } = examTree(t);
+  edit(content, EXAM_FILE, '  - key: ko:examq:mock-l01\n    section: listening', '  - key: ko:examq:mock-l01\n    section: reading');
+  edit(content, EXAM_FILE, '  - key: ko:examq:mock-r01\n    section: reading', '  - key: ko:examq:mock-r01\n    section: listening');
+  edit(content, EXAM_FILE, 'level_from: topik3', 'level_from: topik5');
+  edit(content, EXAM_FILE, 'level_to: topik6', 'level_to: topik4');
+  writeFileSync(join(content, 'exams', 'nested.yaml'), EXAM_YAML);
+  const errors = checkContent(loadTree(content), { grade }).join('\n');
+  assert.match(errors, /sections must follow the order listening → reading → writing \(got reading → listening → writing\)/);
+  assert.match(errors, /level_from "topik5" is above level_to "topik4"/);
+  assert.match(errors, /exams\/nested\.yaml: unexpected file location/);
+
+  const split = examTree(t);
+  edit(split.content, EXAM_FILE, '  - key: ko:examq:mock-w02\n    section: writing', '  - key: ko:examq:mock-w02\n    section: listening');
+  assert.match(checkContent(loadTree(split.content), { grade }).join('\n'), /questions of a section must be contiguous \(order: listening → reading → writing → listening\)/);
+});
+
+test('exam forms: cefr forms need pass_ratio and no bands', (t) => {
+  const cefr = EXAM_YAML.replace('language: ko', 'language: en')
+    .replace('key: ko:exam:mock', 'key: en:exam:mock')
+    .replaceAll('key: ko:examq:', 'key: en:examq:')
+    .replace('family: topik_ii', 'family: cefr')
+    .replace('level_from: topik3', 'level_from: a1')
+    .replace('level_to: topik6', 'level_to: b1')
+    .replace(BANDS, '    bands: []\n')
+    .replaceAll(/level_code: topik\d/g, 'level_code: a2')
+    .replaceAll('topik_ii_', 'cefr_')
+    .replace('pass_ratio: null', 'pass_ratio: 0.6')
+    .replace('section_max: { listening: 100, reading: 100, writing: 100 }', 'section_max: {}');
+  const tree = tempTree(t);
+  mkdirSync(join(tree.content, 'exams', 'en'), { recursive: true });
+  const file = join(tree.content, 'exams', 'en', 'mock.yaml');
+  writeFileSync(file, cefr);
+  assert.deepEqual(checkContent(loadTree(tree.content), { grade }), []);
+  writeFileSync(file, cefr.replace('pass_ratio: 0.6', 'pass_ratio: null').replace('    bands: []\n', '    bands: [{ level_code: a2, min_total: 10 }]\n'));
+  const errors = checkContent(loadTree(tree.content), { grade }).join('\n');
+  assert.match(errors, /cefr forms have no score bands/);
+  assert.match(errors, /cefr forms need scoring\.pass_ratio/);
+});
+
+test('--emit-sql appends the exam import after the diagnostic import', async (t) => {
+  const { dir, content } = diagTree(t, ['en']);
+  mkdirSync(join(content, 'exams', 'ko'), { recursive: true });
+  writeFileSync(join(content, EXAM_FILE), EXAM_YAML);
+  const r = await cli(t, ['--emit-sql', '--dir', 'content', '--out', 'seed.sql'], { cwd: dir });
+  assert.equal(r.code, 0, r.err);
+  assert.match(r.out, /1 exam forms \(4 questions\)/);
+  const sql = readFileSync(join(dir, 'seed.sql'), 'utf8');
+  const diagAt = sql.indexOf('select content_private.import_diagnostic_bundle($diagnostic$');
+  const examAt = sql.indexOf('select public.import_exam_content_bundle($exam${\n  "bundle_version": 1,');
+  assert.ok(diagAt > 0 && examAt > diagAt, 'exam statement follows the diagnostic import');
+  assert.ok(sql.endsWith('$exam$::jsonb);\n'));
+  const loaded = loadTree(content);
+  assert.equal(sql, renderSeedSql(buildBundle(loaded), renderDiagnosticSql(buildDiagnosticBundle(loaded)), renderExamSql(buildExamBundle(loaded))));
+  const check = ['--emit-sql', '--check', '--dir', 'content', '--out', 'seed.sql'];
+  assert.equal((await cli(t, check, { cwd: dir })).code, 0);
+  edit(content, EXAM_FILE, 'Giải thích đọc.', 'Giải thích mới.');
+  const stale = await cli(t, check, { cwd: dir });
+  assert.equal(stale.code, 1);
+  assert.match(stale.err, /out of date/);
+});
+
+test('--emit-sql without diagnostic files still appends the exam import', async (t) => {
+  const { dir } = examTree(t);
+  const r = await cli(t, ['--emit-sql', '--dir', 'content', '--out', 'seed.sql'], { cwd: dir });
+  assert.equal(r.code, 0, r.err);
+  const sql = readFileSync(join(dir, 'seed.sql'), 'utf8');
+  assert.equal(sql.includes('import_diagnostic_bundle'), false);
+  assert.ok(sql.indexOf('public.import_exam_content_bundle(') > sql.indexOf('content_private.import_bundle('));
+});
+
+test('--apply imports lessons, the diagnostic bank, then exam forms, and fails when the exam import fails', async (t) => {
+  const { dir, content } = diagTree(t, ['en']);
+  mkdirSync(join(content, 'exams', 'ko'), { recursive: true });
+  writeFileSync(join(content, EXAM_FILE), EXAM_YAML);
+  const calls = [];
+  const ok = { inserted: 1, updated: 0, archived: 0, unchanged: 0 };
+  const fetchImpl = async (url, init) => {
+    calls.push({ url, body: JSON.parse(init.body) });
+    return new Response(JSON.stringify(ok), { status: 200 });
+  };
+  const r = await cli(t, ['--apply', '--dir', join(dir, 'content')], { env: APPLY_ENV, fetchImpl });
+  assert.equal(r.code, 0, r.err);
+  assert.deepEqual(
+    calls.map((c) => c.url.split('/rpc/')[1]),
+    ['import_content_bundle', 'import_diagnostic_content_bundle', 'import_exam_content_bundle'],
+  );
+  const exams = examBundleSchema.parse(calls[2].body.p_bundle);
+  assert.equal(exams.forms[0].questions.length, 4);
+  assert.match(r.out, /Imported 1 exam forms \(4 questions\): \{"inserted":1/);
+
+  let n = 0;
+  const failThird = async () =>
+    ++n < 3
+      ? new Response(JSON.stringify(ok), { status: 200 })
+      : new Response(JSON.stringify({ code: 'PGRST202', message: 'Could not find the function public.import_exam_content_bundle' }), { status: 404 });
+  const missing = await cli(t, ['--apply', '--dir', join(dir, 'content')], { env: APPLY_ENV, fetchImpl: failThird });
+  assert.equal(missing.code, 1);
+  assert.match(missing.err, /HTTP 404 PGRST202 \| Could not find the function public\.import_exam_content_bundle/);
+});
+
+test('real exam forms: sizes, sections, time limits, scoring and question types per spec 9 §2', () => {
+  const loaded = loadContent(REAL_CONTENT, { label: 'content' });
+  assert.deepEqual(checkContent(loaded, { grade }), []);
+  const bundle = buildExamBundle(loaded);
+  const byKey = new Map(bundle.forms.map((f) => [f.key, f]));
+  const count = (form, section, kind) => form.questions.filter((q) => q.section === section && (!kind || q.kind === kind)).length;
+  const expected = {
+    'ko:exam:topik-i-mock-1': { listening: 10, reading: 14, time: { listening: 15, reading: 25 } },
+    'ko:exam:topik-ii-mock-1': { listening: 8, reading: 10, time: { listening: 20, reading: 25, writing: 20 } },
+    'en:exam:cefr-a2-mock-1': { listening: 8, reading: 10, time: { listening: 15, reading: 20, writing: 20 } },
+  };
+  assert.deepEqual([...byKey.keys()].sort(), Object.keys(expected).sort());
+  for (const [key, want] of Object.entries(expected)) {
+    const form = byKey.get(key);
+    assert.equal(count(form, 'listening', 'mcq'), want.listening, `${key} listening`);
+    assert.equal(count(form, 'reading', 'mcq'), want.reading, `${key} reading`);
+    assert.deepEqual(form.time_limits, want.time, `${key} time`);
+    assert.equal(form.is_demo, true);
+    assert.equal(form.scoring.verified, false);
+    assert.ok(new Set(form.questions.map((q) => q.question_type)).size >= 4, `${key}: at least 4 question types`);
+    for (const q of form.questions.filter((x) => x.section === 'listening')) assert.ok(q.script && q.prompt.audio_asset_id === null, q.key);
+  }
+  const topik1 = byKey.get('ko:exam:topik-i-mock-1');
+  assert.equal(count(topik1, 'writing'), 0);
+  assert.deepEqual(topik1.scoring.section_max, { listening: 100, reading: 100 });
+  assert.deepEqual(topik1.scoring.bands, [
+    { level_code: 'topik1', min_total: 80 },
+    { level_code: 'topik2', min_total: 140 },
+  ]);
+  const topik2 = byKey.get('ko:exam:topik-ii-mock-1');
+  assert.equal(count(topik2, 'writing', 'short_text'), 2);
+  assert.equal(count(topik2, 'writing', 'essay'), 1);
+  assert.deepEqual(topik2.scoring.section_max, { listening: 100, reading: 100, writing: 100 });
+  assert.deepEqual(
+    topik2.scoring.bands.map((b) => [b.level_code, b.min_total]),
+    [
+      ['topik3', 120],
+      ['topik4', 150],
+      ['topik5', 190],
+      ['topik6', 230],
+    ],
+  );
+  for (const q of topik2.questions.filter((x) => x.kind === 'short_text')) assert.ok(q.answer.length >= 2, `${q.key}: several accepted answers`);
+  const essay53 = topik2.questions.find((q) => q.kind === 'essay');
+  assert.ok(essay53.rubric.length >= 3);
+  assert.ok(essay53.sample_answer.length >= 200 && essay53.sample_answer.length <= 300, `53 sample answer is ${essay53.sample_answer.length} chars`);
+  const cefr = byKey.get('en:exam:cefr-a2-mock-1');
+  assert.equal(count(cefr, 'writing', 'essay'), 1);
+  assert.deepEqual([cefr.scoring.bands, cefr.scoring.pass_ratio], [[], 0.6]);
+  assert.ok(cefr.questions.find((q) => q.kind === 'essay').rubric.length >= 3);
+  // Every mcq answer is one of its served options, and the correct option lands in every position.
+  const slots = new Set();
+  for (const form of bundle.forms) {
+    for (const q of form.questions.filter((x) => x.kind === 'mcq')) {
+      const i = q.prompt.options.findIndex((o) => o.id === q.answer);
+      assert.ok(i >= 0, q.key);
+      if (q.prompt.options.length === 4) slots.add(i);
+    }
+  }
+  assert.equal(slots.size, 4, 'correct options are spread over every position');
 });

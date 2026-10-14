@@ -11,6 +11,7 @@ Trang `/app/tien-do` tách rõ ba lớp theo PRD 10.2: **hoạt động** (đã 
 
 ## 2. Dữ liệu (migration `20261015000100_progress.sql`)
 
+- Mọi bảng mới có `user_id → auth.users on delete cascade` và RLS select-own (test RLS chéo người dùng của Spec 7 duyệt mọi bảng public; `export_my_data`/`delete_my_account` bao trùm các bảng này).
 - **`activity_days`** `(user_id, learning_path_id, local_day date)` PK; cột `active_ms bigint`, `answers int`, `correct_first int`, `lessons int`, `reviews int`, `xp int`, `updated_at`. RLS select-own; không grant ghi.
 - **Trigger** (security definer, `search_path=''`) cập nhật `activity_days` bằng upsert:
   - `attempts` AFTER INSERT: `answers+1`, `active_ms += least(response_ms, 120000)`; nếu `attempt_no = 1` và không `after_reveal`: `correct` → xp +2 và `correct_first+1`, `almost` → xp +1. Ngày = ngày địa phương của `coalesce(client_at, created_at)` theo `profiles.timezone`, kẹp vào `[today-7, today]`.
@@ -32,7 +33,7 @@ Trang `/app/tien-do` tách rõ ba lớp theo PRD 10.2: **hoạt động** (đã 
 
 ## 3. Analytics (migration `20261015000110_analytics.sql`)
 
-- **`analytics_events`** `(id bigint identity, user_id uuid null on delete set null, name text check ∈ ANALYTICS_EVENTS, props jsonb ≤ 1 KB, route text ≤ 80, client_at timestamptz, created_at)`. RLS bật, **không** grant cho client.
+- **`analytics_events`** `(id bigint identity, user_id uuid not null → auth.users on delete cascade, name text check ∈ ANALYTICS_EVENTS, props jsonb ≤ 1 KB, route text ≤ 80, client_at timestamptz, created_at)`. RLS bật, policy select-own; client không insert trực tiếp.
 - **`track_events(p_events jsonb) → integer`**: mảng ≤ 20; mỗi phần tử kiểm tra tên, props (≤ 8 khoá `^[a-z_]{1,32}$`, giá trị string ≤ 64 / number / boolean), route không chứa `?`/`#`; quá 120 sự kiện/phút → `rate_limited`; `analytics_opt_out` → trả 0 không ghi. Sai định dạng → `invalid_event`.
 - **`purge_analytics() → integer`** (chỉ `service_role`): xoá sự kiện > 180 ngày.
 

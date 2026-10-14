@@ -198,9 +198,10 @@ export function buildBundle(loaded, { gitSha = null } = {}) {
 
 /**
  * supabase/seed.sql contents: one dollar-quoted import_bundle call, then (when `diagnosticSql` is
- * given, see diagnostic.mjs renderDiagnosticSql) the diagnostic item bank import.
+ * given, see diagnostic.mjs renderDiagnosticSql) the diagnostic item bank import, then (when
+ * `examSql` is given, see exam.mjs renderExamSql) the exam forms import.
  */
-export function renderSeedSql(bundle, diagnosticSql = null) {
+export function renderSeedSql(bundle, diagnosticSql = null, examSql = null) {
   const json = canonicalJson(bundle, 2);
   if (json.includes(DOLLAR_TAG)) throw new Error(`Content must not contain the text ${DOLLAR_TAG}`);
   return [
@@ -209,5 +210,5 @@ export function renderSeedSql(bundle, diagnosticSql = null) {
     '-- except through `pnpm content:push` (workflow content-publish.yml).',
     `select content_private.import_bundle(${DOLLAR_TAG}${json}${DOLLAR_TAG}::jsonb);`,
     '',
-  ].join('\n') + (diagnosticSql ?? '');
+  ].join('\n') + (diagnosticSql ?? '') + (examSql ?? '');
 }

@@ -33,6 +33,26 @@ export type Database = {
                   Relationships: [
                     
                   ]
+                },"activity_days": {
+                  Row: {
+                    "active_ms": number,"answers": number,"correct_first": number,"learning_path_id": string,"lessons": number,"local_day": string,"reviews": number,"updated_at": string,"user_id": string,"xp": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "active_ms"?: number,"answers"?: number,"correct_first"?: number,"learning_path_id": string,"lessons"?: number,"local_day": string,"reviews"?: number,"updated_at"?: string,"user_id": string,"xp"?: number
+                  }
+                  Update: {
+                    "active_ms"?: number,"answers"?: number,"correct_first"?: number,"learning_path_id"?: string,"lessons"?: number,"local_day"?: string,"reviews"?: number,"updated_at"?: string,"user_id"?: string,"xp"?: number
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "activity_days_learning_path_id_fkey"
+      columns: ["learning_path_id"]
+isOneToOne: false
+      referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    }
+                  ]
                 },"ai_cache": {
                   Row: {
                     "created_at": string,"expires_at": string,"hits": number,"key": string,"model": string,"payload": NonNullable<Json>,"prompt_version": string,"task": string
@@ -91,6 +111,20 @@ isOneToOne: true
                   }
                   Update: {
                     "attempts"?: number,"cached"?: boolean,"created_at"?: string,"http_status"?: number | null,"id"?: string,"input_chars"?: number,"latency_ms"?: number,"model"?: string,"prompt_version"?: string,"repaired"?: boolean,"status"?: string,"task"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"analytics_events": {
+                  Row: {
+                    "client_at": string | null,"created_at": string,"id": number,"name": string,"props": NonNullable<Json>,"route": string | null,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "client_at"?: string | null,"created_at"?: string,"id"?: never,"name": string,"props"?: NonNullable<Json>,"route"?: string | null,"user_id": string
+                  }
+                  Update: {
+                    "client_at"?: string | null,"created_at"?: string,"id"?: never,"name"?: string,"props"?: NonNullable<Json>,"route"?: string | null,"user_id"?: string
                   }
                   Relationships: [
                     
@@ -250,6 +284,110 @@ isOneToOne: false
                   }
                   Relationships: [
                     
+                  ]
+                },"exam_answers": {
+                  Row: {
+                    "answer": string | null,"attempt_id": string,"created_at": string,"flagged": boolean,"idempotency_key": string,"payload_hash": string,"question_id": string,"updated_at": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "answer"?: string | null,"attempt_id": string,"created_at"?: string,"flagged"?: boolean,"idempotency_key": string,"payload_hash": string,"question_id": string,"updated_at"?: string,"user_id": string
+                  }
+                  Update: {
+                    "answer"?: string | null,"attempt_id"?: string,"created_at"?: string,"flagged"?: boolean,"idempotency_key"?: string,"payload_hash"?: string,"question_id"?: string,"updated_at"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "exam_answers_attempt_id_fkey"
+      columns: ["attempt_id"]
+isOneToOne: false
+      referencedRelation: "exam_attempts"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "exam_answers_question_id_fkey"
+      columns: ["question_id"]
+isOneToOne: false
+      referencedRelation: "exam_questions"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"exam_attempts": {
+                  Row: {
+                    "content_version": number,"deadline_at": string | null,"form_id": string,"id": string,"learning_path_id": string,"mode": string,"question_ids": (string)[],"question_type": string | null,"result": Json | null,"section": string | null,"started_at": string,"status": string,"submitted_at": string | null,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "content_version": number,"deadline_at"?: string | null,"form_id": string,"id"?: string,"learning_path_id": string,"mode": string,"question_ids": (string)[],"question_type"?: string | null,"result"?: Json | null,"section"?: string | null,"started_at"?: string,"status"?: string,"submitted_at"?: string | null,"user_id": string
+                  }
+                  Update: {
+                    "content_version"?: number,"deadline_at"?: string | null,"form_id"?: string,"id"?: string,"learning_path_id"?: string,"mode"?: string,"question_ids"?: (string)[],"question_type"?: string | null,"result"?: Json | null,"section"?: string | null,"started_at"?: string,"status"?: string,"submitted_at"?: string | null,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "exam_attempts_form_id_fkey"
+      columns: ["form_id"]
+isOneToOne: false
+      referencedRelation: "exam_forms"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "exam_attempts_learning_path_id_fkey"
+      columns: ["learning_path_id"]
+isOneToOne: false
+      referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"exam_forms": {
+                  Row: {
+                    "content_hash": string,"created_at": string,"description_vi": string,"family": string,"id": string,"is_demo": boolean,"key": string,"language_code": string,"level_from": string,"level_to": string,"reviewed_at": string | null,"reviewed_by": string | null,"scoring": NonNullable<Json>,"source_id": string,"status": string,"time_limits": NonNullable<Json>,"title_vi": string,"updated_at": string,"version": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "content_hash": string,"created_at"?: string,"description_vi": string,"family": string,"id": string,"is_demo"?: boolean,"key": string,"language_code": string,"level_from": string,"level_to": string,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"scoring": NonNullable<Json>,"source_id": string,"status"?: string,"time_limits": NonNullable<Json>,"title_vi": string,"updated_at"?: string,"version"?: number
+                  }
+                  Update: {
+                    "content_hash"?: string,"created_at"?: string,"description_vi"?: string,"family"?: string,"id"?: string,"is_demo"?: boolean,"key"?: string,"language_code"?: string,"level_from"?: string,"level_to"?: string,"reviewed_at"?: string | null,"reviewed_by"?: string | null,"scoring"?: NonNullable<Json>,"source_id"?: string,"status"?: string,"time_limits"?: NonNullable<Json>,"title_vi"?: string,"updated_at"?: string,"version"?: number
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "exam_forms_level_from_fk"
+      columns: ["language_code","level_from"]
+isOneToOne: false
+      referencedRelation: "level_reference_hours"
+      referencedColumns: ["language_code","level_code"]
+    },{
+      foreignKeyName: "exam_forms_level_to_fk"
+      columns: ["language_code","level_to"]
+isOneToOne: false
+      referencedRelation: "level_reference_hours"
+      referencedColumns: ["language_code","level_code"]
+    },{
+      foreignKeyName: "exam_forms_source_id_fkey"
+      columns: ["source_id"]
+isOneToOne: false
+      referencedRelation: "content_sources"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"exam_questions": {
+                  Row: {
+                    "created_at": string,"form_id": string,"id": string,"key": string,"kind": string,"level_code": string,"points": number,"prompt": NonNullable<Json>,"question_type": string,"section": string,"seq": number,"status": string,"updated_at": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "created_at"?: string,"form_id": string,"id": string,"key": string,"kind": string,"level_code": string,"points": number,"prompt": NonNullable<Json>,"question_type": string,"section": string,"seq": number,"status"?: string,"updated_at"?: string
+                  }
+                  Update: {
+                    "created_at"?: string,"form_id"?: string,"id"?: string,"key"?: string,"kind"?: string,"level_code"?: string,"points"?: number,"prompt"?: NonNullable<Json>,"question_type"?: string,"section"?: string,"seq"?: number,"status"?: string,"updated_at"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "exam_questions_form_id_fkey"
+      columns: ["form_id"]
+isOneToOne: false
+      referencedRelation: "exam_forms"
+      referencedColumns: ["id"]
+    }
                   ]
                 },"exercises": {
                   Row: {
@@ -669,16 +807,36 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
-                },"user_preferences": {
+                },"user_badges": {
                   Row: {
-                    "ai_notice_ack_at": string | null,"reduce_motion": boolean,"theme": string,"updated_at": string,"user_id": string
+                    "badge_key": string,"earned_at": string,"learning_path_id": string,"user_id": string
                   }
                   ComputedFields: never
                   Insert: {
-                    "ai_notice_ack_at"?: string | null,"reduce_motion"?: boolean,"theme"?: string,"updated_at"?: string,"user_id": string
+                    "badge_key": string,"earned_at"?: string,"learning_path_id": string,"user_id": string
                   }
                   Update: {
-                    "ai_notice_ack_at"?: string | null,"reduce_motion"?: boolean,"theme"?: string,"updated_at"?: string,"user_id"?: string
+                    "badge_key"?: string,"earned_at"?: string,"learning_path_id"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "user_badges_learning_path_id_fkey"
+      columns: ["learning_path_id"]
+isOneToOne: false
+      referencedRelation: "learning_paths"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"user_preferences": {
+                  Row: {
+                    "ai_notice_ack_at": string | null,"analytics_opt_out": boolean,"reduce_motion": boolean,"show_motivation": boolean,"theme": string,"updated_at": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "ai_notice_ack_at"?: string | null,"analytics_opt_out"?: boolean,"reduce_motion"?: boolean,"show_motivation"?: boolean,"theme"?: string,"updated_at"?: string,"user_id": string
+                  }
+                  Update: {
+                    "ai_notice_ack_at"?: string | null,"analytics_opt_out"?: boolean,"reduce_motion"?: boolean,"show_motivation"?: boolean,"theme"?: string,"updated_at"?: string,"user_id"?: string
                   }
                   Relationships: [
                     
@@ -848,14 +1006,44 @@ isOneToOne: false
 "export_my_data":
 { Args: Record<PropertyKey, never>; Returns: Json
                            },
+"exam_attempt_json":
+{ Args: { "p_attempt_id": string }; Returns: Json
+                           },
+"exam_build_result":
+{ Args: { "p_attempt_id": string,"p_status": string,"p_submitted_at": string }; Returns: Json
+                           },
+"exam_close_attempt":
+{ Args: { "p_attempt_id": string,"p_status": string }; Returns: Json
+                           },
+"exam_history":
+{ Args: { "p_limit"?: number,"p_path_id": string }; Returns: Json
+                           },
+"exam_normalize_text":
+{ Args: { "p_text": string }; Returns: string
+                           },
+"exam_overdue":
+{ Args: { "p_deadline_at": string }; Returns: boolean
+                           },
+"exam_served_prompt":
+{ Args: { "p_prompt": Json,"p_script": string }; Returns: Json
+                           },
+"exam_structure_warning":
+{ Args: { "p_family": string,"p_goal_type": string }; Returns: string
+                           },
 "finish_diagnostic":
 { Args: { "p_attempt_id": string }; Returns: Json
                            },
 "finish_session":
 { Args: { "p_session_id": string,"p_status": string }; Returns: Json
                            },
+"get_exam_attempt":
+{ Args: { "p_attempt_id": string }; Returns: Json
+                           },
 "get_lesson":
 { Args: { "p_lesson_id": string,"p_path_id": string }; Returns: Json
+                           },
+"get_progress_dashboard":
+{ Args: { "p_path_id": string,"p_range_days": number }; Returns: Json
                            },
 "get_review_queue":
 { Args: { "p_extra"?: boolean,"p_limit"?: number,"p_path_id": string }; Returns: Json
@@ -885,6 +1073,9 @@ isOneToOne: false
 { Args: { "p_bundle": Json }; Returns: Json
                            },
 "import_diagnostic_content_bundle":
+{ Args: { "p_bundle": Json }; Returns: Json
+                           },
+"import_exam_content_bundle":
 { Args: { "p_bundle": Json }; Returns: Json
                            },
 "learning_path_validate":
@@ -951,6 +1142,9 @@ isOneToOne: false
         isOneToOne: true
         isSetofReturn: false
       } },
+"list_exam_forms":
+{ Args: { "p_language": string }; Returns: Json
+                           },
 "path_lessons":
 { Args: { "p_path_id": string }; Returns: {
               "estimated_minutes": number,"is_demo": boolean,"lesson_id": string,"lesson_key": string,"lesson_order": number,"level_code": string,"prerequisite_ids": (string)[],"prerequisites_met": boolean,"program_id": string,"program_title": Json,"run_status": string,"title": Json,"unit_id": string,"unit_order": number,"unit_title": Json
@@ -964,6 +1158,32 @@ isOneToOne: false
                            },
 "reorder_session":
 { Args: { "p_order": (string)[],"p_session_id": string }; Returns: Json
+                           },
+"progress_answer_day":
+{ Args: { "p_client_at": string,"p_created_at": string,"p_user": string }; Returns: string
+                           },
+"progress_bump":
+{ Args: { "p_active_ms": number,"p_answers": number,"p_correct_first": number,"p_day": string,"p_lessons": number,"p_path": string,"p_reviews": number,"p_user": string,"p_xp": number }; Returns: undefined
+                           },
+"progress_day_active":
+{ Args: { "p_active_ms": number,"p_lessons": number,"p_reviews": number }; Returns: boolean
+                           },
+"progress_local_day":
+{ Args: { "p_at": string,"p_user": string }; Returns: string
+                           },
+"progress_prompt_text":
+{ Args: { "p_prompt": Json,"p_type": string }; Returns: string
+                           },
+"progress_run_xp":
+{ Args: { "p_run_id": string }; Returns: number
+                           },
+"progress_streak":
+{ Args: { "p_path": string,"p_user": string }; Returns: {
+              "best": number,"current": number,"grace_left": number
+            }[]
+                           },
+"purge_analytics":
+{ Args: Record<PropertyKey, never>; Returns: number
                            },
 "review_day_totals":
 { Args: { "p_extra": boolean,"p_now": string,"p_path_id": string,"p_user": string,"p_weekly_minutes": (number)[] }; Returns: Json
@@ -992,6 +1212,9 @@ isOneToOne: false
       } },
 "review_summary":
 { Args: { "p_path_id": string }; Returns: Json
+                           },
+"save_exam_answer":
+{ Args: { "p_answer": string,"p_attempt_id": string,"p_flagged": boolean,"p_idempotency_key": string,"p_question_id": string }; Returns: Json
                            },
 "save_lesson_cursor":
 { Args: { "p_cursor": number,"p_run_id": string }; Returns: undefined
@@ -1099,14 +1322,23 @@ isOneToOne: false
 "start_diagnostic":
 { Args: { "p_mode"?: string,"p_path_id": string }; Returns: Json
                            },
+"start_exam":
+{ Args: { "p_form_id": string,"p_mode": string,"p_path_id": string,"p_question_type"?: string,"p_section"?: string }; Returns: Json
+                           },
 "start_lesson":
 { Args: { "p_lesson_id": string,"p_path_id": string }; Returns: Json
                            },
 "study_session_json":
 { Args: { "p_id": string }; Returns: Json
                            },
+"submit_exam":
+{ Args: { "p_attempt_id": string }; Returns: Json
+                           },
 "submit_exercise":
 { Args: { "p_client_at": string,"p_confidence": number,"p_exercise_id": string,"p_exercise_version": number,"p_hint_count": number,"p_idempotency_key": string,"p_response": Json,"p_response_ms": number,"p_run_id": string }; Returns: Json
+                           },
+"track_events":
+{ Args: { "p_events": Json }; Returns: number
                            },
 "update_learning_path_plan":
 { Args: { "p_goal_type": string,"p_id": string,"p_target_date"?: string,"p_target_level": string,"p_weekly_minutes": (number)[] }; Returns: {

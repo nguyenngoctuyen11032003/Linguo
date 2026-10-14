@@ -9,7 +9,8 @@
 // it posts the bundle to the service_role-only RPC public.import_content_bundle, a thin wrapper around
 // content_private.import_bundle (the same import supabase/seed.sql runs). When content/diagnostic/ holds
 // items it then posts the diagnostic bank to public.import_diagnostic_content_bundle, the wrapper around
-// content_private.import_diagnostic_bundle (the second statement of supabase/seed.sql).
+// content_private.import_diagnostic_bundle (the second statement of supabase/seed.sql). When content/exams/
+// holds forms it finally posts them to public.import_exam_content_bundle (the third statement of seed.sql).
 import { existsSync, readFileSync, realpathSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -17,6 +18,7 @@ import { importResultSchema } from '@linguo/shared';
 import { buildBundle, renderSeedSql } from './content/build.mjs';
 import { checkContent, sharedGrader } from './content/check.mjs';
 import { buildDiagnosticBundle, renderDiagnosticSql } from './content/diagnostic.mjs';
+import { buildExamBundle, examFiles, renderExamSql } from './content/exam.mjs';
 import { loadContent } from './content/load.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -76,16 +78,20 @@ export async function main(
   const lessonCount = loaded.files.filter((f) => f.kind === 'lesson').length;
   const diagnosticCount = loaded.files.filter((f) => f.kind === 'diagnostic').reduce((n, f) => n + f.data.items.length, 0);
   const diagnosticNote = diagnosticCount ? `, ${diagnosticCount} diagnostic items` : '';
+  const exams = examFiles(loaded.files);
+  const examQuestionCount = exams.reduce((n, f) => n + f.data.questions.length, 0);
+  const examNote = exams.length ? `, ${exams.length} exam forms (${examQuestionCount} questions)` : '';
 
   if (!emitSql && !apply) {
-    log(`Content OK (${loaded.files.length} files, ${lessonCount} lessons${diagnosticNote}).`);
+    log(`Content OK (${loaded.files.length} files, ${lessonCount} lessons${diagnosticNote}${examNote}).`);
     return 0;
   }
 
   if (emitSql) {
     // No diagnostic files → no second statement (a lessons-only tree seeds exactly as before).
     const diagnosticSql = diagnosticCount ? renderDiagnosticSql(buildDiagnosticBundle(loaded, { gitSha: null })) : null;
-    const sql = renderSeedSql(buildBundle(loaded, { gitSha: null }), diagnosticSql);
+    const examSql = exams.length ? renderExamSql(buildExamBundle(loaded)) : null;
+    const sql = renderSeedSql(buildBundle(loaded, { gitSha: null }), diagnosticSql, examSql);
     if (check) {
       const current = existsSync(out) ? readFileSync(out, 'utf8') : null;
       if (current !== sql) {
@@ -96,7 +102,7 @@ export async function main(
       return 0;
     }
     writeFileSync(out, sql);
-    log(`Wrote ${outName} (${lessonCount} lessons${diagnosticNote}).`);
+    log(`Wrote ${outName} (${lessonCount} lessons${diagnosticNote}${examNote}).`);
     return 0;
   }
 
@@ -161,10 +167,17 @@ export async function main(
   const lessons = await post('import_content_bundle', buildBundle(loaded, { gitSha }));
   if (!lessons) return 1;
   log(`Imported ${lessonCount} lessons: ${JSON.stringify(lessons)}`);
-  if (!diagnosticCount) return 0;
-  const diagnostic = await post('import_diagnostic_content_bundle', buildDiagnosticBundle(loaded, { gitSha }));
-  if (!diagnostic) return 1;
-  log(`Imported ${diagnosticCount} diagnostic items: ${JSON.stringify(diagnostic)}`);
+  if (diagnosticCount) {
+    const diagnostic = await post('import_diagnostic_content_bundle', buildDiagnosticBundle(loaded, { gitSha }));
+    if (!diagnostic) return 1;
+    log(`Imported ${diagnosticCount} diagnostic items: ${JSON.stringify(diagnostic)}`);
+  }
+  if (exams.length) {
+    // The exam bundle has no git_sha (examBundleSchema); its import returns the same counts.
+    const exam = await post('import_exam_content_bundle', buildExamBundle(loaded));
+    if (!exam) return 1;
+    log(`Imported ${exams.length} exam forms (${examQuestionCount} questions): ${JSON.stringify(exam)}`);
+  }
   return 0;
 }
 
