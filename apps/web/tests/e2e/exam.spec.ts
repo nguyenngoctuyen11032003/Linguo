@@ -13,6 +13,8 @@ test.describe.configure({ timeout: 90_000 });
 
 const KO_PATH = pathRow({ id: 'path-ko', language_code: 'ko', goal_type: 'topik_i', current_level: 'topik1', target_level: 'topik2' });
 const TOPIK_I = examForm('ko:exam:topik-i-mock-1');
+const EN_PATH = pathRow({ id: 'path-en', language_code: 'en', goal_type: 'cefr', current_level: 'a2', target_level: 'b1' });
+const CEFR_A2 = examForm('en:exam:cefr-a2-mock-1');
 const A11Y_PROJECTS = ['iphone-15-pro', 'pixel-7'];
 
 type Row = Record<string, any>; // eslint-disable-line @typescript-eslint/no-explicit-any
@@ -134,6 +136,42 @@ test('drills one question type without a clock', async ({ page }) => {
   expect(drill?.mode).toBe('question_type');
   expect(drill!.questionIds.length).toBeLessThanOrEqual(10);
   await expectNoHorizontalScroll(page);
+});
+
+test('AI practice feedback on a written essay (spec 9 X6)', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  page.on('dialog', (dialog) => void dialog.accept());
+  const mock = await mockSupabase(page, { paths: [EN_PATH], ai: { ackAt: '2026-10-01T00:00:00Z' } });
+  await signIn(page);
+  await openHub(page);
+  await page.getByRole('button', { name: 'Luyện theo phần' }).click();
+  await page.getByRole('button', { name: 'Luyện phần Viết' }).click();
+  await expect(page).toHaveURL(/\/app\/luyen-thi\/lam-bai\//);
+  const essay = 'Hi Alex, lets watch Toy Story on Saturday. We meet at 6 at the cinema. See you, Lan';
+  await page.getByLabel('Bài viết của bạn').fill(essay);
+  await expect(page.getByText('Đã lưu câu trả lời')).toBeVisible();
+  await page.getByRole('button', { name: 'Nộp bài' }).click();
+  await page.getByRole('dialog', { name: 'Nộp bài?' }).getByRole('button', { name: 'Nộp bài' }).click();
+  await expect(page.getByRole('heading', { level: 1, name: 'Kết quả bài luyện' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Nhận xét bằng AI' }).click();
+  const sheet = page.getByRole('dialog', { name: 'Nhận xét bài viết' });
+  await expect(sheet.getByText('Phản hồi luyện tập — không phải điểm chính thức')).toBeVisible();
+  const writing = CEFR_A2.questions.find((q: Row) => q.kind === 'essay');
+  const rows = sheet.getByRole('list', { name: 'Nhận xét theo tiêu chí' }).getByRole('listitem');
+  await expect(rows).toHaveCount(writing.rubric.length);
+  await expect(rows.first()).toContainText(`${writing.rubric[0].max_points - 1}/${writing.rubric[0].max_points} điểm`);
+  await expect(sheet.getByText(/let's watch a film/)).toHaveAttribute('lang', 'en');
+  await expectNoHorizontalScroll(page);
+  await axe(page);
+
+  const [request] = mock.ai.requests();
+  expect(request).toMatchObject({ task: 'review_writing', language: 'en', level: 'a2', answer: essay });
+  expect((request!.rubric as Row[]).map((r) => r.key)).toEqual(writing.rubric.map((r: Row) => r.key));
+
+  await page.keyboard.press('Escape');
+  await expect(sheet).toBeHidden();
+  await expect(page.getByRole('button', { name: 'Nhận xét bằng AI' })).toBeFocused();
 });
 
 for (const colorScheme of ['light', 'dark'] as const) {

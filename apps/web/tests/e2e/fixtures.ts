@@ -972,9 +972,22 @@ function aiResetsAt(): string {
   return `${localDate(1)}T00:00:00+07:00`;
 }
 
-function aiData(task: string, mode: AiMockMode): Record<string, unknown> {
+function aiData(task: string, mode: AiMockMode, request: Row = {}): Record<string, unknown> {
   const html = mode === 'html';
   switch (task) {
+    case 'review_writing': {
+      // Spec 9 X6: one entry per rubric criterion, never above its max_points.
+      const rubric = (Array.isArray(request.rubric) ? request.rubric : []) as Row[];
+      return {
+        criteria: rubric.map((r) => ({
+          key: r.key,
+          points: Math.max(0, Number(r.max_points) - 1),
+          comment_vi: html ? AI_HTML_PAYLOAD : `Tiêu chí ${String(r.label_vi)}: làm khá tốt, còn một lỗi nhỏ.`,
+        })),
+        overall_vi: 'Bài viết đủ ý chính; chú ý chính tả và dấu câu.',
+        corrected_version: request.language === 'ko' ? '안녕하세요. 저는 란이에요.' : "Hi Alex, let's watch a film on Saturday at 6 outside the cinema. See you, Lan",
+      };
+    }
     case 'analyze_error':
       return {
         verdict: 'incorrect',
@@ -1033,7 +1046,7 @@ function createAiBackend(opts: AiMockOptions = {}) {
       json: {
         task,
         prompt_version: `${task}@1`,
-        data: aiData(task, mode),
+        data: aiData(task, mode, b),
         cached: false,
         ai_generated: true,
         response_id: randomUUID(),
