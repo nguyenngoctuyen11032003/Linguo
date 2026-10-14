@@ -56,6 +56,22 @@ pnpm db:start && pnpm db:test   # database local + test RLS (cần Docker)
 pnpm build && pnpm check:bundle # bản production: CSP được chèn lúc build, bundle không được chứa secret/source map
 ```
 
+`pnpm e2e` build web ở chế độ `e2e` (file `.env.e2e` ở gốc repo: Supabase giả ở `e2e.invalid`, mọi lời gọi được Playwright mock) rồi chạy `vite preview`; không cần Supabase hay Docker. Lần đầu cần cài trình duyệt: `pnpm --filter @linguo/web exec playwright install chromium webkit` (như CI). Test unit chạy bằng `pnpm test`, gồm cả kiểm tra migration đã deploy không bị sửa và các script trong `scripts/`.
+
+### Docker và Supabase local
+- **Chỉ chạy một stack Supabase tại một thời điểm** trên máy (`pnpm db:stop` hoặc `supabase stop` stack khác trước khi `pnpm db:start`).
+- Để chạy test database, một stack gọn là đủ (không cần Studio, Auth UI, Storage...):
+  ```bash
+  pnpm exec supabase start -x studio,imgproxy,vector,logflare,edge-runtime,realtime,storage-api,mailpit,postgres-meta
+  pnpm db:test      # pgTAP trong supabase/tests
+  pnpm db:lint      # supabase db lint --fail-on error
+  pnpm db:stop
+  ```
+  `pnpm db:start` (= `supabase start`, không loại trừ gì) khởi động đủ dịch vụ và nặng hơn.
+- `pnpm db:types` (sinh lại `packages/shared/src/database.types.ts`) dùng `supabase gen types --local`; CI chạy lệnh này trên stack không loại trừ `postgres-meta` (xem `.github/workflows/ci.yml`, job `database`), nên khi cần sinh lại types hãy dùng `pnpm db:start` hoặc bỏ `postgres-meta` khỏi danh sách `-x`.
+- `pnpm db:reset` (`supabase db reset`) áp lại toàn bộ migration và `supabase/seed.sql` trên **stack local**; không bao giờ chạy với project hosted (xem `docs/DEPLOY.md`).
+- Chạy Edge Function local: `pnpm exec supabase functions serve --env-file supabase/functions/.env` (mục 7, 8) khi stack local đang chạy. Chưa kiểm chứng việc này với cấu hình `-x` gọn ở trên (cấu hình đó loại `edge-runtime`); nếu gặp lỗi, dùng `pnpm db:start` đầy đủ.
+
 `pnpm dev` không có CSP để HMR chạy được. Muốn kiểm CSP thì chạy `pnpm build && pnpm preview` (xem `docs/RUNBOOK.md` mục 7).
 
 ### Supabase local
@@ -106,6 +122,9 @@ Thông báo nhắc học luôn hiện trong hộp thư của app. Thông báo đ
 5. **Kiểm tra code:** trong `supabase/functions` chạy `deno check .` và `deno test --allow-env` (Supabase và push service đều là bản giả, không cần Docker hay mạng).
 6. **Production:** xem `docs/DEPLOY.md` → Nhắc học & Web Push (workflow **Notify** gọi function mỗi 15 phút).
 
+## 9. Trang quản trị `/quan-tri` trên máy (tuỳ chọn)
+Cần một dòng trong `public.staff_roles`. Trên Supabase local: đăng ký một tài khoản trong app, rồi chạy câu `insert into public.staff_roles …` ở `docs/DEPLOY.md` → Quản trị nội dung (bootstrap admin) bằng Studio (`http://127.0.0.1:55323`, SQL Editor) hoặc `psql` tới cổng 55322. Không cần mật khẩu hay secret nào khác.
+
 ## Thông tin bạn cần cung cấp — tóm tắt
 | Giá trị | Đặt ở đâu |
 |---|---|
@@ -115,6 +134,8 @@ Thông báo nhắc học luôn hiện trong hộp thư của app. Thông báo đ
 | Database password | GitHub → Environment `production` → Secrets |
 | Google OAuth Client ID/Secret (tuỳ chọn) | Supabase Dashboard |
 | Gemini API key + model id (Google AI Studio) | Local: `supabase/functions/.env`; production: GitHub → Environment `production` → Secrets `GEMINI_API_KEY`, `GEMINI_MODEL` |
+| Secret/service_role key của Supabase (chỉ để chạy `pnpm content:push` hoặc workflow Publish content/Maintenance) | Production: GitHub → Environment `production` → Secrets `SUPABASE_SERVICE_ROLE_KEY`; local: biến môi trường của một lệnh, không ghi vào file |
+| Tên đầy đủ các secret/biến của GitHub | `docs/DEPLOY.md` → Tổng hợp secrets và biến |
 | VAPID public key (tuỳ chọn) | `.env` và GitHub → Variables (`VITE_VAPID_PUBLIC_KEY`) |
 | VAPID private key, subject, `NOTIFY_CRON_SECRET` (tuỳ chọn) | Local: `supabase/functions/.env`; production: GitHub → Environment `production` → Secrets (`NOTIFY_CRON_SECRET` cả ở environment `notify`) |
 
