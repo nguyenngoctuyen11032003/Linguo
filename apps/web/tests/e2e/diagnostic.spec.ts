@@ -185,7 +185,7 @@ test('Home offers the test, settings shows the retake date during the cooldown',
   await signIn(page);
   await page.goto('/app');
   await expect(page.getByRole('heading', { level: 2, name: 'Kiểm tra trình độ' })).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Bắt đầu kiểm tra' })).toHaveAttribute('href', new RegExp(`/app/kiem-tra/${PATH_ID}$`));
+  await expect(page.getByRole('link', { name: 'Làm bài kiểm tra' })).toHaveAttribute('href', new RegExp(`/app/kiem-tra/${PATH_ID}$`));
   await expectNoHorizontalScroll(page);
 
   await page.goto('/app/cai-dat');

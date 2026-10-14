@@ -42,9 +42,38 @@ describe('HomePage', () => {
     renderWithProviders(<HomePage />, { route: '/app' });
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Chào Minh Anh');
     expect(screen.getByText('Lộ trình của bạn')).toBeInTheDocument();
-    expect(screen.getByText('A2 → B1')).toBeInTheDocument();
-    expect(screen.getByText('Khoảng 43–69 tuần')).toBeInTheDocument();
-    expect(screen.getByText('Chưa đủ dữ liệu (tự đánh giá)')).toBeInTheDocument();
+    const row = screen.getByRole('link', { name: /Lộ trình của bạn/ });
+    expect(row).toHaveAttribute('href', '/app/hoc-tap');
+    expect(row).toHaveTextContent('A2 → B1');
+    expect(row).toHaveTextContent('Khoảng 43–69 tuần');
+    expect(screen.queryByText(/Chưa đủ dữ liệu/)).not.toBeInTheDocument();
+    expect(screen.queryByRole('heading', { level: 2, name: /Tiếng Anh/ })).not.toBeInTheDocument();
+  });
+
+  it('orders the cards: Hôm nay, reviews due, next lesson, path row, then the placement-test pitch', () => {
+    renderWithProviders(<HomePage />, { route: '/app' });
+    const order = [
+      screen.getByRole('heading', { level: 2, name: 'Hôm nay' }),
+      screen.getByRole('heading', { level: 2, name: 'Ôn tập hôm nay: 8 thẻ' }),
+      screen.getByRole('heading', { level: 2, name: 'Chào hỏi cơ bản' }),
+      screen.getByRole('link', { name: /Lộ trình của bạn/ }),
+      screen.getByRole('heading', { level: 2, name: 'Kiểm tra trình độ' }),
+      screen.getByRole('heading', { level: 2, name: 'Luyện nói' }),
+    ];
+    for (let i = 0; i < order.length - 1; i++) {
+      expect(order[i]!.compareDocumentPosition(order[i + 1]!) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    }
+  });
+
+  it('shows a single filled primary button, with distinct labels for the other actions', () => {
+    const { container } = renderWithProviders(<HomePage />, { route: '/app' });
+    const filled = [...container.querySelectorAll('a, button')].filter(
+      (el) => el.classList.contains('bg-primary') || el.classList.contains('bg-accent'),
+    );
+    expect(filled.map((el) => el.textContent)).toEqual(['Bắt đầu phiên học']);
+    expect(screen.getByRole('link', { name: 'Tiếp tục bài này' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Làm bài kiểm tra' })).toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: 'Bắt đầu' })).not.toBeInTheDocument();
   });
 
   it('puts the study session card of today first', () => {
@@ -55,11 +84,11 @@ describe('HomePage', () => {
     expect(screen.queryByRole('button', { name: 'Bắt đầu phiên học' })).not.toBeInTheDocument();
   });
 
-  it('shows the next lesson under the path card', () => {
+  it('shows the next lesson right under the reviews due', () => {
     renderWithProviders(<HomePage />, { route: '/app' });
     expect(screen.getByText('Bài tiếp theo')).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'Chào hỏi cơ bản' })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Tiếp tục' })).toHaveAttribute('href', expect.stringMatching(/^\/app\/hoc-tap\/bai\//));
+    expect(screen.getByRole('link', { name: 'Tiếp tục bài này' })).toHaveAttribute('href', expect.stringMatching(/^\/app\/hoc-tap\/bai\//));
   });
 
   it('shows the cards due today above the next lesson', () => {
@@ -81,7 +110,7 @@ describe('HomePage', () => {
   it('offers the placement test for the current path', () => {
     renderWithProviders(<HomePage />, { route: '/app' });
     expect(screen.getByRole('heading', { level: 2, name: 'Kiểm tra trình độ' })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Bắt đầu kiểm tra' })).toHaveAttribute('href', '/app/kiem-tra/path-en');
+    expect(screen.getByRole('link', { name: 'Làm bài kiểm tra' })).toHaveAttribute('href', '/app/kiem-tra/path-en');
   });
 
   it('announces loading in the heading while the profile loads', () => {
@@ -157,10 +186,14 @@ describe('HomePage', () => {
     const reviewed = { ...TEST_PATH, estimate: { ...TEST_PATH.estimate, assumptions: { ...TEST_PATH.estimate.assumptions, referenceReviewed: true } } };
     const note = 'Số giờ tham chiếu chưa được kiểm duyệt, ước lượng chỉ để tham khảo.';
     const { unmount } = renderWithProviders(<HomePage />, { route: '/app', paths: { paths: [unreviewed] } });
-    expect(screen.getByText(note)).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Lộ trình của bạn/ })).toHaveTextContent('(ước lượng tham khảo)');
     unmount();
+    const paused = renderWithProviders(<HomePage />, { route: '/app', paths: { paths: [{ ...unreviewed, status: 'paused' }] } });
+    expect(screen.getByText(note)).toBeInTheDocument();
+    paused.unmount();
     renderWithProviders(<HomePage />, { route: '/app', paths: { paths: [reviewed] } });
     expect(screen.queryByText(note)).not.toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Lộ trình của bạn/ })).not.toHaveTextContent('tham khảo');
   });
 
   describe('with a fixed clock', () => {
@@ -173,9 +206,8 @@ describe('HomePage', () => {
 
     const sundayOff = { ...TEST_PATH, weeklyMinutes: [30, 30, 30, 30, 30, 30, 0] };
 
-    it('shows the scheduled rest day in the profile timezone', () => {
+    it('shows the date in the profile timezone', () => {
       renderWithProviders(<HomePage />, { route: '/app', paths: { paths: [sundayOff] } });
-      expect(screen.getByText('Ngày nghỉ theo lịch')).toBeInTheDocument();
       expect(screen.getByText(/18 tháng 10/)).toBeInTheDocument();
     });
 
@@ -185,7 +217,6 @@ describe('HomePage', () => {
         paths: { paths: [sundayOff] },
         profile: { profile: { id: 'u', displayName: 'An', timezone: 'America/Los_Angeles' } },
       });
-      expect(screen.getByText('30 phút theo lịch')).toBeInTheDocument();
       expect(screen.getByText(/17 tháng 10/)).toBeInTheDocument();
     });
   });

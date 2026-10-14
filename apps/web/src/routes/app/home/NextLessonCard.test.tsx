@@ -48,7 +48,7 @@ describe('NextLessonCard', () => {
     renderWithProviders(<NextLessonCard />, { route: '/app' });
     expect(screen.getByText('Bài tiếp theo')).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Bài sau' })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Tiếp tục' })).toHaveAttribute('href', `/app/hoc-tap/bai/${later.lesson_id}`);
+    expect(screen.getByRole('link', { name: 'Tiếp tục bài này' })).toHaveAttribute('href', `/app/hoc-tap/bai/${later.lesson_id}`);
   });
 
   it('starts the next open lesson', () => {
@@ -56,14 +56,32 @@ describe('NextLessonCard', () => {
     renderWithProviders(<NextLessonCard />, { route: '/app' });
     expect(screen.getByRole('heading', { name: 'Bài mở' })).toBeInTheDocument();
     expect(screen.getByText('Khoảng 10 phút')).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Bắt đầu' })).toHaveAttribute('href', `/app/hoc-tap/bai/${open.lesson_id}`);
+    expect(screen.getByRole('link', { name: 'Học bài này' })).toHaveAttribute('href', `/app/hoc-tap/bai/${open.lesson_id}`);
+    expect(screen.queryByRole('link', { name: 'Bắt đầu' })).not.toBeInTheDocument();
   });
 
-  it('renders nothing while loading or when there is no next lesson', () => {
+  it('uses an outline button so only Hôm nay is a filled primary', () => {
+    setHook({ lessons: [open] });
+    renderWithProviders(<NextLessonCard />, { route: '/app' });
+    const link = screen.getByRole('link', { name: 'Học bài này' });
+    expect(link).toHaveClass('border');
+    expect(link).not.toHaveClass('bg-primary');
+    expect(link).not.toHaveClass('bg-accent');
+  });
+
+  it('reserves its place with a skeleton on the first load and keeps a stale lesson while reloading', () => {
     setHook({ status: 'loading' });
     const { container, unmount } = renderWithProviders(<NextLessonCard />, { route: '/app' });
     expect(container.querySelector('section')).toBeNull();
+    expect(screen.getByText(/Đang tải (số thẻ cần ôn|bài tiếp theo)/).closest('[role=status]')!).toHaveTextContent('Đang tải bài tiếp theo');
+    expect(screen.getByText(/Đang tải (số thẻ cần ôn|bài tiếp theo)/).closest('[role=status]')!.parentElement).toHaveClass('min-h-48');
     unmount();
+    setHook({ status: 'loading', lessons: [open] });
+    renderWithProviders(<NextLessonCard />, { route: '/app' });
+    expect(screen.getByRole('heading', { name: 'Bài mở' })).toBeInTheDocument();
+  });
+
+  it('renders nothing when there is no next lesson', () => {
     setHook({ lessons: [done] });
     const again = renderWithProviders(<NextLessonCard />, { route: '/app' });
     expect(again.container.querySelector('section')).toBeNull();

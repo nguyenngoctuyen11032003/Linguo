@@ -24,6 +24,8 @@ export function WeeklySummaryCard() {
   const { status, value, dismiss, markClicked } = useWeeklySummary();
   if (status !== 'ready' || !value) return null;
   const { notification, summary } = value;
+  // The notification title is usually "Báo cáo tuần của bạn": skip it when it only repeats the card heading.
+  const subtitle = /^báo cáo tuần/i.test(notification.title_vi.trim()) ? null : notification.title_vi;
   const ratio = summary.planned_minutes > 0 ? Math.min(1, summary.minutes / summary.planned_minutes) : null;
 
   return (
@@ -37,7 +39,7 @@ export function WeeklySummaryCard() {
             <h2 id="weekly-summary-title" className="text-lg font-bold tracking-[-0.02em]">
               Báo cáo tuần
             </h2>
-            <p className="text-sm text-muted">{notification.title_vi}</p>
+            {subtitle && <p className="text-sm text-muted">{subtitle}</p>}
           </div>
         </div>
 
@@ -80,7 +82,7 @@ export function WeeklySummaryCard() {
         )}
 
         <div className="flex flex-wrap gap-3">
-          <Link to={notification.action_url} onClick={() => void markClicked()} className={buttonClasses('primary', 'md')}>
+          <Link to={notification.action_url} onClick={() => void markClicked()} className={buttonClasses('ghost', 'md')}>
             Xem tiến độ
           </Link>
           <button type="button" onClick={() => void dismiss()} className={buttonClasses('ghost', 'md')}>

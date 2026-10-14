@@ -21,14 +21,24 @@ describe('ReviewDueCard', () => {
     expect(screen.getByRole('link', { name: 'Ôn ngay' })).toHaveAttribute('href', '/app/on-tap');
   });
 
-  it('renders nothing while loading or with nothing due', () => {
+  it('reserves its place with a skeleton while loading', () => {
     setHook({ status: 'loading', count: 5 });
-    const { container, unmount } = renderWithProviders(<ReviewDueCard />, { route: '/app' });
+    const { container } = renderWithProviders(<ReviewDueCard />, { route: '/app' });
     expect(container.querySelector('section')).toBeNull();
-    unmount();
+    expect(screen.getByText(/Đang tải (số thẻ cần ôn|bài tiếp theo)/).closest('[role=status]')!).toHaveTextContent('Đang tải số thẻ cần ôn');
+    expect(screen.getByText(/Đang tải (số thẻ cần ôn|bài tiếp theo)/).closest('[role=status]')!.parentElement).toHaveClass('min-h-44');
+  });
+
+  it('uses an outline button so Hôm nay stays the only primary action', () => {
+    setHook({ count: 3 });
+    renderWithProviders(<ReviewDueCard />, { route: '/app' });
+    expect(screen.getByRole('link', { name: 'Ôn ngay' })).not.toHaveClass('bg-primary');
+  });
+
+  it('renders nothing with nothing due', () => {
     setHook({ count: 0 });
-    const again = renderWithProviders(<ReviewDueCard />, { route: '/app' });
-    expect(again.container.querySelector('section')).toBeNull();
+    const { container } = renderWithProviders(<ReviewDueCard />, { route: '/app' });
+    expect(container.querySelector('section')).toBeNull();
   });
 
   it('fails quietly with a small retry', async () => {

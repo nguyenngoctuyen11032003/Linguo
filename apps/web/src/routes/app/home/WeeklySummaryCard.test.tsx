@@ -44,6 +44,23 @@ describe('WeeklySummaryCard', () => {
     expect(screen.getByText('Thêm 1 buổi luyện Nghe')).toBeInTheDocument();
   });
 
+  it('does not repeat the heading as a subtitle, but keeps a title that adds information', () => {
+    const { unmount } = renderWithProviders(<WeeklySummaryCard />, { route: '/app' });
+    expect(screen.getAllByText(/Báo cáo tuần/)).toHaveLength(1);
+    unmount();
+    setState({
+      value: { notification: weeklyNotification({ title_vi: 'Tuần này bạn học đều tay' }), summary: { ...WEEKLY_PAYLOAD } },
+    });
+    renderWithProviders(<WeeklySummaryCard />, { route: '/app' });
+    expect(screen.getByText('Tuần này bạn học đều tay')).toBeInTheDocument();
+  });
+
+  it('keeps one filled primary on Home: both actions are outlines', () => {
+    renderWithProviders(<WeeklySummaryCard />, { route: '/app' });
+    expect(screen.getByRole('link', { name: 'Xem tiến độ' })).not.toHaveClass('bg-primary');
+    expect(screen.getByRole('button', { name: 'Đã xem' })).not.toHaveClass('bg-primary');
+  });
+
   it('hides the weak skill when there is none', () => {
     setState({
       value: { notification: weeklyNotification(), summary: { ...WEEKLY_PAYLOAD, weak_skill: null, weak_accuracy: null } },

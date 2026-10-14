@@ -1,11 +1,12 @@
 import { Clock } from 'lucide-react';
 import { Link } from 'react-router';
 import { buttonClasses } from '@/components/ui/Button';
+import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { usePathLessons } from '@/features/lesson-player/usePathLessons';
 import { pickNextLesson } from '../learn/grouping';
 
-/** Home "Bài tiếp theo": hidden while loading or when nothing is available; a load error leaves only a small retry. */
+/** Home "Bài tiếp theo": a skeleton holds its place while loading; hidden when nothing is available; a load error leaves only a small retry. */
 export function NextLessonCard() {
   const { status, lessons, reload } = usePathLessons();
 
@@ -23,7 +24,20 @@ export function NextLessonCard() {
       </p>
     );
   }
-  if (status !== 'ready') return null;
+  if (status === 'loading' && lessons.length === 0) {
+    // Hold the card's place so the cards below do not jump when the lesson arrives.
+    return (
+      <SolidCard className="min-h-48">
+        <div role="status" className="space-y-3">
+          <span className="sr-only">Đang tải bài tiếp theo…</span>
+          <Skeleton className="block h-4 w-24" />
+          <Skeleton className="block h-6 w-56 max-w-full" />
+          <Skeleton className="block h-4 w-44 max-w-full" />
+          <Skeleton className="block h-13 w-full rounded-full" />
+        </div>
+      </SolidCard>
+    );
+  }
   const lesson = pickNextLesson(lessons);
   if (!lesson) return null;
 
@@ -43,8 +57,8 @@ export function NextLessonCard() {
             <span>{lesson.unit_title.vi}</span>
           </p>
         </div>
-        <Link to={`/app/hoc-tap/bai/${lesson.lesson_id}`} className={buttonClasses('accent', 'lg', true)}>
-          {resuming ? 'Tiếp tục' : 'Bắt đầu'}
+        <Link to={`/app/hoc-tap/bai/${lesson.lesson_id}`} className={buttonClasses('ghost', 'lg', true)}>
+          {resuming ? 'Tiếp tục bài này' : 'Học bài này'}
         </Link>
       </section>
     </SolidCard>

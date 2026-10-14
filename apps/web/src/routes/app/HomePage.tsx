@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Navigate } from 'react-router';
 import { DEFAULT_TIMEZONE } from '@linguo/shared';
 import { ErrorState } from '@/components/ui/ErrorState';
@@ -28,9 +28,22 @@ export function HomePage() {
   const paths = useLearningPaths();
   const toast = useToast();
   const [resuming, setResuming] = useState(false);
-  const cardHeadingRef = useRef<HTMLHeadingElement>(null);
+  const cardFocusRef = useRef<HTMLElement | null>(null);
+  const setCardFocus = useCallback((node: HTMLElement | null) => {
+    cardFocusRef.current = node;
+  }, []);
+  const [focusAfterResume, setFocusAfterResume] = useState(false);
   const name = profile?.displayName.trim();
   const timeZone = resolveTimeZone(profile?.timezone ?? DEFAULT_TIMEZONE);
+
+  const currentStatus = paths.current?.status;
+  useEffect(() => {
+    // Resuming swaps the full paused card for the compact row: keep keyboard focus on it.
+    if (focusAfterResume && currentStatus === 'active') {
+      cardFocusRef.current?.focus();
+      setFocusAfterResume(false);
+    }
+  }, [focusAfterResume, currentStatus]);
 
   if (paths.status === 'ready' && paths.paths.length === 0) return <Navigate to="/app/bat-dau" replace />;
 
@@ -41,13 +54,18 @@ export function HomePage() {
       paths.upsertPath(await setPathStatus(requireSupabase(), paths.current.id, 'active'));
       toast.show({ tone: 'success', message: 'Đã tiếp tục lộ trình.' });
       // The "Tiếp tục lộ trình" button disappears; keep keyboard focus inside the card.
-      cardHeadingRef.current?.focus();
+      cardFocusRef.current?.focus();
+      setFocusAfterResume(true);
     } catch (error) {
       toast.show({ tone: 'error', message: learningPathErrorMessage(error) });
     } finally {
       setResuming(false);
     }
   }
+
+  const pathSummary = paths.current && (
+    <PathSummaryCard path={paths.current} onResume={() => void resume()} resuming={resuming} focusRef={setCardFocus} />
+  );
 
   return (
     <div className="space-y-6">
@@ -71,19 +89,14 @@ export function HomePage() {
       {paths.status !== 'error' && paths.current && (
         <>
           {/* A paused path has no study session; its summary card offers to resume it. */}
-          {paths.current.status === 'active' && <TodayCard key={paths.current.id} pathId={paths.current.id} />}
-          <WeeklySummaryCard />
-          <SpreadWarning paths={paths.paths} />
-          <PathSummaryCard
-            path={paths.current}
-            timeZone={timeZone}
-            onResume={() => void resume()}
-            resuming={resuming}
-            headingRef={cardHeadingRef}
-          />
-          <DiagnosticCard pathId={paths.current.id} />
+          {paths.current.status === 'active' ? <TodayCard key={paths.current.id} pathId={paths.current.id} /> : pathSummary}
+          {/* One filled primary button on screen (Hôm nay); time-sensitive reviews follow it, the placement-test pitch comes last. */}
           <ReviewDueCard />
           <NextLessonCard />
+          <WeeklySummaryCard />
+          <SpreadWarning paths={paths.paths} />
+          {paths.current.status === 'active' && pathSummary}
+          <DiagnosticCard pathId={paths.current.id} />
           <SpeakingCard />
           <HomeMotivation pathId={paths.current.id} />
         </>

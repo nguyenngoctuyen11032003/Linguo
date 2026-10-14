@@ -30,7 +30,22 @@ describe('DiagnosticCard', () => {
     render();
     expect(mocks.pathIds.at(-1)).toBe('path-en');
     expect(screen.getByRole('heading', { level: 2, name: 'Kiểm tra trình độ' })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Bắt đầu kiểm tra' })).toHaveAttribute('href', '/app/kiem-tra/path-en');
+    expect(screen.getByRole('link', { name: 'Làm bài kiểm tra' })).toHaveAttribute('href', '/app/kiem-tra/path-en');
+  });
+
+  it('keeps the pitch short and the button an outline, not a second primary', () => {
+    setHook('ready', {});
+    render();
+    expect(screen.getByText(/Khoảng 12 phút/).textContent!.length).toBeLessThan(90);
+    expect(screen.getByRole('link', { name: 'Làm bài kiểm tra' })).toHaveClass('border');
+    expect(screen.getByRole('link', { name: 'Làm bài kiểm tra' })).not.toHaveClass('bg-primary');
+  });
+
+  it('stacks the button under the text on phones so the copy keeps the full width', () => {
+    setHook('ready', {});
+    const { container } = render();
+    expect(container.querySelector('section')).toHaveClass('flex-col', 'sm:flex-row');
+    expect(screen.getByRole('link', { name: 'Làm bài kiểm tra' })).toHaveClass('w-full', 'sm:w-auto');
   });
 
   it('offers it again after an abandoned attempt', () => {

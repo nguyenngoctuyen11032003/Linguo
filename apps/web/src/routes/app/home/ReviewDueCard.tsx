@@ -1,10 +1,13 @@
 import { Layers } from 'lucide-react';
-import { Link } from 'react-router';
-import { buttonClasses } from '@/components/ui/Button';
+import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useReviewDue } from '@/features/reviews/useReviewDue';
+import { ActionCard } from './ActionCard';
 
-/** Home "Ôn tập hôm nay: N thẻ": hidden while loading or with nothing due; a load error leaves only a small retry. */
+/**
+ * Home "Ôn tập hôm nay: N thẻ": a skeleton holds its place while loading so the cards below do not jump; hidden with
+ * nothing due; a load error leaves only a small retry.
+ */
 export function ReviewDueCard() {
   const { status, count, reload } = useReviewDue();
 
@@ -22,24 +25,26 @@ export function ReviewDueCard() {
       </p>
     );
   }
-  if (status !== 'ready' || count <= 0) return null;
+  if (status === 'loading') {
+    return (
+      <SolidCard className="min-h-44 sm:min-h-30">
+        <div role="status">
+          <span className="sr-only">Đang tải số thẻ cần ôn…</span>
+          <Skeleton className="block h-12 w-full" />
+        </div>
+      </SolidCard>
+    );
+  }
+  if (count <= 0) return null;
 
   return (
-    <SolidCard>
-      <section aria-labelledby="review-due-title" className="flex flex-wrap items-center gap-4">
-        <span className="inline-flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary/12 text-primary">
-          <Layers aria-hidden className="size-6" />
-        </span>
-        <div className="min-w-0 flex-1">
-          <h2 id="review-due-title" className="text-lg font-bold tracking-[-0.02em]">
-            Ôn tập hôm nay: {count} thẻ
-          </h2>
-          <p className="text-sm text-muted">Ôn trước khi học bài mới để nhớ lâu hơn.</p>
-        </div>
-        <Link to="/app/on-tap" className={buttonClasses('primary', 'md')}>
-          Ôn ngay
-        </Link>
-      </section>
-    </SolidCard>
+    <ActionCard
+      icon={Layers}
+      titleId="review-due-title"
+      title={`Ôn tập hôm nay: ${count} thẻ`}
+      description="Ôn trước khi học bài mới để nhớ lâu hơn."
+      to="/app/on-tap"
+      label="Ôn ngay"
+    />
   );
 }
