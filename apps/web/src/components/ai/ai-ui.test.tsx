@@ -8,7 +8,19 @@ import type { AiQuotaState as UseAiQuota } from '@/features/ai-tutor/useAiQuota'
 import type { AiTutorState as UseAiTutor } from '@/features/ai-tutor/useAiTutor';
 import { renderWithProviders } from '../../../tests/unit/render';
 import { stubMatchMedia } from '../../../tests/unit/match-media';
-import { aiError, aiSuccess, ANALYZE_DATA, EXPLAIN_DATA, PRACTICE_DATA, QUOTA, WRITING_DATA } from './ai-fixtures';
+import {
+  aiError,
+  aiSuccess,
+  ANALYZE_DATA,
+  EXPLAIN_DATA,
+  PLAN_DATA,
+  PLAN_LESSON_ID,
+  PRACTICE_DATA,
+  QUOTA,
+  SENTENCE_DATA,
+  SUMMARY_DATA,
+  WRITING_DATA,
+} from './ai-fixtures';
 import { AiExplainSheet } from './AiExplainSheet';
 import { AiQuotaChip } from './AiQuotaChip';
 
@@ -195,6 +207,70 @@ describe('AiExplainSheet', () => {
     expect(rows[1]).toHaveTextContent('2 điểm');
     expect(screen.queryByText(/Tổng tham khảo/)).not.toBeInTheDocument();
     expect(screen.getByText('안녕하세요.')).toHaveAttribute('lang', 'ko');
+  });
+
+  it('renders a sentence analysis with parts of speech, components and grammar points', () => {
+    const request: AiRequestInput = { task: 'analyze_sentence', language: 'ko', level: 'topik1', sentence: '저는 학생이에요.' };
+    setAi({ state: 'loading' });
+    const loading = renderSheet({ request, fallback: undefined });
+    expect(mocks.ai.run).toHaveBeenCalledWith(request);
+    expect(screen.getByRole('dialog', { name: 'Phân tích câu' })).toHaveTextContent('Đang phân tích câu…');
+    loading.unmount();
+
+    setAi({ state: 'ok', result: aiSuccess('analyze_sentence', SENTENCE_DATA) });
+    renderSheet({ request, fallback: undefined });
+    const dialog = screen.getByRole('dialog', { name: 'Phân tích câu' });
+    expect(within(dialog).getByText('Tôi là học sinh.')).toBeInTheDocument();
+    expect(within(dialog).getByRole('list', { name: 'Nghĩa khác' })).toHaveTextContent('nhấn mạnh nghề');
+    const tokens = within(within(dialog).getByRole('list', { name: 'Từ loại từng từ' })).getAllByRole('listitem');
+    expect(tokens).toHaveLength(4);
+    expect(tokens[1]).toHaveTextContent('tiểu từ');
+    expect(within(tokens[1]!).getByText('는')).toHaveAttribute('lang', 'ko');
+    expect(within(dialog).getByRole('list', { name: 'Thành phần câu' })).toHaveTextContent('Chủ đề: 저는');
+    expect(within(dialog).getByRole('list', { name: 'Điểm ngữ pháp' })).toHaveTextContent('-이에요/예요');
+    expect(dialog).toHaveTextContent('Giải thích AI · có thể chưa chính xác');
+    expect(within(dialog).queryByRole('button', { name: 'Giải thích cách khác' })).not.toBeInTheDocument();
+  });
+
+  it('renders a session recap: errors to remember and one next step', () => {
+    const request: AiRequestInput = {
+      task: 'summarize_session',
+      language: 'en',
+      level: 'a2',
+      minutes: 12,
+      activities: [{ kind: 'review', status: 'done', minutes: 5 }],
+      error_tags: [{ tag: 'article', count: 2 }],
+    };
+    setAi({ state: 'ok', result: aiSuccess('summarize_session', SUMMARY_DATA) });
+    renderSheet({ request, fallback: undefined });
+    const dialog = screen.getByRole('dialog', { name: 'Tóm tắt phiên học' });
+    expect(dialog).toHaveTextContent(SUMMARY_DATA.recap_vi);
+    expect(within(dialog).getByRole('list', { name: 'Lỗi cần nhớ' })).toHaveTextContent('Mạo từ a/an/the');
+    expect(dialog).toHaveTextContent(SUMMARY_DATA.next_step_vi);
+    expect(dialog).toHaveTextContent('Nhận xét AI · có thể chưa chính xác');
+  });
+
+  it('renders a review plan whose steps link only to ids of the request', () => {
+    const request: AiRequestInput = {
+      task: 'plan_review',
+      language: 'en',
+      level: 'a2',
+      gaps: [
+        { kind: 'lesson', id: PLAN_LESSON_ID, label: 'Present simple', count: 4 },
+        { kind: 'tag', id: 'mcq', label: 'Trắc nghiệm', count: 3 },
+      ],
+    };
+    const invented = { ...PLAN_DATA, steps: [{ kind: 'redo_lesson', target: 'not-in-request', cards: null, reason_vi: 'Bịa.' }, ...PLAN_DATA.steps] };
+    setAi({ state: 'ok', result: aiSuccess('plan_review', invented) });
+    renderSheet({ request, fallback: undefined });
+    const dialog = screen.getByRole('dialog', { name: 'Kế hoạch ôn tập' });
+    const steps = within(within(dialog).getByRole('list', { name: 'Các bước ôn tập' })).getAllByRole('listitem');
+    expect(steps).toHaveLength(2);
+    expect(steps[0]).toHaveTextContent('Học lại bài Present simple');
+    expect(within(steps[0]!).getByRole('link', { name: 'Mở bài học' })).toHaveAttribute('href', `/app/hoc-tap/bai/${PLAN_LESSON_ID}`);
+    expect(steps[1]).toHaveTextContent('Ôn 10 thẻ: Trắc nghiệm');
+    expect(within(steps[1]!).getByRole('link', { name: 'Mở ôn tập' })).toHaveAttribute('href', '/app/on-tap');
+    expect(dialog).not.toHaveTextContent('Bịa.');
   });
 
   it('shows a short error for output that fails its schema', () => {
