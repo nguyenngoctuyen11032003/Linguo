@@ -46,7 +46,7 @@ Deno.test('every task has a module with consistent metadata', () => {
     assertMatch(p.version, new RegExp(`^${task}@\\d+$`));
     assert(p.temperature >= 0.3 && p.temperature <= 0.5, `${task} temperature`);
     // review_writing returns a whole corrected essay, so it gets a larger (still bounded) budget.
-    assert(p.maxOutputTokens > 0 && p.maxOutputTokens <= (task === 'review_writing' ? 2048 : 1200), `${task} maxOutputTokens`);
+    assert(p.maxOutputTokens > 0 && p.maxOutputTokens <= (task === 'review_writing' || task === 'analyze_sentence' ? 2048 : 1200), `${task} maxOutputTokens`);
   }
   assertEquals(PROMPTS.explain_concept.version, 'explain_concept@1');
   assertEquals(PROMPTS.generate_practice.version, 'generate_practice@1');

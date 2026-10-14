@@ -14,6 +14,8 @@ export interface PromptModule {
   maxOutputTokens: number;
   /** Budget of the single repair attempt; defaults to the handler's 600 tokens. */
   repairMaxOutputTokens?: number;
+  /** Longest array kept when the validated answer is sanitised (the sanitiser's default is 20). */
+  maxArrayLength?: number;
   /** OpenAPI-subset schema for Gemini `generationConfig.responseSchema`. */
   responseSchema: Record<string, unknown>;
   buildUser(req: AiRequest, ctx: { lessonContext: string | null }): string;
@@ -88,6 +90,16 @@ export function parseWith<S extends z.ZodType>(schema: S, data: unknown): { ok: 
 
 export function requireHangul(text: string, where: string): string | null {
   return hasHangul(text) ? null : `${where}: Korean text must contain Hangul`;
+}
+
+/** For "is this text really in the sentence?" checks: NFKC, unified quotes, no whitespace, English lower-cased. */
+export function normalizeForMatch(text: string, language: 'en' | 'ko'): string {
+  const s = text
+    .normalize('NFKC')
+    .replace(/[‘’ʼ]/g, "'")
+    .replace(/[“”]/g, '"')
+    .replace(/\s+/g, '');
+  return language === 'en' ? s.toLowerCase() : s;
 }
 
 export function wrongTask(task: AiTask, req: AiRequest): never {
