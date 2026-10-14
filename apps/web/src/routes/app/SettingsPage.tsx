@@ -17,6 +17,7 @@ import { updatePreferences } from '@/features/preferences/service';
 import { useProfile } from '@/features/profile/ProfileProvider';
 import { profileSaveErrorMessage } from '@/features/profile/errors';
 import { updateProfile } from '@/features/profile/service';
+import { InstallAppSection } from '@/features/pwa/InstallAppSection';
 import { cn } from '@/lib/cn';
 import { requireSupabase } from '@/lib/supabase';
 import { useMotionPrefs } from '@/providers/MotionProvider';
@@ -26,6 +27,7 @@ import { AiPrivacySection } from './settings/AiPrivacySection';
 import { LearningPathsSection } from './settings/LearningPathsSection';
 import { MotivationSection } from './settings/MotivationSection';
 import { MyReportsSection } from './settings/MyReportsSection';
+import { RemindersSection } from './settings/RemindersSection';
 
 const THEME_OPTIONS: Array<{ value: ThemePreference; label: string; icon: typeof Sun }> = [
   { value: 'light', label: 'Sáng', icon: Sun },
@@ -308,7 +310,11 @@ export function SettingsPage() {
 
       <MotivationSection />
 
+      <RemindersSection />
+
       <AiPrivacySection />
+
+      <InstallAppSection />
 
       <MyReportsSection />
 

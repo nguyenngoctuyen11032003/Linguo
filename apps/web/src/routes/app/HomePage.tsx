@@ -16,6 +16,7 @@ import { PathSummaryCard } from './home/PathSummaryCard';
 import { ReviewDueCard } from './home/ReviewDueCard';
 import { SpreadWarning } from './home/SpreadWarning';
 import { TodayCard } from './home/TodayCard';
+import { WeeklySummaryCard } from './home/WeeklySummaryCard';
 import { HomeMotivation } from './progress/HomeMotivation';
 
 const todayLabel = (timeZone: string) =>
@@ -70,6 +71,7 @@ export function HomePage() {
         <>
           {/* A paused path has no study session; its summary card offers to resume it. */}
           {paths.current.status === 'active' && <TodayCard key={paths.current.id} pathId={paths.current.id} />}
+          <WeeklySummaryCard />
           <SpreadWarning paths={paths.paths} />
           <PathSummaryCard
             path={paths.current}

@@ -41,6 +41,13 @@ vi.mock('@/features/progress/useMotivationPrefs', () => ({
 vi.mock('@/features/content-reports/useMyReports', () => ({
   useMyReports: () => ({ status: 'loading', reports: [], error: null, reload: () => {} }),
 }));
+// The "Nhắc học" section has its own tests (settings/RemindersSection.test.tsx).
+vi.mock('@/features/notifications/useNotificationPrefs', () => ({
+  useNotificationPrefs: () => ({ status: 'loading', prefs: null, update: async () => false, resetBackoff: async () => false, reload: () => {}, saving: false, error: null }),
+}));
+vi.mock('@/features/notifications/usePushNotifications', () => ({
+  usePushNotifications: () => ({ state: null, support: 'supported', busy: false, error: null, enable: async () => {}, disable: async () => {} }),
+}));
 vi.mock('@/lib/supabase', () => ({
   getSupabase: () => ({ auth: { signOut: mocks.signOut }, rpc: mocks.rpc }),
   requireSupabase: () => ({ auth: { signOut: mocks.signOut }, rpc: mocks.rpc }),
@@ -83,6 +90,11 @@ describe('SettingsPage', () => {
   it('lists the learner content reports in their own section', () => {
     renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
     expect(screen.getByRole('heading', { level: 2, name: 'Báo lỗi của tôi' })).toBeInTheDocument();
+  });
+
+  it('shows the Nhắc học section', () => {
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    expect(screen.getByRole('heading', { level: 2, name: 'Nhắc học' })).toBeInTheDocument();
   });
 
   it('rejects names longer than 60 characters', async () => {
