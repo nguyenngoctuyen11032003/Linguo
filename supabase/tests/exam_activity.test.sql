@@ -15,7 +15,7 @@ create function public.ea_q(p_key text, p_seq integer) returns jsonb language sq
       'audio_asset_id', null, 'options', jsonb_build_array(
         jsonb_build_object('id', 'a', 'text', 'A', 'lang', 'en'),
         jsonb_build_object('id', 'b', 'text', 'B', 'lang', 'en'))),
-    'answer', '"a"', 'explanation', jsonb_build_object('vi', 'Giải thích'), 'script', null,
+    'answer', '"a"'::jsonb, 'explanation', jsonb_build_object('vi', 'Giải thích'), 'script', null,
     'rubric', null, 'sample_answer', null, 'content_hash', md5(p_key) || md5(p_key || '#'));
 $$;
 
@@ -42,12 +42,12 @@ insert into auth.users (id, email, raw_user_meta_data) values
 insert into public.content_sources (id, key, title, author_or_org, license, status, is_demo, content_hash)
 values (public.ea_id('src:ea'), 'src:ea', 'EA test source', 'Linguo', 'own', 'published', true, md5('ea') || md5('ea#'));
 
-select is(content_private.import_exam_bundle(jsonb_build_object('bundle_version', 1, 'forms', jsonb_build_array(
+select is((content_private.import_exam_bundle(jsonb_build_object('bundle_version', 1, 'forms', jsonb_build_array(
   jsonb_build_object(
     'id', public.ea_id('en:exam:ea-c1'), 'key', 'en:exam:ea-c1', 'language_code', 'en', 'family', 'cefr',
     'title_vi', 'Đề EA', 'description_vi', 'Bài luyện', 'level_from', 'a1', 'level_to', 'a2', 'source_key', 'src:ea',
-    'time_limits', '{"reading": 15}',
-    'scoring', '{"verified": false, "source_note_vi": "Tham khảo", "section_max": {}, "bands": [], "pass_ratio": 0.6}',
+    'time_limits', '{"reading": 15}'::jsonb,
+    'scoring', '{"verified": false, "source_note_vi": "Tham khảo", "section_max": {}, "bands": [], "pass_ratio": 0.6}'::jsonb,
     'is_demo', true, 'reviewed_by', null, 'reviewed_at', null, 'content_hash', md5('ea-form') || md5('ea-form#'),
     'questions', jsonb_build_array(public.ea_q('en:examq:ea-1', 1), public.ea_q('en:examq:ea-2', 2),
       public.ea_q('en:examq:ea-3', 3), public.ea_q('en:examq:ea-4', 4), public.ea_q('en:examq:ea-5', 5))))))

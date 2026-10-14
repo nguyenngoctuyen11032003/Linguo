@@ -131,7 +131,10 @@ select is((current_setting('test.ov')::jsonb ->> 'demo_count')::integer,
     + (select count(*) from public.exam_forms where is_demo and status <> 'archived')
     + (select count(*) from public.exam_questions q join public.exam_forms f on f.id = q.form_id where f.is_demo and q.status <> 'archived'))::integer,
   'overview demo_count');
-select ok((current_setting('test.ov')::jsonb ->> 'unreviewed_published_count')::integer > 0, 'demo content counts as published without review');
+-- Matches the index itself rather than assuming unreviewed content exists: the seed is fully reviewed once published.
+select is((current_setting('test.ov')::jsonb ->> 'unreviewed_published_count')::integer,
+  (select count(*)::integer from admin_private.content_index x where x.status in ('approved', 'published') and x.reviewed_at is null),
+  'overview counts approved or published content without a review');
 select is((current_setting('test.ov')::jsonb ->> 'open_report_count')::integer, 0, 'no open reports yet');
 
 select is((public.admin_list_content('lesson', 'en') ->> 'total')::integer,

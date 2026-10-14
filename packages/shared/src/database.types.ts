@@ -341,14 +341,14 @@ isOneToOne: false
                   ]
                 },"exam_attempts": {
                   Row: {
-                    "content_version": number,"deadline_at": string | null,"form_id": string,"id": string,"learning_path_id": string,"mode": string,"question_ids": (string)[],"question_type": string | null,"result": Json | null,"section": string | null,"started_at": string,"status": string,"submitted_at": string | null,"user_id": string
+                    "activity_counted_at": string | null,"content_version": number,"deadline_at": string | null,"form_id": string,"id": string,"learning_path_id": string,"mode": string,"question_ids": (string)[],"question_type": string | null,"result": Json | null,"section": string | null,"started_at": string,"status": string,"submitted_at": string | null,"user_id": string
                   }
                   ComputedFields: never
                   Insert: {
-                    "content_version": number,"deadline_at"?: string | null,"form_id": string,"id"?: string,"learning_path_id": string,"mode": string,"question_ids": (string)[],"question_type"?: string | null,"result"?: Json | null,"section"?: string | null,"started_at"?: string,"status"?: string,"submitted_at"?: string | null,"user_id": string
+                    "activity_counted_at"?: string | null,"content_version": number,"deadline_at"?: string | null,"form_id": string,"id"?: string,"learning_path_id": string,"mode": string,"question_ids": (string)[],"question_type"?: string | null,"result"?: Json | null,"section"?: string | null,"started_at"?: string,"status"?: string,"submitted_at"?: string | null,"user_id": string
                   }
                   Update: {
-                    "content_version"?: number,"deadline_at"?: string | null,"form_id"?: string,"id"?: string,"learning_path_id"?: string,"mode"?: string,"question_ids"?: (string)[],"question_type"?: string | null,"result"?: Json | null,"section"?: string | null,"started_at"?: string,"status"?: string,"submitted_at"?: string | null,"user_id"?: string
+                    "activity_counted_at"?: string | null,"content_version"?: number,"deadline_at"?: string | null,"form_id"?: string,"id"?: string,"learning_path_id"?: string,"mode"?: string,"question_ids"?: (string)[],"question_type"?: string | null,"result"?: Json | null,"section"?: string | null,"started_at"?: string,"status"?: string,"submitted_at"?: string | null,"user_id"?: string
                   }
                   Relationships: [
                     {
@@ -1129,8 +1129,16 @@ isOneToOne: false
 "estimate_learning_path":
 { Args: { "p_current_level": string,"p_language": string,"p_target_date": string,"p_target_level": string,"p_today": string,"p_weekly_minutes": (number)[] }; Returns: Json
                            },
+"exam_attempt_activity":
+{ Args: { "p_attempt_id": string }; Returns: {
+              "active_ms": number,"n_answers": number
+            }[]
+                           },
 "exam_attempt_json":
 { Args: { "p_attempt_id": string }; Returns: Json
+                           },
+"exam_backfill_activity":
+{ Args: Record<PropertyKey, never>; Returns: number
                            },
 "exam_build_result":
 { Args: { "p_attempt_id": string,"p_status": string,"p_submitted_at": string }; Returns: Json
