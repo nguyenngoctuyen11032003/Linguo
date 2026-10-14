@@ -141,7 +141,7 @@ describe('QuestionView', () => {
 
   it('listening: plays through onListen and counts down the remaining plays', async () => {
     const user = userEvent.setup();
-    const onListen = vi.fn().mockResolvedValue(undefined);
+    const onListen = vi.fn().mockResolvedValue(true);
     renderExam(
       <QuestionView
         question={LISTEN_QUESTION}
@@ -156,12 +156,53 @@ describe('QuestionView', () => {
     const play = screen.getByRole('button', { name: /Nghe/ });
     expect(screen.getByText('Còn 2 lượt nghe')).toBeInTheDocument();
     await user.click(play);
-    expect(onListen).toHaveBeenCalledWith('가방이 있어요?', null);
+    expect(onListen).toHaveBeenCalledWith('가방이 있어요?', null, expect.any(Function));
     expect(screen.getByText('Còn 1 lượt nghe')).toBeInTheDocument();
     await user.click(play);
     expect(screen.getByText('Đã hết lượt nghe')).toBeInTheDocument();
     expect(play).toBeDisabled();
     expect(screen.queryByText('가방이 있어요?')).not.toBeInTheDocument();
+  });
+
+  it('listening: a failed playback costs no play and offers a retry', async () => {
+    const user = userEvent.setup();
+    const onListen = vi.fn().mockResolvedValueOnce(false).mockRejectedValueOnce(new Error('boom')).mockResolvedValue(true);
+    renderExam(
+      <QuestionView question={LISTEN_QUESTION} language="ko" listenLimit={2} onAnswer={noop} onToggleFlag={noop} canListen onListen={onListen} />,
+    );
+    const play = screen.getByRole('button', { name: /Nghe/ });
+    await user.click(play);
+    expect(screen.getByText(/Không phát được, thử lại/)).toBeInTheDocument();
+    expect(screen.getByText('Còn 2 lượt nghe')).toBeInTheDocument();
+    await user.click(play);
+    expect(screen.getByText(/Không phát được, thử lại/)).toBeInTheDocument();
+    expect(screen.getByText('Còn 2 lượt nghe')).toBeInTheDocument();
+    // A successful retry clears the message and finally counts.
+    await user.click(play);
+    expect(screen.queryByText(/Không phát được, thử lại/)).not.toBeInTheDocument();
+    expect(screen.getByText('Còn 1 lượt nghe')).toBeInTheDocument();
+  });
+
+  it('listening: counts the play as soon as playback starts, not when it ends', async () => {
+    const user = userEvent.setup();
+    let started: () => void = () => {};
+    let finish: (ok: boolean) => void = () => {};
+    const onListen = vi.fn((_t: string | null, _a: string | null, onStarted: () => void) => {
+      started = onStarted;
+      return new Promise<boolean>((resolve) => {
+        finish = resolve;
+      });
+    });
+    const question = { ...LISTEN_QUESTION, prompt: { ...LISTEN_QUESTION.prompt, audio_asset_id: 'audio/q1.mp3' } };
+    renderExam(
+      <QuestionView question={question} language="ko" listenLimit={2} onAnswer={noop} onToggleFlag={noop} canListen onListen={onListen} />,
+    );
+    await user.click(screen.getByRole('button', { name: /Nghe/ }));
+    expect(screen.getByText('Còn 2 lượt nghe')).toBeInTheDocument();
+    act(() => started());
+    expect(screen.getByText('Còn 1 lượt nghe')).toBeInTheDocument();
+    await act(async () => finish(true));
+    expect(screen.getByText('Còn 1 lượt nghe')).toBeInTheDocument();
   });
 
   it('listening without a voice: offers the script as a reading fallback', async () => {
@@ -183,7 +224,7 @@ describe('QuestionView', () => {
       <QuestionView question={question} language="ko" listenLimit={null} onAnswer={noop} onToggleFlag={noop} canListen={false} onListen={onListen} />,
     );
     await user.click(screen.getByRole('button', { name: /Nghe/ }));
-    expect(onListen).toHaveBeenCalledWith(null, 'audio/q1.mp3');
+    expect(onListen).toHaveBeenCalledWith(null, 'audio/q1.mp3', expect.any(Function));
     expect(screen.getByText('Nghe không giới hạn')).toBeInTheDocument();
   });
 });

@@ -17,9 +17,11 @@ export interface QuestionViewProps {
   onToggleFlag(): void;
   /**
    * Plays the listening prompt: `audioAssetId` when there is a recording, otherwise `text` with TTS.
-   * Resolves when playback ends. Omit to disable playback.
+   * Calls `onStarted` as soon as playback has really begun (that is when a play is counted), then resolves `true`
+   * when it ends or `false` when it could not play at all (network error, autoplay block): a failure costs no play.
+   * Omit to disable playback.
    */
-  onListen?(text: string | null, audioAssetId: string | null): Promise<void>;
+  onListen?(text: string | null, audioAssetId: string | null, onStarted: () => void): Promise<boolean | void>;
   /** A TTS voice exists for `language`. Without one, a TTS-only prompt offers "Hiện lời thoại" instead. */
   canListen?: boolean;
 }
@@ -211,6 +213,7 @@ function ListenControls({
   const remainingId = useId();
   const scriptId = useId();
   const [playing, setPlaying] = useState(false);
+  const [failed, setFailed] = useState(false);
   const [showScript, setShowScript] = useState(false);
   const { audio_asset_id: assetId, tts_text: ttsText } = question.prompt;
   const playable = onListen !== undefined && (assetId !== null || (canListen && ttsText !== undefined));
@@ -219,10 +222,21 @@ function ListenControls({
 
   const play = async () => {
     if (!onListen || playing || exhausted) return;
-    onPlayed();
+    // A play is counted once, only after playback really began (or a read-aloud finished); a failure is free.
+    let counted = false;
+    const markPlayed = () => {
+      if (counted) return;
+      counted = true;
+      onPlayed();
+    };
+    setFailed(false);
     setPlaying(true);
     try {
-      await onListen(ttsText ?? null, assetId);
+      const ok = await onListen(ttsText ?? null, assetId, markPlayed);
+      if (ok !== false) markPlayed();
+      else if (!counted) setFailed(true);
+    } catch {
+      if (!counted) setFailed(true);
     } finally {
       setPlaying(false);
     }
@@ -279,6 +293,9 @@ function ListenControls({
       <span id={remainingId} className="text-sm text-muted">
         {remaining === null ? 'Nghe không giới hạn' : exhausted ? 'Đã hết lượt nghe' : `Còn ${remaining} lượt nghe`}
       </span>
+      <p role="status" aria-live="polite" className={failed ? 'w-full text-sm font-medium text-error-text' : 'sr-only'}>
+        {failed ? 'Không phát được, thử lại. Lượt nghe của bạn chưa bị trừ.' : ''}
+      </p>
     </div>
   );
 }
