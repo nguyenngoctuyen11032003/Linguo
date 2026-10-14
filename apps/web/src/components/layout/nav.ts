@@ -1,4 +1,4 @@
-import { BookOpen, GraduationCap, House, RotateCcw, Settings, Sparkles, TrendingUp, type LucideIcon } from 'lucide-react';
+import { BookOpen, GraduationCap, House, NotebookPen, RotateCcw, Settings, Sparkles, TrendingUp, type LucideIcon } from 'lucide-react';
 
 export interface NavItem {
   to: string;
@@ -17,6 +17,7 @@ export const PRIMARY_NAV: NavItem[] = [
 
 export const MORE_NAV: NavItem[] = [
   { to: '/app/luyen-thi', label: 'Luyện thi', icon: GraduationCap },
+  { to: '/app/tu-vung-cua-toi', label: 'Từ vựng của tôi', icon: NotebookPen },
   { to: '/app/tien-do', label: 'Tiến độ', icon: TrendingUp },
   { to: '/app/cai-dat', label: 'Cài đặt', icon: Settings },
 ];

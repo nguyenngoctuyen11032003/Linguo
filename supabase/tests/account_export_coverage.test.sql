@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(5);
+select plan(6);
 
 -- Every public table owned through a user_id column must reach export_my_data (spec 7 §1), either through the
 -- fixed sections of export_my_data (20261014000910_account_data.sql) or through account_optional_tables(),
@@ -30,6 +30,9 @@ select ok(public.account_optional_tables() @> array['exam_attempts', 'exam_answe
   'exam attempts, content reports and reminders are exported');
 select ok(public.account_optional_tables() @> array['study_sessions', 'activity_days', 'user_badges', 'analytics_events'],
   'earlier optional tables are still exported');
+
+select ok(public.account_optional_tables() @> array['personal_word_lists', 'personal_words', 'personal_vocab_imports'],
+  'personal vocabulary lists, words and import log are exported');
 
 select is_empty($$
   select c.relname::text

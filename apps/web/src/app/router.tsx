@@ -112,6 +112,10 @@ const routeTree: RouteObject[] = [
               { path: 'tien-do', ...lazyPage(() => import('@/routes/app/progress/ProgressPage'), 'ProgressPage') },
               { path: 'cai-dat', ...lazyPage(() => import('@/routes/app/SettingsPage'), 'SettingsPage') },
               { path: 'thong-bao', ...lazyPage(() => import('@/routes/app/notifications/NotificationsPage'), 'NotificationsPage') },
+              // Personal vocabulary (spec P2): lists, one list, and its review.
+              { path: 'tu-vung-cua-toi', ...lazyPage(() => import('@/routes/app/vocab/PersonalListsPage'), 'PersonalListsPage') },
+              { path: 'tu-vung-cua-toi/:listId', ...lazyPage(() => import('@/routes/app/vocab/PersonalListPage'), 'PersonalListPage') },
+              { path: 'tu-vung-cua-toi/:listId/on-tap', ...lazyPage(() => import('@/routes/app/vocab/PersonalReviewPage'), 'PersonalReviewPage') },
             ],
           },
         ],
