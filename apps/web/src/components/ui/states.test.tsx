@@ -125,7 +125,9 @@ describe('OfflineBanner', () => {
     act(() => {
       window.dispatchEvent(new Event('offline'));
     });
-    expect(screen.getByText('Bạn đang ngoại tuyến — tiến độ sẽ được lưu khi có mạng')).toBeInTheDocument();
+    expect(region).toHaveTextContent('Bạn đang ngoại tuyến — tiến độ sẽ được lưu khi có mạng');
+    // In flow (not fixed): it must never cover the app bar.
+    expect(region.querySelector('.fixed')).toBeNull();
     expect(screen.getByRole('status')).toBe(region);
     expect(region).toHaveAttribute('aria-live', 'polite');
     Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => true });
