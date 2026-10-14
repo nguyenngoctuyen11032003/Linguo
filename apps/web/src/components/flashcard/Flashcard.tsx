@@ -1,12 +1,11 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { m as motion } from 'motion/react';
-import { Volume2, VolumeX } from 'lucide-react';
 import type { ReviewCard } from '@linguo/shared';
 import { ReportContentButton } from '@/components/report';
 import { EASE_OUT } from '@/design/motion';
 import { cn } from '@/lib/cn';
 import { useMotionPrefs } from '@/providers/MotionProvider';
-import { audioUrl } from '../exercise/exercise-utils';
+import { AudioPlayButton } from '../exercise/AudioPlayButton';
 import { answerText, readCardContent, type CardContent } from './cardContent';
 
 /** Spec 3 §6: the card turns over in 250 ms; reduced motion swaps the faces instantly. */
@@ -80,7 +79,7 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
       tabIndex={flipped ? -1 : undefined}
       data-testid="flashcard-front"
       className={cn(
-        'glass flex min-h-72 w-full min-w-0 flex-col items-center justify-center gap-3 rounded-3xl px-5 py-8 text-center break-words',
+        'glass flex min-h-60 w-full min-w-0 flex-col items-center justify-center gap-3 rounded-3xl px-5 py-6 text-center break-words sm:min-h-72 sm:py-8',
         'transition-[scale] duration-200 not-disabled:active:scale-[0.99] disabled:cursor-not-allowed',
       )}
     >
@@ -97,7 +96,7 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
       ref={backRef}
       tabIndex={-1}
       data-testid="flashcard-back"
-      className="glass flex min-h-72 w-full min-w-0 flex-col items-center justify-center gap-3 rounded-3xl px-5 py-8 text-center break-words focus:outline-none"
+      className="glass flex min-h-60 w-full min-w-0 flex-col items-center justify-center gap-3 rounded-3xl px-5 py-6 text-center break-words sm:min-h-72 sm:py-8 focus:outline-none"
     >
       {card.direction === 'recognize' ? (
         <>
@@ -108,7 +107,9 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
         </>
       ) : (
         <>
-          <span className="text-[17px] font-semibold text-muted">{content.meaningVi}</span>
+          <span lang="vi" className="text-[17px] font-semibold text-muted">
+            {content.meaningVi}
+          </span>
           <TargetWord content={content} />
         </>
       )}
@@ -117,7 +118,11 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
           <span lang={content.lang} className="block text-[17px] font-medium">
             {content.example.target}
           </span>
-          {content.example.translationVi && <span className="block text-[15px] text-text">{content.example.translationVi}</span>}
+          {content.example.translationVi && (
+            <span lang="vi" className="block text-[15px] text-text">
+              {content.example.translationVi}
+            </span>
+          )}
         </p>
       )}
       {reportable && <ReportContentButton targetKind="learning_item" targetId={card.item_id} className="mt-1" />}
@@ -145,7 +150,11 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
           </motion.div>
         </div>
       )}
-      {showAudio && <AudioButton key={card.card_id} path={card.item.audio_path} />}
+      {showAudio && card.item.audio_path && (
+        <div className="mt-3 flex justify-center">
+          <AudioPlayButton key={card.card_id} path={card.item.audio_path} />
+        </div>
+      )}
       <p role="status" aria-live="polite" className="sr-only">
         {flipped ? `Đáp án: ${answerText(card)}` : ''}
       </p>
@@ -156,7 +165,7 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
 function TargetWord({ content }: { content: CardContent }) {
   return (
     <span className="flex flex-col items-center gap-1">
-      <span lang={content.lang} className="text-[34px] font-bold leading-tight">
+      <span lang={content.lang} className="text-[clamp(26px,8.5vw,34px)] font-bold leading-tight">
         {content.text}
       </span>
       {content.romanization && <span className="text-[17px] text-text">{content.romanization}</span>}
@@ -167,39 +176,9 @@ function TargetWord({ content }: { content: CardContent }) {
 }
 
 function Meaning({ content }: { content: CardContent }) {
-  return <span className="text-[28px] font-bold leading-tight">{content.meaningVi}</span>;
-}
-
-function AudioButton({ path }: { path: string | null }) {
-  const [failed, setFailed] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const hasAudio = path !== null && !failed;
-
-  const play = () => {
-    if (!path) return;
-    try {
-      audioRef.current ??= new Audio(audioUrl(path));
-      audioRef.current.currentTime = 0;
-      void audioRef.current.play().catch(() => setFailed(true));
-    } catch {
-      setFailed(true);
-    }
-  };
-
   return (
-    <div className="mt-3 flex justify-center">
-      <button
-        type="button"
-        onClick={play}
-        disabled={!hasAudio}
-        className={cn(
-          'inline-flex min-h-12 items-center gap-2 rounded-full px-5 text-[15px] font-semibold',
-          hasAudio ? 'bg-primary text-on-primary hover:bg-primary-strong' : 'cursor-not-allowed border border-border text-muted',
-        )}
-      >
-        {hasAudio ? <Volume2 aria-hidden className="size-5" /> : <VolumeX aria-hidden className="size-5" />}
-        {hasAudio ? 'Nghe' : 'Chưa có audio'}
-      </button>
-    </div>
+    <span lang="vi" className="text-[clamp(22px,7vw,28px)] font-bold leading-tight">
+      {content.meaningVi}
+    </span>
   );
 }

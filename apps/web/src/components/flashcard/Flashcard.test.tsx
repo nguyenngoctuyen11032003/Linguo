@@ -113,9 +113,35 @@ describe('Flashcard', () => {
     expect(liveRegion()).toHaveTextContent('Đáp án: trường học');
   });
 
-  it('disables the audio button with "Chưa có audio" when there is no audio', () => {
+  it('renders no audio control when there is no audio', async () => {
     renderExercise(<Harness card={makeCard()} />);
-    expect(screen.getByRole('button', { name: 'Chưa có audio' })).toBeDisabled();
+    await userEvent.click(screen.getByTestId('flashcard-front'));
+    expect(screen.queryByRole('button', { name: /Nghe|audio|Thử lại/ })).not.toBeInTheDocument();
+  });
+
+  it('keeps audio enabled after a playback failure and retries on the next press', async () => {
+    const play = vi.fn().mockRejectedValueOnce(new Error('NotAllowedError')).mockResolvedValue(undefined);
+    vi.stubGlobal(
+      'Audio',
+      class {
+        currentTime = 0;
+        play = play;
+      },
+    );
+    renderExercise(<Harness card={makeCard({ item: { audio_path: 'ko/hakgyo.mp3' } })} />);
+    await userEvent.click(screen.getByRole('button', { name: 'Nghe' }));
+    const retry = await screen.findByRole('button', { name: 'Không phát được. Thử lại' });
+    expect(retry).toBeEnabled();
+    await userEvent.click(retry);
+    expect(await screen.findByRole('button', { name: 'Nghe' })).toBeEnabled();
+    expect(play).toHaveBeenCalledTimes(2);
+  });
+
+  it('marks the Vietnamese meaning and example translation with lang="vi"', async () => {
+    renderExercise(<Harness card={makeCard()} />);
+    await userEvent.click(screen.getByTestId('flashcard-front'));
+    expect(screen.getByText('trường học')).toHaveAttribute('lang', 'vi');
+    expect(screen.getByText('Tôi đi học.')).toHaveAttribute('lang', 'vi');
   });
 
   it('offers audio when the item has a recording', () => {
