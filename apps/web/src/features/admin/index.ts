@@ -24,3 +24,6 @@ export { useAdminOverview, useAdminResource, type AdminResourceState } from './u
 export { useAdminReports, type AdminReportsState } from './useAdminReports';
 export { useAdminSources } from './useAdminSources';
 export { StaffRoleContext, useAdminRole, useStaffRole, type StaffRoleState } from './useStaffRole';
+export { useAdminAnalytics, type AdminAnalyticsData } from './useAdminAnalytics';
+export { useAdminContentDetail, useAdminContentList, type AdminContentDetailState, type SetStatusInput, type SetStatusOutcome } from './useAdminContent';
+export { yamlHint, type YamlHint } from './yaml-hint';

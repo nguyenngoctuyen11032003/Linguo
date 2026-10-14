@@ -4,6 +4,7 @@ import { createMemoryRouter, RouterProvider } from 'react-router';
 import type { Mock } from 'vitest';
 import { ADMIN_USER_ID } from '@/features/admin/admin-fixtures';
 import { AuthContext, type AuthState } from '@/features/auth/AuthProvider';
+import { MotionProvider } from '@/providers/MotionProvider';
 import { adminRootRoute } from './admin-routes';
 
 export type RpcTable = Record<string, { data: unknown; error?: unknown } | ((args: Record<string, unknown>) => { data: unknown; error?: unknown })>;
@@ -33,7 +34,9 @@ export function renderAdmin(path: string, auth: AuthState['status'] = 'signed-in
     router,
     ...render(
       <AuthContext.Provider value={value}>
-        <RouterProvider router={router} />
+        <MotionProvider>
+          <RouterProvider router={router} />
+        </MotionProvider>
       </AuthContext.Provider>,
     ),
   };

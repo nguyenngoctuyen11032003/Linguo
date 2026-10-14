@@ -1,7 +1,10 @@
 import type { RouteObject } from 'react-router';
 import { AdminGuard } from './AdminGuard';
 import { AdminLayout } from './AdminLayout';
+import { AnalyticsPage } from './analytics/AnalyticsPage';
 import { AuditLogPage } from './AuditLogPage';
+import { ContentDetailPage } from './content/ContentDetailPage';
+import { ContentListPage } from './content/ContentListPage';
 import { OverviewPage } from './OverviewPage';
 import { ReportsPage } from './ReportsPage';
 import { SourcesPage } from './SourcesPage';
@@ -12,8 +15,18 @@ import { SourcesPage } from './SourcesPage';
  */
 export const adminRoutes: RouteObject[] = [
   { index: true, element: <OverviewPage /> },
+  { path: 'noi-dung', element: <ContentListPage /> },
+  { path: 'noi-dung/:kind/:id', element: <ContentDetailPage /> },
   { path: 'bao-loi', element: <ReportsPage /> },
   { path: 'nguon', element: <SourcesPage /> },
+  {
+    path: 'thong-ke',
+    element: (
+      <AdminGuard minRole="admin">
+        <AnalyticsPage />
+      </AdminGuard>
+    ),
+  },
   {
     path: 'nhat-ky',
     element: (
@@ -22,10 +35,6 @@ export const adminRoutes: RouteObject[] = [
       </AdminGuard>
     ),
   },
-  // TODO(wave2): C4 pages
-  //   { path: 'noi-dung', element: <ContentListPage /> },
-  //   { path: 'noi-dung/:kind/:id', element: <ContentDetailPage /> },
-  //   { path: 'thong-ke', element: <AdminGuard minRole="admin"><AnalyticsPage /></AdminGuard> },
 ];
 
 /** `/quan-tri`: staff only (404 for everyone else), compact admin layout, noindex. */

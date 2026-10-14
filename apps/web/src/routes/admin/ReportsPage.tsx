@@ -10,7 +10,7 @@ import {
   type ReportTargetKind,
 } from '@linguo/shared';
 import { Flag } from 'lucide-react';
-import { Link } from 'react-router';
+import { Link, useSearchParams } from 'react-router';
 import { Button } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
@@ -47,7 +47,12 @@ const selectClasses = cn(inputClasses(false), 'min-h-11 appearance-none py-2 pr-
 /** Spec 11 §4 "Báo lỗi": the queue grouped by target, filtered, paged, resolved in bulk with a note. */
 export function ReportsPage() {
   const [status, setStatus] = useState<ReportStatus | null>('open');
-  const [kind, setKind] = useState<ReportTargetKind | null>(null);
+  const [params] = useSearchParams();
+  // ?loai=<kind> pre-filters the queue (link from a content detail page).
+  const [kind, setKind] = useState<ReportTargetKind | null>(() => {
+    const initial = params.get('loai');
+    return (REPORT_TARGET_KINDS as readonly string[]).includes(initial ?? '') ? (initial as ReportTargetKind) : null;
+  });
   const [page, setPage] = useState(0);
   const [selected, setSelected] = useState<ReadonlySet<string>>(new Set());
   const [action, setAction] = useState<ReportResolveStatus>('fixed');
