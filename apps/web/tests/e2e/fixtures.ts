@@ -3,6 +3,9 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { expect, type Page } from '@playwright/test';
 import { DEFAULT_RUBRIC, gradeExamAnswer, gradeResponse, sessionPlanSchema, type ExerciseResponse, type GradeInput } from '@linguo/shared';
+// Spec 11 admin payloads: the same contract-checked fixtures as the unit tests.
+import { auditEntryFixture, overviewFixture, sourceFixture } from '../../src/features/admin/admin-fixtures';
+import { aiUsageFixture, analyticsFixture, contentListFixture, exerciseDetailFixture } from '../../src/features/admin/content-fixtures';
 
 export const SUPABASE_URL = 'https://e2e.invalid';
 export const USER_ID = '11111111-1111-4111-8111-111111111111';
@@ -1871,7 +1874,171 @@ function createProgressBackend(opts: ProgressMockOptions = {}) {
 }
 // ==== END progress + analytics mocks =============================================================================
 
+// ==== content reports + admin mocks (spec 11) ====================================================================
+
+export type MockStaffRole = 'editor' | 'reviewer' | 'admin';
+
+export interface AdminMockOptions {
+  /** staff_role(): null (default) for an ordinary learner. */
+  staffRole?: MockStaffRole | null;
+  /** Reports already filed before the test (rows shaped like MockReport; missing fields get defaults). */
+  reports?: Array<Partial<MockReport> & Pick<MockReport, 'target_kind' | 'target_id'>>;
+}
+
+export interface MockReport {
+  id: string;
+  target_kind: string;
+  target_id: string;
+  target_label: string | null;
+  reason: string;
+  note: string | null;
+  status: string;
+  resolution_note: string | null;
+  content_version: number | null;
+  created_at: string;
+  resolved_at: string | null;
+}
+
+const REPORT_KINDS = ['exercise', 'learning_item', 'lesson', 'assessment_item', 'exam_question'];
+const REPORT_REASON_KEYS = ['wrong_answer', 'unclear', 'typo', 'audio', 'translation', 'offensive', 'other'];
+const REPORT_RESOLVE = ['triaged', 'fixed', 'rejected', 'duplicate'];
+
+/** What report_content stores as the label: lesson title, item headword or exercise prompt excerpt (≤ 80). */
+function reportTargetLabel(kind: string, id: string): string | null {
+  if (kind === 'lesson') return (BUNDLE.lessons.find((l) => l.id === id)?.title?.vi as string | undefined) ?? null;
+  if (kind === 'learning_item') return (BUNDLE.learning_items.find((i) => i.id === id)?.front?.text as string | undefined) ?? null;
+  if (kind === 'exercise') {
+    const prompt = BUNDLE.exercises.find((e) => e.id === id)?.prompt as Row | undefined;
+    const text = prompt?.stem ?? prompt?.instruction ?? prompt?.source_text ?? prompt?.template ?? prompt?.fallback_text;
+    return typeof text === 'string' ? text.slice(0, 80) : null;
+  }
+  return null;
+}
+
+function createAdminBackend(opts: AdminMockOptions = {}) {
+  const role = opts.staffRole ?? null;
+  const reports: MockReport[] = (opts.reports ?? []).map((r) => ({
+    id: randomUUID(),
+    target_label: reportTargetLabel(r.target_kind, r.target_id),
+    reason: 'wrong_answer',
+    note: null,
+    status: 'open',
+    resolution_note: null,
+    content_version: 1,
+    created_at: new Date(Date.now() - 3_600_000).toISOString(),
+    resolved_at: null,
+    ...r,
+  }));
+  const audit: Row[] = [auditEntryFixture()];
+  /** admin_* RPCs that reached the "server" (a learner must never trigger one). */
+  const adminCalls: string[] = [];
+
+  function listReports(b: Row) {
+    const filtered = reports.filter((r) => (b.p_status == null || r.status === b.p_status) && (b.p_kind == null || r.target_kind === b.p_kind));
+    const groups = new Map<string, MockReport[]>();
+    for (const r of filtered) groups.set(`${r.target_kind}:${r.target_id}`, [...(groups.get(`${r.target_kind}:${r.target_id}`) ?? []), r]);
+    const all = [...groups.values()].map((list) => {
+      const sorted = [...list].sort((a, c) => c.created_at.localeCompare(a.created_at));
+      const reasons: Record<string, number> = {};
+      for (const r of list) reasons[r.reason] = (reasons[r.reason] ?? 0) + 1;
+      return {
+        target_kind: sorted[0]!.target_kind,
+        target_id: sorted[0]!.target_id,
+        target_label: sorted[0]!.target_label,
+        report_count: list.length,
+        reasons,
+        latest_at: sorted[0]!.created_at,
+        reports: sorted.map(({ id, reason, note, status, content_version, created_at }) => ({ id, reason, note, status, content_version, created_at })),
+      };
+    });
+    const offset = Number(b.p_offset ?? 0);
+    return { groups: all.slice(offset, offset + Number(b.p_limit ?? 20)), total_groups: all.length };
+  }
+
+  function handle(pathname: string, b: Row): { status?: number; json: unknown } | null {
+    const name = pathname.replace('/rest/v1/rpc/', '');
+    if (name.startsWith('admin_')) {
+      adminCalls.push(name);
+      if (!role) return rpcError('staff_forbidden');
+    }
+    switch (name) {
+      case 'staff_role':
+        return { json: role };
+      case 'report_content': {
+        if (!REPORT_KINDS.includes(String(b.p_target_kind))) return rpcError('invalid_target');
+        if (!REPORT_REASON_KEYS.includes(String(b.p_reason))) return rpcError('invalid_reason');
+        const dayAgo = Date.now() - DAY_MS;
+        const duplicate = reports.some((r) => r.target_kind === b.p_target_kind && r.target_id === b.p_target_id && Date.parse(r.created_at) > dayAgo);
+        const report: MockReport = {
+          id: randomUUID(),
+          target_kind: String(b.p_target_kind),
+          target_id: String(b.p_target_id),
+          target_label: reportTargetLabel(String(b.p_target_kind), String(b.p_target_id)),
+          reason: String(b.p_reason),
+          note: (b.p_note as string | null) ?? null,
+          status: 'open',
+          resolution_note: null,
+          content_version: 1,
+          created_at: new Date().toISOString(),
+          resolved_at: null,
+        };
+        reports.push(report);
+        return { json: { report_id: report.id, status: duplicate ? 'duplicate' : 'open' } };
+      }
+      case 'list_my_reports':
+        return {
+          json: [...reports]
+            .sort((a, c) => c.created_at.localeCompare(a.created_at))
+            .slice(0, Number(b.p_limit ?? 50))
+            .map((r) => ({ ...r, content_version: undefined })),
+        };
+      case 'admin_content_overview':
+        return { json: overviewFixture({ open_report_count: reports.filter((r) => r.status === 'open').length }) };
+      case 'admin_list_reports':
+        return { json: listReports(b) };
+      case 'admin_resolve_report': {
+        if (!REPORT_RESOLVE.includes(String(b.p_status))) return rpcError('invalid_report_status');
+        const ids = new Set((b.p_report_ids as string[] | undefined) ?? []);
+        let updated = 0;
+        for (const r of reports) {
+          if (!ids.has(r.id)) continue;
+          Object.assign(r, { status: b.p_status, resolution_note: b.p_resolution_note ?? null, resolved_at: b.p_status === 'triaged' ? null : new Date().toISOString() });
+          updated++;
+          audit.unshift(auditEntryFixture({ id: randomUUID(), actor_role: role, target_id: r.id, detail: { status: b.p_status }, created_at: new Date().toISOString() }));
+        }
+        return { json: { updated } };
+      }
+      case 'admin_list_content':
+        return { json: contentListFixture(3) };
+      case 'admin_get_content':
+        return { json: exerciseDetailFixture({ id: String(b.p_id) }) };
+      case 'admin_set_status':
+        return { json: { status: b.p_status } };
+      case 'admin_list_sources':
+        return { json: [sourceFixture()] };
+      case 'admin_analytics':
+        return { json: analyticsFixture(Number(b.p_days ?? 7)) };
+      case 'admin_ai_usage':
+        return { json: aiUsageFixture(Number(b.p_days ?? 7)) };
+      case 'admin_audit_log_recent':
+        return role === 'admin' ? { json: audit.slice(0, Number(b.p_limit ?? 100)) } : rpcError('staff_forbidden');
+    }
+    return null;
+  }
+
+  return {
+    handle,
+    controls: {
+      reports: () => reports.map((r) => ({ ...r })),
+      adminCalls: () => [...adminCalls],
+    },
+  };
+}
+// ==== END content reports + admin mocks ==========================================================================
+
 interface MockOptions {
+  /** Content reports and the staff admin RPCs (spec 11); staff_role() is null unless set. */
+  admin?: AdminMockOptions;
   /** AI tutor function and RPCs (spec 5). */
   ai?: AiMockOptions;
   displayName?: string;
@@ -1908,6 +2075,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
   const sessions = createSessionBackend(opts.session);
   const exams = createExamBackend(paths, opts.exam); // spec 9
   const progress = createProgressBackend(opts.progress); // spec 8, G4
+  const admin = createAdminBackend(opts.admin); // spec 11
 
   await page.route(`${SUPABASE_URL}/**`, async (route) => {
     const url = new URL(route.request().url());
@@ -1982,7 +2150,8 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
           planner.handle(url.pathname, body()) ??
           sessions.handle(url.pathname, body()) ??
           exams.handle(url.pathname, body()) ??
-          progress.handle(url.pathname, body()))
+          progress.handle(url.pathname, body()) ??
+          admin.handle(url.pathname, body()))
         : null;
     if (lessonReply) {
       if (lessonReply.status === 204) return route.fulfill({ status: 204, body: '' });
@@ -2001,6 +2170,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
     sessionUpdates: sessions.updates,
     exam: exams.controls,
     progress: progress.controls,
+    admin: admin.controls,
     paths: () => paths.map((p) => ({ ...p })),
   };
 }
