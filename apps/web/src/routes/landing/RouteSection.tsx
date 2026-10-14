@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { motion, useInView } from 'motion/react';
 import { BookOpen, Headphones, MessageCircle, type LucideIcon } from 'lucide-react';
 import { RouteLine, type RouteTrack } from '@/components/ui/RouteLine';
-import { reveal, VIEWPORT_ONCE } from '@/design/motion';
+import { DUR, reveal, VIEWPORT_ONCE } from '@/design/motion';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 
 const TRACKS: RouteTrack[] = [
@@ -74,7 +74,7 @@ export function RouteSection() {
               initial={{ opacity: 0, scale: reduceMotion ? 1 : 0.5 }}
               animate={state === 'shown' ? { opacity: 1, scale: 1, y: reduceMotion ? 0 : [0, -8, 0] } : { opacity: 0 }}
               transition={{
-                opacity: { duration: 0.4, delay: reduceMotion ? 0 : 0.8 + i * 0.15 },
+                opacity: { duration: reduceMotion ? DUR.fast : 0.4, delay: reduceMotion ? 0 : 0.8 + i * 0.15 },
                 scale: { duration: 0.5, delay: reduceMotion ? 0 : 0.8 + i * 0.15 },
                 y: { duration, repeat: Infinity, ease: 'easeInOut' },
               }}
