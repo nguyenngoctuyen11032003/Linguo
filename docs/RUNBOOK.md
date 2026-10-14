@@ -7,6 +7,9 @@ Tài liệu xử lý sự cố và vận hành production (spec 7 §3). Thiết 
 | Web (SPA tĩnh) | GitHub Pages, build bởi workflow **Deploy** | Mọi người đọc; chỉ Deploy ghi |
 | Database + Auth | Supabase hosted (project `SUPABASE_PROJECT_ID`) | RLS cho user; `service_role` chỉ ở Edge Functions và workflow `production` |
 | Gia sư AI | Edge Function `ai-tutor` + Gemini | Key Gemini chỉ trong secret Supabase |
+| Nhắc học và Web Push | Workflow **Notify** (mỗi 15 phút) → Edge Function `notify-dispatch` | `NOTIFY_CRON_SECRET` (environment `notify` và Supabase), khoá VAPID chỉ trong secret Supabase |
+| Dọn dữ liệu | Workflow **Maintenance** (hằng ngày) → RPC `purge_expired_data` | `SUPABASE_SERVICE_ROLE_KEY` trong environment `production` |
+| Quản trị nội dung | `/quan-tri` (bảng `staff_roles`) | Vai trò `editor` < `reviewer` < `admin`, cấp bằng SQL hoặc `admin_grant_role` |
 | Secrets | GitHub environment `production`, Supabase secrets | Không bao giờ trong `VITE_*`, file commit hay log |
 
 ## 1. Mục tiêu khôi phục (MVP)
@@ -59,7 +62,10 @@ Lưu ý: bản web cũ phải tương thích với schema database hiện tại.
   pnpm exec supabase migration new revert_<ten>
   ```
   Trong file mới dùng `create or replace`, `drop … if exists`, `alter table … drop column if exists`, `revoke`/`grant` tường minh, để cả DB hosted lẫn DB mới tinh đều ra cùng schema.
-- Mở PR → CI áp toàn bộ migration trên Supabase local và chạy pgTAP → merge → Deploy áp migration (cần Approve `production`) → ghi checksum bằng `node scripts/check-migrations-immutable.mjs --record <file>`.
+- Mở PR → CI áp toàn bộ migration trên Supabase local và chạy pgTAP → merge → Deploy áp migration (cần Approve `production`) → ghi checksum bằng `node scripts/check-migrations-immutable.mjs --record <file>` (quy trình đầy đủ ở [DEPLOY.md](DEPLOY.md) mục *Quy tắc an toàn database*).
+- Số của migration sửa lỗi phải **lớn hơn** số của migration cuối trong `supabase/migrations-applied.json` (nếu không `supabase db push` từ chối); đặt tên bằng tay nếu `supabase migration new` sinh số nhỏ hơn (DEPLOY.md, *Quy tắc đánh số migration mới*).
+- Nếu một migration đã áp làm hỏng logic (không hỏng dữ liệu), sửa tiến bằng `create or replace function …` của chính hàm đó trong migration mới, giữ nguyên chữ ký hàm và `revoke`/`grant`. Ví dụ đã làm trong repo: `20261015000800_answer_integrity.sql` thay `submit_exercise`, `20261015000600_review_grade_guard.sql` thay `grade_review`, `20261014000600_spec2_sync.sql` vá file bị sửa sau khi deploy.
+- Trong lúc chờ bản sửa, có thể giảm thiểu mà không đụng database: tắt tính năng liên quan bằng cách dừng workflow hoặc gỡ secret (mục 9).
 - Dữ liệu đã bị migration làm hỏng thì khôi phục theo mục 2, không có forward migration nào lấy lại được dữ liệu đã xoá.
 
 ## 5. Xoay vòng key
@@ -83,6 +89,16 @@ Xoay ngay khi nghi bị lộ (CI `secrets`/`check:bundle` báo, key xuất hiệ
 3. Thu hồi key cũ trên Dashboard. Nếu project vẫn dùng JWT `service_role` cũ (legacy): chuyển hẳn sang secret key mới rồi tắt legacy API keys. Đừng xoay JWT secret nếu chưa tính đến việc mọi phiên đăng nhập sẽ bị đăng xuất.
 4. Chạy lại Deploy với `functions = true` để Edge Functions khởi động lại, rồi chạy thử **Publish content**.
 
+### `NOTIFY_CRON_SECRET`
+
+1. `openssl rand -hex 32` (tối thiểu 32 ký tự, ngắn hơn bị coi là chưa đặt).
+2. Cập nhật **cả hai** secret cùng tên: environment `production` và environment `notify`.
+3. Actions → Deploy → **Run workflow** với `functions = true` → Approve (đẩy giá trị mới lên Supabase). Trong khoảng giữa bước 2 và 3, Notify nhận `HTTP 401`; chạy lại Notify bằng tay sau bước 3.
+
+### Khoá VAPID (Web Push)
+
+Quy trình và hệ quả (mọi subscription cũ mất hiệu lực, người học phải bật lại thông báo trên từng thiết bị) ở [DEPLOY.md](DEPLOY.md) mục *Nhắc học & Web Push → Xoay khoá VAPID*. Chỉ xoay khi private key bị lộ.
+
 ### Các key khác
 
 - `SUPABASE_ACCESS_TOKEN` (token cá nhân, có quyền trên mọi project): supabase.com → Account → Access Tokens → tạo mới, cập nhật secret, thu hồi token cũ.
@@ -103,7 +119,11 @@ Triệu chứng: gia sư AI báo "Tạm thời không khả dụng" với mọi 
   4. Bật billing trên Google Cloud (quyết định chi phí, cần chủ dự án đồng ý).
 - **Lỗi 429/5xx kéo dài:** breaker mở sau 5 lỗi upstream trong 60 giây, thử lại sau 60 giây. Kiểm tra [trạng thái Google AI](https://aistudio.google.com/status) trước khi đổi cấu hình.
 - **Một IP gửi dồn dập:** `ai-tutor` giới hạn 30 request/phút/IP trong bộ nhớ (theo `x-forwarded-for`), trả 429 `quota_exceeded` với `retry_after_sec` và không trừ lượt. Giới hạn chính vẫn là quota ngày theo tài khoản.
-- Theo dõi: Supabase → Table editor → `ai_usage` (chỉ metadata), lọc theo `status` và `created_at`.
+- Theo dõi: Supabase → Table editor → `ai_usage` (chỉ metadata), lọc theo `status` và `created_at`; hoặc admin mở `/quan-tri/thong-ke` → "Mức dùng AI" (request theo tác vụ và trạng thái, báo cáo câu trả lời AI).
+- **Breaker nằm trong bộ nhớ của từng instance** của function (`supabase/functions/ai-tutor/index.ts`), không dùng chung: sau khi instance khởi động lại hoặc một instance khác nhận request, breaker có thể đang đóng và thử Gemini một lần nữa. Người học vẫn thấy hết quota khi Gemini vẫn từ chối.
+- **Người học thấy gì:** nút "Giải thích AI" hiện lý do, thời điểm thử lại (nếu biết) và lời giải thích soạn sẵn nếu bài/thẻ có (`web/components/ai/AiFallback.tsx`). Phản hồi bài viết trong luyện thi (`review_writing`) dùng chung hạ tầng nên cũng báo không khả dụng; phần làm bài, chấm đáp án và xem kết quả thi không phụ thuộc AI.
+- **Lượt của người học không mất oan:** thiếu key hoặc breaker đang mở thì function trả 503 trước khi trừ lượt; nếu lỗi xảy ra sau khi đã trừ (Gemini lỗi, đầu ra không hợp lệ), function hoàn lượt bằng `ai_quota_refund` (cố gắng tối đa, không bảo đảm). Không cần can thiệp vào `ai_quota`.
+- **Muốn chủ động tắt AI** (ví dụ chi phí, nghi lạm dụng): xem mục 9 *Tắt AI*.
 
 ## 7. Bảo mật web
 
@@ -153,6 +173,45 @@ Theo PRD §19 (điều kiện tối thiểu), §20.3 (bảo mật) và §22 (đ�
 - [ ] Environment `production` bật Required reviewers; secrets chỉ nằm trong environment đó.
 - [ ] Supabase Auth: Site URL, Redirect URLs, độ dài mật khẩu tối thiểu 8.
 - [ ] Đã thử rollback web một lần (Re-run một Deploy cũ).
+- [ ] Nhắc học: environment `notify` có `NOTIFY_CRON_SECRET`; Actions → Notify chạy tay trả `HTTP 200`; nếu bật Web Push thì `VITE_VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` đã đặt và một thiết bị thật nhận được thông báo thử.
+- [ ] Quản trị: đã bootstrap admin đầu tiên (DEPLOY.md → Quản trị nội dung) và đăng nhập `/quan-tri` được; tài khoản thường mở `/quan-tri` thấy 404.
+- [ ] `purge_analytics()` và `purge_notifications()` đã được quyết định (nối vào Maintenance hoặc chạy tay định kỳ), xem DEPLOY.md → Bảo trì dữ liệu.
+- [ ] Mọi migration đã deploy đều có trong `supabase/migrations-applied.json` (`node scripts/check-migrations-immutable.mjs` xanh).
+
+## 9. Sự cố cơ bản
+
+### Xem log ở đâu
+
+| Cần xem | Ở đâu |
+|---|---|
+| CI, Deploy, Publish content, Maintenance, Notify | GitHub → Actions (log không in secret, endpoint hay nội dung thông báo; Notify chỉ in `HTTP <mã>` và `{generated, pushed, failed, removed}`) |
+| Edge Function `ai-tutor`, `notify-dispatch` | Supabase Dashboard → Edge Functions → chọn function → **Logs**. `notify-dispatch` chỉ log số đếm và các thông điệp cố định (ví dụ `VAPID keys not set, push skipped`, `NOTIFY_CRON_SECRET is unset or too short`); `ai-tutor` không tự ghi log ra console, siêu dữ liệu từng request nằm ở bảng `ai_usage` |
+| Lỗi database, RLS, RPC | Supabase Dashboard → **Logs** (Postgres, API) |
+| Dùng AI, báo lỗi nội dung, thao tác quản trị | `/quan-tri/thong-ke`, `/quan-tri/bao-loi`, `/quan-tri/nhat-ky` (cần vai trò) |
+| Lỗi phía trình duyệt | Console của trình duyệt; app không gửi log lỗi về server (analytics nội bộ chỉ có sự kiện học tập trong danh sách `ANALYTICS_EVENTS`) |
+
+### Tắt nhắc học và Web Push toàn hệ thống
+
+Chọn mức nhẹ nhất đủ dùng:
+1. **Dừng lịch gọi:** Actions → **Notify** → `...` → **Disable workflow**. Không còn thông báo mới (cả trong app lẫn đẩy). Bật lại bằng **Enable workflow**.
+2. **Hoặc xoá secret `NOTIFY_CRON_SECRET` khỏi environment `notify`:** workflow chỉ cảnh báo và thoát 0 (không gửi mail lỗi). Muốn function từ chối mọi lời gọi ở phía Supabase: `pnpm exec supabase secrets unset NOTIFY_CRON_SECRET --project-ref <ref>` (function trả 401 khi thiếu hoặc ngắn hơn 32 ký tự). Nhớ xoá cả secret cùng tên ở environment `production`, nếu không lần Deploy `functions` kế tiếp đặt lại nó.
+3. **Chỉ tắt đẩy tới thiết bị, giữ thông báo trong app:** `pnpm exec supabase secrets unset VAPID_PRIVATE_KEY --project-ref <ref>` (function bỏ qua push, không đụng subscription) và xoá secret `VAPID_PRIVATE_KEY` ở environment `production` để Deploy không đặt lại.
+4. Từng người học tự tắt được ở Cài đặt → Nhắc học (không có cờ tắt toàn cục trong database).
+
+### Tắt AI
+
+Function đọc cấu hình từ biến môi trường ở mỗi request; thiếu `GEMINI_API_KEY` hoặc `GEMINI_MODEL` thì trả 503 `ai_unavailable` (không trừ lượt) và web hiện phương án dự phòng. Phần còn lại của app không bị ảnh hưởng.
+1. `pnpm exec supabase secrets unset GEMINI_API_KEY --project-ref <ref>` (hoặc `GEMINI_MODEL`).
+2. Xoá secret cùng tên ở GitHub environment `production`. Deploy chỉ **đặt** secret có giá trị, không bao giờ xoá; để nguyên thì lần chạy `functions` sau sẽ đặt lại key.
+3. Thử một câu hỏi gia sư trên production để xác nhận (chưa kiểm chứng thời gian có hiệu lực của `secrets unset` trên hạ tầng Supabase; nếu vẫn trả lời, đợi ít phút hoặc chạy lại lệnh).
+4. Bật lại: đặt lại secret ở GitHub rồi chạy Deploy với `functions = true`.
+Giảm thiểu mà không tắt hẳn: hạ `GEMINI_DAILY_USER_LIMIT` (mục 6).
+
+### Dừng các tác vụ tự động khác
+
+- **Maintenance** (dọn dữ liệu hằng ngày): Actions → Maintenance → **Disable workflow**. Chỉ làm chậm việc dọn dữ liệu, không mất gì.
+- **Deploy** khi nghi một bản đang lỗi: Actions → Deploy → **Disable workflow** (như mục 2 bước 2), rồi rollback theo mục 3 và 4.
+- **Một nội dung sai** đang hiển thị cho người học: admin chuyển nó về `in_review` hoặc `archived` ở `/quan-tri/noi-dung` (có hiệu lực ngay, không cần deploy); sửa YAML trong repo sau đó. Lưu ý lần **Publish content** kế tiếp không hạ trạng thái của dòng có nội dung không đổi, nhưng nội dung đã sửa nhận trạng thái ghi trong YAML.
 
 ## Nhật ký diễn tập
 
