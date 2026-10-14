@@ -92,6 +92,20 @@ Gia sư AI chạy trong Edge Function `supabase/functions/ai-tutor`; key Gemini 
 4. **Kiểm tra code function** (cần Deno 2, hoặc `npx deno@2`): trong `supabase/functions` chạy `deno check .`, `deno lint`, `deno test --allow-env` (test dùng fetch giả, không gọi Gemini thật).
 5. **Production:** đặt secrets trong GitHub environment `production` (xem `docs/DEPLOY.md` → Gia sư AI); workflow Deploy tự đẩy chúng lên Supabase.
 
+## 8. Nhắc học & thông báo đẩy (tuỳ chọn)
+Thông báo nhắc học luôn hiện trong hộp thư của app. Thông báo đẩy tới thiết bị (Web Push) cần thêm một cặp khoá VAPID; không có khoá thì chỉ bỏ qua phần đẩy.
+
+1. **Tạo khoá:** `npx web-push generate-vapid-keys` (Public Key + Private Key) và `openssl rand -hex 32` (`NOTIFY_CRON_SECRET`).
+2. **Web:** đặt `VITE_VAPID_PUBLIC_KEY=<Public Key>` trong `.env` (khoá công khai, được phép ở phía client). Kiểm tra: `pnpm check-env`.
+3. **Edge Function `notify-dispatch`:** trong `supabase/functions/.env` điền `NOTIFY_CRON_SECRET`, `VAPID_PUBLIC_KEY` (cùng giá trị bước 2), `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT=mailto:<email>`. Private key **chỉ** ở đây, không bao giờ trong biến `VITE_*`.
+4. **Gọi thử local** (sau `pnpm exec supabase functions serve --env-file supabase/functions/.env`):
+   ```bash
+   curl -X POST -H "Authorization: Bearer <NOTIFY_CRON_SECRET>" http://127.0.0.1:55321/functions/v1/notify-dispatch
+   ```
+   Kết quả chỉ là số đếm `{generated, pushed, failed, removed}`.
+5. **Kiểm tra code:** trong `supabase/functions` chạy `deno check .` và `deno test --allow-env` (Supabase và push service đều là bản giả, không cần Docker hay mạng).
+6. **Production:** xem `docs/DEPLOY.md` → Nhắc học & Web Push (workflow **Notify** gọi function mỗi 15 phút).
+
 ## Thông tin bạn cần cung cấp — tóm tắt
 | Giá trị | Đặt ở đâu |
 |---|---|
@@ -101,6 +115,8 @@ Gia sư AI chạy trong Edge Function `supabase/functions/ai-tutor`; key Gemini 
 | Database password | GitHub → Environment `production` → Secrets |
 | Google OAuth Client ID/Secret (tuỳ chọn) | Supabase Dashboard |
 | Gemini API key + model id (Google AI Studio) | Local: `supabase/functions/.env`; production: GitHub → Environment `production` → Secrets `GEMINI_API_KEY`, `GEMINI_MODEL` |
+| VAPID public key (tuỳ chọn) | `.env` và GitHub → Variables (`VITE_VAPID_PUBLIC_KEY`) |
+| VAPID private key, subject, `NOTIFY_CRON_SECRET` (tuỳ chọn) | Local: `supabase/functions/.env`; production: GitHub → Environment `production` → Secrets (`NOTIFY_CRON_SECRET` cả ở environment `notify`) |
 
 ## Bảng giờ tham chiếu (ước lượng thời gian)
 

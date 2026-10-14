@@ -45,6 +45,7 @@ push main ─────► Deploy (.github/workflows/deploy.yml)
    - `VITE_SITE_URL` = `https://nguyenngoctuyen11032003.github.io/Linguo` (phân biệt hoa/thường: `/Linguo`)
    - `VITE_AUTH_GOOGLE_ENABLED` = `true` hoặc `false`
    - `VITE_HERO_VIDEO_URL` (tuỳ chọn)
+   - `VITE_VAPID_PUBLIC_KEY` (tuỳ chọn) — khoá công khai VAPID cho thông báo đẩy, xem mục **Nhắc học & Web Push**
    - `VITE_BASE_PATH` (tuỳ chọn) — mặc định `/<tên-repo>/`. Đặt `/` khi dùng tên miền riêng hoặc repo dạng `<user>.github.io`.
 5. Supabase **Authentication → URL Configuration** như `docs/SETUP.md` bước 2: Site URL `https://nguyenngoctuyen11032003.github.io/Linguo`; Redirect URLs `https://nguyenngoctuyen11032003.github.io/Linguo/**`, `http://localhost:5173/**`, `http://localhost:4173/**`. Cũng đặt **Minimum password length = 8** ở **Sign In / Providers → Email** (xem `docs/SETUP.md`).
 
@@ -59,6 +60,29 @@ Edge Function `ai-tutor` (`verify_jwt = true`) đọc key và model từ **secre
 3. Job `functions` của Deploy chạy bước **Set Edge Function secrets (Gemini)** trước `functions deploy`: chỉ gửi những secret **có giá trị** qua `supabase secrets set --env-file` (giá trị không bao giờ được in ra; secret GitHub bỏ trống không xoá giá trị đang có trên Supabase). `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` do Supabase tự cấp cho Edge Functions.
 4. Job `functions` chỉ chạy khi `supabase/functions` đổi. Đổi key/model mà không đổi code: Actions → Deploy → **Run workflow** với `functions = true` (rồi Approve `production`). Hoặc đặt tay từ máy: `pnpm exec supabase secrets set --project-ref <ref> GEMINI_MODEL=<model-id>` (key nên đặt qua GitHub để không lưu vào lịch sử shell).
 5. Thiếu `GEMINI_API_KEY`/`GEMINI_MODEL` thì function trả 503 `ai_unavailable` (không trừ lượt) và web hiện phương án dự phòng; phần còn lại của app không bị ảnh hưởng.
+
+## Nhắc học & Web Push
+Edge Function `notify-dispatch` (`verify_jwt = false`, spec 10 §3) được workflow **Notify** (`.github/workflows/notify.yml`) gọi mỗi 15 phút. Mỗi lần chạy nó gọi `generate_due_notifications` (tạo thông báo trong app) rồi gửi Web Push tới các thiết bị đã bật. Function chỉ nhận header `Authorization: Bearer <NOTIFY_CRON_SECRET>`; sai hoặc thiếu → 401.
+
+1. **Tạo khoá** (một lần, trên máy):
+   ```bash
+   openssl rand -hex 32                 # → NOTIFY_CRON_SECRET (tối thiểu 32 ký tự)
+   npx web-push generate-vapid-keys     # → Public Key + Private Key (base64url)
+   ```
+2. GitHub → **Settings → Secrets and variables → Actions → Variables**: `VITE_VAPID_PUBLIC_KEY` = Public Key. Đây là khoá công khai (được đóng gói vào web và cũng được Deploy đẩy lên Supabase làm `VAPID_PUBLIC_KEY`, nên hai phía luôn dùng cùng một cặp). `scripts/check-public-env.mjs` chặn nếu giá trị không giống public key (ví dụ dán nhầm private key).
+3. GitHub → **Settings → Environments → `production` → Secrets**:
+   - `NOTIFY_CRON_SECRET` — chuỗi ở bước 1
+   - `VAPID_PRIVATE_KEY` — Private Key ở bước 1 (**không bao giờ** đặt vào biến `VITE_*`)
+   - `VAPID_SUBJECT` — `mailto:<email-của-bạn>` hoặc một URL `https://…`
+4. **Settings → Environments → New environment `notify`**: Deployment branches = `main`, **không** bật Required reviewers (cron phải chạy không cần duyệt). Thêm đúng một secret `NOTIFY_CRON_SECRET` (cùng giá trị bước 3). Secret này chỉ dùng để kích hoạt việc gửi nhắc, không đọc/ghi được dữ liệu nào khác.
+5. Job `functions` của Deploy chạy bước **Set Edge Function secrets (reminders)**: đẩy `NOTIFY_CRON_SECRET`, `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` (chỉ những giá trị có thật, không in ra log). Sau khi thêm/đổi: Actions → Deploy → **Run workflow** với `functions = true`. Đổi `VITE_VAPID_PUBLIC_KEY` cũng cần build lại web (Deploy làm việc đó).
+6. Kiểm tra: Actions → Notify → **Run workflow**; log chỉ in `HTTP 200` và số đếm `{generated, pushed, failed, removed}` (không bao giờ in endpoint, khoá hay nội dung thông báo).
+
+Hành vi:
+- Thiếu VAPID (hoặc cặp khoá sai/lệch nhau) → vẫn tạo thông báo trong app, bỏ qua push, trả 200 (không lỗi, không đụng tới subscription).
+- Thiếu `NOTIFY_CRON_SECRET` trong environment `notify` → workflow cảnh báo và thoát 0 (không gửi mail lỗi mỗi 15 phút).
+- Push service trả 404/410 → xoá subscription. Lỗi khác (5xx, 429, mạng) → `failure_count + 1`, xoá khi đạt 5. Thành công → `failure_count = 0`, cập nhật `delivered_push_at`.
+- **Xoay VAPID** làm mọi subscription cũ hết hiệu lực (push service từ chối); chúng tự bị xoá sau vài lần thất bại và người học cần bật lại thông báo trên thiết bị. Chỉ xoay khi private key bị lộ.
 
 ## Quy trình hằng ngày
 1. Tạo nhánh → code → mở PR → CI phải xanh (xem artifact `playwright-report` để duyệt ảnh chụp mobile).
@@ -127,6 +151,10 @@ Workflow `.github/workflows/maintenance.yml` chạy **hằng ngày** (cron `17 1
 | Migration chưa được áp | Actions → Deploy → **Run workflow** với `migrate = true` |
 | Gia sư AI luôn "Tạm thời không khả dụng" | Thiếu secret `GEMINI_API_KEY`/`GEMINI_MODEL` trong environment `production`, hoặc chưa chạy lại Deploy với `functions = true` sau khi thêm; kiểm tra model id còn trong free tier |
 | Gia sư AI đang chạy rồi bỗng không khả dụng với mọi người | Model hết quota ngày của free tier (breaker mở, thử lại sau); chờ quota reset hoặc đổi `GEMINI_MODEL` rồi chạy lại Deploy với `functions = true` |
+| Notify báo `HTTP 401` | `NOTIFY_CRON_SECRET` trong environment `notify` khác giá trị đã đẩy lên Supabase (environment `production`), hoặc ngắn hơn 32 ký tự; đặt lại cả hai rồi chạy Deploy với `functions = true` |
+| Notify báo `HTTP 500 generate_failed` | Migration nhắc học (`generate_due_notifications`) chưa được Deploy áp lên project hosted |
+| Notify báo `HTTP 404` | Function `notify-dispatch` chưa được deploy: Actions → Deploy → **Run workflow** với `functions = true` |
+| Có thông báo trong app nhưng thiết bị không nhận push (`pushed = 0`) | Thiếu/sai `VAPID_*` hoặc `VITE_VAPID_PUBLIC_KEY` khác cặp với `VAPID_PRIVATE_KEY`; kiểm tra log function (`push skipped`) |
 | Job `secrets` (gitleaks) báo leak | Secret thật: xoay key ngay theo `docs/RUNBOOK.md` mục 5. Giá trị giả trong test: ghép chuỗi lúc chạy (xem `scripts/check-bundle-secrets.test.mjs`) hoặc, sau khi rà soát, thêm fingerprint vào `.gitleaksignore` |
 | `check:bundle` fail | Một secret hoặc source map lọt vào `apps/web/dist`: kiểm tra biến `VITE_*`, `build.sourcemap` trong `apps/web/vite.config.ts` |
 | Console trình duyệt báo vi phạm Content-Security-Policy | Nguồn mới chưa có trong `apps/web/build/csp.ts`: thêm có chủ đích kèm test (`docs/RUNBOOK.md` mục 7) |
