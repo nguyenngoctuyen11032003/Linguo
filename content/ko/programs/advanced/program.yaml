@@ -1,16 +1,15 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 key: ko:program:advanced
 language: ko
 title:
   vi: Tiếng Hàn cao cấp (TOPIK 5-6)
 description:
-  vi: Văn viết -ㄴ다, cấu trúc trang trọng, tin tức, kinh tế, xã hội và học thuật (TOPIK 5-6). Nội dung demo, chưa qua kiểm duyệt.
+  vi: 'Chương trình TOPIK 5-6 gồm bốn unit - tin tức và vấn đề xã hội (văn viết -ㄴ다, liên kết trang trọng, mô tả số liệu); học thuật, văn hoá và lập luận (bố cục bài luận, thành ngữ, tục ngữ); khoa học, môi trường và công nghệ (câu bị động, nguyên nhân - kết quả, xu hướng); lịch sử, di sản, văn học và văn phong trang trọng (đuôi văn chương, quán ngữ, đọc hiểu thái độ người viết).'
 kind: core
 goal_types: []
 level_from: topik5

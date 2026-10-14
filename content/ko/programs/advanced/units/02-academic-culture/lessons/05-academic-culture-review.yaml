@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:academic-culture-review
 order_index: 5
 level: topik6
@@ -176,7 +175,7 @@ exercises:
         - 들다 là động từ → -는 데다가.
     answer:
       blanks:
-        b1: [드는 데다가, 드는 데다]
+        b1: [드는 데다가, 드는 데다, 들어가는 데다가, 들어가는 데다]
     known_wrong:
       - answer: 들는 데다가
         feedback_vi: 들다 có patchim ㄹ, gặp -는 thì ㄹ rơi - 드는 데다가.
@@ -196,12 +195,12 @@ exercises:
     difficulty: 4
     item: ko:item:ac-gram-e-bulgwahada
     prompt:
-      template: "Ý kiến tán thành chỉ chiếm vỏn vẹn 20%. - 찬성 의견은 20%{{b1}}."
+      template: "Ý kiến tán thành chỉ chiếm vỏn vẹn 20%. (văn viết, đuôi -다) - 찬성 의견은 20%{{b1}}."
       blanks:
         - { id: b1, width_hint: 7 }
     answer:
       blanks:
-        b1: [에 불과했다, 에 불과하다, 에 불과합니다, 에 불과했습니다]
+        b1: [에 불과했다, 에 불과하다]
     known_wrong:
       - answer: 만에 불과했다
         feedback_vi: 불과하다 đã có nghĩa "chỉ", không thêm 만.
@@ -210,10 +209,19 @@ exercises:
         feedback_vi: Cấu trúc cố định là N에 불과하다 - dùng trợ từ 에.
         error_tag: particle_choice
       - answer: 에 불과해
-        feedback_vi: Đuôi 반말 không hợp văn viết. Dùng 불과하다/불과했다.
+        feedback_vi: Đề yêu cầu văn viết đuôi -다. 불과해 là 반말, dùng khi nói với người thân.
         error_tag: register_ending
+      - answer: 에 불과합니다
+        feedback_vi: Đây là 합쇼체, dùng khi nói trước người nghe. Văn viết dùng 불과하다/불과했다.
+        error_tag: hapsyo_in_writing
+      - answer: 에 불과했습니다
+        feedback_vi: Đây là 합쇼체, dùng khi nói trước người nghe. Văn viết dùng 불과했다.
+        error_tag: hapsyo_in_writing
+      - answer: 에 불과해요
+        feedback_vi: Đây là 해요체. Văn viết dùng 불과하다/불과했다.
+        error_tag: haeyo_in_writing
     explanation:
-      vi: "\"Chỉ chiếm vỏn vẹn\" = N에 불과하다. Trong văn viết dùng 불과하다 hoặc 불과했다; 불과합니다 dùng khi trình bày."
+      vi: "\"Chỉ chiếm vỏn vẹn\" = N에 불과하다. Trong văn viết dùng 불과하다 hoặc 불과했다; 불과합니다/불과해요 là đuôi nói."
     display_answer: 찬성 의견은 20%에 불과했다.
 
   - key: ko:exercise:ac-review-fill-geureona
@@ -250,7 +258,7 @@ exercises:
     difficulty: 4
     item: ko:item:ac-gram-euro-inhae
     prompt:
-      source_text: Do biến đổi khí hậu, mùa hè ngày càng nóng hơn.
+      source_text: Do biến đổi khí hậu, mùa hè ngày càng nóng hơn. (văn viết, đuôi -다)
       source_lang: vi
       direction: vi_to_target
     answer:
@@ -259,10 +267,22 @@ exercises:
         - 기후 변화로 인해서 여름이 점점 더워지고 있다.
         - 기후 변화로 인해 여름이 갈수록 더워지고 있다.
         - 기후 변화로 인해 여름이 점점 더 더워지고 있다.
-        - 기후 변화로 인해 여름이 점점 더워지고 있습니다.
-        - 기후 변화로 인해 여름이 점점 더워지고 있어요.
         - 기후 변화 때문에 여름이 점점 더워지고 있다.
+        - 기후 변화로 인하여 여름이 점점 더워지고 있다.
+        - 기후 변화로 여름이 점점 더워지고 있다.
+        - 기후 변화로 인해 여름이 점점 더워진다.
+        - 기후 변화로 인해서 여름이 점점 더워진다.
+        - 기후 변화로 인해 여름이 갈수록 더워진다.
+        - 기후 변화로 인해 여름이 점점 더 더워진다.
+        - 기후 변화 때문에 여름이 점점 더워진다.
+        - 기후 변화로 인해 여름이 갈수록 더 더워지고 있다.
     known_wrong:
+      - answer: 기후 변화로 인해 여름이 점점 더워지고 있어요.
+        feedback_vi: Đây là 해요체. Đề yêu cầu văn viết - 더워지고 있다.
+        error_tag: haeyo_in_writing
+      - answer: 기후 변화로 인해 여름이 점점 더워지고 있습니다.
+        feedback_vi: Đây là 합쇼체. Đề yêu cầu văn viết - 더워지고 있다.
+        error_tag: hapsyo_in_writing
       - answer: 기후 변화에 인해 여름이 점점 더워지고 있다.
         feedback_vi: Cấu trúc là N(으)로 인해 - 변화로 인해, không dùng 에.
         error_tag: particle_choice
@@ -337,6 +357,14 @@ exercises:
         - Cho dù trời có mưa, tôi cũng nhất định sẽ giữ lời hứa.
         - Dù trời mưa, tôi cũng nhất định sẽ giữ lời hứa.
         - Dù có mưa đi nữa, tôi vẫn nhất định giữ lời hứa.
+        - Dù trời có mưa, tôi nhất định sẽ giữ lời hứa.
+        - Dù trời có mưa, tôi nhất định giữ lời hứa.
+        - Cho dù trời có mưa, tôi vẫn nhất định giữ lời hứa.
+        - Dù trời có mưa đi chăng nữa, tôi cũng nhất định giữ lời hứa.
+        - Dù trời mưa, tôi vẫn nhất định giữ lời hứa.
+        - Dù mưa đi nữa, tôi cũng nhất định giữ lời hứa.
+        - Dù trời có mưa, tôi cũng nhất định sẽ giữ lời hẹn.
+        - Dù trời có mưa, tôi nhất định sẽ giữ lời hẹn.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -357,7 +385,7 @@ exercises:
     difficulty: 4
     item: ko:item:ac-gram-dago-bol-su-itda
     prompt:
-      source_text: Có thể xem đây là một vấn đề đạo đức.
+      source_text: Có thể xem đây là một vấn đề đạo đức. (văn viết, đuôi -다)
       source_lang: vi
       direction: vi_to_target
     answer:
@@ -368,9 +396,20 @@ exercises:
         - 이는 윤리적 문제라고 볼 수 있다.
         - 이것은 윤리적인 문제라고 볼 수 있다.
         - 이는 윤리의 문제라고 볼 수 있다.
-        - 이는 윤리 문제라고 볼 수 있습니다.
-        - 이것은 윤리 문제라고 볼 수 있어요.
+        - 이는 윤리 문제로 볼 수 있다.
+        - 이를 윤리 문제로 볼 수 있다.
+        - 이를 윤리 문제라고 볼 수 있다.
+        - 이를 윤리적인 문제로 볼 수 있다.
+        - 이것은 윤리 문제로 볼 수 있다.
+        - 이는 윤리적인 문제로 볼 수 있다.
+        - 이는 윤리적 문제로 볼 수 있다.
     known_wrong:
+      - answer: 이는 윤리 문제라고 볼 수 있습니다.
+        feedback_vi: Đây là 합쇼체. Đề yêu cầu văn viết - 볼 수 있다.
+        error_tag: hapsyo_in_writing
+      - answer: 이것은 윤리 문제라고 볼 수 있어요.
+        feedback_vi: Đây là 해요체. Đề yêu cầu văn viết - 볼 수 있다.
+        error_tag: haeyo_in_writing
       - answer: 이는 윤리 문제다고 볼 수 있다.
         feedback_vi: Sau danh từ dùng -(이)라고, không dùng -다고 - 문제라고.
         error_tag: quotation_noun
@@ -378,7 +417,7 @@ exercises:
         feedback_vi: 논리 là "logic, lô-gích". "Đạo đức" là 윤리.
         error_tag: vocab_meaning
       - answer: 이는 윤리 문제라고 볼 수 있어.
-        feedback_vi: Đuôi 반말 không hợp văn viết. Dùng 볼 수 있다.
+        feedback_vi: Đề yêu cầu văn viết đuôi -다. 볼 수 있어 là 반말, dùng khi nói với người thân.
         error_tag: register_ending
     explanation:
       vi: "\"Có thể xem là\" = -다고 볼 수 있다; sau danh từ 문제 dùng 라고. \"Đạo đức\" trong ngữ cảnh học thuật là 윤리, có thể dùng 윤리적(인) 문제."

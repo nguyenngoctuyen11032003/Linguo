@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:opinion-statistics
 order_index: 4
 level: topik5
@@ -50,7 +49,7 @@ body:
       vi: 'Mô tả số liệu theo khuôn - nguồn và đối tượng (… 성인 1,000명을 대상으로 조사한 결과), xu hướng (A에 비해 2배 증가했다), tỉ trọng (N이/가 전체의 30%를 차지했다), thứ tự (그 뒤를 이어 …). "Gấp 2 lần" là 2배, không phải 2번.'
   - type: deep_explain
     text:
-      vi: Câu 53 TOPIK chỉ chấm việc tả đúng số liệu bằng văn viết -다, không cần ý kiến cá nhân; câu 54 mới cần lập luận. Khi tả xu hướng, chọn phó từ theo hình dáng đường biểu đồ - 급격히 (dốc đứng), 꾸준히 (đều đặn), 소폭 (nhẹ). -기 마련이다 chỉ dùng cho quy luật chung, nên không gắn vào sự việc cụ thể đã xảy ra.
+      vi: Câu 53 TOPIK yêu cầu tả đúng số liệu bằng văn viết -다 và không cần ý kiến cá nhân; câu 54 mới cần lập luận. Khi tả xu hướng, chọn phó từ theo hình dáng đường biểu đồ - 급격히 (dốc đứng), 꾸준히 (đều đặn), 소폭 (nhẹ). -기 마련이다 chỉ dùng cho quy luật chung, nên không gắn vào sự việc cụ thể đã xảy ra.
   - type: example
     target: "한 연구소가 성인 1,000명을 대상으로 1인 가구가 늘어난 이유를 조사한 결과, '경제적 부담'이라고 답한 응답자가 42%로 가장 많았다. 그 뒤를 이어 '개인 생활 중시'가 30%, '취업난'이 18%를 차지했다. 또한 1인 가구 수는 2005년에 비해 약 2배 증가했다."
     target_lang: ko
@@ -157,7 +156,7 @@ exercises:
       options:
         - { id: b5v, text: Một nửa số người trả lời nói rằng họ lo nhất về việc giá cả tăng., lang: vi }
         - { id: j1s, text: Phần lớn người trả lời không lo về giá cả., lang: vi }
-        - { id: o8g, text: Một nửa số người hỏi đã trả lời về giá cả., lang: vi }
+        - { id: o8g, text: Một nửa số người được hỏi không trả lời câu hỏi về giá cả., lang: vi }
         - { id: e4p, text: Một nửa số người trả lời lo về việc giá cả giảm., lang: vi }
     answer:
       correct_option_id: b5v
@@ -181,7 +180,7 @@ exercises:
         - "Gợi ý: \"chiếm\" - 차지하다 (văn viết); \"gấp … lần\" - đơn vị bội số."
     answer:
       blanks:
-        b1: [차지한다, 차지했다]
+        b1: [차지한다, 차지했다, 차지하였다, 차지하고 있다]
         b2: [배]
     known_wrong:
       - answer: 번
@@ -273,6 +272,14 @@ exercises:
         - 노인이 전체 인구의 20%를 차지하고 있다.
         - 노인이 인구의 20퍼센트를 차지한다.
         - 노인이 전체 인구의 20퍼센트를 차지한다.
+        - 노인이 전체 인구에서 20%를 차지한다.
+        - 노인이 인구에서 20%를 차지한다.
+        - 노인 인구가 전체 인구에서 20%를 차지한다.
+        - 노인 인구는 전체 인구의 20%를 차지하고 있다.
+        - 노인 인구가 전체 인구의 20%를 차지하고 있다.
+        - 노인 인구가 전체 인구의 20퍼센트를 차지한다.
+        - 고령자는 전체 인구의 20%를 차지한다.
+        - 고령 인구가 전체 인구의 20%를 차지한다.
     known_wrong:
       - answer: 노인이 인구의 20%에 차지한다.
         feedback_vi: 차지하다 đi với 을/를 - 20%를 차지한다.
@@ -312,6 +319,10 @@ exercises:
         - 응답자의 50%가 동의했다.
         - 절반의 응답자가 찬성했다.
         - 절반의 응답자가 동의했다.
+        - 응답자 중 절반이 찬성했다.
+        - 응답자 중 절반이 동의했다.
+        - 응답자의 절반이 찬성하였다.
+        - 응답자의 절반이 동의하였다.
     known_wrong:
       - answer: 응답자의 절반이 찬성했어요.
         feedback_vi: Đây là 해요체. Văn viết là 찬성했다.
@@ -392,6 +403,11 @@ exercises:
         - Hộ một người đã tăng liên tục trong 10 năm.
         - Số hộ một người đã tăng liên tục trong 10 năm.
         - Hộ một người đã tăng đều đặn trong mười năm.
+        - Hộ một người đã tăng đều đặn suốt 10 năm.
+        - Số hộ một người đã tăng đều đặn suốt 10 năm.
+        - Số hộ một người tăng đều trong 10 năm.
+        - Số hộ độc thân đã tăng đều đặn trong 10 năm.
+        - Số hộ một người đã tăng đều đặn trong mười năm.
     rubric:
       diacritics: lenient
     known_wrong:

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:formal-connectives
 order_index: 3
 level: topik5
@@ -42,7 +41,7 @@ body:
       vi: Văn viết có bộ liên kết riêng, trang trọng hơn văn nói. -(으)며 thay -고 (và), -(으)ㄴ/는 반면 và -는 데 반해 thay -지만 khi đối lập hai mặt hay hai nhóm, -(으)ㄹ 뿐만 아니라 là "không chỉ … mà còn".
   - type: explain
     text:
-      vi: N에 따르면 là "theo N" để dẫn nguồn, luôn đứng đầu câu. Vế sau thường kết thúc bằng lời dẫn - -다고 한다 (nghe nói, theo tin) hoặc -(으)ㄴ/는 것으로 나타났다 (cho thấy là).
+      vi: N에 따르면 là "theo N" để dẫn nguồn, thường đứng đầu câu. Vế sau thường kết thúc bằng lời dẫn - -다고 한다 (nghe nói, theo tin) hoặc -(으)ㄴ/는 것으로 나타났다 (cho thấy là).
   - type: explain
     text:
       vi: -(으)ㅁ에도 불구하고 là "mặc dù, bất chấp", dùng khi kết quả đi ngược điều mong đợi. Động từ/tính từ phải danh từ hoá bằng -(으)ㅁ trước 에도 (노력했음에도), còn danh từ gắn thẳng 에도 (노력에도).
@@ -50,10 +49,10 @@ body:
     text:
       vi: Chọn dạng định ngữ trước 반면 và 데 반해 theo loại từ và thì - động từ hiện tại -는 (증가하는 반면), tính từ -(으)ㄴ (높은 데 반해), quá khứ -(으)ㄴ (증가한 반면). 반면 nhấn hai mặt đối lập, 데 반해 nhấn sự so sánh giữa hai đối tượng, nhưng trong mô tả số liệu chúng thường thay được cho nhau. Giữa các câu, dùng 그러나 (tuy nhiên), 따라서 (do đó), 또한 (ngoài ra), 한편 (trong khi đó) thay cho 그런데, 그래서, 그리고 của văn nói.
   - type: example
-    target: 통계청에 따르면 지난해 1인 가구는 전년에 비해 4% 증가했다. 반면 4인 가구는 꾸준히 감소하고 있다. 전문가들은 1인 가구가 앞으로도 늘어날 것으로 예상하며, 이에 맞는 주거 정책이 필요하다고 지적했다.
+    target: 통계 당국에 따르면 지난해 1인 가구는 전년에 비해 4% 증가했다. 반면 4인 가구는 꾸준히 감소하고 있다. 전문가들은 1인 가구가 앞으로도 늘어날 것으로 예상하며, 이에 맞는 주거 정책이 필요하다고 지적했다.
     target_lang: ko
     translation:
-      vi: Theo Cục Thống kê, năm ngoái hộ một người tăng 4% so với năm trước. Ngược lại, hộ bốn người đang giảm đều. Các chuyên gia dự đoán hộ một người sẽ còn tăng và chỉ ra rằng cần có chính sách nhà ở phù hợp.
+      vi: Theo cơ quan thống kê, năm ngoái hộ một người tăng 4% so với năm trước. Ngược lại, hộ bốn người đang giảm đều. Các chuyên gia dự đoán hộ một người sẽ còn tăng và chỉ ra rằng cần có chính sách nhà ở phù hợp.
     note:
       vi: Đoạn tin minh hoạ (số liệu giả định) - 에 따르면 mở đầu, 반면 đối lập, -며 nối hai hành động của chuyên gia.
   - type: example
@@ -109,18 +108,18 @@ exercises:
     difficulty: 2
     item: ko:item:gp-e-ttareumyeon
     prompt:
-      stem: "Chọn cụm đúng để dẫn nguồn \"Theo Cục Thống kê\": ___ 작년 출생아 수는 역대 최저였다고 한다."
+      stem: "Chọn cụm đúng để dẫn nguồn \"Theo cơ quan thống kê\": ___ 작년 출생아 수는 역대 최저였다고 한다."
       stem_lang: vi
       options:
-        - { id: d6x, text: 통계청에 따르면, lang: ko }
-        - { id: r1p, text: 통계청에 따라, lang: ko }
-        - { id: j8b, text: 통계청에 비해, lang: ko }
-        - { id: o4m, text: 통계청에도 불구하고, lang: ko }
+        - { id: d6x, text: 통계 당국에 따르면, lang: ko }
+        - { id: r1p, text: 통계 당국에 따라, lang: ko }
+        - { id: j8b, text: 통계 당국에 비해, lang: ko }
+        - { id: o4m, text: 통계 당국에도 불구하고, lang: ko }
     answer:
       correct_option_id: d6x
     explanation:
       vi: Dẫn nguồn tin dùng N에 따르면, khớp với đuôi -다고 한다. 에 따라 là "tuỳ theo", 에 비해 là "so với", 에도 불구하고 là "bất chấp".
-    display_answer: 통계청에 따르면
+    display_answer: 통계 당국에 따르면
 
   - key: ko:exercise:formal-connectives-mcq-myeo
     type: mcq
@@ -182,7 +181,7 @@ exercises:
         b2: [뿐만, 뿐]
     known_wrong:
       - answer: 하는
-        feedback_vi: 감소했다 là quá khứ nên vế trước cũng dùng định ngữ quá khứ - 증가한 반면.
+        feedback_vi: Đề nói sự việc đã xảy ra (감소했다) nên vế trước cũng dùng định ngữ quá khứ - 증가한 반면.
         error_tag: ban_myeon_tense
       - answer: 만
         feedback_vi: Cấu trúc là -(으)ㄹ 뿐만 아니라, 뿐 không bỏ được.
@@ -269,9 +268,14 @@ exercises:
         - 조사 결과에 따르면 물가가 상승한 것으로 나타났다.
         - 조사 결과 물가가 오른 것으로 나타났다.
         - 조사 결과 물가가 상승한 것으로 나타났다.
+        - 조사에 따르면 물가가 상승하였다.
+        - 조사에 의하면 물가가 올랐다.
+        - 조사에 의하면 물가가 상승했다.
+        - 조사에 의하면 물가가 올랐다고 한다.
+        - 조사에 의하면 물가가 오른 것으로 나타났다.
     known_wrong:
       - answer: 물가가 올랐다 조사에 따르면.
-        feedback_vi: N에 따르면 phải đứng đầu câu - 조사에 따르면 물가가 올랐다.
+        feedback_vi: N에 따르면 nên đứng đầu câu, trước nội dung tin - 조사에 따르면 물가가 올랐다.
         error_tag: ttareumyeon_position
       - answer: 조사에 따라 물가가 올랐다.
         feedback_vi: 에 따라 là "tuỳ theo". Dẫn nguồn dùng 에 따르면.
@@ -312,9 +316,15 @@ exercises:
         - 물가는 상승한 데 반해 임금은 감소했다.
         - 물가가 오른 데 반해 월급은 줄었다.
         - 물가가 상승한 데 반해 임금은 감소했다.
+        - 물가는 오른 데 반해 임금은 줄었다.
+        - 물가는 오른 데 반해 임금은 감소했다.
+        - 물가는 상승한 데 반해 월급은 감소했다.
+        - 물가는 상승한 데 반해 월급은 줄었다.
+        - 물가는 오른 반면에 임금은 줄었다.
+        - 물가는 상승한 반면에 월급은 감소했다.
     known_wrong:
       - answer: 물가는 오르는 반면 월급은 줄었다.
-        feedback_vi: Sự việc đã xảy ra nên dùng định ngữ quá khứ - 오른 반면.
+        feedback_vi: Đề nói giá cả "đã tăng" nên dùng định ngữ quá khứ - 오른 반면.
         error_tag: ban_myeon_tense
       - answer: 물가는 올랐는 반면 월급은 줄었다.
         feedback_vi: Không ghép -었- với -는. Quá khứ trước 반면 là -(으)ㄴ - 오른 반면.
@@ -337,7 +347,7 @@ exercises:
     difficulty: 4
     item: ko:item:gp-neun-de-banhae
     prompt:
-      stem: "Bạn mô tả biểu đồ: nam giới tập thể dục nhiều, nữ giới ít. Chọn liên kết đúng: 운동을 하는 남성은 많___ 여성은 적었다."
+      stem: "Bạn mô tả biểu đồ: nam giới tập thể dục nhiều, trái lại nữ giới ít. Chọn liên kết nhấn mạnh sự đối lập giữa hai nhóm: 운동을 하는 남성은 많___ 여성은 적었다."
       stem_lang: vi
       options:
         - { id: g6d, text: 은 데 반해, lang: ko }
@@ -347,7 +357,7 @@ exercises:
     answer:
       correct_option_id: g6d
     explanation:
-      vi: Hai nhóm có kết quả trái ngược nên dùng -(으)ㄴ 데 반해. -(으)며 chỉ nối hai ý cùng chiều; 뿐만 아니라 là bổ sung; 음에도 불구하고 là nhượng bộ, không hợp khi chỉ so sánh hai nhóm.
+      vi: Hai nhóm có kết quả trái ngược nên dùng -(으)ㄴ 데 반해. -(으)며 chỉ liệt kê, không nhấn mạnh sự đối lập; 뿐만 아니라 là bổ sung; 음에도 불구하고 là nhượng bộ, không hợp khi chỉ so sánh hai nhóm.
     display_answer: 은 데 반해
 
   - key: ko:exercise:formal-connectives-mcq-linking-word
@@ -418,6 +428,12 @@ exercises:
         - Bất chấp nỗ lực của chính phủ, tỷ lệ sinh vẫn giảm.
         - Mặc dù chính phủ nỗ lực, tỉ lệ sinh vẫn giảm.
         - Mặc dù chính phủ nỗ lực, tỷ lệ sinh vẫn giảm.
+        - Mặc dù chính phủ đã nỗ lực nhưng tỉ lệ sinh vẫn giảm.
+        - Mặc dù chính phủ đã nỗ lực nhưng tỷ lệ sinh vẫn giảm.
+        - Dù chính phủ đã nỗ lực nhưng tỉ lệ sinh vẫn giảm.
+        - Dù chính phủ đã nỗ lực nhưng tỷ lệ sinh vẫn giảm.
+        - Bất chấp nỗ lực của chính phủ, tỉ lệ sinh vẫn giảm xuống.
+        - Bất chấp nỗ lực của chính phủ, tỷ lệ sinh vẫn giảm xuống.
     rubric:
       diacritics: lenient
     known_wrong:

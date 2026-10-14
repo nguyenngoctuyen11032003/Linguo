@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:academic-idioms-proverbs
 order_index: 4
 level: topik6
@@ -41,7 +40,7 @@ body:
       vi: Trong bài viết, trích tục ngữ bằng N(이)라는 말이 있듯이 ("như câu nói...") hoặc N(이)라고, rồi giải thích. Để so sánh tình huống với tục ngữ, dùng -는 격이다 - 소 잃고 외양간 고치는 격이다.
   - type: deep_explain
     text:
-      vi: 공든 탑이 무너지랴 dùng đuôi cổ -(으)랴 - câu hỏi tu từ "lẽ nào lại...", nên nghĩa thật là "không đổ". Nhiều câu tục ngữ khác cũng dùng đuôi cổ, nên đừng chia lại theo 해요체 khi trích. 금상첨화 (đã tốt lại thêm tốt) ngược nghĩa với 설상가상 (hoạ vô đơn chí), cặp này hay bị hỏi trong đề.
+      vi: 공든 탑이 무너지랴 dùng đuôi -(으)랴 mang sắc thái văn chương, cổ - câu hỏi tu từ "lẽ nào lại...", nên nghĩa thật là "không đổ". Khi trích tục ngữ, hãy giữ nguyên đuôi gốc, đừng chia lại theo 해요체. 금상첨화 (đã tốt lại thêm tốt) ngược nghĩa với 설상가상 (hoạ vô đơn chí), cặp này hay bị hỏi trong đề.
   - type: example
     target: 자전거로 출퇴근하면 운동도 되고 교통비도 아끼니 일석이조이다.
     target_lang: ko
@@ -249,6 +248,18 @@ exercises:
       accepted:
         - 정말 일석이조이다.
         - 정말 일석이조다.
+        - 정말 일석이조이에요.
+        - 정말 일석이조입니다.
+        - 정말 일석이조야.
+        - 정말 일석이조네요.
+        - 정말 일석이조이군요.
+        - 정말로 일석이조이다.
+        - 정말로 일석이조예요.
+        - 정말로 일석이조입니다.
+        - 참 일석이조이다.
+        - 참 일석이조예요.
+        - 일석이조야.
+        - 일석이조네요.
         - 정말 일석이조예요.
         - 정말 일석이조입니다.
         - 그야말로 일석이조이다.
@@ -256,9 +267,6 @@ exercises:
         - 일석이조이다.
         - 일석이조예요.
     known_wrong:
-      - answer: 정말 일석이조이에요.
-        feedback_vi: 조 không có patchim nên dùng 예요 - 일석이조예요.
-        error_tag: ieyo_yeyo
       - answer: 정말 일석삼일이다.
         feedback_vi: Thành ngữ đúng là 일석이조 (một hòn đá, hai con chim).
         error_tag: idiom_form
@@ -266,7 +274,7 @@ exercises:
         feedback_vi: Không dịch từng chữ "một công đôi việc". Tiếng Hàn dùng 일석이조.
         error_tag: literal_translation
     explanation:
-      vi: "\"Một công đôi việc\" = 일석이조. \"Đúng là\" có thể là 정말 hoặc 그야말로, hoặc bỏ đi. 조 không có patchim nên đi với 예요."
+      vi: "\"Một công đôi việc\" = 일석이조. \"Đúng là\" có thể là 정말 hoặc 그야말로, hoặc bỏ đi. 조 không có patchim nên thường rút thành 예요 (일석이조이에요 cũng đúng)."
     display_answer: 정말 일석이조예요.
 
   # ---------------- application ----------------
@@ -330,12 +338,21 @@ exercises:
         - Thiếu trải nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.
         - Nếu không có trải nghiệm ở nước ngoài, ta dễ trở thành ếch ngồi đáy giếng.
         - Không có kinh nghiệm nước ngoài thì dễ trở thành ếch ngồi đáy giếng.
+        - Không có kinh nghiệm nước ngoài thì dễ thành ếch ngồi đáy giếng.
+        - Nếu không có kinh nghiệm nước ngoài thì dễ thành ếch ngồi đáy giếng.
+        - Nếu không có trải nghiệm nước ngoài thì dễ thành ếch ngồi đáy giếng.
+        - Nếu không có trải nghiệm nước ngoài thì dễ trở thành ếch ngồi đáy giếng.
+        - Nếu không có trải nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.
+        - Nếu không có kinh nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.
+        - Không có trải nghiệm ở nước ngoài thì dễ trở thành ếch ngồi đáy giếng.
+        - Không có kinh nghiệm ở nước ngoài thì dễ trở thành ếch ngồi đáy giếng.
+        - Không có trải nghiệm ở nước ngoài thì rất dễ thành ếch ngồi đáy giếng.
+        - Thiếu kinh nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.
+        - Không có trải nghiệm ở nước ngoài thì dễ thành con ếch trong giếng.
+        - Không có kinh nghiệm ở nước ngoài thì dễ thành con ếch trong giếng.
     rubric:
       diacritics: lenient
     known_wrong:
-      - answer: Không có trải nghiệm ở nước ngoài thì dễ thành con ếch trong giếng.
-        feedback_vi: Đây là tục ngữ - hãy dùng câu tương đương "ếch ngồi đáy giếng", không dịch từng chữ.
-        error_tag: literal_proverb
       - answer: Có trải nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.
         feedback_vi: 없으면 là "nếu không có" - bạn đã bỏ mất phủ định.
         error_tag: negation_missing
@@ -360,6 +377,9 @@ exercises:
         - 티끌 모아 태산이에요.
         - 티끌 모아 태산입니다.
         - 티끌 모아 태산이라고 해요.
+        - 티끌 모아 태산이네요.
+        - 티끌 모아 태산이야.
+        - 티끌 모아 태산이라고 한다.
     known_wrong:
       - answer: 바람 모아 폭풍
         feedback_vi: Không dịch từng chữ tục ngữ Việt. Câu tương đương tiếng Hàn là 티끌 모아 태산.
@@ -393,6 +413,7 @@ exercises:
     answer:
       orders:
         - [t-jak, t-kkeut, t-an, t-gye, t-se, t-han]
+        - [t-gye, t-jak, t-kkeut, t-an, t-se, t-han]
     explanation:
       vi: -지 않도록 = "để không"; mệnh đề mục đích 작심삼일로 끝나지 않도록 đứng trước 계획을 세워야 한다. 일석이조로 là token nhiễu - sai nghĩa.
     display_answer: 작심삼일로 끝나지 않도록 계획을 세워야 한다.

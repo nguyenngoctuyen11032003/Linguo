@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:cause-effect-written
 order_index: 3
 level: topik5
@@ -182,7 +181,7 @@ exercises:
         - "Gợi ý: \"nguy cơ, lo ngại\" - 우___; \"phụ thuộc vào\" - N에 ___ 있다."
     answer:
       blanks:
-        b1: [우려]
+        b1: [우려, 염려]
         b2: [달려]
     known_wrong:
       - answer: 의존해
@@ -215,6 +214,7 @@ exercises:
     answer:
       orders:
         - [g1, g2, g3, g4]
+        - [g2, g3, g1, g4]
     explanation:
       vi: 기여하다 đi với 에 (데에, viết gọn 데), không đi với 를 - nên 줄이는 데를 là sai. Tân ngữ của 줄이다 là 대기 오염을.
     display_answer: 전기 자동차의 보급은 대기 오염을 줄이는 데 기여했다.
@@ -234,7 +234,7 @@ exercises:
     answer:
       blanks:
         b1: [함으로써]
-        b2: [초래했다]
+        b2: [초래했다, 초래하였다, 야기했다, 가져왔다]
     known_wrong:
       - answer: 하므로써
         feedback_vi: Không có dạng 하므로써. "Bằng cách" là danh từ hoá -(으)ㅁ + 으로써 - 함으로써.
@@ -268,6 +268,13 @@ exercises:
         - 미세먼지로 야외 행사가 취소되었다.
         - 미세먼지로 야외 행사가 취소됐다.
         - 미세먼지 탓에 야외 행사는 취소되었다.
+        - 미세먼지로 인해 야외 행사가 취소되었다.
+        - 미세먼지로 인해 야외 행사가 취소됐다.
+        - 야외 행사가 미세먼지 탓에 취소되었다.
+        - 야외 행사가 미세먼지 때문에 취소되었다.
+        - 야외 행사가 미세먼지로 인해 취소되었다.
+        - 야외 행사가 미세먼지 때문에 취소됐다.
+        - 미세먼지 때문에 야외 행사는 취소되었다.
     known_wrong:
       - answer: 미세먼지 덕분에 야외 행사가 취소되었다.
         feedback_vi: 덕분에 chỉ dùng với kết quả tốt. Sự kiện bị huỷ là kết quả xấu - 탓에.
@@ -301,6 +308,11 @@ exercises:
         - 미래의 환경은 우리의 선택에 달려 있다.
         - 미래의 환경은 우리 선택에 달려 있다.
         - 미래 환경은 우리의 선택에 달려 있다.
+        - 환경의 미래는 우리 선택에 달렸다.
+        - 미래의 환경은 우리의 선택에 달렸다.
+        - 환경의 미래는 우리가 무엇을 선택하느냐에 달려 있다.
+        - 환경의 미래는 우리가 어떤 선택을 하느냐에 달려 있다.
+        - 환경의 미래는 우리의 선택에 달려있다.
     known_wrong:
       - answer: 환경의 미래는 우리의 선택에 의존한다.
         feedback_vi: 의존하다 là "dựa dẫm, lệ thuộc". Kết quả "phụ thuộc vào" điều kiện là 에 달려 있다.
@@ -377,6 +389,7 @@ exercises:
     answer:
       orders:
         - [u1, u2, u3, u4, u5]
+        - [u3, u1, u2, u4, u5]
     explanation:
       vi: 우려 nói về khả năng trong tương lai nên đi với định ngữ -(으)ㄹ - 악화될 우려가 있다; 악화되는 우려 là sai. Điều kiện 가뭄이 길어지면 đứng đầu.
     display_answer: 가뭄이 길어지면 물 부족 문제가 악화될 우려가 있다.
@@ -404,6 +417,17 @@ exercises:
         - Việc sử dụng nhiều đồ dùng một lần đã khiến vấn đề rác thải trở nên trầm trọng hơn.
         - Vì dùng nhiều đồ dùng một lần nên vấn đề rác thải đã trở nên nghiêm trọng hơn.
         - Do dùng nhiều đồ dùng một lần nên vấn đề rác thải đã trở nên nghiêm trọng hơn.
+        - Vì dùng nhiều đồ dùng một lần nên vấn đề rác thải trở nên trầm trọng hơn.
+        - Do dùng nhiều đồ dùng một lần nên vấn đề rác thải trở nên trầm trọng hơn.
+        - Do dùng nhiều đồ dùng một lần nên vấn đề rác thải trở nên nghiêm trọng hơn.
+        - Vì dùng nhiều đồ dùng một lần nên vấn đề rác thải trở nên nghiêm trọng hơn.
+        - Vì dùng nhiều đồ dùng một lần nên vấn đề rác thải đã nghiêm trọng hơn.
+        - Do dùng nhiều đồ dùng một lần, vấn đề rác thải đã trở nên trầm trọng hơn.
+        - Vì dùng nhiều đồ dùng một lần, vấn đề rác thải đã trở nên trầm trọng hơn.
+        - Do sử dụng nhiều đồ dùng một lần nên vấn đề rác thải đã trở nên trầm trọng hơn.
+        - Vì sử dụng nhiều đồ dùng một lần nên vấn đề rác thải đã trở nên trầm trọng hơn.
+        - Vì dùng nhiều đồ dùng một lần nên vấn đề rác thải đã trầm trọng hơn.
+        - Do dùng nhiều đồ dùng một lần nên vấn đề rác đã trở nên trầm trọng hơn.
     rubric:
       diacritics: lenient
     known_wrong:

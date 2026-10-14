@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:academic-culture-stance
 order_index: 3
 level: topik6
@@ -144,7 +143,7 @@ exercises:
     answer:
       correct_option_id: n4c
     explanation:
-      vi: -(으)ㄹ 따름이다 = "chỉ... mà thôi", khiêm tốn và trang trọng, rất hợp lời phát biểu. 셈이다 là "coi như", 불과하다 đi sau danh từ + 에, còn -(으)ㄹ지언정 là liên từ, không đứng cuối câu.
+      vi: -(으)ㄹ 따름이다 = "chỉ... mà thôi", khiêm tốn và trang trọng, rất hợp lời phát biểu. 감사할 셈입니다 nghĩa là "tôi định cảm ơn", sai ý; 불과하다 đi sau danh từ + 에; còn -(으)ㄹ지언정 là liên từ, không đứng cuối câu.
     display_answer: 따름입니다
 
   - key: ko:exercise:ac-stance-listen-column
@@ -259,7 +258,7 @@ exercises:
     difficulty: 3
     item: ko:item:ac-gachigwan
     prompt:
-      source_text: Mỗi thế hệ có hệ giá trị khác nhau.
+      source_text: Mỗi thế hệ có hệ giá trị khác nhau. (văn viết, đuôi -다)
       source_lang: vi
       direction: vi_to_target
     answer:
@@ -268,9 +267,21 @@ exercises:
         - 세대마다 가치관이 서로 다르다.
         - 세대별로 가치관이 다르다.
         - 각 세대는 가치관이 다르다.
-        - 세대마다 가치관이 다릅니다.
-        - 세대마다 가치관이 달라요.
+        - 세대마다 가치관은 다르다.
+        - 각 세대마다 가치관이 다르다.
+        - 각 세대마다 가치관이 서로 다르다.
+        - 세대마다 가치관이 각기 다르다.
+        - 세대별로 가치관이 서로 다르다.
+        - 세대마다 다른 가치관을 가지고 있다.
+        - 세대마다 다른 가치관을 갖고 있다.
+        - 세대마다 다른 가치관을 가진다.
     known_wrong:
+      - answer: 세대마다 가치관이 다릅니다.
+        feedback_vi: Đây là 합쇼체. Đề yêu cầu văn viết - 다르다.
+        error_tag: hapsyo_in_writing
+      - answer: 세대마다 가치관이 달라요.
+        feedback_vi: Đây là 해요체. Đề yêu cầu văn viết - 다르다.
+        error_tag: haeyo_in_writing
       - answer: 세대마다 가치가 다르다.
         feedback_vi: 가치 là "giá trị" của một vật. "Hệ giá trị, quan niệm sống" là 가치관.
         error_tag: vocab_meaning
@@ -281,7 +292,7 @@ exercises:
         feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
         error_tag: romanization
     explanation:
-      vi: N마다 = mỗi N; 가치관 = hệ giá trị; 다르다 = khác. Đuôi -다 hợp văn viết, 다릅니다/달라요 cũng được.
+      vi: N마다 = mỗi N; 가치관 = hệ giá trị; 다르다 = khác. Đuôi -다 hợp văn viết; 다릅니다/달라요 là đuôi nói.
     display_answer: 세대마다 가치관이 다르다.
 
   # ---------------- application ----------------
@@ -344,17 +355,23 @@ exercises:
         - Lớp trẻ đang kế thừa truyền thống.
         - Giới trẻ đang kế thừa truyền thống.
         - Thế hệ trẻ đang gìn giữ và kế thừa truyền thống.
+        - Thế hệ trẻ đang thừa kế truyền thống.
+        - Thế hệ trẻ đang nối tiếp truyền thống.
+        - Thế hệ trẻ đang kế thừa những truyền thống.
+        - Thế hệ trẻ đang kế thừa các truyền thống.
+        - Thế hệ trẻ hiện đang kế thừa truyền thống.
+        - Thế hệ trẻ kế thừa truyền thống.
+        - Lớp trẻ đang tiếp nối truyền thống.
+        - Giới trẻ đang tiếp nối truyền thống.
+        - Những người trẻ đang kế thừa truyền thống.
     rubric:
       diacritics: lenient
     known_wrong:
-      - answer: Thế hệ trẻ đang thừa kế truyền thống.
-        feedback_vi: "\"Thừa kế\" dùng cho tài sản (상속). Với truyền thống, nói \"kế thừa\" hoặc \"tiếp nối\"."
-        error_tag: sino_false_friend
       - answer: Thế hệ trẻ đang phá bỏ truyền thống.
         feedback_vi: 계승하다 là kế thừa, tiếp nối - nghĩa ngược với phá bỏ.
         error_tag: vocab_meaning
     explanation:
-      vi: 젊은 세대 = thế hệ trẻ, 전통 = truyền thống, 계승하고 있다 = đang kế thừa. Trong tiếng Việt, "thừa kế" dùng cho tài sản, nên chọn "kế thừa".
+      vi: 젊은 세대 = thế hệ trẻ, 전통 = truyền thống, 계승하고 있다 = đang kế thừa. Trong tiếng Việt, "thừa kế" thiên về tài sản (상속), còn với truyền thống thường nói "kế thừa" hoặc "tiếp nối".
     display_answer: Thế hệ trẻ đang kế thừa truyền thống.
 
   - key: ko:exercise:ac-stance-translate-ttareum
@@ -376,6 +393,14 @@ exercises:
         - 제 할 일을 할 따름입니다.
         - 저는 제 할 일을 했을 뿐입니다.
         - 제 할 일을 했을 뿐입니다.
+        - 저는 제 일을 했을 따름입니다.
+        - 저는 제 일을 할 따름입니다.
+        - 저는 제 일을 했을 뿐입니다.
+        - 저는 제 일을 할 뿐입니다.
+        - 저는 제 할 일을 할 뿐입니다.
+        - 제 할 일을 할 뿐입니다.
+        - 저는 제가 맡은 일을 했을 따름입니다.
+        - 저는 제 몫을 했을 따름입니다.
     known_wrong:
       - answer: 저는 제 할 일을 한 따름입니다.
         feedback_vi: Cấu trúc là -(으)ㄹ 따름이다 - 했을 따름 hoặc 할 따름, không dùng 한.

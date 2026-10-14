@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:science-environment-review
 order_index: 5
 level: topik5
@@ -64,7 +63,7 @@ body:
       vi: Bản tin khoa học thường theo khung - tiêu đề danh từ → 연구진이 … 개발했다 → 실험 결과 … 것으로 나타났다 / 사실이 밝혀졌다 → 연구진은 … 기여할 것으로 기대한다. Nhận ra khung này giúp bạn đọc nhanh phần đọc hiểu TOPIK II.
   - type: explain
     text:
-      vi: Bài giảng dùng 합쇼체 và đi theo khung - mở đầu -고자 합니다 → hiện trạng (-는 추세입니다) → nguyên nhân (탓에, 때문입니다) → nguy cơ (-(으)ㄹ 우려가 있습니다) → kết luận (결국, 따라서 … 달려 있습니다). Ý chính của người nói nằm ở phần kết luận.
+      vi: Bài giảng dùng 합쇼체 và đi theo khung - mở đầu -고자 합니다 → hiện trạng (-는 추세입니다) → nguyên nhân (탓에, 때문에) → nguy cơ (-(으)ㄹ 우려가 있습니다) → kết luận (결국, 따라서 … 달려 있습니다). Ý chính của người nói nằm ở phần kết luận.
   - type: deep_explain
     text:
       vi: 'Trước khi nộp bài viết, hãy soát năm điểm - (1) không có bị động kép (되어지다, -어지어지다); (2) có tân ngữ thì dùng 줄이다/늘리다, không có thì 줄다/늘다; (3) 탓에 chỉ đi với kết quả xấu; (4) -(으)ㄹ수록 viết liền, vế sau có 더 hoặc động từ thay đổi; (5) từ Hán Hàn đúng nghĩa - 환경 là môi trường, 실험 là thí nghiệm, 시험 là kỳ thi.'
@@ -76,10 +75,10 @@ body:
     note:
       vi: Bản tin minh hoạ (số liệu giả định) - 개발했다, 실험 결과 … 나타났다, -(으)ㄹ수록, 밝혀졌다, -는 데 기여하다.
   - type: example
-    target: 오늘은 기후 정책의 과제에 대해 말씀드리고자 합니다. 재생 에너지의 비중은 늘어나는 추세이지만 아직 충분하지 않습니다. 석탄 발전에 의존하는 탓에 온실가스 배출량이 크게 줄지 않고 있기 때문입니다. 이대로 가면 탄소 중립 목표를 달성하지 못할 우려가 있습니다. 결국 정책의 성공은 시민과 기업이 얼마나 참여하느냐에 달려 있습니다.
+    target: 오늘은 기후 정책의 과제에 대해 말씀드리고자 합니다. 재생 에너지의 비중은 늘어나는 추세이지만 아직 충분하지 않습니다. 석탄 발전에 의존하는 탓에 온실가스 배출량이 크게 줄지 않고 있습니다. 이대로 가면 탄소 중립 목표를 달성하지 못할 우려가 있습니다. 결국 정책의 성공은 시민과 기업이 얼마나 참여하느냐에 달려 있습니다.
     target_lang: ko
     translation:
-      vi: Hôm nay tôi xin trình bày về những thách thức của chính sách khí hậu. Tỉ trọng năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đủ. Đó là vì do phụ thuộc vào nhiệt điện than nên lượng phát thải khí nhà kính không giảm nhiều. Cứ thế này thì có nguy cơ không đạt được mục tiêu trung hoà carbon. Rốt cuộc, thành công của chính sách phụ thuộc vào mức độ tham gia của người dân và doanh nghiệp.
+      vi: Hôm nay tôi xin trình bày về những thách thức của chính sách khí hậu. Tỉ trọng năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đủ. Do còn phụ thuộc vào nhiệt điện than nên lượng phát thải khí nhà kính không giảm nhiều. Cứ thế này thì có nguy cơ không đạt được mục tiêu trung hoà carbon. Rốt cuộc, thành công của chính sách phụ thuộc vào mức độ tham gia của người dân và doanh nghiệp.
     note:
       vi: Trích đoạn bài giảng (nội dung minh hoạ) - -고자 합니다, -는 추세이다, 탓에, -(으)ㄹ 우려가 있다, 에 달려 있다.
   - type: example
@@ -136,7 +135,7 @@ exercises:
     difficulty: 4
     item: ko:item:gp-e-dallyeo-itda
     prompt:
-      stem: "Đọc đoạn bài giảng: 재생 에너지의 비중은 늘어나는 추세이지만 아직 충분하지 않습니다. 석탄 발전에 의존하는 탓에 온실가스 배출량이 크게 줄지 않고 있기 때문입니다. 이대로 가면 탄소 중립 목표를 달성하지 못할 우려가 있습니다. 결국 정책의 성공은 시민과 기업이 얼마나 참여하느냐에 달려 있습니다. Ý chính của người nói là gì?"
+      stem: "Đọc đoạn bài giảng: 재생 에너지의 비중은 늘어나는 추세이지만 아직 충분하지 않습니다. 석탄 발전에 의존하는 탓에 온실가스 배출량이 크게 줄지 않고 있습니다. 이대로 가면 탄소 중립 목표를 달성하지 못할 우려가 있습니다. 결국 정책의 성공은 시민과 기업이 얼마나 참여하느냐에 달려 있습니다. Ý chính của người nói là gì?"
       stem_lang: vi
       options:
         - { id: e7t, text: Thành công của chính sách khí hậu phụ thuộc vào sự tham gia của người dân và doanh nghiệp., lang: vi }
@@ -186,14 +185,11 @@ exercises:
     answer:
       blanks:
         b1: [수록]
-        b2: [기여]
+        b2: [기여, 공헌]
     known_wrong:
       - answer: 때
         feedback_vi: 약할 때 chỉ là "khi yếu". Ý "càng … càng" cần -(으)ㄹ수록.
         error_tag: surok_missing
-      - answer: 공헌
-        feedback_vi: 공헌하다 cũng là "cống hiến" nhưng mang sắc thái trang trọng về con người; cụm cố định trong tin khoa học là -는 데 기여하다.
-        error_tag: giyeo_collocation
     explanation:
       vi: 약하다 → 약할수록 (càng yếu). -는 데 기여하다 = góp phần vào việc…, đúng khung câu kết của bản tin khoa học.
     display_answer: 기온이 낮고 바람이 약할수록 미세먼지 농도가 더 높아진다. 이 기술은 시민의 건강을 지키는 데 기여할 것이다.
@@ -215,6 +211,7 @@ exercises:
     answer:
       orders:
         - [r1, r2, r3, r4]
+        - [r3, r1, r2, r4]
     explanation:
       vi: "\"Bằng cách\" là -(으)ㅁ으로써 - 이용함으로써. 이용하므로써 là lỗi trộn -(으)므로 (vì) với -(으)ㅁ으로써."
     display_answer: 대중교통을 이용함으로써 탄소 배출을 줄일 수 있다.
@@ -233,8 +230,8 @@ exercises:
         - { id: b2, width_hint: 3 }
     answer:
       blanks:
-        b1: [탓]
-        b2: [줄여야]
+        b1: [탓, 때문]
+        b2: [줄여야, 감축해야, 감소시켜야]
     known_wrong:
       - answer: 덕분
         feedback_vi: Lượng phát thải không giảm là kết quả xấu - dùng 탓에, không dùng 덕분에.
@@ -275,6 +272,13 @@ exercises:
         - 재생 에너지 비중이 증가하는 추세이다.
         - 재생 에너지의 비중은 늘어나는 추세이다.
         - 재생 에너지의 비중이 늘고 있는 추세이다.
+        - 재생 에너지의 비중이 늘어나고 있는 추세이다.
+        - 재생 에너지의 비중은 증가하는 추세이다.
+        - 재생 에너지의 비중은 커지는 추세이다.
+        - 재생 에너지 비중은 늘어나는 추세이다.
+        - 재생 에너지의 비율이 늘어나는 추세이다.
+        - 재생 에너지의 비율이 높아지는 추세이다.
+        - 재생 에너지의 비율이 증가하는 추세이다.
     known_wrong:
       - answer: 재생 에너지의 비중이 많은 추세이다.
         feedback_vi: 추세 đi với động từ thay đổi (늘어나는, 커지는), không đi với tính từ tĩnh 많은.
@@ -308,6 +312,13 @@ exercises:
         - 아직 사고의 원인은 밝혀지지 않았다.
         - 아직 사고의 원인이 밝혀지지 않았다.
         - 아직 사고 원인이 밝혀지지 않았다.
+        - 사고의 원인은 아직 규명되지 않았다.
+        - 사고 원인은 아직 규명되지 않았다.
+        - 사고의 원인은 아직 밝혀지지 않고 있다.
+        - 사고의 원인은 여전히 밝혀지지 않았다.
+        - 사고의 원인은 아직도 밝혀지지 않았다.
+        - 사고의 원인은 아직까지 밝혀지지 않았다.
+        - 사고의 원인이 여전히 밝혀지지 않았다.
     known_wrong:
       - answer: 사고의 원인은 아직 밝히지 않았다.
         feedback_vi: Nguyên nhân là thứ "được làm rõ" nên dùng bị động 밝혀지다 → 밝혀지지 않았다.
@@ -381,6 +392,7 @@ exercises:
     answer:
       orders:
         - [w1, w2, w3, w4, w5]
+        - [w2, w3, w4, w1, w5]
     explanation:
       vi: Khung kết bản tin - 연구진은 + [nội dung kỳ vọng] + -(으)ㄹ 것으로 기대한다. 기여하다 đi với 에 nên 지키는 데를 là sai.
     display_answer: 연구진은 이 기술이 시민의 건강을 지키는 데 기여할 것으로 기대한다.
@@ -407,6 +419,13 @@ exercises:
         - Tỉ trọng năng lượng tái tạo đang tăng nhưng vẫn chưa đủ.
         - Tỷ trọng năng lượng tái tạo đang tăng nhưng vẫn chưa đủ.
         - Dù tỉ trọng năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đủ.
+        - Tỉ trọng năng lượng tái tạo đang tăng lên nhưng vẫn chưa đủ.
+        - Tỷ trọng năng lượng tái tạo đang tăng lên nhưng vẫn chưa đủ.
+        - Tỉ lệ năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đủ.
+        - Tỷ lệ năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đủ.
+        - Tỉ trọng năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đủ lớn.
+        - Tỷ trọng năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đầy đủ.
+        - Tỉ trọng năng lượng tái tạo có xu hướng tăng lên nhưng vẫn chưa đủ.
         - Mặc dù tỉ trọng năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đủ.
     rubric:
       diacritics: lenient

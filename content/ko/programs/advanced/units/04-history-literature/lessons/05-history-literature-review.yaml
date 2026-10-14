@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:history-literature-review
 order_index: 5
 level: topik6
@@ -180,7 +179,7 @@ exercises:
         - -지만 / -는데도
     answer:
       blanks:
-        b1: [지만, 는데도, 는데]
+        b1: [지만, 는데도, 는데, 으나, 음에도, 어도]
     known_wrong:
       - answer: 거나
         feedback_vi: -거나 là "hoặc". -건만 là nhượng bộ "vậy mà" - dạng hiện đại -지만.
@@ -205,7 +204,7 @@ exercises:
         - { id: b1, width_hint: 2 }
     answer:
       blanks:
-        b1: [보존]
+        b1: [보존, 보전, 보관, 관리, 보호]
     known_wrong:
       - answer: 복원
         feedback_vi: Điều chỉnh nhiệt độ, độ ẩm là giữ nguyên trạng - 보존. 복원 là làm lại thứ đã hư hỏng.
@@ -239,6 +238,13 @@ exercises:
         - 저는 입이 정말 무거우니까 걱정하지 마세요.
         - 저는 입이 무거워요. 걱정하지 마세요.
         - 저는 입이 무거워요. 걱정 마세요.
+        - 저는 입이 무거우니 걱정하지 마세요.
+        - 저는 입이 아주 무거우니까 걱정하지 마세요.
+        - 제가 입이 아주 무거우니까 걱정 마세요.
+        - 저는 입이 무겁습니다. 걱정하지 마십시오.
+        - 저는 입이 무거우니까 걱정하지 마십시오.
+        - 나는 입이 무거우니까 걱정하지 마.
+        - 나 입이 무거우니까 걱정하지 마.
     known_wrong:
       - answer: 저는 입이 무거워서 걱정하지 마세요.
         feedback_vi: -아/어서 không đi với mệnh lệnh ở vế sau. Dùng 무거우니까.
@@ -361,6 +367,14 @@ exercises:
         - Tôi bỗng nhìn lại xem mình có trân trọng từng chữ một hay không.
         - Tôi tự nhìn lại xem mình có quý trọng từng con chữ hay không.
         - Tôi tự hỏi liệu mình có trân trọng từng chữ một không.
+        - Tôi tự hỏi mình có đang trân trọng từng con chữ hay không.
+        - Tôi tự hỏi liệu mình có đang trân trọng từng chữ một hay không.
+        - Tôi tự vấn liệu mình có đang trân trọng từng con chữ hay không.
+        - Tôi nhìn lại bản thân xem mình có đang trân trọng từng con chữ hay không.
+        - Tôi bỗng nhìn lại xem mình có đang trân trọng từng con chữ hay không.
+        - Tôi bất giác tự hỏi mình có đang trân trọng từng con chữ hay không.
+        - Tôi tự nhìn lại xem mình có đang trân trọng từng con chữ hay không.
+        - Tôi lại tự hỏi liệu mình có đang trân trọng từng con chữ hay không.
     rubric:
       diacritics: lenient
     known_wrong:

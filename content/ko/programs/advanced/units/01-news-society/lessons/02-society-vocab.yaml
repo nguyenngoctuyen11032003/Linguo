@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:society-economy-vocab
 order_index: 2
 level: topik5
@@ -46,7 +45,7 @@ body:
       vi: Tiếng Hàn rất chặt về cặp từ đi với nhau. Số lượng thì 증가하다/감소하다 (가구 수가 증가했다), giá cả thì 오르다/상승하다 (물가가 올랐다), tác động thì N에 영향을 미치다, giải pháp thì 대책을 마련하다.
   - type: explain
     text:
-      vi: Cụm danh từ Hán Hàn sắp theo trật tự "bổ ngữ trước, chính sau", ngược với tiếng Việt - 환경 오염 là "ô nhiễm môi trường", 물가 상승 là "giá cả tăng", 청년 실업 là "thất nghiệp của thanh niên".
+      vi: Cụm danh từ Hán Hàn sắp theo trật tự "bổ ngữ trước, chính sau", ngược với tiếng Việt - 환경 오염 là "ô nhiễm môi trường", 대기 오염 là "ô nhiễm không khí", 청년 실업 là "thất nghiệp của thanh niên".
   - type: deep_explain
     text:
       vi: Bạn giả Hán Việt là từ có âm quen nhưng nghĩa lệch. 가구 trong tin xã hội là "hộ" (家口), không phải "gia cụ, đồ đạc" (家具 - cũng đọc 가구). 심각하다 (thâm khắc) là "nghiêm trọng", 발표하다 (phát biểu) là "công bố", 재활용 (tái hoạt dụng) là "tái chế". Khi gặp từ Hán Hàn, hãy đoán bằng âm Hán Việt rồi kiểm tra lại bằng ngữ cảnh.
@@ -139,7 +138,7 @@ exercises:
     answer:
       correct_option_id: c8w
     explanation:
-      vi: 가구 (家口) trong tin xã hội là "hộ gia đình"; 가구 (家具) "đồ nội thất" viết giống nhưng không hợp với "늘었다" trong thống kê dân số. "Gia đình một con" là 외동 가정, "căn hộ một phòng" là 원룸.
+      vi: 가구 (家口) trong tin xã hội là "hộ gia đình"; 가구 (家具) "đồ nội thất" viết giống nhưng không hợp với "1인" (một người) trong cách nói thống kê dân số. "Gia đình một con" là 외동 가정, "căn hộ một phòng" là 원룸.
     display_answer: hộ gia đình một người
 
   - key: ko:exercise:society-vocab-listen-jobs
@@ -159,7 +158,7 @@ exercises:
     answer:
       correct_option_id: h5r
     explanation:
-      vi: 취업난 là "khó tìm việc", 갈수록 là "càng ngày càng", 심각해지다 là "trở nên nghiêm trọng". -난 (難) là "khó khăn", không phải "tai nạn" (사고).
+      vi: 취업난 là "khó tìm việc", 갈수록 là "càng ngày càng", 심각해지다 là "trở nên nghiêm trọng". -난 (難) là "khó khăn, thiếu hụt"; "tai nạn lao động" là 산업재해, không liên quan.
     display_answer: Tình trạng thanh niên khó tìm việc ngày càng nghiêm trọng.
 
   - key: ko:exercise:society-vocab-fill-hinted
@@ -178,8 +177,8 @@ exercises:
         - "Gợi ý: giá cả - 상승하다/오르다; số lượng - 감소하다/줄다. Chia quá khứ văn viết."
     answer:
       blanks:
-        b1: [상승했다, 올랐다]
-        b2: [감소했다, 줄었다]
+        b1: [상승했다, 올랐다, 상승하였다]
+        b2: [감소했다, 줄었다, 감소하였다, 줄어들었다]
     known_wrong:
       - answer: 증가했다
         feedback_vi: 증가하다 dùng cho số lượng. Giá cả tăng là 상승했다 hoặc 올랐다.
@@ -190,9 +189,6 @@ exercises:
       - answer: 감소했어요
         feedback_vi: Đây là 해요체. Văn viết là 감소했다.
         error_tag: haeyo_in_writing
-      - answer: 하락했다
-        feedback_vi: 하락하다 dùng cho giá cả, tỉ lệ. Số trẻ sinh ra là số lượng nên dùng 감소했다 hoặc 줄었다.
-        error_tag: collocation_number
     explanation:
       vi: Giá cả đi với 상승하다/오르다, số lượng đi với 감소하다/줄다. Cả hai câu tả sự việc năm nay đã xảy ra nên chia quá khứ -했다/-었다.
     display_answer: 올해 물가가 크게 상승했다. 반면 출생아 수는 크게 감소했다.
@@ -216,6 +212,7 @@ exercises:
       orders:
         - [u1, u2, u3, u4, u5]
         - [u3, u1, u2, u4, u5]
+        - [u1, u2, u4, u3, u5]
     explanation:
       vi: 환경 오염 là "ô nhiễm môi trường" (môi trường đứng trước). Đối tượng bị ảnh hưởng đi với 에 - 건강에; 건강을 sai vì 영향을 đã là tân ngữ.
     display_answer: 환경 오염이 건강에 영향을 미친다.
@@ -234,7 +231,7 @@ exercises:
         - { id: b2, width_hint: 1 }
     answer:
       blanks:
-        b1: [마련했다]
+        b1: [마련했다, 마련하였다]
         b2: [에]
     known_wrong:
       - answer: 를
@@ -273,6 +270,8 @@ exercises:
         - 1인 가구 수가 증가한다.
         - 일인 가구가 증가하고 있다.
         - 일인 가구 수가 증가하고 있다.
+        - 1인 가구가 늘어난다.
+        - 1인 가구 수가 늘어난다.
     known_wrong:
       - answer: 1인 가구가 증가하고 있어요.
         feedback_vi: Đây là 해요체. Văn viết là 증가하고 있다.
@@ -310,6 +309,8 @@ exercises:
         - 물가가 많이 상승했다.
         - 물가는 올랐다.
         - 물가는 상승했다.
+        - 물가가 상승하였다.
+        - 물가가 많이 상승하였다.
     known_wrong:
       - answer: 물가가 증가했다.
         feedback_vi: 증가하다 dùng cho số lượng. Giá cả tăng là 올랐다 hoặc 상승했다.
@@ -386,6 +387,8 @@ exercises:
         - Việc tái chế giúp giảm ô nhiễm môi trường.
         - Tái chế giảm ô nhiễm môi trường.
         - Tái chế làm giảm thiểu ô nhiễm môi trường.
+        - Tái sử dụng làm giảm ô nhiễm môi trường.
+        - Tái sử dụng giúp giảm ô nhiễm môi trường.
         - Tái chế giúp giảm thiểu ô nhiễm môi trường.
         - Tái chế giảm thiểu ô nhiễm môi trường.
     rubric:

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:science-tech-passive
 order_index: 2
 level: topik5
@@ -94,11 +93,11 @@ body:
     note:
       vi: Có tân ngữ 배출량을 nên phải dùng động từ gây khiến 줄이다. 줄다 chỉ dùng khi chính lượng phát thải là chủ ngữ - 배출량이 줄었다.
   - type: common_mistake
-    wrong: 연구진은 쥐를 대상으로 시험을 진행했다.
-    right: 연구진은 쥐를 대상으로 실험을 진행했다.
+    wrong: 다음 주에 한국어 실험이 있다.
+    right: 다음 주에 한국어 시험이 있다.
     target_lang: ko
     note:
-      vi: 실험 (thực nghiệm) là "thí nghiệm", còn 시험 là "kỳ thi, kiểm tra" (chạy thử thì là 시험 운행). Hai từ chỉ khác một chữ nên người Việt hay viết nhầm.
+      vi: 실험 là "thí nghiệm khoa học", còn 시험 là "kỳ thi, bài kiểm tra". Hai từ chỉ khác một chữ và đều có âm Hán Việt gần nhau ("thực nghiệm", "thí") nên người Việt hay viết nhầm.
   - type: summary
     points:
       - vi: 인공지능 · 개인 정보 · 유출(되다) · 자율 주행 · 연구진 · 실험 · 개발하다/개발되다.
@@ -183,8 +182,8 @@ exercises:
         - "Gợi ý: bị động của 밝히다 ở quá khứ; động từ gây khiến của 줄다 + -(으)ㄹ."
     answer:
       blanks:
-        b1: [밝혀졌다]
-        b2: [줄일]
+        b1: [밝혀졌다, 드러났다, 규명되었다, 규명됐다]
+        b2: [줄일, 감축할, 감소시킬]
     known_wrong:
       - answer: 밝혔다
         feedback_vi: Chủ ngữ là 원인이 (nguyên nhân được làm rõ) nên cần bị động 밝혀졌다.
@@ -216,6 +215,7 @@ exercises:
     answer:
       orders:
         - [v1, v2, v3, v4]
+        - [v2, v3, v1, v4]
     explanation:
       vi: Có chủ thể rõ (연구진이) và tân ngữ (기술을) nên dùng chủ động 개발했다. 개발되었다 là bị động, không đi với tân ngữ 을/를.
     display_answer: 국내 연구진이 새로운 자율 주행 기술을 개발했다.
@@ -234,11 +234,11 @@ exercises:
         - { id: b2, width_hint: 3 }
     answer:
       blanks:
-        b1: [발생했다]
+        b1: [발생했다, 발생하였다, 일어났다, 났다]
         b2: [알려져]
     known_wrong:
       - answer: 발생되었다
-        feedback_vi: 발생하다 đã là "xảy ra" (nội động từ), không cần bị động - 발생했다.
+        feedback_vi: 발생되다 cũng gặp trong văn bản hành chính nhưng thừa - 발생하다 đã là "xảy ra" (nội động từ), nên dùng 발생했다 cho tự nhiên.
         error_tag: unnecessary_passive
       - answer: 알려지어져
         feedback_vi: Bị động kép. Dạng đúng là 알려져 있다.
@@ -301,6 +301,12 @@ exercises:
         - 정부는 석탄 화력 발전을 줄이고 재생 에너지를 늘리기로 했다.
         - 정부는 석탄 화력 발전을 줄이고 재생 에너지를 늘리기로 결정했다.
         - 정부는 석탄 발전을 줄이며 재생 에너지를 늘리기로 했다.
+        - 정부는 석탄 발전을 줄이고 재생 에너지를 확대하기로 했다.
+        - 정부는 석탄 화력 발전을 줄이고 재생 에너지를 확대하기로 했다.
+        - 정부는 석탄 발전을 감축하고 재생 에너지를 확대하기로 했다.
+        - 정부는 석탄 발전은 줄이고 재생 에너지는 늘리기로 했다.
+        - 정부는 석탄 발전을 줄이고 재생 에너지를 늘리기로 하였다.
+        - 정부는 석탄 화력 발전을 줄이고 재생 에너지를 늘리기로 하였다.
     known_wrong:
       - answer: 정부는 석탄 발전을 줄고 재생 에너지를 늘기로 했다.
         feedback_vi: Có tân ngữ (을/를) nên phải dùng 줄이다, 늘리다 - 줄이고, 늘리기로.
@@ -400,6 +406,15 @@ exercises:
         - Kết quả nghiên cứu đã làm rõ sự thật là thiếu ngủ thì trí nhớ giảm sút.
         - Kết quả nghiên cứu đã chỉ ra rằng thiếu ngủ thì trí nhớ giảm sút.
         - Kết quả nghiên cứu đã chỉ ra rằng thiếu ngủ làm giảm trí nhớ.
+        - Kết quả nghiên cứu cho thấy thiếu ngủ thì trí nhớ giảm.
+        - Kết quả nghiên cứu cho thấy nếu thiếu ngủ thì trí nhớ giảm sút.
+        - Kết quả nghiên cứu đã chứng minh rằng nếu thiếu ngủ thì trí nhớ giảm sút.
+        - Kết quả nghiên cứu đã chứng minh thiếu ngủ thì trí nhớ giảm sút.
+        - Kết quả nghiên cứu đã chứng minh rằng thiếu ngủ làm giảm trí nhớ.
+        - Kết quả nghiên cứu đã chứng minh rằng thiếu ngủ sẽ làm giảm trí nhớ.
+        - Kết quả nghiên cứu đã chứng minh rằng thiếu ngủ thì trí nhớ bị suy giảm.
+        - Nghiên cứu đã chứng minh rằng thiếu ngủ thì trí nhớ giảm sút.
+        - Nghiên cứu cho thấy thiếu ngủ làm giảm trí nhớ.
     rubric:
       diacritics: lenient
     known_wrong:

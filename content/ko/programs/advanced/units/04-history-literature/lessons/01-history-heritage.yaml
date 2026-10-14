@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:history-heritage
 order_index: 1
 level: topik6
@@ -45,7 +44,7 @@ body:
       vi: Tiếng Việt nói "khôi phục" cho cả công trình lẫn sức khoẻ, nhưng tiếng Hàn tách làm hai. 복원 dùng cho hình dạng vật thể (건물, 그림, 파일); 회복 dùng cho trạng thái (건강, 신뢰, 경제).
   - type: deep_explain
     text:
-      vi: Bài đọc về di sản hay dùng bị động - 보존되어 있다 (đang được bảo tồn), 복원되었다 (đã được phục dựng), 등재되었다 (đã được ghi danh), 기록되어 있다 (được ghi chép). Khi gặp -되어 있다, hãy hiểu đó là trạng thái còn kéo dài đến hiện tại. Lưu ý thêm - từ năm 2024, văn bản nhà nước dần dùng 국가유산 thay cho 문화재, nên bạn có thể gặp cả hai.
+      vi: Bài đọc về di sản hay dùng bị động - 보존되어 있다 (đang được bảo tồn), 복원되었다 (đã được phục dựng), 등재되었다 (đã được ghi danh), 기록되어 있다 (được ghi chép). Khi gặp -되어 있다, hãy hiểu đó là trạng thái còn kéo dài đến hiện tại. Lưu ý thêm - từ tháng 5/2024, luật và tên cơ quan nhà nước Hàn Quốc dùng khái niệm 국가유산 (di sản quốc gia) thay cho 문화재, nhưng báo chí và bài đọc vẫn dùng 문화재 nhiều, nên bạn có thể gặp cả hai.
   - type: example
     target: 조선 시대의 세종대왕은 글을 모르는 백성을 위해 1443년에 훈민정음을 창제하였다.
     target_lang: ko
@@ -195,7 +194,7 @@ exercises:
         - 由來 - 유...
     answer:
       blanks:
-        b1: [유래]
+        b1: [유래, 기원]
     known_wrong:
       - answer: 유행
         feedback_vi: 유행 là "thịnh hành". "Bắt nguồn từ" là N에서 유래하다.
@@ -244,7 +243,7 @@ exercises:
         - { id: b1, width_hint: 2 }
     answer:
       blanks:
-        b1: [복원]
+        b1: [복원, 복구, 재건]
     known_wrong:
       - answer: 회복
         feedback_vi: 회복 dùng cho trạng thái (sức khoẻ, kinh tế). Công trình được dựng lại theo hình dạng cũ là 복원.
@@ -278,9 +277,20 @@ exercises:
         - 세종대왕이 훈민정음을 창제했습니다.
         - 세종대왕께서 훈민정음을 창제하셨다.
         - 세종대왕께서 훈민정음을 창제하셨어요.
+        - 세종대왕께서 훈민정음을 창제하셨습니다.
+        - 세종대왕은 훈민정음을 창제하셨다.
+        - 세종대왕은 훈민정음을 창제하셨습니다.
+        - 세종은 훈민정음을 창제했다.
+        - 세종은 훈민정음을 창제하였다.
+        - 훈민정음은 세종대왕이 창제했다.
+        - 훈민정음은 세종대왕이 창제하였다.
+        - 훈민정음은 세종대왕께서 창제하셨다.
+        - 세종대왕은 훈민정음을 만들었다.
+        - 세종대왕이 훈민정음을 만들었다.
+        - 세종대왕께서 훈민정음을 만드셨다.
     known_wrong:
       - answer: 세종대왕은 훈민정음을 발명했다.
-        feedback_vi: Với chữ viết, văn bản lịch sử dùng 창제하다 (sáng chế), không dùng 발명하다 như máy móc.
+        feedback_vi: 발명했다 vẫn hiểu được nhưng thiên về máy móc, vật dụng. Với chữ viết, văn bản lịch sử dùng 창제하다 (sáng chế).
         error_tag: word_choice
       - answer: 세종대왕은 훈민정음이 창제했다.
         feedback_vi: 훈민정음 là tân ngữ nên cần 을 - 훈민정음을 창제했다.
@@ -354,6 +364,13 @@ exercises:
         - Cung điện này đã được công nhận là Di sản thế giới của UNESCO.
         - Cung điện này đã được đưa vào danh sách Di sản thế giới UNESCO.
         - Cung điện này đã được đưa vào danh sách Di sản thế giới của UNESCO.
+        - Cung điện này đã được UNESCO ghi danh là Di sản thế giới.
+        - Cung điện này được UNESCO công nhận là Di sản thế giới.
+        - Cung điện này đã được ghi danh vào danh sách Di sản thế giới UNESCO.
+        - Cung điện này đã được ghi vào danh sách Di sản thế giới UNESCO.
+        - Cung điện này được đưa vào danh sách Di sản thế giới UNESCO.
+        - Hoàng cung này đã được ghi danh là Di sản thế giới UNESCO.
+        - Hoàng cung này đã được công nhận là Di sản thế giới UNESCO.
     rubric:
       diacritics: lenient
     known_wrong:

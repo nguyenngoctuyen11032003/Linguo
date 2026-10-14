@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:literary-endings
 order_index: 2
 level: topik6
@@ -40,7 +39,7 @@ body:
       vi: Nhóm nhượng bộ có sắc thái riêng - -건만 ≈ -지만 nhưng kèm tiếc nuối; -(으)ㄹ망정 ≈ -(으)ㄹ지언정 "thà... chứ không". -(으)ㄹ진대 nêu tiền đề hiển nhiên ("đã... thì"), thường đi với câu hỏi tu từ 어찌 -겠는가.
   - type: explain
     text:
-      vi: -(으)되 là đuôi duy nhất trong nhóm còn rất sống trong văn bản hiện đại - nội quy, luật, thông báo. 입장은 무료로 하되 예약은 필수이다 nghĩa là "vào cửa miễn phí, nhưng bắt buộc đặt trước".
+      vi: -(으)되 là đuôi còn rất sống trong văn bản hiện đại - nội quy, luật, thông báo. 입장은 무료로 하되 예약은 필수이다 nghĩa là "vào cửa miễn phí, nhưng bắt buộc đặt trước".
   - type: deep_explain
     text:
       vi: Người Việt đọc sai chủ yếu vì tách đuôi theo hình dạng - thấy 되 nghĩ là 되다 (trở thành), thấy 거니와 nghĩ là -거나 (hoặc), thấy 건만 nghĩ là 만 (chỉ). Hãy coi mỗi đuôi là một khối nguyên vẹn. Ngoài ra, các đuôi này thường đi với đuôi câu cổ như -(으)리라, -겠는가, -노라, nên khi thấy một đuôi lạ, hãy đọc cả câu để đoán sắc thái.
@@ -226,13 +225,10 @@ exercises:
         - { id: b1, width_hint: 2 }
     answer:
       blanks:
-        b1: [봐, 봐서]
+        b1: [봐, 봐서, 해서, 싶어, 싶어서, 걱정해서, 걱정되어, 걱정되어서, 걱정돼서]
     known_wrong:
       - answer: 보면
         feedback_vi: -(으)ㄹ까 보면 không đúng. "Sợ rằng" là -(으)ㄹ까 봐(서).
-        error_tag: lkka_bwa
-      - answer: 해서
-        feedback_vi: Dạng hiện đại của -(으)ㄹ세라 là -(으)ㄹ까 봐 - "sợ rằng... nên".
         error_tag: lkka_bwa
     explanation:
       vi: -(으)ㄹ세라 = -(으)ㄹ까 봐(서). Cả hai đều diễn tả lo sợ điều gì xảy ra nên làm hành động phòng ngừa ở vế sau.
@@ -250,10 +246,10 @@ exercises:
         - { id: b1, width_hint: 3 }
     answer:
       blanks:
-        b1: [나서야]
+        b1: [나서야, 난 뒤에야, 난 후에야]
     known_wrong:
       - answer: 나서
-        feedback_vi: Thiếu 야 thì mất ý "mãi đến khi... mới". -고서야 = -고 나서야.
+        feedback_vi: Vẫn đúng ngữ pháp nhưng thiếu 야 nên mất ý "mãi đến khi... mới". -고서야 = -고 나서야.
         error_tag: goseoya_ya
       - answer: 나면
         feedback_vi: -고 나면 là "làm xong thì (sẽ)". Câu gốc ở quá khứ, nghĩa "phải thấy rồi mới nhận ra" - -고 나서야.
@@ -274,7 +270,7 @@ exercises:
         - { id: b1, width_hint: 2 }
     answer:
       blanks:
-        b1: [니까, 니, 므로, 는데]
+        b1: [니까, 니, 므로, 는데, 였으니, 였으니까]
     known_wrong:
       - answer: 는지
         feedback_vi: -(으)ㄹ진대 không phải -(으)ㄹ지 "không biết có... không". Nó nêu tiền đề hiển nhiên - như -(으)니까.
@@ -309,9 +305,26 @@ exercises:
         - 사노라면 좋은 날이 올 것이다.
         - 사노라면 언젠가 좋은 날이 오리라.
         - 사노라면 좋은 날이 올 거예요.
+        - 사노라면 좋은 날이 오리라.
+        - 사노라면 좋은 날도 오리라.
+        - 사노라면 언젠가 좋은 날이 올 것이다.
+        - 살다 보면 좋은 날이 오겠지.
+        - 살다 보면 언젠가 좋은 날이 오겠지요.
+        - 살다 보면 좋은 날이 올 거야.
+        - 살다 보면 좋은 날도 올 것이다.
+        - 살다 보면 언젠가는 좋은 날이 올 것이다.
+        - 살다 보면 언젠가는 좋은 날이 올 거예요.
+        - 살다 보면 좋은 날이 오기 마련이다.
+        - 살다 보면 좋은 날이 온다.
+        - 살다 보면 좋은 날이 와요.
+        - 살다 보면 언젠가 좋은 날이 온다.
+        - 살다 보면 언젠가 좋은 날이 와요.
+        - 살아가다 보면 좋은 날이 올 것이다.
+        - 살아가다 보면 좋은 날이 올 거예요.
+        - 살아가다 보면 언젠가 좋은 날이 올 것이다.
     known_wrong:
       - answer: 살면 좋은 날이 올 것이다.
-        feedback_vi: -(으)면 chỉ là "nếu". "Cứ sống (mãi) thì" cần -다 보면 (văn chương - -노라면).
+        feedback_vi: -(으)면 chỉ là "nếu", mất sắc thái "cứ ... mãi thì dần dần". Cách nói tự nhiên là -다 보면 (văn chương - -노라면).
         error_tag: noramyeon_equivalent
       - answer: 살노라면 좋은 날이 올 것이다.
         feedback_vi: Gốc kết thúc bằng ㄹ thì rơi ㄹ trước -노라면 - 사노라면.
@@ -360,6 +373,11 @@ exercises:
         - Thà sống nghèo chứ tôi sẽ không bán rẻ lương tâm.
         - Thà sống nghèo chứ tôi không bán lương tâm.
         - Dù có sống nghèo, tôi cũng không bán rẻ lương tâm.
+        - Dù có phải sống nghèo, tôi cũng nhất định không bán rẻ lương tâm.
+        - Dù có sống nghèo, tôi cũng nhất định không bán rẻ lương tâm.
+        - Dù sống nghèo, tôi cũng không bán rẻ lương tâm.
+        - Thà sống nghèo còn hơn là bán rẻ lương tâm.
+        - Thà sống nghèo khó chứ tôi không bán rẻ lương tâm.
         - Dù có phải sống nghèo, tôi cũng không bán rẻ lương tâm.
         - Dù phải sống nghèo, tôi cũng sẽ không bán rẻ lương tâm.
         - Dù sống nghèo tôi cũng không bán lương tâm.
@@ -397,6 +415,7 @@ exercises:
     answer:
       orders:
         - [t-dasi, t-mal, t-mun, t-han, t-hun, t-doe, t-su, t-eop]
+        - [t-dasi, t-mal, t-han, t-hun, t-mun, t-doe, t-su, t-eop]
     explanation:
       vi: 다시 말하거니와 = "xin nhắc lại" - cách mở câu nhấn mạnh trong văn nghị luận. 말하거나 (hoặc nói) là token nhiễu do nhầm -거니와 với -거나.
     display_answer: 다시 말하거니와 문화재는 한번 훼손되면 되돌릴 수 없다.

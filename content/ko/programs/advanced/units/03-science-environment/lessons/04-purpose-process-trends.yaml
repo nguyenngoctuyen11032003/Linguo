@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:purpose-process-trends
 order_index: 4
 level: topik5
@@ -106,7 +105,7 @@ exercises:
     difficulty: 2
     item: ko:item:gp-gi-wihan
     prompt:
-      stem: "Chọn dạng đúng: 탄소 배출을 줄이기 ___ 정책이 시행되고 있다. (Các chính sách nhằm giảm phát thải carbon đang được thực thi.)"
+      stem: "Chọn dạng đúng: 이것은 탄소 배출을 줄이기 ___ 정책이다. (Đây là chính sách nhằm giảm phát thải carbon.)"
       stem_lang: vi
       options:
         - { id: p8r, text: 위한, lang: ko }
@@ -116,7 +115,7 @@ exercises:
     answer:
       correct_option_id: p8r
     explanation:
-      vi: Sau chỗ trống là danh từ 정책 nên cần dạng định ngữ 위한. 위해서 và 위하여 chỉ đứng trước động từ; 때문인 là nguyên nhân, không phải mục đích.
+      vi: Sau chỗ trống là danh từ 정책 nên cần dạng định ngữ 위한. 위해서 và 위하여 chỉ mở mệnh đề mục đích (đứng trước động từ), không bổ nghĩa cho danh từ; 때문인 là nguyên nhân, không phải mục đích.
     display_answer: 위한
 
   - key: ko:exercise:purpose-process-mcq-chuse
@@ -175,12 +174,9 @@ exercises:
         - "Gợi ý: \"xu hướng\" - 추___; \"trải qua … rồi\" - 거치다 → 거___."
     answer:
       blanks:
-        b1: [추세]
+        b1: [추세, 경향]
         b2: [거쳐, 거쳐서]
     known_wrong:
-      - answer: 경향
-        feedback_vi: 경향 đi với 이 있다 (-는 경향이 있다). Mẫu "-는 ___이다" là 추세이다.
-        error_tag: chuse_vs_gyeonghyang
       - answer: 겪어
         feedback_vi: 겪다 là trải qua khó khăn, kinh nghiệm. Trải qua các bước, giai đoạn là 거치다 → 거쳐.
         error_tag: geochida_vs_gyeokda
@@ -205,8 +201,11 @@ exercises:
     answer:
       orders:
         - [s1, s2, s3, s4]
+        - [s3, s1, s2, s4]
+        - [s1, s2, s3, s5]
+        - [s3, s1, s2, s5]
     explanation:
-      vi: Chủ ngữ 운동이 tự lan rộng, không có tân ngữ, nên dùng 확산되다. N(으)로 chỉ hướng lan ra.
+      vi: Chủ ngữ 운동이 tự lan rộng, không có tân ngữ, nên 확산되고 있다 là cách nói thông dụng nhất (확산하고 있다 cũng gặp). N(으)로 chỉ hướng lan ra; cụm 전 세계로 có thể đứng đầu câu.
     display_answer: 플라스틱을 줄이자는 운동이 전 세계로 확산되고 있다.
 
   # ---------------- recall ----------------
@@ -217,7 +216,7 @@ exercises:
     difficulty: 4
     item: ko:item:gp-goja-hada
     prompt:
-      template: "(Nghiên cứu này nhằm phân tích ảnh hưởng của bụi mịn đến sức khoẻ.) 본 연구는 미세먼지가 건강에 미치는 영향을 분석하{{b1}} 한다. (Khu bảo tồn dành cho động vật có nguy cơ tuyệt chủng đã được lập ra.) 멸종 위기 동물을 {{b2}} 보호 구역이 만들어졌다."
+      template: "(Nghiên cứu này nhằm phân tích ảnh hưởng của bụi mịn đến sức khoẻ - dạng trang trọng.) 본 연구는 미세먼지가 건강에 미치는 영향을 분석하{{b1}} 한다. (Đây là khu bảo tồn dành cho động vật có nguy cơ tuyệt chủng.) 이것은 멸종 위기 동물을 {{b2}} 보호 구역이다."
       blanks:
         - { id: b1, width_hint: 2 }
         - { id: b2, width_hint: 2 }
@@ -233,11 +232,11 @@ exercises:
         feedback_vi: Trước danh từ 보호 구역 phải dùng định ngữ 위한.
         error_tag: wihan_vs_wihaeseo
       - answer: 려고
-        feedback_vi: -(으)려고 하다 đúng nghĩa nhưng là văn nói thường; báo cáo nghiên cứu dùng -고자 하다.
+        feedback_vi: -(으)려고 하다 đúng ngữ pháp nhưng là dạng thường dùng khi nói; đề yêu cầu dạng trang trọng của báo cáo nghiên cứu - -고자 하다.
         error_tag: goja_register
     explanation:
-      vi: Mở đầu báo cáo dùng 본 연구는 … -고자 한다 (nhằm). N을 위한 N = N dành cho, nhằm N - đứng trước danh từ 보호 구역.
-    display_answer: 본 연구는 미세먼지가 건강에 미치는 영향을 분석하고자 한다. / 멸종 위기 동물을 위한 보호 구역이 만들어졌다.
+      vi: Mở đầu báo cáo dùng 본 연구는 … -고자 한다 (nhằm). N을 위한 N = N dành cho, nhằm N - đứng trước danh từ 보호 구역 (위해서 không bổ nghĩa được cho danh từ).
+    display_answer: 본 연구는 미세먼지가 건강에 미치는 영향을 분석하고자 한다. / 이것은 멸종 위기 동물을 위한 보호 구역이다.
 
   - key: ko:exercise:purpose-process-translate-wihan
     type: translate
@@ -258,10 +257,15 @@ exercises:
         - 정부는 일회용품을 줄이기 위한 정책을 시행했다.
         - 정부는 일회용품 사용을 줄이기 위한 정책을 시행했다.
         - 정부는 일회용품 감소를 위한 정책을 도입했다.
+        - 정부는 일회용품을 줄이기 위한 정책을 도입하였다.
+        - 정부는 일회용품 사용을 줄이기 위한 정책을 도입하였다.
+        - 정부는 일회용품을 줄이기 위해 정책을 도입했다.
+        - 정부는 일회용품을 줄이기 위해서 정책을 도입했다.
+        - 정부는 일회용품을 줄이기 위하여 정책을 도입했다.
+        - 정부는 일회용품 사용을 줄이기 위해 정책을 도입했다.
+        - 정부는 일회용품 사용을 줄이기 위해서 정책을 도입했다.
+        - 정부는 일회용품을 줄이기 위해 정책을 시행했다.
     known_wrong:
-      - answer: 정부는 일회용품을 줄이기 위해서 정책을 도입했다.
-        feedback_vi: Câu này nghĩa là "để giảm … chính phủ áp dụng chính sách" - mục đích không còn bổ nghĩa cho 정책. "Chính sách nhằm…" là 줄이기 위한 정책.
-        error_tag: wihan_vs_wihaeseo
       - answer: 정부는 일회용품을 줄기 위한 정책을 도입했다.
         feedback_vi: Có tân ngữ 일회용품을 nên dùng 줄이다 → 줄이기.
         error_tag: causative_needed
@@ -269,7 +273,7 @@ exercises:
         feedback_vi: 수입하다 là nhập khẩu. "Đưa vào áp dụng" chính sách là 도입하다.
         error_tag: dojip_vs_suip
     explanation:
-      vi: Mục đích bổ nghĩa cho danh từ 정책 → 줄이기 위한 정책. "Áp dụng (chế độ, chính sách mới)" là 도입하다; quá khứ văn viết 도입했다.
+      vi: Mục đích bổ nghĩa cho danh từ 정책 → 줄이기 위한 정책 (nói 줄이기 위해 정책을 도입했다 - "để giảm …, chính phủ áp dụng chính sách" - cũng được). "Áp dụng (chế độ, chính sách mới)" là 도입하다; quá khứ văn viết 도입했다.
     display_answer: 정부는 일회용품을 줄이기 위한 정책을 도입했다.
 
   - key: ko:exercise:purpose-process-translate-chuse
@@ -298,6 +302,14 @@ exercises:
         - 자전거 이용자 수가 증가하는 추세이다.
         - 자전거를 이용하는 사람이 늘어나는 추세이다.
         - 자전거를 이용하는 사람이 증가하는 추세이다.
+        - 자전거를 타는 사람이 늘어나고 있는 추세이다.
+        - 자전거를 타는 사람이 많아지는 추세이다.
+        - 자전거를 타는 사람의 수가 늘어나는 추세이다.
+        - 자전거를 타는 사람의 수가 증가하는 추세이다.
+        - 자전거 타는 사람이 늘어나는 추세이다.
+        - 자전거 이용자가 많아지는 추세이다.
+        - 자전거 이용객이 늘어나는 추세이다.
+        - 자전거를 타는 인구가 늘어나는 추세이다.
     known_wrong:
       - answer: 자전거를 타는 사람이 많은 추세이다.
         feedback_vi: 추세 đi với động từ thay đổi - 늘어나는/많아지는 추세이다, không dùng tính từ 많은.
@@ -371,6 +383,7 @@ exercises:
       orders:
         - [c1, c2, c3, c4]
         - [c2, c1, c3, c4]
+        - [c1, c3, c2, c4]
     explanation:
       vi: -고자 ở dạng nối là "nhằm" - trang trọng, hợp văn tin tức. -고 싶어서 diễn tả mong muốn cá nhân, không hợp chủ ngữ là chính phủ trong văn viết.
     display_answer: 정부는 문제를 해결하고자 새로운 제도를 도입했다.
@@ -397,6 +410,14 @@ exercises:
         - Hiện tượng nhiệt độ đô thị cao hơn khu vực xung quanh được gọi là đảo nhiệt đô thị.
         - Hiện tượng nhiệt độ thành phố cao hơn khu vực xung quanh được gọi là hiện tượng đảo nhiệt đô thị.
         - Hiện tượng nhiệt độ đô thị cao hơn khu vực xung quanh được gọi là hiện tượng đảo nhiệt đô thị.
+        - Hiện tượng nhiệt độ thành phố cao hơn vùng lân cận được gọi là hiện tượng đảo nhiệt.
+        - Hiện tượng nhiệt độ ở thành phố cao hơn khu vực xung quanh được gọi là hiện tượng đảo nhiệt.
+        - Hiện tượng nhiệt độ ở đô thị cao hơn khu vực xung quanh được gọi là hiện tượng đảo nhiệt.
+        - Hiện tượng nhiệt độ của thành phố cao hơn các khu vực xung quanh được gọi là hiện tượng đảo nhiệt.
+        - Hiện tượng nhiệt độ thành phố cao hơn các khu vực xung quanh được gọi là hiện tượng đảo nhiệt.
+        - Hiện tượng nhiệt độ của thành phố cao hơn khu vực xung quanh được gọi là đảo nhiệt.
+        - Hiện tượng nhiệt độ thành phố cao hơn khu vực xung quanh được gọi là đảo nhiệt.
+        - Hiện tượng nhiệt độ ở thành phố cao hơn các vùng xung quanh được gọi là hiện tượng đảo nhiệt.
     rubric:
       diacritics: lenient
     known_wrong:

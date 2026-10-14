@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:news-society-review
 order_index: 5
 level: topik5
@@ -65,12 +64,12 @@ body:
       vi: Bài bình luận (câu 54) đi theo trật tự - nêu vấn đề, nêu quy luật hoặc nguyên nhân (-기 마련이다, -(으)ㄹ 수밖에 없다), rồi đề xuất bằng 따라서 … -아/어야 한다. Mô tả số liệu (câu 53) chỉ tả, không bình luận.
   - type: deep_explain
     text:
-      vi: 'Trước khi nộp bài viết, hãy soát năm điểm - (1) mọi câu kết thúc bằng -다, không có 요/-ㅂ니다; (2) động từ -ㄴ다/-는다, tính từ giữ -다; (3) cặp từ đúng - 물가가 오르다, 수가 증가하다, N에 영향을 미치다; (4) N에 따르면 ở đầu câu; (5) bội số dùng 배. Năm lỗi này chiếm phần lớn điểm bị trừ của người Việt ở phần viết.'
+      vi: 'Trước khi nộp bài viết, hãy soát năm điểm - (1) mọi câu kết thúc bằng -다, không có 요/-ㅂ니다; (2) động từ -ㄴ다/-는다, tính từ giữ -다; (3) cặp từ đúng - 물가가 오르다, 수가 증가하다, N에 영향을 미치다; (4) N에 따르면 ở đầu câu; (5) bội số dùng 배. Đây là những lỗi người Việt hay mắc nhất ở phần viết.'
   - type: example
-    target: "일회용품 사용 2년 새 30% 증가… 재활용률은 제자리 / 환경부에 따르면 지난해 일회용 컵 사용량은 2년 전에 비해 30% 증가한 반면, 재활용률은 20%대에 머물렀다. 전문가들은 배달 문화가 확산되면서 일회용품 사용이 늘 수밖에 없었다고 분석했다."
+    target: "일회용품 사용 2년 새 30% 증가… 재활용률은 제자리 / 한 환경 단체에 따르면 지난해 일회용 컵 사용량은 2년 전에 비해 30% 증가한 반면, 재활용률은 20%대에 머물렀다. 전문가들은 배달 문화가 확산되면서 일회용품 사용이 늘 수밖에 없었다고 분석했다."
     target_lang: ko
     translation:
-      vi: "Đồ dùng một lần tăng 30% trong 2 năm… tỉ lệ tái chế dậm chân tại chỗ / Theo Bộ Môi trường, năm ngoái lượng cốc dùng một lần tăng 30% so với 2 năm trước, trong khi tỉ lệ tái chế chỉ dừng ở mức 20%. Các chuyên gia phân tích rằng khi văn hoá giao đồ ăn lan rộng, việc dùng đồ một lần tăng lên là điều không tránh khỏi."
+      vi: "Đồ dùng một lần tăng 30% trong 2 năm… tỉ lệ tái chế dậm chân tại chỗ / Theo một tổ chức môi trường, năm ngoái lượng cốc dùng một lần tăng 30% so với 2 năm trước, trong khi tỉ lệ tái chế chỉ dừng ở mức 20%. Các chuyên gia phân tích rằng khi văn hoá giao đồ ăn lan rộng, việc dùng đồ một lần tăng lên là điều không tránh khỏi."
     note:
       vi: Bản tin minh hoạ (số liệu giả định) - tiêu đề danh từ, 에 따르면, 에 비해, 반면, -(으)ㄹ 수밖에 없다.
   - type: example
@@ -94,11 +93,11 @@ body:
     note:
       vi: Chỉ một câu 해요체 lọt vào cũng làm cả đoạn mất tính nhất quán. Đọc lại phần đuôi của từng câu trước khi nộp.
   - type: common_mistake
-    wrong: 환경부에서 따르면 재활용률이 낮다.
-    right: 환경부에 따르면 재활용률이 낮다.
+    wrong: 한 환경 단체에서 따르면 재활용률이 낮다.
+    right: 한 환경 단체에 따르면 재활용률이 낮다.
     target_lang: ko
     note:
-      vi: Tiếng Việt "theo Bộ Môi trường" có thể khiến bạn dùng 에서 (từ). Cấu trúc cố định là N에 따르면.
+      vi: Tiếng Việt "theo một tổ chức môi trường" có thể khiến bạn dùng 에서 (từ). Cấu trúc cố định là N에 따르면.
   - type: summary
     points:
       - vi: Bản tin - tiêu đề danh từ → N에 따르면 → 반면/데 반해 → ý kiến chuyên gia.
@@ -114,13 +113,13 @@ exercises:
     difficulty: 3
     item: ko:item:gp-ban-myeon
     prompt:
-      stem: "Đọc tin: 환경부에 따르면 지난해 일회용 컵 사용량은 2년 전에 비해 30% 증가한 반면, 재활용률은 20%대에 머물렀다. Nội dung nào đúng?"
+      stem: "Đọc tin: 한 환경 단체에 따르면 지난해 일회용 컵 사용량은 2년 전에 비해 30% 증가한 반면, 재활용률은 20%대에 머물렀다. Nội dung nào đúng?"
       stem_lang: vi
       options:
         - { id: z6c, text: Lượng cốc dùng một lần tăng nhưng tỉ lệ tái chế không cải thiện., lang: vi }
         - { id: p1w, text: Cả lượng cốc dùng một lần và tỉ lệ tái chế đều tăng 30%., lang: vi }
         - { id: h4m, text: Lượng cốc dùng một lần giảm 30% so với 2 năm trước., lang: vi }
-        - { id: t8r, text: Bộ Môi trường dự đoán tỉ lệ tái chế sẽ đạt 20%., lang: vi }
+        - { id: t8r, text: Tổ chức môi trường dự đoán tỉ lệ tái chế sẽ đạt 20%., lang: vi }
     answer:
       correct_option_id: z6c
     explanation:
@@ -154,19 +153,19 @@ exercises:
     difficulty: 3
     item: ko:item:gp-e-ttareumyeon
     prompt:
-      template: "환경부{{b1}} 따르면 일회용 컵 사용량은 증가{{b2}} 반면 재활용률은 낮아졌다. 정부는 다음 달 대책을 {{b3}} 계획이다."
+      template: "한 환경 단체{{b1}} 따르면 일회용 컵 사용량은 증가{{b2}} 반면 재활용률은 낮아졌다. 정부는 다음 달 대책을 {{b3}} 계획이다."
       blanks:
         - { id: b1, width_hint: 1 }
         - { id: b2, width_hint: 1 }
         - { id: b3, width_hint: 3 }
       hint_levels:
-        - "Nghĩa: Theo Bộ Môi trường, lượng cốc dùng một lần đã tăng, trong khi tỉ lệ tái chế giảm. Chính phủ dự định đưa ra biện pháp vào tháng sau."
+        - "Nghĩa: Theo một tổ chức môi trường, lượng cốc dùng một lần đã tăng, trong khi tỉ lệ tái chế giảm. Chính phủ dự định đưa ra biện pháp vào tháng sau."
         - "Gợi ý: N_ 따르면; định ngữ quá khứ trước 반면; V-(으)ㄹ 계획이다."
     answer:
       blanks:
         b1: [에]
         b2: [한]
-        b3: [마련할]
+        b3: [마련할, 발표할, 내놓을, 세울]
     known_wrong:
       - answer: 에서
         feedback_vi: Cấu trúc cố định là N에 따르면, không dùng 에서.
@@ -179,7 +178,7 @@ exercises:
         error_tag: future_modifier
     explanation:
       vi: N에 따르면 dẫn nguồn; 증가한 반면 là đối lập ở quá khứ; 계획이다 cần định ngữ tương lai -(으)ㄹ - 마련할 계획이다.
-    display_answer: 환경부에 따르면 일회용 컵 사용량은 증가한 반면 재활용률은 낮아졌다. 정부는 다음 달 대책을 마련할 계획이다.
+    display_answer: 한 환경 단체에 따르면 일회용 컵 사용량은 증가한 반면 재활용률은 낮아졌다. 정부는 다음 달 대책을 마련할 계획이다.
 
   - key: ko:exercise:news-society-review-mcq-style
     type: mcq
@@ -215,7 +214,7 @@ exercises:
         - { id: b2, width_hint: 1 }
     answer:
       blanks:
-        b1: [차지했다, 차지한다]
+        b1: [차지했다, 차지한다, 차지하였다, 차지하고 있다]
         b2: [에]
     known_wrong:
       - answer: 차지했어요
@@ -253,6 +252,11 @@ exercises:
         - 물가가 올랐음에도 불구하고 임금은 인상되지 않았다.
         - 물가는 올랐음에도 불구하고 월급은 오르지 않았다.
         - 물가가 올랐음에도 불구하고 월급은 그대로였다.
+        - 물가가 상승했음에도 불구하고 월급이 오르지 않았다.
+        - 물가가 상승했음에도 불구하고 임금이 오르지 않았다.
+        - 물가가 올랐음에도 불구하고 월급은 인상되지 않았다.
+        - 물가가 상승하였음에도 불구하고 월급은 오르지 않았다.
+        - 물가가 상승하였음에도 불구하고 임금은 오르지 않았다.
     known_wrong:
       - answer: 물가가 올랐에도 불구하고 월급은 오르지 않았다.
         feedback_vi: Động từ phải danh từ hoá trước 에도 - 올랐음에도.
@@ -393,6 +397,9 @@ exercises:
         - Tỉ lệ sinh thấp không phải là vấn đề của riêng cá nhân.
         - Tỷ lệ sinh thấp không phải là vấn đề của riêng cá nhân.
         - Việc ít sinh con không phải là vấn đề của cá nhân.
+        - Tỉ lệ sinh thấp không phải là vấn đề riêng của cá nhân.
+        - Tỷ lệ sinh thấp không phải là vấn đề riêng của cá nhân.
+        - Tỉ lệ sinh thấp không phải vấn đề riêng của cá nhân.
         - Tình trạng ít sinh con không phải là vấn đề cá nhân.
     rubric:
       diacritics: lenient

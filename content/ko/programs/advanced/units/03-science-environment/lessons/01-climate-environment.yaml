@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:climate-environment-vocab
 order_index: 1
 level: topik5
@@ -184,7 +183,7 @@ exercises:
     answer:
       blanks:
         b1: [수록]
-        b2: [배출]
+        b2: [배출, 방출]
     known_wrong:
       - answer: 면
         feedback_vi: 오르면 chỉ là "nếu tăng". Ý "càng … càng" cần -(으)ㄹ수록.
@@ -213,6 +212,7 @@ exercises:
     answer:
       orders:
         - [m1, m2, m3, m4]
+        - [m3, m1, m2, m4]
     explanation:
       vi: Vế điều kiện "càng dùng" đứng trước với -(으)ㄹ수록 viết liền (쓸수록), vế kết quả dùng động từ thay đổi 많아진다. 쓸 수록 viết cách là sai chính tả.
     display_answer: 일회용품을 쓸수록 쓰레기가 많아진다.
@@ -273,6 +273,17 @@ exercises:
         - 온도가 오를수록 얼음이 더 빨리 녹는다.
         - 온도가 높아질수록 얼음이 더 빨리 녹는다.
         - 온도가 올라갈수록 얼음이 더 빨리 녹는다.
+        - 온도가 오를수록 빙하가 빨리 녹는다.
+        - 온도가 높아질수록 빙하가 더 빨리 녹는다.
+        - 온도가 올라갈수록 빙하가 더 빨리 녹는다.
+        - 기온이 높아질수록 빙하가 빨리 녹는다.
+        - 기온이 올라갈수록 빙하가 빨리 녹는다.
+        - 기온이 오를수록 빙하가 더욱 빨리 녹는다.
+        - 기온이 오를수록 빙하가 더 빠르게 녹는다.
+        - 기온이 오를수록 빙하가 더욱 빠르게 녹는다.
+        - 기온이 오를수록 빙하는 더 빨리 녹는다.
+        - 기온이 높아질수록 빙하는 더 빨리 녹는다.
+        - 기온이 오를수록 빙하는 빨리 녹는다.
     known_wrong:
       - answer: 기온이 더 오르면 더 빙하가 빨리 녹는다.
         feedback_vi: Không dịch "càng … càng" thành 더 … 더. Dùng -(으)ㄹ수록 ở vế đầu - 오를수록.
@@ -307,6 +318,11 @@ exercises:
         - 기후 변화로 생태계가 위협받고 있다.
         - 기후 변화 때문에 생태계가 위협받고 있다.
         - 기후 변화 때문에 생태계가 위협받는다.
+        - 기후 변화로 인해 생태계가 위협받는다.
+        - 기후 변화로 인해 생태계가 위협받고 있다.
+        - 기후 변화는 생태계에 위협이 된다.
+        - 기후 변화는 생태계에 위협이 되고 있다.
+        - 기후 변화가 생태계에 위협이 된다.
     known_wrong:
       - answer: 변화 기후는 생태계를 위협한다.
         feedback_vi: Thứ tự Hán Hàn là 기후 변화 (khí hậu + biến đổi), ngược tiếng Việt.
@@ -379,6 +395,7 @@ exercises:
     answer:
       orders:
         - [n1, n2, n3, n4]
+        - [n3, n1, n2, n4]
     explanation:
       vi: Điều kiện "muốn đạt" (달성하려면) đứng trước, kết quả 재생 에너지가 필요하다 đứng sau. Năng lượng tái tạo là 재생 에너지; 재활용 là "tái chế vật liệu", không dùng cho năng lượng.
     display_answer: 탄소 중립을 달성하려면 재생 에너지가 필요하다.
@@ -406,6 +423,11 @@ exercises:
         - Biến đổi khí hậu khiến nhiều loài động vật có nguy cơ tuyệt chủng.
         - Nhiều loài động vật đã rơi vào nguy cơ tuyệt chủng do biến đổi khí hậu.
         - Nhiều loài động vật đang có nguy cơ tuyệt chủng do biến đổi khí hậu.
+        - Do biến đổi khí hậu, nhiều loài động vật đang đứng trước nguy cơ tuyệt chủng.
+        - Do biến đổi khí hậu, nhiều loài động vật đã đứng trước nguy cơ tuyệt chủng.
+        - Do biến đổi khí hậu, nhiều loài động vật đã lâm vào nguy cơ tuyệt chủng.
+        - Do biến đổi khí hậu, nhiều loài động vật đang bị đe dọa tuyệt chủng.
+        - Vì biến đổi khí hậu, nhiều loài động vật đang đứng trước nguy cơ tuyệt chủng.
     rubric:
       diacritics: lenient
     known_wrong:

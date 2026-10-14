@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:body-idioms
 order_index: 3
 level: topik6
@@ -262,6 +261,14 @@ exercises:
         - 민수는 발이 넓다.
         - 민수 씨는 인맥이 넓어요.
         - 민수 씨는 인맥이 넓다.
+        - 민수 씨는 인맥이 넓습니다.
+        - 민수 씨는 발이 매우 넓어요.
+        - 민수 씨는 발이 아주 넓어요.
+        - 민수 씨는 발이 아주 넓다.
+        - 민수 형은 발이 넓어요.
+        - 민수 형은 발이 넓다.
+        - 민수 씨는 아는 사람이 많아요.
+        - 민수 씨는 아는 사람이 많다.
     known_wrong:
       - answer: 민수 씨는 발이 커요.
         feedback_vi: 발이 크다 chỉ là "chân to". Quán ngữ "quen biết rộng" là 발이 넓다.
@@ -339,6 +346,13 @@ exercises:
         - Không nên kể chuyện quan trọng cho người lắm mồm.
         - Không nên kể chuyện quan trọng cho người không kín miệng.
         - Đừng kể chuyện quan trọng cho người bép xép.
+        - Không nên kể những chuyện quan trọng cho người bép xép.
+        - Không nên nói những chuyện quan trọng với người bép xép.
+        - Không nên kể chuyện quan trọng với người bép xép.
+        - Không nên nói chuyện quan trọng với người không kín miệng.
+        - Không nên kể chuyện quan trọng cho người hay buôn chuyện.
+        - Không nên kể chuyện quan trọng cho người nhiều chuyện.
+        - Tốt hơn là không nên kể chuyện quan trọng cho người bép xép.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -371,6 +385,10 @@ exercises:
       orders:
         - [t-si, t-insaeng, t-gang-e, t-bigyu]
         - [t-si, t-gang-e, t-insaeng, t-bigyu]
+        - [t-insaeng, t-si, t-gang-e, t-bigyu]
+        - [t-gang-e, t-si, t-insaeng, t-bigyu]
+        - [t-insaeng, t-gang-e, t-si, t-bigyu]
+        - [t-gang-e, t-insaeng, t-si, t-bigyu]
     explanation:
       vi: Mẫu A를 B에 비유하다 - cái được ví (인생) mang 을/를, hình ảnh ví von (강물) mang 에. 강물을 và 인생에 là token nhiễu do đảo trợ từ, lỗi người Việt hay mắc.
     display_answer: 시인은 인생을 강물에 비유했다.

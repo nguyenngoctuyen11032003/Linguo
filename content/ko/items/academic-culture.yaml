@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Học thuật, văn hoá & lập luận" (TOPIK 6). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ================= bài 1: cấu trúc bài nghị luận (câu 54) =================
@@ -27,7 +26,7 @@ items:
       pronunciation_note:
         vi: 본론 đọc là [볼론] - ㄴ gặp ㄹ thì biến thành ㄹ (lưu âm hoá). 결론 đọc [결론].
       confusion:
-        vi: 서론 (序論) là "phần mở đầu", không phải "tự luận" trong tiếng Việt. Bài tự luận của TOPIK gọi là 논술/작문.
+        vi: Âm Hán Việt của 서론 (序論) là "tự luận", nhưng nghĩa là "phần mở đầu", không phải bài thi tự luận. Bài viết luận trong TOPIK gọi là 쓰기 (phần viết), còn "bài luận" nói chung là 논술.
 
   - key: ko:item:ac-cheotjjae-duljjae
     type: phrase
@@ -46,9 +45,9 @@ items:
           translation:
             vi: Thứ nhất, tốn nhiều chi phí. Thứ hai, mất nhiều thời gian.
       pronunciation_note:
-        vi: 첫째 đọc [첟째], 셋째 đọc [섿째] - patchim ㅅ chỉ còn âm chặn [ㄷ].
+        vi: 첫째 đọc [첟째], 셋째 đọc [섿째] - patchim ㅊ và ㅅ đều chỉ còn âm chặn [ㄷ], rồi ㅉ đọc căng.
       confusion:
-        vi: Trong bài luận không viết 첫 번째로, 두 번째로 lặp lại nhiều lần như văn nói; 첫째, 둘째 gọn và trang trọng hơn.
+        vi: Trong bài luận, 첫째, 둘째 gọn và trang trọng hơn 첫 번째로, 두 번째로 (hay dùng khi nói).
 
   - key: ko:item:ac-ttaraseo
     type: vocab
@@ -111,7 +110,7 @@ items:
       pronunciation_note:
         vi: 같이 đọc [가치] - ㅌ đứng trước 이 biến thành ㅊ (vòm hoá).
       confusion:
-        vi: Dùng ở câu đầu của kết bài, không dùng giữa thân bài. Không nhầm với 이처럼 (cũng được) hay 이렇게 (văn nói).
+        vi: Thường mở đầu kết bài để tóm lại các ý trước. 이처럼 cũng dùng được với nghĩa tương tự; 이렇게 thiên về văn nói.
 
   - key: ko:item:ac-jujanghada
     type: vocab
@@ -259,7 +258,7 @@ items:
       pronunciation_note:
         vi: 인해 thường đọc nhẹ [이내] - ㅎ giữa hai âm vang gần như mất.
       confusion:
-        vi: Chỉ đứng sau danh từ (폭우로 인해), không sau động từ. Văn nói dùng N 때문에.
+        vi: Đứng sau danh từ (폭우로 인해); sau động từ phải danh từ hoá bằng -(으)ㅁ (증가함으로 인해), không viết -기로 인해. Văn nói dùng N 때문에.
 
   - key: ko:item:ac-gram-e-bulgwahada
     type: grammar_point
@@ -280,7 +279,7 @@ items:
       pronunciation_note:
         vi: 불과 đọc [불과], ㄹ giữ nguyên, không nuốt.
       confusion:
-        vi: Đã mang nghĩa "chỉ" nên không thêm 만 (10%만에 불과하다 là thừa).
+        vi: Đã mang nghĩa "chỉ" nên không thêm 만 (10%만 불과하다 là thừa).
 
   - key: ko:item:ac-gram-n-neun-sem-ida
     type: grammar_point
@@ -554,7 +553,7 @@ items:
       pronunciation_note:
         vi: Đọc [전통]; ㅌ bật hơi, khác ㄷ.
       confusion:
-        vi: 전통 (truyền thống) khác 전설 (truyền thuyết) - hai từ Hán Việt người Việt dễ nhầm khi nghe nhanh.
+        vi: Âm Hán Việt "truyền thống" trùng nghĩa nên rất dễ nhớ. Đừng nhầm với 전설 (truyền thuyết).
 
   - key: ko:item:ac-gyeseunghada
     type: vocab
@@ -782,7 +781,7 @@ items:
       examples:
         - target: 새해에 운동을 시작했지만 작심삼일로 끝났다.
           translation:
-            vi: Đầu năm tôi bắt đầu tập thể dục nhưng chỉ được dăm bữa nửa tháng.
+            vi: Đầu năm tôi bắt đầu tập thể dục nhưng chỉ được ba ngày là bỏ.
       pronunciation_note:
         vi: Đọc [작씸사밀] - ㅅ sau ㄱ đọc căng, ㅁ nối sang 일.
       confusion:
@@ -803,7 +802,7 @@ items:
       examples:
         - target: 경치도 좋은데 날씨까지 좋으니 금상첨화이다.
           translation:
-            vi: Phong cảnh đã đẹp, thời tiết lại còn đẹp, thật là tuyệt hơn cả mong đợi.
+            vi: Phong cảnh đã đẹp, thời tiết lại còn đẹp, quả là gấm thêm hoa.
       pronunciation_note:
         vi: Thường nghe như [금상처뫄] - ㅎ sau ㅁ đọc rất nhẹ.
       confusion:

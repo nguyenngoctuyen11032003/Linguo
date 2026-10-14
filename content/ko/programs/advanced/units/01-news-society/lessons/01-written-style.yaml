@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:written-style-nda
 order_index: 1
 level: topik5
@@ -273,6 +272,13 @@ exercises:
         - 혼자 사는 젊은이가 많다.
         - 혼자 사는 청년들이 많다.
         - 혼자 사는 청년이 많다.
+        - 혼자 사는 젊은 사람이 많다.
+        - 혼자 사는 젊은 사람들이 많다.
+        - 많은 청년들은 혼자 산다.
+        - 많은 청년들이 홀로 산다.
+        - 많은 젊은이들이 홀로 산다.
+        - 많은 젊은이들이 혼자 살고 있다.
+        - 많은 청년들이 혼자 살고 있다.
     known_wrong:
       - answer: 많은 젊은이들이 혼자 살는다.
         feedback_vi: Gốc ㄹ bỏ ㄹ rồi thêm -ㄴ다 - 살다 → 산다.
@@ -308,6 +314,9 @@ exercises:
         - 이 문제가 쉽지가 않다.
         - 이 문제는 쉬운 문제가 아니다.
         - 이 문제는 쉬운 것이 아니다.
+        - 이 문제는 쉬운 일이 아니다.
+        - 이 문제는 어렵다.
+        - 이 문제가 어렵다.
     known_wrong:
       - answer: 이 문제는 쉽지 않는다.
         feedback_vi: 쉽다 là tính từ nên phủ định là 쉽지 않다, không phải 않는다.
@@ -385,6 +394,8 @@ exercises:
         - Chính phủ đã ban bố chính sách mới.
         - Chính phủ đã đưa ra chính sách mới.
         - Chính phủ đã công bố chính sách mới rồi.
+        - Chính phủ vừa công bố chính sách mới.
+        - Chính phủ vừa công bố một chính sách mới.
     rubric:
       diacritics: lenient
     known_wrong:

@@ -1,11 +1,10 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Tin tức & vấn đề xã hội" (TOPIK 5). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 # Câu ví dụ dùng văn viết -ㄴ다/-는다/-다 vì đây là văn phong của báo chí, bài luận và câu 53–54 TOPIK.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- bài 1: văn viết -ㄴ다/-는다/-다 ----------------
@@ -212,9 +211,9 @@ items:
       meaning:
         vi: công bố (kết quả, số liệu, chính sách); thuyết trình
       examples:
-        - target: 통계청이 올해 출생아 수를 발표했다.
+        - target: 통계 당국이 올해 출생아 수를 발표했다.
           translation:
-            vi: Cục Thống kê đã công bố số trẻ sinh ra trong năm nay.
+            vi: Cơ quan thống kê đã công bố số trẻ sinh ra trong năm nay.
       pronunciation_note:
         vi: 발표 đọc [발표]; ㅍ bật hơi mạnh.
       confusion:
@@ -387,7 +386,7 @@ items:
       pronunciation_note:
         vi: Đọc [취엄난] - patchim ㅂ gặp ㄴ bị mũi hoá thành ㅁ.
       confusion:
-        vi: '-난 (難) nghĩa là "khó khăn, tình trạng thiếu" - 주택난, 인력난. Đừng nhầm với "nạn" trong "tai nạn" (사고).'
+        vi: '-난 (難) nghĩa là "khó khăn, tình trạng thiếu" - 주택난 (thiếu nhà ở), 인력난 (thiếu nhân lực). Đây là chữ 難 mà tiếng Việt đọc là "nạn" trong "nạn thất nghiệp".'
 
   - key: ko:item:hwangyeong-oyeom
     type: vocab
@@ -534,7 +533,7 @@ items:
       pronunciation_note:
         vi: 대책을 đọc nối [대채글].
       confusion:
-        vi: 'Hán Việt "đối sách" ít dùng trong tiếng Việt nên người học hay dịch "giải pháp" thành 해결책 - cũng đúng, nhưng đi với 마련하다 thì 대책 tự nhiên hơn. Không nói 대책을 만들다 trong văn trang trọng.'
+        vi: 'Hán Việt "đối sách" ít dùng trong tiếng Việt nên người học hay dịch "giải pháp" thành 해결책. 대책 là biện pháp đối phó với một vấn đề, 해결책 là cách giải quyết cụ thể; cả hai đều đi với 마련하다. Trong văn trang trọng, 마련하다 tự nhiên hơn 만들다.'
 
   - key: ko:item:simgakada
     type: vocab
@@ -643,16 +642,16 @@ items:
       meaning:
         vi: “theo N” - dẫn nguồn tin, số liệu; mệnh đề sau thường kết thúc bằng lời dẫn gián tiếp.
       examples:
-        - target: 통계청에 따르면 작년 출생아 수는 역대 최저를 기록했다고 한다.
+        - target: 통계 당국에 따르면 작년 출생아 수는 역대 최저를 기록했다고 한다.
           translation:
-            vi: Theo Cục Thống kê, số trẻ sinh ra năm ngoái thấp kỷ lục.
+            vi: Theo cơ quan thống kê, số trẻ sinh ra năm ngoái thấp kỷ lục.
         - target: 조사에 따르면 직장인 10명 중 7명이 이직을 고민하는 것으로 나타났다.
           translation:
             vi: Theo khảo sát, cứ 10 người đi làm thì 7 người đang cân nhắc chuyển việc.
       pronunciation_note:
         vi: 따르면 - ㄸ căng, không bật hơi, gần "đ" tiếng Việt nói mạnh.
       confusion:
-        vi: Tiếng Việt có thể để "theo khảo sát" cuối câu, nhưng tiếng Hàn đặt N에 따르면 ở đầu câu. Đừng nhầm với N에 따라 (tuỳ theo, dựa theo).
+        vi: Tiếng Hàn thường đặt N에 따르면 ở đầu câu rồi kết câu bằng -다고 한다 hoặc -(으)ㄴ 것으로 나타났다. Đừng nhầm với N에 따라 (tuỳ theo, dựa theo).
 
   - key: ko:item:gp-eum-edo-bulguhago
     type: grammar_point
@@ -894,7 +893,7 @@ items:
       pos: văn phong tiêu đề
     back:
       meaning:
-        vi: Tiêu đề tin tức thường bỏ trợ từ và đuôi câu, kết thúc bằng danh từ Hán Hàn (상승, 감소, 발표) hoặc dấu phẩy thay cho 와/과.
+        vi: Tiêu đề tin tức thường bỏ trợ từ và đuôi câu, kết thúc bằng danh từ Hán Hàn (상승, 감소, 발표); dấu phẩy có thể thay cho 와/과 hoặc trợ từ chủ ngữ 은/는, 이/가.
       examples:
         - target: 소비자 물가 3개월 연속 상승
           translation:

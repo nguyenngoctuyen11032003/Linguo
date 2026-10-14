@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:academic-essay-structure
 order_index: 1
 level: topik6
@@ -64,7 +63,7 @@ body:
     translation:
       vi: Điều này có thể xem là kết quả của sự thay đổi cơ cấu xã hội.
     note:
-      vi: 결과 là danh từ có patchim nên dùng -이라고, rút gọn thành 결과라고 sau nguyên âm 과.
+      vi: 결과 là danh từ kết thúc bằng nguyên âm (과) nên dùng -라고; sau danh từ có patchim thì dùng -이라고 (문제이라고 → 문제라고, 학생이라고).
   - type: example
     target: 이 문제를 둘러싼 논란은 당분간 계속될 것으로 보인다.
     target_lang: ko
@@ -218,7 +217,7 @@ exercises:
         - { id: b1, width_hint: 6 }
     answer:
       blanks:
-        b1: [오를 것으로, 상승할 것으로]
+        b1: [오를 것으로, 상승할 것으로, 올라갈 것으로]
     known_wrong:
       - answer: 오른 것으로
         feedback_vi: -(으)ㄴ là đã xảy ra. Dự báo tương lai cần -(으)ㄹ - 오를 것으로.
@@ -269,21 +268,26 @@ exercises:
     difficulty: 3
     item: ko:item:ac-geungeo
     prompt:
-      source_text: Luận điểm đó thiếu căn cứ.
+      source_text: Luận điểm đó thiếu căn cứ. (văn viết, đuôi -다)
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
         - 그 주장은 근거가 부족하다.
         - 그 주장에는 근거가 부족하다.
-        - 그 주장은 근거가 부족합니다.
-        - 그 주장에는 근거가 부족합니다.
-        - 그 주장은 근거가 부족해요.
-        - 그 주장에는 근거가 부족해요.
+        - 그 주장은 근거가 충분하지 않다.
+        - 그 주장에는 근거가 충분하지 않다.
+        - 그 주장은 근거가 모자라다.
     known_wrong:
       - answer: 그 주장은 근거가 부족해.
-        feedback_vi: Đuôi 반말 -해 không dùng trong văn bản trang trọng. Viết 부족하다 (văn viết) hoặc 부족합니다.
+        feedback_vi: Đề yêu cầu văn viết đuôi -다. 부족해 là 반말, dùng khi nói với người thân.
         error_tag: register_ending
+      - answer: 그 주장은 근거가 부족해요.
+        feedback_vi: Đây là 해요체. Đề yêu cầu văn viết - 부족하다.
+        error_tag: haeyo_in_writing
+      - answer: 그 주장은 근거가 부족합니다.
+        feedback_vi: Đây là 합쇼체, dùng khi nói trước người nghe. Bài luận dùng -다 - 부족하다.
+        error_tag: hapsyo_in_writing
       - answer: 그 주장은 근거가 없어요.
         feedback_vi: 없다 là "không có"; "thiếu" là 부족하다.
         error_tag: vocab_meaning
@@ -291,7 +295,7 @@ exercises:
         feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
         error_tag: romanization
     explanation:
-      vi: Luận điểm là 주장, căn cứ là 근거, thiếu là 부족하다. Trong bài luận dùng đuôi -다; 합니다/해요 cũng chấp nhận được khi nói.
+      vi: Luận điểm là 주장, căn cứ là 근거, thiếu là 부족하다. Trong bài luận dùng đuôi -다; 합니다/해요 là đuôi nói.
     display_answer: 그 주장은 근거가 부족하다.
 
   # ---------------- application ----------------
@@ -322,7 +326,7 @@ exercises:
     difficulty: 3
     item: ko:item:ac-ttaraseo
     prompt:
-      instruction: "Sắp xếp thành câu kết luận văn viết: \"Do đó, chính phủ cần đưa ra biện pháp.\""
+      instruction: "Sắp xếp thành câu kết luận văn viết, dùng 따라서: \"Do đó, chính phủ cần đưa ra biện pháp.\""
       tokens:
         - { id: t-ha, text: 한다 }
         - { id: t-dae, text: 대책을 }
@@ -358,6 +362,12 @@ exercises:
         - Như vậy, chính sách này vừa có ưu điểm vừa có nhược điểm.
         - Tóm lại, chính sách này có cả ưu điểm lẫn nhược điểm.
         - Như vậy, chính sách này có cả mặt mạnh lẫn mặt yếu.
+        - Như vậy, chính sách này có cả ưu điểm lẫn khuyết điểm.
+        - Như vậy, chính sách này có cả ưu điểm và khuyết điểm.
+        - Như vậy, chính sách này có cả ưu và nhược điểm.
+        - Như vậy, chính sách này có cả mặt tốt lẫn mặt xấu.
+        - Như thế, chính sách này có cả ưu điểm lẫn nhược điểm.
+        - Như thế, chính sách này có cả ưu điểm và nhược điểm.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -378,7 +388,7 @@ exercises:
     difficulty: 4
     item: ko:item:ac-nonran
     prompt:
-      source_text: Chính sách mới đã gây tranh cãi.
+      source_text: Chính sách mới đã gây tranh cãi. (văn viết, đuôi -다)
       source_lang: vi
       direction: vi_to_target
     answer:
@@ -391,8 +401,19 @@ exercises:
         - 새로운 정책이 논란을 빚었다.
         - 새 정책이 논란을 일으켰다.
         - 새로운 정책이 논란을 일으켰다.
-        - 새 정책이 논란이 됐어요.
+        - 새 정책은 논란이 되었다.
+        - 새 정책은 논란이 됐다.
+        - 새 정책이 큰 논란이 되었다.
+        - 새 정책이 큰 논란이 됐다.
+        - 새 정책이 논란을 불러일으켰다.
+        - 새 정책이 논쟁을 불러일으켰다.
+        - 새 정책이 논쟁을 일으켰다.
+        - 새 정책으로 논란이 일었다.
+        - 새 정책을 두고 논란이 일었다.
     known_wrong:
+      - answer: 새 정책이 논란이 되었어요.
+        feedback_vi: Đây là 해요체. Đề yêu cầu văn viết - 논란이 되었다.
+        error_tag: haeyo_in_writing
       - answer: 새 정책이 토론이 되었다.
         feedback_vi: 토론 là buổi thảo luận có tổ chức. "Gây tranh cãi" là 논란이 되다.
         error_tag: vocab_meaning

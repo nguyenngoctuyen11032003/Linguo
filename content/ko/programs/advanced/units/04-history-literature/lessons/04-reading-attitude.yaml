@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:literary-reading-attitude
 order_index: 4
 level: topik6
@@ -165,7 +164,7 @@ exercises:
     difficulty: 3
     item: ko:item:hl-bipanjeogida
     prompt:
-      template: "필자는 무분별한 개발에 대해 {{b1}}인 태도를 보인다."
+      template: "(phê phán) 필자는 무분별한 개발에 대해 {{b1}}인 태도를 보인다."
       blanks:
         - { id: b1, width_hint: 3 }
       hint_levels:
@@ -173,7 +172,7 @@ exercises:
         - 批判的 - 비...
     answer:
       blanks:
-        b1: [비판적]
+        b1: [비판적, 부정적]
     known_wrong:
       - answer: 낙관적
         feedback_vi: 낙관적 là lạc quan. Chỉ ra cái sai của việc khai thác bừa bãi là 비판적.
@@ -198,7 +197,7 @@ exercises:
         - { id: b1, width_hint: 2 }
     answer:
       blanks:
-        b1: [암시]
+        b1: [암시, 시사]
     known_wrong:
       - answer: 명시
         feedback_vi: 명시 là "ghi rõ". "Ngầm cho biết" là 암시.
@@ -222,14 +221,11 @@ exercises:
         - { id: b1, width_hint: 3 }
     answer:
       blanks:
-        b1: [낙관적]
+        b1: [낙관적, 긍정적, 낙천적]
     known_wrong:
       - answer: 비관적
         feedback_vi: 비관적 là bi quan - ngược nghĩa. Lạc quan là 낙관적.
         error_tag: attitude_opposite
-      - answer: 낙천적
-        feedback_vi: 낙천적 là tính cách vui vẻ của một người. Đánh giá triển vọng thì dùng 낙관적.
-        error_tag: nakgwan_nakcheon
     explanation:
       vi: 낙관적 (樂觀的) = lạc quan về triển vọng, kết quả; N을 낙관적으로 보다 = nhìn N một cách lạc quan. Đọc [낙꽌저그로].
     display_answer: 전문가들은 사업의 전망을 낙관적으로 보고 있다.
@@ -254,13 +250,18 @@ exercises:
         - 필자는 자신의 삶을 성찰하고 있다.
         - 필자는 자신의 삶을 성찰해요.
         - 필자는 자신의 삶을 성찰합니다.
+        - 필자는 자신의 삶에 대해 성찰한다.
+        - 필자는 스스로의 삶을 성찰한다.
+        - 글쓴이는 자신의 삶을 성찰한다.
+        - 필자는 자신의 삶을 돌아본다.
+        - 필자는 자신의 삶을 되돌아본다.
+        - 필자는 자신의 삶을 되돌아보고 있다.
+        - 필자는 자신의 삶을 반성한다.
+        - 필자는 자신의 삶을 반성하고 있다.
     known_wrong:
       - answer: 필자는 자신의 삶을 관찰한다.
         feedback_vi: 관찰 là quan sát cái bên ngoài. Tự suy ngẫm về bản thân là 성찰.
         error_tag: seongchal_gwanchal
-      - answer: 필자는 자신의 삶을 반성한다.
-        feedback_vi: 반성 là hối lỗi về một việc sai cụ thể. "Tự suy ngẫm về cuộc đời" là 성찰하다.
-        error_tag: seongchal_banseong
       - answer: piljaneun jasinui salmeul seongchalhanda
         feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
         error_tag: romanization
@@ -351,6 +352,15 @@ exercises:
         - Tác giả có thái độ phê phán đối với sự phát triển bừa bãi.
         - Người viết phê phán việc khai thác bừa bãi.
         - Người viết phê phán sự phát triển bừa bãi.
+        - Người viết có thái độ phê phán đối với việc phát triển bừa bãi.
+        - Người viết tỏ thái độ phê phán đối với sự phát triển bừa bãi.
+        - Người viết thể hiện thái độ phê phán việc khai thác bừa bãi.
+        - Tác giả thể hiện thái độ phê phán đối với sự phát triển bừa bãi.
+        - Tác giả phê phán việc khai thác bừa bãi.
+        - Tác giả phê phán sự phát triển bừa bãi.
+        - Người viết phê phán việc phát triển bừa bãi.
+        - Người viết thể hiện thái độ chỉ trích đối với việc khai thác bừa bãi.
+        - Người viết thể hiện thái độ phê bình đối với việc khai thác bừa bãi.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -385,6 +395,7 @@ exercises:
     answer:
       orders:
         - [t-i, t-geul, t-jung, t-saeng, t-ma, t-mun, t-deu, t-it]
+        - [t-ma, t-mun, t-i, t-geul, t-jung, t-saeng, t-deu, t-it]
     explanation:
       vi: 이 글의 중심 생각은 (chủ ngữ) + 마지막 문단에 (ở đoạn cuối) + 드러나 있다 (được thể hiện). 첫 (đầu tiên) là token nhiễu - trong tuỳ bút, ý chính thường ở cuối.
     display_answer: 이 글의 중심 생각은 마지막 문단에 드러나 있다.

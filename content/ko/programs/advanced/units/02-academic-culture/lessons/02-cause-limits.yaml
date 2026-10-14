@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:academic-cause-limits
 order_index: 2
 level: topik6
@@ -37,7 +36,7 @@ body:
       vi: Sau bài này, bạn hiểu và viết được những câu lập luận chặt chẽ kiểu bài giảng đại học - nêu nguyên nhân, đánh giá con số, khẳng định điều tất yếu. Câu ví dụ dùng văn viết -ㄴ다 và văn giảng -습니다.
   - type: explain
     text:
-      vi: N(으)로 인해 là "do N" của văn viết, chỉ đứng sau danh từ - 폭우로 인해. N에 불과하다 là "chỉ là, vỏn vẹn" để hạ thấp mức độ; -(으)ㄴ/는 셈이다 là "coi như là", kết luận gần đúng.
+      vi: N(으)로 인해 là "do N" của văn viết, thường đứng sau danh từ - 폭우로 인해. N에 불과하다 là "chỉ là, vỏn vẹn" để hạ thấp mức độ; -(으)ㄴ/는 셈이다 là "coi như là", kết luận gần đúng.
   - type: explain
     text:
       vi: -지 않을 수 없다 là phủ định kép "không thể không", nhấn mạnh hoàn cảnh ép buộc. -(으)ㄴ/는 데다가 là "đã... lại còn", hai vế phải cùng chiều (cùng tốt hoặc cùng xấu), vế sau thường có 도.
@@ -102,7 +101,7 @@ body:
       vi: -는 데다가 cộng hai ý cùng chiều. "Rẻ" là điểm tốt, "chất lượng kém" là điểm xấu - hai ý ngược chiều thì dùng -지만.
   - type: summary
     points:
-      - vi: N(으)로 인해 - do N (văn viết, chỉ sau danh từ).
+      - vi: N(으)로 인해 - do N (văn viết, thường sau danh từ).
       - vi: N에 불과하다 - chỉ là (không thêm 만) · -(으)ㄴ/는 셈이다 - coi như là.
       - vi: -지 않을 수 없다 - không thể không · -(으)ㄴ/는 데다가 - đã... lại còn (cùng chiều).
       - vi: -는 한 - chừng nào còn (없는 한, 노력하는 한).
@@ -184,16 +183,13 @@ exercises:
         - Định ngữ quá khứ của 하다 là 한.
     answer:
       blanks:
-        b1: [한]
+        b1: [한, 하는]
     known_wrong:
-      - answer: 하는
-        feedback_vi: Việc đã xảy ra (찬성했으니), nên dùng định ngữ quá khứ - 찬성한 셈이다.
-        error_tag: tense_modifier
       - answer: 할
         feedback_vi: -(으)ㄹ là tương lai. Ở đây kết luận về việc đã xảy ra - 찬성한.
         error_tag: tense_modifier
     explanation:
-      vi: -(으)ㄴ 셈이다 dùng cho việc đã xảy ra, -는 셈이다 cho hiện tại. Chín trên mười người đã tán thành nên "coi như" tất cả - 찬성한 셈이다.
+      vi: -(으)ㄴ 셈이다 dùng cho việc đã xảy ra - 찬성한 셈이다; khi nêu kết luận ở hiện tại thì -는 셈이다 cũng được. Chín trên mười người đã tán thành nên "coi như" tất cả.
     display_answer: 열 명 중 아홉 명이 찬성했으니 거의 모두 찬성한 셈이다.
 
   # ---------------- recall ----------------
@@ -204,12 +200,12 @@ exercises:
     difficulty: 4
     item: ko:item:ac-gram-ji-aneul-su-eopda
     prompt:
-      template: "Nhìn kết quả này, không thể không thừa nhận sự cần thiết của việc kiểm soát. - 이 결과를 보면 규제의 필요성을 {{b1}}."
+      template: "Nhìn kết quả này, không thể không thừa nhận sự cần thiết của việc kiểm soát. (văn viết, đuôi -다) - 이 결과를 보면 규제의 필요성을 {{b1}}."
       blanks:
         - { id: b1, width_hint: 10 }
     answer:
       blanks:
-        b1: [인정하지 않을 수 없다, 인정하지 않을 수 없습니다]
+        b1: [인정하지 않을 수 없다]
     known_wrong:
       - answer: 인정할 수 없다
         feedback_vi: 인정할 수 없다 là "không thể thừa nhận" - nghĩa ngược lại. Cần phủ định kép - 인정하지 않을 수 없다.
@@ -218,10 +214,16 @@ exercises:
         feedback_vi: Vế cuối phải là 없다 - "không thể không". 있다 thành "có thể không thừa nhận".
         error_tag: double_negation
       - answer: 인정하지 않을 수 없어
-        feedback_vi: Đuôi 반말 -어 không hợp văn bản trang trọng. Dùng 없다 hoặc 없습니다.
+        feedback_vi: Đề yêu cầu văn viết đuôi -다. -어 là 반말, dùng khi nói với người thân.
         error_tag: register_ending
+      - answer: 인정하지 않을 수 없습니다
+        feedback_vi: Đây là 합쇼체, dùng khi nói trước người nghe. Văn viết dùng 없다.
+        error_tag: hapsyo_in_writing
+      - answer: 인정하지 않을 수 없어요
+        feedback_vi: Đây là 해요체. Văn viết dùng 없다.
+        error_tag: haeyo_in_writing
     explanation:
-      vi: V-지 않을 수 없다 = "không thể không V", nhấn mạnh sự tất yếu. Văn viết kết thúc bằng 없다; khi phát biểu dùng 없습니다.
+      vi: V-지 않을 수 없다 = "không thể không V", nhấn mạnh sự tất yếu. Văn viết kết thúc bằng 없다; 없습니다/없어요 là đuôi nói.
     display_answer: 이 결과를 보면 규제의 필요성을 인정하지 않을 수 없다.
 
   - key: ko:exercise:ac-cause-fill-dedaga
@@ -258,7 +260,7 @@ exercises:
     difficulty: 3
     item: ko:item:ac-gram-e-bulgwahada
     prompt:
-      source_text: Đó chỉ là ý kiến cá nhân.
+      source_text: Đó chỉ là ý kiến cá nhân. (văn viết, đuôi -다)
       source_lang: vi
       direction: vi_to_target
     answer:
@@ -269,9 +271,19 @@ exercises:
         - 그건 개인 의견에 불과하다.
         - 개인의 의견에 불과하다.
         - 그것은 개인적인 의견에 불과하다.
-        - 그것은 개인의 의견에 불과합니다.
-        - 그건 개인 의견에 불과해요.
+        - 그것은 한 개인의 의견에 불과하다.
+        - 그것은 단지 개인의 의견에 불과하다.
+        - 그건 개인적인 의견에 불과하다.
+        - 그것은 개인적 의견에 불과하다.
+        - 그것은 개인의 생각에 불과하다.
+        - 그건 개인의 생각에 불과하다.
     known_wrong:
+      - answer: 그것은 개인의 의견에 불과합니다.
+        feedback_vi: Đây là 합쇼체. Đề yêu cầu văn viết - 불과하다.
+        error_tag: hapsyo_in_writing
+      - answer: 그건 개인 의견에 불과해요.
+        feedback_vi: Đây là 해요체. Đề yêu cầu văn viết - 불과하다.
+        error_tag: haeyo_in_writing
       - answer: 그것은 개인의 의견만에 불과하다.
         feedback_vi: 불과하다 đã có nghĩa "chỉ là", không thêm 만.
         error_tag: redundant_man
@@ -346,6 +358,13 @@ exercises:
         - Vì dữ liệu sai lệch, trí tuệ nhân tạo có thể đưa ra kết quả mang tính phân biệt đối xử.
         - Do dữ liệu sai, AI có thể đưa ra kết quả phân biệt đối xử.
         - Do dữ liệu sai lệch, AI có thể đưa ra kết quả mang tính phân biệt đối xử.
+        - Do dữ liệu sai lệch, AI có thể đưa ra kết quả phân biệt đối xử.
+        - Do dữ liệu sai lệch, trí tuệ nhân tạo có thể tạo ra kết quả phân biệt đối xử.
+        - Do dữ liệu sai lệch, trí tuệ nhân tạo có thể đưa ra kết quả có tính phân biệt đối xử.
+        - Do dữ liệu sai, trí tuệ nhân tạo có thể tạo ra kết quả phân biệt đối xử.
+        - Do dữ liệu bị sai lệch, trí tuệ nhân tạo có thể đưa ra kết quả phân biệt đối xử.
+        - Vì dữ liệu sai lệch, trí tuệ nhân tạo có thể đưa ra kết quả phân biệt đối xử.
+        - Vì dữ liệu sai, trí tuệ nhân tạo có thể đưa ra kết quả mang tính phân biệt đối xử.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -390,7 +409,7 @@ exercises:
     difficulty: 4
     item: ko:item:ac-gram-euro-inhae
     prompt:
-      source_text: Do trí tuệ nhân tạo, nhiều việc làm đã biến mất.
+      source_text: Do trí tuệ nhân tạo, nhiều việc làm đã biến mất. (văn viết, đuôi -다)
       source_lang: vi
       direction: vi_to_target
     answer:
@@ -399,10 +418,19 @@ exercises:
         - 인공지능으로 인해서 많은 일자리가 사라졌다.
         - 인공지능으로 인해 일자리가 많이 사라졌다.
         - 인공지능으로 인해 많은 일자리가 없어졌다.
-        - 인공지능으로 인해 많은 일자리가 사라졌습니다.
-        - 인공지능으로 인해 많은 일자리가 사라졌어요.
         - 인공지능 때문에 많은 일자리가 사라졌다.
+        - 인공지능으로 인하여 많은 일자리가 사라졌다.
+        - 인공지능으로 인해서 많은 일자리가 없어졌다.
+        - 인공지능 때문에 많은 일자리가 없어졌다.
+        - 많은 일자리가 인공지능으로 인해 사라졌다.
+        - 많은 일자리가 인공지능 때문에 사라졌다.
     known_wrong:
+      - answer: 인공지능으로 인해 많은 일자리가 사라졌어요.
+        feedback_vi: Đây là 해요체. Đề yêu cầu văn viết - 사라졌다.
+        error_tag: haeyo_in_writing
+      - answer: 인공지능으로 인해 많은 일자리가 사라졌습니다.
+        feedback_vi: Đây là 합쇼체. Đề yêu cầu văn viết - 사라졌다.
+        error_tag: hapsyo_in_writing
       - answer: 인공지능에 인해 많은 일자리가 사라졌다.
         feedback_vi: Cấu trúc là N(으)로 인해 - 인공지능으로 인해, không dùng 에.
         error_tag: particle_choice

@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Lịch sử, văn học & ngôn ngữ trang trọng" (TOPIK 6). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ================= bài 1: lịch sử và di sản =================
@@ -19,7 +18,7 @@ items:
       pos: danh từ (thời kỳ lịch sử)
     back:
       meaning:
-        vi: Thời Joseon (Triều Tiên, 1392-1897) - triều đại cuối cùng của Hàn Quốc trước thời cận đại.
+        vi: Thời Joseon (1392-1910) - triều đại phong kiến cuối cùng của Hàn Quốc. Từ năm 1897 nhà nước đổi quốc hiệu thành Đại Hàn Đế quốc.
       examples:
         - target: 이 건물은 조선 시대에 왕이 머물던 궁궐이다.
           translation:
@@ -27,7 +26,7 @@ items:
       pronunciation_note:
         vi: Đọc liền [조선 시대]; ㅅ trong 시 đọc nhẹ, gần "x" tiếng Việt chứ không phải "s" uốn lưỡi.
       confusion:
-        vi: 조선 là tên triều đại, còn 북한 mới là cách gọi Bắc Triều Tiên hiện nay. Trong bài đọc lịch sử, 조선 luôn chỉ triều đại cũ.
+        vi: 조선 시대 là thời kỳ lịch sử 1392-1910. Bắc Triều Tiên cũng tự gọi nước mình là 조선, còn Hàn Quốc gọi nước này là 북한, nên hãy chú ý có chữ 시대 (hoặc năm tháng) đi kèm hay không.
 
   - key: ko:item:hl-sejong-daewang
     type: vocab
@@ -82,7 +81,7 @@ items:
       pos: danh từ (cụm)
     back:
       meaning:
-        vi: Di sản thế giới UNESCO. Sách 훈민정음 해례본 được ghi vào danh mục "Di sản tư liệu thế giới" (세계 기록 유산) năm 1997.
+        vi: Di sản thế giới UNESCO (di tích, công trình, cảnh quan thiên nhiên). Tư liệu như sách 훈민정음 해례본 (ghi danh năm 1997) thuộc danh mục khác - "Di sản tư liệu thế giới" (세계 기록 유산).
       examples:
         - target: 이 궁궐은 유네스코 세계 유산으로 등재되었다.
           translation:
@@ -111,7 +110,7 @@ items:
       pronunciation_note:
         vi: Đọc chuẩn [문화재]; khi nói nhanh, ㅎ sau ㄴ yếu đi nên nghe gần [무놔재].
       confusion:
-        vi: Từ năm 2024, văn bản nhà nước Hàn Quốc dần thay 문화재 bằng 국가유산 (di sản quốc gia), nhưng 문화재 vẫn rất phổ biến trong báo chí và bài đọc. Hai từ có thể gặp cùng lúc.
+        vi: Từ 17/5/2024, Cục Di sản văn hoá đổi tên thành 국가유산청 và luật dùng khái niệm 국가유산 (di sản quốc gia, gồm 문화유산, 자연유산, 무형유산) thay cho 문화재. Tuy vậy 문화재 vẫn rất phổ biến trong báo chí và bài đọc, nên bạn sẽ gặp cả hai từ.
 
   - key: ko:item:hl-bojonhada
     type: vocab
@@ -419,7 +418,7 @@ items:
       pos: vĩ tố liên kết
     back:
       meaning:
-        vi: (1) Phải... rồi mới - như -고 나서야. (2) Đã... như thế thì làm sao (câu hỏi tu từ phủ định).
+        vi: '(1) Phải... rồi mới - như -고 나서야. (2) Trong câu hỏi tu từ - "làm như vậy rồi mà còn... được sao?" (-고서야 되겠는가).'
       examples:
         - target: 직접 유적지를 보고서야 그 규모를 실감했다.
           translation:
@@ -807,7 +806,7 @@ items:
       pronunciation_note:
         vi: ㄱ sau patchim ㄱ đọc căng - 낙관 đọc [낙꽌].
       confusion:
-        vi: Người Việt hay nhầm 낙관 (lạc quan) với 낙천 (lạc thiên - tính cách vui vẻ). Câu hỏi thái độ dùng 낙관적 khi nói về triển vọng.
+        vi: 낙관 (樂觀) trùng với Hán Việt "lạc quan". 낙천적 (樂天的) nói về tính cách vui vẻ, còn 낙관적 nói về cách nhìn triển vọng nên hay gặp trong câu hỏi thái độ.
 
   - key: ko:item:hl-seongchalhada
     type: vocab
@@ -828,7 +827,7 @@ items:
       pronunciation_note:
         vi: Đọc [성찰하다]; ㅊ bật hơi mạnh.
       confusion:
-        vi: 성찰 (tự xét lại mình) khác 관찰 (quan sát cái bên ngoài) và 반성 (hối lỗi về việc sai cụ thể).
+        vi: 성찰 (tự xét lại mình) khác 관찰 (quan sát cái bên ngoài). 반성 gần nghĩa nhưng thiên về nhìn lại lỗi lầm của mình, còn 성찰 trung tính hơn - nhìn lại bản thân để hiểu mình.
 
   - key: ko:item:hl-geuriwohada
     type: vocab

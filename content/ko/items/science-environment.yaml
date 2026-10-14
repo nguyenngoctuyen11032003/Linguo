@@ -1,11 +1,10 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Khoa học, môi trường & công nghệ" (TOPIK 5). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 # Câu ví dụ dùng văn viết -ㄴ다/-는다/-다 vì đây là văn phong của báo khoa học, bài giảng và phần đọc TOPIK II.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- bài 1: khí hậu & môi trường, -(으)ㄹ수록 ----------------
@@ -53,7 +52,7 @@ items:
           translation:
             vi: Chính phủ quyết định giảm 40% lượng phát thải khí nhà kính đến năm 2030.
       pronunciation_note:
-        vi: 온실 đọc [온실], không có biến âm; 가스 đọc [가쓰] trong giao tiếp nhưng viết 가스.
+        vi: 온실 đọc [온실], không có biến âm; 가스 đọc [가스]. Hai từ viết liền thành 온실가스.
       confusion:
         vi: 온실 là "nhà kính" (ôn thất - phòng ấm), viết liền với 가스. "Hiệu ứng nhà kính" là 온실 효과.
 
@@ -173,7 +172,7 @@ items:
           translation:
             vi: Chuyển nhiệt điện than sang năng lượng tái tạo cần thời gian.
       pronunciation_note:
-        vi: 에너지 đọc [에너지] - ㅓ là "ơ"; không đọc theo tiếng Anh "e-nơ-gi".
+        vi: 에너지 đọc [에너지] - ㅓ là "ơ", không phải "ô"; ba âm tiết đều rõ.
       confusion:
         vi: 재생 là "tái sinh", còn 재활용 là "tái chế" (dùng lại vật liệu) - năng lượng tái tạo không gọi là 재활용 에너지. "Năng lượng mới và tái tạo" trong văn bản chính phủ là 신재생 에너지.
 
@@ -390,7 +389,7 @@ items:
           translation:
             vi: Muốn công nghệ tự lái được thương mại hoá thì luật và chế độ phải được chuẩn bị trước.
       pronunciation_note:
-        vi: 자율 đọc [자율]; 주행 đọc [주행], ㅎ rõ vì đứng đầu âm tiết sau nguyên âm nhưng thường nhẹ.
+        vi: 자율 đọc [자율]; 주행 đọc [주행], ㅎ rất nhẹ khi nói nhanh.
       confusion:
         vi: Hán Việt "tự luật tẩu hành" - 주행 là "chạy (xe)", không phải 운전 (người lái). Xe tự lái là 자율 주행차 hoặc 자율 주행 자동차.
 
@@ -486,7 +485,7 @@ items:
           translation:
             vi: Nguyên nhân vụ tai nạn vẫn chưa được làm rõ.
       pronunciation_note:
-        vi: 밝혀 đọc [발켜] - ㄱ gặp ㅎ thành ㅋ; 밝혀졌다 [발켜젿따].
+        vi: 밝혀 đọc [발켜] - ㄱ gặp ㅎ thành ㅋ; 밝혀졌다 [발켜젇따].
       confusion:
         vi: Chủ động là 밝히다 (연구진이 원인을 밝혔다), bị động là 밝혀지다 (원인이 밝혀졌다). Cụm báo chí cố định - -다는 사실이 밝혀졌다 "đã được chứng minh rằng…".
 
@@ -561,7 +560,7 @@ items:
           translation:
             vi: Kết quả thí nghiệm dự kiến sẽ được công bố vào tháng sau.
       pronunciation_note:
-        vi: 되었다 đọc [되얻따], viết gọn 됐다 [됃따] - trong văn viết trang trọng thường giữ 되었다.
+        vi: 되었다 đọc [되얻따], viết gọn 됐다 [됟따] - trong văn viết trang trọng thường giữ 되었다.
       confusion:
         vi: 되다 + -어지다 thành 되어지다 là bị động kép, bị coi là sai trong văn chuẩn (개발되어졌다 → 개발되었다). Tiếng Việt thêm "được/bị" thoải mái, nhưng tiếng Hàn tự nhiên hơn khi dùng chủ động nếu đã có chủ thể rõ (연구진이 개발했다).
 
