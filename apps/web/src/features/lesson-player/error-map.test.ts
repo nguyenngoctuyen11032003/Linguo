@@ -1,8 +1,9 @@
 import { LESSON_ERROR_CODES } from '@linguo/shared';
 import { describe, expect, it } from 'vitest';
 import { isUnansweredError, lessonErrorMessage } from './error-map';
+import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 
-const GENERIC = /^Đã có lỗi xảy ra/;
+const GENERIC = /^Có lỗi xảy ra/;
 
 describe('lessonErrorMessage', () => {
   it.each(LESSON_ERROR_CODES.map((code) => [code]))('has a Vietnamese message for %s', (code) => {
@@ -36,9 +37,9 @@ describe('lessonErrorMessage', () => {
   });
 
   it('falls back with the code', () => {
-    expect(lessonErrorMessage({ message: 'something_else' })).toBe('Đã có lỗi xảy ra (mã: something_else). Vui lòng thử lại.');
-    expect(lessonErrorMessage({ message: 'boom', code: '23505' })).toBe('Đã có lỗi xảy ra (mã: 23505). Vui lòng thử lại.');
-    expect(lessonErrorMessage(null)).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
+    expect(lessonErrorMessage({ message: 'something_else' })).toBe(GENERIC_ERROR_MESSAGE);
+    expect(lessonErrorMessage({ message: 'boom', code: '23505' })).toBe(GENERIC_ERROR_MESSAGE);
+    expect(lessonErrorMessage(null)).toBe(GENERIC_ERROR_MESSAGE);
   });
 });
 
@@ -57,5 +58,24 @@ describe('isUnansweredError', () => {
     expect(isUnansweredError({ message: 'not_authenticated', code: '42501', status: 401 })).toBe(false);
     expect(isUnansweredError(new Error('invalid_payload'))).toBe(false);
     expect(isUnansweredError(null)).toBe(false);
+  });
+});
+
+describe('lessonErrorMessage fallback', () => {
+  it('never shows a raw error code to the learner', () => {
+    const unknown = [
+      { message: 'brand_new_code' },
+      { message: 'Boom', code: '23505' },
+      { code: 'weak_password_like_code' },
+      new Error('some_other_failure'),
+      null,
+      undefined,
+    ];
+    for (const error of unknown) {
+      const message = lessonErrorMessage(error as never);
+      expect(message).not.toMatch(/mã/i);
+      expect(message).not.toMatch(/23505|brand_new_code|weak_password_like_code|some_other_failure/);
+    }
+    expect(lessonErrorMessage({ message: 'brand_new_code' } as never)).toBe(GENERIC_ERROR_MESSAGE);
   });
 });

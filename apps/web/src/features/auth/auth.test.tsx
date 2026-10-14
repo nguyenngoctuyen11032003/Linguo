@@ -8,6 +8,7 @@ import { authErrorMessage, isKnownAuthErrorCode } from './error-map';
 import { RedirectIfAuthed, RequireAuth } from './guards';
 import { clearRecovery, isRecoveryPending, markRecoveryPending } from './recovery';
 import { safeNext } from './safe-next';
+import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 
 describe('authErrorMessage', () => {
   it('maps known Supabase codes to Vietnamese', () => {
@@ -16,8 +17,8 @@ describe('authErrorMessage', () => {
       'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.',
     );
     expect(authErrorMessage({ name: 'AuthPKCECodeVerifierMissingError' })).toMatch(/cùng trình duyệt/);
-    expect(authErrorMessage({ code: 'something_new' })).toBe('Đã có lỗi xảy ra (mã: something_new). Vui lòng thử lại.');
-    expect(authErrorMessage(undefined)).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
+    expect(authErrorMessage({ code: 'something_new' })).toBe(GENERIC_ERROR_MESSAGE);
+    expect(authErrorMessage(undefined)).toBe(GENERIC_ERROR_MESSAGE);
   });
 
   it.each([
@@ -197,5 +198,24 @@ describe('guards', () => {
   it('shows the not-configured screen', () => {
     renderGuarded({ status: 'unconfigured', session: null, user: null }, '/app');
     expect(screen.getByRole('heading', { name: 'Chưa cấu hình Supabase' })).toBeInTheDocument();
+  });
+});
+
+describe('authErrorMessage fallback', () => {
+  it('never shows a raw error code to the learner', () => {
+    const unknown = [
+      { message: 'brand_new_code' },
+      { message: 'Boom', code: '23505' },
+      { code: 'weak_password_like_code' },
+      new Error('some_other_failure'),
+      null,
+      undefined,
+    ];
+    for (const error of unknown) {
+      const message = authErrorMessage(error as never);
+      expect(message).not.toMatch(/mã/i);
+      expect(message).not.toMatch(/23505|brand_new_code|weak_password_like_code|some_other_failure/);
+    }
+    expect(authErrorMessage({ message: 'brand_new_code' } as never)).toBe(GENERIC_ERROR_MESSAGE);
   });
 });

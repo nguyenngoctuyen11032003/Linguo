@@ -7,6 +7,7 @@ import { AuthContext } from '../auth/AuthProvider';
 import { learningPathErrorMessage } from './error-map';
 import { LearningPathsProvider, useLearningPaths } from './LearningPathsProvider';
 import { createPath, fetchCurrentPathId, listPaths, listReferenceHours, setPathStatus, updatePlan } from './service';
+import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 
 const mocks = vi.hoisted(() => ({ client: null as unknown }));
 vi.mock('@/lib/supabase', () => ({ getSupabase: () => mocks.client, requireSupabase: () => mocks.client }));
@@ -117,10 +118,10 @@ describe('learningPathErrorMessage', () => {
     expect(learningPathErrorMessage({ code: 'P0001', message: 'path_exists_for_language' })).toBe('Bạn đã có lộ trình cho ngôn ngữ này.');
     expect(learningPathErrorMessage(new TypeError('Failed to fetch'))).toBe('Không kết nối được máy chủ. Kiểm tra mạng và thử lại.');
     expect(learningPathErrorMessage({ code: 'P0001', message: 'invalid_date' })).toBe('Ngày không hợp lệ.');
-    expect(learningPathErrorMessage({ message: 'weird' })).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
-    expect(learningPathErrorMessage({ code: '42501', message: 'permission denied' })).toBe('Đã có lỗi xảy ra (mã: 42501). Vui lòng thử lại.');
-    expect(learningPathErrorMessage({ code: 'P0001', message: 'some_new_code' })).toBe('Đã có lỗi xảy ra (mã: some_new_code). Vui lòng thử lại.');
-    expect(learningPathErrorMessage(null)).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
+    expect(learningPathErrorMessage({ message: 'weird' })).toBe(GENERIC_ERROR_MESSAGE);
+    expect(learningPathErrorMessage({ code: '42501', message: 'permission denied' })).toBe(GENERIC_ERROR_MESSAGE);
+    expect(learningPathErrorMessage({ code: 'P0001', message: 'some_new_code' })).toBe(GENERIC_ERROR_MESSAGE);
+    expect(learningPathErrorMessage(null)).toBe(GENERIC_ERROR_MESSAGE);
   });
 
   it('treats a postgrest-wrapped fetch failure as a network error', () => {
@@ -128,7 +129,7 @@ describe('learningPathErrorMessage', () => {
     expect(learningPathErrorMessage({ message: 'TypeError: Failed to fetch', details: '', hint: '', code: '' })).toBe(
       'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.',
     );
-    expect(learningPathErrorMessage({ message: 'constructor' })).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
+    expect(learningPathErrorMessage({ message: 'constructor' })).toBe(GENERIC_ERROR_MESSAGE);
   });
 });
 
@@ -300,5 +301,24 @@ describe('LearningPathsProvider', () => {
     result = { data: null, error: { message: 'boom' } };
     await act(async () => screen.getByText('reload').click());
     await waitFor(() => expect(screen.getByTestId('state')).toHaveTextContent('error:2:path-en'));
+  });
+});
+
+describe('learningPathErrorMessage fallback', () => {
+  it('never shows a raw error code to the learner', () => {
+    const unknown = [
+      { message: 'brand_new_code' },
+      { message: 'Boom', code: '23505' },
+      { code: 'weak_password_like_code' },
+      new Error('some_other_failure'),
+      null,
+      undefined,
+    ];
+    for (const error of unknown) {
+      const message = learningPathErrorMessage(error as never);
+      expect(message).not.toMatch(/mã/i);
+      expect(message).not.toMatch(/23505|brand_new_code|weak_password_like_code|some_other_failure/);
+    }
+    expect(learningPathErrorMessage({ message: 'brand_new_code' } as never)).toBe(GENERIC_ERROR_MESSAGE);
   });
 });

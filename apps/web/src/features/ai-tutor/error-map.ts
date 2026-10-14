@@ -1,4 +1,5 @@
 import type { AiError, AiErrorCode } from '@linguo/shared';
+import { genericErrorMessage } from '@/lib/error-fallback';
 import { isNetworkError } from '@/lib/network-error';
 
 // Vietnamese copy for `ai-tutor` failures (spec 5 §3/§5). The server's `message` is for logs, never shown.
@@ -36,7 +37,7 @@ export interface AiErrorMessageOptions {
 /** Vietnamese message for an `ai-tutor` error, with the quota reset time or the retry delay when known. */
 export function aiErrorMessage(error: AiError | AiErrorCode, options: AiErrorMessageOptions = {}): string {
   const e: AiError = typeof error === 'string' ? { error, message: '', retry_after_sec: null, quota: null } : error;
-  const base = AI_MESSAGES[e.error] ?? 'Đã có lỗi xảy ra. Vui lòng thử lại.';
+  const base = AI_MESSAGES[e.error] ?? genericErrorMessage(e.error);
   const wait =
     e.retry_after_sec !== null && e.retry_after_sec > 0
       ? e.retry_after_sec < 60
@@ -73,10 +74,10 @@ export function aiRpcErrorMessage(error: unknown): string {
     const message = 'message' in error && typeof error.message === 'string' ? error.message : '';
     const known = RPC_MESSAGES[message];
     if (known) return known;
-    if (CODE_PATTERN.test(message)) return `Đã có lỗi xảy ra (mã: ${message}). Vui lòng thử lại.`;
+    if (CODE_PATTERN.test(message)) return genericErrorMessage(message);
     if ('code' in error && typeof error.code === 'string' && error.code) {
-      return `Đã có lỗi xảy ra (mã: ${error.code}). Vui lòng thử lại.`;
+      return genericErrorMessage(error.code);
     }
   }
-  return 'Đã có lỗi xảy ra. Vui lòng thử lại.';
+  return genericErrorMessage();
 }

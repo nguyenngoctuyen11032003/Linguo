@@ -12,6 +12,7 @@ import {
   validateReminderDraft,
   type ReminderDraft,
 } from './validation';
+import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 
 describe('notificationErrorMessage', () => {
   it('has a Vietnamese message for every contract code', () => {
@@ -25,8 +26,8 @@ describe('notificationErrorMessage', () => {
     expect(notificationErrorMessage({ message: 'TypeError: Failed to fetch', code: '' })).toBe(
       'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.',
     );
-    expect(notificationErrorMessage({ message: 'boom', code: '42501' })).toBe('Đã có lỗi xảy ra (mã: 42501). Vui lòng thử lại.');
-    expect(notificationErrorMessage(null)).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
+    expect(notificationErrorMessage({ message: 'boom', code: '42501' })).toBe(GENERIC_ERROR_MESSAGE);
+    expect(notificationErrorMessage(null)).toBe(GENERIC_ERROR_MESSAGE);
   });
 });
 
@@ -114,5 +115,24 @@ describe('reminder validation', () => {
       max_per_day: 1,
       weekly_summary: true,
     });
+  });
+});
+
+describe('notificationErrorMessage fallback', () => {
+  it('never shows a raw error code to the learner', () => {
+    const unknown = [
+      { message: 'brand_new_code' },
+      { message: 'Boom', code: '23505' },
+      { code: 'weak_password_like_code' },
+      new Error('some_other_failure'),
+      null,
+      undefined,
+    ];
+    for (const error of unknown) {
+      const message = notificationErrorMessage(error as never);
+      expect(message).not.toMatch(/mã/i);
+      expect(message).not.toMatch(/23505|brand_new_code|weak_password_like_code|some_other_failure/);
+    }
+    expect(notificationErrorMessage({ message: 'brand_new_code' } as never)).toBe(GENERIC_ERROR_MESSAGE);
   });
 });

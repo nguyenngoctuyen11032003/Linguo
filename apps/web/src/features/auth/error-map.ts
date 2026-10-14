@@ -1,9 +1,11 @@
+import { genericErrorMessage } from '@/lib/error-fallback';
+
 const BY_CODE: Record<string, string> = {
   invalid_credentials: 'Email hoặc mật khẩu không đúng.',
-  email_not_confirmed: 'Email chưa được xác minh. Hãy mở liên kết trong email chúng tôi đã gửi.',
+  email_not_confirmed: 'Email chưa được xác minh. Hãy mở liên kết trong email mình đã gửi.',
   user_already_exists: 'Email này đã được đăng ký. Hãy đăng nhập hoặc dùng "Quên mật khẩu".',
   email_exists: 'Email này đã được đăng ký. Hãy đăng nhập hoặc dùng "Quên mật khẩu".',
-  weak_password: 'Mật khẩu quá yếu. Hãy dùng ít nhất 8 ký tự, kết hợp chữ và số.',
+  weak_password: 'Mật khẩu chưa đủ mạnh. Dùng ít nhất 8 ký tự.',
   same_password: 'Mật khẩu mới phải khác mật khẩu cũ.',
   over_email_send_rate_limit: 'Bạn đã yêu cầu gửi email quá nhiều lần. Vui lòng thử lại sau ít phút.',
   over_request_rate_limit: 'Quá nhiều yêu cầu. Vui lòng thử lại sau ít phút.',
@@ -44,7 +46,7 @@ export function authErrorMessage(error: unknown): string {
       if (byName) return byName;
     }
     if (e.status === 0 || error instanceof TypeError) return 'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.';
-    if (typeof e.code === 'string') return `Đã có lỗi xảy ra (mã: ${e.code}). Vui lòng thử lại.`;
+    if (typeof e.code === 'string') return genericErrorMessage(e.code);
   }
-  return 'Đã có lỗi xảy ra. Vui lòng thử lại.';
+  return genericErrorMessage();
 }

@@ -1,8 +1,9 @@
 import { DIAGNOSTIC_ERROR_CODES } from '@linguo/shared';
 import { describe, expect, it } from 'vitest';
 import { diagnosticErrorCode, diagnosticErrorMessage, formatRetakeDate, isUnansweredError } from './error-map';
+import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 
-const GENERIC = /^Đã có lỗi xảy ra/;
+const GENERIC = /^Có lỗi xảy ra/;
 const TZ = 'Asia/Ho_Chi_Minh';
 
 describe('diagnosticErrorMessage', () => {
@@ -54,9 +55,9 @@ describe('diagnosticErrorMessage', () => {
   });
 
   it('shows the code of unknown errors', () => {
-    expect(diagnosticErrorMessage({ message: 'something_new' })).toBe('Đã có lỗi xảy ra (mã: something_new). Vui lòng thử lại.');
-    expect(diagnosticErrorMessage({ message: 'Boom', code: '23505' })).toBe('Đã có lỗi xảy ra (mã: 23505). Vui lòng thử lại.');
-    expect(diagnosticErrorMessage(null)).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
+    expect(diagnosticErrorMessage({ message: 'something_new' })).toBe(GENERIC_ERROR_MESSAGE);
+    expect(diagnosticErrorMessage({ message: 'Boom', code: '23505' })).toBe(GENERIC_ERROR_MESSAGE);
+    expect(diagnosticErrorMessage(null)).toBe(GENERIC_ERROR_MESSAGE);
   });
 
   it('extracts codes and detects unanswered requests', () => {
@@ -64,5 +65,24 @@ describe('diagnosticErrorMessage', () => {
     expect(diagnosticErrorCode(null)).toBeNull();
     expect(isUnansweredError({ message: 'Bad gateway', code: '', status: 502 })).toBe(true);
     expect(isUnansweredError({ message: 'item_mismatch', code: 'P0001', status: 400 })).toBe(false);
+  });
+});
+
+describe('diagnosticErrorMessage fallback', () => {
+  it('never shows a raw error code to the learner', () => {
+    const unknown = [
+      { message: 'brand_new_code' },
+      { message: 'Boom', code: '23505' },
+      { code: 'weak_password_like_code' },
+      new Error('some_other_failure'),
+      null,
+      undefined,
+    ];
+    for (const error of unknown) {
+      const message = diagnosticErrorMessage(error as never);
+      expect(message).not.toMatch(/mã/i);
+      expect(message).not.toMatch(/23505|brand_new_code|weak_password_like_code|some_other_failure/);
+    }
+    expect(diagnosticErrorMessage({ message: 'brand_new_code' } as never)).toBe(GENERIC_ERROR_MESSAGE);
   });
 });

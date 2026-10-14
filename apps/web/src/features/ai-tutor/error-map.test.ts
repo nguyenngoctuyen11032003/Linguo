@@ -2,11 +2,12 @@ import { AI_ERROR_CODES } from '@linguo/shared';
 import { describe, expect, it } from 'vitest';
 import { aiError, quota } from './ai-fixtures';
 import { aiErrorMessage, aiRpcErrorMessage, formatResetTime } from './error-map';
+import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 
 describe('aiErrorMessage', () => {
   it.each(AI_ERROR_CODES.map((code) => [code]))('has a Vietnamese message for %s', (code) => {
     const message = aiErrorMessage(aiError(code));
-    expect(message).not.toMatch(/^Đã có lỗi xảy ra/);
+    expect(message).not.toBe(GENERIC_ERROR_MESSAGE);
     expect(message).not.toContain(code);
     expect(message).not.toContain('server says');
   });
@@ -50,8 +51,27 @@ describe('aiRpcErrorMessage', () => {
     expect(aiRpcErrorMessage({ message: 'not_authenticated', code: '42501' })).toBe('Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.');
     expect(aiRpcErrorMessage(new Error('invalid_note'))).toBe('Ghi chú quá dài (tối đa 500 ký tự).');
     expect(aiRpcErrorMessage({ message: 'TypeError: Failed to fetch', code: '' })).toBe('Không kết nối được máy chủ. Kiểm tra mạng và thử lại.');
-    expect(aiRpcErrorMessage({ message: 'something_new' })).toBe('Đã có lỗi xảy ra (mã: something_new). Vui lòng thử lại.');
-    expect(aiRpcErrorMessage({ message: 'Boom', code: '23505' })).toBe('Đã có lỗi xảy ra (mã: 23505). Vui lòng thử lại.');
-    expect(aiRpcErrorMessage(null)).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
+    expect(aiRpcErrorMessage({ message: 'something_new' })).toBe(GENERIC_ERROR_MESSAGE);
+    expect(aiRpcErrorMessage({ message: 'Boom', code: '23505' })).toBe(GENERIC_ERROR_MESSAGE);
+    expect(aiRpcErrorMessage(null)).toBe(GENERIC_ERROR_MESSAGE);
+  });
+});
+
+describe('aiRpcErrorMessage fallback', () => {
+  it('never shows a raw error code to the learner', () => {
+    const unknown = [
+      { message: 'brand_new_code' },
+      { message: 'Boom', code: '23505' },
+      { code: 'weak_password_like_code' },
+      new Error('some_other_failure'),
+      null,
+      undefined,
+    ];
+    for (const error of unknown) {
+      const message = aiRpcErrorMessage(error as never);
+      expect(message).not.toMatch(/mã/i);
+      expect(message).not.toMatch(/23505|brand_new_code|weak_password_like_code|some_other_failure/);
+    }
+    expect(aiRpcErrorMessage({ message: 'brand_new_code' } as never)).toBe(GENERIC_ERROR_MESSAGE);
   });
 });

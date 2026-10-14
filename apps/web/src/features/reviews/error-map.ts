@@ -1,5 +1,6 @@
 import type { REVIEW_ERROR_CODES } from '@linguo/shared';
 import { isUnansweredError } from '@/features/lesson-player/error-map';
+import { genericErrorMessage } from '@/lib/error-fallback';
 import { isNetworkError } from '@/lib/network-error';
 
 type ReviewErrorCode = (typeof REVIEW_ERROR_CODES)[number];
@@ -46,7 +47,7 @@ export function reviewErrorMessage(error: unknown): string {
       if (known) return known;
     }
     const code = errorCode(error);
-    if (code) return `Đã có lỗi xảy ra (mã: ${code}). Vui lòng thử lại.`;
+    if (code) return genericErrorMessage(code);
   }
-  return 'Đã có lỗi xảy ra. Vui lòng thử lại.';
+  return genericErrorMessage();
 }

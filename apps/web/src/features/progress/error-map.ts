@@ -1,4 +1,5 @@
 import type { ProgressErrorCode } from '@linguo/shared';
+import { genericErrorMessage } from '@/lib/error-fallback';
 import { isNetworkError } from '@/lib/network-error';
 
 const PROGRESS_MESSAGES: Record<ProgressErrorCode, string> = {
@@ -34,7 +35,7 @@ export function progressErrorMessage(error: unknown): string {
       if (known) return known;
     }
     const code = errorCode(error);
-    if (code) return `Đã có lỗi xảy ra (mã: ${code}). Vui lòng thử lại.`;
+    if (code) return genericErrorMessage(code);
   }
-  return 'Đã có lỗi xảy ra. Vui lòng thử lại.';
+  return genericErrorMessage();
 }

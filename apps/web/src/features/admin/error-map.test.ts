@@ -5,7 +5,7 @@ import { adminErrorCode, adminErrorMessage } from './error-map';
 describe('adminErrorMessage', () => {
   it.each(ADMIN_ERROR_CODES)('has a Vietnamese message for %s', (code) => {
     const message = adminErrorMessage({ message: code, code: 'P0001' });
-    expect(message).not.toMatch(/mã:/);
+    expect(message).not.toMatch(/mã lỗi:/);
     expect(message).not.toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
   });
 
@@ -28,9 +28,9 @@ describe('adminErrorMessage', () => {
     expect(adminErrorMessage(new TypeError('Failed to fetch'))).toMatch(/kết nối/);
   });
 
-  it('shows the code of unknown server errors and a generic fallback otherwise', () => {
-    expect(adminErrorMessage({ message: 'boom', code: 'XX000' })).toBe('Đã có lỗi xảy ra (mã: XX000). Vui lòng thử lại.');
-    expect(adminErrorMessage(new Error('something_else'))).toBe('Đã có lỗi xảy ra (mã: something_else). Vui lòng thử lại.');
+  it('keeps the code of unknown server errors (staff-only screen) in a separate suffix and a generic fallback otherwise', () => {
+    expect(adminErrorMessage({ message: 'boom', code: 'XX000' })).toBe('Đã có lỗi xảy ra. Vui lòng thử lại. (mã lỗi: XX000)');
+    expect(adminErrorMessage(new Error('something_else'))).toBe('Đã có lỗi xảy ra. Vui lòng thử lại. (mã lỗi: something_else)');
     expect(adminErrorMessage(null)).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
   });
 });

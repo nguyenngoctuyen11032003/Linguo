@@ -43,7 +43,7 @@ export function adminErrorMessage(error: unknown): string {
       if (known) return known;
     }
     const code = adminErrorCode(error);
-    if (code) return `Đã có lỗi xảy ra (mã: ${code}). Vui lòng thử lại.`;
+    if (code) return `Đã có lỗi xảy ra. Vui lòng thử lại. (mã lỗi: ${code})`;
   }
   return 'Đã có lỗi xảy ra. Vui lòng thử lại.';
 }

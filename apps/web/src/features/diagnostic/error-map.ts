@@ -1,6 +1,7 @@
 import type { DIAGNOSTIC_ERROR_CODES } from '@linguo/shared';
 import { isUnansweredError } from '@/features/lesson-player/error-map';
 import { formatDateVi, todayIso } from '@/lib/dates';
+import { genericErrorMessage } from '@/lib/error-fallback';
 import { isNetworkError } from '@/lib/network-error';
 
 type DiagnosticErrorCode = (typeof DIAGNOSTIC_ERROR_CODES)[number];
@@ -95,7 +96,7 @@ export function diagnosticErrorMessage(error: unknown, context: DiagnosticErrorC
       if (known) return known;
     }
     const code = diagnosticErrorCode(error);
-    if (code) return `Đã có lỗi xảy ra (mã: ${code}). Vui lòng thử lại.`;
+    if (code) return genericErrorMessage(code);
   }
-  return 'Đã có lỗi xảy ra. Vui lòng thử lại.';
+  return genericErrorMessage();
 }

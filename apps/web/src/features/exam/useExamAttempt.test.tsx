@@ -2,6 +2,7 @@ import { act, renderHook } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { ATTEMPT_ID, examAttempt, examQuestionId, examResult } from './exam-fixtures';
 import { EXAM_SAVE_DEBOUNCE_MS, useExamAttempt } from './useExamAttempt';
+import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 
 const mocks = vi.hoisted(() => {
   const rpc = vi.fn();
@@ -282,7 +283,7 @@ describe('useExamAttempt: submit', () => {
     const { result } = await renderRunning();
     await act(() => result.current.submit());
     expect(result.current.status).toBe('running');
-    expect(result.current.error).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
+    expect(result.current.error).toBe(GENERIC_ERROR_MESSAGE);
     await act(() => result.current.submit());
     expect(result.current.status).toBe('finished');
     expect(result.current.error).toBeNull();
