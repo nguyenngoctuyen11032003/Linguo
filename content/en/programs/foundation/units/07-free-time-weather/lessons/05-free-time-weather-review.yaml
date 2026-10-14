@@ -1,0 +1,446 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:free-time-weather-review
+order_index: 5
+level: a1
+title:
+  vi: Ôn tập - Lên kế hoạch cuối tuần và viết bưu thiếp
+objectives:
+  - vi: Hiểu và tham gia một đoạn chat rủ bạn đi chơi cuối tuần - hỏi rảnh không, gợi ý, nhận lời, từ chối.
+  - vi: Đọc và viết một tấm bưu thiếp ngắn kể về thời tiết, hoạt động và đồ vật mới.
+  - vi: Kết hợp like/love/hate + -ing, want to, Let's, It's + thời tiết và màu sắc mà không mắc lỗi quen thuộc.
+estimated_minutes: 12
+skills: [reading, writing, speaking]
+prerequisites: [en:lesson:weather-and-seasons]
+items:
+  - item: en:item:postcard
+  - item: en:item:love-from
+  - item: en:item:are-you-free
+    role: reuse
+  - item: en:item:want-to
+    role: reuse
+  - item: en:item:lets
+    role: reuse
+  - item: en:item:why-dont-we
+    role: reuse
+  - item: en:item:what-about
+    role: reuse
+  - item: en:item:sounds-good
+    role: reuse
+  - item: en:item:sorry-i-cant
+    role: reuse
+  - item: en:item:busy
+    role: reuse
+  - item: en:item:like-ing
+    role: reuse
+  - item: en:item:hate
+    role: reuse
+  - item: en:item:go-shopping
+    role: reuse
+  - item: en:item:go-swimming
+    role: reuse
+  - item: en:item:play-football
+    role: reuse
+  - item: en:item:it-weather
+    role: reuse
+  - item: en:item:sunny-rainy
+    role: reuse
+  - item: en:item:hot-cold
+    role: reuse
+  - item: en:item:summer
+    role: reuse
+  - item: en:item:red
+    role: reuse
+  - item: en:item:adjective-before-noun
+    role: reuse
+  - item: en:item:weekend
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng trọn bộ kiến thức của unit trong hai tình huống thật - chat rủ bạn đi chơi cuối tuần và viết bưu thiếp từ nơi du lịch.
+  - type: explain
+    text:
+      vi: "Một đoạn chat rủ đi chơi thường có bốn bước: hỏi Are you free this weekend?; nói mình muốn gì (I want to…) hoặc gợi ý (Let's… / Why don't we…? / What about…?); nhận lời (Sounds great!) hoặc từ chối (Sorry, I can't. I'm busy.); chốt thời gian (See you on Saturday!)."
+  - type: explain
+    text:
+      vi: Bưu thiếp (postcard) ngắn và thân mật - mở đầu Dear + tên, kể thời tiết (It's hot and sunny), việc bạn làm mỗi ngày (We go swimming every morning), rồi kết thúc bằng Love from + tên.
+  - type: explain
+    text:
+      vi: "Trước khi gửi, hãy tự kiểm tra năm lỗi hay gặp: It is rain → It's rainy; Weather is hot → It's hot; I like play → I like playing; Let's to go → Let's go; I want go → I want to go; a bag red → a red bag."
+  - type: deep_explain
+    text:
+      vi: Trong tin nhắn, người bản xứ hay viết ngắn - Sounds great!, Me too!, See you! - nhưng vẫn giữ đúng ngữ pháp cơ bản như It's và want to. Bưu thiếp thường dùng thì hiện tại đơn để kể việc lặp lại hằng ngày (we go swimming every day). Love from chỉ dùng với người thân, bạn bè.
+  - type: example
+    target: "Linh: Hi Tom! Are you free this weekend? - Tom: Yes, I am. What do you want to do?"
+    target_lang: en
+    translation:
+      vi: "Linh: Chào Tom! Cuối tuần này cậu rảnh không? - Tom: Rảnh. Cậu muốn làm gì?"
+    note:
+      vi: Are you free…? để hỏi rảnh; What do you want to do? - want to + động từ.
+  - type: example
+    target: "Linh: Let's go to the beach. It's hot and sunny this week! - Tom: Sounds great! But I hate swimming. Why don't we play football on the beach?"
+    target_lang: en
+    translation:
+      vi: "Linh: Đi biển đi. Tuần này trời nóng và nắng! - Tom: Hay quá! Nhưng tớ ghét bơi. Hay là mình đá bóng trên bãi biển nhé?"
+    note:
+      vi: Let's + go; It's + thời tiết; hate + -ing; Why don't we + động từ nguyên mẫu.
+  - type: example
+    target: "Linh: Good idea! What about going to the cinema on Sunday? - Tom: Sorry, I can't. I'm busy on Sunday."
+    target_lang: en
+    translation:
+      vi: "Linh: Ý hay! Thế Chủ nhật đi xem phim thì sao? - Tom: Xin lỗi, tớ không đi được. Chủ nhật tớ bận."
+    note:
+      vi: What about + -ing; từ chối kèm lý do ngắn.
+  - type: example
+    target: "Dear Mum and Dad, I'm in Nha Trang with Linh. It's hot and sunny every day. We go swimming in the morning and play football in the afternoon. Linh loves going shopping - she's got a new red hat! Love from Tom"
+    target_lang: en
+    translation:
+      vi: "Bố mẹ thân mến, con đang ở Nha Trang cùng Linh. Ngày nào trời cũng nóng và nắng. Buổi sáng tụi con đi bơi, buổi chiều đá bóng. Linh mê đi mua sắm - bạn ấy có một cái mũ đỏ mới! Thương bố mẹ, Tom"
+    note:
+      vi: Bưu thiếp mở đầu Dear, kể thời tiết bằng It's, màu đứng trước danh từ (a new red hat), kết thúc Love from.
+  - type: common_mistake
+    wrong: Let's to go to the beach. It is rain today.
+    right: Let's go to the beach. It isn't rainy today.
+    target_lang: en
+    note:
+      vi: Sau Let's không có to; nói thời tiết dùng It's + tính từ (rainy), không dùng danh từ rain.
+  - type: common_mistake
+    wrong: I want go swimming, but Tom hates swim.
+    right: I want to go swimming, but Tom hates swimming.
+    target_lang: en
+    note:
+      vi: Want cần to trước động từ; hate (như like, love) cần -ing.
+  - type: common_mistake
+    wrong: Linh has got a new hat red. Weather is hot.
+    right: Linh has got a new red hat. It's hot.
+    target_lang: en
+    note:
+      vi: Màu đứng trước danh từ; thời tiết bắt đầu bằng It's (hoặc The weather is…).
+  - type: summary
+    points:
+      - vi: Rủ - Are you free…? / Let's… / Why don't we…? / What about + -ing?
+      - vi: Đáp - Sounds great! / That's a good idea. / Sorry, I can't. I'm busy.
+      - vi: Sở thích - love / like / hate + -ing; mong muốn - want to + động từ.
+      - vi: Thời tiết - It's + tính từ; in + mùa.
+      - vi: Màu trước danh từ - a red hat; bưu thiếp kết thúc Love from + tên.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:free-time-weather-review-listen-free
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:are-you-free
+    prompt:
+      audio_asset_id: null
+      fallback_text: Are you free this weekend? - Yes, I am. What do you want to do?
+      options:
+        - { id: k2s, text: "Cuối tuần này bạn rảnh không? - Rảnh. Bạn muốn làm gì?", lang: vi }
+        - { id: f7m, text: "Cuối tuần này có miễn phí không? - Có. Bạn muốn làm gì?", lang: vi }
+        - { id: u4z, text: "Cuối tuần này bạn rảnh không? - Không, mình bận.", lang: vi }
+        - { id: o9h, text: "Cuối tuần bạn thường làm gì? - Mình đi bơi.", lang: vi }
+    answer:
+      correct_option_id: k2s
+    explanation:
+      vi: Free ở đây là "rảnh", không phải "miễn phí". Yes, I am là có rảnh; What do you want to do? là "bạn muốn làm gì?".
+    display_answer: "Cuối tuần này bạn rảnh không? - Rảnh. Bạn muốn làm gì?"
+
+  - key: en:exercise:free-time-weather-review-mcq-chat-hate
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: en:item:hate
+    prompt:
+      stem: "Đọc đoạn chat. Linh: Let's go to the beach. It's hot and sunny this week! - Tom: Sounds great! But I hate swimming. Why don't we play football on the beach? - Hỏi: Tom ghét làm gì?"
+      stem_lang: vi
+      options:
+        - { id: a5y, text: bơi, lang: vi }
+        - { id: e1q, text: đá bóng, lang: vi }
+        - { id: w6c, text: đi biển, lang: vi }
+        - { id: g3r, text: trời nóng, lang: vi }
+    answer:
+      correct_option_id: a5y
+    explanation:
+      vi: I hate swimming - Tom ghét bơi. Tom vẫn muốn đi biển (Sounds great!) và gợi ý đá bóng trên bãi biển.
+    display_answer: bơi
+
+  - key: en:exercise:free-time-weather-review-mcq-suggest
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:why-dont-we
+    prompt:
+      stem: "Chọn câu gợi ý đúng: \"Hay là mình đá bóng trên bãi biển nhé?\""
+      stem_lang: vi
+      options:
+        - { id: b8v, text: "Why don't we play football on the beach?", lang: en }
+        - { id: h4p, text: "Why we don't play football on the beach?", lang: en }
+        - { id: n1d, text: "Why don't we to play football on the beach?", lang: en }
+        - { id: s7t, text: "Why don't we playing football on the beach?", lang: en }
+    answer:
+      correct_option_id: b8v
+    explanation:
+      vi: Khuôn câu là Why don't we + động từ nguyên mẫu? - don't đứng trước we, không thêm to, không thêm -ing.
+    display_answer: "Why don't we play football on the beach?"
+
+  - key: en:exercise:free-time-weather-review-fill-postcard-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:it-weather
+    prompt:
+      template: "Dear Mum and Dad, {{b1}} hot and sunny every day. We {{b2}} swimming in the morning."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Bố mẹ thân mến, ngày nào trời cũng nóng và nắng. Buổi sáng tụi con đi bơi."
+        - "Gợi ý: chỗ 1 là chủ ngữ giả + be (viết tắt); chỗ 2 là \"đi\"."
+    answer:
+      blanks:
+        b1: ["It's", "It is"]
+        b2: [go]
+    known_wrong:
+      - answer: Is
+        feedback_vi: Thiếu chủ ngữ it - It's hot.
+        error_tag: missing_dummy_it
+      - answer: Weather is
+        feedback_vi: Weather làm chủ ngữ cần the; tự nhiên nhất là It's hot.
+        error_tag: missing_article_weather
+      - answer: go to
+        feedback_vi: Go swimming không có to.
+        error_tag: go_to_ing
+    explanation:
+      vi: Câu thời tiết bắt đầu bằng It's. Đi bơi là go swimming, không có to.
+    display_answer: "Dear Mum and Dad, it's hot and sunny every day. We go swimming in the morning."
+
+  - key: en:exercise:free-time-weather-review-order-lets
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:lets
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Thứ Bảy mình đi biển đi.\""
+      tokens:
+        - { id: l-beach, text: beach }
+        - { id: l-to1, text: to }
+        - { id: l-saturday, text: Saturday }
+        - { id: l-lets, text: "Let's" }
+        - { id: l-the, text: the }
+        - { id: l-on, text: on }
+        - { id: l-going, text: going }
+        - { id: l-go, text: go }
+    answer:
+      orders:
+        - [l-lets, l-go, l-to1, l-the, l-beach, l-on, l-saturday]
+        - [l-on, l-saturday, l-lets, l-go, l-to1, l-the, l-beach]
+    explanation:
+      vi: Let's + go (nguyên mẫu, không -ing) + to the beach. On Saturday đặt cuối câu hoặc đầu câu.
+    display_answer: "Let's go to the beach on Saturday."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:free-time-weather-review-fill-loves-want
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:want-to
+    prompt:
+      template: "Linh loves {{b1}} (go) shopping, and she wants {{b2}} (buy) a red hat."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [going]
+        b2: [to buy]
+    known_wrong:
+      - answer: go
+        feedback_vi: Sau love dùng -ing - going.
+        error_tag: like_plus_ing
+      - answer: buy
+        feedback_vi: Sau want cần to - wants to buy.
+        error_tag: want_to_infinitive
+      - answer: buying
+        feedback_vi: Sau want dùng to + động từ nguyên mẫu - to buy.
+        error_tag: want_to_infinitive
+      - answer: to go
+        feedback_vi: Sau love trong bài này dùng -ing - going.
+        error_tag: like_plus_ing
+    explanation:
+      vi: Love + -ing (loves going shopping), còn want + to + động từ nguyên mẫu (wants to buy). Hai động từ này đi với hai dạng khác nhau.
+    display_answer: Linh loves going shopping, and she wants to buy a red hat.
+
+  - key: en:exercise:free-time-weather-review-translate-free
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:are-you-free
+    prompt:
+      source_text: Cuối tuần này bạn có rảnh không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Are you free this weekend?
+        - Are you free at the weekend?
+        - Are you free on the weekend?
+        - This weekend, are you free?
+    known_wrong:
+      - answer: You free this weekend?
+        feedback_vi: Thiếu are - Are you free this weekend?
+        error_tag: missing_be
+      - answer: Do you free this weekend?
+        feedback_vi: Free là tính từ nên dùng be - Are you free?
+        error_tag: do_with_adjective
+      - answer: Are you free in this weekend?
+        feedback_vi: This weekend không cần giới từ.
+        error_tag: preposition
+    explanation:
+      vi: Free (rảnh) là tính từ, nên câu hỏi đảo are lên đầu - Are you free…? This weekend đứng cuối, không có giới từ.
+    display_answer: Are you free this weekend?
+
+  - key: en:exercise:free-time-weather-review-translate-hate-swim
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:like-ing
+    prompt:
+      source_text: Mình ghét bơi, nhưng mình thích đá bóng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I hate swimming, but I like playing football.
+        - I hate swimming but I like playing football.
+        - I hate swimming, but I like football.
+        - I hate swimming, but I like playing soccer.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I hate swim, but I like play football.
+        feedback_vi: Sau hate và like dùng -ing - swimming, playing.
+        error_tag: like_plus_ing
+      - answer: I hate swimming, but I like playing the football.
+        feedback_vi: Môn thể thao không có the - playing football.
+        error_tag: article
+      - answer: I hate swimming, but I like play football.
+        feedback_vi: Sau like dùng -ing - playing football.
+        error_tag: like_plus_ing
+    explanation:
+      vi: Hate và like đều + -ing. Đá bóng là play football, không có the.
+    display_answer: I hate swimming, but I like playing football.
+
+  # ---------------- application ----------------
+  - key: en:exercise:free-time-weather-review-mcq-postcard-weather
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:postcard
+    prompt:
+      stem: "Đọc bưu thiếp. Dear Mum and Dad, I'm in Nha Trang with Linh. It's hot and sunny every day. We go swimming in the morning and play football in the afternoon. Linh loves going shopping - she's got a new red hat! Love from Tom. - Hỏi: Câu nào đúng với bưu thiếp?"
+      stem_lang: vi
+      options:
+        - { id: c4j, text: Trời nắng nóng và Linh có một cái mũ đỏ mới., lang: vi }
+        - { id: m8u, text: Trời mưa nên Tom và Linh ở nhà., lang: vi }
+        - { id: x1e, text: Tom có một cái mũ đỏ mới., lang: vi }
+        - { id: p6w, text: "Buổi sáng họ đá bóng, buổi chiều đi bơi.", lang: vi }
+    answer:
+      correct_option_id: c4j
+    explanation:
+      vi: It's hot and sunny - trời nóng và nắng; she's got a new red hat - Linh (she) có mũ đỏ mới. Buổi sáng họ đi bơi, buổi chiều mới đá bóng.
+    display_answer: Trời nắng nóng và Linh có một cái mũ đỏ mới.
+
+  - key: en:exercise:free-time-weather-review-mcq-postcard-ending
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:love-from
+    prompt:
+      stem: Bạn viết bưu thiếp cho bà từ Đà Lạt. Câu nào hợp nhất để kết thúc?
+      stem_lang: vi
+      options:
+        - { id: t5n, text: "Love from Mai", lang: en }
+        - { id: y2b, text: "Best regards, Ms Mai", lang: en }
+        - { id: r9k, text: "Dear Mai", lang: en }
+        - { id: d7f, text: "Nice to meet you, Mai", lang: en }
+    answer:
+      correct_option_id: t5n
+    explanation:
+      vi: Love from + tên là lời kết thân mật cho người nhà. Best regards dùng trong thư công việc; Dear dùng để mở đầu; Nice to meet you là lời chào khi mới gặp.
+    display_answer: "Love from Mai"
+
+  - key: en:exercise:free-time-weather-review-translate-cinema-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:sorry-i-cant
+    prompt:
+      source_text: What about going to the cinema on Sunday? - Sorry, I can't. I'm busy.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chủ nhật đi xem phim thì sao? - Xin lỗi, mình không đi được. Mình bận.
+        - Thế Chủ nhật đi xem phim thì sao? - Xin lỗi, mình không đi được. Mình bận.
+        - Chủ nhật đi xem phim thì sao? - Xin lỗi, mình không đi được. Mình bận rồi.
+        - Chủ nhật đi xem phim nhé? - Xin lỗi, mình không đi được. Mình bận.
+        - Chủ nhật mình đi xem phim thì sao? - Xin lỗi, mình không đi được. Mình bận.
+        - Chủ nhật đi xem phim thì sao? - Xin lỗi, mình không thể. Mình bận.
+        - Đi xem phim vào Chủ nhật thì sao? - Xin lỗi, mình không đi được. Mình bận.
+    rubric:
+      diacritics: lenient
+      typo_tolerance: 1
+    explanation:
+      vi: What about going…? là "… thì sao?"; Sorry, I can't là lời từ chối lịch sự "xin lỗi, mình không đi được", kèm lý do I'm busy (mình bận).
+    display_answer: Chủ nhật đi xem phim thì sao? - Xin lỗi, mình không đi được. Mình bận.
+
+  - key: en:exercise:free-time-weather-review-translate-beach-summer
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:summer
+    prompt:
+      source_text: Mùa hè mình muốn đi biển vì trời nóng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I want to go to the beach in summer because it's hot.
+        - I want to go to the beach in the summer because it's hot.
+        - In summer, I want to go to the beach because it's hot.
+        - In summer I want to go to the beach because it's hot.
+        - In the summer, I want to go to the beach because it's hot.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I want go to the beach in summer because it's hot.
+        feedback_vi: Thiếu to sau want - want to go.
+        error_tag: want_to_infinitive
+      - answer: I want to go to the beach in summer because weather is hot.
+        feedback_vi: Weather làm chủ ngữ cần the; tự nhiên hơn là because it's hot.
+        error_tag: missing_article_weather
+      - answer: I want to go to the beach on summer because it's hot.
+        feedback_vi: Trước mùa dùng in - in summer.
+        error_tag: preposition_season
+      - answer: I want to go to the beach in summer because is hot.
+        feedback_vi: Thiếu chủ ngữ it - because it's hot.
+        error_tag: missing_dummy_it
+    explanation:
+      vi: Want to + go; "mùa hè" là in summer; "trời nóng" là it's hot - luôn có it làm chủ ngữ.
+    display_answer: I want to go to the beach in summer because it's hot.

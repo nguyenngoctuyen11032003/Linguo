@@ -818,27 +818,6 @@ items:
       confusion:
         vi: Ở đây I'm afraid không có nghĩa là "sợ" mà là "tiếc là". Nên nói thêm lý do để lời từ chối nhẹ nhàng.
 
-  - key: en:item:busy
-    type: vocab
-    level: a2
-    difficulty: 1
-    skill_tags: [vocabulary]
-    front:
-      text: busy
-      ipa: /ˈbɪzi/
-      pos: tính từ
-    back:
-      meaning:
-        vi: bận
-      examples:
-        - target: Sorry, I'm busy this evening.
-          translation:
-            vi: Xin lỗi, tối nay mình bận.
-      pronunciation_note:
-        vi: Chữ u đọc /ɪ/ - "BI-zi", không đọc "bu-zi".
-      confusion:
-        vi: Busy là tính từ nên cần be - I'm busy, không nói "I busy".
-
   - key: en:item:maybe-another-time
     type: phrase
     level: a2

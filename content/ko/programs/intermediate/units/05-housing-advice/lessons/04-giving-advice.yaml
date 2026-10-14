@@ -1,0 +1,426 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:giving-advice
+order_index: 4
+level: topik3
+title:
+  vi: Lời khuyên và nỗi lo - -는 게 좋겠다, -지 그래요?, -(으)ㄹ까 봐
+objectives:
+  - vi: Khuyên lịch sự bằng V-는 게 좋겠다 và gợi ý thân mật bằng V-지 그래요?, chọn đúng theo người nghe.
+  - vi: Nói việc làm vì lo sợ điều gì đó xảy ra bằng -(으)ㄹ까 봐(서), không dùng cho điều mong muốn.
+  - vi: Diễn tả mức độ bằng -(으)ㄹ 정도로 (đến mức…).
+estimated_minutes: 20
+skills: [grammar, speaking, listening]
+prerequisites: [ko:lesson:health-habits]
+items:
+  - item: ko:item:ha-gram-neun-ge-joketda
+  - item: ko:item:ha-gram-ji-geuraeyo
+  - item: ko:item:ha-gram-eulkka-bwa
+  - item: ko:item:ha-gram-eul-jeongdoro
+  - item: ko:item:ha-murihada
+  - item: ko:item:ha-puk
+  - item: ko:item:ha-sangdam-batda
+  - item: ko:item:geokjeongdoeda
+    role: reuse
+  - item: ko:item:ha-jurida
+  - item: ko:item:ha-seupgwan
+  - item: ko:item:ha-seuteureseu-batda
+    role: reuse
+  - item: ko:item:ha-bulmyeonjeung
+    role: reuse
+  - item: ko:item:ha-sikkeureopda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn khuyên được bạn bè và cấp trên một cách phù hợp ("bạn nên nghỉ ngơi", "sao bạn không đi khám?"), và giải thích việc mình làm vì lo lắng ("vì sợ muộn nên tôi đi taxi").
+  - type: explain
+    text:
+      vi: "V-는 게 좋겠다 là lời khuyên nhẹ nhàng, lịch sự - \"bạn nên… thì hơn\": 푹 쉬는 게 좋겠어요. Phủ định: V-지 않는 게 좋겠어요 (không nên…). Với người lớn tuổi, cấp trên thêm kính ngữ - 쉬시는 게 좋겠어요."
+  - type: explain
+    text:
+      vi: "V-지 그래요? là \"sao bạn không… đi?\" - gợi ý thân mật, chỉ dùng với bạn bè hoặc người nhỏ tuổi hơn. Dạng quá khứ -지 그랬어요? nghĩa là \"lẽ ra bạn nên…\", có chút trách."
+  - type: explain
+    text:
+      vi: "-(으)ㄹ까 봐(서) là \"vì sợ / lo là…\": vế trước là điều KHÔNG mong muốn, vế sau là việc làm để phòng hoặc 걱정이에요. -(으)ㄹ 정도로 là \"đến mức…\": 잠을 못 잘 정도로 시끄러워요."
+  - type: deep_explain
+    text:
+      vi: Người Việt hay dịch "sợ là, lo là" chính xác nhưng lại dùng -(으)ㄹ까 봐 cho điều mình mong ("vì muốn đỗ nên…" thành 합격할까 봐) - câu đó lại có nghĩa "vì sợ đỗ". Ngoài ra, vế sau của -(으)ㄹ까 봐 không là câu mệnh lệnh hay rủ rê (-(으)세요, -(으)ㅂ시다); muốn khuyên thì đổi sang -지 않도록 hoặc -(으)니까. Với -지 그래요?, dù có đuôi 요 vẫn không dùng với cấp trên vì mang sắc thái "bảo ban".
+  - type: example
+    target: 감기에 걸렸으면 오늘은 집에서 푹 쉬는 게 좋겠어요.
+    target_lang: ko
+    translation:
+      vi: Nếu bị cảm thì hôm nay bạn nên nghỉ ngơi ở nhà thì hơn.
+    note:
+      vi: Lời khuyên lịch sự, dùng được với hầu hết mọi người.
+  - type: example
+    target: 그렇게 걱정되면 병원에 가 보지 그래요?
+    target_lang: ko
+    translation:
+      vi: Lo thế thì sao bạn không đi khám thử đi?
+    note:
+      vi: Gợi ý thân mật giữa bạn bè.
+  - type: example
+    target: 시험에 떨어질까 봐 밤늦게까지 공부했어요.
+    target_lang: ko
+    translation:
+      vi: Vì sợ thi trượt nên tôi đã học đến khuya.
+    note:
+      vi: 떨어지다 (trượt) là điều không mong muốn - đúng cách dùng -(으)ㄹ까 봐.
+  - type: example
+    target: 일이 너무 많아서 밥 먹을 시간도 없을 정도로 바빠요.
+    target_lang: ko
+    translation:
+      vi: Việc nhiều đến mức không có cả thời gian ăn cơm.
+  - type: example
+    target: 무리하지 말고 커피를 조금씩 줄이는 게 좋겠어요.
+    target_lang: ko
+    translation:
+      vi: Đừng gắng quá, bạn nên giảm cà phê từ từ thì hơn.
+  - type: common_mistake
+    wrong: 시험에 합격할까 봐 열심히 공부했어요.
+    right: 시험에 떨어질까 봐 열심히 공부했어요.
+    target_lang: ko
+    note:
+      vi: Câu sai nghĩa là "vì sợ thi đỗ nên học chăm" - vô lý. -(으)ㄹ까 봐 chỉ đi với điều bạn sợ xảy ra; điều mong muốn thì dùng -기 위해서 hoặc -(으)려고 (합격하기 위해서).
+  - type: common_mistake
+    wrong: 늦을까 봐 택시를 타세요.
+    right: 늦지 않도록 택시를 타세요.
+    target_lang: ko
+    note:
+      vi: Vế sau của -(으)ㄹ까 봐 không là câu mệnh lệnh. Khi khuyên người khác, đổi sang -지 않도록 hoặc 늦을 수 있으니까.
+  - type: common_mistake
+    wrong: 부장님, 병원에 가 보지 그래요?
+    right: 부장님, 병원에 가 보시는 게 좋겠어요.
+    target_lang: ko
+    note:
+      vi: -지 그래요? nghe như đang bảo ban nên không dùng với cấp trên, người lớn tuổi. Dùng -(으)시는 게 좋겠어요 để vừa khuyên vừa giữ lễ.
+  - type: summary
+    points:
+      - vi: V-는 게 좋겠어요 / V-지 않는 게 좋겠어요 - nên / không nên… (lịch sự); kính ngữ -(으)시는 게 좋겠어요.
+      - vi: V-지 그래요? - sao không… đi? (thân mật); -지 그랬어요? - lẽ ra nên….
+      - vi: V/A-(으)ㄹ까 봐(서) - vì sợ điều không mong muốn; không dùng cho hy vọng, vế sau không là mệnh lệnh.
+      - vi: V/A-(으)ㄹ 정도로 - đến mức….
+      - vi: 무리하다 · 푹 쉬다 · 상담을 받다 · 걱정되다 (걱정돼요) · 줄이다 · 습관.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:giving-advice-mcq-kkabwa-fear
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-gram-eulkka-bwa
+    prompt:
+      stem: "Câu nào có nghĩa \"Vì sợ thi trượt nên tôi đã học chăm\"?"
+      stem_lang: vi
+      options:
+        - { id: f3a, text: 시험에 떨어질까 봐 열심히 공부했어요., lang: ko }
+        - { id: z7q, text: 시험에 합격할까 봐 열심히 공부했어요., lang: ko }
+        - { id: m5e, text: 시험에 떨어질까 봐 열심히 공부하세요., lang: ko }
+        - { id: t1x, text: 시험에 떨어지까 봐 열심히 공부했어요., lang: ko }
+    answer:
+      correct_option_id: f3a
+    explanation:
+      vi: -(으)ㄹ까 봐 đi với điều sợ xảy ra (떨어지다 - trượt). 합격할까 봐 là "sợ đỗ" (vô lý); vế sau không là mệnh lệnh -세요; 떨어지다 không có patchim nên là 떨어질까, không phải 떨어지까.
+    display_answer: 시험에 떨어질까 봐 열심히 공부했어요.
+
+  - key: ko:exercise:giving-advice-listen-ji-geuraeyo
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ha-gram-ji-geuraeyo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 그렇게 피곤하면 오늘은 일찍 자지 그래요?
+      options:
+        - { id: v2g, text: "Mệt thế thì sao hôm nay bạn không đi ngủ sớm đi?", lang: vi }
+        - { id: d8r, text: "Hôm nay bạn mệt nên đã ngủ sớm phải không?", lang: vi }
+        - { id: k4m, text: "Mệt thế mà hôm nay bạn vẫn không ngủ à?", lang: vi }
+        - { id: p6w, text: "Lẽ ra hôm qua bạn nên ngủ sớm.", lang: vi }
+    answer:
+      correct_option_id: v2g
+    explanation:
+      vi: -지 그래요? là gợi ý "sao bạn không… đi?". Đây là hiện tại (오늘), không phải -지 그랬어요? ("lẽ ra nên…") và không phải câu hỏi xác nhận.
+    display_answer: "Mệt thế thì sao hôm nay bạn không đi ngủ sớm đi?"
+
+  - key: ko:exercise:giving-advice-mcq-neun-ge-form
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ha-gram-neun-ge-joketda
+    prompt:
+      stem: "Chọn dạng đúng: 너무 피곤하면 오늘은 집에서 ___ 게 좋겠어요."
+      stem_lang: vi
+      options:
+        - { id: c9h, text: 쉬는, lang: ko }
+        - { id: w3b, text: 쉰, lang: ko }
+        - { id: e6n, text: 쉴, lang: ko }
+        - { id: r1s, text: 쉬어, lang: ko }
+    answer:
+      correct_option_id: c9h
+    explanation:
+      vi: Lời khuyên V-는 게 좋겠다 dùng định ngữ hiện tại -는 → 쉬는 게 좋겠어요. 쉰 là quá khứ; 쉴 là tương lai; 쉬어 không đứng trước 게.
+    display_answer: 쉬는
+
+  - key: ko:exercise:giving-advice-fill-jeongdoro-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-gram-eul-jeongdoro
+    prompt:
+      template: "위층이 잠을 못 {{b1}} 정도로 시끄러워요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Tầng trên ồn đến mức tôi không ngủ được."
+        - "Gợi ý: 자다 + -(으)ㄹ 정도로."
+    answer:
+      blanks:
+        b1: [잘]
+    known_wrong:
+      - answer: 자는
+        feedback_vi: 정도로 đi với dạng -(으)ㄹ - 못 잘 정도로.
+        error_tag: adnominal_form
+      - answer: 자서
+        feedback_vi: Trước danh từ 정도 cần định ngữ -(으)ㄹ - 잘.
+        error_tag: adnominal_form
+      - answer: 잘을
+        feedback_vi: 자다 không có patchim, chỉ thêm ㄹ - 잘.
+        error_tag: eul_form
+    explanation:
+      vi: V-(으)ㄹ 정도로 - 자다 → 잘 정도로 (đến mức ngủ…). 못 잘 정도로 = đến mức không ngủ được.
+    display_answer: 위층이 잠을 못 잘 정도로 시끄러워요.
+
+  - key: ko:exercise:giving-advice-wb-worry-late
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ha-gram-eulkka-bwa
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi lo là mình sẽ đến muộn.\""
+      tokens:
+        - { id: w3, text: 걱정이에요 }
+        - { id: w4, text: 늦어서 }
+        - { id: w2, text: 봐 }
+        - { id: w1, text: 늦을까 }
+    answer:
+      orders:
+        - [w1, w2, w3]
+    explanation:
+      vi: '"Lo là sẽ…" = V-(으)ㄹ까 봐 걱정이에요. 늦어서 nghĩa là "vì đã muộn" - không diễn tả nỗi lo về tương lai.'
+    display_answer: 늦을까 봐 걱정이에요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:giving-advice-fill-not-coffee
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-gram-neun-ge-joketda
+    prompt:
+      template: "(Bạn không nên uống cà phê lúc khuya.) 밤늦게 커피를 마시지 {{b1}} 게 좋겠어요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [않는]
+    known_wrong:
+      - answer: 않은
+        feedback_vi: Lời khuyên dùng định ngữ hiện tại - 않는 게 좋겠어요.
+        error_tag: adnominal_form
+      - answer: 안
+        feedback_vi: Sau -지 cần 않다 chia định ngữ - 않는.
+        error_tag: negation_form
+      - answer: 마는
+        feedback_vi: -지 말다 dùng cho mệnh lệnh (마세요); trước 게 좋겠다 dùng -지 않는.
+        error_tag: negation_form
+    explanation:
+      vi: Phủ định của V-는 게 좋겠다 là V-지 않는 게 좋겠다 - "không nên… thì hơn".
+    display_answer: 밤늦게 커피를 마시지 않는 게 좋겠어요.
+
+  - key: ko:exercise:giving-advice-translate-rest
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-puk
+    prompt:
+      source_text: Bạn nên nghỉ ngơi thật thoải mái thì hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 푹 쉬는 게 좋겠어요.
+        - 좀 푹 쉬는 게 좋겠어요.
+        - 푹 쉬시는 게 좋겠어요.
+        - 푹 쉬는 것이 좋겠어요.
+        - 푹 쉬는 게 좋을 것 같아요.
+        - 집에서 푹 쉬는 게 좋겠어요.
+        - 푹 쉬는 게 좋아요.
+    known_wrong:
+      - answer: 푹 쉰 게 좋겠어요.
+        feedback_vi: Lời khuyên dùng định ngữ hiện tại -는 - 쉬는 게 좋겠어요.
+        error_tag: adnominal_form
+      - answer: 푹 자는 게 좋겠어요.
+        feedback_vi: 자다 là "ngủ"; "nghỉ ngơi" là 쉬다.
+        error_tag: vocab_meaning
+      - answer: 많이 쉬는 게 안 좋겠어요.
+        feedback_vi: Câu này lại thành "không nên nghỉ nhiều". Khuyên "nên nghỉ" - 푹 쉬는 게 좋겠어요.
+        error_tag: negation_misplaced
+    explanation:
+      vi: '"Nghỉ thật thoải mái" = 푹 쉬다; "nên… thì hơn" = -는 게 좋겠어요.'
+    display_answer: 푹 쉬는 게 좋겠어요.
+
+  - key: ko:exercise:giving-advice-translate-worried-sibling
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:geokjeongdoeda
+    prompt:
+      source_text: Tôi lo cho em tôi đang sống một mình.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 혼자 사는 동생이 걱정돼요.
+        - 저는 혼자 사는 동생이 걱정돼요.
+        - 혼자 사는 동생이 걱정되어요.
+        - 혼자 사는 동생이 걱정이에요.
+        - 혼자 사는 동생 때문에 걱정돼요.
+        - 혼자 사는 동생을 걱정해요.
+        - 저는 혼자 사는 동생을 걱정해요.
+        - 혼자 사는 제 동생이 걱정돼요.
+        - 혼자 살고 있는 동생이 걱정돼요.
+    known_wrong:
+      - answer: 혼자 사는 동생이 걱정되요.
+        feedback_vi: 되어요 rút gọn là 돼요 - viết 걱정돼요, không viết 되요.
+        error_tag: dwae_spelling
+      - answer: 혼자 산 동생이 걱정돼요.
+        feedback_vi: '"Đang sống" là định ngữ hiện tại - 사는; 산 là quá khứ.'
+        error_tag: adnominal_form
+      - answer: 혼자 사는 동생을 걱정돼요.
+        feedback_vi: 걱정되다 lấy người được lo làm chủ ngữ - 동생이 걱정돼요; dùng 을 thì đổi sang 걱정해요.
+        error_tag: particle_doeda
+    explanation:
+      vi: 살다 + -는 → 사는 (gốc ㄹ rơi). "Lo cho N" = N이 걱정돼요 hoặc N을 걱정해요.
+    display_answer: 혼자 사는 동생이 걱정돼요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:giving-advice-mcq-boss
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ha-gram-ji-geuraeyo
+    prompt:
+      stem: "Trưởng phòng (부장님) ho cả buổi sáng. Bạn muốn khuyên ông về sớm nghỉ ngơi một cách lễ phép. Câu nào phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: h2c, text: "부장님, 오늘은 일찍 들어가서 쉬시는 게 좋겠어요.", lang: ko }
+        - { id: n7u, text: "부장님, 오늘은 일찍 들어가서 쉬지 그래요?", lang: ko }
+        - { id: b4y, text: "부장님, 오늘은 일찍 들어가서 쉬어.", lang: ko }
+        - { id: s8l, text: "부장님, 오늘은 일찍 들어가서 쉴까 봐요.", lang: ko }
+    answer:
+      correct_option_id: h2c
+    explanation:
+      vi: Với cấp trên dùng -(으)시는 게 좋겠어요 - vừa khuyên vừa kính ngữ. -지 그래요? mang ý bảo ban nên thất lễ; 쉬어 là 반말; -(으)ㄹ까 봐요 là "tôi định…/sợ là" - sai nghĩa.
+    display_answer: 부장님, 오늘은 일찍 들어가서 쉬시는 게 좋겠어요.
+
+  - key: ko:exercise:giving-advice-mcq-reading-chat
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ha-sangdam-batda
+    prompt:
+      stem: "다음 대화를 읽고 맞는 것을 고르십시오.\n민수: 요즘 일이 많아서 밤에 잠을 못 잘 정도로 스트레스를 받아요.\n지아: 너무 무리하지 마세요. 주말에는 푹 쉬고, 스트레스가 심하면 상담을 받아 보지 그래요?\n민수: 그럴게요. 사실 불면증이 생길까 봐 걱정이에요."
+      stem_lang: ko
+      options:
+        - { id: g5k, text: 지아 씨는 민수 씨에게 상담을 받아 보라고 했어요., lang: ko }
+        - { id: a2t, text: 민수 씨는 요즘 잠을 아주 잘 자요., lang: ko }
+        - { id: l9p, text: 지아 씨는 민수 씨에게 주말에도 일하라고 했어요., lang: ko }
+        - { id: y6d, text: 민수 씨는 불면증이 생겨서 병원에 다녀요., lang: ko }
+    answer:
+      correct_option_id: g5k
+    explanation:
+      vi: 상담을 받아 보지 그래요? là gợi ý "sao không thử đi tư vấn". Minsu không ngủ được (잠을 못 잘 정도로), Jia khuyên cuối tuần nghỉ ngơi, và 불면증이 생길까 봐 là "lo sẽ bị mất ngủ" - chưa bị.
+    display_answer: 지아 씨는 민수 씨에게 상담을 받아 보라고 했어요.
+
+  - key: ko:exercise:giving-advice-translate-habit-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ha-seupgwan
+    prompt:
+      source_text: 자기 전에 휴대폰을 보는 습관을 고치는 게 좋겠어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bạn nên bỏ thói quen xem điện thoại trước khi ngủ.
+        - Bạn nên bỏ thói quen xem điện thoại trước khi ngủ thì hơn.
+        - Bạn nên sửa thói quen xem điện thoại trước khi ngủ.
+        - Bạn nên sửa thói quen xem điện thoại trước khi đi ngủ.
+        - Bạn nên bỏ thói quen xem điện thoại trước khi đi ngủ.
+        - Nên bỏ thói quen xem điện thoại trước khi ngủ.
+        - Nên sửa thói quen xem điện thoại trước khi ngủ thì hơn.
+        - Bạn nên bỏ thói quen nhìn điện thoại trước khi ngủ.
+        - Bạn nên bỏ thói quen dùng điện thoại trước khi ngủ.
+        - Bạn nên thay đổi thói quen xem điện thoại trước khi ngủ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bạn nên tạo thói quen xem điện thoại trước khi ngủ.
+        feedback_vi: 습관을 고치다 là "sửa, bỏ thói quen", không phải "tạo thói quen".
+        error_tag: vocab_meaning
+      - answer: Bạn nên xem điện thoại sau khi ngủ dậy.
+        feedback_vi: 자기 전에 là "trước khi ngủ", và câu nói về việc bỏ thói quen.
+        error_tag: time_connector
+    explanation:
+      vi: 자기 전에 = trước khi ngủ; 휴대폰을 보는 습관 = thói quen xem điện thoại; 고치는 게 좋겠어요 = nên sửa/bỏ thì hơn.
+    display_answer: Bạn nên bỏ thói quen xem điện thoại trước khi ngủ.
+
+  - key: ko:exercise:giving-advice-translate-cut-coffee
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ha-jurida
+    prompt:
+      source_text: Vì sợ không ngủ được nên tôi đã giảm cà phê.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 잠을 못 잘까 봐 커피를 줄였어요.
+        - 잠을 못 잘까 봐서 커피를 줄였어요.
+        - 저는 잠을 못 잘까 봐 커피를 줄였어요.
+        - 저는 잠을 못 잘까 봐서 커피를 줄였어요.
+        - 잠이 안 올까 봐 커피를 줄였어요.
+        - 잠이 안 올까 봐서 커피를 줄였어요.
+        - 잠을 못 잘까 봐 커피를 마시는 것을 줄였어요.
+        - 잠을 못 잘까 봐 커피를 덜 마셨어요.
+        - 밤에 잠을 못 잘까 봐 커피를 줄였어요.
+    known_wrong:
+      - answer: 잠을 잘 잘까 봐 커피를 줄였어요.
+        feedback_vi: -(으)ㄹ까 봐 chỉ đi với điều bạn sợ. "Ngủ ngon" là điều mong muốn - phải là 못 잘까 봐.
+        error_tag: kkabwa_hope
+      - answer: 잠을 못 잘까 봐 커피를 줄이세요.
+        feedback_vi: Vế sau của -(으)ㄹ까 봐 không là mệnh lệnh; câu gốc kể việc đã làm - 줄였어요.
+        error_tag: kkabwa_imperative
+      - answer: 잠을 못 자서 커피를 줄였어요.
+        feedback_vi: -아서 là "vì đã không ngủ được" (đã xảy ra). "Vì sợ (sẽ) không ngủ được" là 못 잘까 봐.
+        error_tag: cause_vs_worry
+    explanation:
+      vi: '"Vì sợ không ngủ được" = 잠을 못 잘까 봐(서) - điều không mong muốn; "giảm" = 줄이다 → 줄였어요.'
+    display_answer: 잠을 못 잘까 봐 커피를 줄였어요.

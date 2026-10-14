@@ -1,0 +1,437 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:weather-and-seasons
+order_index: 4
+level: a1
+title:
+  vi: Thời tiết và các mùa - It's sunny, in summer
+objectives:
+  - vi: Hỏi What's the weather like? và trả lời bằng It's + tính từ (It's sunny, It's cold).
+  - vi: Gọi tên bốn mùa, mùa mưa, mùa khô và dùng in trước mùa, tháng - in summer, in May.
+  - vi: Không nói It is rain, Weather is hot hay Is hot.
+estimated_minutes: 10
+skills: [vocabulary, grammar, speaking]
+prerequisites: [en:lesson:colours-and-things]
+items:
+  - item: en:item:it-weather
+  - item: en:item:whats-the-weather-like
+  - item: en:item:hot-cold
+  - item: en:item:season
+  - item: en:item:spring
+  - item: en:item:summer
+  - item: en:item:autumn
+  - item: en:item:winter
+  - item: en:item:snow
+  - item: en:item:rainy-season-dry-season
+  - item: en:item:weather
+    role: reuse
+  - item: en:item:sunny-rainy
+    role: reuse
+  - item: en:item:warm-cool
+    role: reuse
+  - item: en:item:rain
+    role: reuse
+  - item: en:item:months
+    role: reuse
+  - item: en:item:favourite
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi và kể được thời tiết hôm nay, thời tiết từng mùa ở quê mình - ví dụ "Mùa hè ở Sài Gòn trời nóng và hay mưa".
+  - type: explain
+    text:
+      vi: Tiếng Việt nói "trời nóng", "nóng quá" mà không cần chủ ngữ rõ ràng, nhưng câu tiếng Anh luôn cần chủ ngữ. Khi nói về thời tiết, chủ ngữ là it - It's hot, It's sunny, It's windy.
+  - type: explain
+    text:
+      vi: Sau It's dùng tính từ - sunny, rainy, cloudy, windy, hot, cold, warm, cool. Rain và snow là danh từ/động từ, nên không nói It is rain; hãy nói It's rainy (trời mưa nhiều) hoặc It's raining (đang mưa).
+  - type: explain
+    text:
+      vi: Hỏi thời tiết dùng What's the weather like? - có the trước weather, like ở cuối nghĩa là "như thế nào". Trước mùa và tháng dùng in - in summer, in the rainy season, in July.
+  - type: deep_explain
+    text:
+      vi: Bạn cũng có thể nói The weather is hot, nhưng phải có the; câu Weather is hot (thiếu the) là sai. Người Anh còn hỏi How's the weather? - đúng, nhưng không gộp thành How is the weather like? Miền Bắc Việt Nam có bốn mùa (spring, summer, autumn, winter), còn miền Nam có hai mùa - the rainy season và the dry season.
+  - type: example
+    target: What's the weather like today? - It's hot and sunny.
+    target_lang: en
+    translation:
+      vi: Hôm nay thời tiết thế nào? - Trời nóng và nắng.
+    note:
+      vi: Câu trả lời bắt đầu bằng It's, không bỏ it.
+  - type: example
+    target: In Hanoi, it's cold in winter and hot in summer.
+    target_lang: en
+    translation:
+      vi: Ở Hà Nội, mùa đông trời lạnh, mùa hè trời nóng.
+    note:
+      vi: In + mùa; tên mùa không viết hoa.
+  - type: example
+    target: In the south of Vietnam, the rainy season is from May to October.
+    target_lang: en
+    translation:
+      vi: Ở miền Nam Việt Nam, mùa mưa kéo dài từ tháng Năm đến tháng Mười.
+    note:
+      vi: From… to… để nói khoảng thời gian; tên tháng viết hoa.
+  - type: example
+    target: It's cloudy and windy, but it isn't cold.
+    target_lang: en
+    translation:
+      vi: Trời nhiều mây và có gió, nhưng không lạnh.
+    note:
+      vi: Phủ định là it isn't (it's not) + tính từ.
+  - type: common_mistake
+    wrong: It is rain today.
+    right: It's rainy today. / It's raining now.
+    target_lang: en
+    note:
+      vi: Rain là danh từ/động từ. Sau It's cần tính từ rainy, hoặc dùng It's raining (đang mưa).
+  - type: common_mistake
+    wrong: Weather is hot.
+    right: It's hot. / The weather is hot.
+    target_lang: en
+    note:
+      vi: Nói về thời tiết hãy bắt đầu bằng It's. Nếu dùng weather làm chủ ngữ thì cần the.
+  - type: common_mistake
+    wrong: How is the weather like?
+    right: What's the weather like?
+    target_lang: en
+    note:
+      vi: Đi với like là What; nếu dùng How thì bỏ like - How's the weather?
+  - type: summary
+    points:
+      - vi: Thời tiết - It's + tính từ - It's sunny / rainy / cloudy / windy / hot / cold.
+      - vi: Đang mưa/tuyết - It's raining / It's snowing; không nói It is rain.
+      - vi: Hỏi - What's the weather like? (hoặc How's the weather?)
+      - vi: Mùa - spring, summer, autumn (fall), winter; the rainy season, the dry season.
+      - vi: In + mùa / tháng - in summer, in May.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:weather-and-seasons-mcq-its-hot
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:it-weather
+    prompt:
+      stem: "Câu nào đúng nghĩa \"Trời nóng\"?"
+      stem_lang: vi
+      options:
+        - { id: v2h, text: "It's hot.", lang: en }
+        - { id: c7q, text: Is hot., lang: en }
+        - { id: m3z, text: Weather hot., lang: en }
+        - { id: y9d, text: It hot., lang: en }
+    answer:
+      correct_option_id: v2h
+    explanation:
+      vi: Câu tiếng Anh cần chủ ngữ và động từ - It's (It is) + hot. Ba câu còn lại thiếu it hoặc thiếu is.
+    display_answer: "It's hot."
+
+  - key: en:exercise:weather-and-seasons-listen-da-lat
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:whats-the-weather-like
+    prompt:
+      audio_asset_id: null
+      fallback_text: What's the weather like in Da Lat? - It's cool and cloudy.
+      options:
+        - { id: t6b, text: "Thời tiết ở Đà Lạt thế nào? - Trời mát và nhiều mây.", lang: vi }
+        - { id: a1k, text: "Thời tiết ở Đà Lạt thế nào? - Trời lạnh và có gió.", lang: vi }
+        - { id: n8p, text: "Bạn có thích Đà Lạt không? - Có, trời mát.", lang: vi }
+        - { id: e4s, text: "Thời tiết ở Đà Lạt thế nào? - Trời nóng và nắng.", lang: vi }
+    answer:
+      correct_option_id: t6b
+    explanation:
+      vi: Like trong What's the weather like? là "như thế nào", không phải "thích". Cool là mát (cold mới là lạnh), cloudy là nhiều mây.
+    display_answer: "Thời tiết ở Đà Lạt thế nào? - Trời mát và nhiều mây."
+
+  - key: en:exercise:weather-and-seasons-mcq-rainy
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:sunny-rainy
+    prompt:
+      stem: "Câu nào đúng nghĩa \"Hôm nay trời mưa\"?"
+      stem_lang: vi
+      options:
+        - { id: g5r, text: "It's rainy today.", lang: en }
+        - { id: l2u, text: It is rain today., lang: en }
+        - { id: w7f, text: It rainy today., lang: en }
+        - { id: k4c, text: Rain is today., lang: en }
+    answer:
+      correct_option_id: g5r
+    explanation:
+      vi: Sau It's cần tính từ - rainy. Rain là danh từ nên It is rain sai; It rainy thiếu is.
+    display_answer: "It's rainy today."
+
+  - key: en:exercise:weather-and-seasons-fill-in-summer-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:summer
+    prompt:
+      template: "We go to the beach {{b1}} summer, and it's very {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Mùa hè bọn mình đi biển, và trời rất nóng."
+        - "Gợi ý: giới từ trước mùa có hai chữ cái; \"nóng\" là h…"
+    answer:
+      blanks:
+        b1: [in]
+        b2: [hot]
+    known_wrong:
+      - answer: on
+        feedback_vi: Trước mùa dùng in - in summer.
+        error_tag: preposition_season
+      - answer: at
+        feedback_vi: Trước mùa dùng in - in summer.
+        error_tag: preposition_season
+      - answer: cold
+        feedback_vi: Cold là lạnh; nóng là hot.
+        error_tag: vocabulary
+    explanation:
+      vi: Mùa, tháng, năm đều đi với in - in summer. Hot là nóng, đứng sau it's very.
+    display_answer: We go to the beach in summer, and it's very hot.
+
+  - key: en:exercise:weather-and-seasons-order-question
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:whats-the-weather-like
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: \"Hôm nay thời tiết thế nào?\""
+      tokens:
+        - { id: q-like, text: like }
+        - { id: q-today, text: today }
+        - { id: q-how, text: How }
+        - { id: q-weather, text: weather }
+        - { id: q-whats, text: "What's" }
+        - { id: q-a, text: a }
+        - { id: q-the, text: the }
+    answer:
+      orders:
+        - [q-whats, q-the, q-weather, q-like, q-today]
+    explanation:
+      vi: Câu hỏi What's + the weather + like + today. Weather không đếm được nên không dùng a; câu có like thì bắt đầu bằng What, không phải How.
+    display_answer: What's the weather like today?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:weather-and-seasons-fill-cold-hot
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:hot-cold
+    prompt:
+      template: "In Hanoi, it's {{b1}} (lạnh) in winter and {{b2}} (nóng) in summer."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [cold]
+        b2: [hot]
+    known_wrong:
+      - answer: cool
+        feedback_vi: Cool là mát; lạnh là cold.
+        error_tag: vocabulary
+      - answer: warm
+        feedback_vi: Warm là ấm; nóng là hot.
+        error_tag: vocabulary
+      - answer: colds
+        feedback_vi: Tính từ không thêm -s - cold.
+        error_tag: adjective_plural
+    explanation:
+      vi: Cold là lạnh, hot là nóng. Đừng nhầm với cool (mát) và warm (ấm) - thang nhiệt độ cold < cool < warm < hot.
+    display_answer: In Hanoi, it's cold in winter and hot in summer.
+
+  - key: en:exercise:weather-and-seasons-translate-sunny-hot
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:it-weather
+    prompt:
+      source_text: Hôm nay trời nắng và nóng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It's sunny and hot today.
+        - It's hot and sunny today.
+        - Today it's sunny and hot.
+        - Today it's hot and sunny.
+        - Today, it's sunny and hot.
+        - Today, it's hot and sunny.
+        - The weather is sunny and hot today.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Weather is sunny and hot today.
+        feedback_vi: Weather làm chủ ngữ phải có the - hoặc nói tự nhiên hơn là It's sunny and hot today.
+        error_tag: missing_article_weather
+      - answer: Is sunny and hot today.
+        feedback_vi: Thiếu chủ ngữ it - It's sunny and hot today.
+        error_tag: missing_dummy_it
+      - answer: It sunny and hot today.
+        feedback_vi: Thiếu is - It's (It is) sunny.
+        error_tag: missing_be
+      - answer: It is sun and hot today.
+        feedback_vi: Sun là danh từ; trời nắng là tính từ sunny.
+        error_tag: word_form
+    explanation:
+      vi: Câu thời tiết cần It's + tính từ. "Nắng" là sunny (tính từ), "nóng" là hot.
+    display_answer: It's sunny and hot today.
+
+  - key: en:exercise:weather-and-seasons-translate-hanoi-weather
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:whats-the-weather-like
+    prompt:
+      source_text: Thời tiết ở Hà Nội thế nào?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - What's the weather like in Hanoi?
+        - What's the weather like in Ha Noi?
+        - How's the weather in Hanoi?
+        - How is the weather in Hanoi?
+        - What is the weather in Hanoi like?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: How is the weather like in Hanoi?
+        feedback_vi: Câu có like dùng What - What's the weather like…? Nếu dùng How thì bỏ like.
+        error_tag: how_like
+      - answer: What's weather like in Hanoi?
+        feedback_vi: Cần the trước weather.
+        error_tag: missing_article_weather
+      - answer: What's the weather in Hanoi?
+        feedback_vi: Thiếu like ở cuối - What's the weather like in Hanoi?
+        error_tag: missing_like
+    explanation:
+      vi: "\"Thời tiết thế nào?\" = What's the weather like? (like = như thế nào). Cách khác - How's the weather in Hanoi?"
+    display_answer: What's the weather like in Hanoi?
+
+  # ---------------- application ----------------
+  - key: en:exercise:weather-and-seasons-translate-rainy-season-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:rainy-season-dry-season
+    prompt:
+      source_text: In the south of Vietnam, the rainy season is from May to October.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở miền Nam Việt Nam, mùa mưa kéo dài từ tháng Năm đến tháng Mười.
+        - Ở miền Nam Việt Nam, mùa mưa là từ tháng Năm đến tháng Mười.
+        - Ở miền Nam Việt Nam, mùa mưa từ tháng Năm đến tháng Mười.
+        - Ở miền Nam Việt Nam, mùa mưa kéo dài từ tháng 5 đến tháng 10.
+        - Ở miền Nam Việt Nam, mùa mưa từ tháng 5 đến tháng 10.
+        - Ở miền Nam Việt Nam, mùa mưa là từ tháng 5 đến tháng 10.
+        - Miền Nam Việt Nam có mùa mưa từ tháng Năm đến tháng Mười.
+        - Miền Nam Việt Nam có mùa mưa từ tháng 5 đến tháng 10.
+    rubric:
+      diacritics: lenient
+      typo_tolerance: 1
+    explanation:
+      vi: The rainy season là mùa mưa; from May to October là "từ tháng Năm đến tháng Mười". Tiếng Việt có thể viết tháng bằng số.
+    display_answer: Ở miền Nam Việt Nam, mùa mưa kéo dài từ tháng Năm đến tháng Mười.
+
+  - key: en:exercise:weather-and-seasons-mcq-sapa
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:snow
+    prompt:
+      stem: "Một du khách hỏi bạn: \"What's the weather like in Sa Pa in winter?\" Câu trả lời nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: i3w, text: "It's very cold, and it sometimes snows.", lang: en }
+        - { id: b8n, text: Weather is very cold., lang: en }
+        - { id: x5t, text: "It's very cold, and it sometimes snow.", lang: en }
+        - { id: d6m, text: "It is cold weather very.", lang: en }
+    answer:
+      correct_option_id: i3w
+    explanation:
+      vi: Bắt đầu bằng It's + tính từ; snow là động từ, với it phải thêm -s - it sometimes snows. Weather is… thiếu the, còn very phải đứng trước tính từ.
+    display_answer: "It's very cold, and it sometimes snows."
+
+  - key: en:exercise:weather-and-seasons-translate-summer-here
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:season
+    prompt:
+      source_text: Mùa hè ở đây trời rất nóng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It's very hot here in summer.
+        - It's very hot here in the summer.
+        - In summer, it's very hot here.
+        - In summer it's very hot here.
+        - In the summer, it's very hot here.
+        - Summer here is very hot.
+        - The summer here is very hot.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It's very hot here on summer.
+        feedback_vi: Trước mùa dùng in - in summer.
+        error_tag: preposition_season
+      - answer: Weather is very hot here in summer.
+        feedback_vi: Thiếu the trước weather; tự nhiên hơn là It's very hot here in summer.
+        error_tag: missing_article_weather
+      - answer: Very hot here in summer.
+        feedback_vi: Câu thiếu chủ ngữ và động từ - It's very hot here.
+        error_tag: missing_dummy_it
+      - answer: In summer is very hot here.
+        feedback_vi: Thiếu chủ ngữ it - In summer, it's very hot here.
+        error_tag: missing_dummy_it
+    explanation:
+      vi: Câu thời tiết bắt đầu bằng It's; "mùa hè" là in summer, đặt đầu hoặc cuối câu đều được.
+    display_answer: It's very hot here in summer.
+
+  - key: en:exercise:weather-and-seasons-order-favourite-season
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:autumn
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Mùa mình thích nhất là mùa thu.\""
+      tokens:
+        - { id: r-season, text: season }
+        - { id: r-autumn, text: autumn }
+        - { id: r-on, text: on }
+        - { id: r-favourite, text: favourite }
+        - { id: r-is, text: is }
+        - { id: r-my, text: my }
+        - { id: r-colour, text: colour }
+    answer:
+      orders:
+        - [r-my, r-favourite, r-season, r-is, r-autumn]
+        - [r-autumn, r-is, r-my, r-favourite, r-season]
+    explanation:
+      vi: My favourite season = mùa mình thích nhất; favourite đứng trước season. Cũng có thể đảo - Autumn is my favourite season.
+    display_answer: My favourite season is autumn.

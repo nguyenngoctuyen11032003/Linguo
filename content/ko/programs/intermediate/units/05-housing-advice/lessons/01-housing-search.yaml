@@ -1,0 +1,425 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:housing-search
+order_index: 1
+level: topik3
+title:
+  vi: Tìm nhà - 월세, 전세 và -(으)ㄴ/는 편이다
+objectives:
+  - vi: Hiểu và phân biệt hai kiểu thuê nhà ở Hàn Quốc - 월세 và 전세 - cùng các khoản 보증금, 관리비.
+  - vi: Nhận xét có chừng mực bằng -(으)ㄴ/는 편이다 ("thuộc loại…, khá…").
+  - vi: Đánh giá một căn nhà "đáng / ở được" bằng V-(으)ㄹ 만하다.
+estimated_minutes: 20
+skills: [vocabulary, grammar, speaking]
+prerequisites: [ko:lesson:daily-troubles-review]
+items:
+  - item: ko:item:ha-gram-neun-pyeonida
+  - item: ko:item:ha-gram-eul-manhada
+  - item: ko:item:ha-isahada
+  - item: ko:item:ha-wonrum
+  - item: ko:item:ha-wolse
+  - item: ko:item:ha-jeonse
+  - item: ko:item:ha-bojeunggeum
+  - item: ko:item:ha-jipjuin
+  - item: ko:item:ha-gwallibi
+  - item: ko:item:ha-budongsan
+  - item: ko:item:ha-gyeyakada
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn có thể vào một văn phòng môi giới (부동산), hỏi về tiền cọc, tiền thuê, phí quản lý và nhận xét một căn phòng như "khá rẻ", "cũng ở được".
+  - type: explain
+    text:
+      vi: "Ở Hàn có hai kiểu thuê chính. 월세 giống thuê nhà ở Việt Nam - đặt một khoản cọc (보증금) rồi trả tiền tháng; 전세 thì đóng một khoản cọc rất lớn (thường bằng nửa giá nhà trở lên) và không trả tiền tháng nào."
+  - type: explain
+    text:
+      vi: "-(으)ㄴ/는 편이다 nghĩa là \"thuộc loại…, khá là…\", giúp lời nhận xét mềm và chừng mực hơn. Động từ: -는 편이다 (많이 먹는 편이에요); tính từ: -(으)ㄴ 편이다 (싼 편이에요, 조용한 편이에요)."
+  - type: explain
+    text:
+      vi: "V-(으)ㄹ 만하다 nghĩa là \"đáng để…, cũng… được\": 살 만해요 (ở được), 믿을 만해요 (đáng tin). Chỉ gắn vào động từ; động từ gốc ㄹ như 살다 giữ một ㄹ - 살 만하다."
+  - type: deep_explain
+    text:
+      vi: Với 전세, chủ nhà giữ khoản cọc lớn trong suốt hợp đồng (thường 2 năm) để đầu tư hoặc gửi ngân hàng, rồi trả lại đủ khi bạn chuyển đi; vì vậy người thuê không trả tiền tháng. Sinh viên nước ngoài thường thuê 월세 vì không có sẵn khoản tiền lớn. Dù thuê kiểu nào, bạn vẫn trả 관리비 riêng và nên ký hợp đồng (계약하다) qua 부동산 để được bảo vệ.
+  - type: example
+    target: 보증금 500만 원에 월세 50만 원이에요.
+    target_lang: ko
+    translation:
+      vi: Cọc 5 triệu won, tiền thuê 500 nghìn won mỗi tháng.
+    note:
+      vi: Cách nói giá nhà ở Hàn - "보증금 … 에 월세 …".
+  - type: example
+    target: 이 동네는 학교에서 가까워서 월세가 비싼 편이에요.
+    target_lang: ko
+    translation:
+      vi: Khu này gần trường nên tiền thuê khá đắt.
+    note:
+      vi: 비싸다 là tính từ → 비싼 편이에요.
+  - type: example
+    target: 저는 집을 자주 옮기지 않는 편이에요.
+    target_lang: ko
+    translation:
+      vi: Tôi thuộc kiểu ít khi chuyển chỗ ở.
+    note:
+      vi: Động từ phủ định -지 않다 vẫn chia như động từ → 않는 편이에요.
+  - type: example
+    target: 이 원룸은 좀 오래됐지만 깨끗해서 살 만해요.
+    target_lang: ko
+    translation:
+      vi: Phòng này hơi cũ nhưng sạch nên cũng ở được.
+    note:
+      vi: 살 만해요 là lời đánh giá "đủ tốt", không phải khen hết lời.
+  - type: example
+    target: 다음 달에 회사 근처로 이사해서 지금 부동산에서 계약해요.
+    target_lang: ko
+    translation:
+      vi: Tháng sau tôi chuyển đến gần công ty nên giờ đang ký hợp đồng ở văn phòng môi giới.
+  - type: common_mistake
+    wrong: 매달 50만 원씩 내는 전세에 살아요.
+    right: 매달 50만 원씩 내는 월세에 살아요.
+    target_lang: ko
+    note:
+      vi: Người Việt hay nghĩ 전세 là "thuê nguyên căn" hoặc là "thuê nhà" nói chung. Có tiền tháng thì luôn là 월세; 전세 không có tiền tháng.
+  - type: common_mistake
+    wrong: 이 방은 월세가 싸는 편이에요.
+    right: 이 방은 월세가 싼 편이에요.
+    target_lang: ko
+    note:
+      vi: 싸다 là tính từ nên dùng -(으)ㄴ 편이다. Dạng -는 편이다 chỉ dành cho động từ (자주 먹는 편이에요).
+  - type: common_mistake
+    wrong: 다음 주에 집을 이사해요.
+    right: 다음 주에 이사해요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói "chuyển nhà", nhưng 이사 đã có nghĩa là chuyển chỗ ở, thêm 집을 nghe thừa và sai. Muốn nói nơi đến - 새 집으로 이사해요.
+  - type: summary
+    points:
+      - vi: 월세 = cọc nhỏ + tiền tháng; 전세 = cọc rất lớn, không tiền tháng, hết hợp đồng nhận lại cọc.
+      - vi: 보증금 (tiền cọc) · 관리비 (phí quản lý) · 집주인 (chủ nhà) · 부동산 (môi giới) · 계약하다 (ký hợp đồng).
+      - vi: V-는 편이다 · A-(으)ㄴ 편이다 - thuộc loại…, khá….
+      - vi: V-(으)ㄹ 만하다 - đáng…, cũng… được (살 만하다, 믿을 만하다).
+      - vi: 이사하다 / 이사 가다 - không thêm 집을; nơi đến dùng (으)로.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:housing-search-mcq-jeonse-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ha-jeonse
+    prompt:
+      stem: 전세 là kiểu thuê nhà nào?
+      stem_lang: vi
+      options:
+        - { id: q7r, text: "Đóng một khoản cọc rất lớn, không trả tiền tháng, hết hạn được trả lại cọc.", lang: vi }
+        - { id: m2v, text: "Đặt cọc nhỏ rồi trả tiền thuê đều đặn mỗi tháng.", lang: vi }
+        - { id: d9k, text: "Thuê nguyên căn nhà thay vì thuê một phòng.", lang: vi }
+        - { id: x4p, text: "Trả trước toàn bộ tiền thuê một năm và không được nhận lại.", lang: vi }
+    answer:
+      correct_option_id: q7r
+    explanation:
+      vi: 전세 là đóng một khoản cọc lớn và không có tiền tháng; khi hết hợp đồng chủ nhà trả lại toàn bộ cọc. "Cọc nhỏ + tiền tháng" là 월세; "nguyên căn" không liên quan đến 전세.
+    display_answer: "Đóng một khoản cọc rất lớn, không trả tiền tháng, hết hạn được trả lại cọc."
+
+  - key: ko:exercise:housing-search-listen-price
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ha-bojeunggeum
+    prompt:
+      audio_asset_id: null
+      fallback_text: 보증금 천만 원에 월세 육십만 원이에요. 관리비는 따로 내야 해요.
+      options:
+        - { id: k3s, text: "Cọc 10 triệu won, tiền thuê 600 nghìn won mỗi tháng; phí quản lý trả riêng.", lang: vi }
+        - { id: w8a, text: "Cọc 600 nghìn won, tiền thuê 10 triệu won mỗi tháng; đã gồm phí quản lý.", lang: vi }
+        - { id: b5n, text: "Thuê jeonse 10 triệu won, không có tiền tháng.", lang: vi }
+        - { id: f1h, text: "Cọc 10 triệu won, tiền thuê 600 nghìn won; không cần trả phí quản lý.", lang: vi }
+    answer:
+      correct_option_id: k3s
+    explanation:
+      vi: Mẫu "보증금 …에 월세 …" - số đầu là cọc (천만 원), số sau là tiền tháng (육십만 원). 따로 내야 해요 nghĩa là phí quản lý phải trả riêng.
+    display_answer: "Cọc 10 triệu won, tiền thuê 600 nghìn won mỗi tháng; phí quản lý trả riêng."
+
+  - key: ko:exercise:housing-search-mcq-pyeon-form
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-gram-neun-pyeonida
+    prompt:
+      stem: "Chọn dạng đúng: 이 동네는 밤에 ___ 편이에요."
+      stem_lang: vi
+      options:
+        - { id: t6c, text: 조용한, lang: ko }
+        - { id: r2e, text: 조용하는, lang: ko }
+        - { id: z8m, text: 조용할, lang: ko }
+        - { id: h4u, text: 조용해서, lang: ko }
+    answer:
+      correct_option_id: t6c
+    explanation:
+      vi: 조용하다 là tính từ nên dùng -(으)ㄴ 편이다 → 조용한 편이에요. -는 chỉ gắn với động từ; -(으)ㄹ và -아서 không đứng trước 편이다.
+    display_answer: 조용한
+
+  - key: ko:exercise:housing-search-fill-manhada-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-gram-eul-manhada
+    prompt:
+      template: "이 원룸은 좁지만 깨끗해서 {{b1}} 만해요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Phòng này chật nhưng sạch nên cũng ở được."
+        - "Gợi ý: 살다 + -(으)ㄹ 만하다; 살다 có gốc kết thúc bằng ㄹ."
+    answer:
+      blanks:
+        b1: [살]
+    known_wrong:
+      - answer: 살을
+        feedback_vi: 살다 có gốc ㄹ nên chỉ giữ một ㄹ - 살 만해요, không thêm 을.
+        error_tag: rieul_stem
+      - answer: 사는
+        feedback_vi: 만하다 đi với dạng -(으)ㄹ, không đi với -는.
+        error_tag: adnominal_form
+      - answer: 살아
+        feedback_vi: Trước 만하다 là dạng định ngữ -(으)ㄹ - 살.
+        error_tag: adnominal_form
+    explanation:
+      vi: V-(으)ㄹ 만하다 - động từ gốc ㄹ (살다) chỉ cần giữ nguyên ㄹ → 살 만해요 (ở được).
+    display_answer: 이 원룸은 좁지만 깨끗해서 살 만해요.
+
+  - key: ko:exercise:housing-search-wb-contract
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ha-gyeyakada
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tuần trước tôi đã ký hợp đồng với chủ nhà.\""
+      tokens:
+        - { id: p4, text: 계약했어요 }
+        - { id: p5, text: 집주인을 }
+        - { id: p1, text: 지난주에 }
+        - { id: p2, text: 저는 }
+        - { id: p3, text: 집주인과 }
+    answer:
+      orders:
+        - [p2, p1, p3, p4]
+        - [p1, p2, p3, p4]
+    explanation:
+      vi: '"Ký hợp đồng với ai" là N과/와 계약하다 - 집주인과, không phải 집주인을. Động từ đứng cuối; 저는 và 지난주에 có thể đổi chỗ.'
+    display_answer: 저는 지난주에 집주인과 계약했어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:housing-search-translate-moving
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ha-isahada
+    prompt:
+      source_text: Tháng sau tôi chuyển nhà.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 다음 달에 이사해요.
+        - 저는 다음 달에 이사해요.
+        - 전 다음 달에 이사해요.
+        - 다음 달에 이사 가요.
+        - 저는 다음 달에 이사 가요.
+        - 다음 달에 이사할 거예요.
+        - 저는 다음 달에 이사할 거예요.
+        - 다음 달에 이사 갈 거예요.
+        - 저는 다음 달에 이사 갈 거예요.
+        - 전 다음 달에 이사할 거예요.
+    known_wrong:
+      - answer: 다음 달에 집을 이사해요.
+        feedback_vi: 이사 đã có nghĩa "chuyển chỗ ở", không thêm 집을.
+        error_tag: isa_object
+      - answer: daeum dare isahaeyo
+        feedback_vi: Hãy viết bằng Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+      - answer: 지난달에 이사했어요.
+        feedback_vi: Câu gốc là "tháng sau" (다음 달), không phải "tháng trước".
+        error_tag: tense_time
+    explanation:
+      vi: Chuyển nhà = 이사하다 hoặc 이사 가다; "tháng sau" là 다음 달에. Có thể dùng hiện tại 이사해요 hoặc tương lai 이사할 거예요.
+    display_answer: 저는 다음 달에 이사해요.
+
+  - key: ko:exercise:housing-search-fill-gwallibi
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-gwallibi
+    prompt:
+      template: "(Chung cư này phí quản lý thuộc loại đắt.) 이 아파트는 {{b1}}가 비싼 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [관리비]
+        b2: [편이에요]
+    known_wrong:
+      - answer: 월세
+        feedback_vi: 월세 là tiền thuê hằng tháng; "phí quản lý" là 관리비.
+        error_tag: wolse_gwallibi
+      - answer: 편해요
+        feedback_vi: 편해요 là "thoải mái, tiện". "Thuộc loại…" là 편이에요.
+        error_tag: pyeon_pyeonhada
+      - answer: 편있어요
+        feedback_vi: 편 là danh từ, đi với 이다 - 편이에요.
+        error_tag: copula_form
+    explanation:
+      vi: Phí quản lý là 관리비. 비싸다 là tính từ → 비싼 편이에요 (thuộc loại đắt).
+    display_answer: 이 아파트는 관리비가 비싼 편이에요.
+
+  - key: ko:exercise:housing-search-translate-livable
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-gram-eul-manhada
+    prompt:
+      source_text: Phòng này hơi chật nhưng cũng ở được.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이 방은 좀 좁지만 살 만해요.
+        - 이 방은 조금 좁지만 살 만해요.
+        - 이 방은 좁지만 살 만해요.
+        - 이 방은 좀 좁은 편이지만 살 만해요.
+        - 이 방은 좀 작지만 살 만해요.
+        - 이 방은 조금 작지만 살 만해요.
+        - 이 방이 좀 좁지만 살 만해요.
+        - 방이 좀 좁지만 살 만해요.
+    known_wrong:
+      - answer: 이 방은 좀 좁지만 살을 만해요.
+        feedback_vi: 살다 có gốc ㄹ - viết 살 만해요, không thêm 을.
+        error_tag: rieul_stem
+      - answer: 이 방은 좀 좁아서 살 만해요.
+        feedback_vi: -아서 nghĩa là "vì"; câu gốc là "nhưng" - dùng -지만.
+        error_tag: connector_meaning
+      - answer: 이 방은 좀 좁지만 사는 만해요.
+        feedback_vi: 만하다 đi với dạng -(으)ㄹ - 살 만해요.
+        error_tag: adnominal_form
+    explanation:
+      vi: '"Nhưng" là -지만; "cũng ở được" là 살 만해요 (살다 + -(으)ㄹ 만하다, giữ một ㄹ).'
+    display_answer: 이 방은 좀 좁지만 살 만해요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:housing-search-mcq-choose-wolse
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-wolse
+    prompt:
+      stem: "Bạn là du học sinh, không có nhiều tiền tiết kiệm và muốn trả tiền thuê hằng tháng. Bạn nói với nhân viên 부동산 câu nào?"
+      stem_lang: vi
+      options:
+        - { id: c5j, text: 보증금이 적은 월세 방을 찾고 있어요., lang: ko }
+        - { id: n9w, text: 보증금이 적은 전세 방을 찾고 있어요., lang: ko }
+        - { id: y3f, text: 월세가 없는 전세 방을 찾고 있어요., lang: ko }
+        - { id: e7l, text: 보증금이 많은 전세 방을 찾고 있어요., lang: ko }
+    answer:
+      correct_option_id: c5j
+    explanation:
+      vi: Ít tiền cọc và trả tiền tháng là 월세. 전세 luôn cần một khoản cọc rất lớn, nên "전세 cọc ít" là mâu thuẫn và hai lựa chọn 전세 còn lại không hợp túi tiền của bạn.
+    display_answer: 보증금이 적은 월세 방을 찾고 있어요.
+
+  - key: ko:exercise:housing-search-mcq-reading-agent
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-gram-neun-pyeonida
+    prompt:
+      stem: "다음 대화를 읽고 맞는 것을 고르십시오.\n직원: 이 원룸은 보증금 500만 원에 월세 45만 원이에요. 관리비는 5만 원이고요.\n손님: 역에서 가까워요?\n직원: 걸어서 5분이라서 가까운 편이에요. 좀 오래됐지만 깨끗해서 살 만해요."
+      stem_lang: ko
+      options:
+        - { id: g6t, text: 이 방은 한 달에 월세 45만 원을 내야 해요., lang: ko }
+        - { id: s2b, text: 이 방은 전세라서 월세가 없어요., lang: ko }
+        - { id: v8z, text: 보증금은 45만 원이에요., lang: ko }
+        - { id: o1q, text: 역에서 멀어서 버스를 타야 해요., lang: ko }
+    answer:
+      correct_option_id: g6t
+    explanation:
+      vi: Theo mẫu "보증금 500만 원에 월세 45만 원", tiền tháng là 45만 원 và cọc là 500만 원. Có tiền tháng nên đây là 월세, không phải 전세; 걸어서 5분 nghĩa là gần ga.
+    display_answer: 이 방은 한 달에 월세 45만 원을 내야 해요.
+
+  - key: ko:exercise:housing-search-translate-jeonse-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ha-jeonse
+    prompt:
+      source_text: 전세는 월세를 안 내지만 보증금이 아주 비싸요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thuê jeonse thì không phải trả tiền thuê hằng tháng nhưng tiền cọc rất đắt.
+        - Thuê jeonse không phải trả tiền thuê hằng tháng nhưng tiền cọc rất đắt.
+        - Thuê jeonse thì không trả tiền tháng nhưng tiền cọc rất đắt.
+        - Jeonse thì không phải trả tiền thuê hằng tháng nhưng tiền cọc rất đắt.
+        - Jeonse không phải trả tiền tháng nhưng tiền cọc rất đắt.
+        - Jeonse không trả tiền thuê hàng tháng nhưng tiền đặt cọc rất đắt.
+        - Thuê jeonse thì không phải trả tiền thuê hàng tháng nhưng tiền đặt cọc rất cao.
+        - Thuê jeonse không phải trả tiền thuê hàng tháng nhưng tiền cọc rất cao.
+        - Jeonse thì không phải trả tiền tháng nhưng tiền cọc rất cao.
+        - Thuê jeonse thì không mất tiền thuê hằng tháng nhưng tiền cọc rất đắt.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thuê jeonse thì phải trả tiền thuê hằng tháng và tiền cọc rất đắt.
+        feedback_vi: 월세를 안 내지만 nghĩa là "không trả tiền tháng".
+        error_tag: negation_missed
+      - answer: Thuê jeonse thì không phải trả tiền cọc nhưng tiền thuê hằng tháng rất đắt.
+        feedback_vi: Ngược rồi - không có tiền tháng (월세), còn tiền cọc (보증금) rất đắt.
+        error_tag: wolse_bojeunggeum
+    explanation:
+      vi: 월세를 안 내다 = không trả tiền thuê hằng tháng; 보증금 = tiền cọc; -지만 = nhưng. Đây chính là đặc điểm của 전세.
+    display_answer: Thuê jeonse thì không phải trả tiền thuê hằng tháng nhưng tiền cọc rất đắt.
+
+  - key: ko:exercise:housing-search-translate-trust-agency
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-budongsan
+    prompt:
+      source_text: Văn phòng môi giới đó đáng tin.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 그 부동산은 믿을 만해요.
+        - 그 부동산이 믿을 만해요.
+        - 저 부동산은 믿을 만해요.
+        - 그 부동산은 믿을 만한 곳이에요.
+        - 저 부동산은 믿을 만한 곳이에요.
+        - 그 부동산 사무소는 믿을 만해요.
+    known_wrong:
+      - answer: 그 부동산은 믿는 만해요.
+        feedback_vi: 만하다 đi với dạng -(으)ㄹ - 믿을 만해요.
+        error_tag: adnominal_form
+      - answer: 그 부동산은 믿을 만이에요.
+        feedback_vi: 만하다 là một động từ - 믿을 만해요, không dùng 이에요.
+        error_tag: manhada_form
+      - answer: 그 부동산은 믿어요.
+        feedback_vi: 믿어요 là "tôi tin"; "đáng tin" cần -(으)ㄹ 만하다 - 믿을 만해요.
+        error_tag: manhada_missing
+    explanation:
+      vi: 부동산 trong khẩu ngữ là văn phòng môi giới. "Đáng tin" = 믿다 + -(으)ㄹ 만하다 → 믿을 만해요.
+    display_answer: 그 부동산은 믿을 만해요.

@@ -1,0 +1,446 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:free-time-activities
+order_index: 1
+level: a1
+title:
+  vi: Bạn làm gì lúc rảnh? - Sở thích
+objectives:
+  - vi: Gọi tên các hoạt động lúc rảnh - chơi ghi-ta, đi mua sắm, đi xem phim, đi dạo, đạp xe, nhảy, hát, vẽ.
+  - vi: Hỏi và trả lời What do you do in your free time? và What do you like doing?
+  - vi: Nói mức độ thích bằng love / like / don't like / hate + -ing, không nói I like play.
+estimated_minutes: 10
+skills: [vocabulary, speaking, grammar]
+prerequisites: [en:lesson:places-directions-review]
+items:
+  - item: en:item:free-time
+  - item: en:item:hobby
+  - item: en:item:what-do-you-do-in-your-free-time
+  - item: en:item:what-do-you-like-doing
+  - item: en:item:play-the-guitar
+  - item: en:item:go-shopping
+  - item: en:item:go-to-the-cinema
+  - item: en:item:go-for-a-walk
+  - item: en:item:ride-a-bike
+  - item: en:item:dance
+  - item: en:item:sing
+  - item: en:item:draw
+  - item: en:item:hate
+  - item: en:item:like-ing
+    role: reuse
+  - item: en:item:like
+    role: reuse
+  - item: en:item:love
+    role: reuse
+  - item: en:item:listen-to-music
+    role: reuse
+  - item: en:item:read
+    role: reuse
+  - item: en:item:watch-tv
+    role: reuse
+  - item: en:item:play-football
+    role: reuse
+  - item: en:item:weekend
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được mình hay làm gì lúc rảnh và thích, ghét hoạt động nào - ví dụ "Lúc rảnh mình chơi ghi-ta, mình ghét đi mua sắm".
+  - type: explain
+    text:
+      vi: Để hỏi về sở thích, người Anh hay dùng What do you do in your free time? (lúc rảnh bạn làm gì?) hoặc What do you like doing? (bạn thích làm gì?). Trả lời bằng thì hiện tại đơn - I play the guitar, I go for a walk.
+  - type: explain
+    text:
+      vi: Hoạt động lúc rảnh thường đi theo cụm cố định - play the guitar (nhạc cụ có the), play football (thể thao không có the), go shopping (go + -ing, không có to), go to the cinema (nơi chốn có to the), go for a walk. Hãy học cả cụm thay vì dịch từng chữ "chơi", "đi".
+  - type: explain
+    text:
+      vi: "Thang mức độ: love (mê) > like (thích) > don't like (không thích) > hate (ghét). Sau cả bốn từ này, hoạt động dùng dạng -ing - I love dancing, I hate shopping. Tiếng Việt nói \"thích hát\" không đổi gì, nên người Việt hay quên -ing."
+  - type: deep_explain
+    text:
+      vi: Khi thêm -ing, động từ tận cùng bằng e câm bỏ e (dance → dancing, ride → riding); động từ ngắn kết thúc bằng một nguyên âm + một phụ âm thì gấp đôi phụ âm (swim → swimming, shop → shopping). Ngoài like + -ing, người Anh cũng nói I like to dance, nhưng ở trình độ này bạn cứ dùng -ing cho chắc. Muốn hỏi người khác thích làm gì cụ thể, dùng Do you like + -ing? - Do you like singing? - Yes, I do / No, I don't.
+  - type: example
+    target: What do you do in your free time? - I play the guitar and I read books.
+    target_lang: en
+    translation:
+      vi: Lúc rảnh bạn làm gì? - Mình chơi ghi-ta và đọc sách.
+    note:
+      vi: Câu hỏi có hai chữ do - chữ đầu để hỏi, chữ sau là "làm". Nhạc cụ đi với the.
+  - type: example
+    target: What do you like doing at the weekend? - I love going to the cinema.
+    target_lang: en
+    translation:
+      vi: Cuối tuần bạn thích làm gì? - Mình mê đi xem phim.
+    note:
+      vi: Trả lời đúng khuôn của câu hỏi - like doing → love going.
+  - type: example
+    target: My brother likes riding his bike, but he hates going shopping.
+    target_lang: en
+    translation:
+      vi: Em trai mình thích đạp xe, nhưng ghét đi mua sắm.
+    note:
+      vi: He nên likes, hates có -s; ride bỏ e thành riding.
+  - type: example
+    target: We often go for a walk in the park after dinner.
+    target_lang: en
+    translation:
+      vi: Sau bữa tối bọn mình hay đi dạo trong công viên.
+    note:
+      vi: Đi dạo là go for a walk; often đứng trước động từ thường.
+  - type: common_mistake
+    wrong: I like play football.
+    right: I like playing football.
+    target_lang: en
+    note:
+      vi: Sau like, love, hate, động từ phải thêm -ing. Tiếng Việt "thích chơi" không đổi dạng, nhưng tiếng Anh thì có.
+  - type: common_mistake
+    wrong: I go to shopping on Sundays.
+    right: I go shopping on Sundays.
+    target_lang: en
+    note:
+      vi: Go + hoạt động -ing không có to - go shopping, go swimming. Chỉ nơi chốn mới có to - go to the cinema.
+  - type: common_mistake
+    wrong: She plays guitar and plays the football.
+    right: She plays the guitar and plays football.
+    target_lang: en
+    note:
+      vi: Nhạc cụ có the (the guitar, the piano); môn thể thao thì không (football, tennis).
+  - type: summary
+    points:
+      - vi: Hỏi sở thích - What do you do in your free time? / What do you like doing?
+      - vi: love > like > don't like > hate + V-ing - I hate shopping.
+      - vi: play the + nhạc cụ; play + thể thao (không the).
+      - vi: go shopping, go swimming (không to); go to the cinema (có to the); go for a walk.
+      - vi: Thêm -ing - dance → dancing, ride → riding, shop → shopping.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:free-time-activities-mcq-guitar
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:play-the-guitar
+    prompt:
+      stem: "\"Chơi đàn ghi-ta\" trong tiếng Anh là gì?"
+      stem_lang: vi
+      options:
+        - { id: k3q, text: play the guitar, lang: en }
+        - { id: w8m, text: go the guitar, lang: en }
+        - { id: d1x, text: do the guitar, lang: en }
+        - { id: p6j, text: make the guitar, lang: en }
+    answer:
+      correct_option_id: k3q
+    explanation:
+      vi: Chơi nhạc cụ luôn dùng play + the - play the guitar, play the piano. Go, do, make không đi với nhạc cụ.
+    display_answer: play the guitar
+
+  - key: en:exercise:free-time-activities-listen-cinema
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:what-do-you-do-in-your-free-time
+    prompt:
+      audio_asset_id: null
+      fallback_text: What do you do in your free time? - I go to the cinema.
+      options:
+        - { id: r5t, text: "Lúc rảnh bạn làm gì? - Mình đi xem phim.", lang: vi }
+        - { id: h2n, text: "Lúc rảnh bạn làm gì? - Mình đi mua sắm.", lang: vi }
+        - { id: z7c, text: "Bạn làm nghề gì? - Mình làm ở rạp phim.", lang: vi }
+        - { id: b4u, text: "Bạn thích làm gì? - Mình thích xem ti vi.", lang: vi }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: In your free time là "lúc rảnh", go to the cinema là "đi xem phim ở rạp". Hỏi nghề nghiệp là What do you do? không có in your free time, còn đi mua sắm là go shopping.
+    display_answer: "Lúc rảnh bạn làm gì? - Mình đi xem phim."
+
+  - key: en:exercise:free-time-activities-mcq-like-listening
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:like-ing
+    prompt:
+      stem: "Chọn từ đúng: I like ___ to music."
+      stem_lang: vi
+      options:
+        - { id: f9a, text: listening, lang: en }
+        - { id: m2e, text: listen, lang: en }
+        - { id: s6v, text: listens, lang: en }
+        - { id: y3o, text: listened, lang: en }
+    answer:
+      correct_option_id: f9a
+    explanation:
+      vi: Sau like, hoạt động dùng dạng -ing - I like listening to music. Listen nguyên mẫu, listens hay listened đều không đứng ngay sau like.
+    display_answer: listening
+
+  - key: en:exercise:free-time-activities-fill-go-shopping-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:go-shopping
+    prompt:
+      template: "We {{b1}} shopping on Saturdays, and we {{b2}} to the cinema on Sundays."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Thứ Bảy bọn mình đi mua sắm, Chủ nhật bọn mình đi xem phim."
+        - "Gợi ý: cả hai chỗ trống đều là động từ \"đi\"."
+    answer:
+      blanks:
+        b1: [go]
+        b2: [go]
+    known_wrong:
+      - answer: go to
+        feedback_vi: Go shopping không có to. To chỉ dùng trước nơi chốn - go to the cinema.
+        error_tag: go_to_ing
+      - answer: play
+        feedback_vi: Mua sắm và xem phim dùng go, không dùng play.
+        error_tag: collocation
+      - answer: goes
+        feedback_vi: Chủ ngữ là we nên dùng go, không thêm -es.
+        error_tag: third_person_s
+    explanation:
+      vi: Go shopping là cụm cố định, không có to. Ở vế sau, the cinema là nơi chốn nên đã có to đứng sau chỗ trống - go to the cinema.
+    display_answer: We go shopping on Saturdays, and we go to the cinema on Sundays.
+
+  - key: en:exercise:free-time-activities-order-question
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:what-do-you-do-in-your-free-time
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: \"Lúc rảnh bạn làm gì?\""
+      tokens:
+        - { id: w-time, text: time }
+        - { id: w-do1, text: do }
+        - { id: w-what, text: What }
+        - { id: w-your, text: your }
+        - { id: w-on, text: on }
+        - { id: w-do2, text: do }
+        - { id: w-in, text: in }
+        - { id: w-you, text: you }
+        - { id: w-free, text: free }
+        - { id: w-does, text: does }
+    answer:
+      orders:
+        - [w-what, w-do1, w-you, w-do2, w-in, w-your, w-free, w-time]
+        - [w-what, w-do2, w-you, w-do1, w-in, w-your, w-free, w-time]
+    explanation:
+      vi: Câu hỏi What + do + you + do (làm) + in your free time. Chủ ngữ là you nên dùng do, không dùng does; "lúc rảnh" đi với in, không phải on.
+    display_answer: What do you do in your free time?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:free-time-activities-fill-love-hate
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:hate
+    prompt:
+      template: "I love {{b1}} (dance), but my brother hates {{b2}} (sing)."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [dancing]
+        b2: [singing]
+    known_wrong:
+      - answer: dance
+        feedback_vi: Sau love dùng dạng -ing - dancing.
+        error_tag: like_plus_ing
+      - answer: sing
+        feedback_vi: Sau hate dùng dạng -ing - singing.
+        error_tag: like_plus_ing
+      - answer: danceing
+        feedback_vi: Dance tận cùng bằng e câm, bỏ e rồi thêm -ing - dancing.
+        error_tag: ing_spelling
+      - answer: sings
+        feedback_vi: Hates đã chia theo he rồi; động từ sau nó dùng dạng -ing - singing.
+        error_tag: like_plus_ing
+    explanation:
+      vi: Love và hate cũng như like, theo sau là hoạt động dạng -ing. Dance bỏ e câm thành dancing; sing chỉ thêm -ing.
+    display_answer: I love dancing, but my brother hates singing.
+
+  - key: en:exercise:free-time-activities-translate-guitar
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:play-the-guitar
+    prompt:
+      source_text: Lúc rảnh mình chơi đàn ghi-ta.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I play the guitar in my free time.
+        - In my free time, I play the guitar.
+        - In my free time I play the guitar.
+        - I play guitar in my free time.
+        - In my free time, I play guitar.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I play the guitar in free time.
+        feedback_vi: Cần my trước free time - in my free time.
+        error_tag: missing_possessive
+      - answer: I play the guitar in my time free.
+        feedback_vi: Free đứng trước time - free time.
+        error_tag: word_order
+      - answer: I play the guitar on my free time.
+        feedback_vi: Lúc rảnh dùng in - in my free time.
+        error_tag: preposition
+      - answer: I go the guitar in my free time.
+        feedback_vi: Chơi nhạc cụ dùng play, không dùng go.
+        error_tag: collocation
+    explanation:
+      vi: Chơi nhạc cụ là play the guitar; "lúc rảnh" là in my free time, đặt ở cuối hoặc đầu câu đều được.
+    display_answer: I play the guitar in my free time.
+
+  - key: en:exercise:free-time-activities-translate-cinema
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:go-to-the-cinema
+    prompt:
+      source_text: Mình thích đi xem phim ở rạp.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I like going to the cinema.
+        - I like going to the movies.
+        - I like to go to the cinema.
+        - I like to go to the movies.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I like go to the cinema.
+        feedback_vi: Sau like động từ phải thêm -ing - I like going to the cinema.
+        error_tag: like_plus_ing
+      - answer: I like going to cinema.
+        feedback_vi: Cần the trước cinema - go to the cinema.
+        error_tag: article
+      - answer: I like going cinema.
+        feedback_vi: Cinema là nơi chốn nên cần to the - going to the cinema.
+        error_tag: missing_preposition
+      - answer: I like watching film.
+        feedback_vi: Film đếm được, cần a hoặc số nhiều; và câu gốc nói đi xem ở rạp - going to the cinema.
+        error_tag: article
+    explanation:
+      vi: Đi xem phim ở rạp là go to the cinema; sau like đổi go thành going. Người Mỹ nói go to the movies.
+    display_answer: I like going to the cinema.
+
+  # ---------------- application ----------------
+  - key: en:exercise:free-time-activities-translate-weekend-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:what-do-you-like-doing
+    prompt:
+      source_text: What do you like doing at the weekend?
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cuối tuần bạn thích làm gì?
+        - Bạn thích làm gì vào cuối tuần?
+        - Vào cuối tuần bạn thích làm gì?
+        - Cuối tuần cậu thích làm gì?
+        - Cuối tuần bạn thích làm gì vậy?
+        - Bạn thích làm gì vào dịp cuối tuần?
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: What do you like doing = "bạn thích làm gì", at the weekend = "vào cuối tuần". Tiếng Việt tự nhiên thường đưa "cuối tuần" lên đầu câu.
+    display_answer: Cuối tuần bạn thích làm gì?
+
+  - key: en:exercise:free-time-activities-mcq-answer-riding
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:ride-a-bike
+    prompt:
+      stem: "Một người bạn mới hỏi bạn: \"What do you like doing?\" Bạn thích đạp xe. Câu trả lời nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: c8g, text: I like riding my bike., lang: en }
+        - { id: n4k, text: I like ride my bike., lang: en }
+        - { id: t1w, text: I'm like riding my bike., lang: en }
+        - { id: e5r, text: I like rideing my bike., lang: en }
+    answer:
+      correct_option_id: c8g
+    explanation:
+      vi: Like + -ing, và ride bỏ e thành riding. I like ride thiếu -ing; I'm like thừa be; rideing sai chính tả.
+    display_answer: I like riding my bike.
+
+  - key: en:exercise:free-time-activities-translate-hates-shopping
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:hate
+    prompt:
+      source_text: Anh ấy ghét đi mua sắm, nhưng anh ấy mê vẽ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - He hates going shopping, but he loves drawing.
+        - He hates shopping, but he loves drawing.
+        - He hates going shopping but he loves drawing.
+        - He hates going shopping, but he really loves drawing.
+        - He hates to go shopping, but he loves drawing.
+        - He hates going shopping, but he loves to draw.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: He hates go shopping, but he loves draw.
+        feedback_vi: Sau hate, love dùng dạng -ing - going shopping, drawing.
+        error_tag: like_plus_ing
+      - answer: He hate going shopping, but he love drawing.
+        feedback_vi: Chủ ngữ he nên động từ thêm -s - hates, loves.
+        error_tag: third_person_s
+      - answer: He hates going to shopping, but he loves drawing.
+        feedback_vi: Go shopping không có to.
+        error_tag: go_to_ing
+    explanation:
+      vi: Hate và love + -ing; với he thêm -s - hates, loves. Đi mua sắm là go shopping, không có to.
+    display_answer: He hates going shopping, but he loves drawing.
+
+  - key: en:exercise:free-time-activities-order-walk
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:go-for-a-walk
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Bọn mình hay đi dạo trong công viên.\""
+      tokens:
+        - { id: x-walk, text: walk }
+        - { id: x-the, text: the }
+        - { id: x-we, text: We }
+        - { id: x-for, text: for }
+        - { id: x-park, text: park }
+        - { id: x-often, text: often }
+        - { id: x-a, text: a }
+        - { id: x-in, text: in }
+        - { id: x-go, text: go }
+        - { id: x-to, text: to }
+    answer:
+      orders:
+        - [x-we, x-often, x-go, x-for, x-a, x-walk, x-in, x-the, x-park]
+    explanation:
+      vi: Often đứng trước động từ go; đi dạo là go for a walk (không có to); "trong công viên" là in the park.
+    display_answer: We often go for a walk in the park.

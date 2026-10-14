@@ -1,0 +1,428 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:colours-and-things
+order_index: 3
+level: a1
+title:
+  vi: Màu sắc và mô tả đồ vật - a red bag
+objectives:
+  - vi: Gọi tên các màu cơ bản và màu đậm, nhạt (dark blue, light green).
+  - vi: Đặt màu trước danh từ - a red bag, không nói a bag red.
+  - vi: Hỏi What colour is it? và nói My favourite colour is…
+estimated_minutes: 10
+skills: [vocabulary, grammar, speaking]
+prerequisites: [en:lesson:lets-and-want-to]
+items:
+  - item: en:item:colour
+  - item: en:item:what-colour-is-it
+  - item: en:item:red
+  - item: en:item:blue
+  - item: en:item:green
+  - item: en:item:yellow
+  - item: en:item:black-white
+  - item: en:item:orange-pink-purple
+  - item: en:item:brown-grey
+  - item: en:item:light-dark
+  - item: en:item:favourite
+  - item: en:item:bag
+  - item: en:item:adjective-before-noun
+    role: reuse
+  - item: en:item:a-an
+    role: reuse
+  - item: en:item:have-got
+    role: reuse
+  - item: en:item:shirt
+    role: reuse
+  - item: en:item:shoes
+    role: reuse
+  - item: en:item:dress
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mô tả được màu của đồ vật quanh mình (a black bag, a light blue shirt) và nói mình thích màu gì nhất.
+  - type: explain
+    text:
+      vi: Màu sắc là tính từ, nên đứng trước danh từ - a red bag, white shoes. Tiếng Việt nói "túi đỏ", "giày trắng" (màu đứng sau), nên người Việt rất hay nói ngược thành a bag red.
+  - type: explain
+    text:
+      vi: Muốn nói màu đậm hay nhạt, đặt dark (đậm) hoặc light (nhạt) trước tên màu - dark blue, light green. Thứ tự là a + dark/light + màu + danh từ - a dark blue dress.
+  - type: explain
+    text:
+      vi: Hỏi màu dùng What colour is…? (số ít) hoặc What colour are…? (số nhiều) - What colour are your shoes? Màu mình thích nhất là My favourite colour is…, favourite đứng trước colour.
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt "xanh" có thể là blue (xanh dương, xanh da trời) hoặc green (xanh lá), nên hãy nghĩ đến màu thật trước khi dịch. Khi màu đứng sau be thì không cần a - The bag is red, không nói The bag is a red. Anh viết colour, favourite, grey; Mỹ viết color, favorite, gray - chọn một kiểu và giữ thống nhất.
+  - type: example
+    target: What colour is your bag? - It's black.
+    target_lang: en
+    translation:
+      vi: Túi của bạn màu gì? - Màu đen.
+    note:
+      vi: Trả lời cần It's; không cần a trước màu khi màu đứng một mình.
+  - type: example
+    target: She's got a dark blue dress and white shoes.
+    target_lang: en
+    translation:
+      vi: Cô ấy có một chiếc váy xanh đậm và đôi giày trắng.
+    note:
+      vi: Dark đứng trước blue, cả cụm đứng trước dress. Shoes số nhiều nên không có a.
+  - type: example
+    target: My favourite colour is green. What's yours?
+    target_lang: en
+    translation:
+      vi: Màu mình thích nhất là xanh lá. Còn bạn?
+    note:
+      vi: Favourite đứng trước colour; What's yours? để hỏi lại.
+  - type: example
+    target: The bananas are yellow, and the oranges are orange.
+    target_lang: en
+    translation:
+      vi: Chuối màu vàng, còn cam thì màu cam.
+    note:
+      vi: Orange vừa là quả cam vừa là màu cam. Sau are không cần a.
+  - type: common_mistake
+    wrong: I've got a bag red.
+    right: I've got a red bag.
+    target_lang: en
+    note:
+      vi: Màu đứng trước danh từ, ngược với tiếng Việt "túi đỏ".
+  - type: common_mistake
+    wrong: My colour favourite is blue.
+    right: My favourite colour is blue.
+    target_lang: en
+    note:
+      vi: Favourite cũng là tính từ nên đứng trước colour.
+  - type: common_mistake
+    wrong: He's got a blue light shirt.
+    right: He's got a light blue shirt.
+    target_lang: en
+    note:
+      vi: Light/dark đứng trước màu, không đứng sau như "xanh nhạt" trong tiếng Việt.
+  - type: summary
+    points:
+      - vi: Màu đứng trước danh từ - a red bag, black shoes.
+      - vi: Đậm/nhạt - dark/light + màu - a dark green shirt.
+      - vi: Hỏi màu - What colour is it? / What colour are they?
+      - vi: My favourite colour is… - favourite đứng trước colour.
+      - vi: Xanh dương là blue, xanh lá là green.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:colours-and-things-mcq-yellow
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:yellow
+    prompt:
+      stem: "\"Màu vàng\" trong tiếng Anh là gì?"
+      stem_lang: vi
+      options:
+        - { id: e2v, text: yellow, lang: en }
+        - { id: k7a, text: green, lang: en }
+        - { id: m4r, text: brown, lang: en }
+        - { id: t9s, text: orange, lang: en }
+    answer:
+      correct_option_id: e2v
+    explanation:
+      vi: Yellow là màu vàng. Green là xanh lá, brown là nâu, orange là cam.
+    display_answer: yellow
+
+  - key: en:exercise:colours-and-things-listen-favourite
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:favourite
+    prompt:
+      audio_asset_id: null
+      fallback_text: My favourite colour is green.
+      options:
+        - { id: p5n, text: Màu mình thích nhất là màu xanh lá., lang: vi }
+        - { id: w1j, text: Màu mình thích nhất là màu xanh dương., lang: vi }
+        - { id: b6g, text: Mình không thích màu xanh lá., lang: vi }
+        - { id: f3x, text: Túi của mình màu xanh lá., lang: vi }
+    answer:
+      correct_option_id: p5n
+    explanation:
+      vi: My favourite colour là "màu mình thích nhất"; green là xanh lá cây, còn xanh dương là blue.
+    display_answer: Màu mình thích nhất là màu xanh lá.
+
+  - key: en:exercise:colours-and-things-mcq-red-bag
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:red
+    prompt:
+      stem: "Cụm nào đúng nghĩa \"một cái túi đỏ\"?"
+      stem_lang: vi
+      options:
+        - { id: h8c, text: a red bag, lang: en }
+        - { id: u2w, text: a bag red, lang: en }
+        - { id: z5o, text: red a bag, lang: en }
+        - { id: g1y, text: a reds bag, lang: en }
+    answer:
+      correct_option_id: h8c
+    explanation:
+      vi: Màu là tính từ, đứng sau a và trước danh từ - a red bag. Tính từ không bao giờ thêm -s.
+    display_answer: a red bag
+
+  - key: en:exercise:colours-and-things-fill-what-colour-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:what-colour-is-it
+    prompt:
+      template: "What {{b1}} is your bag? - It's {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Túi của bạn màu gì? - Màu đen."
+        - "Gợi ý: chỗ 1 là \"màu\", chỗ 2 là \"đen\"."
+    answer:
+      blanks:
+        b1: [colour, color]
+        b2: [black]
+    known_wrong:
+      - answer: a black
+        feedback_vi: Màu đứng một mình sau It's thì không cần a - It's black.
+        error_tag: article
+      - answer: white
+        feedback_vi: White là màu trắng; màu đen là black.
+        error_tag: vocabulary
+      - answer: colours
+        feedback_vi: Hỏi màu của một cái túi dùng colour, không thêm -s.
+        error_tag: plural_noun
+    explanation:
+      vi: Hỏi màu là What colour is…? (Mỹ viết color). Trả lời It's + màu, không cần a.
+    display_answer: What colour is your bag? - It's black.
+
+  - key: en:exercise:colours-and-things-order-dark-blue
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:light-dark
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cô ấy có một chiếc váy màu xanh đậm.\""
+      tokens:
+        - { id: d-dress, text: dress }
+        - { id: d-a, text: a }
+        - { id: d-blue, text: blue }
+        - { id: d-shes, text: "She's" }
+        - { id: d-the, text: the }
+        - { id: d-dark, text: dark }
+        - { id: d-got, text: got }
+    answer:
+      orders:
+        - [d-shes, d-got, d-a, d-dark, d-blue, d-dress]
+    explanation:
+      vi: "She's got = cô ấy có. Thứ tự cụm danh từ: a + dark + blue + dress - đậm/nhạt trước màu, màu trước danh từ."
+    display_answer: She's got a dark blue dress.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:colours-and-things-fill-favourite-pink
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:orange-pink-purple
+    prompt:
+      template: "My {{b1}} (thích nhất) colour is purple, but I've got a {{b2}} (hồng) bag."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [favourite, favorite]
+        b2: [pink]
+    known_wrong:
+      - answer: most favourite
+        feedback_vi: Favourite đã có nghĩa là "thích nhất", không thêm most.
+        error_tag: favourite_most
+      - answer: like
+        feedback_vi: Chỗ này cần tính từ đứng trước colour - favourite.
+        error_tag: word_form
+      - answer: purple
+        feedback_vi: Hồng là pink; purple là tím.
+        error_tag: vocabulary
+      - answer: pinks
+        feedback_vi: Màu là tính từ, không thêm -s.
+        error_tag: adjective_plural
+    explanation:
+      vi: My favourite colour = màu mình thích nhất. Pink (hồng) đứng trước bag - a pink bag.
+    display_answer: My favourite colour is purple, but I've got a pink bag.
+
+  - key: en:exercise:colours-and-things-translate-favourite-green
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:favourite
+    prompt:
+      source_text: Màu mình thích nhất là màu xanh lá cây.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My favourite colour is green.
+        - My favorite color is green.
+        - My favourite color is green.
+        - My favorite colour is green.
+        - Green is my favourite colour.
+        - Green is my favorite color.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My colour favourite is green.
+        feedback_vi: Favourite đứng trước colour - my favourite colour.
+        error_tag: adjective_order
+      - answer: My favourite colour is blue.
+        feedback_vi: Xanh lá cây là green; blue là xanh dương.
+        error_tag: vocabulary
+      - answer: My most favourite colour is green.
+        feedback_vi: Favourite đã là "thích nhất", không thêm most.
+        error_tag: favourite_most
+      - answer: Favourite colour is green.
+        feedback_vi: Cần my trước favourite colour.
+        error_tag: missing_possessive
+    explanation:
+      vi: "\"Màu mình thích nhất\" = my favourite colour; xanh lá là green. Có thể đảo - Green is my favourite colour."
+    display_answer: My favourite colour is green.
+
+  - key: en:exercise:colours-and-things-translate-red-bag
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:bag
+    prompt:
+      source_text: Mình có một cái túi màu đỏ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I've got a red bag.
+        - I have got a red bag.
+        - I have a red bag.
+    known_wrong:
+      - answer: I have a bag red.
+        feedback_vi: Màu đứng trước danh từ - a red bag.
+        error_tag: adjective_order
+      - answer: I've got a bag red.
+        feedback_vi: Màu đứng trước danh từ - a red bag.
+        error_tag: adjective_order
+      - answer: I've got red bag.
+        feedback_vi: Một cái túi cần a - a red bag.
+        error_tag: article
+      - answer: I have a red colour bag.
+        feedback_vi: Không cần thêm colour - a red bag là đủ.
+        error_tag: redundant_colour
+    explanation:
+      vi: "\"Có\" (sở hữu) = I've got / I have. Màu đỏ đứng trước túi - a red bag."
+    display_answer: I've got a red bag.
+
+  # ---------------- application ----------------
+  - key: en:exercise:colours-and-things-translate-shirt-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:what-colour-is-it
+    prompt:
+      source_text: What colour is your new shirt? - It's light blue.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Áo sơ mi mới của bạn màu gì? - Màu xanh nhạt.
+        - Áo sơ mi mới của bạn màu gì? - Nó màu xanh nhạt.
+        - Áo sơ mi mới của bạn màu gì? - Xanh nhạt.
+        - Áo sơ mi mới của bạn màu gì? - Màu xanh da trời nhạt.
+        - Áo mới của bạn màu gì? - Màu xanh nhạt.
+        - Cái áo sơ mi mới của bạn màu gì? - Màu xanh nhạt.
+        - Áo sơ mi mới của bạn màu gì? - Màu xanh dương nhạt.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: What colour is…? = "… màu gì?"; light blue là xanh nhạt (xanh dương nhạt). Tiếng Việt đặt "nhạt" sau màu, tiếng Anh đặt light trước.
+    display_answer: Áo sơ mi mới của bạn màu gì? - Màu xanh nhạt.
+
+  - key: en:exercise:colours-and-things-mcq-lost-bag
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:adjective-before-noun
+    prompt:
+      stem: Bạn để quên túi trên xe buýt và đang tả cho nhân viên. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: q4u, text: "It's a big black bag.", lang: en }
+        - { id: j7e, text: "It's a bag big black.", lang: en }
+        - { id: r3m, text: "It's black a big bag.", lang: en }
+        - { id: o8k, text: "It's a big blacks bag.", lang: en }
+    answer:
+      correct_option_id: q4u
+    explanation:
+      vi: Tính từ (kích cỡ, màu) đứng trước danh từ - a big black bag; kích cỡ đứng trước màu. Tính từ không thêm -s.
+    display_answer: "It's a big black bag."
+
+  - key: en:exercise:colours-and-things-translate-cat
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:black-white
+    prompt:
+      source_text: Con mèo của mình màu đen trắng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My cat is black and white.
+        - My cat's black and white.
+        - My cat is white and black.
+    known_wrong:
+      - answer: My cat black and white.
+        feedback_vi: Thiếu be - My cat is black and white.
+        error_tag: missing_be
+      - answer: My cat is black white.
+        feedback_vi: Hai màu nối bằng and - black and white.
+        error_tag: missing_and
+      - answer: My cat is a black and white.
+        feedback_vi: Màu đứng sau is thì không có a.
+        error_tag: article
+    explanation:
+      vi: Câu mô tả cần be - My cat is…; hai màu nối bằng and. Tiếng Việt không cần "là", nhưng tiếng Anh bắt buộc có is.
+    display_answer: My cat is black and white.
+
+  - key: en:exercise:colours-and-things-order-shoes
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:colour
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: \"Giày của bạn màu gì?\""
+      tokens:
+        - { id: s-shoes, text: shoes }
+        - { id: s-is, text: is }
+        - { id: s-your, text: your }
+        - { id: s-what, text: What }
+        - { id: s-are, text: are }
+        - { id: s-colour, text: colour }
+        - { id: s-the, text: the }
+    answer:
+      orders:
+        - [s-what, s-colour, s-are, s-your, s-shoes]
+    explanation:
+      vi: Shoes là số nhiều nên dùng are - What colour are your shoes? Colour đứng ngay sau What.
+    display_answer: What colour are your shoes?

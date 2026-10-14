@@ -4987,6 +4987,789 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
+      "content_hash": "75f0364e94719020ba3eb02fc851ebeaf9c63e9dfb8302df901ce5af1fecc728",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "2dfffcf0-2afd-5f9e-aede-615596427e29",
+      "is_demo": true,
+      "item_id": "20071d9d-c6a7-56b6-a0eb-400ed7203bb2",
+      "key": "en:exercise:colours-and-things-fill-favourite-pink",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "favourite",
+              "favorite"
+            ],
+            "b2": [
+              "pink"
+            ]
+          }
+        },
+        "display_answer": "My favourite colour is purple, but I've got a pink bag.",
+        "explanation": {
+          "vi": "My favourite colour = màu mình thích nhất. Pink (hồng) đứng trước bag - a pink bag."
+        },
+        "known_wrong": [
+          {
+            "answer": "most favourite",
+            "error_tag": "favourite_most",
+            "feedback_vi": "Favourite đã có nghĩa là \"thích nhất\", không thêm most."
+          },
+          {
+            "answer": "like",
+            "error_tag": "word_form",
+            "feedback_vi": "Chỗ này cần tính từ đứng trước colour - favourite."
+          },
+          {
+            "answer": "purple",
+            "error_tag": "vocabulary",
+            "feedback_vi": "Hồng là pink; purple là tím."
+          },
+          {
+            "answer": "pinks",
+            "error_tag": "adjective_plural",
+            "feedback_vi": "Màu là tính từ, không thêm -s."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 9
+          },
+          {
+            "id": "b2",
+            "width_hint": 4
+          }
+        ],
+        "template": "My {{b1}} (thích nhất) colour is purple, but I've got a {{b2}} (hồng) bag."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a24a90a4f7bb1cbde57f7eb9aaa278c1125c1c5c3734c969a8070574a9fab2a7",
+      "difficulty": 1,
+      "exercise_type": "fill_blank",
+      "id": "3eaf3145-db24-5432-b0a7-69a94410164f",
+      "is_demo": true,
+      "item_id": "ae11736d-7cb9-50ea-9756-97ed41c43494",
+      "key": "en:exercise:colours-and-things-fill-what-colour-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "colour",
+              "color"
+            ],
+            "b2": [
+              "black"
+            ]
+          }
+        },
+        "display_answer": "What colour is your bag? - It's black.",
+        "explanation": {
+          "vi": "Hỏi màu là What colour is…? (Mỹ viết color). Trả lời It's + màu, không cần a."
+        },
+        "known_wrong": [
+          {
+            "answer": "a black",
+            "error_tag": "article",
+            "feedback_vi": "Màu đứng một mình sau It's thì không cần a - It's black."
+          },
+          {
+            "answer": "white",
+            "error_tag": "vocabulary",
+            "feedback_vi": "White là màu trắng; màu đen là black."
+          },
+          {
+            "answer": "colours",
+            "error_tag": "plural_noun",
+            "feedback_vi": "Hỏi màu của một cái túi dùng colour, không thêm -s."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          },
+          {
+            "id": "b2",
+            "width_hint": 5
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Túi của bạn màu gì? - Màu đen.",
+          "Gợi ý: chỗ 1 là \"màu\", chỗ 2 là \"đen\"."
+        ],
+        "template": "What {{b1}} is your bag? - It's {{b2}}."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "c28d9211612c62f1310381ef13af5d5d5d934ca54d1d83b0bc30b9674f79d2a2",
+      "difficulty": 1,
+      "exercise_type": "listen",
+      "id": "a76b6565-536c-587d-9180-1f38064be7ae",
+      "is_demo": true,
+      "item_id": "1d9df5ab-052b-5e61-b751-a38598880f84",
+      "key": "en:exercise:colours-and-things-listen-favourite",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "p5n"
+        },
+        "display_answer": "Màu mình thích nhất là màu xanh lá.",
+        "explanation": {
+          "vi": "My favourite colour là \"màu mình thích nhất\"; green là xanh lá cây, còn xanh dương là blue."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "My favourite colour is green.",
+        "options": [
+          {
+            "id": "w1j",
+            "lang": "vi",
+            "text": "Màu mình thích nhất là màu xanh dương."
+          },
+          {
+            "id": "p5n",
+            "lang": "vi",
+            "text": "Màu mình thích nhất là màu xanh lá."
+          },
+          {
+            "id": "f3x",
+            "lang": "vi",
+            "text": "Túi của mình màu xanh lá."
+          },
+          {
+            "id": "b6g",
+            "lang": "vi",
+            "text": "Mình không thích màu xanh lá."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "73781ad560c858deecaacfc44cf56ad4c5e384d24aa1764a73d69308d7235186",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "b83822cc-d67c-5654-be87-a1909d678a63",
+      "is_demo": true,
+      "item_id": "a691a2ba-9eba-536d-a584-8f03634567fa",
+      "key": "en:exercise:colours-and-things-mcq-lost-bag",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "q4u"
+        },
+        "display_answer": "It's a big black bag.",
+        "explanation": {
+          "vi": "Tính từ (kích cỡ, màu) đứng trước danh từ - a big black bag; kích cỡ đứng trước màu. Tính từ không thêm -s."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "j7e",
+            "lang": "en",
+            "text": "It's a bag big black."
+          },
+          {
+            "id": "q4u",
+            "lang": "en",
+            "text": "It's a big black bag."
+          },
+          {
+            "id": "o8k",
+            "lang": "en",
+            "text": "It's a big blacks bag."
+          },
+          {
+            "id": "r3m",
+            "lang": "en",
+            "text": "It's black a big bag."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn để quên túi trên xe buýt và đang tả cho nhân viên. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "258f6c60796e16b5032aa4388855362f378bde4645c431bf2e955d5fc4a8cf3d",
+      "difficulty": 1,
+      "exercise_type": "mcq",
+      "id": "78308793-785d-5cd8-8b25-d033977cd7ff",
+      "is_demo": true,
+      "item_id": "319b0b60-5833-5338-a98f-d0f5781fee97",
+      "key": "en:exercise:colours-and-things-mcq-red-bag",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "h8c"
+        },
+        "display_answer": "a red bag",
+        "explanation": {
+          "vi": "Màu là tính từ, đứng sau a và trước danh từ - a red bag. Tính từ không bao giờ thêm -s."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "u2w",
+            "lang": "en",
+            "text": "a bag red"
+          },
+          {
+            "id": "z5o",
+            "lang": "en",
+            "text": "red a bag"
+          },
+          {
+            "id": "g1y",
+            "lang": "en",
+            "text": "a reds bag"
+          },
+          {
+            "id": "h8c",
+            "lang": "en",
+            "text": "a red bag"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Cụm nào đúng nghĩa \"một cái túi đỏ\"?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "2b8ea7d61be6830398efa3fc9da8e63ec549804b62d93eb4faec32c72b5a1338",
+      "difficulty": 1,
+      "exercise_type": "mcq",
+      "id": "d78ebd05-769c-5b52-8198-8f933282015d",
+      "is_demo": true,
+      "item_id": "f1de1679-293e-56d7-8a6a-bf0b576468a0",
+      "key": "en:exercise:colours-and-things-mcq-yellow",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "e2v"
+        },
+        "display_answer": "yellow",
+        "explanation": {
+          "vi": "Yellow là màu vàng. Green là xanh lá, brown là nâu, orange là cam."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "m4r",
+            "lang": "en",
+            "text": "brown"
+          },
+          {
+            "id": "k7a",
+            "lang": "en",
+            "text": "green"
+          },
+          {
+            "id": "e2v",
+            "lang": "en",
+            "text": "yellow"
+          },
+          {
+            "id": "t9s",
+            "lang": "en",
+            "text": "orange"
+          }
+        ],
+        "shuffle": true,
+        "stem": "\"Màu vàng\" trong tiếng Anh là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "bcca1aa2bc883d066be9b7f2c66619a8311beb5a9c127f3c551dd2e840ceb64e",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "3567e488-6c7e-57e8-9cc1-23cb641f1425",
+      "is_demo": true,
+      "item_id": "bca41acb-d8fa-5e94-b916-99dea3293f78",
+      "key": "en:exercise:colours-and-things-order-dark-blue",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "d-shes",
+              "d-got",
+              "d-a",
+              "d-dark",
+              "d-blue",
+              "d-dress"
+            ]
+          ]
+        },
+        "display_answer": "She's got a dark blue dress.",
+        "explanation": {
+          "vi": "She's got = cô ấy có. Thứ tự cụm danh từ: a + dark + blue + dress - đậm/nhạt trước màu, màu trước danh từ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Cô ấy có một chiếc váy màu xanh đậm.\"",
+        "tokens": [
+          {
+            "id": "d-dress",
+            "text": "dress"
+          },
+          {
+            "id": "d-a",
+            "text": "a"
+          },
+          {
+            "id": "d-blue",
+            "text": "blue"
+          },
+          {
+            "id": "d-shes",
+            "text": "She's"
+          },
+          {
+            "id": "d-the",
+            "text": "the"
+          },
+          {
+            "id": "d-dark",
+            "text": "dark"
+          },
+          {
+            "id": "d-got",
+            "text": "got"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "b1f082ef25e724bdea7c811d5f6f9dc6654abefd9b4d8ea3ea7a0a46b9aa9dde",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "baf01aba-c817-5e2d-b7c3-04bb9f4de87f",
+      "is_demo": true,
+      "item_id": "91ad46ca-b92f-5650-a0d2-704f40c8dcef",
+      "key": "en:exercise:colours-and-things-order-shoes",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "s-what",
+              "s-colour",
+              "s-are",
+              "s-your",
+              "s-shoes"
+            ]
+          ]
+        },
+        "display_answer": "What colour are your shoes?",
+        "explanation": {
+          "vi": "Shoes là số nhiều nên dùng are - What colour are your shoes? Colour đứng ngay sau What."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu hỏi: \"Giày của bạn màu gì?\"",
+        "tokens": [
+          {
+            "id": "s-shoes",
+            "text": "shoes"
+          },
+          {
+            "id": "s-is",
+            "text": "is"
+          },
+          {
+            "id": "s-your",
+            "text": "your"
+          },
+          {
+            "id": "s-what",
+            "text": "What"
+          },
+          {
+            "id": "s-are",
+            "text": "are"
+          },
+          {
+            "id": "s-colour",
+            "text": "colour"
+          },
+          {
+            "id": "s-the",
+            "text": "the"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "22063e64fea1e4da6ea1960735def6f10fdba6cf7fe8eea52f68418ef824533e",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "ee613535-9de3-5797-a970-c5f36b4297a4",
+      "is_demo": true,
+      "item_id": "2dcc0d48-fbd9-5a1c-a5ae-f2ea50c004b5",
+      "key": "en:exercise:colours-and-things-translate-cat",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "My cat is black and white.",
+            "My cat's black and white.",
+            "My cat is white and black."
+          ]
+        },
+        "display_answer": "My cat is black and white.",
+        "explanation": {
+          "vi": "Câu mô tả cần be - My cat is…; hai màu nối bằng and. Tiếng Việt không cần \"là\", nhưng tiếng Anh bắt buộc có is."
+        },
+        "known_wrong": [
+          {
+            "answer": "My cat black and white.",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu be - My cat is black and white."
+          },
+          {
+            "answer": "My cat is black white.",
+            "error_tag": "missing_and",
+            "feedback_vi": "Hai màu nối bằng and - black and white."
+          },
+          {
+            "answer": "My cat is a black and white.",
+            "error_tag": "article",
+            "feedback_vi": "Màu đứng sau is thì không có a."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "order_index": 10,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Con mèo của mình màu đen trắng."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "9a29ebd92692c6c4a13ea220de9e1408e394f4d51818ac7363447c9d2defbfc1",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "8ee11502-5167-53c9-9500-28193e4d230a",
+      "is_demo": true,
+      "item_id": "1d9df5ab-052b-5e61-b751-a38598880f84",
+      "key": "en:exercise:colours-and-things-translate-favourite-green",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "My favourite colour is green.",
+            "My favorite color is green.",
+            "My favourite color is green.",
+            "My favorite colour is green.",
+            "Green is my favourite colour.",
+            "Green is my favorite color."
+          ]
+        },
+        "display_answer": "My favourite colour is green.",
+        "explanation": {
+          "vi": "\"Màu mình thích nhất\" = my favourite colour; xanh lá là green. Có thể đảo - Green is my favourite colour."
+        },
+        "known_wrong": [
+          {
+            "answer": "My colour favourite is green.",
+            "error_tag": "adjective_order",
+            "feedback_vi": "Favourite đứng trước colour - my favourite colour."
+          },
+          {
+            "answer": "My favourite colour is blue.",
+            "error_tag": "vocabulary",
+            "feedback_vi": "Xanh lá cây là green; blue là xanh dương."
+          },
+          {
+            "answer": "My most favourite colour is green.",
+            "error_tag": "favourite_most",
+            "feedback_vi": "Favourite đã là \"thích nhất\", không thêm most."
+          },
+          {
+            "answer": "Favourite colour is green.",
+            "error_tag": "missing_possessive",
+            "feedback_vi": "Cần my trước favourite colour."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Màu mình thích nhất là màu xanh lá cây."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "1ec512a10a3f1079ddc64c2a8ebb001782fc3116f6b47db18a4a37a52940d8f4",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "5da06b2f-0366-5d33-8c3e-dbc54f57c821",
+      "is_demo": true,
+      "item_id": "bcf1d794-0921-55f5-8ec3-0d522e240440",
+      "key": "en:exercise:colours-and-things-translate-red-bag",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I've got a red bag.",
+            "I have got a red bag.",
+            "I have a red bag."
+          ]
+        },
+        "display_answer": "I've got a red bag.",
+        "explanation": {
+          "vi": "\"Có\" (sở hữu) = I've got / I have. Màu đỏ đứng trước túi - a red bag."
+        },
+        "known_wrong": [
+          {
+            "answer": "I have a bag red.",
+            "error_tag": "adjective_order",
+            "feedback_vi": "Màu đứng trước danh từ - a red bag."
+          },
+          {
+            "answer": "I've got a bag red.",
+            "error_tag": "adjective_order",
+            "feedback_vi": "Màu đứng trước danh từ - a red bag."
+          },
+          {
+            "answer": "I've got red bag.",
+            "error_tag": "article",
+            "feedback_vi": "Một cái túi cần a - a red bag."
+          },
+          {
+            "answer": "I have a red colour bag.",
+            "error_tag": "redundant_colour",
+            "feedback_vi": "Không cần thêm colour - a red bag là đủ."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Mình có một cái túi màu đỏ."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "bca03feaa156f7e7f8e5000d24acc0b8c735b780b618b71096a3a1b9d238e058",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "12e6b439-eea3-5bf3-bf4a-2443414eac50",
+      "is_demo": true,
+      "item_id": "ae11736d-7cb9-50ea-9756-97ed41c43494",
+      "key": "en:exercise:colours-and-things-translate-shirt-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Áo sơ mi mới của bạn màu gì? - Màu xanh nhạt.",
+            "Áo sơ mi mới của bạn màu gì? - Nó màu xanh nhạt.",
+            "Áo sơ mi mới của bạn màu gì? - Xanh nhạt.",
+            "Áo sơ mi mới của bạn màu gì? - Màu xanh da trời nhạt.",
+            "Áo mới của bạn màu gì? - Màu xanh nhạt.",
+            "Cái áo sơ mi mới của bạn màu gì? - Màu xanh nhạt.",
+            "Áo sơ mi mới của bạn màu gì? - Màu xanh dương nhạt."
+          ]
+        },
+        "display_answer": "Áo sơ mi mới của bạn màu gì? - Màu xanh nhạt.",
+        "explanation": {
+          "vi": "What colour is…? = \"… màu gì?\"; light blue là xanh nhạt (xanh dương nhạt). Tiếng Việt đặt \"nhạt\" sau màu, tiếng Anh đặt light trước."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "What colour is your new shirt? - It's light blue."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
       "content_hash": "b4d363e40792f9a122c8dbd96b4bf930ea75b1e7fa250ecd947c7e2574821e8a",
       "difficulty": 4,
       "exercise_type": "fill_blank",
@@ -15461,6 +16244,1607 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
+      "content_hash": "e4c3244027a05d0af8f1914ab635ad69f2bdd4e94725c940e6090f2fa41c884e",
+      "difficulty": 1,
+      "exercise_type": "fill_blank",
+      "id": "d73449f0-2e5b-57ec-934b-7d2844b3bcb1",
+      "is_demo": true,
+      "item_id": "83b78772-059d-5cfc-9c6c-908262f28cee",
+      "key": "en:exercise:free-time-activities-fill-go-shopping-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "go"
+            ],
+            "b2": [
+              "go"
+            ]
+          }
+        },
+        "display_answer": "We go shopping on Saturdays, and we go to the cinema on Sundays.",
+        "explanation": {
+          "vi": "Go shopping là cụm cố định, không có to. Ở vế sau, the cinema là nơi chốn nên đã có to đứng sau chỗ trống - go to the cinema."
+        },
+        "known_wrong": [
+          {
+            "answer": "go to",
+            "error_tag": "go_to_ing",
+            "feedback_vi": "Go shopping không có to. To chỉ dùng trước nơi chốn - go to the cinema."
+          },
+          {
+            "answer": "play",
+            "error_tag": "collocation",
+            "feedback_vi": "Mua sắm và xem phim dùng go, không dùng play."
+          },
+          {
+            "answer": "goes",
+            "error_tag": "third_person_s",
+            "feedback_vi": "Chủ ngữ là we nên dùng go, không thêm -es."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          },
+          {
+            "id": "b2",
+            "width_hint": 2
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Thứ Bảy bọn mình đi mua sắm, Chủ nhật bọn mình đi xem phim.",
+          "Gợi ý: cả hai chỗ trống đều là động từ \"đi\"."
+        ],
+        "template": "We {{b1}} shopping on Saturdays, and we {{b2}} to the cinema on Sundays."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "6cda894f39b17052faac605c16f0e8e9a580552dba350c5f739e74fa5c39a4d5",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "5b54937b-2860-5e15-8869-46a874a0ec69",
+      "is_demo": true,
+      "item_id": "0e94096b-fb9f-571a-9950-35b982bb3eae",
+      "key": "en:exercise:free-time-activities-fill-love-hate",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "dancing"
+            ],
+            "b2": [
+              "singing"
+            ]
+          }
+        },
+        "display_answer": "I love dancing, but my brother hates singing.",
+        "explanation": {
+          "vi": "Love và hate cũng như like, theo sau là hoạt động dạng -ing. Dance bỏ e câm thành dancing; sing chỉ thêm -ing."
+        },
+        "known_wrong": [
+          {
+            "answer": "dance",
+            "error_tag": "like_plus_ing",
+            "feedback_vi": "Sau love dùng dạng -ing - dancing."
+          },
+          {
+            "answer": "sing",
+            "error_tag": "like_plus_ing",
+            "feedback_vi": "Sau hate dùng dạng -ing - singing."
+          },
+          {
+            "answer": "danceing",
+            "error_tag": "ing_spelling",
+            "feedback_vi": "Dance tận cùng bằng e câm, bỏ e rồi thêm -ing - dancing."
+          },
+          {
+            "answer": "sings",
+            "error_tag": "like_plus_ing",
+            "feedback_vi": "Hates đã chia theo he rồi; động từ sau nó dùng dạng -ing - singing."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 7
+          },
+          {
+            "id": "b2",
+            "width_hint": 7
+          }
+        ],
+        "template": "I love {{b1}} (dance), but my brother hates {{b2}} (sing)."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "c015e4cc6bb738c1ca0bf94252483e47fa9e2ffa8a5dc71de17624f8f36cdd72",
+      "difficulty": 1,
+      "exercise_type": "listen",
+      "id": "3cfe7a66-260f-508d-b038-cff8c137ce99",
+      "is_demo": true,
+      "item_id": "3857db05-dab2-5b45-9e65-c1b3b67b22f1",
+      "key": "en:exercise:free-time-activities-listen-cinema",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r5t"
+        },
+        "display_answer": "Lúc rảnh bạn làm gì? - Mình đi xem phim.",
+        "explanation": {
+          "vi": "In your free time là \"lúc rảnh\", go to the cinema là \"đi xem phim ở rạp\". Hỏi nghề nghiệp là What do you do? không có in your free time, còn đi mua sắm là go shopping."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "What do you do in your free time? - I go to the cinema.",
+        "options": [
+          {
+            "id": "b4u",
+            "lang": "vi",
+            "text": "Bạn thích làm gì? - Mình thích xem ti vi."
+          },
+          {
+            "id": "r5t",
+            "lang": "vi",
+            "text": "Lúc rảnh bạn làm gì? - Mình đi xem phim."
+          },
+          {
+            "id": "h2n",
+            "lang": "vi",
+            "text": "Lúc rảnh bạn làm gì? - Mình đi mua sắm."
+          },
+          {
+            "id": "z7c",
+            "lang": "vi",
+            "text": "Bạn làm nghề gì? - Mình làm ở rạp phim."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "33b363ae6fd7da63658d3941ab14290386b3ae7e8dc36656274a4afa6f1f0271",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "546fb036-e307-566c-a2ec-1ab984be6ef3",
+      "is_demo": true,
+      "item_id": "f4ea476c-5418-55ef-a6b0-a48d8417dde8",
+      "key": "en:exercise:free-time-activities-mcq-answer-riding",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c8g"
+        },
+        "display_answer": "I like riding my bike.",
+        "explanation": {
+          "vi": "Like + -ing, và ride bỏ e thành riding. I like ride thiếu -ing; I'm like thừa be; rideing sai chính tả."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "e5r",
+            "lang": "en",
+            "text": "I like rideing my bike."
+          },
+          {
+            "id": "n4k",
+            "lang": "en",
+            "text": "I like ride my bike."
+          },
+          {
+            "id": "t1w",
+            "lang": "en",
+            "text": "I'm like riding my bike."
+          },
+          {
+            "id": "c8g",
+            "lang": "en",
+            "text": "I like riding my bike."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Một người bạn mới hỏi bạn: \"What do you like doing?\" Bạn thích đạp xe. Câu trả lời nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "d5f452fc2ddd899aeb7b837290322efa7bb50f21dde5690b156b70b4a6f1bca3",
+      "difficulty": 1,
+      "exercise_type": "mcq",
+      "id": "a4e53422-cbb2-5685-802d-dab192183f01",
+      "is_demo": true,
+      "item_id": "29665841-850a-55ce-80b6-465edff7f5f7",
+      "key": "en:exercise:free-time-activities-mcq-guitar",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k3q"
+        },
+        "display_answer": "play the guitar",
+        "explanation": {
+          "vi": "Chơi nhạc cụ luôn dùng play + the - play the guitar, play the piano. Go, do, make không đi với nhạc cụ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "w8m",
+            "lang": "en",
+            "text": "go the guitar"
+          },
+          {
+            "id": "d1x",
+            "lang": "en",
+            "text": "do the guitar"
+          },
+          {
+            "id": "p6j",
+            "lang": "en",
+            "text": "make the guitar"
+          },
+          {
+            "id": "k3q",
+            "lang": "en",
+            "text": "play the guitar"
+          }
+        ],
+        "shuffle": true,
+        "stem": "\"Chơi đàn ghi-ta\" trong tiếng Anh là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "b2067277c5437c7c7057c7e9030b5bcc250d68f9f3d5d4bfd1bdaf7e5487e1fe",
+      "difficulty": 1,
+      "exercise_type": "mcq",
+      "id": "d7b7e140-677f-5b02-9979-a4f9c5c79cc8",
+      "is_demo": true,
+      "item_id": "d5b7ca71-618f-52b4-ad30-b65a1119a5ec",
+      "key": "en:exercise:free-time-activities-mcq-like-listening",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "f9a"
+        },
+        "display_answer": "listening",
+        "explanation": {
+          "vi": "Sau like, hoạt động dùng dạng -ing - I like listening to music. Listen nguyên mẫu, listens hay listened đều không đứng ngay sau like."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "f9a",
+            "lang": "en",
+            "text": "listening"
+          },
+          {
+            "id": "m2e",
+            "lang": "en",
+            "text": "listen"
+          },
+          {
+            "id": "y3o",
+            "lang": "en",
+            "text": "listened"
+          },
+          {
+            "id": "s6v",
+            "lang": "en",
+            "text": "listens"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn từ đúng: I like ___ to music.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "8d2ec324bf60263fc4832a5de538ccaacfa0cdc4899434b9ce906c8fa52daadd",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "c5750842-9ab0-5f97-9977-e64cbec5176c",
+      "is_demo": true,
+      "item_id": "3857db05-dab2-5b45-9e65-c1b3b67b22f1",
+      "key": "en:exercise:free-time-activities-order-question",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "w-what",
+              "w-do1",
+              "w-you",
+              "w-do2",
+              "w-in",
+              "w-your",
+              "w-free",
+              "w-time"
+            ],
+            [
+              "w-what",
+              "w-do2",
+              "w-you",
+              "w-do1",
+              "w-in",
+              "w-your",
+              "w-free",
+              "w-time"
+            ]
+          ]
+        },
+        "display_answer": "What do you do in your free time?",
+        "explanation": {
+          "vi": "Câu hỏi What + do + you + do (làm) + in your free time. Chủ ngữ là you nên dùng do, không dùng does; \"lúc rảnh\" đi với in, không phải on."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu hỏi: \"Lúc rảnh bạn làm gì?\"",
+        "tokens": [
+          {
+            "id": "w-time",
+            "text": "time"
+          },
+          {
+            "id": "w-do1",
+            "text": "do"
+          },
+          {
+            "id": "w-what",
+            "text": "What"
+          },
+          {
+            "id": "w-your",
+            "text": "your"
+          },
+          {
+            "id": "w-on",
+            "text": "on"
+          },
+          {
+            "id": "w-do2",
+            "text": "do"
+          },
+          {
+            "id": "w-in",
+            "text": "in"
+          },
+          {
+            "id": "w-you",
+            "text": "you"
+          },
+          {
+            "id": "w-free",
+            "text": "free"
+          },
+          {
+            "id": "w-does",
+            "text": "does"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "4da1d8af8aca53df4ac7a8725245ea126287bb1f0cdb80cfcbc6af25fb4aa313",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "b82960f3-f00e-5f21-a9d1-4c9cedf9ca7c",
+      "is_demo": true,
+      "item_id": "3ccd5f5b-938f-5809-90d9-a2d2ddf8a222",
+      "key": "en:exercise:free-time-activities-order-walk",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "x-we",
+              "x-often",
+              "x-go",
+              "x-for",
+              "x-a",
+              "x-walk",
+              "x-in",
+              "x-the",
+              "x-park"
+            ]
+          ]
+        },
+        "display_answer": "We often go for a walk in the park.",
+        "explanation": {
+          "vi": "Often đứng trước động từ go; đi dạo là go for a walk (không có to); \"trong công viên\" là in the park."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Bọn mình hay đi dạo trong công viên.\"",
+        "tokens": [
+          {
+            "id": "x-walk",
+            "text": "walk"
+          },
+          {
+            "id": "x-the",
+            "text": "the"
+          },
+          {
+            "id": "x-we",
+            "text": "We"
+          },
+          {
+            "id": "x-for",
+            "text": "for"
+          },
+          {
+            "id": "x-park",
+            "text": "park"
+          },
+          {
+            "id": "x-often",
+            "text": "often"
+          },
+          {
+            "id": "x-a",
+            "text": "a"
+          },
+          {
+            "id": "x-in",
+            "text": "in"
+          },
+          {
+            "id": "x-go",
+            "text": "go"
+          },
+          {
+            "id": "x-to",
+            "text": "to"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "54d4d23fe9715fa543be5d648309eeb468de46be5f865cad390edb1aa5e8ad84",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "86eec374-fc29-5a25-ae56-d89d33f1bb7b",
+      "is_demo": true,
+      "item_id": "824e2741-0f7d-5894-9038-bea9f0593dae",
+      "key": "en:exercise:free-time-activities-translate-cinema",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I like going to the cinema.",
+            "I like going to the movies.",
+            "I like to go to the cinema.",
+            "I like to go to the movies."
+          ]
+        },
+        "display_answer": "I like going to the cinema.",
+        "explanation": {
+          "vi": "Đi xem phim ở rạp là go to the cinema; sau like đổi go thành going. Người Mỹ nói go to the movies."
+        },
+        "known_wrong": [
+          {
+            "answer": "I like go to the cinema.",
+            "error_tag": "like_plus_ing",
+            "feedback_vi": "Sau like động từ phải thêm -ing - I like going to the cinema."
+          },
+          {
+            "answer": "I like going to cinema.",
+            "error_tag": "article",
+            "feedback_vi": "Cần the trước cinema - go to the cinema."
+          },
+          {
+            "answer": "I like going cinema.",
+            "error_tag": "missing_preposition",
+            "feedback_vi": "Cinema là nơi chốn nên cần to the - going to the cinema."
+          },
+          {
+            "answer": "I like watching film.",
+            "error_tag": "article",
+            "feedback_vi": "Film đếm được, cần a hoặc số nhiều; và câu gốc nói đi xem ở rạp - going to the cinema."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Mình thích đi xem phim ở rạp."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "1788881cc3b783bc4aaf506d49c8d106c4c6a57d877d55a84d08828e0ee43283",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "95b48295-da49-5e08-b9bb-25f00466ccc7",
+      "is_demo": true,
+      "item_id": "29665841-850a-55ce-80b6-465edff7f5f7",
+      "key": "en:exercise:free-time-activities-translate-guitar",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I play the guitar in my free time.",
+            "In my free time, I play the guitar.",
+            "In my free time I play the guitar.",
+            "I play guitar in my free time.",
+            "In my free time, I play guitar."
+          ]
+        },
+        "display_answer": "I play the guitar in my free time.",
+        "explanation": {
+          "vi": "Chơi nhạc cụ là play the guitar; \"lúc rảnh\" là in my free time, đặt ở cuối hoặc đầu câu đều được."
+        },
+        "known_wrong": [
+          {
+            "answer": "I play the guitar in free time.",
+            "error_tag": "missing_possessive",
+            "feedback_vi": "Cần my trước free time - in my free time."
+          },
+          {
+            "answer": "I play the guitar in my time free.",
+            "error_tag": "word_order",
+            "feedback_vi": "Free đứng trước time - free time."
+          },
+          {
+            "answer": "I play the guitar on my free time.",
+            "error_tag": "preposition",
+            "feedback_vi": "Lúc rảnh dùng in - in my free time."
+          },
+          {
+            "answer": "I go the guitar in my free time.",
+            "error_tag": "collocation",
+            "feedback_vi": "Chơi nhạc cụ dùng play, không dùng go."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Lúc rảnh mình chơi đàn ghi-ta."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "2f6e02d1a58dced98aaf0886b55901fc730fe32c095f37fd86105aee3950ff5c",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "2ae68367-fc7d-5c99-93b0-1683c0418232",
+      "is_demo": true,
+      "item_id": "0e94096b-fb9f-571a-9950-35b982bb3eae",
+      "key": "en:exercise:free-time-activities-translate-hates-shopping",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "He hates going shopping, but he loves drawing.",
+            "He hates shopping, but he loves drawing.",
+            "He hates going shopping but he loves drawing.",
+            "He hates going shopping, but he really loves drawing.",
+            "He hates to go shopping, but he loves drawing.",
+            "He hates going shopping, but he loves to draw."
+          ]
+        },
+        "display_answer": "He hates going shopping, but he loves drawing.",
+        "explanation": {
+          "vi": "Hate và love + -ing; với he thêm -s - hates, loves. Đi mua sắm là go shopping, không có to."
+        },
+        "known_wrong": [
+          {
+            "answer": "He hates go shopping, but he loves draw.",
+            "error_tag": "like_plus_ing",
+            "feedback_vi": "Sau hate, love dùng dạng -ing - going shopping, drawing."
+          },
+          {
+            "answer": "He hate going shopping, but he love drawing.",
+            "error_tag": "third_person_s",
+            "feedback_vi": "Chủ ngữ he nên động từ thêm -s - hates, loves."
+          },
+          {
+            "answer": "He hates going to shopping, but he loves drawing.",
+            "error_tag": "go_to_ing",
+            "feedback_vi": "Go shopping không có to."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "order_index": 10,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Anh ấy ghét đi mua sắm, nhưng anh ấy mê vẽ."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "c6623d71abba61d77a990bd6dbffc59cf8d73c5e3a92ee266dd281eaec693404",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "e36c17cc-cb17-509c-9d69-4554d2f1b472",
+      "is_demo": true,
+      "item_id": "d373d6a2-18b1-5979-be3c-1f956fd3169a",
+      "key": "en:exercise:free-time-activities-translate-weekend-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Cuối tuần bạn thích làm gì?",
+            "Bạn thích làm gì vào cuối tuần?",
+            "Vào cuối tuần bạn thích làm gì?",
+            "Cuối tuần cậu thích làm gì?",
+            "Cuối tuần bạn thích làm gì vậy?",
+            "Bạn thích làm gì vào dịp cuối tuần?"
+          ]
+        },
+        "display_answer": "Cuối tuần bạn thích làm gì?",
+        "explanation": {
+          "vi": "What do you like doing = \"bạn thích làm gì\", at the weekend = \"vào cuối tuần\". Tiếng Việt tự nhiên thường đưa \"cuối tuần\" lên đầu câu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "What do you like doing at the weekend?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "98b1e609a5c78c03e62e93b7c5799a984c08361b0f21d1e4d45a6744715c13ca",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "1ec8f266-2b3f-5b56-876b-635c753e3388",
+      "is_demo": true,
+      "item_id": "95fdbeaa-7069-509c-a95c-0165e5b2eb7d",
+      "key": "en:exercise:free-time-weather-review-fill-loves-want",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "going"
+            ],
+            "b2": [
+              "to buy"
+            ]
+          }
+        },
+        "display_answer": "Linh loves going shopping, and she wants to buy a red hat.",
+        "explanation": {
+          "vi": "Love + -ing (loves going shopping), còn want + to + động từ nguyên mẫu (wants to buy). Hai động từ này đi với hai dạng khác nhau."
+        },
+        "known_wrong": [
+          {
+            "answer": "go",
+            "error_tag": "like_plus_ing",
+            "feedback_vi": "Sau love dùng -ing - going."
+          },
+          {
+            "answer": "buy",
+            "error_tag": "want_to_infinitive",
+            "feedback_vi": "Sau want cần to - wants to buy."
+          },
+          {
+            "answer": "buying",
+            "error_tag": "want_to_infinitive",
+            "feedback_vi": "Sau want dùng to + động từ nguyên mẫu - to buy."
+          },
+          {
+            "answer": "to go",
+            "error_tag": "like_plus_ing",
+            "feedback_vi": "Sau love trong bài này dùng -ing - going."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          },
+          {
+            "id": "b2",
+            "width_hint": 6
+          }
+        ],
+        "template": "Linh loves {{b1}} (go) shopping, and she wants {{b2}} (buy) a red hat."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "3caaa6755983752d2a8a0e71753a745fa96eb686c2edfc2ba7e905313b84ca0e",
+      "difficulty": 1,
+      "exercise_type": "fill_blank",
+      "id": "b3cdda87-2627-5984-a373-b3f69e4f199d",
+      "is_demo": true,
+      "item_id": "b052f8e4-44b4-5b18-8a86-5a94b0622024",
+      "key": "en:exercise:free-time-weather-review-fill-postcard-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "It's",
+              "It is"
+            ],
+            "b2": [
+              "go"
+            ]
+          }
+        },
+        "display_answer": "Dear Mum and Dad, it's hot and sunny every day. We go swimming in the morning.",
+        "explanation": {
+          "vi": "Câu thời tiết bắt đầu bằng It's. Đi bơi là go swimming, không có to."
+        },
+        "known_wrong": [
+          {
+            "answer": "Is",
+            "error_tag": "missing_dummy_it",
+            "feedback_vi": "Thiếu chủ ngữ it - It's hot."
+          },
+          {
+            "answer": "Weather is",
+            "error_tag": "missing_article_weather",
+            "feedback_vi": "Weather làm chủ ngữ cần the; tự nhiên nhất là It's hot."
+          },
+          {
+            "answer": "go to",
+            "error_tag": "go_to_ing",
+            "feedback_vi": "Go swimming không có to."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          },
+          {
+            "id": "b2",
+            "width_hint": 2
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Bố mẹ thân mến, ngày nào trời cũng nóng và nắng. Buổi sáng tụi con đi bơi.",
+          "Gợi ý: chỗ 1 là chủ ngữ giả + be (viết tắt); chỗ 2 là \"đi\"."
+        ],
+        "template": "Dear Mum and Dad, {{b1}} hot and sunny every day. We {{b2}} swimming in the morning."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "b25b9982ae0d64b9a281e567338162b4d985edd1f5b7e4dea9070a95b95c9a5d",
+      "difficulty": 1,
+      "exercise_type": "listen",
+      "id": "952122ab-72dd-5ba1-805d-cb38df7701c0",
+      "is_demo": true,
+      "item_id": "e07216f2-b289-54ac-92e2-fc63b522284c",
+      "key": "en:exercise:free-time-weather-review-listen-free",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k2s"
+        },
+        "display_answer": "Cuối tuần này bạn rảnh không? - Rảnh. Bạn muốn làm gì?",
+        "explanation": {
+          "vi": "Free ở đây là \"rảnh\", không phải \"miễn phí\". Yes, I am là có rảnh; What do you want to do? là \"bạn muốn làm gì?\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "order_index": 0,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "Are you free this weekend? - Yes, I am. What do you want to do?",
+        "options": [
+          {
+            "id": "k2s",
+            "lang": "vi",
+            "text": "Cuối tuần này bạn rảnh không? - Rảnh. Bạn muốn làm gì?"
+          },
+          {
+            "id": "f7m",
+            "lang": "vi",
+            "text": "Cuối tuần này có miễn phí không? - Có. Bạn muốn làm gì?"
+          },
+          {
+            "id": "o9h",
+            "lang": "vi",
+            "text": "Cuối tuần bạn thường làm gì? - Mình đi bơi."
+          },
+          {
+            "id": "u4z",
+            "lang": "vi",
+            "text": "Cuối tuần này bạn rảnh không? - Không, mình bận."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "8db265e2c0bfb2dbc944beaa6cef65199be07b52bd7972721029507b094547f8",
+      "difficulty": 1,
+      "exercise_type": "mcq",
+      "id": "c5c5b3c6-653c-5d44-ad95-2fa206d368f5",
+      "is_demo": true,
+      "item_id": "0e94096b-fb9f-571a-9950-35b982bb3eae",
+      "key": "en:exercise:free-time-weather-review-mcq-chat-hate",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "a5y"
+        },
+        "display_answer": "bơi",
+        "explanation": {
+          "vi": "I hate swimming - Tom ghét bơi. Tom vẫn muốn đi biển (Sounds great!) và gợi ý đá bóng trên bãi biển."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "w6c",
+            "lang": "vi",
+            "text": "đi biển"
+          },
+          {
+            "id": "a5y",
+            "lang": "vi",
+            "text": "bơi"
+          },
+          {
+            "id": "g3r",
+            "lang": "vi",
+            "text": "trời nóng"
+          },
+          {
+            "id": "e1q",
+            "lang": "vi",
+            "text": "đá bóng"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Đọc đoạn chat. Linh: Let's go to the beach. It's hot and sunny this week! - Tom: Sounds great! But I hate swimming. Why don't we play football on the beach? - Hỏi: Tom ghét làm gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "fcfff9cc43325d3b1bb9434a9373409840222bacf4d89a42dd4239e0f7e76e46",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "61772ede-48cf-5fd5-8216-652fc2b5a991",
+      "is_demo": true,
+      "item_id": "df40d4cb-8876-5ad4-a52a-e494bbf5baa7",
+      "key": "en:exercise:free-time-weather-review-mcq-postcard-ending",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "t5n"
+        },
+        "display_answer": "Love from Mai",
+        "explanation": {
+          "vi": "Love from + tên là lời kết thân mật cho người nhà. Best regards dùng trong thư công việc; Dear dùng để mở đầu; Nice to meet you là lời chào khi mới gặp."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "r9k",
+            "lang": "en",
+            "text": "Dear Mai"
+          },
+          {
+            "id": "d7f",
+            "lang": "en",
+            "text": "Nice to meet you, Mai"
+          },
+          {
+            "id": "y2b",
+            "lang": "en",
+            "text": "Best regards, Ms Mai"
+          },
+          {
+            "id": "t5n",
+            "lang": "en",
+            "text": "Love from Mai"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn viết bưu thiếp cho bà từ Đà Lạt. Câu nào hợp nhất để kết thúc?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "980a2a7c3fc0f0dbbb44111801846c64760f2c4dc88d4fbcf4b6bfea351e1d42",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "a34dfc6a-4e96-5a0f-86e0-a43ae5d553ef",
+      "is_demo": true,
+      "item_id": "c75ab15f-b250-560b-a299-20f85bd142f1",
+      "key": "en:exercise:free-time-weather-review-mcq-postcard-weather",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c4j"
+        },
+        "display_answer": "Trời nắng nóng và Linh có một cái mũ đỏ mới.",
+        "explanation": {
+          "vi": "It's hot and sunny - trời nóng và nắng; she's got a new red hat - Linh (she) có mũ đỏ mới. Buổi sáng họ đi bơi, buổi chiều mới đá bóng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "p6w",
+            "lang": "vi",
+            "text": "Buổi sáng họ đá bóng, buổi chiều đi bơi."
+          },
+          {
+            "id": "c4j",
+            "lang": "vi",
+            "text": "Trời nắng nóng và Linh có một cái mũ đỏ mới."
+          },
+          {
+            "id": "x1e",
+            "lang": "vi",
+            "text": "Tom có một cái mũ đỏ mới."
+          },
+          {
+            "id": "m8u",
+            "lang": "vi",
+            "text": "Trời mưa nên Tom và Linh ở nhà."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Đọc bưu thiếp. Dear Mum and Dad, I'm in Nha Trang with Linh. It's hot and sunny every day. We go swimming in the morning and play football in the afternoon. Linh loves going shopping - she's got a new red hat! Love from Tom. - Hỏi: Câu nào đúng với bưu thiếp?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "d73a2b51963a23a9529418382b128df4657b6f80c850356b5feaf548040ce63e",
+      "difficulty": 1,
+      "exercise_type": "mcq",
+      "id": "ae070590-357b-5815-8c37-1605a392246c",
+      "is_demo": true,
+      "item_id": "085dabc2-dd67-5a63-90ee-bc857b189471",
+      "key": "en:exercise:free-time-weather-review-mcq-suggest",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "b8v"
+        },
+        "display_answer": "Why don't we play football on the beach?",
+        "explanation": {
+          "vi": "Khuôn câu là Why don't we + động từ nguyên mẫu? - don't đứng trước we, không thêm to, không thêm -ing."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "s7t",
+            "lang": "en",
+            "text": "Why don't we playing football on the beach?"
+          },
+          {
+            "id": "b8v",
+            "lang": "en",
+            "text": "Why don't we play football on the beach?"
+          },
+          {
+            "id": "n1d",
+            "lang": "en",
+            "text": "Why don't we to play football on the beach?"
+          },
+          {
+            "id": "h4p",
+            "lang": "en",
+            "text": "Why we don't play football on the beach?"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu gợi ý đúng: \"Hay là mình đá bóng trên bãi biển nhé?\"",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a314ce3420398f9eaff3bef8d3442e5b10a8e1ff272138f2906bb38c477d4980",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "b5937a22-0e8e-50e6-b499-279e8d8d37e9",
+      "is_demo": true,
+      "item_id": "4ec68260-ff86-5157-9ec4-fbf42c7087da",
+      "key": "en:exercise:free-time-weather-review-order-lets",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "l-lets",
+              "l-go",
+              "l-to1",
+              "l-the",
+              "l-beach",
+              "l-on",
+              "l-saturday"
+            ],
+            [
+              "l-on",
+              "l-saturday",
+              "l-lets",
+              "l-go",
+              "l-to1",
+              "l-the",
+              "l-beach"
+            ]
+          ]
+        },
+        "display_answer": "Let's go to the beach on Saturday.",
+        "explanation": {
+          "vi": "Let's + go (nguyên mẫu, không -ing) + to the beach. On Saturday đặt cuối câu hoặc đầu câu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Thứ Bảy mình đi biển đi.\"",
+        "tokens": [
+          {
+            "id": "l-beach",
+            "text": "beach"
+          },
+          {
+            "id": "l-to1",
+            "text": "to"
+          },
+          {
+            "id": "l-saturday",
+            "text": "Saturday"
+          },
+          {
+            "id": "l-lets",
+            "text": "Let's"
+          },
+          {
+            "id": "l-the",
+            "text": "the"
+          },
+          {
+            "id": "l-on",
+            "text": "on"
+          },
+          {
+            "id": "l-going",
+            "text": "going"
+          },
+          {
+            "id": "l-go",
+            "text": "go"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "0b2d27aed752a262b068ae3c41797ac0e65052b0ab627a7648ebd984b6f554c3",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "8c284fdf-1671-5519-9d6c-044bba92127c",
+      "is_demo": true,
+      "item_id": "c948d7f8-cbd2-57b0-9d1b-f30356b58c92",
+      "key": "en:exercise:free-time-weather-review-translate-beach-summer",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I want to go to the beach in summer because it's hot.",
+            "I want to go to the beach in the summer because it's hot.",
+            "In summer, I want to go to the beach because it's hot.",
+            "In summer I want to go to the beach because it's hot.",
+            "In the summer, I want to go to the beach because it's hot."
+          ]
+        },
+        "display_answer": "I want to go to the beach in summer because it's hot.",
+        "explanation": {
+          "vi": "Want to + go; \"mùa hè\" là in summer; \"trời nóng\" là it's hot - luôn có it làm chủ ngữ."
+        },
+        "known_wrong": [
+          {
+            "answer": "I want go to the beach in summer because it's hot.",
+            "error_tag": "want_to_infinitive",
+            "feedback_vi": "Thiếu to sau want - want to go."
+          },
+          {
+            "answer": "I want to go to the beach in summer because weather is hot.",
+            "error_tag": "missing_article_weather",
+            "feedback_vi": "Weather làm chủ ngữ cần the; tự nhiên hơn là because it's hot."
+          },
+          {
+            "answer": "I want to go to the beach on summer because it's hot.",
+            "error_tag": "preposition_season",
+            "feedback_vi": "Trước mùa dùng in - in summer."
+          },
+          {
+            "answer": "I want to go to the beach in summer because is hot.",
+            "error_tag": "missing_dummy_it",
+            "feedback_vi": "Thiếu chủ ngữ it - because it's hot."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Mùa hè mình muốn đi biển vì trời nóng."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "b4ec30aebe9edf5fd80e87a8fdeb463ba06d8b8591ab651c577f96b053ebf599",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "6fc554b1-5440-54a8-afcf-e25aaa545bbc",
+      "is_demo": true,
+      "item_id": "7e16394d-4450-5d27-8a3b-354ca799b6a0",
+      "key": "en:exercise:free-time-weather-review-translate-cinema-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Chủ nhật đi xem phim thì sao? - Xin lỗi, mình không đi được. Mình bận.",
+            "Thế Chủ nhật đi xem phim thì sao? - Xin lỗi, mình không đi được. Mình bận.",
+            "Chủ nhật đi xem phim thì sao? - Xin lỗi, mình không đi được. Mình bận rồi.",
+            "Chủ nhật đi xem phim nhé? - Xin lỗi, mình không đi được. Mình bận.",
+            "Chủ nhật mình đi xem phim thì sao? - Xin lỗi, mình không đi được. Mình bận.",
+            "Chủ nhật đi xem phim thì sao? - Xin lỗi, mình không thể. Mình bận.",
+            "Đi xem phim vào Chủ nhật thì sao? - Xin lỗi, mình không đi được. Mình bận."
+          ]
+        },
+        "display_answer": "Chủ nhật đi xem phim thì sao? - Xin lỗi, mình không đi được. Mình bận.",
+        "explanation": {
+          "vi": "What about going…? là \"… thì sao?\"; Sorry, I can't là lời từ chối lịch sự \"xin lỗi, mình không đi được\", kèm lý do I'm busy (mình bận)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "order_index": 10,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "What about going to the cinema on Sunday? - Sorry, I can't. I'm busy."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "5da00e6d0c2dbe873e4a8f068d3adb51890883b4f681a9c0890a129211b04547",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "99ec7867-a297-5e94-bc87-385dd31d718f",
+      "is_demo": true,
+      "item_id": "e07216f2-b289-54ac-92e2-fc63b522284c",
+      "key": "en:exercise:free-time-weather-review-translate-free",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Are you free this weekend?",
+            "Are you free at the weekend?",
+            "Are you free on the weekend?",
+            "This weekend, are you free?"
+          ]
+        },
+        "display_answer": "Are you free this weekend?",
+        "explanation": {
+          "vi": "Free (rảnh) là tính từ, nên câu hỏi đảo are lên đầu - Are you free…? This weekend đứng cuối, không có giới từ."
+        },
+        "known_wrong": [
+          {
+            "answer": "You free this weekend?",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu are - Are you free this weekend?"
+          },
+          {
+            "answer": "Do you free this weekend?",
+            "error_tag": "do_with_adjective",
+            "feedback_vi": "Free là tính từ nên dùng be - Are you free?"
+          },
+          {
+            "answer": "Are you free in this weekend?",
+            "error_tag": "preposition",
+            "feedback_vi": "This weekend không cần giới từ."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Cuối tuần này bạn có rảnh không?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "97a3f05809fa9b4d1e5a854f6e22c7abc1d4baa6262cefefe6bca4dbe9cded17",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "fed9e073-77eb-5ea0-bd11-8de95641af4d",
+      "is_demo": true,
+      "item_id": "d5b7ca71-618f-52b4-ad30-b65a1119a5ec",
+      "key": "en:exercise:free-time-weather-review-translate-hate-swim",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I hate swimming, but I like playing football.",
+            "I hate swimming but I like playing football.",
+            "I hate swimming, but I like football.",
+            "I hate swimming, but I like playing soccer."
+          ]
+        },
+        "display_answer": "I hate swimming, but I like playing football.",
+        "explanation": {
+          "vi": "Hate và like đều + -ing. Đá bóng là play football, không có the."
+        },
+        "known_wrong": [
+          {
+            "answer": "I hate swim, but I like play football.",
+            "error_tag": "like_plus_ing",
+            "feedback_vi": "Sau hate và like dùng -ing - swimming, playing."
+          },
+          {
+            "answer": "I hate swimming, but I like playing the football.",
+            "error_tag": "article",
+            "feedback_vi": "Môn thể thao không có the - playing football."
+          },
+          {
+            "answer": "I hate swimming, but I like play football.",
+            "error_tag": "like_plus_ing",
+            "feedback_vi": "Sau like dùng -ing - playing football."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Mình ghét bơi, nhưng mình thích đá bóng."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
       "content_hash": "b04e63128eed43947eae112526943cc6705a0028cc411f046a9a0da56bccfcae",
       "difficulty": 2,
       "exercise_type": "fill_blank",
@@ -25029,6 +27413,805 @@ select content_private.import_bundle($bundle${
         "direction": "vi_to_target",
         "source_lang": "vi",
         "source_text": "Xin hỏi ai gọi đấy ạ?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "84c0fd4a2e4bb622e92869b21fef41231495acd15d553511ee37c71663bf4e5b",
+      "difficulty": 1,
+      "exercise_type": "fill_blank",
+      "id": "f6753df6-d9b9-5624-aaad-e394d8330206",
+      "is_demo": true,
+      "item_id": "95fdbeaa-7069-509c-a95c-0165e5b2eb7d",
+      "key": "en:exercise:lets-and-want-to-fill-want-to-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "to"
+            ],
+            "b2": [
+              "go"
+            ]
+          }
+        },
+        "display_answer": "I want to go to the beach this summer.",
+        "explanation": {
+          "vi": "Want + to + động từ nguyên mẫu - I want to go. Tiếng Việt \"muốn đi\" không có chữ nối, nhưng tiếng Anh bắt buộc có to."
+        },
+        "known_wrong": [
+          {
+            "answer": "going",
+            "error_tag": "want_to_infinitive",
+            "feedback_vi": "Sau want to là động từ nguyên mẫu - go, không phải going."
+          },
+          {
+            "answer": "goes",
+            "error_tag": "want_to_infinitive",
+            "feedback_vi": "Sau want to là động từ nguyên mẫu - go."
+          },
+          {
+            "answer": "for",
+            "error_tag": "want_to_infinitive",
+            "feedback_vi": "Want đi với to trước động từ - want to go."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          },
+          {
+            "id": "b2",
+            "width_hint": 2
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Mùa hè này mình muốn đi biển.",
+          "Gợi ý: want + một chữ nối + động từ \"đi\" nguyên mẫu."
+        ],
+        "template": "I want {{b1}} {{b2}} to the beach this summer."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "7a427c52d958957abab172a6d7f5697c0bf6eb341c56ca37d53e0dfd4a90e61b",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "adeefcc8-e8ba-595f-92a2-5c5a62eb9aa5",
+      "is_demo": true,
+      "item_id": "f6bd866c-9d04-5df9-b889-c26f7e5db97f",
+      "key": "en:exercise:lets-and-want-to-fill-what-about",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "going"
+            ],
+            "b2": [
+              "have"
+            ]
+          }
+        },
+        "display_answer": "What about going swimming? Or let's have lunch together.",
+        "explanation": {
+          "vi": "What about + -ing nên go thành going. Let's + động từ nguyên mẫu nên giữ have, không thêm to hay -ing."
+        },
+        "known_wrong": [
+          {
+            "answer": "go",
+            "error_tag": "what_about_ing",
+            "feedback_vi": "Sau What about dùng -ing - going."
+          },
+          {
+            "answer": "to go",
+            "error_tag": "what_about_ing",
+            "feedback_vi": "Sau What about dùng -ing - going, không dùng to."
+          },
+          {
+            "answer": "having",
+            "error_tag": "lets_infinitive",
+            "feedback_vi": "Sau let's là động từ nguyên mẫu - have."
+          },
+          {
+            "answer": "to have",
+            "error_tag": "lets_infinitive",
+            "feedback_vi": "Sau let's không có to - let's have."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          },
+          {
+            "id": "b2",
+            "width_hint": 4
+          }
+        ],
+        "template": "What about {{b1}} (go) swimming? Or let's {{b2}} (have) lunch together."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "32bcd77e3c46568e293d472a627e3eea56460c8a56c54e8a025bd1f944984bd2",
+      "difficulty": 1,
+      "exercise_type": "listen",
+      "id": "3bb7409b-c804-53f3-a549-672acf77dbc8",
+      "is_demo": true,
+      "item_id": "085dabc2-dd67-5a63-90ee-bc857b189471",
+      "key": "en:exercise:lets-and-want-to-listen-badminton",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "u3c"
+        },
+        "display_answer": "Hay là mình chơi cầu lông nhé? - Ý hay đấy.",
+        "explanation": {
+          "vi": "Why don't we…? là lời gợi ý \"hay là mình… nhé?\", không phải hỏi lý do. Badminton là cầu lông; That's a good idea là \"ý hay đấy\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "Why don't we play badminton? - That's a good idea.",
+        "options": [
+          {
+            "id": "l9e",
+            "lang": "vi",
+            "text": "Mình không chơi cầu lông. - Mình cũng vậy."
+          },
+          {
+            "id": "o1p",
+            "lang": "vi",
+            "text": "Hay là mình chơi bóng đá nhé? - Ý hay đấy."
+          },
+          {
+            "id": "u3c",
+            "lang": "vi",
+            "text": "Hay là mình chơi cầu lông nhé? - Ý hay đấy."
+          },
+          {
+            "id": "g6w",
+            "lang": "vi",
+            "text": "Tại sao bạn không chơi cầu lông? - Vì mình bận."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "0c9034a944495dd54dea5d8c10be0d5cc01a5300ced7bbce7abe3885c618e203",
+      "difficulty": 1,
+      "exercise_type": "mcq",
+      "id": "784cfa55-738e-55f6-ab7c-024afdb75bd3",
+      "is_demo": true,
+      "item_id": "4ec68260-ff86-5157-9ec4-fbf42c7087da",
+      "key": "en:exercise:lets-and-want-to-mcq-lets-go",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "a7h"
+        },
+        "display_answer": "go",
+        "explanation": {
+          "vi": "Sau Let's là động từ nguyên mẫu không có to - Let's go. To go, going, goes đều sai sau Let's."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "q2d",
+            "lang": "en",
+            "text": "to go"
+          },
+          {
+            "id": "a7h",
+            "lang": "en",
+            "text": "go"
+          },
+          {
+            "id": "v5s",
+            "lang": "en",
+            "text": "going"
+          },
+          {
+            "id": "j8n",
+            "lang": "en",
+            "text": "goes"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn từ đúng: Let's ___ to the park.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "74477e6dc846a87892c8f74368a0d0e3a47a3ff94f396a58085f1d838c609698",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "2bfe2a1f-9009-52e2-8921-17c58fcfd1bc",
+      "is_demo": true,
+      "item_id": "7e16394d-4450-5d27-8a3b-354ca799b6a0",
+      "key": "en:exercise:lets-and-want-to-mcq-refuse",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "n5b"
+        },
+        "display_answer": "Sorry, I can't. I'm busy on Saturday.",
+        "explanation": {
+          "vi": "Từ chối lịch sự - Sorry, I can't + lý do. Busy là tính từ nên cần be (I'm busy). Why don't we là lời rủ, không phải hỏi lý do, nên không trả lời Because; phủ định của can là can't, không phải don't can."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "d3t",
+            "lang": "en",
+            "text": "Sorry, I can't. I busy on Saturday."
+          },
+          {
+            "id": "h1q",
+            "lang": "en",
+            "text": "Sorry, I don't can. I'm busy."
+          },
+          {
+            "id": "r8y",
+            "lang": "en",
+            "text": "Because I'm busy."
+          },
+          {
+            "id": "n5b",
+            "lang": "en",
+            "text": "Sorry, I can't. I'm busy on Saturday."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Đồng nghiệp rủ: \"Why don't we play tennis on Saturday?\" Thứ Bảy bạn bận. Câu trả lời nào đúng và lịch sự?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a8d667596a2f23dd9699a74bbd4d93c54976fa9a1976f9ab33b6d08199da4d62",
+      "difficulty": 1,
+      "exercise_type": "mcq",
+      "id": "b7489b58-718b-5ff0-a896-585ec4e609b3",
+      "is_demo": true,
+      "item_id": "fb6e1d6a-5618-549d-97a2-63a63aa916a2",
+      "key": "en:exercise:lets-and-want-to-mcq-sounds-great",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "s4k"
+        },
+        "display_answer": "Sounds great!",
+        "explanation": {
+          "vi": "Sounds great! là cách nhận lời rủ tự nhiên. Yes, I am trả lời câu hỏi với be; No, thanks là từ chối; You're welcome đáp lại lời cảm ơn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "x2f",
+            "lang": "en",
+            "text": "No, thanks. I'm fine."
+          },
+          {
+            "id": "i8z",
+            "lang": "en",
+            "text": "Yes, I am."
+          },
+          {
+            "id": "s4k",
+            "lang": "en",
+            "text": "Sounds great!"
+          },
+          {
+            "id": "c6m",
+            "lang": "en",
+            "text": "You're welcome."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn của bạn nói: \"Let's go swimming tomorrow.\" Bạn muốn nhận lời. Câu nào phù hợp?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "b011c8377e142812ebb0ba1c28c04a23a8720bc4f0869418531238988af37ab0",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "913d2b16-b5c0-59c3-9d2a-9bfe0f0bdb0b",
+      "is_demo": true,
+      "item_id": "95fdbeaa-7069-509c-a95c-0165e5b2eb7d",
+      "key": "en:exercise:lets-and-want-to-order-do-you-want",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "z-do",
+              "z-you",
+              "z-want",
+              "z-to",
+              "z-play",
+              "z-badminton"
+            ]
+          ]
+        },
+        "display_answer": "Do you want to play badminton?",
+        "explanation": {
+          "vi": "Câu hỏi với want dùng Do + you + want to + động từ nguyên mẫu. Không dùng Are vì want là động từ thường, và sau to không dùng playing."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu hỏi: \"Bạn có muốn chơi cầu lông không?\"",
+        "tokens": [
+          {
+            "id": "z-play",
+            "text": "play"
+          },
+          {
+            "id": "z-are",
+            "text": "Are"
+          },
+          {
+            "id": "z-want",
+            "text": "want"
+          },
+          {
+            "id": "z-badminton",
+            "text": "badminton"
+          },
+          {
+            "id": "z-you",
+            "text": "you"
+          },
+          {
+            "id": "z-playing",
+            "text": "playing"
+          },
+          {
+            "id": "z-do",
+            "text": "Do"
+          },
+          {
+            "id": "z-to",
+            "text": "to"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "4c6dfa762a7eea450a5741e80da8c9dd5e0f2bc64088141debe9ed27d3174d2e",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "725a9ab0-595e-5bb8-8fba-317f9be25f48",
+      "is_demo": true,
+      "item_id": "085dabc2-dd67-5a63-90ee-bc857b189471",
+      "key": "en:exercise:lets-and-want-to-order-why-dont-we",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "y-why",
+              "y-dont",
+              "y-we",
+              "y-watch",
+              "y-a",
+              "y-film",
+              "y-at",
+              "y-home"
+            ]
+          ]
+        },
+        "display_answer": "Why don't we watch a film at home?",
+        "explanation": {
+          "vi": "Why don't we + động từ nguyên mẫu (watch, không có to) + a film + at home. Chủ ngữ we nên dùng don't, không dùng doesn't."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Hay là mình xem phim ở nhà nhé?\"",
+        "tokens": [
+          {
+            "id": "y-film",
+            "text": "film"
+          },
+          {
+            "id": "y-we",
+            "text": "we"
+          },
+          {
+            "id": "y-home",
+            "text": "home"
+          },
+          {
+            "id": "y-to",
+            "text": "to"
+          },
+          {
+            "id": "y-watch",
+            "text": "watch"
+          },
+          {
+            "id": "y-why",
+            "text": "Why"
+          },
+          {
+            "id": "y-at",
+            "text": "at"
+          },
+          {
+            "id": "y-dont",
+            "text": "don't"
+          },
+          {
+            "id": "y-a",
+            "text": "a"
+          },
+          {
+            "id": "y-doesnt",
+            "text": "doesn't"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "f4c6722c68ae078914e8f3a49340629a99060327c9dc0f1d5f954a6b26c944c3",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "fc8e8c75-3146-54cd-b766-a51882f93b35",
+      "is_demo": true,
+      "item_id": "4ec68260-ff86-5157-9ec4-fbf42c7087da",
+      "key": "en:exercise:lets-and-want-to-translate-lets-swim",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Let's go swimming!",
+            "Let us go swimming!",
+            "Let's go for a swim!",
+            "Let's go to the swimming pool!"
+          ]
+        },
+        "display_answer": "Let's go swimming!",
+        "explanation": {
+          "vi": "Câu rủ \"… đi!\" dùng Let's + động từ nguyên mẫu; đi bơi là go swimming (không có to)."
+        },
+        "known_wrong": [
+          {
+            "answer": "Let's to go swimming!",
+            "error_tag": "lets_infinitive",
+            "feedback_vi": "Sau Let's không có to - Let's go swimming."
+          },
+          {
+            "answer": "Let's going swimming!",
+            "error_tag": "lets_infinitive",
+            "feedback_vi": "Sau Let's là động từ nguyên mẫu - go, không phải going."
+          },
+          {
+            "answer": "Let's go to swimming!",
+            "error_tag": "go_to_ing",
+            "feedback_vi": "Go swimming không có to."
+          },
+          {
+            "answer": "Let's go swim!",
+            "error_tag": "collocation",
+            "feedback_vi": "Đi bơi là cụm cố định go swimming."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Mình đi bơi đi!"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "5b1562d688270ad5afff3bd014e695cdd8f892acf4a0f518033d0256999c960c",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "857f56d0-f986-5f49-9fdd-fc539684cee4",
+      "is_demo": true,
+      "item_id": "97d5625c-7840-53d0-8100-34ebe394b71b",
+      "key": "en:exercise:lets-and-want-to-translate-lunch-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Hay là mình ăn trưa cùng nhau nhé?",
+            "Hay là chúng ta ăn trưa cùng nhau nhé?",
+            "Hay mình cùng ăn trưa nhé?",
+            "Hay là mình cùng ăn trưa nhé?",
+            "Hay chúng mình ăn trưa cùng nhau nhé?",
+            "Mình ăn trưa cùng nhau nhé?",
+            "Sao mình không ăn trưa cùng nhau nhỉ?"
+          ]
+        },
+        "display_answer": "Hay là mình ăn trưa cùng nhau nhé?",
+        "explanation": {
+          "vi": "Why don't we…? là lời gợi ý, nên dịch tự nhiên là \"hay là mình… nhé?\" chứ không phải \"tại sao chúng ta không…\". Together là \"cùng nhau\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "Why don't we have lunch together?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a42121ba18ed0db77997f976483a47a95e84064f85b15822699835a34fc05274",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "65e2439e-92f8-5366-96fc-2c50ca498643",
+      "is_demo": true,
+      "item_id": "95fdbeaa-7069-509c-a95c-0165e5b2eb7d",
+      "key": "en:exercise:lets-and-want-to-translate-want-cinema",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I want to go to the cinema tonight.",
+            "Tonight I want to go to the cinema.",
+            "Tonight, I want to go to the cinema.",
+            "I want to go to the movies tonight.",
+            "I want to see a film tonight.",
+            "I want to see a movie tonight."
+          ]
+        },
+        "display_answer": "I want to go to the cinema tonight.",
+        "explanation": {
+          "vi": "\"Muốn đi\" = want to go; đi xem phim ở rạp là go to the cinema. Tonight đặt ở cuối hoặc đầu câu đều được."
+        },
+        "known_wrong": [
+          {
+            "answer": "I want go to the cinema tonight.",
+            "error_tag": "want_to_infinitive",
+            "feedback_vi": "Thiếu to sau want - I want to go."
+          },
+          {
+            "answer": "I want going to the cinema tonight.",
+            "error_tag": "want_to_infinitive",
+            "feedback_vi": "Want + to + động từ nguyên mẫu, không dùng -ing."
+          },
+          {
+            "answer": "I want to go to cinema tonight.",
+            "error_tag": "article",
+            "feedback_vi": "Cần the trước cinema - go to the cinema."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tối nay mình muốn đi xem phim."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "8e2ce902bd3be87d59fdaaa616aba2df4265f8aa7c728c9ea2d634a4f45a6374",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "b891283a-e2b5-5a9b-abd2-7b175513be71",
+      "is_demo": true,
+      "item_id": "f6bd866c-9d04-5df9-b889-c26f7e5db97f",
+      "key": "en:exercise:lets-and-want-to-translate-what-about-cinema",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "What about going to the cinema?",
+            "How about going to the cinema?",
+            "What about going to the movies?",
+            "How about going to the movies?",
+            "What about the cinema?",
+            "How about the cinema?"
+          ]
+        },
+        "display_answer": "What about going to the cinema?",
+        "explanation": {
+          "vi": "\"… thì sao?\" là What about / How about + -ing hoặc danh từ. Đi xem phim là go to the cinema → going to the cinema."
+        },
+        "known_wrong": [
+          {
+            "answer": "What about go to the cinema?",
+            "error_tag": "what_about_ing",
+            "feedback_vi": "Sau What about dùng -ing - going."
+          },
+          {
+            "answer": "What about to go to the cinema?",
+            "error_tag": "what_about_ing",
+            "feedback_vi": "Sau What about không dùng to - What about going…?"
+          },
+          {
+            "answer": "What about going to cinema?",
+            "error_tag": "article",
+            "feedback_vi": "Cần the trước cinema."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "order_index": 10,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Thế đi xem phim thì sao?"
       },
       "reviewed_at": null,
       "reviewed_by": null,
@@ -65640,6 +68823,796 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
+      "content_hash": "d602017bfae36105960c33b5a066a9c22fb90fa36f65c262bee21b28f9aa7078",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "624a7b2b-7616-5a8b-9c17-79150ac545f9",
+      "is_demo": true,
+      "item_id": "0c6b71f7-9577-50ac-9ce0-6214ba1a588b",
+      "key": "en:exercise:weather-and-seasons-fill-cold-hot",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "cold"
+            ],
+            "b2": [
+              "hot"
+            ]
+          }
+        },
+        "display_answer": "In Hanoi, it's cold in winter and hot in summer.",
+        "explanation": {
+          "vi": "Cold là lạnh, hot là nóng. Đừng nhầm với cool (mát) và warm (ấm) - thang nhiệt độ cold < cool < warm < hot."
+        },
+        "known_wrong": [
+          {
+            "answer": "cool",
+            "error_tag": "vocabulary",
+            "feedback_vi": "Cool là mát; lạnh là cold."
+          },
+          {
+            "answer": "warm",
+            "error_tag": "vocabulary",
+            "feedback_vi": "Warm là ấm; nóng là hot."
+          },
+          {
+            "answer": "colds",
+            "error_tag": "adjective_plural",
+            "feedback_vi": "Tính từ không thêm -s - cold."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          },
+          {
+            "id": "b2",
+            "width_hint": 3
+          }
+        ],
+        "template": "In Hanoi, it's {{b1}} (lạnh) in winter and {{b2}} (nóng) in summer."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "93981e9c127935baa524b8568b0b786c1838f51d795974c409ad0201ef69a3d6",
+      "difficulty": 1,
+      "exercise_type": "fill_blank",
+      "id": "40e4f07d-ef59-5514-8c01-6b7e93c20df6",
+      "is_demo": true,
+      "item_id": "c948d7f8-cbd2-57b0-9d1b-f30356b58c92",
+      "key": "en:exercise:weather-and-seasons-fill-in-summer-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "in"
+            ],
+            "b2": [
+              "hot"
+            ]
+          }
+        },
+        "display_answer": "We go to the beach in summer, and it's very hot.",
+        "explanation": {
+          "vi": "Mùa, tháng, năm đều đi với in - in summer. Hot là nóng, đứng sau it's very."
+        },
+        "known_wrong": [
+          {
+            "answer": "on",
+            "error_tag": "preposition_season",
+            "feedback_vi": "Trước mùa dùng in - in summer."
+          },
+          {
+            "answer": "at",
+            "error_tag": "preposition_season",
+            "feedback_vi": "Trước mùa dùng in - in summer."
+          },
+          {
+            "answer": "cold",
+            "error_tag": "vocabulary",
+            "feedback_vi": "Cold là lạnh; nóng là hot."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          },
+          {
+            "id": "b2",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Mùa hè bọn mình đi biển, và trời rất nóng.",
+          "Gợi ý: giới từ trước mùa có hai chữ cái; \"nóng\" là h…"
+        ],
+        "template": "We go to the beach {{b1}} summer, and it's very {{b2}}."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "c1dd07d18ca4ac48ee6a5b7d252238cc85cf81db8430c6abb5419464ffd70ea6",
+      "difficulty": 1,
+      "exercise_type": "listen",
+      "id": "584828ba-b5b4-54db-8ca7-ff6b7f642821",
+      "is_demo": true,
+      "item_id": "9c98b190-37d1-5a23-90a1-d8c3148a5288",
+      "key": "en:exercise:weather-and-seasons-listen-da-lat",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "t6b"
+        },
+        "display_answer": "Thời tiết ở Đà Lạt thế nào? - Trời mát và nhiều mây.",
+        "explanation": {
+          "vi": "Like trong What's the weather like? là \"như thế nào\", không phải \"thích\". Cool là mát (cold mới là lạnh), cloudy là nhiều mây."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "What's the weather like in Da Lat? - It's cool and cloudy.",
+        "options": [
+          {
+            "id": "e4s",
+            "lang": "vi",
+            "text": "Thời tiết ở Đà Lạt thế nào? - Trời nóng và nắng."
+          },
+          {
+            "id": "n8p",
+            "lang": "vi",
+            "text": "Bạn có thích Đà Lạt không? - Có, trời mát."
+          },
+          {
+            "id": "a1k",
+            "lang": "vi",
+            "text": "Thời tiết ở Đà Lạt thế nào? - Trời lạnh và có gió."
+          },
+          {
+            "id": "t6b",
+            "lang": "vi",
+            "text": "Thời tiết ở Đà Lạt thế nào? - Trời mát và nhiều mây."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "23f59d66dc25edc5dfe29603b8278cd733f229883b6c93831152649c4f3bf25e",
+      "difficulty": 1,
+      "exercise_type": "mcq",
+      "id": "a228621d-4509-5900-a6eb-60a78bb267d0",
+      "is_demo": true,
+      "item_id": "b052f8e4-44b4-5b18-8a86-5a94b0622024",
+      "key": "en:exercise:weather-and-seasons-mcq-its-hot",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "v2h"
+        },
+        "display_answer": "It's hot.",
+        "explanation": {
+          "vi": "Câu tiếng Anh cần chủ ngữ và động từ - It's (It is) + hot. Ba câu còn lại thiếu it hoặc thiếu is."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "m3z",
+            "lang": "en",
+            "text": "Weather hot."
+          },
+          {
+            "id": "c7q",
+            "lang": "en",
+            "text": "Is hot."
+          },
+          {
+            "id": "v2h",
+            "lang": "en",
+            "text": "It's hot."
+          },
+          {
+            "id": "y9d",
+            "lang": "en",
+            "text": "It hot."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào đúng nghĩa \"Trời nóng\"?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "12f60003033c91a59dda52d7e1475b0dce61cc0d99a43f298e44e40f33deb523",
+      "difficulty": 1,
+      "exercise_type": "mcq",
+      "id": "14ddc39d-2834-5ce2-8cc4-a9f2094c36f1",
+      "is_demo": true,
+      "item_id": "00f8dce2-6219-544f-9546-f401b2b9771a",
+      "key": "en:exercise:weather-and-seasons-mcq-rainy",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "g5r"
+        },
+        "display_answer": "It's rainy today.",
+        "explanation": {
+          "vi": "Sau It's cần tính từ - rainy. Rain là danh từ nên It is rain sai; It rainy thiếu is."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "l2u",
+            "lang": "en",
+            "text": "It is rain today."
+          },
+          {
+            "id": "g5r",
+            "lang": "en",
+            "text": "It's rainy today."
+          },
+          {
+            "id": "w7f",
+            "lang": "en",
+            "text": "It rainy today."
+          },
+          {
+            "id": "k4c",
+            "lang": "en",
+            "text": "Rain is today."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào đúng nghĩa \"Hôm nay trời mưa\"?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "8f4afe558696fd98d4ce77d29472b876beb048366a8790aa2d93cd9529794e32",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "2423b34a-cf2c-5119-8d2c-a9cd809f74ce",
+      "is_demo": true,
+      "item_id": "9f0ac97f-13b1-5c3b-8c6d-7f9569b25c42",
+      "key": "en:exercise:weather-and-seasons-mcq-sapa",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "i3w"
+        },
+        "display_answer": "It's very cold, and it sometimes snows.",
+        "explanation": {
+          "vi": "Bắt đầu bằng It's + tính từ; snow là động từ, với it phải thêm -s - it sometimes snows. Weather is… thiếu the, còn very phải đứng trước tính từ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "d6m",
+            "lang": "en",
+            "text": "It is cold weather very."
+          },
+          {
+            "id": "x5t",
+            "lang": "en",
+            "text": "It's very cold, and it sometimes snow."
+          },
+          {
+            "id": "b8n",
+            "lang": "en",
+            "text": "Weather is very cold."
+          },
+          {
+            "id": "i3w",
+            "lang": "en",
+            "text": "It's very cold, and it sometimes snows."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Một du khách hỏi bạn: \"What's the weather like in Sa Pa in winter?\" Câu trả lời nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "9cafaa112a2b6a36c5a9d63162339cf7cab42334b6cb6ff86b11d848ad2928fb",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "a54622a9-4e7f-51f3-9f1e-590ef29a9a04",
+      "is_demo": true,
+      "item_id": "ba9e65d1-b3e4-5323-8082-c5f722bf6996",
+      "key": "en:exercise:weather-and-seasons-order-favourite-season",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "r-my",
+              "r-favourite",
+              "r-season",
+              "r-is",
+              "r-autumn"
+            ],
+            [
+              "r-autumn",
+              "r-is",
+              "r-my",
+              "r-favourite",
+              "r-season"
+            ]
+          ]
+        },
+        "display_answer": "My favourite season is autumn.",
+        "explanation": {
+          "vi": "My favourite season = mùa mình thích nhất; favourite đứng trước season. Cũng có thể đảo - Autumn is my favourite season."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Mùa mình thích nhất là mùa thu.\"",
+        "tokens": [
+          {
+            "id": "r-season",
+            "text": "season"
+          },
+          {
+            "id": "r-autumn",
+            "text": "autumn"
+          },
+          {
+            "id": "r-on",
+            "text": "on"
+          },
+          {
+            "id": "r-favourite",
+            "text": "favourite"
+          },
+          {
+            "id": "r-is",
+            "text": "is"
+          },
+          {
+            "id": "r-my",
+            "text": "my"
+          },
+          {
+            "id": "r-colour",
+            "text": "colour"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "f6ad854ceaea080190e938c930bf4809e0b7c272d7483d9b5df79dcbb4c8bfe4",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "3dfeb70d-9de4-5a32-8750-5fb8eed63fc0",
+      "is_demo": true,
+      "item_id": "9c98b190-37d1-5a23-90a1-d8c3148a5288",
+      "key": "en:exercise:weather-and-seasons-order-question",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "q-whats",
+              "q-the",
+              "q-weather",
+              "q-like",
+              "q-today"
+            ]
+          ]
+        },
+        "display_answer": "What's the weather like today?",
+        "explanation": {
+          "vi": "Câu hỏi What's + the weather + like + today. Weather không đếm được nên không dùng a; câu có like thì bắt đầu bằng What, không phải How."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu hỏi: \"Hôm nay thời tiết thế nào?\"",
+        "tokens": [
+          {
+            "id": "q-like",
+            "text": "like"
+          },
+          {
+            "id": "q-today",
+            "text": "today"
+          },
+          {
+            "id": "q-how",
+            "text": "How"
+          },
+          {
+            "id": "q-weather",
+            "text": "weather"
+          },
+          {
+            "id": "q-whats",
+            "text": "What's"
+          },
+          {
+            "id": "q-a",
+            "text": "a"
+          },
+          {
+            "id": "q-the",
+            "text": "the"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "4fa415b16abca70029e03dabc2dc004895466d229e17b8d1d39f48afef856327",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "70d40a16-5d49-5f09-a5a2-071d21ad4020",
+      "is_demo": true,
+      "item_id": "9c98b190-37d1-5a23-90a1-d8c3148a5288",
+      "key": "en:exercise:weather-and-seasons-translate-hanoi-weather",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "What's the weather like in Hanoi?",
+            "What's the weather like in Ha Noi?",
+            "How's the weather in Hanoi?",
+            "How is the weather in Hanoi?",
+            "What is the weather in Hanoi like?"
+          ]
+        },
+        "display_answer": "What's the weather like in Hanoi?",
+        "explanation": {
+          "vi": "\"Thời tiết thế nào?\" = What's the weather like? (like = như thế nào). Cách khác - How's the weather in Hanoi?"
+        },
+        "known_wrong": [
+          {
+            "answer": "How is the weather like in Hanoi?",
+            "error_tag": "how_like",
+            "feedback_vi": "Câu có like dùng What - What's the weather like…? Nếu dùng How thì bỏ like."
+          },
+          {
+            "answer": "What's weather like in Hanoi?",
+            "error_tag": "missing_article_weather",
+            "feedback_vi": "Cần the trước weather."
+          },
+          {
+            "answer": "What's the weather in Hanoi?",
+            "error_tag": "missing_like",
+            "feedback_vi": "Thiếu like ở cuối - What's the weather like in Hanoi?"
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Thời tiết ở Hà Nội thế nào?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "4bd0e05051afeb307c04fc87f45068efa824d48722901978ca22da95f7ef31d3",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "ebe2ab63-bc89-559b-85df-bf53ca6f9097",
+      "is_demo": true,
+      "item_id": "777c4645-1d3e-5b03-a6e7-fc3aba219a25",
+      "key": "en:exercise:weather-and-seasons-translate-rainy-season-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Ở miền Nam Việt Nam, mùa mưa kéo dài từ tháng Năm đến tháng Mười.",
+            "Ở miền Nam Việt Nam, mùa mưa là từ tháng Năm đến tháng Mười.",
+            "Ở miền Nam Việt Nam, mùa mưa từ tháng Năm đến tháng Mười.",
+            "Ở miền Nam Việt Nam, mùa mưa kéo dài từ tháng 5 đến tháng 10.",
+            "Ở miền Nam Việt Nam, mùa mưa từ tháng 5 đến tháng 10.",
+            "Ở miền Nam Việt Nam, mùa mưa là từ tháng 5 đến tháng 10.",
+            "Miền Nam Việt Nam có mùa mưa từ tháng Năm đến tháng Mười.",
+            "Miền Nam Việt Nam có mùa mưa từ tháng 5 đến tháng 10."
+          ]
+        },
+        "display_answer": "Ở miền Nam Việt Nam, mùa mưa kéo dài từ tháng Năm đến tháng Mười.",
+        "explanation": {
+          "vi": "The rainy season là mùa mưa; from May to October là \"từ tháng Năm đến tháng Mười\". Tiếng Việt có thể viết tháng bằng số."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "In the south of Vietnam, the rainy season is from May to October."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "7e7239c2956de9d91257314041851427808d50b3d57bdd38af868ee2d0a7aeb9",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "e4b2964b-f9f6-51c0-854a-743f41d750b9",
+      "is_demo": true,
+      "item_id": "817eb4a5-57d4-51fb-bb70-2e734a6d3284",
+      "key": "en:exercise:weather-and-seasons-translate-summer-here",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "It's very hot here in summer.",
+            "It's very hot here in the summer.",
+            "In summer, it's very hot here.",
+            "In summer it's very hot here.",
+            "In the summer, it's very hot here.",
+            "Summer here is very hot.",
+            "The summer here is very hot."
+          ]
+        },
+        "display_answer": "It's very hot here in summer.",
+        "explanation": {
+          "vi": "Câu thời tiết bắt đầu bằng It's; \"mùa hè\" là in summer, đặt đầu hoặc cuối câu đều được."
+        },
+        "known_wrong": [
+          {
+            "answer": "It's very hot here on summer.",
+            "error_tag": "preposition_season",
+            "feedback_vi": "Trước mùa dùng in - in summer."
+          },
+          {
+            "answer": "Weather is very hot here in summer.",
+            "error_tag": "missing_article_weather",
+            "feedback_vi": "Thiếu the trước weather; tự nhiên hơn là It's very hot here in summer."
+          },
+          {
+            "answer": "Very hot here in summer.",
+            "error_tag": "missing_dummy_it",
+            "feedback_vi": "Câu thiếu chủ ngữ và động từ - It's very hot here."
+          },
+          {
+            "answer": "In summer is very hot here.",
+            "error_tag": "missing_dummy_it",
+            "feedback_vi": "Thiếu chủ ngữ it - In summer, it's very hot here."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "order_index": 10,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Mùa hè ở đây trời rất nóng."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "91836e3bb7748e26e1f7efe10d2d5bccd91269026503cb1f0268e94103e252a3",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "40f006b5-f933-57fb-b899-5ee6e0c95ac6",
+      "is_demo": true,
+      "item_id": "b052f8e4-44b4-5b18-8a86-5a94b0622024",
+      "key": "en:exercise:weather-and-seasons-translate-sunny-hot",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "It's sunny and hot today.",
+            "It's hot and sunny today.",
+            "Today it's sunny and hot.",
+            "Today it's hot and sunny.",
+            "Today, it's sunny and hot.",
+            "Today, it's hot and sunny.",
+            "The weather is sunny and hot today."
+          ]
+        },
+        "display_answer": "It's sunny and hot today.",
+        "explanation": {
+          "vi": "Câu thời tiết cần It's + tính từ. \"Nắng\" là sunny (tính từ), \"nóng\" là hot."
+        },
+        "known_wrong": [
+          {
+            "answer": "Weather is sunny and hot today.",
+            "error_tag": "missing_article_weather",
+            "feedback_vi": "Weather làm chủ ngữ phải có the - hoặc nói tự nhiên hơn là It's sunny and hot today."
+          },
+          {
+            "answer": "Is sunny and hot today.",
+            "error_tag": "missing_dummy_it",
+            "feedback_vi": "Thiếu chủ ngữ it - It's sunny and hot today."
+          },
+          {
+            "answer": "It sunny and hot today.",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu is - It's (It is) sunny."
+          },
+          {
+            "answer": "It is sun and hot today.",
+            "error_tag": "word_form",
+            "feedback_vi": "Sun là danh từ; trời nắng là tính từ sunny."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Hôm nay trời nắng và nóng."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
       "content_hash": "0e0e1a5a4e5bd49f67de0f0359c7b9bd8989ae6477f83336dffd90bb8a5c8e37",
       "difficulty": 3,
       "exercise_type": "fill_blank",
@@ -79011,6 +82984,772 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "bbbbad5214ef8f089bad1d6dff64b3d812d6f668be7f25db6ad43a5ab62749df",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "1698abe1-1e9d-588d-a592-582d8b988e92",
+      "is_demo": true,
+      "item_id": "54b0fd61-b435-5a53-8fe7-5da53c5ed2cf",
+      "key": "ko:exercise:apartment-life-fill-aircon-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "놓고",
+              "두고"
+            ]
+          }
+        },
+        "display_answer": "더워서 에어컨을 켜 놓고 외출했어요.",
+        "explanation": {
+          "vi": "켜 놓고 / 켜 두고 - bật điều hoà và để nó chạy, rồi mới đi ra ngoài. -고 nối hai hành động theo thứ tự."
+        },
+        "known_wrong": [
+          {
+            "answer": "있고",
+            "error_tag": "state_form",
+            "feedback_vi": "켜 있다 không đúng; trạng thái do người làm rồi để nguyên là 켜 놓다 / 켜 두다."
+          },
+          {
+            "answer": "놓아서",
+            "error_tag": "connector_meaning",
+            "feedback_vi": "-아서 chỉ lý do; ở đây cần \"bật sẵn rồi ra ngoài\" - 놓고."
+          },
+          {
+            "answer": "주고",
+            "error_tag": "auxiliary_meaning",
+            "feedback_vi": "-아/어 주다 là làm giúp người khác, không phải \"để sẵn\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Trời nóng nên tôi bật sẵn điều hoà rồi ra ngoài.",
+          "Gợi ý: -아/어 놓다 (hoặc 두다) + -고."
+        ],
+        "template": "더워서 에어컨을 켜 {{b1}} 외출했어요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "05e279f7a8205137baedc37a8b9028e6fe6f3f229ef3bc4ec272dc37d61b5d99",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "69fc65cc-db95-5a25-b2f0-80fdae556413",
+      "is_demo": true,
+      "item_id": "1c857d41-783e-576d-ae6e-694b4f76b282",
+      "key": "ko:exercise:apartment-life-fill-noise",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "층간 소음",
+              "층간소음"
+            ],
+            "b2": [
+              "쉬워요"
+            ]
+          }
+        },
+        "display_answer": "오래된 아파트는 층간 소음이 생기기 쉬워요.",
+        "explanation": {
+          "vi": "Tiếng ồn giữa các tầng là 층간 소음. \"Dễ xảy ra\" = 생기기 쉬워요 (bất quy tắc ㅂ)."
+        },
+        "known_wrong": [
+          {
+            "answer": "쉽어요",
+            "error_tag": "b_irregular",
+            "feedback_vi": "쉽다 là bất quy tắc ㅂ - 쉬워요."
+          },
+          {
+            "answer": "쉽게",
+            "error_tag": "gi_swipda_form",
+            "feedback_vi": "Sau -기 cần tính từ 쉽다 ở cuối câu - 쉬워요."
+          },
+          {
+            "answer": "어려워요",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "Câu gốc nói \"dễ xảy ra\" - 쉬워요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          },
+          {
+            "id": "b2",
+            "width_hint": 3
+          }
+        ],
+        "template": "(Chung cư cũ dễ xảy ra tiếng ồn giữa các tầng.) 오래된 아파트는 {{b1}}이 생기기 {{b2}}."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "456368ad09214c3693e16663f2ee2dd9e8cb0f1edeab907f9e446e2b77453a81",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "ab30612f-7abc-5829-806c-6d4d69736dfb",
+      "is_demo": true,
+      "item_id": "e5e7f52a-6736-5448-bcd0-b32ffe7f7717",
+      "key": "ko:exercise:apartment-life-listen-recycling",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r6m"
+        },
+        "display_answer": "Chung cư của tôi phân loại rác tái chế vào tối thứ Tư. Rác thực phẩm phải vứt riêng.",
+        "explanation": {
+          "vi": "수요일 저녁 = tối thứ Tư; 분리수거 = phân loại rác tái chế; 따로 버려야 해요 = phải vứt riêng. Câu không nói \"buổi sáng\" hay \"vứt chung\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "우리 아파트는 수요일 저녁에 분리수거를 해요. 음식물 쓰레기는 따로 버려야 해요.",
+        "options": [
+          {
+            "id": "h9v",
+            "lang": "vi",
+            "text": "Ở chung cư của tôi, rác thực phẩm vứt chung với rác tái chế."
+          },
+          {
+            "id": "r6m",
+            "lang": "vi",
+            "text": "Chung cư của tôi phân loại rác tái chế vào tối thứ Tư. Rác thực phẩm phải vứt riêng."
+          },
+          {
+            "id": "p4z",
+            "lang": "vi",
+            "text": "Chung cư của tôi không cần phân loại rác."
+          },
+          {
+            "id": "e1c",
+            "lang": "vi",
+            "text": "Chung cư của tôi đổ rác thực phẩm vào sáng thứ Tư."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "d5f8b0cd3d29fffd92c3e17c2e14b5ad738fb7234737eb01c78b32b5875e2567",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "cd7bb7e6-44cf-5f38-b613-e9569ba499f5",
+      "is_demo": true,
+      "item_id": "adb1a82a-d4de-551e-92a1-f8f36e16f8ac",
+      "key": "ko:exercise:apartment-life-mcq-ask-neighbor",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "d6g"
+        },
+        "display_answer": "죄송하지만 밤에는 좀 조용히 해 주세요.",
+        "explanation": {
+          "vi": "죄송하지만 + -아/어 주세요 là cách nhờ lịch sự. 시끄럽게 là \"ồn ào\" (ngược ý); câu 반말 với hàng xóm là vô lễ; 조용히 해 놓다 không có nghĩa vì \"yên lặng\" không phải việc làm sẵn rồi để đó."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "k4s",
+            "lang": "ko",
+            "text": "죄송하지만 밤에는 좀 조용히 해 놓으세요."
+          },
+          {
+            "id": "i2r",
+            "lang": "ko",
+            "text": "죄송하지만 밤에는 좀 시끄럽게 해 주세요."
+          },
+          {
+            "id": "o9e",
+            "lang": "ko",
+            "text": "밤에 조용히 해!"
+          },
+          {
+            "id": "d6g",
+            "lang": "ko",
+            "text": "죄송하지만 밤에는 좀 조용히 해 주세요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Tầng trên ồn vào ban đêm. Bạn gặp hàng xóm tầng trên ở thang máy và muốn nhờ một cách lịch sự. Câu nào phù hợp?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "0f8b8e57b20fb62369903b230a234b866fe19ce14173dcbfd65b8842fadf0d8b",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "9fb4a555-abe8-5e76-820f-97e62f82f4d8",
+      "is_demo": true,
+      "item_id": "203b18cb-6819-5ad6-bec7-ea26843cca32",
+      "key": "ko:exercise:apartment-life-mcq-gi-eoryeopda",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "s7f"
+        },
+        "display_answer": "어려워요",
+        "explanation": {
+          "vi": "Đường phức tạp (복잡해서) nên \"khó tìm\" → 찾기 어려워요. 어렵다 là bất quy tắc ㅂ nên không viết 어렵어요; 쉬워요 trái nghĩa với vế trước."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "m3y",
+            "lang": "ko",
+            "text": "어렵어요"
+          },
+          {
+            "id": "s7f",
+            "lang": "ko",
+            "text": "어려워요"
+          },
+          {
+            "id": "b8q",
+            "lang": "ko",
+            "text": "쉬워요"
+          },
+          {
+            "id": "w2n",
+            "lang": "ko",
+            "text": "어렵게요"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn đáp án đúng: 이 동네는 길이 복잡해서 집을 찾기 ___.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "ec50a33e0cdc203e244176c6f6b8d4a02148a7b78a6af1a5050cbffba85f01c7",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "81c72733-cdd4-56b2-bc53-16526150439d",
+      "is_demo": true,
+      "item_id": "54b0fd61-b435-5a53-8fe7-5da53c5ed2cf",
+      "key": "ko:exercise:apartment-life-mcq-nota-meaning",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "u3k"
+        },
+        "display_answer": "Tôi đã mở sẵn cửa sổ (và để nó mở).",
+        "explanation": {
+          "vi": "-아/어 놓다 là làm xong rồi để nguyên kết quả, nên 열어 놓았어요 là \"đã mở sẵn\". \"Đang mở\" là 열고 있어요; \"định mở\" là 열려고 해요."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "a8d",
+            "lang": "vi",
+            "text": "Tôi đang mở cửa sổ."
+          },
+          {
+            "id": "u3k",
+            "lang": "vi",
+            "text": "Tôi đã mở sẵn cửa sổ (và để nó mở)."
+          },
+          {
+            "id": "l5x",
+            "lang": "vi",
+            "text": "Tôi định mở cửa sổ."
+          },
+          {
+            "id": "j2w",
+            "lang": "vi",
+            "text": "Cửa sổ đã bị đóng lại."
+          }
+        ],
+        "shuffle": true,
+        "stem": "창문을 열어 놓았어요 nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "ea4765b521c5e79d37ae0000cce114a82ebd029c54f7aa927f25e920bdcf153b",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "c3007d4e-f14e-5845-baf0-1fc24d6ca9fc",
+      "is_demo": true,
+      "item_id": "e5e7f52a-6736-5448-bcd0-b32ffe7f7717",
+      "key": "ko:exercise:apartment-life-mcq-reading-notice",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "x5h"
+        },
+        "display_answer": "일반 쓰레기는 종량제 봉투에 넣어서 버려야 해요.",
+        "explanation": {
+          "vi": "Thông báo nói rác thường phải cho vào 종량제 봉투, và nếu dùng túi khác thì sẽ không thu gom. Phân loại chỉ vào tối thứ Tư; rác thực phẩm bỏ vào thùng riêng (전용 통)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "c1t",
+            "lang": "ko",
+            "text": "다른 봉투를 사용해도 괜찮아요."
+          },
+          {
+            "id": "f8u",
+            "lang": "ko",
+            "text": "분리수거는 아무 때나 할 수 있어요."
+          },
+          {
+            "id": "x5h",
+            "lang": "ko",
+            "text": "일반 쓰레기는 종량제 봉투에 넣어서 버려야 해요."
+          },
+          {
+            "id": "n3b",
+            "lang": "ko",
+            "text": "음식물 쓰레기는 종량제 봉투에 버려요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "다음 안내문을 읽고 맞는 것을 고르십시오.\n[분리수거 안내]\n분리수거는 매주 수요일 저녁 6시부터 10시까지입니다. 음식물 쓰레기는 전용 통에 버리고, 일반 쓰레기는 종량제 봉투에 넣어서 버려 주십시오. 다른 봉투를 사용하면 쓰레기를 가져가지 않습니다. 날짜와 시간을 꼭 알아 두십시오.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "8bb61abdd8fcc70b991d9d2c9cf558a1b2b89233ef098aee5a101773298d025c",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "cc7f7ddd-185d-5af0-a9b4-001495656c34",
+      "is_demo": true,
+      "item_id": "fc99de96-8198-5341-a77f-f67af844c9d1",
+      "key": "ko:exercise:apartment-life-translate-full-option-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Vì là phòng studio đầy đủ nội thất nên không cần mua tủ lạnh.",
+            "Vì là phòng studio đầy đủ nội thất nên không phải mua tủ lạnh.",
+            "Phòng studio đầy đủ nội thất nên không cần mua tủ lạnh.",
+            "Phòng studio có đầy đủ nội thất nên không cần mua tủ lạnh.",
+            "Vì phòng đầy đủ nội thất nên không cần mua tủ lạnh.",
+            "Phòng có đủ đồ nên không cần mua tủ lạnh.",
+            "Vì là phòng có đủ đồ dùng nên bạn không cần mua tủ lạnh.",
+            "Đây là phòng studio đầy đủ nội thất nên không cần mua tủ lạnh.",
+            "Vì là phòng full nội thất nên không cần mua tủ lạnh."
+          ]
+        },
+        "display_answer": "Vì là phòng studio đầy đủ nội thất nên không cần mua tủ lạnh.",
+        "explanation": {
+          "vi": "풀옵션 = đầy đủ nội thất, đồ gia dụng; -(이)라서 = vì là; 안 -아도 돼요 = không… cũng được, không cần…."
+        },
+        "known_wrong": [
+          {
+            "answer": "Vì là phòng studio đầy đủ nội thất nên phải mua tủ lạnh.",
+            "error_tag": "negation_missed",
+            "feedback_vi": "안 사도 돼요 nghĩa là \"không mua cũng được\", tức là không cần mua."
+          },
+          {
+            "answer": "Vì là phòng studio không có nội thất nên không cần mua tủ lạnh.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "풀옵션 là \"đầy đủ nội thất, đồ gia dụng\", không phải \"không có\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "order_index": 10,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "풀옵션 원룸이라서 냉장고를 안 사도 돼요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "aea1a18500e0dae12aa8412620d510227bfe4d27fbf7c1f0d182978a45afb79c",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "2a779586-ea92-58de-9056-039e746cfa90",
+      "is_demo": true,
+      "item_id": "d5b9a055-8343-5444-b1d1-2b7d1bd7215d",
+      "key": "ko:exercise:apartment-life-translate-noisy-neighbor",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "이웃이 너무 시끄러워요.",
+            "이웃집이 너무 시끄러워요.",
+            "옆집이 너무 시끄러워요.",
+            "이웃이 정말 시끄러워요.",
+            "이웃이 진짜 시끄러워요.",
+            "이웃 사람이 너무 시끄러워요.",
+            "이웃 사람들이 너무 시끄러워요.",
+            "이웃들이 너무 시끄러워요."
+          ]
+        },
+        "display_answer": "이웃이 너무 시끄러워요.",
+        "explanation": {
+          "vi": "Hàng xóm = 이웃 (옆집 là nhà bên cạnh); ồn ào = 시끄럽다, bất quy tắc ㅂ → 시끄러워요."
+        },
+        "known_wrong": [
+          {
+            "answer": "이웃이 너무 시끄럽어요.",
+            "error_tag": "b_irregular",
+            "feedback_vi": "시끄럽다 là bất quy tắc ㅂ - 시끄러워요."
+          },
+          {
+            "answer": "이웃이 너무 조용해요.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "조용해요 là \"yên tĩnh\", ngược với \"ồn\"."
+          },
+          {
+            "answer": "이웃을 너무 시끄러워요.",
+            "error_tag": "particle_subject",
+            "feedback_vi": "시끄럽다 là tính từ, chủ ngữ dùng 이/가 - 이웃이."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Hàng xóm ồn quá."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "aeacb13384ae31d48decc8c96440df66ff7c59ec5475469094528ec53f34b8ab",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "b683246e-30ca-583e-9d03-b1682d068d29",
+      "is_demo": true,
+      "item_id": "1d4f3ba0-af06-5aae-be40-ecd4698f0de5",
+      "key": "ko:exercise:apartment-life-translate-save-number",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "집주인 전화번호를 꼭 저장해 두세요.",
+            "집주인 전화번호를 저장해 두세요.",
+            "집주인 번호를 꼭 저장해 두세요.",
+            "집주인 번호를 저장해 두세요.",
+            "집주인의 전화번호를 꼭 저장해 두세요.",
+            "집주인 전화번호를 꼭 저장해 놓으세요.",
+            "집주인 전화번호를 저장해 놓으세요.",
+            "집주인 번호를 꼭 저장해 놓으세요.",
+            "집주인 번호를 저장해 놓으세요."
+          ]
+        },
+        "display_answer": "집주인 전화번호를 꼭 저장해 두세요.",
+        "explanation": {
+          "vi": "Chủ nhà là 집주인; \"lưu sẵn để sau này dùng\" là 저장해 두다 (놓다 cũng được). 꼭 = nhớ, nhất định."
+        },
+        "known_wrong": [
+          {
+            "answer": "집주인 전화번호를 꼭 저장하고 있으세요.",
+            "error_tag": "duda_form",
+            "feedback_vi": "\"Lưu sẵn để sau dùng\" là -아/어 두다 - 저장해 두세요, không dùng -고 있다."
+          },
+          {
+            "answer": "집주인 전화번호를 꼭 저장해 주세요.",
+            "error_tag": "auxiliary_meaning",
+            "feedback_vi": "-아/어 주세요 là nhờ làm giúp; ý \"lưu sẵn\" cần 두세요 hoặc 놓으세요."
+          },
+          {
+            "answer": "jipjuin jeonhwabeonhoreul jeojanghae duseyo",
+            "error_tag": "romanization",
+            "feedback_vi": "Hãy viết bằng Hangul, không dùng phiên âm Latinh."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Bạn nhớ lưu sẵn số điện thoại của chủ nhà nhé."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "2eadf2eea686b646a8fda62322b4937251d02b6ae009f2e67919b04f317fb25b",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "5badb5f8-e5db-5bbf-966d-49b831b60297",
+      "is_demo": true,
+      "item_id": "54b0fd61-b435-5a53-8fe7-5da53c5ed2cf",
+      "key": "ko:exercise:apartment-life-translate-window",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "손님이 오기 전에 창문을 열어 놓았어요.",
+            "손님이 오기 전에 창문을 열어 놨어요.",
+            "손님이 오기 전에 창문을 열어 두었어요.",
+            "손님이 오기 전에 창문을 열어 뒀어요.",
+            "손님이 오기 전에 제가 창문을 열어 놓았어요.",
+            "손님이 오기 전에 제가 창문을 열어 놨어요.",
+            "손님이 오기 전에 제가 창문을 열어 뒀어요.",
+            "저는 손님이 오기 전에 창문을 열어 놓았어요.",
+            "저는 손님이 오기 전에 창문을 열어 놨어요.",
+            "손님이 오시기 전에 창문을 열어 놓았어요.",
+            "손님이 오시기 전에 창문을 열어 놨어요."
+          ]
+        },
+        "display_answer": "손님이 오기 전에 창문을 열어 놓았어요.",
+        "explanation": {
+          "vi": "\"Trước khi khách đến\" = 손님이 오기 전에; \"mở sẵn\" = 열어 놓다 hoặc 열어 두다, quá khứ 놓았어요 / 놨어요 / 두었어요 / 뒀어요."
+        },
+        "known_wrong": [
+          {
+            "answer": "손님이 오기 전에 창문이 열어 놓았어요.",
+            "error_tag": "particle_object",
+            "feedback_vi": "-아/어 놓다 cần tân ngữ - 창문을 열어 놓았어요."
+          },
+          {
+            "answer": "손님이 오기 전에 창문을 열고 있었어요.",
+            "error_tag": "nota_form",
+            "feedback_vi": "-고 있었어요 là \"đang mở\"; \"mở sẵn\" là 열어 놓았어요 / 열어 두었어요."
+          },
+          {
+            "answer": "손님이 온 후에 창문을 열어 놓았어요.",
+            "error_tag": "time_connector",
+            "feedback_vi": "\"Trước khi\" là -기 전에, không phải -(으)ㄴ 후에 (sau khi)."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Trước khi khách đến, tôi đã mở sẵn cửa sổ."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "490acbfd466b865257b62888c7469c39e89380505a56269b96ff5e1f49c85069",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "0435c512-dca4-56d8-8146-dee24dbb148a",
+      "is_demo": true,
+      "item_id": "6770c4ab-bf09-59d5-bf05-5f48205943f0",
+      "key": "ko:exercise:apartment-life-wb-trash-bag",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3",
+              "t4"
+            ]
+          ]
+        },
+        "display_answer": "일반 쓰레기는 종량제 봉투에 넣어서 버리세요.",
+        "explanation": {
+          "vi": "\"Cho vào đâu\" dùng trợ từ 에 - 종량제 봉투에 넣어서. -아서 nối \"cho vào\" rồi \"vứt\"; 봉투를 là token thừa."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Hàn: \"Rác thường hãy cho vào túi rác quy định rồi vứt.\"",
+        "tokens": [
+          {
+            "id": "t3",
+            "text": "넣어서"
+          },
+          {
+            "id": "t5",
+            "text": "봉투를"
+          },
+          {
+            "id": "t1",
+            "text": "일반 쓰레기는"
+          },
+          {
+            "id": "t4",
+            "text": "버리세요"
+          },
+          {
+            "id": "t2",
+            "text": "종량제 봉투에"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
       "status": "published"
     },
     {
@@ -102973,6 +107712,756 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ko",
+      "content_hash": "a84b453234acb297cb2adcf8bb1d961923badcba305a90c1a1e3252c5733d978",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "319f081e-90e9-5d89-ab92-94cb2860300c",
+      "is_demo": true,
+      "item_id": "e0a0d6dc-30fc-55d1-a242-f9c0bdec8f25",
+      "key": "ko:exercise:giving-advice-fill-jeongdoro-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "잘"
+            ]
+          }
+        },
+        "display_answer": "위층이 잠을 못 잘 정도로 시끄러워요.",
+        "explanation": {
+          "vi": "V-(으)ㄹ 정도로 - 자다 → 잘 정도로 (đến mức ngủ…). 못 잘 정도로 = đến mức không ngủ được."
+        },
+        "known_wrong": [
+          {
+            "answer": "자는",
+            "error_tag": "adnominal_form",
+            "feedback_vi": "정도로 đi với dạng -(으)ㄹ - 못 잘 정도로."
+          },
+          {
+            "answer": "자서",
+            "error_tag": "adnominal_form",
+            "feedback_vi": "Trước danh từ 정도 cần định ngữ -(으)ㄹ - 잘."
+          },
+          {
+            "answer": "잘을",
+            "error_tag": "eul_form",
+            "feedback_vi": "자다 không có patchim, chỉ thêm ㄹ - 잘."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Tầng trên ồn đến mức tôi không ngủ được.",
+          "Gợi ý: 자다 + -(으)ㄹ 정도로."
+        ],
+        "template": "위층이 잠을 못 {{b1}} 정도로 시끄러워요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "94e95fceacc1f0a0493dcba85e038e1c3372d627d00435855844fd7c401f4d74",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "aae47acf-55d8-5033-be25-138da838eaa0",
+      "is_demo": true,
+      "item_id": "e88e5919-bfd7-5512-bfb0-e3dcf1ffbf7f",
+      "key": "ko:exercise:giving-advice-fill-not-coffee",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "않는"
+            ]
+          }
+        },
+        "display_answer": "밤늦게 커피를 마시지 않는 게 좋겠어요.",
+        "explanation": {
+          "vi": "Phủ định của V-는 게 좋겠다 là V-지 않는 게 좋겠다 - \"không nên… thì hơn\"."
+        },
+        "known_wrong": [
+          {
+            "answer": "않은",
+            "error_tag": "adnominal_form",
+            "feedback_vi": "Lời khuyên dùng định ngữ hiện tại - 않는 게 좋겠어요."
+          },
+          {
+            "answer": "안",
+            "error_tag": "negation_form",
+            "feedback_vi": "Sau -지 cần 않다 chia định ngữ - 않는."
+          },
+          {
+            "answer": "마는",
+            "error_tag": "negation_form",
+            "feedback_vi": "-지 말다 dùng cho mệnh lệnh (마세요); trước 게 좋겠다 dùng -지 않는."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "template": "(Bạn không nên uống cà phê lúc khuya.) 밤늦게 커피를 마시지 {{b1}} 게 좋겠어요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "4a0c46eb00b1d946a3c1b3a149747c4d8ec9b094a2615de2d230c0cea15dd612",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "edfb231d-55e3-5b8a-b17c-c3906c7196f8",
+      "is_demo": true,
+      "item_id": "5e97a6e0-91ca-5fa0-989c-3a6f8d7786a4",
+      "key": "ko:exercise:giving-advice-listen-ji-geuraeyo",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "v2g"
+        },
+        "display_answer": "Mệt thế thì sao hôm nay bạn không đi ngủ sớm đi?",
+        "explanation": {
+          "vi": "-지 그래요? là gợi ý \"sao bạn không… đi?\". Đây là hiện tại (오늘), không phải -지 그랬어요? (\"lẽ ra nên…\") và không phải câu hỏi xác nhận."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "그렇게 피곤하면 오늘은 일찍 자지 그래요?",
+        "options": [
+          {
+            "id": "p6w",
+            "lang": "vi",
+            "text": "Lẽ ra hôm qua bạn nên ngủ sớm."
+          },
+          {
+            "id": "d8r",
+            "lang": "vi",
+            "text": "Hôm nay bạn mệt nên đã ngủ sớm phải không?"
+          },
+          {
+            "id": "v2g",
+            "lang": "vi",
+            "text": "Mệt thế thì sao hôm nay bạn không đi ngủ sớm đi?"
+          },
+          {
+            "id": "k4m",
+            "lang": "vi",
+            "text": "Mệt thế mà hôm nay bạn vẫn không ngủ à?"
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "18fc8d356e54caaafeb46705770ce59fd06946c6320257c40fab085e9a6fd8fd",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "1d636f7f-73b8-52cd-9529-0fc108932ad2",
+      "is_demo": true,
+      "item_id": "5e97a6e0-91ca-5fa0-989c-3a6f8d7786a4",
+      "key": "ko:exercise:giving-advice-mcq-boss",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "h2c"
+        },
+        "display_answer": "부장님, 오늘은 일찍 들어가서 쉬시는 게 좋겠어요.",
+        "explanation": {
+          "vi": "Với cấp trên dùng -(으)시는 게 좋겠어요 - vừa khuyên vừa kính ngữ. -지 그래요? mang ý bảo ban nên thất lễ; 쉬어 là 반말; -(으)ㄹ까 봐요 là \"tôi định…/sợ là\" - sai nghĩa."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "h2c",
+            "lang": "ko",
+            "text": "부장님, 오늘은 일찍 들어가서 쉬시는 게 좋겠어요."
+          },
+          {
+            "id": "s8l",
+            "lang": "ko",
+            "text": "부장님, 오늘은 일찍 들어가서 쉴까 봐요."
+          },
+          {
+            "id": "b4y",
+            "lang": "ko",
+            "text": "부장님, 오늘은 일찍 들어가서 쉬어."
+          },
+          {
+            "id": "n7u",
+            "lang": "ko",
+            "text": "부장님, 오늘은 일찍 들어가서 쉬지 그래요?"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Trưởng phòng (부장님) ho cả buổi sáng. Bạn muốn khuyên ông về sớm nghỉ ngơi một cách lễ phép. Câu nào phù hợp?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "b0564b0be690e11ab68982be394a49500a0f5013b0be3e987c27ac20220dbaad",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "4bc93135-3648-5d6b-982d-6cd3e45a9280",
+      "is_demo": true,
+      "item_id": "81623afb-56e0-56b0-bed1-202a3e440974",
+      "key": "ko:exercise:giving-advice-mcq-kkabwa-fear",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "f3a"
+        },
+        "display_answer": "시험에 떨어질까 봐 열심히 공부했어요.",
+        "explanation": {
+          "vi": "-(으)ㄹ까 봐 đi với điều sợ xảy ra (떨어지다 - trượt). 합격할까 봐 là \"sợ đỗ\" (vô lý); vế sau không là mệnh lệnh -세요; 떨어지다 không có patchim nên là 떨어질까, không phải 떨어지까."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "t1x",
+            "lang": "ko",
+            "text": "시험에 떨어지까 봐 열심히 공부했어요."
+          },
+          {
+            "id": "m5e",
+            "lang": "ko",
+            "text": "시험에 떨어질까 봐 열심히 공부하세요."
+          },
+          {
+            "id": "z7q",
+            "lang": "ko",
+            "text": "시험에 합격할까 봐 열심히 공부했어요."
+          },
+          {
+            "id": "f3a",
+            "lang": "ko",
+            "text": "시험에 떨어질까 봐 열심히 공부했어요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào có nghĩa \"Vì sợ thi trượt nên tôi đã học chăm\"?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "f3f0d6f9d8400a138f5c311b860f94b705b1255627984362f16006d6bc9247c7",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "fec5faf8-124c-5a3e-88e4-ef2b32e8a3ff",
+      "is_demo": true,
+      "item_id": "e88e5919-bfd7-5512-bfb0-e3dcf1ffbf7f",
+      "key": "ko:exercise:giving-advice-mcq-neun-ge-form",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c9h"
+        },
+        "display_answer": "쉬는",
+        "explanation": {
+          "vi": "Lời khuyên V-는 게 좋겠다 dùng định ngữ hiện tại -는 → 쉬는 게 좋겠어요. 쉰 là quá khứ; 쉴 là tương lai; 쉬어 không đứng trước 게."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "w3b",
+            "lang": "ko",
+            "text": "쉰"
+          },
+          {
+            "id": "c9h",
+            "lang": "ko",
+            "text": "쉬는"
+          },
+          {
+            "id": "r1s",
+            "lang": "ko",
+            "text": "쉬어"
+          },
+          {
+            "id": "e6n",
+            "lang": "ko",
+            "text": "쉴"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn dạng đúng: 너무 피곤하면 오늘은 집에서 ___ 게 좋겠어요.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "b01c9dea38ee7d11157043d26831524fcb81e3b204fe1d4cf00090b908a69efb",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "06ffadcc-8ae5-537c-957c-a915a7ba26a4",
+      "is_demo": true,
+      "item_id": "8b7ed4c8-7080-5fbe-800e-83da0b2eb1eb",
+      "key": "ko:exercise:giving-advice-mcq-reading-chat",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "g5k"
+        },
+        "display_answer": "지아 씨는 민수 씨에게 상담을 받아 보라고 했어요.",
+        "explanation": {
+          "vi": "상담을 받아 보지 그래요? là gợi ý \"sao không thử đi tư vấn\". Minsu không ngủ được (잠을 못 잘 정도로), Jia khuyên cuối tuần nghỉ ngơi, và 불면증이 생길까 봐 là \"lo sẽ bị mất ngủ\" - chưa bị."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "y6d",
+            "lang": "ko",
+            "text": "민수 씨는 불면증이 생겨서 병원에 다녀요."
+          },
+          {
+            "id": "g5k",
+            "lang": "ko",
+            "text": "지아 씨는 민수 씨에게 상담을 받아 보라고 했어요."
+          },
+          {
+            "id": "a2t",
+            "lang": "ko",
+            "text": "민수 씨는 요즘 잠을 아주 잘 자요."
+          },
+          {
+            "id": "l9p",
+            "lang": "ko",
+            "text": "지아 씨는 민수 씨에게 주말에도 일하라고 했어요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "다음 대화를 읽고 맞는 것을 고르십시오.\n민수: 요즘 일이 많아서 밤에 잠을 못 잘 정도로 스트레스를 받아요.\n지아: 너무 무리하지 마세요. 주말에는 푹 쉬고, 스트레스가 심하면 상담을 받아 보지 그래요?\n민수: 그럴게요. 사실 불면증이 생길까 봐 걱정이에요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "6763d6de667832f945b5b15c186146da3b2e7f051353478c936984ce97e09a54",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "eaa3d36d-9002-53b2-9637-8e5907fd3d05",
+      "is_demo": true,
+      "item_id": "38a15496-5322-525a-afa9-cc6f5108f065",
+      "key": "ko:exercise:giving-advice-translate-cut-coffee",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "잠을 못 잘까 봐 커피를 줄였어요.",
+            "잠을 못 잘까 봐서 커피를 줄였어요.",
+            "저는 잠을 못 잘까 봐 커피를 줄였어요.",
+            "저는 잠을 못 잘까 봐서 커피를 줄였어요.",
+            "잠이 안 올까 봐 커피를 줄였어요.",
+            "잠이 안 올까 봐서 커피를 줄였어요.",
+            "잠을 못 잘까 봐 커피를 마시는 것을 줄였어요.",
+            "잠을 못 잘까 봐 커피를 덜 마셨어요.",
+            "밤에 잠을 못 잘까 봐 커피를 줄였어요."
+          ]
+        },
+        "display_answer": "잠을 못 잘까 봐 커피를 줄였어요.",
+        "explanation": {
+          "vi": "\"Vì sợ không ngủ được\" = 잠을 못 잘까 봐(서) - điều không mong muốn; \"giảm\" = 줄이다 → 줄였어요."
+        },
+        "known_wrong": [
+          {
+            "answer": "잠을 잘 잘까 봐 커피를 줄였어요.",
+            "error_tag": "kkabwa_hope",
+            "feedback_vi": "-(으)ㄹ까 봐 chỉ đi với điều bạn sợ. \"Ngủ ngon\" là điều mong muốn - phải là 못 잘까 봐."
+          },
+          {
+            "answer": "잠을 못 잘까 봐 커피를 줄이세요.",
+            "error_tag": "kkabwa_imperative",
+            "feedback_vi": "Vế sau của -(으)ㄹ까 봐 không là mệnh lệnh; câu gốc kể việc đã làm - 줄였어요."
+          },
+          {
+            "answer": "잠을 못 자서 커피를 줄였어요.",
+            "error_tag": "cause_vs_worry",
+            "feedback_vi": "-아서 là \"vì đã không ngủ được\" (đã xảy ra). \"Vì sợ (sẽ) không ngủ được\" là 못 잘까 봐."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Vì sợ không ngủ được nên tôi đã giảm cà phê."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "99f5bf10d4fe3662d3a5e88513cfe856846d2133a12ae473fdf8ee03a217d71b",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "90e957e1-4c61-5732-a340-dd1018f481ed",
+      "is_demo": true,
+      "item_id": "224c4d2f-1241-5bde-9281-c5314d591e31",
+      "key": "ko:exercise:giving-advice-translate-habit-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Bạn nên bỏ thói quen xem điện thoại trước khi ngủ.",
+            "Bạn nên bỏ thói quen xem điện thoại trước khi ngủ thì hơn.",
+            "Bạn nên sửa thói quen xem điện thoại trước khi ngủ.",
+            "Bạn nên sửa thói quen xem điện thoại trước khi đi ngủ.",
+            "Bạn nên bỏ thói quen xem điện thoại trước khi đi ngủ.",
+            "Nên bỏ thói quen xem điện thoại trước khi ngủ.",
+            "Nên sửa thói quen xem điện thoại trước khi ngủ thì hơn.",
+            "Bạn nên bỏ thói quen nhìn điện thoại trước khi ngủ.",
+            "Bạn nên bỏ thói quen dùng điện thoại trước khi ngủ.",
+            "Bạn nên thay đổi thói quen xem điện thoại trước khi ngủ."
+          ]
+        },
+        "display_answer": "Bạn nên bỏ thói quen xem điện thoại trước khi ngủ.",
+        "explanation": {
+          "vi": "자기 전에 = trước khi ngủ; 휴대폰을 보는 습관 = thói quen xem điện thoại; 고치는 게 좋겠어요 = nên sửa/bỏ thì hơn."
+        },
+        "known_wrong": [
+          {
+            "answer": "Bạn nên tạo thói quen xem điện thoại trước khi ngủ.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "습관을 고치다 là \"sửa, bỏ thói quen\", không phải \"tạo thói quen\"."
+          },
+          {
+            "answer": "Bạn nên xem điện thoại sau khi ngủ dậy.",
+            "error_tag": "time_connector",
+            "feedback_vi": "자기 전에 là \"trước khi ngủ\", và câu nói về việc bỏ thói quen."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "order_index": 10,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "자기 전에 휴대폰을 보는 습관을 고치는 게 좋겠어요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "8779979bf0e5daeff122207d6d2a9dd1a995a1d5c2b25f0405959097ada4993a",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "b81a205a-5cad-5cc5-95cc-a5e85d4f3804",
+      "is_demo": true,
+      "item_id": "5b7f0b63-d8e9-5d35-a2e1-97c639c48bff",
+      "key": "ko:exercise:giving-advice-translate-rest",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "푹 쉬는 게 좋겠어요.",
+            "좀 푹 쉬는 게 좋겠어요.",
+            "푹 쉬시는 게 좋겠어요.",
+            "푹 쉬는 것이 좋겠어요.",
+            "푹 쉬는 게 좋을 것 같아요.",
+            "집에서 푹 쉬는 게 좋겠어요.",
+            "푹 쉬는 게 좋아요."
+          ]
+        },
+        "display_answer": "푹 쉬는 게 좋겠어요.",
+        "explanation": {
+          "vi": "\"Nghỉ thật thoải mái\" = 푹 쉬다; \"nên… thì hơn\" = -는 게 좋겠어요."
+        },
+        "known_wrong": [
+          {
+            "answer": "푹 쉰 게 좋겠어요.",
+            "error_tag": "adnominal_form",
+            "feedback_vi": "Lời khuyên dùng định ngữ hiện tại -는 - 쉬는 게 좋겠어요."
+          },
+          {
+            "answer": "푹 자는 게 좋겠어요.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "자다 là \"ngủ\"; \"nghỉ ngơi\" là 쉬다."
+          },
+          {
+            "answer": "많이 쉬는 게 안 좋겠어요.",
+            "error_tag": "negation_misplaced",
+            "feedback_vi": "Câu này lại thành \"không nên nghỉ nhiều\". Khuyên \"nên nghỉ\" - 푹 쉬는 게 좋겠어요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Bạn nên nghỉ ngơi thật thoải mái thì hơn."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "00c207f84fbc92b4f6ff8970cecbeb8e71567a7cad86734bcc79f96fcfd24ced",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "8556e36b-40a4-5c5d-8b8e-9dbef3a39945",
+      "is_demo": true,
+      "item_id": "9cbee98a-5f0d-5b41-b7e5-1bd989111108",
+      "key": "ko:exercise:giving-advice-translate-worried-sibling",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "혼자 사는 동생이 걱정돼요.",
+            "저는 혼자 사는 동생이 걱정돼요.",
+            "혼자 사는 동생이 걱정되어요.",
+            "혼자 사는 동생이 걱정이에요.",
+            "혼자 사는 동생 때문에 걱정돼요.",
+            "혼자 사는 동생을 걱정해요.",
+            "저는 혼자 사는 동생을 걱정해요.",
+            "혼자 사는 제 동생이 걱정돼요.",
+            "혼자 살고 있는 동생이 걱정돼요."
+          ]
+        },
+        "display_answer": "혼자 사는 동생이 걱정돼요.",
+        "explanation": {
+          "vi": "살다 + -는 → 사는 (gốc ㄹ rơi). \"Lo cho N\" = N이 걱정돼요 hoặc N을 걱정해요."
+        },
+        "known_wrong": [
+          {
+            "answer": "혼자 사는 동생이 걱정되요.",
+            "error_tag": "dwae_spelling",
+            "feedback_vi": "되어요 rút gọn là 돼요 - viết 걱정돼요, không viết 되요."
+          },
+          {
+            "answer": "혼자 산 동생이 걱정돼요.",
+            "error_tag": "adnominal_form",
+            "feedback_vi": "\"Đang sống\" là định ngữ hiện tại - 사는; 산 là quá khứ."
+          },
+          {
+            "answer": "혼자 사는 동생을 걱정돼요.",
+            "error_tag": "particle_doeda",
+            "feedback_vi": "걱정되다 lấy người được lo làm chủ ngữ - 동생이 걱정돼요; dùng 을 thì đổi sang 걱정해요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi lo cho em tôi đang sống một mình."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "2859efbb43f87879fcb5195702acc9029034e893b4a72da89fa6ff3e2330b032",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "4efbe4de-f5a9-5981-bc43-5e29079d4338",
+      "is_demo": true,
+      "item_id": "81623afb-56e0-56b0-bed1-202a3e440974",
+      "key": "ko:exercise:giving-advice-wb-worry-late",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "w1",
+              "w2",
+              "w3"
+            ]
+          ]
+        },
+        "display_answer": "늦을까 봐 걱정이에요.",
+        "explanation": {
+          "vi": "\"Lo là sẽ…\" = V-(으)ㄹ까 봐 걱정이에요. 늦어서 nghĩa là \"vì đã muộn\" - không diễn tả nỗi lo về tương lai."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Hàn: \"Tôi lo là mình sẽ đến muộn.\"",
+        "tokens": [
+          {
+            "id": "w3",
+            "text": "걱정이에요"
+          },
+          {
+            "id": "w4",
+            "text": "늦어서"
+          },
+          {
+            "id": "w2",
+            "text": "봐"
+          },
+          {
+            "id": "w1",
+            "text": "늦을까"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
       "content_hash": "dcf90cf84ae1e8af56a0604296b52619b826055d3e3701f4aa38070d0829d9dc",
       "difficulty": 2,
       "exercise_type": "fill_blank",
@@ -104220,6 +109709,755 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "7da1ee7d6b5cd80b8d2e202a897920adfdd9e810628cb519591d69a30bd48555",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "711349a4-1ae3-5429-8e6b-71d8b47fc096",
+      "is_demo": true,
+      "item_id": "b2f9ed82-77df-5fe3-b958-6de8749705f6",
+      "key": "ko:exercise:health-habits-fill-dorok-baby",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "있도록",
+              "있게"
+            ]
+          }
+        },
+        "display_answer": "아이가 푹 잘 수 있도록 조용히 해 주세요.",
+        "explanation": {
+          "vi": "Vế trước là kết quả mong muốn (em bé ngủ được), vế sau là việc cần làm → -도록; văn nói dùng -게 cũng được."
+        },
+        "known_wrong": [
+          {
+            "answer": "있어서",
+            "error_tag": "connector_meaning",
+            "feedback_vi": "-아서 là \"vì\"; câu cần \"để (em bé) có thể ngủ\" - 있도록."
+          },
+          {
+            "answer": "있으면",
+            "error_tag": "connector_meaning",
+            "feedback_vi": "-(으)면 là \"nếu\"; mục đích \"để cho\" là -도록."
+          },
+          {
+            "answer": "있는",
+            "error_tag": "adnominal_form",
+            "feedback_vi": "있는 là định ngữ, cần đứng trước danh từ. Nối hai vế với nghĩa \"để cho\" dùng 있도록."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "(Hãy giữ yên lặng để em bé có thể ngủ ngon.) 아이가 푹 잘 수 {{b1}} 조용히 해 주세요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "0a060b2cfeaf74ab7e57bc66c4503b060d1a0aeba9629e5dd4a9b3b6e4d4d2e2",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "c68a2fee-7a9b-508b-86eb-f05d6fc2794d",
+      "is_demo": true,
+      "item_id": "3c327299-60f0-5e7c-b3d9-39031c0b55cc",
+      "key": "ko:exercise:health-habits-fill-pulda-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "푸는"
+            ]
+          }
+        },
+        "display_answer": "스트레스를 푸는 방법이 뭐예요?",
+        "explanation": {
+          "vi": "스트레스를 풀다 = giải toả căng thẳng. Định ngữ hiện tại -는 làm rơi ㄹ của gốc → 푸는 방법."
+        },
+        "known_wrong": [
+          {
+            "answer": "풀는",
+            "error_tag": "rieul_drop",
+            "feedback_vi": "Gốc ㄹ rơi trước ㄴ - 풀다 → 푸는."
+          },
+          {
+            "answer": "받는",
+            "error_tag": "pulda_batda",
+            "feedback_vi": "스트레스를 받다 là \"bị căng thẳng\"; câu hỏi cách \"giải toả\" - 푸는."
+          },
+          {
+            "answer": "풀",
+            "error_tag": "adnominal_form",
+            "feedback_vi": "Hỏi về cách làm thường ngày dùng định ngữ hiện tại -는 - 푸는 방법."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Cách giải toả căng thẳng của bạn là gì?",
+          "Gợi ý: 풀다 + -는 (định ngữ); gốc ㄹ rơi trước ㄴ."
+        ],
+        "template": "스트레스를 {{b1}} 방법이 뭐예요?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "5b1a8049e73dcfdff15d5e3ea6a7757a2a8df65dff9de885b42663325f68c9c8",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "1fc5e9c0-014f-5f39-a13c-a3ee3eed36d9",
+      "is_demo": true,
+      "item_id": "131dab46-8b1f-5e6f-b719-e87fb7bb5907",
+      "key": "ko:exercise:health-habits-listen-checkup",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "b7e"
+        },
+        "display_answer": "Năm nay tôi đã đi khám sức khoẻ. Bác sĩ nói tôi bị thiếu vận động.",
+        "explanation": {
+          "vi": "건강 검진을 받았어요 = đã đi khám sức khoẻ; 운동 부족이라고 했어요 = nói là thiếu vận động (tường thuật -(이)라고 하다)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "올해 건강 검진을 받았어요. 의사 선생님이 운동 부족이라고 했어요.",
+        "options": [
+          {
+            "id": "b7e",
+            "lang": "vi",
+            "text": "Năm nay tôi đã đi khám sức khoẻ. Bác sĩ nói tôi bị thiếu vận động."
+          },
+          {
+            "id": "m2k",
+            "lang": "vi",
+            "text": "Năm nay tôi chưa đi khám sức khoẻ vì bận tập thể dục."
+          },
+          {
+            "id": "z5h",
+            "lang": "vi",
+            "text": "Bác sĩ nói tôi tập thể dục quá nhiều."
+          },
+          {
+            "id": "q9s",
+            "lang": "vi",
+            "text": "Năm nay tôi đã khám sức khoẻ và bác sĩ nói tôi bị mất ngủ."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "6315910e09bf7b87befde3a3873be998412607ce2c76399bb58aedac068513a6",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "49904823-af25-528b-8c18-49db9b5f06df",
+      "is_demo": true,
+      "item_id": "b2f9ed82-77df-5fe3-b958-6de8749705f6",
+      "key": "ko:exercise:health-habits-mcq-dorok-advice",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "s4d"
+        },
+        "display_answer": "늦게 자지 않도록 자기 전에 휴대폰을 끄세요.",
+        "explanation": {
+          "vi": "-도록 gắn thẳng vào gốc - 않다 → 않도록 (để không). -아서 chỉ lý do và không đi với câu mệnh lệnh; 않는도록 sai dạng; 늦게 자도록 nghĩa ngược lại \"để ngủ muộn\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "p5g",
+            "lang": "ko",
+            "text": "늦게 자도록 자기 전에 휴대폰을 끄세요."
+          },
+          {
+            "id": "k7a",
+            "lang": "ko",
+            "text": "늦게 자지 않아서 자기 전에 휴대폰을 끄세요."
+          },
+          {
+            "id": "w1u",
+            "lang": "ko",
+            "text": "늦게 자지 않는도록 자기 전에 휴대폰을 끄세요."
+          },
+          {
+            "id": "s4d",
+            "lang": "ko",
+            "text": "늦게 자지 않도록 자기 전에 휴대폰을 끄세요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn viết lời khuyên cho mục sức khoẻ: \"Để không thức khuya, hãy tắt điện thoại trước khi ngủ.\" Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "58b33e52282b0f258b9850d842f00d75fa2b8b659ef47fb75c34eb8f61b713f1",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "047e484b-c0da-572a-a278-1a2edf95683c",
+      "is_demo": true,
+      "item_id": "b2f9ed82-77df-5fe3-b958-6de8749705f6",
+      "key": "ko:exercise:health-habits-mcq-dorok-meaning",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "n3w"
+        },
+        "display_answer": "Hãy rửa tay thường xuyên để không bị cảm.",
+        "explanation": {
+          "vi": "-지 않도록 nghĩa là \"để không…\" - vế trước là kết quả mong muốn (không bị cảm), vế sau là việc cần làm (rửa tay). -도록 không phải \"vì\" hay \"cho đến khi\" trong câu này."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "n3w",
+            "lang": "vi",
+            "text": "Hãy rửa tay thường xuyên để không bị cảm."
+          },
+          {
+            "id": "h6j",
+            "lang": "vi",
+            "text": "Vì không bị cảm nên hãy rửa tay thường xuyên."
+          },
+          {
+            "id": "e2x",
+            "lang": "vi",
+            "text": "Bị cảm thì đừng rửa tay thường xuyên."
+          },
+          {
+            "id": "l8f",
+            "lang": "vi",
+            "text": "Hãy rửa tay thường xuyên cho đến khi hết cảm."
+          }
+        ],
+        "shuffle": true,
+        "stem": "감기에 걸리지 않도록 손을 자주 씻으세요. nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "1ff05f3915b4c5ee46dc3c1843c87b37e54e829064b038d48987853aa1fd363e",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "0a00bbbe-88a2-5c18-aea9-4a73a3012fc2",
+      "is_demo": true,
+      "item_id": "0304c1f1-9874-509d-a45a-4d089cd8a365",
+      "key": "ko:exercise:health-habits-mcq-gain-weight",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c2y"
+        },
+        "display_answer": "운동 부족이라서 살이 쪘어요.",
+        "explanation": {
+          "vi": "Quần áo chật nghĩa là tăng cân - 살이 찌다, quá khứ 쪘어요. 빠졌어요 là giảm cân; \"tập nhiều\" trái với tình huống; 살 là chủ ngữ nên dùng 이, không dùng 을."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "u6v",
+            "lang": "ko",
+            "text": "운동 부족이라서 살을 쪘어요."
+          },
+          {
+            "id": "c2y",
+            "lang": "ko",
+            "text": "운동 부족이라서 살이 쪘어요."
+          },
+          {
+            "id": "j3l",
+            "lang": "ko",
+            "text": "운동을 많이 해서 살이 쪘어요."
+          },
+          {
+            "id": "o8n",
+            "lang": "ko",
+            "text": "운동 부족이라서 살이 빠졌어요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Dạo này bạn ngồi cả ngày, ít vận động và quần áo bị chật. Bạn giải thích với bạn bè câu nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "cdf853c46777d13fe762c153e3c47db1ffd24f62aeed285fc5d32e15feacec1c",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "476b9ff9-d851-5002-9216-3b694777d7f2",
+      "is_demo": true,
+      "item_id": "75a44379-fc33-599e-a137-3f44146e9885",
+      "key": "ko:exercise:health-habits-mcq-ge-form",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "y4c"
+        },
+        "display_answer": "맛있게",
+        "explanation": {
+          "vi": "Trước động từ, tính từ chỉ cách thức phải đổi sang -게 → 맛있게 드세요. 맛있는 chỉ đứng trước danh từ; -도록 không chỉ cách thức; -아서 là \"vì\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "y4c",
+            "lang": "ko",
+            "text": "맛있게"
+          },
+          {
+            "id": "v6r",
+            "lang": "ko",
+            "text": "맛있어서"
+          },
+          {
+            "id": "g8p",
+            "lang": "ko",
+            "text": "맛있는"
+          },
+          {
+            "id": "a1m",
+            "lang": "ko",
+            "text": "맛있도록"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn dạng đúng để nói \"Chúc ngon miệng\": ___ 드세요.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "cd2d34da3aa3f6e419ca261d176b9329194deb0b5c3c24c2b89eeb6fe57b393d",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "a0451a37-aed7-5f77-b4f6-1228e1c16b2d",
+      "is_demo": true,
+      "item_id": "e51a8896-3370-5a60-bfcb-9c31ca574571",
+      "key": "ko:exercise:health-habits-translate-insomnia-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Vì chứng mất ngủ nên tôi đã bắt đầu uống thực phẩm bổ sung.",
+            "Vì bị mất ngủ nên tôi đã bắt đầu uống thực phẩm bổ sung.",
+            "Vì mất ngủ nên tôi bắt đầu uống thực phẩm bổ sung.",
+            "Vì mất ngủ nên tôi đã bắt đầu uống thuốc bổ.",
+            "Vì bị mất ngủ nên tôi bắt đầu uống thuốc bổ.",
+            "Do mất ngủ nên tôi đã bắt đầu uống thực phẩm chức năng.",
+            "Vì mất ngủ nên tôi đã bắt đầu uống vitamin.",
+            "Tôi đã bắt đầu uống thực phẩm bổ sung vì bị mất ngủ.",
+            "Tôi bắt đầu uống thuốc bổ vì mất ngủ.",
+            "Vì chứng mất ngủ mà tôi đã bắt đầu uống thực phẩm bổ sung."
+          ]
+        },
+        "display_answer": "Vì chứng mất ngủ nên tôi đã bắt đầu uống thực phẩm bổ sung.",
+        "explanation": {
+          "vi": "N 때문에 = vì N; 영양제를 먹다 = uống thực phẩm bổ sung/thuốc bổ; -기 시작했어요 = đã bắt đầu…."
+        },
+        "known_wrong": [
+          {
+            "answer": "Vì uống thực phẩm bổ sung nên tôi bị mất ngủ.",
+            "error_tag": "cause_effect",
+            "feedback_vi": "Ngược nhân quả - 불면증 때문에 là \"vì mất ngủ\", còn uống thực phẩm bổ sung là kết quả."
+          },
+          {
+            "answer": "Vì chứng mất ngủ nên tôi đã ngừng uống thực phẩm bổ sung.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "시작했어요 là \"đã bắt đầu\", không phải \"ngừng\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "order_index": 10,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "불면증 때문에 영양제를 먹기 시작했어요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "02fa39b4d0af221898bd3b507321c2b2c22b94d70ae580bc43b6ae24dbd55a29",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "b2f39ce7-60a9-582e-ba23-66e3cc49c9de",
+      "is_demo": true,
+      "item_id": "75a44379-fc33-599e-a137-3f44146e9885",
+      "key": "ko:exercise:health-habits-translate-live-healthy",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "건강하게 살고 싶어요.",
+            "저는 건강하게 살고 싶어요.",
+            "전 건강하게 살고 싶어요.",
+            "건강히 살고 싶어요.",
+            "저는 건강히 살고 싶어요.",
+            "건강하게 살고 싶습니다.",
+            "저는 건강하게 살고 싶습니다."
+          ]
+        },
+        "display_answer": "저는 건강하게 살고 싶어요.",
+        "explanation": {
+          "vi": "건강하다 → 건강하게 (một cách khoẻ mạnh) + 살고 싶어요 (muốn sống). 건강히 cũng là trạng từ đúng."
+        },
+        "known_wrong": [
+          {
+            "answer": "건강한 살고 싶어요.",
+            "error_tag": "adverb_ge",
+            "feedback_vi": "Trước động từ, tính từ phải đổi sang -게 - 건강하게 살고 싶어요."
+          },
+          {
+            "answer": "건강하도록 살고 싶어요.",
+            "error_tag": "ge_dorok",
+            "feedback_vi": "\"Sống khoẻ\" là cách sống, dùng -게, không dùng -도록."
+          },
+          {
+            "answer": "건강해서 살고 싶어요.",
+            "error_tag": "adverb_ge",
+            "feedback_vi": "-아서 là \"vì\"; cách thức cần -게."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi muốn sống khoẻ mạnh."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "597bf2935e05f928cc6abb82fa22a5af044e77ee5fd6aba4bdbc3751faf8c63e",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "f68d663e-f23f-57e0-b6fa-06ae9764ed14",
+      "is_demo": true,
+      "item_id": "c05115ff-efbf-59af-91de-8445fe761f00",
+      "key": "ko:exercise:health-habits-translate-stress",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "요즘 스트레스를 많이 받아요.",
+            "저는 요즘 스트레스를 많이 받아요.",
+            "전 요즘 스트레스를 많이 받아요.",
+            "요즘 스트레스를 많이 받고 있어요.",
+            "저는 요즘 스트레스를 많이 받고 있어요.",
+            "요즘 스트레스가 많아요.",
+            "저는 요즘 스트레스가 많아요.",
+            "요즘 저는 스트레스를 많이 받아요."
+          ]
+        },
+        "display_answer": "저는 요즘 스트레스를 많이 받아요.",
+        "explanation": {
+          "vi": "Tiếng Việt nói \"bị stress\", tiếng Hàn dùng 받다 (nhận) - 스트레스를 받다. 요즘 = dạo này, 많이 = nhiều."
+        },
+        "known_wrong": [
+          {
+            "answer": "요즘 스트레스를 많이 풀어요.",
+            "error_tag": "pulda_batda",
+            "feedback_vi": "풀다 là \"giải toả\". \"Bị căng thẳng\" là 스트레스를 받다."
+          },
+          {
+            "answer": "요즘 스트레스를 많이 해요.",
+            "error_tag": "collocation",
+            "feedback_vi": "Stress không đi với 하다; dùng 스트레스를 받다."
+          },
+          {
+            "answer": "yojeum seuteureseureul mani badayo",
+            "error_tag": "romanization",
+            "feedback_vi": "Hãy viết bằng Hangul, không dùng phiên âm Latinh."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Dạo này tôi bị căng thẳng nhiều."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "63979a48171695039224d9486554f75992eee07ac5faa54dcde185e640456211",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "e666962e-d27d-5fef-8a0a-b9e89ae9108a",
+      "is_demo": true,
+      "item_id": "b2f9ed82-77df-5fe3-b958-6de8749705f6",
+      "key": "ko:exercise:health-habits-translate-wash-hands",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "감기에 걸리지 않도록 손을 자주 씻으세요.",
+            "감기에 걸리지 않게 손을 자주 씻으세요.",
+            "감기에 안 걸리도록 손을 자주 씻으세요.",
+            "감기에 안 걸리게 손을 자주 씻으세요.",
+            "감기에 걸리지 않도록 자주 손을 씻으세요.",
+            "감기에 걸리지 않게 자주 손을 씻으세요.",
+            "감기에 걸리지 않기 위해서 손을 자주 씻으세요.",
+            "손을 자주 씻어서 감기에 걸리지 않도록 하세요."
+          ]
+        },
+        "display_answer": "감기에 걸리지 않도록 손을 자주 씻으세요.",
+        "explanation": {
+          "vi": "\"Để không bị cảm\" = 감기에 걸리지 않도록 (văn nói 않게 cũng được); \"rửa tay thường xuyên\" = 손을 자주 씻다, khuyên dùng -(으)세요."
+        },
+        "known_wrong": [
+          {
+            "answer": "감기를 걸리지 않도록 손을 자주 씻으세요.",
+            "error_tag": "particle_e_geollida",
+            "feedback_vi": "\"Bị cảm\" là 감기에 걸리다 - trợ từ 에, không phải 를."
+          },
+          {
+            "answer": "감기에 걸리지 않아서 손을 자주 씻으세요.",
+            "error_tag": "connector_meaning",
+            "feedback_vi": "-아서 là \"vì\" và không đi với câu khuyên -(으)세요. \"Để không…\" là -지 않도록."
+          },
+          {
+            "answer": "감기에 걸리도록 손을 자주 씻으세요.",
+            "error_tag": "negation_missed",
+            "feedback_vi": "Thiếu phủ định - câu này thành \"để bị cảm\". Dùng 걸리지 않도록."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Hãy rửa tay thường xuyên để không bị cảm."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "c06b2e410fceafef5be5d7ae38b9eb17cf3c927480b5a072e0bfcaadee9a0355",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "ce0355ce-0b0f-55cb-abba-d1747460d11b",
+      "is_demo": true,
+      "item_id": "007639dd-7ed8-5e25-a8fb-77062b8c913c",
+      "key": "ko:exercise:health-habits-wb-regular-exercise",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "r1",
+              "r2",
+              "r3"
+            ]
+          ]
+        },
+        "display_answer": "저는 규칙적으로 운동해요.",
+        "explanation": {
+          "vi": "규칙적으로 là trạng từ (đều đặn), đứng trước động từ 운동해요. 규칙적인 là định ngữ, chỉ đứng trước danh từ (규칙적인 생활)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Hàn: \"Tôi tập thể dục đều đặn.\"",
+        "tokens": [
+          {
+            "id": "r3",
+            "text": "운동해요"
+          },
+          {
+            "id": "r4",
+            "text": "규칙적인"
+          },
+          {
+            "id": "r2",
+            "text": "규칙적으로"
+          },
+          {
+            "id": "r1",
+            "text": "저는"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
       "status": "published"
     },
     {
@@ -112279,6 +118517,1459 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "570bc6a61bb4f60607d6da9c75995cd1114fd2cc47c314f2b02ba90f0c250743",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "16a31973-d6fc-5d98-9abb-34f9a5638d12",
+      "is_demo": true,
+      "item_id": "b2f9ed82-77df-5fe3-b958-6de8749705f6",
+      "key": "ko:exercise:housing-advice-review-fill-dorok-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "않도록",
+              "않게"
+            ]
+          }
+        },
+        "display_answer": "늦게 잠들지 않도록 자기 전에는 휴대폰을 보지 않는 것이 좋다.",
+        "explanation": {
+          "vi": "-지 않도록 = để không…; vế sau là lời khuyên trong văn viết -는 것이 좋다."
+        },
+        "known_wrong": [
+          {
+            "answer": "않아서",
+            "error_tag": "connector_meaning",
+            "feedback_vi": "-아서 là \"vì\"; câu cần \"để không…\" - 않도록."
+          },
+          {
+            "answer": "않는",
+            "error_tag": "adnominal_form",
+            "feedback_vi": "않는 là định ngữ, phải đứng trước danh từ. Nối vế mục đích dùng 않도록."
+          },
+          {
+            "answer": "않을까 봐",
+            "error_tag": "kkabwa_meaning",
+            "feedback_vi": "-(으)ㄹ까 봐 là \"vì sợ…\"; \"sợ không ngủ muộn\" là vô lý. Dùng 않도록."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Để không ngủ muộn, tốt nhất là không xem điện thoại trước khi ngủ.",
+          "Gợi ý: 않다 + -도록."
+        ],
+        "template": "늦게 잠들지 {{b1}} 자기 전에는 휴대폰을 보지 않는 것이 좋다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "d3b44096ca1787695c0be83a12b94fde869d5c6277c156edd340fde36f868eec",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "d936cd36-70f8-5700-b40b-39bcf2dbdf1b",
+      "is_demo": true,
+      "item_id": "0304c1f1-9874-509d-a45a-4d089cd8a365",
+      "key": "ko:exercise:housing-advice-review-fill-kkabwa-weight",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "찔까"
+            ]
+          }
+        },
+        "display_answer": "살이 찔까 봐 밥을 거르는 사람도 있다.",
+        "explanation": {
+          "vi": "살이 찌다 = tăng cân; vì sợ điều đó xảy ra → 찔까 봐."
+        },
+        "known_wrong": [
+          {
+            "answer": "빠질까",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "빠지다 là \"giảm cân\" - người bỏ bữa sợ \"tăng cân\" (찌다)."
+          },
+          {
+            "answer": "찌을까",
+            "error_tag": "eul_form",
+            "feedback_vi": "찌다 không có patchim nên chỉ thêm -ㄹ까 - 찔까."
+          },
+          {
+            "answer": "쪄서",
+            "error_tag": "kkabwa_form",
+            "feedback_vi": "Trước 봐 cần dạng -(으)ㄹ까 - 찔까 봐."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "(Có người vì sợ tăng cân mà bỏ bữa.) 살이 {{b1}} 봐 밥을 거르는 사람도 있다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "abcef5e943310395dea1dd0f30a6c5081617b094faf4111b47a062b2ae010695",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "b09aca46-ff55-59f5-a40e-b636eedde89d",
+      "is_demo": true,
+      "item_id": "794ca3ee-7a2b-5792-ba12-b7c713edff63",
+      "key": "ko:exercise:housing-advice-review-listen-wolse",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "a5r"
+        },
+        "display_answer": "Tiền cọc thuê jeonse đắt quá nên tôi muốn thuê trả tiền tháng.",
+        "explanation": {
+          "vi": "전세는 보증금이 너무 비싸서 = vì cọc của jeonse quá đắt; 월세로 하고 싶어요 = muốn chọn kiểu trả tiền tháng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "order_index": 0,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "전세는 보증금이 너무 비싸서 월세로 하고 싶어요.",
+        "options": [
+          {
+            "id": "a5r",
+            "lang": "vi",
+            "text": "Tiền cọc thuê jeonse đắt quá nên tôi muốn thuê trả tiền tháng."
+          },
+          {
+            "id": "h3w",
+            "lang": "vi",
+            "text": "Tôi muốn mua nhà vì tiền cọc đắt quá."
+          },
+          {
+            "id": "k2e",
+            "lang": "vi",
+            "text": "Tiền thuê hằng tháng đắt quá nên tôi muốn thuê jeonse."
+          },
+          {
+            "id": "u8t",
+            "lang": "vi",
+            "text": "Thuê jeonse rẻ nên tôi muốn thuê jeonse."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "29c5dbf5eb2f0f8a03f1c050ca4546d0a2df42dda12b3c57364db016a874a539",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "c54c08a9-11b8-5f38-a920-baad42937dfa",
+      "is_demo": true,
+      "item_id": "203b18cb-6819-5ad6-bec7-ea26843cca32",
+      "key": "ko:exercise:housing-advice-review-mcq-column",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "y2m"
+        },
+        "display_answer": "스트레스를 많이 받으면 잠을 못 자기 쉽다.",
+        "explanation": {
+          "vi": "Bài viết nói căng thẳng nhiều thì dễ bị mất ngủ (불면증이 생기기 쉽다). Bài khuyên không xem điện thoại trước khi ngủ và cho rằng bỏ bữa là không tốt."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "y2m",
+            "lang": "ko",
+            "text": "스트레스를 많이 받으면 잠을 못 자기 쉽다."
+          },
+          {
+            "id": "i8c",
+            "lang": "ko",
+            "text": "자기 전에 휴대폰을 보면 잠이 잘 온다."
+          },
+          {
+            "id": "r4p",
+            "lang": "ko",
+            "text": "요즘 직장인들은 스트레스를 거의 받지 않는다."
+          },
+          {
+            "id": "g6v",
+            "lang": "ko",
+            "text": "살을 빼려면 밥을 거르는 것이 좋다."
+          }
+        ],
+        "shuffle": true,
+        "stem": "다음 글의 내용과 같은 것을 고르십시오.\n요즘 잠을 못 잘 정도로 스트레스를 받는 직장인이 많다. 스트레스를 많이 받으면 불면증이 생기기 쉽다. 밤에 푹 자려면 규칙적으로 운동하는 것이 좋다. 또한 늦게 잠들지 않도록 자기 전에는 휴대폰을 보지 않는 것이 좋다. 살이 찔까 봐 밥을 거르는 사람도 있는데, 이것은 오히려 건강에 좋지 않다.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "8ea4530cf7d850b41f121130c2f02c2fc1e226f6c11866a8147d5e23cc98660f",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "4001a23e-d3a5-56d7-99c8-7ec07a18f24b",
+      "is_demo": true,
+      "item_id": "51b28609-f00a-51fd-b9d6-ad754afd0fd2",
+      "key": "ko:exercise:housing-advice-review-mcq-dialogue",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c7n"
+        },
+        "display_answer": "투안 씨는 계약하기 전에 집을 보고 싶어 해요.",
+        "explanation": {
+          "vi": "계약하기 전에 집을 직접 보는 게 좋겠어요 - Tuấn muốn xem nhà trước khi ký. Phí quản lý là 6만 원; khu này 조용한 편; toà nhà cũ (오래된) nên dễ có tiếng ồn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "e4q",
+            "lang": "ko",
+            "text": "이 원룸은 관리비가 없어요."
+          },
+          {
+            "id": "c7n",
+            "lang": "ko",
+            "text": "투안 씨는 계약하기 전에 집을 보고 싶어 해요."
+          },
+          {
+            "id": "o1j",
+            "lang": "ko",
+            "text": "이 동네는 아주 시끄러운 편이에요."
+          },
+          {
+            "id": "s9b",
+            "lang": "ko",
+            "text": "이 건물은 새 건물이라서 층간 소음이 없어요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "다음 대화를 읽고 맞는 것을 고르십시오.\n직원: 마침 좋은 매물이 있어요. 보증금 500만 원에 월세 55만 원이고, 관리비는 6만 원이에요. 풀옵션이라서 바로 살 만해요.\n투안: 이 동네는 조용한 편이에요?\n직원: 네, 조용한 편이에요. 그런데 오래된 건물이라서 층간 소음이 생기기 쉬워요.\n투안: 그럼 계약하기 전에 집을 직접 보는 게 좋겠어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "94a2cffc886a5ffb1141088503d8e8f096bcddd8d2fbd8e8e8415344fcaa89a3",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "27b60e21-eb98-5061-a4d6-b2855e551ca3",
+      "is_demo": true,
+      "item_id": "0e1c3de4-6a14-524d-a7f1-95f2db024ea7",
+      "key": "ko:exercise:housing-advice-review-mcq-explain-jeonse",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "m6x"
+        },
+        "display_answer": "전세는 매달 내는 돈이 없지만 보증금이 아주 커요.",
+        "explanation": {
+          "vi": "전세 - không có tiền tháng nhưng cọc rất lớn, hết hợp đồng nhận lại cọc. Trả tiền hằng tháng là 월세; 전세 không thể \"không có cọc\" và cọc luôn được trả lại."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "order_index": 7,
+      "prompt": {
+        "options": [
+          {
+            "id": "b1s",
+            "lang": "ko",
+            "text": "전세는 계약이 끝나도 보증금을 돌려받지 못해요."
+          },
+          {
+            "id": "w9f",
+            "lang": "ko",
+            "text": "전세는 보증금이 없는 집이에요."
+          },
+          {
+            "id": "d3k",
+            "lang": "ko",
+            "text": "전세는 매달 월세를 내야 해요."
+          },
+          {
+            "id": "m6x",
+            "lang": "ko",
+            "text": "전세는 매달 내는 돈이 없지만 보증금이 아주 커요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn Hàn hỏi bạn hiểu 전세 thế nào. Câu giải thích nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "ad12c89c65989765b2c3fdc0444dece2f787e4d94df83125d8318fe61546b39c",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "98bf2a8e-4027-5866-be1d-75f0aa1bab54",
+      "is_demo": true,
+      "item_id": "5e97a6e0-91ca-5fa0-989c-3a6f8d7786a4",
+      "key": "ko:exercise:housing-advice-review-mcq-noise-advice",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "p8a"
+        },
+        "display_answer": "그렇게 시끄러우면 관리실에 이야기해 보지 그래요?",
+        "explanation": {
+          "vi": "-지 그래요? là gợi ý thân mật \"sao không thử… đi?\". -(으)ㄹ까 봐요 không phải lời khuyên; lời khuyên dùng -는 게 좋겠어요 (hiện tại), không phải 한 게; \"yên tĩnh\" thì không cần than phiền."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "z4g",
+            "lang": "ko",
+            "text": "그렇게 시끄러우면 관리실에 이야기해 볼까 봐요."
+          },
+          {
+            "id": "f2u",
+            "lang": "ko",
+            "text": "그렇게 시끄러우면 관리실에 이야기한 게 좋겠어요."
+          },
+          {
+            "id": "t7h",
+            "lang": "ko",
+            "text": "그렇게 조용하면 관리실에 이야기해 보지 그래요?"
+          },
+          {
+            "id": "p8a",
+            "lang": "ko",
+            "text": "그렇게 시끄러우면 관리실에 이야기해 보지 그래요?"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn thân than là tầng trên ồn đến mức không ngủ được. Bạn gợi ý một cách thân mật. Câu nào phù hợp?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "a0cb6539ef9cf2c65de059b324928d110004b113bb83dd86deaadc3a34a85d88",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "b6a1f8fa-fa59-5931-a6ea-ac4822fe872e",
+      "is_demo": true,
+      "item_id": "81623afb-56e0-56b0-bed1-202a3e440974",
+      "key": "ko:exercise:housing-advice-review-translate-deposit-worry",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "집주인이 보증금을 안 돌려줄까 봐 걱정이에요.",
+            "집주인이 보증금을 안 돌려줄까 봐 걱정돼요.",
+            "집주인이 보증금을 돌려주지 않을까 봐 걱정이에요.",
+            "집주인이 보증금을 돌려주지 않을까 봐 걱정돼요.",
+            "저는 집주인이 보증금을 안 돌려줄까 봐 걱정이에요.",
+            "저는 집주인이 보증금을 돌려주지 않을까 봐 걱정이에요.",
+            "집주인이 보증금을 안 돌려줄까 봐 걱정되어요.",
+            "보증금을 못 돌려받을까 봐 걱정이에요.",
+            "보증금을 못 돌려받을까 봐 걱정돼요."
+          ]
+        },
+        "display_answer": "집주인이 보증금을 안 돌려줄까 봐 걱정이에요.",
+        "explanation": {
+          "vi": "\"Lo là sẽ không…\" = 안 V-(으)ㄹ까 봐 / V-지 않을까 봐 + 걱정이에요/걱정돼요. Trả lại = 돌려주다; nhận lại = 돌려받다."
+        },
+        "known_wrong": [
+          {
+            "answer": "집주인이 보증금을 돌려줄까 봐 걱정이에요.",
+            "error_tag": "kkabwa_hope",
+            "feedback_vi": "Thiếu phủ định - câu này là \"lo chủ nhà sẽ trả lại cọc\". Điều bạn sợ là 안 돌려줄까 봐."
+          },
+          {
+            "answer": "집주인이 보증금을 안 돌려줘서 걱정이에요.",
+            "error_tag": "cause_vs_worry",
+            "feedback_vi": "-아서 nghĩa là chủ nhà đã không trả rồi. Lo về điều có thể xảy ra là -(으)ㄹ까 봐."
+          },
+          {
+            "answer": "집주인이 보증금을 안 돌려줄까 봐 걱정되요.",
+            "error_tag": "dwae_spelling",
+            "feedback_vi": "Viết 걱정돼요 (되어요 rút gọn), không viết 되요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "order_index": 10,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi lo là chủ nhà sẽ không trả lại tiền cọc."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "616a96ebf919f6b28901b3632143e422372eef38bb65d6b5b63ffed5db519a5e",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "9376931f-d1f1-5fe4-a7a8-a8d5faa920af",
+      "is_demo": true,
+      "item_id": "52ff39a1-404a-52d9-8846-3e0d2cd24ba5",
+      "key": "ko:exercise:housing-advice-review-translate-fee-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Phí môi giới phải trả khi ký hợp đồng.",
+            "Phí môi giới thì phải trả khi ký hợp đồng.",
+            "Bạn phải trả phí môi giới khi ký hợp đồng.",
+            "Phải trả phí môi giới khi ký hợp đồng.",
+            "Khi ký hợp đồng thì phải trả phí môi giới.",
+            "Khi ký hợp đồng phải trả phí môi giới.",
+            "Phí môi giới phải nộp khi ký hợp đồng.",
+            "Tiền môi giới phải trả khi ký hợp đồng.",
+            "Phí môi giới sẽ phải trả lúc ký hợp đồng."
+          ]
+        },
+        "display_answer": "Phí môi giới phải trả khi ký hợp đồng.",
+        "explanation": {
+          "vi": "중개 수수료 = phí môi giới; 계약할 때 = khi ký hợp đồng; 내야 해요 = phải trả."
+        },
+        "known_wrong": [
+          {
+            "answer": "Không cần trả phí môi giới khi ký hợp đồng.",
+            "error_tag": "obligation_meaning",
+            "feedback_vi": "내야 해요 là \"phải trả\", không phải \"không cần\"."
+          },
+          {
+            "answer": "Phí quản lý phải trả khi ký hợp đồng.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "중개 수수료 là phí môi giới; phí quản lý là 관리비."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "중개 수수료는 계약할 때 내야 해요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "9f6db38caf0716bf68b7405b9944da3d331fed72ff4e95393214aed4f0db4061",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "eb0890c2-dea1-5c30-ad86-d3f1b39cf7ab",
+      "is_demo": true,
+      "item_id": "4891cdce-9228-5322-b942-1dcde8509eb4",
+      "key": "ko:exercise:housing-advice-review-translate-quiet",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "이 동네는 조용한 편이에요.",
+            "이 동네가 조용한 편이에요.",
+            "이 동네는 조용한 편입니다.",
+            "이 지역은 조용한 편이에요.",
+            "여기는 조용한 편이에요.",
+            "이 동네는 꽤 조용한 편이에요."
+          ]
+        },
+        "display_answer": "이 동네는 조용한 편이에요.",
+        "explanation": {
+          "vi": "동네 = khu phố; tính từ 조용하다 + -(으)ㄴ 편이다 → 조용한 편이에요."
+        },
+        "known_wrong": [
+          {
+            "answer": "이 동네는 조용하는 편이에요.",
+            "error_tag": "adjective_neun",
+            "feedback_vi": "조용하다 là tính từ - 조용한 편이에요."
+          },
+          {
+            "answer": "이 동네는 시끄러운 편이에요.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "시끄럽다 là \"ồn ào\"; \"yên tĩnh\" là 조용하다."
+          },
+          {
+            "answer": "이 동네는 조용한 편해요.",
+            "error_tag": "copula_form",
+            "feedback_vi": "편 là danh từ, đi với 이다 - 편이에요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "order_index": 5,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Khu này thuộc loại yên tĩnh."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "4f7edd33cf55020a400d4d21e71cd0bcf13896e052ecae22879146dfcc5f8c42",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "02668b01-80b7-5af6-aa00-6432c3881508",
+      "is_demo": true,
+      "item_id": "1d4f3ba0-af06-5aae-be40-ecd4698f0de5",
+      "key": "ko:exercise:housing-advice-review-translate-trash-day",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "쓰레기 버리는 날을 꼭 알아 두세요.",
+            "쓰레기 버리는 날을 미리 알아 두세요.",
+            "쓰레기 버리는 날을 알아 두세요.",
+            "쓰레기 버리는 날짜를 꼭 알아 두세요.",
+            "쓰레기 버리는 날짜를 미리 알아 두세요.",
+            "쓰레기 버리는 날도 미리 알아 두세요.",
+            "쓰레기 버리는 날을 꼭 미리 알아 두세요."
+          ]
+        },
+        "display_answer": "쓰레기 버리는 날을 꼭 알아 두세요.",
+        "explanation": {
+          "vi": "\"Biết trước để sau dùng\" = 알아 두다 - 두다 tự nhiên hơn 놓다 với 알다, 기억하다. \"Ngày đổ rác\" = 쓰레기 버리는 날."
+        },
+        "known_wrong": [
+          {
+            "answer": "쓰레기 버린 날을 꼭 알아 두세요.",
+            "error_tag": "adnominal_form",
+            "feedback_vi": "Ngày đổ rác (định kỳ) dùng định ngữ hiện tại - 버리는 날; 버린 날 là \"ngày đã vứt\"."
+          },
+          {
+            "answer": "쓰레기 버리는 날을 꼭 알아 주세요.",
+            "error_tag": "auxiliary_meaning",
+            "feedback_vi": "-아/어 주세요 là nhờ làm giúp; \"biết trước để sau dùng\" là 알아 두세요."
+          },
+          {
+            "answer": "쓰레기 버리는 날을 꼭 알으세요.",
+            "error_tag": "duda_form",
+            "feedback_vi": "알다 là gốc ㄹ; ở đây cần 알아 두세요 (biết trước)."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Bạn nhớ biết trước ngày đổ rác nhé."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "58d2f61f30215da182c66fb7fa017d45187aa021e7fb900a1ac23d65ddb57308",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "4ade004c-bea6-5270-8caa-30315beca979",
+      "is_demo": true,
+      "item_id": "5155a7e6-4ef3-5ec4-82e3-c688026efc53",
+      "key": "ko:exercise:housing-search-fill-gwallibi",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "관리비"
+            ],
+            "b2": [
+              "편이에요"
+            ]
+          }
+        },
+        "display_answer": "이 아파트는 관리비가 비싼 편이에요.",
+        "explanation": {
+          "vi": "Phí quản lý là 관리비. 비싸다 là tính từ → 비싼 편이에요 (thuộc loại đắt)."
+        },
+        "known_wrong": [
+          {
+            "answer": "월세",
+            "error_tag": "wolse_gwallibi",
+            "feedback_vi": "월세 là tiền thuê hằng tháng; \"phí quản lý\" là 관리비."
+          },
+          {
+            "answer": "편해요",
+            "error_tag": "pyeon_pyeonhada",
+            "feedback_vi": "편해요 là \"thoải mái, tiện\". \"Thuộc loại…\" là 편이에요."
+          },
+          {
+            "answer": "편있어요",
+            "error_tag": "copula_form",
+            "feedback_vi": "편 là danh từ, đi với 이다 - 편이에요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          },
+          {
+            "id": "b2",
+            "width_hint": 4
+          }
+        ],
+        "template": "(Chung cư này phí quản lý thuộc loại đắt.) 이 아파트는 {{b1}}가 비싼 {{b2}}."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "4c7b9e9122909b4fbfb178cf4ef7f813803b8f5d71eda1d926cab6a8d99b12b8",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "1ea1cb50-75f0-557b-ac08-9e0651316930",
+      "is_demo": true,
+      "item_id": "8ab81dd8-ae42-5f53-b565-0271f991592c",
+      "key": "ko:exercise:housing-search-fill-manhada-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "살"
+            ]
+          }
+        },
+        "display_answer": "이 원룸은 좁지만 깨끗해서 살 만해요.",
+        "explanation": {
+          "vi": "V-(으)ㄹ 만하다 - động từ gốc ㄹ (살다) chỉ cần giữ nguyên ㄹ → 살 만해요 (ở được)."
+        },
+        "known_wrong": [
+          {
+            "answer": "살을",
+            "error_tag": "rieul_stem",
+            "feedback_vi": "살다 có gốc ㄹ nên chỉ giữ một ㄹ - 살 만해요, không thêm 을."
+          },
+          {
+            "answer": "사는",
+            "error_tag": "adnominal_form",
+            "feedback_vi": "만하다 đi với dạng -(으)ㄹ, không đi với -는."
+          },
+          {
+            "answer": "살아",
+            "error_tag": "adnominal_form",
+            "feedback_vi": "Trước 만하다 là dạng định ngữ -(으)ㄹ - 살."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Phòng này chật nhưng sạch nên cũng ở được.",
+          "Gợi ý: 살다 + -(으)ㄹ 만하다; 살다 có gốc kết thúc bằng ㄹ."
+        ],
+        "template": "이 원룸은 좁지만 깨끗해서 {{b1}} 만해요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "2e3804ee4185b3c4132b9ad8843d3a80274144e1c260f57ae589e4a22c770d65",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "f6ea34b4-79fc-5ba9-9a28-df31dc0b1961",
+      "is_demo": true,
+      "item_id": "05cbd8d7-6ca3-541c-ae6e-db45a69f9cf9",
+      "key": "ko:exercise:housing-search-listen-price",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k3s"
+        },
+        "display_answer": "Cọc 10 triệu won, tiền thuê 600 nghìn won mỗi tháng; phí quản lý trả riêng.",
+        "explanation": {
+          "vi": "Mẫu \"보증금 …에 월세 …\" - số đầu là cọc (천만 원), số sau là tiền tháng (육십만 원). 따로 내야 해요 nghĩa là phí quản lý phải trả riêng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "보증금 천만 원에 월세 육십만 원이에요. 관리비는 따로 내야 해요.",
+        "options": [
+          {
+            "id": "b5n",
+            "lang": "vi",
+            "text": "Thuê jeonse 10 triệu won, không có tiền tháng."
+          },
+          {
+            "id": "k3s",
+            "lang": "vi",
+            "text": "Cọc 10 triệu won, tiền thuê 600 nghìn won mỗi tháng; phí quản lý trả riêng."
+          },
+          {
+            "id": "f1h",
+            "lang": "vi",
+            "text": "Cọc 10 triệu won, tiền thuê 600 nghìn won; không cần trả phí quản lý."
+          },
+          {
+            "id": "w8a",
+            "lang": "vi",
+            "text": "Cọc 600 nghìn won, tiền thuê 10 triệu won mỗi tháng; đã gồm phí quản lý."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "ee72f0d7eba3938c725c6bfc87c2c8406940f63ce7a07018e47e96e84a2c076d",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "8280d4e8-3728-5490-adfe-0d5a87655f12",
+      "is_demo": true,
+      "item_id": "794ca3ee-7a2b-5792-ba12-b7c713edff63",
+      "key": "ko:exercise:housing-search-mcq-choose-wolse",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c5j"
+        },
+        "display_answer": "보증금이 적은 월세 방을 찾고 있어요.",
+        "explanation": {
+          "vi": "Ít tiền cọc và trả tiền tháng là 월세. 전세 luôn cần một khoản cọc rất lớn, nên \"전세 cọc ít\" là mâu thuẫn và hai lựa chọn 전세 còn lại không hợp túi tiền của bạn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "n9w",
+            "lang": "ko",
+            "text": "보증금이 적은 전세 방을 찾고 있어요."
+          },
+          {
+            "id": "c5j",
+            "lang": "ko",
+            "text": "보증금이 적은 월세 방을 찾고 있어요."
+          },
+          {
+            "id": "e7l",
+            "lang": "ko",
+            "text": "보증금이 많은 전세 방을 찾고 있어요."
+          },
+          {
+            "id": "y3f",
+            "lang": "ko",
+            "text": "월세가 없는 전세 방을 찾고 있어요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn là du học sinh, không có nhiều tiền tiết kiệm và muốn trả tiền thuê hằng tháng. Bạn nói với nhân viên 부동산 câu nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "233dfbf384e9bfea9c56d6514fd3d238374b56f2d6b587dfe0e575f68fb703f9",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "12809797-8350-5717-a6e6-a7c209a275bb",
+      "is_demo": true,
+      "item_id": "0e1c3de4-6a14-524d-a7f1-95f2db024ea7",
+      "key": "ko:exercise:housing-search-mcq-jeonse-meaning",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "q7r"
+        },
+        "display_answer": "Đóng một khoản cọc rất lớn, không trả tiền tháng, hết hạn được trả lại cọc.",
+        "explanation": {
+          "vi": "전세 là đóng một khoản cọc lớn và không có tiền tháng; khi hết hợp đồng chủ nhà trả lại toàn bộ cọc. \"Cọc nhỏ + tiền tháng\" là 월세; \"nguyên căn\" không liên quan đến 전세."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "x4p",
+            "lang": "vi",
+            "text": "Trả trước toàn bộ tiền thuê một năm và không được nhận lại."
+          },
+          {
+            "id": "m2v",
+            "lang": "vi",
+            "text": "Đặt cọc nhỏ rồi trả tiền thuê đều đặn mỗi tháng."
+          },
+          {
+            "id": "q7r",
+            "lang": "vi",
+            "text": "Đóng một khoản cọc rất lớn, không trả tiền tháng, hết hạn được trả lại cọc."
+          },
+          {
+            "id": "d9k",
+            "lang": "vi",
+            "text": "Thuê nguyên căn nhà thay vì thuê một phòng."
+          }
+        ],
+        "shuffle": true,
+        "stem": "전세 là kiểu thuê nhà nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "8046c28a6deef1db1c055d8679edfe9b4c88c689d2e14cc62f1196cc92c349ac",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "dad32626-6a8e-5b1c-9a37-d6ef2e6abc8d",
+      "is_demo": true,
+      "item_id": "4891cdce-9228-5322-b942-1dcde8509eb4",
+      "key": "ko:exercise:housing-search-mcq-pyeon-form",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "t6c"
+        },
+        "display_answer": "조용한",
+        "explanation": {
+          "vi": "조용하다 là tính từ nên dùng -(으)ㄴ 편이다 → 조용한 편이에요. -는 chỉ gắn với động từ; -(으)ㄹ và -아서 không đứng trước 편이다."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "r2e",
+            "lang": "ko",
+            "text": "조용하는"
+          },
+          {
+            "id": "t6c",
+            "lang": "ko",
+            "text": "조용한"
+          },
+          {
+            "id": "z8m",
+            "lang": "ko",
+            "text": "조용할"
+          },
+          {
+            "id": "h4u",
+            "lang": "ko",
+            "text": "조용해서"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn dạng đúng: 이 동네는 밤에 ___ 편이에요.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "88349993d218f8fd2464fa30a7788fe1fd6f44bda7d2e0d692f4701beae9754e",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "a4945548-c692-5fc1-8c56-b204c88c0453",
+      "is_demo": true,
+      "item_id": "4891cdce-9228-5322-b942-1dcde8509eb4",
+      "key": "ko:exercise:housing-search-mcq-reading-agent",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "g6t"
+        },
+        "display_answer": "이 방은 한 달에 월세 45만 원을 내야 해요.",
+        "explanation": {
+          "vi": "Theo mẫu \"보증금 500만 원에 월세 45만 원\", tiền tháng là 45만 원 và cọc là 500만 원. Có tiền tháng nên đây là 월세, không phải 전세; 걸어서 5분 nghĩa là gần ga."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "o1q",
+            "lang": "ko",
+            "text": "역에서 멀어서 버스를 타야 해요."
+          },
+          {
+            "id": "s2b",
+            "lang": "ko",
+            "text": "이 방은 전세라서 월세가 없어요."
+          },
+          {
+            "id": "g6t",
+            "lang": "ko",
+            "text": "이 방은 한 달에 월세 45만 원을 내야 해요."
+          },
+          {
+            "id": "v8z",
+            "lang": "ko",
+            "text": "보증금은 45만 원이에요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "다음 대화를 읽고 맞는 것을 고르십시오.\n직원: 이 원룸은 보증금 500만 원에 월세 45만 원이에요. 관리비는 5만 원이고요.\n손님: 역에서 가까워요?\n직원: 걸어서 5분이라서 가까운 편이에요. 좀 오래됐지만 깨끗해서 살 만해요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "31eb0da0a397ca65b0ea09aabaf8885378376d2384bf08c4b513d1df90e1ef04",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "4e58a5b5-79bc-5dc0-9210-020601c77abc",
+      "is_demo": true,
+      "item_id": "0e1c3de4-6a14-524d-a7f1-95f2db024ea7",
+      "key": "ko:exercise:housing-search-translate-jeonse-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Thuê jeonse thì không phải trả tiền thuê hằng tháng nhưng tiền cọc rất đắt.",
+            "Thuê jeonse không phải trả tiền thuê hằng tháng nhưng tiền cọc rất đắt.",
+            "Thuê jeonse thì không trả tiền tháng nhưng tiền cọc rất đắt.",
+            "Jeonse thì không phải trả tiền thuê hằng tháng nhưng tiền cọc rất đắt.",
+            "Jeonse không phải trả tiền tháng nhưng tiền cọc rất đắt.",
+            "Jeonse không trả tiền thuê hàng tháng nhưng tiền đặt cọc rất đắt.",
+            "Thuê jeonse thì không phải trả tiền thuê hàng tháng nhưng tiền đặt cọc rất cao.",
+            "Thuê jeonse không phải trả tiền thuê hàng tháng nhưng tiền cọc rất cao.",
+            "Jeonse thì không phải trả tiền tháng nhưng tiền cọc rất cao.",
+            "Thuê jeonse thì không mất tiền thuê hằng tháng nhưng tiền cọc rất đắt."
+          ]
+        },
+        "display_answer": "Thuê jeonse thì không phải trả tiền thuê hằng tháng nhưng tiền cọc rất đắt.",
+        "explanation": {
+          "vi": "월세를 안 내다 = không trả tiền thuê hằng tháng; 보증금 = tiền cọc; -지만 = nhưng. Đây chính là đặc điểm của 전세."
+        },
+        "known_wrong": [
+          {
+            "answer": "Thuê jeonse thì phải trả tiền thuê hằng tháng và tiền cọc rất đắt.",
+            "error_tag": "negation_missed",
+            "feedback_vi": "월세를 안 내지만 nghĩa là \"không trả tiền tháng\"."
+          },
+          {
+            "answer": "Thuê jeonse thì không phải trả tiền cọc nhưng tiền thuê hằng tháng rất đắt.",
+            "error_tag": "wolse_bojeunggeum",
+            "feedback_vi": "Ngược rồi - không có tiền tháng (월세), còn tiền cọc (보증금) rất đắt."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "order_index": 10,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "전세는 월세를 안 내지만 보증금이 아주 비싸요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "4950d8bb1009fb46261d6c46270e80014a81a1abe1971bb67e4ed80c44a6c749",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "e9ce8f4e-d6fc-593d-b964-329e8531f9b9",
+      "is_demo": true,
+      "item_id": "8ab81dd8-ae42-5f53-b565-0271f991592c",
+      "key": "ko:exercise:housing-search-translate-livable",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "이 방은 좀 좁지만 살 만해요.",
+            "이 방은 조금 좁지만 살 만해요.",
+            "이 방은 좁지만 살 만해요.",
+            "이 방은 좀 좁은 편이지만 살 만해요.",
+            "이 방은 좀 작지만 살 만해요.",
+            "이 방은 조금 작지만 살 만해요.",
+            "이 방이 좀 좁지만 살 만해요.",
+            "방이 좀 좁지만 살 만해요."
+          ]
+        },
+        "display_answer": "이 방은 좀 좁지만 살 만해요.",
+        "explanation": {
+          "vi": "\"Nhưng\" là -지만; \"cũng ở được\" là 살 만해요 (살다 + -(으)ㄹ 만하다, giữ một ㄹ)."
+        },
+        "known_wrong": [
+          {
+            "answer": "이 방은 좀 좁지만 살을 만해요.",
+            "error_tag": "rieul_stem",
+            "feedback_vi": "살다 có gốc ㄹ - viết 살 만해요, không thêm 을."
+          },
+          {
+            "answer": "이 방은 좀 좁아서 살 만해요.",
+            "error_tag": "connector_meaning",
+            "feedback_vi": "-아서 nghĩa là \"vì\"; câu gốc là \"nhưng\" - dùng -지만."
+          },
+          {
+            "answer": "이 방은 좀 좁지만 사는 만해요.",
+            "error_tag": "adnominal_form",
+            "feedback_vi": "만하다 đi với dạng -(으)ㄹ - 살 만해요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Phòng này hơi chật nhưng cũng ở được."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "09a8e7dabad7cfd158dd89c404c8c0b0ac2aaba1f243ab89a335cb134f0e96f6",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "3ea6826c-2bd0-587e-b701-6209b44559c8",
+      "is_demo": true,
+      "item_id": "f9f4d065-3186-5a31-86ef-e7c599433e95",
+      "key": "ko:exercise:housing-search-translate-moving",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "다음 달에 이사해요.",
+            "저는 다음 달에 이사해요.",
+            "전 다음 달에 이사해요.",
+            "다음 달에 이사 가요.",
+            "저는 다음 달에 이사 가요.",
+            "다음 달에 이사할 거예요.",
+            "저는 다음 달에 이사할 거예요.",
+            "다음 달에 이사 갈 거예요.",
+            "저는 다음 달에 이사 갈 거예요.",
+            "전 다음 달에 이사할 거예요."
+          ]
+        },
+        "display_answer": "저는 다음 달에 이사해요.",
+        "explanation": {
+          "vi": "Chuyển nhà = 이사하다 hoặc 이사 가다; \"tháng sau\" là 다음 달에. Có thể dùng hiện tại 이사해요 hoặc tương lai 이사할 거예요."
+        },
+        "known_wrong": [
+          {
+            "answer": "다음 달에 집을 이사해요.",
+            "error_tag": "isa_object",
+            "feedback_vi": "이사 đã có nghĩa \"chuyển chỗ ở\", không thêm 집을."
+          },
+          {
+            "answer": "daeum dare isahaeyo",
+            "error_tag": "romanization",
+            "feedback_vi": "Hãy viết bằng Hangul, không dùng phiên âm Latinh."
+          },
+          {
+            "answer": "지난달에 이사했어요.",
+            "error_tag": "tense_time",
+            "feedback_vi": "Câu gốc là \"tháng sau\" (다음 달), không phải \"tháng trước\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "order_index": 5,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tháng sau tôi chuyển nhà."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "d43327aecd6646b7a5627a9d05a18473f8c3c7b10e351c640fa71224bde3c682",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "abdc46ff-dd2d-55ca-b179-37efeef9bedd",
+      "is_demo": true,
+      "item_id": "b13e261c-ce88-544f-b427-5ee45a8576cd",
+      "key": "ko:exercise:housing-search-translate-trust-agency",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "그 부동산은 믿을 만해요.",
+            "그 부동산이 믿을 만해요.",
+            "저 부동산은 믿을 만해요.",
+            "그 부동산은 믿을 만한 곳이에요.",
+            "저 부동산은 믿을 만한 곳이에요.",
+            "그 부동산 사무소는 믿을 만해요."
+          ]
+        },
+        "display_answer": "그 부동산은 믿을 만해요.",
+        "explanation": {
+          "vi": "부동산 trong khẩu ngữ là văn phòng môi giới. \"Đáng tin\" = 믿다 + -(으)ㄹ 만하다 → 믿을 만해요."
+        },
+        "known_wrong": [
+          {
+            "answer": "그 부동산은 믿는 만해요.",
+            "error_tag": "adnominal_form",
+            "feedback_vi": "만하다 đi với dạng -(으)ㄹ - 믿을 만해요."
+          },
+          {
+            "answer": "그 부동산은 믿을 만이에요.",
+            "error_tag": "manhada_form",
+            "feedback_vi": "만하다 là một động từ - 믿을 만해요, không dùng 이에요."
+          },
+          {
+            "answer": "그 부동산은 믿어요.",
+            "error_tag": "manhada_missing",
+            "feedback_vi": "믿어요 là \"tôi tin\"; \"đáng tin\" cần -(으)ㄹ 만하다 - 믿을 만해요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Văn phòng môi giới đó đáng tin."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "9702499d6727fd434551645a094b51ab52fdbdbe0132c701726676759e03f793",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "8868454f-4d10-548c-bb4d-75d0046da09a",
+      "is_demo": true,
+      "item_id": "eec114a9-caef-5241-a782-9c339e8e5d7e",
+      "key": "ko:exercise:housing-search-wb-contract",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "p2",
+              "p1",
+              "p3",
+              "p4"
+            ],
+            [
+              "p1",
+              "p2",
+              "p3",
+              "p4"
+            ]
+          ]
+        },
+        "display_answer": "저는 지난주에 집주인과 계약했어요.",
+        "explanation": {
+          "vi": "\"Ký hợp đồng với ai\" là N과/와 계약하다 - 집주인과, không phải 집주인을. Động từ đứng cuối; 저는 và 지난주에 có thể đổi chỗ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Hàn: \"Tuần trước tôi đã ký hợp đồng với chủ nhà.\"",
+        "tokens": [
+          {
+            "id": "p4",
+            "text": "계약했어요"
+          },
+          {
+            "id": "p5",
+            "text": "집주인을"
+          },
+          {
+            "id": "p1",
+            "text": "지난주에"
+          },
+          {
+            "id": "p2",
+            "text": "저는"
+          },
+          {
+            "id": "p3",
+            "text": "집주인과"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
       "status": "published"
     },
     {
@@ -144452,6 +152143,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Người Anh nói autumn, người Mỹ nói fall - cùng nghĩa."
+        },
+        "examples": [
+          {
+            "target": "Hanoi is beautiful in autumn.",
+            "translation": {
+              "vi": "Hà Nội đẹp vào mùa thu."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mùa thu"
+        },
+        "pronunciation_note": {
+          "vi": "Chữ n cuối câm - đọc \"O-tầm\", không đọc \"o-tum-n\"."
+        }
+      },
+      "content_hash": "2e3e6c99ebafb8f6248141073fc3e09a593a9599c661912a4538c08dc9f4d9b5",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ˈɔːtəm/",
+        "pos": "danh từ",
+        "text": "autumn (US fall)"
+      },
+      "id": "ba9e65d1-b3e4-5323-8082-c5f722bf6996",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:autumn",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Avoid + V-ing, không phải avoid + to V."
         },
         "examples": [
@@ -144647,6 +152380,48 @@ select content_private.import_bundle($bundle${
       "key": "en:item:badly",
       "language_code": "en",
       "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Bag là từ chung cho túi xách, cặp, ba lô; ba lô cụ thể là backpack."
+        },
+        "examples": [
+          {
+            "target": "Is this your bag? - Yes, the brown one.",
+            "translation": {
+              "vi": "Đây là túi của bạn à? - Ừ, cái màu nâu."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cái túi, cái cặp"
+        },
+        "pronunciation_note": {
+          "vi": "Âm /æ/ mở miệng rộng; âm cuối /ɡ/ phải nghe được, khác back /bæk/."
+        }
+      },
+      "content_hash": "a20ff7222ab165e25ecd69b49e316ed384a8b6e2106379f52eda44817a6d54e9",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/bæɡ/",
+        "pos": "danh từ",
+        "text": "bag"
+      },
+      "id": "bcf1d794-0921-55f5-8ec3-0d522e240440",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:bag",
+      "language_code": "en",
+      "level_code": "pre_a1",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -145773,6 +153548,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Tiếng Anh nói black and white (đen trước trắng), giống thứ tự \"đen trắng\" của tiếng Việt."
+        },
+        "examples": [
+          {
+            "target": "My cat is black and white.",
+            "translation": {
+              "vi": "Con mèo của mình màu đen trắng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "màu đen / màu trắng"
+        },
+        "pronunciation_note": {
+          "vi": "Black có /æ/ mở rộng miệng và bật /k/ cuối; white bắt đầu bằng /w/ tròn môi, chữ h không đọc."
+        }
+      },
+      "content_hash": "e11b0ab5917fe180652a0df60d4570fe26bb594ebfd82743c4671d7fb4284800",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/blæk/ · /waɪt/",
+        "pos": "tính từ / danh từ",
+        "text": "black / white"
+      },
+      "id": "2dcc0d48-fbd9-5a1c-a5ae-f2ea50c004b5",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:black-white",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Hay đi với turn out to be / prove to be. Không dịch \"tái ông mất ngựa\" sát chữ sang tiếng Anh."
         },
         "examples": [
@@ -145805,6 +153622,45 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Tiếng Việt \"xanh\" có thể là blue hoặc green. Xanh da trời, xanh nước biển là blue; xanh lá cây là green."
+        },
+        "examples": [
+          {
+            "target": "The sky is blue today.",
+            "translation": {
+              "vi": "Hôm nay trời xanh."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "màu xanh dương, xanh da trời"
+        }
+      },
+      "content_hash": "36e77a68bb11970b6d28d4f63dcb8b62d3fe694c97c25d94ac79bdf863803c4f",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/bluː/",
+        "pos": "tính từ / danh từ",
+        "text": "blue"
+      },
+      "id": "3a9fb8d2-2216-5935-b35e-ea69a364fc1c",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:blue",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -146351,6 +154207,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Tóc \"bạc\" của người già là grey hair, không phải silver hair. Anh viết grey, Mỹ viết gray."
+        },
+        "examples": [
+          {
+            "target": "He's got brown eyes and grey hair.",
+            "translation": {
+              "vi": "Ông ấy có mắt nâu và tóc bạc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "màu nâu / màu xám"
+        }
+      },
+      "content_hash": "0276910dc19173c6fe6abac73d334febabf5870d7b18f0e303d1a013aec8459c",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/braʊn/ · /ɡreɪ/",
+        "pos": "tính từ / danh từ",
+        "text": "brown / grey (US gray)"
+      },
+      "id": "4da5e6f8-5d8f-52cb-993d-6079af00b00b",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:brown-grey",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Tiếng Anh cần từ sở hữu đổi theo người - I brush my teeth, she brushes her teeth. Brush có đuôi -sh nên thêm -es."
         },
         "examples": [
@@ -146565,9 +154460,9 @@ select content_private.import_bundle($bundle${
         },
         "examples": [
           {
-            "target": "Sorry, I'm busy this evening.",
+            "target": "I'm busy on Saturday morning.",
             "translation": {
-              "vi": "Xin lỗi, tối nay mình bận."
+              "vi": "Sáng thứ Bảy mình bận."
             }
           }
         ],
@@ -146575,10 +154470,10 @@ select content_private.import_bundle($bundle${
           "vi": "bận"
         },
         "pronunciation_note": {
-          "vi": "Chữ u đọc /ɪ/ - \"BI-zi\", không đọc \"bu-zi\"."
+          "vi": "Chữ u đọc /ɪ/ - \"BI-zi\", không đọc \"biu-zi\" hay \"bu-zi\"."
         }
       },
-      "content_hash": "da5f0db2f167599b8d91434d2d3af3d28bebffbd12b0931f64c5f3427f452eac",
+      "content_hash": "6f629a66ac6a433a7f83b2b6add9d00564e53e325e967190ccc4e435e088a2e7",
       "difficulty": 1,
       "front": {
         "ipa": "/ˈbɪzi/",
@@ -146590,7 +154485,7 @@ select content_private.import_bundle($bundle${
       "item_type": "vocab",
       "key": "en:item:busy",
       "language_code": "en",
-      "level_code": "a2",
+      "level_code": "a1",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -148243,6 +156138,48 @@ select content_private.import_bundle($bundle${
       "key": "en:item:colleague",
       "language_code": "en",
       "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Anh viết colour, Mỹ viết color - đều đúng, nhưng dùng thống nhất một kiểu trong cùng bài viết."
+        },
+        "examples": [
+          {
+            "target": "Blue is a beautiful colour.",
+            "translation": {
+              "vi": "Xanh dương là một màu đẹp."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "màu, màu sắc"
+        },
+        "pronunciation_note": {
+          "vi": "Chữ o đầu đọc /ʌ/ gần \"â\" - \"CÂ-lờ\", không đọc \"cô-lơ\"."
+        }
+      },
+      "content_hash": "62036e4d51e285f71bbe96da06a0ae9850e56181dc619ef9d6e4a3e19beae566",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ˈkʌlə/ · US /ˈkʌlɚ/",
+        "pos": "danh từ",
+        "text": "colour (US color)"
+      },
+      "id": "91ad46ca-b92f-5650-a0d2-704f40c8dcef",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:colour",
+      "language_code": "en",
+      "level_code": "a1",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -150154,6 +158091,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Thêm -ing thì bỏ e - dancing, không viết \"danceing\"."
+        },
+        "examples": [
+          {
+            "target": "She loves dancing.",
+            "translation": {
+              "vi": "Cô ấy mê nhảy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nhảy, múa"
+        },
+        "pronunciation_note": {
+          "vi": "Người Anh đọc /dɑːns/ gần \"đaans\", người Mỹ đọc /dæns/; nhớ âm /s/ ở cuối."
+        }
+      },
+      "content_hash": "56a2a6da25433d8d3d519127beebb97657d3f7b6774d3cea3eeb9b6909a61f74",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /dɑːns/ · US /dæns/",
+        "pos": "động từ / danh từ",
+        "text": "dance"
+      },
+      "id": "e40a876c-654b-5fa8-b07b-067cece5d457",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:dance",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "\"Walking into the office, the screens were all black\" sai - nghe như màn hình tự đi vào. Tiếng Việt cho phép bỏ chủ ngữ thoải mái, tiếng Anh thì không."
         },
         "examples": [
@@ -151564,6 +159543,48 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Vẽ bằng bút là draw; vẽ bằng màu nước, sơn là paint."
+        },
+        "examples": [
+          {
+            "target": "My son likes drawing animals.",
+            "translation": {
+              "vi": "Con trai mình thích vẽ con vật."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "vẽ (bằng bút chì, bút mực)"
+        },
+        "pronunciation_note": {
+          "vi": "Chữ w không đọc - draw là /drɔː/, gần \"đro\", không đọc \"đrao\"."
+        }
+      },
+      "content_hash": "7ef533ec633bc3efb74b7a2ac39c3f370e97057ab2d7dafeadae7fe7584e1944",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /drɔː/ · US /drɑː/",
+        "pos": "động từ",
+        "text": "draw"
+      },
+      "id": "150796c6-349d-5b93-b4bb-e0a374481b2b",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:draw",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -153304,6 +161325,55 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Favourite đứng trước danh từ và cần my/your - my favourite colour, không nói \"colour favourite of me\" hay \"the most favourite\"."
+        },
+        "examples": [
+          {
+            "target": "My favourite colour is green.",
+            "translation": {
+              "vi": "Màu mình thích nhất là màu xanh lá."
+            }
+          },
+          {
+            "target": "What's your favourite season?",
+            "translation": {
+              "vi": "Bạn thích mùa nào nhất?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "(… mà mình) thích nhất"
+        },
+        "pronunciation_note": {
+          "vi": "Thường đọc ba âm tiết \"FÂY-vờ-rít\", nhấn âm đầu."
+        }
+      },
+      "content_hash": "7c418de40b2851913e1387c936afdd4508ebd0137321a1a1ca788dd21674c683",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˈfeɪvərɪt/",
+        "pos": "tính từ",
+        "text": "favourite (US favorite)"
+      },
+      "id": "1d9df5ab-052b-5e61-b751-a38598880f84",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:favourite",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Left ở đây là quá khứ phân từ của leave (bỏ lại), không phải \"bên trái\"."
         },
         "examples": [
@@ -154114,6 +162184,48 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Free ở đây là \"rảnh\", không phải \"miễn phí\". Lúc rảnh là in my free time, có in và có my/your."
+        },
+        "examples": [
+          {
+            "target": "I don't have much free time.",
+            "translation": {
+              "vi": "Mình không có nhiều thời gian rảnh."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thời gian rảnh"
+        },
+        "pronunciation_note": {
+          "vi": "Free đọc kéo dài /friː/ gần \"frii\", nhớ có âm /r/ sau f, không đọc thành \"phi\"."
+        }
+      },
+      "content_hash": "7548d573eb3055098f1c6b3e61f7b32e7043b6ffd45979d88eec0df1e9ae0587",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ˌfriː ˈtaɪm/",
+        "pos": "danh từ",
+        "text": "free time"
+      },
+      "id": "f787bb16-20bb-52cc-8aab-3cf9cde25891",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:free-time",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -155186,6 +163298,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Đi dạo là go for a walk, có for a. Walk một mình là \"đi bộ\" nói chung - I walk to school."
+        },
+        "examples": [
+          {
+            "target": "I go for a walk in the park after dinner.",
+            "translation": {
+              "vi": "Sau bữa tối mình đi dạo trong công viên."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đi dạo"
+        },
+        "pronunciation_note": {
+          "vi": "Chữ l trong walk câm - đọc /wɔːk/ gần \"quoóc\"."
+        }
+      },
+      "content_hash": "7c56c35de3678cbfeb5c769a789bbd5ba5101daebbc1f3cc534d328fab338942",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ˌɡəʊ fər ə ˈwɔːk/ · US /ˌɡoʊ fɚ ə ˈwɑːk/",
+        "pos": "cụm động từ",
+        "text": "go for a walk"
+      },
+      "id": "3ccd5f5b-938f-5809-90d9-a2d2ddf8a222",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:go-for-a-walk",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Không có to trước home - nói go home, không nói \"go to home\". Đây là lỗi rất hay gặp vì người Việt quen nói go to work, go to school."
         },
         "examples": [
@@ -155252,6 +163406,45 @@ select content_private.import_bundle($bundle${
       "key": "en:item:go-jogging",
       "language_code": "en",
       "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Go + -ing, không có to - go shopping, không nói \"go to shopping\". Shopping viết hai chữ p."
+        },
+        "examples": [
+          {
+            "target": "We often go shopping on Saturday.",
+            "translation": {
+              "vi": "Chúng mình hay đi mua sắm vào thứ Bảy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đi mua sắm"
+        }
+      },
+      "content_hash": "3c045bbaf23bea746b103010ab962e3d78c9f40ef3dcc3e76eef787eec51c4c5",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ˌɡəʊ ˈʃɒpɪŋ/ · US /ˌɡoʊ ˈʃɑːpɪŋ/",
+        "pos": "cụm động từ",
+        "text": "go shopping"
+      },
+      "id": "83b78772-059d-5cfc-9c6c-908262f28cee",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:go-shopping",
+      "language_code": "en",
+      "level_code": "a1",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -155466,6 +163659,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Đây là nơi chốn nên có to the - go to the cinema. Người Mỹ thường nói go to the movies."
+        },
+        "examples": [
+          {
+            "target": "Let's go to the cinema tonight.",
+            "translation": {
+              "vi": "Tối nay mình đi xem phim đi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đi xem phim (ở rạp)"
+        },
+        "pronunciation_note": {
+          "vi": "Cinema nhấn âm đầu - SI-nờ-mờ, chữ c đọc /s/."
+        }
+      },
+      "content_hash": "dd45508a1baf454491cd7f6c5c3265d98781f11d30686b487adbb34ad787f262",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ˌɡəʊ tə ðə ˈsɪnəmə/ · US /ˌɡoʊ tə ðə ˈsɪnəmə/",
+        "pos": "cụm động từ",
+        "text": "go to the cinema"
+      },
+      "id": "824e2741-0f7d-5894-9038-bea9f0593dae",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:go-to-the-cinema",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Gym là nơi chốn nên dùng go to the gym (có to the), khác với go swimming (không có to)."
         },
         "examples": [
@@ -155623,6 +163858,48 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Idea là danh từ đếm được nên cần a - a good idea, không nói \"That's good idea\"."
+        },
+        "examples": [
+          {
+            "target": "Why don't we go to the cinema? - That's a good idea.",
+            "translation": {
+              "vi": "Hay là mình đi xem phim nhé? - Ý hay đấy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Ý hay đấy."
+        },
+        "pronunciation_note": {
+          "vi": "Idea nhấn âm giữa - ai-ĐIA, ba âm tiết."
+        }
+      },
+      "content_hash": "c96f9be7f395892896aaf659a9e6ba3b895b73e61bb21fccc856dc70cf3f5f8a",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ˌðæts ə ɡʊd aɪˈdɪə/ · US /ˌðæts ə ɡʊd aɪˈdiːə/",
+        "pos": "câu đáp",
+        "text": "That's a good idea."
+      },
+      "id": "de662f24-48fd-567b-911e-c807e1b0a61b",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:good-idea",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -155829,6 +164106,48 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Rau xanh, lá xanh luôn là green; đừng dịch \"xanh\" thành blue khi nói về cây cối."
+        },
+        "examples": [
+          {
+            "target": "I've got a green T-shirt.",
+            "translation": {
+              "vi": "Mình có một cái áo phông màu xanh lá."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "màu xanh lá cây"
+        },
+        "pronunciation_note": {
+          "vi": "Âm /iː/ kéo dài - \"griin\", có /r/ sau g."
+        }
+      },
+      "content_hash": "df06de7a0b3e1e41faf6d327a264880396638fd6d931d57c7534b57358e31e92",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ɡriːn/",
+        "pos": "tính từ / danh từ",
+        "text": "green"
+      },
+      "id": "f66cbc1c-691c-5990-b68b-8324c77e5cf4",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:green",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -156409,6 +164728,48 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hate mạnh hơn don't like nhiều. Giống like/love, sau hate dùng -ing - I hate cooking."
+        },
+        "examples": [
+          {
+            "target": "I hate getting up early.",
+            "translation": {
+              "vi": "Mình ghét dậy sớm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "rất ghét"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc /heɪt/ gần \"hêit\", bật nhẹ âm /t/ cuối; khác hat /hæt/ (cái mũ)."
+        }
+      },
+      "content_hash": "78c27d3c275c0052e444eedb415e2070019333fa3d3d36183ebd98eefe167a85",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/heɪt/",
+        "pos": "động từ",
+        "text": "hate"
+      },
+      "id": "0e94096b-fb9f-571a-9950-35b982bb3eae",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:hate",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -157401,6 +165762,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Số nhiều là hobbies (y → ies). Sau My hobby is dùng danh từ hoặc -ing - My hobby is reading, không nói My hobby is read."
+        },
+        "examples": [
+          {
+            "target": "My hobby is drawing.",
+            "translation": {
+              "vi": "Sở thích của mình là vẽ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "sở thích (việc bạn hay làm cho vui)"
+        },
+        "pronunciation_note": {
+          "vi": "Nhấn âm đầu HOB; chữ y cuối đọc /i/ ngắn."
+        }
+      },
+      "content_hash": "75fd920111d7b0243952a826cdc5a9d88c4209c51c808f2f73393148d739e2af",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ˈhɒbi/ · US /ˈhɑːbi/",
+        "pos": "danh từ",
+        "text": "hobby"
+      },
+      "id": "35056bcd-36e7-50cc-a383-47c1c54a0cf9",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:hobby",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Hold là cầm, giữ trong tay; carry là cầm, mang đi chỗ khác (đang di chuyển)."
         },
         "examples": [
@@ -157549,6 +165952,48 @@ select content_private.import_bundle($bundle${
       "key": "en:item:hospital",
       "language_code": "en",
       "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Nói về trời thì dùng It's cold; nói về người thấy lạnh thì I'm cold. Không nói \"I'm hot weather\"."
+        },
+        "examples": [
+          {
+            "target": "It's very hot in Saigon in April.",
+            "translation": {
+              "vi": "Tháng Tư ở Sài Gòn trời rất nóng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nóng / lạnh"
+        },
+        "pronunciation_note": {
+          "vi": "Cold có âm đôi /əʊ/ và bật /d/ cuối - \"câuld\"; đừng đọc \"con\" hay \"côn\"."
+        }
+      },
+      "content_hash": "5a3227b56277d21817d792093374d30ba477174a2be805991a33465a395951a1",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /hɒt/ · US /hɑːt/ · UK /kəʊld/ · US /koʊld/",
+        "pos": "tính từ",
+        "text": "hot / cold"
+      },
+      "id": "0c6b71f7-9577-50ac-9ce0-6214ba1a588b",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:hot-cold",
+      "language_code": "en",
+      "level_code": "pre_a1",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -160395,6 +168840,51 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Tiếng Việt nói \"trời mưa\", \"nóng quá\", nhưng tiếng Anh cần It's - It's hot, không nói \"Is hot\" hay \"Weather is hot\". Rain là danh từ/động từ - It's rainy hoặc It's raining, không nói \"It is rain\"."
+        },
+        "examples": [
+          {
+            "target": "It's hot and sunny today.",
+            "translation": {
+              "vi": "Hôm nay trời nóng và nắng."
+            }
+          },
+          {
+            "target": "It's raining.",
+            "translation": {
+              "vi": "Trời đang mưa."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Trời… - dùng it làm chủ ngữ giả khi nói về thời tiết."
+        }
+      },
+      "content_hash": "484df7de4c8b95aa286f437737c3a89f376ba5d5bda5109d032e3899378e3c0a",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ɪts/",
+        "pos": "cấu trúc",
+        "text": "It's + thời tiết (It's sunny / It's cold)"
+      },
+      "id": "b052f8e4-44b4-5b18-8a86-5a94b0622024",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:it-weather",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "It would appear that… trang trọng và mềm hơn It appears that… và It seems that…; hay dùng khi chỉ ra lỗi mà không muốn quy trách nhiệm trực tiếp."
         },
         "examples": [
@@ -161304,6 +169794,46 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Sau Let's là động từ nguyên mẫu, không có to - Let's go, không nói \"Let's to go\" hay \"Let's going\". Let's = let us, luôn có cả người nói."
+        },
+        "examples": [
+          {
+            "target": "Let's go to the park.",
+            "translation": {
+              "vi": "Mình ra công viên đi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Mình cùng… đi! (rủ ai đó làm gì cùng)"
+        }
+      },
+      "content_hash": "22db876bfadee8e24218c6ce86c323e5e108ee5f20a429155f1b06695cd28197",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/lets/",
+        "pos": "cấu trúc",
+        "text": "Let's + động từ nguyên mẫu"
+      },
+      "id": "4ec68260-ff86-5157-9ec4-fbf42c7087da",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:lets",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Sau move on to là danh từ hoặc V-ing (move on to discussing…), vì to là giới từ. Không nói \"move on to discuss about\"."
         },
         "examples": [
@@ -161494,6 +170024,45 @@ select content_private.import_bundle($bundle${
       "key": "en:item:lifestyle",
       "language_code": "en",
       "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Light/dark đứng trước tên màu - light blue (xanh nhạt), ngược với tiếng Việt \"xanh nhạt\"."
+        },
+        "examples": [
+          {
+            "target": "I want a dark blue shirt.",
+            "translation": {
+              "vi": "Mình muốn một cái áo sơ mi màu xanh đậm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "(màu) nhạt / (màu) đậm, sẫm"
+        }
+      },
+      "content_hash": "d931dd69ac0cf16ebd7a8b37ae32b024fc43c42d29c13a07c32f8b722b1a9b21",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/laɪt/ · UK /dɑːk/ · US /dɑːrk/",
+        "pos": "tính từ",
+        "text": "light / dark + màu"
+      },
+      "id": "bca41acb-d8fa-5e94-b916-99dea3293f78",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:light-dark",
+      "language_code": "en",
+      "level_code": "a1",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -162265,6 +170834,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Chỉ dùng với gia đình, bạn thân. Thư công việc dùng Best regards, không dùng Love from."
+        },
+        "examples": [
+          {
+            "target": "See you soon! Love from Mai.",
+            "translation": {
+              "vi": "Sớm gặp lại nhé! Thương, Mai."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Thương, … (lời chào cuối thư gửi người thân, bạn thân)"
+        }
+      },
+      "content_hash": "2654d6695c9fcf59b5eca31b7887b97bcf754345df3ce6a39af8f11d5fb02271",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ˈlʌv frəm/",
+        "pos": "lời kết thư",
+        "text": "Love from … / Love, …"
+      },
+      "id": "df40d4cb-8876-5ad4-a52a-e494bbf5baa7",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:love-from",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Đứng đầu câu và có dấu phẩy sau. Không nói Lucky, nobody was injured - phải là trạng từ luckily."
         },
         "examples": [
@@ -162796,6 +171404,45 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "grammar",
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Me too chỉ dùng để đồng ý với câu khẳng định. Không nói \"I too\" khi trả lời ngắn."
+        },
+        "examples": [
+          {
+            "target": "I want to go to the beach. - Me too!",
+            "translation": {
+              "vi": "Mình muốn đi biển. - Mình cũng thế!"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Mình cũng vậy."
+        }
+      },
+      "content_hash": "4c5bd32a2bb241c8f548da05a92bd6b7c473a2b6c3c5ca1d583c145e232f734b",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ˌmiː ˈtuː/",
+        "pos": "câu đáp",
+        "text": "Me too."
+      },
+      "id": "a943d9c6-5c22-5809-984c-651fac54ccb9",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:me-too",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -166170,6 +174817,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Orange vừa là màu cam vừa là quả cam - an orange (quả cam), an orange bag (túi màu cam)."
+        },
+        "examples": [
+          {
+            "target": "Her dress is pink and purple.",
+            "translation": {
+              "vi": "Váy của cô ấy màu hồng và tím."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "màu cam / màu hồng / màu tím"
+        },
+        "pronunciation_note": {
+          "vi": "Orange đọc \"O-rinj\", hai âm tiết, âm cuối /dʒ/; purple đọc \"PƠ-pồ\"."
+        }
+      },
+      "content_hash": "9e4068eaf660d04d8732041e056f7190c65c199d3081fc6cb0ed92c6286460e6",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ˈɒrɪndʒ/ · US /ˈɔːrɪndʒ/ · /pɪŋk/ · UK /ˈpɜːpl/ · US /ˈpɝːpl/",
+        "pos": "tính từ / danh từ",
+        "text": "orange / pink / purple"
+      },
+      "id": "20071d9d-c6a7-56b6-a0eb-400ed7203bb2",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:orange-pink-purple",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Nói ngày phải dùng số thứ tự - May fifth hoặc the fifth of May, không nói May five. Chú ý chính tả fifth, ninth (không có e), twelfth, twentieth."
         },
         "examples": [
@@ -167543,6 +176232,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Nhạc cụ có the (play the guitar), còn môn thể thao thì không (play football). Người Việt hay nói \"play guitar\" hoặc \"play the football\"."
+        },
+        "examples": [
+          {
+            "target": "My sister plays the piano very well.",
+            "translation": {
+              "vi": "Chị mình chơi piano rất hay."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chơi đàn ghi-ta / chơi đàn piano"
+        },
+        "pronunciation_note": {
+          "vi": "Guitar nhấn âm sau - gi-TAR, khác tiếng Việt \"ghi-ta\" đọc đều."
+        }
+      },
+      "content_hash": "515876f76642ccebacb17708563faf9cd2a1e541fff955cf3d042d22813a288d",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˌpleɪ ðə ɡɪˈtɑː/ · US /ˌpleɪ ðə ɡɪˈtɑːr/ · /piˈænəʊ/ UK · /piˈænoʊ/ US",
+        "pos": "cụm động từ",
+        "text": "play the guitar / the piano"
+      },
+      "id": "29665841-850a-55ce-80b6-465edff7f5f7",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:play-the-guitar",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Play + môn thể thao không cần the (play football); nhạc cụ thường có the (play the guitar)."
         },
         "examples": [
@@ -167999,6 +176730,46 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Bưu thiếp viết ngắn, thân mật - mở đầu Dear/Hi + tên, kể thời tiết và việc đang làm, kết thúc Love from hoặc See you soon."
+        },
+        "examples": [
+          {
+            "target": "I'm writing a postcard to my grandmother.",
+            "translation": {
+              "vi": "Mình đang viết bưu thiếp cho bà."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bưu thiếp"
+        }
+      },
+      "content_hash": "e1e47591004897e9e991ab24631f0aa2c0af2e36dd3db801fc4249a9f8f4dfb1",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ˈpəʊstkɑːd/ · US /ˈpoʊstkɑːrd/",
+        "pos": "danh từ",
+        "text": "postcard"
+      },
+      "id": "c75ab15f-b250-560b-a299-20f85bd142f1",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:postcard",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "writing"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -169277,6 +178048,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Có the - in the rainy season. Rainy (tính từ) đứng trước season, không nói \"season rain\"."
+        },
+        "examples": [
+          {
+            "target": "In the south of Vietnam, the rainy season is from May to October.",
+            "translation": {
+              "vi": "Ở miền Nam Việt Nam, mùa mưa kéo dài từ tháng Năm đến tháng Mười."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mùa mưa / mùa khô"
+        }
+      },
+      "content_hash": "0bdbb882bf9d96934bad1d160e40ac2c3f7a3c7e091c31fe1df5fdf48de5a991",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ðə ˈreɪni ˌsiːzn/ · /ðə ˈdraɪ ˌsiːzn/",
+        "pos": "cụm danh từ",
+        "text": "the rainy season / the dry season"
+      },
+      "id": "777c4645-1d3e-5b03-a6e7-fc3aba219a25",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:rainy-season-dry-season",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Dùng raise (nâng lên), không dùng rise (tự tăng, không có tân ngữ) hay increase awareness - cách sau ít tự nhiên hơn."
         },
         "examples": [
@@ -169555,6 +178365,48 @@ select content_private.import_bundle($bundle${
       "key": "en:item:recently",
       "language_code": "en",
       "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Màu đứng trước danh từ - a red bag, không nói \"a bag red\" như \"túi đỏ\" trong tiếng Việt."
+        },
+        "examples": [
+          {
+            "target": "She's got a red bag.",
+            "translation": {
+              "vi": "Cô ấy có một cái túi màu đỏ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "màu đỏ"
+        },
+        "pronunciation_note": {
+          "vi": "Bật rõ âm /d/ cuối; đừng đọc thành \"ret\" hay \"re\"."
+        }
+      },
+      "content_hash": "56735f1e2b3b27ffff5f26fb0ace488c6f496f5ad59a64c3476d8bf18bd790f2",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/red/",
+        "pos": "tính từ / danh từ",
+        "text": "red"
+      },
+      "id": "319b0b60-5833-5338-a98f-d0f5781fee97",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:red",
+      "language_code": "en",
+      "level_code": "pre_a1",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -170898,6 +179750,45 @@ select content_private.import_bundle($bundle${
     {
       "audio_path": null,
       "back": {
+        "confusion": {
+          "vi": "Đi xe đạp, xe máy, cưỡi ngựa đều dùng ride, không dùng drive (drive chỉ cho ô tô) hay \"go a bike\"."
+        },
+        "examples": [
+          {
+            "target": "My children ride their bikes in the park.",
+            "translation": {
+              "vi": "Các con mình đạp xe trong công viên."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đạp xe, đi xe đạp"
+        }
+      },
+      "content_hash": "0a6bc5173a20faedf9c0ee3608e3d5810cb258ad9b7893f38d85287207affdab",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ˌraɪd ə ˈbaɪk/",
+        "pos": "cụm động từ",
+        "text": "ride a bike"
+      },
+      "id": "f4ea476c-5418-55ef-a6b0-a48d8417dde8",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:ride-a-bike",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
         "examples": [
           {
             "target": "I can't talk right now. I'm driving.",
@@ -171302,6 +180193,48 @@ select content_private.import_bundle($bundle${
       "key": "en:item:screen-time",
       "language_code": "en",
       "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Trước tên mùa dùng in - in summer, in the summer đều đúng; không dùng on."
+        },
+        "examples": [
+          {
+            "target": "There are four seasons in the north of Vietnam.",
+            "translation": {
+              "vi": "Miền Bắc Việt Nam có bốn mùa."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mùa (trong năm)"
+        },
+        "pronunciation_note": {
+          "vi": "Chữ s giữa từ đọc /z/ - \"SI-zần\"."
+        }
+      },
+      "content_hash": "32766e2ae8ee47f0d1d23c13c578c6d403e1b00455071794e19112385cc0ad06",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ˈsiːzn/",
+        "pos": "danh từ",
+        "text": "season"
+      },
+      "id": "817eb4a5-57d4-51fb-bb70-2e734a6d3284",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:season",
+      "language_code": "en",
+      "level_code": "a1",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -172307,6 +181240,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Người hát là singer, bài hát là song. Hát một bài là sing a song."
+        },
+        "examples": [
+          {
+            "target": "We sing karaoke on Friday evenings.",
+            "translation": {
+              "vi": "Tối thứ Sáu bọn mình hát karaoke."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hát"
+        },
+        "pronunciation_note": {
+          "vi": "Âm cuối /ŋ/ giống \"ng\" tiếng Việt, không bật thêm âm g."
+        }
+      },
+      "content_hash": "f650586ae9dc88a69a20149d1395881d2091a2760315d9f7c529e543b8daa3df",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/sɪŋ/",
+        "pos": "động từ",
+        "text": "sing"
+      },
+      "id": "68a5cf6c-a239-596b-b868-df83803ce66c",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:sing",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Phòng có hai giường đơn riêng gọi là twin room; double room là một giường đôi."
         },
         "examples": [
@@ -172705,6 +181680,45 @@ select content_private.import_bundle($bundle${
       "key": "en:item:smile",
       "language_code": "en",
       "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Giống rain - It's snowing (tuyết đang rơi), It's snowy (trời nhiều tuyết). Không nói \"It is snow\"."
+        },
+        "examples": [
+          {
+            "target": "It sometimes snows in Sa Pa in winter.",
+            "translation": {
+              "vi": "Mùa đông ở Sa Pa thỉnh thoảng có tuyết rơi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tuyết; tuyết rơi"
+        }
+      },
+      "content_hash": "13440949b1882a9c12c99ae77aad548f2f09ea1749a7cc7c97d36880f5692e05",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /snəʊ/ · US /snoʊ/",
+        "pos": "danh từ / động từ",
+        "text": "snow"
+      },
+      "id": "9f0ac97f-13b1-5c3b-8c6d-7f9569b25c42",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:snow",
+      "language_code": "en",
+      "level_code": "a1",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -173131,6 +182145,84 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Từ chối lời rủ nên thêm lý do ngắn (I'm busy, I have to work). Không trả lời cộc lốc \"No.\""
+        },
+        "examples": [
+          {
+            "target": "Let's play tennis tomorrow. - Sorry, I can't. I'm busy.",
+            "translation": {
+              "vi": "Mai chơi quần vợt đi. - Xin lỗi, mình không đi được. Mình bận."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Xin lỗi, mình không đi được."
+        }
+      },
+      "content_hash": "a0df8e4fa9d03b02b27472ce603eb637a2ec4766f41a14a2fd1ec30729fb186a",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ˌsɒri aɪ ˈkɑːnt/ · US /ˌsɑːri aɪ ˈkænt/",
+        "pos": "câu đáp",
+        "text": "Sorry, I can't."
+      },
+      "id": "7e16394d-4450-5d27-8a3b-354ca799b6a0",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:sorry-i-cant",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Đây là cách nói ngắn của That sounds good. Không nói \"Sound good\" khi nói về một ý kiến - cần -s."
+        },
+        "examples": [
+          {
+            "target": "Let's go shopping on Saturday. - Sounds great!",
+            "translation": {
+              "vi": "Thứ Bảy đi mua sắm đi. - Hay quá!"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Nghe được đấy! / Hay quá!"
+        }
+      },
+      "content_hash": "c902e13e0d0852f9d70a622c13060ce79a2272946c50a4e896e70ce1b35854c1",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ˌsaʊndz ˈɡʊd/ · /ˌsaʊndz ˈɡreɪt/",
+        "pos": "câu đáp",
+        "text": "Sounds good! / Sounds great!"
+      },
+      "id": "fb6e1d6a-5618-549d-97a2-63a63aa916a2",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:sounds-good",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Souvenir là đồ mua về làm kỷ niệm; gift/present là quà tặng nói chung."
         },
         "examples": [
@@ -173250,6 +182342,48 @@ select content_private.import_bundle($bundle${
       "is_demo": true,
       "item_type": "vocab",
       "key": "en:item:spicy",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Tên mùa không viết hoa trong tiếng Anh - spring, không phải Spring (trừ đầu câu)."
+        },
+        "examples": [
+          {
+            "target": "Tet is in spring.",
+            "translation": {
+              "vi": "Tết vào mùa xuân."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mùa xuân"
+        },
+        "pronunciation_note": {
+          "vi": "Ba phụ âm liền nhau /spr/ - không chèn thêm nguyên âm thành \"sờ-pờ-rinh\"."
+        }
+      },
+      "content_hash": "e215ac7151f55560280e95716ec772d3955cdb1324ddc82b7407693406b34df9",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/sprɪŋ/",
+        "pos": "danh từ",
+        "text": "spring"
+      },
+      "id": "c399618d-12d3-5e02-a788-1ca64c97ba30",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:spring",
       "language_code": "en",
       "level_code": "a1",
       "reviewed_at": null,
@@ -174646,6 +183780,45 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Vào mùa hè là in summer, không nói \"on summer\" hay \"at summer\"."
+        },
+        "examples": [
+          {
+            "target": "We go to the beach in summer.",
+            "translation": {
+              "vi": "Mùa hè bọn mình đi biển."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mùa hè"
+        }
+      },
+      "content_hash": "5dfdc369c99f81e778ab6ca399367cf9afcd9818236e7b472eeb74e04c403889",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ˈsʌmə/ · US /ˈsʌmɚ/",
+        "pos": "danh từ",
+        "text": "summer"
+      },
+      "id": "c948d7f8-cbd2-57b0-9d1b-f30356b58c92",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:summer",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -177488,6 +186661,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Together thường đứng cuối câu, không đứng trước động từ như \"cùng\" trong tiếng Việt - không nói \"Let's together go\"."
+        },
+        "examples": [
+          {
+            "target": "Let's have lunch together.",
+            "translation": {
+              "vi": "Mình ăn trưa cùng nhau đi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cùng nhau"
+        },
+        "pronunciation_note": {
+          "vi": "Nhấn âm giữa - tờ-GE-đờ; th là /ð/, đặt lưỡi giữa hai hàm răng."
+        }
+      },
+      "content_hash": "3dc0a4daf07cbb40c45096c4f4ece9daeeb503f6696fc844f3f20a7aa3aca5ee",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /təˈɡeðə/ · US /təˈɡeðɚ/",
+        "pos": "trạng từ",
+        "text": "together"
+      },
+      "id": "97d5625c-7840-53d0-8100-34ebe394b71b",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:together",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Viết một chữ m, hai chữ r (tomorrow). Giống today, không có giới từ đứng trước."
         },
         "examples": [
@@ -179467,6 +188682,54 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Phải có to - I want to go, không nói \"I want go\". Với he/she là wants to, phủ định là don't want to."
+        },
+        "examples": [
+          {
+            "target": "I want to go to the beach.",
+            "translation": {
+              "vi": "Mình muốn đi biển."
+            }
+          },
+          {
+            "target": "Do you want to play badminton?",
+            "translation": {
+              "vi": "Bạn có muốn chơi cầu lông không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "muốn làm gì"
+        },
+        "pronunciation_note": {
+          "vi": "Khi nói nhanh, want to nghe như \"wanna\"; khi viết luôn viết want to."
+        }
+      },
+      "content_hash": "a8a9d713eff1bb64ea77f4c991aaf11e04a428e7fed4379803facbc6a9213809",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˈwɒnt tə/ · US /ˈwɑːnt tə/",
+        "pos": "cấu trúc",
+        "text": "want to + động từ nguyên mẫu"
+      },
+      "id": "95fdbeaa-7069-509c-a95c-0165e5b2eb7d",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:want-to",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Thang nhiệt độ - cold (lạnh), cool (mát), warm (ấm), hot (nóng). Warm đọc /wɔːm/, gần \"quom\", không đọc \"quam\"."
         },
         "examples": [
@@ -180109,6 +189372,52 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Sau about dùng danh từ hoặc -ing - What about going…, không nói \"What about go…\"."
+        },
+        "examples": [
+          {
+            "target": "What about going swimming?",
+            "translation": {
+              "vi": "Đi bơi thì sao?"
+            }
+          },
+          {
+            "target": "What about Sunday?",
+            "translation": {
+              "vi": "Thế Chủ nhật thì sao?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Thế còn… thì sao? / …thì sao?"
+        }
+      },
+      "content_hash": "60719f03acae8a8a2bfbaf113d7ef77224b1b4ffe0aa986dfcc2a7b4b572086d",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˌwɒt əˈbaʊt/ · US /ˌwʌt əˈbaʊt/",
+        "pos": "cấu trúc",
+        "text": "What about / How about + danh từ / -ing?"
+      },
+      "id": "f6bd866c-9d04-5df9-b889-c26f7e5db97f",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:what-about",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Đảo be lên trước chủ ngữ - What are you going to do?, không nói What you are going to do?"
         },
         "examples": [
@@ -180195,6 +189504,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Không nói \"What is colour…?\" - colour đứng ngay sau What. Trả lời cần It's - It's red, không chỉ nói \"Red is\"."
+        },
+        "examples": [
+          {
+            "target": "What colour is your bag? - It's black.",
+            "translation": {
+              "vi": "Túi của bạn màu gì? - Màu đen."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Nó màu gì?"
+        }
+      },
+      "content_hash": "07a122d21df31cee9c40c4e798d52fcdd561bc5bb99d1810e8e4306f3182a4ae",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ˌwɒt ˈkʌlər ɪz ɪt/ · US /ˌwʌt ˈkʌlɚ ɪz ɪt/",
+        "pos": "câu hỏi",
+        "text": "What colour is it?"
+      },
+      "id": "ae11736d-7cb9-50ea-9756-97ed41c43494",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:what-colour-is-it",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Câu này hỏi thứ; muốn hỏi ngày tháng thì nói What's the date today? Trả lời bằng It's + thứ, không cần on."
         },
         "examples": [
@@ -180227,6 +189575,88 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "speaking",
         "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Câu có hai chữ do - chữ đầu là trợ động từ để hỏi, chữ sau là \"làm\". Đừng bỏ chữ nào - không nói What you do in your free time?"
+        },
+        "examples": [
+          {
+            "target": "What do you do in your free time? - I play the guitar.",
+            "translation": {
+              "vi": "Lúc rảnh bạn làm gì? - Mình chơi đàn ghi-ta."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Bạn làm gì lúc rảnh?"
+        },
+        "pronunciation_note": {
+          "vi": "Do đầu tiên đọc rất nhẹ /də/, do thứ hai là động từ chính nên đọc rõ /duː/."
+        }
+      },
+      "content_hash": "8e86c4f21b922401f4b1e97518490346180c45cb7acd886008d13727bfd1d926",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˌwɒt də jə ˈduː ɪn jə ˈfriː taɪm/ UK · /ˌwʌt də jə ˈduː ɪn jɚ ˈfriː taɪm/ US",
+        "pos": "câu hỏi",
+        "text": "What do you do in your free time?"
+      },
+      "id": "3857db05-dab2-5b45-9e65-c1b3b67b22f1",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:what-do-you-do-in-your-free-time",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Trả lời bằng like + -ing - I like dancing. Câu trả lời I like dance là lỗi người Việt rất hay mắc."
+        },
+        "examples": [
+          {
+            "target": "What do you like doing at the weekend? - I like going to the cinema.",
+            "translation": {
+              "vi": "Cuối tuần bạn thích làm gì? - Mình thích đi xem phim."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Bạn thích làm gì?"
+        }
+      },
+      "content_hash": "766f651615c173883691a9f194b195820fedf14fb577b0ea211520fd39608754",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˌwɒt də jə ˈlaɪk ˈduːɪŋ/ UK · /ˌwʌt də jə ˈlaɪk ˈduːɪŋ/ US",
+        "pos": "câu hỏi",
+        "text": "What do you like doing?"
+      },
+      "id": "d373d6a2-18b1-5979-be3c-1f956fd3169a",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:what-do-you-like-doing",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking",
+        "grammar"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -180439,6 +189869,45 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "speaking",
         "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Like ở đây là \"như thế nào\", không phải \"thích\". Câu cần the weather - không nói \"What's weather like?\" hay \"How is the weather like?\"."
+        },
+        "examples": [
+          {
+            "target": "What's the weather like in Hanoi in winter? - It's cold.",
+            "translation": {
+              "vi": "Mùa đông Hà Nội thời tiết thế nào? - Trời lạnh."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Thời tiết thế nào?"
+        }
+      },
+      "content_hash": "25c50bf5928947feceb7cb3ed8d12a5d5d8089bf1f93a581434dff7fb295fad6",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˌwɒts ðə ˈweðə laɪk/ · US /ˌwʌts ðə ˈweðɚ laɪk/",
+        "pos": "câu hỏi",
+        "text": "What's the weather like?"
+      },
+      "id": "9c98b190-37d1-5a23-90a1-d8c3148a5288",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:whats-the-weather-like",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -180744,6 +190213,46 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Đây là lời gợi ý, không phải câu hỏi \"tại sao\". Sau we là động từ nguyên mẫu, không có to."
+        },
+        "examples": [
+          {
+            "target": "Why don't we watch a film at home?",
+            "translation": {
+              "vi": "Hay là mình xem phim ở nhà nhé?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Hay là mình… nhé? (gợi ý nhẹ nhàng)"
+        }
+      },
+      "content_hash": "34c8da2504ae8b81b4690e6cd3de98e7448f6e1ddd0e8f60ec9a18cc97c3f98d",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˌwaɪ dəʊnt wi/ · US /ˌwaɪ doʊnt wi/",
+        "pos": "cấu trúc",
+        "text": "Why don't we + động từ nguyên mẫu?"
+      },
+      "id": "085dabc2-dd67-5a63-90ee-bc857b189471",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:why-dont-we",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Số nhiều là wives (f đổi thành v). Giới thiệu vợ mình thì dùng my wife, vợ của anh ấy là his wife."
         },
         "examples": [
@@ -180903,6 +190412,45 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "speaking",
         "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Winter đọc \"UYN-tờ\", khác window (cửa sổ). Vào mùa đông là in winter."
+        },
+        "examples": [
+          {
+            "target": "It's cold and windy in winter.",
+            "translation": {
+              "vi": "Mùa đông trời lạnh và nhiều gió."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mùa đông"
+        }
+      },
+      "content_hash": "3475d807c580898450207ec27b6b7f29876cdc6e8f868936a4a4e1a05af524b1",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ˈwɪntə/ · US /ˈwɪntɚ/",
+        "pos": "danh từ",
+        "text": "winter"
+      },
+      "id": "da005009-2c0d-5c73-b068-0c0eee1944c9",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:winter",
+      "language_code": "en",
+      "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -181482,6 +191030,48 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Vàng kim loại (vàng bạc) là gold; màu vàng thông thường là yellow."
+        },
+        "examples": [
+          {
+            "target": "Bananas are yellow.",
+            "translation": {
+              "vi": "Chuối có màu vàng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "màu vàng"
+        },
+        "pronunciation_note": {
+          "vi": "Âm đầu /j/ như \"i\" lướt - \"IE-lâu\", không đọc thành \"zê-lô\"."
+        }
+      },
+      "content_hash": "eaea75cfdacf6d892f9e315355223a9a238d1576bc0390a01aff341c40a5ac2b",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ˈjeləʊ/ · US /ˈjeloʊ/",
+        "pos": "tính từ / danh từ",
+        "text": "yellow"
+      },
+      "id": "f1de1679-293e-56d7-8a6a-bf0b576468a0",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:yellow",
+      "language_code": "en",
+      "level_code": "pre_a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -197554,6 +207144,1977 @@ select content_private.import_bundle($bundle${
       "key": "ko:item:gyotong-kadeu",
       "language_code": "ko",
       "level_code": "topik2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Đổ rác là 쓰레기를 버리다, không dùng 쓰레기를 던지다 (ném)."
+        },
+        "examples": [
+          {
+            "target": "쓰레기는 저녁 8시 이후에 버리세요.",
+            "translation": {
+              "vi": "Hãy vứt rác sau 8 giờ tối."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "vứt, bỏ (rác, đồ cũ)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [버리다]; ㅓ mở miệng như \"ơ\" nhưng tròn hơn, đừng đọc thành 보리다."
+        }
+      },
+      "content_hash": "2a386d80ced36d5a18ed47f6bb2bc75866e4e47e97a609a47630a062e43c5950",
+      "difficulty": 2,
+      "front": {
+        "pos": "động từ",
+        "romanization": "beorida",
+        "text": "버리다"
+      },
+      "id": "04029546-019e-5bd7-b860-748e4588de87",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-beorida",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Khác với 계약금 (tiền đặt trước khi ký) và 월세 (tiền tháng, không được trả lại)."
+        },
+        "examples": [
+          {
+            "target": "이사 갈 때 보증금을 돌려받아요.",
+            "translation": {
+              "vi": "Khi chuyển đi thì được nhận lại tiền cọc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tiền đặt cọc (được trả lại khi hết hợp đồng)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [보증금], ㅡ của 증 và 금 đọc là \"ư\", không phải \"u\"."
+        }
+      },
+      "content_hash": "26fb6b197d521afff9d680b5d85091690b14a39d68b0caaf1fed3ad645228518",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "bojeunggeum",
+        "text": "보증금"
+      },
+      "id": "05cbd8d7-6ca3-541c-ae6e-db45a69f9cf9",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-bojeunggeum",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Cùng gốc Hán Việt \"bất động sản\". Tên chính thức của văn phòng là 공인중개사 사무소, nhưng người Hàn hay gọi tắt là 부동산."
+        },
+        "examples": [
+          {
+            "target": "학교 앞 부동산에 가서 방을 알아봤어요.",
+            "translation": {
+              "vi": "Tôi đến văn phòng môi giới trước trường để tìm hiểu phòng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bất động sản; (khẩu ngữ) văn phòng môi giới nhà đất"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [부동산]; 동 có patchim ㅇ, đọc \"đông\" mũi."
+        }
+      },
+      "content_hash": "342e38582abf0b822d3343dafa8733ff582631272b97fd258aea11c54d2ab611",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "budongsan",
+        "text": "부동산"
+      },
+      "id": "b13e261c-ce88-544f-b427-5ee45a8576cd",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-budongsan",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hán Việt \"bất miên chứng\". \"Bị mất ngủ\" là 불면증이 있다 / 생기다, hoặc nói đơn giản 잠을 못 자요."
+        },
+        "examples": [
+          {
+            "target": "스트레스 때문에 불면증이 생겼어요.",
+            "translation": {
+              "vi": "Vì căng thẳng mà tôi bị mất ngủ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chứng mất ngủ"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [불면쯩] - ㅈ của 증 căng lên."
+        }
+      },
+      "content_hash": "44457a32549c7e15e920aee7c0d99007a02a464bfc0436e35a1db84bf112cdec",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "bulmyeonjeung",
+        "text": "불면증"
+      },
+      "id": "e51a8896-3370-5a60-bfcb-9c31ca574571",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-bulmyeonjeung",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không phân loại đúng có thể bị phạt tiền. Động từ đi kèm là 분리수거를 하다 hoặc 분리해서 버리다."
+        },
+        "examples": [
+          {
+            "target": "우리 아파트는 수요일에 분리수거를 해요.",
+            "translation": {
+              "vi": "Chung cư nhà tôi phân loại rác vào thứ Tư."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phân loại rác tái chế (giấy, nhựa, chai lọ, lon…)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [불리수거] - ㄴ gặp ㄹ biến thành ㄹ."
+        }
+      },
+      "content_hash": "251580950a1be3240d09a389bde69b771d06f60328f6ef0fc60e44dcd41125d4",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "bullisugeo",
+        "text": "분리수거"
+      },
+      "id": "e5e7f52a-6736-5448-bcd0-b32ffe7f7717",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-bunrisugeo",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Ở Hàn đây là vấn đề lớn giữa hàng xóm chung cư - nên đi dép trong nhà và tránh kéo ghế buổi tối."
+        },
+        "examples": [
+          {
+            "target": "위층 층간 소음 때문에 잠을 못 자요.",
+            "translation": {
+              "vi": "Vì tiếng ồn từ tầng trên mà tôi không ngủ được."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tiếng ồn giữa các tầng (tiếng bước chân, đồ vật từ tầng trên vọng xuống)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [층간 소음]; 층 có ㅡ đọc \"ư\"."
+        }
+      },
+      "content_hash": "6012d5caf3405dc3b9d6068c1498f1e14ecb89063c2163bdca5034fb4fb24a96",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "cheunggan soeum",
+        "text": "층간 소음"
+      },
+      "id": "1c857d41-783e-576d-ae6e-694b4f76b282",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-cheunggan-soeum",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Trong tiếng Hàn 다이어트 gần như luôn là giảm cân. \"Đang giảm cân\" là 다이어트 중이에요 hoặc 다이어트를 하고 있어요."
+        },
+        "examples": [
+          {
+            "target": "다이어트 중이라서 밤에는 안 먹어요.",
+            "translation": {
+              "vi": "Đang giảm cân nên buổi tối tôi không ăn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ăn kiêng giảm cân"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [다이어트] - 4 âm tiết, ㅡ cuối rất nhẹ."
+        }
+      },
+      "content_hash": "92dcb71c5d45fe54fe58e1c51a304ff91d30dd6af3efc1afe09be9c300b3b1be",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "daieoteu",
+        "text": "다이어트"
+      },
+      "id": "b45e3446-d53c-5ed1-8c76-50c7a4711374",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-daieoteu",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Vỏ trứng, xương gà, vỏ hành thường không tính là 음식물 쓰레기 mà bỏ vào túi rác thường."
+        },
+        "examples": [
+          {
+            "target": "음식물 쓰레기는 따로 버려야 해요.",
+            "translation": {
+              "vi": "Rác thực phẩm phải vứt riêng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "rác thực phẩm, thức ăn thừa"
+        },
+        "pronunciation_note": {
+          "vi": "음식물 đọc [음싱물] - ㄱ trước ㅁ thành ㅇ (âm mũi hoá). 쓰 là phụ âm căng."
+        }
+      },
+      "content_hash": "62260b79d60679a462b02f7fdb13aee21c930cd0e9d27b47970d97c0af9de6b4",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "eumsingmul sseuregi",
+        "text": "음식물 쓰레기"
+      },
+      "id": "cfc3236c-899e-504c-ab2b-e29fffe825a7",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-eumsingmul-sseuregi",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Động từ đi kèm là 받다 - 건강 검진을 받다, không nói 건강 검진을 해요 khi mình là người được khám."
+        },
+        "examples": [
+          {
+            "target": "회사에서 1년에 한 번 건강 검진을 받아요.",
+            "translation": {
+              "vi": "Ở công ty, mỗi năm tôi khám sức khoẻ một lần."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "khám sức khoẻ định kỳ"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [건강 검진]; ㅓ của 건, 검 mở như \"ơ\"."
+        }
+      },
+      "content_hash": "e186844a8c9ab6dbb5764dc9b32d5550c0742cb2232002ed18e87dccb72e7d89",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "geongang geomjin",
+        "text": "건강 검진"
+      },
+      "id": "131dab46-8b1f-5e6f-b719-e87fb7bb5907",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-geongang-geomjin",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Là tính từ, nên \"sống khoẻ\" là 건강하게 살다; \"sức khoẻ tốt\" là 건강이 좋다."
+        },
+        "examples": [
+          {
+            "target": "할머니는 아직도 건강하세요.",
+            "translation": {
+              "vi": "Bà tôi vẫn còn khoẻ mạnh."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "khoẻ mạnh"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [건강하다]; danh từ 건강 (sức khoẻ)."
+        }
+      },
+      "content_hash": "8555bd8320ac58c215723d4621d5ff970f55c071f7731e79a8fa1948eb84fe47",
+      "difficulty": 2,
+      "front": {
+        "pos": "tính từ",
+        "romanization": "geonganghada",
+        "text": "건강하다"
+      },
+      "id": "e4d48c74-d1b5-5a27-a67e-603b1c597cfb",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-geonganghada",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Thường thay được cho -아/어 놓다, nhưng các cụm \"ghi nhớ, biết trước\" như 알아 두다, 기억해 두다 dùng 두다 tự nhiên hơn hẳn."
+        },
+        "examples": [
+          {
+            "target": "이 번호를 꼭 저장해 두세요.",
+            "translation": {
+              "vi": "Bạn nhớ lưu số này lại nhé."
+            }
+          },
+          {
+            "target": "분리수거 날짜를 알아 두면 좋아요.",
+            "translation": {
+              "vi": "Nên biết trước ngày đổ rác phân loại."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "làm sẵn… rồi giữ lại để dùng về sau (nhấn mạnh sự lưu giữ, chuẩn bị lâu dài)"
+        },
+        "pronunciation_note": {
+          "vi": "알아 두세요 đọc nối [아라 두세요]."
+        }
+      },
+      "content_hash": "5bda73df1f6fd9290dca516bf595f2ad97e91142b8103d1035b1cbaf547418c5",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-a/eo duda",
+        "text": "V-아/어 두다"
+      },
+      "id": "1d4f3ba0-af06-5aae-be40-ecd4698f0de5",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ha-gram-a-duda",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Cần tân ngữ với 을/를 - 문을 열어 놓았어요. Muốn nói cửa đang mở (không nói ai mở) thì dùng 문이 열려 있어요."
+        },
+        "examples": [
+          {
+            "target": "손님이 오기 전에 창문을 열어 놓았어요.",
+            "translation": {
+              "vi": "Trước khi khách đến, tôi đã mở sẵn cửa sổ."
+            }
+          },
+          {
+            "target": "쓰레기를 문 앞에 내놓아 주세요.",
+            "translation": {
+              "vi": "Hãy mang rác để sẵn trước cửa."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "làm sẵn… và để nguyên trạng thái đó (nhấn mạnh việc đã làm xong để chuẩn bị)"
+        },
+        "pronunciation_note": {
+          "vi": "놓다 đọc [노타]; 놓아요 đọc [노아요] - ㅎ câm trước nguyên âm. Khẩu ngữ hay rút gọn 놓았어요 thành 놨어요 [놛써요]."
+        }
+      },
+      "content_hash": "3a774c47d2c5929a5246d5f60307559f71416dacfbbad3889a08b9e84e1b511e",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-a/eo nota",
+        "text": "V-아/어 놓다"
+      },
+      "id": "54b0fd61-b435-5a53-8fe7-5da53c5ed2cf",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ha-gram-a-nota",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Khác với V-도록 하다 (chỉ thị, \"hãy cố…\") đã học ở unit công việc. Trong văn nói, -게 thường thay được -도록 khi chỉ mục đích, nhưng -도록 không thay -게 trạng từ (맛있도록 드세요 là sai)."
+        },
+        "examples": [
+          {
+            "target": "감기에 걸리지 않도록 손을 자주 씻으세요.",
+            "translation": {
+              "vi": "Hãy rửa tay thường xuyên để không bị cảm."
+            }
+          },
+          {
+            "target": "아이가 푹 잘 수 있도록 조용히 해 주세요.",
+            "translation": {
+              "vi": "Hãy giữ yên lặng để em bé ngủ ngon."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "để cho…, sao cho… (mục đích là một kết quả hay trạng thái); hay dùng với phủ định -지 않도록"
+        },
+        "pronunciation_note": {
+          "vi": "않도록 đọc [안토록] - ㅎ gặp ㄷ thành ㅌ bật hơi."
+        }
+      },
+      "content_hash": "91b474ff97ef9bc6c6f8d03f30dcdb649aa4cf108db9002b2522ceb091945358",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-dorok",
+        "text": "V/A-도록"
+      },
+      "id": "b2f9ed82-77df-5fe3-b958-6de8749705f6",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ha-gram-dorok",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Thì quá khứ đặt ở cuối câu, vế trước thường giữ -(으)ㄹ - 못 잘 정도로 시끄러웠어요. 정도로 nêu một hệ quả cụ thể để cho thấy mức độ, nên mạnh và sinh động hơn 아주/너무."
+        },
+        "examples": [
+          {
+            "target": "잠을 못 잘 정도로 시끄러워요.",
+            "translation": {
+              "vi": "Ồn đến mức không ngủ được."
+            }
+          },
+          {
+            "target": "걷기 힘들 정도로 다리가 아팠어요.",
+            "translation": {
+              "vi": "Chân đau đến mức khó đi lại."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đến mức…, tới mức có thể…"
+        },
+        "pronunciation_note": {
+          "vi": "정도로 đọc [정도로]; ㅈ đầu câu không bật hơi."
+        }
+      },
+      "content_hash": "d1e467ed302b0169934d650f7a37d12abc53f1836170e7aff729a4765ad486e8",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-(eu)l jeongdoro",
+        "text": "V/A-(으)ㄹ 정도로"
+      },
+      "id": "e0a0d6dc-30fc-55d1-a242-f9c0bdec8f25",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ha-gram-eul-jeongdoro",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Động từ gốc ㄹ (살다, 만들다) chỉ giữ một ㄹ - 살 만하다, không viết 살을 만하다."
+        },
+        "examples": [
+          {
+            "target": "이 원룸은 좁지만 살 만해요.",
+            "translation": {
+              "vi": "Phòng này tuy chật nhưng cũng ở được."
+            }
+          },
+          {
+            "target": "그 부동산은 믿을 만해요.",
+            "translation": {
+              "vi": "Văn phòng môi giới đó đáng tin."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đáng để…, cũng được (đủ tốt để làm). Gắn vào động từ."
+        },
+        "pronunciation_note": {
+          "vi": "살 만해요 đọc [살 만해요]; 믿을 만해요 đọc nối [미들 만해요]."
+        }
+      },
+      "content_hash": "6b6c6cabfbd56d77a2bb0b6f4ee7d4e24846cbd0babab2bccf758c56bfa8f318",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-(eu)l manhada",
+        "text": "V-(으)ㄹ 만하다"
+      },
+      "id": "8ab81dd8-ae42-5f53-b565-0271f991592c",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ha-gram-eul-manhada",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không dùng cho điều mình mong (합격할까 봐 là \"sợ đỗ\"). Vế sau không là câu mệnh lệnh hay rủ rê."
+        },
+        "examples": [
+          {
+            "target": "늦을까 봐 택시를 탔어요.",
+            "translation": {
+              "vi": "Vì sợ muộn nên tôi đã đi taxi."
+            }
+          },
+          {
+            "target": "시험에 떨어질까 봐 걱정이에요.",
+            "translation": {
+              "vi": "Tôi lo là sẽ trượt kỳ thi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "vì sợ là…, vì lo là… (điều mình không muốn xảy ra). Thường đi với 걱정이다 hoặc một hành động phòng ngừa."
+        },
+        "pronunciation_note": {
+          "vi": "늦을까 đọc nối [느즐까]; 봐서 đọc [봐서] hoặc nhanh thành [바서]."
+        }
+      },
+      "content_hash": "13d1bed322c0aa1a2024718b0fd544b0237f1f41d6ceaa55ff8464d1865b380f",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-(eu)lkka bwa(seo)",
+        "text": "V/A-(으)ㄹ까 봐(서)"
+      },
+      "id": "81623afb-56e0-56b0-bed1-202a3e440974",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ha-gram-eulkka-bwa",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không đặt tính từ nguyên dạng trước động từ (건강한 살아요 là sai). Chỉ cách làm việc gì thì dùng -게, không dùng -도록."
+        },
+        "examples": [
+          {
+            "target": "음식을 싱겁게 드세요.",
+            "translation": {
+              "vi": "Hãy ăn nhạt."
+            }
+          },
+          {
+            "target": "건강하게 오래 사세요.",
+            "translation": {
+              "vi": "Chúc ông bà sống khoẻ mạnh và sống lâu."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "biến tính từ thành trạng từ chỉ cách thức: …một cách…"
+        },
+        "pronunciation_note": {
+          "vi": "싱겁게 đọc [싱겁께] - ㄱ sau patchim ㅂ căng lên."
+        }
+      },
+      "content_hash": "58da8c83917f6b16836833c895964b31b2a4bbb471e6c907108588e1895129cf",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-ge",
+        "text": "A-게 (trạng từ)"
+      },
+      "id": "75a44379-fc33-599e-a137-3f44146e9885",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ha-gram-ge-adverb",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "쉽다, 어렵다 là bất quy tắc ㅂ - viết 쉬워요, 어려워요, không viết 쉽어요."
+        },
+        "examples": [
+          {
+            "target": "이 집은 역에서 가까워서 찾기 쉬워요.",
+            "translation": {
+              "vi": "Nhà này gần ga nên dễ tìm."
+            }
+          },
+          {
+            "target": "오래된 아파트는 층간 소음이 생기기 쉬워요.",
+            "translation": {
+              "vi": "Chung cư cũ dễ xảy ra tiếng ồn giữa các tầng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "dễ/khó làm…; -기 쉽다 còn có nghĩa \"dễ bị…, dễ xảy ra…\" (thường là chuyện không tốt)."
+        },
+        "pronunciation_note": {
+          "vi": "쉬워요 [쉬워요], 어려워요 [어려워요] - bất quy tắc ㅂ."
+        }
+      },
+      "content_hash": "19adb76b6d5a7b8d26297bf908d544217de52cf82ca842b5565ae5338f3ddfd1",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-gi swipda / eoryeopda",
+        "text": "V-기 쉽다 / 어렵다"
+      },
+      "id": "203b18cb-6819-5ad6-bec7-ea26843cca32",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ha-gram-gi-swipda",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Chỉ dùng với bạn bè, người ngang hoặc ít tuổi hơn. Với cấp trên, người lớn tuổi nên dùng -(으)시는 게 좋겠어요."
+        },
+        "examples": [
+          {
+            "target": "그렇게 피곤하면 좀 쉬지 그래요?",
+            "translation": {
+              "vi": "Mệt thế thì sao bạn không nghỉ một chút đi?"
+            }
+          },
+          {
+            "target": "아프면 미리 말하지 그랬어요?",
+            "translation": {
+              "vi": "Đau thì lẽ ra bạn nên nói trước chứ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "sao bạn không… đi? (gợi ý thân mật); -지 그랬어요? là \"lẽ ra bạn nên…\" (hơi trách)"
+        },
+        "pronunciation_note": {
+          "vi": "그래요 đọc [그래요]; lên giọng ở cuối như câu hỏi."
+        }
+      },
+      "content_hash": "6cf810e579b52cb94ec973e24dec076ee97f149bd09154710df743a68f1e33a5",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-ji geuraeyo",
+        "text": "V-지 그래요?"
+      },
+      "id": "5e97a6e0-91ca-5fa0-989c-3a6f8d7786a4",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ha-gram-ji-geuraeyo",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "게 là rút gọn của 것이. Phủ định đặt -지 않는 trước 게, không nói 쉬는 게 안 좋겠어요 khi muốn khuyên \"đừng\"."
+        },
+        "examples": [
+          {
+            "target": "오늘은 집에서 쉬는 게 좋겠어요.",
+            "translation": {
+              "vi": "Hôm nay bạn nên nghỉ ở nhà thì hơn."
+            }
+          },
+          {
+            "target": "밤늦게 커피를 마시지 않는 게 좋겠어요.",
+            "translation": {
+              "vi": "Bạn không nên uống cà phê lúc khuya."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nên…, …thì hơn (khuyên nhẹ nhàng, lịch sự). Phủ định: V-지 않는 게 좋겠다."
+        },
+        "pronunciation_note": {
+          "vi": "좋겠어요 đọc [조케써요] - ㅎ gặp ㄱ thành ㅋ."
+        }
+      },
+      "content_hash": "ef1bd9ce6b7cbd3e8513a22256798017dae3dfe2e04698660b023269a916fc81",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-neun ge joketda",
+        "text": "V-는 게 좋겠다"
+      },
+      "id": "e88e5919-bfd7-5512-bfb0-e3dcf1ffbf7f",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ha-gram-neun-ge-joketda",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Tính từ dùng -(으)ㄴ (싼 편, 조용한 편), không dùng -는 như động từ. Không dùng với sự thật tuyệt đối hay con số chính xác (키가 180cm인 편이에요 là sai)."
+        },
+        "examples": [
+          {
+            "target": "이 동네는 월세가 싼 편이에요.",
+            "translation": {
+              "vi": "Khu này tiền thuê hằng tháng thuộc loại rẻ."
+            }
+          },
+          {
+            "target": "저는 아침을 많이 먹는 편이에요.",
+            "translation": {
+              "vi": "Tôi thuộc kiểu ăn sáng nhiều."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thuộc loại…, khá là…, tương đối… (nhận xét có chừng mực). Động từ: -는 편이다; tính từ: -(으)ㄴ 편이다."
+        },
+        "pronunciation_note": {
+          "vi": "편이에요 đọc nối [펴니에요]; 싼 편이에요 [싼 펴니에요]."
+        }
+      },
+      "content_hash": "a6636648517b9b37c7ad5734da8b408582ae62f352bee3083387c019f5244922",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-(eu)n/neun pyeonida",
+        "text": "-(으)ㄴ/는 편이다"
+      },
+      "id": "4891cdce-9228-5322-b942-1dcde8509eb4",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ha-gram-neun-pyeonida",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "관리비 trả thêm ngoài 월세. Khi xem nhà nên hỏi 관리비에 뭐가 포함돼요? (phí quản lý gồm những gì?)."
+        },
+        "examples": [
+          {
+            "target": "관리비는 한 달에 7만 원 정도예요.",
+            "translation": {
+              "vi": "Phí quản lý khoảng 70 nghìn won một tháng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phí quản lý (điện nước chung, dọn dẹp, bảo vệ của toà nhà)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [괄리비] - ㄴ gặp ㄹ biến thành ㄹ."
+        }
+      },
+      "content_hash": "763ce72ffeb425de16fb75755fe0f812c288321acc67f99b5ab9cf040aa27692",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "gwallibi",
+        "text": "관리비"
+      },
+      "id": "5155a7e6-4ef3-5ec4-82e3-c688026efc53",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-gwallibi",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hán Việt \"khế ước\". Ký hợp đồng là 계약하다 hoặc 계약서를 쓰다, không nói 계약을 사인해요."
+        },
+        "examples": [
+          {
+            "target": "2년 동안 계약했어요.",
+            "translation": {
+              "vi": "Tôi đã ký hợp đồng 2 năm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ký hợp đồng"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [게야카다] - ㄱ gặp ㅎ thành ㅋ bật hơi; ㅖ sau ㄱ thường đọc như ㅔ."
+        }
+      },
+      "content_hash": "3543a5f3df8bb3b4a2d7eaae5b442c6671520475d1b69cf4e1052ec4460fba9b",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "romanization": "gyeyakada",
+        "text": "계약하다"
+      },
+      "id": "eec114a9-caef-5241-a782-9c339e8e5d7e",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-gyeyakada",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hán Việt \"quy tắc\"; 규칙적으로 là \"đều đặn\", không phải \"theo luật\". Tính từ là 규칙적인 (생활)."
+        },
+        "examples": [
+          {
+            "target": "규칙적으로 운동하는 게 중요해요.",
+            "translation": {
+              "vi": "Tập thể dục đều đặn là điều quan trọng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "một cách đều đặn, điều độ"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [규칙쩌그로] - ㅈ sau ㄱ căng lên, rồi nối âm."
+        }
+      },
+      "content_hash": "635bc7e8d1e828229732bc472b0cf23e2e802abf14a5283aea8fc73b020523c3",
+      "difficulty": 3,
+      "front": {
+        "pos": "trạng từ",
+        "romanization": "gyuchikjeogeuro",
+        "text": "규칙적으로"
+      },
+      "id": "007639dd-7ed8-5e25-a8fb-77062b8c913c",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-gyuchikjeogeuro",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không nói 집을 이사해요 - \"nhà\" đã nằm trong nghĩa của 이사. Nơi đến dùng (으)로 - 새 집으로 이사해요."
+        },
+        "examples": [
+          {
+            "target": "다음 달에 학교 근처로 이사해요.",
+            "translation": {
+              "vi": "Tháng sau tôi chuyển nhà đến gần trường."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chuyển nhà, dọn nhà"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [이사하다], ㅎ giữa hai nguyên âm thường đọc rất nhẹ."
+        }
+      },
+      "content_hash": "9cdeab02b3e9dfba2e9a95acbf45ebcf29a409225d162233ab6b7d80002e887a",
+      "difficulty": 2,
+      "front": {
+        "pos": "động từ",
+        "romanization": "isahada",
+        "text": "이사하다"
+      },
+      "id": "f9f4d065-3186-5a31-86ef-e7c599433e95",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-isahada",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "이웃 là danh từ chung; hàng xóm ngay bên cạnh có thể nói 옆집 사람, tầng trên 위층 사람."
+        },
+        "examples": [
+          {
+            "target": "이사 와서 이웃에게 떡을 돌렸어요.",
+            "translation": {
+              "vi": "Chuyển đến xong, tôi đi mời hàng xóm bánh tteok."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hàng xóm"
+        },
+        "pronunciation_note": {
+          "vi": "Một mình đọc [이욷]; khi nối nguyên âm đọc [이우시], [이우세게]."
+        }
+      },
+      "content_hash": "c18d2ac1d57e559d3751a88c2a0ff8025bf96e430d4fcd7f748d84e84dfb7f18",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "iut",
+        "text": "이웃"
+      },
+      "id": "adb1a82a-d4de-551e-92a1-f8f36e16f8ac",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-iut",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "전세 không có nghĩa \"thuê nguyên căn\". Chủ nhà kiếm lời nhờ dùng khoản cọc lớn trong thời gian hợp đồng (thường 2 năm), nên người thuê không trả tiền tháng."
+        },
+        "examples": [
+          {
+            "target": "전세는 월세가 없지만 보증금이 아주 비싸요.",
+            "translation": {
+              "vi": "Thuê jeonse thì không có tiền tháng nhưng tiền cọc rất đắt."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thuê nhà kiểu jeonse - đóng một khoản cọc rất lớn một lần, không trả tiền tháng, hết hợp đồng được nhận lại toàn bộ cọc"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [전세]."
+        }
+      },
+      "content_hash": "e05d60dfe8b65f9b8d66ddcc1503b534940964f832a9e41e555a92e01cf41ea0",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "jeonse",
+        "text": "전세"
+      },
+      "id": "0e1c3de4-6a14-524d-a7f1-95f2db024ea7",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-jeonse",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Người thuê nhà là 세입자; đừng gọi chủ nhà là 주인님 - nghe như \"ông chủ\" của người giúp việc."
+        },
+        "examples": [
+          {
+            "target": "보일러가 고장 나서 집주인에게 연락했어요.",
+            "translation": {
+              "vi": "Lò sưởi bị hỏng nên tôi đã liên lạc với chủ nhà."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chủ nhà (người cho thuê)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [집쭈인] - ㅈ sau patchim ㅂ căng lên."
+        }
+      },
+      "content_hash": "df175752db8ab47c0fcfeb98ebe8a68decaa7da1bb4038cfd075db33b24b854b",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "jipjuin",
+        "text": "집주인"
+      },
+      "id": "77719009-e340-579e-80d8-6374ff3dbdcb",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-jipjuin",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không dùng túi ni-lông bất kỳ; mỗi quận có túi riêng, dùng sai túi rác sẽ không được thu gom."
+        },
+        "examples": [
+          {
+            "target": "일반 쓰레기는 종량제 봉투에 넣어서 버리세요.",
+            "translation": {
+              "vi": "Rác thường hãy cho vào túi rác quy định rồi vứt."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "túi rác có thu phí theo quy định của quận (mua ở siêu thị, cửa hàng tiện lợi)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [종냥제] - ㄹ sau ㅇ thành ㄴ."
+        }
+      },
+      "content_hash": "70b4dc9bff64ad590c8138c129d8e2a01454e9072d3098416cd3dcd6547fd518",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "jongnyangje bongtu",
+        "text": "종량제 봉투"
+      },
+      "id": "6770c4ab-bf09-59d5-bf05-5f48205943f0",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-jongnyangje-bongtu",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hán Việt \"trung giới thủ tục liệu\". Đóng phí dùng 내다 (수수료를 내다), không dùng 주다."
+        },
+        "examples": [
+          {
+            "target": "계약할 때 중개 수수료를 내야 해요.",
+            "translation": {
+              "vi": "Khi ký hợp đồng phải trả phí môi giới."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phí môi giới (trả cho văn phòng bất động sản khi ký hợp đồng)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [중개 수수료]; 료 có bán nguyên âm y, đọc như \"ryô\"."
+        }
+      },
+      "content_hash": "d5549aefde538fc2bed12f8183dbb6016d6d796f9824398e5ff547faa447fe93",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "junggae susuryo",
+        "text": "중개 수수료"
+      },
+      "id": "52ff39a1-404a-52d9-8846-3e0d2cd24ba5",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-junggae-susuryo",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "줄이다 có tân ngữ (커피를 줄이다); 줄다 là tự giảm (체중이 줄었어요). Giảm xuống còn bao nhiêu dùng N(으)로."
+        },
+        "examples": [
+          {
+            "target": "커피를 하루 한 잔으로 줄였어요.",
+            "translation": {
+              "vi": "Tôi đã giảm cà phê xuống một cốc mỗi ngày."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "giảm bớt, cắt giảm"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc nối [주리다]."
+        }
+      },
+      "content_hash": "48784745861d46ee258af9b7abee5e49ad8e63af8ad03c49de1de3fc22457f53",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "romanization": "jurida",
+        "text": "줄이다"
+      },
+      "id": "38a15496-5322-525a-afa9-cc6f5108f065",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-jurida",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hán Việt \"mại vật\" (vật đem bán) - từ của giới môi giới, khác với 방 hay 집 nói chung."
+        },
+        "examples": [
+          {
+            "target": "요즘 학교 근처에 전세 매물이 별로 없어요.",
+            "translation": {
+              "vi": "Dạo này gần trường hầu như không có nhà cho thuê jeonse."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nhà đang rao (bán hoặc cho thuê) ở văn phòng môi giới"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [매물]; ㅐ gần như ㅔ trong tiếng Seoul."
+        }
+      },
+      "content_hash": "b52deaa5bb57b2bc3786560c44555c7aa281692b42af399fb95ade03001707eb",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "maemul",
+        "text": "매물"
+      },
+      "id": "51b28609-f00a-51fd-b9d6-ad754afd0fd2",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-maemul",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hán Việt \"vô lý\" nhưng nghĩa là \"quá sức, gắng quá\"; 무리한 부탁 là \"lời nhờ vả quá đáng\"."
+        },
+        "examples": [
+          {
+            "target": "처음부터 너무 무리하지 마세요.",
+            "translation": {
+              "vi": "Đừng làm quá sức ngay từ đầu."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "làm quá sức"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [무리하다]; ㅜ tròn môi như \"u\"."
+        }
+      },
+      "content_hash": "98a2bdfe1ee43af97f1e1093346c9c8a25e65a6405ccc1423d0d0da1dad84ffd",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "romanization": "murihada",
+        "text": "무리하다"
+      },
+      "id": "bd0dec27-28d4-523b-bdc3-36c708838e71",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-murihada",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Chỉ đi với nghỉ, ngủ (và nấu nhừ); không dùng 푹 với nghĩa \"rất\" cho động từ khác."
+        },
+        "examples": [
+          {
+            "target": "주말에는 집에서 푹 쉬세요.",
+            "translation": {
+              "vi": "Cuối tuần hãy ở nhà nghỉ ngơi thật thoải mái."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "(nghỉ, ngủ) thật thoải mái, thật sâu"
+        },
+        "pronunciation_note": {
+          "vi": "ㅍ bật hơi, patchim ㄱ đọc tắc như \"c\" trong \"cúc\"."
+        }
+      },
+      "content_hash": "5b79944ec8d7911b46aa930841673c45f1a327c3c9086324f09e0531f3a213e4",
+      "difficulty": 2,
+      "front": {
+        "pos": "trạng từ",
+        "romanization": "puk",
+        "text": "푹 (쉬다 / 자다)"
+      },
+      "id": "5b7f0b63-d8e9-5d35-a2e1-97c639c48bff",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-puk",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Từ ghép tiếng Anh kiểu Hàn (\"full option\"); người bản ngữ tiếng Anh không dùng như vậy."
+        },
+        "examples": [
+          {
+            "target": "풀옵션 원룸이라서 냉장고를 안 사도 돼요.",
+            "translation": {
+              "vi": "Phòng studio đầy đủ nội thất nên không cần mua tủ lạnh."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "(nhà) đầy đủ nội thất, đồ gia dụng (giường, máy giặt, tủ lạnh, điều hoà…)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc nối [푸롭션]."
+        }
+      },
+      "content_hash": "d63e78b120030a4eabdaa2ba773e0f6c03af635e8068067e230acec58f9b6dd6",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "pulopsyeon",
+        "text": "풀옵션"
+      },
+      "id": "fc99de96-8198-5341-a77f-f67af844c9d1",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-pul-option",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Người tư vấn thì 상담하다 / 상담해 주다; người được tư vấn thì 상담을 받다."
+        },
+        "examples": [
+          {
+            "target": "불면증이 심하면 전문가에게 상담을 받아 보세요.",
+            "translation": {
+              "vi": "Nếu mất ngủ nặng, bạn thử đi gặp chuyên gia tư vấn xem."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "được tư vấn, đi tư vấn"
+        },
+        "pronunciation_note": {
+          "vi": "상담을 đọc nối [상다믈]; 받아 [바다]."
+        }
+      },
+      "content_hash": "ab953bbdc1b9d58244cebb9414d11e850ce6a00aae29ff84aca5c8da61014460",
+      "difficulty": 3,
+      "front": {
+        "pos": "cụm động từ",
+        "romanization": "sangdam(eul) batda",
+        "text": "상담(을) 받다"
+      },
+      "id": "8b7ed4c8-7080-5fbe-800e-83da0b2eb1eb",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ha-sangdam-batda",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Dùng thì quá khứ để nói đã béo/gầy đi - 살이 쪘어요. Không nói 저는 찌어요; chủ ngữ ngữ pháp là 살이."
+        },
+        "examples": [
+          {
+            "target": "운동을 시작한 후에 살이 3킬로 빠졌어요.",
+            "translation": {
+              "vi": "Từ khi bắt đầu tập thể dục, tôi đã giảm 3 cân."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tăng cân, béo lên / giảm cân, gầy đi"
+        },
+        "pronunciation_note": {
+          "vi": "찌 và 빠 là phụ âm căng; 살이 đọc nối [사리]."
+        }
+      },
+      "content_hash": "3b13c223e2d3d7b83ba5b5661ba5a110d901989c710d276d2fda79d98eefb0a4",
+      "difficulty": 3,
+      "front": {
+        "pos": "cụm động từ",
+        "romanization": "sari jjida / sari ppajida",
+        "text": "살이 찌다 / 살이 빠지다"
+      },
+      "id": "0304c1f1-9874-509d-a45a-4d089cd8a365",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ha-sari-jjida",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hán Việt \"tập quán\". \"Bỏ thói quen\" là 습관을 고치다 / 버리다; \"tạo thói quen\" là 습관을 들이다."
+        },
+        "examples": [
+          {
+            "target": "자기 전에 휴대폰을 보는 습관이 있어요.",
+            "translation": {
+              "vi": "Tôi có thói quen xem điện thoại trước khi ngủ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thói quen"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [습꽌] - ㄱ sau ㅂ căng lên."
+        }
+      },
+      "content_hash": "4ff15d88045a7e72cc7b2225991427f7682011c48d8996cca91ee06bfe90ee9d",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "seupgwan",
+        "text": "습관"
+      },
+      "id": "224c4d2f-1241-5bde-9281-c5314d591e31",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-seupgwan",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Tiếng Việt nói \"bị stress\", tiếng Hàn dùng 받다 (nhận). Không nói 스트레스가 있어요 khi muốn nói đang bị áp lực - nghe không tự nhiên bằng."
+        },
+        "examples": [
+          {
+            "target": "요즘 일이 많아서 스트레스를 많이 받아요.",
+            "translation": {
+              "vi": "Dạo này nhiều việc nên tôi bị căng thẳng nhiều."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bị căng thẳng, bị stress"
+        },
+        "pronunciation_note": {
+          "vi": "받다 đọc [받따]; 받아요 đọc nối [바다요]."
+        }
+      },
+      "content_hash": "acccae4f199952608a785ce940b12b0378046a8d1bd39e4ff3248bb372ebe415",
+      "difficulty": 2,
+      "front": {
+        "pos": "cụm động từ",
+        "romanization": "seuteureseureul batda",
+        "text": "스트레스를 받다"
+      },
+      "id": "c05115ff-efbf-59af-91de-8445fe761f00",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ha-seuteureseu-batda",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "풀다 nghĩa gốc là \"gỡ, tháo\". Hỏi cách giải toả - 스트레스를 어떻게 풀어요? (không viết 풀으세요)."
+        },
+        "examples": [
+          {
+            "target": "저는 노래방에서 스트레스를 풀어요.",
+            "translation": {
+              "vi": "Tôi giải toả căng thẳng ở phòng karaoke."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "giải toả căng thẳng"
+        },
+        "pronunciation_note": {
+          "vi": "풀 có ㅍ bật hơi. Gốc ㄹ - 푸세요, 푸는 방법 (ㄹ rơi trước ㅅ, ㄴ)."
+        }
+      },
+      "content_hash": "725c02ba0044e9c3b825e192124a16467b0685afdd30ed0b712e58fc77f30cd3",
+      "difficulty": 2,
+      "front": {
+        "pos": "cụm động từ",
+        "romanization": "seuteureseureul pulda",
+        "text": "스트레스를 풀다"
+      },
+      "id": "3c327299-60f0-5e7c-b3d9-39031c0b55cc",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ha-seuteureseu-pulda",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Bất quy tắc ㅂ - 시끄러워요, 시끄러운 집; không viết 시끄럽어요."
+        },
+        "examples": [
+          {
+            "target": "밤에 위층이 너무 시끄러워요.",
+            "translation": {
+              "vi": "Buổi tối tầng trên ồn quá."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ồn ào"
+        },
+        "pronunciation_note": {
+          "vi": "끄 là phụ âm căng [kk]; 시끄럽다 đọc [시끄럽따]."
+        }
+      },
+      "content_hash": "7f012bb410ef7c0f74a5d336fbcb2a8495889927df330d74d3d4fb608c957192",
+      "difficulty": 2,
+      "front": {
+        "pos": "tính từ",
+        "romanization": "sikkeureopda",
+        "text": "시끄럽다"
+      },
+      "id": "d5b9a055-8343-5444-b1d1-2b7d1bd7215d",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-sikkeureopda",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "N + 부족 là \"thiếu N\" (수면 부족 - thiếu ngủ). Không dùng 운동이 없어요 cho nghĩa này."
+        },
+        "examples": [
+          {
+            "target": "하루 종일 앉아 있어서 운동 부족이에요.",
+            "translation": {
+              "vi": "Ngồi cả ngày nên tôi bị thiếu vận động."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thiếu vận động"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [운동 부족]; 족 có ㅗ tròn môi."
+        }
+      },
+      "content_hash": "e7ec51bac1a22d2cdf538533098bced1976f9cd81fca00e3c981ec6901bb5d26",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "undong bujok",
+        "text": "운동 부족"
+      },
+      "id": "0f16f256-7f99-515d-ad84-4d5a5fb1e13b",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-undong-bujok",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "월세 giống kiểu thuê nhà ở Việt Nam (trả hằng tháng). 전세 thì khác hẳn - đóng một khoản cọc rất lớn và không trả tiền tháng."
+        },
+        "examples": [
+          {
+            "target": "보증금 500만 원에 월세 50만 원이에요.",
+            "translation": {
+              "vi": "Cọc 5 triệu won, tiền thuê 500 nghìn won mỗi tháng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thuê nhà trả tiền hằng tháng; tiền thuê hằng tháng (kèm một khoản cọc nhỏ)"
+        },
+        "pronunciation_note": {
+          "vi": "Thường đọc [월쎄] - ㅅ sau ㄹ căng lên."
+        }
+      },
+      "content_hash": "3a863320f5ea2a7df6dabd60f8900614f12a7647bde5752c134c5a5a605ec908",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "wolse",
+        "text": "월세"
+      },
+      "id": "794ca3ee-7a2b-5792-ba12-b7c713edff63",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-wolse",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Từ mượn \"one room\", chỉ loại nhà một phòng, không có nghĩa \"một căn phòng\" bất kỳ."
+        },
+        "examples": [
+          {
+            "target": "혼자 살아서 원룸을 찾고 있어요.",
+            "translation": {
+              "vi": "Tôi sống một mình nên đang tìm phòng studio."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phòng studio (một phòng có bếp nhỏ và nhà vệ sinh riêng)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [월룸] - ㄴ gặp ㄹ biến thành ㄹ."
+        }
+      },
+      "content_hash": "12974b9b90cfbdbe841e6d6db4d45f92e778bacb24021dc802c3062d45994a90",
+      "difficulty": 1,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "wollum",
+        "text": "원룸"
+      },
+      "id": "e026e23f-8018-507f-b2de-9d7d9c7f0b6f",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-wonrum",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Uống thuốc, uống vitamin dạng viên dùng 먹다 (영양제를 먹다), không dùng 마시다."
+        },
+        "examples": [
+          {
+            "target": "아침마다 비타민 영양제를 먹어요.",
+            "translation": {
+              "vi": "Sáng nào tôi cũng uống viên vitamin."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thực phẩm bổ sung, viên vitamin"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [영양제]; hai âm 영 và 양 đều có patchim ㅇ mũi."
+        }
+      },
+      "content_hash": "585beda4f07b8e695aeca0ad6df5f992798a42082927380aa39787f2e2e0694c",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "yeongyangje",
+        "text": "영양제"
+      },
+      "id": "918c80b3-f2d8-5584-95bf-3d22581f285f",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ha-yeongyangje",
+      "language_code": "ko",
+      "level_code": "topik3",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -215840,6 +227401,114 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "91ad46ca-b92f-5650-a0d2-704f40c8dcef",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ae11736d-7cb9-50ea-9756-97ed41c43494",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "319b0b60-5833-5338-a98f-d0f5781fee97",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3a9fb8d2-2216-5935-b35e-ea69a364fc1c",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f66cbc1c-691c-5990-b68b-8324c77e5cf4",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f1de1679-293e-56d7-8a6a-bf0b576468a0",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2dcc0d48-fbd9-5a1c-a5ae-f2ea50c004b5",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "20071d9d-c6a7-56b6-a0eb-400ed7203bb2",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "4da5e6f8-5d8f-52cb-993d-6079af00b00b",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bca41acb-d8fa-5e94-b916-99dea3293f78",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1d9df5ab-052b-5e61-b751-a38598880f84",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bcf1d794-0921-55f5-8ec3-0d522e240440",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a691a2ba-9eba-536d-a584-8f03634567fa",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "62117db1-caaa-5cff-9277-ba3d4e049936",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "ab49e98b-e08f-5f11-bc68-9111516b0bf5",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f6d88926-778c-5bd5-bd97-b951da6ca5c6",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 15,
+      "role": "reuse"
+    },
+    {
+      "item_id": "21ccde34-b96f-5de5-bdd0-d511f2c4a0e2",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 16,
+      "role": "reuse"
+    },
+    {
+      "item_id": "dc166140-3e88-53b3-a2a1-d3e8ebb263e9",
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "position": 17,
+      "role": "reuse"
+    },
+    {
       "item_id": "991543cb-3fb0-591e-ba80-507f1d7f6e6e",
       "lesson_id": "7f85a829-6e33-58d1-87f3-cd4b0df5ef10",
       "position": 0,
@@ -217040,6 +228709,264 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "f787bb16-20bb-52cc-8aab-3cf9cde25891",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "35056bcd-36e7-50cc-a383-47c1c54a0cf9",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3857db05-dab2-5b45-9e65-c1b3b67b22f1",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d373d6a2-18b1-5979-be3c-1f956fd3169a",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "29665841-850a-55ce-80b6-465edff7f5f7",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "83b78772-059d-5cfc-9c6c-908262f28cee",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "824e2741-0f7d-5894-9038-bea9f0593dae",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3ccd5f5b-938f-5809-90d9-a2d2ddf8a222",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f4ea476c-5418-55ef-a6b0-a48d8417dde8",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e40a876c-654b-5fa8-b07b-067cece5d457",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "68a5cf6c-a239-596b-b868-df83803ce66c",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "150796c6-349d-5b93-b4bb-e0a374481b2b",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0e94096b-fb9f-571a-9950-35b982bb3eae",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 12,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d5b7ca71-618f-52b4-ad30-b65a1119a5ec",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "ff4c5fe2-b9e4-5da2-ade8-9fe9bc910225",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "b07fc292-7b63-54b3-b5b8-cf28a9b89f5b",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 15,
+      "role": "reuse"
+    },
+    {
+      "item_id": "68bdc339-3105-5422-8a05-f7088f39a50b",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 16,
+      "role": "reuse"
+    },
+    {
+      "item_id": "3fee8a6a-8f57-5363-aa8a-058d597b894d",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 17,
+      "role": "reuse"
+    },
+    {
+      "item_id": "8df2f8ad-0398-5662-aed9-e3546c968570",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 18,
+      "role": "reuse"
+    },
+    {
+      "item_id": "b5b25ed4-c0cf-51e5-afda-4503957f9089",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 19,
+      "role": "reuse"
+    },
+    {
+      "item_id": "463eb8b3-fd24-57bd-abbb-bebbecdae3eb",
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "position": 20,
+      "role": "reuse"
+    },
+    {
+      "item_id": "c75ab15f-b250-560b-a299-20f85bd142f1",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "df40d4cb-8876-5ad4-a52a-e494bbf5baa7",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e07216f2-b289-54ac-92e2-fc63b522284c",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 2,
+      "role": "reuse"
+    },
+    {
+      "item_id": "95fdbeaa-7069-509c-a95c-0165e5b2eb7d",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 3,
+      "role": "reuse"
+    },
+    {
+      "item_id": "4ec68260-ff86-5157-9ec4-fbf42c7087da",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 4,
+      "role": "reuse"
+    },
+    {
+      "item_id": "085dabc2-dd67-5a63-90ee-bc857b189471",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 5,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f6bd866c-9d04-5df9-b889-c26f7e5db97f",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 6,
+      "role": "reuse"
+    },
+    {
+      "item_id": "fb6e1d6a-5618-549d-97a2-63a63aa916a2",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 7,
+      "role": "reuse"
+    },
+    {
+      "item_id": "7e16394d-4450-5d27-8a3b-354ca799b6a0",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 8,
+      "role": "reuse"
+    },
+    {
+      "item_id": "736ed832-5e39-5f9a-9e07-2bf7adc2478f",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 9,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d5b7ca71-618f-52b4-ad30-b65a1119a5ec",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "0e94096b-fb9f-571a-9950-35b982bb3eae",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "83b78772-059d-5cfc-9c6c-908262f28cee",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "c0c5792e-8241-5a17-b25e-27678e03f588",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "b5b25ed4-c0cf-51e5-afda-4503957f9089",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "b052f8e4-44b4-5b18-8a86-5a94b0622024",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 15,
+      "role": "reuse"
+    },
+    {
+      "item_id": "00f8dce2-6219-544f-9546-f401b2b9771a",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 16,
+      "role": "reuse"
+    },
+    {
+      "item_id": "0c6b71f7-9577-50ac-9ce0-6214ba1a588b",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 17,
+      "role": "reuse"
+    },
+    {
+      "item_id": "c948d7f8-cbd2-57b0-9d1b-f30356b58c92",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 18,
+      "role": "reuse"
+    },
+    {
+      "item_id": "319b0b60-5833-5338-a98f-d0f5781fee97",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 19,
+      "role": "reuse"
+    },
+    {
+      "item_id": "a691a2ba-9eba-536d-a584-8f03634567fa",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 20,
+      "role": "reuse"
+    },
+    {
+      "item_id": "463eb8b3-fd24-57bd-abbb-bebbecdae3eb",
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "position": 21,
+      "role": "reuse"
+    },
+    {
       "item_id": "388b57ca-61e5-5c7c-aefb-44607c58ca51",
       "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
       "position": 0,
@@ -218159,7 +230086,7 @@ select content_private.import_bundle($bundle${
       "item_id": "736ed832-5e39-5f9a-9e07-2bf7adc2478f",
       "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
       "position": 4,
-      "role": "introduce"
+      "role": "reuse"
     },
     {
       "item_id": "ba58e1b6-24c0-5cfe-8cc9-614025406f9f",
@@ -218237,6 +230164,108 @@ select content_private.import_bundle($bundle${
       "item_id": "756620de-9a78-5391-9af6-e995ed03616d",
       "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
       "position": 17,
+      "role": "reuse"
+    },
+    {
+      "item_id": "95fdbeaa-7069-509c-a95c-0165e5b2eb7d",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "4ec68260-ff86-5157-9ec4-fbf42c7087da",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "085dabc2-dd67-5a63-90ee-bc857b189471",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f6bd866c-9d04-5df9-b889-c26f7e5db97f",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "fb6e1d6a-5618-549d-97a2-63a63aa916a2",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "de662f24-48fd-567b-911e-c807e1b0a61b",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7e16394d-4450-5d27-8a3b-354ca799b6a0",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "736ed832-5e39-5f9a-9e07-2bf7adc2478f",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a943d9c6-5c22-5809-984c-651fac54ccb9",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "97d5625c-7840-53d0-8100-34ebe394b71b",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "83b78772-059d-5cfc-9c6c-908262f28cee",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "824e2741-0f7d-5894-9038-bea9f0593dae",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "c0c5792e-8241-5a17-b25e-27678e03f588",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "b5b25ed4-c0cf-51e5-afda-4503957f9089",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "1252a515-d6a9-5b4b-b2e4-8eff2b2217b8",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "74897530-897c-5e1a-80eb-b164b69dcac9",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 15,
+      "role": "reuse"
+    },
+    {
+      "item_id": "9d1958b0-6233-510f-a34f-976e817b15d5",
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "position": 16,
       "role": "reuse"
     },
     {
@@ -223052,6 +235081,102 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "b052f8e4-44b4-5b18-8a86-5a94b0622024",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9c98b190-37d1-5a23-90a1-d8c3148a5288",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0c6b71f7-9577-50ac-9ce0-6214ba1a588b",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "817eb4a5-57d4-51fb-bb70-2e734a6d3284",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c399618d-12d3-5e02-a788-1ca64c97ba30",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c948d7f8-cbd2-57b0-9d1b-f30356b58c92",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ba9e65d1-b3e4-5323-8082-c5f722bf6996",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "da005009-2c0d-5c73-b068-0c0eee1944c9",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9f0ac97f-13b1-5c3b-8c6d-7f9569b25c42",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "777c4645-1d3e-5b03-a6e7-fc3aba219a25",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "aa394d56-4e9a-51ba-92ce-ab18920e7e5b",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "00f8dce2-6219-544f-9546-f401b2b9771a",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "fa795f88-5947-5939-abcf-a0a1614bcf22",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "decacb89-a580-5bce-8f1e-a933465d4328",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d5c2899d-92a3-5168-91c5-21676399b5a1",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "1d9df5ab-052b-5e61-b751-a38598880f84",
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "position": 15,
+      "role": "reuse"
+    },
+    {
       "item_id": "aa394d56-4e9a-51ba-92ce-ab18920e7e5b",
       "lesson_id": "613b2c17-8f6a-59f4-9b00-7702ce53b0ac",
       "position": 0,
@@ -224574,6 +236699,90 @@ select content_private.import_bundle($bundle${
       "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
       "position": 8,
       "role": "introduce"
+    },
+    {
+      "item_id": "54b0fd61-b435-5a53-8fe7-5da53c5ed2cf",
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1d4f3ba0-af06-5aae-be40-ecd4698f0de5",
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "203b18cb-6819-5ad6-bec7-ea26843cca32",
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1c857d41-783e-576d-ae6e-694b4f76b282",
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e5e7f52a-6736-5448-bcd0-b32ffe7f7717",
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "adb1a82a-d4de-551e-92a1-f8f36e16f8ac",
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "cfc3236c-899e-504c-ab2b-e29fffe825a7",
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6770c4ab-bf09-59d5-bf05-5f48205943f0",
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "fc99de96-8198-5341-a77f-f67af844c9d1",
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d5b9a055-8343-5444-b1d1-2b7d1bd7215d",
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "04029546-019e-5bd7-b860-748e4588de87",
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e026e23f-8018-507f-b2de-9d7d9c7f0b6f",
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "77719009-e340-579e-80d8-6374ff3dbdcb",
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "6ffec06b-d176-5f41-8f05-2b10f77824cf",
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "position": 13,
+      "role": "reuse"
     },
     {
       "item_id": "6c928f8c-2737-523d-82b9-17b522559af1",
@@ -227408,6 +239617,84 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "e88e5919-bfd7-5512-bfb0-e3dcf1ffbf7f",
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5e97a6e0-91ca-5fa0-989c-3a6f8d7786a4",
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "81623afb-56e0-56b0-bed1-202a3e440974",
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e0a0d6dc-30fc-55d1-a242-f9c0bdec8f25",
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bd0dec27-28d4-523b-bdc3-36c708838e71",
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5b7f0b63-d8e9-5d35-a2e1-97c639c48bff",
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8b7ed4c8-7080-5fbe-800e-83da0b2eb1eb",
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9cbee98a-5f0d-5b41-b7e5-1bd989111108",
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "position": 7,
+      "role": "reuse"
+    },
+    {
+      "item_id": "38a15496-5322-525a-afa9-cc6f5108f065",
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "224c4d2f-1241-5bde-9281-c5314d591e31",
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c05115ff-efbf-59af-91de-8445fe761f00",
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "e51a8896-3370-5a60-bfcb-9c31ca574571",
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d5b9a055-8343-5444-b1d1-2b7d1bd7215d",
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
       "item_id": "7852f94d-ec73-5a4b-8f55-335402e1aeb3",
       "lesson_id": "03df996b-ab2c-528d-aef3-a6cc7e8f9559",
       "position": 0,
@@ -227644,6 +239931,90 @@ select content_private.import_bundle($bundle${
     {
       "item_id": "902c1969-00c6-5bc1-a605-402e4d74f3a9",
       "lesson_id": "a90aca94-4b30-56e2-99b5-467e7730844f",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "75a44379-fc33-599e-a137-3f44146e9885",
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b2f9ed82-77df-5fe3-b958-6de8749705f6",
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "131dab46-8b1f-5e6f-b719-e87fb7bb5907",
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c05115ff-efbf-59af-91de-8445fe761f00",
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3c327299-60f0-5e7c-b3d9-39031c0b55cc",
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "007639dd-7ed8-5e25-a8fb-77062b8c913c",
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0f16f256-7f99-515d-ad84-4d5a5fb1e13b",
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b45e3446-d53c-5ed1-8c76-50c7a4711374",
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "918c80b3-f2d8-5584-95bf-3d22581f285f",
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e51a8896-3370-5a60-bfcb-9c31ca574571",
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0304c1f1-9874-509d-a45a-4d089cd8a365",
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e4d48c74-d1b5-5a27-a67e-603b1c597cfb",
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "39ce9f52-dd9d-5eac-8889-2c02611282fa",
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "3b29aa64-b17c-506c-a754-6fb92071ca3a",
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
       "position": 13,
       "role": "reuse"
     },
@@ -228384,6 +240755,180 @@ select content_private.import_bundle($bundle${
       "lesson_id": "b3506508-9319-5ceb-96ba-7548332991ea",
       "position": 16,
       "role": "reuse"
+    },
+    {
+      "item_id": "51b28609-f00a-51fd-b9d6-ad754afd0fd2",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "52ff39a1-404a-52d9-8846-3e0d2cd24ba5",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "794ca3ee-7a2b-5792-ba12-b7c713edff63",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 2,
+      "role": "reuse"
+    },
+    {
+      "item_id": "0e1c3de4-6a14-524d-a7f1-95f2db024ea7",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 3,
+      "role": "reuse"
+    },
+    {
+      "item_id": "05cbd8d7-6ca3-541c-ae6e-db45a69f9cf9",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 4,
+      "role": "reuse"
+    },
+    {
+      "item_id": "5155a7e6-4ef3-5ec4-82e3-c688026efc53",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 5,
+      "role": "reuse"
+    },
+    {
+      "item_id": "eec114a9-caef-5241-a782-9c339e8e5d7e",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 6,
+      "role": "reuse"
+    },
+    {
+      "item_id": "4891cdce-9228-5322-b942-1dcde8509eb4",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 7,
+      "role": "reuse"
+    },
+    {
+      "item_id": "8ab81dd8-ae42-5f53-b565-0271f991592c",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 8,
+      "role": "reuse"
+    },
+    {
+      "item_id": "1d4f3ba0-af06-5aae-be40-ecd4698f0de5",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 9,
+      "role": "reuse"
+    },
+    {
+      "item_id": "203b18cb-6819-5ad6-bec7-ea26843cca32",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "1c857d41-783e-576d-ae6e-694b4f76b282",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "b2f9ed82-77df-5fe3-b958-6de8749705f6",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "81623afb-56e0-56b0-bed1-202a3e440974",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "e0a0d6dc-30fc-55d1-a242-f9c0bdec8f25",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "5e97a6e0-91ca-5fa0-989c-3a6f8d7786a4",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 15,
+      "role": "reuse"
+    },
+    {
+      "item_id": "e51a8896-3370-5a60-bfcb-9c31ca574571",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 16,
+      "role": "reuse"
+    },
+    {
+      "item_id": "0304c1f1-9874-509d-a45a-4d089cd8a365",
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "position": 17,
+      "role": "reuse"
+    },
+    {
+      "item_id": "4891cdce-9228-5322-b942-1dcde8509eb4",
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8ab81dd8-ae42-5f53-b565-0271f991592c",
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f9f4d065-3186-5a31-86ef-e7c599433e95",
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e026e23f-8018-507f-b2de-9d7d9c7f0b6f",
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "794ca3ee-7a2b-5792-ba12-b7c713edff63",
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0e1c3de4-6a14-524d-a7f1-95f2db024ea7",
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "05cbd8d7-6ca3-541c-ae6e-db45a69f9cf9",
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "77719009-e340-579e-80d8-6374ff3dbdcb",
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5155a7e6-4ef3-5ec4-82e3-c688026efc53",
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b13e261c-ce88-544f-b427-5ee45a8576cd",
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "eec114a9-caef-5241-a782-9c339e8e5d7e",
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "position": 10,
+      "role": "introduce"
     },
     {
       "item_id": "39c48f20-706c-5db8-8f9b-e84312f12047",
@@ -232244,6 +244789,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "b88324c7-41de-5713-9af3-bbea4446798e"
     },
     {
+      "lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "prerequisite_lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490"
+    },
+    {
       "lesson_id": "7f85a829-6e33-58d1-87f3-cd4b0df5ef10",
       "prerequisite_lesson_id": "c7f4d1ec-2975-5857-8ad6-c84d4624e796"
     },
@@ -232296,6 +244845,14 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "4f5124b7-46af-5f68-9ebc-bc8268d9d98d"
     },
     {
+      "lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "prerequisite_lesson_id": "14fcd9e0-9a9f-5303-b02e-f7052adb85c6"
+    },
+    {
+      "lesson_id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "prerequisite_lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053"
+    },
+    {
       "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
       "prerequisite_lesson_id": "c718f105-9063-52b4-8717-5efe9ef694af"
     },
@@ -232342,6 +244899,10 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
       "prerequisite_lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c"
+    },
+    {
+      "lesson_id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "prerequisite_lesson_id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80"
     },
     {
       "lesson_id": "269f9b92-640e-57ff-8515-64852c25123e",
@@ -232552,6 +245113,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273"
     },
     {
+      "lesson_id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "prerequisite_lesson_id": "d839ed9d-ecc2-52bc-a453-8153c342e879"
+    },
+    {
       "lesson_id": "613b2c17-8f6a-59f4-9b00-7702ce53b0ac",
       "prerequisite_lesson_id": "0110ccac-40e8-5149-af0f-28e41c844378"
     },
@@ -232626,6 +245191,10 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
       "prerequisite_lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c"
+    },
+    {
+      "lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "prerequisite_lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8"
     },
     {
       "lesson_id": "ba8b8110-f82c-51ce-a412-7f612118c84b",
@@ -232756,6 +245325,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "ce2b1592-b153-55cb-ad4a-38f2526e9276"
     },
     {
+      "lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "prerequisite_lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7"
+    },
+    {
       "lesson_id": "03df996b-ab2c-528d-aef3-a6cc7e8f9559",
       "prerequisite_lesson_id": "a90aca94-4b30-56e2-99b5-467e7730844f"
     },
@@ -232766,6 +245339,10 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "a90aca94-4b30-56e2-99b5-467e7730844f",
       "prerequisite_lesson_id": "0f498e75-1e16-5fdd-979a-994de896e7d8"
+    },
+    {
+      "lesson_id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "prerequisite_lesson_id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7"
     },
     {
       "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
@@ -232798,6 +245375,14 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "b3506508-9319-5ceb-96ba-7548332991ea",
       "prerequisite_lesson_id": "c13204e8-b2c0-59d7-821a-bf3ccbb3f184"
+    },
+    {
+      "lesson_id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "prerequisite_lesson_id": "7b838d09-0b26-575c-ab31-1d60b8564456"
+    },
+    {
+      "lesson_id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "prerequisite_lesson_id": "3df69dbc-f715-5ea0-848b-d49a9e79da39"
     },
     {
       "lesson_id": "165ec26b-a3e1-58e8-9350-455649ee5df3",
@@ -234056,6 +246641,163 @@ select content_private.import_bundle($bundle${
         "vi": "Câu chẻ & đảo ngữ để nhấn mạnh"
       },
       "unit_id": "5057459b-bf94-5862-98e8-8d51b6b5d6b9"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn mô tả được màu của đồ vật quanh mình (a black bag, a light blue shirt) và nói mình thích màu gì nhất."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Màu sắc là tính từ, nên đứng trước danh từ - a red bag, white shoes. Tiếng Việt nói \"túi đỏ\", \"giày trắng\" (màu đứng sau), nên người Việt rất hay nói ngược thành a bag red."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Muốn nói màu đậm hay nhạt, đặt dark (đậm) hoặc light (nhạt) trước tên màu - dark blue, light green. Thứ tự là a + dark/light + màu + danh từ - a dark blue dress."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Hỏi màu dùng What colour is…? (số ít) hoặc What colour are…? (số nhiều) - What colour are your shoes? Màu mình thích nhất là My favourite colour is…, favourite đứng trước colour."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Tiếng Việt \"xanh\" có thể là blue (xanh dương, xanh da trời) hoặc green (xanh lá), nên hãy nghĩ đến màu thật trước khi dịch. Khi màu đứng sau be thì không cần a - The bag is red, không nói The bag is a red. Anh viết colour, favourite, grey; Mỹ viết color, favorite, gray - chọn một kiểu và giữ thống nhất."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Trả lời cần It's; không cần a trước màu khi màu đứng một mình."
+          },
+          "target": "What colour is your bag? - It's black.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Túi của bạn màu gì? - Màu đen."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Dark đứng trước blue, cả cụm đứng trước dress. Shoes số nhiều nên không có a."
+          },
+          "target": "She's got a dark blue dress and white shoes.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Cô ấy có một chiếc váy xanh đậm và đôi giày trắng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Favourite đứng trước colour; What's yours? để hỏi lại."
+          },
+          "target": "My favourite colour is green. What's yours?",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Màu mình thích nhất là xanh lá. Còn bạn?"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Orange vừa là quả cam vừa là màu cam. Sau are không cần a."
+          },
+          "target": "The bananas are yellow, and the oranges are orange.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Chuối màu vàng, còn cam thì màu cam."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Màu đứng trước danh từ, ngược với tiếng Việt \"túi đỏ\"."
+          },
+          "right": "I've got a red bag.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I've got a bag red."
+        },
+        {
+          "note": {
+            "vi": "Favourite cũng là tính từ nên đứng trước colour."
+          },
+          "right": "My favourite colour is blue.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "My colour favourite is blue."
+        },
+        {
+          "note": {
+            "vi": "Light/dark đứng trước màu, không đứng sau như \"xanh nhạt\" trong tiếng Việt."
+          },
+          "right": "He's got a light blue shirt.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "He's got a blue light shirt."
+        },
+        {
+          "points": [
+            {
+              "vi": "Màu đứng trước danh từ - a red bag, black shoes."
+            },
+            {
+              "vi": "Đậm/nhạt - dark/light + màu - a dark green shirt."
+            },
+            {
+              "vi": "Hỏi màu - What colour is it? / What colour are they?"
+            },
+            {
+              "vi": "My favourite colour is… - favourite đứng trước colour."
+            },
+            {
+              "vi": "Xanh dương là blue, xanh lá là green."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "b6666b63559f94c169a32b9401e93ddcd356610813ab0b8af6536d52209f729a",
+      "estimated_minutes": 10,
+      "id": "d839ed9d-ecc2-52bc-a453-8153c342e879",
+      "is_demo": true,
+      "key": "en:lesson:colours-and-things",
+      "language_code": "en",
+      "level_code": "a1",
+      "objectives": [
+        {
+          "vi": "Gọi tên các màu cơ bản và màu đậm, nhạt (dark blue, light green)."
+        },
+        {
+          "vi": "Đặt màu trước danh từ - a red bag, không nói a bag red."
+        },
+        {
+          "vi": "Hỏi What colour is it? và nói My favourite colour is…"
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "vocabulary",
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Màu sắc và mô tả đồ vật - a red bag"
+      },
+      "unit_id": "e1573e84-e3d9-507f-b099-2bbebbef91d6"
     },
     {
       "body": [
@@ -236070,6 +248812,320 @@ select content_private.import_bundle($bundle${
         "vi": "Từ nối nâng cao & viết email, báo cáo trang trọng"
       },
       "unit_id": "5057459b-bf94-5862-98e8-8d51b6b5d6b9"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn kể được mình hay làm gì lúc rảnh và thích, ghét hoạt động nào - ví dụ \"Lúc rảnh mình chơi ghi-ta, mình ghét đi mua sắm\"."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Để hỏi về sở thích, người Anh hay dùng What do you do in your free time? (lúc rảnh bạn làm gì?) hoặc What do you like doing? (bạn thích làm gì?). Trả lời bằng thì hiện tại đơn - I play the guitar, I go for a walk."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Hoạt động lúc rảnh thường đi theo cụm cố định - play the guitar (nhạc cụ có the), play football (thể thao không có the), go shopping (go + -ing, không có to), go to the cinema (nơi chốn có to the), go for a walk. Hãy học cả cụm thay vì dịch từng chữ \"chơi\", \"đi\"."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Thang mức độ: love (mê) > like (thích) > don't like (không thích) > hate (ghét). Sau cả bốn từ này, hoạt động dùng dạng -ing - I love dancing, I hate shopping. Tiếng Việt nói \"thích hát\" không đổi gì, nên người Việt hay quên -ing."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Khi thêm -ing, động từ tận cùng bằng e câm bỏ e (dance → dancing, ride → riding); động từ ngắn kết thúc bằng một nguyên âm + một phụ âm thì gấp đôi phụ âm (swim → swimming, shop → shopping). Ngoài like + -ing, người Anh cũng nói I like to dance, nhưng ở trình độ này bạn cứ dùng -ing cho chắc. Muốn hỏi người khác thích làm gì cụ thể, dùng Do you like + -ing? - Do you like singing? - Yes, I do / No, I don't."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Câu hỏi có hai chữ do - chữ đầu để hỏi, chữ sau là \"làm\". Nhạc cụ đi với the."
+          },
+          "target": "What do you do in your free time? - I play the guitar and I read books.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Lúc rảnh bạn làm gì? - Mình chơi ghi-ta và đọc sách."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Trả lời đúng khuôn của câu hỏi - like doing → love going."
+          },
+          "target": "What do you like doing at the weekend? - I love going to the cinema.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Cuối tuần bạn thích làm gì? - Mình mê đi xem phim."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "He nên likes, hates có -s; ride bỏ e thành riding."
+          },
+          "target": "My brother likes riding his bike, but he hates going shopping.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Em trai mình thích đạp xe, nhưng ghét đi mua sắm."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Đi dạo là go for a walk; often đứng trước động từ thường."
+          },
+          "target": "We often go for a walk in the park after dinner.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Sau bữa tối bọn mình hay đi dạo trong công viên."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Sau like, love, hate, động từ phải thêm -ing. Tiếng Việt \"thích chơi\" không đổi dạng, nhưng tiếng Anh thì có."
+          },
+          "right": "I like playing football.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I like play football."
+        },
+        {
+          "note": {
+            "vi": "Go + hoạt động -ing không có to - go shopping, go swimming. Chỉ nơi chốn mới có to - go to the cinema."
+          },
+          "right": "I go shopping on Sundays.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I go to shopping on Sundays."
+        },
+        {
+          "note": {
+            "vi": "Nhạc cụ có the (the guitar, the piano); môn thể thao thì không (football, tennis)."
+          },
+          "right": "She plays the guitar and plays football.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "She plays guitar and plays the football."
+        },
+        {
+          "points": [
+            {
+              "vi": "Hỏi sở thích - What do you do in your free time? / What do you like doing?"
+            },
+            {
+              "vi": "love > like > don't like > hate + V-ing - I hate shopping."
+            },
+            {
+              "vi": "play the + nhạc cụ; play + thể thao (không the)."
+            },
+            {
+              "vi": "go shopping, go swimming (không to); go to the cinema (có to the); go for a walk."
+            },
+            {
+              "vi": "Thêm -ing - dance → dancing, ride → riding, shop → shopping."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "63b0dcbada60a2138f8a21225aee2c671e35e101b5b109bd52a73dcede5641ba",
+      "estimated_minutes": 10,
+      "id": "30fd093c-2bc5-5e0a-b055-9d68bb853f80",
+      "is_demo": true,
+      "key": "en:lesson:free-time-activities",
+      "language_code": "en",
+      "level_code": "a1",
+      "objectives": [
+        {
+          "vi": "Gọi tên các hoạt động lúc rảnh - chơi ghi-ta, đi mua sắm, đi xem phim, đi dạo, đạp xe, nhảy, hát, vẽ."
+        },
+        {
+          "vi": "Hỏi và trả lời What do you do in your free time? và What do you like doing?"
+        },
+        {
+          "vi": "Nói mức độ thích bằng love / like / don't like / hate + -ing, không nói I like play."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "vocabulary",
+        "speaking",
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Bạn làm gì lúc rảnh? - Sở thích"
+      },
+      "unit_id": "e1573e84-e3d9-507f-b099-2bbebbef91d6"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn dùng trọn bộ kiến thức của unit trong hai tình huống thật - chat rủ bạn đi chơi cuối tuần và viết bưu thiếp từ nơi du lịch."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Một đoạn chat rủ đi chơi thường có bốn bước: hỏi Are you free this weekend?; nói mình muốn gì (I want to…) hoặc gợi ý (Let's… / Why don't we…? / What about…?); nhận lời (Sounds great!) hoặc từ chối (Sorry, I can't. I'm busy.); chốt thời gian (See you on Saturday!)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Bưu thiếp (postcard) ngắn và thân mật - mở đầu Dear + tên, kể thời tiết (It's hot and sunny), việc bạn làm mỗi ngày (We go swimming every morning), rồi kết thúc bằng Love from + tên."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Trước khi gửi, hãy tự kiểm tra năm lỗi hay gặp: It is rain → It's rainy; Weather is hot → It's hot; I like play → I like playing; Let's to go → Let's go; I want go → I want to go; a bag red → a red bag."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Trong tin nhắn, người bản xứ hay viết ngắn - Sounds great!, Me too!, See you! - nhưng vẫn giữ đúng ngữ pháp cơ bản như It's và want to. Bưu thiếp thường dùng thì hiện tại đơn để kể việc lặp lại hằng ngày (we go swimming every day). Love from chỉ dùng với người thân, bạn bè."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Are you free…? để hỏi rảnh; What do you want to do? - want to + động từ."
+          },
+          "target": "Linh: Hi Tom! Are you free this weekend? - Tom: Yes, I am. What do you want to do?",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Linh: Chào Tom! Cuối tuần này cậu rảnh không? - Tom: Rảnh. Cậu muốn làm gì?"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Let's + go; It's + thời tiết; hate + -ing; Why don't we + động từ nguyên mẫu."
+          },
+          "target": "Linh: Let's go to the beach. It's hot and sunny this week! - Tom: Sounds great! But I hate swimming. Why don't we play football on the beach?",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Linh: Đi biển đi. Tuần này trời nóng và nắng! - Tom: Hay quá! Nhưng tớ ghét bơi. Hay là mình đá bóng trên bãi biển nhé?"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "What about + -ing; từ chối kèm lý do ngắn."
+          },
+          "target": "Linh: Good idea! What about going to the cinema on Sunday? - Tom: Sorry, I can't. I'm busy on Sunday.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Linh: Ý hay! Thế Chủ nhật đi xem phim thì sao? - Tom: Xin lỗi, tớ không đi được. Chủ nhật tớ bận."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Bưu thiếp mở đầu Dear, kể thời tiết bằng It's, màu đứng trước danh từ (a new red hat), kết thúc Love from."
+          },
+          "target": "Dear Mum and Dad, I'm in Nha Trang with Linh. It's hot and sunny every day. We go swimming in the morning and play football in the afternoon. Linh loves going shopping - she's got a new red hat! Love from Tom",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Bố mẹ thân mến, con đang ở Nha Trang cùng Linh. Ngày nào trời cũng nóng và nắng. Buổi sáng tụi con đi bơi, buổi chiều đá bóng. Linh mê đi mua sắm - bạn ấy có một cái mũ đỏ mới! Thương bố mẹ, Tom"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Sau Let's không có to; nói thời tiết dùng It's + tính từ (rainy), không dùng danh từ rain."
+          },
+          "right": "Let's go to the beach. It isn't rainy today.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Let's to go to the beach. It is rain today."
+        },
+        {
+          "note": {
+            "vi": "Want cần to trước động từ; hate (như like, love) cần -ing."
+          },
+          "right": "I want to go swimming, but Tom hates swimming.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I want go swimming, but Tom hates swim."
+        },
+        {
+          "note": {
+            "vi": "Màu đứng trước danh từ; thời tiết bắt đầu bằng It's (hoặc The weather is…)."
+          },
+          "right": "Linh has got a new red hat. It's hot.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Linh has got a new hat red. Weather is hot."
+        },
+        {
+          "points": [
+            {
+              "vi": "Rủ - Are you free…? / Let's… / Why don't we…? / What about + -ing?"
+            },
+            {
+              "vi": "Đáp - Sounds great! / That's a good idea. / Sorry, I can't. I'm busy."
+            },
+            {
+              "vi": "Sở thích - love / like / hate + -ing; mong muốn - want to + động từ."
+            },
+            {
+              "vi": "Thời tiết - It's + tính từ; in + mùa."
+            },
+            {
+              "vi": "Màu trước danh từ - a red hat; bưu thiếp kết thúc Love from + tên."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "23d1ca3e698c40ef456962cbc89382abd770ad8e1ddeb1339cb8a48ef81aad4a",
+      "estimated_minutes": 12,
+      "id": "0dbfb4c5-f285-5af6-b6a1-d3f2b70f783f",
+      "is_demo": true,
+      "key": "en:lesson:free-time-weather-review",
+      "language_code": "en",
+      "level_code": "a1",
+      "objectives": [
+        {
+          "vi": "Hiểu và tham gia một đoạn chat rủ bạn đi chơi cuối tuần - hỏi rảnh không, gợi ý, nhận lời, từ chối."
+        },
+        {
+          "vi": "Đọc và viết một tấm bưu thiếp ngắn kể về thời tiết, hoạt động và đồ vật mới."
+        },
+        {
+          "vi": "Kết hợp like/love/hate + -ing, want to, Let's, It's + thời tiết và màu sắc mà không mắc lỗi quen thuộc."
+        }
+      ],
+      "order_index": 5,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Ôn tập - Lên kế hoạch cuối tuần và viết bưu thiếp"
+      },
+      "unit_id": "e1573e84-e3d9-507f-b099-2bbebbef91d6"
     },
     {
       "body": [
@@ -238359,7 +251415,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "1a3c20c61336c6eae71276e979dc9d6fb4e84efdc36668b56649948b1f140695",
+      "content_hash": "605c534ad392c57f581ad713f7f5ff15bc0047e42c48a87d7a8eac4884b58d35",
       "estimated_minutes": 16,
       "id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
       "is_demo": true,
@@ -238390,6 +251446,163 @@ select content_private.import_bundle($bundle${
         "vi": "Would you like to…? - lời mời và gọi điện thoại"
       },
       "unit_id": "46915d59-f675-5046-8b0e-2064329ff90c"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn rủ được bạn bè đi chơi, nói mình muốn làm gì, và nhận lời hay từ chối một cách tự nhiên, lịch sự."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Muốn làm gì thì dùng want to + động từ nguyên mẫu - I want to go to the beach. Tiếng Việt nói \"muốn đi\" không cần chữ nối, nên người Việt hay quên to và nói I want go. Với he/she là wants to."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Có ba cách rủ phổ biến: Let's + động từ (Mình… đi!), Why don't we + động từ? (Hay là mình… nhé?) và What about + -ing / danh từ? (… thì sao?). Sau Let's và Why don't we là động từ nguyên mẫu, không có to; sau What about là -ing."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Nhận lời bằng Sounds good!, Sounds great! hoặc That's a good idea. Từ chối thì đừng chỉ nói No - hãy nói Sorry, I can't và thêm lý do ngắn, ví dụ I'm busy."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Why don't we…? trông như câu hỏi \"tại sao\", nhưng thực chất là lời gợi ý mềm hơn Let's. What about và How about dùng giống nhau. Muốn hỏi ý người khác trước khi rủ, bạn dùng Do you want to…? - Do you want to play badminton? - Yes, I do / Sure!"
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Want to + go; Me too để đồng ý ngắn gọn."
+          },
+          "target": "I want to go to the beach this weekend. - Me too!",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Cuối tuần này mình muốn đi biển. - Mình cũng thế!"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Let's + động từ nguyên mẫu, không có to."
+          },
+          "target": "Let's go to the cinema tonight. - Sounds great!",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Tối nay đi xem phim đi. - Hay quá!"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Together thường đứng sau hoạt động, không đứng trước động từ như \"cùng\"."
+          },
+          "target": "Why don't we play football together on Sunday? - That's a good idea.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Hay là Chủ nhật mình cùng đá bóng nhé? - Ý hay đấy."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "What about + going; từ chối kèm lý do ngắn."
+          },
+          "target": "What about going shopping tomorrow? - Sorry, I can't. I'm busy.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Mai đi mua sắm thì sao? - Xin lỗi, mình không đi được. Mình bận."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Want luôn cần to trước động từ - want to go, want to play."
+          },
+          "right": "I want to go to the beach.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I want go to the beach."
+        },
+        {
+          "note": {
+            "vi": "Sau Let's là động từ nguyên mẫu, không có to và không thêm -ing."
+          },
+          "right": "Let's go shopping!",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Let's to go shopping!"
+        },
+        {
+          "note": {
+            "vi": "Sau What about (và How about) dùng -ing hoặc danh từ."
+          },
+          "right": "What about going swimming?",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "What about go swimming?"
+        },
+        {
+          "points": [
+            {
+              "vi": "want to + động từ - I want to go; he wants to go."
+            },
+            {
+              "vi": "Let's + động từ (không to) - Let's go."
+            },
+            {
+              "vi": "Why don't we + động từ? - gợi ý nhẹ nhàng \"hay là mình… nhé?\"."
+            },
+            {
+              "vi": "What about / How about + -ing hoặc danh từ? - What about going…? What about Sunday?"
+            },
+            {
+              "vi": "Nhận lời - Sounds good! / That's a good idea. Từ chối - Sorry, I can't. I'm busy."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "b4290163d7ee7881ef9869b8c29813b236ac05ea6c75bfdf21b89153d6c7fb15",
+      "estimated_minutes": 10,
+      "id": "0aac8417-90c0-50ea-9769-f6a6e7637490",
+      "is_demo": true,
+      "key": "en:lesson:lets-and-want-to",
+      "language_code": "en",
+      "level_code": "a1",
+      "objectives": [
+        {
+          "vi": "Nói mình muốn làm gì bằng want to + động từ, không nói I want go."
+        },
+        {
+          "vi": "Rủ bạn bè bằng Let's…, Why don't we…? và What about + -ing?"
+        },
+        {
+          "vi": "Nhận lời (Sounds good!, That's a good idea.) và từ chối lịch sự (Sorry, I can't. I'm busy.)."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "speaking",
+        "grammar",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Rủ bạn đi chơi - Let's…, Why don't we…?, want to"
+      },
+      "unit_id": "e1573e84-e3d9-507f-b099-2bbebbef91d6"
     },
     {
       "body": [
@@ -246823,6 +260036,163 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn hỏi và kể được thời tiết hôm nay, thời tiết từng mùa ở quê mình - ví dụ \"Mùa hè ở Sài Gòn trời nóng và hay mưa\"."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Tiếng Việt nói \"trời nóng\", \"nóng quá\" mà không cần chủ ngữ rõ ràng, nhưng câu tiếng Anh luôn cần chủ ngữ. Khi nói về thời tiết, chủ ngữ là it - It's hot, It's sunny, It's windy."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Sau It's dùng tính từ - sunny, rainy, cloudy, windy, hot, cold, warm, cool. Rain và snow là danh từ/động từ, nên không nói It is rain; hãy nói It's rainy (trời mưa nhiều) hoặc It's raining (đang mưa)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Hỏi thời tiết dùng What's the weather like? - có the trước weather, like ở cuối nghĩa là \"như thế nào\". Trước mùa và tháng dùng in - in summer, in the rainy season, in July."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Bạn cũng có thể nói The weather is hot, nhưng phải có the; câu Weather is hot (thiếu the) là sai. Người Anh còn hỏi How's the weather? - đúng, nhưng không gộp thành How is the weather like? Miền Bắc Việt Nam có bốn mùa (spring, summer, autumn, winter), còn miền Nam có hai mùa - the rainy season và the dry season."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Câu trả lời bắt đầu bằng It's, không bỏ it."
+          },
+          "target": "What's the weather like today? - It's hot and sunny.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Hôm nay thời tiết thế nào? - Trời nóng và nắng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "In + mùa; tên mùa không viết hoa."
+          },
+          "target": "In Hanoi, it's cold in winter and hot in summer.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Ở Hà Nội, mùa đông trời lạnh, mùa hè trời nóng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "From… to… để nói khoảng thời gian; tên tháng viết hoa."
+          },
+          "target": "In the south of Vietnam, the rainy season is from May to October.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Ở miền Nam Việt Nam, mùa mưa kéo dài từ tháng Năm đến tháng Mười."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Phủ định là it isn't (it's not) + tính từ."
+          },
+          "target": "It's cloudy and windy, but it isn't cold.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Trời nhiều mây và có gió, nhưng không lạnh."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Rain là danh từ/động từ. Sau It's cần tính từ rainy, hoặc dùng It's raining (đang mưa)."
+          },
+          "right": "It's rainy today. / It's raining now.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "It is rain today."
+        },
+        {
+          "note": {
+            "vi": "Nói về thời tiết hãy bắt đầu bằng It's. Nếu dùng weather làm chủ ngữ thì cần the."
+          },
+          "right": "It's hot. / The weather is hot.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Weather is hot."
+        },
+        {
+          "note": {
+            "vi": "Đi với like là What; nếu dùng How thì bỏ like - How's the weather?"
+          },
+          "right": "What's the weather like?",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "How is the weather like?"
+        },
+        {
+          "points": [
+            {
+              "vi": "Thời tiết - It's + tính từ - It's sunny / rainy / cloudy / windy / hot / cold."
+            },
+            {
+              "vi": "Đang mưa/tuyết - It's raining / It's snowing; không nói It is rain."
+            },
+            {
+              "vi": "Hỏi - What's the weather like? (hoặc How's the weather?)"
+            },
+            {
+              "vi": "Mùa - spring, summer, autumn (fall), winter; the rainy season, the dry season."
+            },
+            {
+              "vi": "In + mùa / tháng - in summer, in May."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "7a6c073f1d36ba2799995e813c266457ed34b00ab8f050e323c79ab3e3c8d7e7",
+      "estimated_minutes": 10,
+      "id": "31ea41ab-9cfb-5be8-9fa1-a120c9134053",
+      "is_demo": true,
+      "key": "en:lesson:weather-and-seasons",
+      "language_code": "en",
+      "level_code": "a1",
+      "objectives": [
+        {
+          "vi": "Hỏi What's the weather like? và trả lời bằng It's + tính từ (It's sunny, It's cold)."
+        },
+        {
+          "vi": "Gọi tên bốn mùa, mùa mưa, mùa khô và dùng in trước mùa, tháng - in summer, in May."
+        },
+        {
+          "vi": "Không nói It is rain, Weather is hot hay Is hot."
+        }
+      ],
+      "order_index": 4,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "vocabulary",
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Thời tiết và các mùa - It's sunny, in summer"
+      },
+      "unit_id": "e1573e84-e3d9-507f-b099-2bbebbef91d6"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Sau bài này, bạn hỏi và nói được thời tiết ở nơi định đến, và so sánh các điểm du lịch như \"Đà Lạt mát hơn Nha Trang\" hay \"Đây là bãi biển đẹp nhất\"."
           },
           "type": "objective"
@@ -249780,6 +263150,168 @@ select content_private.import_bundle($bundle${
         "vi": "Thành ngữ bốn chữ và tục ngữ thường gặp trong TOPIK"
       },
       "unit_id": "687536fe-144c-5cdb-82a7-b7e702447d14"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn hiểu được bảng thông báo đổ rác của chung cư, nói chuyện lịch sự với hàng xóm về tiếng ồn và kể những việc bạn đã chuẩn bị sẵn trong nhà."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "V-아/어 놓다 nghĩa là làm xong một việc rồi để nguyên kết quả đó - giống \"…sẵn\" trong tiếng Việt: 창문을 열어 놓았어요 (tôi đã mở sẵn cửa sổ). Khẩu ngữ hay rút gọn 놓았어요 thành 놨어요."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "V-아/어 두다 cũng là làm sẵn, nhưng nhấn mạnh việc giữ lại để dùng về sau, lâu hơn. Phần lớn trường hợp hai cấu trúc thay được cho nhau; riêng \"ghi nhớ, biết trước\" thì dùng 알아 두다, 기억해 두다 tự nhiên hơn."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "V-기 쉽다 / 어렵다 là \"dễ / khó làm…\" - 찾기 쉬워요 (dễ tìm). -기 쉽다 còn có nghĩa \"dễ bị, dễ xảy ra\" cho chuyện không tốt - 층간 소음이 생기기 쉬워요. Nhớ 쉽다, 어렵다 là bất quy tắc ㅂ."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Ở Hàn, rác chia ít nhất ba loại - rác tái chế (분리수거, theo ngày quy định), rác thực phẩm (음식물 쓰레기, thùng riêng) và rác thường (cho vào 종량제 봉투 mua ở cửa hàng). Vứt sai có thể bị phạt, nên khi mới chuyển đến bạn nên hỏi 집주인 và 알아 두세요. Tiếng ồn giữa các tầng cũng là chuyện nhạy cảm - buổi tối nên đi nhẹ, tránh kéo bàn ghế."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Nhấn mạnh việc dọn đã xong và phòng đang sạch sẵn."
+          },
+          "target": "손님이 오기 전에 방을 청소해 놓았어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Trước khi khách đến, tôi đã dọn phòng sẵn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "두다 - lưu lại để sau này cần thì dùng."
+          },
+          "target": "이사하기 전에 집주인 전화번호를 저장해 두세요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Trước khi chuyển đến, bạn hãy lưu sẵn số điện thoại của chủ nhà."
+          },
+          "type": "example"
+        },
+        {
+          "target": "우리 아파트는 역에서 가까워서 찾기 쉬워요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Chung cư nhà tôi gần ga nên dễ tìm."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "-기 쉽다 với nghĩa \"dễ xảy ra\" chuyện không tốt."
+          },
+          "target": "오래된 건물은 층간 소음이 생기기 쉬워요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Toà nhà cũ dễ xảy ra tiếng ồn giữa các tầng."
+          },
+          "type": "example"
+        },
+        {
+          "target": "음식물 쓰레기는 따로 버리고 일반 쓰레기는 종량제 봉투에 넣어서 버려요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Rác thực phẩm vứt riêng, còn rác thường thì cho vào túi rác quy định rồi vứt."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "-아/어 놓다 cần tân ngữ với 을/를 vì có người làm hành động. Nếu chỉ muốn nói \"cửa đang mở\", dùng 문이 열려 있어요."
+          },
+          "right": "문을 열어 놓았어요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "문이 열어 놓았어요."
+        },
+        {
+          "note": {
+            "vi": "쉽다 và 어렵다 là bất quy tắc ㅂ - ㅂ đổi thành 우 trước 어요 → 쉬워요, 어려워요."
+          },
+          "right": "이 집은 찾기 쉬워요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "이 집은 찾기 쉽어요."
+        },
+        {
+          "note": {
+            "vi": "Người Việt hay dùng 놓다 cho mọi việc \"làm sẵn\". Với ghi nhớ, biết trước để dùng sau này, người Hàn gần như luôn dùng 두다 - 기억해 두다, 알아 두다."
+          },
+          "right": "쓰레기 버리는 날을 꼭 기억해 두세요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "쓰레기 버리는 날을 꼭 기억해 놓으세요."
+        },
+        {
+          "points": [
+            {
+              "vi": "V-아/어 놓다 - làm xong và để sẵn (열어 놓다, 청소해 놓다; khẩu ngữ 놨어요)."
+            },
+            {
+              "vi": "V-아/어 두다 - làm sẵn và giữ lại dùng sau (저장해 두다, 알아 두다, 기억해 두다)."
+            },
+            {
+              "vi": "V-기 쉽다 / 어렵다 - dễ / khó làm…; -기 쉽다 còn là \"dễ xảy ra\"; chia 쉬워요, 어려워요."
+            },
+            {
+              "vi": "분리수거 · 음식물 쓰레기 · 종량제 봉투 · 쓰레기를 버리다."
+            },
+            {
+              "vi": "층간 소음 · 이웃 · 시끄럽다 (시끄러워요) · 풀옵션."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "728f24aedddadb3e3465202c96d3ff6631a068ff23a25a57c68d1a086c6d8da3",
+      "estimated_minutes": 20,
+      "id": "4821279e-9770-5ba6-9636-9e47c6c1b0e7",
+      "is_demo": true,
+      "key": "ko:lesson:apartment-life",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "objectives": [
+        {
+          "vi": "Nói việc làm sẵn để chuẩn bị bằng -아/어 놓다 và -아/어 두다, phân biệt sắc thái của hai cấu trúc."
+        },
+        {
+          "vi": "Nói \"dễ/khó làm…\" và \"dễ xảy ra…\" bằng V-기 쉽다 / 어렵다."
+        },
+        {
+          "vi": "Hiểu quy định đổ rác (분리수거, 음식물 쓰레기, 종량제 봉투) và chuyện tiếng ồn giữa các tầng (층간 소음)."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Sống ở chung cư - -아/어 놓다, -아/어 두다, -기 쉽다"
+      },
+      "unit_id": "99ddd70a-d230-5932-abbf-4971421cd9be"
     },
     {
       "body": [
@@ -254785,6 +268317,168 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn khuyên được bạn bè và cấp trên một cách phù hợp (\"bạn nên nghỉ ngơi\", \"sao bạn không đi khám?\"), và giải thích việc mình làm vì lo lắng (\"vì sợ muộn nên tôi đi taxi\")."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "V-는 게 좋겠다 là lời khuyên nhẹ nhàng, lịch sự - \"bạn nên… thì hơn\": 푹 쉬는 게 좋겠어요. Phủ định: V-지 않는 게 좋겠어요 (không nên…). Với người lớn tuổi, cấp trên thêm kính ngữ - 쉬시는 게 좋겠어요."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "V-지 그래요? là \"sao bạn không… đi?\" - gợi ý thân mật, chỉ dùng với bạn bè hoặc người nhỏ tuổi hơn. Dạng quá khứ -지 그랬어요? nghĩa là \"lẽ ra bạn nên…\", có chút trách."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "-(으)ㄹ까 봐(서) là \"vì sợ / lo là…\": vế trước là điều KHÔNG mong muốn, vế sau là việc làm để phòng hoặc 걱정이에요. -(으)ㄹ 정도로 là \"đến mức…\": 잠을 못 잘 정도로 시끄러워요."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Người Việt hay dịch \"sợ là, lo là\" chính xác nhưng lại dùng -(으)ㄹ까 봐 cho điều mình mong (\"vì muốn đỗ nên…\" thành 합격할까 봐) - câu đó lại có nghĩa \"vì sợ đỗ\". Ngoài ra, vế sau của -(으)ㄹ까 봐 không là câu mệnh lệnh hay rủ rê (-(으)세요, -(으)ㅂ시다); muốn khuyên thì đổi sang -지 않도록 hoặc -(으)니까. Với -지 그래요?, dù có đuôi 요 vẫn không dùng với cấp trên vì mang sắc thái \"bảo ban\"."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Lời khuyên lịch sự, dùng được với hầu hết mọi người."
+          },
+          "target": "감기에 걸렸으면 오늘은 집에서 푹 쉬는 게 좋겠어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Nếu bị cảm thì hôm nay bạn nên nghỉ ngơi ở nhà thì hơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Gợi ý thân mật giữa bạn bè."
+          },
+          "target": "그렇게 걱정되면 병원에 가 보지 그래요?",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Lo thế thì sao bạn không đi khám thử đi?"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "떨어지다 (trượt) là điều không mong muốn - đúng cách dùng -(으)ㄹ까 봐."
+          },
+          "target": "시험에 떨어질까 봐 밤늦게까지 공부했어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Vì sợ thi trượt nên tôi đã học đến khuya."
+          },
+          "type": "example"
+        },
+        {
+          "target": "일이 너무 많아서 밥 먹을 시간도 없을 정도로 바빠요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Việc nhiều đến mức không có cả thời gian ăn cơm."
+          },
+          "type": "example"
+        },
+        {
+          "target": "무리하지 말고 커피를 조금씩 줄이는 게 좋겠어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Đừng gắng quá, bạn nên giảm cà phê từ từ thì hơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Câu sai nghĩa là \"vì sợ thi đỗ nên học chăm\" - vô lý. -(으)ㄹ까 봐 chỉ đi với điều bạn sợ xảy ra; điều mong muốn thì dùng -기 위해서 hoặc -(으)려고 (합격하기 위해서)."
+          },
+          "right": "시험에 떨어질까 봐 열심히 공부했어요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "시험에 합격할까 봐 열심히 공부했어요."
+        },
+        {
+          "note": {
+            "vi": "Vế sau của -(으)ㄹ까 봐 không là câu mệnh lệnh. Khi khuyên người khác, đổi sang -지 않도록 hoặc 늦을 수 있으니까."
+          },
+          "right": "늦지 않도록 택시를 타세요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "늦을까 봐 택시를 타세요."
+        },
+        {
+          "note": {
+            "vi": "-지 그래요? nghe như đang bảo ban nên không dùng với cấp trên, người lớn tuổi. Dùng -(으)시는 게 좋겠어요 để vừa khuyên vừa giữ lễ."
+          },
+          "right": "부장님, 병원에 가 보시는 게 좋겠어요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "부장님, 병원에 가 보지 그래요?"
+        },
+        {
+          "points": [
+            {
+              "vi": "V-는 게 좋겠어요 / V-지 않는 게 좋겠어요 - nên / không nên… (lịch sự); kính ngữ -(으)시는 게 좋겠어요."
+            },
+            {
+              "vi": "V-지 그래요? - sao không… đi? (thân mật); -지 그랬어요? - lẽ ra nên…."
+            },
+            {
+              "vi": "V/A-(으)ㄹ까 봐(서) - vì sợ điều không mong muốn; không dùng cho hy vọng, vế sau không là mệnh lệnh."
+            },
+            {
+              "vi": "V/A-(으)ㄹ 정도로 - đến mức…."
+            },
+            {
+              "vi": "무리하다 · 푹 쉬다 · 상담을 받다 · 걱정되다 (걱정돼요) · 줄이다 · 습관."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "1ba5054dd45dd259f970eb7fca7ad55208d3badbebb1b3515ee669b23cb1688a",
+      "estimated_minutes": 20,
+      "id": "7b838d09-0b26-575c-ab31-1d60b8564456",
+      "is_demo": true,
+      "key": "ko:lesson:giving-advice",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "objectives": [
+        {
+          "vi": "Khuyên lịch sự bằng V-는 게 좋겠다 và gợi ý thân mật bằng V-지 그래요?, chọn đúng theo người nghe."
+        },
+        {
+          "vi": "Nói việc làm vì lo sợ điều gì đó xảy ra bằng -(으)ㄹ까 봐(서), không dùng cho điều mong muốn."
+        },
+        {
+          "vi": "Diễn tả mức độ bằng -(으)ㄹ 정도로 (đến mức…)."
+        }
+      ],
+      "order_index": 4,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Lời khuyên và nỗi lo - -는 게 좋겠다, -지 그래요?, -(으)ㄹ까 봐"
+      },
+      "unit_id": "99ddd70a-d230-5932-abbf-4971421cd9be"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Sau bài này, bạn chào, tạm biệt, cảm ơn và xin lỗi bằng tiếng Hàn một cách lịch sự, đúng người đúng lúc."
           },
           "type": "objective"
@@ -255240,6 +268934,165 @@ select content_private.import_bundle($bundle${
         "vi": "Ôn tập: đọc và viết Hangul nâng cao"
       },
       "unit_id": "011df523-65c7-57ac-b043-74c94e80855a"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn kể được thói quen sức khoẻ của mình (\"tôi tập thể dục đều đặn\", \"tôi bị stress nên mất ngủ\") và đưa ra lời nhắc như \"hãy rửa tay để không bị cảm\"."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "A-게 biến tính từ thành trạng từ chỉ cách thức, giống \"một cách…\" trong tiếng Việt: 건강하다 → 건강하게 살다 (sống khoẻ mạnh), 맛있다 → 맛있게 드세요. Tiếng Việt đặt tính từ ngay sau động từ (\"ăn ngon\"), còn tiếng Hàn phải đổi sang -게 và đặt trước động từ."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "-도록 nghĩa là \"để cho…, sao cho…\": vế trước là kết quả bạn muốn, vế sau là việc làm để đạt kết quả đó. Rất hay dùng với phủ định -지 않도록 trong lời khuyên, thông báo - 감기에 걸리지 않도록 손을 씻으세요."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Phân biệt -게 và -도록: nói CÁCH làm (ăn ngon, sống khoẻ, dọn sạch) thì chỉ dùng -게. Nói MỤC ĐÍCH thì dùng -도록; trong văn nói -게 cũng thay được (늦지 않게 = 늦지 않도록)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Bạn đã gặp V-도록 하다 ở unit công việc (chỉ thị \"hãy cố…\"); ở đây -도록 đứng giữa câu, nối hai vế. Vế -도록 thường là trạng thái hay sự việc không hoàn toàn do mình điều khiển (잘 수 있도록, 걸리지 않도록), nên khác với -기 위해서 chỉ đi với hành động có chủ ý của cùng chủ ngữ. Văn viết, bài báo sức khoẻ, hướng dẫn công cộng rất chuộng -도록."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "건강하게 - cách sống; 규칙적으로 - trạng từ có sẵn, không cần -게."
+          },
+          "target": "건강하게 살려면 규칙적으로 운동하는 게 중요해요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Muốn sống khoẻ mạnh thì tập thể dục đều đặn là quan trọng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "-지 않도록 - để không…; rất hay gặp trong lời khuyên, thông báo."
+          },
+          "target": "감기에 걸리지 않도록 손을 자주 씻으세요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Hãy rửa tay thường xuyên để không bị cảm."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Cặp đối lập - 스트레스를 받다 (bị) ↔ 스트레스를 풀다 (giải toả)."
+          },
+          "target": "일이 많아서 스트레스를 받으면 저는 운동으로 스트레스를 풀어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Khi bị căng thẳng vì nhiều việc, tôi giải toả bằng cách tập thể dục."
+          },
+          "type": "example"
+        },
+        {
+          "target": "운동 부족이라서 살이 쪘어요. 그래서 다이어트를 시작했어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Vì thiếu vận động nên tôi tăng cân. Vì vậy tôi đã bắt đầu giảm cân."
+          },
+          "type": "example"
+        },
+        {
+          "target": "불면증이 있어서 밤에 푹 잘 수 있도록 커피를 안 마셔요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Tôi bị mất ngủ nên không uống cà phê để ban đêm ngủ được ngon."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Người Việt hay dịch \"sống khoẻ\" bằng cách đặt nguyên tính từ cạnh động từ. Trước động từ, tính từ phải đổi sang dạng -게; dạng -(으)ㄴ chỉ đứng trước danh từ (건강한 사람)."
+          },
+          "right": "건강하게 살고 싶어요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "건강한 살고 싶어요."
+        },
+        {
+          "note": {
+            "vi": "\"Ăn ngon\" là cách ăn, nên dùng -게. -도록 chỉ mục đích hay kết quả mong muốn, không thay cho trạng từ chỉ cách thức."
+          },
+          "right": "맛있게 드세요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "맛있도록 드세요."
+        },
+        {
+          "note": {
+            "vi": "받다 là \"bị, nhận\" stress; \"giải toả\" là 풀다. Đừng dịch từng chữ \"xả stress\" thành 받다."
+          },
+          "right": "요즘 스트레스가 많아서 스트레스를 풀고 싶어요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "요즘 스트레스가 많아서 스트레스를 받고 싶어요."
+        },
+        {
+          "points": [
+            {
+              "vi": "A-게 + động từ - cách thức (건강하게, 맛있게, 깨끗하게); dạng -(으)ㄴ chỉ đứng trước danh từ."
+            },
+            {
+              "vi": "V/A-도록 - để cho, sao cho; -지 않도록 = để không…; nói mục đích trong văn nói có thể dùng -게."
+            },
+            {
+              "vi": "스트레스를 받다 ↔ 스트레스를 풀다 · 불면증 · 운동 부족 · 살이 찌다/빠지다."
+            },
+            {
+              "vi": "건강 검진을 받다 · 영양제를 먹다 · 다이어트 중이에요 · 규칙적으로."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "c240793222fc601fe9abf1190ab6ba76b0a3a3404469166400b2d5ce2a998d52",
+      "estimated_minutes": 20,
+      "id": "a13d5d65-c7d8-5428-a3ce-185d56b68cc7",
+      "is_demo": true,
+      "key": "ko:lesson:health-habits",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "objectives": [
+        {
+          "vi": "Biến tính từ thành trạng từ bằng A-게 để nói cách làm việc gì (건강하게, 맛있게)."
+        },
+        {
+          "vi": "Nói mục đích, kết quả mong muốn bằng -도록 (để cho…, sao cho…), đặc biệt -지 않도록."
+        },
+        {
+          "vi": "Nói về sức khoẻ và lối sống - 건강 검진, 스트레스, 운동 부족, 불면증, 다이어트."
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Thói quen sức khoẻ - A-게 và -도록"
+      },
+      "unit_id": "99ddd70a-d230-5932-abbf-4971421cd9be"
     },
     {
       "body": [
@@ -256464,6 +270317,311 @@ select content_private.import_bundle($bundle${
         "vi": "Ở bệnh viện và hiệu thuốc - nói chỗ đau, việc phải làm"
       },
       "unit_id": "dabb5a19-90cd-5eef-af61-636e85ec84c0"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Bài ôn gồm hai văn bản - cuộc nói chuyện của Tuấn, du học sinh Việt Nam, ở văn phòng môi giới, và một bài báo tư vấn về căng thẳng và mất ngủ. Bạn sẽ dùng lại mọi cấu trúc của unit để hiểu và trả lời."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Hội thoại ở 부동산 dùng 해요체. Hãy chú ý mẫu giá \"보증금 …에 월세 …\", các câu nhận xét -(으)ㄴ/는 편이에요, -(으)ㄹ 만해요, và lời dặn -아/어 두세요."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Bài báo sức khoẻ viết theo lối văn viết -다 (많다, 좋다, 있다). Lời khuyên trong văn viết thường là -는 것이 좋다, -지 않도록 …, còn nỗi lo là -(으)ㄹ까 봐."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Khi đọc thông tin thuê nhà, hãy tìm ngay ba con số - 보증금, 월세 (nếu là 월세), 관리비 - rồi hỏi thêm 중개 수수료. Khi đọc bài báo, hãy để ý câu mở đầu nêu vấn đề (-(으)ㄹ 정도로…), câu nêu nguyên nhân (-기 쉽다), rồi các lời khuyên (-도록, -는 것이 좋다). Đừng trộn 해요체 và -다 trong cùng một văn bản."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Tìm lại - 월세로 하고 싶어요, 살 만해요, 조용한 편이에요, 생기기 쉬워요, 보는 게 좋겠어요, 알아 두세요."
+          },
+          "target": "직원: 어서 오세요. 어떤 집을 찾으세요?\n투안: 학교 근처 원룸을 찾고 있어요. 전세는 보증금이 너무 비싸서 월세로 하고 싶어요.\n직원: 마침 좋은 매물이 있어요. 보증금 500만 원에 월세 55만 원이고, 관리비는 6만 원이에요. 풀옵션이라서 바로 살 만해요.\n투안: 이 동네는 조용한 편이에요?\n직원: 네, 조용한 편이에요. 그런데 오래된 건물이라서 층간 소음이 생기기 쉬워요.\n투안: 그럼 계약하기 전에 집을 직접 보는 게 좋겠어요. 중개 수수료는 얼마예요?\n직원: 계약할 때 알려 드릴게요. 그리고 쓰레기 버리는 날도 미리 알아 두세요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Nhân viên: Mời vào. Bạn tìm nhà thế nào?\nTuấn: Tôi đang tìm phòng studio gần trường. Thuê jeonse thì tiền cọc đắt quá nên tôi muốn thuê trả tháng.\nNhân viên: Vừa hay có một căn tốt. Cọc 5 triệu won, tiền tháng 550 nghìn won, phí quản lý 60 nghìn won. Đầy đủ nội thất nên vào ở được ngay.\nTuấn: Khu này có yên tĩnh không?\nNhân viên: Vâng, thuộc loại yên tĩnh. Nhưng toà nhà cũ nên dễ có tiếng ồn giữa các tầng.\nTuấn: Vậy trước khi ký hợp đồng tôi nên tự xem nhà thì hơn. Phí môi giới là bao nhiêu ạ?\nNhân viên: Khi ký tôi sẽ báo. Và bạn nhớ biết trước ngày đổ rác nhé."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Văn viết -다 - 많다, 쉽다, 좋다, 먹어야 한다. Lời khuyên dạng -는 것이 좋다 thay cho -는 게 좋겠어요."
+          },
+          "target": "[건강 칼럼] 스트레스와 불면증\n요즘 잠을 못 잘 정도로 스트레스를 받는 직장인이 많다. 스트레스를 많이 받으면 불면증이 생기기 쉽다. 밤에 푹 자려면 규칙적으로 운동하는 것이 좋다. 또한 늦게 잠들지 않도록 자기 전에는 휴대폰을 보지 않는 것이 좋다. 살이 찔까 봐 밥을 거르는 사람도 있는데, 이것은 오히려 건강에 좋지 않다. 영양제만 믿지 말고 음식을 골고루 먹어야 한다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "[Chuyên mục sức khoẻ] Căng thẳng và mất ngủ\nDạo này có nhiều người đi làm bị căng thẳng đến mức không ngủ được. Khi căng thẳng nhiều thì dễ bị mất ngủ. Muốn ngủ ngon vào ban đêm thì nên tập thể dục đều đặn. Ngoài ra, để không ngủ muộn, tốt nhất là không xem điện thoại trước khi ngủ. Có người vì sợ tăng cân mà bỏ bữa, nhưng việc này lại không tốt cho sức khoẻ. Không nên chỉ tin vào thực phẩm bổ sung mà phải ăn uống đủ chất."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Gợi ý thân mật với bạn bè."
+          },
+          "target": "그렇게 시끄러우면 관리실에 이야기해 보지 그래요?",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Ồn như thế thì sao bạn không thử nói với ban quản lý?"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Người Việt hay coi 전세 là \"thuê nhà\" nói chung. 전세 không có tiền tháng; có trả hằng tháng thì là 월세."
+          },
+          "right": "월세라서 매달 돈을 내야 해요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "전세라서 매달 월세를 내야 해요."
+        },
+        {
+          "note": {
+            "vi": "-(으)ㄹ까 봐 không dùng cho điều mong muốn. Điều bạn sợ là \"lỡ mất căn nhà tốt\" (놓치다); nếu muốn nói mục đích thì dùng 좋은 집을 찾으려고."
+          },
+          "right": "좋은 집을 놓칠까 봐 부동산에 일찍 갔어요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "좋은 집을 찾을까 봐 부동산에 일찍 갔어요."
+        },
+        {
+          "note": {
+            "vi": "\"Dọn sạch\" là cách dọn, dùng -게. -도록 dành cho mục đích, kết quả mong muốn (손님이 편하게 쉴 수 있도록)."
+          },
+          "right": "방을 깨끗하게 청소해 놓았어요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "방을 깨끗하도록 청소해 놓았어요."
+        },
+        {
+          "points": [
+            {
+              "vi": "Thuê nhà - 보증금 …에 월세 … · 전세 (không có tiền tháng) · 관리비 · 매물 · 중개 수수료 · 계약하다."
+            },
+            {
+              "vi": "Nhận xét - -(으)ㄴ/는 편이다 · -(으)ㄹ 만하다 · -기 쉽다/어렵다."
+            },
+            {
+              "vi": "Chuẩn bị - -아/어 놓다 (làm sẵn) · -아/어 두다 (giữ lại dùng sau, 알아 두다)."
+            },
+            {
+              "vi": "Lời khuyên - -는 게 좋겠어요 (lịch sự) · -지 그래요? (thân mật) · văn viết -는 것이 좋다."
+            },
+            {
+              "vi": "Mục đích & lo lắng - A-게 (cách thức) · -도록 (để cho) · -(으)ㄹ까 봐 (vì sợ) · -(으)ㄹ 정도로 (đến mức)."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "23a9aa5318ef5ae58304f543ba672452f9ade4dc30d369a2fdd4f14b7399aa68",
+      "estimated_minutes": 25,
+      "id": "d65645f8-4af3-5d7f-aeae-76195950cc6c",
+      "is_demo": true,
+      "key": "ko:lesson:housing-advice-review",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "objectives": [
+        {
+          "vi": "Hiểu một cuộc hội thoại thuê nhà ở 부동산 (해요체) - giá cọc, tiền tháng, phí quản lý, phí môi giới."
+        },
+        {
+          "vi": "Đọc hiểu một bài báo tư vấn sức khoẻ viết theo lối văn viết -다."
+        },
+        {
+          "vi": "Dùng lại toàn bộ cấu trúc của unit - -(으)ㄴ/는 편이다, -(으)ㄹ 만하다, -아/어 놓다/두다, -기 쉽다, -게, -도록, -는 게 좋겠다, -지 그래요?, -(으)ㄹ까 봐, -(으)ㄹ 정도로."
+        }
+      ],
+      "order_index": 5,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "reading",
+        "listening",
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Ôn tập - Ở văn phòng môi giới & mục tư vấn sức khoẻ"
+      },
+      "unit_id": "99ddd70a-d230-5932-abbf-4971421cd9be"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn có thể vào một văn phòng môi giới (부동산), hỏi về tiền cọc, tiền thuê, phí quản lý và nhận xét một căn phòng như \"khá rẻ\", \"cũng ở được\"."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Ở Hàn có hai kiểu thuê chính. 월세 giống thuê nhà ở Việt Nam - đặt một khoản cọc (보증금) rồi trả tiền tháng; 전세 thì đóng một khoản cọc rất lớn (thường bằng nửa giá nhà trở lên) và không trả tiền tháng nào."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "-(으)ㄴ/는 편이다 nghĩa là \"thuộc loại…, khá là…\", giúp lời nhận xét mềm và chừng mực hơn. Động từ: -는 편이다 (많이 먹는 편이에요); tính từ: -(으)ㄴ 편이다 (싼 편이에요, 조용한 편이에요)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "V-(으)ㄹ 만하다 nghĩa là \"đáng để…, cũng… được\": 살 만해요 (ở được), 믿을 만해요 (đáng tin). Chỉ gắn vào động từ; động từ gốc ㄹ như 살다 giữ một ㄹ - 살 만하다."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Với 전세, chủ nhà giữ khoản cọc lớn trong suốt hợp đồng (thường 2 năm) để đầu tư hoặc gửi ngân hàng, rồi trả lại đủ khi bạn chuyển đi; vì vậy người thuê không trả tiền tháng. Sinh viên nước ngoài thường thuê 월세 vì không có sẵn khoản tiền lớn. Dù thuê kiểu nào, bạn vẫn trả 관리비 riêng và nên ký hợp đồng (계약하다) qua 부동산 để được bảo vệ."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Cách nói giá nhà ở Hàn - \"보증금 … 에 월세 …\"."
+          },
+          "target": "보증금 500만 원에 월세 50만 원이에요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Cọc 5 triệu won, tiền thuê 500 nghìn won mỗi tháng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "비싸다 là tính từ → 비싼 편이에요."
+          },
+          "target": "이 동네는 학교에서 가까워서 월세가 비싼 편이에요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Khu này gần trường nên tiền thuê khá đắt."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Động từ phủ định -지 않다 vẫn chia như động từ → 않는 편이에요."
+          },
+          "target": "저는 집을 자주 옮기지 않는 편이에요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Tôi thuộc kiểu ít khi chuyển chỗ ở."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "살 만해요 là lời đánh giá \"đủ tốt\", không phải khen hết lời."
+          },
+          "target": "이 원룸은 좀 오래됐지만 깨끗해서 살 만해요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Phòng này hơi cũ nhưng sạch nên cũng ở được."
+          },
+          "type": "example"
+        },
+        {
+          "target": "다음 달에 회사 근처로 이사해서 지금 부동산에서 계약해요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Tháng sau tôi chuyển đến gần công ty nên giờ đang ký hợp đồng ở văn phòng môi giới."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Người Việt hay nghĩ 전세 là \"thuê nguyên căn\" hoặc là \"thuê nhà\" nói chung. Có tiền tháng thì luôn là 월세; 전세 không có tiền tháng."
+          },
+          "right": "매달 50만 원씩 내는 월세에 살아요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "매달 50만 원씩 내는 전세에 살아요."
+        },
+        {
+          "note": {
+            "vi": "싸다 là tính từ nên dùng -(으)ㄴ 편이다. Dạng -는 편이다 chỉ dành cho động từ (자주 먹는 편이에요)."
+          },
+          "right": "이 방은 월세가 싼 편이에요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "이 방은 월세가 싸는 편이에요."
+        },
+        {
+          "note": {
+            "vi": "Tiếng Việt nói \"chuyển nhà\", nhưng 이사 đã có nghĩa là chuyển chỗ ở, thêm 집을 nghe thừa và sai. Muốn nói nơi đến - 새 집으로 이사해요."
+          },
+          "right": "다음 주에 이사해요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "다음 주에 집을 이사해요."
+        },
+        {
+          "points": [
+            {
+              "vi": "월세 = cọc nhỏ + tiền tháng; 전세 = cọc rất lớn, không tiền tháng, hết hợp đồng nhận lại cọc."
+            },
+            {
+              "vi": "보증금 (tiền cọc) · 관리비 (phí quản lý) · 집주인 (chủ nhà) · 부동산 (môi giới) · 계약하다 (ký hợp đồng)."
+            },
+            {
+              "vi": "V-는 편이다 · A-(으)ㄴ 편이다 - thuộc loại…, khá…."
+            },
+            {
+              "vi": "V-(으)ㄹ 만하다 - đáng…, cũng… được (살 만하다, 믿을 만하다)."
+            },
+            {
+              "vi": "이사하다 / 이사 가다 - không thêm 집을; nơi đến dùng (으)로."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "c7785fe2e70a3ed217c90dac2834414470f5270be79e85d8aa3b4fbbcc5365c8",
+      "estimated_minutes": 20,
+      "id": "6ff56e8f-1169-558f-8fde-e4d6dbe1e0b8",
+      "is_demo": true,
+      "key": "ko:lesson:housing-search",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "objectives": [
+        {
+          "vi": "Hiểu và phân biệt hai kiểu thuê nhà ở Hàn Quốc - 월세 và 전세 - cùng các khoản 보증금, 관리비."
+        },
+        {
+          "vi": "Nhận xét có chừng mực bằng -(으)ㄴ/는 편이다 (\"thuộc loại…, khá…\")."
+        },
+        {
+          "vi": "Đánh giá một căn nhà \"đáng / ở được\" bằng V-(으)ㄹ 만하다."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "vocabulary",
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Tìm nhà - 월세, 전세 và -(으)ㄴ/는 편이다"
+      },
+      "unit_id": "99ddd70a-d230-5932-abbf-4971421cd9be"
     },
     {
       "body": [
@@ -263758,6 +277916,21 @@ select content_private.import_bundle($bundle${
       }
     },
     {
+      "content_hash": "9cffafd182eb3cb25d0dab47e494951ca4508ad8ce0371561a5825e0222be4dd",
+      "id": "e1573e84-e3d9-507f-b099-2bbebbef91d6",
+      "is_demo": true,
+      "key": "en:unit:free-time-weather",
+      "order_index": 7,
+      "program_id": "71c965e2-2cc8-54bf-8c0e-0a00bae9b06b",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Thời gian rảnh, thời tiết & màu sắc"
+      }
+    },
+    {
       "content_hash": "f3d0bc33471973993d07fb5289678830b5c8eab13efec190913ad248480d5035",
       "id": "d0a536c4-6a29-5fc5-b0e7-0699945981fa",
       "is_demo": false,
@@ -264160,6 +278333,21 @@ select content_private.import_bundle($bundle${
       "status": "published",
       "title": {
         "vi": "Sở thích, thời tiết & hẹn gặp"
+      }
+    },
+    {
+      "content_hash": "f3d08ac7eca2231057f9406be584abeb42dbfa73293b80323b6d09ee232bd614",
+      "id": "99ddd70a-d230-5932-abbf-4971421cd9be",
+      "is_demo": true,
+      "key": "ko:unit:housing-advice",
+      "order_index": 5,
+      "program_id": "1eefc732-9a9f-5b37-847c-3799985aafca",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Nhà ở, sức khoẻ & lời khuyên"
       }
     },
     {

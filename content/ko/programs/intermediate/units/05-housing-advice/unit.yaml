@@ -1,0 +1,10 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:unit:housing-advice
+order_index: 5
+title:
+  vi: Nhà ở, sức khoẻ & lời khuyên

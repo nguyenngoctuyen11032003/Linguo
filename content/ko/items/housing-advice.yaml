@@ -1,0 +1,992 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Nhà ở, sức khoẻ & lời khuyên" (TOPIK 3). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+# Key dùng tiền tố ha- để không trùng với unit khác viết song song. V-도록 하다 (chỉ thị) đã có ở unit công việc; ở đây là -도록 "để cho".
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- bài 1: tìm nhà ----------------
+  - key: ko:item:ha-gram-neun-pyeonida
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: -(으)ㄴ/는 편이다
+      romanization: -(eu)n/neun pyeonida
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "thuộc loại…, khá là…, tương đối… (nhận xét có chừng mực). Động từ: -는 편이다; tính từ: -(으)ㄴ 편이다."
+      examples:
+        - target: 이 동네는 월세가 싼 편이에요.
+          translation:
+            vi: Khu này tiền thuê hằng tháng thuộc loại rẻ.
+        - target: 저는 아침을 많이 먹는 편이에요.
+          translation:
+            vi: Tôi thuộc kiểu ăn sáng nhiều.
+      pronunciation_note:
+        vi: 편이에요 đọc nối [펴니에요]; 싼 편이에요 [싼 펴니에요].
+      confusion:
+        vi: Tính từ dùng -(으)ㄴ (싼 편, 조용한 편), không dùng -는 như động từ. Không dùng với sự thật tuyệt đối hay con số chính xác (키가 180cm인 편이에요 là sai).
+
+  - key: ko:item:ha-gram-eul-manhada
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-(으)ㄹ 만하다
+      romanization: -(eu)l manhada
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: đáng để…, cũng được (đủ tốt để làm). Gắn vào động từ.
+      examples:
+        - target: 이 원룸은 좁지만 살 만해요.
+          translation:
+            vi: Phòng này tuy chật nhưng cũng ở được.
+        - target: 그 부동산은 믿을 만해요.
+          translation:
+            vi: Văn phòng môi giới đó đáng tin.
+      pronunciation_note:
+        vi: 살 만해요 đọc [살 만해요]; 믿을 만해요 đọc nối [미들 만해요].
+      confusion:
+        vi: Động từ gốc ㄹ (살다, 만들다) chỉ giữ một ㄹ - 살 만하다, không viết 살을 만하다.
+
+  - key: ko:item:ha-isahada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 이사하다
+      romanization: isahada
+      pos: động từ
+    back:
+      meaning:
+        vi: chuyển nhà, dọn nhà
+      examples:
+        - target: 다음 달에 학교 근처로 이사해요.
+          translation:
+            vi: Tháng sau tôi chuyển nhà đến gần trường.
+      pronunciation_note:
+        vi: Đọc [이사하다], ㅎ giữa hai nguyên âm thường đọc rất nhẹ.
+      confusion:
+        vi: Không nói 집을 이사해요 - "nhà" đã nằm trong nghĩa của 이사. Nơi đến dùng (으)로 - 새 집으로 이사해요.
+
+  - key: ko:item:ha-wonrum
+    type: vocab
+    level: topik3
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 원룸
+      romanization: wollum
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng studio (một phòng có bếp nhỏ và nhà vệ sinh riêng)
+      examples:
+        - target: 혼자 살아서 원룸을 찾고 있어요.
+          translation:
+            vi: Tôi sống một mình nên đang tìm phòng studio.
+      pronunciation_note:
+        vi: Đọc [월룸] - ㄴ gặp ㄹ biến thành ㄹ.
+      confusion:
+        vi: Từ mượn "one room", chỉ loại nhà một phòng, không có nghĩa "một căn phòng" bất kỳ.
+
+  - key: ko:item:ha-wolse
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 월세
+      romanization: wolse
+      pos: danh từ
+    back:
+      meaning:
+        vi: thuê nhà trả tiền hằng tháng; tiền thuê hằng tháng (kèm một khoản cọc nhỏ)
+      examples:
+        - target: 보증금 500만 원에 월세 50만 원이에요.
+          translation:
+            vi: Cọc 5 triệu won, tiền thuê 500 nghìn won mỗi tháng.
+      pronunciation_note:
+        vi: Thường đọc [월쎄] - ㅅ sau ㄹ căng lên.
+      confusion:
+        vi: 월세 giống kiểu thuê nhà ở Việt Nam (trả hằng tháng). 전세 thì khác hẳn - đóng một khoản cọc rất lớn và không trả tiền tháng.
+
+  - key: ko:item:ha-jeonse
+    type: vocab
+    level: topik3
+    difficulty: 4
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 전세
+      romanization: jeonse
+      pos: danh từ
+    back:
+      meaning:
+        vi: thuê nhà kiểu jeonse - đóng một khoản cọc rất lớn một lần, không trả tiền tháng, hết hợp đồng được nhận lại toàn bộ cọc
+      examples:
+        - target: 전세는 월세가 없지만 보증금이 아주 비싸요.
+          translation:
+            vi: Thuê jeonse thì không có tiền tháng nhưng tiền cọc rất đắt.
+      pronunciation_note:
+        vi: Đọc [전세].
+      confusion:
+        vi: 전세 không có nghĩa "thuê nguyên căn". Chủ nhà kiếm lời nhờ dùng khoản cọc lớn trong thời gian hợp đồng (thường 2 năm), nên người thuê không trả tiền tháng.
+
+  - key: ko:item:ha-bojeunggeum
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 보증금
+      romanization: bojeunggeum
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền đặt cọc (được trả lại khi hết hợp đồng)
+      examples:
+        - target: 이사 갈 때 보증금을 돌려받아요.
+          translation:
+            vi: Khi chuyển đi thì được nhận lại tiền cọc.
+      pronunciation_note:
+        vi: Đọc [보증금], ㅡ của 증 và 금 đọc là "ư", không phải "u".
+      confusion:
+        vi: Khác với 계약금 (tiền đặt trước khi ký) và 월세 (tiền tháng, không được trả lại).
+
+  - key: ko:item:ha-jipjuin
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 집주인
+      romanization: jipjuin
+      pos: danh từ
+    back:
+      meaning:
+        vi: chủ nhà (người cho thuê)
+      examples:
+        - target: 보일러가 고장 나서 집주인에게 연락했어요.
+          translation:
+            vi: Lò sưởi bị hỏng nên tôi đã liên lạc với chủ nhà.
+      pronunciation_note:
+        vi: Đọc [집쭈인] - ㅈ sau patchim ㅂ căng lên.
+      confusion:
+        vi: Người thuê nhà là 세입자; đừng gọi chủ nhà là 주인님 - nghe như "ông chủ" của người giúp việc.
+
+  - key: ko:item:ha-gwallibi
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 관리비
+      romanization: gwallibi
+      pos: danh từ
+    back:
+      meaning:
+        vi: phí quản lý (điện nước chung, dọn dẹp, bảo vệ của toà nhà)
+      examples:
+        - target: 관리비는 한 달에 7만 원 정도예요.
+          translation:
+            vi: Phí quản lý khoảng 70 nghìn won một tháng.
+      pronunciation_note:
+        vi: Đọc [괄리비] - ㄴ gặp ㄹ biến thành ㄹ.
+      confusion:
+        vi: 관리비 trả thêm ngoài 월세. Khi xem nhà nên hỏi 관리비에 뭐가 포함돼요? (phí quản lý gồm những gì?).
+
+  - key: ko:item:ha-budongsan
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 부동산
+      romanization: budongsan
+      pos: danh từ
+    back:
+      meaning:
+        vi: bất động sản; (khẩu ngữ) văn phòng môi giới nhà đất
+      examples:
+        - target: 학교 앞 부동산에 가서 방을 알아봤어요.
+          translation:
+            vi: Tôi đến văn phòng môi giới trước trường để tìm hiểu phòng.
+      pronunciation_note:
+        vi: Đọc [부동산]; 동 có patchim ㅇ, đọc "đông" mũi.
+      confusion:
+        vi: Cùng gốc Hán Việt "bất động sản". Tên chính thức của văn phòng là 공인중개사 사무소, nhưng người Hàn hay gọi tắt là 부동산.
+
+  - key: ko:item:ha-gyeyakada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 계약하다
+      romanization: gyeyakada
+      pos: động từ
+    back:
+      meaning:
+        vi: ký hợp đồng
+      examples:
+        - target: 2년 동안 계약했어요.
+          translation:
+            vi: Tôi đã ký hợp đồng 2 năm.
+      pronunciation_note:
+        vi: Đọc [게야카다] - ㄱ gặp ㅎ thành ㅋ bật hơi; ㅖ sau ㄱ thường đọc như ㅔ.
+      confusion:
+        vi: Hán Việt "khế ước". Ký hợp đồng là 계약하다 hoặc 계약서를 쓰다, không nói 계약을 사인해요.
+
+  # ---------------- bài 2: sống ở chung cư ----------------
+  - key: ko:item:ha-gram-a-nota
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-아/어 놓다
+      romanization: -a/eo nota
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: làm sẵn… và để nguyên trạng thái đó (nhấn mạnh việc đã làm xong để chuẩn bị)
+      examples:
+        - target: 손님이 오기 전에 창문을 열어 놓았어요.
+          translation:
+            vi: Trước khi khách đến, tôi đã mở sẵn cửa sổ.
+        - target: 쓰레기를 문 앞에 내놓아 주세요.
+          translation:
+            vi: Hãy mang rác để sẵn trước cửa.
+      pronunciation_note:
+        vi: 놓다 đọc [노타]; 놓아요 đọc [노아요] - ㅎ câm trước nguyên âm. Khẩu ngữ hay rút gọn 놓았어요 thành 놨어요 [놛써요].
+      confusion:
+        vi: Cần tân ngữ với 을/를 - 문을 열어 놓았어요. Muốn nói cửa đang mở (không nói ai mở) thì dùng 문이 열려 있어요.
+
+  - key: ko:item:ha-gram-a-duda
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-아/어 두다
+      romanization: -a/eo duda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: làm sẵn… rồi giữ lại để dùng về sau (nhấn mạnh sự lưu giữ, chuẩn bị lâu dài)
+      examples:
+        - target: 이 번호를 꼭 저장해 두세요.
+          translation:
+            vi: Bạn nhớ lưu số này lại nhé.
+        - target: 분리수거 날짜를 알아 두면 좋아요.
+          translation:
+            vi: Nên biết trước ngày đổ rác phân loại.
+      pronunciation_note:
+        vi: 알아 두세요 đọc nối [아라 두세요].
+      confusion:
+        vi: Thường thay được cho -아/어 놓다, nhưng các cụm "ghi nhớ, biết trước" như 알아 두다, 기억해 두다 dùng 두다 tự nhiên hơn hẳn.
+
+  - key: ko:item:ha-gram-gi-swipda
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-기 쉽다 / 어렵다
+      romanization: -gi swipda / eoryeopda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "dễ/khó làm…; -기 쉽다 còn có nghĩa \"dễ bị…, dễ xảy ra…\" (thường là chuyện không tốt)."
+      examples:
+        - target: 이 집은 역에서 가까워서 찾기 쉬워요.
+          translation:
+            vi: Nhà này gần ga nên dễ tìm.
+        - target: 오래된 아파트는 층간 소음이 생기기 쉬워요.
+          translation:
+            vi: Chung cư cũ dễ xảy ra tiếng ồn giữa các tầng.
+      pronunciation_note:
+        vi: 쉬워요 [쉬워요], 어려워요 [어려워요] - bất quy tắc ㅂ.
+      confusion:
+        vi: 쉽다, 어렵다 là bất quy tắc ㅂ - viết 쉬워요, 어려워요, không viết 쉽어요.
+
+  - key: ko:item:ha-cheunggan-soeum
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 층간 소음
+      romanization: cheunggan soeum
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiếng ồn giữa các tầng (tiếng bước chân, đồ vật từ tầng trên vọng xuống)
+      examples:
+        - target: 위층 층간 소음 때문에 잠을 못 자요.
+          translation:
+            vi: Vì tiếng ồn từ tầng trên mà tôi không ngủ được.
+      pronunciation_note:
+        vi: Đọc [층간 소음]; 층 có ㅡ đọc "ư".
+      confusion:
+        vi: Ở Hàn đây là vấn đề lớn giữa hàng xóm chung cư - nên đi dép trong nhà và tránh kéo ghế buổi tối.
+
+  - key: ko:item:ha-bunrisugeo
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 분리수거
+      romanization: bullisugeo
+      pos: danh từ
+    back:
+      meaning:
+        vi: phân loại rác tái chế (giấy, nhựa, chai lọ, lon…)
+      examples:
+        - target: 우리 아파트는 수요일에 분리수거를 해요.
+          translation:
+            vi: Chung cư nhà tôi phân loại rác vào thứ Tư.
+      pronunciation_note:
+        vi: Đọc [불리수거] - ㄴ gặp ㄹ biến thành ㄹ.
+      confusion:
+        vi: Không phân loại đúng có thể bị phạt tiền. Động từ đi kèm là 분리수거를 하다 hoặc 분리해서 버리다.
+
+  - key: ko:item:ha-iut
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 이웃
+      romanization: iut
+      pos: danh từ
+    back:
+      meaning:
+        vi: hàng xóm
+      examples:
+        - target: 이사 와서 이웃에게 떡을 돌렸어요.
+          translation:
+            vi: Chuyển đến xong, tôi đi mời hàng xóm bánh tteok.
+      pronunciation_note:
+        vi: Một mình đọc [이욷]; khi nối nguyên âm đọc [이우시], [이우세게].
+      confusion:
+        vi: 이웃 là danh từ chung; hàng xóm ngay bên cạnh có thể nói 옆집 사람, tầng trên 위층 사람.
+
+  - key: ko:item:ha-eumsingmul-sseuregi
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 음식물 쓰레기
+      romanization: eumsingmul sseuregi
+      pos: danh từ
+    back:
+      meaning:
+        vi: rác thực phẩm, thức ăn thừa
+      examples:
+        - target: 음식물 쓰레기는 따로 버려야 해요.
+          translation:
+            vi: Rác thực phẩm phải vứt riêng.
+      pronunciation_note:
+        vi: 음식물 đọc [음싱물] - ㄱ trước ㅁ thành ㅇ (âm mũi hoá). 쓰 là phụ âm căng.
+      confusion:
+        vi: Vỏ trứng, xương gà, vỏ hành thường không tính là 음식물 쓰레기 mà bỏ vào túi rác thường.
+
+  - key: ko:item:ha-jongnyangje-bongtu
+    type: vocab
+    level: topik3
+    difficulty: 4
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 종량제 봉투
+      romanization: jongnyangje bongtu
+      pos: danh từ
+    back:
+      meaning:
+        vi: túi rác có thu phí theo quy định của quận (mua ở siêu thị, cửa hàng tiện lợi)
+      examples:
+        - target: 일반 쓰레기는 종량제 봉투에 넣어서 버리세요.
+          translation:
+            vi: Rác thường hãy cho vào túi rác quy định rồi vứt.
+      pronunciation_note:
+        vi: Đọc [종냥제] - ㄹ sau ㅇ thành ㄴ.
+      confusion:
+        vi: Không dùng túi ni-lông bất kỳ; mỗi quận có túi riêng, dùng sai túi rác sẽ không được thu gom.
+
+  - key: ko:item:ha-pul-option
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 풀옵션
+      romanization: pulopsyeon
+      pos: danh từ
+    back:
+      meaning:
+        vi: (nhà) đầy đủ nội thất, đồ gia dụng (giường, máy giặt, tủ lạnh, điều hoà…)
+      examples:
+        - target: 풀옵션 원룸이라서 냉장고를 안 사도 돼요.
+          translation:
+            vi: Phòng studio đầy đủ nội thất nên không cần mua tủ lạnh.
+      pronunciation_note:
+        vi: Đọc nối [푸롭션].
+      confusion:
+        vi: Từ ghép tiếng Anh kiểu Hàn ("full option"); người bản ngữ tiếng Anh không dùng như vậy.
+
+  - key: ko:item:ha-sikkeureopda
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 시끄럽다
+      romanization: sikkeureopda
+      pos: tính từ
+    back:
+      meaning:
+        vi: ồn ào
+      examples:
+        - target: 밤에 위층이 너무 시끄러워요.
+          translation:
+            vi: Buổi tối tầng trên ồn quá.
+      pronunciation_note:
+        vi: 끄 là phụ âm căng [kk]; 시끄럽다 đọc [시끄럽따].
+      confusion:
+        vi: Bất quy tắc ㅂ - 시끄러워요, 시끄러운 집; không viết 시끄럽어요.
+
+  - key: ko:item:ha-beorida
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 버리다
+      romanization: beorida
+      pos: động từ
+    back:
+      meaning:
+        vi: vứt, bỏ (rác, đồ cũ)
+      examples:
+        - target: 쓰레기는 저녁 8시 이후에 버리세요.
+          translation:
+            vi: Hãy vứt rác sau 8 giờ tối.
+      pronunciation_note:
+        vi: Đọc [버리다]; ㅓ mở miệng như "ơ" nhưng tròn hơn, đừng đọc thành 보리다.
+      confusion:
+        vi: Đổ rác là 쓰레기를 버리다, không dùng 쓰레기를 던지다 (ném).
+
+  # ---------------- bài 3: thói quen sức khoẻ ----------------
+  - key: ko:item:ha-gram-ge-adverb
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: A-게 (trạng từ)
+      romanization: -ge
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "biến tính từ thành trạng từ chỉ cách thức: …một cách…"
+      examples:
+        - target: 음식을 싱겁게 드세요.
+          translation:
+            vi: Hãy ăn nhạt.
+        - target: 건강하게 오래 사세요.
+          translation:
+            vi: Chúc ông bà sống khoẻ mạnh và sống lâu.
+      pronunciation_note:
+        vi: 싱겁게 đọc [싱겁께] - ㄱ sau patchim ㅂ căng lên.
+      confusion:
+        vi: Không đặt tính từ nguyên dạng trước động từ (건강한 살아요 là sai). Chỉ cách làm việc gì thì dùng -게, không dùng -도록.
+
+  - key: ko:item:ha-gram-dorok
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: V/A-도록
+      romanization: -dorok
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: để cho…, sao cho… (mục đích là một kết quả hay trạng thái); hay dùng với phủ định -지 않도록
+      examples:
+        - target: 감기에 걸리지 않도록 손을 자주 씻으세요.
+          translation:
+            vi: Hãy rửa tay thường xuyên để không bị cảm.
+        - target: 아이가 푹 잘 수 있도록 조용히 해 주세요.
+          translation:
+            vi: Hãy giữ yên lặng để em bé ngủ ngon.
+      pronunciation_note:
+        vi: 않도록 đọc [안토록] - ㅎ gặp ㄷ thành ㅌ bật hơi.
+      confusion:
+        vi: Khác với V-도록 하다 (chỉ thị, "hãy cố…") đã học ở unit công việc. Trong văn nói, -게 thường thay được -도록 khi chỉ mục đích, nhưng -도록 không thay -게 trạng từ (맛있도록 드세요 là sai).
+
+  - key: ko:item:ha-geongang-geomjin
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 건강 검진
+      romanization: geongang geomjin
+      pos: danh từ
+    back:
+      meaning:
+        vi: khám sức khoẻ định kỳ
+      examples:
+        - target: 회사에서 1년에 한 번 건강 검진을 받아요.
+          translation:
+            vi: Ở công ty, mỗi năm tôi khám sức khoẻ một lần.
+      pronunciation_note:
+        vi: Đọc [건강 검진]; ㅓ của 건, 검 mở như "ơ".
+      confusion:
+        vi: Động từ đi kèm là 받다 - 건강 검진을 받다, không nói 건강 검진을 해요 khi mình là người được khám.
+
+  - key: ko:item:ha-seuteureseu-batda
+    type: phrase
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 스트레스를 받다
+      romanization: seuteureseureul batda
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: bị căng thẳng, bị stress
+      examples:
+        - target: 요즘 일이 많아서 스트레스를 많이 받아요.
+          translation:
+            vi: Dạo này nhiều việc nên tôi bị căng thẳng nhiều.
+      pronunciation_note:
+        vi: 받다 đọc [받따]; 받아요 đọc nối [바다요].
+      confusion:
+        vi: Tiếng Việt nói "bị stress", tiếng Hàn dùng 받다 (nhận). Không nói 스트레스가 있어요 khi muốn nói đang bị áp lực - nghe không tự nhiên bằng.
+
+  - key: ko:item:ha-seuteureseu-pulda
+    type: phrase
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 스트레스를 풀다
+      romanization: seuteureseureul pulda
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: giải toả căng thẳng
+      examples:
+        - target: 저는 노래방에서 스트레스를 풀어요.
+          translation:
+            vi: Tôi giải toả căng thẳng ở phòng karaoke.
+      pronunciation_note:
+        vi: 풀 có ㅍ bật hơi. Gốc ㄹ - 푸세요, 푸는 방법 (ㄹ rơi trước ㅅ, ㄴ).
+      confusion:
+        vi: 풀다 nghĩa gốc là "gỡ, tháo". Hỏi cách giải toả - 스트레스를 어떻게 풀어요? (không viết 풀으세요).
+
+  - key: ko:item:ha-gyuchikjeogeuro
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 규칙적으로
+      romanization: gyuchikjeogeuro
+      pos: trạng từ
+    back:
+      meaning:
+        vi: một cách đều đặn, điều độ
+      examples:
+        - target: 규칙적으로 운동하는 게 중요해요.
+          translation:
+            vi: Tập thể dục đều đặn là điều quan trọng.
+      pronunciation_note:
+        vi: Đọc [규칙쩌그로] - ㅈ sau ㄱ căng lên, rồi nối âm.
+      confusion:
+        vi: Hán Việt "quy tắc"; 규칙적으로 là "đều đặn", không phải "theo luật". Tính từ là 규칙적인 (생활).
+
+  - key: ko:item:ha-undong-bujok
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 운동 부족
+      romanization: undong bujok
+      pos: danh từ
+    back:
+      meaning:
+        vi: thiếu vận động
+      examples:
+        - target: 하루 종일 앉아 있어서 운동 부족이에요.
+          translation:
+            vi: Ngồi cả ngày nên tôi bị thiếu vận động.
+      pronunciation_note:
+        vi: Đọc [운동 부족]; 족 có ㅗ tròn môi.
+      confusion:
+        vi: N + 부족 là "thiếu N" (수면 부족 - thiếu ngủ). Không dùng 운동이 없어요 cho nghĩa này.
+
+  - key: ko:item:ha-daieoteu
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 다이어트
+      romanization: daieoteu
+      pos: danh từ
+    back:
+      meaning:
+        vi: ăn kiêng giảm cân
+      examples:
+        - target: 다이어트 중이라서 밤에는 안 먹어요.
+          translation:
+            vi: Đang giảm cân nên buổi tối tôi không ăn.
+      pronunciation_note:
+        vi: Đọc [다이어트] - 4 âm tiết, ㅡ cuối rất nhẹ.
+      confusion:
+        vi: Trong tiếng Hàn 다이어트 gần như luôn là giảm cân. "Đang giảm cân" là 다이어트 중이에요 hoặc 다이어트를 하고 있어요.
+
+  - key: ko:item:ha-yeongyangje
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 영양제
+      romanization: yeongyangje
+      pos: danh từ
+    back:
+      meaning:
+        vi: thực phẩm bổ sung, viên vitamin
+      examples:
+        - target: 아침마다 비타민 영양제를 먹어요.
+          translation:
+            vi: Sáng nào tôi cũng uống viên vitamin.
+      pronunciation_note:
+        vi: Đọc [영양제]; hai âm 영 và 양 đều có patchim ㅇ mũi.
+      confusion:
+        vi: Uống thuốc, uống vitamin dạng viên dùng 먹다 (영양제를 먹다), không dùng 마시다.
+
+  - key: ko:item:ha-bulmyeonjeung
+    type: vocab
+    level: topik3
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 불면증
+      romanization: bulmyeonjeung
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng mất ngủ
+      examples:
+        - target: 스트레스 때문에 불면증이 생겼어요.
+          translation:
+            vi: Vì căng thẳng mà tôi bị mất ngủ.
+      pronunciation_note:
+        vi: Đọc [불면쯩] - ㅈ của 증 căng lên.
+      confusion:
+        vi: Hán Việt "bất miên chứng". "Bị mất ngủ" là 불면증이 있다 / 생기다, hoặc nói đơn giản 잠을 못 자요.
+
+  - key: ko:item:ha-sari-jjida
+    type: phrase
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 살이 찌다 / 살이 빠지다
+      romanization: sari jjida / sari ppajida
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: tăng cân, béo lên / giảm cân, gầy đi
+      examples:
+        - target: 운동을 시작한 후에 살이 3킬로 빠졌어요.
+          translation:
+            vi: Từ khi bắt đầu tập thể dục, tôi đã giảm 3 cân.
+      pronunciation_note:
+        vi: 찌 và 빠 là phụ âm căng; 살이 đọc nối [사리].
+      confusion:
+        vi: Dùng thì quá khứ để nói đã béo/gầy đi - 살이 쪘어요. Không nói 저는 찌어요; chủ ngữ ngữ pháp là 살이.
+
+  - key: ko:item:ha-geonganghada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 건강하다
+      romanization: geonganghada
+      pos: tính từ
+    back:
+      meaning:
+        vi: khoẻ mạnh
+      examples:
+        - target: 할머니는 아직도 건강하세요.
+          translation:
+            vi: Bà tôi vẫn còn khoẻ mạnh.
+      pronunciation_note:
+        vi: Đọc [건강하다]; danh từ 건강 (sức khoẻ).
+      confusion:
+        vi: Là tính từ, nên "sống khoẻ" là 건강하게 살다; "sức khoẻ tốt" là 건강이 좋다.
+
+  # ---------------- bài 4: lời khuyên & lo lắng ----------------
+  - key: ko:item:ha-gram-neun-ge-joketda
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-는 게 좋겠다
+      romanization: -neun ge joketda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "nên…, …thì hơn (khuyên nhẹ nhàng, lịch sự). Phủ định: V-지 않는 게 좋겠다."
+      examples:
+        - target: 오늘은 집에서 쉬는 게 좋겠어요.
+          translation:
+            vi: Hôm nay bạn nên nghỉ ở nhà thì hơn.
+        - target: 밤늦게 커피를 마시지 않는 게 좋겠어요.
+          translation:
+            vi: Bạn không nên uống cà phê lúc khuya.
+      pronunciation_note:
+        vi: 좋겠어요 đọc [조케써요] - ㅎ gặp ㄱ thành ㅋ.
+      confusion:
+        vi: 게 là rút gọn của 것이. Phủ định đặt -지 않는 trước 게, không nói 쉬는 게 안 좋겠어요 khi muốn khuyên "đừng".
+
+  - key: ko:item:ha-gram-ji-geuraeyo
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-지 그래요?
+      romanization: -ji geuraeyo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: sao bạn không… đi? (gợi ý thân mật); -지 그랬어요? là "lẽ ra bạn nên…" (hơi trách)
+      examples:
+        - target: 그렇게 피곤하면 좀 쉬지 그래요?
+          translation:
+            vi: Mệt thế thì sao bạn không nghỉ một chút đi?
+        - target: 아프면 미리 말하지 그랬어요?
+          translation:
+            vi: Đau thì lẽ ra bạn nên nói trước chứ.
+      pronunciation_note:
+        vi: 그래요 đọc [그래요]; lên giọng ở cuối như câu hỏi.
+      confusion:
+        vi: Chỉ dùng với bạn bè, người ngang hoặc ít tuổi hơn. Với cấp trên, người lớn tuổi nên dùng -(으)시는 게 좋겠어요.
+
+  - key: ko:item:ha-gram-eulkka-bwa
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V/A-(으)ㄹ까 봐(서)
+      romanization: -(eu)lkka bwa(seo)
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "vì sợ là…, vì lo là… (điều mình không muốn xảy ra). Thường đi với 걱정이다 hoặc một hành động phòng ngừa."
+      examples:
+        - target: 늦을까 봐 택시를 탔어요.
+          translation:
+            vi: Vì sợ muộn nên tôi đã đi taxi.
+        - target: 시험에 떨어질까 봐 걱정이에요.
+          translation:
+            vi: Tôi lo là sẽ trượt kỳ thi.
+      pronunciation_note:
+        vi: 늦을까 đọc nối [느즐까]; 봐서 đọc [봐서] hoặc nhanh thành [바서].
+      confusion:
+        vi: Không dùng cho điều mình mong (합격할까 봐 là "sợ đỗ"). Vế sau không là câu mệnh lệnh hay rủ rê.
+
+  - key: ko:item:ha-gram-eul-jeongdoro
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V/A-(으)ㄹ 정도로
+      romanization: -(eu)l jeongdoro
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: đến mức…, tới mức có thể…
+      examples:
+        - target: 잠을 못 잘 정도로 시끄러워요.
+          translation:
+            vi: Ồn đến mức không ngủ được.
+        - target: 걷기 힘들 정도로 다리가 아팠어요.
+          translation:
+            vi: Chân đau đến mức khó đi lại.
+      pronunciation_note:
+        vi: 정도로 đọc [정도로]; ㅈ đầu câu không bật hơi.
+      confusion:
+        vi: Thì quá khứ đặt ở cuối câu, vế trước thường giữ -(으)ㄹ - 못 잘 정도로 시끄러웠어요. 정도로 nêu một hệ quả cụ thể để cho thấy mức độ, nên mạnh và sinh động hơn 아주/너무.
+
+  - key: ko:item:ha-murihada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 무리하다
+      romanization: murihada
+      pos: động từ
+    back:
+      meaning:
+        vi: làm quá sức
+      examples:
+        - target: 처음부터 너무 무리하지 마세요.
+          translation:
+            vi: Đừng làm quá sức ngay từ đầu.
+      pronunciation_note:
+        vi: Đọc [무리하다]; ㅜ tròn môi như "u".
+      confusion:
+        vi: Hán Việt "vô lý" nhưng nghĩa là "quá sức, gắng quá"; 무리한 부탁 là "lời nhờ vả quá đáng".
+
+  - key: ko:item:ha-puk
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 푹 (쉬다 / 자다)
+      romanization: puk
+      pos: trạng từ
+    back:
+      meaning:
+        vi: (nghỉ, ngủ) thật thoải mái, thật sâu
+      examples:
+        - target: 주말에는 집에서 푹 쉬세요.
+          translation:
+            vi: Cuối tuần hãy ở nhà nghỉ ngơi thật thoải mái.
+      pronunciation_note:
+        vi: ㅍ bật hơi, patchim ㄱ đọc tắc như "c" trong "cúc".
+      confusion:
+        vi: Chỉ đi với nghỉ, ngủ (và nấu nhừ); không dùng 푹 với nghĩa "rất" cho động từ khác.
+
+  - key: ko:item:ha-sangdam-batda
+    type: phrase
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 상담(을) 받다
+      romanization: sangdam(eul) batda
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: được tư vấn, đi tư vấn
+      examples:
+        - target: 불면증이 심하면 전문가에게 상담을 받아 보세요.
+          translation:
+            vi: Nếu mất ngủ nặng, bạn thử đi gặp chuyên gia tư vấn xem.
+      pronunciation_note:
+        vi: 상담을 đọc nối [상다믈]; 받아 [바다].
+      confusion:
+        vi: Người tư vấn thì 상담하다 / 상담해 주다; người được tư vấn thì 상담을 받다.
+
+  - key: ko:item:ha-jurida
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 줄이다
+      romanization: jurida
+      pos: động từ
+    back:
+      meaning:
+        vi: giảm bớt, cắt giảm
+      examples:
+        - target: 커피를 하루 한 잔으로 줄였어요.
+          translation:
+            vi: Tôi đã giảm cà phê xuống một cốc mỗi ngày.
+      pronunciation_note:
+        vi: Đọc nối [주리다].
+      confusion:
+        vi: 줄이다 có tân ngữ (커피를 줄이다); 줄다 là tự giảm (체중이 줄었어요). Giảm xuống còn bao nhiêu dùng N(으)로.
+
+  - key: ko:item:ha-seupgwan
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 습관
+      romanization: seupgwan
+      pos: danh từ
+    back:
+      meaning:
+        vi: thói quen
+      examples:
+        - target: 자기 전에 휴대폰을 보는 습관이 있어요.
+          translation:
+            vi: Tôi có thói quen xem điện thoại trước khi ngủ.
+      pronunciation_note:
+        vi: Đọc [습꽌] - ㄱ sau ㅂ căng lên.
+      confusion:
+        vi: Hán Việt "tập quán". "Bỏ thói quen" là 습관을 고치다 / 버리다; "tạo thói quen" là 습관을 들이다.
+
+  # ---------------- bài 5: ôn tập ----------------
+  - key: ko:item:ha-maemul
+    type: vocab
+    level: topik3
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 매물
+      romanization: maemul
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà đang rao (bán hoặc cho thuê) ở văn phòng môi giới
+      examples:
+        - target: 요즘 학교 근처에 전세 매물이 별로 없어요.
+          translation:
+            vi: Dạo này gần trường hầu như không có nhà cho thuê jeonse.
+      pronunciation_note:
+        vi: Đọc [매물]; ㅐ gần như ㅔ trong tiếng Seoul.
+      confusion:
+        vi: Hán Việt "mại vật" (vật đem bán) - từ của giới môi giới, khác với 방 hay 집 nói chung.
+
+  - key: ko:item:ha-junggae-susuryo
+    type: vocab
+    level: topik3
+    difficulty: 4
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 중개 수수료
+      romanization: junggae susuryo
+      pos: danh từ
+    back:
+      meaning:
+        vi: phí môi giới (trả cho văn phòng bất động sản khi ký hợp đồng)
+      examples:
+        - target: 계약할 때 중개 수수료를 내야 해요.
+          translation:
+            vi: Khi ký hợp đồng phải trả phí môi giới.
+      pronunciation_note:
+        vi: Đọc [중개 수수료]; 료 có bán nguyên âm y, đọc như "ryô".
+      confusion:
+        vi: Hán Việt "trung giới thủ tục liệu". Đóng phí dùng 내다 (수수료를 내다), không dùng 주다.

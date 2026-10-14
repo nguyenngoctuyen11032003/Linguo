@@ -1,0 +1,431 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:apartment-life
+order_index: 2
+level: topik3
+title:
+  vi: Sống ở chung cư - -아/어 놓다, -아/어 두다, -기 쉽다
+objectives:
+  - vi: Nói việc làm sẵn để chuẩn bị bằng -아/어 놓다 và -아/어 두다, phân biệt sắc thái của hai cấu trúc.
+  - vi: Nói "dễ/khó làm…" và "dễ xảy ra…" bằng V-기 쉽다 / 어렵다.
+  - vi: Hiểu quy định đổ rác (분리수거, 음식물 쓰레기, 종량제 봉투) và chuyện tiếng ồn giữa các tầng (층간 소음).
+estimated_minutes: 20
+skills: [grammar, vocabulary, reading]
+prerequisites: [ko:lesson:housing-search]
+items:
+  - item: ko:item:ha-gram-a-nota
+  - item: ko:item:ha-gram-a-duda
+  - item: ko:item:ha-gram-gi-swipda
+  - item: ko:item:ha-cheunggan-soeum
+  - item: ko:item:ha-bunrisugeo
+  - item: ko:item:ha-iut
+  - item: ko:item:ha-eumsingmul-sseuregi
+  - item: ko:item:ha-jongnyangje-bongtu
+  - item: ko:item:ha-pul-option
+  - item: ko:item:ha-sikkeureopda
+  - item: ko:item:ha-beorida
+  - item: ko:item:ha-wonrum
+    role: reuse
+  - item: ko:item:ha-jipjuin
+    role: reuse
+  - item: ko:item:miri
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu được bảng thông báo đổ rác của chung cư, nói chuyện lịch sự với hàng xóm về tiếng ồn và kể những việc bạn đã chuẩn bị sẵn trong nhà.
+  - type: explain
+    text:
+      vi: "V-아/어 놓다 nghĩa là làm xong một việc rồi để nguyên kết quả đó - giống \"…sẵn\" trong tiếng Việt: 창문을 열어 놓았어요 (tôi đã mở sẵn cửa sổ). Khẩu ngữ hay rút gọn 놓았어요 thành 놨어요."
+  - type: explain
+    text:
+      vi: "V-아/어 두다 cũng là làm sẵn, nhưng nhấn mạnh việc giữ lại để dùng về sau, lâu hơn. Phần lớn trường hợp hai cấu trúc thay được cho nhau; riêng \"ghi nhớ, biết trước\" thì dùng 알아 두다, 기억해 두다 tự nhiên hơn."
+  - type: explain
+    text:
+      vi: "V-기 쉽다 / 어렵다 là \"dễ / khó làm…\" - 찾기 쉬워요 (dễ tìm). -기 쉽다 còn có nghĩa \"dễ bị, dễ xảy ra\" cho chuyện không tốt - 층간 소음이 생기기 쉬워요. Nhớ 쉽다, 어렵다 là bất quy tắc ㅂ."
+  - type: deep_explain
+    text:
+      vi: Ở Hàn, rác chia ít nhất ba loại - rác tái chế (분리수거, theo ngày quy định), rác thực phẩm (음식물 쓰레기, thùng riêng) và rác thường (cho vào 종량제 봉투 mua ở cửa hàng). Vứt sai có thể bị phạt, nên khi mới chuyển đến bạn nên hỏi 집주인 và 알아 두세요. Tiếng ồn giữa các tầng cũng là chuyện nhạy cảm - buổi tối nên đi nhẹ, tránh kéo bàn ghế.
+  - type: example
+    target: 손님이 오기 전에 방을 청소해 놓았어요.
+    target_lang: ko
+    translation:
+      vi: Trước khi khách đến, tôi đã dọn phòng sẵn.
+    note:
+      vi: Nhấn mạnh việc dọn đã xong và phòng đang sạch sẵn.
+  - type: example
+    target: 이사하기 전에 집주인 전화번호를 저장해 두세요.
+    target_lang: ko
+    translation:
+      vi: Trước khi chuyển đến, bạn hãy lưu sẵn số điện thoại của chủ nhà.
+    note:
+      vi: 두다 - lưu lại để sau này cần thì dùng.
+  - type: example
+    target: 우리 아파트는 역에서 가까워서 찾기 쉬워요.
+    target_lang: ko
+    translation:
+      vi: Chung cư nhà tôi gần ga nên dễ tìm.
+  - type: example
+    target: 오래된 건물은 층간 소음이 생기기 쉬워요.
+    target_lang: ko
+    translation:
+      vi: Toà nhà cũ dễ xảy ra tiếng ồn giữa các tầng.
+    note:
+      vi: -기 쉽다 với nghĩa "dễ xảy ra" chuyện không tốt.
+  - type: example
+    target: 음식물 쓰레기는 따로 버리고 일반 쓰레기는 종량제 봉투에 넣어서 버려요.
+    target_lang: ko
+    translation:
+      vi: Rác thực phẩm vứt riêng, còn rác thường thì cho vào túi rác quy định rồi vứt.
+  - type: common_mistake
+    wrong: 문이 열어 놓았어요.
+    right: 문을 열어 놓았어요.
+    target_lang: ko
+    note:
+      vi: -아/어 놓다 cần tân ngữ với 을/를 vì có người làm hành động. Nếu chỉ muốn nói "cửa đang mở", dùng 문이 열려 있어요.
+  - type: common_mistake
+    wrong: 이 집은 찾기 쉽어요.
+    right: 이 집은 찾기 쉬워요.
+    target_lang: ko
+    note:
+      vi: 쉽다 và 어렵다 là bất quy tắc ㅂ - ㅂ đổi thành 우 trước 어요 → 쉬워요, 어려워요.
+  - type: common_mistake
+    wrong: 쓰레기 버리는 날을 꼭 기억해 놓으세요.
+    right: 쓰레기 버리는 날을 꼭 기억해 두세요.
+    target_lang: ko
+    note:
+      vi: Người Việt hay dùng 놓다 cho mọi việc "làm sẵn". Với ghi nhớ, biết trước để dùng sau này, người Hàn gần như luôn dùng 두다 - 기억해 두다, 알아 두다.
+  - type: summary
+    points:
+      - vi: V-아/어 놓다 - làm xong và để sẵn (열어 놓다, 청소해 놓다; khẩu ngữ 놨어요).
+      - vi: V-아/어 두다 - làm sẵn và giữ lại dùng sau (저장해 두다, 알아 두다, 기억해 두다).
+      - vi: V-기 쉽다 / 어렵다 - dễ / khó làm…; -기 쉽다 còn là "dễ xảy ra"; chia 쉬워요, 어려워요.
+      - vi: 분리수거 · 음식물 쓰레기 · 종량제 봉투 · 쓰레기를 버리다.
+      - vi: 층간 소음 · 이웃 · 시끄럽다 (시끄러워요) · 풀옵션.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:apartment-life-mcq-nota-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:ha-gram-a-nota
+    prompt:
+      stem: "창문을 열어 놓았어요 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: u3k, text: "Tôi đã mở sẵn cửa sổ (và để nó mở).", lang: vi }
+        - { id: a8d, text: "Tôi đang mở cửa sổ.", lang: vi }
+        - { id: l5x, text: "Tôi định mở cửa sổ.", lang: vi }
+        - { id: j2w, text: "Cửa sổ đã bị đóng lại.", lang: vi }
+    answer:
+      correct_option_id: u3k
+    explanation:
+      vi: -아/어 놓다 là làm xong rồi để nguyên kết quả, nên 열어 놓았어요 là "đã mở sẵn". "Đang mở" là 열고 있어요; "định mở" là 열려고 해요.
+    display_answer: "Tôi đã mở sẵn cửa sổ (và để nó mở)."
+
+  - key: ko:exercise:apartment-life-listen-recycling
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ha-bunrisugeo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 우리 아파트는 수요일 저녁에 분리수거를 해요. 음식물 쓰레기는 따로 버려야 해요.
+      options:
+        - { id: r6m, text: "Chung cư của tôi phân loại rác tái chế vào tối thứ Tư. Rác thực phẩm phải vứt riêng.", lang: vi }
+        - { id: e1c, text: "Chung cư của tôi đổ rác thực phẩm vào sáng thứ Tư.", lang: vi }
+        - { id: h9v, text: "Ở chung cư của tôi, rác thực phẩm vứt chung với rác tái chế.", lang: vi }
+        - { id: p4z, text: "Chung cư của tôi không cần phân loại rác.", lang: vi }
+    answer:
+      correct_option_id: r6m
+    explanation:
+      vi: 수요일 저녁 = tối thứ Tư; 분리수거 = phân loại rác tái chế; 따로 버려야 해요 = phải vứt riêng. Câu không nói "buổi sáng" hay "vứt chung".
+    display_answer: "Chung cư của tôi phân loại rác tái chế vào tối thứ Tư. Rác thực phẩm phải vứt riêng."
+
+  - key: ko:exercise:apartment-life-mcq-gi-eoryeopda
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-gram-gi-swipda
+    prompt:
+      stem: "Chọn đáp án đúng: 이 동네는 길이 복잡해서 집을 찾기 ___."
+      stem_lang: vi
+      options:
+        - { id: s7f, text: 어려워요, lang: ko }
+        - { id: m3y, text: 어렵어요, lang: ko }
+        - { id: b8q, text: 쉬워요, lang: ko }
+        - { id: w2n, text: 어렵게요, lang: ko }
+    answer:
+      correct_option_id: s7f
+    explanation:
+      vi: Đường phức tạp (복잡해서) nên "khó tìm" → 찾기 어려워요. 어렵다 là bất quy tắc ㅂ nên không viết 어렵어요; 쉬워요 trái nghĩa với vế trước.
+    display_answer: 어려워요
+
+  - key: ko:exercise:apartment-life-fill-aircon-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-gram-a-nota
+    prompt:
+      template: "더워서 에어컨을 켜 {{b1}} 외출했어요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Trời nóng nên tôi bật sẵn điều hoà rồi ra ngoài."
+        - "Gợi ý: -아/어 놓다 (hoặc 두다) + -고."
+    answer:
+      blanks:
+        b1: [놓고, 두고]
+    known_wrong:
+      - answer: 있고
+        feedback_vi: 켜 있다 không đúng; trạng thái do người làm rồi để nguyên là 켜 놓다 / 켜 두다.
+        error_tag: state_form
+      - answer: 놓아서
+        feedback_vi: -아서 chỉ lý do; ở đây cần "bật sẵn rồi ra ngoài" - 놓고.
+        error_tag: connector_meaning
+      - answer: 주고
+        feedback_vi: -아/어 주다 là làm giúp người khác, không phải "để sẵn".
+        error_tag: auxiliary_meaning
+    explanation:
+      vi: 켜 놓고 / 켜 두고 - bật điều hoà và để nó chạy, rồi mới đi ra ngoài. -고 nối hai hành động theo thứ tự.
+    display_answer: 더워서 에어컨을 켜 놓고 외출했어요.
+
+  - key: ko:exercise:apartment-life-wb-trash-bag
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-jongnyangje-bongtu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Rác thường hãy cho vào túi rác quy định rồi vứt.\""
+      tokens:
+        - { id: t3, text: 넣어서 }
+        - { id: t5, text: 봉투를 }
+        - { id: t1, text: 일반 쓰레기는 }
+        - { id: t4, text: 버리세요 }
+        - { id: t2, text: 종량제 봉투에 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+    explanation:
+      vi: '"Cho vào đâu" dùng trợ từ 에 - 종량제 봉투에 넣어서. -아서 nối "cho vào" rồi "vứt"; 봉투를 là token thừa.'
+    display_answer: 일반 쓰레기는 종량제 봉투에 넣어서 버리세요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:apartment-life-fill-noise
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-cheunggan-soeum
+    prompt:
+      template: "(Chung cư cũ dễ xảy ra tiếng ồn giữa các tầng.) 오래된 아파트는 {{b1}}이 생기기 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [층간 소음, 층간소음]
+        b2: [쉬워요]
+    known_wrong:
+      - answer: 쉽어요
+        feedback_vi: 쉽다 là bất quy tắc ㅂ - 쉬워요.
+        error_tag: b_irregular
+      - answer: 쉽게
+        feedback_vi: Sau -기 cần tính từ 쉽다 ở cuối câu - 쉬워요.
+        error_tag: gi_swipda_form
+      - answer: 어려워요
+        feedback_vi: Câu gốc nói "dễ xảy ra" - 쉬워요.
+        error_tag: vocab_meaning
+    explanation:
+      vi: Tiếng ồn giữa các tầng là 층간 소음. "Dễ xảy ra" = 생기기 쉬워요 (bất quy tắc ㅂ).
+    display_answer: 오래된 아파트는 층간 소음이 생기기 쉬워요.
+
+  - key: ko:exercise:apartment-life-translate-save-number
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-gram-a-duda
+    prompt:
+      source_text: Bạn nhớ lưu sẵn số điện thoại của chủ nhà nhé.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 집주인 전화번호를 꼭 저장해 두세요.
+        - 집주인 전화번호를 저장해 두세요.
+        - 집주인 번호를 꼭 저장해 두세요.
+        - 집주인 번호를 저장해 두세요.
+        - 집주인의 전화번호를 꼭 저장해 두세요.
+        - 집주인 전화번호를 꼭 저장해 놓으세요.
+        - 집주인 전화번호를 저장해 놓으세요.
+        - 집주인 번호를 꼭 저장해 놓으세요.
+        - 집주인 번호를 저장해 놓으세요.
+    known_wrong:
+      - answer: 집주인 전화번호를 꼭 저장하고 있으세요.
+        feedback_vi: '"Lưu sẵn để sau dùng" là -아/어 두다 - 저장해 두세요, không dùng -고 있다.'
+        error_tag: duda_form
+      - answer: 집주인 전화번호를 꼭 저장해 주세요.
+        feedback_vi: -아/어 주세요 là nhờ làm giúp; ý "lưu sẵn" cần 두세요 hoặc 놓으세요.
+        error_tag: auxiliary_meaning
+      - answer: jipjuin jeonhwabeonhoreul jeojanghae duseyo
+        feedback_vi: Hãy viết bằng Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Chủ nhà là 집주인; "lưu sẵn để sau này dùng" là 저장해 두다 (놓다 cũng được). 꼭 = nhớ, nhất định.
+    display_answer: 집주인 전화번호를 꼭 저장해 두세요.
+
+  - key: ko:exercise:apartment-life-translate-noisy-neighbor
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ha-sikkeureopda
+    prompt:
+      source_text: Hàng xóm ồn quá.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이웃이 너무 시끄러워요.
+        - 이웃집이 너무 시끄러워요.
+        - 옆집이 너무 시끄러워요.
+        - 이웃이 정말 시끄러워요.
+        - 이웃이 진짜 시끄러워요.
+        - 이웃 사람이 너무 시끄러워요.
+        - 이웃 사람들이 너무 시끄러워요.
+        - 이웃들이 너무 시끄러워요.
+    known_wrong:
+      - answer: 이웃이 너무 시끄럽어요.
+        feedback_vi: 시끄럽다 là bất quy tắc ㅂ - 시끄러워요.
+        error_tag: b_irregular
+      - answer: 이웃이 너무 조용해요.
+        feedback_vi: 조용해요 là "yên tĩnh", ngược với "ồn".
+        error_tag: vocab_meaning
+      - answer: 이웃을 너무 시끄러워요.
+        feedback_vi: 시끄럽다 là tính từ, chủ ngữ dùng 이/가 - 이웃이.
+        error_tag: particle_subject
+    explanation:
+      vi: Hàng xóm = 이웃 (옆집 là nhà bên cạnh); ồn ào = 시끄럽다, bất quy tắc ㅂ → 시끄러워요.
+    display_answer: 이웃이 너무 시끄러워요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:apartment-life-mcq-ask-neighbor
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-iut
+    prompt:
+      stem: "Tầng trên ồn vào ban đêm. Bạn gặp hàng xóm tầng trên ở thang máy và muốn nhờ một cách lịch sự. Câu nào phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: d6g, text: 죄송하지만 밤에는 좀 조용히 해 주세요., lang: ko }
+        - { id: i2r, text: 죄송하지만 밤에는 좀 시끄럽게 해 주세요., lang: ko }
+        - { id: o9e, text: 밤에 조용히 해!, lang: ko }
+        - { id: k4s, text: 죄송하지만 밤에는 좀 조용히 해 놓으세요., lang: ko }
+    answer:
+      correct_option_id: d6g
+    explanation:
+      vi: 죄송하지만 + -아/어 주세요 là cách nhờ lịch sự. 시끄럽게 là "ồn ào" (ngược ý); câu 반말 với hàng xóm là vô lễ; 조용히 해 놓다 không có nghĩa vì "yên lặng" không phải việc làm sẵn rồi để đó.
+    display_answer: 죄송하지만 밤에는 좀 조용히 해 주세요.
+
+  - key: ko:exercise:apartment-life-mcq-reading-notice
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ha-bunrisugeo
+    prompt:
+      stem: "다음 안내문을 읽고 맞는 것을 고르십시오.\n[분리수거 안내]\n분리수거는 매주 수요일 저녁 6시부터 10시까지입니다. 음식물 쓰레기는 전용 통에 버리고, 일반 쓰레기는 종량제 봉투에 넣어서 버려 주십시오. 다른 봉투를 사용하면 쓰레기를 가져가지 않습니다. 날짜와 시간을 꼭 알아 두십시오."
+      stem_lang: ko
+      options:
+        - { id: x5h, text: 일반 쓰레기는 종량제 봉투에 넣어서 버려야 해요., lang: ko }
+        - { id: f8u, text: 분리수거는 아무 때나 할 수 있어요., lang: ko }
+        - { id: n3b, text: 음식물 쓰레기는 종량제 봉투에 버려요., lang: ko }
+        - { id: c1t, text: 다른 봉투를 사용해도 괜찮아요., lang: ko }
+    answer:
+      correct_option_id: x5h
+    explanation:
+      vi: Thông báo nói rác thường phải cho vào 종량제 봉투, và nếu dùng túi khác thì sẽ không thu gom. Phân loại chỉ vào tối thứ Tư; rác thực phẩm bỏ vào thùng riêng (전용 통).
+    display_answer: 일반 쓰레기는 종량제 봉투에 넣어서 버려야 해요.
+
+  - key: ko:exercise:apartment-life-translate-full-option-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ha-pul-option
+    prompt:
+      source_text: 풀옵션 원룸이라서 냉장고를 안 사도 돼요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì là phòng studio đầy đủ nội thất nên không cần mua tủ lạnh.
+        - Vì là phòng studio đầy đủ nội thất nên không phải mua tủ lạnh.
+        - Phòng studio đầy đủ nội thất nên không cần mua tủ lạnh.
+        - Phòng studio có đầy đủ nội thất nên không cần mua tủ lạnh.
+        - Vì phòng đầy đủ nội thất nên không cần mua tủ lạnh.
+        - Phòng có đủ đồ nên không cần mua tủ lạnh.
+        - Vì là phòng có đủ đồ dùng nên bạn không cần mua tủ lạnh.
+        - Đây là phòng studio đầy đủ nội thất nên không cần mua tủ lạnh.
+        - Vì là phòng full nội thất nên không cần mua tủ lạnh.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì là phòng studio đầy đủ nội thất nên phải mua tủ lạnh.
+        feedback_vi: 안 사도 돼요 nghĩa là "không mua cũng được", tức là không cần mua.
+        error_tag: negation_missed
+      - answer: Vì là phòng studio không có nội thất nên không cần mua tủ lạnh.
+        feedback_vi: 풀옵션 là "đầy đủ nội thất, đồ gia dụng", không phải "không có".
+        error_tag: vocab_meaning
+    explanation:
+      vi: 풀옵션 = đầy đủ nội thất, đồ gia dụng; -(이)라서 = vì là; 안 -아도 돼요 = không… cũng được, không cần….
+    display_answer: Vì là phòng studio đầy đủ nội thất nên không cần mua tủ lạnh.
+
+  - key: ko:exercise:apartment-life-translate-window
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-gram-a-nota
+    prompt:
+      source_text: Trước khi khách đến, tôi đã mở sẵn cửa sổ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 손님이 오기 전에 창문을 열어 놓았어요.
+        - 손님이 오기 전에 창문을 열어 놨어요.
+        - 손님이 오기 전에 창문을 열어 두었어요.
+        - 손님이 오기 전에 창문을 열어 뒀어요.
+        - 손님이 오기 전에 제가 창문을 열어 놓았어요.
+        - 손님이 오기 전에 제가 창문을 열어 놨어요.
+        - 손님이 오기 전에 제가 창문을 열어 뒀어요.
+        - 저는 손님이 오기 전에 창문을 열어 놓았어요.
+        - 저는 손님이 오기 전에 창문을 열어 놨어요.
+        - 손님이 오시기 전에 창문을 열어 놓았어요.
+        - 손님이 오시기 전에 창문을 열어 놨어요.
+    known_wrong:
+      - answer: 손님이 오기 전에 창문이 열어 놓았어요.
+        feedback_vi: -아/어 놓다 cần tân ngữ - 창문을 열어 놓았어요.
+        error_tag: particle_object
+      - answer: 손님이 오기 전에 창문을 열고 있었어요.
+        feedback_vi: -고 있었어요 là "đang mở"; "mở sẵn" là 열어 놓았어요 / 열어 두었어요.
+        error_tag: nota_form
+      - answer: 손님이 온 후에 창문을 열어 놓았어요.
+        feedback_vi: '"Trước khi" là -기 전에, không phải -(으)ㄴ 후에 (sau khi).'
+        error_tag: time_connector
+    explanation:
+      vi: '"Trước khi khách đến" = 손님이 오기 전에; "mở sẵn" = 열어 놓다 hoặc 열어 두다, quá khứ 놓았어요 / 놨어요 / 두었어요 / 뒀어요.'
+    display_answer: 손님이 오기 전에 창문을 열어 놓았어요.

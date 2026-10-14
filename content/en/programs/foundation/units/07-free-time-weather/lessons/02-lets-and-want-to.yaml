@@ -1,0 +1,435 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:lets-and-want-to
+order_index: 2
+level: a1
+title:
+  vi: Rủ bạn đi chơi - Let's…, Why don't we…?, want to
+objectives:
+  - vi: Nói mình muốn làm gì bằng want to + động từ, không nói I want go.
+  - vi: Rủ bạn bè bằng Let's…, Why don't we…? và What about + -ing?
+  - vi: Nhận lời (Sounds good!, That's a good idea.) và từ chối lịch sự (Sorry, I can't. I'm busy.).
+estimated_minutes: 10
+skills: [speaking, grammar, listening]
+prerequisites: [en:lesson:free-time-activities]
+items:
+  - item: en:item:want-to
+  - item: en:item:lets
+  - item: en:item:why-dont-we
+  - item: en:item:what-about
+  - item: en:item:sounds-good
+  - item: en:item:good-idea
+  - item: en:item:sorry-i-cant
+  - item: en:item:busy
+  - item: en:item:me-too
+  - item: en:item:together
+  - item: en:item:go-shopping
+    role: reuse
+  - item: en:item:go-to-the-cinema
+    role: reuse
+  - item: en:item:go-swimming
+    role: reuse
+  - item: en:item:play-football
+    role: reuse
+  - item: en:item:can-cant
+    role: reuse
+  - item: en:item:tomorrow
+    role: reuse
+  - item: en:item:tonight
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn rủ được bạn bè đi chơi, nói mình muốn làm gì, và nhận lời hay từ chối một cách tự nhiên, lịch sự.
+  - type: explain
+    text:
+      vi: Muốn làm gì thì dùng want to + động từ nguyên mẫu - I want to go to the beach. Tiếng Việt nói "muốn đi" không cần chữ nối, nên người Việt hay quên to và nói I want go. Với he/she là wants to.
+  - type: explain
+    text:
+      vi: "Có ba cách rủ phổ biến: Let's + động từ (Mình… đi!), Why don't we + động từ? (Hay là mình… nhé?) và What about + -ing / danh từ? (… thì sao?). Sau Let's và Why don't we là động từ nguyên mẫu, không có to; sau What about là -ing."
+  - type: explain
+    text:
+      vi: Nhận lời bằng Sounds good!, Sounds great! hoặc That's a good idea. Từ chối thì đừng chỉ nói No - hãy nói Sorry, I can't và thêm lý do ngắn, ví dụ I'm busy.
+  - type: deep_explain
+    text:
+      vi: Why don't we…? trông như câu hỏi "tại sao", nhưng thực chất là lời gợi ý mềm hơn Let's. What about và How about dùng giống nhau. Muốn hỏi ý người khác trước khi rủ, bạn dùng Do you want to…? - Do you want to play badminton? - Yes, I do / Sure!
+  - type: example
+    target: I want to go to the beach this weekend. - Me too!
+    target_lang: en
+    translation:
+      vi: Cuối tuần này mình muốn đi biển. - Mình cũng thế!
+    note:
+      vi: Want to + go; Me too để đồng ý ngắn gọn.
+  - type: example
+    target: Let's go to the cinema tonight. - Sounds great!
+    target_lang: en
+    translation:
+      vi: Tối nay đi xem phim đi. - Hay quá!
+    note:
+      vi: Let's + động từ nguyên mẫu, không có to.
+  - type: example
+    target: Why don't we play football together on Sunday? - That's a good idea.
+    target_lang: en
+    translation:
+      vi: Hay là Chủ nhật mình cùng đá bóng nhé? - Ý hay đấy.
+    note:
+      vi: Together thường đứng sau hoạt động, không đứng trước động từ như "cùng".
+  - type: example
+    target: What about going shopping tomorrow? - Sorry, I can't. I'm busy.
+    target_lang: en
+    translation:
+      vi: Mai đi mua sắm thì sao? - Xin lỗi, mình không đi được. Mình bận.
+    note:
+      vi: What about + going; từ chối kèm lý do ngắn.
+  - type: common_mistake
+    wrong: I want go to the beach.
+    right: I want to go to the beach.
+    target_lang: en
+    note:
+      vi: Want luôn cần to trước động từ - want to go, want to play.
+  - type: common_mistake
+    wrong: Let's to go shopping!
+    right: Let's go shopping!
+    target_lang: en
+    note:
+      vi: Sau Let's là động từ nguyên mẫu, không có to và không thêm -ing.
+  - type: common_mistake
+    wrong: What about go swimming?
+    right: What about going swimming?
+    target_lang: en
+    note:
+      vi: Sau What about (và How about) dùng -ing hoặc danh từ.
+  - type: summary
+    points:
+      - vi: want to + động từ - I want to go; he wants to go.
+      - vi: Let's + động từ (không to) - Let's go.
+      - vi: Why don't we + động từ? - gợi ý nhẹ nhàng "hay là mình… nhé?".
+      - vi: What about / How about + -ing hoặc danh từ? - What about going…? What about Sunday?
+      - vi: Nhận lời - Sounds good! / That's a good idea. Từ chối - Sorry, I can't. I'm busy.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:lets-and-want-to-mcq-lets-go
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:lets
+    prompt:
+      stem: "Chọn từ đúng: Let's ___ to the park."
+      stem_lang: vi
+      options:
+        - { id: a7h, text: go, lang: en }
+        - { id: q2d, text: to go, lang: en }
+        - { id: v5s, text: going, lang: en }
+        - { id: j8n, text: goes, lang: en }
+    answer:
+      correct_option_id: a7h
+    explanation:
+      vi: Sau Let's là động từ nguyên mẫu không có to - Let's go. To go, going, goes đều sai sau Let's.
+    display_answer: go
+
+  - key: en:exercise:lets-and-want-to-listen-badminton
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:why-dont-we
+    prompt:
+      audio_asset_id: null
+      fallback_text: Why don't we play badminton? - That's a good idea.
+      options:
+        - { id: u3c, text: "Hay là mình chơi cầu lông nhé? - Ý hay đấy.", lang: vi }
+        - { id: g6w, text: "Tại sao bạn không chơi cầu lông? - Vì mình bận.", lang: vi }
+        - { id: o1p, text: "Hay là mình chơi bóng đá nhé? - Ý hay đấy.", lang: vi }
+        - { id: l9e, text: "Mình không chơi cầu lông. - Mình cũng vậy.", lang: vi }
+    answer:
+      correct_option_id: u3c
+    explanation:
+      vi: Why don't we…? là lời gợi ý "hay là mình… nhé?", không phải hỏi lý do. Badminton là cầu lông; That's a good idea là "ý hay đấy".
+    display_answer: "Hay là mình chơi cầu lông nhé? - Ý hay đấy."
+
+  - key: en:exercise:lets-and-want-to-mcq-sounds-great
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:sounds-good
+    prompt:
+      stem: "Bạn của bạn nói: \"Let's go swimming tomorrow.\" Bạn muốn nhận lời. Câu nào phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: s4k, text: Sounds great!, lang: en }
+        - { id: i8z, text: "Yes, I am.", lang: en }
+        - { id: x2f, text: "No, thanks. I'm fine.", lang: en }
+        - { id: c6m, text: You're welcome., lang: en }
+    answer:
+      correct_option_id: s4k
+    explanation:
+      vi: Sounds great! là cách nhận lời rủ tự nhiên. Yes, I am trả lời câu hỏi với be; No, thanks là từ chối; You're welcome đáp lại lời cảm ơn.
+    display_answer: Sounds great!
+
+  - key: en:exercise:lets-and-want-to-fill-want-to-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:want-to
+    prompt:
+      template: "I want {{b1}} {{b2}} to the beach this summer."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Mùa hè này mình muốn đi biển."
+        - "Gợi ý: want + một chữ nối + động từ \"đi\" nguyên mẫu."
+    answer:
+      blanks:
+        b1: [to]
+        b2: [go]
+    known_wrong:
+      - answer: going
+        feedback_vi: Sau want to là động từ nguyên mẫu - go, không phải going.
+        error_tag: want_to_infinitive
+      - answer: goes
+        feedback_vi: Sau want to là động từ nguyên mẫu - go.
+        error_tag: want_to_infinitive
+      - answer: for
+        feedback_vi: Want đi với to trước động từ - want to go.
+        error_tag: want_to_infinitive
+    explanation:
+      vi: Want + to + động từ nguyên mẫu - I want to go. Tiếng Việt "muốn đi" không có chữ nối, nhưng tiếng Anh bắt buộc có to.
+    display_answer: I want to go to the beach this summer.
+
+  - key: en:exercise:lets-and-want-to-order-why-dont-we
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:why-dont-we
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Hay là mình xem phim ở nhà nhé?\""
+      tokens:
+        - { id: y-film, text: film }
+        - { id: y-we, text: we }
+        - { id: y-home, text: home }
+        - { id: y-to, text: to }
+        - { id: y-watch, text: watch }
+        - { id: y-why, text: Why }
+        - { id: y-at, text: at }
+        - { id: y-dont, text: "don't" }
+        - { id: y-a, text: a }
+        - { id: y-doesnt, text: "doesn't" }
+    answer:
+      orders:
+        - [y-why, y-dont, y-we, y-watch, y-a, y-film, y-at, y-home]
+    explanation:
+      vi: Why don't we + động từ nguyên mẫu (watch, không có to) + a film + at home. Chủ ngữ we nên dùng don't, không dùng doesn't.
+    display_answer: Why don't we watch a film at home?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:lets-and-want-to-fill-what-about
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:what-about
+    prompt:
+      template: "What about {{b1}} (go) swimming? Or let's {{b2}} (have) lunch together."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [going]
+        b2: [have]
+    known_wrong:
+      - answer: go
+        feedback_vi: Sau What about dùng -ing - going.
+        error_tag: what_about_ing
+      - answer: to go
+        feedback_vi: Sau What about dùng -ing - going, không dùng to.
+        error_tag: what_about_ing
+      - answer: having
+        feedback_vi: Sau let's là động từ nguyên mẫu - have.
+        error_tag: lets_infinitive
+      - answer: to have
+        feedback_vi: Sau let's không có to - let's have.
+        error_tag: lets_infinitive
+    explanation:
+      vi: What about + -ing nên go thành going. Let's + động từ nguyên mẫu nên giữ have, không thêm to hay -ing.
+    display_answer: What about going swimming? Or let's have lunch together.
+
+  - key: en:exercise:lets-and-want-to-translate-want-cinema
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:want-to
+    prompt:
+      source_text: Tối nay mình muốn đi xem phim.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I want to go to the cinema tonight.
+        - Tonight I want to go to the cinema.
+        - Tonight, I want to go to the cinema.
+        - I want to go to the movies tonight.
+        - I want to see a film tonight.
+        - I want to see a movie tonight.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I want go to the cinema tonight.
+        feedback_vi: Thiếu to sau want - I want to go.
+        error_tag: want_to_infinitive
+      - answer: I want going to the cinema tonight.
+        feedback_vi: Want + to + động từ nguyên mẫu, không dùng -ing.
+        error_tag: want_to_infinitive
+      - answer: I want to go to cinema tonight.
+        feedback_vi: Cần the trước cinema - go to the cinema.
+        error_tag: article
+    explanation:
+      vi: "\"Muốn đi\" = want to go; đi xem phim ở rạp là go to the cinema. Tonight đặt ở cuối hoặc đầu câu đều được."
+    display_answer: I want to go to the cinema tonight.
+
+  - key: en:exercise:lets-and-want-to-translate-lets-swim
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:lets
+    prompt:
+      source_text: Mình đi bơi đi!
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Let's go swimming!
+        - Let us go swimming!
+        - Let's go for a swim!
+        - Let's go to the swimming pool!
+    known_wrong:
+      - answer: Let's to go swimming!
+        feedback_vi: Sau Let's không có to - Let's go swimming.
+        error_tag: lets_infinitive
+      - answer: Let's going swimming!
+        feedback_vi: Sau Let's là động từ nguyên mẫu - go, không phải going.
+        error_tag: lets_infinitive
+      - answer: Let's go to swimming!
+        feedback_vi: Go swimming không có to.
+        error_tag: go_to_ing
+      - answer: Let's go swim!
+        feedback_vi: Đi bơi là cụm cố định go swimming.
+        error_tag: collocation
+    explanation:
+      vi: "Câu rủ \"… đi!\" dùng Let's + động từ nguyên mẫu; đi bơi là go swimming (không có to)."
+    display_answer: Let's go swimming!
+
+  # ---------------- application ----------------
+  - key: en:exercise:lets-and-want-to-mcq-refuse
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:sorry-i-cant
+    prompt:
+      stem: "Đồng nghiệp rủ: \"Why don't we play tennis on Saturday?\" Thứ Bảy bạn bận. Câu trả lời nào đúng và lịch sự?"
+      stem_lang: vi
+      options:
+        - { id: n5b, text: "Sorry, I can't. I'm busy on Saturday.", lang: en }
+        - { id: d3t, text: "Sorry, I can't. I busy on Saturday.", lang: en }
+        - { id: r8y, text: "Because I'm busy.", lang: en }
+        - { id: h1q, text: "Sorry, I don't can. I'm busy.", lang: en }
+    answer:
+      correct_option_id: n5b
+    explanation:
+      vi: Từ chối lịch sự - Sorry, I can't + lý do. Busy là tính từ nên cần be (I'm busy). Why don't we là lời rủ, không phải hỏi lý do, nên không trả lời Because; phủ định của can là can't, không phải don't can.
+    display_answer: "Sorry, I can't. I'm busy on Saturday."
+
+  - key: en:exercise:lets-and-want-to-translate-lunch-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:together
+    prompt:
+      source_text: Why don't we have lunch together?
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hay là mình ăn trưa cùng nhau nhé?
+        - Hay là chúng ta ăn trưa cùng nhau nhé?
+        - Hay mình cùng ăn trưa nhé?
+        - Hay là mình cùng ăn trưa nhé?
+        - Hay chúng mình ăn trưa cùng nhau nhé?
+        - Mình ăn trưa cùng nhau nhé?
+        - Sao mình không ăn trưa cùng nhau nhỉ?
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Why don't we…? là lời gợi ý, nên dịch tự nhiên là "hay là mình… nhé?" chứ không phải "tại sao chúng ta không…". Together là "cùng nhau".
+    display_answer: Hay là mình ăn trưa cùng nhau nhé?
+
+  - key: en:exercise:lets-and-want-to-translate-what-about-cinema
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:what-about
+    prompt:
+      source_text: Thế đi xem phim thì sao?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - What about going to the cinema?
+        - How about going to the cinema?
+        - What about going to the movies?
+        - How about going to the movies?
+        - What about the cinema?
+        - How about the cinema?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: What about go to the cinema?
+        feedback_vi: Sau What about dùng -ing - going.
+        error_tag: what_about_ing
+      - answer: What about to go to the cinema?
+        feedback_vi: Sau What about không dùng to - What about going…?
+        error_tag: what_about_ing
+      - answer: What about going to cinema?
+        feedback_vi: Cần the trước cinema.
+        error_tag: article
+    explanation:
+      vi: "\"… thì sao?\" là What about / How about + -ing hoặc danh từ. Đi xem phim là go to the cinema → going to the cinema."
+    display_answer: What about going to the cinema?
+
+  - key: en:exercise:lets-and-want-to-order-do-you-want
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:want-to
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: \"Bạn có muốn chơi cầu lông không?\""
+      tokens:
+        - { id: z-play, text: play }
+        - { id: z-are, text: Are }
+        - { id: z-want, text: want }
+        - { id: z-badminton, text: badminton }
+        - { id: z-you, text: you }
+        - { id: z-playing, text: playing }
+        - { id: z-do, text: Do }
+        - { id: z-to, text: to }
+    answer:
+      orders:
+        - [z-do, z-you, z-want, z-to, z-play, z-badminton]
+    explanation:
+      vi: Câu hỏi với want dùng Do + you + want to + động từ nguyên mẫu. Không dùng Are vì want là động từ thường, và sau to không dùng playing.
+    display_answer: Do you want to play badminton?

@@ -1,0 +1,970 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Thời gian rảnh, thời tiết & màu sắc". IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Bạn làm gì lúc rảnh? ----------------
+  - key: en:item:free-time
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: free time
+      ipa: /ˌfriː ˈtaɪm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời gian rảnh
+      examples:
+        - target: I don't have much free time.
+          translation:
+            vi: Mình không có nhiều thời gian rảnh.
+      pronunciation_note:
+        vi: Free đọc kéo dài /friː/ gần "frii", nhớ có âm /r/ sau f, không đọc thành "phi".
+      confusion:
+        vi: Free ở đây là "rảnh", không phải "miễn phí". Lúc rảnh là in my free time, có in và có my/your.
+
+  - key: en:item:hobby
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: hobby
+      ipa: UK /ˈhɒbi/ · US /ˈhɑːbi/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sở thích (việc bạn hay làm cho vui)
+      examples:
+        - target: My hobby is drawing.
+          translation:
+            vi: Sở thích của mình là vẽ.
+      pronunciation_note:
+        vi: Nhấn âm đầu HOB; chữ y cuối đọc /i/ ngắn.
+      confusion:
+        vi: Số nhiều là hobbies (y → ies). Sau My hobby is dùng danh từ hoặc -ing - My hobby is reading, không nói My hobby is read.
+
+  - key: en:item:what-do-you-do-in-your-free-time
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: What do you do in your free time?
+      ipa: /ˌwɒt də jə ˈduː ɪn jə ˈfriː taɪm/ UK · /ˌwʌt də jə ˈduː ɪn jɚ ˈfriː taɪm/ US
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Bạn làm gì lúc rảnh?
+      examples:
+        - target: What do you do in your free time? - I play the guitar.
+          translation:
+            vi: Lúc rảnh bạn làm gì? - Mình chơi đàn ghi-ta.
+      pronunciation_note:
+        vi: Do đầu tiên đọc rất nhẹ /də/, do thứ hai là động từ chính nên đọc rõ /duː/.
+      confusion:
+        vi: Câu có hai chữ do - chữ đầu là trợ động từ để hỏi, chữ sau là "làm". Đừng bỏ chữ nào - không nói What you do in your free time?
+
+  - key: en:item:what-do-you-like-doing
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [speaking, grammar]
+    front:
+      text: What do you like doing?
+      ipa: /ˌwɒt də jə ˈlaɪk ˈduːɪŋ/ UK · /ˌwʌt də jə ˈlaɪk ˈduːɪŋ/ US
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Bạn thích làm gì?
+      examples:
+        - target: What do you like doing at the weekend? - I like going to the cinema.
+          translation:
+            vi: Cuối tuần bạn thích làm gì? - Mình thích đi xem phim.
+      confusion:
+        vi: Trả lời bằng like + -ing - I like dancing. Câu trả lời I like dance là lỗi người Việt rất hay mắc.
+
+  - key: en:item:play-the-guitar
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: play the guitar / the piano
+      ipa: UK /ˌpleɪ ðə ɡɪˈtɑː/ · US /ˌpleɪ ðə ɡɪˈtɑːr/ · /piˈænəʊ/ UK · /piˈænoʊ/ US
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: chơi đàn ghi-ta / chơi đàn piano
+      examples:
+        - target: My sister plays the piano very well.
+          translation:
+            vi: Chị mình chơi piano rất hay.
+      pronunciation_note:
+        vi: Guitar nhấn âm sau - gi-TAR, khác tiếng Việt "ghi-ta" đọc đều.
+      confusion:
+        vi: Nhạc cụ có the (play the guitar), còn môn thể thao thì không (play football). Người Việt hay nói "play guitar" hoặc "play the football".
+
+  - key: en:item:go-shopping
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: go shopping
+      ipa: UK /ˌɡəʊ ˈʃɒpɪŋ/ · US /ˌɡoʊ ˈʃɑːpɪŋ/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi mua sắm
+      examples:
+        - target: We often go shopping on Saturday.
+          translation:
+            vi: Chúng mình hay đi mua sắm vào thứ Bảy.
+      confusion:
+        vi: Go + -ing, không có to - go shopping, không nói "go to shopping". Shopping viết hai chữ p.
+
+  - key: en:item:go-to-the-cinema
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: go to the cinema
+      ipa: UK /ˌɡəʊ tə ðə ˈsɪnəmə/ · US /ˌɡoʊ tə ðə ˈsɪnəmə/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi xem phim (ở rạp)
+      examples:
+        - target: Let's go to the cinema tonight.
+          translation:
+            vi: Tối nay mình đi xem phim đi.
+      pronunciation_note:
+        vi: Cinema nhấn âm đầu - SI-nờ-mờ, chữ c đọc /s/.
+      confusion:
+        vi: Đây là nơi chốn nên có to the - go to the cinema. Người Mỹ thường nói go to the movies.
+
+  - key: en:item:go-for-a-walk
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: go for a walk
+      ipa: UK /ˌɡəʊ fər ə ˈwɔːk/ · US /ˌɡoʊ fɚ ə ˈwɑːk/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi dạo
+      examples:
+        - target: I go for a walk in the park after dinner.
+          translation:
+            vi: Sau bữa tối mình đi dạo trong công viên.
+      pronunciation_note:
+        vi: Chữ l trong walk câm - đọc /wɔːk/ gần "quoóc".
+      confusion:
+        vi: Đi dạo là go for a walk, có for a. Walk một mình là "đi bộ" nói chung - I walk to school.
+
+  - key: en:item:ride-a-bike
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: ride a bike
+      ipa: /ˌraɪd ə ˈbaɪk/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đạp xe, đi xe đạp
+      examples:
+        - target: My children ride their bikes in the park.
+          translation:
+            vi: Các con mình đạp xe trong công viên.
+      confusion:
+        vi: Đi xe đạp, xe máy, cưỡi ngựa đều dùng ride, không dùng drive (drive chỉ cho ô tô) hay "go a bike".
+
+  - key: en:item:dance
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: dance
+      ipa: UK /dɑːns/ · US /dæns/
+      pos: động từ / danh từ
+    back:
+      meaning:
+        vi: nhảy, múa
+      examples:
+        - target: She loves dancing.
+          translation:
+            vi: Cô ấy mê nhảy.
+      pronunciation_note:
+        vi: Người Anh đọc /dɑːns/ gần "đaans", người Mỹ đọc /dæns/; nhớ âm /s/ ở cuối.
+      confusion:
+        vi: Thêm -ing thì bỏ e - dancing, không viết "danceing".
+
+  - key: en:item:sing
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: sing
+      ipa: /sɪŋ/
+      pos: động từ
+    back:
+      meaning:
+        vi: hát
+      examples:
+        - target: We sing karaoke on Friday evenings.
+          translation:
+            vi: Tối thứ Sáu bọn mình hát karaoke.
+      pronunciation_note:
+        vi: Âm cuối /ŋ/ giống "ng" tiếng Việt, không bật thêm âm g.
+      confusion:
+        vi: Người hát là singer, bài hát là song. Hát một bài là sing a song.
+
+  - key: en:item:draw
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: draw
+      ipa: UK /drɔː/ · US /drɑː/
+      pos: động từ
+    back:
+      meaning:
+        vi: vẽ (bằng bút chì, bút mực)
+      examples:
+        - target: My son likes drawing animals.
+          translation:
+            vi: Con trai mình thích vẽ con vật.
+      pronunciation_note:
+        vi: Chữ w không đọc - draw là /drɔː/, gần "đro", không đọc "đrao".
+      confusion:
+        vi: Vẽ bằng bút là draw; vẽ bằng màu nước, sơn là paint.
+
+  - key: en:item:hate
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: hate
+      ipa: /heɪt/
+      pos: động từ
+    back:
+      meaning:
+        vi: rất ghét
+      examples:
+        - target: I hate getting up early.
+          translation:
+            vi: Mình ghét dậy sớm.
+      pronunciation_note:
+        vi: Đọc /heɪt/ gần "hêit", bật nhẹ âm /t/ cuối; khác hat /hæt/ (cái mũ).
+      confusion:
+        vi: Hate mạnh hơn don't like nhiều. Giống like/love, sau hate dùng -ing - I hate cooking.
+
+  # ---------------- Bài 2: Rủ bạn đi chơi ----------------
+  - key: en:item:want-to
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: want to + động từ nguyên mẫu
+      ipa: UK /ˈwɒnt tə/ · US /ˈwɑːnt tə/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: muốn làm gì
+      examples:
+        - target: I want to go to the beach.
+          translation:
+            vi: Mình muốn đi biển.
+        - target: Do you want to play badminton?
+          translation:
+            vi: Bạn có muốn chơi cầu lông không?
+      pronunciation_note:
+        vi: Khi nói nhanh, want to nghe như "wanna"; khi viết luôn viết want to.
+      confusion:
+        vi: Phải có to - I want to go, không nói "I want go". Với he/she là wants to, phủ định là don't want to.
+
+  - key: en:item:lets
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: Let's + động từ nguyên mẫu
+      ipa: /lets/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: Mình cùng… đi! (rủ ai đó làm gì cùng)
+      examples:
+        - target: Let's go to the park.
+          translation:
+            vi: Mình ra công viên đi.
+      confusion:
+        vi: Sau Let's là động từ nguyên mẫu, không có to - Let's go, không nói "Let's to go" hay "Let's going". Let's = let us, luôn có cả người nói.
+
+  - key: en:item:why-dont-we
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: Why don't we + động từ nguyên mẫu?
+      ipa: UK /ˌwaɪ dəʊnt wi/ · US /ˌwaɪ doʊnt wi/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: Hay là mình… nhé? (gợi ý nhẹ nhàng)
+      examples:
+        - target: Why don't we watch a film at home?
+          translation:
+            vi: Hay là mình xem phim ở nhà nhé?
+      confusion:
+        vi: Đây là lời gợi ý, không phải câu hỏi "tại sao". Sau we là động từ nguyên mẫu, không có to.
+
+  - key: en:item:what-about
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: What about / How about + danh từ / -ing?
+      ipa: UK /ˌwɒt əˈbaʊt/ · US /ˌwʌt əˈbaʊt/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: Thế còn… thì sao? / …thì sao?
+      examples:
+        - target: What about going swimming?
+          translation:
+            vi: Đi bơi thì sao?
+        - target: What about Sunday?
+          translation:
+            vi: Thế Chủ nhật thì sao?
+      confusion:
+        vi: Sau about dùng danh từ hoặc -ing - What about going…, không nói "What about go…".
+
+  - key: en:item:sounds-good
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: Sounds good! / Sounds great!
+      ipa: /ˌsaʊndz ˈɡʊd/ · /ˌsaʊndz ˈɡreɪt/
+      pos: câu đáp
+    back:
+      meaning:
+        vi: Nghe được đấy! / Hay quá!
+      examples:
+        - target: Let's go shopping on Saturday. - Sounds great!
+          translation:
+            vi: Thứ Bảy đi mua sắm đi. - Hay quá!
+      confusion:
+        vi: Đây là cách nói ngắn của That sounds good. Không nói "Sound good" khi nói về một ý kiến - cần -s.
+
+  - key: en:item:good-idea
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: That's a good idea.
+      ipa: UK /ˌðæts ə ɡʊd aɪˈdɪə/ · US /ˌðæts ə ɡʊd aɪˈdiːə/
+      pos: câu đáp
+    back:
+      meaning:
+        vi: Ý hay đấy.
+      examples:
+        - target: Why don't we go to the cinema? - That's a good idea.
+          translation:
+            vi: Hay là mình đi xem phim nhé? - Ý hay đấy.
+      pronunciation_note:
+        vi: Idea nhấn âm giữa - ai-ĐIA, ba âm tiết.
+      confusion:
+        vi: Idea là danh từ đếm được nên cần a - a good idea, không nói "That's good idea".
+
+  - key: en:item:sorry-i-cant
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: Sorry, I can't.
+      ipa: UK /ˌsɒri aɪ ˈkɑːnt/ · US /ˌsɑːri aɪ ˈkænt/
+      pos: câu đáp
+    back:
+      meaning:
+        vi: Xin lỗi, mình không đi được.
+      examples:
+        - target: Let's play tennis tomorrow. - Sorry, I can't. I'm busy.
+          translation:
+            vi: Mai chơi quần vợt đi. - Xin lỗi, mình không đi được. Mình bận.
+      confusion:
+        vi: Từ chối lời rủ nên thêm lý do ngắn (I'm busy, I have to work). Không trả lời cộc lốc "No."
+
+  - key: en:item:busy
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: busy
+      ipa: /ˈbɪzi/
+      pos: tính từ
+    back:
+      meaning:
+        vi: bận
+      examples:
+        - target: I'm busy on Saturday morning.
+          translation:
+            vi: Sáng thứ Bảy mình bận.
+      pronunciation_note:
+        vi: Chữ u đọc /ɪ/ - "BI-zi", không đọc "biu-zi" hay "bu-zi".
+      confusion:
+        vi: Busy là tính từ nên cần be - I'm busy, không nói "I busy".
+
+  - key: en:item:me-too
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: Me too.
+      ipa: /ˌmiː ˈtuː/
+      pos: câu đáp
+    back:
+      meaning:
+        vi: Mình cũng vậy.
+      examples:
+        - target: I want to go to the beach. - Me too!
+          translation:
+            vi: Mình muốn đi biển. - Mình cũng thế!
+      confusion:
+        vi: Me too chỉ dùng để đồng ý với câu khẳng định. Không nói "I too" khi trả lời ngắn.
+
+  - key: en:item:together
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: together
+      ipa: UK /təˈɡeðə/ · US /təˈɡeðɚ/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: cùng nhau
+      examples:
+        - target: Let's have lunch together.
+          translation:
+            vi: Mình ăn trưa cùng nhau đi.
+      pronunciation_note:
+        vi: Nhấn âm giữa - tờ-GE-đờ; th là /ð/, đặt lưỡi giữa hai hàm răng.
+      confusion:
+        vi: Together thường đứng cuối câu, không đứng trước động từ như "cùng" trong tiếng Việt - không nói "Let's together go".
+
+  # ---------------- Bài 3: Màu sắc ----------------
+  - key: en:item:colour
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: colour (US color)
+      ipa: UK /ˈkʌlə/ · US /ˈkʌlɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: màu, màu sắc
+      examples:
+        - target: Blue is a beautiful colour.
+          translation:
+            vi: Xanh dương là một màu đẹp.
+      pronunciation_note:
+        vi: Chữ o đầu đọc /ʌ/ gần "â" - "CÂ-lờ", không đọc "cô-lơ".
+      confusion:
+        vi: Anh viết colour, Mỹ viết color - đều đúng, nhưng dùng thống nhất một kiểu trong cùng bài viết.
+
+  - key: en:item:what-colour-is-it
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: What colour is it?
+      ipa: UK /ˌwɒt ˈkʌlər ɪz ɪt/ · US /ˌwʌt ˈkʌlɚ ɪz ɪt/
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Nó màu gì?
+      examples:
+        - target: What colour is your bag? - It's black.
+          translation:
+            vi: Túi của bạn màu gì? - Màu đen.
+      confusion:
+        vi: Không nói "What is colour…?" - colour đứng ngay sau What. Trả lời cần It's - It's red, không chỉ nói "Red is".
+
+  - key: en:item:red
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: red
+      ipa: /red/
+      pos: tính từ / danh từ
+    back:
+      meaning:
+        vi: màu đỏ
+      examples:
+        - target: She's got a red bag.
+          translation:
+            vi: Cô ấy có một cái túi màu đỏ.
+      pronunciation_note:
+        vi: Bật rõ âm /d/ cuối; đừng đọc thành "ret" hay "re".
+      confusion:
+        vi: Màu đứng trước danh từ - a red bag, không nói "a bag red" như "túi đỏ" trong tiếng Việt.
+
+  - key: en:item:blue
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: blue
+      ipa: /bluː/
+      pos: tính từ / danh từ
+    back:
+      meaning:
+        vi: màu xanh dương, xanh da trời
+      examples:
+        - target: The sky is blue today.
+          translation:
+            vi: Hôm nay trời xanh.
+      confusion:
+        vi: Tiếng Việt "xanh" có thể là blue hoặc green. Xanh da trời, xanh nước biển là blue; xanh lá cây là green.
+
+  - key: en:item:green
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: green
+      ipa: /ɡriːn/
+      pos: tính từ / danh từ
+    back:
+      meaning:
+        vi: màu xanh lá cây
+      examples:
+        - target: I've got a green T-shirt.
+          translation:
+            vi: Mình có một cái áo phông màu xanh lá.
+      pronunciation_note:
+        vi: Âm /iː/ kéo dài - "griin", có /r/ sau g.
+      confusion:
+        vi: Rau xanh, lá xanh luôn là green; đừng dịch "xanh" thành blue khi nói về cây cối.
+
+  - key: en:item:yellow
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: yellow
+      ipa: UK /ˈjeləʊ/ · US /ˈjeloʊ/
+      pos: tính từ / danh từ
+    back:
+      meaning:
+        vi: màu vàng
+      examples:
+        - target: Bananas are yellow.
+          translation:
+            vi: Chuối có màu vàng.
+      pronunciation_note:
+        vi: Âm đầu /j/ như "i" lướt - "IE-lâu", không đọc thành "zê-lô".
+      confusion:
+        vi: Vàng kim loại (vàng bạc) là gold; màu vàng thông thường là yellow.
+
+  - key: en:item:black-white
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: black / white
+      ipa: /blæk/ · /waɪt/
+      pos: tính từ / danh từ
+    back:
+      meaning:
+        vi: màu đen / màu trắng
+      examples:
+        - target: My cat is black and white.
+          translation:
+            vi: Con mèo của mình màu đen trắng.
+      pronunciation_note:
+        vi: Black có /æ/ mở rộng miệng và bật /k/ cuối; white bắt đầu bằng /w/ tròn môi, chữ h không đọc.
+      confusion:
+        vi: Tiếng Anh nói black and white (đen trước trắng), giống thứ tự "đen trắng" của tiếng Việt.
+
+  - key: en:item:orange-pink-purple
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: orange / pink / purple
+      ipa: UK /ˈɒrɪndʒ/ · US /ˈɔːrɪndʒ/ · /pɪŋk/ · UK /ˈpɜːpl/ · US /ˈpɝːpl/
+      pos: tính từ / danh từ
+    back:
+      meaning:
+        vi: màu cam / màu hồng / màu tím
+      examples:
+        - target: Her dress is pink and purple.
+          translation:
+            vi: Váy của cô ấy màu hồng và tím.
+      pronunciation_note:
+        vi: Orange đọc "O-rinj", hai âm tiết, âm cuối /dʒ/; purple đọc "PƠ-pồ".
+      confusion:
+        vi: Orange vừa là màu cam vừa là quả cam - an orange (quả cam), an orange bag (túi màu cam).
+
+  - key: en:item:brown-grey
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: brown / grey (US gray)
+      ipa: /braʊn/ · /ɡreɪ/
+      pos: tính từ / danh từ
+    back:
+      meaning:
+        vi: màu nâu / màu xám
+      examples:
+        - target: He's got brown eyes and grey hair.
+          translation:
+            vi: Ông ấy có mắt nâu và tóc bạc.
+      confusion:
+        vi: Tóc "bạc" của người già là grey hair, không phải silver hair. Anh viết grey, Mỹ viết gray.
+
+  - key: en:item:light-dark
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: light / dark + màu
+      ipa: /laɪt/ · UK /dɑːk/ · US /dɑːrk/
+      pos: tính từ
+    back:
+      meaning:
+        vi: (màu) nhạt / (màu) đậm, sẫm
+      examples:
+        - target: I want a dark blue shirt.
+          translation:
+            vi: Mình muốn một cái áo sơ mi màu xanh đậm.
+      confusion:
+        vi: Light/dark đứng trước tên màu - light blue (xanh nhạt), ngược với tiếng Việt "xanh nhạt".
+
+  - key: en:item:favourite
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: favourite (US favorite)
+      ipa: /ˈfeɪvərɪt/
+      pos: tính từ
+    back:
+      meaning:
+        vi: (… mà mình) thích nhất
+      examples:
+        - target: My favourite colour is green.
+          translation:
+            vi: Màu mình thích nhất là màu xanh lá.
+        - target: What's your favourite season?
+          translation:
+            vi: Bạn thích mùa nào nhất?
+      pronunciation_note:
+        vi: Thường đọc ba âm tiết "FÂY-vờ-rít", nhấn âm đầu.
+      confusion:
+        vi: Favourite đứng trước danh từ và cần my/your - my favourite colour, không nói "colour favourite of me" hay "the most favourite".
+
+  - key: en:item:bag
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: bag
+      ipa: /bæɡ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái túi, cái cặp
+      examples:
+        - target: Is this your bag? - Yes, the brown one.
+          translation:
+            vi: Đây là túi của bạn à? - Ừ, cái màu nâu.
+      pronunciation_note:
+        vi: Âm /æ/ mở miệng rộng; âm cuối /ɡ/ phải nghe được, khác back /bæk/.
+      confusion:
+        vi: Bag là từ chung cho túi xách, cặp, ba lô; ba lô cụ thể là backpack.
+
+  # ---------------- Bài 4: Thời tiết và các mùa ----------------
+  - key: en:item:it-weather
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: It's + thời tiết (It's sunny / It's cold)
+      ipa: /ɪts/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: "Trời… - dùng it làm chủ ngữ giả khi nói về thời tiết."
+      examples:
+        - target: It's hot and sunny today.
+          translation:
+            vi: Hôm nay trời nóng và nắng.
+        - target: It's raining.
+          translation:
+            vi: Trời đang mưa.
+      confusion:
+        vi: Tiếng Việt nói "trời mưa", "nóng quá", nhưng tiếng Anh cần It's - It's hot, không nói "Is hot" hay "Weather is hot". Rain là danh từ/động từ - It's rainy hoặc It's raining, không nói "It is rain".
+
+  - key: en:item:whats-the-weather-like
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: What's the weather like?
+      ipa: UK /ˌwɒts ðə ˈweðə laɪk/ · US /ˌwʌts ðə ˈweðɚ laɪk/
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Thời tiết thế nào?
+      examples:
+        - target: What's the weather like in Hanoi in winter? - It's cold.
+          translation:
+            vi: Mùa đông Hà Nội thời tiết thế nào? - Trời lạnh.
+      confusion:
+        vi: Like ở đây là "như thế nào", không phải "thích". Câu cần the weather - không nói "What's weather like?" hay "How is the weather like?".
+
+  - key: en:item:hot-cold
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: hot / cold
+      ipa: UK /hɒt/ · US /hɑːt/ · UK /kəʊld/ · US /koʊld/
+      pos: tính từ
+    back:
+      meaning:
+        vi: nóng / lạnh
+      examples:
+        - target: It's very hot in Saigon in April.
+          translation:
+            vi: Tháng Tư ở Sài Gòn trời rất nóng.
+      pronunciation_note:
+        vi: Cold có âm đôi /əʊ/ và bật /d/ cuối - "câuld"; đừng đọc "con" hay "côn".
+      confusion:
+        vi: Nói về trời thì dùng It's cold; nói về người thấy lạnh thì I'm cold. Không nói "I'm hot weather".
+
+  - key: en:item:season
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: season
+      ipa: /ˈsiːzn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa (trong năm)
+      examples:
+        - target: There are four seasons in the north of Vietnam.
+          translation:
+            vi: Miền Bắc Việt Nam có bốn mùa.
+      pronunciation_note:
+        vi: Chữ s giữa từ đọc /z/ - "SI-zần".
+      confusion:
+        vi: Trước tên mùa dùng in - in summer, in the summer đều đúng; không dùng on.
+
+  - key: en:item:spring
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: spring
+      ipa: /sprɪŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa xuân
+      examples:
+        - target: Tet is in spring.
+          translation:
+            vi: Tết vào mùa xuân.
+      pronunciation_note:
+        vi: Ba phụ âm liền nhau /spr/ - không chèn thêm nguyên âm thành "sờ-pờ-rinh".
+      confusion:
+        vi: Tên mùa không viết hoa trong tiếng Anh - spring, không phải Spring (trừ đầu câu).
+
+  - key: en:item:summer
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: summer
+      ipa: UK /ˈsʌmə/ · US /ˈsʌmɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa hè
+      examples:
+        - target: We go to the beach in summer.
+          translation:
+            vi: Mùa hè bọn mình đi biển.
+      confusion:
+        vi: Vào mùa hè là in summer, không nói "on summer" hay "at summer".
+
+  - key: en:item:autumn
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: autumn (US fall)
+      ipa: /ˈɔːtəm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa thu
+      examples:
+        - target: Hanoi is beautiful in autumn.
+          translation:
+            vi: Hà Nội đẹp vào mùa thu.
+      pronunciation_note:
+        vi: Chữ n cuối câm - đọc "O-tầm", không đọc "o-tum-n".
+      confusion:
+        vi: Người Anh nói autumn, người Mỹ nói fall - cùng nghĩa.
+
+  - key: en:item:winter
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: winter
+      ipa: UK /ˈwɪntə/ · US /ˈwɪntɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa đông
+      examples:
+        - target: It's cold and windy in winter.
+          translation:
+            vi: Mùa đông trời lạnh và nhiều gió.
+      confusion:
+        vi: Winter đọc "UYN-tờ", khác window (cửa sổ). Vào mùa đông là in winter.
+
+  - key: en:item:snow
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: snow
+      ipa: UK /snəʊ/ · US /snoʊ/
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: tuyết; tuyết rơi
+      examples:
+        - target: It sometimes snows in Sa Pa in winter.
+          translation:
+            vi: Mùa đông ở Sa Pa thỉnh thoảng có tuyết rơi.
+      confusion:
+        vi: Giống rain - It's snowing (tuyết đang rơi), It's snowy (trời nhiều tuyết). Không nói "It is snow".
+
+  - key: en:item:rainy-season-dry-season
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: the rainy season / the dry season
+      ipa: /ðə ˈreɪni ˌsiːzn/ · /ðə ˈdraɪ ˌsiːzn/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: mùa mưa / mùa khô
+      examples:
+        - target: In the south of Vietnam, the rainy season is from May to October.
+          translation:
+            vi: Ở miền Nam Việt Nam, mùa mưa kéo dài từ tháng Năm đến tháng Mười.
+      confusion:
+        vi: Có the - in the rainy season. Rainy (tính từ) đứng trước season, không nói "season rain".
+
+  # ---------------- Bài 5: Ôn tập ----------------
+  - key: en:item:postcard
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary, writing]
+    front:
+      text: postcard
+      ipa: UK /ˈpəʊstkɑːd/ · US /ˈpoʊstkɑːrd/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bưu thiếp
+      examples:
+        - target: I'm writing a postcard to my grandmother.
+          translation:
+            vi: Mình đang viết bưu thiếp cho bà.
+      confusion:
+        vi: Bưu thiếp viết ngắn, thân mật - mở đầu Dear/Hi + tên, kể thời tiết và việc đang làm, kết thúc Love from hoặc See you soon.
+
+  - key: en:item:love-from
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [writing]
+    front:
+      text: Love from … / Love, …
+      ipa: /ˈlʌv frəm/
+      pos: lời kết thư
+    back:
+      meaning:
+        vi: Thương, … (lời chào cuối thư gửi người thân, bạn thân)
+      examples:
+        - target: See you soon! Love from Mai.
+          translation:
+            vi: Sớm gặp lại nhé! Thương, Mai.
+      confusion:
+        vi: Chỉ dùng với gia đình, bạn thân. Thư công việc dùng Best regards, không dùng Love from.

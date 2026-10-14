@@ -1,0 +1,422 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:health-habits
+order_index: 3
+level: topik3
+title:
+  vi: Thói quen sức khoẻ - A-게 và -도록
+objectives:
+  - vi: Biến tính từ thành trạng từ bằng A-게 để nói cách làm việc gì (건강하게, 맛있게).
+  - vi: Nói mục đích, kết quả mong muốn bằng -도록 (để cho…, sao cho…), đặc biệt -지 않도록.
+  - vi: Nói về sức khoẻ và lối sống - 건강 검진, 스트레스, 운동 부족, 불면증, 다이어트.
+estimated_minutes: 20
+skills: [grammar, vocabulary, speaking]
+prerequisites: [ko:lesson:apartment-life]
+items:
+  - item: ko:item:ha-gram-ge-adverb
+  - item: ko:item:ha-gram-dorok
+  - item: ko:item:ha-geongang-geomjin
+  - item: ko:item:ha-seuteureseu-batda
+  - item: ko:item:ha-seuteureseu-pulda
+  - item: ko:item:ha-gyuchikjeogeuro
+  - item: ko:item:ha-undong-bujok
+  - item: ko:item:ha-daieoteu
+  - item: ko:item:ha-yeongyangje
+  - item: ko:item:ha-bulmyeonjeung
+  - item: ko:item:ha-sari-jjida
+  - item: ko:item:ha-geonganghada
+  - item: ko:item:gram-dorok-hada
+    role: reuse
+  - item: ko:item:verb-undonghada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được thói quen sức khoẻ của mình ("tôi tập thể dục đều đặn", "tôi bị stress nên mất ngủ") và đưa ra lời nhắc như "hãy rửa tay để không bị cảm".
+  - type: explain
+    text:
+      vi: "A-게 biến tính từ thành trạng từ chỉ cách thức, giống \"một cách…\" trong tiếng Việt: 건강하다 → 건강하게 살다 (sống khoẻ mạnh), 맛있다 → 맛있게 드세요. Tiếng Việt đặt tính từ ngay sau động từ (\"ăn ngon\"), còn tiếng Hàn phải đổi sang -게 và đặt trước động từ."
+  - type: explain
+    text:
+      vi: "-도록 nghĩa là \"để cho…, sao cho…\": vế trước là kết quả bạn muốn, vế sau là việc làm để đạt kết quả đó. Rất hay dùng với phủ định -지 않도록 trong lời khuyên, thông báo - 감기에 걸리지 않도록 손을 씻으세요."
+  - type: explain
+    text:
+      vi: "Phân biệt -게 và -도록: nói CÁCH làm (ăn ngon, sống khoẻ, dọn sạch) thì chỉ dùng -게. Nói MỤC ĐÍCH thì dùng -도록; trong văn nói -게 cũng thay được (늦지 않게 = 늦지 않도록)."
+  - type: deep_explain
+    text:
+      vi: Bạn đã gặp V-도록 하다 ở unit công việc (chỉ thị "hãy cố…"); ở đây -도록 đứng giữa câu, nối hai vế. Vế -도록 thường là trạng thái hay sự việc không hoàn toàn do mình điều khiển (잘 수 있도록, 걸리지 않도록), nên khác với -기 위해서 chỉ đi với hành động có chủ ý của cùng chủ ngữ. Văn viết, bài báo sức khoẻ, hướng dẫn công cộng rất chuộng -도록.
+  - type: example
+    target: 건강하게 살려면 규칙적으로 운동하는 게 중요해요.
+    target_lang: ko
+    translation:
+      vi: Muốn sống khoẻ mạnh thì tập thể dục đều đặn là quan trọng.
+    note:
+      vi: 건강하게 - cách sống; 규칙적으로 - trạng từ có sẵn, không cần -게.
+  - type: example
+    target: 감기에 걸리지 않도록 손을 자주 씻으세요.
+    target_lang: ko
+    translation:
+      vi: Hãy rửa tay thường xuyên để không bị cảm.
+    note:
+      vi: -지 않도록 - để không…; rất hay gặp trong lời khuyên, thông báo.
+  - type: example
+    target: 일이 많아서 스트레스를 받으면 저는 운동으로 스트레스를 풀어요.
+    target_lang: ko
+    translation:
+      vi: Khi bị căng thẳng vì nhiều việc, tôi giải toả bằng cách tập thể dục.
+    note:
+      vi: Cặp đối lập - 스트레스를 받다 (bị) ↔ 스트레스를 풀다 (giải toả).
+  - type: example
+    target: 운동 부족이라서 살이 쪘어요. 그래서 다이어트를 시작했어요.
+    target_lang: ko
+    translation:
+      vi: Vì thiếu vận động nên tôi tăng cân. Vì vậy tôi đã bắt đầu giảm cân.
+  - type: example
+    target: 불면증이 있어서 밤에 푹 잘 수 있도록 커피를 안 마셔요.
+    target_lang: ko
+    translation:
+      vi: Tôi bị mất ngủ nên không uống cà phê để ban đêm ngủ được ngon.
+  - type: common_mistake
+    wrong: 건강한 살고 싶어요.
+    right: 건강하게 살고 싶어요.
+    target_lang: ko
+    note:
+      vi: Người Việt hay dịch "sống khoẻ" bằng cách đặt nguyên tính từ cạnh động từ. Trước động từ, tính từ phải đổi sang dạng -게; dạng -(으)ㄴ chỉ đứng trước danh từ (건강한 사람).
+  - type: common_mistake
+    wrong: 맛있도록 드세요.
+    right: 맛있게 드세요.
+    target_lang: ko
+    note:
+      vi: '"Ăn ngon" là cách ăn, nên dùng -게. -도록 chỉ mục đích hay kết quả mong muốn, không thay cho trạng từ chỉ cách thức.'
+  - type: common_mistake
+    wrong: 요즘 스트레스가 많아서 스트레스를 받고 싶어요.
+    right: 요즘 스트레스가 많아서 스트레스를 풀고 싶어요.
+    target_lang: ko
+    note:
+      vi: 받다 là "bị, nhận" stress; "giải toả" là 풀다. Đừng dịch từng chữ "xả stress" thành 받다.
+  - type: summary
+    points:
+      - vi: A-게 + động từ - cách thức (건강하게, 맛있게, 깨끗하게); dạng -(으)ㄴ chỉ đứng trước danh từ.
+      - vi: V/A-도록 - để cho, sao cho; -지 않도록 = để không…; nói mục đích trong văn nói có thể dùng -게.
+      - vi: 스트레스를 받다 ↔ 스트레스를 풀다 · 불면증 · 운동 부족 · 살이 찌다/빠지다.
+      - vi: 건강 검진을 받다 · 영양제를 먹다 · 다이어트 중이에요 · 규칙적으로.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:health-habits-mcq-ge-form
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ha-gram-ge-adverb
+    prompt:
+      stem: "Chọn dạng đúng để nói \"Chúc ngon miệng\": ___ 드세요."
+      stem_lang: vi
+      options:
+        - { id: y4c, text: 맛있게, lang: ko }
+        - { id: g8p, text: 맛있는, lang: ko }
+        - { id: a1m, text: 맛있도록, lang: ko }
+        - { id: v6r, text: 맛있어서, lang: ko }
+    answer:
+      correct_option_id: y4c
+    explanation:
+      vi: Trước động từ, tính từ chỉ cách thức phải đổi sang -게 → 맛있게 드세요. 맛있는 chỉ đứng trước danh từ; -도록 không chỉ cách thức; -아서 là "vì".
+    display_answer: 맛있게
+
+  - key: ko:exercise:health-habits-listen-checkup
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ha-geongang-geomjin
+    prompt:
+      audio_asset_id: null
+      fallback_text: 올해 건강 검진을 받았어요. 의사 선생님이 운동 부족이라고 했어요.
+      options:
+        - { id: b7e, text: "Năm nay tôi đã đi khám sức khoẻ. Bác sĩ nói tôi bị thiếu vận động.", lang: vi }
+        - { id: m2k, text: "Năm nay tôi chưa đi khám sức khoẻ vì bận tập thể dục.", lang: vi }
+        - { id: z5h, text: "Bác sĩ nói tôi tập thể dục quá nhiều.", lang: vi }
+        - { id: q9s, text: "Năm nay tôi đã khám sức khoẻ và bác sĩ nói tôi bị mất ngủ.", lang: vi }
+    answer:
+      correct_option_id: b7e
+    explanation:
+      vi: 건강 검진을 받았어요 = đã đi khám sức khoẻ; 운동 부족이라고 했어요 = nói là thiếu vận động (tường thuật -(이)라고 하다).
+    display_answer: "Năm nay tôi đã đi khám sức khoẻ. Bác sĩ nói tôi bị thiếu vận động."
+
+  - key: ko:exercise:health-habits-mcq-dorok-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ha-gram-dorok
+    prompt:
+      stem: "감기에 걸리지 않도록 손을 자주 씻으세요. nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: n3w, text: "Hãy rửa tay thường xuyên để không bị cảm.", lang: vi }
+        - { id: h6j, text: "Vì không bị cảm nên hãy rửa tay thường xuyên.", lang: vi }
+        - { id: e2x, text: "Bị cảm thì đừng rửa tay thường xuyên.", lang: vi }
+        - { id: l8f, text: "Hãy rửa tay thường xuyên cho đến khi hết cảm.", lang: vi }
+    answer:
+      correct_option_id: n3w
+    explanation:
+      vi: '-지 않도록 nghĩa là "để không…" - vế trước là kết quả mong muốn (không bị cảm), vế sau là việc cần làm (rửa tay). -도록 không phải "vì" hay "cho đến khi" trong câu này.'
+    display_answer: "Hãy rửa tay thường xuyên để không bị cảm."
+
+  - key: ko:exercise:health-habits-fill-pulda-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-seuteureseu-pulda
+    prompt:
+      template: "스트레스를 {{b1}} 방법이 뭐예요?"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Cách giải toả căng thẳng của bạn là gì?"
+        - "Gợi ý: 풀다 + -는 (định ngữ); gốc ㄹ rơi trước ㄴ."
+    answer:
+      blanks:
+        b1: [푸는]
+    known_wrong:
+      - answer: 풀는
+        feedback_vi: Gốc ㄹ rơi trước ㄴ - 풀다 → 푸는.
+        error_tag: rieul_drop
+      - answer: 받는
+        feedback_vi: 스트레스를 받다 là "bị căng thẳng"; câu hỏi cách "giải toả" - 푸는.
+        error_tag: pulda_batda
+      - answer: 풀
+        feedback_vi: Hỏi về cách làm thường ngày dùng định ngữ hiện tại -는 - 푸는 방법.
+        error_tag: adnominal_form
+    explanation:
+      vi: 스트레스를 풀다 = giải toả căng thẳng. Định ngữ hiện tại -는 làm rơi ㄹ của gốc → 푸는 방법.
+    display_answer: 스트레스를 푸는 방법이 뭐예요?
+
+  - key: ko:exercise:health-habits-wb-regular-exercise
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ha-gyuchikjeogeuro
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi tập thể dục đều đặn.\""
+      tokens:
+        - { id: r3, text: 운동해요 }
+        - { id: r4, text: 규칙적인 }
+        - { id: r2, text: 규칙적으로 }
+        - { id: r1, text: 저는 }
+    answer:
+      orders:
+        - [r1, r2, r3]
+    explanation:
+      vi: 규칙적으로 là trạng từ (đều đặn), đứng trước động từ 운동해요. 규칙적인 là định ngữ, chỉ đứng trước danh từ (규칙적인 생활).
+    display_answer: 저는 규칙적으로 운동해요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:health-habits-fill-dorok-baby
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-gram-dorok
+    prompt:
+      template: "(Hãy giữ yên lặng để em bé có thể ngủ ngon.) 아이가 푹 잘 수 {{b1}} 조용히 해 주세요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [있도록, 있게]
+    known_wrong:
+      - answer: 있어서
+        feedback_vi: -아서 là "vì"; câu cần "để (em bé) có thể ngủ" - 있도록.
+        error_tag: connector_meaning
+      - answer: 있으면
+        feedback_vi: -(으)면 là "nếu"; mục đích "để cho" là -도록.
+        error_tag: connector_meaning
+      - answer: 있는
+        feedback_vi: 있는 là định ngữ, cần đứng trước danh từ. Nối hai vế với nghĩa "để cho" dùng 있도록.
+        error_tag: adnominal_form
+    explanation:
+      vi: Vế trước là kết quả mong muốn (em bé ngủ được), vế sau là việc cần làm → -도록; văn nói dùng -게 cũng được.
+    display_answer: 아이가 푹 잘 수 있도록 조용히 해 주세요.
+
+  - key: ko:exercise:health-habits-translate-stress
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ha-seuteureseu-batda
+    prompt:
+      source_text: Dạo này tôi bị căng thẳng nhiều.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 요즘 스트레스를 많이 받아요.
+        - 저는 요즘 스트레스를 많이 받아요.
+        - 전 요즘 스트레스를 많이 받아요.
+        - 요즘 스트레스를 많이 받고 있어요.
+        - 저는 요즘 스트레스를 많이 받고 있어요.
+        - 요즘 스트레스가 많아요.
+        - 저는 요즘 스트레스가 많아요.
+        - 요즘 저는 스트레스를 많이 받아요.
+    known_wrong:
+      - answer: 요즘 스트레스를 많이 풀어요.
+        feedback_vi: 풀다 là "giải toả". "Bị căng thẳng" là 스트레스를 받다.
+        error_tag: pulda_batda
+      - answer: 요즘 스트레스를 많이 해요.
+        feedback_vi: Stress không đi với 하다; dùng 스트레스를 받다.
+        error_tag: collocation
+      - answer: yojeum seuteureseureul mani badayo
+        feedback_vi: Hãy viết bằng Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Tiếng Việt nói "bị stress", tiếng Hàn dùng 받다 (nhận) - 스트레스를 받다. 요즘 = dạo này, 많이 = nhiều.
+    display_answer: 저는 요즘 스트레스를 많이 받아요.
+
+  - key: ko:exercise:health-habits-translate-live-healthy
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-gram-ge-adverb
+    prompt:
+      source_text: Tôi muốn sống khoẻ mạnh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 건강하게 살고 싶어요.
+        - 저는 건강하게 살고 싶어요.
+        - 전 건강하게 살고 싶어요.
+        - 건강히 살고 싶어요.
+        - 저는 건강히 살고 싶어요.
+        - 건강하게 살고 싶습니다.
+        - 저는 건강하게 살고 싶습니다.
+    known_wrong:
+      - answer: 건강한 살고 싶어요.
+        feedback_vi: Trước động từ, tính từ phải đổi sang -게 - 건강하게 살고 싶어요.
+        error_tag: adverb_ge
+      - answer: 건강하도록 살고 싶어요.
+        feedback_vi: '"Sống khoẻ" là cách sống, dùng -게, không dùng -도록.'
+        error_tag: ge_dorok
+      - answer: 건강해서 살고 싶어요.
+        feedback_vi: -아서 là "vì"; cách thức cần -게.
+        error_tag: adverb_ge
+    explanation:
+      vi: 건강하다 → 건강하게 (một cách khoẻ mạnh) + 살고 싶어요 (muốn sống). 건강히 cũng là trạng từ đúng.
+    display_answer: 저는 건강하게 살고 싶어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:health-habits-mcq-dorok-advice
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ha-gram-dorok
+    prompt:
+      stem: "Bạn viết lời khuyên cho mục sức khoẻ: \"Để không thức khuya, hãy tắt điện thoại trước khi ngủ.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: s4d, text: 늦게 자지 않도록 자기 전에 휴대폰을 끄세요., lang: ko }
+        - { id: k7a, text: 늦게 자지 않아서 자기 전에 휴대폰을 끄세요., lang: ko }
+        - { id: w1u, text: 늦게 자지 않는도록 자기 전에 휴대폰을 끄세요., lang: ko }
+        - { id: p5g, text: 늦게 자도록 자기 전에 휴대폰을 끄세요., lang: ko }
+    answer:
+      correct_option_id: s4d
+    explanation:
+      vi: -도록 gắn thẳng vào gốc - 않다 → 않도록 (để không). -아서 chỉ lý do và không đi với câu mệnh lệnh; 않는도록 sai dạng; 늦게 자도록 nghĩa ngược lại "để ngủ muộn".
+    display_answer: 늦게 자지 않도록 자기 전에 휴대폰을 끄세요.
+
+  - key: ko:exercise:health-habits-mcq-gain-weight
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ha-sari-jjida
+    prompt:
+      stem: "Dạo này bạn ngồi cả ngày, ít vận động và quần áo bị chật. Bạn giải thích với bạn bè câu nào?"
+      stem_lang: vi
+      options:
+        - { id: c2y, text: 운동 부족이라서 살이 쪘어요., lang: ko }
+        - { id: o8n, text: 운동 부족이라서 살이 빠졌어요., lang: ko }
+        - { id: j3l, text: 운동을 많이 해서 살이 쪘어요., lang: ko }
+        - { id: u6v, text: 운동 부족이라서 살을 쪘어요., lang: ko }
+    answer:
+      correct_option_id: c2y
+    explanation:
+      vi: Quần áo chật nghĩa là tăng cân - 살이 찌다, quá khứ 쪘어요. 빠졌어요 là giảm cân; "tập nhiều" trái với tình huống; 살 là chủ ngữ nên dùng 이, không dùng 을.
+    display_answer: 운동 부족이라서 살이 쪘어요.
+
+  - key: ko:exercise:health-habits-translate-insomnia-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ha-bulmyeonjeung
+    prompt:
+      source_text: 불면증 때문에 영양제를 먹기 시작했어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì chứng mất ngủ nên tôi đã bắt đầu uống thực phẩm bổ sung.
+        - Vì bị mất ngủ nên tôi đã bắt đầu uống thực phẩm bổ sung.
+        - Vì mất ngủ nên tôi bắt đầu uống thực phẩm bổ sung.
+        - Vì mất ngủ nên tôi đã bắt đầu uống thuốc bổ.
+        - Vì bị mất ngủ nên tôi bắt đầu uống thuốc bổ.
+        - Do mất ngủ nên tôi đã bắt đầu uống thực phẩm chức năng.
+        - Vì mất ngủ nên tôi đã bắt đầu uống vitamin.
+        - Tôi đã bắt đầu uống thực phẩm bổ sung vì bị mất ngủ.
+        - Tôi bắt đầu uống thuốc bổ vì mất ngủ.
+        - Vì chứng mất ngủ mà tôi đã bắt đầu uống thực phẩm bổ sung.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì uống thực phẩm bổ sung nên tôi bị mất ngủ.
+        feedback_vi: Ngược nhân quả - 불면증 때문에 là "vì mất ngủ", còn uống thực phẩm bổ sung là kết quả.
+        error_tag: cause_effect
+      - answer: Vì chứng mất ngủ nên tôi đã ngừng uống thực phẩm bổ sung.
+        feedback_vi: 시작했어요 là "đã bắt đầu", không phải "ngừng".
+        error_tag: vocab_meaning
+    explanation:
+      vi: N 때문에 = vì N; 영양제를 먹다 = uống thực phẩm bổ sung/thuốc bổ; -기 시작했어요 = đã bắt đầu….
+    display_answer: Vì chứng mất ngủ nên tôi đã bắt đầu uống thực phẩm bổ sung.
+
+  - key: ko:exercise:health-habits-translate-wash-hands
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ha-gram-dorok
+    prompt:
+      source_text: Hãy rửa tay thường xuyên để không bị cảm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 감기에 걸리지 않도록 손을 자주 씻으세요.
+        - 감기에 걸리지 않게 손을 자주 씻으세요.
+        - 감기에 안 걸리도록 손을 자주 씻으세요.
+        - 감기에 안 걸리게 손을 자주 씻으세요.
+        - 감기에 걸리지 않도록 자주 손을 씻으세요.
+        - 감기에 걸리지 않게 자주 손을 씻으세요.
+        - 감기에 걸리지 않기 위해서 손을 자주 씻으세요.
+        - 손을 자주 씻어서 감기에 걸리지 않도록 하세요.
+    known_wrong:
+      - answer: 감기를 걸리지 않도록 손을 자주 씻으세요.
+        feedback_vi: '"Bị cảm" là 감기에 걸리다 - trợ từ 에, không phải 를.'
+        error_tag: particle_e_geollida
+      - answer: 감기에 걸리지 않아서 손을 자주 씻으세요.
+        feedback_vi: -아서 là "vì" và không đi với câu khuyên -(으)세요. "Để không…" là -지 않도록.
+        error_tag: connector_meaning
+      - answer: 감기에 걸리도록 손을 자주 씻으세요.
+        feedback_vi: Thiếu phủ định - câu này thành "để bị cảm". Dùng 걸리지 않도록.
+        error_tag: negation_missed
+    explanation:
+      vi: '"Để không bị cảm" = 감기에 걸리지 않도록 (văn nói 않게 cũng được); "rửa tay thường xuyên" = 손을 자주 씻다, khuyên dùng -(으)세요.'
+    display_answer: 감기에 걸리지 않도록 손을 자주 씻으세요.
