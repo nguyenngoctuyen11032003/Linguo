@@ -1,7 +1,7 @@
 import { useEffect, useId, useRef, useState, type FormEvent, type KeyboardEvent, type ReactNode } from 'react';
 import { Compass, Flag, RefreshCw } from 'lucide-react';
 import { Link } from 'react-router';
-import { LANGUAGES, LEVEL_INFO, type AiRequestInput, type AiSuccess, type LevelCode } from '@linguo/shared';
+import { ANALYZE_SENTENCE_MAX_CHARS, LANGUAGES, LEVEL_INFO, type AiRequestInput, type AiSuccess, type LevelCode } from '@linguo/shared';
 import { AI_LABEL, AiFallback, AiLoading, AiNoticeDialog, AiQuotaChip, AiReportDialog, AiResultView } from '@/components/ai';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -15,12 +15,13 @@ import { useAiTutor, type AiTutorState as UseAiTutor } from '@/features/ai-tutor
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { cn } from '@/lib/cn';
 
-type Tab = 'explain' | 'practice';
+type Tab = 'explain' | 'practice' | 'sentence';
 type PracticeSkill = 'vocabulary' | 'grammar' | 'reading';
 
 const TABS: { id: Tab; label: string }[] = [
   { id: 'explain', label: 'Hỏi khái niệm' },
   { id: 'practice', label: 'Tạo bài luyện' },
+  { id: 'sentence', label: 'Phân tích câu' },
 ];
 
 const SKILLS: { id: PracticeSkill; label: string }[] = [
@@ -32,6 +33,7 @@ const COUNTS = [1, 2, 3, 4, 5].map((n) => ({ id: n, label: String(n) }));
 
 const CONCEPT_MAX = 300;
 const FOCUS_MAX = 300;
+const SENTENCE_MAX = ANALYZE_SENTENCE_MAX_CHARS;
 
 interface HistoryEntry {
   key: string;
@@ -390,6 +392,69 @@ function PracticeTab({ language, level, notice, quota, onReport }: PanelProps) {
   );
 }
 
+/** "Phân tích câu": parts of speech, components, grammar points and meanings of one sentence (spec 8.2 #4). */
+function SentenceTab({ language, level, notice, quota, onReport }: PanelProps) {
+  const ai = useAiTutor();
+  const gate = useGatedRun(ai, notice);
+  const history = useHistory(ai, gate.lastRef, (req) => (req.task === 'analyze_sentence' ? req.sentence : ''));
+  const [sentence, setSentence] = useState('');
+  const [error, setError] = useState<string | null>(null);
+  const inputId = useId();
+  const errorId = useId();
+  const busy = ai.state === 'loading';
+
+  const submit = (e: FormEvent) => {
+    e.preventDefault();
+    const text = sentence.trim();
+    if (!text) {
+      setError('Hãy nhập một câu để phân tích.');
+      return;
+    }
+    setError(null);
+    gate.start({ task: 'analyze_sentence', language, level, sentence: text });
+  };
+
+  return (
+    <>
+      <TutorPanel
+        ai={ai}
+        gate={gate}
+        history={history}
+        language={language}
+        quota={quota}
+        onReport={onReport}
+        loadingLabel="Đang phân tích câu…"
+        form={
+          <form onSubmit={submit} noValidate className="space-y-3">
+            <label htmlFor={inputId} className="block px-1 text-sm font-medium">
+              Câu bạn muốn phân tích
+            </label>
+            <Input
+              id={inputId}
+              lang={language}
+              value={sentence}
+              maxLength={SENTENCE_MAX}
+              invalid={Boolean(error)}
+              aria-describedby={error ? errorId : undefined}
+              placeholder={language === 'ko' ? 'Ví dụ: 저는 학생이에요.' : 'Ví dụ: I have lived here for two years.'}
+              onChange={(e) => setSentence(e.target.value)}
+            />
+            {error && (
+              <p id={errorId} role="alert" className="px-1 text-sm text-error-text">
+                {error}
+              </p>
+            )}
+            <Button type="submit" variant="accent" loading={busy}>
+              Phân tích câu
+            </Button>
+          </form>
+        }
+      />
+      <AiNoticeDialog open={gate.pending !== null} onAccept={gate.accept} onClose={gate.cancel} />
+    </>
+  );
+}
+
 function LoadingPage() {
   return (
     <div role="status" className="space-y-3">
@@ -407,7 +472,7 @@ export function TutorPage() {
   const notice = useAiNotice();
   const quota = useAiQuota();
   const [tab, setTab] = useState<Tab>('explain');
-  const tabRefs = useRef<Record<Tab, HTMLButtonElement | null>>({ explain: null, practice: null });
+  const tabRefs = useRef<Record<Tab, HTMLButtonElement | null>>({ explain: null, practice: null, sentence: null });
   const [report, setReport] = useState<string | null>(null);
   const reportTriggerRef = useRef<HTMLElement | null>(null);
 
@@ -476,7 +541,7 @@ export function TutorPage() {
         </div>
         {TABS.map((t) => (
           <div key={t.id} role="tabpanel" id={`tutor-panel-${t.id}`} aria-labelledby={`tutor-tab-${t.id}`} hidden={tab !== t.id}>
-            {t.id === 'explain' ? <ExplainTab {...panelProps} /> : <PracticeTab {...panelProps} />}
+            {t.id === 'explain' ? <ExplainTab {...panelProps} /> : t.id === 'practice' ? <PracticeTab {...panelProps} /> : <SentenceTab {...panelProps} />}
           </div>
         ))}
       </div>
