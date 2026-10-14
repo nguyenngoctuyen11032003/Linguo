@@ -378,7 +378,8 @@ describe('recap and completion', () => {
     render();
     await ready();
     const heading = screen.getByRole('heading', { name: 'Hoàn thành phiên học' });
-    expect(heading).toHaveFocus();
+    // The focus moves in a passive effect, which React may flush in a later task than the commit `ready()` saw.
+    await waitFor(() => expect(heading).toHaveFocus());
     // 6 + 9 + 3 minutes done.
     expect(screen.getByText('18 phút')).toBeInTheDocument();
     expect(screen.getByText('3/4')).toBeInTheDocument();
