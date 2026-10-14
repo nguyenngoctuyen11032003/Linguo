@@ -9,6 +9,7 @@ import type {
   ReviewWritingOutput,
 } from '@linguo/shared';
 import { cn } from '@/lib/cn';
+import { AnalyzeSentenceView, PlanReviewView, SessionSummaryView } from './AiMoreViews';
 import { MarkdownLite } from './MarkdownLite';
 import { parseAiResult } from './parse';
 
@@ -229,5 +230,11 @@ export function AiResultView({ result, language, request }: { result: AiSuccess;
       return <PracticeView data={parsed.data} language={language} />;
     case 'review_writing':
       return <ReviewWritingView data={parsed.data} language={language} rubric={request?.task === 'review_writing' ? request.rubric : undefined} />;
+    case 'analyze_sentence':
+      return <AnalyzeSentenceView data={parsed.data} language={language} />;
+    case 'summarize_session':
+      return <SessionSummaryView data={parsed.data} />;
+    case 'plan_review':
+      return <PlanReviewView data={parsed.data} request={request?.task === 'plan_review' ? request : undefined} />;
   }
 }

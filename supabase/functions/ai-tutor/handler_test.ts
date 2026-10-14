@@ -576,6 +576,238 @@ Deno.test('review_writing: ko corrected_version without Hangul is rejected', asy
 });
 
 // ---------------------------------------------------------------------------
+// analyze_sentence, summarize_session, plan_review (spec 8.2 #4, #9, #7)
+// ---------------------------------------------------------------------------
+
+const sentenceBody = (over: Record<string, unknown> = {}) => ({
+  task: 'analyze_sentence',
+  language: 'ko',
+  level: 'topik1',
+  sentence: '저는 학생이에요.',
+  ...over,
+});
+
+const SENTENCE_OUTPUT = {
+  translation_vi: 'Tôi là học sinh.',
+  alternative_meanings: [],
+  tokens: [
+    { text: '저는', pos: 'pronoun', meaning_vi: 'tôi (chủ đề)' },
+    { text: '학생이에요', pos: 'noun', meaning_vi: 'là học sinh' },
+  ],
+  components: [{ label: 'topic', text: '저는', note_vi: 'Chủ đề của câu.' }],
+  grammar_points: [{ pattern: '-이에요/예요', explanation_vi: 'Đuôi câu "là" lịch sự.' }],
+  confidence: 'high',
+  uncertainty: null,
+};
+
+Deno.test('analyze_sentence: cached like explain_concept (second identical request is a free hit)', async () => {
+  const db = fakeDb();
+  const first = harness({ db, steps: [geminiOk(SENTENCE_OUTPUT)] });
+  const body = await expectSuccess(await handle(post(sentenceBody()), first.deps));
+  assert.equal(body.task, 'analyze_sentence');
+  assert.equal(body.prompt_version, 'analyze_sentence@1');
+  assert.equal(body.cached, false);
+  assert.deepEqual(body.data, SENTENCE_OUTPUT);
+  assert.equal(db.count('ai_cache_put'), 1);
+  assert.equal(db.calls.find((c) => c.fn === 'ai_cache_put')?.args?.p_task, 'analyze_sentence');
+  const sent = first.fetch.bodies[0] as { generationConfig: { maxOutputTokens: number } };
+  assert.equal(sent.generationConfig.maxOutputTokens, 2048);
+  const log = db.calls.find((c) => c.fn === 'ai_usage_log')!.args!;
+  assert.equal(log.p_input_chars, '저는 학생이에요.'.length);
+  assert.ok(!JSON.stringify(log).includes('학생'));
+
+  const second = harness({ db });
+  const hit = await expectSuccess(await handle(post(sentenceBody({ sentence: ' 저는   학생이에요. ' })), second.deps));
+  assert.equal(hit.cached, true);
+  assert.equal(second.fetch.bodies.length, 0);
+  assert.equal(db.count('ai_quota_consume'), 1);
+});
+
+Deno.test('analyze_sentence: an invented word → repair; still invented → 502 invalid_output, quota refunded', async () => {
+  const invented = { ...SENTENCE_OUTPUT, tokens: [...SENTENCE_OUTPUT.tokens, { text: '선생님', pos: 'noun', meaning_vi: 'giáo viên' }] };
+  const ok = harness({ steps: [geminiOk(invented), geminiOk(SENTENCE_OUTPUT)] });
+  const body = await expectSuccess(await handle(post(sentenceBody()), ok.deps));
+  assert.deepEqual(body.data, SENTENCE_OUTPUT);
+  assert.equal(ok.db.calls.find((c) => c.fn === 'ai_usage_log')?.args?.p_repaired, true);
+
+  const bad = harness({ steps: [geminiOk(invented), geminiOk(invented)] });
+  await expectError(await handle(post(sentenceBody()), bad.deps), 502, 'invalid_output');
+  assert.equal(bad.db.count('ai_quota_refund'), 1);
+  assert.equal(bad.db.cache.size, 0);
+});
+
+Deno.test('analyze_sentence: romanised Korean tokens are rejected; long sentence or lesson_id → 400', async () => {
+  const romanized = { ...SENTENCE_OUTPUT, tokens: [{ text: 'jeoneun', pos: 'pronoun', meaning_vi: 'tôi' }] };
+  const h = harness({ steps: [geminiOk(romanized), geminiOk(romanized)] });
+  await expectError(await handle(post(sentenceBody()), h.deps), 502, 'invalid_output');
+  const h2 = harness();
+  await expectError(await handle(post(sentenceBody({ sentence: 'x'.repeat(161) })), h2.deps), 400, 'bad_request');
+  await expectError(await handle(post(sentenceBody({ lesson_id: LESSON_ID })), h2.deps), 400, 'bad_request');
+  assert.equal(h2.db.calls.length, 0);
+});
+
+Deno.test('analyze_sentence: a 25-token analysis is not truncated by the sanitiser', async () => {
+  const words = Array.from({ length: 25 }, (_, i) => `w${i}`);
+  const out = {
+    ...SENTENCE_OUTPUT,
+    tokens: words.map((text) => ({ text, pos: 'noun', meaning_vi: 'từ' })),
+    components: [],
+    grammar_points: [],
+  };
+  const h = harness({ steps: [geminiOk(out)] });
+  const body = await expectSuccess(await handle(post(sentenceBody({ language: 'en', level: 'a2', sentence: words.join(' ') })), h.deps));
+  assert.equal((body.data as { tokens: unknown[] }).tokens.length, 25);
+});
+
+const summaryBody = (over: Record<string, unknown> = {}) => ({
+  task: 'summarize_session',
+  language: 'en',
+  level: 'a2',
+  minutes: 12,
+  activities: [
+    { kind: 'review', status: 'done', minutes: 5 },
+    { kind: 'lesson', status: 'done', minutes: 7 },
+  ],
+  accuracy_by_stage: [{ stage: 'recall', attempts: 8, correct: 6 }],
+  error_tags: [{ tag: 'article', count: 2 }],
+  ...over,
+});
+
+const SUMMARY_OUTPUT = {
+  recap_vi: 'Hôm nay bạn đã học 12 phút, làm rất tốt!',
+  errors_to_remember: [{ tag: 'article', note_vi: 'Nhớ a/an/the.' }],
+  next_step_vi: 'Mai ôn 10 thẻ.',
+};
+
+Deno.test('summarize_session: uses quota, never cached, logs the input size only', async () => {
+  const db = fakeDb();
+  const h = harness({ db, steps: [geminiOk(SUMMARY_OUTPUT), geminiOk(SUMMARY_OUTPUT)] });
+  const body = await expectSuccess(await handle(post(summaryBody()), h.deps));
+  assert.equal(body.task, 'summarize_session');
+  assert.equal(body.prompt_version, 'summarize_session@1');
+  assert.equal(body.cached, false);
+  assert.deepEqual(body.data, SUMMARY_OUTPUT);
+  assert.equal(db.count('ai_cache_get'), 0);
+  assert.equal(db.count('ai_cache_put'), 0);
+  assert.equal(db.count('ai_quota_consume'), 1);
+  const log = db.calls.find((c) => c.fn === 'ai_usage_log')!.args!;
+  assert.equal(log.p_task, 'summarize_session');
+  assert.equal(typeof log.p_input_chars, 'number');
+  assert.ok((log.p_input_chars as number) > 0);
+  assert.ok(!JSON.stringify(log).includes('article'));
+  const again = await expectSuccess(await handle(post(summaryBody()), h.deps));
+  assert.equal(again.cached, false);
+  assert.equal(db.count('ai_quota_consume'), 2);
+});
+
+Deno.test('summarize_session: a tag not in the request → repair → OK; twice → 502 and refund', async () => {
+  const foreign = { ...SUMMARY_OUTPUT, errors_to_remember: [{ tag: 'tense', note_vi: 'x' }] };
+  const ok = harness({ steps: [geminiOk(foreign), geminiOk(SUMMARY_OUTPUT)] });
+  assert.deepEqual((await expectSuccess(await handle(post(summaryBody()), ok.deps))).data, SUMMARY_OUTPUT);
+  const bad = harness({ steps: [geminiOk(foreign), geminiOk(foreign)] });
+  await expectError(await handle(post(summaryBody()), bad.deps), 502, 'invalid_output');
+  assert.equal(bad.db.count('ai_quota_refund'), 1);
+  assert.equal(bad.db.used, 0);
+});
+
+Deno.test('summarize_session: personal or oversized input → 400 before any quota', async () => {
+  const h = harness();
+  await expectError(await handle(post(summaryBody({ name: 'Lan' })), h.deps), 400, 'bad_request');
+  await expectError(await handle(post(summaryBody({ activities: [] })), h.deps), 400, 'bad_request');
+  await expectError(await handle(post(summaryBody({ error_tags: Array(6).fill({ tag: 'typo', count: 1 }) })), h.deps), 400, 'bad_request');
+  await expectError(await handle(post(summaryBody({ error_tags: [{ tag: 'me@x.com', count: 1 }] })), h.deps), 400, 'bad_request');
+  assert.equal(h.db.calls.length, 0);
+});
+
+Deno.test('summarize_session: quota exhausted → 429 and Gemini is never called', async () => {
+  const h = harness({ db: fakeDb({ limitReached: true }) });
+  await expectError(await handle(post(summaryBody()), h.deps), 429, 'quota_exceeded');
+  assert.equal(h.fetch.bodies.length, 0);
+});
+
+const GAP_LESSON = '44444444-4444-4444-8444-444444444444';
+const planBody = (over: Record<string, unknown> = {}) => ({
+  task: 'plan_review',
+  language: 'en',
+  level: 'a2',
+  gaps: [
+    { kind: 'lesson', id: GAP_LESSON, label: 'Present simple', count: 4 },
+    { kind: 'tag', id: 'mcq', label: 'Trắc nghiệm', count: 3 },
+  ],
+  ...over,
+});
+
+const PLAN_OUTPUT = {
+  summary_vi: 'Ưu tiên bài present simple.',
+  steps: [
+    { kind: 'redo_lesson', target: GAP_LESSON, cards: null, reason_vi: 'Sai 4 lần.' },
+    { kind: 'review_cards', target: 'mcq', cards: 10, reason_vi: 'Luyện trắc nghiệm.' },
+  ],
+};
+
+Deno.test('plan_review: cached by input hash (gap order does not matter)', async () => {
+  const db = fakeDb();
+  const first = harness({ db, steps: [geminiOk(PLAN_OUTPUT)] });
+  const body = await expectSuccess(await handle(post(planBody()), first.deps));
+  assert.equal(body.prompt_version, 'plan_review@1');
+  assert.deepEqual(body.data, PLAN_OUTPUT);
+  assert.equal(db.calls.find((c) => c.fn === 'ai_cache_put')?.args?.p_task, 'plan_review');
+
+  const second = harness({ db });
+  const reordered = planBody({ gaps: [...planBody().gaps].reverse() });
+  const hit = await expectSuccess(await handle(post(reordered), second.deps));
+  assert.equal(hit.cached, true);
+  assert.equal(second.fetch.bodies.length, 0);
+  assert.equal(db.count('ai_quota_consume'), 1);
+});
+
+Deno.test('plan_review: invented ids are dropped from the answer', async () => {
+  const withInvented = {
+    ...PLAN_OUTPUT,
+    steps: [{ kind: 'redo_lesson', target: '99999999-9999-4999-8999-999999999999', cards: null, reason_vi: 'Bịa.' }, ...PLAN_OUTPUT.steps],
+  };
+  const h = harness({ steps: [geminiOk(withInvented)] });
+  const body = await expectSuccess(await handle(post(planBody()), h.deps));
+  assert.deepEqual(body.data, PLAN_OUTPUT);
+  assert.equal(h.fetch.bodies.length, 1);
+});
+
+Deno.test('plan_review: only invented ids twice → 502 invalid_output, quota refunded, nothing cached', async () => {
+  const invented = { ...PLAN_OUTPUT, steps: [{ kind: 'redo_lesson', target: 'zzz', cards: null, reason_vi: 'Bịa.' }] };
+  const h = harness({ steps: [geminiOk(invented), geminiOk(invented)] });
+  await expectError(await handle(post(planBody()), h.deps), 502, 'invalid_output');
+  assert.equal(h.db.count('ai_quota_refund'), 1);
+  assert.equal(h.db.cache.size, 0);
+});
+
+Deno.test('plan_review: a poisoned cache entry with a foreign id is not served', async () => {
+  const db = fakeDb();
+  const first = harness({ db, steps: [geminiOk(PLAN_OUTPUT)] });
+  await expectSuccess(await handle(post(planBody()), first.deps));
+  for (const key of db.cache.keys()) db.cache.set(key, { ...PLAN_OUTPUT, steps: [{ ...PLAN_OUTPUT.steps[1], target: 'other' }] });
+  const second = harness({ db, steps: [geminiOk(PLAN_OUTPUT)] });
+  const body = await expectSuccess(await handle(post(planBody()), second.deps));
+  assert.equal(body.cached, false);
+  assert.deepEqual(body.data, PLAN_OUTPUT);
+});
+
+Deno.test('plan_review: bad gaps → 400 before any quota', async () => {
+  const h = harness();
+  await expectError(await handle(post(planBody({ gaps: [] })), h.deps), 400, 'bad_request');
+  await expectError(await handle(post(planBody({ gaps: [{ kind: 'lesson', id: 'a b', label: 'x', count: 1 }] })), h.deps), 400, 'bad_request');
+  assert.equal(h.db.calls.length, 0);
+});
+
+Deno.test('new tasks: Gemini down → 503 fallback and the quota is refunded', async () => {
+  for (const body of [sentenceBody(), summaryBody(), planBody()]) {
+    const h = harness({ steps: [gemini429(), gemini429(), gemini429()] });
+    await expectError(await handle(post(body), h.deps), 503, 'ai_unavailable');
+    assert.equal(h.db.count('ai_quota_refund'), 1);
+    assert.equal(h.db.used, 0);
+  }
+});
+
+// ---------------------------------------------------------------------------
 // Step 5 + 11: context, sanitising, logging
 // ---------------------------------------------------------------------------
 

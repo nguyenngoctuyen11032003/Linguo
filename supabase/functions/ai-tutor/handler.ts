@@ -38,7 +38,7 @@ export const CORS_HEADERS: Record<string, string> = {
 };
 
 const DEFAULT_DAILY_LIMIT = 20;
-/** Ceiling across tasks; each prompt module sets its own (≤ 1200, review_writing 2048). */
+/** Ceiling across tasks; each prompt module sets its own (≤ 1200; review_writing and analyze_sentence 2048). */
 const DEFAULT_MAX_OUTPUT_TOKENS = 2048;
 const DEFAULT_TIMEOUT_MS = 20_000;
 const TOTAL_BUDGET_MS = 45_000;
@@ -115,6 +115,13 @@ function inputChars(req: AiRequest): number {
       return req.prompt.length + req.expected.length + req.answer.length;
     case 'review_writing':
       return req.prompt.length + req.answer.length;
+    case 'analyze_sentence':
+      return req.sentence.length;
+    case 'summarize_session':
+      // Only the size of the compact summary is logged, never its content.
+      return JSON.stringify([req.activities, req.accuracy_by_stage, req.error_tags]).length;
+    case 'plan_review':
+      return JSON.stringify(req.gaps).length;
   }
 }
 
@@ -276,18 +283,19 @@ export async function handle(req: Request, deps: HandlerDeps): Promise<Response>
   // 5. Lesson context (published fields via RLS).
   const context = await lessonContext(db, 'lesson_id' in request ? request.lesson_id : undefined);
 
-  // 6. Cache: explain_concept, generate_practice without focus; never analyze_error / review_writing. A hit is free.
+  // 6. Cache: explain_concept, analyze_sentence, plan_review, generate_practice without focus; never analyze_error / review_writing / summarize_session. A hit is free.
   let key: string | null = null;
   if (request.task !== 'analyze_error' && prompt.cacheable(request)) {
     try {
       key = await cacheKey({ promptVersion: prompt.version, model, request });
       const hit = await admin.rpc('ai_cache_get', { p_key: key });
       if (!hit.error && hit.data !== null && hit.data !== undefined) {
-        const valid = prompt.validate(hit.data);
+        // The request enables the target checks (plan_review ids, analyze_sentence tokens) on a hit too.
+        const valid = prompt.validate(hit.data, request);
         if (valid.ok) {
           const quota = await quotaStatus(db, dailyLimit, deps.now());
           const id = await logUsage('ok', 200, 0, true, false);
-          return success(sanitizeOutput(valid.data, { language: request.language }), true, id, quota);
+          return success(sanitizeOutput(valid.data, { language: request.language, maxArrayLength: prompt.maxArrayLength }), true, id, quota);
         }
       }
     } catch {
@@ -357,7 +365,7 @@ export async function handle(req: Request, deps: HandlerDeps): Promise<Response>
       result = tryParse(prompt, second.text, request);
       if (!result.ok) throw new InvalidOutputError(attempts);
     }
-    const data = sanitizeOutput(result.data, { language: request.language });
+    const data = sanitizeOutput(result.data, { language: request.language, maxArrayLength: prompt.maxArrayLength });
     if (key) {
       try {
         // Errors (e.g. 22023 payload_too_large over 16 KB) only skip caching.

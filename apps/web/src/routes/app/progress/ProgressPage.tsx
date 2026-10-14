@@ -23,6 +23,7 @@ import { MistakesList } from './MistakesList';
 import { MotivationPanel } from './MotivationPanel';
 import { isEmptyDashboard, parseRange, RANGE_PARAM } from './page-logic';
 import { RangeToggle } from './RangeToggle';
+import { ReviewPlanButton } from './ReviewPlanButton';
 import { TotalsGrid } from './TotalsGrid';
 import { useBadgeToast } from './useBadgeToast';
 
@@ -156,7 +157,14 @@ export function ProgressPage() {
           </>
         )}
         <EstimatesCard estimates={data.estimates} pathId={data.path_id} />
-        {!empty && <MistakesList mistakes={data.mistakes} />}
+        {!empty && (
+          <MistakesList
+            mistakes={data.mistakes}
+            action={
+              paths.current && <ReviewPlanButton dashboard={data} learner={{ language: paths.current.language, level: paths.current.currentLevel }} />
+            }
+          />
+        )}
         {data.motivation && <MotivationPanel motivation={data.motivation} />}
       </div>
     );

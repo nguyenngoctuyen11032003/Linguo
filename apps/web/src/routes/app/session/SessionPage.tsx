@@ -184,6 +184,7 @@ function PathSession() {
     body = (
       <CompletionView
         session={session}
+        learner={learner}
         onPlanAgain={() => {
           setChosen(SHORT_SESSION_MINUTES);
           setPlanningAgain(true);

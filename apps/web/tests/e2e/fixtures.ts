@@ -994,6 +994,42 @@ function aiData(task: string, mode: AiMockMode, request: Row = {}): Record<strin
         corrected_version: request.language === 'ko' ? '안녕하세요. 저는 란이에요.' : "Hi Alex, let's watch a film on Saturday at 6 outside the cinema. See you, Lan",
       };
     }
+    // ==== BEGIN ai-more mocks (analyze_sentence, summarize_session, plan_review: apps/web/tests/e2e/ai-more.spec.ts) ====
+    case 'analyze_sentence': {
+      // Tokens are copied from the request sentence, like the Edge Function's rubric requires.
+      const words = String(request.sentence ?? '').split(/\s+/).filter(Boolean).slice(0, 8);
+      return {
+        translation_vi: html ? AI_HTML_PAYLOAD : 'Tôi là học sinh.',
+        alternative_meanings: ['Tôi là một học sinh (nhấn mạnh).'],
+        tokens: words.map((text, i) => ({ text, pos: i === 0 ? 'pronoun' : 'noun', meaning_vi: `nghĩa của ${i + 1}` })),
+        components: words[0] ? [{ label: 'subject', text: words[0], note_vi: 'Chủ ngữ của câu.' }] : [],
+        grammar_points: [{ pattern: 'Câu khẳng định', explanation_vi: 'Chủ ngữ + vị ngữ.' }],
+        confidence: 'high',
+        uncertainty: null,
+      };
+    }
+    case 'summarize_session': {
+      const tags = (Array.isArray(request.error_tags) ? request.error_tags : []) as Row[];
+      return {
+        recap_vi: html ? AI_HTML_PAYLOAD : 'Hôm nay bạn đã học đều tay, làm tốt lắm!',
+        errors_to_remember: tags.slice(0, 3).map((t) => ({ tag: t.tag, note_vi: `Nhớ lại lỗi ${String(t.tag)}.` })),
+        next_step_vi: 'Mai ôn lại các thẻ đến hạn trước nhé.',
+      };
+    }
+    case 'plan_review': {
+      // Every step targets an id of the request's gaps (the function drops anything else).
+      const gaps = (Array.isArray(request.gaps) ? request.gaps : []) as Row[];
+      return {
+        summary_vi: html ? AI_HTML_PAYLOAD : 'Ưu tiên bài hay sai nhất, rồi ôn thẻ yếu.',
+        steps: gaps.slice(0, 5).map((g) => ({
+          kind: g.kind === 'lesson' ? 'redo_lesson' : 'review_cards',
+          target: g.id,
+          cards: g.kind === 'lesson' ? null : 10,
+          reason_vi: `Bạn sai ${String(g.count)} lần.`,
+        })),
+      };
+    }
+    // ==== END ai-more mocks ====
     case 'analyze_error':
       return {
         verdict: 'incorrect',

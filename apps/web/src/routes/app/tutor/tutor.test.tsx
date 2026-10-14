@@ -2,7 +2,7 @@ import { screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import type { AiError, AiRequestInput, AiSuccess } from '@linguo/shared';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { aiError, aiSuccess, EXPLAIN_DATA, PRACTICE_DATA, QUOTA } from '@/components/ai/ai-fixtures';
+import { aiError, aiSuccess, EXPLAIN_DATA, PRACTICE_DATA, QUOTA, SENTENCE_DATA } from '@/components/ai/ai-fixtures';
 import type { AiNoticeState } from '@/features/ai-tutor/useAiNotice';
 import type { AiQuotaState } from '@/features/ai-tutor/useAiQuota';
 import type { AiTutorStatus } from '@/features/ai-tutor/useAiTutor';
@@ -79,12 +79,26 @@ describe('TutorPage', () => {
     expect(screen.queryByRole('tablist')).not.toBeInTheDocument();
   });
 
-  it('shows the path language, level, quota and two tabs', () => {
+  it('analyzes a sentence with the current path language and level', async () => {
+    mocks.respond = () => ({ state: 'ok', result: aiSuccess('analyze_sentence', SENTENCE_DATA, { response_id: 'u-sentence' }), error: null });
+    render({ paths: [TEST_KO_PATH] });
+    await userEvent.click(screen.getByRole('tab', { name: 'Phân tích câu' }));
+    await userEvent.click(screen.getByRole('button', { name: 'Phân tích câu' }));
+    expect(screen.getByRole('alert')).toHaveTextContent('Hãy nhập một câu để phân tích.');
+    expect(mocks.calls).toHaveLength(0);
+    await userEvent.type(screen.getByLabelText('Câu bạn muốn phân tích'), '저는 학생이에요.');
+    await userEvent.click(screen.getByRole('button', { name: 'Phân tích câu' }));
+    expect(mocks.calls).toEqual([{ task: 'analyze_sentence', language: 'ko', level: 'hangul', sentence: '저는 학생이에요.' }]);
+    expect(screen.getByText('Tôi là học sinh.')).toBeInTheDocument();
+    expect(screen.getByRole('list', { name: 'Từ loại từng từ' })).toHaveTextContent('tiểu từ');
+  });
+
+  it('shows the path language, level, quota and three tabs', () => {
     render();
     expect(screen.getByText(/Tiếng Anh · trình độ A2/)).toBeInTheDocument();
     expect(screen.getByText('Còn 17/20 lượt')).toBeInTheDocument();
     const tabs = within(screen.getByRole('tablist')).getAllByRole('tab');
-    expect(tabs.map((t) => t.textContent)).toEqual(['Hỏi khái niệm', 'Tạo bài luyện']);
+    expect(tabs.map((t) => t.textContent)).toEqual(['Hỏi khái niệm', 'Tạo bài luyện', 'Phân tích câu']);
     expect(tabs[0]).toHaveAttribute('aria-selected', 'true');
   });
 

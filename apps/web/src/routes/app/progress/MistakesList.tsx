@@ -1,4 +1,4 @@
-import { useId } from 'react';
+import { useId, type ReactNode } from 'react';
 import { ChevronRight, Sprout } from 'lucide-react';
 import { Link } from 'react-router';
 import { DEFAULT_TIMEZONE, type Mistake } from '@linguo/shared';
@@ -7,7 +7,7 @@ import { useProfile } from '@/features/profile/ProfileProvider';
 import { formatDay } from './labels';
 
 /** Exercises answered wrong most often in the window, each linking back to its lesson. */
-export function MistakesList({ mistakes }: { mistakes: Mistake[] }) {
+export function MistakesList({ mistakes, action }: { mistakes: Mistake[]; /** e.g. the AI review-plan button. */ action?: ReactNode }) {
   const headingId = useId();
   const { profile } = useProfile();
   const timeZone = profile?.timezone ?? DEFAULT_TIMEZONE;
@@ -47,6 +47,7 @@ export function MistakesList({ mistakes }: { mistakes: Mistake[] }) {
             ))}
           </ul>
         )}
+        {mistakes.length > 0 && action}
       </section>
     </SolidCard>
   );

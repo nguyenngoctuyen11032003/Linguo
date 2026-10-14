@@ -34,6 +34,37 @@ export function aiError(error: AiError['error'], overrides: Partial<AiError> = {
   return { error, message: 'x', retry_after_sec: null, quota: null, ...overrides };
 }
 
+export const SENTENCE_DATA = {
+  translation_vi: 'Tôi là học sinh.',
+  alternative_meanings: ['Tôi đang là học sinh (nhấn mạnh nghề).'],
+  tokens: [
+    { text: '저', pos: 'pronoun', meaning_vi: 'tôi' },
+    { text: '는', pos: 'particle', meaning_vi: 'tiểu từ chủ đề' },
+    { text: '학생', pos: 'noun', meaning_vi: 'học sinh' },
+    { text: '이에요', pos: 'ending', meaning_vi: 'là (lịch sự)' },
+  ],
+  components: [{ label: 'topic', text: '저는', note_vi: 'Chủ đề của câu.' }],
+  grammar_points: [{ pattern: '-이에요/예요', explanation_vi: 'Đuôi câu "là" lịch sự.' }],
+  confidence: 'high',
+  uncertainty: null,
+};
+
+export const SUMMARY_DATA = {
+  recap_vi: 'Hôm nay bạn đã học 12 phút và ôn thẻ rất đều.',
+  errors_to_remember: [{ tag: 'article', note_vi: 'Nhớ a/an/the trước danh từ đếm được.' }],
+  next_step_vi: 'Mai ôn 10 thẻ đầu tiên nhé.',
+};
+
+export const PLAN_LESSON_ID = '11111111-1111-4111-8111-111111111111';
+
+export const PLAN_DATA = {
+  summary_vi: 'Ưu tiên học lại bài present simple rồi ôn thẻ trắc nghiệm.',
+  steps: [
+    { kind: 'redo_lesson', target: PLAN_LESSON_ID, cards: null, reason_vi: 'Bạn sai bài này 4 lần.' },
+    { kind: 'review_cards', target: 'mcq', cards: 10, reason_vi: 'Trắc nghiệm còn nhiều lỗi.' },
+  ],
+};
+
 export const WRITING_DATA = {
   criteria: [
     { key: 'content', points: 3, comment_vi: 'Có phim và giờ gặp, còn thiếu chỗ gặp.' },

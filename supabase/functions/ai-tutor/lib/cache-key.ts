@@ -15,6 +15,20 @@ function cacheFields(req: AiRequest): (string | number)[] {
     case 'review_writing':
       // Never cached (personal essay); listed so the key stays total over every task.
       return [n(req.prompt), n(req.answer), JSON.stringify(req.rubric)];
+    case 'analyze_sentence':
+      return [n(req.sentence)];
+    case 'summarize_session':
+      // Never cached (one learner's session); listed so the key stays total over every task.
+      return [req.minutes, JSON.stringify(req.activities), JSON.stringify(req.accuracy_by_stage), JSON.stringify(req.error_tags)];
+    case 'plan_review':
+      // Order-independent: the same gaps in any order give the same plan. Labels are part of the model input.
+      return [
+        JSON.stringify(
+          [...req.gaps]
+            .sort((a, b) => (a.kind + a.id < b.kind + b.id ? -1 : a.kind + a.id > b.kind + b.id ? 1 : 0))
+            .map((g) => [g.kind, g.id, n(g.label), g.count]),
+        ),
+      ];
     case 'explain_concept':
       return [req.variant, n(req.concept), n(req.context), lesson];
     case 'generate_practice':

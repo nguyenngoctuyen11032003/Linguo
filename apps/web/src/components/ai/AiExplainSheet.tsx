@@ -17,16 +17,25 @@ import { AiResultView } from './AiResultView';
 export const AI_LABEL = 'Giải thích AI · có thể chưa chính xác';
 export const AI_WRITING_LABEL = 'Nhận xét AI · có thể chưa chính xác';
 
+/** Tasks whose answer is feedback or a plan rather than an explanation ("Nhận xét AI"). */
+const FEEDBACK_TASKS: ReadonlySet<AiRequestInput['task']> = new Set(['review_writing', 'summarize_session', 'plan_review']);
+
 const TITLES: Record<AiRequestInput['task'], string> = {
   explain_concept: 'Giải thích AI',
   analyze_error: 'Vì sao?',
   generate_practice: 'Bài luyện thêm',
   review_writing: 'Nhận xét bài viết',
+  analyze_sentence: 'Phân tích câu',
+  summarize_session: 'Tóm tắt phiên học',
+  plan_review: 'Kế hoạch ôn tập',
 };
 
 const LOADING: Partial<Record<AiRequestInput['task'], string>> = {
   generate_practice: 'Đang soạn bài luyện…',
   review_writing: 'Đang đọc bài viết…',
+  analyze_sentence: 'Đang phân tích câu…',
+  summarize_session: 'Đang viết tóm tắt…',
+  plan_review: 'Đang lập kế hoạch ôn…',
 };
 
 export interface AiExplainSheetProps {
@@ -132,7 +141,7 @@ export function AiExplainSheet({ open, onClose, request, fallback, triggerRef }:
         active={!reportOpen}
         triggerRef={triggerRef}
         title={TITLES[request.task]}
-        description={<span className="text-sm font-medium">{request.task === 'review_writing' ? AI_WRITING_LABEL : AI_LABEL}</span>}
+        description={<span className="text-sm font-medium">{FEEDBACK_TASKS.has(request.task) ? AI_WRITING_LABEL : AI_LABEL}</span>}
         headerExtra={
           <span className="flex shrink-0 items-center gap-2">
             <AiQuotaChip quota={liveQuota} />

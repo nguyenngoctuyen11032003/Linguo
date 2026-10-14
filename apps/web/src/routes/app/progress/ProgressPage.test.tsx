@@ -90,6 +90,15 @@ describe('isEmptyDashboard', () => {
 });
 
 describe('ProgressPage', () => {
+  it('offers the AI review plan next to the mistakes only when there are mistakes', () => {
+    const { unmount } = renderWithProviders(<ProgressPage />, { route: '/app/tien-do' });
+    expect(screen.getByRole('button', { name: 'Lập kế hoạch ôn bằng AI' })).toBeInTheDocument();
+    unmount();
+    state = ready(dashboardFixture({ mistakes: [] }));
+    renderWithProviders(<ProgressPage />, { route: '/app/tien-do' });
+    expect(screen.queryByRole('button', { name: 'Lập kế hoạch ôn bằng AI' })).not.toBeInTheDocument();
+  });
+
   it('shows every layer of the dashboard', () => {
     renderWithProviders(<ProgressPage />, { route: '/app/tien-do' });
     expect(screen.getByRole('heading', { level: 1, name: 'Tiến độ' })).toBeInTheDocument();
