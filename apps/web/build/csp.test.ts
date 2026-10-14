@@ -15,6 +15,9 @@ describe('buildCsp', () => {
     expect(directive(csp, 'object-src')).toBe("object-src 'none'");
     expect(directive(csp, 'base-uri')).toBe("base-uri 'self'");
     expect(directive(csp, 'form-action')).toBe("form-action 'self'");
+    // Spec 10 §4: the service worker (sw.js) and the web app manifest are same-origin files.
+    expect(directive(csp, 'worker-src')).toBe("worker-src 'self'");
+    expect(directive(csp, 'manifest-src')).toBe("manifest-src 'self'");
     expect(csp).not.toContain('unsafe-inline');
     expect(csp).not.toContain('unsafe-eval');
   });
