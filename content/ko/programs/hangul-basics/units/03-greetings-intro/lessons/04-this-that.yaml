@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:this-that
 order_index: 4
 level: topik1
@@ -264,6 +263,7 @@ exercises:
         - 이것은 무엇이에요?
         - 이건 무엇이에요?
         - 이것은 무엇입니까?
+        - 이것이 뭐예요?
     known_wrong:
       - answer: 이것은 뭐이에요?
         feedback_vi: 뭐 không có patchim nên dùng 예요 - 뭐예요.
@@ -300,6 +300,7 @@ exercises:
         - 전 학생이 아닙니다.
         - 학생이 아닙니다.
         - 저는 학생 아니에요.
+        - 전 학생 아니에요.
     known_wrong:
       - answer: 저는 학생가 아니에요.
         feedback_vi: 생 có patchim ㅇ nên dùng 이 - 학생이 아니에요.
@@ -339,6 +340,9 @@ exercises:
         - Không, đó không phải ba lô của tôi.
         - Không, cái đó không phải là túi của tôi.
         - Không, đó không phải cái cặp của tôi.
+        - Không, cái đó không phải cái cặp của tôi.
+        - Không, đó không phải là túi của tôi.
+        - Không, cái đó không phải ba lô của tôi.
     rubric:
       diacritics: lenient
     explanation:

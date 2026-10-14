@@ -1,7 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Nơi chốn & chỉ đường". IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: Nơi chốn trong thành phố ----------------
@@ -87,7 +89,7 @@ items:
       pronunciation_note:
         vi: Nhấn vào POST; âm /t/ của post thường gần như mất khi nói nhanh (pos-office).
       confusion:
-        vi: Post office là hai từ tách rời và luôn đi với a/an hoặc the - a post office, an office.
+        vi: Post office viết tách thành hai từ. Mạo từ chọn theo từ đứng đầu - a post office (post bắt đầu bằng phụ âm), dù office đứng một mình là an office.
 
   - key: en:item:bus-station
     type: vocab
@@ -106,7 +108,7 @@ items:
           translation:
             vi: Xin lỗi, bến xe buýt ở đâu ạ?
       pronunciation_note:
-        vi: Bus đọc /bʌs/, gần "bợt-x", không đọc "buýt" như tiếng Việt.
+        vi: Bus đọc /bʌs/, gần "bắs" với âm /s/ rõ ở cuối, không đọc "buýt" như tiếng Việt.
       confusion:
         vi: Điểm dừng nhỏ ven đường là bus stop; bus station là bến lớn có nhà chờ.
 
@@ -419,7 +421,7 @@ items:
           translation:
             vi: Con mèo ở dưới gầm giường.
       confusion:
-        vi: Tiếng Việt hay nói "trong bàn", "trên tường", nhưng tiếng Anh xét chỗ tiếp xúc - on the table, on the wall. In chỉ dùng khi vật nằm bên trong (in the box, in the kitchen).
+        vi: Tiếng Anh xét chỗ tiếp xúc - vật nằm hoặc treo sát một bề mặt dùng on (on the table, on the wall), kể cả khi tiếng Việt nói "ở tường". In chỉ dùng khi vật nằm bên trong (in the box, in the kitchen).
 
   # ---------------- Bài 3: Ở đâu? ----------------
   - key: en:item:next-to
@@ -687,7 +689,7 @@ items:
           translation:
             vi: Bưu điện ở bên tay phải bạn.
       confusion:
-        vi: Dùng on, không dùng in hay at - on your left. Cần your, không nói on left hay on the left hand.
+        vi: Dùng on, không dùng in hay at - on your left (hoặc on the left). Không bỏ your/the - không nói on left.
 
   - key: en:item:how-do-i-get-to
     type: phrase
@@ -847,4 +849,4 @@ items:
           translation:
             vi: Sang đường ở chỗ đèn giao thông.
       confusion:
-        vi: Cross the street không cần thêm giới từ - không nói cross over to the street hay go cross the street.
+        vi: Sau cross không cần giới từ - cross the street, không nói cross on the street hay go cross the street.

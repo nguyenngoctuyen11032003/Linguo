@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:food-drink
 order_index: 1
 level: a1
@@ -249,6 +248,8 @@ exercises:
         - I am eating a banana and some rice.
         - I eat one banana and some rice.
         - I eat a banana and a little rice.
+        - I have a banana and a little rice.
+        - I eat a banana and a bit of rice.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -287,6 +288,7 @@ exercises:
         - I drink some milk and I eat two eggs.
         - I have milk and two eggs.
         - I have some milk and two eggs.
+        - I drink milk and have two eggs.
     rubric:
       typo_tolerance: 1
     known_wrong:

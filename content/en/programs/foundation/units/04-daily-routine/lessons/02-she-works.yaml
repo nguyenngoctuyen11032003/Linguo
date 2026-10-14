@@ -278,6 +278,8 @@ exercises:
         - In the evening he studies English.
         - He learns English in the evening.
         - He learns English at night.
+        - In the evening he learns English.
+        - At night he learns English.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -316,6 +318,7 @@ exercises:
         - She does homework after class.
         - After school she does her homework.
         - After school she does homework.
+        - After class she does her homework.
     rubric:
       typo_tolerance: 1
     known_wrong:

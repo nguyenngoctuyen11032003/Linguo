@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:family-people-review
 order_index: 5
 level: a1
@@ -261,6 +260,9 @@ exercises:
         - Nam's mom is very kind.
         - Nam's mother is so kind.
         - Nam's mother is really kind.
+        - Nam's mother is very nice.
+        - Nam's mom is really kind.
+        - Nam's mum is really kind.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -305,6 +307,8 @@ exercises:
         - Đây là chị gái tôi. Chị ấy cao và trông giống ba chúng tôi.
         - Đây là chị gái tôi. Chị ấy cao và trông giống ba.
         - Đây là chị gái tôi. Chị cao và trông giống bố.
+        - Đây là chị gái tôi. Chị ấy cao và trông giống ba tôi.
+        - Đây là chị gái của tôi. Chị ấy cao và trông giống bố của chúng tôi.
     rubric:
       diacritics: lenient
     explanation:
@@ -330,6 +334,10 @@ exercises:
         - I have got two younger sisters. They are twins.
         - I have two younger sisters, and they are twins.
         - I've got two younger sisters, and they're twins.
+        - I've got two younger sisters, and they are twins.
+        - I have two younger sisters, and they're twins.
+        - I have got two younger sisters. They're twins.
+        - I have two younger sisters. They are twin sisters.
     rubric:
       typo_tolerance: 1
     known_wrong:

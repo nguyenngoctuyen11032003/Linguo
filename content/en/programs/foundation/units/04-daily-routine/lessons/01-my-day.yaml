@@ -309,6 +309,9 @@ exercises:
         - I go home in the evening and watch TV.
         - I come home and watch TV in the evening.
         - I come home and watch TV at night.
+        - I come home in the evening and watch TV.
+        - In the evening I come home and watch TV.
+        - At night I come home and watch TV.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -348,6 +351,7 @@ exercises:
         - Chúng ta dậy sớm và ăn sáng ở nhà.
         - Bọn tôi dậy sớm và ăn sáng ở nhà.
         - Chúng tôi dậy sớm và ăn sáng tại nhà.
+        - Chúng tôi thường dậy sớm và ăn sáng ở nhà.
     rubric:
       diacritics: lenient
     explanation:

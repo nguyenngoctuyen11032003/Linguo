@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:lets-and-want-to
 order_index: 2
 level: a1
@@ -281,6 +280,9 @@ exercises:
         - I want to go to the movies tonight.
         - I want to see a film tonight.
         - I want to see a movie tonight.
+        - I want to watch a film tonight.
+        - I want to watch a movie tonight.
+        - I'd like to go to the cinema tonight.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -313,6 +315,7 @@ exercises:
         - Let us go swimming!
         - Let's go for a swim!
         - Let's go to the swimming pool!
+        - Let's swim!
     known_wrong:
       - answer: Let's to go swimming!
         feedback_vi: Sau Let's không có to - Let's go swimming.
@@ -323,9 +326,6 @@ exercises:
       - answer: Let's go to swimming!
         feedback_vi: Go swimming không có to.
         error_tag: go_to_ing
-      - answer: Let's go swim!
-        feedback_vi: Đi bơi là cụm cố định go swimming.
-        error_tag: collocation
     explanation:
       vi: "Câu rủ \"… đi!\" dùng Let's + động từ nguyên mẫu; đi bơi là go swimming (không có to)."
     display_answer: Let's go swimming!
@@ -394,6 +394,9 @@ exercises:
         - How about going to the movies?
         - What about the cinema?
         - How about the cinema?
+        - What about seeing a film?
+        - How about watching a movie?
+        - What about watching a film?
     rubric:
       typo_tolerance: 1
     known_wrong:

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:at-home
 order_index: 2
 level: a1
@@ -267,6 +266,9 @@ exercises:
         - In the living room, there is a sofa.
         - In the living room, there's a sofa.
         - The living room has a sofa.
+        - The living room has a couch.
+        - In the living room, there is a couch.
+        - In the living room, there's a couch.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -303,6 +305,9 @@ exercises:
         - My mobile is on the table.
         - My cell phone is on the table.
         - My mobile phone is on the table.
+        - My phone is on the desk.
+        - "My phone's on the desk."
+        - My cellphone is on the table.
     rubric:
       typo_tolerance: 1
     known_wrong:

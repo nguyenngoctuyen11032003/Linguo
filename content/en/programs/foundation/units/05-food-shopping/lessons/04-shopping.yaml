@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:shopping
 order_index: 4
 level: a1
@@ -263,6 +262,9 @@ exercises:
         - May I try this on?
         - Can I try it on, please?
         - Can I try this on, please?
+        - Can I try this one on?
+        - Could I try this one on?
+        - May I try this one on?
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -349,6 +351,8 @@ exercises:
         - The T-shirt is five dollars.
         - This tshirt is five dollars.
         - This tee is five dollars.
+        - "This T-shirt's five dollars."
+        - The T-shirt costs five dollars.
     rubric:
       typo_tolerance: 1
     known_wrong:

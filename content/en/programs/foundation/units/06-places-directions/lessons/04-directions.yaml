@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:directions
 order_index: 4
 level: a1
@@ -49,7 +48,7 @@ body:
       vi: "Can + động từ nguyên mẫu nói về khả năng (I can swim - tôi biết bơi) hoặc việc có thể làm được (You can walk there - bạn đi bộ đến đó được). Sau can không có to, không thêm -s hay -ing; phủ định là can't (cannot)."
   - type: deep_explain
     text:
-      vi: Tiếng Việt "biết bơi", "có thể đi bộ" đều dịch là can, không dùng know - I can swim, không nói I know swim. Phương tiện dùng by + tên phương tiện, không có a/the (by bus, by taxi), riêng đi bộ là on foot. Khi nghe, can trong câu khẳng định đọc rất nhẹ /kən/, còn can't đọc rõ /kɑːnt/ - đó là dấu hiệu để phân biệt.
+      vi: Tiếng Việt "biết bơi", "có thể đi bộ" đều dịch là can, không dùng know - I can swim, không nói I know swim. Phương tiện dùng by + tên phương tiện, không có a/the (by bus, by taxi), riêng đi bộ là on foot. Khi nghe, can trong câu khẳng định đọc rất nhẹ /kən/, còn can't đọc rõ /kɑːnt/ (Mỹ /kænt/) - đó là dấu hiệu để phân biệt.
   - type: example
     target: Excuse me, how do I get to the bus station?
     target_lang: en
@@ -267,6 +266,8 @@ exercises:
         - You can take the bus there.
         - You can go by bus.
         - You can get there on the bus.
+        - You can go there on the bus.
+        - You can travel there by bus.
     rubric:
       typo_tolerance: 1
     known_wrong:

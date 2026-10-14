@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:age-phone
 order_index: 2
 level: pre_a1
@@ -46,7 +45,7 @@ body:
       vi: Để xin số điện thoại, bạn hỏi What's your phone number? và trả lời My number is… hoặc It's… Số điện thoại được đọc từng chữ số, ngắt nghỉ theo nhóm, không gộp thành số lớn như "chín trăm mười hai".
   - type: explain
     text:
-      vi: Số 0 trong số điện thoại thường đọc là oh (như chữ O), người Mỹ hay đọc zero. Hai chữ số giống nhau liền nhau, người Anh thường nói double - 55 là double five.
+      vi: Số 0 trong số điện thoại thường đọc là oh (như chữ O); đọc zero cũng đúng, người Mỹ dùng nhiều hơn. Hai chữ số giống nhau liền nhau, người Anh thường nói double - 55 là double five.
   - type: deep_explain
     text:
       vi: Bạn có thể nói chỉ số (I'm twenty.) hoặc đầy đủ (I'm twenty years old.), nhưng không dừng giữa chừng ở I'm twenty years. Trong How old và years old, old không mang nghĩa "già" - em bé một tuổi vẫn là one year old (số ít year khi là một). Người Mỹ ít nói double, họ đọc từng số - five, five; khi cho số, người ta thường thêm lời nhờ như Call me tonight.
@@ -81,7 +80,7 @@ body:
     right: I'm twenty years old.
     target_lang: en
     note:
-      vi: Tiếng Việt nói "có… tuổi" nên người Việt hay dùng have. Tiếng Anh nói tuổi bằng be - I am / I'm.
+      vi: Người Việt hay nghĩ theo kiểu "có… tuổi" nên dùng have. Tiếng Anh nói tuổi bằng be - I am / I'm.
   - type: common_mistake
     wrong: I'm twenty years.
     right: I'm twenty. / I'm twenty years old.
@@ -99,7 +98,7 @@ body:
       - vi: How old are you? → I'm 20. / I'm 20 years old. - dùng be, không dùng have.
       - vi: Không dừng ở years - nói I'm 20 hoặc I'm 20 years old.
       - vi: What's your phone number? → My number is… / It's…
-      - vi: Đọc số điện thoại từng chữ số; 0 đọc oh (Anh) hoặc zero (Mỹ); 55 có thể đọc double five.
+      - vi: Đọc số điện thoại từng chữ số; 0 đọc oh hoặc zero; 55 có thể đọc double five.
 exercises:
   # ---------------- recognition ----------------
   - key: en:exercise:age-phone-mcq-twenty
@@ -306,6 +305,10 @@ exercises:
         - Em trai của tôi mười lăm tuổi.
         - Em trai tôi năm nay mười lăm tuổi.
         - Anh trai tôi năm nay mười lăm tuổi.
+        - Anh tôi 15 tuổi.
+        - Em tôi 15 tuổi.
+        - Anh trai của tôi 15 tuổi.
+        - Em trai của tôi 15 tuổi.
     rubric:
       diacritics: lenient
     explanation:
@@ -332,6 +335,12 @@ exercises:
         - What is your mobile number?
         - Can I have your phone number?
         - Can I have your number?
+        - May I have your phone number?
+        - May I have your number?
+        - What's your cell phone number?
+        - What is your cell phone number?
+        - What is your mobile phone number?
+        - What's your mobile phone number?
     rubric:
       typo_tolerance: 1
     known_wrong:

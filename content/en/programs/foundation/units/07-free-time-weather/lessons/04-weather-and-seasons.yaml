@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:weather-and-seasons
 order_index: 4
 level: a1
@@ -274,6 +273,10 @@ exercises:
         - Today, it's sunny and hot.
         - Today, it's hot and sunny.
         - The weather is sunny and hot today.
+        - It is sunny and hot today.
+        - It is hot and sunny today.
+        - Today it is sunny and hot.
+        - Today it is hot and sunny.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -310,6 +313,11 @@ exercises:
         - How's the weather in Hanoi?
         - How is the weather in Hanoi?
         - What is the weather in Hanoi like?
+        - What is the weather like in Hanoi?
+        - What is the weather like in Ha Noi?
+        - "What's the weather in Hanoi like?"
+        - "What's the weather in Hanoi?"
+        - What is the weather in Hanoi?
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -319,8 +327,8 @@ exercises:
       - answer: What's weather like in Hanoi?
         feedback_vi: Cần the trước weather.
         error_tag: missing_article_weather
-      - answer: What's the weather in Hanoi?
-        feedback_vi: Thiếu like ở cuối - What's the weather like in Hanoi?
+      - answer: What weather is in Hanoi?
+        feedback_vi: Câu hỏi thời tiết cần the weather và like - What's the weather like in Hanoi?
         error_tag: missing_like
     explanation:
       vi: "\"Thời tiết thế nào?\" = What's the weather like? (like = như thế nào). Cách khác - How's the weather in Hanoi?"
@@ -393,6 +401,10 @@ exercises:
         - In the summer, it's very hot here.
         - Summer here is very hot.
         - The summer here is very hot.
+        - It is very hot here in summer.
+        - It is very hot here in the summer.
+        - In summer it is very hot here.
+        - In the summer it is very hot here.
     rubric:
       typo_tolerance: 1
     known_wrong:

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:describing-people
 order_index: 4
 level: a1
@@ -66,7 +65,7 @@ body:
     target: Those are my cousins. They are young and friendly.
     target_lang: en
     translation:
-      vi: Kia là các anh chị em họ của tôi. Họ còn trẻ và rất thân thiện.
+      vi: Kia là các anh chị em họ của tôi. Họ còn trẻ và thân thiện.
     note:
       vi: Nhiều người ở xa dùng Those are. Young và friendly không thêm -s.
   - type: example
@@ -342,6 +341,9 @@ exercises:
         - Em trai tôi rụt rè, nhưng chị gái tôi rất thân thiện.
         - Em trai tôi nhút nhát, nhưng chị gái tôi rất dễ gần.
         - Em trai tôi nhút nhát, nhưng em gái tôi rất dễ gần.
+        - Em trai mình nhút nhát, còn chị gái mình rất thân thiện.
+        - Em trai mình nhút nhát, còn em gái mình rất thân thiện.
+        - Em trai của tôi nhút nhát, nhưng chị gái của tôi rất thân thiện.
     rubric:
       diacritics: lenient
     explanation:

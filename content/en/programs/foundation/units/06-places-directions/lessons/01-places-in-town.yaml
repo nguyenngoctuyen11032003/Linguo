@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:places-in-town
 order_index: 1
 level: a1
@@ -258,6 +257,11 @@ exercises:
         - There is a drugstore near here.
         - There's a drugstore near here.
         - There's a chemist's near here.
+        - There is a chemist's near here.
+        - There's a drugstore nearby.
+        - There's a pharmacy close by.
+        - There is a pharmacy close by.
+        - There is a drugstore nearby.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -297,6 +301,8 @@ exercises:
         - The city has two hospitals.
         - In the city, there are two hospitals.
         - There are 2 hospitals in the city.
+        - The city has 2 hospitals.
+        - There are two hospitals in this city.
     rubric:
       typo_tolerance: 1
     known_wrong:

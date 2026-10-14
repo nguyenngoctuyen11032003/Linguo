@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:places-existence
 order_index: 1
 level: topik1
@@ -176,7 +175,7 @@ exercises:
         b2: [이]
     known_wrong:
       - answer: 는
-        feedback_vi: 는 là trợ từ chủ đề. Thứ "có" hay "không có" ở đây cần 이/가.
+        feedback_vi: 는 là trợ từ chủ đề, mang nghĩa nhấn "còn… thì". Câu trung tính "Có trường học" dùng 이/가.
         error_tag: particle_i_ga
       - answer: 을
         feedback_vi: 을/를 đánh dấu tân ngữ, không dùng với 있어요/없어요. Hãy dùng 이/가.

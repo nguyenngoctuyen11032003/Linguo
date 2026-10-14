@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:big-numbers-money
 order_index: 2
 level: topik1
@@ -293,6 +292,8 @@ exercises:
         - 이것은 삼천 원이에요.
         - 이거 3000원이에요.
         - 이거 3,000원이에요.
+        - 이거 삼천 원입니다.
+        - 이건 3000원이에요.
     known_wrong:
       - answer: 이거 삼천 원예요.
         feedback_vi: 원 có phụ âm cuối ㄴ nên dùng 이에요 - 삼천 원이에요.

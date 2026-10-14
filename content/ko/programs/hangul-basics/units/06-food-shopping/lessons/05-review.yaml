@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:food-shopping-review
 order_index: 5
 level: topik1
@@ -334,6 +333,7 @@ exercises:
         - Bibimbap thì ngon, nhưng hơi đắt.
         - Cơm trộn ngon nhưng hơi đắt.
         - Cơm trộn ngon. Nhưng mà hơi đắt.
+        - Cơm trộn ngon mà hơi đắt.
     rubric:
       diacritics: lenient
     known_wrong:

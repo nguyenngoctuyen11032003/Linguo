@@ -1,8 +1,10 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Ăn uống & mua sắm" (TOPIK 1). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 # Số đếm, đơn vị đếm (개, 병, 잔…) và động từ chung (먹다, 마시다…) thuộc unit khác, chỉ dùng trong câu.
 schema_version: 1
-demo: true
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- bài 1: món ăn, đồ uống, ngon/dở ----------------
@@ -200,7 +202,7 @@ items:
           translation:
             vi: Bulgogi ngon thật.
       pronunciation_note:
-        vi: Đọc là [마시써요] - patchim ㅅ của 맛 nối sang âm tiết sau thành ㅆ.
+        vi: Đọc là [마시써요] - ㅅ của 맛 nối sang 이 thành [시], và ㅆ của 있 nối sang 어 thành [써].
 
   - key: ko:item:maseopseoyo
     type: phrase

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:ordering
 order_index: 3
 level: a1
@@ -244,6 +243,9 @@ exercises:
         - I'd like a cup of coffee, please.
         - I would like a cup of coffee, please.
         - Can I get a coffee, please?
+        - Could I have a coffee?
+        - Could I have a cup of coffee, please?
+        - One coffee, please.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -284,6 +286,10 @@ exercises:
         - Could I have the check, please?
         - The check, please.
         - Can I get the check, please?
+        - Could we have the bill, please?
+        - Can we have the check, please?
+        - Bill, please.
+        - Check, please.
     rubric:
       typo_tolerance: 1
     known_wrong:

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:free-time-activities
 order_index: 1
 level: a1
@@ -103,11 +102,11 @@ body:
     note:
       vi: Go + hoạt động -ing không có to - go shopping, go swimming. Chỉ nơi chốn mới có to - go to the cinema.
   - type: common_mistake
-    wrong: She plays guitar and plays the football.
+    wrong: She plays the guitar and plays the football.
     right: She plays the guitar and plays football.
     target_lang: en
     note:
-      vi: Nhạc cụ có the (the guitar, the piano); môn thể thao thì không (football, tennis).
+      vi: Nhạc cụ thường có the (the guitar, the piano); môn thể thao thì không bao giờ có the (football, tennis).
   - type: summary
     points:
       - vi: Hỏi sở thích - What do you do in your free time? / What do you like doing?
@@ -134,7 +133,7 @@ exercises:
     answer:
       correct_option_id: k3q
     explanation:
-      vi: Chơi nhạc cụ luôn dùng play + the - play the guitar, play the piano. Go, do, make không đi với nhạc cụ.
+      vi: Chơi nhạc cụ dùng play, thường kèm the - play the guitar, play the piano. Go, do, make không đi với nhạc cụ.
     display_answer: play the guitar
 
   - key: en:exercise:free-time-activities-listen-cinema
@@ -321,6 +320,7 @@ exercises:
         - I like going to the movies.
         - I like to go to the cinema.
         - I like to go to the movies.
+        - I like going to the movie theater.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -403,6 +403,8 @@ exercises:
         - He hates going shopping, but he really loves drawing.
         - He hates to go shopping, but he loves drawing.
         - He hates going shopping, but he loves to draw.
+        - He hates shopping, but he loves to draw.
+        - He hates going shopping, but loves drawing.
     rubric:
       typo_tolerance: 1
     known_wrong:

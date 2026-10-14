@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:my-family
 order_index: 2
 level: topik1
@@ -244,6 +243,7 @@ exercises:
         - 남동생 이름은 민호예요.
         - 제 남동생은 이름이 민호예요.
         - 우리 남동생은 이름이 민호예요.
+        - 제 동생 이름은 민호예요.
     known_wrong:
       - answer: 저 남동생 이름은 민호예요.
         feedback_vi: 저 남동생 là "cậu em trai kia". "Của tôi" là 제 hoặc 우리.

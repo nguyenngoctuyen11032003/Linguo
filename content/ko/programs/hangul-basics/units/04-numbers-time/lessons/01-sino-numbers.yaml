@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:sino-numbers
 order_index: 1
 level: topik1
@@ -316,6 +315,7 @@ exercises:
         - Sinh nhật tôi là 16/6.
         - Sinh nhật của tôi vào ngày 16 tháng 6.
         - Sinh nhật tôi vào ngày 16 tháng 6.
+        - Sinh nhật mình là ngày 16 tháng 6.
     rubric:
       diacritics: lenient
     known_wrong:

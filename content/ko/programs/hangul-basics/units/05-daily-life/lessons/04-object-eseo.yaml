@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:object-eseo
 order_index: 4
 level: topik1
@@ -259,6 +258,8 @@ exercises:
         - 친구하고 만나요.
         - 저는 친구하고 만나요.
         - 친구와 만나요.
+        - 저는 친구와 만나요.
+        - 전 친구하고 만나요.
     known_wrong:
       - answer: 저는 친구가 만나요.
         feedback_vi: 친구가 biến bạn thành người đi gặp. Người được gặp dùng 를 - 친구를 만나요.

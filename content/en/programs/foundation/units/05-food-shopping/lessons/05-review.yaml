@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:food-shopping-review
 order_index: 5
 level: a1
@@ -220,6 +219,9 @@ exercises:
         - I would like an orange juice and some bread, please.
         - Could I have a glass of orange juice and some bread, please?
         - A glass of orange juice and some bread, please.
+        - An orange juice and some bread, please.
+        - Could I have an orange juice and some bread, please?
+        - Can I have a glass of orange juice and some bread?
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -258,6 +260,8 @@ exercises:
         - Can I pay with a card?
         - Can I pay with my card?
         - Can I pay by card, please?
+        - Could I pay with a card?
+        - Can I pay with card?
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -365,6 +369,10 @@ exercises:
         - I love this dress. How much is it?
         - I really like this dress. How much is it?
         - I like this dress. How much is this?
+        - I like this dress. How much does this cost?
+        - I like this dress. How much is it, please?
+        - I like this dress. What's the price?
+        - I like this dress. What is the price?
     rubric:
       typo_tolerance: 1
     known_wrong:

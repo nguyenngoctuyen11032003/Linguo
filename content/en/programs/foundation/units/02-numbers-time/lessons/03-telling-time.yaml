@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:telling-time
 order_index: 3
 level: a1
@@ -242,6 +241,10 @@ exercises:
         - "It is 7:00."
         - "It's seven o'clock now."
         - "It is seven o'clock now."
+        - "It's 7."
+        - "It is 7."
+        - "It's seven now."
+        - "It is seven now."
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -279,6 +282,7 @@ exercises:
         - What is the time?
         - "What's the time now?"
         - Do you have the time?
+        - What is the time now?
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -341,6 +345,8 @@ exercises:
         - 10 giờ 15 phút.
         - Bây giờ là 10:15.
         - Bây giờ là mười giờ mười lăm rồi.
+        - Mười giờ mười lăm rồi.
+        - 10:15.
     rubric:
       diacritics: lenient
     explanation:
@@ -368,6 +374,11 @@ exercises:
         - "It's half six."
         - "It's half past six now."
         - "It's six thirty now."
+        - "It is half six."
+        - "It is half past six now."
+        - "It is six thirty now."
+        - "It's 6:30 now."
+        - "It is 6:30 now."
     rubric:
       typo_tolerance: 1
     known_wrong:

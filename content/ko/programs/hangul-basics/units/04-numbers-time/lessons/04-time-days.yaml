@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:time-days
 order_index: 4
 level: topik1
@@ -334,6 +333,8 @@ exercises:
         - Giờ học là 10 giờ rưỡi sáng.
         - Lớp học bắt đầu lúc 10 giờ rưỡi sáng.
         - Lớp học là 10 giờ rưỡi sáng.
+        - Lớp học vào lúc 10 giờ rưỡi sáng.
+        - Tiết học lúc 10 giờ rưỡi sáng.
     rubric:
       diacritics: lenient
     known_wrong:

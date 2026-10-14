@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:days-dates
 order_index: 4
 level: a1
@@ -121,7 +120,7 @@ exercises:
     answer:
       correct_option_id: z9e
     explanation:
-      vi: Tuần bắt đầu Monday (thứ Hai), nên Tuesday là thứ Ba. Thursday là thứ Năm - hai từ này hay bị nhầm vì đều bắt đầu bằng T và có -s-.
+      vi: Monday là thứ Hai, ngày tiếp theo Tuesday là thứ Ba. Thursday là thứ Năm - hai từ này hay bị nhầm vì đều bắt đầu bằng T và có -s-.
     display_answer: Tuesday
 
   - key: en:exercise:days-dates-listen-july
@@ -303,6 +302,8 @@ exercises:
         - Sinh nhật tôi là ngày 3/3.
         - Sinh nhật tôi vào mùng 3 tháng 3.
         - Sinh nhật tôi vào ngày ba tháng ba.
+        - Sinh nhật tôi là mùng 3 tháng 3.
+        - Sinh nhật mình vào mùng 3 tháng 3.
     rubric:
       diacritics: lenient
     explanation:
@@ -323,8 +324,8 @@ exercises:
       accepted:
         - My birthday is in December.
         - "My birthday's in December."
-        - My birthday is in December too.
-        - "My birthday's in December too."
+        - My birthday falls in December.
+        - My birthday is in the month of December.
     rubric:
       typo_tolerance: 1
     known_wrong:

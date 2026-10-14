@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:daily-life-review
 order_index: 5
 level: topik1
@@ -153,11 +152,11 @@ exercises:
         - { id: t5a, text: 은행에 가요., lang: ko }
         - { id: y1s, text: 은행에서 가요., lang: ko }
         - { id: u8d, text: 은행이 있어요., lang: ko }
-        - { id: i4f, text: 은행을 가요., lang: ko }
+        - { id: i4f, text: 은행에 있어요., lang: ko }
     answer:
       correct_option_id: t5a
     explanation:
-      vi: Ngân hàng là nơi đi tới với 가요, nên dùng 에. 에서 dành cho nơi làm việc gì, 은행이 있어요 là "có ngân hàng", còn 을 không dùng cho nơi đến trong bài này.
+      vi: Ngân hàng là nơi đi tới với 가요, nên dùng 에. 에서 dành cho nơi làm việc gì, 은행이 있어요 là "có ngân hàng", còn 은행에 있어요 là "(tôi) đang ở ngân hàng" chứ không phải "đi ngân hàng".
     display_answer: 은행에 가요.
 
   - key: ko:exercise:dl-review-fill-particles-hinted
@@ -173,11 +172,11 @@ exercises:
         - { id: b2, width_hint: 2 }
       hint_levels:
         - "Nghĩa: Tôi gặp bạn ở thư viện."
-        - "Gợi ý: gặp là hành động diễn ra ở thư viện; 구 không có patchim."
+        - "Gợi ý: gặp là hành động diễn ra ở thư viện; người được gặp là tân ngữ, 구 không có patchim."
     answer:
       blanks:
         b1: [에서]
-        b2: [를]
+        b2: [를, 하고, 와]
     known_wrong:
       - answer: 에
         feedback_vi: Gặp bạn là hành động ở thư viện, nên dùng 에서 chứ không phải 에.
@@ -189,7 +188,7 @@ exercises:
         feedback_vi: 친구가 biến bạn thành người đi gặp. Người được gặp dùng 를.
         error_tag: particle_eul_reul
     explanation:
-      vi: Gặp gỡ diễn ra ở thư viện nên dùng 도서관에서. Người được gặp là tân ngữ, 구 không có patchim nên dùng 친구를.
+      vi: Gặp gỡ diễn ra ở thư viện nên dùng 도서관에서. Người được gặp là tân ngữ, 구 không có patchim nên dùng 친구를 (nói 친구하고 - "gặp cùng bạn" - cũng đúng).
     display_answer: 도서관에서 친구를 만나요.
 
   - key: ko:exercise:dl-review-mcq-negation

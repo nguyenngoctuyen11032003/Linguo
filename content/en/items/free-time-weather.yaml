@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Thời gian rảnh, thời tiết & màu sắc". IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: Bạn làm gì lúc rảnh? ----------------
@@ -109,7 +108,7 @@ items:
       pronunciation_note:
         vi: Guitar nhấn âm sau - gi-TAR, khác tiếng Việt "ghi-ta" đọc đều.
       confusion:
-        vi: Nhạc cụ có the (play the guitar), còn môn thể thao thì không (play football). Người Việt hay nói "play guitar" hoặc "play the football".
+        vi: Nhạc cụ thường có the (play the guitar; người Mỹ cũng hay nói play guitar), còn môn thể thao thì không có the (play football). Người Việt hay nói nhầm "play the football".
 
   - key: en:item:go-shopping
     type: phrase
@@ -519,7 +518,7 @@ items:
           translation:
             vi: Túi của bạn màu gì? - Màu đen.
       confusion:
-        vi: Không nói "What is colour…?" - colour đứng ngay sau What. Trả lời cần It's - It's red, không chỉ nói "Red is".
+        vi: Không nói "What is colour…?" - colour đứng ngay sau What. Trả lời đủ câu là It's red (nói ngắn Red. cũng được), không nói "Red is".
 
   - key: en:item:red
     type: vocab
@@ -662,7 +661,7 @@ items:
           translation:
             vi: Ông ấy có mắt nâu và tóc bạc.
       confusion:
-        vi: Tóc "bạc" của người già là grey hair, không phải silver hair. Anh viết grey, Mỹ viết gray.
+        vi: Tóc "bạc" của người già thường gọi là grey hair (bạc trắng hẳn thì là white hair). Anh viết grey, Mỹ viết gray.
 
   - key: en:item:light-dark
     type: vocab
@@ -859,7 +858,7 @@ items:
     skill_tags: [vocabulary]
     front:
       text: autumn (US fall)
-      ipa: /ˈɔːtəm/
+      ipa: UK /ˈɔːtəm/ · US /ˈɔːt̬əm/
       pos: danh từ
     back:
       meaning:

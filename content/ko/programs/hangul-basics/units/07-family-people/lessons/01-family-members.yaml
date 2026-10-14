@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:family-members
 order_index: 1
 level: topik1
@@ -281,6 +280,9 @@ exercises:
         - 엄마가 선생님이에요.
         - 제 어머니는 선생님이에요.
         - 저희 어머니는 선생님이에요.
+        - 어머니는 교사예요.
+        - 우리 어머니는 교사예요.
+        - 우리 엄마는 교사예요.
     known_wrong:
       - answer: 엄마는 선생님예요.
         feedback_vi: 선생님 có patchim ㅁ nên dùng 이에요 - 선생님이에요.

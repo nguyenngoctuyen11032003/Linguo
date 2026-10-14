@@ -1,7 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Chào hỏi & giới thiệu bản thân" (TOPIK 1). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 schema_version: 1
-demo: true
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- bài 1: chào hỏi, cảm ơn, xin lỗi ----------------
@@ -543,9 +545,9 @@ items:
           translation:
             vi: Tôi không phải bác sĩ. Tôi là y tá.
       pronunciation_note:
-        vi: Nối âm - 학생이 아니에요 đọc liền [학쌩이 아니에요]; 책이 아니에요 đọc [채기 아니에요].
+        vi: Nối âm - 책이 아니에요 đọc [채기 아니에요], 연필이 아니에요 đọc [연피리 아니에요]. Patchim ㅇ thì không nối - 학생이 아니에요 [학쌩이 아니에요].
       confusion:
-        vi: Viết 아니에요, không viết 아니예요. Đừng dùng 은/는 thay cho 이/가 trong cấu trúc này.
+        vi: Viết 아니에요, không viết 아니예요. Trước 아니에요 bạn dùng 이/가; 은/는 chỉ dùng khi muốn nhấn mạnh sự đối lập.
 
   - key: ko:item:yeonpil
     type: vocab

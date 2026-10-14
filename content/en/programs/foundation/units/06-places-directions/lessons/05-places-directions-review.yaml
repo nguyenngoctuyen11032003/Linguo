@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:places-directions-review
 order_index: 5
 level: a1
@@ -274,6 +273,8 @@ exercises:
         - Excuse me, are there any banks near here?
         - Excuse me, are there any banks nearby?
         - Excuse me, is there any bank near here?
+        - Excuse me, is there a bank close by?
+        - Excuse me, are there any banks around here?
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -376,6 +377,9 @@ exercises:
         - It isn't far. You can walk.
         - It's not far. You can walk.
         - It isn't far. You can get there on foot.
+        - It's not far. You can get there on foot.
+        - It isn't far away. You can walk there.
+        - It's not far away. You can walk there.
     rubric:
       typo_tolerance: 1
     known_wrong:

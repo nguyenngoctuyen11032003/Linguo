@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:family-people-review
 order_index: 5
 level: topik1
@@ -361,6 +360,7 @@ exercises:
         - Anh tôi 28 tuổi, cao và phong độ.
         - Anh trai tôi 28 tuổi, cao và đẹp trai.
         - Anh tôi 28 tuổi. Anh ấy cao và phong độ.
+        - Anh trai tôi 28 tuổi. Cao và phong độ.
     rubric:
       diacritics: lenient
     known_wrong:

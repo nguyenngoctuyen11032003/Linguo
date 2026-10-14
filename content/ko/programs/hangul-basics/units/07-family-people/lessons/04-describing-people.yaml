@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:describing-people
 order_index: 4
 level: topik1
@@ -297,6 +296,7 @@ exercises:
         - 남자친구는 어때요?
         - 남자 친구는 어떤 사람이에요?
         - 남자 친구가 어떤 사람이에요?
+        - 남자 친구 어때요?
     known_wrong:
       - answer: 남자 친구가 어때예요?
         feedback_vi: 어때요 đã là đuôi hoàn chỉnh, không thêm 예요.
@@ -354,6 +354,9 @@ exercises:
         - Anh tôi đẹp trai và rất hiền.
         - Anh trai tôi đẹp trai và rất hiền.
         - Anh tôi phong độ và rất hiền.
+        - Anh trai tôi phong độ và rất hiền.
+        - Anh tôi đẹp trai và rất tốt bụng.
+        - Anh trai tôi đẹp trai. Và rất hiền.
     rubric:
       diacritics: lenient
     known_wrong:

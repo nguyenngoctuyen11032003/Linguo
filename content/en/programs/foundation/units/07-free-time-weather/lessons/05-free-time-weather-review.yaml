@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:free-time-weather-review
 order_index: 5
 level: a1
@@ -71,7 +70,7 @@ body:
       vi: Bưu thiếp (postcard) ngắn và thân mật - mở đầu Dear + tên, kể thời tiết (It's hot and sunny), việc bạn làm mỗi ngày (We go swimming every morning), rồi kết thúc bằng Love from + tên.
   - type: explain
     text:
-      vi: "Trước khi gửi, hãy tự kiểm tra năm lỗi hay gặp: It is rain → It's rainy; Weather is hot → It's hot; I like play → I like playing; Let's to go → Let's go; I want go → I want to go; a bag red → a red bag."
+      vi: "Trước khi gửi, hãy tự kiểm tra sáu lỗi hay gặp: It is rain → It's rainy; Weather is hot → It's hot; I like play → I like playing; Let's to go → Let's go; I want go → I want to go; a bag red → a red bag."
   - type: deep_explain
     text:
       vi: Trong tin nhắn, người bản xứ hay viết ngắn - Sounds great!, Me too!, See you! - nhưng vẫn giữ đúng ngữ pháp cơ bản như It's và want to. Bưu thiếp thường dùng thì hiện tại đơn để kể việc lặp lại hằng ngày (we go swimming every day). Love from chỉ dùng với người thân, bạn bè.
@@ -104,8 +103,8 @@ body:
     note:
       vi: Bưu thiếp mở đầu Dear, kể thời tiết bằng It's, màu đứng trước danh từ (a new red hat), kết thúc Love from.
   - type: common_mistake
-    wrong: Let's to go to the beach. It is rain today.
-    right: Let's go to the beach. It isn't rainy today.
+    wrong: It is rain today. Let's to go to the cinema.
+    right: It's rainy today. Let's go to the cinema.
     target_lang: en
     note:
       vi: Sau Let's không có to; nói thời tiết dùng It's + tính từ (rainy), không dùng danh từ rain.
@@ -296,6 +295,8 @@ exercises:
         - Are you free at the weekend?
         - Are you free on the weekend?
         - This weekend, are you free?
+        - Are you available this weekend?
+        - Are you free over the weekend?
     known_wrong:
       - answer: You free this weekend?
         feedback_vi: Thiếu are - Are you free this weekend?
@@ -326,6 +327,8 @@ exercises:
         - I hate swimming but I like playing football.
         - I hate swimming, but I like football.
         - I hate swimming, but I like playing soccer.
+        - I hate swimming, but I like soccer.
+        - I hate swimming, but I enjoy playing football.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -426,6 +429,10 @@ exercises:
         - In summer, I want to go to the beach because it's hot.
         - In summer I want to go to the beach because it's hot.
         - In the summer, I want to go to the beach because it's hot.
+        - I want to go to the beach in summer because it is hot.
+        - I want to go to the beach in the summer because it is hot.
+        - In summer I want to go to the beach because it is hot.
+        - In the summer I want to go to the beach because it is hot.
     rubric:
       typo_tolerance: 1
     known_wrong:

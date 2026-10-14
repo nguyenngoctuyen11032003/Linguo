@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:numbers-time-review
 order_index: 5
 level: topik1
@@ -281,6 +280,7 @@ exercises:
     answer:
       accepted:
         - 시월 육 일
+        - 시월 육일
     known_wrong:
       - answer: 십월 육 일
         feedback_vi: Tháng 10 là 시월 (bỏ ㅂ của 십).

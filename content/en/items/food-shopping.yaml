@@ -1,7 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Ăn uống & mua sắm". IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: đồ ăn, thức uống, đếm được / không đếm được ----------------
@@ -716,7 +718,7 @@ items:
       pronunciation_note:
         vi: Nhấn âm đầu "ME-niu", âm cuối là "niu" chứ không phải "nu".
       confusion:
-        vi: Hỏi thực đơn của quán thì dùng the menu, không nói a menu.
+        vi: Xin thực đơn của quán thường nói the menu (Can I see the menu, please?).
 
   - key: en:item:a-cup-of
     type: phrase
@@ -959,7 +961,7 @@ items:
       pronunciation_note:
         vi: Âm cuối /z/ rung - "saiz", không đọc "sai".
       confusion:
-        vi: Hỏi cỡ của người mua nói What size are you?, không nói What size you wear? Thiếu cỡ thì nói It's too big (rộng quá) hoặc It's too small (chật quá).
+        vi: Hỏi cỡ của người mua nói What size are you? hoặc What size do you wear? (không nói What size you wear?). Không vừa thì nói It's too big (rộng quá) hoặc It's too small (chật quá).
 
   - key: en:item:try-it-on
     type: phrase

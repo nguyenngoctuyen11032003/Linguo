@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:my-family
 order_index: 1
 level: pre_a1
@@ -299,6 +298,8 @@ exercises:
         - Đây là cha mẹ tôi, còn đây là em gái tôi.
         - Đây là bố mẹ của tôi, còn đây là em gái của tôi.
         - Đây là bố mẹ tôi và đây là em gái tôi.
+        - Đây là ba mẹ mình, và đây là em gái mình.
+        - Đây là cha mẹ mình, còn đây là em gái mình.
     rubric:
       diacritics: lenient
     explanation:

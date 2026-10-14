@@ -1,8 +1,10 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Hangul nâng cao: nguyên âm ghép & patchim". Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 # Cách đọc chuẩn Seoul ghi trong ngoặc vuông, ví dụ 옷 [옫], 한국어 [한구거].
 schema_version: 1
-demo: true
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- nguyên âm "y" còn lại và nguyên âm "w" ----------------

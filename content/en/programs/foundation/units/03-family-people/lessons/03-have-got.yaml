@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:have-got
 order_index: 3
 level: a1
@@ -261,6 +260,9 @@ exercises:
         - I haven't got any brothers or sisters.
         - I don't have any brothers or sisters.
         - I have no brothers or sisters.
+        - I don't have any siblings.
+        - I haven't got any siblings.
+        - I have no siblings.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -298,6 +300,9 @@ exercises:
         - He has a wife and two kids.
         - He's got a wife and two kids.
         - He has got a wife and two kids.
+        - He has a wife and 2 children.
+        - He is married with two children.
+        - He's married with two children.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -341,7 +346,6 @@ exercises:
         - Bạn có anh chị em không vậy?
         - Bạn có anh chị em nào không vậy?
         - Bạn có anh em trai hay chị em gái không?
-        - Bạn có anh chị em gì chưa?
     rubric:
       diacritics: lenient
     explanation:

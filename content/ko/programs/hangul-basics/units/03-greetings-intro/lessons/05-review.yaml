@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:greetings-intro-review
 order_index: 5
 level: topik1
@@ -349,6 +348,9 @@ exercises:
         - 전 남이에요. 베트남 사람이에요.
         - 저는 남입니다. 베트남 사람입니다.
         - 제 이름은 남입니다. 저는 베트남 사람입니다.
+        - 제 이름은 남입니다. 베트남 사람입니다.
+        - 전 남이에요. 전 베트남 사람이에요.
+        - 남이에요. 베트남 사람이에요.
     known_wrong:
       - answer: 저는 남 씨예요. 베트남 사람이에요.
         feedback_vi: Không dùng 씨 cho chính mình - chỉ nói 저는 남이에요.

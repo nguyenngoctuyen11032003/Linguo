@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:food-drinks
 order_index: 1
 level: topik1
@@ -46,7 +45,7 @@ body:
       vi: Để khen, bạn nói N이/가 맛있어요 (N ngon); để chê, nói 맛없어요 (không ngon). Danh từ có patchim dùng 이 (김밥이), không có patchim dùng 가 (김치가).
   - type: deep_explain
     text:
-      vi: 맛있어요 gồm 맛 (vị) + 있어요 (có) - nghĩa đen là "có vị", tức là ngon; 맛없어요 là "không có vị", tức là dở. Vì vậy người Hàn không nói 안 맛있어요 mà dùng 맛없어요. Khi đọc, patchim ㅅ nối sang 있 thành [마시써요], còn 맛없어요 đọc [마덥써요].
+      vi: 맛있어요 gồm 맛 (vị) + 있어요 (có) - nghĩa đen là "có vị", tức là ngon; 맛없어요 là "không có vị", tức là dở. Vì vậy người Hàn không nói 안 맛있어요 mà dùng 맛없어요. Khi đọc, ㅅ của 맛 nối sang 있 nên thành [마시써요], còn 맛없어요 đọc [마덥써요].
   - type: example
     target: 김치가 맛있어요.
     target_lang: ko
@@ -318,6 +317,7 @@ exercises:
         - Mì này dở.
         - Mì gói này dở.
         - Mì ăn liền này không ngon.
+        - Món mì này dở.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -345,6 +345,7 @@ exercises:
     answer:
       orders:
         - [c2, c3, c4]
+        - [c3, c2, c4]
     explanation:
       vi: 커피 không có patchim nên dùng 가. 정말 (thật) đứng ngay trước 맛있어요, và tính từ luôn ở cuối câu.
     display_answer: 커피가 정말 맛있어요.

@@ -1,7 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Số đếm, tuổi & thời gian". IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: số đếm 0–100 ----------------
@@ -24,7 +26,7 @@ items:
       pronunciation_note:
         vi: Âm đầu /z/ rung nhẹ như "d" nói lướt, không đọc thành "giê-rô" hay "xê-rô".
       confusion:
-        vi: Khi đọc số điện thoại, người Anh hay đọc số 0 là oh (giống chữ O), người Mỹ hay đọc zero.
+        vi: Khi đọc số điện thoại, người bản xứ (nhất là người Anh) hay đọc số 0 là oh (giống chữ O); nói zero cũng đúng.
 
   - key: en:item:numbers-1-10
     type: vocab
@@ -46,7 +48,7 @@ items:
           translation:
             vi: Cho tôi phòng số tám.
       pronunciation_note:
-        vi: One đọc /wʌn/ gần "goan", không đọc "ôn". Three bắt đầu bằng /θ/ (đặt đầu lưỡi giữa hai hàm răng thổi hơi), khác tree /triː/ (cái cây).
+        vi: One đọc /wʌn/ gần "oăn", không đọc "ôn". Three bắt đầu bằng /θ/ (đặt đầu lưỡi giữa hai hàm răng thổi hơi), khác tree /triː/ (cái cây).
       confusion:
         vi: Two, too và to đọc giống nhau /tuː/ nhưng nghĩa khác nhau. Eight /eɪt/ có âm /t/ cuối, đừng bỏ đi thành "ây".
 
@@ -90,7 +92,7 @@ items:
       pronunciation_note:
         vi: Đuôi -teen kéo dài /tiːn/ và có âm /n/ rõ ở cuối; khi đọc riêng, trọng âm rơi vào -teen.
       confusion:
-        vi: Tiếng Việt nói "mười ba" (mười trước, ba sau), còn thirteen là thir (3) + teen (10). Chú ý viết thirteen, fifteen, eighteen (chỉ một chữ t), không viết threeteen, fiveteen.
+        vi: Tiếng Việt nói "mười ba" (mười trước, ba sau), còn thirteen là thir (3) + teen (10). Chú ý viết thirteen, fifteen (không viết threeteen, fiveteen) và eighteen (chỉ một chữ t, không viết eightteen).
 
   - key: en:item:tens
     type: vocab
@@ -261,7 +263,7 @@ items:
           translation:
             vi: Bé ấy sáu tuổi.
       confusion:
-        vi: Tiếng Việt nói "Tôi có… tuổi" và một số ngôn ngữ dùng "có", nhưng tiếng Anh dùng be - I'm 20, không nói I have 20 years. Hoặc chỉ nói số, hoặc nói đủ years old; không dừng ở years.
+        vi: Tiếng Anh dùng be để nói tuổi - I'm 20, không nói I have 20 years (đừng dịch theo kiểu "tôi có 20 tuổi"). Hoặc chỉ nói số, hoặc nói đủ years old; không dừng ở years.
 
   - key: en:item:age
     type: vocab
@@ -426,7 +428,7 @@ items:
           translation:
             vi: Xin lỗi, bây giờ là mấy giờ ạ?
       confusion:
-        vi: Tiếng Việt hỏi "mấy giờ", nhưng tiếng Anh không nói How many hours? (câu này hỏi "bao nhiêu tiếng đồng hồ"). Trả lời luôn bắt đầu bằng It's.
+        vi: Tiếng Việt hỏi "mấy giờ", nhưng tiếng Anh không nói How many hours? (câu này hỏi "bao nhiêu tiếng đồng hồ"). Câu trả lời thường bắt đầu bằng It's.
 
   - key: en:item:oclock
     type: vocab

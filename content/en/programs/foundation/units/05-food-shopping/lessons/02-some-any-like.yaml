@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:some-any-like
 order_index: 2
 level: a1
@@ -47,7 +46,7 @@ body:
       vi: Để nói sở thích, bạn dùng love (rất thích), like (thích), don't like (không thích). Theo sau là danh từ (I like fish) hoặc động từ thêm -ing (I like cooking). Với món đếm được, khi nói chung bạn dùng số nhiều - I love bananas.
   - type: deep_explain
     text:
-      vi: Có một ngoại lệ hay gặp - khi mời hoặc xin, câu hỏi vẫn dùng some vì người nói mong câu trả lời là "có" (Would you like some cake? Can I have some water?). Với he, she, like thêm -s và phủ định dùng doesn't - She likes tea, He doesn't like meat; bạn sẽ gặp lại quy tắc này ở các bài về thói quen hằng ngày.
+      vi: Có một ngoại lệ hay gặp - khi mời hoặc xin, câu hỏi vẫn dùng some vì người nói mong câu trả lời là "có" (Would you like some cake? Can I have some water?). Với he, she, like thêm -s và phủ định dùng doesn't - She likes tea, He doesn't like meat; đây chính là quy tắc bạn đã học ở unit Sinh hoạt hằng ngày.
   - type: example
     target: We have some eggs, but we don't have any milk.
     target_lang: en
@@ -231,6 +230,8 @@ exercises:
         - I do not like eating spicy food.
         - I don't like spicy dishes.
         - I don't like hot food.
+        - I don't like spicy foods.
+        - I don't like spicy things.
     rubric:
       typo_tolerance: 1
     known_wrong:

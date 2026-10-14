@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:i-am-student
 order_index: 2
 level: topik1
@@ -302,6 +301,8 @@ exercises:
         - Xin chào, tôi là điều dưỡng.
         - Xin chào. Tôi làm y tá.
         - Xin chào. Mình là y tá.
+        - Xin chào. Tôi làm điều dưỡng.
+        - Xin chào. Em là y tá.
     rubric:
       diacritics: lenient
     explanation:

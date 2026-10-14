@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:numbers-time-review
 order_index: 5
 level: a1
@@ -70,7 +69,7 @@ body:
     target: "A: What time is the class? B: At half past six on Friday. A: Great, see you on Friday!"
     target_lang: en
     translation:
-      vi: "A: Lớp học lúc mấy giờ? B: Sáu giờ rưỡi tối thứ Sáu. A: Tuyệt, hẹn gặp bạn thứ Sáu nhé!"
+      vi: "A: Lớp học lúc mấy giờ? B: Lúc sáu giờ rưỡi thứ Sáu. A: Tuyệt, hẹn gặp bạn thứ Sáu nhé!"
     note:
       vi: At đi với giờ, on đi với thứ.
   - type: example
@@ -246,6 +245,8 @@ exercises:
         - See you Monday at nine.
         - See you on Monday at 9 a.m.
         - See you on Monday at nine a.m.
+        - See you Monday at 9.
+        - See you Monday at nine o'clock.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -332,6 +333,8 @@ exercises:
         - Thứ Bảy cửa hàng mở lúc tám giờ rưỡi.
         - Cửa hàng mở cửa lúc tám rưỡi vào thứ Bảy.
         - Thứ Bảy cửa hàng mở cửa lúc tám rưỡi.
+        - Cửa hàng mở cửa vào thứ Bảy lúc tám giờ rưỡi.
+        - Cửa hàng mở cửa vào thứ Bảy lúc 8 giờ rưỡi.
     rubric:
       diacritics: lenient
     explanation:
@@ -360,6 +363,10 @@ exercises:
         - "My father's forty, and his birthday is in April."
         - My dad is forty, and his birthday is in April.
         - My dad is forty years old, and his birthday is in April.
+        - My dad is 40, and his birthday is in April.
+        - "My dad's forty, and his birthday is in April."
+        - My father is forty. His birthday is in April.
+        - My father is forty years old. His birthday is in April.
     rubric:
       typo_tolerance: 1
     known_wrong:

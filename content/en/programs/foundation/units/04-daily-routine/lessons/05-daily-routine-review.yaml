@@ -261,6 +261,8 @@ exercises:
         - Do you work at weekends?
         - On weekends do you go to work?
         - On weekends do you work?
+        - Do you go to work on the weekend?
+        - Do you work on the weekend?
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -301,6 +303,9 @@ exercises:
         - My mum always wakes up early, but my dad doesn't.
         - My mother always gets up early, but my dad doesn't.
         - My mother always gets up early, but my father never does.
+        - My mum always gets up early, but my father doesn't.
+        - My mom always gets up early, but my father doesn't.
+        - My mother always gets up early, but not my father.
     rubric:
       typo_tolerance: 1
     known_wrong:

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:hangul-advanced-review
 order_index: 5
 level: hangul
@@ -57,7 +56,7 @@ body:
       vi: Khi viết, làm ngược lại - đừng viết theo tai nghe. [오시에요] viết là 옷이에요, [한구거] viết là 한국어, [시게] viết là 시계. Mỗi từ có một chính tả cố định, bạn nên học thuộc mặt chữ cùng với nghĩa.
   - type: deep_explain
     text:
-      vi: Patchim còn quyết định đuôi câu "là" - danh từ có patchim đi với 이에요 (학생이에요, 교실이에요), không có patchim đi với 예요 (의자예요, 사과예요). Đây là lỗi người Việt gặp nhiều nhất ở giai đoạn đầu, vì tiếng Việt chỉ có một chữ "là". Khi đọc, 이에요 cũng làm patchim nối sang - 학생이에요 [학쌩이에요], 옷이에요 [오시에요].
+      vi: Patchim còn quyết định đuôi câu "là" - danh từ có patchim đi với 이에요 (학생이에요, 교실이에요), không có patchim đi với 예요 (의자예요, 사과예요). Đây là lỗi người Việt gặp nhiều nhất ở giai đoạn đầu, vì tiếng Việt chỉ có một chữ "là". Khi đọc, 이에요 cũng làm patchim nối sang - 교실이에요 [교시리에요], 옷이에요 [오시에요]; riêng patchim ㅇ thì không nối (학생이에요 [학쌩이에요]).
   - type: example
     target: 저는 학생이에요.
     target_lang: ko

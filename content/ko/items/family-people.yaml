@@ -1,11 +1,10 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Gia đình & miêu tả người" (TOPIK 1). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 # 어머니, 아빠, 할머니, 명, số đếm thuần Hàn, 께서/계시다, 친절하다, bất quy tắc ㅡ… thuộc unit khác, chỉ dùng lại (role: reuse).
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- bài 1: thành viên gia đình ----------------
@@ -194,7 +193,7 @@ items:
           translation:
             vi: Em trai tôi là học sinh cấp ba.
       pronunciation_note:
-        vi: Đọc "nam-tông-seng"; ㄷ sau patchim ㅁ đọc hơi nặng, ㅐ gần "e".
+        vi: Đọc "nam-đông-seng"; ㄷ sau patchim ㅁ đọc nhẹ, gần "đ" tiếng Việt, ㅐ gần "e".
       confusion:
         vi: 동생 là "em" nói chung (cả trai lẫn gái). Thêm 남 (nam) hoặc 여 (nữ) khi cần nói rõ; không phụ thuộc giới tính người nói.
 
@@ -215,7 +214,7 @@ items:
           translation:
             vi: Tôi có hai em gái.
       pronunciation_note:
-        vi: Đọc "iơ-tông-seng"; ㅕ là "iơ", không phải "iô".
+        vi: Đọc "iơ-đông-seng" (ㄷ giữa hai nguyên âm đọc nhẹ, gần "đ"); ㅕ là "iơ", không phải "iô".
       confusion:
         vi: 여동생 dùng chung cho người nói nam hay nữ, khác với 언니/누나 (chị) phải chọn theo giới tính người nói.
 
@@ -454,7 +453,7 @@ items:
           translation:
             vi: Gia đình tôi tổng cộng năm người.
       pronunciation_note:
-        vi: Đọc "mô-tu"; cả hai nguyên âm tròn môi.
+        vi: Đọc "mô-đu" (ㄷ giữa hai nguyên âm đọc nhẹ, gần "đ"); cả hai nguyên âm tròn môi.
       confusion:
         vi: 모두 đứng trước số lượng hoặc động từ (모두 다섯 명), không đứng cuối câu như "tất cả" đôi khi đứng trong tiếng Việt.
 
@@ -517,7 +516,7 @@ items:
           translation:
             vi: Tôi có một con trai.
       pronunciation_note:
-        vi: Đọc "a-tưl"; ㅡ không tròn môi - đừng đọc thành "a-tul".
+        vi: Đọc "a-đưl" (ㄷ giữa hai nguyên âm đọc nhẹ, gần "đ"); ㅡ không tròn môi - đừng đọc thành "a-đul".
       confusion:
         vi: 아들 là "con trai" của ai đó; "con trai" theo nghĩa "đàn ông, bé trai" là 남자 / 남자아이.
 

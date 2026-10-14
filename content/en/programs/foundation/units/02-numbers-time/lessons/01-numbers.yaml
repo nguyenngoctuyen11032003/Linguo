@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:numbers
 order_index: 1
 level: pre_a1
@@ -250,6 +249,8 @@ exercises:
         - How many students are in the class?
         - How many students are there in your class?
         - How many students are in your class?
+        - How many pupils are there?
+        - How many pupils?
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -308,6 +309,10 @@ exercises:
         - My class has thirty-five students.
         - My class has thirty five students.
         - My class has 35 students.
+        - In my class there are thirty-five students.
+        - In my class there are 35 students.
+        - There are thirty-five students in our class.
+        - Our class has thirty-five students.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -348,6 +353,8 @@ exercises:
         - Có một trăm giáo viên trong trường tôi.
         - Có 100 giáo viên ở trường tôi.
         - Ở trường tôi có một trăm giáo viên.
+        - Trường của tôi có 100 giáo viên.
+        - Trường em có một trăm giáo viên.
     rubric:
       diacritics: lenient
     explanation:

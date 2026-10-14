@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:present-tense
 order_index: 3
 level: topik1
@@ -272,6 +271,8 @@ exercises:
         - 운동해요.
         - 저는 운동해요.
         - 전 운동해요.
+        - 저는 운동을 해요.
+        - 운동을 해요.
     known_wrong:
       - answer: 저는 운동하다.
         feedback_vi: 운동하다 là dạng từ điển. Khi nói hãy dùng 운동해요.
@@ -312,6 +313,7 @@ exercises:
         - Bố tôi đang làm việc, còn tôi đang học.
         - Bố đang làm việc, còn tôi đang học bài.
         - Ba làm việc, còn tôi học.
+        - Bố đang làm việc, còn tôi đang học.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -342,6 +344,7 @@ exercises:
         - 전 안 먹어요.
         - 먹지 않아요.
         - 저는 먹지 않아요.
+        - 전 먹지 않아요.
     known_wrong:
       - answer: 저는 먹어요 안.
         feedback_vi: 안 đứng ngay trước động từ - 저는 안 먹어요.

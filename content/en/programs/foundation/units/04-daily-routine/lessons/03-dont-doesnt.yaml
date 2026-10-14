@@ -271,6 +271,8 @@ exercises:
         - He doesn't go by bus.
         - He doesn't ride the bus.
         - He doesn't catch the bus.
+        - He doesn't take a bus.
+        - He doesn't travel by bus.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -311,6 +313,9 @@ exercises:
         - At the weekend I don't get up early.
         - I don't wake up early on weekends.
         - On weekends I don't wake up early.
+        - I don't get up early on the weekend.
+        - On the weekend I don't get up early.
+        - I don't wake up early at the weekend.
     rubric:
       typo_tolerance: 1
     known_wrong:

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:location-going
 order_index: 2
 level: topik1
@@ -274,6 +273,8 @@ exercises:
         - 도서관은 어디에 있어요?
         - 도서관이 어디 있어요?
         - 도서관은 어디 있어요?
+        - 도서관 어디에 있어요?
+        - 도서관 어디 있어요?
     known_wrong:
       - answer: 도서관가 어디에 있어요?
         feedback_vi: 관 có patchim ㄴ nên dùng 이 - 도서관이.

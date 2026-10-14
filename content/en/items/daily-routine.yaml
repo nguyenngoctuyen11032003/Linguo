@@ -459,7 +459,7 @@ items:
     skill_tags: [grammar, speaking, listening]
     front:
       text: "-s / -es: /s/ · /z/ · /ɪz/"
-      ipa: works /wɜːks/ · reads /riːdz/ · watches /ˈwɒtʃɪz/
+      ipa: works UK /wɜːks/ · US /wɝːks/ · reads /riːdz/ · watches UK /ˈwɒtʃɪz/ · US /ˈwɑːtʃɪz/
       pos: cách đọc đuôi -s
     back:
       meaning:
@@ -595,7 +595,7 @@ items:
           translation:
             vi: Tôi không đi xe buýt. Tôi đi bộ.
       confusion:
-        vi: Dùng take, không dùng "go the bus" hay "ride the bus" cho nghĩa thông thường. Cũng có thể nói go by bus (không có the).
+        vi: Nói take the bus hoặc go by bus (không có the), không nói "go the bus". Người Mỹ cũng hay nói ride the bus.
 
   - key: en:item:cook
     type: vocab

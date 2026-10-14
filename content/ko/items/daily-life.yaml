@@ -1,7 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Sinh hoạt hằng ngày". Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 schema_version: 1
-demo: true
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ================= bài 1: có / không có + nơi chốn =================
@@ -46,7 +48,7 @@ items:
           translation:
             vi: Tôi về nhà.
       pronunciation_note:
-        vi: ㅂ cuối từ chỉ khép môi, không bật ra, gần "xíp" ngậm môi. Khi thêm 에 thì nối âm - 집에 [지베].
+        vi: ㅂ cuối từ chỉ khép môi, không bật ra, gần "chíp" ngậm môi (ㅈ là "ch" nhẹ). Khi thêm 에 thì nối âm - 집에 [지베].
 
   - key: ko:item:place-hakgyo
     type: vocab
@@ -364,9 +366,9 @@ items:
           translation:
             vi: Bạn tôi đến nhà.
       pronunciation_note:
-        vi: 에 nối với patchim phía trước - 은행에 [은행에], 시장에 [시장에]. 와요 đọc lướt "oa-yô".
+        vi: 에 nối với patchim phía trước - 집에 [지베], 병원에 [병워네]; patchim ㅇ thì không nối - 은행에 [은행에]. 와요 đọc lướt "oa-yô".
       confusion:
-        vi: Tiếng Việt nói "đi chợ", "về nhà" không cần giới từ, nhưng tiếng Hàn bắt buộc có 에 - 시장에 가요, khi nói nhanh người Hàn đôi khi bỏ 에, nhưng bạn nên luôn giữ 에.
+        vi: Tiếng Việt nói "đi chợ", "về nhà" không cần giới từ, nhưng tiếng Hàn cần 에 - 시장에 가요. Khi nói nhanh người Hàn đôi khi bỏ 에, nhưng bạn nên luôn giữ 에.
 
   - key: ko:item:verb-gada
     type: vocab
@@ -740,7 +742,7 @@ items:
       pronunciation_note:
         vi: Hai ㄴ liền nhau đọc kéo dài "man-na". Thân kết thúc bằng ㅏ nên chỉ thêm 요 - 만나요.
       confusion:
-        vi: Tiếng Việt nói "gặp bạn", nên người Việt hay dùng 친구가 hoặc 친구와. Người được gặp đi với 을/를 - 친구를 만나요.
+        vi: Người Việt hay viết 친구가 만나요, nhưng 가 biến bạn thành người đi gặp. Người được gặp đi với 을/를 - 친구를 만나요; nói 친구하고 만나요 (gặp cùng bạn) cũng đúng.
 
   - key: ko:item:noun-chaek
     type: vocab
