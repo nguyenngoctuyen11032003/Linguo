@@ -1,4 +1,4 @@
-import { forwardRef, type ButtonHTMLAttributes } from 'react';
+import { forwardRef, useId, type ButtonHTMLAttributes } from 'react';
 import { cn } from '@/lib/cn';
 import { Spinner } from './Spinner';
 
@@ -10,6 +10,8 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: ButtonSize;
   loading?: boolean;
   block?: boolean;
+  /** Short line under the button (typically why it is disabled), linked to it through `aria-describedby`. */
+  hint?: string;
 }
 
 const VARIANTS: Record<ButtonVariant, string> = {
@@ -20,32 +22,65 @@ const VARIANTS: Record<ButtonVariant, string> = {
   danger: 'border border-error/40 bg-transparent text-error not-disabled:hover:bg-error/10',
 };
 
+/**
+ * Disabled reads as a neutral surface with a dashed outline (muted text >= 4.5:1, outline >= 3:1) instead of faded
+ * colour. A loading button keeps its colour: `aria-busy` marks it and the spinner shows progress.
+ */
+const DISABLED =
+  'disabled:cursor-not-allowed disabled:aria-busy:cursor-progress ' +
+  'disabled:not-aria-busy:border-transparent disabled:not-aria-busy:bg-surface-solid disabled:not-aria-busy:text-muted ' +
+  'disabled:not-aria-busy:outline-2 disabled:not-aria-busy:-outline-offset-2 disabled:not-aria-busy:outline-dashed disabled:not-aria-busy:outline-muted';
+
 /** Shared with links that must look like buttons (e.g. `<Link className={buttonClasses('ghost')}>`). */
 export const buttonClasses = (variant: ButtonVariant = 'primary', size: ButtonSize = 'md', block = false) =>
   cn(
     'inline-flex items-center justify-center gap-2 rounded-full py-2 text-center font-semibold leading-tight',
     'transition-[scale,background-color,filter] duration-200 not-disabled:active:scale-[0.97]',
-    'disabled:cursor-not-allowed disabled:opacity-60',
+    DISABLED,
     size === 'lg' ? 'min-h-13 px-6 text-[17px]' : 'min-h-11 px-5 text-[15px]',
     block && 'w-full',
     VARIANTS[variant],
   );
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(
-  { variant = 'primary', size = 'md', loading = false, block = false, disabled, className, children, type = 'button', ...rest },
+  {
+    variant = 'primary',
+    size = 'md',
+    loading = false,
+    block = false,
+    hint,
+    disabled,
+    className,
+    children,
+    type = 'button',
+    'aria-describedby': describedByProp,
+    ...rest
+  },
   ref,
 ) {
-  return (
+  const hintId = useId();
+  const describedBy = [describedByProp, hint ? hintId : null].filter(Boolean).join(' ') || undefined;
+  const button = (
     <button
       ref={ref}
       type={type}
       disabled={disabled || loading}
       aria-busy={loading || undefined}
+      aria-describedby={describedBy}
       className={cn(buttonClasses(variant, size, block), className)}
       {...rest}
     >
       {loading && <Spinner />}
       {children}
     </button>
+  );
+  if (!hint) return button;
+  return (
+    <span className={cn('inline-flex flex-col items-center gap-1.5', block && 'w-full')}>
+      {button}
+      <span id={hintId} className="text-center text-sm text-muted">
+        {hint}
+      </span>
+    </span>
   );
 });

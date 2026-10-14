@@ -21,6 +21,13 @@ describe('BottomNav', () => {
     expect(screen.getByRole('link', { name: 'Trang chủ' })).not.toHaveAttribute('aria-current');
   });
 
+  it('keeps tab labels at 12 px or larger', () => {
+    renderWithProviders(<BottomNav onMore={() => {}} />, { route: '/app' });
+    const nav = screen.getByRole('navigation', { name: 'Điều hướng chính' });
+    for (const tab of nav.querySelectorAll('a, button')) expect(tab.className).not.toMatch(/text-\[1[01]px\]/);
+    expect(screen.getByRole('link', { name: 'Ôn tập' }).className).toContain('text-xs');
+  });
+
   it('opens "Thêm"', async () => {
     const onMore = vi.fn();
     renderWithProviders(<BottomNav onMore={onMore} />, { route: '/app' });
