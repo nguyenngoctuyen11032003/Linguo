@@ -1,3 +1,4 @@
+import { useContext, useState } from 'react';
 import { act, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
@@ -12,7 +13,8 @@ import {
   studySession,
   todayResult,
 } from '@/features/session/session-fixtures';
-import { TEST_PATH } from '../../../../tests/unit/learning-fixtures';
+import { LearningPathsContext } from '@/features/learning-paths/LearningPathsProvider';
+import { TEST_KO_PATH, TEST_PATH } from '../../../../tests/unit/learning-fixtures';
 import { renderWithProviders } from '../../../../tests/unit/render';
 import { SessionPage } from './SessionPage';
 
@@ -185,6 +187,36 @@ describe('planning a session', () => {
     await ready();
     await userEvent.click(screen.getByRole('button', { name: 'Lập kế hoạch 30 phút' }));
     expect(await screen.findByRole('heading', { name: 'Lộ trình đang tạm dừng' })).toBeInTheDocument();
+  });
+
+  it('forgets the paused refusal and the chosen length when the learner switches path', async () => {
+    serve(todayResult(null), {
+      get_session_inputs: (args) =>
+        args.p_path_id === TEST_PATH.id ? { error: { message: 'path_not_active', code: 'P0001' } } : { data: inputs() },
+    });
+    function SwitchablePath() {
+      const outer = useContext(LearningPathsContext)!;
+      const [current, setCurrent] = useState(TEST_PATH);
+      return (
+        <LearningPathsContext.Provider value={{ ...outer, paths: [TEST_PATH, TEST_KO_PATH], currentId: current.id, current }}>
+          <button type="button" onClick={() => setCurrent(TEST_KO_PATH)}>
+            Đổi lộ trình
+          </button>
+          <SessionPage />
+        </LearningPathsContext.Provider>
+      );
+    }
+    renderWithProviders(<SwitchablePath />, { route: '/app/phien-hoc' });
+    await ready();
+    await userEvent.click(screen.getByRole('button', { name: '15 phút' }));
+    await userEvent.click(screen.getByRole('button', { name: 'Lập kế hoạch 15 phút' }));
+    expect(await screen.findByRole('heading', { name: 'Lộ trình đang tạm dừng' })).toBeInTheDocument();
+
+    await userEvent.click(screen.getByRole('button', { name: 'Đổi lộ trình' }));
+    await waitFor(() => expect(calls('get_today_session')).toContainEqual({ p_path_id: TEST_KO_PATH.id }));
+    expect(await screen.findByRole('button', { name: 'Lập kế hoạch 30 phút' })).toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: 'Lộ trình đang tạm dừng' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('alert')).not.toBeInTheDocument();
   });
 
   it('replans a planned session with another length, replacing it', async () => {

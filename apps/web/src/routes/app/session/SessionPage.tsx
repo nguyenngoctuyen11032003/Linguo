@@ -33,6 +33,13 @@ function minutesLabel(seconds: number): string {
 
 /** /app/phien-hoc: plan, reorder, shorten and run today's study session (spec 6 §4). The server keeps the state. */
 export function SessionPage() {
+  // Switching path (AppBar language pill) starts afresh: no planner error/paused flag, recap or chosen length
+  // carried over from the other path, and no late answer for its session.
+  const { currentId } = useLearningPaths();
+  return <PathSession key={currentId ?? ''} />;
+}
+
+function PathSession() {
   const paths = useLearningPaths();
   const pathId = paths.currentId;
   const today = useTodaySession();
