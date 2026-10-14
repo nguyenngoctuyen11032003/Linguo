@@ -653,6 +653,60 @@ isOneToOne: false
                   Relationships: [
                     
                   ]
+                },"personal_vocab_imports": {
+                  Row: {
+                    "added": number,"created_at": string,"id": string,"list_id": string | null,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "added"?: number,"created_at"?: string,"id"?: string,"list_id"?: string | null,"user_id": string
+                  }
+                  Update: {
+                    "added"?: number,"created_at"?: string,"id"?: string,"list_id"?: string | null,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "personal_vocab_imports_list_id_fkey"
+      columns: ["list_id"]
+isOneToOne: false
+      referencedRelation: "personal_word_lists"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"personal_word_lists": {
+                  Row: {
+                    "created_at": string,"id": string,"language_code": string,"name": string,"updated_at": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "created_at"?: string,"id"?: string,"language_code": string,"name": string,"updated_at"?: string,"user_id": string
+                  }
+                  Update: {
+                    "created_at"?: string,"id"?: string,"language_code"?: string,"name"?: string,"updated_at"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"personal_words": {
+                  Row: {
+                    "created_at": string,"difficulty": number | null,"due_at": string,"example": string | null,"fsrs_state": string,"id": string,"lapses": number,"last_grade_key": string | null,"last_grade_rating": number | null,"last_grade_result": Json | null,"last_review_at": string | null,"list_id": string,"meaning": string,"note": string | null,"position": number,"pronunciation": string | null,"reps": number,"scheduled_days": number,"stability": number | null,"step": number,"term": string,"term_key": string,"updated_at": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "created_at"?: string,"difficulty"?: number | null,"due_at"?: string,"example"?: string | null,"fsrs_state"?: string,"id"?: string,"lapses"?: number,"last_grade_key"?: string | null,"last_grade_rating"?: number | null,"last_grade_result"?: Json | null,"last_review_at"?: string | null,"list_id": string,"meaning": string,"note"?: string | null,"position"?: number,"pronunciation"?: string | null,"reps"?: number,"scheduled_days"?: number,"stability"?: number | null,"step"?: number,"term": string,"term_key": string,"updated_at"?: string,"user_id": string
+                  }
+                  Update: {
+                    "created_at"?: string,"difficulty"?: number | null,"due_at"?: string,"example"?: string | null,"fsrs_state"?: string,"id"?: string,"lapses"?: number,"last_grade_key"?: string | null,"last_grade_rating"?: number | null,"last_grade_result"?: Json | null,"last_review_at"?: string | null,"list_id"?: string,"meaning"?: string,"note"?: string | null,"position"?: number,"pronunciation"?: string | null,"reps"?: number,"scheduled_days"?: number,"stability"?: number | null,"step"?: number,"term"?: string,"term_key"?: string,"updated_at"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "personal_words_list_id_fkey"
+      columns: ["list_id"]
+isOneToOne: false
+      referencedRelation: "personal_word_lists"
+      referencedColumns: ["id"]
+    }
+                  ]
                 },"profiles": {
                   Row: {
                     "created_at": string,"current_learning_path_id": string | null,"display_name": string | null,"id": string,"locale": string,"timezone": string,"timezone_changed_at": string | null,"updated_at": string
@@ -1034,8 +1088,17 @@ isOneToOne: false
         isOneToOne: true
         isSetofReturn: false
       } },
+"create_personal_list":
+{ Args: { "p_language": string,"p_name": string }; Returns: Json
+                           },
 "delete_my_account":
 { Args: { "p_confirm": string }; Returns: undefined
+                           },
+"delete_personal_list":
+{ Args: { "p_list_id": string }; Returns: Json
+                           },
+"delete_personal_word":
+{ Args: { "p_word_id": string }; Returns: Json
                            },
 "delete_push_subscription":
 { Args: { "p_endpoint": string }; Returns: undefined
@@ -1182,6 +1245,9 @@ isOneToOne: false
 "get_notification_prefs":
 { Args: Record<PropertyKey, never>; Returns: Json
                            },
+"get_personal_review_queue":
+{ Args: { "p_limit"?: number,"p_list_id": string }; Returns: Json
+                           },
 "get_progress_dashboard":
 { Args: { "p_path_id": string,"p_range_days": number }; Returns: Json
                            },
@@ -1196,6 +1262,9 @@ isOneToOne: false
                            },
 "grade_exercise":
 { Args: { "p_answer": Json,"p_known_wrong": Json,"p_lang": string,"p_response": Json,"p_rubric": Json,"p_type": string }; Returns: Json
+                           },
+"grade_personal_word":
+{ Args: { "p_idempotency_key": string,"p_rating": number,"p_word_id": string }; Returns: Json
                            },
 "grade_review":
 { Args: { "p_card_id": string,"p_client_at": string,"p_confidence": number,"p_hint_count": number,"p_idempotency_key": string,"p_rating": number,"p_response_ms": number }; Returns: Json
@@ -1217,6 +1286,9 @@ isOneToOne: false
                            },
 "import_exam_content_bundle":
 { Args: { "p_bundle": Json }; Returns: Json
+                           },
+"import_personal_words":
+{ Args: { "p_list_id": string,"p_rows": Json }; Returns: Json
                            },
 "learning_path_validate":
 { Args: { "p_current_level": string,"p_goal_type": string,"p_language": string,"p_target_date": string,"p_target_level": string,"p_today": string,"p_weekly_minutes": (number)[] }; Returns: undefined
@@ -1291,6 +1363,9 @@ isOneToOne: false
 "list_notifications":
 { Args: { "p_before"?: string,"p_limit"?: number }; Returns: Json
                            },
+"list_personal_lists":
+{ Args: Record<PropertyKey, never>; Returns: Json
+                           },
 "mark_notification":
 { Args: { "p_action": string,"p_id": string }; Returns: undefined
                            },
@@ -1298,6 +1373,26 @@ isOneToOne: false
 { Args: { "p_path_id": string }; Returns: {
               "estimated_minutes": number,"is_demo": boolean,"lesson_id": string,"lesson_key": string,"lesson_order": number,"level_code": string,"prerequisite_ids": (string)[],"prerequisites_met": boolean,"program_id": string,"program_title": Json,"run_status": string,"title": Json,"unit_id": string,"unit_order": number,"unit_title": Json
             }[]
+                           },
+"personal_clean":
+{ Args: { "p_text": string }; Returns: string
+                           },
+"personal_day_end":
+{ Args: { "p_user": string }; Returns: string
+                           },
+"personal_parse_rows":
+{ Args: { "p_rows": Json }; Returns: {
+              "dup": boolean,"example": string,"idx": number,"meaning": string,"note": string,"pronunciation": string,"reason": string,"term": string,"term_key": string
+            }[]
+                           },
+"personal_term_key":
+{ Args: { "p_term": string }; Returns: string
+                           },
+"personal_vocab_lock":
+{ Args: { "p_user": string }; Returns: undefined
+                           },
+"personal_word_due":
+{ Args: { "p_day_end": string,"p_due_at": string,"p_now": string,"p_state": string }; Returns: boolean
                            },
 "postpone_reviews":
 { Args: { "p_card_ids": (string)[],"p_idempotency_key": string,"p_path_id": string }; Returns: Json
@@ -1359,6 +1454,9 @@ isOneToOne: false
                            },
 "reminders_weekly_payload":
 { Args: { "p_user": string,"p_week_end": string }; Returns: Json
+                           },
+"rename_personal_list":
+{ Args: { "p_list_id": string,"p_name": string }; Returns: Json
                            },
 "reorder_session":
 { Args: { "p_order": (string)[],"p_session_id": string }; Returns: Json
@@ -1555,6 +1653,9 @@ isOneToOne: false
         isOneToOne: true
         isSetofReturn: false
       } },
+"update_personal_word":
+{ Args: { "p_example": string,"p_meaning": string,"p_note": string,"p_pronunciation": string,"p_term": string,"p_word_id": string }; Returns: Json
+                           },
 "update_session_item":
 { Args: { "p_item_id": string,"p_seconds": number,"p_session_id": string,"p_status": string }; Returns: Json
                            }
