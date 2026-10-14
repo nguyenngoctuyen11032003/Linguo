@@ -292,6 +292,47 @@ describe('a running session', () => {
     expect(screen.getByRole('button', { name: 'Tiếp tục' })).toBeInTheDocument();
   });
 
+  it('keeps a skip made while a reorder is still in flight', async () => {
+    // A tiny server: each call changes its state and answers with the session as it is at that moment.
+    let server = studySession();
+    const answer = () => ({ data: server, error: null });
+    serve(todayResult(server), {
+      update_session_item: (args) => {
+        const activities = server.plan.activities.map((a) => (a.id === args.p_item_id ? { ...a, status: 'skipped' as const } : a));
+        server = { ...server, status: 'in_progress', plan: { ...server.plan, activities } };
+        return answer();
+      },
+    });
+    // The reorder is applied at once but its answer is slow to come back.
+    let releaseReorder!: () => void;
+    const base = mocks.rpc.getMockImplementation()!;
+    mocks.rpc.mockImplementation((name: string, args: Record<string, unknown>) => {
+      if (name !== 'reorder_session') return base(name, args);
+      const byId = new Map(server.plan.activities.map((a) => [a.id, a]));
+      server = { ...server, plan: { ...server.plan, activities: (args.p_order as string[]).map((id) => byId.get(id)!) } };
+      const reply = answer();
+      return new Promise((resolve) => {
+        releaseReorder = () => resolve(reply);
+      });
+    });
+    render();
+    await ready();
+
+    await userEvent.click(screen.getByRole('button', { name: 'Đưa “Chào hỏi” xuống' }));
+    await userEvent.click(screen.getByRole('button', { name: 'Bỏ qua “Luyện ngữ pháp”' }));
+    await waitFor(() => expect(calls('reorder_session')).toHaveLength(1));
+    act(() => releaseReorder());
+    await waitFor(() => expect(calls('update_session_item')).toHaveLength(1));
+    await waitFor(() => expect(screen.getByText('Tiến độ: 1/4 hoạt động')).toBeInTheDocument());
+    // Let every pending answer land: the older reorder answer must not bring the skipped activity back.
+    await act(async () => {
+      await new Promise((resolve) => setTimeout(resolve, 0));
+    });
+    expect(screen.getByText('Tiến độ: 1/4 hoạt động')).toBeInTheDocument();
+    expect(activityTitles()).toEqual(['Ôn thẻ đến hạn', 'Luyện ngữ pháp', 'Chào hỏi', 'Tổng kết']);
+    expect(screen.queryByRole('button', { name: 'Bỏ qua “Luyện ngữ pháp”' })).not.toBeInTheDocument();
+  });
+
   it('shortens to 10 minutes and saves over the open session', async () => {
     const short = plan({ minutes: 10, activities: plan().activities.slice(0, 2).map((a) => ({ ...a, minutes: 5 })) });
     serve(todayResult(studySession()), { save_session_plan: { data: studySession({ minutes_planned: 10, plan: short }) } });

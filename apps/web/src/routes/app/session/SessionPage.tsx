@@ -49,21 +49,33 @@ export function SessionPage() {
   const [planningAgain, setPlanningAgain] = useState(lengthParam !== null);
   const [saving, setSaving] = useState(false);
   const [announcement, setAnnouncement] = useState('');
-  /** Reorders are applied on screen at once and sent to the server one after the other. */
-  const reorderChain = useRef<Promise<unknown>>(Promise.resolve());
-  const latestOrder = useRef<string | null>(null);
+  /**
+   * Every session change (reorder, skip, recap, finish) goes to the server one after the other, so the answer to
+   * the last request already includes all earlier ones. Only that newest answer is put on screen: an older one
+   * would undo a change made after it was sent (e.g. bring back an activity skipped during a reorder).
+   */
+  const requests = useRef<Promise<unknown>>(Promise.resolve());
+  const latestRequest = useRef(0);
 
   if (paths.status === 'ready' && paths.paths.length === 0) return <Navigate to="/app/bat-dau" replace />;
 
   const learner = paths.current ? { language: paths.current.language, level: paths.current.currentLevel } : null;
   const open = isOpen(session);
 
+  function enqueue(job: () => Promise<StudySession>) {
+    const ticket = ++latestRequest.current;
+    const run = requests.current.then(job);
+    requests.current = run.catch(() => undefined);
+    return { run, isLatest: () => latestRequest.current === ticket };
+  }
+
   async function mutate(job: () => Promise<StudySession>, success?: (saved: StudySession) => void) {
     if (saving) return;
     setSaving(true);
     try {
-      const saved = await job();
-      setSession(saved);
+      const request = enqueue(job);
+      const saved = await request.run;
+      if (request.isLatest()) setSession(saved);
       success?.(saved);
     } catch (error) {
       toast.show({ tone: 'error', message: sessionErrorMessage(error) });
@@ -84,12 +96,10 @@ export function SessionPage() {
     setAnnouncement(`Đã chuyển “${moved.title_vi}” ${direction === 'up' ? 'lên' : 'xuống'} vị trí ${target + 1}/${activities.length}.`);
 
     const order = activities.map((a) => a.id);
-    const key = order.join(',');
-    latestOrder.current = key;
-    reorderChain.current = reorderChain.current
-      .then(() => reorderSession(requireSupabase(), current.id, order))
+    const request = enqueue(() => reorderSession(requireSupabase(), current.id, order));
+    request.run
       .then((saved) => {
-        if (latestOrder.current === key) setSession(saved);
+        if (request.isLatest()) setSession(saved);
       })
       .catch((error: unknown) => {
         toast.show({ tone: 'error', message: sessionErrorMessage(error) });
