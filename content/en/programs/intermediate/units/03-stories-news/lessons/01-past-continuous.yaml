@@ -1,0 +1,428 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:stories-news-past-continuous
+order_index: 1
+level: b1
+title:
+  vi: Đang làm gì thì… - quá khứ tiếp diễn với when/while
+objectives:
+  - vi: Dùng was/were + V-ing để tả việc đang diễn ra tại một thời điểm trong quá khứ.
+  - vi: Kể một hành động bị cắt ngang bằng when và while.
+  - vi: Tránh lỗi I was walk và I was knowing.
+estimated_minutes: 14
+skills: [grammar, speaking, writing]
+prerequisites: [en:lesson:work-study-review]
+items:
+  - item: en:item:was-were-ing
+  - item: en:item:when-while-interrupted
+  - item: en:item:stative-verbs-past
+  - item: en:item:ring
+  - item: en:item:fall-asleep
+  - item: en:item:drop
+  - item: en:item:break-down
+  - item: en:item:notice
+  - item: en:item:power-cut
+  - item: en:item:slip
+  - item: en:item:at-that-moment
+  - item: en:item:cook
+    role: reuse
+  - item: en:item:watch-tv
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được "lúc đó mình đang làm gì thì chuyện gì xảy ra" - phần mở đầu của hầu hết các câu chuyện bằng tiếng Anh.
+  - type: explain
+    text:
+      vi: "Quá khứ tiếp diễn = was/were + động từ thêm -ing: I/he/she/it was working, you/we/they were working. Thì này tả một việc ĐANG diễn ra tại một thời điểm trong quá khứ, giống chữ \"đang\" trong \"lúc 8 giờ tối qua mình đang nấu cơm\"."
+  - type: explain
+    text:
+      vi: "Khi một việc ngắn cắt ngang một việc dài, việc dài dùng quá khứ tiếp diễn, việc ngắn dùng quá khứ đơn: I was having a shower when the phone rang. While thường đứng trước việc dài, when thường đứng trước việc ngắn."
+  - type: explain
+    text:
+      vi: Tiếng Việt chỉ cần thêm "đang", động từ giữ nguyên, nên người Việt hay quên một trong hai phần. Câu đúng luôn có cả was/were lẫn đuôi -ing.
+  - type: deep_explain
+    text:
+      vi: "Một số động từ chỉ trạng thái hay suy nghĩ (know, like, want, need, believe, understand) gần như không bao giờ dùng -ing, dù tiếng Việt vẫn nói \"lúc đó mình đang cần tiền\". Hãy dùng quá khứ đơn: I needed money at that time. Ngoài ra, hai việc dài diễn ra song song có thể cùng dùng quá khứ tiếp diễn: While I was cooking, my husband was watching TV."
+  - type: example
+    target: At eight o'clock last night, I was cooking dinner.
+    target_lang: en
+    translation:
+      vi: Lúc tám giờ tối qua, mình đang nấu bữa tối.
+    note:
+      vi: Mốc thời gian cụ thể trong quá khứ + was + V-ing.
+  - type: example
+    target: I was having a shower when the phone rang.
+    target_lang: en
+    translation:
+      vi: Mình đang tắm thì điện thoại đổ chuông.
+    note:
+      vi: Việc dài (was having) bị việc ngắn (rang) cắt ngang; ring là động từ bất quy tắc - rang.
+  - type: example
+    target: While we were driving to Da Lat, our car broke down.
+    target_lang: en
+    translation:
+      vi: Trong lúc tụi mình đang lái xe lên Đà Lạt thì xe bị hỏng.
+    note:
+      vi: While + việc dài; we đi với were, không phải was.
+  - type: example
+    target: He fell asleep while he was watching TV.
+    target_lang: en
+    translation:
+      vi: Anh ấy ngủ thiếp đi trong lúc đang xem TV.
+    note:
+      vi: Vế while có thể đứng sau; khi đứng đầu câu thì thêm dấu phẩy.
+  - type: common_mistake
+    wrong: When I was walk home, I saw an accident.
+    right: When I was walking home, I saw an accident.
+    target_lang: en
+    note:
+      vi: Có was thì động từ phải thêm -ing. Was walk là lỗi do dịch "đang đi" từng chữ.
+  - type: common_mistake
+    wrong: I was knowing the answer, but I didn't say it.
+    right: I knew the answer, but I didn't say it.
+    target_lang: en
+    note:
+      vi: Know là động từ trạng thái nên không chia -ing, dù tiếng Việt có thể nói "đang biết".
+  - type: common_mistake
+    wrong: We was watching TV when there was a power cut.
+    right: We were watching TV when there was a power cut.
+    target_lang: en
+    note:
+      vi: We, you, they đi với were; chỉ I, he, she, it đi với was.
+  - type: summary
+    points:
+      - vi: Quá khứ tiếp diễn = was/were + V-ing - việc đang diễn ra tại một lúc trong quá khứ.
+      - vi: Việc dài (was/were + V-ing) bị việc ngắn (quá khứ đơn) cắt ngang.
+      - vi: While + việc dài; when + việc ngắn.
+      - vi: Know, like, want, need, believe dùng quá khứ đơn, không dùng -ing.
+      - vi: Từ mới - ring (rang), fall asleep, drop, break down, notice, power cut, slip, at that moment.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:stories-news-pc-listen-rain
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:when-while-interrupted
+    prompt:
+      audio_asset_id: null
+      fallback_text: I was walking home when it started to rain.
+      options:
+        - { id: q7m, text: "Mình đang đi bộ về nhà thì trời đổ mưa.", lang: vi }
+        - { id: d2x, text: "Mình đi bộ về nhà sau khi trời mưa.", lang: vi }
+        - { id: h9k, text: "Trời đang mưa thì mình bắt đầu đi bộ về nhà.", lang: vi }
+        - { id: w4p, text: "Mình định đi bộ về nhà nhưng trời mưa.", lang: vi }
+    answer:
+      correct_option_id: q7m
+    explanation:
+      vi: Was walking là việc đang diễn ra (đang đi bộ); started là việc ngắn xen vào (trời bắt đầu mưa). Nên nghĩa là "đang đi thì trời đổ mưa", không phải mưa trước rồi mới đi.
+    display_answer: "Mình đang đi bộ về nhà thì trời đổ mưa."
+
+  - key: en:exercise:stories-news-pc-mcq-while-cooking
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:was-were-ing
+    prompt:
+      stem: "Chọn đáp án đúng: While I ___ dinner, the phone rang."
+      stem_lang: vi
+      options:
+        - { id: b5t, text: was cooking, lang: en }
+        - { id: n8r, text: was cook, lang: en }
+        - { id: e3v, text: cooked, lang: en }
+        - { id: y6j, text: am cooking, lang: en }
+    answer:
+      correct_option_id: b5t
+    explanation:
+      vi: Nấu bữa tối là việc dài đang diễn ra thì điện thoại reo, nên dùng was + V-ing. Was cook thiếu -ing; am cooking là hiện tại, không hợp với rang.
+    display_answer: was cooking
+
+  - key: en:exercise:stories-news-pc-mcq-knew
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:stative-verbs-past
+    prompt:
+      stem: "Chọn đáp án đúng: I ___ the answer, but I was too shy to say it."
+      stem_lang: vi
+      options:
+        - { id: k2s, text: knew, lang: en }
+        - { id: m7c, text: was knowing, lang: en }
+        - { id: r4u, text: was know, lang: en }
+        - { id: z9a, text: had knew, lang: en }
+    answer:
+      correct_option_id: k2s
+    explanation:
+      vi: Know là động từ trạng thái, không dùng dạng -ing kể cả khi trạng thái kéo dài, nên dùng quá khứ đơn knew. Had knew sai vì phân từ hai của know là known.
+    display_answer: knew
+
+  - key: en:exercise:stories-news-pc-fill-bus-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:was-were-ing
+    prompt:
+      template: "They {{b1}} (wait) for the bus when it {{b2}} (start) to rain."
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa của câu: Họ đang chờ xe buýt thì trời bắt đầu mưa."
+        - "Gợi ý: việc dài dùng were + V-ing; việc ngắn xen vào dùng quá khứ đơn."
+    answer:
+      blanks:
+        b1: [were waiting]
+        b2: [started]
+    known_wrong:
+      - answer: was waiting
+        feedback_vi: They đi với were, không đi với was.
+        error_tag: was_were_agreement
+      - answer: were wait
+        feedback_vi: Sau were cần động từ thêm -ing - were waiting.
+        error_tag: past_continuous_missing_ing
+      - answer: was starting
+        feedback_vi: Trời bắt đầu mưa là việc ngắn xen vào, dùng quá khứ đơn started.
+        error_tag: past_continuous_overuse
+      - answer: waited
+        feedback_vi: Chờ xe là việc đang diễn ra khi mưa đến, nên dùng were waiting.
+        error_tag: past_continuous_needed
+    explanation:
+      vi: Chờ xe buýt là bối cảnh kéo dài nên dùng were waiting (they đi với were). Trời bắt đầu mưa là việc ngắn cắt ngang nên dùng quá khứ đơn started.
+    display_answer: They were waiting for the bus when it started to rain.
+
+  - key: en:exercise:stories-news-pc-order-shower
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:ring
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Mình đang tắm thì điện thoại đổ chuông.\""
+      tokens:
+        - { id: s-phone, text: phone }
+        - { id: s-was, text: was }
+        - { id: s-ringed, text: ringed }
+        - { id: s-shower, text: shower }
+        - { id: s-i, text: I }
+        - { id: s-rang, text: rang }
+        - { id: s-a, text: a }
+        - { id: s-when, text: when }
+        - { id: s-having, text: having }
+        - { id: s-the, text: the }
+        - { id: s-have, text: have }
+    answer:
+      orders:
+        - [s-i, s-was, s-having, s-a, s-shower, s-when, s-the, s-phone, s-rang]
+        - [s-when, s-the, s-phone, s-rang, s-i, s-was, s-having, s-a, s-shower]
+    explanation:
+      vi: Việc dài "đang tắm" là I was having a shower; việc ngắn "điện thoại reo" là the phone rang. Ring là động từ bất quy tắc nên không có ringed.
+    display_answer: I was having a shower when the phone rang.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:stories-news-pc-fill-break-down
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:break-down
+    prompt:
+      template: "While we {{b1}} (drive) to Da Lat, our car {{b2}} (break) down."
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [were driving]
+        b2: [broke]
+    known_wrong:
+      - answer: was driving
+        feedback_vi: We đi với were - we were driving.
+        error_tag: was_were_agreement
+      - answer: were drive
+        feedback_vi: Sau were cần V-ing - were driving.
+        error_tag: past_continuous_missing_ing
+      - answer: breaked
+        feedback_vi: Break là động từ bất quy tắc, quá khứ là broke.
+        error_tag: irregular_past
+      - answer: was breaking
+        feedback_vi: Xe hỏng là việc ngắn xen vào, dùng quá khứ đơn broke down.
+        error_tag: past_continuous_overuse
+    explanation:
+      vi: While + việc dài nên dùng were driving. Xe hỏng là việc xảy ra bất ngờ, dùng quá khứ đơn - break down có quá khứ là broke down.
+    display_answer: While we were driving to Da Lat, our car broke down.
+
+  - key: en:exercise:stories-news-pc-translate-cooking
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:was-were-ing
+    prompt:
+      source_text: Lúc tám giờ tối qua, mình đang nấu bữa tối.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - At eight o'clock last night, I was cooking dinner.
+        - At 8 o'clock last night, I was cooking dinner.
+        - At eight last night, I was cooking dinner.
+        - At 8 last night, I was cooking dinner.
+        - At 8 p.m. yesterday, I was cooking dinner.
+        - At eight p.m. yesterday, I was cooking dinner.
+        - At eight o'clock yesterday evening, I was cooking dinner.
+        - At 8 o'clock yesterday evening, I was cooking dinner.
+        - I was cooking dinner at eight o'clock last night.
+        - I was cooking dinner at 8 o'clock last night.
+        - I was cooking dinner at eight last night.
+        - I was cooking dinner at 8 last night.
+        - At eight o'clock last night, I was making dinner.
+        - I was making dinner at eight o'clock last night.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: At eight o'clock last night, I was cook dinner.
+        feedback_vi: Sau was cần V-ing - I was cooking.
+        error_tag: past_continuous_missing_ing
+      - answer: At eight o'clock last night, I cooked dinner.
+        feedback_vi: Câu có "đang" tại một mốc giờ cụ thể, nên dùng was cooking.
+        error_tag: past_continuous_needed
+      - answer: At eight o'clock last night, I am cooking dinner.
+        feedback_vi: Tối qua là quá khứ, dùng was cooking, không dùng am.
+        error_tag: tense_present_for_past
+      - answer: At eight o'clock last night, I cooking dinner.
+        feedback_vi: Thiếu was - I was cooking.
+        error_tag: missing_be
+    explanation:
+      vi: "\"Đang\" tại một mốc giờ trong quá khứ là was + V-ing: I was cooking dinner. Mốc thời gian có thể đứng đầu (kèm dấu phẩy) hoặc cuối câu."
+    display_answer: At eight o'clock last night, I was cooking dinner.
+
+  - key: en:exercise:stories-news-pc-translate-fell-asleep
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:fall-asleep
+    prompt:
+      source_text: Anh ấy ngủ thiếp đi trong lúc đang xem phim.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - He fell asleep while he was watching the film.
+        - He fell asleep while he was watching the movie.
+        - He fell asleep while he was watching a film.
+        - He fell asleep while he was watching a movie.
+        - He fell asleep while watching the film.
+        - He fell asleep while watching the movie.
+        - While he was watching the film, he fell asleep.
+        - While he was watching the movie, he fell asleep.
+        - He fell asleep when he was watching the film.
+        - He fell asleep when he was watching the movie.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: He felt asleep while he was watching the film.
+        feedback_vi: Quá khứ của fall là fell; felt là quá khứ của feel.
+        error_tag: irregular_past
+      - answer: He fell asleep while he watching the film.
+        feedback_vi: Thiếu was - while he was watching.
+        error_tag: missing_be
+      - answer: He fell asleep while he was watch the film.
+        feedback_vi: Sau was cần V-ing - was watching.
+        error_tag: past_continuous_missing_ing
+      - answer: He was falling asleep while he watched the film.
+        feedback_vi: Ngủ thiếp đi là khoảnh khắc ngắn (fell asleep); xem phim mới là việc đang diễn ra (was watching).
+        error_tag: when_while_aspect
+    explanation:
+      vi: Xem phim là việc dài nên dùng was watching; ngủ thiếp đi là khoảnh khắc ngắn nên dùng quá khứ đơn fell asleep (fall - fell - fallen).
+    display_answer: He fell asleep while he was watching the film.
+
+  # ---------------- application ----------------
+  - key: en:exercise:stories-news-pc-translate-power-cut
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:power-cut
+    prompt:
+      source_text: We were watching TV when there was a power cut.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chúng tôi đang xem TV thì bị cúp điện.
+        - Chúng tôi đang xem TV thì bị mất điện.
+        - Chúng tôi đang xem ti vi thì bị cúp điện.
+        - Chúng tôi đang xem ti vi thì bị mất điện.
+        - Chúng tôi đang xem TV thì mất điện.
+        - Chúng tôi đang xem TV thì cúp điện.
+        - Chúng tôi đang xem tivi thì mất điện.
+        - Chúng tôi đang xem tivi thì bị cúp điện.
+        - Chúng mình đang xem TV thì bị mất điện.
+        - Tụi mình đang xem TV thì bị cúp điện.
+        - Chúng ta đang xem TV thì bị mất điện.
+        - Cả nhà đang xem TV thì bị cúp điện.
+        - Chúng tôi đang xem TV thì bị cắt điện.
+        - Chúng tôi đang xem TV thì điện bị cúp.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: We were watching là "chúng tôi đang xem" (việc dài); when there was a power cut là "thì bị cúp điện" (việc ngắn xen vào). Chữ "thì" trong tiếng Việt thể hiện đúng ý bị cắt ngang của when.
+    display_answer: Chúng tôi đang xem TV thì bị cúp điện.
+
+  - key: en:exercise:stories-news-pc-mcq-missed-call
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:was-were-ing
+    prompt:
+      stem: "Đồng nghiệp hỏi: \"Why didn't you answer my call last night?\" Câu trả lời nào đúng và tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: f3n, text: "Sorry, I was driving when you called.", lang: en }
+        - { id: u8g, text: "Sorry, I was drive when you called.", lang: en }
+        - { id: c1w, text: "Sorry, I drove when you were calling.", lang: en }
+        - { id: t6b, text: "Sorry, I am driving when you called.", lang: en }
+    answer:
+      correct_option_id: f3n
+    explanation:
+      vi: Lái xe là việc đang diễn ra (was driving), cuộc gọi là việc ngắn xen vào (called). I drove when you were calling đảo ngược hai vai trò; was drive thiếu -ing; am driving là hiện tại.
+    display_answer: "Sorry, I was driving when you called."
+
+  - key: en:exercise:stories-news-pc-order-slipped
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:slip
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Cô ấy bị trượt chân trong lúc đang chạy xuống cầu thang.\""
+      tokens:
+        - { id: sl-down, text: down }
+        - { id: sl-she1, text: she }
+        - { id: sl-the, text: the }
+        - { id: sl-running, text: running }
+        - { id: sl-slipped, text: slipped }
+        - { id: sl-while, text: while }
+        - { id: sl-run, text: run }
+        - { id: sl-stairs, text: stairs }
+        - { id: sl-was, text: was }
+        - { id: sl-she2, text: she }
+    answer:
+      orders:
+        - [sl-she1, sl-slipped, sl-while, sl-she2, sl-was, sl-running, sl-down, sl-the, sl-stairs]
+        - [sl-she2, sl-slipped, sl-while, sl-she1, sl-was, sl-running, sl-down, sl-the, sl-stairs]
+        - [sl-while, sl-she1, sl-was, sl-running, sl-down, sl-the, sl-stairs, sl-she2, sl-slipped]
+        - [sl-while, sl-she2, sl-was, sl-running, sl-down, sl-the, sl-stairs, sl-she1, sl-slipped]
+    explanation:
+      vi: Việc ngắn "trượt chân" là she slipped; việc dài "đang chạy" là while she was running down the stairs. Vế while có thể đứng trước hoặc sau; token run là bẫy vì sau was cần running.
+    display_answer: She slipped while she was running down the stairs.

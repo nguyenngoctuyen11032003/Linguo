@@ -1,0 +1,435 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:making-plans
+order_index: 4
+level: topik2
+title:
+  vi: Rủ rê & hẹn gặp
+objectives:
+  - vi: Rủ bạn bè và hỏi ý kiến bằng V-(으)ㄹ까요?, V-(으)ㄹ래요? và đề nghị bằng V-(으)ㅂ시다.
+  - vi: Hẹn giờ và địa điểm đúng trật tự - thời gian + 에, nơi chốn + 에서, động từ cuối câu.
+  - vi: Đồng ý, từ chối lịch sự (미안하지만 다음에…) và kể lại cuộc hẹn bằng V-기로 했어요.
+estimated_minutes: 16
+skills: [grammar, speaking, listening, writing]
+prerequisites: [ko:lesson:weather-seasons]
+items:
+  - item: ko:item:yaksok
+  - item: ko:item:sigan-isseoyo
+  - item: ko:item:gram-eulkkayo
+  - item: ko:item:gram-eupsida
+  - item: ko:item:gram-eullaeyo
+  - item: ko:item:gram-giro-hada
+  - item: ko:item:gachi
+  - item: ko:item:myeot-si-mannalkkayo
+  - item: ko:item:joayo-geuraeyo
+  - item: ko:item:mianhajiman-daeume
+  - item: ko:item:gram-time-place-order
+  - item: ko:item:verb-mannada
+    role: reuse
+  - item: ko:item:weekdays
+    role: reuse
+  - item: ko:item:hour-si
+    role: reuse
+  - item: ko:item:pos-ap
+    role: reuse
+  - item: ko:item:yeonghwa
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn rủ được bạn bè đi xem phim cuối tuần, chốt giờ và chỗ gặp, và từ chối khéo khi bận.
+  - type: explain
+    text:
+      vi: V-(으)ㄹ까요? có hai cách dùng - rủ "mình… nhé?" (같이 갈까요?) và hỏi ý người nghe (몇 시에 만날까요?). Gốc không patchim + ㄹ까요 (갈까요), có patchim + 을까요 (먹을까요), gốc ㄹ chỉ thêm 까요 (만들까요).
+  - type: explain
+    text:
+      vi: V-(으)ㅂ시다 là "chúng ta hãy…" - 갑시다, 먹읍시다. V-(으)ㄹ래요? hỏi thân mật "bạn có muốn… không?" - 커피 마실래요?; khi trả lời, 저는 주스 마실래요 là "tôi sẽ uống nước ép".
+  - type: explain
+    text:
+      vi: Câu hẹn thường theo thứ tự - thời gian + 에, nơi chốn + 에서, động từ ở cuối - 토요일 3시에 학교 앞에서 만나요. Kể lại điều đã hẹn thì dùng V-기로 했어요 - 6시에 만나기로 했어요.
+  - type: deep_explain
+    text:
+      vi: -(으)ㄹ까요? là câu hỏi, nên khi đồng ý bạn không lặp lại 갈까요 mà nói 네, 좋아요 / 그래요 / 같이 가요 / 갑시다. -(으)ㅂ시다 nghe hơi như "ra lệnh tập thể", chỉ dùng với bạn bè hoặc người nhỏ tuổi hơn; với thầy cô nói 같이 가요. Từ chối kiểu Hàn - xin lỗi, nêu lý do ngắn, hẹn lần sau - 미안하지만 오늘은 약속이 있어요. 다음에 같이 가요.
+  - type: example
+    target: 주말에 시간 있어요? 같이 영화 볼까요? - 좋아요! 몇 시에 만날까요?
+    target_lang: ko
+    translation:
+      vi: Cuối tuần bạn rảnh không? Mình cùng xem phim nhé? - Được đấy! Mấy giờ mình gặp?
+    note:
+      vi: Trả lời lời rủ bằng 좋아요, rồi hỏi tiếp bằng -(으)ㄹ까요.
+  - type: example
+    target: 토요일 3시에 학교 앞에서 만나요.
+    target_lang: ko
+    translation:
+      vi: Thứ Bảy 3 giờ mình gặp ở trước cổng trường nhé.
+    note:
+      vi: Thời gian + 에, nơi chốn + 에서, 만나요 ở cuối.
+  - type: example
+    target: 점심 같이 먹을래요? - 미안하지만 오늘은 약속이 있어요. 다음에 같이 먹어요.
+    target_lang: ko
+    translation:
+      vi: Cùng ăn trưa không? - Xin lỗi nhưng hôm nay mình có hẹn rồi. Lần sau mình ăn cùng nhé.
+  - type: example
+    target: 그럼 학교 앞에서 만납시다.
+    target_lang: ko
+    translation:
+      vi: Vậy chúng ta gặp nhau ở trước trường nhé.
+    note:
+      vi: 만나다 không có patchim → 만납시다.
+  - type: example
+    target: 친구하고 토요일에 등산하기로 했어요.
+    target_lang: ko
+    translation:
+      vi: Tôi đã hẹn với bạn thứ Bảy đi leo núi.
+    note:
+      vi: -기로 gắn vào gốc động từ; thì quá khứ nằm ở 했어요.
+  - type: common_mistake
+    wrong: "A: 같이 갈까요? B: 네, 갈까요."
+    right: "A: 같이 갈까요? B: 네, 좋아요. 같이 가요."
+    target_lang: ko
+    note:
+      vi: -(으)ㄹ까요? là câu hỏi rủ, nên lặp lại 갈까요 nghe như bạn hỏi ngược lại. Hãy đồng ý bằng 좋아요, 그래요 hoặc 갑시다.
+  - type: common_mistake
+    wrong: 만나요 토요일 3시 학교 앞에.
+    right: 토요일 3시에 학교 앞에서 만나요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói "gặp lúc 3 giờ ở trước trường", động từ đứng trước. Tiếng Hàn đặt động từ cuối, thời gian cần 에, còn nơi diễn ra việc gặp cần 에서.
+  - type: common_mistake
+    wrong: 오늘 가치 먹을까요?
+    right: 오늘 같이 먹을까요?
+    target_lang: ko
+    note:
+      vi: 같이 đọc là [가치] nhưng viết là 같이. 가치 là một từ khác, nghĩa là "giá trị".
+  - type: summary
+    points:
+      - vi: 시간 있어요? → 같이 V-(으)ㄹ까요? / V-(으)ㄹ래요? → 몇 시에 만날까요?
+      - vi: Đồng ý - 좋아요 · 그래요 · V-(으)ㅂ시다; từ chối - 미안하지만 … 다음에 같이 V-아/어요.
+      - vi: Thời gian + 에 → nơi chốn + 에서 → động từ cuối câu.
+      - vi: V-기로 했어요 = đã hẹn/quyết định sẽ làm; 같이 viết như vậy, đọc [가치].
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:making-plans-listen-meet
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-time-place-order
+    prompt:
+      audio_asset_id: null
+      fallback_text: 토요일 3시에 학교 앞에서 만나요.
+      options:
+        - { id: v5t, text: Thứ Bảy 3 giờ gặp ở trước trường nhé., lang: vi }
+        - { id: o2g, text: Thứ Bảy 3 giờ gặp ở sau trường nhé., lang: vi }
+        - { id: j8p, text: Chủ nhật 3 giờ gặp ở trước trường nhé., lang: vi }
+        - { id: s4x, text: Thứ Bảy 4 giờ gặp ở trong trường nhé., lang: vi }
+    answer:
+      correct_option_id: v5t
+    explanation:
+      vi: 토요일 = thứ Bảy, 3시 [세 시] = 3 giờ, 학교 앞에서 = ở trước trường. Sau là 뒤, trong là 안, chủ nhật là 일요일.
+    display_answer: Thứ Bảy 3 giờ gặp ở trước trường nhé.
+
+  - key: ko:exercise:making-plans-mcq-meogeulkkayo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eulkkayo
+    prompt:
+      stem: "Chọn dạng đúng để rủ \"Mình cùng ăn trưa nhé?\": 같이 점심을 ___?"
+      stem_lang: vi
+      options:
+        - { id: k7a, text: 먹을까요, lang: ko }
+        - { id: w3n, text: 먹까요, lang: ko }
+        - { id: e9c, text: 먹으까요, lang: ko }
+        - { id: u1z, text: 먹을래까요, lang: ko }
+    answer:
+      correct_option_id: k7a
+    explanation:
+      vi: 먹다 có patchim ㄱ nên thêm 을까요 - 먹을까요. 먹까요 thiếu 을, 먹으까요 thiếu ㄹ, còn 먹을래까요 trộn hai đuôi.
+    display_answer: 먹을까요
+
+  - key: ko:exercise:making-plans-fill-gapsida
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eupsida
+    prompt:
+      template: "그럼 내일 같이 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Vậy ngày mai chúng ta cùng đi nhé."
+        - "Gợi ý: 가다 + đuôi \"chúng ta hãy…\" (gốc không có patchim)."
+    answer:
+      blanks:
+        b1: [갑시다]
+    known_wrong:
+      - answer: 가읍시다
+        feedback_vi: 가 không có patchim nên chỉ thêm ㅂ시다 - 갑시다; 읍시다 dành cho gốc có patchim.
+        error_tag: eupsida_form
+      - answer: 갈까요
+        feedback_vi: 갈까요 là câu hỏi rủ. Câu này là lời đề nghị chốt lại nên dùng 갑시다.
+        error_tag: eulkkayo_eupsida
+    explanation:
+      vi: Gốc 가 không có patchim → 가 + ㅂ시다 = 갑시다 (chúng ta hãy đi). Câu có dấu chấm, không phải câu hỏi.
+    display_answer: 그럼 내일 같이 갑시다.
+
+  - key: ko:exercise:making-plans-wb-what-time
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:myeot-si-mannalkkayo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Mấy giờ mình gặp nhau?\""
+      tokens:
+        - { id: m3, text: 시에 }
+        - { id: m5, text: 시를 }
+        - { id: m4, text: 만날까요 }
+        - { id: m2, text: 몇 }
+        - { id: m1, text: 우리 }
+        - { id: m6, text: 만나요까요 }
+    answer:
+      orders:
+        - [m1, m2, m3, m4]
+        - [m2, m3, m1, m4]
+    explanation:
+      vi: Thời gian cần 에 - 몇 시에; hỏi ý người nghe dùng 만날까요 ở cuối câu. 시를 sai trợ từ, còn 만나요까요 không phải dạng đúng.
+    display_answer: 우리 몇 시에 만날까요?
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:making-plans-translate-free
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:sigan-isseoyo
+    prompt:
+      source_text: Thứ Bảy bạn có rảnh không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 토요일에 시간 있어요?
+        - 토요일에 시간이 있어요?
+        - 토요일 시간 있어요?
+        - 토요일에 시간 있으세요?
+        - 토요일에 시간이 있으세요?
+        - 토요일 시간 있으세요?
+        - 토요일에는 시간 있어요?
+    known_wrong:
+      - answer: 토요일에 시간 안 있어요?
+        feedback_vi: Câu hỏi "có rảnh không" chỉ cần 시간 있어요?; phủ định của 있어요 là 없어요, không phải 안 있어요.
+        error_tag: an_itda
+      - answer: 토요일을 시간 있어요?
+        feedback_vi: Thời gian dùng 에 - 토요일에.
+        error_tag: particle_time_e
+      - answer: toyoire sigan isseoyo
+        feedback_vi: Hãy viết bằng Hangul, phiên âm Latinh chỉ để tham khảo.
+        error_tag: romanization
+    explanation:
+      vi: '"Rảnh" trong tiếng Hàn là "có thời gian" - 시간 있어요? Ngày thứ dùng 에 - 토요일에.'
+    display_answer: 토요일에 시간 있어요?
+
+  - key: ko:exercise:making-plans-fill-giro-llaeyo
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-giro-hada
+    prompt:
+      template: "(Tôi đã hẹn bạn thứ Bảy đi leo núi.) 토요일에 등산하{{b1}} 했어요. (Bạn uống cà phê không?) 커피 {{b2}}?"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [기로]
+        b2: [마실래요, 드실래요]
+    known_wrong:
+      - answer: 기를
+        feedback_vi: Cấu trúc hẹn/quyết định là -기로 하다, dùng 로 chứ không phải 를.
+        error_tag: giro_hada_form
+      - answer: 고
+        feedback_vi: -고 하다 không mang nghĩa "hẹn sẽ làm". Dùng -기로 했어요.
+        error_tag: giro_hada_form
+      - answer: 마시래요
+        feedback_vi: 마시다 không có patchim nên thêm ㄹ래요 - 마실래요.
+        error_tag: eullaeyo_form
+    explanation:
+      vi: Đã hẹn sẽ làm - V-기로 했어요 (등산하기로 했어요). Hỏi ý muốn người nghe - V-(으)ㄹ래요?; 마시다 → 마실래요.
+    display_answer: 토요일에 등산하기로 했어요. 커피 마실래요?
+
+  - key: ko:exercise:making-plans-translate-dinner
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gachi
+    prompt:
+      source_text: Tối nay mình cùng ăn tối nhé?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 오늘 저녁에 같이 밥 먹을까요?
+        - 오늘 같이 저녁 먹을까요?
+        - 오늘 같이 저녁을 먹을까요?
+        - 오늘 저녁 같이 먹을까요?
+        - 오늘 저녁에 같이 저녁 먹을까요?
+        - 오늘 저녁에 같이 식사할까요?
+        - 오늘 같이 저녁 먹을래요?
+        - 오늘 저녁 같이 먹을래요?
+        - 오늘 저녁에 같이 밥 먹을래요?
+        - 오늘 같이 저녁 먹어요.
+    known_wrong:
+      - answer: 오늘 가치 저녁 먹을까요?
+        feedback_vi: 같이 đọc [가치] nhưng phải viết là 같이.
+        error_tag: spelling_pronunciation
+      - answer: 오늘 같이 저녁 먹까요?
+        feedback_vi: 먹다 có patchim nên thêm 을까요 - 먹을까요.
+        error_tag: eulkkayo_form
+      - answer: 오늘 같이 저녁 먹었어요?
+        feedback_vi: 먹었어요 là "đã ăn". Rủ rê dùng -(으)ㄹ까요? hoặc -(으)ㄹ래요?
+        error_tag: suggestion_form
+    explanation:
+      vi: Rủ cùng làm - 같이 + V-(으)ㄹ까요? (먹을까요?) hoặc thân mật hơn V-(으)ㄹ래요?. "Tối nay" là 오늘 저녁, "ăn tối" là 저녁(을) 먹다.
+    display_answer: 오늘 같이 저녁 먹을까요?
+
+  - key: ko:exercise:making-plans-translate-giro
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-giro-hada
+    prompt:
+      source_text: Tôi đã hẹn gặp bạn lúc 6 giờ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 친구하고 6시에 만나기로 했어요.
+        - 저는 친구하고 6시에 만나기로 했어요.
+        - 친구랑 6시에 만나기로 했어요.
+        - 친구와 6시에 만나기로 했어요.
+        - 6시에 친구하고 만나기로 했어요.
+        - 친구하고 여섯 시에 만나기로 했어요.
+        - 6시에 친구를 만나기로 했어요.
+        - 친구를 6시에 만나기로 했어요.
+        - 저는 6시에 친구를 만나기로 했어요.
+    known_wrong:
+      - answer: 친구하고 6시에 만났기로 했어요.
+        feedback_vi: -기로 gắn vào gốc động từ (만나기로); thì quá khứ chỉ đặt ở 했어요.
+        error_tag: giro_hada_form
+      - answer: 친구하고 6시에서 만나기로 했어요.
+        feedback_vi: Giờ giấc dùng 에 - 6시에; 에서 dùng cho nơi chốn.
+        error_tag: particle_time_e
+      - answer: 친구하고 6시에 만나기로 해요.
+        feedback_vi: Việc đã hẹn rồi nên dùng quá khứ 했어요.
+        error_tag: giro_hada_tense
+    explanation:
+      vi: Đã hẹn sẽ làm - V-기로 했어요. "Gặp bạn" là 친구하고 만나다 hoặc 친구를 만나다; giờ cần 에 - 6시에 (đọc [여섯 시에]).
+    display_answer: 친구하고 6시에 만나기로 했어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:making-plans-mcq-accept
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:joayo-geuraeyo
+    prompt:
+      stem: "Bạn bè rủ: 주말에 같이 등산 갈까요? Bạn muốn đồng ý. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: a6h, text: "네, 좋아요. 같이 가요.", lang: ko }
+        - { id: z4m, text: "네, 갈까요.", lang: ko }
+        - { id: p1e, text: "네, 등산 갈래까요?", lang: ko }
+        - { id: t9b, text: "아니요, 좋아요.", lang: ko }
+    answer:
+      correct_option_id: a6h
+    explanation:
+      vi: Lời rủ -(으)ㄹ까요? được đáp bằng 좋아요 / 같이 가요, không lặp lại 갈까요. 아니요 + 좋아요 tự mâu thuẫn, còn 갈래까요 không phải dạng đúng.
+    display_answer: "네, 좋아요. 같이 가요."
+
+  - key: ko:exercise:making-plans-mcq-decline
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:mianhajiman-daeume
+    prompt:
+      stem: "Đồng nghiệp hỏi: 오늘 저녁에 영화 볼래요? Bạn đã có hẹn khác và muốn từ chối lịch sự. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: n2r, text: 미안하지만 오늘은 약속이 있어요. 다음에 같이 봐요., lang: ko }
+        - { id: c7w, text: 싫어요. 영화 안 봐요., lang: ko }
+        - { id: f3k, text: 미안하지만 오늘은 약속이 없어요. 다음에 봐요., lang: ko }
+        - { id: y8d, text: "네, 좋아요. 오늘은 약속이 있어요.", lang: ko }
+    answer:
+      correct_option_id: n2r
+    explanation:
+      vi: Từ chối lịch sự - xin lỗi (미안하지만), nêu lý do (약속이 있어요), hẹn lần sau (다음에). 싫어요 quá thẳng; 약속이 없어요 là "không có hẹn" nên mâu thuẫn; 네, 좋아요 lại là đồng ý.
+    display_answer: 미안하지만 오늘은 약속이 있어요. 다음에 같이 봐요.
+
+  - key: ko:exercise:making-plans-wb-sunday
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-time-place-order
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Chủ nhật 2 giờ mình gặp ở trước trường nhé.\""
+      tokens:
+        - { id: r5, text: 만나요 }
+        - { id: r3, text: 학교 }
+        - { id: r6, text: 앞에 }
+        - { id: r1, text: 일요일 }
+        - { id: r4, text: 앞에서 }
+        - { id: r2, text: 2시에 }
+    answer:
+      orders:
+        - [r1, r2, r3, r4, r5]
+        - [r3, r4, r1, r2, r5]
+    explanation:
+      vi: Thường đặt thời gian trước (일요일 2시에), rồi nơi chốn (학교 앞에서), động từ 만나요 cuối câu. Gặp là hành động nên nơi chốn dùng 에서, không dùng 앞에.
+    display_answer: 일요일 2시에 학교 앞에서 만나요.
+
+  - key: ko:exercise:making-plans-translate-resched-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-eulkkayo
+    prompt:
+      source_text: 미안하지만 토요일은 시간이 없어요. 일요일에 만날까요?
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin lỗi nhưng thứ Bảy tôi không rảnh. Chủ nhật mình gặp nhé?
+        - Xin lỗi nhưng thứ Bảy tôi không có thời gian. Chủ nhật mình gặp nhé?
+        - Xin lỗi, thứ Bảy tôi không rảnh. Chủ nhật mình gặp nhé?
+        - Xin lỗi nhưng thứ Bảy mình không rảnh. Chủ nhật gặp nhé?
+        - Xin lỗi nhưng thứ Bảy tôi không rảnh. Chủ nhật gặp được không?
+        - Xin lỗi nhưng thứ Bảy tôi không rảnh. Mình gặp vào Chủ nhật nhé?
+        - Xin lỗi nhưng thứ Bảy tôi không rảnh. Chủ nhật chúng ta gặp nhé?
+        - Xin lỗi nhưng thứ Bảy tôi bận. Chủ nhật mình gặp nhé?
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xin lỗi nhưng Chủ nhật tôi không rảnh. Thứ Bảy mình gặp nhé?
+        feedback_vi: 토요일 là thứ Bảy, 일요일 là Chủ nhật - bạn đảo hai ngày.
+        error_tag: weekday_word
+      - answer: Xin lỗi nhưng thứ Bảy tôi không rảnh. Chủ nhật mình đã gặp.
+        feedback_vi: 만날까요? là lời rủ "mình gặp nhé?", không phải "đã gặp".
+        error_tag: suggestion_form
+    explanation:
+      vi: 미안하지만 = xin lỗi nhưng; 시간이 없어요 = không rảnh; 일요일에 만날까요? = Chủ nhật mình gặp nhé? (lời đề nghị).
+    display_answer: Xin lỗi nhưng thứ Bảy tôi không rảnh. Chủ nhật mình gặp nhé?

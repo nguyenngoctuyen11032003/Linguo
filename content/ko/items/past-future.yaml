@@ -1,0 +1,985 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Quá khứ, tương lai & nối câu" (TOPIK 2). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ================= bài 1: thì quá khứ =================
+  - key: ko:item:gram-past-tense
+    type: grammar_point
+    level: topik2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V/A + -았어요 · -었어요 · 했어요
+      romanization: -asseoyo · -eosseoyo · haesseoyo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Đuôi quá khứ lịch sự ("đã …", "… rồi"). Nguyên âm cuối ㅏ/ㅗ → -았어요, nguyên âm khác → -었어요, 하다 → 했어요.
+      examples:
+        - target: 어제 친구를 만났어요.
+          translation:
+            vi: Hôm qua tôi đã gặp bạn.
+        - target: 아침을 먹었어요.
+          translation:
+            vi: Tôi ăn sáng rồi.
+        - target: 주말에 공부했어요.
+          translation:
+            vi: Cuối tuần tôi đã học bài.
+      pronunciation_note:
+        vi: ㅆ ở cuối nối sang 어 nên 갔어요 đọc [가써요], 먹었어요 đọc [머거써요].
+      confusion:
+        vi: 했어요 chỉ là quá khứ của 하다, không phải chữ "đã" gắn được vào mọi động từ. 가다 → 갔어요, không phải 가했어요.
+
+  - key: ko:item:gram-past-copula
+    type: grammar_point
+    level: topik2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N + 이었어요 / 였어요
+      romanization: ieosseoyo / yeosseoyo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Đã là N, từng là N (quá khứ của 이에요/예요). Danh từ có patchim + 이었어요, không có patchim + 였어요."
+      examples:
+        - target: 작년에 저는 학생이었어요.
+          translation:
+            vi: Năm ngoái tôi là sinh viên.
+        - target: 어제는 일요일이었어요.
+          translation:
+            vi: Hôm qua là Chủ nhật.
+        - target: 그 사람은 제 친구였어요.
+          translation:
+            vi: Người đó từng là bạn tôi.
+      pronunciation_note:
+        vi: 학생이었어요 đọc liền [학쌩이어써요]; 친구였어요 đọc [친구여써요].
+      confusion:
+        vi: Đừng nói 학생했어요 - 학생 là danh từ, không có 하다. Phủ định quá khứ là 아니었어요 - 학생이 아니었어요.
+
+  - key: ko:item:jinanju
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 지난주
+      romanization: jinanju
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuần trước
+      examples:
+        - target: 지난주에 부산에 갔어요.
+          translation:
+            vi: Tuần trước tôi đã đi Busan.
+      pronunciation_note:
+        vi: Đọc đều ba âm [지난주], ㄴ ở 난 nối nhẹ sang 주.
+      confusion:
+        vi: 지난주 viết liền, còn "tuần sau" 다음 주 thì viết cách. 지난 nghĩa là "đã qua" - 지난달 là tháng trước.
+
+  - key: ko:item:jinandal
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 지난달
+      romanization: jinandal
+      pos: danh từ
+    back:
+      meaning:
+        vi: tháng trước
+      examples:
+        - target: 지난달에 이사했어요.
+          translation:
+            vi: Tháng trước tôi đã chuyển nhà.
+      pronunciation_note:
+        vi: ㄹ cuối là âm uốn lưỡi nhẹ, không đọc thành "n" - [지난달].
+      confusion:
+        vi: 달 ở đây là "tháng", không phải số đếm tháng 월. "Tháng 3" là 삼월, nhưng "tháng trước" là 지난달.
+
+  - key: ko:item:jangnyeon
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 작년
+      romanization: jangnyeon
+      pos: danh từ
+    back:
+      meaning:
+        vi: năm ngoái
+      examples:
+        - target: 작년에 한국어를 배웠어요.
+          translation:
+            vi: Năm ngoái tôi đã học tiếng Hàn.
+      pronunciation_note:
+        vi: Âm mũi hoá - ㄱ đứng trước ㄴ đọc thành ㅇ, nên 작년 đọc là [장년].
+      confusion:
+        vi: Người Việt hay nói 지난년 theo kiểu "năm trước", nhưng tiếng Hàn dùng 작년 (지난해 cũng có nhưng trang trọng hơn). "Năm sau" là 내년.
+
+  - key: ko:item:akka
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 아까
+      romanization: akka
+      pos: phó từ
+    back:
+      meaning:
+        vi: lúc nãy, ban nãy (cách đây không lâu, trong cùng ngày)
+      examples:
+        - target: 아까 커피를 마셨어요.
+          translation:
+            vi: Lúc nãy tôi đã uống cà phê.
+      pronunciation_note:
+        vi: ㄲ là phụ âm căng - đọc gọn, không bật hơi, gần "a-ca" nhấn mạnh âm thứ hai.
+      confusion:
+        vi: 아까 luôn chỉ quá khứ nên đi với -았/었어요; "lát nữa" (tương lai) là 이따가.
+
+  - key: ko:item:jumal
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 주말
+      romanization: jumal
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuối tuần
+      examples:
+        - target: 주말에 뭐 했어요?
+          translation:
+            vi: Cuối tuần bạn đã làm gì?
+      pronunciation_note:
+        vi: Đọc [주말], ㄹ cuối uốn lưỡi nhẹ.
+      confusion:
+        vi: Nói "vào cuối tuần" cần 에 - 주말에. Đừng bỏ 에 như tiếng Việt bỏ "vào".
+
+  - key: ko:item:chingu
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 친구
+      romanization: chingu
+      pos: danh từ
+    back:
+      meaning:
+        vi: bạn, bạn bè
+      examples:
+        - target: 친구를 만났어요.
+          translation:
+            vi: Tôi đã gặp bạn.
+      pronunciation_note:
+        vi: ㅊ bật hơi mạnh, gần "ch" có hơi; 구 đọc nhẹ gần [친구].
+      confusion:
+        vi: Tiếng Hàn chỉ dùng 친구 cho bạn ngang tuổi. Người lớn tuổi hơn mà thân thì gọi 형/오빠/누나/언니, không gọi 친구.
+
+  - key: ko:item:yeonghwa
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 영화
+      romanization: yeonghwa
+      pos: danh từ
+    back:
+      meaning:
+        vi: phim (điện ảnh)
+      examples:
+        - target: 어제 영화를 봤어요.
+          translation:
+            vi: Hôm qua tôi đã xem phim.
+      pronunciation_note:
+        vi: ㅎ sau ㅇ thường đọc rất nhẹ, nên 영화 nghe gần [영와].
+      confusion:
+        vi: '"Xem phim" là 영화를 봐요, dùng 보다 (xem), không dùng 하다.'
+
+  - key: ko:item:sukje
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 숙제
+      romanization: sukje
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài tập về nhà
+      examples:
+        - target: 숙제를 했어요.
+          translation:
+            vi: Tôi đã làm bài tập rồi.
+      pronunciation_note:
+        vi: ㅈ đứng sau patchim ㄱ đọc căng thành ㅉ - [숙쩨].
+      confusion:
+        vi: '"Làm bài tập" là 숙제를 해요 hoặc 숙제해요. Phủ định là 숙제 안 했어요, không phải 안 숙제했어요.'
+
+  # ================= bài 2: tương lai, dự định, lời hứa =================
+  - key: ko:item:gram-eul-geoyeyo
+    type: grammar_point
+    level: topik2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V + -(으)ㄹ 거예요
+      romanization: -(eu)l geoyeyo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Sẽ …, định … (kế hoạch, dự đoán). Thân không có patchim + ㄹ 거예요, có patchim + 을 거예요; dùng được cho mọi ngôi.
+      examples:
+        - target: 내일 친구를 만날 거예요.
+          translation:
+            vi: Ngày mai tôi sẽ gặp bạn.
+        - target: 동생은 주말에 쉴 거예요.
+          translation:
+            vi: Cuối tuần em tôi sẽ nghỉ.
+        - target: 점심에 뭐 먹을 거예요?
+          translation:
+            vi: Trưa nay bạn định ăn gì?
+      pronunciation_note:
+        vi: Sau ㄹ, 거 đọc căng - 갈 거예요 đọc [갈 꺼예요].
+      confusion:
+        vi: Viết 거예요, không viết 꺼예요 dù đọc là [꺼]. Thân có ㄹ sẵn chỉ thêm 거예요 - 놀다 → 놀 거예요.
+
+  - key: ko:item:gram-eulgeyo
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: V + -(으)ㄹ게요
+      romanization: -(eu)lgeyo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Tôi sẽ … (hứa hoặc quyết định ngay, có để ý đến người nghe). Chỉ dùng cho "tôi/chúng tôi", không dùng trong câu hỏi.
+      examples:
+        - target: 이따가 전화할게요.
+          translation:
+            vi: Lát nữa tôi sẽ gọi cho bạn nhé.
+        - target: 제가 기다릴게요.
+          translation:
+            vi: Để tôi đợi.
+      pronunciation_note:
+        vi: Đọc căng [할께요], [기다릴께요], nhưng luôn viết 게요.
+      confusion:
+        vi: Không dùng cho người khác - 친구가 올게요 là sai, phải nói 친구가 올 거예요. Tiếng Việt chỉ có một chữ "sẽ" nên người Việt hay dùng lẫn hai đuôi.
+
+  - key: ko:item:daeum-ju
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 다음 주
+      romanization: daeum ju
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuần sau
+      examples:
+        - target: 다음 주에 시험이 있어요.
+          translation:
+            vi: Tuần sau tôi có bài thi.
+      pronunciation_note:
+        vi: ㅁ ở 음 khép môi trọn rồi mới đọc 주; 으 là ㅡ dẹt môi, không đọc thành 우.
+      confusion:
+        vi: Viết cách 다음 주, khác với 지난주 viết liền. Tháng sau là 다음 달, năm sau là 내년 (không nói 다음 년).
+
+  - key: ko:item:naenyeon
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 내년
+      romanization: naenyeon
+      pos: danh từ
+    back:
+      meaning:
+        vi: năm sau, sang năm
+      examples:
+        - target: 내년에 한국에 갈 거예요.
+          translation:
+            vi: Sang năm tôi sẽ đi Hàn Quốc.
+      pronunciation_note:
+        vi: Hai ㄴ liền nhau, đọc [내년] rõ từng âm.
+      confusion:
+        vi: Đừng nhầm 내년 (năm sau) với 내일 (ngày mai) - cùng chữ 내 nhưng 년 là năm, 일 là ngày.
+
+  - key: ko:item:ittaga
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 이따가
+      romanization: ittaga
+      pos: phó từ
+    back:
+      meaning:
+        vi: lát nữa, chút nữa (trong cùng ngày)
+      examples:
+        - target: 이따가 만나요.
+          translation:
+            vi: Lát nữa gặp nhé.
+      pronunciation_note:
+        vi: ㄸ là âm căng, đọc gọn và mạnh - [이따가].
+      confusion:
+        vi: 이따가 chỉ tương lai gần; "lúc nãy" là 아까. Hai từ đều có phụ âm căng nên dễ nhầm.
+
+  - key: ko:item:swida
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 쉬다
+      romanization: swida
+      pos: động từ
+    back:
+      meaning:
+        vi: nghỉ, nghỉ ngơi
+      examples:
+        - target: 주말에 집에서 쉬었어요.
+          translation:
+            vi: Cuối tuần tôi đã nghỉ ở nhà.
+      pronunciation_note:
+        vi: ㅟ là "uy" tròn môi rồi dẹt; 쉬어요 đọc [쉬어요], không gộp được.
+      confusion:
+        vi: ㅟ + 어 không gộp, nên viết 쉬어요, 쉬었어요 - không có dạng 숴요.
+
+  - key: ko:item:yeohaenghada
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 여행하다
+      romanization: yeohaenghada
+      pos: động từ
+    back:
+      meaning:
+        vi: đi du lịch
+      examples:
+        - target: 방학에 제주도를 여행할 거예요.
+          translation:
+            vi: Kỳ nghỉ tôi sẽ đi du lịch đảo Jeju.
+      pronunciation_note:
+        vi: ㅎ giữa từ đọc nhẹ, nên 여행 nghe gần [여앵].
+      confusion:
+        vi: Có hai cách nói - 제주도를 여행해요 hoặc 제주도에 여행을 가요. Đừng nói 제주도에 여행해요.
+
+  - key: ko:item:jeonhwahada
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 전화하다
+      romanization: jeonhwahada
+      pos: động từ
+    back:
+      meaning:
+        vi: gọi điện thoại
+      examples:
+        - target: 엄마한테 전화했어요.
+          translation:
+            vi: Tôi đã gọi điện cho mẹ.
+      pronunciation_note:
+        vi: ㅎ sau ㄴ gần như biến mất - 전화 đọc [저놔].
+      confusion:
+        vi: '"Gọi cho ai" dùng 한테/에게 - 친구한테 전화해요, không dùng 을/를 (친구를 전화해요 là sai).'
+
+  - key: ko:item:gidarida
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 기다리다
+      romanization: gidarida
+      pos: động từ
+    back:
+      meaning:
+        vi: đợi, chờ
+      examples:
+        - target: 여기에서 기다릴게요.
+          translation:
+            vi: Tôi sẽ đợi ở đây.
+      pronunciation_note:
+        vi: ㄷ giữa hai nguyên âm đọc mềm gần "đ"; 기다려요 có ㅕ = ㅣ + ㅓ gộp lại.
+      confusion:
+        vi: '"Đợi ai" dùng 을/를 - 친구를 기다려요. Tiếng Việt nói "đợi bạn" nên đừng thêm 한테.'
+
+  - key: ko:item:kkok
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 꼭
+      romanization: kkok
+      pos: phó từ
+    back:
+      meaning:
+        vi: nhất định, chắc chắn (nhấn mạnh lời hứa/mong muốn)
+      examples:
+        - target: 꼭 갈게요.
+          translation:
+            vi: Nhất định tôi sẽ đến.
+      pronunciation_note:
+        vi: ㄲ căng ở đầu, ㄱ cuối không bật ra - đọc gọn [꼭].
+      confusion:
+        vi: 꼭 đứng trước động từ để nhấn mạnh lời hứa - 꼭 갈게요. "Tuyệt đối không" là một từ khác - 절대.
+
+  # ================= bài 3: nối câu -고, -지만, -아서/어서 =================
+  - key: ko:item:gram-go-and
+    type: grammar_point
+    level: topik2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V/A + -고
+      romanization: -go
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Và; rồi (liệt kê hoặc nối hai việc theo thứ tự). Gắn thẳng vào thân, không cần để ý patchim.
+      examples:
+        - target: 밥을 먹고 학교에 가요.
+          translation:
+            vi: Tôi ăn cơm rồi đi học.
+        - target: 이 카페는 싸고 맛있어요.
+          translation:
+            vi: Quán cà phê này rẻ và ngon.
+      pronunciation_note:
+        vi: Sau patchim ㄱ/ㄷ/ㅂ, ㄱ của 고 đọc căng - 먹고 [먹꼬], 씻고 [씯꼬].
+      confusion:
+        vi: Thì quá khứ đặt ở động từ cuối câu - 밥을 먹고 학교에 갔어요. Không cần 먹었고 khi kể việc nối tiếp.
+
+  - key: ko:item:gram-jiman
+    type: grammar_point
+    level: topik2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V/A + -지만
+      romanization: -jiman
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Nhưng (nối hai ý trái ngược). Gắn thẳng vào thân; quá khứ thì gắn vào -았/었 - 갔지만.
+      examples:
+        - target: 한국어는 어렵지만 재미있어요.
+          translation:
+            vi: Tiếng Hàn khó nhưng thú vị.
+        - target: 어제 공원에 갔지만 친구가 없었어요.
+          translation:
+            vi: Hôm qua tôi đã ra công viên nhưng không có bạn ở đó.
+      pronunciation_note:
+        vi: Sau patchim, ㅈ đọc căng - 갔지만 [갇찌만], 먹지만 [먹찌만].
+      confusion:
+        vi: Khác với -고, -지만 giữ được thì quá khứ ở vế trước - 갔지만, 먹었지만.
+
+  - key: ko:item:gram-aseo-sequence
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V + -아서 / -어서 (trình tự)
+      romanization: -aseo / -eoseo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Rồi (làm việc thứ hai dựa trên việc thứ nhất - ở chỗ đó, với người/vật đó). Chia như -아요/-어요, thay 요 bằng 서.
+      examples:
+        - target: 친구를 만나서 영화를 봤어요.
+          translation:
+            vi: Tôi gặp bạn rồi (cùng bạn) xem phim.
+        - target: 카페에 가서 커피를 마셔요.
+          translation:
+            vi: Tôi đến quán cà phê rồi uống cà phê ở đó.
+        - target: 빵을 사서 먹었어요.
+          translation:
+            vi: Tôi mua bánh mì rồi ăn (chính cái bánh đó).
+      pronunciation_note:
+        vi: Dạng gộp đọc liền - 가서 [가서], 만나서 [만나서], 사서 [사서].
+      confusion:
+        vi: 학교에 가고 공부해요 nghe như hai việc rời; 학교에 가서 공부해요 mới là "đến trường rồi học ở đó". Không gắn quá khứ vào -아서 - 갔어서 là sai.
+
+  - key: ko:item:sada
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 사다
+      romanization: sada
+      pos: động từ
+    back:
+      meaning:
+        vi: mua
+      examples:
+        - target: 시장에서 과일을 샀어요.
+          translation:
+            vi: Tôi đã mua trái cây ở chợ.
+      pronunciation_note:
+        vi: ㅅ đầu từ đọc nhẹ như "x"; 샀어요 đọc [사써요].
+      confusion:
+        vi: 사 + 았어요 gộp thành 샀어요 (không viết 사았어요). Đừng nhầm 사요 (mua) với 살아요 (sống).
+
+  - key: ko:item:cheongsohada
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 청소하다
+      romanization: cheongsohada
+      pos: động từ
+    back:
+      meaning:
+        vi: dọn dẹp, quét dọn
+      examples:
+        - target: 주말에 방을 청소했어요.
+          translation:
+            vi: Cuối tuần tôi đã dọn phòng.
+      pronunciation_note:
+        vi: 청 có ㅊ bật hơi và ㅓ ("ơ" mở miệng), không đọc thành 총.
+      confusion:
+        vi: Phủ định là 청소 안 해요 / 청소 못 해요 - phủ định chen giữa 청소 và 해요.
+
+  - key: ko:item:ssitda
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 씻다
+      romanization: ssitda
+      pos: động từ
+    back:
+      meaning:
+        vi: rửa, tắm rửa
+      examples:
+        - target: 손을 씻고 밥을 먹어요.
+          translation:
+            vi: Tôi rửa tay rồi ăn cơm.
+      pronunciation_note:
+        vi: ㅆ căng ở đầu; ㅅ cuối đọc như ㄷ - 씻다 [씯따], nhưng nối âm 씻어요 [씨서요].
+      confusion:
+        vi: Đừng viết 싯다 - ㅆ đôi mới đúng. Tắm vòi sen nói riêng là 샤워해요.
+
+  - key: ko:item:kape
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 카페
+      romanization: kape
+      pos: danh từ
+    back:
+      meaning:
+        vi: quán cà phê
+      examples:
+        - target: 카페에서 친구를 만났어요.
+          translation:
+            vi: Tôi đã gặp bạn ở quán cà phê.
+      pronunciation_note:
+        vi: ㅋ bật hơi mạnh; ㅍ cũng bật hơi - [카페], khác "ca-phê" tiếng Việt.
+      confusion:
+        vi: 카페 là nơi chốn, 커피 là đồ uống. "Đến quán cà phê" là 카페에 가요.
+
+  - key: ko:item:gongwon
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 공원
+      romanization: gongwon
+      pos: danh từ
+    back:
+      meaning:
+        vi: công viên
+      examples:
+        - target: 공원에서 산책했어요.
+          translation:
+            vi: Tôi đã đi dạo ở công viên.
+      pronunciation_note:
+        vi: 원 = ㅇ + ㅝ + ㄴ, đọc gần "uơn"; ㅇ ở 공 nối nhẹ - [공원].
+      confusion:
+        vi: Hoạt động trong công viên dùng 에서 (공원에서 산책해요); đi đến công viên dùng 에 (공원에 가요).
+
+  - key: ko:item:sanchaekhada
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 산책하다
+      romanization: sanchaekhada
+      pos: động từ
+    back:
+      meaning:
+        vi: đi dạo
+      examples:
+        - target: 저녁을 먹고 산책해요.
+          translation:
+            vi: Ăn tối xong tôi đi dạo.
+      pronunciation_note:
+        vi: ㄱ gặp ㅎ thành ㅋ bật hơi - 산책하다 đọc [산채카다], 산책해요 [산채캐요].
+      confusion:
+        vi: Tiếng Việt nói "đi dạo" nhưng tiếng Hàn chỉ cần 산책해요; muốn nhấn mạnh việc ra ngoài để đi dạo thì nói 산책하러 가요.
+
+  - key: ko:item:geurigo
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 그리고
+      romanization: geurigo
+      pos: liên từ
+    back:
+      meaning:
+        vi: và, rồi, ngoài ra (nối hai câu)
+      examples:
+        - target: 숙제를 했어요. 그리고 잤어요.
+          translation:
+            vi: Tôi làm bài tập. Rồi đi ngủ.
+      pronunciation_note:
+        vi: 그 dùng ㅡ (môi dẹt), không đọc thành 구 - [그리고].
+      confusion:
+        vi: 그리고 đứng đầu câu thứ hai, còn -고 gắn vào động từ trong một câu. Không nối hai danh từ bằng 그리고 - "táo và lê" là 사과하고 배.
+
+  - key: ko:item:hajiman
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 하지만
+      romanization: hajiman
+      pos: liên từ
+    back:
+      meaning:
+        vi: nhưng, tuy nhiên (đầu câu)
+      examples:
+        - target: 비싸요. 하지만 맛있어요.
+          translation:
+            vi: Đắt. Nhưng ngon.
+      pronunciation_note:
+        vi: Đọc [하지만], ㅈ ở giữa nguyên âm đọc mềm.
+      confusion:
+        vi: 하지만 mở đầu câu mới; trong cùng câu thì gắn -지만 vào động từ - 비싸지만 맛있어요.
+
+  # ================= bài 4: mục đích, khả năng, tiếp diễn =================
+  - key: ko:item:gram-eureo-gada
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V + -(으)러 가다 / 오다
+      romanization: -(eu)reo gada / oda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Đi/đến để làm V (mục đích của việc di chuyển). Thân không có patchim hoặc có ㄹ + 러, có patchim + 으러.
+      examples:
+        - target: 밥 먹으러 가요.
+          translation:
+            vi: Tôi đi ăn cơm.
+        - target: 친구가 놀러 왔어요.
+          translation:
+            vi: Bạn tôi đã đến chơi.
+        - target: 도서관에 책을 빌리러 가요.
+          translation:
+            vi: Tôi đến thư viện để mượn sách.
+      pronunciation_note:
+        vi: 먹으러 nối âm thành [머그러]; 보러 đọc [보러] - ㄹ giữa hai nguyên âm gần "r" nhẹ.
+      confusion:
+        vi: Sau -(으)러 chỉ có động từ di chuyển như 가다, 오다, 다니다. 돈을 벌러 일해요 là sai - với động từ khác phải dùng cách nói khác.
+
+  - key: ko:item:gram-mot
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: 못 + V
+      romanization: mot
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Không thể, không … được (vì không có khả năng hoặc hoàn cảnh không cho phép). Khác 안 là "không (muốn/chọn) làm".
+      examples:
+        - target: 저는 수영을 못 해요.
+          translation:
+            vi: Tôi không biết bơi.
+        - target: 바빠서 못 갔어요.
+          translation:
+            vi: Vì bận nên tôi đã không đi được.
+        - target: 오늘은 숙제를 못 했어요.
+          translation:
+            vi: Hôm nay tôi chưa làm được bài tập.
+      pronunciation_note:
+        vi: 못 + ㅎ thành ㅌ - 못 해요 [모태요]; 못 + ㄱ đọc căng - 못 가요 [몯까요]; 못 + ㅁ thành mũi - 못 먹어요 [몬머거요].
+      confusion:
+        vi: Với động từ "danh từ + 하다", 못 chen giữa - 공부 못 해요, không phải 못 공부해요. Không dùng 못 với tính từ - "không bận" là 안 바빠요.
+
+  - key: ko:item:gram-go-isseoyo
+    type: grammar_point
+    level: topik2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V + -고 있어요
+      romanization: -go isseoyo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Đang V (hành động đang diễn ra). Gắn -고 vào thân động từ rồi thêm 있어요; quá khứ là -고 있었어요.
+      examples:
+        - target: 지금 숙제하고 있어요.
+          translation:
+            vi: Bây giờ tôi đang làm bài tập.
+        - target: 그때 저는 자고 있었어요.
+          translation:
+            vi: Lúc đó tôi đang ngủ.
+      pronunciation_note:
+        vi: 있어요 nối âm [이써요]; 먹고 있어요 đọc [먹꼬 이써요].
+      confusion:
+        vi: Gắn -고 vào thân (공부하-), không vào dạng đã chia - 공부해고 있어요 là sai. Không dùng với tính từ - "đang bận" chỉ là 바빠요.
+
+  - key: ko:item:suyeonghada
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 수영하다
+      romanization: suyeonghada
+      pos: động từ
+    back:
+      meaning:
+        vi: bơi
+      examples:
+        - target: 바다에서 수영했어요.
+          translation:
+            vi: Tôi đã bơi ở biển.
+      pronunciation_note:
+        vi: ㅎ sau ㅇ đọc nhẹ - 수영하다 gần [수영아다].
+      confusion:
+        vi: '"Không biết bơi" là 수영(을) 못 해요 - 못 đứng ngay trước 해요, không phải 못 수영해요.'
+
+  - key: ko:item:baeuda
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 배우다
+      romanization: baeuda
+      pos: động từ
+    back:
+      meaning:
+        vi: học (một kỹ năng, từ ai đó)
+      examples:
+        - target: 요즘 기타를 배우고 있어요.
+          translation:
+            vi: Dạo này tôi đang học đàn guitar.
+      pronunciation_note:
+        vi: ㅜ + 어 gộp thành ㅝ - 배워요 [배워요], 배웠어요 [배워써요].
+      confusion:
+        vi: 배우다 là học kỹ năng/ngôn ngữ (배워요); 공부하다 là học bài, ôn thi. Học bơi là 수영을 배워요, không nói 수영을 공부해요.
+
+  - key: ko:item:nolda
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 놀다
+      romanization: nolda
+      pos: động từ
+    back:
+      meaning:
+        vi: chơi, đi chơi
+      examples:
+        - target: 친구 집에 놀러 갔어요.
+          translation:
+            vi: Tôi đã đến nhà bạn chơi.
+      pronunciation_note:
+        vi: 놀아요 nối âm thành [노라요] - ㄹ giữa hai nguyên âm đọc như "r" nhẹ.
+      confusion:
+        vi: Thân 놀 đã có ㄹ nên thêm 러, không thêm 으러 - 놀러 가요 (không phải 놀으러). Tương tự 놀 거예요.
+
+  - key: ko:item:unjeonhada
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 운전하다
+      romanization: unjeonhada
+      pos: động từ
+    back:
+      meaning:
+        vi: lái xe
+      examples:
+        - target: 저는 운전 못 해요.
+          translation:
+            vi: Tôi không biết lái xe.
+      pronunciation_note:
+        vi: ㅎ sau ㄴ gần như mất - 운전해요 đọc [운저내요].
+      confusion:
+        vi: Phủ định là 운전 못 해요 / 운전 안 해요, không phải 못 운전해요.
+
+  - key: ko:item:sigan
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 시간
+      romanization: sigan
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời gian; giờ (khoảng thời gian)
+      examples:
+        - target: 시간이 없어서 못 갔어요.
+          translation:
+            vi: Vì không có thời gian nên tôi đã không đi được.
+      pronunciation_note:
+        vi: 시 đọc gần "si" hơi bật; 시간이 nối âm [시가니].
+      confusion:
+        vi: '"Mấy giờ" (giờ đồng hồ) là 몇 시; 시간 là khoảng thời gian - 두 시간 là "hai tiếng".'
+
+  - key: ko:item:noraehada
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 노래하다
+      romanization: noraehada
+      pos: động từ
+    back:
+      meaning:
+        vi: hát
+      examples:
+        - target: 노래방에서 노래했어요.
+          translation:
+            vi: Tôi đã hát ở phòng karaoke.
+      pronunciation_note:
+        vi: ㅐ đọc gần "e"; ㅎ đọc nhẹ - 노래해요 [노래애요] khi nói nhanh.
+      confusion:
+        vi: '"Hát bài hát" có thể nói 노래를 불러요; 노래해요 là "hát" nói chung. Phủ định khả năng là 노래 못 해요.'
+
+  - key: ko:item:jigeum
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 지금
+      romanization: jigeum
+      pos: danh từ, phó từ
+    back:
+      meaning:
+        vi: bây giờ
+      examples:
+        - target: 지금 뭐 하고 있어요?
+          translation:
+            vi: Bây giờ bạn đang làm gì?
+      pronunciation_note:
+        vi: ㅁ cuối khép môi; 금 dùng ㅡ dẹt môi - [지금].
+      confusion:
+        vi: 지금 thường đi với -고 있어요 hoặc hiện tại. Không có 에 sau 지금 - 지금에 là sai.
+
+  # ================= bài 5: ôn tập =================
+  - key: ko:item:ilgi
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 일기
+      romanization: ilgi
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhật ký
+      examples:
+        - target: 매일 밤 일기를 써요.
+          translation:
+            vi: Tối nào tôi cũng viết nhật ký.
+      pronunciation_note:
+        vi: ㄹ cuối nối nhẹ sang ㄱ - [일기].
+      confusion:
+        vi: '"Viết nhật ký" dùng 쓰다 - 일기를 써요, không dùng 하다.'
+
+  - key: ko:item:munja
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 문자
+      romanization: munja
+      pos: danh từ
+    back:
+      meaning:
+        vi: tin nhắn (điện thoại)
+      examples:
+        - target: 친구한테 문자를 보냈어요.
+          translation:
+            vi: Tôi đã gửi tin nhắn cho bạn.
+      pronunciation_note:
+        vi: Với nghĩa tin nhắn, 자 đọc căng - [문짜].
+      confusion:
+        vi: Gửi tin nhắn là 문자를 보내요. 문자 còn có nghĩa "chữ viết", khi đó đọc [문자] không căng.
+
+  - key: ko:item:jaemiitda
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 재미있다
+      romanization: jaemiitda
+      pos: tính từ
+    back:
+      meaning:
+        vi: thú vị, vui, hay
+      examples:
+        - target: 영화가 정말 재미있었어요.
+          translation:
+            vi: Bộ phim thật sự rất hay.
+      pronunciation_note:
+        vi: 재미있어요 đọc [재미이써요]; 재미있었어요 đọc [재미이써써요].
+      confusion:
+        vi: Đây là tính từ nên chủ thể đi với 이/가 - 영화가 재미있어요, không phải 영화를. Nghĩa ngược lại thường nói bằng một từ là 재미없어요.

@@ -1,0 +1,396 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:hobbies
+order_index: 1
+level: topik2
+title:
+  vi: Sở thích của bạn là gì?
+objectives:
+  - vi: Hỏi và trả lời về sở thích bằng 취미가 뭐예요? và 제 취미는 N이에요/예요.
+  - vi: Nói mình thích làm gì bằng V-는 것을 좋아해요 và gọi tên hoạt động bằng V-기.
+  - vi: Dùng từ vựng sở thích - 등산, 독서, 사진을 찍다, 노래를 부르다, 게임하다, 영화, 산책하다.
+estimated_minutes: 15
+skills: [vocabulary, grammar, speaking]
+prerequisites: [ko:lesson:public-services-review]
+items:
+  - item: ko:item:chwimi
+  - item: ko:item:chwimiga-mwoyeyo
+  - item: ko:item:deungsan
+  - item: ko:item:dokseo
+  - item: ko:item:sajin-jjikda
+  - item: ko:item:norae-bureuda
+  - item: ko:item:geim-hada
+  - item: ko:item:yeonghwa
+    role: reuse
+  - item: ko:item:sanchaek
+  - item: ko:item:gram-neun-geot-joahada
+  - item: ko:item:gram-gi-nominal
+  - item: ko:item:yori
+    role: reuse
+  - item: ko:item:eumak
+    role: reuse
+  - item: ko:item:joahaeyo
+    role: reuse
+  - item: ko:item:verb-boda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được bạn mới quen "Sở thích của bạn là gì?" và kể được mình thích leo núi, chụp ảnh hay nấu ăn.
+  - type: explain
+    text:
+      vi: Hỏi sở thích - 취미가 뭐예요? Trả lời bằng danh từ + 이에요/예요 - 제 취미는 등산이에요 (có patchim), 제 취미는 독서예요 (không patchim). 제 là "của tôi" (dạng khiêm tốn).
+  - type: explain
+    text:
+      vi: Muốn nói "thích làm gì", bạn biến hành động thành danh từ bằng -는 것 rồi thêm 을 좋아해요 - 요리하다 → 요리하는 것을 좋아해요. Khi nói nhanh, 것을 rút thành 걸 - 요리하는 걸 좋아해요.
+  - type: explain
+    text:
+      vi: -기 cũng biến động từ thành danh từ nhưng ngắn gọn hơn, rất hợp để trả lời "sở thích là…" - 사진 찍기, 노래 부르기, 요리하기. Vì vậy bạn nói 제 취미는 사진 찍기예요.
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt chỉ cần ghép "thích + nấu ăn", còn tiếng Hàn bắt động từ phải đổi thành danh từ trước khi làm tân ngữ của 좋아해요. Nhớ cặp cố định của bài trước - 을/를 + 좋아해요, 이/가 + 좋아요 - nên 요리하는 것을 좋아해요 và 요리하는 것이 좋아요 đều đúng. Động từ gốc ㄹ bỏ ㄹ trước 는 - 만들다 → 만드는 것.
+  - type: example
+    target: 취미가 뭐예요? - 제 취미는 등산이에요.
+    target_lang: ko
+    translation:
+      vi: Sở thích của bạn là gì? - Sở thích của tôi là leo núi.
+    note:
+      vi: 등산 có patchim ㅇ nên dùng 이에요.
+  - type: example
+    target: 저는 요리하는 것을 좋아해요. 주말에 친구들하고 같이 먹어요.
+    target_lang: ko
+    translation:
+      vi: Tôi thích nấu ăn. Cuối tuần tôi ăn cùng các bạn.
+    note:
+      vi: 요리하다 → 요리하는 것을 좋아해요.
+  - type: example
+    target: 제 취미는 사진 찍기예요. 꽃 사진을 많이 찍어요.
+    target_lang: ko
+    translation:
+      vi: Sở thích của tôi là chụp ảnh. Tôi chụp nhiều ảnh hoa.
+    note:
+      vi: 사진 찍기 là dạng -기, đứng trước 예요 như một danh từ.
+  - type: example
+    target: 동생은 노래 부르는 걸 좋아해요. 그런데 저는 영화 보는 걸 좋아해요.
+    target_lang: ko
+    translation:
+      vi: Em tôi thích hát. Còn tôi thì thích xem phim.
+    note:
+      vi: 걸 là dạng nói của 것을; khi nói, 를 sau 노래, 영화 thường được lược bỏ.
+  - type: common_mistake
+    wrong: 저는 요리하는 것을 좋아요.
+    right: 저는 요리하는 것을 좋아해요. / 저는 요리하는 것이 좋아요.
+    target_lang: ko
+    note:
+      vi: 것을 (을) phải đi với động từ 좋아해요; nếu muốn dùng 좋아요 thì đổi thành 것이. Người Việt hay trộn vì tiếng Việt chỉ có một chữ "thích".
+  - type: common_mistake
+    wrong: 제 취미는 요리해요.
+    right: 제 취미는 요리하기예요. / 제 취미는 요리예요.
+    target_lang: ko
+    note:
+      vi: Câu "Sở thích của tôi là…" cần một danh từ trước 이에요/예요. 요리해요 là động từ "tôi nấu ăn", nên ghép với 취미는 bị sai.
+  - type: common_mistake
+    wrong: 노래를 부르어요.
+    right: 노래를 불러요.
+    target_lang: ko
+    note:
+      vi: 부르다 là động từ bất quy tắc 르 - 르 rơi và thêm một ㄹ, thành 불러요. Đừng ghép máy móc 부르 + 어요.
+  - type: summary
+    points:
+      - vi: 취미가 뭐예요? → 제 취미는 N이에요/예요.
+      - vi: V-는 것을 좋아해요 (nói nhanh - V-는 걸 좋아해요); hoặc V-는 것이 좋아요.
+      - vi: V-기 = tên hoạt động - 사진 찍기, 노래 부르기, 요리하기.
+      - vi: 등산 · 독서 · 사진을 찍다 · 노래를 부르다 (불러요) · 게임하다 · 영화 · 산책하다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:hobbies-mcq-chwimi
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:chwimi
+    prompt:
+      stem: "Từ 취미 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: k4t, text: sở thích, lang: vi }
+        - { id: p8m, text: thời tiết, lang: vi }
+        - { id: w2c, text: cuộc hẹn, lang: vi }
+        - { id: d7y, text: mùa, lang: vi }
+    answer:
+      correct_option_id: k4t
+    explanation:
+      vi: 취미 là "sở thích", việc bạn hay làm lúc rảnh. Thời tiết là 날씨, cuộc hẹn là 약속, mùa là 계절.
+    display_answer: sở thích
+
+  - key: ko:exercise:hobbies-listen-photo
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:gram-gi-nominal
+    prompt:
+      audio_asset_id: null
+      fallback_text: 제 취미는 사진 찍기예요.
+      options:
+        - { id: r3n, text: Sở thích của tôi là chụp ảnh., lang: vi }
+        - { id: f9a, text: Sở thích của tôi là hát., lang: vi }
+        - { id: u5e, text: Sở thích của tôi là leo núi., lang: vi }
+        - { id: b1q, text: Tôi không thích chụp ảnh., lang: vi }
+    answer:
+      correct_option_id: r3n
+    explanation:
+      vi: 사진 찍기 là "việc chụp ảnh" (dạng -기 của 사진을 찍다). Hát là 노래 부르기, leo núi là 등산.
+    display_answer: Sở thích của tôi là chụp ảnh.
+
+  - key: ko:exercise:hobbies-mcq-geot-particle
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-neun-geot-joahada
+    prompt:
+      stem: "Chọn trợ từ đúng: 저는 요리하는 것___ 좋아해요."
+      stem_lang: vi
+      options:
+        - { id: h6v, text: 을, lang: ko }
+        - { id: s2j, text: 이, lang: ko }
+        - { id: x8l, text: 를, lang: ko }
+        - { id: c4o, text: 에, lang: ko }
+    answer:
+      correct_option_id: h6v
+    explanation:
+      vi: 좋아해요 là động từ nên cần 을/를; 것 có patchim ㅅ nên dùng 을. 이 chỉ đi với 좋아요, còn 를 dùng sau từ không có patchim.
+    display_answer: 을
+
+  - key: ko:exercise:hobbies-fill-bureuneun
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:norae-bureuda
+    prompt:
+      template: "저는 노래를 {{b1}} 것을 좋아해요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi thích hát."
+        - "Gợi ý: gốc của 부르다 + 는."
+    answer:
+      blanks:
+        b1: [부르는]
+    known_wrong:
+      - answer: 불러는
+        feedback_vi: -는 gắn thẳng vào gốc 부르, không gắn vào dạng 불러.
+        error_tag: neun_geot_form
+      - answer: 부르
+        feedback_vi: Thiếu 는. Trước 것 cần V-는 - 부르는 것.
+        error_tag: neun_geot_form
+      - answer: 불러요
+        feedback_vi: 불러요 là đuôi câu. Trước 것 phải dùng 부르는.
+        error_tag: neun_geot_form
+    explanation:
+      vi: Bỏ 다 ở 부르다 rồi thêm 는 - 부르는 것 (việc hát). Bất quy tắc 르 chỉ xảy ra trước -아/어 (불러요), không xảy ra trước 는.
+    display_answer: 저는 노래를 부르는 것을 좋아해요.
+
+  - key: ko:exercise:hobbies-wb-movie
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-neun-geot-joahada
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi thích xem phim.\""
+      tokens:
+        - { id: t4, text: 것을 }
+        - { id: t1, text: 저는 }
+        - { id: t6, text: 좋아요 }
+        - { id: t5, text: 좋아해요 }
+        - { id: t3, text: 보는 }
+        - { id: t7, text: 봐요 }
+        - { id: t2, text: 영화를 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4, t5]
+    explanation:
+      vi: 보다 → 보는 것 (việc xem); 것을 có 을 nên động từ cuối là 좋아해요, không phải 좋아요. 봐요 là đuôi câu, không đứng trước 것.
+    display_answer: 저는 영화를 보는 것을 좋아해요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:hobbies-translate-reading
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:dokseo
+    prompt:
+      source_text: Sở thích của tôi là đọc sách.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 제 취미는 독서예요.
+        - 취미는 독서예요.
+        - 저는 취미가 독서예요.
+        - 제 취미는 책 읽기예요.
+        - 제 취미는 책을 읽는 것이에요.
+        - 제 취미는 책을 읽는 거예요.
+        - 제 취미는 책 읽는 거예요.
+    known_wrong:
+      - answer: 제 취미는 독서이에요.
+        feedback_vi: 독서 không có patchim nên dùng 예요 - 독서예요.
+        error_tag: copula_ieyo_yeyo
+      - answer: 제 취미는 책을 읽어요.
+        feedback_vi: Sau 취미는 cần danh từ - 독서예요 hoặc 책 읽기예요.
+        error_tag: hobby_needs_noun
+      - answer: 저 취미는 독서예요.
+        feedback_vi: '"Của tôi" là 제, không phải 저 - 제 취미.'
+        error_tag: possessive_je
+      - answer: je chwimineun dokseoyeyo
+        feedback_vi: Hãy viết bằng Hangul, phiên âm Latinh chỉ để tham khảo.
+        error_tag: romanization
+    explanation:
+      vi: '"Sở thích của tôi" là 제 취미는; "đọc sách" là danh từ 독서 (hoặc 책 읽기). 독서 không có patchim nên dùng 예요.'
+    display_answer: 제 취미는 독서예요.
+
+  - key: ko:exercise:hobbies-fill-joahaeyo
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-neun-geot-joahada
+    prompt:
+      template: "(Tôi thích nấu ăn.) 저는 요리하는 것을 {{b1}}. (Sở thích của tôi là chụp ảnh.) 제 취미는 사진 {{b2}}예요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [좋아해요]
+        b2: [찍기]
+    known_wrong:
+      - answer: 좋아요
+        feedback_vi: 것을 (을) đi với 좋아해요. 좋아요 chỉ đi với 것이.
+        error_tag: particle_like_verb
+      - answer: 찍어
+        feedback_vi: Trước 예요 cần danh từ - dùng dạng -기 là 찍기.
+        error_tag: gi_nominal
+      - answer: 찍는
+        feedback_vi: 찍는 phải đi với 것 (찍는 것). Đứng một mình trước 예요 thì dùng 찍기.
+        error_tag: gi_nominal
+    explanation:
+      vi: 것을 + 좋아해요 là cặp cố định. "Chụp ảnh" làm danh từ là 사진 찍기, nên nói 사진 찍기예요.
+    display_answer: 저는 요리하는 것을 좋아해요. 제 취미는 사진 찍기예요.
+
+  - key: ko:exercise:hobbies-translate-game
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:geim-hada
+    prompt:
+      source_text: Em tôi thích chơi game.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 동생은 게임하는 것을 좋아해요.
+        - 동생은 게임하는 걸 좋아해요.
+        - 동생은 게임을 하는 것을 좋아해요.
+        - 동생은 게임을 하는 걸 좋아해요.
+        - 제 동생은 게임하는 것을 좋아해요.
+        - 제 동생은 게임하는 걸 좋아해요.
+        - 동생은 게임을 좋아해요.
+        - 제 동생은 게임을 좋아해요.
+        - 동생은 게임하는 것이 좋아요.
+    known_wrong:
+      - answer: 동생은 게임하는 것을 좋아요.
+        feedback_vi: 것을 đi với 좋아해요; nói về người khác cũng dùng 좋아해요.
+        error_tag: particle_like_verb
+      - answer: 동생은 게임해 것을 좋아해요.
+        feedback_vi: Trước 것 dùng V-는 - 게임하는 것.
+        error_tag: neun_geot_form
+      - answer: 동생은 좋아해요 게임하는 것을.
+        feedback_vi: Động từ 좋아해요 luôn đứng cuối câu.
+        error_tag: word_order
+    explanation:
+      vi: 게임하다 → 게임하는 것 (việc chơi game) + 을 좋아해요. Chủ đề "em tôi" dùng 은 vì 동생 có patchim ㅇ.
+    display_answer: 동생은 게임하는 것을 좋아해요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:hobbies-mcq-answer-hobby
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:chwimiga-mwoyeyo
+    prompt:
+      stem: "Bạn Hàn hỏi bạn: 취미가 뭐예요? Bạn thích leo núi. Câu trả lời nào đúng và tự nhiên?"
+      stem_lang: vi
+      options:
+        - { id: m5z, text: 제 취미는 등산이에요., lang: ko }
+        - { id: g3e, text: 제 취미는 등산예요., lang: ko }
+        - { id: a7r, text: 제 취미는 등산해요., lang: ko }
+        - { id: q9w, text: 저는 등산하는 것을 좋아요., lang: ko }
+    answer:
+      correct_option_id: m5z
+    explanation:
+      vi: 등산 có patchim ㅇ nên dùng 이에요. 등산해요 là động từ, không đứng sau 취미는; 것을 phải đi với 좋아해요 chứ không phải 좋아요.
+    display_answer: 제 취미는 등산이에요.
+
+  - key: ko:exercise:hobbies-translate-walk-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:sanchaek
+    prompt:
+      source_text: 저는 주말에 공원에서 산책하는 걸 좋아해요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi thích đi dạo ở công viên vào cuối tuần.
+        - Cuối tuần tôi thích đi dạo ở công viên.
+        - Vào cuối tuần tôi thích đi dạo ở công viên.
+        - Tôi thích đi dạo trong công viên vào cuối tuần.
+        - Cuối tuần tôi thích đi dạo trong công viên.
+        - Tôi thích đi dạo công viên vào cuối tuần.
+        - Cuối tuần mình thích đi dạo ở công viên.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi thích tập thể dục ở công viên vào cuối tuần.
+        feedback_vi: 산책하다 là "đi dạo"; tập thể dục là 운동하다.
+        error_tag: vocab_meaning
+      - answer: Tôi đi dạo ở công viên vào cuối tuần.
+        feedback_vi: Thiếu ý "thích" - 하는 걸 좋아해요 là "thích làm".
+        error_tag: missing_like
+    explanation:
+      vi: 주말에 = vào cuối tuần, 공원에서 = ở công viên, 산책하는 걸 좋아해요 = thích đi dạo (걸 là dạng nói của 것을).
+    display_answer: Tôi thích đi dạo ở công viên vào cuối tuần.
+
+  - key: ko:exercise:hobbies-wb-ask-hobby
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:chwimiga-mwoyeyo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Anh Minsu, sở thích của anh là gì?\""
+      tokens:
+        - { id: k3, text: 뭐예요 }
+        - { id: k2, text: 취미가 }
+        - { id: k5, text: 취미를 }
+        - { id: k1, text: 민수 씨 }
+        - { id: k4, text: 어때요 }
+    answer:
+      orders:
+        - [k1, k2, k3]
+    explanation:
+      vi: Câu hỏi sở thích là 취미가 뭐예요? - 뭐 đi với 이/가, không đi với 을/를. 어때요 là "thế nào", dùng để hỏi ý kiến, không hỏi "là gì".
+    display_answer: 민수 씨, 취미가 뭐예요?

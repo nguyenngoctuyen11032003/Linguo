@@ -1,0 +1,400 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:ellipsis-understatement-emphasis
+order_index: 4
+level: c2
+title:
+  vi: Tỉnh lược, nói giảm & nhấn mạnh
+objectives:
+  - vi: Tránh lặp từ bằng thay thế và tỉnh lược - so/not, do so, one/ones, …and she did.
+  - vi: Hiểu ý thật đằng sau lối nói giảm và mỉa mai - not bad at all, a bit of a problem, not exactly, hardly ideal.
+  - vi: Nhấn mạnh tinh tế bằng the very, do/does/did + V và whatsoever.
+estimated_minutes: 20
+skills: [grammar, speaking, listening, writing]
+prerequisites: [en:lesson:subjunctive-formal]
+items:
+  - item: en:item:substitution-so-not
+  - item: en:item:do-so
+  - item: en:item:substitution-one
+  - item: en:item:ellipsis-auxiliary
+  - item: en:item:understatement
+  - item: en:item:not-bad-at-all
+  - item: en:item:a-bit-of-a
+  - item: en:item:not-exactly
+  - item: en:item:the-very
+  - item: en:item:emphatic-do
+  - item: en:item:whatsoever
+  - item: en:item:somewhat
+    role: reuse
+  - item: en:item:what-cleft
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Người bản ngữ ít khi lặp lại nguyên một cụm từ, và họ thường nói nhẹ hơn hoặc mạnh hơn thực tế một cách có chủ ý. Sau bài này, bạn nói gọn hơn, hiểu "hàm ý" tốt hơn và biết cách nhấn mạnh mà không cần "very, very".
+  - type: explain
+    text:
+      vi: Thay thế (substitution) dùng từ ngắn thay cho phần đã nói - so/not thay mệnh đề (I think so, I hope not), do so thay cụm động từ, one/ones thay danh từ đếm được. Tỉnh lược (ellipsis) bỏ hẳn phần lặp, chỉ giữ trợ động từ - She said she'd call, and she did.
+  - type: explain
+    text:
+      vi: Nói giảm (understatement) là nói nhẹ hơn sự thật - a bit of a problem có thể là sự cố lớn, not exactly cheap là rất đắt. Người Việt hay hiểu theo nghĩa đen nên đánh giá thấp mức độ nghiêm trọng hoặc bỏ lỡ lời khen (not bad at all = khá tốt).
+  - type: explain
+    text:
+      vi: Để nhấn mạnh, tiếng Anh C2 dùng the very + danh từ (chính là), do/does/did + V trong câu khẳng định (I did tell you!), và whatsoever sau danh từ phủ định (no doubt whatsoever). Tiếng Việt có "chính", "thật mà", "gì cả" làm việc tương tự.
+  - type: deep_explain
+    text:
+      vi: Với think, believe, expect, suppose, dạng phủ định tự nhiên là I don't think so; với hope và be afraid lại dùng I hope not, I'm afraid not. Do so trang trọng, hay gặp trong quy định (Those who wish to do so may…); trong văn nói thường chỉ dùng do it hoặc tỉnh lược. Emphatic do chỉ dùng ở hiện tại đơn, quá khứ đơn và mệnh lệnh (Do sit down) - các thì khác nhấn mạnh bằng cách nhấn giọng trợ động từ.
+  - type: example
+    target: "\"Will the shop be open on Sunday?\" \"I'm afraid not.\""
+    target_lang: en
+    translation:
+      vi: “Chủ nhật cửa hàng có mở không?” “Tiếc là không.”
+    note:
+      vi: Not thay cho cả mệnh đề the shop won't be open on Sunday.
+  - type: example
+    target: Anyone who wishes to leave early may do so with the manager's permission.
+    target_lang: en
+    translation:
+      vi: Ai muốn về sớm có thể làm vậy nếu được quản lý cho phép.
+    note:
+      vi: Do so = leave early; tránh lặp lại cụm động từ.
+  - type: example
+    target: "\"How was the interview?\" \"Not bad at all, actually. They offered me the job.\""
+    target_lang: en
+    translation:
+      vi: “Phỏng vấn thế nào?” “Thật ra khá ổn đấy. Họ nhận tôi luôn rồi.”
+    note:
+      vi: Not bad at all là lời khen kín đáo, nghĩa là "tốt".
+  - type: example
+    target: The hotel was not exactly cheap, and the view was hardly what the website promised.
+    target_lang: en
+    translation:
+      vi: Khách sạn chẳng rẻ chút nào, và cảnh thì khác xa những gì trang web quảng cáo.
+    note:
+      vi: Not exactly cheap = rất đắt; hardly what… = hoàn toàn không như….
+  - type: example
+    target: I did read your report - I just haven't had time to reply.
+    target_lang: en
+    translation:
+      vi: Tôi có đọc báo cáo của bạn thật mà - chỉ là chưa có thời gian trả lời.
+    note:
+      vi: Did + read (nguyên mẫu) nhấn mạnh, phản bác ý nghĩ "chưa đọc".
+  - type: common_mistake
+    wrong: "\"Is it going to rain?\" \"I hope no.\""
+    right: "\"Is it going to rain?\" \"I hope not.\""
+    target_lang: en
+    note:
+      vi: Thay cho mệnh đề phủ định dùng not, không dùng no. Tương tự - I'm afraid not, I guess not.
+  - type: common_mistake
+    wrong: She did sent the invoice yesterday.
+    right: She did send the invoice yesterday.
+    target_lang: en
+    note:
+      vi: Sau did nhấn mạnh là động từ nguyên mẫu - send, không phải sent.
+  - type: common_mistake
+    wrong: There is whatsoever no reason to worry.
+    right: There is no reason whatsoever to worry.
+    target_lang: en
+    note:
+      vi: Whatsoever đứng ngay sau danh từ được phủ định (no reason whatsoever), không đứng trước no.
+  - type: common_mistake
+    wrong: This phone is too slow. I need a faster.
+    right: This phone is too slow. I need a faster one.
+    target_lang: en
+    note:
+      vi: Tính từ không đứng một mình thay danh từ đếm được; cần one - a faster one.
+  - type: summary
+    points:
+      - vi: so/not thay mệnh đề - I think so, I don't think so, I hope not, I'm afraid so/not.
+      - vi: do so thay cụm động từ (trang trọng); one/ones thay danh từ đếm được; tỉnh lược - …and she did / but I can't.
+      - vi: Nói giảm - not bad at all (khá tốt), a bit of a problem (vấn đề khá lớn), not exactly / hardly + adj (hoàn toàn không).
+      - vi: Nhấn mạnh - the very + N (chính), do/does/did + V nguyên mẫu, no + N + whatsoever.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:ellipsis-mcq-understatement
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:a-bit-of-a
+    prompt:
+      stem: "Kỹ sư IT nói: \"We've got a bit of a problem - the whole customer database seems to have disappeared.\" Mức độ thật của vấn đề là gì?"
+      stem_lang: vi
+      options:
+        - { id: t8k, text: Rất nghiêm trọng; a bit of a chỉ là cách nói giảm., lang: vi }
+        - { id: c3p, text: Không đáng kể; chỉ là một lỗi nhỏ., lang: vi }
+        - { id: o5j, text: Chưa xảy ra; kỹ sư đang dự đoán., lang: vi }
+        - { id: l1y, text: Đã được khắc phục hoàn toàn., lang: vi }
+    answer:
+      correct_option_id: t8k
+    explanation:
+      vi: Mất toàn bộ dữ liệu khách hàng là sự cố lớn; a bit of a problem là lối nói giảm kiểu Anh để giữ bình tĩnh. Đừng hiểu theo nghĩa đen "một chút vấn đề".
+    display_answer: Rất nghiêm trọng; a bit of a chỉ là cách nói giảm.
+
+  - key: en:exercise:ellipsis-mcq-hope-not
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:substitution-so-not
+    prompt:
+      stem: "\"Do you think the flight will be cancelled?\" - Bạn mong là chuyến bay KHÔNG bị huỷ. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: n4x, text: I hope not., lang: en }
+        - { id: e7q, text: I hope no., lang: en }
+        - { id: a2z, text: I don't hope so., lang: en }
+        - { id: g6v, text: I hope it not., lang: en }
+    answer:
+      correct_option_id: n4x
+    explanation:
+      vi: Not thay cho cả mệnh đề phủ định (the flight won't be cancelled). Hope không có dạng I don't hope so; no và it not đều sai.
+    display_answer: I hope not.
+
+  - key: en:exercise:ellipsis-listen-not-bad
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:not-bad-at-all
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Your first presentation? Not bad at all - you had the whole room listening."
+      options:
+        - { id: h9s, text: "Bài thuyết trình đầu tiên mà khá lắm - cả phòng đều chăm chú nghe.", lang: vi }
+        - { id: u6d, text: "Bài thuyết trình đầu tiên tạm được, nhưng nhiều người không nghe.", lang: vi }
+        - { id: f3w, text: "Bài thuyết trình đầu tiên khá tệ, cả phòng phải cố nghe.", lang: vi }
+        - { id: b0m, text: "Bài thuyết trình đầu tiên chưa diễn ra nên chưa đánh giá được.", lang: vi }
+    answer:
+      correct_option_id: h9s
+    explanation:
+      vi: Not bad at all là lời khen thật, mạnh hơn "tạm được"; vế sau (you had the whole room listening) khẳng định điều đó.
+    display_answer: "Bài thuyết trình đầu tiên mà khá lắm - cả phòng đều chăm chú nghe."
+
+  - key: en:exercise:ellipsis-fill-emphasis-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:emphatic-do
+    prompt:
+      template: "I {{b1}} lock the door - I remember checking it twice. And there was no sign {{b2}} of a break-in."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 10 }
+      hint_levels:
+        - "Nghĩa: Tôi có khoá cửa thật mà - tôi nhớ đã kiểm tra hai lần. Và hoàn toàn không có dấu hiệu đột nhập nào cả."
+        - "Gợi ý: ô 1 là trợ động từ quá khứ để nhấn mạnh; ô 2 là trạng từ nhấn mạnh phủ định (w…)."
+    answer:
+      blanks:
+        b1: [did]
+        b2: [whatsoever]
+    known_wrong:
+      - answer: do
+        feedback_vi: Việc khoá cửa đã xảy ra trong quá khứ nên dùng did.
+        error_tag: emphatic_do
+      - answer: was
+        feedback_vi: Sau was không dùng động từ nguyên mẫu lock; nhấn mạnh hành động quá khứ đơn bằng did.
+        error_tag: emphatic_do
+      - answer: whatever
+        feedback_vi: Sau no + danh từ, từ nhấn mạnh là whatsoever (hoặc at all), không phải whatever.
+        error_tag: whatsoever
+    explanation:
+      vi: Did + lock (nguyên mẫu) nhấn mạnh, phản bác nghi ngờ "chưa khoá". No sign whatsoever = hoàn toàn không có dấu hiệu nào.
+    display_answer: I did lock the door - I remember checking it twice. And there was no sign whatsoever of a break-in.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:ellipsis-fill-substitution
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:do-so
+    prompt:
+      template: "Staff who wish to attend the training may {{b1}} so by Friday. If you need a laptop, borrow {{b2}} from IT; the old {{b3}} in the cupboard don't work."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [do]
+        b2: [one]
+        b3: [ones]
+    known_wrong:
+      - answer: make
+        feedback_vi: Cụm thay thế là do so, không phải make so.
+        error_tag: substitution
+      - answer: it
+        feedback_vi: It chỉ một chiếc laptop cụ thể đã nhắc; "mượn một cái" là one.
+        error_tag: substitution
+      - answer: them
+        feedback_vi: Sau tính từ old cần đại từ thay thế ones (the old ones).
+        error_tag: substitution
+    explanation:
+      vi: Do so thay cho attend the training (văn phong quy định). One thay cho a laptop bất kỳ; ones thay cho laptops số nhiều sau the old - động từ don't cũng cho thấy chủ ngữ số nhiều.
+    display_answer: Staff who wish to attend the training may do so by Friday. If you need a laptop, borrow one from IT; the old ones in the cupboard don't work.
+
+  - key: en:exercise:ellipsis-translate-the-very
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:the-very
+    prompt:
+      source_text: Đó chính là vấn đề mà chúng tôi đã cảnh báo từ đầu. (dùng the very)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - That is the very problem we warned about from the start.
+        - That's the very problem we warned about from the start.
+        - That is the very problem we warned about from the beginning.
+        - That's the very problem we warned about from the beginning.
+        - That is the very problem that we warned about from the start.
+        - That's the very problem that we warned about from the start.
+        - That is the very problem we warned you about from the start.
+        - That's the very problem we warned you about from the start.
+        - That is the very issue we warned about from the start.
+        - That's the very issue we warned about from the beginning.
+        - That is the very problem we had warned about from the start.
+        - This is the very problem we warned about from the start.
+        - That is the very problem we warned about at the start.
+        - That was the very problem we warned about from the start.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: That is the very much problem we warned about from the start.
+        feedback_vi: The very + danh từ nghĩa là "chính"; không thêm much.
+        error_tag: the_very
+      - answer: That is very the problem we warned about from the start.
+        feedback_vi: Very đứng sau the và trước danh từ - the very problem.
+        error_tag: word_order
+    explanation:
+      vi: The very + danh từ nhấn mạnh "chính là, đúng là cái đó". Very ở đây là tính từ, không phải trạng từ "rất".
+    display_answer: That is the very problem we warned about from the start.
+
+  - key: en:exercise:ellipsis-translate-to-vi-not-exactly
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:not-exactly
+    prompt:
+      source_text: Working until midnight every day is hardly ideal.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ngày nào cũng làm việc đến nửa đêm thì chẳng lý tưởng chút nào.
+        - Ngày nào cũng làm đến nửa đêm thì chẳng lý tưởng chút nào.
+        - Làm việc đến nửa đêm mỗi ngày thì chẳng lý tưởng chút nào.
+        - Làm việc đến nửa đêm mỗi ngày thật chẳng lý tưởng chút nào.
+        - Ngày nào cũng làm việc đến nửa đêm thì không lý tưởng chút nào.
+        - Làm việc đến nửa đêm mỗi ngày hoàn toàn không lý tưởng.
+        - Ngày nào cũng làm việc tới nửa đêm thì chẳng lý tưởng gì cả.
+        - Ngày nào cũng làm việc đến nửa đêm thì chẳng hay ho gì.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ngày nào cũng làm việc đến nửa đêm thì khá lý tưởng.
+        feedback_vi: Hardly là "hầu như không", không phải "khá"; hardly ideal = chẳng lý tưởng chút nào.
+        error_tag: hardly
+      - answer: Ngày nào cũng làm việc chăm chỉ đến nửa đêm thì lý tưởng.
+        feedback_vi: Hardly không phải "chăm chỉ" (hard); nó phủ định ideal.
+        error_tag: hardly
+    explanation:
+      vi: Hardly ideal là lối nói giảm, nghĩa thật là "rất không lý tưởng". Hardly mang nghĩa phủ định, khác hẳn hard (chăm chỉ).
+    display_answer: Ngày nào cũng làm việc đến nửa đêm thì chẳng lý tưởng chút nào.
+
+  # ---------------- application ----------------
+  - key: en:exercise:ellipsis-order-auxiliary
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:ellipsis-auxiliary
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Cô ấy hứa sẽ hoàn thành dự án trước hạn, và cô ấy đã làm được.\""
+      tokens:
+        - { id: e-did, text: did }
+        - { id: e-before, text: before the deadline }
+        - { id: e-she2, text: she }
+        - { id: e-promised, text: She promised }
+        - { id: e-finished, text: finished }
+        - { id: e-and, text: and }
+        - { id: e-finish, text: to finish }
+        - { id: e-project, text: the project }
+    answer:
+      orders:
+        - [e-promised, e-finish, e-project, e-before, e-and, e-she2, e-did]
+    explanation:
+      vi: Vế sau chỉ cần trợ động từ did, thay cho finished the project before the deadline - đó là tỉnh lược. Promise + to V nên dùng to finish; finished là thừa.
+    display_answer: She promised to finish the project before the deadline, and she did.
+
+  - key: en:exercise:ellipsis-mcq-irony
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:understatement
+    prompt:
+      stem: "Đồng nghiệp hỏi về khách sạn bạn vừa ở: phòng nhỏ, ồn, giá rất cao. Bạn muốn chê một cách hóm hỉnh, lịch sự. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: m7c, text: "Let's just say it wasn't exactly good value for money.", lang: en }
+        - { id: r2b, text: "It was not bad at all - great value for money.", lang: en }
+        - { id: s9n, text: "It was the worst, most terrible hotel ever!!!", lang: en }
+        - { id: k5u, text: "It was hardly expensive and really quiet.", lang: en }
+    answer:
+      correct_option_id: m7c
+    explanation:
+      vi: Wasn't exactly good value là lối nói giảm - người nghe hiểu là "rất không đáng tiền" nhưng câu vẫn lịch sự. Not bad at all là khen; câu cảm thán thô và quá lời; hardly expensive nghĩa là "rẻ", ngược ý.
+    display_answer: "Let's just say it wasn't exactly good value for money."
+
+  - key: en:exercise:ellipsis-translate-emphatic-do
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:emphatic-do
+    prompt:
+      source_text: Tôi có gửi email cho anh ấy thật mà, nhưng anh ấy không hề trả lời. (dùng did để nhấn mạnh)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I did send him the email, but he never replied.
+        - I did send him an email, but he never replied.
+        - I did send the email to him, but he never replied.
+        - I did send an email to him, but he never replied.
+        - I did send him the email, but he didn't reply at all.
+        - I did send him the email, but he did not reply at all.
+        - I did send him an email, but he didn't reply at all.
+        - I did send him the email, but he never answered.
+        - I did send him an email, but he never answered.
+        - I did email him, but he never replied.
+        - I did email him, but he didn't reply at all.
+        - I did send him the email, but he never wrote back.
+        - I did send him an email, but he never responded.
+        - I did send him the email, but he never responded.
+        - I did send him the email but he never replied.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I did sent him the email, but he never replied.
+        feedback_vi: Sau did là động từ nguyên mẫu - send, không phải sent.
+        error_tag: emphatic_do
+      - answer: I sent him the email, but he never replied.
+        feedback_vi: Câu đúng nhưng chưa nhấn mạnh; đề yêu cầu dùng did - I did send….
+        error_tag: emphatic_do
+      - answer: I really did sent him the email, but he never replied.
+        feedback_vi: Sau did là động từ nguyên mẫu - send.
+        error_tag: emphatic_do
+    explanation:
+      vi: Did + send (nguyên mẫu) nhấn mạnh, phản bác ý "chưa gửi" - tương đương "thật mà". Never replied hoặc didn't reply at all diễn đạt "không hề trả lời".
+    display_answer: I did send him the email, but he never replied.

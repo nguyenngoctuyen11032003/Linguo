@@ -1,0 +1,424 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:conditions-concession
+order_index: 2
+level: topik3
+title:
+  vi: "Nếu, muốn… thì, dù…: -(으)면, -(으)려면, -아도/어도, -더라도"
+objectives:
+  - vi: Nêu điều kiện bằng -(으)면 và phân biệt với -(으)려면 (muốn đạt mục đích thì cần làm gì).
+  - vi: Nói "dù… vẫn…" bằng -아도/어도, 아무리 -아도/어도, và giả định "cho dù có…" bằng -더라도.
+  - vi: Đọc hiểu thông báo ngắn về đăng ký, đặt chỗ, hạn nộp.
+estimated_minutes: 18
+skills: [grammar, reading, writing]
+prerequisites: [ko:lesson:reasons-aseo-nikka]
+items:
+  - item: ko:item:gram-eumyeon
+  - item: ko:item:gram-euryeomyeon
+  - item: ko:item:gram-ado-eodo
+  - item: ko:item:gram-deorado
+  - item: ko:item:amuri
+  - item: ko:item:hoksi
+  - item: ko:item:yeyakada
+  - item: ko:item:miri
+  - item: ko:item:piryohada
+  - item: ko:item:jechulhada
+  - item: ko:item:magam
+  - item: ko:item:sincheonghada
+  - item: ko:item:yeollakada
+    role: reuse
+  - item: ko:item:bappeuda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "nếu có thời gian thì…", "muốn đăng ký thì phải…", "dù bận đến mấy tôi vẫn…", và hiểu các thông báo về hạn chót, đặt chỗ.
+  - type: explain
+    text:
+      vi: -(으)면 là "nếu, khi". Thân có patchim thêm 으 - 있으면, 먹으면; không patchim hoặc có ㄹ thì thêm 면 - 가면, 살면.
+  - type: explain
+    text:
+      vi: -(으)려면 là "nếu muốn (làm gì) thì…", vế sau nói điều cần làm - -아야 해요, 필요해요, -(으)세요. 한국에 가려면 비자가 필요해요 - muốn đi Hàn thì cần visa. Nếu dùng 가면, câu chỉ còn nghĩa "khi đi Hàn".
+  - type: explain
+    text:
+      vi: -아도/어도 là "dù… vẫn…", chia giống -아요/어요 - 비싸도, 먹어도, 해도. Thêm 아무리 ở đầu để nhấn "dù… đến mấy". -더라도 cũng là "dù", nhưng nhấn giả định "lỡ như có…", nghe trang trọng hơn.
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt nói "dù… nhưng… vẫn…", nên người học hay thêm 하지만 sau -아도 - giống lỗi "vì… nên" ở bài trước. Vế -아도 đã chứa ý "nhưng vẫn". -아도 và -더라도 thường thay được cho nhau; khi nói về việc đang thật sự xảy ra (trời đang mưa), -아도 tự nhiên hơn, còn khi động viên "lỡ như thi trượt", -더라도 hợp hơn.
+  - type: example
+    target: 시간이 있으면 같이 저녁 먹어요.
+    target_lang: ko
+    translation:
+      vi: Nếu có thời gian thì cùng ăn tối nhé.
+    note:
+      vi: 있다 có patchim nên thêm 으 - 있으면.
+  - type: example
+    target: 이 수업을 들으려면 다음 주 월요일까지 신청해야 해요.
+    target_lang: ko
+    translation:
+      vi: Muốn học lớp này thì phải đăng ký trước thứ Hai tuần sau.
+    note:
+      vi: 듣다 (nghe, học) là bất quy tắc ㄷ - 들으려면.
+  - type: example
+    target: 아무리 바빠도 아침은 꼭 먹어요.
+    target_lang: ko
+    translation:
+      vi: Dù bận đến mấy tôi vẫn nhất định ăn sáng.
+  - type: example
+    target: 혹시 늦더라도 미리 연락해 주세요.
+    target_lang: ko
+    translation:
+      vi: Lỡ có đến muộn thì bạn báo trước cho tôi nhé.
+    note:
+      vi: -더라도 nhấn giả định "lỡ như"; 혹시 làm câu nhờ mềm hơn.
+  - type: example
+    target: 신청 마감은 금요일입니다. 늦으면 신청할 수 없습니다.
+    target_lang: ko
+    translation:
+      vi: Hạn đăng ký là thứ Sáu. Nếu muộn sẽ không đăng ký được.
+    note:
+      vi: Văn phong thông báo dùng -ㅂ니다/습니다.
+  - type: common_mistake
+    wrong: 비자를 받으면 대사관에 가야 해요.
+    right: 비자를 받으려면 대사관에 가야 해요.
+    target_lang: ko
+    note:
+      vi: Ý muốn nói là "muốn lấy visa thì phải đến đại sứ quán". 받으면 lại thành "lấy visa xong thì phải đến đại sứ quán" - sai trình tự.
+  - type: common_mistake
+    wrong: 아무리 바빠서 운동해요.
+    right: 아무리 바빠도 운동해요.
+    target_lang: ko
+    note:
+      vi: 아무리 luôn đi với -아도/어도. -아서 là "vì", nên câu sai thành "vì bận đến mấy nên tập thể dục".
+  - type: common_mistake
+    wrong: 비가 와도 하지만 축구를 해요.
+    right: 비가 와도 축구를 해요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt quen "dù… nhưng…", nên người học hay thêm 하지만. -아도 đã mang nghĩa "nhưng vẫn", thêm 하지만 là thừa.
+  - type: summary
+    points:
+      - vi: -(으)면 - nếu, khi (있으면, 가면, 살면).
+      - vi: -(으)려면 - muốn… thì… + điều cần làm (-아야 해요, 필요해요, -(으)세요).
+      - vi: -아도/어도 - dù… vẫn…; 아무리 + -아도/어도 - dù… đến mấy; không thêm 하지만.
+      - vi: -더라도 - cho dù lỡ có…; gắn thẳng vào thân (늦더라도).
+      - vi: Thông báo hay dùng 신청, 예약, 제출, 마감, 미리.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:conditions-listen-library
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-euryeomyeon
+    prompt:
+      audio_asset_id: null
+      fallback_text: 도서관 카드를 만들려면 신분증이 필요해요.
+      options:
+        - { id: a6r, text: Muốn làm thẻ thư viện thì cần giấy tờ tùy thân., lang: vi }
+        - { id: e3n, text: Làm thẻ thư viện xong thì trả lại giấy tờ tùy thân., lang: vi }
+        - { id: o8u, text: Dù làm thẻ thư viện cũng không cần giấy tờ tùy thân., lang: vi }
+        - { id: i1z, text: Vì đã làm thẻ thư viện nên cần giấy tờ tùy thân., lang: vi }
+    answer:
+      correct_option_id: a6r
+    explanation:
+      vi: 만들려면 là "nếu muốn làm"; 필요해요 là "cần". Câu nói điều kiện cần cho một mục đích, không phải "xong rồi", "dù" hay "vì".
+    display_answer: Muốn làm thẻ thư viện thì cần giấy tờ tùy thân.
+
+  - key: ko:exercise:conditions-mcq-ryeomyeon
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-euryeomyeon
+    prompt:
+      stem: "Chọn vế đúng: 공항에 일찍 ______ 지금 출발해야 해요. (Muốn đến sân bay sớm thì phải xuất phát ngay.)"
+      stem_lang: vi
+      options:
+        - { id: b4x, text: 도착하려면, lang: ko }
+        - { id: l8d, text: 도착하면, lang: ko }
+        - { id: w2p, text: 도착해도, lang: ko }
+        - { id: f6s, text: 도착해서, lang: ko }
+    answer:
+      correct_option_id: b4x
+    explanation:
+      vi: Đến sớm là mục đích, xuất phát ngay là điều cần làm → -(으)려면. 도착하면 thành "đến nơi rồi thì phải xuất phát", vô lý; 도착해도 là "dù", 도착해서 là "vì / rồi".
+    display_answer: 도착하려면
+
+  - key: ko:exercise:conditions-fill-myeon-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eumyeon
+    prompt:
+      template: "시간이 {{b1}} 같이 영화 봐요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Nếu có thời gian thì cùng xem phim nhé."
+        - "Gợi ý: 있다 + -(으)면; thân có patchim nên cần 으."
+    answer:
+      blanks:
+        b1: [있으면]
+    known_wrong:
+      - answer: 있면
+        feedback_vi: 있다 có patchim ㅆ nên phải thêm 으 - 있으면.
+        error_tag: eu_insertion
+      - answer: 있어서
+        feedback_vi: -아서 là "vì" và không đi với lời rủ (봐요). Ở đây cần "nếu" - 있으면.
+        error_tag: condition_vs_reason
+    explanation:
+      vi: Ý "nếu" dùng -(으)면; thân 있 có patchim nên thêm 으 → 있으면. Vế sau là lời rủ, -(으)면 đi với lời rủ bình thường.
+    display_answer: 시간이 있으면 같이 영화 봐요.
+
+  - key: ko:exercise:conditions-wb-expensive
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-ado-eodo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Cái túi này dù đắt tôi vẫn muốn mua.\""
+      tokens:
+        - { id: k3, text: 사고 싶어요 }
+        - { id: k5, text: 비싸서 }
+        - { id: k2, text: 비싸도 }
+        - { id: k1, text: 이 가방은 }
+    answer:
+      orders:
+        - [k1, k2, k3]
+        - [k2, k1, k3]
+    explanation:
+      vi: 비싸다 + -아도 → 비싸도 (dù đắt). 비싸서 là "vì đắt", không hợp với "vẫn muốn mua". Động từ 사고 싶어요 đứng cuối.
+    display_answer: 이 가방은 비싸도 사고 싶어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:conditions-fill-ryeomyeon
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-euryeomyeon
+    prompt:
+      template: "(Muốn giảm cân thì phải tập thể dục.) 살을 {{b1}} 운동을 해야 해요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [빼려면]
+    known_wrong:
+      - answer: 빼면
+        feedback_vi: 빼면 là "giảm cân xong thì…". Muốn nói mục đích "muốn giảm cân thì…" dùng -려면 - 빼려면.
+        error_tag: condition_vs_purpose
+      - answer: 빼서
+        feedback_vi: -아서 là "vì / rồi". Câu cần "muốn… thì…" - 빼려면.
+        error_tag: condition_vs_purpose
+    explanation:
+      vi: Mục đích (giảm cân) + điều cần làm (-아야 해요) → -(으)려면. 빼다 không có patchim nên thêm 려면.
+    display_answer: 살을 빼려면 운동을 해야 해요.
+
+  - key: ko:exercise:conditions-translate-rain
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-ado-eodo
+    prompt:
+      source_text: Dù trời mưa tôi vẫn sẽ đi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 비가 와도 갈 거예요.
+        - 비가 와도 저는 갈 거예요.
+        - 저는 비가 와도 갈 거예요.
+        - 비가 오더라도 갈 거예요.
+        - 비가 오더라도 저는 갈 거예요.
+        - 비가 와도 가요.
+        - 비 와도 갈 거예요.
+    known_wrong:
+      - answer: 비가 와서 갈 거예요.
+        feedback_vi: 와서 là "vì mưa". "Dù mưa" là 와도.
+        error_tag: aseo_vs_ado
+      - answer: 비가 오면 갈 거예요.
+        feedback_vi: 오면 là "nếu mưa thì đi" - ngược nghĩa. Dùng 와도.
+        error_tag: myeon_vs_ado
+      - answer: 비가 와도 하지만 갈 거예요.
+        feedback_vi: -아도 đã có ý "nhưng vẫn"; bỏ 하지만.
+        error_tag: double_concession_connector
+    explanation:
+      vi: 오다 + -아도 → 와도 (dù mưa); "sẽ đi" là 갈 거예요. -더라도 (오더라도) cũng đúng, nhấn giả định hơn.
+    display_answer: 비가 와도 갈 거예요.
+
+  - key: ko:exercise:conditions-fill-wallet-late
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-deorado
+    prompt:
+      template: "(Tìm mãi mà không thấy ví.) 아무리 {{b1}} 지갑이 없어요. (Có muộn một chút thì bạn cũng nhất định đến nhé.) 좀 {{b2}} 꼭 오세요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [찾아도]
+        b2: [늦더라도, 늦어도]
+    known_wrong:
+      - answer: 찾아서
+        feedback_vi: 아무리 đi với -아도/어도 - 찾아도.
+        error_tag: amuri_ado
+      - answer: 늦어서
+        feedback_vi: 늦어서 là "vì muộn" và không đi với lời yêu cầu 오세요. Dùng 늦더라도 hoặc 늦어도.
+        error_tag: aseo_vs_ado
+      - answer: 늦으면
+        feedback_vi: 늦으면 là "nếu muộn"; câu cần "dù có muộn" - 늦더라도.
+        error_tag: myeon_vs_ado
+    explanation:
+      vi: 찾다 + -아도 → 찾아도. "Có muộn thì cũng…" là 늦더라도 (giả định) hoặc 늦어도; -더라도 gắn thẳng vào thân.
+    display_answer: 아무리 찾아도 지갑이 없어요. 좀 늦더라도 꼭 오세요.
+
+  - key: ko:exercise:conditions-translate-reserve
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:yeyakada
+    prompt:
+      source_text: Muốn ăn ở quán đó thì phải đặt chỗ trước.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 그 식당에서 먹으려면 미리 예약해야 해요.
+        - 그 식당에서 먹으려면 미리 예약해야 돼요.
+        - 그 식당에서 식사하려면 미리 예약해야 해요.
+        - 그 식당에서 식사하려면 미리 예약해야 돼요.
+        - 그 식당에서 밥을 먹으려면 미리 예약해야 해요.
+        - 그 식당에서 먹으려면 예약을 미리 해야 해요.
+        - 그 식당에서 먹으려면 미리 예약을 해야 해요.
+        - 그 집에서 먹으려면 미리 예약해야 해요.
+    known_wrong:
+      - answer: 그 식당에서 먹으면 미리 예약해야 해요.
+        feedback_vi: 먹으면 là "ăn rồi thì…". Muốn nói mục đích dùng 먹으려면.
+        error_tag: condition_vs_purpose
+      - answer: 그 식당에서 먹으려면 미리 예약했어요.
+        feedback_vi: Câu nói điều cần làm, nên kết bằng -아야 해요 - 예약해야 해요.
+        error_tag: ryeomyeon_ending
+    explanation:
+      vi: Mục đích (ăn ở quán đó) → 먹으려면; điều cần làm → 미리 예약해야 해요. 미리 là "trước, sẵn".
+    display_answer: 그 식당에서 먹으려면 미리 예약해야 해요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:conditions-mcq-notice
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:sincheonghada
+    prompt:
+      stem: "Đọc thông báo và chọn câu đúng. [안내] 외국인 학생 한국어 말하기 대회 - 대회에 참가하려면 10월 20일까지 이메일로 신청서를 보내 주십시오. 신청서는 학교 홈페이지에서 받을 수 있습니다. 마감 후에는 신청할 수 없습니다."
+      stem_lang: vi
+      options:
+        - { id: r5j, text: 대회에 나가려면 이메일로 신청서를 보내야 한다., lang: ko }
+        - { id: c9t, text: 신청서는 학교 사무실에서 받아야 한다., lang: ko }
+        - { id: g3m, text: 10월 20일이 지나도 신청할 수 있다., lang: ko }
+        - { id: u7v, text: 대회에 나가려면 전화로 신청해야 한다., lang: ko }
+    answer:
+      correct_option_id: r5j
+    explanation:
+      vi: Thông báo nói 참가하려면 … 이메일로 신청서를 보내 주십시오 - muốn tham gia thì gửi đơn qua email. Đơn lấy trên trang web, và sau hạn chót (마감 후) thì không đăng ký được.
+    display_answer: 대회에 나가려면 이메일로 신청서를 보내야 한다.
+
+  - key: ko:exercise:conditions-mcq-encourage
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-deorado
+    prompt:
+      stem: Bạn của bạn lo sẽ trượt kỳ thi TOPIK. Bạn muốn động viên "Lỡ có trượt thì cũng đừng thất vọng". Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: s8b, text: 시험에 떨어지더라도 실망하지 마세요., lang: ko }
+        - { id: x1h, text: 시험에 떨어져서 실망하지 마세요., lang: ko }
+        - { id: d4f, text: 시험에 떨어지면 실망하세요., lang: ko }
+        - { id: n6c, text: 시험에 떨어지니까 실망하지 마세요., lang: ko }
+    answer:
+      correct_option_id: s8b
+    explanation:
+      vi: Giả định "lỡ có trượt" + lời khuyên → -더라도. 떨어져서 là "vì trượt", 떨어지면 실망하세요 là "trượt thì hãy thất vọng", 떨어지니까 lại khẳng định bạn sẽ trượt.
+    display_answer: 시험에 떨어지더라도 실망하지 마세요.
+
+  - key: ko:exercise:conditions-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:magam
+    prompt:
+      source_text: 신청 마감은 이번 주 금요일입니다. 늦으면 신청할 수 없습니다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hạn đăng ký là thứ Sáu tuần này. Nếu muộn thì không đăng ký được.
+        - Hạn đăng ký là thứ Sáu tuần này. Nếu muộn sẽ không thể đăng ký.
+        - Hạn đăng ký là thứ Sáu tuần này. Nếu trễ thì không thể đăng ký.
+        - Hạn đăng ký là thứ Sáu tuần này. Nếu trễ thì không đăng ký được.
+        - Hạn chót đăng ký là thứ Sáu tuần này. Nếu muộn thì không đăng ký được.
+        - Hạn chót đăng ký là thứ Sáu tuần này. Nếu muộn sẽ không thể đăng ký.
+        - Hạn đăng ký là thứ Sáu tuần này. Muộn thì không đăng ký được.
+        - Hạn đăng ký là thứ 6 tuần này. Nếu muộn thì không đăng ký được.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hạn đăng ký là thứ Sáu tuần này. Dù muộn vẫn đăng ký được.
+        feedback_vi: 늦으면 là "nếu muộn", và 신청할 수 없습니다 là "không thể đăng ký".
+        error_tag: myeon_vs_ado
+      - answer: Hạn đăng ký là thứ Năm tuần này. Nếu muộn thì không đăng ký được.
+        feedback_vi: 금요일 là thứ Sáu; thứ Năm là 목요일.
+        error_tag: weekday
+    explanation:
+      vi: 신청 마감 = hạn đăng ký; 늦으면 = nếu muộn; -ㄹ 수 없습니다 = không thể (văn phong thông báo).
+    display_answer: Hạn đăng ký là thứ Sáu tuần này. Nếu muộn thì không đăng ký được.
+
+  - key: ko:exercise:conditions-translate-mom
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:amuri
+    prompt:
+      source_text: Dù bận đến mấy tôi vẫn gọi điện cho mẹ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 아무리 바빠도 엄마한테 전화해요.
+        - 아무리 바빠도 엄마에게 전화해요.
+        - 아무리 바빠도 어머니께 전화해요.
+        - 아무리 바빠도 어머니한테 전화해요.
+        - 아무리 바빠도 어머니에게 전화해요.
+        - 저는 아무리 바빠도 엄마한테 전화해요.
+        - 저는 아무리 바빠도 어머니께 전화해요.
+        - 아무리 바빠도 엄마한테 전화를 해요.
+    known_wrong:
+      - answer: 아무리 바빠서 엄마한테 전화해요.
+        feedback_vi: 아무리 đi với -아도/어도 - 바빠도.
+        error_tag: amuri_ado
+      - answer: 아무리 바쁘면 엄마한테 전화해요.
+        feedback_vi: 바쁘면 là "nếu bận". "Dù bận đến mấy" là 아무리 바빠도.
+        error_tag: myeon_vs_ado
+      - answer: 아무리 바빠도 하지만 엄마한테 전화해요.
+        feedback_vi: -아도 đã mang ý "nhưng vẫn"; bỏ 하지만.
+        error_tag: double_concession_connector
+    explanation:
+      vi: Dù… đến mấy = 아무리 + -아도/어도; 바쁘다 → 바빠도 (ㅡ rơi). Gọi cho ai - N한테/에게 전화해요; với mẹ có thể dùng 어머니께 cho kính trọng.
+    display_answer: 아무리 바빠도 엄마한테 전화해요.

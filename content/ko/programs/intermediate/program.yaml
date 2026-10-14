@@ -1,0 +1,18 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+key: ko:program:intermediate
+language: ko
+title:
+  vi: Tiếng Hàn trung cấp (TOPIK 3-4)
+description:
+  vi: Lý do, điều kiện, tường thuật gián tiếp, công việc và các chủ đề xã hội quen thuộc (TOPIK 3-4). Nội dung demo, chưa qua kiểm duyệt.
+kind: core
+goal_types: []
+level_from: topik3
+level_to: topik4
+order_index: 3

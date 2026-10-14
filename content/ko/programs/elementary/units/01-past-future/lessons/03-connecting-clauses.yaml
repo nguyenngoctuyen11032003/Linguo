@@ -1,0 +1,411 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:connecting-clauses
+order_index: 3
+level: topik2
+title:
+  vi: Nối câu với -고, -지만 và -아서/어서
+objectives:
+  - vi: Nối hai việc bằng -고 (và / rồi) và hai ý trái ngược bằng -지만 (nhưng).
+  - vi: Dùng -아서/어서 khi việc thứ hai gắn với việc thứ nhất - 가서 만나요, 사서 먹어요.
+  - vi: Đặt thì quá khứ đúng chỗ khi nối câu và dùng 그리고, 하지만 ở đầu câu.
+estimated_minutes: 18
+skills: [grammar, vocabulary, reading, writing]
+prerequisites: [ko:lesson:future-plans]
+items:
+  - item: ko:item:gram-go-and
+  - item: ko:item:gram-jiman
+  - item: ko:item:gram-aseo-sequence
+  - item: ko:item:sada
+  - item: ko:item:cheongsohada
+  - item: ko:item:ssitda
+  - item: ko:item:kape
+  - item: ko:item:gongwon
+  - item: ko:item:sanchaekhada
+  - item: ko:item:geurigo
+  - item: ko:item:hajiman
+  - item: ko:item:verb-mannada
+    role: reuse
+  - item: ko:item:verb-gada
+    role: reuse
+  - item: ko:item:yeonghwa
+    role: reuse
+  - item: ko:item:keopi
+    role: reuse
+  - item: ko:item:bissayo
+    role: reuse
+  - item: ko:item:masisseoyo
+    role: reuse
+  - item: ko:item:gimbap
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được câu dài và tự nhiên hơn như "Tôi đến quán cà phê gặp bạn rồi cùng xem phim" thay vì nhiều câu ngắn rời nhau.
+  - type: explain
+    text:
+      vi: -고 gắn thẳng vào thân động từ hoặc tính từ, nghĩa là "và" hoặc "rồi" - 밥을 먹고 학교에 가요. Không cần để ý patchim, và không chia -아/어 trước nó.
+  - type: explain
+    text:
+      vi: -지만 nghĩa là "nhưng", gắn thẳng vào thân - 비싸지만 맛있어요. Nếu vế trước là quá khứ thì gắn vào -았/었 - 갔지만, 먹었지만.
+  - type: explain
+    text:
+      vi: -아서/어서 chia giống -아요/-어요, chỉ thay 요 bằng 서 - 가요 → 가서, 사요 → 사서. Dùng khi việc thứ hai làm ở chỗ vừa đến hoặc với người/vật vừa nói - 카페에 가서 커피를 마셔요 (uống ở quán đó).
+  - type: explain
+    text:
+      vi: Với -고 và -아서, thì quá khứ chỉ đặt ở động từ cuối câu - 친구를 만나서 영화를 봤어요. Tiếng Việt cũng chỉ cần một chữ "đã" cho cả câu.
+  - type: deep_explain
+    text:
+      vi: So sánh - 학교에 가고 공부해요 là hai việc rời (đi học, và học bài - có thể ở nơi khác), còn 학교에 가서 공부해요 là "đến trường rồi học ở đó". Tương tự 김밥을 사서 먹어요 là ăn chính cuộn kimbap vừa mua. Khi muốn tách thành hai câu, dùng 그리고 (và, rồi) hoặc 하지만 (nhưng) ở đầu câu thứ hai.
+  - type: example
+    target: 손을 씻고 밥을 먹어요.
+    target_lang: ko
+    translation:
+      vi: Tôi rửa tay rồi ăn cơm.
+    note:
+      vi: Hai việc nối tiếp, việc sau không "làm trên" việc trước - dùng -고. 씻고 đọc [씯꼬].
+  - type: example
+    target: 이 카페는 비싸지만 커피가 맛있어요.
+    target_lang: ko
+    translation:
+      vi: Quán cà phê này đắt nhưng cà phê ngon.
+    note:
+      vi: Hai ý trái ngược (đắt ↔ ngon) nối bằng -지만.
+  - type: example
+    target: 친구를 만나서 같이 영화를 봤어요.
+    target_lang: ko
+    translation:
+      vi: Tôi gặp bạn rồi cùng bạn xem phim.
+    note:
+      vi: Xem phim cùng người vừa gặp nên dùng -아서. Quá khứ chỉ ở 봤어요.
+  - type: example
+    target: 주말에 방을 청소했어요. 그리고 공원에서 산책했어요.
+    target_lang: ko
+    translation:
+      vi: Cuối tuần tôi dọn phòng. Rồi tôi đi dạo ở công viên.
+    note:
+      vi: 그리고 đứng đầu câu thứ hai; có thể gộp thành 청소하고 공원에서 산책했어요.
+  - type: common_mistake
+    wrong: 학교에 가고 공부해요.
+    right: 학교에 가서 공부해요.
+    target_lang: ko
+    note:
+      vi: Muốn nói "đến trường rồi học ở đó", dùng -아서. Người Việt hay dịch "rồi" thành -고 cho mọi trường hợp.
+  - type: common_mistake
+    wrong: 카페에 갔어서 친구를 만났어요.
+    right: 카페에 가서 친구를 만났어요.
+    target_lang: ko
+    note:
+      vi: Không gắn quá khứ vào -아서/어서. Thì của cả câu do động từ cuối 만났어요 quyết định.
+  - type: common_mistake
+    wrong: 밥을 먹어고 학교에 가요.
+    right: 밥을 먹고 학교에 가요.
+    target_lang: ko
+    note:
+      vi: -고 gắn thẳng vào thân 먹, không chia 먹어 trước. Chỉ -아서/어서 mới cần chia.
+  - type: common_mistake
+    wrong: 비싸요지만 맛있어요.
+    right: 비싸지만 맛있어요.
+    target_lang: ko
+    note:
+      vi: -지만 gắn vào thân 비싸, không gắn sau 요. Dạng 요 chỉ dùng ở cuối câu.
+  - type: summary
+    points:
+      - vi: Thân + 고 - và / rồi (먹고, 씻고, 비싸고).
+      - vi: Thân + 지만 - nhưng; quá khứ - 갔지만, 먹었지만.
+      - vi: -아서/어서 - làm việc sau ở chỗ đó / với người, vật đó (가서, 만나서, 사서); không gắn quá khứ.
+      - vi: 그리고 và · 하지만 nhưng (đầu câu) · 사다 mua · 청소하다 dọn dẹp · 씻다 rửa · 카페 · 공원 · 산책하다 đi dạo.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:pf-conn-mcq-go
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-go-and
+    prompt:
+      stem: 'Câu nào nghĩa là "Tôi ăn cơm rồi đi học"?'
+      stem_lang: vi
+      options:
+        - { id: w5h, text: 밥을 먹고 학교에 가요., lang: ko }
+        - { id: j2n, text: 밥을 먹어고 학교에 가요., lang: ko }
+        - { id: u8c, text: 밥을 먹지만 학교에 가요., lang: ko }
+        - { id: p3f, text: 밥을 먹으러 학교에 가요., lang: ko }
+    answer:
+      correct_option_id: w5h
+    explanation:
+      vi: -고 gắn thẳng vào thân 먹 - 먹고, nối hai việc theo thứ tự. 먹지만 là "nhưng"; 먹으러 là "để ăn" (đi học để ăn).
+    display_answer: 밥을 먹고 학교에 가요.
+
+  - key: ko:exercise:pf-conn-listen-cafe
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-aseo-sequence
+    prompt:
+      audio_asset_id: null
+      fallback_text: 카페에 가서 커피를 마셨어요.
+      options:
+        - { id: x2b, text: Tôi đã đến quán cà phê và uống cà phê ở đó., lang: vi }
+        - { id: f6r, text: Tôi uống cà phê rồi mới đến quán., lang: vi }
+        - { id: k9m, text: Tôi sẽ đến quán cà phê uống cà phê., lang: vi }
+        - { id: e4t, text: Tôi đến quán cà phê nhưng không uống cà phê., lang: vi }
+    answer:
+      correct_option_id: x2b
+    explanation:
+      vi: 가서 nối việc "đến quán" với việc "uống cà phê" ở chính quán đó. Quá khứ 마셨어요 ở cuối áp dụng cho cả câu.
+    display_answer: Tôi đã đến quán cà phê và uống cà phê ở đó.
+
+  - key: ko:exercise:pf-conn-fill-jiman
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-jiman
+    prompt:
+      template: "Quán này đắt nhưng ngon. - 이 식당은 {{b1}} 맛있어요."
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - 비싸다 (đắt) + "nhưng".
+        - Gắn -지만 vào thân 비싸.
+    answer:
+      blanks:
+        b1: [비싸지만]
+    known_wrong:
+      - answer: 비싸고
+        feedback_vi: -고 là "và", không thể hiện ý trái ngược. "Nhưng" là -지만 - 비싸지만.
+        error_tag: connector_choice
+      - answer: 비싸요지만
+        feedback_vi: -지만 gắn vào thân, không gắn sau 요 - 비싸지만.
+        error_tag: connector_form
+      - answer: 비싸서
+        feedback_vi: -아서 không mang nghĩa "nhưng". Dùng -지만 - 비싸지만.
+        error_tag: connector_choice
+    explanation:
+      vi: Đắt và ngon là hai ý trái ngược, nên nối bằng -지만 gắn vào thân 비싸 - 비싸지만.
+    display_answer: 이 식당은 비싸지만 맛있어요.
+
+  - key: ko:exercise:pf-conn-mcq-gaseo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-aseo-sequence
+    prompt:
+      stem: 'Câu nào nghĩa là "Tôi đến trường rồi học ở đó"?'
+      stem_lang: vi
+      options:
+        - { id: c7q, text: 학교에 가서 공부해요., lang: ko }
+        - { id: g1w, text: 학교에 가고 공부해요., lang: ko }
+        - { id: o4z, text: 학교에 갔어서 공부해요., lang: ko }
+        - { id: v8l, text: 학교에 가지만 공부해요., lang: ko }
+    answer:
+      correct_option_id: c7q
+    explanation:
+      vi: Học "ở đó" (ở trường vừa đến) nên dùng -아서 - 가서. 가고 cho cảm giác hai việc rời; 갔어서 sai vì không gắn quá khứ vào -아서.
+    display_answer: 학교에 가서 공부해요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:pf-conn-fill-mannaseo
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:verb-mannada
+    prompt:
+      template: "Tôi gặp bạn rồi cùng bạn xem phim. - 친구를 {{b1}} 영화를 봤어요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [만나서]
+    known_wrong:
+      - answer: 만났어서
+        feedback_vi: Không gắn quá khứ vào -아서. Quá khứ chỉ ở 봤어요 cuối câu - 만나서.
+        error_tag: aseo_past
+      - answer: 만나고
+        feedback_vi: Xem phim cùng người vừa gặp nên dùng -아서 - 만나서. -고 cho cảm giác hai việc tách rời.
+        error_tag: aseo_vs_go
+      - answer: 만나아서
+        feedback_vi: 만나 không có patchim nên ㅏ + 아 gộp lại - 만나서.
+        error_tag: verb_conjugation
+    explanation:
+      vi: 만나요 → bỏ 요, thêm 서 → 만나서. Việc xem phim làm cùng người bạn vừa gặp, nên -아서 là tự nhiên nhất.
+    display_answer: 친구를 만나서 영화를 봤어요.
+
+  - key: ko:exercise:pf-conn-fill-ssitgo
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ssitda
+    prompt:
+      template: "Tôi rửa tay rồi ăn cơm. - 손을 {{b1}} 밥을 먹어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [씻고]
+    known_wrong:
+      - answer: 씻어고
+        feedback_vi: -고 gắn thẳng vào thân 씻 - 씻고.
+        error_tag: connector_form
+      - answer: 싯고
+        feedback_vi: 씻다 viết bằng ㅆ đôi - 씻고.
+        error_tag: spelling
+      - answer: 씻지만
+        feedback_vi: -지만 là "nhưng". Hai việc nối tiếp dùng -고.
+        error_tag: connector_choice
+    explanation:
+      vi: Rửa tay rồi ăn là hai việc theo thứ tự, việc sau không làm "trên" việc trước, nên dùng -고 gắn vào thân - 씻고 [씯꼬].
+    display_answer: 손을 씻고 밥을 먹어요.
+
+  - key: ko:exercise:pf-conn-translate-gimbap
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:sada
+    prompt:
+      source_text: Tôi đã mua kimbap rồi ăn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 김밥을 사서 먹었어요.
+        - 저는 김밥을 사서 먹었어요.
+        - 전 김밥을 사서 먹었어요.
+        - 김밥 사서 먹었어요.
+        - 제가 김밥을 사서 먹었어요.
+    known_wrong:
+      - answer: 김밥을 샀어서 먹었어요.
+        feedback_vi: Không gắn quá khứ vào -아서. Chỉ động từ cuối mang quá khứ - 사서 먹었어요.
+        error_tag: aseo_past
+      - answer: 김밥을 사고 먹었어요.
+        feedback_vi: Ăn chính cuộn kimbap vừa mua nên dùng -아서 - 사서 먹었어요.
+        error_tag: aseo_vs_go
+      - answer: 김밥을 사서 먹어요.
+        feedback_vi: Câu có "đã" nên động từ cuối phải ở quá khứ - 먹었어요.
+        error_tag: tense_past
+      - answer: gimbabeul saseo meogeosseoyo
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Mua rồi ăn chính món đó - dùng -아서, 사요 → 사서. Quá khứ đặt ở 먹었어요 cuối câu.
+    display_answer: 김밥을 사서 먹었어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:pf-conn-translate-weekend
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:geurigo
+    prompt:
+      source_text: 주말에 방을 청소했어요. 그리고 공원에서 산책했어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cuối tuần tôi đã dọn phòng. Rồi tôi đi dạo ở công viên.
+        - Cuối tuần tôi đã dọn phòng. Sau đó tôi đi dạo ở công viên.
+        - Cuối tuần tôi đã dọn phòng. Và tôi đã đi dạo ở công viên.
+        - Cuối tuần tôi dọn phòng. Rồi tôi đi dạo ở công viên.
+        - Cuối tuần tôi đã dọn phòng, rồi đi dạo ở công viên.
+        - Cuối tuần tôi đã dọn phòng, sau đó đi dạo ở công viên.
+        - Cuối tuần tôi đã dọn dẹp phòng. Rồi tôi đi dạo ở công viên.
+        - Cuối tuần tôi dọn phòng rồi đi dạo trong công viên.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cuối tuần tôi đã dọn phòng. Nhưng tôi đi dạo ở công viên.
+        feedback_vi: 그리고 là "và, rồi"; "nhưng" là 하지만.
+        error_tag: connector_choice
+      - answer: Cuối tuần tôi sẽ dọn phòng. Rồi tôi đi dạo ở công viên.
+        feedback_vi: 청소했어요 và 산책했어요 là quá khứ, không phải tương lai.
+        error_tag: tense_past
+    explanation:
+      vi: 청소했어요 là "đã dọn dẹp", 그리고 nối sang việc tiếp theo, 공원에서 산책했어요 là "đi dạo ở công viên". Tiếng Việt tự nhiên dùng "rồi" hoặc "sau đó".
+    display_answer: Cuối tuần tôi đã dọn phòng. Rồi tôi đi dạo ở công viên.
+
+  - key: ko:exercise:pf-conn-order-coffee
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-jiman
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Hàn: "Cà phê đắt nhưng ngon."'
+      tokens:
+        - { id: t-masisseoyo, text: 맛있어요 }
+        - { id: t-bissajiman, text: 비싸지만 }
+        - { id: t-bissago, text: 비싸고 }
+        - { id: t-keopineun, text: 커피는 }
+        - { id: t-keopireul, text: 커피를 }
+    answer:
+      orders:
+        - [t-keopineun, t-bissajiman, t-masisseoyo]
+    explanation:
+      vi: Chủ đề 커피는 đứng đầu, hai ý trái ngược "đắt" và "ngon" nối bằng 비싸지만. 비싸고 là "đắt và…", không có nghĩa "nhưng".
+    display_answer: 커피는 비싸지만 맛있어요.
+
+  - key: ko:exercise:pf-conn-mcq-park
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gongwon
+    prompt:
+      stem: 'Bạn muốn viết: "Tôi đã đến công viên nhưng bạn tôi không đến." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: s3j, text: 공원에 갔지만 친구는 안 왔어요., lang: ko }
+        - { id: m7y, text: 공원에 갔하지만 친구는 안 왔어요., lang: ko }
+        - { id: h1d, text: 공원에 가서 친구는 안 왔어요., lang: ko }
+        - { id: z5o, text: 공원에 갔어서 친구는 안 왔어요., lang: ko }
+    answer:
+      correct_option_id: s3j
+    explanation:
+      vi: Hai ý trái ngược nối bằng -지만, và -지만 giữ được quá khứ - 갔지만. 하지만 chỉ đứng đầu câu, không gắn vào động từ; -아서 không mang nghĩa "nhưng".
+    display_answer: 공원에 갔지만 친구는 안 왔어요.
+
+  - key: ko:exercise:pf-conn-translate-cafe-friend
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:kape
+    prompt:
+      source_text: Hôm qua tôi đã đến quán cà phê gặp bạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 어제 카페에 가서 친구를 만났어요.
+        - 저는 어제 카페에 가서 친구를 만났어요.
+        - 전 어제 카페에 가서 친구를 만났어요.
+        - 어제 저는 카페에 가서 친구를 만났어요.
+        - 어제 카페에 가서 친구 만났어요.
+        - 어제 카페에서 친구를 만났어요.
+    known_wrong:
+      - answer: 어제 카페에 갔어서 친구를 만났어요.
+        feedback_vi: Không gắn quá khứ vào -아서 - 가서 친구를 만났어요.
+        error_tag: aseo_past
+      - answer: 어제 카페에 가고 친구를 만났어요.
+        feedback_vi: Gặp bạn ở chính quán vừa đến nên dùng -아서 - 가서.
+        error_tag: aseo_vs_go
+      - answer: 어제 카페에 가서 친구를 만나요.
+        feedback_vi: Có 어제 nên động từ cuối phải ở quá khứ - 만났어요.
+        error_tag: tense_past
+      - answer: 어제 카페에 가서 친구가 만났어요.
+        feedback_vi: Người được gặp đi với 을/를 - 친구를 만났어요.
+        error_tag: object_particle
+    explanation:
+      vi: Đến quán rồi gặp bạn ở đó - 카페에 가서 친구를 만났어요. Nói gọn 카페에서 친구를 만났어요 (gặp bạn ở quán) cũng đúng.
+    display_answer: 어제 카페에 가서 친구를 만났어요.

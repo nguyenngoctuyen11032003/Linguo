@@ -1,0 +1,18 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+key: ko:program:advanced
+language: ko
+title:
+  vi: Tiếng Hàn cao cấp (TOPIK 5-6)
+description:
+  vi: Văn viết -ㄴ다, cấu trúc trang trọng, tin tức, kinh tế, xã hội và học thuật (TOPIK 5-6). Nội dung demo, chưa qua kiểm duyệt.
+kind: core
+goal_types: []
+level_from: topik5
+level_to: topik6
+order_index: 4

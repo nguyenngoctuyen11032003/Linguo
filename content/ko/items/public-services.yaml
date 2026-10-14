@@ -1,0 +1,1107 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Dịch vụ công & đi lại" (TOPIK 2). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+# 은행, 병원, 가다, 먹다, 쓰다, 앉다, 주세요… đã có ở chương trình Hangul cơ bản, chỉ dùng lại (role: reuse).
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ================= bài 1: kính ngữ -(으)세요 =================
+  - key: ko:item:gram-euseyo-request
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(으)세요 (đề nghị)
+      romanization: -(eu)seyo
+      pos: đuôi câu đề nghị lịch sự
+    back:
+      meaning:
+        vi: Mời / xin hãy (làm gì) - lời đề nghị lịch sự với người nghe. Thân không có patchim + 세요, có patchim + 으세요; thân có patchim ㄹ thì bỏ ㄹ rồi + 세요.
+      examples:
+        - target: 여기 앉으세요.
+          translation:
+            vi: Mời bạn ngồi đây.
+        - target: 잠깐만 기다리세요.
+          translation:
+            vi: Xin đợi một chút.
+        - target: 서울에 사세요? (살다 → 사세요)
+          translation:
+            vi: Anh sống ở Seoul ạ?
+      pronunciation_note:
+        vi: Thân có patchim thì nối âm - 앉으세요 [안즈세요], 읽으세요 [일그세요].
+      confusion:
+        vi: Đề nghị (앉으세요 - mời ngồi) và câu kính ngữ thường (어디 가세요? - anh đi đâu ạ?) có cùng hình thức; ngữ cảnh và ngữ điệu cho biết nghĩa nào.
+
+  - key: ko:item:gram-euseyo-honorific
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(으)세요 (kính ngữ hiện tại)
+      romanization: -(eu)seyo
+      pos: đuôi câu kính ngữ
+    back:
+      meaning:
+        vi: Đuôi hiện tại tôn trọng người làm hành động (người lớn tuổi, khách hàng, người lạ). Chỉ dùng cho người khác, không bao giờ dùng cho chính mình.
+      examples:
+        - target: 어디 가세요? - 은행에 가요.
+          translation:
+            vi: Bác đi đâu ạ? - Tôi đi ngân hàng.
+        - target: 선생님이 책을 읽으세요.
+          translation:
+            vi: Thầy giáo đang đọc sách.
+      pronunciation_note:
+        vi: Câu hỏi lên giọng ở 요 - 가세요↗; câu đề nghị xuống giọng.
+      confusion:
+        vi: Hỏi người khác dùng 가세요?, tự trả lời về mình dùng 가요 - không nói 제가 가세요.
+
+  - key: ko:item:phrase-anjeuseyo
+    type: phrase
+    level: topik2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: 앉으세요
+      romanization: anjeuseyo
+      pos: cụm câu
+    back:
+      meaning:
+        vi: Mời ngồi.
+      examples:
+        - target: 이쪽으로 앉으세요.
+          translation:
+            vi: Mời anh ngồi phía này.
+      pronunciation_note:
+        vi: Đọc [안즈세요] - ㄵ tách ra, ㅈ nối sang 으.
+      confusion:
+        vi: Không viết 안즈세요 hay 앉세요; 앉다 có patchim nên cần 으.
+
+  - key: ko:item:phrase-eodi-gaseyo
+    type: phrase
+    level: topik2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: 어디 가세요?
+      romanization: eodi gaseyo?
+      pos: cụm câu
+    back:
+      meaning:
+        vi: Anh/chị/bác đi đâu ạ? (hỏi lịch sự)
+      examples:
+        - target: 할머니, 어디 가세요?
+          translation:
+            vi: Bà ơi, bà đi đâu ạ?
+      pronunciation_note:
+        vi: Lên giọng ở cuối câu như câu hỏi tiếng Việt.
+
+  - key: ko:item:verb-gidarida
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 기다리다
+      romanization: gidarida
+      pos: động từ
+    back:
+      meaning:
+        vi: chờ, đợi
+      examples:
+        - target: 잠깐만 기다리세요.
+          translation:
+            vi: Xin đợi một chút.
+        - target: 친구를 기다려요.
+          translation:
+            vi: Tôi đợi bạn.
+      pronunciation_note:
+        vi: 기다려요 - ㅣ + 어 gộp thành ㅕ.
+      confusion:
+        vi: Người đợi đi với 을/를 - 친구를 기다려요, không phải 친구에 기다려요.
+
+  - key: ko:item:phrase-jamkkanman
+    type: phrase
+    level: topik2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: 잠깐만요
+      romanization: jamkkanmanyo
+      pos: cụm câu
+    back:
+      meaning:
+        vi: Chờ một chút ạ / Xin lỗi cho qua một chút.
+      examples:
+        - target: 잠깐만요, 확인해 볼게요.
+          translation:
+            vi: Chờ một chút, tôi kiểm tra đã.
+      pronunciation_note:
+        vi: Đọc [잠깐만뇨] - ㄴ chen vào trước 요 khi nói tự nhiên; ㄲ căng, không bật hơi.
+
+  - key: ko:item:verb-deusida
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 드시다
+      romanization: deusida
+      pos: động từ kính ngữ
+    back:
+      meaning:
+        vi: ăn, uống (kính ngữ của 먹다 và 마시다)
+      examples:
+        - target: 많이 드세요.
+          translation:
+            vi: Mời bác ăn nhiều vào ạ.
+        - target: 할머니가 차를 드세요.
+          translation:
+            vi: Bà đang uống trà.
+      pronunciation_note:
+        vi: ㅡ là "ư" - 드 đọc "tư" nhẹ, không phải "tu".
+      confusion:
+        vi: Không nói 먹으세요 với người lớn; dùng 드세요. Khi nói về mình vẫn dùng 먹어요.
+
+  - key: ko:item:verb-jumusida
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 주무시다
+      romanization: jumusida
+      pos: động từ kính ngữ
+    back:
+      meaning:
+        vi: ngủ (kính ngữ của 자다)
+      examples:
+        - target: 안녕히 주무세요.
+          translation:
+            vi: Chúc bố mẹ ngủ ngon ạ.
+        - target: 할아버지가 방에서 주무세요.
+          translation:
+            vi: Ông đang ngủ trong phòng.
+      confusion:
+        vi: 자세요 nghe thiếu tôn trọng với người lớn; với mình chỉ nói 자요.
+
+  - key: ko:item:verb-gyesida
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 계시다
+      romanization: gyesida
+      pos: động từ kính ngữ
+    back:
+      meaning:
+        vi: ở, có mặt (kính ngữ của 있다 khi nói về người)
+      examples:
+        - target: 김 선생님 계세요?
+          translation:
+            vi: Thầy Kim có ở đây không ạ?
+        - target: 할머니가 집에 계세요.
+          translation:
+            vi: Bà đang ở nhà.
+      pronunciation_note:
+        vi: Thực tế thường đọc [게세요]; ㅖ sau phụ âm nghe như ㅔ.
+      confusion:
+        vi: 계세요 dùng khi người lớn "ở" đâu đó. Khi người lớn "có" đồ vật thì dùng 있으세요 - 시간 있으세요?
+
+  - key: ko:item:halmeoni
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 할머니
+      romanization: halmeoni
+      pos: danh từ
+    back:
+      meaning:
+        vi: bà; cũng dùng để gọi lịch sự một cụ bà
+      examples:
+        - target: 할머니, 여기 앉으세요.
+          translation:
+            vi: Bà ơi, bà ngồi đây ạ.
+      pronunciation_note:
+        vi: ㄹ cuối 할 nối sang ㅁ - đọc liền "hal-mơ-ni".
+
+  - key: ko:item:gram-honorific-subject
+    type: grammar_point
+    level: topik2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: 께서 · 드시다 · 주무시다 · 계시다
+      romanization: kkeseo
+      pos: kính ngữ đặc biệt
+    back:
+      meaning:
+        vi: Một số động từ có từ kính ngữ riêng thay cho -(으)세요 - 먹다/마시다 → 드세요, 자다 → 주무세요, 있다 (ở) → 계세요. 께서 là dạng kính ngữ của 이/가, gặp nhiều trong văn viết.
+      examples:
+        - target: 아버지께서 신문을 읽으세요.
+          translation:
+            vi: Bố đang đọc báo.
+        - target: 할머니께서 주무세요.
+          translation:
+            vi: Bà đang ngủ.
+      confusion:
+        vi: Không ghép 먹으세요 hay 자세요 với người lớn; dùng từ kính ngữ riêng.
+
+  # ================= bài 2: ngân hàng, bưu điện =================
+  - key: ko:item:gram-a-eo-juseyo
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-아/어 주세요
+      romanization: -a/eo juseyo
+      pos: đuôi nhờ vả
+    back:
+      meaning:
+        vi: Làm (gì) giúp tôi. Ghép dạng -아/어 của động từ với 주세요 - 환전하다 → 환전해 주세요, 보내다 → 보내 주세요, 쓰다 → 써 주세요.
+      examples:
+        - target: 이 돈을 달러로 바꿔 주세요.
+          translation:
+            vi: Đổi số tiền này sang đô la giúp tôi.
+        - target: 천천히 말해 주세요.
+          translation:
+            vi: Xin nói chậm giúp tôi.
+      confusion:
+        vi: N 주세요 = "cho tôi cái N" (물 주세요); V-아/어 주세요 = "làm giúp tôi" (보내 주세요). Với hành động thì phải chia động từ, không nói 송금 주세요.
+
+  - key: ko:item:gram-l-su-itda
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(으)ㄹ 수 있어요 / 없어요
+      romanization: -(eu)l su isseoyo / eopseoyo
+      pos: khả năng
+    back:
+      meaning:
+        vi: Có thể / không thể (làm gì). Thân không có patchim + ㄹ 수, có patchim + 을 수; thân có ㄹ giữ nguyên - 만들 수 있어요.
+      examples:
+        - target: 여기에서 환전할 수 있어요?
+          translation:
+            vi: Ở đây đổi tiền được không?
+        - target: 오늘은 소포를 보낼 수 없어요.
+          translation:
+            vi: Hôm nay không gửi bưu kiện được.
+      pronunciation_note:
+        vi: 수 sau -ㄹ đọc căng - 할 수 [할쑤], 있어요 [이써요].
+      confusion:
+        vi: 수 viết cách ra - 할 수 있어요. Phủ định dùng 수 없어요, không nói 수 안 있어요.
+
+  - key: ko:item:place-ucheguk
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 우체국
+      romanization: ucheguk
+      pos: danh từ
+    back:
+      meaning:
+        vi: bưu điện
+      examples:
+        - target: 우체국에서 소포를 보내요.
+          translation:
+            vi: Tôi gửi bưu kiện ở bưu điện.
+      pronunciation_note:
+        vi: 우체국에서 nối âm thành [우체구게서].
+
+  - key: ko:item:tongjang
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 통장
+      romanization: tongjang
+      pos: danh từ
+    back:
+      meaning:
+        vi: sổ tài khoản ngân hàng; tài khoản
+      examples:
+        - target: 통장을 만들고 싶어요.
+          translation:
+            vi: Tôi muốn mở tài khoản ngân hàng.
+      pronunciation_note:
+        vi: ㅌ bật hơi mạnh như "th" tiếng Việt; ㅈ sau ㅇ đọc nhẹ như "ch".
+
+  - key: ko:item:phrase-tongjang-mandeulda
+    type: phrase
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 통장을 만들다
+      romanization: tongjang-eul mandeulda
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: mở tài khoản ngân hàng (nghĩa đen "làm sổ tài khoản")
+      examples:
+        - target: 외국인도 통장을 만들 수 있어요?
+          translation:
+            vi: Người nước ngoài cũng mở tài khoản được không?
+      pronunciation_note:
+        vi: 통장을 nối âm [통장을]; 만들어요 [만드러요].
+      confusion:
+        vi: Tiếng Việt nói "mở" tài khoản nhưng tiếng Hàn dùng 만들다 (làm); 열다 (mở) không dùng ở đây. 만들다 có ㄹ - 만드세요, 만들 수 있어요.
+
+  - key: ko:item:hwanjeonhada
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 환전하다
+      romanization: hwanjeonhada
+      pos: động từ
+    back:
+      meaning:
+        vi: đổi tiền (ngoại tệ)
+      examples:
+        - target: 베트남 돈을 원으로 환전하고 싶어요.
+          translation:
+            vi: Tôi muốn đổi tiền Việt sang won.
+      pronunciation_note:
+        vi: Khi nói nhanh, ㅎ đầu từ vẫn giữ nhưng nhẹ; 환 đọc gần "hoan".
+      confusion:
+        vi: Đổi sang loại tiền nào dùng (으)로 - 달러로, 원으로.
+
+  - key: ko:item:songgeum
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 송금(하다)
+      romanization: songgeum(hada)
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: (sự) chuyển tiền
+      examples:
+        - target: 베트남으로 송금하고 싶어요.
+          translation:
+            vi: Tôi muốn chuyển tiền về Việt Nam.
+        - target: 송금해 주세요.
+          translation:
+            vi: Chuyển tiền giúp tôi.
+      confusion:
+        vi: Nhờ chuyển tiền phải nói 송금해 주세요, không nói 송금 주세요 (nghe như "cho tôi khoản chuyển tiền").
+
+  - key: ko:item:dalleo
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 달러
+      romanization: dalleo
+      pos: danh từ
+    back:
+      meaning:
+        vi: đô la
+      examples:
+        - target: 백 달러를 원으로 바꿔 주세요.
+          translation:
+            vi: Đổi giúp tôi 100 đô la sang won.
+      pronunciation_note:
+        vi: Hai ㄹ liền nhau đọc như "l" - [달러], không phải "đa-rơ".
+
+  - key: ko:item:yeogwon
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 여권
+      romanization: yeogwon
+      pos: danh từ
+    back:
+      meaning:
+        vi: hộ chiếu
+      examples:
+        - target: 여권을 보여 주세요.
+          translation:
+            vi: Xin cho tôi xem hộ chiếu.
+      pronunciation_note:
+        vi: Đọc căng [여꿘] - ㄱ trong 권 thành ㄲ.
+
+  - key: ko:item:sopo
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 소포
+      romanization: sopo
+      pos: danh từ
+    back:
+      meaning:
+        vi: bưu kiện, gói hàng gửi qua bưu điện
+      examples:
+        - target: 이 소포를 베트남에 보내고 싶어요.
+          translation:
+            vi: Tôi muốn gửi bưu kiện này sang Việt Nam.
+      pronunciation_note:
+        vi: ㅍ bật hơi - 포 đọc gần "pho" có hơi, không phải "bô".
+
+  - key: ko:item:verb-bonaeda
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 보내다
+      romanization: bonaeda
+      pos: động từ
+    back:
+      meaning:
+        vi: gửi
+      examples:
+        - target: 소포를 보내요.
+          translation:
+            vi: Tôi gửi bưu kiện.
+        - target: 이거 보내 주세요.
+          translation:
+            vi: Gửi cái này giúp tôi.
+      pronunciation_note:
+        vi: 보내 + 어요 rút thành 보내요 (ㅐ đã có, không thêm 어).
+      confusion:
+        vi: Gửi đến người dùng 에게/한테, gửi đến nơi dùng 에 - 친구에게 보내요, 베트남에 보내요.
+
+  - key: ko:item:taekbae
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 택배
+      romanization: taekbae
+      pos: danh từ
+    back:
+      meaning:
+        vi: dịch vụ chuyển phát, giao hàng tận nơi; kiện hàng giao tới
+      examples:
+        - target: 택배가 왔어요.
+          translation:
+            vi: Có hàng giao tới rồi.
+        - target: 편의점에서도 택배를 보낼 수 있어요.
+          translation:
+            vi: Ở cửa hàng tiện lợi cũng gửi hàng được.
+      pronunciation_note:
+        vi: Đọc căng [택빼] - ㅂ sau patchim ㄱ thành ㅃ.
+      confusion:
+        vi: 소포 thường gửi ở bưu điện; 택배 là giao hàng tận cửa của các công ty chuyển phát.
+
+  # ================= bài 3: bệnh viện, hiệu thuốc =================
+  - key: ko:item:gram-eu-irregular
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Bất quy tắc ㅡ (아프다 → 아파요)
+      romanization: eu tallak
+      pos: chia động từ
+    back:
+      meaning:
+        vi: Thân kết thúc bằng ㅡ thì ㅡ rơi mất trước -아/어. Nhìn nguyên âm của âm tiết đứng trước - ㅏ/ㅗ thì thêm 아 (아프다 → 아파요, 바쁘다 → 바빠요), còn lại thêm 어 (예쁘다 → 예뻐요); thân một âm tiết thêm 어 (쓰다 → 써요).
+      examples:
+        - target: 머리가 아파요.
+          translation:
+            vi: Tôi đau đầu.
+        - target: 요즘 너무 바빠요.
+          translation:
+            vi: Dạo này tôi bận quá.
+      confusion:
+        vi: Không viết 아프어요 hay 아퍼요; dạng đúng duy nhất là 아파요.
+
+  - key: ko:item:verb-apeuda
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 아프다
+      romanization: apeuda
+      pos: tính từ
+    back:
+      meaning:
+        vi: đau, ốm
+      examples:
+        - target: 배가 아파요.
+          translation:
+            vi: Tôi đau bụng.
+        - target: 어제 많이 아팠어요.
+          translation:
+            vi: Hôm qua tôi ốm nặng.
+      pronunciation_note:
+        vi: ㅍ bật hơi - 파 đọc có hơi như "pha".
+      confusion:
+        vi: Chỗ đau đi với 이/가 - 머리가 아파요 (không dùng 을/를).
+
+  - key: ko:item:body-meori
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 머리
+      romanization: meori
+      pos: danh từ
+    back:
+      meaning:
+        vi: đầu; tóc
+      examples:
+        - target: 머리가 아파요.
+          translation:
+            vi: Tôi đau đầu.
+      pronunciation_note:
+        vi: 머 có ㅓ ("ơ"), không phải 모 ("ô").
+
+  - key: ko:item:body-bae
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 배
+      romanization: bae
+      pos: danh từ
+    back:
+      meaning:
+        vi: bụng
+      examples:
+        - target: 배가 아파요.
+          translation:
+            vi: Tôi đau bụng.
+      confusion:
+        vi: 배 còn có nghĩa "quả lê" và "con thuyền"; trong 배가 아파요 thì chỉ có nghĩa là bụng.
+
+  - key: ko:item:body-mok
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 목
+      romanization: mok
+      pos: danh từ
+    back:
+      meaning:
+        vi: cổ; họng
+      examples:
+        - target: 목이 아파요.
+          translation:
+            vi: Tôi đau họng.
+      pronunciation_note:
+        vi: 목이 nối âm [모기].
+
+  - key: ko:item:phrase-gamgi-geollida
+    type: phrase
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 감기에 걸리다
+      romanization: gamgie geollida
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: bị cảm
+      examples:
+        - target: 감기에 걸렸어요.
+          translation:
+            vi: Tôi bị cảm rồi.
+      pronunciation_note:
+        vi: 걸렸어요 đọc [걸려써요].
+      confusion:
+        vi: Dùng trợ từ 에 - 감기에 걸리다, không dùng 감기를. Tiếng Việt "bị cảm" là trạng thái nên thường nói ở quá khứ 걸렸어요.
+
+  - key: ko:item:yak
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 약
+      romanization: yak
+      pos: danh từ
+    back:
+      meaning:
+        vi: thuốc
+      examples:
+        - target: 감기약 있어요?
+          translation:
+            vi: Có thuốc cảm không ạ?
+      pronunciation_note:
+        vi: 약을 nối âm [야글].
+
+  - key: ko:item:phrase-yageul-meokda
+    type: phrase
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 약을 먹다
+      romanization: yageul meokda
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: uống thuốc
+      examples:
+        - target: 하루에 세 번 약을 먹어야 해요.
+          translation:
+            vi: Phải uống thuốc ngày ba lần.
+      pronunciation_note:
+        vi: 약을 먹어요 đọc [야글 머거요].
+      confusion:
+        vi: Tiếng Việt nói "uống thuốc" nhưng tiếng Hàn dùng 먹다 (ăn) - 약을 먹어요, không nói 약을 마셔요.
+
+  - key: ko:item:place-yakguk
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 약국
+      romanization: yakguk
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiệu thuốc, nhà thuốc
+      examples:
+        - target: 약국은 병원 옆에 있어요.
+          translation:
+            vi: Hiệu thuốc ở cạnh bệnh viện.
+      pronunciation_note:
+        vi: Đọc căng [약꾹] - ㄱ sau patchim ㄱ thành ㄲ.
+
+  - key: ko:item:phrase-yeori-nada
+    type: phrase
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 열이 나다
+      romanization: yeori nada
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: bị sốt
+      examples:
+        - target: 어제부터 열이 나요.
+          translation:
+            vi: Tôi bị sốt từ hôm qua.
+      pronunciation_note:
+        vi: 열이 nối âm [여리].
+      confusion:
+        vi: Tiếng Hàn nói "nhiệt ra" (열이 나요), không dùng 아파요 cho sốt.
+
+  - key: ko:item:gichim
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 기침(을 하다)
+      romanization: gichim(eul hada)
+      pos: danh từ / cụm động từ
+    back:
+      meaning:
+        vi: (bị) ho
+      examples:
+        - target: 기침을 많이 해요.
+          translation:
+            vi: Tôi ho nhiều.
+      pronunciation_note:
+        vi: ㅊ bật hơi - 침 đọc gần "chim" có hơi.
+
+  - key: ko:item:verb-swida
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 쉬다
+      romanization: swida
+      pos: động từ
+    back:
+      meaning:
+        vi: nghỉ, nghỉ ngơi
+      examples:
+        - target: 집에서 푹 쉬세요.
+          translation:
+            vi: Anh hãy nghỉ ngơi thật tốt ở nhà.
+      pronunciation_note:
+        vi: 쉬어요 giữ nguyên hai âm tiết [쉬어요]; ㅟ đọc lướt "uy".
+
+  - key: ko:item:gram-a-eo-ya-haeyo
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-아/어야 해요
+      romanization: -a/eoya haeyo
+      pos: nghĩa vụ
+    back:
+      meaning:
+        vi: Phải (làm gì). Lấy dạng -아/어 của động từ rồi thêm 야 해요 - 먹어야 해요, 가야 해요, 쉬어야 해요.
+      examples:
+        - target: 약을 먹어야 해요.
+          translation:
+            vi: Tôi phải uống thuốc.
+        - target: 병원에 가야 해요.
+          translation:
+            vi: Bạn phải đi bệnh viện.
+      pronunciation_note:
+        vi: 먹어야 nối âm [머거야].
+      confusion:
+        vi: 야 dính liền vào động từ - 가야 해요, không viết 가 야 해요 hay 가해야요. Có thể nói 돼요 thay 해요 (가야 돼요), nghĩa như nhau.
+
+  # ================= bài 4: phương tiện công cộng, hỏi đường =================
+  - key: ko:item:gram-ro-euro-direction
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N(으)로
+      romanization: (eu)ro
+      pos: trợ từ hướng / phương tiện
+    back:
+      meaning:
+        vi: Về phía N (hướng) hoặc bằng N (phương tiện). Không patchim hoặc patchim ㄹ + 로; patchim khác + 으로.
+      examples:
+        - target: 오른쪽으로 가세요.
+          translation:
+            vi: Đi về bên phải.
+        - target: 지하철로 가요.
+          translation:
+            vi: Tôi đi bằng tàu điện ngầm.
+        - target: 버스로 와요.
+          translation:
+            vi: Tôi đến bằng xe buýt.
+      confusion:
+        vi: Patchim ㄹ dùng 로, không dùng 으로 - 지하철로, 서울로. 에 chỉ điểm đến, (으)로 chỉ hướng đi tới.
+
+  - key: ko:item:gram-eumyeon-doeda
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(으)면 돼요
+      romanization: -(eu)myeon dwaeyo
+      pos: chỉ dẫn
+    back:
+      meaning:
+        vi: Chỉ cần (làm gì) là được. Thân không có patchim hoặc có ㄹ + 면, có patchim khác + 으면.
+      examples:
+        - target: 시청역에서 내리면 돼요.
+          translation:
+            vi: Bạn chỉ cần xuống ở ga Tòa thị chính là được.
+        - target: 어디에서 갈아타면 돼요?
+          translation:
+            vi: Tôi đổi tàu ở đâu thì được?
+      pronunciation_note:
+        vi: 돼요 đọc như 되요 [뒈요]; chính tả đúng là 돼요.
+      confusion:
+        vi: Viết 돼요, không viết 되요. -아/어야 해요 là "bắt buộc phải", còn -(으)면 돼요 là "chỉ cần… là xong".
+
+  - key: ko:item:jihacheol
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 지하철
+      romanization: jihacheol
+      pos: danh từ
+    back:
+      meaning:
+        vi: tàu điện ngầm
+      examples:
+        - target: 회사에 지하철로 가요.
+          translation:
+            vi: Tôi đi làm bằng tàu điện ngầm.
+      pronunciation_note:
+        vi: ㅎ giữa hai nguyên âm yếu đi - nói nhanh nghe gần [지아철].
+      confusion:
+        vi: 지하철 có patchim ㄹ nên dùng 로 - 지하철로, không phải 지하철으로.
+
+  - key: ko:item:beoseu
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 버스
+      romanization: beoseu
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe buýt
+      examples:
+        - target: 이 버스가 시청에 가요?
+          translation:
+            vi: Xe buýt này có đi Tòa thị chính không?
+      pronunciation_note:
+        vi: Thường đọc [버쓰]; ㅓ là "ơ", không phải "bu".
+
+  - key: ko:item:yeok
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 역
+      romanization: yeok
+      pos: danh từ
+    back:
+      meaning:
+        vi: ga (tàu điện, tàu hỏa)
+      examples:
+        - target: 서울역에서 내리세요.
+          translation:
+            vi: Xuống ở ga Seoul nhé.
+      pronunciation_note:
+        vi: 역에서 nối âm [여게서]; 서울역 đọc [서울력].
+
+  - key: ko:item:jeongnyujang
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 정류장
+      romanization: jeongnyujang
+      pos: danh từ
+    back:
+      meaning:
+        vi: trạm, bến xe buýt
+      examples:
+        - target: 버스 정류장이 어디에 있어요?
+          translation:
+            vi: Trạm xe buýt ở đâu?
+      pronunciation_note:
+        vi: Đọc [정뉴장] - ㄹ sau patchim ㅇ biến thành ㄴ.
+      confusion:
+        vi: Xe buýt dừng ở 정류장, còn tàu điện ngầm dừng ở 역.
+
+  - key: ko:item:gyotong-kadeu
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 교통카드
+      romanization: gyotong kadeu
+      pos: danh từ
+    back:
+      meaning:
+        vi: thẻ giao thông (thẻ trả tiền tàu xe)
+      examples:
+        - target: 교통카드를 충전해 주세요.
+          translation:
+            vi: Nạp tiền vào thẻ giao thông giúp tôi.
+      pronunciation_note:
+        vi: 카 bật hơi mạnh; 드 có ㅡ ("ư").
+
+  - key: ko:item:verb-tada
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 타다
+      romanization: tada
+      pos: động từ
+    back:
+      meaning:
+        vi: lên, đi (xe, tàu)
+      examples:
+        - target: 2호선을 타세요.
+          translation:
+            vi: Anh hãy đi tuyến số 2.
+      confusion:
+        vi: Phương tiện đi với 을/를 - 버스를 타요 (không phải 버스에 타요 trong câu thông thường).
+
+  - key: ko:item:verb-naerida
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 내리다
+      romanization: naerida
+      pos: động từ
+    back:
+      meaning:
+        vi: xuống (xe, tàu)
+      examples:
+        - target: 다음 역에서 내려요.
+          translation:
+            vi: Tôi xuống ở ga sau.
+      pronunciation_note:
+        vi: 내리 + 어요 gộp thành 내려요.
+      confusion:
+        vi: Nơi xuống dùng 에서 - 시청역에서 내려요.
+
+  - key: ko:item:verb-garatada
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 갈아타다
+      romanization: garatada
+      pos: động từ
+    back:
+      meaning:
+        vi: đổi (tàu, xe), chuyển tuyến
+      examples:
+        - target: 충무로역에서 4호선으로 갈아타세요.
+          translation:
+            vi: Đổi sang tuyến 4 ở ga Chungmuro nhé.
+      pronunciation_note:
+        vi: Nối âm [가라타다] - ㄹ nối sang 아.
+      confusion:
+        vi: Tuyến mới dùng (으)로 - 4호선으로 갈아타요; nơi đổi dùng 에서.
+
+  - key: ko:item:myeot-hoseon
+    type: phrase
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 몇 호선
+      romanization: myeot hoseon
+      pos: cụm từ
+    back:
+      meaning:
+        vi: tuyến (tàu điện ngầm) số mấy
+      examples:
+        - target: 강남역은 몇 호선이에요? - 2호선이에요.
+          translation:
+            vi: Ga Gangnam thuộc tuyến số mấy? - Tuyến số 2.
+      pronunciation_note:
+        vi: Đọc [며토선] - patchim ㅊ gặp ㅎ thành ㅌ. Số tuyến đọc bằng số Hán Hàn - 2호선 [이호선].
+      confusion:
+        vi: Không dùng số thuần Hàn - 2호선 là 이호선, không phải 두 호선.
+
+  - key: ko:item:oreunjjok
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 오른쪽
+      romanization: oreunjjok
+      pos: danh từ
+    back:
+      meaning:
+        vi: bên phải
+      examples:
+        - target: 오른쪽으로 가세요.
+          translation:
+            vi: Đi về bên phải.
+      pronunciation_note:
+        vi: 오른쪽으로 nối âm [오른쪼그로]; ㅉ căng, không bật hơi.
+
+  - key: ko:item:oenjjok
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 왼쪽
+      romanization: oenjjok
+      pos: danh từ
+    back:
+      meaning:
+        vi: bên trái
+      examples:
+        - target: 약국은 왼쪽에 있어요.
+          translation:
+            vi: Hiệu thuốc ở bên trái.
+      pronunciation_note:
+        vi: ㅚ đọc gần [웨] - 왼 nghe như "uên".
+
+  - key: ko:item:phrase-jjuk-gada
+    type: phrase
+    level: topik2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: 쭉 가다
+      romanization: jjuk gada
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi thẳng một mạch
+      examples:
+        - target: 이 길로 쭉 가세요.
+          translation:
+            vi: Cứ đi thẳng đường này.
+      pronunciation_note:
+        vi: ㅉ căng, không bật hơi - đọc dứt khoát.
+      confusion:
+        vi: Có thể nói 똑바로 가세요 (đi thẳng) với nghĩa tương tự.
+
+  # ================= bài 5: ôn tập =================
+  - key: ko:item:phrase-eotteoke-osyeosseoyo
+    type: phrase
+    level: topik2
+    difficulty: 3
+    skill_tags: [listening]
+    front:
+      text: 어떻게 오셨어요?
+      romanization: eotteoke osyeosseoyo?
+      pos: cụm câu
+    back:
+      meaning:
+        vi: Anh/chị cần gì ạ? (nhân viên hỏi khách khi vào ngân hàng, văn phòng, bệnh viện)
+      examples:
+        - target: 어떻게 오셨어요? - 통장을 만들고 싶어요.
+          translation:
+            vi: Anh cần gì ạ? - Tôi muốn mở tài khoản.
+      pronunciation_note:
+        vi: Đọc [어떠케 오셔써요] - patchim ㅎ gặp ㄱ phía sau thành ㅋ bật hơi.
+      confusion:
+        vi: Nghĩa đen là "anh đến bằng cách nào", nhưng thực ra là hỏi mục đích đến; đừng trả lời 버스로 왔어요.
+
+  - key: ko:item:beonhopyo
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 번호표
+      romanization: beonhopyo
+      pos: danh từ
+    back:
+      meaning:
+        vi: phiếu số thứ tự
+      examples:
+        - target: 번호표를 뽑고 기다리세요.
+          translation:
+            vi: Xin lấy phiếu số thứ tự rồi chờ.
+      pronunciation_note:
+        vi: ㅎ giữa hai âm yếu đi - nói nhanh gần [버노표].

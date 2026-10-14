@@ -1,0 +1,414 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:subjunctive-formal
+order_index: 3
+level: c2
+title:
+  vi: Giả định cách & cấu trúc trang trọng
+objectives:
+  - vi: Dùng giả định cách sau It is essential/vital that…, insist/recommend/request that… (that he be, that she leave).
+  - vi: Viết câu phủ định giả định đúng - that visitors not take….
+  - vi: Dùng các cấu trúc cố định trang trọng - Were it not for, Had it not been for, Be that as it may, come what may, if need be.
+estimated_minutes: 20
+skills: [grammar, writing, reading]
+prerequisites: [en:lesson:idioms-phrasal-verbs]
+items:
+  - item: en:item:mandative-subjunctive
+  - item: en:item:it-is-essential-that
+  - item: en:item:insist-that
+  - item: en:item:subjunctive-negative
+  - item: en:item:were-it-not-for
+  - item: en:item:had-it-not-been-for
+  - item: en:item:be-that-as-it-may
+  - item: en:item:come-what-may
+  - item: en:item:if-need-be
+  - item: en:item:suggest-pattern
+    role: reuse
+  - item: en:item:inversion-conditional
+    role: reuse
+  - item: en:item:register-shift
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bạn sẽ thấy "It is essential that he be present" trong quy định, hợp đồng, biên bản họp. Sau bài này, bạn hiểu vì sao lại là be chứ không phải is, và tự viết được các câu trang trọng kiểu này.
+  - type: explain
+    text:
+      vi: Giả định cách (subjunctive) dùng động từ nguyên mẫu không chia, với mọi chủ ngữ và mọi thì - that he be, that she leave, that they stay. Nó xuất hiện sau từ thể hiện yêu cầu, đề xuất, tầm quan trọng - insist, demand, recommend, request, propose, essential, vital, imperative.
+  - type: explain
+    text:
+      vi: Phủ định đặt not ngay trước động từ nguyên mẫu - that he not be late, không dùng doesn't. Tiếng Anh Anh hay dùng should thay thế - that he should not be late - cũng đúng và trang trọng.
+  - type: explain
+    text:
+      vi: Bạn sẽ nghe người Anh nói "It's essential that he goes". Dạng này chấp nhận được trong văn nói, nhưng trong văn bản trang trọng (báo cáo, quy định, IELTS Writing) nên dùng he go hoặc he should go.
+  - type: deep_explain
+    text:
+      vi: Một số cụm cố định giữ lại giả định cách cổ - Be that as it may (dù vậy), come what may (dù có chuyện gì), if need be (nếu cần), so be it (đành vậy). Were it not for + N (hiện tại) và Had it not been for + N (quá khứ) là đảo ngữ của If it were not for / If it had not been for, nghĩa "nếu không nhờ/không vì". Tiếng Việt không có giả định cách, nên hãy học các cụm này như khối cố định.
+  - type: example
+    target: It is essential that every passenger be seated before take-off.
+    target_lang: en
+    translation:
+      vi: Mọi hành khách bắt buộc phải ngồi vào chỗ trước khi cất cánh.
+    note:
+      vi: Every passenger là số ít nhưng vẫn dùng be, không dùng is.
+  - type: example
+    target: The manager insisted that she leave the building immediately.
+    target_lang: en
+    translation:
+      vi: Quản lý nhất quyết yêu cầu cô ấy rời toà nhà ngay lập tức.
+    note:
+      vi: Leave không thêm -s và không lùi thì dù insisted ở quá khứ.
+  - type: example
+    target: Were it not for the volunteers, the festival could not take place.
+    target_lang: en
+    translation:
+      vi: Nếu không nhờ các tình nguyện viên, lễ hội không thể diễn ra.
+    note:
+      vi: Were it not for + danh từ = If it were not for…, nói về hiện tại.
+  - type: example
+    target: The proposal has its flaws. Be that as it may, it is the best option we have.
+    target_lang: en
+    translation:
+      vi: Đề xuất này có những thiếu sót. Dù vậy, đó vẫn là lựa chọn tốt nhất chúng ta có.
+    note:
+      vi: Be that as it may thừa nhận ý trước rồi chuyển sang ý ngược lại, trang trọng hơn Even so.
+  - type: common_mistake
+    wrong: The board recommended that the CEO resigns.
+    right: The board recommended that the CEO resign.
+    target_lang: en
+    note:
+      vi: Trong văn trang trọng, sau recommend that dùng nguyên mẫu - resign (hoặc should resign). Resigns thường gặp trong văn nói nhưng không hợp văn bản chính thức.
+  - type: common_mistake
+    wrong: We request that guests do not smoke in the rooms.
+    right: We request that guests not smoke in the rooms.
+    target_lang: en
+    note:
+      vi: Phủ định giả định là not + V, không dùng do not. Có thể viết guests should not smoke.
+  - type: common_mistake
+    wrong: Was it not for your help, I would have failed.
+    right: Had it not been for your help, I would have failed.
+    target_lang: en
+    note:
+      vi: Không có dạng Was it not for. Kết quả ở quá khứ (would have failed) nên dùng Had it not been for.
+  - type: summary
+    points:
+      - vi: insist / demand / recommend / request / propose + that + S + V nguyên mẫu (he be, she leave).
+      - vi: It is essential / vital / imperative that + S + V nguyên mẫu; hoặc It is essential for S to V.
+      - vi: Phủ định - that + S + not + V; Anh Anh - should (not) + V.
+      - vi: He goes sau essential that - gặp trong văn nói, tránh trong văn bản trang trọng.
+      - vi: Were it not for + N (hiện tại), Had it not been for + N (quá khứ); Be that as it may; come what may; if need be.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:subjunctive-mcq-essential
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:it-is-essential-that
+    prompt:
+      stem: "Câu nào phù hợp nhất cho một văn bản quy định chính thức?"
+      stem_lang: vi
+      options:
+        - { id: q7n, text: "It is essential that each applicant be interviewed in person.", lang: en }
+        - { id: v2b, text: "It is essential that each applicant is being interviewed in person.", lang: en }
+        - { id: i5c, text: "It is essential that each applicant to be interviewed in person.", lang: en }
+        - { id: y8x, text: "It is essential that each applicant was interviewed in person.", lang: en }
+    answer:
+      correct_option_id: q7n
+    explanation:
+      vi: Sau It is essential that, văn trang trọng dùng nguyên mẫu - be interviewed. Was là quá khứ không hợp; to be cần chủ ngữ dạng for each applicant to be; is being là tiếp diễn sai ngữ cảnh.
+    display_answer: "It is essential that each applicant be interviewed in person."
+
+  - key: en:exercise:subjunctive-mcq-insist-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: en:item:insist-that
+    prompt:
+      stem: "Hai câu sau khác nhau thế nào? (1) He insisted that she leave. (2) He insisted that she left."
+      stem_lang: vi
+      options:
+        - { id: n3m, text: "(1) Anh ta yêu cầu cô ấy rời đi; (2) Anh ta khăng khăng rằng cô ấy đã rời đi.", lang: vi }
+        - { id: o6p, text: "Hai câu giống hệt nhau; (2) chỉ là cách viết thân mật hơn.", lang: vi }
+        - { id: x1r, text: "(1) sai ngữ pháp vì thiếu -s; (2) là câu đúng duy nhất.", lang: vi }
+        - { id: b8w, text: "(1) Anh ta khăng khăng rằng cô ấy đã rời đi; (2) Anh ta yêu cầu cô ấy rời đi.", lang: vi }
+    answer:
+      correct_option_id: n3m
+    explanation:
+      vi: Leave nguyên mẫu là giả định cách - insist mang nghĩa "đòi, yêu cầu". Left chia quá khứ biến insist thành "khẳng định một sự thật" - cô ấy đã đi rồi.
+    display_answer: "(1) Anh ta yêu cầu cô ấy rời đi; (2) Anh ta khăng khăng rằng cô ấy đã rời đi."
+
+  - key: en:exercise:subjunctive-listen-were-it-not
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:were-it-not-for
+    prompt:
+      audio_asset_id: null
+      fallback_text: Were it not for the new bridge, the journey would take twice as long.
+      options:
+        - { id: k4e, text: "Nếu không nhờ cây cầu mới, quãng đường sẽ mất gấp đôi thời gian.", lang: vi }
+        - { id: d9t, text: "Vì cây cầu mới, quãng đường mất gấp đôi thời gian.", lang: vi }
+        - { id: u2s, text: "Cây cầu mới không được xây vì quãng đường quá dài.", lang: vi }
+        - { id: m6a, text: "Nếu cây cầu mới bị đóng, ta sẽ đi một quãng đường ngắn hơn.", lang: vi }
+    answer:
+      correct_option_id: k4e
+    explanation:
+      vi: Were it not for = If it were not for = "nếu không nhờ/không có". Câu nói cây cầu đang giúp rút ngắn thời gian; nếu không có nó, đi lâu gấp đôi.
+    display_answer: "Nếu không nhờ cây cầu mới, quãng đường sẽ mất gấp đôi thời gian."
+
+  - key: en:exercise:subjunctive-fill-request-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:subjunctive-negative
+    prompt:
+      template: "The museum requests that visitors {{b1}} {{b2}} photographs of the paintings."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Bảo tàng đề nghị khách tham quan không chụp ảnh các bức tranh."
+        - "Gợi ý: giả định cách phủ định = not + động từ nguyên mẫu (không dùng do)."
+    answer:
+      blanks:
+        b1: [not]
+        b2: [take]
+    known_wrong:
+      - answer: don't
+        feedback_vi: Giả định cách phủ định không dùng do - viết not take.
+        error_tag: subjunctive
+      - answer: takes
+        feedback_vi: Giả định cách dùng nguyên mẫu - take.
+        error_tag: subjunctive
+      - answer: taking
+        feedback_vi: Sau requests that + chủ ngữ cần động từ nguyên mẫu - not take.
+        error_tag: verb_form
+    explanation:
+      vi: Request that là cấu trúc yêu cầu nên mệnh đề sau dùng giả định cách. Phủ định đặt not ngay trước động từ nguyên mẫu - visitors not take.
+    display_answer: The museum requests that visitors not take photographs of the paintings.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:subjunctive-fill-had-it-not
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:had-it-not-been-for
+    prompt:
+      template: "{{b1}} it not been for the quick response of the staff, the fire would have spread. Be that {{b2}} it may, the alarm system clearly needs replacing."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [Had]
+        b2: [as]
+    known_wrong:
+      - answer: Was
+        feedback_vi: Không có dạng Was it not been for; quá khứ dùng Had it not been for.
+        error_tag: inversion
+      - answer: Were
+        feedback_vi: Were it not for dùng cho hiện tại và không có been; ở đây cần Had.
+        error_tag: inversion
+      - answer: If
+        feedback_vi: If it not been for sai ngữ pháp; đảo ngữ bỏ if và đưa Had lên đầu.
+        error_tag: inversion
+    explanation:
+      vi: Kết quả ở quá khứ (would have spread) nên dùng Had it not been for. Be that as it may là cụm cố định "dù vậy" - đúng trật tự be that as it may.
+    display_answer: Had it not been for the quick response of the staff, the fire would have spread. Be that as it may, the alarm system clearly needs replacing.
+
+  - key: en:exercise:subjunctive-translate-insist
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:insist-that
+    prompt:
+      source_text: Tôi nhất quyết yêu cầu cô ấy rời đi ngay lập tức. (dùng insist that)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I insist that she leave immediately.
+        - I insist that she leave at once.
+        - I insist that she leave right away.
+        - I insist that she leave right now.
+        - I insist that she should leave immediately.
+        - I insist that she should leave at once.
+        - I insist she leave immediately.
+        - I insisted that she leave immediately.
+        - I insisted that she leave at once.
+        - I insisted that she should leave immediately.
+        - I insist that she leaves immediately.
+        - I insist that she leaves at once.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I insist her to leave immediately.
+        feedback_vi: Insist không đi với tân ngữ + to V; dùng insist that she leave hoặc insist on her leaving.
+        error_tag: verb_pattern
+      - answer: I insist that she left immediately.
+        feedback_vi: Left (quá khứ) biến câu thành "khẳng định cô ấy đã rời đi"; yêu cầu thì dùng leave.
+        error_tag: subjunctive
+      - answer: I insist that she to leave immediately.
+        feedback_vi: Sau that cần mệnh đề có chủ ngữ + động từ - she leave, không có to.
+        error_tag: verb_pattern
+    explanation:
+      vi: Insist that + S + V nguyên mẫu là giả định cách trang trọng; should leave cũng đúng. Leaves gặp trong văn nói Anh nên vẫn được chấp nhận, nhưng văn viết trang trọng ưu tiên leave.
+    display_answer: I insist that she leave immediately.
+
+  - key: en:exercise:subjunctive-translate-to-vi-come-what-may
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:come-what-may
+    prompt:
+      source_text: Come what may, we will open the new branch next spring.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù có chuyện gì xảy ra, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.
+        - Dù có chuyện gì xảy ra, chúng tôi sẽ mở chi nhánh mới vào mùa xuân tới.
+        - Dù có chuyện gì đi nữa, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân năm sau.
+        - Dù chuyện gì xảy ra, chúng ta vẫn sẽ mở chi nhánh mới vào mùa xuân tới.
+        - Bất kể chuyện gì xảy ra, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.
+        - Dù thế nào đi nữa, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.
+        - Dù có chuyện gì xảy ra, chúng tôi vẫn sẽ khai trương chi nhánh mới vào mùa xuân tới.
+        - Bất chấp mọi chuyện, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hãy đến xem điều gì có thể xảy ra, chúng tôi sẽ mở chi nhánh mới vào mùa xuân tới.
+        feedback_vi: Come what may là cụm cố định "dù có chuyện gì", không dịch từng chữ come/what/may.
+        error_tag: literal_translation
+    explanation:
+      vi: Come what may là giả định cách cổ còn sót lại, nghĩa "dù có chuyện gì xảy ra". Câu thể hiện quyết tâm chắc chắn của người nói.
+    display_answer: Dù có chuyện gì xảy ra, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.
+
+  # ---------------- application ----------------
+  - key: en:exercise:subjunctive-order-recommend
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:mandative-subjunctive
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Uỷ ban đề nghị hoãn dự án cho đến khi có thêm kinh phí.\""
+      tokens:
+        - { id: s-funding, text: further funding }
+        - { id: s-recommended, text: The committee recommended }
+        - { id: s-is, text: is }
+        - { id: s-be, text: be }
+        - { id: s-project, text: the project }
+        - { id: s-until, text: until }
+        - { id: s-that, text: that }
+        - { id: s-secured, text: is secured }
+        - { id: s-postponed, text: postponed }
+    answer:
+      orders:
+        - [s-recommended, s-that, s-project, s-be, s-postponed, s-until, s-funding, s-secured]
+    explanation:
+      vi: Sau recommended that, văn trang trọng dùng giả định cách - the project be postponed (không lùi thì, không dùng is vì động từ chính đã ở quá khứ). Mệnh đề until chỉ thời gian vẫn chia bình thường - further funding is secured.
+    display_answer: The committee recommended that the project be postponed until further funding is secured.
+
+  - key: en:exercise:subjunctive-translate-vital
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:it-is-essential-that
+    prompt:
+      source_text: Điều tối quan trọng là mọi nhân viên phải được đào tạo trước khi sử dụng hệ thống mới. (văn phong trang trọng, dùng It is vital that)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It is vital that every employee be trained before using the new system.
+        - It is vital that all employees be trained before using the new system.
+        - It is vital that every member of staff be trained before using the new system.
+        - It is vital that all staff be trained before using the new system.
+        - It is vital that every employee should be trained before using the new system.
+        - It is vital that all employees should be trained before using the new system.
+        - It is vital that every employee be trained before they use the new system.
+        - It is vital that all employees be trained before they use the new system.
+        - It is vital that every employee be trained prior to using the new system.
+        - It is vital that all employees be trained prior to using the new system.
+        - It is vital that each employee be trained before using the new system.
+        - It is vital that every employee receive training before using the new system.
+        - It is vital that all employees receive training before using the new system.
+        - It is vital that every employee is trained before using the new system.
+        - It is vital that all employees are trained before using the new system.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It is vital that every employee to be trained before using the new system.
+        feedback_vi: Sau that cần mệnh đề có động từ - every employee be trained, không có to.
+        error_tag: verb_pattern
+      - answer: It is vital that every employee must be trained before using the new system.
+        feedback_vi: Vital đã chứa ý bắt buộc; không thêm must. Dùng be trained hoặc should be trained.
+        error_tag: subjunctive
+      - answer: It is vital that every employee was trained before using the new system.
+        feedback_vi: Was là quá khứ; yêu cầu cho tương lai dùng be trained.
+        error_tag: subjunctive
+    explanation:
+      vi: It is vital that + S + be + V3 là giả định cách bị động, rất hợp văn bản quy định. Should be trained (Anh Anh) cũng đúng; is/are trained chấp nhận được nhưng kém trang trọng hơn.
+    display_answer: It is vital that every employee be trained before using the new system.
+
+  - key: en:exercise:subjunctive-mcq-be-that-as-it-may
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:be-that-as-it-may
+    prompt:
+      stem: "Trong cuộc họp hội đồng, một thành viên nói: \"The renovation will be costly.\" Bạn muốn thừa nhận ý đó nhưng vẫn ủng hộ dự án một cách trang trọng. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: j3h, text: "Be that as it may, the building will not pass the next safety inspection without it.", lang: en }
+        - { id: w9g, text: "Whatever, the building won't pass the next safety check without it.", lang: en }
+        - { id: r5f, text: "Be it as it is, the building will not pass the next safety inspection without it.", lang: en }
+        - { id: e2d, text: "Come what may, the renovation will be costly.", lang: en }
+    answer:
+      correct_option_id: j3h
+    explanation:
+      vi: Be that as it may là cách trang trọng để nói "dù vậy" rồi đưa ra lập luận ngược lại. Whatever thô lỗ; Be it as it is sai dạng cụm cố định; Come what may không có nghĩa thừa nhận - phản bác.
+    display_answer: "Be that as it may, the building will not pass the next safety inspection without it."
+
+  - key: en:exercise:subjunctive-fill-if-need-be
+    type: fill_blank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:if-need-be
+    prompt:
+      template: "We can work through the weekend if need {{b1}}. Were it not {{b2}} the tight deadline, we would hire extra staff."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [be]
+        b2: [for]
+    known_wrong:
+      - answer: is
+        feedback_vi: If need be là cụm cố định giữ dạng giả định be.
+        error_tag: subjunctive
+      - answer: because
+        feedback_vi: Cấu trúc cố định là Were it not for + danh từ.
+        error_tag: inversion
+      - answer: about
+        feedback_vi: Cấu trúc cố định là Were it not for + danh từ.
+        error_tag: inversion
+    explanation:
+      vi: If need be = if necessary (nếu cần). Were it not for the tight deadline = If it were not for… - nói về hiện tại nên vế sau là would hire.
+    display_answer: We can work through the weekend if need be. Were it not for the tight deadline, we would hire extra staff.

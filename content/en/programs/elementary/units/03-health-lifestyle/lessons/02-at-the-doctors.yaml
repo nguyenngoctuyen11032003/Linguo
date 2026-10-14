@@ -1,0 +1,405 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:at-the-doctors
+order_index: 2
+level: a2
+title:
+  vi: Ở phòng khám và hiệu thuốc
+objectives:
+  - vi: Đặt lịch khám, kể triệu chứng và trả lời câu hỏi How long have you had it?
+  - vi: Hiểu lời dặn dùng thuốc - Take this twice a day, after meals.
+  - vi: Hỏi mua thuốc ở hiệu thuốc và chúc người khác mau khoẻ.
+estimated_minutes: 15
+skills: [listening, speaking, vocabulary]
+prerequisites: [en:lesson:aches-and-pains]
+items:
+  - item: en:item:appointment
+    role: reuse
+  - item: en:item:feel-sick
+  - item: en:item:dizzy
+  - item: en:item:how-long-have-you-had
+  - item: en:item:medicine
+  - item: en:item:tablet
+  - item: en:item:take-medicine
+  - item: en:item:once-twice-a-day
+  - item: en:item:before-after-meals
+  - item: en:item:prescription
+  - item: en:item:get-well-soon
+  - item: en:item:doctor
+    role: reuse
+  - item: en:item:pharmacy
+    role: reuse
+  - item: en:item:whats-the-matter
+    role: reuse
+  - item: en:item:have-an-illness
+    role: reuse
+  - item: en:item:sore-throat
+    role: reuse
+  - item: en:item:cough
+    role: reuse
+  - item: en:item:fever
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đi khám bác sĩ hoặc mua thuốc bằng tiếng Anh được - kể mình bị gì, bị bao lâu, và hiểu đúng thuốc phải uống thế nào.
+  - type: explain
+    text:
+      vi: "Buổi khám thường đi theo ba bước: bác sĩ hỏi What's the matter? → bạn kể triệu chứng (I've got a sore throat. I feel dizzy.) → bác sĩ hỏi How long have you had it? và bạn trả lời For two days / Since Monday. Ở trình độ này, bạn chỉ cần học thuộc nguyên câu hỏi How long have you had it?"
+  - type: explain
+    text:
+      vi: Lời dặn dùng thuốc là câu mệnh lệnh bắt đầu bằng Take - Take this twice a day. Tiếng Việt nói "uống thuốc" nhưng tiếng Anh dùng take, không dùng drink.
+  - type: explain
+    text:
+      vi: Số lần một ngày - once (1 lần), twice (2 lần), three times (3 lần) + a day. Không có chữ "in" như kiểu dịch "trong một ngày".
+  - type: deep_explain
+    text:
+      vi: "Ở hiệu thuốc, bạn hỏi Can I have something for a cough, please? (Cho tôi thuốc trị ho). Dược sĩ có thể hỏi Do you have a prescription? (Bạn có đơn thuốc không?). Feel đi với tính từ - I feel dizzy, I feel sick; câu phủ định là I don't feel well, không phải \"I feel not well\"."
+  - type: example
+    target: "Doctor: What's the matter? Patient: I've got a bad cough and I feel dizzy."
+    target_lang: en
+    translation:
+      vi: "Bác sĩ: Anh bị sao? Bệnh nhân: Tôi bị ho nặng và thấy chóng mặt."
+    note:
+      vi: Ho là danh từ (a bad cough) đi với have got; chóng mặt là tính từ (dizzy) đi với feel.
+  - type: example
+    target: "Doctor: How long have you had the cough? Patient: For three days."
+    target_lang: en
+    translation:
+      vi: "Bác sĩ: Anh bị ho bao lâu rồi? Bệnh nhân: Ba ngày rồi."
+    note:
+      vi: Câu hỏi cố định How long have you had…? trả lời bằng For + khoảng thời gian.
+  - type: example
+    target: "Doctor: Take these tablets twice a day, after meals. Get well soon!"
+    target_lang: en
+    translation:
+      vi: "Bác sĩ: Anh uống thuốc này ngày hai lần, sau bữa ăn. Chúc anh mau khoẻ!"
+    note:
+      vi: Lời dặn bắt đầu bằng Take; twice a day là ngày hai lần.
+  - type: example
+    target: "Customer: Can I have something for a sore throat, please? Pharmacist: Sure. Do you have a prescription?"
+    target_lang: en
+    translation:
+      vi: "Khách: Cho tôi thuốc trị đau họng với. Dược sĩ: Vâng. Anh/chị có đơn thuốc không?"
+    note:
+      vi: Something for + bệnh là cách tự nhiên để hỏi mua thuốc trị bệnh đó.
+  - type: common_mistake
+    wrong: Drink this medicine two times in a day.
+    right: Take this medicine twice a day.
+    target_lang: en
+    note:
+      vi: Thuốc thì dùng take; hai lần là twice; nói a day, không thêm in.
+  - type: common_mistake
+    wrong: I feel not well.
+    right: I don't feel well.
+    target_lang: en
+    note:
+      vi: Feel là động từ thường nên phủ định bằng don't, giống I don't like…
+  - type: common_mistake
+    wrong: I have dizzy.
+    right: I feel dizzy. / I'm dizzy.
+    target_lang: en
+    note:
+      vi: Dizzy là tính từ nên đi với feel hoặc be. Have chỉ đi với danh từ như a headache, a cold.
+  - type: summary
+    points:
+      - vi: Đặt lịch - I'd like to make an appointment.
+      - vi: Triệu chứng - I've got a cough. · I feel dizzy. · I don't feel well.
+      - vi: How long have you had it? - For two days. / Since Monday.
+      - vi: Take this/these + once / twice / three times a day + before/after meals.
+      - vi: Ở hiệu thuốc - Can I have something for…? · prescription = đơn thuốc.
+      - vi: Get well soon! = Mau khoẻ nhé!
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:at-the-doctors-listen-dose
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:once-twice-a-day
+    prompt:
+      audio_asset_id: null
+      fallback_text: Take one tablet twice a day, after meals.
+      options:
+        - { id: f3k, text: "Uống một viên, ngày hai lần, sau bữa ăn.", lang: vi }
+        - { id: v8o, text: "Uống một viên, ngày ba lần, sau bữa ăn.", lang: vi }
+        - { id: c1r, text: "Uống hai viên, ngày một lần, sau bữa ăn.", lang: vi }
+        - { id: y6s, text: "Uống một viên, ngày hai lần, trước bữa ăn.", lang: vi }
+    answer:
+      correct_option_id: f3k
+    explanation:
+      vi: One tablet là một viên, twice a day là ngày hai lần (once mới là một lần), after meals là sau bữa ăn (before là trước).
+    display_answer: "Uống một viên, ngày hai lần, sau bữa ăn."
+
+  - key: en:exercise:at-the-doctors-mcq-take
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:take-medicine
+    prompt:
+      stem: "Chọn từ đúng: ___ this medicine three times a day."
+      stem_lang: vi
+      options:
+        - { id: o4d, text: Take, lang: en }
+        - { id: l7x, text: Drink, lang: en }
+        - { id: u2a, text: Eat, lang: en }
+        - { id: i9p, text: Make, lang: en }
+    answer:
+      correct_option_id: o4d
+    explanation:
+      vi: Tiếng Anh nói take medicine (uống thuốc). Người Việt hay dịch "uống" thành drink, nhưng drink dùng cho nước, cà phê…, không dùng cho thuốc viên.
+    display_answer: Take
+
+  - key: en:exercise:at-the-doctors-mcq-how-long
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:how-long-have-you-had
+    prompt:
+      stem: "Bác sĩ hỏi: \"How long have you had this cough?\" Câu trả lời nào phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: q5b, text: "For three days.", lang: en }
+        - { id: z3w, text: "Three times a day.", lang: en }
+        - { id: g8m, text: "At the pharmacy.", lang: en }
+        - { id: e2j, text: "Yes, I have.", lang: en }
+    answer:
+      correct_option_id: q5b
+    explanation:
+      vi: How long hỏi "bao lâu rồi", nên trả lời bằng khoảng thời gian For three days. Three times a day trả lời câu hỏi How often (bao nhiêu lần).
+    display_answer: "For three days."
+
+  - key: en:exercise:at-the-doctors-fill-appointment
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:appointment
+    prompt:
+      template: "Hello. I'd like to make an {{b1}} with Dr Lan, please."
+      blanks:
+        - { id: b1, width_hint: 11 }
+      hint_levels:
+        - "Nghĩa: Chào chị. Tôi muốn đặt lịch hẹn khám với bác sĩ Lan."
+        - "Gợi ý: danh từ bắt đầu bằng app-, nghĩa là cuộc hẹn."
+    answer:
+      blanks:
+        b1: [appointment]
+    known_wrong:
+      - answer: appoint
+        feedback_vi: Appoint là động từ (bổ nhiệm). Sau make an cần danh từ appointment.
+        error_tag: word_form
+      - answer: date
+        feedback_vi: Date là hẹn hò. Hẹn khám bác sĩ là appointment.
+        error_tag: word_choice
+    explanation:
+      vi: Đặt lịch hẹn (với bác sĩ, nha sĩ) là make an appointment. An đứng trước vì appointment bắt đầu bằng nguyên âm.
+    display_answer: "Hello. I'd like to make an appointment with Dr Lan, please."
+
+  - key: en:exercise:at-the-doctors-order-feel-well
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:feel-sick
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi thấy không khoẻ.\""
+      tokens:
+        - { id: fw-well, text: well }
+        - { id: fw-not, text: not }
+        - { id: fw-feel, text: feel }
+        - { id: fw-am, text: am }
+        - { id: fw-i, text: I }
+        - { id: fw-dont, text: "don't" }
+    answer:
+      orders:
+        - [fw-i, fw-dont, fw-feel, fw-well]
+    explanation:
+      vi: Feel là động từ thường nên phủ định bằng don't đặt trước nó - I don't feel well. Không dùng not sau feel, cũng không cần am.
+    display_answer: "I don't feel well."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:at-the-doctors-fill-dose
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:tablet
+    prompt:
+      template: "Take two {{b1}} {{b2}} a day. (Uống hai viên, ngày hai lần.)"
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [tablets, pills]
+        b2: [twice]
+    known_wrong:
+      - answer: tablet
+        feedback_vi: Two là số nhiều nên tablet thêm -s.
+        error_tag: plural_s
+      - answer: two times
+        feedback_vi: Hai lần có từ riêng là twice.
+        error_tag: once_twice
+      - answer: twice in
+        feedback_vi: Nói twice a day, không thêm in.
+        error_tag: once_twice
+    explanation:
+      vi: Two + danh từ số nhiều - two tablets. Hai lần là twice (một lần là once, từ ba lần mới dùng times).
+    display_answer: Take two tablets twice a day.
+
+  - key: en:exercise:at-the-doctors-translate-dizzy
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:dizzy
+    prompt:
+      source_text: Tôi thấy chóng mặt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I feel dizzy.
+        - I'm dizzy.
+        - I'm feeling dizzy.
+        - I feel a bit dizzy.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I have dizzy.
+        feedback_vi: Dizzy là tính từ, đi với feel - I feel dizzy.
+        error_tag: have_with_adjective
+      - answer: I feel dizziness.
+        feedback_vi: Sau feel dùng tính từ dizzy, không dùng danh từ dizziness.
+        error_tag: word_form
+      - answer: I dizzy.
+        feedback_vi: Câu cần động từ - I feel dizzy hoặc I'm dizzy.
+        error_tag: missing_verb
+    explanation:
+      vi: Dizzy là tính từ nên đi sau feel hoặc be. Chữ "thấy" trong tiếng Việt chính là feel.
+    display_answer: I feel dizzy.
+
+  - key: en:exercise:at-the-doctors-translate-after-meals
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:before-after-meals
+    prompt:
+      source_text: Uống thuốc này sau bữa ăn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Take this medicine after meals.
+        - Take this medicine after a meal.
+        - Take this medicine after each meal.
+        - Take this medicine after eating.
+        - Take this after meals.
+        - Take this medicine after food.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Drink this medicine after meals.
+        feedback_vi: Thuốc thì dùng take, không dùng drink.
+        error_tag: take_medicine
+      - answer: Eat this medicine after meals.
+        feedback_vi: Thuốc thì dùng take, không dùng eat.
+        error_tag: take_medicine
+      - answer: Take this medicine before meals.
+        feedback_vi: Before là trước bữa ăn; "sau" là after.
+        error_tag: before_after
+    explanation:
+      vi: Lời dặn dùng câu mệnh lệnh bắt đầu bằng Take. Sau bữa ăn là after meals (số nhiều, không cần the).
+    display_answer: Take this medicine after meals.
+
+  # ---------------- application ----------------
+  - key: en:exercise:at-the-doctors-translate-how-long
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:how-long-have-you-had
+    prompt:
+      source_text: How long have you had this cough?
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bạn bị ho bao lâu rồi?
+        - Bạn bị ho thế này bao lâu rồi?
+        - Bạn bị ho như thế này bao lâu rồi?
+        - Bạn bị cơn ho này bao lâu rồi?
+        - Bạn ho bao lâu rồi?
+        - Bạn bị ho được bao lâu rồi?
+        - Anh bị ho bao lâu rồi?
+        - Chị bị ho bao lâu rồi?
+        - Bạn bị ho này bao lâu rồi?
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: How long have you had…? hỏi "bị… bao lâu rồi"; this cough là cơn ho này. Tiếng Việt tự nhiên thường chỉ nói "bị ho bao lâu rồi".
+    display_answer: Bạn bị ho bao lâu rồi?
+
+  - key: en:exercise:at-the-doctors-mcq-pharmacy
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:sore-throat
+    prompt:
+      stem: "Bạn vào hiệu thuốc ở London vì bị đau họng. Bạn nói với dược sĩ thế nào?"
+      stem_lang: vi
+      options:
+        - { id: b6t, text: "Can I have something for a sore throat, please?", lang: en }
+        - { id: n1q, text: "Do you have a sore throat, please?", lang: en }
+        - { id: d4e, text: "I want drink medicine throat.", lang: en }
+        - { id: s8c, text: "I am sore throat. Give me.", lang: en }
+    answer:
+      correct_option_id: b6t
+    explanation:
+      vi: Can I have something for + bệnh, please? là cách hỏi mua thuốc lịch sự và tự nhiên. "Do you have a sore throat?" lại là hỏi dược sĩ có bị đau họng không; hai câu còn lại sai ngữ pháp.
+    display_answer: "Can I have something for a sore throat, please?"
+
+  - key: en:exercise:at-the-doctors-translate-not-well
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:feel-sick
+    prompt:
+      source_text: Tôi thấy không khoẻ. Tôi bị đau đầu và sốt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I don't feel well. I have a headache and a fever.
+        - I don't feel well. I've got a headache and a fever.
+        - I'm not feeling well. I have a headache and a fever.
+        - I'm not feeling well. I've got a headache and a fever.
+        - I don't feel well. I have a headache and a temperature.
+        - I don't feel well. I've got a headache and a temperature.
+        - I'm not well. I have a headache and a fever.
+        - I'm not well. I've got a headache and a fever.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I feel not well. I have a headache and a fever.
+        feedback_vi: Phủ định của feel là don't feel - I don't feel well.
+        error_tag: negative_feel
+      - answer: I don't feel well. I am headache and fever.
+        feedback_vi: Đau đầu và sốt là danh từ, dùng have a headache and a fever, không dùng am.
+        error_tag: be_with_illness
+      - answer: I don't feel good. I have headache and fever.
+        feedback_vi: Mỗi bệnh cần a - a headache and a fever.
+        error_tag: article
+    explanation:
+      vi: Feel là động từ thường nên phủ định bằng don't. Bệnh là danh từ đếm được, nên dùng have (got) và mỗi bệnh có a riêng.
+    display_answer: "I don't feel well. I have a headache and a fever."

@@ -1,0 +1,403 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:bank-post-office
+order_index: 2
+level: topik2
+title:
+  vi: Ở ngân hàng và bưu điện - nhờ làm giúp, hỏi có thể không
+objectives:
+  - vi: Nhờ nhân viên làm giúp bằng V-아/어 주세요 - 환전해 주세요, 보내 주세요.
+  - vi: Hỏi và trả lời "có thể / không thể" bằng V-(으)ㄹ 수 있어요/없어요.
+  - vi: Mở tài khoản, đổi tiền, chuyển tiền, gửi bưu kiện bằng các từ 통장, 환전, 송금, 소포, 택배.
+estimated_minutes: 16
+skills: [speaking, listening, grammar]
+prerequisites: [ko:lesson:honorific-seyo]
+items:
+  - item: ko:item:gram-a-eo-juseyo
+  - item: ko:item:gram-l-su-itda
+  - item: ko:item:place-ucheguk
+  - item: ko:item:tongjang
+  - item: ko:item:phrase-tongjang-mandeulda
+  - item: ko:item:hwanjeonhada
+  - item: ko:item:songgeum
+  - item: ko:item:dalleo
+  - item: ko:item:yeogwon
+  - item: ko:item:sopo
+  - item: ko:item:verb-bonaeda
+  - item: ko:item:taekbae
+  - item: ko:item:place-eunhaeng
+    role: reuse
+  - item: ko:item:juseyo
+    role: reuse
+  - item: ko:item:won
+    role: reuse
+  - item: ko:item:verb-sseuda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự làm việc ở quầy ngân hàng và bưu điện Hàn Quốc - nhờ đổi tiền, chuyển tiền, gửi hàng và hỏi xem việc gì làm được.
+  - type: explain
+    text:
+      vi: Bạn đã biết N 주세요 - "cho tôi cái N" (물 주세요). Khi nhờ người khác LÀM một việc, hãy dùng V-아/어 주세요 - lấy dạng -아/어요 bỏ 요 rồi thêm 주세요. 환전해요 → 환전해 주세요 (đổi tiền giúp tôi), 보내요 → 보내 주세요 (gửi giúp tôi).
+  - type: explain
+    text:
+      vi: V-(으)ㄹ 수 있어요 là "có thể", 없어요 là "không thể". Thân không có patchim + ㄹ 수 (보낼 수), có patchim + 을 수 (먹을 수), thân có patchim ㄹ giữ nguyên (만들 수).
+  - type: explain
+    text:
+      vi: Từ ở quầy - 통장을 만들다 (mở tài khoản, nghĩa đen "làm sổ"), 환전하다 (đổi tiền), 송금하다 (chuyển tiền), 소포 (bưu kiện), 택배 (chuyển phát tận nơi), 여권 (hộ chiếu). Tiếng Việt nói "mở" tài khoản, nhưng tiếng Hàn dùng 만들다.
+  - type: deep_explain
+    text:
+      vi: V-아/어 주세요 nghe mềm hơn V-(으)세요, vì bạn nhấn mạnh việc người kia làm giúp mình - với nhân viên, 보내 주세요 tự nhiên hơn 보내세요. Đổi sang loại tiền nào dùng (으)로 - 달러로, 원으로 (원 có patchim). Ở ngân hàng Hàn Quốc, người nước ngoài thường cần 여권 hoặc thẻ người nước ngoài (외국인등록증) để mở 통장.
+  - type: example
+    target: 이 돈을 원으로 환전해 주세요.
+    target_lang: ko
+    translation:
+      vi: Đổi số tiền này sang won giúp tôi.
+    note:
+      vi: 환전하다 → 환전해 + 주세요; 원 có patchim nên dùng 으로.
+  - type: example
+    target: 외국인도 통장을 만들 수 있어요? - 네, 여권이 있으면 만들 수 있어요.
+    target_lang: ko
+    translation:
+      vi: Người nước ngoài cũng mở tài khoản được không? - Vâng, có hộ chiếu thì mở được.
+    note:
+      vi: 만들다 có patchim ㄹ nên giữ nguyên - 만들 수.
+  - type: example
+    target: 이 소포를 베트남에 보내 주세요.
+    target_lang: ko
+    translation:
+      vi: Gửi bưu kiện này sang Việt Nam giúp tôi.
+    note:
+      vi: 보내다 + 어 rút gọn thành 보내.
+  - type: example
+    target: 일요일에는 우체국에서 소포를 보낼 수 없어요. 편의점에서 택배를 보내세요.
+    target_lang: ko
+    translation:
+      vi: Chủ nhật không gửi bưu kiện ở bưu điện được. Hãy gửi hàng ở cửa hàng tiện lợi.
+  - type: common_mistake
+    wrong: 송금 주세요.
+    right: 송금해 주세요.
+    target_lang: ko
+    note:
+      vi: Người Việt hay gắn 주세요 thẳng vào mọi thứ. 송금 là danh từ, nên 송금 주세요 nghe như "cho tôi một khoản chuyển tiền"; nhờ làm việc thì phải chia động từ - 송금해 주세요.
+  - type: common_mistake
+    wrong: 소포를 보낼 수 안 있어요.
+    right: 소포를 보낼 수 없어요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt chỉ thêm "không", nhưng tiếng Hàn đổi 있어요 thành 없어요. Không dùng 안 trong mẫu này.
+  - type: common_mistake
+    wrong: 통장을 만들을 수 있어요?
+    right: 통장을 만들 수 있어요?
+    target_lang: ko
+    note:
+      vi: Thân có patchim ㄹ (만들) đã sẵn ㄹ, nên chỉ thêm 수 - không thêm 을.
+  - type: summary
+    points:
+      - vi: N 주세요 - cho tôi cái N; V-아/어 주세요 - làm giúp tôi (환전해 주세요, 보내 주세요, 써 주세요).
+      - vi: V-(으)ㄹ 수 있어요/없어요 - có thể/không thể (보낼 수, 먹을 수, 만들 수).
+      - vi: 통장을 만들다 · 환전하다 · 송금하다 · 소포 · 택배 · 여권 · 우체국.
+      - vi: Đổi sang tiền nào - 달러로, 원으로.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:bank-post-mcq-exchange
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:gram-a-eo-juseyo
+    prompt:
+      stem: Câu nào có nghĩa "Đổi tiền giúp tôi"?
+      stem_lang: vi
+      options:
+        - { id: p4h, text: 환전해 주세요., lang: ko }
+        - { id: b8x, text: 환전 주세요., lang: ko }
+        - { id: d1q, text: 환전하 주세요., lang: ko }
+        - { id: y5m, text: 환전할 수 있어요., lang: ko }
+    answer:
+      correct_option_id: p4h
+    explanation:
+      vi: Nhờ làm một việc dùng V-아/어 주세요; 환전하다 → 환전해 → 환전해 주세요. 환전 주세요 chỉ là danh từ + 주세요, còn 환전할 수 있어요 là "đổi tiền được".
+    display_answer: 환전해 주세요.
+
+  - key: ko:exercise:bank-post-listen-can-send
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:gram-l-su-itda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 여기에서 소포를 보낼 수 있어요?
+      options:
+        - { id: n2s, text: Ở đây gửi bưu kiện được không?, lang: vi }
+        - { id: j6c, text: Ở đây không gửi bưu kiện được., lang: vi }
+        - { id: u9f, text: Gửi bưu kiện ở đây giúp tôi., lang: vi }
+        - { id: o3l, text: Ở đây có bưu kiện không?, lang: vi }
+    answer:
+      correct_option_id: n2s
+    explanation:
+      vi: 보낼 수 있어요? là "gửi được không?". "Không gửi được" sẽ là 보낼 수 없어요, "gửi giúp tôi" là 보내 주세요.
+    display_answer: Ở đây gửi bưu kiện được không?
+
+  - key: ko:exercise:bank-post-fill-send-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:verb-bonaeda
+    prompt:
+      template: "이 소포를 베트남에 {{b1}} 주세요. (보내다)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Gửi bưu kiện này sang Việt Nam giúp tôi."
+        - "Gợi ý: lấy 보내요 rồi bỏ 요."
+    answer:
+      blanks:
+        b1: [보내, 보내어]
+    known_wrong:
+      - answer: 보내세요
+        feedback_vi: Trước 주세요 dùng dạng -아/어 của động từ - 보내 주세요.
+        error_tag: a_eo_juseyo_form
+      - answer: 보내다
+        feedback_vi: Không dùng dạng từ điển trước 주세요. Bỏ 다, ghép -어 - 보내.
+        error_tag: a_eo_juseyo_form
+    explanation:
+      vi: 보내다 + 어 rút gọn thành 보내 (ㅐ nuốt ㅓ), rồi thêm 주세요 - 보내 주세요, "gửi giúp tôi".
+    display_answer: 이 소포를 베트남에 보내 주세요.
+
+  - key: ko:exercise:bank-post-wb-account
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:phrase-tongjang-mandeulda
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi muốn mở tài khoản.\""
+      tokens:
+        - { id: t3, text: 싶어요 }
+        - { id: t1, text: 통장을 }
+        - { id: t4, text: 열고 }
+        - { id: t2, text: 만들고 }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: Tiếng Hàn nói "làm sổ tài khoản" - 통장을 만들다, không dùng 열다 (mở). Muốn làm gì - V-고 싶어요.
+    display_answer: 통장을 만들고 싶어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:bank-post-fill-make
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-l-su-itda
+    prompt:
+      template: "외국인도 통장을 {{b1}} 수 있어요? (만들다)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [만들]
+    known_wrong:
+      - answer: 만들을
+        feedback_vi: 만들다 có patchim ㄹ nên không thêm 을 - 만들 수.
+        error_tag: l_stem
+      - answer: 만드
+        feedback_vi: Trước 수 cần ㄹ - 만들 수. ㄹ chỉ rơi trước ㄴ, ㅂ, ㅅ (만드세요).
+        error_tag: l_stem
+      - answer: 만들어
+        feedback_vi: Trước 수 dùng dạng -(으)ㄹ, không dùng -어 - 만들 수.
+        error_tag: l_su_form
+    explanation:
+      vi: Thân 만들 đã có patchim ㄹ, nên giữ nguyên và thêm 수 있어요 - 만들 수 있어요.
+    display_answer: 외국인도 통장을 만들 수 있어요?
+
+  - key: ko:exercise:bank-post-fill-cannot
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-l-su-itda
+    prompt:
+      template: "오늘은 일요일이에요. 우체국에서 소포를 {{b1}}. (gửi - không thể)"
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [보낼 수 없어요, 보낼 수가 없어요]
+    known_wrong:
+      - answer: 보낼 수 안 있어요
+        feedback_vi: Phủ định của 수 있어요 là 수 없어요, không thêm 안.
+        error_tag: l_su_negation
+      - answer: 안 보낼 수 있어요
+        feedback_vi: Câu này nghĩa là "có thể không gửi". "Không thể gửi" là 보낼 수 없어요.
+        error_tag: l_su_negation
+      - answer: 보내 수 없어요
+        feedback_vi: Trước 수 cần -ㄹ - 보낼 수.
+        error_tag: l_su_form
+    explanation:
+      vi: Nghĩa "không thể" dùng V-(으)ㄹ 수 없어요; 보내다 không có patchim nên thành 보낼 수 없어요.
+    display_answer: 오늘은 일요일이에요. 우체국에서 소포를 보낼 수 없어요.
+
+  - key: ko:exercise:bank-post-translate-dollar
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hwanjeonhada
+    prompt:
+      source_text: Đổi giúp tôi 100 đô la sang won.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 백 달러를 원으로 환전해 주세요.
+        - 100달러를 원으로 환전해 주세요.
+        - 백 달러를 원으로 바꿔 주세요.
+        - 100달러를 원으로 바꿔 주세요.
+        - 백 달러 원으로 환전해 주세요.
+        - 100달러 원으로 환전해 주세요.
+    known_wrong:
+      - answer: 백 달러를 원으로 환전 주세요.
+        feedback_vi: Nhờ làm việc phải chia động từ - 환전해 주세요.
+        error_tag: noun_juseyo
+      - answer: 백 달러를 원로 환전해 주세요.
+        feedback_vi: 원 có patchim ㄴ nên dùng 으로 - 원으로.
+        error_tag: particle_ro_euro
+      - answer: 백 달러를 원에 환전해 주세요.
+        feedback_vi: Đổi sang loại tiền nào dùng (으)로, không dùng 에 - 원으로.
+        error_tag: particle_ro_euro
+    explanation:
+      vi: Đổi sang won là 원으로 (원 có patchim → 으로), nhờ đổi là 환전해 주세요. 바꿔 주세요 (đổi giúp) cũng tự nhiên.
+    display_answer: 백 달러를 원으로 환전해 주세요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:bank-post-mcq-post-office
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:sopo
+    prompt:
+      stem: Ở bưu điện, bạn muốn hỏi nhân viên xem có gửi được bưu kiện sang Việt Nam không. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - { id: x4e, text: 베트남에 소포를 보낼 수 있어요?, lang: ko }
+        - { id: l2r, text: 베트남에 소포 주세요., lang: ko }
+        - { id: h9v, text: 베트남에 소포를 보낼 수 없어요., lang: ko }
+        - { id: c6a, text: 베트남에서 소포가 왔어요., lang: ko }
+    answer:
+      correct_option_id: x4e
+    explanation:
+      vi: Hỏi "có thể… không" dùng V-(으)ㄹ 수 있어요? lên giọng. 소포 주세요 là "cho tôi bưu kiện", còn 보낼 수 없어요 là khẳng định "không gửi được".
+    display_answer: 베트남에 소포를 보낼 수 있어요?
+
+  - key: ko:exercise:bank-post-translate-remit
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:songgeum
+    prompt:
+      source_text: Tôi muốn chuyển tiền về Việt Nam.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 베트남으로 송금하고 싶어요.
+        - 베트남에 송금하고 싶어요.
+        - 저는 베트남으로 송금하고 싶어요.
+        - 저는 베트남에 송금하고 싶어요.
+        - 베트남으로 돈을 보내고 싶어요.
+        - 베트남에 돈을 보내고 싶어요.
+        - 전 베트남으로 송금하고 싶어요.
+    known_wrong:
+      - answer: 베트남로 송금하고 싶어요.
+        feedback_vi: 베트남 có patchim ㅁ nên dùng 으로 - 베트남으로.
+        error_tag: particle_ro_euro
+      - answer: 베트남으로 송금 주세요.
+        feedback_vi: 송금 là danh từ; nhờ chuyển tiền là 송금해 주세요, còn "muốn" là 송금하고 싶어요.
+        error_tag: noun_juseyo
+    explanation:
+      vi: Muốn chuyển tiền là 송금하고 싶어요; về Việt Nam dùng 베트남으로 hoặc 베트남에. 돈을 보내다 (gửi tiền) cũng đúng.
+    display_answer: 베트남으로 송금하고 싶어요.
+
+  - key: ko:exercise:bank-post-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:yeogwon
+    prompt:
+      source_text: 여권을 보여 주세요. 오늘 통장을 만들 수 있어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin cho tôi xem hộ chiếu. Hôm nay có thể mở tài khoản.
+        - Cho tôi xem hộ chiếu. Hôm nay có thể mở tài khoản.
+        - Xin cho xem hộ chiếu. Hôm nay mở tài khoản được.
+        - Cho tôi xem hộ chiếu. Hôm nay mở tài khoản được.
+        - Vui lòng cho tôi xem hộ chiếu. Hôm nay bạn có thể mở tài khoản.
+        - Cho tôi xem hộ chiếu của bạn. Hôm nay bạn có thể mở tài khoản.
+        - Xin cho tôi xem hộ chiếu. Hôm nay bạn mở tài khoản được.
+        - Cho tôi xem hộ chiếu nhé. Hôm nay có thể mở tài khoản.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xin cho tôi xem hộ chiếu. Hôm nay không thể mở tài khoản.
+        feedback_vi: 만들 수 있어요 là "có thể"; "không thể" mới là 만들 수 없어요.
+        error_tag: l_su_negation
+    explanation:
+      vi: 보여 주세요 là "cho tôi xem" (보이다 - cho thấy + 주세요). 통장을 만들 수 있어요 là "có thể mở tài khoản".
+    display_answer: Xin cho tôi xem hộ chiếu. Hôm nay có thể mở tài khoản.
+
+  - key: ko:exercise:bank-post-mcq-slowly
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-a-eo-juseyo
+    prompt:
+      stem: Nhân viên ngân hàng nói quá nhanh, bạn không hiểu. Bạn nhờ họ thế nào?
+      stem_lang: vi
+      options:
+        - { id: s7k, text: 천천히 말해 주세요., lang: ko }
+        - { id: m3b, text: 천천히 말 주세요., lang: ko }
+        - { id: z9g, text: 빨리 말해 주세요., lang: ko }
+        - { id: i1w, text: 천천히 말할 수 없어요., lang: ko }
+    answer:
+      correct_option_id: s7k
+    explanation:
+      vi: 말하다 → 말해 + 주세요 = "nói giúp tôi"; 천천히 là "chậm rãi". 말 주세요 thiếu động từ, 빨리 là "nhanh", còn 말할 수 없어요 là "không nói được".
+    display_answer: 천천히 말해 주세요.
+
+  - key: ko:exercise:bank-post-wb-write-name
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-a-eo-juseyo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Xin viết tên vào đây giúp tôi.\""
+      tokens:
+        - { id: k4, text: 주세요 }
+        - { id: k2, text: 이름을 }
+        - { id: k3, text: 써 }
+        - { id: k1, text: 여기에 }
+        - { id: k5, text: 쓰 }
+    answer:
+      orders:
+        - [k1, k2, k3, k4]
+        - [k2, k1, k3, k4]
+    explanation:
+      vi: 쓰다 + 어 thành 써 (ㅡ rơi mất), rồi thêm 주세요 - 써 주세요. 여기에 và 이름을 có thể đổi chỗ; động từ luôn ở cuối.
+    display_answer: 여기에 이름을 써 주세요.

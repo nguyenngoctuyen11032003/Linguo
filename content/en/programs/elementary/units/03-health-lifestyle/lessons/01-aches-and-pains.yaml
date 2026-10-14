@@ -1,0 +1,434 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:aches-and-pains
+order_index: 1
+level: a2
+title:
+  vi: Bạn bị sao thế? - bộ phận cơ thể và triệu chứng
+objectives:
+  - vi: Gọi tên các bộ phận cơ thể hay đau - head, back, stomach, throat, tooth, leg.
+  - vi: Nói mình bị bệnh gì bằng have (got) a… - a headache, a cold, a fever, a sore throat.
+  - vi: Nói chỗ đau bằng My… hurts và hỏi thăm bằng What's the matter?
+estimated_minutes: 15
+skills: [vocabulary, grammar, speaking, listening]
+prerequisites: [en:lesson:plans-travel-review]
+items:
+  - item: en:item:head
+  - item: en:item:back
+  - item: en:item:stomach
+  - item: en:item:throat
+  - item: en:item:tooth
+  - item: en:item:leg
+  - item: en:item:headache
+  - item: en:item:stomachache
+  - item: en:item:sore-throat
+  - item: en:item:have-a-cold
+  - item: en:item:fever
+  - item: en:item:cough
+  - item: en:item:body-part-hurts
+  - item: en:item:whats-the-matter
+  - item: en:item:have-an-illness
+  - item: en:item:have-got
+    role: reuse
+  - item: en:item:have-has
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được với bạn bè, đồng nghiệp hay bác sĩ rằng mình đau đầu, đau lưng, bị cảm hay bị sốt - đúng ngữ pháp, không dịch từng chữ từ tiếng Việt.
+  - type: explain
+    text:
+      vi: Tiếng Việt nói "tôi bị đau đầu", "tôi bị cảm". Tiếng Anh không có chữ "bị" - bệnh là một danh từ và bạn "có" nó - I have a headache hoặc I've got a headache. Nhớ có a trước tên bệnh.
+  - type: explain
+    text:
+      vi: Muốn nói chỗ nào đau, dùng bộ phận cơ thể làm chủ ngữ và động từ hurt - My back hurts (Tôi đau lưng). Bộ phận số nhiều thì bỏ -s ở động từ - My legs hurt.
+  - type: explain
+    text:
+      vi: Khi thấy ai đó có vẻ mệt, bạn hỏi What's the matter? (Bạn bị sao thế?). Hỏi về người khác thì thêm with - What's the matter with your son?
+  - type: deep_explain
+    text:
+      vi: "Một số bệnh có đuôi -ache (đau âm ỉ): headache, stomachache, toothache, backache. Riêng họng không có \"throatache\" mà nói a sore throat. Với I/you/we/they dùng have / 've got; với he/she/it dùng has / 's got - She's got a fever. Cảm lạnh là a cold; nếu bỏ a thành I'm cold thì nghĩa đổi thành \"tôi thấy lạnh\"."
+  - type: example
+    target: "A: What's the matter? B: I've got a headache."
+    target_lang: en
+    translation:
+      vi: "A: Bạn bị sao thế? B: Mình bị đau đầu."
+    note:
+      vi: I've got = I have got; headache là danh từ nên có a đứng trước.
+  - type: example
+    target: My back hurts. I sit at my desk all day.
+    target_lang: en
+    translation:
+      vi: Tôi đau lưng. Tôi ngồi bàn làm việc cả ngày.
+    note:
+      vi: Bộ phận cơ thể làm chủ ngữ, động từ hurt thêm -s vì my back là số ít.
+  - type: example
+    target: She's got a cold and a sore throat, so she's at home today.
+    target_lang: en
+    translation:
+      vi: Cô ấy bị cảm và đau họng nên hôm nay ở nhà.
+    note:
+      vi: She's got = She has got. Mỗi bệnh đều có a riêng.
+  - type: example
+    target: "A: What's the matter with Tom? B: He's got a fever and a bad cough."
+    target_lang: en
+    translation:
+      vi: "A: Tom bị sao vậy? B: Cậu ấy bị sốt và ho nặng."
+    note:
+      vi: Hỏi về người khác thì thêm with + người đó. A bad cough là ho nặng.
+  - type: common_mistake
+    wrong: I am headache.
+    right: I have a headache. / I've got a headache.
+    target_lang: en
+    note:
+      vi: Headache là danh từ (cơn đau đầu), không phải tính từ, nên không đi với am. Dùng have hoặc have got + a.
+  - type: common_mistake
+    wrong: My head is pain.
+    right: My head hurts.
+    target_lang: en
+    note:
+      vi: Pain là danh từ, không đứng sau is để tả chỗ đau. Dùng động từ hurt - My head hurts.
+  - type: common_mistake
+    wrong: I have cold.
+    right: I have a cold. / I've got a cold.
+    target_lang: en
+    note:
+      vi: Bị cảm là a cold, phải có a. Không có a, câu nghe như thiếu chữ; còn I'm cold lại là "tôi thấy lạnh".
+  - type: summary
+    points:
+      - vi: Bộ phận - head, back, stomach, throat, tooth (teeth), leg.
+      - vi: Bệnh - a headache, a stomachache, a sore throat, a cold, a fever, a cough.
+      - vi: I/you/we/they have (got) a… · he/she/it has (got) a…
+      - vi: My back hurts. · My legs hurt. (không nói "is pain")
+      - vi: What's the matter? / What's the matter with him?
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:aches-and-pains-mcq-headache
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:have-an-illness
+    prompt:
+      stem: "Câu nào nói đúng \"Tôi bị đau đầu\"?"
+      stem_lang: vi
+      options:
+        - { id: x7q, text: "I've got a headache.", lang: en }
+        - { id: m2c, text: "I am headache.", lang: en }
+        - { id: d9u, text: "My head is pain.", lang: en }
+        - { id: p4l, text: "I've got headache.", lang: en }
+    answer:
+      correct_option_id: x7q
+    explanation:
+      vi: Headache là danh từ đếm được nên cần have (got) + a. "I am headache" dùng sai be, "My head is pain" dùng danh từ pain như tính từ, còn "I've got headache" thiếu a.
+    display_answer: "I've got a headache."
+
+  - key: en:exercise:aches-and-pains-listen-back
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: en:item:body-part-hurts
+    prompt:
+      audio_asset_id: null
+      fallback_text: "What's the matter? - My back hurts."
+      options:
+        - { id: s5h, text: "Bạn bị sao thế? - Tôi đau lưng.", lang: vi }
+        - { id: a8e, text: "Bạn bị sao thế? - Tôi đau đầu.", lang: vi }
+        - { id: k1t, text: "Bạn bị sao thế? - Tôi đau bụng.", lang: vi }
+        - { id: w6b, text: "Bạn đi đâu thế? - Tôi về nhà.", lang: vi }
+    answer:
+      correct_option_id: s5h
+    explanation:
+      vi: Back là lưng (head là đầu, stomach là bụng). What's the matter? là câu hỏi thăm "bạn bị sao thế", không phải hỏi đi đâu.
+    display_answer: "Bạn bị sao thế? - Tôi đau lưng."
+
+  - key: en:exercise:aches-and-pains-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:body-part-hurts
+    prompt:
+      template: "She's got a {{b1}}. Her head {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Cô ấy bị đau đầu. Đầu cô ấy đau."
+        - "Gợi ý: một danh từ có đuôi -ache; động từ hurt chia với her head (số ít)."
+    answer:
+      blanks:
+        b1: [headache]
+        b2: [hurts]
+    known_wrong:
+      - answer: is pain
+        feedback_vi: Pain là danh từ, không đứng sau is. Dùng động từ hurts.
+        error_tag: pain_as_adjective
+      - answer: pain
+        feedback_vi: Chỗ này cần động từ - Her head hurts.
+        error_tag: pain_as_adjective
+      - answer: head
+        feedback_vi: Have got cần một tên bệnh (danh từ) - a headache, không phải a head.
+        error_tag: illness_noun
+    explanation:
+      vi: Have got a + tên bệnh - a headache. Ở câu sau, her head là số ít nên động từ hurt thêm -s thành hurts.
+    display_answer: "She's got a headache. Her head hurts."
+
+  - key: en:exercise:aches-and-pains-mcq-cold
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:have-a-cold
+    prompt:
+      stem: "Bạn muốn nói \"Tôi bị cảm\". Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: r3n, text: "I've got a cold.", lang: en }
+        - { id: j8v, text: "I'm cold.", lang: en }
+        - { id: e5y, text: "I'm a cold.", lang: en }
+        - { id: g0z, text: "I have cold.", lang: en }
+    answer:
+      correct_option_id: r3n
+    explanation:
+      vi: Bị cảm là have (got) a cold. "I'm cold" nghĩa là "tôi thấy lạnh"; "I'm a cold" và "I have cold" sai ngữ pháp.
+    display_answer: "I've got a cold."
+
+  - key: en:exercise:aches-and-pains-order-matter
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:whats-the-matter
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Anh: \"Anh ấy bị sao vậy?\""
+      tokens:
+        - { id: wm-with, text: with }
+        - { id: wm-matter, text: matter }
+        - { id: wm-him, text: him }
+        - { id: wm-whats, text: "What's" }
+        - { id: wm-the, text: the }
+        - { id: wm-he, text: he }
+        - { id: wm-is, text: is }
+    answer:
+      orders:
+        - [wm-whats, wm-the, wm-matter, wm-with, wm-him]
+    explanation:
+      vi: Mẫu cố định What's the matter?, hỏi về người khác thì thêm with + him/her. Sau with dùng him (tân ngữ), không dùng he.
+    display_answer: "What's the matter with him?"
+
+  # ---------------- recall ----------------
+  - key: en:exercise:aches-and-pains-fill-dialogue
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:have-an-illness
+    prompt:
+      template: "A: What's the {{b1}}? B: I {{b2}} a sore throat."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [matter, problem]
+        b2: [have, have got, "'ve got"]
+    known_wrong:
+      - answer: am
+        feedback_vi: Sore throat là danh từ, nên dùng have, không dùng am.
+        error_tag: be_with_illness
+      - answer: has
+        feedback_vi: I đi với have, has chỉ dùng cho he/she/it.
+        error_tag: have_has
+      - answer: wrong
+        feedback_vi: What's wrong? cũng đúng nhưng không có the. Ở đây cần What's the matter?
+        error_tag: fixed_phrase
+    explanation:
+      vi: Câu hỏi thăm cố định là What's the matter? Bệnh là danh từ nên trả lời bằng I have (got) a sore throat.
+    display_answer: "A: What's the matter? B: I have a sore throat."
+
+  - key: en:exercise:aches-and-pains-translate-back
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:body-part-hurts
+    prompt:
+      source_text: Tôi đau lưng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My back hurts.
+        - I have a backache.
+        - I've got a backache.
+        - I have got a backache.
+        - I have backache.
+        - I've got backache.
+        - I have back pain.
+        - I've got back pain.
+        - My back is hurting.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My back is pain.
+        feedback_vi: Pain là danh từ, không đứng sau is. Nói My back hurts.
+        error_tag: pain_as_adjective
+      - answer: I am backache.
+        feedback_vi: Backache là danh từ, không đi với am. Nói I have a backache.
+        error_tag: be_with_illness
+      - answer: My back hurt.
+        feedback_vi: My back là số ít nên hurt thêm -s - My back hurts.
+        error_tag: third_person_s
+    explanation:
+      vi: Cách tự nhiên nhất là lấy bộ phận làm chủ ngữ với động từ hurt - My back hurts. Cũng có thể dùng danh từ backache với have (got).
+    display_answer: My back hurts.
+
+  - key: en:exercise:aches-and-pains-translate-fever
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:fever
+    prompt:
+      source_text: Cô ấy bị sốt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - She has a fever.
+        - She's got a fever.
+        - She has got a fever.
+        - She has a temperature.
+        - She's got a temperature.
+        - She has got a temperature.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: She is fever.
+        feedback_vi: Fever là danh từ, không đi với is. Nói She has a fever.
+        error_tag: be_with_illness
+      - answer: She have a fever.
+        feedback_vi: She đi với has, không phải have.
+        error_tag: have_has
+      - answer: She's fever.
+        feedback_vi: She's ở đây là She is - sai. Cần She's got a fever (She has got).
+        error_tag: be_with_illness
+    explanation:
+      vi: Không có chữ "bị" trong tiếng Anh; bệnh là danh từ nên dùng has (got) + a với she. Người Anh cũng hay nói has a temperature.
+    display_answer: She has a fever.
+
+  # ---------------- application ----------------
+  - key: en:exercise:aches-and-pains-translate-legs
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:leg
+    prompt:
+      source_text: My legs hurt after the football match.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi đau chân sau trận bóng đá.
+        - Tôi bị đau chân sau trận bóng đá.
+        - Chân tôi đau sau trận bóng đá.
+        - Chân tôi bị đau sau trận bóng đá.
+        - Tôi mỏi chân sau trận bóng đá.
+        - Sau trận bóng đá tôi đau chân.
+        - Sau trận bóng đá tôi bị đau chân.
+        - Sau trận bóng đá chân tôi đau.
+        - Tôi đau chân sau trận bóng.
+        - Sau trận bóng tôi đau chân.
+        - Sau trận bóng đá, tôi bị đau chân.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: My legs hurt là "tôi đau chân" (legs số nhiều nên hurt không có -s). Football match là trận bóng đá.
+    display_answer: Tôi đau chân sau trận bóng đá.
+
+  - key: en:exercise:aches-and-pains-mcq-ask
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:whats-the-matter
+    prompt:
+      stem: "Đồng nghiệp người Úc ngồi ôm bụng, mặt nhăn nhó. Bạn hỏi thăm thế nào cho tự nhiên?"
+      stem_lang: vi
+      options:
+        - { id: t4m, text: "What's the matter? Are you OK?", lang: en }
+        - { id: b7f, text: "What's your matter?", lang: en }
+        - { id: n2w, text: "What are you pain?", lang: en }
+        - { id: h9i, text: "Are you stomachache?", lang: en }
+    answer:
+      correct_option_id: t4m
+    explanation:
+      vi: What's the matter? là câu cố định để hỏi thăm, luôn dùng the. "Your matter" không tự nhiên, còn pain và stomachache là danh từ nên không đi với are.
+    display_answer: "What's the matter? Are you OK?"
+
+  - key: en:exercise:aches-and-pains-translate-son
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:cough
+    prompt:
+      source_text: Con trai tôi bị cảm và ho.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My son has a cold and a cough.
+        - My son has got a cold and a cough.
+        - My son's got a cold and a cough.
+        - My son has a cold and is coughing.
+        - My son has got a cold and is coughing.
+        - My son's got a cold and he's coughing.
+        - My son has a cold and he is coughing.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My son is cold and cough.
+        feedback_vi: Bị cảm là has a cold (is cold là "thấy lạnh"), và cough cũng cần has a.
+        error_tag: be_with_illness
+      - answer: My son have a cold and a cough.
+        feedback_vi: My son là ngôi thứ ba số ít nên dùng has.
+        error_tag: have_has
+      - answer: My son has cold and cough.
+        feedback_vi: Cold và cough ở đây là danh từ đếm được, mỗi từ cần a - a cold and a cough.
+        error_tag: article
+    explanation:
+      vi: My son là ngôi thứ ba số ít nên dùng has (got). Mỗi bệnh là danh từ đếm được nên có a riêng - a cold and a cough.
+    display_answer: My son has a cold and a cough.
+
+  - key: en:exercise:aches-and-pains-order-stomach
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:stomach
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Bụng cô ấy đau nên cô ấy không ăn được.\""
+      tokens:
+        - { id: st-so, text: so }
+        - { id: st-hurts, text: hurts }
+        - { id: st-she, text: she }
+        - { id: st-is, text: is }
+        - { id: st-her, text: Her }
+        - { id: st-eat, text: eat }
+        - { id: st-stomach, text: stomach }
+        - { id: st-cant, text: "can't" }
+        - { id: st-pain, text: pain }
+    answer:
+      orders:
+        - [st-her, st-stomach, st-hurts, st-so, st-she, st-cant, st-eat]
+    explanation:
+      vi: Bộ phận cơ thể làm chủ ngữ với động từ hurts (Her stomach hurts), không dùng is pain. Can't + động từ nguyên mẫu eat.
+    display_answer: "Her stomach hurts, so she can't eat."

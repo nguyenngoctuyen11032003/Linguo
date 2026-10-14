@@ -1,0 +1,429 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:relationship-phrasal-verbs
+order_index: 3
+level: b2
+title:
+  vi: Hợp nhau, giận nhau, làm lành - cụm động từ & thành ngữ
+objectives:
+  - vi: Dùng các cụm động từ get on with, fall out with, make up, break up, look up to, put up with, bring up, ask out.
+  - vi: Đặt tân ngữ và đại từ đúng chỗ trong cụm động từ.
+  - vi: Dùng thành ngữ have a lot in common, see eye to eye, a shoulder to cry on.
+estimated_minutes: 20
+skills: [vocabulary, grammar, speaking]
+prerequisites: [en:lesson:gerund-or-infinitive]
+items:
+  - item: en:item:get-on-with
+  - item: en:item:fall-out-with
+  - item: en:item:make-up-with
+  - item: en:item:break-up-with
+  - item: en:item:look-up-to
+  - item: en:item:put-up-with
+  - item: en:item:bring-up
+  - item: en:item:ask-out
+  - item: en:item:phrasal-verb-object-position
+  - item: en:item:have-a-lot-in-common
+  - item: en:item:see-eye-to-eye
+  - item: en:item:a-shoulder-to-cry-on
+  - item: en:item:close-friend
+  - item: en:item:flatmate
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được câu chuyện về các mối quan hệ - ai hợp với ai, ai giận ai, ai làm lành - bằng cụm động từ và thành ngữ tự nhiên như người bản ngữ.
+  - type: explain
+    text:
+      vi: Cụm động từ (phrasal verb) là động từ + một hoặc hai tiểu từ (on, up, out, with…), và nghĩa của cả cụm thường khác hẳn nghĩa từng chữ. Ví dụ get on with không phải "lên với" mà là "hợp tính với" - bạn nên học cả cụm như một từ mới.
+  - type: explain
+    text:
+      vi: Giới từ cuối cụm là bắt buộc và không thay được - get on well with (không phải "to"), put up with (thiếu with là nghĩa khác). Tiếng Việt "hợp với", "chịu đựng" khác cấu trúc, nên đây là chỗ người Việt hay sai.
+  - type: explain
+    text:
+      vi: "Với cụm hai từ có tân ngữ như bring up, ask out, đại từ (me, her, them) luôn đứng giữa - brought me up, asked her out. Cụm ba từ (get on with, look up to, put up with) không tách được, tân ngữ luôn đứng cuối."
+  - type: deep_explain
+    text:
+      vi: "Một số cụm có nhiều nghĩa: make up còn là \"bịa ra\" và \"trang điểm\"; bring up còn là \"nêu ra (một chủ đề)\"; put someone up là \"cho ai ở nhờ\". Thành ngữ thì giữ nguyên hình thức - see eye to eye (không thêm -s), have a lot in common (không nói \"many common points\"). See eye to eye gần như luôn dùng ở câu phủ định."
+  - type: example
+    target: "I get on really well with my flatmate - we have a lot in common."
+    target_lang: en
+    translation:
+      vi: Tôi rất hợp với bạn cùng nhà - chúng tôi có nhiều điểm chung.
+    note:
+      vi: Get on well with - giới từ with là bắt buộc.
+  - type: example
+    target: "Mai fell out with her best friend over a boy, but they made up a month later."
+    target_lang: en
+    translation:
+      vi: Mai giận nhau với bạn thân vì một cậu con trai, nhưng một tháng sau họ đã làm lành.
+    note:
+      vi: Quá khứ của fall out là fell out, của make up là made up.
+  - type: example
+    target: "My grandmother brought me up, and I've always looked up to her."
+    target_lang: en
+    translation:
+      vi: Bà nội nuôi tôi lớn, và tôi luôn coi bà là tấm gương.
+    note:
+      vi: Đại từ me đứng giữa brought và up; look up to không tách, her đứng cuối.
+  - type: example
+    target: "My dad and I don't always see eye to eye, but he's always been a shoulder to cry on."
+    target_lang: en
+    translation:
+      vi: Bố và tôi không phải lúc nào cũng cùng quan điểm, nhưng bố luôn là chỗ dựa tinh thần của tôi.
+  - type: common_mistake
+    wrong: I get on well to my colleagues.
+    right: I get on well with my colleagues.
+    target_lang: en
+    note:
+      vi: Tiếng Việt nói "hợp với", nhưng nhiều người dịch "với" thành to. Cụm này luôn đi với with.
+  - type: common_mistake
+    wrong: I can't put up his behaviour any more.
+    right: I can't put up with his behaviour any more.
+    target_lang: en
+    note:
+      vi: Chịu đựng là put up with - thiếu with thì put up lại thành "treo lên" hoặc "cho ở nhờ".
+  - type: common_mistake
+    wrong: My aunt brought up me.
+    right: My aunt brought me up.
+    target_lang: en
+    note:
+      vi: Khi tân ngữ là đại từ (me, him, her, them), đặt nó giữa động từ và tiểu từ.
+  - type: summary
+    points:
+      - vi: "Hợp tính: get on (well) with. Giận nhau: fall out with. Làm lành: make up (with)."
+      - vi: "Chia tay người yêu: break up with. Mời đi chơi: ask someone out."
+      - vi: "Ngưỡng mộ: look up to. Chịu đựng: put up with. Nuôi dạy: bring someone up."
+      - vi: Đại từ đứng giữa cụm hai từ (brought me up); cụm ba từ không tách (look up to her).
+      - vi: "Thành ngữ: have a lot in common, (not) see eye to eye, a shoulder to cry on."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:phrasal-mcq-look-up-to
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:look-up-to
+    prompt:
+      stem: "\"I've always looked up to my older brother.\" Look up to nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a8t, text: "ngưỡng mộ, coi là tấm gương", lang: vi }
+        - { id: f3k, text: coi thường, lang: vi }
+        - { id: u6d, text: tra cứu thông tin về, lang: vi }
+        - { id: o2m, text: chăm sóc, lang: vi }
+    answer:
+      correct_option_id: a8t
+    explanation:
+      vi: Look up to là ngưỡng mộ, kính trọng - hình ảnh "nhìn lên" một người. Coi thường là look down on; tra cứu là look up (không có to); chăm sóc là look after.
+    display_answer: ngưỡng mộ, coi là tấm gương
+
+  - key: en:exercise:phrasal-listen-eye-to-eye
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:see-eye-to-eye
+    prompt:
+      audio_asset_id: null
+      fallback_text: My sister and I don't always see eye to eye, but we get on really well.
+      options:
+        - { id: n5b, text: Chị gái và tôi không phải lúc nào cũng cùng quan điểm nhưng chúng tôi rất hợp nhau., lang: vi }
+        - { id: e1q, text: Chị gái và tôi không hay nhìn vào mắt nhau nhưng chúng tôi rất hợp nhau., lang: vi }
+        - { id: x7c, text: Chị gái và tôi luôn cùng quan điểm nhưng chúng tôi hay cãi nhau., lang: vi }
+        - { id: g9v, text: Chị gái và tôi không phải lúc nào cũng gặp nhau nhưng chúng tôi vẫn giữ liên lạc., lang: vi }
+    answer:
+      correct_option_id: n5b
+    explanation:
+      vi: See eye to eye là thành ngữ "cùng quan điểm", không hiểu theo nghĩa đen "nhìn mắt". Get on really well là rất hợp nhau.
+    display_answer: Chị gái và tôi không phải lúc nào cũng cùng quan điểm nhưng chúng tôi rất hợp nhau.
+
+  - key: en:exercise:phrasal-fill-get-on-with-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:get-on-with
+    prompt:
+      template: "Do you get on well {{b1}} your new flatmate?"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Bạn có hợp với bạn cùng nhà mới không?"
+        - "Gợi ý: giới từ có 4 chữ cái, nghĩa là \"với\"."
+    answer:
+      blanks:
+        b1: [with]
+    known_wrong:
+      - answer: to
+        feedback_vi: Get on well luôn đi với with, không dùng to.
+        error_tag: phrasal_verb_preposition
+      - answer: for
+        feedback_vi: Get on well luôn đi với with.
+        error_tag: phrasal_verb_preposition
+    explanation:
+      vi: Get on (well) with somebody là hợp tính với ai. Tiếng Việt "với" ở đây tương ứng with, không phải to.
+    display_answer: Do you get on well with your new flatmate?
+
+  - key: en:exercise:phrasal-order-brought-me-up
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:phrasal-verb-object-position
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Ông bà nuôi tôi lớn.\""
+      tokens:
+        - { id: b-up, text: up }
+        - { id: b-grew, text: grew }
+        - { id: b-me, text: me }
+        - { id: b-grandparents, text: grandparents }
+        - { id: b-brought, text: brought }
+        - { id: b-my, text: My }
+    answer:
+      orders:
+        - [b-my, b-grandparents, b-brought, b-me, b-up]
+    explanation:
+      vi: Nuôi ai lớn là bring someone up; đại từ me phải đứng giữa brought và up. Grew up là "lớn lên" (đứa trẻ tự lớn), không có tân ngữ.
+    display_answer: My grandparents brought me up.
+
+  - key: en:exercise:phrasal-mcq-put-up-with
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:put-up-with
+    prompt:
+      stem: "Chọn câu đúng: \"Tôi không chịu đựng nổi tiếng ồn của anh ta nữa.\""
+      stem_lang: vi
+      options:
+        - { id: c4j, text: I can't put up with his noise any more., lang: en }
+        - { id: h0p, text: I can't put up his noise any more., lang: en }
+        - { id: v8r, text: I can't put with up his noise any more., lang: en }
+        - { id: l2s, text: I can't put his noise up with any more., lang: en }
+    answer:
+      correct_option_id: c4j
+    explanation:
+      vi: Chịu đựng là put up with, đủ ba từ và không tách - tân ngữ đứng cuối. Put up (thiếu with) là "treo lên" hoặc "cho ở nhờ".
+    display_answer: I can't put up with his noise any more.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:phrasal-fill-fell-out-made-up
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:fall-out-with
+    prompt:
+      template: "Linh {{b1}} out with her best friend over money, but they {{b2}} up a week later and now they're closer than ever."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [fell]
+        b2: [made]
+    known_wrong:
+      - answer: falled
+        feedback_vi: Fall là động từ bất quy tắc - fall, fell, fallen.
+        error_tag: irregular_verb
+      - answer: maked
+        feedback_vi: Make là động từ bất quy tắc - make, made, made.
+        error_tag: irregular_verb
+      - answer: broke
+        feedback_vi: Broke up là chia tay. Sau khi giận rồi thân lại là làm lành - made up.
+        error_tag: phrasal_verb_meaning
+      - answer: fall
+        feedback_vi: Câu kể chuyện quá khứ - fell out.
+        error_tag: past_simple
+      - answer: make
+        feedback_vi: Câu kể chuyện quá khứ - made up.
+        error_tag: past_simple
+    explanation:
+      vi: Fall out with là cãi nhau rồi giận; make up là làm lành. Câu kể chuyện đã qua nên dùng quá khứ bất quy tắc fell, made.
+    display_answer: Linh fell out with her best friend over money, but they made up a week later and now they're closer than ever.
+
+  - key: en:exercise:phrasal-fill-in-common-cry-on
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:have-a-lot-in-common
+    prompt:
+      template: "My cousin and I have a lot in {{b1}}, and she's always been a shoulder to cry {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [common]
+        b2: [on]
+    known_wrong:
+      - answer: commons
+        feedback_vi: Thành ngữ cố định là have a lot in common, không thêm -s.
+        error_tag: idiom_form
+      - answer: same
+        feedback_vi: Có điểm chung là have a lot in common.
+        error_tag: idiom_form
+      - answer: with
+        feedback_vi: Thành ngữ là a shoulder to cry on - giới từ on (khóc trên vai).
+        error_tag: idiom_form
+    explanation:
+      vi: Hai thành ngữ có hình thức cố định - have a lot in common (có nhiều điểm chung) và a shoulder to cry on (chỗ dựa tinh thần, khóc "trên" vai nên dùng on).
+    display_answer: My cousin and I have a lot in common, and she's always been a shoulder to cry on.
+
+  - key: en:exercise:phrasal-translate-get-on-colleagues
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:get-on-with
+    prompt:
+      source_text: Tôi rất hợp với các đồng nghiệp mới.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I get on really well with my new colleagues.
+        - I get on very well with my new colleagues.
+        - I get on well with my new colleagues.
+        - I get along really well with my new colleagues.
+        - I get along very well with my new colleagues.
+        - I get along well with my new colleagues.
+        - I really get on with my new colleagues.
+        - I get on really well with the new colleagues.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I get on really well to my new colleagues.
+        feedback_vi: Get on well luôn đi với with, không phải to.
+        error_tag: phrasal_verb_preposition
+      - answer: I get on well to my new colleagues.
+        feedback_vi: Get on well luôn đi với with, không phải to.
+        error_tag: phrasal_verb_preposition
+      - answer: I am very suitable with my new colleagues.
+        feedback_vi: Suitable là "phù hợp" (với việc, đồ vật). Hợp tính với người là get on well with.
+        error_tag: word_choice
+    explanation:
+      vi: "\"Hợp với ai\" là get on (well) with someone - người Mỹ hay nói get along with. Really / very well đứng sau get on, trước with."
+    display_answer: I get on really well with my new colleagues.
+
+  # ---------------- application ----------------
+  - key: en:exercise:phrasal-translate-puts-up-with-him
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:put-up-with
+    prompt:
+      source_text: Tôi không hiểu sao cô ấy chịu đựng được anh ta.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I don't know how she puts up with him.
+        - I don't understand how she puts up with him.
+        - I don't know how she can put up with him.
+        - I don't understand how she can put up with him.
+        - I have no idea how she puts up with him.
+        - I have no idea how she can put up with him.
+        - I don't know why she puts up with him.
+        - I don't understand why she puts up with him.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I don't know how she puts up him.
+        feedback_vi: Thiếu with - chịu đựng là put up with.
+        error_tag: phrasal_verb_preposition
+      - answer: I don't know how she puts him up with.
+        feedback_vi: Put up with không tách được - tân ngữ him đứng cuối.
+        error_tag: phrasal_verb_object
+      - answer: I don't know how she puts up with he.
+        feedback_vi: Sau giới từ dùng đại từ tân ngữ him, không phải he.
+        error_tag: object_pronoun
+    explanation:
+      vi: Chịu đựng là put up with, cụm ba từ không tách, nên him đứng cuối. Chủ ngữ she nên puts có -s (hoặc dùng can put up with).
+    display_answer: I don't know how she puts up with him.
+
+  - key: en:exercise:phrasal-translate-looked-up-to
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:look-up-to
+    prompt:
+      source_text: I've always looked up to my older sister.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi luôn ngưỡng mộ chị gái tôi.
+        - Tôi luôn ngưỡng mộ chị gái mình.
+        - Tôi luôn ngưỡng mộ chị tôi.
+        - Tôi luôn ngưỡng mộ chị gái.
+        - Tôi vẫn luôn ngưỡng mộ chị gái tôi.
+        - Tôi lúc nào cũng ngưỡng mộ chị gái tôi.
+        - Tôi luôn kính trọng chị gái tôi.
+        - Tôi luôn coi chị gái tôi là tấm gương.
+        - Tôi luôn coi chị gái mình là tấm gương.
+        - Tôi luôn coi chị gái là tấm gương.
+        - Tôi luôn lấy chị gái làm tấm gương.
+        - Mình luôn ngưỡng mộ chị gái mình.
+        - Tôi luôn luôn ngưỡng mộ chị gái tôi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi luôn coi thường chị gái tôi.
+        feedback_vi: Coi thường là look down on. Look up to là ngưỡng mộ.
+        error_tag: phrasal_verb_meaning
+      - answer: Tôi luôn tìm kiếm chị gái tôi.
+        feedback_vi: Look up to không phải "tìm kiếm" mà là ngưỡng mộ, coi là tấm gương.
+        error_tag: phrasal_verb_meaning
+    explanation:
+      vi: Look up to someone là ngưỡng mộ, coi ai là tấm gương. Older sister là chị gái; have always + V3 dịch tự nhiên là "luôn" hoặc "vẫn luôn".
+    display_answer: Tôi luôn ngưỡng mộ chị gái tôi.
+
+  - key: en:exercise:phrasal-mcq-situation-parents
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:see-eye-to-eye
+    prompt:
+      stem: Bố mẹ của bạn bạn cãi nhau về mọi chuyện - từ chuyện ăn uống tới chính trị. Câu nào miêu tả đúng họ?
+      stem_lang: vi
+      options:
+        - { id: w3e, text: They don't see eye to eye on anything., lang: en }
+        - { id: j6y, text: They don't see eyes to eyes on anything., lang: en }
+        - { id: q1u, text: They have a lot in common., lang: en }
+        - { id: z9i, text: They look up to each other on everything., lang: en }
+    answer:
+      correct_option_id: w3e
+    explanation:
+      vi: Không cùng quan điểm về bất cứ điều gì là don't see eye to eye on anything; thành ngữ giữ nguyên eye, không thêm -s. Have a lot in common và look up to mang nghĩa tích cực, trái với tình huống.
+    display_answer: They don't see eye to eye on anything.
+
+  - key: en:exercise:phrasal-order-asked-her-out
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:ask-out
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Cuối cùng anh ấy cũng mời cô ấy đi chơi.\""
+      tokens:
+        - { id: o-her, text: her }
+        - { id: o-finally, text: finally }
+        - { id: o-out, text: out }
+        - { id: o-she, text: she }
+        - { id: o-he, text: He }
+        - { id: o-asked, text: asked }
+    answer:
+      orders:
+        - [o-he, o-finally, o-asked, o-her, o-out]
+    explanation:
+      vi: Mời ai đi chơi là ask someone out; đại từ her đứng giữa asked và out. Finally đứng trước động từ chính. Sau động từ cần đại từ tân ngữ her, không phải she.
+    display_answer: He finally asked her out.

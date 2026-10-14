@@ -1,0 +1,440 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:personality-getting-used-to
+order_index: 4
+level: b2
+title:
+  vi: Tính cách & chuyện "đã quen"
+objectives:
+  - vi: Miêu tả tính cách bằng tính từ ghép (open-minded, easy-going, self-confident, hard-working) và các tính từ reliable, stubborn, generous, selfish.
+  - vi: Phân biệt used to do (đã từng) với be used to doing (đã quen) và get used to doing (dần quen).
+  - vi: Tránh lỗi "I'm used to get up" bằng cách nhận ra to là giới từ.
+estimated_minutes: 20
+skills: [vocabulary, grammar, writing]
+prerequisites: [en:lesson:relationship-phrasal-verbs]
+items:
+  - item: en:item:compound-adjectives
+  - item: en:item:open-minded
+  - item: en:item:easy-going
+  - item: en:item:self-confident
+  - item: en:item:hard-working
+  - item: en:item:reliable
+  - item: en:item:stubborn
+  - item: en:item:generous
+  - item: en:item:selfish
+  - item: en:item:bad-tempered
+  - item: en:item:be-used-to
+  - item: en:item:get-used-to
+  - item: en:item:used-to-vs-be-used-to
+  - item: en:item:preposition-plus-ing
+    role: reuse
+  - item: en:item:flatmate
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn miêu tả được tính cách của người thân, bạn bè một cách tinh tế hơn "nice" hay "good", và nói được mình đã quen hay đang dần quen với một cuộc sống mới.
+  - type: explain
+    text:
+      vi: "Tiếng Anh có nhiều tính từ ghép miêu tả tính cách, nối hai phần bằng gạch ngang: open-minded (cởi mở), easy-going (dễ tính), self-confident (tự tin), hard-working (chăm chỉ), bad-tempered (nóng tính). Chúng hoạt động như tính từ thường - không thêm -s, đứng trước danh từ hoặc sau be."
+  - type: explain
+    text:
+      vi: "Used to + V nguyên mẫu là \"đã từng\" (thói quen cũ, nay không còn) - I used to live with my grandparents. Be used to + V-ing là \"đã quen\" - I'm used to living alone. Get used to + V-ing là \"dần quen\" - I'm getting used to the noise."
+  - type: explain
+    text:
+      vi: Trong be used to và get used to, to là giới từ, nên phía sau là V-ing hoặc danh từ. Tiếng Việt "quen dậy sớm" không đổi dạng động từ, nên người Việt hay nói nhầm "I'm used to get up".
+  - type: deep_explain
+    text:
+      vi: "Mẹo phân biệt: có be hoặc get đứng trước used → nghĩa \"quen\", theo sau là V-ing. Không có be / get → nghĩa \"đã từng\", theo sau là V nguyên mẫu. Be used to và get used to chia được ở mọi thì - I've got used to it, You'll get used to it, She wasn't used to the cold."
+  - type: example
+    target: "My new flatmate is easy-going and very reliable - I couldn't ask for more."
+    target_lang: en
+    translation:
+      vi: Bạn cùng nhà mới của tôi dễ tính và rất đáng tin cậy - tôi chẳng mong gì hơn.
+  - type: example
+    target: "I used to be quite shy, but working in sales made me more self-confident."
+    target_lang: en
+    translation:
+      vi: Trước đây tôi khá nhút nhát, nhưng làm bán hàng đã giúp tôi tự tin hơn.
+    note:
+      vi: Used to be - tính cách cũ, giờ đã thay đổi.
+  - type: example
+    target: "I'm used to getting up early, but I still haven't got used to the cold mornings here."
+    target_lang: en
+    translation:
+      vi: Tôi quen dậy sớm rồi, nhưng vẫn chưa quen được với những buổi sáng lạnh ở đây.
+    note:
+      vi: Be used to + V-ing (đã quen); get used to + danh từ (quá trình làm quen).
+  - type: example
+    target: "He's generous with his time, but he can be stubborn when he thinks he's right."
+    target_lang: en
+    translation:
+      vi: Anh ấy sẵn lòng dành thời gian cho người khác, nhưng có thể khá cứng đầu khi nghĩ mình đúng.
+  - type: common_mistake
+    wrong: I'm used to get up at 5 a.m.
+    right: I'm used to getting up at 5 a.m.
+    target_lang: en
+    note:
+      vi: To trong be used to là giới từ, nên sau nó là V-ing. Tiếng Việt không đổi dạng động từ, nên bạn cần nhớ thêm -ing.
+  - type: common_mistake
+    wrong: When I was young, I was used to live in Huế.
+    right: When I was young, I used to live in Huế.
+    target_lang: en
+    note:
+      vi: "\"Đã từng\" là used to + V nguyên mẫu, không có be phía trước."
+  - type: common_mistake
+    wrong: They are two hard-workings students.
+    right: They are two hard-working students.
+    target_lang: en
+    note:
+      vi: Tính từ ghép vẫn là tính từ, nên không thêm -s dù danh từ là số nhiều.
+  - type: summary
+    points:
+      - vi: "Tính từ ghép: open-minded, easy-going, self-confident, hard-working, bad-tempered - không thêm -s."
+      - vi: "Khen: reliable (đáng tin), generous (hào phóng). Chê: stubborn (cứng đầu), selfish (ích kỷ)."
+      - vi: "used to + V nguyên mẫu = đã từng (I used to live in Huế)."
+      - vi: "be used to + V-ing = đã quen; get used to + V-ing = dần quen."
+      - vi: Có be / get → V-ing; không có be / get → V nguyên mẫu.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:personality-mcq-easy-going
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:easy-going
+    prompt:
+      stem: "\"My boss is very easy-going.\" Easy-going nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: p6x, text: dễ tính, lang: vi }
+        - { id: t2b, text: dễ bỏ cuộc, lang: vi }
+        - { id: k9w, text: hay đi lại, lang: vi }
+        - { id: r4m, text: nóng tính, lang: vi }
+    answer:
+      correct_option_id: p6x
+    explanation:
+      vi: Easy-going là dễ tính, thoải mái, không hay căng thẳng. Đây là nghĩa của cả cụm, không dịch từng chữ "dễ" + "đi". Nóng tính là bad-tempered.
+    display_answer: dễ tính
+
+  - key: en:exercise:personality-listen-not-used-to
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:be-used-to
+    prompt:
+      audio_asset_id: null
+      fallback_text: I'm not used to living alone yet.
+      options:
+        - { id: d5h, text: Tôi vẫn chưa quen sống một mình., lang: vi }
+        - { id: s1v, text: Trước đây tôi không sống một mình., lang: vi }
+        - { id: m8g, text: Tôi chưa bao giờ sống một mình., lang: vi }
+        - { id: y3k, text: Tôi không muốn sống một mình nữa., lang: vi }
+    answer:
+      correct_option_id: d5h
+    explanation:
+      vi: Not used to + V-ing (có be - I'm) là "chưa quen", yet là "vẫn chưa". "Trước đây không…" sẽ là didn't use to live - không có be.
+    display_answer: Tôi vẫn chưa quen sống một mình.
+
+  - key: en:exercise:personality-fill-reliable-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:reliable
+    prompt:
+      template: "Nam is very {{b1}} - if he promises to help, he always does."
+      blanks:
+        - { id: b1, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa: Nam rất đáng tin cậy - đã hứa giúp là anh ấy luôn giúp."
+        - "Gợi ý: tính từ bắt đầu bằng re…, kết thúc bằng -able."
+    answer:
+      blanks:
+        b1: [reliable, dependable, trustworthy]
+    known_wrong:
+      - answer: rely
+        feedback_vi: Rely là động từ (dựa vào). Sau very cần tính từ reliable.
+        error_tag: word_form
+      - answer: reliability
+        feedback_vi: Reliability là danh từ. Sau very cần tính từ reliable.
+        error_tag: word_form
+    explanation:
+      vi: Sau is very cần một tính từ. Reliable (đáng tin cậy) là người nói được làm được - đúng như ý câu sau.
+    display_answer: Nam is very reliable - if he promises to help, he always does.
+
+  - key: en:exercise:personality-mcq-used-to-getting
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-used-to
+    prompt:
+      stem: "Chọn câu đúng: \"Tôi đã quen dậy sớm rồi.\""
+      stem_lang: vi
+      options:
+        - { id: n7c, text: I'm used to getting up early., lang: en }
+        - { id: a0f, text: I'm used to get up early., lang: en }
+        - { id: e5z, text: I used to getting up early., lang: en }
+        - { id: o2t, text: I'm use to get up early., lang: en }
+    answer:
+      correct_option_id: n7c
+    explanation:
+      vi: Đã quen là be used to + V-ing - to ở đây là giới từ nên cần getting. I used to get up là "tôi đã từng dậy sớm", nghĩa khác hẳn.
+    display_answer: I'm used to getting up early.
+
+  - key: en:exercise:personality-order-get-used-to
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:get-used-to
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Bạn sẽ sớm quen với việc sống ở đây thôi.\""
+      tokens:
+        - { id: g-living, text: living }
+        - { id: g-soon, text: soon }
+        - { id: g-to, text: to }
+        - { id: g-youll, text: "You'll" }
+        - { id: g-here, text: here }
+        - { id: g-live, text: live }
+        - { id: g-used, text: used }
+        - { id: g-get, text: get }
+    answer:
+      orders:
+        - [g-youll, g-soon, g-get, g-used, g-to, g-living, g-here]
+    explanation:
+      vi: Dần quen (trong tương lai) là will get used to + V-ing. To là giới từ nên dùng living, không dùng live.
+    display_answer: "You'll soon get used to living here."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:personality-fill-stubborn-open-minded
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:open-minded
+    prompt:
+      template: "My boss never changes her mind, even when she's wrong - she's so {{b1}}. Her assistant, on the other hand, is very {{b2}} and listens to every new idea."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 11 }
+    answer:
+      blanks:
+        b1: [stubborn]
+        b2: [open-minded]
+    known_wrong:
+      - answer: selfish
+        feedback_vi: Selfish là ích kỷ (chỉ nghĩ cho mình). Không chịu đổi ý là stubborn.
+        error_tag: word_choice
+      - answer: open-mind
+        feedback_vi: Tính từ ghép cần đuôi -ed - open-minded.
+        error_tag: compound_adjective_form
+      - answer: easy-going
+        feedback_vi: Easy-going là dễ tính. Sẵn sàng nghe ý mới là open-minded.
+        error_tag: word_choice
+    explanation:
+      vi: Không bao giờ đổi ý dù sai là stubborn (cứng đầu). Lắng nghe mọi ý tưởng mới là open-minded (cởi mở) - tính từ ghép có đuôi -ed.
+    display_answer: My boss never changes her mind, even when she's wrong - she's so stubborn. Her assistant, on the other hand, is very open-minded and listens to every new idea.
+
+  - key: en:exercise:personality-fill-used-to-live-hearing
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:used-to-vs-be-used-to
+    prompt:
+      template: "As a child, I {{b1}} (live) in a quiet village, so I'm still not used to {{b2}} (hear) so much traffic in the city."
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [used to live, lived]
+        b2: [hearing]
+    known_wrong:
+      - answer: was used to live
+        feedback_vi: "\"Đã từng\" là used to + V nguyên mẫu, không có was."
+        error_tag: used_to_form
+      - answer: use to live
+        feedback_vi: Ở câu khẳng định quá khứ, viết used to (có d).
+        error_tag: used_to_form
+      - answer: hear
+        feedback_vi: Sau be used to cần V-ing - hearing.
+        error_tag: used_to_ing
+      - answer: used to living
+        feedback_vi: Không có be / get phía trước thì used to là "đã từng", theo sau là V nguyên mẫu - used to live.
+        error_tag: used_to_form
+    explanation:
+      vi: Thói quen cũ là used to + V nguyên mẫu (used to live, hoặc đơn giản lived). Sau I'm not used to - có be - cần V-ing (hearing).
+    display_answer: As a child, I used to live in a quiet village, so I'm still not used to hearing so much traffic in the city.
+
+  - key: en:exercise:personality-translate-used-to-getting-up
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-used-to
+    prompt:
+      source_text: Tôi đã quen làm việc một mình rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I'm used to working alone.
+        - I am used to working alone.
+        - I'm already used to working alone.
+        - I am already used to working alone.
+        - I'm used to working on my own.
+        - I am used to working on my own.
+        - I've got used to working alone.
+        - I have got used to working alone.
+        - I've gotten used to working alone.
+        - I have gotten used to working alone.
+        - I've got used to working on my own.
+        - I'm used to working by myself.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I'm used to work alone.
+        feedback_vi: To trong be used to là giới từ - cần V-ing (working).
+        error_tag: used_to_ing
+      - answer: I used to work alone.
+        feedback_vi: I used to work là "trước đây tôi từng làm". Đã quen là I'm used to working.
+        error_tag: used_to_meaning
+      - answer: I'm use to working alone.
+        feedback_vi: Viết used (có d) - I'm used to working.
+        error_tag: used_to_form
+      - answer: I used to working alone.
+        feedback_vi: Thiếu be - I'm used to working alone.
+        error_tag: missing_be
+    explanation:
+      vi: "\"Đã quen\" là be used to + V-ing (I'm used to working), hoặc have got used to + V-ing để nhấn quá trình đã xong. Đừng bỏ be, nếu không câu thành \"đã từng\"."
+    display_answer: I'm used to working alone.
+
+  # ---------------- application ----------------
+  - key: en:exercise:personality-translate-hard-working-easy-going
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:compound-adjectives
+    prompt:
+      source_text: Chị tôi là người chăm chỉ và dễ tính, nhưng đôi khi hơi cứng đầu.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My sister is hard-working and easy-going, but sometimes she's a bit stubborn.
+        - My sister is hard-working and easy-going, but sometimes she is a bit stubborn.
+        - My sister is hard-working and easy-going, but she's sometimes a bit stubborn.
+        - My sister is hard-working and easy-going, but she is sometimes a bit stubborn.
+        - My sister is hard-working and easy-going, but she can be a bit stubborn sometimes.
+        - My sister is a hard-working and easy-going person, but sometimes she's a bit stubborn.
+        - My sister is a hard-working and easy-going person, but sometimes she is a bit stubborn.
+        - My sister is a hard-working, easy-going person, but sometimes she's a bit stubborn.
+        - My sister is a hard-working, easy-going person, but sometimes she is a bit stubborn.
+        - My sister is hardworking and easy-going, but sometimes she's a bit stubborn.
+        - My sister is hardworking and easy-going, but sometimes she is a bit stubborn.
+        - My older sister is hard-working and easy-going, but sometimes she's a bit stubborn.
+        - My older sister is hard-working and easy-going, but sometimes she is a bit stubborn.
+        - My sister is hard-working and easy-going, but sometimes she's quite stubborn.
+        - My sister is hard-working and easy-going, but sometimes she is quite stubborn.
+        - My sister is hard-working and easy-going but sometimes a bit stubborn.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My sister is hard-working and easy, but sometimes she's a bit stubborn.
+        feedback_vi: Easy không dùng để tả tính cách. Dễ tính là easy-going.
+        error_tag: word_choice
+      - answer: My sister is a person hard-working and easy-going, but sometimes she's a bit stubborn.
+        feedback_vi: Tính từ đứng trước danh từ - a hard-working and easy-going person.
+        error_tag: adjective_order
+      - answer: My sister is hard-working and easy-going, but sometimes she's a bit selfish.
+        feedback_vi: Selfish là ích kỷ. Cứng đầu là stubborn.
+        error_tag: word_choice
+    explanation:
+      vi: Chăm chỉ là hard-working, dễ tính là easy-going, cứng đầu là stubborn. Nếu thêm person thì các tính từ đứng trước nó, theo thứ tự ngược với tiếng Việt.
+    display_answer: My sister is hard-working and easy-going, but sometimes she's a bit stubborn.
+
+  - key: en:exercise:personality-translate-get-used-to-abroad
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:get-used-to
+    prompt:
+      source_text: It took me a year to get used to living abroad.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi mất một năm để quen với việc sống ở nước ngoài.
+        - Tôi đã mất một năm để quen với việc sống ở nước ngoài.
+        - Tôi mất một năm mới quen với việc sống ở nước ngoài.
+        - Tôi mất một năm mới quen với cuộc sống ở nước ngoài.
+        - Tôi mất một năm để quen với cuộc sống ở nước ngoài.
+        - Tôi đã mất một năm để quen với cuộc sống ở nước ngoài.
+        - Tôi mất một năm mới quen sống ở nước ngoài.
+        - Tôi mất một năm để quen sống ở nước ngoài.
+        - Phải mất một năm tôi mới quen với việc sống ở nước ngoài.
+        - Phải mất một năm tôi mới quen với cuộc sống ở nước ngoài.
+        - Phải mất một năm tôi mới quen sống ở nước ngoài.
+        - Tôi mất một năm để làm quen với cuộc sống ở nước ngoài.
+        - Tôi mất một năm để làm quen với việc sống ở nước ngoài.
+        - Mình mất một năm để quen với việc sống ở nước ngoài.
+        - Mình mất một năm mới quen với cuộc sống ở nước ngoài.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đã từng sống ở nước ngoài một năm.
+        feedback_vi: Get used to là "dần quen với", không phải "đã từng" (used to).
+        error_tag: used_to_meaning
+    explanation:
+      vi: It took me + thời gian + to V là "tôi mất bao lâu để…". Get used to living là quá trình dần quen với việc sống - khác với used to live (đã từng sống).
+    display_answer: Tôi mất một năm để quen với việc sống ở nước ngoài.
+
+  - key: en:exercise:personality-mcq-situation-generous
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:generous
+    prompt:
+      stem: Bạn muốn khen một người bạn lúc nào cũng sẵn lòng chia sẻ và hay trả tiền cho cả nhóm. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: i4s, text: "She's really generous - she always pays for everyone.", lang: en }
+        - { id: u9k, text: "She's really selfish - she always pays for everyone.", lang: en }
+        - { id: h1d, text: "She's really stubborn - she always pays for everyone.", lang: en }
+        - { id: c7q, text: "She's really bad-tempered - she always pays for everyone.", lang: en }
+    answer:
+      correct_option_id: i4s
+    explanation:
+      vi: Hay cho đi, hay trả tiền cho người khác là generous (hào phóng). Selfish (ích kỷ), stubborn (cứng đầu), bad-tempered (nóng tính) đều là lời chê, không khớp với ý sau.
+    display_answer: "She's really generous - she always pays for everyone."
+
+  - key: en:exercise:personality-mcq-used-to-meaning
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:used-to-vs-be-used-to
+    prompt:
+      stem: Bạn kể với đồng nghiệp người Anh rằng hồi trước bạn rất nhút nhát, nhưng giờ đã tự tin hơn nhiều. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: f8n, text: "I used to be very shy, but now I'm much more self-confident.", lang: en }
+        - { id: b2w, text: "I'm used to being very shy, but now I'm much more self-confident.", lang: en }
+        - { id: l5j, text: "I was used to be very shy, but now I'm much more self-confident.", lang: en }
+        - { id: v0r, text: "I used to being very shy, but now I'm much more self-confident.", lang: en }
+    answer:
+      correct_option_id: f8n
+    explanation:
+      vi: Một đặc điểm trong quá khứ nay đã thay đổi - used to + V nguyên mẫu (used to be). I'm used to being là "tôi quen với việc nhút nhát" - sai nghĩa; hai câu còn lại sai cấu trúc.
+    display_answer: "I used to be very shy, but now I'm much more self-confident."

@@ -1,0 +1,408 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:news-society-review
+order_index: 5
+level: topik5
+title:
+  vi: Ôn tập - Đọc tin, viết bình luận và mô tả số liệu
+objectives:
+  - vi: Đọc hiểu một bản tin, một đoạn bình luận và một đoạn mô tả số liệu về vấn đề xã hội ở trình độ TOPIK 5.
+  - vi: Phối hợp văn viết -다, từ vựng Hán Hàn và các liên kết trang trọng trong cùng một đoạn văn.
+  - vi: Tự kiểm tra lỗi hay gặp của người Việt - lẫn 해요체, sai -ㄴ다/-는다, bạn giả Hán Việt, vị trí 에 따르면, 배/번.
+estimated_minutes: 22
+skills: [reading, writing, grammar, vocabulary]
+prerequisites: [ko:lesson:opinion-statistics]
+items:
+  - item: ko:item:written-nda-verb
+    role: reuse
+  - item: ko:item:written-da-adjective
+    role: reuse
+  - item: ko:item:written-past-da
+    role: reuse
+  - item: ko:item:written-ida
+    role: reuse
+  - item: ko:item:jeochulsan
+    role: reuse
+  - item: ko:item:hwangyeong-oyeom
+    role: reuse
+  - item: ko:item:jaehwalyong
+    role: reuse
+  - item: ko:item:mulga-sangseung
+    role: reuse
+  - item: ko:item:simgakada
+    role: reuse
+  - item: ko:item:daechaek-maryeonhada
+    role: reuse
+  - item: ko:item:gp-e-ttareumyeon
+    role: reuse
+  - item: ko:item:gp-ban-myeon
+    role: reuse
+  - item: ko:item:gp-eum-edo-bulguhago
+    role: reuse
+  - item: ko:item:gp-l-ppunman-anira
+    role: reuse
+  - item: ko:item:ttaraseo
+    role: reuse
+  - item: ko:item:gp-e-bihae
+    role: reuse
+  - item: ko:item:chajihada
+    role: reuse
+  - item: ko:item:eungdapja
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn này đưa bạn qua ba loại văn bản TOPIK 5 hay gặp - bản tin, bình luận, mô tả số liệu - và luyện viết lại chúng bằng văn phong -다 thống nhất.
+  - type: explain
+    text:
+      vi: Một bản tin thường có tiêu đề kết thúc bằng danh từ, câu mở đầu dẫn nguồn (N에 따르면), thân bài so sánh bằng 반면/데 반해, và kết bằng ý kiến chuyên gia (-다고 지적했다/강조했다). Nhận ra khung này giúp bạn đọc nhanh phần đọc hiểu TOPIK II.
+  - type: explain
+    text:
+      vi: Bài bình luận (câu 54) đi theo trật tự - nêu vấn đề, nêu quy luật hoặc nguyên nhân (-기 마련이다, -(으)ㄹ 수밖에 없다), rồi đề xuất bằng 따라서 … -아/어야 한다. Mô tả số liệu (câu 53) chỉ tả, không bình luận.
+  - type: deep_explain
+    text:
+      vi: 'Trước khi nộp bài viết, hãy soát năm điểm - (1) mọi câu kết thúc bằng -다, không có 요/-ㅂ니다; (2) động từ -ㄴ다/-는다, tính từ giữ -다; (3) cặp từ đúng - 물가가 오르다, 수가 증가하다, N에 영향을 미치다; (4) N에 따르면 ở đầu câu; (5) bội số dùng 배. Năm lỗi này chiếm phần lớn điểm bị trừ của người Việt ở phần viết.'
+  - type: example
+    target: "일회용품 사용 2년 새 30% 증가… 재활용률은 제자리 / 환경부에 따르면 지난해 일회용 컵 사용량은 2년 전에 비해 30% 증가한 반면, 재활용률은 20%대에 머물렀다. 전문가들은 배달 문화가 확산되면서 일회용품 사용이 늘 수밖에 없었다고 분석했다."
+    target_lang: ko
+    translation:
+      vi: "Đồ dùng một lần tăng 30% trong 2 năm… tỉ lệ tái chế dậm chân tại chỗ / Theo Bộ Môi trường, năm ngoái lượng cốc dùng một lần tăng 30% so với 2 năm trước, trong khi tỉ lệ tái chế chỉ dừng ở mức 20%. Các chuyên gia phân tích rằng khi văn hoá giao đồ ăn lan rộng, việc dùng đồ một lần tăng lên là điều không tránh khỏi."
+    note:
+      vi: Bản tin minh hoạ (số liệu giả định) - tiêu đề danh từ, 에 따르면, 에 비해, 반면, -(으)ㄹ 수밖에 없다.
+  - type: example
+    target: 저출산은 개인의 선택의 문제만이 아니다. 집값과 교육비가 계속 오르면 아이를 낳기 어려워지기 마련이다. 따라서 정부는 주거 지원뿐만 아니라 일과 육아를 함께할 수 있는 환경도 마련해야 한다.
+    target_lang: ko
+    translation:
+      vi: Tỉ lệ sinh thấp không chỉ là chuyện lựa chọn của cá nhân. Nhà và chi phí giáo dục cứ tăng thì việc sinh con lẽ dĩ nhiên trở nên khó khăn. Do đó, chính phủ không chỉ hỗ trợ nhà ở mà còn phải tạo môi trường để người dân vừa làm việc vừa nuôi con được.
+    note:
+      vi: Trích đoạn bình luận - phủ định quan điểm phổ biến → quy luật → đề xuất.
+  - type: example
+    target: 20대 응답자의 65%가 '취업이 가장 큰 고민'이라고 답한 데 반해 60대는 '건강'이라는 응답이 48%를 차지했다.
+    target_lang: ko
+    translation:
+      vi: 65% người trả lời ở độ tuổi 20 cho rằng "việc làm là nỗi lo lớn nhất", trong khi ở độ tuổi 60, câu trả lời "sức khoẻ" chiếm 48%.
+    note:
+      vi: Mô tả số liệu so sánh hai nhóm bằng -는 데 반해 và 차지하다.
+  - type: common_mistake
+    wrong: 일회용품 사용량이 2배 증가했어요. 따라서 대책이 필요하다.
+    right: 일회용품 사용량이 2배 증가했다. 따라서 대책이 필요하다.
+    target_lang: ko
+    note:
+      vi: Chỉ một câu 해요체 lọt vào cũng làm cả đoạn mất tính nhất quán. Đọc lại phần đuôi của từng câu trước khi nộp.
+  - type: common_mistake
+    wrong: 환경부에서 따르면 재활용률이 낮다.
+    right: 환경부에 따르면 재활용률이 낮다.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt "theo Bộ Môi trường" có thể khiến bạn dùng 에서 (từ). Cấu trúc cố định là N에 따르면.
+  - type: summary
+    points:
+      - vi: Bản tin - tiêu đề danh từ → N에 따르면 → 반면/데 반해 → ý kiến chuyên gia.
+      - vi: Bình luận - vấn đề → -기 마련이다 / -(으)ㄹ 수밖에 없다 → 따라서 … -아/어야 한다.
+      - vi: Số liệu - A에 비해 N배 증가 · N%를 차지하다 · 응답자의 N%.
+      - vi: Soát lỗi - một đuôi -다 · -ㄴ다/-는다 · cặp từ · vị trí 에 따르면 · 배/번.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:news-society-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gp-ban-myeon
+    prompt:
+      stem: "Đọc tin: 환경부에 따르면 지난해 일회용 컵 사용량은 2년 전에 비해 30% 증가한 반면, 재활용률은 20%대에 머물렀다. Nội dung nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: z6c, text: Lượng cốc dùng một lần tăng nhưng tỉ lệ tái chế không cải thiện., lang: vi }
+        - { id: p1w, text: Cả lượng cốc dùng một lần và tỉ lệ tái chế đều tăng 30%., lang: vi }
+        - { id: h4m, text: Lượng cốc dùng một lần giảm 30% so với 2 năm trước., lang: vi }
+        - { id: t8r, text: Bộ Môi trường dự đoán tỉ lệ tái chế sẽ đạt 20%., lang: vi }
+    answer:
+      correct_option_id: z6c
+    explanation:
+      vi: 증가한 반면 nối hai mặt trái ngược - lượng dùng tăng 30%, còn tỉ lệ tái chế 머물렀다 (dừng lại) ở mức 20%. Câu là quá khứ (-었다), không phải dự đoán.
+    display_answer: Lượng cốc dùng một lần tăng nhưng tỉ lệ tái chế không cải thiện.
+
+  - key: ko:exercise:news-society-review-listen-contrast
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:jaehwalyong
+    prompt:
+      audio_asset_id: null
+      fallback_text: 재활용 비율은 높아진 반면 일회용품 사용량은 오히려 증가했다.
+      options:
+        - { id: c7e, text: Tỉ lệ tái chế đã cao hơn nhưng lượng đồ dùng một lần lại còn tăng., lang: vi }
+        - { id: o3d, text: Tỉ lệ tái chế giảm và lượng đồ dùng một lần cũng giảm., lang: vi }
+        - { id: w9k, text: Vì tỉ lệ tái chế cao hơn nên lượng đồ dùng một lần giảm., lang: vi }
+        - { id: r2s, text: Tỉ lệ tái chế đã cao hơn và lượng đồ dùng một lần không đổi., lang: vi }
+    answer:
+      correct_option_id: c7e
+    explanation:
+      vi: 높아진 반면 là "đã cao lên, trong khi đó"; 오히려 là "ngược lại, lại còn"; 증가했다 là "đã tăng". 반면 không mang nghĩa nguyên nhân "vì … nên".
+    display_answer: Tỉ lệ tái chế đã cao hơn nhưng lượng đồ dùng một lần lại còn tăng.
+
+  - key: ko:exercise:news-society-review-fill-news
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-e-ttareumyeon
+    prompt:
+      template: "환경부{{b1}} 따르면 일회용 컵 사용량은 증가{{b2}} 반면 재활용률은 낮아졌다. 정부는 다음 달 대책을 {{b3}} 계획이다."
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+        - { id: b3, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Theo Bộ Môi trường, lượng cốc dùng một lần đã tăng, trong khi tỉ lệ tái chế giảm. Chính phủ dự định đưa ra biện pháp vào tháng sau."
+        - "Gợi ý: N_ 따르면; định ngữ quá khứ trước 반면; V-(으)ㄹ 계획이다."
+    answer:
+      blanks:
+        b1: [에]
+        b2: [한]
+        b3: [마련할]
+    known_wrong:
+      - answer: 에서
+        feedback_vi: Cấu trúc cố định là N에 따르면, không dùng 에서.
+        error_tag: ttareumyeon_particle
+      - answer: 하는
+        feedback_vi: Vế sau là quá khứ (낮아졌다) nên dùng định ngữ quá khứ - 증가한 반면.
+        error_tag: ban_myeon_tense
+      - answer: 마련한
+        feedback_vi: Kế hoạch tương lai - V-(으)ㄹ 계획이다, nên là 마련할.
+        error_tag: future_modifier
+    explanation:
+      vi: N에 따르면 dẫn nguồn; 증가한 반면 là đối lập ở quá khứ; 계획이다 cần định ngữ tương lai -(으)ㄹ - 마련할 계획이다.
+    display_answer: 환경부에 따르면 일회용 컵 사용량은 증가한 반면 재활용률은 낮아졌다. 정부는 다음 달 대책을 마련할 계획이다.
+
+  - key: ko:exercise:news-society-review-mcq-style
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:written-nda-verb
+    prompt:
+      stem: Đoạn bài luận dưới đây có một câu sai văn phong hoặc sai đuôi. Đó là câu nào?
+      stem_lang: vi
+      options:
+        - { id: b2x, text: 저출산 문제가 갈수록 심각해져요., lang: ko }
+        - { id: k9u, text: 아이를 키우는 비용이 계속 오른다., lang: ko }
+        - { id: e5g, text: 젊은 부부들은 출산을 미룰 수밖에 없다., lang: ko }
+        - { id: m1t, text: 따라서 정부의 적극적인 지원이 필요하다., lang: ko }
+    answer:
+      correct_option_id: b2x
+    explanation:
+      vi: 심각해져요 là 해요체, phải sửa thành 심각해진다 (심각해지다 là động từ nên dùng -ㄴ다). Ba câu còn lại đều đúng văn viết -다.
+    display_answer: 저출산 문제가 갈수록 심각해져요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:news-society-review-fill-stats
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:chajihada
+    prompt:
+      template: "(\"Gánh nặng kinh tế\" chiếm 42% tổng số.) '경제적 부담'이 전체의 42%를 {{b1}}. (So với năm 2010 đã tăng gấp 3 lần.) 2010년{{b2}} 비해 3배 증가했다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [차지했다, 차지한다]
+        b2: [에]
+    known_wrong:
+      - answer: 차지했어요
+        feedback_vi: Đây là 해요체. Mô tả số liệu dùng 차지했다.
+        error_tag: haeyo_in_writing
+      - answer: 보다
+        feedback_vi: 보다 và 에 비해 cùng nghĩa "so với", không dùng chồng lên nhau. Viết 2010년에 비해.
+        error_tag: bihae_particle
+      - answer: 차지하는다
+        feedback_vi: Gốc 차지하- kết thúc bằng nguyên âm nên thêm -ㄴ다 - 차지한다.
+        error_tag: nda_neunda_choice
+    explanation:
+      vi: 차지하다 + 를 - 42%를 차지했다. "So với" trong văn viết là N에 비해.
+    display_answer: "'경제적 부담'이 전체의 42%를 차지했다. / 2010년에 비해 3배 증가했다."
+
+  - key: ko:exercise:news-society-review-translate-despite
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-eum-edo-bulguhago
+    prompt:
+      source_text: Mặc dù giá cả đã tăng, lương không tăng. (văn viết, dùng -(으)ㅁ에도 불구하고)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 물가가 올랐음에도 불구하고 월급은 오르지 않았다.
+        - 물가가 올랐음에도 불구하고 임금은 오르지 않았다.
+        - 물가가 상승했음에도 불구하고 월급은 오르지 않았다.
+        - 물가가 상승했음에도 불구하고 임금은 오르지 않았다.
+        - 물가가 올랐음에도 불구하고 월급이 오르지 않았다.
+        - 물가가 올랐음에도 불구하고 임금이 오르지 않았다.
+        - 물가가 상승했음에도 불구하고 임금은 인상되지 않았다.
+        - 물가가 올랐음에도 불구하고 임금은 인상되지 않았다.
+        - 물가는 올랐음에도 불구하고 월급은 오르지 않았다.
+        - 물가가 올랐음에도 불구하고 월급은 그대로였다.
+    known_wrong:
+      - answer: 물가가 올랐에도 불구하고 월급은 오르지 않았다.
+        feedback_vi: Động từ phải danh từ hoá trước 에도 - 올랐음에도.
+        error_tag: missing_nominalizer
+      - answer: 물가가 증가했음에도 불구하고 월급은 오르지 않았다.
+        feedback_vi: Giá cả dùng 오르다/상승하다, không dùng 증가하다.
+        error_tag: collocation_price
+      - answer: 물가가 올랐음에도 불구하고 월급은 오르지 않았어요.
+        feedback_vi: Đây là 해요체. Văn viết là 오르지 않았다.
+        error_tag: haeyo_in_writing
+      - answer: 물가가 올랐기 때문에 월급은 오르지 않았다.
+        feedback_vi: -기 때문에 là "vì". Câu gốc là "mặc dù" - -(으)ㅁ에도 불구하고.
+        error_tag: despite_meaning
+    explanation:
+      vi: 올랐- (quá khứ, có patchim ㅆ) + -음에도 불구하고. Vế sau phủ định quá khứ văn viết - 오르지 않았다; lương là 월급 hoặc 임금.
+    display_answer: 물가가 올랐음에도 불구하고 월급은 오르지 않았다.
+
+  - key: ko:exercise:news-society-review-translate-pollution
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hwangyeong-oyeom
+    prompt:
+      source_text: Ô nhiễm môi trường là vấn đề nghiêm trọng. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 환경 오염은 심각한 문제이다.
+        - 환경 오염은 심각한 문제다.
+        - 환경 오염이 심각한 문제이다.
+        - 환경 오염이 심각한 문제다.
+        - 환경 오염 문제는 심각하다.
+        - 환경 오염 문제가 심각하다.
+        - 환경 오염은 심각한 사회 문제이다.
+        - 환경 오염은 심각한 사회 문제다.
+    known_wrong:
+      - answer: 환경 오염은 심각한 문제예요.
+        feedback_vi: Đây là 해요체. Văn viết là 문제이다 / 문제다.
+        error_tag: haeyo_in_writing
+      - answer: 오염 환경은 심각한 문제이다.
+        feedback_vi: Tiếng Hàn đặt phạm vi trước - 환경 오염 (môi trường + ô nhiễm).
+        error_tag: sino_word_order
+      - answer: 환경 오염 문제가 심각한다.
+        feedback_vi: 심각하다 là tính từ nên giữ -다 - 심각하다.
+        error_tag: adjective_nda
+      - answer: 환경 오염은 심각한 문제입니다.
+        feedback_vi: Đây là 합쇼체. Văn viết là 문제이다 / 문제다.
+        error_tag: hapsyo_in_writing
+    explanation:
+      vi: 환경 오염 = ô nhiễm môi trường; "là vấn đề nghiêm trọng" = 심각한 문제이다 (sau nguyên âm có thể rút gọn 문제다). Cũng có thể nói 환경 오염 문제가 심각하다.
+    display_answer: 환경 오염은 심각한 문제이다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:news-society-review-mcq-q53
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:eungdapja
+    prompt:
+      stem: Bạn làm câu 53 TOPIK - mô tả khảo sát 500 nhân viên văn phòng. Câu mở đầu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: s4f, text: 직장인 500명을 대상으로 조사한 결과 응답자의 60%가 이직을 고민하는 것으로 나타났다., lang: ko }
+        - { id: y7n, text: 직장인 500명을 대상으로 조사한 결과 응답자의 60%가 이직을 고민하는 것으로 나타났어요., lang: ko }
+        - { id: d2h, text: 저는 직장인 500명에게 물어봤는데 60%가 이직을 고민한대요., lang: ko }
+        - { id: q8v, text: 직장인 500명을 대상으로 조사한 결과 응답자의 60%가 이직을 고민하기 마련이다., lang: ko }
+    answer:
+      correct_option_id: s4f
+    explanation:
+      vi: Câu 53 cần văn viết -다 và khuôn "… 대상으로 조사한 결과 … 것으로 나타났다". 해요체 và văn nói (-대요) bị trừ điểm; -기 마련이다 là nhận định quy luật, không dùng để tả số liệu.
+    display_answer: 직장인 500명을 대상으로 조사한 결과 응답자의 60%가 이직을 고민하는 것으로 나타났다.
+
+  - key: ko:exercise:news-society-review-wb-not-only
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-l-ppunman-anira
+    prompt:
+      instruction: "Sắp xếp thành câu văn viết: \"Không chỉ thanh niên mà người cao tuổi cũng gặp khó khăn.\""
+      tokens:
+        - { id: r4, text: 어려움을 }
+        - { id: r6, text: 겪어요 }
+        - { id: r2, text: 아니라 }
+        - { id: r5, text: 겪는다 }
+        - { id: r3, text: 노인도 }
+        - { id: r1, text: 청년뿐만 }
+    answer:
+      orders:
+        - [r1, r2, r3, r4, r5]
+    explanation:
+      vi: N뿐만 아니라 … 도 là "không chỉ N mà … cũng". 겪다 có patchim nên văn viết là 겪는다; 겪어요 là 해요체.
+    display_answer: 청년뿐만 아니라 노인도 어려움을 겪는다.
+
+  - key: ko:exercise:news-society-review-mcq-conclusion
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ttaraseo
+    prompt:
+      stem: Chọn câu kết luận phù hợp nhất cho bài luận câu 54 về tỉ lệ sinh thấp.
+      stem_lang: vi
+      options:
+        - { id: v5j, text: 따라서 정부와 사회가 함께 저출산 문제의 해결책을 찾아야 할 것이다., lang: ko }
+        - { id: l2b, text: 그래서 정부와 사회가 함께 저출산 문제의 해결책을 찾아야 해요., lang: ko }
+        - { id: i8w, text: 따라서 정부와 사회가 함께 저출산 문제의 해결책을 찾기 마련이다., lang: ko }
+        - { id: n3e, text: 그런데 정부와 사회가 함께 저출산 문제의 해결책을 찾았음에도 불구하고., lang: ko }
+    answer:
+      correct_option_id: v5j
+    explanation:
+      vi: Kết luận dùng 따라서 + đề xuất -아/어야 할 것이다. 그래서 … 해요 là văn nói; -기 마련이다 là quy luật, không phải đề xuất; câu cuối bị cụt, thiếu vế chính.
+    display_answer: 따라서 정부와 사회가 함께 저출산 문제의 해결책을 찾아야 할 것이다.
+
+  - key: ko:exercise:news-society-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:jeochulsan
+    prompt:
+      source_text: 저출산은 개인의 문제가 아니다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tỉ lệ sinh thấp không phải là vấn đề của cá nhân.
+        - Tỷ lệ sinh thấp không phải là vấn đề của cá nhân.
+        - Tỉ lệ sinh thấp không phải vấn đề của cá nhân.
+        - Tỷ lệ sinh thấp không phải vấn đề của cá nhân.
+        - Tỉ lệ sinh thấp không phải là vấn đề cá nhân.
+        - Tỷ lệ sinh thấp không phải là vấn đề cá nhân.
+        - Tỉ lệ sinh thấp không phải vấn đề cá nhân.
+        - Tỷ lệ sinh thấp không phải vấn đề cá nhân.
+        - Tỉ lệ sinh thấp không phải là vấn đề của riêng cá nhân.
+        - Tỷ lệ sinh thấp không phải là vấn đề của riêng cá nhân.
+        - Việc ít sinh con không phải là vấn đề của cá nhân.
+        - Tình trạng ít sinh con không phải là vấn đề cá nhân.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sản xuất thấp không phải là vấn đề của cá nhân.
+        feedback_vi: 출산 là "sinh con", không phải "sản xuất" (생산).
+        error_tag: sino_false_friend
+      - answer: Tỉ lệ sinh thấp là vấn đề của cá nhân.
+        feedback_vi: 아니다 là "không phải là" - câu mang nghĩa phủ định.
+        error_tag: meaning_reversed
+    explanation:
+      vi: 저출산 = tỉ lệ sinh thấp, 개인의 문제 = vấn đề của cá nhân, N이/가 아니다 = không phải là N (văn viết).
+    display_answer: Tỉ lệ sinh thấp không phải là vấn đề của cá nhân.

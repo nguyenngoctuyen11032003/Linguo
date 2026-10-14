@@ -1,0 +1,980 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Đời sống công sở" (TOPIK 4). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+# 회사, 회사원, 감사합니다, 죄송합니다 thuộc các unit sơ cấp, chỉ dùng lại.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ================= bài 1: từ vựng công sở, -게 되다, -(으)ㄴ 지 =================
+  - key: ko:item:bogoseo
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 보고서
+      romanization: bogoseo
+      pos: danh từ
+    back:
+      meaning:
+        vi: bản báo cáo (văn bản)
+      examples:
+        - target: 금요일까지 보고서를 써야 해요.
+          translation:
+            vi: Tôi phải viết báo cáo trước thứ Sáu.
+      pronunciation_note:
+        vi: ㄱ giữa hai nguyên âm đọc nhẹ như "g" - [보고서], ㅓ cuối là "ơ", không phải "ô".
+      confusion:
+        vi: 보고서 là tờ/bản báo cáo; 보고 là hành động báo cáo (보고하다). "Nộp báo cáo" là 보고서를 제출하다.
+
+  - key: ko:item:chuljang
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 출장
+      romanization: chuljang
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến công tác; 출장을 가다 - đi công tác
+      examples:
+        - target: 다음 주에 부산으로 출장을 가요.
+          translation:
+            vi: Tuần sau tôi đi công tác Busan.
+      pronunciation_note:
+        vi: Đọc [출짱] - ㅈ sau patchim ㄹ trong từ Hán Hàn thường đọc căng.
+      confusion:
+        vi: 출장 là đi vì công việc; đi chơi là 여행. Không nói 출장 여행.
+
+  - key: ko:item:yageun
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 야근
+      romanization: yageun
+      pos: danh từ
+    back:
+      meaning:
+        vi: làm đêm, làm thêm giờ buổi tối; 야근하다 - ở lại làm muộn
+      examples:
+        - target: 요즘 일이 많아서 매일 야근해요.
+          translation:
+            vi: Dạo này nhiều việc nên ngày nào tôi cũng làm thêm đến tối.
+      pronunciation_note:
+        vi: Đọc liền [야근]; ㅡ là "ư", không phải "u".
+      confusion:
+        vi: 야근 là ở lại công ty làm buổi tối; làm thêm giờ nói chung là 초과 근무. Ca đêm cố định (như ở nhà máy) thường gọi là 야간 근무.
+
+  - key: ko:item:hoesik
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 회식
+      romanization: hoesik
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi liên hoan, ăn uống của cả phòng/công ty sau giờ làm
+      examples:
+        - target: 금요일 저녁에 부서 회식이 있어요.
+          translation:
+            vi: Tối thứ Sáu phòng mình có liên hoan.
+      pronunciation_note:
+        vi: 회 đọc gần "huê" - [훼식].
+      confusion:
+        vi: 회식 không phải bữa ăn thường (식사) mà là buổi ăn uống tập thể do công ty tổ chức. Đừng nhầm với 회의 (họp).
+
+  - key: ko:item:yeonbong
+    type: vocab
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 연봉
+      romanization: yeonbong
+      pos: danh từ
+    back:
+      meaning:
+        vi: lương năm (tổng thu nhập một năm)
+      examples:
+        - target: 이직하면서 연봉이 올랐어요.
+          translation:
+            vi: Chuyển việc nên lương năm của tôi tăng lên.
+      pronunciation_note:
+        vi: ㅕ là "yơ" - [연봉], đừng đọc thành "yôn".
+      confusion:
+        vi: Người Hàn thường nói lương theo năm (연봉), còn người Việt quen nói theo tháng (월급). 연봉 3,600만 원 tương đương khoảng 300만 원 mỗi tháng.
+
+  - key: ko:item:sangsa
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 상사
+      romanization: sangsa
+      pos: danh từ
+    back:
+      meaning:
+        vi: cấp trên, sếp
+      examples:
+        - target: 상사에게 보고서를 드렸어요.
+          translation:
+            vi: Tôi đã đưa báo cáo cho sếp.
+      pronunciation_note:
+        vi: Đọc [상사], ㅅ nhẹ như "x".
+      confusion:
+        vi: Khi nói chuyện trực tiếp, không gọi sếp là 상사 mà gọi bằng chức vụ + 님 (부장님, 팀장님).
+
+  - key: ko:item:dongnyo
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 동료
+      romanization: dongnyo
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồng nghiệp
+      examples:
+        - target: 동료들과 점심을 먹었어요.
+          translation:
+            vi: Tôi ăn trưa với các đồng nghiệp.
+      pronunciation_note:
+        vi: Viết 동료 nhưng đọc [동뇨] - ㄹ đứng sau patchim ㅇ biến thành ㄴ.
+      confusion:
+        vi: 동료 là người làm cùng; 친구 là bạn. Gặp đồng nghiệp lớn tuổi hơn ở công ty, bạn vẫn phải nói kính ngữ.
+
+  - key: ko:item:buseo
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 부서
+      romanization: buseo
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng ban (trong công ty)
+      examples:
+        - target: 어느 부서에서 일하세요? - 영업부에서 일합니다.
+          translation:
+            vi: Anh làm ở phòng nào? - Tôi làm ở phòng kinh doanh.
+      pronunciation_note:
+        vi: Đọc [부서]; ㅓ là "ơ".
+      confusion:
+        vi: Tên từng phòng thường dùng 부 ở cuối - 영업부 (kinh doanh), 인사부 (nhân sự); nói chung chung thì dùng 부서.
+
+  - key: ko:item:gyeoljae
+    type: vocab
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 결재
+      romanization: gyeoljae
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phê duyệt (của cấp trên); 결재를 받다 - xin được duyệt
+      examples:
+        - target: 팀장님께 결재를 받았어요.
+          translation:
+            vi: Tôi đã được trưởng nhóm duyệt.
+      pronunciation_note:
+        vi: Đọc [결째] - ㅈ sau patchim ㄹ đọc căng.
+      confusion:
+        vi: 결재 (phê duyệt) và 결제 (thanh toán) đọc gần như giống nhau. Duyệt văn bản là 결재, trả tiền bằng thẻ là 카드 결제.
+
+  - key: ko:item:gram-ge-doeda
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-게 되다
+      romanization: ge doeda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Rồi thì / được / phải (một việc xảy ra do hoàn cảnh hay quyết định của người khác, không phải ý mình).
+      examples:
+        - target: 다음 달부터 서울 본사에서 일하게 됐어요.
+          translation:
+            vi: Từ tháng sau tôi sẽ làm việc ở trụ sở chính tại Seoul.
+      pronunciation_note:
+        vi: 됐어요 đọc [돼써요]; 됐 viết với ㅙ, không phải ㅚ.
+      confusion:
+        vi: Tiếng Việt nói "được chuyển", "bị điều" bằng chữ "được/bị" đứng trước. Tiếng Hàn gắn -게 되다 vào sau động từ - 가게 됐어요, không nói 출장이 됐어요.
+
+  - key: ko:item:gram-eun-ji
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(으)ㄴ 지 + thời gian + 되다
+      romanization: eun ji ... doeda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Đã ... được (bao lâu) - tính từ lúc một việc xảy ra đến nay.
+      examples:
+        - target: 이 회사에 입사한 지 3년이 됐어요.
+          translation:
+            vi: Tôi vào công ty này được 3 năm rồi.
+      pronunciation_note:
+        vi: 한 지 có khoảng trắng giữa ㄴ và 지; 3년이 đọc [삼녀니].
+      confusion:
+        vi: Dùng -(으)ㄴ 지 (dạng quá khứ), không dùng -는 지. Đừng dịch "đã làm được 3 năm" thành 3년 동안 입사했어요.
+
+  # ================= bài 2: 합쇼체 và -도록 하다 =================
+  - key: ko:item:gram-seumnida
+    type: grammar_point
+    level: topik3
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V/A-습니다 · -ㅂ니다
+      romanization: seumnida · mnida
+      pos: đuôi câu trang trọng
+    back:
+      meaning:
+        vi: Đuôi câu trần thuật trang trọng (합쇼체). Có patchim + 습니다, không có patchim + ㅂ니다; danh từ + 입니다.
+      examples:
+        - target: 저는 영업부에서 일합니다.
+          translation:
+            vi: Tôi làm việc ở phòng kinh doanh.
+      pronunciation_note:
+        vi: 습니다 đọc [슴니다], 합니다 đọc [함니다] - ㅂ trước ㄴ biến thành ㅁ.
+      confusion:
+        vi: Gốc có patchim ㄹ thì bỏ ㄹ rồi thêm ㅂ니다 - 알다 → 압니다, 만들다 → 만듭니다 (không phải 알습니다).
+
+  - key: ko:item:gram-seumnikka
+    type: grammar_point
+    level: topik3
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V/A-습니까? · -ㅂ니까?
+      romanization: seumnikka · mnikka
+      pos: đuôi câu hỏi trang trọng
+    back:
+      meaning:
+        vi: Đuôi câu hỏi trang trọng (합쇼체), dùng trong cuộc họp, thuyết trình, phục vụ khách hàng.
+      examples:
+        - target: 회의는 몇 시에 시작합니까?
+          translation:
+            vi: Cuộc họp bắt đầu lúc mấy giờ ạ?
+      pronunciation_note:
+        vi: 습니까 đọc [슴니까], 니까 có ㄲ căng.
+      confusion:
+        vi: Câu hỏi phải dùng -습니까?, không dùng -습니다? với dấu hỏi. Với người trên, thêm -(으)시- - 가십니까?
+
+  - key: ko:item:gram-eusipsio
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(으)십시오
+      romanization: (eu)sipsio
+      pos: đuôi câu mệnh lệnh trang trọng
+    back:
+      meaning:
+        vi: Xin hãy... (yêu cầu, mời trang trọng). Có patchim + 으십시오, không có patchim + 십시오; phủ định là -지 마십시오.
+      examples:
+        - target: 이쪽으로 앉으십시오.
+          translation:
+            vi: Mời anh chị ngồi phía này.
+      pronunciation_note:
+        vi: 십시오 đọc [십씨오] - ㅅ sau patchim ㅂ đọc căng.
+      confusion:
+        vi: Đây là lời đề nghị lịch sự với khách hay tập thể; nói trực tiếp với sếp thì mềm hơn là -아/어 주시겠습니까?
+
+  - key: ko:item:gram-dorok-hada
+    type: grammar_point
+    level: topik4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-도록 하다
+      romanization: dorok hada
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Hãy cố/nhớ làm... (chỉ thị); với ngôi thứ nhất -도록 하겠습니다 là lời hứa "tôi sẽ cố gắng...".
+      examples:
+        - target: 다음부터는 늦지 않도록 하겠습니다.
+          translation:
+            vi: Lần sau tôi sẽ cố gắng không đến muộn.
+      pronunciation_note:
+        vi: 도록 đọc [도록], 하겠습니다 đọc [하겓씀니다].
+      confusion:
+        vi: -도록 하세요 là chỉ thị nhẹ của cấp trên; cấp dưới đáp bằng -도록 하겠습니다, không dùng -도록 하세요 với sếp.
+
+  - key: ko:item:sillyehamnida
+    type: phrase
+    level: topik3
+    difficulty: 2
+    skill_tags: [speaking, culture]
+    front:
+      text: 실례합니다
+      romanization: sillyehamnida
+      pos: câu xin phép
+    back:
+      meaning:
+        vi: Xin phép / làm phiền một chút (trước khi vào phòng, ngắt lời, hỏi người lạ).
+      examples:
+        - target: 실례합니다. 들어가도 되겠습니까?
+          translation:
+            vi: Xin phép, tôi vào được không ạ?
+      pronunciation_note:
+        vi: Viết 실례 nhưng đọc [실례] với ㄹ kéo dài; 합니다 đọc [함니다].
+      confusion:
+        vi: Tiếng Việt dùng "xin lỗi" cho cả hai việc. 실례합니다 là xin phép trước khi làm phiền; 죄송합니다 là nhận lỗi sau khi đã làm sai.
+
+  - key: ko:item:balpyo
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 발표
+      romanization: balpyo
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài thuyết trình, sự công bố; 발표하다 - thuyết trình, công bố
+      examples:
+        - target: 내일 회의에서 제가 발표합니다.
+          translation:
+            vi: Trong cuộc họp ngày mai, tôi sẽ thuyết trình.
+      pronunciation_note:
+        vi: ㅍ bật hơi mạnh - [발표].
+      confusion:
+        vi: 발표 là trình bày trước nhiều người; báo cáo riêng với sếp là 보고.
+
+  - key: ko:item:hoeuisil
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 회의실
+      romanization: hoeuisil
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng họp
+      examples:
+        - target: 회의는 3층 회의실에서 합니다.
+          translation:
+            vi: Cuộc họp diễn ra ở phòng họp tầng 3.
+      pronunciation_note:
+        vi: Đọc [훼이실] - 의 ở giữa từ đọc như 이.
+      confusion:
+        vi: 실 nghĩa là "phòng" - 회의실 (phòng họp), 사무실 (văn phòng), 화장실 (nhà vệ sinh).
+
+  - key: ko:item:jaryo
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 자료
+      romanization: jaryo
+      pos: danh từ
+    back:
+      meaning:
+        vi: tài liệu, số liệu
+      examples:
+        - target: 회의 자료를 미리 준비했습니다.
+          translation:
+            vi: Tôi đã chuẩn bị trước tài liệu cho cuộc họp.
+      pronunciation_note:
+        vi: 료 là ㄹ + ㅛ - "ryô", đừng đọc thành "rô".
+      confusion:
+        vi: 자료 là tài liệu thông tin; giấy tờ cần ký, nộp thường gọi là 서류.
+
+  - key: ko:item:chamseokhada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 참석하다
+      romanization: chamseokhada
+      pos: động từ
+    back:
+      meaning:
+        vi: tham dự (họp, hội nghị, lễ)
+      examples:
+        - target: 내일 회의에 참석하십니까?
+          translation:
+            vi: Ngày mai anh có tham dự cuộc họp không ạ?
+      pronunciation_note:
+        vi: Đọc [참서카다] - ㄱ gặp ㅎ hợp lại thành ㅋ.
+      confusion:
+        vi: Dùng trợ từ 에 - 회의에 참석하다, không dùng 회의를 참석하다.
+
+  - key: ko:item:sinip-sawon
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 신입 사원
+      romanization: sinip sawon
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân viên mới
+      examples:
+        - target: 이번에 들어온 신입 사원입니다.
+          translation:
+            vi: Đây là nhân viên mới vào đợt này.
+      pronunciation_note:
+        vi: Đọc nối [시닙 사원].
+      confusion:
+        vi: 신입 là "mới vào"; người mới chuyển từ công ty khác sang có kinh nghiệm gọi là 경력 사원.
+
+  # ================= bài 3: kính ngữ với cấp trên, -느라고 =================
+  - key: ko:item:gram-kkeseo
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N께서 · N께서는
+      romanization: kkeseo · kkeseoneun
+      pos: trợ từ kính ngữ
+    back:
+      meaning:
+        vi: Trợ từ chủ ngữ kính trọng, thay cho 이/가 (께서는 thay 은/는) khi chủ ngữ là người trên. Động từ đi kèm thêm -(으)시-.
+      examples:
+        - target: 사장님께서 회의에 오셨습니다.
+          translation:
+            vi: Giám đốc đã đến cuộc họp.
+      pronunciation_note:
+        vi: 께 là ㄲ căng, đọc gần "kê" nhưng không bật hơi.
+      confusion:
+        vi: Không bao giờ dùng 께서 cho chính mình - nói 제가, không nói 저께서. Kính ngữ chỉ dành cho người khác.
+
+  - key: ko:item:gram-kke
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N께
+      romanization: kke
+      pos: trợ từ kính ngữ
+    back:
+      meaning:
+        vi: Cho / tới (người trên) - dạng kính trọng của 에게/한테.
+      examples:
+        - target: 부장님께 보고서를 드렸습니다.
+          translation:
+            vi: Tôi đã đưa báo cáo cho trưởng phòng.
+      pronunciation_note:
+        vi: 께 đọc căng, gắn liền với danh từ - 부장님께.
+      confusion:
+        vi: 께 (cho người trên) khác 께서 (người trên làm chủ ngữ). 부장님께 = cho trưởng phòng; 부장님께서 = trưởng phòng (làm gì đó).
+
+  - key: ko:item:deurida
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 드리다
+      romanization: deurida
+      pos: động từ kính ngữ
+    back:
+      meaning:
+        vi: Biếu, đưa (cho người trên) - dạng khiêm nhường của 주다; -아/어 드리다 là "làm giúp người trên".
+      examples:
+        - target: 제가 자료를 보내 드리겠습니다.
+          translation:
+            vi: Tôi sẽ gửi tài liệu cho anh/chị.
+      pronunciation_note:
+        vi: Đọc [드리다]; ㅡ là "ư".
+      confusion:
+        vi: 드리다 khi mình đưa cho người trên. Người trên đưa cho mình thì dùng 주시다 - 부장님께서 저에게 주셨어요, không dùng 드리다.
+
+  - key: ko:item:malsseumhasida
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 말씀하시다
+      romanization: malsseumhasida
+      pos: động từ kính ngữ
+    back:
+      meaning:
+        vi: (người trên) nói - dạng kính trọng của 말하다.
+      examples:
+        - target: 팀장님께서 회의 시간을 바꾸자고 말씀하셨어요.
+          translation:
+            vi: Trưởng nhóm nói là đổi giờ họp.
+      pronunciation_note:
+        vi: Đọc [말쓰마시다] - ㅆ căng, ㅎ gần như mất.
+      confusion:
+        vi: Khi chính bạn nói với người trên, dùng 말씀드리다 (khiêm nhường), không dùng 말씀하시다.
+
+  - key: ko:item:malsseumdeurida
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 말씀드리다
+      romanization: malsseumdeurida
+      pos: động từ khiêm nhường
+    back:
+      meaning:
+        vi: (tôi) thưa, trình bày với người trên - dạng khiêm nhường của 말하다.
+      examples:
+        - target: 그 일은 제가 부장님께 말씀드리겠습니다.
+          translation:
+            vi: Việc đó tôi sẽ thưa lại với trưởng phòng.
+      pronunciation_note:
+        vi: Đọc [말씀드리다], ㅆ căng.
+      confusion:
+        vi: 말씀 vừa là lời của người trên (kính trọng) vừa là lời mình nói với người trên (khiêm nhường); động từ phía sau quyết định nghĩa - 하시다 hay 드리다.
+
+  - key: ko:item:yeojjwoboda
+    type: vocab
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 여쭤보다
+      romanization: yeojjwoboda
+      pos: động từ khiêm nhường
+    back:
+      meaning:
+        vi: hỏi (người trên) - dạng khiêm nhường của 물어보다.
+      examples:
+        - target: 모르는 것이 있어서 과장님께 여쭤봤어요.
+          translation:
+            vi: Có chỗ tôi không hiểu nên đã hỏi trưởng bộ phận.
+      pronunciation_note:
+        vi: 쭤 là ㅉ + ㅝ, đọc gần "chuơ" căng.
+      confusion:
+        vi: Hỏi bạn bè, cấp dưới dùng 물어보다; hỏi sếp, thầy cô dùng 여쭤보다. Kết hợp với 께 - 과장님께 여쭤보다.
+
+  - key: ko:item:gyesida
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 계시다
+      romanization: gyesida
+      pos: động từ kính ngữ
+    back:
+      meaning:
+        vi: (người trên) có mặt, ở - dạng kính trọng của 있다 (chỉ sự hiện diện).
+      examples:
+        - target: 팀장님 자리에 계십니까?
+          translation:
+            vi: Trưởng nhóm có ở chỗ không ạ?
+      pronunciation_note:
+        vi: 계 thường đọc [게]; 계십니까 đọc [게심니까].
+      confusion:
+        vi: 계시다 chỉ "có mặt ở đâu"; "có (thời gian, đồ vật)" của người trên là 있으시다 - 시간 있으세요?, không phải 시간 계세요?
+
+  - key: ko:item:bujangnim
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 부장님
+      romanization: bujangnim
+      pos: danh từ (chức danh)
+    back:
+      meaning:
+        vi: trưởng phòng (cách gọi kính trọng)
+      examples:
+        - target: 부장님, 잠깐 시간 괜찮으십니까?
+          translation:
+            vi: Thưa trưởng phòng, anh có chút thời gian không ạ?
+      pronunciation_note:
+        vi: Đọc [부장님]; ㅇ cuối 장 phát âm mũi "ng".
+      confusion:
+        vi: Ở công ty Hàn, gọi người trên bằng chức danh + 님, không gọi tên trống không hay "anh/chị" như ở Việt Nam.
+
+  - key: ko:item:sajangnim
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 사장님
+      romanization: sajangnim
+      pos: danh từ (chức danh)
+    back:
+      meaning:
+        vi: giám đốc, chủ (doanh nghiệp, cửa hàng)
+      examples:
+        - target: 사장님께서 직원들에게 선물을 주셨어요.
+          translation:
+            vi: Giám đốc tặng quà cho nhân viên.
+      pronunciation_note:
+        vi: Đọc [사장님].
+      confusion:
+        vi: 사장님 cũng là cách gọi lịch sự chủ quán, chủ cửa hàng - không chỉ dùng trong công ty lớn.
+
+  - key: ko:item:gram-neurago
+    type: grammar_point
+    level: topik4
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-느라고
+      romanization: neurago
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Vì mải/bận làm V nên (không làm được việc khác, hoặc bị mệt, tốn thời gian) - thường dùng để giải thích, xin lỗi.
+      examples:
+        - target: 회의 준비하느라고 연락을 못 드렸습니다.
+          translation:
+            vi: Vì mải chuẩn bị cho cuộc họp nên tôi đã không liên lạc với anh được.
+      pronunciation_note:
+        vi: 느 là "nư", đọc liền [느라고].
+      confusion:
+        vi: Chỉ dùng khi kết quả là tiêu cực (không làm được, mệt, muộn); hai vế cùng chủ ngữ và vế -느라고 không chia quá khứ. Kết quả tốt thì dùng -아/어서 hoặc -(으)ㄴ 덕분에.
+
+  - key: ko:item:yeollak
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 연락
+      romanization: yeollak
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự liên lạc; 연락하다 - liên lạc; 연락드리다 - liên lạc (với người trên)
+      examples:
+        - target: 도착하면 바로 연락드리겠습니다.
+          translation:
+            vi: Đến nơi là tôi sẽ liên lạc ngay.
+      pronunciation_note:
+        vi: Viết 연락 nhưng đọc [열락] - ㄴ đứng trước ㄹ biến thành ㄹ.
+      confusion:
+        vi: Với người trên, đổi 연락할게요 thành 연락드리겠습니다 cho đúng mức lịch sự.
+
+  # ================= bài 4: email và điện thoại công việc, -기 위해서, -는 대로 =================
+  - key: ko:item:annyeonghasimnikka
+    type: phrase
+    level: topik3
+    difficulty: 2
+    skill_tags: [speaking, writing]
+    front:
+      text: 안녕하십니까?
+      romanization: annyeonghasimnikka
+      pos: câu chào trang trọng
+    back:
+      meaning:
+        vi: Xin chào (trang trọng nhất) - mở đầu email, cuộc gọi, bài phát biểu.
+      examples:
+        - target: 안녕하십니까? 영업부 김민수입니다.
+          translation:
+            vi: Xin chào, tôi là Kim Minsu ở phòng kinh doanh.
+      pronunciation_note:
+        vi: Đọc [안녕하심니까] - ㅂ trước ㄴ đọc thành ㅁ.
+      confusion:
+        vi: 안녕하세요 vẫn lịch sự, nhưng trong email gửi khách hàng, sếp hay lời mở đầu phát biểu, 안녕하십니까 trang trọng hơn.
+
+  - key: ko:item:dareumi-anira
+    type: phrase
+    level: topik4
+    difficulty: 3
+    skill_tags: [writing, speaking]
+    front:
+      text: 다름이 아니라
+      romanization: dareumi anira
+      pos: cụm chuyển ý
+    back:
+      meaning:
+        vi: Không có gì khác, chẳng là... - dùng sau lời chào để vào thẳng mục đích của email hay cuộc gọi.
+      examples:
+        - target: 다름이 아니라 회의 일정 때문에 연락드렸습니다.
+          translation:
+            vi: Chẳng là tôi liên lạc vì lịch họp ạ.
+      pronunciation_note:
+        vi: Đọc nối [다르미 아니라].
+      confusion:
+        vi: Đây không phải phủ định "không khác". Nó tương đương "Tôi viết thư này để..." trong email tiếng Việt.
+
+  - key: ko:item:gram-eul-yejeongimnida
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: V-(으)ㄹ 예정입니다
+      romanization: (eu)l yejeongimnida
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Dự kiến sẽ... (kế hoạch đã định, giọng văn bản, thông báo).
+      examples:
+        - target: 신제품은 다음 달에 출시될 예정입니다.
+          translation:
+            vi: Sản phẩm mới dự kiến ra mắt vào tháng sau.
+      pronunciation_note:
+        vi: Đọc [할 예정임니다]; 예 thường đọc gần [에].
+      confusion:
+        vi: -(으)ㄹ 예정이다 là lịch đã lên kế hoạch, khách quan hơn -(으)ㄹ 거예요. Trong thông báo, email công việc nên dùng 예정입니다.
+
+  - key: ko:item:hwagin-butakdeurimnida
+    type: phrase
+    level: topik4
+    difficulty: 3
+    skill_tags: [writing, speaking]
+    front:
+      text: 확인 부탁드립니다
+      romanization: hwagin butakdeurimnida
+      pos: câu nhờ trang trọng
+    back:
+      meaning:
+        vi: Nhờ anh/chị kiểm tra giúp (câu kết email rất phổ biến).
+      examples:
+        - target: 첨부 파일 확인 부탁드립니다.
+          translation:
+            vi: Nhờ anh/chị kiểm tra tệp đính kèm.
+      pronunciation_note:
+        vi: Đọc [화긴 부탁드림니다].
+      confusion:
+        vi: N + 부탁드립니다 là cách nhờ khiêm nhường; đừng viết 확인해 주세요 với khách hàng hay sếp trong email - nghe như ra lệnh.
+
+  - key: ko:item:jamsiman-gidaryeo-jusipsio
+    type: phrase
+    level: topik3
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: 잠시만 기다려 주십시오
+      romanization: jamsiman gidaryeo jusipsio
+      pos: câu nhờ trang trọng
+    back:
+      meaning:
+        vi: Xin vui lòng chờ một chút (khi chuyển máy, tra thông tin).
+      examples:
+        - target: 담당자를 바꿔 드리겠습니다. 잠시만 기다려 주십시오.
+          translation:
+            vi: Tôi sẽ chuyển máy cho người phụ trách. Xin vui lòng chờ một chút.
+      pronunciation_note:
+        vi: 주십시오 đọc [주십씨오].
+      confusion:
+        vi: 잠시 trang trọng hơn 잠깐. Với khách, đừng nói 기다려요 - đó là câu kể, không phải lời nhờ.
+
+  - key: ko:item:gram-gi-wihaeseo
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-기 위해서 · N을/를 위해서
+      romanization: gi wihaeseo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Để (đạt mục đích) - mục đích đứng trước, hành động đứng sau.
+      examples:
+        - target: 계약을 하기 위해서 베트남으로 출장을 갑니다.
+          translation:
+            vi: Tôi đi công tác Việt Nam để ký hợp đồng.
+      pronunciation_note:
+        vi: 위해서 đọc [위해서], ㅎ nhẹ.
+      confusion:
+        vi: -(으)러 chỉ đi với 가다/오다, còn -기 위해서 dùng với mọi động từ ở vế sau. Gắn vào động từ, không gắn vào tính từ - 건강해지기 위해서, không phải 건강하기 위해서 (trong văn chuẩn).
+
+  - key: ko:item:gram-neun-daero
+    type: grammar_point
+    level: topik4
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-는 대로
+      romanization: neun daero
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Ngay khi V (thì sẽ làm việc tiếp theo) - dùng cho hứa hẹn, kế hoạch, yêu cầu.
+      examples:
+        - target: 회의가 끝나는 대로 연락드리겠습니다.
+          translation:
+            vi: Họp xong là tôi liên lạc ngay.
+      pronunciation_note:
+        vi: Đọc [끈나는 대로] - ㅌ trước ㄴ đổi thành ㄴ.
+      confusion:
+        vi: Vế sau phải là tương lai, đề nghị hay mệnh lệnh; với việc đã xảy ra dùng -자마자. -(으)ㄴ 대로 lại có nghĩa khác - "theo như" (말씀하신 대로).
+
+  - key: ko:item:jeonhwa-bakkwosseumnida
+    type: phrase
+    level: topik4
+    difficulty: 3
+    skill_tags: [speaking, listening]
+    front:
+      text: 전화 바꿨습니다
+      romanization: jeonhwa bakkwotseumnida
+      pos: câu điện thoại
+    back:
+      meaning:
+        vi: Tôi nghe đây (nói khi vừa được chuyển máy) - thường kèm tên - 전화 바꿨습니다, 박민지입니다.
+      examples:
+        - target: 전화 바꿨습니다. 영업부 이수진입니다.
+          translation:
+            vi: Tôi nghe đây, tôi là Lee Sujin ở phòng kinh doanh.
+      pronunciation_note:
+        vi: 바꿨습니다 đọc [바꾿씀니다] - patchim ㅆ đọc chặn như ㄷ, làm ㅅ phía sau căng lên.
+      confusion:
+        vi: Nghĩa đen là "đã đổi điện thoại"; đây là câu cố định khi nhận máy được chuyển, không phải bạn đổi điện thoại mới.
+
+  - key: ko:item:cheombu-pail
+    type: vocab
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 첨부 파일
+      romanization: cheombu pail
+      pos: danh từ
+    back:
+      meaning:
+        vi: tệp đính kèm; 첨부하다 - đính kèm
+      examples:
+        - target: 회의 자료를 첨부 파일로 보내 드립니다.
+          translation:
+            vi: Tôi gửi anh/chị tài liệu họp dưới dạng tệp đính kèm.
+      pronunciation_note:
+        vi: 파일 viết với ㅍ (bật hơi) dù tiếng Anh là "file".
+      confusion:
+        vi: Gửi dưới dạng đính kèm là 첨부 파일로 보내다 - trợ từ 로 (bằng, dưới dạng), không dùng 에.
+
+  - key: ko:item:iljeong
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 일정
+      romanization: iljeong
+      pos: danh từ
+    back:
+      meaning:
+        vi: lịch trình, lịch làm việc
+      examples:
+        - target: 출장 일정이 바뀌었습니다.
+          translation:
+            vi: Lịch công tác đã thay đổi.
+      pronunciation_note:
+        vi: Đọc [일쩡] - ㅈ sau patchim ㄹ đọc căng.
+      confusion:
+        vi: 일정 là lịch các việc cần làm; 시간표 là thời khoá biểu cố định (trường học, xe buýt).
+
+  - key: ko:item:sugohasyeosseumnida
+    type: phrase
+    level: topik3
+    difficulty: 3
+    skill_tags: [speaking, culture]
+    front:
+      text: 수고하셨습니다
+      romanization: sugohasyeotseumnida
+      pos: câu chào cuối ngày làm việc
+    back:
+      meaning:
+        vi: Anh/chị vất vả rồi (nói khi xong việc, cuối ngày, sau cuộc họp).
+      examples:
+        - target: 오늘 회의 수고하셨습니다.
+          translation:
+            vi: Hôm nay họp vất vả rồi ạ.
+      pronunciation_note:
+        vi: Đọc [수고하셛씀니다].
+      confusion:
+        vi: Nhiều người Hàn coi câu này là lời của người trên nói với người dưới. Với sếp, an toàn hơn là 고생 많으셨습니다 hoặc 감사합니다.
+
+  - key: ko:item:dasi-yeollakdeurigetseumnida
+    type: phrase
+    level: topik3
+    difficulty: 3
+    skill_tags: [speaking, writing]
+    front:
+      text: 다시 연락드리겠습니다
+      romanization: dasi yeollakdeurigetseumnida
+      pos: câu hứa trang trọng
+    back:
+      meaning:
+        vi: Tôi sẽ liên lạc lại (với anh/chị).
+      examples:
+        - target: 확인한 후에 다시 연락드리겠습니다.
+          translation:
+            vi: Sau khi kiểm tra, tôi sẽ liên lạc lại.
+      pronunciation_note:
+        vi: 연락 đọc [열락]; 겠습니다 đọc [겓씀니다].
+      confusion:
+        vi: -겠습니다 ở đây là lời hứa khiêm nhường của người nói; đừng đổi thành 연락하실게요 - -실게요 dùng sai kính ngữ cho chính mình.
+
+  # ================= bài 5: ôn tập - email, biên bản họp, điện thoại =================
+  - key: ko:item:hoeuirok
+    type: vocab
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 회의록
+      romanization: hoeuirok
+      pos: danh từ
+    back:
+      meaning:
+        vi: biên bản cuộc họp
+      examples:
+        - target: 회의록은 제가 작성하겠습니다.
+          translation:
+            vi: Biên bản họp để tôi viết.
+      pronunciation_note:
+        vi: Đọc [훼이록].
+      confusion:
+        vi: Biên bản họp thường viết ngắn, kết thúc bằng -음/-함 (결정함, 진행할 예정임) thay vì -습니다.
+
+  - key: ko:item:angeon
+    type: vocab
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 안건
+      romanization: angeon
+      pos: danh từ
+    back:
+      meaning:
+        vi: vấn đề cần bàn, nội dung nghị sự (của cuộc họp)
+      examples:
+        - target: 오늘 회의 안건은 두 가지입니다.
+          translation:
+            vi: Cuộc họp hôm nay có hai nội dung cần bàn.
+      pronunciation_note:
+        vi: Đọc [안껀] - ㄱ sau ㄴ trong từ Hán Hàn này đọc căng.
+      confusion:
+        vi: 안건 là từng vấn đề đưa ra bàn; "chương trình họp" (danh sách các vấn đề) cũng thường gọi là 회의 안건.

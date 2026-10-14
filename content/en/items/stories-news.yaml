@@ -1,0 +1,1028 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Kể chuyện & tin tức" (B1). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Quá khứ tiếp diễn, when/while ----------------
+  - key: en:item:was-were-ing
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: was / were + V-ing (past continuous)
+      ipa: was UK /wəz, wɒz/ · US /wəz, wʌz/ · were UK /wə, wɜː/ · US /wɚ, wɝː/
+      pos: thì động từ
+    back:
+      meaning:
+        vi: "thì quá khứ tiếp diễn: một việc ĐANG diễn ra tại một thời điểm trong quá khứ (I/he/she/it was + V-ing; you/we/they were + V-ing)"
+      examples:
+        - target: At eight o'clock last night, I was cooking dinner.
+          translation:
+            vi: Lúc tám giờ tối qua, mình đang nấu bữa tối.
+        - target: They were waiting for the bus in the rain.
+          translation:
+            vi: Họ đang đứng chờ xe buýt dưới mưa.
+      pronunciation_note:
+        vi: Trong câu, was và were thường đọc yếu /wəz/, /wə/; chỉ đọc mạnh ở câu trả lời ngắn (Yes, I was).
+      confusion:
+        vi: Tiếng Việt chỉ thêm "đang" mà không đổi động từ, nên người Việt hay nói I was walk. Phải có đủ hai phần - was/were và động từ thêm -ing (I was walking).
+
+  - key: en:item:when-while-interrupted
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: when / while (hành động bị cắt ngang)
+      ipa: when /wen/ · while /waɪl/
+      pos: liên từ
+    back:
+      meaning:
+        vi: "hành động dài (quá khứ tiếp diễn) bị một hành động ngắn (quá khứ đơn) cắt ngang: while + việc đang diễn ra, when + việc xảy ra bất chợt"
+      examples:
+        - target: I was walking home when it started to rain.
+          translation:
+            vi: Mình đang đi bộ về nhà thì trời đổ mưa.
+        - target: While she was sleeping, someone called her.
+          translation:
+            vi: Trong lúc cô ấy đang ngủ thì có người gọi điện.
+      pronunciation_note:
+        vi: When và while đều bắt đầu bằng âm /w/ tròn môi, không đọc thành "quen", "quai".
+      confusion:
+        vi: While thường đi với hành động dài (was/were + V-ing); when thường đi với hành động ngắn ở quá khứ đơn. Không viết When I was walk - phải là When I was walking hoặc While I was walking.
+
+  - key: en:item:stative-verbs-past
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: know, like, want, need, believe… (không chia -ing)
+      pos: động từ trạng thái
+    back:
+      meaning:
+        vi: "động từ chỉ trạng thái, cảm xúc, suy nghĩ (know, like, want, need, believe, understand, own) thường không dùng ở dạng tiếp diễn, kể cả khi tiếng Việt nói \"đang\""
+      examples:
+        - target: I knew the answer, but I didn't say anything.
+          translation:
+            vi: Mình biết câu trả lời nhưng không nói gì.
+        - target: She wanted to go home because she was tired.
+          translation:
+            vi: Cô ấy muốn về nhà vì đang mệt.
+      confusion:
+        vi: Không nói I was knowing hay He was wanting. Dùng quá khứ đơn I knew, He wanted dù trạng thái đó kéo dài.
+
+  - key: en:item:ring
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: ring (rang, rung)
+      ipa: /rɪŋ/ · rang /ræŋ/ · rung /rʌŋ/
+      pos: động từ
+    back:
+      meaning:
+        vi: reo, đổ chuông (điện thoại, chuông cửa)
+      examples:
+        - target: I was having a shower when the phone rang.
+          translation:
+            vi: Mình đang tắm thì điện thoại đổ chuông.
+      pronunciation_note:
+        vi: Đuôi -ng /ŋ/ giống "ng" tiếng Việt, không bật thêm âm /g/ ở cuối.
+      confusion:
+        vi: Quá khứ là rang, quá khứ phân từ là rung - không viết ringed.
+
+  - key: en:item:fall-asleep
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: fall asleep (fell asleep)
+      ipa: UK /fɔːl əˈsliːp/ · US /fɑːl əˈsliːp/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: ngủ thiếp đi, chìm vào giấc ngủ
+      examples:
+        - target: He fell asleep while he was watching the film.
+          translation:
+            vi: Anh ấy ngủ thiếp đi trong lúc đang xem phim.
+      pronunciation_note:
+        vi: Nhấn vào SLEEP; asleep đọc /əˈsliːp/ với âm "ơ" rất nhẹ ở đầu.
+      confusion:
+        vi: Fall asleep là khoảnh khắc chìm vào giấc ngủ; sleep là trạng thái ngủ kéo dài. Quá khứ là fell asleep, không phải felt asleep.
+
+  - key: en:item:drop
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: drop
+      ipa: UK /drɒp/ · US /drɑːp/
+      pos: động từ
+    back:
+      meaning:
+        vi: làm rơi, đánh rơi
+      examples:
+        - target: She dropped her phone while she was getting off the bus.
+          translation:
+            vi: Cô ấy đánh rơi điện thoại khi đang xuống xe buýt.
+      pronunciation_note:
+        vi: Quá khứ dropped đọc /drɒpt/ - đuôi -ed sau /p/ đọc là /t/, không thêm "đơ".
+      confusion:
+        vi: Drop là làm rơi (có người gây ra); tự rơi xuống thì dùng fall (The cup fell off the table).
+
+  - key: en:item:break-down
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: break down (broke down)
+      ipa: /ˌbreɪk ˈdaʊn/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: (xe, máy móc) bị hỏng, chết máy giữa chừng
+      examples:
+        - target: Our car broke down while we were driving to Da Lat.
+          translation:
+            vi: Xe tụi mình bị hỏng giữa đường khi đang lái lên Đà Lạt.
+      pronunciation_note:
+        vi: Nhấn vào DOWN; break đọc /breɪk/, giống "brây-k", không đọc "bríc".
+      confusion:
+        vi: Xe hỏng giữa đường là break down; đồ vật vỡ là break (I broke a glass). Không nói My car was broken down khi kể chuyện xe chết máy.
+
+  - key: en:item:notice
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: notice
+      ipa: UK /ˈnəʊtɪs/ · US /ˈnoʊtɪs/
+      pos: động từ
+    back:
+      meaning:
+        vi: để ý thấy, nhận ra
+      examples:
+        - target: While I was waiting, I noticed a man near the door.
+          translation:
+            vi: Trong lúc chờ, mình để ý thấy một người đàn ông gần cửa.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu NO; -tice đọc nhẹ /tɪs/, không đọc "tai".
+      confusion:
+        vi: Notice là tình cờ để ý thấy; realise là hiểu ra một điều gì đó trong đầu.
+
+  - key: en:item:power-cut
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: power cut
+      ipa: UK /ˈpaʊə kʌt/ · US /ˈpaʊɚ kʌt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cúp điện, mất điện
+      examples:
+        - target: We were watching TV when there was a power cut.
+          translation:
+            vi: Cả nhà đang xem TV thì bị cúp điện.
+      pronunciation_note:
+        vi: Nhấn vào POWER; cut đọc /kʌt/ ngắn, gần "cắt".
+      confusion:
+        vi: Người Mỹ hay nói power outage; người Anh nói power cut. Mất điện dùng there was a power cut, không nói the power was cut khi không ai cố ý cắt.
+
+  - key: en:item:slip
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: slip
+      ipa: /slɪp/
+      pos: động từ
+    back:
+      meaning:
+        vi: trượt chân, trơn trượt
+      examples:
+        - target: I slipped while I was running down the stairs.
+          translation:
+            vi: Mình bị trượt chân khi đang chạy xuống cầu thang.
+      pronunciation_note:
+        vi: Cụm /sl/ đọc liền, không chèn "xơ" vào giữa; quá khứ slipped đọc /slɪpt/.
+      confusion:
+        vi: Slip là trượt chân; fall là ngã. Thường kể I slipped and fell.
+
+  - key: en:item:at-that-moment
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: at that moment
+      ipa: UK /ət ˈðæt ˈməʊmənt/ · US /ət ˈðæt ˈmoʊmənt/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: đúng lúc đó, ngay lúc ấy
+      examples:
+        - target: At that moment, I was standing outside the bank.
+          translation:
+            vi: Đúng lúc đó, mình đang đứng bên ngoài ngân hàng.
+      pronunciation_note:
+        vi: Moment nhấn âm đầu MO; -ment đọc rất nhẹ /mənt/.
+      confusion:
+        vi: Dùng at that moment khi kể chuyện quá khứ; at the moment nghĩa là "hiện giờ" và đi với hiện tại.
+
+  # ---------------- Bài 2: Quá khứ hoàn thành ----------------
+  - key: en:item:had-past-participle
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: had + past participle (past perfect)
+      ipa: had /həd, hæd/ · I'd /aɪd/ · hadn't /ˈhædnt/
+      pos: thì động từ
+    back:
+      meaning:
+        vi: "thì quá khứ hoàn thành: việc xảy ra TRƯỚC một mốc khác trong quá khứ (\"đã… rồi\" trước lúc đó); dùng had cho mọi chủ ngữ"
+      examples:
+        - target: When I got to the station, the train had left.
+          translation:
+            vi: Khi mình đến ga thì tàu đã chạy mất rồi.
+        - target: She was hungry because she hadn't eaten all day.
+          translation:
+            vi: Cô ấy đói vì cả ngày chưa ăn gì.
+      pronunciation_note:
+        vi: Trong câu, had thường đọc yếu /həd/ hoặc rút gọn 'd (I'd, she'd); hadn't đọc /ˈhædnt/.
+      confusion:
+        vi: "So sánh: When I got there, the train left (tàu chạy lúc mình vừa đến) và When I got there, the train had left (tàu chạy trước khi mình đến). Phân từ hai của động từ bất quy tắc phải học riêng: go → gone, leave → left, eat → eaten."
+
+  - key: en:item:past-perfect-when-needed
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: Khi nào KHÔNG cần past perfect
+      pos: quy tắc dùng thì
+    back:
+      meaning:
+        vi: "chỉ dùng had + V3 khi cần nhấn mạnh một việc xảy ra trước một mốc quá khứ khác; kể các việc nối tiếp nhau theo đúng thứ tự thì chỉ dùng quá khứ đơn"
+      examples:
+        - target: Yesterday I got up, had breakfast and went to work.
+          translation:
+            vi: Hôm qua mình dậy, ăn sáng rồi đi làm.
+        - target: I visited Hue last year.
+          translation:
+            vi: Năm ngoái mình đã đi Huế.
+      confusion:
+        vi: Chữ "đã" trong tiếng Việt không có nghĩa là phải dùng had. I had visited Hue last year là sai nếu không có mốc quá khứ nào khác để so sánh.
+
+  - key: en:item:by-the-time
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: by the time
+      ipa: /baɪ ðə ˈtaɪm/
+      pos: liên từ
+    back:
+      meaning:
+        vi: trước lúc, đến lúc (mà) - việc kia đã xảy ra rồi
+      examples:
+        - target: By the time the police arrived, the thief had run away.
+          translation:
+            vi: Đến lúc cảnh sát tới thì tên trộm đã chạy mất rồi.
+      pronunciation_note:
+        vi: Nói liền by the time /baɪðəˈtaɪm/, nhấn vào TIME.
+      confusion:
+        vi: Vế có by the time dùng quá khứ đơn (arrived); vế còn lại thường dùng had + V3. Không nói By the time the police had arrived.
+
+  - key: en:item:realise
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: realise (US realize)
+      ipa: UK /ˈrɪəlaɪz/ · US /ˈriːəlaɪz/
+      pos: động từ
+    back:
+      meaning:
+        vi: nhận ra, chợt hiểu ra
+      examples:
+        - target: When I got to the office, I realised I had left my laptop at home.
+          translation:
+            vi: Đến văn phòng mình mới nhận ra là đã để quên laptop ở nhà.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu REAL; đuôi -ise/-ize đọc /aɪz/ có âm /z/ rung.
+      confusion:
+        vi: Anh viết realise, Mỹ viết realize - đều đúng, nhưng nên dùng thống nhất một kiểu. Realise là hiểu ra; notice là nhìn/nghe thấy.
+
+  - key: en:item:find-out
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: find out (found out)
+      ipa: /ˌfaɪnd ˈaʊt/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: phát hiện ra, biết được (thông tin)
+      examples:
+        - target: Later we found out that someone had taken the money.
+          translation:
+            vi: Sau đó tụi mình phát hiện ra là có người đã lấy tiền.
+      pronunciation_note:
+        vi: Nối âm find out thành /faɪndaʊt/, nhấn vào OUT.
+      confusion:
+        vi: Find là tìm thấy đồ vật (I found my keys); find out là biết được một sự thật (I found out the truth).
+
+  - key: en:item:miss-the-train
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: miss (the train / the bus)
+      ipa: /mɪs ðə ˈtreɪn/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: lỡ (tàu, xe buýt, chuyến bay)
+      examples:
+        - target: I missed the bus because I had got up late.
+          translation:
+            vi: Mình lỡ xe buýt vì hôm đó dậy muộn.
+      pronunciation_note:
+        vi: Miss đọc /mɪs/ với âm "i" ngắn; quá khứ missed đọc /mɪst/.
+      confusion:
+        vi: Miss còn có nghĩa là nhớ ai đó (I miss you). Lỡ xe nói miss the bus, không nói lose the bus.
+
+  - key: en:item:lock
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: lock
+      ipa: UK /lɒk/ · US /lɑːk/
+      pos: động từ, danh từ
+    back:
+      meaning:
+        vi: khoá (cửa, xe); ổ khoá
+      examples:
+        - target: I wasn't sure if I had locked the door.
+          translation:
+            vi: Mình không chắc là đã khoá cửa chưa.
+      pronunciation_note:
+        vi: Quá khứ locked đọc /lɒkt/ - một âm tiết, không đọc "lốc-kớt".
+      confusion:
+        vi: Lock là khoá lại; key là chìa khoá. Không nói I keyed the door.
+
+  - key: en:item:leave-behind
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: leave (something) behind / leave (left, left)
+      ipa: /ˌliːv bɪˈhaɪnd/ · left /left/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: để quên, bỏ quên (đồ vật ở đâu đó)
+      examples:
+        - target: She realised she had left her bag behind in the taxi.
+          translation:
+            vi: Cô ấy nhận ra là đã bỏ quên túi trên taxi.
+      pronunciation_note:
+        vi: Leave có âm /iː/ dài; left có âm /e/ ngắn - đừng đọc hai từ giống nhau.
+      confusion:
+        vi: Để quên đồ ở một nơi dùng leave (I left my phone at home), không dùng forget + nơi chốn (I forgot my phone at home nghe không tự nhiên bằng).
+
+  - key: en:item:arrive
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: arrive
+      ipa: /əˈraɪv/
+      pos: động từ
+    back:
+      meaning:
+        vi: đến nơi
+      examples:
+        - target: When we arrived at the cinema, the film had already started.
+          translation:
+            vi: Khi tụi mình đến rạp thì phim đã chiếu rồi.
+      pronunciation_note:
+        vi: Nhấn vào RIVE; âm cuối /v/ chạm răng trên vào môi dưới, không bỏ âm.
+      confusion:
+        vi: Arrive at + nơi nhỏ (station, cinema), arrive in + thành phố/quốc gia; không dùng arrive to.
+
+  - key: en:item:the-day-before
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: the day before / the week before
+      ipa: UK /ðə ˈdeɪ bɪˈfɔː/ · US /ðə ˈdeɪ bɪˈfɔːr/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: hôm trước đó, tuần trước đó (tính từ một mốc trong câu chuyện)
+      examples:
+        - target: I was tired because I had worked late the day before.
+          translation:
+            vi: Mình mệt vì hôm trước đó đã làm việc đến khuya.
+      pronunciation_note:
+        vi: Before nhấn âm sau FORE; đọc /bɪˈfɔː/, không đọc "bi-fo-rơ" kiểu Việt.
+      confusion:
+        vi: Yesterday tính từ hôm nay; the day before tính từ ngày đang kể trong câu chuyện, nên hay đi với had + V3.
+
+  - key: en:item:wallet
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: wallet
+      ipa: UK /ˈwɒlɪt/ · US /ˈwɑːlɪt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ví tiền (ví nam, ví gập)
+      examples:
+        - target: He couldn't pay because someone had stolen his wallet.
+          translation:
+            vi: Anh ấy không trả tiền được vì đã bị ai đó lấy cắp ví.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu WAL; -let đọc nhẹ /lɪt/.
+      confusion:
+        vi: Wallet là ví nhỏ; purse (Anh) thường là ví nữ, còn ở Mỹ purse là túi xách.
+
+  # ---------------- Bài 3: Kể chuyện - thì kể chuyện, từ nối, phản ứng ----------------
+  - key: en:item:narrative-tenses
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: Narrative tenses (thì kể chuyện)
+      pos: cách phối hợp thì
+    back:
+      meaning:
+        vi: "kể chuyện bằng ba thì: quá khứ tiếp diễn cho bối cảnh (đang diễn ra), quá khứ đơn cho các sự việc chính, quá khứ hoàn thành cho việc đã xảy ra trước đó"
+      examples:
+        - target: It was raining and I was waiting for a taxi. Suddenly I realised I had left my umbrella at the office.
+          translation:
+            vi: Trời đang mưa và mình đang chờ taxi. Bỗng mình nhận ra là đã để quên ô ở văn phòng.
+      confusion:
+        vi: Đừng dùng một thì cho cả câu chuyện. Bối cảnh → was/were + V-ing; sự việc chính → quá khứ đơn; chuyện xảy ra trước nữa → had + V3.
+
+  - key: en:item:suddenly
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: suddenly
+      ipa: /ˈsʌdənli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: bỗng nhiên, đột nhiên
+      examples:
+        - target: We were having dinner when suddenly all the lights went out.
+          translation:
+            vi: Cả nhà đang ăn tối thì bỗng nhiên đèn tắt hết.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu SUD; âm giữa -den- gần như nuốt mất /ˈsʌdnli/.
+      confusion:
+        vi: Suddenly đi với sự việc ngắn ở quá khứ đơn, không dùng với bối cảnh kéo dài.
+
+  - key: en:item:meanwhile
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: meanwhile
+      ipa: /ˈmiːnwaɪl/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: trong khi đó, cùng lúc đó (ở một nơi/người khác)
+      examples:
+        - target: I was looking for my keys. Meanwhile, my sister was waiting in the car.
+          translation:
+            vi: Mình đang tìm chìa khoá. Trong khi đó, em gái mình đang ngồi chờ trong xe.
+      pronunciation_note:
+        vi: Nhấn vào MEAN với âm /iː/ dài.
+      confusion:
+        vi: Meanwhile đứng đầu câu mới, có dấu phẩy sau; while nối hai vế trong cùng một câu.
+
+  - key: en:item:eventually
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: eventually
+      ipa: /ɪˈventʃuəli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: cuối cùng (thì), rốt cuộc - sau một thời gian dài hoặc nhiều khó khăn
+      examples:
+        - target: We waited for two hours, and eventually the bus came.
+          translation:
+            vi: Tụi mình chờ hai tiếng, và cuối cùng thì xe buýt cũng đến.
+      pronunciation_note:
+        vi: Nhấn vào âm thứ hai VEN; -tually đọc /tʃuəli/ gần "chu-ơ-li".
+      confusion:
+        vi: Eventually nhấn mạnh "sau một thời gian dài chờ đợi" một sự việc mới xảy ra; in the end nhấn mạnh kết quả chung của cả câu chuyện. Eventually không có nghĩa "có lẽ" - muốn nói "có lẽ" dùng maybe.
+
+  - key: en:item:in-the-end
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: in the end
+      ipa: /ɪn ði ˈend/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: cuối cùng, rốt cuộc (kết quả sau cùng của cả câu chuyện)
+      examples:
+        - target: We got lost twice, but in the end we found the hotel.
+          translation:
+            vi: Tụi mình lạc đường hai lần, nhưng cuối cùng cũng tìm được khách sạn.
+      pronunciation_note:
+        vi: The trước nguyên âm đọc /ði/; nối thành /ɪnðiˈend/.
+      confusion:
+        vi: In the end đứng một mình, không có of phía sau. "Cuối bộ phim" là at the end of the film, không phải in the end of the film.
+
+  - key: en:item:at-the-end-of
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: at the end of (something)
+      ipa: /ət ði ˈend əv/
+      pos: cụm giới từ
+    back:
+      meaning:
+        vi: vào cuối (một khoảng thời gian, một sự việc, một nơi)
+      examples:
+        - target: At the end of the film, everyone was crying.
+          translation:
+            vi: Đến cuối phim thì ai cũng khóc.
+      pronunciation_note:
+        vi: Of đọc yếu /əv/; nối end of thành /endəv/.
+      confusion:
+        vi: Có of + danh từ phía sau thì dùng at (at the end of the day, at the end of the street). In the end không đi với of.
+
+  - key: en:item:at-first
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: at first
+      ipa: UK /ət ˈfɜːst/ · US /ət ˈfɝːst/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: lúc đầu, ban đầu (sau đó tình hình thay đổi)
+      examples:
+        - target: At first I didn't believe her, but then I saw the photos.
+          translation:
+            vi: Lúc đầu mình không tin cô ấy, nhưng rồi mình thấy ảnh.
+      pronunciation_note:
+        vi: First có âm /ɜː/ dài và đuôi /st/; đừng bỏ âm /t/ cuối.
+      confusion:
+        vi: At first là "lúc đầu (rồi khác đi)"; first/firstly là "trước tiên" khi liệt kê các bước.
+
+  - key: en:item:luckily
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: luckily / fortunately
+      ipa: luckily /ˈlʌkɪli/ · fortunately UK /ˈfɔːtʃənətli/ · US /ˈfɔːrtʃənətli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: may mắn là, may thay
+      examples:
+        - target: The car hit a tree. Luckily, nobody was injured.
+          translation:
+            vi: Chiếc xe đâm vào cây. May mà không ai bị thương.
+      pronunciation_note:
+        vi: Luckily nhấn vào LUCK, âm /ʌ/ gần "ă".
+      confusion:
+        vi: Đứng đầu câu và có dấu phẩy sau. Không nói Lucky, nobody was injured - phải là trạng từ luckily.
+
+  - key: en:item:unfortunately
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: unfortunately
+      ipa: UK /ʌnˈfɔːtʃənətli/ · US /ʌnˈfɔːrtʃənətli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: không may là, đáng tiếc là
+      examples:
+        - target: Unfortunately, the shop had closed by the time we got there.
+          translation:
+            vi: Không may là đến lúc tụi mình tới thì cửa hàng đã đóng cửa.
+      pronunciation_note:
+        vi: Nhấn vào âm thứ hai FOR; cả từ có năm âm tiết un-FOR-tu-nate-ly.
+      confusion:
+        vi: Unfortunately báo trước một tin xấu; luckily/fortunately báo trước một tin tốt.
+
+  - key: en:item:really-reaction
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: Really?
+      ipa: UK /ˈrɪəli/ · US /ˈriːəli/
+      pos: câu cảm thán
+    back:
+      meaning:
+        vi: Thật á? Thật vậy sao? (tỏ ra ngạc nhiên, quan tâm khi nghe kể)
+      examples:
+        - target: I saw a famous singer on the bus. - Really? Who was it?
+          translation:
+            vi: Mình gặp một ca sĩ nổi tiếng trên xe buýt. - Thật á? Ai vậy?
+      pronunciation_note:
+        vi: Lên giọng ở cuối khi hỏi lại vì ngạc nhiên; xuống giọng nghe như không tin hoặc chán.
+      confusion:
+        vi: Người nghe tiếng Anh thường phản hồi liên tục (Really? Oh no! Wow!). Im lặng khi người khác kể chuyện có thể bị hiểu là không quan tâm.
+
+  - key: en:item:thats-terrible
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: That's terrible! / How awful!
+      ipa: /ðæts ˈterəbl/ · UK /haʊ ˈɔːfl/ · US /haʊ ˈɑːfl/
+      pos: câu cảm thán
+    back:
+      meaning:
+        vi: Kinh khủng quá! Tệ quá! (phản ứng với tin xấu)
+      examples:
+        - target: Someone stole my bike yesterday. - Oh no, that's terrible!
+          translation:
+            vi: Hôm qua mình bị ai lấy mất xe đạp. - Ôi, tệ quá!
+      pronunciation_note:
+        vi: Terrible nhấn âm đầu TER; đuôi -ble đọc /bl/, không đọc "bồ".
+      confusion:
+        vi: Với tin vui dùng That's great! / That's amazing!; đừng nói That's terrible với tin tốt. Có thể dùng That's a pity / What a shame cho chuyện không may nhỏ.
+
+  - key: en:item:no-way
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: No way!
+      ipa: UK /ˌnəʊ ˈweɪ/ · US /ˌnoʊ ˈweɪ/
+      pos: câu cảm thán
+    back:
+      meaning:
+        vi: Không thể nào! Làm gì có! (rất ngạc nhiên, khó tin - thân mật)
+      examples:
+        - target: I won the first prize! - No way! Congratulations!
+          translation:
+            vi: Mình giành giải nhất! - Không thể tin được! Chúc mừng nhé!
+      pronunciation_note:
+        vi: Nhấn mạnh vào WAY và kéo dài khi rất ngạc nhiên.
+      confusion:
+        vi: No way! dùng với bạn bè, không dùng trong email công việc hay với cấp trên. Nó không có nghĩa là "không có đường".
+
+  - key: en:item:what-happened-next
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: What happened next? / And then what?
+      ipa: UK /wɒt ˈhæpənd ˈnekst/ · US /wʌt ˈhæpənd ˈnekst/
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Rồi sao nữa? Chuyện gì xảy ra tiếp theo?
+      examples:
+        - target: The police stopped our bus. - Really? What happened next?
+          translation:
+            vi: Cảnh sát chặn xe buýt của tụi mình. - Thật á? Rồi sao nữa?
+      pronunciation_note:
+        vi: Happened đọc /ˈhæpənd/, hai âm tiết, đuôi -ed là /d/.
+      confusion:
+        vi: What happened? không cần did vì what là chủ ngữ. Không nói What did happen next?
+
+  # ---------------- Bài 4: Mệnh đề quan hệ & từ vựng tin tức ----------------
+  - key: en:item:relative-who-which-that
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: who / which / that (defining relative clauses)
+      ipa: who /huː/ · which /wɪtʃ/ · that /ðæt, ðət/
+      pos: đại từ quan hệ
+    back:
+      meaning:
+        vi: "mệnh đề quan hệ xác định, giúp nói rõ người/vật nào: who (hoặc that) cho người, which (hoặc that) cho vật"
+      examples:
+        - target: The man who found my wallet was a taxi driver.
+          translation:
+            vi: Người đàn ông nhặt được ví của mình là một tài xế taxi.
+        - target: This is the article that I told you about.
+          translation:
+            vi: Đây là bài báo mà mình kể với bạn.
+      confusion:
+        vi: Who/which/that đã thay cho chủ ngữ nên không thêm he, she, it nữa - không nói the man who he lives next door. Tiếng Việt dùng "mà/người" rồi lặp lại chủ ngữ, nên lỗi này rất hay gặp.
+
+  - key: en:item:relative-where
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: where (mệnh đề quan hệ chỉ nơi chốn)
+      ipa: UK /weə/ · US /wer/
+      pos: trạng từ quan hệ
+    back:
+      meaning:
+        vi: "nơi mà: danh từ chỉ nơi chốn + where + chủ ngữ + động từ"
+      examples:
+        - target: That's the street where the accident happened.
+          translation:
+            vi: Đó là con phố nơi xảy ra vụ tai nạn.
+      pronunciation_note:
+        vi: Where và were nghe gần giống nhau ở giọng Mỹ; where có âm /eə/ rõ hơn ở giọng Anh.
+      confusion:
+        vi: Sau where phải có chủ ngữ và động từ đầy đủ. Nếu sau đó là động từ ngay (The café which opened last week) thì dùng which/that, không dùng where.
+
+  - key: en:item:headline
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: headline
+      ipa: /ˈhedlaɪn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tít báo, tiêu đề tin
+      examples:
+        - target: Did you see the headline in today's paper?
+          translation:
+            vi: Bạn có thấy cái tít trên báo hôm nay không?
+      pronunciation_note:
+        vi: Nhấn vào HEAD /hed/, đọc như "hét" nhẹ, không đọc "hiếc".
+      confusion:
+        vi: Tít báo thường bỏ mạo từ và dùng hiện tại đơn cho sự việc đã xảy ra (Bus Hits Tree), khác với câu bình thường.
+
+  - key: en:item:news-article
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: article
+      ipa: UK /ˈɑːtɪkl/ · US /ˈɑːrtɪkl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài báo, bài viết
+      examples:
+        - target: I read an interesting article about the flood.
+          translation:
+            vi: Mình đọc một bài báo thú vị về trận lũ.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu AR; đuôi -cle đọc /kl/.
+      confusion:
+        vi: Một bài báo là an article (bắt đầu bằng nguyên âm). News là danh từ không đếm được - nói a piece of news hoặc some news, không nói a news.
+
+  - key: en:item:report
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: report
+      ipa: UK /rɪˈpɔːt/ · US /rɪˈpɔːrt/
+      pos: danh từ, động từ
+    back:
+      meaning:
+        vi: bản tin, bản báo cáo; đưa tin, báo cáo
+      examples:
+        - target: The newspaper reported that two people were injured.
+          translation:
+            vi: Tờ báo đưa tin rằng có hai người bị thương.
+      pronunciation_note:
+        vi: Nhấn vào âm thứ hai PORT, cả khi là danh từ lẫn động từ.
+      confusion:
+        vi: Report something to someone (báo cho ai), không nói report someone something. Phóng viên là reporter.
+
+  - key: en:item:according-to
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: according to
+      ipa: UK /əˈkɔːdɪŋ tə/ · US /əˈkɔːrdɪŋ tə/
+      pos: cụm giới từ
+    back:
+      meaning:
+        vi: theo (ai đó, nguồn tin nào đó)
+      examples:
+        - target: According to the police, the driver was going too fast.
+          translation:
+            vi: Theo cảnh sát, tài xế đã chạy quá nhanh.
+      pronunciation_note:
+        vi: Nhấn vào âm thứ hai COR; to đọc yếu /tə/.
+      confusion:
+        vi: According to dùng cho nguồn tin của người khác. Không nói according to me - nói In my opinion.
+
+  - key: en:item:happen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: happen (happened)
+      ipa: /ˈhæpən/
+      pos: động từ (nội động từ)
+    back:
+      meaning:
+        vi: xảy ra, diễn ra
+      examples:
+        - target: The accident happened at about 7 a.m.
+          translation:
+            vi: Vụ tai nạn xảy ra vào khoảng 7 giờ sáng.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu HAP; quá khứ happened đọc /ˈhæpənd/.
+      confusion:
+        vi: Happen không có dạng bị động. Không nói was happened hay is happened - chỉ nói happened. Ai đó gặp chuyện là something happened to someone.
+
+  - key: en:item:accident
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: accident
+      ipa: /ˈæksɪdənt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tai nạn; sự tình cờ (by accident)
+      examples:
+        - target: There was a car accident on the bridge this morning.
+          translation:
+            vi: Sáng nay có một vụ tai nạn ô tô trên cầu.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu AC /æk/; cc đọc /ks/.
+      confusion:
+        vi: Gặp tai nạn là have an accident hoặc be in an accident, không nói get accident. By accident là "vô tình".
+
+  - key: en:item:injured
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: injured
+      ipa: UK /ˈɪndʒəd/ · US /ˈɪndʒɚd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: bị thương (trong tai nạn, sự cố)
+      examples:
+        - target: Three people were injured in the accident.
+          translation:
+            vi: Ba người bị thương trong vụ tai nạn.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu IN; j đọc /dʒ/ như "giơ" bật hơi.
+      confusion:
+        vi: Injured dùng cho tai nạn; wounded dùng cho vết thương do vũ khí. Hurt dùng trong văn nói (Is anyone hurt?).
+
+  - key: en:item:witness
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: witness
+      ipa: /ˈwɪtnəs/
+      pos: danh từ, động từ
+    back:
+      meaning:
+        vi: nhân chứng; chứng kiến
+      examples:
+        - target: A witness said the car didn't stop at the red light.
+          translation:
+            vi: Một nhân chứng nói rằng chiếc xe đã không dừng ở đèn đỏ.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu WIT; -ness đọc nhẹ /nəs/.
+      confusion:
+        vi: Witness là người chứng kiến; người bị hại là victim.
+
+  - key: en:item:journalist
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: journalist
+      ipa: UK /ˈdʒɜːnəlɪst/ · US /ˈdʒɝːnəlɪst/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà báo
+      examples:
+        - target: My cousin is a journalist who writes about sport.
+          translation:
+            vi: Anh họ mình là nhà báo chuyên viết về thể thao.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu JOUR /dʒɜː/, không đọc "giốc".
+      confusion:
+        vi: Journalist là nhà báo nói chung; reporter là phóng viên đi đưa tin tại hiện trường.
+
+  # ---------------- Bài 5: Ôn tập ----------------
+  - key: en:item:rescue
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: rescue
+      ipa: /ˈreskjuː/
+      pos: động từ, danh từ
+    back:
+      meaning:
+        vi: giải cứu, cứu (khỏi nguy hiểm); cuộc giải cứu
+      examples:
+        - target: Firefighters rescued two children from the building.
+          translation:
+            vi: Lính cứu hoả đã giải cứu hai đứa trẻ khỏi toà nhà.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu RES; -cue đọc /kjuː/ như chữ Q.
+      confusion:
+        vi: Rescue là cứu khỏi nguy hiểm; save có nghĩa rộng hơn (cứu, tiết kiệm, lưu file).
+
+  - key: en:item:firefighter
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: firefighter
+      ipa: UK /ˈfaɪəfaɪtə/ · US /ˈfaɪɚfaɪtɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: lính cứu hoả
+      examples:
+        - target: The firefighters arrived ten minutes after the fire had started.
+          translation:
+            vi: Lính cứu hoả đến mười phút sau khi đám cháy bùng lên.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu FIRE; fighter đọc /faɪtə/.
+      confusion:
+        vi: Fireman là cách nói cũ; firefighter là từ trung tính, dùng cho cả nam và nữ.

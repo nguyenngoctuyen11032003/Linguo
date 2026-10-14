@@ -1,0 +1,439 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:reasons-conditions-review
+order_index: 5
+level: topik3
+title:
+  vi: "Ôn tập: thông báo, tin nhắn & bài blog"
+objectives:
+  - vi: Đọc hiểu một thông báo chung cư, chuỗi tin nhắn và một đoạn blog ở trình độ TOPIK 3, suy ra ý không nói thẳng.
+  - vi: Phối hợp lý do, điều kiện, nhượng bộ, định ngữ, -는데 và lời nói gián tiếp trong cùng một tình huống.
+  - vi: Nhận ra văn phong viết -다/-ㄴ다 và văn phong thông báo -ㅂ니다.
+estimated_minutes: 22
+skills: [reading, grammar, writing]
+prerequisites: [ko:lesson:indirect-quotation]
+items:
+  - item: ko:item:gongji
+  - item: ko:item:gongsa
+  - item: ko:item:iyonghada
+  - item: ko:item:yanghae
+  - item: ko:item:hugi
+  - item: ko:item:gidaehada
+  - item: ko:item:gram-aseo-reason
+    role: reuse
+  - item: ko:item:gram-eunikka
+    role: reuse
+  - item: ko:item:gram-gi-ttaemune
+    role: reuse
+  - item: ko:item:gram-euryeomyeon
+    role: reuse
+  - item: ko:item:gram-ado-eodo
+    role: reuse
+  - item: ko:item:gram-adnominal
+    role: reuse
+  - item: ko:item:gram-neunde
+    role: reuse
+  - item: ko:item:gram-geot-gatda
+    role: reuse
+  - item: ko:item:gram-dago-hada
+    role: reuse
+  - item: ko:item:gram-daeyo-raeyo
+    role: reuse
+  - item: ko:item:gojang-nada
+    role: reuse
+  - item: ko:item:gamgie-geollida
+    role: reuse
+  - item: ko:item:matjip
+    role: reuse
+  - item: ko:item:chinjeolhada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn này đưa bạn vào ba loại văn bản thường gặp ở Hàn Quốc - thông báo dán trong chung cư, tin nhắn giữa bạn bè, và bài blog review quán. Bạn sẽ dùng lại toàn bộ ngữ pháp của unit để hiểu và trả lời.
+  - type: explain
+    text:
+      vi: Thông báo dùng đuôi trang trọng -ㅂ니다/습니다 và các câu cố định - 이용해 주시기 바랍니다 (xin vui lòng sử dụng), 양해 부탁드립니다 (mong thông cảm). Trong văn viết, -(으)니까 thường rút thành -(으)니 - 이용할 수 없으니 계단을 이용해 주십시오.
+  - type: explain
+    text:
+      vi: Blog, nhật ký, bài báo dùng văn phong -다 - quá khứ 갔다, 좋았다; hiện tại động từ 간다, 먹는다; tính từ 좋다, 비싸다. Đây chính là dạng trước -고 trong -다고 하다, nên đọc quen rồi bạn sẽ thuật lại lời nói dễ hơn.
+  - type: deep_explain
+    text:
+      vi: Câu hỏi TOPIK 3 thường không hỏi điều viết thẳng ra, mà hỏi điều suy ra được - ví dụ thông báo nói thi công "đến 3 giờ chiều" thì 4 giờ có thể đi thang máy. Khi đọc, bạn hãy để ý các từ nối như -아서, -니까 (lý do), -는데 (đối lập, bối cảnh), -아도 (dù), vì chúng cho biết quan hệ giữa các ý.
+  - type: example
+    target: 10월 20일 오전 10시부터 오후 3시까지 엘리베이터 공사가 있습니다. 공사 시간에는 엘리베이터를 이용할 수 없으니 계단을 이용해 주시기 바랍니다.
+    target_lang: ko
+    translation:
+      vi: Từ 10 giờ sáng đến 3 giờ chiều ngày 20/10 sẽ thi công thang máy. Trong thời gian thi công không thể dùng thang máy, xin vui lòng đi cầu thang bộ.
+    note:
+      vi: 없으니 = 없으니까 (văn viết); văn phong thông báo -ㅂ니다.
+  - type: example
+    target: "민수: 지금 카페 앞인데 어디예요? / 수진: 버스가 고장 나서 좀 늦을 것 같아요. 밖이 추우니까 안에서 기다려 주세요."
+    target_lang: ko
+    translation:
+      vi: "Minsu: Tôi đang ở trước quán cà phê rồi, bạn đâu? / Sujin: Xe buýt hỏng nên chắc tôi đến muộn một chút. Ngoài trời lạnh, bạn vào trong chờ nhé."
+    note:
+      vi: -는데 nêu bối cảnh, -아서 kể lý do, -니까 đi với lời nhờ.
+  - type: example
+    target: 후기가 좋아서 기대했는데 음식은 평범했다. 그래도 직원들이 친절해서 다시 갈 것 같다.
+    target_lang: ko
+    translation:
+      vi: Review tốt nên tôi đã mong đợi, nhưng đồ ăn bình thường. Dù vậy nhân viên niềm nở nên chắc tôi sẽ quay lại.
+    note:
+      vi: Văn phong blog -다; 기대했는데 = đã mong đợi nhưng…
+  - type: example
+    target: 친구 말로는 그 맛집은 주말에 1시간 넘게 줄을 서야 한대요.
+    target_lang: ko
+    translation:
+      vi: Theo lời bạn tôi, quán đó cuối tuần phải xếp hàng hơn 1 tiếng.
+    note:
+      vi: 한대요 = 한다고 해요 (thuật lại tin nghe được).
+  - type: common_mistake
+    wrong: 공사 때문에 그래서 엘리베이터를 못 탔어요.
+    right: 공사 때문에 엘리베이터를 못 탔어요.
+    target_lang: ko
+    note:
+      vi: Đã có 때문에 thì không thêm 그래서. Tiếng Việt nói "vì… nên…", nhưng tiếng Hàn chỉ cần một từ nối.
+  - type: common_mistake
+    wrong: 그 사람이 이 카페 사장님이다고 했어요.
+    right: 그 사람이 이 카페 사장님이라고 했어요.
+    target_lang: ko
+    note:
+      vi: Sau danh từ, lời thuật lại là (이)라고. Đây là lỗi rất hay gặp khi người học kể lại chuyện.
+  - type: common_mistake
+    wrong: 밖이 추워서 안에서 기다려 주세요.
+    right: 밖이 추우니까 안에서 기다려 주세요.
+    target_lang: ko
+    note:
+      vi: Vế sau là lời nhờ (-아 주세요) nên lý do dùng -(으)니까, không dùng -아서.
+  - type: summary
+    points:
+      - vi: Thông báo - -ㅂ니다, 이용해 주시기 바랍니다, 양해 부탁드립니다; văn viết -(으)니 = -(으)니까.
+      - vi: Blog - văn phong -다 (갔다, 간다, 좋다); dạng này cũng là gốc của -다고 하다.
+      - vi: Lý do -아서 / -(으)니까 / -기 때문에; điều kiện -(으)면 / -(으)려면; nhượng bộ -아도 / -더라도.
+      - vi: Định ngữ, -것 같다, -는데 chia theo cùng quy tắc động từ / tính từ / danh từ.
+      - vi: Tường thuật - -다고, -냐고, -자고, -(으)라고; nói rút gọn -대요, -래요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:rc-review-listen-elevator
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gojang-nada
+    prompt:
+      audio_asset_id: null
+      fallback_text: 엘리베이터가 고장 나서 계단으로 올라갔어요.
+      options:
+        - { id: g4p, text: Thang máy hỏng nên tôi đi cầu thang bộ lên., lang: vi }
+        - { id: w8c, text: Dù thang máy hỏng tôi vẫn đi thang máy lên., lang: vi }
+        - { id: a2u, text: Nếu thang máy hỏng thì hãy đi cầu thang bộ., lang: vi }
+        - { id: r7k, text: Nghe nói thang máy bị hỏng., lang: vi }
+    answer:
+      correct_option_id: g4p
+    explanation:
+      vi: 고장 나서 là "hỏng nên" (lý do), 계단으로 올라갔어요 là "đã đi cầu thang lên". Không có -아도 (dù), -면 (nếu) hay -대요 (nghe nói).
+    display_answer: Thang máy hỏng nên tôi đi cầu thang bộ lên.
+
+  - key: ko:exercise:rc-review-mcq-iyong
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:iyonghada
+    prompt:
+      stem: "Chọn từ hợp với thông báo: 공사 기간에는 뒷문을 ______ 주십시오. (Trong thời gian thi công, xin dùng cửa sau.)"
+      stem_lang: vi
+      options:
+        - { id: d5m, text: 이용해, lang: ko }
+        - { id: k2x, text: 취소해, lang: ko }
+        - { id: o9f, text: 제출해, lang: ko }
+        - { id: y6b, text: 추천해, lang: ko }
+    answer:
+      correct_option_id: d5m
+    explanation:
+      vi: 이용하다 là "sử dụng" cơ sở, dịch vụ - 뒷문을 이용하다. 취소하다 là hủy, 제출하다 là nộp, 추천하다 là gợi ý - không hợp với "cửa sau".
+    display_answer: 이용해
+
+  - key: ko:exercise:rc-review-mcq-connector
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eunikka
+    prompt:
+      stem: "Chọn vế đúng cho tin nhắn: 길이 많이 ______ 먼저 출발하세요. (Đường tắc lắm, bạn xuất phát trước đi.)"
+      stem_lang: vi
+      options:
+        - { id: n3h, text: 막히니까, lang: ko }
+        - { id: e8v, text: 막혀서, lang: ko }
+        - { id: t1q, text: 막혔어서, lang: ko }
+        - { id: l6z, text: 막혀도, lang: ko }
+    answer:
+      correct_option_id: n3h
+    explanation:
+      vi: 출발하세요 là lời khuyên nên lý do dùng -(으)니까. -아서 không đi với -세요, 막혔어서 sai vì gắn quá khứ vào -아서, 막혀도 nghĩa là "dù tắc".
+    display_answer: 막히니까
+
+  - key: ko:exercise:rc-review-wb-crowded
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-daeyo-raeyo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Nghe nói quán đó đông người lắm.\""
+      tokens:
+        - { id: z3, text: 많대요 }
+        - { id: z5, text: 많아래요 }
+        - { id: z2, text: 사람이 }
+        - { id: z1, text: 그 식당은 }
+        - { id: z4, text: 많다고 }
+    answer:
+      orders:
+        - [z1, z2, z3]
+    explanation:
+      vi: 많다 là tính từ → 많다고 해요 → 많대요 (nghe nói đông). 많아래요 không tồn tại; 많다고 thiếu động từ 하다 ở cuối nên chưa thành câu.
+    display_answer: 그 식당은 사람이 많대요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:rc-review-fill-messages
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-neunde
+    prompt:
+      template: "민수: 수진 씨, 저는 지금 카페 {{b1}} 어디예요? 수진: 미안해요. 버스가 {{b2}} 좀 늦을 것 같아요. 밖이 {{b3}} 안에서 기다려 주세요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [앞인데]
+        b2: [고장 나서, 고장나서, 고장이 나서]
+        b3: [추우니까]
+    known_wrong:
+      - answer: 앞는데
+        feedback_vi: 앞 là danh từ nên dùng 인데 - 앞인데.
+        error_tag: neunde_noun
+      - answer: 고장 났어서
+        feedback_vi: -아서 không gắn quá khứ - 고장 나서.
+        error_tag: past_with_aseo
+      - answer: 추워서
+        feedback_vi: Vế sau là lời nhờ (기다려 주세요) nên dùng -(으)니까 - 추우니까.
+        error_tag: aseo_with_imperative
+      - answer: 춥으니까
+        feedback_vi: 춥다 là bất quy tắc ㅂ - ㅂ thành 우 - 추우니까.
+        error_tag: b_irregular
+    explanation:
+      vi: Danh từ + 인데 nêu bối cảnh (카페 앞인데). Lý do kể lại - 고장 나서. Lý do kèm lời nhờ - 추우니까 (춥다 bất quy tắc ㅂ).
+    display_answer: 저는 지금 카페 앞인데 어디예요? 버스가 고장 나서 좀 늦을 것 같아요. 밖이 추우니까 안에서 기다려 주세요.
+
+  - key: ko:exercise:rc-review-translate-gym
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-euryeomyeon
+    prompt:
+      source_text: Muốn dùng phòng gym thì phải đăng ký trước.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 헬스장을 이용하려면 미리 신청해야 해요.
+        - 헬스장을 이용하려면 미리 신청해야 돼요.
+        - 헬스장을 이용하려면 먼저 신청해야 해요.
+        - 헬스장을 이용하려면 미리 등록해야 해요.
+        - 헬스장을 이용하려면 먼저 등록해야 해요.
+        - 헬스장을 쓰려면 미리 신청해야 해요.
+        - 헬스장을 사용하려면 미리 신청해야 해요.
+        - 헬스장을 이용하려면 미리 신청을 해야 해요.
+        - 헬스장 이용하려면 미리 신청해야 해요.
+    known_wrong:
+      - answer: 헬스장을 이용하면 미리 신청해야 해요.
+        feedback_vi: 이용하면 là "dùng rồi thì…". Mục đích "muốn dùng thì…" là 이용하려면.
+        error_tag: condition_vs_purpose
+      - answer: 헬스장을 이용하려면 미리 신청했어요.
+        feedback_vi: Vế sau nói điều cần làm - -아야 해요 (신청해야 해요).
+        error_tag: ryeomyeon_ending
+    explanation:
+      vi: Mục đích + điều cần làm → -(으)려면 … -아야 해요. Phòng gym là 헬스장; "dùng" cơ sở công cộng là 이용하다.
+    display_answer: 헬스장을 이용하려면 미리 신청해야 해요.
+
+  - key: ko:exercise:rc-review-fill-blog
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gidaehada
+    prompt:
+      template: "(Review tốt nên tôi đã mong đợi, nhưng đồ ăn bình thường.) 후기가 좋아서 {{b1}} 음식은 평범했다. (Dù vậy nhân viên niềm nở nên chắc tôi sẽ quay lại.) 그래도 직원들이 {{b2}} 다시 갈 것 같다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [기대했는데]
+        b2: [친절해서]
+    known_wrong:
+      - answer: 기대한데
+        feedback_vi: 기대하다 là động từ; quá khứ + -는데 là -았/었는데 - 기대했는데.
+        error_tag: neunde_past
+      - answer: 기대해서
+        feedback_vi: 기대해서 là "vì mong đợi nên…". Câu cần đối lập "đã mong đợi nhưng…" - 기대했는데.
+        error_tag: neunde_vs_aseo
+      - answer: 친절했어서
+        feedback_vi: -아서 không gắn quá khứ - 친절해서.
+        error_tag: past_with_aseo
+    explanation:
+      vi: Đối lập với việc đã qua - 기대했는데 (-았/었는데). Lý do - 친절하다 → 친절해서, thì của câu đã nằm ở cuối.
+    display_answer: 후기가 좋아서 기대했는데 음식은 평범했다. 그래도 직원들이 친절해서 다시 갈 것 같다.
+
+  - key: ko:exercise:rc-review-translate-sick
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-dago-hada
+    prompt:
+      source_text: Sujin nói là bị cảm nên hôm nay không đến được.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 수진 씨가 감기에 걸려서 오늘 못 온다고 했어요.
+        - 수진 씨가 감기 때문에 오늘 못 온다고 했어요.
+        - 수진 씨가 감기에 걸려서 오늘 못 온대요.
+        - 수진 씨가 감기 때문에 오늘 못 온대요.
+        - 수진 씨는 감기에 걸려서 오늘 못 온다고 했어요.
+        - 수진 씨가 감기에 걸려서 오늘 못 온다고 해요.
+        - 수진 씨가 감기에 걸렸기 때문에 오늘 못 온다고 했어요.
+        - 수진 씨가 오늘 감기에 걸려서 못 온다고 했어요.
+        - 수진 씨가 감기에 걸려서 오늘 못 온다고 하셨어요.
+    known_wrong:
+      - answer: 수진 씨가 감기에 걸렸어서 오늘 못 온다고 했어요.
+        feedback_vi: -아서 không gắn quá khứ - 걸려서.
+        error_tag: past_with_aseo
+      - answer: 수진 씨가 감기에 걸려서 오늘 못 오다고 했어요.
+        feedback_vi: Động từ hiện tại thuật lại cần -ㄴ다고 - 온다고.
+        error_tag: verb_neunda_missing
+      - answer: 수진 씨가 감기에 걸려서 오늘 못 오라고 했어요.
+        feedback_vi: -(으)라고 là lời bảo người khác. Sujin kể về mình nên dùng 온다고.
+        error_tag: rago_vs_dago
+    explanation:
+      vi: Lý do 감기에 걸려서 (hoặc 감기 때문에) + câu kể thuật lại 못 온다고 했어요. Khi nói có thể rút gọn - 못 온대요.
+    display_answer: 수진 씨가 감기에 걸려서 오늘 못 온다고 했어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:rc-review-mcq-notice
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gongji
+    prompt:
+      stem: "Đọc thông báo và chọn câu đúng. [공지] 엘리베이터 공사 안내 - 10월 20일(월) 오전 10시부터 오후 3시까지 엘리베이터 공사가 있습니다. 공사 시간에는 엘리베이터를 이용할 수 없으니 계단을 이용해 주시기 바랍니다. 무거운 짐을 옮기려면 관리사무소에 미리 연락해 주십시오. 불편을 드려 죄송합니다. 양해 부탁드립니다."
+      stem_lang: vi
+      options:
+        - { id: f7a, text: 오후 4시에는 엘리베이터를 탈 수 있다., lang: ko }
+        - { id: u2s, text: 공사는 하루 종일 한다., lang: ko }
+        - { id: p5e, text: 짐이 무거우면 공사 시간에도 엘리베이터를 써도 된다., lang: ko }
+        - { id: i9n, text: 공사는 화요일에 있다., lang: ko }
+    answer:
+      correct_option_id: f7a
+    explanation:
+      vi: Thi công chỉ từ 10 giờ sáng đến 3 giờ chiều thứ Hai, nên 4 giờ chiều đi thang máy được. Không phải cả ngày, không phải thứ Ba; đồ nặng thì phải báo trước ban quản lý, không được tự dùng thang máy.
+    display_answer: 오후 4시에는 엘리베이터를 탈 수 있다.
+
+  - key: ko:exercise:rc-review-mcq-blog
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:gram-neunde
+    prompt:
+      stem: "Đọc đoạn blog và chọn ý đúng. 요즘 회사 근처에 새로 생긴 카페에 자주 간다. 커피는 좀 비싼데 조용해서 일하기 좋다. 사장님 말로는 다음 달부터 아침 메뉴도 판다고 한다. 아침을 못 먹고 출근하는 날이 많으니까 나에게는 좋은 소식이다."
+      stem_lang: vi
+      options:
+        - { id: m4k, text: Từ tháng sau người viết có thể ăn sáng ở quán này., lang: vi }
+        - { id: s1w, text: Cà phê ở quán này rẻ., lang: vi }
+        - { id: c8r, text: Quán ồn nên khó làm việc., lang: vi }
+        - { id: h3d, text: Người viết thường ăn sáng ở nhà trước khi đi làm., lang: vi }
+    answer:
+      correct_option_id: m4k
+    explanation:
+      vi: 판다고 한다 - chủ quán nói tháng sau sẽ bán đồ ăn sáng; người viết hay nhịn ăn sáng nên thấy đây là tin vui. 비싼데 - cà phê hơi đắt; 조용해서 일하기 좋다 - yên tĩnh, dễ làm việc.
+    display_answer: Từ tháng sau người viết có thể ăn sáng ở quán này.
+
+  - key: ko:exercise:rc-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:yanghae
+    prompt:
+      source_text: 공사 때문에 불편을 드려 죄송합니다. 양해 부탁드립니다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin lỗi vì việc thi công gây bất tiện. Mong quý vị thông cảm.
+        - Xin lỗi vì thi công gây bất tiện. Mong quý vị thông cảm.
+        - Xin lỗi vì đã gây bất tiện do thi công. Mong quý vị thông cảm.
+        - Chúng tôi xin lỗi vì thi công gây bất tiện. Mong quý vị thông cảm.
+        - Xin lỗi vì việc thi công gây bất tiện. Mong mọi người thông cảm.
+        - Xin lỗi vì việc thi công gây bất tiện. Rất mong quý vị thông cảm.
+        - Xin lỗi vì công trình gây bất tiện. Mong quý vị thông cảm.
+        - Xin lỗi vì sự bất tiện do thi công. Mong quý vị thông cảm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì thi công nên rất tiện lợi. Mong quý vị thông cảm.
+        feedback_vi: 불편 là "bất tiện" (불 = bất), không phải tiện lợi.
+        error_tag: vocab_bulpyeon
+      - answer: Xin lỗi vì việc thi công gây bất tiện. Xin hãy nhờ chúng tôi.
+        feedback_vi: 양해 부탁드립니다 là "mong thông cảm", câu kết cố định của thông báo.
+        error_tag: vocab_yanghae
+    explanation:
+      vi: 공사 때문에 = vì thi công; 불편을 드려 죄송합니다 = xin lỗi vì gây bất tiện; 양해 부탁드립니다 = mong quý vị thông cảm.
+    display_answer: Xin lỗi vì việc thi công gây bất tiện. Mong quý vị thông cảm.
+
+  - key: ko:exercise:rc-review-translate-matjip
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-adnominal
+    prompt:
+      source_text: Quán ăn ngon mà bạn tôi giới thiệu ở gần công ty.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 친구가 추천한 맛집이 회사 근처에 있어요.
+        - 친구가 추천한 맛집은 회사 근처에 있어요.
+        - 친구가 추천한 식당이 회사 근처에 있어요.
+        - 친구가 추천한 식당은 회사 근처에 있어요.
+        - 친구가 추천해 준 맛집이 회사 근처에 있어요.
+        - 친구가 추천해 준 식당이 회사 근처에 있어요.
+        - 친구가 추천한 맛있는 식당이 회사 근처에 있어요.
+        - 제 친구가 추천한 맛집이 회사 근처에 있어요.
+        - 친구가 추천한 맛집이 회사 가까이에 있어요.
+        - 친구가 추천한 맛집이 회사 근처예요.
+    known_wrong:
+      - answer: 맛집이 친구가 추천한 회사 근처에 있어요.
+        feedback_vi: Cụm 친구가 추천한 phải đứng ngay trước 맛집 - 친구가 추천한 맛집.
+        error_tag: modifier_order
+      - answer: 친구가 추천했는 맛집이 회사 근처에 있어요.
+        feedback_vi: Định ngữ quá khứ của động từ là -(으)ㄴ - 추천한, không phải 추천했는.
+        error_tag: modifier_tense
+    explanation:
+      vi: Quán bạn tôi (đã) giới thiệu - 친구가 추천한 맛집 (추천하다 → 추천한, định ngữ quá khứ đứng trước danh từ). Ở gần công ty - 회사 근처에 있어요.
+    display_answer: 친구가 추천한 맛집이 회사 근처에 있어요.

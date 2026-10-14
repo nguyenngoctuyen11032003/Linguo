@@ -1,0 +1,431 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:people-relationships-review
+order_index: 5
+level: b2
+title:
+  vi: "Ôn tập: Thư gửi chuyên mục tư vấn"
+objectives:
+  - vi: Đọc hiểu một bức thư xin lời khuyên và thư trả lời về chuyện bạn cùng nhà.
+  - vi: Kết hợp suy đoán (must / might have), V-ing / to V, cụm động từ và be / get used to trong một văn bản liền mạch.
+  - vi: Viết câu khuyên nhủ tự nhiên - try doing, don't take sides, give it time.
+estimated_minutes: 22
+skills: [reading, writing, grammar, vocabulary]
+prerequisites: [en:lesson:personality-getting-used-to]
+items:
+  - item: en:item:advice-column
+  - item: en:item:feel-left-out
+  - item: en:item:take-sides
+  - item: en:item:give-it-time
+  - item: en:item:flatmate
+    role: reuse
+  - item: en:item:get-on-with
+    role: reuse
+  - item: en:item:stop-ing-vs-to
+    role: reuse
+  - item: en:item:verb-plus-ing
+    role: reuse
+  - item: en:item:try-ing-vs-to
+    role: reuse
+  - item: en:item:must-have-done
+    role: reuse
+  - item: en:item:might-have-done
+    role: reuse
+  - item: en:item:be-used-to
+    role: reuse
+  - item: en:item:get-used-to
+    role: reuse
+  - item: en:item:have-a-lot-in-common
+    role: reuse
+  - item: en:item:make-up-with
+    role: reuse
+  - item: en:item:upset
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này ôn lại cả unit qua một bức thư gửi chuyên mục tư vấn (advice column) và thư trả lời. Sau bài, bạn hiểu được loại văn bản tâm sự - khuyên nhủ này và tự viết được vài câu khuyên bạn bè bằng tiếng Anh.
+  - type: explain
+    text:
+      vi: "Thư xin lời khuyên thường có ba phần: hoàn cảnh (I moved to… six months ago), vấn đề kèm cảm xúc (I feel left out), và câu hỏi (What should I do?). Người viết thường ký bằng biệt danh, ví dụ Lonely in Hà Nội."
+  - type: explain
+    text:
+      vi: "Thư trả lời mở đầu bằng sự cảm thông, sau đó đưa ra cách giải thích khác (They might not have meant to…) và lời khuyên cụ thể (Try asking them…, Don't take sides…). Giọng văn thân mật nhưng không suồng sã."
+  - type: explain
+    text:
+      vi: "Hãy để ý các cấu trúc của unit trong thư: must have planned (suy đoán chắc chắn), stopped inviting (thôi không mời nữa), can't stand sitting, not used to living, get on well with, have a lot in common."
+  - type: deep_explain
+    text:
+      vi: "Trong tiếng Anh, lời khuyên lịch sự thường tránh câu mệnh lệnh khô cứng: dùng try + V-ing (thử…), Why don't you…?, It might help to… Tiếng Việt hay dùng \"bạn nên\" cho mọi trường hợp, nhưng should lặp lại nhiều lần nghe như đang dạy dỗ. Đưa ra một cách giải thích nhẹ nhàng bằng might have (có lẽ họ đã…) cũng giúp người đọc bớt tổn thương."
+  - type: example
+    target: "Dear Agony Aunt, I'm 24 and I moved to Hà Nội for work six months ago. I share a flat with two girls, and at first we got on really well. But recently they've stopped inviting me when they go out."
+    target_lang: en
+    translation:
+      vi: "Gửi chuyên mục tư vấn, tôi 24 tuổi và chuyển ra Hà Nội làm việc sáu tháng trước. Tôi ở chung căn hộ với hai cô gái, và lúc đầu chúng tôi rất hợp nhau. Nhưng gần đây họ không còn rủ tôi mỗi khi đi chơi nữa."
+    note:
+      vi: Stopped inviting - thôi không mời nữa (stop + V-ing).
+  - type: example
+    target: "Last weekend they went to a concert and didn't even tell me. They must have planned it for weeks. I feel left out, and I can't stand sitting alone in my room every evening."
+    target_lang: en
+    translation:
+      vi: Cuối tuần trước họ đi xem hoà nhạc mà không hề nói với tôi. Chắc họ đã lên kế hoạch từ mấy tuần trước. Tôi thấy mình bị ra rìa, và tôi không chịu nổi cảnh ngồi một mình trong phòng mỗi tối.
+    note:
+      vi: Must have planned - suy đoán chắc chắn về quá khứ; can't stand + V-ing.
+  - type: example
+    target: "Maybe I did something wrong? I'm still not used to living away from my family, and I don't know what to do. - Lonely in Hà Nội"
+    target_lang: en
+    translation:
+      vi: Có phải tôi đã làm gì sai không? Tôi vẫn chưa quen sống xa gia đình, và tôi không biết phải làm gì. - Cô đơn ở Hà Nội
+    note:
+      vi: Not used to + V-ing (living) - chưa quen.
+  - type: example
+    target: "Dear Lonely, moving to a new city is hard, and it's normal to feel this way. Your flatmates might not have meant to upset you - they may simply have bought the tickets before you moved in. Instead of guessing, try asking them directly but calmly."
+    target_lang: en
+    translation:
+      vi: Bạn Cô đơn thân mến, chuyển đến một thành phố mới là việc khó khăn, và cảm thấy như vậy là bình thường. Có lẽ các bạn cùng nhà không cố ý làm bạn buồn - có thể họ chỉ đơn giản là đã mua vé trước khi bạn chuyển đến. Thay vì đoán, bạn hãy thử hỏi thẳng họ, nhưng bình tĩnh.
+    note:
+      vi: Might not have meant / may have bought - suy đoán nhẹ nhàng về quá khứ; try asking - thử làm.
+  - type: example
+    target: "Don't take sides if one of them seems friendlier than the other. Try joining a club or a class, too - you'll meet people who have a lot in common with you. Above all, give it time. You'll get used to your new life sooner than you think."
+    target_lang: en
+    translation:
+      vi: Đừng đứng về phía ai nếu một trong hai người có vẻ thân thiện hơn. Bạn cũng nên thử tham gia một câu lạc bộ hay một lớp học - bạn sẽ gặp những người có nhiều điểm chung với mình. Trên hết, hãy cho mình thời gian. Bạn sẽ quen với cuộc sống mới nhanh hơn bạn nghĩ.
+    note:
+      vi: Get used to + danh từ (your new life) - quá trình dần quen.
+  - type: common_mistake
+    wrong: They've stopped to invite me when they go out.
+    right: They've stopped inviting me when they go out.
+    target_lang: en
+    note:
+      vi: "\"Không còn mời nữa\" là stopped inviting. Stopped to invite lại là dừng việc khác để mời - ngược ý."
+  - type: common_mistake
+    wrong: I'm still not used to live away from my family.
+    right: I'm still not used to living away from my family.
+    target_lang: en
+    note:
+      vi: Sau be used to là V-ing, vì to ở đây là giới từ.
+  - type: common_mistake
+    wrong: They must had planned it for weeks.
+    right: They must have planned it for weeks.
+    target_lang: en
+    note:
+      vi: Sau must luôn là have nguyên mẫu + V3.
+  - type: summary
+    points:
+      - vi: "Thư xin lời khuyên: hoàn cảnh → vấn đề & cảm xúc → câu hỏi. Thư trả lời: cảm thông → giải thích khác → lời khuyên."
+      - vi: "Suy đoán: must have / might have / can't have + V3."
+      - vi: "V-ing hay to V: stopped inviting, can't stand sitting, try asking."
+      - vi: "Quan hệ: get on well with, fall out with, make up, have a lot in common, take sides, feel left out."
+      - vi: "Quen: be used to / get used to + V-ing hoặc danh từ; khuyên kiên nhẫn: give it time."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:relationships-review-mcq-why-left-out
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:feel-left-out
+    prompt:
+      stem: "Đọc thư của \"Lonely in Hà Nội\". Vì sao người viết cảm thấy bị ra rìa (feel left out)?"
+      stem_lang: vi
+      options:
+        - { id: k3v, text: Her flatmates have stopped inviting her when they go out., lang: en }
+        - { id: e8q, text: Her flatmates have stopped to invite her to concerts., lang: en }
+        - { id: t1x, text: She fell out with her flatmates over money., lang: en }
+        - { id: y6b, text: Her family doesn't keep in touch with her., lang: en }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: Thư viết "they've stopped inviting me when they go out" - các bạn cùng nhà thôi không rủ cô ấy đi chơi. Stopped to invite là dừng lại để mời - sai nghĩa; thư không nhắc chuyện tiền hay gia đình không liên lạc.
+    display_answer: Her flatmates have stopped inviting her when they go out.
+
+  - key: en:exercise:relationships-review-listen-must-have-planned
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:must-have-done
+    prompt:
+      audio_asset_id: null
+      fallback_text: They must have planned it for weeks.
+      options:
+        - { id: r5n, text: Chắc họ đã lên kế hoạch từ mấy tuần trước., lang: vi }
+        - { id: a9c, text: Họ phải lên kế hoạch trong mấy tuần tới., lang: vi }
+        - { id: o4m, text: Có lẽ họ sẽ lên kế hoạch trong vài tuần., lang: vi }
+        - { id: w2h, text: Họ không thể nào đã lên kế hoạch từ trước., lang: vi }
+    answer:
+      correct_option_id: r5n
+    explanation:
+      vi: Must have + V3 là suy đoán chắc chắn về việc đã xảy ra - "chắc (hẳn) đã". Must không mang nghĩa bắt buộc ở đây, và câu nói về quá khứ chứ không phải tương lai.
+    display_answer: Chắc họ đã lên kế hoạch từ mấy tuần trước.
+
+  - key: en:exercise:relationships-review-mcq-might-not-have-meant
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:might-have-done
+    prompt:
+      stem: "Trong thư trả lời: \"Your flatmates might not have meant to upset you.\" Câu này có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: s7d, text: Có lẽ các bạn cùng nhà không cố ý làm bạn buồn., lang: vi }
+        - { id: j0u, text: Chắc chắn các bạn cùng nhà đã cố ý làm bạn buồn., lang: vi }
+        - { id: g3i, text: Các bạn cùng nhà không được phép làm bạn buồn., lang: vi }
+        - { id: n6p, text: Các bạn cùng nhà sẽ không làm bạn buồn nữa., lang: vi }
+    answer:
+      correct_option_id: s7d
+    explanation:
+      vi: Might not have + V3 là phỏng đoán không chắc về quá khứ - "có lẽ đã không". Mean to do là cố ý làm. Người trả lời đưa ra cách nhìn nhẹ nhàng hơn, không khẳng định.
+    display_answer: Có lẽ các bạn cùng nhà không cố ý làm bạn buồn.
+
+  - key: en:exercise:relationships-review-fill-stopped-inviting-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:stop-ing-vs-to
+    prompt:
+      template: "Recently my flatmates have stopped {{b1}} (invite) me when they go out."
+      blanks:
+        - { id: b1, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa: Gần đây các bạn cùng nhà không còn rủ tôi khi họ đi chơi nữa."
+        - "Gợi ý: thôi hẳn một việc - stop + V-ing."
+    answer:
+      blanks:
+        b1: [inviting, asking]
+    known_wrong:
+      - answer: to invite
+        feedback_vi: Stopped to invite là dừng lại để mời. Thôi không mời nữa là stopped inviting.
+        error_tag: gerund_infinitive_meaning
+      - answer: invite
+        feedback_vi: Sau stop cần V-ing - inviting.
+        error_tag: gerund_infinitive
+    explanation:
+      vi: Người viết muốn nói việc mời đã chấm dứt, nên dùng stop + V-ing. Thêm to sẽ đổi nghĩa thành "dừng lại để mời".
+    display_answer: Recently my flatmates have stopped inviting me when they go out.
+
+  - key: en:exercise:relationships-review-order-take-sides
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:take-sides
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Tôi không muốn đứng về phía ai cả.\""
+      tokens:
+        - { id: s-take, text: take }
+        - { id: s-want, text: want }
+        - { id: s-side, text: side }
+        - { id: s-i, text: I }
+        - { id: s-sides, text: sides }
+        - { id: s-to, text: to }
+        - { id: s-dont, text: "don't" }
+    answer:
+      orders:
+        - [s-i, s-dont, s-want, s-to, s-take, s-sides]
+    explanation:
+      vi: Đứng về một phía trong cuộc tranh cãi là take sides - sides luôn ở số nhiều. Want + to V nên có to trước take.
+    display_answer: "I don't want to take sides."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:relationships-review-fill-got-on-left-out
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:get-on-with
+    prompt:
+      template: "At first I got on really well {{b1}} my flatmates, but now I feel left {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [with]
+        b2: [out]
+    known_wrong:
+      - answer: to
+        feedback_vi: Get on well luôn đi với with, không phải to.
+        error_tag: phrasal_verb_preposition
+      - answer: behind
+        feedback_vi: Cảm thấy bị ra rìa là feel left out.
+        error_tag: idiom_form
+    explanation:
+      vi: Get on (well) with là hợp với ai; feel left out là cảm thấy bị ra rìa. Cả hai đều là cụm cố định, giới từ không thay được.
+    display_answer: At first I got on really well with my flatmates, but now I feel left out.
+
+  - key: en:exercise:relationships-review-fill-might-have-bought
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:might-have-done
+    prompt:
+      template: "I'm not sure, but they {{b1}} have {{b2}} the tickets before you moved in."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [might, may, could]
+        b2: [bought, booked, got]
+    known_wrong:
+      - answer: must
+        feedback_vi: Người nói "không chắc" (I'm not sure), nên dùng might / may / could, không dùng must.
+        error_tag: deduction_degree
+      - answer: buyed
+        feedback_vi: Buy là động từ bất quy tắc - buy, bought, bought.
+        error_tag: irregular_verb
+      - answer: buy
+        feedback_vi: Sau have cần V3 - bought.
+        error_tag: past_participle
+      - answer: brought
+        feedback_vi: Brought là V3 của bring (mang). Mua là buy - bought.
+        error_tag: spelling
+    explanation:
+      vi: I'm not sure báo hiệu phỏng đoán không chắc, nên dùng might / may / could + have + V3. V3 của buy là bought (đừng nhầm với brought).
+    display_answer: I'm not sure, but they might have bought the tickets before you moved in.
+
+  - key: en:exercise:relationships-review-translate-not-used-to-living
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-used-to
+    prompt:
+      source_text: Tôi vẫn chưa quen sống xa gia đình.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I'm still not used to living away from my family.
+        - I am still not used to living away from my family.
+        - I'm not used to living away from my family yet.
+        - I am not used to living away from my family yet.
+        - I still haven't got used to living away from my family.
+        - I still haven't gotten used to living away from my family.
+        - I'm still not used to living far from my family.
+        - I am still not used to living far from my family.
+        - I'm still not used to being away from my family.
+        - I am still not used to being away from my family.
+        - I'm still not used to living away from home.
+        - I'm still not used to living apart from my family.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I'm still not used to live away from my family.
+        feedback_vi: Sau be used to cần V-ing - living.
+        error_tag: used_to_ing
+      - answer: I still didn't use to live away from my family.
+        feedback_vi: Didn't use to là "trước đây không từng". Chưa quen là not used to + V-ing.
+        error_tag: used_to_meaning
+      - answer: I'm still not use to living away from my family.
+        feedback_vi: Viết used (có d) - not used to.
+        error_tag: used_to_form
+    explanation:
+      vi: "\"Chưa quen\" là be not used to + V-ing; still đứng sau be hoặc dùng yet ở cuối câu. Sống xa gia đình là live away from your family."
+    display_answer: I'm still not used to living away from my family.
+
+  # ---------------- application ----------------
+  - key: en:exercise:relationships-review-translate-didnt-mean-to-upset
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:might-have-done
+    prompt:
+      source_text: Có lẽ họ không cố ý làm bạn buồn. Hãy thử nói chuyện thẳng với họ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - They might not have meant to upset you. Try talking to them directly.
+        - They may not have meant to upset you. Try talking to them directly.
+        - They might not have meant to upset you. Try talking with them directly.
+        - They may not have meant to upset you. Try talking with them directly.
+        - They might not have meant to upset you. Try talking to them honestly.
+        - They might not have meant to make you sad. Try talking to them directly.
+        - They may not have meant to make you sad. Try talking to them directly.
+        - They probably didn't mean to upset you. Try talking to them directly.
+        - Maybe they didn't mean to upset you. Try talking to them directly.
+        - Perhaps they didn't mean to upset you. Try talking to them directly.
+        - They might not have meant to upset you. Try speaking to them directly.
+        - They might not have meant to hurt you. Try talking to them directly.
+        - They might not have meant to upset you. Why don't you try talking to them directly?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: They mustn't have meant to upset you. Try talking to them directly.
+        feedback_vi: Mustn't là "cấm". Phỏng đoán không chắc là might not have.
+        error_tag: mustnt_deduction
+      - answer: They might not had meant to upset you. Try talking to them directly.
+        feedback_vi: Sau might luôn là have nguyên mẫu - might not have meant.
+        error_tag: modal_have
+      - answer: They might not have meant to upset you. Try to talking to them directly.
+        feedback_vi: Thử một cách là try + V-ing - try talking, không có to.
+        error_tag: gerund_infinitive
+    explanation:
+      vi: "\"Có lẽ không cố ý\" về việc đã xảy ra là might / may not have meant to. Lời khuyên \"thử nói chuyện\" là try + V-ing (try talking), vì đây là thử một cách xem có hiệu quả không."
+    display_answer: They might not have meant to upset you. Try talking to them directly.
+
+  - key: en:exercise:relationships-review-translate-give-it-time
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:give-it-time
+    prompt:
+      source_text: Give it time. You'll get used to your new life.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cứ từ từ. Bạn sẽ quen với cuộc sống mới thôi.
+        - Cứ từ từ đã. Bạn sẽ quen với cuộc sống mới thôi.
+        - Hãy cho mình thời gian. Bạn sẽ quen với cuộc sống mới thôi.
+        - Hãy cho bản thân thời gian. Bạn sẽ quen với cuộc sống mới.
+        - Hãy cho mình thời gian. Bạn sẽ quen với cuộc sống mới.
+        - Hãy kiên nhẫn. Bạn sẽ quen với cuộc sống mới thôi.
+        - Hãy kiên nhẫn. Bạn sẽ quen với cuộc sống mới.
+        - Cứ để thời gian trả lời. Bạn sẽ quen với cuộc sống mới thôi.
+        - Cứ từ từ. Bạn sẽ dần quen với cuộc sống mới.
+        - Hãy cho mình thời gian. Bạn sẽ dần quen với cuộc sống mới.
+        - Hãy kiên nhẫn. Bạn sẽ dần quen với cuộc sống mới thôi.
+        - Cứ từ từ. Rồi bạn sẽ quen với cuộc sống mới thôi.
+        - Hãy cho mình thời gian. Rồi bạn sẽ quen với cuộc sống mới thôi.
+        - Hãy kiên nhẫn. Rồi bạn sẽ quen với cuộc sống mới thôi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hãy cho nó thời gian. Bạn đã từng sống cuộc sống mới.
+        feedback_vi: Get used to là "dần quen với", không phải "đã từng". Give it time là lời khuyên kiên nhẫn.
+        error_tag: used_to_meaning
+    explanation:
+      vi: Give it time là lời khuyên kiên nhẫn - "cứ từ từ", "hãy cho mình thời gian". Will get used to + danh từ là sẽ (dần) quen với điều gì.
+    display_answer: Cứ từ từ. Bạn sẽ quen với cuộc sống mới thôi.
+
+  - key: en:exercise:relationships-review-mcq-advice-make-up
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:make-up-with
+    prompt:
+      stem: Bạn của bạn vừa giận nhau với bạn thân và rất buồn. Bạn muốn khuyên "thử gọi cho cô ấy xem, biết đâu hai người làm lành được". Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: m9e, text: "Try calling her - you two might be able to make up.", lang: en }
+        - { id: d4r, text: "Try to calling her - you two might be able to make up.", lang: en }
+        - { id: p8w, text: "Try calling her - you two might be able to break up.", lang: en }
+        - { id: x5t, text: "Try calling her - you two must have been able to make up.", lang: en }
+    answer:
+      correct_option_id: m9e
+    explanation:
+      vi: Try + V-ing là thử một cách; make up là làm lành; might be able to là "biết đâu có thể". Break up là chia tay - ngược nghĩa; must have been là suy đoán quá khứ, không hợp với lời khuyên cho tương lai.
+    display_answer: "Try calling her - you two might be able to make up."

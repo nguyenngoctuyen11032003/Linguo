@@ -1,0 +1,431 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:slowly-too-enough
+order_index: 4
+level: a2
+title:
+  vi: Ăn chậm, ngủ đủ - trạng từ cách thức, too và enough
+objectives:
+  - vi: Tả cách làm một việc bằng trạng từ - slowly, quickly, carefully, well, badly, hard.
+  - vi: Phân biệt good (tính từ) và well (trạng từ) - He plays well.
+  - vi: Nói "quá…" bằng too và "(không) đủ…" bằng enough, đặt enough đúng chỗ.
+estimated_minutes: 16
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:you-should-rest]
+items:
+  - item: en:item:adverbs-of-manner
+  - item: en:item:slowly
+  - item: en:item:quickly
+  - item: en:item:carefully
+  - item: en:item:well-adverb
+  - item: en:item:badly
+  - item: en:item:hard-adverb
+  - item: en:item:too-adjective
+  - item: en:item:adjective-enough
+  - item: en:item:enough-noun
+  - item: en:item:tired
+  - item: en:item:sleepy
+  - item: en:item:old
+    role: reuse
+  - item: en:item:water
+    role: reuse
+  - item: en:item:sleep
+    role: reuse
+  - item: en:item:should-shouldnt
+    role: reuse
+  - item: en:item:play-football
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Ăn chậm thôi", "Anh ấy chơi bóng giỏi", "Tôi mệt quá", "Bé chưa đủ tuổi", "Tôi không uống đủ nước" - những câu rất hay dùng khi nói về sức khoẻ.
+  - type: explain
+    text:
+      vi: Tính từ tả người hoặc vật (a slow eater), còn trạng từ tả cách làm một việc (He eats slowly). Phần lớn trạng từ là tính từ + -ly - slow → slowly, careful → carefully, bad → badly.
+  - type: explain
+    text:
+      vi: "Tiếng Việt dùng \"giỏi\", \"tốt\" cho cả hai, nhưng tiếng Anh tách riêng: good là tính từ (a good player), well là trạng từ (He plays well). Hard và fast giữ nguyên - work hard, run fast."
+  - type: explain
+    text:
+      vi: "Too + tính từ là \"quá…\" theo nghĩa có vấn đề - I'm too tired. Enough đứng SAU tính từ (old enough) nhưng TRƯỚC danh từ (enough water); tiếng Việt nói \"đủ lớn\" nên người Việt hay đặt sai."
+  - type: deep_explain
+    text:
+      vi: "Trạng từ cách thức thường đứng sau động từ hoặc sau tân ngữ, không chen giữa động từ và tân ngữ - He eats his food slowly, không nói \"He eats slowly his food\". Too khác very: very tired chỉ là rất mệt; too tired to go out là mệt đến mức không đi chơi được. Hardly không phải trạng từ của hard - nó nghĩa là \"hầu như không\"."
+  - type: example
+    target: Eat slowly and chew carefully. It's good for your stomach.
+    target_lang: en
+    translation:
+      vi: Ăn chậm và nhai kỹ. Như thế tốt cho dạ dày.
+    note:
+      vi: Slowly và carefully tả cách ăn, cách nhai nên dùng trạng từ, đứng sau động từ.
+  - type: example
+    target: Minh is a good footballer. He plays very well.
+    target_lang: en
+    translation:
+      vi: Minh là cầu thủ giỏi. Cậu ấy chơi rất hay.
+    note:
+      vi: A good footballer (tính từ tả người), plays well (trạng từ tả cách chơi).
+  - type: example
+    target: I'm too tired to go jogging today. I work too hard.
+    target_lang: en
+    translation:
+      vi: Hôm nay tôi mệt quá, không chạy bộ nổi. Tôi làm việc vất vả quá.
+    note:
+      vi: Too tired to + động từ = mệt đến mức không làm được việc đó.
+  - type: example
+    target: My son isn't old enough to play this game, and he doesn't get enough sleep.
+    target_lang: en
+    translation:
+      vi: Con trai tôi chưa đủ tuổi chơi trò này, và cháu ngủ không đủ giấc.
+    note:
+      vi: Old enough - enough đứng sau tính từ; enough sleep - enough đứng trước danh từ.
+  - type: common_mistake
+    wrong: He plays good.
+    right: He plays well.
+    target_lang: en
+    note:
+      vi: Tả cách chơi cần trạng từ well. Good chỉ dùng trước danh từ (a good player) hoặc sau be (He is good).
+  - type: common_mistake
+    wrong: She isn't enough old to drive.
+    right: She isn't old enough to drive.
+    target_lang: en
+    note:
+      vi: Với tính từ, enough đứng sau - old enough. Đừng dịch thứ tự "đủ lớn" từ tiếng Việt.
+  - type: common_mistake
+    wrong: I'm too much tired.
+    right: I'm too tired.
+    target_lang: en
+    note:
+      vi: Trước tính từ chỉ dùng too, không thêm much. Too much đi với danh từ không đếm được - too much sugar.
+  - type: summary
+    points:
+      - vi: Tính từ + -ly → trạng từ - slowly, quickly, carefully, badly.
+      - vi: Bất quy tắc - good → well, hard → hard, fast → fast.
+      - vi: Trạng từ đứng sau động từ hoặc sau tân ngữ - eat your food slowly.
+      - vi: too + tính từ = quá (có vấn đề) - too tired, too late.
+      - vi: tính từ + enough (old enough) · enough + danh từ (enough water).
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:slowly-too-enough-mcq-well
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:well-adverb
+    prompt:
+      stem: "Chọn từ đúng: Minh plays football very ___."
+      stem_lang: vi
+      options:
+        - { id: f6g, text: well, lang: en }
+        - { id: b3k, text: good, lang: en }
+        - { id: s9o, text: goodly, lang: en }
+        - { id: d1x, text: nice, lang: en }
+    answer:
+      correct_option_id: f6g
+    explanation:
+      vi: Chỗ trống tả cách chơi (bổ nghĩa cho động từ plays) nên cần trạng từ well. Good và nice là tính từ; "goodly" không dùng theo nghĩa này.
+    display_answer: well
+
+  - key: en:exercise:slowly-too-enough-mcq-old-enough
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:adjective-enough
+    prompt:
+      stem: "Câu nào nói đúng \"Em ấy chưa đủ tuổi lái xe\"?"
+      stem_lang: vi
+      options:
+        - { id: v2m, text: "She isn't old enough to drive.", lang: en }
+        - { id: q8a, text: "She isn't enough old to drive.", lang: en }
+        - { id: n4t, text: "She isn't too old to enough drive.", lang: en }
+        - { id: z6p, text: "She isn't old to drive enough.", lang: en }
+    answer:
+      correct_option_id: v2m
+    explanation:
+      vi: Enough đứng sau tính từ - old enough, rồi mới đến to + động từ. Tiếng Việt nói "đủ tuổi" nên người Việt hay đặt enough lên trước.
+    display_answer: "She isn't old enough to drive."
+
+  - key: en:exercise:slowly-too-enough-listen-slowly
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:slowly
+    prompt:
+      audio_asset_id: null
+      fallback_text: You eat too quickly. Eat slowly!
+      options:
+        - { id: h5r, text: "Bạn ăn nhanh quá. Ăn chậm thôi!", lang: vi }
+        - { id: k0c, text: "Bạn ăn chậm quá. Ăn nhanh lên!", lang: vi }
+        - { id: u7e, text: "Bạn ăn rất nhanh. Ăn nhiều vào!", lang: vi }
+        - { id: w3j, text: "Bạn ăn quá nhiều. Ăn ít thôi!", lang: vi }
+    answer:
+      correct_option_id: h5r
+    explanation:
+      vi: Too quickly là "nhanh quá" (có vấn đề), slowly là "chậm". Too much mới là "quá nhiều".
+    display_answer: "Bạn ăn nhanh quá. Ăn chậm thôi!"
+
+  - key: en:exercise:slowly-too-enough-fill-carefully
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:carefully
+    prompt:
+      template: "Read the instructions {{b1}} before you take the medicine."
+      blanks:
+        - { id: b1, width_hint: 9 }
+      hint_levels:
+        - "Nghĩa: Đọc kỹ hướng dẫn trước khi uống thuốc."
+        - "Gợi ý: trạng từ của careful (cẩn thận)."
+    answer:
+      blanks:
+        b1: [carefully]
+    known_wrong:
+      - answer: careful
+        feedback_vi: Careful là tính từ. Tả cách đọc cần trạng từ carefully.
+        error_tag: adjective_for_adverb
+      - answer: carefuly
+        feedback_vi: Careful + ly giữ cả hai chữ l - carefully.
+        error_tag: spelling_ly
+    explanation:
+      vi: Từ cần điền tả cách đọc (bổ nghĩa cho read) nên phải là trạng từ - careful + ly = carefully.
+    display_answer: Read the instructions carefully before you take the medicine.
+
+  - key: en:exercise:slowly-too-enough-order-water
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:enough-noun
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi không uống đủ nước.\""
+      tokens:
+        - { id: ew-water, text: water }
+        - { id: ew-enough, text: enough }
+        - { id: ew-too, text: too }
+        - { id: ew-drink, text: drink }
+        - { id: ew-dont, text: "don't" }
+        - { id: ew-i, text: I }
+    answer:
+      orders:
+        - [ew-i, ew-dont, ew-drink, ew-enough, ew-water]
+    explanation:
+      vi: Với danh từ, enough đứng trước - enough water. Too dùng với tính từ (too tired), không dùng ở đây.
+    display_answer: "I don't drink enough water."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:slowly-too-enough-fill-too
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:too-adjective
+    prompt:
+      template: "Sorry, I can't come. I'm {{b1}} tired to go jogging today."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [too]
+    known_wrong:
+      - answer: very
+        feedback_vi: Very chỉ là "rất". Mệt đến mức không làm được việc gì đó là too tired to…
+        error_tag: too_very
+      - answer: enough
+        feedback_vi: Enough đứng sau tính từ và nghĩa là "đủ" - ở đây cần too (quá).
+        error_tag: too_enough
+      - answer: too much
+        feedback_vi: Trước tính từ chỉ dùng too, không thêm much.
+        error_tag: too_much_adjective
+    explanation:
+      vi: Mẫu too + tính từ + to + động từ nghĩa là "quá… nên không thể…". Câu trước "I can't come" cho thấy cần too, không phải very.
+    display_answer: "Sorry, I can't come. I'm too tired to go jogging today."
+
+  - key: en:exercise:slowly-too-enough-fill-adverbs
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:adverbs-of-manner
+    prompt:
+      template: "Lan is a good swimmer. She swims {{b1}}. Nam is a slow eater. He eats {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [well]
+        b2: [slowly]
+    known_wrong:
+      - answer: good
+        feedback_vi: Tả cách bơi cần trạng từ - good → well.
+        error_tag: good_well
+      - answer: slow
+        feedback_vi: Tả cách ăn cần trạng từ - slow → slowly.
+        error_tag: adjective_for_adverb
+      - answer: goodly
+        feedback_vi: Trạng từ của good là well (bất quy tắc), không thêm -ly.
+        error_tag: good_well
+    explanation:
+      vi: Câu sau tả cách làm (swims, eats) nên dùng trạng từ. Good là bất quy tắc → well; slow theo quy tắc → slowly.
+    display_answer: Lan is a good swimmer. She swims well. Nam is a slow eater. He eats slowly.
+
+  - key: en:exercise:slowly-too-enough-translate-old-enough
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:adjective-enough
+    prompt:
+      source_text: Con trai tôi chưa đủ tuổi để chơi trò này.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My son isn't old enough to play this game.
+        - My son is not old enough to play this game.
+        - My son's not old enough to play this game.
+        - My son isn't old enough for this game.
+        - My son is not old enough for this game.
+        - My son is too young to play this game.
+        - My son's too young to play this game.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My son isn't enough old to play this game.
+        feedback_vi: Enough đứng sau tính từ - old enough.
+        error_tag: enough_position
+      - answer: My son is not enough old to play this game.
+        feedback_vi: Enough đứng sau tính từ - not old enough.
+        error_tag: enough_position
+      - answer: My son doesn't old enough to play this game.
+        feedback_vi: Old là tính từ nên đi với be - isn't old enough.
+        error_tag: be_adjective
+    explanation:
+      vi: Chưa đủ tuổi là not old enough, enough đứng sau tính từ old. Cũng có thể nói ngược lại - too young (quá nhỏ).
+    display_answer: My son isn't old enough to play this game.
+
+  # ---------------- application ----------------
+  - key: en:exercise:slowly-too-enough-translate-work-hard
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:hard-adverb
+    prompt:
+      source_text: I work too hard and I don't sleep well.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi làm việc quá vất vả và ngủ không ngon.
+        - Tôi làm việc quá vất vả và tôi ngủ không ngon.
+        - Tôi làm việc vất vả quá và ngủ không ngon.
+        - Tôi làm việc quá sức và ngủ không ngon.
+        - Tôi làm việc quá sức và tôi ngủ không ngon.
+        - Tôi làm việc quá nhiều và ngủ không ngon.
+        - Tôi làm việc quá nhiều và tôi ngủ không ngon.
+        - Tôi làm việc quá vất vả và ngủ không được ngon.
+        - Tôi làm việc quá chăm chỉ và ngủ không ngon.
+        - Tôi làm việc quá sức nên ngủ không ngon.
+        - Tôi làm việc quá vất vả nên ngủ không ngon.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Too hard là "quá vất vả / quá sức" (hard là trạng từ của work). Don't sleep well là "ngủ không ngon".
+    display_answer: Tôi làm việc quá vất vả và ngủ không ngon.
+
+  - key: en:exercise:slowly-too-enough-mcq-invite
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:tired
+    prompt:
+      stem: "Bạn mới làm ca đêm về, mệt rã rời. Đồng nghiệp rủ: \"Do you want to play badminton tonight?\" Bạn từ chối thế nào?"
+      stem_lang: vi
+      options:
+        - { id: i8b, text: "Sorry, I'm too tired. Maybe tomorrow.", lang: en }
+        - { id: a4u, text: "Sorry, I'm enough tired. Maybe tomorrow.", lang: en }
+        - { id: e9s, text: "Sorry, I'm too much tired. Maybe tomorrow.", lang: en }
+        - { id: m6d, text: "Sorry, I tired too. Maybe tomorrow.", lang: en }
+    answer:
+      correct_option_id: i8b
+    explanation:
+      vi: Too tired là "mệt quá (nên không chơi được)". Không nói "enough tired" hay "too much tired", và tired là tính từ nên cần be - I'm tired.
+    display_answer: "Sorry, I'm too tired. Maybe tomorrow."
+
+  - key: en:exercise:slowly-too-enough-translate-advice
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:enough-noun
+    prompt:
+      source_text: Bạn nên ăn chậm và ngủ đủ giấc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - You should eat slowly and get enough sleep.
+        - You should eat slowly and have enough sleep.
+        - You should eat slowly and sleep enough.
+        - You should eat more slowly and get enough sleep.
+        - You should eat slowly and get enough rest.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: You should eat slow and get enough sleep.
+        feedback_vi: Tả cách ăn cần trạng từ slowly.
+        error_tag: adjective_for_adverb
+      - answer: You should eat slowly and get sleep enough.
+        feedback_vi: Với danh từ, enough đứng trước - enough sleep.
+        error_tag: enough_position
+      - answer: You should to eat slowly and get enough sleep.
+        feedback_vi: Should không đi với to.
+        error_tag: should_to
+    explanation:
+      vi: Should + động từ nguyên mẫu; slowly là trạng từ tả cách ăn. "Ngủ đủ giấc" là get enough sleep - enough đứng trước danh từ sleep.
+    display_answer: You should eat slowly and get enough sleep.
+
+  - key: en:exercise:slowly-too-enough-translate-plays-well
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:well-adverb
+    prompt:
+      source_text: Anh ấy chơi bóng đá rất giỏi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - He plays football very well.
+        - He's very good at football.
+        - He is very good at football.
+        - He's very good at playing football.
+        - He is very good at playing football.
+        - He's a very good football player.
+        - He is a very good football player.
+        - He plays soccer very well.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: He plays football very good.
+        feedback_vi: Tả cách chơi cần trạng từ well, không phải good.
+        error_tag: good_well
+      - answer: He plays very well football.
+        feedback_vi: Trạng từ đứng sau tân ngữ - plays football very well.
+        error_tag: adverb_position
+      - answer: He play football very well.
+        feedback_vi: He là ngôi thứ ba số ít nên plays có -s.
+        error_tag: third_person_s
+    explanation:
+      vi: Plays + football + very well - trạng từ well đứng sau tân ngữ. Nếu muốn dùng good thì phải là He's very good at football.
+    display_answer: He plays football very well.

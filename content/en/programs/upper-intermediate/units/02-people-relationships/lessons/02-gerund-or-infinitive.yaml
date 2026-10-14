@@ -1,0 +1,446 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:gerund-or-infinitive
+order_index: 2
+level: b2
+title:
+  vi: V-ing hay to V? Khi nghĩa thay đổi
+objectives:
+  - vi: Dùng đúng V-ing sau enjoy, avoid, mind, can't stand và sau giới từ.
+  - vi: Dùng đúng to V sau decide, agree, refuse, promise, manage.
+  - vi: Phân biệt nghĩa của stop, remember, forget, try, regret khi đi với V-ing và to V.
+estimated_minutes: 20
+skills: [grammar, vocabulary, writing]
+prerequisites: [en:lesson:modals-of-deduction]
+items:
+  - item: en:item:verb-plus-ing
+  - item: en:item:verb-plus-to-infinitive
+  - item: en:item:preposition-plus-ing
+  - item: en:item:stop-ing-vs-to
+  - item: en:item:remember-ing-vs-to
+  - item: en:item:forget-ing-vs-to
+  - item: en:item:try-ing-vs-to
+  - item: en:item:regret-ing-vs-to
+  - item: en:item:cant-stand
+  - item: en:item:refuse
+  - item: en:item:apologise-for
+  - item: en:item:avoid
+  - item: en:item:manage-to
+  - item: en:item:keep-in-touch
+    role: reuse
+  - item: en:item:ignore
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn chọn đúng giữa V-ing và to V khi kể về các mối quan hệ - "Tôi rất ghét bị phớt lờ", "Anh ấy hứa sẽ gọi" - và hiểu vì sao "stopped smoking" và "stopped to smoke" mang nghĩa trái ngược nhau.
+  - type: explain
+    text:
+      vi: Tiếng Việt đặt hai động từ cạnh nhau mà không đổi gì ("thích đi", "quyết định đi"). Tiếng Anh thì động từ đứng trước quyết định động từ sau là V-ing hay to V, nên bạn cần học theo nhóm.
+  - type: explain
+    text:
+      vi: "Nhóm + V-ing: enjoy, avoid, mind, keep, can't stand, finish. Nhóm + to V: decide, agree, refuse, promise, manage, want, hope. Sau mọi giới từ (in, of, for, about, without) luôn là V-ing - interested in meeting, apologise for being late."
+  - type: explain
+    text:
+      vi: "Một số động từ đi được cả hai nhưng nghĩa khác hẳn. Quy tắc chung: V-ing nhìn về việc đã có/đã xảy ra, to V nhìn về việc phía trước - remember meeting (nhớ đã gặp) và remember to meet (nhớ phải gặp)."
+  - type: deep_explain
+    text:
+      vi: "Stop doing là bỏ hẳn việc đó; stop to do là dừng việc khác lại để làm việc này. Try to do là cố gắng (việc khó), try doing là thử một cách xem sao. Regret doing là hối hận vì đã làm; regret to say / inform là \"rất tiếc phải báo\", chỉ dùng trong văn phong trang trọng."
+  - type: example
+    target: My dad stopped smoking when I was born.
+    target_lang: en
+    translation:
+      vi: Bố tôi bỏ thuốc lá khi tôi ra đời.
+    note:
+      vi: Stopped + V-ing - thôi hẳn việc hút thuốc.
+  - type: example
+    target: Halfway through the trip, we stopped to have lunch.
+    target_lang: en
+    translation:
+      vi: Đi được nửa đường, chúng tôi dừng lại để ăn trưa.
+    note:
+      vi: Stopped + to V - dừng việc đang làm (lái xe) để làm việc khác (ăn trưa).
+  - type: example
+    target: I remember meeting her at a friend's wedding, but I forgot to ask for her number.
+    target_lang: en
+    translation:
+      vi: Tôi nhớ đã gặp cô ấy ở đám cưới một người bạn, nhưng tôi quên xin số điện thoại.
+    note:
+      vi: Remember meeting - ký ức về việc đã xảy ra; forgot to ask - quên làm nên việc đó không xảy ra.
+  - type: example
+    target: She can't stand being ignored, so she refused to talk to him for a week.
+    target_lang: en
+    translation:
+      vi: Cô ấy rất ghét bị phớt lờ, nên đã nhất quyết không nói chuyện với anh ta cả tuần.
+    note:
+      vi: Can't stand + V-ing (being ignored); refuse + to V (to talk).
+  - type: common_mistake
+    wrong: I enjoy to spend time with my family.
+    right: I enjoy spending time with my family.
+    target_lang: en
+    note:
+      vi: Enjoy luôn đi với V-ing. Tiếng Việt nói "thích dành thời gian" không đổi dạng, nên người Việt hay thêm to theo thói quen.
+  - type: common_mistake
+    wrong: My grandfather stopped to smoke last year.
+    right: My grandfather stopped smoking last year.
+    target_lang: en
+    note:
+      vi: "\"Bỏ thuốc\" là stopped smoking. Stopped to smoke nghĩa là dừng lại để hút thuốc - ngược hẳn ý bạn muốn nói."
+  - type: common_mistake
+    wrong: I forgot locking the door, so I went back.
+    right: I forgot to lock the door, so I went back.
+    target_lang: en
+    note:
+      vi: Quên làm một việc (nên việc đó chưa xảy ra) là forget to do. Forget doing là quên chuyện mình đã làm.
+  - type: common_mistake
+    wrong: She's interested in to meet new people.
+    right: She's interested in meeting new people.
+    target_lang: en
+    note:
+      vi: Sau giới từ (in) luôn là V-ing, không bao giờ là to V.
+  - type: summary
+    points:
+      - vi: "+ V-ing: enjoy, avoid, mind, keep, can't stand, finish; sau mọi giới từ."
+      - vi: "+ to V: decide, agree, refuse, promise, manage, want, hope."
+      - vi: "stop doing (bỏ hẳn) - stop to do (dừng lại để làm)."
+      - vi: "remember / forget doing (việc đã làm) - remember / forget to do (việc cần làm)."
+      - vi: "try to do (cố gắng) - try doing (thử xem); regret doing (hối hận) - regret to say (rất tiếc phải báo)."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:gerinf-mcq-stopped-smoking
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:stop-ing-vs-to
+    prompt:
+      stem: "\"My grandfather stopped smoking last year.\" nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: g4q, text: Năm ngoái ông tôi đã bỏ thuốc lá., lang: vi }
+        - { id: l8v, text: Năm ngoái ông tôi dừng lại để hút thuốc., lang: vi }
+        - { id: x1e, text: Năm ngoái ông tôi bắt đầu hút thuốc., lang: vi }
+        - { id: b5u, text: Năm ngoái ông tôi cố gắng hút thuốc., lang: vi }
+    answer:
+      correct_option_id: g4q
+    explanation:
+      vi: Stop + V-ing là thôi hẳn việc đó, nên stopped smoking là bỏ thuốc. "Dừng lại để hút thuốc" phải là stopped to smoke.
+    display_answer: Năm ngoái ông tôi đã bỏ thuốc lá.
+
+  - key: en:exercise:gerinf-listen-remember-to-call
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:remember-ing-vs-to
+    prompt:
+      audio_asset_id: null
+      fallback_text: Remember to call your grandmother tonight. It's her birthday.
+      options:
+        - { id: h7m, text: Nhớ gọi cho bà tối nay nhé. Hôm nay là sinh nhật bà., lang: vi }
+        - { id: c2r, text: Bạn có nhớ đã gọi cho bà tối qua không? Hôm qua là sinh nhật bà., lang: vi }
+        - { id: j9s, text: Đừng quên là bạn đã gọi cho bà tối nay., lang: vi }
+        - { id: w0k, text: Hãy thử gọi cho bà tối nay xem sao., lang: vi }
+    answer:
+      correct_option_id: h7m
+    explanation:
+      vi: Remember to call là nhớ phải gọi - một việc chưa làm, nhìn về phía trước. Nhớ đã gọi (ký ức) sẽ là remember calling.
+    display_answer: Nhớ gọi cho bà tối nay nhé. Hôm nay là sinh nhật bà.
+
+  - key: en:exercise:gerinf-fill-enjoy-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:verb-plus-ing
+    prompt:
+      template: "I really enjoy {{b1}} (spend) time with my cousins at Tết."
+      blanks:
+        - { id: b1, width_hint: 9 }
+      hint_levels:
+        - "Nghĩa: Tôi rất thích dành thời gian với các anh chị em họ vào dịp Tết."
+        - "Gợi ý: sau enjoy, động từ có đuôi -ing."
+    answer:
+      blanks:
+        b1: [spending]
+    known_wrong:
+      - answer: to spend
+        feedback_vi: Enjoy luôn đi với V-ing - enjoy spending.
+        error_tag: gerund_infinitive
+      - answer: spend
+        feedback_vi: Sau enjoy không dùng động từ nguyên mẫu - phải là spending.
+        error_tag: gerund_infinitive
+      - answer: spendding
+        feedback_vi: Spend kết thúc bằng hai phụ âm (nd), không gấp đôi d - spending.
+        error_tag: spelling
+    explanation:
+      vi: Enjoy thuộc nhóm động từ luôn đi với V-ing. Tiếng Việt "thích dành" không đổi dạng, nhưng tiếng Anh bắt buộc spending.
+    display_answer: I really enjoy spending time with my cousins at Tết.
+
+  - key: en:exercise:gerinf-order-refused-apologise
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:refuse
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Anh ấy nhất quyết không xin lỗi vì đã đến muộn.\""
+      tokens:
+        - { id: r-for, text: for }
+        - { id: r-late, text: late }
+        - { id: r-he, text: He }
+        - { id: r-being, text: being }
+        - { id: r-apologise, text: apologise }
+        - { id: r-refused, text: refused }
+        - { id: r-apologising, text: apologising }
+        - { id: r-to, text: to }
+    answer:
+      orders:
+        - [r-he, r-refused, r-to, r-apologise, r-for, r-being, r-late]
+    explanation:
+      vi: Refuse + to V (to apologise); sau giới từ for là V-ing (being late). Refuse đã mang nghĩa "không", nên không thêm not.
+    display_answer: He refused to apologise for being late.
+
+  - key: en:exercise:gerinf-mcq-never-forget
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:forget-ing-vs-to
+    prompt:
+      stem: "Chọn câu đúng: \"Tôi sẽ không bao giờ quên lần đầu gặp cô ấy.\""
+      stem_lang: vi
+      options:
+        - { id: m3a, text: I'll never forget meeting her for the first time., lang: en }
+        - { id: d8i, text: I'll never forget to meet her for the first time., lang: en }
+        - { id: z5o, text: I'll never forget meet her for the first time., lang: en }
+        - { id: p2y, text: I'll never forget to meeting her for the first time., lang: en }
+    answer:
+      correct_option_id: m3a
+    explanation:
+      vi: Đây là ký ức về việc đã xảy ra, nên dùng forget + V-ing. Forget to meet là "quên đi gặp" (nên đã không gặp) - sai nghĩa hoàn toàn.
+    display_answer: I'll never forget meeting her for the first time.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:gerinf-fill-forgot-to-buy
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:forget-ing-vs-to
+    prompt:
+      template: "Sorry, I forgot {{b1}} (buy) the cake! But I'll never forget {{b2}} (see) your face when you opened the present."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [to buy]
+        b2: [seeing]
+    known_wrong:
+      - answer: buying
+        feedback_vi: Quên làm (nên chưa mua) là forget to do - forgot to buy.
+        error_tag: gerund_infinitive_meaning
+      - answer: to see
+        feedback_vi: Đây là ký ức về việc đã xảy ra - never forget seeing.
+        error_tag: gerund_infinitive_meaning
+      - answer: buy
+        feedback_vi: Sau forget cần to buy (quên làm) hoặc buying (quên đã làm); ở đây là to buy.
+        error_tag: gerund_infinitive
+    explanation:
+      vi: Bánh chưa được mua - quên làm - forgot to buy. Khuôn mặt khi mở quà là ký ức đã có - never forget seeing.
+    display_answer: Sorry, I forgot to buy the cake! But I'll never forget seeing your face when you opened the present.
+
+  - key: en:exercise:gerinf-fill-stopped-to-buy
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:stop-ing-vs-to
+    prompt:
+      template: "On the way to my parents' house, I stopped {{b1}} (buy) some flowers for my mum."
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [to buy]
+    known_wrong:
+      - answer: buying
+        feedback_vi: Stopped buying là "thôi không mua nữa". Dừng lại để mua là stopped to buy.
+        error_tag: gerund_infinitive_meaning
+      - answer: for buying
+        feedback_vi: Chỉ mục đích sau stop dùng to V - stopped to buy.
+        error_tag: purpose_infinitive
+    explanation:
+      vi: Người nói dừng việc đang làm (đi đường) để làm một việc khác (mua hoa), nên dùng stop + to V.
+    display_answer: On the way to my parents' house, I stopped to buy some flowers for my mum.
+
+  - key: en:exercise:gerinf-translate-stopped-smoking
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:stop-ing-vs-to
+    prompt:
+      source_text: Bố tôi đã bỏ thuốc lá cách đây năm năm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My father stopped smoking five years ago.
+        - My dad stopped smoking five years ago.
+        - My father gave up smoking five years ago.
+        - My dad gave up smoking five years ago.
+        - My father quit smoking five years ago.
+        - My dad quit smoking five years ago.
+        - My father stopped smoking 5 years ago.
+        - My dad stopped smoking 5 years ago.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My father stopped to smoke five years ago.
+        feedback_vi: Stopped to smoke là "dừng lại để hút thuốc". Bỏ thuốc là stopped smoking.
+        error_tag: gerund_infinitive_meaning
+      - answer: My dad stopped to smoke five years ago.
+        feedback_vi: Stopped to smoke là "dừng lại để hút thuốc". Bỏ thuốc là stopped smoking.
+        error_tag: gerund_infinitive_meaning
+      - answer: My father stopped smoke five years ago.
+        feedback_vi: Sau stop cần V-ing - stopped smoking.
+        error_tag: gerund_infinitive
+    explanation:
+      vi: "\"Bỏ\" một thói quen là stop / give up / quit + V-ing. Thêm to sau stop sẽ đổi nghĩa thành \"dừng lại để làm\"."
+    display_answer: My father stopped smoking five years ago.
+
+  # ---------------- application ----------------
+  - key: en:exercise:gerinf-translate-apologised
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:apologise-for
+    prompt:
+      source_text: Cô ấy đã xin lỗi tôi vì đã phớt lờ tin nhắn của tôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - She apologised to me for ignoring my messages.
+        - She apologized to me for ignoring my messages.
+        - She apologised to me for ignoring my message.
+        - She apologized to me for ignoring my message.
+        - She apologised to me for having ignored my messages.
+        - She apologized to me for having ignored my messages.
+        - She said sorry to me for ignoring my messages.
+        - She said sorry for ignoring my messages.
+        - She apologised for ignoring my messages.
+        - She apologized for ignoring my messages.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: She apologised me for ignoring my messages.
+        feedback_vi: Apologise cần to trước người được xin lỗi - apologised to me.
+        error_tag: preposition
+      - answer: She apologised to me for ignore my messages.
+        feedback_vi: Sau giới từ for phải là V-ing - for ignoring.
+        error_tag: gerund_after_preposition
+      - answer: She apologised to me to ignore my messages.
+        feedback_vi: Lý do xin lỗi dùng for + V-ing - for ignoring.
+        error_tag: gerund_after_preposition
+    explanation:
+      vi: Mẫu câu apologise to + người + for + V-ing. For là giới từ, nên động từ sau nó là ignoring. Có thể viết apologised (Anh) hoặc apologized (Mỹ).
+    display_answer: She apologised to me for ignoring my messages.
+
+  - key: en:exercise:gerinf-translate-regret-not-keeping
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:regret-ing-vs-to
+    prompt:
+      source_text: I regret not keeping in touch with her.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi hối hận vì đã không giữ liên lạc với cô ấy.
+        - Tôi hối hận vì không giữ liên lạc với cô ấy.
+        - Tôi hối hận vì đã không giữ liên lạc với chị ấy.
+        - Tôi hối hận vì đã không giữ liên lạc với bạn ấy.
+        - Tôi hối hận vì đã không giữ liên lạc với em ấy.
+        - Tôi tiếc vì đã không giữ liên lạc với cô ấy.
+        - Tôi rất tiếc vì đã không giữ liên lạc với cô ấy.
+        - Tôi hối tiếc vì đã không giữ liên lạc với cô ấy.
+        - Tôi hối hận vì đã không giữ liên lạc với bà ấy.
+        - Mình hối hận vì đã không giữ liên lạc với cô ấy.
+        - Tôi hối hận là đã không giữ liên lạc với cô ấy.
+        - Tôi tiếc là đã không giữ liên lạc với cô ấy.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi rất tiếc phải báo là không giữ liên lạc với cô ấy.
+        feedback_vi: "\"Rất tiếc phải báo\" là regret to say. Regret + V-ing là hối hận vì đã làm (hoặc không làm)."
+        error_tag: gerund_infinitive_meaning
+    explanation:
+      vi: Regret + V-ing là hối hận về việc đã xảy ra; not keeping là đã không giữ. Keep in touch with là giữ liên lạc với.
+    display_answer: Tôi hối hận vì đã không giữ liên lạc với cô ấy.
+
+  - key: en:exercise:gerinf-mcq-try-advice
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:try-ing-vs-to
+    prompt:
+      stem: Bạn của bạn than mất ngủ vì lo chuyện tình cảm. Bạn muốn khuyên "thử đọc sách trước khi ngủ xem sao". Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: k1n, text: "Try reading a book before bed - it might help.", lang: en }
+        - { id: t7f, text: "Try to reading a book before bed - it might help.", lang: en }
+        - { id: e4w, text: "Try read a book before bed - it might help.", lang: en }
+        - { id: s6h, text: "Remember reading a book before bed - it might help.", lang: en }
+    answer:
+      correct_option_id: k1n
+    explanation:
+      vi: Khi khuyên ai "thử một cách xem có hiệu quả không", dùng try + V-ing. Try to reading và try read sai dạng; remember reading là "nhớ đã đọc", không phải lời khuyên.
+    display_answer: "Try reading a book before bed - it might help."
+
+  - key: en:exercise:gerinf-translate-cant-stand-promise
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:cant-stand
+    prompt:
+      source_text: Tôi không chịu nổi việc phải chờ đợi, nên anh ấy hứa sẽ đến đúng giờ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I can't stand waiting, so he promised to come on time.
+        - I can't stand waiting, so he promised to arrive on time.
+        - I can't stand waiting, so he promised to be on time.
+        - I can't stand having to wait, so he promised to come on time.
+        - I can't stand having to wait, so he promised to be on time.
+        - I can't stand having to wait, so he promised to arrive on time.
+        - I cannot stand waiting, so he promised to come on time.
+        - I hate waiting, so he promised to come on time.
+        - I hate waiting, so he promised to be on time.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I can't stand to wait, so he promised coming on time.
+        feedback_vi: Promise đi với to V - promised to come. Can't stand thường đi với V-ing - waiting.
+        error_tag: gerund_infinitive
+      - answer: I can't stand waiting, so he promised coming on time.
+        feedback_vi: Promise đi với to V - promised to come.
+        error_tag: gerund_infinitive
+      - answer: I can't stand wait, so he promised to come on time.
+        feedback_vi: Sau can't stand cần V-ing - waiting.
+        error_tag: gerund_infinitive
+    explanation:
+      vi: Can't stand + V-ing (waiting / having to wait); promise + to V (to come / to be on time). Hai động từ chính quyết định dạng của động từ theo sau.
+    display_answer: I can't stand waiting, so he promised to come on time.

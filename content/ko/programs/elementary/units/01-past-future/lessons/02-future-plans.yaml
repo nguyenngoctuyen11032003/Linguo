@@ -1,0 +1,431 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:future-plans
+order_index: 2
+level: topik2
+title:
+  vi: Tương lai -(으)ㄹ 거예요 và lời hứa -(으)ㄹ게요
+objectives:
+  - vi: Nói kế hoạch, dự định bằng -(으)ㄹ 거예요 cho mọi ngôi, kể cả câu hỏi.
+  - vi: Hứa hoặc nhận làm một việc cho người nghe bằng -(으)ㄹ게요.
+  - vi: Dùng từ chỉ thời gian tương lai - 이따가, 내일, 다음 주, 내년.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ko:lesson:past-tense]
+items:
+  - item: ko:item:gram-eul-geoyeyo
+  - item: ko:item:gram-eulgeyo
+  - item: ko:item:daeum-ju
+  - item: ko:item:naenyeon
+  - item: ko:item:ittaga
+  - item: ko:item:swida
+  - item: ko:item:yeohaenghada
+  - item: ko:item:jeonhwahada
+  - item: ko:item:gidarida
+  - item: ko:item:kkok
+  - item: ko:item:naeil
+    role: reuse
+  - item: ko:item:jumal
+    role: reuse
+  - item: ko:item:chingu
+    role: reuse
+  - item: ko:item:verb-oda
+    role: reuse
+  - item: ko:item:verb-gada
+    role: reuse
+  - item: ko:item:gram-past-tense
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được mình và người khác sẽ làm gì vào cuối tuần, tuần sau, năm sau, và biết hứa "Lát nữa tôi sẽ gọi nhé" đúng kiểu người Hàn.
+  - type: explain
+    text:
+      vi: Muốn nói "sẽ / định", bạn bỏ 다 rồi thêm -(으)ㄹ 거예요. Thân không có patchim thêm ㄹ 거예요 (가다 → 갈 거예요), có patchim thêm 을 거예요 (먹다 → 먹을 거예요), thân có ㄹ sẵn chỉ thêm 거예요 (놀다 → 놀 거예요).
+  - type: explain
+    text:
+      vi: -(으)ㄹ 거예요 dùng cho tôi, bạn, anh ấy… và dùng được trong câu hỏi - 주말에 뭐 할 거예요? Nó cho biết một kế hoạch hoặc dự đoán, giống "sẽ / định" trong tiếng Việt.
+  - type: explain
+    text:
+      vi: -(으)ㄹ게요 cũng dịch là "tôi sẽ", nhưng là lời hứa hoặc quyết định ngay vì người nghe - 이따가 전화할게요 (lát nữa tôi gọi nhé). Nó chỉ dùng cho "tôi/chúng tôi" và không dùng để hỏi.
+  - type: explain
+    text:
+      vi: Tiếng Việt chỉ có một chữ "sẽ", nên người Việt hay nói 친구가 올게요. Hãy nhớ - nói về người khác hoặc hỏi người khác thì luôn dùng -(으)ㄹ 거예요.
+  - type: deep_explain
+    text:
+      vi: So sánh - 내일 갈 거예요 là thông báo kế hoạch (dù người nghe nghĩ gì), còn 내일 갈게요 là "được rồi, mai tôi đến" như một lời đồng ý. Cả hai đều đọc căng sau ㄹ - [갈 꺼예요], [갈께요] - nhưng luôn viết 거예요, 게요. Khi đã có từ chỉ tương lai, người Hàn cũng hay dùng hiện tại - 내일 친구가 와요 vẫn đúng.
+  - type: example
+    target: 내일 친구를 만날 거예요.
+    target_lang: ko
+    translation:
+      vi: Ngày mai tôi sẽ gặp bạn.
+    note:
+      vi: 만나 không có patchim nên thêm ㄹ - 만날 거예요.
+  - type: example
+    target: 동생은 주말에 집에서 쉴 거예요.
+    target_lang: ko
+    translation:
+      vi: Cuối tuần em tôi sẽ nghỉ ở nhà.
+    note:
+      vi: Nói về người khác nên dùng -(으)ㄹ 거예요, không dùng 쉴게요.
+  - type: example
+    target: 내년에 한국에 갈 거예요.
+    target_lang: ko
+    translation:
+      vi: Sang năm tôi sẽ đi Hàn Quốc.
+    note:
+      vi: 내년 + 에 chỉ thời điểm trong tương lai.
+  - type: example
+    target: 지금은 바빠요. 이따가 전화할게요.
+    target_lang: ko
+    translation:
+      vi: Bây giờ tôi đang bận. Lát nữa tôi gọi lại nhé.
+    note:
+      vi: Đây là lời hứa với người nghe nên dùng -(으)ㄹ게요.
+  - type: example
+    target: 괜찮아요. 제가 기다릴게요.
+    target_lang: ko
+    translation:
+      vi: Không sao đâu. Để tôi đợi.
+    note:
+      vi: Người nói tự nhận việc đợi vì người kia - dùng 기다릴게요.
+  - type: common_mistake
+    wrong: 친구가 내일 올게요.
+    right: 친구가 내일 올 거예요.
+    target_lang: ko
+    note:
+      vi: -(으)ㄹ게요 chỉ dành cho người nói. Nói về bạn mình thì dùng 올 거예요.
+  - type: common_mistake
+    wrong: 주말에 뭐 할게요?
+    right: 주말에 뭐 할 거예요?
+    target_lang: ko
+    note:
+      vi: Không hỏi bằng -(으)ㄹ게요, vì đó là lời hứa của chính mình. Hỏi kế hoạch người khác dùng -(으)ㄹ 거예요.
+  - type: common_mistake
+    wrong: 이따가 전화할께요.
+    right: 이따가 전화할게요.
+    target_lang: ko
+    note:
+      vi: Đọc là [할께요] nhưng viết 게요. Tương tự viết 거예요 dù đọc [꺼예요].
+  - type: common_mistake
+    wrong: 주말에 친구하고 놀을 거예요.
+    right: 주말에 친구하고 놀 거예요.
+    target_lang: ko
+    note:
+      vi: Thân 놀 đã có ㄹ, nên không thêm 을 - chỉ thêm 거예요.
+  - type: summary
+    points:
+      - vi: Không patchim + ㄹ 거예요 (갈 거예요) · patchim + 을 거예요 (먹을 거예요) · thân ㄹ + 거예요 (놀 거예요).
+      - vi: -(으)ㄹ 거예요 - kế hoạch, mọi ngôi, hỏi được.
+      - vi: -(으)ㄹ게요 - lời hứa/nhận việc của "tôi", không hỏi, không dùng cho người khác.
+      - vi: 이따가 lát nữa · 다음 주 tuần sau · 내년 năm sau · 꼭 nhất định · 쉬다 nghỉ · 여행하다 du lịch · 전화하다 gọi điện · 기다리다 đợi.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:pf-future-mcq-meokda
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eul-geoyeyo
+    prompt:
+      stem: '"Tôi sẽ ăn" - dạng -(으)ㄹ 거예요 của 먹다 là gì?'
+      stem_lang: vi
+      options:
+        - { id: f8n, text: 먹을 거예요, lang: ko }
+        - { id: l2c, text: 먹 거예요, lang: ko }
+        - { id: o5w, text: 멀 거예요, lang: ko }
+        - { id: i9t, text: 먹를 거예요, lang: ko }
+    answer:
+      correct_option_id: f8n
+    explanation:
+      vi: 먹 có patchim ㄱ nên thêm 을 거예요 - 먹을 거예요. Chỉ thân không có patchim mới gắn ㄹ trực tiếp (갈 거예요).
+    display_answer: 먹을 거예요
+
+  - key: ko:exercise:pf-future-listen-rest
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:swida
+    prompt:
+      audio_asset_id: null
+      fallback_text: 내일 집에서 쉴 거예요.
+      options:
+        - { id: z4m, text: Ngày mai tôi sẽ nghỉ ở nhà., lang: vi }
+        - { id: h7q, text: Hôm qua tôi đã nghỉ ở nhà., lang: vi }
+        - { id: c3y, text: Ngày mai tôi sẽ ra ngoài chơi., lang: vi }
+        - { id: w8a, text: Ngày mai tôi sẽ học ở nhà., lang: vi }
+    answer:
+      correct_option_id: z4m
+    explanation:
+      vi: 내일 là "ngày mai", 쉴 거예요 là "sẽ nghỉ" (쉬다 + ㄹ 거예요). 집에서 là "ở nhà" - nơi diễn ra hành động.
+    display_answer: Ngày mai tôi sẽ nghỉ ở nhà.
+
+  - key: ko:exercise:pf-future-mcq-call-later
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eulgeyo
+    prompt:
+      stem: 'Bạn đang bận và muốn hứa với bạn mình: "Lát nữa tôi gọi nhé." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: q6s, text: 이따가 전화할게요., lang: ko }
+        - { id: e1k, text: 아까 전화할게요., lang: ko }
+        - { id: m8v, text: 이따가 전화했어요., lang: ko }
+        - { id: b5r, text: 이따가 전화할께요., lang: ko }
+    answer:
+      correct_option_id: q6s
+    explanation:
+      vi: Lời hứa của người nói dùng -(으)ㄹ게요, và "lát nữa" là 이따가. 아까 là "lúc nãy" (quá khứ); 할께요 sai chính tả - đọc [께] nhưng viết 게.
+    display_answer: 이따가 전화할게요.
+
+  - key: ko:exercise:pf-future-fill-nolda
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eul-geoyeyo
+    prompt:
+      template: "Cuối tuần tôi sẽ đi chơi với bạn. - 주말에 친구하고 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - 놀다 (chơi) + -(으)ㄹ 거예요.
+        - Thân 놀 đã có ㄹ, không thêm 을.
+    answer:
+      blanks:
+        b1: [놀 거예요]
+    known_wrong:
+      - answer: 놀을 거예요
+        feedback_vi: Thân 놀 đã có ㄹ nên chỉ thêm 거예요 - 놀 거예요.
+        error_tag: rieul_stem
+      - answer: 놀 꺼예요
+        feedback_vi: Đọc [꺼] nhưng viết 거 - 놀 거예요.
+        error_tag: spelling_geoyeyo
+      - answer: 놀았어요
+        feedback_vi: 놀았어요 là quá khứ. "Sẽ" dùng 놀 거예요.
+        error_tag: tense_future
+    explanation:
+      vi: 놀다 có thân kết thúc bằng ㄹ, nên gắn thẳng 거예요 - 놀 거예요. Đây là kế hoạch nên dùng -(으)ㄹ 거예요.
+    display_answer: 주말에 친구하고 놀 거예요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:pf-future-fill-friend-comes
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eulgeyo
+    prompt:
+      template: "Ngày mai bạn tôi sẽ đến. - 내일 친구가 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [올 거예요, 와요]
+    known_wrong:
+      - answer: 올게요
+        feedback_vi: -(으)ㄹ게요 chỉ dùng cho người nói. Nói về bạn mình thì dùng 올 거예요.
+        error_tag: geyo_third_person
+      - answer: 오을 거예요
+        feedback_vi: 오 không có patchim nên chỉ thêm ㄹ - 올 거예요.
+        error_tag: verb_conjugation
+      - answer: 왔어요
+        feedback_vi: 왔어요 là quá khứ. Câu nói về ngày mai.
+        error_tag: tense_future
+    explanation:
+      vi: Chủ ngữ là 친구 (người khác), nên dùng -(으)ㄹ 거예요 - 올 거예요. Vì đã có 내일, dạng hiện tại 와요 cũng tự nhiên.
+    display_answer: 내일 친구가 올 거예요.
+
+  - key: ko:exercise:pf-future-translate-korea
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:naenyeon
+    prompt:
+      source_text: Sang năm tôi sẽ đi Hàn Quốc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 내년에 한국에 갈 거예요.
+        - 저는 내년에 한국에 갈 거예요.
+        - 전 내년에 한국에 갈 거예요.
+        - 내년에 저는 한국에 갈 거예요.
+        - 저는 내년에 한국에 가요.
+        - 내년에 한국에 가요.
+    known_wrong:
+      - answer: 내년에 한국에 갔어요.
+        feedback_vi: 갔어요 là quá khứ. "Sẽ đi" là 갈 거예요.
+        error_tag: tense_future
+      - answer: 내일에 한국에 갈 거예요.
+        feedback_vi: 내일 là ngày mai, "sang năm" là 내년.
+        error_tag: vocab_time_word
+      - answer: 내년에 한국에 가을 거예요.
+        feedback_vi: 가 không có patchim nên chỉ thêm ㄹ - 갈 거예요.
+        error_tag: verb_conjugation
+      - answer: naenyeone hanguge gal geoyeyo
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: 내년에 (vào năm sau) + 한국에 (đến Hàn Quốc) + 갈 거예요 (sẽ đi). Có từ chỉ tương lai nên 가요 cũng được chấp nhận.
+    display_answer: 내년에 한국에 갈 거예요.
+
+  - key: ko:exercise:pf-future-fill-wait
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gidarida
+    prompt:
+      template: "A: 저 조금 늦어요. (Tôi đến muộn một chút.) B: 괜찮아요. 제가 {{b1}}. (Không sao, tôi đợi nhé.)"
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [기다릴게요]
+    known_wrong:
+      - answer: 기다릴께요
+        feedback_vi: Đọc [께] nhưng viết 게 - 기다릴게요.
+        error_tag: spelling_geyo
+      - answer: 기다릴 거예요
+        feedback_vi: Đúng ngữ pháp nhưng nghe như thông báo kế hoạch. Đáp lời để bạn yên tâm thì dùng lời hứa 기다릴게요.
+        error_tag: geyo_vs_geoyeyo
+      - answer: 기다렸어요
+        feedback_vi: Đây là quá khứ. Bạn đang hứa sẽ đợi.
+        error_tag: tense_future
+    explanation:
+      vi: B nhận việc đợi vì A - một lời hứa với người nghe, nên dùng -(으)ㄹ게요. 기다리 không có patchim nên thêm ㄹ게요.
+    display_answer: 괜찮아요. 제가 기다릴게요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:pf-future-mcq-sibling-travel
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:yeohaenghada
+    prompt:
+      stem: 'Bạn muốn nói: "Cuối tuần em tôi sẽ đi du lịch." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: y3d, text: 동생은 주말에 여행할 거예요., lang: ko }
+        - { id: t7j, text: 동생은 주말에 여행할게요., lang: ko }
+        - { id: a2p, text: 동생은 주말에 여행했어요., lang: ko }
+        - { id: s6u, text: 동생은 주말에 여행하을 거예요., lang: ko }
+    answer:
+      correct_option_id: y3d
+    explanation:
+      vi: Kế hoạch của người khác (em tôi) dùng -(으)ㄹ 거예요. 여행할게요 chỉ dùng khi chính người nói hứa; 여행했어요 là quá khứ.
+    display_answer: 동생은 주말에 여행할 거예요.
+
+  - key: ko:exercise:pf-future-mcq-ask-plan
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eul-geoyeyo
+    prompt:
+      stem: 'Bạn muốn hỏi bạn Hàn: "Cuối tuần bạn định làm gì?" Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: n9b, text: 주말에 뭐 할 거예요?, lang: ko }
+        - { id: r4x, text: 주말에 뭐 할게요?, lang: ko }
+        - { id: d1g, text: 주말에 뭐 했어요?, lang: ko }
+        - { id: k8e, text: 주말에 뭐 하을 거예요?, lang: ko }
+    answer:
+      correct_option_id: n9b
+    explanation:
+      vi: Hỏi kế hoạch của người khác dùng -(으)ㄹ 거예요. -(으)ㄹ게요 là lời hứa của người nói nên không dùng để hỏi; 했어요 hỏi về cuối tuần đã qua.
+    display_answer: 주말에 뭐 할 거예요?
+
+  - key: ko:exercise:pf-future-translate-jeju
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:daeum-ju
+    prompt:
+      source_text: 다음 주에 제주도를 여행할 거예요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tuần sau tôi sẽ đi du lịch đảo Jeju.
+        - Tuần sau tôi sẽ đi du lịch Jeju.
+        - Tuần sau tôi sẽ du lịch đảo Jeju.
+        - Tuần sau tôi định đi du lịch Jeju.
+        - Tuần sau tôi định đi du lịch đảo Jeju.
+        - Tuần tới tôi sẽ đi du lịch đảo Jeju.
+        - Tuần tới tôi sẽ đi du lịch Jeju.
+        - Tôi sẽ đi du lịch đảo Jeju vào tuần sau.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tuần trước tôi đã đi du lịch đảo Jeju.
+        feedback_vi: 다음 주 là tuần sau, 여행할 거예요 là "sẽ đi du lịch" - không phải quá khứ.
+        error_tag: tense_future
+    explanation:
+      vi: 다음 주에 là "vào tuần sau", 여행할 거예요 là kế hoạch "sẽ đi du lịch". Tiếng Việt có thể nói "sẽ" hoặc "định".
+    display_answer: Tuần sau tôi sẽ đi du lịch đảo Jeju.
+
+  - key: ko:exercise:pf-future-order-call
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:jeonhwahada
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Hàn: "Lát nữa tôi sẽ gọi cho bạn nhé."'
+      tokens:
+        - { id: t-jeonhwahalgeyo, text: 전화할게요 }
+        - { id: t-akka, text: 아까 }
+        - { id: t-jega, text: 제가 }
+        - { id: t-jeonhwahaesseoyo, text: 전화했어요 }
+        - { id: t-ittaga, text: 이따가 }
+    answer:
+      orders:
+        - [t-jega, t-ittaga, t-jeonhwahalgeyo]
+        - [t-ittaga, t-jega, t-jeonhwahalgeyo]
+    explanation:
+      vi: Lời hứa của người nói dùng 전화할게요 ở cuối câu; "lát nữa" là 이따가, không phải 아까 (lúc nãy).
+    display_answer: 제가 이따가 전화할게요.
+
+  - key: ko:exercise:pf-future-translate-promise
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:kkok
+    prompt:
+      source_text: Nhất định tôi sẽ đến.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 꼭 갈게요.
+        - 꼭 올게요.
+        - 제가 꼭 갈게요.
+        - 저는 꼭 갈게요.
+        - 꼭 갈 거예요.
+        - 저는 꼭 갈 거예요.
+    known_wrong:
+      - answer: 꼭 갈께요.
+        feedback_vi: Đọc [갈께요] nhưng viết 갈게요.
+        error_tag: spelling_geyo
+      - answer: 꼭 갔어요.
+        feedback_vi: 갔어요 là quá khứ. "Sẽ đến" là 갈게요 hoặc 갈 거예요.
+        error_tag: tense_future
+      - answer: kkok galgeyo
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: 꼭 nhấn mạnh "nhất định", và lời hứa của người nói tự nhiên nhất với -(으)ㄹ게요 - 꼭 갈게요. 갈 거예요 cũng đúng nhưng ít mang sắc thái hứa hơn.
+    display_answer: 꼭 갈게요.

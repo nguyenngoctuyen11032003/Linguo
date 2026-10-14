@@ -1,0 +1,439 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:you-should-rest
+order_index: 3
+level: a2
+title:
+  vi: Bạn nên nghỉ ngơi - lời khuyên và thói quen lành mạnh
+objectives:
+  - vi: Khuyên người khác bằng should / shouldn't và xin lời khuyên bằng What should I do?
+  - vi: Nói về thể thao với đúng động từ - do yoga, play football, go swimming, go to the gym.
+  - vi: Ôn How often…? để hỏi và kể thói quen giữ sức khoẻ.
+estimated_minutes: 16
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [en:lesson:at-the-doctors]
+items:
+  - item: en:item:should-shouldnt
+  - item: en:item:what-should-i-do
+  - item: en:item:rest
+  - item: en:item:drink-plenty-of-water
+  - item: en:item:stay-up-late
+  - item: en:item:healthy
+  - item: en:item:junk-food
+  - item: en:item:do-play-go
+  - item: en:item:do-yoga
+  - item: en:item:play-football
+  - item: en:item:go-swimming
+  - item: en:item:go-jogging
+  - item: en:item:go-to-the-gym
+  - item: en:item:how-often
+    role: reuse
+  - item: en:item:frequency-adverbs
+    role: reuse
+  - item: en:item:exercise-verb
+    role: reuse
+  - item: en:item:have-an-illness
+    role: reuse
+  - item: en:item:once-twice-a-day
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn khuyên được bạn bè "nên nghỉ ngơi", "không nên thức khuya", kể mình chơi môn thể thao gì và bao lâu một lần - đúng động từ, đúng mẫu câu.
+  - type: explain
+    text:
+      vi: Should nghĩa là "nên", shouldn't là "không nên". Sau should luôn là động từ nguyên mẫu, không có to và không thêm -s - You should rest. She should rest.
+  - type: explain
+    text:
+      vi: Muốn xin lời khuyên, đảo should lên trước chủ ngữ - Should I see a doctor? hoặc hỏi What should I do? Trả lời ngắn Yes, you should / No, you shouldn't.
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"chơi\", \"tập\", \"đi\" khá thoải mái, nhưng tiếng Anh chia ba nhóm: play + môn có bóng (play football, play badminton); go + V-ing (go swimming, go jogging); do + môn tập cá nhân (do yoga, do exercise)."
+  - type: deep_explain
+    text:
+      vi: "Để hỏi thói quen, dùng lại How often…? đã học - How often do you go swimming? Trả lời bằng trạng từ tần suất (I usually…) hoặc cụm once/twice/three times a week. Lời khuyên nghe mềm hơn nếu thêm I think: I think you should go to bed early. Phủ định lịch sự là I don't think you should…, không nói \"I think you don't should\"."
+  - type: example
+    target: "A: I've got a terrible cold. What should I do? B: You should stay at home and rest."
+    target_lang: en
+    translation:
+      vi: "A: Mình bị cảm nặng quá. Mình nên làm gì? B: Bạn nên ở nhà nghỉ ngơi."
+    note:
+      vi: Sau should là động từ nguyên mẫu stay, không có to.
+  - type: example
+    target: You shouldn't stay up late, and you should drink plenty of water.
+    target_lang: en
+    translation:
+      vi: Bạn không nên thức khuya, và nên uống nhiều nước.
+    note:
+      vi: Shouldn't = should not. Water không đếm được nên dùng plenty of, không dùng many.
+  - type: example
+    target: I play badminton on Mondays, go swimming on Wednesdays and do yoga at weekends.
+    target_lang: en
+    translation:
+      vi: Tôi chơi cầu lông vào thứ Hai, đi bơi vào thứ Tư và tập yoga vào cuối tuần.
+    note:
+      vi: Ba môn - ba động từ khác nhau - play, go, do.
+  - type: example
+    target: "A: How often do you go to the gym? B: Three times a week. I want to keep healthy."
+    target_lang: en
+    translation:
+      vi: "A: Bạn đi tập gym bao lâu một lần? B: Ba lần một tuần. Tôi muốn giữ sức khoẻ."
+    note:
+      vi: Gym là nơi chốn nên có to the; How often trả lời bằng số lần một tuần.
+  - type: common_mistake
+    wrong: You should to rest.
+    right: You should rest.
+    target_lang: en
+    note:
+      vi: Should không bao giờ đi với to - giống can, sau đó là động từ nguyên mẫu.
+  - type: common_mistake
+    wrong: She shoulds eat more fruit.
+    right: She should eat more fruit.
+    target_lang: en
+    note:
+      vi: Should giữ nguyên với mọi chủ ngữ, không thêm -s cho she/he.
+  - type: common_mistake
+    wrong: I play yoga and go to swimming.
+    right: I do yoga and go swimming.
+    target_lang: en
+    note:
+      vi: Yoga đi với do; go + V-ing không có to.
+  - type: summary
+    points:
+      - vi: should / shouldn't + động từ nguyên mẫu (không to, không -s).
+      - vi: Should I…? · What should I do? - Yes, you should. / No, you shouldn't.
+      - vi: play + môn có bóng · go + V-ing · do + yoga/exercise · go to the gym.
+      - vi: Lời khuyên sức khoẻ - rest, drink plenty of water, don't stay up late, avoid junk food.
+      - vi: How often do you…? - Twice a week. / I usually…
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:you-should-rest-mcq-no-to
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:should-shouldnt
+    prompt:
+      stem: "Chọn từ đúng: You've got a fever. You should ___ at home."
+      stem_lang: vi
+      options:
+        - { id: h3v, text: rest, lang: en }
+        - { id: a6k, text: to rest, lang: en }
+        - { id: m9q, text: resting, lang: en }
+        - { id: x2d, text: rests, lang: en }
+    answer:
+      correct_option_id: h3v
+    explanation:
+      vi: Sau should là động từ nguyên mẫu không có to - should rest. Người Việt hay thêm to vì dịch "nên để…", nhưng should giống can, không cần to.
+    display_answer: rest
+
+  - key: en:exercise:you-should-rest-mcq-collocation
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:do-play-go
+    prompt:
+      stem: "Câu nào dùng đúng động từ?"
+      stem_lang: vi
+      options:
+        - { id: p5e, text: "He goes swimming every Sunday.", lang: en }
+        - { id: w1b, text: "He goes to swimming every Sunday.", lang: en }
+        - { id: k7n, text: "He plays swimming every Sunday.", lang: en }
+        - { id: t0r, text: "He does football every Sunday.", lang: en }
+    answer:
+      correct_option_id: p5e
+    explanation:
+      vi: Môn có đuôi -ing đi với go và không có to - go swimming. Football là môn có bóng nên đi với play, không phải do.
+    display_answer: "He goes swimming every Sunday."
+
+  - key: en:exercise:you-should-rest-listen-how-often
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:how-often
+    prompt:
+      audio_asset_id: null
+      fallback_text: "How often do you do yoga? - Twice a week, on Tuesdays and Saturdays."
+      options:
+        - { id: r8c, text: "Bạn tập yoga bao lâu một lần? - Hai lần một tuần, vào thứ Ba và thứ Bảy.", lang: vi }
+        - { id: j4y, text: "Bạn tập yoga bao lâu rồi? - Hai tuần, từ thứ Ba.", lang: vi }
+        - { id: g6u, text: "Bạn tập yoga bao lâu một lần? - Ba lần một tuần, vào thứ Ba và thứ Bảy.", lang: vi }
+        - { id: e3s, text: "Bạn có tập yoga không? - Có, vào thứ Năm và Chủ nhật.", lang: vi }
+    answer:
+      correct_option_id: r8c
+    explanation:
+      vi: How often hỏi "bao lâu một lần" (không phải "bao lâu rồi"). Twice a week là hai lần một tuần; Tuesdays là thứ Ba, Saturdays là thứ Bảy.
+    display_answer: "Bạn tập yoga bao lâu một lần? - Hai lần một tuần, vào thứ Ba và thứ Bảy."
+
+  - key: en:exercise:you-should-rest-fill-play-go
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:play-football
+    prompt:
+      template: "I {{b1}} football on Saturdays and {{b2}} jogging on Sundays."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Tôi chơi bóng đá vào thứ Bảy và chạy bộ vào Chủ nhật."
+        - "Gợi ý: môn có bóng đi với play; môn đuôi -ing đi với go."
+    answer:
+      blanks:
+        b1: [play]
+        b2: [go]
+    known_wrong:
+      - answer: do
+        feedback_vi: Do dùng cho yoga, exercise. Football đi với play, jogging đi với go.
+        error_tag: sport_collocation
+      - answer: go to
+        feedback_vi: Go + V-ing không có to - go jogging.
+        error_tag: go_to_ing
+      - answer: plays
+        feedback_vi: Chủ ngữ là I nên động từ không thêm -s.
+        error_tag: third_person_s
+    explanation:
+      vi: Football là môn có bóng nên đi với play. Jogging có đuôi -ing nên đi với go, không có to.
+    display_answer: I play football on Saturdays and go jogging on Sundays.
+
+  - key: en:exercise:you-should-rest-order-stay-up
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:stay-up-late
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Bạn không nên thức khuya.\""
+      tokens:
+        - { id: su-late, text: late }
+        - { id: su-shouldnt, text: "shouldn't" }
+        - { id: su-to, text: to }
+        - { id: su-up, text: up }
+        - { id: su-you, text: You }
+        - { id: su-staying, text: staying }
+        - { id: su-stay, text: stay }
+    answer:
+      orders:
+        - [su-you, su-shouldnt, su-stay, su-up, su-late]
+    explanation:
+      vi: Shouldn't + động từ nguyên mẫu stay (không to, không -ing). Thức khuya là stay up late.
+    display_answer: "You shouldn't stay up late."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:you-should-rest-fill-should-i
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:what-should-i-do
+    prompt:
+      template: "A: I've got a bad cold. {{b1}} I go to work today? B: No, you {{b2}}. You should stay in bed."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [Should]
+        b2: ["shouldn't", should not]
+    known_wrong:
+      - answer: Do
+        feedback_vi: Câu hỏi xin lời khuyên đảo should lên đầu - Should I…?, không dùng Do.
+        error_tag: do_with_should
+      - answer: "don't"
+        feedback_vi: Câu hỏi bằng Should thì trả lời ngắn cũng dùng should - No, you shouldn't.
+        error_tag: short_answer
+      - answer: "can't"
+        feedback_vi: Đây là lời khuyên (không nên), không phải khả năng. Dùng shouldn't.
+        error_tag: should_can
+    explanation:
+      vi: Xin lời khuyên thì đảo Should lên trước chủ ngữ. Trả lời ngắn lặp lại should - No, you shouldn't.
+    display_answer: "A: I've got a bad cold. Should I go to work today? B: No, you shouldn't. You should stay in bed."
+
+  - key: en:exercise:you-should-rest-translate-water
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:drink-plenty-of-water
+    prompt:
+      source_text: Bạn nên uống nhiều nước.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - You should drink plenty of water.
+        - You should drink a lot of water.
+        - You should drink lots of water.
+        - You should drink more water.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: You should to drink plenty of water.
+        feedback_vi: Should không đi với to - You should drink.
+        error_tag: should_to
+      - answer: You should drink many water.
+        feedback_vi: Water không đếm được nên không dùng many - dùng plenty of hoặc a lot of.
+        error_tag: many_uncountable
+      - answer: You should drinking a lot of water.
+        feedback_vi: Sau should là động từ nguyên mẫu drink, không thêm -ing.
+        error_tag: should_ing
+    explanation:
+      vi: Should + động từ nguyên mẫu drink. "Nhiều nước" là plenty of / a lot of water, vì water không đếm được.
+    display_answer: You should drink plenty of water.
+
+  - key: en:exercise:you-should-rest-translate-yoga
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:do-yoga
+    prompt:
+      source_text: Cô ấy tập yoga hai lần một tuần.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - She does yoga twice a week.
+        - She does yoga two times a week.
+        - Twice a week she does yoga.
+        - She practises yoga twice a week.
+        - She practices yoga twice a week.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: She plays yoga twice a week.
+        feedback_vi: Yoga đi với do, không đi với play.
+        error_tag: sport_collocation
+      - answer: She do yoga twice a week.
+        feedback_vi: She là ngôi thứ ba số ít nên do thành does.
+        error_tag: third_person_s
+      - answer: She goes yoga twice a week.
+        feedback_vi: Go chỉ đi với môn đuôi -ing (go swimming). Yoga đi với do.
+        error_tag: sport_collocation
+    explanation:
+      vi: Yoga là môn tập cá nhân nên dùng do; she đi với does. Hai lần một tuần là twice a week.
+    display_answer: She does yoga twice a week.
+
+  # ---------------- application ----------------
+  - key: en:exercise:you-should-rest-translate-junk-food
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:junk-food
+    prompt:
+      source_text: You shouldn't eat so much junk food.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bạn không nên ăn nhiều đồ ăn vặt như vậy.
+        - Bạn không nên ăn nhiều đồ ăn vặt như thế.
+        - Bạn không nên ăn nhiều đồ ăn vặt thế.
+        - Bạn không nên ăn nhiều đồ ăn nhanh như vậy.
+        - Bạn không nên ăn nhiều đồ ăn nhanh như thế.
+        - Bạn không nên ăn nhiều đồ ăn vặt.
+        - Bạn không nên ăn nhiều đồ ăn nhanh.
+        - Bạn không nên ăn quá nhiều đồ ăn vặt.
+        - Bạn không nên ăn quá nhiều đồ ăn nhanh.
+        - Bạn không nên ăn nhiều đồ ăn vặt đến thế.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Shouldn't là "không nên"; so much là "nhiều như vậy"; junk food là đồ ăn vặt, đồ ăn nhanh không tốt cho sức khoẻ.
+    display_answer: Bạn không nên ăn nhiều đồ ăn vặt như vậy.
+
+  - key: en:exercise:you-should-rest-mcq-advice
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:should-shouldnt
+    prompt:
+      stem: "Bạn của bạn nói: \"I'm always tired and I can't sleep at night. What should I do?\" Lời khuyên nào đúng ngữ pháp và hợp lý?"
+      stem_lang: vi
+      options:
+        - { id: l2f, text: "You shouldn't drink coffee in the evening.", lang: en }
+        - { id: c5z, text: "You should to go to bed early.", lang: en }
+        - { id: y7h, text: "You should drinking more coffee.", lang: en }
+        - { id: o1w, text: "You don't should stay up late.", lang: en }
+    answer:
+      correct_option_id: l2f
+    explanation:
+      vi: Shouldn't + động từ nguyên mẫu, và bỏ cà phê buổi tối là lời khuyên hợp lý. Các câu còn lại sai vì có to sau should, dùng -ing, hoặc dùng don't trước should.
+    display_answer: "You shouldn't drink coffee in the evening."
+
+  - key: en:exercise:you-should-rest-translate-gym
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:go-to-the-gym
+    prompt:
+      source_text: Bao lâu bạn đi tập gym một lần?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - How often do you go to the gym?
+        - How often do you go to the gym each week?
+        - How often do you work out at the gym?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: How often you go to the gym?
+        feedback_vi: Câu hỏi với động từ thường cần do - How often do you go…?
+        error_tag: missing_do
+      - answer: How often do you go gym?
+        feedback_vi: Gym là nơi chốn - go to the gym.
+        error_tag: go_to_place
+      - answer: How long do you go to the gym?
+        feedback_vi: How long hỏi thời gian kéo dài. "Bao lâu một lần" là How often.
+        error_tag: how_often_how_long
+    explanation:
+      vi: "\"Bao lâu một lần\" là How often, theo sau là do you + động từ nguyên mẫu. Gym là nơi chốn nên nói go to the gym."
+    display_answer: How often do you go to the gym?
+
+  - key: en:exercise:you-should-rest-translate-should-see
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:should-shouldnt
+    prompt:
+      source_text: Anh ấy bị đau lưng. Anh ấy nên đi khám bác sĩ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - His back hurts. He should see a doctor.
+        - He has a backache. He should see a doctor.
+        - He's got a backache. He should see a doctor.
+        - He has got a backache. He should see a doctor.
+        - He has backache. He should see a doctor.
+        - He has back pain. He should see a doctor.
+        - His back hurts. He should go to the doctor.
+        - He has a backache. He should go to the doctor.
+        - He's got a backache. He should go to the doctor.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: His back is pain. He should see a doctor.
+        feedback_vi: Pain là danh từ, không đứng sau is. Nói His back hurts.
+        error_tag: pain_as_adjective
+      - answer: His back hurts. He should to see a doctor.
+        feedback_vi: Should không đi với to.
+        error_tag: should_to
+      - answer: His back hurts. He shoulds see a doctor.
+        feedback_vi: Should không thêm -s với he.
+        error_tag: should_s
+    explanation:
+      vi: Chỗ đau dùng bộ phận + hurts (hoặc has a backache). Lời khuyên dùng should + động từ nguyên mẫu - should see a doctor.
+    display_answer: His back hurts. He should see a doctor.

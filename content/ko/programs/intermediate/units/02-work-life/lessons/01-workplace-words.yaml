@@ -1,0 +1,408 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:workplace-words
+order_index: 1
+level: topik4
+title:
+  vi: Từ vựng công sở, -게 되다 và -(으)ㄴ 지
+objectives:
+  - vi: Dùng đúng 11 từ công sở thường gặp - 회의, 보고서, 출장, 야근, 회식, 연봉, 상사, 동료, 부서, 마감, 결재.
+  - vi: Nói về thay đổi do hoàn cảnh hay công ty quyết định bằng V-게 되다 (출장을 가게 됐어요).
+  - vi: Nói mình đã làm việc gì được bao lâu bằng V-(으)ㄴ 지 + thời gian + 되다.
+estimated_minutes: 18
+skills: [vocabulary, grammar, speaking]
+prerequisites: [ko:lesson:reasons-conditions-review]
+items:
+  - item: ko:item:hoeui
+    role: reuse
+  - item: ko:item:bogoseo
+  - item: ko:item:chuljang
+  - item: ko:item:yageun
+  - item: ko:item:hoesik
+  - item: ko:item:yeonbong
+  - item: ko:item:sangsa
+  - item: ko:item:dongnyo
+  - item: ko:item:buseo
+  - item: ko:item:magam
+    role: reuse
+  - item: ko:item:gyeoljae
+  - item: ko:item:gram-ge-doeda
+  - item: ko:item:gram-eun-ji
+  - item: ko:item:place-hoesa
+    role: reuse
+  - item: ko:item:hoesawon
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được về công việc của mình ở công ty Hàn - phòng ban, đồng nghiệp, họp hành, công tác, làm thêm - và nói được mình đã làm ở đó bao lâu.
+  - type: explain
+    text:
+      vi: Phần lớn từ công sở là từ Hán Hàn nên khá gần tiếng Việt - 회의 (hội nghị → cuộc họp), 출장 (xuất trương → đi công tác), 동료 (đồng liêu → đồng nghiệp), 결재 (quyết tài → phê duyệt). Nhớ âm Hán Việt giúp bạn đoán nghĩa nhanh hơn.
+  - type: explain
+    text:
+      vi: V-게 되다 nói một việc "rồi thì xảy ra" do hoàn cảnh hay người khác quyết định, không phải do mình chủ động chọn. Tiếng Việt thường diễn đạt bằng "được/bị/phải" - 서울로 출장을 가게 됐어요 (tôi được cử đi công tác Seoul).
+  - type: explain
+    text:
+      vi: 'Để nói "đã ... được bao lâu", dùng V-(으)ㄴ 지 + thời gian + 되다/넘다 - 입사한 지 3년이 됐어요. Gốc có patchim + 은 지 (먹은 지), không có patchim + ㄴ 지 (일한 지).'
+  - type: deep_explain
+    text:
+      vi: -게 되다 còn giúp câu nghe khiêm tốn, nên người Hàn hay dùng khi báo tin tốt về mình - 승진하게 됐습니다 (tôi được thăng chức) nghe nhã nhặn hơn 승진했습니다. Với -(으)ㄴ 지, vế sau chỉ dùng các động từ về thời gian trôi qua như 되다, 넘다, 지나다; muốn nói "lâu rồi không..." thì dùng -(으)ㄴ 지 오래됐어요.
+  - type: example
+    target: 다음 달부터 베트남 지사에서 일하게 됐어요.
+    target_lang: ko
+    translation:
+      vi: Từ tháng sau tôi sẽ chuyển sang làm ở chi nhánh Việt Nam.
+    note:
+      vi: Công ty quyết định, không phải tự bạn chọn - nên dùng -게 됐어요.
+  - type: example
+    target: 영업부에서 일한 지 2년이 넘었어요.
+    target_lang: ko
+    translation:
+      vi: Tôi làm ở phòng kinh doanh đã hơn 2 năm.
+    note:
+      vi: 넘다 nghĩa là "vượt quá" - hơn 2 năm.
+  - type: example
+    target: 마감 때문에 이번 주는 매일 야근해요.
+    target_lang: ko
+    translation:
+      vi: Vì sắp đến hạn chót nên tuần này ngày nào tôi cũng làm đến tối.
+    note:
+      vi: N 때문에 - vì N.
+  - type: example
+    target: 보고서를 써서 상사에게 결재를 받았어요.
+    target_lang: ko
+    translation:
+      vi: Tôi viết báo cáo rồi xin sếp duyệt.
+    note:
+      vi: 결재를 받다 - được (sếp) duyệt.
+  - type: common_mistake
+    wrong: 팀장님께 결제를 받았어요.
+    right: 팀장님께 결재를 받았어요.
+    target_lang: ko
+    note:
+      vi: 결재 (phê duyệt) và 결제 (thanh toán) đọc gần giống nhau. Văn bản được sếp duyệt là 결재; trả tiền mới là 결제.
+  - type: common_mistake
+    wrong: 다음 주에 출장이 됐어요.
+    right: 다음 주에 출장을 가게 됐어요.
+    target_lang: ko
+    note:
+      vi: Người Việt hay dịch "được đi công tác" bằng cách gắn 되다 thẳng vào danh từ. -게 되다 phải gắn sau động từ - 가게 됐어요.
+  - type: common_mistake
+    wrong: 이 회사에 3년 동안 입사했어요.
+    right: 이 회사에 입사한 지 3년이 됐어요.
+    target_lang: ko
+    note:
+      vi: 입사하다 (vào công ty) chỉ xảy ra một lần, không kéo dài 3 năm được. "Vào công ty được 3 năm" phải dùng -(으)ㄴ 지 3년이 됐어요.
+  - type: summary
+    points:
+      - vi: 회의 họp · 보고서 báo cáo · 출장 công tác · 야근 làm muộn · 회식 liên hoan · 연봉 lương năm.
+      - vi: 상사 cấp trên · 동료 đồng nghiệp · 부서 phòng ban · 마감 hạn chót · 결재 phê duyệt (khác 결제 thanh toán).
+      - vi: V-게 되다 - việc xảy ra do hoàn cảnh hay quyết định của người khác (가게 됐어요).
+      - vi: V-(으)ㄴ 지 + thời gian + 되다/넘다 - đã ... được bao lâu (일한 지 2년이 됐어요).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:work-words-mcq-gyeoljae
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gyeoljae
+    prompt:
+      stem: 부장님께 결재를 받았어요. Câu này nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: r7m, text: Tôi đã được trưởng phòng duyệt., lang: vi }
+        - { id: k2x, text: Tôi đã thanh toán cho trưởng phòng., lang: vi }
+        - { id: w9d, text: Tôi đã nhận lương từ trưởng phòng., lang: vi }
+        - { id: e4p, text: Tôi đã họp với trưởng phòng., lang: vi }
+    answer:
+      correct_option_id: r7m
+    explanation:
+      vi: 결재를 받다 là được cấp trên phê duyệt. "Thanh toán" là 결제 - đọc gần giống nhưng viết khác; họp là 회의.
+    display_answer: Tôi đã được trưởng phòng duyệt.
+
+  - key: ko:exercise:work-words-listen-yageun
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:yageun
+    prompt:
+      audio_asset_id: null
+      fallback_text: 요즘 마감 때문에 매일 야근해요.
+      options:
+        - { id: h3s, text: Dạo này vì hạn chót nên ngày nào tôi cũng làm đến tối., lang: vi }
+        - { id: z8b, text: Dạo này vì hạn chót nên ngày nào tôi cũng đi công tác., lang: vi }
+        - { id: q5n, text: Dạo này vì hạn chót nên ngày nào tôi cũng đi liên hoan., lang: vi }
+        - { id: c1v, text: Dạo này vì hạn chót nên ngày nào tôi cũng họp., lang: vi }
+    answer:
+      correct_option_id: h3s
+    explanation:
+      vi: 야근하다 là ở lại làm việc buổi tối. Đi công tác là 출장을 가다, liên hoan là 회식, họp là 회의하다.
+    display_answer: Dạo này vì hạn chót nên ngày nào tôi cũng làm đến tối.
+
+  - key: ko:exercise:work-words-mcq-hoesik
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:hoesik
+    prompt:
+      stem: "Tối thứ Sáu, cả phòng đi ăn uống cùng nhau sau giờ làm, công ty trả tiền. Đó là gì?"
+      stem_lang: vi
+      options:
+        - { id: t6a, text: 회식, lang: ko }
+        - { id: m3j, text: 회의, lang: ko }
+        - { id: y8u, text: 출장, lang: ko }
+        - { id: b5f, text: 연봉, lang: ko }
+    answer:
+      correct_option_id: t6a
+    explanation:
+      vi: 회식 là buổi ăn uống tập thể của công ty. 회의 là cuộc họp, 출장 là đi công tác, 연봉 là lương năm.
+    display_answer: 회식
+
+  - key: ko:exercise:work-words-fill-magam
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:magam
+    prompt:
+      template: "보고서 {{b1}}이 내일이라서 오늘 야근해요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Hạn nộp báo cáo là ngày mai nên hôm nay tôi làm đến tối."
+        - "Gợi ý: từ hai âm tiết nghĩa là \"hạn chót\", bắt đầu bằng 마."
+    answer:
+      blanks:
+        b1: [마감]
+    known_wrong:
+      - answer: 회의
+        feedback_vi: 회의 là cuộc họp. Ở đây cần "hạn chót" - 마감.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 마감 là hạn chót; 마감이 내일이다 - hạn là ngày mai. 마감 có patchim ㅁ nên đi với 이.
+    display_answer: 보고서 마감이 내일이라서 오늘 야근해요.
+
+  - key: ko:exercise:work-words-wb-ge-doeda
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-ge-doeda
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tuần sau tôi được cử đi công tác.\""
+      tokens:
+        - { id: n4, text: 됐어요 }
+        - { id: n2, text: 출장을 }
+        - { id: n5, text: 갔게 }
+        - { id: n3, text: 가게 }
+        - { id: n1, text: 다음 주에 }
+    answer:
+      orders:
+        - [n1, n2, n3, n4]
+        - [n2, n1, n3, n4]
+    explanation:
+      vi: -게 되다 gắn sau gốc động từ 가 - 가게 됐어요; không chia quá khứ trước -게 (갔게 sai). Trạng từ thời gian 다음 주에 có thể đứng trước hoặc sau 출장을.
+    display_answer: 다음 주에 출장을 가게 됐어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:work-words-fill-eun-ji
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eun-ji
+    prompt:
+      template: "이 부서에서 일{{b1}} 지 1년이 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [한]
+        b2: [됐어요, 되었어요, 넘었어요]
+    known_wrong:
+      - answer: 하는
+        feedback_vi: Tính thời gian từ lúc bắt đầu dùng dạng -(으)ㄴ 지 - 일한 지, không dùng 일하는 지.
+        error_tag: eun_ji_form
+      - answer: 했어요
+        feedback_vi: Vế sau cần động từ chỉ thời gian trôi qua - 1년이 됐어요 (hoặc 넘었어요).
+        error_tag: eun_ji_doeda
+    explanation:
+      vi: 일하다 không có patchim nên thành 일한 지. Vế sau là thời gian + 이/가 + 되다/넘다 - 1년이 됐어요.
+    display_answer: 이 부서에서 일한 지 1년이 됐어요.
+
+  - key: ko:exercise:work-words-translate-five-years
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eun-ji
+    prompt:
+      source_text: Tôi làm ở công ty này được 5 năm rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이 회사에서 일한 지 5년이 됐어요.
+        - 이 회사에서 일한 지 5년 됐어요.
+        - 이 회사에서 일한 지 5년이 되었어요.
+        - 저는 이 회사에서 일한 지 5년이 됐어요.
+        - 저는 이 회사에서 일한 지 5년 됐어요.
+        - 저는 이 회사에서 일한 지 5년이 되었어요.
+        - 제가 이 회사에서 일한 지 5년이 됐어요.
+        - 이 회사에서 일한 지 오 년이 됐어요.
+        - 이 회사에서 일한 지 5년이 됐습니다.
+        - 저는 이 회사에서 일한 지 5년이 됐습니다.
+    known_wrong:
+      - answer: 이 회사에서 일하는 지 5년이 됐어요.
+        feedback_vi: Dùng dạng -(으)ㄴ 지 - 일한 지, không phải 일하는 지.
+        error_tag: eun_ji_form
+      - answer: 이 회사에 5년 동안 입사했어요.
+        feedback_vi: 입사하다 chỉ xảy ra một lần. "Được 5 năm" phải dùng -(으)ㄴ 지 5년이 됐어요.
+        error_tag: eun_ji_literal
+      - answer: 이 회사에서 일한 지 5년이에요 됐어요.
+        feedback_vi: Chỉ cần một vị ngữ - 5년이 됐어요.
+        error_tag: double_predicate
+    explanation:
+      vi: Mẫu câu là V-(으)ㄴ 지 + thời gian + 되다. 일하다 → 일한 지; 5년 có patchim nên dùng 이 - 5년이 됐어요.
+    display_answer: 이 회사에서 일한 지 5년이 됐어요.
+
+  - key: ko:exercise:work-words-translate-busan
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-ge-doeda
+    prompt:
+      source_text: Tôi được cử đi công tác Busan.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 부산으로 출장을 가게 됐어요.
+        - 부산에 출장을 가게 됐어요.
+        - 부산으로 출장 가게 됐어요.
+        - 부산에 출장 가게 됐어요.
+        - 부산으로 출장을 가게 되었어요.
+        - 부산에 출장을 가게 되었어요.
+        - 저는 부산으로 출장을 가게 됐어요.
+        - 저는 부산에 출장을 가게 됐어요.
+        - 제가 부산으로 출장을 가게 됐어요.
+        - 부산으로 출장을 가게 됐습니다.
+    known_wrong:
+      - answer: 부산으로 출장이 됐어요.
+        feedback_vi: -게 되다 phải gắn sau động từ - 출장을 가게 됐어요.
+        error_tag: ge_doeda_noun
+      - answer: 부산으로 출장을 갔게 됐어요.
+        feedback_vi: Không chia quá khứ trước -게 - dùng 가게 됐어요.
+        error_tag: ge_doeda_tense
+      - answer: 부산으로 출장을 갔어요.
+        feedback_vi: Câu này chỉ là "tôi đã đi công tác". "Được cử đi" (do công ty quyết định) cần -게 됐어요.
+        error_tag: ge_doeda_missing
+    explanation:
+      vi: Việc đi công tác do công ty quyết định nên dùng -게 되다 - 가게 됐어요. Nơi đến dùng 으로 hoặc 에 - 부산으로/부산에.
+    display_answer: 부산으로 출장을 가게 됐어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:work-words-mcq-transfer
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-ge-doeda
+    prompt:
+      stem: Công ty vừa quyết định chuyển bạn sang phòng nhân sự (인사부) từ tháng sau. Bạn báo tin cho đồng nghiệp. Câu nào đúng nhất?
+      stem_lang: vi
+      options:
+        - { id: p8k, text: 다음 달부터 인사부에서 일하게 됐어요., lang: ko }
+        - { id: d2r, text: 다음 달부터 인사부에서 일했어요., lang: ko }
+        - { id: u6w, text: 다음 달부터 인사부에서 일한 지 됐어요., lang: ko }
+        - { id: s9h, text: 다음 달부터 인사부가 됐어요., lang: ko }
+    answer:
+      correct_option_id: p8k
+    explanation:
+      vi: Việc thay đổi do công ty quyết định nên dùng -게 됐어요. 일했어요 là quá khứ, không hợp với "từ tháng sau"; -(으)ㄴ 지 cần khoảng thời gian; 인사부가 됐어요 nghĩa là "trở thành phòng nhân sự".
+    display_answer: 다음 달부터 인사부에서 일하게 됐어요.
+
+  - key: ko:exercise:work-words-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:dongnyo
+    prompt:
+      source_text: 마감 때문에 동료들과 같이 야근했어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì hạn chót nên tôi đã làm thêm buổi tối cùng các đồng nghiệp.
+        - Vì hạn chót nên tôi làm thêm buổi tối cùng đồng nghiệp.
+        - Vì hạn chót nên tôi đã ở lại làm muộn cùng các đồng nghiệp.
+        - Vì hạn chót nên tôi ở lại làm muộn với đồng nghiệp.
+        - Vì sắp đến hạn chót nên tôi đã làm thêm giờ cùng các đồng nghiệp.
+        - Vì hạn chót nên tôi đã làm thêm giờ với các đồng nghiệp.
+        - Do hạn chót nên tôi đã làm thêm buổi tối cùng các đồng nghiệp.
+        - Vì deadline nên tôi đã làm thêm buổi tối cùng các đồng nghiệp.
+        - Vì deadline nên tôi đã ở lại làm muộn với đồng nghiệp.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì hạn chót nên tôi đã đi liên hoan cùng các đồng nghiệp.
+        feedback_vi: Liên hoan là 회식. 야근하다 là ở lại làm việc buổi tối.
+        error_tag: vocab_meaning
+      - answer: Vì hạn chót nên tôi đã làm thêm buổi tối cùng các bạn.
+        feedback_vi: 동료 là đồng nghiệp, không phải bạn bè (친구).
+        error_tag: vocab_meaning
+    explanation:
+      vi: 마감 때문에 - vì hạn chót; 동료들과 같이 - cùng các đồng nghiệp; 야근했어요 - đã ở lại làm buổi tối.
+    display_answer: Vì hạn chót nên tôi đã làm thêm buổi tối cùng các đồng nghiệp.
+
+  - key: ko:exercise:work-words-wb-one-year
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eun-ji
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi vào phòng này được 1 năm rồi.\""
+      tokens:
+        - { id: v3, text: 1년이 }
+        - { id: v5, text: 오는 지 }
+        - { id: v4, text: 됐어요 }
+        - { id: v1, text: 이 부서에 }
+        - { id: v2, text: 온 지 }
+    answer:
+      orders:
+        - [v1, v2, v3, v4]
+    explanation:
+      vi: 오다 không có patchim nên thành 온 지 (không dùng 오는 지). Mẫu câu - nơi chốn + V-(으)ㄴ 지 + thời gian + 됐어요.
+    display_answer: 이 부서에 온 지 1년이 됐어요.
+
+  - key: ko:exercise:work-words-mcq-yeonbong
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:yeonbong
+    prompt:
+      stem: Bạn bè hỏi vì sao bạn chuyển việc. Bạn muốn nói "Vì lương năm cao hơn". Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: f4g, text: 연봉이 더 높아서요., lang: ko }
+        - { id: a7z, text: 결재가 더 높아서요., lang: ko }
+        - { id: o2c, text: 부서가 더 높아서요., lang: ko }
+        - { id: g5e, text: 마감이 더 높아서요., lang: ko }
+    answer:
+      correct_option_id: f4g
+    explanation:
+      vi: 연봉 là lương năm, đi với 높다 (cao) hay 오르다 (tăng). 결재 là phê duyệt, 부서 là phòng ban, 마감 là hạn chót - không "cao" được.
+    display_answer: 연봉이 더 높아서요.

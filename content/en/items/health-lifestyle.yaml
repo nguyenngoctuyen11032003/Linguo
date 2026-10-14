@@ -1,0 +1,1074 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Sức khoẻ & lối sống" (A2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Đau ở đâu? ----------------
+  - key: en:item:head
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: head
+      ipa: /hed/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đầu
+      examples:
+        - target: My head hurts.
+          translation:
+            vi: Tôi đau đầu.
+      pronunciation_note:
+        vi: Chữ ea ở đây đọc /e/ ngắn, giống "hét" nhưng bật nhẹ âm /d/ cuối, không đọc thành "hít".
+
+  - key: en:item:back
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: back
+      ipa: /bæk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: lưng
+      examples:
+        - target: My back hurts after work.
+          translation:
+            vi: Tan làm là tôi đau lưng.
+      pronunciation_note:
+        vi: Âm /æ/ mở miệng rộng, giữa "a" và "e". Âm /k/ cuối phải nghe được.
+      confusion:
+        vi: Back còn là trạng từ "trở lại" (come back). Khi nói về cơ thể, nó luôn đi với my/your/his… - my back.
+
+  - key: en:item:stomach
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: stomach
+      ipa: /ˈstʌmək/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bụng, dạ dày
+      examples:
+        - target: Her stomach hurts. She can't eat.
+          translation:
+            vi: Cô ấy đau bụng. Cô ấy không ăn được.
+      pronunciation_note:
+        vi: Đọc "XTÂM-mợk", chữ ch ở cuối đọc /k/, không đọc "tr" hay "ch".
+
+  - key: en:item:throat
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: throat
+      ipa: UK /θrəʊt/ · US /θroʊt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: họng, cổ họng
+      examples:
+        - target: My throat is dry.
+          translation:
+            vi: Cổ họng tôi khô.
+      pronunciation_note:
+        vi: Âm /θ/ đặt đầu lưỡi giữa hai hàm răng rồi thổi hơi, không đọc thành "t" hay "th" tiếng Việt.
+      confusion:
+        vi: Throat là cổ họng bên trong; cái cổ bên ngoài là neck.
+
+  - key: en:item:tooth
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: tooth
+      ipa: /tuːθ/
+      pos: danh từ (số nhiều teeth /tiːθ/)
+    back:
+      meaning:
+        vi: răng
+      examples:
+        - target: I brush my teeth twice a day.
+          translation:
+            vi: Tôi đánh răng hai lần một ngày.
+      confusion:
+        vi: Số nhiều của tooth là teeth (đổi oo thành ee), không phải "tooths".
+
+  - key: en:item:leg
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: leg
+      ipa: /leɡ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chân (cả cẳng chân và đùi)
+      examples:
+        - target: My legs hurt after the long walk.
+          translation:
+            vi: Đi bộ xa xong tôi mỏi chân.
+      confusion:
+        vi: Leg là cả cái chân; bàn chân là foot (số nhiều feet). Tiếng Việt gọi chung là "chân" nên dễ lẫn.
+
+  - key: en:item:headache
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: headache
+      ipa: /ˈhedeɪk/
+      pos: danh từ đếm được
+    back:
+      meaning:
+        vi: chứng đau đầu
+      examples:
+        - target: I've got a headache.
+          translation:
+            vi: Tôi bị đau đầu.
+      pronunciation_note:
+        vi: Ache đọc /eɪk/ ("ây-k"), chữ ch đọc /k/. Nhấn âm đầu "HED-ây-k".
+      confusion:
+        vi: Headache là danh từ, nên nói I have a headache, không nói "I am headache" hay "My head is headache".
+
+  - key: en:item:stomachache
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: stomachache
+      ipa: /ˈstʌməkeɪk/
+      pos: danh từ đếm được
+    back:
+      meaning:
+        vi: chứng đau bụng
+      examples:
+        - target: He's got a stomachache. He shouldn't eat spicy food.
+          translation:
+            vi: Anh ấy bị đau bụng. Anh ấy không nên ăn đồ cay.
+      confusion:
+        vi: Có thể viết stomachache hoặc stomach ache. Tương tự có toothache (đau răng), backache (đau lưng).
+
+  - key: en:item:sore-throat
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: a sore throat
+      ipa: UK /ə ˌsɔː ˈθrəʊt/ · US /ə ˌsɔːr ˈθroʊt/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: (chứng) đau họng, viêm họng
+      examples:
+        - target: She's got a sore throat, so she can't talk much.
+          translation:
+            vi: Cô ấy bị đau họng nên không nói nhiều được.
+      confusion:
+        vi: Không có "throatache". Đau họng luôn là a sore throat, nhớ có a.
+
+  - key: en:item:have-a-cold
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: have (got) a cold
+      ipa: UK /hæv ə ˈkəʊld/ · US /hæv ə ˈkoʊld/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: bị cảm (lạnh)
+      examples:
+        - target: I've got a cold, so I'm staying at home today.
+          translation:
+            vi: Tôi bị cảm nên hôm nay ở nhà.
+      confusion:
+        vi: I'm cold là "tôi thấy lạnh"; I have a cold mới là "tôi bị cảm". Chữ a làm thay đổi hẳn nghĩa.
+
+  - key: en:item:fever
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: fever
+      ipa: UK /ˈfiːvə/ · US /ˈfiːvɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sốt
+      examples:
+        - target: The baby has got a fever.
+          translation:
+            vi: Em bé bị sốt.
+      pronunciation_note:
+        vi: Nhấn âm đầu "FI-vờ"; /v/ phải rung môi dưới, không đọc thành "phi-phờ".
+      confusion:
+        vi: Người Anh hay nói have a temperature với cùng nghĩa "bị sốt". Không nói "I am fever".
+
+  - key: en:item:cough
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: cough
+      ipa: UK /kɒf/ · US /kɔːf/
+      pos: danh từ, động từ
+    back:
+      meaning:
+        vi: (cơn) ho; ho
+      examples:
+        - target: He's got a bad cough. He coughs all night.
+          translation:
+            vi: Anh ấy bị ho nặng. Anh ấy ho cả đêm.
+      pronunciation_note:
+        vi: Chữ gh ở cuối đọc /f/ - "kóp-ph", không đọc "cao".
+
+  - key: en:item:body-part-hurts
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: my + bộ phận + hurts / hurt
+      ipa: UK /hɜːts/ · US /hɝːts/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: "Mẫu nói đau ở đâu: My back hurts. (Tôi đau lưng.) My feet hurt. (Tôi đau chân.) Hurt là động từ nên có -s khi chủ ngữ là một bộ phận số ít."
+      examples:
+        - target: My back hurts.
+          translation:
+            vi: Tôi đau lưng.
+        - target: My eyes hurt.
+          translation:
+            vi: Tôi đau mắt.
+      pronunciation_note:
+        vi: Hurt đọc /hɜːt/ như "hớt" kéo dài, đừng đọc thành "hớt-tờ".
+      confusion:
+        vi: Đừng dịch "đầu tôi bị đau" thành "My head is pain". Pain là danh từ; dùng động từ hurt - My head hurts.
+
+  - key: en:item:whats-the-matter
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: What's the matter?
+      ipa: UK /ˌwɒts ðə ˈmætə/ · US /ˌwʌts ðə ˈmæt̬ɚ/
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Bạn bị sao vậy? / Có chuyện gì thế?
+      examples:
+        - target: "What's the matter? - I've got a stomachache."
+          translation:
+            vi: "Bạn bị sao thế? - Tôi bị đau bụng."
+      confusion:
+        vi: Có thể hỏi What's wrong? với cùng nghĩa. Muốn hỏi người khác thì thêm with - What's the matter with him?
+
+  - key: en:item:have-an-illness
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: have / have got + a + bệnh
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: "Nói mình bị bệnh gì: I have a headache / I've got a headache. He has a cold / He's got a cold. Bệnh là danh từ, nên dùng have (got) + a, không dùng be."
+      examples:
+        - target: I've got a headache and a sore throat.
+          translation:
+            vi: Tôi bị đau đầu và đau họng.
+        - target: Does she have a fever?
+          translation:
+            vi: Cô ấy có bị sốt không?
+      confusion:
+        vi: "Tiếng Việt nói \"tôi bị đau đầu\", nhưng tiếng Anh không có chữ \"bị\". \"I am headache\" sai - phải là I have a headache."
+
+  # ---------------- Bài 2: Ở phòng khám và hiệu thuốc ----------------
+  - key: en:item:feel-sick
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: feel sick / not feel well
+      ipa: /fiːl sɪk/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: thấy buồn nôn / thấy không khoẻ
+      examples:
+        - target: I don't feel well. I think I'm ill.
+          translation:
+            vi: Tôi thấy không khoẻ. Chắc tôi ốm rồi.
+      confusion:
+        vi: Trong tiếng Anh-Anh, feel sick thường là buồn nôn; I'm sick / I'm ill là bị ốm. Không nói "I feel not well" - phải là I don't feel well.
+
+  - key: en:item:dizzy
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: dizzy
+      ipa: /ˈdɪzi/
+      pos: tính từ
+    back:
+      meaning:
+        vi: chóng mặt
+      examples:
+        - target: I feel dizzy when I stand up.
+          translation:
+            vi: Tôi thấy chóng mặt khi đứng dậy.
+      pronunciation_note:
+        vi: Chữ zz đọc /z/ rung, "Đí-zi", không đọc thành "đi-xi".
+      confusion:
+        vi: Dizzy là tính từ nên đi với feel/be - I feel dizzy, không nói "I have dizzy".
+
+  - key: en:item:how-long-have-you-had
+    type: phrase
+    level: a2
+    difficulty: 3
+    skill_tags: [speaking, listening]
+    front:
+      text: How long have you had it? - For two days.
+      ipa: /ˌhaʊ ˈlɒŋ həv ju ˈhæd ɪt/
+      pos: câu hỏi cố định
+    back:
+      meaning:
+        vi: Bạn bị (như vậy) bao lâu rồi? - Hai ngày rồi.
+      examples:
+        - target: "How long have you had this cough? - For a week."
+          translation:
+            vi: "Bạn bị ho thế này bao lâu rồi? - Một tuần rồi."
+      confusion:
+        vi: Ở bài này bạn chỉ cần học thuộc nguyên câu. Trả lời bằng For + khoảng thời gian (for three days) hoặc Since + mốc (since Monday).
+
+  - key: en:item:medicine
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: medicine
+      ipa: UK /ˈmedsən/ · US /ˈmedɪsən/
+      pos: danh từ không đếm được
+    back:
+      meaning:
+        vi: thuốc (chữa bệnh)
+      examples:
+        - target: Take this medicine after meals.
+          translation:
+            vi: Uống thuốc này sau bữa ăn.
+      pronunciation_note:
+        vi: Người Anh hay đọc gọn hai âm "MED-sần"; người Mỹ đọc ba âm "MED-đi-sần".
+      confusion:
+        vi: Uống thuốc là take medicine, không phải "drink medicine" (trừ thuốc nước có thể nói drink, nhưng take vẫn phổ biến hơn).
+
+  - key: en:item:tablet
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: tablet
+      ipa: /ˈtæblət/
+      pos: danh từ đếm được
+    back:
+      meaning:
+        vi: viên thuốc
+      examples:
+        - target: Take two tablets three times a day.
+          translation:
+            vi: Uống hai viên, ngày ba lần.
+      confusion:
+        vi: Tablet cũng là máy tính bảng; trong hiệu thuốc thì là viên thuốc. Pill có nghĩa gần giống.
+
+  - key: en:item:take-medicine
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: take (this medicine / these tablets)
+      ipa: /teɪk/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: uống (thuốc)
+      examples:
+        - target: Take these tablets with water.
+          translation:
+            vi: Uống những viên này với nước.
+      confusion:
+        vi: Với thuốc, tiếng Anh dùng take, không dùng drink hay eat. Lời dặn thường là câu mệnh lệnh bắt đầu bằng Take…
+
+  - key: en:item:once-twice-a-day
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: once / twice / three times a day
+      ipa: /wʌns · twaɪs · θriː taɪmz ə ˈdeɪ/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: một lần / hai lần / ba lần một ngày
+      examples:
+        - target: Take this twice a day.
+          translation:
+            vi: Uống cái này ngày hai lần.
+      pronunciation_note:
+        vi: Once đọc /wʌns/ "quăn-s", bắt đầu bằng âm /w/ dù viết chữ o.
+      confusion:
+        vi: Một lần và hai lần có từ riêng (once, twice); từ ba trở lên mới dùng times. Không nói "two times a day" trong lời dặn chuẩn, và không có chữ "in" - không nói "twice in a day".
+
+  - key: en:item:before-after-meals
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: before / after meals
+      ipa: UK /bɪˈfɔː · ˈɑːftə miːlz/ · US /bɪˈfɔːr · ˈæftɚ miːlz/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: trước / sau bữa ăn
+      examples:
+        - target: Take one tablet after meals.
+          translation:
+            vi: Uống một viên sau bữa ăn.
+      confusion:
+        vi: Meals ở số nhiều vì nói chung mọi bữa. Nói after meals, không cần the.
+
+  - key: en:item:prescription
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: prescription
+      ipa: /prɪˈskrɪpʃən/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đơn thuốc
+      examples:
+        - target: Here's your prescription. You can get the medicine at the pharmacy.
+          translation:
+            vi: Đây là đơn thuốc của bạn. Bạn có thể mua thuốc ở hiệu thuốc.
+      pronunciation_note:
+        vi: Nhấn âm giữa "pri-XKRÍP-sần"; cụm scr đọc liền, không chèn nguyên âm.
+
+  - key: en:item:get-well-soon
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: Get well soon! / I hope you feel better.
+      ipa: /ˌɡet wel ˈsuːn/
+      pos: câu chúc
+    back:
+      meaning:
+        vi: Chúc bạn mau khoẻ!
+      examples:
+        - target: "I've got a fever. - Oh no! Get well soon!"
+          translation:
+            vi: "Mình bị sốt rồi. - Ôi! Mau khoẻ nhé!"
+      confusion:
+        vi: Đây là câu cố định; đừng nói "Get good soon" hay "Healthy soon".
+
+  # ---------------- Bài 3: Lời khuyên và thói quen lành mạnh ----------------
+  - key: en:item:should-shouldnt
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: should / shouldn't + động từ nguyên mẫu
+      ipa: /ʃʊd · ˈʃʊdənt/
+      pos: động từ khuyết thiếu
+    back:
+      meaning:
+        vi: "nên / không nên - dùng để khuyên. Mọi chủ ngữ đều dùng should, sau đó là động từ nguyên mẫu không có to: You should rest. She shouldn't work late."
+      examples:
+        - target: You should see a doctor.
+          translation:
+            vi: Bạn nên đi khám bác sĩ.
+        - target: He shouldn't eat so much junk food.
+          translation:
+            vi: Anh ấy không nên ăn nhiều đồ ăn vặt như vậy.
+      pronunciation_note:
+        vi: Chữ l trong should câm - đọc /ʃʊd/ "shút". Trong câu, should thường đọc nhẹ /ʃəd/.
+      confusion:
+        vi: "Không có to sau should: \"You should to rest\" là sai. Không thêm -s với she/he: She should, không phải \"She shoulds\"."
+
+  - key: en:item:what-should-i-do
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: What should I do? / Should I…?
+      ipa: UK /ˌwɒt ʃəd aɪ ˈduː/ · US /ˌwʌt ʃəd aɪ ˈduː/
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Tôi nên làm gì? / Tôi có nên… không?
+      examples:
+        - target: "I can't sleep at night. What should I do?"
+          translation:
+            vi: Đêm nào tôi cũng không ngủ được. Tôi nên làm gì?
+        - target: "Should I take a day off? - Yes, you should."
+          translation:
+            vi: "Tôi có nên nghỉ một hôm không? - Có, bạn nên nghỉ."
+      confusion:
+        vi: Câu hỏi đảo should lên trước chủ ngữ - Should I…?, không dùng do - không nói "Do I should…?". Trả lời ngắn Yes, you should / No, you shouldn't.
+
+  - key: en:item:rest
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: rest
+      ipa: /rest/
+      pos: động từ, danh từ
+    back:
+      meaning:
+        vi: nghỉ ngơi; sự nghỉ ngơi
+      examples:
+        - target: You should stay at home and rest.
+          translation:
+            vi: Bạn nên ở nhà nghỉ ngơi.
+      pronunciation_note:
+        vi: Bật rõ cụm âm cuối /st/, đừng đọc thành "rét".
+      confusion:
+        vi: Rest là nghỉ để lại sức; relax là thư giãn cho thoải mái. Get some rest là nghỉ ngơi một chút.
+
+  - key: en:item:drink-plenty-of-water
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: drink plenty of water
+      ipa: UK /ˌdrɪŋk ˌplenti əv ˈwɔːtə/ · US /ˌdrɪŋk ˌplenti əv ˈwɑːt̬ɚ/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: uống nhiều nước
+      examples:
+        - target: When you have a fever, you should drink plenty of water.
+          translation:
+            vi: Khi bị sốt, bạn nên uống nhiều nước.
+      confusion:
+        vi: Plenty of đi được với cả danh từ không đếm được (water) và số nhiều (vegetables). Không nói "drink many water" - water không đếm được.
+
+  - key: en:item:stay-up-late
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: stay up late
+      ipa: /ˌsteɪ ʌp ˈleɪt/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: thức khuya
+      examples:
+        - target: You shouldn't stay up late before an exam.
+          translation:
+            vi: Bạn không nên thức khuya trước kỳ thi.
+      confusion:
+        vi: Stay up late là thức khuya (chưa đi ngủ); get up late là dậy muộn. Hai cụm này hay bị nhầm.
+
+  - key: en:item:healthy
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: healthy / unhealthy
+      ipa: /ˈhelθi · ʌnˈhelθi/
+      pos: tính từ
+    back:
+      meaning:
+        vi: khoẻ mạnh, tốt cho sức khoẻ / không tốt cho sức khoẻ
+      examples:
+        - target: Fruit is healthy, but too much sugar is unhealthy.
+          translation:
+            vi: Trái cây tốt cho sức khoẻ, nhưng quá nhiều đường thì không tốt.
+      pronunciation_note:
+        vi: Âm /lθ/ khó - đặt lưỡi chạm lợi cho /l/ rồi đưa ra giữa răng thổi hơi cho /θ/.
+      confusion:
+        vi: Healthy là tính từ; health là danh từ (sức khoẻ). Nói a healthy life, không nói "a health life".
+
+  - key: en:item:junk-food
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: junk food
+      ipa: /ˈdʒʌŋk fuːd/
+      pos: danh từ không đếm được
+    back:
+      meaning:
+        vi: đồ ăn vặt, đồ ăn nhanh không tốt cho sức khoẻ
+      examples:
+        - target: Teenagers often eat too much junk food.
+          translation:
+            vi: Thanh thiếu niên thường ăn quá nhiều đồ ăn vặt.
+      confusion:
+        vi: Junk food không đếm được - không nói "a junk food" hay "junk foods".
+
+  - key: en:item:do-play-go
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: do / play / go + môn thể thao
+      pos: kết hợp từ
+    back:
+      meaning:
+        vi: "Chơi thể thao dùng ba động từ khác nhau: play + môn có bóng/đối thủ (play football, play tennis); go + môn đuôi -ing (go swimming, go jogging); do + môn tập cá nhân, võ (do yoga, do karate, do exercise)."
+      examples:
+        - target: I play badminton on Mondays and do yoga on Fridays.
+          translation:
+            vi: Tôi chơi cầu lông vào thứ Hai và tập yoga vào thứ Sáu.
+        - target: Let's go swimming this weekend.
+          translation:
+            vi: Cuối tuần này mình đi bơi đi.
+      confusion:
+        vi: Tiếng Việt dùng "chơi", "tập", "đi" khá tự do, nên người Việt hay nói "play yoga" hay "go football". Hãy học cả cụm.
+
+  - key: en:item:do-yoga
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: do yoga
+      ipa: UK /ˌduː ˈjəʊɡə/ · US /ˌduː ˈjoʊɡə/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: tập yoga
+      examples:
+        - target: My mother does yoga every morning.
+          translation:
+            vi: Mẹ tôi tập yoga mỗi sáng.
+      pronunciation_note:
+        vi: Yoga đọc "DÂU-gờ" (UK) hoặc "DÔU-gờ" (US), không đọc "yô-ga".
+      confusion:
+        vi: Yoga không phải trò chơi có bóng nên dùng do, không dùng play.
+
+  - key: en:item:play-football
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: play football / tennis / badminton
+      ipa: /ˌpleɪ ˈfʊtbɔːl · ˈtenɪs · ˈbædmɪntən/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: chơi bóng đá / quần vợt / cầu lông
+      examples:
+        - target: They play football after school.
+          translation:
+            vi: Tan học bọn họ chơi bóng đá.
+      confusion:
+        vi: Không có the trước môn thể thao - play football, không phải "play the football". Người Mỹ gọi bóng đá là soccer.
+
+  - key: en:item:go-swimming
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: go swimming
+      ipa: UK /ˌɡəʊ ˈswɪmɪŋ/ · US /ˌɡoʊ ˈswɪmɪŋ/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi bơi
+      examples:
+        - target: We go swimming twice a week.
+          translation:
+            vi: Chúng tôi đi bơi hai lần một tuần.
+      confusion:
+        vi: Go + V-ing, không có to - go swimming, không nói "go to swimming" hay "go to swim".
+
+  - key: en:item:go-jogging
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: go jogging / go running
+      ipa: UK /ˌɡəʊ ˈdʒɒɡɪŋ/ · US /ˌɡoʊ ˈdʒɑːɡɪŋ/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi chạy bộ
+      examples:
+        - target: He goes jogging in the park every morning.
+          translation:
+            vi: Sáng nào anh ấy cũng chạy bộ trong công viên.
+      confusion:
+        vi: Như go swimming - go + V-ing, không có to. Với he/she thì goes jogging.
+
+  - key: en:item:go-to-the-gym
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: go to the gym
+      ipa: UK /ˌɡəʊ tə ðə ˈdʒɪm/ · US /ˌɡoʊ tə ðə ˈdʒɪm/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi tập gym, đến phòng tập
+      examples:
+        - target: She goes to the gym after work.
+          translation:
+            vi: Cô ấy đi tập gym sau giờ làm.
+      pronunciation_note:
+        vi: Gym đọc /dʒɪm/ "dzim", chữ g đọc như j.
+      confusion:
+        vi: Gym là nơi chốn nên dùng go to the gym (có to the), khác với go swimming (không có to).
+
+  # ---------------- Bài 4: Trạng từ cách thức, too và enough ----------------
+  - key: en:item:adverbs-of-manner
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: tính từ + -ly → trạng từ cách thức
+      pos: quy tắc ngữ pháp
+    back:
+      meaning:
+        vi: "Trạng từ cách thức nói một việc được làm như thế nào: slow → slowly, careful → carefully, easy → easily. Nó thường đứng sau động từ hoặc sau tân ngữ: She drives carefully. He eats his food slowly."
+      examples:
+        - target: Please speak slowly.
+          translation:
+            vi: Làm ơn nói chậm thôi.
+      confusion:
+        vi: "Tính từ tả người/vật (a careful driver), trạng từ tả hành động (He drives carefully). Một số trạng từ bất quy tắc: good → well, fast → fast, hard → hard."
+
+  - key: en:item:slowly
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: slowly
+      ipa: UK /ˈsləʊli/ · US /ˈsloʊli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: (một cách) chậm rãi
+      examples:
+        - target: Eat slowly. It's good for your stomach.
+          translation:
+            vi: Ăn chậm thôi. Như thế tốt cho dạ dày.
+      confusion:
+        vi: Slow là tính từ (a slow walk), slowly là trạng từ (walk slowly). Sau động từ dùng slowly.
+
+  - key: en:item:quickly
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: quickly
+      ipa: /ˈkwɪkli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: (một cách) nhanh
+      examples:
+        - target: He always eats his lunch too quickly.
+          translation:
+            vi: Anh ấy lúc nào cũng ăn trưa quá nhanh.
+      confusion:
+        vi: Fast vừa là tính từ vừa là trạng từ (run fast), không có "fastly". Quickly và fast có nghĩa gần nhau.
+
+  - key: en:item:carefully
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: carefully
+      ipa: UK /ˈkeəfəli/ · US /ˈkerfəli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: (một cách) cẩn thận
+      examples:
+        - target: Read the instructions on the box carefully.
+          translation:
+            vi: Đọc kỹ hướng dẫn trên hộp thuốc.
+      pronunciation_note:
+        vi: Đọc ba âm "KE-phờ-li", âm giữa rất nhẹ.
+      confusion:
+        vi: Careful + ly = carefully (giữ cả hai chữ l). Đừng viết "carefuly".
+
+  - key: en:item:well-adverb
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: well
+      ipa: /wel/
+      pos: trạng từ (của good)
+    back:
+      meaning:
+        vi: giỏi, tốt (cách làm việc gì)
+      examples:
+        - target: She plays tennis very well.
+          translation:
+            vi: Cô ấy chơi quần vợt rất giỏi.
+        - target: I don't sleep well when I'm stressed.
+          translation:
+            vi: Khi căng thẳng tôi ngủ không ngon.
+      confusion:
+        vi: "Good là tính từ (a good player), well là trạng từ (plays well). \"He plays good\" là lỗi rất hay gặp - phải là He plays well."
+
+  - key: en:item:badly
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: badly
+      ipa: /ˈbædli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: tệ, kém
+      examples:
+        - target: I sleep badly when I drink coffee at night.
+          translation:
+            vi: Tối mà uống cà phê là tôi ngủ rất tệ.
+      confusion:
+        vi: Bad là tính từ (a bad night), badly là trạng từ (sleep badly). Đối lập với well.
+
+  - key: en:item:hard-adverb
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: hard
+      ipa: UK /hɑːd/ · US /hɑːrd/
+      pos: trạng từ (giữ nguyên dạng)
+    back:
+      meaning:
+        vi: chăm chỉ, vất vả, hết sức
+      examples:
+        - target: She works hard, so she is often tired.
+          translation:
+            vi: Cô ấy làm việc vất vả nên thường mệt.
+      confusion:
+        vi: Trạng từ của hard vẫn là hard. Hardly lại có nghĩa khác hẳn - "hầu như không". He hardly works là anh ấy hầu như không làm gì!
+
+  - key: en:item:too-adjective
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: too + tính từ / trạng từ
+      ipa: /tuː/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: "quá… (đến mức có vấn đề): I'm too tired to go out. You eat too quickly. Too mang ý tiêu cực - nhiều hơn mức nên có."
+      examples:
+        - target: I'm too tired. I want to go to bed.
+          translation:
+            vi: Tôi mệt quá. Tôi muốn đi ngủ.
+        - target: You work too hard.
+          translation:
+            vi: Bạn làm việc vất vả quá.
+      confusion:
+        vi: Too khác very. Very tired chỉ là rất mệt; too tired là mệt quá, không làm nổi việc gì đó. Không nói "too much tired".
+
+  - key: en:item:adjective-enough
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: (not) + tính từ + enough
+      ipa: /ɪˈnʌf/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: "(không) đủ… : He isn't old enough to drive. Is the room warm enough? Enough đứng SAU tính từ."
+      examples:
+        - target: My son isn't old enough to play this game.
+          translation:
+            vi: Con trai tôi chưa đủ tuổi chơi trò này.
+      pronunciation_note:
+        vi: Enough đọc /ɪˈnʌf/ "i-NẮP-ph"; chữ gh cuối đọc /f/.
+      confusion:
+        vi: Tiếng Việt nói "đủ lớn" (đủ đứng trước), nên người Việt hay nói "enough old". Với tính từ, enough luôn đứng sau - old enough.
+
+  - key: en:item:enough-noun
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: (not) enough + danh từ
+      ipa: /ɪˈnʌf/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: "(không) đủ + danh từ: I don't drink enough water. Do you get enough sleep? Với danh từ, enough đứng TRƯỚC."
+      examples:
+        - target: Many students don't get enough sleep.
+          translation:
+            vi: Nhiều học sinh không ngủ đủ giấc.
+      confusion:
+        vi: "Mẹo nhớ: enough đứng trước danh từ (enough water) nhưng sau tính từ (old enough). Không nói \"water enough\" trong câu thông thường."
+
+  - key: en:item:tired
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: tired
+      ipa: UK /ˈtaɪəd/ · US /ˈtaɪɚd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: mệt
+      examples:
+        - target: I'm always tired on Monday mornings.
+          translation:
+            vi: Sáng thứ Hai nào tôi cũng mệt.
+      pronunciation_note:
+        vi: Đọc một âm tiết dài "TAI-ợd", đuôi -ed chỉ đọc /d/, không thành "tai-rét".
+      confusion:
+        vi: Tired là tính từ nên cần be - I'm tired, không nói "I tired". Tiring là "gây mệt" - a tiring day.
+
+  - key: en:item:sleepy
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sleepy
+      ipa: /ˈsliːpi/
+      pos: tính từ
+    back:
+      meaning:
+        vi: buồn ngủ
+      examples:
+        - target: This medicine can make you sleepy.
+          translation:
+            vi: Thuốc này có thể làm bạn buồn ngủ.
+      confusion:
+        vi: Sleepy là buồn ngủ; tired là mệt (có thể chưa buồn ngủ). Asleep là đang ngủ.
+
+  # ---------------- Bài 5: Ôn tập ----------------
+  - key: en:item:keep-fit
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: keep fit
+      ipa: /ˌkiːp ˈfɪt/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: giữ dáng, giữ cơ thể khoẻ mạnh
+      examples:
+        - target: How do you keep fit? - I go swimming three times a week.
+          translation:
+            vi: Bạn giữ dáng thế nào? - Tôi đi bơi ba lần một tuần.
+      confusion:
+        vi: Fit ở đây là khoẻ, săn chắc - không phải "vừa vặn" như quần áo (This shirt fits me).
+
+  - key: en:item:diet
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: diet
+      ipa: /ˈdaɪət/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chế độ ăn uống
+      examples:
+        - target: A healthy diet has plenty of fruit and vegetables.
+          translation:
+            vi: Chế độ ăn lành mạnh có nhiều rau và trái cây.
+      pronunciation_note:
+        vi: Hai âm tiết "ĐAI-ợt", không đọc dính thành "đai-ét".
+      confusion:
+        vi: Diet trước hết là chế độ ăn nói chung. Be on a diet mới là "đang ăn kiêng".
+
+  - key: en:item:stressed
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: stressed
+      ipa: /strest/
+      pos: tính từ
+    back:
+      meaning:
+        vi: căng thẳng
+      examples:
+        - target: When I feel stressed, I go for a walk.
+          translation:
+            vi: Khi thấy căng thẳng, tôi đi dạo.
+      pronunciation_note:
+        vi: Đuôi -ed đọc /t/, cả từ chỉ một âm tiết - "xtrét-t".
+      confusion:
+        vi: Stressed là tính từ (người thấy căng thẳng); stressful là việc gây căng thẳng - a stressful job. Không nói "I'm stress".

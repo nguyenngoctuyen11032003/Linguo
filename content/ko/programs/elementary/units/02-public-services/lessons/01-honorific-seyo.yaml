@@ -1,0 +1,396 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:honorific-seyo
+order_index: 1
+level: topik2
+title:
+  vi: Nói lịch sự với -(으)세요 và động từ kính ngữ
+objectives:
+  - vi: Mời, đề nghị lịch sự bằng V-(으)세요 - 앉으세요, 잠깐만 기다리세요.
+  - vi: Hỏi về người khác một cách tôn trọng - 어디 가세요? - và trả lời về mình bằng -아/어요.
+  - vi: Dùng động từ kính ngữ riêng 드시다, 주무시다, 계시다 với người lớn tuổi.
+estimated_minutes: 16
+skills: [speaking, listening, grammar]
+prerequisites: [ko:lesson:past-future-review]
+items:
+  - item: ko:item:gram-euseyo-request
+  - item: ko:item:gram-euseyo-honorific
+  - item: ko:item:phrase-anjeuseyo
+  - item: ko:item:phrase-eodi-gaseyo
+  - item: ko:item:verb-gidarida
+  - item: ko:item:phrase-jamkkanman
+  - item: ko:item:verb-deusida
+  - item: ko:item:verb-jumusida
+  - item: ko:item:verb-gyesida
+  - item: ko:item:halmeoni
+  - item: ko:item:gram-honorific-subject
+  - item: ko:item:anda
+    role: reuse
+  - item: ko:item:verb-gada
+    role: reuse
+  - item: ko:item:place-eunhaeng
+    role: reuse
+  - item: ko:item:verb-meokda
+    role: reuse
+  - item: ko:item:verb-jada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Ở ngân hàng, bệnh viện hay ga tàu, nhân viên luôn nói với bạn bằng -(으)세요. Sau bài này, bạn hiểu và tự dùng đuôi kính ngữ này, kể cả những động từ có dạng kính ngữ riêng.
+  - type: explain
+    text:
+      vi: V-(으)세요 có hai việc - mời/đề nghị (여기 앉으세요 - mời ngồi đây) và hỏi, kể về người mình tôn trọng (어디 가세요? - bác đi đâu ạ?). Giống tiếng Việt thêm "ạ", "mời", "xin", nhưng tiếng Hàn gắn thẳng vào động từ.
+  - type: explain
+    text:
+      vi: Cách ghép - bỏ 다; thân không có patchim + 세요 (가다 → 가세요, 기다리다 → 기다리세요), có patchim + 으세요 (앉다 → 앉으세요, 읽다 → 읽으세요). Thân có patchim ㄹ thì bỏ ㄹ rồi + 세요 - 살다 → 사세요.
+  - type: explain
+    text:
+      vi: Một số động từ có từ kính ngữ riêng - 먹다/마시다 → 드세요, 자다 → 주무세요, 있다 (ở đâu đó) → 계세요. Với người lớn tuổi, dùng 먹으세요 hay 자세요 nghe thiếu lễ phép.
+  - type: deep_explain
+    text:
+      vi: Kính ngữ tôn trọng người làm hành động, nên bạn không bao giờ dùng -(으)세요 khi nói về chính mình - người ta hỏi 어디 가세요? thì bạn đáp 은행에 가요. Muốn trang trọng hơn nữa, chủ ngữ là người lớn có thể dùng 께서 thay 이/가 (할머니께서 주무세요), thường gặp trong văn viết. Câu đề nghị xuống giọng ở cuối, câu hỏi lên giọng - cùng chữ 가세요 nhưng nghĩa khác nhau nhờ ngữ điệu.
+  - type: example
+    target: 할머니, 여기 앉으세요.
+    target_lang: ko
+    translation:
+      vi: Bà ơi, bà ngồi đây ạ.
+    note:
+      vi: 앉다 có patchim nên thêm 으세요; câu nhường ghế trên tàu điện ngầm.
+  - type: example
+    target: 어디 가세요? - 병원에 가요.
+    target_lang: ko
+    translation:
+      vi: Chị đi đâu đấy ạ? - Tôi đi bệnh viện.
+    note:
+      vi: Hỏi người khác dùng 가세요, nói về mình dùng 가요.
+  - type: example
+    target: 잠깐만 기다리세요.
+    target_lang: ko
+    translation:
+      vi: Xin anh đợi một chút.
+    note:
+      vi: Câu nhân viên ngân hàng, bưu điện nói rất thường xuyên.
+  - type: example
+    target: 할머니는 방에서 주무세요. 아버지는 회사에 계세요.
+    target_lang: ko
+    translation:
+      vi: Bà đang ngủ trong phòng. Bố đang ở công ty.
+    note:
+      vi: 주무시다 thay cho 자다, 계시다 thay cho 있다 khi nói về người lớn.
+  - type: common_mistake
+    wrong: 저는 은행에 가세요.
+    right: 저는 은행에 가요.
+    target_lang: ko
+    note:
+      vi: Người Việt hay nghĩ 가세요 là "lịch sự hơn" nên dùng cho cả mình. -(으)세요 tôn trọng người làm hành động, nên tự nói về mình chỉ dùng -아/어요.
+  - type: common_mistake
+    wrong: 할머니, 많이 먹으세요.
+    right: 할머니, 많이 드세요.
+    target_lang: ko
+    note:
+      vi: 먹다 có từ kính ngữ riêng là 드시다. Với người lớn tuổi, nói 드세요 chứ không ghép 먹으세요.
+  - type: common_mistake
+    wrong: 여기 앉세요.
+    right: 여기 앉으세요.
+    target_lang: ko
+    note:
+      vi: 앉다 có patchim (ㄵ) nên cần 으 - 앉으세요. Chỉ thân không có patchim mới thêm thẳng 세요 (가세요).
+  - type: summary
+    points:
+      - vi: V-(으)세요 - mời/đề nghị (앉으세요) hoặc hỏi, kể về người mình tôn trọng (어디 가세요?).
+      - vi: Không patchim + 세요, có patchim + 으세요, patchim ㄹ bỏ ㄹ + 세요 (사세요).
+      - vi: 드세요 (ăn, uống) · 주무세요 (ngủ) · 계세요 (ở) - dùng cho người lớn tuổi.
+      - vi: Không bao giờ dùng -(으)세요 cho chính mình - đáp lại bằng -아/어요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:honorific-seyo-mcq-sit
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:phrase-anjeuseyo
+    prompt:
+      stem: Câu nào có nghĩa "Mời ngồi ạ" và viết đúng?
+      stem_lang: vi
+      options:
+        - { id: q7m, text: 앉으세요., lang: ko }
+        - { id: z2c, text: 앉세요., lang: ko }
+        - { id: h5t, text: 안즈세요., lang: ko }
+        - { id: r8w, text: 앉아세요., lang: ko }
+    answer:
+      correct_option_id: q7m
+    explanation:
+      vi: 앉다 có patchim ㄵ nên thêm 으세요 - 앉으세요. 안즈세요 là cách đọc, không phải cách viết; -(으)세요 không ghép với 아.
+    display_answer: 앉으세요.
+
+  - key: ko:exercise:honorific-seyo-listen-where
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:phrase-eodi-gaseyo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 할머니, 어디 가세요?
+      options:
+        - { id: a3k, text: "Bà ơi, bà đi đâu ạ?", lang: vi }
+        - { id: m9e, text: "Bà ơi, bà ở đâu ạ?", lang: vi }
+        - { id: t4u, text: "Bà ơi, mời bà đi ạ.", lang: vi }
+        - { id: w6p, text: "Bà ơi, bà ăn gì ạ?", lang: vi }
+    answer:
+      correct_option_id: a3k
+    explanation:
+      vi: 어디 là "đâu", 가세요 là "đi" ở dạng kính ngữ, lên giọng nên là câu hỏi. "Ở đâu" sẽ là 어디 계세요?, "ăn gì" là 뭐 드세요?.
+    display_answer: Bà ơi, bà đi đâu ạ?
+
+  - key: ko:exercise:honorific-seyo-fill-sit-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:gram-euseyo-request
+    prompt:
+      template: "할머니, 여기 {{b1}}. (앉다)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Bà ơi, bà ngồi đây ạ."
+        - "Gợi ý: 앉다 có patchim nên thêm 으세요."
+    answer:
+      blanks:
+        b1: [앉으세요]
+    known_wrong:
+      - answer: 앉세요
+        feedback_vi: 앉다 có patchim nên phải có 으 - 앉으세요.
+        error_tag: euseyo_batchim
+      - answer: 앉아요
+        feedback_vi: 앉아요 là đuôi thường, không phải lời mời lịch sự. Mời người lớn ngồi dùng 앉으세요.
+        error_tag: honorific_missing
+    explanation:
+      vi: Bỏ 다 được thân 앉; thân có patchim nên ghép 으세요 - 앉으세요, lời mời lịch sự.
+    display_answer: 할머니, 여기 앉으세요.
+
+  - key: ko:exercise:honorific-seyo-mcq-sleep
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:verb-jumusida
+    prompt:
+      stem: Buổi tối, bạn chúc bà ngủ ngon. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - { id: k1v, text: "할머니, 안녕히 주무세요.", lang: ko }
+        - { id: f8d, text: "할머니, 안녕히 자세요.", lang: ko }
+        - { id: s3n, text: "할머니, 안녕히 계세요.", lang: ko }
+        - { id: g6b, text: "할머니, 많이 드세요.", lang: ko }
+    answer:
+      correct_option_id: k1v
+    explanation:
+      vi: 자다 có từ kính ngữ riêng là 주무시다, nên chúc người lớn ngủ ngon là 안녕히 주무세요. 안녕히 계세요 là chào khi bạn ra về, 많이 드세요 là mời ăn.
+    display_answer: 할머니, 안녕히 주무세요.
+
+  - key: ko:exercise:honorific-seyo-wb-wait
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:verb-gidarida
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Xin anh đợi ở đây một chút.\""
+      tokens:
+        - { id: w3, text: 기다리세요 }
+        - { id: w1, text: 여기에서 }
+        - { id: w5, text: 기다려요 }
+        - { id: w2, text: 잠깐만 }
+    answer:
+      orders:
+        - [w1, w2, w3]
+        - [w2, w1, w3]
+    explanation:
+      vi: Động từ kính ngữ 기다리세요 luôn đứng cuối; 여기에서 (ở đây) và 잠깐만 (một chút) đổi chỗ cho nhau được. 기다려요 là đuôi thường, không dùng để đề nghị khách.
+    display_answer: 여기에서 잠깐만 기다리세요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:honorific-seyo-fill-ask-go
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-euseyo-honorific
+    prompt:
+      template: "A: 선생님, 어디 {{b1}}? (가다)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [가세요]
+    known_wrong:
+      - answer: 가요
+        feedback_vi: Hỏi thầy cô, người lớn cần kính ngữ - 가세요?
+        error_tag: honorific_missing
+      - answer: 가으세요
+        feedback_vi: 가 không có patchim nên chỉ thêm 세요 - 가세요.
+        error_tag: euseyo_batchim
+    explanation:
+      vi: Hỏi về hành động của thầy giáo nên dùng kính ngữ; 가다 không có patchim → 가세요.
+    display_answer: "A: 선생님, 어디 가세요?"
+
+  - key: ko:exercise:honorific-seyo-fill-answer-self
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-euseyo-honorific
+    prompt:
+      template: "A: 어디 가세요? B: 저는 은행에 {{b1}}. (가다)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [가요]
+    known_wrong:
+      - answer: 가세요
+        feedback_vi: Không dùng kính ngữ cho chính mình. Nói về mình dùng 가요.
+        error_tag: honorific_self
+    explanation:
+      vi: B nói về chính mình nên không dùng -(으)세요; đuôi lịch sự thường 가요 là đủ.
+    display_answer: "A: 어디 가세요? B: 저는 은행에 가요."
+
+  - key: ko:exercise:honorific-seyo-translate-eat
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:verb-deusida
+    prompt:
+      source_text: Bà ơi, bà ăn nhiều vào ạ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 할머니, 많이 드세요.
+        - 많이 드세요.
+        - 할머니, 많이 잡수세요.
+        - 할머니, 많이 드십시오.
+    known_wrong:
+      - answer: 할머니, 많이 먹으세요.
+        feedback_vi: 먹다 có từ kính ngữ riêng là 드시다 - 많이 드세요.
+        error_tag: honorific_verb
+      - answer: 할머니, 많이 먹어요.
+        feedback_vi: Mời người lớn ăn cần kính ngữ - 많이 드세요.
+        error_tag: honorific_missing
+      - answer: halmeoni mani deuseyo
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Mời người lớn ăn dùng 드시다 → 드세요; 많이 là "nhiều". 잡수세요 còn kính trọng hơn, cũng đúng.
+    display_answer: 할머니, 많이 드세요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:honorific-seyo-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-euseyo-honorific
+    prompt:
+      stem: "Bác hàng xóm hỏi bạn: 어디 가세요? Bạn đang đi ngân hàng. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: v5r, text: 은행에 가요., lang: ko }
+        - { id: e2y, text: 은행에 가세요., lang: ko }
+        - { id: n7j, text: 은행에 계세요., lang: ko }
+        - { id: c4x, text: 은행을 가세요., lang: ko }
+    answer:
+      correct_option_id: v5r
+    explanation:
+      vi: Bạn nói về chính mình nên dùng 가요, không dùng 가세요 hay 계세요. Nơi đến của 가다 đi với 에.
+    display_answer: 은행에 가요.
+
+  - key: ko:exercise:honorific-seyo-translate-teacher
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:verb-gyesida
+    prompt:
+      source_text: Thầy Kim có ở đây không ạ?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 김 선생님 계세요?
+        - 김 선생님 여기 계세요?
+        - 김 선생님이 계세요?
+        - 김 선생님 여기에 계세요?
+        - 김 선생님이 여기 계세요?
+        - 김 선생님 안에 계세요?
+    known_wrong:
+      - answer: 김 선생님 있어요?
+        feedback_vi: Hỏi thầy cô "có ở đây không" dùng kính ngữ 계세요, không dùng 있어요.
+        error_tag: honorific_verb
+      - answer: 김 선생님 있으세요?
+        feedback_vi: Khi người lớn "ở" một nơi, dùng 계세요; 있으세요 dùng khi họ "có" cái gì.
+        error_tag: honorific_verb
+    explanation:
+      vi: 있다 (ở) khi nói về người lớn đổi thành 계시다 → 계세요?. Câu hay dùng khi gõ cửa văn phòng.
+    display_answer: 김 선생님 계세요?
+
+  - key: ko:exercise:honorific-seyo-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:phrase-jamkkanman
+    prompt:
+      source_text: 잠깐만요. 여기 앉으세요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chờ một chút ạ. Mời ngồi đây.
+        - Đợi một chút ạ. Mời ngồi đây.
+        - Chờ một chút. Mời ngồi ở đây.
+        - Đợi một chút. Mời ngồi ở đây.
+        - Xin chờ một chút. Mời anh ngồi đây.
+        - Xin đợi một chút. Mời anh ngồi đây.
+        - Xin chờ một chút. Mời chị ngồi đây.
+        - Xin đợi một chút. Mời chị ngồi đây.
+        - Chờ một chút ạ. Mời bạn ngồi đây.
+        - Chờ chút ạ. Mời ngồi đây.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Chờ một chút. Tôi ngồi đây.
+        feedback_vi: 앉으세요 là lời mời người nghe ngồi, không phải "tôi ngồi".
+        error_tag: honorific_self
+    explanation:
+      vi: 잠깐만요 là "chờ một chút ạ"; 앉으세요 là lời mời người nghe ngồi - "mời ngồi".
+    display_answer: Chờ một chút ạ. Mời ngồi đây.
+
+  - key: ko:exercise:honorific-seyo-wb-grandma-home
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-honorific-subject
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn kính trọng: \"Bà đang ở nhà.\""
+      tokens:
+        - { id: h3, text: 계세요 }
+        - { id: h2, text: 집에 }
+        - { id: h1, text: 할머니께서 }
+        - { id: h4, text: 있어요 }
+    answer:
+      orders:
+        - [h1, h2, h3]
+        - [h2, h1, h3]
+    explanation:
+      vi: Nói bà "ở" nhà dùng 계세요 (kính ngữ của 있다), và 께서 thay 이/가 cho người lớn. 있어요 không hợp với chủ ngữ đã tôn trọng bằng 께서.
+    display_answer: 할머니께서 집에 계세요.

@@ -1,0 +1,1126 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Lý do, điều kiện & tường thuật" (TOPIK 3). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- bài 1: lý do ----------------
+  - key: ko:item:gram-aseo-reason
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: -아서 · -어서 · -해서 (lý do)
+      romanization: -aseo · -eoseo · -haeseo
+      pos: vĩ tố liên kết
+    back:
+      meaning:
+        vi: Vì… nên… Nối lý do với kết quả; không gắn thì quá khứ (늦어서, không nói 늦었어서) và không đi với câu mệnh lệnh, rủ rê ở vế sau.
+      examples:
+        - target: 늦잠을 자서 학교에 늦었어요.
+          translation:
+            vi: Tôi ngủ quên nên đến trường muộn.
+        - target: 늦어서 죄송해요.
+          translation:
+            vi: Xin lỗi vì tôi đến muộn.
+      pronunciation_note:
+        vi: Thân có patchim thì nối âm - 늦어서 [느저서], 많아서 [마나서] (ㅎ câm).
+      confusion:
+        vi: Thì quá khứ chỉ đặt ở cuối câu - 아파서 못 갔어요, không nói 아팠어서. Dùng -아서 để xin lỗi, cảm ơn (늦어서 미안해요, 도와줘서 고마워요).
+
+  - key: ko:item:gram-eunikka
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: -(으)니까
+      romanization: -(eu)nikka
+      pos: vĩ tố liên kết
+    back:
+      meaning:
+        vi: Vì… nên…, nhấn lý do người nói đưa ra để thuyết phục; đi được với câu mệnh lệnh, rủ rê (-(으)세요, -(으)ㅂ시다, -아요 rủ) và gắn được thì quá khứ (늦었으니까).
+      examples:
+        - target: 비가 오니까 우산을 가져가세요.
+          translation:
+            vi: Trời mưa đấy, bạn mang ô theo nhé.
+        - target: 시간이 없으니까 택시를 탑시다.
+          translation:
+            vi: Không có thời gian đâu, mình đi taxi đi.
+      pronunciation_note:
+        vi: Thân có patchim thêm 으 - 먹으니까 [머그니까], 없으니까 [업쓰니까]. Thân có ㄹ thì bỏ ㄹ - 멀다 → 머니까.
+      confusion:
+        vi: Không dùng -(으)니까 trong lời xin lỗi, cảm ơn (늦었으니까 미안해요 nghe như đổ lỗi); khi đó dùng -아서.
+
+  - key: ko:item:gram-gi-ttaemune
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: -기 때문에 · N 때문에
+      romanization: -gi ttaemune · ttaemune
+      pos: cấu trúc lý do
+    back:
+      meaning:
+        vi: Bởi vì… (trang trọng hơn, hay dùng khi viết, giải thích). Sau động từ, tính từ - 바쁘기 때문에; sau danh từ - 비 때문에 (vì cơn mưa) hoặc 학생이기 때문에 (vì là học sinh).
+      examples:
+        - target: 길이 막히기 때문에 지하철을 타는 게 좋아요.
+          translation:
+            vi: Vì đường kẹt xe nên đi tàu điện ngầm thì hơn.
+        - target: 감기 때문에 회사에 못 갔어요.
+          translation:
+            vi: Vì bị cảm nên tôi không đi làm được.
+      pronunciation_note:
+        vi: 때문에 đọc [때무네]; ㄸ căng, không bật hơi.
+      confusion:
+        vi: Đã có -기 때문에 thì không thêm 그래서 ở vế sau - tiếng Việt nói "vì… nên…" nhưng tiếng Hàn chỉ cần một từ nối. N 때문에 (vì cái gì) khác N이기 때문에 (vì là cái gì).
+
+  - key: ko:item:neutjameul-jada
+    type: phrase
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 늦잠을 자다
+      romanization: neutjameul jada
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: ngủ dậy muộn, ngủ quên
+      examples:
+        - target: 어제 늦게 자서 오늘 늦잠을 잤어요.
+          translation:
+            vi: Hôm qua ngủ muộn nên hôm nay tôi ngủ quên.
+      pronunciation_note:
+        vi: 늦잠을 đọc [늗짜믈] - ㅈ sau patchim đọc căng.
+
+  - key: ko:item:giri-makhida
+    type: phrase
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 길이 막히다
+      romanization: giri makhida
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: kẹt xe, tắc đường
+      examples:
+        - target: 퇴근 시간이라서 길이 많이 막혀요.
+          translation:
+            vi: Đang giờ tan tầm nên đường tắc lắm.
+      pronunciation_note:
+        vi: 막히다 đọc [마키다] - ㄱ gặp ㅎ thành ㅋ bật hơi.
+      confusion:
+        vi: Tiếng Hàn nói "con đường bị chặn" (길이 막히다), không dùng từ "xe" như tiếng Việt.
+
+  - key: ko:item:gojang-nada
+    type: phrase
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 고장(이) 나다
+      romanization: gojang(i) nada
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: bị hỏng (máy móc, đồ dùng)
+      examples:
+        - target: 엘리베이터가 고장 나서 계단으로 올라갔어요.
+          translation:
+            vi: Thang máy hỏng nên tôi đi cầu thang bộ lên.
+      pronunciation_note:
+        vi: 고장 đọc "kô-jang"; khi nói thường bỏ 이 - 고장 났어요.
+      confusion:
+        vi: 고장 나다 dùng cho máy móc; đồ ăn bị hỏng là 상하다.
+
+  - key: ko:item:gamgie-geollida
+    type: phrase
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 감기에 걸리다
+      romanization: gamgie geollida
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: bị cảm
+      examples:
+        - target: 감기에 걸려서 목소리가 안 나와요.
+          translation:
+            vi: Tôi bị cảm nên không nói ra tiếng.
+      pronunciation_note:
+        vi: 걸리다 có hai ㄹ liền nhau [걸리다], đọc "l" rõ, không thành "n".
+      confusion:
+        vi: Trợ từ là 에 (감기에 걸리다), không phải 을/를 như tiếng Việt "bị cảm".
+
+  - key: ko:item:jigakada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 지각하다
+      romanization: jigakada
+      pos: động từ
+    back:
+      meaning:
+        vi: đến muộn, đi trễ (giờ học, giờ làm)
+      examples:
+        - target: 버스를 놓쳐서 지각했어요.
+          translation:
+            vi: Tôi lỡ xe buýt nên bị đi trễ.
+      pronunciation_note:
+        vi: Đọc [지가카다] - ㄱ gặp ㅎ thành ㅋ.
+      confusion:
+        vi: 지각하다 là trễ giờ học/làm; nói chung "muộn" là 늦다.
+
+  - key: ko:item:chwisohada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 취소하다
+      romanization: chwisohada
+      pos: động từ
+    back:
+      meaning:
+        vi: hủy (hẹn, đặt chỗ, đơn hàng)
+      examples:
+        - target: 비가 와서 캠핑을 취소했어요.
+          translation:
+            vi: Trời mưa nên chúng tôi hủy chuyến cắm trại.
+      pronunciation_note:
+        vi: 취 đọc nhanh "chuy", ㅊ bật hơi.
+      confusion:
+        vi: Hủy là 취소하다; dời sang ngày khác là 미루다.
+
+  - key: ko:item:yeollakada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 연락하다
+      romanization: yeollakada
+      pos: động từ
+    back:
+      meaning:
+        vi: liên lạc
+      examples:
+        - target: 도착하면 연락해 주세요.
+          translation:
+            vi: Đến nơi thì liên lạc cho tôi nhé.
+      pronunciation_note:
+        vi: Đọc [열라카다] - ㄴ gặp ㄹ thành ㄹㄹ, ㄱ gặp ㅎ thành ㅋ.
+      confusion:
+        vi: Đi với 에게/한테 (친구한테 연락해요), không dùng 을/를 chỉ người.
+
+  - key: ko:item:pigonhada
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 피곤하다
+      romanization: pigonhada
+      pos: tính từ
+    back:
+      meaning:
+        vi: mệt
+      examples:
+        - target: 너무 피곤해서 일찍 잤어요.
+          translation:
+            vi: Mệt quá nên tôi ngủ sớm.
+      pronunciation_note:
+        vi: Đọc "pi-gôn-ha-da"; ㅎ giữa câu nhẹ gần như mất [피고나다].
+
+  - key: ko:item:bappeuda
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 바쁘다
+      romanization: bappeuda
+      pos: tính từ
+    back:
+      meaning:
+        vi: bận
+      examples:
+        - target: 요즘 일이 많아서 바빠요.
+          translation:
+            vi: Dạo này nhiều việc nên tôi bận.
+      pronunciation_note:
+        vi: ㅃ căng; 바쁘다 → 바빠요 (ㅡ rơi mất khi chia).
+      confusion:
+        vi: Chia 바빠요, 바빠서, không viết 바쁘어요.
+
+  # ---------------- bài 2: điều kiện, nhượng bộ ----------------
+  - key: ko:item:gram-eumyeon
+    type: grammar_point
+    level: topik3
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: -(으)면
+      romanization: -(eu)myeon
+      pos: vĩ tố liên kết
+    back:
+      meaning:
+        vi: Nếu…, khi… (điều kiện). Thân có patchim thêm 으 - 먹으면; thân có ㄹ giữ nguyên - 살면.
+      examples:
+        - target: 시간이 있으면 같이 영화 봐요.
+          translation:
+            vi: Nếu có thời gian thì cùng đi xem phim nhé.
+        - target: 이 버튼을 누르면 문이 열려요.
+          translation:
+            vi: Bấm nút này thì cửa mở.
+      pronunciation_note:
+        vi: 있으면 đọc [이쓰면] - patchim ㅆ nối sang 으.
+      confusion:
+        vi: Dùng cho giả định hoặc điều lặp lại; với việc chắc chắn đã xảy ra ở quá khứ thì không dùng -(으)면.
+
+  - key: ko:item:gram-euryeomyeon
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: -(으)려면
+      romanization: -(eu)ryeomyeon
+      pos: vĩ tố liên kết
+    back:
+      meaning:
+        vi: Nếu muốn (làm gì) thì…, để (làm gì) thì… Vế sau thường là điều cần làm - -아야 해요, -(으)세요, 필요해요.
+      examples:
+        - target: 도서관 카드를 만들려면 신분증이 필요해요.
+          translation:
+            vi: Muốn làm thẻ thư viện thì cần giấy tờ tùy thân.
+        - target: 일찍 도착하려면 7시에 출발해야 해요.
+          translation:
+            vi: Muốn đến sớm thì phải xuất phát lúc 7 giờ.
+      pronunciation_note:
+        vi: 먹으려면 [머그려면]; thân có ㄹ chỉ thêm 려면 - 만들다 → 만들려면.
+      confusion:
+        vi: -(으)려면 = -(으)려고 하면 (nếu định làm). -(으)면 chỉ là "nếu", không mang ý "muốn đạt mục đích".
+
+  - key: ko:item:gram-ado-eodo
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: -아도 · -어도 · -해도
+      romanization: -ado · -eodo · -haedo
+      pos: vĩ tố liên kết
+    back:
+      meaning:
+        vi: Dù… vẫn…, cho dù… Chia giống -아요/어요 - 비싸다 → 비싸도, 먹다 → 먹어도, 하다 → 해도.
+      examples:
+        - target: 비가 와도 축구를 할 거예요.
+          translation:
+            vi: Dù trời mưa chúng tôi vẫn sẽ đá bóng.
+        - target: 아무리 바빠도 아침은 꼭 먹어요.
+          translation:
+            vi: Dù bận đến mấy tôi vẫn ăn sáng.
+      pronunciation_note:
+        vi: 먹어도 [머거도]; danh từ dùng (이)어도 - 학생이어도, 친구여도.
+      confusion:
+        vi: Đừng nhầm với -아서 (vì). 바빠서 = vì bận; 바빠도 = dù bận.
+
+  - key: ko:item:gram-deorado
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: -더라도
+      romanization: -deorado
+      pos: vĩ tố liên kết
+    back:
+      meaning:
+        vi: Cho dù (giả sử) có… thì vẫn… Giống -아도/어도 nhưng nhấn tình huống giả định, ít khả năng xảy ra, nghe trang trọng hơn.
+      examples:
+        - target: 시험에 떨어지더라도 실망하지 마세요.
+          translation:
+            vi: Cho dù có thi trượt thì bạn cũng đừng thất vọng.
+        - target: 좀 늦더라도 꼭 오세요.
+          translation:
+            vi: Có muộn một chút thì bạn cũng nhất định đến nhé.
+      pronunciation_note:
+        vi: Gắn thẳng vào thân, không thêm 으 - 먹더라도, 가더라도.
+      confusion:
+        vi: Với sự thật đang xảy ra (trời đang mưa), dùng -아도 tự nhiên hơn; -더라도 hợp với giả định "lỡ như".
+
+  - key: ko:item:amuri
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 아무리
+      romanization: amuri
+      pos: trạng từ
+    back:
+      meaning:
+        vi: dù… đến mấy (luôn đi với -아도/어도)
+      examples:
+        - target: 아무리 찾아도 지갑이 없어요.
+          translation:
+            vi: Tìm mãi mà không thấy cái ví.
+      pronunciation_note:
+        vi: Đọc "a-mu-ri"; ㄹ giữa hai nguyên âm uốn nhẹ như "r".
+      confusion:
+        vi: 아무리 phải đi với -아도/어도 ở cuối vế; không dùng 아무리 với -아서.
+
+  - key: ko:item:hoksi
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 혹시
+      romanization: hoksi
+      pos: trạng từ
+    back:
+      meaning:
+        vi: liệu có…, nhỡ đâu (làm câu hỏi, câu nhờ nhẹ nhàng hơn)
+      examples:
+        - target: 혹시 시간이 있으면 좀 도와줄 수 있어요?
+          translation:
+            vi: Nếu bạn có thời gian thì giúp tôi một chút được không?
+      pronunciation_note:
+        vi: Đọc [혹씨] - ㅅ sau ㄱ căng.
+
+  - key: ko:item:yeyakada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 예약하다
+      romanization: yeyakada
+      pos: động từ
+    back:
+      meaning:
+        vi: đặt trước (chỗ, bàn, vé, lịch hẹn)
+      examples:
+        - target: 주말에 가려면 미리 예약해야 해요.
+          translation:
+            vi: Muốn đi cuối tuần thì phải đặt trước.
+      pronunciation_note:
+        vi: Đọc [예야카다] - ㄱ gặp ㅎ thành ㅋ.
+
+  - key: ko:item:miri
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 미리
+      romanization: miri
+      pos: trạng từ
+    back:
+      meaning:
+        vi: trước, sẵn (làm trước khi việc gì xảy ra)
+      examples:
+        - target: 늦을 것 같으면 미리 연락하세요.
+          translation:
+            vi: Nếu thấy sẽ muộn thì báo trước nhé.
+      pronunciation_note:
+        vi: Đọc "mi-ri", hai âm tiết đều nhẹ.
+      confusion:
+        vi: 미리 là "làm trước, sẵn"; 먼저 là "trước (người khác), đầu tiên".
+
+  - key: ko:item:piryohada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 필요하다
+      romanization: piryohada
+      pos: tính từ
+    back:
+      meaning:
+        vi: cần, cần thiết
+      examples:
+        - target: 여권이 필요해요.
+          translation:
+            vi: Cần hộ chiếu.
+      pronunciation_note:
+        vi: Đọc [피료하다] - ㄹ nối sang 요.
+      confusion:
+        vi: 필요하다 là tính từ nên đi với 이/가 - 여권이 필요해요, không nói 여권을 필요해요.
+
+  - key: ko:item:jechulhada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 제출하다
+      romanization: jechulhada
+      pos: động từ
+    back:
+      meaning:
+        vi: nộp (bài, hồ sơ, giấy tờ)
+      examples:
+        - target: 금요일까지 보고서를 제출해야 해요.
+          translation:
+            vi: Phải nộp báo cáo trước thứ Sáu.
+      pronunciation_note:
+        vi: Đọc [제추라다] - ㅎ sau ㄹ gần như câm.
+      confusion:
+        vi: 제출하다 là nộp giấy tờ; nộp tiền là 내다.
+
+  - key: ko:item:magam
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 마감
+      romanization: magam
+      pos: danh từ
+    back:
+      meaning:
+        vi: hạn chót, hết hạn (nhận hồ sơ, đăng ký)
+      examples:
+        - target: 신청 마감은 이번 주 금요일이에요.
+          translation:
+            vi: Hạn đăng ký là thứ Sáu tuần này.
+      pronunciation_note:
+        vi: Đọc "ma-gam", ㅁ cuối khép môi.
+
+  - key: ko:item:sincheonghada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 신청하다
+      romanization: sincheonghada
+      pos: động từ
+    back:
+      meaning:
+        vi: đăng ký, nộp đơn xin
+      examples:
+        - target: 한국어 수업을 신청하려면 홈페이지에 들어가세요.
+          translation:
+            vi: Muốn đăng ký lớp tiếng Hàn thì bạn vào trang web.
+      pronunciation_note:
+        vi: Đọc "sin-chơng-ha-da"; ㅓ là "ơ", không phải "ô".
+      confusion:
+        vi: 신청하다 là nộp đơn đăng ký; 예약하다 là đặt chỗ trước.
+
+  # ---------------- bài 3: định ngữ, -(으)ㄴ/는 것 같다, -는데 ----------------
+  - key: ko:item:gram-adnominal
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: -는 · -(으)ㄴ · -(으)ㄹ + N (định ngữ)
+      romanization: -neun · -(eu)n · -(eu)l
+      pos: vĩ tố định ngữ
+    back:
+      meaning:
+        vi: Biến động từ, tính từ thành phần bổ nghĩa đứng trước danh từ. Động từ - 먹는 (đang/thường), 먹은 (đã), 먹을 (sẽ); tính từ - 좋은, 큰; 있다/없다 - 맛있는, 재미없는.
+      examples:
+        - target: 제가 자주 가는 카페예요.
+          translation:
+            vi: Đây là quán cà phê tôi hay đi.
+        - target: 어제 본 영화가 재미있었어요.
+          translation:
+            vi: Bộ phim tôi xem hôm qua hay lắm.
+        - target: 조용한 식당을 찾고 있어요.
+          translation:
+            vi: Tôi đang tìm một quán ăn yên tĩnh.
+      pronunciation_note:
+        vi: Thân có ㄹ bỏ ㄹ trước ㄴ - 살다 → 사는, 멀다 → 먼; 먹을 đọc [머글].
+      confusion:
+        vi: Tiếng Việt đặt phần bổ nghĩa sau danh từ (quán tôi hay đi), tiếng Hàn đặt trước (제가 자주 가는 카페). Tính từ không dùng -는 - nói 좋은, không nói 좋는.
+
+  - key: ko:item:gram-geot-gatda
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: -(으)ㄴ/는/(으)ㄹ 것 같다
+      romanization: -(eu)n/neun/(eu)l geot gatda
+      pos: cấu trúc phỏng đoán
+    back:
+      meaning:
+        vi: Hình như…, có vẻ…, chắc là… Động từ - 오는 것 같아요 (đang), 온 것 같아요 (đã), 올 것 같아요 (sẽ); tính từ - 바쁜 것 같아요; danh từ - 학생인 것 같아요.
+      examples:
+        - target: 밖에 비가 오는 것 같아요.
+          translation:
+            vi: Hình như ngoài trời đang mưa.
+        - target: 이 식당이 더 맛있는 것 같아요.
+          translation:
+            vi: Quán này có vẻ ngon hơn.
+      pronunciation_note:
+        vi: 것 같아요 đọc [걷 까타요] - ㄱ sau 것 căng thành ㄲ.
+      confusion:
+        vi: Người Hàn còn dùng -는 것 같아요 để nói ý kiến của mình nhẹ nhàng hơn (제 생각에는 이게 좋은 것 같아요), không hẳn là đang đoán.
+
+  - key: ko:item:gram-neunde
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: -는데 · -(으)ㄴ데 · N인데
+      romanization: -neunde · -(eu)nde · inde
+      pos: vĩ tố liên kết
+    back:
+      meaning:
+        vi: Nêu bối cảnh rồi nói tiếp, hoặc đối lập "…nhưng…". Động từ và 있다/없다 dùng -는데 (가는데, 맛있는데); tính từ -(으)ㄴ데 (비싼데, 좋은데); danh từ 인데; quá khứ -았는데.
+      examples:
+        - target: 이 가방은 좀 비싼데 정말 튼튼해요.
+          translation:
+            vi: Cái túi này hơi đắt nhưng rất bền.
+        - target: 지금 역 앞인데 어디에 있어요?
+          translation:
+            vi: Tôi đang ở trước ga rồi, bạn đang ở đâu?
+        - target: 저기요, 길을 좀 묻고 싶은데요.
+          translation:
+            vi: Xin lỗi, tôi muốn hỏi đường một chút ạ.
+      pronunciation_note:
+        vi: 있는데 đọc [인는데] - ㅆ trước ㄴ thành ㄴ (nhũ hóa); 없는데 [엄는데].
+      confusion:
+        vi: Kết câu bằng -는데요 là cách nhờ, gợi ý mềm mỏng, để người nghe tự hiểu phần còn lại. Nó không chỉ là "nhưng" như 그런데 ở đầu câu.
+
+  - key: ko:item:chucheonhada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 추천하다
+      romanization: chucheonhada
+      pos: động từ
+    back:
+      meaning:
+        vi: giới thiệu, gợi ý (nên chọn cái gì)
+      examples:
+        - target: 맛있는 식당 좀 추천해 주세요.
+          translation:
+            vi: Giới thiệu cho tôi quán ăn ngon nào đó với.
+      pronunciation_note:
+        vi: Đọc [추처나다] - ㅎ sau ㄴ gần như câm.
+      confusion:
+        vi: 추천하다 là gợi ý nên chọn gì; 소개하다 là giới thiệu người, nơi cho ai biết.
+
+  - key: ko:item:matjip
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 맛집
+      romanization: matjip
+      pos: danh từ
+    back:
+      meaning:
+        vi: quán ăn ngon nổi tiếng
+      examples:
+        - target: 이 근처에 유명한 맛집이 있어요.
+          translation:
+            vi: Gần đây có một quán ăn ngon nổi tiếng.
+      pronunciation_note:
+        vi: Đọc [맏찝] - ㅈ và ㅂ đều đọc căng.
+
+  - key: ko:item:yumyeonghada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 유명하다
+      romanization: yumyeonghada
+      pos: tính từ
+    back:
+      meaning:
+        vi: nổi tiếng
+      examples:
+        - target: 이 집은 냉면으로 유명해요.
+          translation:
+            vi: Quán này nổi tiếng với món mì lạnh.
+      pronunciation_note:
+        vi: Đọc "yu-myơng-ha-da"; ㅕ là "yơ".
+      confusion:
+        vi: Nổi tiếng nhờ cái gì - N(으)로 유명하다, không dùng 때문에.
+
+  - key: ko:item:chinjeolhada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 친절하다
+      romanization: chinjeolhada
+      pos: tính từ
+    back:
+      meaning:
+        vi: tử tế, thân thiện, chu đáo (với khách)
+      examples:
+        - target: 직원들이 아주 친절해요.
+          translation:
+            vi: Nhân viên rất niềm nở.
+      pronunciation_note:
+        vi: Đọc [친저라다] - ㅎ sau ㄹ gần như câm.
+
+  - key: ko:item:bunwigi
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 분위기
+      romanization: bunwigi
+      pos: danh từ
+    back:
+      meaning:
+        vi: bầu không khí, không gian (của nơi chốn, buổi gặp)
+      examples:
+        - target: 분위기가 좋은 카페를 알아요?
+          translation:
+            vi: Bạn có biết quán cà phê nào không gian đẹp không?
+      pronunciation_note:
+        vi: 위 đọc "uy" lướt nhanh - [부뉘기].
+
+  - key: ko:item:jureul-seoda
+    type: phrase
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 줄을 서다
+      romanization: jureul seoda
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: xếp hàng
+      examples:
+        - target: 사람이 많아서 30분 동안 줄을 섰어요.
+          translation:
+            vi: Đông người nên tôi xếp hàng 30 phút.
+      pronunciation_note:
+        vi: 줄을 đọc [주를]; 서다 → 서요, 섰어요.
+
+  - key: ko:item:joyonghada
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 조용하다
+      romanization: joyonghada
+      pos: tính từ
+    back:
+      meaning:
+        vi: yên tĩnh
+      examples:
+        - target: 도서관은 조용해서 공부하기 좋아요.
+          translation:
+            vi: Thư viện yên tĩnh nên học rất thích.
+      pronunciation_note:
+        vi: Đọc "chô-yông-ha-da"; định ngữ là 조용한.
+
+  - key: ko:item:sikdang
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 식당
+      romanization: sikdang
+      pos: danh từ
+    back:
+      meaning:
+        vi: quán ăn, nhà hàng (bình dân)
+      examples:
+        - target: 회사 앞 식당에서 점심을 먹었어요.
+          translation:
+            vi: Tôi ăn trưa ở quán ăn trước công ty.
+      pronunciation_note:
+        vi: Đọc [식땅] - ㄷ sau patchim ㄱ đọc căng.
+
+  # ---------------- bài 4: lời nói gián tiếp ----------------
+  - key: ko:item:gram-dago-hada
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: -ㄴ/는다고 하다 · -다고 하다 · N(이)라고 하다
+      romanization: -n/neundago hada · -dago hada · (i)rago hada
+      pos: trích dẫn (câu kể)
+    back:
+      meaning:
+        vi: Thuật lại câu kể "(ai) nói là…". Động từ - 간다고, 먹는다고; tính từ - 바쁘다고; quá khứ - 갔다고; danh từ - 학생이라고, 친구라고.
+      examples:
+        - target: 민수 씨가 내일 회사에 안 온다고 했어요.
+          translation:
+            vi: Minsu nói là ngày mai không đến công ty.
+        - target: 수진 씨가 요즘 바쁘다고 해요.
+          translation:
+            vi: Sujin bảo là dạo này bận.
+        - target: 그 사람이 대학생이라고 했어요.
+          translation:
+            vi: Người đó nói là sinh viên đại học.
+      pronunciation_note:
+        vi: 먹는다고 đọc [멍는다고] - ㄱ trước ㄴ thành ㅇ.
+      confusion:
+        vi: Sau danh từ không dùng -다고 (학생이다고 là sai); 이다 thành 이라고 - 학생이라고, sau nguyên âm thì 라고 - 의사라고.
+
+  - key: ko:item:gram-nyago-hada
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: -냐고 하다 · 묻다
+      romanization: -nyago hada · mutda
+      pos: trích dẫn (câu hỏi)
+    back:
+      meaning:
+        vi: Thuật lại câu hỏi "(ai) hỏi là… không / gì". Động từ, tính từ - 가냐고, 먹냐고, 바쁘냐고; danh từ - 학생이냐고, 어디냐고. Thường đi với 하다 hoặc 묻다/물어보다.
+      examples:
+        - target: 선생님이 숙제를 했냐고 물어보셨어요.
+          translation:
+            vi: Thầy giáo hỏi tôi đã làm bài tập chưa.
+        - target: 엄마가 몇 시에 오냐고 해요.
+          translation:
+            vi: Mẹ hỏi mấy giờ tôi về.
+      pronunciation_note:
+        vi: 했냐고 đọc [핸냐고] - ㅆ trước ㄴ thành ㄴ.
+      confusion:
+        vi: Sách cũ dạy tính từ + -(으)냐고 (좋으냐고) và động từ + -느냐고 (가느냐고); khi nói bây giờ người Hàn dùng -냐고 cho cả hai.
+
+  - key: ko:item:gram-jago-hada
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: -자고 하다
+      romanization: -jago hada
+      pos: trích dẫn (lời rủ)
+    back:
+      meaning:
+        vi: Thuật lại lời rủ "(ai) rủ cùng… ". Gắn vào thân động từ - 가자고, 먹자고; phủ định - 가지 말자고.
+      examples:
+        - target: 친구가 주말에 같이 등산하자고 했어요.
+          translation:
+            vi: Bạn tôi rủ cuối tuần cùng đi leo núi.
+      pronunciation_note:
+        vi: Gắn thẳng, không thêm 으 - 먹자고 [먹짜고].
+      confusion:
+        vi: Lời rủ gốc có thể là -아요/어요, -(으)ㅂ시다, -(으)ㄹ까요; khi thuật lại đều thành -자고.
+
+  - key: ko:item:gram-rago-hada
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: -(으)라고 하다
+      romanization: -(eu)rago hada
+      pos: trích dẫn (mệnh lệnh)
+    back:
+      meaning:
+        vi: Thuật lại lời bảo, khuyên "(ai) bảo hãy…". Thân không patchim - 가라고; có patchim - 먹으라고; phủ định - 가지 말라고. Nhờ làm cho mình - -아/어 달라고.
+      examples:
+        - target: 의사 선생님이 푹 쉬라고 했어요.
+          translation:
+            vi: Bác sĩ bảo tôi nghỉ ngơi cho khỏe.
+        - target: 팀장님이 회의 자료를 보내 달라고 하셨어요.
+          translation:
+            vi: Trưởng nhóm nhờ tôi gửi tài liệu họp.
+      pronunciation_note:
+        vi: 먹으라고 [머그라고]; thân có ㄹ - 만들라고.
+      confusion:
+        vi: 가라고 (bảo đi, mệnh lệnh) khác 간다고 (nói là sẽ đi, câu kể). Người Việt hay dùng -다고 cho mọi lời thuật lại.
+
+  - key: ko:item:gram-daeyo-raeyo
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: -대요 · -(이)래요 · -(으)래요 · -재요 · -냬요
+      romanization: -daeyo · -(i)raeyo · -(eu)raeyo · -jaeyo · -nyaeyo
+      pos: dạng rút gọn khi nói
+    back:
+      meaning:
+        vi: Dạng rút gọn của trích dẫn khi nói - -다고 해요 → -대요 (간대요, 바쁘대요), -(이)라고 해요 → -(이)래요 (학생이래요), -(으)라고 해요 → -(으)래요 (가래요), -자고 해요 → -재요, -냐고 해요 → -냬요.
+      examples:
+        - target: 내일 비가 온대요.
+          translation:
+            vi: Nghe nói mai trời mưa.
+        - target: 선생님이 내일까지 숙제를 내래요.
+          translation:
+            vi: Cô giáo bảo nộp bài tập trước ngày mai.
+      pronunciation_note:
+        vi: ㅐ đọc gần như ㅔ; 온대요 đọc "ôn-te-yô".
+      confusion:
+        vi: 학생이래요 (nghe nói là học sinh) và 가래요 (bảo hãy đi) cùng có 래요 nhưng nghĩa khác - nhìn trước 래요 là danh từ hay động từ.
+
+  - key: ko:item:jeonhada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 전하다
+      romanization: jeonhada
+      pos: động từ
+    back:
+      meaning:
+        vi: chuyển lời, truyền đạt (tin, lời nhắn)
+      examples:
+        - target: 민수 씨에게 내일 회의가 없다고 전해 주세요.
+          translation:
+            vi: Nhờ bạn nhắn với Minsu là mai không có họp.
+      pronunciation_note:
+        vi: Đọc [저나다] - ㅎ sau ㄴ gần như câm.
+      confusion:
+        vi: Lời nhắn đi với 전하다 (말을 전하다); gửi đồ vật dùng 보내다, 주다.
+
+  - key: ko:item:mureoboda
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 물어보다
+      romanization: mureoboda
+      pos: động từ
+    back:
+      meaning:
+        vi: hỏi (thử), hỏi xem
+      examples:
+        - target: 모르면 직원에게 물어보세요.
+          translation:
+            vi: Nếu không biết thì hỏi nhân viên nhé.
+      pronunciation_note:
+        vi: Đọc [무러보다]; 묻다 → 물어요 (ㄷ biến thành ㄹ trước nguyên âm).
+      confusion:
+        vi: 묻다 (hỏi) chia 물어요; 묻다 (chôn) chia 묻어요 - hai từ khác nhau.
+
+  - key: ko:item:butakada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 부탁하다
+      romanization: butakada
+      pos: động từ
+    back:
+      meaning:
+        vi: nhờ, nhờ vả
+      examples:
+        - target: 동생에게 우유를 사 오라고 부탁했어요.
+          translation:
+            vi: Tôi nhờ em mua sữa về.
+      pronunciation_note:
+        vi: Đọc [부타카다] - ㄱ gặp ㅎ thành ㅋ.
+      confusion:
+        vi: 잘 부탁드립니다 là câu chào khi bắt đầu làm việc cùng ("mong được giúp đỡ"), không phải đang nhờ việc cụ thể.
+
+  - key: ko:item:sosik
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 소식
+      romanization: sosik
+      pos: danh từ
+    back:
+      meaning:
+        vi: tin tức (về ai, việc gì)
+      examples:
+        - target: 좋은 소식이 있어요. 수진 씨가 결혼한대요.
+          translation:
+            vi: Có tin vui này. Nghe nói Sujin sắp cưới.
+      pronunciation_note:
+        vi: Đọc "sô-sik", ㄱ cuối không bật.
+      confusion:
+        vi: 소식 là tin về người, việc quen; tin thời sự trên TV là 뉴스.
+
+  - key: ko:item:hoeui
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 회의
+      romanization: hoeui
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc họp
+      examples:
+        - target: 회의가 3시로 바뀌었대요.
+          translation:
+            vi: Nghe nói cuộc họp đổi sang 3 giờ.
+      pronunciation_note:
+        vi: Khi nói thường đọc [회이] hoặc [훼이]; ㅢ không ở đầu từ thường đọc như ㅣ.
+
+  - key: ko:item:timjangnim
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 팀장님
+      romanization: timjangnim
+      pos: danh từ
+    back:
+      meaning:
+        vi: trưởng nhóm, trưởng phòng (cách gọi kính trọng)
+      examples:
+        - target: 팀장님이 오늘 일찍 퇴근하라고 하셨어요.
+          translation:
+            vi: Trưởng nhóm bảo hôm nay tan làm sớm.
+      pronunciation_note:
+        vi: Đọc "thim-jang-nim"; ㅌ bật hơi.
+      confusion:
+        vi: Gọi cấp trên bằng chức vụ + 님 (팀장님), không gọi tên kèm 씨.
+
+  # ---------------- bài 5: thông báo, bài blog ----------------
+  - key: ko:item:gongji
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 공지
+      romanization: gongji
+      pos: danh từ
+    back:
+      meaning:
+        vi: thông báo (dán ở tòa nhà, đăng trên trang web)
+      examples:
+        - target: 아파트 엘리베이터 앞에 공지가 붙어 있어요.
+          translation:
+            vi: Trước thang máy chung cư có dán thông báo.
+      pronunciation_note:
+        vi: Đọc "kông-ji"; ㅇ cuối là âm mũi "ng".
+
+  - key: ko:item:gongsa
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 공사
+      romanization: gongsa
+      pos: danh từ
+    back:
+      meaning:
+        vi: công trình, việc thi công, sửa chữa
+      examples:
+        - target: 공사 때문에 시끄러워요.
+          translation:
+            vi: Vì đang thi công nên ồn ào.
+      pronunciation_note:
+        vi: Đọc "kông-sa"; gần âm Hán Việt "công sự".
+
+  - key: ko:item:iyonghada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 이용하다
+      romanization: iyonghada
+      pos: động từ
+    back:
+      meaning:
+        vi: sử dụng (dịch vụ, phương tiện, cơ sở công cộng)
+      examples:
+        - target: 공사 기간에는 뒷문을 이용해 주세요.
+          translation:
+            vi: Trong thời gian thi công xin vui lòng dùng cửa sau.
+      pronunciation_note:
+        vi: Đọc "i-yông-ha-da"; Hán Việt "lợi dụng" nhưng nghĩa trung tính "sử dụng".
+      confusion:
+        vi: 이용하다 dùng cho dịch vụ, cơ sở (지하철, 도서관); dùng đồ vật cụ thể là 쓰다, 사용하다.
+
+  - key: ko:item:yanghae
+    type: phrase
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 양해 부탁드립니다
+      romanization: yanghae butakdeurimnida
+      pos: cụm cố định
+    back:
+      meaning:
+        vi: mong quý vị thông cảm (câu kết của thông báo)
+      examples:
+        - target: 불편을 드려 죄송합니다. 양해 부탁드립니다.
+          translation:
+            vi: Xin lỗi vì đã gây bất tiện. Mong quý vị thông cảm.
+      pronunciation_note:
+        vi: 부탁드립니다 đọc [부탁뜨림니다] - ㄷ căng, ㅂ trước ㄴ thành ㅁ.
+      confusion:
+        vi: Đây là văn phong thông báo trang trọng (합쇼체); khi nói với bạn bè dùng 이해해 줘요.
+
+  - key: ko:item:hugi
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 후기
+      romanization: hugi
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài cảm nhận, đánh giá sau khi dùng (review)
+      examples:
+        - target: 후기를 읽어 보니까 이 식당이 괜찮은 것 같아요.
+          translation:
+            vi: Đọc review thì thấy quán này có vẻ ổn.
+      pronunciation_note:
+        vi: Đọc "hu-gi"; ㅎ đầu nhẹ.
+
+  - key: ko:item:gidaehada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 기대하다
+      romanization: gidaehada
+      pos: động từ
+    back:
+      meaning:
+        vi: mong đợi, kỳ vọng
+      examples:
+        - target: 사람들이 맛있다고 해서 기대했는데 그냥 그랬어요.
+          translation:
+            vi: Mọi người bảo ngon nên tôi đã mong đợi, nhưng cũng bình thường.
+      pronunciation_note:
+        vi: Đọc "ki-te-ha-da"; ㅐ gần như ㅔ.
+      confusion:
+        vi: Hán Việt "kỳ đãi"; 기대가 크다 là kỳ vọng lớn, 기대 이하 là dưới mức mong đợi.

@@ -1,0 +1,410 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:business-email-phone
+order_index: 4
+level: topik4
+title:
+  vi: Email và điện thoại công việc - -기 위해서, -는 대로
+objectives:
+  - vi: Viết email công việc đúng khuôn - 안녕하십니까, 다름이 아니라, 첨부 파일, 확인 부탁드립니다.
+  - vi: Nghe và gọi điện công việc - 전화 바꿨습니다, 잠시만 기다려 주십시오, 다시 연락드리겠습니다.
+  - vi: Nói mục đích bằng V-기 위해서, lịch đã định bằng V-(으)ㄹ 예정입니다 và "ngay khi" bằng V-는 대로.
+estimated_minutes: 20
+skills: [writing, listening, speaking, grammar]
+prerequisites: [ko:lesson:honorifics-superiors]
+items:
+  - item: ko:item:annyeonghasimnikka
+  - item: ko:item:dareumi-anira
+  - item: ko:item:gram-eul-yejeongimnida
+  - item: ko:item:hwagin-butakdeurimnida
+  - item: ko:item:jamsiman-gidaryeo-jusipsio
+  - item: ko:item:gram-gi-wihaeseo
+  - item: ko:item:gram-neun-daero
+  - item: ko:item:jeonhwa-bakkwosseumnida
+  - item: ko:item:cheombu-pail
+  - item: ko:item:iljeong
+  - item: ko:item:sugohasyeosseumnida
+  - item: ko:item:dasi-yeollakdeurigetseumnida
+  - item: ko:item:yeollak
+    role: reuse
+  - item: ko:item:hoeui
+    role: reuse
+  - item: ko:item:chuljang
+    role: reuse
+  - item: ko:item:jaryo
+    role: reuse
+  - item: ko:item:gamsahamnida
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự viết một email công việc ngắn bằng tiếng Hàn và xử lý được một cuộc gọi đơn giản - nhận máy, chuyển máy, hẹn gọi lại.
+  - type: explain
+    text:
+      vi: 'Email công việc có khung cố định - người nhận + 님께, 안녕하십니까?, giới thiệu mình (phòng + tên + 입니다), 다름이 아니라 + mục đích, nội dung, 확인 부탁드립니다 / 감사합니다, tên + 드림. Toàn bộ viết bằng 합쇼체.'
+  - type: explain
+    text:
+      vi: 'Điện thoại - nhận máy nói 감사합니다, tên công ty + tên mình + 입니다; chuyển máy nói 잠시만 기다려 주십시오; người nhận máy chuyển tới nói 전화 바꿨습니다. Người cần gặp vắng thì hứa 다시 연락드리겠습니다.'
+  - type: explain
+    text:
+      vi: V-기 위해서 - "để" (mục đích); V-(으)ㄹ 예정입니다 - "dự kiến sẽ" (lịch đã định); V-는 대로 - "ngay khi... thì" và vế sau là việc sẽ làm. Cả ba rất hay gặp trong email và thông báo.
+  - type: deep_explain
+    text:
+      vi: 다름이 아니라 nghĩa đen là "không phải gì khác", nhưng thực tế chỉ là câu chuyển ý lịch sự - giống "Tôi viết thư này để..." trong tiếng Việt. -는 대로 chỉ dùng cho việc tương lai (hứa, yêu cầu); kể việc đã xảy ra thì dùng -자마자 - 회의가 끝나자마자 전화했어요. Còn -(으)ㄴ 대로 lại mang nghĩa "theo như" (말씀하신 대로 - theo như anh nói).
+  - type: example
+    target: |-
+      김민수 부장님께,
+      안녕하십니까? 영업부 응우옌 반 안입니다.
+      다름이 아니라 다음 주 출장 일정을 첨부 파일로 보내 드립니다. 하노이 공장을 방문하기 위해서 10월 20일에 출발할 예정입니다.
+      확인 부탁드립니다. 감사합니다.
+      응우옌 반 안 드림
+    target_lang: ko
+    translation:
+      vi: "Kính gửi trưởng phòng Kim Minsu. Xin chào anh, tôi là Nguyễn Văn An ở phòng kinh doanh. Tôi xin gửi lịch công tác tuần sau trong tệp đính kèm. Để đi thăm nhà máy Hà Nội, tôi dự kiến khởi hành ngày 20 tháng 10. Nhờ anh xem giúp. Cảm ơn anh. Nguyễn Văn An."
+    note:
+      vi: 드림 (kính gửi bởi) đứng sau tên người viết ở cuối email - dạng khiêm nhường của 줌.
+  - type: example
+    target: "A: 감사합니다. 한빛무역 영업부 이수진입니다. B: 안녕하십니까? 박 팀장님 계십니까? A: 잠시만 기다려 주십시오."
+    target_lang: ko
+    translation:
+      vi: "A: Xin cảm ơn, Lee Sujin phòng kinh doanh công ty Hanbit xin nghe. B: Xin chào, trưởng nhóm Park có ở đó không ạ? A: Xin anh chờ một chút."
+    note:
+      vi: Nhân viên Hàn thường nhấc máy bằng 감사합니다 thay vì 여보세요.
+  - type: example
+    target: 회의가 끝나는 대로 다시 연락드리겠습니다.
+    target_lang: ko
+    translation:
+      vi: Họp xong là tôi sẽ liên lạc lại ngay.
+  - type: example
+    target: 오늘 하루 수고하셨습니다. 내일 뵙겠습니다.
+    target_lang: ko
+    translation:
+      vi: Hôm nay mọi người vất vả rồi. Hẹn gặp lại ngày mai.
+    note:
+      vi: 뵙다 là khiêm nhường của 보다 (gặp).
+  - type: common_mistake
+    wrong: 부장님, 보고서 보내요. 확인해 주세요.
+    right: 부장님, 보고서를 보내 드립니다. 확인 부탁드립니다.
+    target_lang: ko
+    note:
+      vi: Người Việt hay viết email như nhắn tin, dùng 해요체. Email công việc dùng 합쇼체 và câu nhờ khiêm nhường 부탁드립니다.
+  - type: common_mistake
+    wrong: 확인한 대로 연락드리겠습니다.
+    right: 확인하는 대로 연락드리겠습니다.
+    target_lang: ko
+    note:
+      vi: '"Ngay khi" là -는 대로. -(으)ㄴ 대로 nghĩa là "theo như" - 확인한 대로 nghĩa là "theo như đã kiểm tra".'
+  - type: common_mistake
+    wrong: 계약하러 위해서 출장을 갑니다.
+    right: 계약하기 위해서 출장을 갑니다.
+    target_lang: ko
+    note:
+      vi: -기 위해서 gắn vào gốc động từ qua -기. Đừng trộn với -(으)러 (chỉ đi với 가다/오다) - 계약하러 갑니다 hoặc 계약하기 위해서 갑니다.
+  - type: summary
+    points:
+      - vi: Email - OO님께 → 안녕하십니까? → phòng + tên + 입니다 → 다름이 아니라... → 확인 부탁드립니다 → tên + 드림.
+      - vi: Điện thoại - 감사합니다, OO입니다 · 잠시만 기다려 주십시오 · 전화 바꿨습니다 · 다시 연락드리겠습니다.
+      - vi: V-기 위해서 - để; V-(으)ㄹ 예정입니다 - dự kiến sẽ.
+      - vi: V-는 대로 - ngay khi (vế sau là tương lai); việc đã xảy ra dùng -자마자.
+      - vi: 수고하셨습니다 - nói với đồng nghiệp; với sếp an toàn hơn là 고생 많으셨습니다 hay 감사합니다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:email-phone-mcq-dareumi
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:dareumi-anira
+    prompt:
+      stem: "Email: 안녕하십니까? 영업부 응우옌입니다. ( ... ) 회의 자료를 보내 드립니다. Cụm nào điền vào chỗ trống để chuyển sang mục đích email?"
+      stem_lang: vi
+      options:
+        - { id: q4z, text: 다름이 아니라, lang: ko }
+        - { id: r8b, text: 수고하셨습니다, lang: ko }
+        - { id: c6p, text: 잠시만 기다려 주십시오, lang: ko }
+        - { id: l3y, text: 전화 바꿨습니다, lang: ko }
+    answer:
+      correct_option_id: q4z
+    explanation:
+      vi: 다름이 아니라 đứng sau lời chào để dẫn vào mục đích. 수고하셨습니다 là lời chào khi xong việc; hai câu còn lại dùng khi nói điện thoại.
+    display_answer: 다름이 아니라
+
+  - key: ko:exercise:email-phone-listen-transfer
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:jamsiman-gidaryeo-jusipsio
+    prompt:
+      audio_asset_id: null
+      fallback_text: 담당자를 바꿔 드리겠습니다. 잠시만 기다려 주십시오.
+      options:
+        - { id: k7s, text: Tôi sẽ chuyển máy cho người phụ trách. Xin vui lòng chờ một chút., lang: vi }
+        - { id: a2n, text: Người phụ trách đã thay đổi. Xin vui lòng gọi lại sau., lang: vi }
+        - { id: t5e, text: Tôi là người phụ trách. Xin vui lòng nói chậm một chút., lang: vi }
+        - { id: i9m, text: Tôi sẽ gửi cho người phụ trách. Xin vui lòng kiểm tra., lang: vi }
+    answer:
+      correct_option_id: k7s
+    explanation:
+      vi: 바꿔 드리다 trên điện thoại là "chuyển máy (cho bạn) gặp ai đó"; 담당자 là người phụ trách; 잠시만 기다려 주십시오 - xin chờ một chút.
+    display_answer: Tôi sẽ chuyển máy cho người phụ trách. Xin vui lòng chờ một chút.
+
+  - key: ko:exercise:email-phone-mcq-neun-daero
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-neun-daero
+    prompt:
+      stem: 회의가 끝나는 대로 연락드리겠습니다. Câu này nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: s3g, text: Họp xong là tôi sẽ liên lạc ngay., lang: vi }
+        - { id: o8h, text: Tôi sẽ liên lạc theo như nội dung cuộc họp., lang: vi }
+        - { id: w2u, text: Trong lúc họp tôi sẽ liên lạc., lang: vi }
+        - { id: e6c, text: Họp xong rồi nên tôi đã liên lạc., lang: vi }
+    answer:
+      correct_option_id: s3g
+    explanation:
+      vi: V-는 대로 nghĩa là "ngay khi V thì...", vế sau là việc sẽ làm (-겠습니다). Không phải "theo như" (-(으)ㄴ 대로), cũng không phải quá khứ.
+    display_answer: Họp xong là tôi sẽ liên lạc ngay.
+
+  - key: ko:exercise:email-phone-fill-yejeong
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eul-yejeongimnida
+    prompt:
+      template: "다음 주 월요일에 하노이로 출장을 {{b1}} 예정입니다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Thứ Hai tuần sau tôi dự kiến đi công tác Hà Nội."
+        - "Gợi ý: 가다 + -(으)ㄹ (định ngữ tương lai)."
+    answer:
+      blanks:
+        b1: [갈]
+    known_wrong:
+      - answer: 가는
+        feedback_vi: Trước 예정 dùng định ngữ tương lai -(으)ㄹ - 갈 예정입니다.
+        error_tag: yejeong_form
+      - answer: 간
+        feedback_vi: 간 là định ngữ quá khứ. Kế hoạch tương lai cần 갈 예정입니다.
+        error_tag: yejeong_form
+    explanation:
+      vi: 예정 (dự kiến) luôn đi sau định ngữ tương lai -(으)ㄹ; 가다 không có patchim nên thành 갈.
+    display_answer: 다음 주 월요일에 하노이로 출장을 갈 예정입니다.
+
+  - key: ko:exercise:email-phone-wb-confirm
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:hwagin-butakdeurimnida
+    prompt:
+      instruction: "Sắp xếp thành câu kết email: \"Nhờ anh/chị kiểm tra tệp đính kèm.\""
+      tokens:
+        - { id: h3, text: 확인 }
+        - { id: h5, text: 확인해 }
+        - { id: h1, text: 첨부 }
+        - { id: h4, text: 부탁드립니다 }
+        - { id: h2, text: 파일 }
+    answer:
+      orders:
+        - [h1, h2, h3, h4]
+    explanation:
+      vi: Mẫu N + 부탁드립니다 - danh từ 확인 đứng ngay trước 부탁드립니다. 확인해 cần đi với 주십시오, không đi với 부탁드립니다.
+    display_answer: 첨부 파일 확인 부탁드립니다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:email-phone-fill-wihaeseo
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-gi-wihaeseo
+    prompt:
+      template: "계약을 {{b1}} 위해서 다음 달에 베트남으로 출장을 갑니다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [하기]
+    known_wrong:
+      - answer: 하러
+        feedback_vi: -(으)러 không đi với 위해서. Dùng -기 위해서 - 하기 위해서.
+        error_tag: gi_wihaeseo_form
+      - answer: 하는
+        feedback_vi: 위해서 cần danh từ hoá bằng -기 - 하기 위해서.
+        error_tag: gi_wihaeseo_form
+    explanation:
+      vi: Mục đích "để ký hợp đồng" - 계약을 하기 위해서; -기 biến động từ thành danh từ trước 위해서.
+    display_answer: 계약을 하기 위해서 다음 달에 베트남으로 출장을 갑니다.
+
+  - key: ko:exercise:email-phone-translate-call-back
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-neun-daero
+    prompt:
+      source_text: Kiểm tra xong là tôi sẽ liên lạc lại ngay. (nói với khách hàng)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 확인하는 대로 다시 연락드리겠습니다.
+        - 확인하는 대로 연락드리겠습니다.
+        - 확인하는 대로 바로 연락드리겠습니다.
+        - 확인하는 대로 바로 다시 연락드리겠습니다.
+        - 확인이 끝나는 대로 다시 연락드리겠습니다.
+        - 확인이 끝나는 대로 연락드리겠습니다.
+        - 확인하는 대로 곧 연락드리겠습니다.
+        - 제가 확인하는 대로 다시 연락드리겠습니다.
+    known_wrong:
+      - answer: 확인한 대로 다시 연락드리겠습니다.
+        feedback_vi: -(으)ㄴ 대로 là "theo như". "Ngay khi" dùng -는 대로 - 확인하는 대로.
+        error_tag: neun_daero_form
+      - answer: 확인하는 대로 다시 연락했습니다.
+        feedback_vi: Vế sau của -는 대로 phải là việc sẽ làm - 연락드리겠습니다.
+        error_tag: neun_daero_tense
+      - answer: 확인하는 대로 다시 연락할게.
+        feedback_vi: Với khách hàng phải dùng 합쇼체 và khiêm nhường - 연락드리겠습니다.
+        error_tag: speech_level
+    explanation:
+      vi: 확인하는 대로 - ngay khi kiểm tra; 다시 연락드리겠습니다 - lời hứa khiêm nhường, trang trọng với khách.
+    display_answer: 확인하는 대로 다시 연락드리겠습니다.
+
+  - key: ko:exercise:email-phone-translate-schedule
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eul-yejeongimnida
+    prompt:
+      source_text: Cuộc họp dự kiến bắt đầu lúc 3 giờ. (văn bản thông báo)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 회의는 3시에 시작할 예정입니다.
+        - 회의가 3시에 시작할 예정입니다.
+        - 회의는 3시에 시작될 예정입니다.
+        - 회의가 3시에 시작될 예정입니다.
+        - 회의는 세 시에 시작할 예정입니다.
+        - 회의는 세 시에 시작될 예정입니다.
+        - 회의는 3시부터 시작할 예정입니다.
+        - 회의는 3시에 시작할 예정이에요.
+    known_wrong:
+      - answer: 회의는 3시에 시작하는 예정입니다.
+        feedback_vi: Trước 예정 dùng định ngữ tương lai - 시작할 예정입니다.
+        error_tag: yejeong_form
+      - answer: 회의는 3시에 시작한 예정입니다.
+        feedback_vi: 시작한 là quá khứ. Lịch tương lai dùng 시작할 예정입니다.
+        error_tag: yejeong_form
+      - answer: 회의는 삼 시에 시작할 예정입니다.
+        feedback_vi: Giờ đọc bằng số thuần Hàn - 세 시 (3시), không phải 삼 시.
+        error_tag: native_number
+    explanation:
+      vi: V-(으)ㄹ 예정입니다 - dự kiến sẽ; 시작하다 → 시작할. 3시 đọc là 세 시.
+    display_answer: 회의는 3시에 시작할 예정입니다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:email-phone-mcq-closing
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hwagin-butakdeurimnida
+    prompt:
+      stem: Bạn gửi báo giá cho một khách hàng mới qua email. Câu kết nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: m6d, text: 검토 후 확인 부탁드립니다. 감사합니다., lang: ko }
+        - { id: f1x, text: 확인해. 고마워., lang: ko }
+        - { id: j4q, text: 확인해요. 고마워요., lang: ko }
+        - { id: b8t, text: 확인하십니까? 감사합니까?, lang: ko }
+    answer:
+      correct_option_id: m6d
+    explanation:
+      vi: Email gửi khách dùng 합쇼체 và câu nhờ khiêm nhường - 확인 부탁드립니다. 확인해 là thân mật; 확인해요 là 해요체, thiếu trang trọng; câu thứ tư sai vì biến lời nhờ thành câu hỏi.
+    display_answer: 검토 후 확인 부탁드립니다. 감사합니다.
+
+  - key: ko:exercise:email-phone-mcq-bakkwotseumnida
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:jeonhwa-bakkwosseumnida
+    prompt:
+      stem: Đồng nghiệp chuyển cuộc gọi của khách sang máy bạn. Bạn nhấc máy và nói gì?
+      stem_lang: vi
+      options:
+        - { id: n2w, text: 전화 바꿨습니다. 영업부 응우옌입니다., lang: ko }
+        - { id: d9k, text: 전화를 새로 샀습니다. 응우옌입니다., lang: ko }
+        - { id: y5a, text: 여보세요? 누구야?, lang: ko }
+        - { id: u7g, text: 잠시만 기다려 주십시오. 전화 바꿨습니다., lang: ko }
+    answer:
+      correct_option_id: n2w
+    explanation:
+      vi: 전화 바꿨습니다 + phòng + tên là câu cố định khi nhận cuộc gọi được chuyển. 잠시만 기다려 주십시오 là câu của người chuyển máy; 누구야 là thân mật.
+    display_answer: 전화 바꿨습니다. 영업부 응우옌입니다.
+
+  - key: ko:exercise:email-phone-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:iljeong
+    prompt:
+      source_text: 다름이 아니라 다음 주 회의 일정 때문에 연락드렸습니다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chẳng là tôi liên lạc vì lịch họp tuần sau.
+        - Chẳng là tôi liên lạc về lịch họp tuần sau.
+        - Tôi liên lạc vì lịch họp tuần sau.
+        - Tôi liên lạc với anh về lịch họp tuần sau.
+        - Tôi liên lạc với chị về lịch họp tuần sau.
+        - Tôi liên lạc để trao đổi về lịch họp tuần sau.
+        - Chẳng là tôi liên hệ vì lịch họp tuần sau.
+        - Tôi liên hệ về lịch họp tuần sau.
+        - Tôi viết thư này về lịch họp tuần sau.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Không có gì khác, tôi liên lạc vì lịch họp tuần sau.
+        feedback_vi: 다름이 아니라 là câu chuyển ý, không dịch từng chữ "không có gì khác".
+        error_tag: literal_translation
+      - answer: Chẳng là tôi liên lạc vì lịch công tác tuần sau.
+        feedback_vi: 회의 일정 là lịch họp; công tác là 출장.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 다름이 아니라 dẫn vào mục đích ("chẳng là"); 회의 일정 - lịch họp; 연락드렸습니다 - khiêm nhường "tôi đã liên lạc".
+    display_answer: Chẳng là tôi liên lạc vì lịch họp tuần sau.
+
+  - key: ko:exercise:email-phone-wb-neun-daero
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-neun-daero
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Đến sân bay là tôi gọi điện ngay.\""
+      tokens:
+        - { id: d4, text: 도착한 대로 }
+        - { id: d3, text: 전화드리겠습니다 }
+        - { id: d1, text: 공항에 }
+        - { id: d2, text: 도착하는 대로 }
+    answer:
+      orders:
+        - [d1, d2, d3]
+    explanation:
+      vi: '"Ngay khi" là -는 대로 - 도착하는 대로; 도착한 대로 nghĩa là "theo như đã đến", sai nghĩa. Vế sau là lời hứa ở tương lai - 전화드리겠습니다.'
+    display_answer: 공항에 도착하는 대로 전화드리겠습니다.

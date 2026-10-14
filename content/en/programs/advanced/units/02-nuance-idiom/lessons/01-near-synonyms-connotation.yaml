@@ -1,0 +1,416 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:near-synonyms-connotation
+order_index: 1
+level: c2
+title:
+  vi: Từ gần nghĩa & sắc thái khen chê
+objectives:
+  - vi: Phân biệt sắc thái tích cực, trung tính, tiêu cực của các cặp từ gần nghĩa (slim/skinny, determined/stubborn, frugal/stingy…).
+  - vi: Dùng đúng các cặp hay nhầm - economic/economical, affect/effect, sensible/sensitive.
+  - vi: Chọn từ phù hợp ngữ cảnh để khen, chê hay giữ trung lập một cách có chủ ý.
+estimated_minutes: 18
+skills: [vocabulary, reading, writing]
+prerequisites: [en:lesson:academic-professional-review]
+items:
+  - item: en:item:connotation
+  - item: en:item:thin-slim-skinny
+  - item: en:item:stubborn-determined
+  - item: en:item:cheap-inexpensive
+  - item: en:item:frugal-stingy
+  - item: en:item:economic-economical
+  - item: en:item:affect-effect
+  - item: en:item:childlike-childish
+  - item: en:item:renowned-notorious
+  - item: en:item:assertive-aggressive
+  - item: en:item:sensible-sensitive
+  - item: en:item:cheap
+    role: reuse
+  - item: en:item:have-an-impact-on
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Ở trình độ C2, chọn đúng nghĩa thôi chưa đủ - bạn cần chọn đúng sắc thái. Sau bài này, bạn biết vì sao "She's slim" là khen còn "She's skinny" có thể làm người nghe phật lòng.
+  - type: explain
+    text:
+      vi: Nhiều từ tiếng Anh có cùng nghĩa từ điển (denotation) nhưng khác sắc thái (connotation). Determined và stubborn đều là "không chịu bỏ cuộc", nhưng một từ khen, một từ chê. Tiếng Việt cũng vậy - "kiên định" và "cố chấp", "tiết kiệm" và "keo kiệt".
+  - type: explain
+    text:
+      vi: Khi viết trang trọng hoặc nói về người khác, hãy ưu tiên từ trung tính hoặc tích cực - inexpensive thay cho cheap, slim thay cho skinny. Chỉ dùng từ mang sắc thái chê khi bạn thực sự muốn phê phán.
+  - type: explain
+    text:
+      vi: Có những cặp không khác sắc thái mà khác hẳn nghĩa, chỉ giống mặt chữ - economic (thuộc kinh tế) và economical (tiết kiệm), affect (động từ) và effect (danh từ), sensible (hợp lý) và sensitive (nhạy cảm). Người Việt hay nhầm vì dịch theo từ Hán Việt "kinh tế".
+  - type: deep_explain
+    text:
+      vi: Một mẹo phân tích - đặt từ vào thang từ "khen" đến "chê" - slender, slim → thin → skinny, scrawny, bony. Với tiền bạc - thrifty, frugal → economical → tight, stingy, mean. Người viết C2 dùng thang này có chủ ý, ví dụ một bài phê bình có thể gọi cùng một chính sách là "bold" hoặc "reckless".
+  - type: example
+    target: She is determined to get the scholarship, and she studies every evening.
+    target_lang: en
+    translation:
+      vi: Cô ấy quyết tâm giành học bổng nên tối nào cũng học.
+    note:
+      vi: Determined - người nói đánh giá tích cực sự kiên trì.
+  - type: example
+    target: He is too stubborn to listen to anyone else's advice.
+    target_lang: en
+    translation:
+      vi: Anh ta quá cứng đầu, chẳng chịu nghe lời khuyên của ai.
+    note:
+      vi: Stubborn - cùng sự kiên trì, nhưng người nói phê phán.
+  - type: example
+    target: We are looking for an inexpensive venue that can hold 200 guests.
+    target_lang: en
+    translation:
+      vi: Chúng tôi đang tìm một địa điểm giá phải chăng, chứa được 200 khách.
+    note:
+      vi: Inexpensive lịch sự hơn cheap trong email công việc; cheap venue nghe như "chỗ rẻ tiền".
+  - type: example
+    target: Buying a hybrid car is more economical in the long run.
+    target_lang: en
+    translation:
+      vi: Về lâu dài, mua xe hybrid tiết kiệm hơn.
+    note:
+      vi: Economical = tiết kiệm chi phí; economic chỉ dùng cho những gì liên quan đến nền kinh tế.
+  - type: example
+    target: The storm affected thousands of homes, but its effect on tourism was limited.
+    target_lang: en
+    translation:
+      vi: Cơn bão ảnh hưởng đến hàng nghìn ngôi nhà, nhưng tác động của nó lên du lịch không lớn.
+    note:
+      vi: Affected là động từ; effect là danh từ, đi với on.
+  - type: common_mistake
+    wrong: I want to buy an economic car to save money.
+    right: I want to buy an economical car to save money.
+    target_lang: en
+    note:
+      vi: “Xe tiết kiệm” là economical; economic chỉ nghĩa "thuộc về kinh tế" (economic policy).
+  - type: common_mistake
+    wrong: The new policy will effect on many families.
+    right: The new policy will affect many families.
+    target_lang: en
+    note:
+      vi: Affect là động từ và đi thẳng với tân ngữ, không có on. Nếu muốn dùng on, đổi sang have an effect on.
+  - type: common_mistake
+    wrong: You look so skinny! Have you been to the gym?
+    right: You look so slim! Have you been going to the gym?
+    target_lang: en
+    note:
+      vi: Muốn khen ngoại hình thì dùng slim; skinny dễ bị hiểu là "gầy nhom, ốm yếu".
+  - type: common_mistake
+    wrong: That's a very sensible question, so let's discuss it privately.
+    right: That's a very sensitive question, so let's discuss it privately.
+    target_lang: en
+    note:
+      vi: “Nhạy cảm” là sensitive; sensible nghĩa là "hợp lý, biết điều".
+  - type: summary
+    points:
+      - vi: Connotation là sắc thái khen/chê/trung tính đi kèm từ; chọn từ là chọn thái độ.
+      - vi: Khen - slim, determined, frugal, childlike, renowned, assertive. Chê - skinny, stubborn, stingy, childish, notorious, pushy.
+      - vi: Văn trang trọng - inexpensive/affordable thay cho cheap.
+      - vi: economic (kinh tế) ≠ economical (tiết kiệm); affect (động từ) ≠ effect (danh từ, have an effect on).
+      - vi: sensible = hợp lý; sensitive = nhạy cảm.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:connotation-mcq-compliment
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:thin-slim-skinny
+    prompt:
+      stem: "Bạn muốn khen một đồng nghiệp vừa giảm cân. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: p3k, text: "You look really slim these days!", lang: en }
+        - { id: z8q, text: "You look really skinny these days!", lang: en }
+        - { id: m1v, text: "You look really bony these days!", lang: en }
+        - { id: t6w, text: "You look really scrawny these days!", lang: en }
+    answer:
+      correct_option_id: p3k
+    explanation:
+      vi: Slim mang sắc thái tích cực (thon thả). Skinny, bony, scrawny đều gợi "gầy nhom, trơ xương", nghe như chê sức khoẻ của người đó.
+    display_answer: "You look really slim these days!"
+
+  - key: en:exercise:connotation-mcq-negative
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:stubborn-determined
+    prompt:
+      stem: "Từ nào thể hiện người nói CHÊ một người không chịu thay đổi ý kiến?"
+      stem_lang: vi
+      options:
+        - { id: h2r, text: stubborn, lang: en }
+        - { id: c9d, text: determined, lang: en }
+        - { id: y4n, text: persistent, lang: en }
+        - { id: k7s, text: resolute, lang: en }
+    answer:
+      correct_option_id: h2r
+    explanation:
+      vi: Stubborn là "cứng đầu, bướng bỉnh" - chê. Determined, persistent, resolute đều khen sự kiên trì, quyết tâm.
+    display_answer: stubborn
+
+  - key: en:exercise:connotation-listen-notorious
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:renowned-notorious
+    prompt:
+      audio_asset_id: null
+      fallback_text: This stretch of road is notorious for traffic jams during the rainy season.
+      options:
+        - { id: f5b, text: Đoạn đường này khét tiếng hay kẹt xe vào mùa mưa., lang: vi }
+        - { id: w2j, text: Đoạn đường này nổi tiếng đẹp vào mùa mưa., lang: vi }
+        - { id: e8u, text: Đoạn đường này hiếm khi kẹt xe vào mùa mưa., lang: vi }
+        - { id: g1x, text: Đoạn đường này mới được sửa trước mùa mưa., lang: vi }
+    answer:
+      correct_option_id: f5b
+    explanation:
+      vi: Notorious for là "khét tiếng vì" một điều xấu - ở đây là kẹt xe. Nếu muốn khen, người nói sẽ dùng renowned for hoặc famous for.
+    display_answer: Đoạn đường này khét tiếng hay kẹt xe vào mùa mưa.
+
+  - key: en:exercise:connotation-fill-affect-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:affect-effect
+    prompt:
+      template: "Lack of sleep can {{b1}} your concentration, and the {{b2}} is often worse in the afternoon."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Thiếu ngủ có thể ảnh hưởng đến khả năng tập trung, và tác động này thường tệ hơn vào buổi chiều."
+        - "Gợi ý: ô 1 là động từ (a…), ô 2 là danh từ đứng sau the (e…)."
+    answer:
+      blanks:
+        b1: [affect]
+        b2: [effect]
+    known_wrong:
+      - answer: effects
+        feedback_vi: Sau can là động từ nguyên mẫu; "ảnh hưởng đến" là affect, không phải effect(s).
+        error_tag: affect_effect
+      - answer: affection
+        feedback_vi: Affection là "tình cảm, sự trìu mến", không phải "tác động".
+        error_tag: affect_effect
+    explanation:
+      vi: Sau can cần động từ - affect (ảnh hưởng đến). Sau the cần danh từ - effect (tác động). Hai từ đọc gần giống nhau nên phải dựa vào vị trí trong câu.
+    display_answer: Lack of sleep can affect your concentration, and the effect is often worse in the afternoon.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:connotation-fill-economical
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:economic-economical
+    prompt:
+      template: "During the {{b1}} downturn, many families switched to more {{b2}} ways of heating their homes."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [economic]
+        b2: [economical]
+    known_wrong:
+      - answer: economy
+        feedback_vi: Economy là danh từ; trước downturn cần tính từ economic (economic downturn).
+        error_tag: word_form
+      - answer: economics
+        feedback_vi: Economics là môn kinh tế học, không đứng trước danh từ để nói "thuộc về kinh tế".
+        error_tag: word_form
+      - answer: cheap
+        feedback_vi: More cheap sai dạng so sánh (cheaper), và cheap dễ gợi "rẻ tiền"; ý "tiết kiệm chi phí" là economical.
+        error_tag: economic_economical
+    explanation:
+      vi: Economic downturn là "suy thoái kinh tế" - liên quan đến nền kinh tế. More economical ways là "cách tiết kiệm hơn" - liên quan đến chi tiêu ít. Người Việt hay đảo hai từ này vì cùng dịch là "kinh tế".
+    display_answer: During the economic downturn, many families switched to more economical ways of heating their homes.
+
+  - key: en:exercise:connotation-fill-sensible
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sensible-sensitive
+    prompt:
+      template: "Bringing an umbrella was a {{b1}} decision, but please avoid {{b2}} topics like politics at dinner."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [sensible, wise]
+        b2: [sensitive, controversial]
+    known_wrong:
+      - answer: sensational
+        feedback_vi: Sensational là "giật gân" hoặc "tuyệt vời", không phải "hợp lý" hay "nhạy cảm".
+        error_tag: sensible_sensitive
+    explanation:
+      vi: Mang ô là quyết định hợp lý - sensible. Chính trị là chủ đề nhạy cảm - sensitive. Sensible là "false friend" vì trông giống "nhạy cảm".
+    display_answer: Bringing an umbrella was a sensible decision, but please avoid sensitive topics like politics at dinner.
+
+  - key: en:exercise:connotation-translate-frugal
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:frugal-stingy
+    prompt:
+      source_text: Bà tôi rất tằn tiện nhưng không bao giờ keo kiệt với hàng xóm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My grandmother is very frugal, but she is never stingy with her neighbours.
+        - My grandmother is very frugal but she is never stingy with her neighbours.
+        - My grandmother is very frugal, but she's never stingy with her neighbours.
+        - My grandmother is very frugal, but she is never stingy with her neighbors.
+        - My grandmother is very frugal, but she's never stingy with her neighbors.
+        - My grandmother is very frugal but never stingy with her neighbours.
+        - My grandmother is very frugal but never stingy with her neighbors.
+        - My grandmother is very thrifty, but she is never stingy with her neighbours.
+        - My grandmother is very thrifty, but she's never stingy with her neighbours.
+        - My grandmother is very thrifty but never stingy with her neighbours.
+        - My grandmother is very thrifty, but she is never stingy with her neighbors.
+        - My grandmother is very frugal, but she is never mean with her neighbours.
+        - My grandma is very frugal, but she is never stingy with her neighbours.
+        - My grandma is very frugal but never stingy with her neighbours.
+        - My grandmother is extremely frugal, but she is never stingy with her neighbours.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My grandmother is very stingy, but she is never frugal with her neighbours.
+        feedback_vi: Bạn đảo hai từ - tằn tiện (khen) là frugal, keo kiệt (chê) là stingy.
+        error_tag: connotation
+      - answer: My grandmother is very cheap, but she is never stingy with her neighbours.
+        feedback_vi: Nói người là cheap nghĩa là "keo kiệt", trùng với stingy; "tằn tiện" mang ý khen nên dùng frugal hoặc thrifty.
+        error_tag: connotation
+      - answer: My grandmother is very economic, but she is never stingy with her neighbours.
+        feedback_vi: Economic là "thuộc về kinh tế"; người tằn tiện là frugal hoặc thrifty.
+        error_tag: economic_economical
+    explanation:
+      vi: “Tằn tiện” là khen sự biết tiết kiệm - frugal/thrifty; “keo kiệt” là chê - stingy/mean. Câu đối lập hai sắc thái này bằng but.
+    display_answer: My grandmother is very frugal, but she is never stingy with her neighbours.
+
+  - key: en:exercise:connotation-translate-to-vi-childlike
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:childlike-childish
+    prompt:
+      source_text: Despite his age, he has a childlike curiosity about everything.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù đã lớn tuổi, ông ấy vẫn tò mò về mọi thứ một cách hồn nhiên như trẻ con.
+        - Dù đã lớn tuổi, ông ấy vẫn có sự tò mò hồn nhiên như trẻ thơ về mọi thứ.
+        - Dù lớn tuổi, ông ấy vẫn tò mò hồn nhiên như trẻ con về mọi thứ.
+        - Mặc dù đã lớn tuổi, ông ấy vẫn có sự tò mò hồn nhiên như trẻ thơ về mọi thứ.
+        - Dù đã có tuổi, anh ấy vẫn tò mò hồn nhiên như trẻ con về mọi thứ.
+        - Dù tuổi đã cao, ông ấy vẫn có sự tò mò như trẻ thơ về mọi thứ.
+        - Dù đã lớn tuổi, ông ấy vẫn tò mò về mọi thứ như một đứa trẻ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Dù đã lớn tuổi, ông ấy vẫn trẻ con và thiếu chín chắn về mọi thứ.
+        feedback_vi: Childlike là khen (hồn nhiên); "trẻ con, thiếu chín chắn" là nghĩa của childish.
+        error_tag: connotation
+    explanation:
+      vi: Childlike mang sắc thái tích cực - hồn nhiên, trong sáng. Despite his age dịch tự nhiên là "dù đã lớn tuổi".
+    display_answer: Dù đã lớn tuổi, ông ấy vẫn có sự tò mò hồn nhiên như trẻ thơ về mọi thứ.
+
+  # ---------------- application ----------------
+  - key: en:exercise:connotation-mcq-ad-copy
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:cheap-inexpensive
+    prompt:
+      stem: "Bạn viết quảng cáo cho một khách sạn bình dân nhưng sạch đẹp. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: v3a, text: "Comfortable rooms at affordable prices, right in the city centre.", lang: en }
+        - { id: n9c, text: "Cheap rooms at cheap prices, right in the city centre.", lang: en }
+        - { id: d6e, text: "Stingy prices for basic rooms, right in the city centre.", lang: en }
+        - { id: q2m, text: "Economic rooms at economic prices, right in the city centre.", lang: en }
+    answer:
+      correct_option_id: v3a
+    explanation:
+      vi: Affordable nghe tích cực ("vừa túi tiền") nên hợp với quảng cáo. Cheap dễ gợi "rẻ tiền, kém chất lượng"; stingy chỉ dùng cho người keo kiệt; economic là "thuộc về kinh tế".
+    display_answer: "Comfortable rooms at affordable prices, right in the city centre."
+
+  - key: en:exercise:connotation-order-affect
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:affect-effect
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Giá nhiên liệu tăng đã có tác động nghiêm trọng đến các hãng hàng không giá rẻ.\""
+      tokens:
+        - { id: x-effect, text: effect }
+        - { id: x-rising, text: Rising }
+        - { id: x-on, text: on }
+        - { id: x-had, text: have had }
+        - { id: x-airlines, text: low-cost airlines }
+        - { id: x-a, text: a }
+        - { id: x-fuel, text: fuel prices }
+        - { id: x-serious, text: serious }
+        - { id: x-affect, text: affect }
+    answer:
+      orders:
+        - [x-rising, x-fuel, x-had, x-a, x-serious, x-effect, x-on, x-airlines]
+    explanation:
+      vi: Cụm cố định have an effect on - effect là danh từ nên có a serious đứng trước. Affect là động từ nên không đi với a hay on. Low-cost là cách nói trung tính cho "giá rẻ", tránh cheap.
+    display_answer: Rising fuel prices have had a serious effect on low-cost airlines.
+
+  - key: en:exercise:connotation-translate-assertive
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:assertive-aggressive
+    prompt:
+      source_text: Trong đàm phán, bạn nên quyết đoán chứ không nên hung hăng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - In negotiations, you should be assertive, not aggressive.
+        - In negotiations, you should be assertive rather than aggressive.
+        - In negotiations you should be assertive, not aggressive.
+        - In negotiations you should be assertive rather than aggressive.
+        - In a negotiation, you should be assertive, not aggressive.
+        - In a negotiation, you should be assertive rather than aggressive.
+        - When negotiating, you should be assertive, not aggressive.
+        - When negotiating, you should be assertive rather than aggressive.
+        - In negotiations, you should be assertive but not aggressive.
+        - When you negotiate, you should be assertive, not aggressive.
+        - When you negotiate, you should be assertive rather than aggressive.
+        - You should be assertive, not aggressive, in negotiations.
+        - You should be assertive rather than aggressive in negotiations.
+        - In negotiations, you should be assertive and not aggressive.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: In negotiations, you should be aggressive, not assertive.
+        feedback_vi: Bạn đảo hai từ - quyết đoán (tích cực) là assertive, hung hăng (tiêu cực) là aggressive.
+        error_tag: connotation
+      - answer: In negotiations, you should be pushy, not aggressive.
+        feedback_vi: Pushy là "chèo kéo, thúc ép" - cũng mang nghĩa chê, không phải "quyết đoán".
+        error_tag: connotation
+    explanation:
+      vi: Assertive là tự tin nêu và bảo vệ quan điểm một cách đúng mực - phẩm chất được khen trong công việc. Aggressive là hung hăng, áp đảo người khác. Rather than hoặc not đều diễn đạt "chứ không".
+    display_answer: In negotiations, you should be assertive, not aggressive.

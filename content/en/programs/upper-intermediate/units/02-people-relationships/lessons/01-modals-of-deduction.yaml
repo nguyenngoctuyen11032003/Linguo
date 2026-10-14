@@ -1,0 +1,433 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:modals-of-deduction
+order_index: 1
+level: b2
+title:
+  vi: Chắc hẳn là… - suy đoán về người khác
+objectives:
+  - vi: Suy đoán ở hiện tại bằng must / might / could / can't + V.
+  - vi: Suy đoán về quá khứ bằng must have / might have / can't have + V3.
+  - vi: Tránh các lỗi "must had", "can't have saw" và dùng mustn't sai nghĩa.
+estimated_minutes: 18
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:opinions-society-review]
+items:
+  - item: en:item:must-deduction
+  - item: en:item:cant-deduction
+  - item: en:item:might-could-deduction
+  - item: en:item:must-have-done
+  - item: en:item:cant-have-done
+  - item: en:item:might-have-done
+  - item: en:item:acquaintance
+  - item: en:item:flatmate
+  - item: en:item:lose-touch-with
+  - item: en:item:keep-in-touch
+  - item: en:item:jealous
+  - item: en:item:upset
+  - item: en:item:ignore
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đoán được người khác đang nghĩ gì, đã làm gì dựa trên những gì bạn thấy - "Chắc cô ấy quên rồi", "Anh ấy không thể đã thấy mình được" - với mức độ chắc chắn khác nhau.
+  - type: explain
+    text:
+      vi: "Tiếng Việt dùng \"chắc hẳn\", \"có lẽ\", \"không thể nào\" đứng trước động từ. Tiếng Anh dùng động từ khuyết thiếu theo độ chắc chắn: must (gần 100% đúng), might / may / could (khoảng 50%), can't (gần 100% sai)."
+  - type: explain
+    text:
+      vi: "Khi đoán về hiện tại, dùng modal + V nguyên mẫu - She must be tired. Khi đoán về quá khứ, tiếng Việt chỉ cần thêm \"đã\", còn tiếng Anh dùng modal + have + V3 - She must have forgotten."
+  - type: explain
+    text:
+      vi: Phủ định của must suy luận là can't (hoặc couldn't), không phải mustn't. Mustn't nghĩa là "cấm", nên "He mustn't be at home" nghe rất lạ.
+  - type: deep_explain
+    text:
+      vi: "Sau must / might / can't luôn là have nguyên mẫu, dù chủ ngữ là he hay she (she must have, không phải \"must has\" hay \"must had\"). Động từ sau have luôn là V3: seen, gone, known, forgotten - đây là chỗ người Việt hay viết nhầm sang V2. Khi đoán việc đang diễn ra, bạn có thể dùng modal + be + V-ing: He might be sleeping (Có lẽ anh ấy đang ngủ)."
+  - type: example
+    target: Lan isn't answering her phone. She must be in a meeting.
+    target_lang: en
+    translation:
+      vi: Lan không nghe máy. Chắc hẳn cô ấy đang họp.
+    note:
+      vi: Bằng chứng (không nghe máy) dẫn tới kết luận gần như chắc chắn, nên dùng must + be.
+  - type: example
+    target: You can't have seen Minh yesterday - he was in Đà Nẵng all week.
+    target_lang: en
+    translation:
+      vi: Bạn không thể nào đã gặp Minh hôm qua được - cả tuần anh ấy ở Đà Nẵng mà.
+    note:
+      vi: Can't have + V3 (seen) - chắc chắn việc đó đã không xảy ra.
+  - type: example
+    target: "I haven't heard from Huy for years. He might have moved abroad - we lost touch after school."
+    target_lang: en
+    translation:
+      vi: Mấy năm rồi tôi không nghe tin gì về Huy. Có lẽ anh ấy đã ra nước ngoài - chúng tôi mất liên lạc sau khi ra trường.
+    note:
+      vi: Might have + V3 cho một phỏng đoán không chắc về quá khứ.
+  - type: example
+    target: She looks upset. Her flatmate must have said something to her.
+    target_lang: en
+    translation:
+      vi: Trông cô ấy buồn bực. Chắc bạn cùng nhà đã nói gì đó với cô ấy.
+  - type: common_mistake
+    wrong: She must had forgotten my birthday.
+    right: She must have forgotten my birthday.
+    target_lang: en
+    note:
+      vi: Sau must luôn là have nguyên mẫu. Tiếng Việt chỉ thêm "đã", còn tiếng Anh đánh dấu quá khứ bằng have + V3, không đổi have thành had.
+  - type: common_mistake
+    wrong: He can't have saw us.
+    right: He can't have seen us.
+    target_lang: en
+    note:
+      vi: Sau have phải là V3 (seen), không phải V2 (saw). Hãy học thuộc bộ ba see - saw - seen.
+  - type: common_mistake
+    wrong: He mustn't be at home - the lights are off.
+    right: He can't be at home - the lights are off.
+    target_lang: en
+    note:
+      vi: "\"Chắc chắn không\" là can't. Mustn't là \"không được phép\", không dùng để đoán."
+  - type: summary
+    points:
+      - vi: "Hiện tại: must / might / could / can't + V nguyên mẫu (She must be tired)."
+      - vi: "Quá khứ: must / might / could / can't + have + V3 (She must have forgotten)."
+      - vi: "Độ chắc chắn: must (chắc hẳn) > might / may / could (có lẽ) > can't (không thể nào)."
+      - vi: Phủ định của must suy luận là can't, không phải mustn't.
+      - vi: Không bao giờ nói "must had" hay "can't have saw".
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:deduction-mcq-must-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:must-deduction
+    prompt:
+      stem: "\"You've been working for twelve hours. You must be exhausted.\" Must ở đây có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: q7d, text: chắc hẳn, lang: vi }
+        - { id: z2k, text: phải (bắt buộc), lang: vi }
+        - { id: h5r, text: có lẽ, lang: vi }
+        - { id: c9w, text: không được phép, lang: vi }
+    answer:
+      correct_option_id: q7d
+    explanation:
+      vi: Người nói dựa vào bằng chứng (làm 12 tiếng liền) để kết luận gần như chắc chắn, nên must là "chắc hẳn". Must không mang nghĩa bắt buộc ở đây vì không ai ra lệnh cho người nghe phải mệt.
+    display_answer: chắc hẳn
+
+  - key: en:exercise:deduction-mcq-must-have
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:must-have-done
+    prompt:
+      stem: "Chọn câu đúng: \"Cô ấy không đến. Chắc cô ấy quên mất rồi.\""
+      stem_lang: vi
+      options:
+        - { id: v3m, text: She didn't come. She must have forgotten., lang: en }
+        - { id: t8a, text: She didn't come. She must had forgotten., lang: en }
+        - { id: p1x, text: She didn't come. She must has forgotten., lang: en }
+        - { id: e6n, text: She didn't come. She must forgot., lang: en }
+    answer:
+      correct_option_id: v3m
+    explanation:
+      vi: Đoán về quá khứ dùng must + have + V3. Have luôn ở dạng nguyên mẫu sau must, nên must had, must has đều sai; must forgot thiếu have.
+    display_answer: She didn't come. She must have forgotten.
+
+  - key: en:exercise:deduction-listen-cant-have-seen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:cant-have-done
+    prompt:
+      audio_asset_id: null
+      fallback_text: He can't have seen the message. He would have replied.
+      options:
+        - { id: k4u, text: Anh ấy không thể nào đã đọc tin nhắn. Nếu đọc thì anh ấy đã trả lời rồi., lang: vi }
+        - { id: s9b, text: Chắc chắn anh ấy đã đọc tin nhắn và đã trả lời., lang: vi }
+        - { id: a2o, text: Có lẽ anh ấy chưa đọc tin nhắn., lang: vi }
+        - { id: y6f, text: Anh ấy không được đọc tin nhắn đó., lang: vi }
+    answer:
+      correct_option_id: k4u
+    explanation:
+      vi: Can't have seen là "chắc chắn đã không thấy" - mạnh hơn "có lẽ chưa" (might not have). Câu sau là lý do (nếu thấy thì đã trả lời). Can't không mang nghĩa cấm đoán ở đây.
+    display_answer: Anh ấy không thể nào đã đọc tin nhắn. Nếu đọc thì anh ấy đã trả lời rồi.
+
+  - key: en:exercise:deduction-fill-cant-be-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:cant-deduction
+    prompt:
+      template: "His car is outside, so he {{b1}} be at work."
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Xe anh ấy ở ngoài kia, nên anh ấy không thể đang ở chỗ làm."
+        - "Gợi ý: phủ định của must khi suy luận, bắt đầu bằng c…"
+    answer:
+      blanks:
+        b1: ["can't", cannot, "couldn't"]
+    known_wrong:
+      - answer: "mustn't"
+        feedback_vi: Mustn't là "không được phép". "Chắc chắn không" dùng can't.
+        error_tag: mustnt_deduction
+      - answer: must
+        feedback_vi: Must là "chắc hẳn là", ngược nghĩa với câu. Xe ở nhà nên anh ấy không thể ở chỗ làm - can't.
+        error_tag: deduction_degree
+      - answer: "might not"
+        feedback_vi: Might not chỉ là "có lẽ không". Bằng chứng ở đây rất rõ nên dùng can't.
+        error_tag: deduction_degree
+    explanation:
+      vi: Bằng chứng (xe ở ngoài) khiến người nói gần như chắc chắn anh ấy không ở chỗ làm, nên dùng can't + be. Mustn't không dùng để suy đoán.
+    display_answer: His car is outside, so he can't be at work.
+
+  - key: en:exercise:deduction-order-might-have-missed
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:might-have-done
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Có lẽ cô ấy đã lỡ chuyến xe buýt.\""
+      tokens:
+        - { id: m-missed, text: missed }
+        - { id: m-the, text: the }
+        - { id: m-she, text: She }
+        - { id: m-had, text: had }
+        - { id: m-have, text: have }
+        - { id: m-bus, text: bus }
+        - { id: m-might, text: might }
+    answer:
+      orders:
+        - [m-she, m-might, m-have, m-missed, m-the, m-bus]
+    explanation:
+      vi: Đoán không chắc về quá khứ - might + have + V3 (missed). Had không dùng sau might.
+    display_answer: She might have missed the bus.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:deduction-fill-cant-have-seen
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:cant-have-done
+    prompt:
+      template: "You {{b1}} have {{b2}} Minh at the party last night - he was in hospital."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: ["can't", cannot, "couldn't"]
+        b2: [seen, met]
+    known_wrong:
+      - answer: saw
+        feedback_vi: Sau have phải là V3 - seen, không phải V2 saw.
+        error_tag: past_participle
+      - answer: see
+        feedback_vi: Sau have cần V3 - seen.
+        error_tag: past_participle
+      - answer: "mustn't"
+        feedback_vi: Mustn't là "cấm". "Chắc chắn đã không" là can't have.
+        error_tag: mustnt_deduction
+      - answer: must
+        feedback_vi: Minh ở bệnh viện nên chắc chắn bạn không gặp anh ấy - dùng can't, không phải must.
+        error_tag: deduction_degree
+    explanation:
+      vi: Minh ở bệnh viện là bằng chứng chắc chắn, nên dùng can't / couldn't + have + V3. V3 của see là seen (của meet là met).
+    display_answer: You can't have seen Minh at the party last night - he was in hospital.
+
+  - key: en:exercise:deduction-fill-must-have-left
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:must-have-done
+    prompt:
+      template: "Lan always replies within minutes, but she hasn't answered all day. She {{b1}} have {{b2}} her phone at home."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [must]
+        b2: [left]
+    known_wrong:
+      - answer: leaved
+        feedback_vi: Leave là động từ bất quy tắc - leave, left, left.
+        error_tag: irregular_verb
+      - answer: leave
+        feedback_vi: Sau have cần V3 - left.
+        error_tag: past_participle
+      - answer: forgot
+        feedback_vi: Để quên đồ ở đâu dùng leave (left), và sau have phải là V3, không phải V2 forgot.
+        error_tag: past_participle
+      - answer: had
+        feedback_vi: Have đã có sẵn trong câu; chỗ trống đầu cần must.
+        error_tag: modal_have
+    explanation:
+      vi: Lan luôn trả lời ngay mà cả ngày không trả lời là bằng chứng khá chắc, nên dùng must have + V3. Để quên đồ ở một nơi là leave something somewhere, V3 là left.
+    display_answer: Lan always replies within minutes, but she hasn't answered all day. She must have left her phone at home.
+
+  - key: en:exercise:deduction-translate-must-have-forgotten
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:must-have-done
+    prompt:
+      source_text: Chắc hẳn anh ấy đã quên sinh nhật của tôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - He must have forgotten my birthday.
+        - He must've forgotten my birthday.
+        - He must have forgotten about my birthday.
+        - He must've forgotten about my birthday.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: He must had forgotten my birthday.
+        feedback_vi: Sau must luôn là have nguyên mẫu - must have forgotten.
+        error_tag: modal_have
+      - answer: He must has forgotten my birthday.
+        feedback_vi: Sau must không chia động từ - must have, không phải must has.
+        error_tag: modal_have
+      - answer: He must forgot my birthday.
+        feedback_vi: Đoán về quá khứ cần have + V3 - must have forgotten.
+        error_tag: modal_past_form
+      - answer: He must have forgot my birthday.
+        feedback_vi: V3 của forget là forgotten.
+        error_tag: past_participle
+      - answer: He must forget my birthday.
+        feedback_vi: Must forget là "phải quên" hoặc đoán ở hiện tại. Việc đã xảy ra cần must have forgotten.
+        error_tag: modal_past_form
+    explanation:
+      vi: "\"Chắc hẳn\" là must; \"đã\" + suy đoán được diễn đạt bằng have + V3. Forget - forgot - forgotten, nên dùng forgotten."
+    display_answer: He must have forgotten my birthday.
+
+  # ---------------- application ----------------
+  - key: en:exercise:deduction-translate-cant-have-seen-us
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:cant-have-done
+    prompt:
+      source_text: Cô ấy không thể nào đã cố tình lờ chúng ta đi. Chắc cô ấy không thấy chúng ta.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - She can't have ignored us on purpose. She must not have seen us.
+        - She can't have ignored us on purpose. She can't have seen us.
+        - She can't have ignored us on purpose. She didn't see us.
+        - She can't have ignored us on purpose. She probably didn't see us.
+        - She can't have ignored us on purpose. She must have not seen us.
+        - She can't have deliberately ignored us. She can't have seen us.
+        - She can't have deliberately ignored us. She probably didn't see us.
+        - She couldn't have ignored us on purpose. She can't have seen us.
+        - She couldn't have ignored us on purpose. She probably didn't see us.
+        - She couldn't have ignored us on purpose. She couldn't have seen us.
+        - She can't have ignored us on purpose. She couldn't have seen us.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: She can't have ignored us on purpose. She can't have saw us.
+        feedback_vi: Sau have phải là V3 - seen, không phải saw.
+        error_tag: past_participle
+      - answer: She mustn't have ignored us on purpose. She can't have seen us.
+        feedback_vi: Mustn't là "cấm". "Không thể nào đã" là can't have.
+        error_tag: mustnt_deduction
+      - answer: She can't ignore us on purpose. She can't see us.
+        feedback_vi: Câu này nói về hiện tại. Việc đã xảy ra cần can't have + V3.
+        error_tag: modal_past_form
+    explanation:
+      vi: "\"Không thể nào đã\" là can't / couldn't have + V3 (ignored). Câu thứ hai là phỏng đoán nhẹ hơn - can't have seen, probably didn't see hoặc must not have seen đều tự nhiên."
+    display_answer: She can't have ignored us on purpose. She can't have seen us.
+
+  - key: en:exercise:deduction-translate-something-happened
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:upset
+    prompt:
+      source_text: He looks upset. Something must have happened.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trông anh ấy buồn bực. Chắc đã có chuyện gì xảy ra.
+        - Trông anh ấy buồn bực. Chắc hẳn đã có chuyện gì xảy ra.
+        - Trông anh ấy buồn bực. Chắc đã có chuyện gì đó xảy ra.
+        - Trông anh ấy buồn bực. Chắc hẳn đã có chuyện gì đó xảy ra.
+        - Trông anh ấy buồn bực. Chắc có chuyện gì rồi.
+        - Trông anh ấy buồn. Chắc đã có chuyện gì xảy ra.
+        - Trông anh ấy buồn. Chắc hẳn đã có chuyện gì xảy ra.
+        - Trông anh ấy buồn. Chắc có chuyện gì rồi.
+        - Anh ấy trông buồn bực. Chắc đã có chuyện gì xảy ra.
+        - Anh ấy trông buồn. Chắc hẳn đã có chuyện gì xảy ra.
+        - Anh ấy có vẻ buồn bực. Chắc đã có chuyện gì xảy ra.
+        - Anh ấy có vẻ buồn. Chắc hẳn đã có chuyện gì xảy ra.
+        - Anh ấy có vẻ không vui. Chắc đã có chuyện gì xảy ra.
+        - Trông anh ấy không vui. Chắc đã có chuyện gì xảy ra.
+        - Trông anh ấy buồn bực. Hẳn là đã có chuyện gì xảy ra.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trông anh ấy buồn bực. Phải có chuyện gì xảy ra.
+        feedback_vi: Must ở đây là "chắc hẳn" (suy đoán), không phải "phải" (bắt buộc).
+        error_tag: must_meaning
+    explanation:
+      vi: Looks upset là trông buồn bực / không vui. Must have happened là suy đoán về quá khứ - "chắc (hẳn) đã có chuyện gì xảy ra", không dịch must thành "phải".
+    display_answer: Trông anh ấy buồn bực. Chắc đã có chuyện gì xảy ra.
+
+  - key: en:exercise:deduction-mcq-situation-hospital
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:cant-have-done
+    prompt:
+      stem: Bạn của bạn nói "I saw Huy at the cinema last night." Nhưng bạn biết chắc tối qua Huy nằm viện. Bạn đáp thế nào?
+      stem_lang: vi
+      options:
+        - { id: r2j, text: "You can't have seen him - he was in hospital.", lang: en }
+        - { id: w6g, text: "You mustn't have seen him - he was in hospital.", lang: en }
+        - { id: n0t, text: "You must have seen him - he was in hospital.", lang: en }
+        - { id: f4l, text: "You can't have saw him - he was in hospital.", lang: en }
+    answer:
+      correct_option_id: r2j
+    explanation:
+      vi: Bạn chắc chắn việc đó không thể xảy ra, nên dùng can't have + V3 (seen). Mustn't là cấm đoán, must là ngược nghĩa, còn saw là V2 nên sai sau have.
+    display_answer: "You can't have seen him - he was in hospital."
+
+  - key: en:exercise:deduction-mcq-situation-might-moved
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:lose-touch-with
+    prompt:
+      stem: Bạn mất liên lạc với một người bạn cũ đã lâu và không rõ giờ anh ấy ở đâu. Câu nào diễn đạt đúng sự không chắc chắn?
+      stem_lang: vi
+      options:
+        - { id: u5p, text: "We lost touch years ago. He might have moved to another city.", lang: en }
+        - { id: i3s, text: "We lost touch years ago. He must have moved to another city.", lang: en }
+        - { id: o7c, text: "We lost touch years ago. He might had moved to another city.", lang: en }
+        - { id: d1z, text: "We lost contact to each other. He might have moved to another city.", lang: en }
+    answer:
+      correct_option_id: u5p
+    explanation:
+      vi: Khi bạn chỉ đoán mà không có bằng chứng, dùng might have + V3. Must have quá chắc chắn; might had sai dạng; mất liên lạc là lose touch (with), không nói "lost contact to".
+    display_answer: "We lost touch years ago. He might have moved to another city."

@@ -1,0 +1,437 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:stories-news-telling-stories
+order_index: 3
+level: b1
+title:
+  vi: Kể một câu chuyện - phối hợp thì, từ nối và cách phản ứng
+objectives:
+  - vi: Phối hợp quá khứ tiếp diễn, quá khứ đơn và quá khứ hoàn thành trong một câu chuyện.
+  - vi: Dùng từ nối suddenly, meanwhile, at first, eventually, in the end; phân biệt in the end và at the end of.
+  - vi: Phản ứng tự nhiên khi nghe người khác kể - Really? That's terrible! No way!
+estimated_minutes: 15
+skills: [speaking, writing, listening]
+prerequisites: [en:lesson:stories-news-past-perfect]
+items:
+  - item: en:item:narrative-tenses
+  - item: en:item:suddenly
+  - item: en:item:meanwhile
+  - item: en:item:eventually
+  - item: en:item:in-the-end
+  - item: en:item:at-the-end-of
+  - item: en:item:at-first
+  - item: en:item:luckily
+  - item: en:item:unfortunately
+  - item: en:item:really-reaction
+  - item: en:item:thats-terrible
+  - item: en:item:no-way
+  - item: en:item:what-happened-next
+  - item: en:item:was-were-ing
+    role: reuse
+  - item: en:item:had-past-participle
+    role: reuse
+  - item: en:item:by-the-time
+    role: reuse
+  - item: en:item:realise
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được một câu chuyện ngắn có mở đầu, diễn biến, kết thúc, và biết đáp lời khi bạn bè kể chuyện cho mình nghe.
+  - type: explain
+    text:
+      vi: "Một câu chuyện tiếng Anh thường dùng ba thì: quá khứ tiếp diễn để dựng bối cảnh (It was raining…), quá khứ đơn cho các sự việc chính (Suddenly I saw…), và quá khứ hoàn thành cho chuyện đã xảy ra trước đó (I had left…). Tiếng Việt dùng \"đang\", \"thì\", \"đã… rồi\" cho cùng mục đích."
+  - type: explain
+    text:
+      vi: "Từ nối giúp người nghe theo kịp: at first (lúc đầu), suddenly (bỗng nhiên), meanwhile (trong khi đó), eventually (cuối cùng, sau một thời gian dài), in the end (rốt cuộc). Luckily và unfortunately báo trước tin tốt hay tin xấu."
+  - type: explain
+    text:
+      vi: "In the end đứng một mình, nghĩa là \"rốt cuộc\". At the end of + danh từ nghĩa là \"vào cuối\" (at the end of the film). Người Việt hay nói in the end of the film vì dịch \"cuối phim\" - đây là lỗi."
+  - type: explain
+    text:
+      vi: Khi nghe kể chuyện, người nói tiếng Anh thường phản hồi liên tục để tỏ ra quan tâm - Really? (Thật á?), That's terrible! (Tệ quá!), No way! (Không thể nào!), What happened next? (Rồi sao nữa?). Im lặng suốt có thể bị hiểu là bạn không quan tâm.
+  - type: deep_explain
+    text:
+      vi: "Mẹo kể chuyện hay: mở đầu bằng thời gian và bối cảnh (Last Saturday, I was…), đẩy cao trào bằng suddenly, rồi kết bằng in the end và cảm nhận của bạn. No way! khá thân mật, chỉ dùng với bạn bè; với người lớn tuổi hay cấp trên, nói Really? hoặc That's surprising! an toàn hơn."
+  - type: example
+    target: It was raining and I was waiting for a taxi. Suddenly I realised I had left my umbrella at the office.
+    target_lang: en
+    translation:
+      vi: Trời đang mưa và mình đang chờ taxi. Bỗng mình nhận ra là đã để quên ô ở văn phòng.
+    note:
+      vi: Bối cảnh (was raining, was waiting) → sự việc chính (realised) → chuyện trước đó (had left).
+  - type: example
+    target: I was looking for my keys. Meanwhile, my sister was waiting in the car.
+    target_lang: en
+    translation:
+      vi: Mình đang tìm chìa khoá. Trong khi đó, em gái mình đang ngồi chờ trong xe.
+    note:
+      vi: Meanwhile đứng đầu câu mới và có dấu phẩy sau.
+  - type: example
+    target: We got lost twice, but in the end we found the hotel.
+    target_lang: en
+    translation:
+      vi: Tụi mình lạc đường hai lần, nhưng cuối cùng cũng tìm được khách sạn.
+    note:
+      vi: In the end nói kết quả sau cùng, không có of phía sau.
+  - type: example
+    target: Someone stole my bike yesterday. - Oh no, that's terrible! What happened next?
+    target_lang: en
+    translation:
+      vi: Hôm qua mình bị ai lấy mất xe đạp. - Ôi, tệ quá! Rồi sao nữa?
+    note:
+      vi: Phản ứng với tin xấu rồi hỏi tiếp để người kể tiếp tục.
+  - type: common_mistake
+    wrong: In the end of the film, the hero dies.
+    right: At the end of the film, the hero dies.
+    target_lang: en
+    note:
+      vi: Có of + danh từ thì dùng at the end of. In the end đứng một mình, nghĩa là "rốt cuộc".
+  - type: common_mistake
+    wrong: Someone stole my bike! - No way, that's great!
+    right: Someone stole my bike! - Oh no, that's terrible!
+    target_lang: en
+    note:
+      vi: That's great! chỉ dùng cho tin vui. Với tin xấu dùng That's terrible! hoặc Oh no!
+  - type: common_mistake
+    wrong: I walked home. Suddenly I was seeing a fire.
+    right: I was walking home. Suddenly I saw a fire.
+    target_lang: en
+    note:
+      vi: Bối cảnh dài dùng was + V-ing; sự việc bất ngờ sau suddenly dùng quá khứ đơn.
+  - type: summary
+    points:
+      - vi: Bối cảnh - was/were + V-ing; sự việc chính - quá khứ đơn; chuyện trước đó - had + V3.
+      - vi: At first → suddenly → meanwhile → eventually / in the end.
+      - vi: In the end (rốt cuộc) khác at the end of + danh từ (vào cuối).
+      - vi: Luckily báo tin tốt, unfortunately báo tin xấu.
+      - vi: Phản hồi khi nghe kể - Really? That's terrible! No way! What happened next?
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:stories-news-ts-listen-hotel
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:in-the-end
+    prompt:
+      audio_asset_id: null
+      fallback_text: We got lost twice, but in the end we found the hotel.
+      options:
+        - { id: h2b, text: "Tụi mình lạc đường hai lần, nhưng cuối cùng cũng tìm được khách sạn.", lang: vi }
+        - { id: m5x, text: "Tụi mình lạc đường hai lần ở cuối đường gần khách sạn.", lang: vi }
+        - { id: t8q, text: "Tụi mình tìm được khách sạn ngay, nhưng sau đó lạc đường hai lần.", lang: vi }
+        - { id: f1v, text: "Tụi mình lạc đường hai lần và không tìm được khách sạn.", lang: vi }
+    answer:
+      correct_option_id: h2b
+    explanation:
+      vi: In the end là "rốt cuộc, cuối cùng" - kết quả sau những rắc rối (lạc đường hai lần). Nó không chỉ vị trí "cuối đường"; muốn nói vậy phải dùng at the end of the street.
+    display_answer: "Tụi mình lạc đường hai lần, nhưng cuối cùng cũng tìm được khách sạn."
+
+  - key: en:exercise:stories-news-ts-mcq-end-of-film
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:at-the-end-of
+    prompt:
+      stem: "Chọn đáp án đúng: ___ the film, everyone was crying."
+      stem_lang: vi
+      options:
+        - { id: q3j, text: At the end of, lang: en }
+        - { id: w8e, text: In the end of, lang: en }
+        - { id: z5n, text: In the end, lang: en }
+        - { id: b7y, text: Eventually of, lang: en }
+    answer:
+      correct_option_id: q3j
+    explanation:
+      vi: Sau chỗ trống là danh từ the film, nên cần at the end of (vào cuối phim). In the end không đi với of; in the end of là lỗi dịch từng chữ "cuối phim".
+    display_answer: At the end of
+
+  - key: en:exercise:stories-news-ts-mcq-react-bike
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:thats-terrible
+    prompt:
+      stem: "Bạn của bạn nói: \"Someone stole my bike yesterday.\" Bạn đáp lại thế nào cho phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: c4p, text: "Oh no, that's terrible!", lang: en }
+        - { id: g9s, text: "Wow, that's great!", lang: en }
+        - { id: l2k, text: "Really? Congratulations!", lang: en }
+        - { id: u6d, text: "In the end, that's amazing!", lang: en }
+    answer:
+      correct_option_id: c4p
+    explanation:
+      vi: Bị mất xe là tin xấu, nên phản ứng bằng Oh no, that's terrible! That's great, Congratulations, amazing đều dành cho tin vui.
+    display_answer: "Oh no, that's terrible!"
+
+  - key: en:exercise:stories-news-ts-fill-umbrella-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:narrative-tenses
+    prompt:
+      template: "It {{b1}} (rain) and I {{b2}} (wait) for a taxi. Suddenly I {{b3}} (realise) that I {{b4}} (leave) my umbrella at the office."
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 12 }
+        - { id: b3, width_hint: 9 }
+        - { id: b4, width_hint: 9 }
+      hint_levels:
+        - "Nghĩa: Trời đang mưa và mình đang chờ taxi. Bỗng mình nhận ra là đã để quên ô ở văn phòng."
+        - "Gợi ý: bối cảnh - was + V-ing; sự việc chính - quá khứ đơn; việc xảy ra trước - had + V3."
+    answer:
+      blanks:
+        b1: [was raining]
+        b2: [was waiting]
+        b3: [realised, realized]
+        b4: [had left, "'d left"]
+    known_wrong:
+      - answer: rained
+        feedback_vi: Mưa là bối cảnh đang diễn ra, dùng was raining.
+        error_tag: past_continuous_needed
+      - answer: was wait
+        feedback_vi: Sau was cần V-ing - was waiting.
+        error_tag: past_continuous_missing_ing
+      - answer: was realising
+        feedback_vi: Nhận ra là việc xảy ra trong khoảnh khắc sau suddenly, dùng quá khứ đơn realised.
+        error_tag: past_continuous_overuse
+      - answer: left
+        feedback_vi: Để quên ô xảy ra trước lúc nhận ra, nên cần had left.
+        error_tag: past_perfect_needed
+    explanation:
+      vi: Hai câu đầu là bối cảnh nên dùng was raining, was waiting. Realised là sự việc chính sau suddenly. Để quên ô xảy ra trước đó nên dùng had left.
+    display_answer: It was raining and I was waiting for a taxi. Suddenly I realised that I had left my umbrella at the office.
+
+  - key: en:exercise:stories-news-ts-order-meanwhile
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:meanwhile
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Trong khi đó, em gái mình đang đợi trong xe.\""
+      tokens:
+        - { id: m-car, text: car }
+        - { id: m-waiting, text: waiting }
+        - { id: m-meanwhile, text: "Meanwhile," }
+        - { id: m-the, text: the }
+        - { id: m-sister, text: sister }
+        - { id: m-waited, text: waited }
+        - { id: m-was, text: was }
+        - { id: m-in, text: in }
+        - { id: m-my, text: my }
+    answer:
+      orders:
+        - [m-meanwhile, m-my, m-sister, m-was, m-waiting, m-in, m-the, m-car]
+    explanation:
+      vi: Meanwhile đứng đầu câu mới, có dấu phẩy sau. "Đang đợi" là việc diễn ra cùng lúc nên dùng was waiting, không dùng waited.
+    display_answer: Meanwhile, my sister was waiting in the car.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:stories-news-ts-fill-at-first
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:at-first
+    prompt:
+      template: "{{b1}}, I didn't like my new job, but I {{b2}} got used to it."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [At first]
+        b2: [eventually]
+    known_wrong:
+      - answer: In the end
+        feedback_vi: In the end là "rốt cuộc", không hợp với ý "lúc đầu". Lúc đầu là at first.
+        error_tag: linker_choice
+      - answer: At the first
+        feedback_vi: Lúc đầu là at first, không có the.
+        error_tag: at_first_form
+      - answer: eventual
+        feedback_vi: Cần trạng từ eventually (có -ly) đứng trước động từ got.
+        error_tag: adverb_form
+      - answer: suddenly
+        feedback_vi: Quen dần với công việc là chuyện xảy ra sau một thời gian, nên dùng eventually, không dùng suddenly.
+        error_tag: linker_choice
+    explanation:
+      vi: At first là "lúc đầu (rồi khác đi)". Eventually là "cuối cùng, sau một thời gian" - đúng với việc quen dần với công việc mới.
+    display_answer: At first, I didn't like my new job, but I eventually got used to it.
+
+  - key: en:exercise:stories-news-ts-translate-shop
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:unfortunately
+    prompt:
+      source_text: Không may là đến lúc tụi mình tới thì cửa hàng đã đóng cửa.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Unfortunately, by the time we got there, the shop had closed.
+        - Unfortunately, by the time we arrived, the shop had closed.
+        - Unfortunately, by the time we got there, the shop had already closed.
+        - Unfortunately, by the time we arrived, the shop had already closed.
+        - Unfortunately, by the time we got there, the store had closed.
+        - Unfortunately, by the time we arrived, the store had closed.
+        - Unfortunately, by the time we got there, the store had already closed.
+        - Unfortunately, by the time we arrived, the store had already closed.
+        - Unfortunately, the shop had closed by the time we got there.
+        - Unfortunately, the shop had closed by the time we arrived.
+        - Unfortunately, the shop had already closed by the time we got there.
+        - Unfortunately, when we got there, the shop had closed.
+        - Unfortunately, when we arrived, the shop had already closed.
+        - Unfortunately, by the time we got there, the shop was closed.
+        - Unfortunately, by the time we arrived, the shop was closed.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Unfortunately, by the time we arrived, the shop closed.
+        feedback_vi: Cửa hàng đóng trước khi tụi mình tới, nên cần had closed.
+        error_tag: past_perfect_needed
+      - answer: Unfortunately, by the time we had arrived, the shop closed.
+        feedback_vi: Đặt had nhầm vế - vế by the time dùng quá khứ đơn, vế kia dùng had closed.
+        error_tag: by_the_time_tense
+      - answer: Unfortunate, by the time we arrived, the shop had closed.
+        feedback_vi: Đầu câu cần trạng từ unfortunately (có -ly), không dùng tính từ unfortunate.
+        error_tag: adverb_form
+      - answer: Unfortunately, by the time we arrived to the shop, it had closed.
+        feedback_vi: Arrive không đi với to; nói arrived at the shop hoặc got to the shop.
+        error_tag: arrive_preposition
+    explanation:
+      vi: Unfortunately báo trước tin xấu. "Đến lúc… thì… đã…" là by the time + quá khứ đơn, vế kia had + V3; nói the shop was closed (đang đóng cửa) cũng đúng ý.
+    display_answer: Unfortunately, by the time we got there, the shop had closed.
+
+  - key: en:exercise:stories-news-ts-translate-at-first
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:at-first
+    prompt:
+      source_text: Lúc đầu mình không tin cô ấy, nhưng rồi mình thấy ảnh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - At first I didn't believe her, but then I saw the photos.
+        - At first I didn't believe her, but then I saw the pictures.
+        - At first I didn't believe her, but then I saw the photo.
+        - At first I didn't believe her, but then I saw the picture.
+        - At first I didn't believe her, but then I saw the photographs.
+        - At first I didn't believe her, but then I saw her photos.
+        - At first I didn't believe her, but later I saw the photos.
+        - At first I didn't believe her, but then I saw the photos she took.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: At first I wasn't believing her, but then I saw the photos.
+        feedback_vi: Believe là động từ trạng thái, không chia -ing - I didn't believe her.
+        error_tag: stative_continuous
+      - answer: At the first I didn't believe her, but then I saw the photos.
+        feedback_vi: Lúc đầu là at first, không có the.
+        error_tag: at_first_form
+      - answer: In the end I didn't believe her, but then I saw the photos.
+        feedback_vi: In the end là "rốt cuộc"; "lúc đầu" là at first.
+        error_tag: linker_choice
+      - answer: At first I didn't believed her, but then I saw the photos.
+        feedback_vi: Sau didn't dùng động từ nguyên mẫu - didn't believe.
+        error_tag: did_verb_form
+    explanation:
+      vi: At first báo trước rằng tình hình sẽ thay đổi (but then…). Believe là động từ trạng thái nên dùng quá khứ đơn didn't believe, không dùng wasn't believing.
+    display_answer: At first I didn't believe her, but then I saw the photos.
+
+  # ---------------- application ----------------
+  - key: en:exercise:stories-news-ts-translate-bus-came
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:eventually
+    prompt:
+      source_text: We waited for two hours, and eventually the bus came.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chúng tôi đợi hai tiếng, và cuối cùng xe buýt cũng đến.
+        - Chúng tôi đã đợi hai tiếng, và cuối cùng xe buýt cũng đến.
+        - Chúng tôi chờ hai tiếng, và cuối cùng xe buýt cũng đến.
+        - Chúng tôi đã chờ hai tiếng và cuối cùng xe buýt cũng tới.
+        - Chúng tôi đợi hai tiếng đồng hồ, và cuối cùng xe buýt cũng đến.
+        - Chúng tôi đợi hai tiếng, cuối cùng xe buýt cũng đến.
+        - Chúng tôi chờ hai tiếng, cuối cùng xe buýt cũng tới.
+        - Chúng tôi đợi hai giờ, và cuối cùng xe buýt cũng đến.
+        - Tụi mình đợi hai tiếng, và cuối cùng xe buýt cũng đến.
+        - Chúng mình chờ hai tiếng, và cuối cùng xe buýt cũng tới.
+        - Chúng tôi đợi hai tiếng, và rốt cuộc xe buýt cũng đến.
+        - Chúng tôi đợi hai tiếng và cuối cùng thì xe buýt cũng đến.
+        - Chúng tôi chờ hai tiếng và cuối cùng thì xe buýt cũng tới.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Eventually là "cuối cùng (sau một thời gian chờ đợi)"; tiếng Việt hay thêm "cũng" để thể hiện ý đã chờ lâu. Waited for two hours là "đợi hai tiếng".
+    display_answer: Chúng tôi đợi hai tiếng, và cuối cùng xe buýt cũng đến.
+
+  - key: en:exercise:stories-news-ts-mcq-best-story
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:narrative-tenses
+    prompt:
+      stem: "Bạn kể cho đồng nghiệp chuyện tình cờ gặp lại bạn cũ. Đoạn nào dùng thì đúng?"
+      stem_lang: vi
+      options:
+        - { id: s4f, text: "I was walking to work when I saw an old friend. I hadn't seen him for ten years!", lang: en }
+        - { id: y7a, text: "I walked to work when I was seeing an old friend. I didn't see him for ten years!", lang: en }
+        - { id: e2g, text: "I was walk to work when I saw an old friend. I hadn't see him for ten years!", lang: en }
+        - { id: o9c, text: "I had walked to work when I saw an old friend. I wasn't seeing him for ten years!", lang: en }
+    answer:
+      correct_option_id: s4f
+    explanation:
+      vi: Đi bộ đi làm là bối cảnh (was walking), gặp bạn là sự việc chính (saw), mười năm không gặp là chuyện trước đó (hadn't seen). Các phương án khác đảo vai trò của thì, thiếu -ing hoặc sai V3 (see - saw - seen).
+    display_answer: "I was walking to work when I saw an old friend. I hadn't seen him for ten years!"
+
+  - key: en:exercise:stories-news-ts-order-lights
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:suddenly
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Cả nhà đang ăn tối thì bỗng nhiên đèn tắt hết.\""
+      tokens:
+        - { id: l-lights, text: lights }
+        - { id: l-when, text: when }
+        - { id: l-was, text: was }
+        - { id: l-having, text: having }
+        - { id: l-suddenly, text: suddenly }
+        - { id: l-out, text: out }
+        - { id: l-we, text: we }
+        - { id: l-went, text: went }
+        - { id: l-dinner, text: dinner }
+        - { id: l-the, text: the }
+        - { id: l-were, text: were }
+        - { id: l-all, text: all }
+    answer:
+      orders:
+        - [l-we, l-were, l-having, l-dinner, l-when, l-suddenly, l-all, l-the, l-lights, l-went, l-out]
+        - [l-we, l-were, l-having, l-dinner, l-when, l-all, l-the, l-lights, l-suddenly, l-went, l-out]
+        - [l-we, l-were, l-having, l-dinner, l-when, l-all, l-the, l-lights, l-went, l-out, l-suddenly]
+    explanation:
+      vi: Ăn tối là bối cảnh nên dùng we were having dinner (we đi với were, không phải was). Đèn tắt là việc bất ngờ nên dùng quá khứ đơn went out, kèm suddenly.
+    display_answer: We were having dinner when suddenly all the lights went out.

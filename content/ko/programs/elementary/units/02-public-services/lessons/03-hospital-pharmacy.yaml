@@ -1,0 +1,407 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:hospital-pharmacy
+order_index: 3
+level: topik2
+title:
+  vi: Ở bệnh viện và hiệu thuốc - nói chỗ đau, việc phải làm
+objectives:
+  - vi: Nói triệu chứng - 머리가 아파요, 열이 나요, 기침을 해요, 감기에 걸렸어요.
+  - vi: Chia đúng động từ bất quy tắc ㅡ - 아프다 → 아파요, 바쁘다 → 바빠요, 쓰다 → 써요.
+  - vi: Nói điều phải làm bằng V-아/어야 해요 - 약을 먹어야 해요, 쉬어야 해요.
+estimated_minutes: 16
+skills: [speaking, listening, grammar]
+prerequisites: [ko:lesson:bank-post-office]
+items:
+  - item: ko:item:gram-eu-irregular
+  - item: ko:item:verb-apeuda
+  - item: ko:item:body-meori
+  - item: ko:item:body-bae
+  - item: ko:item:body-mok
+  - item: ko:item:phrase-gamgi-geollida
+  - item: ko:item:phrase-yeori-nada
+  - item: ko:item:gichim
+  - item: ko:item:yak
+  - item: ko:item:phrase-yageul-meokda
+  - item: ko:item:place-yakguk
+  - item: ko:item:verb-swida
+  - item: ko:item:gram-a-eo-ya-haeyo
+  - item: ko:item:place-byeongwon
+    role: reuse
+  - item: ko:item:verb-meokda
+    role: reuse
+  - item: ko:item:verb-masida
+    role: reuse
+  - item: ko:item:verb-sseuda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự mô tả triệu chứng với bác sĩ, dược sĩ và hiểu lời dặn "phải uống thuốc, phải nghỉ ngơi".
+  - type: explain
+    text:
+      vi: Chỗ đau + 이/가 + 아파요 - 머리가 아파요 (đau đầu), 배가 아파요 (đau bụng), 목이 아파요 (đau họng). Tiếng Việt nói "tôi đau đầu", tiếng Hàn nói "đầu thì đau", nên chỗ đau đi với 이/가, không dùng 을/를.
+  - type: explain
+    text:
+      vi: 아프다 là động từ bất quy tắc ㅡ - ㅡ rơi mất trước -아/어. Âm tiết trước là 아 (ㅏ) nên thêm 아 - 아프 → 아파요; tương tự 바쁘다 → 바빠요, còn 예쁘다 → 예뻐요, thân một âm tiết 쓰다 → 써요.
+  - type: explain
+    text:
+      vi: V-아/어야 해요 là "phải" - lấy dạng -아/어 rồi thêm 야 해요 - 먹어야 해요, 가야 해요, 쉬어야 해요. Nói 돼요 thay 해요 (먹어야 돼요) cũng được, nghĩa như nhau.
+  - type: deep_explain
+    text:
+      vi: Một số triệu chứng có động từ riêng - 열이 나요 (sốt, nghĩa đen "nhiệt ra"), 기침을 해요 (ho), 감기에 걸렸어요 (bị cảm - dùng 에 và thường ở quá khứ vì là trạng thái đã xảy ra). Tiếng Việt "uống thuốc" nhưng tiếng Hàn là "ăn thuốc" - 약을 먹어요; dược sĩ sẽ nói lịch sự 약을 드세요. Ở Hàn Quốc, nhiều thuốc cần đơn của bác sĩ (처방전) mới mua được ở 약국.
+  - type: example
+    target: 어디가 아프세요? - 목이 아프고 열이 나요.
+    target_lang: ko
+    translation:
+      vi: Anh đau ở đâu? - Tôi đau họng và bị sốt.
+    note:
+      vi: Bác sĩ dùng kính ngữ 아프세요; bạn đáp về mình bằng 아파요/나요.
+  - type: example
+    target: 감기에 걸렸어요. 기침을 많이 해요.
+    target_lang: ko
+    translation:
+      vi: Tôi bị cảm rồi. Tôi ho nhiều.
+  - type: example
+    target: 하루에 세 번 약을 드세요. 그리고 집에서 푹 쉬어야 해요.
+    target_lang: ko
+    translation:
+      vi: Hãy uống thuốc ngày ba lần. Và anh phải nghỉ ngơi thật tốt ở nhà.
+    note:
+      vi: Dược sĩ dùng 드세요 (kính ngữ của 먹다); 푹 là "thật kỹ, thật sâu".
+  - type: example
+    target: 요즘 너무 바빠요. 그래서 병원에 갈 수 없어요.
+    target_lang: ko
+    translation:
+      vi: Dạo này tôi bận quá. Vì vậy tôi không đi bệnh viện được.
+    note:
+      vi: 바쁘다 → 바빠요, cùng quy tắc với 아프다 → 아파요.
+  - type: common_mistake
+    wrong: 머리가 아프어요.
+    right: 머리가 아파요.
+    target_lang: ko
+    note:
+      vi: Người học hay ghép máy móc 아프 + 어요. Thân có ㅡ thì ㅡ rơi mất, và vì âm tiết trước là 아 nên thành 아파요.
+  - type: common_mistake
+    wrong: 약을 마셔요.
+    right: 약을 먹어요.
+    target_lang: ko
+    note:
+      vi: Dịch thẳng "uống thuốc" thành 마시다 là lỗi rất phổ biến. Tiếng Hàn dùng 먹다 cho thuốc, kể cả thuốc nước.
+  - type: common_mistake
+    wrong: 머리를 아파요.
+    right: 머리가 아파요.
+    target_lang: ko
+    note:
+      vi: 아프다 là tính từ (đau) nên chỗ đau là chủ ngữ, đi với 이/가.
+  - type: summary
+    points:
+      - vi: Chỗ đau + 이/가 아파요 - 머리가, 배가, 목이 아파요.
+      - vi: Bất quy tắc ㅡ - 아프다 → 아파요, 바쁘다 → 바빠요, 쓰다 → 써요.
+      - vi: 열이 나요 · 기침을 해요 · 감기에 걸렸어요 · 약을 먹어요 (không dùng 마셔요).
+      - vi: V-아/어야 해요 (돼요) - phải làm gì - 약을 먹어야 해요, 쉬어야 해요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:hospital-mcq-apayo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:gram-eu-irregular
+    prompt:
+      stem: Đuôi lịch sự hiện tại của 아프다 viết thế nào?
+      stem_lang: vi
+      options:
+        - { id: e5n, text: 아파요, lang: ko }
+        - { id: r2u, text: 아프어요, lang: ko }
+        - { id: w8c, text: 아퍼요, lang: ko }
+        - { id: k3o, text: 아프요, lang: ko }
+    answer:
+      correct_option_id: e5n
+    explanation:
+      vi: ㅡ của 프 rơi mất; âm tiết trước là 아 (ㅏ) nên ghép 아 - 아파요. 아퍼요 là cách viết sai theo lối nói, 아프어요 và 아프요 không tồn tại.
+    display_answer: 아파요
+
+  - key: ko:exercise:hospital-listen-symptoms
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:phrase-yeori-nada
+    prompt:
+      audio_asset_id: null
+      fallback_text: 목이 아프고 열이 나요.
+      options:
+        - { id: g7s, text: Tôi đau họng và bị sốt., lang: vi }
+        - { id: y1d, text: Tôi đau đầu và bị ho., lang: vi }
+        - { id: q4i, text: Tôi đau bụng và bị cảm., lang: vi }
+        - { id: b9t, text: Tôi đau họng nhưng không sốt., lang: vi }
+    answer:
+      correct_option_id: g7s
+    explanation:
+      vi: 목 là cổ, họng; 열이 나요 là sốt. Đầu là 머리, bụng là 배, ho là 기침.
+    display_answer: Tôi đau họng và bị sốt.
+
+  - key: ko:exercise:hospital-mcq-take-medicine
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:phrase-yageul-meokda
+    prompt:
+      stem: Câu nào có nghĩa "Tôi uống thuốc"?
+      stem_lang: vi
+      options:
+        - { id: f6h, text: 약을 먹어요., lang: ko }
+        - { id: a2z, text: 약을 마셔요., lang: ko }
+        - { id: v8j, text: 약을 드세요., lang: ko }
+        - { id: t5p, text: 약이 먹어요., lang: ko }
+    answer:
+      correct_option_id: f6h
+    explanation:
+      vi: Tiếng Hàn "ăn thuốc" - 약을 먹어요, không dùng 마시다. 드세요 là kính ngữ cho người khác, còn 약이 sai trợ từ tân ngữ.
+    display_answer: 약을 먹어요.
+
+  - key: ko:exercise:hospital-fill-head-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:verb-apeuda
+    prompt:
+      template: "머리가 {{b1}}. (아프다)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi đau đầu."
+        - "Gợi ý: ㅡ rơi mất, âm tiết trước là 아 nên thêm 아요."
+    answer:
+      blanks:
+        b1: [아파요]
+    known_wrong:
+      - answer: 아프어요
+        feedback_vi: ㅡ của 프 rơi mất - 아파요.
+        error_tag: eu_irregular
+      - answer: 아퍼요
+        feedback_vi: Âm tiết trước là 아 (ㅏ) nên ghép 아 - 아파요, không phải 아퍼요.
+        error_tag: eu_irregular
+    explanation:
+      vi: 아프다 bỏ 다 và ㅡ, rồi ghép 아요 vì âm tiết đứng trước có ㅏ - 아파요.
+    display_answer: 머리가 아파요.
+
+  - key: ko:exercise:hospital-wb-cold
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:phrase-gamgi-geollida
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Hôm qua tôi bị cảm.\""
+      tokens:
+        - { id: c3, text: 걸렸어요 }
+        - { id: c4, text: 감기를 }
+        - { id: c2, text: 감기에 }
+        - { id: c1, text: 어제 }
+    answer:
+      orders:
+        - [c1, c2, c3]
+    explanation:
+      vi: Bị cảm là 감기에 걸리다 - dùng trợ từ 에, không dùng 을/를. Thời gian 어제 đứng đầu câu, động từ ở cuối.
+    display_answer: 어제 감기에 걸렸어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:hospital-fill-busy
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eu-irregular
+    prompt:
+      template: "요즘 너무 {{b1}}. (바쁘다)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [바빠요]
+    known_wrong:
+      - answer: 바쁘어요
+        feedback_vi: ㅡ của 쁘 rơi mất trước -아/어 - 바빠요.
+        error_tag: eu_irregular
+      - answer: 바뻐요
+        feedback_vi: Âm tiết trước là 바 (ㅏ) nên ghép 아 - 바빠요.
+        error_tag: eu_irregular
+    explanation:
+      vi: 바쁘다 giống 아프다 - ㅡ rơi mất, âm tiết trước có ㅏ nên thành 바빠요.
+    display_answer: 요즘 너무 바빠요.
+
+  - key: ko:exercise:hospital-fill-must-take
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-a-eo-ya-haeyo
+    prompt:
+      template: "감기에 걸렸어요. 약을 {{b1}}. (phải uống)"
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [먹어야 해요, 먹어야 돼요]
+    known_wrong:
+      - answer: 마셔야 해요
+        feedback_vi: Uống thuốc trong tiếng Hàn là 먹다 - 먹어야 해요.
+        error_tag: medicine_verb
+      - answer: 먹야 해요
+        feedback_vi: Cần dạng -아/어 trước 야 - 먹어야 해요.
+        error_tag: a_eo_ya_form
+      - answer: 먹을 수 있어요
+        feedback_vi: Đây là "có thể uống", không phải "phải uống" - 먹어야 해요.
+        error_tag: modal_meaning
+    explanation:
+      vi: Nghĩa "phải" dùng V-아/어야 해요; 먹다 → 먹어 + 야 해요. Thuốc dùng 먹다, không dùng 마시다.
+    display_answer: 감기에 걸렸어요. 약을 먹어야 해요.
+
+  - key: ko:exercise:hospital-translate-stomach
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:body-bae
+    prompt:
+      source_text: Tôi bị đau bụng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 배가 아파요.
+        - 저는 배가 아파요.
+        - 전 배가 아파요.
+        - 배 아파요.
+    known_wrong:
+      - answer: 배를 아파요.
+        feedback_vi: Chỗ đau đi với 이/가 - 배가 아파요.
+        error_tag: particle_subject_object
+      - answer: 배가 아프어요.
+        feedback_vi: ㅡ rơi mất - 아파요.
+        error_tag: eu_irregular
+      - answer: 배가 아퍼요.
+        feedback_vi: Âm tiết trước là 아 nên viết 아파요.
+        error_tag: eu_irregular
+    explanation:
+      vi: Bụng là 배, chỗ đau làm chủ ngữ với 가 - 배가 아파요. Nói thân mật có thể bỏ 가 - 배 아파요.
+    display_answer: 배가 아파요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:hospital-mcq-pharmacy
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gichim
+    prompt:
+      stem: "Dược sĩ hỏi: 어디가 아프세요? Bạn đau họng và bị ho. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: n6w, text: 목이 아프고 기침을 해요., lang: ko }
+        - { id: d3g, text: 목이 아프시고 기침을 하세요., lang: ko }
+        - { id: h8r, text: 목을 아프고 기침을 해요., lang: ko }
+        - { id: o1m, text: 머리가 아프고 열이 나요., lang: ko }
+    answer:
+      correct_option_id: n6w
+    explanation:
+      vi: Nói về mình không dùng kính ngữ -(으)시-, và chỗ đau đi với 이/가 - 목이 아프고. 머리가 아프고 열이 나요 là đau đầu và sốt, sai triệu chứng.
+    display_answer: 목이 아프고 기침을 해요.
+
+  - key: ko:exercise:hospital-translate-rest
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:verb-swida
+    prompt:
+      source_text: Bạn phải nghỉ ngơi ở nhà.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 집에서 쉬어야 해요.
+        - 집에서 쉬어야 돼요.
+        - 집에서 푹 쉬어야 해요.
+        - 집에서 푹 쉬어야 돼요.
+        - 집에서 쉬셔야 해요.
+        - 집에서 쉬셔야 돼요.
+    known_wrong:
+      - answer: 집에 쉬어야 해요.
+        feedback_vi: Nơi diễn ra hành động dùng 에서 - 집에서 쉬어요.
+        error_tag: particle_e_eseo
+      - answer: 집에서 쉬야 해요.
+        feedback_vi: 쉬다 + 어 giữ nguyên thành 쉬어, rồi + 야 해요 - 쉬어야 해요.
+        error_tag: a_eo_ya_form
+      - answer: 집에서 쉴 수 있어요.
+        feedback_vi: Đây là "có thể nghỉ", không phải "phải nghỉ".
+        error_tag: modal_meaning
+    explanation:
+      vi: Phải nghỉ là 쉬어야 해요 (hoặc 돼요); nghỉ ở nhà là hành động tại một nơi nên dùng 집에서. Bác sĩ nói lịch sự hơn - 쉬셔야 해요.
+    display_answer: 집에서 쉬어야 해요.
+
+  - key: ko:exercise:hospital-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:yak
+    prompt:
+      source_text: 하루에 세 번 약을 드세요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hãy uống thuốc ngày ba lần.
+        - Uống thuốc ngày ba lần nhé.
+        - Hãy uống thuốc một ngày ba lần.
+        - Uống thuốc một ngày ba lần.
+        - Mỗi ngày uống thuốc ba lần.
+        - Một ngày uống thuốc ba lần.
+        - Ngày uống thuốc ba lần.
+        - Hãy uống thuốc mỗi ngày ba lần.
+        - Anh hãy uống thuốc ngày ba lần.
+        - Chị hãy uống thuốc ngày ba lần.
+        - Bạn hãy uống thuốc ngày ba lần.
+        - Uống thuốc ngày ba lần.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hãy uống thuốc ngày hai lần.
+        feedback_vi: 세 번 là "ba lần"; hai lần là 두 번.
+        error_tag: number_meaning
+      - answer: Tôi uống thuốc ngày ba lần.
+        feedback_vi: 드세요 là lời dặn người nghe (kính ngữ), không phải "tôi uống".
+        error_tag: honorific_self
+    explanation:
+      vi: 하루에 세 번 là "ngày ba lần", 약을 드세요 là lời dặn lịch sự "hãy uống thuốc" (드시다 = kính ngữ của 먹다).
+    display_answer: Hãy uống thuốc ngày ba lần.
+
+  - key: ko:exercise:hospital-wb-pharmacy-where
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:place-yakguk
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Hiệu thuốc ở bên cạnh bệnh viện.\""
+      tokens:
+        - { id: y4, text: 있어요 }
+        - { id: y3, text: 옆에 }
+        - { id: y1, text: 약국은 }
+        - { id: y2, text: 병원 }
+        - { id: y5, text: 계세요 }
+    answer:
+      orders:
+        - [y1, y2, y3, y4]
+    explanation:
+      vi: Mẫu N은 + nơi + 옆에 + 있어요 - "병원 옆에" là "cạnh bệnh viện". 계세요 chỉ dùng cho người được tôn trọng, không dùng cho hiệu thuốc.
+    display_answer: 약국은 병원 옆에 있어요.

@@ -1,0 +1,406 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:can-and-try
+order_index: 2
+level: topik2
+title:
+  vi: Biết làm gì & thử làm
+objectives:
+  - vi: Nói mình biết hay không biết làm gì bằng V-(으)ㄹ 줄 알아요 / 몰라요.
+  - vi: Nói "thử làm" và "đã từng thử" bằng V-아/어 보다, V-아/어 봤어요.
+  - vi: Dùng từ vựng kỹ năng - 수영하다, 운전하다, 기타를 치다, 춤을 추다, 자전거를 타다, 만들다, 잘하다.
+estimated_minutes: 15
+skills: [grammar, speaking, writing]
+prerequisites: [ko:lesson:hobbies]
+items:
+  - item: ko:item:gram-eul-jul-alda
+  - item: ko:item:suyeonghada
+    role: reuse
+  - item: ko:item:unjeonhada
+    role: reuse
+  - item: ko:item:gita-chida
+  - item: ko:item:chum-chuda
+  - item: ko:item:jajeongeo-tada
+  - item: ko:item:mandeulda
+  - item: ko:item:gram-a-eo-boda
+  - item: ko:item:jal
+  - item: ko:item:hanbeon
+  - item: ko:item:norae-bureuda
+    role: reuse
+  - item: ko:item:tteokbokki
+    role: reuse
+  - item: ko:item:gimchi
+    role: reuse
+  - item: ko:item:go-sipeoyo
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được mình biết bơi nhưng không biết lái xe, và hỏi bạn bè "Bạn đã ăn thử tteokbokki chưa?".
+  - type: explain
+    text:
+      vi: Biết làm gì - gốc động từ + (으)ㄹ 줄 알아요. Gốc không có patchim thêm ㄹ (수영할 줄), có patchim thêm 을 (먹을 줄), gốc có sẵn ㄹ thì giữ nguyên (만들 줄).
+  - type: explain
+    text:
+      vi: Không biết làm gì - đổi 알아요 thành 몰라요 (수영할 줄 몰라요). Tiếng Việt chỉ thêm "không", nhưng tiếng Hàn có hẳn từ 모르다, nên không nói 안 알아요.
+  - type: explain
+    text:
+      vi: Thử làm gì - chia động từ như 해요체, bỏ 요 rồi thêm 보다 - 먹어요 → 먹어 봐요, 가요 → 가 봐요. Ở quá khứ, -아/어 봤어요 nghĩa là "đã từng thử" - 떡볶이를 먹어 봤어요?
+  - type: deep_explain
+    text:
+      vi: -(으)ㄹ 줄 알다 chỉ nói về kỹ năng phải học mới biết (bơi, lái xe, nấu món gì). Muốn khen ai làm giỏi thì dùng 잘해요 hoặc 잘 + động từ (노래를 잘 불러요); khiêm tốn thì 잘 못해요. Khi khuyên ai thử, người Hàn hay thêm 한번 cho mềm lời - 한번 먹어 보세요.
+  - type: example
+    target: 저는 수영할 줄 알아요. 그런데 운전할 줄 몰라요.
+    target_lang: ko
+    translation:
+      vi: Tôi biết bơi. Nhưng tôi không biết lái xe.
+    note:
+      vi: 알아요 ↔ 몰라요 là cặp đối lập.
+  - type: example
+    target: 김치를 만들 줄 알아요?
+    target_lang: ko
+    translation:
+      vi: Bạn biết làm kim chi không?
+    note:
+      vi: 만들다 có sẵn ㄹ nên chỉ cần thêm 줄 - 만들 줄.
+  - type: example
+    target: 떡볶이를 먹어 봤어요? - 아니요, 아직 안 먹어 봤어요.
+    target_lang: ko
+    translation:
+      vi: Bạn đã ăn thử tteokbokki chưa? - Chưa, tôi chưa ăn thử.
+    note:
+      vi: 아직 안 + V-아/어 봤어요 = "chưa từng thử".
+  - type: example
+    target: 이 노래 정말 좋아요. 한번 들어 보세요.
+    target_lang: ko
+    translation:
+      vi: Bài hát này hay lắm. Bạn thử nghe một lần xem.
+    note:
+      vi: 듣다 → 들어요 → 들어 보세요 (lời khuyên lịch sự).
+  - type: common_mistake
+    wrong: 운전할 줄 안 알아요.
+    right: 운전할 줄 몰라요.
+    target_lang: ko
+    note:
+      vi: Phủ định của 알다 là 모르다, không thêm 안. Giống như 있어요 ↔ 없어요 bạn đã học.
+  - type: common_mistake
+    wrong: 김치를 만들을 줄 알아요.
+    right: 김치를 만들 줄 알아요.
+    target_lang: ko
+    note:
+      vi: Gốc kết thúc bằng ㄹ thì không thêm 을 nữa. Patchim ㄹ đã làm nhiệm vụ của -ㄹ.
+  - type: common_mistake
+    wrong: 떡볶이를 먹고 봤어요.
+    right: 떡볶이를 먹어 봤어요.
+    target_lang: ko
+    note:
+      vi: '"Thử" dùng -아/어 보다. 먹고 봤어요 lại thành "ăn xong rồi xem", nghĩa khác hẳn.'
+  - type: summary
+    points:
+      - vi: V-(으)ㄹ 줄 알아요 (biết) · V-(으)ㄹ 줄 몰라요 (không biết); gốc ㄹ - 만들 줄.
+      - vi: V-아/어 봐요 (thử) · V-아/어 봤어요 (đã thử) · 한번 V-아/어 보세요 (thử xem).
+      - vi: 잘해요 (giỏi) · 잘 못해요 (không giỏi); 잘 + động từ - 노래를 잘 불러요.
+      - vi: 수영하다 · 운전하다 · 기타를 치다 · 춤을 추다 · 자전거를 타다 · 만들다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:can-and-try-mcq-swim
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:gram-eul-jul-alda
+    prompt:
+      stem: "Câu 수영할 줄 알아요 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: v2k, text: Tôi biết bơi., lang: vi }
+        - { id: n8d, text: Tôi muốn bơi., lang: vi }
+        - { id: e4s, text: Tôi thích bơi., lang: vi }
+        - { id: j6x, text: Tôi không biết bơi., lang: vi }
+    answer:
+      correct_option_id: v2k
+    explanation:
+      vi: -(으)ㄹ 줄 알아요 là "biết (cách) làm". Muốn bơi là 수영하고 싶어요, thích bơi là 수영하는 것을 좋아해요, không biết bơi là 수영할 줄 몰라요.
+    display_answer: Tôi biết bơi.
+
+  - key: ko:exercise:can-and-try-listen-guitar
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gita-chida
+    prompt:
+      audio_asset_id: null
+      fallback_text: 저는 기타를 칠 줄 몰라요.
+      options:
+        - { id: o3p, text: Tôi không biết chơi ghi-ta., lang: vi }
+        - { id: l7b, text: Tôi biết chơi ghi-ta., lang: vi }
+        - { id: y1f, text: Tôi muốn học ghi-ta., lang: vi }
+        - { id: i5w, text: Tôi chơi ghi-ta giỏi., lang: vi }
+    answer:
+      correct_option_id: o3p
+    explanation:
+      vi: 칠 줄 몰라요 là "không biết chơi" (치다 → 칠 줄). Biết chơi là 칠 줄 알아요; chơi giỏi là 기타를 잘 쳐요.
+    display_answer: Tôi không biết chơi ghi-ta.
+
+  - key: ko:exercise:can-and-try-mcq-mandeul
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:mandeulda
+    prompt:
+      stem: "Chọn dạng đúng của 만들다: 김치를 ___ 줄 알아요."
+      stem_lang: vi
+      options:
+        - { id: u8h, text: 만들, lang: ko }
+        - { id: z3a, text: 만들을, lang: ko }
+        - { id: b6n, text: 만드는, lang: ko }
+        - { id: w9g, text: 만들어, lang: ko }
+    answer:
+      correct_option_id: u8h
+    explanation:
+      vi: Gốc 만들 đã có patchim ㄹ nên chỉ cần thêm 줄 - 만들 줄. Không thêm 을; 만드는 dùng trước 것, còn 만들어 dùng trước 보다.
+    display_answer: 만들
+
+  - key: ko:exercise:can-and-try-fill-tried
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-a-eo-boda
+    prompt:
+      template: "떡볶이를 먹어 {{b1}}?"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Bạn đã ăn thử tteokbokki chưa?"
+        - "Gợi ý: 보다 ở thì quá khứ, đuôi 해요체."
+    answer:
+      blanks:
+        b1: [봤어요, 보았어요]
+    known_wrong:
+      - answer: 봐요
+        feedback_vi: 봐요 là hiện tại "thử đi". Hỏi "đã thử chưa" thì dùng quá khứ 봤어요.
+        error_tag: a_eo_boda_tense
+      - answer: 봤아요
+        feedback_vi: 보 + 았어요 rút gọn thành 봤어요, đuôi là 어요.
+        error_tag: past_form
+    explanation:
+      vi: Hỏi kinh nghiệm "đã từng thử chưa" thì dùng V-아/어 봤어요. 보았어요 rút gọn thành 봤어요.
+    display_answer: 떡볶이를 먹어 봤어요?
+
+  - key: ko:exercise:can-and-try-wb-drive
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:unjeonhada
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi không biết lái xe.\""
+      tokens:
+        - { id: d3, text: 줄 }
+        - { id: d6, text: 알아요 }
+        - { id: d1, text: 저는 }
+        - { id: d4, text: 몰라요 }
+        - { id: d5, text: 안 }
+        - { id: d2, text: 운전할 }
+    answer:
+      orders:
+        - [d1, d2, d3, d4]
+    explanation:
+      vi: 운전하다 → 운전할 줄 + 몰라요. Không dùng 안 알아요 vì phủ định của 알다 là 몰라요.
+    display_answer: 저는 운전할 줄 몰라요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:can-and-try-translate-bike
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:jajeongeo-tada
+    prompt:
+      source_text: Tôi biết đi xe đạp.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 자전거를 탈 줄 알아요.
+        - 저는 자전거를 탈 줄 알아요.
+        - 전 자전거를 탈 줄 알아요.
+        - 자전거 탈 줄 알아요.
+        - 저는 자전거 탈 줄 알아요.
+    known_wrong:
+      - answer: 저는 자전거를 탈 줄 있어요.
+        feedback_vi: Cấu trúc là -(으)ㄹ 줄 알아요, không dùng 있어요.
+        error_tag: jul_alda_form
+      - answer: 저는 자전거를 타는 줄 알아요.
+        feedback_vi: '"Biết làm" dùng -(으)ㄹ 줄 - 탈 줄 알아요.'
+        error_tag: jul_alda_form
+      - answer: 저는 자전거를 탈 줄 몰라요.
+        feedback_vi: 몰라요 là "không biết". Câu này là "biết" - 알아요.
+        error_tag: alda_moreuda
+      - answer: jajeongeoreul tal jul arayo
+        feedback_vi: Hãy viết bằng Hangul, phiên âm Latinh chỉ để tham khảo.
+        error_tag: romanization
+    explanation:
+      vi: '"Đi xe đạp" là 자전거를 타다; 타다 không có patchim nên thêm ㄹ - 탈 줄 알아요.'
+    display_answer: 저는 자전거를 탈 줄 알아요.
+
+  - key: ko:exercise:can-and-try-fill-try-dance
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-a-eo-boda
+    prompt:
+      template: "(Tôi muốn thử làm kim chi.) 김치를 만들어 {{b1}} 싶어요. (Tôi không biết nhảy.) 저는 춤을 출 줄 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [보고]
+        b2: [몰라요]
+    known_wrong:
+      - answer: 봐
+        feedback_vi: Trước 싶어요 cần dạng -고 - 보고 싶어요.
+        error_tag: go_sipeoyo_form
+      - answer: 안 알아요
+        feedback_vi: Phủ định của 알다 là 몰라요, không nói 안 알아요.
+        error_tag: alda_moreuda
+      - answer: 알아요
+        feedback_vi: Câu là "không biết" nên dùng 몰라요.
+        error_tag: alda_moreuda
+    explanation:
+      vi: Thử làm + muốn - 만들어 보다 → 만들어 보고 싶어요. Không biết làm - 출 줄 몰라요 (추다 → 출 줄).
+    display_answer: 김치를 만들어 보고 싶어요. 저는 춤을 출 줄 몰라요.
+
+  - key: ko:exercise:can-and-try-translate-tried
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-a-eo-boda
+    prompt:
+      source_text: Bạn đã ăn thử bulgogi chưa?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 불고기를 먹어 봤어요?
+        - 불고기 먹어 봤어요?
+        - 불고기를 먹어 보았어요?
+        - 불고기 먹어 보았어요?
+    known_wrong:
+      - answer: 불고기를 먹고 봤어요?
+        feedback_vi: '"Thử" dùng -아/어 보다 - 먹어 봤어요. 먹고 봤어요 là "ăn rồi xem".'
+        error_tag: a_eo_boda_form
+      - answer: 불고기를 먹었어요?
+        feedback_vi: Câu này chỉ hỏi "đã ăn chưa", thiếu ý "thử" - thêm 보다 thành 먹어 봤어요.
+        error_tag: missing_boda
+      - answer: 불고기를 먹어 봐요?
+        feedback_vi: Hỏi kinh nghiệm "đã… chưa" thì dùng quá khứ 봤어요.
+        error_tag: a_eo_boda_tense
+    explanation:
+      vi: 먹다 → 먹어요 → bỏ 요 + 보다 → 먹어 보다; quá khứ là 먹어 봤어요. Trong câu hỏi trực tiếp không cần 당신 hay 너.
+    display_answer: 불고기를 먹어 봤어요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:can-and-try-mcq-piano
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eul-jul-alda
+    prompt:
+      stem: "Bạn bè hỏi: 피아노를 칠 줄 알아요? Bạn không biết chơi piano. Trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: c5r, text: "아니요, 칠 줄 몰라요.", lang: ko }
+        - { id: h2m, text: "아니요, 칠 줄 안 알아요.", lang: ko }
+        - { id: s7t, text: "아니요, 칠 줄 없어요.", lang: ko }
+        - { id: f4j, text: "네, 칠 줄 몰라요.", lang: ko }
+    answer:
+      correct_option_id: c5r
+    explanation:
+      vi: Không biết thì dùng 몰라요; 안 알아요 và 줄 없어요 đều sai cấu trúc. 네 nghĩa là "có/vâng" nên không đi với ý "không biết" ở đây.
+    display_answer: "아니요, 칠 줄 몰라요."
+
+  - key: ko:exercise:can-and-try-mcq-recommend
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hanbeon
+    prompt:
+      stem: Bạn muốn khuyên một người bạn mới đến Hàn Quốc thử món này một lần. Câu nào phù hợp?
+      stem_lang: vi
+      options:
+        - { id: g8q, text: 이거 한번 먹어 보세요., lang: ko }
+        - { id: m1u, text: 이거 한번 먹고 보세요., lang: ko }
+        - { id: r6c, text: 이거 한번 먹을 줄 알아요., lang: ko }
+        - { id: x4e, text: 이거 한번 먹어 봤어요., lang: ko }
+    answer:
+      correct_option_id: g8q
+    explanation:
+      vi: Khuyên thử dùng 한번 + V-아/어 보세요. 먹고 보세요 là "ăn rồi xem", 먹을 줄 알아요 là "biết ăn", còn 먹어 봤어요 là kể việc đã thử.
+    display_answer: 이거 한번 먹어 보세요.
+
+  - key: ko:exercise:can-and-try-translate-drive-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:jal
+    prompt:
+      source_text: 저는 운전할 줄 알아요. 그런데 잘 못해요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi biết lái xe. Nhưng tôi lái không giỏi.
+        - Tôi biết lái xe. Nhưng không giỏi lắm.
+        - Tôi biết lái xe nhưng lái không giỏi.
+        - Tôi biết lái xe nhưng không giỏi.
+        - Tôi biết lái xe. Nhưng lái không giỏi.
+        - Tôi biết lái xe nhưng không giỏi lắm.
+        - Tôi biết lái xe. Nhưng tôi lái không giỏi lắm.
+        - Tôi biết lái xe. Nhưng tôi không lái giỏi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi không biết lái xe. Nhưng tôi muốn học.
+        feedback_vi: 알아요 là "biết"; 잘 못해요 là "không giỏi".
+        error_tag: alda_moreuda
+      - answer: Tôi biết lái xe. Và tôi lái giỏi.
+        feedback_vi: 그런데 là "nhưng", 잘 못해요 là "làm không giỏi".
+        error_tag: jal_mot
+    explanation:
+      vi: 운전할 줄 알아요 = biết lái xe; 그런데 = nhưng; 잘 못해요 = làm không giỏi.
+    display_answer: Tôi biết lái xe. Nhưng tôi lái không giỏi.
+
+  - key: ko:exercise:can-and-try-wb-sing
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:jal
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Mina hát giỏi.\""
+      tokens:
+        - { id: s4, text: 불러요 }
+        - { id: s2, text: 노래를 }
+        - { id: s5, text: 부르어요 }
+        - { id: s3, text: 잘 }
+        - { id: s1, text: 미나 씨는 }
+    answer:
+      orders:
+        - [s1, s2, s3, s4]
+    explanation:
+      vi: 잘 đứng ngay trước động từ - 노래를 잘 불러요. 부르다 là bất quy tắc 르 nên chia thành 불러요, không phải 부르어요.
+    display_answer: 미나 씨는 노래를 잘 불러요.

@@ -1,0 +1,424 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:nuance-idiom-review
+order_index: 5
+level: c2
+title:
+  vi: Ôn tập - Văn chương, xã luận & email tinh tế
+objectives:
+  - vi: Đọc hiểu một đoạn văn kể chuyện, một bài xã luận và một email công việc, nhận ra sắc thái, thành ngữ, giả định cách và lối nói giảm.
+  - vi: Phối hợp các công cụ của cả unit khi viết câu tự nhiên, đúng văn phong.
+  - vi: Tự sửa các lỗi hay gặp - economic/economical, affect/effect, dịch sát chữ thành ngữ, lạm dụng thành ngữ trong văn trang trọng.
+estimated_minutes: 22
+skills: [reading, writing, vocabulary, grammar, listening]
+prerequisites: [en:lesson:ellipsis-understatement-emphasis]
+items:
+  - item: en:item:to-put-it-mildly
+  - item: en:item:for-what-its-worth
+  - item: en:item:connotation
+    role: reuse
+  - item: en:item:stubborn-determined
+    role: reuse
+  - item: en:item:childlike-childish
+    role: reuse
+  - item: en:item:economic-economical
+    role: reuse
+  - item: en:item:affect-effect
+    role: reuse
+  - item: en:item:sensible-sensitive
+    role: reuse
+  - item: en:item:idiom-register
+    role: reuse
+  - item: en:item:elephant-in-the-room
+    role: reuse
+  - item: en:item:cut-corners
+    role: reuse
+  - item: en:item:beat-around-the-bush
+    role: reuse
+  - item: en:item:by-and-large
+    role: reuse
+  - item: en:item:come-across
+    role: reuse
+  - item: en:item:turn-down
+    role: reuse
+  - item: en:item:subjunctive-negative
+    role: reuse
+  - item: en:item:were-it-not-for
+    role: reuse
+  - item: en:item:be-that-as-it-may
+    role: reuse
+  - item: en:item:if-need-be
+    role: reuse
+  - item: en:item:not-bad-at-all
+    role: reuse
+  - item: en:item:a-bit-of-a
+    role: reuse
+  - item: en:item:the-very
+    role: reuse
+  - item: en:item:emphatic-do
+    role: reuse
+  - item: en:item:whatsoever
+    role: reuse
+  - item: en:item:ellipsis-auxiliary
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn tập này đưa bạn vào ba văn bản rất khác nhau - một đoạn văn kể chuyện, một bài xã luận và một email công việc. Bạn sẽ thấy cùng một công cụ (thành ngữ, nói giảm, giả định cách) được dùng khác nhau tuỳ văn phong.
+  - type: explain
+    text:
+      vi: Văn kể chuyện dùng sắc thái từ để khắc hoạ nhân vật (determined hay stubborn, childlike hay childish) và nói giảm để tạo dư âm. Xã luận kết hợp giả định cách trang trọng (it is essential that the council not…) với vài thành ngữ được chọn lọc. Email nội bộ thoải mái hơn, dùng nói giảm và cụm khiêm tốn để góp ý mềm mỏng.
+  - type: explain
+    text:
+      vi: Hai cụm mới - to put it mildly (nói nhẹ nhàng thì…, báo hiệu sự thật còn tệ hơn) và for what it's worth (ý kiến khiêm tốn của tôi là…). Cả hai thường đứng đầu câu hoặc chen giữa câu, có dấu phẩy ngăn cách.
+  - type: deep_explain
+    text:
+      vi: Khi tự kiểm tra bài viết C2, bạn có thể dò lần lượt - (1) từ mình chọn mang sắc thái khen hay chê, có đúng ý không; (2) economic/economical, affect/effect, sensible/sensitive; (3) thành ngữ có đúng dạng cố định và hợp văn phong không; (4) sau essential/insist/recommend that đã dùng nguyên mẫu chưa; (5) có chỗ nào lặp lại cả cụm mà có thể thay bằng do so, one hoặc trợ động từ.
+  - type: example
+    target: "The house at the end of the lane was not exactly welcoming. Its owner, a slim, determined woman in her seventies, had turned down every offer to buy it. Neighbours called her childish, but when I came across her one evening, I found a childlike delight in the roses she had planted. It was, to put it mildly, not what I had expected."
+    target_lang: en
+    translation:
+      vi: "Ngôi nhà cuối ngõ chẳng mấy mến khách. Chủ nhà, một bà cụ ngoài bảy mươi, dáng thon gọn và đầy quyết tâm, đã từ chối mọi lời đề nghị mua nhà. Hàng xóm bảo bà trẻ con, nhưng một buổi tối tình cờ gặp bà, tôi lại thấy niềm vui hồn nhiên như trẻ thơ bên những khóm hồng bà tự trồng. Nói nhẹ nhàng thì đó hoàn toàn không phải điều tôi đã nghĩ."
+    note:
+      vi: Người kể chọn slim, determined, childlike (khen) đối lập với lời chê childish của hàng xóm; not exactly và to put it mildly là nói giảm.
+  - type: example
+    target: "By and large, the city's new transport plan is a sensible one. Be that as it may, it is essential that the council not cut corners on safety to keep the project economical. The elephant in the room is funding: the plan will affect thousands of commuters, yet there is no guarantee whatsoever that the money will be there."
+    target_lang: en
+    translation:
+      vi: "Nhìn chung, kế hoạch giao thông mới của thành phố là hợp lý. Dù vậy, điều thiết yếu là hội đồng không được bớt xén khâu an toàn chỉ để tiết kiệm chi phí. Vấn đề ai cũng thấy mà chẳng ai nói là kinh phí - kế hoạch sẽ ảnh hưởng đến hàng nghìn người đi làm, nhưng hoàn toàn không có gì bảo đảm sẽ có đủ tiền."
+    note:
+      vi: Xã luận dùng giả định cách phủ định (that the council not cut corners), Be that as it may để chuyển ý và whatsoever để nhấn mạnh; thành ngữ chỉ dùng hai lần, có chọn lọc.
+  - type: example
+    target: "Hi Lan, For what it's worth, I thought your proposal was not bad at all - in fact, it's the very approach we need. There is a bit of a problem with the budget, though, so I won't beat around the bush: finance have asked us to cut costs by 10%. If need be, we can drop phase two. I'd rather not, but I will if I have to. Best, Minh"
+    target_lang: en
+    translation:
+      vi: "Chào Lan, Ý kiến của mình thì đề xuất của bạn khá tốt đấy - thật ra đó chính là hướng đi chúng ta cần. Nhưng ngân sách đang có chút vấn đề, nên mình nói thẳng luôn - phòng tài chính yêu cầu cắt giảm 10% chi phí. Nếu cần, chúng ta có thể bỏ giai đoạn hai. Mình không muốn vậy, nhưng nếu bắt buộc thì mình sẽ làm. Thân, Minh"
+    note:
+      vi: Email khen kín đáo (not bad at all), nói giảm (a bit of a problem), nhấn mạnh (the very) và tỉnh lược (I'd rather not, but I will).
+  - type: common_mistake
+    wrong: The new tax will have a big affect on economical growth.
+    right: The new tax will have a big effect on economic growth.
+    target_lang: en
+    note:
+      vi: Sau a big cần danh từ effect; "tăng trưởng kinh tế" là economic growth, không phải economical.
+  - type: common_mistake
+    wrong: "Trying to change his mind is like pouring water on a duck's head."
+    right: Trying to change his mind is like water off a duck's back.
+    target_lang: en
+    note:
+      vi: Không dịch sát chữ thành ngữ tiếng Việt; tiếng Anh có cụm tương đương like water off a duck's back.
+  - type: common_mistake
+    wrong: To put it mildly, your presentation was excellent.
+    right: Honestly, your presentation was excellent.
+    target_lang: en
+    note:
+      vi: To put it mildly chỉ đi với nhận xét tiêu cực, báo hiệu sự thật còn tệ hơn; không dùng để khen.
+  - type: summary
+    points:
+      - vi: Văn kể chuyện - sắc thái từ khắc hoạ nhân vật; nói giảm tạo dư âm.
+      - vi: Xã luận - giả định cách, Be that as it may, whatsoever; thành ngữ dùng ít và có chọn lọc.
+      - vi: Email nội bộ - for what it's worth, not bad at all, a bit of a problem, tỉnh lược bằng trợ động từ.
+      - vi: to put it mildly chỉ đi với ý tiêu cực; for what it's worth làm mềm ý kiến.
+      - vi: Kiểm tra lại economic/economical, affect/effect và dạng cố định của thành ngữ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:nuance-review-mcq-literary
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:childlike-childish
+    prompt:
+      stem: "Trong đoạn văn: \"Neighbours called her childish, but… I found a childlike delight in the roses she had planted.\" Người kể nhìn bà cụ thế nào?"
+      stem_lang: vi
+      options:
+        - { id: w5k, text: "Trái với lời chê của hàng xóm, người kể thấy ở bà sự hồn nhiên đáng quý.", lang: vi }
+        - { id: p8j, text: "Người kể đồng ý với hàng xóm rằng bà thiếu chín chắn.", lang: vi }
+        - { id: z3h, text: "Người kể cho rằng bà đã già và không nhớ nổi mình trồng hoa gì.", lang: vi }
+        - { id: c6g, text: "Người kể thấy bà quá nghiêm khắc với hàng xóm.", lang: vi }
+    answer:
+      correct_option_id: w5k
+    explanation:
+      vi: Childish (chê - trẻ con) là lời hàng xóm; childlike (khen - hồn nhiên) là cảm nhận của người kể. But đánh dấu sự đối lập giữa hai cách nhìn.
+    display_answer: "Trái với lời chê của hàng xóm, người kể thấy ở bà sự hồn nhiên đáng quý."
+
+  - key: en:exercise:nuance-review-mcq-editorial
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:be-that-as-it-may
+    prompt:
+      stem: "Bài xã luận viết: \"By and large, the city's new transport plan is a sensible one. Be that as it may, it is essential that the council not cut corners on safety…\" Quan điểm của tác giả là gì?"
+      stem_lang: vi
+      options:
+        - { id: r1d, text: "Nhìn chung ủng hộ kế hoạch, nhưng cảnh báo không được làm ẩu khâu an toàn.", lang: vi }
+        - { id: m4s, text: "Hoàn toàn phản đối kế hoạch vì nó quá nhạy cảm.", lang: vi }
+        - { id: t7a, text: "Ủng hộ việc cắt giảm chi phí an toàn để kế hoạch tiết kiệm hơn.", lang: vi }
+        - { id: k0f, text: "Chưa có ý kiến gì vì kế hoạch còn đang được bàn.", lang: vi }
+    answer:
+      correct_option_id: r1d
+    explanation:
+      vi: By and large… sensible là đánh giá tích cực chung; Be that as it may chuyển sang điều kiện - không được cut corners (làm ẩu) về an toàn. Sensible là "hợp lý", không phải "nhạy cảm".
+    display_answer: "Nhìn chung ủng hộ kế hoạch, nhưng cảnh báo không được làm ẩu khâu an toàn."
+
+  - key: en:exercise:nuance-review-listen-worth
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:for-what-its-worth
+    prompt:
+      audio_asset_id: null
+      fallback_text: "For what it's worth, I thought your proposal was not bad at all."
+      options:
+        - { id: d2v, text: "Theo ý kiến của mình thì đề xuất của bạn khá tốt đấy.", lang: vi }
+        - { id: h7n, text: "Đề xuất của bạn không đáng giá bao nhiêu tiền.", lang: vi }
+        - { id: y4b, text: "Mình nghĩ đề xuất của bạn chỉ tạm được thôi.", lang: vi }
+        - { id: f9c, text: "Đề xuất của bạn tốn quá nhiều chi phí.", lang: vi }
+    answer:
+      correct_option_id: d2v
+    explanation:
+      vi: For what it's worth là cách mở lời khiêm tốn (ý kiến của tôi thì…), không nói về tiền. Not bad at all là lời khen thật - "khá tốt", không phải "tạm được".
+    display_answer: "Theo ý kiến của mình thì đề xuất của bạn khá tốt đấy."
+
+  - key: en:exercise:nuance-review-fill-mildly-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:to-put-it-mildly
+    prompt:
+      template: "The product launch was, to put it {{b1}}, a disappointment: there was a bit {{b2}} a problem with the payment system all day."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Nói nhẹ nhàng thì buổi ra mắt sản phẩm là một sự thất vọng - hệ thống thanh toán gặp \"chút\" trục trặc suốt cả ngày."
+        - "Gợi ý: ô 1 là trạng từ của mild; ô 2 là giới từ trong a bit … a."
+    answer:
+      blanks:
+        b1: [mildly]
+        b2: [of]
+    known_wrong:
+      - answer: mild
+        feedback_vi: Sau put it cần trạng từ - mildly.
+        error_tag: word_form
+      - answer: softly
+        feedback_vi: Cụm cố định là to put it mildly.
+        error_tag: idiom_form
+    explanation:
+      vi: To put it mildly báo hiệu thực tế còn tệ hơn lời nói. A bit of a problem là nói giảm - một trục trặc suốt cả ngày thực ra rất nghiêm trọng.
+    display_answer: "The product launch was, to put it mildly, a disappointment: there was a bit of a problem with the payment system all day."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:nuance-review-fill-editorial
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:subjunctive-negative
+    prompt:
+      template: "It is essential that the council {{b1}} cut corners. The plan will {{b2}} thousands of commuters, and there is no guarantee {{b3}} that the money will be there."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [not]
+        b2: [affect]
+        b3: [whatsoever]
+    known_wrong:
+      - answer: doesn't
+        feedback_vi: Giả định cách phủ định trong văn trang trọng là not + V - the council not cut.
+        error_tag: subjunctive
+      - answer: effect
+        feedback_vi: Sau will cần động từ affect (ảnh hưởng đến); effect là danh từ.
+        error_tag: affect_effect
+      - answer: whatever
+        feedback_vi: Sau no + danh từ, từ nhấn mạnh là whatsoever.
+        error_tag: whatsoever
+    explanation:
+      vi: Essential that + S + not + V là giả định cách phủ định. Will affect - động từ. No guarantee whatsoever nhấn mạnh "hoàn toàn không có bảo đảm nào".
+    display_answer: It is essential that the council not cut corners. The plan will affect thousands of commuters, and there is no guarantee whatsoever that the money will be there.
+
+  - key: en:exercise:nuance-review-translate-mildly
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:to-put-it-mildly
+    prompt:
+      source_text: Nói nhẹ nhàng thì kết quả quý này là một sự thất vọng. (dùng to put it mildly)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - To put it mildly, this quarter's results were a disappointment.
+        - To put it mildly, this quarter's results were disappointing.
+        - To put it mildly, the results this quarter were a disappointment.
+        - To put it mildly, the results this quarter were disappointing.
+        - To put it mildly, the results for this quarter were a disappointment.
+        - To put it mildly, the results for this quarter were disappointing.
+        - This quarter's results were, to put it mildly, a disappointment.
+        - This quarter's results were, to put it mildly, disappointing.
+        - The results this quarter were, to put it mildly, a disappointment.
+        - This quarter's results were a disappointment, to put it mildly.
+        - This quarter's results were disappointing, to put it mildly.
+        - To put it mildly, this quarter's results have been a disappointment.
+        - To put it mildly, this quarter's results are a disappointment.
+        - To put it mildly, the quarterly results were a disappointment.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: To put it softly, this quarter's results were a disappointment.
+        feedback_vi: Cụm cố định là to put it mildly.
+        error_tag: idiom_form
+      - answer: To say it mildly, this quarter's results were a disappointment.
+        feedback_vi: Cụm cố định dùng put - to put it mildly.
+        error_tag: idiom_form
+    explanation:
+      vi: To put it mildly là cụm cố định, đứng đầu, giữa hoặc cuối câu và luôn có dấu phẩy ngăn cách. Nó báo hiệu người nói đang nói nhẹ đi - thực tế còn tệ hơn.
+    display_answer: To put it mildly, this quarter's results were a disappointment.
+
+  - key: en:exercise:nuance-review-translate-to-vi-be-that
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:cut-corners
+    prompt:
+      source_text: Be that as it may, we cannot afford to cut corners on safety.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù vậy, chúng ta không thể làm ẩu khâu an toàn.
+        - Dù vậy, chúng ta không thể bớt xén khâu an toàn.
+        - Dù vậy, chúng ta không được phép làm ẩu khâu an toàn.
+        - Dù có như vậy đi nữa, chúng ta không thể làm ẩu khâu an toàn.
+        - Dù vậy, chúng ta không thể qua loa trong vấn đề an toàn.
+        - Dù vậy, chúng ta không thể cắt xén các biện pháp an toàn.
+        - Dù sao đi nữa, chúng ta không thể làm ẩu khâu an toàn.
+        - Tuy vậy, chúng ta không thể làm ẩu khâu an toàn.
+        - Dù vậy, chúng tôi không thể làm ẩu khâu an toàn.
+        - Dù vậy, chúng ta không thể làm ẩu về mặt an toàn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Dù vậy, chúng ta không thể cắt góc về an toàn.
+        feedback_vi: Cut corners là thành ngữ "làm ẩu, bớt xén", không dịch sát chữ "cắt góc".
+        error_tag: literal_translation
+    explanation:
+      vi: Be that as it may = dù vậy; cut corners = làm ẩu, bớt xén khâu cần thiết. Cannot afford to là "không thể để cho phép mình…".
+    display_answer: Dù vậy, chúng ta không thể làm ẩu khâu an toàn.
+
+  # ---------------- application ----------------
+  - key: en:exercise:nuance-review-order-very
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:the-very
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Ý kiến của mình thì đó chính là hướng đi chúng ta cần.\""
+      tokens:
+        - { id: v-need, text: we need }
+        - { id: v-approach, text: approach }
+        - { id: v-worth, text: "For what it's worth," }
+        - { id: v-very, text: very }
+        - { id: v-the, text: the }
+        - { id: v-its, text: "it's" }
+        - { id: v-much, text: much }
+    answer:
+      orders:
+        - [v-worth, v-its, v-the, v-very, v-approach, v-need]
+    explanation:
+      vi: For what it's worth mở lời khiêm tốn. The very + danh từ nghĩa là "chính" - very đứng sau the; much không dùng trong cấu trúc này.
+    display_answer: "For what it's worth, it's the very approach we need."
+
+  - key: en:exercise:nuance-review-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:idiom-register
+    prompt:
+      stem: "Lan trả lời email của Minh (đồng nghiệp thân, giọng thân thiện nhưng chuyên nghiệp). Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: q3w, text: "Thanks, Minh - I'd rather keep phase two, but if need be, I'll cut it. Could we talk on Thursday?", lang: en }
+        - { id: l8e, text: "It is imperative that phase two be retained. I insist that you not contact finance.", lang: en }
+        - { id: g1r, text: "Thanks! Let's not beat the bush - cutting costs is a blessing in a disguise.", lang: en }
+        - { id: o6t, text: "Whatever. Do what you want with phase two.", lang: en }
+    answer:
+      correct_option_id: q3w
+    explanation:
+      vi: Câu đúng vừa thân thiện vừa chuyên nghiệp, dùng if need be và tỉnh lược (I'll cut it). Câu giả định quá cứng và áp đặt với đồng nghiệp; câu thành ngữ sai dạng (beat the bush, a blessing in a disguise); Whatever thô lỗ.
+    display_answer: "Thanks, Minh - I'd rather keep phase two, but if need be, I'll cut it. Could we talk on Thursday?"
+
+  - key: en:exercise:nuance-review-translate-did-read
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:emphatic-do
+    prompt:
+      source_text: Tôi có đọc đề xuất của bạn thật mà, và nhìn chung tôi thấy nó khá hợp lý. (dùng did và by and large)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I did read your proposal, and by and large I found it quite sensible.
+        - I did read your proposal, and by and large, I found it quite sensible.
+        - I did read your proposal, and by and large I found it fairly sensible.
+        - I did read your proposal, and by and large I found it quite reasonable.
+        - I did read your proposal, and by and large I found it pretty sensible.
+        - I did read your proposal, and by and large I think it's quite sensible.
+        - I did read your proposal, and by and large I think it is quite sensible.
+        - I did read your proposal, and by and large it seems quite sensible.
+        - I did read your proposal, and by and large it seemed quite sensible to me.
+        - I did read your proposal, and I found it quite sensible by and large.
+        - I did read your proposal and by and large I found it quite sensible.
+        - I did read your proposal, and by and large I thought it was quite sensible.
+        - I did read your proposal, and by and large I found it rather sensible.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I did read your proposal, and by and large I found it quite sensitive.
+        feedback_vi: Sensitive là "nhạy cảm"; "hợp lý" là sensible.
+        error_tag: sensible_sensitive
+      - answer: I did read your proposal, and by large I found it quite sensible.
+        feedback_vi: Thành ngữ cố định là by and large.
+        error_tag: idiom_form
+      - answer: I read your proposal, and by and large I found it quite sensible.
+        feedback_vi: Câu đúng nhưng chưa nhấn mạnh "thật mà"; đề yêu cầu did read.
+        error_tag: emphatic_do
+    explanation:
+      vi: Did + read (nguyên mẫu) phản bác nghi ngờ "chưa đọc". By and large = nhìn chung; sensible = hợp lý (không nhầm với sensitive).
+    display_answer: I did read your proposal, and by and large I found it quite sensible.
+
+  - key: en:exercise:nuance-review-mcq-correct
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:economic-economical
+    prompt:
+      stem: "Câu nào trong bài xã luận của một sinh viên KHÔNG cần sửa?"
+      stem_lang: vi
+      options:
+        - { id: b5x, text: "The economic slowdown has forced many families to find more economical ways to travel.", lang: en }
+        - { id: n2y, text: "The economical slowdown has forced many families to find more economic ways to travel.", lang: en }
+        - { id: e9z, text: "The economic slowdown has effected many families, who now travel more economic.", lang: en }
+        - { id: s4q, text: "The economic slowdown has had a big affect on how many families travel.", lang: en }
+    answer:
+      correct_option_id: b5x
+    explanation:
+      vi: Economic slowdown (suy thoái kinh tế) và more economical ways (cách tiết kiệm hơn) đều đúng. Các câu khác đảo economic/economical, dùng effected thay cho affected, hoặc affect thay cho danh từ effect.
+    display_answer: "The economic slowdown has forced many families to find more economical ways to travel."

@@ -1,0 +1,398 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:formal-speech
+order_index: 2
+level: topik4
+title:
+  vi: Nói trang trọng nơi công sở - 합쇼체 và -도록 하다
+objectives:
+  - vi: Chia câu kể, câu hỏi, câu đề nghị ở đuôi trang trọng 합쇼체 (-습니다/-ㅂ니다, -습니까?, -(으)십시오).
+  - vi: Biết khi nào dùng 합쇼체 (họp, thuyết trình, khách hàng, email) và khi nào 해요체 tự nhiên hơn.
+  - vi: Hứa hẹn hoặc nhắc việc lịch sự bằng -도록 하겠습니다 / -도록 하십시오; phân biệt 실례합니다 và 죄송합니다.
+estimated_minutes: 18
+skills: [grammar, speaking, writing]
+prerequisites: [ko:lesson:workplace-words]
+items:
+  - item: ko:item:gram-seumnida
+  - item: ko:item:gram-seumnikka
+  - item: ko:item:gram-eusipsio
+  - item: ko:item:gram-dorok-hada
+  - item: ko:item:sillyehamnida
+  - item: ko:item:balpyo
+  - item: ko:item:hoeuisil
+  - item: ko:item:jaryo
+  - item: ko:item:chamseokhada
+  - item: ko:item:jechulhada
+    role: reuse
+  - item: ko:item:sinip-sawon
+  - item: ko:item:hoeui
+    role: reuse
+  - item: ko:item:bogoseo
+    role: reuse
+  - item: ko:item:buseo
+    role: reuse
+  - item: ko:item:joesonghamnida
+    role: reuse
+  - item: ko:item:gamsahamnida
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự giới thiệu, đặt câu hỏi và nhắc việc bằng giọng trang trọng trong cuộc họp hay buổi thuyết trình, và biết lúc nào nên chuyển về 해요체 cho tự nhiên.
+  - type: explain
+    text:
+      vi: 'Câu kể 합쇼체 - gốc có patchim + 습니다 (먹습니다), không có patchim + ㅂ니다 (갑니다), danh từ + 입니다. Câu hỏi đổi 다 thành 까 - 먹습니까?, 갑니까?, 입니까?'
+  - type: explain
+    text:
+      vi: Lời mời hay yêu cầu trang trọng dùng -(으)십시오 - 앉으십시오, 기다리십시오; cấm thì dùng -지 마십시오. Đây là giọng của thông báo, người dẫn chương trình, nhân viên phục vụ nói với khách.
+  - type: explain
+    text:
+      vi: 합쇼체 dùng khi nói trước tập thể (họp, thuyết trình, phỏng vấn), với khách hàng, trong email và văn bản công việc. Nói chuyện hằng ngày với đồng nghiệp, kể cả với sếp, người Hàn thường xen 해요체 cho mềm mại - giống tiếng Việt có "dạ, thưa" trong cuộc họp nhưng nói thường ở bàn trà.
+  - type: deep_explain
+    text:
+      vi: -도록 하다 có hai cách dùng ở công sở. Người trên nhắc việc - 내일까지 제출하도록 하세요 (nhớ nộp trước ngày mai); người dưới hứa - 다음부터는 늦지 않도록 하겠습니다 (lần sau tôi sẽ cố không muộn). Câu hứa với -도록 하겠습니다 nghe cầu thị và khiêm tốn hơn -겠습니다 đơn thuần.
+  - type: example
+    target: 안녕하십니까? 이번에 영업부에 입사한 신입 사원 응우옌 반 안입니다.
+    target_lang: ko
+    translation:
+      vi: Xin chào mọi người, tôi là Nguyễn Văn An, nhân viên mới vào phòng kinh doanh đợt này.
+    note:
+      vi: Tự giới thiệu trước tập thể luôn dùng 합쇼체.
+  - type: example
+    target: 질문이 있으십니까? 없으면 발표를 마치겠습니다.
+    target_lang: ko
+    translation:
+      vi: Mọi người có câu hỏi không ạ? Nếu không, tôi xin kết thúc phần thuyết trình.
+    note:
+      vi: -겠습니다 làm câu nói về hành động của mình nghe trang trọng.
+  - type: example
+    target: 회의 자료는 회의실에 있습니다. 회의 전에 꼭 읽어 보도록 하십시오.
+    target_lang: ko
+    translation:
+      vi: Tài liệu họp ở phòng họp. Xin mọi người nhớ đọc trước khi họp.
+  - type: example
+    target: 실례합니다. 부장님, 잠깐 들어가도 되겠습니까?
+    target_lang: ko
+    translation:
+      vi: Xin phép ạ. Thưa trưởng phòng, tôi vào một chút được không ạ?
+    note:
+      vi: Gõ cửa phòng sếp - xin phép chứ không phải xin lỗi, nên dùng 실례합니다.
+  - type: common_mistake
+    wrong: 저는 그 일을 잘 알습니다.
+    right: 저는 그 일을 잘 압니다.
+    target_lang: ko
+    note:
+      vi: Gốc có patchim ㄹ thì bỏ ㄹ rồi thêm ㅂ니다 - 알다 → 압니다, 만들다 → 만듭니다. Người Việt hay thấy patchim là thêm 습니다 ngay.
+  - type: common_mistake
+    wrong: 죄송합니다, 들어가도 되겠습니까?
+    right: 실례합니다, 들어가도 되겠습니까?
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói "xin lỗi" cả khi xin phép lẫn khi nhận lỗi. Xin phép làm phiền dùng 실례합니다; 죄송합니다 dành cho khi bạn có lỗi (đến muộn, làm sai).
+  - type: common_mistake
+    wrong: 지금부터 발표를 시작할게요. 다들 잘 들어요.
+    right: 지금부터 발표를 시작하겠습니다. 잘 들어 주십시오.
+    target_lang: ko
+    note:
+      vi: Mở đầu thuyết trình trước cả phòng bằng 해요체 nghe như đang nói chuyện riêng. Trước tập thể, hãy dùng -겠습니다 và -(으)십시오 / -아/어 주십시오.
+  - type: summary
+    points:
+      - vi: Câu kể - 습니다 (sau patchim) / ㅂ니다 (sau nguyên âm và ㄹ bị lược); danh từ + 입니다.
+      - vi: Câu hỏi - 습니까? / ㅂ니까?; với người trên thêm -(으)시- (참석하십니까?).
+      - vi: Yêu cầu trang trọng - -(으)십시오, cấm - -지 마십시오.
+      - vi: -도록 하세요/하십시오 - nhắc việc; -도록 하겠습니다 - hứa sẽ cố gắng.
+      - vi: 실례합니다 - xin phép làm phiền; 죄송합니다 - xin lỗi vì có lỗi.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:formal-speech-mcq-ilhamnida
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-seumnida
+    prompt:
+      stem: Dạng trang trọng 합쇼체 của "저는 영업부에서 일해요." là câu nào?
+      stem_lang: vi
+      options:
+        - { id: j6t, text: 저는 영업부에서 일합니다., lang: ko }
+        - { id: x3e, text: 저는 영업부에서 일하습니다., lang: ko }
+        - { id: m8q, text: 저는 영업부에서 일합니까., lang: ko }
+        - { id: w1a, text: 저는 영업부에서 일하십시오., lang: ko }
+    answer:
+      correct_option_id: j6t
+    explanation:
+      vi: 하다 kết thúc bằng nguyên âm nên thêm ㅂ니다 - 합니다. 합니까 là câu hỏi, 하십시오 là câu yêu cầu.
+    display_answer: 저는 영업부에서 일합니다.
+
+  - key: ko:exercise:formal-speech-listen-room
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:hoeuisil
+    prompt:
+      audio_asset_id: null
+      fallback_text: 오늘 회의는 3층 회의실에서 합니다.
+      options:
+        - { id: b7v, text: Cuộc họp hôm nay diễn ra ở phòng họp tầng 3., lang: vi }
+        - { id: l2k, text: Cuộc họp hôm nay diễn ra ở văn phòng tầng 3., lang: vi }
+        - { id: g9s, text: Bữa liên hoan hôm nay ở tầng 3., lang: vi }
+        - { id: r4n, text: Cuộc họp hôm nay bắt đầu lúc 3 giờ., lang: vi }
+    answer:
+      correct_option_id: b7v
+    explanation:
+      vi: 회의실 là phòng họp (실 - phòng); 3층 là tầng 3, không phải 3 giờ (3시). Liên hoan là 회식.
+    display_answer: Cuộc họp hôm nay diễn ra ở phòng họp tầng 3.
+
+  - key: ko:exercise:formal-speech-mcq-sillye
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:sillyehamnida
+    prompt:
+      stem: Bạn gõ cửa phòng trưởng phòng để hỏi một việc. Bạn mở lời thế nào?
+      stem_lang: vi
+      options:
+        - { id: s5d, text: 실례합니다., lang: ko }
+        - { id: k8f, text: 죄송합니다., lang: ko }
+        - { id: e3h, text: 미안해요., lang: ko }
+        - { id: n6y, text: 수고하세요., lang: ko }
+    answer:
+      correct_option_id: s5d
+    explanation:
+      vi: Bạn chưa làm gì sai, chỉ xin phép làm phiền nên dùng 실례합니다. 죄송합니다 và 미안해요 là nhận lỗi; 수고하세요 là câu chào khi ra về.
+    display_answer: 실례합니다.
+
+  - key: ko:exercise:formal-speech-fill-attend
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:chamseokhada
+    prompt:
+      template: "부장님, 내일 회의에 {{b1}}?"
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa của câu: Thưa trưởng phòng, ngày mai anh có tham dự cuộc họp không ạ?"
+        - "Gợi ý: 참석하다 + kính ngữ -시- + đuôi câu hỏi -ㅂ니까."
+    answer:
+      blanks:
+        b1: [참석하십니까, 참석합니까]
+    known_wrong:
+      - answer: 참석하십니다
+        feedback_vi: Đây là câu hỏi nên đuôi phải là -ㅂ니까, không phải -ㅂ니다.
+        error_tag: hapsyo_question
+      - answer: 참석하습니까
+        feedback_vi: 하다 kết thúc bằng nguyên âm nên dùng -ㅂ니까 - 합니까, không phải 하습니까.
+        error_tag: hapsyo_allomorph
+    explanation:
+      vi: Hỏi sếp nên thêm -시- - 참석하십니까? (참석합니까 cũng đúng ngữ pháp nhưng kém kính trọng hơn). Câu hỏi 합쇼체 kết thúc bằng 까.
+    display_answer: 부장님, 내일 회의에 참석하십니까?
+
+  - key: ko:exercise:formal-speech-wb-submit
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eusipsio
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Xin hãy nộp báo cáo trước thứ Sáu.\""
+      tokens:
+        - { id: c3, text: 제출하십시오 }
+        - { id: c1, text: 보고서는 }
+        - { id: c4, text: 제출합니까 }
+        - { id: c2, text: 금요일까지 }
+    answer:
+      orders:
+        - [c1, c2, c3]
+        - [c2, c1, c3]
+    explanation:
+      vi: Yêu cầu trang trọng dùng -(으)십시오 - 제출하십시오. 제출합니까 là câu hỏi. 보고서는 và 금요일까지 có thể đổi chỗ cho nhau.
+    display_answer: 보고서는 금요일까지 제출하십시오.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:formal-speech-fill-amnida
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-seumnida
+    prompt:
+      template: "A: 이 일을 누가 잘 {{b1}}? (알다) B: 김 대리가 잘 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [압니까]
+        b2: [압니다]
+    known_wrong:
+      - answer: 알습니까
+        feedback_vi: Gốc có patchim ㄹ thì bỏ ㄹ rồi thêm -ㅂ니까 - 압니까.
+        error_tag: rieul_drop
+      - answer: 알습니다
+        feedback_vi: Gốc có patchim ㄹ thì bỏ ㄹ rồi thêm -ㅂ니다 - 압니다.
+        error_tag: rieul_drop
+    explanation:
+      vi: 알다 có patchim ㄹ - ㄹ rơi trước ㅂ nên thành 압니다 / 압니까. Câu hỏi đuôi 까, câu trả lời đuôi 다.
+    display_answer: "A: 이 일을 누가 잘 압니까? B: 김 대리가 잘 압니다."
+
+  - key: ko:exercise:formal-speech-translate-newcomer
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:sinip-sawon
+    prompt:
+      source_text: Tôi là nhân viên mới của phòng kinh doanh. (nói trang trọng trước tập thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 영업부 신입 사원입니다.
+        - 저는 영업부 신입 사원입니다.
+        - 영업부의 신입 사원입니다.
+        - 저는 영업부의 신입 사원입니다.
+        - 영업부에 새로 온 신입 사원입니다.
+        - 저는 영업부에 새로 온 신입 사원입니다.
+    known_wrong:
+      - answer: 저는 영업부 신입 사원이에요.
+        feedback_vi: Câu đúng nhưng là 해요체. Giới thiệu trước tập thể dùng 합쇼체 - 신입 사원입니다.
+        error_tag: speech_level
+      - answer: 저는 영업부 신입 사원습니다.
+        feedback_vi: Sau danh từ dùng 입니다, không gắn 습니다 trực tiếp.
+        error_tag: copula_imnida
+    explanation:
+      vi: Danh từ + 입니다 là dạng trang trọng của 이에요/예요. 저는 có thể bỏ khi người nghe đã biết bạn đang tự giới thiệu.
+    display_answer: 저는 영업부 신입 사원입니다.
+
+  - key: ko:exercise:formal-speech-translate-dorok
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-dorok-hada
+    prompt:
+      source_text: Lần sau tôi sẽ cố gắng không đến muộn. (nói với sếp)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 다음부터는 늦지 않도록 하겠습니다.
+        - 다음부터 늦지 않도록 하겠습니다.
+        - 다음에는 늦지 않도록 하겠습니다.
+        - 앞으로는 늦지 않도록 하겠습니다.
+        - 앞으로 늦지 않도록 하겠습니다.
+        - 다음부터는 늦지 않도록 노력하겠습니다.
+        - 다음에는 늦지 않도록 노력하겠습니다.
+        - 다음부터는 늦지 않겠습니다.
+    known_wrong:
+      - answer: 다음부터는 늦지 않도록 하세요.
+        feedback_vi: -도록 하세요 là lời nhắc người khác. Hứa về việc của mình dùng -도록 하겠습니다.
+        error_tag: dorok_person
+      - answer: 다음부터는 안 늦도록 할게.
+        feedback_vi: 할게 là thân mật. Với sếp dùng 하겠습니다.
+        error_tag: speech_level
+    explanation:
+      vi: -지 않도록 하겠습니다 - "tôi sẽ cố để không..."; -겠습니다 thể hiện ý chí của người nói một cách trang trọng.
+    display_answer: 다음부터는 늦지 않도록 하겠습니다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:formal-speech-mcq-presentation
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:balpyo
+    prompt:
+      stem: Bạn đứng trước cả phòng họp để bắt đầu bài thuyết trình. Câu mở đầu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: z1p, text: 지금부터 발표를 시작하겠습니다., lang: ko }
+        - { id: h7c, text: 지금부터 발표를 시작할게., lang: ko }
+        - { id: d4m, text: 지금부터 발표를 시작하십시오., lang: ko }
+        - { id: q9b, text: 지금부터 발표를 시작합니까?, lang: ko }
+    answer:
+      correct_option_id: z1p
+    explanation:
+      vi: Nói về hành động của mình trước tập thể dùng -겠습니다. 할게 là thân mật; 시작하십시오 là bảo người khác bắt đầu; 시작합니까? là câu hỏi.
+    display_answer: 지금부터 발표를 시작하겠습니다.
+
+  - key: ko:exercise:formal-speech-mcq-when-haeyo
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-seumnida
+    prompt:
+      stem: Trong tình huống nào 해요체 tự nhiên hơn 합쇼체?
+      stem_lang: vi
+      options:
+        - { id: u3x, text: Rủ đồng nghiệp cùng phòng đi ăn trưa., lang: vi }
+        - { id: i8w, text: Phát biểu mở đầu cuộc họp toàn công ty., lang: vi }
+        - { id: o5r, text: Viết email gửi khách hàng lần đầu., lang: vi }
+        - { id: y2g, text: Đọc thông báo trên loa của tòa nhà., lang: vi }
+    answer:
+      correct_option_id: u3x
+    explanation:
+      vi: 합쇼체 dành cho bối cảnh trang trọng - nói trước tập thể, khách hàng, thông báo, email. Trò chuyện thường ngày với đồng nghiệp dùng 해요체 nghe thân thiện hơn.
+    display_answer: Rủ đồng nghiệp cùng phòng đi ăn trưa.
+
+  - key: ko:exercise:formal-speech-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:jaryo
+    prompt:
+      source_text: 회의 자료는 회의실에 있습니다. 회의 전에 꼭 읽어 보도록 하십시오.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tài liệu họp ở phòng họp. Xin hãy nhớ đọc trước khi họp.
+        - Tài liệu họp ở phòng họp. Hãy nhớ đọc trước khi họp.
+        - Tài liệu cuộc họp ở phòng họp. Xin mọi người nhớ đọc trước cuộc họp.
+        - Tài liệu họp có ở phòng họp. Hãy nhớ đọc qua trước khi họp.
+        - Tài liệu cho cuộc họp ở trong phòng họp. Nhớ đọc trước khi họp nhé.
+        - Tài liệu họp ở phòng họp. Mọi người nhớ đọc trước khi họp.
+        - Tài liệu họp ở phòng họp. Xin hãy đọc trước khi họp.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tài liệu họp ở văn phòng. Xin hãy nhớ đọc trước khi họp.
+        feedback_vi: 회의실 là phòng họp, không phải văn phòng (사무실).
+        error_tag: vocab_meaning
+      - answer: Tài liệu họp ở phòng họp. Tôi sẽ đọc trước khi họp.
+        feedback_vi: -도록 하십시오 là lời nhắc người nghe làm, không phải người nói hứa.
+        error_tag: dorok_person
+    explanation:
+      vi: 회의실에 있습니다 - ở phòng họp; 꼭 ... -도록 하십시오 - xin nhớ nhất định làm... Đây là giọng nhắc việc trang trọng gửi cả nhóm.
+    display_answer: Tài liệu họp ở phòng họp. Xin hãy nhớ đọc trước khi họp.
+
+  - key: ko:exercise:formal-speech-wb-attend-q
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-seumnikka
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Ngày mai anh/chị có tham dự cuộc họp không ạ?\""
+      tokens:
+        - { id: a4, text: 회의를 }
+        - { id: a3, text: 참석하십니까 }
+        - { id: a2, text: 회의에 }
+        - { id: a1, text: 내일 }
+    answer:
+      orders:
+        - [a1, a2, a3]
+        - [a2, a1, a3]
+    explanation:
+      vi: 참석하다 đi với trợ từ 에 - 회의에 참석하다, không dùng 회의를. Câu hỏi kính trọng trang trọng - 참석하십니까?
+    display_answer: 내일 회의에 참석하십니까?

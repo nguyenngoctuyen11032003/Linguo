@@ -1,0 +1,416 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:public-services-review
+order_index: 5
+level: topik2
+title:
+  vi: Ôn tập - Ở ngân hàng, hiệu thuốc và ga tàu điện ngầm
+objectives:
+  - vi: Hiểu và tham gia ba hội thoại thực tế - quầy ngân hàng, hiệu thuốc, ga tàu điện ngầm.
+  - vi: Phối hợp -(으)세요, -아/어 주세요, -(으)ㄹ 수 있어요, -아/어야 해요, -(으)면 돼요 trong cùng một tình huống.
+  - vi: Tránh các lỗi quen thuộc - 주세요 với danh từ, kính ngữ cho chính mình, 아프어요, 지하철으로.
+estimated_minutes: 18
+skills: [reading, listening, speaking, grammar]
+prerequisites: [ko:lesson:transport-directions]
+items:
+  - item: ko:item:phrase-eotteoke-osyeosseoyo
+  - item: ko:item:beonhopyo
+  - item: ko:item:gram-euseyo-request
+    role: reuse
+  - item: ko:item:gram-euseyo-honorific
+    role: reuse
+  - item: ko:item:phrase-anjeuseyo
+    role: reuse
+  - item: ko:item:verb-deusida
+    role: reuse
+  - item: ko:item:gram-a-eo-juseyo
+    role: reuse
+  - item: ko:item:gram-l-su-itda
+    role: reuse
+  - item: ko:item:hwanjeonhada
+    role: reuse
+  - item: ko:item:sopo
+    role: reuse
+  - item: ko:item:gram-eu-irregular
+    role: reuse
+  - item: ko:item:phrase-yeori-nada
+    role: reuse
+  - item: ko:item:gichim
+    role: reuse
+  - item: ko:item:gram-ro-euro-direction
+    role: reuse
+  - item: ko:item:gram-eumyeon-doeda
+    role: reuse
+  - item: ko:item:verb-garatada
+    role: reuse
+  - item: ko:item:place-eunhaeng
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn này đặt mọi thứ của unit vào ba cảnh bạn chắc chắn gặp khi sống ở Hàn Quốc - mở tài khoản, mua thuốc cảm và đi tàu điện ngầm đến Myeongdong.
+  - type: explain
+    text:
+      vi: Nhân viên luôn nói với bạn bằng kính ngữ (-(으)세요, 드세요, 오셨어요), còn bạn nói về mình bằng -아/어요. Hãy nghe ra kính ngữ để hiểu, nhưng đừng dùng nó cho chính mình.
+  - type: explain
+    text:
+      vi: Ba mẫu xin phép và chỉ dẫn hay gặp nhất - 할 수 있어요? (làm được không?), -아/어야 해요 (phải), -(으)면 돼요 (chỉ cần… là được). Khi nhờ việc, dùng V-아/어 주세요; chỉ khi xin đồ vật mới dùng N 주세요.
+  - type: deep_explain
+    text:
+      vi: 어떻게 오셨어요? nghĩa đen là "anh đến bằng cách nào", nhưng ở ngân hàng, bệnh viện, văn phòng nó có nghĩa "anh cần gì ạ" - hãy trả lời mục đích (통장을 만들고 싶어요), không trả lời phương tiện. Ở nhiều ngân hàng Hàn Quốc, bạn rút 번호표 rồi chờ đến khi số của mình hiện trên bảng. Ở ga tàu, chú ý 에서 cho nơi đổi/xuống và (으)로 cho tuyến mới.
+  - type: example
+    target: "직원: 어서 오세요. 어떻게 오셨어요? / 손님: 통장을 만들고 싶어요. 그리고 베트남으로 송금할 수 있어요? / 직원: 네, 할 수 있어요. 여권 좀 보여 주세요. 그리고 여기에 이름을 써 주세요. / 손님: 네, 여기요. / 직원: 잠깐만 기다리세요."
+    target_lang: ko
+    translation:
+      vi: "Nhân viên: Xin chào quý khách. Anh cần gì ạ? / Khách: Tôi muốn mở tài khoản. Và tôi chuyển tiền về Việt Nam được không? / Nhân viên: Vâng, được ạ. Cho tôi xem hộ chiếu. Và anh viết tên vào đây giúp tôi. / Khách: Vâng, đây ạ. / Nhân viên: Anh đợi một chút nhé."
+    note:
+      vi: Ở quầy ngân hàng - 오셨어요, 기다리세요 là kính ngữ của nhân viên; 보여 주세요, 써 주세요 là nhờ làm giúp.
+  - type: example
+    target: "약사: 어디가 아프세요? / 손님: 어제부터 목이 아프고 열이 나요. 기침도 해요. / 약사: 감기예요. 이 약을 하루에 세 번 드세요. 그리고 푹 쉬셔야 해요. / 손님: 밥을 먹고 약을 먹어야 해요? / 약사: 네, 식사 후에 드시면 돼요."
+    target_lang: ko
+    translation:
+      vi: "Dược sĩ: Anh đau ở đâu? / Khách: Từ hôm qua tôi đau họng và bị sốt. Tôi cũng ho nữa. / Dược sĩ: Anh bị cảm rồi. Uống thuốc này ngày ba lần nhé. Và anh phải nghỉ ngơi thật tốt. / Khách: Tôi phải ăn cơm rồi mới uống thuốc à? / Dược sĩ: Vâng, chỉ cần uống sau bữa ăn là được."
+    note:
+      vi: Ở hiệu thuốc - khách nói 아파요, 먹어야 해요 về mình; dược sĩ dùng 드세요, 드시면 돼요 với khách.
+  - type: example
+    target: "여행객: 실례지만, 명동에 어떻게 가요? / 역무원: 여기에서 3호선을 타세요. 충무로역에서 4호선으로 갈아타고 명동역에서 내리면 돼요. / 여행객: 교통카드는 어디에서 살 수 있어요? / 역무원: 저 편의점에서 살 수 있어요. 오른쪽으로 쭉 가세요."
+    target_lang: ko
+    translation:
+      vi: "Khách du lịch: Xin lỗi, đi Myeongdong thế nào ạ? / Nhân viên ga: Từ đây anh đi tuyến 3. Đổi sang tuyến 4 ở ga Chungmuro rồi xuống ở ga Myeongdong là được. / Khách du lịch: Thẻ giao thông mua ở đâu được ạ? / Nhân viên ga: Mua được ở cửa hàng tiện lợi đằng kia. Anh cứ đi thẳng về bên phải."
+    note:
+      vi: Ở ga tàu điện ngầm - 4호선으로 갈아타고, 명동역에서 내리면 돼요, 오른쪽으로.
+  - type: common_mistake
+    wrong: 이름 주세요.
+    right: 이름을 써 주세요.
+    target_lang: ko
+    note:
+      vi: Nhân viên muốn bạn viết tên, nên nhờ hành động - 써 주세요. 이름 주세요 nghe như "đưa tôi cái tên", không tự nhiên.
+  - type: common_mistake
+    wrong: 열이 아파요.
+    right: 열이 나요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt "bị sốt" không có "đau", và tiếng Hàn dùng động từ riêng - 열이 나요. 아파요 chỉ dùng cho chỗ đau (목이 아파요).
+  - type: common_mistake
+    wrong: 명동역으로 내리세요.
+    right: 명동역에서 내리세요.
+    target_lang: ko
+    note:
+      vi: Nơi xuống tàu dùng 에서, không dùng (으)로. (으)로 dành cho hướng đi hoặc tuyến mới - 4호선으로 갈아타세요.
+  - type: summary
+    points:
+      - vi: Ngân hàng - 어떻게 오셨어요? · 번호표 · 통장을 만들고 싶어요 · 송금할 수 있어요? · 써 주세요.
+      - vi: Hiệu thuốc - 어디가 아프세요? · 목이 아파요 · 열이 나요 · 약을 드세요 · 쉬셔야 해요.
+      - vi: Ga tàu - 몇 호선 · (으)로 갈아타다 · 에서 내리다 · 내리면 돼요 · 오른쪽으로 쭉 가세요.
+      - vi: Kính ngữ là để nói về người khác; về mình luôn dùng -아/어요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:public-review-listen-how-came
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:phrase-eotteoke-osyeosseoyo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 어서 오세요. 어떻게 오셨어요?
+      options:
+        - { id: v2d, text: Xin chào quý khách. Anh cần gì ạ?, lang: vi }
+        - { id: h6q, text: Xin chào quý khách. Anh đến bằng xe gì?, lang: vi }
+        - { id: o9s, text: Xin chào quý khách. Anh khỏe không ạ?, lang: vi }
+        - { id: c4n, text: Xin chào quý khách. Anh đi đâu ạ?, lang: vi }
+    answer:
+      correct_option_id: v2d
+    explanation:
+      vi: Ở quầy dịch vụ, 어떻게 오셨어요? là câu hỏi mục đích - "anh cần gì ạ". Nghĩa đen "đến bằng cách nào" là cái bẫy; "đi đâu" là 어디 가세요?.
+    display_answer: Xin chào quý khách. Anh cần gì ạ?
+
+  - key: ko:exercise:public-review-mcq-ticket
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:beonhopyo
+    prompt:
+      stem: "Tấm biển ở ngân hàng ghi: 번호표를 뽑고 기다리세요. Nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: t8a, text: Hãy lấy phiếu số thứ tự rồi chờ., lang: vi }
+        - { id: b3r, text: Hãy đưa phiếu số thứ tự cho nhân viên., lang: vi }
+        - { id: e7k, text: Không cần lấy phiếu số thứ tự., lang: vi }
+        - { id: q1y, text: Hãy viết tên vào phiếu., lang: vi }
+    answer:
+      correct_option_id: t8a
+    explanation:
+      vi: 번호표 là phiếu số thứ tự, 뽑다 là "rút, lấy", 기다리세요 là "hãy chờ". -고 nối hai việc theo thứ tự - lấy rồi chờ.
+    display_answer: Hãy lấy phiếu số thứ tự rồi chờ.
+
+  - key: ko:exercise:public-review-mcq-ro-euro
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-ro-euro-direction
+    prompt:
+      stem: Câu nào dùng đúng 로/으로?
+      stem_lang: vi
+      options:
+        - { id: d5m, text: 왼쪽으로 쭉 가세요., lang: ko }
+        - { id: f9w, text: 지하철으로 오세요., lang: ko }
+        - { id: k4z, text: 오른쪽로 가세요., lang: ko }
+        - { id: x2h, text: 버스으로 가요., lang: ko }
+    answer:
+      correct_option_id: d5m
+    explanation:
+      vi: 쪽 có patchim ㄱ → 으로. 지하철 có patchim ㄹ nên chỉ dùng 로, còn 버스 không có patchim → 버스로.
+    display_answer: 왼쪽으로 쭉 가세요.
+
+  - key: ko:exercise:public-review-fill-pharmacy-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eu-irregular
+    prompt:
+      template: "약사: 어디가 {{b1}}? 손님: 목이 {{b2}}. (아프다)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Dược sĩ - Anh đau ở đâu? Khách - Tôi đau họng."
+        - "Gợi ý: dược sĩ hỏi khách bằng kính ngữ; khách nói về mình bằng đuôi thường."
+    answer:
+      blanks:
+        b1: [아프세요]
+        b2: [아파요]
+    known_wrong:
+      - answer: 아프어요
+        feedback_vi: ㅡ rơi mất trước -아/어 - 아파요.
+        error_tag: eu_irregular
+      - answer: 아퍼요
+        feedback_vi: Âm tiết trước là 아 nên ghép 아 - 아파요.
+        error_tag: eu_irregular
+      - answer: 아파세요
+        feedback_vi: -(으)세요 ghép thẳng vào thân 아프 - 아프세요.
+        error_tag: euseyo_form
+    explanation:
+      vi: Dược sĩ hỏi khách nên dùng kính ngữ 아프세요 (thân 아프 không patchim + 세요); khách nói về mình - 아파요 (ㅡ rơi mất).
+    display_answer: "약사: 어디가 아프세요? 손님: 목이 아파요."
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:public-review-fill-write
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-a-eo-juseyo
+    prompt:
+      template: "직원: 여기에 이름을 {{b1}} 주세요. (쓰다)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [써]
+    known_wrong:
+      - answer: 쓰어
+        feedback_vi: ㅡ rơi mất, 쓰 + 어 thành 써.
+        error_tag: eu_irregular
+      - answer: 쓰
+        feedback_vi: Trước 주세요 cần dạng -아/어 - 써 주세요.
+        error_tag: a_eo_juseyo_form
+      - answer: 쓰세요
+        feedback_vi: Trước 주세요 không dùng -(으)세요; dùng -아/어 - 써 주세요.
+        error_tag: a_eo_juseyo_form
+    explanation:
+      vi: Nhờ viết giúp - V-아/어 주세요. 쓰다 là bất quy tắc ㅡ, thân một âm tiết nên + 어 → 써.
+    display_answer: "직원: 여기에 이름을 써 주세요."
+
+  - key: ko:exercise:public-review-translate-exchange
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hwanjeonhada
+    prompt:
+      source_text: Ở đây đổi tiền được không ạ?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 여기에서 환전할 수 있어요?
+        - 여기서 환전할 수 있어요?
+        - 여기에서 환전할 수 있나요?
+        - 여기서 환전할 수 있나요?
+        - 여기에서 환전이 돼요?
+        - 여기서 환전돼요?
+        - 여기에서 환전돼요?
+    known_wrong:
+      - answer: 여기에서 환전할 수 안 있어요?
+        feedback_vi: Mẫu "được không" là 할 수 있어요?, không chen 안.
+        error_tag: l_su_negation
+      - answer: 여기에 환전할 수 있어요?
+        feedback_vi: Nơi làm việc gì dùng 에서 - 여기에서 (여기서).
+        error_tag: particle_e_eseo
+      - answer: 여기에서 환전해 주세요?
+        feedback_vi: Câu hỏi "có thể… không" dùng V-(으)ㄹ 수 있어요?; 환전해 주세요 là lời nhờ.
+        error_tag: modal_meaning
+    explanation:
+      vi: Hỏi khả năng - 환전할 수 있어요? (환전하다 không patchim → ㄹ 수). Nơi làm việc dùng 여기에서 hoặc dạng rút gọn 여기서.
+    display_answer: 여기에서 환전할 수 있어요?
+
+  - key: ko:exercise:public-review-fill-transfer-line
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:verb-garatada
+    prompt:
+      template: "충무로역에서 4호선{{b1}} 갈아타세요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [으로]
+    known_wrong:
+      - answer: 로
+        feedback_vi: 선 có patchim ㄴ nên dùng 으로 - 4호선으로.
+        error_tag: particle_ro_euro
+      - answer: 에서
+        feedback_vi: 에서 dành cho nơi đổi (충무로역에서); tuyến mới dùng (으)로.
+        error_tag: particle_direction
+    explanation:
+      vi: Đổi sang tuyến nào dùng (으)로; 호선 có patchim ㄴ (không phải ㄹ) nên là 4호선으로.
+    display_answer: 충무로역에서 4호선으로 갈아타세요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:public-review-mcq-subway-dialogue
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-eumyeon-doeda
+    prompt:
+      stem: "Đọc hội thoại. 여행객: 실례지만, 명동에 어떻게 가요? 역무원: 여기에서 3호선을 타세요. 충무로역에서 4호선으로 갈아타고 명동역에서 내리면 돼요. - Người du lịch phải xuống tàu ở ga nào?"
+      stem_lang: vi
+      options:
+        - { id: m2c, text: Ga Myeongdong, lang: vi }
+        - { id: m8u, text: Ga Chungmuro, lang: vi }
+        - { id: m5e, text: Ga mà người đó đang đứng, lang: vi }
+        - { id: m3x, text: Ga Seoul, lang: vi }
+    answer:
+      correct_option_id: m2c
+    explanation:
+      vi: 명동역에서 내리면 돼요 - "xuống ở ga Myeongdong là được". 충무로역 là nơi đổi tàu (갈아타고), không phải nơi xuống cuối cùng.
+    display_answer: Ga Myeongdong
+
+  - key: ko:exercise:public-review-mcq-after-meal
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-eumyeon-doeda
+    prompt:
+      stem: "Dược sĩ dặn bạn: 식사 후에 드시면 돼요. Dược sĩ muốn nói gì?"
+      stem_lang: vi
+      options:
+        - { id: a6p, text: Chỉ cần uống sau bữa ăn là được., lang: vi }
+        - { id: a1j, text: Bắt buộc phải uống trước bữa ăn., lang: vi }
+        - { id: a9t, text: Không được uống sau bữa ăn., lang: vi }
+        - { id: a4g, text: Hãy ăn nhiều sau khi uống thuốc., lang: vi }
+    answer:
+      correct_option_id: a6p
+    explanation:
+      vi: 식사 후에 là "sau bữa ăn", 드시면 돼요 là "chỉ cần dùng (uống) là được" - kính ngữ 드시다 + -(으)면 돼요.
+    display_answer: Chỉ cần uống sau bữa ăn là được.
+
+  - key: ko:exercise:public-review-translate-sit
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:phrase-anjeuseyo
+    prompt:
+      source_text: Bà ơi, mời bà ngồi đây ạ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 할머니, 여기 앉으세요.
+        - 할머니, 여기에 앉으세요.
+        - 할머니, 이쪽에 앉으세요.
+        - 할머니, 여기 앉으십시오.
+        - 여기 앉으세요.
+    known_wrong:
+      - answer: 할머니, 여기 앉아요.
+        feedback_vi: Mời người lớn ngồi dùng kính ngữ đề nghị - 앉으세요.
+        error_tag: honorific_missing
+      - answer: 할머니, 여기 앉세요.
+        feedback_vi: 앉다 có patchim nên cần 으 - 앉으세요.
+        error_tag: euseyo_batchim
+      - answer: 할머니, 여기 앉아 주세요.
+        feedback_vi: 앉아 주세요 là "ngồi giúp tôi", nghe như nhờ vả; mời ngồi dùng 앉으세요.
+        error_tag: a_eo_juseyo_meaning
+    explanation:
+      vi: Mời người lớn tuổi ngồi - 앉다 có patchim nên + 으세요 → 앉으세요. Câu bạn sẽ nói khi nhường ghế trên tàu điện ngầm.
+    display_answer: 할머니, 여기 앉으세요.
+
+  - key: ko:exercise:public-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:phrase-yeori-nada
+    prompt:
+      source_text: 어제부터 열이 나고 기침을 해요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi bị sốt và ho từ hôm qua.
+        - Từ hôm qua tôi bị sốt và ho.
+        - Từ hôm qua tôi sốt và ho.
+        - Tôi sốt và ho từ hôm qua.
+        - Từ hôm qua tôi bị sốt và bị ho.
+        - Tôi bị sốt và bị ho từ hôm qua.
+        - Từ hôm qua tôi bị sốt, bị ho.
+        - Từ hôm qua tôi bị sốt và còn ho nữa.
+        - Tôi bị sốt và ho từ hôm qua rồi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi bị đau đầu và ho từ hôm qua.
+        feedback_vi: 열이 나요 là "sốt", không phải đau đầu (머리가 아파요).
+        error_tag: symptom_meaning
+      - answer: Tôi bị sốt và ho từ hôm nay.
+        feedback_vi: 어제 là "hôm qua"; hôm nay là 오늘.
+        error_tag: time_meaning
+    explanation:
+      vi: 어제부터 là "từ hôm qua", 열이 나고 là "bị sốt và", 기침을 해요 là "ho".
+    display_answer: Tôi bị sốt và ho từ hôm qua.
+
+  - key: ko:exercise:public-review-wb-send-parcel
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:sopo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi muốn gửi bưu kiện này sang Việt Nam.\""
+      tokens:
+        - { id: p5, text: 싶어요 }
+        - { id: p3, text: 베트남에 }
+        - { id: p4, text: 보내고 }
+        - { id: p1, text: 이 }
+        - { id: p2, text: 소포를 }
+        - { id: p6, text: 보내 }
+    answer:
+      orders:
+        - [p1, p2, p3, p4, p5]
+        - [p3, p1, p2, p4, p5]
+    explanation:
+      vi: Muốn gửi là 보내고 싶어요, luôn ở cuối câu. 이 소포를 (bưu kiện này) và 베트남에 (đến Việt Nam) đổi chỗ được; 이 phải đứng ngay trước 소포를.
+    display_answer: 이 소포를 베트남에 보내고 싶어요.

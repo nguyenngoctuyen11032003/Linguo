@@ -1,0 +1,439 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:purpose-ability
+order_index: 4
+level: topik2
+title:
+  vi: Đi để làm gì -(으)러, không thể 못 và đang làm -고 있어요
+objectives:
+  - vi: Nói mục đích khi đi/đến đâu bằng -(으)러 가다 / 오다 - 밥 먹으러 가요, 놀러 와요.
+  - vi: Phân biệt 못 (không thể) và 안 (không làm), đặt 못 đúng chỗ với động từ có 하다.
+  - vi: Nói việc đang diễn ra bằng -고 있어요 và -고 있었어요.
+estimated_minutes: 18
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ko:lesson:connecting-clauses]
+items:
+  - item: ko:item:gram-eureo-gada
+  - item: ko:item:gram-mot
+  - item: ko:item:gram-go-isseoyo
+  - item: ko:item:suyeonghada
+  - item: ko:item:baeuda
+  - item: ko:item:nolda
+  - item: ko:item:unjeonhada
+  - item: ko:item:sigan
+  - item: ko:item:noraehada
+  - item: ko:item:jigeum
+  - item: ko:item:gram-an-negation
+    role: reuse
+  - item: ko:item:verb-gongbuhada
+    role: reuse
+  - item: ko:item:place-doseogwan
+    role: reuse
+  - item: ko:item:verb-ikda
+    role: reuse
+  - item: ko:item:yeonghwa
+    role: reuse
+  - item: ko:item:sukje
+    role: reuse
+  - item: ko:item:verb-oda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Tôi đi thư viện để đọc sách", "Tôi không biết bơi" và "Bây giờ tôi đang học" - ba câu người học tiếng Hàn dùng hằng ngày.
+  - type: explain
+    text:
+      vi: Muốn nói "đi/đến để làm gì", bạn gắn -(으)러 vào động từ chỉ mục đích rồi thêm 가다 hoặc 오다. Thân không có patchim hoặc có ㄹ thêm 러 (보러, 놀러), có patchim thêm 으러 (먹으러).
+  - type: explain
+    text:
+      vi: Sau -(으)러 chỉ dùng động từ di chuyển như 가다, 오다. Tiếng Việt "để" đi được với mọi động từ, nhưng 돈을 벌러 일해요 (làm việc để kiếm tiền) là sai trong tiếng Hàn.
+  - type: explain
+    text:
+      vi: 안 là "không" vì mình không làm hoặc không muốn, còn 못 là "không thể / không được" vì không biết làm hoặc hoàn cảnh không cho. 수영 안 해요 là "tôi không bơi", 수영 못 해요 là "tôi không biết bơi".
+  - type: explain
+    text:
+      vi: Giống 안, 못 đứng ngay trước động từ - 못 가요; với "danh từ + 하다" thì chen giữa - 공부 못 해요, 운전 못 해요. 못 해요 đọc liền là [모태요].
+  - type: explain
+    text:
+      vi: -고 있어요 là "đang", gắn -고 vào thân động từ - 지금 공부하고 있어요. Muốn nói "lúc đó đang…" thì dùng -고 있었어요.
+  - type: deep_explain
+    text:
+      vi: Nơi đến có thể đứng trước hoặc sau mục đích - 도서관에 책을 읽으러 가요 hoặc 책을 읽으러 도서관에 가요; nơi đến luôn dùng 에, không dùng 에서. 못 còn có dạng dài -지 못해요 (가지 못해요), trang trọng hơn. Với câu hỏi 지금 뭐 해요?, trả lời bằng hiện tại hay -고 있어요 đều được; -고 있어요 nhấn mạnh việc đang dở dang.
+  - type: example
+    target: 도서관에 책을 읽으러 가요.
+    target_lang: ko
+    translation:
+      vi: Tôi đến thư viện để đọc sách.
+    note:
+      vi: 읽 có patchim nên thêm 으러. Nơi đến dùng 에.
+  - type: example
+    target: 친구가 우리 집에 놀러 왔어요.
+    target_lang: ko
+    translation:
+      vi: Bạn tôi đã đến nhà tôi chơi.
+    note:
+      vi: 놀다 có ㄹ nên chỉ thêm 러 - 놀러.
+  - type: example
+    target: 저는 운전 못 해요. 아직 배우고 있어요.
+    target_lang: ko
+    translation:
+      vi: Tôi không biết lái xe. Tôi vẫn đang học.
+    note:
+      vi: 못 chen giữa 운전 và 해요. 배우고 있어요 là "đang học".
+  - type: example
+    target: 오늘은 시간이 없어요. 영화를 못 봐요.
+    target_lang: ko
+    translation:
+      vi: Hôm nay tôi không có thời gian. Tôi không xem phim được.
+    note:
+      vi: Không phải không muốn, mà hoàn cảnh không cho - dùng 못.
+  - type: example
+    target: 그때 저는 숙제하고 있었어요.
+    target_lang: ko
+    translation:
+      vi: Lúc đó tôi đang làm bài tập.
+    note:
+      vi: Việc đang diễn ra trong quá khứ dùng -고 있었어요.
+  - type: common_mistake
+    wrong: 저는 못 공부해요.
+    right: 저는 공부 못 해요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt đặt "không thể" trước cả cụm, nhưng tiếng Hàn đặt 못 sát 해요. 공부 là danh từ, 해요 mới là động từ.
+  - type: common_mistake
+    wrong: 돈을 벌러 일해요.
+    right: 돈을 벌러 회사에 가요.
+    target_lang: ko
+    note:
+      vi: -(으)러 chỉ đi với 가다, 오다 (động từ di chuyển). Không dùng với 일하다, 공부하다…
+  - type: common_mistake
+    wrong: 친구 집에 놀으러 가요.
+    right: 친구 집에 놀러 가요.
+    target_lang: ko
+    note:
+      vi: Thân có ㄹ (놀다, 살다) chỉ thêm 러, không thêm 으러.
+  - type: common_mistake
+    wrong: 지금 공부해고 있어요.
+    right: 지금 공부하고 있어요.
+    target_lang: ko
+    note:
+      vi: -고 gắn vào thân 공부하, không gắn vào dạng đã chia 공부해.
+  - type: summary
+    points:
+      - vi: V + (으)러 가요/와요 - đi/đến để V; chỉ dùng với động từ di chuyển; 놀러, 보러, 먹으러.
+      - vi: 안 - không làm (chọn vậy); 못 - không thể. Danh từ + 못 해요 [모태요].
+      - vi: V + 고 있어요 - đang V; 고 있었어요 - lúc đó đang V.
+      - vi: 수영하다 bơi · 배우다 học (kỹ năng) · 놀다 chơi · 운전하다 lái xe · 노래하다 hát · 시간 thời gian · 지금 bây giờ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:pf-purpose-mcq-meogeureo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eureo-gada
+    prompt:
+      stem: '"Tôi đi ăn cơm" - chọn dạng đúng: 밥 ___ 가요.'
+      stem_lang: vi
+      options:
+        - { id: r2h, text: 먹으러, lang: ko }
+        - { id: t6m, text: 먹러, lang: ko }
+        - { id: y9a, text: 먹어러, lang: ko }
+        - { id: b3k, text: 머그러, lang: ko }
+    answer:
+      correct_option_id: r2h
+    explanation:
+      vi: 먹 có patchim nên thêm 으러 - 먹으러. 머그러 là cách đọc nối âm, không phải cách viết.
+    display_answer: 먹으러
+
+  - key: ko:exercise:pf-purpose-listen-swim
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-mot
+    prompt:
+      audio_asset_id: null
+      fallback_text: 저는 수영을 못 해요.
+      options:
+        - { id: d5w, text: Tôi không biết bơi., lang: vi }
+        - { id: n1x, text: Tôi đang bơi., lang: vi }
+        - { id: g7c, text: Tôi đi bơi., lang: vi }
+        - { id: q4e, text: Tôi đã bơi rồi., lang: vi }
+    answer:
+      correct_option_id: d5w
+    explanation:
+      vi: 못 해요 [모태요] là "không thể làm", nên 수영을 못 해요 là "không biết bơi". Không có -고 있어요 (đang), -러 가요 (đi để) hay 했어요 (đã).
+    display_answer: Tôi không biết bơi.
+
+  - key: ko:exercise:pf-purpose-mcq-mot-position
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-mot
+    prompt:
+      stem: '"Tôi không học được" - câu nào đặt 못 đúng chỗ?'
+      stem_lang: vi
+      options:
+        - { id: l8s, text: 공부 못 해요., lang: ko }
+        - { id: e2j, text: 못 공부해요., lang: ko }
+        - { id: v6u, text: 공부해요 못., lang: ko }
+        - { id: o3b, text: 공부 못 하요., lang: ko }
+    answer:
+      correct_option_id: l8s
+    explanation:
+      vi: 공부하다 là "danh từ + 하다", nên 못 chen giữa và đứng sát 해요 - 공부 못 해요. 하다 luôn chia thành 해요, không phải 하요.
+    display_answer: 공부 못 해요.
+
+  - key: ko:exercise:pf-purpose-fill-progressive
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-go-isseoyo
+    prompt:
+      template: "Bây giờ tôi đang làm bài tập. - 지금 숙제를 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - '"Đang" = thân động từ + 고 있어요.'
+        - Thân của 하다 là 하.
+    answer:
+      blanks:
+        b1: [하고 있어요, 해요]
+    known_wrong:
+      - answer: 해고 있어요
+        feedback_vi: -고 gắn vào thân 하, không gắn vào 해 - 하고 있어요.
+        error_tag: progressive_form
+      - answer: 하고 있었어요
+        feedback_vi: 하고 있었어요 là "lúc đó đang làm" (quá khứ). Câu có 지금 nên dùng 하고 있어요.
+        error_tag: tense_present
+      - answer: 했어요
+        feedback_vi: 했어요 là "đã làm". "Đang làm" là 하고 있어요.
+        error_tag: tense_present
+    explanation:
+      vi: Thân 하 + 고 있어요 → 하고 있어요, nhấn mạnh việc đang dở dang. Có 지금 thì hiện tại 해요 cũng được chấp nhận.
+    display_answer: 지금 숙제를 하고 있어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:pf-purpose-fill-nolleo
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:nolda
+    prompt:
+      template: "Tôi đã đến nhà bạn chơi. - 친구 집에 {{b1}} 갔어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [놀러]
+    known_wrong:
+      - answer: 놀으러
+        feedback_vi: Thân 놀 đã có ㄹ nên chỉ thêm 러 - 놀러.
+        error_tag: rieul_stem
+      - answer: 놀아러
+        feedback_vi: -러 gắn thẳng vào thân, không chia 놀아 trước - 놀러.
+        error_tag: purpose_form
+      - answer: 놀아서
+        feedback_vi: -아서 là "rồi", không phải "để". Mục đích dùng -(으)러 - 놀러.
+        error_tag: purpose_form
+    explanation:
+      vi: Mục đích của việc đi là "chơi" - 놀다 + 러. Thân kết thúc bằng ㄹ chỉ thêm 러, nên viết 놀러.
+    display_answer: 친구 집에 놀러 갔어요.
+
+  - key: ko:exercise:pf-purpose-fill-cannot-go
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-mot
+    prompt:
+      template: "Hôm nay tôi bị ốm nên không đi học được. - 오늘 아파요. 학교에 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [못 가요, 가지 못해요]
+    known_wrong:
+      - answer: 안 가요
+        feedback_vi: 안 가요 nghe như bạn chọn không đi. Ốm nên không đi được là 못 가요.
+        error_tag: mot_vs_an
+      - answer: 가요 못
+        feedback_vi: 못 đứng ngay trước động từ - 못 가요.
+        error_tag: mot_position
+      - answer: 못 가다
+        feedback_vi: 가다 là dạng từ điển. Khi nói dùng 못 가요.
+        error_tag: dictionary_form
+    explanation:
+      vi: Bị ốm là hoàn cảnh khiến bạn không thể đi, nên dùng 못 - 못 가요 [몯까요]. Dạng dài 가지 못해요 cũng đúng.
+    display_answer: 오늘 아파요. 학교에 못 가요.
+
+  - key: ko:exercise:pf-purpose-translate-drive
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:unjeonhada
+    prompt:
+      source_text: Tôi không biết lái xe.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 운전 못 해요.
+        - 저는 운전 못 해요.
+        - 전 운전 못 해요.
+        - 저는 운전을 못 해요.
+        - 운전을 못 해요.
+        - 저는 운전 못해요.
+        - 저는 운전을 못해요.
+        - 저는 운전하지 못해요.
+    known_wrong:
+      - answer: 저는 못 운전해요.
+        feedback_vi: Với "danh từ + 하다", 못 chen giữa - 운전 못 해요.
+        error_tag: mot_position
+      - answer: 저는 운전 안 해요.
+        feedback_vi: 안 해요 là "tôi không lái" (không muốn/không làm). "Không biết lái" là 못 해요.
+        error_tag: mot_vs_an
+      - answer: jeoneun unjeon mot haeyo
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: '"Không biết làm" là không có khả năng - dùng 못. 운전하다 có 하다 nên 못 đứng trước 해요 - 운전 못 해요 [운전 모태요].'
+    display_answer: 저는 운전 못 해요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:pf-purpose-translate-library
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:jigeum
+    prompt:
+      source_text: 지금 도서관에서 책을 읽고 있어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bây giờ tôi đang đọc sách ở thư viện.
+        - Bây giờ tôi đang đọc sách trong thư viện.
+        - Tôi đang đọc sách ở thư viện.
+        - Giờ tôi đang đọc sách ở thư viện.
+        - Bây giờ mình đang đọc sách ở thư viện.
+        - Hiện giờ tôi đang đọc sách ở thư viện.
+        - Bây giờ tôi đang đọc sách tại thư viện.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bây giờ tôi đi thư viện để đọc sách.
+        feedback_vi: Câu không có -(으)러 가요 (đi để). 읽고 있어요 là "đang đọc".
+        error_tag: progressive_meaning
+      - answer: Lúc đó tôi đang đọc sách ở thư viện.
+        feedback_vi: 지금 là "bây giờ", và 있어요 là hiện tại, không phải 있었어요.
+        error_tag: tense_present
+    explanation:
+      vi: 지금 là bây giờ, 도서관에서 là "ở thư viện" (nơi hành động), 읽고 있어요 là "đang đọc".
+    display_answer: Bây giờ tôi đang đọc sách ở thư viện.
+
+  - key: ko:exercise:pf-purpose-order-movie
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eureo-gada
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Hàn: "Tôi đi xem phim."'
+      tokens:
+        - { id: t-gayo, text: 가요 }
+        - { id: t-boreo, text: 보러 }
+        - { id: t-yeonghwareul, text: 영화를 }
+        - { id: t-bwareo, text: 봐러 }
+        - { id: t-bwayo, text: 봐요 }
+    answer:
+      orders:
+        - [t-yeonghwareul, t-boreo, t-gayo]
+    explanation:
+      vi: Mục đích (xem phim) đứng trước, 가요 đứng cuối - 영화를 보러 가요. -러 gắn vào thân 보, không chia 봐 trước.
+    display_answer: 영화를 보러 가요.
+
+  - key: ko:exercise:pf-purpose-mcq-invite-swim
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:suyeonghada
+    prompt:
+      stem: Bạn Hàn rủ bạn đi bơi, nhưng bạn không biết bơi. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - { id: k5y, text: 미안해요. 저는 수영 못 해요., lang: ko }
+        - { id: w9g, text: 미안해요. 저는 못 수영해요., lang: ko }
+        - { id: f3n, text: 미안해요. 저는 수영하고 있어요., lang: ko }
+        - { id: a6r, text: 미안해요. 저는 수영하러 가요., lang: ko }
+    answer:
+      correct_option_id: k5y
+    explanation:
+      vi: Không biết bơi là không có khả năng - 못, và 못 đứng sát 해요 - 수영 못 해요. 수영하고 있어요 là "đang bơi", 수영하러 가요 là "đi bơi".
+    display_answer: 미안해요. 저는 수영 못 해요.
+
+  - key: ko:exercise:pf-purpose-mcq-learn-korean
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:baeuda
+    prompt:
+      stem: 'Bạn muốn nói: "Tôi đến Hàn Quốc để học tiếng Hàn." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: p7t, text: 한국어를 배우러 한국에 왔어요., lang: ko }
+        - { id: i4m, text: 한국어를 배우러 공부해요., lang: ko }
+        - { id: u1z, text: 한국어를 배우으러 한국에 왔어요., lang: ko }
+        - { id: c8w, text: 한국어를 배워러 한국에 왔어요., lang: ko }
+    answer:
+      correct_option_id: p7t
+    explanation:
+      vi: 배우 không có patchim nên thêm 러 - 배우러, và sau -러 là động từ di chuyển 왔어요. 배우러 공부해요 sai vì -러 không đi với 공부하다.
+    display_answer: 한국어를 배우러 한국에 왔어요.
+
+  - key: ko:exercise:pf-purpose-translate-friend-visit
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:verb-oda
+    prompt:
+      source_text: Hôm qua bạn tôi đã đến nhà tôi chơi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 어제 친구가 우리 집에 놀러 왔어요.
+        - 어제 친구가 저희 집에 놀러 왔어요.
+        - 어제 친구가 집에 놀러 왔어요.
+        - 친구가 어제 우리 집에 놀러 왔어요.
+        - 친구가 어제 저희 집에 놀러 왔어요.
+        - 어제 제 친구가 우리 집에 놀러 왔어요.
+    known_wrong:
+      - answer: 어제 친구가 우리 집에 놀으러 왔어요.
+        feedback_vi: Thân 놀 có ㄹ nên chỉ thêm 러 - 놀러.
+        error_tag: rieul_stem
+      - answer: 어제 친구가 우리 집에 놀러 와요.
+        feedback_vi: Có 어제 nên phải dùng quá khứ - 왔어요.
+        error_tag: tense_past
+      - answer: 어제 친구가 우리 집에서 놀러 왔어요.
+        feedback_vi: Nơi đến dùng 에, không dùng 에서 - 우리 집에.
+        error_tag: particle_e_eseo
+      - answer: 어제 친구를 우리 집에 놀러 왔어요.
+        feedback_vi: Người đến là chủ ngữ nên dùng 이/가 - 친구가.
+        error_tag: subject_particle
+    explanation:
+      vi: 놀러 (để chơi) + 왔어요 (đã đến). Nơi đến dùng 에; "nhà tôi" người Hàn hay nói 우리 집 hoặc khiêm tốn 저희 집.
+    display_answer: 어제 친구가 우리 집에 놀러 왔어요.

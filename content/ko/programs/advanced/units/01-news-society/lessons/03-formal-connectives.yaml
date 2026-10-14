@@ -1,0 +1,432 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:formal-connectives
+order_index: 3
+level: topik5
+title:
+  vi: Liên kết câu trang trọng - dẫn nguồn, đối lập, nhượng bộ
+objectives:
+  - vi: Dẫn nguồn tin bằng N에 따르면 đặt đúng ở đầu câu, kết thúc bằng -다고 한다 hoặc -(으)ㄴ 것으로 나타났다.
+  - vi: So sánh, đối lập và bổ sung bằng -(으)며, -(으)ㄴ/는 반면, -는 데 반해, -(으)ㄹ 뿐만 아니라.
+  - vi: Diễn đạt nhượng bộ trang trọng bằng -(으)ㅁ에도 불구하고 và nối đoạn bằng 그러나, 따라서, 또한, 한편.
+estimated_minutes: 20
+skills: [grammar, reading, writing]
+prerequisites: [ko:lesson:society-economy-vocab]
+items:
+  - item: ko:item:gp-eumyeo
+  - item: ko:item:gp-ban-myeon
+  - item: ko:item:gp-neun-de-banhae
+  - item: ko:item:gp-e-ttareumyeon
+  - item: ko:item:gp-eum-edo-bulguhago
+  - item: ko:item:gp-l-ppunman-anira
+  - item: ko:item:hanpyeon
+  - item: ko:item:ttaraseo
+  - item: ko:item:geureona
+  - item: ko:item:ttohan
+  - item: ko:item:irin-gagu
+    role: reuse
+  - item: ko:item:mulga-sangseung
+    role: reuse
+  - item: ko:item:jaehwalyong
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc trôi một đoạn tin TOPIK 5 có nhiều mệnh đề nối nhau, và viết được câu ghép trang trọng thay cho chuỗi câu ngắn -고, -지만, 그래서.
+  - type: explain
+    text:
+      vi: Văn viết có bộ liên kết riêng, trang trọng hơn văn nói. -(으)며 thay -고 (và), -(으)ㄴ/는 반면 và -는 데 반해 thay -지만 khi đối lập hai mặt hay hai nhóm, -(으)ㄹ 뿐만 아니라 là "không chỉ … mà còn".
+  - type: explain
+    text:
+      vi: N에 따르면 là "theo N" để dẫn nguồn, luôn đứng đầu câu. Vế sau thường kết thúc bằng lời dẫn - -다고 한다 (nghe nói, theo tin) hoặc -(으)ㄴ/는 것으로 나타났다 (cho thấy là).
+  - type: explain
+    text:
+      vi: -(으)ㅁ에도 불구하고 là "mặc dù, bất chấp", dùng khi kết quả đi ngược điều mong đợi. Động từ/tính từ phải danh từ hoá bằng -(으)ㅁ trước 에도 (노력했음에도), còn danh từ gắn thẳng 에도 (노력에도).
+  - type: deep_explain
+    text:
+      vi: Chọn dạng định ngữ trước 반면 và 데 반해 theo loại từ và thì - động từ hiện tại -는 (증가하는 반면), tính từ -(으)ㄴ (높은 데 반해), quá khứ -(으)ㄴ (증가한 반면). 반면 nhấn hai mặt đối lập, 데 반해 nhấn sự so sánh giữa hai đối tượng, nhưng trong mô tả số liệu chúng thường thay được cho nhau. Giữa các câu, dùng 그러나 (tuy nhiên), 따라서 (do đó), 또한 (ngoài ra), 한편 (trong khi đó) thay cho 그런데, 그래서, 그리고 của văn nói.
+  - type: example
+    target: 통계청에 따르면 지난해 1인 가구는 전년에 비해 4% 증가했다. 반면 4인 가구는 꾸준히 감소하고 있다. 전문가들은 1인 가구가 앞으로도 늘어날 것으로 예상하며, 이에 맞는 주거 정책이 필요하다고 지적했다.
+    target_lang: ko
+    translation:
+      vi: Theo Cục Thống kê, năm ngoái hộ một người tăng 4% so với năm trước. Ngược lại, hộ bốn người đang giảm đều. Các chuyên gia dự đoán hộ một người sẽ còn tăng và chỉ ra rằng cần có chính sách nhà ở phù hợp.
+    note:
+      vi: Đoạn tin minh hoạ (số liệu giả định) - 에 따르면 mở đầu, 반면 đối lập, -며 nối hai hành động của chuyên gia.
+  - type: example
+    target: 경제가 성장했음에도 불구하고 청년 실업률은 오히려 높아졌다.
+    target_lang: ko
+    translation:
+      vi: Mặc dù kinh tế đã tăng trưởng, tỉ lệ thất nghiệp của thanh niên lại còn tăng lên.
+    note:
+      vi: 성장했- (quá khứ) + -음에도 불구하고; 오히려 "ngược lại, lại còn" thường đi kèm.
+  - type: example
+    target: 재활용은 자원을 아낄 뿐만 아니라 쓰레기 처리 비용도 줄인다.
+    target_lang: ko
+    translation:
+      vi: Tái chế không chỉ tiết kiệm tài nguyên mà còn giảm chi phí xử lý rác.
+    note:
+      vi: Vế sau có 도 để hoàn chỉnh ý "mà còn".
+  - type: example
+    target: 수도권 인구는 늘어나는 데 반해 지방 인구는 줄고 있다. 따라서 지역 균형 발전 정책이 시급하다.
+    target_lang: ko
+    translation:
+      vi: Dân số vùng thủ đô tăng, trong khi dân số địa phương giảm. Do đó, chính sách phát triển cân bằng vùng là cấp bách.
+  - type: common_mistake
+    wrong: 물가가 많이 올랐다고 한다, 한국은행에 따르면.
+    right: 한국은행에 따르면 물가가 많이 올랐다고 한다.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt có thể nói "…, theo Ngân hàng Trung ương" ở cuối câu. Tiếng Hàn đặt N에 따르면 lên đầu câu để người đọc biết nguồn trước.
+  - type: common_mistake
+    wrong: 정부가 노력했에도 불구하고 출산율이 떨어졌다.
+    right: 정부가 노력했음에도 불구하고 출산율이 떨어졌다.
+    target_lang: ko
+    note:
+      vi: Trước 에도 cần một danh từ, nên động từ phải thêm -(으)ㅁ - 노력했음에도. Người Việt dịch "mặc dù đã nỗ lực" nên hay quên bước danh từ hoá này.
+  - type: common_mistake
+    wrong: 조사에 따라 응답자의 절반이 이직을 원했다.
+    right: 조사에 따르면 응답자의 절반이 이직을 원했다.
+    target_lang: ko
+    note:
+      vi: Cả hai đều dịch là "theo", nhưng N에 따라 là "tuỳ theo, dựa theo" (지역에 따라 다르다). Dẫn nguồn tin thì phải là N에 따르면.
+  - type: summary
+    points:
+      - vi: N에 따르면 (đầu câu) … -다고 한다 / -(으)ㄴ 것으로 나타났다.
+      - vi: -(으)며 = và (văn viết) · -(으)ㄴ/는 반면, -는 데 반해 = trong khi đó, trái lại.
+      - vi: -(으)ㄹ 뿐만 아니라 … 도 = không chỉ … mà còn.
+      - vi: -(으)ㅁ에도 불구하고 / N에도 불구하고 = mặc dù, bất chấp.
+      - vi: Nối câu - 그러나, 따라서, 또한, 한편 (không dùng 그런데, 그래서 trong bài luận).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:formal-connectives-mcq-source
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gp-e-ttareumyeon
+    prompt:
+      stem: "Chọn cụm đúng để dẫn nguồn \"Theo Cục Thống kê\": ___ 작년 출생아 수는 역대 최저였다고 한다."
+      stem_lang: vi
+      options:
+        - { id: d6x, text: 통계청에 따르면, lang: ko }
+        - { id: r1p, text: 통계청에 따라, lang: ko }
+        - { id: j8b, text: 통계청에 비해, lang: ko }
+        - { id: o4m, text: 통계청에도 불구하고, lang: ko }
+    answer:
+      correct_option_id: d6x
+    explanation:
+      vi: Dẫn nguồn tin dùng N에 따르면, khớp với đuôi -다고 한다. 에 따라 là "tuỳ theo", 에 비해 là "so với", 에도 불구하고 là "bất chấp".
+    display_answer: 통계청에 따르면
+
+  - key: ko:exercise:formal-connectives-mcq-myeo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gp-eumyeo
+    prompt:
+      stem: "Chọn dạng đúng: 이 도시는 인구가 많___ 교통이 편리하다. (Thành phố này đông dân và giao thông thuận tiện.)"
+      stem_lang: vi
+      options:
+        - { id: v3k, text: 으며, lang: ko }
+        - { id: a9t, text: 며, lang: ko }
+        - { id: h2w, text: 이며, lang: ko }
+        - { id: l7s, text: 음에도 불구하고, lang: ko }
+    answer:
+      correct_option_id: v3k
+    explanation:
+      vi: 많다 có patchim nên dùng -으며 (많으며). -며 chỉ sau nguyên âm/ㄹ, 이며 dùng sau danh từ; 음에도 불구하고 là "mặc dù", sai nghĩa.
+    display_answer: 으며
+
+  - key: ko:exercise:formal-connectives-listen-despite
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gp-eum-edo-bulguhago
+    prompt:
+      audio_asset_id: null
+      fallback_text: 경제가 성장했음에도 불구하고 실업률은 높아졌다.
+      options:
+        - { id: u5n, text: "Mặc dù kinh tế đã tăng trưởng, tỉ lệ thất nghiệp vẫn tăng.", lang: vi }
+        - { id: i2c, text: Vì kinh tế tăng trưởng nên tỉ lệ thất nghiệp giảm., lang: vi }
+        - { id: e7q, text: Kinh tế tăng trưởng và tỉ lệ thất nghiệp cũng giảm., lang: vi }
+        - { id: x4g, text: Nếu kinh tế tăng trưởng thì tỉ lệ thất nghiệp sẽ tăng., lang: vi }
+    answer:
+      correct_option_id: u5n
+    explanation:
+      vi: -(으)ㅁ에도 불구하고 là "mặc dù" - kết quả trái với mong đợi. 높아졌다 là "đã tăng lên", không phải "giảm".
+    display_answer: Mặc dù kinh tế đã tăng trưởng, tỉ lệ thất nghiệp vẫn tăng.
+
+  - key: ko:exercise:formal-connectives-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-ban-myeon
+    prompt:
+      template: "1인 가구는 증가{{b1}} 반면 4인 가구는 감소했다. 재활용은 자원을 아낄 {{b2}} 아니라 환경 오염도 줄인다."
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Hộ một người đã tăng, trong khi hộ bốn người giảm. Tái chế không chỉ tiết kiệm tài nguyên mà còn giảm ô nhiễm."
+        - "Gợi ý: sự việc đã xảy ra - định ngữ quá khứ -(으)ㄴ; \"không chỉ\" - -(으)ㄹ ___ 아니라."
+    answer:
+      blanks:
+        b1: [한]
+        b2: [뿐만, 뿐]
+    known_wrong:
+      - answer: 하는
+        feedback_vi: 감소했다 là quá khứ nên vế trước cũng dùng định ngữ quá khứ - 증가한 반면.
+        error_tag: ban_myeon_tense
+      - answer: 만
+        feedback_vi: Cấu trúc là -(으)ㄹ 뿐만 아니라, 뿐 không bỏ được.
+        error_tag: ppunman_form
+    explanation:
+      vi: Hai vế đều nói sự việc đã xảy ra nên dùng 증가한 반면. "Không chỉ … mà còn" là -(으)ㄹ 뿐만 아니라 (뿐 아니라 cũng đúng), vế sau có 도.
+    display_answer: 1인 가구는 증가한 반면 4인 가구는 감소했다. 재활용은 자원을 아낄 뿐만 아니라 환경 오염도 줄인다.
+
+  - key: ko:exercise:formal-connectives-wb-source
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gp-e-ttareumyeon
+    prompt:
+      instruction: "Sắp xếp thành câu tin tức: \"Theo khảo sát, giá cả đã tăng.\""
+      tokens:
+        - { id: k3, text: 물가가 }
+        - { id: k5, text: 따라 }
+        - { id: k1, text: 조사에 }
+        - { id: k4, text: 올랐다 }
+        - { id: k2, text: 따르면 }
+    answer:
+      orders:
+        - [k1, k2, k3, k4]
+    explanation:
+      vi: Nguồn tin (조사에 따르면) đứng đầu câu, rồi mới đến nội dung. 따라 là "tuỳ theo", không dùng để dẫn nguồn.
+    display_answer: 조사에 따르면 물가가 올랐다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:formal-connectives-fill-despite
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-eum-edo-bulguhago
+    prompt:
+      template: "(Mặc dù chính phủ đã nỗ lực, tỉ lệ sinh vẫn giảm.) 정부가 노력했{{b1}} 불구하고 출산율은 떨어졌다. (Trái với nam giới có tỉ lệ trả lời cao, nữ giới thấp.) 남성의 응답률이 높은 {{b2}} 반해 여성의 응답률은 낮았다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [음에도]
+        b2: [데]
+    known_wrong:
+      - answer: 에도
+        feedback_vi: 노력했- là động từ nên phải danh từ hoá trước 에도 - 노력했음에도.
+        error_tag: missing_nominalizer
+      - answer: 는데도
+        feedback_vi: -는데도 không đi với 불구하고. Dạng đúng là -(으)ㅁ에도 불구하고.
+        error_tag: despite_form
+      - answer: 대
+        feedback_vi: Danh từ phụ thuộc trong -는 데 반해 viết là 데 (ㅔ), không phải 대.
+        error_tag: spelling_de
+      - answer: 것에
+        feedback_vi: Cấu trúc cố định là -(으)ㄴ 데 반해.
+        error_tag: de_banhae_form
+    explanation:
+      vi: Động từ quá khứ 노력했- + -음에도 불구하고 (có patchim ㅆ nên dùng -음). Sau tính từ 높다 dùng định ngữ 높은 rồi đến 데 반해, viết cách.
+    display_answer: 정부가 노력했음에도 불구하고 출산율은 떨어졌다. / 남성의 응답률이 높은 데 반해 여성의 응답률은 낮았다.
+
+  - key: ko:exercise:formal-connectives-translate-source
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-e-ttareumyeon
+    prompt:
+      source_text: Theo khảo sát, giá cả đã tăng. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 조사에 따르면 물가가 올랐다.
+        - 조사에 따르면 물가가 상승했다.
+        - 조사에 따르면 물가가 올랐다고 한다.
+        - 조사에 따르면 물가가 상승했다고 한다.
+        - 조사에 따르면 물가가 오른 것으로 나타났다.
+        - 조사에 따르면 물가가 상승한 것으로 나타났다.
+        - 조사 결과에 따르면 물가가 올랐다.
+        - 조사 결과에 따르면 물가가 상승했다.
+        - 조사 결과에 따르면 물가가 오른 것으로 나타났다.
+        - 조사 결과에 따르면 물가가 상승한 것으로 나타났다.
+        - 조사 결과 물가가 오른 것으로 나타났다.
+        - 조사 결과 물가가 상승한 것으로 나타났다.
+    known_wrong:
+      - answer: 물가가 올랐다 조사에 따르면.
+        feedback_vi: N에 따르면 phải đứng đầu câu - 조사에 따르면 물가가 올랐다.
+        error_tag: ttareumyeon_position
+      - answer: 조사에 따라 물가가 올랐다.
+        feedback_vi: 에 따라 là "tuỳ theo". Dẫn nguồn dùng 에 따르면.
+        error_tag: ttara_ttareumyeon
+      - answer: 조사에 따르면 물가가 증가했다.
+        feedback_vi: Giá cả không đi với 증가하다 - dùng 올랐다/상승했다.
+        error_tag: collocation_price
+      - answer: 조사에 따르면 물가가 올랐어요.
+        feedback_vi: Đây là 해요체. Văn viết là 올랐다.
+        error_tag: haeyo_in_writing
+    explanation:
+      vi: Nguồn (조사에 따르면) mở đầu câu, nội dung kết thúc bằng 올랐다 hoặc lời dẫn -다고 한다 / -(으)ㄴ 것으로 나타났다. "Giá cả tăng" là 물가가 오르다/상승하다.
+    display_answer: 조사에 따르면 물가가 올랐다.
+
+  - key: ko:exercise:formal-connectives-translate-contrast
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-ban-myeon
+    prompt:
+      source_text: Giá cả đã tăng, trong khi lương lại giảm. (văn viết, dùng 반면 hoặc 데 반해)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 물가는 오른 반면 월급은 줄었다.
+        - 물가는 오른 반면에 월급은 줄었다.
+        - 물가는 상승한 반면 임금은 감소했다.
+        - 물가는 상승한 반면에 임금은 감소했다.
+        - 물가는 오른 반면 임금은 줄었다.
+        - 물가는 오른 반면 임금은 감소했다.
+        - 물가는 상승한 반면 월급은 줄었다.
+        - 물가는 상승한 반면 월급은 감소했다.
+        - 물가가 오른 반면 월급은 줄었다.
+        - 물가가 상승한 반면 임금은 감소했다.
+        - 물가는 오른 데 반해 월급은 줄었다.
+        - 물가는 상승한 데 반해 임금은 감소했다.
+        - 물가가 오른 데 반해 월급은 줄었다.
+        - 물가가 상승한 데 반해 임금은 감소했다.
+    known_wrong:
+      - answer: 물가는 오르는 반면 월급은 줄었다.
+        feedback_vi: Sự việc đã xảy ra nên dùng định ngữ quá khứ - 오른 반면.
+        error_tag: ban_myeon_tense
+      - answer: 물가는 올랐는 반면 월급은 줄었다.
+        feedback_vi: Không ghép -었- với -는. Quá khứ trước 반면 là -(으)ㄴ - 오른 반면.
+        error_tag: ban_myeon_form
+      - answer: 물가는 증가한 반면 월급은 줄었다.
+        feedback_vi: Giá cả dùng 오르다/상승하다, không dùng 증가하다.
+        error_tag: collocation_price
+      - answer: 물가는 오른 반면 월급은 줄었어요.
+        feedback_vi: Đây là 해요체. Văn viết là 줄었다.
+        error_tag: haeyo_in_writing
+    explanation:
+      vi: Hai vế đối lập, sự việc đã xảy ra - 오른/상승한 반면 (hoặc 데 반해). Hai chủ ngữ thường mang 은/는 để làm rõ sự tương phản; vế sau chia quá khứ 줄었다/감소했다.
+    display_answer: 물가는 오른 반면 월급은 줄었다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:formal-connectives-mcq-stats
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-neun-de-banhae
+    prompt:
+      stem: "Bạn mô tả biểu đồ: nam giới tập thể dục nhiều, nữ giới ít. Chọn liên kết đúng: 운동을 하는 남성은 많___ 여성은 적었다."
+      stem_lang: vi
+      options:
+        - { id: g6d, text: 은 데 반해, lang: ko }
+        - { id: n2r, text: 으며, lang: ko }
+        - { id: w8e, text: 을 뿐만 아니라, lang: ko }
+        - { id: c1y, text: 음에도 불구하고, lang: ko }
+    answer:
+      correct_option_id: g6d
+    explanation:
+      vi: Hai nhóm có kết quả trái ngược nên dùng -(으)ㄴ 데 반해. -(으)며 chỉ nối hai ý cùng chiều; 뿐만 아니라 là bổ sung; 음에도 불구하고 là nhượng bộ, không hợp khi chỉ so sánh hai nhóm.
+    display_answer: 은 데 반해
+
+  - key: ko:exercise:formal-connectives-mcq-linking-word
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:geureona
+    prompt:
+      stem: "Chọn từ nối phù hợp cho bài luận: 분리수거가 중요하다는 것은 누구나 안다. ___ 실제로 쓰레기를 제대로 분리하는 사람은 많지 않다."
+      stem_lang: vi
+      options:
+        - { id: f5h, text: 그러나, lang: ko }
+        - { id: m3z, text: 따라서, lang: ko }
+        - { id: t9k, text: 또한, lang: ko }
+        - { id: b4u, text: 게다가, lang: ko }
+    answer:
+      correct_option_id: f5h
+    explanation:
+      vi: Câu sau trái với câu trước (ai cũng biết nhưng ít người làm) nên dùng 그러나. 따라서 là kết luận, 또한 và 게다가 là bổ sung cùng chiều.
+    display_answer: 그러나
+
+  - key: ko:exercise:formal-connectives-wb-myeo
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-eumyeo
+    prompt:
+      instruction: "Sắp xếp thành câu văn viết: \"Thành phố này đông dân và giao thông thuận tiện.\""
+      tokens:
+        - { id: p4, text: 교통이 }
+        - { id: p2, text: 인구가 }
+        - { id: p6, text: 많며 }
+        - { id: p5, text: 편리하다 }
+        - { id: p1, text: 이 도시는 }
+        - { id: p3, text: 많으며 }
+    answer:
+      orders:
+        - [p1, p2, p3, p4, p5]
+    explanation:
+      vi: -(으)며 nối hai đặc điểm cùng chiều. 많다 có patchim nên là 많으며; 많며 sai.
+    display_answer: 이 도시는 인구가 많으며 교통이 편리하다.
+
+  - key: ko:exercise:formal-connectives-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gp-eum-edo-bulguhago
+    prompt:
+      source_text: 정부의 노력에도 불구하고 출산율이 떨어졌다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bất chấp nỗ lực của chính phủ, tỉ lệ sinh đã giảm.
+        - Bất chấp nỗ lực của chính phủ, tỷ lệ sinh đã giảm.
+        - Bất chấp những nỗ lực của chính phủ, tỉ lệ sinh đã giảm.
+        - Bất chấp những nỗ lực của chính phủ, tỷ lệ sinh đã giảm.
+        - Mặc dù chính phủ đã nỗ lực, tỉ lệ sinh vẫn giảm.
+        - Mặc dù chính phủ đã nỗ lực, tỷ lệ sinh vẫn giảm.
+        - Dù chính phủ đã nỗ lực, tỉ lệ sinh vẫn giảm.
+        - Dù chính phủ đã nỗ lực, tỷ lệ sinh vẫn giảm.
+        - Mặc dù có sự nỗ lực của chính phủ, tỉ lệ sinh vẫn giảm.
+        - Mặc dù có sự nỗ lực của chính phủ, tỷ lệ sinh vẫn giảm.
+        - Bất chấp nỗ lực của chính phủ, tỉ lệ sinh vẫn giảm.
+        - Bất chấp nỗ lực của chính phủ, tỷ lệ sinh vẫn giảm.
+        - Mặc dù chính phủ nỗ lực, tỉ lệ sinh vẫn giảm.
+        - Mặc dù chính phủ nỗ lực, tỷ lệ sinh vẫn giảm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nhờ nỗ lực của chính phủ, tỉ lệ sinh đã giảm.
+        feedback_vi: 에도 불구하고 là "bất chấp, mặc dù", không phải "nhờ" (덕분에).
+        error_tag: despite_meaning
+      - answer: Bất chấp nỗ lực của chính phủ, tỉ lệ sinh đã tăng.
+        feedback_vi: 떨어졌다 là "đã giảm", không phải "tăng".
+        error_tag: meaning_reversed
+    explanation:
+      vi: N에도 불구하고 = bất chấp N / mặc dù có N. 출산율 là "tỉ lệ sinh", 떨어졌다 là "đã giảm, đã rơi xuống".
+    display_answer: Bất chấp nỗ lực của chính phủ, tỉ lệ sinh đã giảm.

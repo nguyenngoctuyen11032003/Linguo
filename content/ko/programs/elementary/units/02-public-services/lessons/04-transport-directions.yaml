@@ -1,0 +1,400 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:transport-directions
+order_index: 4
+level: topik2
+title:
+  vi: Đi tàu điện ngầm, xe buýt và hỏi đường
+objectives:
+  - vi: Hỏi và hiểu cách đi tàu, xe - 몇 호선, 갈아타다, 정류장, 교통카드, 타다/내리다.
+  - vi: Chỉ hướng bằng N(으)로 - 오른쪽으로, 왼쪽으로, 쭉 가세요 - và chọn đúng 로/으로 theo patchim.
+  - vi: Chỉ dẫn "chỉ cần… là được" bằng V-(으)면 돼요.
+estimated_minutes: 17
+skills: [speaking, listening, grammar]
+prerequisites: [ko:lesson:hospital-pharmacy]
+items:
+  - item: ko:item:gram-ro-euro-direction
+  - item: ko:item:gram-eumyeon-doeda
+  - item: ko:item:jihacheol
+  - item: ko:item:beoseu
+  - item: ko:item:yeok
+  - item: ko:item:jeongnyujang
+  - item: ko:item:gyotong-kadeu
+  - item: ko:item:verb-tada
+  - item: ko:item:verb-naerida
+  - item: ko:item:verb-garatada
+  - item: ko:item:myeot-hoseon
+  - item: ko:item:oreunjjok
+  - item: ko:item:oenjjok
+  - item: ko:item:phrase-jjuk-gada
+  - item: ko:item:q-eodi
+    role: reuse
+  - item: ko:item:gram-e-destination
+    role: reuse
+  - item: ko:item:verb-gada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự đi tàu điện ngầm và xe buýt ở Seoul - hỏi tuyến số mấy, đổi tàu ở đâu, xuống ở đâu - và hiểu người khác chỉ đường.
+  - type: explain
+    text:
+      vi: N(으)로 chỉ hướng đi (오른쪽으로 가세요 - đi về bên phải) hoặc phương tiện (지하철로 가요 - đi bằng tàu điện ngầm). Không có patchim + 로 (버스로), có patchim + 으로 (왼쪽으로, 서울역으로).
+  - type: explain
+    text:
+      vi: Ngoại lệ quan trọng - patchim ㄹ dùng 로, không dùng 으로 - 지하철로, 이 길로, 서울로. Người Việt hay thấy có patchim là thêm 으로, nên đây là lỗi rất dễ gặp.
+  - type: explain
+    text:
+      vi: V-(으)면 돼요 là "chỉ cần… là được", dùng nhiều khi chỉ đường - 시청역에서 내리면 돼요. Không patchim hoặc patchim ㄹ + 면 (타면, 내리면), có patchim + 으면 (앉으면).
+  - type: deep_explain
+    text:
+      vi: Lên phương tiện dùng 을/를 타다 (지하철을 타요), xuống ở đâu dùng 에서 내리다 (역에서 내려요), đổi sang tuyến nào dùng (으)로 갈아타다 (4호선으로 갈아타요). Số tuyến đọc bằng số Hán Hàn - 2호선 [이호선], và 몇 호선 đọc [며토선]. Xe buýt dừng ở 정류장 [정뉴장], tàu điện ngầm dừng ở 역; một tấm 교통카드 dùng được cho cả hai.
+  - type: example
+    target: 실례지만, 명동역은 몇 호선이에요? - 4호선이에요.
+    target_lang: ko
+    translation:
+      vi: Xin lỗi, ga Myeongdong là tuyến số mấy ạ? - Tuyến số 4.
+    note:
+      vi: 4호선 đọc [사호선] - số Hán Hàn.
+  - type: example
+    target: 2호선을 타고 시청역에서 1호선으로 갈아타세요.
+    target_lang: ko
+    translation:
+      vi: Anh đi tuyến 2, rồi đổi sang tuyến 1 ở ga Tòa thị chính.
+    note:
+      vi: 타고 là "đi… rồi"; tuyến mới đi với (으)로, nơi đổi đi với 에서.
+  - type: example
+    target: 이 길로 쭉 가세요. 그리고 오른쪽으로 가면 은행이 있어요.
+    target_lang: ko
+    translation:
+      vi: Cứ đi thẳng đường này. Rồi đi về bên phải là có ngân hàng.
+    note:
+      vi: 길 có patchim ㄹ nên dùng 로 - 이 길로.
+  - type: example
+    target: 다음 정류장에서 내리면 돼요.
+    target_lang: ko
+    translation:
+      vi: Bạn chỉ cần xuống ở trạm tiếp theo là được.
+  - type: common_mistake
+    wrong: 지하철으로 가요.
+    right: 지하철로 가요.
+    target_lang: ko
+    note:
+      vi: 지하철 có patchim, nhưng là patchim ㄹ, nên dùng 로. Chỉ patchim khác ㄹ mới dùng 으로 (왼쪽으로).
+  - type: common_mistake
+    wrong: 오른쪽로 가세요.
+    right: 오른쪽으로 가세요.
+    target_lang: ko
+    note:
+      vi: 쪽 có patchim ㄱ nên cần 으로. Hãy nhìn chữ cuối của từ trước khi chọn 로 hay 으로.
+  - type: common_mistake
+    wrong: 두 호선을 타세요.
+    right: 2호선(이호선)을 타세요.
+    target_lang: ko
+    note:
+      vi: Số tuyến là tên gọi, đọc bằng số Hán Hàn như số nhà, số điện thoại - 이호선, không dùng số thuần Hàn 두.
+  - type: summary
+    points:
+      - vi: N(으)로 - hướng hoặc phương tiện; không patchim/patchim ㄹ + 로 (버스로, 지하철로, 이 길로), patchim khác + 으로 (왼쪽으로).
+      - vi: 을/를 타다 · 에서 내리다 · (으)로 갈아타다 · 몇 호선 [며토선].
+      - vi: 오른쪽 · 왼쪽 · 쭉 가세요 · 정류장 (xe buýt) · 역 (tàu) · 교통카드.
+      - vi: V-(으)면 돼요 - chỉ cần… là được (내리면 돼요, 갈아타면 돼요).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:transport-mcq-right
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:oreunjjok
+    prompt:
+      stem: Câu nào có nghĩa "Xin đi về bên phải" và viết đúng?
+      stem_lang: vi
+      options:
+        - { id: u3f, text: 오른쪽으로 가세요., lang: ko }
+        - { id: l8b, text: 오른쪽로 가세요., lang: ko }
+        - { id: c5t, text: 왼쪽으로 가세요., lang: ko }
+        - { id: j9x, text: 오른쪽으로 갈 수 없어요., lang: ko }
+    answer:
+      correct_option_id: u3f
+    explanation:
+      vi: 쪽 có patchim ㄱ nên dùng 으로 - 오른쪽으로. 왼쪽 là bên trái, còn 갈 수 없어요 là "không đi được".
+    display_answer: 오른쪽으로 가세요.
+
+  - key: ko:exercise:transport-listen-transfer
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:verb-garatada
+    prompt:
+      audio_asset_id: null
+      fallback_text: 시청역에서 2호선으로 갈아타세요.
+      options:
+        - { id: f2r, text: Hãy đổi sang tuyến 2 ở ga Tòa thị chính., lang: vi }
+        - { id: m7k, text: Hãy đi tuyến 2 đến ga Tòa thị chính., lang: vi }
+        - { id: s4e, text: Ga Tòa thị chính thuộc tuyến số 2., lang: vi }
+        - { id: z1v, text: Hãy đổi sang xe buýt ở ga Tòa thị chính., lang: vi }
+    answer:
+      correct_option_id: f2r
+    explanation:
+      vi: 갈아타세요 là "hãy đổi (tàu)", 2호선으로 là "sang tuyến 2", 시청역에서 là nơi đổi. Không có xe buýt (버스) trong câu.
+    display_answer: Hãy đổi sang tuyến 2 ở ga Tòa thị chính.
+
+  - key: ko:exercise:transport-mcq-by-subway
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:jihacheol
+    prompt:
+      stem: Câu nào có nghĩa "Tôi đi bằng tàu điện ngầm" và viết đúng?
+      stem_lang: vi
+      options:
+        - { id: p6n, text: 지하철로 가요., lang: ko }
+        - { id: a9d, text: 지하철으로 가요., lang: ko }
+        - { id: g3w, text: 지하철에 가요., lang: ko }
+        - { id: i7q, text: 지하철을 가요., lang: ko }
+    answer:
+      correct_option_id: p6n
+    explanation:
+      vi: Phương tiện dùng (으)로; 지하철 có patchim ㄹ nên dùng 로, không dùng 으로. 지하철에 가요 nghĩa là "đi đến tàu điện ngầm".
+    display_answer: 지하철로 가요.
+
+  - key: ko:exercise:transport-fill-straight-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:phrase-jjuk-gada
+    prompt:
+      template: "이 길로 {{b1}} 가세요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Cứ đi thẳng đường này."
+        - "Gợi ý: một chữ, bắt đầu bằng phụ âm căng ㅉ."
+    answer:
+      blanks:
+        b1: [쭉, 똑바로]
+    known_wrong:
+      - answer: 죽
+        feedback_vi: Phụ âm căng ㅉ - 쭉. 죽 là từ khác (cháo; chết).
+        error_tag: consonant_tense
+      - answer: 축
+        feedback_vi: ㅊ bật hơi khác ㅉ căng - viết 쭉.
+        error_tag: consonant_tense
+    explanation:
+      vi: 쭉 가세요 là "cứ đi thẳng"; 똑바로 (thẳng) cũng đúng. Chú ý ㅉ là phụ âm căng, không bật hơi.
+    display_answer: 이 길로 쭉 가세요.
+
+  - key: ko:exercise:transport-wb-bus-stop
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:jeongnyujang
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Trạm xe buýt ở đâu?\""
+      tokens:
+        - { id: s3, text: 어디에 }
+        - { id: s4, text: 있어요 }
+        - { id: s2, text: 정류장이 }
+        - { id: s1, text: 버스 }
+        - { id: s5, text: 역이 }
+    answer:
+      orders:
+        - [s1, s2, s3, s4]
+    explanation:
+      vi: Xe buýt dừng ở 정류장, còn 역 là ga tàu. Hỏi vị trí - N이/가 어디에 있어요?
+    display_answer: 버스 정류장이 어디에 있어요?
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:transport-fill-taxi
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-ro-euro-direction
+    prompt:
+      template: "(Trên taxi) 서울역{{b1}} 가 주세요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [으로, 에]
+    known_wrong:
+      - answer: 로
+        feedback_vi: 역 có patchim ㄱ nên dùng 으로 - 서울역으로.
+        error_tag: particle_ro_euro
+      - answer: 에서
+        feedback_vi: 에서 là "từ / ở"; đi đến đâu dùng (으)로 hoặc 에.
+        error_tag: particle_direction
+    explanation:
+      vi: Chỉ hướng đi dùng (으)로; 역 có patchim ㄱ (không phải ㄹ) nên là 서울역으로. 서울역에 가 주세요 cũng đúng.
+    display_answer: 서울역으로 가 주세요.
+
+  - key: ko:exercise:transport-fill-get-off
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eumyeon-doeda
+    prompt:
+      template: "시청역에서 {{b1}} 돼요. (xuống - chỉ cần)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [내리면]
+    known_wrong:
+      - answer: 내리으면
+        feedback_vi: 내리 không có patchim nên chỉ thêm 면 - 내리면.
+        error_tag: eumyeon_batchim
+      - answer: 내려야
+        feedback_vi: 내려야 돼요 là "phải xuống". "Chỉ cần xuống là được" là 내리면 돼요.
+        error_tag: modal_meaning
+    explanation:
+      vi: Mẫu "chỉ cần… là được" là V-(으)면 돼요; 내리다 không có patchim → 내리면 돼요.
+    display_answer: 시청역에서 내리면 돼요.
+
+  - key: ko:exercise:transport-translate-where-transfer
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:verb-garatada
+    prompt:
+      source_text: Tôi đổi tàu ở đâu thì được?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 어디에서 갈아타면 돼요?
+        - 어디서 갈아타면 돼요?
+        - 어디에서 갈아타야 해요?
+        - 어디서 갈아타야 해요?
+        - 어디에서 갈아타야 돼요?
+        - 어디서 갈아타야 돼요?
+        - 저는 어디에서 갈아타면 돼요?
+    known_wrong:
+      - answer: 어디에 갈아타면 돼요?
+        feedback_vi: Nơi đổi tàu dùng 에서 - 어디에서 갈아타요.
+        error_tag: particle_e_eseo
+      - answer: 어디에서 갈아타으면 돼요?
+        feedback_vi: 갈아타 không có patchim nên chỉ thêm 면 - 갈아타면.
+        error_tag: eumyeon_batchim
+      - answer: 어디에서 갈아탈 수 있어요?
+        feedback_vi: Câu này là "đổi được ở đâu", không phải "đổi ở đâu thì được"; nên dùng 갈아타면 돼요.
+        error_tag: modal_meaning
+    explanation:
+      vi: Đổi tàu là 갈아타다; nơi đổi dùng 어디에서 (어디서); "thì được" là -(으)면 돼요 → 갈아타면 돼요?. Hỏi "phải đổi ở đâu" - 갈아타야 해요? - cũng đúng.
+    display_answer: 어디에서 갈아타면 돼요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:transport-mcq-which-line
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:myeot-hoseon
+    prompt:
+      stem: "Ở ga, một người hỏi bạn: 강남역은 몇 호선이에요? Ga Gangnam thuộc tuyến 2. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: r5h, text: 2호선이에요., lang: ko }
+        - { id: e8m, text: 두 호선이에요., lang: ko }
+        - { id: k2p, text: 두 시예요., lang: ko }
+        - { id: w6y, text: 2번 출구예요., lang: ko }
+    answer:
+      correct_option_id: r5h
+    explanation:
+      vi: Số tuyến đọc bằng số Hán Hàn - 2호선 [이호선]. 두 시 là "hai giờ", còn 2번 출구 là "cửa ra số 2", không trả lời câu hỏi.
+    display_answer: 2호선이에요.
+
+  - key: ko:exercise:transport-translate-straight
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-ro-euro-direction
+    prompt:
+      source_text: Anh cứ đi thẳng đường này.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이 길로 쭉 가세요.
+        - 이 길로 쭉 가 주세요.
+        - 이 길로 똑바로 가세요.
+        - 이 길로 계속 가세요.
+        - 이 길로 쭉 가요.
+    known_wrong:
+      - answer: 이 길으로 쭉 가세요.
+        feedback_vi: 길 có patchim ㄹ nên dùng 로, không dùng 으로 - 이 길로.
+        error_tag: particle_ro_euro
+      - answer: 이 길에 쭉 가세요.
+        feedback_vi: Đi theo con đường nào dùng (으)로 - 이 길로.
+        error_tag: particle_direction
+      - answer: 이 길로 죽 가세요.
+        feedback_vi: Viết 쭉 với ㅉ căng.
+        error_tag: consonant_tense
+    explanation:
+      vi: Đi theo đường này là 이 길로 - 길 có patchim ㄹ nên chỉ thêm 로. 쭉 가세요 là "cứ đi thẳng" lịch sự.
+    display_answer: 이 길로 쭉 가세요.
+
+  - key: ko:exercise:transport-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gyotong-kadeu
+    prompt:
+      source_text: 교통카드는 편의점에서 살 수 있어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Có thể mua thẻ giao thông ở cửa hàng tiện lợi.
+        - Thẻ giao thông có thể mua ở cửa hàng tiện lợi.
+        - Bạn có thể mua thẻ giao thông ở cửa hàng tiện lợi.
+        - Thẻ giao thông mua được ở cửa hàng tiện lợi.
+        - Thẻ giao thông thì mua ở cửa hàng tiện lợi được.
+        - Bạn mua được thẻ giao thông ở cửa hàng tiện lợi.
+        - Thẻ giao thông có thể mua tại cửa hàng tiện lợi.
+        - Có thể mua thẻ giao thông tại cửa hàng tiện lợi.
+        - Thẻ giao thông thì có thể mua ở cửa hàng tiện lợi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Không thể mua thẻ giao thông ở cửa hàng tiện lợi.
+        feedback_vi: 살 수 있어요 là "có thể mua"; "không thể" là 살 수 없어요.
+        error_tag: l_su_negation
+    explanation:
+      vi: 살 수 있어요 = "có thể mua" (사다 → 살 수); 편의점에서 là "ở cửa hàng tiện lợi". 는 nhấn chủ đề "thẻ giao thông thì…".
+    display_answer: Có thể mua thẻ giao thông ở cửa hàng tiện lợi.
+
+  - key: ko:exercise:transport-wb-next-stop
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eumyeon-doeda
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Bạn chỉ cần xuống ở ga tiếp theo là được.\""
+      tokens:
+        - { id: n4, text: 돼요 }
+        - { id: n2, text: 역에서 }
+        - { id: n3, text: 내리면 }
+        - { id: n1, text: 다음 }
+        - { id: n5, text: 내려야 }
+    answer:
+      orders:
+        - [n1, n2, n3, n4]
+    explanation:
+      vi: Nơi xuống dùng 에서 - 다음 역에서; "chỉ cần… là được" là 내리면 돼요. 내려야 돼요 sẽ thành "phải xuống".
+    display_answer: 다음 역에서 내리면 돼요.

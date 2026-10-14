@@ -1,0 +1,425 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:reasons-aseo-nikka
+order_index: 1
+level: topik3
+title:
+  vi: "Vì… nên…: -아서/어서, -(으)니까, -기 때문에"
+objectives:
+  - vi: Nói lý do bằng -아서/어서 và biết hai giới hạn của nó - không gắn thì quá khứ, không đi với câu mệnh lệnh, rủ rê.
+  - vi: Dùng -(으)니까 khi khuyên, rủ, yêu cầu kèm lý do.
+  - vi: Giải thích trang trọng hơn bằng -기 때문에 và N 때문에, không thêm 그래서 thừa.
+  - vi: Xin lỗi, viện lý do cho những rắc rối hằng ngày - ngủ quên, kẹt xe, máy hỏng, bị cảm.
+estimated_minutes: 18
+skills: [grammar, speaking, writing]
+prerequisites: []
+items:
+  - item: ko:item:gram-aseo-reason
+  - item: ko:item:gram-eunikka
+  - item: ko:item:gram-gi-ttaemune
+  - item: ko:item:neutjameul-jada
+  - item: ko:item:giri-makhida
+  - item: ko:item:gojang-nada
+  - item: ko:item:gamgie-geollida
+  - item: ko:item:jigakada
+  - item: ko:item:yaksok
+    role: reuse
+  - item: ko:item:chwisohada
+  - item: ko:item:yeollakada
+  - item: ko:item:pigonhada
+  - item: ko:item:bappeuda
+  - item: ko:item:mianhaeyo
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn giải thích được vì sao mình đến muộn, vì sao phải hủy hẹn, và khuyên người khác kèm lý do một cách tự nhiên như người Hàn.
+  - type: explain
+    text:
+      vi: -아서/어서 nối lý do với kết quả, chia giống -아요/어요 - 막히다 → 막혀서, 바쁘다 → 바빠서, 하다 → 해서. Thì quá khứ chỉ đặt ở cuối câu - 늦잠을 자서 지각했어요. Vì vậy 잤어서, 늦었어서 luôn sai.
+  - type: explain
+    text:
+      vi: -(으)니까 cũng là "vì… nên…", nhưng nhấn lý do để thuyết phục người nghe làm gì đó. Chỉ -(으)니까 mới đi được với -(으)세요, -(으)ㅂ시다, -(으)ㄹ까요 - 비가 오니까 우산을 가져가세요. -(으)니까 gắn được quá khứ - 늦었으니까 택시를 타요.
+  - type: explain
+    text:
+      vi: -기 때문에 nghe trang trọng, hay dùng khi viết hoặc giải thích kỹ - 바쁘기 때문에. Sau danh từ có hai cách - 비 때문에 (vì cơn mưa) và 학생이기 때문에 (vì là học sinh). Giống -아서, nó không đi với câu mệnh lệnh, rủ rê.
+  - type: deep_explain
+    text:
+      vi: Khi xin lỗi hoặc cảm ơn, người Hàn gần như luôn dùng -아서 - 늦어서 죄송해요, 도와줘서 고마워요. Nếu dùng 늦었으니까 미안해요, câu nghe như "vì tôi đã muộn rồi nên… xin lỗi nhé", rất gượng. Tiếng Việt chỉ có "vì… nên…", nên bạn hãy tự hỏi - vế sau là kể sự việc (-아서, -기 때문에) hay đang bảo, rủ ai làm gì (-(으)니까)?
+  - type: example
+    target: 늦잠을 자서 수업에 지각했어요.
+    target_lang: ko
+    translation:
+      vi: Tôi ngủ quên nên bị muộn giờ học.
+    note:
+      vi: 자다 → 자서; thì quá khứ chỉ ở 지각했어요.
+  - type: example
+    target: 길이 막히니까 지하철을 타세요.
+    target_lang: ko
+    translation:
+      vi: Đường đang tắc đấy, bạn đi tàu điện ngầm đi.
+    note:
+      vi: Vế sau là lời khuyên (-세요) nên phải dùng -니까.
+  - type: example
+    target: 회사 일 때문에 약속을 취소했어요.
+    target_lang: ko
+    translation:
+      vi: Vì việc ở công ty nên tôi đã hủy hẹn.
+    note:
+      vi: N 때문에 - vì (danh từ).
+  - type: example
+    target: 노트북이 고장 났기 때문에 보고서를 못 보냈습니다.
+    target_lang: ko
+    translation:
+      vi: Do máy tính xách tay bị hỏng nên tôi chưa gửi được báo cáo.
+    note:
+      vi: -기 때문에 gắn được quá khứ (났기 때문에), hợp với văn phong báo cáo, email.
+  - type: example
+    target: 감기에 걸려서 늦게 연락했어요. 미안해요.
+    target_lang: ko
+    translation:
+      vi: Tôi bị cảm nên liên lạc muộn. Xin lỗi nhé.
+  - type: common_mistake
+    wrong: 버스를 놓쳤어서 늦었어요.
+    right: 버스를 놓쳐서 늦었어요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói "vì đã lỡ xe" nên người học hay gắn 었 vào -아서. -아서 không bao giờ mang thì quá khứ; thì của cả câu nằm ở động từ cuối.
+  - type: common_mistake
+    wrong: 추워서 창문을 닫으세요.
+    right: 추우니까 창문을 닫으세요.
+    target_lang: ko
+    note:
+      vi: Vế sau là lời yêu cầu (-으세요), nên lý do phải dùng -(으)니까. -아서 chỉ đi với câu kể, câu hỏi bình thường.
+  - type: common_mistake
+    wrong: 비가 오기 때문에 그래서 집에 있었어요.
+    right: 비가 오기 때문에 집에 있었어요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt quen "vì… nên…" nên hay thêm 그래서 (nên) vào giữa. -기 때문에 đã chứa nghĩa "nên", thêm 그래서 là lặp ý.
+  - type: summary
+    points:
+      - vi: -아서/어서 - kể lý do; không quá khứ (늦어서), không đi với -(으)세요, -(으)ㅂ시다; dùng để xin lỗi, cảm ơn.
+      - vi: -(으)니까 - lý do để khuyên, rủ, yêu cầu; gắn được quá khứ (늦었으니까).
+      - vi: -기 때문에 / N 때문에 - trang trọng; 학생이기 때문에 khác 비 때문에; không thêm 그래서.
+      - vi: 늦잠을 자다, 길이 막히다, 고장 나다, 감기에 걸리다 - các lý do quen thuộc.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:reasons-mcq-no-past
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-aseo-reason
+    prompt:
+      stem: "Chọn câu đúng để nói \"Tôi ngủ quên nên đi học muộn\"."
+      stem_lang: vi
+      options:
+        - { id: k4q, text: 늦잠을 자서 지각했어요., lang: ko }
+        - { id: p8z, text: 늦잠을 잤어서 지각했어요., lang: ko }
+        - { id: f2m, text: 늦잠을 자면 지각했어요., lang: ko }
+        - { id: x7d, text: 늦잠을 자서 지각하세요., lang: ko }
+    answer:
+      correct_option_id: k4q
+    explanation:
+      vi: -아서 không mang thì quá khứ, nên 자서 đúng còn 잤어서 sai; quá khứ nằm ở 지각했어요. -면 là "nếu", còn 지각하세요 biến câu thành lời bảo.
+    display_answer: 늦잠을 자서 지각했어요.
+
+  - key: ko:exercise:reasons-listen-umbrella
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-eunikka
+    prompt:
+      audio_asset_id: null
+      fallback_text: 비가 오니까 우산을 가져가세요.
+      options:
+        - { id: m3c, text: Trời mưa đấy nên bạn mang ô đi nhé., lang: vi }
+        - { id: s9w, text: Dù trời mưa bạn cũng đừng mang ô., lang: vi }
+        - { id: b6h, text: Nếu trời mưa thì tôi sẽ mang ô., lang: vi }
+        - { id: r1t, text: Trời mưa nên tôi đã mang ô theo., lang: vi }
+    answer:
+      correct_option_id: m3c
+    explanation:
+      vi: 오니까 là "vì (trời) mưa", 가져가세요 là lời khuyên "hãy mang đi". Không có 도 (dù), 면 (nếu) hay thì quá khứ trong câu.
+    display_answer: Trời mưa đấy nên bạn mang ô đi nhé.
+
+  - key: ko:exercise:reasons-mcq-suggestion
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eunikka
+    prompt:
+      stem: "Chọn vế đúng: ______ 택시를 탑시다. (Không còn thời gian, mình đi taxi đi.)"
+      stem_lang: vi
+      options:
+        - { id: v5n, text: 시간이 없으니까, lang: ko }
+        - { id: e2j, text: 시간이 없어서, lang: ko }
+        - { id: h8u, text: 시간이 없었어서, lang: ko }
+        - { id: w4a, text: 시간이 없어도, lang: ko }
+    answer:
+      correct_option_id: v5n
+    explanation:
+      vi: 탑시다 là lời rủ, nên lý do phải dùng -(으)니까. -아서 không đi với lời rủ, 없었어서 còn sai vì gắn quá khứ, 없어도 nghĩa là "dù không có".
+    display_answer: 시간이 없으니까
+
+  - key: ko:exercise:reasons-fill-ttaemune-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-gi-ttaemune
+    prompt:
+      template: "감기 {{b1}} 회사에 못 갔어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Vì bị cảm nên tôi không đi làm được."
+        - "Gợi ý: sau danh từ dùng N + ___ (\"vì\")."
+    answer:
+      blanks:
+        b1: [때문에]
+    known_wrong:
+      - answer: 이기 때문에
+        feedback_vi: 감기이기 때문에 là "vì (nó) là cảm cúm". Ở đây chỉ cần N 때문에 - 감기 때문에.
+        error_tag: ttaemune_noun_copula
+      - answer: 때문
+        feedback_vi: Cần thêm 에 - 때문에 mới là "vì".
+        error_tag: ttaemune_missing_e
+    explanation:
+      vi: Sau danh từ, "vì cái gì" là N 때문에 - 감기 때문에. 이기 때문에 chỉ dùng khi muốn nói "vì là…" (학생이기 때문에).
+    display_answer: 감기 때문에 회사에 못 갔어요.
+
+  - key: ko:exercise:reasons-wb-traffic
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:giri-makhida
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Đường tắc nên tôi đến muộn.\""
+      tokens:
+        - { id: t4, text: 늦었어요 }
+        - { id: t5, text: 막혔어서 }
+        - { id: t1, text: 길이 }
+        - { id: t6, text: 늦으세요 }
+        - { id: t2, text: 막혀서 }
+    answer:
+      orders:
+        - [t1, t2, t4]
+    explanation:
+      vi: 막히다 → 막혀서 (không gắn quá khứ vào -아서), rồi kết câu bằng 늦었어요. 늦으세요 là lời bảo người khác, không hợp nghĩa.
+    display_answer: 길이 막혀서 늦었어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:reasons-fill-overslept
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:neutjameul-jada
+    prompt:
+      template: "(Tôi ngủ quên nên bị muộn giờ làm.) 늦잠을 {{b1}} 회사에 지각했어요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [자서]
+    known_wrong:
+      - answer: 잤어서
+        feedback_vi: -아서 không gắn thì quá khứ. Dùng 자서; quá khứ đã có ở 지각했어요.
+        error_tag: past_with_aseo
+      - answer: 자고
+        feedback_vi: -고 chỉ nối hai việc ("ngủ quên và…"), không nói rõ lý do. Dùng -아서 - 자서.
+        error_tag: go_vs_aseo
+    explanation:
+      vi: 자다 bỏ 다 thêm -아서, ㅏ + 아 gộp lại thành 자서. Thì quá khứ đặt ở động từ cuối 지각했어요.
+    display_answer: 늦잠을 자서 회사에 지각했어요.
+
+  - key: ko:exercise:reasons-translate-umbrella
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eunikka
+    prompt:
+      source_text: Trời mưa đấy, bạn mang ô đi nhé.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 비가 오니까 우산을 가져가세요.
+        - 비가 오니까 우산 가져가세요.
+        - 비가 오니까 우산을 가지고 가세요.
+        - 비가 오니까 우산 가지고 가세요.
+        - 비 오니까 우산 가져가세요.
+        - 비가 오니까 우산을 챙기세요.
+        - 비가 오니까 우산을 가져가요.
+    known_wrong:
+      - answer: 비가 와서 우산을 가져가세요.
+        feedback_vi: Vế sau là lời khuyên (-세요) nên dùng -니까, không dùng -아서.
+        error_tag: aseo_with_imperative
+      - answer: 비가 오기 때문에 우산을 가져가세요.
+        feedback_vi: -기 때문에 không đi với lời khuyên, yêu cầu. Dùng 오니까.
+        error_tag: ttaemune_with_imperative
+      - answer: 비가 오면 우산을 가져가세요.
+        feedback_vi: 오면 là "nếu mưa". Câu gốc nói trời đang mưa thật, nên dùng 오니까.
+        error_tag: condition_vs_reason
+    explanation:
+      vi: Lý do (trời mưa) + lời khuyên (mang ô đi) → -(으)니까 + -(으)세요. 오다 không có patchim nên chỉ thêm 니까.
+    display_answer: 비가 오니까 우산을 가져가세요.
+
+  - key: ko:exercise:reasons-fill-cold-student
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-gi-ttaemune
+    prompt:
+      template: "(Tôi bị cảm nên ở nhà.) 감기에 {{b1}} 집에 있었어요. (Vì là sinh viên nên tôi không có tiền.) 학생{{b2}} 때문에 돈이 없어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [걸려서]
+        b2: [이기]
+    known_wrong:
+      - answer: 걸렸어서
+        feedback_vi: -아서 không gắn quá khứ - 걸려서.
+        error_tag: past_with_aseo
+      - answer: 기
+        feedback_vi: 학생 là danh từ nên cần 이다 → 이기 때문에 (학생이기 때문에).
+        error_tag: ttaemune_noun_copula
+    explanation:
+      vi: 걸리다 + -어서 → 걸려서. "Vì là sinh viên" cần 이다 - 학생 + 이기 때문에; còn 학생 때문에 sẽ thành "vì (một) sinh viên".
+    display_answer: 감기에 걸려서 집에 있었어요. 학생이기 때문에 돈이 없어요.
+
+  - key: ko:exercise:reasons-translate-apology
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:yeollakada
+    prompt:
+      source_text: Xin lỗi vì tôi liên lạc muộn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 늦게 연락해서 미안해요.
+        - 늦게 연락해서 죄송해요.
+        - 늦게 연락해서 죄송합니다.
+        - 연락이 늦어서 미안해요.
+        - 연락이 늦어서 죄송해요.
+        - 연락이 늦어서 죄송합니다.
+        - 연락을 늦게 해서 미안해요.
+        - 연락을 늦게 해서 죄송해요.
+    known_wrong:
+      - answer: 늦게 연락했어서 미안해요.
+        feedback_vi: -아서 không gắn quá khứ - 연락해서.
+        error_tag: past_with_aseo
+      - answer: 늦게 연락했으니까 미안해요.
+        feedback_vi: Khi xin lỗi, cảm ơn người Hàn dùng -아서; -(으)니까 nghe như đổ lý do.
+        error_tag: nikka_with_apology
+      - answer: 미안해요 늦게 연락해서.
+        feedback_vi: Tiếng Hàn đặt lý do trước, lời xin lỗi ở cuối câu.
+        error_tag: word_order
+    explanation:
+      vi: Xin lỗi kèm lý do - V-아서 + 미안해요/죄송해요. 연락하다 → 연락해서; 늦게 là "muộn" (trạng từ).
+    display_answer: 늦게 연락해서 미안해요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:reasons-mcq-double-reason
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-gi-ttaemune
+    prompt:
+      stem: Bạn viết tin nhắn cho trưởng nhóm, giải thích vì nhiều việc nên hôm nay không đi ăn tối cùng được. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: q6y, text: 일이 많기 때문에 오늘은 못 가요., lang: ko }
+        - { id: z3k, text: 일이 많기 때문에 그래서 오늘은 못 가요., lang: ko }
+        - { id: c8f, text: 일이 많았어서 오늘은 못 가요., lang: ko }
+        - { id: n1p, text: 일이 많기 때문에서 오늘은 못 가요., lang: ko }
+    answer:
+      correct_option_id: q6y
+    explanation:
+      vi: -기 때문에 đã mang nghĩa "nên", không cần thêm 그래서. 많았어서 sai vì -아서 không gắn quá khứ; 때문에서 không tồn tại.
+    display_answer: 일이 많기 때문에 오늘은 못 가요.
+
+  - key: ko:exercise:reasons-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gojang-nada
+    prompt:
+      source_text: 버스가 고장 나서 회사에 지각했어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xe buýt bị hỏng nên tôi đi làm muộn.
+        - Xe buýt bị hỏng nên tôi đến công ty muộn.
+        - Vì xe buýt bị hỏng nên tôi đi làm muộn.
+        - Vì xe buýt bị hỏng nên tôi đến công ty muộn.
+        - Xe buýt hỏng nên tôi đi làm trễ.
+        - Xe buýt bị hỏng nên tôi đi làm trễ.
+        - Xe buýt bị hỏng nên tôi đến công ty trễ.
+        - Xe buýt hỏng nên tôi đi làm muộn.
+        - Do xe buýt bị hỏng nên tôi đi làm muộn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xe buýt bị hỏng nhưng tôi vẫn đi làm đúng giờ.
+        feedback_vi: -아서 nêu lý do ("nên"), và 지각했어요 là "đã đến muộn".
+        error_tag: meaning_reason
+      - answer: Xe buýt bị hỏng nên tôi nghỉ làm.
+        feedback_vi: 지각하다 là "đến muộn", không phải "nghỉ".
+        error_tag: vocab_jigak
+    explanation:
+      vi: 고장 나서 = bị hỏng nên; 회사에 지각했어요 = đã đi làm muộn.
+    display_answer: Xe buýt bị hỏng nên tôi đi làm muộn.
+
+  - key: ko:exercise:reasons-translate-cancel
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:chwisohada
+    prompt:
+      source_text: Vì mệt nên tôi đã hủy cuộc hẹn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 피곤해서 약속을 취소했어요.
+        - 피곤해서 약속 취소했어요.
+        - 저는 피곤해서 약속을 취소했어요.
+        - 너무 피곤해서 약속을 취소했어요.
+        - 피곤하기 때문에 약속을 취소했어요.
+        - 피곤했기 때문에 약속을 취소했어요.
+        - 저는 피곤했기 때문에 약속을 취소했어요.
+        - 피곤해서 약속을 취소했습니다.
+    known_wrong:
+      - answer: 피곤했어서 약속을 취소했어요.
+        feedback_vi: -아서 không gắn quá khứ - 피곤해서.
+        error_tag: past_with_aseo
+      - answer: 피곤하기 때문에 그래서 약속을 취소했어요.
+        feedback_vi: -기 때문에 đã có nghĩa "nên"; bỏ 그래서.
+        error_tag: double_reason_connector
+      - answer: 피곤해서 약속을 미뤘어요.
+        feedback_vi: 미루다 là "dời lại"; "hủy" là 취소하다.
+        error_tag: vocab_cancel
+    explanation:
+      vi: Lý do + kết quả đã xảy ra - 피곤해서 (hoặc 피곤했기 때문에) + 약속을 취소했어요. Thì quá khứ ở động từ cuối, hoặc trong -았기 때문에.
+    display_answer: 피곤해서 약속을 취소했어요.

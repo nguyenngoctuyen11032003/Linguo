@@ -1,0 +1,452 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:health-lifestyle-review
+order_index: 5
+level: a2
+title:
+  vi: Ôn tập - Đi khám bác sĩ và bài viết "5 cách sống khoẻ"
+objectives:
+  - vi: Theo dõi trọn một buổi khám bệnh - triệu chứng, How long…?, lời dặn dùng thuốc và lời khuyên.
+  - vi: Đọc hiểu một bài viết ngắn về lối sống lành mạnh và dùng lại should, too, enough, do/play/go.
+  - vi: Dùng thêm keep fit, diet, stressed khi nói về sức khoẻ.
+estimated_minutes: 18
+skills: [reading, listening, speaking, grammar]
+prerequisites: [en:lesson:slowly-too-enough]
+items:
+  - item: en:item:keep-fit
+  - item: en:item:diet
+  - item: en:item:stressed
+  - item: en:item:whats-the-matter
+    role: reuse
+  - item: en:item:have-an-illness
+    role: reuse
+  - item: en:item:body-part-hurts
+    role: reuse
+  - item: en:item:sore-throat
+    role: reuse
+  - item: en:item:headache
+    role: reuse
+  - item: en:item:fever
+    role: reuse
+  - item: en:item:dizzy
+    role: reuse
+  - item: en:item:how-long-have-you-had
+    role: reuse
+  - item: en:item:take-medicine
+    role: reuse
+  - item: en:item:once-twice-a-day
+    role: reuse
+  - item: en:item:should-shouldnt
+    role: reuse
+  - item: en:item:drink-plenty-of-water
+    role: reuse
+  - item: en:item:junk-food
+    role: reuse
+  - item: en:item:healthy
+    role: reuse
+  - item: en:item:do-play-go
+    role: reuse
+  - item: en:item:slowly
+    role: reuse
+  - item: en:item:well-adverb
+    role: reuse
+  - item: en:item:too-adjective
+    role: reuse
+  - item: en:item:adjective-enough
+    role: reuse
+  - item: en:item:enough-noun
+    role: reuse
+  - item: en:item:how-often
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự tin đi khám bác sĩ bằng tiếng Anh từ câu chào đến lời dặn thuốc, và đọc hiểu một bài viết ngắn về cách sống khoẻ.
+  - type: explain
+    text:
+      vi: Buổi khám gồm ba phần - kể triệu chứng (I've got…, My… hurts, I feel…), trả lời How long have you had it?, rồi nghe lời dặn (Take… twice a day) và lời khuyên (You should / shouldn't…). Bài này ghép lại cả unit.
+  - type: explain
+    text:
+      vi: Ba lỗi người Việt hay mắc nhất trong chủ đề này là dùng be với bệnh (I am headache), thêm to sau should (should to rest) và dùng good thay well (He plays good). Trước khi nói, hãy tự kiểm tra ba điểm này.
+  - type: explain
+    text:
+      vi: Ba từ mới cho bài đọc - keep fit (giữ dáng, giữ sức khoẻ), diet (chế độ ăn) và stressed (căng thẳng). Stressed là tính từ nên nói I'm stressed / I feel stressed, không nói "I'm stress".
+  - type: deep_explain
+    text:
+      vi: "Bài viết về sức khoẻ thường dùng câu mệnh lệnh (Eat slowly. Drink enough water.) và should để khuyên. Khi đọc, hãy để ý too (quá, có hại) và enough (đủ) vì chúng thay đổi hẳn ý câu - too much sugar là có hại, enough water là tốt. Số lần trong tuần (two or three times a week) trả lời câu hỏi How often…?"
+  - type: example
+    target: "Doctor: Good morning. What's the matter? Patient: I don't feel well. I've got a headache and a sore throat, and I feel dizzy. Doctor: How long have you had it? Patient: For three days. I'm very stressed at work, and I don't sleep well."
+    target_lang: en
+    translation:
+      vi: "Bác sĩ: Chào anh. Anh bị sao? Bệnh nhân: Tôi thấy không khoẻ. Tôi bị đau đầu, đau họng và thấy chóng mặt. Bác sĩ: Anh bị như vậy bao lâu rồi? Bệnh nhân: Ba ngày rồi. Công việc làm tôi rất căng thẳng, và tôi ngủ không ngon."
+    note:
+      vi: "Hội thoại phần 1: triệu chứng dùng have got (danh từ) và feel (tính từ); sleep well dùng trạng từ well."
+  - type: example
+    target: "Doctor: You've got a bad cold. Take these tablets twice a day, after meals. You should rest and drink plenty of water. You shouldn't go to work this week. Patient: Thank you, doctor. Doctor: Get well soon!"
+    target_lang: en
+    translation:
+      vi: "Bác sĩ: Anh bị cảm nặng. Uống thuốc này ngày hai lần, sau bữa ăn. Anh nên nghỉ ngơi và uống nhiều nước. Tuần này anh không nên đi làm. Bệnh nhân: Cảm ơn bác sĩ. Bác sĩ: Chúc anh mau khoẻ!"
+    note:
+      vi: "Hội thoại phần 2: lời dặn bắt đầu bằng Take; lời khuyên dùng should / shouldn't + động từ nguyên mẫu."
+  - type: example
+    target: "Five easy ways to stay healthy. 1. Eat well. A healthy diet has plenty of fruit and vegetables. You shouldn't eat too much junk food or sugar. 2. Eat slowly. When you eat too quickly, your stomach can hurt. 3. Drink enough water - about eight glasses a day."
+    target_lang: en
+    translation:
+      vi: "Năm cách đơn giản để sống khoẻ. 1. Ăn uống lành mạnh. Chế độ ăn lành mạnh có nhiều rau và trái cây. Bạn không nên ăn quá nhiều đồ ăn vặt hay đồ ngọt. 2. Ăn chậm. Khi ăn quá nhanh, bạn có thể bị đau bụng. 3. Uống đủ nước - khoảng tám cốc mỗi ngày."
+    note:
+      vi: "Bài đọc phần 1: too much + danh từ không đếm được; enough + danh từ (enough water)."
+  - type: example
+    target: "4. Keep fit. You don't need to go to the gym every day. Go swimming, play badminton or do yoga two or three times a week. 5. Sleep well. Don't stay up late. If you often feel tired or stressed, you should talk to a doctor."
+    target_lang: en
+    translation:
+      vi: "4. Giữ dáng. Bạn không cần ngày nào cũng đến phòng tập. Hãy đi bơi, chơi cầu lông hoặc tập yoga hai, ba lần một tuần. 5. Ngủ ngon. Đừng thức khuya. Nếu bạn thường thấy mệt mỏi hay căng thẳng, bạn nên nói chuyện với bác sĩ."
+    note:
+      vi: "Bài đọc phần 2: go swimming, play badminton, do yoga - ba động từ cho ba nhóm môn thể thao."
+  - type: common_mistake
+    wrong: I am headache and my throat is pain.
+    right: I've got a headache and my throat hurts.
+    target_lang: en
+    note:
+      vi: Bệnh là danh từ nên dùng have got a…; chỗ đau dùng động từ hurts, không dùng is pain.
+  - type: common_mistake
+    wrong: You should to rest and drink enough water.
+    right: You should rest and drink enough water.
+    target_lang: en
+    note:
+      vi: Should không bao giờ đi với to.
+  - type: common_mistake
+    wrong: He plays good badminton, but he isn't enough fit.
+    right: He plays badminton well, but he isn't fit enough.
+    target_lang: en
+    note:
+      vi: Tả cách chơi dùng well (đứng sau tân ngữ); enough đứng sau tính từ - fit enough.
+  - type: summary
+    points:
+      - vi: Triệu chứng - I've got a…, My… hurts, I feel dizzy / I don't feel well.
+      - vi: Ở phòng khám - What's the matter? · How long have you had it? · Take… twice a day.
+      - vi: Khuyên - should / shouldn't + động từ nguyên mẫu (không to).
+      - vi: Thể thao - play football · go swimming · do yoga · go to the gym.
+      - vi: Trạng từ - slowly, carefully, well (không phải good).
+      - vi: too + tính từ · tính từ + enough · enough + danh từ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:health-lifestyle-review-listen-patient
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:how-long-have-you-had
+    prompt:
+      audio_asset_id: null
+      fallback_text: "What's the matter? - I've got a headache and a sore throat. - How long have you had it? - For three days."
+      options:
+        - { id: c7w, text: "Bệnh nhân bị đau đầu và đau họng, đã ba ngày.", lang: vi }
+        - { id: r1f, text: "Bệnh nhân bị đau đầu và đau lưng, đã ba ngày.", lang: vi }
+        - { id: t5n, text: "Bệnh nhân bị đau đầu và đau họng, uống thuốc ngày ba lần.", lang: vi }
+        - { id: o2y, text: "Bệnh nhân bị sốt và ho, đã ba tuần.", lang: vi }
+    answer:
+      correct_option_id: c7w
+    explanation:
+      vi: A headache and a sore throat là đau đầu và đau họng. For three days trả lời How long, nghĩa là đã ba ngày - không phải ba lần một ngày.
+    display_answer: "Bệnh nhân bị đau đầu và đau họng, đã ba ngày."
+
+  - key: en:exercise:health-lifestyle-review-listen-doctor
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:take-medicine
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Take these tablets twice a day, after meals. You should rest, and you shouldn't go to work this week."
+      options:
+        - { id: k3d, text: "Uống ngày hai lần sau bữa ăn, nên nghỉ ngơi và tuần này không nên đi làm.", lang: vi }
+        - { id: v6h, text: "Uống ngày hai lần trước bữa ăn, nên nghỉ ngơi và tuần này không nên đi làm.", lang: vi }
+        - { id: b9a, text: "Uống ngày hai lần sau bữa ăn, nên nghỉ ngơi nhưng tuần này vẫn nên đi làm.", lang: vi }
+        - { id: g4e, text: "Uống ngày một lần sau bữa ăn, nên tập thể dục và tuần này không nên đi làm.", lang: vi }
+    answer:
+      correct_option_id: k3d
+    explanation:
+      vi: Twice a day là ngày hai lần, after meals là sau bữa ăn. Should rest là nên nghỉ ngơi; shouldn't go to work là không nên đi làm.
+    display_answer: "Uống ngày hai lần sau bữa ăn, nên nghỉ ngơi và tuần này không nên đi làm."
+
+  - key: en:exercise:health-lifestyle-review-mcq-read-slowly
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:slowly
+    prompt:
+      stem: "Đọc đoạn trích: \"Eat well. A healthy diet has plenty of fruit and vegetables. You shouldn't eat too much junk food or sugar. Eat slowly. When you eat too quickly, your stomach can hurt.\" Theo bài viết, vì sao nên ăn chậm?"
+      stem_lang: vi
+      options:
+        - { id: n8s, text: "Vì ăn quá nhanh có thể làm đau bụng.", lang: vi }
+        - { id: w2g, text: "Vì ăn chậm giúp ăn được nhiều rau hơn.", lang: vi }
+        - { id: f5l, text: "Vì ăn quá nhanh làm ta ăn nhiều đồ ngọt.", lang: vi }
+        - { id: y0c, text: "Vì ăn chậm giúp ngủ ngon hơn.", lang: vi }
+    answer:
+      correct_option_id: n8s
+    explanation:
+      vi: "Câu \"When you eat too quickly, your stomach can hurt\" nói rõ lý do: ăn quá nhanh (too quickly) thì có thể đau bụng. Các ý còn lại không có trong đoạn."
+    display_answer: "Vì ăn quá nhanh có thể làm đau bụng."
+
+  - key: en:exercise:health-lifestyle-review-mcq-read-how-often
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:how-often
+    prompt:
+      stem: "Đọc đoạn trích: \"Keep fit. You don't need to go to the gym every day. Go swimming, play badminton or do yoga two or three times a week.\" Theo bài viết, bạn nên chơi thể thao bao lâu một lần?"
+      stem_lang: vi
+      options:
+        - { id: j6t, text: "Hai hoặc ba lần một tuần.", lang: vi }
+        - { id: d3m, text: "Mỗi ngày, ở phòng tập.", lang: vi }
+        - { id: q7r, text: "Hai hoặc ba lần một ngày.", lang: vi }
+        - { id: u1k, text: "Một lần một tuần, chỉ tập yoga.", lang: vi }
+    answer:
+      correct_option_id: j6t
+    explanation:
+      vi: Two or three times a week là hai hoặc ba lần một tuần. Bài viết nói bạn không cần (don't need to) đến phòng tập mỗi ngày.
+    display_answer: "Hai hoặc ba lần một tuần."
+
+  - key: en:exercise:health-lifestyle-review-order-keep-fit
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:keep-fit
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: \"Bạn giữ dáng bằng cách nào?\""
+      tokens:
+        - { id: kf-fit, text: fit }
+        - { id: kf-you, text: you }
+        - { id: kf-does, text: does }
+        - { id: kf-keep, text: keep }
+        - { id: kf-how, text: How }
+        - { id: kf-do, text: do }
+        - { id: kf-are, text: are }
+    answer:
+      orders:
+        - [kf-how, kf-do, kf-you, kf-keep, kf-fit]
+    explanation:
+      vi: Câu hỏi với động từ thường keep cần trợ động từ do; you đi với do, không dùng does hay are. Giữ dáng là keep fit.
+    display_answer: How do you keep fit?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:health-lifestyle-review-fill-water-yoga
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:do-play-go
+    prompt:
+      template: "You should {{b1}} plenty of water and {{b2}} yoga two or three times a week."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [drink]
+        b2: [do, practise, practice]
+    known_wrong:
+      - answer: play
+        feedback_vi: Yoga không phải môn có bóng nên dùng do, không dùng play.
+        error_tag: sport_collocation
+      - answer: go
+        feedback_vi: Go chỉ đi với môn đuôi -ing (go swimming). Yoga đi với do.
+        error_tag: sport_collocation
+      - answer: to drink
+        feedback_vi: Should không đi với to - should drink.
+        error_tag: should_to
+    explanation:
+      vi: Sau should là động từ nguyên mẫu không to - drink. Yoga là môn tập cá nhân nên đi với do.
+    display_answer: You should drink plenty of water and do yoga two or three times a week.
+
+  - key: en:exercise:health-lifestyle-review-fill-too-enough
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:adjective-enough
+    prompt:
+      template: "Children aren't old {{b1}} to drink coffee. It's {{b2}} strong for them."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [enough]
+        b2: [too]
+    known_wrong:
+      - answer: very
+        feedback_vi: Very chỉ là "rất". Ở đây cà phê mạnh quá mức với trẻ em nên dùng too.
+        error_tag: too_very
+      - answer: too much
+        feedback_vi: Trước tính từ strong chỉ dùng too, không thêm much.
+        error_tag: too_much_adjective
+      - answer: enough old
+        feedback_vi: Enough đứng sau tính từ - old enough.
+        error_tag: enough_position
+    explanation:
+      vi: Old enough - enough đứng sau tính từ. Too strong nghĩa là quá mạnh (có hại), hợp với ý "trẻ em chưa đủ tuổi uống cà phê".
+    display_answer: "Children aren't old enough to drink coffee. It's too strong for them."
+
+  - key: en:exercise:health-lifestyle-review-translate-stressed
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:stressed
+    prompt:
+      source_text: Tôi thấy căng thẳng nên ngủ không ngon.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I feel stressed, so I don't sleep well.
+        - I'm stressed, so I don't sleep well.
+        - I feel stressed, so I sleep badly.
+        - I'm stressed, so I sleep badly.
+        - I feel stressed, so I can't sleep well.
+        - I'm stressed, so I can't sleep well.
+        - I'm feeling stressed, so I don't sleep well.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I'm stress, so I don't sleep well.
+        feedback_vi: Stress là danh từ. Tính từ "căng thẳng" là stressed - I'm stressed.
+        error_tag: word_form
+      - answer: I feel stressed, so I don't sleep good.
+        feedback_vi: Tả cách ngủ cần trạng từ well, không phải good.
+        error_tag: good_well
+      - answer: I feel stressed, so I sleep not well.
+        feedback_vi: Sleep là động từ thường nên phủ định bằng don't - I don't sleep well.
+        error_tag: negative_do
+    explanation:
+      vi: Căng thẳng là tính từ stressed, đi với feel hoặc be. Ngủ không ngon là don't sleep well (hoặc sleep badly) - dùng trạng từ, không dùng good.
+    display_answer: I feel stressed, so I don't sleep well.
+
+  # ---------------- application ----------------
+  - key: en:exercise:health-lifestyle-review-translate-diet
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:diet
+    prompt:
+      source_text: A healthy diet has plenty of fruit and vegetables.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chế độ ăn lành mạnh có nhiều rau và trái cây.
+        - Chế độ ăn lành mạnh có nhiều trái cây và rau.
+        - Chế độ ăn lành mạnh có nhiều trái cây và rau củ.
+        - Chế độ ăn lành mạnh có nhiều hoa quả và rau.
+        - Chế độ ăn lành mạnh có nhiều rau và hoa quả.
+        - Chế độ ăn uống lành mạnh có nhiều rau và trái cây.
+        - Chế độ ăn uống lành mạnh có nhiều trái cây và rau củ.
+        - Một chế độ ăn lành mạnh có nhiều rau và trái cây.
+        - Chế độ ăn tốt cho sức khoẻ có nhiều rau và trái cây.
+        - Chế độ ăn lành mạnh có nhiều rau quả.
+        - Một chế độ ăn uống lành mạnh có nhiều trái cây và rau.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Diet ở đây là "chế độ ăn" (không phải ăn kiêng); healthy là lành mạnh; plenty of là nhiều. Tiếng Việt quen nói "rau và trái cây" hơn thứ tự gốc, cả hai đều được.
+    display_answer: Chế độ ăn lành mạnh có nhiều rau và trái cây.
+
+  - key: en:exercise:health-lifestyle-review-mcq-advice
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:should-shouldnt
+    prompt:
+      stem: "Bạn của bạn than: \"I often get a stomachache. I always eat my lunch in five minutes.\" Lời khuyên nào đúng ngữ pháp và hợp lý nhất?"
+      stem_lang: vi
+      options:
+        - { id: p9x, text: "You should eat more slowly.", lang: en }
+        - { id: h2q, text: "You should eat more quick.", lang: en }
+        - { id: e4v, text: "You should to eat slowly.", lang: en }
+        - { id: s6b, text: "You eat too slowly.", lang: en }
+    answer:
+      correct_option_id: p9x
+    explanation:
+      vi: Ăn trong năm phút là quá nhanh, nên lời khuyên hợp lý là ăn chậm hơn - eat more slowly (trạng từ). "Quick" là tính từ, "should to" sai, còn "You eat too slowly" ngược ý.
+    display_answer: "You should eat more slowly."
+
+  - key: en:exercise:health-lifestyle-review-translate-sports
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:do-play-go
+    prompt:
+      source_text: Bạn nên đi bơi hoặc chơi cầu lông ba lần một tuần.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - You should go swimming or play badminton three times a week.
+        - You should play badminton or go swimming three times a week.
+        - Three times a week, you should go swimming or play badminton.
+        - Three times a week, you should play badminton or go swimming.
+        - You should swim or play badminton three times a week.
+        - You should play badminton or swim three times a week.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: You should go to swimming or play badminton three times a week.
+        feedback_vi: Go + V-ing không có to - go swimming.
+        error_tag: go_to_ing
+      - answer: You should go swimming or do badminton three times a week.
+        feedback_vi: Cầu lông là môn có đối thủ, đi với play.
+        error_tag: sport_collocation
+      - answer: You should to go swimming or play badminton three times a week.
+        feedback_vi: Should không đi với to.
+        error_tag: should_to
+    explanation:
+      vi: Should + động từ nguyên mẫu; đi bơi là go swimming (không to), cầu lông đi với play. Ba lần một tuần là three times a week.
+    display_answer: You should go swimming or play badminton three times a week.
+
+  - key: en:exercise:health-lifestyle-review-translate-symptoms
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:have-an-illness
+    prompt:
+      source_text: Tôi bị sốt và thấy chóng mặt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I have a fever and I feel dizzy.
+        - I have a fever and feel dizzy.
+        - I've got a fever and I feel dizzy.
+        - I've got a fever and feel dizzy.
+        - I have a fever and I'm dizzy.
+        - I've got a fever and I'm dizzy.
+        - I have a temperature and I feel dizzy.
+        - I've got a temperature and I feel dizzy.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I am fever and dizzy.
+        feedback_vi: Fever là danh từ - I have a fever. Dizzy là tính từ - I feel dizzy.
+        error_tag: be_with_illness
+      - answer: I have a fever and I have dizzy.
+        feedback_vi: Dizzy là tính từ nên đi với feel, không đi với have.
+        error_tag: have_with_adjective
+      - answer: I have a fever and I feel dizziness.
+        feedback_vi: Sau feel dùng tính từ dizzy.
+        error_tag: word_form
+    explanation:
+      vi: Hai triệu chứng dùng hai mẫu khác nhau - bệnh là danh từ nên have (got) a fever; chóng mặt là tính từ nên feel dizzy.
+    display_answer: I have a fever and I feel dizzy.

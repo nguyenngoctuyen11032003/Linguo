@@ -1,0 +1,402 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:society-economy-vocab
+order_index: 2
+level: topik5
+title:
+  vi: Từ vựng Hán Hàn về xã hội và kinh tế
+objectives:
+  - vi: Hiểu và dùng các từ Hán Hàn về vấn đề xã hội - 저출산, 고령화, 1인 가구, 취업난, 환경 오염, 재활용.
+  - vi: Kết hợp đúng động từ với danh từ - 물가가 상승하다, 수가 증가하다/감소하다, N에 영향을 미치다, 대책을 마련하다.
+  - vi: Nhận ra "bạn giả" Hán Việt khiến người Việt dịch sai (가구, 발표, 심각하다).
+estimated_minutes: 18
+skills: [vocabulary, reading, writing]
+prerequisites: [ko:lesson:written-style-nda]
+items:
+  - item: ko:item:jeochulsan
+  - item: ko:item:goryeonghwa
+  - item: ko:item:irin-gagu
+  - item: ko:item:mulga-sangseung
+  - item: ko:item:chwieopnan
+  - item: ko:item:hwangyeong-oyeom
+  - item: ko:item:jaehwalyong
+  - item: ko:item:jeongchaek
+  - item: ko:item:jeunggahada
+  - item: ko:item:gamsohada
+  - item: ko:item:yeonghyang-michida
+  - item: ko:item:daechaek-maryeonhada
+  - item: ko:item:simgakada
+  - item: ko:item:written-nda-verb
+    role: reuse
+  - item: ko:item:jeongbu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được một đoạn tin ngắn về dân số, việc làm, giá cả và môi trường, và tự viết câu văn viết với đúng cặp danh từ - động từ.
+  - type: explain
+    text:
+      vi: Phần lớn từ vựng báo chí là từ Hán Hàn, nên âm Hán Việt là lợi thế lớn của bạn - 정책 "chính sách", 영향 "ảnh hưởng", 환경 "hoàn cảnh/môi trường". Hãy học theo gốc chữ - 저 (低) thấp, 고 (高) cao, -화 (化) hoá, -난 (難) khó khăn.
+  - type: explain
+    text:
+      vi: Tiếng Hàn rất chặt về cặp từ đi với nhau. Số lượng thì 증가하다/감소하다 (가구 수가 증가했다), giá cả thì 오르다/상승하다 (물가가 올랐다), tác động thì N에 영향을 미치다, giải pháp thì 대책을 마련하다.
+  - type: explain
+    text:
+      vi: Cụm danh từ Hán Hàn sắp theo trật tự "bổ ngữ trước, chính sau", ngược với tiếng Việt - 환경 오염 là "ô nhiễm môi trường", 물가 상승 là "giá cả tăng", 청년 실업 là "thất nghiệp của thanh niên".
+  - type: deep_explain
+    text:
+      vi: Bạn giả Hán Việt là từ có âm quen nhưng nghĩa lệch. 가구 trong tin xã hội là "hộ" (家口), không phải "gia cụ, đồ đạc" (家具 - cũng đọc 가구). 심각하다 (thâm khắc) là "nghiêm trọng", 발표하다 (phát biểu) là "công bố", 재활용 (tái hoạt dụng) là "tái chế". Khi gặp từ Hán Hàn, hãy đoán bằng âm Hán Việt rồi kiểm tra lại bằng ngữ cảnh.
+  - type: example
+    target: 저출산과 고령화로 인해 일할 사람이 줄고 있다.
+    target_lang: ko
+    translation:
+      vi: Do tỉ lệ sinh thấp và già hoá dân số, số người lao động đang giảm.
+    note:
+      vi: 저출산·고령화 là cặp từ đi cùng nhau rất thường gặp trong tin xã hội.
+  - type: example
+    target: 물가 상승은 서민의 생활에 큰 영향을 미친다.
+    target_lang: ko
+    translation:
+      vi: Giá cả tăng tác động lớn đến đời sống người dân bình thường.
+    note:
+      vi: Đối tượng bị tác động đi với 에 - 생활에.
+  - type: example
+    target: 정부는 청년 취업난을 해결하기 위해 대책을 마련했다.
+    target_lang: ko
+    translation:
+      vi: Chính phủ đã đưa ra biện pháp để giải quyết tình trạng thanh niên khó tìm việc.
+    note:
+      vi: 대책을 마련하다 - "xây dựng, đưa ra biện pháp" - là cụm cố định trong tin chính sách.
+  - type: example
+    target: 플라스틱 재활용 비율이 아직 낮아 환경 오염이 심각하다.
+    target_lang: ko
+    translation:
+      vi: Tỉ lệ tái chế nhựa còn thấp nên ô nhiễm môi trường nghiêm trọng.
+  - type: common_mistake
+    wrong: 물가가 많이 증가했다.
+    right: 물가가 많이 올랐다. / 물가가 크게 상승했다.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt dùng "tăng" cho cả số lượng và giá cả. Tiếng Hàn tách ra - giá cả dùng 오르다/상승하다, số lượng mới dùng 증가하다.
+  - type: common_mistake
+    wrong: 환경 오염이 건강을 영향을 미친다.
+    right: 환경 오염이 건강에 영향을 미친다.
+    target_lang: ko
+    note:
+      vi: '"Ảnh hưởng đến sức khoẻ" khiến người học dùng 을/를 cho "sức khoẻ". Câu đã có 영향을 làm tân ngữ, đối tượng bị tác động phải đi với 에.'
+  - type: common_mistake
+    wrong: 오염 환경이 심각하다.
+    right: 환경 오염이 심각하다.
+    target_lang: ko
+    note:
+      vi: Dịch từng chữ "ô nhiễm môi trường" sẽ thành 오염 환경. Tiếng Hàn đặt phạm vi trước, hiện tượng sau - 환경 오염, 대기 오염.
+  - type: summary
+    points:
+      - vi: 저출산 tỉ lệ sinh thấp · 고령화 già hoá · 1인 가구 hộ một người · 취업난 khó tìm việc.
+      - vi: 물가 상승 giá cả tăng · 환경 오염 ô nhiễm môi trường · 재활용 tái chế · 정책 chính sách.
+      - vi: Số lượng 증가하다/감소하다; giá cả 오르다/상승하다.
+      - vi: N에 영향을 미치다 · 대책을 마련하다 · 심각하다 (tính từ).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:society-vocab-mcq-low-birth
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:jeochulsan
+    prompt:
+      stem: "저출산 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: n4h, text: tỉ lệ sinh thấp, lang: vi }
+        - { id: x7p, text: sản lượng sản xuất thấp, lang: vi }
+        - { id: l2g, text: xuất khẩu giảm, lang: vi }
+        - { id: v9d, text: dân số già đi, lang: vi }
+    answer:
+      correct_option_id: n4h
+    explanation:
+      vi: 저 (低) là "thấp", 출산 (出産) là "sinh con". "Sản xuất" là 생산, "xuất khẩu" là 수출, "dân số già đi" là 고령화.
+    display_answer: tỉ lệ sinh thấp
+
+  - key: ko:exercise:society-vocab-mcq-gagu
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:irin-gagu
+    prompt:
+      stem: "Trong câu 서울의 1인 가구가 크게 늘었다., 1인 가구 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: c8w, text: hộ gia đình một người, lang: vi }
+        - { id: f3b, text: đồ nội thất cho một người, lang: vi }
+        - { id: t6m, text: gia đình có một con, lang: vi }
+        - { id: z1q, text: căn hộ một phòng, lang: vi }
+    answer:
+      correct_option_id: c8w
+    explanation:
+      vi: 가구 (家口) trong tin xã hội là "hộ gia đình"; 가구 (家具) "đồ nội thất" viết giống nhưng không hợp với "늘었다" trong thống kê dân số. "Gia đình một con" là 외동 가정, "căn hộ một phòng" là 원룸.
+    display_answer: hộ gia đình một người
+
+  - key: ko:exercise:society-vocab-listen-jobs
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:chwieopnan
+    prompt:
+      audio_asset_id: null
+      fallback_text: 청년 취업난이 갈수록 심각해지고 있다.
+      options:
+        - { id: h5r, text: Tình trạng thanh niên khó tìm việc ngày càng nghiêm trọng., lang: vi }
+        - { id: k2e, text: Số thanh niên đi làm ngày càng tăng., lang: vi }
+        - { id: d8s, text: Thanh niên ngày càng ít quan tâm đến việc làm., lang: vi }
+        - { id: m6y, text: Tai nạn lao động của thanh niên ngày càng nghiêm trọng., lang: vi }
+    answer:
+      correct_option_id: h5r
+    explanation:
+      vi: 취업난 là "khó tìm việc", 갈수록 là "càng ngày càng", 심각해지다 là "trở nên nghiêm trọng". -난 (難) là "khó khăn", không phải "tai nạn" (사고).
+    display_answer: Tình trạng thanh niên khó tìm việc ngày càng nghiêm trọng.
+
+  - key: ko:exercise:society-vocab-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:mulga-sangseung
+    prompt:
+      template: "올해 물가가 크게 {{b1}}. 반면 출생아 수는 크게 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Năm nay giá cả tăng mạnh. Ngược lại, số trẻ sinh ra giảm mạnh."
+        - "Gợi ý: giá cả - 상승하다/오르다; số lượng - 감소하다/줄다. Chia quá khứ văn viết."
+    answer:
+      blanks:
+        b1: [상승했다, 올랐다]
+        b2: [감소했다, 줄었다]
+    known_wrong:
+      - answer: 증가했다
+        feedback_vi: 증가하다 dùng cho số lượng. Giá cả tăng là 상승했다 hoặc 올랐다.
+        error_tag: collocation_price
+      - answer: 상승했어요
+        feedback_vi: Đây là 해요체. Văn viết là 상승했다.
+        error_tag: haeyo_in_writing
+      - answer: 감소했어요
+        feedback_vi: Đây là 해요체. Văn viết là 감소했다.
+        error_tag: haeyo_in_writing
+      - answer: 하락했다
+        feedback_vi: 하락하다 dùng cho giá cả, tỉ lệ. Số trẻ sinh ra là số lượng nên dùng 감소했다 hoặc 줄었다.
+        error_tag: collocation_number
+    explanation:
+      vi: Giá cả đi với 상승하다/오르다, số lượng đi với 감소하다/줄다. Cả hai câu tả sự việc năm nay đã xảy ra nên chia quá khứ -했다/-었다.
+    display_answer: 올해 물가가 크게 상승했다. 반면 출생아 수는 크게 감소했다.
+
+  - key: ko:exercise:society-vocab-wb-influence
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:yeonghyang-michida
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Ô nhiễm môi trường ảnh hưởng đến sức khoẻ.\""
+      tokens:
+        - { id: u3, text: 건강에 }
+        - { id: u5, text: 미친다 }
+        - { id: u2, text: 오염이 }
+        - { id: u6, text: 건강을 }
+        - { id: u4, text: 영향을 }
+        - { id: u1, text: 환경 }
+    answer:
+      orders:
+        - [u1, u2, u3, u4, u5]
+        - [u3, u1, u2, u4, u5]
+    explanation:
+      vi: 환경 오염 là "ô nhiễm môi trường" (môi trường đứng trước). Đối tượng bị ảnh hưởng đi với 에 - 건강에; 건강을 sai vì 영향을 đã là tân ngữ.
+    display_answer: 환경 오염이 건강에 영향을 미친다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:society-vocab-fill-measures
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:daechaek-maryeonhada
+    prompt:
+      template: "(Chính phủ đã đưa ra biện pháp đối phó với già hoá dân số.) 정부는 고령화에 대한 대책을 {{b1}}. (Già hoá ảnh hưởng lớn đến kinh tế.) 고령화는 경제{{b2}} 큰 영향을 미친다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [마련했다]
+        b2: [에]
+    known_wrong:
+      - answer: 를
+        feedback_vi: Đối tượng chịu ảnh hưởng đi với 에 - 경제에 영향을 미친다.
+        error_tag: particle_influence
+      - answer: 마련했어요
+        feedback_vi: Đây là 해요체. Văn viết là 마련했다.
+        error_tag: haeyo_in_writing
+      - answer: 마련한다
+        feedback_vi: Câu nói "đã đưa ra" nên cần quá khứ - 마련했다.
+        error_tag: tense_shift
+    explanation:
+      vi: 대책을 마련하다 là cụm cố định "đưa ra biện pháp", chia quá khứ văn viết thành 마련했다. Trong 영향을 미치다, đối tượng bị tác động luôn đi với 에.
+    display_answer: 정부는 고령화에 대한 대책을 마련했다. / 고령화는 경제에 큰 영향을 미친다.
+
+  - key: ko:exercise:society-vocab-translate-households
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:jeunggahada
+    prompt:
+      source_text: Số hộ một người đang tăng. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 1인 가구가 증가하고 있다.
+        - 1인 가구 수가 증가하고 있다.
+        - 1인 가구의 수가 증가하고 있다.
+        - 1인 가구가 늘고 있다.
+        - 1인 가구가 늘어나고 있다.
+        - 1인 가구 수가 늘고 있다.
+        - 1인 가구 수가 늘어나고 있다.
+        - 1인 가구가 증가한다.
+        - 1인 가구 수가 증가한다.
+        - 일인 가구가 증가하고 있다.
+        - 일인 가구 수가 증가하고 있다.
+    known_wrong:
+      - answer: 1인 가구가 증가하고 있어요.
+        feedback_vi: Đây là 해요체. Văn viết là 증가하고 있다.
+        error_tag: haeyo_in_writing
+      - answer: 1인 가구 수가 상승하고 있다.
+        feedback_vi: 상승하다 dùng cho giá cả, tỉ lệ. Số hộ là số lượng nên dùng 증가하다/늘다.
+        error_tag: collocation_number
+      - answer: 1인 가구가 증가하는다.
+        feedback_vi: Gốc 증가하- kết thúc bằng nguyên âm nên chỉ thêm -ㄴ다 - 증가한다.
+        error_tag: nda_neunda_choice
+      - answer: 1인 가구가 증가하고 있는다.
+        feedback_vi: 있다 trong -고 있다 ở văn viết giữ nguyên - 증가하고 있다.
+        error_tag: iss_da_written
+    explanation:
+      vi: '"Đang tăng" là -고 있다; 있다 ở văn viết giữ nguyên. Số lượng dùng 증가하다 hoặc từ thuần Hàn 늘다/늘어나다.'
+    display_answer: 1인 가구가 증가하고 있다.
+
+  - key: ko:exercise:society-vocab-translate-prices
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:mulga-sangseung
+    prompt:
+      source_text: Giá cả đã tăng. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 물가가 올랐다.
+        - 물가가 상승했다.
+        - 물가가 많이 올랐다.
+        - 물가가 크게 상승했다.
+        - 물가가 크게 올랐다.
+        - 물가가 많이 상승했다.
+        - 물가는 올랐다.
+        - 물가는 상승했다.
+    known_wrong:
+      - answer: 물가가 증가했다.
+        feedback_vi: 증가하다 dùng cho số lượng. Giá cả tăng là 올랐다 hoặc 상승했다.
+        error_tag: collocation_price
+      - answer: 물가가 올랐어요.
+        feedback_vi: Đây là 해요체. Văn viết là 올랐다.
+        error_tag: haeyo_in_writing
+      - answer: 물가가 오른다.
+        feedback_vi: Câu nói "đã tăng" nên cần quá khứ - 올랐다.
+        error_tag: tense_shift
+      - answer: 가격이 증가했다.
+        feedback_vi: Giá (가격/물가) không đi với 증가하다. Dùng 올랐다/상승했다.
+        error_tag: collocation_price
+    explanation:
+      vi: 물가 là "giá cả, vật giá" nói chung. "Tăng" với giá cả là 오르다 (thuần Hàn) hoặc 상승하다 (Hán Hàn); quá khứ văn viết là 올랐다/상승했다.
+    display_answer: 물가가 올랐다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:society-vocab-mcq-collocation
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:daechaek-maryeonhada
+    prompt:
+      stem: "Bạn viết tin: \"Chính phủ đã đưa ra biện pháp giảm ô nhiễm môi trường.\" Chọn câu đúng."
+      stem_lang: vi
+      options:
+        - { id: q8f, text: 정부는 환경 오염을 줄이기 위한 대책을 마련했다., lang: ko }
+        - { id: g3z, text: 정부는 환경 오염을 줄이기 위한 대책을 증가했다., lang: ko }
+        - { id: w5k, text: 정부는 오염 환경을 줄이기 위한 대책을 마련했다., lang: ko }
+        - { id: b7u, text: 정부는 환경 오염을 줄이기 위한 대책에 미쳤다., lang: ko }
+    answer:
+      correct_option_id: q8f
+    explanation:
+      vi: Biện pháp đi với 마련하다; 증가하다 là nội động từ nên không nhận tân ngữ 대책을. 오염 환경 sai trật tự, và 미치다 chỉ đi trong cụm 영향을 미치다.
+    display_answer: 정부는 환경 오염을 줄이기 위한 대책을 마련했다.
+
+  - key: ko:exercise:society-vocab-mcq-false-friend
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:simgakada
+    prompt:
+      stem: "Đọc tin: 미세먼지 문제가 심각하다. 정부는 곧 대책을 발표할 것이다. Câu nào hiểu đúng?"
+      stem_lang: vi
+      options:
+        - { id: s2v, text: Vấn đề bụi mịn nghiêm trọng; chính phủ sắp công bố biện pháp., lang: vi }
+        - { id: y8h, text: Vấn đề bụi mịn rất sâu sắc; chính phủ sắp phát biểu ý kiến., lang: vi }
+        - { id: p4c, text: Vấn đề bụi mịn đã được giải quyết; chính phủ sẽ công bố kết quả., lang: vi }
+        - { id: e1n, text: Vấn đề bụi mịn không đáng lo; chính phủ đang điều tra., lang: vi }
+    answer:
+      correct_option_id: s2v
+    explanation:
+      vi: 심각하다 (Hán Việt "thâm khắc") nghĩa là "nghiêm trọng", 발표하다 (Hán Việt "phát biểu") nghĩa là "công bố". Dịch theo âm Hán Việt sẽ ra phương án sai.
+    display_answer: Vấn đề bụi mịn nghiêm trọng; chính phủ sắp công bố biện pháp.
+
+  - key: ko:exercise:society-vocab-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:jaehwalyong
+    prompt:
+      source_text: 재활용은 환경 오염을 줄인다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tái chế làm giảm ô nhiễm môi trường.
+        - Tái chế giúp giảm ô nhiễm môi trường.
+        - Việc tái chế làm giảm ô nhiễm môi trường.
+        - Việc tái chế giúp giảm ô nhiễm môi trường.
+        - Tái chế giảm ô nhiễm môi trường.
+        - Tái chế làm giảm thiểu ô nhiễm môi trường.
+        - Tái chế giúp giảm thiểu ô nhiễm môi trường.
+        - Tái chế giảm thiểu ô nhiễm môi trường.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tái chế làm tăng ô nhiễm môi trường.
+        feedback_vi: 줄이다 là "làm giảm", không phải "tăng" (늘리다).
+        error_tag: meaning_reversed
+      - answer: Tái sử dụng làm giảm môi trường.
+        feedback_vi: Thiếu "ô nhiễm" (오염). 환경 오염 là "ô nhiễm môi trường".
+        error_tag: missing_word
+    explanation:
+      vi: 재활용 = tái chế, 환경 오염 = ô nhiễm môi trường, 줄인다 = làm giảm (động từ hiện tại văn viết). Câu nêu một sự thật chung nên dịch ở hiện tại.
+    display_answer: Tái chế làm giảm ô nhiễm môi trường.

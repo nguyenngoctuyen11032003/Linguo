@@ -1,0 +1,950 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Sở thích, thời tiết & hẹn gặp" (TOPIK 2). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+# Động từ chung (보다, 먹다, 운동하다…), 요리, 음악, 좋아해요 thuộc unit khác, chỉ dùng lại.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ================= bài 1: sở thích =================
+  - key: ko:item:chwimi
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 취미
+      romanization: chwimi
+      pos: danh từ
+    back:
+      meaning:
+        vi: sở thích (việc bạn hay làm lúc rảnh)
+      examples:
+        - target: 제 취미는 등산이에요.
+          translation:
+            vi: Sở thích của tôi là leo núi.
+      pronunciation_note:
+        vi: ㅟ đọc gần "uy" trong "tuy", tròn môi rồi mở nhanh - [취미] gần "chuy-mi".
+      confusion:
+        vi: 취미 là hoạt động bạn làm thường xuyên lúc rảnh. Món ăn hay màu bạn thích thì không gọi là 취미.
+
+  - key: ko:item:chwimiga-mwoyeyo
+    type: phrase
+    level: topik2
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: 취미가 뭐예요?
+      romanization: chwimiga mwoyeyo?
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Sở thích của bạn là gì?
+      examples:
+        - target: 민수 씨, 취미가 뭐예요? - 사진 찍기예요.
+          translation:
+            vi: Minsu ơi, sở thích của anh là gì? - Là chụp ảnh.
+      pronunciation_note:
+        vi: 뭐예요 thường đọc [뭐에요]; giọng lên ở cuối câu hỏi.
+      confusion:
+        vi: Hỏi thì dùng 취미가 (이/가 đi với 뭐); trả lời thì dùng 제 취미는… để nói về mình.
+
+  - key: ko:item:deungsan
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 등산
+      romanization: deungsan
+      pos: danh từ (등산하다 - động từ)
+    back:
+      meaning:
+        vi: leo núi (đi bộ lên núi)
+      examples:
+        - target: 주말에 친구하고 등산해요.
+          translation:
+            vi: Cuối tuần tôi đi leo núi với bạn.
+      pronunciation_note:
+        vi: ㅡ trong 등 không tròn môi, đọc gần "ưng" - [등산].
+      confusion:
+        vi: Người Hàn rất thích 등산 vào cuối tuần; đây là leo bộ đường mòn, không phải leo vách đá.
+
+  - key: ko:item:dokseo
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 독서
+      romanization: dokseo
+      pos: danh từ
+    back:
+      meaning:
+        vi: (việc) đọc sách
+      examples:
+        - target: 제 취미는 독서예요.
+          translation:
+            vi: Sở thích của tôi là đọc sách.
+      pronunciation_note:
+        vi: Đọc là [독써] - ㅅ sau patchim ㄱ đọc căng thành ㅆ.
+      confusion:
+        vi: 독서 là danh từ trang trọng, hay dùng khi nói "sở thích là…". Trong câu hành động hằng ngày, người Hàn nói 책을 읽어요.
+
+  - key: ko:item:sajin-jjikda
+    type: phrase
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 사진을 찍다
+      romanization: sajineul jjikda
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: chụp ảnh
+      examples:
+        - target: 저는 꽃 사진을 찍는 것을 좋아해요.
+          translation:
+            vi: Tôi thích chụp ảnh hoa.
+      pronunciation_note:
+        vi: 사진을 nối âm thành [사지늘]; 찍어요 đọc [찌거요] - ㅉ căng, không bật hơi.
+      confusion:
+        vi: Tiếng Việt nói "chụp", tiếng Hàn dùng 찍다 (nghĩa gốc là "ấn, dập"). Không dùng 하다 - không nói 사진해요.
+
+  - key: ko:item:norae-bureuda
+    type: phrase
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 노래를 부르다
+      romanization: noraereul bureuda
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: hát (một bài hát)
+      examples:
+        - target: 노래방에서 노래를 불러요.
+          translation:
+            vi: Tôi hát ở phòng karaoke.
+      pronunciation_note:
+        vi: 부르다 là động từ bất quy tắc 르 - 부르 + 어요 thành 불러요 [불러요], có hai chữ ㄹ.
+      confusion:
+        vi: Không nói 부르어요 hay 부러요; dạng đúng là 불러요. "Hát" phải có 노래를 đi kèm, 불러요 một mình còn có nghĩa là "gọi".
+
+  - key: ko:item:geim-hada
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 게임하다
+      romanization: geimhada
+      pos: động từ
+    back:
+      meaning:
+        vi: chơi game
+      examples:
+        - target: 동생은 저녁에 게임해요.
+          translation:
+            vi: Em tôi chơi game vào buổi tối.
+      pronunciation_note:
+        vi: 게 đọc gần "kê" nhưng ㄱ đầu từ nhẹ, gần "k/g"; 게임해요 [게임해요].
+      confusion:
+        vi: Có thể nói 게임해요 hoặc 게임을 해요. Không dùng 놀다 (chơi đùa) cho game điện tử.
+
+  - key: ko:item:sanchaek
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 산책하다
+      romanization: sanchaekhada
+      pos: động từ
+    back:
+      meaning:
+        vi: đi dạo
+      examples:
+        - target: 저녁에 공원에서 산책해요.
+          translation:
+            vi: Buổi tối tôi đi dạo ở công viên.
+      pronunciation_note:
+        vi: ㄱ gặp ㅎ thành âm bật hơi ㅋ - 산책해요 đọc [산채캐요].
+      confusion:
+        vi: 산책 là đi bộ thư giãn; đi bộ để đến nơi nào đó là 걸어가다.
+
+  - key: ko:item:gram-neun-geot-joahada
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-는 것을 좋아하다
+      romanization: -neun geoseul joahada
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Thích làm gì. Gốc động từ + 는 것 biến hành động thành danh từ ("việc…"), rồi thêm 을 좋아해요.
+      examples:
+        - target: 저는 요리하는 것을 좋아해요.
+          translation:
+            vi: Tôi thích nấu ăn.
+        - target: 노래 부르는 걸 좋아해요.
+          translation:
+            vi: Tôi thích hát.
+      pronunciation_note:
+        vi: 것을 đọc [거슬]; khi nói thường rút gọn thành 걸 - 요리하는 걸 좋아해요.
+      confusion:
+        vi: 것을 đi với 좋아해요, 것이 đi với 좋아요 - không nói 요리하는 것을 좋아요. Động từ có patchim ㄹ thì bỏ ㄹ - 만들다 → 만드는 것.
+
+  - key: ko:item:gram-gi-nominal
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-기
+      romanization: -gi
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Biến động từ thành danh từ ngắn gọn, hay dùng khi gọi tên hoạt động - 요리하기 (việc nấu ăn), 사진 찍기 (chụp ảnh).
+      examples:
+        - target: 제 취미는 사진 찍기예요.
+          translation:
+            vi: Sở thích của tôi là chụp ảnh.
+      pronunciation_note:
+        vi: 찍기 đọc [찍끼] - ㄱ sau patchim ㄱ đọc căng.
+      confusion:
+        vi: Sau 취미는 cần một danh từ, nên nói 취미는 요리하기예요, không nói 취미는 요리해요.
+
+  # ================= bài 2: biết làm & thử làm =================
+  - key: ko:item:gram-eul-jul-alda
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(으)ㄹ 줄 알다 · V-(으)ㄹ 줄 모르다
+      romanization: -(eu)l jul alda · -(eu)l jul moreuda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Biết / không biết cách làm gì (kỹ năng học được). Gốc không có patchim + ㄹ, có patchim + 을, gốc có ㄹ giữ nguyên.
+      examples:
+        - target: 저는 수영할 줄 알아요.
+          translation:
+            vi: Tôi biết bơi.
+        - target: 운전할 줄 몰라요.
+          translation:
+            vi: Tôi không biết lái xe.
+      pronunciation_note:
+        vi: 줄 sau -ㄹ đọc căng - 할 줄 [할쭐]; 알아요 nối âm [아라요]; 몰라요 có hai ㄹ.
+      confusion:
+        vi: Chỉ dùng cho kỹ năng. "Biết tên anh ấy" là 이름을 알아요, không dùng 줄. Không nói 안 알아요 - phủ định của 알다 là 몰라요.
+
+  - key: ko:item:gita-chida
+    type: phrase
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 기타를 치다
+      romanization: gitareul chida
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: chơi đàn ghi-ta
+      examples:
+        - target: 형은 기타를 칠 줄 알아요.
+          translation:
+            vi: Anh tôi biết chơi ghi-ta.
+      pronunciation_note:
+        vi: ㅌ và ㅊ là âm bật hơi - đẩy mạnh hơi ra; 쳐요 [처요] là dạng 해요체.
+      confusion:
+        vi: Tiếng Việt dùng "chơi" cho mọi nhạc cụ; tiếng Hàn dùng 치다 (gõ, gảy) cho ghi-ta, piano. Không nói 기타를 놀아요.
+
+  - key: ko:item:chum-chuda
+    type: phrase
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 춤을 추다
+      romanization: chumeul chuda
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: nhảy, múa
+      examples:
+        - target: 저는 춤을 잘 못 춰요.
+          translation:
+            vi: Tôi nhảy không giỏi lắm.
+      pronunciation_note:
+        vi: 춤을 nối âm [추믈]; 추어요 rút gọn thành 춰요.
+      confusion:
+        vi: Danh từ và động từ cùng gốc - 춤 (điệu nhảy) + 추다 (nhảy). Không nói 춤해요.
+
+  - key: ko:item:jajeongeo-tada
+    type: phrase
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 자전거를 타다
+      romanization: jajeongeoreul tada
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi xe đạp
+      examples:
+        - target: 자전거를 탈 줄 알아요?
+          translation:
+            vi: Bạn biết đi xe đạp không?
+      pronunciation_note:
+        vi: 자전거 [자전거] - ㅈ giữa từ nghe gần "ch" nhẹ; 타요 bật hơi ㅌ.
+      confusion:
+        vi: Phương tiện nào cũng dùng 타다 với 을/를 (자전거를, 버스를), không dùng 에.
+
+  - key: ko:item:mandeulda
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 만들다
+      romanization: mandeulda
+      pos: động từ
+    back:
+      meaning:
+        vi: làm, chế tạo, nấu (món ăn)
+      examples:
+        - target: 김치를 만들 줄 알아요.
+          translation:
+            vi: Tôi biết làm kim chi.
+      pronunciation_note:
+        vi: 만들어요 nối âm [만드러요].
+      confusion:
+        vi: Gốc có patchim ㄹ nên không thêm 을 - 만들 줄 (không phải 만들을 줄), 만들까요; trước ㄴ, ㅂ, ㅅ thì ㄹ rơi - 만드는 것, 만듭시다.
+
+  - key: ko:item:gram-a-eo-boda
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-아/어 보다
+      romanization: -a/eo boda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Thử làm gì. Ở quá khứ -아/어 봤어요 nghĩa là "đã từng (thử) làm".
+      examples:
+        - target: 떡볶이를 먹어 봤어요?
+          translation:
+            vi: Bạn đã ăn thử tteokbokki chưa?
+        - target: 이 노래를 한번 들어 보세요.
+          translation:
+            vi: Bạn thử nghe bài hát này một lần xem.
+      pronunciation_note:
+        vi: 봤어요 đọc [봐써요]; 먹어 봐요 nối âm [머거 봐요].
+      confusion:
+        vi: Chia động từ chính theo -아/어 như 해요체 rồi bỏ 요 - 가요 → 가 봐요, 먹어요 → 먹어 봐요, 해요 → 해 봐요. Đừng nói 먹고 봐요 (nghĩa là "ăn rồi xem").
+
+  - key: ko:item:jal
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 잘 · 잘하다
+      romanization: jal · jalhada
+      pos: phó từ · động từ
+    back:
+      meaning:
+        vi: giỏi, tốt (잘); làm giỏi (잘하다)
+      examples:
+        - target: 미나 씨는 노래를 잘해요.
+          translation:
+            vi: Mina hát giỏi.
+      pronunciation_note:
+        vi: 잘해요 đọc liền [자래요] - ㅎ giữa từ sau ㄹ gần như mất.
+      confusion:
+        vi: 잘 đứng trước động từ - 잘 불러요, 잘 춰요. "Không giỏi" là 잘 못해요, không nói 안 잘해요.
+
+  - key: ko:item:hanbeon
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 한번
+      romanization: hanbeon
+      pos: phó từ
+    back:
+      meaning:
+        vi: thử một lần, thử xem (làm mềm lời rủ, lời khuyên)
+      examples:
+        - target: 한번 해 보세요.
+          translation:
+            vi: Bạn thử làm một lần xem.
+      pronunciation_note:
+        vi: Đọc liền [한번], ㄴ cuối 한 nối sang ㅂ.
+      confusion:
+        vi: Viết liền 한번 là "thử, một lúc nào đó"; viết cách 한 번 là đếm "một lần" (한 번, 두 번).
+
+  # ================= bài 3: thời tiết & bốn mùa =================
+  - key: ko:item:nalssi
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 날씨
+      romanization: nalssi
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời tiết
+      examples:
+        - target: 오늘 날씨가 좋아요.
+          translation:
+            vi: Hôm nay thời tiết đẹp.
+      pronunciation_note:
+        vi: ㅆ là âm căng - đọc [날씨] với "s" căng, gắt hơn "x" tiếng Việt.
+      confusion:
+        vi: Tiếng Việt nói "trời nóng"; tiếng Hàn thường nói 날씨가 더워요 hoặc chỉ 더워요, không dịch "trời" thành 하늘 (bầu trời).
+
+  - key: ko:item:nalssiga-eottaeyo
+    type: phrase
+    level: topik2
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: 날씨가 어때요?
+      romanization: nalssiga eottaeyo?
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Thời tiết thế nào?
+      examples:
+        - target: 서울은 요즘 날씨가 어때요? - 좀 추워요.
+          translation:
+            vi: Dạo này thời tiết ở Seoul thế nào? - Hơi lạnh.
+      pronunciation_note:
+        vi: 어때요 - ㄸ căng, không bật hơi [어때요].
+      confusion:
+        vi: 어때요 hỏi "thế nào" về tính chất. Đừng dùng 뭐예요 (là gì) để hỏi thời tiết.
+
+  - key: ko:item:four-seasons
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 봄 · 여름 · 가을 · 겨울
+      romanization: bom · yeoreum · gaeul · gyeoul
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa xuân · mùa hè · mùa thu · mùa đông
+      examples:
+        - target: 저는 가을을 제일 좋아해요.
+          translation:
+            vi: Tôi thích mùa thu nhất.
+        - target: 겨울에 눈이 와요.
+          translation:
+            vi: Mùa đông có tuyết rơi.
+      pronunciation_note:
+        vi: 여름 và 겨울 đều có ㅕ (mở miệng như "ơ"), không đọc thành "yô"; 가을 là hai âm tiết [가을].
+      confusion:
+        vi: Nói "vào mùa…" thì thêm 에 - 여름에, 겨울에. Không cần thêm từ "mùa" (계절) trước tên mùa.
+
+  - key: ko:item:gyejeol
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 계절
+      romanization: gyejeol
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa (trong năm)
+      examples:
+        - target: 어느 계절을 좋아해요?
+          translation:
+            vi: Bạn thích mùa nào?
+      pronunciation_note:
+        vi: ㅖ sau phụ âm thường đọc như ㅔ - 계절 nghe [게절].
+      confusion:
+        vi: Việt Nam miền Nam chỉ có mùa mưa, mùa khô; Hàn Quốc có bốn mùa rõ rệt (사계절).
+
+  - key: ko:item:biga-oda
+    type: phrase
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 비가 오다
+      romanization: biga oda
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: (trời) mưa
+      examples:
+        - target: 오늘 비가 와요. 우산을 가져가세요.
+          translation:
+            vi: Hôm nay trời mưa. Bạn mang ô theo nhé.
+      pronunciation_note:
+        vi: 오아요 rút thành 와요 [와요].
+      confusion:
+        vi: Hội thoại hằng ngày dùng 비가 와요. 비가 내려요 cũng đúng nhưng nghe như bản tin, văn viết.
+
+  - key: ko:item:nuni-oda
+    type: phrase
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 눈이 오다
+      romanization: nuni oda
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: (trời) có tuyết rơi
+      examples:
+        - target: 서울은 겨울에 눈이 많이 와요.
+          translation:
+            vi: Ở Seoul mùa đông tuyết rơi nhiều.
+      pronunciation_note:
+        vi: 눈이 nối âm [누니].
+      confusion:
+        vi: 눈 vừa là "tuyết" vừa là "mắt"; dựa vào ngữ cảnh (눈이 와요 chắc chắn là tuyết).
+
+  - key: ko:item:deopda
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 덥다 → 더워요
+      romanization: deopda → deowoyo
+      pos: tính từ
+    back:
+      meaning:
+        vi: nóng (thời tiết)
+      examples:
+        - target: 여름에는 너무 더워요.
+          translation:
+            vi: Mùa hè nóng quá.
+      pronunciation_note:
+        vi: 덥다 đọc [덥따]; ở 해요체 ㅂ biến thành 우 - 더워요 [더워요].
+      confusion:
+        vi: Không nói 덥어요. 덥다 chỉ nói về thời tiết, cảm giác; đồ ăn nóng là 뜨거워요.
+
+  - key: ko:item:chupda
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 춥다 → 추워요
+      romanization: chupda → chuwoyo
+      pos: tính từ
+    back:
+      meaning:
+        vi: lạnh (thời tiết)
+      examples:
+        - target: 겨울은 추워요.
+          translation:
+            vi: Mùa đông lạnh.
+      pronunciation_note:
+        vi: 춥다 đọc [춥따], ㅊ bật hơi; 추워요 [추워요].
+      confusion:
+        vi: Không nói 춥어요. 춥다 dùng cho thời tiết, cơ thể; nước lạnh, đồ uống lạnh là 차가워요.
+
+  - key: ko:item:gram-b-irregular
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: ㅂ 불규칙 (덥다 → 더워요)
+      romanization: bieup bulgyuchik
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Nhiều tính từ có gốc kết thúc bằng ㅂ đổi ㅂ thành 우 trước nguyên âm - 덥다 → 더워요, 춥다 → 추워요, 맵다 → 매워요, 쉽다 → 쉬워요.
+      examples:
+        - target: 이 문제는 쉬워요. 그런데 저 문제는 어려워요.
+          translation:
+            vi: Câu này dễ. Nhưng câu kia khó.
+      pronunciation_note:
+        vi: 우 + 어 đọc liền thành 워 - [더워요], [추워요], [쉬워요].
+      confusion:
+        vi: Không phải từ nào có ㅂ cũng đổi - 입다 → 입어요 (mặc), 좁다 → 좁아요 (chật). Hãy học thuộc theo từng từ.
+
+  - key: ko:item:ttatteuthada
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 따뜻하다
+      romanization: ttatteuthada
+      pos: tính từ
+    back:
+      meaning:
+        vi: ấm áp
+      examples:
+        - target: 봄은 따뜻해요.
+          translation:
+            vi: Mùa xuân ấm áp.
+      pronunciation_note:
+        vi: ㅅ cuối đọc như ㄷ rồi gặp ㅎ thành ㅌ - 따뜻해요 [따뜨태요].
+      confusion:
+        vi: 따뜻하다 là ấm dễ chịu; nóng khó chịu là 덥다.
+
+  - key: ko:item:siwonhada
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 시원하다
+      romanization: siwonhada
+      pos: tính từ
+    back:
+      meaning:
+        vi: mát mẻ, dễ chịu
+      examples:
+        - target: 가을에는 날씨가 시원해요.
+          translation:
+            vi: Mùa thu thời tiết mát mẻ.
+      pronunciation_note:
+        vi: ㅎ sau ㄴ đọc rất nhẹ - 시원해요 nghe gần [시워내요].
+      confusion:
+        vi: 시원하다 là mát dễ chịu (cũng khen đồ uống mát); lạnh khó chịu là 춥다.
+
+  - key: ko:item:barami-bulda
+    type: phrase
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 바람이 불다
+      romanization: barami bulda
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: gió thổi, có gió
+      examples:
+        - target: 오늘은 바람이 많이 불어요.
+          translation:
+            vi: Hôm nay gió nhiều.
+      pronunciation_note:
+        vi: 바람이 nối âm [바라미]; 불어요 [부러요].
+      confusion:
+        vi: Gió dùng động từ 불다 (thổi), không dùng 오다 như mưa, tuyết.
+
+  - key: ko:item:malgda
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 맑다
+      romanization: makda
+      pos: tính từ
+    back:
+      meaning:
+        vi: (trời) quang, nắng đẹp; trong
+      examples:
+        - target: 내일은 날씨가 맑아요.
+          translation:
+            vi: Ngày mai trời quang đãng.
+      pronunciation_note:
+        vi: Patchim kép ㄺ - 맑다 đọc [막따], nhưng 맑아요 đọc [말가요] vì ㄱ nối sang âm sau.
+      confusion:
+        vi: Đừng đọc 맑아요 thành [막아요]; trước nguyên âm thì cả ㄹ và ㄱ đều được đọc.
+
+  - key: ko:item:heurida
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 흐리다
+      romanization: heurida
+      pos: tính từ
+    back:
+      meaning:
+        vi: (trời) âm u, nhiều mây
+      examples:
+        - target: 오후에는 흐려요.
+          translation:
+            vi: Buổi chiều trời âm u.
+      pronunciation_note:
+        vi: 흐리 + 어요 rút thành 흐려요 [흐려요]; ㅡ không tròn môi.
+      confusion:
+        vi: 흐려요 là nhiều mây, chưa chắc mưa. Mưa thì nói 비가 와요.
+
+  # ================= bài 4: rủ rê & hẹn gặp =================
+  - key: ko:item:yaksok
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 약속
+      romanization: yaksok
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc hẹn; lời hứa
+      examples:
+        - target: 오늘 저녁에 약속이 있어요.
+          translation:
+            vi: Tối nay tôi có hẹn.
+      pronunciation_note:
+        vi: Đọc [약쏙] - ㅅ sau patchim ㄱ đọc căng; 약속이 nối âm [약쏘기].
+      confusion:
+        vi: Tiếng Việt "có hẹn" - tiếng Hàn 약속이 있어요 (이 vì 약속 có patchim). 약속 cũng là "lời hứa" - 약속해요 (tôi hứa).
+
+  - key: ko:item:sigan-isseoyo
+    type: phrase
+    level: topik2
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: 시간 있어요?
+      romanization: sigan isseoyo?
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Bạn có rảnh không? (có thời gian không?)
+      examples:
+        - target: 토요일에 시간 있어요?
+          translation:
+            vi: Thứ Bảy bạn có rảnh không?
+      pronunciation_note:
+        vi: Nói liền thường nối âm [시가니써요].
+      confusion:
+        vi: Đây là cách mở lời rủ ai đó rất tự nhiên. Trả lời "không rảnh" là 시간이 없어요, không nói 안 있어요.
+
+  - key: ko:item:gram-eulkkayo
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(으)ㄹ까요?
+      romanization: -(eu)lkkayo?
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: (1) Rủ "mình… nhé?" - 같이 갈까요? (2) Hỏi ý kiến người nghe "tôi… nhé? / nên… không?" - 몇 시에 만날까요?
+      examples:
+        - target: 같이 영화 볼까요? - 네, 좋아요.
+          translation:
+            vi: Mình cùng xem phim nhé? - Ừ, được đấy.
+      pronunciation_note:
+        vi: ㄲ căng - [갈까요], [먹을까요]; giọng lên cuối câu.
+      confusion:
+        vi: Đây là câu hỏi, nên không trả lời lại bằng -(으)ㄹ까요. Đồng ý thì nói 네, 좋아요 / 같이 가요 / 갑시다.
+
+  - key: ko:item:gram-eupsida
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(으)ㅂ시다
+      romanization: -(eu)psida
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: '"Chúng ta hãy…" - đề nghị cùng làm. Gốc không patchim + ㅂ시다 (갑시다), có patchim + 읍시다 (먹읍시다), gốc ㄹ bỏ ㄹ (만듭시다).'
+      examples:
+        - target: 그럼 3시에 만납시다.
+          translation:
+            vi: Vậy 3 giờ chúng ta gặp nhau nhé.
+      pronunciation_note:
+        vi: ㅅ sau patchim ㅂ đọc căng - 갑시다 [갑씨다], 먹읍시다 [머급씨다].
+      confusion:
+        vi: Không dùng -(으)ㅂ시다 với người lớn tuổi hoặc cấp trên vì nghe như ra lệnh; khi đó nói 같이 가요 hoặc 같이 가시죠.
+
+  - key: ko:item:gram-eullaeyo
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(으)ㄹ래요?
+      romanization: -(eu)llaeyo?
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Hỏi ý muốn của người nghe một cách thân mật "bạn có muốn… không?"; khi trả lời, -(으)ㄹ래요 nói ý muốn của mình.
+      examples:
+        - target: 커피 마실래요? - 아니요, 저는 주스 마실래요.
+          translation:
+            vi: Bạn uống cà phê không? - Không, tôi uống nước ép.
+      pronunciation_note:
+        vi: Hai ㄹ đọc thành "l" dài [갈래요], [먹을래요].
+      confusion:
+        vi: -(으)ㄹ래요 thân mật hơn -(으)ㄹ까요 và hỏi đúng mong muốn của người nghe; với người lớn nên dùng -(으)ㄹ까요 hoặc -(으)실래요.
+
+  - key: ko:item:gram-giro-hada
+    type: grammar_point
+    level: topik2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-기로 하다
+      romanization: -giro hada
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Quyết định / hẹn nhau sẽ làm gì. Thường dùng ở quá khứ - 만나기로 했어요 (đã hẹn gặp).
+      examples:
+        - target: 친구하고 토요일에 등산하기로 했어요.
+          translation:
+            vi: Tôi đã hẹn với bạn thứ Bảy đi leo núi.
+      pronunciation_note:
+        vi: 했어요 đọc [해써요].
+      confusion:
+        vi: Gắn -기로 vào gốc động từ, không chia thì ở động từ chính - không nói 만났기로 했어요. Thì quá khứ nằm ở 했어요.
+
+  - key: ko:item:gachi
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 같이
+      romanization: gachi
+      pos: phó từ
+    back:
+      meaning:
+        vi: cùng nhau, cùng
+      examples:
+        - target: 같이 점심 먹을래요?
+          translation:
+            vi: Cùng ăn trưa không?
+      pronunciation_note:
+        vi: Viết 같이 nhưng đọc [가치] - ㅌ gặp 이 biến thành ㅊ.
+      confusion:
+        vi: Viết theo cách đọc thành 가치 là sai chính tả (가치 nghĩa là "giá trị"). "Cùng ai" thì thêm 하고 - 친구하고 같이.
+
+  - key: ko:item:myeot-si-mannalkkayo
+    type: phrase
+    level: topik2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: 몇 시에 만날까요?
+      romanization: myeot sie mannalkkayo?
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Mấy giờ mình gặp nhau?
+      examples:
+        - target: 몇 시에 만날까요? - 2시 어때요?
+          translation:
+            vi: Mấy giờ mình gặp? - 2 giờ thì sao?
+      pronunciation_note:
+        vi: 몇 시 đọc [멷 씨] - ㅅ sau patchim đọc căng.
+      confusion:
+        vi: Thời gian cần 에 - 몇 시에; hỏi địa điểm thì dùng 어디에서 만날까요?
+
+  - key: ko:item:joayo-geuraeyo
+    type: phrase
+    level: topik2
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: 좋아요 · 그래요
+      romanization: joayo · geuraeyo
+      pos: câu trả lời
+    back:
+      meaning:
+        vi: Được đấy / Ừ, vậy đi (đồng ý với lời rủ)
+      examples:
+        - target: 내일 등산 갈래요? - 좋아요!
+          translation:
+            vi: Mai đi leo núi không? - Được đấy!
+      pronunciation_note:
+        vi: ㅎ trong 좋아요 không đọc - [조아요].
+      confusion:
+        vi: Ở đây 좋아요 nghĩa là "đồng ý", không phải "thích". Trả lời lời rủ không cần lặp lại -(으)ㄹ까요.
+
+  - key: ko:item:mianhajiman-daeume
+    type: phrase
+    level: topik2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: 미안하지만 다음에…
+      romanization: mianhajiman daeume…
+      pos: câu từ chối
+    back:
+      meaning:
+        vi: Xin lỗi nhưng để lần sau nhé… (từ chối lịch sự)
+      examples:
+        - target: 미안하지만 오늘은 약속이 있어요. 다음에 같이 가요.
+          translation:
+            vi: Xin lỗi nhưng hôm nay mình có hẹn rồi. Lần sau mình đi cùng nhé.
+      pronunciation_note:
+        vi: ㅎ giữa từ đọc nhẹ - 미안하지만 nghe [미아나지만]; 다음에 [다으메].
+      confusion:
+        vi: Người Hàn ít nói thẳng 싫어요 (không thích) khi từ chối; hãy xin lỗi, nêu lý do ngắn rồi hẹn 다음에.
+
+  - key: ko:item:gram-time-place-order
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Thời gian + 에 · Nơi chốn + 에서 · Động từ
+      romanization: sigan-e · jangso-eseo
+      pos: trật tự câu
+    back:
+      meaning:
+        vi: Câu hẹn gặp thường theo thứ tự - thời gian (에) → nơi chốn (에서) → động từ ở cuối.
+      examples:
+        - target: 토요일 3시에 학교 앞에서 만나요.
+          translation:
+            vi: Thứ Bảy 3 giờ mình gặp ở trước cổng trường nhé.
+      pronunciation_note:
+        vi: 앞에서 nối âm [아페서]; 3시에 đọc [세 시에].
+      confusion:
+        vi: Tiếng Việt đặt "gặp" trước, thời gian và nơi chốn sau. Tiếng Hàn đặt động từ cuối câu; nơi gặp dùng 에서 vì là nơi diễn ra hành động.
+
+  # ================= bài 5: ôn tập (tin nhắn đổi hẹn) =================
+  - key: ko:item:yaksok-bakkuda
+    type: phrase
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 약속을 바꾸다
+      romanization: yaksogeul bakkuda
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đổi lịch hẹn
+      examples:
+        - target: 미안해요. 약속 시간을 바꿀까요?
+          translation:
+            vi: Xin lỗi. Mình đổi giờ hẹn nhé?
+      pronunciation_note:
+        vi: 약속을 đọc [약쏘글]; 바꿔요 là dạng rút gọn của 바꾸어요.
+      confusion:
+        vi: Đổi giờ thì nói 시간을 바꾸다; hủy hẹn là 약속을 취소하다. Không dùng 고치다 (sửa) cho lịch hẹn.

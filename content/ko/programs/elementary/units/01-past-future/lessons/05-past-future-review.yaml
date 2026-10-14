@@ -1,0 +1,417 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:past-future-review
+order_index: 5
+level: topik2
+title:
+  vi: Ôn tập - Nhật ký cuối tuần và tin nhắn hẹn gặp
+objectives:
+  - vi: Đọc hiểu một trang nhật ký cuối tuần và một đoạn tin nhắn hẹn gặp viết bằng 해요체.
+  - vi: Phối hợp quá khứ, tương lai, -고 / -지만 / -아서, -(으)러, 못 và -고 있어요 trong cùng một đoạn văn.
+  - vi: Tự viết vài câu nhật ký và trả lời tin nhắn rủ đi chơi.
+estimated_minutes: 20
+skills: [reading, writing, grammar, listening]
+prerequisites: [ko:lesson:purpose-ability]
+items:
+  - item: ko:item:ilgi
+  - item: ko:item:munja
+  - item: ko:item:jaemiitda
+  - item: ko:item:gram-past-tense
+    role: reuse
+  - item: ko:item:gram-past-copula
+    role: reuse
+  - item: ko:item:gram-eul-geoyeyo
+    role: reuse
+  - item: ko:item:gram-eulgeyo
+    role: reuse
+  - item: ko:item:gram-go-and
+    role: reuse
+  - item: ko:item:gram-jiman
+    role: reuse
+  - item: ko:item:gram-aseo-sequence
+    role: reuse
+  - item: ko:item:gram-eureo-gada
+    role: reuse
+  - item: ko:item:gram-mot
+    role: reuse
+  - item: ko:item:gram-go-isseoyo
+    role: reuse
+  - item: ko:item:cheongsohada
+    role: reuse
+  - item: ko:item:kape
+    role: reuse
+  - item: ko:item:yeonghwa
+    role: reuse
+  - item: ko:item:sukje
+    role: reuse
+  - item: ko:item:sada
+    role: reuse
+  - item: ko:item:jinanju
+    role: reuse
+  - item: ko:item:verb-sseuda
+    role: reuse
+  - item: ko:item:verb-ireonada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài ôn này, bạn đọc được nhật ký cuối tuần của một bạn học tiếng Hàn, hiểu tin nhắn hẹn đi ăn và tự trả lời đúng thì, đúng đuôi.
+  - type: explain
+    text:
+      vi: Khi đọc, hãy nhìn từ chỉ thời gian trước - 어제, 지난주, 아까 báo hiệu quá khứ (-았/었어요), còn 이따가, 내일, 다음 주 báo hiệu tương lai (-(으)ㄹ 거예요 / -(으)ㄹ게요). Tiếng Việt hay bỏ "đã/sẽ", nhưng tiếng Hàn luôn thể hiện thì ở đuôi câu.
+  - type: explain
+    text:
+      vi: Ba đuôi nối câu cần nhớ - -고 (và, rồi), -지만 (nhưng), -아서/어서 (rồi làm tiếp ở đó, với người/vật đó). Quá khứ chỉ đặt ở cuối câu, trừ -지만 (갔지만).
+  - type: explain
+    text:
+      vi: Trong tin nhắn, người Hàn hứa bằng -(으)ㄹ게요 (기다릴게요, 제가 살게요) và nói "không đi được" bằng 못 (못 가요). Nói về kế hoạch của người khác thì dùng -(으)ㄹ 거예요.
+  - type: deep_explain
+    text:
+      vi: Nhật ký thật của người Hàn thường viết bằng đuôi -다 (갔다, 먹었다); ở trình độ này bạn viết bằng 해요체 vẫn hoàn toàn tự nhiên và lịch sự. Tin nhắn thì ngắn, hay bỏ chủ ngữ và trợ từ (밥 먹으러 가요), nhưng đuôi 요 vẫn giữ khi nhắn cho người chưa thân.
+  - type: example
+    target: 10월 12일 일요일. 어제는 토요일이었어요. 아침에 일찍 일어나서 방을 청소했어요. 그리고 오후에 친구를 만나러 카페에 갔어요.
+    target_lang: ko
+    translation:
+      vi: Chủ nhật, ngày 12 tháng 10. Hôm qua là thứ Bảy. Buổi sáng tôi dậy sớm rồi dọn phòng. Sau đó, buổi chiều tôi đến quán cà phê gặp bạn.
+    note:
+      vi: 일어나서 - dậy rồi làm tiếp; 만나러 카페에 갔어요 - đến quán để gặp bạn.
+  - type: example
+    target: 카페에서 커피를 마시고 같이 영화를 봤어요. 영화는 길었지만 정말 재미있었어요.
+    target_lang: ko
+    translation:
+      vi: Ở quán, chúng tôi uống cà phê rồi cùng đi xem phim. Phim dài nhưng thật sự rất hay.
+    note:
+      vi: 마시고 nối hai việc; 길었지만 giữ quá khứ trước -지만.
+  - type: example
+    target: 오늘은 집에서 쉬었어요. 다음 주에 시험이 있어요. 월요일에 도서관에 공부하러 갈 거예요.
+    target_lang: ko
+    translation:
+      vi: Hôm nay tôi nghỉ ở nhà. Tuần sau tôi có bài thi. Thứ Hai tôi sẽ đến thư viện học bài.
+    note:
+      vi: Đoạn cuối chuyển sang kế hoạch - 갈 거예요.
+  - type: example
+    target: '민수: 지금 뭐 하고 있어요? / 나: 집에서 숙제하고 있어요. / 민수: 저녁에 같이 밥 먹으러 가요. / 나: 미안해요. 오늘은 시간이 없어요. 내일은 어때요? 제가 살게요. / 민수: 좋아요! 내일 여섯 시에 학교 앞에서 기다릴게요.'
+    target_lang: ko
+    translation:
+      vi: 'Minsu: Bây giờ bạn đang làm gì thế? / Tôi: Mình đang làm bài tập ở nhà. / Minsu: Tối nay đi ăn cơm cùng nhé. / Tôi: Xin lỗi nhé. Hôm nay mình không có thời gian. Mai thì sao? Để mình khao. / Minsu: Được đấy! Mai 6 giờ mình đợi ở trước cổng trường nhé.'
+    note:
+      vi: 하고 있어요 (đang), 먹으러 가요 (đi để ăn), 살게요 và 기다릴게요 (lời hứa của người nói).
+  - type: common_mistake
+    wrong: 영화를 정말 재미있었어요.
+    right: 영화가 정말 재미있었어요.
+    target_lang: ko
+    note:
+      vi: 재미있다 là tính từ, nên thứ "hay" đi với 이/가 (hoặc 은/는), không đi với 을/를.
+  - type: common_mistake
+    wrong: 민수 씨가 내일 학교 앞에서 기다릴게요.
+    right: 민수 씨가 내일 학교 앞에서 기다릴 거예요.
+    target_lang: ko
+    note:
+      vi: Kể lại lời hứa của người khác thì dùng -(으)ㄹ 거예요; -(으)ㄹ게요 chỉ dành cho chính người nói.
+  - type: common_mistake
+    wrong: 어제 친구를 만나러 카페에 가했어요.
+    right: 어제 친구를 만나러 카페에 갔어요.
+    target_lang: ko
+    note:
+      vi: Dù câu dài, quá khứ của 가다 vẫn là 갔어요 - không gắn 했어요 thay cho chữ "đã".
+  - type: common_mistake
+    wrong: 오늘은 시간이 없어요. 안 가요.
+    right: 오늘은 시간이 없어요. 못 가요.
+    target_lang: ko
+    note:
+      vi: Không có thời gian là hoàn cảnh không cho phép, nên dùng 못. 안 가요 nghe như bạn không muốn đi.
+  - type: summary
+    points:
+      - vi: Từ chỉ thời gian cho biết thì - 어제/지난주/아까 → -았/었어요; 내일/다음 주/이따가 → -(으)ㄹ 거예요, -(으)ㄹ게요.
+      - vi: -고 (và, rồi) · -지만 (nhưng, giữ quá khứ) · -아서/어서 (rồi làm tiếp ở đó, không gắn quá khứ).
+      - vi: -(으)러 가요/와요 - đi để; 못 - không thể; -고 있어요 - đang.
+      - vi: 일기 nhật ký · 문자 tin nhắn · 재미있다 thú vị, hay.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:pf-review-mcq-diary-first
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-aseo-sequence
+    prompt:
+      stem: 'Đọc nhật ký: "어제는 토요일이었어요. 아침에 일찍 일어나서 방을 청소했어요. 그리고 오후에 친구를 만나러 카페에 갔어요." Sáng thứ Bảy người viết đã làm gì?'
+      stem_lang: vi
+      options:
+        - { id: h2v, text: Dậy sớm rồi dọn phòng., lang: vi }
+        - { id: m5q, text: Đến quán cà phê gặp bạn., lang: vi }
+        - { id: z8d, text: Ngủ đến trưa., lang: vi }
+        - { id: c4j, text: Dọn phòng cùng bạn., lang: vi }
+    answer:
+      correct_option_id: h2v
+    explanation:
+      vi: 아침에 (buổi sáng) 일찍 일어나서 방을 청소했어요 - dậy sớm rồi dọn phòng. Gặp bạn ở quán là việc 오후에 (buổi chiều).
+    display_answer: Dậy sớm rồi dọn phòng.
+
+  - key: ko:exercise:pf-review-listen-movie
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:jaemiitda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 영화는 길었지만 정말 재미있었어요.
+      options:
+        - { id: s7p, text: Phim dài nhưng thật sự rất hay., lang: vi }
+        - { id: a3w, text: Phim ngắn và rất hay., lang: vi }
+        - { id: o9f, text: Phim dài và chán., lang: vi }
+        - { id: n6b, text: Phim dài nhưng sẽ rất hay., lang: vi }
+    answer:
+      correct_option_id: s7p
+    explanation:
+      vi: 길었지만 là "đã dài nhưng" (-지만 = nhưng), 재미있었어요 là "đã rất hay" - quá khứ, không phải "sẽ".
+    display_answer: Phim dài nhưng thật sự rất hay.
+
+  - key: ko:exercise:pf-review-mcq-reply-now
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-go-isseoyo
+    prompt:
+      stem: 'Minsu nhắn: "지금 뭐 하고 있어요?". Bạn đang làm bài tập ở nhà. Bạn trả lời thế nào?'
+      stem_lang: vi
+      options:
+        - { id: e5x, text: 집에서 숙제하고 있어요., lang: ko }
+        - { id: r1k, text: 집에서 숙제할게요., lang: ko }
+        - { id: d7m, text: 어제 숙제했어요., lang: ko }
+        - { id: y2t, text: 집에서 숙제하러 가요., lang: ko }
+    answer:
+      correct_option_id: e5x
+    explanation:
+      vi: Câu hỏi dùng -고 있어요 (đang làm gì), nên trả lời 숙제하고 있어요. 숙제할게요 là lời hứa sẽ làm; 숙제하러 가요 là "đi để làm bài tập".
+    display_answer: 집에서 숙제하고 있어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:pf-review-fill-diary
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-past-tense
+    prompt:
+      template: "Sáng tôi dậy sớm rồi dọn phòng. Phim thật sự rất hay. - 아침에 일찍 {{b1}} 방을 청소했어요. 영화가 정말 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [일어나서, 일어나고]
+        b2: [재미있었어요]
+    known_wrong:
+      - answer: 일어났어서
+        feedback_vi: Không gắn quá khứ vào -아서. Quá khứ đã có ở 청소했어요 - 일어나서.
+        error_tag: aseo_past
+      - answer: 재미있어요
+        feedback_vi: Nhật ký kể chuyện hôm qua nên dùng quá khứ - 재미있었어요.
+        error_tag: tense_past
+      - answer: 재미있했어요
+        feedback_vi: 재미있다 không có 하다. Quá khứ là 재미있었어요.
+        error_tag: past_haesseoyo_overuse
+    explanation:
+      vi: 일어나요 → 일어나서 (dậy rồi làm tiếp); 일어나고 cũng được. 재미있다 + 었어요 → 재미있었어요, vì phim đã xem xong.
+    display_answer: 아침에 일찍 일어나서 방을 청소했어요. 영화가 정말 재미있었어요.
+
+  - key: ko:exercise:pf-review-translate-diary-tonight
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ilgi
+    prompt:
+      source_text: Tối nay tôi sẽ viết nhật ký.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 오늘 저녁에 일기를 쓸 거예요.
+        - 저는 오늘 저녁에 일기를 쓸 거예요.
+        - 전 오늘 저녁에 일기를 쓸 거예요.
+        - 오늘 밤에 일기를 쓸 거예요.
+        - 저녁에 일기를 쓸 거예요.
+        - 오늘 저녁에 일기 쓸 거예요.
+    known_wrong:
+      - answer: 오늘 저녁에 일기를 할 거예요.
+        feedback_vi: '"Viết nhật ký" dùng 쓰다 - 일기를 쓸 거예요.'
+        error_tag: collocation
+      - answer: 오늘 저녁에 일기를 쓰을 거예요.
+        feedback_vi: 쓰 không có patchim nên chỉ thêm ㄹ - 쓸 거예요.
+        error_tag: verb_conjugation
+      - answer: 오늘 저녁에 일기를 썼어요.
+        feedback_vi: 썼어요 là quá khứ. "Sẽ viết" là 쓸 거예요.
+        error_tag: tense_future
+      - answer: oneul jeonyeoge ilgireul sseul geoyeyo
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: 쓰다 + ㄹ 거예요 → 쓸 거예요 (kế hoạch). "Tối nay" là 오늘 저녁에 (hoặc 오늘 밤에).
+    display_answer: 오늘 저녁에 일기를 쓸 거예요.
+
+  - key: ko:exercise:pf-review-fill-treat
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eulgeyo
+    prompt:
+      template: "Mai thì sao? Để mình khao. - 내일은 어때요? 제가 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [살게요]
+    known_wrong:
+      - answer: 살께요
+        feedback_vi: Đọc [살께요] nhưng viết 살게요.
+        error_tag: spelling_geyo
+      - answer: 사을게요
+        feedback_vi: 사 không có patchim nên chỉ thêm ㄹ게요 - 살게요.
+        error_tag: verb_conjugation
+      - answer: 살 거예요
+        feedback_vi: Đúng ngữ pháp nhưng nghe như thông báo kế hoạch. Đề nghị khao bạn là lời hứa - 살게요.
+        error_tag: geyo_vs_geoyeyo
+    explanation:
+      vi: 제가 살게요 nghĩa đen là "tôi sẽ mua", dùng khi mời/khao - một lời hứa với người nghe, nên dùng -(으)ㄹ게요.
+    display_answer: 내일은 어때요? 제가 살게요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:pf-review-mcq-message-why
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:munja
+    prompt:
+      stem: 'Đọc tin nhắn: "민수: 저녁에 같이 밥 먹으러 가요. / 나: 미안해요. 오늘은 시간이 없어요. 내일은 어때요? / 민수: 좋아요! 내일 여섯 시에 학교 앞에서 기다릴게요." Câu nào đúng với tin nhắn?'
+      stem_lang: vi
+      options:
+        - { id: g8r, text: Hôm nay "tôi" không có thời gian nên hẹn ngày mai., lang: vi }
+        - { id: l1y, text: Tối nay hai người đi ăn cùng nhau., lang: vi }
+        - { id: u6c, text: Ngày mai "tôi" sẽ đợi Minsu trước cổng trường., lang: vi }
+        - { id: b9h, text: Minsu không muốn đi ăn., lang: vi }
+    answer:
+      correct_option_id: g8r
+    explanation:
+      vi: '"Tôi" nói 오늘은 시간이 없어요 rồi đề nghị 내일은 어때요? Người hứa đợi là Minsu - 기다릴게요 là lời hứa của chính người nhắn (Minsu).'
+    display_answer: Hôm nay "tôi" không có thời gian nên hẹn ngày mai.
+
+  - key: ko:exercise:pf-review-translate-weekend
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-eureo-gada
+    prompt:
+      source_text: 주말에 친구를 만나러 카페에 갔어요. 그리고 같이 영화를 봤어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cuối tuần tôi đã đến quán cà phê gặp bạn. Rồi chúng tôi cùng xem phim.
+        - Cuối tuần tôi đã đến quán cà phê để gặp bạn. Rồi chúng tôi cùng xem phim.
+        - Cuối tuần tôi đến quán cà phê gặp bạn. Sau đó chúng tôi cùng xem phim.
+        - Cuối tuần tôi đã đến quán cà phê để gặp bạn. Sau đó chúng tôi đã cùng xem phim.
+        - Cuối tuần tôi đã đi cà phê gặp bạn. Rồi chúng tôi cùng xem phim.
+        - Cuối tuần tôi đã đến quán cà phê gặp bạn, rồi cùng nhau xem phim.
+        - Cuối tuần tôi đã đến quán cà phê để gặp bạn. Và chúng tôi đã cùng xem phim.
+        - Cuối tuần tôi đã đến quán cà phê gặp bạn. Rồi cùng bạn xem phim.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cuối tuần tôi sẽ đến quán cà phê gặp bạn. Rồi chúng tôi cùng xem phim.
+        feedback_vi: 갔어요 và 봤어요 là quá khứ, không phải "sẽ".
+        error_tag: tense_past
+      - answer: Cuối tuần bạn tôi đến quán cà phê gặp tôi. Rồi chúng tôi cùng xem phim.
+        feedback_vi: 친구를 có 를 - bạn là người được gặp, người đi là "tôi".
+        error_tag: object_particle
+    explanation:
+      vi: 만나러 카페에 갔어요 là "đã đến quán cà phê để gặp", 그리고 là "rồi / và", 같이 영화를 봤어요 là "đã cùng xem phim".
+    display_answer: Cuối tuần tôi đã đến quán cà phê để gặp bạn. Rồi chúng tôi cùng xem phim.
+
+  - key: ko:exercise:pf-review-order-library
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eul-geoyeyo
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Hàn: "Ngày mai tôi sẽ đến thư viện để học."'
+      tokens:
+        - { id: t-gal-geoyeyo, text: 갈 거예요 }
+        - { id: t-gongbuhareo, text: 공부하러 }
+        - { id: t-doseogwaneseo, text: 도서관에서 }
+        - { id: t-naeil, text: 내일 }
+        - { id: t-doseogwane, text: 도서관에 }
+        - { id: t-gongbuhaereo, text: 공부해러 }
+    answer:
+      orders:
+        - [t-naeil, t-doseogwane, t-gongbuhareo, t-gal-geoyeyo]
+        - [t-naeil, t-gongbuhareo, t-doseogwane, t-gal-geoyeyo]
+    explanation:
+      vi: Nơi đến dùng 에 (도서관에), mục đích 공부하러 gắn -러 vào thân 공부하, và kế hoạch 갈 거예요 đứng cuối. Nơi đến và mục đích có thể đổi chỗ cho nhau.
+    display_answer: 내일 도서관에 공부하러 갈 거예요.
+
+  - key: ko:exercise:pf-review-translate-couldnt-meet
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-mot
+    prompt:
+      source_text: Tuần trước tôi không gặp bạn được.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 지난주에 친구를 못 만났어요.
+        - 저는 지난주에 친구를 못 만났어요.
+        - 전 지난주에 친구를 못 만났어요.
+        - 지난주에 저는 친구를 못 만났어요.
+        - 지난주에 친구 못 만났어요.
+        - 지난주에 친구를 만나지 못했어요.
+    known_wrong:
+      - answer: 지난주에 친구를 안 만났어요.
+        feedback_vi: 안 만났어요 là "không gặp" (tự chọn không gặp). "Không gặp được" là 못 만났어요.
+        error_tag: mot_vs_an
+      - answer: 지난주에 친구를 못 만나요.
+        feedback_vi: Tuần trước là quá khứ - 못 만났어요.
+        error_tag: tense_past
+      - answer: 지난주에 못 친구를 만났어요.
+        feedback_vi: 못 đứng ngay trước động từ - 친구를 못 만났어요.
+        error_tag: mot_position
+      - answer: 지난주에 친구를 못 만나했어요.
+        feedback_vi: 했어요 không gắn vào mọi động từ. 만나다 → 만났어요.
+        error_tag: past_haesseoyo_overuse
+    explanation:
+      vi: '"Không ... được" là 못, đứng ngay trước động từ; tuần trước là quá khứ nên 만났어요 - 못 만났어요 [몬 만나써요].'
+    display_answer: 지난주에 친구를 못 만났어요.
+
+  - key: ko:exercise:pf-review-mcq-lan-comes
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eulgeyo
+    prompt:
+      stem: 'Bạn nhắn cho Minsu: "Ngày mai Lan cũng sẽ đến." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: x4n, text: 내일 란 씨도 올 거예요., lang: ko }
+        - { id: j8s, text: 내일 란 씨도 올게요., lang: ko }
+        - { id: q3e, text: 내일 란 씨도 왔어요., lang: ko }
+        - { id: w6a, text: 내일 란 씨도 오러 가요., lang: ko }
+    answer:
+      correct_option_id: x4n
+    explanation:
+      vi: Nói về người khác (Lan) thì dùng -(으)ㄹ 거예요, không dùng -(으)ㄹ게요. 왔어요 là quá khứ; -러 không gắn vào chính 오다.
+    display_answer: 내일 란 씨도 올 거예요.

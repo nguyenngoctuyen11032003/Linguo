@@ -1,0 +1,403 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:hobbies-appointments-review
+order_index: 5
+level: topik2
+title:
+  vi: Ôn tập - Tin nhắn đổi lịch hẹn
+objectives:
+  - vi: Đọc hiểu một đoạn tin nhắn rủ đi chơi, đổi hẹn vì thời tiết và chốt lịch mới.
+  - vi: Phối hợp sở thích, thời tiết và các đuôi rủ rê -(으)ㄹ까요?, -(으)ㄹ래요?, -(으)ㅂ시다 trong một cuộc trò chuyện.
+  - vi: Tránh các lỗi quen thuộc - 덥어요, 것을 좋아요, đáp -(으)ㄹ까요 bằng -(으)ㄹ까요, sai trật tự giờ + nơi chốn.
+estimated_minutes: 16
+skills: [reading, writing, grammar, speaking]
+prerequisites: [ko:lesson:making-plans]
+items:
+  - item: ko:item:munja
+    role: reuse
+  - item: ko:item:yaksok-bakkuda
+  - item: ko:item:sigan-isseoyo
+    role: reuse
+  - item: ko:item:gram-eullaeyo
+    role: reuse
+  - item: ko:item:gram-eulkkayo
+    role: reuse
+  - item: ko:item:gram-eupsida
+    role: reuse
+  - item: ko:item:gram-time-place-order
+    role: reuse
+  - item: ko:item:yaksok
+    role: reuse
+  - item: ko:item:deungsan
+    role: reuse
+  - item: ko:item:biga-oda
+    role: reuse
+  - item: ko:item:malgda
+    role: reuse
+  - item: ko:item:nalssiga-eottaeyo
+    role: reuse
+  - item: ko:item:gram-neun-geot-joahada
+    role: reuse
+  - item: ko:item:gram-eul-jul-alda
+    role: reuse
+  - item: ko:item:gram-a-eo-boda
+    role: reuse
+  - item: ko:item:gram-giro-hada
+    role: reuse
+  - item: ko:item:chupda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài ôn này, bạn đọc và viết được tin nhắn rủ bạn đi leo núi, đổi hẹn khi trời mưa và chốt lại giờ, chỗ gặp mới.
+  - type: explain
+    text:
+      vi: 'Tuấn (투안) rủ Jimin (지민) đi leo núi bằng 문자 (tin nhắn). Hãy đọc ba đoạn tin nhắn bên dưới theo thứ tự - rủ và hẹn giờ, đổi hẹn vì mưa, chốt lịch mới.'
+  - type: explain
+    text:
+      vi: 'Một tin nhắn đổi hẹn lịch sự thường có bốn bước - xin lỗi (미안해요), nêu lý do (내일 비가 많이 와요), đề nghị đổi (약속을 바꿀까요?), gợi ý ngày mới (일요일은 어때요?). Người nhận đồng ý bằng 그래요 / 좋아요, không lặp lại 바꿀까요.'
+  - type: deep_explain
+    text:
+      vi: Tin nhắn giữa bạn bè mới quen vẫn dùng 해요체; câu ngắn, ít chủ ngữ, giống tiếng Việt khi nhắn tin. Khi chốt lịch, người Hàn hay nhắc lại đủ "giờ + nơi + động từ" để tránh nhầm - 일요일 10시에 학교 앞에서 만나요. Muốn kể lại cho người khác, bạn dùng -기로 했어요 - 일요일에 등산하기로 했어요.
+  - type: example
+    target: "투안: 지민 씨, 토요일에 시간 있어요? 같이 등산 갈래요? / 지민: 좋아요! 몇 시에 만날까요? / 투안: 아침 9시에 학교 앞에서 만나요."
+    target_lang: ko
+    translation:
+      vi: "Tuấn: Jimin ơi, thứ Bảy bạn rảnh không? Đi leo núi cùng nhé? / Jimin: Được đấy! Mấy giờ mình gặp? / Tuấn: 9 giờ sáng gặp ở trước trường nhé."
+    note:
+      vi: Phần 1 - rủ bằng -(으)ㄹ래요?, hỏi giờ bằng -(으)ㄹ까요?, chốt bằng giờ + 에, nơi + 에서.
+  - type: example
+    target: "지민: 투안 씨, 미안해요. 내일 비가 많이 와요. 약속을 바꿀까요? / 투안: 그래요. 그럼 일요일은 어때요?"
+    target_lang: ko
+    translation:
+      vi: "Jimin: Tuấn ơi, xin lỗi nhé. Mai mưa nhiều. Mình đổi lịch hẹn nhé? / Tuấn: Ừ. Vậy Chủ nhật thì sao?"
+    note:
+      vi: Phần 2 - đổi hẹn. Tuấn đáp bằng 그래요 rồi gợi ý ngày mới bằng 어때요?
+  - type: example
+    target: "지민: 일요일에는 맑아요. 그리고 안 추워요. 10시에 만납시다. / 투안: 좋아요. 저는 사진 찍는 걸 좋아해요. 산에서 같이 사진을 찍어 봐요!"
+    target_lang: ko
+    translation:
+      vi: "Jimin: Chủ nhật trời quang. Lại không lạnh. 10 giờ mình gặp nhau nhé. / Tuấn: Được. Mình thích chụp ảnh. Lên núi mình cùng thử chụp ảnh nhé!"
+    note:
+      vi: Phần 3 - chốt lịch bằng -(으)ㅂ시다, nói sở thích bằng -는 걸 좋아해요, rủ thử bằng -아/어 봐요.
+  - type: example
+    target: 지민 씨하고 일요일에 등산하기로 했어요.
+    target_lang: ko
+    translation:
+      vi: Tôi đã hẹn với Jimin Chủ nhật đi leo núi.
+    note:
+      vi: Kể lại kết quả cuộc trò chuyện bằng -기로 했어요.
+  - type: common_mistake
+    wrong: "A: 약속을 바꿀까요? B: 네, 바꿀까요."
+    right: "A: 약속을 바꿀까요? B: 그래요. 그럼 일요일은 어때요?"
+    target_lang: ko
+    note:
+      vi: Lặp lại -(으)ㄹ까요 khiến câu trả lời thành câu hỏi. Đồng ý bằng 그래요 / 좋아요, rồi mới gợi ý thêm.
+  - type: common_mistake
+    wrong: 저는 사진 찍는 것을 좋아요.
+    right: 저는 사진 찍는 것을 좋아해요. / 저는 사진 찍는 것이 좋아요.
+    target_lang: ko
+    note:
+      vi: 것을 đi với 좋아해요, 것이 đi với 좋아요. Đây là lỗi người Việt gặp nhiều nhất trong unit này.
+  - type: common_mistake
+    wrong: 만나요 10시 학교 앞에.
+    right: 10시에 학교 앞에서 만나요.
+    target_lang: ko
+    note:
+      vi: Động từ luôn ở cuối; giờ cần 에, nơi diễn ra việc gặp cần 에서.
+  - type: common_mistake
+    wrong: 오늘은 너무 덥어요.
+    right: 오늘은 너무 더워요.
+    target_lang: ko
+    note:
+      vi: 덥다, 춥다 bất quy tắc ㅂ - 더워요, 추워요.
+  - type: summary
+    points:
+      - vi: Rủ - 시간 있어요? · V-(으)ㄹ래요? · V-(으)ㄹ까요?; chốt - V-(으)ㅂ시다, đồng ý - 좋아요 / 그래요.
+      - vi: Đổi hẹn - 미안해요 + lý do + 약속을 바꿀까요? + N은 어때요?
+      - vi: Thời gian + 에 → nơi chốn + 에서 → động từ; kể lại - V-기로 했어요.
+      - vi: V-는 것을 좋아해요 · V-(으)ㄹ 줄 알아요/몰라요 · V-아/어 보다 · 더워요/추워요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:hobbies-appointments-review-listen-change
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:yaksok-bakkuda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 내일 비가 많이 와요. 약속을 바꿀까요?
+      options:
+        - { id: h4w, text: Mai mưa nhiều. Mình đổi lịch hẹn nhé?, lang: vi }
+        - { id: b8e, text: Mai tuyết rơi nhiều. Mình đổi lịch hẹn nhé?, lang: vi }
+        - { id: q2m, text: Mai mưa nhiều. Mình hủy hẹn luôn nhé?, lang: vi }
+        - { id: x6t, text: Mai trời đẹp. Mình gặp nhau nhé?, lang: vi }
+    answer:
+      correct_option_id: h4w
+    explanation:
+      vi: 비가 와요 là mưa (tuyết là 눈), 약속을 바꿀까요? là "đổi lịch hẹn nhé?" - đổi chứ không phải hủy (취소).
+    display_answer: Mai mưa nhiều. Mình đổi lịch hẹn nhé?
+
+  - key: ko:exercise:hobbies-appointments-review-mcq-reading-why
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:biga-oda
+    prompt:
+      stem: "Đọc tin nhắn - 지민: 투안 씨, 미안해요. 내일 비가 많이 와요. 약속을 바꿀까요? Vì sao Jimin muốn đổi hẹn?"
+      stem_lang: vi
+      options:
+        - { id: r5c, text: Vì ngày mai mưa nhiều., lang: vi }
+        - { id: m9y, text: Vì Jimin không biết leo núi., lang: vi }
+        - { id: d3o, text: Vì Jimin có hẹn khác., lang: vi }
+        - { id: k1v, text: Vì ngày mai trời quá nóng., lang: vi }
+    answer:
+      correct_option_id: r5c
+    explanation:
+      vi: Lý do nằm ở câu 내일 비가 많이 와요 (mai mưa nhiều). Tin nhắn không nói đến kỹ năng leo núi, hẹn khác hay trời nóng (더워요).
+    display_answer: Vì ngày mai mưa nhiều.
+
+  - key: ko:exercise:hobbies-appointments-review-mcq-munja
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:munja
+    prompt:
+      stem: "Từ 문자 trong câu 이따가 문자 보낼게요 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: e7s, text: tin nhắn, lang: vi }
+        - { id: o4g, text: điện thoại, lang: vi }
+        - { id: z8k, text: cuộc hẹn, lang: vi }
+        - { id: f2a, text: ảnh chụp, lang: vi }
+    answer:
+      correct_option_id: e7s
+    explanation:
+      vi: 문자 là tin nhắn điện thoại (đọc [문짜]); 문자 보내다 là gửi tin nhắn. Điện thoại là 전화, cuộc hẹn là 약속, ảnh là 사진.
+    display_answer: tin nhắn
+
+  - key: ko:exercise:hobbies-appointments-review-fill-eottaeyo
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:yaksok-bakkuda
+    prompt:
+      template: "그래요. 그럼 일요일은 {{b1}}?"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Ừ. Vậy Chủ nhật thì sao?"
+        - "Gợi ý: từ hỏi \"thế nào\" bạn đã dùng với 날씨가 ___?"
+    answer:
+      blanks:
+        b1: [어때요]
+    known_wrong:
+      - answer: 뭐예요
+        feedback_vi: 뭐예요 là "là gì". Gợi ý một ngày mới thì hỏi 어때요? (thế nào).
+        error_tag: eottaeyo_mwoyeyo
+      - answer: 어떼요
+        feedback_vi: Viết là 어때요 (ㅐ), dù ㅐ và ㅔ đọc gần giống nhau.
+        error_tag: spelling_ae_e
+    explanation:
+      vi: N은 어때요? là cách gợi ý "N thì sao?" - rất hay dùng khi đổi lịch hẹn.
+    display_answer: 그래요. 그럼 일요일은 어때요?
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:hobbies-appointments-review-translate-reschedule
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:yaksok-bakkuda
+    prompt:
+      source_text: Mai trời mưa. Mình đổi lịch hẹn nhé?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 내일 비가 와요. 약속을 바꿀까요?
+        - 내일 비가 와요. 약속 바꿀까요?
+        - 내일은 비가 와요. 약속을 바꿀까요?
+        - 내일은 비가 와요. 약속 바꿀까요?
+        - 내일 비가 와요. 우리 약속을 바꿀까요?
+        - 내일 비가 와요. 약속을 바꿀래요?
+        - 내일 비가 와요. 약속 시간을 바꿀까요?
+    known_wrong:
+      - answer: 내일 비가 와요. 약속을 바꿔까요?
+        feedback_vi: Trước 까요 dùng dạng -(으)ㄹ - 바꾸 → 바꿀까요.
+        error_tag: eulkkayo_form
+      - answer: 내일 비가 해요. 약속을 바꿀까요?
+        feedback_vi: Mưa dùng 와요 - 비가 와요.
+        error_tag: weather_verb
+      - answer: 내일 비가 와요. 약속을 고칠까요?
+        feedback_vi: 고치다 là "sửa (đồ vật)". Đổi lịch hẹn là 약속을 바꾸다.
+        error_tag: vocab_meaning
+    explanation:
+      vi: Mưa - 비가 와요; đổi hẹn - 약속을 바꾸다; rủ "mình… nhé?" - 바꿀까요? (바꾸 không có patchim + ㄹ까요).
+    display_answer: 내일 비가 와요. 약속을 바꿀까요?
+
+  - key: ko:exercise:hobbies-appointments-review-fill-photo-hot
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-neun-geot-joahada
+    prompt:
+      template: "(Tôi thích chụp ảnh.) 저는 사진 {{b1}} 걸 좋아해요. (Nhưng hôm nay nóng quá.) 그런데 오늘은 너무 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [찍는]
+        b2: [더워요]
+    known_wrong:
+      - answer: 찍기
+        feedback_vi: Trước 걸 (것을) cần V-는 - 찍는 걸. 찍기 dùng khi đứng một mình như danh từ.
+        error_tag: neun_geot_form
+      - answer: 덥어요
+        feedback_vi: 덥다 bất quy tắc ㅂ - 더워요.
+        error_tag: b_irregular
+      - answer: 찍어
+        feedback_vi: Trước 걸 dùng 찍는, không dùng 찍어.
+        error_tag: neun_geot_form
+    explanation:
+      vi: 찍다 → 찍는 걸 좋아해요 (thích chụp). 덥다 → 더워요 (ㅂ đổi thành 우).
+    display_answer: 저는 사진 찍는 걸 좋아해요. 그런데 오늘은 너무 더워요.
+
+  - key: ko:exercise:hobbies-appointments-review-translate-swim
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eul-jul-alda
+    prompt:
+      source_text: Bạn biết bơi không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 수영할 줄 알아요?
+        - 수영할 줄 아세요?
+        - 혹시 수영할 줄 알아요?
+        - 수영을 할 줄 알아요?
+        - 수영 할 줄 알아요?
+    known_wrong:
+      - answer: 수영할 줄 있어요?
+        feedback_vi: Cấu trúc là -(으)ㄹ 줄 알아요, không dùng 있어요.
+        error_tag: jul_alda_form
+      - answer: 수영하는 줄 알아요?
+        feedback_vi: '"Biết làm" dùng -(으)ㄹ 줄 - 수영할 줄.'
+        error_tag: jul_alda_form
+      - answer: 수영해 봤어요?
+        feedback_vi: Câu này là "đã thử bơi chưa?". "Biết bơi" là 수영할 줄 알아요.
+        error_tag: jul_alda_boda
+    explanation:
+      vi: Hỏi kỹ năng - V-(으)ㄹ 줄 알아요?; 수영하다 → 수영할 줄. Câu hỏi trực tiếp không cần chủ ngữ "bạn".
+    display_answer: 수영할 줄 알아요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:hobbies-appointments-review-mcq-reply-change
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eulkkayo
+    prompt:
+      stem: "Jimin nhắn: 약속을 바꿀까요? Bạn đồng ý và muốn gợi ý Chủ nhật. Bạn nhắn lại thế nào?"
+      stem_lang: vi
+      options:
+        - { id: s3p, text: "그래요. 그럼 일요일은 어때요?", lang: ko }
+        - { id: l8f, text: "네, 바꿀까요. 일요일에 바꿀까요.", lang: ko }
+        - { id: w6z, text: "그래요. 그럼 일요일은 뭐예요?", lang: ko }
+        - { id: g1n, text: "아니요, 좋아요. 일요일이 어때요.", lang: ko }
+    answer:
+      correct_option_id: s3p
+    explanation:
+      vi: Đồng ý bằng 그래요, rồi gợi ý bằng N은 어때요?. Lặp lại 바꿀까요 biến câu trả lời thành câu hỏi; 뭐예요 là "là gì", còn 아니요 + 좋아요 mâu thuẫn.
+    display_answer: "그래요. 그럼 일요일은 어때요?"
+
+  - key: ko:exercise:hobbies-appointments-review-mcq-weather-reply
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:chupda
+    prompt:
+      stem: "Tuấn hỏi: 일요일에 날씨가 어때요? Theo dự báo, Chủ nhật trời quang và không lạnh. Jimin nên trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: c6x, text: 맑아요. 그리고 안 추워요., lang: ko }
+        - { id: u2d, text: 맑아요. 그리고 안 춥어요., lang: ko }
+        - { id: j7r, text: 흐려요. 그리고 비가 와요., lang: ko }
+        - { id: v4b, text: 맑아요. 그리고 바람이 와요., lang: ko }
+    answer:
+      correct_option_id: c6x
+    explanation:
+      vi: Trời quang là 맑아요, không lạnh là 안 추워요 (춥다 bất quy tắc ㅂ, không phải 춥어요). 흐려요, 비가 와요 sai thông tin; gió dùng 불어요, không dùng 와요.
+    display_answer: 맑아요. 그리고 안 추워요.
+
+  - key: ko:exercise:hobbies-appointments-review-wb-confirm
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eupsida
+    prompt:
+      instruction: "Sắp xếp thành tin nhắn tiếng Hàn: \"Chủ nhật 10 giờ chúng ta gặp ở trước trường nhé.\""
+      tokens:
+        - { id: c4, text: 앞에서 }
+        - { id: c6, text: 만나읍시다 }
+        - { id: c1, text: 일요일 }
+        - { id: c5, text: 만납시다 }
+        - { id: c3, text: 학교 }
+        - { id: c7, text: 앞에 }
+        - { id: c2, text: 10시에 }
+    answer:
+      orders:
+        - [c1, c2, c3, c4, c5]
+        - [c3, c4, c1, c2, c5]
+    explanation:
+      vi: Giờ + 에, nơi gặp + 에서, động từ cuối. 만나다 không có patchim nên là 만납시다 (không phải 만나읍시다); 앞에 thiếu 서 nên sai với hành động gặp.
+    display_answer: 일요일 10시에 학교 앞에서 만납시다.
+
+  - key: ko:exercise:hobbies-appointments-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-giro-hada
+    prompt:
+      source_text: 토요일에 친구하고 등산하기로 했어요. 그런데 비가 와요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi đã hẹn với bạn đi leo núi vào thứ Bảy. Nhưng trời mưa.
+        - Tôi đã hẹn với bạn thứ Bảy đi leo núi. Nhưng trời mưa.
+        - Thứ Bảy tôi đã hẹn đi leo núi với bạn. Nhưng trời mưa.
+        - Tôi đã hẹn bạn đi leo núi vào thứ Bảy. Nhưng trời mưa.
+        - Tôi hẹn với bạn thứ Bảy đi leo núi. Nhưng trời mưa.
+        - Tôi đã quyết định đi leo núi với bạn vào thứ Bảy. Nhưng trời mưa.
+        - Tôi đã hẹn với bạn đi leo núi vào thứ Bảy, nhưng trời mưa.
+        - Thứ Bảy tôi hẹn đi leo núi với bạn. Nhưng trời mưa.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đã đi leo núi với bạn vào thứ Bảy. Nhưng trời mưa.
+        feedback_vi: -기로 했어요 là "đã hẹn/quyết định sẽ làm", chưa đi.
+        error_tag: giro_hada_meaning
+      - answer: Tôi đã hẹn với bạn đi leo núi vào thứ Bảy. Nhưng trời có tuyết.
+        feedback_vi: 비가 와요 là trời mưa; tuyết là 눈이 와요.
+        error_tag: weather_word
+    explanation:
+      vi: 등산하기로 했어요 = đã hẹn (quyết định) đi leo núi, việc chưa diễn ra; 그런데 = nhưng; 비가 와요 = trời mưa.
+    display_answer: Tôi đã hẹn với bạn đi leo núi vào thứ Bảy. Nhưng trời mưa.

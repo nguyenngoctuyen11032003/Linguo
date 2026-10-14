@@ -1,0 +1,435 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:stories-news-news-relative-clauses
+order_index: 4
+level: b1
+title:
+  vi: Đọc tin tức - từ vựng báo chí và mệnh đề who/which/that/where
+objectives:
+  - vi: Hiểu và dùng từ vựng tin tức - headline, article, report, according to, accident, injured, witness, journalist.
+  - vi: Dùng mệnh đề quan hệ xác định với who, which, that, where để nói rõ người, vật, nơi nào.
+  - vi: Dùng happen đúng - không bao giờ nói was happened.
+estimated_minutes: 15
+skills: [reading, grammar, vocabulary]
+prerequisites: [en:lesson:stories-news-telling-stories]
+items:
+  - item: en:item:relative-who-which-that
+  - item: en:item:relative-where
+  - item: en:item:headline
+  - item: en:item:news-article
+  - item: en:item:report
+  - item: en:item:according-to
+  - item: en:item:happen
+  - item: en:item:accident
+  - item: en:item:injured
+  - item: en:item:witness
+  - item: en:item:journalist
+  - item: en:item:street
+    role: reuse
+  - item: en:item:traffic-lights
+    role: reuse
+  - item: en:item:wallet
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu một bản tin ngắn bằng tiếng Anh và kể lại tin đó, nói rõ ai, cái gì, ở đâu bằng mệnh đề quan hệ.
+  - type: explain
+    text:
+      vi: "Mệnh đề quan hệ xác định đứng ngay sau danh từ để nói rõ đó là người/vật nào: who (hoặc that) cho người, which (hoặc that) cho vật. The man who found my wallet giống \"người đàn ông (mà) đã nhặt được ví của mình\"."
+  - type: explain
+    text:
+      vi: "Who/which/that đã thay cho chủ ngữ, nên không thêm he, she, it nữa. Tiếng Việt hay lặp lại chủ ngữ (\"người đàn ông mà anh ta sống cạnh nhà\"), vì vậy người Việt dễ nói sai the man who he lives next door."
+  - type: explain
+    text:
+      vi: "Where dùng sau danh từ chỉ nơi chốn, theo sau là chủ ngữ + động từ: the street where the accident happened. Happen là nội động từ nên không có bị động - chỉ nói happened, không nói was happened."
+  - type: deep_explain
+    text:
+      vi: "Khi who/which/that làm tân ngữ (sau nó là một chủ ngữ khác), bạn có thể bỏ đi: the article (that) I read. Tít báo có ngữ pháp riêng - bỏ mạo từ, dùng hiện tại đơn cho việc đã xảy ra (Bus Hits Tree); khi kể lại, hãy chuyển về câu đầy đủ ở quá khứ. According to dùng cho nguồn tin của người khác (according to the police), không nói according to me."
+  - type: example
+    target: According to the police, the accident happened at about 7 a.m.
+    target_lang: en
+    translation:
+      vi: Theo cảnh sát, vụ tai nạn xảy ra vào khoảng 7 giờ sáng.
+    note:
+      vi: According to + nguồn tin; happened không có was.
+  - type: example
+    target: Three people were injured, and a witness called the police.
+    target_lang: en
+    translation:
+      vi: Ba người bị thương, và một nhân chứng đã gọi cảnh sát.
+    note:
+      vi: Were injured là "bị thương" (tính từ injured sau be).
+  - type: example
+    target: The journalist who wrote the article spoke to people who saw the accident.
+    target_lang: en
+    translation:
+      vi: Nhà báo viết bài báo đó đã nói chuyện với những người chứng kiến vụ tai nạn.
+    note:
+      vi: Hai mệnh đề who, mỗi mệnh đề nói rõ "nhà báo nào", "những người nào".
+  - type: example
+    target: That's the street where the accident happened.
+    target_lang: en
+    translation:
+      vi: Đó là con phố nơi xảy ra vụ tai nạn.
+    note:
+      vi: Where + chủ ngữ (the accident) + động từ (happened).
+  - type: common_mistake
+    wrong: The man who he lives next door is a journalist.
+    right: The man who lives next door is a journalist.
+    target_lang: en
+    note:
+      vi: Who đã là chủ ngữ của lives, không thêm he.
+  - type: common_mistake
+    wrong: The accident was happened on the bridge.
+    right: The accident happened on the bridge.
+    target_lang: en
+    note:
+      vi: Happen không có dạng bị động, nên không dùng was trước happened.
+  - type: common_mistake
+    wrong: This is the hospital where treats injured people.
+    right: This is the hospital which treats injured people.
+    target_lang: en
+    note:
+      vi: Sau chỗ trống là động từ ngay (treats), nên cần which/that làm chủ ngữ; where phải có chủ ngữ riêng đi sau.
+  - type: summary
+    points:
+      - vi: Who/that cho người, which/that cho vật, where cho nơi chốn.
+      - vi: Không lặp lại chủ ngữ sau who/which/that - the man who lives…, không phải who he lives.
+      - vi: Where + chủ ngữ + động từ; nếu sau đó là động từ ngay thì dùng which/that.
+      - vi: Happen không có bị động - happened, không bao giờ was happened.
+      - vi: Từ tin tức - headline, article, report, according to, accident, injured, witness, journalist.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:stories-news-nr-listen-police
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:according-to
+    prompt:
+      audio_asset_id: null
+      fallback_text: According to the police, the accident happened at about 7 a.m.
+      options:
+        - { id: p3w, text: "Theo cảnh sát, vụ tai nạn xảy ra vào khoảng 7 giờ sáng.", lang: vi }
+        - { id: j8n, text: "Cảnh sát đến hiện trường vụ tai nạn lúc khoảng 7 giờ sáng.", lang: vi }
+        - { id: r6c, text: "Theo nhân chứng, vụ tai nạn xảy ra vào khoảng 7 giờ tối.", lang: vi }
+        - { id: v1x, text: "Cảnh sát gặp tai nạn vào khoảng 7 giờ sáng.", lang: vi }
+    answer:
+      correct_option_id: p3w
+    explanation:
+      vi: According to the police là "theo cảnh sát" - cảnh sát là nguồn tin, không phải người gặp tai nạn. 7 a.m. là buổi sáng, còn p.m. mới là chiều tối.
+    display_answer: "Theo cảnh sát, vụ tai nạn xảy ra vào khoảng 7 giờ sáng."
+
+  - key: en:exercise:stories-news-nr-mcq-who
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:relative-who-which-that
+    prompt:
+      stem: "Chọn đáp án đúng: The man ___ found my wallet was a taxi driver."
+      stem_lang: vi
+      options:
+        - { id: a9t, text: who, lang: en }
+        - { id: k4d, text: who he, lang: en }
+        - { id: e7m, text: which, lang: en }
+        - { id: n2s, text: where, lang: en }
+    answer:
+      correct_option_id: a9t
+    explanation:
+      vi: The man là người nên dùng who; who đã làm chủ ngữ của found nên không thêm he. Which dùng cho vật, where dùng cho nơi chốn.
+    display_answer: who
+
+  - key: en:exercise:stories-news-nr-mcq-where
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:relative-where
+    prompt:
+      stem: "Chọn đáp án đúng: That's the street ___ the accident happened."
+      stem_lang: vi
+      options:
+        - { id: u5h, text: where, lang: en }
+        - { id: g1b, text: which, lang: en }
+        - { id: o8z, text: who, lang: en }
+        - { id: i3q, text: where it, lang: en }
+    answer:
+      correct_option_id: u5h
+    explanation:
+      vi: The street là nơi chốn và sau chỗ trống có chủ ngữ riêng (the accident) + động từ (happened), nên dùng where. Which cần làm chủ ngữ hoặc tân ngữ; where it thừa chủ ngữ.
+    display_answer: where
+
+  - key: en:exercise:stories-news-nr-mcq-witness
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:witness
+    prompt:
+      stem: "Chọn từ đúng: A person who sees an accident or a crime and can tell the police about it is a ___."
+      stem_lang: vi
+      options:
+        - { id: f6r, text: witness, lang: en }
+        - { id: z2l, text: journalist, lang: en }
+        - { id: c8v, text: headline, lang: en }
+        - { id: m4e, text: report, lang: en }
+    answer:
+      correct_option_id: f6r
+    explanation:
+      vi: Người chứng kiến sự việc và kể lại cho cảnh sát là witness (nhân chứng). Journalist là nhà báo viết tin; headline là tít báo; report là bản tin.
+    display_answer: witness
+
+  - key: en:exercise:stories-news-nr-fill-happened-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:happen
+    prompt:
+      template: "The accident {{b1}} (happen) on the bridge, and three people {{b2}} (be) injured."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Vụ tai nạn xảy ra trên cầu, và ba người bị thương."
+        - "Gợi ý: happen không có dạng bị động; three people là số nhiều."
+    answer:
+      blanks:
+        b1: [happened]
+        b2: [were]
+    known_wrong:
+      - answer: was happened
+        feedback_vi: Happen không có bị động - chỉ dùng happened.
+        error_tag: happen_passive
+      - answer: was
+        feedback_vi: Three people là số nhiều nên dùng were.
+        error_tag: was_were_agreement
+      - answer: is happened
+        feedback_vi: Happen không có bị động, và câu kể chuyện đã qua nên dùng happened.
+        error_tag: happen_passive
+      - answer: happen
+        feedback_vi: Vụ tai nạn đã xảy ra nên dùng quá khứ happened.
+        error_tag: tense_present_for_past
+    explanation:
+      vi: Happen là nội động từ, không có bị động, nên chỉ dùng happened. Three people số nhiều đi với were - were injured.
+    display_answer: The accident happened on the bridge, and three people were injured.
+
+  - key: en:exercise:stories-news-nr-order-article
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:news-article
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Đây là bài báo mà mình đã kể với bạn.\""
+      tokens:
+        - { id: t-told, text: told }
+        - { id: t-article, text: article }
+        - { id: t-about, text: about }
+        - { id: t-this, text: This }
+        - { id: t-it, text: it }
+        - { id: t-that, text: that }
+        - { id: t-you, text: you }
+        - { id: t-is, text: is }
+        - { id: t-the, text: the }
+        - { id: t-i, text: I }
+    answer:
+      orders:
+        - [t-this, t-is, t-the, t-article, t-that, t-i, t-told, t-you, t-about]
+        - [t-this, t-is, t-the, t-article, t-i, t-told, t-you, t-about]
+    explanation:
+      vi: The article that I told you about - that nối mệnh đề với the article và có thể bỏ vì sau nó có chủ ngữ I. Không thêm it ở cuối, vì that đã thay cho the article.
+    display_answer: This is the article that I told you about.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:stories-news-nr-fill-journalist
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:journalist
+    prompt:
+      template: "My cousin is a journalist {{b1}} writes about sport. She works for a newspaper {{b2}} has an office in Hanoi."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [who, that]
+        b2: [which, that]
+    known_wrong:
+      - answer: who she
+        feedback_vi: Who đã là chủ ngữ của writes, không thêm she.
+        error_tag: relative_pronoun_repeat
+      - answer: which it
+        feedback_vi: Which đã là chủ ngữ của has, không thêm it.
+        error_tag: relative_pronoun_repeat
+      - answer: where
+        feedback_vi: Sau chỗ trống là động từ ngay (has), nên cần which/that; where phải có chủ ngữ riêng đi sau.
+        error_tag: where_vs_which
+    explanation:
+      vi: A journalist là người nên dùng who (hoặc that); a newspaper là vật nên dùng which (hoặc that). Cả hai làm chủ ngữ cho động từ ngay sau, nên không thêm she hay it.
+    display_answer: My cousin is a journalist who writes about sport. She works for a newspaper which has an office in Hanoi.
+
+  - key: en:exercise:stories-news-nr-translate-next-door
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:relative-who-which-that
+    prompt:
+      source_text: Người đàn ông sống cạnh nhà mình là nhà báo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The man who lives next door is a journalist.
+        - The man that lives next door is a journalist.
+        - The man who lives next door to me is a journalist.
+        - The man that lives next door to me is a journalist.
+        - The man who lives next to my house is a journalist.
+        - The man that lives next to my house is a journalist.
+        - The man who lives next door to us is a journalist.
+        - The man who lives next door is a reporter.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The man who he lives next door is a journalist.
+        feedback_vi: Who đã là chủ ngữ của lives, không thêm he.
+        error_tag: relative_pronoun_repeat
+      - answer: The man which lives next door is a journalist.
+        feedback_vi: Người dùng who hoặc that, không dùng which.
+        error_tag: who_vs_which
+      - answer: The man who lives next door is journalist.
+        feedback_vi: Nghề nghiệp số ít cần mạo từ - a journalist.
+        error_tag: article
+      - answer: The man who live next door is a journalist.
+        feedback_vi: The man số ít nên động từ là lives (thêm -s).
+        error_tag: third_person_s
+    explanation:
+      vi: The man + who lives next door (người nào) + is a journalist. Who làm chủ ngữ của lives nên không lặp lại he; nghề nghiệp số ít cần a.
+    display_answer: The man who lives next door is a journalist.
+
+  - key: en:exercise:stories-news-nr-translate-when-happen
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:happen
+    prompt:
+      source_text: Vụ tai nạn xảy ra lúc mấy giờ?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - What time did the accident happen?
+        - When did the accident happen?
+        - What time did the accident take place?
+        - When did the accident take place?
+        - What time did the crash happen?
+        - At what time did the accident happen?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: What time was the accident happened?
+        feedback_vi: Happen không có bị động - hỏi bằng did - What time did the accident happen?
+        error_tag: happen_passive
+      - answer: What time did the accident happened?
+        feedback_vi: Sau did dùng động từ nguyên mẫu happen.
+        error_tag: did_verb_form
+      - answer: What time the accident happened?
+        feedback_vi: Câu hỏi cần trợ động từ did đứng trước chủ ngữ.
+        error_tag: question_word_order
+      - answer: What time did happen the accident?
+        feedback_vi: Chủ ngữ the accident đứng ngay sau did, rồi mới đến happen.
+        error_tag: question_word_order
+    explanation:
+      vi: Câu hỏi quá khứ dùng did + chủ ngữ + động từ nguyên mẫu - What time did the accident happen? Happen là nội động từ nên không bao giờ đi với was.
+    display_answer: What time did the accident happen?
+
+  # ---------------- application ----------------
+  - key: en:exercise:stories-news-nr-translate-witness
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:according-to
+    prompt:
+      source_text: According to a witness, the driver didn't stop at the red light.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Theo một nhân chứng, tài xế đã không dừng ở đèn đỏ.
+        - Theo một nhân chứng, tài xế không dừng ở đèn đỏ.
+        - Theo một nhân chứng, tài xế đã không dừng lại ở đèn đỏ.
+        - Theo một nhân chứng, tài xế không dừng lại ở đèn đỏ.
+        - Theo một nhân chứng, người lái xe đã không dừng ở đèn đỏ.
+        - Theo một nhân chứng, người lái xe không dừng lại ở đèn đỏ.
+        - Theo một nhân chứng, tài xế đã không dừng xe ở đèn đỏ.
+        - Theo một nhân chứng, tài xế không dừng xe khi đèn đỏ.
+        - Theo một nhân chứng, tài xế đã vượt đèn đỏ.
+        - Theo lời một nhân chứng, tài xế đã không dừng ở đèn đỏ.
+        - Theo lời một nhân chứng, tài xế không dừng lại ở đèn đỏ.
+        - Theo nhân chứng, tài xế đã không dừng ở đèn đỏ.
+        - Một nhân chứng cho biết tài xế đã không dừng ở đèn đỏ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: According to a witness là "theo một nhân chứng" - nguồn của thông tin. Didn't stop at the red light là "không dừng ở đèn đỏ", có thể nói gọn là "vượt đèn đỏ".
+    display_answer: Theo một nhân chứng, tài xế đã không dừng ở đèn đỏ.
+
+  - key: en:exercise:stories-news-nr-mcq-headline
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:headline
+    prompt:
+      stem: "Bạn đọc tít báo \"BUS HITS TREE IN DA NANG - 3 INJURED\" và kể lại cho bạn bè. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: x5k, text: "A bus hit a tree in Da Nang, and three people were injured.", lang: en }
+        - { id: b8u, text: "A bus was hit a tree in Da Nang, and three people injured.", lang: en }
+        - { id: l3f, text: "An accident was happened in Da Nang, and three people were injured.", lang: en }
+        - { id: q1y, text: "Bus hits tree in Da Nang, and three people was injured.", lang: en }
+    answer:
+      correct_option_id: x5k
+    explanation:
+      vi: Tít báo dùng hiện tại và bỏ mạo từ; khi kể lại phải chuyển về câu đầy đủ ở quá khứ - A bus hit a tree. Ba người "bị thương" là were injured; was happened luôn sai vì happen không có bị động.
+    display_answer: "A bus hit a tree in Da Nang, and three people were injured."
+
+  - key: en:exercise:stories-news-nr-order-cafe
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:relative-where
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Đây là quán cà phê nơi mình gặp vợ mình lần đầu.\""
+      tokens:
+        - { id: f-first, text: first }
+        - { id: f-met, text: met }
+        - { id: f-the, text: the }
+        - { id: f-where, text: where }
+        - { id: f-wife, text: wife }
+        - { id: f-this, text: This }
+        - { id: f-which, text: which }
+        - { id: f-cafe, text: café }
+        - { id: f-is, text: is }
+        - { id: f-my, text: my }
+        - { id: f-i, text: I }
+        - { id: f-it, text: it }
+    answer:
+      orders:
+        - [f-this, f-is, f-the, f-cafe, f-where, f-i, f-first, f-met, f-my, f-wife]
+        - [f-this, f-is, f-the, f-cafe, f-where, f-i, f-met, f-my, f-wife, f-first]
+    explanation:
+      vi: Café là nơi chốn và sau đó có chủ ngữ I + động từ met, nên dùng where. Which thì cần thêm giới từ (which I met my wife in), và không thêm it vì where đã thay cho café.
+    display_answer: This is the café where I first met my wife.

@@ -1,0 +1,423 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:indirect-quotation
+order_index: 4
+level: topik3
+title:
+  vi: "Tường thuật lời nói: -다고, -냐고, -자고, -(으)라고 & -대요, -래요"
+objectives:
+  - vi: Thuật lại câu kể bằng -ㄴ/는다고, -다고, N(이)라고 하다 - chọn đúng dạng theo động từ, tính từ, danh từ.
+  - vi: Thuật lại câu hỏi (-냐고), lời rủ (-자고), lời bảo (-(으)라고, -아/어 달라고).
+  - vi: Hiểu và dùng dạng rút gọn khi nói - -대요, -(이)래요, -(으)래요, -재요, -냬요.
+  - vi: Chuyển lời nhắn ở nơi làm việc, kể lại tin nghe được.
+estimated_minutes: 20
+skills: [grammar, listening, speaking]
+prerequisites: [ko:lesson:modifiers-neunde]
+items:
+  - item: ko:item:gram-dago-hada
+  - item: ko:item:gram-nyago-hada
+  - item: ko:item:gram-jago-hada
+  - item: ko:item:gram-rago-hada
+  - item: ko:item:gram-daeyo-raeyo
+  - item: ko:item:jeonhada
+  - item: ko:item:mureoboda
+  - item: ko:item:butakada
+  - item: ko:item:sosik
+  - item: ko:item:hoeui
+  - item: ko:item:timjangnim
+  - item: ko:item:yaksok
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể lại được "Minsu nói là mai không đến", "thầy hỏi tôi đã làm bài chưa", "bạn rủ đi leo núi", "bác sĩ bảo nghỉ ngơi", và hiểu ngay khi người Hàn nói 비가 온대요, 가래요.
+  - type: explain
+    text:
+      vi: Câu kể - động từ hiện tại thêm -ㄴ/는다고 (간다고, 먹는다고), tính từ thêm -다고 (바쁘다고), quá khứ -았/었다고 (갔다고). Danh từ dùng (이)라고 - 학생이라고, 의사라고. Sau đó là 하다, 말하다 hoặc 듣다.
+  - type: explain
+    text:
+      vi: Câu hỏi - -냐고 (가냐고, 먹냐고, 학생이냐고) + 하다/묻다/물어보다. Lời rủ - -자고 (가자고). Lời bảo, khuyên - -(으)라고 (가라고, 먹으라고), cấm - -지 말라고. Nhờ làm cho chính mình - -아/어 달라고 (보내 달라고).
+  - type: explain
+    text:
+      vi: Khi nói, -다고 해요 rút gọn thành -대요, -(이)라고 해요 → -(이)래요, -(으)라고 해요 → -(으)래요, -자고 해요 → -재요, -냐고 해요 → -냬요. 비가 온대요 - nghe nói trời mưa; 일찍 오래요 - (người ta) bảo đến sớm.
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt chỉ cần thêm "nói là", "bảo", "hỏi", "rủ" trước câu gốc. Tiếng Hàn thì đổi chính đuôi câu, nên bạn phải xác định câu gốc thuộc loại nào - kể, hỏi, rủ hay bảo. -대요 còn rất hay dùng để kể tin nghe được (thời tiết, tin đồn), giống "nghe nói" trong tiếng Việt.
+  - type: example
+    target: 민수 씨가 내일 회의에 못 온다고 했어요.
+    target_lang: ko
+    translation:
+      vi: Minsu nói là ngày mai không đến họp được.
+    note:
+      vi: 오다 là động từ, không patchim → 온다고.
+  - type: example
+    target: 그 사람이 자기는 의사라고 했어요.
+    target_lang: ko
+    translation:
+      vi: Người đó nói mình là bác sĩ.
+    note:
+      vi: Danh từ không patchim → 라고; có patchim → 이라고 (학생이라고).
+  - type: example
+    target: 친구가 주말에 같이 영화 보자고 했어요.
+    target_lang: ko
+    translation:
+      vi: Bạn tôi rủ cuối tuần cùng xem phim.
+  - type: example
+    target: 팀장님이 보고서를 금요일까지 보내 달라고 하셨어요.
+    target_lang: ko
+    translation:
+      vi: Trưởng nhóm nhờ tôi gửi báo cáo trước thứ Sáu.
+    note:
+      vi: Nhờ làm cho người nói - -아/어 달라고.
+  - type: example
+    target: 수진 씨가 이번 주에 바쁘대요. 그래서 다음 주에 만나재요.
+    target_lang: ko
+    translation:
+      vi: Sujin bảo tuần này bận. Nên cô ấy rủ tuần sau gặp.
+    note:
+      vi: 바쁘대요 = 바쁘다고 해요; 만나재요 = 만나자고 해요.
+  - type: common_mistake
+    wrong: 민수 씨가 학생이다고 했어요.
+    right: 민수 씨가 학생이라고 했어요.
+    target_lang: ko
+    note:
+      vi: Người học hay gắn -다고 vào mọi từ. Với danh từ, 이다 đổi thành 이라고 (sau patchim) hoặc 라고 (sau nguyên âm).
+  - type: common_mistake
+    wrong: 동생이 지금 밥을 먹다고 했어요.
+    right: 동생이 지금 밥을 먹는다고 했어요.
+    target_lang: ko
+    note:
+      vi: Động từ ở hiện tại cần -ㄴ/는다고 - 먹는다고, 간다고. Chỉ tính từ mới dùng -다고 trực tiếp (바쁘다고).
+  - type: common_mistake
+    wrong: 선생님이 숙제를 한다고 했어요.
+    right: 선생님이 숙제를 하라고 했어요.
+    target_lang: ko
+    note:
+      vi: Muốn nói "thầy bảo làm bài tập" mà dùng 한다고 thì câu thành thầy nói chính thầy sẽ làm bài tập. Lời bảo, yêu cầu phải dùng -(으)라고 - 하라고.
+  - type: summary
+    points:
+      - vi: Câu kể - V-ㄴ/는다고, A-다고, V/A-았/었다고, N(이)라고.
+      - vi: Câu hỏi - -냐고 (+ 묻다, 물어보다); lời rủ - -자고; lời bảo - -(으)라고, -지 말라고, -아/어 달라고.
+      - vi: Rút gọn - -대요, -(이)래요, -(으)래요, -재요, -냬요.
+      - vi: 학생이래요 (nghe nói là học sinh) khác 가래요 (bảo hãy đi) - xem từ đứng trước 래요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:quotation-mcq-noun
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-dago-hada
+    prompt:
+      stem: Minsu nói "저는 학생이에요". Câu thuật lại nào đúng?
+      stem_lang: vi
+      options:
+        - { id: n4v, text: 민수 씨가 학생이라고 했어요., lang: ko }
+        - { id: g8e, text: 민수 씨가 학생이다고 했어요., lang: ko }
+        - { id: o2x, text: 민수 씨가 학생라고 했어요., lang: ko }
+        - { id: s6k, text: 민수 씨가 학생이냐고 했어요., lang: ko }
+    answer:
+      correct_option_id: n4v
+    explanation:
+      vi: Danh từ + 이다 thuật lại thành (이)라고; 학생 có patchim nên là 이라고. 이다고 sai dạng, 학생라고 thiếu 이, 이냐고 là thuật lại câu hỏi.
+    display_answer: 민수 씨가 학생이라고 했어요.
+
+  - key: ko:exercise:quotation-listen-rain
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-daeyo-raeyo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 내일 비가 온대요.
+      options:
+        - { id: u3f, text: Nghe nói mai trời mưa., lang: vi }
+        - { id: d9r, text: Người ta bảo mai đừng ra ngoài., lang: vi }
+        - { id: l5b, text: Người ta hỏi mai trời có mưa không., lang: vi }
+        - { id: t1w, text: Hôm qua trời mưa., lang: vi }
+    answer:
+      correct_option_id: u3f
+    explanation:
+      vi: 온대요 = 온다고 해요, thuật lại câu kể - "nghe nói trời mưa". Câu hỏi sẽ là 오냬요; lời bảo sẽ là -(으)래요.
+    display_answer: Nghe nói mai trời mưa.
+
+  - key: ko:exercise:quotation-fill-command-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-rago-hada
+    prompt:
+      template: "의사 선생님이 푹 {{b1}} 했어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Bác sĩ bảo tôi nghỉ ngơi cho khỏe."
+        - "Gợi ý: lời bảo → 쉬다 + -(으)라고."
+    answer:
+      blanks:
+        b1: [쉬라고]
+    known_wrong:
+      - answer: 쉰다고
+        feedback_vi: 쉰다고 là bác sĩ nói chính mình sẽ nghỉ. Lời bảo dùng -(으)라고 - 쉬라고.
+        error_tag: rago_vs_dago
+      - answer: 쉬자고
+        feedback_vi: -자고 là lời rủ cùng làm. Bác sĩ bảo bạn nghỉ - 쉬라고.
+        error_tag: rago_vs_jago
+    explanation:
+      vi: Bác sĩ nói 푹 쉬세요 (lời bảo) → thuật lại bằng -(으)라고. 쉬다 không patchim nên thêm 라고.
+    display_answer: 의사 선생님이 푹 쉬라고 했어요.
+
+  - key: ko:exercise:quotation-wb-homework
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-nyago-hada
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Thầy giáo hỏi tôi đã làm bài tập chưa.\""
+      tokens:
+        - { id: q5, text: 했다고 }
+        - { id: q4, text: 물어보셨어요 }
+        - { id: q2, text: 숙제를 }
+        - { id: q3, text: 했냐고 }
+        - { id: q1, text: 선생님이 }
+    answer:
+      orders:
+        - [q1, q2, q3, q4]
+    explanation:
+      vi: Thuật lại câu hỏi - 했냐고 + 물어보셨어요 (kính ngữ vì là thầy). 했다고 là thuật lại câu kể, không hợp với "hỏi".
+    display_answer: 선생님이 숙제를 했냐고 물어보셨어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:quotation-fill-statement
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-dago-hada
+    prompt:
+      template: "(Minsu nói mai không đến công ty.) 민수 씨가 내일 회사에 안 {{b1}} 했어요. (Sujin nói dạo này bận.) 수진 씨가 요즘 {{b2}} 했어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [온다고]
+        b2: [바쁘다고]
+    known_wrong:
+      - answer: 오다고
+        feedback_vi: Động từ ở hiện tại cần -ㄴ다고 - 온다고.
+        error_tag: verb_neunda_missing
+      - answer: 바쁜다고
+        feedback_vi: 바쁘다 là tính từ nên chỉ thêm -다고 - 바쁘다고.
+        error_tag: adjective_neunda
+    explanation:
+      vi: Động từ 오다 → 온다고 (thêm ㄴ vì không patchim). Tính từ 바쁘다 → 바쁘다고 (giữ nguyên dạng từ điển).
+    display_answer: 민수 씨가 내일 회사에 안 온다고 했어요. 수진 씨가 요즘 바쁘다고 했어요.
+
+  - key: ko:exercise:quotation-translate-leave-early
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:timjangnim
+    prompt:
+      source_text: Trưởng nhóm bảo hôm nay tan làm sớm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 팀장님이 오늘 일찍 퇴근하라고 하셨어요.
+        - 팀장님이 오늘 일찍 퇴근하라고 했어요.
+        - 팀장님께서 오늘 일찍 퇴근하라고 하셨어요.
+        - 팀장님이 오늘은 일찍 퇴근하라고 하셨어요.
+        - 팀장님이 오늘 일찍 퇴근하래요.
+        - 팀장님이 오늘은 일찍 퇴근하래요.
+        - 팀장님이 오늘 일찍 퇴근하라고 하세요.
+        - 팀장님이 오늘 일찍 가라고 하셨어요.
+    known_wrong:
+      - answer: 팀장님이 오늘 일찍 퇴근한다고 하셨어요.
+        feedback_vi: 퇴근한다고 là trưởng nhóm nói chính mình tan làm sớm. "Bảo (ai) làm" dùng -(으)라고.
+        error_tag: rago_vs_dago
+      - answer: 팀장님이 오늘 일찍 퇴근하자고 하셨어요.
+        feedback_vi: -자고 là "rủ cùng". Câu gốc là lời bảo - 퇴근하라고.
+        error_tag: rago_vs_jago
+      - answer: 팀장님이 오늘 일찍 퇴근하다고 하셨어요.
+        feedback_vi: Động từ thuật lại câu kể cần -ㄴ다고, còn ở đây là lời bảo - 퇴근하라고.
+        error_tag: rago_vs_dago
+    explanation:
+      vi: Lời bảo (일찍 퇴근하세요) → -(으)라고 하다; 퇴근하다 không patchim → 퇴근하라고. Nói về cấp trên nên dùng kính ngữ 하셨어요; rút gọn khi nói là 퇴근하래요.
+    display_answer: 팀장님이 오늘 일찍 퇴근하라고 하셨어요.
+
+  - key: ko:exercise:quotation-fill-contracted
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-daeyo-raeyo
+    prompt:
+      template: "(Nghe nói Sujin sắp cưới.) 수진 씨가 {{b1}}. (Mẹ bảo ăn cơm đi.) 엄마가 밥 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [결혼한대요, 결혼할 거래요]
+        b2: [먹으래요]
+    known_wrong:
+      - answer: 결혼하대요
+        feedback_vi: 결혼하다 là động từ nên cần ㄴ - 결혼한대요 (= 결혼한다고 해요).
+        error_tag: verb_neunda_missing
+      - answer: 먹는대요
+        feedback_vi: 먹는대요 là "nghe nói (mẹ) ăn". Lời bảo rút gọn là -(으)래요 - 먹으래요.
+        error_tag: raeyo_vs_daeyo
+      - answer: 먹래요
+        feedback_vi: 먹다 có patchim nên thêm 으 - 먹으래요.
+        error_tag: eu_insertion
+    explanation:
+      vi: 결혼한다고 해요 → 결혼한대요 (tin nghe được). 먹으라고 해요 → 먹으래요 (lời bảo); 먹다 có patchim nên cần 으.
+    display_answer: 수진 씨가 결혼한대요. 엄마가 밥 먹으래요.
+
+  - key: ko:exercise:quotation-translate-hiking
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-jago-hada
+    prompt:
+      source_text: Bạn tôi rủ cuối tuần cùng đi leo núi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 친구가 주말에 같이 등산하자고 했어요.
+        - 친구가 주말에 같이 등산 가자고 했어요.
+        - 친구가 주말에 같이 산에 가자고 했어요.
+        - 친구가 이번 주말에 같이 등산하자고 했어요.
+        - 제 친구가 주말에 같이 등산하자고 했어요.
+        - 친구가 주말에 같이 등산하재요.
+        - 친구가 주말에 같이 등산 가재요.
+        - 친구가 주말에 등산하자고 했어요.
+    known_wrong:
+      - answer: 친구가 주말에 같이 등산한다고 했어요.
+        feedback_vi: -는다고 là câu kể ("bạn nói là sẽ leo núi"). Lời rủ dùng -자고.
+        error_tag: jago_vs_dago
+      - answer: 친구가 주말에 같이 등산하라고 했어요.
+        feedback_vi: -(으)라고 là lời bảo, không phải lời rủ cùng làm. Dùng 등산하자고.
+        error_tag: rago_vs_jago
+    explanation:
+      vi: Lời rủ (같이 등산해요/등산합시다) → -자고 하다, gắn thẳng vào thân - 등산하자고. Rút gọn khi nói là 등산하재요.
+    display_answer: 친구가 주말에 같이 등산하자고 했어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:quotation-mcq-relay
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:jeonhada
+    prompt:
+      stem: "Trưởng nhóm nhắn bạn: \"내일 회의는 3시로 바뀌었어요. 민수 씨에게도 전해 주세요.\" Bạn chuyển lời cho Minsu thế nào?"
+      stem_lang: vi
+      options:
+        - { id: v2j, text: 내일 회의가 3시로 바뀌었대요., lang: ko }
+        - { id: c6p, text: 내일 회의가 3시로 바뀌래요., lang: ko }
+        - { id: k9n, text: 내일 회의가 3시로 바뀌었냬요., lang: ko }
+        - { id: e4h, text: 내일 회의를 3시로 바꾸재요., lang: ko }
+    answer:
+      correct_option_id: v2j
+    explanation:
+      vi: Tin nhắn là câu kể ở quá khứ (바뀌었어요) → 바뀌었다고 해요 → 바뀌었대요. -래요 là lời bảo, -냬요 là câu hỏi, -재요 là lời rủ - đều không đúng với câu gốc.
+    display_answer: 내일 회의가 3시로 바뀌었대요.
+
+  - key: ko:exercise:quotation-mcq-inference
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:gram-daeyo-raeyo
+    prompt:
+      stem: "Sujin nói với bạn: \"민수 씨가 오늘 몸이 안 좋대요. 그래서 저녁 약속을 다음 주로 미루재요.\" Chuyện gì đã xảy ra?"
+      stem_lang: vi
+      options:
+        - { id: b3t, text: Minsu không khỏe nên rủ dời buổi hẹn tối sang tuần sau., lang: vi }
+        - { id: h6w, text: Sujin không khỏe nên đã hủy buổi hẹn., lang: vi }
+        - { id: x8s, text: Minsu bảo Sujin đi khám bệnh., lang: vi }
+        - { id: j1m, text: Minsu hỏi tuần sau bạn có rảnh không., lang: vi }
+    answer:
+      correct_option_id: b3t
+    explanation:
+      vi: 안 좋대요 = (Minsu) nói là không khỏe; 미루재요 = rủ dời lại (-자고 해요). Người không khỏe là Minsu, và hẹn được dời chứ không hủy.
+    display_answer: Minsu không khỏe nên rủ dời buổi hẹn tối sang tuần sau.
+
+  - key: ko:exercise:quotation-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-daeyo-raeyo
+    prompt:
+      source_text: 선생님이 내일까지 숙제를 내래요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cô giáo bảo nộp bài tập trước ngày mai.
+        - Thầy giáo bảo nộp bài tập trước ngày mai.
+        - Cô giáo bảo phải nộp bài tập trước ngày mai.
+        - Thầy giáo bảo phải nộp bài tập trước ngày mai.
+        - Cô giáo bảo nộp bài tập muộn nhất là ngày mai.
+        - Thầy bảo nộp bài tập trước ngày mai.
+        - Cô bảo nộp bài tập trước ngày mai.
+        - Giáo viên bảo nộp bài tập trước ngày mai.
+        - Cô giáo bảo nộp bài tập đến hết ngày mai.
+        - Cô giáo dặn nộp bài tập trước ngày mai.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cô giáo nói là sẽ nộp bài tập trước ngày mai.
+        feedback_vi: 내래요 = 내라고 해요, là lời bảo (hãy nộp), không phải câu kể.
+        error_tag: raeyo_vs_daeyo
+      - answer: Cô giáo hỏi đã nộp bài tập chưa.
+        feedback_vi: Câu hỏi sẽ là -냬요. 내래요 là lời bảo.
+        error_tag: raeyo_vs_nyaeyo
+    explanation:
+      vi: 내다 (nộp) + -(으)라고 해요 → 내래요 - "bảo nộp". 내일까지 là "trước / đến hạn ngày mai".
+    display_answer: Cô giáo bảo nộp bài tập trước ngày mai.
+
+  - key: ko:exercise:quotation-translate-meeting
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-nyago-hada
+    prompt:
+      source_text: Minsu hỏi cuộc họp bắt đầu lúc mấy giờ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 민수 씨가 회의가 몇 시에 시작하냐고 물어봤어요.
+        - 민수 씨가 회의가 몇 시에 시작하냐고 물었어요.
+        - 민수 씨가 회의가 몇 시에 시작하냐고 했어요.
+        - 민수 씨가 회의가 몇 시에 시작되냐고 물어봤어요.
+        - 민수 씨가 회의는 몇 시에 시작하냐고 물어봤어요.
+        - 민수 씨가 회의 몇 시에 시작하냐고 물어봤어요.
+        - 민수 씨가 회의가 몇 시에 시작하냬요.
+        - 민수 씨가 회의가 몇 시에 시작하냐고 물어요.
+    known_wrong:
+      - answer: 민수 씨가 회의가 몇 시에 시작한다고 물어봤어요.
+        feedback_vi: Thuật lại câu hỏi cần -냐고, không phải -ㄴ다고 - 시작하냐고.
+        error_tag: nyago_vs_dago
+      - answer: 민수 씨가 회의가 몇 시에 시작하라고 물어봤어요.
+        feedback_vi: -(으)라고 là lời bảo. Câu hỏi dùng -냐고.
+        error_tag: nyago_vs_rago
+    explanation:
+      vi: Câu gốc là câu hỏi (회의가 몇 시에 시작해요?) → -냐고 + 물어보다/묻다/하다. Rút gọn khi nói là 시작하냬요.
+    display_answer: 민수 씨가 회의가 몇 시에 시작하냐고 물어봤어요.

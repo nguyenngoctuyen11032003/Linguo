@@ -1,0 +1,10 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:unit:people-relationships
+order_index: 2
+title:
+  vi: Con người & các mối quan hệ

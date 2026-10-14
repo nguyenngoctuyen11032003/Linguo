@@ -1,0 +1,942 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Sắc thái, thành ngữ & diễn đạt tinh tế" (C2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: từ gần nghĩa & sắc thái ----------------
+  - key: en:item:connotation
+    type: vocab
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: connotation
+      ipa: UK /ˌkɒnəˈteɪʃn/ · US /ˌkɑːnəˈteɪʃn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: Sắc thái nghĩa (tích cực, tiêu cực, trung tính) đi kèm một từ, ngoài nghĩa gốc của nó.
+      examples:
+        - target: "\"Slim\" has a positive connotation, while \"skinny\" often sounds critical."
+          translation:
+            vi: “Slim” mang sắc thái tích cực, còn “skinny” thường nghe như chê.
+      pronunciation_note:
+        vi: Trọng âm chính rơi vào -ta- (/ˈteɪ/), giống các danh từ đuôi -tion khác.
+      confusion:
+        vi: Connotation (sắc thái) khác denotation (nghĩa từ điển). Hai từ có cùng denotation vẫn có thể khác hẳn connotation.
+
+  - key: en:item:thin-slim-skinny
+    type: vocab
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: thin / slim / skinny
+      ipa: /θɪn/ · /slɪm/ · /ˈskɪni/
+      pos: tính từ
+    back:
+      meaning:
+        vi: Đều là "gầy", nhưng slim là khen (thon thả), thin trung tính, skinny thường chê (gầy nhom) trừ khi nói về quần jeans bó.
+      examples:
+        - target: She looks slim and healthy since she took up swimming.
+          translation:
+            vi: Từ khi đi bơi, cô ấy trông thon thả và khoẻ mạnh.
+        - target: The puppy was dangerously skinny when they found it.
+          translation:
+            vi: Lúc được tìm thấy, chú chó con gầy nhom đến mức đáng lo.
+      pronunciation_note:
+        vi: Thin bắt đầu bằng /θ/ - đặt đầu lưỡi giữa hai hàm răng, không đọc thành /t/ hay /th/ tiếng Việt.
+      confusion:
+        vi: Khen ai "gầy đẹp" thì dùng slim; nói skinny với người lớn dễ làm họ phật lòng.
+
+  - key: en:item:stubborn-determined
+    type: vocab
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: stubborn / determined
+      ipa: UK /ˈstʌbən/ · US /ˈstʌbɚn/ · UK /dɪˈtɜːmɪnd/ · US /dɪˈtɝːmɪnd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: Cùng chỉ người không chịu bỏ ý định, nhưng determined là khen (quyết tâm), stubborn là chê (bướng bỉnh, cứng đầu).
+      examples:
+        - target: She was determined to finish the marathon despite her injury.
+          translation:
+            vi: Cô ấy quyết tâm chạy hết marathon dù bị chấn thương.
+        - target: He's too stubborn to admit he made a mistake.
+          translation:
+            vi: Anh ta quá cứng đầu, không chịu nhận mình sai.
+      confusion:
+        vi: Người nói chọn từ nào là đang bày tỏ thái độ - cùng một hành động, người ủng hộ gọi là determined, người phản đối gọi là stubborn.
+
+  - key: en:item:cheap-inexpensive
+    type: vocab
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: cheap / inexpensive / affordable
+      ipa: /tʃiːp/ · /ˌɪnɪkˈspensɪv/ · UK /əˈfɔːdəbl/ · US /əˈfɔːrdəbl/
+      pos: tính từ
+    back:
+      meaning:
+        vi: Đều là "giá thấp"; cheap có thể ngụ ý kém chất lượng hoặc keo kiệt, inexpensive và affordable trung tính, lịch sự hơn.
+      examples:
+        - target: The hotel was inexpensive but surprisingly comfortable.
+          translation:
+            vi: Khách sạn không đắt nhưng lại thoải mái đến bất ngờ.
+        - target: The furniture looked cheap and fell apart within a month.
+          translation:
+            vi: Đồ nội thất trông rẻ tiền và hỏng chỉ sau một tháng.
+      confusion:
+        vi: Khi quảng cáo hoặc viết trang trọng, tránh cheap vì dễ gợi "rẻ tiền"; dùng affordable, inexpensive, good value.
+
+  - key: en:item:frugal-stingy
+    type: vocab
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: frugal / thrifty / stingy
+      ipa: /ˈfruːɡl/ · /ˈθrɪfti/ · /ˈstɪndʒi/
+      pos: tính từ
+    back:
+      meaning:
+        vi: Đều là "tiêu ít tiền"; frugal và thrifty là khen (tằn tiện, biết tiết kiệm), stingy là chê (keo kiệt, bủn xỉn).
+      examples:
+        - target: My grandparents were frugal and never wasted food.
+          translation:
+            vi: Ông bà tôi rất tằn tiện, không bao giờ phí đồ ăn.
+        - target: He's too stingy to buy his friends a coffee.
+          translation:
+            vi: Anh ta keo kiệt đến mức không mời bạn nổi một ly cà phê.
+      pronunciation_note:
+        vi: Stingy đọc /ˈstɪndʒi/ với âm /dʒ/, không đọc /ˈstɪŋi/.
+      confusion:
+        vi: Tiếng Việt cũng phân biệt "tiết kiệm" và "keo kiệt"; đừng dùng stingy khi muốn khen.
+
+  - key: en:item:economic-economical
+    type: vocab
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: economic / economical
+      ipa: UK /ˌiːkəˈnɒmɪk/ · US /ˌiːkəˈnɑːmɪk/ · UK /ˌiːkəˈnɒmɪkl/ · US /ˌiːkəˈnɑːmɪkl/
+      pos: tính từ
+    back:
+      meaning:
+        vi: Economic là "thuộc về kinh tế" (economic growth); economical là "tiết kiệm, ít tốn kém" (an economical car).
+      examples:
+        - target: The country is facing an economic crisis.
+          translation:
+            vi: Đất nước đang đối mặt với một cuộc khủng hoảng kinh tế.
+        - target: This model is more economical to run than a petrol car.
+          translation:
+            vi: Mẫu xe này tiết kiệm chi phí vận hành hơn xe chạy xăng.
+      pronunciation_note:
+        vi: Cả hai nhấn ở -nom-; có thể đọc âm đầu /ˌiː/ hoặc /ˌe/.
+      confusion:
+        vi: Người Việt hay nói "an economic car" vì dịch "xe kinh tế"; đúng phải là economical. Tương tự historic/historical, classic/classical.
+
+  - key: en:item:affect-effect
+    type: vocab
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: affect (v) / effect (n)
+      ipa: /əˈfekt/ · /ɪˈfekt/
+      pos: động từ / danh từ
+    back:
+      meaning:
+        vi: Affect là động từ "ảnh hưởng đến"; effect thường là danh từ "tác động, hiệu quả" (have an effect on).
+      examples:
+        - target: The new rules will affect thousands of small businesses.
+          translation:
+            vi: Quy định mới sẽ ảnh hưởng đến hàng nghìn doanh nghiệp nhỏ.
+        - target: The new rules will have a significant effect on small businesses.
+          translation:
+            vi: Quy định mới sẽ có tác động đáng kể đến các doanh nghiệp nhỏ.
+      pronunciation_note:
+        vi: Hai từ đọc gần như giống nhau; khác ở âm đầu yếu /ə/ và /ɪ/, nên phải phân biệt bằng ngữ pháp.
+      confusion:
+        vi: Effect làm động từ (to effect change) nghĩa là "tạo ra, thực hiện" - rất trang trọng và hiếm. Mặc định - động từ là affect, danh từ là effect; không nói affect on.
+
+  - key: en:item:childlike-childish
+    type: vocab
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: childlike / childish
+      ipa: /ˈtʃaɪldlaɪk/ · /ˈtʃaɪldɪʃ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: Childlike là khen (hồn nhiên, trong sáng như trẻ con); childish là chê (trẻ con, thiếu chín chắn).
+      examples:
+        - target: She has a childlike curiosity about the world.
+          translation:
+            vi: Bà ấy có sự tò mò hồn nhiên như trẻ thơ về thế giới.
+        - target: Stop being so childish and apologise.
+          translation:
+            vi: Đừng trẻ con như vậy nữa, xin lỗi đi.
+      confusion:
+        vi: Hậu tố -ish thường mang ý tiêu cực khi gắn với người (childish, selfish); -like trung tính hoặc tích cực.
+
+  - key: en:item:renowned-notorious
+    type: vocab
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: renowned / notorious
+      ipa: /rɪˈnaʊnd/ · UK /nəʊˈtɔːriəs/ · US /noʊˈtɔːriəs/
+      pos: tính từ
+    back:
+      meaning:
+        vi: Đều là "nổi tiếng"; renowned là nổi tiếng vì điều tốt (lừng danh), notorious là khét tiếng vì điều xấu.
+      examples:
+        - target: The city is renowned for its street food.
+          translation:
+            vi: Thành phố này nổi tiếng với ẩm thực đường phố.
+        - target: This junction is notorious for accidents.
+          translation:
+            vi: Ngã tư này khét tiếng vì hay xảy ra tai nạn.
+      confusion:
+        vi: Không dùng notorious để khen. Famous trung tính; renowned, celebrated trang trọng và tích cực; infamous đồng nghĩa với notorious.
+
+  - key: en:item:assertive-aggressive
+    type: vocab
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: assertive / aggressive / pushy
+      ipa: UK /əˈsɜːtɪv/ · US /əˈsɝːtɪv/ · /əˈɡresɪv/ · /ˈpʊʃi/
+      pos: tính từ
+    back:
+      meaning:
+        vi: Assertive là tự tin bảo vệ ý kiến một cách đúng mực (tích cực); aggressive là hung hăng, áp đảo; pushy là thúc ép, đeo bám khó chịu.
+      examples:
+        - target: You need to be more assertive in negotiations.
+          translation:
+            vi: Bạn cần quyết đoán, tự tin hơn khi đàm phán.
+        - target: The salesman was so pushy that we left the shop.
+          translation:
+            vi: Người bán hàng chèo kéo quá nên chúng tôi bỏ đi.
+      confusion:
+        vi: Trong kinh doanh Mỹ, aggressive (an aggressive growth strategy) có thể là trung tính, nhưng nói về tính cách một người thì gần như luôn là chê.
+
+  - key: en:item:sensible-sensitive
+    type: vocab
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sensible / sensitive
+      ipa: /ˈsensəbl/ · /ˈsensətɪv/
+      pos: tính từ
+    back:
+      meaning:
+        vi: Sensible là hợp lý, biết điều; sensitive là nhạy cảm (dễ tổn thương hoặc tinh ý).
+      examples:
+        - target: Taking a taxi at this hour is the sensible option.
+          translation:
+            vi: Đi taxi vào giờ này là lựa chọn hợp lý.
+        - target: Salary is a sensitive topic in many companies.
+          translation:
+            vi: Lương là chủ đề nhạy cảm ở nhiều công ty.
+      confusion:
+        vi: Sensible là "false friend" - trông giống "nhạy cảm" nhưng thực ra nghĩa là "khôn ngoan, hợp lý".
+
+  # ---------------- Bài 2: thành ngữ & cụm động từ nhiều nghĩa ----------------
+  - key: en:item:idiom-register
+    type: grammar_point
+    level: c2
+    difficulty: 4
+    skill_tags: [writing, vocabulary]
+    front:
+      text: idioms and register
+      pos: văn phong
+    back:
+      meaning:
+        vi: Thành ngữ làm lời nói tự nhiên, sinh động, nhưng phần lớn mang văn phong thân mật; trong báo cáo, bài luận học thuật nên dùng ít hoặc thay bằng từ thẳng nghĩa.
+      examples:
+        - target: "Informal: We need to stop beating around the bush. → Formal: We need to address the issue directly."
+          translation:
+            vi: "Thân mật: Ta phải thôi vòng vo. → Trang trọng: Chúng ta cần giải quyết vấn đề một cách trực tiếp."
+      confusion:
+        vi: Một hai thành ngữ trong email nội bộ là ổn; nhồi nhiều thành ngữ vào bài viết trang trọng làm văn bản sáo rỗng và thiếu chuyên nghiệp.
+
+  - key: en:item:literal-idiom-translation
+    type: grammar_point
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: Vietnamese idioms → English equivalents
+      pos: dịch thành ngữ
+    back:
+      meaning:
+        vi: Thành ngữ tiếng Việt hầu như không dịch sát chữ được; hãy tìm thành ngữ tương đương hoặc nói thẳng ý nghĩa.
+      examples:
+        - target: "Nước đổ đầu vịt → It's like water off a duck's back."
+          translation:
+            vi: Nói mấy cũng không vào (như nước đổ đầu vịt).
+        - target: "Tai bay vạ gió → It came out of the blue / through no fault of my own."
+          translation:
+            vi: Chuyện xui xẻo bất ngờ ập đến mà mình không có lỗi.
+      confusion:
+        vi: Dịch sát chữ ("water poured on a duck's head", "ears fly, disaster wind") khiến người bản ngữ không hiểu; nếu không chắc có thành ngữ tương đương, cứ nói thẳng nghĩa.
+
+  - key: en:item:elephant-in-the-room
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: the elephant in the room
+      ipa: /ði ˈelɪfənt ɪn ðə ruːm/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Vấn đề lớn, ai cũng thấy nhưng không ai muốn nhắc tới.
+      examples:
+        - target: "Let's address the elephant in the room: the project is three months behind schedule."
+          translation:
+            vi: "Hãy nói thẳng vào điều ai cũng biết mà né tránh: dự án đang chậm ba tháng."
+      confusion:
+        vi: Luôn dùng mạo từ the - the elephant in the room. Hay đi với address, mention, ignore.
+
+  - key: en:item:cut-corners
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: cut corners
+      ipa: UK /kʌt ˈkɔːnəz/ · US /kʌt ˈkɔːrnɚz/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Làm ẩu, bớt xén khâu cần thiết để tiết kiệm thời gian hoặc tiền (thường gây hậu quả).
+      examples:
+        - target: The builders cut corners on safety, and the wall collapsed.
+          translation:
+            vi: Đội thợ làm ẩu, bỏ qua khâu an toàn, và bức tường đã sập.
+      confusion:
+        vi: Corners luôn ở số nhiều và không có mạo từ - cut corners, không nói cut the corner. Mang nghĩa tiêu cực, khác với "tiết kiệm" (save money).
+
+  - key: en:item:blessing-in-disguise
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: a blessing in disguise
+      ipa: /ə ˈblesɪŋ ɪn dɪsˈɡaɪz/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Điều tưởng là xui xẻo nhưng hoá ra lại tốt - gần với "trong cái rủi có cái may", "tái ông mất ngựa".
+      examples:
+        - target: Losing that job turned out to be a blessing in disguise.
+          translation:
+            vi: Mất công việc đó hoá ra lại là trong rủi có may.
+      confusion:
+        vi: Hay đi với turn out to be / prove to be. Không dịch "tái ông mất ngựa" sát chữ sang tiếng Anh.
+
+  - key: en:item:beat-around-the-bush
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: beat around the bush
+      ipa: /biːt əˈraʊnd ðə bʊʃ/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Nói vòng vo, không vào thẳng vấn đề.
+      examples:
+        - target: Stop beating around the bush and tell me what happened.
+          translation:
+            vi: Đừng vòng vo nữa, kể cho tôi chuyện gì đã xảy ra.
+      confusion:
+        vi: Tiếng Anh Anh hay nói beat about the bush. Thường dùng ở dạng phủ định hoặc mệnh lệnh - Don't beat around the bush / I won't beat around the bush.
+
+  - key: en:item:by-and-large
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: by and large
+      ipa: UK /baɪ ənd lɑːdʒ/ · US /baɪ ənd lɑːrdʒ/
+      pos: trạng ngữ cố định
+    back:
+      meaning:
+        vi: Nhìn chung, nói chung (= on the whole, generally).
+      examples:
+        - target: By and large, the feedback from customers has been positive.
+          translation:
+            vi: Nhìn chung, phản hồi của khách hàng là tích cực.
+      confusion:
+        vi: Cụm cố định, không đổi thành by and big hay by large. Trung tính, dùng được cả trong văn viết bán trang trọng.
+
+  - key: en:item:on-the-fence
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: be / sit on the fence
+      ipa: /ɒn ðə fens/ · US /ɑːn ðə fens/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Còn lưỡng lự, chưa chọn phe hoặc né tránh việc bày tỏ quan điểm.
+      examples:
+        - target: I'm still on the fence about whether to accept the offer.
+          translation:
+            vi: Tôi vẫn đang phân vân có nên nhận lời mời làm việc đó không.
+      confusion:
+        vi: Sit on the fence thường hơi chê (né tránh, ba phải); be on the fence chỉ đơn giản là chưa quyết định.
+
+  - key: en:item:come-across
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: come across
+      ipa: UK /kʌm əˈkrɒs/ · US /kʌm əˈkrɔːs/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: (1) come across sth/sb - tình cờ gặp, bắt gặp; (2) come across as + tính từ/danh từ - tạo ấn tượng là…
+      examples:
+        - target: I came across an old photo of my parents while cleaning.
+          translation:
+            vi: Lúc dọn dẹp, tôi tình cờ thấy một tấm ảnh cũ của bố mẹ.
+        - target: He comes across as arrogant, but he's actually very shy.
+          translation:
+            vi: Anh ấy trông có vẻ kiêu ngạo, nhưng thật ra rất nhút nhát.
+      confusion:
+        vi: Nghĩa "tạo ấn tượng" cần as - come across as rude, không nói come across rude.
+
+  - key: en:item:pick-up-senses
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: pick up (nhiều nghĩa)
+      ipa: /pɪk ʌp/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: Ngoài "đón ai", pick up còn là học lỏm, học được (pick up a language), khởi sắc (sales picked up), nhận ra (pick up on a hint).
+      examples:
+        - target: She picked up quite a lot of Korean while living in Busan.
+          translation:
+            vi: Hồi sống ở Busan, cô ấy học lỏm được khá nhiều tiếng Hàn.
+        - target: Sales usually pick up before the Lunar New Year.
+          translation:
+            vi: Doanh số thường khởi sắc trước Tết Nguyên đán.
+      confusion:
+        vi: Nghĩa "khởi sắc" là nội động từ, không có tân ngữ - Business picked up. Nghĩa "nhận ra" cần on - pick up on the tension.
+
+  - key: en:item:turn-down
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: turn down
+      ipa: UK /tɜːn daʊn/ · US /tɝːn daʊn/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: (1) từ chối (lời mời, đề nghị); (2) vặn nhỏ (âm lượng, nhiệt độ).
+      examples:
+        - target: She turned down a job offer from a bank to start her own business.
+          translation:
+            vi: Cô ấy từ chối lời mời làm việc của một ngân hàng để tự khởi nghiệp.
+        - target: Could you turn the music down a bit?
+          translation:
+            vi: Bạn vặn nhỏ nhạc một chút được không?
+      confusion:
+        vi: Turn down là cụm tách được - turn it down, không nói turn down it. Trong văn trang trọng, thay bằng decline hoặc reject.
+
+  - key: en:item:carry-off
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: carry off
+      ipa: /ˈkæri ɒf/ · US /ˈkæri ɔːf/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: (1) làm thành công một việc khó, "cân" được (carry it off); (2) giành được giải thưởng; (3) mang đi, cuốn đi.
+      examples:
+        - target: Not everyone could wear a bright yellow suit, but he carried it off.
+          translation:
+            vi: Không phải ai cũng mặc nổi bộ vest vàng chói, nhưng anh ấy lại "cân" được.
+        - target: Her film carried off three awards at the festival.
+          translation:
+            vi: Bộ phim của cô ấy giành ba giải tại liên hoan phim.
+      confusion:
+        vi: Đừng nhầm với carry on (tiếp tục) hay carry out (thực hiện). Nghĩa "làm thành công" thường dùng với it - carry it off.
+
+  # ---------------- Bài 3: giả định cách & cấu trúc trang trọng ----------------
+  - key: en:item:mandative-subjunctive
+    type: grammar_point
+    level: c2
+    difficulty: 5
+    skill_tags: [grammar, writing]
+    front:
+      text: "S + V (demand/insist/recommend) + that + S + V nguyên mẫu"
+      pos: giả định cách (subjunctive)
+    back:
+      meaning:
+        vi: Sau động từ, tính từ thể hiện yêu cầu, đề xuất, tầm quan trọng, động từ trong mệnh đề that giữ nguyên mẫu với mọi chủ ngữ và mọi thì (he be, she leave).
+      examples:
+        - target: The committee recommended that the plan be postponed.
+          translation:
+            vi: Uỷ ban đề nghị hoãn kế hoạch.
+        - target: The doctor insisted that he stay in bed for a week.
+          translation:
+            vi: Bác sĩ nhất quyết yêu cầu anh ấy nằm nghỉ một tuần.
+      confusion:
+        vi: Tiếng Anh Anh hay dùng should + V (that he should stay) - cũng đúng. Dạng chia thì (that he stays) phổ biến trong văn nói Anh nhưng bị coi là kém trang trọng trong văn bản chính thức.
+
+  - key: en:item:it-is-essential-that
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: It is essential / vital / imperative that + S + V nguyên mẫu
+      ipa: /ɪt ɪz ɪˈsenʃl ðət/
+      pos: cấu trúc trang trọng
+    back:
+      meaning:
+        vi: Điều thiết yếu, bắt buộc là… (dùng giả định cách sau that).
+      examples:
+        - target: It is essential that every employee be trained before using the machine.
+          translation:
+            vi: Mọi nhân viên bắt buộc phải được đào tạo trước khi dùng máy.
+        - target: It is vital that the patient not eat anything before surgery.
+          translation:
+            vi: Điều tối quan trọng là bệnh nhân không được ăn gì trước khi phẫu thuật.
+      confusion:
+        vi: It is essential that he goes vẫn gặp trong văn nói Anh, nhưng trong văn bản trang trọng nên viết he go hoặc he should go. Cấu trúc thay thế đơn giản hơn - It is essential for him to go.
+
+  - key: en:item:insist-that
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: insist that + S + V nguyên mẫu / insist on + V-ing
+      ipa: /ɪnˈsɪst ðət/
+      pos: cấu trúc động từ
+    back:
+      meaning:
+        vi: Nhất quyết đòi (ai làm gì).
+      examples:
+        - target: I insist that she leave immediately.
+          translation:
+            vi: Tôi nhất quyết yêu cầu cô ta rời đi ngay.
+        - target: He insisted on paying for dinner.
+          translation:
+            vi: Anh ấy nhất quyết đòi trả tiền bữa tối.
+      confusion:
+        vi: Insist that còn có nghĩa "khăng khăng khẳng định" một sự thật - khi đó chia thì bình thường - He insisted that he was innocent (không phải yêu cầu).
+
+  - key: en:item:subjunctive-negative
+    type: grammar_point
+    level: c2
+    difficulty: 5
+    skill_tags: [grammar, writing]
+    front:
+      text: "that + S + not + V nguyên mẫu"
+      pos: giả định cách phủ định
+    back:
+      meaning:
+        vi: Phủ định của giả định cách đặt not trực tiếp trước động từ nguyên mẫu, không dùng do/does.
+      examples:
+        - target: We request that visitors not take photographs inside the museum.
+          translation:
+            vi: Chúng tôi đề nghị khách tham quan không chụp ảnh trong bảo tàng.
+      confusion:
+        vi: Không viết that visitors do not take hay doesn't take trong cấu trúc giả định trang trọng; viết not take hoặc should not take.
+
+  - key: en:item:were-it-not-for
+    type: phrase
+    level: c2
+    difficulty: 5
+    skill_tags: [grammar, writing]
+    front:
+      text: Were it not for + N, …
+      ipa: UK /wɜːr ɪt nɒt fə/ · US /wɝː ɪt nɑːt fɚ/
+      pos: đảo ngữ điều kiện
+    back:
+      meaning:
+        vi: Nếu không nhờ có / Nếu không vì… (hiện tại) = If it were not for…
+      examples:
+        - target: Were it not for her support, I would have given up long ago.
+          translation:
+            vi: Nếu không nhờ sự ủng hộ của cô ấy, tôi đã bỏ cuộc từ lâu rồi.
+      confusion:
+        vi: Dùng were với mọi chủ ngữ, không nói Was it not for. Theo sau là danh từ, không phải mệnh đề.
+
+  - key: en:item:had-it-not-been-for
+    type: phrase
+    level: c2
+    difficulty: 5
+    skill_tags: [grammar, writing]
+    front:
+      text: Had it not been for + N, …
+      ipa: /hæd ɪt nɒt bɪn fə/
+      pos: đảo ngữ điều kiện
+    back:
+      meaning:
+        vi: Nếu không nhờ / Nếu không vì… (trong quá khứ) = If it had not been for… = But for…
+      examples:
+        - target: Had it not been for the rain, the match would have finished on time.
+          translation:
+            vi: Nếu không vì trời mưa, trận đấu đã kết thúc đúng giờ.
+      confusion:
+        vi: Không viết Hadn't it been for… trong văn trang trọng; giữ not sau chủ ngữ - Had it not been for.
+
+  - key: en:item:be-that-as-it-may
+    type: phrase
+    level: c2
+    difficulty: 5
+    skill_tags: [writing, speaking]
+    front:
+      text: Be that as it may, …
+      ipa: /biː ðæt əz ɪt meɪ/
+      pos: cụm trang trọng
+    back:
+      meaning:
+        vi: Dù có như vậy đi nữa, … (thừa nhận ý của người khác rồi chuyển sang ý ngược lại).
+      examples:
+        - target: The plan is expensive. Be that as it may, we cannot afford to delay any longer.
+          translation:
+            vi: Kế hoạch đúng là tốn kém. Dù vậy, chúng ta không thể trì hoãn thêm nữa.
+      confusion:
+        vi: Đây là giả định cách cố định (be, không phải is). Trang trọng hơn nhiều so với Even so hay Still.
+
+  - key: en:item:come-what-may
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: come what may
+      ipa: /kʌm wɒt meɪ/ · US /kʌm wɑːt meɪ/
+      pos: cụm cố định
+    back:
+      meaning:
+        vi: Dù có chuyện gì xảy ra đi nữa, bất chấp mọi chuyện.
+      examples:
+        - target: Come what may, I'll be there for you.
+          translation:
+            vi: Dù có chuyện gì xảy ra, anh vẫn sẽ ở bên em.
+      confusion:
+        vi: Trật tự cố định come what may, không đổi thành what may come trong nghĩa này.
+
+  - key: en:item:if-need-be
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [writing, speaking]
+    front:
+      text: if need be
+      ipa: /ɪf niːd biː/
+      pos: cụm cố định
+    back:
+      meaning:
+        vi: Nếu cần thiết (= if necessary).
+      examples:
+        - target: We can extend the deadline by a week if need be.
+          translation:
+            vi: Nếu cần, chúng ta có thể lùi hạn chót một tuần.
+      confusion:
+        vi: Giữ nguyên be (giả định cách cố định), không nói if need is hay if needs be (needs be ít gặp hơn, chỉ ở Anh).
+
+  # ---------------- Bài 4: tỉnh lược, thay thế, nói giảm & nhấn mạnh ----------------
+  - key: en:item:substitution-so-not
+    type: grammar_point
+    level: c2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: "I think so / I hope not / I'm afraid so"
+      pos: thay thế mệnh đề bằng so / not
+    back:
+      meaning:
+        vi: So thay cho cả một mệnh đề khẳng định, not thay cho mệnh đề phủ định sau think, hope, suppose, expect, be afraid.
+      examples:
+        - target: "\"Will it rain tomorrow?\" \"I hope not.\""
+          translation:
+            vi: “Mai có mưa không?” “Mong là không.”
+        - target: "\"Is the meeting cancelled?\" \"I'm afraid so.\""
+          translation:
+            vi: “Cuộc họp bị huỷ à?” “Tiếc là đúng vậy.”
+      confusion:
+        vi: Không nói I think it hay I hope no. Với think, dạng phủ định tự nhiên là I don't think so; I hope không có dạng I don't hope so.
+
+  - key: en:item:do-so
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: do so
+      ipa: UK /duː səʊ/ · US /duː soʊ/
+      pos: thay thế cụm động từ
+    back:
+      meaning:
+        vi: Làm như vậy - thay cho cả cụm động từ đã nhắc, tránh lặp lại (trang trọng).
+      examples:
+        - target: Employees who wish to work from home may do so on Fridays.
+          translation:
+            vi: Nhân viên muốn làm việc tại nhà có thể làm vậy vào thứ Sáu.
+      confusion:
+        vi: Do so thay cho hành động có chủ ý, không dùng với động từ trạng thái như know, like - nói He knows the answer, and so do I, không nói and I do so too.
+
+  - key: en:item:substitution-one
+    type: grammar_point
+    level: c2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: one / ones
+      ipa: /wʌn/ · /wʌnz/
+      pos: đại từ thay thế
+    back:
+      meaning:
+        vi: One/ones thay cho danh từ đếm được đã nhắc để tránh lặp (the blue one, the new ones).
+      examples:
+        - target: This laptop is too slow; I need a faster one.
+          translation:
+            vi: Laptop này chậm quá; tôi cần một cái nhanh hơn.
+      confusion:
+        vi: Không dùng one cho danh từ không đếm được - nói I prefer fresh milk to long-life milk, không nói to the long-life one. Sau a + tính từ thì phải có one - a faster one, không nói a faster.
+
+  - key: en:item:ellipsis-auxiliary
+    type: grammar_point
+    level: c2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: "…and she did. / …but I can't. / …so has he."
+      pos: tỉnh lược sau trợ động từ
+    back:
+      meaning:
+        vi: Bỏ phần động từ đã nhắc, chỉ giữ trợ động từ (do, have, can, will, be…) để câu gọn, tự nhiên.
+      examples:
+        - target: She said she would finish the report on time, and she did.
+          translation:
+            vi: Cô ấy nói sẽ hoàn thành báo cáo đúng hạn, và cô ấy đã làm được.
+        - target: I'd love to help, but I can't.
+          translation:
+            vi: Tôi rất muốn giúp nhưng không được.
+      confusion:
+        vi: Tiếng Việt hay lặp lại động từ hoặc dùng "làm vậy"; tiếng Anh chỉ cần trợ động từ đúng thì - and she did, không phải and she finished it on time too.
+
+  - key: en:item:understatement
+    type: grammar_point
+    level: c2
+    difficulty: 4
+    skill_tags: [speaking, vocabulary]
+    front:
+      text: understatement (nói giảm)
+      ipa: UK /ˈʌndəsteɪtmənt/ · US /ˈʌndɚsteɪtmənt/
+      pos: lối nói
+    back:
+      meaning:
+        vi: Cách nói nhẹ đi so với thực tế (thường kiểu Anh) để lịch sự, khiêm tốn hoặc mỉa mai - a bit of a problem có thể là "rắc rối lớn".
+      examples:
+        - target: "\"How was the flight?\" \"Not the most relaxing experience.\" (= it was awful)"
+          translation:
+            vi: “Chuyến bay thế nào?” “Không phải trải nghiệm thư thái nhất.” (= rất tệ)
+      confusion:
+        vi: Người nghe phải hiểu ngầm mức độ thật; nếu hiểu theo nghĩa đen, bạn sẽ đánh giá sai sự nghiêm trọng của vấn đề.
+
+  - key: en:item:not-bad-at-all
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: not bad at all
+      ipa: /nɒt bæd ət ɔːl/ · US /nɑːt bæd ət ɔːl/
+      pos: cụm nói giảm
+    back:
+      meaning:
+        vi: Khá tốt, tốt hơn mong đợi (lời khen kín đáo, thường mạnh hơn "good").
+      examples:
+        - target: "\"What did you think of my presentation?\" \"Not bad at all - very clear.\""
+          translation:
+            vi: “Anh thấy bài thuyết trình của em thế nào?” “Khá lắm đấy - rất rõ ràng.”
+      confusion:
+        vi: Not bad không có nghĩa là "tạm được"; với ngữ điệu nhấn và at all, đây là lời khen thật.
+
+  - key: en:item:a-bit-of-a
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [speaking]
+    front:
+      text: a bit of a + N
+      ipa: /ə bɪt əv ə/
+      pos: cụm nói giảm
+    back:
+      meaning:
+        vi: Hơi là… - làm nhẹ một nhận xét tiêu cực (a bit of a problem, a bit of a mess); thực tế thường nghiêm trọng hơn.
+      examples:
+        - target: We've got a bit of a problem with the server - it's been down all morning.
+          translation:
+            vi: Ta đang gặp chút trục trặc với máy chủ - nó sập cả buổi sáng rồi.
+      confusion:
+        vi: Sau a bit of a là danh từ (a bit of a shock); với tính từ dùng a bit (a bit late), không nói a bit of a late.
+
+  - key: en:item:not-exactly
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [speaking]
+    front:
+      text: not exactly / hardly + adj
+      ipa: /nɒt ɪɡˈzæktli/ · US /nɑːt ɪɡˈzæktli/
+      pos: cụm mỉa mai, nói giảm
+    back:
+      meaning:
+        vi: Không hẳn là… - lối nói mỉa mai nghĩa là "hoàn toàn không" (It's not exactly cheap = rất đắt).
+      examples:
+        - target: Three hours in traffic is hardly ideal.
+          translation:
+            vi: Ba tiếng kẹt xe thì chẳng lý tưởng chút nào.
+        - target: He's not exactly the most punctual person I know.
+          translation:
+            vi: Anh ta chẳng phải người đúng giờ gì cho cam.
+      confusion:
+        vi: Hardly là "hầu như không", không phải "chăm chỉ" (hard). Hardly ideal = rất không lý tưởng.
+
+  - key: en:item:the-very
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: the very + N
+      ipa: /ðə ˈveri/
+      pos: nhấn mạnh danh từ
+    back:
+      meaning:
+        vi: Chính là, đúng ngay… (the very person, the very beginning, the very thought).
+      examples:
+        - target: That's the very book I was looking for.
+          translation:
+            vi: Đó chính là cuốn sách tôi đang tìm.
+        - target: The very thought of public speaking makes him nervous.
+          translation:
+            vi: Chỉ nghĩ đến chuyện nói trước đám đông thôi là anh ấy đã run.
+      confusion:
+        vi: Very ở đây là tính từ đứng sau the và trước danh từ, không phải trạng từ "rất". Tương đương "chính", "ngay".
+
+  - key: en:item:emphatic-do
+    type: grammar_point
+    level: c2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: do / does / did + V (nhấn mạnh)
+      pos: trợ động từ nhấn mạnh
+    back:
+      meaning:
+        vi: Thêm do/does/did trước động từ nguyên mẫu trong câu khẳng định để nhấn mạnh, phản bác hoặc thể hiện sự chân thành.
+      examples:
+        - target: I did send the email - check your spam folder.
+          translation:
+            vi: Tôi có gửi email thật mà - bạn xem thư mục thư rác đi.
+        - target: She does work hard, even if it doesn't always show.
+          translation:
+            vi: Cô ấy thực sự làm việc chăm chỉ, dù không phải lúc nào cũng thấy rõ.
+      pronunciation_note:
+        vi: Khi nói, nhấn mạnh trợ động từ - I DID send it.
+      confusion:
+        vi: Sau do/does/did nhấn mạnh là động từ nguyên mẫu - she does work, không phải she does works; I did send, không phải I did sent.
+
+  - key: en:item:whatsoever
+    type: vocab
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: whatsoever
+      ipa: UK /ˌwɒtsəʊˈevə/ · US /ˌwʌtsoʊˈevɚ/
+      pos: trạng từ nhấn mạnh
+    back:
+      meaning:
+        vi: Gì cả, chút nào (nhấn mạnh phủ định), đứng sau danh từ - no doubt whatsoever.
+      examples:
+        - target: There is no evidence whatsoever to support the claim.
+          translation:
+            vi: Không hề có bằng chứng nào ủng hộ khẳng định đó.
+      confusion:
+        vi: Chỉ dùng sau no/any + danh từ hoặc nothing/none (no interest whatsoever); không đứng đầu câu và không dùng trong câu khẳng định.
+
+  # ---------------- Bài 5: ôn tập ----------------
+  - key: en:item:to-put-it-mildly
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: to put it mildly
+      ipa: /tə pʊt ɪt ˈmaɪldli/
+      pos: cụm nói giảm
+    back:
+      meaning:
+        vi: Nói nhẹ nhàng thì… (báo hiệu thực tế còn tệ hơn lời mình nói).
+      examples:
+        - target: The launch was, to put it mildly, a disappointment.
+          translation:
+            vi: Nói nhẹ nhàng thì buổi ra mắt là một sự thất vọng.
+      confusion:
+        vi: Cụm này luôn đi kèm nhận xét tiêu cực; không dùng để khen.
+
+  - key: en:item:for-what-its-worth
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: for what it's worth
+      ipa: UK /fə wɒt ɪts wɜːθ/ · US /fɚ wʌt ɪts wɝːθ/
+      pos: cụm khiêm tốn
+    back:
+      meaning:
+        vi: Nói cho có thôi chứ… / Ý kiến của tôi thì… - đưa ra ý kiến một cách khiêm tốn, không áp đặt.
+      examples:
+        - target: For what it's worth, I think you made the right decision.
+          translation:
+            vi: Nếu ý kiến của tôi có chút giá trị nào, tôi nghĩ bạn đã quyết định đúng.
+      confusion:
+        vi: Hay dùng trong email, tin nhắn công việc để làm mềm góp ý; it's ở đây là it is, không phải its.

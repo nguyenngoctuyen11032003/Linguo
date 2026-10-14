@@ -1,0 +1,412 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:idioms-phrasal-verbs
+order_index: 2
+level: c2
+title:
+  vi: Thành ngữ & cụm động từ nhiều nghĩa
+objectives:
+  - vi: Hiểu và dùng đúng ngữ cảnh các thành ngữ thông dụng - the elephant in the room, cut corners, a blessing in disguise, beat around the bush, by and large, on the fence.
+  - vi: Nhận ra nghĩa đúng của cụm động từ nhiều nghĩa - come across, pick up, turn down, carry off.
+  - vi: Tránh dịch sát chữ thành ngữ tiếng Việt và tránh lạm dụng thành ngữ trong văn trang trọng.
+estimated_minutes: 20
+skills: [vocabulary, speaking, reading, writing]
+prerequisites: [en:lesson:near-synonyms-connotation]
+items:
+  - item: en:item:idiom-register
+  - item: en:item:literal-idiom-translation
+  - item: en:item:elephant-in-the-room
+  - item: en:item:cut-corners
+  - item: en:item:blessing-in-disguise
+  - item: en:item:beat-around-the-bush
+  - item: en:item:by-and-large
+  - item: en:item:on-the-fence
+  - item: en:item:come-across
+  - item: en:item:pick-up-senses
+  - item: en:item:turn-down
+  - item: en:item:carry-off
+  - item: en:item:pick-up
+    role: reuse
+  - item: en:item:register-shift
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Người học C2 không chỉ biết nghĩa thành ngữ mà còn biết khi nào nên dùng và khi nào không. Sau bài này, bạn dùng được sáu thành ngữ thông dụng và bốn cụm động từ nhiều nghĩa đúng ngữ cảnh.
+  - type: explain
+    text:
+      vi: Thành ngữ (idiom) có nghĩa không suy ra được từ từng chữ - cut corners không phải "cắt góc" mà là "làm ẩu, bớt xén". Thành ngữ là cụm cố định - không đổi mạo từ, số ít/số nhiều hay trật tự từ (by and large, không phải by and big).
+  - type: explain
+    text:
+      vi: Tiếng Việt rất giàu thành ngữ, nhưng dịch sát chữ ("nước đổ đầu vịt" → water on a duck's head) thì người bản ngữ không hiểu. Hãy tìm thành ngữ tương đương (like water off a duck's back) hoặc nói thẳng ý.
+  - type: explain
+    text:
+      vi: Cụm động từ (phrasal verb) thường có nhiều nghĩa tuỳ ngữ cảnh. Come across là "tình cờ gặp" hoặc "tạo ấn tượng" (come across as), turn down là "từ chối" hoặc "vặn nhỏ", carry off là "làm thành công" hoặc "giành giải".
+  - type: deep_explain
+    text:
+      vi: Phần lớn thành ngữ và cụm động từ mang văn phong thân mật đến trung tính. Trong báo cáo hay bài luận, by and large vẫn chấp nhận được, nhưng beat around the bush, cut corners nên thay bằng avoid the issue, compromise on quality. Một bài viết dày đặc thành ngữ nghe sáo rỗng, giống "văn mẫu".
+  - type: example
+    target: "Let's address the elephant in the room: we simply don't have the budget for this."
+    target_lang: en
+    translation:
+      vi: "Hãy nói thẳng vào điều ai cũng biết: đơn giản là chúng ta không có ngân sách cho việc này."
+    note:
+      vi: Address the elephant in the room là cách mở lời khi muốn nêu vấn đề tế nhị mà mọi người đang né.
+  - type: example
+    target: Missing the train was a blessing in disguise - I met my future business partner at the station café.
+    target_lang: en
+    translation:
+      vi: Lỡ chuyến tàu hoá ra lại là trong rủi có may - tôi gặp người cộng sự tương lai ở quán cà phê nhà ga.
+    note:
+      vi: Tương đương "trong cái rủi có cái may"; không dịch "tái ông mất ngựa" sát chữ.
+  - type: example
+    target: I'm still on the fence about moving to Da Nang.
+    target_lang: en
+    translation:
+      vi: Tôi vẫn đang phân vân chuyện chuyển ra Đà Nẵng.
+    note:
+      vi: Be on the fence about + danh từ/V-ing.
+  - type: example
+    target: She comes across as quite strict, but her students adore her.
+    target_lang: en
+    translation:
+      vi: Cô ấy trông có vẻ khá nghiêm khắc, nhưng học trò rất quý cô.
+    note:
+      vi: Come across as + tính từ = tạo ấn tượng là.
+  - type: example
+    target: It was a risky speech, but he carried it off brilliantly.
+    target_lang: en
+    translation:
+      vi: Đó là một bài phát biểu mạo hiểm, nhưng anh ấy đã thể hiện xuất sắc.
+    note:
+      vi: Carry it off = làm thành công một việc khó.
+  - type: common_mistake
+    wrong: Don't beat the bush, just tell me the truth.
+    right: Don't beat around the bush, just tell me the truth.
+    target_lang: en
+    note:
+      vi: Thành ngữ là cụm cố định - phải có around (hoặc about trong tiếng Anh Anh).
+  - type: common_mistake
+    wrong: He comes across rude in emails.
+    right: He comes across as rude in emails.
+    target_lang: en
+    note:
+      vi: Nghĩa "tạo ấn tượng là" cần as trước tính từ.
+  - type: common_mistake
+    wrong: They turned down it because the salary was too low.
+    right: They turned it down because the salary was too low.
+    target_lang: en
+    note:
+      vi: Với đại từ (it, him, them), đặt giữa turn và down.
+  - type: common_mistake
+    wrong: "In conclusion, the government must stop beating around the bush and bite the bullet, because every cloud has a silver lining."
+    right: In conclusion, the government must address the issue directly and take decisive action.
+    target_lang: en
+    note:
+      vi: Kết luận bài luận trang trọng không nên nhồi thành ngữ; dùng cách nói thẳng nghĩa.
+  - type: summary
+    points:
+      - vi: Thành ngữ là cụm cố định - giữ nguyên mạo từ, số nhiều và trật tự (cut corners, by and large).
+      - vi: Không dịch sát chữ thành ngữ tiếng Việt; tìm cụm tương đương hoặc nói thẳng ý.
+      - vi: come across (tình cờ gặp / come across as - tạo ấn tượng), pick up (học lỏm, khởi sắc), turn down (từ chối, vặn nhỏ), carry off (làm thành công, giành giải).
+      - vi: Với đại từ, tách cụm động từ - turn it down, carry it off.
+      - vi: Văn trang trọng - hạn chế thành ngữ; by and large chấp nhận được, beat around the bush thì không.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:idiom-mcq-cut-corners
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:cut-corners
+    prompt:
+      stem: "\"The contractor clearly cut corners on the wiring.\" Câu này có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: r4t, text: "Nhà thầu rõ ràng đã làm ẩu, bớt xén khâu đi dây điện.", lang: vi }
+        - { id: b7y, text: Nhà thầu rõ ràng đã đi dây điện vòng qua các góc tường., lang: vi }
+        - { id: j2u, text: Nhà thầu rõ ràng đã tiết kiệm được nhiều tiền cho chủ nhà., lang: vi }
+        - { id: o9i, text: Nhà thầu rõ ràng đã hoàn thành phần dây điện rất nhanh và cẩn thận., lang: vi }
+    answer:
+      correct_option_id: r4t
+    explanation:
+      vi: Cut corners là làm ẩu, bỏ bớt khâu cần thiết để tiết kiệm thời gian hay chi phí - nghĩa tiêu cực. Không hiểu theo nghĩa đen "cắt góc".
+    display_answer: Nhà thầu rõ ràng đã làm ẩu, bớt xén khâu đi dây điện.
+
+  - key: en:exercise:idiom-mcq-come-across
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:come-across
+    prompt:
+      stem: "Trong câu nào, come across có nghĩa là \"tạo ấn tượng là\"?"
+      stem_lang: vi
+      options:
+        - { id: a8s, text: "Her emails come across as rather cold.", lang: en }
+        - { id: l3d, text: "I came across this café by accident.", lang: en }
+        - { id: w6f, text: "Have you ever come across the word 'serendipity'?", lang: en }
+        - { id: e1g, text: "We came across a few problems during testing.", lang: en }
+    answer:
+      correct_option_id: a8s
+    explanation:
+      vi: Come across as + tính từ (as rather cold) là "tạo ấn tượng là". Ba câu còn lại có tân ngữ trực tiếp (this café, the word, a few problems) nên mang nghĩa "tình cờ gặp, bắt gặp".
+    display_answer: "Her emails come across as rather cold."
+
+  - key: en:exercise:idiom-listen-blessing
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:blessing-in-disguise
+    prompt:
+      audio_asset_id: null
+      fallback_text: Being made redundant turned out to be a blessing in disguise, because I finally started my own company.
+      options:
+        - { id: c5h, text: "Bị cắt giảm biên chế hoá ra lại là trong rủi có may, vì cuối cùng tôi cũng mở được công ty riêng.", lang: vi }
+        - { id: m2k, text: Bị cắt giảm biên chế là một cú sốc lớn khiến tôi phải đóng cửa công ty riêng., lang: vi }
+        - { id: z7l, text: Được thăng chức là một phần thưởng bất ngờ cho công ty riêng của tôi., lang: vi }
+        - { id: t4p, text: Bị cắt giảm biên chế là điều tôi đã giấu mọi người khi mở công ty riêng., lang: vi }
+    answer:
+      correct_option_id: c5h
+    explanation:
+      vi: A blessing in disguise là điều tưởng xui hoá ra may. In disguise không liên quan đến "giấu giếm" ở đây; cả cụm là một thành ngữ.
+    display_answer: Bị cắt giảm biên chế hoá ra lại là trong rủi có may, vì cuối cùng tôi cũng mở được công ty riêng.
+
+  - key: en:exercise:idiom-fill-fence-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:on-the-fence
+    prompt:
+      template: "I'm still on the {{b1}} about the offer, so I won't beat around the {{b2}}: I need more time."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Tôi vẫn đang phân vân về lời đề nghị, nên tôi nói thẳng luôn: tôi cần thêm thời gian."
+        - "Gợi ý: ô 1 là \"hàng rào\" (f…), ô 2 là \"bụi cây\" (b…)."
+    answer:
+      blanks:
+        b1: [fence]
+        b2: [bush]
+    known_wrong:
+      - answer: wall
+        feedback_vi: Thành ngữ cố định là on the fence (hàng rào), không phải wall.
+        error_tag: idiom_form
+      - answer: bushes
+        feedback_vi: Thành ngữ dùng số ít - beat around the bush.
+        error_tag: idiom_form
+      - answer: tree
+        feedback_vi: Thành ngữ cố định là beat around the bush, không phải tree.
+        error_tag: idiom_form
+    explanation:
+      vi: On the fence là "đang phân vân, chưa chọn bên". I won't beat around the bush là "tôi sẽ không vòng vo". Cả hai là cụm cố định, không đổi từ.
+    display_answer: "I'm still on the fence about the offer, so I won't beat around the bush: I need more time."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:idiom-fill-phrasal-meanings
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:pick-up-senses
+    prompt:
+      template: "Business usually {{b1}} up before Tet. Last year we were so busy that I had to turn {{b2}} two new clients."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [picks]
+        b2: [down, away]
+    known_wrong:
+      - answer: pick
+        feedback_vi: Chủ ngữ Business là số ít, thì hiện tại đơn - picks up.
+        error_tag: subject_verb_agreement
+      - answer: picked
+        feedback_vi: Usually diễn tả thói quen hiện tại nên dùng hiện tại đơn - picks up.
+        error_tag: tense
+      - answer: off
+        feedback_vi: Turn off là "tắt"; "từ chối khách" là turn down (hoặc turn away).
+        error_tag: phrasal_verb
+    explanation:
+      vi: Pick up không có tân ngữ nghĩa là "khởi sắc, tăng lên". Turn down nghĩa là "từ chối"; turn away là "không tiếp nhận, khước từ" - cả hai hợp với clients.
+    display_answer: Business usually picks up before Tet. Last year we were so busy that I had to turn down two new clients.
+
+  - key: en:exercise:idiom-translate-elephant
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:elephant-in-the-room
+    prompt:
+      source_text: "Chúng ta cần nói thẳng vào vấn đề ai cũng biết mà không ai nhắc tới: doanh số đang giảm. (dùng thành ngữ)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "We need to address the elephant in the room: sales are falling."
+        - "We need to address the elephant in the room: sales are declining."
+        - "We need to address the elephant in the room: sales are dropping."
+        - "We need to talk about the elephant in the room: sales are falling."
+        - "We need to talk about the elephant in the room: sales are declining."
+        - "We need to address the elephant in the room - sales are falling."
+        - "We need to address the elephant in the room, which is that sales are falling."
+        - "We need to address the elephant in the room: sales are going down."
+        - "We need to discuss the elephant in the room: sales are falling."
+        - "We have to address the elephant in the room: sales are falling."
+        - "We must address the elephant in the room: sales are falling."
+        - "We need to address the elephant in the room: our sales are falling."
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: "We need to address an elephant in the room: sales are falling."
+        feedback_vi: Thành ngữ cố định dùng the - the elephant in the room.
+        error_tag: idiom_form
+      - answer: "We need to address the elephant in the house: sales are falling."
+        feedback_vi: Thành ngữ cố định là the elephant in the room.
+        error_tag: idiom_form
+    explanation:
+      vi: The elephant in the room là vấn đề hiển nhiên mà mọi người né tránh; động từ hay đi kèm là address hoặc talk about. Dấu hai chấm giới thiệu chính vấn đề đó.
+    display_answer: "We need to address the elephant in the room: sales are falling."
+
+  - key: en:exercise:idiom-translate-to-vi-by-and-large
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:by-and-large
+    prompt:
+      source_text: By and large, the new system has been well received by staff.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhìn chung, hệ thống mới được nhân viên đón nhận tích cực.
+        - Nhìn chung, hệ thống mới đã được nhân viên đón nhận tích cực.
+        - Nhìn chung, hệ thống mới được nhân viên đón nhận tốt.
+        - Nhìn chung, hệ thống mới đã được nhân viên đón nhận tốt.
+        - Nói chung, hệ thống mới được nhân viên đón nhận tích cực.
+        - Nói chung, hệ thống mới đã được nhân viên đón nhận tốt.
+        - Nhìn chung, nhân viên đón nhận hệ thống mới khá tích cực.
+        - Nhìn chung, nhân viên đã đón nhận hệ thống mới một cách tích cực.
+        - Về tổng thể, hệ thống mới được nhân viên đón nhận tích cực.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bằng cách lớn, hệ thống mới được nhân viên đón nhận tích cực.
+        feedback_vi: By and large là thành ngữ "nhìn chung", không dịch sát chữ.
+        error_tag: literal_translation
+    explanation:
+      vi: By and large = on the whole = nhìn chung. Well received là "được đón nhận tốt/tích cực".
+    display_answer: Nhìn chung, hệ thống mới được nhân viên đón nhận tích cực.
+
+  # ---------------- application ----------------
+  - key: en:exercise:idiom-mcq-literal
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:literal-idiom-translation
+    prompt:
+      stem: "Bạn muốn nói với đồng nghiệp người Anh rằng nhắc nhở anh Nam bao nhiêu lần cũng như \"nước đổ đầu vịt\". Câu nào tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: s6q, text: "Reminding Nam is pointless - it's like water off a duck's back.", lang: en }
+        - { id: f2w, text: "Reminding Nam is like pouring water on a duck's head.", lang: en }
+        - { id: h9e, text: "Reminding Nam is a blessing in disguise.", lang: en }
+        - { id: u3r, text: "Reminding Nam is the elephant in the room.", lang: en }
+    answer:
+      correct_option_id: s6q
+    explanation:
+      vi: Tiếng Anh có thành ngữ gần giống - like water off a duck's back (nói gì cũng chẳng ảnh hưởng). Dịch sát chữ "pouring water on a duck's head" khiến người nghe khó hiểu; hai thành ngữ còn lại sai nghĩa.
+    display_answer: "Reminding Nam is pointless - it's like water off a duck's back."
+
+  - key: en:exercise:idiom-mcq-register
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:idiom-register
+    prompt:
+      stem: "Câu nào phù hợp nhất cho kết luận của một báo cáo gửi hội đồng quản trị?"
+      stem_lang: vi
+      options:
+        - { id: k8z, text: "The supplier appears to have compromised on quality in order to reduce costs.", lang: en }
+        - { id: d4x, text: "The supplier cut corners big time to save a few bucks.", lang: en }
+        - { id: p1c, text: "The supplier beat around the bush and cut corners, which was a blessing in disguise.", lang: en }
+        - { id: g5v, text: "The supplier was on the fence about quality, so they cut the corners.", lang: en }
+    answer:
+      correct_option_id: k8z
+    explanation:
+      vi: Báo cáo trang trọng nên nói thẳng nghĩa và rào đón (appears to, compromised on quality). Big time, a few bucks quá thân mật; câu nhồi nhiều thành ngữ sáo rỗng và sai nghĩa; cut the corners sai dạng thành ngữ.
+    display_answer: "The supplier appears to have compromised on quality in order to reduce costs."
+
+  - key: en:exercise:idiom-order-carry-off
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:carry-off
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Đó là một vai diễn khó, nhưng cô ấy đã thể hiện thành công một cách xuất sắc.\""
+      tokens:
+        - { id: c-off, text: off }
+        - { id: c-difficult, text: a difficult role }
+        - { id: c-she, text: she }
+        - { id: c-it, text: it }
+        - { id: c-but, text: but }
+        - { id: c-was, text: It was }
+        - { id: c-carried, text: carried }
+        - { id: c-brilliantly, text: brilliantly }
+        - { id: c-out, text: out }
+    answer:
+      orders:
+        - [c-was, c-difficult, c-but, c-she, c-carried, c-it, c-off, c-brilliantly]
+    explanation:
+      vi: Carry it off là "làm thành công một việc khó"; đại từ it đặt giữa carried và off. Carry out là "thực hiện" (kế hoạch, nghiên cứu), không hợp với vai diễn.
+    display_answer: It was a difficult role, but she carried it off brilliantly.
+
+  - key: en:exercise:idiom-translate-turn-down
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:turn-down
+    prompt:
+      source_text: Cô ấy đã từ chối lời mời làm việc vì không muốn chuyển nhà.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - She turned down the job offer because she didn't want to move house.
+        - She turned down the job offer because she did not want to move house.
+        - She turned the job offer down because she didn't want to move house.
+        - She turned down the job offer because she didn't want to move.
+        - She turned down the job offer because she did not want to move.
+        - She turned down the job offer as she didn't want to move house.
+        - She turned down the job offer since she didn't want to move house.
+        - She turned down the job offer because she didn't want to relocate.
+        - She turned down the job offer because she did not want to relocate.
+        - She turned down the job because she didn't want to move house.
+        - She turned down the offer because she didn't want to move house.
+        - She declined the job offer because she didn't want to move house.
+        - She declined the job offer because she did not want to relocate.
+        - She refused the job offer because she didn't want to move house.
+        - She turned down the job offer because she didn't want to move home.
+        - She turned down the job offer because she didn't want to move away.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: She turned off the job offer because she didn't want to move house.
+        feedback_vi: Turn off là "tắt"; "từ chối" là turn down.
+        error_tag: phrasal_verb
+    explanation:
+      vi: Turn down/decline đi tự nhiên với an offer, an invitation. Với danh từ, có thể đặt the job offer trước hoặc sau down.
+    display_answer: She turned down the job offer because she didn't want to move house.

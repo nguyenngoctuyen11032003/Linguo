@@ -1,0 +1,487 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:stories-news-review
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập - Một bản tin và một câu chuyện có thật
+objectives:
+  - vi: Đọc hiểu một bản tin ngắn và kể lại bằng câu đầy đủ ở quá khứ.
+  - vi: Kể một câu chuyện cá nhân với đủ ba thì kể chuyện, từ nối và mệnh đề quan hệ.
+  - vi: Phản ứng tự nhiên khi nghe kể - Really? No way! That's terrible!
+estimated_minutes: 15
+skills: [reading, speaking, writing, listening]
+prerequisites: [en:lesson:stories-news-news-relative-clauses]
+items:
+  - item: en:item:rescue
+  - item: en:item:firefighter
+  - item: en:item:was-were-ing
+    role: reuse
+  - item: en:item:when-while-interrupted
+    role: reuse
+  - item: en:item:had-past-participle
+    role: reuse
+  - item: en:item:by-the-time
+    role: reuse
+  - item: en:item:narrative-tenses
+    role: reuse
+  - item: en:item:in-the-end
+    role: reuse
+  - item: en:item:at-first
+    role: reuse
+  - item: en:item:luckily
+    role: reuse
+  - item: en:item:relative-who-which-that
+    role: reuse
+  - item: en:item:according-to
+    role: reuse
+  - item: en:item:report
+    role: reuse
+  - item: en:item:witness
+    role: reuse
+  - item: en:item:injured
+    role: reuse
+  - item: en:item:notice
+    role: reuse
+  - item: en:item:realise
+    role: reuse
+  - item: en:item:wallet
+    role: reuse
+  - item: en:item:no-way
+    role: reuse
+  - item: en:item:really-reaction
+    role: reuse
+  - item: en:item:what-happened-next
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được một bản tin ngắn, kể lại một câu chuyện của chính mình và đáp lời khi người khác kể - dùng mọi điểm ngữ pháp của unit.
+  - type: explain
+    text:
+      vi: "Bản tin và câu chuyện cá nhân dùng cùng một bộ công cụ: was/were + V-ing cho bối cảnh, quá khứ đơn cho sự việc chính, had + V3 cho việc đã xảy ra trước. Khác biệt là bản tin hay dùng according to, a witness said… và mệnh đề who/which để thêm thông tin chính xác."
+  - type: explain
+    text:
+      vi: "Khi đọc tin, hãy tìm năm ý: chuyện gì xảy ra (what happened), ở đâu, khi nào, ai liên quan, kết quả ra sao (in the end…). Khi kể lại, đừng chép kiểu tít báo (Fire Hits Market) mà chuyển thành câu quá khứ đầy đủ (A fire broke out at a market)."
+  - type: explain
+    text:
+      vi: "Hai từ mới trong bản tin: firefighter (lính cứu hoả) và rescue (giải cứu). Fire broke out là \"đám cháy bùng phát\" - một cách nói rất hay gặp trong tin tức."
+  - type: deep_explain
+    text:
+      vi: "Kiểm tra nhanh trước khi kể: có was/were đi kèm -ing chưa; had có đứng trước V3 chưa và có thật sự cần không; sau who/which có lặp chủ ngữ không; có lỡ nói was happened hay in the end of không. Đây là bốn lỗi người Việt hay gặp nhất ở trình độ B1."
+  - type: example
+    target: "FIRE AT DA NANG MARKET - NO ONE INJURED. A fire broke out at a market in Da Nang early on Sunday morning. According to the police, it started in a shop which sold clothes."
+    target_lang: en
+    translation:
+      vi: "CHÁY CHỢ Ở ĐÀ NẴNG - KHÔNG AI BỊ THƯƠNG. Một đám cháy đã bùng phát tại một khu chợ ở Đà Nẵng vào sáng sớm Chủ nhật. Theo cảnh sát, đám cháy bắt đầu từ một cửa hàng bán quần áo."
+    note:
+      vi: Tít báo bỏ mạo từ; thân bài dùng quá khứ đơn, according to cho nguồn tin, which sold clothes nói rõ cửa hàng nào.
+  - type: example
+    target: "Firefighters arrived at 5:15 a.m., but by that time the fire had spread to three other shops. A witness who lives opposite the market said she was making breakfast when she noticed the smoke."
+    target_lang: en
+    translation:
+      vi: "Lính cứu hoả đến lúc 5 giờ 15 sáng, nhưng khi đó lửa đã lan sang ba cửa hàng khác. Một nhân chứng sống đối diện chợ cho biết bà đang làm bữa sáng thì để ý thấy khói."
+    note:
+      vi: Had spread xảy ra trước lúc lính cứu hoả đến; was making là bối cảnh bị noticed cắt ngang.
+  - type: example
+    target: "Luckily, firefighters rescued two workers who were sleeping inside. In the end, nobody was injured."
+    target_lang: en
+    translation:
+      vi: "May mắn là lính cứu hoả đã giải cứu hai công nhân đang ngủ bên trong. Rốt cuộc, không ai bị thương."
+    note:
+      vi: Luckily báo tin tốt; who were sleeping nói rõ những công nhân nào; in the end kết thúc bản tin.
+  - type: example
+    target: "Last summer I was travelling to Hoi An by train. While I was sleeping, someone took my bag. When I woke up, I realised my phone and wallet had gone. - Really? What happened next?"
+    target_lang: en
+    translation:
+      vi: "Hè năm ngoái mình đi tàu vào Hội An. Trong lúc mình đang ngủ, có người lấy mất túi. Lúc tỉnh dậy, mình nhận ra điện thoại và ví đã mất rồi. - Thật á? Rồi sao nữa?"
+    note:
+      vi: Câu chuyện cá nhân - bối cảnh (was travelling, was sleeping), sự việc (took, woke up, realised), việc xảy ra trước (had gone); người nghe phản hồi Really? What happened next?
+  - type: example
+    target: "At first I panicked, but a woman who was sitting next to me had seen everything. In the end, the police found the man at the next station. - No way! That's so lucky!"
+    target_lang: en
+    translation:
+      vi: "Lúc đầu mình hoảng lắm, nhưng một chị ngồi cạnh mình đã nhìn thấy hết. Cuối cùng, cảnh sát tìm thấy người đàn ông đó ở ga kế tiếp. - Không thể tin được! May quá!"
+    note:
+      vi: At first → in the end dẫn câu chuyện tới kết thúc; No way! thể hiện sự ngạc nhiên thân mật.
+  - type: common_mistake
+    wrong: The fire was happened early on Sunday morning.
+    right: The fire happened early on Sunday morning.
+    target_lang: en
+    note:
+      vi: Happen không có bị động; trong tin tức còn hay dùng broke out (A fire broke out…).
+  - type: common_mistake
+    wrong: A witness who she lives opposite the market said she was make breakfast.
+    right: A witness who lives opposite the market said she was making breakfast.
+    target_lang: en
+    note:
+      vi: Không lặp she sau who; sau was phải là V-ing.
+  - type: common_mistake
+    wrong: In the end of the story, I had got my bag back.
+    right: At the end of the story, I got my bag back.
+    target_lang: en
+    note:
+      vi: Có of thì dùng at the end of. Lấy lại túi là sự việc chính theo thứ tự, nên dùng quá khứ đơn got, không cần had.
+  - type: summary
+    points:
+      - vi: Bối cảnh - was/were + V-ing; sự việc chính - quá khứ đơn; chuyện trước đó - had + V3.
+      - vi: When/while cho hành động bị cắt ngang; by the time + quá khứ đơn, vế kia had + V3.
+      - vi: Từ nối at first, suddenly, meanwhile, eventually, in the end; at the end of + danh từ.
+      - vi: Who/which/that/where nói rõ người, vật, nơi chốn - không lặp chủ ngữ.
+      - vi: Từ tin tức - headline, article, report, according to, accident, injured, witness, journalist, firefighter, rescue; happen không có bị động.
+      - vi: Phản hồi khi nghe kể - Really? No way! That's terrible! What happened next?
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:stories-news-review-listen-train-bag
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:when-while-interrupted
+    prompt:
+      audio_asset_id: null
+      fallback_text: While I was sleeping on the train, someone took my bag.
+      options:
+        - { id: k3r, text: "Trong lúc mình đang ngủ trên tàu, có người lấy mất túi của mình.", lang: vi }
+        - { id: a7n, text: "Mình ngủ trên tàu sau khi có người lấy mất túi.", lang: vi }
+        - { id: z4e, text: "Trong lúc mình đang ngủ trên tàu, mình làm rơi túi.", lang: vi }
+        - { id: w9g, text: "Có người đang lấy túi của mình thì mình tỉnh dậy trên tàu.", lang: vi }
+    answer:
+      correct_option_id: k3r
+    explanation:
+      vi: While I was sleeping là bối cảnh (đang ngủ); someone took my bag là sự việc xen vào (có người lấy túi). Took không phải dropped (làm rơi), và câu không nói mình tỉnh dậy.
+    display_answer: "Trong lúc mình đang ngủ trên tàu, có người lấy mất túi của mình."
+
+  - key: en:exercise:stories-news-review-mcq-spread
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:had-past-participle
+    prompt:
+      stem: "Đọc câu trong bản tin: \"Firefighters arrived at 5:15 a.m., but by that time the fire had spread to three other shops.\" Câu nào đúng với ý của bản tin?"
+      stem_lang: vi
+      options:
+        - { id: d6m, text: "Khi lính cứu hoả đến, lửa đã lan sang ba cửa hàng khác.", lang: vi }
+        - { id: h2t, text: "Lửa lan sang ba cửa hàng khác sau khi lính cứu hoả đến.", lang: vi }
+        - { id: r8b, text: "Lính cứu hoả đến lúc 5 giờ 15 và dập lửa ngay ở cửa hàng đầu tiên.", lang: vi }
+        - { id: c5w, text: "Ba cửa hàng khác bị cháy trước, rồi đám cháy mới lan đến chợ.", lang: vi }
+    answer:
+      correct_option_id: d6m
+    explanation:
+      vi: Had spread cho biết lửa đã lan TRƯỚC mốc lính cứu hoả đến (by that time = đến lúc đó). Vì vậy không phải lửa lan sau khi họ tới, và họ không dập được ngay.
+    display_answer: "Khi lính cứu hoả đến, lửa đã lan sang ba cửa hàng khác."
+
+  - key: en:exercise:stories-news-review-mcq-who-witness
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:relative-who-which-that
+    prompt:
+      stem: "Chọn đáp án đúng: A witness ___ lives opposite the market said she was making breakfast."
+      stem_lang: vi
+      options:
+        - { id: v2q, text: who, lang: en }
+        - { id: n6p, text: who she, lang: en }
+        - { id: e1j, text: which, lang: en }
+        - { id: s7x, text: where, lang: en }
+    answer:
+      correct_option_id: v2q
+    explanation:
+      vi: A witness là người nên dùng who, và who đã làm chủ ngữ của lives nên không thêm she. Which dành cho vật; where cần một chủ ngữ riêng theo sau.
+    display_answer: who
+
+  - key: en:exercise:stories-news-review-fill-smoke-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:notice
+    prompt:
+      template: "She {{b1}} (make) breakfast when she {{b2}} (notice) the smoke."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa của câu: Bà ấy đang làm bữa sáng thì để ý thấy khói."
+        - "Gợi ý: việc dài - was + V-ing; việc ngắn xen vào - quá khứ đơn (thêm -d)."
+    answer:
+      blanks:
+        b1: [was making, was cooking]
+        b2: [noticed]
+    known_wrong:
+      - answer: was make
+        feedback_vi: Sau was cần V-ing - was making.
+        error_tag: past_continuous_missing_ing
+      - answer: made
+        feedback_vi: Làm bữa sáng là bối cảnh đang diễn ra, dùng was making.
+        error_tag: past_continuous_needed
+      - answer: was noticing
+        feedback_vi: Để ý thấy khói là khoảnh khắc ngắn, dùng quá khứ đơn noticed.
+        error_tag: past_continuous_overuse
+      - answer: had noticed
+        feedback_vi: Thấy khói xảy ra trong lúc đang nấu, không phải trước đó, nên không cần had.
+        error_tag: past_perfect_overuse
+    explanation:
+      vi: Làm bữa sáng là việc dài đang diễn ra (was making); thấy khói là việc ngắn cắt ngang (noticed). Hai việc cùng lúc nên không cần had.
+    display_answer: She was making breakfast when she noticed the smoke.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:stories-news-review-fill-rescued
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:rescue
+    prompt:
+      template: "Firefighters {{b1}} (rescue) two workers {{b2}} were sleeping inside. {{b3}}, nobody was injured."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [rescued]
+        b2: [who, that]
+        b3: [In the end, Luckily, Fortunately]
+    known_wrong:
+      - answer: were rescued
+        feedback_vi: Lính cứu hoả là người thực hiện việc cứu, nên dùng chủ động rescued.
+        error_tag: active_passive
+      - answer: who they
+        feedback_vi: Who đã là chủ ngữ của were sleeping, không thêm they.
+        error_tag: relative_pronoun_repeat
+      - answer: which
+        feedback_vi: Two workers là người, dùng who hoặc that.
+        error_tag: who_vs_which
+      - answer: At the end
+        feedback_vi: At the end cần of + danh từ; đứng một mình nghĩa "rốt cuộc" là In the end.
+        error_tag: in_the_end_at_the_end
+    explanation:
+      vi: Firefighters là chủ ngữ thực hiện việc cứu nên dùng rescued. Two workers là người nên dùng who/that, không lặp they. Ô cuối cần từ nối kết thúc tin - in the end hoặc luckily.
+    display_answer: Firefighters rescued two workers who were sleeping inside. In the end, nobody was injured.
+
+  - key: en:exercise:stories-news-review-translate-took-bag
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:was-were-ing
+    prompt:
+      source_text: Trong lúc mình đang ngủ trên tàu, có người lấy mất túi của mình.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - While I was sleeping on the train, someone took my bag.
+        - While I was sleeping on the train, somebody took my bag.
+        - While I was sleeping on the train, someone stole my bag.
+        - While I was sleeping on the train, somebody stole my bag.
+        - While I was asleep on the train, someone took my bag.
+        - While I was asleep on the train, someone stole my bag.
+        - Someone took my bag while I was sleeping on the train.
+        - Someone stole my bag while I was sleeping on the train.
+        - Somebody took my bag while I was sleeping on the train.
+        - Somebody stole my bag while I was sleeping on the train.
+        - When I was sleeping on the train, someone took my bag.
+        - When I was sleeping on the train, someone stole my bag.
+        - While I slept on the train, someone took my bag.
+        - While I slept on the train, someone stole my bag.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: While I was sleep on the train, someone took my bag.
+        feedback_vi: Sau was cần V-ing - was sleeping (hoặc was asleep).
+        error_tag: past_continuous_missing_ing
+      - answer: While I sleeping on the train, someone took my bag.
+        feedback_vi: Thiếu was - while I was sleeping.
+        error_tag: missing_be
+      - answer: While I was sleeping on the train, someone was took my bag.
+        feedback_vi: Lấy túi là việc ngắn, dùng quá khứ đơn took, không thêm was.
+        error_tag: be_with_past_simple
+      - answer: While I was sleeping on the train, someone taked my bag.
+        feedback_vi: Take là động từ bất quy tắc, quá khứ là took.
+        error_tag: irregular_past
+    explanation:
+      vi: Đang ngủ là việc dài - while I was sleeping; lấy túi là việc ngắn - someone took (hoặc stole) my bag. Vế while có thể đứng đầu hoặc cuối câu.
+    display_answer: While I was sleeping on the train, someone took my bag.
+
+  - key: en:exercise:stories-news-review-translate-had-gone
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:had-past-participle
+    prompt:
+      source_text: Khi tỉnh dậy, mình nhận ra là điện thoại và ví đã mất rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - When I woke up, I realised my phone and wallet had gone.
+        - When I woke up, I realized my phone and wallet had gone.
+        - When I woke up, I realised that my phone and wallet had gone.
+        - When I woke up, I realized that my phone and wallet had gone.
+        - When I woke up, I realised my phone and my wallet had gone.
+        - When I woke up, I realised my phone and wallet had disappeared.
+        - When I woke up, I realized my phone and wallet had disappeared.
+        - When I woke up, I realised that my phone and wallet had disappeared.
+        - When I woke up, I realised my phone and wallet were gone.
+        - When I woke up, I realized my phone and wallet were gone.
+        - When I woke up, I realised my phone and wallet were missing.
+        - When I woke up, I realised I had lost my phone and wallet.
+        - When I woke up, I realized I had lost my phone and wallet.
+        - When I woke up, I realised my phone and wallet had been stolen.
+        - When I woke up, I realized my phone and wallet had been stolen.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: When I woke up, I realised my phone and wallet gone.
+        feedback_vi: Thiếu động từ - had gone hoặc were gone.
+        error_tag: missing_verb
+      - answer: When I woke up, I realised my phone and wallet had went.
+        feedback_vi: Sau had dùng V3 - go, went, gone, nên là had gone.
+        error_tag: past_participle_form
+      - answer: When I woke up, I realised my phone and wallet was disappeared.
+        feedback_vi: Disappear không có bị động; nói had disappeared hoặc were gone.
+        error_tag: intransitive_passive
+      - answer: When I wake up, I realised my phone and wallet had gone.
+        feedback_vi: Câu chuyện ở quá khứ - woke up, không phải wake up.
+        error_tag: tense_present_for_past
+    explanation:
+      vi: Tỉnh dậy và nhận ra là hai sự việc chính (woke up, realised). Đồ mất xảy ra trước đó nên dùng had gone hoặc had disappeared; were gone (đã không còn) cũng đúng ý.
+    display_answer: When I woke up, I realised my phone and wallet had gone.
+
+  # ---------------- application ----------------
+  - key: en:exercise:stories-news-review-translate-woman
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:relative-who-which-that
+    prompt:
+      source_text: A woman who was sitting next to me had seen everything.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Một người phụ nữ ngồi cạnh mình đã nhìn thấy hết mọi chuyện.
+        - Một người phụ nữ ngồi cạnh mình đã thấy hết mọi chuyện.
+        - Một người phụ nữ ngồi cạnh tôi đã nhìn thấy mọi chuyện.
+        - Một người phụ nữ ngồi cạnh tôi đã thấy hết mọi chuyện.
+        - Một người phụ nữ đang ngồi cạnh tôi đã nhìn thấy mọi chuyện.
+        - Một người phụ nữ đang ngồi cạnh mình đã thấy hết.
+        - Một người phụ nữ ngồi bên cạnh tôi đã nhìn thấy tất cả.
+        - Một người phụ nữ ngồi bên cạnh mình đã thấy tất cả.
+        - Một chị ngồi cạnh mình đã nhìn thấy hết mọi chuyện.
+        - Một chị ngồi cạnh mình đã thấy hết.
+        - Một người phụ nữ ngồi cạnh tôi đã chứng kiến mọi chuyện.
+        - Một người phụ nữ ngồi cạnh tôi đã chứng kiến tất cả.
+        - Một người phụ nữ ngồi kế bên tôi đã nhìn thấy mọi chuyện.
+        - Một người phụ nữ ngồi cạnh tôi đã nhìn thấy hết.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Who was sitting next to me nói rõ "người phụ nữ nào" - người ngồi cạnh mình. Had seen everything là "đã thấy hết mọi chuyện" từ trước lúc mình tỉnh dậy.
+    display_answer: Một người phụ nữ ngồi cạnh mình đã nhìn thấy hết mọi chuyện.
+
+  - key: en:exercise:stories-news-review-mcq-react-lucky
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:no-way
+    prompt:
+      stem: "Bạn thân kể: \"…and in the end, the police found the man at the next station and I got my bag back!\" Bạn đáp lại thế nào cho tự nhiên?"
+      stem_lang: vi
+      options:
+        - { id: t4h, text: "No way! That's so lucky!", lang: en }
+        - { id: j9c, text: "Oh no, that's terrible!", lang: en }
+        - { id: b3s, text: "Really? What a pity!", lang: en }
+        - { id: u8f, text: "In the end of the story? Congratulations!", lang: en }
+    answer:
+      correct_option_id: t4h
+    explanation:
+      vi: Câu chuyện kết thúc tốt đẹp và bất ngờ, nên No way! That's so lucky! là phù hợp với bạn thân. That's terrible và What a pity dành cho tin xấu; in the end of là lỗi.
+    display_answer: "No way! That's so lucky!"
+
+  - key: en:exercise:stories-news-review-order-spread
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:by-the-time
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Đến lúc lính cứu hoả tới thì lửa đã lan sang ba cửa hàng.\""
+      tokens:
+        - { id: sp-shops, text: shops }
+        - { id: sp-the1, text: the }
+        - { id: sp-had, text: had }
+        - { id: sp-firefighters, text: firefighters }
+        - { id: sp-spreaded, text: spreaded }
+        - { id: sp-fire, text: fire }
+        - { id: sp-by, text: by }
+        - { id: sp-arrived, text: arrived }
+        - { id: sp-three, text: three }
+        - { id: sp-time, text: time }
+        - { id: sp-to, text: to }
+        - { id: sp-the2, text: the }
+        - { id: sp-spread, text: spread }
+    answer:
+      orders:
+        - [sp-by, sp-the1, sp-time, sp-firefighters, sp-arrived, sp-the2, sp-fire, sp-had, sp-spread, sp-to, sp-three, sp-shops]
+        - [sp-by, sp-the2, sp-time, sp-firefighters, sp-arrived, sp-the1, sp-fire, sp-had, sp-spread, sp-to, sp-three, sp-shops]
+        - [sp-the1, sp-fire, sp-had, sp-spread, sp-to, sp-three, sp-shops, sp-by, sp-the2, sp-time, sp-firefighters, sp-arrived]
+        - [sp-the2, sp-fire, sp-had, sp-spread, sp-to, sp-three, sp-shops, sp-by, sp-the1, sp-time, sp-firefighters, sp-arrived]
+    explanation:
+      vi: By the time + quá khứ đơn (firefighters arrived); lửa lan trước đó nên dùng had spread. Spread có ba dạng giống nhau (spread - spread - spread), không có spreaded.
+    display_answer: By the time firefighters arrived, the fire had spread to three shops.
+
+  - key: en:exercise:stories-news-review-translate-report
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:according-to
+    prompt:
+      source_text: Theo bản tin, không ai bị thương trong vụ cháy.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - According to the report, nobody was injured in the fire.
+        - According to the report, no one was injured in the fire.
+        - According to the news report, nobody was injured in the fire.
+        - According to the news report, no one was injured in the fire.
+        - According to the news, nobody was injured in the fire.
+        - According to the news, no one was injured in the fire.
+        - According to the article, nobody was injured in the fire.
+        - According to the article, no one was injured in the fire.
+        - According to the report, nobody was hurt in the fire.
+        - According to the report, no one was hurt in the fire.
+        - According to the report, none of the people were injured in the fire.
+        - Nobody was injured in the fire, according to the report.
+        - No one was injured in the fire, according to the report.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: According to the report, nobody injured in the fire.
+        feedback_vi: Thiếu was - nobody was injured.
+        error_tag: missing_be
+      - answer: According the report, nobody was injured in the fire.
+        feedback_vi: Luôn nói according to, không bỏ to.
+        error_tag: according_to_form
+      - answer: According to the report, nobody were injured in the fire.
+        feedback_vi: Nobody đi với động từ số ít - nobody was.
+        error_tag: was_were_agreement
+      - answer: According to the report, nobody wasn't injured in the fire.
+        feedback_vi: Nobody đã mang nghĩa phủ định, không thêm not nữa.
+        error_tag: double_negative
+    explanation:
+      vi: "\"Theo\" một nguồn tin là according to. \"Không ai bị thương\" là nobody (no one) was injured - nobody đi với was và đã mang nghĩa phủ định."
+    display_answer: According to the report, nobody was injured in the fire.

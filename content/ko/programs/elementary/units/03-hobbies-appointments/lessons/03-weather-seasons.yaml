@@ -1,0 +1,406 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:weather-seasons
+order_index: 3
+level: topik2
+title:
+  vi: Thời tiết & bốn mùa
+objectives:
+  - vi: Gọi tên bốn mùa và nói về mùa mình thích - 봄, 여름, 가을, 겨울.
+  - vi: Hỏi và tả thời tiết - 날씨가 어때요?, 비가 와요, 눈이 와요, 바람이 불어요, 맑아요, 흐려요.
+  - vi: Chia đúng tính từ bất quy tắc ㅂ - 덥다 → 더워요, 춥다 → 추워요.
+estimated_minutes: 15
+skills: [vocabulary, grammar, speaking, listening]
+prerequisites: [ko:lesson:can-and-try]
+items:
+  - item: ko:item:nalssi
+  - item: ko:item:nalssiga-eottaeyo
+  - item: ko:item:four-seasons
+  - item: ko:item:gyejeol
+  - item: ko:item:biga-oda
+  - item: ko:item:nuni-oda
+  - item: ko:item:deopda
+  - item: ko:item:chupda
+  - item: ko:item:gram-b-irregular
+  - item: ko:item:ttatteuthada
+  - item: ko:item:siwonhada
+  - item: ko:item:barami-bulda
+  - item: ko:item:malgda
+  - item: ko:item:heurida
+  - item: ko:item:maewoyo
+    role: reuse
+  - item: ko:item:oneul
+    role: reuse
+  - item: ko:item:naeil
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được "Thời tiết thế nào?", trả lời "Hôm nay mưa, lạnh quá" và kể mình thích mùa nào ở Hàn Quốc.
+  - type: explain
+    text:
+      vi: Bốn mùa là 봄 (xuân), 여름 (hè), 가을 (thu), 겨울 (đông). "Vào mùa…" thì thêm 에 hoặc 에는 - 여름에 더워요, 겨울에는 눈이 와요.
+  - type: explain
+    text:
+      vi: Mưa, tuyết dùng động từ 오다 (đến) - 비가 와요, 눈이 와요; gió dùng 불다 (thổi) - 바람이 불어요. Trời đẹp là 맑아요, âm u là 흐려요.
+  - type: explain
+    text:
+      vi: 덥다, 춥다 có gốc kết thúc bằng ㅂ; trước 어요, ㅂ đổi thành 우 rồi ghép lại - 더워요, 추워요. Bạn đã gặp quy tắc này ở 맵다 → 매워요.
+  - type: deep_explain
+    text:
+      vi: Khi nói chuyện, người Hàn dùng 비가 와요; 비가 내려요 đúng ngữ pháp nhưng nghe như bản tin hay văn viết. Nóng của thời tiết là 덥다, còn đồ vật nóng là 뜨겁다; lạnh của thời tiết là 춥다, đồ vật lạnh là 차갑다. Không phải gốc ㅂ nào cũng bất quy tắc - 입다 → 입어요, 좁다 → 좁아요.
+  - type: example
+    target: 서울은 요즘 날씨가 어때요? - 좀 추워요. 어제는 눈이 왔어요.
+    target_lang: ko
+    translation:
+      vi: Dạo này thời tiết ở Seoul thế nào? - Hơi lạnh. Hôm qua có tuyết rơi.
+    note:
+      vi: 왔어요 là quá khứ của 와요.
+  - type: example
+    target: 베트남은 여름에 아주 더워요. 그리고 비가 많이 와요.
+    target_lang: ko
+    translation:
+      vi: Việt Nam mùa hè rất nóng. Và mưa nhiều.
+    note:
+      vi: 덥다 → 더워요 (không phải 덥어요).
+  - type: example
+    target: 오늘은 맑아요. 그런데 내일은 흐리고 바람이 많이 불어요.
+    target_lang: ko
+    translation:
+      vi: Hôm nay trời quang. Nhưng ngày mai trời âm u và gió nhiều.
+    note:
+      vi: 맑아요 đọc [말가요].
+  - type: example
+    target: 저는 가을을 제일 좋아해요. 날씨가 시원해요.
+    target_lang: ko
+    translation:
+      vi: Tôi thích mùa thu nhất. Thời tiết mát mẻ.
+  - type: common_mistake
+    wrong: 오늘 너무 덥어요.
+    right: 오늘 너무 더워요.
+    target_lang: ko
+    note:
+      vi: Người Việt hay ghép thẳng gốc 덥 + 어요. Với 덥다, 춥다, 맵다, ㅂ đổi thành 우 - 더워요, 추워요, 매워요.
+  - type: common_mistake
+    wrong: 지금 비가 내려요.
+    right: 지금 비가 와요.
+    target_lang: ko
+    note:
+      vi: Khi bạn bè hỏi qua điện thoại, 비가 내려요 không sai nhưng nghe như đọc bản tin. Nói chuyện hằng ngày hãy dùng 비가 와요, 눈이 와요.
+  - type: common_mistake
+    wrong: 날씨가 뭐예요?
+    right: 날씨가 어때요?
+    target_lang: ko
+    note:
+      vi: Hỏi "thế nào" về tính chất dùng 어때요. 뭐예요 là "là gì", không dùng để hỏi thời tiết.
+  - type: summary
+    points:
+      - vi: 봄 · 여름 · 가을 · 겨울 + 에 (vào mùa…); 계절 = mùa.
+      - vi: 날씨가 어때요? → 맑아요 · 흐려요 · 비가 와요 · 눈이 와요 · 바람이 불어요.
+      - vi: ㅂ bất quy tắc - 덥다 → 더워요, 춥다 → 추워요, 맵다 → 매워요 (nhưng 입다 → 입어요).
+      - vi: 따뜻해요 (ấm) · 시원해요 (mát); nói chuyện dùng 비가 와요, không cần 내려요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:weather-seasons-mcq-summer
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:four-seasons
+    prompt:
+      stem: "Từ 여름 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: q4n, text: mùa hè, lang: vi }
+        - { id: t8w, text: mùa xuân, lang: vi }
+        - { id: a2k, text: mùa thu, lang: vi }
+        - { id: e6m, text: mùa đông, lang: vi }
+    answer:
+      correct_option_id: q4n
+    explanation:
+      vi: 여름 là mùa hè. Mùa xuân là 봄, mùa thu là 가을, mùa đông là 겨울; chú ý 여름 và 겨울 đều có ㅕ.
+    display_answer: mùa hè
+
+  - key: ko:exercise:weather-seasons-listen-rain-wind
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:biga-oda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 오늘은 비가 와요. 그리고 바람이 많이 불어요.
+      options:
+        - { id: p3s, text: Hôm nay trời mưa. Và gió nhiều., lang: vi }
+        - { id: k9l, text: Hôm nay có tuyết. Và gió nhiều., lang: vi }
+        - { id: g5d, text: Hôm nay trời quang. Và mát mẻ., lang: vi }
+        - { id: w1y, text: Hôm nay trời mưa. Và rất nóng., lang: vi }
+    answer:
+      correct_option_id: p3s
+    explanation:
+      vi: 비가 와요 là "trời mưa", 바람이 불어요 là "có gió" (많이 = nhiều). Tuyết là 눈이 와요, trời quang là 맑아요, nóng là 더워요.
+    display_answer: Hôm nay trời mưa. Và gió nhiều.
+
+  - key: ko:exercise:weather-seasons-mcq-deowoyo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:deopda
+    prompt:
+      stem: "Chọn dạng 해요체 đúng của 덥다: 여름은 정말 ___."
+      stem_lang: vi
+      options:
+        - { id: m7c, text: 더워요, lang: ko }
+        - { id: b4f, text: 덥어요, lang: ko }
+        - { id: z2h, text: 더어요, lang: ko }
+        - { id: o8v, text: 덥워요, lang: ko }
+    answer:
+      correct_option_id: m7c
+    explanation:
+      vi: 덥다 là bất quy tắc ㅂ - ㅂ đổi thành 우, 우 + 어요 thành 워요, nên ra 더워요. Không giữ ㅂ (덥어요) và không bỏ mất 우 (더어요).
+    display_answer: 더워요
+
+  - key: ko:exercise:weather-seasons-fill-snow
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:nuni-oda
+    prompt:
+      template: "겨울에는 {{b1}}이 와요."
+      blanks:
+        - { id: b1, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa của câu: Mùa đông có tuyết rơi."
+        - "Gợi ý: từ \"tuyết\" giống từ \"mắt\"."
+    answer:
+      blanks:
+        b1: [눈]
+    known_wrong:
+      - answer: 비
+        feedback_vi: 비 là "mưa"; câu này nói về tuyết là 눈. Hơn nữa 비 không có patchim nên phải là 비가.
+        error_tag: weather_word
+      - answer: 바람
+        feedback_vi: 바람 (gió) đi với 불어요, không đi với 와요.
+        error_tag: weather_verb
+    explanation:
+      vi: Tuyết là 눈; 눈 có patchim ㄴ nên dùng 이 - 눈이 와요 (đọc [누니 와요]).
+    display_answer: 겨울에는 눈이 와요.
+
+  - key: ko:exercise:weather-seasons-wb-spring
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ttatteuthada
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Mùa xuân thời tiết ấm áp.\""
+      tokens:
+        - { id: n3, text: 따뜻해요 }
+        - { id: n4, text: 날씨를 }
+        - { id: n1, text: 봄에는 }
+        - { id: n5, text: 더워요 }
+        - { id: n2, text: 날씨가 }
+    answer:
+      orders:
+        - [n1, n2, n3]
+    explanation:
+      vi: 봄에는 = vào mùa xuân; 날씨가 làm chủ ngữ của tính từ 따뜻해요 (ấm). 날씨를 sai vì 따뜻하다 là tính từ, không có tân ngữ; 더워요 là "nóng".
+    display_answer: 봄에는 날씨가 따뜻해요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:weather-seasons-translate-cold
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:chupda
+    prompt:
+      source_text: Hôm nay lạnh quá.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 오늘 너무 추워요.
+        - 오늘은 너무 추워요.
+        - 오늘 날씨가 너무 추워요.
+        - 오늘은 날씨가 너무 추워요.
+        - 오늘 정말 추워요.
+        - 오늘은 정말 추워요.
+        - 오늘 진짜 추워요.
+        - 오늘 날씨가 정말 추워요.
+    known_wrong:
+      - answer: 오늘 너무 춥어요.
+        feedback_vi: 춥다 là bất quy tắc ㅂ - 추워요, không phải 춥어요.
+        error_tag: b_irregular
+      - answer: 오늘 너무 차가워요.
+        feedback_vi: 차가워요 dùng cho đồ vật lạnh (nước, đồ uống). Thời tiết lạnh là 추워요.
+        error_tag: chupda_chagapda
+      - answer: 오늘 너무 더워요.
+        feedback_vi: 더워요 là "nóng"; "lạnh" là 추워요.
+        error_tag: weather_word
+      - answer: oneul neomu chuwoyo
+        feedback_vi: Hãy viết bằng Hangul, phiên âm Latinh chỉ để tham khảo.
+        error_tag: romanization
+    explanation:
+      vi: 오늘 = hôm nay, 너무 = quá, 춥다 → 추워요 (ㅂ đổi thành 우). Tiếng Việt hay thêm chữ "trời", còn tiếng Hàn chỉ cần tính từ.
+    display_answer: 오늘 너무 추워요.
+
+  - key: ko:exercise:weather-seasons-fill-hot-cool
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-b-irregular
+    prompt:
+      template: "(Việt Nam mùa hè rất nóng.) 베트남은 여름에 아주 {{b1}}. (Hàn Quốc mùa thu mát mẻ.) 한국은 가을에 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [더워요]
+        b2: [시원해요]
+    known_wrong:
+      - answer: 덥어요
+        feedback_vi: 덥다 là bất quy tắc ㅂ - 더워요.
+        error_tag: b_irregular
+      - answer: 추워요
+        feedback_vi: 추워요 là "lạnh". Mát mẻ là 시원해요.
+        error_tag: weather_word
+      - answer: 따뜻해요
+        feedback_vi: 따뜻해요 là "ấm" (hợp với mùa xuân). Mát mẻ là 시원해요.
+        error_tag: weather_word
+    explanation:
+      vi: Nóng - 덥다 → 더워요 (ㅂ → 우). Mát mẻ - 시원하다 → 시원해요 (gốc 하다 → 해요).
+    display_answer: 베트남은 여름에 아주 더워요. 한국은 가을에 시원해요.
+
+  - key: ko:exercise:weather-seasons-translate-ask
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:nalssiga-eottaeyo
+    prompt:
+      source_text: Thời tiết ở Seoul thế nào?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 서울은 날씨가 어때요?
+        - 서울 날씨가 어때요?
+        - 서울 날씨는 어때요?
+        - 서울은 날씨 어때요?
+        - 서울 날씨 어때요?
+        - 서울의 날씨는 어때요?
+        - 서울의 날씨가 어때요?
+    known_wrong:
+      - answer: 서울 날씨가 뭐예요?
+        feedback_vi: Hỏi "thế nào" dùng 어때요, không dùng 뭐예요 (là gì).
+        error_tag: eottaeyo_mwoyeyo
+      - answer: 서울 날씨를 어때요?
+        feedback_vi: 어때요 là tính từ nên không có tân ngữ - dùng 날씨가, không dùng 날씨를.
+        error_tag: particle_i_ga
+    explanation:
+      vi: 서울은 (nói về Seoul) + 날씨가 어때요? Cũng có thể ghép thẳng 서울 날씨 như "thời tiết Seoul".
+    display_answer: 서울은 날씨가 어때요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:weather-seasons-mcq-phone-rain
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:biga-oda
+    prompt:
+      stem: "Bạn bè gọi điện hỏi: 거기 날씨가 어때요? Ngoài trời đang mưa. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: l6u, text: 지금 비가 와요., lang: ko }
+        - { id: d9r, text: 지금 비가 해요., lang: ko }
+        - { id: x3j, text: 지금 비가 불어요., lang: ko }
+        - { id: h5b, text: 지금 비를 와요., lang: ko }
+    answer:
+      correct_option_id: l6u
+    explanation:
+      vi: Mưa dùng 비가 와요 - 가 vì 비 là chủ ngữ. 불어요 chỉ dùng cho gió, còn 하다 không đi với 비; khi nói chuyện cũng không cần 비가 내려요 kiểu bản tin.
+    display_answer: 지금 비가 와요.
+
+  - key: ko:exercise:weather-seasons-mcq-b-irregular
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-b-irregular
+    prompt:
+      stem: Câu nào chia động từ/tính từ đúng?
+      stem_lang: vi
+      options:
+        - { id: f2o, text: 떡볶이가 너무 매워요., lang: ko }
+        - { id: r7e, text: 김치가 너무 맵어요., lang: ko }
+        - { id: y4a, text: 오늘은 너무 춥어요., lang: ko }
+        - { id: c8s, text: 따뜻한 옷을 입워요., lang: ko }
+    answer:
+      correct_option_id: f2o
+    explanation:
+      vi: 맵다 → 매워요 theo quy tắc ㅂ. 맵어요, 춥어요 giữ ㅂ là sai; còn 입다 là ngoại lệ, chia bình thường thành 입어요 chứ không phải 입워요.
+    display_answer: 떡볶이가 너무 매워요.
+
+  - key: ko:exercise:weather-seasons-translate-autumn-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:siwonhada
+    prompt:
+      source_text: 저는 가을을 제일 좋아해요. 날씨가 시원해요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi thích mùa thu nhất. Thời tiết mát mẻ.
+        - Tôi thích mùa thu nhất. Trời mát mẻ.
+        - Tôi thích mùa thu nhất. Thời tiết mát.
+        - Tôi thích mùa thu nhất. Trời mát.
+        - Tôi thích mùa thu nhất vì thời tiết mát mẻ.
+        - Tôi thích nhất là mùa thu. Thời tiết mát mẻ.
+        - Mình thích mùa thu nhất. Thời tiết mát mẻ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi thích mùa xuân nhất. Thời tiết mát mẻ.
+        feedback_vi: 가을 là mùa thu; mùa xuân là 봄.
+        error_tag: season_word
+      - answer: Tôi thích mùa thu nhất. Thời tiết ấm áp.
+        feedback_vi: 시원해요 là "mát mẻ"; ấm áp là 따뜻해요.
+        error_tag: weather_word
+    explanation:
+      vi: 가을 = mùa thu, 제일 = nhất, 좋아해요 = thích; 시원해요 = mát mẻ.
+    display_answer: Tôi thích mùa thu nhất. Thời tiết mát mẻ.
+
+  - key: ko:exercise:weather-seasons-wb-snow-tomorrow
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:nuni-oda
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Ngày mai tuyết rơi nhiều.\""
+      tokens:
+        - { id: p4, text: 와요 }
+        - { id: p3, text: 많이 }
+        - { id: p5, text: 불어요 }
+        - { id: p1, text: 내일 }
+        - { id: p6, text: 눈을 }
+        - { id: p2, text: 눈이 }
+    answer:
+      orders:
+        - [p1, p2, p3, p4]
+    explanation:
+      vi: Tuyết là chủ ngữ nên dùng 눈이 (không phải 눈을); 많이 (nhiều) đứng trước động từ 와요. 불어요 chỉ dùng cho gió.
+    display_answer: 내일 눈이 많이 와요.

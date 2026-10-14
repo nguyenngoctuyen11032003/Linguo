@@ -1,0 +1,387 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:honorifics-superiors
+order_index: 3
+level: topik4
+title:
+  vi: Kính ngữ với cấp trên và -느라고
+objectives:
+  - vi: Nói về hành động của cấp trên bằng 께서 + -(으)시- và các động từ kính trọng (말씀하시다, 계시다, 주시다).
+  - vi: Nói về việc mình làm cho cấp trên bằng 께 + động từ khiêm nhường (드리다, 말씀드리다, 여쭤보다).
+  - vi: Giải thích, xin lỗi vì không làm được việc gì bằng V-느라고 (회의 준비하느라고 연락을 못 드렸습니다).
+estimated_minutes: 20
+skills: [grammar, speaking, vocabulary]
+prerequisites: [ko:lesson:formal-speech]
+items:
+  - item: ko:item:gram-kkeseo
+  - item: ko:item:gram-kke
+  - item: ko:item:deurida
+  - item: ko:item:malsseumhasida
+  - item: ko:item:malsseumdeurida
+  - item: ko:item:yeojjwoboda
+  - item: ko:item:gyesida
+  - item: ko:item:bujangnim
+  - item: ko:item:timjangnim
+    role: reuse
+  - item: ko:item:sajangnim
+  - item: ko:item:gram-neurago
+  - item: ko:item:yeollak
+  - item: ko:item:sangsa
+    role: reuse
+  - item: ko:item:bogoseo
+    role: reuse
+  - item: ko:item:jaryo
+    role: reuse
+  - item: ko:item:joesonghamnida
+    role: reuse
+  - item: ko:item:gram-seumnida
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói chuyện với sếp đúng mực - nâng người trên lên, hạ mình xuống - và xin lỗi khéo khi lỡ việc vì bận việc khác.
+  - type: explain
+    text:
+      vi: 'Kính ngữ tiếng Hàn có hai chiều. Nâng người trên - chủ ngữ dùng 께서 (thay 이/가), động từ thêm -(으)시- hoặc đổi từ (말하다 → 말씀하시다, 있다 → 계시다). Hạ mình - làm gì cho người trên dùng 께 (thay 에게) và từ khiêm nhường (주다 → 드리다, 묻다 → 여쭤보다).'
+  - type: explain
+    text:
+      vi: 드리다 và 주시다 đều là "đưa, cho" nhưng ngược chiều. Mình đưa cho sếp - 제가 부장님께 드렸습니다; sếp đưa cho mình - 부장님께서 저에게 주셨습니다. Hãy hỏi "ai là người cho?" trước khi chọn từ.
+  - type: explain
+    text:
+      vi: V-느라고 nghĩa là "vì mải làm V nên..." và vế sau gần như luôn là kết quả không tốt - không làm được, mệt, muộn. Hai vế cùng một chủ ngữ, vế -느라고 không chia quá khứ - 준비하느라고, không phải 준비했느라고.
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt thể hiện lễ phép chủ yếu bằng xưng hô (anh, chị, em, ạ), còn tiếng Hàn đổi cả trợ từ và động từ. Vì vậy người Việt hay "kính ngữ quá tay" - dùng 께서 hay -시- cho chính mình (저께서, 제가 가셨어요), điều mà người Hàn nghe rất buồn cười. Quy tắc vàng - kính ngữ chỉ dành cho người khác, khiêm nhường dành cho mình.
+  - type: example
+    target: 사장님께서 내일 베트남 지사에 오십니다.
+    target_lang: ko
+    translation:
+      vi: Ngày mai giám đốc sẽ đến chi nhánh Việt Nam.
+    note:
+      vi: 께서 + 오다 → 오시다 → 오십니다.
+  - type: example
+    target: 제가 팀장님께 회의 자료를 보내 드렸습니다.
+    target_lang: ko
+    translation:
+      vi: Tôi đã gửi tài liệu họp cho trưởng nhóm.
+    note:
+      vi: Chủ ngữ là mình nên dùng 제가, người nhận là sếp nên dùng 께 và -아/어 드리다.
+  - type: example
+    target: 모르는 것이 있으면 부장님께 여쭤보세요.
+    target_lang: ko
+    translation:
+      vi: Nếu có gì không hiểu thì hãy hỏi trưởng phòng.
+  - type: example
+    target: 부장님, 보고서 쓰느라고 회의에 늦었습니다. 죄송합니다.
+    target_lang: ko
+    translation:
+      vi: Thưa trưởng phòng, tôi mải viết báo cáo nên đến họp muộn. Tôi xin lỗi.
+    note:
+      vi: -느라고 + kết quả không tốt (늦었습니다), rồi xin lỗi bằng 죄송합니다.
+  - type: common_mistake
+    wrong: 저께서 보고서를 썼습니다.
+    right: 제가 보고서를 썼습니다.
+    target_lang: ko
+    note:
+      vi: Không bao giờ dùng 께서 cho bản thân. Nói về mình dùng 제가 / 저는.
+  - type: common_mistake
+    wrong: 부장님께서 저에게 자료를 드렸어요.
+    right: 부장님께서 저에게 자료를 주셨어요.
+    target_lang: ko
+    note:
+      vi: 드리다 chỉ dùng khi mình đưa cho người trên. Sếp đưa cho mình thì là 주시다.
+  - type: common_mistake
+    wrong: 열심히 공부하느라고 시험에 합격했어요.
+    right: 열심히 공부해서 시험에 합격했어요.
+    target_lang: ko
+    note:
+      vi: -느라고 chỉ đi với kết quả tiêu cực. Kết quả tốt như đỗ thi thì dùng -아/어서 hoặc -(으)ㄴ 덕분에.
+  - type: summary
+    points:
+      - vi: Người trên làm chủ ngữ - N께서 + V-(으)시- (부장님께서 말씀하셨습니다); có mặt - 계시다.
+      - vi: Mình làm cho người trên - N께 + 드리다 / 말씀드리다 / 여쭤보다.
+      - vi: 드리다 (mình → sếp) và 주시다 (sếp → mình) ngược chiều nhau.
+      - vi: Không dùng 께서 hay -시- cho bản thân.
+      - vi: V-느라고 - vì mải V nên (kết quả không tốt); cùng chủ ngữ, không chia quá khứ ở vế trước.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:honorifics-mcq-malsseum
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:malsseumhasida
+    prompt:
+      stem: Câu nào nghĩa là "Trưởng phòng đã nói (điều đó)" với kính ngữ đúng?
+      stem_lang: vi
+      options:
+        - { id: v5q, text: 부장님께서 말씀하셨습니다., lang: ko }
+        - { id: f2t, text: 부장님께서 말씀드렸습니다., lang: ko }
+        - { id: n7j, text: 부장님께 말씀하셨습니다., lang: ko }
+        - { id: c9a, text: 저께서 말씀하셨습니다., lang: ko }
+    answer:
+      correct_option_id: v5q
+    explanation:
+      vi: Sếp là chủ ngữ nên dùng 께서 + 말씀하시다. 말씀드리다 là khiêm nhường (mình nói với sếp); 부장님께 nghĩa là "nói với trưởng phòng"; 께서 không dùng cho 저.
+    display_answer: 부장님께서 말씀하셨습니다.
+
+  - key: ko:exercise:honorifics-listen-gyesida
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gyesida
+    prompt:
+      audio_asset_id: null
+      fallback_text: 팀장님께서는 지금 자리에 안 계십니다.
+      options:
+        - { id: w6e, text: Trưởng nhóm hiện không có ở chỗ ngồi., lang: vi }
+        - { id: d3s, text: Trưởng nhóm hiện không có thời gian., lang: vi }
+        - { id: m1k, text: Trưởng nhóm hiện đang ngồi ở chỗ., lang: vi }
+        - { id: p8x, text: Trưởng nhóm hiện không liên lạc được., lang: vi }
+    answer:
+      correct_option_id: w6e
+    explanation:
+      vi: 계시다 là kính ngữ của 있다 (có mặt); 안 계십니다 - không có mặt. 자리 là chỗ ngồi. "Không có thời gian" là 시간이 없으십니다.
+    display_answer: Trưởng nhóm hiện không có ở chỗ ngồi.
+
+  - key: ko:exercise:honorifics-mcq-deurida
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:deurida
+    prompt:
+      stem: Câu nào nghĩa là "Tôi đã đưa tài liệu cho giám đốc"?
+      stem_lang: vi
+      options:
+        - { id: b4h, text: 제가 사장님께 자료를 드렸습니다., lang: ko }
+        - { id: t8u, text: 사장님께서 저에게 자료를 드렸습니다., lang: ko }
+        - { id: k5o, text: 제가 사장님께 자료를 주셨습니다., lang: ko }
+        - { id: e2y, text: 제가 사장님께서 자료를 드렸습니다., lang: ko }
+    answer:
+      correct_option_id: b4h
+    explanation:
+      vi: Mình đưa cho sếp - chủ ngữ 제가, người nhận 사장님께, động từ 드리다. 주셨습니다 là kính ngữ cho chính mình (sai); 사장님께서 làm sếp thành người đưa.
+    display_answer: 제가 사장님께 자료를 드렸습니다.
+
+  - key: ko:exercise:honorifics-fill-yeojjwo
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:yeojjwoboda
+    prompt:
+      template: "잘 모르겠으면 팀장님께 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa của câu: Nếu không rõ thì hãy hỏi trưởng nhóm."
+        - "Gợi ý: dạng khiêm nhường của 물어보다, chia đuôi -세요."
+    answer:
+      blanks:
+        b1: [여쭤보세요, 여쭤 보세요, 여쭈어 보세요, 여쭈어보세요]
+    known_wrong:
+      - answer: 물어보세요
+        feedback_vi: Hỏi người trên dùng từ khiêm nhường 여쭤보다, không dùng 물어보다.
+        error_tag: humble_verb
+      - answer: 여쭤보셨어요
+        feedback_vi: Đây là lời khuyên cho người nghe nên dùng -세요, không phải quá khứ.
+        error_tag: verb_ending
+    explanation:
+      vi: Người được hỏi là trưởng nhóm (đi với 께) nên động từ "hỏi" đổi thành 여쭤보다; -세요 là lời khuyên lịch sự với người nghe.
+    display_answer: 잘 모르겠으면 팀장님께 여쭤보세요.
+
+  - key: ko:exercise:honorifics-wb-neurago
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-neurago
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Vì mải chuẩn bị họp nên tôi không ăn trưa được.\""
+      tokens:
+        - { id: p3, text: 못 먹었어요 }
+        - { id: p4, text: 회의 준비했느라고 }
+        - { id: p2, text: 점심도 }
+        - { id: p1, text: 회의 준비하느라고 }
+    answer:
+      orders:
+        - [p1, p2, p3]
+        - [p2, p1, p3]
+    explanation:
+      vi: Vế -느라고 không chia quá khứ - 준비하느라고, không phải 준비했느라고. Kết quả không tốt (못 먹었어요) đứng cuối câu.
+    display_answer: 회의 준비하느라고 점심도 못 먹었어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:honorifics-fill-neurago
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-neurago
+    prompt:
+      template: "어제 보고서를 {{b1}} 잠을 못 잤어요. (쓰다 + -느라고)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [쓰느라고, 쓰느라]
+    known_wrong:
+      - answer: 썼느라고
+        feedback_vi: Vế -느라고 không chia quá khứ dù việc đã xảy ra - 쓰느라고.
+        error_tag: neurago_tense
+      - answer: 쓰는라고
+        feedback_vi: Viết là -느라고 (느), gắn thẳng vào gốc 쓰.
+        error_tag: neurago_form
+    explanation:
+      vi: -느라고 gắn trực tiếp vào gốc động từ (쓰 + 느라고); thì quá khứ chỉ chia ở vế sau - 못 잤어요.
+    display_answer: 어제 보고서를 쓰느라고 잠을 못 잤어요.
+
+  - key: ko:exercise:honorifics-translate-send
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-kke
+    prompt:
+      source_text: Tôi đã gửi báo cáo cho trưởng nhóm rồi ạ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 팀장님께 보고서를 보내 드렸습니다.
+        - 팀장님께 보고서를 보내 드렸어요.
+        - 제가 팀장님께 보고서를 보내 드렸습니다.
+        - 제가 팀장님께 보고서를 보내 드렸어요.
+        - 저는 팀장님께 보고서를 보내 드렸습니다.
+        - 저는 팀장님께 보고서를 보내 드렸어요.
+        - 팀장님께 보고서를 드렸습니다.
+        - 팀장님께 보고서를 이미 보내 드렸습니다.
+        - 팀장님께 보고서를 벌써 보내 드렸어요.
+    known_wrong:
+      - answer: 팀장님께서 보고서를 보내 드렸습니다.
+        feedback_vi: 께서 biến trưởng nhóm thành người gửi. Người nhận là sếp nên dùng 께.
+        error_tag: kke_kkeseo
+      - answer: 팀장님께 보고서를 보내 주셨습니다.
+        feedback_vi: 주셨습니다 là kính ngữ cho người gửi - nhưng người gửi là bạn. Dùng 보내 드렸습니다.
+        error_tag: deurida_jusida
+      - answer: 저께서 팀장님께 보고서를 보내 드렸습니다.
+        feedback_vi: Không dùng 께서 cho bản thân - nói 제가.
+        error_tag: self_honorific
+    explanation:
+      vi: Người nhận là sếp - 팀장님께; mình làm việc cho sếp - 보내 드리다. Chủ ngữ là mình nên dùng 제가 hoặc bỏ đi.
+    display_answer: 팀장님께 보고서를 보내 드렸습니다.
+
+  - key: ko:exercise:honorifics-translate-sorry
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-neurago
+    prompt:
+      source_text: Tôi xin lỗi, vì mải chuẩn bị họp nên tôi chưa liên lạc được với anh. (nói với sếp)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 죄송합니다. 회의 준비하느라고 연락을 못 드렸습니다.
+        - 죄송합니다. 회의를 준비하느라고 연락을 못 드렸습니다.
+        - 죄송합니다. 회의 준비하느라 연락을 못 드렸습니다.
+        - 죄송합니다. 회의를 준비하느라 연락을 못 드렸습니다.
+        - 죄송합니다. 회의 준비하느라고 연락 못 드렸습니다.
+        - 죄송합니다. 회의 준비하느라고 연락을 못 드렸어요.
+        - 죄송합니다. 회의를 준비하느라고 연락을 못 드렸어요.
+        - 회의 준비하느라고 연락을 못 드렸습니다. 죄송합니다.
+        - 회의를 준비하느라고 연락을 못 드렸습니다. 죄송합니다.
+        - 죄송합니다. 회의 준비하느라고 아직 연락을 못 드렸습니다.
+    known_wrong:
+      - answer: 실례합니다. 회의 준비하느라고 연락을 못 드렸습니다.
+        feedback_vi: Bạn đang nhận lỗi, không phải xin phép - dùng 죄송합니다.
+        error_tag: sillye_joesong
+      - answer: 죄송합니다. 회의 준비했느라고 연락을 못 드렸습니다.
+        feedback_vi: Vế -느라고 không chia quá khứ - 준비하느라고.
+        error_tag: neurago_tense
+      - answer: 죄송합니다. 회의 준비하느라고 연락을 못 했습니다.
+        feedback_vi: Liên lạc với sếp nên dùng khiêm nhường - 연락을 못 드렸습니다.
+        error_tag: humble_verb
+    explanation:
+      vi: 죄송합니다 nhận lỗi; -느라고 giải thích vì bận việc gì; 연락을 못 드렸습니다 - khiêm nhường vì người nhận liên lạc là sếp.
+    display_answer: 죄송합니다. 회의 준비하느라고 연락을 못 드렸습니다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:honorifics-mcq-neurago-rule
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-neurago
+    prompt:
+      stem: Câu nào dùng -느라고 đúng?
+      stem_lang: vi
+      options:
+        - { id: g3w, text: 시험 공부하느라고 친구를 못 만났어요., lang: ko }
+        - { id: x7d, text: 열심히 공부하느라고 시험에 합격했어요., lang: ko }
+        - { id: j1n, text: 어제 야근했느라고 오늘 피곤해요., lang: ko }
+        - { id: z6r, text: 비가 오느라고 회식이 취소됐어요., lang: ko }
+    answer:
+      correct_option_id: g3w
+    explanation:
+      vi: -느라고 cần kết quả không tốt, cùng chủ ngữ, không chia quá khứ. Đỗ thi là kết quả tốt; 했느라고 sai thì; mưa và buổi liên hoan là hai chủ ngữ khác nhau, và mưa không phải việc "mải làm".
+    display_answer: 시험 공부하느라고 친구를 못 만났어요.
+
+  - key: ko:exercise:honorifics-mcq-self
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-kkeseo
+    prompt:
+      stem: Trưởng phòng hỏi "이 보고서는 누가 썼어요?". Bạn là người viết. Bạn trả lời thế nào?
+      stem_lang: vi
+      options:
+        - { id: o4l, text: 제가 썼습니다., lang: ko }
+        - { id: y9c, text: 저께서 썼습니다., lang: ko }
+        - { id: h2f, text: 제가 쓰셨습니다., lang: ko }
+        - { id: u5m, text: 저께서 쓰셨습니다., lang: ko }
+    answer:
+      correct_option_id: o4l
+    explanation:
+      vi: Nói về mình thì không dùng kính ngữ - 제가 + 썼습니다. 께서 và -시- chỉ dành cho người khác, dùng cho mình nghe như tự tâng bốc.
+    display_answer: 제가 썼습니다.
+
+  - key: ko:exercise:honorifics-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:sajangnim
+    prompt:
+      source_text: 사장님께서 신입 사원들에게 선물을 주셨습니다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Giám đốc đã tặng quà cho các nhân viên mới.
+        - Giám đốc tặng quà cho các nhân viên mới.
+        - Giám đốc đã tặng quà cho nhân viên mới.
+        - Giám đốc đã cho các nhân viên mới quà.
+        - Giám đốc đã tặng quà cho những nhân viên mới.
+        - Giám đốc đã đưa quà cho các nhân viên mới.
+        - Sếp tổng đã tặng quà cho các nhân viên mới.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Các nhân viên mới đã tặng quà cho giám đốc.
+        feedback_vi: 께서 đánh dấu người tặng là giám đốc; 에게 là người nhận - các nhân viên mới.
+        error_tag: giver_receiver
+      - answer: Giám đốc đã tặng quà cho các đồng nghiệp.
+        feedback_vi: 신입 사원 là nhân viên mới, không phải đồng nghiệp (동료).
+        error_tag: vocab_meaning
+    explanation:
+      vi: 사장님께서 - giám đốc (chủ ngữ kính trọng) là người cho; 신입 사원들에게 - cho các nhân viên mới; 주셨습니다 - kính ngữ của 주다.
+    display_answer: Giám đốc đã tặng quà cho các nhân viên mới.

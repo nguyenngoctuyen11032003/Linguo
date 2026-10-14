@@ -1,0 +1,433 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:past-tense
+order_index: 1
+level: topik2
+title:
+  vi: Thì quá khứ -았/었/했어요 và từ chỉ thời gian
+objectives:
+  - vi: Chia động từ sang quá khứ lịch sự -았어요 / -었어요 / 했어요, kể cả các dạng gộp như 갔어요, 봤어요, 마셨어요.
+  - vi: Nói "đã là …" với danh từ bằng 이었어요 / 였어요.
+  - vi: Dùng từ chỉ thời gian quá khứ - 어제, 아까, 지난주, 지난달, 작년.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: []
+items:
+  - item: ko:item:gram-past-tense
+  - item: ko:item:gram-past-copula
+  - item: ko:item:jinanju
+  - item: ko:item:jinandal
+  - item: ko:item:jangnyeon
+  - item: ko:item:akka
+  - item: ko:item:jumal
+  - item: ko:item:chingu
+  - item: ko:item:yeonghwa
+  - item: ko:item:sukje
+  - item: ko:item:eoje
+    role: reuse
+  - item: ko:item:verb-gada
+    role: reuse
+  - item: ko:item:verb-meokda
+    role: reuse
+  - item: ko:item:verb-masida
+    role: reuse
+  - item: ko:item:verb-mannada
+    role: reuse
+  - item: ko:item:verb-boda
+    role: reuse
+  - item: ko:item:verb-gongbuhada
+    role: reuse
+  - item: ko:item:weekdays
+    role: reuse
+  - item: ko:item:hago-wa-gwa
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được những việc mình đã làm hôm qua, tuần trước hay năm ngoái bằng câu lịch sự 해요체, và nói được "Năm ngoái tôi là sinh viên".
+  - type: explain
+    text:
+      vi: Tiếng Việt thêm chữ "đã" hoặc "rồi" vào trước hay sau động từ, còn tiếng Hàn đổi đuôi động từ. Bạn chọn đuôi giống thì hiện tại - nguyên âm cuối ㅏ/ㅗ → -았어요, nguyên âm khác → -었어요, 하다 → 했어요.
+  - type: explain
+    text:
+      vi: Không có patchim thì gộp nguyên âm như ở thì hiện tại - 가 + 았어요 → 갔어요, 보 + 았어요 → 봤어요, 마시 + 었어요 → 마셨어요. Có patchim thì giữ nguyên - 먹었어요, 읽었어요.
+  - type: explain
+    text:
+      vi: Với danh từ, quá khứ của 이에요/예요 là 이었어요/였어요 - có patchim dùng 이었어요 (학생이었어요), không có patchim dùng 였어요 (친구였어요).
+  - type: explain
+    text:
+      vi: Tiếng Việt thường bỏ "đã" khi đã có "hôm qua" - "Hôm qua tôi đi học". Tiếng Hàn thì không được bỏ - có 어제 vẫn phải nói 갔어요, không nói 가요.
+  - type: deep_explain
+    text:
+      vi: Một mẹo nhanh - lấy dạng hiện tại -아요/-어요/-해요, bỏ 요 rồi thêm ㅆ어요 - 가요 → 갔어요, 마셔요 → 마셨어요, 해요 → 했어요. Từ chỉ thời gian thường đi với 에 (지난주에, 작년에, 주말에), riêng 어제, 아까, 오늘 không thêm 에. Câu hỏi "Bạn đã làm gì?" là 뭐 했어요?
+  - type: example
+    target: 어제 친구를 만났어요.
+    target_lang: ko
+    translation:
+      vi: Hôm qua tôi đã gặp bạn.
+    note:
+      vi: 만나 + 았어요 gộp thành 만났어요. 어제 không cần 에.
+  - type: example
+    target: 지난주에 영화를 봤어요.
+    target_lang: ko
+    translation:
+      vi: Tuần trước tôi đã xem phim.
+    note:
+      vi: 보 có ㅗ nên dùng -았어요; ㅗ + 았 gộp thành 봤.
+  - type: example
+    target: 아까 숙제를 했어요.
+    target_lang: ko
+    translation:
+      vi: Lúc nãy tôi làm bài tập rồi.
+    note:
+      vi: 하다 luôn thành 했어요. Tiếng Việt dùng "rồi" ở cuối câu, tiếng Hàn chỉ cần đuôi quá khứ.
+  - type: example
+    target: 작년에 저는 학생이었어요. 지금은 회사원이에요.
+    target_lang: ko
+    translation:
+      vi: Năm ngoái tôi là sinh viên. Bây giờ tôi là nhân viên công ty.
+    note:
+      vi: 학생 có patchim ㅇ nên dùng 이었어요. 작년 đọc là [장년].
+  - type: common_mistake
+    wrong: 어제 학교에 가했어요.
+    right: 어제 학교에 갔어요.
+    target_lang: ko
+    note:
+      vi: 했어요 không phải là chữ "đã" gắn được vào mọi động từ - nó chỉ là quá khứ của 하다. 가다 phải chia thành 갔어요.
+  - type: common_mistake
+    wrong: 어제 영화를 봐요.
+    right: 어제 영화를 봤어요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói "Hôm qua tôi xem phim" không cần "đã", nhưng tiếng Hàn bắt buộc đổi đuôi quá khứ dù đã có 어제.
+  - type: common_mistake
+    wrong: 작년에 저는 학생했어요.
+    right: 작년에 저는 학생이었어요.
+    target_lang: ko
+    note:
+      vi: 학생 là danh từ, không có 하다, nên "đã là sinh viên" dùng 이었어요.
+  - type: common_mistake
+    wrong: 그 사람은 제 친구이었어요.
+    right: 그 사람은 제 친구였어요.
+    target_lang: ko
+    note:
+      vi: 친구 không có patchim nên 이 + 었 gộp thành 였 - 친구였어요.
+  - type: summary
+    points:
+      - vi: ㅏ/ㅗ → -았어요 (갔어요, 봤어요, 만났어요); nguyên âm khác → -었어요 (먹었어요, 마셨어요); 하다 → 했어요.
+      - vi: Danh từ - có patchim 이었어요, không có patchim 였어요.
+      - vi: Có 어제, 지난주… vẫn phải dùng đuôi quá khứ; đừng gắn 했어요 vào mọi động từ.
+      - vi: 어제 hôm qua · 아까 lúc nãy · 지난주 tuần trước · 지난달 tháng trước · 작년 năm ngoái · 주말 cuối tuần.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:pf-past-mcq-gada
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-past-tense
+    prompt:
+      stem: '"Tôi đã đi" - quá khứ lịch sự của 가다 là gì?'
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 갔어요, lang: ko }
+        - { id: p8d, text: 가했어요, lang: ko }
+        - { id: w2s, text: 가었어요, lang: ko }
+        - { id: m6q, text: 가요, lang: ko }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: 가 có ㅏ nên dùng -았어요, và vì không có patchim nên 가 + 았 gộp thành 갔 - 갔어요. 가했어요 sai vì 했어요 chỉ dành cho 하다; 가요 là hiện tại.
+    display_answer: 갔어요
+
+  - key: ko:exercise:pf-past-mcq-meokda
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:verb-meokda
+    prompt:
+      stem: Quá khứ lịch sự của 먹다 (ăn) là gì?
+      stem_lang: vi
+      options:
+        - { id: r5t, text: 먹었어요, lang: ko }
+        - { id: y1n, text: 먹았어요, lang: ko }
+        - { id: e7c, text: 먹했어요, lang: ko }
+        - { id: h4b, text: 멌어요, lang: ko }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: 먹 có nguyên âm ㅓ (không phải ㅏ/ㅗ) nên dùng -었어요; 먹 có patchim nên không gộp - 먹었어요.
+    display_answer: 먹었어요
+
+  - key: ko:exercise:pf-past-listen-met-friend
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:verb-mannada
+    prompt:
+      audio_asset_id: null
+      fallback_text: 어제 친구를 만났어요.
+      options:
+        - { id: a8u, text: Hôm qua tôi đã gặp bạn., lang: vi }
+        - { id: q2z, text: Hôm nay tôi gặp bạn., lang: vi }
+        - { id: d6l, text: Ngày mai tôi gặp bạn., lang: vi }
+        - { id: s9f, text: Hôm qua bạn tôi đã đến., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 어제 là "hôm qua", đuôi 만났어요 là quá khứ của 만나다 (gặp). Bạn được gặp đi với 를 - 친구를, nên bạn là người được gặp chứ không phải người đến.
+    display_answer: Hôm qua tôi đã gặp bạn.
+
+  - key: ko:exercise:pf-past-fill-copula
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-past-copula
+    prompt:
+      template: "Năm ngoái tôi là sinh viên. - 작년에 저는 학생{{b1}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - 학생 là danh từ, không phải động từ có 하다.
+        - 학생 có patchim ㅇ.
+    answer:
+      blanks:
+        b1: [이었어요]
+    known_wrong:
+      - answer: 했어요
+        feedback_vi: 학생 là danh từ, không có 하다. "Đã là" dùng 이었어요.
+        error_tag: past_copula
+      - answer: 였어요
+        feedback_vi: 였어요 dùng sau danh từ không có patchim. 학생 có patchim ㅇ nên dùng 이었어요.
+        error_tag: copula_batchim
+      - answer: 이에요
+        feedback_vi: 이에요 là hiện tại. Câu nói về năm ngoái nên dùng 이었어요.
+        error_tag: tense_past
+    explanation:
+      vi: Quá khứ của 이에요 là 이었어요. 학생 có patchim nên giữ 이 - 학생이었어요.
+    display_answer: 작년에 저는 학생이었어요.
+
+  - key: ko:exercise:pf-past-mcq-akka
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:akka
+    prompt:
+      stem: "Chọn từ đúng: ___ 커피를 마셨어요. (Lúc nãy tôi đã uống cà phê.)"
+      stem_lang: vi
+      options:
+        - { id: v4x, text: 아까, lang: ko }
+        - { id: j7r, text: 내일, lang: ko }
+        - { id: c1o, text: 작년에, lang: ko }
+        - { id: n5g, text: 지난주에, lang: ko }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: 아까 là "lúc nãy" - cách đây không lâu trong ngày. 작년에 là năm ngoái, 지난주에 là tuần trước; 내일 là ngày mai nên không đi với đuôi quá khứ.
+    display_answer: 아까
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:pf-past-fill-masida
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:verb-masida
+    prompt:
+      template: "Hôm qua tôi đã uống sữa. - 어제 우유를 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [마셨어요, 마시었어요]
+    known_wrong:
+      - answer: 마시했어요
+        feedback_vi: 했어요 chỉ dành cho 하다. 마시다 chia -었어요, gộp thành 마셨어요.
+        error_tag: past_haesseoyo_overuse
+      - answer: 마셔요
+        feedback_vi: 마셔요 là hiện tại. Có 어제 thì phải dùng quá khứ - 마셨어요.
+        error_tag: tense_past
+      - answer: 마셨요
+        feedback_vi: Thiếu 어 - đuôi quá khứ là ㅆ + 어요 - 마셨어요.
+        error_tag: verb_conjugation
+    explanation:
+      vi: 마시 kết thúc bằng ㅣ nên dùng -었어요; ㅣ + 었 gộp thành 셨 - 마셨어요. Tiếng Việt có thể bỏ "đã", nhưng tiếng Hàn có 어제 vẫn phải đổi đuôi.
+    display_answer: 어제 우유를 마셨어요.
+
+  - key: ko:exercise:pf-past-fill-homework
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:sukje
+    prompt:
+      template: "Cuối tuần tôi đã làm bài tập. - 주말에 숙제를 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [했어요]
+    known_wrong:
+      - answer: 해요
+        feedback_vi: 해요 là hiện tại. Kể chuyện cuối tuần đã qua thì dùng 했어요.
+        error_tag: tense_past
+      - answer: 하었어요
+        feedback_vi: 하다 có dạng riêng - 했어요, không chia -었어요.
+        error_tag: verb_conjugation
+      - answer: 했요
+        feedback_vi: Thiếu 어 - viết đầy đủ là 했어요.
+        error_tag: verb_conjugation
+    explanation:
+      vi: 숙제를 하다 là "làm bài tập"; 하다 ở quá khứ luôn là 했어요.
+    display_answer: 주말에 숙제를 했어요.
+
+  - key: ko:exercise:pf-past-translate-last-year
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:jangnyeon
+    prompt:
+      source_text: Năm ngoái tôi đã học tiếng Hàn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 작년에 한국어를 공부했어요.
+        - 저는 작년에 한국어를 공부했어요.
+        - 전 작년에 한국어를 공부했어요.
+        - 작년에 저는 한국어를 공부했어요.
+        - 작년에 한국어 공부했어요.
+        - 작년에 한국어를 배웠어요.
+        - 저는 작년에 한국어를 배웠어요.
+    known_wrong:
+      - answer: 작년에 한국어를 공부해요.
+        feedback_vi: 공부해요 là hiện tại. Năm ngoái là quá khứ - 공부했어요.
+        error_tag: tense_past
+      - answer: 작년에 한국어를 공부하었어요.
+        feedback_vi: 하다 ở quá khứ là 했어요, không phải 하었어요.
+        error_tag: verb_conjugation
+      - answer: 지난년에 한국어를 공부했어요.
+        feedback_vi: '"Năm ngoái" là 작년, không nói 지난년.'
+        error_tag: vocab_time_word
+      - answer: jangnyeone hangugeoreul gongbuhaesseoyo
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: 작년 + 에 chỉ thời điểm, 공부하다 ở quá khứ là 공부했어요. 배웠어요 (học một ngôn ngữ) cũng tự nhiên.
+    display_answer: 작년에 한국어를 공부했어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:pf-past-translate-saturday
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:yeonghwa
+    prompt:
+      source_text: 어제는 토요일이었어요. 친구하고 영화를 봤어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hôm qua là thứ Bảy. Tôi đã xem phim với bạn.
+        - Hôm qua là thứ Bảy. Tôi xem phim với bạn.
+        - Hôm qua là thứ Bảy. Tôi đã xem phim cùng bạn.
+        - Hôm qua là thứ Bảy. Tôi đã đi xem phim với bạn.
+        - Hôm qua là thứ Bảy. Tôi đã xem phim với bạn bè.
+        - Hôm qua là thứ Bảy. Tôi đã xem phim với một người bạn.
+        - Hôm qua là thứ Bảy. Tôi đã cùng bạn xem phim.
+        - Hôm qua là thứ Bảy. Mình đã xem phim với bạn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hôm qua là thứ Bảy. Tôi sẽ xem phim với bạn.
+        feedback_vi: 봤어요 là quá khứ của 보다, không phải tương lai.
+        error_tag: tense_past
+      - answer: Hôm nay là thứ Bảy. Tôi đã xem phim với bạn.
+        feedback_vi: 어제 là "hôm qua", không phải "hôm nay" (오늘).
+        error_tag: vocab_time_word
+    explanation:
+      vi: 토요일이었어요 là "đã là thứ Bảy" - tiếng Việt chỉ cần "Hôm qua là thứ Bảy". 하고 nghĩa là "với", 봤어요 là quá khứ của 보다.
+    display_answer: Hôm qua là thứ Bảy. Tôi đã xem phim với bạn.
+
+  - key: ko:exercise:pf-past-order-last-week
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:jinanju
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Hàn: "Tuần trước tôi đã gặp bạn."'
+      tokens:
+        - { id: t-mannaesseoyo, text: 만났어요 }
+        - { id: t-chingureul, text: 친구를 }
+        - { id: t-mannahaesseoyo, text: 만나했어요 }
+        - { id: t-jinanjue, text: 지난주에 }
+        - { id: t-chinguga, text: 친구가 }
+    answer:
+      orders:
+        - [t-jinanjue, t-chingureul, t-mannaesseoyo]
+        - [t-chingureul, t-jinanjue, t-mannaesseoyo]
+    explanation:
+      vi: Người được gặp đi với 를 - 친구를; động từ quá khứ 만났어요 đứng cuối câu. 만나했어요 sai vì 했어요 chỉ dành cho 하다.
+    display_answer: 지난주에 친구를 만났어요.
+
+  - key: ko:exercise:pf-past-mcq-weekend
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:jumal
+    prompt:
+      stem: 'Bạn Hàn hỏi "주말에 뭐 했어요?". Bạn muốn trả lời: "Tôi đã xem phim." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: g3k, text: 영화를 봤어요., lang: ko }
+        - { id: u9p, text: 영화를 봐요., lang: ko }
+        - { id: b2w, text: 영화를 보했어요., lang: ko }
+        - { id: x6e, text: 영화를 했어요., lang: ko }
+    answer:
+      correct_option_id: g3k
+    explanation:
+      vi: Câu hỏi dùng 했어요 (đã làm) nên trả lời bằng quá khứ. Xem phim là 영화를 보다 → 봤어요; 영화를 했어요 sai vì "xem" phim dùng 보다, không dùng 하다.
+    display_answer: 영화를 봤어요.
+
+  - key: ko:exercise:pf-past-translate-ate
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-past-tense
+    prompt:
+      source_text: Lúc nãy tôi ăn cơm rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 아까 밥을 먹었어요.
+        - 아까 밥 먹었어요.
+        - 저는 아까 밥을 먹었어요.
+        - 전 아까 밥을 먹었어요.
+        - 아까 저는 밥을 먹었어요.
+    known_wrong:
+      - answer: 아까 밥을 먹했어요.
+        feedback_vi: 했어요 không gắn được vào mọi động từ. 먹다 → 먹었어요.
+        error_tag: past_haesseoyo_overuse
+      - answer: 아까 밥을 먹어요.
+        feedback_vi: '"Rồi" nghĩa là việc đã xảy ra - phải dùng quá khứ 먹었어요.'
+        error_tag: tense_past
+      - answer: 아까 밥을 먹았어요.
+        feedback_vi: 먹 có nguyên âm ㅓ nên dùng -었어요, không phải -았어요.
+        error_tag: verb_conjugation
+    explanation:
+      vi: '"Rồi" ở cuối câu tiếng Việt tương ứng với đuôi quá khứ - 먹었어요. 아까 là "lúc nãy" và không cần 에.'
+    display_answer: 아까 밥을 먹었어요.

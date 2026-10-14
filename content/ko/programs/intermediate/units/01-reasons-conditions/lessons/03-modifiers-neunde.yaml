@@ -1,0 +1,430 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:modifiers-neunde
+order_index: 3
+level: topik3
+title:
+  vi: "Mô tả, phỏng đoán, nêu bối cảnh: -는/-(으)ㄴ/-(으)ㄹ, -것 같다, -는데"
+objectives:
+  - vi: Mô tả danh từ bằng định ngữ - 자주 가는 카페, 어제 본 영화, 조용한 식당, 내일 볼 영화.
+  - vi: Phỏng đoán, nói ý kiến nhẹ nhàng bằng -(으)ㄴ/는/(으)ㄹ 것 같아요.
+  - vi: Dùng -는데/-(으)ㄴ데 để đối lập, nêu bối cảnh trước khi hỏi, và nhờ vả mềm mỏng bằng -는데요.
+  - vi: Giới thiệu, nhận xét quán ăn, quán cà phê.
+estimated_minutes: 20
+skills: [grammar, reading, speaking]
+prerequisites: [ko:lesson:conditions-concession]
+items:
+  - item: ko:item:gram-adnominal
+  - item: ko:item:gram-geot-gatda
+  - item: ko:item:gram-neunde
+  - item: ko:item:chucheonhada
+  - item: ko:item:matjip
+  - item: ko:item:yumyeonghada
+  - item: ko:item:chinjeolhada
+  - item: ko:item:bunwigi
+  - item: ko:item:jureul-seoda
+  - item: ko:item:joyonghada
+  - item: ko:item:sikdang
+  - item: ko:item:masisseoyo
+    role: reuse
+  - item: ko:item:bissayo
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tả được "quán cà phê tôi hay đi", "bộ phim tôi xem hôm qua", đoán "hình như trời đang mưa", và mở lời lịch sự kiểu "tôi muốn hỏi đường một chút ạ…".
+  - type: explain
+    text:
+      vi: Định ngữ đứng trước danh từ, ngược với tiếng Việt - "quán tôi hay đi" thành 제가 자주 가는 카페. Động từ chọn theo thời gian - 가는 (đang, thường), 간 (đã), 갈 (sẽ). Tính từ ở hiện tại dùng -(으)ㄴ - 조용한, 좋은; riêng 있다/없다 dùng -는 - 맛있는, 재미없는.
+  - type: explain
+    text:
+      vi: Ghép định ngữ với 것 같아요 để nói "hình như, có vẻ" - 비가 오는 것 같아요 (đang mưa), 비가 온 것 같아요 (đã mưa), 비가 올 것 같아요 (sắp mưa). Tính từ - 바쁜 것 같아요; danh từ - 학생인 것 같아요.
+  - type: explain
+    text:
+      vi: -는데 theo đúng quy tắc định ngữ - động từ và 있다/없다 dùng -는데 (가는데, 맛있는데), tính từ dùng -(으)ㄴ데 (비싼데), danh từ dùng 인데. Nó có ba việc - đối lập "…nhưng…", nêu bối cảnh rồi hỏi, nhờ, và kết câu -는데요 để nhờ vả mềm mỏng.
+  - type: deep_explain
+    text:
+      vi: Người Hàn ít nói thẳng "cái này đắt", "tôi không thích" mà hay dùng -는 것 같아요 để làm câu mềm đi, kể cả khi họ chắc chắn. Tương tự, kết câu bằng -는데요 (길을 좀 묻고 싶은데요) để người nghe tự hiểu phần "bạn giúp tôi được không". Tiếng Việt cũng có lối nói lửng như "Em muốn hỏi chút ạ…", nên bạn có thể liên tưởng như vậy.
+  - type: example
+    target: 여기가 제가 자주 가는 카페예요. 분위기가 좋아요.
+    target_lang: ko
+    translation:
+      vi: Đây là quán cà phê tôi hay đến. Không gian đẹp lắm.
+    note:
+      vi: 가다 + -는 → 가는; cả cụm 제가 자주 가는 đứng trước 카페.
+  - type: example
+    target: 친구가 추천한 식당인데 음식이 정말 맛있었어요.
+    target_lang: ko
+    translation:
+      vi: Đây là quán bạn tôi giới thiệu, đồ ăn ngon thật sự.
+    note:
+      vi: 추천한 (đã giới thiệu) + 식당 + 인데 (nêu bối cảnh).
+  - type: example
+    target: 줄이 긴 것 같은데 다른 데로 갈까요?
+    target_lang: ko
+    translation:
+      vi: Có vẻ hàng dài quá, mình đi chỗ khác nhé?
+    note:
+      vi: 길다 bỏ ㄹ → 긴; 같다 là tính từ nên → 같은데.
+  - type: example
+    target: 이 집은 좀 비싼데 직원들이 아주 친절해요.
+    target_lang: ko
+    translation:
+      vi: Quán này hơi đắt nhưng nhân viên rất niềm nở.
+  - type: example
+    target: 내일 볼 영화를 아직 못 정했어요.
+    target_lang: ko
+    translation:
+      vi: Tôi vẫn chưa chọn được phim sẽ xem ngày mai.
+    note:
+      vi: Việc sắp làm dùng -(으)ㄹ - 볼.
+  - type: common_mistake
+    wrong: 좋는 사람이에요.
+    right: 좋은 사람이에요.
+    target_lang: ko
+    note:
+      vi: 좋다 là tính từ nên dùng -은, không dùng -는. Chỉ động từ và 있다/없다 mới dùng -는 ở hiện tại.
+  - type: common_mistake
+    wrong: 어제 먹는 음식이 맛있었어요.
+    right: 어제 먹은 음식이 맛있었어요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt không đổi "ăn" theo thời gian, nên người học hay quên đổi định ngữ. Việc đã xảy ra phải dùng -(으)ㄴ - 먹은.
+  - type: common_mistake
+    wrong: 이 옷은 예쁘는데 너무 비싸요.
+    right: 이 옷은 예쁜데 너무 비싸요.
+    target_lang: ko
+    note:
+      vi: 예쁘다 là tính từ nên dùng -(으)ㄴ데 - 예쁜데. Hãy nhớ - -는데 theo đúng quy tắc định ngữ.
+  - type: summary
+    points:
+      - vi: Động từ - -는 (đang/thường), -(으)ㄴ (đã), -(으)ㄹ (sẽ); tính từ - -(으)ㄴ; 있다/없다 - -는.
+      - vi: Định ngữ đứng trước danh từ - 제가 자주 가는 카페.
+      - vi: -(으)ㄴ/는/(으)ㄹ 것 같아요 - hình như, có vẻ; danh từ - N인 것 같아요.
+      - vi: -는데 / -(으)ㄴ데 / N인데 - đối lập, nêu bối cảnh, nhờ mềm (-는데요).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:modifiers-listen-rain
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-geot-gatda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 밖에 비가 오는 것 같아요.
+      options:
+        - { id: p3w, text: Hình như ngoài trời đang mưa., lang: vi }
+        - { id: z7e, text: Hình như hôm qua trời mưa., lang: vi }
+        - { id: k1r, text: Chắc ngày mai trời sẽ mưa., lang: vi }
+        - { id: v4y, text: Ngoài trời không mưa., lang: vi }
+    answer:
+      correct_option_id: p3w
+    explanation:
+      vi: 오는 것 같아요 dùng -는 nên là việc đang diễn ra - "hình như đang mưa". Đã mưa là 온 것 같아요, sắp mưa là 올 것 같아요.
+    display_answer: Hình như ngoài trời đang mưa.
+
+  - key: ko:exercise:modifiers-mcq-past
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-adnominal
+    prompt:
+      stem: "Chọn từ đúng: 어제 ______ 영화가 재미있었어요. (Bộ phim tôi xem hôm qua hay lắm.)"
+      stem_lang: vi
+      options:
+        - { id: c5n, text: 본, lang: ko }
+        - { id: j8a, text: 보는, lang: ko }
+        - { id: q2h, text: 볼, lang: ko }
+        - { id: f9l, text: 봐서, lang: ko }
+    answer:
+      correct_option_id: c5n
+    explanation:
+      vi: Hôm qua là việc đã xảy ra nên dùng -(으)ㄴ - 보다 → 본. 보는 là đang/thường xem, 볼 là sẽ xem, 봐서 không đứng trước danh từ được.
+    display_answer: 본
+
+  - key: ko:exercise:modifiers-fill-neunde-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-neunde
+    prompt:
+      template: "이 가방은 좀 {{b1}} 정말 튼튼해요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Cái túi này hơi đắt nhưng rất bền."
+        - "Gợi ý: 비싸다 là tính từ → -(으)ㄴ데."
+    answer:
+      blanks:
+        b1: [비싼데]
+    known_wrong:
+      - answer: 비싸는데
+        feedback_vi: 비싸다 là tính từ nên dùng -ㄴ데 - 비싼데. -는데 dành cho động từ và 있다/없다.
+        error_tag: neunde_adjective
+      - answer: 비싸서
+        feedback_vi: 비싸서 là "vì đắt". Câu cần đối lập "đắt nhưng bền" - 비싼데.
+        error_tag: neunde_vs_aseo
+    explanation:
+      vi: Đối lập "…nhưng…" dùng -는데 họ nhà định ngữ. 비싸다 là tính từ, không patchim → 비싼데.
+    display_answer: 이 가방은 좀 비싼데 정말 튼튼해요.
+
+  - key: ko:exercise:modifiers-wb-cafe
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-adnominal
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Đây là quán cà phê tôi hay đến.\""
+      tokens:
+        - { id: c4, text: 카페예요 }
+        - { id: c5, text: 간 }
+        - { id: c3, text: 가는 }
+        - { id: c1, text: 제가 }
+        - { id: c2, text: 자주 }
+    answer:
+      orders:
+        - [c1, c2, c3, c4]
+        - [c2, c1, c3, c4]
+    explanation:
+      vi: Phần bổ nghĩa 제가 자주 가는 đứng trước 카페. "Hay đến" là thói quen nên dùng 가는; 간 là "đã đến".
+    display_answer: 제가 자주 가는 카페예요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:modifiers-fill-movie-cafe
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-adnominal
+    prompt:
+      template: "(Bộ phim tôi xem hôm qua rất hay.) 어제 {{b1}} 영화가 재미있었어요. (Tôi biết một quán cà phê không gian đẹp.) 분위기가 {{b2}} 카페를 알아요."
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [본]
+        b2: [좋은]
+    known_wrong:
+      - answer: 보는
+        feedback_vi: Hôm qua là việc đã xảy ra - dùng 본.
+        error_tag: modifier_tense
+      - answer: 좋는
+        feedback_vi: 좋다 là tính từ nên dùng -은 - 좋은.
+        error_tag: modifier_adjective
+    explanation:
+      vi: Động từ ở quá khứ - 보다 → 본. Tính từ ở hiện tại - 좋다 → 좋은 (có patchim nên thêm 은).
+    display_answer: 어제 본 영화가 재미있었어요. 분위기가 좋은 카페를 알아요.
+
+  - key: ko:exercise:modifiers-translate-famous
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:yumyeonghada
+    prompt:
+      source_text: Hình như quán này nổi tiếng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이 식당이 유명한 것 같아요.
+        - 이 식당은 유명한 것 같아요.
+        - 이 집이 유명한 것 같아요.
+        - 이 집은 유명한 것 같아요.
+        - 여기가 유명한 것 같아요.
+        - 여기는 유명한 것 같아요.
+        - 이 식당 유명한 것 같아요.
+        - 이 가게가 유명한 것 같아요.
+    known_wrong:
+      - answer: 이 식당이 유명하는 것 같아요.
+        feedback_vi: 유명하다 là tính từ nên dùng -ㄴ 것 같아요 - 유명한 것 같아요.
+        error_tag: modifier_adjective
+      - answer: 이 식당이 유명 것 같아요.
+        feedback_vi: Cần định ngữ trước 것 - 유명한 것 같아요.
+        error_tag: missing_modifier
+      - answer: 이 식당이 유명해서 같아요.
+        feedback_vi: Nghĩa "hình như" là -(으)ㄴ 것 같아요, không dùng -아서.
+        error_tag: geot_gatda_form
+    explanation:
+      vi: Tính từ ở hiện tại + -(으)ㄴ 것 같아요 - 유명하다 → 유명한 것 같아요. 식당, 집, 가게, 여기 đều dùng được cho "quán".
+    display_answer: 이 식당이 유명한 것 같아요.
+
+  - key: ko:exercise:modifiers-fill-background
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-neunde
+    prompt:
+      template: "(Tôi đang ở trước ga rồi, bạn ở đâu?) 지금 역 {{b1}} 어디에 있어요? (Tôi muốn hỏi đường một chút ạ.) 저기요, 길을 좀 묻고 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [앞인데]
+        b2: [싶은데요]
+    known_wrong:
+      - answer: 앞는데
+        feedback_vi: 앞 là danh từ nên dùng 인데 - 앞인데.
+        error_tag: neunde_noun
+      - answer: 싶는데요
+        feedback_vi: 싶다 chia như tính từ - 싶은데요.
+        error_tag: neunde_adjective
+      - answer: 싶어요
+        feedback_vi: 싶어요 đúng ngữ pháp nhưng nói thẳng. Ở đây cần cách mở lời mềm - 싶은데요.
+        error_tag: soft_request
+    explanation:
+      vi: Danh từ + 인데 để nêu bối cảnh (앞인데). -고 싶다 chia như tính từ, nên lời nhờ mềm là 묻고 싶은데요.
+    display_answer: 지금 역 앞인데 어디에 있어요? 저기요, 길을 좀 묻고 싶은데요.
+
+  - key: ko:exercise:modifiers-translate-recommend
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:chucheonhada
+    prompt:
+      source_text: Giới thiệu cho tôi một quán ăn ngon với.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 맛있는 식당 좀 추천해 주세요.
+        - 맛있는 식당을 추천해 주세요.
+        - 맛있는 식당 추천해 주세요.
+        - 맛있는 식당을 좀 추천해 주세요.
+        - 맛있는 식당 하나 추천해 주세요.
+        - 맛집 좀 추천해 주세요.
+        - 맛집을 추천해 주세요.
+        - 맛집 추천해 주세요.
+        - 맛집 하나 추천해 주세요.
+    known_wrong:
+      - answer: 맛있은 식당 좀 추천해 주세요.
+        feedback_vi: 있다/없다 dùng -는 - 맛있는 식당.
+        error_tag: modifier_itda
+      - answer: 식당 맛있는 좀 추천해 주세요.
+        feedback_vi: Định ngữ đứng trước danh từ - 맛있는 식당.
+        error_tag: modifier_order
+    explanation:
+      vi: 맛있다 thuộc nhóm 있다 nên dùng 맛있는; định ngữ đứng trước 식당. Nhờ ai làm gì - V-아/어 주세요 → 추천해 주세요. 맛집 là "quán ngon nổi tiếng".
+    display_answer: 맛있는 식당 좀 추천해 주세요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:modifiers-mcq-blog-inference
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:jureul-seoda
+    prompt:
+      stem: "Đọc đoạn blog và chọn ý đúng. 지난 주말에 친구가 추천한 맛집에 갔다. 사람이 많아서 30분 동안 줄을 섰는데 음식을 먹어 보니까 왜 사람들이 기다리는지 알 수 있었다. 직원들도 친절했다."
+      stem_lang: vi
+      options:
+        - { id: w6t, text: Người viết thấy đáng chờ vì món ăn ngon., lang: vi }
+        - { id: m2d, text: Người viết không phải xếp hàng., lang: vi }
+        - { id: b8x, text: Nhân viên quán không thân thiện., lang: vi }
+        - { id: e5q, text: Người viết tự tìm ra quán này trên mạng., lang: vi }
+    answer:
+      correct_option_id: w6t
+    explanation:
+      vi: 먹어 보니까 왜 사람들이 기다리는지 알 수 있었다 - "ăn thử rồi mới hiểu vì sao mọi người chờ", tức là món ăn ngon, đáng chờ. Người viết đã xếp hàng 30 phút (줄을 섰는데), quán do bạn giới thiệu (친구가 추천한), nhân viên thì 친절했다.
+    display_answer: Người viết thấy đáng chờ vì món ăn ngon.
+
+  - key: ko:exercise:modifiers-mcq-soft-request
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-neunde
+    prompt:
+      stem: Ở cửa hàng, bạn muốn mở lời lịch sự "Tôi muốn đổi cái này một chút ạ…". Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: h7u, text: 이거 좀 바꾸고 싶은데요., lang: ko }
+        - { id: a3s, text: 이거 좀 바꾸고 싶는데요., lang: ko }
+        - { id: r6m, text: 이거 좀 바꾸고 싶어서 주세요., lang: ko }
+        - { id: y1g, text: 이거 좀 바꾸니까요., lang: ko }
+    answer:
+      correct_option_id: h7u
+    explanation:
+      vi: -고 싶다 chia như tính từ nên là 싶은데요; kết câu -는데요 là lời nhờ mềm, để nhân viên tự hiểu bạn cần giúp. 싶는데요 sai dạng, hai câu còn lại không đúng ngữ pháp.
+    display_answer: 이거 좀 바꾸고 싶은데요.
+
+  - key: ko:exercise:modifiers-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-geot-gatda
+    prompt:
+      source_text: 사람이 많은 것 같은데 다른 식당에 갈까요?
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hình như đông người, mình đi quán khác nhé?
+        - Hình như đông người quá, mình đi quán khác nhé?
+        - Có vẻ đông người, mình đi quán khác nhé?
+        - Có vẻ đông người, chúng ta đi quán khác nhé?
+        - Hình như đông người, chúng ta đi nhà hàng khác nhé?
+        - Có vẻ đông người, mình sang quán khác không?
+        - Có vẻ đông người, hay mình đi quán khác?
+        - Hình như đông người, mình đi quán khác không?
+        - Có vẻ đông người, mình đi quán khác được không?
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì đông người nên mình đi quán khác.
+        feedback_vi: 것 같은데 là "có vẻ… (nên)" mang tính phỏng đoán, và 갈까요 là câu rủ hỏi ý "nhé?".
+        error_tag: geot_gatda_meaning
+      - answer: Hình như ít người, mình đi quán khác nhé?
+        feedback_vi: 많다 là "nhiều, đông"; ít là 적다.
+        error_tag: vocab_many
+    explanation:
+      vi: 많은 것 같은데 = có vẻ đông (nêu bối cảnh), 다른 식당에 갈까요? = mình đi quán khác nhé?
+    display_answer: Hình như đông người, mình đi quán khác nhé?
+
+  - key: ko:exercise:modifiers-translate-neighbor
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-geot-gatda
+    prompt:
+      source_text: Người ngồi bên cạnh tôi hình như là người Việt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 제 옆에 앉은 사람은 베트남 사람인 것 같아요.
+        - 제 옆에 앉은 사람이 베트남 사람인 것 같아요.
+        - 제 옆에 앉아 있는 사람은 베트남 사람인 것 같아요.
+        - 제 옆에 앉아 있는 사람이 베트남 사람인 것 같아요.
+        - 옆에 앉은 사람은 베트남 사람인 것 같아요.
+        - 옆에 앉은 사람이 베트남 사람인 것 같아요.
+        - 옆에 앉아 있는 사람은 베트남 사람인 것 같아요.
+        - 내 옆에 앉은 사람은 베트남 사람인 것 같아요.
+        - 제 옆에 앉은 사람은 베트남인인 것 같아요.
+    known_wrong:
+      - answer: 제 옆에 앉은 사람은 베트남 사람 것 같아요.
+        feedback_vi: Sau danh từ cần 인 - 베트남 사람인 것 같아요.
+        error_tag: noun_in_geot_gatda
+      - answer: 제 옆에 앉은 사람은 베트남 사람이는 것 같아요.
+        feedback_vi: 이다 + định ngữ là 인 - 사람인 것 같아요.
+        error_tag: noun_in_geot_gatda
+      - answer: 사람은 제 옆에 앉은 베트남 사람인 것 같아요.
+        feedback_vi: Cụm bổ nghĩa 제 옆에 앉은 phải đứng trước 사람 mà nó mô tả.
+        error_tag: modifier_order
+    explanation:
+      vi: Người ngồi cạnh tôi - 제 옆에 앉은 사람 (앉다 → 앉은, trạng thái đã ngồi xuống). Hình như là người Việt - danh từ + 인 것 같아요.
+    display_answer: 제 옆에 앉은 사람은 베트남 사람인 것 같아요.

@@ -1,0 +1,416 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:work-life-review
+order_index: 5
+level: topik4
+title:
+  vi: Ôn tập - Một ngày ở công ty Hàn (email, biên bản họp, điện thoại)
+objectives:
+  - vi: Đọc hiểu ba loại văn bản công sở ở trình độ TOPIK 4 - email, biên bản họp và cuộc gọi.
+  - vi: Phối hợp 합쇼체, kính ngữ với cấp trên và các mẫu -게 되다, -(으)ㄴ 지, -도록 하다, -느라고, -기 위해서, -는 대로.
+  - vi: Chọn đúng câu xin lỗi, xin phép, cảm ơn trong từng tình huống công sở.
+estimated_minutes: 22
+skills: [reading, listening, writing, grammar]
+prerequisites: [ko:lesson:business-email-phone]
+items:
+  - item: ko:item:hoeuirok
+  - item: ko:item:angeon
+  - item: ko:item:gram-ge-doeda
+    role: reuse
+  - item: ko:item:gram-eun-ji
+    role: reuse
+  - item: ko:item:gram-seumnida
+    role: reuse
+  - item: ko:item:gram-dorok-hada
+    role: reuse
+  - item: ko:item:gram-kkeseo
+    role: reuse
+  - item: ko:item:gram-neurago
+    role: reuse
+  - item: ko:item:gram-gi-wihaeseo
+    role: reuse
+  - item: ko:item:gram-neun-daero
+    role: reuse
+  - item: ko:item:gram-eul-yejeongimnida
+    role: reuse
+  - item: ko:item:dareumi-anira
+    role: reuse
+  - item: ko:item:hwagin-butakdeurimnida
+    role: reuse
+  - item: ko:item:gyesida
+    role: reuse
+  - item: ko:item:chuljang
+    role: reuse
+  - item: ko:item:hoesik
+    role: reuse
+  - item: ko:item:chamseokhada
+    role: reuse
+  - item: ko:item:joesonghamnida
+    role: reuse
+  - item: ko:item:sillyehamnida
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài ôn này, bạn đọc được email mời họp, biên bản cuộc họp và theo dõi một cuộc gọi công việc, rồi tự phản hồi bằng giọng trang trọng phù hợp.
+  - type: explain
+    text:
+      vi: 'Ba văn bản trong bài có ba giọng khác nhau. Email và điện thoại dùng 합쇼체 kèm kính ngữ (계십니까, 연락드렸습니다); biên bản họp viết rút gọn, kết thúc bằng -음/-함 (되었음, 준비하도록 함) thay cho -습니다.'
+  - type: explain
+    text:
+      vi: Khi đọc email, hãy tìm câu sau 다름이 아니라 - đó là mục đích chính. Khi đọc biên bản, tìm 안건 (vấn đề bàn) rồi xem ai phải làm gì (-도록 함) và việc gì dự kiến (-(으)ㄹ 예정임).
+  - type: deep_explain
+    text:
+      vi: Đuôi -음/-함 là cách danh từ hoá câu, rất hay gặp trong biên bản, thông báo ngắn, ghi chú công việc - 결정함 (đã quyết định), 확인 바람 (đề nghị kiểm tra). Bạn chỉ cần đọc hiểu; khi viết email hay nói thì vẫn dùng -습니다.
+  - type: example
+    target: |-
+      제목: 신제품 설명회 일정 안내
+      이수진 과장님께,
+      안녕하십니까? 베트남 지사 영업팀 응우옌 반 안입니다.
+      다름이 아니라 다음 달 신제품 설명회 일정을 알려 드리기 위해서 연락드렸습니다. 설명회는 11월 12일 오후 2시에 호찌민 지사 회의실에서 열릴 예정입니다. 자세한 내용은 첨부 파일을 참고해 주십시오.
+      참석 여부를 확인하시는 대로 회신 부탁드립니다.
+      감사합니다.
+      응우옌 반 안 드림
+    target_lang: ko
+    translation:
+      vi: "Tiêu đề: Thông báo lịch buổi giới thiệu sản phẩm mới. Kính gửi trưởng bộ phận Lee Sujin. Xin chào chị, tôi là Nguyễn Văn An, nhóm kinh doanh chi nhánh Việt Nam. Tôi liên lạc để báo lịch buổi giới thiệu sản phẩm mới tháng sau. Buổi giới thiệu dự kiến diễn ra lúc 2 giờ chiều ngày 12/11 tại phòng họp chi nhánh TP. Hồ Chí Minh. Chi tiết xin xem tệp đính kèm. Khi chị xác nhận có tham dự hay không, mong chị phản hồi giúp. Xin cảm ơn. Nguyễn Văn An."
+    note:
+      vi: Email - mục đích nằm sau 다름이 아니라; 회신 là thư trả lời, 참석 여부 là "có tham dự hay không".
+  - type: example
+    target: |-
+      회의록
+      일시: 10월 15일(수) 오후 2시 / 장소: 3층 회의실
+      참석자: 박 팀장, 이 대리, 응우옌 사원
+      안건: 신제품 설명회 준비
+      1. 설명회 날짜가 11월 12일로 바뀌게 되었음.
+      2. 발표 자료는 응우옌 사원이 10월 25일까지 준비하도록 함.
+      3. 박 팀장은 다음 주에 호찌민으로 출장을 갈 예정임.
+      4. 예산은 부장님 결재를 받은 후 확정함.
+    target_lang: ko
+    translation:
+      vi: "Biên bản họp. Thời gian - 2 giờ chiều thứ Tư 15/10; địa điểm - phòng họp tầng 3. Người dự - trưởng nhóm Park, trợ lý Lee, nhân viên Nguyễn. Vấn đề bàn - chuẩn bị buổi giới thiệu sản phẩm mới. 1. Ngày giới thiệu đã được đổi sang 12/11. 2. Nhân viên Nguyễn chuẩn bị tài liệu thuyết trình trước 25/10. 3. Trưởng nhóm Park dự kiến đi công tác TP. Hồ Chí Minh tuần sau. 4. Ngân sách sẽ chốt sau khi trưởng phòng duyệt."
+    note:
+      vi: Biên bản viết gọn, đuôi -음/-함; 대리 là chức "trợ lý/phó nhóm", dưới 과장.
+  - type: example
+    target: |-
+      직원: 감사합니다. 한빛무역 영업부 이수진입니다.
+      안: 안녕하십니까? 베트남 지사 응우옌 반 안입니다. 박 팀장님 계십니까?
+      직원: 죄송합니다만, 팀장님께서는 지금 회의 중이십니다. 메모 남겨 드릴까요?
+      안: 네, 설명회 일정 때문에 전화드렸습니다. 제 번호는 090-1234-5678입니다.
+      직원: 알겠습니다. 회의가 끝나는 대로 전해 드리겠습니다.
+      안: 감사합니다. 그럼 수고하십시오.
+    target_lang: ko
+    translation:
+      vi: "Nhân viên: Xin cảm ơn, Lee Sujin phòng kinh doanh công ty Hanbit xin nghe. An: Xin chào, tôi là Nguyễn Văn An ở chi nhánh Việt Nam. Trưởng nhóm Park có ở đó không ạ? Nhân viên: Xin lỗi anh, trưởng nhóm đang họp. Tôi ghi lời nhắn giúp anh nhé? An: Vâng, tôi gọi vì lịch buổi giới thiệu. Số của tôi là 090-1234-5678. Nhân viên: Vâng, họp xong tôi sẽ chuyển lời ngay. An: Cảm ơn chị. Chào chị."
+    note:
+      vi: 죄송합니다만 - lời xin lỗi mở đầu cho tin không như mong muốn; 수고하십시오 là câu chào khi kết thúc cuộc gọi với người ngang hàng.
+  - type: common_mistake
+    wrong: 회의에 늦어서 실례합니다.
+    right: 회의에 늦어서 죄송합니다.
+    target_lang: ko
+    note:
+      vi: Đến muộn là có lỗi nên dùng 죄송합니다. 실례합니다 chỉ dùng để xin phép trước khi làm phiền, như lúc gõ cửa bước vào.
+  - type: common_mistake
+    wrong: 과장님, 설명회 일정 보내요. 확인해 주세요.
+    right: 과장님, 설명회 일정을 보내 드립니다. 확인 부탁드립니다.
+    target_lang: ko
+    note:
+      vi: Email gửi khách hay cấp trên không viết 해요체 như tin nhắn. Dùng 합쇼체, -아/어 드리다 và 부탁드립니다.
+  - type: summary
+    points:
+      - vi: Email - 안녕하십니까 → 다름이 아니라 (mục đích) → 첨부 파일 → 확인/회신 부탁드립니다 → tên + 드림.
+      - vi: Biên bản - 안건, 참석자, các câu đuôi -음/-함 (되었음, -도록 함, -(으)ㄹ 예정임).
+      - vi: Điện thoại - 계십니까? · 잠시만 기다려 주십시오 · 회의 중이십니다 · -는 대로 전해 드리겠습니다.
+      - vi: 죄송합니다 (có lỗi) ≠ 실례합니다 (xin phép); 께서 không dùng cho mình; 드리다 là mình → người trên.
+      - vi: -느라고 chỉ cho kết quả không tốt; -는 대로 cho việc tương lai.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:work-review-mcq-memo-task
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:hoeuirok
+    prompt:
+      stem: "Biên bản họp ghi: 발표 자료는 응우옌 사원이 10월 25일까지 준비하도록 함. Điều này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: x4b, text: Nhân viên Nguyễn phải chuẩn bị tài liệu thuyết trình trước 25/10., lang: vi }
+        - { id: k1m, text: Nhân viên Nguyễn đã chuẩn bị xong tài liệu vào 25/10., lang: vi }
+        - { id: s8e, text: Nhân viên Nguyễn sẽ thuyết trình vào ngày 25/10., lang: vi }
+        - { id: f6j, text: Nhân viên Nguyễn muốn chuẩn bị tài liệu nếu có thời gian., lang: vi }
+    answer:
+      correct_option_id: x4b
+    explanation:
+      vi: -도록 함 trong biên bản là quyết định giao việc - "để ai đó làm". 까지 là "trước, chậm nhất là"; việc chưa xảy ra nên không phải "đã chuẩn bị xong".
+    display_answer: Nhân viên Nguyễn phải chuẩn bị tài liệu thuyết trình trước 25/10.
+
+  - key: ko:exercise:work-review-listen-meeting
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gyesida
+    prompt:
+      audio_asset_id: null
+      fallback_text: 죄송합니다만, 팀장님께서는 지금 회의 중이십니다.
+      options:
+        - { id: v2c, text: "Xin lỗi, trưởng nhóm hiện đang họp.", lang: vi }
+        - { id: g7r, text: "Xin phép, trưởng nhóm sắp đến cuộc họp.", lang: vi }
+        - { id: p4n, text: "Xin lỗi, trưởng nhóm hôm nay đi công tác.", lang: vi }
+        - { id: z9t, text: "Xin lỗi, trưởng nhóm vừa họp xong.", lang: vi }
+    answer:
+      correct_option_id: v2c
+    explanation:
+      vi: 회의 중이십니다 - "đang họp" (중 - đang, -이시- kính ngữ). Đi công tác là 출장 중; họp xong là 회의가 끝났습니다.
+    display_answer: Xin lỗi, trưởng nhóm hiện đang họp.
+
+  - key: ko:exercise:work-review-mcq-angeon
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:angeon
+    prompt:
+      stem: "Trong biên bản, dòng \"안건: 신제품 설명회 준비\" cho biết điều gì?"
+      stem_lang: vi
+      options:
+        - { id: c5u, text: Vấn đề được đưa ra bàn trong cuộc họp., lang: vi }
+        - { id: h3w, text: Danh sách người tham dự cuộc họp., lang: vi }
+        - { id: l8o, text: Thời gian và địa điểm cuộc họp., lang: vi }
+        - { id: y1d, text: Ngân sách của buổi giới thiệu., lang: vi }
+    answer:
+      correct_option_id: c5u
+    explanation:
+      vi: 안건 là vấn đề cần bàn. Người tham dự là 참석자, thời gian - địa điểm là 일시 và 장소, ngân sách là 예산.
+    display_answer: Vấn đề được đưa ra bàn trong cuộc họp.
+
+  - key: ko:exercise:work-review-fill-wihaeseo
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-gi-wihaeseo
+    prompt:
+      template: "다름이 아니라 설명회 일정을 알려 드리기 {{b1}} 연락드렸습니다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Chẳng là tôi liên lạc để báo lịch buổi giới thiệu."
+        - "Gợi ý: -기 + từ nghĩa là \"để, vì mục đích\"."
+    answer:
+      blanks:
+        b1: [위해서, 위해]
+    known_wrong:
+      - answer: 때문에
+        feedback_vi: -기 때문에 là "vì (lý do)". Ở đây là mục đích "để báo lịch" - -기 위해서.
+        error_tag: purpose_reason
+      - answer: 위하고
+        feedback_vi: Mẫu cố định là -기 위해서 (hoặc 위해).
+        error_tag: gi_wihaeseo_form
+    explanation:
+      vi: Mục đích của việc liên lạc là báo lịch nên dùng -기 위해서. -기 때문에 chỉ lý do, nghĩa khác hẳn.
+    display_answer: 다름이 아니라 설명회 일정을 알려 드리기 위해서 연락드렸습니다.
+
+  - key: ko:exercise:work-review-wb-minutes
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:hoeuirok
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Biên bản họp để tôi viết ạ.\""
+      tokens:
+        - { id: m3, text: 작성하겠습니다 }
+        - { id: m4, text: 저께서 }
+        - { id: m1, text: 회의록은 }
+        - { id: m2, text: 제가 }
+    answer:
+      orders:
+        - [m1, m2, m3]
+        - [m2, m1, m3]
+    explanation:
+      vi: Nói về mình dùng 제가, không bao giờ 저께서. -겠습니다 là lời nhận việc trang trọng.
+    display_answer: 회의록은 제가 작성하겠습니다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:work-review-fill-kkeseo
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-kkeseo
+    prompt:
+      template: "사장님{{b1}} 방금 회의실에 {{b2}}. (오다, 합쇼체, quá khứ)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [께서]
+        b2: [오셨습니다]
+    known_wrong:
+      - answer: 께
+        feedback_vi: 께 là "cho, tới (người trên)". Giám đốc là chủ ngữ nên dùng 께서.
+        error_tag: kke_kkeseo
+      - answer: 왔습니다
+        feedback_vi: Chủ ngữ là giám đốc nên động từ thêm -시- - 오셨습니다.
+        error_tag: missing_si
+      - answer: 오셨어요
+        feedback_vi: Câu đúng kính ngữ nhưng đề yêu cầu 합쇼체 - 오셨습니다.
+        error_tag: speech_level
+    explanation:
+      vi: Người trên làm chủ ngữ - 께서 + động từ có -시- (오시다 → 오셨습니다).
+    display_answer: 사장님께서 방금 회의실에 오셨습니다.
+
+  - key: ko:exercise:work-review-translate-hoesik
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-neurago
+    prompt:
+      source_text: Vì đi công tác nên tôi đã không tham dự được buổi liên hoan. (nói trang trọng)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 출장 가느라고 회식에 참석하지 못했습니다.
+        - 출장을 가느라고 회식에 참석하지 못했습니다.
+        - 출장 가느라 회식에 참석하지 못했습니다.
+        - 출장을 가느라 회식에 참석하지 못했습니다.
+        - 출장 가느라고 회식에 못 갔습니다.
+        - 출장을 가느라고 회식에 못 갔습니다.
+        - 출장 가느라고 회식에 참석 못 했습니다.
+        - 출장 가느라고 회식에 가지 못했습니다.
+        - 출장 가느라고 회식에 못 참석했습니다.
+        - 저는 출장 가느라고 회식에 참석하지 못했습니다.
+        - 출장 때문에 회식에 참석하지 못했습니다.
+        - 출장을 가서 회식에 참석하지 못했습니다.
+    known_wrong:
+      - answer: 출장 갔느라고 회식에 참석하지 못했습니다.
+        feedback_vi: Vế -느라고 không chia quá khứ - 가느라고.
+        error_tag: neurago_tense
+      - answer: 출장 가느라고 회식을 참석하지 못했습니다.
+        feedback_vi: 참석하다 đi với 에 - 회식에 참석하다.
+        error_tag: particle_e
+      - answer: 출장 가느라고 회식에 참석하지 못했어.
+        feedback_vi: Câu thân mật 반말. Đề yêu cầu trang trọng - 못했습니다.
+        error_tag: speech_level
+    explanation:
+      vi: -느라고 nối việc chiếm thời gian (đi công tác) với kết quả không tốt (không dự được). Cũng có thể dùng 때문에 hoặc -아/어서.
+    display_answer: 출장 가느라고 회식에 참석하지 못했습니다.
+
+  - key: ko:exercise:work-review-translate-six-months
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eun-ji
+    prompt:
+      source_text: Tôi vào công ty được 6 tháng rồi ạ. (nói trang trọng)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 입사한 지 6개월이 됐습니다.
+        - 입사한 지 6개월 됐습니다.
+        - 입사한 지 6개월이 되었습니다.
+        - 저는 입사한 지 6개월이 됐습니다.
+        - 저는 입사한 지 6개월이 되었습니다.
+        - 제가 입사한 지 6개월이 됐습니다.
+        - 회사에 들어온 지 6개월이 됐습니다.
+        - 입사한 지 여섯 달이 됐습니다.
+        - 입사한 지 육 개월이 됐습니다.
+        - 입사한 지 6개월이 지났습니다.
+    known_wrong:
+      - answer: 입사하는 지 6개월이 됐습니다.
+        feedback_vi: Dùng -(으)ㄴ 지 - 입사한 지.
+        error_tag: eun_ji_form
+      - answer: 6개월 동안 입사했습니다.
+        feedback_vi: 입사하다 xảy ra một lần. "Vào được 6 tháng" là 입사한 지 6개월이 됐습니다.
+        error_tag: eun_ji_literal
+      - answer: 입사한 지 6개월이 됐어요.
+        feedback_vi: Đúng nghĩa nhưng đề yêu cầu trang trọng - 됐습니다.
+        error_tag: speech_level
+    explanation:
+      vi: V-(으)ㄴ 지 + thời gian + 되다; 합쇼체 quá khứ là 됐습니다 (되었습니다).
+    display_answer: 입사한 지 6개월이 됐습니다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:work-review-mcq-email-reply
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:gram-neun-daero
+    prompt:
+      stem: "Email kết thúc bằng: 참석 여부를 확인하시는 대로 회신 부탁드립니다. Người viết mong người nhận làm gì?"
+      stem_lang: vi
+      options:
+        - { id: a6k, text: Trả lời ngay khi đã xác nhận có tham dự hay không., lang: vi }
+        - { id: e3v, text: Đến tham dự theo đúng lịch đã ghi., lang: vi }
+        - { id: o7s, text: Đã xác nhận tham dự nên không cần trả lời., lang: vi }
+        - { id: u1q, text: Kiểm tra tệp đính kèm theo như đã hướng dẫn., lang: vi }
+    answer:
+      correct_option_id: a6k
+    explanation:
+      vi: 확인하시는 대로 - ngay khi (anh/chị) xác nhận; 회신 부탁드립니다 - mong hồi âm. 참석 여부 là "có tham dự hay không", không phải yêu cầu đến dự.
+    display_answer: Trả lời ngay khi đã xác nhận có tham dự hay không.
+
+  - key: ko:exercise:work-review-mcq-late
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:joesonghamnida
+    prompt:
+      stem: Bạn bước vào phòng họp muộn 10 phút, mọi người đã bắt đầu. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - { id: r5h, text: 늦어서 죄송합니다., lang: ko }
+        - { id: w8y, text: 늦어서 실례합니다., lang: ko }
+        - { id: i2p, text: 늦어서 수고하셨습니다., lang: ko }
+        - { id: n4f, text: 늦느라고 감사합니다., lang: ko }
+    answer:
+      correct_option_id: r5h
+    explanation:
+      vi: Đến muộn là lỗi của bạn nên nói 죄송합니다. 실례합니다 là xin phép, không dùng để nhận lỗi; 수고하셨습니다 và 감사합니다 không hợp tình huống.
+    display_answer: 늦어서 죄송합니다.
+
+  - key: ko:exercise:work-review-translate-memo-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-ge-doeda
+    prompt:
+      source_text: 설명회 날짜가 11월 12일로 바뀌게 되었습니다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ngày tổ chức buổi giới thiệu đã được đổi sang ngày 12 tháng 11.
+        - Ngày buổi giới thiệu đã được đổi sang ngày 12 tháng 11.
+        - Ngày của buổi giới thiệu đã được đổi thành ngày 12 tháng 11.
+        - Buổi giới thiệu đã được dời sang ngày 12 tháng 11.
+        - Ngày buổi giới thiệu được đổi sang 12/11.
+        - Ngày buổi giới thiệu đã đổi sang ngày 12 tháng 11.
+        - Ngày tổ chức buổi giới thiệu đã được chuyển sang ngày 12 tháng 11.
+        - Buổi giới thiệu được dời sang ngày 12/11.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Buổi giới thiệu đã diễn ra vào ngày 12 tháng 11.
+        feedback_vi: 바뀌게 되었습니다 nghĩa là "đã được đổi", không phải "đã diễn ra".
+        error_tag: ge_doeda_meaning
+      - answer: Chúng tôi muốn đổi ngày giới thiệu sang ngày 12 tháng 11.
+        feedback_vi: -게 되었습니다 báo việc đã được quyết định, không phải mong muốn.
+        error_tag: ge_doeda_meaning
+    explanation:
+      vi: 바뀌다 - bị/được đổi; -게 되었습니다 - việc đã thành ra như vậy do hoàn cảnh; 11월 12일로 - sang ngày 12/11.
+    display_answer: Ngày buổi giới thiệu đã được đổi sang ngày 12 tháng 11.

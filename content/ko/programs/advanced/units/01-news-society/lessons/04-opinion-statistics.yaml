@@ -1,0 +1,406 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:opinion-statistics
+order_index: 4
+level: topik5
+title:
+  vi: Nêu quan điểm, tiêu đề - thông báo và mô tả số liệu
+objectives:
+  - vi: Nêu nhận định chung trong bài luận bằng -기 마련이다 và -(으)ㄹ 수밖에 없다.
+  - vi: Đọc tiêu đề báo và thông báo ngắn viết bằng danh từ, -(으)ㅁ và -기.
+  - vi: Mô tả biểu đồ cho câu 53 TOPIK - N에 비해 N배 증가했다, N%를 차지하다, 응답자의 절반, 급격히/꾸준히.
+estimated_minutes: 20
+skills: [grammar, reading, writing]
+prerequisites: [ko:lesson:formal-connectives]
+items:
+  - item: ko:item:gp-gi-maryeonida
+  - item: ko:item:gp-l-subakke-eopda
+  - item: ko:item:gp-nominal-eum
+  - item: ko:item:gp-nominal-gi
+  - item: ko:item:gp-headline-noun
+  - item: ko:item:gp-e-bihae
+  - item: ko:item:chajihada
+  - item: ko:item:biyul
+  - item: ko:item:eungdapja
+  - item: ko:item:geupgyeokhi
+  - item: ko:item:kkujunhi
+  - item: ko:item:jeolban
+  - item: ko:item:jeunggahada
+    role: reuse
+  - item: ko:item:gamsohada
+    role: reuse
+  - item: ko:item:irin-gagu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được một đoạn mô tả biểu đồ ngắn kiểu câu 53, một câu nhận định kiểu câu 54, và hiểu nhanh tiêu đề báo, bảng thông báo.
+  - type: explain
+    text:
+      vi: -기 마련이다 nêu quy luật "lẽ thường là vậy" (물가가 오르면 소비가 줄기 마련이다), còn -(으)ㄹ 수밖에 없다 nêu kết quả tất yếu "không thể khác" (결혼을 미룰 수밖에 없다). Cả hai giúp câu lập luận trong bài luận chắc chắn hơn.
+  - type: explain
+    text:
+      vi: Văn bản ngắn hay kết thúc bằng danh từ. Thông báo, biên bản dùng -(으)ㅁ cho sự thật (점검 예정임, 변경되었음), khẩu hiệu và hướng dẫn dùng -기 cho việc nên làm (일회용품 줄이기). Tiêu đề báo bỏ trợ từ và đuôi câu - 물가 3개월 연속 상승.
+  - type: explain
+    text:
+      vi: 'Mô tả số liệu theo khuôn - nguồn và đối tượng (… 성인 1,000명을 대상으로 조사한 결과), xu hướng (A에 비해 2배 증가했다), tỉ trọng (N이/가 전체의 30%를 차지했다), thứ tự (그 뒤를 이어 …). "Gấp 2 lần" là 2배, không phải 2번.'
+  - type: deep_explain
+    text:
+      vi: Câu 53 TOPIK chỉ chấm việc tả đúng số liệu bằng văn viết -다, không cần ý kiến cá nhân; câu 54 mới cần lập luận. Khi tả xu hướng, chọn phó từ theo hình dáng đường biểu đồ - 급격히 (dốc đứng), 꾸준히 (đều đặn), 소폭 (nhẹ). -기 마련이다 chỉ dùng cho quy luật chung, nên không gắn vào sự việc cụ thể đã xảy ra.
+  - type: example
+    target: "한 연구소가 성인 1,000명을 대상으로 1인 가구가 늘어난 이유를 조사한 결과, '경제적 부담'이라고 답한 응답자가 42%로 가장 많았다. 그 뒤를 이어 '개인 생활 중시'가 30%, '취업난'이 18%를 차지했다. 또한 1인 가구 수는 2005년에 비해 약 2배 증가했다."
+    target_lang: ko
+    translation:
+      vi: Kết quả khảo sát 1.000 người trưởng thành của một viện nghiên cứu về lý do hộ một người tăng cho thấy "gánh nặng kinh tế" được chọn nhiều nhất với 42%. Tiếp theo là "coi trọng đời sống cá nhân" chiếm 30% và "khó tìm việc" chiếm 18%. Ngoài ra, số hộ một người đã tăng khoảng gấp 2 lần so với năm 2005.
+    note:
+      vi: Đoạn mô tả biểu đồ kiểu câu 53 (số liệu giả định) - nguồn, thứ tự, tỉ trọng, xu hướng.
+  - type: example
+    target: 물가가 오르면 서민의 생활은 어려워지기 마련이다. 특히 소득이 적은 청년과 노인은 소비를 줄일 수밖에 없다. 따라서 정부는 단기적인 지원뿐만 아니라 장기적인 대책도 마련해야 한다.
+    target_lang: ko
+    translation:
+      vi: Giá cả tăng thì đời sống người dân bình thường lẽ dĩ nhiên khó khăn hơn. Đặc biệt, thanh niên và người cao tuổi thu nhập thấp buộc phải cắt giảm chi tiêu. Do đó, chính phủ không chỉ cần hỗ trợ ngắn hạn mà còn phải xây dựng biện pháp dài hạn.
+    note:
+      vi: Trích đoạn bài bình luận - quy luật (-기 마련이다) → hệ quả (-(으)ㄹ 수밖에 없다) → đề xuất (-아/어야 한다).
+  - type: example
+    target: "[안내] 승강기 점검으로 3월 5일 오전 9시부터 12시까지 운행 중지 예정임. 계단 이용 바람."
+    target_lang: ko
+    translation:
+      vi: "[Thông báo] Do bảo trì thang máy, dự kiến ngừng chạy từ 9 giờ đến 12 giờ sáng ngày 5/3. Đề nghị dùng cầu thang bộ."
+    note:
+      vi: 예정임 (예정이다 → -ㅁ) và 바람 (바라다 → -ㅁ) là đuôi danh từ hoá thường gặp trên bảng thông báo.
+  - type: example
+    target: 청년 고용률 5개월 연속 하락… 정부, 일자리 대책 발표
+    target_lang: ko
+    translation:
+      vi: Tỉ lệ có việc làm của thanh niên giảm 5 tháng liên tiếp… Chính phủ công bố biện pháp tạo việc làm.
+    note:
+      vi: Tiêu đề bỏ trợ từ và đuôi câu; dấu phẩy sau 정부 thay cho 는.
+  - type: common_mistake
+    wrong: 1인 가구 수가 2005년에 비해 2번 증가했다.
+    right: 1인 가구 수가 2005년에 비해 2배 증가했다.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt "gấp 2 lần" khiến người học dùng 번 (lần - số lần xảy ra). Bội số dùng 배 - 2배, 3배.
+  - type: common_mistake
+    wrong: 노인 인구가 전체 인구의 20%에 차지한다.
+    right: 노인 인구가 전체 인구의 20%를 차지한다.
+    target_lang: ko
+    note:
+      vi: '"Chiếm ở mức 20%" làm bạn muốn thêm 에. 차지하다 là ngoại động từ nên tỉ lệ đi với 을/를.'
+  - type: common_mistake
+    wrong: 어제 회의에서 그 안건이 통과되기 마련이었다.
+    right: 어제 회의에서 그 안건이 통과되었다.
+    target_lang: ko
+    note:
+      vi: -기 마련이다 chỉ nói quy luật chung, không kể một sự việc cụ thể. Sự việc đã xảy ra thì chỉ cần quá khứ -었다.
+  - type: summary
+    points:
+      - vi: -기 마련이다 = lẽ thường là · -(으)ㄹ 수밖에 없다 = buộc phải, tất yếu.
+      - vi: Thông báo -(으)ㅁ (예정임, 바람) · khẩu hiệu/hướng dẫn -기 (줄이기) · tiêu đề kết thúc bằng danh từ (상승, 발표).
+      - vi: A에 비해 N배 증가/감소했다 · N이/가 전체의 N%를 차지했다 · 응답자의 절반.
+      - vi: 급격히 (vọt, mạnh) · 꾸준히 (đều đặn) - chọn theo hình dạng biểu đồ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:opinion-statistics-mcq-headline
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gp-headline-noun
+    prompt:
+      stem: "Tiêu đề 소비자 물가 3개월 연속 상승 có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: x2k, text: Giá tiêu dùng tăng ba tháng liên tiếp., lang: vi }
+        - { id: m8f, text: Giá tiêu dùng giảm ba tháng liên tiếp., lang: vi }
+        - { id: q5d, text: Người tiêu dùng mua sắm nhiều hơn trong ba tháng., lang: vi }
+        - { id: z3w, text: Giá tiêu dùng sẽ tăng trong ba tháng tới., lang: vi }
+    answer:
+      correct_option_id: x2k
+    explanation:
+      vi: Tiêu đề bỏ trợ từ và đuôi -했다 - đầy đủ là 소비자 물가가 3개월 연속 상승했다. 연속 là "liên tiếp", 상승 là "tăng"; tiêu đề thường kể sự việc đã xảy ra.
+    display_answer: Giá tiêu dùng tăng ba tháng liên tiếp.
+
+  - key: ko:exercise:opinion-statistics-mcq-notice
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-nominal-eum
+    prompt:
+      stem: "Chọn đuôi phù hợp cho bảng thông báo: \"Địa điểm họp đã đổi sang tầng 3.\" → 회의 장소가 3층으로 ___"
+      stem_lang: vi
+      options:
+        - { id: h6t, text: 변경되었음, lang: ko }
+        - { id: r4n, text: 변경되기, lang: ko }
+        - { id: c9a, text: 변경되었어요, lang: ko }
+        - { id: y7e, text: 변경되었는다, lang: ko }
+    answer:
+      correct_option_id: h6t
+    explanation:
+      vi: Thông báo một sự thật đã xác định dùng -(으)ㅁ - 변경되었음. -기 dùng cho việc nên làm (khẩu hiệu, hướng dẫn); 해요체 không hợp bảng thông báo; -었는다 không tồn tại.
+    display_answer: 변경되었음
+
+  - key: ko:exercise:opinion-statistics-listen-half
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:jeolban
+    prompt:
+      audio_asset_id: null
+      fallback_text: 응답자의 절반이 물가 상승을 가장 걱정한다고 답했다.
+      options:
+        - { id: b5v, text: Một nửa số người trả lời nói rằng họ lo nhất về việc giá cả tăng., lang: vi }
+        - { id: j1s, text: Phần lớn người trả lời không lo về giá cả., lang: vi }
+        - { id: o8g, text: Một nửa số người hỏi đã trả lời về giá cả., lang: vi }
+        - { id: e4p, text: Một nửa số người trả lời lo về việc giá cả giảm., lang: vi }
+    answer:
+      correct_option_id: b5v
+    explanation:
+      vi: 응답자의 절반 là "một nửa số người trả lời", 물가 상승 là "giá cả tăng", 가장 걱정한다고 답했다 là "trả lời rằng lo nhất".
+    display_answer: Một nửa số người trả lời nói rằng họ lo nhất về việc giá cả tăng.
+
+  - key: ko:exercise:opinion-statistics-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:chajihada
+    prompt:
+      template: "노인 인구가 전체 인구의 20%를 {{b1}}. 1인 가구 수는 2005년에 비해 2{{b2}} 증가했다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Người cao tuổi chiếm 20% tổng dân số. Số hộ một người tăng gấp 2 lần so với năm 2005."
+        - "Gợi ý: \"chiếm\" - 차지하다 (văn viết); \"gấp … lần\" - đơn vị bội số."
+    answer:
+      blanks:
+        b1: [차지한다, 차지했다]
+        b2: [배]
+    known_wrong:
+      - answer: 번
+        feedback_vi: 번 là số lần xảy ra. "Gấp 2 lần" là 2배.
+        error_tag: bae_beon
+      - answer: 차지해요
+        feedback_vi: Đây là 해요체. Văn viết là 차지한다.
+        error_tag: haeyo_in_writing
+      - answer: 차지하는다
+        feedback_vi: Gốc 차지하- kết thúc bằng nguyên âm nên thêm -ㄴ다 - 차지한다.
+        error_tag: nda_neunda_choice
+    explanation:
+      vi: 차지하다 là động từ nên văn viết là 차지한다 (hoặc quá khứ 차지했다), tỉ lệ đi với 를. Bội số dùng 배 - 2배 증가했다 là "tăng gấp 2 lần".
+    display_answer: 노인 인구가 전체 인구의 20%를 차지한다. 1인 가구 수는 2005년에 비해 2배 증가했다.
+
+  - key: ko:exercise:opinion-statistics-wb-compare
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-e-bihae
+    prompt:
+      instruction: "Sắp xếp thành câu mô tả số liệu: \"Số hộ một người đã tăng gấp 2 lần so với năm 2010.\""
+      tokens:
+        - { id: s3, text: 2배 }
+        - { id: s5, text: 2번 }
+        - { id: s2, text: 2010년에 비해 }
+        - { id: s4, text: 증가했다 }
+        - { id: s1, text: 1인 가구 수는 }
+    answer:
+      orders:
+        - [s1, s2, s3, s4]
+        - [s2, s1, s3, s4]
+    explanation:
+      vi: Mốc so sánh (2010년에 비해) đứng trước mức tăng (2배 증가했다); chủ ngữ có thể đứng đầu hoặc sau mốc so sánh. Bội số là 배, không phải 번.
+    display_answer: 1인 가구 수는 2010년에 비해 2배 증가했다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:opinion-statistics-fill-opinion
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-gi-maryeonida
+    prompt:
+      template: "(Giá cả tăng thì lẽ thường tiêu dùng sẽ giảm.) 물가가 오르면 소비가 줄{{b1}} 마련이다. (Nhà quá đắt nên thanh niên buộc phải hoãn kết hôn.) 집값이 너무 비싸서 청년들은 결혼을 미룰 {{b2}} 없다."
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [기]
+        b2: [수밖에]
+    known_wrong:
+      - answer: 는
+        feedback_vi: Trước 마련이다 phải danh từ hoá bằng -기 - 줄기 마련이다.
+        error_tag: maryeon_form
+      - answer: 수가
+        feedback_vi: 미룰 수가 없다 là "không thể hoãn" - ngược nghĩa. "Buộc phải" là -(으)ㄹ 수밖에 없다.
+        error_tag: subakke_meaning
+      - answer: 수도
+        feedback_vi: 수도 없다 là "cũng không thể". "Buộc phải" là -(으)ㄹ 수밖에 없다.
+        error_tag: subakke_meaning
+    explanation:
+      vi: Quy luật chung - V-기 마련이다 (줄기 마련이다). "Không còn cách nào khác" - V-(으)ㄹ 수밖에 없다, 밖에 viết liền với 수.
+    display_answer: 물가가 오르면 소비가 줄기 마련이다. / 집값이 너무 비싸서 청년들은 결혼을 미룰 수밖에 없다.
+
+  - key: ko:exercise:opinion-statistics-translate-share
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:chajihada
+    prompt:
+      source_text: Người cao tuổi chiếm 20% dân số. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 노인이 인구의 20%를 차지한다.
+        - 노인은 인구의 20%를 차지한다.
+        - 노인이 전체 인구의 20%를 차지한다.
+        - 노인은 전체 인구의 20%를 차지한다.
+        - 노인 인구가 전체 인구의 20%를 차지한다.
+        - 노인 인구는 전체 인구의 20%를 차지한다.
+        - 고령자가 인구의 20%를 차지한다.
+        - 고령자가 전체 인구의 20%를 차지한다.
+        - 노인이 인구의 20%를 차지하고 있다.
+        - 노인이 전체 인구의 20%를 차지하고 있다.
+        - 노인이 인구의 20퍼센트를 차지한다.
+        - 노인이 전체 인구의 20퍼센트를 차지한다.
+    known_wrong:
+      - answer: 노인이 인구의 20%에 차지한다.
+        feedback_vi: 차지하다 đi với 을/를 - 20%를 차지한다.
+        error_tag: chaji_particle
+      - answer: 노인이 인구의 20%를 차지해요.
+        feedback_vi: Đây là 해요체. Văn viết là 차지한다.
+        error_tag: haeyo_in_writing
+      - answer: 노인이 인구의 20%를 차지하는다.
+        feedback_vi: Gốc 차지하- kết thúc bằng nguyên âm nên chỉ thêm -ㄴ다.
+        error_tag: nda_neunda_choice
+      - answer: 노인이 20% 인구를 차지한다.
+        feedback_vi: Tổng thể đứng trước với 의 - 인구의 20%.
+        error_tag: word_order
+    explanation:
+      vi: Cấu trúc - [phần] 이/가 [tổng thể]의 N%를 차지한다. Tiếng Việt "chiếm 20% dân số" đặt dân số sau, tiếng Hàn đặt 인구의 trước 20%.
+    display_answer: 노인이 인구의 20%를 차지한다.
+
+  - key: ko:exercise:opinion-statistics-translate-half
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:eungdapja
+    prompt:
+      source_text: Một nửa số người trả lời đã đồng ý. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 응답자의 절반이 찬성했다.
+        - 응답자 절반이 찬성했다.
+        - 응답자의 절반이 동의했다.
+        - 응답자 절반이 동의했다.
+        - 응답자의 반이 찬성했다.
+        - 응답자의 반이 동의했다.
+        - 응답자의 50%가 찬성했다.
+        - 응답자의 50%가 동의했다.
+        - 절반의 응답자가 찬성했다.
+        - 절반의 응답자가 동의했다.
+    known_wrong:
+      - answer: 응답자의 절반이 찬성했어요.
+        feedback_vi: Đây là 해요체. Văn viết là 찬성했다.
+        error_tag: haeyo_in_writing
+      - answer: 질문받은 사람의 절반이 찬성했다.
+        feedback_vi: '"Người trả lời khảo sát" là 응답자, không dịch từng chữ "người được hỏi".'
+        error_tag: literal_translation
+      - answer: 응답자의 절반을 찬성했다.
+        feedback_vi: 응답자의 절반 là chủ ngữ nên đi với 이 - 절반이 찬성했다.
+        error_tag: subject_particle
+    explanation:
+      vi: 응답자 = người trả lời khảo sát, 절반 = một nửa, 찬성하다/동의하다 = đồng ý. Phần trong tổng thể - 응답자의 절반이.
+    display_answer: 응답자의 절반이 찬성했다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:opinion-statistics-mcq-maryeon
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-gi-maryeonida
+    prompt:
+      stem: Câu nào dùng -기 마련이다 đúng trong bài luận?
+      stem_lang: vi
+      options:
+        - { id: a7r, text: 누구나 나이가 들면 체력이 약해지기 마련이다., lang: ko }
+        - { id: k4z, text: 어제 우리 할머니가 아프기 마련이었다., lang: ko }
+        - { id: u2m, text: 나는 내일 시험을 보기 마련이다., lang: ko }
+        - { id: f9c, text: 물가가 올라서 소비가 줄었기 마련이다., lang: ko }
+    answer:
+      correct_option_id: a7r
+    explanation:
+      vi: -기 마련이다 nói quy luật chung ("ai già đi cũng yếu sức"). Nó không dùng cho sự việc cụ thể (bà tôi hôm qua), kế hoạch (thi ngày mai), và không ghép -었- trước -기.
+    display_answer: 누구나 나이가 들면 체력이 약해지기 마련이다.
+
+  - key: ko:exercise:opinion-statistics-mcq-notice-board
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-nominal-gi
+    prompt:
+      stem: "Ban quản lý chung cư muốn dán khẩu hiệu \"Hãy giảm dùng đồ nhựa dùng một lần\". Chọn câu phù hợp nhất."
+      stem_lang: vi
+      options:
+        - { id: n6w, text: 일회용 플라스틱 사용 줄이기, lang: ko }
+        - { id: d3q, text: 일회용 플라스틱 사용을 줄였음, lang: ko }
+        - { id: l8y, text: 일회용 플라스틱 사용을 줄이기 마련이다, lang: ko }
+        - { id: g1b, text: 일회용 플라스틱 사용이 줄 수밖에 없다, lang: ko }
+    answer:
+      correct_option_id: n6w
+    explanation:
+      vi: Khẩu hiệu kêu gọi hành động dùng danh từ hoá -기 (줄이기). 줄였음 thông báo việc đã làm xong; -기 마련이다 và -(으)ㄹ 수밖에 없다 là nhận định, không phải lời kêu gọi.
+    display_answer: 일회용 플라스틱 사용 줄이기
+
+  - key: ko:exercise:opinion-statistics-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:kkujunhi
+    prompt:
+      source_text: 1인 가구가 10년 동안 꾸준히 증가했다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hộ một người đã tăng đều đặn trong 10 năm.
+        - Hộ một người đã tăng đều trong 10 năm.
+        - Hộ một người tăng đều đặn trong 10 năm.
+        - Hộ một người tăng đều trong 10 năm.
+        - Số hộ một người đã tăng đều đặn trong 10 năm.
+        - Số hộ một người đã tăng đều trong 10 năm.
+        - Số hộ một người tăng đều đặn trong 10 năm.
+        - Hộ một người đã tăng đều đặn trong suốt 10 năm.
+        - Số hộ một người đã tăng đều đặn trong suốt 10 năm.
+        - Hộ độc thân đã tăng đều đặn trong 10 năm.
+        - Hộ một người đã tăng liên tục trong 10 năm.
+        - Số hộ một người đã tăng liên tục trong 10 năm.
+        - Hộ một người đã tăng đều đặn trong mười năm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hộ một người đã tăng vọt trong 10 năm.
+        feedback_vi: '"Tăng vọt" là 급격히 증가했다. 꾸준히 là "đều đặn".'
+        error_tag: trend_adverb
+      - answer: Đồ nội thất một người đã tăng đều đặn trong 10 năm.
+        feedback_vi: 가구 trong thống kê là "hộ gia đình", không phải "đồ nội thất".
+        error_tag: sino_false_friend
+    explanation:
+      vi: 1인 가구 = hộ một người, 10년 동안 = trong (suốt) 10 năm, 꾸준히 = đều đặn, liên tục, 증가했다 = đã tăng.
+    display_answer: Hộ một người đã tăng đều đặn trong 10 năm.

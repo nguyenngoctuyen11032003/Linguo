@@ -1,0 +1,1058 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Tin tức & vấn đề xã hội" (TOPIK 5). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+# Câu ví dụ dùng văn viết -ㄴ다/-는다/-다 vì đây là văn phong của báo chí, bài luận và câu 53–54 TOPIK.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- bài 1: văn viết -ㄴ다/-는다/-다 ----------------
+  - key: ko:item:written-nda-verb
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "V-ㄴ다 / V-는다 (văn viết, hiện tại)"
+      romanization: "-nda / -neunda"
+      pos: đuôi câu văn viết (động từ)
+    back:
+      meaning:
+        vi: Đuôi câu hiện tại của động từ trong văn viết (báo, bài luận, nhật ký) - gốc kết thúc bằng nguyên âm hoặc ㄹ thêm -ㄴ다, gốc có patchim thêm -는다.
+      examples:
+        - target: 정부는 매년 인구 조사 결과를 발표한다.
+          translation:
+            vi: Chính phủ công bố kết quả điều tra dân số hằng năm.
+        - target: 많은 젊은이들이 혼자 사는 것을 선택한다.
+          translation:
+            vi: Nhiều người trẻ chọn sống một mình.
+        - target: 요즘 사람들은 종이 신문보다 인터넷 기사를 더 많이 읽는다.
+          translation:
+            vi: Ngày nay người ta đọc báo mạng nhiều hơn báo giấy.
+      pronunciation_note:
+        vi: Gốc có patchim gặp 는 thường bị mũi hoá - 먹는다 [멍는다], 읽는다 [잉는다], 받는다 [반는다].
+      confusion:
+        vi: Gốc ㄹ bỏ ㄹ rồi thêm -ㄴ다 - 살다 → 산다, 만들다 → 만든다 (không viết 살는다). Động từ -하다 luôn thành -한다 - 증가한다, 발표한다.
+
+  - key: ko:item:written-da-adjective
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "A-다 (văn viết, tính từ)"
+      romanization: "-da"
+      pos: đuôi câu văn viết (tính từ, 있다/없다)
+    back:
+      meaning:
+        vi: Tính từ ở thì hiện tại trong văn viết giữ nguyên dạng từ điển, không thêm -ㄴ다/-는다 - 크다, 많다, 심각하다.
+      examples:
+        - target: 환경 오염 문제가 매우 심각하다.
+          translation:
+            vi: Vấn đề ô nhiễm môi trường rất nghiêm trọng.
+        - target: 도시와 농촌의 소득 차이가 크다.
+          translation:
+            vi: Chênh lệch thu nhập giữa thành thị và nông thôn lớn.
+      pronunciation_note:
+        vi: 심각하다 đọc [심가카다] vì ㄱ gặp ㅎ thành ㅋ; 많다 đọc [만타].
+      confusion:
+        vi: Người học hay thêm -ㄴ다 vào tính từ (심각한다, 많는다) vì nhầm với động từ. Tính từ -하다 như 심각하다, 중요하다 giữ nguyên -하다; 있다/없다 trong văn viết cũng giữ nguyên.
+
+  - key: ko:item:written-past-da
+    type: grammar_point
+    level: topik5
+    difficulty: 2
+    skill_tags: [grammar, writing]
+    front:
+      text: "V/A-았다/었다/했다 (văn viết, quá khứ)"
+      romanization: "-atda / -eotda / haetda"
+      pos: đuôi câu văn viết (quá khứ)
+    back:
+      meaning:
+        vi: Thì quá khứ trong văn viết - thay 요 của 해요체 quá khứ bằng 다, dùng chung cho động từ và tính từ (증가했다, 많았다).
+      examples:
+        - target: 지난해 1인 가구 수가 크게 증가했다.
+          translation:
+            vi: Năm ngoái số hộ một người tăng mạnh.
+        - target: 작년 겨울은 유난히 추웠다.
+          translation:
+            vi: Mùa đông năm ngoái lạnh khác thường.
+      pronunciation_note:
+        vi: Patchim ㅆ trước 다 đọc như ㄷ và làm 다 căng lên - 했다 [핻따], 많았다 [마낟따].
+      confusion:
+        vi: Quá khứ không phân biệt động từ hay tính từ - cả hai đều chỉ đổi -어요 thành -다 (증가했어요 → 증가했다, 컸어요 → 컸다).
+
+  - key: ko:item:written-future-geosida
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "V/A-(으)ㄹ 것이다 (văn viết, dự đoán)"
+      romanization: "-(eu)l geosida"
+      pos: đuôi câu văn viết (tương lai, dự đoán)
+    back:
+      meaning:
+        vi: Diễn đạt dự đoán hoặc kế hoạch trong văn viết - dạng văn viết của -(으)ㄹ 거예요.
+      examples:
+        - target: 고령화는 앞으로 더 빠르게 진행될 것이다.
+          translation:
+            vi: Già hoá dân số sẽ diễn ra nhanh hơn trong thời gian tới.
+        - target: 이 정책은 청년 취업에 도움이 될 것이다.
+          translation:
+            vi: Chính sách này sẽ giúp ích cho việc làm của thanh niên.
+      pronunciation_note:
+        vi: 것이다 đọc nối [거시다]; 될 것이다 đọc [될 꺼시다] vì ㄱ sau đuôi -ㄹ bị căng.
+      confusion:
+        vi: Trong bài luận không viết 될 거예요 hay 될 거다 - 거 là dạng nói. Dùng đầy đủ 것이다 (hoặc -(으)ㄹ 것으로 보인다 khi muốn dè dặt).
+
+  - key: ko:item:written-negative-da
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "V-지 않는다 / A-지 않다"
+      romanization: "-ji anneunda / -ji anta"
+      pos: phủ định văn viết
+    back:
+      meaning:
+        vi: Phủ định ở văn viết - sau động từ dùng -지 않는다, sau tính từ dùng -지 않다 (않다 theo loại từ đứng trước).
+      examples:
+        - target: 많은 청년들이 결혼을 서두르지 않는다.
+          translation:
+            vi: Nhiều thanh niên không vội kết hôn.
+        - target: 문제 해결이 쉽지 않다.
+          translation:
+            vi: Giải quyết vấn đề không dễ.
+      pronunciation_note:
+        vi: 않는다 đọc [안는다] (ㅎ không phát âm); 않다 đọc [안타] vì ㅎ gặp ㄷ thành ㅌ.
+      confusion:
+        vi: Người học hay viết 쉽지 않는다 - sai, vì 쉽다 là tính từ nên 않다 cũng giữ dạng tính từ. Trong văn viết nên dùng -지 않는다 thay cho 안 + động từ.
+
+  - key: ko:item:written-ida
+    type: grammar_point
+    level: topik5
+    difficulty: 2
+    skill_tags: [grammar, writing]
+    front:
+      text: "N이다 / N이 아니다"
+      romanization: "ida / i anida"
+      pos: đuôi câu văn viết (danh từ)
+    back:
+      meaning:
+        vi: "“Là N” / “không phải là N” trong văn viết; sau danh từ không có patchim, 이 thường được bỏ - 문제다."
+      examples:
+        - target: 저출산은 한국 사회의 가장 큰 문제이다.
+          translation:
+            vi: Tỉ lệ sinh thấp là vấn đề lớn nhất của xã hội Hàn Quốc.
+        - target: 이것은 개인의 문제가 아니다.
+          translation:
+            vi: Đây không phải là vấn đề của riêng cá nhân.
+      pronunciation_note:
+        vi: 문제이다 thường đọc gọn [문제다]; 아니다 đọc [아니다], không có biến âm.
+      confusion:
+        vi: Không viết 문제입니다 hay 문제예요 trong bài luận. Quá khứ là 문제였다 (sau nguyên âm) / 학생이었다 (sau patchim).
+
+  - key: ko:item:written-first-person
+    type: grammar_point
+    level: topik5
+    difficulty: 2
+    skill_tags: [grammar, writing]
+    front:
+      text: "나 / 우리 (ngôi thứ nhất trong văn viết)"
+      romanization: "na / uri"
+      pos: đại từ trong văn viết
+    back:
+      meaning:
+        vi: Bài luận và bài báo viết bằng -다 dùng 나, 우리 (hoặc 필자 - người viết) thay cho 저, 저희.
+      examples:
+        - target: 나는 이 정책에 찬성한다.
+          translation:
+            vi: Tôi tán thành chính sách này.
+        - target: 우리 사회는 고령화에 대비해야 한다.
+          translation:
+            vi: Xã hội chúng ta phải chuẩn bị cho già hoá dân số.
+      confusion:
+        vi: 저 là khiêm nhường, đi với 해요체/합쇼체 khi nói với người nghe; đặt 저는 cạnh đuôi -다 nghe lệch giọng. Văn viết không có người nghe cụ thể nên 나 không bị coi là bất lịch sự.
+
+  - key: ko:item:jeongbu
+    type: vocab
+    level: topik5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 정부
+      romanization: jeongbu
+      pos: danh từ (Hán Hàn 政府)
+    back:
+      meaning:
+        vi: chính phủ
+      examples:
+        - target: 정부는 새로운 주택 정책을 발표했다.
+          translation:
+            vi: Chính phủ đã công bố chính sách nhà ở mới.
+      pronunciation_note:
+        vi: Đọc "chơng-bu"; ㅂ giữa hai âm hữu thanh nghe gần "b".
+      confusion:
+        vi: Âm Hán Việt "chính phủ" giúp bạn nhớ nhanh. Lưu ý 정부 là chính phủ nói chung; nội các là 내각.
+
+  - key: ko:item:balpyohada
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 발표하다
+      romanization: balpyohada
+      pos: động từ (Hán Hàn 發表)
+    back:
+      meaning:
+        vi: công bố (kết quả, số liệu, chính sách); thuyết trình
+      examples:
+        - target: 통계청이 올해 출생아 수를 발표했다.
+          translation:
+            vi: Cục Thống kê đã công bố số trẻ sinh ra trong năm nay.
+      pronunciation_note:
+        vi: 발표 đọc [발표]; ㅍ bật hơi mạnh.
+      confusion:
+        vi: 'Hán Việt là "phát biểu" nhưng nghĩa khác - 발표하다 là công bố hoặc thuyết trình. "Phát biểu ý kiến" trong cuộc họp là 의견을 말하다 hoặc 발언하다.'
+
+  - key: ko:item:josa-survey
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 조사 / 조사하다
+      romanization: josa / josahada
+      pos: danh từ / động từ (Hán Hàn 調査)
+    back:
+      meaning:
+        vi: cuộc khảo sát, điều tra; khảo sát, điều tra
+      examples:
+        - target: 대학생 1,000명을 대상으로 조사를 실시했다.
+          translation:
+            vi: Đã tiến hành khảo sát 1.000 sinh viên.
+      pronunciation_note:
+        vi: Đọc [조사]; ㅈ đầu từ gần "ch" nhẹ.
+      confusion:
+        vi: 조사 còn là một từ khác (助詞) nghĩa là "trợ từ" như 은/는, 을/를. Trong tin tức, 조사 hầu như luôn là "khảo sát", hay đi với 실시하다 (tiến hành).
+
+  - key: ko:item:gyeolgwa
+    type: vocab
+    level: topik5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 결과
+      romanization: gyeolgwa
+      pos: danh từ (Hán Hàn 結果)
+    back:
+      meaning:
+        vi: kết quả
+      examples:
+        - target: 조사 결과 응답자의 절반이 물가 상승을 걱정했다.
+          translation:
+            vi: Kết quả khảo sát cho thấy một nửa người trả lời lo lắng về việc giá cả tăng.
+      pronunciation_note:
+        vi: Đọc [결과]; ㄹ cuối 결 không làm ㄱ căng ở từ này.
+      confusion:
+        vi: Cụm "조사 결과" có thể đứng đầu câu không cần trợ từ, nghĩa là "theo kết quả khảo sát".
+
+  - key: ko:item:bodohada
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 보도하다
+      romanization: bodohada
+      pos: động từ (Hán Hàn 報道)
+    back:
+      meaning:
+        vi: đưa tin, đăng tin (báo chí, truyền hình)
+      examples:
+        - target: 여러 언론이 이 사건을 크게 보도했다.
+          translation:
+            vi: Nhiều cơ quan báo chí đã đưa tin rầm rộ về vụ việc này.
+      pronunciation_note:
+        vi: Đọc [보도하다]; ㅎ giữa câu nói nhanh rất nhẹ.
+      confusion:
+        vi: 'Hán Việt "báo đạo" không dùng trong tiếng Việt, nên đừng đoán nghĩa. 보도 là "tin được đưa", còn "vỉa hè" cũng viết 보도 (步道) - nhìn ngữ cảnh để phân biệt.'
+
+  # ---------------- bài 2: từ vựng xã hội - kinh tế ----------------
+  - key: ko:item:jeochulsan
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 저출산
+      romanization: jeochulsan
+      pos: danh từ (Hán Hàn 低出産)
+    back:
+      meaning:
+        vi: tỉ lệ sinh thấp, tình trạng ít sinh con
+      examples:
+        - target: 저출산 문제가 갈수록 심각해지고 있다.
+          translation:
+            vi: Vấn đề tỉ lệ sinh thấp ngày càng nghiêm trọng.
+      pronunciation_note:
+        vi: Đọc [저출싼] - 산 sau ㄹ được đọc căng thành ㅆ.
+      confusion:
+        vi: '출산 (xuất sản) là "sinh con", không liên quan "sản xuất" (생산). Hay đi cặp 저출산·고령화.'
+
+  - key: ko:item:goryeonghwa
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 고령화
+      romanization: goryeonghwa
+      pos: danh từ (Hán Hàn 高齡化)
+    back:
+      meaning:
+        vi: già hoá (dân số)
+      examples:
+        - target: 고령화로 인해 노인 복지 비용이 늘고 있다.
+          translation:
+            vi: Do già hoá dân số, chi phí phúc lợi cho người cao tuổi đang tăng.
+      pronunciation_note:
+        vi: Khi nói nhanh ㅎ sau ㅇ rất yếu, nghe gần [고령와].
+      confusion:
+        vi: Tiếng Việt nói "dân số già hoá"; tiếng Hàn thường chỉ cần 고령화 hoặc 인구 고령화. Thêm 사회 thành 고령화 사회 (xã hội già hoá).
+
+  - key: ko:item:irin-gagu
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 1인 가구
+      romanization: irin gagu
+      pos: danh từ
+    back:
+      meaning:
+        vi: hộ gia đình một người, hộ độc thân
+      examples:
+        - target: 서울에서는 1인 가구가 전체 가구의 3분의 1을 넘었다.
+          translation:
+            vi: Ở Seoul, hộ một người đã vượt quá một phần ba tổng số hộ.
+      pronunciation_note:
+        vi: 1인 đọc là 일인, nối âm thành [이린].
+      confusion:
+        vi: '가구 (家口) là "hộ gia đình", nhưng 가구 (家具) cũng là "đồ nội thất". Hán Việt "gia cụ" dễ khiến bạn nghĩ đến đồ đạc - trong tin xã hội, 가구 gần như luôn là "hộ".'
+
+  - key: ko:item:mulga-sangseung
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 물가 상승
+      romanization: mulga sangseung
+      pos: cụm danh từ (Hán Hàn 物價 上昇)
+    back:
+      meaning:
+        vi: giá cả (vật giá) tăng, lạm phát
+      examples:
+        - target: 물가 상승으로 서민들의 생활이 어려워졌다.
+          translation:
+            vi: Vì giá cả tăng, cuộc sống của người dân bình thường trở nên khó khăn.
+      pronunciation_note:
+        vi: 물가 đọc [물까] - ㄱ sau ㄹ bị căng.
+      confusion:
+        vi: Giá cả "tăng" dùng 오르다 hoặc 상승하다 (물가가 올랐다), không dùng 증가하다. 증가하다 dành cho số lượng (người, hộ, ca).
+
+  - key: ko:item:chwieopnan
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 취업난
+      romanization: chwieomnan
+      pos: danh từ (Hán Hàn 就業難)
+    back:
+      meaning:
+        vi: tình trạng khó tìm việc làm, nạn thiếu việc làm
+      examples:
+        - target: 청년 취업난이 장기화되고 있다.
+          translation:
+            vi: Tình trạng thanh niên khó tìm việc đang kéo dài.
+      pronunciation_note:
+        vi: Đọc [취엄난] - patchim ㅂ gặp ㄴ bị mũi hoá thành ㅁ.
+      confusion:
+        vi: '-난 (難) nghĩa là "khó khăn, tình trạng thiếu" - 주택난, 인력난. Đừng nhầm với "nạn" trong "tai nạn" (사고).'
+
+  - key: ko:item:hwangyeong-oyeom
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 환경 오염
+      romanization: hwangyeong oyeom
+      pos: cụm danh từ (Hán Hàn 環境 汚染)
+    back:
+      meaning:
+        vi: ô nhiễm môi trường
+      examples:
+        - target: 플라스틱 사용이 늘면서 환경 오염도 심해졌다.
+          translation:
+            vi: Khi việc dùng nhựa tăng lên, ô nhiễm môi trường cũng trầm trọng hơn.
+      pronunciation_note:
+        vi: 오염 đọc rõ hai âm tiết [오염]; ㅕ là "yơ".
+      confusion:
+        vi: Thứ tự giống tiếng Hán, ngược tiếng Việt - "ô nhiễm môi trường" là 환경 오염 (môi trường + ô nhiễm). Tương tự 대기 오염 (ô nhiễm không khí).
+
+  - key: ko:item:jaehwalyong
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 재활용
+      romanization: jaehwaryong
+      pos: danh từ (Hán Hàn 再活用)
+    back:
+      meaning:
+        vi: tái chế, tái sử dụng
+      examples:
+        - target: 정부는 플라스틱 재활용 비율을 높이려고 한다.
+          translation:
+            vi: Chính phủ muốn nâng tỉ lệ tái chế nhựa.
+      pronunciation_note:
+        vi: Đọc nối [재화룡] - ㄹ của 활 chuyển sang âm tiết sau.
+      confusion:
+        vi: 'Hán Việt là "tái hoạt dụng", không phải "tái chế" từng chữ. "Phân loại rác để tái chế" thường nói 분리수거.'
+
+  - key: ko:item:jeongchaek
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 정책
+      romanization: jeongchaek
+      pos: danh từ (Hán Hàn 政策)
+    back:
+      meaning:
+        vi: chính sách
+      examples:
+        - target: 출산 장려 정책이 큰 효과를 거두지 못했다.
+          translation:
+            vi: Chính sách khuyến khích sinh con chưa đạt hiệu quả lớn.
+      pronunciation_note:
+        vi: Đọc [정책]; patchim ㄱ cuối câu chỉ "nuốt" hơi, không bật.
+      confusion:
+        vi: Hán Việt "chính sách" trùng nghĩa. Chú ý động từ đi kèm - 정책을 시행하다 (thực thi), 정책을 마련하다 (xây dựng).
+
+  - key: ko:item:jeunggahada
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 증가하다
+      romanization: jeunggahada
+      pos: động từ (Hán Hàn 增加)
+    back:
+      meaning:
+        vi: tăng, gia tăng (số lượng)
+      examples:
+        - target: 외국인 유학생 수가 매년 증가한다.
+          translation:
+            vi: Số du học sinh nước ngoài tăng hằng năm.
+      pronunciation_note:
+        vi: Đọc [증가하다]; ㅡ là "ư", đừng đọc thành "jung".
+      confusion:
+        vi: 증가하다 là động từ nên ở hiện tại văn viết là 증가한다. Dùng cho số lượng; giá cả dùng 상승하다/오르다.
+
+  - key: ko:item:gamsohada
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 감소하다
+      romanization: gamsohada
+      pos: động từ (Hán Hàn 減少)
+    back:
+      meaning:
+        vi: giảm, sụt giảm (số lượng)
+      examples:
+        - target: 농촌 인구가 빠르게 감소하고 있다.
+          translation:
+            vi: Dân số nông thôn đang giảm nhanh.
+      pronunciation_note:
+        vi: Đọc [감소하다]; ㅁ cuối 감 giữ môi khép.
+      confusion:
+        vi: 'Hán Việt "giảm thiểu" nhưng 감소하다 là nội động từ - "số người giảm" (수가 감소했다). Muốn nói "làm giảm" dùng 줄이다 hoặc 감소시키다.'
+
+  - key: ko:item:yeonghyang-michida
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: N에 영향을 미치다
+      romanization: e yeonghyang-eul michida
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: gây ảnh hưởng đến N, tác động đến N
+      examples:
+        - target: 물가 상승은 소비에 큰 영향을 미친다.
+          translation:
+            vi: Giá cả tăng tác động lớn đến tiêu dùng.
+      pronunciation_note:
+        vi: 영향을 đọc nối [영향을]; 미친다 đọc [미친다].
+      confusion:
+        vi: Đối tượng bị ảnh hưởng đi với 에 (소비에), không đi với 을/를. 미치다 một mình còn nghĩa là "phát điên", nên đừng bỏ 영향을.
+
+  - key: ko:item:daechaek-maryeonhada
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 대책을 마련하다
+      romanization: daechaegeul maryeonhada
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đưa ra / xây dựng biện pháp đối phó
+      examples:
+        - target: 정부는 취업난 해결을 위한 대책을 마련해야 한다.
+          translation:
+            vi: Chính phủ cần đưa ra biện pháp giải quyết tình trạng khó tìm việc.
+      pronunciation_note:
+        vi: 대책을 đọc nối [대채글].
+      confusion:
+        vi: 'Hán Việt "đối sách" ít dùng trong tiếng Việt nên người học hay dịch "giải pháp" thành 해결책 - cũng đúng, nhưng đi với 마련하다 thì 대책 tự nhiên hơn. Không nói 대책을 만들다 trong văn trang trọng.'
+
+  - key: ko:item:simgakada
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 심각하다
+      romanization: simgakada
+      pos: tính từ (Hán Hàn 深刻)
+    back:
+      meaning:
+        vi: nghiêm trọng
+      examples:
+        - target: 미세먼지 문제가 심각하다.
+          translation:
+            vi: Vấn đề bụi mịn nghiêm trọng.
+      pronunciation_note:
+        vi: Đọc [심가카다] - ㄱ gặp ㅎ thành ㅋ.
+      confusion:
+        vi: 'Hán Việt "thâm khắc" (sâu sắc) nhưng nghĩa là "nghiêm trọng". Là tính từ nên văn viết là 심각하다, không phải 심각한다; "trở nên nghiêm trọng" là 심각해지다.'
+
+  # ---------------- bài 3: liên từ trang trọng ----------------
+  - key: ko:item:gp-eumyeo
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "V/A-(으)며 · N(이)며"
+      romanization: "-(eu)myeo"
+      pos: vĩ tố liên kết (văn viết)
+    back:
+      meaning:
+        vi: “và, đồng thời” - dạng văn viết của -고 (liệt kê) và -(으)면서 (đồng thời).
+      examples:
+        - target: 이 도시는 인구가 많으며 교통이 편리하다.
+          translation:
+            vi: Thành phố này đông dân và giao thông thuận tiện.
+        - target: 그는 대학교수이며 작가이다.
+          translation:
+            vi: Ông ấy là giáo sư đại học và là nhà văn.
+      pronunciation_note:
+        vi: 많으며 đọc [마느며] - ㅎ không phát âm, ㄴ nối sang.
+      confusion:
+        vi: Sau gốc có patchim dùng -으며 (많으며), sau nguyên âm/ㄹ dùng -며 (크며, 살며). Trong bài luận, thay vài chỗ -고 bằng -며 giúp văn trang trọng hơn.
+
+  - key: ko:item:gp-ban-myeon
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: "V-는 반면(에) · A-(으)ㄴ 반면(에)"
+      romanization: "-neun banmyeon(e)"
+      pos: cấu trúc đối lập
+    back:
+      meaning:
+        vi: “trong khi đó, ngược lại” - nêu hai mặt trái ngược của cùng một sự việc hoặc hai đối tượng.
+      examples:
+        - target: 1인 가구는 증가한 반면 4인 가구는 감소했다.
+          translation:
+            vi: Hộ một người tăng, trong khi hộ bốn người lại giảm.
+        - target: 이 제품은 가격이 싼 반면에 품질이 좋지 않다.
+          translation:
+            vi: Sản phẩm này rẻ nhưng ngược lại chất lượng không tốt.
+      pronunciation_note:
+        vi: 반면에 đọc nối [반며네].
+      confusion:
+        vi: Định ngữ trước 반면 theo loại từ - động từ hiện tại -는 (증가하는 반면), tính từ -(으)ㄴ (싼 반면), quá khứ -(으)ㄴ (증가한 반면). Viết 증가하는 반면 cho sự việc đã xảy ra là sai thì.
+
+  - key: ko:item:gp-neun-de-banhae
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: "V-는 데 반해 · A-(으)ㄴ 데 반해 · N에 반해"
+      romanization: "-neun de banhae"
+      pos: cấu trúc so sánh đối lập
+    back:
+      meaning:
+        vi: “trái với, so với … thì” - đặt hai đối tượng cạnh nhau để làm nổi bật sự khác biệt (rất hay dùng khi tả số liệu).
+      examples:
+        - target: 남성의 응답률이 높은 데 반해 여성의 응답률은 낮았다.
+          translation:
+            vi: Trái với tỉ lệ trả lời cao của nam giới, tỉ lệ của nữ giới thấp.
+        - target: 수도권 인구는 늘어나는 데 반해 지방 인구는 줄고 있다.
+          translation:
+            vi: Dân số vùng thủ đô tăng, trong khi dân số các địa phương lại giảm.
+      pronunciation_note:
+        vi: 반해 đọc [반해], khi nói nhanh ㅎ yếu thành [바내].
+      confusion:
+        vi: Viết cách - 데 반해 (데 là danh từ phụ thuộc). Gần nghĩa với -(으)ㄴ/는 반면, nhưng -는 데 반해 nhấn so sánh giữa hai đối tượng hơn là hai mặt của một đối tượng.
+
+  - key: ko:item:gp-e-ttareumyeon
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: "N에 따르면 … -다고 한다 / -(으)ㄴ 것으로 나타났다"
+      romanization: "e ttareumyeon"
+      pos: cấu trúc dẫn nguồn
+    back:
+      meaning:
+        vi: “theo N” - dẫn nguồn tin, số liệu; mệnh đề sau thường kết thúc bằng lời dẫn gián tiếp.
+      examples:
+        - target: 통계청에 따르면 작년 출생아 수는 역대 최저를 기록했다고 한다.
+          translation:
+            vi: Theo Cục Thống kê, số trẻ sinh ra năm ngoái thấp kỷ lục.
+        - target: 조사에 따르면 직장인 10명 중 7명이 이직을 고민하는 것으로 나타났다.
+          translation:
+            vi: Theo khảo sát, cứ 10 người đi làm thì 7 người đang cân nhắc chuyển việc.
+      pronunciation_note:
+        vi: 따르면 - ㄸ căng, không bật hơi, gần "đ" tiếng Việt nói mạnh.
+      confusion:
+        vi: Tiếng Việt có thể để "theo khảo sát" cuối câu, nhưng tiếng Hàn đặt N에 따르면 ở đầu câu. Đừng nhầm với N에 따라 (tuỳ theo, dựa theo).
+
+  - key: ko:item:gp-eum-edo-bulguhago
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: "V/A-(으)ㅁ에도 불구하고 · N에도 불구하고"
+      romanization: "-(eu)medo bulguhago"
+      pos: cấu trúc nhượng bộ
+    back:
+      meaning:
+        vi: “mặc dù, bất chấp” - kết quả trái với điều được mong đợi; trang trọng hơn -지만, -는데도.
+      examples:
+        - target: 정부의 노력에도 불구하고 출산율은 계속 떨어지고 있다.
+          translation:
+            vi: Bất chấp nỗ lực của chính phủ, tỉ lệ sinh vẫn tiếp tục giảm.
+        - target: 경제가 성장했음에도 불구하고 청년 실업률은 높아졌다.
+          translation:
+            vi: Mặc dù kinh tế đã tăng trưởng, tỉ lệ thất nghiệp của thanh niên vẫn tăng.
+      pronunciation_note:
+        vi: 성장했음에도 đọc [성장해쓰메도]; 불구하고 đọc [불구하고].
+      confusion:
+        vi: Sau động từ/tính từ phải danh từ hoá bằng -(으)ㅁ trước 에도 (했음에도), sau danh từ thì gắn thẳng 에도 (노력에도). Viết 성장했에도 hay 노력음에도 là sai.
+
+  - key: ko:item:gp-l-ppunman-anira
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "V/A-(으)ㄹ 뿐만 아니라 · N뿐만 아니라"
+      romanization: "-(eu)l ppunman anira"
+      pos: cấu trúc bổ sung
+    back:
+      meaning:
+        vi: “không chỉ … mà còn” - vế sau thường có 도 hoặc 또한.
+      examples:
+        - target: 재활용은 자원을 아낄 뿐만 아니라 환경 오염도 줄인다.
+          translation:
+            vi: Tái chế không chỉ tiết kiệm tài nguyên mà còn giảm ô nhiễm môi trường.
+        - target: 청년뿐만 아니라 중장년층도 취업에 어려움을 겪는다.
+          translation:
+            vi: Không chỉ thanh niên mà cả người trung niên cũng gặp khó khăn khi tìm việc.
+      pronunciation_note:
+        vi: 아낄 뿐만 đọc [아낄 뿐만]; 뿐만 아니라 nối thành [뿐마나니라].
+      confusion:
+        vi: Sau danh từ, 뿐만 gắn liền (청년뿐만), không có -(으)ㄹ. Quá khứ là -았/었을 뿐만 아니라 (증가했을 뿐만 아니라).
+
+  - key: ko:item:hanpyeon
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 한편
+      romanization: hanpyeon
+      pos: phó từ nối câu
+    back:
+      meaning:
+        vi: mặt khác, trong khi đó (chuyển sang một ý/khía cạnh khác)
+      examples:
+        - target: 한편 정부는 다음 달 새로운 대책을 발표할 예정이다.
+          translation:
+            vi: Trong khi đó, chính phủ dự kiến công bố biện pháp mới vào tháng sau.
+      pronunciation_note:
+        vi: Đọc [한편]; ㅍ bật hơi.
+      confusion:
+        vi: 한편 mở một thông tin song song, không mang nghĩa đối lập mạnh như 그러나. Tin tức hay dùng 한편 để chuyển sang tin liên quan.
+
+  - key: ko:item:ttaraseo
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 따라서
+      romanization: ttaraseo
+      pos: phó từ nối câu
+    back:
+      meaning:
+        vi: do đó, vì vậy (văn viết)
+      examples:
+        - target: 따라서 정부는 주거 지원을 확대해야 한다.
+          translation:
+            vi: Do đó, chính phủ cần mở rộng hỗ trợ nhà ở.
+      pronunciation_note:
+        vi: ㄸ căng, đọc [따라서].
+      confusion:
+        vi: 따라서 là dạng trang trọng của 그래서. Trong bài luận, 그래서 nghe như văn nói - nên dùng 따라서 hoặc 그러므로.
+
+  - key: ko:item:geureona
+    type: vocab
+    level: topik5
+    difficulty: 1
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 그러나
+      romanization: geureona
+      pos: phó từ nối câu
+    back:
+      meaning:
+        vi: tuy nhiên, nhưng (văn viết)
+      examples:
+        - target: 그러나 이러한 정책만으로는 한계가 있다.
+          translation:
+            vi: Tuy nhiên, chỉ với những chính sách như vậy thì vẫn có giới hạn.
+      pronunciation_note:
+        vi: Đọc [그러나]; ㅡ và ㅓ đều không tròn môi.
+      confusion:
+        vi: 그런데 và 근데 thuộc văn nói; bài luận dùng 그러나 hoặc 하지만.
+
+  - key: ko:item:ttohan
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 또한
+      romanization: ttohan
+      pos: phó từ
+    back:
+      meaning:
+        vi: ngoài ra, hơn nữa, cũng (văn viết)
+      examples:
+        - target: 또한 재활용 제품의 가격을 낮출 필요가 있다.
+          translation:
+            vi: Ngoài ra, cần hạ giá các sản phẩm tái chế.
+      pronunciation_note:
+        vi: Đọc [또한]; ㄸ căng.
+      confusion:
+        vi: 또한 trang trọng hơn 그리고/또. Không dùng 또한 để nối hai danh từ - "A và B" vẫn là A와 B.
+
+  # ---------------- bài 4: quan điểm, danh từ hoá, mô tả số liệu ----------------
+  - key: ko:item:gp-gi-maryeonida
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: "V/A-기 마련이다"
+      romanization: "-gi maryeonida"
+      pos: đuôi câu nêu quy luật
+    back:
+      meaning:
+        vi: “đương nhiên sẽ…, lẽ thường là…” - nêu điều tất yếu xảy ra theo quy luật chung.
+      examples:
+        - target: 물가가 오르면 소비가 줄기 마련이다.
+          translation:
+            vi: Giá cả tăng thì lẽ thường tiêu dùng sẽ giảm.
+        - target: 변화에는 반발이 따르기 마련이다.
+          translation:
+            vi: Thay đổi nào cũng đương nhiên gặp phản đối.
+      pronunciation_note:
+        vi: 마련이다 đọc nối [마려니다].
+      confusion:
+        vi: Chỉ dùng cho quy luật chung, không dùng cho một sự việc cụ thể đã xảy ra (어제 비가 오기 마련이었다 là sai). Gốc đứng trước -기 ở dạng hiện tại, không chia quá khứ.
+
+  - key: ko:item:gp-l-subakke-eopda
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "V/A-(으)ㄹ 수밖에 없다"
+      romanization: "-(eu)l subakke eopda"
+      pos: đuôi câu tất yếu
+    back:
+      meaning:
+        vi: “không thể không…, buộc phải…, chắc chắn sẽ…” - không còn lựa chọn hoặc kết quả khác.
+      examples:
+        - target: 일자리가 부족하면 취업 경쟁은 치열해질 수밖에 없다.
+          translation:
+            vi: Nếu thiếu việc làm thì cạnh tranh tìm việc chắc chắn sẽ gay gắt hơn.
+        - target: 집값이 너무 비싸서 청년들은 결혼을 미룰 수밖에 없다.
+          translation:
+            vi: Nhà quá đắt nên thanh niên buộc phải hoãn kết hôn.
+      pronunciation_note:
+        vi: 수밖에 đọc [수바께]; 없다 đọc [업따].
+      confusion:
+        vi: 수밖에 viết liền (밖에 là trợ từ "ngoài … ra"). Văn viết giữ 없다 - không đổi thành 없어요 trong bài luận.
+
+  - key: ko:item:gp-nominal-eum
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, reading, writing]
+    front:
+      text: "V/A-(으)ㅁ (kết thúc thông báo, ghi chú)"
+      romanization: "-(eu)m"
+      pos: danh từ hoá đuôi câu
+    back:
+      meaning:
+        vi: Kết thúc câu bằng danh từ hoá -(으)ㅁ trong thông báo, biên bản, ghi chú, báo cáo ngắn - gọn và khách quan.
+      examples:
+        - target: 내일 오전 10시부터 단수 예정임.
+          translation:
+            vi: Dự kiến cắt nước từ 10 giờ sáng mai.
+        - target: 회의 장소가 3층으로 변경되었음.
+          translation:
+            vi: Địa điểm họp đã đổi sang tầng 3.
+      pronunciation_note:
+        vi: 변경되었음 đọc [변경되어씀]; 예정임 đọc nối [예정임].
+      confusion:
+        vi: Sau gốc có patchim thêm -음 (있음, 없음, 되었음), sau nguyên âm thêm -ㅁ (예정임, 함). Đuôi này chỉ dùng trong văn bản ngắn, không dùng trong đoạn văn bài luận.
+
+  - key: ko:item:gp-nominal-gi
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: "V-기 (khẩu hiệu, hướng dẫn, danh sách việc cần làm)"
+      romanization: "-gi"
+      pos: danh từ hoá đuôi câu
+    back:
+      meaning:
+        vi: Danh từ hoá -기 ở cuối câu để nêu việc cần làm - khẩu hiệu, hướng dẫn, kế hoạch.
+      examples:
+        - target: 쓰레기는 종류별로 분리해서 버리기.
+          translation:
+            vi: Phân loại rác theo từng loại rồi mới vứt.
+        - target: 일회용 컵 사용 줄이기
+          translation:
+            vi: Giảm dùng cốc dùng một lần.
+      pronunciation_note:
+        vi: 줄이기 đọc [주리기], ㄹ nối sang âm sau.
+      confusion:
+        vi: -기 nêu hành động nên làm (chưa xảy ra), còn -(으)ㅁ báo một sự thật đã xác định. "Đã đổi địa điểm" là 변경되었음, không phải 변경되기.
+
+  - key: ko:item:gp-headline-noun
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: "Tiêu đề báo kết thúc bằng danh từ"
+      romanization: "-"
+      pos: văn phong tiêu đề
+    back:
+      meaning:
+        vi: Tiêu đề tin tức thường bỏ trợ từ và đuôi câu, kết thúc bằng danh từ Hán Hàn (상승, 감소, 발표) hoặc dấu phẩy thay cho 와/과.
+      examples:
+        - target: 소비자 물가 3개월 연속 상승
+          translation:
+            vi: Giá tiêu dùng tăng ba tháng liên tiếp.
+        - target: 출생아 수 역대 최저… 정부, 대책 마련 나서
+          translation:
+            vi: Số trẻ sinh ra thấp kỷ lục… Chính phủ bắt tay xây dựng biện pháp.
+      pronunciation_note:
+        vi: 역대 đọc [역때] - ㄷ sau ㄱ bị căng.
+      confusion:
+        vi: Đọc tiêu đề, bạn tự thêm lại trợ từ và đuôi -했다 - 물가 3개월 연속 상승 = 물가가 3개월 연속 상승했다. Dấu phẩy sau chủ thể (정부,) thay cho 은/는/이/가.
+
+  - key: ko:item:gp-e-bihae
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "N에 비해 (N배) 증가했다 / 감소했다"
+      romanization: "e bihae"
+      pos: cấu trúc so sánh số liệu
+    back:
+      meaning:
+        vi: “so với N” - dạng văn viết của N보다, hay dùng khi mô tả biểu đồ; N배 là "gấp N lần".
+      examples:
+        - target: 2023년 1인 가구 수는 2000년에 비해 약 3배 증가했다.
+          translation:
+            vi: Số hộ một người năm 2023 tăng khoảng gấp 3 lần so với năm 2000.
+        - target: 올해 수출은 작년에 비해 5% 감소했다.
+          translation:
+            vi: Xuất khẩu năm nay giảm 5% so với năm ngoái.
+      pronunciation_note:
+        vi: 비해 khi đọc nhanh thành [비애]; 3배 đọc là 세 배 hoặc 삼 배 (세 배 tự nhiên hơn).
+      confusion:
+        vi: Tiếng Việt nói "tăng gấp 3 lần so với năm 2000", tiếng Hàn đặt mốc so sánh lên trước - 2000년에 비해 3배 증가했다. Không viết 2000년보다 비해 (thừa trợ từ).
+
+  - key: ko:item:chajihada
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 차지하다
+      romanization: chajihada
+      pos: động từ
+    back:
+      meaning:
+        vi: chiếm (tỉ lệ, vị trí)
+      examples:
+        - target: 노인 인구가 전체 인구의 20%를 차지한다.
+          translation:
+            vi: Dân số cao tuổi chiếm 20% tổng dân số.
+      pronunciation_note:
+        vi: Đọc [차지하다]; ㅊ bật hơi.
+      confusion:
+        vi: Phần trăm đi với 을/를 (20%를 차지한다), cái tổng thể đi với 의 (전체의). Người Việt hay viết 20%에 차지한다 vì dịch "chiếm ở mức 20%".
+
+  - key: ko:item:biyul
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 비율
+      romanization: biyul
+      pos: danh từ (Hán Hàn 比率)
+    back:
+      meaning:
+        vi: tỉ lệ
+      examples:
+        - target: 여성 관리자 비율이 점점 높아지고 있다.
+          translation:
+            vi: Tỉ lệ nữ quản lý ngày càng cao.
+      pronunciation_note:
+        vi: Đọc [비율]; 율 là "yul" ngắn.
+      confusion:
+        vi: Tỉ lệ "tăng" thường nói 높아지다 (cao lên) hoặc 증가하다; tỉ lệ "giảm" là 낮아지다. Các từ ghép dùng -률/-율 như 출산율, 실업률.
+
+  - key: ko:item:eungdapja
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 응답자
+      romanization: eungdapja
+      pos: danh từ (Hán Hàn 應答者)
+    back:
+      meaning:
+        vi: người trả lời (khảo sát)
+      examples:
+        - target: 응답자의 45%가 경제 문제를 가장 걱정한다고 답했다.
+          translation:
+            vi: 45% người trả lời cho biết họ lo nhất về vấn đề kinh tế.
+      pronunciation_note:
+        vi: Đọc [응답짜] - ㅈ sau patchim ㅂ bị căng.
+      confusion:
+        vi: Trong mô tả biểu đồ hay viết "응답자의 N%가 … 답했다/로 나타났다". Không dịch "người được hỏi" thành 질문받은 사람.
+
+  - key: ko:item:geupgyeokhi
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 급격히
+      romanization: geupgyeokhi
+      pos: phó từ
+    back:
+      meaning:
+        vi: một cách đột ngột, mạnh và nhanh
+      examples:
+        - target: 2020년 이후 온라인 쇼핑 이용자가 급격히 증가했다.
+          translation:
+            vi: Sau năm 2020, người dùng mua sắm trực tuyến tăng vọt.
+      pronunciation_note:
+        vi: Đọc [급껴키] - ㄱ sau ㅂ căng, ㄱ gặp ㅎ thành ㅋ.
+      confusion:
+        vi: Trái nghĩa trong biểu đồ là 꾸준히 (đều đặn) hoặc 완만하게 (từ từ). Không dùng 급격히 cho thay đổi nhỏ vài phần trăm.
+
+  - key: ko:item:kkujunhi
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 꾸준히
+      romanization: kkujunhi
+      pos: phó từ
+    back:
+      meaning:
+        vi: đều đặn, liên tục (tăng/giảm đều)
+      examples:
+        - target: 재활용 비율은 10년 동안 꾸준히 높아졌다.
+          translation:
+            vi: Tỉ lệ tái chế tăng đều trong suốt 10 năm.
+      pronunciation_note:
+        vi: Đọc [꾸주니] - ㅎ yếu, ㄴ nối sang.
+      confusion:
+        vi: 꾸준히 nhấn sự đều đặn qua nhiều mốc thời gian; nếu chỉ so sánh hai mốc thì không cần trạng từ này.
+
+  - key: ko:item:jeolban
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 절반
+      romanization: jeolban
+      pos: danh từ (Hán Hàn 折半)
+    back:
+      meaning:
+        vi: một nửa
+      examples:
+        - target: 응답자의 절반 이상이 재택근무를 원했다.
+          translation:
+            vi: Hơn một nửa số người trả lời muốn làm việc tại nhà.
+      pronunciation_note:
+        vi: Đọc [절반]; ㄹ uốn nhẹ trước ㅂ.
+      confusion:
+        vi: 절반 dùng cho tỉ lệ trong tổng thể (응답자의 절반); 반 thường dùng trong văn nói hoặc chỉ thời gian (한 시 반).

@@ -1,0 +1,1169 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Con người & các mối quan hệ" (B2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Động từ khuyết thiếu chỉ suy luận ----------------
+  - key: en:item:must-deduction
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: must + V (suy luận chắc chắn)
+      ipa: /mʌst/
+      pos: động từ khuyết thiếu
+    back:
+      meaning:
+        vi: "chắc hẳn là, ắt hẳn (người nói gần như chắc chắn điều gì đó đúng ở hiện tại, dựa trên bằng chứng)"
+      examples:
+        - target: The lights are off. They must be asleep.
+          translation:
+            vi: Đèn tắt hết rồi. Chắc hẳn họ đã ngủ.
+        - target: You must be Linh's sister - you look just like her.
+          translation:
+            vi: Chắc bạn là em gái của Linh - trông bạn giống hệt cô ấy.
+      pronunciation_note:
+        vi: Trong câu nói nhanh, must thường đọc nhẹ /məs/, âm t gần như mất khi đứng trước phụ âm (must be → /məs bi/).
+      confusion:
+        vi: Must ở đây không phải "phải" (bắt buộc) mà là "chắc hẳn". Phủ định của must suy luận là can't, không phải mustn't.
+
+  - key: en:item:cant-deduction
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: can't + V (chắc chắn không)
+      ipa: UK /kɑːnt/ · US /kænt/
+      pos: động từ khuyết thiếu
+    back:
+      meaning:
+        vi: không thể nào (người nói gần như chắc chắn điều gì đó không đúng ở hiện tại)
+      examples:
+        - target: He can't be at work - his car is outside.
+          translation:
+            vi: Anh ấy không thể đang ở chỗ làm được - xe anh ấy còn ở ngoài kia.
+        - target: That can't be true. She never lies.
+          translation:
+            vi: Chuyện đó không thể nào là thật. Cô ấy chẳng bao giờ nói dối.
+      pronunciation_note:
+        vi: Người Anh đọc /kɑːnt/ (gần "khaan"), người Mỹ đọc /kænt/; âm t cuối thường rất nhẹ nên hãy nghe nguyên âm dài để phân biệt với can.
+      confusion:
+        vi: "Muốn nói \"chắc chắn không\", dùng can't (hoặc couldn't), không dùng mustn't - mustn't nghĩa là \"cấm\"."
+
+  - key: en:item:might-could-deduction
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: might / may / could + V (có thể là)
+      ipa: /maɪt/ · /meɪ/ · /kʊd/
+      pos: động từ khuyết thiếu
+    back:
+      meaning:
+        vi: có lẽ, có thể (người nói không chắc, khoảng 50% hoặc thấp hơn)
+      examples:
+        - target: She isn't answering. She might be in a meeting.
+          translation:
+            vi: Cô ấy không nghe máy. Có lẽ cô ấy đang họp.
+        - target: That could be his brother, but I'm not sure.
+          translation:
+            vi: Người đó có thể là anh trai anh ấy, nhưng tôi không chắc.
+      confusion:
+        vi: Might not và may not là "có lẽ không"; couldn't lại là "chắc chắn không" - đừng dùng couldn't khi bạn chỉ đoán.
+
+  - key: en:item:must-have-done
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: must have + V3 (chắc hẳn đã)
+      ipa: /ˈmʌst əv/
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: chắc hẳn đã (suy luận gần như chắc chắn về một việc trong quá khứ)
+      examples:
+        - target: She didn't reply. She must have forgotten.
+          translation:
+            vi: Cô ấy không trả lời. Chắc cô ấy quên mất rồi.
+        - target: The road is wet. It must have rained last night.
+          translation:
+            vi: Đường ướt. Chắc hẳn tối qua trời đã mưa.
+      pronunciation_note:
+        vi: Have đọc nhẹ thành /əv/, nghe như "mớt-sờv". Vì nghe giống "must of", người bản ngữ đôi khi viết sai, nhưng dạng đúng luôn là must have.
+      confusion:
+        vi: Sau must luôn là have nguyên mẫu, không bao giờ là had - must have forgotten, không phải "must had forgotten".
+
+  - key: en:item:cant-have-done
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: can't / couldn't have + V3 (chắc chắn đã không)
+      ipa: UK /ˈkɑːnt əv/ · US /ˈkænt əv/
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: không thể nào đã (chắc chắn một việc trong quá khứ đã không xảy ra)
+      examples:
+        - target: You can't have seen Minh yesterday - he was in Đà Nẵng.
+          translation:
+            vi: Bạn không thể đã gặp Minh hôm qua được - anh ấy ở Đà Nẵng mà.
+        - target: She couldn't have known about the party. We kept it secret.
+          translation:
+            vi: Cô ấy không thể biết trước về bữa tiệc. Chúng tôi giữ bí mật mà.
+      confusion:
+        vi: Động từ sau have phải ở dạng V3 (seen, known, gone), không phải V2 (saw, knew, went).
+
+  - key: en:item:might-have-done
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: might / may / could have + V3 (có lẽ đã)
+      ipa: /ˈmaɪt əv/
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: có lẽ đã (đoán không chắc về một việc trong quá khứ)
+      examples:
+        - target: He might have missed the bus.
+          translation:
+            vi: Có lẽ anh ấy đã lỡ chuyến xe buýt.
+        - target: I'm not sure where my keys are. I could have left them at the café.
+          translation:
+            vi: Tôi không chắc chìa khoá ở đâu. Có thể tôi đã để quên ở quán cà phê.
+      confusion:
+        vi: Could have + V3 còn có nghĩa "lẽ ra đã có thể" (You could have told me! - Lẽ ra bạn đã có thể nói với tôi!). Ngữ cảnh cho bạn biết đó là đoán hay là trách.
+
+  - key: en:item:acquaintance
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: acquaintance
+      ipa: /əˈkweɪntəns/
+      pos: danh từ
+    back:
+      meaning:
+        vi: người quen (biết nhau nhưng không thân)
+      examples:
+        - target: He isn't really a friend, just an acquaintance from work.
+          translation:
+            vi: Anh ấy không hẳn là bạn, chỉ là người quen ở chỗ làm.
+      pronunciation_note:
+        vi: Nhấn âm thứ hai (QUAIN). Chữ c không đọc - "ơ-quên-tần".
+      confusion:
+        vi: Tiếng Việt hay gọi mọi người là "bạn", nhưng tiếng Anh tách rõ friend (bạn) và acquaintance (người quen).
+
+  - key: en:item:flatmate
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: flatmate
+      ipa: /ˈflætmeɪt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bạn cùng nhà, bạn ở ghép
+      examples:
+        - target: My flatmate must be out - her shoes aren't here.
+          translation:
+            vi: Bạn cùng nhà của tôi chắc đi vắng rồi - giày cô ấy không có ở đây.
+      confusion:
+        vi: Flatmate là từ Anh-Anh; người Mỹ nói roommate. Bạn cùng phòng ký túc xá cũng là roommate.
+
+  - key: en:item:lose-touch-with
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: lose touch with someone
+      ipa: /luːz ˈtʌtʃ wɪð/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: mất liên lạc với ai
+      examples:
+        - target: We lost touch with each other after university.
+          translation:
+            vi: Chúng tôi mất liên lạc với nhau sau khi học xong đại học.
+      pronunciation_note:
+        vi: Lose đọc /luːz/ với âm z cuối, khác loose /luːs/ (lỏng).
+      confusion:
+        vi: Dùng giới từ with - lose touch with somebody, không nói "lose contact to".
+
+  - key: en:item:keep-in-touch
+    type: phrase
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: keep in touch (with someone)
+      ipa: /kiːp ɪn ˈtʌtʃ/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: giữ liên lạc
+      examples:
+        - target: Let's keep in touch after the course ends.
+          translation:
+            vi: Mình giữ liên lạc sau khi khoá học kết thúc nhé.
+      confusion:
+        vi: "Keep in touch là \"giữ liên lạc\" (vẫn tiếp tục); get in touch là \"liên lạc\" (bắt đầu liên hệ)."
+
+  - key: en:item:jealous
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: jealous
+      ipa: /ˈdʒeləs/
+      pos: tính từ
+    back:
+      meaning:
+        vi: ghen, ghen tị
+      examples:
+        - target: He must be jealous of his brother's success.
+          translation:
+            vi: Chắc hẳn anh ấy ghen tị với thành công của anh trai.
+      pronunciation_note:
+        vi: Âm đầu /dʒ/ như "dj", nhấn âm đầu - "DJE-lợs".
+      confusion:
+        vi: Dùng jealous of, không dùng "jealous with". Envious cũng là ghen tị nhưng ít gay gắt hơn.
+
+  - key: en:item:upset
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: upset
+      ipa: /ʌpˈset/
+      pos: tính từ
+    back:
+      meaning:
+        vi: buồn bực, phiền lòng, khó chịu
+      examples:
+        - target: She looks upset. Something must have happened.
+          translation:
+            vi: Trông cô ấy buồn bực. Chắc đã có chuyện gì xảy ra.
+      pronunciation_note:
+        vi: Khi là tính từ, nhấn âm thứ hai (up-SET).
+      confusion:
+        vi: Upset nằm giữa sad (buồn) và angry (giận) - vừa buồn vừa phật ý, thường vì ai đó làm gì.
+
+  - key: en:item:ignore
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ignore
+      ipa: UK /ɪɡˈnɔː/ · US /ɪɡˈnɔːr/
+      pos: động từ
+    back:
+      meaning:
+        vi: lờ đi, phớt lờ
+      examples:
+        - target: She can't have ignored you on purpose. She probably didn't see you.
+          translation:
+            vi: Cô ấy không thể cố tình lờ bạn đi được. Chắc là cô ấy không thấy bạn thôi.
+      confusion:
+        vi: Ignore là cố tình không để ý; không biết điều gì thì nói not know, không dùng ignore.
+
+  # ---------------- Bài 2: V-ing hay to V ----------------
+  - key: en:item:verb-plus-ing
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: enjoy / avoid / mind / keep / can't stand + V-ing
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Nhóm động từ luôn đi với V-ing phía sau
+      examples:
+        - target: I enjoy spending time with my grandparents.
+          translation:
+            vi: Tôi thích dành thời gian với ông bà.
+        - target: Would you mind waiting a few minutes?
+          translation:
+            vi: Bạn có phiền đợi vài phút không?
+      confusion:
+        vi: Tiếng Việt không đổi dạng động từ, nên người Việt hay nói "enjoy to spend". Những động từ này luôn cần V-ing.
+
+  - key: en:item:verb-plus-to-infinitive
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: decide / agree / refuse / promise / manage + to V
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Nhóm động từ luôn đi với to + động từ nguyên mẫu
+      examples:
+        - target: They decided to move in together.
+          translation:
+            vi: Họ quyết định dọn về sống chung.
+        - target: He promised to call me every week.
+          translation:
+            vi: Anh ấy hứa sẽ gọi cho tôi mỗi tuần.
+      confusion:
+        vi: Nhóm này thường nói về một việc phía trước (quyết định, hứa, đồng ý làm gì), nên dùng to V.
+
+  - key: en:item:preposition-plus-ing
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: giới từ + V-ing
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Sau mọi giới từ (in, of, about, for, without…), động từ phải ở dạng V-ing
+      examples:
+        - target: She's interested in meeting new people.
+          translation:
+            vi: Cô ấy thích làm quen với người mới.
+        - target: He left without saying goodbye.
+          translation:
+            vi: Anh ấy bỏ đi mà không chào tạm biệt.
+      confusion:
+        vi: To trong look forward to, be used to cũng là giới từ, nên phía sau là V-ing (look forward to seeing you).
+
+  - key: en:item:stop-ing-vs-to
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: stop doing vs stop to do
+      ipa: UK /stɒp/ · US /stɑːp/
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "stop + V-ing: thôi, bỏ hẳn việc đang làm; stop + to V: dừng lại (việc khác) để làm việc này"
+      examples:
+        - target: My dad stopped smoking ten years ago.
+          translation:
+            vi: Bố tôi bỏ thuốc lá từ mười năm trước.
+        - target: On the way home, we stopped to buy some fruit.
+          translation:
+            vi: Trên đường về, chúng tôi dừng lại để mua ít hoa quả.
+      confusion:
+        vi: "\"Stopped to smoke\" nghĩa là dừng lại để hút thuốc, ngược hẳn với \"bỏ thuốc\" (stopped smoking)."
+
+  - key: en:item:remember-ing-vs-to
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: remember doing vs remember to do
+      ipa: UK /rɪˈmembə/ · US /rɪˈmembɚ/
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "remember + V-ing: nhớ là đã làm (ký ức); remember + to V: nhớ phải làm (việc cần làm)"
+      examples:
+        - target: I remember meeting her at a wedding.
+          translation:
+            vi: Tôi nhớ là đã gặp cô ấy ở một đám cưới.
+        - target: Remember to call your mum on her birthday.
+          translation:
+            vi: Nhớ gọi cho mẹ vào ngày sinh nhật bà nhé.
+      confusion:
+        vi: Mẹo nhớ - V-ing nhìn về quá khứ (việc đã xảy ra), to V nhìn về phía trước (việc chưa làm).
+
+  - key: en:item:forget-ing-vs-to
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: forget doing vs forget to do
+      ipa: UK /fəˈɡet/ · US /fɚˈɡet/
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "forget + to V: quên làm (nên việc đó không xảy ra); forget + V-ing: quên chuyện đã làm (thường dùng I'll never forget…)"
+      examples:
+        - target: I forgot to lock the door.
+          translation:
+            vi: Tôi quên khoá cửa.
+        - target: I'll never forget seeing the sea for the first time.
+          translation:
+            vi: Tôi sẽ không bao giờ quên lần đầu tiên nhìn thấy biển.
+      confusion:
+        vi: "\"Quên làm\" việc gì là forget to do. \"I forgot locking the door\" sai nghĩa - câu đó là quên chuyện mình đã khoá cửa."
+
+  - key: en:item:try-ing-vs-to
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: try doing vs try to do
+      ipa: /traɪ/
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "try + to V: cố gắng làm (việc khó); try + V-ing: thử làm (một cách để xem có hiệu quả không)"
+      examples:
+        - target: I tried to stay calm, but I was really angry.
+          translation:
+            vi: Tôi đã cố giữ bình tĩnh, nhưng tôi thật sự rất giận.
+        - target: If you can't sleep, try drinking warm milk.
+          translation:
+            vi: Nếu bạn không ngủ được, hãy thử uống sữa ấm.
+      confusion:
+        vi: Khi đưa lời khuyên "thử cách này xem", dùng try + V-ing; khi nói "cố gắng hết sức", dùng try to V.
+
+  - key: en:item:regret-ing-vs-to
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: regret doing vs regret to say
+      ipa: /rɪˈɡret/
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "regret + V-ing: hối hận vì đã làm; regret + to say/inform: lấy làm tiếc phải báo (trang trọng)"
+      examples:
+        - target: I regret saying those things to my sister.
+          translation:
+            vi: Tôi hối hận vì đã nói những lời đó với em gái.
+        - target: We regret to inform you that the event has been cancelled.
+          translation:
+            vi: Chúng tôi rất tiếc phải thông báo rằng sự kiện đã bị huỷ.
+      confusion:
+        vi: Regret to chỉ dùng với say, tell, inform, announce trong văn phong trang trọng; nói chuyện hằng ngày thì gần như luôn là regret + V-ing.
+
+  - key: en:item:cant-stand
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: can't stand
+      ipa: UK /kɑːnt ˈstænd/ · US /kænt ˈstænd/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: không chịu nổi, rất ghét
+      examples:
+        - target: I can't stand people who are always late.
+          translation:
+            vi: Tôi không chịu nổi những người lúc nào cũng đến muộn.
+        - target: She can't stand being told what to do.
+          translation:
+            vi: Cô ấy rất ghét bị người khác sai bảo.
+      confusion:
+        vi: Sau can't stand dùng V-ing hoặc danh từ - can't stand waiting, không nói "can't stand to wait" trong văn nói thông thường.
+
+  - key: en:item:refuse
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: refuse
+      ipa: /rɪˈfjuːz/
+      pos: động từ
+    back:
+      meaning:
+        vi: từ chối, nhất quyết không
+      examples:
+        - target: He refused to apologise.
+          translation:
+            vi: Anh ấy nhất quyết không xin lỗi.
+      pronunciation_note:
+        vi: Nhấn âm thứ hai (re-FUSE), âm cuối /z/.
+      confusion:
+        vi: Refuse + to V. Không nói "refuse doing" và không thêm not - refuse đã mang nghĩa phủ định.
+
+  - key: en:item:apologise-for
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: apologise (to someone) for doing something
+      ipa: UK /əˈpɒlədʒaɪz/ · US /əˈpɑːlədʒaɪz/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: xin lỗi (ai) vì đã làm gì
+      examples:
+        - target: She apologised to me for being rude.
+          translation:
+            vi: Cô ấy đã xin lỗi tôi vì đã thô lỗ.
+      pronunciation_note:
+        vi: Nhấn âm thứ hai (a-POL-o-gise). Anh-Anh viết apologise, Anh-Mỹ viết apologize.
+      confusion:
+        vi: Thứ tự là apologise to + người + for + V-ing. Người Việt hay nói "apologise me", nhưng phải có to.
+
+  - key: en:item:avoid
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: avoid
+      ipa: /əˈvɔɪd/
+      pos: động từ
+    back:
+      meaning:
+        vi: tránh, né
+      examples:
+        - target: He's been avoiding me since our argument.
+          translation:
+            vi: Anh ấy cứ né tôi từ sau lần cãi nhau.
+        - target: Try to avoid talking about politics at family dinners.
+          translation:
+            vi: Cố tránh nói chuyện chính trị trong bữa cơm gia đình.
+      confusion:
+        vi: Avoid + V-ing, không phải avoid + to V.
+
+  - key: en:item:manage-to
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: manage to do something
+      ipa: /ˈmænɪdʒ tə/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: xoay xở được, làm được (dù khó)
+      examples:
+        - target: We finally managed to find a time to meet.
+          translation:
+            vi: Cuối cùng chúng tôi cũng sắp xếp được thời gian để gặp nhau.
+      confusion:
+        vi: Manage to nhấn mạnh việc đã thành công dù khó, gần với "rốt cuộc cũng…" trong tiếng Việt.
+
+  # ---------------- Bài 3: Cụm động từ & thành ngữ về các mối quan hệ ----------------
+  - key: en:item:get-on-with
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: get on (well) with someone
+      ipa: UK /ɡet ˈɒn wɪð/ · US /ɡet ˈɑːn wɪð/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: hợp tính, hoà thuận với ai
+      examples:
+        - target: I get on well with my mother-in-law.
+          translation:
+            vi: Tôi rất hợp với mẹ chồng.
+        - target: Do you get on with your colleagues?
+          translation:
+            vi: Bạn có hoà thuận với đồng nghiệp không?
+      confusion:
+        vi: Luôn dùng with - get on well with, không nói "get on well to". Người Mỹ hay nói get along with.
+
+  - key: en:item:fall-out-with
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: fall out with someone
+      ipa: /fɔːl ˈaʊt wɪð/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: cãi nhau rồi giận, bất hoà với ai
+      examples:
+        - target: She fell out with her best friend over money.
+          translation:
+            vi: Cô ấy giận nhau với bạn thân vì chuyện tiền bạc.
+      confusion:
+        vi: Quá khứ là fell out. Fall out with nhấn mạnh việc sau đó không nói chuyện nữa, nặng hơn have an argument.
+
+  - key: en:item:make-up-with
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: make up (with someone)
+      ipa: /meɪk ˈʌp wɪð/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: làm lành, làm hoà với ai
+      examples:
+        - target: They had a big argument, but they made up the next day.
+          translation:
+            vi: Họ cãi nhau to, nhưng hôm sau đã làm lành.
+      confusion:
+        vi: Make up còn nghĩa "bịa ra" (make up a story) và "trang điểm" (make-up). Khi nói về hai người sau cãi nhau, đó là làm lành.
+
+  - key: en:item:break-up-with
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: break up (with someone)
+      ipa: /breɪk ˈʌp wɪð/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: chia tay (người yêu)
+      examples:
+        - target: He broke up with his girlfriend last month.
+          translation:
+            vi: Anh ấy chia tay bạn gái hồi tháng trước.
+      confusion:
+        vi: Quá khứ là broke up. Chia tay người yêu dùng break up with, không dùng "break with" hay "separate" (separate là ly thân).
+
+  - key: en:item:look-up-to
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: look up to someone
+      ipa: /lʊk ˈʌp tuː/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: ngưỡng mộ, kính trọng, coi ai là tấm gương
+      examples:
+        - target: I've always looked up to my older brother.
+          translation:
+            vi: Tôi luôn coi anh trai là tấm gương.
+      confusion:
+        vi: Trái nghĩa là look down on (coi thường). Đừng nhầm với look up (tra cứu) - look up a word.
+
+  - key: en:item:put-up-with
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: put up with someone/something
+      ipa: /pʊt ˈʌp wɪð/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: chịu đựng, nhẫn nhịn
+      examples:
+        - target: I don't know how she puts up with his moods.
+          translation:
+            vi: Tôi không hiểu sao cô ấy chịu đựng được tính khí thất thường của anh ta.
+      confusion:
+        vi: Phải có đủ with. Put up (không with) là "cho ở nhờ" (put someone up) hoặc "treo lên" (put up a poster) - nghĩa khác hẳn.
+
+  - key: en:item:bring-up
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: bring someone up
+      ipa: /brɪŋ ˈʌp/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: nuôi nấng, nuôi dạy
+      examples:
+        - target: She was brought up by her grandparents.
+          translation:
+            vi: Cô ấy được ông bà nuôi lớn.
+      confusion:
+        vi: Bring up là người lớn nuôi con; grow up là đứa trẻ lớn lên. Bring up còn có nghĩa "nêu ra" một chủ đề (bring up a problem).
+
+  - key: en:item:ask-out
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ask someone out
+      ipa: UK /ɑːsk ˈaʊt/ · US /æsk ˈaʊt/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: mời ai đi chơi (hẹn hò)
+      examples:
+        - target: He finally asked her out after months of chatting.
+          translation:
+            vi: Sau mấy tháng nói chuyện, cuối cùng anh ấy cũng mời cô ấy đi chơi.
+      confusion:
+        vi: Người được mời đứng giữa ask và out - ask her out, không nói "ask out her".
+
+  - key: en:item:phrasal-verb-object-position
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: Vị trí tân ngữ trong cụm động từ
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Cụm 2 từ có tân ngữ thường tách được (bring her up / bring up her children), nhưng đại từ luôn đứng giữa; cụm 3 từ (get on with, look up to, put up with) không tách - tân ngữ luôn ở cuối."
+      examples:
+        - target: My aunt brought me up.
+          translation:
+            vi: Dì tôi nuôi tôi lớn.
+        - target: I can't put up with it any more.
+          translation:
+            vi: Tôi không chịu nổi chuyện đó nữa.
+      confusion:
+        vi: "Không nói \"brought up me\" - với đại từ (me, him, her, it, them), phải đặt giữa: brought me up."
+
+  - key: en:item:have-a-lot-in-common
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: have a lot in common (with someone)
+      ipa: UK /ɪn ˈkɒmən/ · US /ɪn ˈkɑːmən/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: có nhiều điểm chung
+      examples:
+        - target: We have a lot in common - we both love hiking and old films.
+          translation:
+            vi: Chúng tôi có nhiều điểm chung - cả hai đều mê đi bộ đường dài và phim cũ.
+      confusion:
+        vi: "Không có điểm chung nào: have nothing in common. Không nói \"have many common points\"."
+
+  - key: en:item:see-eye-to-eye
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: see eye to eye (with someone)
+      ipa: /siː ˌaɪ tʊ ˈaɪ/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: đồng quan điểm, cùng ý kiến
+      examples:
+        - target: My dad and I don't always see eye to eye on politics.
+          translation:
+            vi: Bố tôi và tôi không phải lúc nào cũng cùng quan điểm về chính trị.
+      confusion:
+        vi: Thành ngữ này hầu như chỉ dùng ở câu phủ định (don't see eye to eye). Eyes không thêm -s.
+
+  - key: en:item:a-shoulder-to-cry-on
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: a shoulder to cry on
+      ipa: UK /ˈʃəʊldə tə ˈkraɪ ɒn/ · US /ˈʃoʊldɚ tə ˈkraɪ ɑːn/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: chỗ dựa tinh thần, người để tâm sự lúc buồn
+      examples:
+        - target: When my parents divorced, my best friend was always a shoulder to cry on.
+          translation:
+            vi: Khi bố mẹ tôi ly hôn, bạn thân tôi luôn là chỗ dựa tinh thần cho tôi.
+      confusion:
+        vi: Giới từ on ở cuối là bắt buộc. Tiếng Việt có hình ảnh tương tự là "bờ vai để dựa vào".
+
+  - key: en:item:close-friend
+    type: phrase
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: a close friend
+      ipa: UK /kləʊs ˈfrend/ · US /kloʊs ˈfrend/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: bạn thân
+      examples:
+        - target: She's one of my closest friends.
+          translation:
+            vi: Cô ấy là một trong những người bạn thân nhất của tôi.
+      pronunciation_note:
+        vi: Close (thân, gần) đọc /kləʊs/ với âm s; close (đóng) đọc /kləʊz/ với âm z.
+      confusion:
+        vi: Bạn thân là close friend, không phải "near friend" - near chỉ khoảng cách.
+
+  # ---------------- Bài 4: Tính cách & used to / be used to / get used to ----------------
+  - key: en:item:compound-adjectives
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: Tính từ ghép (open-minded, hard-working)
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Tính từ gồm hai phần nối bằng gạch ngang, phần thứ hai thường là V-ed hoặc V-ing (-minded, -going, -working, -tempered)
+      examples:
+        - target: She's a hard-working, easy-going person.
+          translation:
+            vi: Cô ấy là người chăm chỉ và dễ tính.
+        - target: My grandfather is surprisingly open-minded.
+          translation:
+            vi: Ông tôi cởi mở một cách bất ngờ.
+      confusion:
+        vi: Tính từ ghép không thêm -s và vẫn đứng trước danh từ - two hard-working students, không nói "hard-workings".
+
+  - key: en:item:open-minded
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: open-minded
+      ipa: UK /ˌəʊpən ˈmaɪndɪd/ · US /ˌoʊpən ˈmaɪndɪd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: cởi mở, sẵn sàng đón nhận ý kiến mới
+      examples:
+        - target: My parents are quite open-minded about my career choice.
+          translation:
+            vi: Bố mẹ tôi khá cởi mở về lựa chọn nghề nghiệp của tôi.
+      pronunciation_note:
+        vi: Nhấn mạnh ở MIND; đuôi -ed đọc /ɪd/ vì đứng sau âm d.
+      confusion:
+        vi: Trái nghĩa là narrow-minded (hẹp hòi, bảo thủ).
+
+  - key: en:item:easy-going
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: easy-going
+      ipa: UK /ˌiːzi ˈɡəʊɪŋ/ · US /ˌiːzi ˈɡoʊɪŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: dễ tính, xuề xoà, thoải mái
+      examples:
+        - target: Our new manager is very easy-going.
+          translation:
+            vi: Quản lý mới của chúng tôi rất dễ tính.
+      confusion:
+        vi: Easy-going là tính cách dễ chịu; easy (dễ) chỉ nói về việc, không nói về người - không nói "He is very easy".
+
+  - key: en:item:self-confident
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: self-confident
+      ipa: UK /ˌself ˈkɒnfɪdənt/ · US /ˌself ˈkɑːnfɪdənt/
+      pos: tính từ
+    back:
+      meaning:
+        vi: tự tin
+      examples:
+        - target: Living abroad made her much more self-confident.
+          translation:
+            vi: Sống ở nước ngoài khiến cô ấy tự tin hơn nhiều.
+      pronunciation_note:
+        vi: Nhấn ở CON; đuôi -dent đọc nhẹ /dənt/.
+      confusion:
+        vi: Danh từ là self-confidence (sự tự tin). Không nói "She is very confidence".
+
+  - key: en:item:hard-working
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: hard-working
+      ipa: UK /ˌhɑːd ˈwɜːkɪŋ/ · US /ˌhɑːrd ˈwɝːkɪŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: chăm chỉ, cần cù
+      examples:
+        - target: She's the most hard-working person in our team.
+          translation:
+            vi: Cô ấy là người chăm chỉ nhất trong nhóm chúng tôi.
+      confusion:
+        vi: Hard-working là tính từ; trạng từ là work hard. Không nói "He works hard-working".
+
+  - key: en:item:reliable
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: reliable
+      ipa: /rɪˈlaɪəbl/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đáng tin cậy
+      examples:
+        - target: Nam is very reliable - if he says he'll help, he will.
+          translation:
+            vi: Nam rất đáng tin - đã nói sẽ giúp là anh ấy giúp.
+      pronunciation_note:
+        vi: Nhấn âm thứ hai (re-LI-a-ble).
+      confusion:
+        vi: Động từ là rely on (dựa vào). Không nói "reliable on someone".
+
+  - key: en:item:stubborn
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: stubborn
+      ipa: UK /ˈstʌbən/ · US /ˈstʌbɚn/
+      pos: tính từ
+    back:
+      meaning:
+        vi: bướng bỉnh, cứng đầu
+      examples:
+        - target: He's too stubborn to admit he was wrong.
+          translation:
+            vi: Anh ấy cứng đầu đến mức không chịu nhận là mình sai.
+      confusion:
+        vi: Stubborn mang nghĩa chê; muốn khen sự kiên trì thì dùng determined (quyết tâm).
+
+  - key: en:item:generous
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: generous
+      ipa: /ˈdʒenərəs/
+      pos: tính từ
+    back:
+      meaning:
+        vi: hào phóng, rộng lượng
+      examples:
+        - target: It was very generous of you to lend me your car.
+          translation:
+            vi: Bạn thật hào phóng khi cho tôi mượn xe.
+      pronunciation_note:
+        vi: Chữ g đọc /dʒ/ (như "dj"), nhấn âm đầu - "DJEN-ơ-rợs".
+      confusion:
+        vi: "Khen ai đã làm gì: It's generous of you to…, dùng of, không dùng for."
+
+  - key: en:item:selfish
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: selfish
+      ipa: /ˈselfɪʃ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: ích kỷ
+      examples:
+        - target: It was selfish of him to leave all the work to us.
+          translation:
+            vi: Anh ta thật ích kỷ khi để hết việc cho chúng tôi.
+      confusion:
+        vi: Selfish (ích kỷ) khác self-confident (tự tin) dù cùng bắt đầu bằng self.
+
+  - key: en:item:bad-tempered
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: bad-tempered
+      ipa: UK /ˌbæd ˈtempəd/ · US /ˌbæd ˈtempɚd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: nóng tính, hay cáu
+      examples:
+        - target: He's a bit bad-tempered in the mornings.
+          translation:
+            vi: Buổi sáng anh ấy hơi khó ở, hay cáu.
+      confusion:
+        vi: Đuôi là -tempered (có -ed), không phải "bad-temper". Trái nghĩa gần là easy-going hoặc good-natured.
+
+  - key: en:item:be-used-to
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: be used to + V-ing / danh từ
+      ipa: /bi ˈjuːst tə/
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: đã quen với (một việc không còn lạ hay khó nữa)
+      examples:
+        - target: I'm used to getting up early.
+          translation:
+            vi: Tôi quen dậy sớm rồi.
+        - target: She isn't used to living alone.
+          translation:
+            vi: Cô ấy chưa quen sống một mình.
+      pronunciation_note:
+        vi: Used to đọc /ˈjuːst tə/ - s đọc là /s/, không phải /z/, và hai âm t gần như nhập làm một.
+      confusion:
+        vi: To ở đây là giới từ, nên sau nó là V-ing - I'm used to getting up, không nói "I'm used to get up".
+
+  - key: en:item:get-used-to
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: get used to + V-ing / danh từ
+      ipa: /ɡet ˈjuːst tə/
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: dần quen với (quá trình làm quen)
+      examples:
+        - target: It took me months to get used to the cold weather.
+          translation:
+            vi: Tôi mất mấy tháng mới quen được với thời tiết lạnh.
+        - target: You'll soon get used to working from home.
+          translation:
+            vi: Bạn sẽ sớm quen với việc làm ở nhà thôi.
+      confusion:
+        vi: "Be used to là trạng thái (đã quen), get used to là quá trình (đang/sẽ quen). Cả hai đều cần V-ing sau to."
+
+  - key: en:item:used-to-vs-be-used-to
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: used to do vs be used to doing
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "used to + V nguyên mẫu: đã từng (thói quen cũ, nay không còn); be/get used to + V-ing: quen với"
+      examples:
+        - target: I used to live with my grandparents.
+          translation:
+            vi: Tôi từng sống với ông bà.
+        - target: I'm used to living with other people.
+          translation:
+            vi: Tôi đã quen sống chung với người khác.
+      confusion:
+        vi: Có be/get phía trước → "quen với" + V-ing. Không có be/get → "đã từng" + V nguyên mẫu.
+
+  # ---------------- Bài 5: Ôn tập - thư xin lời khuyên ----------------
+  - key: en:item:advice-column
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: advice column / agony aunt
+      ipa: UK /ədˈvaɪs ˌkɒləm/ · US /ədˈvaɪs ˌkɑːləm/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: chuyên mục tư vấn (trên báo, mạng); agony aunt là người phụ trách trả lời thư
+      examples:
+        - target: She wrote to an advice column about her problem with her flatmate.
+          translation:
+            vi: Cô ấy viết thư cho một chuyên mục tư vấn về chuyện rắc rối với bạn cùng nhà.
+      pronunciation_note:
+        vi: Column có chữ n câm - đọc "KO-lầm".
+      confusion:
+        vi: Advice là danh từ không đếm được (some advice, a piece of advice); động từ là advise, đọc với âm /z/.
+
+  - key: en:item:feel-left-out
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: feel left out
+      ipa: /fiːl ˌleft ˈaʊt/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: cảm thấy bị ra rìa, bị bỏ rơi
+      examples:
+        - target: I feel left out when my friends make plans without me.
+          translation:
+            vi: Tôi thấy mình bị ra rìa khi bạn bè lên kế hoạch mà không có tôi.
+      confusion:
+        vi: Left ở đây là quá khứ phân từ của leave (bỏ lại), không phải "bên trái".
+
+  - key: en:item:take-sides
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: take sides
+      ipa: /teɪk ˈsaɪdz/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đứng về một phía (trong cuộc tranh cãi)
+      examples:
+        - target: I don't want to take sides - they're both my friends.
+          translation:
+            vi: Tôi không muốn đứng về phía ai - cả hai đều là bạn tôi.
+      confusion:
+        vi: Sides luôn ở số nhiều trong cụm này. Đứng về phía một người cụ thể là take someone's side.
+
+  - key: en:item:give-it-time
+    type: phrase
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: give it time
+      ipa: /ˌɡɪv ɪt ˈtaɪm/
+      pos: cụm từ cố định
+    back:
+      meaning:
+        vi: cứ để thời gian trả lời, kiên nhẫn chờ thêm
+      examples:
+        - target: You've only been there a month. Give it time.
+          translation:
+            vi: Bạn mới ở đó được một tháng thôi. Cứ từ từ đã.
+      confusion:
+        vi: Cụm này dùng như lời khuyên; it là tình huống chung, không thay bằng danh từ khác.

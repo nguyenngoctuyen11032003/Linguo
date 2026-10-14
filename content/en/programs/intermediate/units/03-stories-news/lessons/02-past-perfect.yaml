@@ -1,0 +1,423 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:stories-news-past-perfect
+order_index: 2
+level: b1
+title:
+  vi: Chuyện đã xảy ra trước đó - quá khứ hoàn thành
+objectives:
+  - vi: Dùng had + quá khứ phân từ để nói việc xảy ra trước một mốc khác trong quá khứ.
+  - vi: Phân biệt "tàu chạy lúc mình đến" và "tàu đã chạy trước khi mình đến".
+  - vi: Không lạm dụng had cho mọi chữ "đã" trong tiếng Việt.
+estimated_minutes: 15
+skills: [grammar, writing, reading]
+prerequisites: [en:lesson:stories-news-past-continuous]
+items:
+  - item: en:item:had-past-participle
+  - item: en:item:past-perfect-when-needed
+  - item: en:item:by-the-time
+  - item: en:item:realise
+  - item: en:item:find-out
+  - item: en:item:miss-the-train
+  - item: en:item:lock
+  - item: en:item:leave-behind
+  - item: en:item:arrive
+  - item: en:item:the-day-before
+  - item: en:item:wallet
+  - item: en:item:fall-asleep
+    role: reuse
+  - item: en:item:was-were-ing
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn "lùi" được về quá khứ xa hơn trong câu chuyện - nói được việc gì đã xảy ra rồi trước khi chuyện chính diễn ra.
+  - type: explain
+    text:
+      vi: "Quá khứ hoàn thành = had + quá khứ phân từ (V3), dùng had cho mọi chủ ngữ: I had left, she had eaten. Thì này cho biết một việc xảy ra TRƯỚC một mốc khác cũng trong quá khứ, giống \"đã… rồi\" trong \"khi mình đến thì tàu đã chạy rồi\"."
+  - type: explain
+    text:
+      vi: "So sánh hai câu: When I got to the station, the train left (mình vừa tới thì tàu chạy) và When I got to the station, the train had left (tàu chạy trước, mình tới thì không còn). Chỉ một chữ had mà thứ tự sự việc khác hẳn."
+  - type: explain
+    text:
+      vi: Chữ "đã" trong tiếng Việt chỉ báo quá khứ chung chung, không phải dấu hiệu của had. Nếu chỉ kể một việc, hoặc kể các việc theo đúng thứ tự, hãy dùng quá khứ đơn - I visited Hue last year.
+  - type: deep_explain
+    text:
+      vi: "By the time + quá khứ đơn, vế còn lại + had + V3: By the time the police arrived, the thief had run away. Với before và after, thứ tự đã rõ nên quá khứ đơn cũng được chấp nhận (After I finished work, I went home). Trong văn nói, had thường rút gọn thành 'd (I'd left) và phủ định là hadn't."
+  - type: example
+    target: When I got to the station, the train had left.
+    target_lang: en
+    translation:
+      vi: Khi mình đến ga thì tàu đã chạy mất rồi.
+    note:
+      vi: Tàu chạy trước (had left), mình đến sau (got).
+  - type: example
+    target: When I got to the office, I realised I had left my laptop at home.
+    target_lang: en
+    translation:
+      vi: Đến văn phòng mình mới nhận ra là đã để quên laptop ở nhà.
+    note:
+      vi: Để quên laptop xảy ra trước lúc nhận ra, nên dùng had left.
+  - type: example
+    target: By the time the police arrived, the thief had run away.
+    target_lang: en
+    translation:
+      vi: Đến lúc cảnh sát tới thì tên trộm đã chạy mất rồi.
+    note:
+      vi: Vế by the time dùng quá khứ đơn; run có quá khứ phân từ là run.
+  - type: example
+    target: Later we found out that someone had taken the money.
+    target_lang: en
+    translation:
+      vi: Sau đó tụi mình phát hiện ra là có người đã lấy tiền.
+    note:
+      vi: Find out (found out) là biết được sự thật; việc lấy tiền xảy ra trước nên dùng had taken.
+  - type: common_mistake
+    wrong: I had visited Hue last year.
+    right: I visited Hue last year.
+    target_lang: en
+    note:
+      vi: Chỉ có một việc và một mốc thời gian, không có gì để so trước sau, nên dùng quá khứ đơn. Đừng dịch mọi chữ "đã" thành had.
+  - type: common_mistake
+    wrong: By the time we arrived, the film already started.
+    right: By the time we arrived, the film had already started.
+    target_lang: en
+    note:
+      vi: Phim bắt đầu trước lúc tụi mình đến, nên vế còn lại cần had + V3.
+  - type: common_mistake
+    wrong: She realised she had leave her bag in the taxi.
+    right: She realised she had left her bag in the taxi.
+    target_lang: en
+    note:
+      vi: Sau had phải là quá khứ phân từ (V3); leave - left - left.
+  - type: summary
+    points:
+      - vi: Quá khứ hoàn thành = had + V3, cho mọi chủ ngữ; rút gọn 'd, phủ định hadn't.
+      - vi: Dùng khi cần nói một việc xảy ra trước một mốc khác trong quá khứ.
+      - vi: By the time + quá khứ đơn, vế còn lại + had + V3.
+      - vi: Một việc đơn lẻ hoặc các việc kể theo thứ tự - chỉ cần quá khứ đơn.
+      - vi: Từ mới - realise, find out, miss the bus/train, lock, leave behind, arrive, the day before, wallet.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:stories-news-pp-listen-train
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:had-past-participle
+    prompt:
+      audio_asset_id: null
+      fallback_text: When I got to the station, the train had left.
+      options:
+        - { id: g4h, text: "Khi mình đến ga thì tàu đã chạy mất rồi.", lang: vi }
+        - { id: p8z, text: "Mình vừa đến ga thì tàu bắt đầu chạy.", lang: vi }
+        - { id: a3e, text: "Khi mình đến ga thì tàu vẫn chưa chạy.", lang: vi }
+        - { id: x7r, text: "Mình rời ga trước khi tàu đến.", lang: vi }
+    answer:
+      correct_option_id: g4h
+    explanation:
+      vi: Had left cho biết tàu chạy trước lúc mình đến (got), nên mình không kịp. Nếu câu là the train left thì nghĩa là tàu chạy đúng lúc mình vừa tới.
+    display_answer: "Khi mình đến ga thì tàu đã chạy mất rồi."
+
+  - key: en:exercise:stories-news-pp-mcq-film-before
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:had-past-participle
+    prompt:
+      stem: "Câu nào có nghĩa là phim đã chiếu TRƯỚC khi tụi mình đến?"
+      stem_lang: vi
+      options:
+        - { id: c5k, text: "When we arrived, the film had started.", lang: en }
+        - { id: j2d, text: "When we arrived, the film started.", lang: en }
+        - { id: v9n, text: "When we had arrived, the film started.", lang: en }
+        - { id: o6s, text: "When we arrived, the film was starting.", lang: en }
+    answer:
+      correct_option_id: c5k
+    explanation:
+      vi: Had started đặt việc phim chiếu trước mốc arrived. The film started là phim chiếu ngay khi mình tới; when we had arrived lại đặt việc "đến" lên trước, ngược ý.
+    display_answer: "When we arrived, the film had started."
+
+  - key: en:exercise:stories-news-pp-mcq-hue
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:past-perfect-when-needed
+    prompt:
+      stem: "Chọn câu đúng cho ý: \"Năm ngoái mình đã đi Huế.\""
+      stem_lang: vi
+      options:
+        - { id: i4w, text: "I visited Hue last year.", lang: en }
+        - { id: l8f, text: "I had visited Hue last year.", lang: en }
+        - { id: s1y, text: "I was visit Hue last year.", lang: en }
+        - { id: e5q, text: "I had visit Hue last year.", lang: en }
+    answer:
+      correct_option_id: i4w
+    explanation:
+      vi: Câu chỉ có một sự việc ở một thời điểm quá khứ, không cần so trước sau, nên dùng quá khứ đơn visited. Chữ "đã" không có nghĩa là phải dùng had.
+    display_answer: "I visited Hue last year."
+
+  - key: en:exercise:stories-news-pp-fill-thief-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:by-the-time
+    prompt:
+      template: "By the time the police {{b1}} (arrive), the thief {{b2}} (run) away."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa của câu: Đến lúc cảnh sát tới thì tên trộm đã chạy mất rồi."
+        - "Gợi ý: vế by the time dùng quá khứ đơn; việc xảy ra trước dùng had + V3 (run - ran - run)."
+    answer:
+      blanks:
+        b1: [arrived, came]
+        b2: [had run, "'d run", had already run]
+    known_wrong:
+      - answer: had arrived
+        feedback_vi: Vế by the time dùng quá khứ đơn - arrived.
+        error_tag: by_the_time_tense
+      - answer: ran
+        feedback_vi: Tên trộm chạy trước khi cảnh sát đến, nên cần had run.
+        error_tag: past_perfect_needed
+      - answer: had ran
+        feedback_vi: Sau had dùng quá khứ phân từ; run - ran - run, nên là had run.
+        error_tag: past_participle_form
+      - answer: had runned
+        feedback_vi: Run là động từ bất quy tắc; quá khứ phân từ là run.
+        error_tag: past_participle_form
+    explanation:
+      vi: By the time + quá khứ đơn (arrived). Tên trộm chạy đi trước đó nên dùng had + V3 - had run (run có V3 giống nguyên mẫu).
+    display_answer: By the time the police arrived, the thief had run away.
+
+  - key: en:exercise:stories-news-pp-order-wallet
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:leave-behind
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Mình nhận ra là đã để quên ví ở nhà.\""
+      tokens:
+        - { id: w-wallet, text: wallet }
+        - { id: w-had, text: had }
+        - { id: w-i1, text: I }
+        - { id: w-home, text: home }
+        - { id: w-leaved, text: leaved }
+        - { id: w-realised, text: realised }
+        - { id: w-my, text: my }
+        - { id: w-left, text: left }
+        - { id: w-at, text: at }
+        - { id: w-i2, text: I }
+    answer:
+      orders:
+        - [w-i1, w-realised, w-i2, w-had, w-left, w-my, w-wallet, w-at, w-home]
+        - [w-i2, w-realised, w-i1, w-had, w-left, w-my, w-wallet, w-at, w-home]
+    explanation:
+      vi: Nhận ra (realised) là mốc quá khứ; để quên ví xảy ra trước nên dùng had left. Leave là động từ bất quy tắc nên không có leaved.
+    display_answer: I realised I had left my wallet at home.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:stories-news-pp-fill-station
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:had-past-participle
+    prompt:
+      template: "When we {{b1}} (get) to the station, the train {{b2}} (leave), so we waited for the next one."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [got]
+        b2: [had left, "'d left", had already left]
+    known_wrong:
+      - answer: left
+        feedback_vi: Left nghĩa là tàu chạy đúng lúc bạn tới; tàu đã chạy trước đó nên cần had left.
+        error_tag: past_perfect_needed
+      - answer: had got
+        feedback_vi: Mốc chính "khi tụi mình đến" dùng quá khứ đơn got; had dành cho việc xảy ra trước.
+        error_tag: past_perfect_overuse
+      - answer: had leave
+        feedback_vi: Sau had dùng quá khứ phân từ - leave, left, left.
+        error_tag: past_participle_form
+      - answer: had leaved
+        feedback_vi: Leave là động từ bất quy tắc; V3 là left.
+        error_tag: past_participle_form
+    explanation:
+      vi: Lúc tụi mình đến là mốc quá khứ (got). Tàu chạy trước mốc đó nên dùng had left - vì vậy mới phải chờ chuyến sau.
+    display_answer: When we got to the station, the train had left, so we waited for the next one.
+
+  - key: en:exercise:stories-news-pp-translate-thief
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:by-the-time
+    prompt:
+      source_text: Đến lúc cảnh sát tới thì tên trộm đã chạy mất rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - By the time the police arrived, the thief had run away.
+        - By the time the police arrived, the thief had already run away.
+        - By the time the police came, the thief had run away.
+        - By the time the police came, the thief had already run away.
+        - By the time the police arrived, the thief had escaped.
+        - By the time the police arrived, the thief had already escaped.
+        - By the time the police arrived, the thief had gone.
+        - By the time the police arrived, the thief had already gone.
+        - When the police arrived, the thief had run away.
+        - When the police arrived, the thief had already run away.
+        - When the police came, the thief had already run away.
+        - By the time the police got there, the thief had run away.
+        - By the time the police arrived, the thief had disappeared.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: By the time the police arrived, the thief ran away.
+        feedback_vi: Tên trộm chạy trước khi cảnh sát đến, nên cần had run away.
+        error_tag: past_perfect_needed
+      - answer: By the time the police had arrived, the thief ran away.
+        feedback_vi: Đặt had nhầm vế. Vế by the time dùng quá khứ đơn, việc xảy ra trước dùng had + V3.
+        error_tag: by_the_time_tense
+      - answer: By the time the police arrived, the thief had ran away.
+        feedback_vi: Quá khứ phân từ của run là run, không phải ran.
+        error_tag: past_participle_form
+      - answer: By the time the police arrived, the thief has run away.
+        feedback_vi: Câu kể chuyện quá khứ nên dùng had, không dùng has.
+        error_tag: present_perfect_for_past_perfect
+    explanation:
+      vi: "\"Đến lúc… thì… đã… rồi\" là mẫu by the time + quá khứ đơn, vế sau had + V3. Run có V3 là run; cũng có thể dùng had escaped hay had gone."
+    display_answer: By the time the police arrived, the thief had run away.
+
+  - key: en:exercise:stories-news-pp-translate-hue
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:past-perfect-when-needed
+    prompt:
+      source_text: Năm ngoái mình đã đi Huế với gia đình.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I went to Hue with my family last year.
+        - I visited Hue with my family last year.
+        - Last year I went to Hue with my family.
+        - Last year I visited Hue with my family.
+        - Last year, I went to Hue with my family.
+        - Last year, I visited Hue with my family.
+        - I travelled to Hue with my family last year.
+        - I traveled to Hue with my family last year.
+        - I went to Huế with my family last year.
+        - Last year I went to Huế with my family.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I had gone to Hue with my family last year.
+        feedback_vi: Chỉ có một việc ở một mốc quá khứ - dùng quá khứ đơn went. Chữ "đã" không cần had.
+        error_tag: past_perfect_overuse
+      - answer: I had visited Hue with my family last year.
+        feedback_vi: Không có mốc quá khứ nào khác để so sánh, nên dùng visited.
+        error_tag: past_perfect_overuse
+      - answer: I have been to Hue with my family last year.
+        feedback_vi: Có last year (thời điểm đã kết thúc) thì dùng quá khứ đơn - I went.
+        error_tag: present_perfect_with_past_time
+      - answer: I goed to Hue with my family last year.
+        feedback_vi: Go là động từ bất quy tắc, quá khứ là went.
+        error_tag: irregular_past
+    explanation:
+      vi: Một chuyến đi ở một thời điểm đã qua (last year) chỉ cần quá khứ đơn - went hoặc visited. Had + V3 chỉ dùng khi có một mốc quá khứ khác để nói "trước đó".
+    display_answer: I went to Hue with my family last year.
+
+  # ---------------- application ----------------
+  - key: en:exercise:stories-news-pp-translate-bag
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:realise
+    prompt:
+      source_text: She realised she had left her bag behind in the taxi.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cô ấy nhận ra là đã bỏ quên túi trên taxi.
+        - Cô ấy nhận ra là cô ấy đã bỏ quên túi trên taxi.
+        - Cô ấy nhận ra mình đã bỏ quên túi trên taxi.
+        - Cô ấy nhận ra là đã để quên túi trên taxi.
+        - Cô ấy nhận ra mình đã để quên túi trên taxi.
+        - Cô ấy nhận ra rằng mình đã để quên túi trên taxi.
+        - Cô ấy nhận ra rằng cô ấy đã để quên túi trên taxi.
+        - Cô ấy nhận ra là đã để quên túi xách trên taxi.
+        - Cô ấy nhận ra mình đã bỏ quên túi xách trên taxi.
+        - Cô ấy nhận ra là đã để quên túi ở trên taxi.
+        - Cô ấy nhận ra mình đã để quên cái túi trên taxi.
+        - Chị ấy nhận ra là đã để quên túi trên taxi.
+        - Cô ấy chợt nhận ra là đã để quên túi trên taxi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Realised là "nhận ra" (mốc quá khứ); had left behind là "đã để quên" trước lúc đó. Leave something behind là bỏ quên đồ ở một nơi.
+    display_answer: Cô ấy nhận ra là đã bỏ quên túi trên taxi.
+
+  - key: en:exercise:stories-news-pp-mcq-late
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:miss-the-train
+    prompt:
+      stem: "Sếp hỏi: \"Why were you late this morning?\" Câu trả lời nào đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: k8u, text: "When I got to the bus stop, the bus had already left.", lang: en }
+        - { id: r3m, text: "When I got to the bus stop, the bus had already leave.", lang: en }
+        - { id: d6h, text: "When I had got to the bus stop, the bus already left.", lang: en }
+        - { id: n1c, text: "When I get to the bus stop, the bus had already left.", lang: en }
+    answer:
+      correct_option_id: k8u
+    explanation:
+      vi: Đến trạm (got) là mốc chính; xe đi trước đó nên dùng had already left. Had leave sai dạng V3; phương án thứ ba đặt had nhầm vế; get là hiện tại, không hợp câu chuyện quá khứ.
+    display_answer: "When I got to the bus stop, the bus had already left."
+
+  - key: en:exercise:stories-news-pp-order-asleep
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:had-past-participle
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Khi cô ấy về đến nhà thì con trai đã ngủ rồi.\""
+      tokens:
+        - { id: a-asleep, text: asleep }
+        - { id: a-son, text: son }
+        - { id: a-got, text: got }
+        - { id: a-fell, text: fell }
+        - { id: a-had, text: had }
+        - { id: a-when, text: when }
+        - { id: a-her, text: her }
+        - { id: a-home, text: home }
+        - { id: a-fallen, text: fallen }
+        - { id: a-she, text: she }
+    answer:
+      orders:
+        - [a-when, a-she, a-got, a-home, a-her, a-son, a-had, a-fallen, a-asleep]
+        - [a-her, a-son, a-had, a-fallen, a-asleep, a-when, a-she, a-got, a-home]
+    explanation:
+      vi: Về đến nhà là mốc chính (got home); con ngủ trước đó nên dùng had fallen asleep. Fell là quá khứ đơn, không đứng sau had.
+    display_answer: When she got home, her son had fallen asleep.
