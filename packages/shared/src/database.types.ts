@@ -53,6 +53,20 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
+                },"admin_audit_log": {
+                  Row: {
+                    "action": string,"actor": string | null,"actor_role": string | null,"created_at": string,"detail": NonNullable<Json>,"id": string,"target_id": string | null,"target_kind": string | null
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "action": string,"actor"?: string | null,"actor_role"?: string | null,"created_at"?: string,"detail"?: NonNullable<Json>,"id"?: string,"target_id"?: string | null,"target_kind"?: string | null
+                  }
+                  Update: {
+                    "action"?: string,"actor"?: string | null,"actor_role"?: string | null,"created_at"?: string,"detail"?: NonNullable<Json>,"id"?: string,"target_id"?: string | null,"target_kind"?: string | null
+                  }
+                  Relationships: [
+                    
+                  ]
                 },"ai_cache": {
                   Row: {
                     "created_at": string,"expires_at": string,"hits": number,"key": string,"model": string,"payload": NonNullable<Json>,"prompt_version": string,"task": string
@@ -270,6 +284,20 @@ isOneToOne: false
       referencedRelation: "lesson_runs"
       referencedColumns: ["id"]
     }
+                  ]
+                },"content_reports": {
+                  Row: {
+                    "content_version": number | null,"created_at": string,"id": string,"note": string | null,"reason": string,"resolution_note": string | null,"resolved_at": string | null,"resolved_by": string | null,"status": string,"target_id": string,"target_kind": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "content_version"?: number | null,"created_at"?: string,"id"?: string,"note"?: string | null,"reason": string,"resolution_note"?: string | null,"resolved_at"?: string | null,"resolved_by"?: string | null,"status"?: string,"target_id": string,"target_kind": string,"user_id": string
+                  }
+                  Update: {
+                    "content_version"?: number | null,"created_at"?: string,"id"?: string,"note"?: string | null,"reason"?: string,"resolution_note"?: string | null,"resolved_at"?: string | null,"resolved_by"?: string | null,"status"?: string,"target_id"?: string,"target_kind"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    
                   ]
                 },"content_sources": {
                   Row: {
@@ -597,6 +625,34 @@ isOneToOne: false
                   Relationships: [
                     
                   ]
+                },"notification_prefs": {
+                  Row: {
+                    "backoff_level": number,"backoff_relief_day": string | null,"ignored_streak": number,"max_per_day": number,"push_enabled": boolean,"quiet_end": string,"quiet_start": string,"remind_at": string,"remind_days": (number)[],"reminders_enabled": boolean,"updated_at": string,"user_id": string,"weekly_summary": boolean
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "backoff_level"?: number,"backoff_relief_day"?: string | null,"ignored_streak"?: number,"max_per_day"?: number,"push_enabled"?: boolean,"quiet_end"?: string,"quiet_start"?: string,"remind_at"?: string,"remind_days"?: (number)[],"reminders_enabled"?: boolean,"updated_at"?: string,"user_id": string,"weekly_summary"?: boolean
+                  }
+                  Update: {
+                    "backoff_level"?: number,"backoff_relief_day"?: string | null,"ignored_streak"?: number,"max_per_day"?: number,"push_enabled"?: boolean,"quiet_end"?: string,"quiet_start"?: string,"remind_at"?: string,"remind_days"?: (number)[],"reminders_enabled"?: boolean,"updated_at"?: string,"user_id"?: string,"weekly_summary"?: boolean
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"notifications": {
+                  Row: {
+                    "action_url": string,"body_vi": string,"clicked_at": string | null,"created_at": string,"delivered_push_at": string | null,"id": string,"ignore_checked": boolean,"kind": string,"local_day": string,"payload": NonNullable<Json>,"read_at": string | null,"title_vi": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "action_url": string,"body_vi": string,"clicked_at"?: string | null,"created_at"?: string,"delivered_push_at"?: string | null,"id"?: string,"ignore_checked"?: boolean,"kind": string,"local_day": string,"payload"?: NonNullable<Json>,"read_at"?: string | null,"title_vi": string,"user_id": string
+                  }
+                  Update: {
+                    "action_url"?: string,"body_vi"?: string,"clicked_at"?: string | null,"created_at"?: string,"delivered_push_at"?: string | null,"id"?: string,"ignore_checked"?: boolean,"kind"?: string,"local_day"?: string,"payload"?: NonNullable<Json>,"read_at"?: string | null,"title_vi"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
                 },"profiles": {
                   Row: {
                     "created_at": string,"current_learning_path_id": string | null,"display_name": string | null,"id": string,"locale": string,"timezone": string,"timezone_changed_at": string | null,"updated_at": string
@@ -648,6 +704,20 @@ isOneToOne: false
       referencedRelation: "content_sources"
       referencedColumns: ["id"]
     }
+                  ]
+                },"push_subscriptions": {
+                  Row: {
+                    "auth": string,"created_at": string,"endpoint": string,"failure_count": number,"id": string,"last_success_at": string | null,"p256dh": string,"user_agent": string | null,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "auth": string,"created_at"?: string,"endpoint": string,"failure_count"?: number,"id"?: string,"last_success_at"?: string | null,"p256dh": string,"user_agent"?: string | null,"user_id": string
+                  }
+                  Update: {
+                    "auth"?: string,"created_at"?: string,"endpoint"?: string,"failure_count"?: number,"id"?: string,"last_success_at"?: string | null,"p256dh"?: string,"user_agent"?: string | null,"user_id"?: string
+                  }
+                  Relationships: [
+                    
                   ]
                 },"review_cards": {
                   Row: {
@@ -761,6 +831,20 @@ isOneToOne: false
                   Relationships: [
                     
                   ]
+                },"staff_roles": {
+                  Row: {
+                    "granted_at": string,"granted_by": string | null,"role": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "granted_at"?: string,"granted_by"?: string | null,"role": string,"user_id": string
+                  }
+                  Update: {
+                    "granted_at"?: string,"granted_by"?: string | null,"role"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
                 },"study_sessions": {
                   Row: {
                     "completed_at": string | null,"created_at": string,"id": string,"local_date": string,"minutes_planned": number,"path_id": string,"plan": NonNullable<Json>,"started_at": string | null,"status": string,"user_id": string
@@ -856,6 +940,39 @@ isOneToOne: false
 "ack_ai_notice":
 { Args: Record<PropertyKey, never>; Returns: string
                            },
+"admin_ai_usage":
+{ Args: { "p_days": number }; Returns: Json
+                           },
+"admin_analytics":
+{ Args: { "p_days": number }; Returns: Json
+                           },
+"admin_audit_log_recent":
+{ Args: { "p_limit"?: number }; Returns: Json
+                           },
+"admin_content_overview":
+{ Args: Record<PropertyKey, never>; Returns: Json
+                           },
+"admin_get_content":
+{ Args: { "p_id": string,"p_kind": string }; Returns: Json
+                           },
+"admin_grant_role":
+{ Args: { "p_role": string,"p_user_id": string }; Returns: Json
+                           },
+"admin_list_content":
+{ Args: { "p_kind"?: string,"p_language"?: string,"p_limit"?: number,"p_offset"?: number,"p_search"?: string,"p_status"?: string }; Returns: Json
+                           },
+"admin_list_reports":
+{ Args: { "p_kind"?: string,"p_limit"?: number,"p_offset"?: number,"p_status"?: string }; Returns: Json
+                           },
+"admin_list_sources":
+{ Args: Record<PropertyKey, never>; Returns: Json
+                           },
+"admin_resolve_report":
+{ Args: { "p_report_ids": (string)[],"p_resolution_note"?: string,"p_status": string }; Returns: Json
+                           },
+"admin_set_status":
+{ Args: { "p_force"?: boolean,"p_id": string,"p_kind": string,"p_note"?: string,"p_status": string }; Returns: Json
+                           },
 "ai_cache_get":
 { Args: { "p_key": string }; Returns: Json
                            },
@@ -889,6 +1006,12 @@ isOneToOne: false
 "complete_lesson":
 { Args: { "p_run_id": string }; Returns: Json
                            },
+"content_report_target_version":
+{ Args: { "p_id": string,"p_kind": string }; Returns: number
+                           },
+"content_target_label":
+{ Args: { "p_id": string,"p_kind": string,"p_max"?: number }; Returns: string
+                           },
 "create_learning_path":
 { Args: { "p_current_level": string,"p_goal_type": string,"p_language": string,"p_start_point": string,"p_target_date"?: string,"p_target_level": string,"p_weekly_minutes": (number)[] }; Returns: {
               "created_at": string,
@@ -913,6 +1036,9 @@ isOneToOne: false
       } },
 "delete_my_account":
 { Args: { "p_confirm": string }; Returns: undefined
+                           },
+"delete_push_subscription":
+{ Args: { "p_endpoint": string }; Returns: undefined
                            },
 "diag_cap_level":
 { Args: { "p_current": number,"p_first_applied": boolean,"p_suggested": number }; Returns: number
@@ -1036,11 +1162,17 @@ isOneToOne: false
 "finish_session":
 { Args: { "p_session_id": string,"p_status": string }; Returns: Json
                            },
+"generate_due_notifications":
+{ Args: { "p_now": string }; Returns: Json
+                           },
 "get_exam_attempt":
 { Args: { "p_attempt_id": string }; Returns: Json
                            },
 "get_lesson":
 { Args: { "p_lesson_id": string,"p_path_id": string }; Returns: Json
+                           },
+"get_notification_prefs":
+{ Args: Record<PropertyKey, never>; Returns: Json
                            },
 "get_progress_dashboard":
 { Args: { "p_path_id": string,"p_range_days": number }; Returns: Json
@@ -1145,6 +1277,15 @@ isOneToOne: false
 "list_exam_forms":
 { Args: { "p_language": string }; Returns: Json
                            },
+"list_my_reports":
+{ Args: { "p_limit"?: number }; Returns: Json
+                           },
+"list_notifications":
+{ Args: { "p_before"?: string,"p_limit"?: number }; Returns: Json
+                           },
+"mark_notification":
+{ Args: { "p_action": string,"p_id": string }; Returns: undefined
+                           },
 "path_lessons":
 { Args: { "p_path_id": string }; Returns: {
               "estimated_minutes": number,"is_demo": boolean,"lesson_id": string,"lesson_key": string,"lesson_order": number,"level_code": string,"prerequisite_ids": (string)[],"prerequisites_met": boolean,"program_id": string,"program_title": Json,"run_status": string,"title": Json,"unit_id": string,"unit_order": number,"unit_title": Json
@@ -1182,8 +1323,40 @@ isOneToOne: false
 "purge_expired_data":
 { Args: Record<PropertyKey, never>; Returns: Json
                            },
+"purge_notifications":
+{ Args: Record<PropertyKey, never>; Returns: number
+                           },
+"reminders_backoff_allows":
+{ Args: { "p_isodow": number,"p_level": number }; Returns: boolean
+                           },
+"reminders_day_active":
+{ Args: { "p_day": string,"p_user": string }; Returns: boolean
+                           },
+"reminders_in_quiet":
+{ Args: { "p_end": string,"p_local": string,"p_start": string }; Returns: boolean
+                           },
+"reminders_prefs_json":
+{ Args: { "p_user": string }; Returns: Json
+                           },
+"reminders_skill_vi":
+{ Args: { "p_skill": string }; Returns: string
+                           },
+"reminders_slot":
+{ Args: { "p_local": string,"p_remind_at": string,"p_slots": number }; Returns: {
+              "reminder_day": string,"slot": number
+            }[]
+                           },
+"reminders_weekly_body":
+{ Args: { "p_payload": Json }; Returns: string
+                           },
+"reminders_weekly_payload":
+{ Args: { "p_user": string,"p_week_end": string }; Returns: Json
+                           },
 "reorder_session":
 { Args: { "p_order": (string)[],"p_session_id": string }; Returns: Json
+                           },
+"report_content":
+{ Args: { "p_note"?: string,"p_reason": string,"p_target_id": string,"p_target_kind": string }; Returns: Json
                            },
 "review_day_totals":
 { Args: { "p_extra": boolean,"p_now": string,"p_path_id": string,"p_user": string,"p_weekly_minutes": (number)[] }; Returns: Json
@@ -1218,6 +1391,9 @@ isOneToOne: false
                            },
 "save_lesson_cursor":
 { Args: { "p_cursor": number,"p_run_id": string }; Returns: undefined
+                           },
+"save_push_subscription":
+{ Args: { "p_auth": string,"p_endpoint": string,"p_p256dh": string,"p_user_agent"?: string }; Returns: undefined
                            },
 "save_session_plan":
 { Args: { "p_path_id": string,"p_plan": Json,"p_replace": boolean }; Returns: Json
@@ -1268,6 +1444,9 @@ isOneToOne: false
         isOneToOne: true
         isSetofReturn: false
       } },
+"set_notification_prefs":
+{ Args: { "p": Json }; Returns: Json
+                           },
 "skip_diagnostic_skill":
 { Args: { "p_attempt_id": string,"p_reason": string,"p_skill": string }; Returns: Json
                            },
@@ -1319,6 +1498,9 @@ isOneToOne: false
 "srs_update_mastery":
 { Args: { "p_item": string,"p_path": string,"p_user": string }; Returns: boolean
                            },
+"staff_role":
+{ Args: Record<PropertyKey, never>; Returns: string
+                           },
 "start_diagnostic":
 { Args: { "p_mode"?: string,"p_path_id": string }; Returns: Json
                            },
@@ -1339,6 +1521,9 @@ isOneToOne: false
                            },
 "track_events":
 { Args: { "p_events": Json }; Returns: number
+                           },
+"unread_notification_count":
+{ Args: Record<PropertyKey, never>; Returns: number
                            },
 "update_learning_path_plan":
 { Args: { "p_goal_type": string,"p_id": string,"p_target_date"?: string,"p_target_level": string,"p_weekly_minutes": (number)[] }; Returns: {
