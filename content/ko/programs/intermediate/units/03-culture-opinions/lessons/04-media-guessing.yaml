@@ -1,0 +1,432 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:media-guessing
+order_index: 4
+level: topik4
+title:
+  vi: Truyền thông và mạng xã hội - phỏng đoán, tiếc nuối
+objectives:
+  - vi: Phỏng đoán kèm lời khuyên bằng -(으)ㄹ 텐데, và đoán dựa trên dấu hiệu bằng -나 보다 / -(으)ㄴ가 보다.
+  - vi: Nói điều tiếc vì đã không làm bằng -(으)ㄹ걸 그랬다.
+  - vi: Dùng từ vựng truyền thông - 드라마, 유튜브, 댓글, 악플, 광고, 구독하다, 인기, 조회수 - và đọc hiểu một chuỗi bình luận trên diễn đàn.
+estimated_minutes: 22
+skills: [grammar, reading, vocabulary]
+prerequisites: [ko:lesson:holidays-experience]
+items:
+  - item: ko:item:gram-eul-tende
+  - item: ko:item:gram-na-boda
+  - item: ko:item:gram-eulgeol-geuraetda
+  - item: ko:item:deurama
+  - item: ko:item:yutyubeu
+  - item: ko:item:daetgeul
+  - item: ko:item:akpeul
+  - item: ko:item:gwanggo
+  - item: ko:item:gudokhada
+  - item: ko:item:ingi
+  - item: ko:item:johoesu
+  - item: ko:item:gram-dago-saenggakhada
+    role: reuse
+  - item: ko:item:gram-eul-piryoga-itda
+    role: reuse
+  - item: ko:item:banmal
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Chắc mai mưa đấy, mang ô theo nhé", "Hình như video đó nổi lắm", "Lẽ ra tôi nên đặt vé trước" và đọc hiểu bình luận trên diễn đàn về phim Hàn.
+  - type: explain
+    text:
+      vi: V/A-(으)ㄹ 텐데 là "chắc là…" làm nền cho vế sau - thường là lời khuyên hoặc lo lắng - 비가 올 텐데 우산을 가져가세요. Trước 텐데 luôn là dạng -(으)ㄹ (올, 바쁠, 피곤할), không phải -는 hay -(으)ㄴ.
+  - type: explain
+    text:
+      vi: "-나 보다 / -(으)ㄴ가 보다 là \"hình như…\" khi bạn đoán dựa trên điều vừa thấy, nghe. Theo chuẩn sách giáo khoa: động từ và 있다/없다 + -나 봐요 (보나 봐요, 재미있나 봐요); tính từ + -(으)ㄴ가 봐요 (바쁜가 봐요, 많은가 봐요); quá khứ + -았/었나 봐요."
+  - type: explain
+    text:
+      vi: V-(으)ㄹ걸 그랬다 là "lẽ ra nên…" khi tiếc vì đã không làm - 미리 예매할걸 그랬어요. Tiếc vì đã lỡ làm thì dùng -지 말걸 그랬다 (쓰지 말걸 그랬어요).
+  - type: deep_explain
+    text:
+      vi: Ở Hàn, 댓글 (bình luận) ảnh hưởng rất mạnh đến người nổi tiếng, và 악플 (bình luận ác ý) là vấn đề xã hội được bàn nhiều; một số cổng thông tin đã tắt bình luận ở mục giải trí. Trên YouTube, người ta hay nói 구독 (đăng ký kênh), 좋아요 (thích) và 조회수 (lượt xem). Khi đọc diễn đàn, bạn sẽ gặp cả 해요체 lẫn 반말 - nhưng khi tự viết cho người lạ, hãy dùng 해요체.
+  - type: example
+    target: "[게시글] 외국인이 한국 드라마로 한국어를 공부하는 것, 어떻게 생각하세요?\n└ 하노이 린: 저는 찬성해요. 드라마를 보면 실제 대화를 들을 수 있어요.\n└ 서울 직장인: 좋은 방법이지만 드라마에는 반말이 많아요. 처음 만난 사람에게 반말을 하면 실례가 될 텐데 조심할 필요가 있다고 생각해요.\n└ 민트초코: 댓글이 많네요. 다들 드라마를 많이 보시나 봐요. 저도 학생 때 자막 없이 볼걸 그랬어요."
+    target_lang: ko
+    translation:
+      vi: "[Bài đăng] Người nước ngoài học tiếng Hàn qua phim Hàn, bạn nghĩ sao?\n└ Hà Nội Linh: Tôi tán thành. Xem phim thì nghe được hội thoại thực tế.\n└ Nhân viên văn phòng Seoul: Cách hay, nhưng trong phim có nhiều câu nói trống không. Nói trống không với người mới gặp chắc sẽ thành bất lịch sự, nên tôi nghĩ cần phải cẩn thận.\n└ Mintchoco: Nhiều bình luận ghê. Hình như ai cũng xem phim nhiều. Hồi còn đi học, lẽ ra tôi cũng nên xem không phụ đề."
+    note:
+      vi: Chú ý 될 텐데 (chắc sẽ thành), 보시나 봐요 (hình như xem - có -시- kính trọng), 볼걸 그랬어요 (lẽ ra nên xem).
+  - type: example
+    target: 주말이라서 사람이 많을 텐데 일찍 출발하세요.
+    target_lang: ko
+    translation:
+      vi: Cuối tuần chắc đông người lắm, bạn xuất phát sớm nhé.
+    note:
+      vi: 많다 → 많을 텐데; vế sau là lời khuyên.
+  - type: example
+    target: 조회수가 백만이 넘었네요. 이 유튜버가 정말 인기가 많은가 봐요.
+    target_lang: ko
+    translation:
+      vi: Lượt xem vượt một triệu rồi kìa. Hình như YouTuber này nổi thật.
+    note:
+      vi: 많다 là tính từ → 많은가 봐요; dấu hiệu là lượt xem cao.
+  - type: example
+    target: 악플을 보고 너무 속상했어요. 댓글을 읽지 말걸 그랬어요.
+    target_lang: ko
+    translation:
+      vi: Đọc bình luận ác ý xong tôi buồn quá. Lẽ ra tôi không nên đọc bình luận.
+    note:
+      vi: Tiếc vì đã làm → -지 말걸 그랬어요.
+  - type: common_mistake
+    wrong: 민수 씨가 요즘 바쁘나 봐요.
+    right: 민수 씨가 요즘 바쁜가 봐요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt chỉ có một chữ "hình như" nên người học dùng -나 봐요 cho mọi từ. Theo chuẩn, tính từ như 바쁘다 dùng -(으)ㄴ가 봐요; -나 봐요 dành cho động từ và 있다/없다.
+  - type: common_mistake
+    wrong: 미리 예매했을걸 그랬어요.
+    right: 미리 예매할걸 그랬어요.
+    target_lang: ko
+    note:
+      vi: Việc đã qua nhưng động từ trước -(으)ㄹ걸 vẫn giữ dạng gốc (예매할걸); chỉ 그랬어요 mang quá khứ.
+  - type: common_mistake
+    wrong: 비가 오는 텐데 우산을 가져가세요.
+    right: 비가 올 텐데 우산을 가져가세요.
+    target_lang: ko
+    note:
+      vi: 텐데 đi với dạng -(으)ㄹ, vì đây là phỏng đoán. 오는 텐데, 온 텐데 đều sai.
+  - type: summary
+    points:
+      - vi: V/A-(으)ㄹ 텐데 + lời khuyên/lo lắng - chắc là… nên…
+      - vi: V + -나 봐요 · A + -(으)ㄴ가 봐요 · quá khứ -았/었나 봐요 - hình như…
+      - vi: V-(으)ㄹ걸 그랬어요 - lẽ ra nên…; V-지 말걸 그랬어요 - lẽ ra không nên…
+      - vi: 드라마 · 유튜브 · 댓글/악플 · 광고 · 구독하다 · 인기가 많다 · 조회수.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:media-guessing-mcq-eunga-adjective
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-na-boda
+    prompt:
+      stem: "Chọn dạng đúng: 민수 씨가 요즘 많이 ___ 봐요. 전화를 안 받아요."
+      stem_lang: vi
+      options:
+        - { id: w2k, text: 바쁜가, lang: ko }
+        - { id: h6d, text: 바쁘나, lang: ko }
+        - { id: z3q, text: 바쁜, lang: ko }
+        - { id: n8s, text: 바빠서, lang: ko }
+    answer:
+      correct_option_id: w2k
+    explanation:
+      vi: 바쁘다 là tính từ nên dùng -(으)ㄴ가 봐요 → 바쁜가 봐요 (theo chuẩn sách giáo khoa, -나 봐요 dành cho động từ). Trước 봐요 phải có -나/-(으)ㄴ가, nên 바쁜 và 바빠서 sai.
+    display_answer: 바쁜가
+
+  - key: ko:exercise:media-guessing-mcq-na-verb
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-na-boda
+    prompt:
+      stem: "Chọn dạng đúng: 댓글이 정말 많네요. 사람들이 이 영상을 많이 ___ 봐요."
+      stem_lang: vi
+      options:
+        - { id: c5r, text: 보나, lang: ko }
+        - { id: j1y, text: 본가, lang: ko }
+        - { id: t7m, text: 볼까, lang: ko }
+        - { id: e9v, text: 봐서, lang: ko }
+    answer:
+      correct_option_id: c5r
+    explanation:
+      vi: 보다 là động từ nên dùng -나 봐요 → 보나 봐요 (hình như xem nhiều). -(으)ㄴ가 dành cho tính từ; 볼까 là "có nên… không", không đi với 봐요 để đoán.
+    display_answer: 보나
+
+  - key: ko:exercise:media-guessing-listen-tende
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-eul-tende
+    prompt:
+      audio_asset_id: null
+      fallback_text: 주말이라서 사람이 많을 텐데 일찍 출발하세요.
+      options:
+        - { id: o4b, text: "Cuối tuần chắc đông người, bạn hãy xuất phát sớm.", lang: vi }
+        - { id: g8u, text: Cuối tuần ít người nên bạn có thể đi muộn., lang: vi }
+        - { id: p2f, text: Cuối tuần đã đông người nên tôi xuất phát sớm., lang: vi }
+        - { id: k6n, text: Cuối tuần chắc đông người nên tôi không đi., lang: vi }
+    answer:
+      correct_option_id: o4b
+    explanation:
+      vi: 많을 텐데 là "chắc là đông", vế sau 일찍 출발하세요 là lời khuyên "hãy xuất phát sớm". Câu không kể việc đã xảy ra và cũng không nói "tôi không đi".
+    display_answer: Cuối tuần chắc đông người, bạn hãy xuất phát sớm.
+
+  - key: ko:exercise:media-guessing-fill-regret-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eulgeol-geuraetda
+    prompt:
+      template: "표가 다 팔렸어요. 미리 {{b1}} 그랬어요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Vé bán hết rồi. Lẽ ra tôi nên đặt trước."
+        - "Gợi ý: 예매하다 + -(으)ㄹ걸."
+    answer:
+      blanks:
+        b1: [예매할걸]
+    known_wrong:
+      - answer: 예매했을걸
+        feedback_vi: Động từ trước -(으)ㄹ걸 giữ dạng gốc - 예매할걸; chỉ 그랬어요 ở quá khứ.
+        error_tag: regret_tense
+      - answer: 예매할게
+        feedback_vi: -(으)ㄹ게 là lời hứa "tôi sẽ…". Tiếc nuối dùng -(으)ㄹ걸 그랬어요.
+        error_tag: geol_ge
+    explanation:
+      vi: Lẽ ra nên làm = V-(으)ㄹ걸 그랬어요. 예매하다 không có patchim → 예매할걸.
+    display_answer: 표가 다 팔렸어요. 미리 예매할걸 그랬어요.
+
+  - key: ko:exercise:media-guessing-wb-subscribe
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gudokhada
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi đã đăng ký theo dõi kênh YouTube đó.\""
+      tokens:
+        - { id: s4, text: 채널을 }
+        - { id: s6, text: 채널에 }
+        - { id: s2, text: 그 }
+        - { id: s5, text: 구독했어요 }
+        - { id: s1, text: 저는 }
+        - { id: s3, text: 유튜브 }
+    answer:
+      orders:
+        - [s1, s2, s3, s4, s5]
+        - [s2, s3, s4, s1, s5]
+    explanation:
+      vi: 구독하다 đi với 을/를 - 채널을 구독했어요, không dùng 채널에. Động từ 구독했어요 đứng cuối câu.
+    display_answer: 저는 그 유튜브 채널을 구독했어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:media-guessing-translate-tired-rest
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eul-tende
+    prompt:
+      source_text: Chắc bạn mệt rồi, nghỉ một chút đi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 피곤할 텐데 좀 쉬세요.
+        - 피곤할 텐데 조금 쉬세요.
+        - 피곤할 텐데 잠깐 쉬세요.
+        - 피곤할 텐데 쉬세요.
+        - 피곤할 텐데 좀 쉬어요.
+        - 피곤하실 텐데 좀 쉬세요.
+        - 피곤하실 텐데 조금 쉬세요.
+        - 피곤하실 텐데 잠깐 쉬세요.
+        - 피곤하실 텐데 쉬세요.
+    known_wrong:
+      - answer: 피곤한 텐데 좀 쉬세요.
+        feedback_vi: 텐데 đi với dạng -(으)ㄹ - 피곤할 텐데.
+        error_tag: tende_form
+      - answer: 피곤해서 좀 쉬세요.
+        feedback_vi: -아서/-어서 không đi với câu khuyên, mệnh lệnh; dùng 피곤할 텐데 để phỏng đoán rồi khuyên.
+        error_tag: aseo_imperative
+      - answer: 피곤했을 텐데 좀 쉬세요.
+        feedback_vi: Câu nói về tình trạng hiện tại nên dùng 피곤할 텐데; -았/었을 텐데 là đoán về quá khứ.
+        error_tag: tende_tense
+    explanation:
+      vi: Đoán "chắc bạn mệt" = 피곤할 텐데, vế sau là lời khuyên 좀 쉬세요. Có thể thêm -시- (피곤하실 텐데) để lịch sự hơn.
+    display_answer: 피곤할 텐데 좀 쉬세요.
+
+  - key: ko:exercise:media-guessing-fill-regret-guess
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-na-boda
+    prompt:
+      template: "(Lẽ ra tôi không nên viết bình luận đó.) 그 댓글을 쓰지 {{b1}} 그랬어요. (Hình như dạo này Minsu bận.) 민수 씨가 요즘 {{b2}} 봐요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [말걸, 않을걸]
+        b2: [바쁜가]
+    known_wrong:
+      - answer: 말았을걸
+        feedback_vi: Giữ dạng gốc trước -(으)ㄹ걸 - 말걸 그랬어요.
+        error_tag: regret_tense
+      - answer: 바쁘나
+        feedback_vi: Theo chuẩn, tính từ dùng -(으)ㄴ가 봐요 - 바쁜가 봐요.
+        error_tag: na_eunga_boda
+      - answer: 바쁠까
+        feedback_vi: -(으)ㄹ까 là câu hỏi "liệu có…?". Đoán dựa trên dấu hiệu dùng 바쁜가 봐요.
+        error_tag: na_eunga_boda
+    explanation:
+      vi: Tiếc vì đã làm = V-지 말걸 그랬어요. 바쁘다 là tính từ → 바쁜가 봐요.
+    display_answer: 그 댓글을 쓰지 말걸 그랬어요. 민수 씨가 요즘 바쁜가 봐요.
+
+  - key: ko:exercise:media-guessing-translate-book-ticket
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eulgeol-geuraetda
+    prompt:
+      source_text: Lẽ ra tôi nên đặt vé trước.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 미리 예매할걸 그랬어요.
+        - 표를 미리 예매할걸 그랬어요.
+        - 미리 표를 예매할걸 그랬어요.
+        - 미리 예약할걸 그랬어요.
+        - 표를 미리 예약할걸 그랬어요.
+        - 미리 표를 예약할걸 그랬어요.
+        - 표를 미리 살걸 그랬어요.
+        - 미리 표를 살걸 그랬어요.
+        - 표를 미리 사 둘걸 그랬어요.
+    known_wrong:
+      - answer: 표를 미리 예매했을걸 그랬어요.
+        feedback_vi: Động từ trước -(으)ㄹ걸 giữ dạng gốc - 예매할걸.
+        error_tag: regret_tense
+      - answer: 표를 미리 예매할걸 그래요.
+        feedback_vi: Tiếc chuyện đã qua nên vế cuối là 그랬어요.
+        error_tag: regret_tense
+      - answer: 표를 미리 예매해야 해요.
+        feedback_vi: -아야 해요 là "phải làm" (bây giờ, sắp tới), không diễn tả tiếc nuối.
+        error_tag: regret_meaning
+    explanation:
+      vi: '"Lẽ ra nên…" = V-(으)ㄹ걸 그랬어요. Đặt vé là 예매하다 (hoặc 예약하다); "trước" là 미리.'
+    display_answer: 표를 미리 예매할걸 그랬어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:media-guessing-mcq-guess-friend
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:daetgeul
+    prompt:
+      stem: Bạn thấy bạn mình vừa đọc bình luận trên điện thoại vừa cười suốt. Bạn đoán "Hình như bình luận thú vị lắm". Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: r5t, text: 댓글이 재미있나 봐요., lang: ko }
+        - { id: d1n, text: 댓글이 재미있은가 봐요., lang: ko }
+        - { id: m4c, text: 댓글이 재미있는 봐요., lang: ko }
+        - { id: y7p, text: 댓글이 재미있을걸 그랬어요., lang: ko }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: 재미있다 có đuôi 있다 nên dùng -나 봐요 như động từ → 재미있나 봐요. 재미있은가 sai dạng, 재미있는 봐요 thiếu -가, còn -(으)ㄹ걸 그랬어요 là tiếc nuối.
+    display_answer: 댓글이 재미있나 봐요.
+
+  - key: ko:exercise:media-guessing-mcq-reading-forum
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:akpeul
+    prompt:
+      stem: "다음 글의 내용과 같은 것을 고르십시오.\n[게시글] 외국인이 한국 드라마로 한국어를 공부하는 것, 어떻게 생각하세요?\n└ 하노이 린: 저는 찬성해요. 드라마를 보면 실제 대화를 들을 수 있어요.\n└ 서울 직장인: 좋은 방법이지만 드라마에는 반말이 많아요. 처음 만난 사람에게 반말을 하면 실례가 될 텐데 조심할 필요가 있다고 생각해요.\n└ 민트초코: 댓글이 많네요. 다들 드라마를 많이 보시나 봐요. 저도 학생 때 자막 없이 볼걸 그랬어요."
+      stem_lang: ko
+      options:
+        - { id: b9x, text: "'서울 직장인'은 드라마의 반말을 조심할 필요가 있다고 생각한다.", lang: ko }
+        - { id: l3w, text: "'하노이 린'은 드라마로 공부하는 것에 반대한다.", lang: ko }
+        - { id: f6e, text: "'민트초코'는 학생 때 자막 없이 드라마를 봤다.", lang: ko }
+        - { id: u2a, text: "'서울 직장인'은 드라마로 공부하는 것이 나쁜 방법이라고 생각한다.", lang: ko }
+    answer:
+      correct_option_id: b9x
+    explanation:
+      vi: '"Seoul" nói 조심할 필요가 있다고 생각해요 về 반말 trong phim, dù vẫn khen là cách hay. "Linh" tán thành (찬성해요); 볼걸 그랬어요 nghĩa là Mintchoco đã KHÔNG xem không phụ đề.'
+    display_answer: "'서울 직장인'은 드라마의 반말을 조심할 필요가 있다고 생각한다."
+
+  - key: ko:exercise:media-guessing-translate-popular-youtuber
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ingi
+    prompt:
+      source_text: 이 유튜버는 인기가 많은가 봐요. 조회수가 정말 높아요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hình như YouTuber này rất nổi tiếng. Lượt xem cao thật.
+        - Hình như YouTuber này rất nổi tiếng. Lượt xem thật sự cao.
+        - Hình như YouTuber này nổi tiếng lắm. Lượt xem cao thật.
+        - Hình như YouTuber này nổi tiếng lắm. Lượt xem thật sự cao.
+        - Hình như YouTuber này rất được yêu thích. Lượt xem cao thật.
+        - Hình như YouTuber này rất được yêu thích. Lượt xem thật sự cao.
+        - Hình như YouTuber này được yêu thích lắm. Lượt xem cao thật.
+        - Hình như YouTuber này được yêu thích lắm. Lượt xem thật sự cao.
+        - Có vẻ YouTuber này rất nổi tiếng. Lượt xem cao thật.
+        - Có vẻ YouTuber này rất nổi tiếng. Lượt xem thật sự cao.
+        - Có vẻ YouTuber này nổi tiếng lắm. Lượt xem cao thật.
+        - Có vẻ YouTuber này rất được yêu thích. Lượt xem cao thật.
+        - Có vẻ YouTuber này rất được yêu thích. Lượt xem thật sự cao.
+        - Hình như YouTuber này nổi lắm. Lượt xem cao thật.
+        - Hình như YouTuber này rất nổi tiếng. Lượt xem rất cao.
+        - Hình như YouTuber này rất được yêu thích. Lượt xem rất cao.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: YouTuber này rất nổi tiếng. Lượt xem cao thật.
+        feedback_vi: -(으)ㄴ가 봐요 là phỏng đoán - cần "hình như / có vẻ".
+        error_tag: guess_missing
+      - answer: Hình như YouTuber này không nổi tiếng. Lượt xem thấp quá.
+        feedback_vi: 인기가 많다 là "được yêu thích", 높다 là "cao".
+        error_tag: vocab_meaning
+    explanation:
+      vi: 인기가 많은가 봐요 = hình như được yêu thích/nổi tiếng (đoán dựa trên lượt xem). 조회수 = lượt xem, 정말 높아요 = cao thật.
+    display_answer: Hình như YouTuber này rất nổi tiếng. Lượt xem cao thật.
+
+  - key: ko:exercise:media-guessing-translate-umbrella
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-eul-tende
+    prompt:
+      source_text: Chắc mai trời mưa đấy, bạn mang ô theo nhé.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 내일 비가 올 텐데 우산을 가져가세요.
+        - 내일 비가 올 텐데 우산 가져가세요.
+        - 내일 비가 올 텐데 우산을 챙기세요.
+        - 내일 비가 올 텐데 우산 챙기세요.
+        - 내일 비가 올 텐데 우산을 가지고 가세요.
+        - 내일 비가 올 텐데 우산 가지고 가세요.
+        - 내일 비가 올 텐데 우산을 가져가요.
+        - 내일 비가 올 텐데 우산을 챙겨 가세요.
+        - 내일은 비가 올 텐데 우산을 가져가세요.
+    known_wrong:
+      - answer: 내일 비가 오는 텐데 우산을 가져가세요.
+        feedback_vi: 텐데 đi với dạng -(으)ㄹ - 올 텐데.
+        error_tag: tende_form
+      - answer: 내일 비가 와서 우산을 가져가세요.
+        feedback_vi: -아서/-어서 không đi với câu khuyên, mệnh lệnh; dùng 올 텐데.
+        error_tag: aseo_imperative
+      - answer: 내일 비가 올 텐데 우산을 가져갔어요.
+        feedback_vi: Vế sau là lời khuyên "mang theo nhé" - 가져가세요, không phải quá khứ.
+        error_tag: tende_meaning
+    explanation:
+      vi: '"Chắc mai mưa" = 내일 비가 올 텐데; lời khuyên = 우산을 가져가세요 (hoặc 챙기세요).'
+    display_answer: 내일 비가 올 텐데 우산을 가져가세요.

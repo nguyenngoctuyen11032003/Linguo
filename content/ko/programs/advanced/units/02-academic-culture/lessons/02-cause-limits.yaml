@@ -1,0 +1,417 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:academic-cause-limits
+order_index: 2
+level: topik6
+title:
+  vi: Nguyên nhân, giới hạn và mức độ - bài giảng về đạo đức AI
+objectives:
+  - vi: Nêu nguyên nhân trong văn viết bằng N(으)로 인해 và đánh giá mức độ bằng N에 불과하다, -(으)ㄴ/는 셈이다.
+  - vi: Nhấn mạnh tính tất yếu với -지 않을 수 없다, cộng ý với -(으)ㄴ/는 데다가, nêu điều kiện với -는 한.
+  - vi: Hiểu một đoạn bài giảng về trí tuệ nhân tạo, đạo đức và quy định hạn chế.
+estimated_minutes: 20
+skills: [grammar, listening, reading, writing]
+prerequisites: [ko:lesson:academic-essay-structure]
+items:
+  - item: ko:item:ac-gram-euro-inhae
+  - item: ko:item:ac-gram-e-bulgwahada
+  - item: ko:item:ac-gram-n-neun-sem-ida
+  - item: ko:item:ac-gram-ji-aneul-su-eopda
+  - item: ko:item:ac-gram-n-neun-dedaga
+  - item: ko:item:ac-gram-neun-han
+  - item: ko:item:ac-ingongjineung
+  - item: ko:item:ac-yulli
+  - item: ko:item:ac-gyuje
+  - item: ko:item:ac-bujagyong
+  - item: ko:item:ac-jujanghada
+    role: reuse
+  - item: ko:item:ac-geungeo
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu và viết được những câu lập luận chặt chẽ kiểu bài giảng đại học - nêu nguyên nhân, đánh giá con số, khẳng định điều tất yếu. Câu ví dụ dùng văn viết -ㄴ다 và văn giảng -습니다.
+  - type: explain
+    text:
+      vi: N(으)로 인해 là "do N" của văn viết, chỉ đứng sau danh từ - 폭우로 인해. N에 불과하다 là "chỉ là, vỏn vẹn" để hạ thấp mức độ; -(으)ㄴ/는 셈이다 là "coi như là", kết luận gần đúng.
+  - type: explain
+    text:
+      vi: -지 않을 수 없다 là phủ định kép "không thể không", nhấn mạnh hoàn cảnh ép buộc. -(으)ㄴ/는 데다가 là "đã... lại còn", hai vế phải cùng chiều (cùng tốt hoặc cùng xấu), vế sau thường có 도.
+  - type: explain
+    text:
+      vi: -는 한 là "chừng nào còn, miễn là", vế sau thường là kết quả chắc chắn. Với động từ và cả 있다/없다 đều dùng -는 한 - 노력하는 한, 없는 한.
+  - type: deep_explain
+    text:
+      vi: Nhiều từ Hán Hàn về công nghệ, xã hội nghe giống Hán Việt nhưng lệch nghĩa - 규제 (quy chế) thật ra là "sự hạn chế bằng luật", còn "quy chế" của trường là 규정. 인공지능 (nhân công trí năng) dịch là "trí tuệ nhân tạo", 윤리 (luân lý) dịch là "đạo đức". Khi dịch, hãy chọn từ tiếng Việt hiện đại thay vì giữ âm Hán Việt.
+  - type: example
+    target: 인공지능은 판단 속도가 빠른 데다가 피로를 느끼지 않습니다. 그러나 잘못된 데이터로 인해 차별적인 결과를 낼 수도 있습니다.
+    target_lang: ko
+    translation:
+      vi: Trí tuệ nhân tạo đã phán đoán nhanh lại không biết mệt mỏi. Tuy nhiên, do dữ liệu sai lệch, nó cũng có thể đưa ra kết quả phân biệt đối xử.
+    note:
+      vi: Trích đoạn bài giảng - 빠른 데다가 cộng hai ưu điểm cùng chiều, 데이터로 인해 nêu nguyên nhân của mặt trái.
+  - type: example
+    target: 실제로 검증된 사례는 전체의 5%에 불과하다.
+    target_lang: ko
+    translation:
+      vi: Số trường hợp đã được kiểm chứng thực tế chỉ chiếm vỏn vẹn 5% tổng số.
+    note:
+      vi: 에 불과하다 đã chứa nghĩa "chỉ", nên không cần thêm 만.
+  - type: example
+    target: 한 달에 이틀만 쉬었으니 거의 매일 일한 셈이다.
+    target_lang: ko
+    translation:
+      vi: Một tháng chỉ nghỉ hai ngày, coi như gần như ngày nào cũng làm việc.
+    note:
+      vi: Việc đã xảy ra nên dùng 일한 셈이다 (định ngữ quá khứ).
+  - type: example
+    target: 이런 부작용을 보면 규제의 필요성을 인정하지 않을 수 없다.
+    target_lang: ko
+    translation:
+      vi: Nhìn những hệ quả tiêu cực này, không thể không thừa nhận sự cần thiết của việc kiểm soát.
+    note:
+      vi: Phủ định kép nhấn mạnh rằng người viết bị thuyết phục bởi căn cứ.
+  - type: example
+    target: 인간이 최종 책임을 지지 않는 한 인공지능 윤리 문제는 해결되기 어렵다.
+    target_lang: ko
+    translation:
+      vi: Chừng nào con người chưa chịu trách nhiệm cuối cùng thì vấn đề đạo đức AI khó được giải quyết.
+    note:
+      vi: 지지 않는 한 = "chừng nào không chịu"; vế sau nêu hệ quả tất yếu.
+  - type: common_mistake
+    wrong: 비가 많이 오기로 인해 항공편이 결항되었다.
+    right: 폭우로 인해 항공편이 결항되었다.
+    target_lang: ko
+    note:
+      vi: (으)로 인해 chỉ gắn với danh từ. Muốn dùng động từ thì đổi thành danh từ (폭우) hoặc dùng -아서/어서 (비가 많이 와서).
+  - type: common_mistake
+    wrong: 찬성한 사람은 10%만에 불과했다.
+    right: 찬성한 사람은 10%에 불과했다.
+    target_lang: ko
+    note:
+      vi: Người Việt dịch "chỉ" nên hay thêm 만, nhưng 불과하다 đã có nghĩa "chỉ là". Thêm 만 là thừa và sai.
+  - type: common_mistake
+    wrong: 이 제품은 가격이 싼 데다가 품질이 나쁘다.
+    right: 이 제품은 가격이 비싼 데다가 품질도 나쁘다.
+    target_lang: ko
+    note:
+      vi: -는 데다가 cộng hai ý cùng chiều. "Rẻ" là điểm tốt, "chất lượng kém" là điểm xấu - hai ý ngược chiều thì dùng -지만.
+  - type: summary
+    points:
+      - vi: N(으)로 인해 - do N (văn viết, chỉ sau danh từ).
+      - vi: N에 불과하다 - chỉ là (không thêm 만) · -(으)ㄴ/는 셈이다 - coi như là.
+      - vi: -지 않을 수 없다 - không thể không · -(으)ㄴ/는 데다가 - đã... lại còn (cùng chiều).
+      - vi: -는 한 - chừng nào còn (없는 한, 노력하는 한).
+      - vi: 인공지능 trí tuệ nhân tạo · 윤리 đạo đức · 규제 sự hạn chế bằng luật · 부작용 tác dụng phụ, mặt trái.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:ac-cause-mcq-euro-inhae
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ac-gram-euro-inhae
+    prompt:
+      stem: "Chọn đáp án đúng: \"폭우___ 항공편이 결항되었다.\" (Do mưa lớn, các chuyến bay bị huỷ.)"
+      stem_lang: vi
+      options:
+        - { id: f4k, text: 로 인해, lang: ko }
+        - { id: z8p, text: 에 불과해, lang: ko }
+        - { id: l2c, text: 인 한, lang: ko }
+        - { id: o6y, text: 인 셈이라, lang: ko }
+    answer:
+      correct_option_id: f4k
+    explanation:
+      vi: Câu cần nêu nguyên nhân - danh từ + (으)로 인해. 폭우 không có patchim nên dùng 로 인해. Các phương án khác mang nghĩa "chỉ là", "chừng nào", "coi như".
+    display_answer: 로 인해
+
+  - key: ko:exercise:ac-cause-mcq-bulgwa-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ac-gram-e-bulgwahada
+    prompt:
+      stem: "찬성한 사람은 전체의 10%에 불과했다. - Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: i3n, text: Người tán thành chỉ chiếm vỏn vẹn 10% tổng số., lang: vi }
+        - { id: x7w, text: Người tán thành chiếm ít nhất 10% tổng số., lang: vi }
+        - { id: c5j, text: Người tán thành chiếm hơn 10% tổng số., lang: vi }
+        - { id: q1g, text: Người không tán thành chiếm 10% tổng số., lang: vi }
+    answer:
+      correct_option_id: i3n
+    explanation:
+      vi: 에 불과하다 nhấn mạnh con số nhỏ - "chỉ, vỏn vẹn". Không mang nghĩa "ít nhất" hay "hơn", và chủ ngữ là người tán thành (찬성한 사람).
+    display_answer: Người tán thành chỉ chiếm vỏn vẹn 10% tổng số.
+
+  - key: ko:exercise:ac-cause-listen-lecture
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ac-gram-n-neun-dedaga
+    prompt:
+      audio_asset_id: null
+      fallback_text: 인공지능은 판단 속도가 빠른 데다가 피로를 느끼지 않습니다.
+      options:
+        - { id: v6a, text: Trí tuệ nhân tạo đã phán đoán nhanh lại không biết mệt mỏi., lang: vi }
+        - { id: d2u, text: Trí tuệ nhân tạo phán đoán nhanh nhưng dễ mệt mỏi., lang: vi }
+        - { id: m9e, text: Trí tuệ nhân tạo phán đoán chậm và không biết mệt mỏi., lang: vi }
+        - { id: s4o, text: Trí tuệ nhân tạo chỉ phán đoán nhanh khi không mệt., lang: vi }
+    answer:
+      correct_option_id: v6a
+    explanation:
+      vi: 빠른 데다가 = "đã nhanh lại còn", 피로를 느끼지 않다 = "không biết mệt". -는 데다가 cộng hai ý cùng chiều, không phải đối lập hay điều kiện.
+    display_answer: Trí tuệ nhân tạo đã phán đoán nhanh lại không biết mệt mỏi.
+
+  - key: ko:exercise:ac-cause-fill-sem
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-gram-n-neun-sem-ida
+    prompt:
+      template: "열 명 중 아홉 명이 찬성했으니 거의 모두 찬성{{b1}} 셈이다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Việc tán thành đã xảy ra rồi.
+        - Định ngữ quá khứ của 하다 là 한.
+    answer:
+      blanks:
+        b1: [한]
+    known_wrong:
+      - answer: 하는
+        feedback_vi: Việc đã xảy ra (찬성했으니), nên dùng định ngữ quá khứ - 찬성한 셈이다.
+        error_tag: tense_modifier
+      - answer: 할
+        feedback_vi: -(으)ㄹ là tương lai. Ở đây kết luận về việc đã xảy ra - 찬성한.
+        error_tag: tense_modifier
+    explanation:
+      vi: -(으)ㄴ 셈이다 dùng cho việc đã xảy ra, -는 셈이다 cho hiện tại. Chín trên mười người đã tán thành nên "coi như" tất cả - 찬성한 셈이다.
+    display_answer: 열 명 중 아홉 명이 찬성했으니 거의 모두 찬성한 셈이다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:ac-cause-fill-ji-aneul-su
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gram-ji-aneul-su-eopda
+    prompt:
+      template: "Nhìn kết quả này, không thể không thừa nhận sự cần thiết của việc kiểm soát. - 이 결과를 보면 규제의 필요성을 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [인정하지 않을 수 없다, 인정하지 않을 수 없습니다]
+    known_wrong:
+      - answer: 인정할 수 없다
+        feedback_vi: 인정할 수 없다 là "không thể thừa nhận" - nghĩa ngược lại. Cần phủ định kép - 인정하지 않을 수 없다.
+        error_tag: double_negation
+      - answer: 인정하지 않을 수 있다
+        feedback_vi: Vế cuối phải là 없다 - "không thể không". 있다 thành "có thể không thừa nhận".
+        error_tag: double_negation
+      - answer: 인정하지 않을 수 없어
+        feedback_vi: Đuôi 반말 -어 không hợp văn bản trang trọng. Dùng 없다 hoặc 없습니다.
+        error_tag: register_ending
+    explanation:
+      vi: V-지 않을 수 없다 = "không thể không V", nhấn mạnh sự tất yếu. Văn viết kết thúc bằng 없다; khi phát biểu dùng 없습니다.
+    display_answer: 이 결과를 보면 규제의 필요성을 인정하지 않을 수 없다.
+
+  - key: ko:exercise:ac-cause-fill-dedaga
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gram-n-neun-dedaga
+    prompt:
+      template: "Khu vực này giao thông đã bất tiện, giá nhà lại còn đắt. - 이 지역은 교통이 {{b1}} 집값도 비싸다."
+      blanks:
+        - { id: b1, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [불편한 데다가, 불편한 데다]
+    known_wrong:
+      - answer: 불편하는 데다가
+        feedback_vi: 불편하다 là tính từ, định ngữ hiện tại là -(으)ㄴ - 불편한 데다가.
+        error_tag: adjective_modifier
+      - answer: 불편하지만
+        feedback_vi: -지만 là đối lập, nhưng hai ý ở đây cùng xấu. Dùng 불편한 데다가.
+        error_tag: connective_meaning
+      - answer: 불편해서
+        feedback_vi: -아서/어서 nêu nguyên nhân, không phải "đã... lại còn". Dùng 불편한 데다가.
+        error_tag: connective_meaning
+    explanation:
+      vi: Tính từ + -(으)ㄴ 데다가, động từ + -는 데다가. Hai ý cùng chiều (bất tiện, đắt), và vế sau có 도 - 집값도.
+    display_answer: 이 지역은 교통이 불편한 데다가 집값도 비싸다.
+
+  - key: ko:exercise:ac-cause-translate-bulgwa
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-gram-e-bulgwahada
+    prompt:
+      source_text: Đó chỉ là ý kiến cá nhân.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 그것은 개인의 의견에 불과하다.
+        - 그것은 개인 의견에 불과하다.
+        - 그건 개인의 의견에 불과하다.
+        - 그건 개인 의견에 불과하다.
+        - 개인의 의견에 불과하다.
+        - 그것은 개인적인 의견에 불과하다.
+        - 그것은 개인의 의견에 불과합니다.
+        - 그건 개인 의견에 불과해요.
+    known_wrong:
+      - answer: 그것은 개인의 의견만에 불과하다.
+        feedback_vi: 불과하다 đã có nghĩa "chỉ là", không thêm 만.
+        error_tag: redundant_man
+      - answer: 그것은 개인의 의견이 불과하다.
+        feedback_vi: Cấu trúc là N에 불과하다 - dùng trợ từ 에, không phải 이.
+        error_tag: particle_choice
+      - answer: geugeoseun gaeinui uigyeone bulgwahada
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: "\"Chỉ là\" + danh từ = N에 불과하다. Chủ ngữ 그것은/그건 có thể bỏ khi đã rõ; đuôi -다 hợp văn viết."
+    display_answer: 그것은 개인의 의견에 불과하다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:ac-cause-mcq-neun-han
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gram-neun-han
+    prompt:
+      stem: "Bạn muốn viết: \"Chừng nào chưa có quy định hạn chế, vấn đề này sẽ còn tiếp diễn.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: a1r, text: 규제가 없는 한 이 문제는 계속될 것이다., lang: ko }
+        - { id: b5t, text: 규제가 없은 한 이 문제는 계속될 것이다., lang: ko }
+        - { id: e9w, text: 규제가 없을 한 이 문제는 계속될 것이다., lang: ko }
+        - { id: h3q, text: 규제가 없다는 한 이 문제는 계속될 것이다., lang: ko }
+    answer:
+      correct_option_id: a1r
+    explanation:
+      vi: -는 한 luôn dùng định ngữ hiện tại -는, kể cả với 없다 - 없는 한. 없은, 없을, 없다는 đều sai hình thức.
+    display_answer: 규제가 없는 한 이 문제는 계속될 것이다.
+
+  - key: ko:exercise:ac-cause-mcq-gyuje-false-friend
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gyuje
+    prompt:
+      stem: "Bạn muốn nói \"quy chế thi của nhà trường\" (văn bản quy định). Từ nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: p7s, text: 학교의 시험 규정, lang: ko }
+        - { id: u2f, text: 학교의 시험 규제, lang: ko }
+        - { id: r8m, text: 학교의 시험 윤리, lang: ko }
+        - { id: w6c, text: 학교의 시험 부작용, lang: ko }
+    answer:
+      correct_option_id: p7s
+    explanation:
+      vi: Văn bản quy định là 규정. 규제 nghe giống "quy chế" nhưng nghĩa là hành động hạn chế, kiểm soát (규제를 강화하다). 윤리 là đạo đức, 부작용 là tác dụng phụ.
+    display_answer: 학교의 시험 규정
+
+  - key: ko:exercise:ac-cause-translate-lecture
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:ac-ingongjineung
+    prompt:
+      source_text: 잘못된 데이터로 인해 인공지능이 차별적인 결과를 낼 수 있다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Do dữ liệu sai, trí tuệ nhân tạo có thể đưa ra kết quả phân biệt đối xử.
+        - Do dữ liệu sai lệch, trí tuệ nhân tạo có thể đưa ra kết quả phân biệt đối xử.
+        - Do dữ liệu sai, trí tuệ nhân tạo có thể đưa ra kết quả mang tính phân biệt đối xử.
+        - Do dữ liệu sai lệch, trí tuệ nhân tạo có thể đưa ra kết quả mang tính phân biệt đối xử.
+        - Vì dữ liệu sai, trí tuệ nhân tạo có thể đưa ra kết quả phân biệt đối xử.
+        - Vì dữ liệu sai lệch, trí tuệ nhân tạo có thể đưa ra kết quả mang tính phân biệt đối xử.
+        - Do dữ liệu sai, AI có thể đưa ra kết quả phân biệt đối xử.
+        - Do dữ liệu sai lệch, AI có thể đưa ra kết quả mang tính phân biệt đối xử.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Do dữ liệu sai, nhân công có thể đưa ra kết quả phân biệt đối xử.
+        feedback_vi: 인공지능 là "trí tuệ nhân tạo", không dịch theo âm Hán Việt "nhân công".
+        error_tag: sino_false_friend
+      - answer: Dù dữ liệu sai, trí tuệ nhân tạo có thể đưa ra kết quả phân biệt đối xử.
+        feedback_vi: (으)로 인해 nêu nguyên nhân - "do, vì", không phải nhượng bộ "dù".
+        error_tag: connective_meaning
+    explanation:
+      vi: 데이터로 인해 = "do dữ liệu", 잘못된 = sai, sai lệch; 차별적인 결과 = kết quả (mang tính) phân biệt đối xử; -(으)ㄹ 수 있다 = có thể.
+    display_answer: Do dữ liệu sai lệch, trí tuệ nhân tạo có thể đưa ra kết quả mang tính phân biệt đối xử.
+
+  - key: ko:exercise:ac-cause-order-neun-han
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gram-neun-han
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chừng nào chưa có quy định hạn chế, vấn đề sẽ còn tiếp diễn.\""
+      tokens:
+        - { id: t-han, text: 한 }
+        - { id: t-gye, text: 계속될 }
+        - { id: t-eopeun, text: 없은 }
+        - { id: t-gyu, text: 규제가 }
+        - { id: t-geot, text: 것이다 }
+        - { id: t-mun, text: 문제는 }
+        - { id: t-eopneun, text: 없는 }
+    answer:
+      orders:
+        - [t-gyu, t-eopneun, t-han, t-mun, t-gye, t-geot]
+        - [t-mun, t-gyu, t-eopneun, t-han, t-gye, t-geot]
+    explanation:
+      vi: Mệnh đề điều kiện 규제가 없는 한 đứng trước, rồi đến kết quả 문제는 계속될 것이다. 없은 là token nhiễu - -는 한 luôn đi với 없는.
+    display_answer: 규제가 없는 한 문제는 계속될 것이다.
+
+  - key: ko:exercise:ac-cause-translate-inhae
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gram-euro-inhae
+    prompt:
+      source_text: Do trí tuệ nhân tạo, nhiều việc làm đã biến mất.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 인공지능으로 인해 많은 일자리가 사라졌다.
+        - 인공지능으로 인해서 많은 일자리가 사라졌다.
+        - 인공지능으로 인해 일자리가 많이 사라졌다.
+        - 인공지능으로 인해 많은 일자리가 없어졌다.
+        - 인공지능으로 인해 많은 일자리가 사라졌습니다.
+        - 인공지능으로 인해 많은 일자리가 사라졌어요.
+        - 인공지능 때문에 많은 일자리가 사라졌다.
+    known_wrong:
+      - answer: 인공지능에 인해 많은 일자리가 사라졌다.
+        feedback_vi: Cấu trúc là N(으)로 인해 - 인공지능으로 인해, không dùng 에.
+        error_tag: particle_choice
+      - answer: 인공지능으로 인한 많은 일자리가 사라졌다.
+        feedback_vi: 으로 인한 bổ nghĩa cho danh từ ("việc làm do AI tạo ra"), làm sai nghĩa. Dùng 으로 인해 trước động từ.
+        error_tag: modifier_form
+      - answer: 인공지능으로 인해 많은 일자리가 사라진다.
+        feedback_vi: Câu có "đã" nên dùng quá khứ - 사라졌다.
+        error_tag: tense
+    explanation:
+      vi: 인공지능 có patchim ㅇ nên dùng 으로 인해; "việc làm" là 일자리, "biến mất" là 사라지다/없어지다. 때문에 cũng đúng nghĩa nhưng mang sắc thái văn nói hơn.
+    display_answer: 인공지능으로 인해 많은 일자리가 사라졌다.

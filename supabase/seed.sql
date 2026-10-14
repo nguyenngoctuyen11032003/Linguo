@@ -56469,6 +56469,3797 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ko",
+      "content_hash": "226b1b2d2fc9e0799bc5b16cab82e02d1b1173b5cfd692af951666102ad6c1d1",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "0e6b8c3c-af1c-5ab2-a991-d219199f4254",
+      "is_demo": true,
+      "item_id": "d7094024-fdbe-5ca0-9463-02711cdb24d2",
+      "key": "ko:exercise:ac-cause-fill-dedaga",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "불편한 데다가",
+              "불편한 데다"
+            ]
+          }
+        },
+        "display_answer": "이 지역은 교통이 불편한 데다가 집값도 비싸다.",
+        "explanation": {
+          "vi": "Tính từ + -(으)ㄴ 데다가, động từ + -는 데다가. Hai ý cùng chiều (bất tiện, đắt), và vế sau có 도 - 집값도."
+        },
+        "known_wrong": [
+          {
+            "answer": "불편하는 데다가",
+            "error_tag": "adjective_modifier",
+            "feedback_vi": "불편하다 là tính từ, định ngữ hiện tại là -(으)ㄴ - 불편한 데다가."
+          },
+          {
+            "answer": "불편하지만",
+            "error_tag": "connective_meaning",
+            "feedback_vi": "-지만 là đối lập, nhưng hai ý ở đây cùng xấu. Dùng 불편한 데다가."
+          },
+          {
+            "answer": "불편해서",
+            "error_tag": "connective_meaning",
+            "feedback_vi": "-아서/어서 nêu nguyên nhân, không phải \"đã... lại còn\". Dùng 불편한 데다가."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 7
+          }
+        ],
+        "template": "Khu vực này giao thông đã bất tiện, giá nhà lại còn đắt. - 이 지역은 교통이 {{b1}} 집값도 비싸다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "083cbbc51b36525800cab509a82692a09efaf9ec9a662c8ff9088107aa2f694c",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "933efc0c-27da-55a4-bf64-ae3eae7c09c1",
+      "is_demo": true,
+      "item_id": "5043721e-8b89-5313-82b8-909172b8ba68",
+      "key": "ko:exercise:ac-cause-fill-ji-aneul-su",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "인정하지 않을 수 없다",
+              "인정하지 않을 수 없습니다"
+            ]
+          }
+        },
+        "display_answer": "이 결과를 보면 규제의 필요성을 인정하지 않을 수 없다.",
+        "explanation": {
+          "vi": "V-지 않을 수 없다 = \"không thể không V\", nhấn mạnh sự tất yếu. Văn viết kết thúc bằng 없다; khi phát biểu dùng 없습니다."
+        },
+        "known_wrong": [
+          {
+            "answer": "인정할 수 없다",
+            "error_tag": "double_negation",
+            "feedback_vi": "인정할 수 없다 là \"không thể thừa nhận\" - nghĩa ngược lại. Cần phủ định kép - 인정하지 않을 수 없다."
+          },
+          {
+            "answer": "인정하지 않을 수 있다",
+            "error_tag": "double_negation",
+            "feedback_vi": "Vế cuối phải là 없다 - \"không thể không\". 있다 thành \"có thể không thừa nhận\"."
+          },
+          {
+            "answer": "인정하지 않을 수 없어",
+            "error_tag": "register_ending",
+            "feedback_vi": "Đuôi 반말 -어 không hợp văn bản trang trọng. Dùng 없다 hoặc 없습니다."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 10
+          }
+        ],
+        "template": "Nhìn kết quả này, không thể không thừa nhận sự cần thiết của việc kiểm soát. - 이 결과를 보면 규제의 필요성을 {{b1}}."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "f90989b48406837422f0ac1c1d909cb552df4fd34f7de214484e2dc35521907d",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "0039642d-e062-57b0-b973-9547d25ff88b",
+      "is_demo": true,
+      "item_id": "375b4c8b-210b-58c1-abd9-29b625be8881",
+      "key": "ko:exercise:ac-cause-fill-sem",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "한"
+            ]
+          }
+        },
+        "display_answer": "열 명 중 아홉 명이 찬성했으니 거의 모두 찬성한 셈이다.",
+        "explanation": {
+          "vi": "-(으)ㄴ 셈이다 dùng cho việc đã xảy ra, -는 셈이다 cho hiện tại. Chín trên mười người đã tán thành nên \"coi như\" tất cả - 찬성한 셈이다."
+        },
+        "known_wrong": [
+          {
+            "answer": "하는",
+            "error_tag": "tense_modifier",
+            "feedback_vi": "Việc đã xảy ra (찬성했으니), nên dùng định ngữ quá khứ - 찬성한 셈이다."
+          },
+          {
+            "answer": "할",
+            "error_tag": "tense_modifier",
+            "feedback_vi": "-(으)ㄹ là tương lai. Ở đây kết luận về việc đã xảy ra - 찬성한."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "hint_levels": [
+          "Việc tán thành đã xảy ra rồi.",
+          "Định ngữ quá khứ của 하다 là 한."
+        ],
+        "template": "열 명 중 아홉 명이 찬성했으니 거의 모두 찬성{{b1}} 셈이다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "efe6a76bf32fb88822c279745b3503e17c86c477b79b03057163f80c5eea05af",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "e4731b31-84bd-5df8-a830-388004b53f16",
+      "is_demo": true,
+      "item_id": "d7094024-fdbe-5ca0-9463-02711cdb24d2",
+      "key": "ko:exercise:ac-cause-listen-lecture",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "v6a"
+        },
+        "display_answer": "Trí tuệ nhân tạo đã phán đoán nhanh lại không biết mệt mỏi.",
+        "explanation": {
+          "vi": "빠른 데다가 = \"đã nhanh lại còn\", 피로를 느끼지 않다 = \"không biết mệt\". -는 데다가 cộng hai ý cùng chiều, không phải đối lập hay điều kiện."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "인공지능은 판단 속도가 빠른 데다가 피로를 느끼지 않습니다.",
+        "options": [
+          {
+            "id": "s4o",
+            "lang": "vi",
+            "text": "Trí tuệ nhân tạo chỉ phán đoán nhanh khi không mệt."
+          },
+          {
+            "id": "d2u",
+            "lang": "vi",
+            "text": "Trí tuệ nhân tạo phán đoán nhanh nhưng dễ mệt mỏi."
+          },
+          {
+            "id": "m9e",
+            "lang": "vi",
+            "text": "Trí tuệ nhân tạo phán đoán chậm và không biết mệt mỏi."
+          },
+          {
+            "id": "v6a",
+            "lang": "vi",
+            "text": "Trí tuệ nhân tạo đã phán đoán nhanh lại không biết mệt mỏi."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "2785e053182683989c805521a904a53007787a4ceb7939fb1b10c072093dee3c",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "397ccba1-585b-5b0d-a0a5-f40bd811506b",
+      "is_demo": true,
+      "item_id": "a2757aa6-af56-5156-9d4e-af7423c9349a",
+      "key": "ko:exercise:ac-cause-mcq-bulgwa-meaning",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "i3n"
+        },
+        "display_answer": "Người tán thành chỉ chiếm vỏn vẹn 10% tổng số.",
+        "explanation": {
+          "vi": "에 불과하다 nhấn mạnh con số nhỏ - \"chỉ, vỏn vẹn\". Không mang nghĩa \"ít nhất\" hay \"hơn\", và chủ ngữ là người tán thành (찬성한 사람)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "q1g",
+            "lang": "vi",
+            "text": "Người không tán thành chiếm 10% tổng số."
+          },
+          {
+            "id": "i3n",
+            "lang": "vi",
+            "text": "Người tán thành chỉ chiếm vỏn vẹn 10% tổng số."
+          },
+          {
+            "id": "x7w",
+            "lang": "vi",
+            "text": "Người tán thành chiếm ít nhất 10% tổng số."
+          },
+          {
+            "id": "c5j",
+            "lang": "vi",
+            "text": "Người tán thành chiếm hơn 10% tổng số."
+          }
+        ],
+        "shuffle": true,
+        "stem": "찬성한 사람은 전체의 10%에 불과했다. - Câu này nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "ebe8f5b595a80dca9d0f31e9c06118a0ea83a2686747b900e8700a8dec705fc9",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "c2475681-a4ba-51b1-bbf4-412b6fdcd41c",
+      "is_demo": true,
+      "item_id": "c9c66fd3-6c44-5dfc-9d88-78b8225ec8e5",
+      "key": "ko:exercise:ac-cause-mcq-euro-inhae",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "f4k"
+        },
+        "display_answer": "로 인해",
+        "explanation": {
+          "vi": "Câu cần nêu nguyên nhân - danh từ + (으)로 인해. 폭우 không có patchim nên dùng 로 인해. Các phương án khác mang nghĩa \"chỉ là\", \"chừng nào\", \"coi như\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "o6y",
+            "lang": "ko",
+            "text": "인 셈이라"
+          },
+          {
+            "id": "f4k",
+            "lang": "ko",
+            "text": "로 인해"
+          },
+          {
+            "id": "z8p",
+            "lang": "ko",
+            "text": "에 불과해"
+          },
+          {
+            "id": "l2c",
+            "lang": "ko",
+            "text": "인 한"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn đáp án đúng: \"폭우___ 항공편이 결항되었다.\" (Do mưa lớn, các chuyến bay bị huỷ.)",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "92912435d38e0ed49338507d48e585e07f43d019a43561f6104e2c2406637869",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "9be3cf1c-9f80-55eb-9a75-334e7b164929",
+      "is_demo": true,
+      "item_id": "fd65c41f-b9d4-510c-8471-7ba98201a546",
+      "key": "ko:exercise:ac-cause-mcq-gyuje-false-friend",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "p7s"
+        },
+        "display_answer": "학교의 시험 규정",
+        "explanation": {
+          "vi": "Văn bản quy định là 규정. 규제 nghe giống \"quy chế\" nhưng nghĩa là hành động hạn chế, kiểm soát (규제를 강화하다). 윤리 là đạo đức, 부작용 là tác dụng phụ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "w6c",
+            "lang": "ko",
+            "text": "학교의 시험 부작용"
+          },
+          {
+            "id": "p7s",
+            "lang": "ko",
+            "text": "학교의 시험 규정"
+          },
+          {
+            "id": "r8m",
+            "lang": "ko",
+            "text": "학교의 시험 윤리"
+          },
+          {
+            "id": "u2f",
+            "lang": "ko",
+            "text": "학교의 시험 규제"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn muốn nói \"quy chế thi của nhà trường\" (văn bản quy định). Từ nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "30494474124416ac26b51097042ed9bd54828fbc17aa5a63c1014972908cf0ba",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "45cbc75d-98e8-5a8f-addf-98cf27365448",
+      "is_demo": true,
+      "item_id": "0bb860bd-c4a0-5dc0-be8f-fa1aa7d82238",
+      "key": "ko:exercise:ac-cause-mcq-neun-han",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "a1r"
+        },
+        "display_answer": "규제가 없는 한 이 문제는 계속될 것이다.",
+        "explanation": {
+          "vi": "-는 한 luôn dùng định ngữ hiện tại -는, kể cả với 없다 - 없는 한. 없은, 없을, 없다는 đều sai hình thức."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "order_index": 7,
+      "prompt": {
+        "options": [
+          {
+            "id": "h3q",
+            "lang": "ko",
+            "text": "규제가 없다는 한 이 문제는 계속될 것이다."
+          },
+          {
+            "id": "a1r",
+            "lang": "ko",
+            "text": "규제가 없는 한 이 문제는 계속될 것이다."
+          },
+          {
+            "id": "e9w",
+            "lang": "ko",
+            "text": "규제가 없을 한 이 문제는 계속될 것이다."
+          },
+          {
+            "id": "b5t",
+            "lang": "ko",
+            "text": "규제가 없은 한 이 문제는 계속될 것이다."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn muốn viết: \"Chừng nào chưa có quy định hạn chế, vấn đề này sẽ còn tiếp diễn.\" Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "f5071ff943887a457d425d06f4ff23b8c0778363613a5ab3c6ce1cbbe9f317f3",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "b1040290-276a-56da-8b56-1a7b927ba4a3",
+      "is_demo": true,
+      "item_id": "0bb860bd-c4a0-5dc0-be8f-fa1aa7d82238",
+      "key": "ko:exercise:ac-cause-order-neun-han",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t-gyu",
+              "t-eopneun",
+              "t-han",
+              "t-mun",
+              "t-gye",
+              "t-geot"
+            ],
+            [
+              "t-mun",
+              "t-gyu",
+              "t-eopneun",
+              "t-han",
+              "t-gye",
+              "t-geot"
+            ]
+          ]
+        },
+        "display_answer": "규제가 없는 한 문제는 계속될 것이다.",
+        "explanation": {
+          "vi": "Mệnh đề điều kiện 규제가 없는 한 đứng trước, rồi đến kết quả 문제는 계속될 것이다. 없은 là token nhiễu - -는 한 luôn đi với 없는."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "order_index": 10,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Chừng nào chưa có quy định hạn chế, vấn đề sẽ còn tiếp diễn.\"",
+        "tokens": [
+          {
+            "id": "t-han",
+            "text": "한"
+          },
+          {
+            "id": "t-gye",
+            "text": "계속될"
+          },
+          {
+            "id": "t-eopeun",
+            "text": "없은"
+          },
+          {
+            "id": "t-gyu",
+            "text": "규제가"
+          },
+          {
+            "id": "t-geot",
+            "text": "것이다"
+          },
+          {
+            "id": "t-mun",
+            "text": "문제는"
+          },
+          {
+            "id": "t-eopneun",
+            "text": "없는"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "8f93e1ac8360b88780f82510c959acfbdb32518d2ef2e483cc6858b7c42f43e9",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "86d0a605-a445-586c-b127-7bb5e976b7ac",
+      "is_demo": true,
+      "item_id": "a2757aa6-af56-5156-9d4e-af7423c9349a",
+      "key": "ko:exercise:ac-cause-translate-bulgwa",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "그것은 개인의 의견에 불과하다.",
+            "그것은 개인 의견에 불과하다.",
+            "그건 개인의 의견에 불과하다.",
+            "그건 개인 의견에 불과하다.",
+            "개인의 의견에 불과하다.",
+            "그것은 개인적인 의견에 불과하다.",
+            "그것은 개인의 의견에 불과합니다.",
+            "그건 개인 의견에 불과해요."
+          ]
+        },
+        "display_answer": "그것은 개인의 의견에 불과하다.",
+        "explanation": {
+          "vi": "\"Chỉ là\" + danh từ = N에 불과하다. Chủ ngữ 그것은/그건 có thể bỏ khi đã rõ; đuôi -다 hợp văn viết."
+        },
+        "known_wrong": [
+          {
+            "answer": "그것은 개인의 의견만에 불과하다.",
+            "error_tag": "redundant_man",
+            "feedback_vi": "불과하다 đã có nghĩa \"chỉ là\", không thêm 만."
+          },
+          {
+            "answer": "그것은 개인의 의견이 불과하다.",
+            "error_tag": "particle_choice",
+            "feedback_vi": "Cấu trúc là N에 불과하다 - dùng trợ từ 에, không phải 이."
+          },
+          {
+            "answer": "geugeoseun gaeinui uigyeone bulgwahada",
+            "error_tag": "romanization",
+            "feedback_vi": "Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Đó chỉ là ý kiến cá nhân."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "dd00b8d5c981bf424351cb20de6fa7c2eb5b61cb8899dbbcc093f08081119c3b",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "6ff41b28-ef11-5d0e-8f51-dcacfebd939b",
+      "is_demo": true,
+      "item_id": "c9c66fd3-6c44-5dfc-9d88-78b8225ec8e5",
+      "key": "ko:exercise:ac-cause-translate-inhae",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "인공지능으로 인해 많은 일자리가 사라졌다.",
+            "인공지능으로 인해서 많은 일자리가 사라졌다.",
+            "인공지능으로 인해 일자리가 많이 사라졌다.",
+            "인공지능으로 인해 많은 일자리가 없어졌다.",
+            "인공지능으로 인해 많은 일자리가 사라졌습니다.",
+            "인공지능으로 인해 많은 일자리가 사라졌어요.",
+            "인공지능 때문에 많은 일자리가 사라졌다."
+          ]
+        },
+        "display_answer": "인공지능으로 인해 많은 일자리가 사라졌다.",
+        "explanation": {
+          "vi": "인공지능 có patchim ㅇ nên dùng 으로 인해; \"việc làm\" là 일자리, \"biến mất\" là 사라지다/없어지다. 때문에 cũng đúng nghĩa nhưng mang sắc thái văn nói hơn."
+        },
+        "known_wrong": [
+          {
+            "answer": "인공지능에 인해 많은 일자리가 사라졌다.",
+            "error_tag": "particle_choice",
+            "feedback_vi": "Cấu trúc là N(으)로 인해 - 인공지능으로 인해, không dùng 에."
+          },
+          {
+            "answer": "인공지능으로 인한 많은 일자리가 사라졌다.",
+            "error_tag": "modifier_form",
+            "feedback_vi": "으로 인한 bổ nghĩa cho danh từ (\"việc làm do AI tạo ra\"), làm sai nghĩa. Dùng 으로 인해 trước động từ."
+          },
+          {
+            "answer": "인공지능으로 인해 많은 일자리가 사라진다.",
+            "error_tag": "tense",
+            "feedback_vi": "Câu có \"đã\" nên dùng quá khứ - 사라졌다."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Do trí tuệ nhân tạo, nhiều việc làm đã biến mất."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "3c7a5a75469b62ef4e1417066b501fe9dce463a2a8519af254189f6b01eed75e",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "159eab94-4fcb-5f4e-bc3e-e569e5f898e0",
+      "is_demo": true,
+      "item_id": "0d156cf8-6a8a-525e-be5a-04ff00210adb",
+      "key": "ko:exercise:ac-cause-translate-lecture",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Do dữ liệu sai, trí tuệ nhân tạo có thể đưa ra kết quả phân biệt đối xử.",
+            "Do dữ liệu sai lệch, trí tuệ nhân tạo có thể đưa ra kết quả phân biệt đối xử.",
+            "Do dữ liệu sai, trí tuệ nhân tạo có thể đưa ra kết quả mang tính phân biệt đối xử.",
+            "Do dữ liệu sai lệch, trí tuệ nhân tạo có thể đưa ra kết quả mang tính phân biệt đối xử.",
+            "Vì dữ liệu sai, trí tuệ nhân tạo có thể đưa ra kết quả phân biệt đối xử.",
+            "Vì dữ liệu sai lệch, trí tuệ nhân tạo có thể đưa ra kết quả mang tính phân biệt đối xử.",
+            "Do dữ liệu sai, AI có thể đưa ra kết quả phân biệt đối xử.",
+            "Do dữ liệu sai lệch, AI có thể đưa ra kết quả mang tính phân biệt đối xử."
+          ]
+        },
+        "display_answer": "Do dữ liệu sai lệch, trí tuệ nhân tạo có thể đưa ra kết quả mang tính phân biệt đối xử.",
+        "explanation": {
+          "vi": "데이터로 인해 = \"do dữ liệu\", 잘못된 = sai, sai lệch; 차별적인 결과 = kết quả (mang tính) phân biệt đối xử; -(으)ㄹ 수 있다 = có thể."
+        },
+        "known_wrong": [
+          {
+            "answer": "Do dữ liệu sai, nhân công có thể đưa ra kết quả phân biệt đối xử.",
+            "error_tag": "sino_false_friend",
+            "feedback_vi": "인공지능 là \"trí tuệ nhân tạo\", không dịch theo âm Hán Việt \"nhân công\"."
+          },
+          {
+            "answer": "Dù dữ liệu sai, trí tuệ nhân tạo có thể đưa ra kết quả phân biệt đối xử.",
+            "error_tag": "connective_meaning",
+            "feedback_vi": "(으)로 인해 nêu nguyên nhân - \"do, vì\", không phải nhượng bộ \"dù\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "잘못된 데이터로 인해 인공지능이 차별적인 결과를 낼 수 있다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "30183170808fd2222092bf0ab494bb38e3439606bdc1a9cae0a0df4965050297",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "0aa9483b-b272-598e-a71c-9bbd1a26123d",
+      "is_demo": true,
+      "item_id": "2e93ddb9-842f-53ae-b6f1-203ba89b55e3",
+      "key": "ko:exercise:ac-essay-fill-boinda",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "오를 것으로",
+              "상승할 것으로"
+            ]
+          }
+        },
+        "display_answer": "내년에도 물가가 계속 오를 것으로 보인다.",
+        "explanation": {
+          "vi": "Dự báo tương lai trong văn viết - V-(으)ㄹ 것으로 보인다. 오르다 + -ㄹ → 오를; 상승하다 (tăng, văn báo chí) cũng đúng."
+        },
+        "known_wrong": [
+          {
+            "answer": "오른 것으로",
+            "error_tag": "tense_modifier",
+            "feedback_vi": "-(으)ㄴ là đã xảy ra. Dự báo tương lai cần -(으)ㄹ - 오를 것으로."
+          },
+          {
+            "answer": "오를 거로",
+            "error_tag": "register_spoken",
+            "feedback_vi": "거로 là dạng nói. Văn viết dùng 것으로."
+          },
+          {
+            "answer": "올를 것으로",
+            "error_tag": "verb_conjugation",
+            "feedback_vi": "오르다 chia -(으)ㄹ thành 오를, không thêm ㄹ thừa."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          }
+        ],
+        "template": "Dự kiến năm sau giá cả sẽ tiếp tục tăng. - 내년에도 물가가 계속 {{b1}} 보인다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "b247d77afe80c43de23ce2b11c73087a8aa2fd89cff3554274870dec585a10e8",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "1dc9fd7f-5c72-5525-95f1-2e004bf7a57f",
+      "is_demo": true,
+      "item_id": "ca1ce089-4433-5441-9b23-ed57ac626c47",
+      "key": "ko:exercise:ac-essay-fill-cheotjjae",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "첫째",
+              "첫째로"
+            ],
+            "b2": [
+              "둘째",
+              "둘째로"
+            ]
+          }
+        },
+        "display_answer": "첫째, 비용이 많이 든다. 둘째, 시간이 오래 걸린다.",
+        "explanation": {
+          "vi": "첫째, 둘째 là cách liệt kê chuẩn trong bài nghị luận. 둘째 giữ ㄹ của 둘; thêm 로 (첫째로) cũng được."
+        },
+        "known_wrong": [
+          {
+            "answer": "하나",
+            "error_tag": "enumeration",
+            "feedback_vi": "하나 là số đếm. Liệt kê luận điểm trong văn viết dùng 첫째, 둘째."
+          },
+          {
+            "answer": "일번",
+            "error_tag": "enumeration",
+            "feedback_vi": "일번 là \"số 1\" (số thứ tự đánh dấu). Trong bài luận dùng 첫째."
+          },
+          {
+            "answer": "두째",
+            "error_tag": "spelling",
+            "feedback_vi": "Muốn nói \"thứ hai\" thì viết 둘째, giữ ㄹ của 둘."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          },
+          {
+            "id": "b2",
+            "width_hint": 3
+          }
+        ],
+        "template": "Thứ nhất, tốn chi phí. Thứ hai, mất thời gian. - {{b1}}, 비용이 많이 든다. {{b2}}, 시간이 오래 걸린다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "f41c63d4e3f2588ec2d2fdf7de0a4cbe5e1b5e41049a0432c8434a9689a85887",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "5b188a99-c0b3-517f-b69a-522002f7122c",
+      "is_demo": true,
+      "item_id": "029c9a8e-08c3-54f7-9337-ff0962174dba",
+      "key": "ko:exercise:ac-essay-fill-rago",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "라고",
+              "이라고"
+            ]
+          }
+        },
+        "display_answer": "이는 사회 변화의 결과라고 볼 수 있다.",
+        "explanation": {
+          "vi": "Câu gốc là 이는 결과이다; khi trích dẫn, 이다 thành -(이)라고. Sau nguyên âm thường rút gọn thành 라고 - 결과라고 볼 수 있다."
+        },
+        "known_wrong": [
+          {
+            "answer": "다고",
+            "error_tag": "quotation_noun",
+            "feedback_vi": "-다고 dành cho tính từ. Sau danh từ dùng -(이)라고 - 결과라고."
+          },
+          {
+            "answer": "는다고",
+            "error_tag": "quotation_noun",
+            "feedback_vi": "-는다고 dành cho động từ. 결과 là danh từ nên dùng 라고."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "결과 là danh từ, nên dùng dạng trích dẫn của 이다.",
+          "결과 kết thúc bằng nguyên âm → 라고."
+        ],
+        "template": "이는 사회 변화의 결과{{b1}} 볼 수 있다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "4cf6eb375c91bbb4aff958c8a346bec6a858e224da0f52aa58b11e3a05bfe3ca",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "ec90a0de-f337-550f-9c78-9b3bb19838cd",
+      "is_demo": true,
+      "item_id": "20500d1c-f394-5cbc-8d51-93475a77b6c9",
+      "key": "ko:exercise:ac-essay-listen-lecture",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "a6v"
+        },
+        "display_answer": "Ở phần kết bài, nên tóm tắt lại luận điểm đã nêu thay vì đưa thêm căn cứ mới.",
+        "explanation": {
+          "vi": "결론 là kết bài; -기보다 nghĩa là \"thay vì\", nên không đưa 근거 mới mà 주장을 다시 정리 - tóm lại luận điểm. Đây là lời giảng điển hình về câu 54."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "결론에서는 새로운 근거를 제시하기보다 앞의 주장을 다시 정리해야 합니다.",
+        "options": [
+          {
+            "id": "g4z",
+            "lang": "vi",
+            "text": "Ở phần thân bài, nên phản bác ý kiến của người khác."
+          },
+          {
+            "id": "u8l",
+            "lang": "vi",
+            "text": "Ở phần mở bài, nên tóm tắt lại luận điểm đã nêu."
+          },
+          {
+            "id": "j2s",
+            "lang": "vi",
+            "text": "Ở phần kết bài, nên đưa thêm căn cứ mới để thuyết phục hơn."
+          },
+          {
+            "id": "a6v",
+            "lang": "vi",
+            "text": "Ở phần kết bài, nên tóm tắt lại luận điểm đã nêu thay vì đưa thêm căn cứ mới."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "d07c5fe573b06fb731155c3ea5486d21fa6395b93f052a923a8c1fc14eda6623",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "cab8ece1-2c39-5f68-8fd4-e7271eb0c1d5",
+      "is_demo": true,
+      "item_id": "20500d1c-f394-5cbc-8d51-93475a77b6c9",
+      "key": "ko:exercise:ac-essay-mcq-bonron",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "e8n"
+        },
+        "display_answer": "본론",
+        "explanation": {
+          "vi": "Đưa luận điểm và 근거 là việc của thân bài - 본론. 서론 chỉ nêu vấn đề, 결론 tóm lại và khẳng định, còn 제목 là tiêu đề."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "y5h",
+            "lang": "ko",
+            "text": "결론"
+          },
+          {
+            "id": "e8n",
+            "lang": "ko",
+            "text": "본론"
+          },
+          {
+            "id": "r3b",
+            "lang": "ko",
+            "text": "서론"
+          },
+          {
+            "id": "c1t",
+            "lang": "ko",
+            "text": "제목"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Đoạn văn liệt kê 첫째, 둘째 kèm số liệu để chứng minh luận điểm thuộc phần nào của bài luận?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "7075c93ee10a67c6b3dbb31385e67d909636719550955e6c7a8c5516b0d7433b",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "65e46c68-263d-5180-887d-bdaa6df2ee85",
+      "is_demo": true,
+      "item_id": "e1e2a242-d270-55cd-9979-b77200c4b4ae",
+      "key": "ko:exercise:ac-essay-mcq-jujang-false-friend",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "h5m"
+        },
+        "display_answer": "cho rằng, khẳng định",
+        "explanation": {
+          "vi": "주장하다 có âm Hán Việt \"chủ trương\" nhưng nghĩa là đưa ra và bảo vệ một ý kiến - \"cho rằng, khẳng định\". Phản bác là 반박하다."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "order_index": 3,
+      "prompt": {
+        "options": [
+          {
+            "id": "n7k",
+            "lang": "vi",
+            "text": "phản bác"
+          },
+          {
+            "id": "b2w",
+            "lang": "vi",
+            "text": "chủ trì"
+          },
+          {
+            "id": "t9c",
+            "lang": "vi",
+            "text": "đề ra đường lối"
+          },
+          {
+            "id": "h5m",
+            "lang": "vi",
+            "text": "cho rằng, khẳng định"
+          }
+        ],
+        "shuffle": true,
+        "stem": "많은 전문가들은 근무 시간을 줄여야 한다고 주장한다. - 주장한다 ở đây nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "3cb7c563f1c8e19c2de947b7bf2e18cb9d9f266dd356440337e3751613398c7f",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "84321996-7f0b-55a9-8513-100d7a1d282b",
+      "is_demo": true,
+      "item_id": "f26c125d-ba8f-5656-b990-6f53ed28a236",
+      "key": "ko:exercise:ac-essay-mcq-revise-spoken",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "s6e"
+        },
+        "display_answer": "그러나 이 방법에는 문제가 있다.",
+        "explanation": {
+          "vi": "Câu cần ý đối lập (\"tuy nhiên\") ở văn viết - 그러나. Đổi đuôi sang 있어요 vẫn sai văn phong; 그래서 sai quan hệ ý; 그런데요 còn nói hơn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "v3r",
+            "lang": "ko",
+            "text": "근데 이 방법에는 문제가 있어요."
+          },
+          {
+            "id": "s6e",
+            "lang": "ko",
+            "text": "그러나 이 방법에는 문제가 있다."
+          },
+          {
+            "id": "d1o",
+            "lang": "ko",
+            "text": "그런데요 이 방법에는 문제가 있다."
+          },
+          {
+            "id": "q8u",
+            "lang": "ko",
+            "text": "그래서 이 방법에는 문제가 있다."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bài luận của bạn có câu: \"근데 이 방법에는 문제가 있다.\" Sửa thế nào để đúng văn phong viết?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "206def58c4378684f8a69d4e071010b4e90efe8b62678a13e269e22a8e26c866",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "599586d0-a196-5db0-8a13-51e47d011472",
+      "is_demo": true,
+      "item_id": "f26c125d-ba8f-5656-b990-6f53ed28a236",
+      "key": "ko:exercise:ac-essay-mcq-ttaraseo",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k7q"
+        },
+        "display_answer": "따라서",
+        "explanation": {
+          "vi": "Câu này là kết luận nên cần \"do đó\" ở văn viết - 따라서. 근데, 그러니까 là văn nói; 그래도 nghĩa là \"dù vậy\", sai quan hệ ý."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "m2x",
+            "lang": "ko",
+            "text": "근데"
+          },
+          {
+            "id": "k7q",
+            "lang": "ko",
+            "text": "따라서"
+          },
+          {
+            "id": "p9d",
+            "lang": "ko",
+            "text": "그러니까"
+          },
+          {
+            "id": "w4f",
+            "lang": "ko",
+            "text": "그래도"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn từ nối hợp với văn nghị luận nhất: \"___ 정부는 관련 대책을 마련해야 한다.\"",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "b491aa441720ad2f9e61526b736334dc0a2943e1d6c576d1b3b405b910445557",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "1e564920-3c25-5a9f-949c-7a79031209b4",
+      "is_demo": true,
+      "item_id": "f26c125d-ba8f-5656-b990-6f53ed28a236",
+      "key": "ko:exercise:ac-essay-order-ttaraseo",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t-tta",
+              "t-jeong",
+              "t-dae",
+              "t-ma",
+              "t-ha"
+            ],
+            [
+              "t-jeong",
+              "t-tta",
+              "t-dae",
+              "t-ma",
+              "t-ha"
+            ]
+          ]
+        },
+        "display_answer": "따라서 정부는 대책을 마련해야 한다.",
+        "explanation": {
+          "vi": "Văn viết dùng 따라서 và đuôi -ㄴ다 (마련해야 한다). 그래서 và 해요 là token nhiễu thuộc văn nói. 따라서 thường đứng đầu câu, đặt sau chủ ngữ cũng được."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu kết luận văn viết: \"Do đó, chính phủ cần đưa ra biện pháp.\"",
+        "tokens": [
+          {
+            "id": "t-ha",
+            "text": "한다"
+          },
+          {
+            "id": "t-dae",
+            "text": "대책을"
+          },
+          {
+            "id": "t-geu",
+            "text": "그래서"
+          },
+          {
+            "id": "t-ma",
+            "text": "마련해야"
+          },
+          {
+            "id": "t-jeong",
+            "text": "정부는"
+          },
+          {
+            "id": "t-hae",
+            "text": "해요"
+          },
+          {
+            "id": "t-tta",
+            "text": "따라서"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "be10bdecf07128d0525720e1e2f4a1f7fc6fd5c5067ac3dac725549f65178c7f",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "31120474-6aad-5c5e-b531-ef0771095f94",
+      "is_demo": true,
+      "item_id": "98bd9b67-b0be-51b6-b20b-8a8e24e4817b",
+      "key": "ko:exercise:ac-essay-translate-conclusion",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Như vậy, chính sách này có cả ưu điểm lẫn nhược điểm.",
+            "Như vậy, chính sách này có cả ưu điểm và nhược điểm.",
+            "Như đã trình bày, chính sách này có cả ưu điểm lẫn nhược điểm.",
+            "Như đã trình bày, chính sách này có cả ưu điểm và nhược điểm.",
+            "Như vậy, chính sách này vừa có ưu điểm vừa có nhược điểm.",
+            "Tóm lại, chính sách này có cả ưu điểm lẫn nhược điểm.",
+            "Như vậy, chính sách này có cả mặt mạnh lẫn mặt yếu."
+          ]
+        },
+        "display_answer": "Như vậy, chính sách này có cả ưu điểm lẫn nhược điểm.",
+        "explanation": {
+          "vi": "이와 같이 mở đầu kết bài, tương đương \"như vậy, như đã trình bày\". 장점 ưu điểm, 단점 nhược điểm, 모두 - cả hai."
+        },
+        "known_wrong": [
+          {
+            "answer": "Giống như thế này, chính sách này có cả ưu điểm lẫn nhược điểm.",
+            "error_tag": "literal_translation",
+            "feedback_vi": "이와 같이 ở đầu kết bài nghĩa là \"như vậy, như đã trình bày\", không dịch từng chữ \"giống như thế này\"."
+          },
+          {
+            "answer": "Như vậy, chính sách này chỉ có ưu điểm.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "장점과 단점이 모두 - cả ưu điểm và nhược điểm."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "order_index": 10,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "이와 같이 이 정책에는 장점과 단점이 모두 있다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "119263b8928ddf8235716dc56de0b40379048f096c0d509d1cd072311f340e24",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "bd582301-35da-58b1-9182-8291effef3b6",
+      "is_demo": true,
+      "item_id": "7c49c8b7-a8b6-51e6-be5d-76ebaf05e62d",
+      "key": "ko:exercise:ac-essay-translate-geungeo",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "그 주장은 근거가 부족하다.",
+            "그 주장에는 근거가 부족하다.",
+            "그 주장은 근거가 부족합니다.",
+            "그 주장에는 근거가 부족합니다.",
+            "그 주장은 근거가 부족해요.",
+            "그 주장에는 근거가 부족해요."
+          ]
+        },
+        "display_answer": "그 주장은 근거가 부족하다.",
+        "explanation": {
+          "vi": "Luận điểm là 주장, căn cứ là 근거, thiếu là 부족하다. Trong bài luận dùng đuôi -다; 합니다/해요 cũng chấp nhận được khi nói."
+        },
+        "known_wrong": [
+          {
+            "answer": "그 주장은 근거가 부족해.",
+            "error_tag": "register_ending",
+            "feedback_vi": "Đuôi 반말 -해 không dùng trong văn bản trang trọng. Viết 부족하다 (văn viết) hoặc 부족합니다."
+          },
+          {
+            "answer": "그 주장은 근거가 없어요.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "없다 là \"không có\"; \"thiếu\" là 부족하다."
+          },
+          {
+            "answer": "geu jujangeun geungeoga bujokhada",
+            "error_tag": "romanization",
+            "feedback_vi": "Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Luận điểm đó thiếu căn cứ."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "6ff98cb4e35f94626e4107a0bf4256a94a914f60393750f06666aa5f437cf386",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "111633d7-4141-5e07-a873-5db603d8c82e",
+      "is_demo": true,
+      "item_id": "c94325ce-a9c7-54ca-abc4-6cae1210ff59",
+      "key": "ko:exercise:ac-essay-translate-nonran",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "새 정책이 논란이 되었다.",
+            "새 정책이 논란이 됐다.",
+            "새로운 정책이 논란이 되었다.",
+            "새로운 정책이 논란이 됐다.",
+            "새 정책이 논란을 빚었다.",
+            "새로운 정책이 논란을 빚었다.",
+            "새 정책이 논란을 일으켰다.",
+            "새로운 정책이 논란을 일으켰다.",
+            "새 정책이 논란이 됐어요."
+          ]
+        },
+        "display_answer": "새 정책이 논란이 되었다.",
+        "explanation": {
+          "vi": "Muốn nói \"gây tranh cãi\" thì dùng 논란이 되다, 논란을 빚다 hoặc 논란을 일으키다. Có \"đã\" nên dùng quá khứ; đuôi -다 hợp văn viết."
+        },
+        "known_wrong": [
+          {
+            "answer": "새 정책이 토론이 되었다.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "토론 là buổi thảo luận có tổ chức. \"Gây tranh cãi\" là 논란이 되다."
+          },
+          {
+            "answer": "새 정책이 논란이 된다.",
+            "error_tag": "tense",
+            "feedback_vi": "Câu tiếng Việt có \"đã\" nên dùng thì quá khứ - 되었다/됐다."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Chính sách mới đã gây tranh cãi."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "55b8547218d685057c583a08cc38a5f01e6a07306b2a87e739ef07fc716d0235",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "0c25b072-6498-51a1-9d93-bf70bbdfd1aa",
+      "is_demo": true,
+      "item_id": "d563ad86-7a95-5131-af4d-2613b5f2f40c",
+      "key": "ko:exercise:ac-idiom-fill-geumsang",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "금상첨화"
+            ]
+          }
+        },
+        "display_answer": "경치도 좋은데 날씨까지 좋으니 금상첨화이다.",
+        "explanation": {
+          "vi": "금상첨화 (錦上添花 - gấm thêm hoa) dùng khi điều tốt được thêm điều tốt. Cảnh đẹp + thời tiết đẹp = 금상첨화."
+        },
+        "known_wrong": [
+          {
+            "answer": "설상가상",
+            "error_tag": "idiom_meaning",
+            "feedback_vi": "설상가상 là xui chồng xui. Tốt chồng tốt là 금상첨화."
+          },
+          {
+            "answer": "일석이조",
+            "error_tag": "idiom_meaning",
+            "feedback_vi": "일석이조 là một việc mang lại hai lợi ích. Ở đây là hai điều tốt cùng đến - 금상첨화."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "template": "Phong cảnh đã đẹp, thời tiết lại còn đẹp - đúng là đã tốt lại càng tốt. - 경치도 좋은데 날씨까지 좋으니 {{b1}}이다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "4770c1a93153cf28d587f480fc0b6d6351c61d9d5605066a1d4d0f7fffe2f620",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "a18645e4-b7b1-5da5-879a-6cfef67b72d8",
+      "is_demo": true,
+      "item_id": "e485adb3-04bd-5566-9083-6d622bf66b12",
+      "key": "ko:exercise:ac-idiom-fill-ilko",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "잃고"
+            ]
+          }
+        },
+        "display_answer": "소 잃고 외양간 고친다.",
+        "explanation": {
+          "vi": "잃다 = mất (đồ vật, con vật); 잃고 đọc là [일코] nhưng viết với patchim ㅀ. Đừng nhầm với 잊다 (quên)."
+        },
+        "known_wrong": [
+          {
+            "answer": "잊고",
+            "error_tag": "ilda_itda",
+            "feedback_vi": "잊다 là \"quên\", 잃다 là \"mất\". Bò bị mất nên là 잃고."
+          },
+          {
+            "answer": "일코",
+            "error_tag": "spelling_pronunciation",
+            "feedback_vi": "일코 chỉ là cách đọc. Chữ viết đúng là 잃고 (patchim ㅀ)."
+          },
+          {
+            "answer": "잃어서",
+            "error_tag": "fixed_expression",
+            "feedback_vi": "Tục ngữ có dạng cố định - 소 잃고 외양간 고친다."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "Mất bò mới lo làm chuồng. - 소 {{b1}} 외양간 고친다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "92ad5bee8c599398ba9031c7fa522a98a10441c4bf43157af25078a642f91a09",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "46bb46ef-afbc-5408-a4e7-c0622c18741b",
+      "is_demo": true,
+      "item_id": "49219464-d449-5034-989f-3a6be2c5716e",
+      "key": "ko:exercise:ac-idiom-fill-jaksim",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "작심삼일"
+            ]
+          }
+        },
+        "display_answer": "새해에 운동을 시작했지만 작심삼일로 끝났다.",
+        "explanation": {
+          "vi": "작심삼일 (作心三日) - quyết tâm chỉ được ba ngày; cụm hay dùng là 작심삼일로 끝나다."
+        },
+        "known_wrong": [
+          {
+            "answer": "일석이조",
+            "error_tag": "idiom_meaning",
+            "feedback_vi": "일석이조 là \"một công đôi việc\". Bỏ cuộc sau vài ngày là 작심삼일."
+          },
+          {
+            "answer": "작심사일",
+            "error_tag": "spelling",
+            "feedback_vi": "Thành ngữ là 작심삼일 - \"ba ngày\" (삼일)."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "hint_levels": [
+          "Quyết tâm chỉ kéo dài ba ngày.",
+          "作心三日 - 작심..."
+        ],
+        "template": "새해에 운동을 시작했지만 {{b1}}로 끝났다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "fa21db9764fece65b81deba244985fe3c56856e754a3d89897a602b73d7dfedb",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "4e9f36d7-ff01-5119-9c3f-2e205bac39a9",
+      "is_demo": true,
+      "item_id": "bbd60131-5b58-566c-902d-248bd83e3b43",
+      "key": "ko:exercise:ac-idiom-listen-tikkeul",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "g6r"
+        },
+        "display_answer": "Góp gió thành bão, mỗi ngày tiết kiệm một ít thì sẽ thành khoản tiền lớn.",
+        "explanation": {
+          "vi": "티끌 모아 태산 = gom bụi thành núi - tích nhỏ thành lớn. 저축하면 큰돈이 된다 = tiết kiệm thì thành tiền lớn, nên phương án bi quan hay hiểu chữ \"núi\" theo nghĩa đen đều sai."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "티끌 모아 태산이라고, 매일 조금씩 저축하면 큰돈이 된다.",
+        "options": [
+          {
+            "id": "k1w",
+            "lang": "vi",
+            "text": "Mỗi ngày tiết kiệm một ít cũng chẳng thành tiền lớn được."
+          },
+          {
+            "id": "n8y",
+            "lang": "vi",
+            "text": "Muốn có tiền lớn thì phải tiêu ít đi mỗi ngày."
+          },
+          {
+            "id": "g6r",
+            "lang": "vi",
+            "text": "Góp gió thành bão, mỗi ngày tiết kiệm một ít thì sẽ thành khoản tiền lớn."
+          },
+          {
+            "id": "c3e",
+            "lang": "vi",
+            "text": "Phải trèo lên núi mới thấy tiền tiết kiệm có giá trị."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "949ab16129296e978f7c78dadfa1f3f49eda3302fbde30718ed0c8540393c2e6",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "ec47b37e-4d5e-5ddc-95e2-9a298dec799a",
+      "is_demo": true,
+      "item_id": "8d52b6ec-7644-5697-a496-3355df1c5e52",
+      "key": "ko:exercise:ac-idiom-mcq-gongdeun",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "y2h"
+        },
+        "display_answer": "공든 탑이 무너지랴",
+        "explanation": {
+          "vi": "공든 탑이 무너지랴 - đã dồn tâm sức thì không uổng, rất hợp để động viên. Ba câu còn lại đều mang ý chê - muộn màng, hiểu biết hạn hẹp, thiếu kiên trì."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "order_index": 7,
+      "prompt": {
+        "options": [
+          {
+            "id": "y2h",
+            "lang": "ko",
+            "text": "공든 탑이 무너지랴"
+          },
+          {
+            "id": "f9x",
+            "lang": "ko",
+            "text": "작심삼일"
+          },
+          {
+            "id": "b6q",
+            "lang": "ko",
+            "text": "소 잃고 외양간 고친다"
+          },
+          {
+            "id": "m3d",
+            "lang": "ko",
+            "text": "우물 안 개구리"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn của bạn đã ôn thi TOPIK rất chăm chỉ suốt một năm nhưng vẫn lo lắng. Câu tục ngữ nào hợp để động viên?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "36f442bc3e3f4d845f837aa893c34e89ff8e4f9e82f364e2e38ce8cbd57ffc79",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "ece02a1d-907c-5ed5-9612-9d9859734628",
+      "is_demo": true,
+      "item_id": "e485adb3-04bd-5566-9083-6d622bf66b12",
+      "key": "ko:exercise:ac-idiom-mcq-gyeok",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "h4p"
+        },
+        "display_answer": "소 잃고 외양간 고치는",
+        "explanation": {
+          "vi": "Đợi có tai nạn mới kiểm tra = sửa chữa khi đã muộn - 소 잃고 외양간 고치는 격이다. Các thành ngữ khác mang nghĩa tích cực, không hợp ngữ cảnh phê phán."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "h4p",
+            "lang": "ko",
+            "text": "소 잃고 외양간 고치는"
+          },
+          {
+            "id": "d5n",
+            "lang": "ko",
+            "text": "일석이조인"
+          },
+          {
+            "id": "w7k",
+            "lang": "ko",
+            "text": "티끌 모아 태산인"
+          },
+          {
+            "id": "s1j",
+            "lang": "ko",
+            "text": "금상첨화인"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn cụm hợp nhất cho bài luận: \"사고가 난 뒤에야 안전 점검을 하는 것은 ___ 격이다.\"",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "724076f333469bd307a984497a4e34ed7f3c012d329f1c42e7165504e00afab4",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "70432bd2-ac5c-5538-95eb-511e50833e6c",
+      "is_demo": true,
+      "item_id": "946c0f84-db74-541f-9703-b461e5bdc1b2",
+      "key": "ko:exercise:ac-idiom-mcq-ilseogijo",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "u5n"
+        },
+        "display_answer": "Một công đôi việc",
+        "explanation": {
+          "vi": "일석이조 = 一石二鳥, một hòn đá trúng hai con chim - \"một công đôi việc\". \"Ba ngày quyết tâm\" là 작심삼일, \"đã tốt lại càng tốt\" là 금상첨화, \"hoạ vô đơn chí\" là 설상가상."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "u5n",
+            "lang": "vi",
+            "text": "Một công đôi việc"
+          },
+          {
+            "id": "a4g",
+            "lang": "vi",
+            "text": "Hoạ vô đơn chí"
+          },
+          {
+            "id": "i2c",
+            "lang": "vi",
+            "text": "Ba ngày quyết tâm"
+          },
+          {
+            "id": "o8z",
+            "lang": "vi",
+            "text": "Đã tốt lại càng tốt"
+          }
+        ],
+        "shuffle": true,
+        "stem": "일석이조 nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "cbe2e80b0b8aa25b1632c80519896c1d6b33288b7275be61f5b6c65caef44447",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "7216ddf2-0ec1-5b82-a739-e6732c4b8c8f",
+      "is_demo": true,
+      "item_id": "8f2fe179-f9cb-594c-babb-02ba8b1334ff",
+      "key": "ko:exercise:ac-idiom-mcq-umul",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "l7m"
+        },
+        "display_answer": "우물 안 개구리",
+        "explanation": {
+          "vi": "Câu cố định là 우물 안 개구리 (ếch trong giếng). 우물 바닥에 앉은 개구리 là dịch từng chữ; 개구리 올챙이 적 생각 못 한다 là tục ngữ khác - \"quên mình từng là nòng nọc\", chỉ người quên quá khứ khó khăn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "x9t",
+            "lang": "ko",
+            "text": "개구리 올챙이 적 생각 못 한다"
+          },
+          {
+            "id": "e3s",
+            "lang": "ko",
+            "text": "우물 바닥에 앉은 개구리"
+          },
+          {
+            "id": "l7m",
+            "lang": "ko",
+            "text": "우물 안 개구리"
+          },
+          {
+            "id": "p1v",
+            "lang": "ko",
+            "text": "소 잃고 외양간 고친다"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu tục ngữ tiếng Hàn tương đương \"ếch ngồi đáy giếng\" là câu nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "4e6c6ce9c9a5e87d5fb4b15f3d0a02af5b8de5ce88d7b4e3dc6d28abe44f3c41",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "c8177eb1-3d8e-5440-8adb-336ce27631e4",
+      "is_demo": true,
+      "item_id": "49219464-d449-5034-989f-3a6be2c5716e",
+      "key": "ko:exercise:ac-idiom-order-jaksim",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t-jak",
+              "t-kkeut",
+              "t-an",
+              "t-gye",
+              "t-se",
+              "t-han"
+            ]
+          ]
+        },
+        "display_answer": "작심삼일로 끝나지 않도록 계획을 세워야 한다.",
+        "explanation": {
+          "vi": "-지 않도록 = \"để không\"; mệnh đề mục đích 작심삼일로 끝나지 않도록 đứng trước 계획을 세워야 한다. 일석이조로 là token nhiễu - sai nghĩa."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Cần lập kế hoạch để không bị cả thèm chóng chán.\"",
+        "tokens": [
+          {
+            "id": "t-se",
+            "text": "세워야"
+          },
+          {
+            "id": "t-an",
+            "text": "않도록"
+          },
+          {
+            "id": "t-il",
+            "text": "일석이조로"
+          },
+          {
+            "id": "t-han",
+            "text": "한다"
+          },
+          {
+            "id": "t-jak",
+            "text": "작심삼일로"
+          },
+          {
+            "id": "t-gye",
+            "text": "계획을"
+          },
+          {
+            "id": "t-kkeut",
+            "text": "끝나지"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "e88e80b2c9915f938a4c1b2b512cffff6540cd4321457708b7c29cd252b47af8",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "4e10fb57-b56f-500e-8a67-6ee00bde5ea9",
+      "is_demo": true,
+      "item_id": "946c0f84-db74-541f-9703-b461e5bdc1b2",
+      "key": "ko:exercise:ac-idiom-translate-ilseogijo",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "정말 일석이조이다.",
+            "정말 일석이조다.",
+            "정말 일석이조예요.",
+            "정말 일석이조입니다.",
+            "그야말로 일석이조이다.",
+            "그야말로 일석이조예요.",
+            "일석이조이다.",
+            "일석이조예요."
+          ]
+        },
+        "display_answer": "정말 일석이조예요.",
+        "explanation": {
+          "vi": "\"Một công đôi việc\" = 일석이조. \"Đúng là\" có thể là 정말 hoặc 그야말로, hoặc bỏ đi. 조 không có patchim nên đi với 예요."
+        },
+        "known_wrong": [
+          {
+            "answer": "정말 일석이조이에요.",
+            "error_tag": "ieyo_yeyo",
+            "feedback_vi": "조 không có patchim nên dùng 예요 - 일석이조예요."
+          },
+          {
+            "answer": "정말 일석삼일이다.",
+            "error_tag": "idiom_form",
+            "feedback_vi": "Thành ngữ đúng là 일석이조 (một hòn đá, hai con chim)."
+          },
+          {
+            "answer": "정말 한 일 두 일이다.",
+            "error_tag": "literal_translation",
+            "feedback_vi": "Không dịch từng chữ \"một công đôi việc\". Tiếng Hàn dùng 일석이조."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Đúng là một công đôi việc."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "b43ded47a9dacac10423d10babeb3d3901560155d95c97bd90e61cdf20c82891",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "5862accb-9138-5616-9b34-811a9b7cbab9",
+      "is_demo": true,
+      "item_id": "bbd60131-5b58-566c-902d-248bd83e3b43",
+      "key": "ko:exercise:ac-idiom-translate-tikkeul",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "티끌 모아 태산",
+            "티끌 모아 태산이다.",
+            "티끌 모아 태산이에요.",
+            "티끌 모아 태산입니다.",
+            "티끌 모아 태산이라고 해요."
+          ]
+        },
+        "display_answer": "티끌 모아 태산",
+        "explanation": {
+          "vi": "Tục ngữ Hàn tương đương là 티끌 모아 태산 - gom bụi thành núi. Có thể để nguyên câu hoặc thêm 이다/이에요 vì 태산 có patchim."
+        },
+        "known_wrong": [
+          {
+            "answer": "바람 모아 폭풍",
+            "error_tag": "literal_proverb",
+            "feedback_vi": "Không dịch từng chữ tục ngữ Việt. Câu tương đương tiếng Hàn là 티끌 모아 태산."
+          },
+          {
+            "answer": "티끌 모아 태산예요.",
+            "error_tag": "ieyo_yeyo",
+            "feedback_vi": "태산 có patchim ㄴ nên dùng 이에요 - 태산이에요."
+          },
+          {
+            "answer": "tikkeul moa taesan",
+            "error_tag": "romanization",
+            "feedback_vi": "Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "order_index": 10,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Góp gió thành bão."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "ac9270aa84c820695bd18a4e751a533b4bc75c65ec901c4468faeedbed5426e4",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "87e4c128-c172-55b0-a233-337f22609086",
+      "is_demo": true,
+      "item_id": "8f2fe179-f9cb-594c-babb-02ba8b1334ff",
+      "key": "ko:exercise:ac-idiom-translate-umul",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Không có trải nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.",
+            "Không có kinh nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.",
+            "Nếu không có trải nghiệm ở nước ngoài thì dễ trở thành ếch ngồi đáy giếng.",
+            "Nếu không có kinh nghiệm ở nước ngoài thì dễ trở thành ếch ngồi đáy giếng.",
+            "Không có trải nghiệm nước ngoài thì dễ thành ếch ngồi đáy giếng.",
+            "Thiếu trải nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.",
+            "Nếu không có trải nghiệm ở nước ngoài, ta dễ trở thành ếch ngồi đáy giếng.",
+            "Không có kinh nghiệm nước ngoài thì dễ trở thành ếch ngồi đáy giếng."
+          ]
+        },
+        "display_answer": "Không có trải nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.",
+        "explanation": {
+          "vi": "해외 경험 = trải nghiệm (kinh nghiệm) ở nước ngoài; 없으면 = nếu không có; 우물 안 개구리 = ếch ngồi đáy giếng; -기 쉽다 = dễ."
+        },
+        "known_wrong": [
+          {
+            "answer": "Không có trải nghiệm ở nước ngoài thì dễ thành con ếch trong giếng.",
+            "error_tag": "literal_proverb",
+            "feedback_vi": "Đây là tục ngữ - hãy dùng câu tương đương \"ếch ngồi đáy giếng\", không dịch từng chữ."
+          },
+          {
+            "answer": "Có trải nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.",
+            "error_tag": "negation_missing",
+            "feedback_vi": "없으면 là \"nếu không có\" - bạn đã bỏ mất phủ định."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "해외 경험이 없으면 우물 안 개구리가 되기 쉽다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "d842ead8aaf2cd8fdb12e0690553658e7767de3c871c44b43d0239233bcb091a",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "26514936-6edf-5505-8bc0-46180be1892b",
+      "is_demo": true,
+      "item_id": "a2757aa6-af56-5156-9d4e-af7423c9349a",
+      "key": "ko:exercise:ac-review-fill-bulgwa",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "에 불과했다",
+              "에 불과하다",
+              "에 불과합니다",
+              "에 불과했습니다"
+            ]
+          }
+        },
+        "display_answer": "찬성 의견은 20%에 불과했다.",
+        "explanation": {
+          "vi": "\"Chỉ chiếm vỏn vẹn\" = N에 불과하다. Trong văn viết dùng 불과하다 hoặc 불과했다; 불과합니다 dùng khi trình bày."
+        },
+        "known_wrong": [
+          {
+            "answer": "만에 불과했다",
+            "error_tag": "redundant_man",
+            "feedback_vi": "불과하다 đã có nghĩa \"chỉ\", không thêm 만."
+          },
+          {
+            "answer": "이 불과했다",
+            "error_tag": "particle_choice",
+            "feedback_vi": "Cấu trúc cố định là N에 불과하다 - dùng trợ từ 에."
+          },
+          {
+            "answer": "에 불과해",
+            "error_tag": "register_ending",
+            "feedback_vi": "Đuôi 반말 không hợp văn viết. Dùng 불과하다/불과했다."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 7
+          }
+        ],
+        "template": "Ý kiến tán thành chỉ chiếm vỏn vẹn 20%. - 찬성 의견은 20%{{b1}}."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "31ae84b5d9321d5f0e2b127493fa2cf7c2a9d10b8f0a2ec9e65181949d2211cd",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "0e8fc427-da1e-5e46-b828-c4d8f29be760",
+      "is_demo": true,
+      "item_id": "d7094024-fdbe-5ca0-9463-02711cdb24d2",
+      "key": "ko:exercise:ac-review-fill-dedaga",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "드는 데다가",
+              "드는 데다"
+            ]
+          }
+        },
+        "display_answer": "이 정책은 비용이 많이 드는 데다가 효과도 크지 않다.",
+        "explanation": {
+          "vi": "들다 (tốn) là động từ nên dùng -는 데다가; ㄹ rơi trước ㄴ - 드는. Hai ý cùng chiều (tốn kém, kém hiệu quả) và vế sau có 도."
+        },
+        "known_wrong": [
+          {
+            "answer": "들는 데다가",
+            "error_tag": "l_irregular",
+            "feedback_vi": "들다 có patchim ㄹ, gặp -는 thì ㄹ rơi - 드는 데다가."
+          },
+          {
+            "answer": "들지만",
+            "error_tag": "connective_meaning",
+            "feedback_vi": "-지만 là đối lập, nhưng hai ý ở đây cùng xấu. Dùng 드는 데다가."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          }
+        ],
+        "hint_levels": [
+          "Chính sách này đã tốn kém lại còn kém hiệu quả.",
+          "들다 là động từ → -는 데다가."
+        ],
+        "template": "이 정책은 비용이 많이 {{b1}} 효과도 크지 않다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "6daacd63b32ce75f4c28084412d4c0231b544e3c93df62f8d4f3ba0278c16f10",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "9003624c-4091-5154-bb08-c287a6ff0e89",
+      "is_demo": true,
+      "item_id": "f26c125d-ba8f-5656-b990-6f53ed28a236",
+      "key": "ko:exercise:ac-review-fill-geureona",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "그러나",
+              "하지만",
+              "그렇지만"
+            ]
+          }
+        },
+        "display_answer": "그러나 이 방법에도 한계가 있다.",
+        "explanation": {
+          "vi": "근데 (rút gọn của 그런데) mang ý đối lập trong văn nói. Văn viết dùng 그러나, 하지만 hoặc 그렇지만."
+        },
+        "known_wrong": [
+          {
+            "answer": "근데",
+            "error_tag": "register_spoken",
+            "feedback_vi": "근데 là văn nói. Trong bài luận dùng 그러나 hoặc 하지만."
+          },
+          {
+            "answer": "따라서",
+            "error_tag": "connective_meaning",
+            "feedback_vi": "따라서 là \"do đó\" - sai quan hệ ý. Câu cần ý đối lập - 그러나."
+          },
+          {
+            "answer": "그래서",
+            "error_tag": "register_spoken",
+            "feedback_vi": "그래서 là văn nói và sai quan hệ ý. Dùng 그러나."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "template": "Viết lại bằng văn phong bài luận: \"근데 이 방법에도 한계가 있다.\" → {{b1}} 이 방법에도 한계가 있다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "ec8d8b8e84b5639795c79ebd3a6f2bcabe2caff7cbec99c76302e95ca6ed045c",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "68bd7dd4-d22f-5696-abf8-883920f38f18",
+      "is_demo": true,
+      "item_id": "a8915898-eecc-5364-8e62-95517ffbb661",
+      "key": "ko:exercise:ac-review-listen-lecture",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "q4z"
+        },
+        "display_answer": "Như đã xem xét ở trên, phán đoán của AI rốt cuộc buộc phải dựa vào dữ liệu.",
+        "explanation": {
+          "vi": "살펴본 바와 같이 = \"như đã xem xét\" (việc đã làm, không phải sẽ làm); 의존할 수밖에 없다 = buộc phải dựa vào. Chủ thể phán đoán là 인공지능, đối tượng dựa vào là 데이터."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "order_index": 0,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "앞에서 살펴본 바와 같이 인공지능의 판단은 결국 데이터에 의존할 수밖에 없습니다.",
+        "options": [
+          {
+            "id": "q4z",
+            "lang": "vi",
+            "text": "Như đã xem xét ở trên, phán đoán của AI rốt cuộc buộc phải dựa vào dữ liệu."
+          },
+          {
+            "id": "t2b",
+            "lang": "vi",
+            "text": "Chúng ta sẽ xem xét cách AI tạo ra dữ liệu ở phần sau."
+          },
+          {
+            "id": "e7h",
+            "lang": "vi",
+            "text": "Như đã xem xét ở trên, phán đoán của AI không cần dựa vào dữ liệu."
+          },
+          {
+            "id": "y6m",
+            "lang": "vi",
+            "text": "Phán đoán của con người rốt cuộc phải dựa vào AI."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "a104368e7645b5217d0acf27be8ba28d15edb1489b956c01e1ba8ed1e1b751fa",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "ec01981b-f04c-5bce-8f9c-773366c2ab12",
+      "is_demo": true,
+      "item_id": "14f27995-17fc-58cf-b695-930f011494b1",
+      "key": "ko:exercise:ac-review-mcq-column-main-idea",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r8c"
+        },
+        "display_answer": "Tôn trọng hệ giá trị của nhau thì ngày lễ trở thành dịp cùng kế thừa truyền thống.",
+        "explanation": {
+          "vi": "Ý chính nằm sau 그러나 - nếu 가치관을 존중 thì ngày lễ là dịp 전통을 계승. Câu đầu chỉ nêu vấn đề; đoạn văn không khuyên bỏ tụ họp hay nói xung đột là tất yếu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "r8c",
+            "lang": "vi",
+            "text": "Tôn trọng hệ giá trị của nhau thì ngày lễ trở thành dịp cùng kế thừa truyền thống."
+          },
+          {
+            "id": "s9f",
+            "lang": "vi",
+            "text": "Thế hệ trẻ không còn quan tâm đến truyền thống ngày lễ."
+          },
+          {
+            "id": "j1k",
+            "lang": "vi",
+            "text": "Xung đột thế hệ ngày lễ là điều không thể tránh khỏi."
+          },
+          {
+            "id": "w3n",
+            "lang": "vi",
+            "text": "Nên bỏ việc tụ họp ngày lễ để tránh xung đột thế hệ."
+          }
+        ],
+        "shuffle": true,
+        "stem": "명절에 가족이 모이면 세대 갈등이 생기기 쉽다. 그러나 서로의 가치관을 존중한다면 명절은 갈등의 시간이 아니라 전통을 함께 계승하는 시간이 될 수 있다. - Ý chính của đoạn chuyên mục này là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "dd5992e07cdaec8bd134454aac2fabccaa2ec43db0d2f542e158b34dc06debac",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "eb0d204c-44e7-5cdd-ae70-d8897be40cc3",
+      "is_demo": true,
+      "item_id": "98bd9b67-b0be-51b6-b20b-8a8e24e4817b",
+      "key": "ko:exercise:ac-review-mcq-iwa-gachi",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "p5u"
+        },
+        "display_answer": "이와 같이",
+        "explanation": {
+          "vi": "Mở đầu kết bài, tóm lại các ý đã trình bày - 이와 같이. 첫째 dùng ở thân bài; 근데 và 그래서 là văn nói."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "a2y",
+            "lang": "ko",
+            "text": "근데"
+          },
+          {
+            "id": "p5u",
+            "lang": "ko",
+            "text": "이와 같이"
+          },
+          {
+            "id": "h8d",
+            "lang": "ko",
+            "text": "첫째"
+          },
+          {
+            "id": "m6r",
+            "lang": "ko",
+            "text": "그래서"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu đầu tiên của phần kết bài: \"___ 세대 갈등은 서로의 가치관을 존중할 때 줄일 수 있다.\" Chọn từ phù hợp nhất.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "1e829560dd69eb283d160603d3b2c20441482839aef96ef07e94d089abc8aa47",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "e3f64d64-67cd-54c9-a395-20dc345f619a",
+      "is_demo": true,
+      "item_id": "2b9a0738-8fd3-5521-88aa-8c006d151c78",
+      "key": "ko:exercise:ac-review-mcq-keonyeong-column",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "x1s"
+        },
+        "display_answer": "기는커녕",
+        "explanation": {
+          "vi": "Vế sau 관심조차 없다 (ngay cả quan tâm cũng không) còn tệ hơn kỳ vọng \"giữ truyền thống\" - đúng ngữ cảnh -기는커녕. 지키는 한 (chừng nào còn giữ) và 지키는 데다가 (đã giữ lại còn) mâu thuẫn với vế \"không quan tâm\"; 지키지 않을 수 없어 thì sai cả nghĩa lẫn hình thức."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "f6p",
+            "lang": "ko",
+            "text": "는 한"
+          },
+          {
+            "id": "x1s",
+            "lang": "ko",
+            "text": "기는커녕"
+          },
+          {
+            "id": "n3g",
+            "lang": "ko",
+            "text": "는 데다가"
+          },
+          {
+            "id": "b8t",
+            "lang": "ko",
+            "text": "지 않을 수 없어"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chuyên mục văn hoá: \"일부 젊은이들은 전통을 지키___ 관심조차 없다는 비판을 받는다.\" Chọn đáp án đúng.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "2d30d8b37725f7d1995828c2ddcef858ecb3e0c51b7f48e4d1175a0f6137fcee",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "c5cdc84b-61b5-5291-b2c4-2b561c7dfce4",
+      "is_demo": true,
+      "item_id": "bbd60131-5b58-566c-902d-248bd83e3b43",
+      "key": "ko:exercise:ac-review-mcq-proverb-essay",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c9a"
+        },
+        "display_answer": "티끌 모아 태산",
+        "explanation": {
+          "vi": "Ý đoạn văn là nhiều khoản nhỏ góp lại thành giúp đỡ lớn - 티끌 모아 태산. 금상첨화 là tốt thêm tốt, 우물 안 개구리 là hiểu biết hạn hẹp, 작심삼일 là thiếu kiên trì."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "order_index": 7,
+      "prompt": {
+        "options": [
+          {
+            "id": "z7e",
+            "lang": "ko",
+            "text": "작심삼일"
+          },
+          {
+            "id": "l4v",
+            "lang": "ko",
+            "text": "금상첨화"
+          },
+          {
+            "id": "c9a",
+            "lang": "ko",
+            "text": "티끌 모아 태산"
+          },
+          {
+            "id": "o2w",
+            "lang": "ko",
+            "text": "우물 안 개구리"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn tục ngữ hợp với đoạn bài luận: \"___(이)라는 말이 있듯이 적은 돈이라도 꾸준히 기부하면 큰 도움이 된다.\"",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "8ab60d827053b368379e9aedd5ee6e4d88472cecf9041b55a64ab4918d80ee22",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "3916dd49-5a08-58b1-97de-e246fabd7152",
+      "is_demo": true,
+      "item_id": "98bd9b67-b0be-51b6-b20b-8a8e24e4817b",
+      "key": "ko:exercise:ac-review-order-conclusion",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t-iwa",
+              "t-se",
+              "t-dae",
+              "t-jul"
+            ],
+            [
+              "t-iwa",
+              "t-dae",
+              "t-se",
+              "t-jul"
+            ]
+          ]
+        },
+        "display_answer": "이와 같이 세대 갈등은 대화를 통해 줄일 수 있다.",
+        "explanation": {
+          "vi": "이와 같이 mở đầu kết bài, động từ 줄일 수 있다 đứng cuối với đuôi văn viết. 근데 và 줄일 수 있어요 là token nhiễu thuộc văn nói; 세대 갈등은 và 대화를 통해 có thể đổi chỗ cho nhau."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu kết bài: \"Như vậy, xung đột thế hệ có thể giảm bớt thông qua đối thoại.\"",
+        "tokens": [
+          {
+            "id": "t-dae",
+            "text": "대화를 통해"
+          },
+          {
+            "id": "t-geunde",
+            "text": "근데"
+          },
+          {
+            "id": "t-jul",
+            "text": "줄일 수 있다"
+          },
+          {
+            "id": "t-iwa",
+            "text": "이와 같이"
+          },
+          {
+            "id": "t-julyo",
+            "text": "줄일 수 있어요"
+          },
+          {
+            "id": "t-se",
+            "text": "세대 갈등은"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "1fc78c08ca71349b9626c62cc6f58390fcd3c3402eb66dc9684a30402fa0bc81",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "9e4c7521-de9e-5f2b-9dd8-344b7478e313",
+      "is_demo": true,
+      "item_id": "c9c66fd3-6c44-5dfc-9d88-78b8225ec8e5",
+      "key": "ko:exercise:ac-review-translate-inhae",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "기후 변화로 인해 여름이 점점 더워지고 있다.",
+            "기후 변화로 인해서 여름이 점점 더워지고 있다.",
+            "기후 변화로 인해 여름이 갈수록 더워지고 있다.",
+            "기후 변화로 인해 여름이 점점 더 더워지고 있다.",
+            "기후 변화로 인해 여름이 점점 더워지고 있습니다.",
+            "기후 변화로 인해 여름이 점점 더워지고 있어요.",
+            "기후 변화 때문에 여름이 점점 더워지고 있다."
+          ]
+        },
+        "display_answer": "기후 변화로 인해 여름이 점점 더워지고 있다.",
+        "explanation": {
+          "vi": "기후 변화 (biến đổi khí hậu) là danh từ nên + 로 인해. \"Ngày càng nóng\" = 점점 더워지다; quá trình đang diễn ra dùng -고 있다."
+        },
+        "known_wrong": [
+          {
+            "answer": "기후 변화에 인해 여름이 점점 더워지고 있다.",
+            "error_tag": "particle_choice",
+            "feedback_vi": "Cấu trúc là N(으)로 인해 - 변화로 인해, không dùng 에."
+          },
+          {
+            "answer": "기후 변화로 인해 여름이 점점 덥고 있다.",
+            "error_tag": "adjective_progressive",
+            "feedback_vi": "Tính từ 덥다 không đi với -고 있다. \"Ngày càng nóng\" là 더워지고 있다 (-아/어지다)."
+          },
+          {
+            "answer": "기후가 변하기로 인해 여름이 점점 더워지고 있다.",
+            "error_tag": "noun_only",
+            "feedback_vi": "(으)로 인해 chỉ đi sau danh từ - 기후 변화로 인해."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Do biến đổi khí hậu, mùa hè ngày càng nóng hơn."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "b3058f67c32fc3b5f91dec8656435fd6ab371443c615642b9f8b3b42646be301",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "7a1e8b0d-c32c-5895-ab52-5b5d8e51f66f",
+      "is_demo": true,
+      "item_id": "f89399e5-96b2-5d11-a1b0-2e2258e87b0a",
+      "key": "ko:exercise:ac-review-translate-jieonjeong",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Dù trời có mưa, tôi cũng nhất định sẽ giữ lời hứa.",
+            "Dù trời có mưa, tôi cũng sẽ giữ lời hứa.",
+            "Dù trời có mưa, tôi vẫn nhất định giữ lời hứa.",
+            "Dù có mưa, tôi cũng nhất định sẽ giữ lời hứa.",
+            "Dù trời có mưa đi nữa, tôi cũng nhất định giữ lời hứa.",
+            "Cho dù trời có mưa, tôi cũng nhất định sẽ giữ lời hứa.",
+            "Dù trời mưa, tôi cũng nhất định sẽ giữ lời hứa.",
+            "Dù có mưa đi nữa, tôi vẫn nhất định giữ lời hứa."
+          ]
+        },
+        "display_answer": "Dù trời có mưa, tôi cũng nhất định sẽ giữ lời hứa.",
+        "explanation": {
+          "vi": "올지언정 = \"dù có mưa đi nữa\"; 꼭 지키겠다 = nhất định sẽ giữ (ý chí). Vế trước là điều xấu người nói chấp nhận, vế sau là lập trường."
+        },
+        "known_wrong": [
+          {
+            "answer": "Vì trời mưa nên tôi nhất định sẽ giữ lời hứa.",
+            "error_tag": "connective_meaning",
+            "feedback_vi": "-(으)ㄹ지언정 là nhượng bộ \"dù có... cũng\", không phải nguyên nhân."
+          },
+          {
+            "answer": "Nếu trời mưa thì tôi sẽ không giữ lời hứa.",
+            "error_tag": "meaning_reversed",
+            "feedback_vi": "Câu gốc khẳng định giữ lời hứa (지키겠다) bất chấp trời mưa."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "비가 올지언정 약속은 꼭 지키겠다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "15752eb3e941bab12b8d7a6317cb55343e4042f14cb3ac692ba930898b7fb3db",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "cf88b9f4-aebf-5ddb-bf4a-8b55a74ab6a7",
+      "is_demo": true,
+      "item_id": "029c9a8e-08c3-54f7-9337-ff0962174dba",
+      "key": "ko:exercise:ac-review-translate-yulli",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "이는 윤리 문제라고 볼 수 있다.",
+            "이것은 윤리 문제라고 볼 수 있다.",
+            "이는 윤리적인 문제라고 볼 수 있다.",
+            "이는 윤리적 문제라고 볼 수 있다.",
+            "이것은 윤리적인 문제라고 볼 수 있다.",
+            "이는 윤리의 문제라고 볼 수 있다.",
+            "이는 윤리 문제라고 볼 수 있습니다.",
+            "이것은 윤리 문제라고 볼 수 있어요."
+          ]
+        },
+        "display_answer": "이는 윤리 문제라고 볼 수 있다.",
+        "explanation": {
+          "vi": "\"Có thể xem là\" = -다고 볼 수 있다; sau danh từ 문제 dùng 라고. \"Đạo đức\" trong ngữ cảnh học thuật là 윤리, có thể dùng 윤리적(인) 문제."
+        },
+        "known_wrong": [
+          {
+            "answer": "이는 윤리 문제다고 볼 수 있다.",
+            "error_tag": "quotation_noun",
+            "feedback_vi": "Sau danh từ dùng -(이)라고, không dùng -다고 - 문제라고."
+          },
+          {
+            "answer": "이는 논리 문제라고 볼 수 있다.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "논리 là \"logic, lô-gích\". \"Đạo đức\" là 윤리."
+          },
+          {
+            "answer": "이는 윤리 문제라고 볼 수 있어.",
+            "error_tag": "register_ending",
+            "feedback_vi": "Đuôi 반말 không hợp văn viết. Dùng 볼 수 있다."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "order_index": 10,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Có thể xem đây là một vấn đề đạo đức."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "830788959fc3b14390b7a10ae105349baaf63fb6bd3da884c1268efb9b259a65",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "3da00a1a-7729-5dfd-b9d6-063220b61185",
+      "is_demo": true,
+      "item_id": "a8915898-eecc-5364-8e62-95517ffbb661",
+      "key": "ko:exercise:ac-stance-fill-bawa",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "바와"
+            ]
+          }
+        },
+        "display_answer": "앞에서 살펴본 바와 같이 가치관의 차이는 갈등의 원인이 되기도 한다.",
+        "explanation": {
+          "vi": "-(으)ㄴ 바와 같이 = \"như đã...\". 바 kết thúc bằng nguyên âm nên đi với 와. Đây là cụm mở đầu chuẩn trong bài luận và báo cáo."
+        },
+        "known_wrong": [
+          {
+            "answer": "바가",
+            "error_tag": "particle_choice",
+            "feedback_vi": "Trước 같이 phải dùng trợ từ 와 - 바와 같이."
+          },
+          {
+            "answer": "바를",
+            "error_tag": "particle_choice",
+            "feedback_vi": "Trước 같이 phải dùng trợ từ 와 - 바와 같이."
+          },
+          {
+            "answer": "바과",
+            "error_tag": "particle_allomorph",
+            "feedback_vi": "바 không có patchim nên dùng 와, không dùng 과."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Cụm cố định nghĩa là \"như đã xem xét\".",
+          "Danh từ phụ thuộc 바 + trợ từ 와."
+        ],
+        "template": "앞에서 살펴본 {{b1}} 같이 가치관의 차이는 갈등의 원인이 되기도 한다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "cf0a2db5a39d96821a4236936bfa45843b13f77286d766f71385232fa6bb0d88",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "751e4d7c-4605-52f3-8e08-9eb772ff2901",
+      "is_demo": true,
+      "item_id": "2b9a0738-8fd3-5521-88aa-8c006d151c78",
+      "key": "ko:exercise:ac-stance-fill-eunkeonyeong",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "은커녕"
+            ]
+          }
+        },
+        "display_answer": "칭찬은커녕 꾸중만 들었다.",
+        "explanation": {
+          "vi": "Sau danh từ dùng N은/는커녕; 칭찬 có patchim nên là 은커녕. Vế sau 꾸중만 들었다 trái với kỳ vọng được khen."
+        },
+        "known_wrong": [
+          {
+            "answer": "는커녕",
+            "error_tag": "particle_allomorph",
+            "feedback_vi": "칭찬 có patchim ㄴ nên dùng 은커녕."
+          },
+          {
+            "answer": "뿐만 아니라",
+            "error_tag": "connective_meaning",
+            "feedback_vi": "뿐만 아니라 cộng hai ý cùng chiều. Ở đây vế sau trái kỳ vọng nên dùng 은커녕."
+          },
+          {
+            "answer": "커녕",
+            "error_tag": "missing_particle",
+            "feedback_vi": "Sau danh từ cần trợ từ 은/는 - 칭찬은커녕."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "Chẳng được khen mà còn bị mắng. - 칭찬{{b1}} 꾸중만 들었다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "c2bcf4ebb5804c3559de9641c43b37c0f792007eaa88ee1d77c1982eb2b721e0",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "61cfec85-6242-5432-a82f-40f189f680f6",
+      "is_demo": true,
+      "item_id": "f89399e5-96b2-5d11-a1b0-2e2258e87b0a",
+      "key": "ko:exercise:ac-stance-fill-jieonjeong",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "실패할지언정"
+            ]
+          }
+        },
+        "display_answer": "실패할지언정 포기하지는 않겠다.",
+        "explanation": {
+          "vi": "실패하다 (thất bại) + -ㄹ지언정 → 실패할지언정. Vế sau 포기하지는 않겠다 là ý chí mạnh, đúng với cấu trúc này."
+        },
+        "known_wrong": [
+          {
+            "answer": "실패한지언정",
+            "error_tag": "modifier_form",
+            "feedback_vi": "Cấu trúc là -(으)ㄹ지언정, dùng ㄹ - 실패할지언정."
+          },
+          {
+            "answer": "실패하지언정",
+            "error_tag": "modifier_form",
+            "feedback_vi": "Thiếu ㄹ. Gốc 실패하 + -ㄹ지언정 → 실패할지언정."
+          },
+          {
+            "answer": "실패할 지언정",
+            "error_tag": "spacing_ending",
+            "feedback_vi": "-(으)ㄹ지언정 là một đuôi liền, viết dính - 실패할지언정."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 7
+          }
+        ],
+        "template": "Dù có thất bại, tôi cũng nhất định không bỏ cuộc (dùng -(으)ㄹ지언정). - {{b1}} 포기하지는 않겠다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "b7fcfaaec59a784dc78e9f4897e44335464adbd191259b1d4849854b73717ac7",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "4709ac3d-2b94-541c-8d4c-4001da9aebcf",
+      "is_demo": true,
+      "item_id": "9afc33e8-ca0b-54ef-b9d2-21dc12f3e859",
+      "key": "ko:exercise:ac-stance-listen-column",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c6t"
+        },
+        "display_answer": "Truyền thống không chỉ để giữ nguyên mà cần được kế thừa cho phù hợp với thời đại.",
+        "explanation": {
+          "vi": "-기만 하는 것이 아니라 = \"không chỉ\"; 시대에 맞게 계승하다 = kế thừa cho hợp thời đại. Người viết không muốn bỏ truyền thống mà muốn đổi mới cách giữ gìn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "전통은 그대로 지키기만 하는 것이 아니라 시대에 맞게 계승해야 하는 것이다.",
+        "options": [
+          {
+            "id": "c6t",
+            "lang": "vi",
+            "text": "Truyền thống không chỉ để giữ nguyên mà cần được kế thừa cho phù hợp với thời đại."
+          },
+          {
+            "id": "r5q",
+            "lang": "vi",
+            "text": "Truyền thống không còn phù hợp với thời đại nên cần bỏ đi."
+          },
+          {
+            "id": "w8e",
+            "lang": "vi",
+            "text": "Thời đại thay đổi nên truyền thống tự biến mất."
+          },
+          {
+            "id": "f1m",
+            "lang": "vi",
+            "text": "Truyền thống chỉ cần được giữ nguyên như cũ."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "50d5272615325d9cf72c970cf4a47d1126d61e6050eaefa92a6186f5d4a6fe01",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "101b70e9-706f-5326-907a-8096d456ab32",
+      "is_demo": true,
+      "item_id": "a4d0e423-e4de-51b6-8528-c92bc35c733d",
+      "key": "ko:exercise:ac-stance-mcq-gongbu-false-friend",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "s2k"
+        },
+        "display_answer": "이 요리는 정성이 많이 들어갔다.",
+        "explanation": {
+          "vi": "\"Công phu\" (tốn công, tỉ mỉ) là 정성이 많이 들어가다. 공부 trong tiếng Hàn chỉ là \"việc học\", và 사정 là hoàn cảnh riêng - cả hai đều là bẫy Hán Việt."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "order_index": 7,
+      "prompt": {
+        "options": [
+          {
+            "id": "t9f",
+            "lang": "ko",
+            "text": "이 요리는 공부를 많이 했다."
+          },
+          {
+            "id": "b4y",
+            "lang": "ko",
+            "text": "이 요리는 사정이 많다."
+          },
+          {
+            "id": "s2k",
+            "lang": "ko",
+            "text": "이 요리는 정성이 많이 들어갔다."
+          },
+          {
+            "id": "m6n",
+            "lang": "ko",
+            "text": "이 요리는 공부가 많이 들었다."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn muốn viết: \"Món ăn này được làm rất công phu.\" Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "c0521fa6ac46375deb093b6f2bb0b9017b0e5047449032361aca731fc656f21d",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "5b53db07-b4f2-5d0e-a47c-29c8dd844d7d",
+      "is_demo": true,
+      "item_id": "2b9a0738-8fd3-5521-88aa-8c006d151c78",
+      "key": "ko:exercise:ac-stance-mcq-keonyeong-meaning",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k2v"
+        },
+        "display_answer": "Chẳng những không để dành được tiền mà nợ còn tăng lên.",
+        "explanation": {
+          "vi": "-기는커녕 = \"chẳng những không\"; vế sau 빚만 늘었다 (chỉ có nợ tăng) trái với kỳ vọng để dành tiền."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "j5p",
+            "lang": "vi",
+            "text": "Để dành tiền xong thì nợ mới tăng lên."
+          },
+          {
+            "id": "z3h",
+            "lang": "vi",
+            "text": "Muốn để dành tiền thì phải trả nợ trước."
+          },
+          {
+            "id": "k2v",
+            "lang": "vi",
+            "text": "Chẳng những không để dành được tiền mà nợ còn tăng lên."
+          },
+          {
+            "id": "y8d",
+            "lang": "vi",
+            "text": "Vừa để dành được tiền vừa trả bớt được nợ."
+          }
+        ],
+        "shuffle": true,
+        "stem": "돈을 모으기는커녕 빚만 늘었다. - Câu này nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "335cf85513ca342c05e081a9b16ae5e981abe09c31be2bb876e7400298596b66",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "feb3a607-ce05-5de5-9c03-e01ef8e91da3",
+      "is_demo": true,
+      "item_id": "de804716-9ac6-5c33-a4f2-4240cecfc79a",
+      "key": "ko:exercise:ac-stance-mcq-sajeong",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "d7w"
+        },
+        "display_answer": "Vì có việc riêng nên tôi đã không thể tham dự cuộc họp.",
+        "explanation": {
+          "vi": "개인 사정 là \"việc riêng, hoàn cảnh riêng\" - cách nói lịch sự, không cần giải thích chi tiết. Đây không phải \"sự tình\" theo nghĩa kể chuyện; 참석하지 못했습니다 là \"đã không thể tham dự\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "q5r",
+            "lang": "vi",
+            "text": "Vì không thích cuộc họp nên tôi đã không đến."
+          },
+          {
+            "id": "v3l",
+            "lang": "vi",
+            "text": "Tôi đã tham dự cuộc họp vì việc cá nhân."
+          },
+          {
+            "id": "h1u",
+            "lang": "vi",
+            "text": "Tôi đã kể sự tình cá nhân trong cuộc họp."
+          },
+          {
+            "id": "d7w",
+            "lang": "vi",
+            "text": "Vì có việc riêng nên tôi đã không thể tham dự cuộc họp."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Email gửi công ty: \"개인 사정으로 회의에 참석하지 못했습니다.\" Nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "536ffa4ef77720f9ea5f38a4f629aea99c5838c221c192fef0e8e9e68540ef1a",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "831b04ec-163b-576d-86fc-be804963f34e",
+      "is_demo": true,
+      "item_id": "faf19bb2-c720-588d-8e57-1df88423a479",
+      "key": "ko:exercise:ac-stance-mcq-ttareum",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "n4c"
+        },
+        "display_answer": "따름입니다",
+        "explanation": {
+          "vi": "-(으)ㄹ 따름이다 = \"chỉ... mà thôi\", khiêm tốn và trang trọng, rất hợp lời phát biểu. 셈이다 là \"coi như\", 불과하다 đi sau danh từ + 에, còn -(으)ㄹ지언정 là liên từ, không đứng cuối câu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "o9b",
+            "lang": "ko",
+            "text": "지언정입니다"
+          },
+          {
+            "id": "e1x",
+            "lang": "ko",
+            "text": "불과합니다"
+          },
+          {
+            "id": "g7a",
+            "lang": "ko",
+            "text": "셈입니다"
+          },
+          {
+            "id": "n4c",
+            "lang": "ko",
+            "text": "따름입니다"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Phát biểu khi nhận giải: \"이렇게 큰 상을 받게 되어 그저 감사할 ___.\" (Tôi chỉ biết cảm ơn mà thôi.)",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "62da2c35224e2fa29bd321e28d530026810cc28bef475803465abb14fe0b3236",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "17595afa-38bd-53cb-9ae5-3a5fcf22783e",
+      "is_demo": true,
+      "item_id": "f89399e5-96b2-5d11-a1b0-2e2258e87b0a",
+      "key": "ko:exercise:ac-stance-order-jieonjeong",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t-gul",
+              "t-nam",
+              "t-hum",
+              "t-an"
+            ]
+          ]
+        },
+        "display_answer": "굶을지언정 남의 것을 훔치지는 않겠다.",
+        "explanation": {
+          "vi": "Vế chấp nhận điều xấu 굶을지언정 đứng trước, vế lập trường 남의 것을 훔치지는 않겠다 đứng sau. 굶은지언정 sai hình thức (phải là ㄹ), 훔치세요 là lời khuyên, không phải ý chí."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Dù có phải nhịn đói, tôi cũng nhất định không lấy trộm đồ của người khác.\"",
+        "tokens": [
+          {
+            "id": "t-an",
+            "text": "않겠다"
+          },
+          {
+            "id": "t-nam",
+            "text": "남의 것을"
+          },
+          {
+            "id": "t-guleun",
+            "text": "굶은지언정"
+          },
+          {
+            "id": "t-hum",
+            "text": "훔치지는"
+          },
+          {
+            "id": "t-se",
+            "text": "훔치세요"
+          },
+          {
+            "id": "t-gul",
+            "text": "굶을지언정"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "0307ad15f9709d8626a392c7d5a6694314bf07d11646d3f2aceb1a2d4b84c840",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "c2b5eff1-b3f4-5cf8-b266-38521ee57e2a",
+      "is_demo": true,
+      "item_id": "08360000-9106-57f8-bde7-0479833616e1",
+      "key": "ko:exercise:ac-stance-translate-gachigwan",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "세대마다 가치관이 다르다.",
+            "세대마다 가치관이 서로 다르다.",
+            "세대별로 가치관이 다르다.",
+            "각 세대는 가치관이 다르다.",
+            "세대마다 가치관이 다릅니다.",
+            "세대마다 가치관이 달라요."
+          ]
+        },
+        "display_answer": "세대마다 가치관이 다르다.",
+        "explanation": {
+          "vi": "N마다 = mỗi N; 가치관 = hệ giá trị; 다르다 = khác. Đuôi -다 hợp văn viết, 다릅니다/달라요 cũng được."
+        },
+        "known_wrong": [
+          {
+            "answer": "세대마다 가치가 다르다.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "가치 là \"giá trị\" của một vật. \"Hệ giá trị, quan niệm sống\" là 가치관."
+          },
+          {
+            "answer": "세대마다 가치관이 틀리다.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "틀리다 là \"sai\". \"Khác nhau\" là 다르다 - lỗi người Hàn cũng hay mắc trong văn nói."
+          },
+          {
+            "answer": "sedaemada gachigwani dareuda",
+            "error_tag": "romanization",
+            "feedback_vi": "Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Mỗi thế hệ có hệ giá trị khác nhau."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "3148c07a6f87b5d98dc8044d1eb0ed702cd49642b0031b1a9cea25e7e7924ff2",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "1a1df088-211b-59eb-9ac2-da08b5ab92e8",
+      "is_demo": true,
+      "item_id": "9afc33e8-ca0b-54ef-b9d2-21dc12f3e859",
+      "key": "ko:exercise:ac-stance-translate-gyeseung",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Thế hệ trẻ đang kế thừa truyền thống.",
+            "Các thế hệ trẻ đang kế thừa truyền thống.",
+            "Thế hệ trẻ đang tiếp nối truyền thống.",
+            "Thế hệ trẻ đang kế tục truyền thống.",
+            "Lớp trẻ đang kế thừa truyền thống.",
+            "Giới trẻ đang kế thừa truyền thống.",
+            "Thế hệ trẻ đang gìn giữ và kế thừa truyền thống."
+          ]
+        },
+        "display_answer": "Thế hệ trẻ đang kế thừa truyền thống.",
+        "explanation": {
+          "vi": "젊은 세대 = thế hệ trẻ, 전통 = truyền thống, 계승하고 있다 = đang kế thừa. Trong tiếng Việt, \"thừa kế\" dùng cho tài sản, nên chọn \"kế thừa\"."
+        },
+        "known_wrong": [
+          {
+            "answer": "Thế hệ trẻ đang thừa kế truyền thống.",
+            "error_tag": "sino_false_friend",
+            "feedback_vi": "\"Thừa kế\" dùng cho tài sản (상속). Với truyền thống, nói \"kế thừa\" hoặc \"tiếp nối\"."
+          },
+          {
+            "answer": "Thế hệ trẻ đang phá bỏ truyền thống.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "계승하다 là kế thừa, tiếp nối - nghĩa ngược với phá bỏ."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "젊은 세대가 전통을 계승하고 있다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "00dfd62feca8cf0f75acf8a4080e77320338238b9c02f88f9904b85fc7b86d80",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "24edb522-9767-5ae1-94dd-6b7d3c935fd5",
+      "is_demo": true,
+      "item_id": "faf19bb2-c720-588d-8e57-1df88423a479",
+      "key": "ko:exercise:ac-stance-translate-ttareum",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "저는 제 할 일을 했을 따름입니다.",
+            "제 할 일을 했을 따름입니다.",
+            "저는 제가 할 일을 했을 따름입니다.",
+            "저는 제 할 일을 할 따름입니다.",
+            "제 할 일을 할 따름입니다.",
+            "저는 제 할 일을 했을 뿐입니다.",
+            "제 할 일을 했을 뿐입니다."
+          ]
+        },
+        "display_answer": "저는 제 할 일을 했을 따름입니다.",
+        "explanation": {
+          "vi": "\"Chỉ... mà thôi\" trang trọng = -(으)ㄹ 따름입니다; việc đã làm thì 했을 따름입니다. -(으)ㄹ 뿐입니다 cùng nghĩa, bớt trang trọng một chút."
+        },
+        "known_wrong": [
+          {
+            "answer": "저는 제 할 일을 한 따름입니다.",
+            "error_tag": "modifier_form",
+            "feedback_vi": "Cấu trúc là -(으)ㄹ 따름이다 - 했을 따름 hoặc 할 따름, không dùng 한."
+          },
+          {
+            "answer": "저는 제 할 일을 했을 따름이야.",
+            "error_tag": "register_ending",
+            "feedback_vi": "따름 là cách nói trang trọng; đuôi 반말 -야 không hợp. Dùng 따름입니다."
+          },
+          {
+            "answer": "저는 제 할 일만 했어.",
+            "error_tag": "register_ending",
+            "feedback_vi": "Đuôi 반말 không đúng yêu cầu \"trang trọng\". Dùng -(으)ㄹ 따름입니다."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "order_index": 10,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi chỉ làm việc của mình mà thôi. (trang trọng)"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
       "content_hash": "6d04f34b1a81804cedfcb1d8b681df98cc5147537b5993ea560ecff6454d0c58",
       "difficulty": 1,
       "exercise_type": "word_bank",
@@ -59494,6 +63285,795 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ko",
+      "content_hash": "44a3634281a1293f940ebc1b6515121f62a76bc402dd1990a035e1b79e7f452c",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "6ae74244-c355-5cce-9d87-76e995e4d70a",
+      "is_demo": true,
+      "item_id": "cc8cc5c3-0420-5638-bb6f-4cbd22f62a8e",
+      "key": "ko:exercise:comparing-cultures-fill-boda-different",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "보다"
+            ],
+            "b2": [
+              "달라요"
+            ]
+          }
+        },
+        "display_answer": "베트남은 한국보다 더 따뜻해요. 그리고 두 나라는 음식 문화도 달라요.",
+        "explanation": {
+          "vi": "한국보다 - \"hơn Hàn Quốc\". 다르다 chia 해요체 theo bất quy tắc 르 → 달라요."
+        },
+        "known_wrong": [
+          {
+            "answer": "다라요",
+            "error_tag": "reu_irregular",
+            "feedback_vi": "다르다 là bất quy tắc 르 - thêm một ㄹ thành 달라요."
+          },
+          {
+            "answer": "다르어요",
+            "error_tag": "reu_irregular",
+            "feedback_vi": "다르다 là bất quy tắc 르 - viết 달라요."
+          },
+          {
+            "answer": "이",
+            "error_tag": "boda_missing",
+            "feedback_vi": "Cần trợ từ so sánh 보다 (hơn), không phải trợ từ chủ ngữ."
+          },
+          {
+            "answer": "비슷해요",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "비슷해요 là \"giống nhau\"; câu cần \"khác nhau\" - 달라요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          },
+          {
+            "id": "b2",
+            "width_hint": 3
+          }
+        ],
+        "template": "(Việt Nam ấm hơn Hàn Quốc. Và văn hoá ẩm thực của hai nước cũng khác nhau.) 베트남은 한국{{b1}} 더 따뜻해요. 그리고 두 나라는 음식 문화도 {{b2}}."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "4aeb24eb2319c83758b3067f228000fa9092e17acf438bb8f405bcfdb739719b",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "bfc3d003-5657-5e0c-8c8a-a2771a262cf3",
+      "is_demo": true,
+      "item_id": "7c6024c4-96a6-571e-8836-b1916873a32e",
+      "key": "ko:exercise:comparing-cultures-fill-similar-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "비슷해요"
+            ]
+          }
+        },
+        "display_answer": "한국과 베트남은 문화가 비슷해요.",
+        "explanation": {
+          "vi": "비슷하다 → 비슷해요 (giống, tương tự). Vế sau 하지만 차이도 있어요 cho thấy chỉ \"gần giống\", nên không dùng 같아요."
+        },
+        "known_wrong": [
+          {
+            "answer": "같아요",
+            "error_tag": "similar_same",
+            "feedback_vi": "같아요 là \"giống hệt\", mâu thuẫn với vế sau \"cũng có khác biệt\". Dùng 비슷해요 (tương tự)."
+          },
+          {
+            "answer": "비슷이에요",
+            "error_tag": "haeyo_form",
+            "feedback_vi": "비슷하다 là tính từ, chia 해요체 thành 비슷해요."
+          },
+          {
+            "answer": "달라요",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "달라요 là \"khác\". Câu đầu nói hai nước giống nhau."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Hàn Quốc và Việt Nam có văn hoá giống nhau. Nhưng cũng có khác biệt.",
+          "Gợi ý: tính từ 비슷하다 ở đuôi 해요체."
+        ],
+        "template": "한국과 베트남은 문화가 {{b1}}. 하지만 차이도 있어요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "a9cc8d208f4d1415fc8115a8ddbe3be5b6490061baca8d3bd7a0d6faa5a4e9e6",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "c38ed525-622e-5b79-aa66-28c0a003c5cc",
+      "is_demo": true,
+      "item_id": "897c1b9f-774a-5636-bac2-2ae7f986549b",
+      "key": "ko:exercise:comparing-cultures-listen-e-bihae",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "v3h"
+        },
+        "display_answer": "Dạo này người Việt quan tâm đến văn hoá Hàn Quốc nhiều hơn so với trước đây.",
+        "explanation": {
+          "vi": "예전에 비해 là \"so với trước đây\", 관심이 많아요 là \"quan tâm nhiều\". Chủ ngữ là 베트남 사람들 và đối tượng là 한국 문화."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "요즘 베트남 사람들은 예전에 비해 한국 문화에 관심이 많아요.",
+        "options": [
+          {
+            "id": "l6q",
+            "lang": "vi",
+            "text": "Dạo này người Việt ít quan tâm đến văn hoá Hàn Quốc hơn trước."
+          },
+          {
+            "id": "n1w",
+            "lang": "vi",
+            "text": "Trước đây người Hàn quan tâm nhiều đến văn hoá Việt Nam."
+          },
+          {
+            "id": "s9c",
+            "lang": "vi",
+            "text": "Văn hoá Việt Nam và văn hoá Hàn Quốc rất giống nhau."
+          },
+          {
+            "id": "v3h",
+            "lang": "vi",
+            "text": "Dạo này người Việt quan tâm đến văn hoá Hàn Quốc nhiều hơn so với trước đây."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "f8c0f95bd7edde24bf2b6a788cd8ddf93e217ae3011eb9e9ce4df4d0f963456b",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "201b58fc-3fc5-5bdf-bf0e-e911b2e962fd",
+      "is_demo": true,
+      "item_id": "5abfed32-27ab-5172-8dc7-6dd28bce3398",
+      "key": "ko:exercise:comparing-cultures-mcq-banmyeon-form",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "e4r"
+        },
+        "display_answer": "편리한",
+        "explanation": {
+          "vi": "편리하다 là tính từ nên dùng -(으)ㄴ 반면에 → 편리한. -는 chỉ dùng với động từ; 편리할 là tương lai, 편리해서 là \"vì tiện\" - không đi với 반면에."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "u7m",
+            "lang": "ko",
+            "text": "편리하는"
+          },
+          {
+            "id": "e4r",
+            "lang": "ko",
+            "text": "편리한"
+          },
+          {
+            "id": "i2f",
+            "lang": "ko",
+            "text": "편리해서"
+          },
+          {
+            "id": "b5z",
+            "lang": "ko",
+            "text": "편리할"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn dạng đúng: 서울은 교통이 ___ 반면에 집값이 비싸요.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "1724ce5e4d189d519c2f19bfd4f56d35dc9c334eff87d6f7ffc71d8d1987db54",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "ff091c05-d484-5372-af34-ffe027e5fe98",
+      "is_demo": true,
+      "item_id": "5abfed32-27ab-5172-8dc7-6dd28bce3398",
+      "key": "ko:exercise:comparing-cultures-mcq-banmyeon-meaning",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "h8a"
+        },
+        "display_answer": "휴대폰은 편리한 반면에 화면이 작다.",
+        "explanation": {
+          "vi": "편리하다 là tính từ → 편리한 반면에, và hai vế phải trái ngược nhau (tiện ↔ màn hình nhỏ). \"아주 좋다\" không đối lập; -아서 không ghép với 반면에."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "c6u",
+            "lang": "ko",
+            "text": "휴대폰은 편리한 반면에 아주 좋다."
+          },
+          {
+            "id": "h8a",
+            "lang": "ko",
+            "text": "휴대폰은 편리한 반면에 화면이 작다."
+          },
+          {
+            "id": "m3e",
+            "lang": "ko",
+            "text": "휴대폰은 편리하는 반면에 화면이 작다."
+          },
+          {
+            "id": "w1o",
+            "lang": "ko",
+            "text": "휴대폰은 편리해서 반면에 화면이 작다."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn viết bài luận và muốn nói: \"Điện thoại tiện lợi, trong khi đó màn hình lại nhỏ.\" Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "69c210f9989b4b6a3f94a2cb43309e4e506d244adcb2a29a7e0aeddb747bc8ea",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "26658019-6f0b-568a-b4d1-3d445ecd366a",
+      "is_demo": true,
+      "item_id": "0e538501-c133-5131-b670-43dda7816f0b",
+      "key": "ko:exercise:comparing-cultures-mcq-boda-position",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "j7s"
+        },
+        "display_answer": "베트남이 한국보다 더 더워요.",
+        "explanation": {
+          "vi": "보다 gắn vào cái bị so sánh (한국), cái \"hơn\" là chủ ngữ (베트남이). Hai câu có 한국이 làm chủ ngữ lại nói Hàn Quốc nóng hơn; câu cuối thiếu 보다."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "j7s",
+            "lang": "ko",
+            "text": "베트남이 한국보다 더 더워요."
+          },
+          {
+            "id": "g2x",
+            "lang": "ko",
+            "text": "한국이 베트남보다 더 더워요."
+          },
+          {
+            "id": "o5n",
+            "lang": "ko",
+            "text": "베트남보다 한국이 더 더워요."
+          },
+          {
+            "id": "y8b",
+            "lang": "ko",
+            "text": "베트남이 한국이 더 더워요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào có nghĩa \"Việt Nam nóng hơn Hàn Quốc\"?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "b2375d8f53c06a9e9bf1cf8c4b0d716847c0ef69a5ec381527ac9ad18bd02af3",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "b1deb654-5280-5b31-9d2a-ce713f9ef2b0",
+      "is_demo": true,
+      "item_id": "65827549-2e72-5f35-858a-aabf19bee3d5",
+      "key": "ko:exercise:comparing-cultures-mcq-reading-phone",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "f2p"
+        },
+        "display_answer": "요즘은 휴대폰으로 드라마를 보는 사람이 더 많다.",
+        "explanation": {
+          "vi": "Câu đầu nói so với trước đây người Hàn xem phim bằng điện thoại nhiều hơn TV. Bài nêu nhược điểm là màn hình nhỏ, mỏi mắt, và người trẻ thích xem bằng điện thoại hơn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "z6k",
+            "lang": "ko",
+            "text": "휴대폰은 화면이 커서 오래 봐도 괜찮다."
+          },
+          {
+            "id": "f2p",
+            "lang": "ko",
+            "text": "요즘은 휴대폰으로 드라마를 보는 사람이 더 많다."
+          },
+          {
+            "id": "t4j",
+            "lang": "ko",
+            "text": "젊은 사람들은 텔레비전으로 보는 것을 더 좋아한다."
+          },
+          {
+            "id": "a9y",
+            "lang": "ko",
+            "text": "휴대폰으로 드라마를 보는 것은 단점이 없다."
+          }
+        ],
+        "shuffle": true,
+        "stem": "다음 글의 내용과 같은 것을 고르십시오.\n예전에 비해 요즘 한국 사람들은 드라마를 텔레비전보다 휴대폰으로 더 많이 본다. 휴대폰은 언제 어디서나 볼 수 있다는 장점이 있는 반면에 화면이 작아서 오래 보면 눈이 아프다는 단점도 있다. 그래도 젊은 사람들은 휴대폰으로 보는 것을 더 좋아한다.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "24ce1801496969beedbcf416926392bebb6e2a0fe856d3082dee1e499cec8a5f",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "983eb780-7093-57b5-bd7d-567c5970eb69",
+      "is_demo": true,
+      "item_id": "897c1b9f-774a-5636-bac2-2ae7f986549b",
+      "key": "ko:exercise:comparing-cultures-translate-hanoi-cheaper",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "서울에 비해 하노이가 더 싸요.",
+            "서울에 비해서 하노이가 더 싸요.",
+            "서울에 비해 하노이가 싸요.",
+            "서울에 비해서 하노이가 싸요.",
+            "서울에 비해 하노이는 더 싸요.",
+            "서울에 비해 하노이는 싸요.",
+            "하노이가 서울에 비해 더 싸요.",
+            "하노이가 서울에 비해서 더 싸요.",
+            "하노이는 서울에 비해 더 싸요.",
+            "하노이는 서울에 비해 싸요.",
+            "서울보다 하노이가 더 싸요.",
+            "하노이가 서울보다 더 싸요.",
+            "하노이는 서울보다 더 싸요."
+          ]
+        },
+        "display_answer": "서울에 비해 하노이가 더 싸요.",
+        "explanation": {
+          "vi": "So với N = N에 비해(서), đặt trước phần nhận xét. Trong câu nói, 서울보다 하노이가 더 싸요 cũng đúng."
+        },
+        "known_wrong": [
+          {
+            "answer": "서울을 비해 하노이가 더 싸요.",
+            "error_tag": "e_bihae_particle",
+            "feedback_vi": "\"So với\" là N에 비해 - dùng trợ từ 에, không dùng 을."
+          },
+          {
+            "answer": "하노이에 비해 서울이 더 싸요.",
+            "error_tag": "boda_reversed",
+            "feedback_vi": "Câu này nói Seoul rẻ hơn. Cái bị so sánh là Seoul - 서울에 비해."
+          },
+          {
+            "answer": "서울에 비해 하노이가 더 비싸요.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "비싸요 là \"đắt\"; \"rẻ\" là 싸요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "So với Seoul, Hà Nội rẻ hơn."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "3518f4c72035c2b21aa3ad8d3a70427947c217016061d5320a7a6dbfc1644744",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "246c54f3-c5e5-59e1-930b-922cd9baf5b4",
+      "is_demo": true,
+      "item_id": "0e538501-c133-5131-b670-43dda7816f0b",
+      "key": "ko:exercise:comparing-cultures-translate-prefer-drama",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "저는 미국 드라마보다 한국 드라마를 더 좋아해요.",
+            "미국 드라마보다 한국 드라마를 더 좋아해요.",
+            "저는 한국 드라마를 미국 드라마보다 더 좋아해요.",
+            "한국 드라마를 미국 드라마보다 더 좋아해요.",
+            "저는 미국 드라마보다 한국 드라마가 더 좋아요.",
+            "미국 드라마보다 한국 드라마가 더 좋아요.",
+            "저는 한국 드라마가 미국 드라마보다 더 좋아요.",
+            "한국 드라마가 미국 드라마보다 더 좋아요.",
+            "저는 미국 드라마보다 한국 드라마를 좋아해요.",
+            "전 미국 드라마보다 한국 드라마를 더 좋아해요."
+          ]
+        },
+        "display_answer": "저는 미국 드라마보다 한국 드라마를 더 좋아해요.",
+        "explanation": {
+          "vi": "Cái bị so sánh là phim Mỹ → 미국 드라마보다. Cái được thích hơn là 한국 드라마를 (+ 좋아해요) hoặc 한국 드라마가 (+ 좋아요)."
+        },
+        "known_wrong": [
+          {
+            "answer": "저는 한국 드라마보다 미국 드라마를 더 좋아해요.",
+            "error_tag": "boda_reversed",
+            "feedback_vi": "Câu này nghĩa là thích phim Mỹ hơn. 보다 phải gắn vào phim bị so sánh - 미국 드라마보다."
+          },
+          {
+            "answer": "저는 미국 드라마보다 한국 드라마를 더 좋아요.",
+            "error_tag": "particle_like_verb",
+            "feedback_vi": "드라마를 (을/를) đi với 좋아해요; nếu dùng 좋아요 thì đổi thành 드라마가."
+          },
+          {
+            "answer": "저는 더 좋아해요 한국 드라마 미국 드라마보다.",
+            "error_tag": "word_order",
+            "feedback_vi": "Động từ 좋아해요 đứng cuối câu, cụm N보다 đứng trước."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "order_index": 5,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi thích phim bộ Hàn hơn phim bộ Mỹ."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "a2412f72c975a9987c04be7e75693fca565c9bcd46d5b90c557f7e6af7f280e0",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "dd4abe58-4909-5cde-88f7-d17e3687c90a",
+      "is_demo": true,
+      "item_id": "65827549-2e72-5f35-858a-aabf19bee3d5",
+      "key": "ko:exercise:comparing-cultures-translate-pros-cons",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "YouTube có cả ưu điểm lẫn nhược điểm.",
+            "YouTube có cả ưu điểm và nhược điểm.",
+            "YouTube có ưu điểm và cũng có nhược điểm.",
+            "YouTube có ưu điểm, cũng có nhược điểm.",
+            "YouTube có ưu điểm cũng có nhược điểm.",
+            "YouTube vừa có ưu điểm vừa có nhược điểm.",
+            "YouTube có điểm tốt và cũng có điểm xấu.",
+            "YouTube có cả mặt tốt lẫn mặt xấu.",
+            "YouTube có cả ưu điểm lẫn khuyết điểm."
+          ]
+        },
+        "display_answer": "YouTube có cả ưu điểm lẫn nhược điểm.",
+        "explanation": {
+          "vi": "장점 = ưu điểm, 단점 = nhược điểm; N도 있고 N도 있어요 = có cả… lẫn…."
+        },
+        "known_wrong": [
+          {
+            "answer": "YouTube chỉ có ưu điểm.",
+            "error_tag": "missing_part",
+            "feedback_vi": "Câu có cả 장점도 (ưu điểm) và 단점도 (nhược điểm)."
+          },
+          {
+            "answer": "YouTube có ưu điểm nhưng không có nhược điểm.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "단점도 있어요 nghĩa là \"cũng có nhược điểm\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "order_index": 10,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "유튜브는 장점도 있고 단점도 있어요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "7a510f731d65cd76125ff00aa8b318ed32ebc30e2e92adfa83276250d609c306",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "e5f09089-f6f0-5766-b6b5-f84046ef3d9a",
+      "is_demo": true,
+      "item_id": "34dcb677-1d26-56a6-b5bf-e2f3b11f9e9c",
+      "key": "ko:exercise:comparing-cultures-translate-similar-different",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "한국과 베트남의 문화는 비슷하지만 차이도 있어요.",
+            "한국하고 베트남의 문화는 비슷하지만 차이도 있어요.",
+            "한국 문화와 베트남 문화는 비슷하지만 차이도 있어요.",
+            "한국 문화하고 베트남 문화는 비슷하지만 차이도 있어요.",
+            "한국과 베트남은 문화가 비슷하지만 차이도 있어요.",
+            "한국하고 베트남은 문화가 비슷하지만 차이도 있어요.",
+            "한국과 베트남의 문화는 비슷하지만 다른 점도 있어요.",
+            "한국 문화와 베트남 문화는 비슷하지만 다른 점도 있어요.",
+            "한국과 베트남은 문화가 비슷하지만 다른 점도 있어요.",
+            "한국과 베트남의 문화는 비슷하지만 차이점도 있어요.",
+            "한국 문화와 베트남 문화는 비슷하지만 차이점도 있어요.",
+            "한국과 베트남의 문화는 비슷하지만 차이가 있어요.",
+            "한국 문화와 베트남 문화는 비슷하지만 차이가 있어요."
+          ]
+        },
+        "display_answer": "한국과 베트남의 문화는 비슷하지만 차이도 있어요.",
+        "explanation": {
+          "vi": "Giống nhau (tương tự) = 비슷하다 → 비슷하지만 (nhưng). Khác biệt = 차이 hoặc 다른 점; \"cũng có\" = 도 있어요."
+        },
+        "known_wrong": [
+          {
+            "answer": "한국와 베트남의 문화는 비슷하지만 차이도 있어요.",
+            "error_tag": "particle_wa_gwa",
+            "feedback_vi": "한국 có patchim ㄱ nên dùng 과 - 한국과."
+          },
+          {
+            "answer": "한국과 베트남의 문화는 같지만 차이도 있어요.",
+            "error_tag": "similar_same",
+            "feedback_vi": "같다 là \"giống hệt\", mâu thuẫn với \"có khác biệt\". Dùng 비슷하다."
+          },
+          {
+            "answer": "한국과 베트남의 문화는 비슷하지만 차이도 없어요.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "\"Cũng có khác biệt\" là 차이도 있어요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Văn hoá Hàn Quốc và Việt Nam giống nhau nhưng cũng có khác biệt."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "35786cafce8c641c18dc6ddf2e958f5da20f343e1eabd8aede01790e79709fe3",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "33537eec-1101-5b29-b012-afb5725af5e8",
+      "is_demo": true,
+      "item_id": "897c1b9f-774a-5636-bac2-2ae7f986549b",
+      "key": "ko:exercise:comparing-cultures-wb-ticket-price",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "k1",
+              "k2",
+              "k3",
+              "k4",
+              "k5"
+            ],
+            [
+              "k3",
+              "k1",
+              "k2",
+              "k4",
+              "k5"
+            ]
+          ]
+        },
+        "display_answer": "작년에 비해 표가 더 비싸요.",
+        "explanation": {
+          "vi": "\"So với N\" là N에 비해 - trợ từ 에, không phải 을. Cụm 작년에 비해 có thể đứng đầu câu hoặc sau chủ ngữ 표가."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Hàn: \"So với năm ngoái, vé đắt hơn.\"",
+        "tokens": [
+          {
+            "id": "k5",
+            "text": "비싸요"
+          },
+          {
+            "id": "k2",
+            "text": "비해"
+          },
+          {
+            "id": "k6",
+            "text": "작년을"
+          },
+          {
+            "id": "k4",
+            "text": "더"
+          },
+          {
+            "id": "k1",
+            "text": "작년에"
+          },
+          {
+            "id": "k3",
+            "text": "표가"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
       "content_hash": "8cfcc4651c8b13156ea67f8497da33957ac22b1aa1a54791a3ec8bdf6a913daa",
       "difficulty": 3,
       "exercise_type": "word_bank",
@@ -61398,6 +65978,813 @@ select content_private.import_bundle($bundle${
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "11d04831ca58439a712da78012d7567769251bd2e183387736c3062580ff54a8",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "d74d3116-de58-5895-85ff-dddac0562fbe",
+      "is_demo": true,
+      "item_id": "16a515d2-dce2-5556-89a7-9dc77b7682e7",
+      "key": "ko:exercise:culture-opinions-review-fill-hanbok-story",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "입어"
+            ],
+            "b2": [
+              "중요하다고"
+            ],
+            "b3": [
+              "입었으면",
+              "입으면"
+            ]
+          }
+        },
+        "display_answer": "한복을 입어 본 적이 있어요. 저는 전통 문화가 중요하다고 생각해요. 내년에도 또 입었으면 좋겠어요.",
+        "explanation": {
+          "vi": "입다 → 입어 본 적 (đã thử mặc); tính từ 중요하다 → 중요하다고 생각해요; mong ước → 입었으면 좋겠어요."
+        },
+        "known_wrong": [
+          {
+            "answer": "입은",
+            "error_tag": "bon_jeok_form",
+            "feedback_vi": "Trước 보다 dùng -아/어 - 입어 본 적."
+          },
+          {
+            "answer": "중요한다고",
+            "error_tag": "adjective_dago",
+            "feedback_vi": "중요하다 là tính từ - 중요하다고, không thêm ㄴ."
+          },
+          {
+            "answer": "입겠으면",
+            "error_tag": "hope_form",
+            "feedback_vi": "Mong ước dùng -았/었으면 좋겠어요 - 입었으면."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          },
+          {
+            "id": "b2",
+            "width_hint": 5
+          },
+          {
+            "id": "b3",
+            "width_hint": 4
+          }
+        ],
+        "template": "(Tôi đã từng mặc thử hanbok.) 한복을 {{b1}} 본 적이 있어요. (Tôi nghĩ văn hoá truyền thống quan trọng.) 저는 전통 문화가 {{b2}} 생각해요. (Mong là năm sau lại được mặc.) 내년에도 또 {{b3}} 좋겠어요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "89b87f8f743b207e51ced5f3c53cf9c707990e34885a645d92b0a1931720656b",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "72342012-b7fe-5295-a358-b99a04388f2c",
+      "is_demo": true,
+      "item_id": "4c92514a-e04e-52d7-84d3-5e03c224ef96",
+      "key": "ko:exercise:culture-opinions-review-listen-songpyeon",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "a3k"
+        },
+        "display_answer": "Chuseok năm ngoái tôi đã thử làm bánh songpyeon ở nhà bạn. Khó hơn tôi nghĩ.",
+        "explanation": {
+          "vi": "작년 là \"năm ngoái\", 만들어 봤어요 là \"đã thử làm\", 생각보다 어려웠어요 là \"khó hơn tôi nghĩ\". Câu không nói \"ăn\", \"muốn\" hay \"chưa từng\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "order_index": 0,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "작년 추석에 친구 집에서 송편을 만들어 봤어요. 생각보다 어려웠어요.",
+        "options": [
+          {
+            "id": "h7e",
+            "lang": "vi",
+            "text": "Chuseok năm ngoái tôi đã ăn bánh songpyeon ở nhà bạn. Ngon hơn tôi nghĩ."
+          },
+          {
+            "id": "q2m",
+            "lang": "vi",
+            "text": "Chuseok năm nay tôi muốn làm bánh songpyeon ở nhà bạn."
+          },
+          {
+            "id": "a3k",
+            "lang": "vi",
+            "text": "Chuseok năm ngoái tôi đã thử làm bánh songpyeon ở nhà bạn. Khó hơn tôi nghĩ."
+          },
+          {
+            "id": "z9d",
+            "lang": "vi",
+            "text": "Tôi chưa từng làm bánh songpyeon vì nó khó quá."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "c7c250b2db61feef484046988c23ca6283425195b1ea4b090fda0b068def24c8",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "206cb407-c7cb-5647-b1de-36de8ffb3c7c",
+      "is_demo": true,
+      "item_id": "7be9b6dd-b420-519f-b7ac-68aa59bdd59c",
+      "key": "ko:exercise:culture-opinions-review-mcq-correct-sentence",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "v6t"
+        },
+        "display_answer": "한국어 실력이 많이 좋아졌어요.",
+        "explanation": {
+          "vi": "좋다 là tính từ nên 좋아지다 đúng. 잘하다 là động từ, không gắn -아/어지다; mong ước kết thúc bằng 좋겠어요; 재미있다 đi với -나 봐요."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "g8x",
+            "lang": "ko",
+            "text": "내일 눈이 왔으면 좋았어요."
+          },
+          {
+            "id": "v6t",
+            "lang": "ko",
+            "text": "한국어 실력이 많이 좋아졌어요."
+          },
+          {
+            "id": "b3r",
+            "lang": "ko",
+            "text": "한국어를 많이 잘해졌어요."
+          },
+          {
+            "id": "p1s",
+            "lang": "ko",
+            "text": "그 드라마가 재미있은가 봐요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào đúng ngữ pháp?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "6740474960c2b200ac4d296974dde61ecce8816712855d098069bd31fc8d2be8",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "9d8938da-165b-552d-ad21-96a1800559a0",
+      "is_demo": true,
+      "item_id": "f339216b-67d0-585a-aa3d-d124819b984d",
+      "key": "ko:exercise:culture-opinions-review-mcq-gift-grandmother",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "m8q"
+        },
+        "display_answer": "(두 손으로 주면서) 할머니, 이거 받으세요.",
+        "explanation": {
+          "vi": "Với người lớn tuổi cần cả hai điều - đưa bằng hai tay (두 손으로) và nói 존댓말 (받으세요). 받아 là 반말; đưa một tay bị coi là thiếu lễ phép."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "m8q",
+            "lang": "ko",
+            "text": "(두 손으로 주면서) 할머니, 이거 받으세요."
+          },
+          {
+            "id": "t3b",
+            "lang": "ko",
+            "text": "(한 손으로 주면서) 할머니, 이거 받아."
+          },
+          {
+            "id": "f5n",
+            "lang": "ko",
+            "text": "(한 손으로 주면서) 할머니, 이거 받으세요."
+          },
+          {
+            "id": "r1z",
+            "lang": "ko",
+            "text": "(두 손으로 주면서) 할머니, 이거 받아."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn đến nhà bạn Hàn chơi và tặng quà cho bà của bạn ấy. Cách nào phù hợp nhất?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "33f8ac086aef2f68627c20a2b693e5f20ae959759f297c07992bb0bb4f1e482d",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "0ac40420-963e-5025-ba1e-5988f869d054",
+      "is_demo": true,
+      "item_id": "f0d09cbe-66b9-53c2-bb0d-b47ca6a5ccd7",
+      "key": "ko:exercise:culture-opinions-review-mcq-reading-interview",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c2h"
+        },
+        "display_answer": "린 씨는 선배에게 반말을 해서 실수한 적이 있다.",
+        "explanation": {
+          "vi": "Linh kể 선배에게 반말을 해서 실수한 적도 있어요 - đã từng lỡ nói trống không với đàn anh. Linh đã thử làm songpyeon, xem phim mỗi ngày và cho rằng 악플 là vấn đề lớn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "order_index": 7,
+      "prompt": {
+        "options": [
+          {
+            "id": "c2h",
+            "lang": "ko",
+            "text": "린 씨는 선배에게 반말을 해서 실수한 적이 있다."
+          },
+          {
+            "id": "o4f",
+            "lang": "ko",
+            "text": "린 씨는 한국 드라마를 거의 보지 않는다."
+          },
+          {
+            "id": "w7u",
+            "lang": "ko",
+            "text": "린 씨는 송편을 만들어 본 적이 없다."
+          },
+          {
+            "id": "j6a",
+            "lang": "ko",
+            "text": "린 씨는 악플이 큰 문제가 아니라고 생각한다."
+          }
+        ],
+        "shuffle": true,
+        "stem": "다음 인터뷰의 내용과 같은 것을 고르십시오.\n기자: 린 씨, 한국 명절을 보낸 적이 있어요?\n린: 네, 작년 추석에 친구 집에서 송편을 만들어 봤어요. 생각보다 어려웠어요.\n기자: 한국 문화 중에서 무엇이 가장 달랐어요?\n린: 나이 문화요. 베트남에 비해 한국은 나이에 따라 말이 많이 달라져요. 처음에는 선배에게 반말을 해서 실수한 적도 있어요.\n기자: 요즘도 한국 드라마나 유튜브를 자주 봐요?\n린: 네, 매일 봐요. 덕분에 듣기 실력이 많이 좋아졌어요. 그런데 악플은 정말 큰 문제라고 생각해요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "c376dc3fee44e73f1702a9385fb0c0ea1dcb3e3950f23e09b4e096b33e49fcac",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "aae9ddc1-78bc-53f3-96cd-b3e3bf96a6a0",
+      "is_demo": true,
+      "item_id": "e5efa7b0-be11-563a-8aa0-49642c02fb76",
+      "key": "ko:exercise:culture-opinions-review-mcq-tende",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "n4c"
+        },
+        "display_answer": "추울 텐데",
+        "explanation": {
+          "vi": "텐데 luôn đi với -(으)ㄹ - 춥다 (bất quy tắc ㅂ) → 추울 텐데, rồi vế sau khuyên \"mặc ấm\". 추운가 봐요 là câu đoán kết thúc, không nối được với lời khuyên."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "e1w",
+            "lang": "ko",
+            "text": "춥는 텐데"
+          },
+          {
+            "id": "n4c",
+            "lang": "ko",
+            "text": "추울 텐데"
+          },
+          {
+            "id": "k5y",
+            "lang": "ko",
+            "text": "추운가 봐요"
+          },
+          {
+            "id": "s8j",
+            "lang": "ko",
+            "text": "추운 텐데"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn dạng đúng: 밖에 날씨가 ___ 따뜻하게 입으세요.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "9f5c74d730afa1d77ad5eb09352c963cd197590f67187d6b666e2573bcc981f1",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "b6f76221-9d9f-5c38-840a-7043ada1a1f1",
+      "is_demo": true,
+      "item_id": "7be9b6dd-b420-519f-b7ac-68aa59bdd59c",
+      "key": "ko:exercise:culture-opinions-review-translate-age-speech",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều theo tuổi tác.",
+            "So với Việt Nam, ở Hàn Quốc cách nói thay đổi rất nhiều theo tuổi tác.",
+            "So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều tùy theo tuổi tác.",
+            "So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều tuỳ theo tuổi tác.",
+            "So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều tùy theo tuổi.",
+            "So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều tuỳ theo tuổi.",
+            "So với Việt Nam, ở Hàn Quốc cách nói khác đi nhiều theo tuổi tác.",
+            "So với Việt Nam, ở Hàn cách nói thay đổi nhiều theo tuổi tác.",
+            "So với Việt Nam, ở Hàn Quốc lời nói thay đổi nhiều theo tuổi tác.",
+            "So với Việt Nam, ở Hàn Quốc cách nói chuyện thay đổi nhiều theo tuổi tác.",
+            "So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều theo tuổi."
+          ]
+        },
+        "display_answer": "So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều theo tuổi tác.",
+        "explanation": {
+          "vi": "N에 비해 = so với N; 나이에 따라 = theo tuổi; 말이 달라져요 = cách nói thay đổi (다르다 + -아지다)."
+        },
+        "known_wrong": [
+          {
+            "answer": "So với Hàn Quốc, ở Việt Nam cách nói thay đổi nhiều theo tuổi tác.",
+            "error_tag": "e_bihae_reversed",
+            "feedback_vi": "베트남에 비해 là \"so với Việt Nam\" - chủ đề đang nói là 한국."
+          },
+          {
+            "answer": "So với Việt Nam, ở Hàn Quốc cách nói giống nhau ở mọi tuổi.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "달라져요 là \"trở nên khác, thay đổi\", không phải \"giống nhau\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "베트남에 비해 한국은 나이에 따라 말이 많이 달라져요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "ea0d1a16c9d420be68d0224327f3e799272ea13a62a0b19c8a1a74395c113054",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "54095d5d-1d97-5f12-9fe8-aa86dbcb47c1",
+      "is_demo": true,
+      "item_id": "adc39efe-c7d4-555d-a320-68b06471dae7",
+      "key": "ko:exercise:culture-opinions-review-translate-careful-comments",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "제 생각에는 댓글을 쓸 때 조심할 필요가 있어요.",
+            "제 생각에는 댓글을 달 때 조심할 필요가 있어요.",
+            "제 생각에는 댓글을 쓸 때는 조심할 필요가 있어요.",
+            "제 생각에는 댓글을 달 때는 조심할 필요가 있어요.",
+            "제 생각에는 댓글 쓸 때 조심할 필요가 있어요.",
+            "댓글을 쓸 때 조심할 필요가 있다고 생각해요.",
+            "댓글을 달 때 조심할 필요가 있다고 생각해요.",
+            "저는 댓글을 쓸 때 조심할 필요가 있다고 생각해요.",
+            "저는 댓글을 달 때 조심할 필요가 있다고 생각해요.",
+            "댓글 쓸 때 조심할 필요가 있다고 생각해요.",
+            "제 생각에는 댓글을 쓸 때 조심해야 해요."
+          ]
+        },
+        "display_answer": "제 생각에는 댓글을 쓸 때 조심할 필요가 있어요.",
+        "explanation": {
+          "vi": "Theo tôi = 제 생각에는 (hoặc kết thúc bằng -다고 생각해요). Khi viết bình luận = 댓글을 쓸/달 때; cần cẩn thận = 조심할 필요가 있어요."
+        },
+        "known_wrong": [
+          {
+            "answer": "제 생각에는 댓글을 쓸 때 조심하는 필요가 있어요.",
+            "error_tag": "piryo_form",
+            "feedback_vi": "Trước 필요 dùng -(으)ㄹ - 조심할 필요."
+          },
+          {
+            "answer": "저 생각에는 댓글을 쓸 때 조심할 필요가 있어요.",
+            "error_tag": "je_jeo",
+            "feedback_vi": "\"Của tôi\" là 제 - 제 생각에는."
+          },
+          {
+            "answer": "댓글을 쓸 때 조심할 필요가 있는다고 생각해요.",
+            "error_tag": "itda_dago",
+            "feedback_vi": "있다 + -다고 → 있다고, không phải 있는다고."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "order_index": 5,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Theo tôi, khi viết bình luận cần phải cẩn thận."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "182df4311e96e37b28539d2d98d359f5b277645fafedc1739e6674c404761e8a",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "77c95c9a-ceef-575c-a20d-15d260edf636",
+      "is_demo": true,
+      "item_id": "d2af763b-9751-522b-83f8-4d3152dd2c8e",
+      "key": "ko:exercise:culture-opinions-review-translate-drama-fun",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "그 드라마가 정말 재미있나 봐요.",
+            "그 드라마가 아주 재미있나 봐요.",
+            "그 드라마가 너무 재미있나 봐요.",
+            "그 드라마가 재미있나 봐요.",
+            "그 드라마는 재미있나 봐요.",
+            "그 드라마 정말 재미있나 봐요.",
+            "그 영화가 정말 재미있나 봐요.",
+            "그 영화가 아주 재미있나 봐요.",
+            "그 영화가 재미있나 봐요.",
+            "그 영화는 재미있나 봐요.",
+            "그 드라마가 정말 좋은가 봐요.",
+            "그 영화가 정말 좋은가 봐요."
+          ]
+        },
+        "display_answer": "그 드라마가 정말 재미있나 봐요.",
+        "explanation": {
+          "vi": "Hình như = -나 봐요 / -(으)ㄴ가 봐요. 재미있다 → 재미있나 봐요; nếu dùng tính từ 좋다 thì 좋은가 봐요."
+        },
+        "known_wrong": [
+          {
+            "answer": "그 드라마가 정말 재미있은가 봐요.",
+            "error_tag": "na_eunga_boda",
+            "feedback_vi": "재미있다 có đuôi 있다 nên dùng -나 봐요 - 재미있나 봐요."
+          },
+          {
+            "answer": "그 드라마가 정말 재미있어졌어요.",
+            "error_tag": "guess_missing",
+            "feedback_vi": "-아/어졌어요 là \"đã trở nên\". Phỏng đoán \"hình như\" dùng -나 봐요."
+          },
+          {
+            "answer": "그 드라마가 정말 좋나 봐요.",
+            "error_tag": "na_eunga_boda",
+            "feedback_vi": "Theo chuẩn, tính từ 좋다 dùng -(으)ㄴ가 봐요 - 좋은가 봐요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Hình như bộ phim đó hay lắm."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "02f25f96dea3591b15ac10bd8f7d6a97d8418e15e28b28a01f9e1d033ba86378",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "c4739c0b-8476-5f19-a9b8-225b147f59df",
+      "is_demo": true,
+      "item_id": "15ba93a9-251d-5291-8c5a-269f61167350",
+      "key": "ko:exercise:culture-opinions-review-translate-learn-earlier",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "한국어를 더 일찍 배울걸 그랬어요.",
+            "한국어를 좀 더 일찍 배울걸 그랬어요.",
+            "한국어를 더 일찍 공부할걸 그랬어요.",
+            "한국어를 좀 더 일찍 공부할걸 그랬어요.",
+            "더 일찍 한국어를 배울걸 그랬어요.",
+            "더 일찍 한국어를 공부할걸 그랬어요.",
+            "좀 더 일찍 한국어를 배울걸 그랬어요.",
+            "한국어를 더 빨리 배울걸 그랬어요.",
+            "한국어를 더 빨리 공부할걸 그랬어요.",
+            "한국어 공부를 더 일찍 시작할걸 그랬어요.",
+            "한국어를 일찍 배울걸 그랬어요."
+          ]
+        },
+        "display_answer": "한국어를 더 일찍 배울걸 그랬어요.",
+        "explanation": {
+          "vi": "\"Lẽ ra nên…\" = V-(으)ㄹ걸 그랬어요; 배우다 → 배울걸. \"Sớm hơn\" = 더 일찍."
+        },
+        "known_wrong": [
+          {
+            "answer": "한국어를 더 일찍 배웠을걸 그랬어요.",
+            "error_tag": "regret_tense",
+            "feedback_vi": "Động từ trước -(으)ㄹ걸 giữ dạng gốc - 배울걸."
+          },
+          {
+            "answer": "한국어를 더 일찍 배울게 그랬어요.",
+            "error_tag": "geol_ge",
+            "feedback_vi": "-(으)ㄹ게 là lời hứa. Tiếc nuối dùng -(으)ㄹ걸 그랬어요."
+          },
+          {
+            "answer": "한국어를 더 일찍 배웠으면 좋겠어요.",
+            "error_tag": "regret_vs_hope",
+            "feedback_vi": "-았/었으면 좋겠어요 là mong ước cho sắp tới; tiếc chuyện đã qua dùng 배울걸 그랬어요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "order_index": 10,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Lẽ ra tôi nên học tiếng Hàn sớm hơn."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "bd61a91f3be8ce17bd074f468c931670ac03f4a9dab9ada068a32f4415ead999",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "2f027258-8aaf-55f7-af33-28d18822f6c8",
+      "is_demo": true,
+      "item_id": "897c1b9f-774a-5636-bac2-2ae7f986549b",
+      "key": "ko:exercise:culture-opinions-review-wb-age-culture",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "v1",
+              "v2",
+              "v3",
+              "v4",
+              "v5",
+              "v6"
+            ],
+            [
+              "v3",
+              "v1",
+              "v2",
+              "v4",
+              "v5",
+              "v6"
+            ]
+          ]
+        },
+        "display_answer": "베트남에 비해 한국은 나이 문화가 강해요.",
+        "explanation": {
+          "vi": "So với N = N에 비해 (trợ từ 에). 한국은 làm chủ đề, 나이 문화가 강해요 là nhận xét."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "order_index": 3,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Hàn: \"So với Việt Nam, văn hoá tuổi tác ở Hàn Quốc mạnh hơn.\"",
+        "tokens": [
+          {
+            "id": "v5",
+            "text": "문화가"
+          },
+          {
+            "id": "v2",
+            "text": "비해"
+          },
+          {
+            "id": "v7",
+            "text": "베트남을"
+          },
+          {
+            "id": "v6",
+            "text": "강해요"
+          },
+          {
+            "id": "v3",
+            "text": "한국은"
+          },
+          {
+            "id": "v1",
+            "text": "베트남에"
+          },
+          {
+            "id": "v4",
+            "text": "나이"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "85fbc68993dcc0811cd49f193227d4e7b9bef9e3e74abfea2198cb7fa039b814",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "8809f5bb-4af7-5f24-802f-4760d2b86cfe",
+      "is_demo": true,
+      "item_id": "f1b3f7cf-f4bd-5ab8-a6c9-efb6fe72bf8b",
+      "key": "ko:exercise:culture-opinions-review-wb-no-akpeul",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "x1",
+              "x2",
+              "x3",
+              "x4"
+            ],
+            [
+              "x2",
+              "x1",
+              "x3",
+              "x4"
+            ]
+          ]
+        },
+        "display_answer": "인터넷에서 악플이 없어졌으면 좋겠어요.",
+        "explanation": {
+          "vi": "없다 + -어지다 → 없어지다 (biến mất), chủ ngữ là 악플이. Mong ước kết thúc bằng 좋겠어요, không phải 좋았어요."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Hàn: \"Mong là bình luận ác ý biến mất khỏi Internet.\"",
+        "tokens": [
+          {
+            "id": "x3",
+            "text": "없어졌으면"
+          },
+          {
+            "id": "x5",
+            "text": "좋았어요"
+          },
+          {
+            "id": "x1",
+            "text": "인터넷에서"
+          },
+          {
+            "id": "x4",
+            "text": "좋겠어요"
+          },
+          {
+            "id": "x6",
+            "text": "악플을"
+          },
+          {
+            "id": "x2",
+            "text": "악플이"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
       "status": "published"
     },
     {
@@ -71710,6 +77097,786 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ko",
+      "content_hash": "c31f99fdcfd8974c825a717702172f16831948feded6ecec02387576ea1ac318",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "af776a6c-7eb7-5491-9305-768fc111eef7",
+      "is_demo": true,
+      "item_id": "16a515d2-dce2-5556-89a7-9dc77b7682e7",
+      "key": "ko:exercise:holidays-experience-fill-hope-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "좋았으면",
+              "좋으면"
+            ]
+          }
+        },
+        "display_answer": "내일은 날씨가 좋았으면 좋겠어요.",
+        "explanation": {
+          "vi": "Mong ước = V/A-았/었으면 좋겠어요. 좋다 có ㅗ nên thêm -았으면 → 좋았으면; 좋으면 좋겠어요 cũng đúng nhưng nhẹ hơn."
+        },
+        "known_wrong": [
+          {
+            "answer": "좋겠으면",
+            "error_tag": "hope_form",
+            "feedback_vi": "Vế trước dùng -았/었으면, không dùng -겠 - 좋았으면 좋겠어요."
+          },
+          {
+            "answer": "좋아서",
+            "error_tag": "hope_form",
+            "feedback_vi": "-아서 nghĩa là \"vì/nên\", không diễn tả mong ước. Dùng 좋았으면."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Mong là ngày mai trời đẹp.",
+          "Gợi ý: 좋다 + -았으면."
+        ],
+        "template": "내일은 날씨가 {{b1}} 좋겠어요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "411273212848e503a23e1b237a2e5c6048d52abc6a7a2d09e35f42165ab1cef8",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "06d50509-fd7c-5f60-8396-29c49840d627",
+      "is_demo": true,
+      "item_id": "82408954-f131-524a-ba29-be149543f3db",
+      "key": "ko:exercise:holidays-experience-fill-never-hope",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "간",
+              "가 본"
+            ],
+            "b2": [
+              "갔으면",
+              "가면"
+            ]
+          }
+        },
+        "display_answer": "추석에 한국에 간 적이 없어요. 이번 설날에는 고향에 갔으면 좋겠어요.",
+        "explanation": {
+          "vi": "가다 → 간 적이 없어요 (chưa từng đi) hoặc 가 본 적이 없어요. Mong ước - 가다 → 갔으면 좋겠어요."
+        },
+        "known_wrong": [
+          {
+            "answer": "가는",
+            "error_tag": "past_adnominal",
+            "feedback_vi": "Kinh nghiệm dùng định ngữ quá khứ -(으)ㄴ - 간 적, không dùng 가는."
+          },
+          {
+            "answer": "가겠으면",
+            "error_tag": "hope_form",
+            "feedback_vi": "Mong ước dùng -았/었으면 좋겠어요 - 갔으면."
+          },
+          {
+            "answer": "가아 본",
+            "error_tag": "vowel_contraction",
+            "feedback_vi": "가다 + -아 보다 rút gọn thành 가 보다 - 가 본 적."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          },
+          {
+            "id": "b2",
+            "width_hint": 3
+          }
+        ],
+        "template": "(Tôi chưa từng đến Hàn Quốc vào dịp Chuseok.) 추석에 한국에 {{b1}} 적이 없어요. (Tết năm nay mong là được về quê.) 이번 설날에는 고향에 {{b2}} 좋겠어요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "591108c48ee98aa9cac05f9eed2719e3b41e231823a6789cc9862da44de6ca54",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "57e8e277-7802-57ee-a3d8-74117b9f41ef",
+      "is_demo": true,
+      "item_id": "d90aacbf-2bb3-5015-b5bb-d1f8bc6f8cb6",
+      "key": "ko:exercise:holidays-experience-listen-songpyeon",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "d7k"
+        },
+        "display_answer": "Tôi chưa từng làm bánh songpyeon vào dịp Chuseok.",
+        "explanation": {
+          "vi": "만들어 본 적이 없어요 là \"chưa từng làm thử\". 만들다 là \"làm (đồ ăn)\", không phải 먹다 (ăn); 없어요 là \"chưa\", không phải \"đã từng\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "추석에 송편을 만들어 본 적이 없어요.",
+        "options": [
+          {
+            "id": "r3s",
+            "lang": "vi",
+            "text": "Tôi đã từng làm bánh songpyeon vào dịp Chuseok."
+          },
+          {
+            "id": "f9b",
+            "lang": "vi",
+            "text": "Tôi chưa từng ăn bánh songpyeon vào dịp Chuseok."
+          },
+          {
+            "id": "d7k",
+            "lang": "vi",
+            "text": "Tôi chưa từng làm bánh songpyeon vào dịp Chuseok."
+          },
+          {
+            "id": "m1h",
+            "lang": "vi",
+            "text": "Tôi muốn làm bánh songpyeon vào dịp Chuseok."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "d33f6f96bdd31a12bc5f6d5b21363f67b0716ba74e2bd4e208e29eda71237322",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "d557e42a-be3c-5c68-bf76-215ea5b11289",
+      "is_demo": true,
+      "item_id": "7be9b6dd-b420-519f-b7ac-68aa59bdd59c",
+      "key": "ko:exercise:holidays-experience-mcq-ajida",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "s6y"
+        },
+        "display_answer": "날씨가 추워졌어요.",
+        "explanation": {
+          "vi": "춥다 là bất quy tắc ㅂ - 추워 + 지다 → 추워졌어요. 춥어 sai chính tả; 추웠어요 chỉ là \"đã lạnh\", không nói sự thay đổi."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "s6y",
+            "lang": "ko",
+            "text": "날씨가 추워졌어요."
+          },
+          {
+            "id": "b4t",
+            "lang": "ko",
+            "text": "날씨가 춥어졌어요."
+          },
+          {
+            "id": "o8p",
+            "lang": "ko",
+            "text": "날씨가 추웠어요."
+          },
+          {
+            "id": "h2w",
+            "lang": "ko",
+            "text": "날씨가 추워해졌어요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào có nghĩa \"Trời đã trở lạnh\"?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "becd0c3f5269f17b73d4785c1e942553f4b2c75f6795d6b88e8929d4090d9f3d",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "9a290b2b-cfec-553c-8ffd-4448b2314542",
+      "is_demo": true,
+      "item_id": "4c92514a-e04e-52d7-84d3-5e03c224ef96",
+      "key": "ko:exercise:holidays-experience-mcq-bon-jeok",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "q4z"
+        },
+        "display_answer": "입어",
+        "explanation": {
+          "vi": "Đã từng thử = V-아/어 본 적이 있다. 입다 có nguyên âm ㅣ nên thêm -어 → 입어 본 적. 입은 chỉ dùng khi không có 보다 (입은 적)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "c8v",
+            "lang": "ko",
+            "text": "입은"
+          },
+          {
+            "id": "q4z",
+            "lang": "ko",
+            "text": "입어"
+          },
+          {
+            "id": "l2n",
+            "lang": "ko",
+            "text": "입고"
+          },
+          {
+            "id": "x5d",
+            "lang": "ko",
+            "text": "입을"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn dạng đúng: 한복을 ___ 본 적이 있어요? (Bạn đã từng mặc thử hanbok chưa?)",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "c0fbf6954bb38e9a5c6e5da07f4d4b83428b20880f1cb579987dc92712c21413",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "4861b68a-d3d7-5f08-892a-5a73ae787a4f",
+      "is_demo": true,
+      "item_id": "44fe600c-86ed-523b-97f1-f494d5704dd2",
+      "key": "ko:exercise:holidays-experience-mcq-reading-article",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "g6r"
+        },
+        "display_answer": "요즘은 명절 연휴에 해외여행을 가는 가족이 많아졌다.",
+        "explanation": {
+          "vi": "Câu thứ ba nói gia đình đi du lịch nước ngoài vào kỳ nghỉ \"đã nhiều lên\" (많아졌다). Bài cũng nói khách nước ngoài mặc hanbok tăng lên và đồ cúng đơn giản hơn, nên ba phương án còn lại sai."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "i9l",
+            "lang": "ko",
+            "text": "한복을 입어 보는 외국인 관광객이 줄었다."
+          },
+          {
+            "id": "v2e",
+            "lang": "ko",
+            "text": "요즘도 모든 가족이 고향에 모여 차례를 지낸다."
+          },
+          {
+            "id": "g6r",
+            "lang": "ko",
+            "text": "요즘은 명절 연휴에 해외여행을 가는 가족이 많아졌다."
+          },
+          {
+            "id": "u4x",
+            "lang": "ko",
+            "text": "차례 음식을 준비하는 방법은 예전과 같다."
+          }
+        ],
+        "shuffle": true,
+        "stem": "다음 글의 내용과 같은 것을 고르십시오.\n요즘 한국의 명절 풍경이 많이 달라졌다. 예전에는 설날과 추석이 되면 온 가족이 고향에 모여 차례를 지내고, 아이들은 어른들께 세배를 했다. 그러나 최근에는 연휴에 해외여행을 가는 가족이 많아졌고, 차례 음식을 간단하게 준비하는 집도 늘었다. 한복을 입는 사람은 줄었지만, 고궁에서 한복을 입어 보는 외국인 관광객은 오히려 많아졌다.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "167382b1e4be2004c763fe2c2d8e7fd2346fe001c28b01737f14734fba741afd",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "8142d713-859e-5679-ab69-1fa5ef211fa3",
+      "is_demo": true,
+      "item_id": "16a515d2-dce2-5556-89a7-9dc77b7682e7",
+      "key": "ko:exercise:holidays-experience-mcq-wish-friend",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "p3m"
+        },
+        "display_answer": "다음 명절에는 꼭 고향에 갔으면 좋겠어요.",
+        "explanation": {
+          "vi": "Mong ước cho tương lai vẫn dùng -았/었으면 좋겠어요 - 갔으면 좋겠어요. 좋았어요 là \"đã tốt\", -겠으면 sai dạng, còn 간 적이 있어요 là kể kinh nghiệm."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "y1u",
+            "lang": "ko",
+            "text": "다음 명절에는 꼭 고향에 간 적이 있어요."
+          },
+          {
+            "id": "p3m",
+            "lang": "ko",
+            "text": "다음 명절에는 꼭 고향에 갔으면 좋겠어요."
+          },
+          {
+            "id": "k7a",
+            "lang": "ko",
+            "text": "다음 명절에는 꼭 고향에 갔으면 좋았어요."
+          },
+          {
+            "id": "e5c",
+            "lang": "ko",
+            "text": "다음 명절에는 꼭 고향에 가겠으면 좋겠어요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn Hàn kể Chuseok này phải làm việc nên không về quê được. Bạn muốn nói \"Mong là dịp lễ sau bạn nhất định được về quê.\" Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "4ea254df9cbe80154c0e9cf66e84dfbf7c0ef6f3876710b5d2ea783fcce31ba4",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "33231f92-94dc-5cbe-82b7-e3bf92b33557",
+      "is_demo": true,
+      "item_id": "7be9b6dd-b420-519f-b7ac-68aa59bdd59c",
+      "key": "ko:exercise:holidays-experience-translate-holiday-shorter",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "요즘 설날 연휴가 짧아졌어요.",
+            "요즘 설날 연휴가 더 짧아졌어요.",
+            "요즘은 설날 연휴가 짧아졌어요.",
+            "요즘은 설날 연휴가 더 짧아졌어요.",
+            "요즘 설 연휴가 짧아졌어요.",
+            "요즘 설 연휴가 더 짧아졌어요.",
+            "요즘 설날 연휴는 짧아졌어요.",
+            "요즘 설날 연휴는 더 짧아졌어요.",
+            "요즘 설날 연휴가 예전보다 짧아졌어요.",
+            "요즘 설날 연휴가 예전에 비해 짧아졌어요."
+          ]
+        },
+        "display_answer": "요즘 설날 연휴가 짧아졌어요.",
+        "explanation": {
+          "vi": "짧다 (ngắn) là tính từ → 짧아지다 (trở nên ngắn) → quá khứ 짧아졌어요. Kỳ nghỉ Tết là 설날 연휴 hoặc 설 연휴."
+        },
+        "known_wrong": [
+          {
+            "answer": "요즘 설날 연휴가 짧았어요.",
+            "error_tag": "ajida_missing",
+            "feedback_vi": "짧았어요 chỉ là \"đã ngắn\". \"Trở nên ngắn hơn\" cần -아지다 - 짧아졌어요."
+          },
+          {
+            "answer": "요즘 설날 연휴가 짧어졌어요.",
+            "error_tag": "vowel_harmony",
+            "feedback_vi": "짧다 có nguyên âm ㅏ nên thêm -아 - 짧아졌어요."
+          },
+          {
+            "answer": "요즘 설날 연휴가 짧아해졌어요.",
+            "error_tag": "ajida_form",
+            "feedback_vi": "Tính từ gắn trực tiếp -아지다 - 짧아졌어요, không chen 해."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Dạo này kỳ nghỉ Tết đã trở nên ngắn hơn."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "3ed3ad660962e139b4a07f1d19d1d31ec8cd6736dfbbced4b57f6bdb9cc5643a",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "1ae3e4ad-730e-5b7e-8773-b5f3618bd521",
+      "is_demo": true,
+      "item_id": "3b46b07d-83d3-50b1-89f9-fca7afbbef1d",
+      "key": "ko:exercise:holidays-experience-translate-never-charye",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "차례를 지낸 적이 없어요.",
+            "저는 차례를 지낸 적이 없어요.",
+            "전 차례를 지낸 적이 없어요.",
+            "차례를 지내 본 적이 없어요.",
+            "저는 차례를 지내 본 적이 없어요.",
+            "차례를 지낸 적이 한 번도 없어요.",
+            "저는 차례를 지낸 적이 한 번도 없어요.",
+            "한 번도 차례를 지낸 적이 없어요.",
+            "저는 한 번도 차례를 지낸 적이 없어요.",
+            "차례를 지낸 적 없어요.",
+            "차례 지낸 적이 없어요.",
+            "저는 아직 차례를 지낸 적이 없어요."
+          ]
+        },
+        "display_answer": "저는 차례를 지낸 적이 없어요.",
+        "explanation": {
+          "vi": "Làm lễ cúng tổ tiên = 차례를 지내다. \"Chưa từng\" = -(으)ㄴ 적이 없다 → 지낸 적이 없어요."
+        },
+        "known_wrong": [
+          {
+            "answer": "차례를 지내는 적이 없어요.",
+            "error_tag": "past_adnominal",
+            "feedback_vi": "Kinh nghiệm dùng định ngữ quá khứ - 지낸 적."
+          },
+          {
+            "answer": "차례를 지낸 적이 있어요.",
+            "error_tag": "itda_eopda",
+            "feedback_vi": "\"Chưa từng\" là 적이 없어요; 적이 있어요 là \"đã từng\"."
+          },
+          {
+            "answer": "차례를 만든 적이 없어요.",
+            "error_tag": "collocation",
+            "feedback_vi": "Làm lễ cúng là 차례를 지내다, không dùng 만들다."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi chưa từng làm lễ cúng tổ tiên."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "0bcf5e105edb0662da2668674b154c255b1fdc48b7985f56217d4256a9db3235",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "b035a00f-cfce-5b66-ae8b-1630a5fffb61",
+      "is_demo": true,
+      "item_id": "84213fe0-aa8e-56b9-91e2-c765f52884c6",
+      "key": "ko:exercise:holidays-experience-translate-sebae",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Vào Tết, trẻ em lạy chúc Tết người lớn và nhận tiền mừng tuổi.",
+            "Vào ngày Tết, trẻ em lạy chúc Tết người lớn và nhận tiền mừng tuổi.",
+            "Ngày Tết, trẻ em lạy chúc Tết người lớn và nhận tiền mừng tuổi.",
+            "Vào Tết, trẻ em chúc Tết người lớn và nhận tiền mừng tuổi.",
+            "Vào Tết, trẻ em chúc Tết người lớn và nhận tiền lì xì.",
+            "Vào Tết, trẻ em lạy chúc Tết người lớn và nhận tiền lì xì.",
+            "Ngày Tết, trẻ em chúc Tết người lớn và nhận tiền lì xì.",
+            "Vào Tết, bọn trẻ lạy chúc Tết người lớn và nhận tiền mừng tuổi.",
+            "Vào Tết, trẻ con lạy chúc Tết người lớn và nhận tiền mừng tuổi.",
+            "Vào Tết, các em nhỏ lạy chúc Tết người lớn và nhận tiền mừng tuổi.",
+            "Vào Tết, trẻ em chúc Tết người lớn rồi nhận tiền mừng tuổi.",
+            "Vào Tết, trẻ em chúc Tết người lớn rồi nhận lì xì.",
+            "Vào Tết, trẻ em chúc Tết người lớn và nhận lì xì."
+          ]
+        },
+        "display_answer": "Vào Tết, trẻ em lạy chúc Tết người lớn và nhận tiền mừng tuổi.",
+        "explanation": {
+          "vi": "설날 = Tết, 세배를 하다 = lạy chúc Tết, 세뱃돈 = tiền mừng tuổi. 께 là dạng kính trọng của 에게 (cho người lớn)."
+        },
+        "known_wrong": [
+          {
+            "answer": "Vào Tết, người lớn chúc Tết trẻ em và nhận tiền mừng tuổi.",
+            "error_tag": "subject_object",
+            "feedback_vi": "Người lạy chúc Tết là 아이들 (trẻ em), người nhận lạy là 어른들 (người lớn)."
+          },
+          {
+            "answer": "Vào Chuseok, trẻ em chúc Tết người lớn và nhận tiền mừng tuổi.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "설날 là Tết âm lịch; Chuseok là 추석."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "order_index": 10,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "설날에 아이들은 어른들께 세배를 하고 세뱃돈을 받아요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "9fcdf8ffe48b76c68ea2fec94fe8f5db8ef22784736d86ae61225910b0a56332",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "180969d0-a072-582b-9e5b-d71f0dfde5d7",
+      "is_demo": true,
+      "item_id": "4c92514a-e04e-52d7-84d3-5e03c224ef96",
+      "key": "ko:exercise:holidays-experience-translate-wear-hanbok",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "한복을 입어 본 적이 있어요?",
+            "한복 입어 본 적이 있어요?",
+            "한복을 입어 본 적 있어요?",
+            "한복 입어 본 적 있어요?",
+            "한복을 입어 본 적이 있으세요?",
+            "한복을 입어 봤어요?",
+            "한복 입어 봤어요?",
+            "한복을 입어 본 적이 있습니까?"
+          ]
+        },
+        "display_answer": "한복을 입어 본 적이 있어요?",
+        "explanation": {
+          "vi": "\"Đã từng thử mặc\" = 입어 보다 + -ㄴ 적이 있다 → 입어 본 적이 있어요? Tiếng Hàn không cần chủ ngữ \"bạn\" khi hỏi trực tiếp."
+        },
+        "known_wrong": [
+          {
+            "answer": "한복을 입은 본 적이 있어요?",
+            "error_tag": "bon_jeok_form",
+            "feedback_vi": "Trước 보다 dùng -아/어 - 입어 본 적."
+          },
+          {
+            "answer": "한복을 입는 적이 있어요?",
+            "error_tag": "past_adnominal",
+            "feedback_vi": "Kinh nghiệm dùng định ngữ quá khứ -(으)ㄴ - 입은 적, hoặc 입어 본 적."
+          },
+          {
+            "answer": "한복을 입어 본 적이 없어요?",
+            "error_tag": "itda_eopda",
+            "feedback_vi": "Câu hỏi \"đã từng… chưa?\" dùng 있어요?; 없어요? là \"chưa từng… à?\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "order_index": 5,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Bạn đã từng mặc thử hanbok chưa?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "adc11bb589478db6178054f18c6eaf8b0b2144852534fb85b6513eaddb9577a8",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "65722365-9027-5f7e-b969-03f533097e88",
+      "is_demo": true,
+      "item_id": "7be9b6dd-b420-519f-b7ac-68aa59bdd59c",
+      "key": "ko:exercise:holidays-experience-wb-culture-changed",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "n1",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            [
+              "n2",
+              "n3",
+              "n1",
+              "n4",
+              "n5"
+            ]
+          ]
+        },
+        "display_answer": "요즘 명절 문화가 많이 달라졌어요.",
+        "explanation": {
+          "vi": "다르다 là bất quy tắc 르 - 달라 + 지다 → 달라졌어요 (đã trở nên khác). 다라졌어요 thiếu một ㄹ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Hàn: \"Dạo này văn hoá ngày lễ đã thay đổi nhiều.\"",
+        "tokens": [
+          {
+            "id": "n3",
+            "text": "문화가"
+          },
+          {
+            "id": "n6",
+            "text": "다라졌어요"
+          },
+          {
+            "id": "n1",
+            "text": "요즘"
+          },
+          {
+            "id": "n5",
+            "text": "달라졌어요"
+          },
+          {
+            "id": "n4",
+            "text": "많이"
+          },
+          {
+            "id": "n2",
+            "text": "명절"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
       "content_hash": "32684a2c0fb519ed4c5abb59691cf71b2854ed0b45faf8b9591f16e826149596",
       "difficulty": 2,
       "exercise_type": "fill_blank",
@@ -76319,6 +82486,784 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ko",
+      "content_hash": "82caf896b596e6a9122491a0c88abceb520ea532c43a60ec651fb86a576bce5c",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "112f4319-2838-50fb-b0bb-2c1c0b06b34f",
+      "is_demo": true,
+      "item_id": "d2af763b-9751-522b-83f8-4d3152dd2c8e",
+      "key": "ko:exercise:media-guessing-fill-regret-guess",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "말걸",
+              "않을걸"
+            ],
+            "b2": [
+              "바쁜가"
+            ]
+          }
+        },
+        "display_answer": "그 댓글을 쓰지 말걸 그랬어요. 민수 씨가 요즘 바쁜가 봐요.",
+        "explanation": {
+          "vi": "Tiếc vì đã làm = V-지 말걸 그랬어요. 바쁘다 là tính từ → 바쁜가 봐요."
+        },
+        "known_wrong": [
+          {
+            "answer": "말았을걸",
+            "error_tag": "regret_tense",
+            "feedback_vi": "Giữ dạng gốc trước -(으)ㄹ걸 - 말걸 그랬어요."
+          },
+          {
+            "answer": "바쁘나",
+            "error_tag": "na_eunga_boda",
+            "feedback_vi": "Theo chuẩn, tính từ dùng -(으)ㄴ가 봐요 - 바쁜가 봐요."
+          },
+          {
+            "answer": "바쁠까",
+            "error_tag": "na_eunga_boda",
+            "feedback_vi": "-(으)ㄹ까 là câu hỏi \"liệu có…?\". Đoán dựa trên dấu hiệu dùng 바쁜가 봐요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          },
+          {
+            "id": "b2",
+            "width_hint": 3
+          }
+        ],
+        "template": "(Lẽ ra tôi không nên viết bình luận đó.) 그 댓글을 쓰지 {{b1}} 그랬어요. (Hình như dạo này Minsu bận.) 민수 씨가 요즘 {{b2}} 봐요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "08a5e85a16a24db326a5c3f41cb4e2a4acb66c3557e604e12ed8f8c4d099b6ca",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "201fdf03-982a-58ee-bc06-88d9b138a0e1",
+      "is_demo": true,
+      "item_id": "15ba93a9-251d-5291-8c5a-269f61167350",
+      "key": "ko:exercise:media-guessing-fill-regret-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "예매할걸"
+            ]
+          }
+        },
+        "display_answer": "표가 다 팔렸어요. 미리 예매할걸 그랬어요.",
+        "explanation": {
+          "vi": "Lẽ ra nên làm = V-(으)ㄹ걸 그랬어요. 예매하다 không có patchim → 예매할걸."
+        },
+        "known_wrong": [
+          {
+            "answer": "예매했을걸",
+            "error_tag": "regret_tense",
+            "feedback_vi": "Động từ trước -(으)ㄹ걸 giữ dạng gốc - 예매할걸; chỉ 그랬어요 ở quá khứ."
+          },
+          {
+            "answer": "예매할게",
+            "error_tag": "geol_ge",
+            "feedback_vi": "-(으)ㄹ게 là lời hứa \"tôi sẽ…\". Tiếc nuối dùng -(으)ㄹ걸 그랬어요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Vé bán hết rồi. Lẽ ra tôi nên đặt trước.",
+          "Gợi ý: 예매하다 + -(으)ㄹ걸."
+        ],
+        "template": "표가 다 팔렸어요. 미리 {{b1}} 그랬어요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "badc354738bd5e22f1a9b6e532bf20404430fb62a9c88c9ab2de09157cfdad28",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "87617ec2-36cb-5512-85ea-795830f80743",
+      "is_demo": true,
+      "item_id": "e5efa7b0-be11-563a-8aa0-49642c02fb76",
+      "key": "ko:exercise:media-guessing-listen-tende",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "o4b"
+        },
+        "display_answer": "Cuối tuần chắc đông người, bạn hãy xuất phát sớm.",
+        "explanation": {
+          "vi": "많을 텐데 là \"chắc là đông\", vế sau 일찍 출발하세요 là lời khuyên \"hãy xuất phát sớm\". Câu không kể việc đã xảy ra và cũng không nói \"tôi không đi\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "주말이라서 사람이 많을 텐데 일찍 출발하세요.",
+        "options": [
+          {
+            "id": "o4b",
+            "lang": "vi",
+            "text": "Cuối tuần chắc đông người, bạn hãy xuất phát sớm."
+          },
+          {
+            "id": "k6n",
+            "lang": "vi",
+            "text": "Cuối tuần chắc đông người nên tôi không đi."
+          },
+          {
+            "id": "g8u",
+            "lang": "vi",
+            "text": "Cuối tuần ít người nên bạn có thể đi muộn."
+          },
+          {
+            "id": "p2f",
+            "lang": "vi",
+            "text": "Cuối tuần đã đông người nên tôi xuất phát sớm."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "da58db5b8e0ce47416c878239a3522ad63b9b208764c6751f31b256f5d3b9857",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "cb460501-d688-59fd-a4d3-bbf33dc87fe0",
+      "is_demo": true,
+      "item_id": "d2af763b-9751-522b-83f8-4d3152dd2c8e",
+      "key": "ko:exercise:media-guessing-mcq-eunga-adjective",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "w2k"
+        },
+        "display_answer": "바쁜가",
+        "explanation": {
+          "vi": "바쁘다 là tính từ nên dùng -(으)ㄴ가 봐요 → 바쁜가 봐요 (theo chuẩn sách giáo khoa, -나 봐요 dành cho động từ). Trước 봐요 phải có -나/-(으)ㄴ가, nên 바쁜 và 바빠서 sai."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "w2k",
+            "lang": "ko",
+            "text": "바쁜가"
+          },
+          {
+            "id": "z3q",
+            "lang": "ko",
+            "text": "바쁜"
+          },
+          {
+            "id": "n8s",
+            "lang": "ko",
+            "text": "바빠서"
+          },
+          {
+            "id": "h6d",
+            "lang": "ko",
+            "text": "바쁘나"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn dạng đúng: 민수 씨가 요즘 많이 ___ 봐요. 전화를 안 받아요.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "5cd7ddb01ea465f8c2a2051e00ae7c0d1d84f0bdd9773f718c2ffb9313c05e84",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "58a66a9a-3ff7-5e02-bdad-f5069d2bb9d4",
+      "is_demo": true,
+      "item_id": "7b0d44aa-f349-5804-a173-6c14e9f11ef0",
+      "key": "ko:exercise:media-guessing-mcq-guess-friend",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r5t"
+        },
+        "display_answer": "댓글이 재미있나 봐요.",
+        "explanation": {
+          "vi": "재미있다 có đuôi 있다 nên dùng -나 봐요 như động từ → 재미있나 봐요. 재미있은가 sai dạng, 재미있는 봐요 thiếu -가, còn -(으)ㄹ걸 그랬어요 là tiếc nuối."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "r5t",
+            "lang": "ko",
+            "text": "댓글이 재미있나 봐요."
+          },
+          {
+            "id": "d1n",
+            "lang": "ko",
+            "text": "댓글이 재미있은가 봐요."
+          },
+          {
+            "id": "m4c",
+            "lang": "ko",
+            "text": "댓글이 재미있는 봐요."
+          },
+          {
+            "id": "y7p",
+            "lang": "ko",
+            "text": "댓글이 재미있을걸 그랬어요."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn thấy bạn mình vừa đọc bình luận trên điện thoại vừa cười suốt. Bạn đoán \"Hình như bình luận thú vị lắm\". Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "cfe8cc95c071d5da665923918fac73e850fc54e7ac2176a3895aa87cf98d0222",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "75da8202-ef6d-5a1e-b889-b4243f62d57e",
+      "is_demo": true,
+      "item_id": "d2af763b-9751-522b-83f8-4d3152dd2c8e",
+      "key": "ko:exercise:media-guessing-mcq-na-verb",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c5r"
+        },
+        "display_answer": "보나",
+        "explanation": {
+          "vi": "보다 là động từ nên dùng -나 봐요 → 보나 봐요 (hình như xem nhiều). -(으)ㄴ가 dành cho tính từ; 볼까 là \"có nên… không\", không đi với 봐요 để đoán."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "e9v",
+            "lang": "ko",
+            "text": "봐서"
+          },
+          {
+            "id": "j1y",
+            "lang": "ko",
+            "text": "본가"
+          },
+          {
+            "id": "c5r",
+            "lang": "ko",
+            "text": "보나"
+          },
+          {
+            "id": "t7m",
+            "lang": "ko",
+            "text": "볼까"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn dạng đúng: 댓글이 정말 많네요. 사람들이 이 영상을 많이 ___ 봐요.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "89733acd7d0a0eeb282d675332fb1f76580acdda9d6adb12c31d96d399e453a8",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "9ca4e313-5c65-5ad2-b855-1a9c58b25f23",
+      "is_demo": true,
+      "item_id": "f1b3f7cf-f4bd-5ab8-a6c9-efb6fe72bf8b",
+      "key": "ko:exercise:media-guessing-mcq-reading-forum",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "b9x"
+        },
+        "display_answer": "'서울 직장인'은 드라마의 반말을 조심할 필요가 있다고 생각한다.",
+        "explanation": {
+          "vi": "\"Seoul\" nói 조심할 필요가 있다고 생각해요 về 반말 trong phim, dù vẫn khen là cách hay. \"Linh\" tán thành (찬성해요); 볼걸 그랬어요 nghĩa là Mintchoco đã KHÔNG xem không phụ đề."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "f6e",
+            "lang": "ko",
+            "text": "'민트초코'는 학생 때 자막 없이 드라마를 봤다."
+          },
+          {
+            "id": "u2a",
+            "lang": "ko",
+            "text": "'서울 직장인'은 드라마로 공부하는 것이 나쁜 방법이라고 생각한다."
+          },
+          {
+            "id": "b9x",
+            "lang": "ko",
+            "text": "'서울 직장인'은 드라마의 반말을 조심할 필요가 있다고 생각한다."
+          },
+          {
+            "id": "l3w",
+            "lang": "ko",
+            "text": "'하노이 린'은 드라마로 공부하는 것에 반대한다."
+          }
+        ],
+        "shuffle": true,
+        "stem": "다음 글의 내용과 같은 것을 고르십시오.\n[게시글] 외국인이 한국 드라마로 한국어를 공부하는 것, 어떻게 생각하세요?\n└ 하노이 린: 저는 찬성해요. 드라마를 보면 실제 대화를 들을 수 있어요.\n└ 서울 직장인: 좋은 방법이지만 드라마에는 반말이 많아요. 처음 만난 사람에게 반말을 하면 실례가 될 텐데 조심할 필요가 있다고 생각해요.\n└ 민트초코: 댓글이 많네요. 다들 드라마를 많이 보시나 봐요. 저도 학생 때 자막 없이 볼걸 그랬어요.",
+        "stem_lang": "ko"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "7f1642f13a53b445e5af795c2c645dc663ccf968fd2754e1489cd02ef4f9fa05",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "aefe3efc-e615-5d99-8f84-4a9d84e7d635",
+      "is_demo": true,
+      "item_id": "15ba93a9-251d-5291-8c5a-269f61167350",
+      "key": "ko:exercise:media-guessing-translate-book-ticket",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "미리 예매할걸 그랬어요.",
+            "표를 미리 예매할걸 그랬어요.",
+            "미리 표를 예매할걸 그랬어요.",
+            "미리 예약할걸 그랬어요.",
+            "표를 미리 예약할걸 그랬어요.",
+            "미리 표를 예약할걸 그랬어요.",
+            "표를 미리 살걸 그랬어요.",
+            "미리 표를 살걸 그랬어요.",
+            "표를 미리 사 둘걸 그랬어요."
+          ]
+        },
+        "display_answer": "표를 미리 예매할걸 그랬어요.",
+        "explanation": {
+          "vi": "\"Lẽ ra nên…\" = V-(으)ㄹ걸 그랬어요. Đặt vé là 예매하다 (hoặc 예약하다); \"trước\" là 미리."
+        },
+        "known_wrong": [
+          {
+            "answer": "표를 미리 예매했을걸 그랬어요.",
+            "error_tag": "regret_tense",
+            "feedback_vi": "Động từ trước -(으)ㄹ걸 giữ dạng gốc - 예매할걸."
+          },
+          {
+            "answer": "표를 미리 예매할걸 그래요.",
+            "error_tag": "regret_tense",
+            "feedback_vi": "Tiếc chuyện đã qua nên vế cuối là 그랬어요."
+          },
+          {
+            "answer": "표를 미리 예매해야 해요.",
+            "error_tag": "regret_meaning",
+            "feedback_vi": "-아야 해요 là \"phải làm\" (bây giờ, sắp tới), không diễn tả tiếc nuối."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Lẽ ra tôi nên đặt vé trước."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "20b6366538cb96a22f64def213523ae39c9f58ee2a8ddaf8994a3be00eff3e15",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "6eed7bc2-881b-5537-8de5-5c5339fe289d",
+      "is_demo": true,
+      "item_id": "06f9ef9b-9599-5b0a-a614-4703b604f72e",
+      "key": "ko:exercise:media-guessing-translate-popular-youtuber",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Hình như YouTuber này rất nổi tiếng. Lượt xem cao thật.",
+            "Hình như YouTuber này rất nổi tiếng. Lượt xem thật sự cao.",
+            "Hình như YouTuber này nổi tiếng lắm. Lượt xem cao thật.",
+            "Hình như YouTuber này nổi tiếng lắm. Lượt xem thật sự cao.",
+            "Hình như YouTuber này rất được yêu thích. Lượt xem cao thật.",
+            "Hình như YouTuber này rất được yêu thích. Lượt xem thật sự cao.",
+            "Hình như YouTuber này được yêu thích lắm. Lượt xem cao thật.",
+            "Hình như YouTuber này được yêu thích lắm. Lượt xem thật sự cao.",
+            "Có vẻ YouTuber này rất nổi tiếng. Lượt xem cao thật.",
+            "Có vẻ YouTuber này rất nổi tiếng. Lượt xem thật sự cao.",
+            "Có vẻ YouTuber này nổi tiếng lắm. Lượt xem cao thật.",
+            "Có vẻ YouTuber này rất được yêu thích. Lượt xem cao thật.",
+            "Có vẻ YouTuber này rất được yêu thích. Lượt xem thật sự cao.",
+            "Hình như YouTuber này nổi lắm. Lượt xem cao thật.",
+            "Hình như YouTuber này rất nổi tiếng. Lượt xem rất cao.",
+            "Hình như YouTuber này rất được yêu thích. Lượt xem rất cao."
+          ]
+        },
+        "display_answer": "Hình như YouTuber này rất nổi tiếng. Lượt xem cao thật.",
+        "explanation": {
+          "vi": "인기가 많은가 봐요 = hình như được yêu thích/nổi tiếng (đoán dựa trên lượt xem). 조회수 = lượt xem, 정말 높아요 = cao thật."
+        },
+        "known_wrong": [
+          {
+            "answer": "YouTuber này rất nổi tiếng. Lượt xem cao thật.",
+            "error_tag": "guess_missing",
+            "feedback_vi": "-(으)ㄴ가 봐요 là phỏng đoán - cần \"hình như / có vẻ\"."
+          },
+          {
+            "answer": "Hình như YouTuber này không nổi tiếng. Lượt xem thấp quá.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "인기가 많다 là \"được yêu thích\", 높다 là \"cao\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "order_index": 10,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "이 유튜버는 인기가 많은가 봐요. 조회수가 정말 높아요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "bf14baefa5f133dc847a296958d6fb4414c7e8340b3bfb10600e7e570e9c4824",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "321d5ffa-cd94-5a2d-8ee8-46384783316d",
+      "is_demo": true,
+      "item_id": "e5efa7b0-be11-563a-8aa0-49642c02fb76",
+      "key": "ko:exercise:media-guessing-translate-tired-rest",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "피곤할 텐데 좀 쉬세요.",
+            "피곤할 텐데 조금 쉬세요.",
+            "피곤할 텐데 잠깐 쉬세요.",
+            "피곤할 텐데 쉬세요.",
+            "피곤할 텐데 좀 쉬어요.",
+            "피곤하실 텐데 좀 쉬세요.",
+            "피곤하실 텐데 조금 쉬세요.",
+            "피곤하실 텐데 잠깐 쉬세요.",
+            "피곤하실 텐데 쉬세요."
+          ]
+        },
+        "display_answer": "피곤할 텐데 좀 쉬세요.",
+        "explanation": {
+          "vi": "Đoán \"chắc bạn mệt\" = 피곤할 텐데, vế sau là lời khuyên 좀 쉬세요. Có thể thêm -시- (피곤하실 텐데) để lịch sự hơn."
+        },
+        "known_wrong": [
+          {
+            "answer": "피곤한 텐데 좀 쉬세요.",
+            "error_tag": "tende_form",
+            "feedback_vi": "텐데 đi với dạng -(으)ㄹ - 피곤할 텐데."
+          },
+          {
+            "answer": "피곤해서 좀 쉬세요.",
+            "error_tag": "aseo_imperative",
+            "feedback_vi": "-아서/-어서 không đi với câu khuyên, mệnh lệnh; dùng 피곤할 텐데 để phỏng đoán rồi khuyên."
+          },
+          {
+            "answer": "피곤했을 텐데 좀 쉬세요.",
+            "error_tag": "tende_tense",
+            "feedback_vi": "Câu nói về tình trạng hiện tại nên dùng 피곤할 텐데; -았/었을 텐데 là đoán về quá khứ."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "order_index": 5,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Chắc bạn mệt rồi, nghỉ một chút đi."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "e7a18b2c30ebd4ad5e6d5c900d989107c1cc8228352eac2bdd1827a8406bce80",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "df2ee495-e44a-583a-aa93-83a07b2f53b4",
+      "is_demo": true,
+      "item_id": "e5efa7b0-be11-563a-8aa0-49642c02fb76",
+      "key": "ko:exercise:media-guessing-translate-umbrella",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "내일 비가 올 텐데 우산을 가져가세요.",
+            "내일 비가 올 텐데 우산 가져가세요.",
+            "내일 비가 올 텐데 우산을 챙기세요.",
+            "내일 비가 올 텐데 우산 챙기세요.",
+            "내일 비가 올 텐데 우산을 가지고 가세요.",
+            "내일 비가 올 텐데 우산 가지고 가세요.",
+            "내일 비가 올 텐데 우산을 가져가요.",
+            "내일 비가 올 텐데 우산을 챙겨 가세요.",
+            "내일은 비가 올 텐데 우산을 가져가세요."
+          ]
+        },
+        "display_answer": "내일 비가 올 텐데 우산을 가져가세요.",
+        "explanation": {
+          "vi": "\"Chắc mai mưa\" = 내일 비가 올 텐데; lời khuyên = 우산을 가져가세요 (hoặc 챙기세요)."
+        },
+        "known_wrong": [
+          {
+            "answer": "내일 비가 오는 텐데 우산을 가져가세요.",
+            "error_tag": "tende_form",
+            "feedback_vi": "텐데 đi với dạng -(으)ㄹ - 올 텐데."
+          },
+          {
+            "answer": "내일 비가 와서 우산을 가져가세요.",
+            "error_tag": "aseo_imperative",
+            "feedback_vi": "-아서/-어서 không đi với câu khuyên, mệnh lệnh; dùng 올 텐데."
+          },
+          {
+            "answer": "내일 비가 올 텐데 우산을 가져갔어요.",
+            "error_tag": "tende_meaning",
+            "feedback_vi": "Vế sau là lời khuyên \"mang theo nhé\" - 가져가세요, không phải quá khứ."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Chắc mai trời mưa đấy, bạn mang ô theo nhé."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "6bae2bd27fd3c100f07e3131c96790c3fd80990553970bbdd203ade877c02d89",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "1a0ef98a-35f9-5800-8485-c0babe54d161",
+      "is_demo": true,
+      "item_id": "673165ea-c284-57c4-bc66-20208318194e",
+      "key": "ko:exercise:media-guessing-wb-subscribe",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "s1",
+              "s2",
+              "s3",
+              "s4",
+              "s5"
+            ],
+            [
+              "s2",
+              "s3",
+              "s4",
+              "s1",
+              "s5"
+            ]
+          ]
+        },
+        "display_answer": "저는 그 유튜브 채널을 구독했어요.",
+        "explanation": {
+          "vi": "구독하다 đi với 을/를 - 채널을 구독했어요, không dùng 채널에. Động từ 구독했어요 đứng cuối câu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Hàn: \"Tôi đã đăng ký theo dõi kênh YouTube đó.\"",
+        "tokens": [
+          {
+            "id": "s4",
+            "text": "채널을"
+          },
+          {
+            "id": "s6",
+            "text": "채널에"
+          },
+          {
+            "id": "s2",
+            "text": "그"
+          },
+          {
+            "id": "s5",
+            "text": "구독했어요"
+          },
+          {
+            "id": "s1",
+            "text": "저는"
+          },
+          {
+            "id": "s3",
+            "text": "유튜브"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
       "content_hash": "ea79cc1d72d804abd6fed549a548b5360ee98f4c004d79f3e895b9a42b21e115",
       "difficulty": 3,
       "exercise_type": "fill_blank",
@@ -80482,6 +87427,825 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "bf3f47021118287e07837a1ce15cff9432cce208acb9e35852fd225a73331ae8",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "1d00c936-16b4-5e27-9c3e-079d5f1a0134",
+      "is_demo": true,
+      "item_id": "8e6745dc-37b1-53ca-beb2-347fa3413d3d",
+      "key": "ko:exercise:opinions-etiquette-fill-agree-oppose",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "에"
+            ],
+            "b2": [
+              "찬성해요"
+            ]
+          }
+        },
+        "display_answer": "아버지는 그 계획에 반대하세요. 저는 찬성해요.",
+        "explanation": {
+          "vi": "Phản đối/tán thành một kế hoạch, ý kiến dùng N에 반대하다/찬성하다. Câu thứ hai chỉ cần động từ 찬성해요."
+        },
+        "known_wrong": [
+          {
+            "answer": "찬성이에요",
+            "error_tag": "noun_vs_verb",
+            "feedback_vi": "\"Tôi tán thành\" là động từ 찬성해요; 찬성이에요 nghĩa là \"là sự tán thành\"."
+          },
+          {
+            "answer": "반대해요",
+            "error_tag": "agree_oppose",
+            "feedback_vi": "Vế sau là \"tôi tán thành\" - 찬성해요; 반대해요 là \"phản đối\"."
+          },
+          {
+            "answer": "이",
+            "error_tag": "particle_e",
+            "feedback_vi": "Đối tượng của 반대하다 khi nói về ý kiến, kế hoạch dùng 에 - 계획에 반대하다."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 1
+          },
+          {
+            "id": "b2",
+            "width_hint": 4
+          }
+        ],
+        "template": "(Bố tôi phản đối kế hoạch đó.) 아버지는 그 계획{{b1}} 반대하세요. (Còn tôi tán thành.) 저는 {{b2}}."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "0df0b0b9f6627e04e968c7babe8d6438c5fd6ac5270d8950670172fda58032b6",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "69f35c9b-efba-5d94-b567-13075122f2a3",
+      "is_demo": true,
+      "item_id": "adc39efe-c7d4-555d-a320-68b06471dae7",
+      "key": "ko:exercise:opinions-etiquette-fill-piryo-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "쓸"
+            ]
+          }
+        },
+        "display_answer": "친한 친구한테는 존댓말을 쓸 필요가 없어요.",
+        "explanation": {
+          "vi": "쓰다 bỏ 다 còn 쓰 (không patchim) → thêm ㄹ thành 쓸. Cấu trúc V-(으)ㄹ 필요가 없다 nghĩa là \"không cần làm\"."
+        },
+        "known_wrong": [
+          {
+            "answer": "쓰는",
+            "error_tag": "piryo_form",
+            "feedback_vi": "Trước 필요 dùng dạng -(으)ㄹ, không dùng -는 - 쓸 필요."
+          },
+          {
+            "answer": "쓰기",
+            "error_tag": "piryo_form",
+            "feedback_vi": "쓰기 필요 không tự nhiên. Cấu trúc đúng là V-(으)ㄹ 필요가 없다 - 쓸 필요."
+          },
+          {
+            "answer": "쓸을",
+            "error_tag": "eul_form",
+            "feedback_vi": "쓰다 không có patchim nên chỉ thêm ㄹ - 쓸."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Với bạn thân thì không cần dùng kính ngữ.",
+          "Gợi ý: 쓰다 + định ngữ -(으)ㄹ."
+        ],
+        "template": "친한 친구한테는 존댓말을 {{b1}} 필요가 없어요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "ff836e1b1013e6599a221f23ab9c5c288d2ddc68184dfdfc74774b0df058e4c4",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "c8ab5a4b-f8f8-5565-9132-2bb40710297c",
+      "is_demo": true,
+      "item_id": "f339216b-67d0-585a-aa3d-d124819b984d",
+      "key": "ko:exercise:opinions-etiquette-listen-two-hands",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "m5j"
+        },
+        "display_answer": "Theo tôi, khi đưa đồ cho người lớn thì cần đưa bằng hai tay.",
+        "explanation": {
+          "vi": "어른에게 드릴 때 là \"khi đưa cho người lớn\", 두 손으로 là \"bằng hai tay\", 필요가 있어요 là \"cần\". Câu không nói đến trẻ em hay bạn bè."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "제 생각에는 어른에게 물건을 드릴 때 두 손으로 드릴 필요가 있어요.",
+        "options": [
+          {
+            "id": "z8e",
+            "lang": "vi",
+            "text": "Theo tôi, người lớn cần đưa đồ cho trẻ em bằng hai tay."
+          },
+          {
+            "id": "m5j",
+            "lang": "vi",
+            "text": "Theo tôi, khi đưa đồ cho người lớn thì cần đưa bằng hai tay."
+          },
+          {
+            "id": "b2y",
+            "lang": "vi",
+            "text": "Theo tôi, khi đưa đồ cho người lớn thì không cần đưa bằng hai tay."
+          },
+          {
+            "id": "u4g",
+            "lang": "vi",
+            "text": "Theo tôi, khi nhận quà của bạn bè thì cần dùng hai tay."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "3f22bf9d6295865d9b2843dc6cdb79e90f149b6862ee45add4079e7be9c5ecfc",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "9e2a6ea2-4eba-558b-8fc3-43991df16e4d",
+      "is_demo": true,
+      "item_id": "6c7e6c3c-9edf-5bd2-b97d-3feeadc595b9",
+      "key": "ko:exercise:opinions-etiquette-mcq-adjective-dago",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k3v"
+        },
+        "display_answer": "길다고",
+        "explanation": {
+          "vi": "길다 (dài) là tính từ nên chỉ thêm -다고 - 길다고. 긴다고 là cách chia của động từ; không đặt đuôi 해요 (길어요) trước -고."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "k3v",
+            "lang": "ko",
+            "text": "길다고"
+          },
+          {
+            "id": "x2r",
+            "lang": "ko",
+            "text": "길어요고"
+          },
+          {
+            "id": "d6t",
+            "lang": "ko",
+            "text": "길는다고"
+          },
+          {
+            "id": "p8m",
+            "lang": "ko",
+            "text": "긴다고"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn dạng đúng: 저는 이 광고가 너무 ___ 생각해요. (quảng cáo dài quá)",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "92de358a283bb7f7e71c6b3bc77c667413dd2d9e543d0c0585a6455922c31024",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "c66e1f33-409d-5bc6-b9f2-3b431b3b8ee3",
+      "is_demo": true,
+      "item_id": "8d42c05b-170a-5f06-8a20-9a994f12cc1b",
+      "key": "ko:exercise:opinions-etiquette-mcq-elder-banmal",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r6p"
+        },
+        "display_answer": "할머니, 어디 가세요?",
+        "explanation": {
+          "vi": "Với người lớn tuổi phải dùng 존댓말 - 가세요? vừa lịch sự vừa kính trọng. 가?, 가니?, 갈래? đều là 반말, chỉ dùng với bạn thân hoặc người nhỏ tuổi hơn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "c1x",
+            "lang": "ko",
+            "text": "할머니, 어디 갈래?"
+          },
+          {
+            "id": "e3k",
+            "lang": "ko",
+            "text": "할머니, 어디 가?"
+          },
+          {
+            "id": "r6p",
+            "lang": "ko",
+            "text": "할머니, 어디 가세요?"
+          },
+          {
+            "id": "w9d",
+            "lang": "ko",
+            "text": "할머니, 어디 가니?"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn gặp bà cụ hàng xóm ở thang máy và muốn hỏi \"Bà đi đâu ạ?\". Câu nào phù hợp?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "c610222f23d2294df652ba62368279819fd19e004c7fa7abbd30ac1def1d476c",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "4498d1ca-adb4-58ea-9507-86e076481898",
+      "is_demo": true,
+      "item_id": "6c7e6c3c-9edf-5bd2-b97d-3feeadc595b9",
+      "key": "ko:exercise:opinions-etiquette-mcq-verb-dago",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "f4n"
+        },
+        "display_answer": "본다고",
+        "explanation": {
+          "vi": "보다 là động từ không có patchim nên thêm -ㄴ다고 → 본다고. -는다고 chỉ dùng khi động từ có patchim (먹는다고); 보다고 thiếu ㄴ của động từ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "h9w",
+            "lang": "ko",
+            "text": "봐요고"
+          },
+          {
+            "id": "s1q",
+            "lang": "ko",
+            "text": "보는다고"
+          },
+          {
+            "id": "f4n",
+            "lang": "ko",
+            "text": "본다고"
+          },
+          {
+            "id": "a7c",
+            "lang": "ko",
+            "text": "보다고"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn dạng đúng: 요즘 사람들은 드라마를 휴대폰으로 ___ 생각해요.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "60b91f3c37b68f6fcd8302794baaef795b69b828f3078d6149afc0104f28683e",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "491fd205-50ab-5713-aa6e-9b346f1c211a",
+      "is_demo": true,
+      "item_id": "f0d09cbe-66b9-53c2-bb0d-b47ca6a5ccd7",
+      "key": "ko:exercise:opinions-etiquette-translate-age-culture",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Theo tôi, cần phải hiểu văn hoá tuổi tác của Hàn Quốc.",
+            "Theo tôi, cần phải hiểu văn hóa tuổi tác của Hàn Quốc.",
+            "Theo tôi, cần hiểu văn hoá tuổi tác của Hàn Quốc.",
+            "Theo tôi, cần hiểu văn hóa tuổi tác của Hàn Quốc.",
+            "Theo tôi thì cần phải hiểu văn hoá tuổi tác của Hàn Quốc.",
+            "Theo tôi thì cần phải hiểu văn hóa tuổi tác của Hàn Quốc.",
+            "Theo tôi, chúng ta cần hiểu văn hoá tuổi tác của Hàn Quốc.",
+            "Theo tôi, chúng ta cần hiểu văn hóa tuổi tác của Hàn Quốc.",
+            "Theo tôi, cần phải hiểu văn hoá coi trọng tuổi tác của Hàn Quốc.",
+            "Theo tôi, cần phải hiểu văn hóa coi trọng tuổi tác của Hàn Quốc.",
+            "Tôi nghĩ cần phải hiểu văn hoá tuổi tác của Hàn Quốc.",
+            "Tôi nghĩ cần phải hiểu văn hóa tuổi tác của Hàn Quốc.",
+            "Theo ý tôi, cần phải hiểu văn hoá tuổi tác của Hàn Quốc.",
+            "Theo ý tôi, cần phải hiểu văn hóa tuổi tác của Hàn Quốc."
+          ]
+        },
+        "display_answer": "Theo tôi, cần phải hiểu văn hoá tuổi tác của Hàn Quốc.",
+        "explanation": {
+          "vi": "제 생각에는 = theo tôi; 이해할 필요가 있어요 = cần (phải) hiểu; 나이 문화 = văn hoá coi trọng tuổi tác."
+        },
+        "known_wrong": [
+          {
+            "answer": "Theo tôi, không cần hiểu văn hoá tuổi tác của Hàn Quốc.",
+            "error_tag": "piryo_negation",
+            "feedback_vi": "필요가 있어요 là \"cần\"; \"không cần\" mới là 필요가 없어요."
+          },
+          {
+            "answer": "Theo tôi, cần phải hiểu văn hoá ẩm thực của Hàn Quốc.",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "나이 là \"tuổi\", 나이 문화 là văn hoá tuổi tác, không liên quan đến ẩm thực."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "제 생각에는 한국의 나이 문화를 이해할 필요가 있어요."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "beb3766e73ddff5f3b1ff7c830f19dc7a614e8ae8eb6dcf88c1c091692f81682",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "1d56d006-0aa2-599d-a049-a7c7030398ea",
+      "is_demo": true,
+      "item_id": "f5932de9-e16a-5cf6-aaad-b1ccba1655dd",
+      "key": "ko:exercise:opinions-etiquette-translate-elders-honorific",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "어른에게는 존댓말을 쓸 필요가 있다고 생각해요.",
+            "어른한테는 존댓말을 쓸 필요가 있다고 생각해요.",
+            "어른에게 존댓말을 쓸 필요가 있다고 생각해요.",
+            "어른한테 존댓말을 쓸 필요가 있다고 생각해요.",
+            "어른에게는 존댓말을 할 필요가 있다고 생각해요.",
+            "어른한테는 존댓말을 할 필요가 있다고 생각해요.",
+            "어른에게 존댓말을 할 필요가 있다고 생각해요.",
+            "어른한테 존댓말을 할 필요가 있다고 생각해요.",
+            "저는 어른에게는 존댓말을 쓸 필요가 있다고 생각해요.",
+            "저는 어른한테는 존댓말을 쓸 필요가 있다고 생각해요.",
+            "저는 어른에게 존댓말을 쓸 필요가 있다고 생각해요.",
+            "저는 어른한테 존댓말을 쓸 필요가 있다고 생각해요.",
+            "저는 어른에게는 존댓말을 할 필요가 있다고 생각해요.",
+            "저는 어른한테는 존댓말을 할 필요가 있다고 생각해요.",
+            "저는 어른에게 존댓말을 할 필요가 있다고 생각해요.",
+            "저는 어른한테 존댓말을 할 필요가 있다고 생각해요.",
+            "제 생각에는 어른에게는 존댓말을 쓸 필요가 있어요.",
+            "제 생각에는 어른한테는 존댓말을 쓸 필요가 있어요."
+          ]
+        },
+        "display_answer": "저는 어른에게는 존댓말을 쓸 필요가 있다고 생각해요.",
+        "explanation": {
+          "vi": "Ghép hai cấu trúc - 존댓말을 쓸 필요가 있다 (cần dùng kính ngữ) + -고 생각해요. 있다 chỉ thêm -다고 → 있다고."
+        },
+        "known_wrong": [
+          {
+            "answer": "어른에게는 존댓말을 쓸 필요가 있는다고 생각해요.",
+            "error_tag": "itda_dago",
+            "feedback_vi": "있다 đi với -다고 như tính từ - 있다고, không phải 있는다고."
+          },
+          {
+            "answer": "어른에게는 존댓말을 쓸 필요가 있어요고 생각해요.",
+            "error_tag": "dago_haeyo_inside",
+            "feedback_vi": "Trước -고 생각해요 dùng dạng gốc - 있다고, không dùng đuôi 해요."
+          },
+          {
+            "answer": "어른에게는 반말을 쓸 필요가 있다고 생각해요.",
+            "error_tag": "vocab_jondaenmal",
+            "feedback_vi": "Kính ngữ là 존댓말; dùng 반말 với người lớn là vô lễ."
+          },
+          {
+            "answer": "어른에게는 존댓말을 쓰는 필요가 있다고 생각해요.",
+            "error_tag": "piryo_form",
+            "feedback_vi": "Trước 필요 dùng -(으)ㄹ - 쓸 필요."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "order_index": 10,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi nghĩ cần phải dùng kính ngữ với người lớn."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "c7fd4de9971c91666c695bb7ed62f2dc8100da3f266d3ae1fd987bec025e67d9",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "64c33229-3e4f-5c65-abd8-e98060dd0060",
+      "is_demo": true,
+      "item_id": "6c7e6c3c-9edf-5bd2-b97d-3feeadc595b9",
+      "key": "ko:exercise:opinions-etiquette-translate-manners-important",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "저는 예절이 아주 중요하다고 생각해요.",
+            "예절이 아주 중요하다고 생각해요.",
+            "저는 예절이 정말 중요하다고 생각해요.",
+            "예절이 정말 중요하다고 생각해요.",
+            "저는 예절이 매우 중요하다고 생각해요.",
+            "예절이 매우 중요하다고 생각해요.",
+            "전 예절이 아주 중요하다고 생각해요.",
+            "저는 예절이 너무 중요하다고 생각해요.",
+            "저는 예절이 아주 중요하다고 생각합니다.",
+            "제 생각에는 예절이 아주 중요해요.",
+            "제 생각에는 예절이 정말 중요해요."
+          ]
+        },
+        "display_answer": "저는 예절이 아주 중요하다고 생각해요.",
+        "explanation": {
+          "vi": "Mệnh đề \"phép lịch sự rất quan trọng\" là 예절이 아주 중요하다 (tính từ) → thêm -고 생각해요. Khác tiếng Việt, \"tôi nghĩ\" đứng cuối câu."
+        },
+        "known_wrong": [
+          {
+            "answer": "저는 예절이 아주 중요한다고 생각해요.",
+            "error_tag": "adjective_dago",
+            "feedback_vi": "중요하다 là tính từ nên chỉ thêm -다고 - 중요하다고, không thêm ㄴ."
+          },
+          {
+            "answer": "저는 예절이 아주 중요해요고 생각해요.",
+            "error_tag": "dago_haeyo_inside",
+            "feedback_vi": "Trước -고 생각해요 dùng dạng gốc -다 - 중요하다고, không dùng đuôi 해요."
+          },
+          {
+            "answer": "저는 생각해요 예절이 아주 중요하다고.",
+            "error_tag": "word_order",
+            "feedback_vi": "Tiếng Hàn đặt 생각해요 ở cuối câu, sau mệnh đề -다고."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "order_index": 5,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi nghĩ phép lịch sự rất quan trọng."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "3ba54026beb95667cd0e8855efad9ce259dfc767467fc749eb712627bf72d3b5",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "8b7386cd-d98d-5c8b-896c-d9435d609e4a",
+      "is_demo": true,
+      "item_id": "adc39efe-c7d4-555d-a320-68b06471dae7",
+      "key": "ko:exercise:opinions-etiquette-translate-no-need",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "친한 친구에게는 존댓말을 쓸 필요가 없어요.",
+            "친한 친구한테는 존댓말을 쓸 필요가 없어요.",
+            "친한 친구에게는 존댓말을 할 필요가 없어요.",
+            "친한 친구한테는 존댓말을 할 필요가 없어요.",
+            "친한 친구하고는 존댓말을 쓸 필요가 없어요.",
+            "친한 친구하고는 존댓말을 할 필요가 없어요.",
+            "친한 친구에게 존댓말을 쓸 필요가 없어요.",
+            "친한 친구한테 존댓말을 쓸 필요가 없어요.",
+            "친한 친구에게 존댓말을 할 필요가 없어요.",
+            "친한 친구한테 존댓말을 할 필요가 없어요.",
+            "친한 친구에게는 존댓말을 쓸 필요가 없습니다."
+          ]
+        },
+        "display_answer": "친한 친구에게는 존댓말을 쓸 필요가 없어요.",
+        "explanation": {
+          "vi": "Không cần làm gì = V-(으)ㄹ 필요가 없어요. 쓰다 → 쓸; \"với bạn thân\" là 친한 친구에게(는) hoặc 한테(는)."
+        },
+        "known_wrong": [
+          {
+            "answer": "친한 친구에게는 존댓말을 쓰는 필요가 없어요.",
+            "error_tag": "piryo_form",
+            "feedback_vi": "Trước 필요 dùng -(으)ㄹ - 쓸 필요."
+          },
+          {
+            "answer": "친한 친구에게는 존댓말을 쓸 필요해요.",
+            "error_tag": "piryo_negation",
+            "feedback_vi": "\"Không cần\" là 필요가 없어요; 필요해요 nghĩa là \"cần\"."
+          },
+          {
+            "answer": "친한 친구에게는 반말을 쓸 필요가 없어요.",
+            "error_tag": "vocab_jondaenmal",
+            "feedback_vi": "Kính ngữ là 존댓말; 반말 là lối nói trống không."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Với bạn thân thì không cần dùng kính ngữ."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "d59427b8a2edf094ac31122a92ee77f6a952e0be706109450aea4a44ad322b3b",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "6683a60f-92ce-5080-8e73-47943cae893b",
+      "is_demo": true,
+      "item_id": "bbd458df-9fbc-5271-b43f-0126daf2f27d",
+      "key": "ko:exercise:opinions-etiquette-wb-agree",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3",
+              "t4"
+            ],
+            [
+              "t2",
+              "t3",
+              "t1",
+              "t4"
+            ]
+          ]
+        },
+        "display_answer": "저는 그 의견에 찬성해요.",
+        "explanation": {
+          "vi": "Tán thành một ý kiến là N에 찬성하다 nên chọn 의견에. \"Tôi tán thành\" là động từ 찬성해요, không phải 찬성이에요 (là danh từ + \"là\")."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Hàn: \"Tôi tán thành ý kiến đó.\"",
+        "tokens": [
+          {
+            "id": "t4",
+            "text": "찬성해요"
+          },
+          {
+            "id": "t5",
+            "text": "의견을"
+          },
+          {
+            "id": "t2",
+            "text": "그"
+          },
+          {
+            "id": "t6",
+            "text": "찬성이에요"
+          },
+          {
+            "id": "t1",
+            "text": "저는"
+          },
+          {
+            "id": "t3",
+            "text": "의견에"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "243e7b2c92cf08ccf13a826b0419f48726c569813fa1e7fd44fe58871d8f961b",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "c8231391-422a-597d-8ea1-3e361ec284e7",
+      "is_demo": true,
+      "item_id": "6c7e6c3c-9edf-5bd2-b97d-3feeadc595b9",
+      "key": "ko:exercise:opinions-etiquette-wb-dramas-fun",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "q1",
+              "q2",
+              "q3",
+              "q4",
+              "q5",
+              "q6"
+            ],
+            [
+              "q3",
+              "q4",
+              "q5",
+              "q1",
+              "q2",
+              "q6"
+            ]
+          ]
+        },
+        "display_answer": "많은 사람들이 한국 드라마가 재미있다고 생각해요.",
+        "explanation": {
+          "vi": "재미있다 có đuôi 있다 nên chỉ thêm -다고 → 재미있다고 (không phải 재미있는다고). 생각해요 luôn đứng cuối câu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Hàn: \"Nhiều người cho rằng phim Hàn hay.\"",
+        "tokens": [
+          {
+            "id": "q5",
+            "text": "재미있다고"
+          },
+          {
+            "id": "q2",
+            "text": "사람들이"
+          },
+          {
+            "id": "q7",
+            "text": "재미있는다고"
+          },
+          {
+            "id": "q4",
+            "text": "드라마가"
+          },
+          {
+            "id": "q6",
+            "text": "생각해요"
+          },
+          {
+            "id": "q1",
+            "text": "많은"
+          },
+          {
+            "id": "q3",
+            "text": "한국"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
       "status": "published"
     },
     {
@@ -126482,6 +134246,1660 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "반대하다 là \"phản đối\" (không đồng ý), còn 반박하다 là \"phản bác\" bằng lý lẽ cụ thể."
+        },
+        "examples": [
+          {
+            "target": "반대 측은 그 의견을 근거를 들어 반박했다.",
+            "translation": {
+              "vi": "Phía phản đối đã đưa ra căn cứ để phản bác ý kiến đó."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Phản bác, bác bỏ ý kiến của người khác bằng lập luận."
+        },
+        "pronunciation_note": {
+          "vi": "반박하다 đọc [반바카다] - ㄱ gặp ㅎ hợp lại thành ㅋ (bật hơi hoá)."
+        }
+      },
+      "content_hash": "60f985c725974b651aa7aa3b977948b491eb21b6a49a8d9fd3f395765c40beda",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "romanization": "banbakhada",
+        "text": "반박하다"
+      },
+      "id": "3b4a6b0c-22ed-556f-97ad-e3ce0b171452",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-banbakhada",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không chỉ dùng cho thuốc - trong bài luận, 부작용 rất hay dùng cho mặt trái của chính sách."
+        },
+        "examples": [
+          {
+            "target": "새 제도는 예상하지 못한 부작용을 낳았다.",
+            "translation": {
+              "vi": "Chế độ mới đã gây ra những hệ quả tiêu cực không lường trước."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Tác dụng phụ; hệ quả tiêu cực ngoài ý muốn của một chính sách, công nghệ."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc nối [부자굥]."
+        }
+      },
+      "content_hash": "87c08c56a87a7dc496b8eaee95afb5222dd437360e3cb29fcc9c0b0490f653a4",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "bujagyong",
+        "text": "부작용"
+      },
+      "id": "12adc1cc-59dd-5cdf-88be-1a420b295842",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-bujagyong",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Trong bài luận không viết 첫 번째로, 두 번째로 lặp lại nhiều lần như văn nói; 첫째, 둘째 gọn và trang trọng hơn."
+        },
+        "examples": [
+          {
+            "target": "첫째, 비용이 많이 든다. 둘째, 시간이 오래 걸린다.",
+            "translation": {
+              "vi": "Thứ nhất, tốn nhiều chi phí. Thứ hai, mất nhiều thời gian."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Thứ nhất, thứ hai, thứ ba - dùng để liệt kê luận điểm trong văn viết."
+        },
+        "pronunciation_note": {
+          "vi": "첫째 đọc [첟째], 셋째 đọc [섿째] - patchim ㅅ chỉ còn âm chặn [ㄷ]."
+        }
+      },
+      "content_hash": "0cc3613942d8f86da25097e29d79434bb66b8c78f634e1188039d0c309bcef1a",
+      "difficulty": 2,
+      "front": {
+        "pos": "trạng từ liệt kê",
+        "romanization": "cheotjjae, duljjae, setjjae",
+        "text": "첫째, 둘째, 셋째"
+      },
+      "id": "ca1ce089-4433-5441-9b23-ed57ac626c47",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ac-cheotjjae-duljjae",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hán Việt \"giá trị quan\" - tiếng Việt nói \"quan niệm giá trị/hệ giá trị\", đừng dịch từng chữ."
+        },
+        "examples": [
+          {
+            "target": "세대마다 일과 가정에 대한 가치관이 다르다.",
+            "translation": {
+              "vi": "Mỗi thế hệ có quan niệm khác nhau về công việc và gia đình."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Hệ giá trị, quan niệm về giá trị sống của một người hay một thế hệ."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [가치관]."
+        }
+      },
+      "content_hash": "b2afe6729642cec752e05c0236b5dd1e4e05276da6532bd7ab889815f9c68df3",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "gachigwan",
+        "text": "가치관"
+      },
+      "id": "08360000-9106-57f8-bde7-0479833616e1",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-gachigwan",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Chỉ dùng khi điều tốt được thêm điều tốt; điều xấu chồng thêm điều xấu là 설상가상 (hoạ vô đơn chí)."
+        },
+        "examples": [
+          {
+            "target": "경치도 좋은데 날씨까지 좋으니 금상첨화이다.",
+            "translation": {
+              "vi": "Phong cảnh đã đẹp, thời tiết lại còn đẹp, thật là tuyệt hơn cả mong đợi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Đã tốt lại càng tốt (gấm thêu hoa)."
+        },
+        "pronunciation_note": {
+          "vi": "Thường nghe như [금상처뫄] - ㅎ sau ㅁ đọc rất nhẹ."
+        }
+      },
+      "content_hash": "ba928d4477cfcc913ae67007bac26751a98a4f09b312e6deac298be4486fb5ac",
+      "difficulty": 4,
+      "front": {
+        "pos": "thành ngữ bốn chữ",
+        "romanization": "geumsangcheomhwa",
+        "text": "금상첨화"
+      },
+      "id": "d563ad86-7a95-5131-af4d-2613b5f2f40c",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ac-geumsangcheomhwa",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Đi với 근거를 제시하다 (đưa ra căn cứ), 근거가 없다 (vô căn cứ). Không dùng 근거 cho \"nguồn gốc\" của đồ vật (출처)."
+        },
+        "examples": [
+          {
+            "target": "그 주장에는 객관적인 근거가 부족하다.",
+            "translation": {
+              "vi": "Luận điểm đó thiếu căn cứ khách quan."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Căn cứ, luận cứ, cơ sở để chứng minh một ý kiến."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [근거]; ㄱ thứ hai giữ âm thường, không căng."
+        }
+      },
+      "content_hash": "62bed3bfcd8f7af41f7853325b488b28c2f081dd4e13877b3b5437fbf52f4422",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "geungeo",
+        "text": "근거"
+      },
+      "id": "7c49c8b7-a8b6-51e6-be5d-76ebaf05e62d",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-geungeo",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "그러니까 nghe giống nhưng là văn nói (\"vậy nên đó\"), không dùng trong bài luận."
+        },
+        "examples": [
+          {
+            "target": "그러므로 환경 보호는 모두의 책임이다.",
+            "translation": {
+              "vi": "Vì vậy, bảo vệ môi trường là trách nhiệm của tất cả mọi người."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Vì vậy, cho nên - kết luận theo lối suy luận logic, rất trang trọng."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [그러므로], ㅡ phát âm dẹt môi, không tròn môi như \"u\"."
+        }
+      },
+      "content_hash": "3f7687a63fc5d9fbd23c92e2b71d36d072b6f1a4e86fd4103534b5a3dd0460bb",
+      "difficulty": 3,
+      "front": {
+        "pos": "phó từ nối",
+        "romanization": "geureomeuro",
+        "text": "그러므로"
+      },
+      "id": "60b74499-070a-50d7-86d9-55310983076b",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-geureomeuro",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "writing",
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "-(으)랴 là câu hỏi tu từ nghĩa \"lẽ nào lại...\", tức là \"không đổ\". Đừng hiểu thành tháp sắp đổ."
+        },
+        "examples": [
+          {
+            "target": "공든 탑이 무너지랴. 열심히 준비했으니 좋은 결과가 있을 것이다.",
+            "translation": {
+              "vi": "Có công thì ắt có quả. Đã chuẩn bị chăm chỉ thì sẽ có kết quả tốt."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Công sức bỏ ra bằng cả tấm lòng thì không uổng phí (nghĩa đen - tháp xây công phu sao đổ được)."
+        },
+        "pronunciation_note": {
+          "vi": "탑이 đọc nối [타비]; 무너지랴 là đuôi câu hỏi tu từ cổ."
+        }
+      },
+      "content_hash": "2b10982f176e92fbf07ed42b2ae2d67c503fabffb5fd918a9edd15d80981b7f9",
+      "difficulty": 4,
+      "front": {
+        "pos": "tục ngữ",
+        "romanization": "gongdeun tabi muneojirya",
+        "text": "공든 탑이 무너지랴"
+      },
+      "id": "8d52b6ec-7644-5697-a496-3355df1c5e52",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ac-gongdeun-tap",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Sau danh từ dùng -(이)라고 볼 수 있다, sau động từ dùng -ㄴ/는다고; người Việt hay viết sai thành 결과다고."
+        },
+        "examples": [
+          {
+            "target": "이는 사회 변화의 결과라고 볼 수 있다.",
+            "translation": {
+              "vi": "Điều này có thể xem là kết quả của sự thay đổi xã hội."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Có thể xem là, có thể nói rằng - đưa ra nhận định một cách mềm, khách quan trong văn viết."
+        },
+        "pronunciation_note": {
+          "vi": "볼 수 đọc [볼쑤] - ㅅ sau đuôi -ㄹ định ngữ đọc căng; 있다 đọc [읻따]."
+        }
+      },
+      "content_hash": "7e2a597b73604d23197ec4b9e9ab8861317b6c562e6c7d6f505097312a3560bf",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc rào đón",
+        "romanization": "-dago bol su itda",
+        "text": "-다고 볼 수 있다"
+      },
+      "id": "029c9a8e-08c3-54f7-9337-ff0962174dba",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ac-gram-dago-bol-su-itda",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Đã mang nghĩa \"chỉ\" nên không thêm 만 (10%만에 불과하다 là thừa)."
+        },
+        "examples": [
+          {
+            "target": "찬성한 사람은 전체의 10%에 불과했다.",
+            "translation": {
+              "vi": "Người tán thành chỉ chiếm vỏn vẹn 10% tổng số."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Chỉ là, chẳng qua chỉ là N - nhấn mạnh con số hay sự việc là nhỏ, không đáng kể."
+        },
+        "pronunciation_note": {
+          "vi": "불과 đọc [불과], ㄹ giữ nguyên, không nuốt."
+        }
+      },
+      "content_hash": "cf93b5d2276e81270d00d56f9659e87af6041f77712fd6fdb4f9c925789c35f2",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "e bulgwahada",
+        "text": "N에 불과하다"
+      },
+      "id": "a2757aa6-af56-5156-9d4e-af7423c9349a",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ac-gram-e-bulgwahada",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Chỉ đứng sau danh từ (폭우로 인해), không sau động từ. Văn nói dùng N 때문에."
+        },
+        "examples": [
+          {
+            "target": "폭우로 인해 항공편이 결항되었다.",
+            "translation": {
+              "vi": "Do mưa lớn, các chuyến bay đã bị huỷ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Do N, vì N - nêu nguyên nhân (thường là kết quả xấu) trong văn viết, tin tức."
+        },
+        "pronunciation_note": {
+          "vi": "인해 thường đọc nhẹ [이내] - ㅎ giữa hai âm vang gần như mất."
+        }
+      },
+      "content_hash": "a0be2de98525e791f17f53f64090c578e0d6b97230c27ba4a5e769717d896c19",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "(eu)ro inhae(seo)",
+        "text": "N(으)로 인해(서)"
+      },
+      "id": "c9c66fd3-6c44-5dfc-9d88-78b8225ec8e5",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ac-gram-euro-inhae",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Vế sau mang nghĩa trái kỳ vọng hoặc phủ định (도 못 하다, -만). Không dùng khi cả hai vế đều tích cực."
+        },
+        "examples": [
+          {
+            "target": "돈을 모으기는커녕 빚만 늘었다.",
+            "translation": {
+              "vi": "Chẳng những không để dành được tiền mà nợ còn tăng lên."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Chẳng những không... mà còn / đừng nói là... ngay cả... - điều kỳ vọng không xảy ra, thậm chí ngược lại."
+        },
+        "pronunciation_note": {
+          "vi": "커녕 đọc [커녕], ㅋ bật hơi mạnh."
+        }
+      },
+      "content_hash": "c368c98a7fd985ec3edb0598c980b32a8a57cd6f56eea4c2cbd428912fc4de54",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-gineun keonyeong / eun/neun keonyeong",
+        "text": "-기는커녕 / N은/는커녕"
+      },
+      "id": "2b9a0738-8fd3-5521-88aa-8c006d151c78",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ac-gram-gineun-keonyeong",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "-지 않으면 안 되다 là \"phải\" (bổn phận); -지 않을 수 없다 là \"không thể không\" vì hoàn cảnh hay cảm xúc ép buộc (감탄하지 않을 수 없다)."
+        },
+        "examples": [
+          {
+            "target": "상황이 이렇다 보니 계획을 수정하지 않을 수 없었다.",
+            "translation": {
+              "vi": "Tình hình như thế nên chúng tôi buộc phải sửa kế hoạch."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Không thể không, buộc phải - phủ định kép để nhấn mạnh sự tất yếu."
+        },
+        "pronunciation_note": {
+          "vi": "않을 đọc [아늘] (ㅎ câm), 수 đọc căng [쑤], 없다 đọc [업따]."
+        }
+      },
+      "content_hash": "f341d03fd6066aa94d8b889234b46df364f6f8542d900b8c820a4b455c7b52af",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-ji aneul su eopda",
+        "text": "-지 않을 수 없다"
+      },
+      "id": "5043721e-8b89-5313-82b8-909172b8ba68",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ac-gram-ji-aneul-su-eopda",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "-(으)ㄹ 것 같아요 là văn nói chủ quan (\"chắc là\"); trong bài luận và tin tức hãy dùng -(으)ㄹ 것으로 보인다."
+        },
+        "examples": [
+          {
+            "target": "내년에도 물가가 계속 오를 것으로 보인다.",
+            "translation": {
+              "vi": "Dự kiến năm sau giá cả sẽ tiếp tục tăng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Được dự đoán là, có vẻ sẽ - dự báo khách quan, rất hay gặp trong tin tức và bài luận."
+        },
+        "pronunciation_note": {
+          "vi": "것으로 đọc nối [거스로]."
+        }
+      },
+      "content_hash": "19178c20920c4e8ef92622c1e46526102ad96c26ab6a6c3c7a17129e8c085772",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc rào đón",
+        "romanization": "-(eu)l geoseuro boinda",
+        "text": "-(으)ㄹ 것으로 보인다"
+      },
+      "id": "2e93ddb9-842f-53ae-b6f1-203ba89b55e3",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ac-gram-l-geoseuro-boinda",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Vế sau thường là phủ định hay ý chí mạnh (-지 않겠다, -(으)ㄹ 수 없다). Không dùng như -아도/어도 thông thường."
+        },
+        "examples": [
+          {
+            "target": "실패할지언정 포기하지는 않겠다.",
+            "translation": {
+              "vi": "Dù có thất bại, tôi cũng nhất định không bỏ cuộc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Dù có phải... đi nữa (cũng nhất quyết không...) - chấp nhận điều xấu ở vế trước để giữ lập trường ở vế sau."
+        },
+        "pronunciation_note": {
+          "vi": "할지언정 đọc [할찌언정] - ㅈ sau đuôi -ㄹ đọc căng."
+        }
+      },
+      "content_hash": "9db7b0c688a5531034f4554e05cb8dd88dbfa48c73cc18668e00d8e1ef0889ee",
+      "difficulty": 5,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-(eu)l jieonjeong",
+        "text": "-(으)ㄹ지언정"
+      },
+      "id": "f89399e5-96b2-5d11-a1b0-2e2258e87b0a",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ac-gram-l-jieonjeong",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Nghĩa gần -(으)ㄹ 뿐이다 nhưng trang trọng hơn. Không dùng trong hội thoại thân mật."
+        },
+        "examples": [
+          {
+            "target": "저는 제 할 일을 했을 따름입니다.",
+            "translation": {
+              "vi": "Tôi chỉ làm việc mình cần làm mà thôi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Chỉ... mà thôi - trang trọng, khiêm tốn; hay dùng trong phát biểu chính thức."
+        },
+        "pronunciation_note": {
+          "vi": "할 따름 đọc [할 따름]; ㄸ căng, gọn."
+        }
+      },
+      "content_hash": "a0ef5ce18fc290c2a20395d1a71a4a9d8fa0ca7448dc95d0d93c27e041665a1c",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-(eu)l ttareumida",
+        "text": "-(으)ㄹ 따름이다"
+      },
+      "id": "faf19bb2-c720-588d-8e57-1df88423a479",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ac-gram-l-ttareumida",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hai vế phải cùng chiều; vế ngược chiều thì dùng -지만 hoặc -는 반면. Vế sau thường có 도."
+        },
+        "examples": [
+          {
+            "target": "이 지역은 교통이 불편한 데다가 집값도 비싸다.",
+            "translation": {
+              "vi": "Khu vực này giao thông đã bất tiện, giá nhà lại còn đắt."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Đã... lại còn... - cộng thêm một ý cùng chiều (cùng tốt hoặc cùng xấu)."
+        },
+        "pronunciation_note": {
+          "vi": "데다가 đọc như viết; 불편한 데다가 có thể nói liền một nhịp."
+        }
+      },
+      "content_hash": "5570bcf17318a5a82f8b22c84efc085de9ac3b525a28dbdb1079468b0e8889df",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-(eu)n/neun dedaga",
+        "text": "-(으)ㄴ/는 데다가"
+      },
+      "id": "d7094024-fdbe-5ca0-9463-02711cdb24d2",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ac-gram-n-neun-dedaga",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Đã xảy ra dùng -(으)ㄴ 셈이다, hiện tại dùng -는 셈이다; không dùng cho sự việc chính xác 100%."
+        },
+        "examples": [
+          {
+            "target": "열 명 중 아홉 명이 찬성했으니 거의 모두 찬성한 셈이다.",
+            "translation": {
+              "vi": "Mười người thì chín người tán thành, coi như gần như tất cả đều tán thành."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Coi như là, tính ra là - kết luận gần đúng sau khi cân nhắc thực tế."
+        },
+        "pronunciation_note": {
+          "vi": "셈이다 đọc nối [세미다]."
+        }
+      },
+      "content_hash": "b9a1bde4755b1333667ed64086931b5a2a8322e71ec437d3431d0b9095c79e52",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-(eu)n/neun sem-ida",
+        "text": "-(으)ㄴ/는 셈이다"
+      },
+      "id": "375b4c8b-210b-58c1-abd9-29b625be8881",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ac-gram-n-neun-sem-ida",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "바 ở đây là danh từ phụ thuộc nên viết cách - 살펴본 바. Không nhầm với 바 nghĩa là quán bar."
+        },
+        "examples": [
+          {
+            "target": "앞에서 살펴본 바와 같이 이 문제는 쉽게 해결되지 않는다.",
+            "translation": {
+              "vi": "Như đã xem xét ở trên, vấn đề này không dễ giải quyết."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Điều mà, những gì mà (văn viết trang trọng). Hay gặp trong -(으)ㄴ 바와 같이 \"như đã...\"."
+        },
+        "pronunciation_note": {
+          "vi": "바와 đọc liền [바와]."
+        }
+      },
+      "content_hash": "0e563b35a24630d1d2c92065135b182e7c7bbf4f447eb95185f3f684079027ec",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ phụ thuộc",
+        "romanization": "-(eu)n/neun ba",
+        "text": "-(으)ㄴ/는 바"
+      },
+      "id": "a8915898-eecc-5364-8e62-95517ffbb661",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ac-gram-neun-ba",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không nhầm với -는 한편 (mặt khác). -는 한 luôn dùng định ngữ hiện tại -는, kể cả với 없다 (없는 한); riêng 가능한 한 là cụm cố định."
+        },
+        "examples": [
+          {
+            "target": "규제가 없는 한 이런 문제는 계속될 것이다.",
+            "translation": {
+              "vi": "Chừng nào chưa có quy định hạn chế thì những vấn đề như thế này sẽ còn tiếp diễn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Chừng nào còn, miễn là - nêu điều kiện kéo dài, thường đi với kết quả mạnh."
+        },
+        "pronunciation_note": {
+          "vi": "한 đọc [한], khác 함 - hãy giữ âm cuối ㄴ rõ."
+        }
+      },
+      "content_hash": "baaa2367fe3293197f3477108f4f856baf49dee125dcaec584b67b81614f8fe9",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-neun han",
+        "text": "-는 한"
+      },
+      "id": "0bb860bd-c4a0-5dc0-be8f-fa1aa7d82238",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:ac-gram-neun-han",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Thừa kế tài sản là 상속하다, không phải 계승하다. 계승하다 dùng cho giá trị tinh thần, văn hoá."
+        },
+        "examples": [
+          {
+            "target": "젊은 장인들이 전통 공예를 계승하고 있다.",
+            "translation": {
+              "vi": "Các nghệ nhân trẻ đang kế thừa nghề thủ công truyền thống."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Kế thừa, tiếp nối (truyền thống, tinh thần, di sản)."
+        },
+        "pronunciation_note": {
+          "vi": "계 đọc gần [게] trong tiếng Seoul hiện nay."
+        }
+      },
+      "content_hash": "5d04ef3e136ab4bb4ccefd6001e3432c0a37575bf80d974e2e7627ab76151655",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "romanization": "gyeseunghada",
+        "text": "계승하다"
+      },
+      "id": "9afc33e8-ca0b-54ef-b9d2-21dc12f3e859",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-gyeseunghada",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hán Việt \"quy chế\" nhưng không phải văn bản quy chế - 규제 là hành động hạn chế. \"Quy chế\" của trường là 규정."
+        },
+        "examples": [
+          {
+            "target": "정부는 개인정보 수집에 대한 규제를 강화했다.",
+            "translation": {
+              "vi": "Chính phủ đã siết chặt việc kiểm soát thu thập thông tin cá nhân."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Sự kiểm soát, hạn chế bằng luật lệ. 규제하다 - quản lý, hạn chế."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [규제]; ㅠ là \"yu\" tròn môi."
+        }
+      },
+      "content_hash": "42891c753176e9f1964ea67ec35c9181bca55101d2fd5695ddf6ba1a8d80460b",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "gyuje",
+        "text": "규제"
+      },
+      "id": "fd65c41f-b9d4-510c-8471-7ba98201a546",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-gyuje",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hán Việt là \"nhất thạch nhị điểu\" (một hòn đá hai con chim); khi dịch sang tiếng Việt nên dùng \"một công đôi việc\"."
+        },
+        "examples": [
+          {
+            "target": "자전거로 출퇴근하면 운동도 되고 교통비도 아끼니 일석이조이다.",
+            "translation": {
+              "vi": "Đi làm bằng xe đạp vừa tập thể dục vừa tiết kiệm tiền đi lại, đúng là một công đôi việc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Một công đôi việc (nhất cử lưỡng tiện)."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [일써기조] - ㅅ sau ㄹ đọc căng, ㄱ nối sang 이."
+        }
+      },
+      "content_hash": "4b47bc2dcc80f2e5a2306da50d38428293cdd343a5c7f866bc1ab95b16a185ba",
+      "difficulty": 3,
+      "front": {
+        "pos": "thành ngữ bốn chữ",
+        "romanization": "ilseogijo",
+        "text": "일석이조"
+      },
+      "id": "946c0f84-db74-541f-9703-b461e5bdc1b2",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ac-ilseogijo",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hán Việt là \"nhân công trí năng\", nhưng tiếng Việt nói \"trí tuệ nhân tạo\" - đừng dịch thành \"nhân công\"."
+        },
+        "examples": [
+          {
+            "target": "인공지능 기술이 빠르게 발전하고 있다.",
+            "translation": {
+              "vi": "Công nghệ trí tuệ nhân tạo đang phát triển nhanh chóng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Trí tuệ nhân tạo (AI)."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [인공지능], ㅇ cuối là âm mũi \"ng\"."
+        }
+      },
+      "content_hash": "8b82d5fc71158868e04269cc571f5e528cf41d19e6ccfbb758e9d649ee2d5ac2",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "ingongjineung",
+        "text": "인공지능"
+      },
+      "id": "0d156cf8-6a8a-525e-be5a-04ff00210adb",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-ingongjineung",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Dùng ở câu đầu của kết bài, không dùng giữa thân bài. Không nhầm với 이처럼 (cũng được) hay 이렇게 (văn nói)."
+        },
+        "examples": [
+          {
+            "target": "이와 같이 세대 갈등은 대화를 통해 줄일 수 있다.",
+            "translation": {
+              "vi": "Như vậy, xung đột thế hệ có thể giảm bớt thông qua đối thoại."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Như vậy, như đã trình bày - mở đầu phần kết luận, tóm lại các ý trước."
+        },
+        "pronunciation_note": {
+          "vi": "같이 đọc [가치] - ㅌ đứng trước 이 biến thành ㅊ (vòm hoá)."
+        }
+      },
+      "content_hash": "725e3aef7e770508fd74dd7f31c9ee04be2f9e3c03c984cf94215d5cc3b5c99f",
+      "difficulty": 3,
+      "front": {
+        "pos": "cụm nối (kết bài)",
+        "romanization": "iwa gachi",
+        "text": "이와 같이"
+      },
+      "id": "98bd9b67-b0be-51b6-b20b-8a8e24e4817b",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ac-iwa-gachi",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Thường đi với 작심삼일로 끝나다 / 작심삼일이 되다."
+        },
+        "examples": [
+          {
+            "target": "새해에 운동을 시작했지만 작심삼일로 끝났다.",
+            "translation": {
+              "vi": "Đầu năm tôi bắt đầu tập thể dục nhưng chỉ được dăm bữa nửa tháng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Quyết tâm chỉ được ba ngày, cả thèm chóng chán."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [작씸사밀] - ㅅ sau ㄱ đọc căng, ㅁ nối sang 일."
+        }
+      },
+      "content_hash": "2d95bb2ff42b9c6f2b2d2b20afdd3c3c8184c227a9846b7d50b67d971e0871a6",
+      "difficulty": 3,
+      "front": {
+        "pos": "thành ngữ bốn chữ",
+        "romanization": "jaksimsamil",
+        "text": "작심삼일"
+      },
+      "id": "49219464-d449-5034-989f-3a6be2c5716e",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ac-jaksimsamil",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "전통 (truyền thống) khác 전설 (truyền thuyết) - hai từ Hán Việt người Việt dễ nhầm khi nghe nhanh."
+        },
+        "examples": [
+          {
+            "target": "명절 음식에는 지역의 전통이 담겨 있다.",
+            "translation": {
+              "vi": "Món ăn ngày lễ tết chứa đựng truyền thống của từng vùng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Truyền thống. 전통적 - mang tính truyền thống."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [전통]; ㅌ bật hơi, khác ㄷ."
+        }
+      },
+      "content_hash": "0c8f0b3555c6df6fb466d7bc96672df4021f779c8a4a3e26c4457bd46faaf2fd",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "jeontong",
+        "text": "전통"
+      },
+      "id": "39534f92-023b-5382-9fd0-807a5313f7f4",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-jeontong",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hán Việt là \"chủ trương\" nhưng nghĩa khác - tiếng Việt \"chủ trương\" là đường lối, kế hoạch; 주장하다 là \"khẳng định một ý kiến\"."
+        },
+        "examples": [
+          {
+            "target": "많은 전문가들은 근무 시간을 줄여야 한다고 주장한다.",
+            "translation": {
+              "vi": "Nhiều chuyên gia cho rằng cần giảm thời gian làm việc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Khẳng định, cho rằng, đưa ra quan điểm (và bảo vệ nó). 주장 - luận điểm, chủ kiến."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [주장하다]; ㅎ giữa hai nguyên âm thường đọc rất nhẹ."
+        }
+      },
+      "content_hash": "f5d62a34e1d3003311909fd4c236d2f4bf52c57c52f6f0e4185ab772749357d3",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "romanization": "jujanghada",
+        "text": "주장하다"
+      },
+      "id": "e1e2a242-d270-55cd-9979-b77200c4b4ae",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-jujanghada",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hay đi với 논란이 되다 / 논란이 일다 / 논란을 빚다. Khác 토론 (buổi thảo luận có tổ chức)."
+        },
+        "examples": [
+          {
+            "target": "새 정책이 발표되자 큰 논란이 일었다.",
+            "translation": {
+              "vi": "Chính sách mới vừa được công bố đã gây ra tranh cãi lớn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Sự tranh cãi, tranh luận gay gắt trong xã hội về một vấn đề."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [놀란] - ㄴ đứng trước ㄹ biến thành ㄹ."
+        }
+      },
+      "content_hash": "3b229052cd2db587fb71accd36be1ad7f0f20a66177d1be48ff4c3b5198e8c47",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "nollan",
+        "text": "논란"
+      },
+      "id": "c94325ce-a9c7-54ca-abc4-6cae1210ff59",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-nonran",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Người Việt có lợi thế vì nhiều 사자성어 có thành ngữ Hán Việt tương ứng, nhưng nghĩa dùng có khi khác."
+        },
+        "examples": [
+          {
+            "target": "사자성어를 알면 신문 기사를 이해하기 쉽다.",
+            "translation": {
+              "vi": "Biết thành ngữ bốn chữ thì dễ hiểu báo hơn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Thành ngữ bốn chữ Hán (như 일석이조)."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [사자성어], ㅓ mở miệng, không tròn môi."
+        }
+      },
+      "content_hash": "254a6b2761f1c532646f6b6ef1ecd9767d029ff405f2f4e31d2786a2b6459f3f",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "sajaseongeo",
+        "text": "사자성어"
+      },
+      "id": "0a99fed2-7ab2-5a8c-8823-57688bffea99",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-sajaseongeo",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hán Việt \"sự tình\" nhưng không mang nghĩa \"câu chuyện, sự việc đã xảy ra\"; 사정 nhấn vào hoàn cảnh khiến ai đó không thể làm gì."
+        },
+        "examples": [
+          {
+            "target": "개인 사정으로 회의에 참석하지 못했습니다.",
+            "translation": {
+              "vi": "Vì có việc riêng nên tôi đã không tham dự cuộc họp được."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Hoàn cảnh, lý do riêng, tình hình (khó nói rõ). 개인 사정 - việc riêng."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [사정]; ㅈ thường giữa nguyên âm gần \"ch\" nhẹ."
+        }
+      },
+      "content_hash": "7c524994fb582b458e99b82c0994df178984cd01b41fbe731414b35366557cae",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "sajeong",
+        "text": "사정"
+      },
+      "id": "de804716-9ac6-5c33-a4f2-4240cecfc79a",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-sajeong",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "갈등 là mâu thuẫn kéo dài trong quan hệ, khác 싸움 (cãi nhau, đánh nhau một lần)."
+        },
+        "examples": [
+          {
+            "target": "세대 갈등을 줄이려면 서로의 입장을 이해해야 한다.",
+            "translation": {
+              "vi": "Muốn giảm xung đột thế hệ, cần hiểu lập trường của nhau."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Xung đột (mâu thuẫn) giữa các thế hệ."
+        },
+        "pronunciation_note": {
+          "vi": "갈등 đọc [갈뜽] - ㄷ sau ㄹ trong từ Hán đọc căng."
+        }
+      },
+      "content_hash": "3d84f48be79199bbb61a1089a8066e81c8bf84fe78b1416dd0c2371fa58c7d34",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ ghép",
+        "romanization": "sedae galdeung",
+        "text": "세대 갈등"
+      },
+      "id": "14f27995-17fc-58cf-b695-930f011494b1",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ac-sedae-galdeung",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "서론 (序論) là \"phần mở đầu\", không phải \"tự luận\" trong tiếng Việt. Bài tự luận của TOPIK gọi là 논술/작문."
+        },
+        "examples": [
+          {
+            "target": "서론에서는 문제를 제기하고 본론에서는 근거를 제시한다.",
+            "translation": {
+              "vi": "Ở mở bài ta nêu vấn đề, còn ở thân bài ta đưa ra luận cứ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Mở bài · thân bài · kết bài - ba phần của một bài nghị luận."
+        },
+        "pronunciation_note": {
+          "vi": "본론 đọc là [볼론] - ㄴ gặp ㄹ thì biến thành ㄹ (lưu âm hoá). 결론 đọc [결론]."
+        }
+      },
+      "content_hash": "fe29e7c97d38fd194f0b1615243535eecf4c5a0b4cc2d5d16832e16a345cbd79",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ (thuật ngữ bố cục)",
+        "romanization": "seoron · bollon · gyeollon",
+        "text": "서론 · 본론 · 결론"
+      },
+      "id": "20500d1c-f394-5cbc-8d51-93475a77b6c9",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ac-seoron-bonron-gyeollon",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "writing",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Tiếng Việt có câu tương đương gần như y hệt - \"mất bò mới lo làm chuồng\". Trong văn viết hay dùng dạng -는 격이다 (cũng như là)."
+        },
+        "examples": [
+          {
+            "target": "사고가 난 뒤에야 안전 점검을 하는 것은 소 잃고 외양간 고치는 격이다.",
+            "translation": {
+              "vi": "Đợi xảy ra tai nạn rồi mới kiểm tra an toàn thì đúng là mất bò mới lo làm chuồng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Mất bò mới lo làm chuồng - đến khi xảy ra chuyện mới lo khắc phục thì đã muộn."
+        },
+        "pronunciation_note": {
+          "vi": "잃고 đọc [일코] - ㅎ gặp ㄱ thành ㅋ; 외양간 đọc [외양깐]."
+        }
+      },
+      "content_hash": "ebb0f78dea29c7bec0accace6b5d486a183061cb9f4368223218b6ce558a621d",
+      "difficulty": 4,
+      "front": {
+        "pos": "tục ngữ",
+        "romanization": "so ilko oeyanggan gochinda",
+        "text": "소 잃고 외양간 고친다"
+      },
+      "id": "e485adb3-04bd-5566-9083-6d622bf66b12",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ac-so-ilko-oeyanggan",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Khi trích tục ngữ, người Hàn hay dùng N(이)라는 말이 있듯이 hoặc N(이)라고 - không dịch nguyên văn mà giải nghĩa."
+        },
+        "examples": [
+          {
+            "target": "이 속담은 노력의 중요성을 강조한다.",
+            "translation": {
+              "vi": "Câu tục ngữ này nhấn mạnh tầm quan trọng của sự nỗ lực."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Tục ngữ."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [속땀] - ㄷ sau patchim ㄱ đọc căng."
+        }
+      },
+      "content_hash": "d138b2eaa6a94d41f42764a6764bfc38c256623cb683837344d1fb2551afbaca",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "sokdam",
+        "text": "속담"
+      },
+      "id": "66881129-86f8-52f7-bded-4252812de525",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-sokdam",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Nghĩa đen là \"gom bụi thành núi Thái Sơn\"; dịch bằng câu tục ngữ Việt tương đương, không dịch chữ."
+        },
+        "examples": [
+          {
+            "target": "티끌 모아 태산이라고, 매일 조금씩 저축하면 큰돈이 된다.",
+            "translation": {
+              "vi": "Góp gió thành bão, mỗi ngày tiết kiệm một ít thì sẽ thành khoản tiền lớn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Góp gió thành bão, tích tiểu thành đại - nhiều cái nhỏ gom lại thành cái lớn."
+        },
+        "pronunciation_note": {
+          "vi": "티끌 có ㅌ bật hơi và ㄲ căng - phân biệt rõ hai âm."
+        }
+      },
+      "content_hash": "9154e403db4a42910ea748881000c80d8ec2345a940887b73b385b3aee2eda51",
+      "difficulty": 3,
+      "front": {
+        "pos": "tục ngữ",
+        "romanization": "tikkeul moa taesan",
+        "text": "티끌 모아 태산"
+      },
+      "id": "bbd60131-5b58-566c-902d-248bd83e3b43",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ac-tikkeul-moa-taesan",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "그래서 mang sắc thái văn nói; trong bài luận TOPIK, hãy dùng 따라서 hoặc 그러므로."
+        },
+        "examples": [
+          {
+            "target": "따라서 정부는 관련 규정을 마련해야 한다.",
+            "translation": {
+              "vi": "Do đó, chính phủ cần xây dựng các quy định liên quan."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Do đó, vì thế - nêu kết quả hay kết luận rút ra từ ý trước, dùng trong văn viết."
+        },
+        "pronunciation_note": {
+          "vi": "ㄸ là phụ âm căng - đọc gọn, không bật hơi, không phải \"th\"."
+        }
+      },
+      "content_hash": "605e5caabda8a83bc6524d31d9ef9a431626ca9b79e254a3796c35d909d58634",
+      "difficulty": 2,
+      "front": {
+        "pos": "phó từ nối",
+        "romanization": "ttaraseo",
+        "text": "따라서"
+      },
+      "id": "f26c125d-ba8f-5656-b990-6f53ed28a236",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-ttaraseo",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "writing",
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Tiếng Việt có câu tương đương \"ếch ngồi đáy giếng\" - dùng nó, không dịch chữ \"con ếch trong giếng\"."
+        },
+        "examples": [
+          {
+            "target": "해외 경험이 없으면 우물 안 개구리가 되기 쉽다.",
+            "translation": {
+              "vi": "Không có trải nghiệm nước ngoài thì dễ thành ếch ngồi đáy giếng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Ếch ngồi đáy giếng - người hiểu biết hạn hẹp mà tưởng mình biết nhiều."
+        },
+        "pronunciation_note": {
+          "vi": "우물 안 đọc nối [우무란]."
+        }
+      },
+      "content_hash": "d7986fca8b4461b8e1a95a23e25cb42b14b9e406492f76d7707e69b5b4b03708",
+      "difficulty": 3,
+      "front": {
+        "pos": "tục ngữ",
+        "romanization": "umul an gaeguri",
+        "text": "우물 안 개구리"
+      },
+      "id": "8f2fe179-f9cb-594c-babb-02ba8b1334ff",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:ac-umul-an-gaeguri",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hán Việt \"luân lý\" nghe cổ trong tiếng Việt, nhưng 윤리 rất thông dụng (기업 윤리 - đạo đức doanh nghiệp)."
+        },
+        "examples": [
+          {
+            "target": "인공지능 개발에도 윤리적 기준이 필요하다.",
+            "translation": {
+              "vi": "Việc phát triển trí tuệ nhân tạo cũng cần chuẩn mực đạo đức."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Đạo đức, chuẩn mực đạo đức (của một lĩnh vực, nghề nghiệp). 윤리적 - mang tính đạo đức."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [율리] - ㄴ trước ㄹ biến thành ㄹ."
+        }
+      },
+      "content_hash": "c0c7be7135cf96bdd74f310b519320a8cd5f950ebfdd0394397358240f7c4669",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "yulli",
+        "text": "윤리"
+      },
+      "id": "1535b400-f5d1-56b6-a206-9a48dd3eb2bc",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ac-yulli",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Trong văn nói, 아이 thường rút gọn thành 애."
         },
         "examples": [
@@ -126555,6 +135973,49 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Viết tắt của 악성 리플; trái nghĩa là 선플 (bình luận tích cực)."
+        },
+        "examples": [
+          {
+            "target": "악플 때문에 상처를 받는 연예인이 많아요.",
+            "translation": {
+              "vi": "Nhiều người nổi tiếng bị tổn thương vì bình luận ác ý."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bình luận ác ý, \"anti-comment\""
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [악플]; ㄱ cuối không bật, ㅍ bật hơi."
+        }
+      },
+      "content_hash": "fcd553229f61ec574ad8b3b622e2a75232ddbcb5cda872b697e4e37f6a905b1d",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "akpeul",
+        "text": "악플"
+      },
+      "id": "f1b3f7cf-f4bd-5ab8-a6c9-efb6fe72bf8b",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:akpeul",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "media"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -127192,6 +136653,48 @@ select content_private.import_bundle($bundle${
     {
       "audio_path": null,
       "back": {
+        "confusion": {
+          "vi": "반대 còn là danh từ \"ngược lại\" (반대로); \"tôi phản đối\" là 반대해요, không phải 반대예요."
+        },
+        "examples": [
+          {
+            "target": "부모님이 제 계획에 반대하셨어요.",
+            "translation": {
+              "vi": "Bố mẹ đã phản đối kế hoạch của tôi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phản đối"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [반대하다]; ㄷ sau ㄴ đọc thành âm \"đ\" nhẹ."
+        }
+      },
+      "content_hash": "3adbcdfeb307128b8041dce1cfd8f75c55b2251b96fc41292af5e974e15912c0",
+      "difficulty": 2,
+      "front": {
+        "pos": "động từ",
+        "romanization": "bandaehada",
+        "text": "반대하다"
+      },
+      "id": "8e6745dc-37b1-53ca-beb2-347fa3413d3d",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:bandaehada",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
         "examples": [
           {
             "target": "처음 뵙겠습니다. 반갑습니다.",
@@ -127225,6 +136728,49 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "speaking",
         "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Dùng 반말 với người lớn tuổi hoặc người mới gặp bị coi là vô lễ, kể cả khi bạn nói đúng ngữ pháp."
+        },
+        "examples": [
+          {
+            "target": "친한 친구하고는 반말을 해요.",
+            "translation": {
+              "vi": "Với bạn thân thì tôi nói trống không."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lối nói thân mật, nói trống không (không có đuôi lịch sự)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [반말], hai âm tiết rõ ràng."
+        }
+      },
+      "content_hash": "460e7ee3c84f3476354bf0114a5edbbc0f90ffaa6485a45502f0f32bc54132e4",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "banmal",
+        "text": "반말"
+      },
+      "id": "8d42c05b-170a-5f06-8a20-9a994f12cc1b",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:banmal",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -127634,6 +137180,48 @@ select content_private.import_bundle($bundle${
       "key": "ko:item:biga-oda",
       "language_code": "ko",
       "level_code": "topik2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Dùng N과/와 비슷하다 (giống với N); \"giống hệt\" là 같다."
+        },
+        "examples": [
+          {
+            "target": "추석은 베트남의 중추절과 비슷해요.",
+            "translation": {
+              "vi": "Chuseok giống với Tết Trung thu của Việt Nam."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "giống nhau, tương tự"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [비스타다], 비슷해요 [비스태요] - patchim ㅅ (âm ㄷ) gặp ㅎ thành ㅌ."
+        }
+      },
+      "content_hash": "c881a9c855bfb2c62c840ecb7b2caf2a1a52dc5efa0c8396eeea822c38efa636",
+      "difficulty": 2,
+      "front": {
+        "pos": "tính từ",
+        "romanization": "biseutada",
+        "text": "비슷하다"
+      },
+      "id": "7c6024c4-96a6-571e-8836-b1916873a32e",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:biseutada",
+      "language_code": "ko",
+      "level_code": "topik3",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -128304,6 +137892,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "차이가 나다 / 차이가 있다 (có khác biệt); 차이점 là \"điểm khác nhau\"."
+        },
+        "examples": [
+          {
+            "target": "두 나라의 문화 차이가 커요.",
+            "translation": {
+              "vi": "Khác biệt văn hoá giữa hai nước rất lớn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "sự khác biệt, chênh lệch"
+        },
+        "pronunciation_note": {
+          "vi": "ㅊ bật hơi - [차이]."
+        }
+      },
+      "content_hash": "bacca810f87f2c603d79bbc18e4d1b11ec5deaed3ea273d13dae54540511e397",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "chai",
+        "text": "차이"
+      },
+      "id": "34dcb677-1d26-56a6-b5bf-e2f3b11f9e9c",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:chai",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Phần trăm đi với 을/를 (20%를 차지한다), cái tổng thể đi với 의 (전체의). Người Việt hay viết 20%에 차지한다 vì dịch \"chiếm ở mức 20%\"."
         },
         "examples": [
@@ -128381,6 +138011,91 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Thường dùng N에 찬성하다; trái nghĩa là 반대하다."
+        },
+        "examples": [
+          {
+            "target": "저는 그 의견에 찬성해요.",
+            "translation": {
+              "vi": "Tôi tán thành ý kiến đó."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tán thành, ủng hộ (một ý kiến, đề xuất)"
+        },
+        "pronunciation_note": {
+          "vi": "Khi nói nhanh, ㅎ giữa hai âm hữu thanh yếu đi - [찬성아다]."
+        }
+      },
+      "content_hash": "98e421f84a13b3edd0fc85a869a8e6d436525dd3b1689810540f78f0af2000cb",
+      "difficulty": 2,
+      "front": {
+        "pos": "động từ",
+        "romanization": "chanseonghada",
+        "text": "찬성하다"
+      },
+      "id": "bbd458df-9fbc-5271-b43f-0126daf2f27d",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:chanseonghada",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Động từ đi kèm là 지내다 (차례를 지내다). 차례 còn có nghĩa \"lượt\" (제 차례예요 - đến lượt tôi)."
+        },
+        "examples": [
+          {
+            "target": "아침에 가족들과 함께 차례를 지내요.",
+            "translation": {
+              "vi": "Buổi sáng tôi cùng gia đình làm lễ cúng tổ tiên."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lễ cúng tổ tiên vào sáng ngày Tết, Chuseok"
+        },
+        "pronunciation_note": {
+          "vi": "ㅖ sau phụ âm thường đọc như ㅔ - [차레]."
+        }
+      },
+      "content_hash": "0a127dc477e210ddf7072302d4be33b2e4b368444a1a43ca4992fc4e89a52b4b",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "charye",
+        "text": "차례"
+      },
+      "id": "3b46b07d-83d3-50b1-89f9-fca7afbbef1d",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:charye",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -128761,6 +138476,49 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Ở Hàn, 추석 là dịp sum họp gia đình và tảo mộ, quan trọng hơn Trung thu ở Việt Nam - không chỉ là ngày của trẻ em."
+        },
+        "examples": [
+          {
+            "target": "추석에는 고향에 가요.",
+            "translation": {
+              "vi": "Vào Chuseok, người ta về quê."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Tết Trung thu của Hàn Quốc (Chuseok, rằm tháng 8 âm lịch)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [추석]; ㄱ cuối không bật ra."
+        }
+      },
+      "content_hash": "24ab2f0f6de576caf9482456623a47ff730aba8d5d0a621215a384d553e68615",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "chuseok",
+        "text": "추석"
+      },
+      "id": "b2a12870-604e-5bf3-a681-98c6f8a19da7",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:chuseok",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -129280,6 +139038,49 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Động từ đi kèm là 달다 hoặc 남기다 (댓글을 달다/남기다), không dùng 말하다."
+        },
+        "examples": [
+          {
+            "target": "영상에 댓글을 남겼어요.",
+            "translation": {
+              "vi": "Tôi đã để lại bình luận dưới video."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bình luận (trên mạng)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [댇끌] - ㄱ sau patchim ㅅ (âm ㄷ) thành căng."
+        }
+      },
+      "content_hash": "0791a229e9cc57512d56267df4db8d7dce5f4bab0e7b9db15ddc7e84536aac74",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "daetgeul",
+        "text": "댓글"
+      },
+      "id": "7b0d44aa-f349-5804-a173-6c14e9f11ef0",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:daetgeul",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "media"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Viết cách 다음 주, khác với 지난주 viết liền. Tháng sau là 다음 달, năm sau là 내년 (không nói 다음 년)."
         },
         "examples": [
@@ -129388,6 +139189,48 @@ select content_private.import_bundle($bundle${
       "key": "ko:item:darayo",
       "language_code": "ko",
       "level_code": "topik1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Viết 달라요, không phải 다라요 hay 다르어요."
+        },
+        "examples": [
+          {
+            "target": "한국과 베트남은 명절 음식이 달라요.",
+            "translation": {
+              "vi": "Món ăn ngày lễ của Hàn Quốc và Việt Nam khác nhau."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "khác"
+        },
+        "pronunciation_note": {
+          "vi": "Bất quy tắc 르 - 다르다 → 달라요 [달라요], ㄹ đôi đọc như \"l\" kéo dài."
+        }
+      },
+      "content_hash": "b8aed46715d8df2801b6bd183f449f780544d5105450e672dc9620def3595e77",
+      "difficulty": 2,
+      "front": {
+        "pos": "tính từ",
+        "romanization": "dareuda",
+        "text": "다르다"
+      },
+      "id": "cc8cc5c3-0420-5638-bb6f-4cbd22f62a8e",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:dareuda",
+      "language_code": "ko",
+      "level_code": "topik3",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -129613,6 +139456,49 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Phim chiếu rạp là 영화; 드라마 là phim truyền hình nhiều tập. \"K-drama\" trong tiếng Hàn thường nói 한국 드라마 hoặc K-드라마."
+        },
+        "examples": [
+          {
+            "target": "요즘 한국 드라마가 전 세계에서 인기가 많아요.",
+            "translation": {
+              "vi": "Dạo này phim Hàn được yêu thích trên toàn thế giới."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phim truyền hình (phim bộ)"
+        },
+        "pronunciation_note": {
+          "vi": "드 có ㅡ không tròn môi - [드라마], không đọc \"đu-ra-ma\"."
+        }
+      },
+      "content_hash": "f08ff3dfc236018994b05faa55ad79a82769f722e7e71aad993ecf24737bbc8e",
+      "difficulty": 1,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "deurama",
+        "text": "드라마"
+      },
+      "id": "3db1559e-945c-5fa9-936d-c5fa6073c4dc",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:deurama",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "media"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "드리다 khi mình đưa cho người trên. Người trên đưa cho mình thì dùng 주시다 - 부장님께서 저에게 주셨어요, không dùng 드리다."
         },
         "examples": [
@@ -129827,6 +139713,46 @@ select content_private.import_bundle($bundle${
     {
       "audio_path": null,
       "back": {
+        "examples": [
+          {
+            "target": "어른에게 물건을 드릴 때는 두 손으로 드려요.",
+            "translation": {
+              "vi": "Khi đưa đồ cho người lớn, bạn đưa bằng hai tay."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bằng hai tay (khi đưa/nhận đồ với người lớn)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc nối [두 소느로]."
+        }
+      },
+      "content_hash": "61eea0a11b0df79cf627d931573d9ddba326a1ae4c49b78a77f2132980545970",
+      "difficulty": 2,
+      "front": {
+        "pos": "cụm từ",
+        "romanization": "du soneuro",
+        "text": "두 손으로"
+      },
+      "id": "f339216b-67d0-585a-aa3d-d124819b984d",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:du-sonuro",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
         "confusion": {
           "vi": "돼지 viết với ㅙ (ㅗ + ㅐ), không phải ㅚ hay ㅞ dù ba nguyên âm nghe gần như nhau."
         },
@@ -130026,6 +139952,46 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "speaking",
         "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "어른 앞에서는 반말을 하지 마세요.",
+            "translation": {
+              "vi": "Trước mặt người lớn thì đừng nói trống không."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "người lớn, bề trên, người lớn tuổi"
+        },
+        "pronunciation_note": {
+          "vi": "ㅓ và ㅡ đều không tròn môi - [어른], đừng đọc thành \"ô-rưn\"."
+        }
+      },
+      "content_hash": "ee770b296f43356de930b3937e6214f3251af4163be99b8e944b5a64ba70ba04",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "eoreun",
+        "text": "어른"
+      },
+      "id": "2ff78845-5bf0-5162-9027-e97c05039bbd",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:eoreun",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -131881,6 +141847,55 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Gốc là V-아/어 보다 (thử) + -(으)ㄴ 적: 가다 → 가 본 적, 먹다 → 먹어 본 적. Đừng viết 가아 본 적 hay 먹은 본 적."
+        },
+        "examples": [
+          {
+            "target": "한복을 입어 본 적이 있어요?",
+            "translation": {
+              "vi": "Bạn đã từng mặc thử hanbok chưa?"
+            }
+          },
+          {
+            "target": "송편을 만들어 본 적이 없어요.",
+            "translation": {
+              "vi": "Tôi chưa từng làm bánh songpyeon."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đã từng thử làm… / chưa từng thử làm…"
+        },
+        "pronunciation_note": {
+          "vi": "적이 đọc nối [저기]; 있어요 [이써요]."
+        }
+      },
+      "content_hash": "fc9f016159ee48f4fab72ad1bda85274af1ca0d4e93e91cc83693afbb6900e86",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-a/eo bon jeogi itda/eopda",
+        "text": "-아/어 본 적이 있다/없다"
+      },
+      "id": "4c92514a-e04e-52d7-84d3-5e03c224ef96",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:gram-a-bon-jeogi-itda",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Chia động từ chính theo -아/어 như 해요체 rồi bỏ 요 - 가요 → 가 봐요, 먹어요 → 먹어 봐요, 해요 → 해 봐요. Đừng nói 먹고 봐요 (nghĩa là \"ăn rồi xem\")."
         },
         "examples": [
@@ -132010,6 +142025,54 @@ select content_private.import_bundle($bundle${
       "key": "ko:item:gram-a-eo-ya-haeyo",
       "language_code": "ko",
       "level_code": "topik2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Chỉ gắn với tính từ (좋아지다, 많아지다). Với động từ, \"trở nên/được\" phải dùng cấu trúc khác như -게 되다 - 잘해지다 là sai."
+        },
+        "examples": [
+          {
+            "target": "날씨가 추워졌어요.",
+            "translation": {
+              "vi": "Trời đã trở lạnh."
+            }
+          },
+          {
+            "target": "요즘 명절 문화가 많이 달라졌어요.",
+            "translation": {
+              "vi": "Dạo này văn hoá ngày lễ đã thay đổi nhiều."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "trở nên…, dần dần… (gắn với tính từ để chỉ sự thay đổi trạng thái)"
+        },
+        "pronunciation_note": {
+          "vi": "추워졌어요 đọc [추워저써요]; ㅈ sau ㅕ đọc nhẹ."
+        }
+      },
+      "content_hash": "dacb2e3ded35e80e219c67daaed66a6829a0f7a52857edf8d6febf7d39e268df",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-a/eojida",
+        "text": "A-아/어지다"
+      },
+      "id": "7be9b6dd-b420-519f-b7ac-68aa59bdd59c",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:gram-a-jida",
+      "language_code": "ko",
+      "level_code": "topik3",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -132274,6 +142337,49 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "-았/었으면 trông như quá khứ nhưng nói về mong ước sắp tới. Phần cuối giữ 좋겠어요, không đổi thành 좋았어요."
+        },
+        "examples": [
+          {
+            "target": "이번 추석에는 가족들이 다 모였으면 좋겠어요.",
+            "translation": {
+              "vi": "Mong là Chuseok năm nay cả nhà đều sum họp."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ước gì…, mong là… (mong muốn cho hiện tại hoặc tương lai)"
+        },
+        "pronunciation_note": {
+          "vi": "좋겠어요 đọc [조케써요] - ㅎ gặp ㄱ thành ㅋ."
+        }
+      },
+      "content_hash": "ec3c2a91e0621f8af8d096e8d391698e20a32f60001e96eb0dd860fa42e4a11c",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-at/eosseumyeon joketda",
+        "text": "-았/었으면 좋겠다"
+      },
+      "id": "16a515d2-dce2-5556-89a7-9dc77b7682e7",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:gram-asseumyeon-joketda",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Không phải từ nào có ㅂ cũng đổi - 입다 → 입어요 (mặc), 좁다 → 좁아요 (chật). Hãy học thuộc theo từng từ."
         },
         "examples": [
@@ -132304,6 +142410,48 @@ select content_private.import_bundle($bundle${
       "key": "ko:item:gram-b-irregular",
       "language_code": "ko",
       "level_code": "topik2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "보다 gắn vào vật bị so sánh (cái \"kém hơn\"), không gắn vào cái \"hơn\". Tiếng Việt \"A hơn B\" - tiếng Hàn \"A가 B보다 더…\"."
+        },
+        "examples": [
+          {
+            "target": "베트남이 한국보다 더 더워요.",
+            "translation": {
+              "vi": "Việt Nam nóng hơn Hàn Quốc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hơn N (so sánh hơn)"
+        },
+        "pronunciation_note": {
+          "vi": "한국보다 đọc [한국뽀다] - ㅂ sau patchim ㄱ thành căng."
+        }
+      },
+      "content_hash": "d07ff169bb1efde1d0bcff76a3359b8ce17a91cf512df7e0d397e05776ad66d8",
+      "difficulty": 2,
+      "front": {
+        "pos": "trợ từ so sánh",
+        "romanization": "boda (deo)",
+        "text": "N보다 (더)"
+      },
+      "id": "0e538501-c133-5131-b670-43dda7816f0b",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:gram-boda",
+      "language_code": "ko",
+      "level_code": "topik3",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -132418,6 +142566,62 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Tính từ chỉ thêm -다고 (중요하다고), không thêm ㄴ như động từ (간다고, 먹는다고). Không đặt đuôi 해요 vào giữa câu - 중요해요고 là sai."
+        },
+        "examples": [
+          {
+            "target": "저는 이 광고가 너무 길다고 생각해요.",
+            "translation": {
+              "vi": "Tôi nghĩ quảng cáo này dài quá."
+            }
+          },
+          {
+            "target": "많은 사람들이 한국 드라마가 재미있다고 생각해요.",
+            "translation": {
+              "vi": "Nhiều người cho rằng phim Hàn hay."
+            }
+          },
+          {
+            "target": "외국인도 존댓말을 배운다고 생각해요.",
+            "translation": {
+              "vi": "Tôi nghĩ người nước ngoài cũng học kính ngữ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nghĩ rằng…, cho rằng… Động từ: -ㄴ/는다고; tính từ: -다고; danh từ: -(이)라고; quá khứ: -았/었다고."
+        },
+        "pronunciation_note": {
+          "vi": "생각한다고 đọc [생가칸다고] - ㄱ gặp ㅎ thành ㅋ bật hơi."
+        }
+      },
+      "content_hash": "712875e2e36c1c33fc2e43c169d9919ed9e955287f210207106c61c375bb96f7",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-dago saenggakhada",
+        "text": "-다고 생각하다"
+      },
+      "id": "6c7e6c3c-9edf-5bd2-b97d-3feeadc595b9",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:gram-dago-saenggakhada",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Với sự thật đang xảy ra (trời đang mưa), dùng -아도 tự nhiên hơn; -더라도 hợp với giả định \"lỡ như\"."
         },
         "examples": [
@@ -132500,6 +142704,49 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hay dùng trong văn viết, bài báo; khi nói chuyện hằng ngày N보다 tự nhiên hơn."
+        },
+        "examples": [
+          {
+            "target": "작년에 비해 한국어를 배우는 사람이 많아졌다.",
+            "translation": {
+              "vi": "So với năm ngoái, số người học tiếng Hàn đã tăng lên."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "so với N"
+        },
+        "pronunciation_note": {
+          "vi": "비해 khi nói nhanh nghe gần [비애] vì ㅎ yếu đi."
+        }
+      },
+      "content_hash": "8c0d972735f8af5b349eda1745d97996917bd38ea05d89fa2881159afad6ce56",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "e bihae(seo)",
+        "text": "N에 비해(서)"
+      },
+      "id": "897c1b9f-774a-5636-bac2-2ae7f986549b",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:gram-e-bihae",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "reading"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -132799,6 +143046,55 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Trước 필요 phải là định ngữ tương lai -(으)ㄹ (갈 필요, 먹을 필요), không dùng 가는 필요 hay 가기 필요."
+        },
+        "examples": [
+          {
+            "target": "친구에게는 존댓말을 쓸 필요가 없어요.",
+            "translation": {
+              "vi": "Với bạn bè thì không cần dùng kính ngữ."
+            }
+          },
+          {
+            "target": "악플 문제를 진지하게 생각할 필요가 있어요.",
+            "translation": {
+              "vi": "Cần suy nghĩ nghiêm túc về vấn đề bình luận ác ý."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cần phải… / không cần phải…"
+        },
+        "pronunciation_note": {
+          "vi": "필요가 đọc [피료가]; 있어요 [이써요], 없어요 [업써요]."
+        }
+      },
+      "content_hash": "9ab190e52a6b907f5146e6ae0a74f5fefa2631895a0679c514a75033f3a75274",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-(eu)l piryoga itda/eopda",
+        "text": "-(으)ㄹ 필요가 있다/없다"
+      },
+      "id": "adc39efe-c7d4-555d-a320-68b06471dae7",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:gram-eul-piryoga-itda",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Chọn theo chữ cuối của danh từ, không theo động từ - 물을 (có ㄹ) nhưng 커피를 (không có patchim)."
         },
         "examples": [
@@ -132847,6 +143143,55 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Vế sau thường là lời khuyên, đề nghị hay lo lắng. Phỏng đoán về quá khứ dùng -았/었을 텐데."
+        },
+        "examples": [
+          {
+            "target": "내일 비가 올 텐데 우산을 가져가세요.",
+            "translation": {
+              "vi": "Mai chắc trời mưa đấy, bạn mang ô theo nhé."
+            }
+          },
+          {
+            "target": "피곤할 텐데 좀 쉬세요.",
+            "translation": {
+              "vi": "Chắc bạn mệt rồi, nghỉ một chút đi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chắc là… (nên/vậy mà…) - phỏng đoán làm nền cho lời khuyên, lo lắng hoặc tiếc nuối"
+        },
+        "pronunciation_note": {
+          "vi": "올 텐데 đọc [올 텐데]; ㅌ bật hơi mạnh."
+        }
+      },
+      "content_hash": "63cae7d1fc794b6cfbb22605706cf6699df266d9e3a496d25924beb6fb8d897b",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-(eu)l tende",
+        "text": "-(으)ㄹ 텐데"
+      },
+      "id": "e5efa7b0-be11-563a-8aa0-49642c02fb76",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:gram-eul-tende",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "-(으)ㄹ 예정이다 là lịch đã lên kế hoạch, khách quan hơn -(으)ㄹ 거예요. Trong thông báo, email công việc nên dùng 예정입니다."
         },
         "examples": [
@@ -132882,6 +143227,55 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "grammar",
         "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Động từ gốc giữ ở dạng hiện tại (할걸), chỉ 그랬다 ở quá khứ - không viết 했을걸 그랬어요. Phủ định: -지 말걸 그랬다."
+        },
+        "examples": [
+          {
+            "target": "표가 다 팔렸어요. 미리 예매할걸 그랬어요.",
+            "translation": {
+              "vi": "Vé bán hết rồi. Lẽ ra tôi nên đặt trước."
+            }
+          },
+          {
+            "target": "그 댓글을 쓰지 말걸 그랬어요.",
+            "translation": {
+              "vi": "Lẽ ra tôi không nên viết bình luận đó."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lẽ ra nên… (tiếc vì đã không làm)"
+        },
+        "pronunciation_note": {
+          "vi": "할걸 đọc [할껄] - ㄱ sau đuôi -(으)ㄹ thành căng."
+        }
+      },
+      "content_hash": "9e7b9090c31f147986c5ced7b9706d866c1abf825cc4d802e94923106a4ba5c5",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-(eu)lgeol geuraetda",
+        "text": "-(으)ㄹ걸 그랬다"
+      },
+      "id": "15ba93a9-251d-5291-8c5a-269f61167350",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:gram-eulgeol-geuraetda",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -133107,6 +143501,54 @@ select content_private.import_bundle($bundle${
       "key": "ko:item:gram-eumyeon-doeda",
       "language_code": "ko",
       "level_code": "topik2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Dùng -(으)ㄴ (định ngữ quá khứ), không dùng -는: 본 적 chứ không phải 보는 적. Không dùng cho việc lặp lại hằng ngày (밥을 먹은 적이 있어요 nghe rất lạ)."
+        },
+        "examples": [
+          {
+            "target": "저는 아직 한국에 가 본 적이 없어요. 그래서 설날을 본 적도 없어요.",
+            "translation": {
+              "vi": "Tôi chưa từng đến Hàn Quốc. Vì vậy tôi cũng chưa bao giờ thấy Tết Hàn."
+            }
+          },
+          {
+            "target": "그 드라마를 본 적이 있어요.",
+            "translation": {
+              "vi": "Tôi đã từng xem bộ phim đó."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đã từng… / chưa bao giờ… (kinh nghiệm trong quá khứ)"
+        },
+        "pronunciation_note": {
+          "vi": "없어요 đọc [업써요] - ㅅ sau ㅂ thành căng."
+        }
+      },
+      "content_hash": "986247673660b179a6afe0792701e5228fd0e1bb81a5c693194bb499ea1beb59",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-(eu)n jeogi itda/eopda",
+        "text": "-(으)ㄴ 적이 있다/없다"
+      },
+      "id": "82408954-f131-524a-ba29-be149543f3db",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:gram-eun-jeogi-eopda",
+      "language_code": "ko",
+      "level_code": "topik3",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -134280,6 +144722,97 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Theo chuẩn sách giáo khoa: động từ và 있다/없다 dùng -나 보다 (보나 봐요, 재미있나 봐요); tính từ dùng -(으)ㄴ가 보다 (바쁜가 봐요); quá khứ dùng -았/었나 보다. Thường dùng để đoán về người khác hoặc sự việc dựa trên dấu hiệu bạn thấy."
+        },
+        "examples": [
+          {
+            "target": "댓글이 많네요. 그 영상이 인기가 많은가 봐요.",
+            "translation": {
+              "vi": "Nhiều bình luận ghê. Hình như video đó nổi lắm."
+            }
+          },
+          {
+            "target": "민수 씨가 요즘 드라마를 자주 보나 봐요.",
+            "translation": {
+              "vi": "Hình như dạo này Minsu hay xem phim truyền hình."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hình như…, có vẻ… (đoán dựa trên điều mình nhìn/nghe thấy)"
+        },
+        "pronunciation_note": {
+          "vi": "많은가 봐요 đọc [마는가 봐요] - ㅎ trong 많 câm."
+        }
+      },
+      "content_hash": "ab341ff2ffcf1947c5cd87fd42fbe14fc9a79f5bc972629840bc385d2618e62e",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-na boda / -(eu)nga boda",
+        "text": "-나 보다 / -(으)ㄴ가 보다"
+      },
+      "id": "d2af763b-9751-522b-83f8-4d3152dd2c8e",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:gram-na-boda",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Động từ: -는 반면에; tính từ: -(으)ㄴ 반면에. Chủ yếu dùng trong văn viết và bài nói trang trọng."
+        },
+        "examples": [
+          {
+            "target": "서울은 교통이 편리한 반면에 집값이 비싸다.",
+            "translation": {
+              "vi": "Seoul giao thông tiện lợi, trong khi đó giá nhà lại đắt."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "trong khi đó, ngược lại (đối lập hai mặt của một sự việc)"
+        },
+        "pronunciation_note": {
+          "vi": "반면에 đọc nối [반며네]."
+        }
+      },
+      "content_hash": "1fe4b5134f15a8bfda14c11837a4d9634817e619ab15295ecb8ab80367460c78",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "-neun banmyeon(e)",
+        "text": "-는 반면(에)"
+      },
+      "id": "5abfed32-27ab-5172-8dc7-6dd28bce3398",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:gram-neun-banmyeone",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Vế sau phải là tương lai, đề nghị hay mệnh lệnh; với việc đã xảy ra dùng -자마자. -(으)ㄴ 대로 lại có nghĩa khác - \"theo như\" (말씀하신 대로)."
         },
         "examples": [
@@ -134895,6 +145428,49 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Dùng N을/를 구독하다; \"đăng ký\" học hay thi lại là 신청하다 hoặc 등록하다."
+        },
+        "examples": [
+          {
+            "target": "이 채널을 구독했어요.",
+            "translation": {
+              "vi": "Tôi đã đăng ký theo dõi kênh này."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đăng ký theo dõi (kênh), đặt mua dài hạn"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [구도카다] - ㄱ gặp ㅎ thành ㅋ."
+        }
+      },
+      "content_hash": "3e56232b2a9e335258cc1478714469eb3152fac2166e61ce44f66810f01faab1",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "romanization": "gudokhada",
+        "text": "구독하다"
+      },
+      "id": "673165ea-c284-57c4-bc66-20208318194e",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:gudokhada",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "media"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Viết 국물 (국 + 물), không viết 궁물."
         },
         "examples": [
@@ -134929,6 +145505,46 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "영상 중간에 광고가 너무 많아요.",
+            "translation": {
+              "vi": "Giữa video có quá nhiều quảng cáo."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "quảng cáo"
+        },
+        "pronunciation_note": {
+          "vi": "광 đọc \"kwang\" (ㅘ), ㄱ đầu không bật hơi."
+        }
+      },
+      "content_hash": "593c8a26a1457484dc8070b0fc90662f84f481ee144e5f56f423a8877734823a",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "gwanggo",
+        "text": "광고"
+      },
+      "id": "3fb26127-b981-57bc-996b-a090ae9ce5c6",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:gwanggo",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "media"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -135510,6 +146126,46 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "설날에 한복을 입는 사람이 줄었어요.",
+            "translation": {
+              "vi": "Số người mặc hanbok vào ngày Tết đã giảm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hanbok, trang phục truyền thống Hàn Quốc"
+        },
+        "pronunciation_note": {
+          "vi": "한복을 đọc nối [한보글]; 한복도 [한복또]."
+        }
+      },
+      "content_hash": "ad03d2ccf35e6135d12e3acfa2ebeb90bc230fbda5144cba264f54296a14c079",
+      "difficulty": 1,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "hanbok",
+        "text": "한복"
+      },
+      "id": "a6ded6fa-01a3-58ef-a770-6123173db475",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hanbok",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -136226,6 +146882,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Đứng trước danh từ dùng trực tiếp (현대 사회) hoặc 현대적인 (mang tính hiện đại)."
+        },
+        "examples": [
+          {
+            "target": "현대 사회에서는 유튜브가 아주 중요해요.",
+            "translation": {
+              "vi": "Trong xã hội hiện đại, YouTube rất quan trọng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hiện đại, thời nay"
+        },
+        "pronunciation_note": {
+          "vi": "현 đọc \"hyơn\" (ㅕ), không phải \"hyôn\"."
+        }
+      },
+      "content_hash": "607ca1d9e07ae40257ea014cf68aeed3bab68fd2d1dd675f9f24ce81057362a5",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "hyeondae",
+        "text": "현대"
+      },
+      "id": "a33faa68-0df8-5b8d-b5b1-1d1b068fd679",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hyeondae",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Viết 아니에요, không viết 아니예요. Đừng dùng 은/는 thay cho 이/가 trong cấu trúc này."
         },
         "examples": [
@@ -136426,6 +147124,49 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Người Việt hay nói 유명해요 cho mọi thứ; 유명하다 là \"nổi tiếng, ai cũng biết\", còn 인기가 많다 là \"được nhiều người thích\"."
+        },
+        "examples": [
+          {
+            "target": "이 유튜버는 젊은 사람들에게 인기가 많아요.",
+            "translation": {
+              "vi": "YouTuber này rất được giới trẻ yêu thích."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "sự nổi tiếng, được yêu thích (인기가 많다/있다 - được ưa chuộng)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [인끼] - ㄱ thành căng."
+        }
+      },
+      "content_hash": "c90857d46aa6bdc1c04921bd2eeb82db1fc889c00f26ac0607f3c82ef3be5e31",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "ingi",
+        "text": "인기"
+      },
+      "id": "06f9ef9b-9599-5b0a-a614-4703b604f72e",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:ingi",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "media"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -136902,6 +147643,45 @@ select content_private.import_bundle($bundle${
     {
       "audio_path": null,
       "back": {
+        "examples": [
+          {
+            "target": "유튜브의 장점은 무료라는 것이고 단점은 광고가 많다는 거예요.",
+            "translation": {
+              "vi": "Ưu điểm của YouTube là miễn phí, còn nhược điểm là nhiều quảng cáo."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ưu điểm / nhược điểm"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [장쩜], [단쩜] - 점 trong từ Hán này đọc căng."
+        }
+      },
+      "content_hash": "026b56944cc4cc8784b28076c4467405680cc83cb265a0dc6f83a7b8c663c02d",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "jangjeom / danjeom",
+        "text": "장점 / 단점"
+      },
+      "id": "65827549-2e72-5f35-858a-aabf19bee3d5",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:jangjeom-danjeom",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
         "confusion": {
           "vi": "Người Việt hay nói 지난년 theo kiểu \"năm trước\", nhưng tiếng Hàn dùng 작년 (지난해 cũng có nhưng trang trọng hơn). \"Năm sau\" là 내년."
         },
@@ -136979,6 +147759,49 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Đừng nói 저 생각에는 - \"của tôi\" là 제 (저의), không phải 저."
+        },
+        "examples": [
+          {
+            "target": "제 생각에는 존댓말을 쓰는 게 좋아요.",
+            "translation": {
+              "vi": "Theo tôi, dùng kính ngữ thì tốt hơn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "theo tôi, theo ý kiến của tôi"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc nối [제 생가게는] - patchim ㄱ của 생각 chuyển sang âm tiết 에."
+        }
+      },
+      "content_hash": "58cd1b73f952b2402d88ff64fafc97a86b5600ab532a74ae4cda21467ab647a2",
+      "difficulty": 2,
+      "front": {
+        "pos": "cụm từ",
+        "romanization": "je saenggageneun",
+        "text": "제 생각에는"
+      },
+      "id": "f7219c42-af45-51ff-8bbf-d74efaee6801",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:je-saenggageneun",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking",
+        "writing"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -137401,6 +148224,49 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Dạng tính từ là 전통적이다 / 전통적인 (mang tính truyền thống)."
+        },
+        "examples": [
+          {
+            "target": "한복은 한국의 전통 옷이에요.",
+            "translation": {
+              "vi": "Hanbok là trang phục truyền thống của Hàn Quốc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "truyền thống"
+        },
+        "pronunciation_note": {
+          "vi": "ㅌ bật hơi mạnh - [전통], đừng đọc thành \"chơn-đông\"."
+        }
+      },
+      "content_hash": "c7fe65a61a3a6f5c89ea85db469352e7e7803fb8346776e744ee134b8844e993",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "jeontong",
+        "text": "전통"
+      },
+      "id": "3a79decd-eef3-58d1-b7b7-9c4f349dad2b",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:jeontong",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -137904,6 +148770,89 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "speaking",
         "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "그 영상은 조회수가 백만 회를 넘었어요.",
+            "translation": {
+              "vi": "Video đó đã vượt một triệu lượt xem."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lượt xem"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [조회쑤] - 수 thành căng."
+        }
+      },
+      "content_hash": "6d4ab52eb3108e6cb9c6ac1c523fdf5f984056776282d6d58d7d1cadeca904ca",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "johoesu",
+        "text": "조회수"
+      },
+      "id": "13ed1f7a-5749-5a7e-a41b-ae6b55c17ec4",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:johoesu",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "media"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Động từ đi kèm là 쓰다 hoặc 하다 (존댓말을 쓰다/하다); trái nghĩa là 반말."
+        },
+        "examples": [
+          {
+            "target": "처음 만난 사람에게는 존댓말을 써요.",
+            "translation": {
+              "vi": "Với người mới gặp lần đầu thì dùng kính ngữ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lời nói kính trọng, kính ngữ (cách nói lịch sự)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [존댄말] - ㅅ (patchim ㄷ) đứng trước ㅁ bị mũi hoá thành ㄴ."
+        }
+      },
+      "content_hash": "1bb99717c59a38d9e086e2281c2f752e39862b8ad30948717e31bf569f6cf2dc",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "jondaenmal",
+        "text": "존댓말"
+      },
+      "id": "f5932de9-e16a-5cf6-aaad-b1ccba1655dd",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:jondaenmal",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -139441,6 +150390,46 @@ select content_private.import_bundle($bundle${
     {
       "audio_path": null,
       "back": {
+        "examples": [
+          {
+            "target": "한국 문화에 관심이 많아요.",
+            "translation": {
+              "vi": "Tôi rất quan tâm đến văn hoá Hàn Quốc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "văn hoá"
+        },
+        "pronunciation_note": {
+          "vi": "Thường đọc [무놔] - ㅎ sau ㄴ yếu đi."
+        }
+      },
+      "content_hash": "f1f2118f1d2189879ce50e306ebc6829c472f94c5c3f8090f0bc12bb1d6dd864",
+      "difficulty": 1,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "munhwa",
+        "text": "문화"
+      },
+      "id": "f33a4d0e-83b5-5132-a497-21f966421868",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:munhwa",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
         "confusion": {
           "vi": "Gửi tin nhắn là 문자를 보내요. 문자 còn có nghĩa \"chữ viết\", khi đó đọc [문자] không căng."
         },
@@ -139650,6 +150639,46 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "speaking",
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "한국의 큰 명절은 설날과 추석이에요.",
+            "translation": {
+              "vi": "Hai ngày lễ lớn của Hàn Quốc là Seollal và Chuseok."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ngày lễ truyền thống lớn (Tết, Trung thu…)"
+        },
+        "pronunciation_note": {
+          "vi": "명 đọc \"myơng\" (ㅕ), không phải \"myông\"."
+        }
+      },
+      "content_hash": "f1281e1a9ca7223bf6207a071f785009027d956a485d980357e047d601ea392d",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "myeongjeol",
+        "text": "명절"
+      },
+      "id": "44fe600c-86ed-523b-97f1-f494d5704dd2",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:myeongjeol",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -139908,6 +150937,46 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "한국의 나이 문화 때문에 처음 만나면 나이를 물어봐요.",
+            "translation": {
+              "vi": "Vì văn hoá tuổi tác của Hàn Quốc, khi mới gặp người ta hay hỏi tuổi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "văn hoá coi trọng tuổi tác (hỏi tuổi, phân thứ bậc theo tuổi)"
+        },
+        "pronunciation_note": {
+          "vi": "문화 thường đọc [무놔] - ㅎ giữa ㄴ và nguyên âm yếu đi."
+        }
+      },
+      "content_hash": "018516e011389a0b6df143dfb79cb8fe0285a48f80413cfb3ac74fce94bad382",
+      "difficulty": 3,
+      "front": {
+        "pos": "cụm danh từ",
+        "romanization": "nai munhwa",
+        "text": "나이 문화"
+      },
+      "id": "f0d09cbe-66b9-53c2-bb0d-b47ca6a5ccd7",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:nai-munhwa",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -142559,6 +153628,89 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "세배 là một kiểu lạy cúi người, khác với chúc Tết bằng lời ở Việt Nam; người nhận lạy thường đáp lại bằng 덕담 (lời chúc)."
+        },
+        "examples": [
+          {
+            "target": "아이들이 할머니께 세배를 하고 세뱃돈을 받았어요.",
+            "translation": {
+              "vi": "Bọn trẻ lạy chúc Tết bà và nhận tiền mừng tuổi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lạy chúc Tết người lớn / tiền mừng tuổi"
+        },
+        "pronunciation_note": {
+          "vi": "세뱃돈 đọc [세배똔] hoặc [세밷똔] - ㄷ sau ㅅ (사이시옷) thành căng."
+        }
+      },
+      "content_hash": "a928fa8d02682f35269cae9b47a295b5224d8e59477383eafb7f83bedefbce0a",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "sebae / sebaetdon",
+        "text": "세배 / 세뱃돈"
+      },
+      "id": "84213fe0-aa8e-56b9-91e2-c765f52884c6",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:sebae",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "설날에 떡국을 먹어요.",
+            "translation": {
+              "vi": "Vào Tết, người Hàn ăn canh bánh gạo tteokguk."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Tết âm lịch (Seollal)"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [설랄] - ㄴ sau ㄹ biến thành ㄹ (lưu âm hoá)."
+        }
+      },
+      "content_hash": "00e98f8659c9eaa916a90f06f33a7c3d8072662abf36374417a70bdce0e9e2b0",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "seollal",
+        "text": "설날"
+      },
+      "id": "61b3e6d1-ccf0-5592-bfa8-fd5cf88a1a53",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:seollal",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Không tự gọi mình là 선생님 - nói 저는 교사예요 (tôi làm giáo viên) hoặc 저는 한국어 선생님이에요 khi giới thiệu nghề."
         },
         "examples": [
@@ -143280,6 +154432,46 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "추석에 가족들과 송편을 만들어요.",
+            "translation": {
+              "vi": "Vào Chuseok, tôi làm bánh songpyeon cùng gia đình."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bánh songpyeon (bánh gạo hình bán nguyệt ăn dịp Chuseok)"
+        },
+        "pronunciation_note": {
+          "vi": "ㅍ bật hơi - [송편], ㅕ đọc \"yơ\"."
+        }
+      },
+      "content_hash": "6c09028e98427208ecfcebb8d3de65212659e44a614bf687c13664fbfbc0ade0",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "songpyeon",
+        "text": "송편"
+      },
+      "id": "d90aacbf-2bb3-5015-b5bb-d1f8bc6f8cb6",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:songpyeon",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -144038,6 +155230,45 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "다른 의견이 있으면 말해 주세요.",
+            "translation": {
+              "vi": "Nếu có ý kiến khác thì bạn cứ nói."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ý kiến"
+        },
+        "pronunciation_note": {
+          "vi": "ㅢ ở đầu từ đọc đủ [의]; ghép nhanh \"ưi\" rồi \"gyơn\"."
+        }
+      },
+      "content_hash": "474e08a7d414f4c62cc91278ae9e86d1afa5534a226ae5f892d7ed977724dfa6",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "uigyeon",
+        "text": "의견"
+      },
+      "id": "5eb95a7a-16e4-512a-b2f2-ae936f06d46d",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:uigyeon",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -146549,6 +157780,46 @@ select content_private.import_bundle($bundle${
     {
       "audio_path": null,
       "back": {
+        "examples": [
+          {
+            "target": "한국에서는 식사 예절이 중요해요.",
+            "translation": {
+              "vi": "Ở Hàn Quốc, phép lịch sự khi ăn uống rất quan trọng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lễ nghi, phép lịch sự"
+        },
+        "pronunciation_note": {
+          "vi": "예 đọc gần \"ye\"; 절 có ㄹ cuối, uốn nhẹ đầu lưỡi."
+        }
+      },
+      "content_hash": "d0c23b09f1e5dbb7727ba7c5a0a776ebcc9f67f21eb605f2eed9b6c27b8b29b3",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "yejeol",
+        "text": "예절"
+      },
+      "id": "d81bba73-13c9-5ed7-9ace-c8c98ae28196",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:yejeol",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "culture"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
         "confusion": {
           "vi": "여기요 nghĩa đen là \"ở đây ạ\" - gọi người đến chỗ mình. 저기요 cũng dùng để bắt chuyện với người lạ."
         },
@@ -147201,6 +158472,46 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "유튜브로 한국어를 공부해요.",
+            "translation": {
+              "vi": "Tôi học tiếng Hàn qua YouTube."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "YouTube"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [유튜브]; người làm video gọi là 유튜버."
+        }
+      },
+      "content_hash": "3f2b83a647f28ac72d7ac6592feaa433673225469c92030550d28a9157d2c65e",
+      "difficulty": 1,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "yutyubeu",
+        "text": "유튜브"
+      },
+      "id": "6e704c87-ee2b-580e-9fed-e63149fb21ee",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:yutyubeu",
+      "language_code": "ko",
+      "level_code": "topik3",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "media"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -153826,6 +165137,354 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "c9c66fd3-6c44-5dfc-9d88-78b8225ec8e5",
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a2757aa6-af56-5156-9d4e-af7423c9349a",
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "375b4c8b-210b-58c1-abd9-29b625be8881",
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5043721e-8b89-5313-82b8-909172b8ba68",
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d7094024-fdbe-5ca0-9463-02711cdb24d2",
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0bb860bd-c4a0-5dc0-be8f-fa1aa7d82238",
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0d156cf8-6a8a-525e-be5a-04ff00210adb",
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1535b400-f5d1-56b6-a206-9a48dd3eb2bc",
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "fd65c41f-b9d4-510c-8471-7ba98201a546",
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "12adc1cc-59dd-5cdf-88be-1a420b295842",
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e1e2a242-d270-55cd-9979-b77200c4b4ae",
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "7c49c8b7-a8b6-51e6-be5d-76ebaf05e62d",
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "20500d1c-f394-5cbc-8d51-93475a77b6c9",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 0,
+      "role": "reuse"
+    },
+    {
+      "item_id": "98bd9b67-b0be-51b6-b20b-8a8e24e4817b",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 1,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f26c125d-ba8f-5656-b990-6f53ed28a236",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 2,
+      "role": "reuse"
+    },
+    {
+      "item_id": "029c9a8e-08c3-54f7-9337-ff0962174dba",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 3,
+      "role": "reuse"
+    },
+    {
+      "item_id": "c9c66fd3-6c44-5dfc-9d88-78b8225ec8e5",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 4,
+      "role": "reuse"
+    },
+    {
+      "item_id": "a2757aa6-af56-5156-9d4e-af7423c9349a",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 5,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d7094024-fdbe-5ca0-9463-02711cdb24d2",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 6,
+      "role": "reuse"
+    },
+    {
+      "item_id": "5043721e-8b89-5313-82b8-909172b8ba68",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 7,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f89399e5-96b2-5d11-a1b0-2e2258e87b0a",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 8,
+      "role": "reuse"
+    },
+    {
+      "item_id": "2b9a0738-8fd3-5521-88aa-8c006d151c78",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 9,
+      "role": "reuse"
+    },
+    {
+      "item_id": "a8915898-eecc-5364-8e62-95517ffbb661",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "1535b400-f5d1-56b6-a206-9a48dd3eb2bc",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "14f27995-17fc-58cf-b695-930f011494b1",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "08360000-9106-57f8-bde7-0479833616e1",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "bbd60131-5b58-566c-902d-248bd83e3b43",
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f89399e5-96b2-5d11-a1b0-2e2258e87b0a",
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2b9a0738-8fd3-5521-88aa-8c006d151c78",
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "faf19bb2-c720-588d-8e57-1df88423a479",
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a8915898-eecc-5364-8e62-95517ffbb661",
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "39534f92-023b-5382-9fd0-807a5313f7f4",
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9afc33e8-ca0b-54ef-b9d2-21dc12f3e859",
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "08360000-9106-57f8-bde7-0479833616e1",
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "14f27995-17fc-58cf-b695-930f011494b1",
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "de804716-9ac6-5c33-a4f2-4240cecfc79a",
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a4d0e423-e4de-51b6-8528-c92bc35c733d",
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "position": 9,
+      "role": "reuse"
+    },
+    {
+      "item_id": "a2757aa6-af56-5156-9d4e-af7423c9349a",
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "20500d1c-f394-5cbc-8d51-93475a77b6c9",
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ca1ce089-4433-5441-9b23-ed57ac626c47",
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f26c125d-ba8f-5656-b990-6f53ed28a236",
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "60b74499-070a-50d7-86d9-55310983076b",
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "98bd9b67-b0be-51b6-b20b-8a8e24e4817b",
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e1e2a242-d270-55cd-9979-b77200c4b4ae",
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7c49c8b7-a8b6-51e6-be5d-76ebaf05e62d",
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3b4a6b0c-22ed-556f-97ad-e3ce0b171452",
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c94325ce-a9c7-54ca-abc4-6cae1210ff59",
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "029c9a8e-08c3-54f7-9337-ff0962174dba",
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2e93ddb9-842f-53ae-b6f1-203ba89b55e3",
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0a99fed2-7ab2-5a8c-8823-57688bffea99",
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "66881129-86f8-52f7-bded-4252812de525",
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "946c0f84-db74-541f-9703-b461e5bdc1b2",
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8f2fe179-f9cb-594c-babb-02ba8b1334ff",
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bbd60131-5b58-566c-902d-248bd83e3b43",
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8d52b6ec-7644-5697-a496-3355df1c5e52",
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "49219464-d449-5034-989f-3a6be2c5716e",
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d563ad86-7a95-5131-af4d-2613b5f2f40c",
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e485adb3-04bd-5566-9083-6d622bf66b12",
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
       "item_id": "6c928f8c-2737-523d-82b9-17b522559af1",
       "lesson_id": "ba8b8110-f82c-51ce-a412-7f612118c84b",
       "position": 0,
@@ -154288,6 +165947,78 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "0e538501-c133-5131-b670-43dda7816f0b",
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "897c1b9f-774a-5636-bac2-2ae7f986549b",
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5abfed32-27ab-5172-8dc7-6dd28bce3398",
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f33a4d0e-83b5-5132-a497-21f966421868",
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3a79decd-eef3-58d1-b7b7-9c4f349dad2b",
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a33faa68-0df8-5b8d-b5b1-1d1b068fd679",
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7c6024c4-96a6-571e-8836-b1916873a32e",
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "cc8cc5c3-0420-5638-bb6f-4cbd22f62a8e",
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "34dcb677-1d26-56a6-b5bf-e2f3b11f9e9c",
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "65827549-2e72-5f35-858a-aabf19bee3d5",
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6c7e6c3c-9edf-5bd2-b97d-3feeadc595b9",
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f7219c42-af45-51ff-8bbf-d74efaee6801",
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
       "item_id": "84105d98-0a36-5397-8bfc-e2b0d8f6fc21",
       "lesson_id": "2c53bc83-87a5-58e8-a2f4-3b68a52ffb1a",
       "position": 0,
@@ -154638,6 +166369,108 @@ select content_private.import_bundle($bundle${
     {
       "item_id": "05c1d40f-00d7-5cc6-ae23-5fb34fc03b39",
       "lesson_id": "e2d3c4af-d841-5d56-bb65-1d26b4799d10",
+      "position": 16,
+      "role": "reuse"
+    },
+    {
+      "item_id": "6c7e6c3c-9edf-5bd2-b97d-3feeadc595b9",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 0,
+      "role": "reuse"
+    },
+    {
+      "item_id": "adc39efe-c7d4-555d-a320-68b06471dae7",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 1,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f7219c42-af45-51ff-8bbf-d74efaee6801",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 2,
+      "role": "reuse"
+    },
+    {
+      "item_id": "8d42c05b-170a-5f06-8a20-9a994f12cc1b",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 3,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f339216b-67d0-585a-aa3d-d124819b984d",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 4,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f0d09cbe-66b9-53c2-bb0d-b47ca6a5ccd7",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 5,
+      "role": "reuse"
+    },
+    {
+      "item_id": "897c1b9f-774a-5636-bac2-2ae7f986549b",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 6,
+      "role": "reuse"
+    },
+    {
+      "item_id": "4c92514a-e04e-52d7-84d3-5e03c224ef96",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 7,
+      "role": "reuse"
+    },
+    {
+      "item_id": "7be9b6dd-b420-519f-b7ac-68aa59bdd59c",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 8,
+      "role": "reuse"
+    },
+    {
+      "item_id": "16a515d2-dce2-5556-89a7-9dc77b7682e7",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 9,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d90aacbf-2bb3-5015-b5bb-d1f8bc6f8cb6",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "a6ded6fa-01a3-58ef-a770-6123173db475",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "e5efa7b0-be11-563a-8aa0-49642c02fb76",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d2af763b-9751-522b-83f8-4d3152dd2c8e",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "15ba93a9-251d-5291-8c5a-269f61167350",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f1b3f7cf-f4bd-5ab8-a6c9-efb6fe72bf8b",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "position": 15,
+      "role": "reuse"
+    },
+    {
+      "item_id": "7b0d44aa-f349-5804-a173-6c14e9f11ef0",
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
       "position": 16,
       "role": "reuse"
     },
@@ -155614,6 +167447,90 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "4c92514a-e04e-52d7-84d3-5e03c224ef96",
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "82408954-f131-524a-ba29-be149543f3db",
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7be9b6dd-b420-519f-b7ac-68aa59bdd59c",
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "16a515d2-dce2-5556-89a7-9dc77b7682e7",
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "44fe600c-86ed-523b-97f1-f494d5704dd2",
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "61b3e6d1-ccf0-5592-bfa8-fd5cf88a1a53",
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b2a12870-604e-5bf3-a681-98c6f8a19da7",
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3b46b07d-83d3-50b1-89f9-fca7afbbef1d",
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "84213fe0-aa8e-56b9-91e2-c765f52884c6",
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a6ded6fa-01a3-58ef-a770-6123173db475",
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d90aacbf-2bb3-5015-b5bb-d1f8bc6f8cb6",
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "cc8cc5c3-0420-5638-bb6f-4cbd22f62a8e",
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f33a4d0e-83b5-5132-a497-21f966421868",
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "3a79decd-eef3-58d1-b7b7-9c4f349dad2b",
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
       "item_id": "48af2b13-2ce9-589c-861c-e0edb8376778",
       "lesson_id": "7d3ca8ad-bb23-5ef4-96e6-4aadf2b72fe3",
       "position": 0,
@@ -156370,6 +168287,90 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "e5efa7b0-be11-563a-8aa0-49642c02fb76",
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d2af763b-9751-522b-83f8-4d3152dd2c8e",
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "15ba93a9-251d-5291-8c5a-269f61167350",
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3db1559e-945c-5fa9-936d-c5fa6073c4dc",
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6e704c87-ee2b-580e-9fed-e63149fb21ee",
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7b0d44aa-f349-5804-a173-6c14e9f11ef0",
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f1b3f7cf-f4bd-5ab8-a6c9-efb6fe72bf8b",
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3fb26127-b981-57bc-996b-a090ae9ce5c6",
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "673165ea-c284-57c4-bc66-20208318194e",
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "06f9ef9b-9599-5b0a-a614-4703b604f72e",
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "13ed1f7a-5749-5a7e-a41b-ae6b55c17ec4",
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6c7e6c3c-9edf-5bd2-b97d-3feeadc595b9",
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "adc39efe-c7d4-555d-a320-68b06471dae7",
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "8d42c05b-170a-5f06-8a20-9a994f12cc1b",
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
       "item_id": "94df8eb5-7827-5bb5-a225-6dfbe7c17c6e",
       "lesson_id": "feab0ee8-43b1-5654-aa59-de500b4d8d92",
       "position": 0,
@@ -156962,6 +168963,78 @@ select content_private.import_bundle($bundle${
       "lesson_id": "93f2094b-1984-50e3-8b9f-7794d557715d",
       "position": 14,
       "role": "reuse"
+    },
+    {
+      "item_id": "f7219c42-af45-51ff-8bbf-d74efaee6801",
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6c7e6c3c-9edf-5bd2-b97d-3feeadc595b9",
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "adc39efe-c7d4-555d-a320-68b06471dae7",
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bbd458df-9fbc-5271-b43f-0126daf2f27d",
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8e6745dc-37b1-53ca-beb2-347fa3413d3d",
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5eb95a7a-16e4-512a-b2f2-ae936f06d46d",
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d81bba73-13c9-5ed7-9ace-c8c98ae28196",
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f5932de9-e16a-5cf6-aaad-b1ccba1655dd",
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8d42c05b-170a-5f06-8a20-9a994f12cc1b",
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2ff78845-5bf0-5162-9027-e97c05039bbd",
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f339216b-67d0-585a-aa3d-d124819b984d",
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f0d09cbe-66b9-53c2-bb0d-b47ca6a5ccd7",
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "position": 11,
+      "role": "introduce"
     },
     {
       "item_id": "9e8b721d-beeb-5a28-82bf-c358adc65f6f",
@@ -159046,6 +171119,26 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "b2bd5a22-5a40-5d68-a22c-c2b969be07a3"
     },
     {
+      "lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "prerequisite_lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311"
+    },
+    {
+      "lesson_id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "prerequisite_lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0"
+    },
+    {
+      "lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "prerequisite_lesson_id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d"
+    },
+    {
+      "lesson_id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "prerequisite_lesson_id": "f9f535dc-7da0-527e-b935-ab664f46df6a"
+    },
+    {
+      "lesson_id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "prerequisite_lesson_id": "8252204e-3f63-5bac-a3b0-059f3d2c681c"
+    },
+    {
       "lesson_id": "ba8b8110-f82c-51ce-a412-7f612118c84b",
       "prerequisite_lesson_id": "e2d3c4af-d841-5d56-bb65-1d26b4799d10"
     },
@@ -159070,6 +171163,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "66fd4045-d0b8-53a7-a331-ad1f01e5b333"
     },
     {
+      "lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "prerequisite_lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074"
+    },
+    {
       "lesson_id": "2c53bc83-87a5-58e8-a2f4-3b68a52ffb1a",
       "prerequisite_lesson_id": "600eb662-dfb1-5b53-87da-56bfaeeac9c3"
     },
@@ -159084,6 +171181,10 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "e2d3c4af-d841-5d56-bb65-1d26b4799d10",
       "prerequisite_lesson_id": "1a7609ea-0d21-5335-b740-d01c03ee6dd3"
+    },
+    {
+      "lesson_id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "prerequisite_lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe"
     },
     {
       "lesson_id": "bc2ada9e-d685-5ea8-85ad-9c9d674cb30f",
@@ -159130,6 +171231,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "68ad20f4-eeb5-5b19-b4fc-d349d438ed15"
     },
     {
+      "lesson_id": "443cf021-80d6-5615-966e-520623862d0e",
+      "prerequisite_lesson_id": "24363920-47d2-5090-872f-5e6bea717a9d"
+    },
+    {
       "lesson_id": "7d3ca8ad-bb23-5ef4-96e6-4aadf2b72fe3",
       "prerequisite_lesson_id": "8b3bb604-08c4-538b-a1c9-41de3cd2f026"
     },
@@ -159166,6 +171271,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "1cd4962d-69d4-5027-83b3-ebb40615fcb3"
     },
     {
+      "lesson_id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "prerequisite_lesson_id": "443cf021-80d6-5615-966e-520623862d0e"
+    },
+    {
       "lesson_id": "feab0ee8-43b1-5654-aa59-de500b4d8d92",
       "prerequisite_lesson_id": "1d005d8f-402d-57e3-9cda-cb43f49241dd"
     },
@@ -159192,6 +171301,10 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "93f2094b-1984-50e3-8b9f-7794d557715d",
       "prerequisite_lesson_id": "78eb7527-0776-5ca5-9cb9-9a9a3561f936"
+    },
+    {
+      "lesson_id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "prerequisite_lesson_id": "c6db2d2f-81d7-538a-909a-d6bbc6117d53"
     },
     {
       "lesson_id": "9fb151d8-1b7e-583e-a4ea-bb0e7d5eb9aa",
@@ -171296,6 +183409,780 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn hiểu và viết được những câu lập luận chặt chẽ kiểu bài giảng đại học - nêu nguyên nhân, đánh giá con số, khẳng định điều tất yếu. Câu ví dụ dùng văn viết -ㄴ다 và văn giảng -습니다."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "N(으)로 인해 là \"do N\" của văn viết, chỉ đứng sau danh từ - 폭우로 인해. N에 불과하다 là \"chỉ là, vỏn vẹn\" để hạ thấp mức độ; -(으)ㄴ/는 셈이다 là \"coi như là\", kết luận gần đúng."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "-지 않을 수 없다 là phủ định kép \"không thể không\", nhấn mạnh hoàn cảnh ép buộc. -(으)ㄴ/는 데다가 là \"đã... lại còn\", hai vế phải cùng chiều (cùng tốt hoặc cùng xấu), vế sau thường có 도."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "-는 한 là \"chừng nào còn, miễn là\", vế sau thường là kết quả chắc chắn. Với động từ và cả 있다/없다 đều dùng -는 한 - 노력하는 한, 없는 한."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Nhiều từ Hán Hàn về công nghệ, xã hội nghe giống Hán Việt nhưng lệch nghĩa - 규제 (quy chế) thật ra là \"sự hạn chế bằng luật\", còn \"quy chế\" của trường là 규정. 인공지능 (nhân công trí năng) dịch là \"trí tuệ nhân tạo\", 윤리 (luân lý) dịch là \"đạo đức\". Khi dịch, hãy chọn từ tiếng Việt hiện đại thay vì giữ âm Hán Việt."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Trích đoạn bài giảng - 빠른 데다가 cộng hai ưu điểm cùng chiều, 데이터로 인해 nêu nguyên nhân của mặt trái."
+          },
+          "target": "인공지능은 판단 속도가 빠른 데다가 피로를 느끼지 않습니다. 그러나 잘못된 데이터로 인해 차별적인 결과를 낼 수도 있습니다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Trí tuệ nhân tạo đã phán đoán nhanh lại không biết mệt mỏi. Tuy nhiên, do dữ liệu sai lệch, nó cũng có thể đưa ra kết quả phân biệt đối xử."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "에 불과하다 đã chứa nghĩa \"chỉ\", nên không cần thêm 만."
+          },
+          "target": "실제로 검증된 사례는 전체의 5%에 불과하다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Số trường hợp đã được kiểm chứng thực tế chỉ chiếm vỏn vẹn 5% tổng số."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Việc đã xảy ra nên dùng 일한 셈이다 (định ngữ quá khứ)."
+          },
+          "target": "한 달에 이틀만 쉬었으니 거의 매일 일한 셈이다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Một tháng chỉ nghỉ hai ngày, coi như gần như ngày nào cũng làm việc."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Phủ định kép nhấn mạnh rằng người viết bị thuyết phục bởi căn cứ."
+          },
+          "target": "이런 부작용을 보면 규제의 필요성을 인정하지 않을 수 없다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Nhìn những hệ quả tiêu cực này, không thể không thừa nhận sự cần thiết của việc kiểm soát."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "지지 않는 한 = \"chừng nào không chịu\"; vế sau nêu hệ quả tất yếu."
+          },
+          "target": "인간이 최종 책임을 지지 않는 한 인공지능 윤리 문제는 해결되기 어렵다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Chừng nào con người chưa chịu trách nhiệm cuối cùng thì vấn đề đạo đức AI khó được giải quyết."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "(으)로 인해 chỉ gắn với danh từ. Muốn dùng động từ thì đổi thành danh từ (폭우) hoặc dùng -아서/어서 (비가 많이 와서)."
+          },
+          "right": "폭우로 인해 항공편이 결항되었다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "비가 많이 오기로 인해 항공편이 결항되었다."
+        },
+        {
+          "note": {
+            "vi": "Người Việt dịch \"chỉ\" nên hay thêm 만, nhưng 불과하다 đã có nghĩa \"chỉ là\". Thêm 만 là thừa và sai."
+          },
+          "right": "찬성한 사람은 10%에 불과했다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "찬성한 사람은 10%만에 불과했다."
+        },
+        {
+          "note": {
+            "vi": "-는 데다가 cộng hai ý cùng chiều. \"Rẻ\" là điểm tốt, \"chất lượng kém\" là điểm xấu - hai ý ngược chiều thì dùng -지만."
+          },
+          "right": "이 제품은 가격이 비싼 데다가 품질도 나쁘다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "이 제품은 가격이 싼 데다가 품질이 나쁘다."
+        },
+        {
+          "points": [
+            {
+              "vi": "N(으)로 인해 - do N (văn viết, chỉ sau danh từ)."
+            },
+            {
+              "vi": "N에 불과하다 - chỉ là (không thêm 만) · -(으)ㄴ/는 셈이다 - coi như là."
+            },
+            {
+              "vi": "-지 않을 수 없다 - không thể không · -(으)ㄴ/는 데다가 - đã... lại còn (cùng chiều)."
+            },
+            {
+              "vi": "-는 한 - chừng nào còn (없는 한, 노력하는 한)."
+            },
+            {
+              "vi": "인공지능 trí tuệ nhân tạo · 윤리 đạo đức · 규제 sự hạn chế bằng luật · 부작용 tác dụng phụ, mặt trái."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "6c1a80d505b31a4bc6faf4105b546f6ec5af539eaf5051ebf3aead4f09678822",
+      "estimated_minutes": 20,
+      "id": "1c48ca61-340e-5e64-8a72-1afa0960bc0d",
+      "is_demo": true,
+      "key": "ko:lesson:academic-cause-limits",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "objectives": [
+        {
+          "vi": "Nêu nguyên nhân trong văn viết bằng N(으)로 인해 và đánh giá mức độ bằng N에 불과하다, -(으)ㄴ/는 셈이다."
+        },
+        {
+          "vi": "Nhấn mạnh tính tất yếu với -지 않을 수 없다, cộng ý với -(으)ㄴ/는 데다가, nêu điều kiện với -는 한."
+        },
+        {
+          "vi": "Hiểu một đoạn bài giảng về trí tuệ nhân tạo, đạo đức và quy định hạn chế."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "listening",
+        "reading",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Nguyên nhân, giới hạn và mức độ - bài giảng về đạo đức AI"
+      },
+      "unit_id": "687536fe-144c-5cdb-82a7-b7e702447d14"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Bài ôn này đưa bạn qua ba loại văn bản TOPIK 6 - một đoạn bài luận câu 54, một trích đoạn bài giảng và một chuyên mục văn hoá. Bạn sẽ vừa đọc hiểu vừa tự viết lại bằng văn phong -ㄴ다."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Khi đọc, hãy tìm từ nối để đoán vai trò của câu - 첫째/둘째 là luận điểm, 따라서/그러므로 là kết luận, 이와 같이 là mở đầu kết bài. Ngữ pháp cao cấp cho biết thái độ người viết - 에 불과하다 hạ thấp, -지 않을 수 없다 khẳng định, -기는커녕 phê phán."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Khi viết, giữ một đuôi văn viết -ㄴ다 cho cả bài, thay 그래서/근데 bằng 따라서/그러나, và trích tục ngữ bằng 이라는 말이 있듯이. Với từ Hán Hàn, kiểm tra nghĩa thật trước khi dùng - 주장, 공부, 사정, 규제."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Bài 54 đạt điểm cao thường có mỗi đoạn một ý chính, câu chủ đề ở đầu đoạn và một câu chuyển ý ở cuối. Một câu tục ngữ hay 사자성어 đặt đúng chỗ (thường ở mở bài hoặc kết bài) giúp bài tự nhiên hơn, nhưng dùng quá hai câu sẽ thành gượng ép."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Đoạn bài luận mẫu - 데다가 cộng ưu điểm, 그러나 chuyển ý, 로 인해 nêu nguyên nhân, 따라서 kết luận."
+          },
+          "target": "최근 인공지능 기술이 빠르게 발전하면서 이에 대한 논란도 커지고 있다. 인공지능은 효율이 높은 데다가 비용도 적게 든다. 그러나 잘못된 데이터로 인해 차별적인 판단을 내릴 수 있다는 점을 고려하지 않을 수 없다. 따라서 기술 개발과 함께 윤리적 기준을 마련해야 한다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Gần đây công nghệ trí tuệ nhân tạo phát triển nhanh nên tranh cãi xung quanh nó cũng ngày càng lớn. Trí tuệ nhân tạo đã hiệu quả cao lại còn ít tốn kém. Tuy nhiên, không thể không xét đến việc nó có thể đưa ra phán đoán phân biệt đối xử do dữ liệu sai lệch. Do đó, cần xây dựng chuẩn mực đạo đức song song với phát triển công nghệ."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Trích chuyên mục văn hoá - N이 아니라 N = \"không phải... mà là\", mẫu câu hay dùng để nêu quan điểm."
+          },
+          "target": "명절에 가족이 모이면 세대 갈등이 생기기 쉽다. 그러나 서로의 가치관을 존중한다면 명절은 갈등의 시간이 아니라 전통을 함께 계승하는 시간이 될 수 있다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Khi gia đình tụ họp ngày lễ tết, xung đột thế hệ rất dễ nảy sinh. Nhưng nếu tôn trọng hệ giá trị của nhau, ngày lễ có thể trở thành dịp cùng nhau kế thừa truyền thống chứ không phải dịp xung đột."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Trích bài giảng - đuôi -습니다 của văn nói trang trọng; 바와 같이 nối lại phần trước của bài giảng."
+          },
+          "target": "앞에서 살펴본 바와 같이 인공지능의 판단은 결국 데이터에 의존할 수밖에 없습니다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Như chúng ta đã xem xét ở trên, phán đoán của trí tuệ nhân tạo rốt cuộc buộc phải dựa vào dữ liệu."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Câu sai mắc cùng lúc hai lỗi văn phong - từ nối văn nói 그래서 và đuôi 해요체. Bài luận cần 따라서 và đuôi -다, kèm cách nói khách quan."
+          },
+          "right": "따라서 인공지능에 대한 규제가 필요하다고 볼 수 있다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "그래서 저는 인공지능 규제가 필요하다고 생각해요."
+        },
+        {
+          "note": {
+            "vi": "Tục ngữ phải giữ nguyên dạng cổ -(으)랴; chia lại thành 무너질까요 làm mất tính thành ngữ. Phần sau cũng nên giữ văn viết."
+          },
+          "right": "공든 탑이 무너지랴. 열심히 준비했으니 좋은 결과가 있을 것이다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "공든 탑이 무너질까요? 열심히 했으니 괜찮을 거예요."
+        },
+        {
+          "points": [
+            {
+              "vi": "Bố cục - 서론 · 본론 (첫째, 둘째) · 결론 (이와 같이); từ nối 따라서, 그러므로, 그러나."
+            },
+            {
+              "vi": "Thái độ - 에 불과하다 (hạ thấp) · -지 않을 수 없다 (khẳng định) · -기는커녕 (phê phán) · -(으)ㄹ지언정 (lập trường)."
+            },
+            {
+              "vi": "Rào đón - -다고 볼 수 있다, -(으)ㄹ 것으로 보인다; trích dẫn - 바와 같이, 이라는 말이 있듯이."
+            },
+            {
+              "vi": "Kiểm tra bẫy Hán Việt và không dịch từng chữ tục ngữ."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "9dd495eece5afc56e7de1dc6b86447b0ed585de825eaef7589a8ebf880479429",
+      "estimated_minutes": 25,
+      "id": "f75f5c77-7b59-5ebd-90b6-ffb2b01d0793",
+      "is_demo": true,
+      "key": "ko:lesson:academic-culture-review",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "objectives": [
+        {
+          "vi": "Đọc và nghe hiểu đoạn bài luận, bài giảng, chuyên mục văn hoá ở trình độ TOPIK 6."
+        },
+        {
+          "vi": "Kết hợp bố cục bài luận, ngữ pháp cao cấp, thành ngữ và từ vựng học thuật trong một văn bản."
+        },
+        {
+          "vi": "Tự sửa lỗi văn phong và lỗi từ Hán Việt trước khi viết câu 54."
+        }
+      ],
+      "order_index": 5,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "reading",
+        "listening",
+        "writing",
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Ôn tập - bài luận, bài giảng và chuyên mục văn hoá"
+      },
+      "unit_id": "687536fe-144c-5cdb-82a7-b7e702447d14"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn đọc hiểu một chuyên mục văn hoá trên báo Hàn và tự viết được những câu thể hiện lập trường rõ ràng, trang trọng. Câu ví dụ dùng văn viết -ㄴ다 hoặc kính ngữ -습니다."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "-(으)ㄹ지언정 là \"dù có phải... cũng (nhất quyết không)\" - vế trước là điều xấu bạn chấp nhận, vế sau là lập trường không đổi. Vế sau thường là phủ định hay ý chí - 실패할지언정 포기하지는 않겠다."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "-기는커녕 (sau động từ) và N은/는커녕 (sau danh từ) là \"chẳng những không... mà còn\", vế sau trái với kỳ vọng. Ví dụ 칭찬은커녕 꾸중만 들었다 - chẳng được khen mà còn bị mắng."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "-(으)ㄹ 따름이다 là \"chỉ... mà thôi\", trang trọng và khiêm tốn, hay gặp trong phát biểu - 감사할 따름입니다. -(으)ㄴ/는 바 là danh từ phụ thuộc \"điều mà\", gặp nhiều nhất trong -(으)ㄴ 바와 같이 \"như đã...\"."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Người Việt có lợi thế với từ Hán Hàn nhưng cũng dễ mắc bẫy. 공부 (công phu) trong tiếng Hàn chỉ là \"việc học\", không có nghĩa \"tỉ mỉ, tốn công\" - món ăn công phu là 정성이 들어간 음식. 사정 (sự tình) là \"hoàn cảnh, lý do riêng\", còn \"đầu đuôi sự việc\" là 경위."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Trích chuyên mục văn hoá - 에 불과한 것이 아니다 phủ định cách nhìn hẹp; 비로소 = \"mới, chỉ khi đó mới\"."
+          },
+          "target": "전통은 박물관에 보관된 유물에 불과한 것이 아니다. 젊은 세대가 자신의 가치관에 맞게 전통을 계승할 때 비로소 살아 있는 문화가 된다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Truyền thống không chỉ là di vật cất trong bảo tàng. Chỉ khi thế hệ trẻ kế thừa truyền thống theo hệ giá trị của chính mình, nó mới trở thành văn hoá sống."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "-기는커녕 thường đi với 오히려 (ngược lại) ở vế sau."
+          },
+          "target": "세대 갈등을 줄이기는커녕 오히려 키우는 정책도 있다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Có những chính sách chẳng những không giảm xung đột thế hệ mà còn làm nó trầm trọng hơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Vế sau có -지는 않겠다 - phủ định kèm ý chí, rất hợp với -(으)ㄹ지언정."
+          },
+          "target": "굶을지언정 남의 것을 훔치지는 않겠다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Dù có phải nhịn đói, tôi cũng nhất định không lấy trộm đồ của người khác."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "살펴본 바와 같이 = \"như đã xem xét\" - cụm mở đầu rất hay dùng trong 본론 và 결론."
+          },
+          "target": "앞에서 살펴본 바와 같이 가치관의 차이는 갈등의 원인이 되기도 한다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Như đã xem xét ở trên, khác biệt về hệ giá trị cũng có thể trở thành nguyên nhân gây xung đột."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Người Việt hay dùng -(으)ㄹ지언정 như \"dù\" thông thường. Vế sau phải là lập trường, ý chí mạnh, không phải lời khuyên."
+          },
+          "right": "비가 올지언정 약속은 꼭 지키겠다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "비가 올지언정 우산을 가져가세요."
+        },
+        {
+          "note": {
+            "vi": "-커녕 chỉ dùng khi vế sau trái kỳ vọng hoặc tệ hơn. Hai điều tốt chồng lên nhau thì dùng 뿐만 아니라."
+          },
+          "right": "칭찬은커녕 꾸중만 들었다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "칭찬은커녕 상도 받았다."
+        },
+        {
+          "note": {
+            "vi": "공부 trong tiếng Hàn chỉ là \"việc học\", không mang nghĩa \"công phu, tỉ mỉ\" như tiếng Việt. Dùng 정성 (tâm huyết) hoặc 공 (công sức)."
+          },
+          "right": "이 요리는 정성이 많이 들어갔다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "이 요리는 공부가 많이 들었다."
+        },
+        {
+          "note": {
+            "vi": "Muốn nói \"kể sự tình\" theo nghĩa đầu đuôi câu chuyện thì dùng 경위. 사정 là hoàn cảnh, lý do riêng - 집안 사정, 개인 사정."
+          },
+          "right": "그 사건의 경위를 처음부터 이야기해 주세요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "그 사건의 사정을 처음부터 이야기해 주세요."
+        },
+        {
+          "points": [
+            {
+              "vi": "-(으)ㄹ지언정 - dù có... cũng nhất quyết (vế sau là ý chí, phủ định)."
+            },
+            {
+              "vi": "-기는커녕 / N은/는커녕 - chẳng những không... mà còn (vế sau trái kỳ vọng)."
+            },
+            {
+              "vi": "-(으)ㄹ 따름이다 - chỉ... mà thôi (trang trọng) · -(으)ㄴ 바와 같이 - như đã..."
+            },
+            {
+              "vi": "전통 truyền thống · 계승하다 kế thừa · 가치관 hệ giá trị · 세대 갈등 xung đột thế hệ."
+            },
+            {
+              "vi": "Bẫy Hán Việt - 공부 chỉ là \"học\", 사정 là \"hoàn cảnh riêng\" chứ không phải \"đầu đuôi sự việc\"."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "01c890dcd70b664fcd7dc2ddb88a87871a5534091b8038602a350eb455f73cc6",
+      "estimated_minutes": 20,
+      "id": "8252204e-3f63-5bac-a3b0-059f3d2c681c",
+      "is_demo": true,
+      "key": "ko:lesson:academic-culture-stance",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "objectives": [
+        {
+          "vi": "Bày tỏ lập trường mạnh với -(으)ㄹ지언정 và nói điều trái kỳ vọng với -기는커녕 / N은/는커녕."
+        },
+        {
+          "vi": "Dùng văn phong trang trọng -(으)ㄹ 따름이다, -(으)ㄴ/는 바 trong phát biểu và bài viết."
+        },
+        {
+          "vi": "Đọc chuyên mục văn hoá về 전통, 계승, 가치관, 세대 갈등 và tránh bẫy từ Hán Việt (공부, 사정)."
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "reading",
+        "vocabulary",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Lập trường, thái độ và chuyên mục văn hoá"
+      },
+      "unit_id": "687536fe-144c-5cdb-82a7-b7e702447d14"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn dựng được khung một bài nghị luận 600-700 chữ cho câu 54 TOPIK II, với từ nối và đuôi câu đúng văn phong viết. Bài này dùng văn viết -ㄴ다/-다, không dùng 해요체."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Bài nghị luận gồm ba phần - 서론 (mở bài, nêu vấn đề), 본론 (thân bài, đưa luận điểm và 근거), 결론 (kết bài, khẳng định lại 주장). Trong 본론, bạn liệt kê bằng 첫째, 둘째 để người chấm dễ theo dõi."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Từ nối văn nói như 그래서, 근데, 그러니까 làm bài bị trừ điểm văn phong. Hãy dùng 따라서, 그러므로 để rút ra kết luận, 그러나/하지만 để đổi ý, và 이와 같이 để mở đầu phần kết."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Người chấm đánh giá cao nhận định thận trọng thay vì khẳng định tuyệt đối. -다고 볼 수 있다 (\"có thể xem là\") và -(으)ㄹ 것으로 보인다 (\"dự kiến sẽ\") giúp câu văn khách quan như bài báo hay luận văn."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Nhiều từ Hán Hàn trông giống Hán Việt nhưng nghĩa lệch - 주장 (chủ trương) thực ra là \"luận điểm, chủ kiến\", 서론 (tự luận) là \"mở bài\". Hãy học nghĩa theo ngữ cảnh chứ đừng suy từ âm Hán Việt. Ngoài ra, -다고 볼 수 있다 đổi theo từ loại - danh từ + (이)라고, động từ + -ㄴ/는다고, tính từ + -다고."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Mỗi luận điểm mở bằng 첫째, 둘째 rồi dấu phẩy; câu kết thúc bằng đuôi văn viết -ㄴ다."
+          },
+          "target": "첫째, 인공지능은 업무 효율을 높인다. 둘째, 단순 반복 작업을 줄여 준다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Thứ nhất, trí tuệ nhân tạo nâng cao hiệu quả công việc. Thứ hai, nó giảm bớt những việc lặp đi lặp lại đơn giản."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "따라서 nối kết luận với các luận cứ trước - đúng chỗ của \"do đó\" trong văn nghị luận tiếng Việt."
+          },
+          "target": "따라서 정부는 관련 대책을 마련해야 한다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Do đó, chính phủ cần đưa ra biện pháp đối phó liên quan."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "결과 là danh từ có patchim nên dùng -이라고, rút gọn thành 결과라고 sau nguyên âm 과."
+          },
+          "target": "이는 사회 구조 변화의 결과라고 볼 수 있다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Điều này có thể xem là kết quả của sự thay đổi cơ cấu xã hội."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "-(으)ㄹ 것으로 보인다 nêu dự báo khách quan, không phải cảm nhận cá nhân như -(으)ㄹ 것 같다."
+          },
+          "target": "이 문제를 둘러싼 논란은 당분간 계속될 것으로 보인다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Dự kiến tranh cãi xoay quanh vấn đề này sẽ còn tiếp diễn trong thời gian tới."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "근데, 그래서 là từ nối văn nói. Người Việt quen viết như nói \"nhưng mà, nên\" - trong bài luận hãy đổi sang 그러나, 따라서."
+          },
+          "right": "그러나 이 방법에는 문제가 있다. 따라서 다른 방법이 필요하다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "근데 이 방법에는 문제가 있다. 그래서 다른 방법이 필요하다."
+        },
+        {
+          "note": {
+            "vi": "해요체 là văn nói lịch sự, không hợp bài luận TOPIK. Toàn bài phải thống nhất đuôi -ㄴ다/-다."
+          },
+          "right": "인공지능은 우리 생활을 편리하게 만든다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "인공지능은 우리 생활을 편리하게 만들어요."
+        },
+        {
+          "note": {
+            "vi": "Sau danh từ phải dùng -(이)라고, không phải -다고. Lỗi này rất hay gặp vì câu gốc kết thúc bằng 결과다."
+          },
+          "right": "이는 사회 변화의 결과라고 볼 수 있다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "이는 사회 변화의 결과다고 볼 수 있다."
+        },
+        {
+          "points": [
+            {
+              "vi": "서론 nêu vấn đề · 본론 đưa luận điểm và 근거 (첫째, 둘째) · 결론 bắt đầu bằng 이와 같이 và khẳng định 주장."
+            },
+            {
+              "vi": "Văn viết - 따라서, 그러므로, 그러나; tránh 그래서, 근데, 그러니까."
+            },
+            {
+              "vi": "-다고 볼 수 있다 (danh từ + 이라고) · -(으)ㄹ 것으로 보인다 - nhận định khách quan."
+            },
+            {
+              "vi": "주장하다 khẳng định · 반박하다 phản bác · 근거 căn cứ · 논란 tranh cãi."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "488dbb77e29d5264608d918a8298c62c06b9ee403b0f634701cc2f7a65ddd3ee",
+      "estimated_minutes": 20,
+      "id": "78b79084-676d-50e4-ab65-e0ff18ec0311",
+      "is_demo": true,
+      "key": "ko:lesson:academic-essay-structure",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "objectives": [
+        {
+          "vi": "Sắp xếp bài nghị luận theo 서론 - 본론 - 결론 và liệt kê luận điểm bằng 첫째, 둘째."
+        },
+        {
+          "vi": "Dùng từ nối văn viết 따라서, 그러므로, 이와 같이 thay cho 그래서, 근데 của văn nói."
+        },
+        {
+          "vi": "Đưa ra nhận định mềm, khách quan với -다고 볼 수 있다 và -(으)ㄹ 것으로 보인다."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "writing",
+        "grammar",
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Bố cục bài nghị luận TOPIK II câu 54"
+      },
+      "unit_id": "687536fe-144c-5cdb-82a7-b7e702447d14"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn nhận ra và dùng đúng chỗ những thành ngữ, tục ngữ hay xuất hiện trong bài đọc và câu hỏi từ vựng TOPIK II. Câu ví dụ dùng văn viết -ㄴ다."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "사자성어 là thành ngữ bốn chữ Hán, nên người Việt thường đoán được nghĩa qua âm Hán Việt - 일석이조 (nhất thạch nhị điểu) là \"một công đôi việc\". Chúng thường đứng trước 이다 hoặc trong 작심삼일로 끝나다."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "속담 là tục ngữ thuần Hàn, có câu trùng ý tiếng Việt nhưng hình ảnh khác. Hãy học nguyên câu Hàn và câu Việt tương đương, đừng dịch từng chữ - \"góp gió thành bão\" là 티끌 모아 태산 chứ không phải \"gió, bão\"."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Trong bài viết, trích tục ngữ bằng N(이)라는 말이 있듯이 (\"như câu nói...\") hoặc N(이)라고, rồi giải thích. Để so sánh tình huống với tục ngữ, dùng -는 격이다 - 소 잃고 외양간 고치는 격이다."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "공든 탑이 무너지랴 dùng đuôi cổ -(으)랴 - câu hỏi tu từ \"lẽ nào lại...\", nên nghĩa thật là \"không đổ\". Nhiều câu tục ngữ khác cũng dùng đuôi cổ, nên đừng chia lại theo 해요체 khi trích. 금상첨화 (đã tốt lại thêm tốt) ngược nghĩa với 설상가상 (hoạ vô đơn chí), cặp này hay bị hỏi trong đề."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Hai lợi ích (운동, 교통비) từ một việc - đúng ngữ cảnh của 일석이조."
+          },
+          "target": "자전거로 출퇴근하면 운동도 되고 교통비도 아끼니 일석이조이다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Đi làm bằng xe đạp vừa tập thể dục vừa tiết kiệm tiền đi lại, đúng là một công đôi việc."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Cách trích tục ngữ chuẩn trong bài luận - 이라는 말이 있듯이."
+          },
+          "target": "티끌 모아 태산이라는 말이 있듯이 작은 습관이 모여 큰 변화를 만든다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Như câu \"góp gió thành bão\", những thói quen nhỏ gom lại sẽ tạo nên thay đổi lớn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "고친다 đổi thành định ngữ 고치는 trước 격이다."
+          },
+          "target": "사고가 난 뒤에야 안전 점검을 하는 것은 소 잃고 외양간 고치는 격이다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Đợi xảy ra tai nạn rồi mới kiểm tra an toàn thì đúng là mất bò mới lo làm chuồng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Dùng để động viên người đã nỗ lực hết lòng."
+          },
+          "target": "공든 탑이 무너지랴. 그동안 열심히 준비했으니 좋은 결과가 있을 것이다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Có công ắt có quả. Bấy lâu nay đã chuẩn bị chăm chỉ thì sẽ có kết quả tốt."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Dịch từng chữ \"góp gió thành bão\" sang tiếng Hàn sẽ không ai hiểu. Câu tương đương của người Hàn là 티끌 모아 태산 (gom bụi thành núi)."
+          },
+          "right": "티끌 모아 태산",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "바람 모아 폭풍"
+        },
+        {
+          "note": {
+            "vi": "Câu \"ếch ngồi đáy giếng\" đã có bản Hàn cố định - 우물 안 개구리. Tục ngữ phải dùng đúng nguyên dạng, không tự diễn đạt lại."
+          },
+          "right": "우물 안 개구리",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "우물 바닥에 앉은 개구리"
+        },
+        {
+          "note": {
+            "vi": "금상첨화 chỉ dùng cho điều tốt chồng thêm điều tốt. Xui xẻo chồng xui xẻo là 설상가상 (hoạ vô đơn chí)."
+          },
+          "right": "시험에도 떨어지고 지갑까지 잃어버렸으니 설상가상이다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "시험에도 떨어지고 지갑까지 잃어버렸으니 금상첨화이다."
+        },
+        {
+          "points": [
+            {
+              "vi": "일석이조 một công đôi việc · 작심삼일 cả thèm chóng chán · 금상첨화 đã tốt lại càng tốt (≠ 설상가상)."
+            },
+            {
+              "vi": "우물 안 개구리 ếch ngồi đáy giếng · 티끌 모아 태산 góp gió thành bão."
+            },
+            {
+              "vi": "공든 탑이 무너지랴 có công ắt có quả · 소 잃고 외양간 고친다 mất bò mới lo làm chuồng."
+            },
+            {
+              "vi": "Trích dẫn - N(이)라는 말이 있듯이 · so sánh - -는 격이다. Không dịch từng chữ tục ngữ Việt."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "60d9f1f4c69f3abead128c04075358ccbe6b88f1d1976293188afc8fdae90f9b",
+      "estimated_minutes": 20,
+      "id": "b304658e-71b8-5b2f-af2e-6cb964a805c0",
+      "is_demo": true,
+      "key": "ko:lesson:academic-idioms-proverbs",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "objectives": [
+        {
+          "vi": "Hiểu và dùng các 사자성어 hay gặp - 일석이조, 작심삼일, 금상첨화."
+        },
+        {
+          "vi": "Hiểu và dùng các 속담 - 우물 안 개구리, 티끌 모아 태산, 공든 탑이 무너지랴, 소 잃고 외양간 고친다."
+        },
+        {
+          "vi": "Trích thành ngữ đúng cách trong bài viết và tránh dịch từng chữ từ tục ngữ tiếng Việt."
+        }
+      ],
+      "order_index": 4,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "vocabulary",
+        "reading",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Thành ngữ bốn chữ và tục ngữ thường gặp trong TOPIK"
+      },
+      "unit_id": "687536fe-144c-5cdb-82a7-b7e702447d14"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Sau bài này, bạn nghe và viết đúng các cặp 가 / 카 / 까, và đọc được các từ có nguyên âm ghép như 우유, 사과."
           },
           "type": "objective"
@@ -172227,6 +185114,171 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn so sánh được Hàn Quốc và Việt Nam (\"Việt Nam nóng hơn Hàn Quốc\", \"So với năm ngoái…\") và đọc hiểu một đoạn văn ngắn nêu ưu, nhược điểm."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "N보다 gắn vào vật bị đem ra so sánh (cái \"kém\" trong câu), còn chủ ngữ là cái \"hơn\" - 베트남이 한국보다 더 더워요. Tiếng Việt nói \"A nóng hơn B\", tiếng Hàn đặt B보다 trước tính từ; 더 (hơn) có thể bỏ."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "N에 비해(서) nghĩa là \"so với N\", hay dùng trong bài viết, tin tức - 작년에 비해 관광객이 많다. Khi nói chuyện hằng ngày, N보다 tự nhiên hơn."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "-는 반면(에) đặt hai mặt trái ngược cạnh nhau, giống \"trong khi đó / ngược lại\". Động từ: -는 반면에 (많이 보는 반면에); tính từ: -(으)ㄴ 반면에 (편리한 반면에, 작은 반면에)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "비슷하다 (giống, tương tự) và 다르다 (khác) đều đi với 와/과 - 베트남과 비슷해요, 한국과 달라요. 다르다 là bất quy tắc 르 nên 해요체 là 달라요. Khi viết bài về văn hoá, cặp 장점 / 단점 và 차이 (khác biệt) giúp bạn sắp xếp ý rõ ràng."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "보다 gắn vào 한국 (cái bị so sánh), chủ ngữ 베트남이 là cái \"hơn\"."
+          },
+          "target": "베트남이 한국보다 더 더워요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Việt Nam nóng hơn Hàn Quốc."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Câu viết theo kiểu văn viết -다 như trong báo chí."
+          },
+          "target": "작년에 비해 한국 문화에 관심이 있는 사람이 많다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "So với năm ngoái, số người quan tâm đến văn hoá Hàn Quốc nhiều hơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "비슷하다 đi với 과 (뗏 có patchim ㅅ)."
+          },
+          "target": "한국의 설날은 베트남의 뗏과 비슷하지만 연휴는 뗏에 비해 짧아요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Tết của Hàn Quốc giống Tết Việt Nam, nhưng kỳ nghỉ thì ngắn hơn so với Tết."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "편리하다 là tính từ → 편리한 반면에."
+          },
+          "target": "휴대폰은 편리한 반면에 화면이 작다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Điện thoại thì tiện lợi, trong khi đó màn hình lại nhỏ."
+          },
+          "type": "example"
+        },
+        {
+          "target": "전통 문화와 현대 문화는 차이가 커요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Văn hoá truyền thống và văn hoá hiện đại khác nhau rất nhiều."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Muốn nói \"Việt Nam nóng hơn\", người Việt hay gắn 보다 vào vật được nói \"hơn\" vì dịch theo thứ tự \"nóng hơn Hàn Quốc\". Hãy nhớ - 보다 đi theo cái bị so sánh, tức vật đứng sau chữ \"hơn\" trong tiếng Việt."
+          },
+          "right": "베트남이 한국보다 더 더워요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "한국이 베트남보다 더 더워요."
+        },
+        {
+          "note": {
+            "vi": "편리하다 là tính từ nên dùng -(으)ㄴ 반면에; -는 반면에 chỉ dành cho động từ."
+          },
+          "right": "서울은 교통이 편리한 반면에 집값이 비싸요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "서울은 교통이 편리하는 반면에 집값이 비싸요."
+        },
+        {
+          "note": {
+            "vi": "다르다 bất quy tắc 르 - thêm một ㄹ khi chia 아/어: 달라요, 달랐어요."
+          },
+          "right": "두 나라의 음식이 달라요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "두 나라의 음식이 다라요."
+        },
+        {
+          "points": [
+            {
+              "vi": "A가 B보다 (더) + tính từ - A hơn B; 보다 gắn vào B."
+            },
+            {
+              "vi": "N에 비해(서) - so với N (văn viết, tin tức)."
+            },
+            {
+              "vi": "V-는 반면에 · A-(으)ㄴ 반면에 - trong khi đó, ngược lại."
+            },
+            {
+              "vi": "N과/와 비슷하다 · N과/와 다르다 (달라요) · 차이가 크다."
+            },
+            {
+              "vi": "전통 ↔ 현대 · 장점 ↔ 단점."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "7c11c6ed27172bbd6970037374719f3c0ff03ebde9ff07aa9fe7d947a9b8da7b",
+      "estimated_minutes": 20,
+      "id": "24363920-47d2-5090-872f-5e6bea717a9d",
+      "is_demo": true,
+      "key": "ko:lesson:comparing-cultures",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "objectives": [
+        {
+          "vi": "So sánh hơn bằng N보다 (더) và \"so với\" bằng N에 비해(서), đặt trợ từ vào đúng vật bị so sánh."
+        },
+        {
+          "vi": "Đối lập hai mặt của một sự việc bằng -는/(으)ㄴ 반면(에) trong văn viết."
+        },
+        {
+          "vi": "Nói về điểm giống, khác, ưu điểm và nhược điểm giữa văn hoá truyền thống và hiện đại."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "reading",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "So sánh văn hoá Hàn - Việt"
+      },
+      "unit_id": "97620c8c-2f00-5ee8-b89f-7dec8aa9889c"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Sau bài này, bạn đọc và viết được mọi nguyên âm ghép còn lại, và đọc đúng 의 trong 의사 (bác sĩ), 희망 (hy vọng) và 우리의 (của chúng tôi)."
           },
           "type": "objective"
@@ -172845,6 +185897,151 @@ select content_private.import_bundle($bundle${
         "vi": "Phụ âm cơ bản"
       },
       "unit_id": "49b9ffe4-4bf1-5b64-96dc-a5fa0edf69de"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Bài ôn này dựa trên một cuộc phỏng vấn ngắn với Linh, du học sinh Việt Nam ở Seoul. Bạn sẽ dùng lại toàn bộ cấu trúc của unit để hiểu và trả lời về văn hoá, truyền thông và quan điểm cá nhân."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Nêu và so sánh ý kiến: 제 생각에는… / …-다고 생각해요; N보다, N에 비해; -(으)ㄹ 필요가 있다. Nhớ chia đúng trước -다고 - động từ -ㄴ/는다고, tính từ và 있다 -다고."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Kể chuyện và mong ước: -아/어 본 적이 있다 (đã từng thử), tính từ + -아/어지다 (trở nên), -았/었으면 좋겠다 (mong là). Phỏng đoán và tiếc nuối: -(으)ㄹ 텐데, -나 보다 / -(으)ㄴ가 보다, -(으)ㄹ걸 그랬다."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Khi trả lời phỏng vấn hay viết đoạn văn nêu ý kiến ở TOPIK 4, bạn nên đi theo ba bước - kinh nghiệm (본 적이 있어요), so sánh và nhận xét (베트남에 비해…, …-다고 생각해요), rồi mong ước (…-았/었으면 좋겠어요). Dùng 해요체 khi nói chuyện, phỏng vấn; dùng -다 khi viết bài báo, bài luận. Đừng trộn hai lối này trong cùng một đoạn."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Bài phỏng vấn dùng 해요체. Tìm lại các cấu trúc - 만들어 봤어요, 베트남에 비해, 달라져요, 좋아졌어요, 문제라고 생각해요, 배울 수 있었으면 좋겠어요."
+          },
+          "target": "기자: 린 씨, 한국 명절을 보낸 적이 있어요?\n린: 네, 작년 추석에 친구 집에서 송편을 만들어 봤어요. 생각보다 어려웠어요.\n기자: 한국 문화 중에서 무엇이 가장 달랐어요?\n린: 나이 문화요. 베트남에 비해 한국은 나이에 따라 말이 많이 달라져요. 처음에는 선배에게 반말을 해서 실수한 적도 있어요.\n기자: 요즘도 한국 드라마나 유튜브를 자주 봐요?\n린: 네, 매일 봐요. 덕분에 듣기 실력이 많이 좋아졌어요. 그런데 악플은 정말 큰 문제라고 생각해요.\n기자: 마지막으로 바라는 점이 있어요?\n린: 외국인도 한국 문화를 더 쉽게 배울 수 있었으면 좋겠어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Phóng viên: Linh đã từng đón ngày lễ ở Hàn chưa?\nLinh: Rồi ạ, Chuseok năm ngoái tôi đã thử làm bánh songpyeon ở nhà bạn. Khó hơn tôi nghĩ.\nPhóng viên: Trong văn hoá Hàn, điều gì khác nhất?\nLinh: Văn hoá tuổi tác ạ. So với Việt Nam, ở Hàn cách nói thay đổi nhiều theo tuổi. Lúc đầu tôi còn từng lỡ nói trống không với đàn anh.\nPhóng viên: Dạo này bạn vẫn hay xem phim Hàn hay YouTube chứ?\nLinh: Vâng, ngày nào cũng xem. Nhờ vậy kỹ năng nghe của tôi tốt lên nhiều. Nhưng tôi nghĩ bình luận ác ý thật sự là vấn đề lớn.\nPhóng viên: Cuối cùng, bạn có mong muốn gì không?\nLinh: Mong là người nước ngoài cũng có thể học văn hoá Hàn dễ dàng hơn."
+          },
+          "type": "example"
+        },
+        {
+          "target": "제 생각에는 어른에게 물건을 드릴 때 두 손으로 드릴 필요가 있어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Theo tôi, khi đưa đồ cho người lớn thì cần đưa bằng hai tay."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "싫어하다 là động từ → 싫어하나 봐요."
+          },
+          "target": "댓글을 보니까 사람들이 그 광고를 싫어하나 봐요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Xem bình luận thì hình như mọi người không thích quảng cáo đó."
+          },
+          "type": "example"
+        },
+        {
+          "target": "한국어를 더 일찍 배울걸 그랬어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Lẽ ra tôi nên học tiếng Hàn sớm hơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Với đàn anh, đàn chị hoặc người lớn tuổi hơn, câu không có đuôi lịch sự là 반말 và bị coi là vô lễ. Chỉ chuyển sang 반말 khi người lớn hơn đề nghị trước."
+          },
+          "right": "선배, 이거 드세요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "선배, 이거 먹어."
+        },
+        {
+          "note": {
+            "vi": "-아/어지다 gắn với tính từ (좋다 → 좋아지다), không gắn với động từ 잘하다. Hãy đổi sang chủ ngữ \"kỹ năng\" + tính từ."
+          },
+          "right": "듣기 실력이 좋아졌어요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "듣기를 잘해졌어요."
+        },
+        {
+          "note": {
+            "vi": "Từ có đuôi 있다/없다 (재미있다, 맛없다) đi với -나 봐요 như động từ, dù nghĩa giống tính từ."
+          },
+          "right": "그 드라마가 재미있나 봐요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "그 드라마가 재미있은가 봐요."
+        },
+        {
+          "points": [
+            {
+              "vi": "Quan điểm - 제 생각에는…, -다고 생각해요, -(으)ㄹ 필요가 있다, N에 찬성/반대하다."
+            },
+            {
+              "vi": "So sánh - N보다 (더), N에 비해, -는/(으)ㄴ 반면에."
+            },
+            {
+              "vi": "Kinh nghiệm & thay đổi - -아/어 본 적이 있다, -(으)ㄴ 적이 없다, A-아/어지다."
+            },
+            {
+              "vi": "Mong ước, đoán, tiếc - -았/었으면 좋겠다, -(으)ㄹ 텐데, -나/-(으)ㄴ가 보다, -(으)ㄹ걸 그랬다."
+            },
+            {
+              "vi": "Văn hoá - 존댓말/반말, 두 손으로, 나이 문화, 설날·추석, 댓글·악플."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "13c92d69ef7c8194cba39db885d810918d725ce8001ca0a59401c1272b1d110b",
+      "estimated_minutes": 25,
+      "id": "5ffef6c6-b787-5cad-9e88-256f10536472",
+      "is_demo": true,
+      "key": "ko:lesson:culture-opinions-review",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "objectives": [
+        {
+          "vi": "Đọc hiểu một bài phỏng vấn (해요체) về trải nghiệm văn hoá Hàn Quốc của du học sinh Việt Nam."
+        },
+        {
+          "vi": "Kết hợp nêu quan điểm, so sánh, kể kinh nghiệm, thay đổi, mong ước, phỏng đoán và tiếc nuối trong cùng một đoạn nói."
+        },
+        {
+          "vi": "Tránh các lỗi quen thuộc - 반말 với người lớn, -아/어지다 với động từ, nhầm -나 보다 / -(으)ㄴ가 보다, chia sai thì -았/었으면 좋겠다."
+        }
+      ],
+      "order_index": 5,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "reading",
+        "grammar",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Ôn tập - Phỏng vấn du học sinh về văn hoá Hàn"
+      },
+      "unit_id": "97620c8c-2f00-5ee8-b89f-7dec8aa9889c"
     },
     {
       "body": [
@@ -174558,6 +187755,168 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn hỏi được \"Bạn đã từng mặc hanbok chưa?\", kể \"Dạo này văn hoá ngày lễ đã thay đổi nhiều\", nói \"Mong là Tết này được về quê\" và đọc hiểu một bài báo ngắn về ngày lễ Hàn Quốc."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Kinh nghiệm \"đã từng\" là V-(으)ㄴ 적이 있다, \"chưa bao giờ\" là V-(으)ㄴ 적이 없다 - 본 적이 있어요. Thêm 보다 (thử) thành V-아/어 본 적이 있다 khi nói đã từng thử làm gì - 입어 본 적, 가 본 적."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Tính từ + -아/어지다 nghĩa là \"trở nên…\" - 춥다 → 추워지다, 많다 → 많아지다, 다르다 → 달라지다. Cấu trúc này gắn với tính từ; với động từ, tiếng Việt cũng nói \"trở nên\" nhưng tiếng Hàn không dùng -아/어지다."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Mong ước là -았/었으면 좋겠다 - 갔으면 좋겠어요 (mong là được đi). Phần -았/었 trông như quá khứ nhưng nói về tương lai; phần cuối luôn là 좋겠어요."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "설날 (Tết âm lịch) và 추석 (rằm tháng 8) là hai 명절 lớn nhất. Sáng ngày lễ, gia đình làm 차례 (cúng tổ tiên); dịp 설날 trẻ em 세배 (lạy chúc Tết) người lớn và nhận 세뱃돈, còn 추석 có bánh 송편. Khác Trung thu ở Việt Nam vốn dành cho trẻ em, 추석 ở Hàn là dịp cả nhà về quê sum họp."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Bài báo dùng văn viết -다 (달라졌다, 했다). Chú ý 달라졌다, 많아졌다 - tính từ + -아/어지다 chỉ sự thay đổi."
+          },
+          "target": "요즘 한국의 명절 풍경이 많이 달라졌다. 예전에는 설날과 추석이 되면 온 가족이 고향에 모여 차례를 지내고, 아이들은 어른들께 세배를 했다. 그러나 최근에는 연휴에 해외여행을 가는 가족이 많아졌고, 차례 음식을 간단하게 준비하는 집도 늘었다. 한복을 입는 사람은 줄었지만, 고궁에서 한복을 입어 보는 외국인 관광객은 오히려 많아졌다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Dạo này cảnh ngày lễ ở Hàn Quốc đã thay đổi nhiều. Trước đây, cứ đến Tết và Chuseok là cả nhà tụ họp ở quê làm lễ cúng tổ tiên, trẻ em lạy chúc Tết người lớn. Nhưng gần đây, số gia đình đi du lịch nước ngoài vào kỳ nghỉ đã tăng lên, nhiều nhà cũng chuẩn bị đồ cúng đơn giản hơn. Người mặc hanbok ít đi, nhưng du khách nước ngoài mặc thử hanbok ở cung điện cổ lại nhiều hơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "입다 + -어 보다 → 입어 보다, rồi + -ㄴ 적이 있다."
+          },
+          "target": "한복을 입어 본 적이 있어요?",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Bạn đã từng mặc thử hanbok chưa?"
+          },
+          "type": "example"
+        },
+        {
+          "target": "저는 아직 차례를 지낸 적이 없어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Tôi chưa từng làm lễ cúng tổ tiên."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "재미있다 là tính từ → 재미있어지다."
+          },
+          "target": "한국어를 배운 후에 한국 드라마가 더 재미있어졌어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Sau khi học tiếng Hàn, tôi thấy phim Hàn thú vị hơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "모였으면 có -었 nhưng nói về Chuseok sắp tới."
+          },
+          "target": "이번 추석에는 가족들이 다 모였으면 좋겠어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Mong là Chuseok năm nay cả nhà đều sum họp."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Tiếng Việt nói \"trở nên giỏi\" nên người học gắn -아/어지다 vào động từ 잘하다. -아/어지다 chỉ đi với tính từ - hãy dùng tính từ 좋다 (실력이 좋아졌어요)."
+          },
+          "right": "한국어 실력이 좋아졌어요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "한국어를 잘해졌어요."
+        },
+        {
+          "note": {
+            "vi": "Thấy -았 ở vế trước, người học chia luôn vế sau ở quá khứ. Mong ước luôn kết thúc bằng 좋겠어요; 좋았어요 nghĩa là \"đã tốt\"."
+          },
+          "right": "내일은 날씨가 좋았으면 좋겠어요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "내일은 날씨가 좋았으면 좋았어요."
+        },
+        {
+          "note": {
+            "vi": "Trước 보다 dùng -아/어 (먹어 보다), chỉ 보다 mới chuyển thành 본. Nếu không có 보다 thì viết 먹은 적이 있어요."
+          },
+          "right": "송편을 먹어 본 적이 있어요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "송편을 먹은 본 적이 있어요."
+        },
+        {
+          "points": [
+            {
+              "vi": "V-(으)ㄴ 적이 있다/없다 - đã từng / chưa bao giờ; V-아/어 본 적 - đã từng thử."
+            },
+            {
+              "vi": "A-아/어지다 - trở nên (추워지다, 많아지다, 달라지다); không gắn vào động từ."
+            },
+            {
+              "vi": "V/A-았/었으면 좋겠어요 - mong là…; vế cuối luôn 좋겠어요."
+            },
+            {
+              "vi": "명절 - 설날 (세배, 세뱃돈), 추석 (송편); 차례를 지내다; 한복을 입다."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "b99a7476a1fe9d3d3687de2ff5a43a2856b53d39825aad3324fabcfa03ed323f",
+      "estimated_minutes": 22,
+      "id": "443cf021-80d6-5615-966e-520623862d0e",
+      "is_demo": true,
+      "key": "ko:lesson:holidays-experience",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "objectives": [
+        {
+          "vi": "Kể kinh nghiệm bằng -아/어 본 적이 있다/없다 và -(으)ㄴ 적이 있다/없다."
+        },
+        {
+          "vi": "Nói sự thay đổi bằng tính từ + -아/어지다, và nói mong ước bằng -았/었으면 좋겠다."
+        },
+        {
+          "vi": "Đọc hiểu một bài báo ngắn về 명절 - 설날, 추석, 차례, 세배, 한복, 송편."
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "reading",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Ngày lễ Hàn Quốc - kinh nghiệm, thay đổi và mong ước"
+      },
+      "unit_id": "97620c8c-2f00-5ee8-b89f-7dec8aa9889c"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Ở ngân hàng, bệnh viện hay ga tàu, nhân viên luôn nói với bạn bằng -(으)세요. Sau bài này, bạn hiểu và tự dùng đuôi kính ngữ này, kể cả những động từ có dạng kính ngữ riêng."
           },
           "type": "objective"
@@ -175989,6 +189348,160 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn nói được \"Chắc mai mưa đấy, mang ô theo nhé\", \"Hình như video đó nổi lắm\", \"Lẽ ra tôi nên đặt vé trước\" và đọc hiểu bình luận trên diễn đàn về phim Hàn."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "V/A-(으)ㄹ 텐데 là \"chắc là…\" làm nền cho vế sau - thường là lời khuyên hoặc lo lắng - 비가 올 텐데 우산을 가져가세요. Trước 텐데 luôn là dạng -(으)ㄹ (올, 바쁠, 피곤할), không phải -는 hay -(으)ㄴ."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "-나 보다 / -(으)ㄴ가 보다 là \"hình như…\" khi bạn đoán dựa trên điều vừa thấy, nghe. Theo chuẩn sách giáo khoa: động từ và 있다/없다 + -나 봐요 (보나 봐요, 재미있나 봐요); tính từ + -(으)ㄴ가 봐요 (바쁜가 봐요, 많은가 봐요); quá khứ + -았/었나 봐요."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "V-(으)ㄹ걸 그랬다 là \"lẽ ra nên…\" khi tiếc vì đã không làm - 미리 예매할걸 그랬어요. Tiếc vì đã lỡ làm thì dùng -지 말걸 그랬다 (쓰지 말걸 그랬어요)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Ở Hàn, 댓글 (bình luận) ảnh hưởng rất mạnh đến người nổi tiếng, và 악플 (bình luận ác ý) là vấn đề xã hội được bàn nhiều; một số cổng thông tin đã tắt bình luận ở mục giải trí. Trên YouTube, người ta hay nói 구독 (đăng ký kênh), 좋아요 (thích) và 조회수 (lượt xem). Khi đọc diễn đàn, bạn sẽ gặp cả 해요체 lẫn 반말 - nhưng khi tự viết cho người lạ, hãy dùng 해요체."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Chú ý 될 텐데 (chắc sẽ thành), 보시나 봐요 (hình như xem - có -시- kính trọng), 볼걸 그랬어요 (lẽ ra nên xem)."
+          },
+          "target": "[게시글] 외국인이 한국 드라마로 한국어를 공부하는 것, 어떻게 생각하세요?\n└ 하노이 린: 저는 찬성해요. 드라마를 보면 실제 대화를 들을 수 있어요.\n└ 서울 직장인: 좋은 방법이지만 드라마에는 반말이 많아요. 처음 만난 사람에게 반말을 하면 실례가 될 텐데 조심할 필요가 있다고 생각해요.\n└ 민트초코: 댓글이 많네요. 다들 드라마를 많이 보시나 봐요. 저도 학생 때 자막 없이 볼걸 그랬어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "[Bài đăng] Người nước ngoài học tiếng Hàn qua phim Hàn, bạn nghĩ sao?\n└ Hà Nội Linh: Tôi tán thành. Xem phim thì nghe được hội thoại thực tế.\n└ Nhân viên văn phòng Seoul: Cách hay, nhưng trong phim có nhiều câu nói trống không. Nói trống không với người mới gặp chắc sẽ thành bất lịch sự, nên tôi nghĩ cần phải cẩn thận.\n└ Mintchoco: Nhiều bình luận ghê. Hình như ai cũng xem phim nhiều. Hồi còn đi học, lẽ ra tôi cũng nên xem không phụ đề."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "많다 → 많을 텐데; vế sau là lời khuyên."
+          },
+          "target": "주말이라서 사람이 많을 텐데 일찍 출발하세요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Cuối tuần chắc đông người lắm, bạn xuất phát sớm nhé."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "많다 là tính từ → 많은가 봐요; dấu hiệu là lượt xem cao."
+          },
+          "target": "조회수가 백만이 넘었네요. 이 유튜버가 정말 인기가 많은가 봐요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Lượt xem vượt một triệu rồi kìa. Hình như YouTuber này nổi thật."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Tiếc vì đã làm → -지 말걸 그랬어요."
+          },
+          "target": "악플을 보고 너무 속상했어요. 댓글을 읽지 말걸 그랬어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Đọc bình luận ác ý xong tôi buồn quá. Lẽ ra tôi không nên đọc bình luận."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Tiếng Việt chỉ có một chữ \"hình như\" nên người học dùng -나 봐요 cho mọi từ. Theo chuẩn, tính từ như 바쁘다 dùng -(으)ㄴ가 봐요; -나 봐요 dành cho động từ và 있다/없다."
+          },
+          "right": "민수 씨가 요즘 바쁜가 봐요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "민수 씨가 요즘 바쁘나 봐요."
+        },
+        {
+          "note": {
+            "vi": "Việc đã qua nhưng động từ trước -(으)ㄹ걸 vẫn giữ dạng gốc (예매할걸); chỉ 그랬어요 mang quá khứ."
+          },
+          "right": "미리 예매할걸 그랬어요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "미리 예매했을걸 그랬어요."
+        },
+        {
+          "note": {
+            "vi": "텐데 đi với dạng -(으)ㄹ, vì đây là phỏng đoán. 오는 텐데, 온 텐데 đều sai."
+          },
+          "right": "비가 올 텐데 우산을 가져가세요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "비가 오는 텐데 우산을 가져가세요."
+        },
+        {
+          "points": [
+            {
+              "vi": "V/A-(으)ㄹ 텐데 + lời khuyên/lo lắng - chắc là… nên…"
+            },
+            {
+              "vi": "V + -나 봐요 · A + -(으)ㄴ가 봐요 · quá khứ -았/었나 봐요 - hình như…"
+            },
+            {
+              "vi": "V-(으)ㄹ걸 그랬어요 - lẽ ra nên…; V-지 말걸 그랬어요 - lẽ ra không nên…"
+            },
+            {
+              "vi": "드라마 · 유튜브 · 댓글/악플 · 광고 · 구독하다 · 인기가 많다 · 조회수."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "0cf3f5bb2b9cbce534f8db0e2cc912187cc8d3092983fd99ec3b76269c72ec56",
+      "estimated_minutes": 22,
+      "id": "6b3d7fdc-ecc4-5a70-8fb0-7abd468d4bfe",
+      "is_demo": true,
+      "key": "ko:lesson:media-guessing",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "objectives": [
+        {
+          "vi": "Phỏng đoán kèm lời khuyên bằng -(으)ㄹ 텐데, và đoán dựa trên dấu hiệu bằng -나 보다 / -(으)ㄴ가 보다."
+        },
+        {
+          "vi": "Nói điều tiếc vì đã không làm bằng -(으)ㄹ걸 그랬다."
+        },
+        {
+          "vi": "Dùng từ vựng truyền thông - 드라마, 유튜브, 댓글, 악플, 광고, 구독하다, 인기, 조회수 - và đọc hiểu một chuỗi bình luận trên diễn đàn."
+        }
+      ],
+      "order_index": 4,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "reading",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Truyền thông và mạng xã hội - phỏng đoán, tiếc nuối"
+      },
+      "unit_id": "97620c8c-2f00-5ee8-b89f-7dec8aa9889c"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Sau bài này, bạn tả được \"quán cà phê tôi hay đi\", \"bộ phim tôi xem hôm qua\", đoán \"hình như trời đang mưa\", và mở lời lịch sự kiểu \"tôi muốn hỏi đường một chút ạ…\"."
           },
           "type": "objective"
@@ -177072,6 +190585,163 @@ select content_private.import_bundle($bundle${
         "vi": "Nêu quan điểm, tiêu đề - thông báo và mô tả số liệu"
       },
       "unit_id": "f538e3aa-e738-5501-87f9-a31dcec31efc"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn nói được \"Theo tôi, với người lớn cần dùng kính ngữ\", \"Tôi phản đối ý kiến đó\" và giải thích vì sao người Hàn hỏi tuổi khi mới gặp."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Muốn nêu ý kiến một cách nhẹ nhàng, bạn mở đầu bằng 제 생각에는 (theo tôi) hoặc kết thúc câu bằng -다고 생각해요 (tôi nghĩ rằng…). Phần đứng trước -다고 là câu ở dạng gốc \"-다\", không phải đuôi 해요."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Cách chia trước -다고: động từ có patchim + 는다고 (먹는다고), không patchim + ㄴ다고 (본다고); tính từ và 있다/없다 + 다고 (중요하다고, 재미있다고); danh từ + (이)라고 (문제라고). Quá khứ dùng -았/었다고 cho cả động từ lẫn tính từ."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "V-(으)ㄹ 필요가 있다 là \"cần phải…\", 필요가 없다 là \"không cần…\" - 쓸 필요가 없어요. Tán thành, phản đối một ý kiến dùng N에 찬성하다 / N에 반대하다."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Ở Hàn, tuổi và quan hệ quyết định cách nói. Với người lớn tuổi, cấp trên hay người mới gặp, bạn luôn dùng 존댓말; 반말 chỉ dùng với bạn thân hoặc người nhỏ tuổi hơn khi đã thân. Vì vậy người Hàn hay hỏi tuổi lúc mới quen (나이 문화) - không phải tò mò, mà để biết nên nói thế nào; khi đưa hay nhận đồ với người lớn, họ dùng hai tay (두 손으로)."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "배우다 không có patchim → 배울 필요가 있어요."
+          },
+          "target": "제 생각에는 외국인도 존댓말을 배울 필요가 있어요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Theo tôi, người nước ngoài cũng cần học kính ngữ."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "불편하다 là tính từ nên chỉ thêm -다고, không thêm ㄴ."
+          },
+          "target": "저는 한국의 나이 문화가 조금 불편하다고 생각해요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Tôi thấy văn hoá tuổi tác của Hàn Quốc hơi bất tiện."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "쓰다 là động từ không có patchim → 쓴다고. Hỏi ý kiến người khác chỉ cần đổi -다고 생각해요 thành câu hỏi."
+          },
+          "target": "요즘 젊은 사람들은 회사에서도 반말을 많이 쓴다고 생각해요?",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Bạn có nghĩ dạo này người trẻ dùng lối nói trống không nhiều cả ở công ty không?"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "의견에 반대해요 - trợ từ 에 đi với 찬성하다/반대하다."
+          },
+          "target": "저는 그 의견에 반대해요. 어른에게는 두 손으로 드리는 게 예절이에요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Tôi phản đối ý kiến đó. Đưa đồ cho người lớn bằng hai tay mới là phép lịch sự."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Người học hay thêm ㄴ cho mọi từ có 하다. Chỉ động từ mới có -ㄴ/는다고 (공부한다고); tính từ như 중요하다, 편하다 chỉ thêm -다고."
+          },
+          "right": "이 문제는 중요하다고 생각해요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "이 문제는 중요한다고 생각해요."
+        },
+        {
+          "note": {
+            "vi": "Tiếng Việt chỉ cần thêm \"ạ\", nên người học hay quên đuôi lịch sự khi nói nhanh. Với người lớn, câu thiếu 요 hoặc -(으)세요 là 반말 và bị coi là vô lễ."
+          },
+          "right": "할머니, 어디 가세요?",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "할머니, 어디 가?"
+        },
+        {
+          "note": {
+            "vi": "Trước 필요 luôn là dạng -(으)ㄹ (쓸, 먹을), dù tiếng Việt \"cần dùng\" không có dấu hiệu thời gian."
+          },
+          "right": "존댓말을 쓸 필요가 있어요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "존댓말을 쓰는 필요가 있어요."
+        },
+        {
+          "points": [
+            {
+              "vi": "제 생각에는… / …-다고 생각해요 - nêu ý kiến nhẹ nhàng."
+            },
+            {
+              "vi": "V-ㄴ/는다고 · A-다고 · N-(이)라고 · quá khứ -았/었다고 + 생각해요."
+            },
+            {
+              "vi": "V-(으)ㄹ 필요가 있어요 / 없어요 - cần / không cần."
+            },
+            {
+              "vi": "N에 찬성해요 / 반대해요; 의견 - ý kiến."
+            },
+            {
+              "vi": "어른에게는 존댓말, bạn thân thì 반말; đưa đồ 두 손으로."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "f42a357dac2fb257479c3d1789c8617843adf90277a3836c9a672a964cb7057b",
+      "estimated_minutes": 20,
+      "id": "e1ceaf62-0523-5d62-839a-1d82cba83074",
+      "is_demo": true,
+      "key": "ko:lesson:opinions-etiquette",
+      "language_code": "ko",
+      "level_code": "topik4",
+      "objectives": [
+        {
+          "vi": "Nêu ý kiến bằng 제 생각에는… và -다고 생각해요, chia đúng theo động từ, tính từ, danh từ."
+        },
+        {
+          "vi": "Nói điều cần hoặc không cần làm bằng -(으)ㄹ 필요가 있다/없다; nói tán thành, phản đối bằng N에 찬성하다/반대하다."
+        },
+        {
+          "vi": "Hiểu phép lịch sự cơ bản ở Hàn - 존댓말 và 반말, đưa đồ bằng hai tay, văn hoá tuổi tác."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "speaking",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Nêu quan điểm về phép lịch sự Hàn Quốc"
+      },
+      "unit_id": "97620c8c-2f00-5ee8-b89f-7dec8aa9889c"
     },
     {
       "body": [
@@ -180778,6 +194448,36 @@ select content_private.import_bundle($bundle${
       "status": "published",
       "title": {
         "vi": "Công việc & học tập"
+      }
+    },
+    {
+      "content_hash": "6f7eb4c409feb0bc2431a4513381dceffd03c5108007c419bf5b165b37b6d158",
+      "id": "687536fe-144c-5cdb-82a7-b7e702447d14",
+      "is_demo": true,
+      "key": "ko:unit:academic-culture",
+      "order_index": 2,
+      "program_id": "4e646825-94e9-5d46-a93a-ddcef226a703",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Học thuật, văn hoá & lập luận"
+      }
+    },
+    {
+      "content_hash": "e6dfe599c705be5b7feef85c4ffbd63edcbbebb01a1775ae661e1660944def62",
+      "id": "97620c8c-2f00-5ee8-b89f-7dec8aa9889c",
+      "is_demo": true,
+      "key": "ko:unit:culture-opinions",
+      "order_index": 3,
+      "program_id": "1eefc732-9a9f-5b37-847c-3799985aafca",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Văn hoá, truyền thông & quan điểm"
       }
     },
     {

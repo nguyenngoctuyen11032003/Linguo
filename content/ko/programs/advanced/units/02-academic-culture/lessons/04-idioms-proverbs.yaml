@@ -1,0 +1,398 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:academic-idioms-proverbs
+order_index: 4
+level: topik6
+title:
+  vi: Thành ngữ bốn chữ và tục ngữ thường gặp trong TOPIK
+objectives:
+  - vi: Hiểu và dùng các 사자성어 hay gặp - 일석이조, 작심삼일, 금상첨화.
+  - vi: Hiểu và dùng các 속담 - 우물 안 개구리, 티끌 모아 태산, 공든 탑이 무너지랴, 소 잃고 외양간 고친다.
+  - vi: Trích thành ngữ đúng cách trong bài viết và tránh dịch từng chữ từ tục ngữ tiếng Việt.
+estimated_minutes: 20
+skills: [vocabulary, reading, writing]
+prerequisites: [ko:lesson:academic-culture-stance]
+items:
+  - item: ko:item:ac-sajaseongeo
+  - item: ko:item:ac-sokdam
+  - item: ko:item:ac-ilseogijo
+  - item: ko:item:ac-umul-an-gaeguri
+  - item: ko:item:ac-tikkeul-moa-taesan
+  - item: ko:item:ac-gongdeun-tap
+  - item: ko:item:ac-jaksimsamil
+  - item: ko:item:ac-geumsangcheomhwa
+  - item: ko:item:ac-so-ilko-oeyanggan
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nhận ra và dùng đúng chỗ những thành ngữ, tục ngữ hay xuất hiện trong bài đọc và câu hỏi từ vựng TOPIK II. Câu ví dụ dùng văn viết -ㄴ다.
+  - type: explain
+    text:
+      vi: 사자성어 là thành ngữ bốn chữ Hán, nên người Việt thường đoán được nghĩa qua âm Hán Việt - 일석이조 (nhất thạch nhị điểu) là "một công đôi việc". Chúng thường đứng trước 이다 hoặc trong 작심삼일로 끝나다.
+  - type: explain
+    text:
+      vi: 속담 là tục ngữ thuần Hàn, có câu trùng ý tiếng Việt nhưng hình ảnh khác. Hãy học nguyên câu Hàn và câu Việt tương đương, đừng dịch từng chữ - "góp gió thành bão" là 티끌 모아 태산 chứ không phải "gió, bão".
+  - type: explain
+    text:
+      vi: Trong bài viết, trích tục ngữ bằng N(이)라는 말이 있듯이 ("như câu nói...") hoặc N(이)라고, rồi giải thích. Để so sánh tình huống với tục ngữ, dùng -는 격이다 - 소 잃고 외양간 고치는 격이다.
+  - type: deep_explain
+    text:
+      vi: 공든 탑이 무너지랴 dùng đuôi cổ -(으)랴 - câu hỏi tu từ "lẽ nào lại...", nên nghĩa thật là "không đổ". Nhiều câu tục ngữ khác cũng dùng đuôi cổ, nên đừng chia lại theo 해요체 khi trích. 금상첨화 (đã tốt lại thêm tốt) ngược nghĩa với 설상가상 (hoạ vô đơn chí), cặp này hay bị hỏi trong đề.
+  - type: example
+    target: 자전거로 출퇴근하면 운동도 되고 교통비도 아끼니 일석이조이다.
+    target_lang: ko
+    translation:
+      vi: Đi làm bằng xe đạp vừa tập thể dục vừa tiết kiệm tiền đi lại, đúng là một công đôi việc.
+    note:
+      vi: Hai lợi ích (운동, 교통비) từ một việc - đúng ngữ cảnh của 일석이조.
+  - type: example
+    target: 티끌 모아 태산이라는 말이 있듯이 작은 습관이 모여 큰 변화를 만든다.
+    target_lang: ko
+    translation:
+      vi: Như câu "góp gió thành bão", những thói quen nhỏ gom lại sẽ tạo nên thay đổi lớn.
+    note:
+      vi: Cách trích tục ngữ chuẩn trong bài luận - 이라는 말이 있듯이.
+  - type: example
+    target: 사고가 난 뒤에야 안전 점검을 하는 것은 소 잃고 외양간 고치는 격이다.
+    target_lang: ko
+    translation:
+      vi: Đợi xảy ra tai nạn rồi mới kiểm tra an toàn thì đúng là mất bò mới lo làm chuồng.
+    note:
+      vi: 고친다 đổi thành định ngữ 고치는 trước 격이다.
+  - type: example
+    target: 공든 탑이 무너지랴. 그동안 열심히 준비했으니 좋은 결과가 있을 것이다.
+    target_lang: ko
+    translation:
+      vi: Có công ắt có quả. Bấy lâu nay đã chuẩn bị chăm chỉ thì sẽ có kết quả tốt.
+    note:
+      vi: Dùng để động viên người đã nỗ lực hết lòng.
+  - type: common_mistake
+    wrong: 바람 모아 폭풍
+    right: 티끌 모아 태산
+    target_lang: ko
+    note:
+      vi: Dịch từng chữ "góp gió thành bão" sang tiếng Hàn sẽ không ai hiểu. Câu tương đương của người Hàn là 티끌 모아 태산 (gom bụi thành núi).
+  - type: common_mistake
+    wrong: 우물 바닥에 앉은 개구리
+    right: 우물 안 개구리
+    target_lang: ko
+    note:
+      vi: Câu "ếch ngồi đáy giếng" đã có bản Hàn cố định - 우물 안 개구리. Tục ngữ phải dùng đúng nguyên dạng, không tự diễn đạt lại.
+  - type: common_mistake
+    wrong: 시험에도 떨어지고 지갑까지 잃어버렸으니 금상첨화이다.
+    right: 시험에도 떨어지고 지갑까지 잃어버렸으니 설상가상이다.
+    target_lang: ko
+    note:
+      vi: 금상첨화 chỉ dùng cho điều tốt chồng thêm điều tốt. Xui xẻo chồng xui xẻo là 설상가상 (hoạ vô đơn chí).
+  - type: summary
+    points:
+      - vi: 일석이조 một công đôi việc · 작심삼일 cả thèm chóng chán · 금상첨화 đã tốt lại càng tốt (≠ 설상가상).
+      - vi: 우물 안 개구리 ếch ngồi đáy giếng · 티끌 모아 태산 góp gió thành bão.
+      - vi: 공든 탑이 무너지랴 có công ắt có quả · 소 잃고 외양간 고친다 mất bò mới lo làm chuồng.
+      - vi: Trích dẫn - N(이)라는 말이 있듯이 · so sánh - -는 격이다. Không dịch từng chữ tục ngữ Việt.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:ac-idiom-mcq-ilseogijo
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:ac-ilseogijo
+    prompt:
+      stem: "일석이조 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: u5n, text: Một công đôi việc, lang: vi }
+        - { id: i2c, text: Ba ngày quyết tâm, lang: vi }
+        - { id: o8z, text: Đã tốt lại càng tốt, lang: vi }
+        - { id: a4g, text: Hoạ vô đơn chí, lang: vi }
+    answer:
+      correct_option_id: u5n
+    explanation:
+      vi: 일석이조 = 一石二鳥, một hòn đá trúng hai con chim - "một công đôi việc". "Ba ngày quyết tâm" là 작심삼일, "đã tốt lại càng tốt" là 금상첨화, "hoạ vô đơn chí" là 설상가상.
+    display_answer: Một công đôi việc
+
+  - key: ko:exercise:ac-idiom-mcq-umul
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-umul-an-gaeguri
+    prompt:
+      stem: "Câu tục ngữ tiếng Hàn tương đương \"ếch ngồi đáy giếng\" là câu nào?"
+      stem_lang: vi
+      options:
+        - { id: l7m, text: 우물 안 개구리, lang: ko }
+        - { id: e3s, text: 우물 바닥에 앉은 개구리, lang: ko }
+        - { id: x9t, text: 개구리 올챙이 적 생각 못 한다, lang: ko }
+        - { id: p1v, text: 소 잃고 외양간 고친다, lang: ko }
+    answer:
+      correct_option_id: l7m
+    explanation:
+      vi: Câu cố định là 우물 안 개구리 (ếch trong giếng). 우물 바닥에 앉은 개구리 là dịch từng chữ; 개구리 올챙이 적 생각 못 한다 là tục ngữ khác - "quên mình từng là nòng nọc", chỉ người quên quá khứ khó khăn.
+    display_answer: 우물 안 개구리
+
+  - key: ko:exercise:ac-idiom-listen-tikkeul
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ac-tikkeul-moa-taesan
+    prompt:
+      audio_asset_id: null
+      fallback_text: 티끌 모아 태산이라고, 매일 조금씩 저축하면 큰돈이 된다.
+      options:
+        - { id: g6r, text: "Góp gió thành bão, mỗi ngày tiết kiệm một ít thì sẽ thành khoản tiền lớn.", lang: vi }
+        - { id: k1w, text: "Mỗi ngày tiết kiệm một ít cũng chẳng thành tiền lớn được.", lang: vi }
+        - { id: n8y, text: "Muốn có tiền lớn thì phải tiêu ít đi mỗi ngày.", lang: vi }
+        - { id: c3e, text: "Phải trèo lên núi mới thấy tiền tiết kiệm có giá trị.", lang: vi }
+    answer:
+      correct_option_id: g6r
+    explanation:
+      vi: 티끌 모아 태산 = gom bụi thành núi - tích nhỏ thành lớn. 저축하면 큰돈이 된다 = tiết kiệm thì thành tiền lớn, nên phương án bi quan hay hiểu chữ "núi" theo nghĩa đen đều sai.
+    display_answer: "Góp gió thành bão, mỗi ngày tiết kiệm một ít thì sẽ thành khoản tiền lớn."
+
+  - key: ko:exercise:ac-idiom-fill-jaksim
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-jaksimsamil
+    prompt:
+      template: "새해에 운동을 시작했지만 {{b1}}로 끝났다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - Quyết tâm chỉ kéo dài ba ngày.
+        - 作心三日 - 작심...
+    answer:
+      blanks:
+        b1: [작심삼일]
+    known_wrong:
+      - answer: 일석이조
+        feedback_vi: 일석이조 là "một công đôi việc". Bỏ cuộc sau vài ngày là 작심삼일.
+        error_tag: idiom_meaning
+      - answer: 작심사일
+        feedback_vi: Thành ngữ là 작심삼일 - "ba ngày" (삼일).
+        error_tag: spelling
+    explanation:
+      vi: 작심삼일 (作心三日) - quyết tâm chỉ được ba ngày; cụm hay dùng là 작심삼일로 끝나다.
+    display_answer: 새해에 운동을 시작했지만 작심삼일로 끝났다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:ac-idiom-fill-ilko
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-so-ilko-oeyanggan
+    prompt:
+      template: "Mất bò mới lo làm chuồng. - 소 {{b1}} 외양간 고친다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [잃고]
+    known_wrong:
+      - answer: 잊고
+        feedback_vi: 잊다 là "quên", 잃다 là "mất". Bò bị mất nên là 잃고.
+        error_tag: ilda_itda
+      - answer: 일코
+        feedback_vi: 일코 chỉ là cách đọc. Chữ viết đúng là 잃고 (patchim ㅀ).
+        error_tag: spelling_pronunciation
+      - answer: 잃어서
+        feedback_vi: Tục ngữ có dạng cố định - 소 잃고 외양간 고친다.
+        error_tag: fixed_expression
+    explanation:
+      vi: 잃다 = mất (đồ vật, con vật); 잃고 đọc là [일코] nhưng viết với patchim ㅀ. Đừng nhầm với 잊다 (quên).
+    display_answer: 소 잃고 외양간 고친다.
+
+  - key: ko:exercise:ac-idiom-fill-geumsang
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-geumsangcheomhwa
+    prompt:
+      template: "Phong cảnh đã đẹp, thời tiết lại còn đẹp - đúng là đã tốt lại càng tốt. - 경치도 좋은데 날씨까지 좋으니 {{b1}}이다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [금상첨화]
+    known_wrong:
+      - answer: 설상가상
+        feedback_vi: 설상가상 là xui chồng xui. Tốt chồng tốt là 금상첨화.
+        error_tag: idiom_meaning
+      - answer: 일석이조
+        feedback_vi: 일석이조 là một việc mang lại hai lợi ích. Ở đây là hai điều tốt cùng đến - 금상첨화.
+        error_tag: idiom_meaning
+    explanation:
+      vi: 금상첨화 (錦上添花 - gấm thêm hoa) dùng khi điều tốt được thêm điều tốt. Cảnh đẹp + thời tiết đẹp = 금상첨화.
+    display_answer: 경치도 좋은데 날씨까지 좋으니 금상첨화이다.
+
+  - key: ko:exercise:ac-idiom-translate-ilseogijo
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-ilseogijo
+    prompt:
+      source_text: Đúng là một công đôi việc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 정말 일석이조이다.
+        - 정말 일석이조다.
+        - 정말 일석이조예요.
+        - 정말 일석이조입니다.
+        - 그야말로 일석이조이다.
+        - 그야말로 일석이조예요.
+        - 일석이조이다.
+        - 일석이조예요.
+    known_wrong:
+      - answer: 정말 일석이조이에요.
+        feedback_vi: 조 không có patchim nên dùng 예요 - 일석이조예요.
+        error_tag: ieyo_yeyo
+      - answer: 정말 일석삼일이다.
+        feedback_vi: Thành ngữ đúng là 일석이조 (một hòn đá, hai con chim).
+        error_tag: idiom_form
+      - answer: 정말 한 일 두 일이다.
+        feedback_vi: Không dịch từng chữ "một công đôi việc". Tiếng Hàn dùng 일석이조.
+        error_tag: literal_translation
+    explanation:
+      vi: "\"Một công đôi việc\" = 일석이조. \"Đúng là\" có thể là 정말 hoặc 그야말로, hoặc bỏ đi. 조 không có patchim nên đi với 예요."
+    display_answer: 정말 일석이조예요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:ac-idiom-mcq-gongdeun
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gongdeun-tap
+    prompt:
+      stem: "Bạn của bạn đã ôn thi TOPIK rất chăm chỉ suốt một năm nhưng vẫn lo lắng. Câu tục ngữ nào hợp để động viên?"
+      stem_lang: vi
+      options:
+        - { id: y2h, text: 공든 탑이 무너지랴, lang: ko }
+        - { id: b6q, text: 소 잃고 외양간 고친다, lang: ko }
+        - { id: m3d, text: 우물 안 개구리, lang: ko }
+        - { id: f9x, text: 작심삼일, lang: ko }
+    answer:
+      correct_option_id: y2h
+    explanation:
+      vi: 공든 탑이 무너지랴 - đã dồn tâm sức thì không uổng, rất hợp để động viên. Ba câu còn lại đều mang ý chê - muộn màng, hiểu biết hạn hẹp, thiếu kiên trì.
+    display_answer: 공든 탑이 무너지랴
+
+  - key: ko:exercise:ac-idiom-mcq-gyeok
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-so-ilko-oeyanggan
+    prompt:
+      stem: "Chọn cụm hợp nhất cho bài luận: \"사고가 난 뒤에야 안전 점검을 하는 것은 ___ 격이다.\""
+      stem_lang: vi
+      options:
+        - { id: h4p, text: 소 잃고 외양간 고치는, lang: ko }
+        - { id: w7k, text: 티끌 모아 태산인, lang: ko }
+        - { id: s1j, text: 금상첨화인, lang: ko }
+        - { id: d5n, text: 일석이조인, lang: ko }
+    answer:
+      correct_option_id: h4p
+    explanation:
+      vi: Đợi có tai nạn mới kiểm tra = sửa chữa khi đã muộn - 소 잃고 외양간 고치는 격이다. Các thành ngữ khác mang nghĩa tích cực, không hợp ngữ cảnh phê phán.
+    display_answer: 소 잃고 외양간 고치는
+
+  - key: ko:exercise:ac-idiom-translate-umul
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:ac-umul-an-gaeguri
+    prompt:
+      source_text: 해외 경험이 없으면 우물 안 개구리가 되기 쉽다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không có trải nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.
+        - Không có kinh nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.
+        - Nếu không có trải nghiệm ở nước ngoài thì dễ trở thành ếch ngồi đáy giếng.
+        - Nếu không có kinh nghiệm ở nước ngoài thì dễ trở thành ếch ngồi đáy giếng.
+        - Không có trải nghiệm nước ngoài thì dễ thành ếch ngồi đáy giếng.
+        - Thiếu trải nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.
+        - Nếu không có trải nghiệm ở nước ngoài, ta dễ trở thành ếch ngồi đáy giếng.
+        - Không có kinh nghiệm nước ngoài thì dễ trở thành ếch ngồi đáy giếng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Không có trải nghiệm ở nước ngoài thì dễ thành con ếch trong giếng.
+        feedback_vi: Đây là tục ngữ - hãy dùng câu tương đương "ếch ngồi đáy giếng", không dịch từng chữ.
+        error_tag: literal_proverb
+      - answer: Có trải nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.
+        feedback_vi: 없으면 là "nếu không có" - bạn đã bỏ mất phủ định.
+        error_tag: negation_missing
+    explanation:
+      vi: 해외 경험 = trải nghiệm (kinh nghiệm) ở nước ngoài; 없으면 = nếu không có; 우물 안 개구리 = ếch ngồi đáy giếng; -기 쉽다 = dễ.
+    display_answer: Không có trải nghiệm ở nước ngoài thì dễ thành ếch ngồi đáy giếng.
+
+  - key: ko:exercise:ac-idiom-translate-tikkeul
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-tikkeul-moa-taesan
+    prompt:
+      source_text: Góp gió thành bão.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 티끌 모아 태산
+        - 티끌 모아 태산이다.
+        - 티끌 모아 태산이에요.
+        - 티끌 모아 태산입니다.
+        - 티끌 모아 태산이라고 해요.
+    known_wrong:
+      - answer: 바람 모아 폭풍
+        feedback_vi: Không dịch từng chữ tục ngữ Việt. Câu tương đương tiếng Hàn là 티끌 모아 태산.
+        error_tag: literal_proverb
+      - answer: 티끌 모아 태산예요.
+        feedback_vi: 태산 có patchim ㄴ nên dùng 이에요 - 태산이에요.
+        error_tag: ieyo_yeyo
+      - answer: tikkeul moa taesan
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Tục ngữ Hàn tương đương là 티끌 모아 태산 - gom bụi thành núi. Có thể để nguyên câu hoặc thêm 이다/이에요 vì 태산 có patchim.
+    display_answer: 티끌 모아 태산
+
+  - key: ko:exercise:ac-idiom-order-jaksim
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-jaksimsamil
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cần lập kế hoạch để không bị cả thèm chóng chán.\""
+      tokens:
+        - { id: t-se, text: 세워야 }
+        - { id: t-an, text: 않도록 }
+        - { id: t-il, text: 일석이조로 }
+        - { id: t-han, text: 한다 }
+        - { id: t-jak, text: 작심삼일로 }
+        - { id: t-gye, text: 계획을 }
+        - { id: t-kkeut, text: 끝나지 }
+    answer:
+      orders:
+        - [t-jak, t-kkeut, t-an, t-gye, t-se, t-han]
+    explanation:
+      vi: -지 않도록 = "để không"; mệnh đề mục đích 작심삼일로 끝나지 않도록 đứng trước 계획을 세워야 한다. 일석이조로 là token nhiễu - sai nghĩa.
+    display_answer: 작심삼일로 끝나지 않도록 계획을 세워야 한다.

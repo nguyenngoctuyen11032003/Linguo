@@ -1,0 +1,437 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:holidays-experience
+order_index: 3
+level: topik4
+title:
+  vi: Ngày lễ Hàn Quốc - kinh nghiệm, thay đổi và mong ước
+objectives:
+  - vi: Kể kinh nghiệm bằng -아/어 본 적이 있다/없다 và -(으)ㄴ 적이 있다/없다.
+  - vi: Nói sự thay đổi bằng tính từ + -아/어지다, và nói mong ước bằng -았/었으면 좋겠다.
+  - vi: Đọc hiểu một bài báo ngắn về 명절 - 설날, 추석, 차례, 세배, 한복, 송편.
+estimated_minutes: 22
+skills: [grammar, reading, vocabulary]
+prerequisites: [ko:lesson:comparing-cultures]
+items:
+  - item: ko:item:gram-a-bon-jeogi-itda
+  - item: ko:item:gram-eun-jeogi-eopda
+  - item: ko:item:gram-a-jida
+  - item: ko:item:gram-asseumyeon-joketda
+  - item: ko:item:myeongjeol
+  - item: ko:item:seollal
+  - item: ko:item:chuseok
+  - item: ko:item:charye
+  - item: ko:item:sebae
+  - item: ko:item:hanbok
+  - item: ko:item:songpyeon
+  - item: ko:item:dareuda
+    role: reuse
+  - item: ko:item:munhwa
+    role: reuse
+  - item: ko:item:jeontong
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được "Bạn đã từng mặc hanbok chưa?", kể "Dạo này văn hoá ngày lễ đã thay đổi nhiều", nói "Mong là Tết này được về quê" và đọc hiểu một bài báo ngắn về ngày lễ Hàn Quốc.
+  - type: explain
+    text:
+      vi: "Kinh nghiệm \"đã từng\" là V-(으)ㄴ 적이 있다, \"chưa bao giờ\" là V-(으)ㄴ 적이 없다 - 본 적이 있어요. Thêm 보다 (thử) thành V-아/어 본 적이 있다 khi nói đã từng thử làm gì - 입어 본 적, 가 본 적."
+  - type: explain
+    text:
+      vi: Tính từ + -아/어지다 nghĩa là "trở nên…" - 춥다 → 추워지다, 많다 → 많아지다, 다르다 → 달라지다. Cấu trúc này gắn với tính từ; với động từ, tiếng Việt cũng nói "trở nên" nhưng tiếng Hàn không dùng -아/어지다.
+  - type: explain
+    text:
+      vi: Mong ước là -았/었으면 좋겠다 - 갔으면 좋겠어요 (mong là được đi). Phần -았/었 trông như quá khứ nhưng nói về tương lai; phần cuối luôn là 좋겠어요.
+  - type: deep_explain
+    text:
+      vi: 설날 (Tết âm lịch) và 추석 (rằm tháng 8) là hai 명절 lớn nhất. Sáng ngày lễ, gia đình làm 차례 (cúng tổ tiên); dịp 설날 trẻ em 세배 (lạy chúc Tết) người lớn và nhận 세뱃돈, còn 추석 có bánh 송편. Khác Trung thu ở Việt Nam vốn dành cho trẻ em, 추석 ở Hàn là dịp cả nhà về quê sum họp.
+  - type: example
+    target: "요즘 한국의 명절 풍경이 많이 달라졌다. 예전에는 설날과 추석이 되면 온 가족이 고향에 모여 차례를 지내고, 아이들은 어른들께 세배를 했다. 그러나 최근에는 연휴에 해외여행을 가는 가족이 많아졌고, 차례 음식을 간단하게 준비하는 집도 늘었다. 한복을 입는 사람은 줄었지만, 고궁에서 한복을 입어 보는 외국인 관광객은 오히려 많아졌다."
+    target_lang: ko
+    translation:
+      vi: "Dạo này cảnh ngày lễ ở Hàn Quốc đã thay đổi nhiều. Trước đây, cứ đến Tết và Chuseok là cả nhà tụ họp ở quê làm lễ cúng tổ tiên, trẻ em lạy chúc Tết người lớn. Nhưng gần đây, số gia đình đi du lịch nước ngoài vào kỳ nghỉ đã tăng lên, nhiều nhà cũng chuẩn bị đồ cúng đơn giản hơn. Người mặc hanbok ít đi, nhưng du khách nước ngoài mặc thử hanbok ở cung điện cổ lại nhiều hơn."
+    note:
+      vi: Bài báo dùng văn viết -다 (달라졌다, 했다). Chú ý 달라졌다, 많아졌다 - tính từ + -아/어지다 chỉ sự thay đổi.
+  - type: example
+    target: 한복을 입어 본 적이 있어요?
+    target_lang: ko
+    translation:
+      vi: Bạn đã từng mặc thử hanbok chưa?
+    note:
+      vi: 입다 + -어 보다 → 입어 보다, rồi + -ㄴ 적이 있다.
+  - type: example
+    target: 저는 아직 차례를 지낸 적이 없어요.
+    target_lang: ko
+    translation:
+      vi: Tôi chưa từng làm lễ cúng tổ tiên.
+  - type: example
+    target: 한국어를 배운 후에 한국 드라마가 더 재미있어졌어요.
+    target_lang: ko
+    translation:
+      vi: Sau khi học tiếng Hàn, tôi thấy phim Hàn thú vị hơn.
+    note:
+      vi: 재미있다 là tính từ → 재미있어지다.
+  - type: example
+    target: 이번 추석에는 가족들이 다 모였으면 좋겠어요.
+    target_lang: ko
+    translation:
+      vi: Mong là Chuseok năm nay cả nhà đều sum họp.
+    note:
+      vi: 모였으면 có -었 nhưng nói về Chuseok sắp tới.
+  - type: common_mistake
+    wrong: 한국어를 잘해졌어요.
+    right: 한국어 실력이 좋아졌어요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói "trở nên giỏi" nên người học gắn -아/어지다 vào động từ 잘하다. -아/어지다 chỉ đi với tính từ - hãy dùng tính từ 좋다 (실력이 좋아졌어요).
+  - type: common_mistake
+    wrong: 내일은 날씨가 좋았으면 좋았어요.
+    right: 내일은 날씨가 좋았으면 좋겠어요.
+    target_lang: ko
+    note:
+      vi: Thấy -았 ở vế trước, người học chia luôn vế sau ở quá khứ. Mong ước luôn kết thúc bằng 좋겠어요; 좋았어요 nghĩa là "đã tốt".
+  - type: common_mistake
+    wrong: 송편을 먹은 본 적이 있어요.
+    right: 송편을 먹어 본 적이 있어요.
+    target_lang: ko
+    note:
+      vi: Trước 보다 dùng -아/어 (먹어 보다), chỉ 보다 mới chuyển thành 본. Nếu không có 보다 thì viết 먹은 적이 있어요.
+  - type: summary
+    points:
+      - vi: V-(으)ㄴ 적이 있다/없다 - đã từng / chưa bao giờ; V-아/어 본 적 - đã từng thử.
+      - vi: A-아/어지다 - trở nên (추워지다, 많아지다, 달라지다); không gắn vào động từ.
+      - vi: V/A-았/었으면 좋겠어요 - mong là…; vế cuối luôn 좋겠어요.
+      - vi: 명절 - 설날 (세배, 세뱃돈), 추석 (송편); 차례를 지내다; 한복을 입다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:holidays-experience-mcq-bon-jeok
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-a-bon-jeogi-itda
+    prompt:
+      stem: "Chọn dạng đúng: 한복을 ___ 본 적이 있어요? (Bạn đã từng mặc thử hanbok chưa?)"
+      stem_lang: vi
+      options:
+        - { id: q4z, text: 입어, lang: ko }
+        - { id: c8v, text: 입은, lang: ko }
+        - { id: l2n, text: 입고, lang: ko }
+        - { id: x5d, text: 입을, lang: ko }
+    answer:
+      correct_option_id: q4z
+    explanation:
+      vi: Đã từng thử = V-아/어 본 적이 있다. 입다 có nguyên âm ㅣ nên thêm -어 → 입어 본 적. 입은 chỉ dùng khi không có 보다 (입은 적).
+    display_answer: 입어
+
+  - key: ko:exercise:holidays-experience-listen-songpyeon
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:songpyeon
+    prompt:
+      audio_asset_id: null
+      fallback_text: 추석에 송편을 만들어 본 적이 없어요.
+      options:
+        - { id: d7k, text: Tôi chưa từng làm bánh songpyeon vào dịp Chuseok., lang: vi }
+        - { id: r3s, text: Tôi đã từng làm bánh songpyeon vào dịp Chuseok., lang: vi }
+        - { id: f9b, text: Tôi chưa từng ăn bánh songpyeon vào dịp Chuseok., lang: vi }
+        - { id: m1h, text: Tôi muốn làm bánh songpyeon vào dịp Chuseok., lang: vi }
+    answer:
+      correct_option_id: d7k
+    explanation:
+      vi: 만들어 본 적이 없어요 là "chưa từng làm thử". 만들다 là "làm (đồ ăn)", không phải 먹다 (ăn); 없어요 là "chưa", không phải "đã từng".
+    display_answer: Tôi chưa từng làm bánh songpyeon vào dịp Chuseok.
+
+  - key: ko:exercise:holidays-experience-mcq-ajida
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-a-jida
+    prompt:
+      stem: Câu nào có nghĩa "Trời đã trở lạnh"?
+      stem_lang: vi
+      options:
+        - { id: s6y, text: 날씨가 추워졌어요., lang: ko }
+        - { id: b4t, text: 날씨가 춥어졌어요., lang: ko }
+        - { id: h2w, text: 날씨가 추워해졌어요., lang: ko }
+        - { id: o8p, text: 날씨가 추웠어요., lang: ko }
+    answer:
+      correct_option_id: s6y
+    explanation:
+      vi: 춥다 là bất quy tắc ㅂ - 추워 + 지다 → 추워졌어요. 춥어 sai chính tả; 추웠어요 chỉ là "đã lạnh", không nói sự thay đổi.
+    display_answer: 날씨가 추워졌어요.
+
+  - key: ko:exercise:holidays-experience-fill-hope-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-asseumyeon-joketda
+    prompt:
+      template: "내일은 날씨가 {{b1}} 좋겠어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Mong là ngày mai trời đẹp."
+        - "Gợi ý: 좋다 + -았으면."
+    answer:
+      blanks:
+        b1: [좋았으면, 좋으면]
+    known_wrong:
+      - answer: 좋겠으면
+        feedback_vi: Vế trước dùng -았/었으면, không dùng -겠 - 좋았으면 좋겠어요.
+        error_tag: hope_form
+      - answer: 좋아서
+        feedback_vi: -아서 nghĩa là "vì/nên", không diễn tả mong ước. Dùng 좋았으면.
+        error_tag: hope_form
+    explanation:
+      vi: Mong ước = V/A-았/었으면 좋겠어요. 좋다 có ㅗ nên thêm -았으면 → 좋았으면; 좋으면 좋겠어요 cũng đúng nhưng nhẹ hơn.
+    display_answer: 내일은 날씨가 좋았으면 좋겠어요.
+
+  - key: ko:exercise:holidays-experience-wb-culture-changed
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-a-jida
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Dạo này văn hoá ngày lễ đã thay đổi nhiều.\""
+      tokens:
+        - { id: n3, text: 문화가 }
+        - { id: n6, text: 다라졌어요 }
+        - { id: n1, text: 요즘 }
+        - { id: n5, text: 달라졌어요 }
+        - { id: n4, text: 많이 }
+        - { id: n2, text: 명절 }
+    answer:
+      orders:
+        - [n1, n2, n3, n4, n5]
+        - [n2, n3, n1, n4, n5]
+    explanation:
+      vi: 다르다 là bất quy tắc 르 - 달라 + 지다 → 달라졌어요 (đã trở nên khác). 다라졌어요 thiếu một ㄹ.
+    display_answer: 요즘 명절 문화가 많이 달라졌어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:holidays-experience-translate-wear-hanbok
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-a-bon-jeogi-itda
+    prompt:
+      source_text: Bạn đã từng mặc thử hanbok chưa?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 한복을 입어 본 적이 있어요?
+        - 한복 입어 본 적이 있어요?
+        - 한복을 입어 본 적 있어요?
+        - 한복 입어 본 적 있어요?
+        - 한복을 입어 본 적이 있으세요?
+        - 한복을 입어 봤어요?
+        - 한복 입어 봤어요?
+        - 한복을 입어 본 적이 있습니까?
+    known_wrong:
+      - answer: 한복을 입은 본 적이 있어요?
+        feedback_vi: Trước 보다 dùng -아/어 - 입어 본 적.
+        error_tag: bon_jeok_form
+      - answer: 한복을 입는 적이 있어요?
+        feedback_vi: Kinh nghiệm dùng định ngữ quá khứ -(으)ㄴ - 입은 적, hoặc 입어 본 적.
+        error_tag: past_adnominal
+      - answer: 한복을 입어 본 적이 없어요?
+        feedback_vi: Câu hỏi "đã từng… chưa?" dùng 있어요?; 없어요? là "chưa từng… à?".
+        error_tag: itda_eopda
+    explanation:
+      vi: '"Đã từng thử mặc" = 입어 보다 + -ㄴ 적이 있다 → 입어 본 적이 있어요? Tiếng Hàn không cần chủ ngữ "bạn" khi hỏi trực tiếp.'
+    display_answer: 한복을 입어 본 적이 있어요?
+
+  - key: ko:exercise:holidays-experience-fill-never-hope
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eun-jeogi-eopda
+    prompt:
+      template: "(Tôi chưa từng đến Hàn Quốc vào dịp Chuseok.) 추석에 한국에 {{b1}} 적이 없어요. (Tết năm nay mong là được về quê.) 이번 설날에는 고향에 {{b2}} 좋겠어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [간, 가 본]
+        b2: [갔으면, 가면]
+    known_wrong:
+      - answer: 가는
+        feedback_vi: Kinh nghiệm dùng định ngữ quá khứ -(으)ㄴ - 간 적, không dùng 가는.
+        error_tag: past_adnominal
+      - answer: 가겠으면
+        feedback_vi: Mong ước dùng -았/었으면 좋겠어요 - 갔으면.
+        error_tag: hope_form
+      - answer: 가아 본
+        feedback_vi: 가다 + -아 보다 rút gọn thành 가 보다 - 가 본 적.
+        error_tag: vowel_contraction
+    explanation:
+      vi: 가다 → 간 적이 없어요 (chưa từng đi) hoặc 가 본 적이 없어요. Mong ước - 가다 → 갔으면 좋겠어요.
+    display_answer: 추석에 한국에 간 적이 없어요. 이번 설날에는 고향에 갔으면 좋겠어요.
+
+  - key: ko:exercise:holidays-experience-translate-never-charye
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:charye
+    prompt:
+      source_text: Tôi chưa từng làm lễ cúng tổ tiên.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 차례를 지낸 적이 없어요.
+        - 저는 차례를 지낸 적이 없어요.
+        - 전 차례를 지낸 적이 없어요.
+        - 차례를 지내 본 적이 없어요.
+        - 저는 차례를 지내 본 적이 없어요.
+        - 차례를 지낸 적이 한 번도 없어요.
+        - 저는 차례를 지낸 적이 한 번도 없어요.
+        - 한 번도 차례를 지낸 적이 없어요.
+        - 저는 한 번도 차례를 지낸 적이 없어요.
+        - 차례를 지낸 적 없어요.
+        - 차례 지낸 적이 없어요.
+        - 저는 아직 차례를 지낸 적이 없어요.
+    known_wrong:
+      - answer: 차례를 지내는 적이 없어요.
+        feedback_vi: Kinh nghiệm dùng định ngữ quá khứ - 지낸 적.
+        error_tag: past_adnominal
+      - answer: 차례를 지낸 적이 있어요.
+        feedback_vi: '"Chưa từng" là 적이 없어요; 적이 있어요 là "đã từng".'
+        error_tag: itda_eopda
+      - answer: 차례를 만든 적이 없어요.
+        feedback_vi: Làm lễ cúng là 차례를 지내다, không dùng 만들다.
+        error_tag: collocation
+    explanation:
+      vi: Làm lễ cúng tổ tiên = 차례를 지내다. "Chưa từng" = -(으)ㄴ 적이 없다 → 지낸 적이 없어요.
+    display_answer: 저는 차례를 지낸 적이 없어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:holidays-experience-mcq-wish-friend
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-asseumyeon-joketda
+    prompt:
+      stem: Bạn Hàn kể Chuseok này phải làm việc nên không về quê được. Bạn muốn nói "Mong là dịp lễ sau bạn nhất định được về quê." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: p3m, text: 다음 명절에는 꼭 고향에 갔으면 좋겠어요., lang: ko }
+        - { id: k7a, text: 다음 명절에는 꼭 고향에 갔으면 좋았어요., lang: ko }
+        - { id: e5c, text: 다음 명절에는 꼭 고향에 가겠으면 좋겠어요., lang: ko }
+        - { id: y1u, text: 다음 명절에는 꼭 고향에 간 적이 있어요., lang: ko }
+    answer:
+      correct_option_id: p3m
+    explanation:
+      vi: Mong ước cho tương lai vẫn dùng -았/었으면 좋겠어요 - 갔으면 좋겠어요. 좋았어요 là "đã tốt", -겠으면 sai dạng, còn 간 적이 있어요 là kể kinh nghiệm.
+    display_answer: 다음 명절에는 꼭 고향에 갔으면 좋겠어요.
+
+  - key: ko:exercise:holidays-experience-mcq-reading-article
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:myeongjeol
+    prompt:
+      stem: "다음 글의 내용과 같은 것을 고르십시오.\n요즘 한국의 명절 풍경이 많이 달라졌다. 예전에는 설날과 추석이 되면 온 가족이 고향에 모여 차례를 지내고, 아이들은 어른들께 세배를 했다. 그러나 최근에는 연휴에 해외여행을 가는 가족이 많아졌고, 차례 음식을 간단하게 준비하는 집도 늘었다. 한복을 입는 사람은 줄었지만, 고궁에서 한복을 입어 보는 외국인 관광객은 오히려 많아졌다."
+      stem_lang: ko
+      options:
+        - { id: g6r, text: 요즘은 명절 연휴에 해외여행을 가는 가족이 많아졌다., lang: ko }
+        - { id: v2e, text: 요즘도 모든 가족이 고향에 모여 차례를 지낸다., lang: ko }
+        - { id: i9l, text: 한복을 입어 보는 외국인 관광객이 줄었다., lang: ko }
+        - { id: u4x, text: 차례 음식을 준비하는 방법은 예전과 같다., lang: ko }
+    answer:
+      correct_option_id: g6r
+    explanation:
+      vi: Câu thứ ba nói gia đình đi du lịch nước ngoài vào kỳ nghỉ "đã nhiều lên" (많아졌다). Bài cũng nói khách nước ngoài mặc hanbok tăng lên và đồ cúng đơn giản hơn, nên ba phương án còn lại sai.
+    display_answer: 요즘은 명절 연휴에 해외여행을 가는 가족이 많아졌다.
+
+  - key: ko:exercise:holidays-experience-translate-sebae
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:sebae
+    prompt:
+      source_text: 설날에 아이들은 어른들께 세배를 하고 세뱃돈을 받아요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vào Tết, trẻ em lạy chúc Tết người lớn và nhận tiền mừng tuổi.
+        - Vào ngày Tết, trẻ em lạy chúc Tết người lớn và nhận tiền mừng tuổi.
+        - Ngày Tết, trẻ em lạy chúc Tết người lớn và nhận tiền mừng tuổi.
+        - Vào Tết, trẻ em chúc Tết người lớn và nhận tiền mừng tuổi.
+        - Vào Tết, trẻ em chúc Tết người lớn và nhận tiền lì xì.
+        - Vào Tết, trẻ em lạy chúc Tết người lớn và nhận tiền lì xì.
+        - Ngày Tết, trẻ em chúc Tết người lớn và nhận tiền lì xì.
+        - Vào Tết, bọn trẻ lạy chúc Tết người lớn và nhận tiền mừng tuổi.
+        - Vào Tết, trẻ con lạy chúc Tết người lớn và nhận tiền mừng tuổi.
+        - Vào Tết, các em nhỏ lạy chúc Tết người lớn và nhận tiền mừng tuổi.
+        - Vào Tết, trẻ em chúc Tết người lớn rồi nhận tiền mừng tuổi.
+        - Vào Tết, trẻ em chúc Tết người lớn rồi nhận lì xì.
+        - Vào Tết, trẻ em chúc Tết người lớn và nhận lì xì.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vào Tết, người lớn chúc Tết trẻ em và nhận tiền mừng tuổi.
+        feedback_vi: Người lạy chúc Tết là 아이들 (trẻ em), người nhận lạy là 어른들 (người lớn).
+        error_tag: subject_object
+      - answer: Vào Chuseok, trẻ em chúc Tết người lớn và nhận tiền mừng tuổi.
+        feedback_vi: 설날 là Tết âm lịch; Chuseok là 추석.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 설날 = Tết, 세배를 하다 = lạy chúc Tết, 세뱃돈 = tiền mừng tuổi. 께 là dạng kính trọng của 에게 (cho người lớn).
+    display_answer: Vào Tết, trẻ em lạy chúc Tết người lớn và nhận tiền mừng tuổi.
+
+  - key: ko:exercise:holidays-experience-translate-holiday-shorter
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-a-jida
+    prompt:
+      source_text: Dạo này kỳ nghỉ Tết đã trở nên ngắn hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 요즘 설날 연휴가 짧아졌어요.
+        - 요즘 설날 연휴가 더 짧아졌어요.
+        - 요즘은 설날 연휴가 짧아졌어요.
+        - 요즘은 설날 연휴가 더 짧아졌어요.
+        - 요즘 설 연휴가 짧아졌어요.
+        - 요즘 설 연휴가 더 짧아졌어요.
+        - 요즘 설날 연휴는 짧아졌어요.
+        - 요즘 설날 연휴는 더 짧아졌어요.
+        - 요즘 설날 연휴가 예전보다 짧아졌어요.
+        - 요즘 설날 연휴가 예전에 비해 짧아졌어요.
+    known_wrong:
+      - answer: 요즘 설날 연휴가 짧았어요.
+        feedback_vi: 짧았어요 chỉ là "đã ngắn". "Trở nên ngắn hơn" cần -아지다 - 짧아졌어요.
+        error_tag: ajida_missing
+      - answer: 요즘 설날 연휴가 짧어졌어요.
+        feedback_vi: 짧다 có nguyên âm ㅏ nên thêm -아 - 짧아졌어요.
+        error_tag: vowel_harmony
+      - answer: 요즘 설날 연휴가 짧아해졌어요.
+        feedback_vi: Tính từ gắn trực tiếp -아지다 - 짧아졌어요, không chen 해.
+        error_tag: ajida_form
+    explanation:
+      vi: 짧다 (ngắn) là tính từ → 짧아지다 (trở nên ngắn) → quá khứ 짧아졌어요. Kỳ nghỉ Tết là 설날 연휴 hoặc 설 연휴.
+    display_answer: 요즘 설날 연휴가 짧아졌어요.

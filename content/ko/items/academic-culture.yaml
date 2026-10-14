@@ -1,0 +1,831 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Học thuật, văn hoá & lập luận" (TOPIK 6). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ================= bài 1: cấu trúc bài nghị luận (câu 54) =================
+  - key: ko:item:ac-seoron-bonron-gyeollon
+    type: phrase
+    level: topik6
+    difficulty: 3
+    skill_tags: [writing, vocabulary]
+    front:
+      text: 서론 · 본론 · 결론
+      romanization: seoron · bollon · gyeollon
+      pos: danh từ (thuật ngữ bố cục)
+    back:
+      meaning:
+        vi: Mở bài · thân bài · kết bài - ba phần của một bài nghị luận.
+      examples:
+        - target: 서론에서는 문제를 제기하고 본론에서는 근거를 제시한다.
+          translation:
+            vi: Ở mở bài ta nêu vấn đề, còn ở thân bài ta đưa ra luận cứ.
+      pronunciation_note:
+        vi: 본론 đọc là [볼론] - ㄴ gặp ㄹ thì biến thành ㄹ (lưu âm hoá). 결론 đọc [결론].
+      confusion:
+        vi: 서론 (序論) là "phần mở đầu", không phải "tự luận" trong tiếng Việt. Bài tự luận của TOPIK gọi là 논술/작문.
+
+  - key: ko:item:ac-cheotjjae-duljjae
+    type: phrase
+    level: topik5
+    difficulty: 2
+    skill_tags: [writing]
+    front:
+      text: 첫째, 둘째, 셋째
+      romanization: cheotjjae, duljjae, setjjae
+      pos: trạng từ liệt kê
+    back:
+      meaning:
+        vi: Thứ nhất, thứ hai, thứ ba - dùng để liệt kê luận điểm trong văn viết.
+      examples:
+        - target: 첫째, 비용이 많이 든다. 둘째, 시간이 오래 걸린다.
+          translation:
+            vi: Thứ nhất, tốn nhiều chi phí. Thứ hai, mất nhiều thời gian.
+      pronunciation_note:
+        vi: 첫째 đọc [첟째], 셋째 đọc [섿째] - patchim ㅅ chỉ còn âm chặn [ㄷ].
+      confusion:
+        vi: Trong bài luận không viết 첫 번째로, 두 번째로 lặp lại nhiều lần như văn nói; 첫째, 둘째 gọn và trang trọng hơn.
+
+  - key: ko:item:ac-ttaraseo
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [writing, grammar]
+    front:
+      text: 따라서
+      romanization: ttaraseo
+      pos: phó từ nối
+    back:
+      meaning:
+        vi: Do đó, vì thế - nêu kết quả hay kết luận rút ra từ ý trước, dùng trong văn viết.
+      examples:
+        - target: 따라서 정부는 관련 규정을 마련해야 한다.
+          translation:
+            vi: Do đó, chính phủ cần xây dựng các quy định liên quan.
+      pronunciation_note:
+        vi: ㄸ là phụ âm căng - đọc gọn, không bật hơi, không phải "th".
+      confusion:
+        vi: 그래서 mang sắc thái văn nói; trong bài luận TOPIK, hãy dùng 따라서 hoặc 그러므로.
+
+  - key: ko:item:ac-geureomeuro
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [writing, grammar]
+    front:
+      text: 그러므로
+      romanization: geureomeuro
+      pos: phó từ nối
+    back:
+      meaning:
+        vi: Vì vậy, cho nên - kết luận theo lối suy luận logic, rất trang trọng.
+      examples:
+        - target: 그러므로 환경 보호는 모두의 책임이다.
+          translation:
+            vi: Vì vậy, bảo vệ môi trường là trách nhiệm của tất cả mọi người.
+      pronunciation_note:
+        vi: Đọc [그러므로], ㅡ phát âm dẹt môi, không tròn môi như "u".
+      confusion:
+        vi: 그러니까 nghe giống nhưng là văn nói ("vậy nên đó"), không dùng trong bài luận.
+
+  - key: ko:item:ac-iwa-gachi
+    type: phrase
+    level: topik6
+    difficulty: 3
+    skill_tags: [writing]
+    front:
+      text: 이와 같이
+      romanization: iwa gachi
+      pos: cụm nối (kết bài)
+    back:
+      meaning:
+        vi: Như vậy, như đã trình bày - mở đầu phần kết luận, tóm lại các ý trước.
+      examples:
+        - target: 이와 같이 세대 갈등은 대화를 통해 줄일 수 있다.
+          translation:
+            vi: Như vậy, xung đột thế hệ có thể giảm bớt thông qua đối thoại.
+      pronunciation_note:
+        vi: 같이 đọc [가치] - ㅌ đứng trước 이 biến thành ㅊ (vòm hoá).
+      confusion:
+        vi: Dùng ở câu đầu của kết bài, không dùng giữa thân bài. Không nhầm với 이처럼 (cũng được) hay 이렇게 (văn nói).
+
+  - key: ko:item:ac-jujanghada
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 주장하다
+      romanization: jujanghada
+      pos: động từ
+    back:
+      meaning:
+        vi: Khẳng định, cho rằng, đưa ra quan điểm (và bảo vệ nó). 주장 - luận điểm, chủ kiến.
+      examples:
+        - target: 많은 전문가들은 근무 시간을 줄여야 한다고 주장한다.
+          translation:
+            vi: Nhiều chuyên gia cho rằng cần giảm thời gian làm việc.
+      pronunciation_note:
+        vi: Đọc [주장하다]; ㅎ giữa hai nguyên âm thường đọc rất nhẹ.
+      confusion:
+        vi: Hán Việt là "chủ trương" nhưng nghĩa khác - tiếng Việt "chủ trương" là đường lối, kế hoạch; 주장하다 là "khẳng định một ý kiến".
+
+  - key: ko:item:ac-geungeo
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 근거
+      romanization: geungeo
+      pos: danh từ
+    back:
+      meaning:
+        vi: Căn cứ, luận cứ, cơ sở để chứng minh một ý kiến.
+      examples:
+        - target: 그 주장에는 객관적인 근거가 부족하다.
+          translation:
+            vi: Luận điểm đó thiếu căn cứ khách quan.
+      pronunciation_note:
+        vi: Đọc [근거]; ㄱ thứ hai giữ âm thường, không căng.
+      confusion:
+        vi: Đi với 근거를 제시하다 (đưa ra căn cứ), 근거가 없다 (vô căn cứ). Không dùng 근거 cho "nguồn gốc" của đồ vật (출처).
+
+  - key: ko:item:ac-banbakhada
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 반박하다
+      romanization: banbakhada
+      pos: động từ
+    back:
+      meaning:
+        vi: Phản bác, bác bỏ ý kiến của người khác bằng lập luận.
+      examples:
+        - target: 반대 측은 그 의견을 근거를 들어 반박했다.
+          translation:
+            vi: Phía phản đối đã đưa ra căn cứ để phản bác ý kiến đó.
+      pronunciation_note:
+        vi: 반박하다 đọc [반바카다] - ㄱ gặp ㅎ hợp lại thành ㅋ (bật hơi hoá).
+      confusion:
+        vi: 반대하다 là "phản đối" (không đồng ý), còn 반박하다 là "phản bác" bằng lý lẽ cụ thể.
+
+  - key: ko:item:ac-nonran
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 논란
+      romanization: nollan
+      pos: danh từ
+    back:
+      meaning:
+        vi: Sự tranh cãi, tranh luận gay gắt trong xã hội về một vấn đề.
+      examples:
+        - target: 새 정책이 발표되자 큰 논란이 일었다.
+          translation:
+            vi: Chính sách mới vừa được công bố đã gây ra tranh cãi lớn.
+      pronunciation_note:
+        vi: Đọc [놀란] - ㄴ đứng trước ㄹ biến thành ㄹ.
+      confusion:
+        vi: Hay đi với 논란이 되다 / 논란이 일다 / 논란을 빚다. Khác 토론 (buổi thảo luận có tổ chức).
+
+  - key: ko:item:ac-gram-dago-bol-su-itda
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: -다고 볼 수 있다
+      romanization: -dago bol su itda
+      pos: cấu trúc rào đón
+    back:
+      meaning:
+        vi: Có thể xem là, có thể nói rằng - đưa ra nhận định một cách mềm, khách quan trong văn viết.
+      examples:
+        - target: 이는 사회 변화의 결과라고 볼 수 있다.
+          translation:
+            vi: Điều này có thể xem là kết quả của sự thay đổi xã hội.
+      pronunciation_note:
+        vi: 볼 수 đọc [볼쑤] - ㅅ sau đuôi -ㄹ định ngữ đọc căng; 있다 đọc [읻따].
+      confusion:
+        vi: Sau danh từ dùng -(이)라고 볼 수 있다, sau động từ dùng -ㄴ/는다고; người Việt hay viết sai thành 결과다고.
+
+  - key: ko:item:ac-gram-l-geoseuro-boinda
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, writing, reading]
+    front:
+      text: -(으)ㄹ 것으로 보인다
+      romanization: -(eu)l geoseuro boinda
+      pos: cấu trúc rào đón
+    back:
+      meaning:
+        vi: Được dự đoán là, có vẻ sẽ - dự báo khách quan, rất hay gặp trong tin tức và bài luận.
+      examples:
+        - target: 내년에도 물가가 계속 오를 것으로 보인다.
+          translation:
+            vi: Dự kiến năm sau giá cả sẽ tiếp tục tăng.
+      pronunciation_note:
+        vi: 것으로 đọc nối [거스로].
+      confusion:
+        vi: -(으)ㄹ 것 같아요 là văn nói chủ quan ("chắc là"); trong bài luận và tin tức hãy dùng -(으)ㄹ 것으로 보인다.
+
+  # ================= bài 2: nguyên nhân, giới hạn, mức độ =================
+  - key: ko:item:ac-gram-euro-inhae
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: N(으)로 인해(서)
+      romanization: (eu)ro inhae(seo)
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Do N, vì N - nêu nguyên nhân (thường là kết quả xấu) trong văn viết, tin tức.
+      examples:
+        - target: 폭우로 인해 항공편이 결항되었다.
+          translation:
+            vi: Do mưa lớn, các chuyến bay đã bị huỷ.
+      pronunciation_note:
+        vi: 인해 thường đọc nhẹ [이내] - ㅎ giữa hai âm vang gần như mất.
+      confusion:
+        vi: Chỉ đứng sau danh từ (폭우로 인해), không sau động từ. Văn nói dùng N 때문에.
+
+  - key: ko:item:ac-gram-e-bulgwahada
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: N에 불과하다
+      romanization: e bulgwahada
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Chỉ là, chẳng qua chỉ là N - nhấn mạnh con số hay sự việc là nhỏ, không đáng kể.
+      examples:
+        - target: 찬성한 사람은 전체의 10%에 불과했다.
+          translation:
+            vi: Người tán thành chỉ chiếm vỏn vẹn 10% tổng số.
+      pronunciation_note:
+        vi: 불과 đọc [불과], ㄹ giữ nguyên, không nuốt.
+      confusion:
+        vi: Đã mang nghĩa "chỉ" nên không thêm 만 (10%만에 불과하다 là thừa).
+
+  - key: ko:item:ac-gram-n-neun-sem-ida
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: -(으)ㄴ/는 셈이다
+      romanization: -(eu)n/neun sem-ida
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Coi như là, tính ra là - kết luận gần đúng sau khi cân nhắc thực tế.
+      examples:
+        - target: 열 명 중 아홉 명이 찬성했으니 거의 모두 찬성한 셈이다.
+          translation:
+            vi: Mười người thì chín người tán thành, coi như gần như tất cả đều tán thành.
+      pronunciation_note:
+        vi: 셈이다 đọc nối [세미다].
+      confusion:
+        vi: Đã xảy ra dùng -(으)ㄴ 셈이다, hiện tại dùng -는 셈이다; không dùng cho sự việc chính xác 100%.
+
+  - key: ko:item:ac-gram-ji-aneul-su-eopda
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: -지 않을 수 없다
+      romanization: -ji aneul su eopda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Không thể không, buộc phải - phủ định kép để nhấn mạnh sự tất yếu.
+      examples:
+        - target: 상황이 이렇다 보니 계획을 수정하지 않을 수 없었다.
+          translation:
+            vi: Tình hình như thế nên chúng tôi buộc phải sửa kế hoạch.
+      pronunciation_note:
+        vi: 않을 đọc [아늘] (ㅎ câm), 수 đọc căng [쑤], 없다 đọc [업따].
+      confusion:
+        vi: -지 않으면 안 되다 là "phải" (bổn phận); -지 않을 수 없다 là "không thể không" vì hoàn cảnh hay cảm xúc ép buộc (감탄하지 않을 수 없다).
+
+  - key: ko:item:ac-gram-n-neun-dedaga
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: -(으)ㄴ/는 데다가
+      romanization: -(eu)n/neun dedaga
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Đã... lại còn... - cộng thêm một ý cùng chiều (cùng tốt hoặc cùng xấu).
+      examples:
+        - target: 이 지역은 교통이 불편한 데다가 집값도 비싸다.
+          translation:
+            vi: Khu vực này giao thông đã bất tiện, giá nhà lại còn đắt.
+      pronunciation_note:
+        vi: 데다가 đọc như viết; 불편한 데다가 có thể nói liền một nhịp.
+      confusion:
+        vi: Hai vế phải cùng chiều; vế ngược chiều thì dùng -지만 hoặc -는 반면. Vế sau thường có 도.
+
+  - key: ko:item:ac-gram-neun-han
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: -는 한
+      romanization: -neun han
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Chừng nào còn, miễn là - nêu điều kiện kéo dài, thường đi với kết quả mạnh.
+      examples:
+        - target: 규제가 없는 한 이런 문제는 계속될 것이다.
+          translation:
+            vi: Chừng nào chưa có quy định hạn chế thì những vấn đề như thế này sẽ còn tiếp diễn.
+      pronunciation_note:
+        vi: 한 đọc [한], khác 함 - hãy giữ âm cuối ㄴ rõ.
+      confusion:
+        vi: Không nhầm với -는 한편 (mặt khác). -는 한 luôn dùng định ngữ hiện tại -는, kể cả với 없다 (없는 한); riêng 가능한 한 là cụm cố định.
+
+  - key: ko:item:ac-ingongjineung
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 인공지능
+      romanization: ingongjineung
+      pos: danh từ
+    back:
+      meaning:
+        vi: Trí tuệ nhân tạo (AI).
+      examples:
+        - target: 인공지능 기술이 빠르게 발전하고 있다.
+          translation:
+            vi: Công nghệ trí tuệ nhân tạo đang phát triển nhanh chóng.
+      pronunciation_note:
+        vi: Đọc [인공지능], ㅇ cuối là âm mũi "ng".
+      confusion:
+        vi: Hán Việt là "nhân công trí năng", nhưng tiếng Việt nói "trí tuệ nhân tạo" - đừng dịch thành "nhân công".
+
+  - key: ko:item:ac-yulli
+    type: vocab
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 윤리
+      romanization: yulli
+      pos: danh từ
+    back:
+      meaning:
+        vi: Đạo đức, chuẩn mực đạo đức (của một lĩnh vực, nghề nghiệp). 윤리적 - mang tính đạo đức.
+      examples:
+        - target: 인공지능 개발에도 윤리적 기준이 필요하다.
+          translation:
+            vi: Việc phát triển trí tuệ nhân tạo cũng cần chuẩn mực đạo đức.
+      pronunciation_note:
+        vi: Đọc [율리] - ㄴ trước ㄹ biến thành ㄹ.
+      confusion:
+        vi: Hán Việt "luân lý" nghe cổ trong tiếng Việt, nhưng 윤리 rất thông dụng (기업 윤리 - đạo đức doanh nghiệp).
+
+  - key: ko:item:ac-gyuje
+    type: vocab
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 규제
+      romanization: gyuje
+      pos: danh từ
+    back:
+      meaning:
+        vi: Sự kiểm soát, hạn chế bằng luật lệ. 규제하다 - quản lý, hạn chế.
+      examples:
+        - target: 정부는 개인정보 수집에 대한 규제를 강화했다.
+          translation:
+            vi: Chính phủ đã siết chặt việc kiểm soát thu thập thông tin cá nhân.
+      pronunciation_note:
+        vi: Đọc [규제]; ㅠ là "yu" tròn môi.
+      confusion:
+        vi: Hán Việt "quy chế" nhưng không phải văn bản quy chế - 규제 là hành động hạn chế. "Quy chế" của trường là 규정.
+
+  - key: ko:item:ac-bujagyong
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 부작용
+      romanization: bujagyong
+      pos: danh từ
+    back:
+      meaning:
+        vi: Tác dụng phụ; hệ quả tiêu cực ngoài ý muốn của một chính sách, công nghệ.
+      examples:
+        - target: 새 제도는 예상하지 못한 부작용을 낳았다.
+          translation:
+            vi: Chế độ mới đã gây ra những hệ quả tiêu cực không lường trước.
+      pronunciation_note:
+        vi: Đọc nối [부자굥].
+      confusion:
+        vi: Không chỉ dùng cho thuốc - trong bài luận, 부작용 rất hay dùng cho mặt trái của chính sách.
+
+  # ================= bài 3: thái độ, quan điểm, văn hoá =================
+  - key: ko:item:ac-gram-l-jieonjeong
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar]
+    front:
+      text: -(으)ㄹ지언정
+      romanization: -(eu)l jieonjeong
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Dù có phải... đi nữa (cũng nhất quyết không...) - chấp nhận điều xấu ở vế trước để giữ lập trường ở vế sau.
+      examples:
+        - target: 실패할지언정 포기하지는 않겠다.
+          translation:
+            vi: Dù có thất bại, tôi cũng nhất định không bỏ cuộc.
+      pronunciation_note:
+        vi: 할지언정 đọc [할찌언정] - ㅈ sau đuôi -ㄹ đọc căng.
+      confusion:
+        vi: Vế sau thường là phủ định hay ý chí mạnh (-지 않겠다, -(으)ㄹ 수 없다). Không dùng như -아도/어도 thông thường.
+
+  - key: ko:item:ac-gram-gineun-keonyeong
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: -기는커녕 / N은/는커녕
+      romanization: -gineun keonyeong / eun/neun keonyeong
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Chẳng những không... mà còn / đừng nói là... ngay cả... - điều kỳ vọng không xảy ra, thậm chí ngược lại.
+      examples:
+        - target: 돈을 모으기는커녕 빚만 늘었다.
+          translation:
+            vi: Chẳng những không để dành được tiền mà nợ còn tăng lên.
+      pronunciation_note:
+        vi: 커녕 đọc [커녕], ㅋ bật hơi mạnh.
+      confusion:
+        vi: Vế sau mang nghĩa trái kỳ vọng hoặc phủ định (도 못 하다, -만). Không dùng khi cả hai vế đều tích cực.
+
+  - key: ko:item:ac-gram-l-ttareumida
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: -(으)ㄹ 따름이다
+      romanization: -(eu)l ttareumida
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Chỉ... mà thôi - trang trọng, khiêm tốn; hay dùng trong phát biểu chính thức.
+      examples:
+        - target: 저는 제 할 일을 했을 따름입니다.
+          translation:
+            vi: Tôi chỉ làm việc mình cần làm mà thôi.
+      pronunciation_note:
+        vi: 할 따름 đọc [할 따름]; ㄸ căng, gọn.
+      confusion:
+        vi: Nghĩa gần -(으)ㄹ 뿐이다 nhưng trang trọng hơn. Không dùng trong hội thoại thân mật.
+
+  - key: ko:item:ac-gram-neun-ba
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, writing]
+    front:
+      text: -(으)ㄴ/는 바
+      romanization: -(eu)n/neun ba
+      pos: danh từ phụ thuộc
+    back:
+      meaning:
+        vi: Điều mà, những gì mà (văn viết trang trọng). Hay gặp trong -(으)ㄴ 바와 같이 "như đã...".
+      examples:
+        - target: 앞에서 살펴본 바와 같이 이 문제는 쉽게 해결되지 않는다.
+          translation:
+            vi: Như đã xem xét ở trên, vấn đề này không dễ giải quyết.
+      pronunciation_note:
+        vi: 바와 đọc liền [바와].
+      confusion:
+        vi: 바 ở đây là danh từ phụ thuộc nên viết cách - 살펴본 바. Không nhầm với 바 nghĩa là quán bar.
+
+  - key: ko:item:ac-jeontong
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 전통
+      romanization: jeontong
+      pos: danh từ
+    back:
+      meaning:
+        vi: Truyền thống. 전통적 - mang tính truyền thống.
+      examples:
+        - target: 명절 음식에는 지역의 전통이 담겨 있다.
+          translation:
+            vi: Món ăn ngày lễ tết chứa đựng truyền thống của từng vùng.
+      pronunciation_note:
+        vi: Đọc [전통]; ㅌ bật hơi, khác ㄷ.
+      confusion:
+        vi: 전통 (truyền thống) khác 전설 (truyền thuyết) - hai từ Hán Việt người Việt dễ nhầm khi nghe nhanh.
+
+  - key: ko:item:ac-gyeseunghada
+    type: vocab
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 계승하다
+      romanization: gyeseunghada
+      pos: động từ
+    back:
+      meaning:
+        vi: Kế thừa, tiếp nối (truyền thống, tinh thần, di sản).
+      examples:
+        - target: 젊은 장인들이 전통 공예를 계승하고 있다.
+          translation:
+            vi: Các nghệ nhân trẻ đang kế thừa nghề thủ công truyền thống.
+      pronunciation_note:
+        vi: 계 đọc gần [게] trong tiếng Seoul hiện nay.
+      confusion:
+        vi: Thừa kế tài sản là 상속하다, không phải 계승하다. 계승하다 dùng cho giá trị tinh thần, văn hoá.
+
+  - key: ko:item:ac-gachigwan
+    type: vocab
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 가치관
+      romanization: gachigwan
+      pos: danh từ
+    back:
+      meaning:
+        vi: Hệ giá trị, quan niệm về giá trị sống của một người hay một thế hệ.
+      examples:
+        - target: 세대마다 일과 가정에 대한 가치관이 다르다.
+          translation:
+            vi: Mỗi thế hệ có quan niệm khác nhau về công việc và gia đình.
+      pronunciation_note:
+        vi: Đọc [가치관].
+      confusion:
+        vi: Hán Việt "giá trị quan" - tiếng Việt nói "quan niệm giá trị/hệ giá trị", đừng dịch từng chữ.
+
+  - key: ko:item:ac-sedae-galdeung
+    type: phrase
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 세대 갈등
+      romanization: sedae galdeung
+      pos: danh từ ghép
+    back:
+      meaning:
+        vi: Xung đột (mâu thuẫn) giữa các thế hệ.
+      examples:
+        - target: 세대 갈등을 줄이려면 서로의 입장을 이해해야 한다.
+          translation:
+            vi: Muốn giảm xung đột thế hệ, cần hiểu lập trường của nhau.
+      pronunciation_note:
+        vi: 갈등 đọc [갈뜽] - ㄷ sau ㄹ trong từ Hán đọc căng.
+      confusion:
+        vi: 갈등 là mâu thuẫn kéo dài trong quan hệ, khác 싸움 (cãi nhau, đánh nhau một lần).
+
+  - key: ko:item:ac-sajeong
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 사정
+      romanization: sajeong
+      pos: danh từ
+    back:
+      meaning:
+        vi: Hoàn cảnh, lý do riêng, tình hình (khó nói rõ). 개인 사정 - việc riêng.
+      examples:
+        - target: 개인 사정으로 회의에 참석하지 못했습니다.
+          translation:
+            vi: Vì có việc riêng nên tôi đã không tham dự cuộc họp được.
+      pronunciation_note:
+        vi: Đọc [사정]; ㅈ thường giữa nguyên âm gần "ch" nhẹ.
+      confusion:
+        vi: Hán Việt "sự tình" nhưng không mang nghĩa "câu chuyện, sự việc đã xảy ra"; 사정 nhấn vào hoàn cảnh khiến ai đó không thể làm gì.
+
+  # ================= bài 4: thành ngữ 4 chữ & tục ngữ =================
+  - key: ko:item:ac-sajaseongeo
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 사자성어
+      romanization: sajaseongeo
+      pos: danh từ
+    back:
+      meaning:
+        vi: Thành ngữ bốn chữ Hán (như 일석이조).
+      examples:
+        - target: 사자성어를 알면 신문 기사를 이해하기 쉽다.
+          translation:
+            vi: Biết thành ngữ bốn chữ thì dễ hiểu báo hơn.
+      pronunciation_note:
+        vi: Đọc [사자성어], ㅓ mở miệng, không tròn môi.
+      confusion:
+        vi: Người Việt có lợi thế vì nhiều 사자성어 có thành ngữ Hán Việt tương ứng, nhưng nghĩa dùng có khi khác.
+
+  - key: ko:item:ac-sokdam
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 속담
+      romanization: sokdam
+      pos: danh từ
+    back:
+      meaning:
+        vi: Tục ngữ.
+      examples:
+        - target: 이 속담은 노력의 중요성을 강조한다.
+          translation:
+            vi: Câu tục ngữ này nhấn mạnh tầm quan trọng của sự nỗ lực.
+      pronunciation_note:
+        vi: Đọc [속땀] - ㄷ sau patchim ㄱ đọc căng.
+      confusion:
+        vi: Khi trích tục ngữ, người Hàn hay dùng N(이)라는 말이 있듯이 hoặc N(이)라고 - không dịch nguyên văn mà giải nghĩa.
+
+  - key: ko:item:ac-ilseogijo
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 일석이조
+      romanization: ilseogijo
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: Một công đôi việc (nhất cử lưỡng tiện).
+      examples:
+        - target: 자전거로 출퇴근하면 운동도 되고 교통비도 아끼니 일석이조이다.
+          translation:
+            vi: Đi làm bằng xe đạp vừa tập thể dục vừa tiết kiệm tiền đi lại, đúng là một công đôi việc.
+      pronunciation_note:
+        vi: Đọc [일써기조] - ㅅ sau ㄹ đọc căng, ㄱ nối sang 이.
+      confusion:
+        vi: Hán Việt là "nhất thạch nhị điểu" (một hòn đá hai con chim); khi dịch sang tiếng Việt nên dùng "một công đôi việc".
+
+  - key: ko:item:ac-umul-an-gaeguri
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 우물 안 개구리
+      romanization: umul an gaeguri
+      pos: tục ngữ
+    back:
+      meaning:
+        vi: Ếch ngồi đáy giếng - người hiểu biết hạn hẹp mà tưởng mình biết nhiều.
+      examples:
+        - target: 해외 경험이 없으면 우물 안 개구리가 되기 쉽다.
+          translation:
+            vi: Không có trải nghiệm nước ngoài thì dễ thành ếch ngồi đáy giếng.
+      pronunciation_note:
+        vi: 우물 안 đọc nối [우무란].
+      confusion:
+        vi: Tiếng Việt có câu tương đương "ếch ngồi đáy giếng" - dùng nó, không dịch chữ "con ếch trong giếng".
+
+  - key: ko:item:ac-tikkeul-moa-taesan
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 티끌 모아 태산
+      romanization: tikkeul moa taesan
+      pos: tục ngữ
+    back:
+      meaning:
+        vi: Góp gió thành bão, tích tiểu thành đại - nhiều cái nhỏ gom lại thành cái lớn.
+      examples:
+        - target: 티끌 모아 태산이라고, 매일 조금씩 저축하면 큰돈이 된다.
+          translation:
+            vi: Góp gió thành bão, mỗi ngày tiết kiệm một ít thì sẽ thành khoản tiền lớn.
+      pronunciation_note:
+        vi: 티끌 có ㅌ bật hơi và ㄲ căng - phân biệt rõ hai âm.
+      confusion:
+        vi: Nghĩa đen là "gom bụi thành núi Thái Sơn"; dịch bằng câu tục ngữ Việt tương đương, không dịch chữ.
+
+  - key: ko:item:ac-gongdeun-tap
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 공든 탑이 무너지랴
+      romanization: gongdeun tabi muneojirya
+      pos: tục ngữ
+    back:
+      meaning:
+        vi: Công sức bỏ ra bằng cả tấm lòng thì không uổng phí (nghĩa đen - tháp xây công phu sao đổ được).
+      examples:
+        - target: 공든 탑이 무너지랴. 열심히 준비했으니 좋은 결과가 있을 것이다.
+          translation:
+            vi: Có công thì ắt có quả. Đã chuẩn bị chăm chỉ thì sẽ có kết quả tốt.
+      pronunciation_note:
+        vi: 탑이 đọc nối [타비]; 무너지랴 là đuôi câu hỏi tu từ cổ.
+      confusion:
+        vi: -(으)랴 là câu hỏi tu từ nghĩa "lẽ nào lại...", tức là "không đổ". Đừng hiểu thành tháp sắp đổ.
+
+  - key: ko:item:ac-jaksimsamil
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 작심삼일
+      romanization: jaksimsamil
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: Quyết tâm chỉ được ba ngày, cả thèm chóng chán.
+      examples:
+        - target: 새해에 운동을 시작했지만 작심삼일로 끝났다.
+          translation:
+            vi: Đầu năm tôi bắt đầu tập thể dục nhưng chỉ được dăm bữa nửa tháng.
+      pronunciation_note:
+        vi: Đọc [작씸사밀] - ㅅ sau ㄱ đọc căng, ㅁ nối sang 일.
+      confusion:
+        vi: Thường đi với 작심삼일로 끝나다 / 작심삼일이 되다.
+
+  - key: ko:item:ac-geumsangcheomhwa
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 금상첨화
+      romanization: geumsangcheomhwa
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: Đã tốt lại càng tốt (gấm thêu hoa).
+      examples:
+        - target: 경치도 좋은데 날씨까지 좋으니 금상첨화이다.
+          translation:
+            vi: Phong cảnh đã đẹp, thời tiết lại còn đẹp, thật là tuyệt hơn cả mong đợi.
+      pronunciation_note:
+        vi: Thường nghe như [금상처뫄] - ㅎ sau ㅁ đọc rất nhẹ.
+      confusion:
+        vi: Chỉ dùng khi điều tốt được thêm điều tốt; điều xấu chồng thêm điều xấu là 설상가상 (hoạ vô đơn chí).
+
+  - key: ko:item:ac-so-ilko-oeyanggan
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 소 잃고 외양간 고친다
+      romanization: so ilko oeyanggan gochinda
+      pos: tục ngữ
+    back:
+      meaning:
+        vi: Mất bò mới lo làm chuồng - đến khi xảy ra chuyện mới lo khắc phục thì đã muộn.
+      examples:
+        - target: 사고가 난 뒤에야 안전 점검을 하는 것은 소 잃고 외양간 고치는 격이다.
+          translation:
+            vi: Đợi xảy ra tai nạn rồi mới kiểm tra an toàn thì đúng là mất bò mới lo làm chuồng.
+      pronunciation_note:
+        vi: 잃고 đọc [일코] - ㅎ gặp ㄱ thành ㅋ; 외양간 đọc [외양깐].
+      confusion:
+        vi: Tiếng Việt có câu tương đương gần như y hệt - "mất bò mới lo làm chuồng". Trong văn viết hay dùng dạng -는 격이다 (cũng như là).

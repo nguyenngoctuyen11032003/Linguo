@@ -1,0 +1,449 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:opinions-etiquette
+order_index: 1
+level: topik4
+title:
+  vi: Nêu quan điểm về phép lịch sự Hàn Quốc
+objectives:
+  - vi: Nêu ý kiến bằng 제 생각에는… và -다고 생각해요, chia đúng theo động từ, tính từ, danh từ.
+  - vi: Nói điều cần hoặc không cần làm bằng -(으)ㄹ 필요가 있다/없다; nói tán thành, phản đối bằng N에 찬성하다/반대하다.
+  - vi: Hiểu phép lịch sự cơ bản ở Hàn - 존댓말 và 반말, đưa đồ bằng hai tay, văn hoá tuổi tác.
+estimated_minutes: 20
+skills: [grammar, speaking, vocabulary]
+prerequisites: [ko:lesson:work-life-review]
+items:
+  - item: ko:item:je-saenggageneun
+  - item: ko:item:gram-dago-saenggakhada
+  - item: ko:item:gram-eul-piryoga-itda
+  - item: ko:item:chanseonghada
+  - item: ko:item:bandaehada
+  - item: ko:item:uigyeon
+  - item: ko:item:yejeol
+  - item: ko:item:jondaenmal
+  - item: ko:item:banmal
+  - item: ko:item:eoreun
+  - item: ko:item:du-sonuro
+  - item: ko:item:nai-munhwa
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Theo tôi, với người lớn cần dùng kính ngữ", "Tôi phản đối ý kiến đó" và giải thích vì sao người Hàn hỏi tuổi khi mới gặp.
+  - type: explain
+    text:
+      vi: Muốn nêu ý kiến một cách nhẹ nhàng, bạn mở đầu bằng 제 생각에는 (theo tôi) hoặc kết thúc câu bằng -다고 생각해요 (tôi nghĩ rằng…). Phần đứng trước -다고 là câu ở dạng gốc "-다", không phải đuôi 해요.
+  - type: explain
+    text:
+      vi: "Cách chia trước -다고: động từ có patchim + 는다고 (먹는다고), không patchim + ㄴ다고 (본다고); tính từ và 있다/없다 + 다고 (중요하다고, 재미있다고); danh từ + (이)라고 (문제라고). Quá khứ dùng -았/었다고 cho cả động từ lẫn tính từ."
+  - type: explain
+    text:
+      vi: V-(으)ㄹ 필요가 있다 là "cần phải…", 필요가 없다 là "không cần…" - 쓸 필요가 없어요. Tán thành, phản đối một ý kiến dùng N에 찬성하다 / N에 반대하다.
+  - type: deep_explain
+    text:
+      vi: Ở Hàn, tuổi và quan hệ quyết định cách nói. Với người lớn tuổi, cấp trên hay người mới gặp, bạn luôn dùng 존댓말; 반말 chỉ dùng với bạn thân hoặc người nhỏ tuổi hơn khi đã thân. Vì vậy người Hàn hay hỏi tuổi lúc mới quen (나이 문화) - không phải tò mò, mà để biết nên nói thế nào; khi đưa hay nhận đồ với người lớn, họ dùng hai tay (두 손으로).
+  - type: example
+    target: 제 생각에는 외국인도 존댓말을 배울 필요가 있어요.
+    target_lang: ko
+    translation:
+      vi: Theo tôi, người nước ngoài cũng cần học kính ngữ.
+    note:
+      vi: 배우다 không có patchim → 배울 필요가 있어요.
+  - type: example
+    target: 저는 한국의 나이 문화가 조금 불편하다고 생각해요.
+    target_lang: ko
+    translation:
+      vi: Tôi thấy văn hoá tuổi tác của Hàn Quốc hơi bất tiện.
+    note:
+      vi: 불편하다 là tính từ nên chỉ thêm -다고, không thêm ㄴ.
+  - type: example
+    target: 요즘 젊은 사람들은 회사에서도 반말을 많이 쓴다고 생각해요?
+    target_lang: ko
+    translation:
+      vi: Bạn có nghĩ dạo này người trẻ dùng lối nói trống không nhiều cả ở công ty không?
+    note:
+      vi: 쓰다 là động từ không có patchim → 쓴다고. Hỏi ý kiến người khác chỉ cần đổi -다고 생각해요 thành câu hỏi.
+  - type: example
+    target: 저는 그 의견에 반대해요. 어른에게는 두 손으로 드리는 게 예절이에요.
+    target_lang: ko
+    translation:
+      vi: Tôi phản đối ý kiến đó. Đưa đồ cho người lớn bằng hai tay mới là phép lịch sự.
+    note:
+      vi: 의견에 반대해요 - trợ từ 에 đi với 찬성하다/반대하다.
+  - type: common_mistake
+    wrong: 이 문제는 중요한다고 생각해요.
+    right: 이 문제는 중요하다고 생각해요.
+    target_lang: ko
+    note:
+      vi: Người học hay thêm ㄴ cho mọi từ có 하다. Chỉ động từ mới có -ㄴ/는다고 (공부한다고); tính từ như 중요하다, 편하다 chỉ thêm -다고.
+  - type: common_mistake
+    wrong: 할머니, 어디 가?
+    right: 할머니, 어디 가세요?
+    target_lang: ko
+    note:
+      vi: Tiếng Việt chỉ cần thêm "ạ", nên người học hay quên đuôi lịch sự khi nói nhanh. Với người lớn, câu thiếu 요 hoặc -(으)세요 là 반말 và bị coi là vô lễ.
+  - type: common_mistake
+    wrong: 존댓말을 쓰는 필요가 있어요.
+    right: 존댓말을 쓸 필요가 있어요.
+    target_lang: ko
+    note:
+      vi: Trước 필요 luôn là dạng -(으)ㄹ (쓸, 먹을), dù tiếng Việt "cần dùng" không có dấu hiệu thời gian.
+  - type: summary
+    points:
+      - vi: 제 생각에는… / …-다고 생각해요 - nêu ý kiến nhẹ nhàng.
+      - vi: V-ㄴ/는다고 · A-다고 · N-(이)라고 · quá khứ -았/었다고 + 생각해요.
+      - vi: V-(으)ㄹ 필요가 있어요 / 없어요 - cần / không cần.
+      - vi: N에 찬성해요 / 반대해요; 의견 - ý kiến.
+      - vi: 어른에게는 존댓말, bạn thân thì 반말; đưa đồ 두 손으로.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:opinions-etiquette-mcq-adjective-dago
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-dago-saenggakhada
+    prompt:
+      stem: "Chọn dạng đúng: 저는 이 광고가 너무 ___ 생각해요. (quảng cáo dài quá)"
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 길다고, lang: ko }
+        - { id: p8m, text: 긴다고, lang: ko }
+        - { id: x2r, text: 길어요고, lang: ko }
+        - { id: d6t, text: 길는다고, lang: ko }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: 길다 (dài) là tính từ nên chỉ thêm -다고 - 길다고. 긴다고 là cách chia của động từ; không đặt đuôi 해요 (길어요) trước -고.
+    display_answer: 길다고
+
+  - key: ko:exercise:opinions-etiquette-mcq-verb-dago
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-dago-saenggakhada
+    prompt:
+      stem: "Chọn dạng đúng: 요즘 사람들은 드라마를 휴대폰으로 ___ 생각해요."
+      stem_lang: vi
+      options:
+        - { id: f4n, text: 본다고, lang: ko }
+        - { id: a7c, text: 보다고, lang: ko }
+        - { id: s1q, text: 보는다고, lang: ko }
+        - { id: h9w, text: 봐요고, lang: ko }
+    answer:
+      correct_option_id: f4n
+    explanation:
+      vi: 보다 là động từ không có patchim nên thêm -ㄴ다고 → 본다고. -는다고 chỉ dùng khi động từ có patchim (먹는다고); 보다고 thiếu ㄴ của động từ.
+    display_answer: 본다고
+
+  - key: ko:exercise:opinions-etiquette-listen-two-hands
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:du-sonuro
+    prompt:
+      audio_asset_id: null
+      fallback_text: 제 생각에는 어른에게 물건을 드릴 때 두 손으로 드릴 필요가 있어요.
+      options:
+        - { id: m5j, text: "Theo tôi, khi đưa đồ cho người lớn thì cần đưa bằng hai tay.", lang: vi }
+        - { id: b2y, text: "Theo tôi, khi đưa đồ cho người lớn thì không cần đưa bằng hai tay.", lang: vi }
+        - { id: z8e, text: "Theo tôi, người lớn cần đưa đồ cho trẻ em bằng hai tay.", lang: vi }
+        - { id: u4g, text: "Theo tôi, khi nhận quà của bạn bè thì cần dùng hai tay.", lang: vi }
+    answer:
+      correct_option_id: m5j
+    explanation:
+      vi: 어른에게 드릴 때 là "khi đưa cho người lớn", 두 손으로 là "bằng hai tay", 필요가 있어요 là "cần". Câu không nói đến trẻ em hay bạn bè.
+    display_answer: "Theo tôi, khi đưa đồ cho người lớn thì cần đưa bằng hai tay."
+
+  - key: ko:exercise:opinions-etiquette-fill-piryo-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eul-piryoga-itda
+    prompt:
+      template: "친한 친구한테는 존댓말을 {{b1}} 필요가 없어요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Với bạn thân thì không cần dùng kính ngữ."
+        - "Gợi ý: 쓰다 + định ngữ -(으)ㄹ."
+    answer:
+      blanks:
+        b1: [쓸]
+    known_wrong:
+      - answer: 쓰는
+        feedback_vi: Trước 필요 dùng dạng -(으)ㄹ, không dùng -는 - 쓸 필요.
+        error_tag: piryo_form
+      - answer: 쓰기
+        feedback_vi: 쓰기 필요 không tự nhiên. Cấu trúc đúng là V-(으)ㄹ 필요가 없다 - 쓸 필요.
+        error_tag: piryo_form
+      - answer: 쓸을
+        feedback_vi: 쓰다 không có patchim nên chỉ thêm ㄹ - 쓸.
+        error_tag: eul_form
+    explanation:
+      vi: 쓰다 bỏ 다 còn 쓰 (không patchim) → thêm ㄹ thành 쓸. Cấu trúc V-(으)ㄹ 필요가 없다 nghĩa là "không cần làm".
+    display_answer: 친한 친구한테는 존댓말을 쓸 필요가 없어요.
+
+  - key: ko:exercise:opinions-etiquette-wb-agree
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:chanseonghada
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi tán thành ý kiến đó.\""
+      tokens:
+        - { id: t4, text: 찬성해요 }
+        - { id: t5, text: 의견을 }
+        - { id: t2, text: 그 }
+        - { id: t6, text: 찬성이에요 }
+        - { id: t1, text: 저는 }
+        - { id: t3, text: 의견에 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+        - [t2, t3, t1, t4]
+    explanation:
+      vi: Tán thành một ý kiến là N에 찬성하다 nên chọn 의견에. "Tôi tán thành" là động từ 찬성해요, không phải 찬성이에요 (là danh từ + "là").
+    display_answer: 저는 그 의견에 찬성해요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:opinions-etiquette-translate-manners-important
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-dago-saenggakhada
+    prompt:
+      source_text: Tôi nghĩ phép lịch sự rất quan trọng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 저는 예절이 아주 중요하다고 생각해요.
+        - 예절이 아주 중요하다고 생각해요.
+        - 저는 예절이 정말 중요하다고 생각해요.
+        - 예절이 정말 중요하다고 생각해요.
+        - 저는 예절이 매우 중요하다고 생각해요.
+        - 예절이 매우 중요하다고 생각해요.
+        - 전 예절이 아주 중요하다고 생각해요.
+        - 저는 예절이 너무 중요하다고 생각해요.
+        - 저는 예절이 아주 중요하다고 생각합니다.
+        - 제 생각에는 예절이 아주 중요해요.
+        - 제 생각에는 예절이 정말 중요해요.
+    known_wrong:
+      - answer: 저는 예절이 아주 중요한다고 생각해요.
+        feedback_vi: 중요하다 là tính từ nên chỉ thêm -다고 - 중요하다고, không thêm ㄴ.
+        error_tag: adjective_dago
+      - answer: 저는 예절이 아주 중요해요고 생각해요.
+        feedback_vi: Trước -고 생각해요 dùng dạng gốc -다 - 중요하다고, không dùng đuôi 해요.
+        error_tag: dago_haeyo_inside
+      - answer: 저는 생각해요 예절이 아주 중요하다고.
+        feedback_vi: Tiếng Hàn đặt 생각해요 ở cuối câu, sau mệnh đề -다고.
+        error_tag: word_order
+    explanation:
+      vi: Mệnh đề "phép lịch sự rất quan trọng" là 예절이 아주 중요하다 (tính từ) → thêm -고 생각해요. Khác tiếng Việt, "tôi nghĩ" đứng cuối câu.
+    display_answer: 저는 예절이 아주 중요하다고 생각해요.
+
+  - key: ko:exercise:opinions-etiquette-fill-agree-oppose
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:bandaehada
+    prompt:
+      template: "(Bố tôi phản đối kế hoạch đó.) 아버지는 그 계획{{b1}} 반대하세요. (Còn tôi tán thành.) 저는 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [에]
+        b2: [찬성해요]
+    known_wrong:
+      - answer: 찬성이에요
+        feedback_vi: '"Tôi tán thành" là động từ 찬성해요; 찬성이에요 nghĩa là "là sự tán thành".'
+        error_tag: noun_vs_verb
+      - answer: 반대해요
+        feedback_vi: Vế sau là "tôi tán thành" - 찬성해요; 반대해요 là "phản đối".
+        error_tag: agree_oppose
+      - answer: 이
+        feedback_vi: Đối tượng của 반대하다 khi nói về ý kiến, kế hoạch dùng 에 - 계획에 반대하다.
+        error_tag: particle_e
+    explanation:
+      vi: Phản đối/tán thành một kế hoạch, ý kiến dùng N에 반대하다/찬성하다. Câu thứ hai chỉ cần động từ 찬성해요.
+    display_answer: 아버지는 그 계획에 반대하세요. 저는 찬성해요.
+
+  - key: ko:exercise:opinions-etiquette-translate-no-need
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eul-piryoga-itda
+    prompt:
+      source_text: Với bạn thân thì không cần dùng kính ngữ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 친한 친구에게는 존댓말을 쓸 필요가 없어요.
+        - 친한 친구한테는 존댓말을 쓸 필요가 없어요.
+        - 친한 친구에게는 존댓말을 할 필요가 없어요.
+        - 친한 친구한테는 존댓말을 할 필요가 없어요.
+        - 친한 친구하고는 존댓말을 쓸 필요가 없어요.
+        - 친한 친구하고는 존댓말을 할 필요가 없어요.
+        - 친한 친구에게 존댓말을 쓸 필요가 없어요.
+        - 친한 친구한테 존댓말을 쓸 필요가 없어요.
+        - 친한 친구에게 존댓말을 할 필요가 없어요.
+        - 친한 친구한테 존댓말을 할 필요가 없어요.
+        - 친한 친구에게는 존댓말을 쓸 필요가 없습니다.
+    known_wrong:
+      - answer: 친한 친구에게는 존댓말을 쓰는 필요가 없어요.
+        feedback_vi: Trước 필요 dùng -(으)ㄹ - 쓸 필요.
+        error_tag: piryo_form
+      - answer: 친한 친구에게는 존댓말을 쓸 필요해요.
+        feedback_vi: "\"Không cần\" là 필요가 없어요; 필요해요 nghĩa là \"cần\"."
+        error_tag: piryo_negation
+      - answer: 친한 친구에게는 반말을 쓸 필요가 없어요.
+        feedback_vi: Kính ngữ là 존댓말; 반말 là lối nói trống không.
+        error_tag: vocab_jondaenmal
+    explanation:
+      vi: Không cần làm gì = V-(으)ㄹ 필요가 없어요. 쓰다 → 쓸; "với bạn thân" là 친한 친구에게(는) hoặc 한테(는).
+    display_answer: 친한 친구에게는 존댓말을 쓸 필요가 없어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:opinions-etiquette-mcq-elder-banmal
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:banmal
+    prompt:
+      stem: Bạn gặp bà cụ hàng xóm ở thang máy và muốn hỏi "Bà đi đâu ạ?". Câu nào phù hợp?
+      stem_lang: vi
+      options:
+        - { id: r6p, text: "할머니, 어디 가세요?", lang: ko }
+        - { id: e3k, text: "할머니, 어디 가?", lang: ko }
+        - { id: w9d, text: "할머니, 어디 가니?", lang: ko }
+        - { id: c1x, text: "할머니, 어디 갈래?", lang: ko }
+    answer:
+      correct_option_id: r6p
+    explanation:
+      vi: Với người lớn tuổi phải dùng 존댓말 - 가세요? vừa lịch sự vừa kính trọng. 가?, 가니?, 갈래? đều là 반말, chỉ dùng với bạn thân hoặc người nhỏ tuổi hơn.
+    display_answer: 할머니, 어디 가세요?
+
+  - key: ko:exercise:opinions-etiquette-translate-age-culture
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:nai-munhwa
+    prompt:
+      source_text: 제 생각에는 한국의 나이 문화를 이해할 필요가 있어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Theo tôi, cần phải hiểu văn hoá tuổi tác của Hàn Quốc.
+        - Theo tôi, cần phải hiểu văn hóa tuổi tác của Hàn Quốc.
+        - Theo tôi, cần hiểu văn hoá tuổi tác của Hàn Quốc.
+        - Theo tôi, cần hiểu văn hóa tuổi tác của Hàn Quốc.
+        - Theo tôi thì cần phải hiểu văn hoá tuổi tác của Hàn Quốc.
+        - Theo tôi thì cần phải hiểu văn hóa tuổi tác của Hàn Quốc.
+        - Theo tôi, chúng ta cần hiểu văn hoá tuổi tác của Hàn Quốc.
+        - Theo tôi, chúng ta cần hiểu văn hóa tuổi tác của Hàn Quốc.
+        - Theo tôi, cần phải hiểu văn hoá coi trọng tuổi tác của Hàn Quốc.
+        - Theo tôi, cần phải hiểu văn hóa coi trọng tuổi tác của Hàn Quốc.
+        - Tôi nghĩ cần phải hiểu văn hoá tuổi tác của Hàn Quốc.
+        - Tôi nghĩ cần phải hiểu văn hóa tuổi tác của Hàn Quốc.
+        - Theo ý tôi, cần phải hiểu văn hoá tuổi tác của Hàn Quốc.
+        - Theo ý tôi, cần phải hiểu văn hóa tuổi tác của Hàn Quốc.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Theo tôi, không cần hiểu văn hoá tuổi tác của Hàn Quốc.
+        feedback_vi: 필요가 있어요 là "cần"; "không cần" mới là 필요가 없어요.
+        error_tag: piryo_negation
+      - answer: Theo tôi, cần phải hiểu văn hoá ẩm thực của Hàn Quốc.
+        feedback_vi: 나이 là "tuổi", 나이 문화 là văn hoá tuổi tác, không liên quan đến ẩm thực.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 제 생각에는 = theo tôi; 이해할 필요가 있어요 = cần (phải) hiểu; 나이 문화 = văn hoá coi trọng tuổi tác.
+    display_answer: Theo tôi, cần phải hiểu văn hoá tuổi tác của Hàn Quốc.
+
+  - key: ko:exercise:opinions-etiquette-translate-elders-honorific
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:jondaenmal
+    prompt:
+      source_text: Tôi nghĩ cần phải dùng kính ngữ với người lớn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 어른에게는 존댓말을 쓸 필요가 있다고 생각해요.
+        - 어른한테는 존댓말을 쓸 필요가 있다고 생각해요.
+        - 어른에게 존댓말을 쓸 필요가 있다고 생각해요.
+        - 어른한테 존댓말을 쓸 필요가 있다고 생각해요.
+        - 어른에게는 존댓말을 할 필요가 있다고 생각해요.
+        - 어른한테는 존댓말을 할 필요가 있다고 생각해요.
+        - 어른에게 존댓말을 할 필요가 있다고 생각해요.
+        - 어른한테 존댓말을 할 필요가 있다고 생각해요.
+        - 저는 어른에게는 존댓말을 쓸 필요가 있다고 생각해요.
+        - 저는 어른한테는 존댓말을 쓸 필요가 있다고 생각해요.
+        - 저는 어른에게 존댓말을 쓸 필요가 있다고 생각해요.
+        - 저는 어른한테 존댓말을 쓸 필요가 있다고 생각해요.
+        - 저는 어른에게는 존댓말을 할 필요가 있다고 생각해요.
+        - 저는 어른한테는 존댓말을 할 필요가 있다고 생각해요.
+        - 저는 어른에게 존댓말을 할 필요가 있다고 생각해요.
+        - 저는 어른한테 존댓말을 할 필요가 있다고 생각해요.
+        - 제 생각에는 어른에게는 존댓말을 쓸 필요가 있어요.
+        - 제 생각에는 어른한테는 존댓말을 쓸 필요가 있어요.
+    known_wrong:
+      - answer: 어른에게는 존댓말을 쓸 필요가 있는다고 생각해요.
+        feedback_vi: 있다 đi với -다고 như tính từ - 있다고, không phải 있는다고.
+        error_tag: itda_dago
+      - answer: 어른에게는 존댓말을 쓸 필요가 있어요고 생각해요.
+        feedback_vi: Trước -고 생각해요 dùng dạng gốc - 있다고, không dùng đuôi 해요.
+        error_tag: dago_haeyo_inside
+      - answer: 어른에게는 반말을 쓸 필요가 있다고 생각해요.
+        feedback_vi: Kính ngữ là 존댓말; dùng 반말 với người lớn là vô lễ.
+        error_tag: vocab_jondaenmal
+      - answer: 어른에게는 존댓말을 쓰는 필요가 있다고 생각해요.
+        feedback_vi: Trước 필요 dùng -(으)ㄹ - 쓸 필요.
+        error_tag: piryo_form
+    explanation:
+      vi: Ghép hai cấu trúc - 존댓말을 쓸 필요가 있다 (cần dùng kính ngữ) + -고 생각해요. 있다 chỉ thêm -다고 → 있다고.
+    display_answer: 저는 어른에게는 존댓말을 쓸 필요가 있다고 생각해요.
+
+  - key: ko:exercise:opinions-etiquette-wb-dramas-fun
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-dago-saenggakhada
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Nhiều người cho rằng phim Hàn hay.\""
+      tokens:
+        - { id: q5, text: 재미있다고 }
+        - { id: q2, text: 사람들이 }
+        - { id: q7, text: 재미있는다고 }
+        - { id: q4, text: 드라마가 }
+        - { id: q6, text: 생각해요 }
+        - { id: q1, text: 많은 }
+        - { id: q3, text: 한국 }
+    answer:
+      orders:
+        - [q1, q2, q3, q4, q5, q6]
+        - [q3, q4, q5, q1, q2, q6]
+    explanation:
+      vi: 재미있다 có đuôi 있다 nên chỉ thêm -다고 → 재미있다고 (không phải 재미있는다고). 생각해요 luôn đứng cuối câu.
+    display_answer: 많은 사람들이 한국 드라마가 재미있다고 생각해요.

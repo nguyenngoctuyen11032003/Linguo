@@ -1,0 +1,443 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:comparing-cultures
+order_index: 2
+level: topik4
+title:
+  vi: So sánh văn hoá Hàn - Việt
+objectives:
+  - vi: So sánh hơn bằng N보다 (더) và "so với" bằng N에 비해(서), đặt trợ từ vào đúng vật bị so sánh.
+  - vi: Đối lập hai mặt của một sự việc bằng -는/(으)ㄴ 반면(에) trong văn viết.
+  - vi: Nói về điểm giống, khác, ưu điểm và nhược điểm giữa văn hoá truyền thống và hiện đại.
+estimated_minutes: 20
+skills: [grammar, reading, writing]
+prerequisites: [ko:lesson:opinions-etiquette]
+items:
+  - item: ko:item:gram-boda
+  - item: ko:item:gram-e-bihae
+  - item: ko:item:gram-neun-banmyeone
+  - item: ko:item:munhwa
+  - item: ko:item:jeontong
+  - item: ko:item:hyeondae
+  - item: ko:item:biseutada
+  - item: ko:item:dareuda
+  - item: ko:item:chai
+  - item: ko:item:jangjeom-danjeom
+  - item: ko:item:gram-dago-saenggakhada
+    role: reuse
+  - item: ko:item:je-saenggageneun
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn so sánh được Hàn Quốc và Việt Nam ("Việt Nam nóng hơn Hàn Quốc", "So với năm ngoái…") và đọc hiểu một đoạn văn ngắn nêu ưu, nhược điểm.
+  - type: explain
+    text:
+      vi: N보다 gắn vào vật bị đem ra so sánh (cái "kém" trong câu), còn chủ ngữ là cái "hơn" - 베트남이 한국보다 더 더워요. Tiếng Việt nói "A nóng hơn B", tiếng Hàn đặt B보다 trước tính từ; 더 (hơn) có thể bỏ.
+  - type: explain
+    text:
+      vi: N에 비해(서) nghĩa là "so với N", hay dùng trong bài viết, tin tức - 작년에 비해 관광객이 많다. Khi nói chuyện hằng ngày, N보다 tự nhiên hơn.
+  - type: explain
+    text:
+      vi: "-는 반면(에) đặt hai mặt trái ngược cạnh nhau, giống \"trong khi đó / ngược lại\". Động từ: -는 반면에 (많이 보는 반면에); tính từ: -(으)ㄴ 반면에 (편리한 반면에, 작은 반면에)."
+  - type: deep_explain
+    text:
+      vi: 비슷하다 (giống, tương tự) và 다르다 (khác) đều đi với 와/과 - 베트남과 비슷해요, 한국과 달라요. 다르다 là bất quy tắc 르 nên 해요체 là 달라요. Khi viết bài về văn hoá, cặp 장점 / 단점 và 차이 (khác biệt) giúp bạn sắp xếp ý rõ ràng.
+  - type: example
+    target: 베트남이 한국보다 더 더워요.
+    target_lang: ko
+    translation:
+      vi: Việt Nam nóng hơn Hàn Quốc.
+    note:
+      vi: 보다 gắn vào 한국 (cái bị so sánh), chủ ngữ 베트남이 là cái "hơn".
+  - type: example
+    target: 작년에 비해 한국 문화에 관심이 있는 사람이 많다.
+    target_lang: ko
+    translation:
+      vi: So với năm ngoái, số người quan tâm đến văn hoá Hàn Quốc nhiều hơn.
+    note:
+      vi: Câu viết theo kiểu văn viết -다 như trong báo chí.
+  - type: example
+    target: 한국의 설날은 베트남의 뗏과 비슷하지만 연휴는 뗏에 비해 짧아요.
+    target_lang: ko
+    translation:
+      vi: Tết của Hàn Quốc giống Tết Việt Nam, nhưng kỳ nghỉ thì ngắn hơn so với Tết.
+    note:
+      vi: 비슷하다 đi với 과 (뗏 có patchim ㅅ).
+  - type: example
+    target: 휴대폰은 편리한 반면에 화면이 작다.
+    target_lang: ko
+    translation:
+      vi: Điện thoại thì tiện lợi, trong khi đó màn hình lại nhỏ.
+    note:
+      vi: 편리하다 là tính từ → 편리한 반면에.
+  - type: example
+    target: 전통 문화와 현대 문화는 차이가 커요.
+    target_lang: ko
+    translation:
+      vi: Văn hoá truyền thống và văn hoá hiện đại khác nhau rất nhiều.
+  - type: common_mistake
+    wrong: 한국이 베트남보다 더 더워요.
+    right: 베트남이 한국보다 더 더워요.
+    target_lang: ko
+    note:
+      vi: Muốn nói "Việt Nam nóng hơn", người Việt hay gắn 보다 vào vật được nói "hơn" vì dịch theo thứ tự "nóng hơn Hàn Quốc". Hãy nhớ - 보다 đi theo cái bị so sánh, tức vật đứng sau chữ "hơn" trong tiếng Việt.
+  - type: common_mistake
+    wrong: 서울은 교통이 편리하는 반면에 집값이 비싸요.
+    right: 서울은 교통이 편리한 반면에 집값이 비싸요.
+    target_lang: ko
+    note:
+      vi: 편리하다 là tính từ nên dùng -(으)ㄴ 반면에; -는 반면에 chỉ dành cho động từ.
+  - type: common_mistake
+    wrong: 두 나라의 음식이 다라요.
+    right: 두 나라의 음식이 달라요.
+    target_lang: ko
+    note:
+      vi: "다르다 bất quy tắc 르 - thêm một ㄹ khi chia 아/어: 달라요, 달랐어요."
+  - type: summary
+    points:
+      - vi: A가 B보다 (더) + tính từ - A hơn B; 보다 gắn vào B.
+      - vi: N에 비해(서) - so với N (văn viết, tin tức).
+      - vi: V-는 반면에 · A-(으)ㄴ 반면에 - trong khi đó, ngược lại.
+      - vi: N과/와 비슷하다 · N과/와 다르다 (달라요) · 차이가 크다.
+      - vi: 전통 ↔ 현대 · 장점 ↔ 단점.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:comparing-cultures-mcq-boda-position
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-boda
+    prompt:
+      stem: Câu nào có nghĩa "Việt Nam nóng hơn Hàn Quốc"?
+      stem_lang: vi
+      options:
+        - { id: j7s, text: 베트남이 한국보다 더 더워요., lang: ko }
+        - { id: g2x, text: 한국이 베트남보다 더 더워요., lang: ko }
+        - { id: o5n, text: 베트남보다 한국이 더 더워요., lang: ko }
+        - { id: y8b, text: 베트남이 한국이 더 더워요., lang: ko }
+    answer:
+      correct_option_id: j7s
+    explanation:
+      vi: 보다 gắn vào cái bị so sánh (한국), cái "hơn" là chủ ngữ (베트남이). Hai câu có 한국이 làm chủ ngữ lại nói Hàn Quốc nóng hơn; câu cuối thiếu 보다.
+    display_answer: 베트남이 한국보다 더 더워요.
+
+  - key: ko:exercise:comparing-cultures-listen-e-bihae
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-e-bihae
+    prompt:
+      audio_asset_id: null
+      fallback_text: 요즘 베트남 사람들은 예전에 비해 한국 문화에 관심이 많아요.
+      options:
+        - { id: v3h, text: "Dạo này người Việt quan tâm đến văn hoá Hàn Quốc nhiều hơn so với trước đây.", lang: vi }
+        - { id: l6q, text: "Dạo này người Việt ít quan tâm đến văn hoá Hàn Quốc hơn trước.", lang: vi }
+        - { id: n1w, text: "Trước đây người Hàn quan tâm nhiều đến văn hoá Việt Nam.", lang: vi }
+        - { id: s9c, text: "Văn hoá Việt Nam và văn hoá Hàn Quốc rất giống nhau.", lang: vi }
+    answer:
+      correct_option_id: v3h
+    explanation:
+      vi: 예전에 비해 là "so với trước đây", 관심이 많아요 là "quan tâm nhiều". Chủ ngữ là 베트남 사람들 và đối tượng là 한국 문화.
+    display_answer: "Dạo này người Việt quan tâm đến văn hoá Hàn Quốc nhiều hơn so với trước đây."
+
+  - key: ko:exercise:comparing-cultures-mcq-banmyeon-form
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-neun-banmyeone
+    prompt:
+      stem: "Chọn dạng đúng: 서울은 교통이 ___ 반면에 집값이 비싸요."
+      stem_lang: vi
+      options:
+        - { id: e4r, text: 편리한, lang: ko }
+        - { id: u7m, text: 편리하는, lang: ko }
+        - { id: b5z, text: 편리할, lang: ko }
+        - { id: i2f, text: 편리해서, lang: ko }
+    answer:
+      correct_option_id: e4r
+    explanation:
+      vi: 편리하다 là tính từ nên dùng -(으)ㄴ 반면에 → 편리한. -는 chỉ dùng với động từ; 편리할 là tương lai, 편리해서 là "vì tiện" - không đi với 반면에.
+    display_answer: 편리한
+
+  - key: ko:exercise:comparing-cultures-fill-similar-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:biseutada
+    prompt:
+      template: "한국과 베트남은 문화가 {{b1}}. 하지만 차이도 있어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Hàn Quốc và Việt Nam có văn hoá giống nhau. Nhưng cũng có khác biệt."
+        - "Gợi ý: tính từ 비슷하다 ở đuôi 해요체."
+    answer:
+      blanks:
+        b1: [비슷해요]
+    known_wrong:
+      - answer: 같아요
+        feedback_vi: 같아요 là "giống hệt", mâu thuẫn với vế sau "cũng có khác biệt". Dùng 비슷해요 (tương tự).
+        error_tag: similar_same
+      - answer: 비슷이에요
+        feedback_vi: 비슷하다 là tính từ, chia 해요체 thành 비슷해요.
+        error_tag: haeyo_form
+      - answer: 달라요
+        feedback_vi: 달라요 là "khác". Câu đầu nói hai nước giống nhau.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 비슷하다 → 비슷해요 (giống, tương tự). Vế sau 하지만 차이도 있어요 cho thấy chỉ "gần giống", nên không dùng 같아요.
+    display_answer: 한국과 베트남은 문화가 비슷해요.
+
+  - key: ko:exercise:comparing-cultures-wb-ticket-price
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-e-bihae
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"So với năm ngoái, vé đắt hơn.\""
+      tokens:
+        - { id: k5, text: 비싸요 }
+        - { id: k2, text: 비해 }
+        - { id: k6, text: 작년을 }
+        - { id: k4, text: 더 }
+        - { id: k1, text: 작년에 }
+        - { id: k3, text: 표가 }
+    answer:
+      orders:
+        - [k1, k2, k3, k4, k5]
+        - [k3, k1, k2, k4, k5]
+    explanation:
+      vi: '"So với N" là N에 비해 - trợ từ 에, không phải 을. Cụm 작년에 비해 có thể đứng đầu câu hoặc sau chủ ngữ 표가.'
+    display_answer: 작년에 비해 표가 더 비싸요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:comparing-cultures-translate-prefer-drama
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-boda
+    prompt:
+      source_text: Tôi thích phim bộ Hàn hơn phim bộ Mỹ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 저는 미국 드라마보다 한국 드라마를 더 좋아해요.
+        - 미국 드라마보다 한국 드라마를 더 좋아해요.
+        - 저는 한국 드라마를 미국 드라마보다 더 좋아해요.
+        - 한국 드라마를 미국 드라마보다 더 좋아해요.
+        - 저는 미국 드라마보다 한국 드라마가 더 좋아요.
+        - 미국 드라마보다 한국 드라마가 더 좋아요.
+        - 저는 한국 드라마가 미국 드라마보다 더 좋아요.
+        - 한국 드라마가 미국 드라마보다 더 좋아요.
+        - 저는 미국 드라마보다 한국 드라마를 좋아해요.
+        - 전 미국 드라마보다 한국 드라마를 더 좋아해요.
+    known_wrong:
+      - answer: 저는 한국 드라마보다 미국 드라마를 더 좋아해요.
+        feedback_vi: Câu này nghĩa là thích phim Mỹ hơn. 보다 phải gắn vào phim bị so sánh - 미국 드라마보다.
+        error_tag: boda_reversed
+      - answer: 저는 미국 드라마보다 한국 드라마를 더 좋아요.
+        feedback_vi: 드라마를 (을/를) đi với 좋아해요; nếu dùng 좋아요 thì đổi thành 드라마가.
+        error_tag: particle_like_verb
+      - answer: 저는 더 좋아해요 한국 드라마 미국 드라마보다.
+        feedback_vi: Động từ 좋아해요 đứng cuối câu, cụm N보다 đứng trước.
+        error_tag: word_order
+    explanation:
+      vi: Cái bị so sánh là phim Mỹ → 미국 드라마보다. Cái được thích hơn là 한국 드라마를 (+ 좋아해요) hoặc 한국 드라마가 (+ 좋아요).
+    display_answer: 저는 미국 드라마보다 한국 드라마를 더 좋아해요.
+
+  - key: ko:exercise:comparing-cultures-fill-boda-different
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:dareuda
+    prompt:
+      template: "(Việt Nam ấm hơn Hàn Quốc. Và văn hoá ẩm thực của hai nước cũng khác nhau.) 베트남은 한국{{b1}} 더 따뜻해요. 그리고 두 나라는 음식 문화도 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [보다]
+        b2: [달라요]
+    known_wrong:
+      - answer: 다라요
+        feedback_vi: 다르다 là bất quy tắc 르 - thêm một ㄹ thành 달라요.
+        error_tag: reu_irregular
+      - answer: 다르어요
+        feedback_vi: 다르다 là bất quy tắc 르 - viết 달라요.
+        error_tag: reu_irregular
+      - answer: 이
+        feedback_vi: Cần trợ từ so sánh 보다 (hơn), không phải trợ từ chủ ngữ.
+        error_tag: boda_missing
+      - answer: 비슷해요
+        feedback_vi: 비슷해요 là "giống nhau"; câu cần "khác nhau" - 달라요.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 한국보다 - "hơn Hàn Quốc". 다르다 chia 해요체 theo bất quy tắc 르 → 달라요.
+    display_answer: 베트남은 한국보다 더 따뜻해요. 그리고 두 나라는 음식 문화도 달라요.
+
+  - key: ko:exercise:comparing-cultures-translate-hanoi-cheaper
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-e-bihae
+    prompt:
+      source_text: So với Seoul, Hà Nội rẻ hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 서울에 비해 하노이가 더 싸요.
+        - 서울에 비해서 하노이가 더 싸요.
+        - 서울에 비해 하노이가 싸요.
+        - 서울에 비해서 하노이가 싸요.
+        - 서울에 비해 하노이는 더 싸요.
+        - 서울에 비해 하노이는 싸요.
+        - 하노이가 서울에 비해 더 싸요.
+        - 하노이가 서울에 비해서 더 싸요.
+        - 하노이는 서울에 비해 더 싸요.
+        - 하노이는 서울에 비해 싸요.
+        - 서울보다 하노이가 더 싸요.
+        - 하노이가 서울보다 더 싸요.
+        - 하노이는 서울보다 더 싸요.
+    known_wrong:
+      - answer: 서울을 비해 하노이가 더 싸요.
+        feedback_vi: '"So với" là N에 비해 - dùng trợ từ 에, không dùng 을.'
+        error_tag: e_bihae_particle
+      - answer: 하노이에 비해 서울이 더 싸요.
+        feedback_vi: Câu này nói Seoul rẻ hơn. Cái bị so sánh là Seoul - 서울에 비해.
+        error_tag: boda_reversed
+      - answer: 서울에 비해 하노이가 더 비싸요.
+        feedback_vi: 비싸요 là "đắt"; "rẻ" là 싸요.
+        error_tag: vocab_meaning
+    explanation:
+      vi: So với N = N에 비해(서), đặt trước phần nhận xét. Trong câu nói, 서울보다 하노이가 더 싸요 cũng đúng.
+    display_answer: 서울에 비해 하노이가 더 싸요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:comparing-cultures-mcq-banmyeon-meaning
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-neun-banmyeone
+    prompt:
+      stem: "Bạn viết bài luận và muốn nói: \"Điện thoại tiện lợi, trong khi đó màn hình lại nhỏ.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: h8a, text: 휴대폰은 편리한 반면에 화면이 작다., lang: ko }
+        - { id: m3e, text: 휴대폰은 편리하는 반면에 화면이 작다., lang: ko }
+        - { id: c6u, text: 휴대폰은 편리한 반면에 아주 좋다., lang: ko }
+        - { id: w1o, text: 휴대폰은 편리해서 반면에 화면이 작다., lang: ko }
+    answer:
+      correct_option_id: h8a
+    explanation:
+      vi: 편리하다 là tính từ → 편리한 반면에, và hai vế phải trái ngược nhau (tiện ↔ màn hình nhỏ). "아주 좋다" không đối lập; -아서 không ghép với 반면에.
+    display_answer: 휴대폰은 편리한 반면에 화면이 작다.
+
+  - key: ko:exercise:comparing-cultures-mcq-reading-phone
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:jangjeom-danjeom
+    prompt:
+      stem: "다음 글의 내용과 같은 것을 고르십시오.\n예전에 비해 요즘 한국 사람들은 드라마를 텔레비전보다 휴대폰으로 더 많이 본다. 휴대폰은 언제 어디서나 볼 수 있다는 장점이 있는 반면에 화면이 작아서 오래 보면 눈이 아프다는 단점도 있다. 그래도 젊은 사람들은 휴대폰으로 보는 것을 더 좋아한다."
+      stem_lang: ko
+      options:
+        - { id: f2p, text: 요즘은 휴대폰으로 드라마를 보는 사람이 더 많다., lang: ko }
+        - { id: z6k, text: 휴대폰은 화면이 커서 오래 봐도 괜찮다., lang: ko }
+        - { id: t4j, text: 젊은 사람들은 텔레비전으로 보는 것을 더 좋아한다., lang: ko }
+        - { id: a9y, text: 휴대폰으로 드라마를 보는 것은 단점이 없다., lang: ko }
+    answer:
+      correct_option_id: f2p
+    explanation:
+      vi: Câu đầu nói so với trước đây người Hàn xem phim bằng điện thoại nhiều hơn TV. Bài nêu nhược điểm là màn hình nhỏ, mỏi mắt, và người trẻ thích xem bằng điện thoại hơn.
+    display_answer: 요즘은 휴대폰으로 드라마를 보는 사람이 더 많다.
+
+  - key: ko:exercise:comparing-cultures-translate-pros-cons
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:jangjeom-danjeom
+    prompt:
+      source_text: 유튜브는 장점도 있고 단점도 있어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - YouTube có cả ưu điểm lẫn nhược điểm.
+        - YouTube có cả ưu điểm và nhược điểm.
+        - YouTube có ưu điểm và cũng có nhược điểm.
+        - YouTube có ưu điểm, cũng có nhược điểm.
+        - YouTube có ưu điểm cũng có nhược điểm.
+        - YouTube vừa có ưu điểm vừa có nhược điểm.
+        - YouTube có điểm tốt và cũng có điểm xấu.
+        - YouTube có cả mặt tốt lẫn mặt xấu.
+        - YouTube có cả ưu điểm lẫn khuyết điểm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: YouTube chỉ có ưu điểm.
+        feedback_vi: Câu có cả 장점도 (ưu điểm) và 단점도 (nhược điểm).
+        error_tag: missing_part
+      - answer: YouTube có ưu điểm nhưng không có nhược điểm.
+        feedback_vi: 단점도 있어요 nghĩa là "cũng có nhược điểm".
+        error_tag: vocab_meaning
+    explanation:
+      vi: 장점 = ưu điểm, 단점 = nhược điểm; N도 있고 N도 있어요 = có cả… lẫn….
+    display_answer: YouTube có cả ưu điểm lẫn nhược điểm.
+
+  - key: ko:exercise:comparing-cultures-translate-similar-different
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:chai
+    prompt:
+      source_text: Văn hoá Hàn Quốc và Việt Nam giống nhau nhưng cũng có khác biệt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 한국과 베트남의 문화는 비슷하지만 차이도 있어요.
+        - 한국하고 베트남의 문화는 비슷하지만 차이도 있어요.
+        - 한국 문화와 베트남 문화는 비슷하지만 차이도 있어요.
+        - 한국 문화하고 베트남 문화는 비슷하지만 차이도 있어요.
+        - 한국과 베트남은 문화가 비슷하지만 차이도 있어요.
+        - 한국하고 베트남은 문화가 비슷하지만 차이도 있어요.
+        - 한국과 베트남의 문화는 비슷하지만 다른 점도 있어요.
+        - 한국 문화와 베트남 문화는 비슷하지만 다른 점도 있어요.
+        - 한국과 베트남은 문화가 비슷하지만 다른 점도 있어요.
+        - 한국과 베트남의 문화는 비슷하지만 차이점도 있어요.
+        - 한국 문화와 베트남 문화는 비슷하지만 차이점도 있어요.
+        - 한국과 베트남의 문화는 비슷하지만 차이가 있어요.
+        - 한국 문화와 베트남 문화는 비슷하지만 차이가 있어요.
+    known_wrong:
+      - answer: 한국와 베트남의 문화는 비슷하지만 차이도 있어요.
+        feedback_vi: 한국 có patchim ㄱ nên dùng 과 - 한국과.
+        error_tag: particle_wa_gwa
+      - answer: 한국과 베트남의 문화는 같지만 차이도 있어요.
+        feedback_vi: 같다 là "giống hệt", mâu thuẫn với "có khác biệt". Dùng 비슷하다.
+        error_tag: similar_same
+      - answer: 한국과 베트남의 문화는 비슷하지만 차이도 없어요.
+        feedback_vi: '"Cũng có khác biệt" là 차이도 있어요.'
+        error_tag: vocab_meaning
+    explanation:
+      vi: Giống nhau (tương tự) = 비슷하다 → 비슷하지만 (nhưng). Khác biệt = 차이 hoặc 다른 점; "cũng có" = 도 있어요.
+    display_answer: 한국과 베트남의 문화는 비슷하지만 차이도 있어요.

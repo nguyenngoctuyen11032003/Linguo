@@ -1,0 +1,408 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:academic-culture-review
+order_index: 5
+level: topik6
+title:
+  vi: Ôn tập - bài luận, bài giảng và chuyên mục văn hoá
+objectives:
+  - vi: Đọc và nghe hiểu đoạn bài luận, bài giảng, chuyên mục văn hoá ở trình độ TOPIK 6.
+  - vi: Kết hợp bố cục bài luận, ngữ pháp cao cấp, thành ngữ và từ vựng học thuật trong một văn bản.
+  - vi: Tự sửa lỗi văn phong và lỗi từ Hán Việt trước khi viết câu 54.
+estimated_minutes: 25
+skills: [reading, listening, writing, grammar]
+prerequisites: [ko:lesson:academic-idioms-proverbs]
+items:
+  - item: ko:item:ac-seoron-bonron-gyeollon
+    role: reuse
+  - item: ko:item:ac-iwa-gachi
+    role: reuse
+  - item: ko:item:ac-ttaraseo
+    role: reuse
+  - item: ko:item:ac-gram-dago-bol-su-itda
+    role: reuse
+  - item: ko:item:ac-gram-euro-inhae
+    role: reuse
+  - item: ko:item:ac-gram-e-bulgwahada
+    role: reuse
+  - item: ko:item:ac-gram-n-neun-dedaga
+    role: reuse
+  - item: ko:item:ac-gram-ji-aneul-su-eopda
+    role: reuse
+  - item: ko:item:ac-gram-l-jieonjeong
+    role: reuse
+  - item: ko:item:ac-gram-gineun-keonyeong
+    role: reuse
+  - item: ko:item:ac-gram-neun-ba
+    role: reuse
+  - item: ko:item:ac-yulli
+    role: reuse
+  - item: ko:item:ac-sedae-galdeung
+    role: reuse
+  - item: ko:item:ac-gachigwan
+    role: reuse
+  - item: ko:item:ac-tikkeul-moa-taesan
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn này đưa bạn qua ba loại văn bản TOPIK 6 - một đoạn bài luận câu 54, một trích đoạn bài giảng và một chuyên mục văn hoá. Bạn sẽ vừa đọc hiểu vừa tự viết lại bằng văn phong -ㄴ다.
+  - type: explain
+    text:
+      vi: Khi đọc, hãy tìm từ nối để đoán vai trò của câu - 첫째/둘째 là luận điểm, 따라서/그러므로 là kết luận, 이와 같이 là mở đầu kết bài. Ngữ pháp cao cấp cho biết thái độ người viết - 에 불과하다 hạ thấp, -지 않을 수 없다 khẳng định, -기는커녕 phê phán.
+  - type: explain
+    text:
+      vi: Khi viết, giữ một đuôi văn viết -ㄴ다 cho cả bài, thay 그래서/근데 bằng 따라서/그러나, và trích tục ngữ bằng 이라는 말이 있듯이. Với từ Hán Hàn, kiểm tra nghĩa thật trước khi dùng - 주장, 공부, 사정, 규제.
+  - type: deep_explain
+    text:
+      vi: Bài 54 đạt điểm cao thường có mỗi đoạn một ý chính, câu chủ đề ở đầu đoạn và một câu chuyển ý ở cuối. Một câu tục ngữ hay 사자성어 đặt đúng chỗ (thường ở mở bài hoặc kết bài) giúp bài tự nhiên hơn, nhưng dùng quá hai câu sẽ thành gượng ép.
+  - type: example
+    target: 최근 인공지능 기술이 빠르게 발전하면서 이에 대한 논란도 커지고 있다. 인공지능은 효율이 높은 데다가 비용도 적게 든다. 그러나 잘못된 데이터로 인해 차별적인 판단을 내릴 수 있다는 점을 고려하지 않을 수 없다. 따라서 기술 개발과 함께 윤리적 기준을 마련해야 한다.
+    target_lang: ko
+    translation:
+      vi: Gần đây công nghệ trí tuệ nhân tạo phát triển nhanh nên tranh cãi xung quanh nó cũng ngày càng lớn. Trí tuệ nhân tạo đã hiệu quả cao lại còn ít tốn kém. Tuy nhiên, không thể không xét đến việc nó có thể đưa ra phán đoán phân biệt đối xử do dữ liệu sai lệch. Do đó, cần xây dựng chuẩn mực đạo đức song song với phát triển công nghệ.
+    note:
+      vi: Đoạn bài luận mẫu - 데다가 cộng ưu điểm, 그러나 chuyển ý, 로 인해 nêu nguyên nhân, 따라서 kết luận.
+  - type: example
+    target: 명절에 가족이 모이면 세대 갈등이 생기기 쉽다. 그러나 서로의 가치관을 존중한다면 명절은 갈등의 시간이 아니라 전통을 함께 계승하는 시간이 될 수 있다.
+    target_lang: ko
+    translation:
+      vi: Khi gia đình tụ họp ngày lễ tết, xung đột thế hệ rất dễ nảy sinh. Nhưng nếu tôn trọng hệ giá trị của nhau, ngày lễ có thể trở thành dịp cùng nhau kế thừa truyền thống chứ không phải dịp xung đột.
+    note:
+      vi: Trích chuyên mục văn hoá - N이 아니라 N = "không phải... mà là", mẫu câu hay dùng để nêu quan điểm.
+  - type: example
+    target: 앞에서 살펴본 바와 같이 인공지능의 판단은 결국 데이터에 의존할 수밖에 없습니다.
+    target_lang: ko
+    translation:
+      vi: Như chúng ta đã xem xét ở trên, phán đoán của trí tuệ nhân tạo rốt cuộc buộc phải dựa vào dữ liệu.
+    note:
+      vi: Trích bài giảng - đuôi -습니다 của văn nói trang trọng; 바와 같이 nối lại phần trước của bài giảng.
+  - type: common_mistake
+    wrong: 그래서 저는 인공지능 규제가 필요하다고 생각해요.
+    right: 따라서 인공지능에 대한 규제가 필요하다고 볼 수 있다.
+    target_lang: ko
+    note:
+      vi: Câu sai mắc cùng lúc hai lỗi văn phong - từ nối văn nói 그래서 và đuôi 해요체. Bài luận cần 따라서 và đuôi -다, kèm cách nói khách quan.
+  - type: common_mistake
+    wrong: 공든 탑이 무너질까요? 열심히 했으니 괜찮을 거예요.
+    right: 공든 탑이 무너지랴. 열심히 준비했으니 좋은 결과가 있을 것이다.
+    target_lang: ko
+    note:
+      vi: Tục ngữ phải giữ nguyên dạng cổ -(으)랴; chia lại thành 무너질까요 làm mất tính thành ngữ. Phần sau cũng nên giữ văn viết.
+  - type: summary
+    points:
+      - vi: Bố cục - 서론 · 본론 (첫째, 둘째) · 결론 (이와 같이); từ nối 따라서, 그러므로, 그러나.
+      - vi: Thái độ - 에 불과하다 (hạ thấp) · -지 않을 수 없다 (khẳng định) · -기는커녕 (phê phán) · -(으)ㄹ지언정 (lập trường).
+      - vi: Rào đón - -다고 볼 수 있다, -(으)ㄹ 것으로 보인다; trích dẫn - 바와 같이, 이라는 말이 있듯이.
+      - vi: Kiểm tra bẫy Hán Việt và không dịch từng chữ tục ngữ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:ac-review-listen-lecture
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:ac-gram-neun-ba
+    prompt:
+      audio_asset_id: null
+      fallback_text: 앞에서 살펴본 바와 같이 인공지능의 판단은 결국 데이터에 의존할 수밖에 없습니다.
+      options:
+        - { id: q4z, text: "Như đã xem xét ở trên, phán đoán của AI rốt cuộc buộc phải dựa vào dữ liệu.", lang: vi }
+        - { id: e7h, text: "Như đã xem xét ở trên, phán đoán của AI không cần dựa vào dữ liệu.", lang: vi }
+        - { id: t2b, text: "Chúng ta sẽ xem xét cách AI tạo ra dữ liệu ở phần sau.", lang: vi }
+        - { id: y6m, text: "Phán đoán của con người rốt cuộc phải dựa vào AI.", lang: vi }
+    answer:
+      correct_option_id: q4z
+    explanation:
+      vi: 살펴본 바와 같이 = "như đã xem xét" (việc đã làm, không phải sẽ làm); 의존할 수밖에 없다 = buộc phải dựa vào. Chủ thể phán đoán là 인공지능, đối tượng dựa vào là 데이터.
+    display_answer: "Như đã xem xét ở trên, phán đoán của AI rốt cuộc buộc phải dựa vào dữ liệu."
+
+  - key: ko:exercise:ac-review-mcq-column-main-idea
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:ac-sedae-galdeung
+    prompt:
+      stem: "명절에 가족이 모이면 세대 갈등이 생기기 쉽다. 그러나 서로의 가치관을 존중한다면 명절은 갈등의 시간이 아니라 전통을 함께 계승하는 시간이 될 수 있다. - Ý chính của đoạn chuyên mục này là gì?"
+      stem_lang: vi
+      options:
+        - { id: r8c, text: Tôn trọng hệ giá trị của nhau thì ngày lễ trở thành dịp cùng kế thừa truyền thống., lang: vi }
+        - { id: w3n, text: Nên bỏ việc tụ họp ngày lễ để tránh xung đột thế hệ., lang: vi }
+        - { id: s9f, text: Thế hệ trẻ không còn quan tâm đến truyền thống ngày lễ., lang: vi }
+        - { id: j1k, text: Xung đột thế hệ ngày lễ là điều không thể tránh khỏi., lang: vi }
+    answer:
+      correct_option_id: r8c
+    explanation:
+      vi: Ý chính nằm sau 그러나 - nếu 가치관을 존중 thì ngày lễ là dịp 전통을 계승. Câu đầu chỉ nêu vấn đề; đoạn văn không khuyên bỏ tụ họp hay nói xung đột là tất yếu.
+    display_answer: Tôn trọng hệ giá trị của nhau thì ngày lễ trở thành dịp cùng kế thừa truyền thống.
+
+  - key: ko:exercise:ac-review-mcq-iwa-gachi
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-iwa-gachi
+    prompt:
+      stem: "Câu đầu tiên của phần kết bài: \"___ 세대 갈등은 서로의 가치관을 존중할 때 줄일 수 있다.\" Chọn từ phù hợp nhất."
+      stem_lang: vi
+      options:
+        - { id: p5u, text: 이와 같이, lang: ko }
+        - { id: h8d, text: 첫째, lang: ko }
+        - { id: a2y, text: 근데, lang: ko }
+        - { id: m6r, text: 그래서, lang: ko }
+    answer:
+      correct_option_id: p5u
+    explanation:
+      vi: Mở đầu kết bài, tóm lại các ý đã trình bày - 이와 같이. 첫째 dùng ở thân bài; 근데 và 그래서 là văn nói.
+    display_answer: 이와 같이
+
+  - key: ko:exercise:ac-review-fill-dedaga
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-gram-n-neun-dedaga
+    prompt:
+      template: "이 정책은 비용이 많이 {{b1}} 효과도 크지 않다."
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - Chính sách này đã tốn kém lại còn kém hiệu quả.
+        - 들다 là động từ → -는 데다가.
+    answer:
+      blanks:
+        b1: [드는 데다가, 드는 데다]
+    known_wrong:
+      - answer: 들는 데다가
+        feedback_vi: 들다 có patchim ㄹ, gặp -는 thì ㄹ rơi - 드는 데다가.
+        error_tag: l_irregular
+      - answer: 들지만
+        feedback_vi: -지만 là đối lập, nhưng hai ý ở đây cùng xấu. Dùng 드는 데다가.
+        error_tag: connective_meaning
+    explanation:
+      vi: 들다 (tốn) là động từ nên dùng -는 데다가; ㄹ rơi trước ㄴ - 드는. Hai ý cùng chiều (tốn kém, kém hiệu quả) và vế sau có 도.
+    display_answer: 이 정책은 비용이 많이 드는 데다가 효과도 크지 않다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:ac-review-fill-bulgwa
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gram-e-bulgwahada
+    prompt:
+      template: "Ý kiến tán thành chỉ chiếm vỏn vẹn 20%. - 찬성 의견은 20%{{b1}}."
+      blanks:
+        - { id: b1, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [에 불과했다, 에 불과하다, 에 불과합니다, 에 불과했습니다]
+    known_wrong:
+      - answer: 만에 불과했다
+        feedback_vi: 불과하다 đã có nghĩa "chỉ", không thêm 만.
+        error_tag: redundant_man
+      - answer: 이 불과했다
+        feedback_vi: Cấu trúc cố định là N에 불과하다 - dùng trợ từ 에.
+        error_tag: particle_choice
+      - answer: 에 불과해
+        feedback_vi: Đuôi 반말 không hợp văn viết. Dùng 불과하다/불과했다.
+        error_tag: register_ending
+    explanation:
+      vi: "\"Chỉ chiếm vỏn vẹn\" = N에 불과하다. Trong văn viết dùng 불과하다 hoặc 불과했다; 불과합니다 dùng khi trình bày."
+    display_answer: 찬성 의견은 20%에 불과했다.
+
+  - key: ko:exercise:ac-review-fill-geureona
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-ttaraseo
+    prompt:
+      template: "Viết lại bằng văn phong bài luận: \"근데 이 방법에도 한계가 있다.\" → {{b1}} 이 방법에도 한계가 있다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [그러나, 하지만, 그렇지만]
+    known_wrong:
+      - answer: 근데
+        feedback_vi: 근데 là văn nói. Trong bài luận dùng 그러나 hoặc 하지만.
+        error_tag: register_spoken
+      - answer: 따라서
+        feedback_vi: 따라서 là "do đó" - sai quan hệ ý. Câu cần ý đối lập - 그러나.
+        error_tag: connective_meaning
+      - answer: 그래서
+        feedback_vi: 그래서 là văn nói và sai quan hệ ý. Dùng 그러나.
+        error_tag: register_spoken
+    explanation:
+      vi: 근데 (rút gọn của 그런데) mang ý đối lập trong văn nói. Văn viết dùng 그러나, 하지만 hoặc 그렇지만.
+    display_answer: 그러나 이 방법에도 한계가 있다.
+
+  - key: ko:exercise:ac-review-translate-inhae
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gram-euro-inhae
+    prompt:
+      source_text: Do biến đổi khí hậu, mùa hè ngày càng nóng hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 기후 변화로 인해 여름이 점점 더워지고 있다.
+        - 기후 변화로 인해서 여름이 점점 더워지고 있다.
+        - 기후 변화로 인해 여름이 갈수록 더워지고 있다.
+        - 기후 변화로 인해 여름이 점점 더 더워지고 있다.
+        - 기후 변화로 인해 여름이 점점 더워지고 있습니다.
+        - 기후 변화로 인해 여름이 점점 더워지고 있어요.
+        - 기후 변화 때문에 여름이 점점 더워지고 있다.
+    known_wrong:
+      - answer: 기후 변화에 인해 여름이 점점 더워지고 있다.
+        feedback_vi: Cấu trúc là N(으)로 인해 - 변화로 인해, không dùng 에.
+        error_tag: particle_choice
+      - answer: 기후 변화로 인해 여름이 점점 덥고 있다.
+        feedback_vi: Tính từ 덥다 không đi với -고 있다. "Ngày càng nóng" là 더워지고 있다 (-아/어지다).
+        error_tag: adjective_progressive
+      - answer: 기후가 변하기로 인해 여름이 점점 더워지고 있다.
+        feedback_vi: (으)로 인해 chỉ đi sau danh từ - 기후 변화로 인해.
+        error_tag: noun_only
+    explanation:
+      vi: 기후 변화 (biến đổi khí hậu) là danh từ nên + 로 인해. "Ngày càng nóng" = 점점 더워지다; quá trình đang diễn ra dùng -고 있다.
+    display_answer: 기후 변화로 인해 여름이 점점 더워지고 있다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:ac-review-mcq-proverb-essay
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-tikkeul-moa-taesan
+    prompt:
+      stem: "Chọn tục ngữ hợp với đoạn bài luận: \"___(이)라는 말이 있듯이 적은 돈이라도 꾸준히 기부하면 큰 도움이 된다.\""
+      stem_lang: vi
+      options:
+        - { id: c9a, text: 티끌 모아 태산, lang: ko }
+        - { id: l4v, text: 금상첨화, lang: ko }
+        - { id: o2w, text: 우물 안 개구리, lang: ko }
+        - { id: z7e, text: 작심삼일, lang: ko }
+    answer:
+      correct_option_id: c9a
+    explanation:
+      vi: Ý đoạn văn là nhiều khoản nhỏ góp lại thành giúp đỡ lớn - 티끌 모아 태산. 금상첨화 là tốt thêm tốt, 우물 안 개구리 là hiểu biết hạn hẹp, 작심삼일 là thiếu kiên trì.
+    display_answer: 티끌 모아 태산
+
+  - key: ko:exercise:ac-review-mcq-keonyeong-column
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:ac-gram-gineun-keonyeong
+    prompt:
+      stem: "Chuyên mục văn hoá: \"일부 젊은이들은 전통을 지키___ 관심조차 없다는 비판을 받는다.\" Chọn đáp án đúng."
+      stem_lang: vi
+      options:
+        - { id: x1s, text: 기는커녕, lang: ko }
+        - { id: f6p, text: 는 한, lang: ko }
+        - { id: n3g, text: 는 데다가, lang: ko }
+        - { id: b8t, text: 지 않을 수 없어, lang: ko }
+    answer:
+      correct_option_id: x1s
+    explanation:
+      vi: Vế sau 관심조차 없다 (ngay cả quan tâm cũng không) còn tệ hơn kỳ vọng "giữ truyền thống" - đúng ngữ cảnh -기는커녕. 지키는 한 (chừng nào còn giữ) và 지키는 데다가 (đã giữ lại còn) mâu thuẫn với vế "không quan tâm"; 지키지 않을 수 없어 thì sai cả nghĩa lẫn hình thức.
+    display_answer: 기는커녕
+
+  - key: ko:exercise:ac-review-translate-jieonjeong
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:ac-gram-l-jieonjeong
+    prompt:
+      source_text: 비가 올지언정 약속은 꼭 지키겠다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù trời có mưa, tôi cũng nhất định sẽ giữ lời hứa.
+        - Dù trời có mưa, tôi cũng sẽ giữ lời hứa.
+        - Dù trời có mưa, tôi vẫn nhất định giữ lời hứa.
+        - Dù có mưa, tôi cũng nhất định sẽ giữ lời hứa.
+        - Dù trời có mưa đi nữa, tôi cũng nhất định giữ lời hứa.
+        - Cho dù trời có mưa, tôi cũng nhất định sẽ giữ lời hứa.
+        - Dù trời mưa, tôi cũng nhất định sẽ giữ lời hứa.
+        - Dù có mưa đi nữa, tôi vẫn nhất định giữ lời hứa.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì trời mưa nên tôi nhất định sẽ giữ lời hứa.
+        feedback_vi: -(으)ㄹ지언정 là nhượng bộ "dù có... cũng", không phải nguyên nhân.
+        error_tag: connective_meaning
+      - answer: Nếu trời mưa thì tôi sẽ không giữ lời hứa.
+        feedback_vi: Câu gốc khẳng định giữ lời hứa (지키겠다) bất chấp trời mưa.
+        error_tag: meaning_reversed
+    explanation:
+      vi: 올지언정 = "dù có mưa đi nữa"; 꼭 지키겠다 = nhất định sẽ giữ (ý chí). Vế trước là điều xấu người nói chấp nhận, vế sau là lập trường.
+    display_answer: Dù trời có mưa, tôi cũng nhất định sẽ giữ lời hứa.
+
+  - key: ko:exercise:ac-review-translate-yulli
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gram-dago-bol-su-itda
+    prompt:
+      source_text: Có thể xem đây là một vấn đề đạo đức.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이는 윤리 문제라고 볼 수 있다.
+        - 이것은 윤리 문제라고 볼 수 있다.
+        - 이는 윤리적인 문제라고 볼 수 있다.
+        - 이는 윤리적 문제라고 볼 수 있다.
+        - 이것은 윤리적인 문제라고 볼 수 있다.
+        - 이는 윤리의 문제라고 볼 수 있다.
+        - 이는 윤리 문제라고 볼 수 있습니다.
+        - 이것은 윤리 문제라고 볼 수 있어요.
+    known_wrong:
+      - answer: 이는 윤리 문제다고 볼 수 있다.
+        feedback_vi: Sau danh từ dùng -(이)라고, không dùng -다고 - 문제라고.
+        error_tag: quotation_noun
+      - answer: 이는 논리 문제라고 볼 수 있다.
+        feedback_vi: 논리 là "logic, lô-gích". "Đạo đức" là 윤리.
+        error_tag: vocab_meaning
+      - answer: 이는 윤리 문제라고 볼 수 있어.
+        feedback_vi: Đuôi 반말 không hợp văn viết. Dùng 볼 수 있다.
+        error_tag: register_ending
+    explanation:
+      vi: "\"Có thể xem là\" = -다고 볼 수 있다; sau danh từ 문제 dùng 라고. \"Đạo đức\" trong ngữ cảnh học thuật là 윤리, có thể dùng 윤리적(인) 문제."
+    display_answer: 이는 윤리 문제라고 볼 수 있다.
+
+  - key: ko:exercise:ac-review-order-conclusion
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-iwa-gachi
+    prompt:
+      instruction: "Sắp xếp thành câu kết bài: \"Như vậy, xung đột thế hệ có thể giảm bớt thông qua đối thoại.\""
+      tokens:
+        - { id: t-dae, text: 대화를 통해 }
+        - { id: t-geunde, text: 근데 }
+        - { id: t-jul, text: 줄일 수 있다 }
+        - { id: t-iwa, text: 이와 같이 }
+        - { id: t-julyo, text: 줄일 수 있어요 }
+        - { id: t-se, text: 세대 갈등은 }
+    answer:
+      orders:
+        - [t-iwa, t-se, t-dae, t-jul]
+        - [t-iwa, t-dae, t-se, t-jul]
+    explanation:
+      vi: 이와 같이 mở đầu kết bài, động từ 줄일 수 있다 đứng cuối với đuôi văn viết. 근데 và 줄일 수 있어요 là token nhiễu thuộc văn nói; 세대 갈등은 và 대화를 통해 có thể đổi chỗ cho nhau.
+    display_answer: 이와 같이 세대 갈등은 대화를 통해 줄일 수 있다.

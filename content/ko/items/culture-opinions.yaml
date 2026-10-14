@@ -1,0 +1,936 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Văn hoá, truyền thông & quan điểm" (TOPIK 3-4). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+# Các cấu trúc lý do/điều kiện (-아서, -니까, -면…), tường thuật -다고 하다, 합쇼체, động từ kính ngữ và -게 되다 thuộc unit khác, ở đây chỉ dùng trong câu.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- bài 1: nêu quan điểm, phép lịch sự ----------------
+  - key: ko:item:je-saenggageneun
+    type: phrase
+    level: topik3
+    difficulty: 2
+    skill_tags: [speaking, writing]
+    front:
+      text: 제 생각에는
+      romanization: je saenggageneun
+      pos: cụm từ
+    back:
+      meaning:
+        vi: theo tôi, theo ý kiến của tôi
+      examples:
+        - target: 제 생각에는 존댓말을 쓰는 게 좋아요.
+          translation:
+            vi: Theo tôi, dùng kính ngữ thì tốt hơn.
+      pronunciation_note:
+        vi: Đọc nối [제 생가게는] - patchim ㄱ của 생각 chuyển sang âm tiết 에.
+      confusion:
+        vi: Đừng nói 저 생각에는 - "của tôi" là 제 (저의), không phải 저.
+
+  - key: ko:item:gram-dago-saenggakhada
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, speaking, writing]
+    front:
+      text: -다고 생각하다
+      romanization: -dago saenggakhada
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "nghĩ rằng…, cho rằng… Động từ: -ㄴ/는다고; tính từ: -다고; danh từ: -(이)라고; quá khứ: -았/었다고."
+      examples:
+        - target: 저는 이 광고가 너무 길다고 생각해요.
+          translation:
+            vi: Tôi nghĩ quảng cáo này dài quá.
+        - target: 많은 사람들이 한국 드라마가 재미있다고 생각해요.
+          translation:
+            vi: Nhiều người cho rằng phim Hàn hay.
+        - target: 외국인도 존댓말을 배운다고 생각해요.
+          translation:
+            vi: Tôi nghĩ người nước ngoài cũng học kính ngữ.
+      pronunciation_note:
+        vi: 생각한다고 đọc [생가칸다고] - ㄱ gặp ㅎ thành ㅋ bật hơi.
+      confusion:
+        vi: Tính từ chỉ thêm -다고 (중요하다고), không thêm ㄴ như động từ (간다고, 먹는다고). Không đặt đuôi 해요 vào giữa câu - 중요해요고 là sai.
+
+  - key: ko:item:gram-eul-piryoga-itda
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: -(으)ㄹ 필요가 있다/없다
+      romanization: -(eu)l piryoga itda/eopda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: cần phải… / không cần phải…
+      examples:
+        - target: 친구에게는 존댓말을 쓸 필요가 없어요.
+          translation:
+            vi: Với bạn bè thì không cần dùng kính ngữ.
+        - target: 악플 문제를 진지하게 생각할 필요가 있어요.
+          translation:
+            vi: Cần suy nghĩ nghiêm túc về vấn đề bình luận ác ý.
+      pronunciation_note:
+        vi: 필요가 đọc [피료가]; 있어요 [이써요], 없어요 [업써요].
+      confusion:
+        vi: Trước 필요 phải là định ngữ tương lai -(으)ㄹ (갈 필요, 먹을 필요), không dùng 가는 필요 hay 가기 필요.
+
+  - key: ko:item:chanseonghada
+    type: vocab
+    level: topik4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 찬성하다
+      romanization: chanseonghada
+      pos: động từ
+    back:
+      meaning:
+        vi: tán thành, ủng hộ (một ý kiến, đề xuất)
+      examples:
+        - target: 저는 그 의견에 찬성해요.
+          translation:
+            vi: Tôi tán thành ý kiến đó.
+      pronunciation_note:
+        vi: Khi nói nhanh, ㅎ giữa hai âm hữu thanh yếu đi - [찬성아다].
+      confusion:
+        vi: Thường dùng N에 찬성하다; trái nghĩa là 반대하다.
+
+  - key: ko:item:bandaehada
+    type: vocab
+    level: topik4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 반대하다
+      romanization: bandaehada
+      pos: động từ
+    back:
+      meaning:
+        vi: phản đối
+      examples:
+        - target: 부모님이 제 계획에 반대하셨어요.
+          translation:
+            vi: Bố mẹ đã phản đối kế hoạch của tôi.
+      pronunciation_note:
+        vi: Đọc [반대하다]; ㄷ sau ㄴ đọc thành âm "đ" nhẹ.
+      confusion:
+        vi: 반대 còn là danh từ "ngược lại" (반대로); "tôi phản đối" là 반대해요, không phải 반대예요.
+
+  - key: ko:item:uigyeon
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 의견
+      romanization: uigyeon
+      pos: danh từ
+    back:
+      meaning:
+        vi: ý kiến
+      examples:
+        - target: 다른 의견이 있으면 말해 주세요.
+          translation:
+            vi: Nếu có ý kiến khác thì bạn cứ nói.
+      pronunciation_note:
+        vi: ㅢ ở đầu từ đọc đủ [의]; ghép nhanh "ưi" rồi "gyơn".
+
+  - key: ko:item:yejeol
+    type: vocab
+    level: topik4
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 예절
+      romanization: yejeol
+      pos: danh từ
+    back:
+      meaning:
+        vi: lễ nghi, phép lịch sự
+      examples:
+        - target: 한국에서는 식사 예절이 중요해요.
+          translation:
+            vi: Ở Hàn Quốc, phép lịch sự khi ăn uống rất quan trọng.
+      pronunciation_note:
+        vi: 예 đọc gần "ye"; 절 có ㄹ cuối, uốn nhẹ đầu lưỡi.
+
+  - key: ko:item:jondaenmal
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 존댓말
+      romanization: jondaenmal
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời nói kính trọng, kính ngữ (cách nói lịch sự)
+      examples:
+        - target: 처음 만난 사람에게는 존댓말을 써요.
+          translation:
+            vi: Với người mới gặp lần đầu thì dùng kính ngữ.
+      pronunciation_note:
+        vi: Đọc [존댄말] - ㅅ (patchim ㄷ) đứng trước ㅁ bị mũi hoá thành ㄴ.
+      confusion:
+        vi: Động từ đi kèm là 쓰다 hoặc 하다 (존댓말을 쓰다/하다); trái nghĩa là 반말.
+
+  - key: ko:item:banmal
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 반말
+      romanization: banmal
+      pos: danh từ
+    back:
+      meaning:
+        vi: lối nói thân mật, nói trống không (không có đuôi lịch sự)
+      examples:
+        - target: 친한 친구하고는 반말을 해요.
+          translation:
+            vi: Với bạn thân thì tôi nói trống không.
+      pronunciation_note:
+        vi: Đọc [반말], hai âm tiết rõ ràng.
+      confusion:
+        vi: Dùng 반말 với người lớn tuổi hoặc người mới gặp bị coi là vô lễ, kể cả khi bạn nói đúng ngữ pháp.
+
+  - key: ko:item:eoreun
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 어른
+      romanization: eoreun
+      pos: danh từ
+    back:
+      meaning:
+        vi: người lớn, bề trên, người lớn tuổi
+      examples:
+        - target: 어른 앞에서는 반말을 하지 마세요.
+          translation:
+            vi: Trước mặt người lớn thì đừng nói trống không.
+      pronunciation_note:
+        vi: ㅓ và ㅡ đều không tròn môi - [어른], đừng đọc thành "ô-rưn".
+
+  - key: ko:item:du-sonuro
+    type: phrase
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 두 손으로
+      romanization: du soneuro
+      pos: cụm từ
+    back:
+      meaning:
+        vi: bằng hai tay (khi đưa/nhận đồ với người lớn)
+      examples:
+        - target: 어른에게 물건을 드릴 때는 두 손으로 드려요.
+          translation:
+            vi: Khi đưa đồ cho người lớn, bạn đưa bằng hai tay.
+      pronunciation_note:
+        vi: Đọc nối [두 소느로].
+
+  - key: ko:item:nai-munhwa
+    type: phrase
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 나이 문화
+      romanization: nai munhwa
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: văn hoá coi trọng tuổi tác (hỏi tuổi, phân thứ bậc theo tuổi)
+      examples:
+        - target: 한국의 나이 문화 때문에 처음 만나면 나이를 물어봐요.
+          translation:
+            vi: Vì văn hoá tuổi tác của Hàn Quốc, khi mới gặp người ta hay hỏi tuổi.
+      pronunciation_note:
+        vi: 문화 thường đọc [무놔] - ㅎ giữa ㄴ và nguyên âm yếu đi.
+
+  # ---------------- bài 2: so sánh và đối lập ----------------
+  - key: ko:item:gram-boda
+    type: grammar_point
+    level: topik3
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N보다 (더)
+      romanization: boda (deo)
+      pos: trợ từ so sánh
+    back:
+      meaning:
+        vi: hơn N (so sánh hơn)
+      examples:
+        - target: 베트남이 한국보다 더 더워요.
+          translation:
+            vi: Việt Nam nóng hơn Hàn Quốc.
+      pronunciation_note:
+        vi: 한국보다 đọc [한국뽀다] - ㅂ sau patchim ㄱ thành căng.
+      confusion:
+        vi: 보다 gắn vào vật bị so sánh (cái "kém hơn"), không gắn vào cái "hơn". Tiếng Việt "A hơn B" - tiếng Hàn "A가 B보다 더…".
+
+  - key: ko:item:gram-e-bihae
+    type: grammar_point
+    level: topik4
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: N에 비해(서)
+      romanization: e bihae(seo)
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: so với N
+      examples:
+        - target: 작년에 비해 한국어를 배우는 사람이 많아졌다.
+          translation:
+            vi: So với năm ngoái, số người học tiếng Hàn đã tăng lên.
+      pronunciation_note:
+        vi: 비해 khi nói nhanh nghe gần [비애] vì ㅎ yếu đi.
+      confusion:
+        vi: Hay dùng trong văn viết, bài báo; khi nói chuyện hằng ngày N보다 tự nhiên hơn.
+
+  - key: ko:item:gram-neun-banmyeone
+    type: grammar_point
+    level: topik4
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: -는 반면(에)
+      romanization: -neun banmyeon(e)
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: trong khi đó, ngược lại (đối lập hai mặt của một sự việc)
+      examples:
+        - target: 서울은 교통이 편리한 반면에 집값이 비싸다.
+          translation:
+            vi: Seoul giao thông tiện lợi, trong khi đó giá nhà lại đắt.
+      pronunciation_note:
+        vi: 반면에 đọc nối [반며네].
+      confusion:
+        vi: "Động từ: -는 반면에; tính từ: -(으)ㄴ 반면에. Chủ yếu dùng trong văn viết và bài nói trang trọng."
+
+  - key: ko:item:munhwa
+    type: vocab
+    level: topik3
+    difficulty: 1
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 문화
+      romanization: munhwa
+      pos: danh từ
+    back:
+      meaning:
+        vi: văn hoá
+      examples:
+        - target: 한국 문화에 관심이 많아요.
+          translation:
+            vi: Tôi rất quan tâm đến văn hoá Hàn Quốc.
+      pronunciation_note:
+        vi: Thường đọc [무놔] - ㅎ sau ㄴ yếu đi.
+
+  - key: ko:item:jeontong
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 전통
+      romanization: jeontong
+      pos: danh từ
+    back:
+      meaning:
+        vi: truyền thống
+      examples:
+        - target: 한복은 한국의 전통 옷이에요.
+          translation:
+            vi: Hanbok là trang phục truyền thống của Hàn Quốc.
+      pronunciation_note:
+        vi: ㅌ bật hơi mạnh - [전통], đừng đọc thành "chơn-đông".
+      confusion:
+        vi: Dạng tính từ là 전통적이다 / 전통적인 (mang tính truyền thống).
+
+  - key: ko:item:hyeondae
+    type: vocab
+    level: topik4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 현대
+      romanization: hyeondae
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiện đại, thời nay
+      examples:
+        - target: 현대 사회에서는 유튜브가 아주 중요해요.
+          translation:
+            vi: Trong xã hội hiện đại, YouTube rất quan trọng.
+      pronunciation_note:
+        vi: 현 đọc "hyơn" (ㅕ), không phải "hyôn".
+      confusion:
+        vi: Đứng trước danh từ dùng trực tiếp (현대 사회) hoặc 현대적인 (mang tính hiện đại).
+
+  - key: ko:item:biseutada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 비슷하다
+      romanization: biseutada
+      pos: tính từ
+    back:
+      meaning:
+        vi: giống nhau, tương tự
+      examples:
+        - target: 추석은 베트남의 중추절과 비슷해요.
+          translation:
+            vi: Chuseok giống với Tết Trung thu của Việt Nam.
+      pronunciation_note:
+        vi: Đọc [비스타다], 비슷해요 [비스태요] - patchim ㅅ (âm ㄷ) gặp ㅎ thành ㅌ.
+      confusion:
+        vi: Dùng N과/와 비슷하다 (giống với N); "giống hệt" là 같다.
+
+  - key: ko:item:dareuda
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 다르다
+      romanization: dareuda
+      pos: tính từ
+    back:
+      meaning:
+        vi: khác
+      examples:
+        - target: 한국과 베트남은 명절 음식이 달라요.
+          translation:
+            vi: Món ăn ngày lễ của Hàn Quốc và Việt Nam khác nhau.
+      pronunciation_note:
+        vi: Bất quy tắc 르 - 다르다 → 달라요 [달라요], ㄹ đôi đọc như "l" kéo dài.
+      confusion:
+        vi: Viết 달라요, không phải 다라요 hay 다르어요.
+
+  - key: ko:item:chai
+    type: vocab
+    level: topik4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 차이
+      romanization: chai
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự khác biệt, chênh lệch
+      examples:
+        - target: 두 나라의 문화 차이가 커요.
+          translation:
+            vi: Khác biệt văn hoá giữa hai nước rất lớn.
+      pronunciation_note:
+        vi: ㅊ bật hơi - [차이].
+      confusion:
+        vi: 차이가 나다 / 차이가 있다 (có khác biệt); 차이점 là "điểm khác nhau".
+
+  - key: ko:item:jangjeom-danjeom
+    type: vocab
+    level: topik4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 장점 / 단점
+      romanization: jangjeom / danjeom
+      pos: danh từ
+    back:
+      meaning:
+        vi: ưu điểm / nhược điểm
+      examples:
+        - target: 유튜브의 장점은 무료라는 것이고 단점은 광고가 많다는 거예요.
+          translation:
+            vi: Ưu điểm của YouTube là miễn phí, còn nhược điểm là nhiều quảng cáo.
+      pronunciation_note:
+        vi: Đọc [장쩜], [단쩜] - 점 trong từ Hán này đọc căng.
+
+  # ---------------- bài 3: kinh nghiệm, thay đổi, mong ước; ngày lễ ----------------
+  - key: ko:item:gram-a-bon-jeogi-itda
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: -아/어 본 적이 있다/없다
+      romanization: -a/eo bon jeogi itda/eopda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: đã từng thử làm… / chưa từng thử làm…
+      examples:
+        - target: 한복을 입어 본 적이 있어요?
+          translation:
+            vi: Bạn đã từng mặc thử hanbok chưa?
+        - target: 송편을 만들어 본 적이 없어요.
+          translation:
+            vi: Tôi chưa từng làm bánh songpyeon.
+      pronunciation_note:
+        vi: 적이 đọc nối [저기]; 있어요 [이써요].
+      confusion:
+        vi: "Gốc là V-아/어 보다 (thử) + -(으)ㄴ 적: 가다 → 가 본 적, 먹다 → 먹어 본 적. Đừng viết 가아 본 적 hay 먹은 본 적."
+
+  - key: ko:item:gram-eun-jeogi-eopda
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: -(으)ㄴ 적이 있다/없다
+      romanization: -(eu)n jeogi itda/eopda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: đã từng… / chưa bao giờ… (kinh nghiệm trong quá khứ)
+      examples:
+        - target: 저는 아직 한국에 가 본 적이 없어요. 그래서 설날을 본 적도 없어요.
+          translation:
+            vi: Tôi chưa từng đến Hàn Quốc. Vì vậy tôi cũng chưa bao giờ thấy Tết Hàn.
+        - target: 그 드라마를 본 적이 있어요.
+          translation:
+            vi: Tôi đã từng xem bộ phim đó.
+      pronunciation_note:
+        vi: 없어요 đọc [업써요] - ㅅ sau ㅂ thành căng.
+      confusion:
+        vi: "Dùng -(으)ㄴ (định ngữ quá khứ), không dùng -는: 본 적 chứ không phải 보는 적. Không dùng cho việc lặp lại hằng ngày (밥을 먹은 적이 있어요 nghe rất lạ)."
+
+  - key: ko:item:gram-a-jida
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: A-아/어지다
+      romanization: -a/eojida
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: trở nên…, dần dần… (gắn với tính từ để chỉ sự thay đổi trạng thái)
+      examples:
+        - target: 날씨가 추워졌어요.
+          translation:
+            vi: Trời đã trở lạnh.
+        - target: 요즘 명절 문화가 많이 달라졌어요.
+          translation:
+            vi: Dạo này văn hoá ngày lễ đã thay đổi nhiều.
+      pronunciation_note:
+        vi: 추워졌어요 đọc [추워저써요]; ㅈ sau ㅕ đọc nhẹ.
+      confusion:
+        vi: Chỉ gắn với tính từ (좋아지다, 많아지다). Với động từ, "trở nên/được" phải dùng cấu trúc khác như -게 되다 - 잘해지다 là sai.
+
+  - key: ko:item:gram-asseumyeon-joketda
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: -았/었으면 좋겠다
+      romanization: -at/eosseumyeon joketda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: ước gì…, mong là… (mong muốn cho hiện tại hoặc tương lai)
+      examples:
+        - target: 이번 추석에는 가족들이 다 모였으면 좋겠어요.
+          translation:
+            vi: Mong là Chuseok năm nay cả nhà đều sum họp.
+      pronunciation_note:
+        vi: 좋겠어요 đọc [조케써요] - ㅎ gặp ㄱ thành ㅋ.
+      confusion:
+        vi: -았/었으면 trông như quá khứ nhưng nói về mong ước sắp tới. Phần cuối giữ 좋겠어요, không đổi thành 좋았어요.
+
+  - key: ko:item:myeongjeol
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 명절
+      romanization: myeongjeol
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày lễ truyền thống lớn (Tết, Trung thu…)
+      examples:
+        - target: 한국의 큰 명절은 설날과 추석이에요.
+          translation:
+            vi: Hai ngày lễ lớn của Hàn Quốc là Seollal và Chuseok.
+      pronunciation_note:
+        vi: 명 đọc "myơng" (ㅕ), không phải "myông".
+
+  - key: ko:item:seollal
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 설날
+      romanization: seollal
+      pos: danh từ
+    back:
+      meaning:
+        vi: Tết âm lịch (Seollal)
+      examples:
+        - target: 설날에 떡국을 먹어요.
+          translation:
+            vi: Vào Tết, người Hàn ăn canh bánh gạo tteokguk.
+      pronunciation_note:
+        vi: Đọc [설랄] - ㄴ sau ㄹ biến thành ㄹ (lưu âm hoá).
+
+  - key: ko:item:chuseok
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 추석
+      romanization: chuseok
+      pos: danh từ
+    back:
+      meaning:
+        vi: Tết Trung thu của Hàn Quốc (Chuseok, rằm tháng 8 âm lịch)
+      examples:
+        - target: 추석에는 고향에 가요.
+          translation:
+            vi: Vào Chuseok, người ta về quê.
+      pronunciation_note:
+        vi: Đọc [추석]; ㄱ cuối không bật ra.
+      confusion:
+        vi: Ở Hàn, 추석 là dịp sum họp gia đình và tảo mộ, quan trọng hơn Trung thu ở Việt Nam - không chỉ là ngày của trẻ em.
+
+  - key: ko:item:charye
+    type: vocab
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 차례
+      romanization: charye
+      pos: danh từ
+    back:
+      meaning:
+        vi: lễ cúng tổ tiên vào sáng ngày Tết, Chuseok
+      examples:
+        - target: 아침에 가족들과 함께 차례를 지내요.
+          translation:
+            vi: Buổi sáng tôi cùng gia đình làm lễ cúng tổ tiên.
+      pronunciation_note:
+        vi: ㅖ sau phụ âm thường đọc như ㅔ - [차레].
+      confusion:
+        vi: Động từ đi kèm là 지내다 (차례를 지내다). 차례 còn có nghĩa "lượt" (제 차례예요 - đến lượt tôi).
+
+  - key: ko:item:sebae
+    type: vocab
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 세배 / 세뱃돈
+      romanization: sebae / sebaetdon
+      pos: danh từ
+    back:
+      meaning:
+        vi: lạy chúc Tết người lớn / tiền mừng tuổi
+      examples:
+        - target: 아이들이 할머니께 세배를 하고 세뱃돈을 받았어요.
+          translation:
+            vi: Bọn trẻ lạy chúc Tết bà và nhận tiền mừng tuổi.
+      pronunciation_note:
+        vi: 세뱃돈 đọc [세배똔] hoặc [세밷똔] - ㄷ sau ㅅ (사이시옷) thành căng.
+      confusion:
+        vi: 세배 là một kiểu lạy cúi người, khác với chúc Tết bằng lời ở Việt Nam; người nhận lạy thường đáp lại bằng 덕담 (lời chúc).
+
+  - key: ko:item:hanbok
+    type: vocab
+    level: topik3
+    difficulty: 1
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 한복
+      romanization: hanbok
+      pos: danh từ
+    back:
+      meaning:
+        vi: hanbok, trang phục truyền thống Hàn Quốc
+      examples:
+        - target: 설날에 한복을 입는 사람이 줄었어요.
+          translation:
+            vi: Số người mặc hanbok vào ngày Tết đã giảm.
+      pronunciation_note:
+        vi: 한복을 đọc nối [한보글]; 한복도 [한복또].
+
+  - key: ko:item:songpyeon
+    type: vocab
+    level: topik4
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 송편
+      romanization: songpyeon
+      pos: danh từ
+    back:
+      meaning:
+        vi: bánh songpyeon (bánh gạo hình bán nguyệt ăn dịp Chuseok)
+      examples:
+        - target: 추석에 가족들과 송편을 만들어요.
+          translation:
+            vi: Vào Chuseok, tôi làm bánh songpyeon cùng gia đình.
+      pronunciation_note:
+        vi: ㅍ bật hơi - [송편], ㅕ đọc "yơ".
+
+  # ---------------- bài 4: phỏng đoán, tiếc nuối; truyền thông ----------------
+  - key: ko:item:gram-eul-tende
+    type: grammar_point
+    level: topik4
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: -(으)ㄹ 텐데
+      romanization: -(eu)l tende
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: chắc là… (nên/vậy mà…) - phỏng đoán làm nền cho lời khuyên, lo lắng hoặc tiếc nuối
+      examples:
+        - target: 내일 비가 올 텐데 우산을 가져가세요.
+          translation:
+            vi: Mai chắc trời mưa đấy, bạn mang ô theo nhé.
+        - target: 피곤할 텐데 좀 쉬세요.
+          translation:
+            vi: Chắc bạn mệt rồi, nghỉ một chút đi.
+      pronunciation_note:
+        vi: 올 텐데 đọc [올 텐데]; ㅌ bật hơi mạnh.
+      confusion:
+        vi: Vế sau thường là lời khuyên, đề nghị hay lo lắng. Phỏng đoán về quá khứ dùng -았/었을 텐데.
+
+  - key: ko:item:gram-na-boda
+    type: grammar_point
+    level: topik4
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: -나 보다 / -(으)ㄴ가 보다
+      romanization: -na boda / -(eu)nga boda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: hình như…, có vẻ… (đoán dựa trên điều mình nhìn/nghe thấy)
+      examples:
+        - target: 댓글이 많네요. 그 영상이 인기가 많은가 봐요.
+          translation:
+            vi: Nhiều bình luận ghê. Hình như video đó nổi lắm.
+        - target: 민수 씨가 요즘 드라마를 자주 보나 봐요.
+          translation:
+            vi: Hình như dạo này Minsu hay xem phim truyền hình.
+      pronunciation_note:
+        vi: 많은가 봐요 đọc [마는가 봐요] - ㅎ trong 많 câm.
+      confusion:
+        vi: "Theo chuẩn sách giáo khoa: động từ và 있다/없다 dùng -나 보다 (보나 봐요, 재미있나 봐요); tính từ dùng -(으)ㄴ가 보다 (바쁜가 봐요); quá khứ dùng -았/었나 보다. Thường dùng để đoán về người khác hoặc sự việc dựa trên dấu hiệu bạn thấy."
+
+  - key: ko:item:gram-eulgeol-geuraetda
+    type: grammar_point
+    level: topik4
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: -(으)ㄹ걸 그랬다
+      romanization: -(eu)lgeol geuraetda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: lẽ ra nên… (tiếc vì đã không làm)
+      examples:
+        - target: 표가 다 팔렸어요. 미리 예매할걸 그랬어요.
+          translation:
+            vi: Vé bán hết rồi. Lẽ ra tôi nên đặt trước.
+        - target: 그 댓글을 쓰지 말걸 그랬어요.
+          translation:
+            vi: Lẽ ra tôi không nên viết bình luận đó.
+      pronunciation_note:
+        vi: 할걸 đọc [할껄] - ㄱ sau đuôi -(으)ㄹ thành căng.
+      confusion:
+        vi: "Động từ gốc giữ ở dạng hiện tại (할걸), chỉ 그랬다 ở quá khứ - không viết 했을걸 그랬어요. Phủ định: -지 말걸 그랬다."
+
+  - key: ko:item:deurama
+    type: vocab
+    level: topik3
+    difficulty: 1
+    skill_tags: [vocabulary, media]
+    front:
+      text: 드라마
+      romanization: deurama
+      pos: danh từ
+    back:
+      meaning:
+        vi: phim truyền hình (phim bộ)
+      examples:
+        - target: 요즘 한국 드라마가 전 세계에서 인기가 많아요.
+          translation:
+            vi: Dạo này phim Hàn được yêu thích trên toàn thế giới.
+      pronunciation_note:
+        vi: 드 có ㅡ không tròn môi - [드라마], không đọc "đu-ra-ma".
+      confusion:
+        vi: Phim chiếu rạp là 영화; 드라마 là phim truyền hình nhiều tập. "K-drama" trong tiếng Hàn thường nói 한국 드라마 hoặc K-드라마.
+
+  - key: ko:item:yutyubeu
+    type: vocab
+    level: topik3
+    difficulty: 1
+    skill_tags: [vocabulary, media]
+    front:
+      text: 유튜브
+      romanization: yutyubeu
+      pos: danh từ
+    back:
+      meaning:
+        vi: YouTube
+      examples:
+        - target: 유튜브로 한국어를 공부해요.
+          translation:
+            vi: Tôi học tiếng Hàn qua YouTube.
+      pronunciation_note:
+        vi: Đọc [유튜브]; người làm video gọi là 유튜버.
+
+  - key: ko:item:daetgeul
+    type: vocab
+    level: topik4
+    difficulty: 2
+    skill_tags: [vocabulary, media]
+    front:
+      text: 댓글
+      romanization: daetgeul
+      pos: danh từ
+    back:
+      meaning:
+        vi: bình luận (trên mạng)
+      examples:
+        - target: 영상에 댓글을 남겼어요.
+          translation:
+            vi: Tôi đã để lại bình luận dưới video.
+      pronunciation_note:
+        vi: Đọc [댇끌] - ㄱ sau patchim ㅅ (âm ㄷ) thành căng.
+      confusion:
+        vi: Động từ đi kèm là 달다 hoặc 남기다 (댓글을 달다/남기다), không dùng 말하다.
+
+  - key: ko:item:akpeul
+    type: vocab
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary, media]
+    front:
+      text: 악플
+      romanization: akpeul
+      pos: danh từ
+    back:
+      meaning:
+        vi: bình luận ác ý, "anti-comment"
+      examples:
+        - target: 악플 때문에 상처를 받는 연예인이 많아요.
+          translation:
+            vi: Nhiều người nổi tiếng bị tổn thương vì bình luận ác ý.
+      pronunciation_note:
+        vi: Đọc [악플]; ㄱ cuối không bật, ㅍ bật hơi.
+      confusion:
+        vi: Viết tắt của 악성 리플; trái nghĩa là 선플 (bình luận tích cực).
+
+  - key: ko:item:gwanggo
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, media]
+    front:
+      text: 광고
+      romanization: gwanggo
+      pos: danh từ
+    back:
+      meaning:
+        vi: quảng cáo
+      examples:
+        - target: 영상 중간에 광고가 너무 많아요.
+          translation:
+            vi: Giữa video có quá nhiều quảng cáo.
+      pronunciation_note:
+        vi: 광 đọc "kwang" (ㅘ), ㄱ đầu không bật hơi.
+
+  - key: ko:item:gudokhada
+    type: vocab
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary, media]
+    front:
+      text: 구독하다
+      romanization: gudokhada
+      pos: động từ
+    back:
+      meaning:
+        vi: đăng ký theo dõi (kênh), đặt mua dài hạn
+      examples:
+        - target: 이 채널을 구독했어요.
+          translation:
+            vi: Tôi đã đăng ký theo dõi kênh này.
+      pronunciation_note:
+        vi: Đọc [구도카다] - ㄱ gặp ㅎ thành ㅋ.
+      confusion:
+        vi: Dùng N을/를 구독하다; "đăng ký" học hay thi lại là 신청하다 hoặc 등록하다.
+
+  - key: ko:item:ingi
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, media]
+    front:
+      text: 인기
+      romanization: ingi
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự nổi tiếng, được yêu thích (인기가 많다/있다 - được ưa chuộng)
+      examples:
+        - target: 이 유튜버는 젊은 사람들에게 인기가 많아요.
+          translation:
+            vi: YouTuber này rất được giới trẻ yêu thích.
+      pronunciation_note:
+        vi: Đọc [인끼] - ㄱ thành căng.
+      confusion:
+        vi: Người Việt hay nói 유명해요 cho mọi thứ; 유명하다 là "nổi tiếng, ai cũng biết", còn 인기가 많다 là "được nhiều người thích".
+
+  - key: ko:item:johoesu
+    type: vocab
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary, media]
+    front:
+      text: 조회수
+      romanization: johoesu
+      pos: danh từ
+    back:
+      meaning:
+        vi: lượt xem
+      examples:
+        - target: 그 영상은 조회수가 백만 회를 넘었어요.
+          translation:
+            vi: Video đó đã vượt một triệu lượt xem.
+      pronunciation_note:
+        vi: Đọc [조회쑤] - 수 thành căng.

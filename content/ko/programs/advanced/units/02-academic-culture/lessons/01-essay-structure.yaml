@@ -1,0 +1,404 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:academic-essay-structure
+order_index: 1
+level: topik6
+title:
+  vi: Bố cục bài nghị luận TOPIK II câu 54
+objectives:
+  - vi: Sắp xếp bài nghị luận theo 서론 - 본론 - 결론 và liệt kê luận điểm bằng 첫째, 둘째.
+  - vi: Dùng từ nối văn viết 따라서, 그러므로, 이와 같이 thay cho 그래서, 근데 của văn nói.
+  - vi: Đưa ra nhận định mềm, khách quan với -다고 볼 수 있다 và -(으)ㄹ 것으로 보인다.
+estimated_minutes: 20
+skills: [writing, grammar, vocabulary, reading]
+prerequisites: [ko:lesson:news-society-review]
+items:
+  - item: ko:item:ac-seoron-bonron-gyeollon
+  - item: ko:item:ac-cheotjjae-duljjae
+  - item: ko:item:ac-ttaraseo
+  - item: ko:item:ac-geureomeuro
+  - item: ko:item:ac-iwa-gachi
+  - item: ko:item:ac-jujanghada
+  - item: ko:item:ac-geungeo
+  - item: ko:item:ac-banbakhada
+  - item: ko:item:ac-nonran
+  - item: ko:item:ac-gram-dago-bol-su-itda
+  - item: ko:item:ac-gram-l-geoseuro-boinda
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dựng được khung một bài nghị luận 600-700 chữ cho câu 54 TOPIK II, với từ nối và đuôi câu đúng văn phong viết. Bài này dùng văn viết -ㄴ다/-다, không dùng 해요체.
+  - type: explain
+    text:
+      vi: Bài nghị luận gồm ba phần - 서론 (mở bài, nêu vấn đề), 본론 (thân bài, đưa luận điểm và 근거), 결론 (kết bài, khẳng định lại 주장). Trong 본론, bạn liệt kê bằng 첫째, 둘째 để người chấm dễ theo dõi.
+  - type: explain
+    text:
+      vi: Từ nối văn nói như 그래서, 근데, 그러니까 làm bài bị trừ điểm văn phong. Hãy dùng 따라서, 그러므로 để rút ra kết luận, 그러나/하지만 để đổi ý, và 이와 같이 để mở đầu phần kết.
+  - type: explain
+    text:
+      vi: Người chấm đánh giá cao nhận định thận trọng thay vì khẳng định tuyệt đối. -다고 볼 수 있다 ("có thể xem là") và -(으)ㄹ 것으로 보인다 ("dự kiến sẽ") giúp câu văn khách quan như bài báo hay luận văn.
+  - type: deep_explain
+    text:
+      vi: Nhiều từ Hán Hàn trông giống Hán Việt nhưng nghĩa lệch - 주장 (chủ trương) thực ra là "luận điểm, chủ kiến", 서론 (tự luận) là "mở bài". Hãy học nghĩa theo ngữ cảnh chứ đừng suy từ âm Hán Việt. Ngoài ra, -다고 볼 수 있다 đổi theo từ loại - danh từ + (이)라고, động từ + -ㄴ/는다고, tính từ + -다고.
+  - type: example
+    target: 첫째, 인공지능은 업무 효율을 높인다. 둘째, 단순 반복 작업을 줄여 준다.
+    target_lang: ko
+    translation:
+      vi: Thứ nhất, trí tuệ nhân tạo nâng cao hiệu quả công việc. Thứ hai, nó giảm bớt những việc lặp đi lặp lại đơn giản.
+    note:
+      vi: Mỗi luận điểm mở bằng 첫째, 둘째 rồi dấu phẩy; câu kết thúc bằng đuôi văn viết -ㄴ다.
+  - type: example
+    target: 따라서 정부는 관련 대책을 마련해야 한다.
+    target_lang: ko
+    translation:
+      vi: Do đó, chính phủ cần đưa ra biện pháp đối phó liên quan.
+    note:
+      vi: 따라서 nối kết luận với các luận cứ trước - đúng chỗ của "do đó" trong văn nghị luận tiếng Việt.
+  - type: example
+    target: 이는 사회 구조 변화의 결과라고 볼 수 있다.
+    target_lang: ko
+    translation:
+      vi: Điều này có thể xem là kết quả của sự thay đổi cơ cấu xã hội.
+    note:
+      vi: 결과 là danh từ có patchim nên dùng -이라고, rút gọn thành 결과라고 sau nguyên âm 과.
+  - type: example
+    target: 이 문제를 둘러싼 논란은 당분간 계속될 것으로 보인다.
+    target_lang: ko
+    translation:
+      vi: Dự kiến tranh cãi xoay quanh vấn đề này sẽ còn tiếp diễn trong thời gian tới.
+    note:
+      vi: -(으)ㄹ 것으로 보인다 nêu dự báo khách quan, không phải cảm nhận cá nhân như -(으)ㄹ 것 같다.
+  - type: common_mistake
+    wrong: 근데 이 방법에는 문제가 있다. 그래서 다른 방법이 필요하다.
+    right: 그러나 이 방법에는 문제가 있다. 따라서 다른 방법이 필요하다.
+    target_lang: ko
+    note:
+      vi: 근데, 그래서 là từ nối văn nói. Người Việt quen viết như nói "nhưng mà, nên" - trong bài luận hãy đổi sang 그러나, 따라서.
+  - type: common_mistake
+    wrong: 인공지능은 우리 생활을 편리하게 만들어요.
+    right: 인공지능은 우리 생활을 편리하게 만든다.
+    target_lang: ko
+    note:
+      vi: 해요체 là văn nói lịch sự, không hợp bài luận TOPIK. Toàn bài phải thống nhất đuôi -ㄴ다/-다.
+  - type: common_mistake
+    wrong: 이는 사회 변화의 결과다고 볼 수 있다.
+    right: 이는 사회 변화의 결과라고 볼 수 있다.
+    target_lang: ko
+    note:
+      vi: Sau danh từ phải dùng -(이)라고, không phải -다고. Lỗi này rất hay gặp vì câu gốc kết thúc bằng 결과다.
+  - type: summary
+    points:
+      - vi: 서론 nêu vấn đề · 본론 đưa luận điểm và 근거 (첫째, 둘째) · 결론 bắt đầu bằng 이와 같이 và khẳng định 주장.
+      - vi: Văn viết - 따라서, 그러므로, 그러나; tránh 그래서, 근데, 그러니까.
+      - vi: -다고 볼 수 있다 (danh từ + 이라고) · -(으)ㄹ 것으로 보인다 - nhận định khách quan.
+      - vi: 주장하다 khẳng định · 반박하다 phản bác · 근거 căn cứ · 논란 tranh cãi.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:ac-essay-mcq-ttaraseo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ac-ttaraseo
+    prompt:
+      stem: "Chọn từ nối hợp với văn nghị luận nhất: \"___ 정부는 관련 대책을 마련해야 한다.\""
+      stem_lang: vi
+      options:
+        - { id: k7q, text: 따라서, lang: ko }
+        - { id: m2x, text: 근데, lang: ko }
+        - { id: p9d, text: 그러니까, lang: ko }
+        - { id: w4f, text: 그래도, lang: ko }
+    answer:
+      correct_option_id: k7q
+    explanation:
+      vi: Câu này là kết luận nên cần "do đó" ở văn viết - 따라서. 근데, 그러니까 là văn nói; 그래도 nghĩa là "dù vậy", sai quan hệ ý.
+    display_answer: 따라서
+
+  - key: ko:exercise:ac-essay-mcq-bonron
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ac-seoron-bonron-gyeollon
+    prompt:
+      stem: "Đoạn văn liệt kê 첫째, 둘째 kèm số liệu để chứng minh luận điểm thuộc phần nào của bài luận?"
+      stem_lang: vi
+      options:
+        - { id: r3b, text: 서론, lang: ko }
+        - { id: e8n, text: 본론, lang: ko }
+        - { id: y5h, text: 결론, lang: ko }
+        - { id: c1t, text: 제목, lang: ko }
+    answer:
+      correct_option_id: e8n
+    explanation:
+      vi: Đưa luận điểm và 근거 là việc của thân bài - 본론. 서론 chỉ nêu vấn đề, 결론 tóm lại và khẳng định, còn 제목 là tiêu đề.
+    display_answer: 본론
+
+  - key: ko:exercise:ac-essay-listen-lecture
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ac-seoron-bonron-gyeollon
+    prompt:
+      audio_asset_id: null
+      fallback_text: 결론에서는 새로운 근거를 제시하기보다 앞의 주장을 다시 정리해야 합니다.
+      options:
+        - { id: a6v, text: "Ở phần kết bài, nên tóm tắt lại luận điểm đã nêu thay vì đưa thêm căn cứ mới.", lang: vi }
+        - { id: j2s, text: "Ở phần kết bài, nên đưa thêm căn cứ mới để thuyết phục hơn.", lang: vi }
+        - { id: u8l, text: "Ở phần mở bài, nên tóm tắt lại luận điểm đã nêu.", lang: vi }
+        - { id: g4z, text: "Ở phần thân bài, nên phản bác ý kiến của người khác.", lang: vi }
+    answer:
+      correct_option_id: a6v
+    explanation:
+      vi: 결론 là kết bài; -기보다 nghĩa là "thay vì", nên không đưa 근거 mới mà 주장을 다시 정리 - tóm lại luận điểm. Đây là lời giảng điển hình về câu 54.
+    display_answer: "Ở phần kết bài, nên tóm tắt lại luận điểm đã nêu thay vì đưa thêm căn cứ mới."
+
+  - key: ko:exercise:ac-essay-mcq-jujang-false-friend
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ac-jujanghada
+    prompt:
+      stem: "많은 전문가들은 근무 시간을 줄여야 한다고 주장한다. - 주장한다 ở đây nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: h5m, text: "cho rằng, khẳng định", lang: vi }
+        - { id: t9c, text: đề ra đường lối, lang: vi }
+        - { id: b2w, text: chủ trì, lang: vi }
+        - { id: n7k, text: phản bác, lang: vi }
+    answer:
+      correct_option_id: h5m
+    explanation:
+      vi: 주장하다 có âm Hán Việt "chủ trương" nhưng nghĩa là đưa ra và bảo vệ một ý kiến - "cho rằng, khẳng định". Phản bác là 반박하다.
+    display_answer: cho rằng, khẳng định
+
+  - key: ko:exercise:ac-essay-fill-rago
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-gram-dago-bol-su-itda
+    prompt:
+      template: "이는 사회 변화의 결과{{b1}} 볼 수 있다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - 결과 là danh từ, nên dùng dạng trích dẫn của 이다.
+        - 결과 kết thúc bằng nguyên âm → 라고.
+    answer:
+      blanks:
+        b1: [라고, 이라고]
+    known_wrong:
+      - answer: 다고
+        feedback_vi: -다고 dành cho tính từ. Sau danh từ dùng -(이)라고 - 결과라고.
+        error_tag: quotation_noun
+      - answer: 는다고
+        feedback_vi: -는다고 dành cho động từ. 결과 là danh từ nên dùng 라고.
+        error_tag: quotation_noun
+    explanation:
+      vi: Câu gốc là 이는 결과이다; khi trích dẫn, 이다 thành -(이)라고. Sau nguyên âm thường rút gọn thành 라고 - 결과라고 볼 수 있다.
+    display_answer: 이는 사회 변화의 결과라고 볼 수 있다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:ac-essay-fill-boinda
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gram-l-geoseuro-boinda
+    prompt:
+      template: "Dự kiến năm sau giá cả sẽ tiếp tục tăng. - 내년에도 물가가 계속 {{b1}} 보인다."
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [오를 것으로, 상승할 것으로]
+    known_wrong:
+      - answer: 오른 것으로
+        feedback_vi: -(으)ㄴ là đã xảy ra. Dự báo tương lai cần -(으)ㄹ - 오를 것으로.
+        error_tag: tense_modifier
+      - answer: 오를 거로
+        feedback_vi: 거로 là dạng nói. Văn viết dùng 것으로.
+        error_tag: register_spoken
+      - answer: 올를 것으로
+        feedback_vi: 오르다 chia -(으)ㄹ thành 오를, không thêm ㄹ thừa.
+        error_tag: verb_conjugation
+    explanation:
+      vi: Dự báo tương lai trong văn viết - V-(으)ㄹ 것으로 보인다. 오르다 + -ㄹ → 오를; 상승하다 (tăng, văn báo chí) cũng đúng.
+    display_answer: 내년에도 물가가 계속 오를 것으로 보인다.
+
+  - key: ko:exercise:ac-essay-fill-cheotjjae
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-cheotjjae-duljjae
+    prompt:
+      template: "Thứ nhất, tốn chi phí. Thứ hai, mất thời gian. - {{b1}}, 비용이 많이 든다. {{b2}}, 시간이 오래 걸린다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [첫째, 첫째로]
+        b2: [둘째, 둘째로]
+    known_wrong:
+      - answer: 하나
+        feedback_vi: 하나 là số đếm. Liệt kê luận điểm trong văn viết dùng 첫째, 둘째.
+        error_tag: enumeration
+      - answer: 일번
+        feedback_vi: 일번 là "số 1" (số thứ tự đánh dấu). Trong bài luận dùng 첫째.
+        error_tag: enumeration
+      - answer: 두째
+        feedback_vi: Muốn nói "thứ hai" thì viết 둘째, giữ ㄹ của 둘.
+        error_tag: spelling
+    explanation:
+      vi: 첫째, 둘째 là cách liệt kê chuẩn trong bài nghị luận. 둘째 giữ ㄹ của 둘; thêm 로 (첫째로) cũng được.
+    display_answer: 첫째, 비용이 많이 든다. 둘째, 시간이 오래 걸린다.
+
+  - key: ko:exercise:ac-essay-translate-geungeo
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-geungeo
+    prompt:
+      source_text: Luận điểm đó thiếu căn cứ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 그 주장은 근거가 부족하다.
+        - 그 주장에는 근거가 부족하다.
+        - 그 주장은 근거가 부족합니다.
+        - 그 주장에는 근거가 부족합니다.
+        - 그 주장은 근거가 부족해요.
+        - 그 주장에는 근거가 부족해요.
+    known_wrong:
+      - answer: 그 주장은 근거가 부족해.
+        feedback_vi: Đuôi 반말 -해 không dùng trong văn bản trang trọng. Viết 부족하다 (văn viết) hoặc 부족합니다.
+        error_tag: register_ending
+      - answer: 그 주장은 근거가 없어요.
+        feedback_vi: 없다 là "không có"; "thiếu" là 부족하다.
+        error_tag: vocab_meaning
+      - answer: geu jujangeun geungeoga bujokhada
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Luận điểm là 주장, căn cứ là 근거, thiếu là 부족하다. Trong bài luận dùng đuôi -다; 합니다/해요 cũng chấp nhận được khi nói.
+    display_answer: 그 주장은 근거가 부족하다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:ac-essay-mcq-revise-spoken
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-ttaraseo
+    prompt:
+      stem: "Bài luận của bạn có câu: \"근데 이 방법에는 문제가 있다.\" Sửa thế nào để đúng văn phong viết?"
+      stem_lang: vi
+      options:
+        - { id: s6e, text: 그러나 이 방법에는 문제가 있다., lang: ko }
+        - { id: v3r, text: 근데 이 방법에는 문제가 있어요., lang: ko }
+        - { id: q8u, text: 그래서 이 방법에는 문제가 있다., lang: ko }
+        - { id: d1o, text: 그런데요 이 방법에는 문제가 있다., lang: ko }
+    answer:
+      correct_option_id: s6e
+    explanation:
+      vi: Câu cần ý đối lập ("tuy nhiên") ở văn viết - 그러나. Đổi đuôi sang 있어요 vẫn sai văn phong; 그래서 sai quan hệ ý; 그런데요 còn nói hơn.
+    display_answer: 그러나 이 방법에는 문제가 있다.
+
+  - key: ko:exercise:ac-essay-order-ttaraseo
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-ttaraseo
+    prompt:
+      instruction: "Sắp xếp thành câu kết luận văn viết: \"Do đó, chính phủ cần đưa ra biện pháp.\""
+      tokens:
+        - { id: t-ha, text: 한다 }
+        - { id: t-dae, text: 대책을 }
+        - { id: t-geu, text: 그래서 }
+        - { id: t-ma, text: 마련해야 }
+        - { id: t-jeong, text: 정부는 }
+        - { id: t-hae, text: 해요 }
+        - { id: t-tta, text: 따라서 }
+    answer:
+      orders:
+        - [t-tta, t-jeong, t-dae, t-ma, t-ha]
+        - [t-jeong, t-tta, t-dae, t-ma, t-ha]
+    explanation:
+      vi: Văn viết dùng 따라서 và đuôi -ㄴ다 (마련해야 한다). 그래서 và 해요 là token nhiễu thuộc văn nói. 따라서 thường đứng đầu câu, đặt sau chủ ngữ cũng được.
+    display_answer: 따라서 정부는 대책을 마련해야 한다.
+
+  - key: ko:exercise:ac-essay-translate-conclusion
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ac-iwa-gachi
+    prompt:
+      source_text: 이와 같이 이 정책에는 장점과 단점이 모두 있다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Như vậy, chính sách này có cả ưu điểm lẫn nhược điểm.
+        - Như vậy, chính sách này có cả ưu điểm và nhược điểm.
+        - Như đã trình bày, chính sách này có cả ưu điểm lẫn nhược điểm.
+        - Như đã trình bày, chính sách này có cả ưu điểm và nhược điểm.
+        - Như vậy, chính sách này vừa có ưu điểm vừa có nhược điểm.
+        - Tóm lại, chính sách này có cả ưu điểm lẫn nhược điểm.
+        - Như vậy, chính sách này có cả mặt mạnh lẫn mặt yếu.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Giống như thế này, chính sách này có cả ưu điểm lẫn nhược điểm.
+        feedback_vi: 이와 같이 ở đầu kết bài nghĩa là "như vậy, như đã trình bày", không dịch từng chữ "giống như thế này".
+        error_tag: literal_translation
+      - answer: Như vậy, chính sách này chỉ có ưu điểm.
+        feedback_vi: 장점과 단점이 모두 - cả ưu điểm và nhược điểm.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 이와 같이 mở đầu kết bài, tương đương "như vậy, như đã trình bày". 장점 ưu điểm, 단점 nhược điểm, 모두 - cả hai.
+    display_answer: Như vậy, chính sách này có cả ưu điểm lẫn nhược điểm.
+
+  - key: ko:exercise:ac-essay-translate-nonran
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-nonran
+    prompt:
+      source_text: Chính sách mới đã gây tranh cãi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 새 정책이 논란이 되었다.
+        - 새 정책이 논란이 됐다.
+        - 새로운 정책이 논란이 되었다.
+        - 새로운 정책이 논란이 됐다.
+        - 새 정책이 논란을 빚었다.
+        - 새로운 정책이 논란을 빚었다.
+        - 새 정책이 논란을 일으켰다.
+        - 새로운 정책이 논란을 일으켰다.
+        - 새 정책이 논란이 됐어요.
+    known_wrong:
+      - answer: 새 정책이 토론이 되었다.
+        feedback_vi: 토론 là buổi thảo luận có tổ chức. "Gây tranh cãi" là 논란이 되다.
+        error_tag: vocab_meaning
+      - answer: 새 정책이 논란이 된다.
+        feedback_vi: Câu tiếng Việt có "đã" nên dùng thì quá khứ - 되었다/됐다.
+        error_tag: tense
+    explanation:
+      vi: Muốn nói "gây tranh cãi" thì dùng 논란이 되다, 논란을 빚다 hoặc 논란을 일으키다. Có "đã" nên dùng quá khứ; đuôi -다 hợp văn viết.
+    display_answer: 새 정책이 논란이 되었다.

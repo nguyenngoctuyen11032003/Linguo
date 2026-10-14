@@ -1,0 +1,413 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:academic-culture-stance
+order_index: 3
+level: topik6
+title:
+  vi: Lập trường, thái độ và chuyên mục văn hoá
+objectives:
+  - vi: Bày tỏ lập trường mạnh với -(으)ㄹ지언정 và nói điều trái kỳ vọng với -기는커녕 / N은/는커녕.
+  - vi: Dùng văn phong trang trọng -(으)ㄹ 따름이다, -(으)ㄴ/는 바 trong phát biểu và bài viết.
+  - vi: Đọc chuyên mục văn hoá về 전통, 계승, 가치관, 세대 갈등 và tránh bẫy từ Hán Việt (공부, 사정).
+estimated_minutes: 20
+skills: [grammar, reading, vocabulary, writing]
+prerequisites: [ko:lesson:academic-cause-limits]
+items:
+  - item: ko:item:ac-gram-l-jieonjeong
+  - item: ko:item:ac-gram-gineun-keonyeong
+  - item: ko:item:ac-gram-l-ttareumida
+  - item: ko:item:ac-gram-neun-ba
+  - item: ko:item:ac-jeontong
+  - item: ko:item:ac-gyeseunghada
+  - item: ko:item:ac-gachigwan
+  - item: ko:item:ac-sedae-galdeung
+  - item: ko:item:ac-sajeong
+  - item: ko:item:verb-gongbuhada
+    role: reuse
+  - item: ko:item:ac-gram-e-bulgwahada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu một chuyên mục văn hoá trên báo Hàn và tự viết được những câu thể hiện lập trường rõ ràng, trang trọng. Câu ví dụ dùng văn viết -ㄴ다 hoặc kính ngữ -습니다.
+  - type: explain
+    text:
+      vi: -(으)ㄹ지언정 là "dù có phải... cũng (nhất quyết không)" - vế trước là điều xấu bạn chấp nhận, vế sau là lập trường không đổi. Vế sau thường là phủ định hay ý chí - 실패할지언정 포기하지는 않겠다.
+  - type: explain
+    text:
+      vi: -기는커녕 (sau động từ) và N은/는커녕 (sau danh từ) là "chẳng những không... mà còn", vế sau trái với kỳ vọng. Ví dụ 칭찬은커녕 꾸중만 들었다 - chẳng được khen mà còn bị mắng.
+  - type: explain
+    text:
+      vi: -(으)ㄹ 따름이다 là "chỉ... mà thôi", trang trọng và khiêm tốn, hay gặp trong phát biểu - 감사할 따름입니다. -(으)ㄴ/는 바 là danh từ phụ thuộc "điều mà", gặp nhiều nhất trong -(으)ㄴ 바와 같이 "như đã...".
+  - type: deep_explain
+    text:
+      vi: Người Việt có lợi thế với từ Hán Hàn nhưng cũng dễ mắc bẫy. 공부 (công phu) trong tiếng Hàn chỉ là "việc học", không có nghĩa "tỉ mỉ, tốn công" - món ăn công phu là 정성이 들어간 음식. 사정 (sự tình) là "hoàn cảnh, lý do riêng", còn "đầu đuôi sự việc" là 경위.
+  - type: example
+    target: 전통은 박물관에 보관된 유물에 불과한 것이 아니다. 젊은 세대가 자신의 가치관에 맞게 전통을 계승할 때 비로소 살아 있는 문화가 된다.
+    target_lang: ko
+    translation:
+      vi: Truyền thống không chỉ là di vật cất trong bảo tàng. Chỉ khi thế hệ trẻ kế thừa truyền thống theo hệ giá trị của chính mình, nó mới trở thành văn hoá sống.
+    note:
+      vi: Trích chuyên mục văn hoá - 에 불과한 것이 아니다 phủ định cách nhìn hẹp; 비로소 = "mới, chỉ khi đó mới".
+  - type: example
+    target: 세대 갈등을 줄이기는커녕 오히려 키우는 정책도 있다.
+    target_lang: ko
+    translation:
+      vi: Có những chính sách chẳng những không giảm xung đột thế hệ mà còn làm nó trầm trọng hơn.
+    note:
+      vi: -기는커녕 thường đi với 오히려 (ngược lại) ở vế sau.
+  - type: example
+    target: 굶을지언정 남의 것을 훔치지는 않겠다.
+    target_lang: ko
+    translation:
+      vi: Dù có phải nhịn đói, tôi cũng nhất định không lấy trộm đồ của người khác.
+    note:
+      vi: Vế sau có -지는 않겠다 - phủ định kèm ý chí, rất hợp với -(으)ㄹ지언정.
+  - type: example
+    target: 앞에서 살펴본 바와 같이 가치관의 차이는 갈등의 원인이 되기도 한다.
+    target_lang: ko
+    translation:
+      vi: Như đã xem xét ở trên, khác biệt về hệ giá trị cũng có thể trở thành nguyên nhân gây xung đột.
+    note:
+      vi: 살펴본 바와 같이 = "như đã xem xét" - cụm mở đầu rất hay dùng trong 본론 và 결론.
+  - type: common_mistake
+    wrong: 비가 올지언정 우산을 가져가세요.
+    right: 비가 올지언정 약속은 꼭 지키겠다.
+    target_lang: ko
+    note:
+      vi: Người Việt hay dùng -(으)ㄹ지언정 như "dù" thông thường. Vế sau phải là lập trường, ý chí mạnh, không phải lời khuyên.
+  - type: common_mistake
+    wrong: 칭찬은커녕 상도 받았다.
+    right: 칭찬은커녕 꾸중만 들었다.
+    target_lang: ko
+    note:
+      vi: -커녕 chỉ dùng khi vế sau trái kỳ vọng hoặc tệ hơn. Hai điều tốt chồng lên nhau thì dùng 뿐만 아니라.
+  - type: common_mistake
+    wrong: 이 요리는 공부가 많이 들었다.
+    right: 이 요리는 정성이 많이 들어갔다.
+    target_lang: ko
+    note:
+      vi: 공부 trong tiếng Hàn chỉ là "việc học", không mang nghĩa "công phu, tỉ mỉ" như tiếng Việt. Dùng 정성 (tâm huyết) hoặc 공 (công sức).
+  - type: common_mistake
+    wrong: 그 사건의 사정을 처음부터 이야기해 주세요.
+    right: 그 사건의 경위를 처음부터 이야기해 주세요.
+    target_lang: ko
+    note:
+      vi: Muốn nói "kể sự tình" theo nghĩa đầu đuôi câu chuyện thì dùng 경위. 사정 là hoàn cảnh, lý do riêng - 집안 사정, 개인 사정.
+  - type: summary
+    points:
+      - vi: -(으)ㄹ지언정 - dù có... cũng nhất quyết (vế sau là ý chí, phủ định).
+      - vi: -기는커녕 / N은/는커녕 - chẳng những không... mà còn (vế sau trái kỳ vọng).
+      - vi: -(으)ㄹ 따름이다 - chỉ... mà thôi (trang trọng) · -(으)ㄴ 바와 같이 - như đã...
+      - vi: 전통 truyền thống · 계승하다 kế thừa · 가치관 hệ giá trị · 세대 갈등 xung đột thế hệ.
+      - vi: Bẫy Hán Việt - 공부 chỉ là "học", 사정 là "hoàn cảnh riêng" chứ không phải "đầu đuôi sự việc".
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:ac-stance-mcq-keonyeong-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ac-gram-gineun-keonyeong
+    prompt:
+      stem: "돈을 모으기는커녕 빚만 늘었다. - Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: k2v, text: Chẳng những không để dành được tiền mà nợ còn tăng lên., lang: vi }
+        - { id: y8d, text: Vừa để dành được tiền vừa trả bớt được nợ., lang: vi }
+        - { id: j5p, text: Để dành tiền xong thì nợ mới tăng lên., lang: vi }
+        - { id: z3h, text: Muốn để dành tiền thì phải trả nợ trước., lang: vi }
+    answer:
+      correct_option_id: k2v
+    explanation:
+      vi: -기는커녕 = "chẳng những không"; vế sau 빚만 늘었다 (chỉ có nợ tăng) trái với kỳ vọng để dành tiền.
+    display_answer: Chẳng những không để dành được tiền mà nợ còn tăng lên.
+
+  - key: ko:exercise:ac-stance-mcq-ttareum
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-gram-l-ttareumida
+    prompt:
+      stem: "Phát biểu khi nhận giải: \"이렇게 큰 상을 받게 되어 그저 감사할 ___.\" (Tôi chỉ biết cảm ơn mà thôi.)"
+      stem_lang: vi
+      options:
+        - { id: n4c, text: 따름입니다, lang: ko }
+        - { id: g7a, text: 셈입니다, lang: ko }
+        - { id: e1x, text: 불과합니다, lang: ko }
+        - { id: o9b, text: 지언정입니다, lang: ko }
+    answer:
+      correct_option_id: n4c
+    explanation:
+      vi: -(으)ㄹ 따름이다 = "chỉ... mà thôi", khiêm tốn và trang trọng, rất hợp lời phát biểu. 셈이다 là "coi như", 불과하다 đi sau danh từ + 에, còn -(으)ㄹ지언정 là liên từ, không đứng cuối câu.
+    display_answer: 따름입니다
+
+  - key: ko:exercise:ac-stance-listen-column
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:ac-gyeseunghada
+    prompt:
+      audio_asset_id: null
+      fallback_text: 전통은 그대로 지키기만 하는 것이 아니라 시대에 맞게 계승해야 하는 것이다.
+      options:
+        - { id: c6t, text: Truyền thống không chỉ để giữ nguyên mà cần được kế thừa cho phù hợp với thời đại., lang: vi }
+        - { id: f1m, text: Truyền thống chỉ cần được giữ nguyên như cũ., lang: vi }
+        - { id: r5q, text: Truyền thống không còn phù hợp với thời đại nên cần bỏ đi., lang: vi }
+        - { id: w8e, text: Thời đại thay đổi nên truyền thống tự biến mất., lang: vi }
+    answer:
+      correct_option_id: c6t
+    explanation:
+      vi: -기만 하는 것이 아니라 = "không chỉ"; 시대에 맞게 계승하다 = kế thừa cho hợp thời đại. Người viết không muốn bỏ truyền thống mà muốn đổi mới cách giữ gìn.
+    display_answer: Truyền thống không chỉ để giữ nguyên mà cần được kế thừa cho phù hợp với thời đại.
+
+  - key: ko:exercise:ac-stance-fill-bawa
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gram-neun-ba
+    prompt:
+      template: "앞에서 살펴본 {{b1}} 같이 가치관의 차이는 갈등의 원인이 되기도 한다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - Cụm cố định nghĩa là "như đã xem xét".
+        - Danh từ phụ thuộc 바 + trợ từ 와.
+    answer:
+      blanks:
+        b1: [바와]
+    known_wrong:
+      - answer: 바가
+        feedback_vi: Trước 같이 phải dùng trợ từ 와 - 바와 같이.
+        error_tag: particle_choice
+      - answer: 바를
+        feedback_vi: Trước 같이 phải dùng trợ từ 와 - 바와 같이.
+        error_tag: particle_choice
+      - answer: 바과
+        feedback_vi: 바 không có patchim nên dùng 와, không dùng 과.
+        error_tag: particle_allomorph
+    explanation:
+      vi: -(으)ㄴ 바와 같이 = "như đã...". 바 kết thúc bằng nguyên âm nên đi với 와. Đây là cụm mở đầu chuẩn trong bài luận và báo cáo.
+    display_answer: 앞에서 살펴본 바와 같이 가치관의 차이는 갈등의 원인이 되기도 한다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:ac-stance-fill-jieonjeong
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gram-l-jieonjeong
+    prompt:
+      template: "Dù có thất bại, tôi cũng nhất định không bỏ cuộc (dùng -(으)ㄹ지언정). - {{b1}} 포기하지는 않겠다."
+      blanks:
+        - { id: b1, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [실패할지언정]
+    known_wrong:
+      - answer: 실패한지언정
+        feedback_vi: Cấu trúc là -(으)ㄹ지언정, dùng ㄹ - 실패할지언정.
+        error_tag: modifier_form
+      - answer: 실패하지언정
+        feedback_vi: Thiếu ㄹ. Gốc 실패하 + -ㄹ지언정 → 실패할지언정.
+        error_tag: modifier_form
+      - answer: 실패할 지언정
+        feedback_vi: -(으)ㄹ지언정 là một đuôi liền, viết dính - 실패할지언정.
+        error_tag: spacing_ending
+    explanation:
+      vi: 실패하다 (thất bại) + -ㄹ지언정 → 실패할지언정. Vế sau 포기하지는 않겠다 là ý chí mạnh, đúng với cấu trúc này.
+    display_answer: 실패할지언정 포기하지는 않겠다.
+
+  - key: ko:exercise:ac-stance-fill-eunkeonyeong
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gram-gineun-keonyeong
+    prompt:
+      template: "Chẳng được khen mà còn bị mắng. - 칭찬{{b1}} 꾸중만 들었다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [은커녕]
+    known_wrong:
+      - answer: 는커녕
+        feedback_vi: 칭찬 có patchim ㄴ nên dùng 은커녕.
+        error_tag: particle_allomorph
+      - answer: 뿐만 아니라
+        feedback_vi: 뿐만 아니라 cộng hai ý cùng chiều. Ở đây vế sau trái kỳ vọng nên dùng 은커녕.
+        error_tag: connective_meaning
+      - answer: 커녕
+        feedback_vi: Sau danh từ cần trợ từ 은/는 - 칭찬은커녕.
+        error_tag: missing_particle
+    explanation:
+      vi: Sau danh từ dùng N은/는커녕; 칭찬 có patchim nên là 은커녕. Vế sau 꾸중만 들었다 trái với kỳ vọng được khen.
+    display_answer: 칭찬은커녕 꾸중만 들었다.
+
+  - key: ko:exercise:ac-stance-translate-gachigwan
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ac-gachigwan
+    prompt:
+      source_text: Mỗi thế hệ có hệ giá trị khác nhau.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 세대마다 가치관이 다르다.
+        - 세대마다 가치관이 서로 다르다.
+        - 세대별로 가치관이 다르다.
+        - 각 세대는 가치관이 다르다.
+        - 세대마다 가치관이 다릅니다.
+        - 세대마다 가치관이 달라요.
+    known_wrong:
+      - answer: 세대마다 가치가 다르다.
+        feedback_vi: 가치 là "giá trị" của một vật. "Hệ giá trị, quan niệm sống" là 가치관.
+        error_tag: vocab_meaning
+      - answer: 세대마다 가치관이 틀리다.
+        feedback_vi: 틀리다 là "sai". "Khác nhau" là 다르다 - lỗi người Hàn cũng hay mắc trong văn nói.
+        error_tag: vocab_meaning
+      - answer: sedaemada gachigwani dareuda
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: N마다 = mỗi N; 가치관 = hệ giá trị; 다르다 = khác. Đuôi -다 hợp văn viết, 다릅니다/달라요 cũng được.
+    display_answer: 세대마다 가치관이 다르다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:ac-stance-mcq-gongbu-false-friend
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:verb-gongbuhada
+    prompt:
+      stem: "Bạn muốn viết: \"Món ăn này được làm rất công phu.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: s2k, text: 이 요리는 정성이 많이 들어갔다., lang: ko }
+        - { id: m6n, text: 이 요리는 공부가 많이 들었다., lang: ko }
+        - { id: t9f, text: 이 요리는 공부를 많이 했다., lang: ko }
+        - { id: b4y, text: 이 요리는 사정이 많다., lang: ko }
+    answer:
+      correct_option_id: s2k
+    explanation:
+      vi: "\"Công phu\" (tốn công, tỉ mỉ) là 정성이 많이 들어가다. 공부 trong tiếng Hàn chỉ là \"việc học\", và 사정 là hoàn cảnh riêng - cả hai đều là bẫy Hán Việt."
+    display_answer: 이 요리는 정성이 많이 들어갔다.
+
+  - key: ko:exercise:ac-stance-mcq-sajeong
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ac-sajeong
+    prompt:
+      stem: "Email gửi công ty: \"개인 사정으로 회의에 참석하지 못했습니다.\" Nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: d7w, text: Vì có việc riêng nên tôi đã không thể tham dự cuộc họp., lang: vi }
+        - { id: h1u, text: Tôi đã kể sự tình cá nhân trong cuộc họp., lang: vi }
+        - { id: q5r, text: Vì không thích cuộc họp nên tôi đã không đến., lang: vi }
+        - { id: v3l, text: Tôi đã tham dự cuộc họp vì việc cá nhân., lang: vi }
+    answer:
+      correct_option_id: d7w
+    explanation:
+      vi: 개인 사정 là "việc riêng, hoàn cảnh riêng" - cách nói lịch sự, không cần giải thích chi tiết. Đây không phải "sự tình" theo nghĩa kể chuyện; 참석하지 못했습니다 là "đã không thể tham dự".
+    display_answer: Vì có việc riêng nên tôi đã không thể tham dự cuộc họp.
+
+  - key: ko:exercise:ac-stance-translate-gyeseung
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:ac-gyeseunghada
+    prompt:
+      source_text: 젊은 세대가 전통을 계승하고 있다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thế hệ trẻ đang kế thừa truyền thống.
+        - Các thế hệ trẻ đang kế thừa truyền thống.
+        - Thế hệ trẻ đang tiếp nối truyền thống.
+        - Thế hệ trẻ đang kế tục truyền thống.
+        - Lớp trẻ đang kế thừa truyền thống.
+        - Giới trẻ đang kế thừa truyền thống.
+        - Thế hệ trẻ đang gìn giữ và kế thừa truyền thống.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thế hệ trẻ đang thừa kế truyền thống.
+        feedback_vi: "\"Thừa kế\" dùng cho tài sản (상속). Với truyền thống, nói \"kế thừa\" hoặc \"tiếp nối\"."
+        error_tag: sino_false_friend
+      - answer: Thế hệ trẻ đang phá bỏ truyền thống.
+        feedback_vi: 계승하다 là kế thừa, tiếp nối - nghĩa ngược với phá bỏ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 젊은 세대 = thế hệ trẻ, 전통 = truyền thống, 계승하고 있다 = đang kế thừa. Trong tiếng Việt, "thừa kế" dùng cho tài sản, nên chọn "kế thừa".
+    display_answer: Thế hệ trẻ đang kế thừa truyền thống.
+
+  - key: ko:exercise:ac-stance-translate-ttareum
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:ac-gram-l-ttareumida
+    prompt:
+      source_text: Tôi chỉ làm việc của mình mà thôi. (trang trọng)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 저는 제 할 일을 했을 따름입니다.
+        - 제 할 일을 했을 따름입니다.
+        - 저는 제가 할 일을 했을 따름입니다.
+        - 저는 제 할 일을 할 따름입니다.
+        - 제 할 일을 할 따름입니다.
+        - 저는 제 할 일을 했을 뿐입니다.
+        - 제 할 일을 했을 뿐입니다.
+    known_wrong:
+      - answer: 저는 제 할 일을 한 따름입니다.
+        feedback_vi: Cấu trúc là -(으)ㄹ 따름이다 - 했을 따름 hoặc 할 따름, không dùng 한.
+        error_tag: modifier_form
+      - answer: 저는 제 할 일을 했을 따름이야.
+        feedback_vi: 따름 là cách nói trang trọng; đuôi 반말 -야 không hợp. Dùng 따름입니다.
+        error_tag: register_ending
+      - answer: 저는 제 할 일만 했어.
+        feedback_vi: Đuôi 반말 không đúng yêu cầu "trang trọng". Dùng -(으)ㄹ 따름입니다.
+        error_tag: register_ending
+    explanation:
+      vi: "\"Chỉ... mà thôi\" trang trọng = -(으)ㄹ 따름입니다; việc đã làm thì 했을 따름입니다. -(으)ㄹ 뿐입니다 cùng nghĩa, bớt trang trọng một chút."
+    display_answer: 저는 제 할 일을 했을 따름입니다.
+
+  - key: ko:exercise:ac-stance-order-jieonjeong
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-gram-l-jieonjeong
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Dù có phải nhịn đói, tôi cũng nhất định không lấy trộm đồ của người khác.\""
+      tokens:
+        - { id: t-an, text: 않겠다 }
+        - { id: t-nam, text: 남의 것을 }
+        - { id: t-guleun, text: 굶은지언정 }
+        - { id: t-hum, text: 훔치지는 }
+        - { id: t-se, text: 훔치세요 }
+        - { id: t-gul, text: 굶을지언정 }
+    answer:
+      orders:
+        - [t-gul, t-nam, t-hum, t-an]
+    explanation:
+      vi: Vế chấp nhận điều xấu 굶을지언정 đứng trước, vế lập trường 남의 것을 훔치지는 않겠다 đứng sau. 굶은지언정 sai hình thức (phải là ㄹ), 훔치세요 là lời khuyên, không phải ý chí.
+    display_answer: 굶을지언정 남의 것을 훔치지는 않겠다.

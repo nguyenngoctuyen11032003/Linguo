@@ -1,0 +1,444 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:culture-opinions-review
+order_index: 5
+level: topik4
+title:
+  vi: Ôn tập - Phỏng vấn du học sinh về văn hoá Hàn
+objectives:
+  - vi: Đọc hiểu một bài phỏng vấn (해요체) về trải nghiệm văn hoá Hàn Quốc của du học sinh Việt Nam.
+  - vi: Kết hợp nêu quan điểm, so sánh, kể kinh nghiệm, thay đổi, mong ước, phỏng đoán và tiếc nuối trong cùng một đoạn nói.
+  - vi: Tránh các lỗi quen thuộc - 반말 với người lớn, -아/어지다 với động từ, nhầm -나 보다 / -(으)ㄴ가 보다, chia sai thì -았/었으면 좋겠다.
+estimated_minutes: 25
+skills: [reading, grammar, writing]
+prerequisites: [ko:lesson:media-guessing]
+items:
+  - item: ko:item:gram-dago-saenggakhada
+    role: reuse
+  - item: ko:item:gram-eul-piryoga-itda
+    role: reuse
+  - item: ko:item:je-saenggageneun
+    role: reuse
+  - item: ko:item:banmal
+    role: reuse
+  - item: ko:item:du-sonuro
+    role: reuse
+  - item: ko:item:nai-munhwa
+    role: reuse
+  - item: ko:item:gram-e-bihae
+    role: reuse
+  - item: ko:item:gram-a-bon-jeogi-itda
+    role: reuse
+  - item: ko:item:gram-a-jida
+    role: reuse
+  - item: ko:item:gram-asseumyeon-joketda
+    role: reuse
+  - item: ko:item:songpyeon
+    role: reuse
+  - item: ko:item:hanbok
+    role: reuse
+  - item: ko:item:gram-eul-tende
+    role: reuse
+  - item: ko:item:gram-na-boda
+    role: reuse
+  - item: ko:item:gram-eulgeol-geuraetda
+    role: reuse
+  - item: ko:item:akpeul
+    role: reuse
+  - item: ko:item:daetgeul
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn này dựa trên một cuộc phỏng vấn ngắn với Linh, du học sinh Việt Nam ở Seoul. Bạn sẽ dùng lại toàn bộ cấu trúc của unit để hiểu và trả lời về văn hoá, truyền thông và quan điểm cá nhân.
+  - type: explain
+    text:
+      vi: "Nêu và so sánh ý kiến: 제 생각에는… / …-다고 생각해요; N보다, N에 비해; -(으)ㄹ 필요가 있다. Nhớ chia đúng trước -다고 - động từ -ㄴ/는다고, tính từ và 있다 -다고."
+  - type: explain
+    text:
+      vi: "Kể chuyện và mong ước: -아/어 본 적이 있다 (đã từng thử), tính từ + -아/어지다 (trở nên), -았/었으면 좋겠다 (mong là). Phỏng đoán và tiếc nuối: -(으)ㄹ 텐데, -나 보다 / -(으)ㄴ가 보다, -(으)ㄹ걸 그랬다."
+  - type: deep_explain
+    text:
+      vi: Khi trả lời phỏng vấn hay viết đoạn văn nêu ý kiến ở TOPIK 4, bạn nên đi theo ba bước - kinh nghiệm (본 적이 있어요), so sánh và nhận xét (베트남에 비해…, …-다고 생각해요), rồi mong ước (…-았/었으면 좋겠어요). Dùng 해요체 khi nói chuyện, phỏng vấn; dùng -다 khi viết bài báo, bài luận. Đừng trộn hai lối này trong cùng một đoạn.
+  - type: example
+    target: "기자: 린 씨, 한국 명절을 보낸 적이 있어요?\n린: 네, 작년 추석에 친구 집에서 송편을 만들어 봤어요. 생각보다 어려웠어요.\n기자: 한국 문화 중에서 무엇이 가장 달랐어요?\n린: 나이 문화요. 베트남에 비해 한국은 나이에 따라 말이 많이 달라져요. 처음에는 선배에게 반말을 해서 실수한 적도 있어요.\n기자: 요즘도 한국 드라마나 유튜브를 자주 봐요?\n린: 네, 매일 봐요. 덕분에 듣기 실력이 많이 좋아졌어요. 그런데 악플은 정말 큰 문제라고 생각해요.\n기자: 마지막으로 바라는 점이 있어요?\n린: 외국인도 한국 문화를 더 쉽게 배울 수 있었으면 좋겠어요."
+    target_lang: ko
+    translation:
+      vi: "Phóng viên: Linh đã từng đón ngày lễ ở Hàn chưa?\nLinh: Rồi ạ, Chuseok năm ngoái tôi đã thử làm bánh songpyeon ở nhà bạn. Khó hơn tôi nghĩ.\nPhóng viên: Trong văn hoá Hàn, điều gì khác nhất?\nLinh: Văn hoá tuổi tác ạ. So với Việt Nam, ở Hàn cách nói thay đổi nhiều theo tuổi. Lúc đầu tôi còn từng lỡ nói trống không với đàn anh.\nPhóng viên: Dạo này bạn vẫn hay xem phim Hàn hay YouTube chứ?\nLinh: Vâng, ngày nào cũng xem. Nhờ vậy kỹ năng nghe của tôi tốt lên nhiều. Nhưng tôi nghĩ bình luận ác ý thật sự là vấn đề lớn.\nPhóng viên: Cuối cùng, bạn có mong muốn gì không?\nLinh: Mong là người nước ngoài cũng có thể học văn hoá Hàn dễ dàng hơn."
+    note:
+      vi: Bài phỏng vấn dùng 해요체. Tìm lại các cấu trúc - 만들어 봤어요, 베트남에 비해, 달라져요, 좋아졌어요, 문제라고 생각해요, 배울 수 있었으면 좋겠어요.
+  - type: example
+    target: 제 생각에는 어른에게 물건을 드릴 때 두 손으로 드릴 필요가 있어요.
+    target_lang: ko
+    translation:
+      vi: Theo tôi, khi đưa đồ cho người lớn thì cần đưa bằng hai tay.
+  - type: example
+    target: 댓글을 보니까 사람들이 그 광고를 싫어하나 봐요.
+    target_lang: ko
+    translation:
+      vi: Xem bình luận thì hình như mọi người không thích quảng cáo đó.
+    note:
+      vi: 싫어하다 là động từ → 싫어하나 봐요.
+  - type: example
+    target: 한국어를 더 일찍 배울걸 그랬어요.
+    target_lang: ko
+    translation:
+      vi: Lẽ ra tôi nên học tiếng Hàn sớm hơn.
+  - type: common_mistake
+    wrong: 선배, 이거 먹어.
+    right: 선배, 이거 드세요.
+    target_lang: ko
+    note:
+      vi: Với đàn anh, đàn chị hoặc người lớn tuổi hơn, câu không có đuôi lịch sự là 반말 và bị coi là vô lễ. Chỉ chuyển sang 반말 khi người lớn hơn đề nghị trước.
+  - type: common_mistake
+    wrong: 듣기를 잘해졌어요.
+    right: 듣기 실력이 좋아졌어요.
+    target_lang: ko
+    note:
+      vi: -아/어지다 gắn với tính từ (좋다 → 좋아지다), không gắn với động từ 잘하다. Hãy đổi sang chủ ngữ "kỹ năng" + tính từ.
+  - type: common_mistake
+    wrong: 그 드라마가 재미있은가 봐요.
+    right: 그 드라마가 재미있나 봐요.
+    target_lang: ko
+    note:
+      vi: Từ có đuôi 있다/없다 (재미있다, 맛없다) đi với -나 봐요 như động từ, dù nghĩa giống tính từ.
+  - type: summary
+    points:
+      - vi: Quan điểm - 제 생각에는…, -다고 생각해요, -(으)ㄹ 필요가 있다, N에 찬성/반대하다.
+      - vi: So sánh - N보다 (더), N에 비해, -는/(으)ㄴ 반면에.
+      - vi: Kinh nghiệm & thay đổi - -아/어 본 적이 있다, -(으)ㄴ 적이 없다, A-아/어지다.
+      - vi: Mong ước, đoán, tiếc - -았/었으면 좋겠다, -(으)ㄹ 텐데, -나/-(으)ㄴ가 보다, -(으)ㄹ걸 그랬다.
+      - vi: Văn hoá - 존댓말/반말, 두 손으로, 나이 문화, 설날·추석, 댓글·악플.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:culture-opinions-review-listen-songpyeon
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-a-bon-jeogi-itda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 작년 추석에 친구 집에서 송편을 만들어 봤어요. 생각보다 어려웠어요.
+      options:
+        - { id: a3k, text: "Chuseok năm ngoái tôi đã thử làm bánh songpyeon ở nhà bạn. Khó hơn tôi nghĩ.", lang: vi }
+        - { id: h7e, text: "Chuseok năm ngoái tôi đã ăn bánh songpyeon ở nhà bạn. Ngon hơn tôi nghĩ.", lang: vi }
+        - { id: q2m, text: "Chuseok năm nay tôi muốn làm bánh songpyeon ở nhà bạn.", lang: vi }
+        - { id: z9d, text: "Tôi chưa từng làm bánh songpyeon vì nó khó quá.", lang: vi }
+    answer:
+      correct_option_id: a3k
+    explanation:
+      vi: 작년 là "năm ngoái", 만들어 봤어요 là "đã thử làm", 생각보다 어려웠어요 là "khó hơn tôi nghĩ". Câu không nói "ăn", "muốn" hay "chưa từng".
+    display_answer: "Chuseok năm ngoái tôi đã thử làm bánh songpyeon ở nhà bạn. Khó hơn tôi nghĩ."
+
+  - key: ko:exercise:culture-opinions-review-mcq-tende
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eul-tende
+    prompt:
+      stem: "Chọn dạng đúng: 밖에 날씨가 ___ 따뜻하게 입으세요."
+      stem_lang: vi
+      options:
+        - { id: n4c, text: 추울 텐데, lang: ko }
+        - { id: s8j, text: 추운 텐데, lang: ko }
+        - { id: e1w, text: 춥는 텐데, lang: ko }
+        - { id: k5y, text: 추운가 봐요, lang: ko }
+    answer:
+      correct_option_id: n4c
+    explanation:
+      vi: 텐데 luôn đi với -(으)ㄹ - 춥다 (bất quy tắc ㅂ) → 추울 텐데, rồi vế sau khuyên "mặc ấm". 추운가 봐요 là câu đoán kết thúc, không nối được với lời khuyên.
+    display_answer: 추울 텐데
+
+  - key: ko:exercise:culture-opinions-review-mcq-correct-sentence
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-a-jida
+    prompt:
+      stem: Câu nào đúng ngữ pháp?
+      stem_lang: vi
+      options:
+        - { id: v6t, text: 한국어 실력이 많이 좋아졌어요., lang: ko }
+        - { id: b3r, text: 한국어를 많이 잘해졌어요., lang: ko }
+        - { id: g8x, text: 내일 눈이 왔으면 좋았어요., lang: ko }
+        - { id: p1s, text: 그 드라마가 재미있은가 봐요., lang: ko }
+    answer:
+      correct_option_id: v6t
+    explanation:
+      vi: 좋다 là tính từ nên 좋아지다 đúng. 잘하다 là động từ, không gắn -아/어지다; mong ước kết thúc bằng 좋겠어요; 재미있다 đi với -나 봐요.
+    display_answer: 한국어 실력이 많이 좋아졌어요.
+
+  - key: ko:exercise:culture-opinions-review-wb-age-culture
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-e-bihae
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"So với Việt Nam, văn hoá tuổi tác ở Hàn Quốc mạnh hơn.\""
+      tokens:
+        - { id: v5, text: 문화가 }
+        - { id: v2, text: 비해 }
+        - { id: v7, text: 베트남을 }
+        - { id: v6, text: 강해요 }
+        - { id: v3, text: 한국은 }
+        - { id: v1, text: 베트남에 }
+        - { id: v4, text: 나이 }
+    answer:
+      orders:
+        - [v1, v2, v3, v4, v5, v6]
+        - [v3, v1, v2, v4, v5, v6]
+    explanation:
+      vi: So với N = N에 비해 (trợ từ 에). 한국은 làm chủ đề, 나이 문화가 강해요 là nhận xét.
+    display_answer: 베트남에 비해 한국은 나이 문화가 강해요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:culture-opinions-review-fill-hanbok-story
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-asseumyeon-joketda
+    prompt:
+      template: "(Tôi đã từng mặc thử hanbok.) 한복을 {{b1}} 본 적이 있어요. (Tôi nghĩ văn hoá truyền thống quan trọng.) 저는 전통 문화가 {{b2}} 생각해요. (Mong là năm sau lại được mặc.) 내년에도 또 {{b3}} 좋겠어요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [입어]
+        b2: [중요하다고]
+        b3: [입었으면, 입으면]
+    known_wrong:
+      - answer: 입은
+        feedback_vi: Trước 보다 dùng -아/어 - 입어 본 적.
+        error_tag: bon_jeok_form
+      - answer: 중요한다고
+        feedback_vi: 중요하다 là tính từ - 중요하다고, không thêm ㄴ.
+        error_tag: adjective_dago
+      - answer: 입겠으면
+        feedback_vi: Mong ước dùng -았/었으면 좋겠어요 - 입었으면.
+        error_tag: hope_form
+    explanation:
+      vi: 입다 → 입어 본 적 (đã thử mặc); tính từ 중요하다 → 중요하다고 생각해요; mong ước → 입었으면 좋겠어요.
+    display_answer: 한복을 입어 본 적이 있어요. 저는 전통 문화가 중요하다고 생각해요. 내년에도 또 입었으면 좋겠어요.
+
+  - key: ko:exercise:culture-opinions-review-translate-careful-comments
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-eul-piryoga-itda
+    prompt:
+      source_text: Theo tôi, khi viết bình luận cần phải cẩn thận.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 제 생각에는 댓글을 쓸 때 조심할 필요가 있어요.
+        - 제 생각에는 댓글을 달 때 조심할 필요가 있어요.
+        - 제 생각에는 댓글을 쓸 때는 조심할 필요가 있어요.
+        - 제 생각에는 댓글을 달 때는 조심할 필요가 있어요.
+        - 제 생각에는 댓글 쓸 때 조심할 필요가 있어요.
+        - 댓글을 쓸 때 조심할 필요가 있다고 생각해요.
+        - 댓글을 달 때 조심할 필요가 있다고 생각해요.
+        - 저는 댓글을 쓸 때 조심할 필요가 있다고 생각해요.
+        - 저는 댓글을 달 때 조심할 필요가 있다고 생각해요.
+        - 댓글 쓸 때 조심할 필요가 있다고 생각해요.
+        - 제 생각에는 댓글을 쓸 때 조심해야 해요.
+    known_wrong:
+      - answer: 제 생각에는 댓글을 쓸 때 조심하는 필요가 있어요.
+        feedback_vi: Trước 필요 dùng -(으)ㄹ - 조심할 필요.
+        error_tag: piryo_form
+      - answer: 저 생각에는 댓글을 쓸 때 조심할 필요가 있어요.
+        feedback_vi: '"Của tôi" là 제 - 제 생각에는.'
+        error_tag: je_jeo
+      - answer: 댓글을 쓸 때 조심할 필요가 있는다고 생각해요.
+        feedback_vi: 있다 + -다고 → 있다고, không phải 있는다고.
+        error_tag: itda_dago
+    explanation:
+      vi: Theo tôi = 제 생각에는 (hoặc kết thúc bằng -다고 생각해요). Khi viết bình luận = 댓글을 쓸/달 때; cần cẩn thận = 조심할 필요가 있어요.
+    display_answer: 제 생각에는 댓글을 쓸 때 조심할 필요가 있어요.
+
+  - key: ko:exercise:culture-opinions-review-translate-drama-fun
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-na-boda
+    prompt:
+      source_text: Hình như bộ phim đó hay lắm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 그 드라마가 정말 재미있나 봐요.
+        - 그 드라마가 아주 재미있나 봐요.
+        - 그 드라마가 너무 재미있나 봐요.
+        - 그 드라마가 재미있나 봐요.
+        - 그 드라마는 재미있나 봐요.
+        - 그 드라마 정말 재미있나 봐요.
+        - 그 영화가 정말 재미있나 봐요.
+        - 그 영화가 아주 재미있나 봐요.
+        - 그 영화가 재미있나 봐요.
+        - 그 영화는 재미있나 봐요.
+        - 그 드라마가 정말 좋은가 봐요.
+        - 그 영화가 정말 좋은가 봐요.
+    known_wrong:
+      - answer: 그 드라마가 정말 재미있은가 봐요.
+        feedback_vi: 재미있다 có đuôi 있다 nên dùng -나 봐요 - 재미있나 봐요.
+        error_tag: na_eunga_boda
+      - answer: 그 드라마가 정말 재미있어졌어요.
+        feedback_vi: -아/어졌어요 là "đã trở nên". Phỏng đoán "hình như" dùng -나 봐요.
+        error_tag: guess_missing
+      - answer: 그 드라마가 정말 좋나 봐요.
+        feedback_vi: Theo chuẩn, tính từ 좋다 dùng -(으)ㄴ가 봐요 - 좋은가 봐요.
+        error_tag: na_eunga_boda
+    explanation:
+      vi: Hình như = -나 봐요 / -(으)ㄴ가 봐요. 재미있다 → 재미있나 봐요; nếu dùng tính từ 좋다 thì 좋은가 봐요.
+    display_answer: 그 드라마가 정말 재미있나 봐요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:culture-opinions-review-mcq-reading-interview
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:nai-munhwa
+    prompt:
+      stem: "다음 인터뷰의 내용과 같은 것을 고르십시오.\n기자: 린 씨, 한국 명절을 보낸 적이 있어요?\n린: 네, 작년 추석에 친구 집에서 송편을 만들어 봤어요. 생각보다 어려웠어요.\n기자: 한국 문화 중에서 무엇이 가장 달랐어요?\n린: 나이 문화요. 베트남에 비해 한국은 나이에 따라 말이 많이 달라져요. 처음에는 선배에게 반말을 해서 실수한 적도 있어요.\n기자: 요즘도 한국 드라마나 유튜브를 자주 봐요?\n린: 네, 매일 봐요. 덕분에 듣기 실력이 많이 좋아졌어요. 그런데 악플은 정말 큰 문제라고 생각해요."
+      stem_lang: ko
+      options:
+        - { id: c2h, text: 린 씨는 선배에게 반말을 해서 실수한 적이 있다., lang: ko }
+        - { id: w7u, text: 린 씨는 송편을 만들어 본 적이 없다., lang: ko }
+        - { id: o4f, text: 린 씨는 한국 드라마를 거의 보지 않는다., lang: ko }
+        - { id: j6a, text: 린 씨는 악플이 큰 문제가 아니라고 생각한다., lang: ko }
+    answer:
+      correct_option_id: c2h
+    explanation:
+      vi: Linh kể 선배에게 반말을 해서 실수한 적도 있어요 - đã từng lỡ nói trống không với đàn anh. Linh đã thử làm songpyeon, xem phim mỗi ngày và cho rằng 악플 là vấn đề lớn.
+    display_answer: 린 씨는 선배에게 반말을 해서 실수한 적이 있다.
+
+  - key: ko:exercise:culture-opinions-review-mcq-gift-grandmother
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:du-sonuro
+    prompt:
+      stem: Bạn đến nhà bạn Hàn chơi và tặng quà cho bà của bạn ấy. Cách nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: m8q, text: "(두 손으로 주면서) 할머니, 이거 받으세요.", lang: ko }
+        - { id: t3b, text: "(한 손으로 주면서) 할머니, 이거 받아.", lang: ko }
+        - { id: r1z, text: "(두 손으로 주면서) 할머니, 이거 받아.", lang: ko }
+        - { id: f5n, text: "(한 손으로 주면서) 할머니, 이거 받으세요.", lang: ko }
+    answer:
+      correct_option_id: m8q
+    explanation:
+      vi: Với người lớn tuổi cần cả hai điều - đưa bằng hai tay (두 손으로) và nói 존댓말 (받으세요). 받아 là 반말; đưa một tay bị coi là thiếu lễ phép.
+    display_answer: "(두 손으로 주면서) 할머니, 이거 받으세요."
+
+  - key: ko:exercise:culture-opinions-review-translate-age-speech
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:gram-a-jida
+    prompt:
+      source_text: 베트남에 비해 한국은 나이에 따라 말이 많이 달라져요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều theo tuổi tác.
+        - So với Việt Nam, ở Hàn Quốc cách nói thay đổi rất nhiều theo tuổi tác.
+        - So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều tùy theo tuổi tác.
+        - So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều tuỳ theo tuổi tác.
+        - So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều tùy theo tuổi.
+        - So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều tuỳ theo tuổi.
+        - So với Việt Nam, ở Hàn Quốc cách nói khác đi nhiều theo tuổi tác.
+        - So với Việt Nam, ở Hàn cách nói thay đổi nhiều theo tuổi tác.
+        - So với Việt Nam, ở Hàn Quốc lời nói thay đổi nhiều theo tuổi tác.
+        - So với Việt Nam, ở Hàn Quốc cách nói chuyện thay đổi nhiều theo tuổi tác.
+        - So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều theo tuổi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: So với Hàn Quốc, ở Việt Nam cách nói thay đổi nhiều theo tuổi tác.
+        feedback_vi: 베트남에 비해 là "so với Việt Nam" - chủ đề đang nói là 한국.
+        error_tag: e_bihae_reversed
+      - answer: So với Việt Nam, ở Hàn Quốc cách nói giống nhau ở mọi tuổi.
+        feedback_vi: 달라져요 là "trở nên khác, thay đổi", không phải "giống nhau".
+        error_tag: vocab_meaning
+    explanation:
+      vi: N에 비해 = so với N; 나이에 따라 = theo tuổi; 말이 달라져요 = cách nói thay đổi (다르다 + -아지다).
+    display_answer: So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều theo tuổi tác.
+
+  - key: ko:exercise:culture-opinions-review-translate-learn-earlier
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eulgeol-geuraetda
+    prompt:
+      source_text: Lẽ ra tôi nên học tiếng Hàn sớm hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 한국어를 더 일찍 배울걸 그랬어요.
+        - 한국어를 좀 더 일찍 배울걸 그랬어요.
+        - 한국어를 더 일찍 공부할걸 그랬어요.
+        - 한국어를 좀 더 일찍 공부할걸 그랬어요.
+        - 더 일찍 한국어를 배울걸 그랬어요.
+        - 더 일찍 한국어를 공부할걸 그랬어요.
+        - 좀 더 일찍 한국어를 배울걸 그랬어요.
+        - 한국어를 더 빨리 배울걸 그랬어요.
+        - 한국어를 더 빨리 공부할걸 그랬어요.
+        - 한국어 공부를 더 일찍 시작할걸 그랬어요.
+        - 한국어를 일찍 배울걸 그랬어요.
+    known_wrong:
+      - answer: 한국어를 더 일찍 배웠을걸 그랬어요.
+        feedback_vi: Động từ trước -(으)ㄹ걸 giữ dạng gốc - 배울걸.
+        error_tag: regret_tense
+      - answer: 한국어를 더 일찍 배울게 그랬어요.
+        feedback_vi: -(으)ㄹ게 là lời hứa. Tiếc nuối dùng -(으)ㄹ걸 그랬어요.
+        error_tag: geol_ge
+      - answer: 한국어를 더 일찍 배웠으면 좋겠어요.
+        feedback_vi: -았/었으면 좋겠어요 là mong ước cho sắp tới; tiếc chuyện đã qua dùng 배울걸 그랬어요.
+        error_tag: regret_vs_hope
+    explanation:
+      vi: '"Lẽ ra nên…" = V-(으)ㄹ걸 그랬어요; 배우다 → 배울걸. "Sớm hơn" = 더 일찍.'
+    display_answer: 한국어를 더 일찍 배울걸 그랬어요.
+
+  - key: ko:exercise:culture-opinions-review-wb-no-akpeul
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:akpeul
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Mong là bình luận ác ý biến mất khỏi Internet.\""
+      tokens:
+        - { id: x3, text: 없어졌으면 }
+        - { id: x5, text: 좋았어요 }
+        - { id: x1, text: 인터넷에서 }
+        - { id: x4, text: 좋겠어요 }
+        - { id: x6, text: 악플을 }
+        - { id: x2, text: 악플이 }
+    answer:
+      orders:
+        - [x1, x2, x3, x4]
+        - [x2, x1, x3, x4]
+    explanation:
+      vi: 없다 + -어지다 → 없어지다 (biến mất), chủ ngữ là 악플이. Mong ước kết thúc bằng 좋겠어요, không phải 좋았어요.
+    display_answer: 인터넷에서 악플이 없어졌으면 좋겠어요.
