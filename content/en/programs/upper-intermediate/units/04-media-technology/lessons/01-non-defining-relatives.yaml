@@ -1,0 +1,444 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:non-defining-relatives
+order_index: 1
+level: b2
+title:
+  vi: "TikTok, which… - mệnh đề quan hệ không xác định"
+objectives:
+  - vi: Thêm thông tin phụ bằng mệnh đề quan hệ không xác định với which / who / whose, đặt dấu phẩy đúng chỗ.
+  - vi: Dùng giới từ + which / whom (on which, to whom) trong văn viết trang trọng.
+  - vi: Bình luận cả một sự việc bằng ", which…" và tránh lỗi dùng that sau dấu phẩy.
+estimated_minutes: 20
+skills: [grammar, vocabulary, writing]
+prerequisites: [en:lesson:work-business-review]
+items:
+  - item: en:item:non-defining-relative-clause
+  - item: en:item:relative-whose
+  - item: en:item:relative-whom
+  - item: en:item:preposition-relative-which
+  - item: en:item:sentential-which
+  - item: en:item:influencer
+  - item: en:item:online-platform
+  - item: en:item:follower
+  - item: en:item:go-viral
+  - item: en:item:subscribe
+  - item: en:item:streaming
+  - item: en:item:content-creator
+  - item: en:item:relative-who-which-that
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn viết được những câu giàu thông tin như trong báo chí: \"Linh, whose videos have gone viral, now has two million followers.\" - và biết đặt dấu phẩy, chọn which / who / whose / whom cho đúng."
+  - type: explain
+    text:
+      vi: "Ở trình độ trước, bạn đã học mệnh đề xác định (the app that I use) - nó cho biết ta đang nói về cái nào. Mệnh đề không xác định chỉ thêm thông tin phụ về một thứ đã rõ ràng (tên riêng, \"my brother\", \"this app\"), nên luôn nằm giữa hai dấu phẩy."
+  - type: explain
+    text:
+      vi: "Trong mệnh đề không xác định, chỉ dùng who (người), which (vật), whose (của ai/cái gì) và whom - tuyệt đối không dùng that. Bạn cũng không được lược bỏ đại từ quan hệ như ở mệnh đề xác định."
+  - type: explain
+    text:
+      vi: "Văn viết trang trọng thường đưa giới từ lên trước: the platform on which…, the expert to whom… Sau giới từ chỉ dùng which hoặc whom, không dùng that hay who."
+  - type: explain
+    text:
+      vi: "\", which…\" ở cuối câu có thể thay cho cả sự việc phía trước, giống \"điều này / việc đó\" trong tiếng Việt: He quit social media, which surprised everyone."
+  - type: deep_explain
+    text:
+      vi: "Dấu phẩy làm thay đổi nghĩa: \"My sister who lives in Huế is a journalist\" ngầm hiểu bạn có nhiều chị em; \"My sister, who lives in Huế, is a journalist\" cho biết bạn chỉ có một chị. Tiếng Việt không có dấu hiệu tương đương nên người Việt hay bỏ dấu phẩy hoặc thêm thừa. Khi nói, dấu phẩy thể hiện bằng một quãng ngừng ngắn và giọng hơi hạ xuống."
+  - type: example
+    target: TikTok, which was launched in 2016, has changed the way young people use the Internet.
+    target_lang: en
+    translation:
+      vi: TikTok, ra mắt năm 2016, đã thay đổi cách giới trẻ dùng Internet.
+    note:
+      vi: TikTok là tên riêng, đã rõ nên mệnh đề chỉ thêm thông tin phụ - dùng which và hai dấu phẩy.
+  - type: example
+    target: Linh, whose cooking videos went viral last year, now works as a full-time content creator.
+    target_lang: en
+    translation:
+      vi: Linh, người có những video nấu ăn gây bão năm ngoái, giờ làm người sáng tạo nội dung toàn thời gian.
+    note:
+      vi: Whose + danh từ (cooking videos) thay cho her cooking videos.
+  - type: example
+    target: This is the platform on which most fake reviews are posted.
+    target_lang: en
+    translation:
+      vi: Đây là nền tảng mà phần lớn các bài đánh giá giả được đăng lên.
+    note:
+      vi: Giới từ on đứng trước which - văn viết trang trọng. Văn nói - the platform (that) most fake reviews are posted on.
+  - type: example
+    target: The influencer apologised to her followers, which was a smart move.
+    target_lang: en
+    translation:
+      vi: Người có ảnh hưởng ấy đã xin lỗi người theo dõi, đó là một bước đi khôn ngoan.
+    note:
+      vi: Which thay cho cả việc "xin lỗi người theo dõi", không chỉ cho danh từ followers.
+  - type: example
+    target: I subscribe to two streaming services, neither of which has many Vietnamese films.
+    target_lang: en
+    translation:
+      vi: Tôi đăng ký hai dịch vụ xem phim trực tuyến, nhưng cả hai đều không có nhiều phim Việt.
+    note:
+      vi: "Cụm số lượng + of which / of whom: some of which, neither of which, most of whom."
+  - type: common_mistake
+    wrong: YouTube, that is owned by Google, is the biggest video platform.
+    right: YouTube, which is owned by Google, is the biggest video platform.
+    target_lang: en
+    note:
+      vi: Sau dấu phẩy không bao giờ dùng that. Thông tin phụ về vật dùng which, về người dùng who.
+  - type: common_mistake
+    wrong: He deleted his account, what surprised everyone.
+    right: He deleted his account, which surprised everyone.
+    target_lang: en
+    note:
+      vi: "\"Điều đó\" thay cho cả câu là which, không phải what. What nghĩa là \"cái mà\" và không đứng sau dấu phẩy kiểu này."
+  - type: common_mistake
+    wrong: The blogger, who's article went viral, received many messages.
+    right: The blogger, whose article went viral, received many messages.
+    target_lang: en
+    note:
+      vi: Who's là who is. Chỉ sở hữu (bài viết của người đó) phải dùng whose.
+  - type: summary
+    points:
+      - vi: "Mệnh đề không xác định = thông tin phụ, luôn nằm giữa hai dấu phẩy, không lược bỏ đại từ."
+      - vi: "Chỉ dùng who / which / whose / whom - không bao giờ dùng that sau dấu phẩy."
+      - vi: "Giới từ + which / whom (on which, to whom) trong văn viết; văn nói đẩy giới từ ra cuối."
+      - vi: "\", which…\" có thể bình luận cả sự việc phía trước (điều đó, việc này)."
+      - vi: "Từ vựng: influencer, platform, follower, go viral, subscribe to, streaming, content creator."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:ndrc-mcq-comma-which
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:non-defining-relative-clause
+    prompt:
+      stem: Chọn câu đúng ngữ pháp và đúng dấu câu.
+      stem_lang: vi
+      options:
+        - { id: x4f, text: "Facebook, which was founded in 2004, still has billions of users.", lang: en }
+        - { id: m8q, text: "Facebook, that was founded in 2004, still has billions of users.", lang: en }
+        - { id: c2v, text: "Facebook which was founded in 2004 still has billions of users.", lang: en }
+        - { id: r7k, text: "Facebook, which it was founded in 2004, still has billions of users.", lang: en }
+    answer:
+      correct_option_id: x4f
+    explanation:
+      vi: Facebook là tên riêng nên mệnh đề chỉ thêm thông tin phụ - cần hai dấu phẩy và which. That không đứng sau dấu phẩy; thêm it là lặp chủ ngữ vì which đã thay cho Facebook.
+    display_answer: "Facebook, which was founded in 2004, still has billions of users."
+
+  - key: en:exercise:ndrc-listen-whose-channel
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:relative-whose
+    prompt:
+      audio_asset_id: null
+      fallback_text: My cousin, whose channel has half a million subscribers, quit her office job last month.
+      options:
+        - { id: h3n, text: "Chị họ tôi, người có kênh với nửa triệu người đăng ký, đã nghỉ việc văn phòng tháng trước.", lang: vi }
+        - { id: t9e, text: "Chị họ tôi đăng ký nửa triệu kênh và đã nghỉ việc văn phòng tháng trước.", lang: vi }
+        - { id: b1s, text: "Chị họ tôi, người đăng ký kênh của tôi, đã nghỉ việc văn phòng tháng trước.", lang: vi }
+        - { id: w5z, text: "Kênh của chị họ tôi bị đóng tháng trước vì có nửa triệu người đăng ký.", lang: vi }
+    answer:
+      correct_option_id: h3n
+    explanation:
+      vi: Whose channel là "kênh của chị ấy" - whose chỉ sở hữu. Phần giữa hai dấu phẩy chỉ là thông tin phụ; ý chính là chị họ đã nghỉ việc văn phòng (quit her office job).
+    display_answer: "Chị họ tôi, người có kênh với nửa triệu người đăng ký, đã nghỉ việc văn phòng tháng trước."
+
+  - key: en:exercise:ndrc-fill-sentential-which-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:sentential-which
+    prompt:
+      template: "The app crashed in the middle of my presentation, {{b1}} was really embarrassing."
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Ứng dụng bị treo giữa buổi thuyết trình của tôi, điều đó thật sự rất ngượng."
+        - "Gợi ý: đại từ quan hệ thay cho cả sự việc phía trước, bắt đầu bằng w…"
+    answer:
+      blanks:
+        b1: [which]
+    known_wrong:
+      - answer: what
+        feedback_vi: What không thay cho cả câu phía trước. "Điều đó" sau dấu phẩy là which.
+        error_tag: sentential_which
+      - answer: that
+        feedback_vi: Sau dấu phẩy không dùng that. Dùng which để bình luận cả sự việc.
+        error_tag: that_after_comma
+      - answer: it
+        feedback_vi: Dùng it sẽ thành hai câu nối bằng dấu phẩy (lỗi nối câu). Which nối hai ý thành một câu.
+        error_tag: comma_splice
+    explanation:
+      vi: Điều gây ngượng là cả việc ứng dụng bị treo, nên dùng ", which" thay cho cả mệnh đề trước. Động từ was chia số ít vì which chỉ một sự việc.
+    display_answer: The app crashed in the middle of my presentation, which was really embarrassing.
+
+  - key: en:exercise:ndrc-order-on-which
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:preposition-relative-which
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Đây là nền tảng mà video đầu tiên được chia sẻ trên đó.\""
+      tokens:
+        - { id: p-shared, text: shared }
+        - { id: p-which, text: which }
+        - { id: p-this, text: This }
+        - { id: p-video, text: video }
+        - { id: p-platform, text: platform }
+        - { id: p-is, text: is }
+        - { id: p-on, text: on }
+        - { id: p-the1, text: the }
+        - { id: p-was, text: was }
+        - { id: p-first, text: first }
+        - { id: p-the2, text: the }
+        - { id: p-that, text: that }
+    answer:
+      orders:
+        - [p-this, p-is, p-the1, p-platform, p-on, p-which, p-the2, p-video, p-was, p-first, p-shared]
+        - [p-this, p-is, p-the2, p-platform, p-on, p-which, p-the1, p-video, p-was, p-first, p-shared]
+    explanation:
+      vi: Giới từ on đứng trước which - on which (trên đó). Sau giới từ không dùng that, nên token that là thừa.
+    display_answer: This is the platform on which the video was first shared.
+
+  - key: en:exercise:ndrc-mcq-sentential-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:sentential-which
+    prompt:
+      stem: "\"She posted a photo of her exam results, which made her parents angry.\" Điều gì khiến bố mẹ cô ấy tức giận?"
+      stem_lang: vi
+      options:
+        - { id: d6u, text: Việc cô ấy đăng ảnh kết quả thi lên mạng., lang: vi }
+        - { id: y2a, text: Kết quả thi của cô ấy., lang: vi }
+        - { id: k0p, text: Bức ảnh bị mờ., lang: vi }
+        - { id: e4j, text: Bố mẹ cô ấy không được thi., lang: vi }
+    answer:
+      correct_option_id: d6u
+    explanation:
+      vi: "Ở đây which thay cho cả sự việc \"đăng ảnh kết quả thi lên mạng\", không chỉ cho danh từ results. Bố mẹ giận vì con công khai chuyện riêng, không phải vì điểm số."
+    display_answer: Việc cô ấy đăng ảnh kết quả thi lên mạng.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:ndrc-fill-whose-article
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:relative-whose
+    prompt:
+      template: "The journalist, {{b1}} article went {{b2}} last week, has been invited to speak on TV."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [whose]
+        b2: [viral]
+    known_wrong:
+      - answer: "who's"
+        feedback_vi: Who's là who is. Chỉ sở hữu (bài báo của nhà báo đó) dùng whose.
+        error_tag: whose_whos
+      - answer: who
+        feedback_vi: Who không chỉ sở hữu. "Bài báo của người đó" cần whose + danh từ.
+        error_tag: relative_whose
+      - answer: that
+        feedback_vi: Sau dấu phẩy không dùng that, và that cũng không chỉ sở hữu.
+        error_tag: that_after_comma
+      - answer: virus
+        feedback_vi: Lan truyền chóng mặt là go viral (tính từ), không phải virus.
+        error_tag: collocation
+    explanation:
+      vi: Whose article = his/her article, nên chỗ trống đầu là whose. "Gây bão mạng" là go viral, ở quá khứ là went viral.
+    display_answer: The journalist, whose article went viral last week, has been invited to speak on TV.
+
+  - key: en:exercise:ndrc-fill-to-whom
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:relative-whom
+    prompt:
+      template: "Dr Hà, to {{b1}} we sent our questions, is an expert in cybersecurity."
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [whom]
+    known_wrong:
+      - answer: who
+        feedback_vi: Ngay sau giới từ (to) phải dùng whom, không dùng who.
+        error_tag: relative_whom
+      - answer: that
+        feedback_vi: That không đứng sau giới từ và không đứng sau dấu phẩy.
+        error_tag: that_after_preposition
+      - answer: which
+        feedback_vi: Which dùng cho vật. Tiến sĩ Hà là người nên dùng whom.
+        error_tag: relative_who_which
+    explanation:
+      vi: Chỗ trống đứng ngay sau giới từ to và chỉ người, nên chỉ có whom là đúng. Câu tương đương văn nói - Dr Hà, who we sent our questions to, …
+    display_answer: Dr Hà, to whom we sent our questions, is an expert in cybersecurity.
+
+  - key: en:exercise:ndrc-translate-linh-followers
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:follower
+    prompt:
+      source_text: Linh, người có hơn một triệu người theo dõi, là một người sáng tạo nội dung.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Linh, who has more than a million followers, is a content creator.
+        - Linh, who has more than one million followers, is a content creator.
+        - Linh, who has over a million followers, is a content creator.
+        - Linh, who has over one million followers, is a content creator.
+        - Linh, who has more than 1 million followers, is a content creator.
+        - Linh, who has over 1 million followers, is a content creator.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Linh, that has more than a million followers, is a content creator.
+        feedback_vi: Sau dấu phẩy (thông tin phụ về tên riêng) không dùng that - dùng who.
+        error_tag: that_after_comma
+      - answer: Linh, who has more than a million follows, is a content creator.
+        feedback_vi: Người theo dõi là followers; follow là động từ.
+        error_tag: word_form
+      - answer: Linh, who has more than a million followers, is content creator.
+        feedback_vi: Content creator là danh từ đếm được số ít, cần a.
+        error_tag: article
+      - answer: Linh, who have more than a million followers, is a content creator.
+        feedback_vi: Who thay cho Linh (số ít), nên động từ là has.
+        error_tag: subject_verb_agreement
+    explanation:
+      vi: Linh là tên riêng nên mệnh đề chỉ thêm thông tin phụ - dùng who và đặt giữa hai dấu phẩy. Who thay cho Linh nên động từ chia số ít has; "một người sáng tạo nội dung" là a content creator.
+    display_answer: Linh, who has more than a million followers, is a content creator.
+
+  # ---------------- application ----------------
+  - key: en:exercise:ndrc-translate-went-viral-surprised
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:go-viral
+    prompt:
+      source_text: Video của cô ấy lan truyền chóng mặt chỉ sau một đêm, điều đó khiến mọi người bất ngờ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Her video went viral overnight, which surprised everyone.
+        - Her video went viral overnight, which surprised everybody.
+        - Her video went viral overnight, which took everyone by surprise.
+        - Her video went viral in just one night, which surprised everyone.
+        - Her video went viral in one night, which surprised everyone.
+        - Her video went viral overnight, which was a surprise to everyone.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Her video went viral overnight, what surprised everyone.
+        feedback_vi: "\"Điều đó\" thay cho cả câu là which, không phải what."
+        error_tag: sentential_which
+      - answer: Her video went viral overnight, that surprised everyone.
+        feedback_vi: Sau dấu phẩy không dùng that. Dùng which để bình luận cả sự việc.
+        error_tag: that_after_comma
+      - answer: Her video was viral overnight, which surprised everyone.
+        feedback_vi: Gây bão mạng là go viral - quá khứ went viral.
+        error_tag: collocation
+      - answer: Her video went viral overnight, which made everyone surprise.
+        feedback_vi: Surprise ở đây là động từ - which surprised everyone, hoặc made everyone surprised.
+        error_tag: word_form
+    explanation:
+      vi: Lan truyền chóng mặt là go viral (went viral), chỉ sau một đêm là overnight. "Điều đó" thay cho cả việc video gây bão nên dùng ", which surprised everyone".
+    display_answer: Her video went viral overnight, which surprised everyone.
+
+  - key: en:exercise:ndrc-translate-netflix-subscribe
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:subscribe
+    prompt:
+      source_text: Netflix, which I subscribe to, has raised its prices again.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Netflix, dịch vụ mà tôi đăng ký, lại tăng giá rồi.
+        - Netflix, dịch vụ mà tôi đăng ký, lại vừa tăng giá.
+        - Netflix, dịch vụ tôi đăng ký, lại tăng giá rồi.
+        - Netflix, dịch vụ tôi đăng ký, lại vừa tăng giá.
+        - Netflix, dịch vụ mà tôi đang đăng ký, lại tăng giá rồi.
+        - Netflix, dịch vụ tôi đang dùng, lại tăng giá rồi.
+        - Netflix mà tôi đăng ký lại tăng giá rồi.
+        - Netflix mà tôi đăng ký lại vừa tăng giá.
+        - Netflix, cái tôi đăng ký, lại tăng giá rồi.
+        - Netflix, dịch vụ mà tôi đăng ký, đã lại tăng giá.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Netflix, dịch vụ mà tôi đăng ký, đã giảm giá.
+        feedback_vi: Raise its prices là tăng giá, không phải giảm giá.
+        error_tag: meaning
+    explanation:
+      vi: "Which I subscribe to là thông tin phụ - \"(dịch vụ) mà tôi đăng ký\". Has raised its prices again là \"lại (vừa) tăng giá\"; again cho thấy đây không phải lần đầu."
+    display_answer: Netflix, dịch vụ mà tôi đăng ký, lại tăng giá rồi.
+
+  - key: en:exercise:ndrc-mcq-situation-report
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:preposition-relative-which
+    prompt:
+      stem: Bạn viết báo cáo trang trọng về một nghiên cứu, muốn nói "Nghiên cứu này, có 2.000 thiếu niên tham gia, kéo dài ba năm." Câu nào đúng nhất?
+      stem_lang: vi
+      options:
+        - { id: s8b, text: "The study, in which 2,000 teenagers took part, lasted three years.", lang: en }
+        - { id: g3w, text: "The study, in that 2,000 teenagers took part, lasted three years.", lang: en }
+        - { id: l5m, text: "The study, which 2,000 teenagers took part, lasted three years.", lang: en }
+        - { id: o1c, text: "The study, in which 2,000 teenagers took part in, lasted three years.", lang: en }
+    answer:
+      correct_option_id: s8b
+    explanation:
+      vi: Take part in cần giới từ in, và văn viết trang trọng đưa in lên trước which. "In that" sai vì sau giới từ không dùng that; thiếu in thì sai cấu trúc; còn đặt in ở cả hai chỗ là lặp giới từ.
+    display_answer: "The study, in which 2,000 teenagers took part, lasted three years."
+
+  - key: en:exercise:ndrc-order-laptop
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:non-defining-relative-clause
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Chiếc laptop của tôi, cái mà tôi mua năm ngoái, cứ bị treo suốt.\""
+      tokens:
+        - { id: l-keeps, text: keeps }
+        - { id: l-year, text: "year," }
+        - { id: l-my, text: My }
+        - { id: l-bought, text: bought }
+        - { id: l-crashing, text: crashing }
+        - { id: l-which, text: which }
+        - { id: l-laptop, text: "laptop," }
+        - { id: l-last, text: last }
+        - { id: l-i, text: I }
+    answer:
+      orders:
+        - [l-my, l-laptop, l-which, l-i, l-bought, l-last, l-year, l-keeps, l-crashing]
+    explanation:
+      vi: Thông tin phụ "which I bought last year" chen giữa chủ ngữ (My laptop) và động từ chính (keeps crashing), được bao bởi hai dấu phẩy. Keep + V-ing nghĩa là "cứ… mãi".
+    display_answer: My laptop, which I bought last year, keeps crashing.

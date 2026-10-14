@@ -1,0 +1,376 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:body-idioms
+order_index: 3
+level: topik6
+title:
+  vi: Quán ngữ và cách nói ví von
+objectives:
+  - vi: Hiểu và dùng đúng các quán ngữ hay gặp - 발이 넓다, 손이 크다, 눈이 높다, 입이 무겁다 / 가볍다, 귀가 얇다, 미역국을 먹다.
+  - vi: Nhận ra nghĩa bóng trong ngữ cảnh và không dịch từng chữ sang tiếng Việt.
+  - vi: Hiểu phép ví von (비유) trong văn chương - A를 B에 비유하다.
+estimated_minutes: 20
+skills: [vocabulary, reading]
+prerequisites: [ko:lesson:literary-endings]
+items:
+  - item: ko:item:hl-gwanyongeo
+  - item: ko:item:hl-bari-neolda
+  - item: ko:item:hl-soni-keuda
+  - item: ko:item:hl-nuni-nopda
+  - item: ko:item:hl-ibi-mugeopda
+  - item: ko:item:hl-ibi-gabyeopda
+  - item: ko:item:hl-gwiga-yalda
+  - item: ko:item:hl-miyeokguk-meokda
+  - item: ko:item:hl-bigyu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu các quán ngữ có bộ phận cơ thể và 미역국을 먹다, dùng được chúng trong câu, và tránh bẫy dịch từng chữ - dạng câu hỏi từ vựng rất hay gặp trong TOPIK II.
+  - type: explain
+    text:
+      vi: 관용어 (quán ngữ) là cụm từ cố định, nghĩa chung khác nghĩa từng chữ. 발이 넓다 không phải "chân rộng" mà là "quen biết rộng"; 손이 크다 không phải "tay to" mà là "rộng tay, hào phóng".
+  - type: explain
+    text:
+      vi: Tiếng Việt cũng có quán ngữ cơ thể nhưng hình ảnh khác - "kín miệng" là 입이 무겁다 (miệng nặng), "nhẹ dạ" là 귀가 얇다 (tai mỏng). Hãy học theo cặp Hàn - Việt, đừng dịch hình ảnh.
+  - type: explain
+    text:
+      vi: Một số quán ngữ có cả nghĩa đen lẫn nghĩa bóng - 미역국을 먹다 vừa là "ăn canh rong biển" (sinh nhật), vừa là "thi trượt". Ngữ cảnh thi cử, tuyển dụng thì luôn hiểu là trượt.
+  - type: deep_explain
+    text:
+      vi: Quán ngữ chia như tính từ, động từ bình thường - 발이 넓어서, 입이 무거운 사람, 미역국을 먹었다. Không thay từ bên trong - không nói 다리가 넓다 hay 귀가 가늘다. Trong văn chương, phép 비유 rộng hơn quán ngữ - tác giả tự tạo hình ảnh, viết theo mẫu A를 B에 비유하다 hoặc A는 B와 같다.
+  - type: example
+    target: 민수 씨는 발이 넓어서 어느 모임에 가도 아는 사람이 있다.
+    target_lang: ko
+    translation:
+      vi: Anh Minsu quen biết rộng nên đi buổi gặp mặt nào cũng có người quen.
+    note:
+      vi: 발이 넓다 = quen biết rộng; gần nghĩa với 인맥이 넓다.
+  - type: example
+    target: 지수는 입이 무거우니까 비밀을 말해도 괜찮다.
+    target_lang: ko
+    translation:
+      vi: Jisu kín miệng nên kể bí mật cũng không sao.
+    note:
+      vi: 무겁다 là bất quy tắc ㅂ - 무거우니까, 무거운.
+  - type: example
+    target: 형은 귀가 얇아서 광고만 보면 물건을 산다.
+    target_lang: ko
+    translation:
+      vi: Anh tôi nhẹ dạ, cứ xem quảng cáo là mua đồ.
+    note:
+      vi: 귀가 얇다 = dễ bị người khác (hay quảng cáo) thuyết phục.
+  - type: example
+    target: 이번 입사 시험에서 또 미역국을 먹었다.
+    target_lang: ko
+    translation:
+      vi: Kỳ thi tuyển dụng lần này tôi lại trượt.
+    note:
+      vi: Ngữ cảnh thi tuyển → nghĩa bóng "thi trượt".
+  - type: common_mistake
+    wrong: 민수 씨는 발이 커서 아는 사람이 많아요.
+    right: 민수 씨는 발이 넓어서 아는 사람이 많아요.
+    target_lang: ko
+    note:
+      vi: Quán ngữ cố định là 발이 넓다; đổi thành 발이 크다 thì chỉ còn nghĩa đen "chân to".
+  - type: common_mistake
+    wrong: 그 사람은 눈이 높아서 다른 사람을 무시해요.
+    right: 그 사람은 콧대가 높아서 다른 사람을 무시해요.
+    target_lang: ko
+    note:
+      vi: 눈이 높다 là kén chọn, không phải kiêu ngạo như "mắt để trên trán" của tiếng Việt. Kiêu ngạo là 콧대가 높다 hoặc 거만하다.
+  - type: common_mistake
+    wrong: 이번 시험에서 떨어져서 미역국을 마셨어요.
+    right: 이번 시험에서 미역국을 먹었어요.
+    target_lang: ko
+    note:
+      vi: Quán ngữ luôn dùng 먹다, kể cả với canh; và 미역국을 먹다 đã có nghĩa "thi trượt", không cần thêm 떨어져서.
+  - type: summary
+    points:
+      - vi: 발이 넓다 quen biết rộng · 손이 크다 rộng tay, hào phóng · 눈이 높다 kén chọn.
+      - vi: 입이 무겁다 kín miệng ↔ 입이 가볍다 bép xép · 귀가 얇다 nhẹ dạ cả tin.
+      - vi: 미역국을 먹다 thi trượt (ngữ cảnh thi cử) - không đổi 먹다 thành 마시다.
+      - vi: 비유 - A를 B에 비유하다 (ví A với B). Không dịch hình ảnh quán ngữ từng chữ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:hl-idioms-mcq-bal
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:hl-bari-neolda
+    prompt:
+      stem: "발이 넓다 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: j5w, text: Quen biết rộng, lang: vi }
+        - { id: v2k, text: Đi du lịch nhiều nơi, lang: vi }
+        - { id: z8m, text: Có bàn chân to, lang: vi }
+        - { id: c3q, text: "Hào phóng, rộng tay", lang: vi }
+    answer:
+      correct_option_id: j5w
+    explanation:
+      vi: 발이 넓다 là quán ngữ - "quen biết rộng". "Đi nhiều nơi" là 여기저기 많이 다니다, còn "rộng tay" là 손이 크다.
+    display_answer: Quen biết rộng
+
+  - key: ko:exercise:hl-idioms-mcq-gwi
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:hl-gwiga-yalda
+    prompt:
+      stem: "귀가 얇다 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: r7t, text: "Nhẹ dạ cả tin, dễ nghe theo người khác", lang: vi }
+        - { id: e1x, text: "Thính tai, nghe rất rõ", lang: vi }
+        - { id: h6b, text: "Nghễnh ngãng, nghe kém", lang: vi }
+        - { id: n4s, text: "Kín miệng, biết giữ bí mật", lang: vi }
+    answer:
+      correct_option_id: r7t
+    explanation:
+      vi: 귀가 얇다 (tai mỏng) = dễ bị thuyết phục, nhẹ dạ. Thính tai là 귀가 밝다, nghễnh ngãng là 귀가 어둡다, kín miệng là 입이 무겁다.
+    display_answer: Nhẹ dạ cả tin, dễ nghe theo người khác
+
+  - key: ko:exercise:hl-idioms-listen-miyeok
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-miyeokguk-meokda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 형은 운전면허 시험에서 두 번이나 미역국을 먹었다.
+      options:
+        - { id: u3d, text: "Anh tôi đã trượt kỳ thi bằng lái những hai lần.", lang: vi }
+        - { id: y8g, text: "Anh tôi đã ăn canh rong biển hai lần trước kỳ thi bằng lái.", lang: vi }
+        - { id: o2r, text: "Anh tôi đã đỗ kỳ thi bằng lái ngay lần thứ hai.", lang: vi }
+        - { id: i5v, text: "Anh tôi tổ chức sinh nhật hai lần trong năm.", lang: vi }
+    answer:
+      correct_option_id: u3d
+    explanation:
+      vi: Ngữ cảnh 운전면허 시험 (thi bằng lái) nên 미역국을 먹다 mang nghĩa bóng "thi trượt"; 두 번이나 = những hai lần. Hiểu nghĩa đen "ăn canh rong biển" là bẫy dịch từng chữ.
+    display_answer: "Anh tôi đã trượt kỳ thi bằng lái những hai lần."
+
+  - key: ko:exercise:hl-idioms-fill-ip
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hl-ibi-mugeopda
+    prompt:
+      template: "지수는 입이 {{b1}} 비밀을 말해도 괜찮다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - Jisu kín miệng nên kể bí mật cũng không sao.
+        - Kín miệng = 입이 무겁다; chia với -(으)니까 hoặc -아/어서.
+    answer:
+      blanks:
+        b1: [무거우니까, 무거워서]
+    known_wrong:
+      - answer: 가벼우니까
+        feedback_vi: 입이 가볍다 là bép xép - ngược nghĩa. Kín miệng là 입이 무겁다.
+        error_tag: idiom_opposite
+      - answer: 가벼워서
+        feedback_vi: 입이 가볍다 là bép xép - ngược nghĩa. Kín miệng là 입이 무겁다.
+        error_tag: idiom_opposite
+      - answer: 무겁으니까
+        feedback_vi: 무겁다 là bất quy tắc ㅂ - ㅂ đổi thành 우 - 무거우니까.
+        error_tag: b_irregular
+    explanation:
+      vi: Kín miệng = 입이 무겁다 (miệng nặng). 무겁다 bất quy tắc ㅂ - 무거우니까, 무거워서.
+    display_answer: 지수는 입이 무거우니까 비밀을 말해도 괜찮다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:hl-idioms-fill-son
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-soni-keuda
+    prompt:
+      template: "Bà rộng tay nên Tết nào cũng nấu quá nhiều đồ ăn. - 할머니는 손이 {{b1}} 명절마다 음식을 너무 많이 하신다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [커서, 크셔서, 크니까, 크시니까]
+    known_wrong:
+      - answer: 넓어서
+        feedback_vi: 넓다 đi với 발 (quen biết rộng). "Rộng tay" trong tiếng Hàn là 손이 크다.
+        error_tag: idiom_form
+      - answer: 작아서
+        feedback_vi: 손이 작다 là làm gì cũng ít, chi li - ngược nghĩa.
+        error_tag: idiom_opposite
+      - answer: 좋아서
+        feedback_vi: 손이 좋다 không phải quán ngữ "rộng tay". Hãy dùng 손이 크다.
+        error_tag: idiom_form
+    explanation:
+      vi: 손이 크다 = rộng tay, làm gì cũng nhiều. 크다 rơi ㅡ khi gặp -어서 - 커서; với kính ngữ là 크셔서.
+    display_answer: 할머니는 손이 커서 명절마다 음식을 너무 많이 하신다.
+
+  - key: ko:exercise:hl-idioms-fill-nun
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-nuni-nopda
+    prompt:
+      template: "Người đó kén chọn nên vẫn chưa tìm được căn nhà ưng ý. - 그 사람은 눈이 {{b1}} 아직 마음에 드는 집을 못 찾았다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [높아서, 높으니까]
+    known_wrong:
+      - answer: 커서
+        feedback_vi: 눈이 크다 chỉ là "mắt to". Kén chọn là 눈이 높다.
+        error_tag: idiom_form
+      - answer: 밝아서
+        feedback_vi: 눈이 밝다 là "tinh mắt". Kén chọn là 눈이 높다.
+        error_tag: idiom_form
+      - answer: 낮아서
+        feedback_vi: 눈이 낮다 là dễ tính, tiêu chuẩn thấp - ngược nghĩa.
+        error_tag: idiom_opposite
+    explanation:
+      vi: 눈이 높다 = tiêu chuẩn cao, kén chọn. 높아서 nối âm đọc [노파서].
+    display_answer: 그 사람은 눈이 높아서 아직 마음에 드는 집을 못 찾았다.
+
+  - key: ko:exercise:hl-idioms-translate-bal
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hl-bari-neolda
+    prompt:
+      source_text: Anh Minsu quen biết rộng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 민수 씨는 발이 넓어요.
+        - 민수 씨가 발이 넓어요.
+        - 민수 씨는 발이 넓다.
+        - 민수 씨는 발이 넓습니다.
+        - 민수 씨는 정말 발이 넓어요.
+        - 민수는 발이 넓어요.
+        - 민수는 발이 넓다.
+        - 민수 씨는 인맥이 넓어요.
+        - 민수 씨는 인맥이 넓다.
+    known_wrong:
+      - answer: 민수 씨는 발이 커요.
+        feedback_vi: 발이 크다 chỉ là "chân to". Quán ngữ "quen biết rộng" là 발이 넓다.
+        error_tag: idiom_form
+      - answer: 민수 씨는 손이 커요.
+        feedback_vi: 손이 크다 là "rộng tay, hào phóng", không phải quen biết rộng.
+        error_tag: idiom_meaning
+      - answer: minsu ssi-neun bari neolleoyo
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Quen biết rộng = 발이 넓다 (hoặc 인맥이 넓다). 넓다 + -어요 → 넓어요, đọc [널버요].
+    display_answer: 민수 씨는 발이 넓어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:hl-idioms-mcq-situation-gwi
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-gwiga-yalda
+    prompt:
+      stem: "Bạn của bạn cứ nghe người bán hàng giới thiệu là mua ngay, rồi lại hối hận. Quán ngữ nào miêu tả đúng người này?"
+      stem_lang: vi
+      options:
+        - { id: m6c, text: 귀가 얇다, lang: ko }
+        - { id: b9e, text: 입이 무겁다, lang: ko }
+        - { id: w4y, text: 발이 넓다, lang: ko }
+        - { id: p7n, text: 눈이 높다, lang: ko }
+    answer:
+      correct_option_id: m6c
+    explanation:
+      vi: Dễ bị lời người khác thuyết phục = 귀가 얇다. Người 눈이 높다 (kén chọn) thì ngược lại, khó mua đồ; 입이 무겁다 và 발이 넓다 không liên quan.
+    display_answer: 귀가 얇다
+
+  - key: ko:exercise:hl-idioms-mcq-nun-usage
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-nuni-nopda
+    prompt:
+      stem: "Câu nào dùng 눈이 높다 đúng nghĩa?"
+      stem_lang: vi
+      options:
+        - { id: s1g, text: 그는 눈이 높아서 아무 옷이나 사지 않는다., lang: ko }
+        - { id: k8u, text: 그는 눈이 높아서 다른 사람을 무시한다., lang: ko }
+        - { id: f3h, text: 그는 눈이 높아서 멀리 있는 글씨도 잘 본다., lang: ko }
+        - { id: a5z, text: 그는 눈이 높아서 키가 커 보인다., lang: ko }
+    answer:
+      correct_option_id: s1g
+    explanation:
+      vi: 눈이 높다 = kén chọn, nên "không mua quần áo tuỳ tiện" là đúng. Coi thường người khác là kiêu ngạo (콧대가 높다); nhìn xa rõ là 눈이 좋다; câu cuối hiểu theo nghĩa đen.
+    display_answer: 그는 눈이 높아서 아무 옷이나 사지 않는다.
+
+  - key: ko:exercise:hl-idioms-translate-ip-gabyeop
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-ibi-gabyeopda
+    prompt:
+      source_text: 입이 가벼운 사람에게는 중요한 이야기를 하지 않는 게 좋다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không nên kể chuyện quan trọng cho người bép xép.
+        - Không nên nói chuyện quan trọng với người bép xép.
+        - Không nên nói chuyện quan trọng cho người bép xép.
+        - Tốt nhất là không kể chuyện quan trọng cho người bép xép.
+        - Tốt nhất không nên kể chuyện quan trọng cho người bép xép.
+        - Không nên kể chuyện quan trọng cho người không biết giữ bí mật.
+        - Không nên kể chuyện quan trọng cho người hay để lộ bí mật.
+        - Không nên kể chuyện quan trọng cho người lắm mồm.
+        - Không nên kể chuyện quan trọng cho người không kín miệng.
+        - Đừng kể chuyện quan trọng cho người bép xép.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Không nên kể chuyện quan trọng cho người miệng nhẹ.
+        feedback_vi: Đừng dịch từng chữ quán ngữ. 입이 가볍다 = bép xép, không giữ được bí mật.
+        error_tag: literal_idiom
+      - answer: Nên kể chuyện quan trọng cho người bép xép.
+        feedback_vi: -지 않는 게 좋다 là "không nên" - bạn đã bỏ mất phủ định.
+        error_tag: negation_missing
+    explanation:
+      vi: 입이 가벼운 사람 = người bép xép; -지 않는 게 좋다 = không nên, tốt nhất là không. Ngược nghĩa với 입이 가볍다 là 입이 무겁다 (kín miệng).
+    display_answer: Không nên kể chuyện quan trọng cho người bép xép.
+
+  - key: ko:exercise:hl-idioms-order-bigyu
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-bigyu
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nhà thơ ví cuộc đời với dòng sông.\""
+      tokens:
+        - { id: t-bigyu, text: 비유했다 }
+        - { id: t-gang-eul, text: 강물을 }
+        - { id: t-insaeng, text: 인생을 }
+        - { id: t-si, text: 시인은 }
+        - { id: t-insaeng-e, text: 인생에 }
+        - { id: t-gang-e, text: 강물에 }
+    answer:
+      orders:
+        - [t-si, t-insaeng, t-gang-e, t-bigyu]
+        - [t-si, t-gang-e, t-insaeng, t-bigyu]
+    explanation:
+      vi: Mẫu A를 B에 비유하다 - cái được ví (인생) mang 을/를, hình ảnh ví von (강물) mang 에. 강물을 và 인생에 là token nhiễu do đảo trợ từ, lỗi người Việt hay mắc.
+    display_answer: 시인은 인생을 강물에 비유했다.

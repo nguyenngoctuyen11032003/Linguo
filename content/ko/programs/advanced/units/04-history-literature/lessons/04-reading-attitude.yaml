@@ -1,0 +1,390 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:literary-reading-attitude
+order_index: 4
+level: topik6
+title:
+  vi: Đọc tuỳ bút, thơ và nhận ra thái độ người viết
+objectives:
+  - vi: Đọc hiểu trích đoạn tuỳ bút (수필) và đoạn văn có chất thơ ở trình độ TOPIK 6.
+  - vi: Trả lời dạng câu hỏi thái độ người viết (필자의 태도) và ý chính (중심 생각) của TOPIK II.
+  - vi: Dùng đúng từ chỉ thái độ - 비판적, 회의적, 낙관적, 성찰하다, 그리워하다, 암시하다.
+estimated_minutes: 25
+skills: [reading, vocabulary]
+prerequisites: [ko:lesson:body-idioms]
+items:
+  - item: ko:item:hl-supil
+  - item: ko:item:hl-hwaja
+  - item: ko:item:hl-pilja-taedo
+  - item: ko:item:hl-jungsim-saenggak
+  - item: ko:item:hl-bipanjeogida
+  - item: ko:item:hl-hoeuijeogida
+  - item: ko:item:hl-nakgwanjeogida
+  - item: ko:item:hl-seongchalhada
+  - item: ko:item:hl-geuriwohada
+  - item: ko:item:hl-amsihada
+  - item: ko:item:hl-gram-eudoe
+    role: reuse
+  - item: ko:item:hl-gram-geonman
+    role: reuse
+  - item: ko:item:hl-gram-noramyeon
+    role: reuse
+  - item: ko:item:hl-bigyu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được một đoạn tuỳ bút và một đoạn văn có chất thơ, rồi xác định thái độ người viết, cảm xúc nhân vật trữ tình và ý chính - những dạng câu hỏi nằm trong nhóm câu đọc cuối của TOPIK II.
+  - type: explain
+    text:
+      vi: Muốn tìm 필자의 태도, hãy gạch chân từ đánh giá (안타깝다, 아쉽다, 문제이다) và đuôi câu (-아야 한다, -게 된다, -(으)ㄹ 따름이다). Người viết chỉ ra cái sai là 비판적, nghi ngờ hiệu quả là 회의적, tin vào tương lai là 낙관적, nhìn lại chính mình là 성찰.
+  - type: explain
+    text:
+      vi: Trong tuỳ bút, 중심 생각 thường nằm ở cuối, sau một chuyện kể cụ thể - câu như 이제 와 생각하니, 돌아보게 된다 là tín hiệu. Phương án chỉ nhắc lại chi tiết câu chuyện thường là bẫy.
+  - type: explain
+    text:
+      vi: Trong thơ, người nói là 화자, không nhất thiết là tác giả. Hãy tìm hình ảnh 비유 (dòng sông, mùa thu, con đường) và động từ cảm xúc như 그리워하다 để đoán tâm trạng.
+  - type: deep_explain
+    text:
+      vi: Đề TOPIK hay dùng từ Hán Hàn đuôi -적 để mô tả thái độ - 비판적, 회의적, 낙관적, 비관적, 긍정적, 냉소적. Người Việt dễ đoán theo âm Hán Việt nhưng có bẫy - 회의적 là "hoài nghi" chứ không liên quan 회의 (cuộc họp). Câu hỏi suy luận thường dùng 암시하다 - đáp án là điều không viết thẳng nhưng suy ra chắc chắn được từ văn bản.
+  - type: example
+    target: 어릴 적 할머니 댁 마당에는 오래된 감나무가 있었다. 할머니는 감을 따시되 꼭 몇 개는 가지에 남겨 두셨다. 그때는 그것이 아깝게만 보였건만, 이제 와 생각하니 그것은 나눔에 대한 할머니의 오래된 철학이었다. 무엇이든 끝까지 차지하려는 요즘의 나를 돌아보게 된다.
+    target_lang: ko
+    translation:
+      vi: Hồi nhỏ, sân nhà bà tôi có một cây hồng già. Bà hái hồng nhưng bao giờ cũng để lại vài quả trên cành. Khi ấy tôi chỉ thấy tiếc, vậy mà giờ nghĩ lại, đó chính là triết lý sẻ chia lâu đời của bà. Tôi bỗng nhìn lại bản thân mình bây giờ - cái gì cũng muốn chiếm cho đến cùng.
+    note:
+      vi: Trích tuỳ bút - chuyện kể cụ thể (cây hồng) → ý nghĩa (나눔) → tự vấn (돌아보게 된다). Thái độ - 성찰.
+  - type: example
+    target: 강물은 뒤돌아보지 않는다. 흘러가노라면 언젠가 바다에 닿으리라. 나는 오늘도 떠나간 이의 이름을 물결 위에 띄워 보낸다.
+    target_lang: ko
+    translation:
+      vi: Dòng sông chẳng ngoảnh lại. Cứ trôi mãi thì rồi sẽ có ngày tới biển. Hôm nay tôi lại thả tên người đã ra đi lên mặt sóng.
+    note:
+      vi: Đoạn văn có chất thơ - 화자 dùng 비유 dòng sông để nói nỗi 그리움 với người đã ra đi.
+  - type: example
+    target: 필자는 새 정책의 효과에 대해 회의적이다.
+    target_lang: ko
+    translation:
+      vi: Người viết hoài nghi về hiệu quả của chính sách mới.
+    note:
+      vi: 회의적 = hoài nghi; thường đi với N에 대해.
+  - type: common_mistake
+    wrong: "필자의 태도 → 할머니는 감을 몇 개 남겨 두셨다."
+    right: "필자의 태도 → 할머니의 나눔을 떠올리며 자신을 성찰하고 있다."
+    target_lang: ko
+    note:
+      vi: Câu hỏi thái độ không hỏi chi tiết câu chuyện. Đáp án phải mô tả cách người viết nhìn nhận, đánh giá.
+  - type: common_mistake
+    wrong: "회의적 = mang tính hội nghị"
+    right: "회의적 = hoài nghi"
+    target_lang: ko
+    note:
+      vi: 회의 (會議 - cuộc họp) và 회의 (懷疑 - hoài nghi) viết giống nhau. Đuôi -적 chỉ thái độ luôn là nghĩa "hoài nghi".
+  - type: common_mistake
+    wrong: "이 시의 작가는 슬퍼하고 있다."
+    right: "이 시의 화자는 떠나간 사람을 그리워하고 있다."
+    target_lang: ko
+    note:
+      vi: Khi nói về cảm xúc trong thơ, đề dùng 화자, không đồng nhất với tác giả. Cũng nên gọi tên cảm xúc cụ thể (그리움) thay vì chung chung "buồn".
+  - type: summary
+    points:
+      - vi: 수필 tuỳ bút · 화자 nhân vật trữ tình · 필자의 태도 thái độ người viết · 중심 생각 ý chính.
+      - vi: 비판적 phê phán · 회의적 hoài nghi · 낙관적 lạc quan (↔ 비관적) · 성찰하다 tự vấn.
+      - vi: Tuỳ bút - ý chính thường ở cuối, sau 이제 와 생각하니, 돌아보게 된다.
+      - vi: Thơ - tìm 비유 và từ cảm xúc (그리워하다); 암시하다 = điều suy ra được nhưng không viết thẳng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:hl-reading-mcq-supil
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:hl-supil
+    prompt:
+      stem: "수필 là thể loại nào?"
+      stem_lang: vi
+      options:
+        - { id: g4n, text: "Tuỳ bút - văn xuôi ngắn ghi suy nghĩ, cảm xúc thật của người viết", lang: vi }
+        - { id: t8c, text: "Tiểu thuyết - truyện dài hư cấu", lang: vi }
+        - { id: v1s, text: "Nhật ký - ghi chép riêng từng ngày", lang: vi }
+        - { id: b6r, text: "Thơ - văn bản có vần, chia dòng", lang: vi }
+    answer:
+      correct_option_id: g4n
+    explanation:
+      vi: 수필 (隨筆) = tuỳ bút. Tiểu thuyết là 소설, nhật ký là 일기, thơ là 시.
+    display_answer: "Tuỳ bút - văn xuôi ngắn ghi suy nghĩ, cảm xúc thật của người viết"
+
+  - key: ko:exercise:hl-reading-mcq-hoeui
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-hoeuijeogida
+    prompt:
+      stem: "필자는 새 정책의 효과에 대해 회의적이다. - 회의적 ở đây nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: p3m, text: Hoài nghi, lang: vi }
+        - { id: d9w, text: Mang tính hội nghị, lang: vi }
+        - { id: k5e, text: Lạc quan, lang: vi }
+        - { id: z2y, text: Ủng hộ nhiệt tình, lang: vi }
+    answer:
+      correct_option_id: p3m
+    explanation:
+      vi: 회의적 (懷疑的) = hoài nghi - nghi ngờ hiệu quả của chính sách. Đừng nhầm với 회의 (會議 - cuộc họp); lạc quan là 낙관적.
+    display_answer: Hoài nghi
+
+  - key: ko:exercise:hl-reading-listen-hwaja
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-hwaja
+    prompt:
+      audio_asset_id: null
+      fallback_text: 이 시의 화자는 떠나간 사람을 그리워하고 있다.
+      options:
+        - { id: f7a, text: "Nhân vật trữ tình trong bài thơ này đang nhớ người đã ra đi.", lang: vi }
+        - { id: x2h, text: "Tác giả bài thơ này đang chờ một người sắp đến.", lang: vi }
+        - { id: l9u, text: "Nhân vật trữ tình trong bài thơ này đã quên người đã ra đi.", lang: vi }
+        - { id: c4k, text: "Bài thơ này kể về chuyến đi xa của tác giả.", lang: vi }
+    answer:
+      correct_option_id: f7a
+    explanation:
+      vi: 화자 = nhân vật trữ tình (người nói trong thơ); 떠나간 사람 = người đã ra đi; 그리워하다 = nhớ nhung. 그리워하다 khác 잊다 (quên).
+    display_answer: "Nhân vật trữ tình trong bài thơ này đang nhớ người đã ra đi."
+
+  - key: ko:exercise:hl-reading-fill-bipan
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hl-bipanjeogida
+    prompt:
+      template: "필자는 무분별한 개발에 대해 {{b1}}인 태도를 보인다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - Người viết thể hiện thái độ phê phán đối với việc khai thác bừa bãi.
+        - 批判的 - 비...
+    answer:
+      blanks:
+        b1: [비판적]
+    known_wrong:
+      - answer: 낙관적
+        feedback_vi: 낙관적 là lạc quan. Chỉ ra cái sai của việc khai thác bừa bãi là 비판적.
+        error_tag: attitude_word
+      - answer: 비관적
+        feedback_vi: 비관적 là bi quan (nghĩ mọi việc sẽ xấu đi). Phê phán là 비판적 - chú ý 판 và 관.
+        error_tag: bipan_bigwan
+    explanation:
+      vi: 비판적 (批判的) = mang tính phê phán. Người Việt hay nhầm với 비관적 (悲觀的 - bi quan) vì hai từ chỉ khác 판/관.
+    display_answer: 필자는 무분별한 개발에 대해 비판적인 태도를 보인다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:hl-reading-fill-amsi
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-amsihada
+    prompt:
+      template: "Câu cuối ngầm cho biết nhân vật trữ tình sẽ không thể trở lại. - 마지막 문장은 화자가 돌아오지 못할 것임을 {{b1}}한다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [암시]
+    known_wrong:
+      - answer: 명시
+        feedback_vi: 명시 là "ghi rõ". "Ngầm cho biết" là 암시.
+        error_tag: amsi_myeongsi
+      - answer: 기억
+        feedback_vi: 기억하다 là nhớ. Gợi ý gián tiếp là 암시하다.
+        error_tag: word_confusion
+    explanation:
+      vi: 암시하다 (暗示 - ám thị) = gợi ngầm. Ngược lại, 명시하다 là nói rõ ràng. Câu hỏi suy luận TOPIK hỏi điều được 암시.
+    display_answer: 마지막 문장은 화자가 돌아오지 못할 것임을 암시한다.
+
+  - key: ko:exercise:hl-reading-fill-nakgwan
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-nakgwanjeogida
+    prompt:
+      template: "Các chuyên gia nhìn nhận triển vọng của dự án một cách lạc quan. - 전문가들은 사업의 전망을 {{b1}}으로 보고 있다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [낙관적]
+    known_wrong:
+      - answer: 비관적
+        feedback_vi: 비관적 là bi quan - ngược nghĩa. Lạc quan là 낙관적.
+        error_tag: attitude_opposite
+      - answer: 낙천적
+        feedback_vi: 낙천적 là tính cách vui vẻ của một người. Đánh giá triển vọng thì dùng 낙관적.
+        error_tag: nakgwan_nakcheon
+    explanation:
+      vi: 낙관적 (樂觀的) = lạc quan về triển vọng, kết quả; N을 낙관적으로 보다 = nhìn N một cách lạc quan. Đọc [낙꽌저그로].
+    display_answer: 전문가들은 사업의 전망을 낙관적으로 보고 있다.
+
+  - key: ko:exercise:hl-reading-translate-seongchal
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-seongchalhada
+    prompt:
+      source_text: Người viết tự suy ngẫm về cuộc đời mình.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 필자는 자신의 삶을 성찰한다.
+        - 필자는 자기의 삶을 성찰한다.
+        - 필자는 자기 삶을 성찰한다.
+        - 필자는 자신의 인생을 성찰한다.
+        - 필자가 자신의 삶을 성찰한다.
+        - 필자는 자신의 삶을 성찰하고 있다.
+        - 필자는 자신의 삶을 성찰해요.
+        - 필자는 자신의 삶을 성찰합니다.
+    known_wrong:
+      - answer: 필자는 자신의 삶을 관찰한다.
+        feedback_vi: 관찰 là quan sát cái bên ngoài. Tự suy ngẫm về bản thân là 성찰.
+        error_tag: seongchal_gwanchal
+      - answer: 필자는 자신의 삶을 반성한다.
+        feedback_vi: 반성 là hối lỗi về một việc sai cụ thể. "Tự suy ngẫm về cuộc đời" là 성찰하다.
+        error_tag: seongchal_banseong
+      - answer: piljaneun jasinui salmeul seongchalhanda
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: 필자 = người viết; 자신의 삶 = cuộc đời mình; 성찰하다 = tự suy ngẫm, tự vấn. Bài đọc văn chương dùng đuôi -ㄴ다.
+    display_answer: 필자는 자신의 삶을 성찰한다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:hl-reading-mcq-supil-attitude
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:hl-pilja-taedo
+    prompt:
+      stem: "할머니는 감을 따시되 꼭 몇 개는 가지에 남겨 두셨다. 그때는 그것이 아깝게만 보였건만, 이제 와 생각하니 그것은 나눔에 대한 할머니의 철학이었다. 무엇이든 끝까지 차지하려는 요즘의 나를 돌아보게 된다. - Thái độ của người viết (필자의 태도) là gì?"
+      stem_lang: vi
+      options:
+        - { id: q6t, text: "Nhớ lại triết lý sẻ chia của bà và tự nhìn lại bản thân", lang: vi }
+        - { id: a3d, text: "Phê phán bà vì để lãng phí quả hồng trên cành", lang: vi }
+        - { id: u8f, text: "Hoài nghi giá trị của việc chia sẻ trong xã hội hiện đại", lang: vi }
+        - { id: o5c, text: "Lạc quan rằng mọi người rồi sẽ biết sẻ chia", lang: vi }
+    answer:
+      correct_option_id: q6t
+    explanation:
+      vi: 아깝게만 보였건만 (khi ấy chỉ thấy tiếc, vậy mà) → 이제 와 생각하니 (giờ nghĩ lại) → 나를 돌아보게 된다 (nhìn lại mình) - thái độ 성찰. Cảm giác "tiếc" là của quá khứ, đã bị -건만 phủ định.
+    display_answer: "Nhớ lại triết lý sẻ chia của bà và tự nhìn lại bản thân"
+
+  - key: ko:exercise:hl-reading-mcq-supil-main
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:hl-jungsim-saenggak
+    prompt:
+      stem: "Vẫn đoạn tuỳ bút về cây hồng của bà. Ý chính (중심 생각) của đoạn văn là gì?"
+      stem_lang: vi
+      options:
+        - { id: w2p, text: "Nên biết để phần, sẻ chia thay vì chiếm hết mọi thứ cho mình", lang: vi }
+        - { id: h7v, text: "Bà luôn để lại vài quả hồng trên cành", lang: vi }
+        - { id: s4j, text: "Cây hồng già cần được bảo tồn như một di sản", lang: vi }
+        - { id: m1z, text: "Mùa đông chim không có gì để ăn", lang: vi }
+    answer:
+      correct_option_id: w2p
+    explanation:
+      vi: Phương án "bà để lại vài quả hồng" đúng với bài nhưng chỉ là chi tiết. Ý chính nằm ở câu cuối - giá trị của 나눔 và sự tự vấn về lòng tham chiếm hết (끝까지 차지하려는).
+    display_answer: "Nên biết để phần, sẻ chia thay vì chiếm hết mọi thứ cho mình"
+
+  - key: ko:exercise:hl-reading-mcq-poem
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:hl-geuriwohada
+    prompt:
+      stem: "강물은 뒤돌아보지 않는다. 흘러가노라면 언젠가 바다에 닿으리라. 나는 오늘도 떠나간 이의 이름을 물결 위에 띄워 보낸다. - Tâm trạng của 화자 phù hợp nhất là gì?"
+      stem_lang: vi
+      options:
+        - { id: e8b, text: 떠나간 사람에 대한 그리움, lang: ko }
+        - { id: r5n, text: 강물 오염에 대한 비판, lang: ko }
+        - { id: y3x, text: 바다 여행에 대한 기대, lang: ko }
+        - { id: i6g, text: 떠나간 사람에 대한 분노, lang: ko }
+    answer:
+      correct_option_id: e8b
+    explanation:
+      vi: Hành động lặp lại mỗi ngày (오늘도) thả tên người đã đi lên sóng cho thấy nỗi nhớ - 그리움. Dòng sông là hình ảnh 비유 cho thời gian trôi, không phải chủ đề môi trường hay du lịch; không có từ nào thể hiện giận dữ.
+    display_answer: 떠나간 사람에 대한 그리움
+
+  - key: ko:exercise:hl-reading-translate-bipan
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-bipanjeogida
+    prompt:
+      source_text: 필자는 무분별한 개발에 대해 비판적인 태도를 보인다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Người viết thể hiện thái độ phê phán đối với việc khai thác bừa bãi.
+        - Người viết thể hiện thái độ phê phán đối với sự phát triển bừa bãi.
+        - Người viết thể hiện thái độ phê phán đối với việc phát triển bừa bãi.
+        - Người viết có thái độ phê phán đối với việc khai thác bừa bãi.
+        - Người viết có thái độ phê phán đối với sự phát triển bừa bãi.
+        - Người viết tỏ thái độ phê phán đối với việc khai thác bừa bãi.
+        - Tác giả thể hiện thái độ phê phán đối với việc khai thác bừa bãi.
+        - Tác giả có thái độ phê phán đối với sự phát triển bừa bãi.
+        - Người viết phê phán việc khai thác bừa bãi.
+        - Người viết phê phán sự phát triển bừa bãi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Người viết thể hiện thái độ bi quan đối với việc khai thác bừa bãi.
+        feedback_vi: Bi quan là 비관적. 비판적 là phê phán - chỉ ra cái sai.
+        error_tag: bipan_bigwan
+      - answer: Người viết ủng hộ việc khai thác bừa bãi.
+        feedback_vi: 비판적인 태도 là thái độ phê phán, ngược với ủng hộ.
+        error_tag: attitude_opposite
+    explanation:
+      vi: 무분별한 개발 = khai thác (phát triển) bừa bãi; 비판적인 태도를 보이다 = thể hiện thái độ phê phán. Chú ý 비판 (phê phán) khác 비관 (bi quan).
+    display_answer: Người viết thể hiện thái độ phê phán đối với việc khai thác bừa bãi.
+
+  - key: ko:exercise:hl-reading-order-main
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-jungsim-saenggak
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Ý chính của bài này được thể hiện ở đoạn cuối.\""
+      tokens:
+        - { id: t-mun, text: 문단에 }
+        - { id: t-i, text: 이 }
+        - { id: t-it, text: 있다 }
+        - { id: t-jung, text: 중심 }
+        - { id: t-cheot, text: 첫 }
+        - { id: t-geul, text: 글의 }
+        - { id: t-deu, text: 드러나 }
+        - { id: t-ma, text: 마지막 }
+        - { id: t-saeng, text: 생각은 }
+    answer:
+      orders:
+        - [t-i, t-geul, t-jung, t-saeng, t-ma, t-mun, t-deu, t-it]
+    explanation:
+      vi: 이 글의 중심 생각은 (chủ ngữ) + 마지막 문단에 (ở đoạn cuối) + 드러나 있다 (được thể hiện). 첫 (đầu tiên) là token nhiễu - trong tuỳ bút, ý chính thường ở cuối.
+    display_answer: 이 글의 중심 생각은 마지막 문단에 드러나 있다.

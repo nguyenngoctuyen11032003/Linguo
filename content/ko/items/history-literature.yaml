@@ -1,0 +1,873 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Lịch sử, văn học & ngôn ngữ trang trọng" (TOPIK 6). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ================= bài 1: lịch sử và di sản =================
+  - key: ko:item:hl-joseon-sidae
+    type: phrase
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 조선 시대
+      romanization: joseon sidae
+      pos: danh từ (thời kỳ lịch sử)
+    back:
+      meaning:
+        vi: Thời Joseon (Triều Tiên, 1392-1897) - triều đại cuối cùng của Hàn Quốc trước thời cận đại.
+      examples:
+        - target: 이 건물은 조선 시대에 왕이 머물던 궁궐이다.
+          translation:
+            vi: Toà nhà này là cung điện nơi nhà vua từng ở vào thời Joseon.
+      pronunciation_note:
+        vi: Đọc liền [조선 시대]; ㅅ trong 시 đọc nhẹ, gần "x" tiếng Việt chứ không phải "s" uốn lưỡi.
+      confusion:
+        vi: 조선 là tên triều đại, còn 북한 mới là cách gọi Bắc Triều Tiên hiện nay. Trong bài đọc lịch sử, 조선 luôn chỉ triều đại cũ.
+
+  - key: ko:item:hl-sejong-daewang
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 세종대왕
+      romanization: sejong daewang
+      pos: danh từ riêng
+    back:
+      meaning:
+        vi: Vua Sejong Đại đế - vị vua thứ tư của triều Joseon, người cho sáng tạo ra chữ Hangul.
+      examples:
+        - target: 세종대왕은 백성을 위해 새로운 문자를 만들었다.
+          translation:
+            vi: Vua Sejong đã tạo ra một bộ chữ mới vì dân chúng.
+      pronunciation_note:
+        vi: Đọc [세종대왕]; ㄷ trong 대 không bật hơi, nghe gần "đ" tiếng Việt.
+      confusion:
+        vi: 대왕 (đại vương) là tôn hiệu dành cho vài vị vua đặc biệt, không phải mọi vua đều gọi là 대왕. Vua nói chung là 왕 hoặc 임금.
+
+  - key: ko:item:hl-hunminjeongeum-changje
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 훈민정음 창제
+      romanization: hunminjeongeum changje
+      pos: danh từ (cụm Hán Hàn)
+    back:
+      meaning:
+        vi: Việc sáng chế Huấn dân chính âm - tên gốc của chữ Hangul, nghĩa là "âm chuẩn để dạy dân" (sáng chế năm 1443, ban bố năm 1446).
+      examples:
+        - target: 훈민정음 창제로 글을 모르던 백성도 쉽게 글을 배울 수 있게 되었다.
+          translation:
+            vi: Nhờ việc sáng chế Huấn dân chính âm, cả những người dân không biết chữ cũng có thể dễ dàng học chữ.
+      pronunciation_note:
+        vi: 훈민정음 đọc liền [훈민정음]; 창제 có ㅊ bật hơi mạnh, khác ㅈ trong 정.
+      confusion:
+        vi: 창제 (創製 - sáng chế) dùng cho chữ viết, chế độ do con người nghĩ ra lần đầu; 반포 (頒布) là ban bố cho dân dùng. Đừng dùng 발명 (phát minh) cho chữ Hangul trong văn viết trang trọng.
+
+  - key: ko:item:hl-unesco-segye-yusan
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 유네스코 세계 유산
+      romanization: yuneseuko segye yusan
+      pos: danh từ (cụm)
+    back:
+      meaning:
+        vi: Di sản thế giới UNESCO. Sách 훈민정음 해례본 được ghi vào danh mục "Di sản tư liệu thế giới" (세계 기록 유산) năm 1997.
+      examples:
+        - target: 이 궁궐은 유네스코 세계 유산으로 등재되었다.
+          translation:
+            vi: Cung điện này đã được ghi danh là Di sản thế giới UNESCO.
+      pronunciation_note:
+        vi: 세계 trong khẩu ngữ thường đọc [세게]. 유산 đọc [유산], không nhầm với 유학 hay 유행.
+      confusion:
+        vi: Trong văn viết trang trọng, "được công nhận là di sản" thường là 세계 유산으로 등재되다 (được ghi danh). Đây là động từ bạn sẽ gặp nhiều nhất trong bản tin về di sản.
+
+  - key: ko:item:hl-munhwajae
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 문화재
+      romanization: munhwajae
+      pos: danh từ
+    back:
+      meaning:
+        vi: Di sản văn hoá, tài sản văn hoá - công trình, hiện vật có giá trị lịch sử, nghệ thuật cần được bảo vệ.
+      examples:
+        - target: 문화재를 만지거나 사진을 찍을 때 플래시를 사용하면 안 된다.
+          translation:
+            vi: Không được chạm vào di sản văn hoá hay dùng đèn flash khi chụp ảnh.
+      pronunciation_note:
+        vi: Đọc chuẩn [문화재]; khi nói nhanh, ㅎ sau ㄴ yếu đi nên nghe gần [무놔재].
+      confusion:
+        vi: Từ năm 2024, văn bản nhà nước Hàn Quốc dần thay 문화재 bằng 국가유산 (di sản quốc gia), nhưng 문화재 vẫn rất phổ biến trong báo chí và bài đọc. Hai từ có thể gặp cùng lúc.
+
+  - key: ko:item:hl-bojonhada
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 보존하다
+      romanization: bojonhada
+      pos: động từ
+    back:
+      meaning:
+        vi: Bảo tồn - giữ gìn cho nguyên trạng, không bị hư hỏng hay mất đi (di sản, tư liệu, hiện vật).
+      examples:
+        - target: 이 기록은 원래 모습 그대로 보존되어 있다.
+          translation:
+            vi: Tư liệu này được bảo tồn nguyên vẹn như hình dạng ban đầu.
+      pronunciation_note:
+        vi: Đọc [보존하다]; ㅎ giữa hai nguyên âm thường yếu đi khi nói nhanh.
+      confusion:
+        vi: 보존 (保存) = bảo tồn, giữ nguyên trạng; 보전 (保全) = bảo toàn, giữ cho an toàn, hay đi với 환경, 생태계. Với 문화재, 기록, 유물, hãy dùng 보존.
+
+  - key: ko:item:hl-bojeonhada
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 보전하다
+      romanization: bojeonhada
+      pos: động từ
+    back:
+      meaning:
+        vi: Bảo toàn, bảo vệ cho khỏi bị tổn hại - thường dùng với môi trường, hệ sinh thái, đất đai.
+      examples:
+        - target: 갯벌은 생태계 보전을 위해 개발이 제한되어 있다.
+          translation:
+            vi: Vùng bãi triều bị hạn chế khai thác để bảo vệ hệ sinh thái.
+      pronunciation_note:
+        vi: 보전 [보전] có nguyên âm ㅓ (mở miệng hơn), còn 보존 [보존] có ㅗ (tròn môi). Người Việt hay đọc lẫn hai từ này.
+      confusion:
+        vi: Âm Hán Việt của 보전 là "bảo toàn", không phải "bảo tồn". Môi trường đôi khi cũng đi với 보존, nhưng hiện vật, tư liệu lịch sử thì gần như luôn là 보존.
+
+  - key: ko:item:hl-bowonhada
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 복원하다
+      romanization: bogwonhada
+      pos: động từ
+    back:
+      meaning:
+        vi: Phục nguyên, trùng tu - khôi phục lại hình dạng ban đầu của công trình, hiện vật, dữ liệu đã bị hư hỏng.
+      examples:
+        - target: 2008년 화재로 크게 훼손된 숭례문은 2013년에 복원되었다.
+          translation:
+            vi: Cổng Sungnyemun bị hư hại nặng do hoả hoạn năm 2008 đã được phục dựng vào năm 2013.
+      pronunciation_note:
+        vi: Patchim ㄱ nối sang nguyên âm sau nên đọc [보권하다]. Bị động 복원되다 đọc [보권되다].
+      confusion:
+        vi: Tiếng Việt đều nói "khôi phục", nhưng 복원 dùng cho vật thể và hình dạng (건물, 그림, 파일). Sức khoẻ, niềm tin, kinh tế thì dùng 회복하다.
+
+  - key: ko:item:hl-hoebokhada
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 회복하다
+      romanization: hoebokhada
+      pos: động từ
+    back:
+      meaning:
+        vi: Hồi phục, lấy lại - đưa trạng thái (sức khoẻ, niềm tin, kinh tế, danh dự) trở lại như trước.
+      examples:
+        - target: 전쟁 후 경제가 회복되기까지 오랜 시간이 걸렸다.
+          translation:
+            vi: Sau chiến tranh, phải mất rất lâu kinh tế mới hồi phục.
+      pronunciation_note:
+        vi: ㄱ gặp ㅎ thành âm bật hơi nên 회복하다 đọc [회보카다].
+      confusion:
+        vi: Không nói 숭례문을 회복하다 hay 건강을 복원하다. 회복 là trạng thái trừu tượng, 복원 là hình dạng vật thể.
+
+  - key: ko:item:hl-girok
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 기록 / 기록하다
+      romanization: girok / girokhada
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: Ghi chép, tư liệu ghi lại; ghi chép lại (sự kiện, lịch sử). Cũng có nghĩa "kỷ lục" trong thể thao.
+      examples:
+        - target: 조선왕조실록에는 왕의 하루 일과까지 자세히 기록되어 있다.
+          translation:
+            vi: Biên niên sử triều Joseon ghi chép tỉ mỉ đến cả sinh hoạt hằng ngày của nhà vua.
+      pronunciation_note:
+        vi: 기록하다 đọc [기로카다]; 기록되다 đọc [기록뙤다] - ㄷ sau ㄱ đọc căng.
+      confusion:
+        vi: 기록 (tư liệu ghi lại) khác 기억 (ký ức trong đầu). Trong ngữ cảnh thể thao, 기록을 세우다 là "lập kỷ lục".
+
+  - key: ko:item:hl-yurae
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 유래 / 유래하다
+      romanization: yurae / yuraehada
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: Nguồn gốc, lai lịch (của phong tục, tên gọi, từ ngữ); bắt nguồn từ (N에서 유래하다).
+      examples:
+        - target: 이 마을의 이름은 마을 앞에 있는 큰 바위에서 유래했다.
+          translation:
+            vi: Tên của ngôi làng này bắt nguồn từ tảng đá lớn trước làng.
+      pronunciation_note:
+        vi: Đọc [유래]; ㄹ giữa hai nguyên âm là âm vỗ nhẹ, gần "r" nhẹ chứ không phải "l".
+      confusion:
+        vi: Cấu trúc đúng là N에서 유래하다 hoặc N의 유래, không phải N을 유래하다. Đừng nhầm với 유행 (thịnh hành) hay 원래 (vốn dĩ).
+
+  - key: ko:item:hl-yujeok-yumul
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 유적 · 유물
+      romanization: yujeok · yumul
+      pos: danh từ
+    back:
+      meaning:
+        vi: 유적 là di tích (địa điểm, công trình còn lại từ xưa); 유물 là di vật, cổ vật (đồ vật có thể mang đi trưng bày).
+      examples:
+        - target: 유적지에서 발견된 유물은 박물관에 전시되어 있다.
+          translation:
+            vi: Những cổ vật được phát hiện ở khu di tích đang được trưng bày tại bảo tàng.
+      pronunciation_note:
+        vi: 유적지 đọc [유적찌] - ㅈ sau patchim ㄱ đọc căng.
+      confusion:
+        vi: Người Việt hay dùng lẫn vì cùng chữ "di". Mẹo nhớ - 유적 là nơi chốn (đến thăm), 유물 là đồ vật (trưng bày trong tủ kính).
+
+  - key: ko:item:hl-baekseong
+    type: vocab
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 백성
+      romanization: baekseong
+      pos: danh từ
+    back:
+      meaning:
+        vi: Bách tính, dân chúng (cách gọi dân thường thời phong kiến).
+      examples:
+        - target: 세종대왕은 글을 모르는 백성을 안타깝게 여겼다.
+          translation:
+            vi: Vua Sejong thương xót những người dân không biết chữ.
+      pronunciation_note:
+        vi: Sau patchim ㄱ, ㅅ đọc căng nên 백성 đọc [백썽].
+      confusion:
+        vi: 백성 chỉ dùng khi nói về thời xưa. Người dân hiện đại là 국민 hoặc 시민, đừng viết 대한민국 백성.
+
+  # ================= bài 2: đuôi văn chương, cổ trang trọng (chỉ để đọc hiểu) =================
+  - key: ko:item:hl-gram-noramyeon
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: -노라면
+      romanization: -noramyeon
+      pos: vĩ tố liên kết (văn chương)
+    back:
+      meaning:
+        vi: Cứ (làm) mãi thì... - dạng văn chương của -다 보면. Dùng khi một hành động kéo dài dẫn đến kết quả.
+      examples:
+        - target: 묵묵히 걷노라면 언젠가 길이 보이리라.
+          translation:
+            vi: Cứ lặng lẽ bước đi thì rồi sẽ có ngày thấy đường.
+      pronunciation_note:
+        vi: Động từ gốc kết thúc bằng ㄹ thì rơi ㄹ - 살다 → 사노라면. 걷노라면 đọc [건노라면] vì ㄷ gặp ㄴ thành ㄴ.
+      confusion:
+        vi: Không phải -(으)면 "nếu" thông thường. -노라면 luôn hàm ý "cứ tiếp tục làm thì dần dần...", tương đương -다 보면.
+
+  - key: ko:item:hl-gram-l-jindae
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: -(으)ㄹ진대
+      romanization: -(eu)l jindae
+      pos: vĩ tố liên kết (cổ, trang trọng)
+    back:
+      meaning:
+        vi: Đã... thì (huống hồ) - nêu tiền đề hiển nhiên để suy ra kết luận ở vế sau, thường kèm câu hỏi tu từ.
+      examples:
+        - target: 역사가 이를 증명할진대 어찌 그 가치를 부정하겠는가.
+          translation:
+            vi: Lịch sử đã chứng minh điều đó thì làm sao có thể phủ nhận giá trị của nó?
+      pronunciation_note:
+        vi: ㅈ sau đuôi -ㄹ đọc căng nên 할진대 đọc [할찐대].
+      confusion:
+        vi: Đừng tách thành -(으)ㄹ지 + 대 hay hiểu là "không biết có... không". Gặp -(으)ㄹ진대 trong bài đọc, hãy hiểu như -(으)니까 trang trọng.
+
+  - key: ko:item:hl-gram-geoniwa
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: -거니와
+      romanization: -geoniwa
+      pos: vĩ tố liên kết (văn viết)
+    back:
+      meaning:
+        vi: Đã... lại còn... (thừa nhận vế trước rồi thêm ý vế sau) - tương đương -(으)ㄹ 뿐만 아니라. Cũng gặp trong 다시 말하거니와 "xin nhắc lại".
+      examples:
+        - target: 이 마을은 경치도 아름답거니와 인심도 좋다.
+          translation:
+            vi: Ngôi làng này cảnh đã đẹp, lòng người lại còn tốt.
+      pronunciation_note:
+        vi: Gốc kết thúc ㅎ thì ㅎ gặp ㄱ thành ㅋ - 좋거니와 đọc [조커니와].
+      confusion:
+        vi: -거니와 khác -거나 (hoặc). 비가 오거니와 바람도 분다 là "đã mưa lại còn gió", không phải "mưa hoặc gió".
+
+  - key: ko:item:hl-gram-geonman
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: -건만
+      romanization: -geonman
+      pos: vĩ tố liên kết (văn chương)
+    back:
+      meaning:
+        vi: Vậy mà, thế nhưng - như -지만 / -는데도 nhưng mang sắc thái tiếc nuối, thất vọng vì kết quả trái mong đợi.
+      examples:
+        - target: 봄은 왔건만 고향에 돌아갈 날은 아직 멀다.
+          translation:
+            vi: Xuân đã về vậy mà ngày trở lại quê hương vẫn còn xa.
+      pronunciation_note:
+        vi: 왔건만 đọc [왇껀만] - patchim ㅆ thành âm chặn [ㄷ] và làm ㄱ phía sau căng lên.
+      confusion:
+        vi: -건만 là một đuôi trọn vẹn, không phải -건 (dù... hay) + 만 (chỉ). Đừng dịch "chỉ khi" hay "chỉ".
+
+  - key: ko:item:hl-gram-l-sera
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: -(으)ㄹ세라
+      romanization: -(eu)l sera
+      pos: vĩ tố liên kết (văn chương)
+    back:
+      meaning:
+        vi: Sợ rằng, e rằng... (nên cẩn thận) - dạng văn chương của -(으)ㄹ까 봐.
+      examples:
+        - target: 어머니는 아이가 깰세라 조심조심 방문을 닫으셨다.
+          translation:
+            vi: Mẹ khẽ khàng đóng cửa phòng vì sợ con thức giấc.
+      pronunciation_note:
+        vi: ㅅ sau đuôi -ㄹ đọc căng nên 깰세라 đọc [깰쎄라].
+      confusion:
+        vi: Không liên quan tới 세다 (mạnh, đếm). Vế sau -(으)ㄹ세라 luôn là hành động phòng ngừa (조심하다, 서두르다), giống -(으)ㄹ까 봐.
+
+  - key: ko:item:hl-gram-eudoe
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: -(으)되
+      romanization: -(eu)doe
+      pos: vĩ tố liên kết (trang trọng)
+    back:
+      meaning:
+        vi: Nhưng, song (kèm điều kiện, giới hạn) - thường gặp trong nội quy, văn bản pháp luật, thông báo - "làm A, nhưng phải B".
+      examples:
+        - target: 사진 촬영은 허용하되 플래시는 사용할 수 없다.
+          translation:
+            vi: Cho phép chụp ảnh, nhưng không được dùng đèn flash.
+      pronunciation_note:
+        vi: 되 đọc [되] hoặc [뒈]; ㅚ ở Seoul ngày nay thường nghe như [ㅞ].
+      confusion:
+        vi: -(으)되 không phải động từ 되다 (trở thành). 허용하되 là "cho phép, nhưng...", không phải "được cho phép".
+
+  - key: ko:item:hl-gram-goseoya
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: -고서야
+      romanization: -goseoya
+      pos: vĩ tố liên kết
+    back:
+      meaning:
+        vi: (1) Phải... rồi mới - như -고 나서야. (2) Đã... như thế thì làm sao (câu hỏi tu từ phủ định).
+      examples:
+        - target: 직접 유적지를 보고서야 그 규모를 실감했다.
+          translation:
+            vi: Phải tận mắt thấy khu di tích tôi mới cảm nhận được quy mô của nó.
+      pronunciation_note:
+        vi: Đọc [고서야]; khi nói, nhấn nhẹ vào 야 để thể hiện "mãi đến lúc đó".
+      confusion:
+        vi: -고서야 khác -고서 (rồi). Có 야 thì nghĩa là "mãi đến khi... mới", nên vế sau thường là nhận ra, biết, hiểu.
+
+  - key: ko:item:hl-gram-l-mangjeong
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: -(으)ㄹ망정
+      romanization: -(eu)l mangjeong
+      pos: vĩ tố liên kết (văn chương)
+    back:
+      meaning:
+        vi: Thà... chứ (không) / dù có... đi nữa - chấp nhận điều xấu ở vế trước để giữ khí tiết ở vế sau, gần với -(으)ㄹ지언정.
+      examples:
+        - target: 가난하게 살망정 양심을 팔지는 않겠다.
+          translation:
+            vi: Thà sống nghèo chứ tôi không bán rẻ lương tâm.
+      pronunciation_note:
+        vi: 살망정 đọc [살망정]; với gốc có patchim như 굶다 → 굶을망정 đọc [굴믈망정].
+      confusion:
+        vi: Không hiểu là "nên/sẽ làm" vế trước. 굶을망정 nghĩa là "dù có phải nhịn đói" - người nói không muốn nhịn đói, chỉ chấp nhận nó.
+
+  - key: ko:item:hl-gojeon-munhak
+    type: phrase
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 고전 문학 · 현대 문학
+      romanization: gojeon munhak · hyeondae munhak
+      pos: danh từ
+    back:
+      meaning:
+        vi: Văn học cổ điển · văn học hiện đại.
+      examples:
+        - target: 고전 문학에는 오늘날 잘 쓰지 않는 어미가 자주 나온다.
+          translation:
+            vi: Trong văn học cổ điển thường xuất hiện những vĩ tố ngày nay ít dùng.
+      pronunciation_note:
+        vi: 문학 đọc [문학], khi nói nhanh ㅎ yếu đi nghe gần [무낙].
+      confusion:
+        vi: 고전 (古典 - cổ điển) khác 고대 (古代 - cổ đại, chỉ thời kỳ). 고전 음악 là nhạc cổ điển, 고대 사회 là xã hội cổ đại.
+
+  # ================= bài 3: quán ngữ và cách nói ví von =================
+  - key: ko:item:hl-gwanyongeo
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 관용어 / 관용 표현
+      romanization: gwanyongeo / gwanyong pyohyeon
+      pos: danh từ
+    back:
+      meaning:
+        vi: Quán ngữ - cụm từ cố định mà nghĩa chung không suy ra từ nghĩa từng chữ.
+      examples:
+        - target: 관용어는 글자 그대로 번역하면 뜻이 완전히 달라진다.
+          translation:
+            vi: Quán ngữ mà dịch sát từng chữ thì nghĩa sẽ khác hẳn.
+      pronunciation_note:
+        vi: ㄴ nối sang nguyên âm sau nên 관용어 đọc [과뇽어].
+      confusion:
+        vi: 관용어 là cụm từ (발이 넓다), 속담 là cả câu tục ngữ (우물 안 개구리), 사자성어 là bốn chữ Hán (일석이조).
+
+  - key: ko:item:hl-bari-neolda
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 발이 넓다
+      romanization: bari neolda
+      pos: quán ngữ (tính từ)
+    back:
+      meaning:
+        vi: Quen biết rộng, quan hệ rộng (nghĩa đen - "chân rộng").
+      examples:
+        - target: 민수 씨는 발이 넓어서 어느 모임에 가도 아는 사람이 있다.
+          translation:
+            vi: Anh Minsu quen biết rộng nên đi buổi gặp mặt nào cũng có người quen.
+      pronunciation_note:
+        vi: 넓다 đọc [널따] - patchim kép ㄼ chỉ đọc ㄹ, ㄷ sau đó căng.
+      confusion:
+        vi: Không phải "đi nhiều nơi" hay "chân to". Muốn nói "đi nhiều nơi" thì dùng 여기저기 많이 다니다.
+
+  - key: ko:item:hl-soni-keuda
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 손이 크다
+      romanization: soni keuda
+      pos: quán ngữ (tính từ)
+    back:
+      meaning:
+        vi: Rộng tay, hào phóng - làm gì (nấu ăn, cho, mua) cũng làm nhiều.
+      examples:
+        - target: 할머니는 손이 커서 명절마다 음식을 너무 많이 하신다.
+          translation:
+            vi: Bà rộng tay nên Tết nào cũng nấu quá nhiều đồ ăn.
+      pronunciation_note:
+        vi: Nối âm - 손이 đọc [소니].
+      confusion:
+        vi: Không phải "khéo tay" (손재주가 좋다) hay "tay to". Ngược nghĩa là 손이 작다 (làm gì cũng ít, chi li).
+
+  - key: ko:item:hl-nuni-nopda
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 눈이 높다
+      romanization: nuni nopda
+      pos: quán ngữ (tính từ)
+    back:
+      meaning:
+        vi: Kén chọn, tiêu chuẩn cao (chọn người yêu, đồ dùng).
+      examples:
+        - target: 그 사람은 눈이 높아서 아직 마음에 드는 집을 못 찾았다.
+          translation:
+            vi: Người đó kén chọn nên vẫn chưa tìm được căn nhà ưng ý.
+      pronunciation_note:
+        vi: 높다 đọc [놉따]; 높아서 nối âm thành [노파서].
+      confusion:
+        vi: Khác "mắt để trên trán" (kiêu ngạo) trong tiếng Việt. Kiêu ngạo là 거만하다 hoặc 콧대가 높다.
+
+  - key: ko:item:hl-ibi-mugeopda
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 입이 무겁다
+      romanization: ibi mugeopda
+      pos: quán ngữ (tính từ)
+    back:
+      meaning:
+        vi: Kín miệng, biết giữ bí mật.
+      examples:
+        - target: 지수는 입이 무거우니까 비밀을 말해도 괜찮다.
+          translation:
+            vi: Jisu kín miệng nên kể bí mật cũng không sao.
+      pronunciation_note:
+        vi: 입이 nối âm thành [이비]; 무겁다 đọc [무겁따].
+      confusion:
+        vi: Không phải "nói chậm, nói nặng nề". Ít nói là 말수가 적다; 입이 무겁다 chỉ việc giữ bí mật.
+
+  - key: ko:item:hl-ibi-gabyeopda
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 입이 가볍다
+      romanization: ibi gabyeopda
+      pos: quán ngữ (tính từ)
+    back:
+      meaning:
+        vi: Bép xép, không giữ được bí mật - ngược nghĩa với 입이 무겁다.
+      examples:
+        - target: 입이 가벼운 사람에게는 중요한 이야기를 하지 않는 게 좋다.
+          translation:
+            vi: Không nên kể chuyện quan trọng cho người bép xép.
+      pronunciation_note:
+        vi: 가볍다 đọc [가볍따]; định ngữ 가벼운 do ㅂ biến thành 우.
+      confusion:
+        vi: Không có nghĩa "ăn ít" hay "nói nhẹ nhàng". Nói nhỏ nhẹ là 말을 부드럽게 하다.
+
+  - key: ko:item:hl-gwiga-yalda
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 귀가 얇다
+      romanization: gwiga yalda
+      pos: quán ngữ (tính từ)
+    back:
+      meaning:
+        vi: Nhẹ dạ cả tin, dễ nghe theo lời người khác (nghĩa đen - "tai mỏng").
+      examples:
+        - target: 형은 귀가 얇아서 광고만 보면 물건을 산다.
+          translation:
+            vi: Anh tôi nhẹ dạ, cứ xem quảng cáo là mua đồ.
+      pronunciation_note:
+        vi: 얇다 đọc [얄따]; 얇아서 đọc [얄바서] vì ㅂ của ㄼ nối sang nguyên âm.
+      confusion:
+        vi: Không phải "thính tai" (귀가 밝다) hay "nghễnh ngãng" (귀가 어둡다).
+
+  - key: ko:item:hl-miyeokguk-meokda
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 미역국을 먹다
+      romanization: miyeokgugeul meokda
+      pos: quán ngữ (động từ)
+    back:
+      meaning:
+        vi: (Nghĩa bóng) thi trượt, bị đánh rớt. Nghĩa đen - ăn canh rong biển (món ăn ngày sinh nhật).
+      examples:
+        - target: 형은 운전면허 시험에서 두 번이나 미역국을 먹었다.
+          translation:
+            vi: Anh tôi đã trượt kỳ thi bằng lái những hai lần.
+      pronunciation_note:
+        vi: 미역국 đọc [미역꾹], 미역국을 đọc [미역꾸글].
+      confusion:
+        vi: Cùng một cụm nhưng hai nghĩa - ngữ cảnh thi cử là "thi trượt", ngữ cảnh sinh nhật là nghĩa đen. Vì vậy người Hàn tránh ăn canh rong biển ngay trước ngày thi.
+
+  - key: ko:item:hl-bigyu
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 비유 / 비유하다
+      romanization: biyu / biyuhada
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: Phép so sánh, ví von; ví A với B (A를 B에 비유하다).
+      examples:
+        - target: 시인은 인생을 강물에 비유했다.
+          translation:
+            vi: Nhà thơ ví cuộc đời với dòng sông.
+      pronunciation_note:
+        vi: Đọc [비유]; ㅂ không bật hơi, gần "b" tiếng Việt.
+      confusion:
+        vi: Trật tự trợ từ - A를 B에 비유하다 (ví A với B). Người Việt hay viết ngược thành A에 B를 비유하다.
+
+  # ================= bài 4: đọc văn chương và thái độ người viết =================
+  - key: ko:item:hl-supil
+    type: vocab
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 수필
+      romanization: supil
+      pos: danh từ
+    back:
+      meaning:
+        vi: Tuỳ bút - văn xuôi ngắn ghi lại suy nghĩ, cảm xúc của người viết về đời sống.
+      examples:
+        - target: 이 수필에서 필자는 어린 시절의 기억을 담담하게 풀어낸다.
+          translation:
+            vi: Trong bài tuỳ bút này, tác giả bình thản kể lại ký ức tuổi thơ.
+      pronunciation_note:
+        vi: ㅍ trong 필 bật hơi mạnh, khác ㅂ.
+      confusion:
+        vi: 수필 (隨筆) chính là "tuỳ bút" Hán Việt. Khác 소설 (tiểu thuyết, truyện hư cấu) và 일기 (nhật ký).
+
+  - key: ko:item:hl-hwaja
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 화자
+      romanization: hwaja
+      pos: danh từ
+    back:
+      meaning:
+        vi: Người nói, nhân vật trữ tình - "cái tôi" lên tiếng trong bài thơ, không nhất thiết là tác giả.
+      examples:
+        - target: 이 시의 화자는 떠나간 사람을 그리워하고 있다.
+          translation:
+            vi: Nhân vật trữ tình trong bài thơ này đang nhớ người đã ra đi.
+      pronunciation_note:
+        vi: Đọc [화자]; ㅎ đầu từ phát âm rõ, ㅘ là "oa".
+      confusion:
+        vi: 화자 (người nói trong tác phẩm) khác 필자 (người viết bài) và 작가 (tác giả nói chung).
+
+  - key: ko:item:hl-pilja-taedo
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [reading]
+    front:
+      text: 필자의 태도
+      romanization: pilja-ui taedo
+      pos: cụm danh từ (thuật ngữ đề thi)
+    back:
+      meaning:
+        vi: Thái độ của người viết - dạng câu hỏi đọc hiểu TOPIK II "필자의 태도로 가장 알맞은 것을 고르십시오".
+      examples:
+        - target: 밑줄 친 부분에 나타난 필자의 태도로 가장 알맞은 것을 고르십시오.
+          translation:
+            vi: Hãy chọn thái độ của người viết thể hiện ở phần gạch chân phù hợp nhất.
+      pronunciation_note:
+        vi: 필자 đọc [필짜]; trợ từ 의 ở đây đọc [에] - [필짜에 태도].
+      confusion:
+        vi: Câu hỏi thái độ khác câu hỏi nội dung. Hãy tìm từ đánh giá (안타깝다, 다행이다, 문제이다) và đuôi câu (-아야 한다, -(으)ㄹ 따름이다) thay vì tóm tắt sự kiện.
+
+  - key: ko:item:hl-jungsim-saenggak
+    type: phrase
+    level: topik6
+    difficulty: 3
+    skill_tags: [reading]
+    front:
+      text: 중심 생각
+      romanization: jungsim saenggak
+      pos: cụm danh từ (thuật ngữ đề thi)
+    back:
+      meaning:
+        vi: Ý chính, tư tưởng trung tâm của bài - câu hỏi "글의 중심 생각으로 가장 알맞은 것".
+      examples:
+        - target: 이 글의 중심 생각은 마지막 문단에 드러나 있다.
+          translation:
+            vi: Ý chính của bài này được thể hiện ở đoạn cuối.
+      pronunciation_note:
+        vi: Đọc [중심 생각]; ㅐ và ㅔ ở Seoul nay gần như trùng nhau.
+      confusion:
+        vi: Ý chính không phải chi tiết đúng. Một phương án có thể đúng với bài nhưng chỉ là chi tiết, không phải 중심 생각.
+
+  - key: ko:item:hl-bipanjeogida
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 비판적이다
+      romanization: bipanjeogida
+      pos: tính từ (thuật ngữ thái độ)
+    back:
+      meaning:
+        vi: Mang tính phê phán, chỉ trích - người viết chỉ ra cái sai, cái bất hợp lý.
+      examples:
+        - target: 필자는 무분별한 개발에 대해 비판적인 태도를 보인다.
+          translation:
+            vi: Người viết thể hiện thái độ phê phán đối với việc khai thác bừa bãi.
+      pronunciation_note:
+        vi: Nối âm - 비판적이다 đọc [비판저기다].
+      confusion:
+        vi: Trong tiếng Việt "phê phán" có khi hiểu là "phân tích kỹ" (tư duy phản biện). Trong câu hỏi thái độ TOPIK, 비판적 nghĩa là chỉ ra điều sai.
+
+  - key: ko:item:hl-hoeuijeogida
+    type: vocab
+    level: topik6
+    difficulty: 5
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 회의적이다
+      romanization: hoeuijeogida
+      pos: tính từ (thuật ngữ thái độ)
+    back:
+      meaning:
+        vi: Hoài nghi - nghi ngờ hiệu quả, khả năng thành công của việc gì.
+      examples:
+        - target: 필자는 새 정책의 효과에 대해 회의적이다.
+          translation:
+            vi: Người viết hoài nghi về hiệu quả của chính sách mới.
+      pronunciation_note:
+        vi: Đọc [회의저기다] hoặc [훼이저기다]; ㅢ ở giữa từ thường đọc [이].
+      confusion:
+        vi: 회의적 (懷疑的 - hoài nghi) khác 회의 (會議 - cuộc họp) dù viết giống nhau. Đừng dịch là "mang tính hội nghị".
+
+  - key: ko:item:hl-nakgwanjeogida
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 낙관적이다
+      romanization: nakgwanjeogida
+      pos: tính từ (thuật ngữ thái độ)
+    back:
+      meaning:
+        vi: Lạc quan - tin rằng mọi việc sẽ tốt đẹp. Ngược nghĩa là 비관적이다 (bi quan).
+      examples:
+        - target: 전문가들은 문화재 복원 사업의 전망을 낙관적으로 보고 있다.
+          translation:
+            vi: Các chuyên gia nhìn nhận triển vọng của dự án phục dựng di sản một cách lạc quan.
+      pronunciation_note:
+        vi: ㄱ sau patchim ㄱ đọc căng - 낙관 đọc [낙꽌].
+      confusion:
+        vi: Người Việt hay nhầm 낙관 (lạc quan) với 낙천 (lạc thiên - tính cách vui vẻ). Câu hỏi thái độ dùng 낙관적 khi nói về triển vọng.
+
+  - key: ko:item:hl-seongchalhada
+    type: vocab
+    level: topik6
+    difficulty: 5
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 성찰하다
+      romanization: seongchalhada
+      pos: động từ
+    back:
+      meaning:
+        vi: Tự vấn, suy ngẫm lại bản thân - thái độ thường gặp ở cuối bài tuỳ bút.
+      examples:
+        - target: 필자는 할아버지의 일기를 읽으며 자신의 삶을 성찰한다.
+          translation:
+            vi: Người viết vừa đọc nhật ký của ông vừa tự suy ngẫm về cuộc đời mình.
+      pronunciation_note:
+        vi: Đọc [성찰하다]; ㅊ bật hơi mạnh.
+      confusion:
+        vi: 성찰 (tự xét lại mình) khác 관찰 (quan sát cái bên ngoài) và 반성 (hối lỗi về việc sai cụ thể).
+
+  - key: ko:item:hl-geuriwohada
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 그리워하다 / 그리움
+      romanization: geuriwohada / geurium
+      pos: động từ / danh từ
+    back:
+      meaning:
+        vi: Nhớ nhung, hoài niệm (người, nơi chốn, thời đã qua); nỗi nhớ.
+      examples:
+        - target: 그는 평생 고향의 바다를 그리워했다.
+          translation:
+            vi: Cả đời ông nhớ thương biển quê nhà.
+      pronunciation_note:
+        vi: 그리워 đọc liền [그리워]; ㄹ giữa hai nguyên âm là âm vỗ nhẹ.
+      confusion:
+        vi: 그리워하다 là nỗi nhớ da diết với điều xa cách, khác 기억하다 (nhớ thông tin). 비밀번호를 그리워하다 là sai.
+
+  - key: ko:item:hl-amsihada
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 암시하다
+      romanization: amsihada
+      pos: động từ
+    back:
+      meaning:
+        vi: Ám chỉ, gợi ý ngầm - nói gián tiếp, người đọc phải tự suy ra.
+      examples:
+        - target: 마지막 문장은 화자가 다시 돌아오지 못할 것임을 암시한다.
+          translation:
+            vi: Câu cuối ngầm cho biết nhân vật trữ tình sẽ không thể trở lại nữa.
+      pronunciation_note:
+        vi: Đọc [암시하다]; ㅁ cuối 암 khép môi rõ trước 시.
+      confusion:
+        vi: 암시 (gợi ngầm) khác 제시 (đưa ra trực tiếp) và 명시 (ghi rõ). Câu hỏi suy luận TOPIK thường hỏi điều được 암시.

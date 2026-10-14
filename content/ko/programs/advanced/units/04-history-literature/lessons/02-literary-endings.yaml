@@ -1,0 +1,402 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:literary-endings
+order_index: 2
+level: topik6
+title:
+  vi: Đọc hiểu đuôi văn chương và cổ trang trọng
+objectives:
+  - vi: Nhận ra tám đuôi văn chương hay gặp trong bài đọc TOPIK 6 - -노라면, -(으)ㄹ진대, -거니와, -건만, -(으)ㄹ세라, -(으)되, -고서야, -(으)ㄹ망정.
+  - vi: Quy đổi mỗi đuôi về dạng hiện đại tương đương để hiểu đúng nghĩa câu.
+  - vi: Tránh đọc nhầm đuôi cổ thành đuôi hiện đại trông giống (되다, -거나, -건, -(으)면).
+estimated_minutes: 25
+skills: [grammar, reading]
+prerequisites: [ko:lesson:history-heritage]
+items:
+  - item: ko:item:hl-gojeon-munhak
+  - item: ko:item:hl-gram-noramyeon
+  - item: ko:item:hl-gram-l-jindae
+  - item: ko:item:hl-gram-geoniwa
+  - item: ko:item:hl-gram-geonman
+  - item: ko:item:hl-gram-l-sera
+  - item: ko:item:hl-gram-eudoe
+  - item: ko:item:hl-gram-goseoya
+  - item: ko:item:hl-gram-l-mangjeong
+  - item: ko:item:ac-gram-l-jieonjeong
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này dạy bạn đọc hiểu, không bắt bạn dùng các đuôi này khi nói hay viết. Mục tiêu là gặp chúng trong tuỳ bút, thơ, văn bản pháp quy hay câu trích dẫn mà vẫn hiểu đúng ý.
+  - type: explain
+    text:
+      vi: Mẹo đọc nhanh là quy đổi về dạng hiện đại - -노라면 ≈ -다 보면, -(으)ㄹ세라 ≈ -(으)ㄹ까 봐, -고서야 ≈ -고 나서야, -거니와 ≈ -(으)ㄹ 뿐만 아니라. Đổi xong, bạn đọc câu như bình thường.
+  - type: explain
+    text:
+      vi: Nhóm nhượng bộ có sắc thái riêng - -건만 ≈ -지만 nhưng kèm tiếc nuối; -(으)ㄹ망정 ≈ -(으)ㄹ지언정 "thà... chứ không". -(으)ㄹ진대 nêu tiền đề hiển nhiên ("đã... thì"), thường đi với câu hỏi tu từ 어찌 -겠는가.
+  - type: explain
+    text:
+      vi: -(으)되 là đuôi duy nhất trong nhóm còn rất sống trong văn bản hiện đại - nội quy, luật, thông báo. 입장은 무료로 하되 예약은 필수이다 nghĩa là "vào cửa miễn phí, nhưng bắt buộc đặt trước".
+  - type: deep_explain
+    text:
+      vi: Người Việt đọc sai chủ yếu vì tách đuôi theo hình dạng - thấy 되 nghĩ là 되다 (trở thành), thấy 거니와 nghĩ là -거나 (hoặc), thấy 건만 nghĩ là 만 (chỉ). Hãy coi mỗi đuôi là một khối nguyên vẹn. Ngoài ra, các đuôi này thường đi với đuôi câu cổ như -(으)리라, -겠는가, -노라, nên khi thấy một đuôi lạ, hãy đọc cả câu để đoán sắc thái.
+  - type: example
+    target: 묵묵히 걷노라면 언젠가 길이 보이리라.
+    target_lang: ko
+    translation:
+      vi: Cứ lặng lẽ bước đi thì rồi sẽ có ngày thấy đường.
+    note:
+      vi: -노라면 = -다 보면; -(으)리라 là đuôi phỏng đoán cổ, tương đương -(으)ㄹ 것이다.
+  - type: example
+    target: 봄은 왔건만 고향에 돌아갈 날은 아직 멀다.
+    target_lang: ko
+    translation:
+      vi: Xuân đã về vậy mà ngày trở lại quê hương vẫn còn xa.
+    note:
+      vi: -건만 thể hiện tiếc nuối - điều mong đợi (về quê) không đến dù hoàn cảnh (xuân) đã đến.
+  - type: example
+    target: 어머니는 아이가 깰세라 조심조심 방문을 닫으셨다.
+    target_lang: ko
+    translation:
+      vi: Mẹ khẽ khàng đóng cửa phòng vì sợ con thức giấc.
+    note:
+      vi: -(으)ㄹ세라 = -(으)ㄹ까 봐; vế sau là hành động phòng ngừa.
+  - type: example
+    target: 관람객은 자유롭게 사진을 찍되 다른 관람객에게 방해가 되지 않도록 해야 한다.
+    target_lang: ko
+    translation:
+      vi: Khách tham quan được tự do chụp ảnh, nhưng phải chú ý không làm phiền khách khác.
+    note:
+      vi: -(으)되 trong nội quy - cho phép kèm điều kiện.
+  - type: example
+    target: 이 마을은 경치도 아름답거니와 인심도 좋다.
+    target_lang: ko
+    translation:
+      vi: Ngôi làng này cảnh đã đẹp, lòng người lại còn tốt.
+    note:
+      vi: -거니와 cộng thêm ý, giống -(으)ㄹ 뿐만 아니라.
+  - type: common_mistake
+    wrong: "사진 촬영은 허용하되 = Việc chụp ảnh trở thành được phép"
+    right: "사진 촬영은 허용하되 = Cho phép chụp ảnh, nhưng..."
+    target_lang: ko
+    note:
+      vi: 되 ở đây là đuôi -(으)되 "nhưng, kèm điều kiện", không phải động từ 되다. Luôn tìm điều kiện ở vế sau.
+  - type: common_mistake
+    wrong: "경치도 아름답거니와 인심도 좋다 = Cảnh đẹp hoặc lòng người tốt"
+    right: "경치도 아름답거니와 인심도 좋다 = Cảnh đã đẹp, lòng người lại còn tốt"
+    target_lang: ko
+    note:
+      vi: -거니와 không phải -거나 (hoặc). Có 도... 도 hai lần là dấu hiệu đang cộng thêm ý.
+  - type: common_mistake
+    wrong: "봄은 왔건만 = Chỉ khi xuân về"
+    right: "봄은 왔건만 = Xuân đã về vậy mà"
+    target_lang: ko
+    note:
+      vi: -건만 là một đuôi nhượng bộ trọn vẹn, không phải trợ từ 만 (chỉ). Vế sau luôn trái với mong đợi.
+  - type: summary
+    points:
+      - vi: -노라면 ≈ -다 보면 · -(으)ㄹ세라 ≈ -(으)ㄹ까 봐 · -고서야 ≈ -고 나서야.
+      - vi: -거니와 ≈ -(으)ㄹ 뿐만 아니라 (đã... lại còn) · -(으)ㄹ진대 ≈ -(으)니까 trang trọng (đã... thì).
+      - vi: -건만 ≈ -지만 + tiếc nuối · -(으)ㄹ망정 ≈ -(으)ㄹ지언정 (thà... chứ không).
+      - vi: -(으)되 = nhưng (kèm điều kiện) - còn dùng nhiều trong nội quy, luật, thông báo.
+      - vi: Đây là đuôi để đọc hiểu; khi tự viết, hãy dùng dạng hiện đại tương đương.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:hl-endings-mcq-sera
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hl-gram-l-sera
+    prompt:
+      stem: "Trong câu 아이가 깰세라 조심조심 문을 닫았다, đuôi -(으)ㄹ세라 tương đương dạng hiện đại nào?"
+      stem_lang: vi
+      options:
+        - { id: x4f, text: -(으)ㄹ까 봐, lang: ko }
+        - { id: m9b, text: -(으)ㄹ수록, lang: ko }
+        - { id: c2r, text: -(으)면, lang: ko }
+        - { id: u7j, text: -아서/어서, lang: ko }
+    answer:
+      correct_option_id: x4f
+    explanation:
+      vi: -(으)ㄹ세라 = "sợ rằng", nên vế sau là hành động phòng ngừa (조심조심 닫았다) - giống hệt -(으)ㄹ까 봐. Các đuôi còn lại không mang ý lo sợ.
+    display_answer: -(으)ㄹ까 봐
+
+  - key: ko:exercise:hl-endings-mcq-doe
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-gram-eudoe
+    prompt:
+      stem: "사진 촬영은 허용하되 플래시는 사용할 수 없다. - Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: h3s, text: "Được phép chụp ảnh, nhưng không được dùng đèn flash.", lang: vi }
+        - { id: p8v, text: "Việc chụp ảnh đã trở thành được phép, kể cả dùng đèn flash.", lang: vi }
+        - { id: k1n, text: "Không được chụp ảnh và cũng không được dùng đèn flash.", lang: vi }
+        - { id: e6w, text: "Nếu dùng đèn flash thì mới được chụp ảnh.", lang: vi }
+    answer:
+      correct_option_id: h3s
+    explanation:
+      vi: -(으)되 = "nhưng" kèm điều kiện - cho phép chụp (허용하다), với giới hạn ở vế sau (플래시는 사용할 수 없다). Hiểu 되 thành 되다 (trở thành) sẽ dẫn đến phương án sai.
+    display_answer: "Được phép chụp ảnh, nhưng không được dùng đèn flash."
+
+  - key: ko:exercise:hl-endings-mcq-geonman
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-gram-geonman
+    prompt:
+      stem: "봄은 왔건만 고향에 돌아갈 날은 아직 멀다. - Chọn cách hiểu đúng."
+      stem_lang: vi
+      options:
+        - { id: d5t, text: "Xuân đã về vậy mà ngày về quê vẫn còn xa.", lang: vi }
+        - { id: g2y, text: "Chỉ khi xuân về thì ngày về quê mới còn xa.", lang: vi }
+        - { id: q7l, text: "Dù xuân có về hay không, ngày về quê cũng còn xa.", lang: vi }
+        - { id: r4a, text: "Xuân đã về nên sắp đến ngày về quê.", lang: vi }
+    answer:
+      correct_option_id: d5t
+    explanation:
+      vi: -건만 ≈ -지만 kèm tiếc nuối - hoàn cảnh (xuân về) đã đến mà điều mong đợi chưa đến. Không phải 만 "chỉ" hay -건 "dù... hay"; và 아직 멀다 phủ định ý "sắp đến".
+    display_answer: "Xuân đã về vậy mà ngày về quê vẫn còn xa."
+
+  - key: ko:exercise:hl-endings-listen-geoniwa
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-gram-geoniwa
+    prompt:
+      audio_asset_id: null
+      fallback_text: 이 마을은 경치도 아름답거니와 인심도 좋다.
+      options:
+        - { id: b8m, text: "Ngôi làng này cảnh đã đẹp, lòng người lại còn tốt.", lang: vi }
+        - { id: n3c, text: "Ngôi làng này cảnh đẹp hoặc lòng người tốt.", lang: vi }
+        - { id: w6k, text: "Ngôi làng này cảnh đẹp nhưng lòng người không tốt.", lang: vi }
+        - { id: f1z, text: "Ngôi làng này nếu cảnh đẹp thì lòng người cũng tốt.", lang: vi }
+    answer:
+      correct_option_id: b8m
+    explanation:
+      vi: -거니와 cộng thêm ý (đã... lại còn), hai lần 도 xác nhận điều đó. Nhầm với -거나 sẽ ra "hoặc"; câu không có phủ định hay điều kiện.
+    display_answer: "Ngôi làng này cảnh đã đẹp, lòng người lại còn tốt."
+
+  - key: ko:exercise:hl-endings-fill-noramyeon
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hl-gram-noramyeon
+    prompt:
+      template: "묵묵히 걷노라면 언젠가 길이 보이리라. ≈ 묵묵히 걷다 {{b1}} 언젠가 길이 보일 것이다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - -노라면 = "cứ làm mãi thì..." - dạng hiện đại là -다 ...
+        - -다 보...
+    answer:
+      blanks:
+        b1: [보면]
+    known_wrong:
+      - answer: 가면
+        feedback_vi: -다 가면 không phải ngữ pháp. "Cứ làm mãi thì" là -다 보면.
+        error_tag: noramyeon_equivalent
+      - answer: 해서
+        feedback_vi: -노라면 không chỉ nguyên nhân. Dạng hiện đại là -다 보면.
+        error_tag: noramyeon_equivalent
+    explanation:
+      vi: -노라면 là dạng văn chương của -다 보면 - hành động kéo dài dẫn đến kết quả. -(으)리라 tương ứng -(으)ㄹ 것이다.
+    display_answer: 묵묵히 걷다 보면 언젠가 길이 보일 것이다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:hl-endings-fill-sera-modern
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-gram-l-sera
+    prompt:
+      template: "아이가 깰세라 조심조심 문을 닫았다. ≈ 아이가 깰까 {{b1}} 조심조심 문을 닫았다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [봐, 봐서]
+    known_wrong:
+      - answer: 보면
+        feedback_vi: -(으)ㄹ까 보면 không đúng. "Sợ rằng" là -(으)ㄹ까 봐(서).
+        error_tag: lkka_bwa
+      - answer: 해서
+        feedback_vi: Dạng hiện đại của -(으)ㄹ세라 là -(으)ㄹ까 봐 - "sợ rằng... nên".
+        error_tag: lkka_bwa
+    explanation:
+      vi: -(으)ㄹ세라 = -(으)ㄹ까 봐(서). Cả hai đều diễn tả lo sợ điều gì xảy ra nên làm hành động phòng ngừa ở vế sau.
+    display_answer: 아이가 깰까 봐 조심조심 문을 닫았다.
+
+  - key: ko:exercise:hl-endings-fill-goseoya
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-gram-goseoya
+    prompt:
+      template: "직접 유적지를 보고서야 그 규모를 실감했다. ≈ 직접 유적지를 보고 {{b1}} 그 규모를 실감했다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [나서야]
+    known_wrong:
+      - answer: 나서
+        feedback_vi: Thiếu 야 thì mất ý "mãi đến khi... mới". -고서야 = -고 나서야.
+        error_tag: goseoya_ya
+      - answer: 나면
+        feedback_vi: -고 나면 là "làm xong thì (sẽ)". Câu gốc ở quá khứ, nghĩa "phải thấy rồi mới nhận ra" - -고 나서야.
+        error_tag: goseoya_ya
+    explanation:
+      vi: -고서야 = -고 나서야 - phải làm việc trước rồi mới (nhận ra, hiểu được). Trợ từ 야 mang nghĩa "mãi đến khi đó".
+    display_answer: 직접 유적지를 보고 나서야 그 규모를 실감했다.
+
+  - key: ko:exercise:hl-endings-fill-jindae
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:hl-gram-l-jindae
+    prompt:
+      template: "역사가 이를 증명할진대 어찌 그 가치를 부정하겠는가. ≈ 역사가 이를 증명하{{b1}} 어찌 그 가치를 부정하겠는가."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [니까, 니, 므로, 는데]
+    known_wrong:
+      - answer: 는지
+        feedback_vi: -(으)ㄹ진대 không phải -(으)ㄹ지 "không biết có... không". Nó nêu tiền đề hiển nhiên - như -(으)니까.
+        error_tag: archaic_misread
+      - answer: 지만
+        feedback_vi: Vế sau không trái với vế trước mà rút ra từ nó. Dùng -(으)니까 hoặc -(으)므로.
+        error_tag: archaic_misread
+    explanation:
+      vi: -(으)ㄹ진대 nêu tiền đề ("lịch sử đã chứng minh") để đi đến kết luận tu từ ("sao có thể phủ nhận"). Dạng hiện đại gần nhất là -(으)니까, -(으)므로.
+    display_answer: 역사가 이를 증명하니까 어찌 그 가치를 부정하겠는가.
+
+  - key: ko:exercise:hl-endings-translate-noramyeon
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-gram-noramyeon
+    prompt:
+      source_text: Cứ sống thì rồi sẽ có ngày tốt đẹp.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 살다 보면 좋은 날이 올 것이다.
+        - 살다 보면 좋은 날이 올 거예요.
+        - 살다 보면 좋은 날이 올 겁니다.
+        - 살다 보면 좋은 날이 오겠지요.
+        - 살다 보면 좋은 날이 오겠죠.
+        - 살다 보면 언젠가 좋은 날이 올 것이다.
+        - 살다 보면 언젠가 좋은 날이 올 거예요.
+        - 살다 보면 좋은 날도 올 거예요.
+        - 사노라면 좋은 날이 올 것이다.
+        - 사노라면 언젠가 좋은 날이 오리라.
+        - 사노라면 좋은 날이 올 거예요.
+    known_wrong:
+      - answer: 살면 좋은 날이 올 것이다.
+        feedback_vi: -(으)면 chỉ là "nếu". "Cứ sống (mãi) thì" cần -다 보면 (văn chương - -노라면).
+        error_tag: noramyeon_equivalent
+      - answer: 살노라면 좋은 날이 올 것이다.
+        feedback_vi: Gốc kết thúc bằng ㄹ thì rơi ㄹ trước -노라면 - 사노라면.
+        error_tag: l_drop
+    explanation:
+      vi: Khi tự viết, dùng dạng hiện đại 살다 보면; dạng văn chương 사노라면 cũng được chấp nhận. Lưu ý ㄹ rơi trước ㄴ - 살다 → 사노라면.
+    display_answer: 살다 보면 좋은 날이 올 것이다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:hl-endings-mcq-museum-rule
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-gram-eudoe
+    prompt:
+      stem: "Nội quy bảo tàng ghi - 관람객은 자유롭게 사진을 찍되 다른 관람객에게 방해가 되지 않도록 해야 한다. Điều nào đúng với nội quy?"
+      stem_lang: vi
+      options:
+        - { id: s5u, text: "Khách được chụp ảnh, miễn là không làm phiền khách khác.", lang: vi }
+        - { id: a9h, text: "Khách không được chụp ảnh trong bảo tàng.", lang: vi }
+        - { id: l2d, text: "Khách bắt buộc phải chụp ảnh khi tham quan.", lang: vi }
+        - { id: o6p, text: "Chỉ nhân viên bảo tàng mới được chụp ảnh.", lang: vi }
+    answer:
+      correct_option_id: s5u
+    explanation:
+      vi: 자유롭게 사진을 찍되 = được tự do chụp ảnh, nhưng...; điều kiện là 방해가 되지 않도록 (để không gây phiền). -(으)되 luôn là "cho phép + giới hạn", không phải cấm hay bắt buộc.
+    display_answer: "Khách được chụp ảnh, miễn là không làm phiền khách khác."
+
+  - key: ko:exercise:hl-endings-translate-mangjeong
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:hl-gram-l-mangjeong
+    prompt:
+      source_text: 가난하게 살망정 양심을 팔지는 않겠다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thà sống nghèo chứ tôi không bán rẻ lương tâm.
+        - Thà sống nghèo chứ không bán rẻ lương tâm.
+        - Thà sống nghèo còn hơn bán rẻ lương tâm.
+        - Thà sống nghèo khổ chứ tôi không bán rẻ lương tâm.
+        - Thà sống nghèo chứ tôi sẽ không bán rẻ lương tâm.
+        - Thà sống nghèo chứ tôi không bán lương tâm.
+        - Dù có sống nghèo, tôi cũng không bán rẻ lương tâm.
+        - Dù có phải sống nghèo, tôi cũng không bán rẻ lương tâm.
+        - Dù phải sống nghèo, tôi cũng sẽ không bán rẻ lương tâm.
+        - Dù sống nghèo tôi cũng không bán lương tâm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi sẽ sống nghèo và không bán lương tâm.
+        feedback_vi: -(으)ㄹ망정 không phải kế hoạch "sẽ sống nghèo". Người nói chỉ chấp nhận cái nghèo để giữ lương tâm - "thà... chứ không".
+        error_tag: concession_missing
+      - answer: Vì sống nghèo nên tôi phải bán lương tâm.
+        feedback_vi: -(으)ㄹ망정 là nhượng bộ, không chỉ nguyên nhân; và 팔지는 않겠다 là "nhất định không bán".
+        error_tag: archaic_misread
+    explanation:
+      vi: -(으)ㄹ망정 = thà... chứ không / dù có... đi nữa - chấp nhận điều xấu (nghèo) để giữ điều quan trọng (lương tâm). Gần nghĩa với -(으)ㄹ지언정.
+    display_answer: Thà sống nghèo chứ tôi không bán rẻ lương tâm.
+
+  - key: ko:exercise:hl-endings-order-geoniwa
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:hl-gram-geoniwa
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Xin nhắc lại, di sản văn hoá một khi đã bị hư hại thì không thể lấy lại được.\""
+      tokens:
+        - { id: t-hun, text: 훼손되면 }
+        - { id: t-mal, text: 말하거니와 }
+        - { id: t-su, text: 수 }
+        - { id: t-dasi, text: 다시 }
+        - { id: t-eop, text: 없다 }
+        - { id: t-geona, text: 말하거나 }
+        - { id: t-mun, text: 문화재는 }
+        - { id: t-doe, text: 되돌릴 }
+        - { id: t-han, text: 한번 }
+    answer:
+      orders:
+        - [t-dasi, t-mal, t-mun, t-han, t-hun, t-doe, t-su, t-eop]
+    explanation:
+      vi: 다시 말하거니와 = "xin nhắc lại" - cách mở câu nhấn mạnh trong văn nghị luận. 말하거나 (hoặc nói) là token nhiễu do nhầm -거니와 với -거나.
+    display_answer: 다시 말하거니와 문화재는 한번 훼손되면 되돌릴 수 없다.

@@ -1,0 +1,391 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:history-heritage
+order_index: 1
+level: topik6
+title:
+  vi: Lịch sử và di sản - từ thời Joseon đến UNESCO
+objectives:
+  - vi: Đọc hiểu đoạn văn lịch sử về thời Joseon, vua Sejong và việc sáng chế Huấn dân chính âm.
+  - vi: Dùng đúng từ vựng di sản - 문화재, 유적 · 유물, 기록, 유래, 유네스코 세계 유산.
+  - vi: Phân biệt 보존 / 보전 và 복원 / 회복 - các cặp từ người Việt hay dùng lẫn.
+estimated_minutes: 20
+skills: [vocabulary, reading]
+prerequisites: [ko:lesson:science-environment-review]
+items:
+  - item: ko:item:hl-joseon-sidae
+  - item: ko:item:hl-sejong-daewang
+  - item: ko:item:hl-hunminjeongeum-changje
+  - item: ko:item:hl-baekseong
+  - item: ko:item:hl-unesco-segye-yusan
+  - item: ko:item:hl-munhwajae
+  - item: ko:item:hl-yujeok-yumul
+  - item: ko:item:hl-girok
+  - item: ko:item:hl-yurae
+  - item: ko:item:hl-bojonhada
+  - item: ko:item:hl-bojeonhada
+  - item: ko:item:hl-bowonhada
+  - item: ko:item:hl-hoebokhada
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được đoạn văn lịch sử, bài giới thiệu di sản ở trình độ TOPIK 6 và chọn đúng động từ khi nói về giữ gìn, phục dựng di sản. Các câu ví dụ dùng văn viết -ㄴ다.
+  - type: explain
+    text:
+      vi: Phần lớn từ vựng lịch sử là từ Hán Hàn, nên âm Hán Việt giúp bạn đoán nghĩa - 훈민정음 (Huấn dân chính âm), 창제 (sáng chế), 백성 (bách tính), 기록 (ký lục - ghi chép). Nhưng đừng tin hoàn toàn vào âm Hán Việt, vì cách dùng có thể khác tiếng Việt.
+  - type: explain
+    text:
+      vi: 보존 (bảo tồn) là giữ nguyên trạng, dùng cho 문화재, 기록, 유물. 보전 (bảo toàn) là giữ cho khỏi tổn hại, hay đi với 환경, 생태계. Hai từ chỉ khác một nguyên âm ㅗ / ㅓ nên rất dễ đọc nhầm.
+  - type: explain
+    text:
+      vi: Tiếng Việt nói "khôi phục" cho cả công trình lẫn sức khoẻ, nhưng tiếng Hàn tách làm hai. 복원 dùng cho hình dạng vật thể (건물, 그림, 파일); 회복 dùng cho trạng thái (건강, 신뢰, 경제).
+  - type: deep_explain
+    text:
+      vi: Bài đọc về di sản hay dùng bị động - 보존되어 있다 (đang được bảo tồn), 복원되었다 (đã được phục dựng), 등재되었다 (đã được ghi danh), 기록되어 있다 (được ghi chép). Khi gặp -되어 있다, hãy hiểu đó là trạng thái còn kéo dài đến hiện tại. Lưu ý thêm - từ năm 2024, văn bản nhà nước dần dùng 국가유산 thay cho 문화재, nên bạn có thể gặp cả hai.
+  - type: example
+    target: 조선 시대의 세종대왕은 글을 모르는 백성을 위해 1443년에 훈민정음을 창제하였다.
+    target_lang: ko
+    translation:
+      vi: Vua Sejong thời Joseon đã sáng chế Huấn dân chính âm vào năm 1443 vì những người dân không biết chữ.
+    note:
+      vi: -하였다 là dạng viết trang trọng của -했다, rất hay gặp trong văn bản lịch sử.
+  - type: example
+    target: 훈민정음 해례본은 1997년 유네스코 세계 기록 유산으로 등재되었다.
+    target_lang: ko
+    translation:
+      vi: Bản Haerye của Huấn dân chính âm được ghi danh là Di sản tư liệu thế giới UNESCO năm 1997.
+    note:
+      vi: 세계 기록 유산 là di sản tư liệu (sách, văn bản), khác 세계 유산 cho công trình, địa danh.
+  - type: example
+    target: 2008년 화재로 크게 훼손된 숭례문은 5년에 걸친 공사 끝에 복원되었다.
+    target_lang: ko
+    translation:
+      vi: Cổng Sungnyemun bị hư hại nặng trong vụ hoả hoạn năm 2008 đã được phục dựng sau 5 năm thi công.
+    note:
+      vi: Công trình bị cháy thì 복원 (phục dựng hình dạng), không dùng 회복.
+  - type: example
+    target: 이 축제는 풍년을 기원하던 옛 풍습에서 유래하였다.
+    target_lang: ko
+    translation:
+      vi: Lễ hội này bắt nguồn từ phong tục xưa cầu mong được mùa.
+    note:
+      vi: Cấu trúc N에서 유래하다 - trợ từ 에서 chỉ nguồn gốc.
+  - type: common_mistake
+    wrong: 전쟁 후 경제를 복원하는 데 오랜 시간이 걸렸다.
+    right: 전쟁 후 경제를 회복하는 데 오랜 시간이 걸렸다.
+    target_lang: ko
+    note:
+      vi: Người Việt nghĩ "khôi phục kinh tế" nên chọn 복원. Kinh tế là trạng thái nên phải dùng 회복.
+  - type: common_mistake
+    wrong: 이 박물관은 조선 시대의 유적을 유리장 안에 전시하고 있다.
+    right: 이 박물관은 조선 시대의 유물을 유리장 안에 전시하고 있다.
+    target_lang: ko
+    note:
+      vi: Đồ vật đặt trong tủ kính là 유물 (di vật). 유적 là di tích - một địa điểm, không thể bỏ vào tủ kính.
+  - type: common_mistake
+    wrong: 오늘날 대한민국 백성은 투표로 대통령을 뽑는다.
+    right: 오늘날 대한민국 국민은 투표로 대통령을 뽑는다.
+    target_lang: ko
+    note:
+      vi: 백성 chỉ dân thời phong kiến. Nói về hiện đại thì dùng 국민 (quốc dân) hoặc 시민.
+  - type: summary
+    points:
+      - vi: 조선 시대 · 세종대왕 · 훈민정음 창제 (1443) · 백성 - từ vựng lịch sử cốt lõi.
+      - vi: 문화재 (di sản văn hoá) · 유적 (nơi chốn) / 유물 (đồ vật) · 기록 (ghi chép) · N에서 유래하다 (bắt nguồn từ).
+      - vi: 보존 = bảo tồn (di sản, tư liệu) · 보전 = bảo toàn (môi trường, hệ sinh thái).
+      - vi: 복원 = phục dựng hình dạng (công trình) · 회복 = hồi phục trạng thái (sức khoẻ, kinh tế, niềm tin).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:hl-heritage-mcq-hunmin
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:hl-hunminjeongeum-changje
+    prompt:
+      stem: "훈민정음 창제 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: k3v, text: Việc sáng chế ra bộ chữ "dạy dân âm chuẩn" (chữ Hangul), lang: vi }
+        - { id: w8q, text: Việc ban hành bộ luật đầu tiên của triều Joseon, lang: vi }
+        - { id: b5n, text: Việc phát minh ra máy in chữ rời bằng kim loại, lang: vi }
+        - { id: p2x, text: Việc biên soạn bộ sử ký của triều Joseon, lang: vi }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: 훈민정음 = 訓民正音 (huấn dân chính âm - âm chuẩn để dạy dân), tên gốc của chữ Hangul; 창제 = sáng chế. Bộ sử ký là 조선왕조실록, không liên quan đến 창제.
+    display_answer: Việc sáng chế ra bộ chữ "dạy dân âm chuẩn" (chữ Hangul)
+
+  - key: ko:exercise:hl-heritage-mcq-bojeon
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-bojeonhada
+    prompt:
+      stem: "보전 (保全) có âm Hán Việt là gì và thường đi với từ nào?"
+      stem_lang: vi
+      options:
+        - { id: z6r, text: "Bảo toàn - thường đi với 환경, 생태계", lang: vi }
+        - { id: h1m, text: "Bảo tồn - thường đi với 유물, 기록", lang: vi }
+        - { id: t9c, text: "Phục nguyên - thường đi với 건물, 그림", lang: vi }
+        - { id: e4y, text: "Hồi phục - thường đi với 건강, 경제", lang: vi }
+    answer:
+      correct_option_id: z6r
+    explanation:
+      vi: 保全 đọc Hán Việt là "bảo toàn", hay dùng cho 환경 보전, 생태계 보전. "Bảo tồn" (保存) là 보존, "phục nguyên" là 복원, "hồi phục" là 회복 - ba cặp này hay bị dùng lẫn.
+    display_answer: "Bảo toàn - thường đi với 환경, 생태계"
+
+  - key: ko:exercise:hl-heritage-mcq-yumul
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hl-yujeok-yumul
+    prompt:
+      stem: "Chiếc bình gốm thời Joseon được trưng bày trong tủ kính ở bảo tàng là ___."
+      stem_lang: vi
+      options:
+        - { id: d7s, text: 유물, lang: ko }
+        - { id: a2f, text: 유적, lang: ko }
+        - { id: m8u, text: 유래, lang: ko }
+        - { id: c5j, text: 유행, lang: ko }
+    answer:
+      correct_option_id: d7s
+    explanation:
+      vi: Đồ vật có thể mang đi trưng bày là 유물 (di vật). 유적 là di tích (một địa điểm), 유래 là nguồn gốc, 유행 là sự thịnh hành.
+    display_answer: 유물
+
+  - key: ko:exercise:hl-heritage-listen-bokwon
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-bowonhada
+    prompt:
+      audio_asset_id: null
+      fallback_text: 2008년 화재로 크게 훼손된 숭례문은 5년에 걸친 공사 끝에 복원되었다.
+      options:
+        - { id: r3g, text: "Cổng Sungnyemun bị cháy năm 2008 đã được phục dựng sau 5 năm thi công.", lang: vi }
+        - { id: f6w, text: "Cổng Sungnyemun bị cháy năm 2008 đến nay vẫn chưa được sửa chữa.", lang: vi }
+        - { id: i9k, text: "Cổng Sungnyemun được xây dựng trong 5 năm và hoàn thành năm 2008.", lang: vi }
+        - { id: s2p, text: "Cổng Sungnyemun đã được bảo tồn nguyên vẹn, chưa từng bị hư hại.", lang: vi }
+    answer:
+      correct_option_id: r3g
+    explanation:
+      vi: 화재로 훼손된 = bị hư hại do hoả hoạn; 5년에 걸친 공사 끝에 = sau công trình kéo dài 5 năm; 복원되었다 = đã được phục dựng. Vì có 훼손, phương án "chưa từng bị hư hại" sai.
+    display_answer: "Cổng Sungnyemun bị cháy năm 2008 đã được phục dựng sau 5 năm thi công."
+
+  - key: ko:exercise:hl-heritage-fill-yurae
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hl-yurae
+    prompt:
+      template: "이 마을의 이름은 마을 앞의 큰 바위에서 {{b1}}했다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Tên làng này bắt nguồn từ tảng đá lớn trước làng.
+        - 由來 - 유...
+    answer:
+      blanks:
+        b1: [유래]
+    known_wrong:
+      - answer: 유행
+        feedback_vi: 유행 là "thịnh hành". "Bắt nguồn từ" là N에서 유래하다.
+        error_tag: word_confusion
+      - answer: 원래
+        feedback_vi: 원래 là phó từ "vốn dĩ", không đi với 하다. Hãy dùng 유래했다.
+        error_tag: word_confusion
+    explanation:
+      vi: N에서 유래하다 = bắt nguồn từ N; trợ từ 에서 cho biết nguồn gốc. 유래했다 là quá khứ văn viết.
+    display_answer: 이 마을의 이름은 마을 앞의 큰 바위에서 유래했다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:hl-heritage-fill-hoebok
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-hoebokhada
+    prompt:
+      template: "Sau chiến tranh, phải mất rất lâu kinh tế mới hồi phục. - 전쟁 후 경제가 {{b1}}되기까지 오랜 시간이 걸렸다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [회복]
+    known_wrong:
+      - answer: 복원
+        feedback_vi: 복원 dùng cho hình dạng vật thể (công trình, tranh). Kinh tế là trạng thái nên dùng 회복.
+        error_tag: bokwon_hoebok
+      - answer: 보존
+        feedback_vi: 보존 là giữ nguyên trạng. Ở đây kinh tế "trở lại như trước", nên là 회복.
+        error_tag: word_confusion
+    explanation:
+      vi: 회복되다 = hồi phục (trạng thái trở lại như cũ) - dùng cho 경제, 건강, 신뢰. Tiếng Việt đều có thể nói "khôi phục", nhưng tiếng Hàn tách 복원 và 회복.
+    display_answer: 전쟁 후 경제가 회복되기까지 오랜 시간이 걸렸다.
+
+  - key: ko:exercise:hl-heritage-fill-bokwon
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-bowonhada
+    prompt:
+      template: "Ngôi chùa bị cháy đã được phục dựng như hình dạng ban đầu. - 불에 탄 절은 원래 모습으로 {{b1}}되었다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [복원]
+    known_wrong:
+      - answer: 회복
+        feedback_vi: 회복 dùng cho trạng thái (sức khoẻ, kinh tế). Công trình được dựng lại theo hình dạng cũ là 복원.
+        error_tag: bokwon_hoebok
+      - answer: 보존
+        feedback_vi: 보존 là giữ nguyên thứ còn đó. Ngôi chùa đã cháy rồi được làm lại, nên là 복원.
+        error_tag: word_confusion
+    explanation:
+      vi: 원래 모습으로 복원되다 = được phục dựng lại hình dạng ban đầu. Đối tượng là công trình bị hư hại, nên chọn 복원.
+    display_answer: 불에 탄 절은 원래 모습으로 복원되었다.
+
+  - key: ko:exercise:hl-heritage-translate-sejong
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-hunminjeongeum-changje
+    prompt:
+      source_text: Vua Sejong đã sáng chế Huấn dân chính âm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 세종대왕은 훈민정음을 창제했다.
+        - 세종대왕이 훈민정음을 창제했다.
+        - 세종대왕은 훈민정음을 창제하였다.
+        - 세종대왕이 훈민정음을 창제하였다.
+        - 세종대왕은 훈민정음을 창제했어요.
+        - 세종대왕이 훈민정음을 창제했어요.
+        - 세종대왕은 훈민정음을 창제했습니다.
+        - 세종대왕이 훈민정음을 창제했습니다.
+        - 세종대왕께서 훈민정음을 창제하셨다.
+        - 세종대왕께서 훈민정음을 창제하셨어요.
+    known_wrong:
+      - answer: 세종대왕은 훈민정음을 발명했다.
+        feedback_vi: Với chữ viết, văn bản lịch sử dùng 창제하다 (sáng chế), không dùng 발명하다 như máy móc.
+        error_tag: word_choice
+      - answer: 세종대왕은 훈민정음이 창제했다.
+        feedback_vi: 훈민정음 là tân ngữ nên cần 을 - 훈민정음을 창제했다.
+        error_tag: particle_object
+      - answer: sejong daewang-eun hunminjeongeum-eul changjehaetda
+        feedback_vi: Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Chủ ngữ 세종대왕은/이 (hoặc kính ngữ 께서), tân ngữ 훈민정음을, động từ 창제했다. Văn viết lịch sử hay dùng 창제하였다.
+    display_answer: 세종대왕은 훈민정음을 창제했다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:hl-heritage-mcq-bojon-context
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-bojonhada
+    prompt:
+      stem: "Bạn viết báo cáo về việc lưu giữ các văn bản cổ nguyên trạng trong kho lưu trữ. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: n4b, text: 고문서를 원래 상태 그대로 보존하고 있다., lang: ko }
+        - { id: g7t, text: 고문서를 원래 상태 그대로 회복하고 있다., lang: ko }
+        - { id: o1e, text: 고문서를 원래 상태 그대로 유래하고 있다., lang: ko }
+        - { id: v5h, text: 고문서를 원래 상태 그대로 기억하고 있다., lang: ko }
+    answer:
+      correct_option_id: n4b
+    explanation:
+      vi: Giữ văn bản cổ nguyên trạng = 보존하다. 회복 là hồi phục trạng thái đã mất, 유래하다 không có tân ngữ (N에서 유래하다), 기억하다 là nhớ trong đầu.
+    display_answer: 고문서를 원래 상태 그대로 보존하고 있다.
+
+  - key: ko:exercise:hl-heritage-mcq-baekseong
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-baekseong
+    prompt:
+      stem: "Câu nào dùng từ đúng ngữ cảnh?"
+      stem_lang: vi
+      options:
+        - { id: q8d, text: 세종대왕은 글을 모르는 백성을 안타깝게 여겼다., lang: ko }
+        - { id: l3z, text: 대통령은 새해를 맞아 백성에게 인사를 전했다., lang: ko }
+        - { id: y6a, text: 이 박물관은 조선 시대의 유적을 유리장 안에 전시한다., lang: ko }
+        - { id: j2w, text: 그는 수술 후 건강을 빠르게 복원했다., lang: ko }
+    answer:
+      correct_option_id: q8d
+    explanation:
+      vi: 백성 hợp với bối cảnh vua Sejong thời phong kiến. Tổng thống nói với 국민 chứ không phải 백성; đồ trong tủ kính là 유물; sức khoẻ thì 회복.
+    display_answer: 세종대왕은 글을 모르는 백성을 안타깝게 여겼다.
+
+  - key: ko:exercise:hl-heritage-translate-unesco
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-unesco-segye-yusan
+    prompt:
+      source_text: 이 궁궐은 유네스코 세계 유산으로 등재되었다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cung điện này đã được ghi danh là Di sản thế giới UNESCO.
+        - Cung điện này được ghi danh là Di sản thế giới UNESCO.
+        - Cung điện này đã được công nhận là Di sản thế giới UNESCO.
+        - Cung điện này được công nhận là Di sản thế giới UNESCO.
+        - Cung điện này đã được UNESCO công nhận là Di sản thế giới.
+        - Cung điện này đã được ghi danh là Di sản thế giới của UNESCO.
+        - Cung điện này đã được công nhận là Di sản thế giới của UNESCO.
+        - Cung điện này đã được đưa vào danh sách Di sản thế giới UNESCO.
+        - Cung điện này đã được đưa vào danh sách Di sản thế giới của UNESCO.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cung điện này đã đăng ký Di sản thế giới UNESCO.
+        feedback_vi: 등재되다 là bị động "được ghi danh", không phải chủ động "đăng ký".
+        error_tag: passive_meaning
+      - answer: Cung điện này là Di sản văn hoá của Hàn Quốc.
+        feedback_vi: Câu gốc nói về 유네스코 세계 유산 - Di sản thế giới UNESCO, không phải di sản quốc gia.
+        error_tag: meaning_shift
+    explanation:
+      vi: 궁궐 = cung điện; 유네스코 세계 유산 = Di sản thế giới UNESCO; 등재되었다 = đã được ghi danh (đưa vào danh sách). "Được công nhận" cũng là cách dịch tự nhiên.
+    display_answer: Cung điện này đã được ghi danh là Di sản thế giới UNESCO.
+
+  - key: ko:exercise:hl-heritage-order-girok
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-girok
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tư liệu ghi chép thời Joseon được bảo tồn tốt.\""
+      tokens:
+        - { id: t-jal, text: 잘 }
+        - { id: t-it, text: 있다 }
+        - { id: t-joseon, text: 조선 }
+        - { id: t-hoe, text: 회복되어 }
+        - { id: t-girok, text: 기록이 }
+        - { id: t-bo, text: 보존되어 }
+        - { id: t-sidae, text: 시대의 }
+    answer:
+      orders:
+        - [t-joseon, t-sidae, t-girok, t-jal, t-bo, t-it]
+    explanation:
+      vi: 조선 시대의 기록이 (chủ ngữ) + 잘 + 보존되어 있다 (trạng thái được bảo tồn kéo dài). 회복되어 là token nhiễu - tư liệu được giữ nguyên trạng, không phải "hồi phục".
+    display_answer: 조선 시대의 기록이 잘 보존되어 있다.

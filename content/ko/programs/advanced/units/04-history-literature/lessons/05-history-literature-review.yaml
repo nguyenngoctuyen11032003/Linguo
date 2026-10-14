@@ -1,0 +1,399 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:history-literature-review
+order_index: 5
+level: topik6
+title:
+  vi: Ôn tập - tuỳ bút, thông báo triển lãm và câu hỏi suy luận
+objectives:
+  - vi: Đọc hiểu một trích đoạn tuỳ bút và một thông báo triển lãm bảo tàng ở trình độ TOPIK 6.
+  - vi: Kết hợp từ vựng di sản, đuôi văn chương, quán ngữ và câu hỏi thái độ, suy luận trong cùng một văn bản.
+  - vi: Tự kiểm tra các lỗi hay gặp - dịch từng chữ quán ngữ, đọc nhầm đuôi cổ, dùng lẫn 보존 / 복원 / 회복.
+estimated_minutes: 25
+skills: [reading, listening, vocabulary, grammar]
+prerequisites: [ko:lesson:literary-reading-attitude]
+items:
+  - item: ko:item:hl-sejong-daewang
+    role: reuse
+  - item: ko:item:hl-hunminjeongeum-changje
+    role: reuse
+  - item: ko:item:hl-baekseong
+    role: reuse
+  - item: ko:item:hl-yujeok-yumul
+    role: reuse
+  - item: ko:item:hl-bojonhada
+    role: reuse
+  - item: ko:item:hl-bowonhada
+    role: reuse
+  - item: ko:item:hl-gram-eudoe
+    role: reuse
+  - item: ko:item:hl-gram-geonman
+    role: reuse
+  - item: ko:item:hl-ibi-mugeopda
+    role: reuse
+  - item: ko:item:hl-miyeokguk-meokda
+    role: reuse
+  - item: ko:item:hl-supil
+    role: reuse
+  - item: ko:item:hl-pilja-taedo
+    role: reuse
+  - item: ko:item:hl-amsihada
+    role: reuse
+  - item: ko:item:hl-seongchalhada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn này gồm hai văn bản - một trích đoạn tuỳ bút về cuốn vở của người ông và một thông báo triển lãm chữ Hangul. Bạn sẽ đọc hiểu, suy luận điều được ngầm nói, rồi tự kiểm tra các lỗi người Việt hay mắc.
+  - type: explain
+    text:
+      vi: Với tuỳ bút, đọc theo trình tự chuyện kể → ý nghĩa → tự vấn. Đuôi -건만 báo hiệu điều trái mong đợi, -(으)리라 báo hiệu phỏng đoán của người viết, còn 돌아보게 된다 thường chứa ý chính.
+  - type: explain
+    text:
+      vi: Với thông báo, hãy đọc từng mục (기간, 장소, 관람료, 유의 사항) và tìm -(으)되 - phần sau nó luôn là điều kiện hoặc giới hạn. Câu hỏi "điều nào đúng" hay đặt bẫy ở chính phần điều kiện này.
+  - type: deep_explain
+    text:
+      vi: Câu hỏi suy luận (암시, 추론) yêu cầu điều không viết thẳng nhưng chắc chắn suy ra được. Loại phương án quá xa văn bản (chuyên gia nghiên cứu chữ Hangul) và phương án trái với chi tiết (chính tả rất chuẩn trong khi bài viết 서툴렀건만).
+  - type: example
+    target: 할아버지께서 남기신 낡은 공책 한 권을 발견하였다. 맞춤법은 서툴렀건만 글씨 하나하나에 정성이 배어 있었다. 글을 늦게 배우신 할아버지는 글을 아는 것이 곧 세상을 아는 것이라고 늘 말씀하셨다. 세종대왕이 백성을 위해 훈민정음을 창제한 뜻도 이와 다르지 않았으리라. 손쉽게 문자를 보내는 요즘, 나는 한 글자 한 글자를 소중히 여기고 있는지 돌아보게 된다.
+    target_lang: ko
+    translation:
+      vi: Tôi tìm thấy một cuốn vở cũ ông để lại. Chính tả tuy còn vụng về, vậy mà từng nét chữ đều thấm đượm tâm huyết. Ông học chữ muộn và luôn nói rằng biết chữ chính là hiểu thế giới. Có lẽ ý định của vua Sejong khi sáng chế Huấn dân chính âm vì dân chúng cũng không khác điều đó. Thời nay nhắn tin dễ dàng, tôi bỗng tự hỏi mình có còn trân trọng từng con chữ hay không.
+    note:
+      vi: Trích tuỳ bút (bài viết gốc của Linguo) - -건만 (trái mong đợi), -(으)리라 (phỏng đoán), 돌아보게 된다 (tự vấn - ý chính).
+  - type: example
+    target: "[특별 전시 안내] 한글, 백성의 문자가 되다 / 기간: 10월 1일~11월 30일 (매주 월요일 휴관) / 장소: 한빛역사박물관 기획전시실 / 내용: 조선 시대 한글 편지, 복원된 인쇄 목판 등 유물 120여 점 / 관람료: 무료로 하되 단체 관람은 사전 예약 필수 / 유의 사항: 사진 촬영은 가능하되 플래시는 사용할 수 없습니다."
+    target_lang: ko
+    translation:
+      vi: "[Thông báo triển lãm đặc biệt] Hangul - khi chữ viết trở thành của dân / Thời gian: 1/10-30/11 (nghỉ thứ Hai hằng tuần) / Địa điểm: phòng triển lãm chuyên đề, Bảo tàng Lịch sử Hanbit / Nội dung: hơn 120 hiện vật gồm thư viết bằng Hangul thời Joseon, bản khắc gỗ in đã được phục dựng... / Phí tham quan: miễn phí, nhưng đoàn tham quan bắt buộc đặt trước / Lưu ý: được chụp ảnh nhưng không được dùng đèn flash."
+    note:
+      vi: Thông báo hư cấu dùng cho bài ôn. Hai lần -(으)되 - mỗi lần là một điều kiện cần chú ý.
+  - type: example
+    target: 저는 입이 무거우니까 걱정하지 마세요.
+    target_lang: ko
+    translation:
+      vi: Tôi kín miệng lắm, bạn đừng lo.
+    note:
+      vi: Vế sau là mệnh lệnh nên lý do dùng -(으)니까, không dùng -아/어서.
+  - type: common_mistake
+    wrong: 박물관은 조선 시대 인쇄 목판을 원래 모습으로 회복하였다.
+    right: 박물관은 조선 시대 인쇄 목판을 원래 모습으로 복원하였다.
+    target_lang: ko
+    note:
+      vi: Hiện vật được làm lại theo hình dạng cũ là 복원. 회복 chỉ dùng cho trạng thái như sức khoẻ, kinh tế.
+  - type: common_mistake
+    wrong: "관람료는 무료로 하되 = Phí tham quan trở thành miễn phí"
+    right: "관람료는 무료로 하되 = Miễn phí tham quan, nhưng (có điều kiện)"
+    target_lang: ko
+    note:
+      vi: 되 ở đây là đuôi -(으)되, không phải 되다. Luôn đọc tiếp vế sau để tìm điều kiện (단체 관람은 사전 예약 필수).
+  - type: common_mistake
+    wrong: 저는 입이 무거워서 걱정하지 마세요.
+    right: 저는 입이 무거우니까 걱정하지 마세요.
+    target_lang: ko
+    note:
+      vi: -아/어서 không đi với mệnh lệnh, rủ rê ở vế sau. Dùng -(으)니까.
+  - type: summary
+    points:
+      - vi: Tuỳ bút - chuyện kể → ý nghĩa → tự vấn; -건만 trái mong đợi, -(으)리라 phỏng đoán, 돌아보게 된다 chứa ý chính.
+      - vi: Thông báo - đọc từng mục, chú ý -(으)되 = cho phép + điều kiện.
+      - vi: 보존 giữ nguyên · 복원 phục dựng hình dạng · 회복 hồi phục trạng thái; 유적 nơi chốn · 유물 đồ vật.
+      - vi: Quán ngữ không dịch từng chữ - 입이 무겁다 kín miệng, 미역국을 먹다 thi trượt.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:hl-review-listen-notice
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-gram-eudoe
+    prompt:
+      audio_asset_id: null
+      fallback_text: 관람료는 무료로 하되 단체 관람은 사전 예약이 필요합니다.
+      options:
+        - { id: n6r, text: "Vào cửa miễn phí, nhưng đoàn tham quan cần đặt trước.", lang: vi }
+        - { id: e3k, text: "Vào cửa miễn phí và không cần đặt trước.", lang: vi }
+        - { id: j8w, text: "Đoàn tham quan được miễn phí, khách lẻ phải trả tiền.", lang: vi }
+        - { id: t1p, text: "Phí tham quan sẽ trở thành miễn phí từ tháng sau.", lang: vi }
+    answer:
+      correct_option_id: n6r
+    explanation:
+      vi: 무료로 하되 = miễn phí, nhưng...; điều kiện là 단체 관람은 사전 예약이 필요하다 (đoàn cần đặt trước). Hiểu 되 là 되다 (trở thành) sẽ ra phương án sai cuối cùng.
+    display_answer: "Vào cửa miễn phí, nhưng đoàn tham quan cần đặt trước."
+
+  - key: ko:exercise:hl-review-mcq-notice-true
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-yujeok-yumul
+    prompt:
+      stem: "[특별 전시 안내] 기간: 10월 1일~11월 30일 (매주 월요일 휴관) / 내용: 조선 시대 한글 편지, 복원된 인쇄 목판 등 유물 120여 점 / 관람료: 무료로 하되 단체 관람은 사전 예약 필수 / 사진 촬영은 가능하되 플래시는 사용할 수 없습니다. - Điều nào đúng với thông báo?"
+      stem_lang: vi
+      options:
+        - { id: a7q, text: "Bảo tàng nghỉ vào thứ Hai hằng tuần.", lang: vi }
+        - { id: g2m, text: "Khách được dùng đèn flash khi chụp ảnh.", lang: vi }
+        - { id: o9d, text: "Triển lãm trưng bày khoảng 12 hiện vật.", lang: vi }
+        - { id: v4s, text: "Mọi khách tham quan đều phải đặt trước.", lang: vi }
+    answer:
+      correct_option_id: a7q
+    explanation:
+      vi: 매주 월요일 휴관 = nghỉ thứ Hai hằng tuần. Flash bị cấm (사용할 수 없습니다), hiện vật là 120여 점 (hơn 120), và chỉ đoàn (단체) mới phải đặt trước.
+    display_answer: "Bảo tàng nghỉ vào thứ Hai hằng tuần."
+
+  - key: ko:exercise:hl-review-mcq-bokwon-mokpan
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hl-bowonhada
+    prompt:
+      stem: "복원된 인쇄 목판 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: k3x, text: Bản khắc gỗ in đã được phục dựng, lang: vi }
+        - { id: w8n, text: Bản khắc gỗ in còn nguyên vẹn từ xưa, lang: vi }
+        - { id: c5f, text: Bản khắc gỗ in vừa mới được phát minh, lang: vi }
+        - { id: h1y, text: Bản khắc gỗ in đã bị thất lạc, lang: vi }
+    answer:
+      correct_option_id: k3x
+    explanation:
+      vi: 복원되다 = được phục dựng lại hình dạng ban đầu, tức là từng bị hư hỏng. "Còn nguyên vẹn" là 보존된; "thất lạc" là 분실된.
+    display_answer: Bản khắc gỗ in đã được phục dựng
+
+  - key: ko:exercise:hl-review-fill-geonman
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-gram-geonman
+    prompt:
+      template: "맞춤법은 서툴렀건만 글씨에 정성이 배어 있었다. ≈ 맞춤법은 서툴렀{{b1}} 글씨에 정성이 배어 있었다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - -건만 ≈ "nhưng, vậy mà" - dạng hiện đại là -지...
+        - -지만 / -는데도
+    answer:
+      blanks:
+        b1: [지만, 는데도, 는데]
+    known_wrong:
+      - answer: 거나
+        feedback_vi: -거나 là "hoặc". -건만 là nhượng bộ "vậy mà" - dạng hiện đại -지만.
+        error_tag: archaic_misread
+      - answer: 으면
+        feedback_vi: -(으)면 là "nếu". Câu gốc kể chuyện đã xảy ra với ý trái ngược - -지만.
+        error_tag: archaic_misread
+    explanation:
+      vi: -건만 = -지만 / -는데도 kèm sắc thái "vậy mà" - chính tả vụng nhưng chữ viết lại đầy tâm huyết.
+    display_answer: 맞춤법은 서툴렀지만 글씨에 정성이 배어 있었다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:hl-review-fill-bojon
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-bojonhada
+    prompt:
+      template: "Bảo tàng điều chỉnh nhiệt độ và độ ẩm để bảo tồn các hiện vật. - 박물관은 온도와 습도를 조절하여 유물을 {{b1}}하고 있다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [보존]
+    known_wrong:
+      - answer: 복원
+        feedback_vi: Điều chỉnh nhiệt độ, độ ẩm là giữ nguyên trạng - 보존. 복원 là làm lại thứ đã hư hỏng.
+        error_tag: bojon_bokwon
+      - answer: 회복
+        feedback_vi: 회복 dùng cho trạng thái như sức khoẻ, kinh tế. Giữ gìn hiện vật là 보존.
+        error_tag: word_confusion
+    explanation:
+      vi: 유물을 보존하다 = bảo tồn hiện vật (giữ nguyên, không để hư hỏng). Đây là động từ chuẩn cho di sản, tư liệu.
+    display_answer: 박물관은 온도와 습도를 조절하여 유물을 보존하고 있다.
+
+  - key: ko:exercise:hl-review-translate-ip
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-ibi-mugeopda
+    prompt:
+      source_text: Tôi kín miệng lắm, bạn đừng lo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 저는 입이 무거우니까 걱정하지 마세요.
+        - 전 입이 무거우니까 걱정하지 마세요.
+        - 저는 입이 무거우니까 걱정 마세요.
+        - 전 입이 무거우니까 걱정 마세요.
+        - 제가 입이 무거우니까 걱정하지 마세요.
+        - 입이 무거우니까 걱정하지 마세요.
+        - 입이 무거우니까 걱정 마세요.
+        - 저는 입이 정말 무거우니까 걱정하지 마세요.
+        - 저는 입이 무거워요. 걱정하지 마세요.
+        - 저는 입이 무거워요. 걱정 마세요.
+    known_wrong:
+      - answer: 저는 입이 무거워서 걱정하지 마세요.
+        feedback_vi: -아/어서 không đi với mệnh lệnh ở vế sau. Dùng 무거우니까.
+        error_tag: aseo_imperative
+      - answer: 저는 입이 가벼우니까 걱정하지 마세요.
+        feedback_vi: 입이 가볍다 là bép xép - ngược nghĩa. Kín miệng là 입이 무겁다.
+        error_tag: idiom_opposite
+      - answer: 저는 입이 닫혀 있으니까 걱정하지 마세요.
+        feedback_vi: Đừng dịch từng chữ "kín miệng". Quán ngữ tiếng Hàn là 입이 무겁다.
+        error_tag: literal_idiom
+    explanation:
+      vi: Kín miệng = 입이 무겁다; vì vế sau là lời khuyên 걱정하지 마세요 nên lý do phải dùng -(으)니까 (무거우니까), hoặc tách thành hai câu.
+    display_answer: 저는 입이 무거우니까 걱정하지 마세요.
+
+  - key: ko:exercise:hl-review-fill-miyeok
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hl-miyeokguk-meokda
+    prompt:
+      template: "Anh ấy lại trượt kỳ thi lần này. - 그는 이번 시험에서 또 미역국을 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [먹었다, 먹었어요, 먹었습니다]
+    known_wrong:
+      - answer: 마셨다
+        feedback_vi: Quán ngữ cố định là 미역국을 먹다 - luôn dùng 먹다.
+        error_tag: idiom_form
+      - answer: 마셨어요
+        feedback_vi: Quán ngữ cố định là 미역국을 먹다 - luôn dùng 먹다.
+        error_tag: idiom_form
+      - answer: 먹는다
+        feedback_vi: Chuyện thi trượt đã xảy ra nên dùng quá khứ - 먹었다.
+        error_tag: tense
+    explanation:
+      vi: 미역국을 먹다 = thi trượt (ngữ cảnh 시험). Việc đã xảy ra nên chia quá khứ 먹었다 / 먹었어요.
+    display_answer: 그는 이번 시험에서 또 미역국을 먹었다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:hl-review-mcq-essay-attitude
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:hl-pilja-taedo
+    prompt:
+      stem: "맞춤법은 서툴렀건만 글씨 하나하나에 정성이 배어 있었다. 글을 늦게 배우신 할아버지는 글을 아는 것이 곧 세상을 아는 것이라고 늘 말씀하셨다. 손쉽게 문자를 보내는 요즘, 나는 한 글자 한 글자를 소중히 여기고 있는지 돌아보게 된다. - Thái độ của người viết là gì?"
+      stem_lang: vi
+      options:
+        - { id: b5u, text: "Trân trọng tấm lòng của ông và tự vấn cách mình đối xử với chữ viết", lang: vi }
+        - { id: f2c, text: "Phê phán ông vì viết sai chính tả", lang: vi }
+        - { id: y7j, text: "Hoài nghi giá trị của việc học chữ", lang: vi }
+        - { id: d3n, text: "Lạc quan về văn hoá nhắn tin thời nay", lang: vi }
+    answer:
+      correct_option_id: b5u
+    explanation:
+      vi: -건만 cho thấy người viết coi trọng tâm huyết hơn lỗi chính tả, và 돌아보게 된다 là thái độ 성찰. Không có từ nào chê ông, nghi ngờ việc học chữ hay khen việc nhắn tin.
+    display_answer: "Trân trọng tấm lòng của ông và tự vấn cách mình đối xử với chữ viết"
+
+  - key: ko:exercise:hl-review-mcq-inference
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:hl-amsihada
+    prompt:
+      stem: "Vẫn đoạn tuỳ bút về cuốn vở của ông. Điều nào có thể suy ra (암시) từ đoạn văn?"
+      stem_lang: vi
+      options:
+        - { id: m4g, text: "Vì học chữ muộn nên ông rất trân trọng việc biết chữ.", lang: vi }
+        - { id: s8z, text: "Ông viết chính tả rất chuẩn.", lang: vi }
+        - { id: l1v, text: "Người viết thường xuyên viết thư tay.", lang: vi }
+        - { id: q6e, text: "Ông là học giả nghiên cứu chữ Hangul.", lang: vi }
+    answer:
+      correct_option_id: m4g
+    explanation:
+      vi: 글을 늦게 배우신 + 늘 말씀하셨다 (biết chữ là hiểu thế giới) cho phép suy ra ông trân trọng việc biết chữ. Phương án chính tả trái với 서툴렀건만; người viết nhắn tin (문자) chứ không viết thư; "học giả" không có căn cứ.
+    display_answer: "Vì học chữ muộn nên ông rất trân trọng việc biết chữ."
+
+  - key: ko:exercise:hl-review-mcq-rira
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:hl-hunminjeongeum-changje
+    prompt:
+      stem: "세종대왕이 백성을 위해 훈민정음을 창제한 뜻도 이와 다르지 않았으리라. - Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: r9b, text: "Có lẽ ý định của vua Sejong khi sáng chế chữ vì dân cũng không khác điều đó.", lang: vi }
+        - { id: w3h, text: "Vua Sejong đã sáng chế chữ vì một ý định hoàn toàn khác.", lang: vi }
+        - { id: i5t, text: "Dân chúng không hiểu ý định của vua Sejong.", lang: vi }
+        - { id: z7a, text: "Vua Sejong ra lệnh cho dân không được khác biệt.", lang: vi }
+    answer:
+      correct_option_id: r9b
+    explanation:
+      vi: -(으)리라 ở đây là phỏng đoán văn chương (≈ -았/었을 것이다) - "có lẽ đã không khác". 이와 chỉ lời ông vừa nói - biết chữ là hiểu thế giới; 위해 = vì dân, không phải ra lệnh cho dân.
+    display_answer: "Có lẽ ý định của vua Sejong khi sáng chế chữ vì dân cũng không khác điều đó."
+
+  - key: ko:exercise:hl-review-translate-essay
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:hl-seongchalhada
+    prompt:
+      source_text: 나는 한 글자 한 글자를 소중히 여기고 있는지 돌아보게 된다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi tự hỏi liệu mình có đang trân trọng từng con chữ hay không.
+        - Tôi tự hỏi mình có trân trọng từng con chữ hay không.
+        - Tôi tự hỏi mình có còn trân trọng từng con chữ hay không.
+        - Tôi nhìn lại xem mình có đang trân trọng từng con chữ hay không.
+        - Tôi nhìn lại xem mình có trân trọng từng con chữ không.
+        - Tôi bỗng nhìn lại xem mình có trân trọng từng chữ một hay không.
+        - Tôi tự nhìn lại xem mình có quý trọng từng con chữ hay không.
+        - Tôi tự hỏi liệu mình có trân trọng từng chữ một không.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi quay lại nhìn từng con chữ.
+        feedback_vi: 돌아보다 ở đây là nghĩa bóng "nhìn lại, tự vấn", không phải quay đầu lại nhìn.
+        error_tag: literal_meaning
+      - answer: Tôi trân trọng từng con chữ.
+        feedback_vi: -는지 돌아보게 된다 là tự hỏi "có... hay không", không phải khẳng định.
+        error_tag: indirect_question
+    explanation:
+      vi: -고 있는지 = "có đang... hay không"; 돌아보게 된다 = (bỗng) nhìn lại, tự vấn - đây là câu chứa thái độ 성찰 và ý chính của bài.
+    display_answer: Tôi tự hỏi liệu mình có đang trân trọng từng con chữ hay không.
+
+  - key: ko:exercise:hl-review-order-notice
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:hl-gram-eudoe
+    prompt:
+      instruction: "Sắp xếp thành câu trong thông báo: \"Được chụp ảnh nhưng không được dùng đèn flash.\""
+      tokens:
+        - { id: t-flash, text: 플래시는 }
+        - { id: t-eop, text: 없습니다 }
+        - { id: t-chwal, text: 촬영은 }
+        - { id: t-gane, text: 가능하게 }
+        - { id: t-sa, text: 사진 }
+        - { id: t-su, text: 수 }
+        - { id: t-ganeung, text: 가능하되 }
+        - { id: t-sayong, text: 사용할 }
+    answer:
+      orders:
+        - [t-sa, t-chwal, t-ganeung, t-flash, t-sayong, t-su, t-eop]
+    explanation:
+      vi: 사진 촬영은 가능하되 (cho phép, nhưng) + 플래시는 사용할 수 없습니다 (giới hạn). 가능하게 là token nhiễu - -게 không nối được hai vế "cho phép / giới hạn".
+    display_answer: 사진 촬영은 가능하되 플래시는 사용할 수 없습니다.

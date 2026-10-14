@@ -1,0 +1,425 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:articles-word-formation
+order_index: 3
+level: b2
+title:
+  vi: "Technology hay the technology? Mạo từ & cấu tạo từ"
+objectives:
+  - vi: Bỏ mạo từ khi nói chung về khái niệm (Technology, Science, Smartphones) và dùng the với the Internet, the media.
+  - vi: Dùng đúng các danh từ không đếm được information, advice, equipment, news, research.
+  - vi: Tạo từ mới bằng tiền tố un- / mis- / over- / under-, hậu tố -ment / -ity / -ness / -able và danh từ ghép.
+estimated_minutes: 20
+skills: [grammar, vocabulary, writing]
+prerequisites: [en:lesson:participle-clauses]
+items:
+  - item: en:item:zero-article-general
+  - item: en:item:the-internet-the-media
+  - item: en:item:uncountable-information-advice
+  - item: en:item:prefix-un-mis
+  - item: en:item:prefix-over-under
+  - item: en:item:suffix-noun-ment-ity-ness
+  - item: en:item:suffix-able
+  - item: en:item:compound-nouns-tech
+  - item: en:item:misleading
+  - item: en:item:unreliable
+  - item: en:item:overuse
+  - item: en:item:underestimate
+  - item: en:item:screen-time
+    role: reuse
+  - item: en:item:artificial-intelligence
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn viết được câu mở đầu bài luận về công nghệ mà không mắc lỗi mạo từ kinh điển (\"The technology is developing\") và mở rộng vốn từ nhờ tiền tố, hậu tố."
+  - type: explain
+    text:
+      vi: "Khi nói chung về một khái niệm trừu tượng (technology, science, education, privacy) hay cả một loại (smartphones, children), tiếng Anh không dùng the. Người Việt hay thêm the vì nghĩ \"công nghệ\" là một thứ cụ thể, nhưng the chỉ dùng khi đã xác định: the technology in this car."
+  - type: explain
+    text:
+      vi: "Một số danh từ luôn đi với the vì chỉ có một: the Internet, the media, the press, the government. Nhưng social media, TV, radio khi nói chung thì không có the: on social media, on TV."
+  - type: explain
+    text:
+      vi: "Information, advice, equipment, news, research, evidence là danh từ không đếm được: không thêm -s, không dùng a/an, động từ chia số ít. Muốn đếm, dùng a piece of: a piece of advice, two pieces of information."
+  - type: explain
+    text:
+      vi: "Cấu tạo từ giúp bạn đoán nghĩa từ mới: un- (không), mis- (sai), over- (quá mức), under- (chưa đủ); -ment / -ity / -ness tạo danh từ, -able tạo tính từ \"có thể… được\". Danh từ ghép đặt từ bổ nghĩa trước, ngược với tiếng Việt: search history = lịch sử tìm kiếm."
+  - type: deep_explain
+    text:
+      vi: "Cùng một từ có thể dùng chung hoặc cụ thể: \"Artificial intelligence is changing education\" (nói chung) nhưng \"The artificial intelligence used by this bank is very accurate\" (AI cụ thể). Hãy tự hỏi: người nghe có biết chính xác cái nào không? Nếu không, và bạn nói về cả khái niệm, bỏ the."
+  - type: example
+    target: Technology has changed the way we communicate, but the Internet has also made us more impatient.
+    target_lang: en
+    translation:
+      vi: Công nghệ đã thay đổi cách chúng ta giao tiếp, nhưng Internet cũng khiến chúng ta thiếu kiên nhẫn hơn.
+    note:
+      vi: Technology nói chung - không có the; the Internet luôn có the.
+  - type: example
+    target: The media often give misleading information about new medicines.
+    target_lang: en
+    translation:
+      vi: Truyền thông thường đưa thông tin gây hiểu lầm về các loại thuốc mới.
+    note:
+      vi: Information không đếm được - không thêm -s, không có a.
+  - type: example
+    target: Many parents underestimate the risks of too much screen time.
+    target_lang: en
+    translation:
+      vi: Nhiều phụ huynh đánh giá thấp những rủi ro của việc dùng màn hình quá nhiều.
+    note:
+      vi: Under- + estimate = đánh giá dưới mức thực tế.
+  - type: example
+    target: The development of affordable smartphones has made the Internet accessible to millions of people.
+    target_lang: en
+    translation:
+      vi: Sự phát triển của điện thoại thông minh giá rẻ đã giúp hàng triệu người tiếp cận Internet.
+    note:
+      vi: "develop → development (-ment); afford → affordable, access → accessible (-able / -ible)."
+  - type: common_mistake
+    wrong: The technology is developing very fast nowadays.
+    right: Technology is developing very fast nowadays.
+    target_lang: en
+    note:
+      vi: Nói chung về công nghệ thì không dùng the. "The technology" khiến người nghe hỏi lại - công nghệ nào?
+  - type: common_mistake
+    wrong: She gave me some useful advices and informations.
+    right: She gave me some useful advice and information.
+    target_lang: en
+    note:
+      vi: Advice và information không đếm được nên không có -s. Tương tự, không nói "equipments".
+  - type: common_mistake
+    wrong: I read it on Internet, so it must be true.
+    right: I read it on the Internet, so it must be true.
+    target_lang: en
+    note:
+      vi: Internet luôn đi với the. (Và đọc trên mạng không có nghĩa là thật!)
+  - type: common_mistake
+    wrong: The source is not reliable and the article is misunderstanding.
+    right: The source is unreliable and the article is misleading.
+    target_lang: en
+    note:
+      vi: Bài báo "gây hiểu lầm" là misleading. Misunderstand là động từ "hiểu sai" của người đọc.
+  - type: summary
+    points:
+      - vi: "Nói chung về khái niệm / cả một loại: không dùng the (Technology…, Smartphones…)."
+      - vi: "Luôn có the: the Internet, the media, the press; nhưng on social media, on TV."
+      - vi: "Không đếm được: information, advice, equipment, news, research, evidence - không -s, không a/an."
+      - vi: "Tiền tố: un- (không), mis- (sai), over- (quá mức), under- (chưa đủ)."
+      - vi: "Hậu tố: -ment / -ity / -ness → danh từ; -able / -ible → tính từ."
+      - vi: "Danh từ ghép: từ bổ nghĩa đứng trước và giữ số ít (search history, password manager)."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:articles-mcq-technology-general
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:zero-article-general
+    prompt:
+      stem: Chọn câu mở đầu bài luận đúng nhất.
+      stem_lang: vi
+      options:
+        - { id: r3a, text: "Technology has changed almost every part of our lives.", lang: en }
+        - { id: o8d, text: "The technology has changed almost every part of our lives.", lang: en }
+        - { id: g5n, text: "A technology has changed almost every part of our lives.", lang: en }
+        - { id: u2w, text: "Technologies has changed almost every part of our lives.", lang: en }
+    answer:
+      correct_option_id: r3a
+    explanation:
+      vi: Đây là công nghệ nói chung, chưa xác định cụ thể, nên không dùng mạo từ. The technology hay a technology sẽ chỉ một công nghệ cụ thể; technologies là số nhiều nên không đi với has.
+    display_answer: "Technology has changed almost every part of our lives."
+
+  - key: en:exercise:articles-listen-advice
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:uncountable-information-advice
+    prompt:
+      audio_asset_id: null
+      fallback_text: Let me give you a piece of advice - never click on links from people you don't know.
+      options:
+        - { id: s6t, text: "Let me give you a piece of advice - never click on links from people you don't know.", lang: en }
+        - { id: m1y, text: "Let me give you an advice - never click on links from people you don't know.", lang: en }
+        - { id: p9c, text: "Let me give you some advices - never click on links from people you don't know.", lang: en }
+        - { id: z4e, text: "Let me give you a piece of advise - never click on links from people you don't know.", lang: en }
+    answer:
+      correct_option_id: s6t
+    explanation:
+      vi: Advice không đếm được, nên muốn nói "một lời khuyên" phải dùng a piece of advice. An advice và advices đều sai; advise là động từ.
+    display_answer: "Let me give you a piece of advice - never click on links from people you don't know."
+
+  - key: en:exercise:articles-fill-the-internet-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:the-internet-the-media
+    prompt:
+      template: "I first read the story on {{b1}} Internet, and a day later it was all over {{b2}} media."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Tôi đọc câu chuyện đó trên Internet trước, và một ngày sau nó tràn ngập trên các phương tiện truyền thông."
+        - "Gợi ý: cả Internet lẫn media (truyền thông nói chung) đều là thứ \"duy nhất\"."
+    answer:
+      blanks:
+        b1: [the]
+        b2: [the]
+    known_wrong:
+      - answer: a
+        feedback_vi: Chỉ có một Internet và một nền truyền thông nói chung, nên dùng the, không dùng a.
+        error_tag: article
+      - answer: an
+        feedback_vi: Internet là duy nhất nên dùng the, không dùng an.
+        error_tag: article
+    explanation:
+      vi: Internet và the media (truyền thông nói chung) được xem là duy nhất nên luôn đi với the. Lưu ý social media và TV thì không có the - on social media, on TV.
+    display_answer: I first read the story on the Internet, and a day later it was all over the media.
+
+  - key: en:exercise:articles-order-search-history
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:compound-nouns-tech
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Hãy đổi mật khẩu và xoá lịch sử tìm kiếm của bạn.\""
+      tokens:
+        - { id: c-history, text: history }
+        - { id: c-and, text: and }
+        - { id: c-change, text: Change }
+        - { id: c-search, text: search }
+        - { id: c-your1, text: your }
+        - { id: c-clear, text: clear }
+        - { id: c-password, text: password }
+        - { id: c-your2, text: your }
+    answer:
+      orders:
+        - [c-change, c-your1, c-password, c-and, c-clear, c-your2, c-search, c-history]
+        - [c-change, c-your2, c-password, c-and, c-clear, c-your1, c-search, c-history]
+    explanation:
+      vi: "Danh từ ghép đặt từ bổ nghĩa lên trước: \"lịch sử tìm kiếm\" là search history, ngược với thứ tự tiếng Việt."
+    display_answer: Change your password and clear your search history.
+
+  - key: en:exercise:articles-mcq-prefix-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:prefix-over-under
+    prompt:
+      stem: "\"Many teenagers overuse their phones, and their parents often underestimate the problem.\" Câu này có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: f7b, text: "Nhiều thiếu niên dùng điện thoại quá mức, và bố mẹ thường xem nhẹ vấn đề.", lang: vi }
+        - { id: l3x, text: "Nhiều thiếu niên ít dùng điện thoại, và bố mẹ thường lo quá mức.", lang: vi }
+        - { id: h0q, text: "Nhiều thiếu niên dùng điện thoại hợp lý, và bố mẹ đánh giá đúng vấn đề.", lang: vi }
+        - { id: v8r, text: "Nhiều thiếu niên dùng sai điện thoại, và bố mẹ hiểu nhầm vấn đề.", lang: vi }
+    answer:
+      correct_option_id: f7b
+    explanation:
+      vi: Over- là quá mức (overuse = dùng quá nhiều), under- là dưới mức (underestimate = đánh giá thấp, xem nhẹ). Dùng sai là misuse, hiểu nhầm là misunderstand - tiền tố mis-.
+    display_answer: "Nhiều thiếu niên dùng điện thoại quá mức, và bố mẹ thường xem nhẹ vấn đề."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:articles-fill-word-formation
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:suffix-noun-ment-ity-ness
+    prompt:
+      template: "The {{b1}} (develop) of AI raises questions about {{b2}} (secure) and public {{b3}} (aware) of the risks."
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [development]
+        b2: [security]
+        b3: [awareness]
+    known_wrong:
+      - answer: develop
+        feedback_vi: Sau the và trước of cần danh từ - development.
+        error_tag: word_form
+      - answer: secure
+        feedback_vi: Sau about cần danh từ - security (-ity).
+        error_tag: word_form
+      - answer: aware
+        feedback_vi: Sau tính từ public cần danh từ - awareness (-ness).
+        error_tag: word_form
+      - answer: securement
+        feedback_vi: Danh từ của secure là security, không phải "securement".
+        error_tag: word_form
+      - answer: awarement
+        feedback_vi: Danh từ của aware là awareness.
+        error_tag: word_form
+    explanation:
+      vi: "Cả ba chỗ trống đều cần danh từ: develop + -ment, secure + -ity (bỏ e), aware + -ness. Mỗi từ đi với một hậu tố riêng, nên bạn cần học thuộc theo cặp."
+    display_answer: The development of AI raises questions about security and public awareness of the risks.
+
+  - key: en:exercise:articles-fill-unreliable-misleading
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:misleading
+    prompt:
+      template: "Don't trust that website - it's completely {{b1}} (reliable), and its headlines are often {{b2}} (lead)."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [unreliable]
+        b2: [misleading]
+    known_wrong:
+      - answer: inreliable
+        feedback_vi: Tiền tố phủ định của reliable là un- - unreliable.
+        error_tag: prefix
+      - answer: misreliable
+        feedback_vi: Mis- nghĩa là "làm sai", không dùng để phủ định tính từ. Dùng un-.
+        error_tag: prefix
+      - answer: misled
+        feedback_vi: Misled là V2/V3 (bị đánh lừa). Tiêu đề "gây hiểu lầm" là tính từ misleading.
+        error_tag: word_form
+      - answer: unleading
+        feedback_vi: Gây hiểu lầm là mis- + leading = misleading.
+        error_tag: prefix
+    explanation:
+      vi: "Không đáng tin cậy là un- + reliable. Gây hiểu lầm là mis- (sai) + leading (dẫn) = dẫn người đọc đi sai hướng."
+    display_answer: "Don't trust that website - it's completely unreliable, and its headlines are often misleading."
+
+  - key: en:exercise:articles-translate-technology-changed
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:zero-article-general
+    prompt:
+      source_text: Công nghệ đã thay đổi cách chúng ta học và làm việc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Technology has changed the way we learn and work.
+        - Technology has changed the way we study and work.
+        - Technology has changed how we learn and work.
+        - Technology has changed how we study and work.
+        - Technology has changed the way that we learn and work.
+        - Technology has changed the way we work and learn.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The technology has changed the way we learn and work.
+        feedback_vi: Nói chung về công nghệ thì không dùng the.
+        error_tag: article_general
+      - answer: Technology has changed the way how we learn and work.
+        feedback_vi: Dùng the way hoặc how, không dùng cả hai cùng lúc.
+        error_tag: the_way_how
+      - answer: Technology have changed the way we learn and work.
+        feedback_vi: Technology là danh từ không đếm được, động từ chia số ít - has.
+        error_tag: subject_verb_agreement
+    explanation:
+      vi: "Công nghệ ở đây là khái niệm chung nên không có mạo từ: Technology has changed… \"Cách chúng ta…\" là the way we… hoặc how we…, không dùng \"the way how\"."
+    display_answer: Technology has changed the way we learn and work.
+
+  # ---------------- application ----------------
+  - key: en:exercise:articles-translate-information-media
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:uncountable-information-advice
+    prompt:
+      source_text: Truyền thông thường đưa ra thông tin gây hiểu lầm về trí tuệ nhân tạo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The media often give misleading information about artificial intelligence.
+        - The media often gives misleading information about artificial intelligence.
+        - The media often provide misleading information about artificial intelligence.
+        - The media often provides misleading information about artificial intelligence.
+        - The media often give misleading information about AI.
+        - The media often gives misleading information about AI.
+        - The media often spread misleading information about artificial intelligence.
+        - The media often spreads misleading information about artificial intelligence.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The media often give misleading informations about artificial intelligence.
+        feedback_vi: Information không đếm được - không thêm -s.
+        error_tag: uncountable_plural
+      - answer: Media often give misleading information about artificial intelligence.
+        feedback_vi: Truyền thông nói chung luôn là the media.
+        error_tag: article
+      - answer: The media often give misleading information about the artificial intelligence.
+        feedback_vi: AI nói chung là khái niệm trừu tượng - không có the.
+        error_tag: article_general
+      - answer: The media often give misunderstanding information about artificial intelligence.
+        feedback_vi: Thông tin "gây hiểu lầm" là misleading.
+        error_tag: word_choice
+    explanation:
+      vi: "The media luôn có the (động từ chia số nhiều hoặc số ít đều được). Information không đếm được nên không có -s; artificial intelligence nói chung không có mạo từ."
+    display_answer: The media often give misleading information about artificial intelligence.
+
+  - key: en:exercise:articles-translate-underestimate-screen-time
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:underestimate
+    prompt:
+      source_text: Many parents underestimate how much screen time their children have.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhiều phụ huynh đánh giá thấp thời gian con cái họ dùng màn hình.
+        - Nhiều phụ huynh đánh giá thấp lượng thời gian con họ dùng màn hình.
+        - Nhiều bố mẹ đánh giá thấp thời gian con cái họ dùng màn hình.
+        - Nhiều cha mẹ đánh giá thấp thời gian con cái dùng màn hình.
+        - Nhiều phụ huynh không biết con mình dùng màn hình nhiều đến mức nào.
+        - Nhiều phụ huynh xem nhẹ thời gian con cái họ dùng màn hình.
+        - Nhiều phụ huynh nghĩ con mình dùng màn hình ít hơn thực tế.
+        - Nhiều bố mẹ nghĩ con mình dùng màn hình ít hơn thực tế.
+        - Nhiều phụ huynh đánh giá thấp thời gian con cái họ dành cho màn hình.
+        - Nhiều phụ huynh đánh giá thấp thời gian sử dụng màn hình của con cái họ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nhiều phụ huynh đánh giá cao thời gian con cái họ dùng màn hình.
+        feedback_vi: Under- là dưới mức - underestimate là đánh giá thấp, không phải đánh giá cao.
+        error_tag: prefix
+    explanation:
+      vi: Underestimate = đánh giá thấp hơn thực tế, tức là phụ huynh nghĩ con dùng màn hình ít hơn thật. Screen time là thời gian dùng màn hình (danh từ ghép).
+    display_answer: Nhiều phụ huynh đánh giá thấp thời gian con cái họ dùng màn hình.
+
+  - key: en:exercise:articles-mcq-situation-equipment
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:uncountable-information-advice
+    prompt:
+      stem: Bạn email cho bộ phận IT để hỏi về thiết bị cho buổi livestream. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: t5j, text: "Could you send me some information about the equipment we need for the live stream?", lang: en }
+        - { id: a9u, text: "Could you send me some informations about the equipments we need for the live stream?", lang: en }
+        - { id: n2k, text: "Could you send me an information about the equipment we need for the live stream?", lang: en }
+        - { id: x6h, text: "Could you send me some information about the equipments we need for the live stream?", lang: en }
+    answer:
+      correct_option_id: t5j
+    explanation:
+      vi: Information và equipment đều không đếm được - không có -s, không đi với an. Some information là cách nói tự nhiên cho "vài thông tin".
+    display_answer: "Could you send me some information about the equipment we need for the live stream?"

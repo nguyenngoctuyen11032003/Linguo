@@ -2130,6 +2130,760 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
+      "content_hash": "43d512f3618a0126a7df55954a505333f2b976f761d7cc2e8751cc636001192b",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "30165573-9178-5e15-a2d7-14dc51bf69b9",
+      "is_demo": true,
+      "item_id": "3e304982-fa4f-5097-9f97-180d1edf651d",
+      "key": "en:exercise:articles-fill-the-internet-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "the"
+            ],
+            "b2": [
+              "the"
+            ]
+          }
+        },
+        "display_answer": "I first read the story on the Internet, and a day later it was all over the media.",
+        "explanation": {
+          "vi": "Internet và the media (truyền thông nói chung) được xem là duy nhất nên luôn đi với the. Lưu ý social media và TV thì không có the - on social media, on TV."
+        },
+        "known_wrong": [
+          {
+            "answer": "a",
+            "error_tag": "article",
+            "feedback_vi": "Chỉ có một Internet và một nền truyền thông nói chung, nên dùng the, không dùng a."
+          },
+          {
+            "answer": "an",
+            "error_tag": "article",
+            "feedback_vi": "Internet là duy nhất nên dùng the, không dùng an."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "order_index": 2,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          },
+          {
+            "id": "b2",
+            "width_hint": 4
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa: Tôi đọc câu chuyện đó trên Internet trước, và một ngày sau nó tràn ngập trên các phương tiện truyền thông.",
+          "Gợi ý: cả Internet lẫn media (truyền thông nói chung) đều là thứ \"duy nhất\"."
+        ],
+        "template": "I first read the story on {{b1}} Internet, and a day later it was all over {{b2}} media."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "4d6c792b25643279490c6546a17323929fe4b033a99be36f053d80defcf467d4",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "6441a95a-530b-5f9a-be4d-d53c4be95a28",
+      "is_demo": true,
+      "item_id": "89527b6c-d080-5976-aeae-70296253ab12",
+      "key": "en:exercise:articles-fill-unreliable-misleading",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "unreliable"
+            ],
+            "b2": [
+              "misleading"
+            ]
+          }
+        },
+        "display_answer": "Don't trust that website - it's completely unreliable, and its headlines are often misleading.",
+        "explanation": {
+          "vi": "Không đáng tin cậy là un- + reliable. Gây hiểu lầm là mis- (sai) + leading (dẫn) = dẫn người đọc đi sai hướng."
+        },
+        "known_wrong": [
+          {
+            "answer": "inreliable",
+            "error_tag": "prefix",
+            "feedback_vi": "Tiền tố phủ định của reliable là un- - unreliable."
+          },
+          {
+            "answer": "misreliable",
+            "error_tag": "prefix",
+            "feedback_vi": "Mis- nghĩa là \"làm sai\", không dùng để phủ định tính từ. Dùng un-."
+          },
+          {
+            "answer": "misled",
+            "error_tag": "word_form",
+            "feedback_vi": "Misled là V2/V3 (bị đánh lừa). Tiêu đề \"gây hiểu lầm\" là tính từ misleading."
+          },
+          {
+            "answer": "unleading",
+            "error_tag": "prefix",
+            "feedback_vi": "Gây hiểu lầm là mis- + leading = misleading."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 10
+          },
+          {
+            "id": "b2",
+            "width_hint": 10
+          }
+        ],
+        "template": "Don't trust that website - it's completely {{b1}} (reliable), and its headlines are often {{b2}} (lead)."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "b2e9c56df73aecfeb80c1204ba617389c24c64dd114e03055e8d891faeeacad5",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "e79166d9-ad9b-5bbe-b600-b09b81a193fb",
+      "is_demo": true,
+      "item_id": "2eb13a4c-7c6e-5bfa-a75b-c7a19741a755",
+      "key": "en:exercise:articles-fill-word-formation",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "development"
+            ],
+            "b2": [
+              "security"
+            ],
+            "b3": [
+              "awareness"
+            ]
+          }
+        },
+        "display_answer": "The development of AI raises questions about security and public awareness of the risks.",
+        "explanation": {
+          "vi": "Cả ba chỗ trống đều cần danh từ: develop + -ment, secure + -ity (bỏ e), aware + -ness. Mỗi từ đi với một hậu tố riêng, nên bạn cần học thuộc theo cặp."
+        },
+        "known_wrong": [
+          {
+            "answer": "develop",
+            "error_tag": "word_form",
+            "feedback_vi": "Sau the và trước of cần danh từ - development."
+          },
+          {
+            "answer": "secure",
+            "error_tag": "word_form",
+            "feedback_vi": "Sau about cần danh từ - security (-ity)."
+          },
+          {
+            "answer": "aware",
+            "error_tag": "word_form",
+            "feedback_vi": "Sau tính từ public cần danh từ - awareness (-ness)."
+          },
+          {
+            "answer": "securement",
+            "error_tag": "word_form",
+            "feedback_vi": "Danh từ của secure là security, không phải \"securement\"."
+          },
+          {
+            "answer": "awarement",
+            "error_tag": "word_form",
+            "feedback_vi": "Danh từ của aware là awareness."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 11
+          },
+          {
+            "id": "b2",
+            "width_hint": 8
+          },
+          {
+            "id": "b3",
+            "width_hint": 9
+          }
+        ],
+        "template": "The {{b1}} (develop) of AI raises questions about {{b2}} (secure) and public {{b3}} (aware) of the risks."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "9c8ac46063e176fa4f95fa60cf812b5aa5e0a77ea2a9cbffb33d62ce33eb289c",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "4f2091e7-ce97-5759-9a45-02d8ca4994c5",
+      "is_demo": true,
+      "item_id": "3e492211-bcbd-5713-bc01-c3198cb9d5c3",
+      "key": "en:exercise:articles-listen-advice",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "s6t"
+        },
+        "display_answer": "Let me give you a piece of advice - never click on links from people you don't know.",
+        "explanation": {
+          "vi": "Advice không đếm được, nên muốn nói \"một lời khuyên\" phải dùng a piece of advice. An advice và advices đều sai; advise là động từ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "Let me give you a piece of advice - never click on links from people you don't know.",
+        "options": [
+          {
+            "id": "z4e",
+            "lang": "en",
+            "text": "Let me give you a piece of advise - never click on links from people you don't know."
+          },
+          {
+            "id": "s6t",
+            "lang": "en",
+            "text": "Let me give you a piece of advice - never click on links from people you don't know."
+          },
+          {
+            "id": "p9c",
+            "lang": "en",
+            "text": "Let me give you some advices - never click on links from people you don't know."
+          },
+          {
+            "id": "m1y",
+            "lang": "en",
+            "text": "Let me give you an advice - never click on links from people you don't know."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "24503897908867b9a5b2907d34bc234346d142f0b17383343f7f165551af8717",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "3d21bc83-1a5c-5425-9a7a-dc4f0e679b11",
+      "is_demo": true,
+      "item_id": "4bc380ed-ca85-5363-912f-f59e337656b4",
+      "key": "en:exercise:articles-mcq-prefix-meaning",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "f7b"
+        },
+        "display_answer": "Nhiều thiếu niên dùng điện thoại quá mức, và bố mẹ thường xem nhẹ vấn đề.",
+        "explanation": {
+          "vi": "Over- là quá mức (overuse = dùng quá nhiều), under- là dưới mức (underestimate = đánh giá thấp, xem nhẹ). Dùng sai là misuse, hiểu nhầm là misunderstand - tiền tố mis-."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "v8r",
+            "lang": "vi",
+            "text": "Nhiều thiếu niên dùng sai điện thoại, và bố mẹ hiểu nhầm vấn đề."
+          },
+          {
+            "id": "l3x",
+            "lang": "vi",
+            "text": "Nhiều thiếu niên ít dùng điện thoại, và bố mẹ thường lo quá mức."
+          },
+          {
+            "id": "f7b",
+            "lang": "vi",
+            "text": "Nhiều thiếu niên dùng điện thoại quá mức, và bố mẹ thường xem nhẹ vấn đề."
+          },
+          {
+            "id": "h0q",
+            "lang": "vi",
+            "text": "Nhiều thiếu niên dùng điện thoại hợp lý, và bố mẹ đánh giá đúng vấn đề."
+          }
+        ],
+        "shuffle": true,
+        "stem": "\"Many teenagers overuse their phones, and their parents often underestimate the problem.\" Câu này có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "ed882df68aa038165fdeffd3277578ea0acfb83d01ba35720b1b3c4ce39a3b0d",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "f364e971-5ba3-5b30-943e-62bbe4094505",
+      "is_demo": true,
+      "item_id": "3e492211-bcbd-5713-bc01-c3198cb9d5c3",
+      "key": "en:exercise:articles-mcq-situation-equipment",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "t5j"
+        },
+        "display_answer": "Could you send me some information about the equipment we need for the live stream?",
+        "explanation": {
+          "vi": "Information và equipment đều không đếm được - không có -s, không đi với an. Some information là cách nói tự nhiên cho \"vài thông tin\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "t5j",
+            "lang": "en",
+            "text": "Could you send me some information about the equipment we need for the live stream?"
+          },
+          {
+            "id": "x6h",
+            "lang": "en",
+            "text": "Could you send me some information about the equipments we need for the live stream?"
+          },
+          {
+            "id": "a9u",
+            "lang": "en",
+            "text": "Could you send me some informations about the equipments we need for the live stream?"
+          },
+          {
+            "id": "n2k",
+            "lang": "en",
+            "text": "Could you send me an information about the equipment we need for the live stream?"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn email cho bộ phận IT để hỏi về thiết bị cho buổi livestream. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "c63cc9d91348749a35f6fa4f5a1b6749af3e0d55f968ce426708c5c5d6ea4ed4",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "6199dd20-a890-5d28-bce8-f76b2627b5ad",
+      "is_demo": true,
+      "item_id": "2a2635fc-2b58-5a7c-a5e9-1be8e71d45b6",
+      "key": "en:exercise:articles-mcq-technology-general",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r3a"
+        },
+        "display_answer": "Technology has changed almost every part of our lives.",
+        "explanation": {
+          "vi": "Đây là công nghệ nói chung, chưa xác định cụ thể, nên không dùng mạo từ. The technology hay a technology sẽ chỉ một công nghệ cụ thể; technologies là số nhiều nên không đi với has."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "o8d",
+            "lang": "en",
+            "text": "The technology has changed almost every part of our lives."
+          },
+          {
+            "id": "g5n",
+            "lang": "en",
+            "text": "A technology has changed almost every part of our lives."
+          },
+          {
+            "id": "r3a",
+            "lang": "en",
+            "text": "Technology has changed almost every part of our lives."
+          },
+          {
+            "id": "u2w",
+            "lang": "en",
+            "text": "Technologies has changed almost every part of our lives."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu mở đầu bài luận đúng nhất.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "091a8dedace71dc64172a99bac0891522d09813e224b3cc28b26ae27faa3920f",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "eedb92e8-0d6a-5011-8d49-a89629f4bdcd",
+      "is_demo": true,
+      "item_id": "455f6f3f-01af-57a3-841e-4660f3cc550e",
+      "key": "en:exercise:articles-order-search-history",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "c-change",
+              "c-your1",
+              "c-password",
+              "c-and",
+              "c-clear",
+              "c-your2",
+              "c-search",
+              "c-history"
+            ],
+            [
+              "c-change",
+              "c-your2",
+              "c-password",
+              "c-and",
+              "c-clear",
+              "c-your1",
+              "c-search",
+              "c-history"
+            ]
+          ]
+        },
+        "display_answer": "Change your password and clear your search history.",
+        "explanation": {
+          "vi": "Danh từ ghép đặt từ bổ nghĩa lên trước: \"lịch sử tìm kiếm\" là search history, ngược với thứ tự tiếng Việt."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "order_index": 3,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Anh: \"Hãy đổi mật khẩu và xoá lịch sử tìm kiếm của bạn.\"",
+        "tokens": [
+          {
+            "id": "c-history",
+            "text": "history"
+          },
+          {
+            "id": "c-and",
+            "text": "and"
+          },
+          {
+            "id": "c-change",
+            "text": "Change"
+          },
+          {
+            "id": "c-search",
+            "text": "search"
+          },
+          {
+            "id": "c-your1",
+            "text": "your"
+          },
+          {
+            "id": "c-clear",
+            "text": "clear"
+          },
+          {
+            "id": "c-password",
+            "text": "password"
+          },
+          {
+            "id": "c-your2",
+            "text": "your"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "d9957f2a4e1c3be26a1bbb193a0dd70d8aab10a02722757c8e1ce511c63ac581",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "54e0595c-173f-525b-8616-538bcb04dc50",
+      "is_demo": true,
+      "item_id": "3e492211-bcbd-5713-bc01-c3198cb9d5c3",
+      "key": "en:exercise:articles-translate-information-media",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "The media often give misleading information about artificial intelligence.",
+            "The media often gives misleading information about artificial intelligence.",
+            "The media often provide misleading information about artificial intelligence.",
+            "The media often provides misleading information about artificial intelligence.",
+            "The media often give misleading information about AI.",
+            "The media often gives misleading information about AI.",
+            "The media often spread misleading information about artificial intelligence.",
+            "The media often spreads misleading information about artificial intelligence."
+          ]
+        },
+        "display_answer": "The media often give misleading information about artificial intelligence.",
+        "explanation": {
+          "vi": "The media luôn có the (động từ chia số nhiều hoặc số ít đều được). Information không đếm được nên không có -s; artificial intelligence nói chung không có mạo từ."
+        },
+        "known_wrong": [
+          {
+            "answer": "The media often give misleading informations about artificial intelligence.",
+            "error_tag": "uncountable_plural",
+            "feedback_vi": "Information không đếm được - không thêm -s."
+          },
+          {
+            "answer": "Media often give misleading information about artificial intelligence.",
+            "error_tag": "article",
+            "feedback_vi": "Truyền thông nói chung luôn là the media."
+          },
+          {
+            "answer": "The media often give misleading information about the artificial intelligence.",
+            "error_tag": "article_general",
+            "feedback_vi": "AI nói chung là khái niệm trừu tượng - không có the."
+          },
+          {
+            "answer": "The media often give misunderstanding information about artificial intelligence.",
+            "error_tag": "word_choice",
+            "feedback_vi": "Thông tin \"gây hiểu lầm\" là misleading."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "order_index": 8,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Truyền thông thường đưa ra thông tin gây hiểu lầm về trí tuệ nhân tạo."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "7ee41e5a5b7879363f256a2afca6eb0c1deec82d10e36d8664e9a2e6920affa9",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "675bc3a2-df2d-5a1e-b35c-f4c9d5632cea",
+      "is_demo": true,
+      "item_id": "2a2635fc-2b58-5a7c-a5e9-1be8e71d45b6",
+      "key": "en:exercise:articles-translate-technology-changed",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Technology has changed the way we learn and work.",
+            "Technology has changed the way we study and work.",
+            "Technology has changed how we learn and work.",
+            "Technology has changed how we study and work.",
+            "Technology has changed the way that we learn and work.",
+            "Technology has changed the way we work and learn."
+          ]
+        },
+        "display_answer": "Technology has changed the way we learn and work.",
+        "explanation": {
+          "vi": "Công nghệ ở đây là khái niệm chung nên không có mạo từ: Technology has changed… \"Cách chúng ta…\" là the way we… hoặc how we…, không dùng \"the way how\"."
+        },
+        "known_wrong": [
+          {
+            "answer": "The technology has changed the way we learn and work.",
+            "error_tag": "article_general",
+            "feedback_vi": "Nói chung về công nghệ thì không dùng the."
+          },
+          {
+            "answer": "Technology has changed the way how we learn and work.",
+            "error_tag": "the_way_how",
+            "feedback_vi": "Dùng the way hoặc how, không dùng cả hai cùng lúc."
+          },
+          {
+            "answer": "Technology have changed the way we learn and work.",
+            "error_tag": "subject_verb_agreement",
+            "feedback_vi": "Technology là danh từ không đếm được, động từ chia số ít - has."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Công nghệ đã thay đổi cách chúng ta học và làm việc."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "48a54fb9c05da91ca5699efd2791a5df273fa641af34181d1a64a03a53533011",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "81fbc73e-c39e-5a3d-b8bc-3fadcb241462",
+      "is_demo": true,
+      "item_id": "52e9900b-bb9b-563f-8987-168357b2c95d",
+      "key": "en:exercise:articles-translate-underestimate-screen-time",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Nhiều phụ huynh đánh giá thấp thời gian con cái họ dùng màn hình.",
+            "Nhiều phụ huynh đánh giá thấp lượng thời gian con họ dùng màn hình.",
+            "Nhiều bố mẹ đánh giá thấp thời gian con cái họ dùng màn hình.",
+            "Nhiều cha mẹ đánh giá thấp thời gian con cái dùng màn hình.",
+            "Nhiều phụ huynh không biết con mình dùng màn hình nhiều đến mức nào.",
+            "Nhiều phụ huynh xem nhẹ thời gian con cái họ dùng màn hình.",
+            "Nhiều phụ huynh nghĩ con mình dùng màn hình ít hơn thực tế.",
+            "Nhiều bố mẹ nghĩ con mình dùng màn hình ít hơn thực tế.",
+            "Nhiều phụ huynh đánh giá thấp thời gian con cái họ dành cho màn hình.",
+            "Nhiều phụ huynh đánh giá thấp thời gian sử dụng màn hình của con cái họ."
+          ]
+        },
+        "display_answer": "Nhiều phụ huynh đánh giá thấp thời gian con cái họ dùng màn hình.",
+        "explanation": {
+          "vi": "Underestimate = đánh giá thấp hơn thực tế, tức là phụ huynh nghĩ con dùng màn hình ít hơn thật. Screen time là thời gian dùng màn hình (danh từ ghép)."
+        },
+        "known_wrong": [
+          {
+            "answer": "Nhiều phụ huynh đánh giá cao thời gian con cái họ dùng màn hình.",
+            "error_tag": "prefix",
+            "feedback_vi": "Under- là dưới mức - underestimate là đánh giá thấp, không phải đánh giá cao."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "Many parents underestimate how much screen time their children have."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
       "content_hash": "24250db59c42799fc8d1a422fc83e4472ad41d6445ac5ba0ea6e4088e9b5cccc",
       "difficulty": 2,
       "exercise_type": "fill_blank",
@@ -25790,6 +26544,755 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
+      "content_hash": "6b514e3a16892234fc4894221afe8238ae85f6c189d60e028078f59c95613fd8",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "1ba8cd37-5a4c-58bf-a014-1e9be10cee6d",
+      "is_demo": true,
+      "item_id": "3e492211-bcbd-5713-bc01-c3198cb9d5c3",
+      "key": "en:exercise:media-review-fill-articles-uncountable",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "advice"
+            ],
+            "b2": [
+              "overuse"
+            ]
+          }
+        },
+        "display_answer": "My advice is simple: technology isn't evil, but most of us overuse it. Turn off notifications and keep your phone out of the bedroom.",
+        "explanation": {
+          "vi": "My advice (danh từ không đếm được, đi với is). Dùng quá mức là over- + use; câu sau gợi ý cách dùng ít đi."
+        },
+        "known_wrong": [
+          {
+            "answer": "advices",
+            "error_tag": "uncountable_plural",
+            "feedback_vi": "Advice không đếm được - không thêm -s."
+          },
+          {
+            "answer": "advise",
+            "error_tag": "word_form",
+            "feedback_vi": "Advise là động từ. Sau my cần danh từ advice."
+          },
+          {
+            "answer": "underuse",
+            "error_tag": "prefix",
+            "feedback_vi": "Under- là dùng chưa đủ - ngược ý. Dùng quá mức là overuse."
+          },
+          {
+            "answer": "misuse",
+            "error_tag": "prefix",
+            "feedback_vi": "Misuse là dùng sai mục đích; người viết muốn nói dùng quá nhiều - overuse."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          },
+          {
+            "id": "b2",
+            "width_hint": 7
+          }
+        ],
+        "template": "My {{b1}} is simple: technology isn't evil, but most of us {{b2}} it. Turn off notifications and keep your phone out of the bedroom."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "2f85ca1d6112db362419bd57d11788dd0ab33634470af683b0a83c8dcef9ef94",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "36f454a6-2972-592d-a1af-1b6ea3383c62",
+      "is_demo": true,
+      "item_id": "687c36fc-ddf8-53f4-bd65-e8cf8852d076",
+      "key": "en:exercise:media-review-fill-participles",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "Freed"
+            ],
+            "b2": [
+              "Having"
+            ],
+            "b3": [
+              "deleted"
+            ]
+          }
+        },
+        "display_answer": "Freed from the algorithm, I started reading again. Having deleted every app, I suddenly had hours of free time.",
+        "explanation": {
+          "vi": "Freed from = được giải thoát khỏi (bị động, V3). Xoá ứng dụng xong rồi mới có thời gian rảnh - Having deleted. Chủ ngữ I khớp với cả hai mệnh đề phân từ."
+        },
+        "known_wrong": [
+          {
+            "answer": "Freeing",
+            "error_tag": "participle_active_passive",
+            "feedback_vi": "Người viết được giải thoát (bị động) - dùng V3 freed."
+          },
+          {
+            "answer": "Had",
+            "error_tag": "perfect_participle",
+            "feedback_vi": "Mệnh đề phân từ không chia thì - dùng Having + V3."
+          },
+          {
+            "answer": "delete",
+            "error_tag": "perfect_participle",
+            "feedback_vi": "Sau having phải là V3 - deleted."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          },
+          {
+            "id": "b2",
+            "width_hint": 6
+          },
+          {
+            "id": "b3",
+            "width_hint": 7
+          }
+        ],
+        "template": "{{b1}} (free) from the algorithm, I started reading again. {{b2}} {{b3}} (delete) every app, I suddenly had hours of free time."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "87b4f13d584b738a2df74e58efaf5086e3e50d0562e1aab3e4005698ecf0195e",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "2d9a79f7-68eb-59ff-b6af-4a6d97edeaec",
+      "is_demo": true,
+      "item_id": "b65f855c-0264-5e60-a1fa-d582ffec5ed6",
+      "key": "en:exercise:media-review-fill-which-who-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "who"
+            ],
+            "b2": [
+              "which"
+            ]
+          }
+        },
+        "display_answer": "The researchers, who are based in Singapore, tracked the participants' screen time, which took three months.",
+        "explanation": {
+          "vi": "Ô 1 là thông tin phụ về người và làm chủ ngữ - who. Ô 2 thay cho cả việc theo dõi thời gian dùng màn hình - which."
+        },
+        "known_wrong": [
+          {
+            "answer": "that",
+            "error_tag": "that_after_comma",
+            "feedback_vi": "Sau dấu phẩy không dùng that - dùng who (người) hoặc which (vật, sự việc)."
+          },
+          {
+            "answer": "what",
+            "error_tag": "sentential_which",
+            "feedback_vi": "Thay cho cả sự việc phía trước là which, không phải what."
+          },
+          {
+            "answer": "whom",
+            "error_tag": "relative_whom",
+            "feedback_vi": "Ô đầu là chủ ngữ của are based nên dùng who, không dùng whom."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          },
+          {
+            "id": "b2",
+            "width_hint": 5
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa: Các nhà nghiên cứu, hiện làm việc ở Singapore, đã theo dõi thời gian dùng màn hình của người tham gia, việc này mất ba tháng.",
+          "Gợi ý: ô 1 chỉ người; ô 2 thay cho cả sự việc phía trước."
+        ],
+        "template": "The researchers, {{b1}} are based in Singapore, tracked the participants' screen time, {{b2}} took three months."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "054999e909457b39adfb1ed6c145907522842406c1d36ed5b76a5c7d2757b92d",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "df1a6251-9d41-50d7-b161-b9196f35ad7d",
+      "is_demo": true,
+      "item_id": "fb7aa6f5-e026-5659-9e59-1fae59055ba5",
+      "key": "en:exercise:media-review-listen-attention-span",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k5r"
+        },
+        "display_answer": "Từ khi \"cai\" thiết bị số, khả năng tập trung của tôi tốt hơn và sức khoẻ tinh thần đã cải thiện.",
+        "explanation": {
+          "vi": "Attention span has got longer là khả năng tập trung dài hơn (tốt hơn); mental health has improved là sức khoẻ tinh thần đã cải thiện. Since my digital detox là \"từ khi cai thiết bị số\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "Since my digital detox, my attention span has got longer and my mental health has improved.",
+        "options": [
+          {
+            "id": "d9y",
+            "lang": "vi",
+            "text": "Tôi muốn \"cai\" thiết bị số để có thêm thời gian chăm sóc sức khoẻ."
+          },
+          {
+            "id": "x3h",
+            "lang": "vi",
+            "text": "Từ khi dùng ứng dụng sức khoẻ, tôi ngủ được lâu hơn."
+          },
+          {
+            "id": "k5r",
+            "lang": "vi",
+            "text": "Từ khi \"cai\" thiết bị số, khả năng tập trung của tôi tốt hơn và sức khoẻ tinh thần đã cải thiện."
+          },
+          {
+            "id": "p1j",
+            "lang": "vi",
+            "text": "Từ khi \"cai\" thiết bị số, tôi mất tập trung hơn và hay lo lắng."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "d2ce9f704a2d917f7c3c930033923ec454b6abe08d5342877dab89074bae6525",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "a10233fc-d458-567b-b7e7-1ce22ef7bc9b",
+      "is_demo": true,
+      "item_id": "2192a29c-a9fe-59fa-82a4-cf2d51e8f63c",
+      "key": "en:exercise:media-review-mcq-fact-or-opinion",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "n7f"
+        },
+        "display_answer": "Honestly, it was the best decision I've made this year.",
+        "explanation": {
+          "vi": "Honestly và the best decision thể hiện cảm nhận cá nhân. Các câu còn lại mô tả nghiên cứu bằng số liệu và động từ đưa tin (conducted, found, was published)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "g2u",
+            "lang": "en",
+            "text": "The researchers conducted an experiment with 1,200 participants."
+          },
+          {
+            "id": "w0k",
+            "lang": "en",
+            "text": "The study was published this week in a medical journal."
+          },
+          {
+            "id": "b6s",
+            "lang": "en",
+            "text": "They found a link between late-night phone use and poor sleep."
+          },
+          {
+            "id": "n7f",
+            "lang": "en",
+            "text": "Honestly, it was the best decision I've made this year."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào là Ý KIẾN của người viết blog, không phải sự thật từ nghiên cứu?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "c7b538448d0601460b1fb0c82a39f0e4e60be90062bd20e18d802dda601b0060",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "d2bea6e9-1375-5af7-8f0b-3c285439f2a5",
+      "is_demo": true,
+      "item_id": "2a2635fc-2b58-5a7c-a5e9-1be8e71d45b6",
+      "key": "en:exercise:media-review-mcq-situation-comment",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r8t"
+        },
+        "display_answer": "Great post! Research suggests that screen time is linked to poor sleep, although it doesn't prove that phones are the only cause.",
+        "explanation": {
+          "vi": "Research không đếm được (không a, không -s), screen time nói chung không có the, và nghiên cứu chỉ suggest - không prove. Phương án đúng vừa đúng ngữ pháp vừa phản ánh chính xác giới hạn của nghiên cứu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "i6c",
+            "lang": "en",
+            "text": "Great post! Researches suggest that the screen time is linked to the poor sleep."
+          },
+          {
+            "id": "r8t",
+            "lang": "en",
+            "text": "Great post! Research suggests that screen time is linked to poor sleep, although it doesn't prove that phones are the only cause."
+          },
+          {
+            "id": "l2g",
+            "lang": "en",
+            "text": "Great post! A research suggests that screen time is linked to poor sleep, which prove phones are bad."
+          },
+          {
+            "id": "e5n",
+            "lang": "en",
+            "text": "Great post! The researches prove that the screen time causes poor sleep."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn viết bình luận dưới bài blog, đồng ý một phần với tác giả. Câu nào đúng ngữ pháp và đúng tinh thần bản tin khoa học?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "d25fd05d85ff1c2bc32cca5886c4792889ee1c350afed28ef443c82b9cfa98c4",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "7f4bd8b5-ac14-5cb8-9fd2-94ad3109ee00",
+      "is_demo": true,
+      "item_id": "56bbd028-e9f0-59d4-b7b6-794e65d5d3b3",
+      "key": "en:exercise:media-review-mcq-study-finding",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "v2c"
+        },
+        "display_answer": "Thiếu niên dùng điện thoại hơn 4 tiếng/ngày ngủ trung bình ít hơn 45 phút.",
+        "explanation": {
+          "vi": "Bản tin nói người dùng hơn bốn tiếng ngủ ít hơn 45 phút. Bài cũng nhấn mạnh nghiên cứu không chứng minh điện thoại là nguyên nhân (does not prove), và người tham gia chỉ được theo dõi, không ngừng dùng điện thoại."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "h8w",
+            "lang": "vi",
+            "text": "Điện thoại chắc chắn là nguyên nhân khiến thiếu niên ngủ kém."
+          },
+          {
+            "id": "v2c",
+            "lang": "vi",
+            "text": "Thiếu niên dùng điện thoại hơn 4 tiếng/ngày ngủ trung bình ít hơn 45 phút."
+          },
+          {
+            "id": "q0e",
+            "lang": "vi",
+            "text": "1.200 thiếu niên đã ngừng dùng điện thoại trong ba tháng."
+          },
+          {
+            "id": "m4a",
+            "lang": "vi",
+            "text": "Thiếu niên ngủ ít hơn 4 tiếng mỗi đêm vì dùng điện thoại."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Theo bản tin \"Less scrolling, better sleep?\", nghiên cứu phát hiện điều gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "1627591b05e9f4386434b9a5d56e7f57af89937af36de529fd1787a5f1f542f7",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "d42ff60a-dc4e-5b11-9e97-616e018dee7f",
+      "is_demo": true,
+      "item_id": "d5f9ec43-93a3-573a-b155-76ade1dc87c7",
+      "key": "en:exercise:media-review-order-mental-health",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "h-spending",
+              "h-less",
+              "h-time",
+              "h-online",
+              "h-has",
+              "h-improved",
+              "h-my",
+              "h-mental",
+              "h-health"
+            ]
+          ]
+        },
+        "display_answer": "Spending less time online has improved my mental health.",
+        "explanation": {
+          "vi": "Chủ ngữ là cụm V-ing Spending less time online (động từ chia số ít has). Sức khoẻ tinh thần của tôi là my mental health - đã có my nên không cần the."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Anh: \"Dành ít thời gian trên mạng hơn đã giúp sức khoẻ tinh thần của tôi tốt lên.\"",
+        "tokens": [
+          {
+            "id": "h-health",
+            "text": "health"
+          },
+          {
+            "id": "h-online",
+            "text": "online"
+          },
+          {
+            "id": "h-has",
+            "text": "has"
+          },
+          {
+            "id": "h-spending",
+            "text": "Spending"
+          },
+          {
+            "id": "h-my",
+            "text": "my"
+          },
+          {
+            "id": "h-less",
+            "text": "less"
+          },
+          {
+            "id": "h-improved",
+            "text": "improved"
+          },
+          {
+            "id": "h-time",
+            "text": "time"
+          },
+          {
+            "id": "h-mental",
+            "text": "mental"
+          },
+          {
+            "id": "h-the",
+            "text": "the"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "a690cf4db80d749b291e14236f996d372515b0106b8edde9f3ff2609810fd34f",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "d9c57950-87ee-5a4b-838c-585b8497225f",
+      "is_demo": true,
+      "item_id": "a36f6536-3360-5e36-a8c8-c4b0fd143fe5",
+      "key": "en:exercise:media-review-translate-blog-advice",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Bạn không cần \"cai\" thiết bị số hoàn toàn - chỉ cần để điện thoại ngoài phòng ngủ cũng có ích.",
+            "Bạn không cần cai thiết bị số hoàn toàn - chỉ cần để điện thoại ngoài phòng ngủ cũng có ích.",
+            "Bạn không cần cai hẳn thiết bị số - chỉ cần để điện thoại ngoài phòng ngủ cũng có thể giúp ích.",
+            "Bạn không cần cai thiết bị số hoàn toàn - ngay cả việc để điện thoại ngoài phòng ngủ cũng có thể giúp ích.",
+            "Bạn không cần ngừng dùng thiết bị số hoàn toàn - chỉ cần để điện thoại ngoài phòng ngủ cũng có ích.",
+            "Bạn không cần bỏ hẳn điện thoại - chỉ cần không để điện thoại trong phòng ngủ cũng có ích.",
+            "Bạn không cần cai thiết bị số hoàn toàn - chỉ cần không mang điện thoại vào phòng ngủ cũng có ích.",
+            "Bạn không cần cai thiết bị số hoàn toàn - chỉ cần không để điện thoại trong phòng ngủ cũng giúp ích được."
+          ]
+        },
+        "display_answer": "Bạn không cần \"cai\" thiết bị số hoàn toàn - chỉ cần để điện thoại ngoài phòng ngủ cũng có ích.",
+        "explanation": {
+          "vi": "Digital detox là \"cai\" thiết bị số. Even + V-ing … can help là \"ngay cả / chỉ cần… cũng có ích\"; keep your phone out of the bedroom là để điện thoại ngoài phòng ngủ."
+        },
+        "known_wrong": [
+          {
+            "answer": "Bạn cần cai thiết bị số hoàn toàn và để điện thoại ngoài phòng ngủ.",
+            "error_tag": "meaning",
+            "feedback_vi": "Câu gốc nói KHÔNG cần cai hoàn toàn (don't need); even… can help là \"chỉ… thôi cũng có ích\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "You don't need a complete digital detox - even keeping your phone out of the bedroom can help."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a7ab2e21c124746626a34d26991f121b85d48663c9921dece329a75cacd4efff",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "e8f71e0f-3c78-53f6-95ad-3fd4f032f469",
+      "is_demo": true,
+      "item_id": "8baa386c-9675-5008-89d1-bcbfd823fe36",
+      "key": "en:exercise:media-review-translate-deleted-apps",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I deleted every social media app from my phone, which really surprised my friends.",
+            "I deleted all the social media apps from my phone, which really surprised my friends.",
+            "I deleted all social media apps from my phone, which really surprised my friends.",
+            "I deleted every social media app from my phone, which surprised my friends a lot.",
+            "I deleted every social media app from my phone, which surprised my friends very much.",
+            "I have deleted every social media app from my phone, which really surprised my friends.",
+            "I've deleted all the social media apps from my phone, which really surprised my friends.",
+            "I deleted every social media app from my phone, which made my friends very surprised.",
+            "I deleted all the social media apps on my phone, which really surprised my friends.",
+            "I deleted every social media app on my phone, which really surprised my friends."
+          ]
+        },
+        "display_answer": "I deleted every social media app from my phone, which really surprised my friends.",
+        "explanation": {
+          "vi": "\"Điều đó\" thay cho cả việc xoá ứng dụng nên dùng \", which…\". Every + danh từ số ít (every app), còn all + số nhiều (all the apps)."
+        },
+        "known_wrong": [
+          {
+            "answer": "I deleted every social media app from my phone, what really surprised my friends.",
+            "error_tag": "sentential_which",
+            "feedback_vi": "\"Điều đó\" thay cho cả câu là which, không phải what."
+          },
+          {
+            "answer": "I deleted every social media app from my phone, that really surprised my friends.",
+            "error_tag": "that_after_comma",
+            "feedback_vi": "Sau dấu phẩy không dùng that."
+          },
+          {
+            "answer": "I deleted every social media apps from my phone, which really surprised my friends.",
+            "error_tag": "every_singular",
+            "feedback_vi": "Every đi với danh từ số ít - every social media app."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi đã xoá mọi ứng dụng mạng xã hội khỏi điện thoại, điều đó khiến bạn bè tôi rất ngạc nhiên."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a0517761c44d1821fc6eb468594b959979ca31365cd643cd686aafe5a27758eb",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "b9b8fe4c-5a26-56cf-9754-40ac38fee57e",
+      "is_demo": true,
+      "item_id": "7c57bcfe-3454-59aa-98d2-4b9fcf0923c3",
+      "key": "en:exercise:media-review-translate-link-sleep",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "The study suggests that there is a link between screen time and poor sleep.",
+            "The study suggests there is a link between screen time and poor sleep.",
+            "The study shows that there is a link between screen time and poor sleep.",
+            "The study shows there is a link between screen time and poor sleep.",
+            "The study found that there is a link between screen time and poor sleep.",
+            "The study found a link between screen time and poor sleep.",
+            "The study suggests a link between screen time and poor sleep.",
+            "The study shows a link between screen time and poor sleep.",
+            "The study suggests that screen time is linked to poor sleep.",
+            "The study shows that screen time is linked to poor sleep.",
+            "The research suggests that there is a link between screen time and poor sleep.",
+            "The research shows that there is a link between screen time and poor sleep."
+          ]
+        },
+        "display_answer": "The study suggests that there is a link between screen time and poor sleep.",
+        "explanation": {
+          "vi": "\"Cho thấy\" là suggests / shows; \"mối liên hệ giữa A và B\" là a link between A and B. Screen time và poor sleep nói chung nên không có the."
+        },
+        "known_wrong": [
+          {
+            "answer": "The study suggests that there is a link of screen time and poor sleep.",
+            "error_tag": "preposition",
+            "feedback_vi": "Mối liên hệ giữa A và B là a link between A and B."
+          },
+          {
+            "answer": "The study suggests that there is a link between the screen time and poor sleep.",
+            "error_tag": "article_general",
+            "feedback_vi": "Screen time nói chung không có the."
+          },
+          {
+            "answer": "The study proves that screen time causes poor sleep.",
+            "error_tag": "reporting_verb",
+            "feedback_vi": "Câu gốc chỉ nói \"có mối liên hệ\", không nói chứng minh hay gây ra."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Nghiên cứu cho thấy có mối liên hệ giữa thời gian dùng màn hình và giấc ngủ kém."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
       "content_hash": "6f5a7bd71effff337793e729e9cacf3cedbf2e07ae5b606afe87aa3eb97c0961",
       "difficulty": 2,
       "exercise_type": "fill_blank",
@@ -27095,6 +28598,846 @@ select content_private.import_bundle($bundle${
         "direction": "vi_to_target",
         "source_lang": "vi",
         "source_text": "Kia có phải bố bạn không?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "c5b965f9d48a60b73bdd860753818fc493bd67feb72ec6f376a6cca37abecee4",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "375fc792-234a-5b50-aff2-857db0e6612c",
+      "is_demo": true,
+      "item_id": "8baa386c-9675-5008-89d1-bcbfd823fe36",
+      "key": "en:exercise:ndrc-fill-sentential-which-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "which"
+            ]
+          }
+        },
+        "display_answer": "The app crashed in the middle of my presentation, which was really embarrassing.",
+        "explanation": {
+          "vi": "Điều gây ngượng là cả việc ứng dụng bị treo, nên dùng \", which\" thay cho cả mệnh đề trước. Động từ was chia số ít vì which chỉ một sự việc."
+        },
+        "known_wrong": [
+          {
+            "answer": "what",
+            "error_tag": "sentential_which",
+            "feedback_vi": "What không thay cho cả câu phía trước. \"Điều đó\" sau dấu phẩy là which."
+          },
+          {
+            "answer": "that",
+            "error_tag": "that_after_comma",
+            "feedback_vi": "Sau dấu phẩy không dùng that. Dùng which để bình luận cả sự việc."
+          },
+          {
+            "answer": "it",
+            "error_tag": "comma_splice",
+            "feedback_vi": "Dùng it sẽ thành hai câu nối bằng dấu phẩy (lỗi nối câu). Which nối hai ý thành một câu."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "order_index": 2,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa: Ứng dụng bị treo giữa buổi thuyết trình của tôi, điều đó thật sự rất ngượng.",
+          "Gợi ý: đại từ quan hệ thay cho cả sự việc phía trước, bắt đầu bằng w…"
+        ],
+        "template": "The app crashed in the middle of my presentation, {{b1}} was really embarrassing."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "0edf5fb725e02e49ba092c94dedb67cefebb1d376530ea17522aa993c056f3c5",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "686b1012-9629-5325-9289-ee8dc777ff2c",
+      "is_demo": true,
+      "item_id": "bbad5e84-7e76-559f-ba36-336878cec82e",
+      "key": "en:exercise:ndrc-fill-to-whom",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "whom"
+            ]
+          }
+        },
+        "display_answer": "Dr Hà, to whom we sent our questions, is an expert in cybersecurity.",
+        "explanation": {
+          "vi": "Chỗ trống đứng ngay sau giới từ to và chỉ người, nên chỉ có whom là đúng. Câu tương đương văn nói - Dr Hà, who we sent our questions to, …"
+        },
+        "known_wrong": [
+          {
+            "answer": "who",
+            "error_tag": "relative_whom",
+            "feedback_vi": "Ngay sau giới từ (to) phải dùng whom, không dùng who."
+          },
+          {
+            "answer": "that",
+            "error_tag": "that_after_preposition",
+            "feedback_vi": "That không đứng sau giới từ và không đứng sau dấu phẩy."
+          },
+          {
+            "answer": "which",
+            "error_tag": "relative_who_which",
+            "feedback_vi": "Which dùng cho vật. Tiến sĩ Hà là người nên dùng whom."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          }
+        ],
+        "template": "Dr Hà, to {{b1}} we sent our questions, is an expert in cybersecurity."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a99e5e18af3897329804f0c5e400a76cfb4607b379f3173b6b2b45e75b93b03a",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "c3031642-4393-5f16-8aee-f587e4a8baf1",
+      "is_demo": true,
+      "item_id": "d4097af8-f469-5d41-bf2e-ce126115463d",
+      "key": "en:exercise:ndrc-fill-whose-article",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "whose"
+            ],
+            "b2": [
+              "viral"
+            ]
+          }
+        },
+        "display_answer": "The journalist, whose article went viral last week, has been invited to speak on TV.",
+        "explanation": {
+          "vi": "Whose article = his/her article, nên chỗ trống đầu là whose. \"Gây bão mạng\" là go viral, ở quá khứ là went viral."
+        },
+        "known_wrong": [
+          {
+            "answer": "who's",
+            "error_tag": "whose_whos",
+            "feedback_vi": "Who's là who is. Chỉ sở hữu (bài báo của nhà báo đó) dùng whose."
+          },
+          {
+            "answer": "who",
+            "error_tag": "relative_whose",
+            "feedback_vi": "Who không chỉ sở hữu. \"Bài báo của người đó\" cần whose + danh từ."
+          },
+          {
+            "answer": "that",
+            "error_tag": "that_after_comma",
+            "feedback_vi": "Sau dấu phẩy không dùng that, và that cũng không chỉ sở hữu."
+          },
+          {
+            "answer": "virus",
+            "error_tag": "collocation",
+            "feedback_vi": "Lan truyền chóng mặt là go viral (tính từ), không phải virus."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          },
+          {
+            "id": "b2",
+            "width_hint": 6
+          }
+        ],
+        "template": "The journalist, {{b1}} article went {{b2}} last week, has been invited to speak on TV."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "8b3b6b1f7edc411811f44a388eb7c3e4db373d88e03a1d9e946147e1dcb4e316",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "2b952b73-6365-5fd2-addb-fd4be3447099",
+      "is_demo": true,
+      "item_id": "d4097af8-f469-5d41-bf2e-ce126115463d",
+      "key": "en:exercise:ndrc-listen-whose-channel",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "h3n"
+        },
+        "display_answer": "Chị họ tôi, người có kênh với nửa triệu người đăng ký, đã nghỉ việc văn phòng tháng trước.",
+        "explanation": {
+          "vi": "Whose channel là \"kênh của chị ấy\" - whose chỉ sở hữu. Phần giữa hai dấu phẩy chỉ là thông tin phụ; ý chính là chị họ đã nghỉ việc văn phòng (quit her office job)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "My cousin, whose channel has half a million subscribers, quit her office job last month.",
+        "options": [
+          {
+            "id": "b1s",
+            "lang": "vi",
+            "text": "Chị họ tôi, người đăng ký kênh của tôi, đã nghỉ việc văn phòng tháng trước."
+          },
+          {
+            "id": "w5z",
+            "lang": "vi",
+            "text": "Kênh của chị họ tôi bị đóng tháng trước vì có nửa triệu người đăng ký."
+          },
+          {
+            "id": "h3n",
+            "lang": "vi",
+            "text": "Chị họ tôi, người có kênh với nửa triệu người đăng ký, đã nghỉ việc văn phòng tháng trước."
+          },
+          {
+            "id": "t9e",
+            "lang": "vi",
+            "text": "Chị họ tôi đăng ký nửa triệu kênh và đã nghỉ việc văn phòng tháng trước."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a4b18a49674dcd63f02667f6ac7f3f1c9dea359c65202cbdd9e09e2371f39bf4",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "7c247eee-34d6-5429-bc1e-9bff7f63412b",
+      "is_demo": true,
+      "item_id": "b65f855c-0264-5e60-a1fa-d582ffec5ed6",
+      "key": "en:exercise:ndrc-mcq-comma-which",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "x4f"
+        },
+        "display_answer": "Facebook, which was founded in 2004, still has billions of users.",
+        "explanation": {
+          "vi": "Facebook là tên riêng nên mệnh đề chỉ thêm thông tin phụ - cần hai dấu phẩy và which. That không đứng sau dấu phẩy; thêm it là lặp chủ ngữ vì which đã thay cho Facebook."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "r7k",
+            "lang": "en",
+            "text": "Facebook, which it was founded in 2004, still has billions of users."
+          },
+          {
+            "id": "x4f",
+            "lang": "en",
+            "text": "Facebook, which was founded in 2004, still has billions of users."
+          },
+          {
+            "id": "m8q",
+            "lang": "en",
+            "text": "Facebook, that was founded in 2004, still has billions of users."
+          },
+          {
+            "id": "c2v",
+            "lang": "en",
+            "text": "Facebook which was founded in 2004 still has billions of users."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng ngữ pháp và đúng dấu câu.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "72cb6220cd9891bcba1798208a46d7770d93c54bf91d023021f9a0c60c8d2f34",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "9258e9bc-c660-514d-9abc-57e517ee7651",
+      "is_demo": true,
+      "item_id": "8baa386c-9675-5008-89d1-bcbfd823fe36",
+      "key": "en:exercise:ndrc-mcq-sentential-meaning",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "d6u"
+        },
+        "display_answer": "Việc cô ấy đăng ảnh kết quả thi lên mạng.",
+        "explanation": {
+          "vi": "Ở đây which thay cho cả sự việc \"đăng ảnh kết quả thi lên mạng\", không chỉ cho danh từ results. Bố mẹ giận vì con công khai chuyện riêng, không phải vì điểm số."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "k0p",
+            "lang": "vi",
+            "text": "Bức ảnh bị mờ."
+          },
+          {
+            "id": "e4j",
+            "lang": "vi",
+            "text": "Bố mẹ cô ấy không được thi."
+          },
+          {
+            "id": "y2a",
+            "lang": "vi",
+            "text": "Kết quả thi của cô ấy."
+          },
+          {
+            "id": "d6u",
+            "lang": "vi",
+            "text": "Việc cô ấy đăng ảnh kết quả thi lên mạng."
+          }
+        ],
+        "shuffle": true,
+        "stem": "\"She posted a photo of her exam results, which made her parents angry.\" Điều gì khiến bố mẹ cô ấy tức giận?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "df19c621ba749755e7d038f564bd518d07fd1b1d0cb55e27b31bcc7c2d1fb5f1",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "c961b3b7-9ad6-5d25-9999-b128941cef58",
+      "is_demo": true,
+      "item_id": "aad61ad5-566b-5d07-99e1-dc4233ffdd3a",
+      "key": "en:exercise:ndrc-mcq-situation-report",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "s8b"
+        },
+        "display_answer": "The study, in which 2,000 teenagers took part, lasted three years.",
+        "explanation": {
+          "vi": "Take part in cần giới từ in, và văn viết trang trọng đưa in lên trước which. \"In that\" sai vì sau giới từ không dùng that; thiếu in thì sai cấu trúc; còn đặt in ở cả hai chỗ là lặp giới từ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "o1c",
+            "lang": "en",
+            "text": "The study, in which 2,000 teenagers took part in, lasted three years."
+          },
+          {
+            "id": "l5m",
+            "lang": "en",
+            "text": "The study, which 2,000 teenagers took part, lasted three years."
+          },
+          {
+            "id": "g3w",
+            "lang": "en",
+            "text": "The study, in that 2,000 teenagers took part, lasted three years."
+          },
+          {
+            "id": "s8b",
+            "lang": "en",
+            "text": "The study, in which 2,000 teenagers took part, lasted three years."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn viết báo cáo trang trọng về một nghiên cứu, muốn nói \"Nghiên cứu này, có 2.000 thiếu niên tham gia, kéo dài ba năm.\" Câu nào đúng nhất?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "66c21b2049c18851a88b41ed7f2e9d4dc390bc858ca3a10cbd5914ab229b2caf",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "f84745a9-e499-505c-acd2-ab54bdda0fa9",
+      "is_demo": true,
+      "item_id": "b65f855c-0264-5e60-a1fa-d582ffec5ed6",
+      "key": "en:exercise:ndrc-order-laptop",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "l-my",
+              "l-laptop",
+              "l-which",
+              "l-i",
+              "l-bought",
+              "l-last",
+              "l-year",
+              "l-keeps",
+              "l-crashing"
+            ]
+          ]
+        },
+        "display_answer": "My laptop, which I bought last year, keeps crashing.",
+        "explanation": {
+          "vi": "Thông tin phụ \"which I bought last year\" chen giữa chủ ngữ (My laptop) và động từ chính (keeps crashing), được bao bởi hai dấu phẩy. Keep + V-ing nghĩa là \"cứ… mãi\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Anh: \"Chiếc laptop của tôi, cái mà tôi mua năm ngoái, cứ bị treo suốt.\"",
+        "tokens": [
+          {
+            "id": "l-keeps",
+            "text": "keeps"
+          },
+          {
+            "id": "l-year",
+            "text": "year,"
+          },
+          {
+            "id": "l-my",
+            "text": "My"
+          },
+          {
+            "id": "l-bought",
+            "text": "bought"
+          },
+          {
+            "id": "l-crashing",
+            "text": "crashing"
+          },
+          {
+            "id": "l-which",
+            "text": "which"
+          },
+          {
+            "id": "l-laptop",
+            "text": "laptop,"
+          },
+          {
+            "id": "l-last",
+            "text": "last"
+          },
+          {
+            "id": "l-i",
+            "text": "I"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "3cd29c2c11bad499dd0ac778b8c0f8b47ee00bd045c5662de4578d178bd78608",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "eb24acee-9afb-5d3a-b9a9-c6eea019d458",
+      "is_demo": true,
+      "item_id": "aad61ad5-566b-5d07-99e1-dc4233ffdd3a",
+      "key": "en:exercise:ndrc-order-on-which",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "p-this",
+              "p-is",
+              "p-the1",
+              "p-platform",
+              "p-on",
+              "p-which",
+              "p-the2",
+              "p-video",
+              "p-was",
+              "p-first",
+              "p-shared"
+            ],
+            [
+              "p-this",
+              "p-is",
+              "p-the2",
+              "p-platform",
+              "p-on",
+              "p-which",
+              "p-the1",
+              "p-video",
+              "p-was",
+              "p-first",
+              "p-shared"
+            ]
+          ]
+        },
+        "display_answer": "This is the platform on which the video was first shared.",
+        "explanation": {
+          "vi": "Giới từ on đứng trước which - on which (trên đó). Sau giới từ không dùng that, nên token that là thừa."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "order_index": 3,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Anh: \"Đây là nền tảng mà video đầu tiên được chia sẻ trên đó.\"",
+        "tokens": [
+          {
+            "id": "p-shared",
+            "text": "shared"
+          },
+          {
+            "id": "p-which",
+            "text": "which"
+          },
+          {
+            "id": "p-this",
+            "text": "This"
+          },
+          {
+            "id": "p-video",
+            "text": "video"
+          },
+          {
+            "id": "p-platform",
+            "text": "platform"
+          },
+          {
+            "id": "p-is",
+            "text": "is"
+          },
+          {
+            "id": "p-on",
+            "text": "on"
+          },
+          {
+            "id": "p-the1",
+            "text": "the"
+          },
+          {
+            "id": "p-was",
+            "text": "was"
+          },
+          {
+            "id": "p-first",
+            "text": "first"
+          },
+          {
+            "id": "p-the2",
+            "text": "the"
+          },
+          {
+            "id": "p-that",
+            "text": "that"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "eb4cfa145ba6095060e4c5cc99efb22120f0b51fffbbec914c398d756e3c7516",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "485001b2-717b-5183-8b0a-94151114ff23",
+      "is_demo": true,
+      "item_id": "89214487-dbdf-5363-9e1c-4eb9c4f83041",
+      "key": "en:exercise:ndrc-translate-linh-followers",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Linh, who has more than a million followers, is a content creator.",
+            "Linh, who has more than one million followers, is a content creator.",
+            "Linh, who has over a million followers, is a content creator.",
+            "Linh, who has over one million followers, is a content creator.",
+            "Linh, who has more than 1 million followers, is a content creator.",
+            "Linh, who has over 1 million followers, is a content creator."
+          ]
+        },
+        "display_answer": "Linh, who has more than a million followers, is a content creator.",
+        "explanation": {
+          "vi": "Linh là tên riêng nên mệnh đề chỉ thêm thông tin phụ - dùng who và đặt giữa hai dấu phẩy. Who thay cho Linh nên động từ chia số ít has; \"một người sáng tạo nội dung\" là a content creator."
+        },
+        "known_wrong": [
+          {
+            "answer": "Linh, that has more than a million followers, is a content creator.",
+            "error_tag": "that_after_comma",
+            "feedback_vi": "Sau dấu phẩy (thông tin phụ về tên riêng) không dùng that - dùng who."
+          },
+          {
+            "answer": "Linh, who has more than a million follows, is a content creator.",
+            "error_tag": "word_form",
+            "feedback_vi": "Người theo dõi là followers; follow là động từ."
+          },
+          {
+            "answer": "Linh, who has more than a million followers, is content creator.",
+            "error_tag": "article",
+            "feedback_vi": "Content creator là danh từ đếm được số ít, cần a."
+          },
+          {
+            "answer": "Linh, who have more than a million followers, is a content creator.",
+            "error_tag": "subject_verb_agreement",
+            "feedback_vi": "Who thay cho Linh (số ít), nên động từ là has."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Linh, người có hơn một triệu người theo dõi, là một người sáng tạo nội dung."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "14416ad2d2e8f5077ed1e4de5878f1467fd1db9c3ff2d8ae051f6de49e59707c",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "cdef63f4-13ea-52d6-8e40-3ea5c2f8fe62",
+      "is_demo": true,
+      "item_id": "6308974b-2e6a-5bf1-b310-a1f511f82af4",
+      "key": "en:exercise:ndrc-translate-netflix-subscribe",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Netflix, dịch vụ mà tôi đăng ký, lại tăng giá rồi.",
+            "Netflix, dịch vụ mà tôi đăng ký, lại vừa tăng giá.",
+            "Netflix, dịch vụ tôi đăng ký, lại tăng giá rồi.",
+            "Netflix, dịch vụ tôi đăng ký, lại vừa tăng giá.",
+            "Netflix, dịch vụ mà tôi đang đăng ký, lại tăng giá rồi.",
+            "Netflix, dịch vụ tôi đang dùng, lại tăng giá rồi.",
+            "Netflix mà tôi đăng ký lại tăng giá rồi.",
+            "Netflix mà tôi đăng ký lại vừa tăng giá.",
+            "Netflix, cái tôi đăng ký, lại tăng giá rồi.",
+            "Netflix, dịch vụ mà tôi đăng ký, đã lại tăng giá."
+          ]
+        },
+        "display_answer": "Netflix, dịch vụ mà tôi đăng ký, lại tăng giá rồi.",
+        "explanation": {
+          "vi": "Which I subscribe to là thông tin phụ - \"(dịch vụ) mà tôi đăng ký\". Has raised its prices again là \"lại (vừa) tăng giá\"; again cho thấy đây không phải lần đầu."
+        },
+        "known_wrong": [
+          {
+            "answer": "Netflix, dịch vụ mà tôi đăng ký, đã giảm giá.",
+            "error_tag": "meaning",
+            "feedback_vi": "Raise its prices là tăng giá, không phải giảm giá."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "Netflix, which I subscribe to, has raised its prices again."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "338251e551985b28a31f6b4386c5e737cd350dd1f13d60cb79f23182cec0000c",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "8e2e293d-4d30-553e-8003-51d5ec6a9db2",
+      "is_demo": true,
+      "item_id": "69ef789d-8c65-519c-bc0a-dfa7cdd7beb1",
+      "key": "en:exercise:ndrc-translate-went-viral-surprised",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Her video went viral overnight, which surprised everyone.",
+            "Her video went viral overnight, which surprised everybody.",
+            "Her video went viral overnight, which took everyone by surprise.",
+            "Her video went viral in just one night, which surprised everyone.",
+            "Her video went viral in one night, which surprised everyone.",
+            "Her video went viral overnight, which was a surprise to everyone."
+          ]
+        },
+        "display_answer": "Her video went viral overnight, which surprised everyone.",
+        "explanation": {
+          "vi": "Lan truyền chóng mặt là go viral (went viral), chỉ sau một đêm là overnight. \"Điều đó\" thay cho cả việc video gây bão nên dùng \", which surprised everyone\"."
+        },
+        "known_wrong": [
+          {
+            "answer": "Her video went viral overnight, what surprised everyone.",
+            "error_tag": "sentential_which",
+            "feedback_vi": "\"Điều đó\" thay cho cả câu là which, không phải what."
+          },
+          {
+            "answer": "Her video went viral overnight, that surprised everyone.",
+            "error_tag": "that_after_comma",
+            "feedback_vi": "Sau dấu phẩy không dùng that. Dùng which để bình luận cả sự việc."
+          },
+          {
+            "answer": "Her video was viral overnight, which surprised everyone.",
+            "error_tag": "collocation",
+            "feedback_vi": "Gây bão mạng là go viral - quá khứ went viral."
+          },
+          {
+            "answer": "Her video went viral overnight, which made everyone surprise.",
+            "error_tag": "word_form",
+            "feedback_vi": "Surprise ở đây là động từ - which surprised everyone, hoặc made everyone surprised."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "order_index": 8,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Video của cô ấy lan truyền chóng mặt chỉ sau một đêm, điều đó khiến mọi người bất ngờ."
       },
       "reviewed_at": null,
       "reviewed_by": null,
@@ -34444,6 +36787,726 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "b1732bbb1e5f026ea3efc4413d85fe8ddf0dd62484a8bbb958951a7fbcaa1c99",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "35b78d47-d4af-55af-8f3b-9e9a90919807",
+      "is_demo": true,
+      "item_id": "59594769-5067-5aff-a939-7ae4c424de48",
+      "key": "en:exercise:participle-fill-built-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "Built"
+            ]
+          }
+        },
+        "display_answer": "Built in 1990, the old server room is now a café.",
+        "explanation": {
+          "vi": "Chủ ngữ (the old server room) chịu tác động - được xây - nên dùng phân từ quá khứ built. V-ing sẽ hiểu là căn phòng tự đi xây."
+        },
+        "known_wrong": [
+          {
+            "answer": "Building",
+            "error_tag": "participle_active_passive",
+            "feedback_vi": "Phòng được xây chứ không tự xây - nghĩa bị động cần V3 built."
+          },
+          {
+            "answer": "Builded",
+            "error_tag": "irregular_verb",
+            "feedback_vi": "Build là động từ bất quy tắc - build, built, built."
+          },
+          {
+            "answer": "Having built",
+            "error_tag": "participle_active_passive",
+            "feedback_vi": "Having built là chủ động (đã xây cái gì đó). Căn phòng được xây nên dùng built."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "order_index": 2,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa: Được xây năm 1990, phòng máy chủ cũ giờ thành quán cà phê.",
+          "Gợi ý: phòng được xây (bị động) - dạng V3 của build."
+        ],
+        "template": "{{b1}} in 1990, the old server room is now a café."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "8614744acf76e9961cedb829377c975707e45f702d49dc90e8ee1668de135e5b",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "a38bd246-3ba4-5937-84ff-4751733568e7",
+      "is_demo": true,
+      "item_id": "964d4055-07a0-5345-93d1-323d92ec46d1",
+      "key": "en:exercise:participle-fill-hackers-using",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "Hackers"
+            ],
+            "b2": [
+              "using"
+            ]
+          }
+        },
+        "display_answer": "Hackers using fake emails stole the personal data of thousands of students.",
+        "explanation": {
+          "vi": "\"Những tin tặc dùng email giả\" = hackers who used fake emails, rút gọn thành hackers using fake emails. V-ing vì tin tặc chủ động dùng email."
+        },
+        "known_wrong": [
+          {
+            "answer": "used",
+            "error_tag": "participle_active_passive",
+            "feedback_vi": "Tin tặc là người dùng email (chủ động) nên rút gọn bằng V-ing - using."
+          },
+          {
+            "answer": "Hacks",
+            "error_tag": "word_form",
+            "feedback_vi": "Hack là hành động; người làm là hacker, số nhiều hackers."
+          },
+          {
+            "answer": "Hacker",
+            "error_tag": "article",
+            "feedback_vi": "Động từ stole không cho biết số, nhưng không có mạo từ nên cần số nhiều hackers."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 7
+          },
+          {
+            "id": "b2",
+            "width_hint": 5
+          }
+        ],
+        "template": "{{b1}} {{b2}} fake emails stole the personal data of thousands of students."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "d34553ff6b36d53be83ce95b57c76799642f323e55a8c82f975e022eeb42ae18",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "054e99e8-f03a-5650-9895-3bb661120cf5",
+      "is_demo": true,
+      "item_id": "687c36fc-ddf8-53f4-bd65-e8cf8852d076",
+      "key": "en:exercise:participle-fill-having-changed",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "Having"
+            ],
+            "b2": [
+              "changed"
+            ]
+          }
+        },
+        "display_answer": "Having changed all my passwords after the data breach, I felt much safer.",
+        "explanation": {
+          "vi": "Đổi xong mật khẩu rồi mới thấy an toàn, nên dùng Having + V3 (changed). Chủ ngữ I vừa đổi mật khẩu vừa cảm thấy an toàn, nên rút gọn được."
+        },
+        "known_wrong": [
+          {
+            "answer": "change",
+            "error_tag": "perfect_participle",
+            "feedback_vi": "Sau having phải là V3 - changed."
+          },
+          {
+            "answer": "Had",
+            "error_tag": "perfect_participle",
+            "feedback_vi": "Mệnh đề phân từ không có thì - dùng Having, không dùng Had."
+          },
+          {
+            "answer": "Changing",
+            "error_tag": "perfect_participle",
+            "feedback_vi": "Việc đổi mật khẩu xong trước rồi mới thấy an toàn - cần Having + V3."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          },
+          {
+            "id": "b2",
+            "width_hint": 7
+          }
+        ],
+        "template": "{{b1}} {{b2}} all my passwords after the data breach, I felt much safer."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "699f9d9563a0a1f47506dacfed4148c0d49c94ccb846e0808a58380867376629",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "a8a03482-128e-5a18-b585-3dfcd1ff797d",
+      "is_demo": true,
+      "item_id": "687c36fc-ddf8-53f4-bd65-e8cf8852d076",
+      "key": "en:exercise:participle-listen-having-read",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "n4w"
+        },
+        "display_answer": "Sau khi đọc chính sách quyền riêng tư, tôi quyết định không tải ứng dụng.",
+        "explanation": {
+          "vi": "Having read cho biết việc đọc xong trước, rồi mới quyết định. Not to download là quyết định không tải, nên các phương án nói đã tải đều sai."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "Having read the privacy policy, I decided not to download the app.",
+        "options": [
+          {
+            "id": "c3g",
+            "lang": "vi",
+            "text": "Tôi vừa đọc chính sách quyền riêng tư vừa tải ứng dụng."
+          },
+          {
+            "id": "u6y",
+            "lang": "vi",
+            "text": "Vì không đọc chính sách quyền riêng tư nên tôi đã tải ứng dụng."
+          },
+          {
+            "id": "j1e",
+            "lang": "vi",
+            "text": "Tôi quyết định tải ứng dụng rồi mới đọc chính sách quyền riêng tư."
+          },
+          {
+            "id": "n4w",
+            "lang": "vi",
+            "text": "Sau khi đọc chính sách quyền riêng tư, tôi quyết định không tải ứng dụng."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "5433f2f6bbbc421b247727d73719878620421156f9a25767dda54cfb1a18dd80",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "a3cce3b2-c494-5bca-80b3-fa68ad02a54a",
+      "is_demo": true,
+      "item_id": "b6616597-f012-5762-aff2-0d4142ef49e4",
+      "key": "en:exercise:participle-mcq-dangling",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "f2n"
+        },
+        "display_answer": "Opening the email, I realised it was a scam.",
+        "explanation": {
+          "vi": "Chỉ ở câu đúng, chủ ngữ sau dấu phẩy (I) mới là người mở email. Ở các câu còn lại, it, my laptop hay the link không thể tự mở email."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "q8r",
+            "lang": "en",
+            "text": "Opening the email, it was clearly a scam."
+          },
+          {
+            "id": "a7c",
+            "lang": "en",
+            "text": "Opening the email, the link looked strange."
+          },
+          {
+            "id": "f2n",
+            "lang": "en",
+            "text": "Opening the email, I realised it was a scam."
+          },
+          {
+            "id": "z5t",
+            "lang": "en",
+            "text": "Opening the email, my laptop got a virus."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào KHÔNG mắc lỗi phân từ treo?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "874e998032c48229e2065010977436741e2c494376bc453b5ffe5e1afddafacf",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "8e376a78-8963-557b-8af0-bdef816a2218",
+      "is_demo": true,
+      "item_id": "cdbeabaf-e3f7-553a-adfc-2570ff9f9625",
+      "key": "en:exercise:participle-mcq-reduced-relative",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "v9k"
+        },
+        "display_answer": "A study published last month links screen time to poor sleep.",
+        "explanation": {
+          "vi": "Bỏ which was và giữ V3 published (bị động). Publishing là chủ động; giữ lại was thì câu có hai động từ chia; còn dấu phẩy tách chủ ngữ và động từ chính là sai."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "i0d",
+            "lang": "en",
+            "text": "A study published last month, links screen time to poor sleep."
+          },
+          {
+            "id": "h6m",
+            "lang": "en",
+            "text": "A study was published last month links screen time to poor sleep."
+          },
+          {
+            "id": "b2x",
+            "lang": "en",
+            "text": "A study publishing last month links screen time to poor sleep."
+          },
+          {
+            "id": "v9k",
+            "lang": "en",
+            "text": "A study published last month links screen time to poor sleep."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào có nghĩa giống \"A study which was published last month links screen time to poor sleep.\"?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "aeaeff7cf6cc64c9326e81433ef6f5341fee6f3e8b96fb41e64ff4f3c04cf21f",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "d94740ae-6e17-5c94-8ec9-e564dfc9f559",
+      "is_demo": true,
+      "item_id": "e271fee4-579a-54f7-9497-a95d25cc0bc7",
+      "key": "en:exercise:participle-mcq-situation-breach-email",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k7s"
+        },
+        "display_answer": "Having discovered a data breach on 3 May, we are contacting all affected customers.",
+        "explanation": {
+          "vi": "Công ty (we) phát hiện vụ rò rỉ rồi mới liên hệ khách hàng - Having + V3 với chủ ngữ we. Phương án có customers là lỗi phân từ treo (khách hàng không phát hiện); Discovered mang nghĩa bị động; having discover thiếu V3."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "y8l",
+            "lang": "en",
+            "text": "Having discover a data breach on 3 May, we are contacting all affected customers."
+          },
+          {
+            "id": "e1p",
+            "lang": "en",
+            "text": "Having discovered a data breach on 3 May, all affected customers are being contacted."
+          },
+          {
+            "id": "w4o",
+            "lang": "en",
+            "text": "Discovered a data breach on 3 May, we are contacting all affected customers."
+          },
+          {
+            "id": "k7s",
+            "lang": "en",
+            "text": "Having discovered a data breach on 3 May, we are contacting all affected customers."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn soạn email thông báo của công ty gửi khách hàng. Câu mở đầu nào đúng ngữ pháp và tự nhiên nhất?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "8636f2af3a70a2857ad75b74809afd1ad2be14ef55e5c6eecaf20d1ad91092bb",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "e1a8b734-2c6b-58e0-a402-e4111166974d",
+      "is_demo": true,
+      "item_id": "53a92c45-790f-5d95-ac56-0ba86e7cde68",
+      "key": "en:exercise:participle-order-feeling-tired",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t-feeling",
+              "t-tired",
+              "t-she",
+              "t-turned",
+              "t-off",
+              "t-her",
+              "t-phone"
+            ],
+            [
+              "t-feeling",
+              "t-tired",
+              "t-she",
+              "t-turned",
+              "t-her",
+              "t-phone",
+              "t-off"
+            ]
+          ]
+        },
+        "display_answer": "Feeling tired, she turned off her phone.",
+        "explanation": {
+          "vi": "Cô ấy tự cảm thấy mệt (chủ động) nên dùng Feeling; Felt là thừa. Turn off là cụm động từ tách được - turned off her phone hoặc turned her phone off."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "order_index": 3,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Anh: \"Thấy mệt, cô ấy tắt điện thoại.\"",
+        "tokens": [
+          {
+            "id": "t-off",
+            "text": "off"
+          },
+          {
+            "id": "t-she",
+            "text": "she"
+          },
+          {
+            "id": "t-phone",
+            "text": "phone"
+          },
+          {
+            "id": "t-feeling",
+            "text": "Feeling"
+          },
+          {
+            "id": "t-her",
+            "text": "her"
+          },
+          {
+            "id": "t-tired",
+            "text": "tired,"
+          },
+          {
+            "id": "t-turned",
+            "text": "turned"
+          },
+          {
+            "id": "t-felt",
+            "text": "Felt"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "0c6f76e8ac32d26464ca00d9f04d175bef498c5065f6d4572328202c9d2a769d",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "8deead77-37ca-5abe-bb3f-b06cc8f66fc2",
+      "is_demo": true,
+      "item_id": "c11002d6-3f06-5f19-8c03-b0988d1ae391",
+      "key": "en:exercise:participle-translate-algorithm",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Được thiết kế để giữ người dùng ở lại trên mạng, thuật toán cho bạn xem nhiều hơn những gì bạn đã xem.",
+            "Được thiết kế để giữ chân người dùng, thuật toán cho bạn xem nhiều hơn những gì bạn đã xem.",
+            "Được thiết kế để giữ chân người dùng, thuật toán cho bạn xem thêm những thứ bạn đã xem.",
+            "Được thiết kế để giữ người dùng trên mạng, thuật toán cho bạn xem thêm những thứ giống những gì bạn đã xem.",
+            "Được thiết kế để giữ chân người dùng, thuật toán cho bạn xem thêm những nội dung bạn đã xem.",
+            "Thuật toán được thiết kế để giữ chân người dùng, nên nó cho bạn xem nhiều hơn những gì bạn đã xem.",
+            "Thuật toán được thiết kế để giữ người dùng ở lại trên mạng nên cho bạn xem thêm những gì bạn đã xem."
+          ]
+        },
+        "display_answer": "Được thiết kế để giữ chân người dùng, thuật toán cho bạn xem nhiều hơn những gì bạn đã xem.",
+        "explanation": {
+          "vi": "Designed là V3 bị động - \"được thiết kế\" - và chủ thể là the algorithm. Keep users online là giữ người dùng ở lại trên mạng (giữ chân người dùng)."
+        },
+        "known_wrong": [
+          {
+            "answer": "Thiết kế để giữ người dùng, bạn xem nhiều hơn những gì bạn đã xem.",
+            "error_tag": "meaning",
+            "feedback_vi": "Designed bổ nghĩa cho the algorithm (thuật toán được thiết kế), không phải cho bạn."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "Designed to keep users online, the algorithm shows you more of what you have already watched."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "2fe4e54ccf3530847eb07fac7a6dc2a62b9db8e99572e15baa07f90beba0200b",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "5313b78b-a57d-5e50-9e3d-a9a6ca464357",
+      "is_demo": true,
+      "item_id": "2a699ab6-74cf-5a0d-b6a8-e7c923689afa",
+      "key": "en:exercise:participle-translate-launched-2020",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Launched in 2020, the app now has ten million users.",
+            "Launched in 2020, this app now has ten million users.",
+            "Launched in 2020, the app now has 10 million users.",
+            "Launched in 2020, this app now has 10 million users.",
+            "Launched in 2020, the app has ten million users now.",
+            "Launched in 2020, this app currently has ten million users.",
+            "Launched in 2020, the app currently has ten million users."
+          ]
+        },
+        "display_answer": "Launched in 2020, the app now has ten million users.",
+        "explanation": {
+          "vi": "Ứng dụng được ra mắt nên dùng phân từ bị động launched in 2020; chủ ngữ mệnh đề chính là the app, đúng là thứ được ra mắt."
+        },
+        "known_wrong": [
+          {
+            "answer": "Launching in 2020, the app now has ten million users.",
+            "error_tag": "participle_active_passive",
+            "feedback_vi": "Ứng dụng được ra mắt (bị động) nên dùng V3 launched."
+          },
+          {
+            "answer": "Launched in 2020, the app now have ten million users.",
+            "error_tag": "subject_verb_agreement",
+            "feedback_vi": "The app là số ít - has."
+          },
+          {
+            "answer": "Lunched in 2020, the app now has ten million users.",
+            "error_tag": "spelling",
+            "feedback_vi": "Ra mắt là launch (có a); lunch là bữa trưa."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Ra mắt năm 2020, ứng dụng này hiện có mười triệu người dùng."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "ba4274b38e1a91f9f059d39b2d8ec0e0bc0fa12326f7c4b918c13fc5b5b01d30",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "cb27cf09-c0da-5f55-a3c3-3fcbefd2803d",
+      "is_demo": true,
+      "item_id": "67661a9d-0958-5238-8181-b954ea1e290c",
+      "key": "en:exercise:participle-translate-worried-privacy",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Worried about her privacy, Mai stopped posting photos of her children online.",
+            "Worried about her privacy, Mai stopped posting pictures of her children online.",
+            "Worried about her privacy, Mai stopped posting photos of her kids online.",
+            "Worried about privacy, Mai stopped posting photos of her children online.",
+            "Worried about her privacy, Mai has stopped posting photos of her children online.",
+            "Worried about her privacy, Mai stopped posting her children's photos online.",
+            "Worried about her privacy, Mai stopped posting photos of her children on the Internet."
+          ]
+        },
+        "display_answer": "Worried about her privacy, Mai stopped posting photos of her children online.",
+        "explanation": {
+          "vi": "Worried about là trạng thái lo lắng (tính từ dạng V3), và Mai chính là người lo lắng nên phải đứng ngay sau dấu phẩy. Thôi làm việc gì là stop + V-ing - stopped posting."
+        },
+        "known_wrong": [
+          {
+            "answer": "Worrying about her privacy, Mai stopped to post photos of her children online.",
+            "error_tag": "stop_ing_to",
+            "feedback_vi": "Thôi không làm nữa là stop + V-ing (stopped posting); stopped to post là dừng lại để đăng."
+          },
+          {
+            "answer": "Worried about her privacy, photos of her children were no longer posted online.",
+            "error_tag": "dangling_participle",
+            "feedback_vi": "Lỗi phân từ treo - ảnh không thể lo lắng. Chủ ngữ phải là Mai."
+          },
+          {
+            "answer": "Worried about her privacy, Mai stopped posting photos of her childs online.",
+            "error_tag": "irregular_plural",
+            "feedback_vi": "Số nhiều của child là children."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "order_index": 8,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Lo lắng cho quyền riêng tư, Mai thôi đăng ảnh các con lên mạng."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
       "status": "published"
     },
     {
@@ -44152,6 +47215,741 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "741c0fc46ed37f35e8f310832a9991773cbc1908a83c42885fe1b626665b3d37",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "4e736577-6602-5aa2-b937-1142308959a0",
+      "is_demo": true,
+      "item_id": "2a10c31c-d260-51ce-bbe0-6bfe130bec9b",
+      "key": "en:exercise:science-fill-evidence-suggests",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "evidence"
+            ],
+            "b2": [
+              "research"
+            ]
+          }
+        },
+        "display_answer": "There is growing evidence that screen time affects young children's language skills, but more research is needed.",
+        "explanation": {
+          "vi": "Hai chỗ trống đều là danh từ không đếm được, đi với động từ số ít (there is, is needed). Growing evidence là \"ngày càng nhiều bằng chứng\"; more research is needed là \"cần nghiên cứu thêm\"."
+        },
+        "known_wrong": [
+          {
+            "answer": "evidences",
+            "error_tag": "uncountable_plural",
+            "feedback_vi": "Evidence không đếm được - không thêm -s."
+          },
+          {
+            "answer": "researches",
+            "error_tag": "uncountable_plural",
+            "feedback_vi": "Research không đếm được - không thêm -s (more research is needed)."
+          },
+          {
+            "answer": "proof",
+            "error_tag": "word_choice",
+            "feedback_vi": "Proof là bằng chứng chắc chắn, mâu thuẫn với \"growing\" và \"more research is needed\". Tin khoa học dùng evidence."
+          },
+          {
+            "answer": "study",
+            "error_tag": "uncountable_article",
+            "feedback_vi": "Study đếm được nên cần a hoặc số nhiều (more studies are needed). Với is needed, dùng research."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 8
+          },
+          {
+            "id": "b2",
+            "width_hint": 8
+          }
+        ],
+        "template": "There is growing {{b1}} that screen time affects young children's language skills, but more {{b2}} is needed."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "e14b6d59d6e3388aafddcad44dfcf3fb9c1cadefca6e8a0a145572cb48f0f8a4",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "36eafe9d-2c6e-5335-ae2a-dead67b728ee",
+      "is_demo": true,
+      "item_id": "0bd251b7-3f97-52e9-aa43-66b45bb1e5bb",
+      "key": "en:exercise:science-fill-participants",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "conducted",
+              "carried out",
+              "ran",
+              "did"
+            ],
+            "b2": [
+              "participants",
+              "volunteers",
+              "people"
+            ]
+          }
+        },
+        "display_answer": "The researchers conducted an experiment with 500 participants, half of whom were asked to stop using social media.",
+        "explanation": {
+          "vi": "Conduct / carry out an experiment là cụm cố định; quá khứ là conducted. Người tham gia nghiên cứu là participants, và half of whom (một nửa trong số họ) dùng whom vì đứng sau giới từ."
+        },
+        "known_wrong": [
+          {
+            "answer": "made",
+            "error_tag": "collocation",
+            "feedback_vi": "Thí nghiệm đi với conduct / carry out, không đi với make."
+          },
+          {
+            "answer": "participators",
+            "error_tag": "word_form",
+            "feedback_vi": "Người tham gia nghiên cứu là participants."
+          },
+          {
+            "answer": "participant",
+            "error_tag": "plural",
+            "feedback_vi": "500 người nên cần số nhiều - participants."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 9
+          },
+          {
+            "id": "b2",
+            "width_hint": 12
+          }
+        ],
+        "template": "The researchers {{b1}} an experiment with 500 {{b2}}, half of whom were asked to stop using social media."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "c4d64b9ee49a034f5cbc1fcda25ada01fcf07d7755d67f94b098723c93fc3649",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "13e3281f-6517-59ac-9fee-08094e0c5b23",
+      "is_demo": true,
+      "item_id": "56bbd028-e9f0-59d4-b7b6-794e65d5d3b3",
+      "key": "en:exercise:science-fill-study-found-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "study"
+            ],
+            "b2": [
+              "found",
+              "showed"
+            ]
+          }
+        },
+        "display_answer": "A recent study found that teenagers who use their phones at night sleep an hour less.",
+        "explanation": {
+          "vi": "A recent + danh từ đếm được số ít - study. \"Phát hiện rằng\" là found that (quá khứ của find); showed that cũng được."
+        },
+        "known_wrong": [
+          {
+            "answer": "research",
+            "error_tag": "uncountable_article",
+            "feedback_vi": "Research không đếm được nên không đi với a. Dùng a study."
+          },
+          {
+            "answer": "finded",
+            "error_tag": "irregular_verb",
+            "feedback_vi": "Find là động từ bất quy tắc - find, found, found."
+          },
+          {
+            "answer": "founded",
+            "error_tag": "irregular_verb",
+            "feedback_vi": "Founded là quá khứ của found (thành lập). Quá khứ của find là found."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "order_index": 2,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          },
+          {
+            "id": "b2",
+            "width_hint": 5
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa: Một nghiên cứu gần đây phát hiện rằng những thiếu niên dùng điện thoại vào ban đêm ngủ ít hơn một tiếng.",
+          "Gợi ý: danh từ đếm được s… và quá khứ của find."
+        ],
+        "template": "A recent {{b1}} {{b2}} that teenagers who use their phones at night sleep an hour less."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "0f3090b50f636a54b805fcb9806b96e0cfd2be0848409297028e59f22c7bc2a2",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "140226b5-656c-510b-9b75-8d5ef164968c",
+      "is_demo": true,
+      "item_id": "a4ada9ac-02bf-57bc-be2f-2b944dbf7f98",
+      "key": "en:exercise:science-listen-conducted-experiment",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "w3k"
+        },
+        "display_answer": "Nhóm nghiên cứu tiến hành một thí nghiệm, trong đó một nửa số người tham gia ngừng dùng mạng xã hội trong một tháng.",
+        "explanation": {
+          "vi": "Conducted an experiment là \"tiến hành một thí nghiệm\"; in which (trong đó) mở ra chi tiết - một nửa người tham gia ngừng dùng mạng xã hội một tháng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "The team conducted an experiment in which half of the participants stopped using social media for a month.",
+        "options": [
+          {
+            "id": "w3k",
+            "lang": "vi",
+            "text": "Nhóm nghiên cứu tiến hành một thí nghiệm, trong đó một nửa số người tham gia ngừng dùng mạng xã hội trong một tháng."
+          },
+          {
+            "id": "c6p",
+            "lang": "vi",
+            "text": "Nhóm nghiên cứu ngừng thí nghiệm vì người tham gia dùng mạng xã hội quá nhiều."
+          },
+          {
+            "id": "z1u",
+            "lang": "vi",
+            "text": "Một nửa số người tham gia đã bỏ thí nghiệm sau một tháng."
+          },
+          {
+            "id": "i8f",
+            "lang": "vi",
+            "text": "Nhóm nghiên cứu dùng mạng xã hội để tìm người tham gia thí nghiệm trong một tháng."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "e0e7ee4b0e78268ec476d0f7dcac0b8ffce4129832e5269557a4082e97857e20",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "a7a6fb7f-8aa0-55f5-bf8f-53dc7a2a56d8",
+      "is_demo": true,
+      "item_id": "7c57bcfe-3454-59aa-98d2-4b9fcf0923c3",
+      "key": "en:exercise:science-mcq-link-meaning",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "y5s"
+        },
+        "display_answer": "Ngủ kém và điểm thấp có liên quan với nhau, nhưng chưa chắc cái này gây ra cái kia.",
+        "explanation": {
+          "vi": "A link between A and B chỉ là mối liên hệ (hai thứ hay đi cùng nhau). Muốn nói \"gây ra\", tiếng Anh phải dùng cause hoặc prove that… causes."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "y5s",
+            "lang": "vi",
+            "text": "Ngủ kém và điểm thấp có liên quan với nhau, nhưng chưa chắc cái này gây ra cái kia."
+          },
+          {
+            "id": "k4n",
+            "lang": "vi",
+            "text": "Học sinh điểm thấp thường ngủ nhiều hơn."
+          },
+          {
+            "id": "r0b",
+            "lang": "vi",
+            "text": "Các nhà khoa học đã chứng minh ngủ kém gây ra điểm thấp."
+          },
+          {
+            "id": "e2t",
+            "lang": "vi",
+            "text": "Các nhà khoa học không tìm thấy mối liên hệ nào."
+          }
+        ],
+        "shuffle": true,
+        "stem": "\"Scientists have found a link between poor sleep and lower grades.\" Câu này cho biết điều gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "59fc1583b951d9ab1153d8d15d2a48ff5a753b7d30f8ae335330117658d418cb",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "7d408b1e-49d4-5359-bff7-c765ad76cc76",
+      "is_demo": true,
+      "item_id": "2a8dc499-d97e-5d21-ad48-9b9aec89c87f",
+      "key": "en:exercise:science-mcq-situation-headline",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "j6v"
+        },
+        "display_answer": "I'm not sure that's a reliable source. Most studies only suggest a link - have you fact-checked it?",
+        "explanation": {
+          "vi": "Trang nặc danh là nguồn không đáng tin, và tiêu đề đã đổi suggest thành prove. Các phương án còn lại vừa thiếu cẩn trọng vừa sai ngữ pháp (evidences, a research, a true information)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "j6v",
+            "lang": "en",
+            "text": "I'm not sure that's a reliable source. Most studies only suggest a link - have you fact-checked it?"
+          },
+          {
+            "id": "o3m",
+            "lang": "en",
+            "text": "Wow, the research proves it. I'm going to share it with everyone right now."
+          },
+          {
+            "id": "u7w",
+            "lang": "en",
+            "text": "A research found it, so it must be a true information."
+          },
+          {
+            "id": "s1z",
+            "lang": "en",
+            "text": "That's a reliable source because it has a lot of evidences."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn của bạn chia sẻ tiêu đề \"Scientists PROVE phones cause cancer!\" từ một trang web nặc danh. Bạn trả lời thế nào cho hợp lý nhất?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "fa9937a3daf4938fc54029a1d9294e48372fb1dacc216a3be1e54bf50d0e17a3",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "0b7c79e6-0efe-5d05-a38f-c7b33c496c56",
+      "is_demo": true,
+      "item_id": "2192a29c-a9fe-59fa-82a4-cf2d51e8f63c",
+      "key": "en:exercise:science-mcq-suggest-vs-prove",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "q2h"
+        },
+        "display_answer": "Trà xanh có thể giúp giảm căng thẳng, theo một nghiên cứu mới",
+        "explanation": {
+          "vi": "Suggest và may cho thấy kết luận chỉ là \"có thể\". Các tiêu đề dùng \"chứng minh\", \"chắc chắn\" đã phóng đại; tiêu đề \"gây căng thẳng\" thì sai nghĩa."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "m9o",
+            "lang": "vi",
+            "text": "Trà xanh chắc chắn giảm căng thẳng cho mọi người"
+          },
+          {
+            "id": "b4y",
+            "lang": "vi",
+            "text": "Nghiên cứu khẳng định trà xanh gây căng thẳng"
+          },
+          {
+            "id": "d7c",
+            "lang": "vi",
+            "text": "Khoa học chứng minh: trà xanh chữa khỏi căng thẳng"
+          },
+          {
+            "id": "q2h",
+            "lang": "vi",
+            "text": "Trà xanh có thể giúp giảm căng thẳng, theo một nghiên cứu mới"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bản tin viết: \"The study suggests that green tea may reduce stress.\" Tiêu đề nào phản ánh ĐÚNG nghiên cứu?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "7b6c33206ebfd136334dfe1c9c55913ff85792c463f04008dd034748b0f3c1fe",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "40df846d-f33c-58f8-b28c-d5385bf283ef",
+      "is_demo": true,
+      "item_id": "b7ec2699-400d-53ad-aaf7-4837e8a40f50",
+      "key": "en:exercise:science-order-fact-check",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "f-always",
+              "f-fact",
+              "f-a",
+              "f-story",
+              "f-before",
+              "f-you",
+              "f-share",
+              "f-it"
+            ]
+          ]
+        },
+        "display_answer": "Always fact-check a story before you share it.",
+        "explanation": {
+          "vi": "Câu mệnh lệnh bắt đầu bằng Always + động từ fact-check. Mệnh đề thời gian before you share it đứng cuối câu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "order_index": 3,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Anh: \"Hãy luôn kiểm chứng một câu chuyện trước khi bạn chia sẻ nó.\"",
+        "tokens": [
+          {
+            "id": "f-share",
+            "text": "share"
+          },
+          {
+            "id": "f-a",
+            "text": "a"
+          },
+          {
+            "id": "f-always",
+            "text": "Always"
+          },
+          {
+            "id": "f-it",
+            "text": "it"
+          },
+          {
+            "id": "f-before",
+            "text": "before"
+          },
+          {
+            "id": "f-story",
+            "text": "story"
+          },
+          {
+            "id": "f-you",
+            "text": "you"
+          },
+          {
+            "id": "f-fact",
+            "text": "fact-check"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "569ed238625e3c4e5e9acbab31b93a1f645987516f13c681d70dc404fc4b3cc3",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "227a8eea-28b3-5a19-8dc6-d51eb684ff07",
+      "is_demo": true,
+      "item_id": "3107a17b-6332-5b6e-9386-fc2c130bfa9c",
+      "key": "en:exercise:science-translate-fake-news-spreads",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Fake news spreads faster than real news on social media.",
+            "Fake news spreads more quickly than real news on social media.",
+            "Fake news spreads faster than true news on social media.",
+            "Fake news travels faster than real news on social media.",
+            "On social media, fake news spreads faster than real news.",
+            "On social media fake news spreads more quickly than real news."
+          ]
+        },
+        "display_answer": "Fake news spreads faster than real news on social media.",
+        "explanation": {
+          "vi": "News trông như số nhiều nhưng là danh từ không đếm được, nên động từ là spreads. Nói chung chung nên không có the; on social media cũng không có the."
+        },
+        "known_wrong": [
+          {
+            "answer": "Fake news spread faster than real news on social media.",
+            "error_tag": "subject_verb_agreement",
+            "feedback_vi": "News không đếm được và đi với động từ số ít - spreads."
+          },
+          {
+            "answer": "Fake news spreads faster than real news on the social media.",
+            "error_tag": "article",
+            "feedback_vi": "Social media nói chung không có the - on social media."
+          },
+          {
+            "answer": "The fake news spreads faster than the real news on social media.",
+            "error_tag": "article_general",
+            "feedback_vi": "Nói chung về tin giả, tin thật thì không dùng the."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tin giả lan nhanh hơn tin thật trên mạng xã hội."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "ee7caf97a491431f37911ada9691deb0563595f95db311d74ebff263d5877e6a",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "13434384-8440-5822-ac1a-2527f6f90406",
+      "is_demo": true,
+      "item_id": "9b4f6b92-1a88-5498-b991-ea470dfe3fc3",
+      "key": "en:exercise:science-translate-misinformation",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Hãy kiểm tra xem thông tin có đến từ một nguồn đáng tin cậy không trước khi chia sẻ - rất nhiều thông tin sai lệch trông như thật.",
+            "Hãy kiểm tra xem thông tin có đến từ nguồn đáng tin cậy không trước khi bạn chia sẻ - nhiều thông tin sai lệch trông như thật.",
+            "Hãy kiểm tra xem thông tin có đến từ nguồn đáng tin không trước khi chia sẻ - nhiều thông tin sai lệch trông rất thật.",
+            "Kiểm tra xem thông tin có đến từ một nguồn đáng tin cậy không trước khi chia sẻ - rất nhiều thông tin sai lệch trông giống thật.",
+            "Trước khi chia sẻ, hãy kiểm tra xem thông tin có đến từ nguồn đáng tin cậy không - rất nhiều thông tin sai lệch trông như thật.",
+            "Trước khi chia sẻ, hãy kiểm tra xem thông tin có đến từ một nguồn đáng tin không - nhiều thông tin sai trông như thật.",
+            "Hãy kiểm tra xem thông tin có từ nguồn đáng tin cậy không trước khi chia sẻ - nhiều tin sai lệch trông như thật.",
+            "Hãy kiểm tra nguồn tin có đáng tin cậy không trước khi chia sẻ - rất nhiều thông tin sai lệch trông như thật."
+          ]
+        },
+        "display_answer": "Hãy kiểm tra xem thông tin có đến từ một nguồn đáng tin cậy không trước khi chia sẻ - rất nhiều thông tin sai lệch trông như thật.",
+        "explanation": {
+          "vi": "Check whether… là \"kiểm tra xem… có… không\"; a reliable source là nguồn đáng tin cậy. Misinformation là thông tin sai lệch, looks real là trông như thật."
+        },
+        "known_wrong": [
+          {
+            "answer": "Hãy chia sẻ thông tin từ một nguồn đáng tin cậy - rất nhiều thông tin sai lệch trông như thật.",
+            "error_tag": "meaning",
+            "feedback_vi": "Câu gốc khuyên kiểm tra nguồn TRƯỚC khi chia sẻ (check whether… before you share it)."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "Check whether the information comes from a reliable source before you share it - a lot of misinformation looks real."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "e0b95be958fb5eb012f4635850722ffb625d504d4540c62c8b90bd04acef5766",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "e5300109-6e02-5693-b4df-1e53047c8f67",
+      "is_demo": true,
+      "item_id": "376bdddd-7ed7-5c76-bfbd-6ba3c6ef1376",
+      "key": "en:exercise:science-translate-researchers-claim",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Researchers claim that the new battery can last a week, but no evidence has been published yet.",
+            "Researchers claim that the new battery can last for a week, but no evidence has been published yet.",
+            "Researchers claim the new battery can last a week, but no evidence has been published yet.",
+            "Researchers claim the new battery can last for a week, but no evidence has been published yet.",
+            "Researchers claim that the new battery could last a week, but no evidence has been published yet.",
+            "Researchers claim that the new battery could last for a week, but no evidence has been published yet.",
+            "The researchers claim that the new battery can last a week, but no evidence has been published yet.",
+            "The researchers claim that the new battery can last for a week, but no evidence has been published yet.",
+            "Researchers claim that the new battery can last a week, but no evidence has been published.",
+            "Researchers claim that the new battery can last for a week, but no evidence has been published.",
+            "Researchers claim that the new battery can last a week, but they haven't published any evidence yet.",
+            "Researchers claim that the new battery can last for a week, but they haven't published any evidence yet."
+          ]
+        },
+        "display_answer": "Researchers claim that the new battery can last a week, but no evidence has been published yet.",
+        "explanation": {
+          "vi": "Claim (khẳng định) phù hợp vì điều đó chưa được kiểm chứng. Evidence không đếm được nên dùng no evidence has been published; câu bị động hiện tại hoàn thành vì chưa công bố tính đến giờ."
+        },
+        "known_wrong": [
+          {
+            "answer": "Researchers claim that the new battery can last a week, but no evidences have been published yet.",
+            "error_tag": "uncountable_plural",
+            "feedback_vi": "Evidence không đếm được - no evidence has been published."
+          },
+          {
+            "answer": "Researchers prove that the new battery can last a week, but no evidence has been published yet.",
+            "error_tag": "reporting_verb",
+            "feedback_vi": "Chưa có bằng chứng thì không thể \"chứng minh\" (prove). Khẳng định chưa kiểm chứng là claim."
+          },
+          {
+            "answer": "Researchers claim to that the new battery can last a week, but no evidence has been published yet.",
+            "error_tag": "reporting_pattern",
+            "feedback_vi": "Claim + that + mệnh đề, không có to."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "order_index": 8,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Các nhà nghiên cứu khẳng định loại pin mới có thể dùng được một tuần, nhưng chưa có bằng chứng nào được công bố."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
       "status": "published"
     },
     {
@@ -100426,6 +104224,3725 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ko",
+      "content_hash": "47d2baf6a2471d680d687784d543a07def1423dc91bf2c84416c12a357beb52d",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "da1ccb1d-191f-5563-a170-fd82ee0f0e80",
+      "is_demo": true,
+      "item_id": "b7f60c36-fca5-5a61-94c1-06a3b926afc2",
+      "key": "ko:exercise:hl-endings-fill-goseoya",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "나서야"
+            ]
+          }
+        },
+        "display_answer": "직접 유적지를 보고 나서야 그 규모를 실감했다.",
+        "explanation": {
+          "vi": "-고서야 = -고 나서야 - phải làm việc trước rồi mới (nhận ra, hiểu được). Trợ từ 야 mang nghĩa \"mãi đến khi đó\"."
+        },
+        "known_wrong": [
+          {
+            "answer": "나서",
+            "error_tag": "goseoya_ya",
+            "feedback_vi": "Thiếu 야 thì mất ý \"mãi đến khi... mới\". -고서야 = -고 나서야."
+          },
+          {
+            "answer": "나면",
+            "error_tag": "goseoya_ya",
+            "feedback_vi": "-고 나면 là \"làm xong thì (sẽ)\". Câu gốc ở quá khứ, nghĩa \"phải thấy rồi mới nhận ra\" - -고 나서야."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "직접 유적지를 보고서야 그 규모를 실감했다. ≈ 직접 유적지를 보고 {{b1}} 그 규모를 실감했다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "02735d79391c1705f50f72c715ef5fa8d0402f469205b9bce05ff97af95b20f6",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "b80c2914-08d0-51b3-b8a6-e959c1b17c21",
+      "is_demo": true,
+      "item_id": "91855254-3ace-5d83-99d4-60ea5fefb962",
+      "key": "ko:exercise:hl-endings-fill-jindae",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "니까",
+              "니",
+              "므로",
+              "는데"
+            ]
+          }
+        },
+        "display_answer": "역사가 이를 증명하니까 어찌 그 가치를 부정하겠는가.",
+        "explanation": {
+          "vi": "-(으)ㄹ진대 nêu tiền đề (\"lịch sử đã chứng minh\") để đi đến kết luận tu từ (\"sao có thể phủ nhận\"). Dạng hiện đại gần nhất là -(으)니까, -(으)므로."
+        },
+        "known_wrong": [
+          {
+            "answer": "는지",
+            "error_tag": "archaic_misread",
+            "feedback_vi": "-(으)ㄹ진대 không phải -(으)ㄹ지 \"không biết có... không\". Nó nêu tiền đề hiển nhiên - như -(으)니까."
+          },
+          {
+            "answer": "지만",
+            "error_tag": "archaic_misread",
+            "feedback_vi": "Vế sau không trái với vế trước mà rút ra từ nó. Dùng -(으)니까 hoặc -(으)므로."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "order_index": 7,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "template": "역사가 이를 증명할진대 어찌 그 가치를 부정하겠는가. ≈ 역사가 이를 증명하{{b1}} 어찌 그 가치를 부정하겠는가."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "7f3dc379ec4e98ed6b878523d34ea7a791b26edd23e78063cd0e179d6b83071f",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "0a4b6c70-6335-55d5-9a11-9b23ba0c7102",
+      "is_demo": true,
+      "item_id": "b4d12555-0891-5b95-b67c-0475dbbc4c39",
+      "key": "ko:exercise:hl-endings-fill-noramyeon",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "보면"
+            ]
+          }
+        },
+        "display_answer": "묵묵히 걷다 보면 언젠가 길이 보일 것이다.",
+        "explanation": {
+          "vi": "-노라면 là dạng văn chương của -다 보면 - hành động kéo dài dẫn đến kết quả. -(으)리라 tương ứng -(으)ㄹ 것이다."
+        },
+        "known_wrong": [
+          {
+            "answer": "가면",
+            "error_tag": "noramyeon_equivalent",
+            "feedback_vi": "-다 가면 không phải ngữ pháp. \"Cứ làm mãi thì\" là -다 보면."
+          },
+          {
+            "answer": "해서",
+            "error_tag": "noramyeon_equivalent",
+            "feedback_vi": "-노라면 không chỉ nguyên nhân. Dạng hiện đại là -다 보면."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "hint_levels": [
+          "-노라면 = \"cứ làm mãi thì...\" - dạng hiện đại là -다 ...",
+          "-다 보..."
+        ],
+        "template": "묵묵히 걷노라면 언젠가 길이 보이리라. ≈ 묵묵히 걷다 {{b1}} 언젠가 길이 보일 것이다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "7d1854adf65216d2a6969359ef640cf1f4bfed6c9c137dc13657adc17cb3fe4c",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "aba83cef-d609-508e-8263-59f80a9fa231",
+      "is_demo": true,
+      "item_id": "ef84f221-7d7e-5e6c-b43f-f04d05c68b29",
+      "key": "ko:exercise:hl-endings-fill-sera-modern",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "봐",
+              "봐서"
+            ]
+          }
+        },
+        "display_answer": "아이가 깰까 봐 조심조심 문을 닫았다.",
+        "explanation": {
+          "vi": "-(으)ㄹ세라 = -(으)ㄹ까 봐(서). Cả hai đều diễn tả lo sợ điều gì xảy ra nên làm hành động phòng ngừa ở vế sau."
+        },
+        "known_wrong": [
+          {
+            "answer": "보면",
+            "error_tag": "lkka_bwa",
+            "feedback_vi": "-(으)ㄹ까 보면 không đúng. \"Sợ rằng\" là -(으)ㄹ까 봐(서)."
+          },
+          {
+            "answer": "해서",
+            "error_tag": "lkka_bwa",
+            "feedback_vi": "Dạng hiện đại của -(으)ㄹ세라 là -(으)ㄹ까 봐 - \"sợ rằng... nên\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "template": "아이가 깰세라 조심조심 문을 닫았다. ≈ 아이가 깰까 {{b1}} 조심조심 문을 닫았다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "bb5bbc3f031d601c29195f3105e912a760934f82f24880a2ab7295d0cdfd5c41",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "8894bd00-a3f2-5188-84e1-f23811488b99",
+      "is_demo": true,
+      "item_id": "a01e9b70-7737-5d25-944d-22a1bbdaaa58",
+      "key": "ko:exercise:hl-endings-listen-geoniwa",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "b8m"
+        },
+        "display_answer": "Ngôi làng này cảnh đã đẹp, lòng người lại còn tốt.",
+        "explanation": {
+          "vi": "-거니와 cộng thêm ý (đã... lại còn), hai lần 도 xác nhận điều đó. Nhầm với -거나 sẽ ra \"hoặc\"; câu không có phủ định hay điều kiện."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "order_index": 3,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "이 마을은 경치도 아름답거니와 인심도 좋다.",
+        "options": [
+          {
+            "id": "n3c",
+            "lang": "vi",
+            "text": "Ngôi làng này cảnh đẹp hoặc lòng người tốt."
+          },
+          {
+            "id": "f1z",
+            "lang": "vi",
+            "text": "Ngôi làng này nếu cảnh đẹp thì lòng người cũng tốt."
+          },
+          {
+            "id": "b8m",
+            "lang": "vi",
+            "text": "Ngôi làng này cảnh đã đẹp, lòng người lại còn tốt."
+          },
+          {
+            "id": "w6k",
+            "lang": "vi",
+            "text": "Ngôi làng này cảnh đẹp nhưng lòng người không tốt."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "dcb3173989a9102ed84fc3e90009b21903754b3de91c11d372fa3b94b4c2f63f",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "0300efff-8b69-5dba-9e27-7aee0a8ad061",
+      "is_demo": true,
+      "item_id": "750cf0dd-39ce-5090-b835-6573d6020bf5",
+      "key": "ko:exercise:hl-endings-mcq-doe",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "h3s"
+        },
+        "display_answer": "Được phép chụp ảnh, nhưng không được dùng đèn flash.",
+        "explanation": {
+          "vi": "-(으)되 = \"nhưng\" kèm điều kiện - cho phép chụp (허용하다), với giới hạn ở vế sau (플래시는 사용할 수 없다). Hiểu 되 thành 되다 (trở thành) sẽ dẫn đến phương án sai."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "k1n",
+            "lang": "vi",
+            "text": "Không được chụp ảnh và cũng không được dùng đèn flash."
+          },
+          {
+            "id": "e6w",
+            "lang": "vi",
+            "text": "Nếu dùng đèn flash thì mới được chụp ảnh."
+          },
+          {
+            "id": "p8v",
+            "lang": "vi",
+            "text": "Việc chụp ảnh đã trở thành được phép, kể cả dùng đèn flash."
+          },
+          {
+            "id": "h3s",
+            "lang": "vi",
+            "text": "Được phép chụp ảnh, nhưng không được dùng đèn flash."
+          }
+        ],
+        "shuffle": true,
+        "stem": "사진 촬영은 허용하되 플래시는 사용할 수 없다. - Câu này nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "774b961816e04ed3e8901d2df5121a4acedb14f9e2d4ed5e5f21f57901addde1",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "ce39fae3-b8df-5f0a-aabf-a9d5c8b5e9fa",
+      "is_demo": true,
+      "item_id": "28455d1b-fd50-59e9-bd8e-ceb2fd4aaf89",
+      "key": "ko:exercise:hl-endings-mcq-geonman",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "d5t"
+        },
+        "display_answer": "Xuân đã về vậy mà ngày về quê vẫn còn xa.",
+        "explanation": {
+          "vi": "-건만 ≈ -지만 kèm tiếc nuối - hoàn cảnh (xuân về) đã đến mà điều mong đợi chưa đến. Không phải 만 \"chỉ\" hay -건 \"dù... hay\"; và 아직 멀다 phủ định ý \"sắp đến\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "g2y",
+            "lang": "vi",
+            "text": "Chỉ khi xuân về thì ngày về quê mới còn xa."
+          },
+          {
+            "id": "q7l",
+            "lang": "vi",
+            "text": "Dù xuân có về hay không, ngày về quê cũng còn xa."
+          },
+          {
+            "id": "r4a",
+            "lang": "vi",
+            "text": "Xuân đã về nên sắp đến ngày về quê."
+          },
+          {
+            "id": "d5t",
+            "lang": "vi",
+            "text": "Xuân đã về vậy mà ngày về quê vẫn còn xa."
+          }
+        ],
+        "shuffle": true,
+        "stem": "봄은 왔건만 고향에 돌아갈 날은 아직 멀다. - Chọn cách hiểu đúng.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "c53447d882bfefaa43f99314721b2243308262b3ec38d2f474601d7a4c3f3a50",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "3f503f34-26b3-5cbf-a093-428a36bf9bde",
+      "is_demo": true,
+      "item_id": "750cf0dd-39ce-5090-b835-6573d6020bf5",
+      "key": "ko:exercise:hl-endings-mcq-museum-rule",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "s5u"
+        },
+        "display_answer": "Khách được chụp ảnh, miễn là không làm phiền khách khác.",
+        "explanation": {
+          "vi": "자유롭게 사진을 찍되 = được tự do chụp ảnh, nhưng...; điều kiện là 방해가 되지 않도록 (để không gây phiền). -(으)되 luôn là \"cho phép + giới hạn\", không phải cấm hay bắt buộc."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "a9h",
+            "lang": "vi",
+            "text": "Khách không được chụp ảnh trong bảo tàng."
+          },
+          {
+            "id": "o6p",
+            "lang": "vi",
+            "text": "Chỉ nhân viên bảo tàng mới được chụp ảnh."
+          },
+          {
+            "id": "s5u",
+            "lang": "vi",
+            "text": "Khách được chụp ảnh, miễn là không làm phiền khách khác."
+          },
+          {
+            "id": "l2d",
+            "lang": "vi",
+            "text": "Khách bắt buộc phải chụp ảnh khi tham quan."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Nội quy bảo tàng ghi - 관람객은 자유롭게 사진을 찍되 다른 관람객에게 방해가 되지 않도록 해야 한다. Điều nào đúng với nội quy?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "0ee012ade225f21b9b3fa4064f12abac1112982fdae576514f42d6405f416663",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "c88f8ac2-2d3d-5e20-a5f1-9d5cc5f6e024",
+      "is_demo": true,
+      "item_id": "ef84f221-7d7e-5e6c-b43f-f04d05c68b29",
+      "key": "ko:exercise:hl-endings-mcq-sera",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "x4f"
+        },
+        "display_answer": "-(으)ㄹ까 봐",
+        "explanation": {
+          "vi": "-(으)ㄹ세라 = \"sợ rằng\", nên vế sau là hành động phòng ngừa (조심조심 닫았다) - giống hệt -(으)ㄹ까 봐. Các đuôi còn lại không mang ý lo sợ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "x4f",
+            "lang": "ko",
+            "text": "-(으)ㄹ까 봐"
+          },
+          {
+            "id": "m9b",
+            "lang": "ko",
+            "text": "-(으)ㄹ수록"
+          },
+          {
+            "id": "u7j",
+            "lang": "ko",
+            "text": "-아서/어서"
+          },
+          {
+            "id": "c2r",
+            "lang": "ko",
+            "text": "-(으)면"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Trong câu 아이가 깰세라 조심조심 문을 닫았다, đuôi -(으)ㄹ세라 tương đương dạng hiện đại nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "453c8d150308b7206c16190e7b2ec2bbff839780c57c9c53f212a9ada6ef2885",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "06707e69-59c3-5b6e-8fd5-f5a3f5f64b54",
+      "is_demo": true,
+      "item_id": "a01e9b70-7737-5d25-944d-22a1bbdaaa58",
+      "key": "ko:exercise:hl-endings-order-geoniwa",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t-dasi",
+              "t-mal",
+              "t-mun",
+              "t-han",
+              "t-hun",
+              "t-doe",
+              "t-su",
+              "t-eop"
+            ]
+          ]
+        },
+        "display_answer": "다시 말하거니와 문화재는 한번 훼손되면 되돌릴 수 없다.",
+        "explanation": {
+          "vi": "다시 말하거니와 = \"xin nhắc lại\" - cách mở câu nhấn mạnh trong văn nghị luận. 말하거나 (hoặc nói) là token nhiễu do nhầm -거니와 với -거나."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Xin nhắc lại, di sản văn hoá một khi đã bị hư hại thì không thể lấy lại được.\"",
+        "tokens": [
+          {
+            "id": "t-hun",
+            "text": "훼손되면"
+          },
+          {
+            "id": "t-mal",
+            "text": "말하거니와"
+          },
+          {
+            "id": "t-su",
+            "text": "수"
+          },
+          {
+            "id": "t-dasi",
+            "text": "다시"
+          },
+          {
+            "id": "t-eop",
+            "text": "없다"
+          },
+          {
+            "id": "t-geona",
+            "text": "말하거나"
+          },
+          {
+            "id": "t-mun",
+            "text": "문화재는"
+          },
+          {
+            "id": "t-doe",
+            "text": "되돌릴"
+          },
+          {
+            "id": "t-han",
+            "text": "한번"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "e756ea0bbd92b1e72b891c049fcd1367795665d07be2fe76c5a64c8acc92bdea",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "e8d47e47-f408-5fa4-a29e-cb0760b8a7e2",
+      "is_demo": true,
+      "item_id": "f781c247-733b-58e2-a6ea-f05e5d06e89d",
+      "key": "ko:exercise:hl-endings-translate-mangjeong",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Thà sống nghèo chứ tôi không bán rẻ lương tâm.",
+            "Thà sống nghèo chứ không bán rẻ lương tâm.",
+            "Thà sống nghèo còn hơn bán rẻ lương tâm.",
+            "Thà sống nghèo khổ chứ tôi không bán rẻ lương tâm.",
+            "Thà sống nghèo chứ tôi sẽ không bán rẻ lương tâm.",
+            "Thà sống nghèo chứ tôi không bán lương tâm.",
+            "Dù có sống nghèo, tôi cũng không bán rẻ lương tâm.",
+            "Dù có phải sống nghèo, tôi cũng không bán rẻ lương tâm.",
+            "Dù phải sống nghèo, tôi cũng sẽ không bán rẻ lương tâm.",
+            "Dù sống nghèo tôi cũng không bán lương tâm."
+          ]
+        },
+        "display_answer": "Thà sống nghèo chứ tôi không bán rẻ lương tâm.",
+        "explanation": {
+          "vi": "-(으)ㄹ망정 = thà... chứ không / dù có... đi nữa - chấp nhận điều xấu (nghèo) để giữ điều quan trọng (lương tâm). Gần nghĩa với -(으)ㄹ지언정."
+        },
+        "known_wrong": [
+          {
+            "answer": "Tôi sẽ sống nghèo và không bán lương tâm.",
+            "error_tag": "concession_missing",
+            "feedback_vi": "-(으)ㄹ망정 không phải kế hoạch \"sẽ sống nghèo\". Người nói chỉ chấp nhận cái nghèo để giữ lương tâm - \"thà... chứ không\"."
+          },
+          {
+            "answer": "Vì sống nghèo nên tôi phải bán lương tâm.",
+            "error_tag": "archaic_misread",
+            "feedback_vi": "-(으)ㄹ망정 là nhượng bộ, không chỉ nguyên nhân; và 팔지는 않겠다 là \"nhất định không bán\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "order_index": 10,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "가난하게 살망정 양심을 팔지는 않겠다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "26c1f95a3128d6b2efbac2f2432d3db5dd3f0562d3727bb574d4fa82af74d1d2",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "599d436b-3009-5ef8-bcb0-a1e11c08f65c",
+      "is_demo": true,
+      "item_id": "b4d12555-0891-5b95-b67c-0475dbbc4c39",
+      "key": "ko:exercise:hl-endings-translate-noramyeon",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "살다 보면 좋은 날이 올 것이다.",
+            "살다 보면 좋은 날이 올 거예요.",
+            "살다 보면 좋은 날이 올 겁니다.",
+            "살다 보면 좋은 날이 오겠지요.",
+            "살다 보면 좋은 날이 오겠죠.",
+            "살다 보면 언젠가 좋은 날이 올 것이다.",
+            "살다 보면 언젠가 좋은 날이 올 거예요.",
+            "살다 보면 좋은 날도 올 거예요.",
+            "사노라면 좋은 날이 올 것이다.",
+            "사노라면 언젠가 좋은 날이 오리라.",
+            "사노라면 좋은 날이 올 거예요."
+          ]
+        },
+        "display_answer": "살다 보면 좋은 날이 올 것이다.",
+        "explanation": {
+          "vi": "Khi tự viết, dùng dạng hiện đại 살다 보면; dạng văn chương 사노라면 cũng được chấp nhận. Lưu ý ㄹ rơi trước ㄴ - 살다 → 사노라면."
+        },
+        "known_wrong": [
+          {
+            "answer": "살면 좋은 날이 올 것이다.",
+            "error_tag": "noramyeon_equivalent",
+            "feedback_vi": "-(으)면 chỉ là \"nếu\". \"Cứ sống (mãi) thì\" cần -다 보면 (văn chương - -노라면)."
+          },
+          {
+            "answer": "살노라면 좋은 날이 올 것이다.",
+            "error_tag": "l_drop",
+            "feedback_vi": "Gốc kết thúc bằng ㄹ thì rơi ㄹ trước -노라면 - 사노라면."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "order_index": 8,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Cứ sống thì rồi sẽ có ngày tốt đẹp."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "6e8fe24b8812794fedc806bd0269cc427e7932972909d02dd6f68635ec60cd7f",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "812abbae-89bc-54d2-8235-7c6c79ebfc54",
+      "is_demo": true,
+      "item_id": "9585b8a7-8545-5a41-a098-bfeee65f4e7f",
+      "key": "ko:exercise:hl-heritage-fill-bokwon",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "복원"
+            ]
+          }
+        },
+        "display_answer": "불에 탄 절은 원래 모습으로 복원되었다.",
+        "explanation": {
+          "vi": "원래 모습으로 복원되다 = được phục dựng lại hình dạng ban đầu. Đối tượng là công trình bị hư hại, nên chọn 복원."
+        },
+        "known_wrong": [
+          {
+            "answer": "회복",
+            "error_tag": "bokwon_hoebok",
+            "feedback_vi": "회복 dùng cho trạng thái (sức khoẻ, kinh tế). Công trình được dựng lại theo hình dạng cũ là 복원."
+          },
+          {
+            "answer": "보존",
+            "error_tag": "word_confusion",
+            "feedback_vi": "보존 là giữ nguyên thứ còn đó. Ngôi chùa đã cháy rồi được làm lại, nên là 복원."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "template": "Ngôi chùa bị cháy đã được phục dựng như hình dạng ban đầu. - 불에 탄 절은 원래 모습으로 {{b1}}되었다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "8d6449c815f3e1239622a2f24a2c73f15b0f13a0356ec50822d8046421a098d4",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "eb9fb720-eb69-521f-b414-31a1881336b7",
+      "is_demo": true,
+      "item_id": "b8db3677-67d9-5f81-a525-032da36b6388",
+      "key": "ko:exercise:hl-heritage-fill-hoebok",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "회복"
+            ]
+          }
+        },
+        "display_answer": "전쟁 후 경제가 회복되기까지 오랜 시간이 걸렸다.",
+        "explanation": {
+          "vi": "회복되다 = hồi phục (trạng thái trở lại như cũ) - dùng cho 경제, 건강, 신뢰. Tiếng Việt đều có thể nói \"khôi phục\", nhưng tiếng Hàn tách 복원 và 회복."
+        },
+        "known_wrong": [
+          {
+            "answer": "복원",
+            "error_tag": "bokwon_hoebok",
+            "feedback_vi": "복원 dùng cho hình dạng vật thể (công trình, tranh). Kinh tế là trạng thái nên dùng 회복."
+          },
+          {
+            "answer": "보존",
+            "error_tag": "word_confusion",
+            "feedback_vi": "보존 là giữ nguyên trạng. Ở đây kinh tế \"trở lại như trước\", nên là 회복."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "template": "Sau chiến tranh, phải mất rất lâu kinh tế mới hồi phục. - 전쟁 후 경제가 {{b1}}되기까지 오랜 시간이 걸렸다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "786c09445f327e5cde5dd02e2baa47694112655576b883e3c3dbc8aead4a8f6d",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "f6b04a0e-49fe-5fde-b629-f35bb4cde169",
+      "is_demo": true,
+      "item_id": "1fa31d8c-d736-5832-aa99-cf76526a0ddb",
+      "key": "ko:exercise:hl-heritage-fill-yurae",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "유래"
+            ]
+          }
+        },
+        "display_answer": "이 마을의 이름은 마을 앞의 큰 바위에서 유래했다.",
+        "explanation": {
+          "vi": "N에서 유래하다 = bắt nguồn từ N; trợ từ 에서 cho biết nguồn gốc. 유래했다 là quá khứ văn viết."
+        },
+        "known_wrong": [
+          {
+            "answer": "유행",
+            "error_tag": "word_confusion",
+            "feedback_vi": "유행 là \"thịnh hành\". \"Bắt nguồn từ\" là N에서 유래하다."
+          },
+          {
+            "answer": "원래",
+            "error_tag": "word_confusion",
+            "feedback_vi": "원래 là phó từ \"vốn dĩ\", không đi với 하다. Hãy dùng 유래했다."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "hint_levels": [
+          "Tên làng này bắt nguồn từ tảng đá lớn trước làng.",
+          "由來 - 유..."
+        ],
+        "template": "이 마을의 이름은 마을 앞의 큰 바위에서 {{b1}}했다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "21c32a8b6b4f0303d4883f73c8a1d7a362f0b2bc48e07db14c944f00b70d1a05",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "d3175ea5-b3d5-5489-b9f4-4c016a8e161f",
+      "is_demo": true,
+      "item_id": "9585b8a7-8545-5a41-a098-bfeee65f4e7f",
+      "key": "ko:exercise:hl-heritage-listen-bokwon",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r3g"
+        },
+        "display_answer": "Cổng Sungnyemun bị cháy năm 2008 đã được phục dựng sau 5 năm thi công.",
+        "explanation": {
+          "vi": "화재로 훼손된 = bị hư hại do hoả hoạn; 5년에 걸친 공사 끝에 = sau công trình kéo dài 5 năm; 복원되었다 = đã được phục dựng. Vì có 훼손, phương án \"chưa từng bị hư hại\" sai."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "order_index": 3,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "2008년 화재로 크게 훼손된 숭례문은 5년에 걸친 공사 끝에 복원되었다.",
+        "options": [
+          {
+            "id": "i9k",
+            "lang": "vi",
+            "text": "Cổng Sungnyemun được xây dựng trong 5 năm và hoàn thành năm 2008."
+          },
+          {
+            "id": "r3g",
+            "lang": "vi",
+            "text": "Cổng Sungnyemun bị cháy năm 2008 đã được phục dựng sau 5 năm thi công."
+          },
+          {
+            "id": "f6w",
+            "lang": "vi",
+            "text": "Cổng Sungnyemun bị cháy năm 2008 đến nay vẫn chưa được sửa chữa."
+          },
+          {
+            "id": "s2p",
+            "lang": "vi",
+            "text": "Cổng Sungnyemun đã được bảo tồn nguyên vẹn, chưa từng bị hư hại."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "5292a7811ebddd0ef70808a9aa44f294613d848176b367c44609b220eedb79b8",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "89551667-b28a-5092-b115-e7d4423eb141",
+      "is_demo": true,
+      "item_id": "e638a461-5adc-5ff7-b42c-a0634c56b06c",
+      "key": "ko:exercise:hl-heritage-mcq-baekseong",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "q8d"
+        },
+        "display_answer": "세종대왕은 글을 모르는 백성을 안타깝게 여겼다.",
+        "explanation": {
+          "vi": "백성 hợp với bối cảnh vua Sejong thời phong kiến. Tổng thống nói với 국민 chứ không phải 백성; đồ trong tủ kính là 유물; sức khoẻ thì 회복."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "l3z",
+            "lang": "ko",
+            "text": "대통령은 새해를 맞아 백성에게 인사를 전했다."
+          },
+          {
+            "id": "y6a",
+            "lang": "ko",
+            "text": "이 박물관은 조선 시대의 유적을 유리장 안에 전시한다."
+          },
+          {
+            "id": "q8d",
+            "lang": "ko",
+            "text": "세종대왕은 글을 모르는 백성을 안타깝게 여겼다."
+          },
+          {
+            "id": "j2w",
+            "lang": "ko",
+            "text": "그는 수술 후 건강을 빠르게 복원했다."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào dùng từ đúng ngữ cảnh?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "b19c0373d391d3fb7713a9f5937c8371c2fdbe85539483ee09e37cd73c35dcb2",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "b17af335-1588-5073-9636-294bf5e3073c",
+      "is_demo": true,
+      "item_id": "62a38c3e-9b37-55b7-8e1f-39cadb51b009",
+      "key": "ko:exercise:hl-heritage-mcq-bojeon",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "z6r"
+        },
+        "display_answer": "Bảo toàn - thường đi với 환경, 생태계",
+        "explanation": {
+          "vi": "保全 đọc Hán Việt là \"bảo toàn\", hay dùng cho 환경 보전, 생태계 보전. \"Bảo tồn\" (保存) là 보존, \"phục nguyên\" là 복원, \"hồi phục\" là 회복 - ba cặp này hay bị dùng lẫn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "t9c",
+            "lang": "vi",
+            "text": "Phục nguyên - thường đi với 건물, 그림"
+          },
+          {
+            "id": "z6r",
+            "lang": "vi",
+            "text": "Bảo toàn - thường đi với 환경, 생태계"
+          },
+          {
+            "id": "e4y",
+            "lang": "vi",
+            "text": "Hồi phục - thường đi với 건강, 경제"
+          },
+          {
+            "id": "h1m",
+            "lang": "vi",
+            "text": "Bảo tồn - thường đi với 유물, 기록"
+          }
+        ],
+        "shuffle": true,
+        "stem": "보전 (保全) có âm Hán Việt là gì và thường đi với từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "e4e9c21533b235cdef7f2bbcb6809eea7a3cc1086b764d9efc28ce9c1c5cbc9b",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "8c5a43ed-0c99-525d-829f-0d394d815983",
+      "is_demo": true,
+      "item_id": "22948a2e-97c8-592d-803a-75b114d3734c",
+      "key": "ko:exercise:hl-heritage-mcq-bojon-context",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "n4b"
+        },
+        "display_answer": "고문서를 원래 상태 그대로 보존하고 있다.",
+        "explanation": {
+          "vi": "Giữ văn bản cổ nguyên trạng = 보존하다. 회복 là hồi phục trạng thái đã mất, 유래하다 không có tân ngữ (N에서 유래하다), 기억하다 là nhớ trong đầu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "g7t",
+            "lang": "ko",
+            "text": "고문서를 원래 상태 그대로 회복하고 있다."
+          },
+          {
+            "id": "o1e",
+            "lang": "ko",
+            "text": "고문서를 원래 상태 그대로 유래하고 있다."
+          },
+          {
+            "id": "n4b",
+            "lang": "ko",
+            "text": "고문서를 원래 상태 그대로 보존하고 있다."
+          },
+          {
+            "id": "v5h",
+            "lang": "ko",
+            "text": "고문서를 원래 상태 그대로 기억하고 있다."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn viết báo cáo về việc lưu giữ các văn bản cổ nguyên trạng trong kho lưu trữ. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "aec4e956a71b424e2591adfb7a8fdb4bbde340ee812e09dce991708244d417a8",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "56d01a37-324f-5bbf-ad49-53d21611f8ee",
+      "is_demo": true,
+      "item_id": "cfb0ce9f-f440-5d97-a88a-2acf2f525ad5",
+      "key": "ko:exercise:hl-heritage-mcq-hunmin",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k3v"
+        },
+        "display_answer": "Việc sáng chế ra bộ chữ \"dạy dân âm chuẩn\" (chữ Hangul)",
+        "explanation": {
+          "vi": "훈민정음 = 訓民正音 (huấn dân chính âm - âm chuẩn để dạy dân), tên gốc của chữ Hangul; 창제 = sáng chế. Bộ sử ký là 조선왕조실록, không liên quan đến 창제."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "b5n",
+            "lang": "vi",
+            "text": "Việc phát minh ra máy in chữ rời bằng kim loại"
+          },
+          {
+            "id": "k3v",
+            "lang": "vi",
+            "text": "Việc sáng chế ra bộ chữ \"dạy dân âm chuẩn\" (chữ Hangul)"
+          },
+          {
+            "id": "w8q",
+            "lang": "vi",
+            "text": "Việc ban hành bộ luật đầu tiên của triều Joseon"
+          },
+          {
+            "id": "p2x",
+            "lang": "vi",
+            "text": "Việc biên soạn bộ sử ký của triều Joseon"
+          }
+        ],
+        "shuffle": true,
+        "stem": "훈민정음 창제 nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "79257724e1c9dd1496be56797300ea35531715487fb773b1dd0460b2b53ada79",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "5bf4bf2b-93b4-58a1-9ef8-dc9642fa7dd6",
+      "is_demo": true,
+      "item_id": "bb8509c0-30ad-512a-8c50-3b05ed409774",
+      "key": "ko:exercise:hl-heritage-mcq-yumul",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "d7s"
+        },
+        "display_answer": "유물",
+        "explanation": {
+          "vi": "Đồ vật có thể mang đi trưng bày là 유물 (di vật). 유적 là di tích (một địa điểm), 유래 là nguồn gốc, 유행 là sự thịnh hành."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "c5j",
+            "lang": "ko",
+            "text": "유행"
+          },
+          {
+            "id": "a2f",
+            "lang": "ko",
+            "text": "유적"
+          },
+          {
+            "id": "d7s",
+            "lang": "ko",
+            "text": "유물"
+          },
+          {
+            "id": "m8u",
+            "lang": "ko",
+            "text": "유래"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chiếc bình gốm thời Joseon được trưng bày trong tủ kính ở bảo tàng là ___.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "804f0d2101889708d6e08f6b9245f36f45551ec41cc947cc61277fd6b86a2743",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "d3859ad4-6581-5677-b4aa-e5170026713e",
+      "is_demo": true,
+      "item_id": "1cab6367-ab9a-59ae-8669-f0edf7425dad",
+      "key": "ko:exercise:hl-heritage-order-girok",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t-joseon",
+              "t-sidae",
+              "t-girok",
+              "t-jal",
+              "t-bo",
+              "t-it"
+            ]
+          ]
+        },
+        "display_answer": "조선 시대의 기록이 잘 보존되어 있다.",
+        "explanation": {
+          "vi": "조선 시대의 기록이 (chủ ngữ) + 잘 + 보존되어 있다 (trạng thái được bảo tồn kéo dài). 회복되어 là token nhiễu - tư liệu được giữ nguyên trạng, không phải \"hồi phục\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Tư liệu ghi chép thời Joseon được bảo tồn tốt.\"",
+        "tokens": [
+          {
+            "id": "t-jal",
+            "text": "잘"
+          },
+          {
+            "id": "t-it",
+            "text": "있다"
+          },
+          {
+            "id": "t-joseon",
+            "text": "조선"
+          },
+          {
+            "id": "t-hoe",
+            "text": "회복되어"
+          },
+          {
+            "id": "t-girok",
+            "text": "기록이"
+          },
+          {
+            "id": "t-bo",
+            "text": "보존되어"
+          },
+          {
+            "id": "t-sidae",
+            "text": "시대의"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "0c78a71f1b4e88cbf06e14ab6fff40b9b58b2e9459cab14161c6edbb2948ae63",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "87764585-5f20-5cb6-9068-f8503109f123",
+      "is_demo": true,
+      "item_id": "cfb0ce9f-f440-5d97-a88a-2acf2f525ad5",
+      "key": "ko:exercise:hl-heritage-translate-sejong",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "세종대왕은 훈민정음을 창제했다.",
+            "세종대왕이 훈민정음을 창제했다.",
+            "세종대왕은 훈민정음을 창제하였다.",
+            "세종대왕이 훈민정음을 창제하였다.",
+            "세종대왕은 훈민정음을 창제했어요.",
+            "세종대왕이 훈민정음을 창제했어요.",
+            "세종대왕은 훈민정음을 창제했습니다.",
+            "세종대왕이 훈민정음을 창제했습니다.",
+            "세종대왕께서 훈민정음을 창제하셨다.",
+            "세종대왕께서 훈민정음을 창제하셨어요."
+          ]
+        },
+        "display_answer": "세종대왕은 훈민정음을 창제했다.",
+        "explanation": {
+          "vi": "Chủ ngữ 세종대왕은/이 (hoặc kính ngữ 께서), tân ngữ 훈민정음을, động từ 창제했다. Văn viết lịch sử hay dùng 창제하였다."
+        },
+        "known_wrong": [
+          {
+            "answer": "세종대왕은 훈민정음을 발명했다.",
+            "error_tag": "word_choice",
+            "feedback_vi": "Với chữ viết, văn bản lịch sử dùng 창제하다 (sáng chế), không dùng 발명하다 như máy móc."
+          },
+          {
+            "answer": "세종대왕은 훈민정음이 창제했다.",
+            "error_tag": "particle_object",
+            "feedback_vi": "훈민정음 là tân ngữ nên cần 을 - 훈민정음을 창제했다."
+          },
+          {
+            "answer": "sejong daewang-eun hunminjeongeum-eul changjehaetda",
+            "error_tag": "romanization",
+            "feedback_vi": "Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Vua Sejong đã sáng chế Huấn dân chính âm."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "a9149cad9dd91e489f3de9298bdbebff717d8522410545a32e50fa92a0454ded",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "29bb9846-d337-51f0-bce2-a1ad4a21de91",
+      "is_demo": true,
+      "item_id": "ca116095-ea19-5a9f-8bf1-2ab0231e8778",
+      "key": "ko:exercise:hl-heritage-translate-unesco",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Cung điện này đã được ghi danh là Di sản thế giới UNESCO.",
+            "Cung điện này được ghi danh là Di sản thế giới UNESCO.",
+            "Cung điện này đã được công nhận là Di sản thế giới UNESCO.",
+            "Cung điện này được công nhận là Di sản thế giới UNESCO.",
+            "Cung điện này đã được UNESCO công nhận là Di sản thế giới.",
+            "Cung điện này đã được ghi danh là Di sản thế giới của UNESCO.",
+            "Cung điện này đã được công nhận là Di sản thế giới của UNESCO.",
+            "Cung điện này đã được đưa vào danh sách Di sản thế giới UNESCO.",
+            "Cung điện này đã được đưa vào danh sách Di sản thế giới của UNESCO."
+          ]
+        },
+        "display_answer": "Cung điện này đã được ghi danh là Di sản thế giới UNESCO.",
+        "explanation": {
+          "vi": "궁궐 = cung điện; 유네스코 세계 유산 = Di sản thế giới UNESCO; 등재되었다 = đã được ghi danh (đưa vào danh sách). \"Được công nhận\" cũng là cách dịch tự nhiên."
+        },
+        "known_wrong": [
+          {
+            "answer": "Cung điện này đã đăng ký Di sản thế giới UNESCO.",
+            "error_tag": "passive_meaning",
+            "feedback_vi": "등재되다 là bị động \"được ghi danh\", không phải chủ động \"đăng ký\"."
+          },
+          {
+            "answer": "Cung điện này là Di sản văn hoá của Hàn Quốc.",
+            "error_tag": "meaning_shift",
+            "feedback_vi": "Câu gốc nói về 유네스코 세계 유산 - Di sản thế giới UNESCO, không phải di sản quốc gia."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "order_index": 10,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "이 궁궐은 유네스코 세계 유산으로 등재되었다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "a323a221cf6975815681ecc3a7a5dc09c916493c8a4994f83f7cfc21d4db254b",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "d0385fe9-5576-5414-9170-0dccc7fbb458",
+      "is_demo": true,
+      "item_id": "da20949c-5632-57ee-b607-a5068e067ea4",
+      "key": "ko:exercise:hl-idioms-fill-ip",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "무거우니까",
+              "무거워서"
+            ]
+          }
+        },
+        "display_answer": "지수는 입이 무거우니까 비밀을 말해도 괜찮다.",
+        "explanation": {
+          "vi": "Kín miệng = 입이 무겁다 (miệng nặng). 무겁다 bất quy tắc ㅂ - 무거우니까, 무거워서."
+        },
+        "known_wrong": [
+          {
+            "answer": "가벼우니까",
+            "error_tag": "idiom_opposite",
+            "feedback_vi": "입이 가볍다 là bép xép - ngược nghĩa. Kín miệng là 입이 무겁다."
+          },
+          {
+            "answer": "가벼워서",
+            "error_tag": "idiom_opposite",
+            "feedback_vi": "입이 가볍다 là bép xép - ngược nghĩa. Kín miệng là 입이 무겁다."
+          },
+          {
+            "answer": "무겁으니까",
+            "error_tag": "b_irregular",
+            "feedback_vi": "무겁다 là bất quy tắc ㅂ - ㅂ đổi thành 우 - 무거우니까."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "hint_levels": [
+          "Jisu kín miệng nên kể bí mật cũng không sao.",
+          "Kín miệng = 입이 무겁다; chia với -(으)니까 hoặc -아/어서."
+        ],
+        "template": "지수는 입이 {{b1}} 비밀을 말해도 괜찮다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "0f5d6e4a4c7732aa60bb8738dc84d5dd955db0ea4f213598e8c8c2b8b825dc5f",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "372b065c-01c3-57c9-b193-3ae111ed71ee",
+      "is_demo": true,
+      "item_id": "68eefcd3-a09e-5dbe-b774-cb6031e97ae5",
+      "key": "ko:exercise:hl-idioms-fill-nun",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "높아서",
+              "높으니까"
+            ]
+          }
+        },
+        "display_answer": "그 사람은 눈이 높아서 아직 마음에 드는 집을 못 찾았다.",
+        "explanation": {
+          "vi": "눈이 높다 = tiêu chuẩn cao, kén chọn. 높아서 nối âm đọc [노파서]."
+        },
+        "known_wrong": [
+          {
+            "answer": "커서",
+            "error_tag": "idiom_form",
+            "feedback_vi": "눈이 크다 chỉ là \"mắt to\". Kén chọn là 눈이 높다."
+          },
+          {
+            "answer": "밝아서",
+            "error_tag": "idiom_form",
+            "feedback_vi": "눈이 밝다 là \"tinh mắt\". Kén chọn là 눈이 높다."
+          },
+          {
+            "answer": "낮아서",
+            "error_tag": "idiom_opposite",
+            "feedback_vi": "눈이 낮다 là dễ tính, tiêu chuẩn thấp - ngược nghĩa."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "Người đó kén chọn nên vẫn chưa tìm được căn nhà ưng ý. - 그 사람은 눈이 {{b1}} 아직 마음에 드는 집을 못 찾았다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "0df7c15da148244ae4fb614519d51b390ec32f0deca14bb908ac11e94aa42da8",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "18f855f7-d0e2-5978-86a1-87734ed7fcae",
+      "is_demo": true,
+      "item_id": "dfa7f024-a5c9-5507-a199-4e65054a69a1",
+      "key": "ko:exercise:hl-idioms-fill-son",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "커서",
+              "크셔서",
+              "크니까",
+              "크시니까"
+            ]
+          }
+        },
+        "display_answer": "할머니는 손이 커서 명절마다 음식을 너무 많이 하신다.",
+        "explanation": {
+          "vi": "손이 크다 = rộng tay, làm gì cũng nhiều. 크다 rơi ㅡ khi gặp -어서 - 커서; với kính ngữ là 크셔서."
+        },
+        "known_wrong": [
+          {
+            "answer": "넓어서",
+            "error_tag": "idiom_form",
+            "feedback_vi": "넓다 đi với 발 (quen biết rộng). \"Rộng tay\" trong tiếng Hàn là 손이 크다."
+          },
+          {
+            "answer": "작아서",
+            "error_tag": "idiom_opposite",
+            "feedback_vi": "손이 작다 là làm gì cũng ít, chi li - ngược nghĩa."
+          },
+          {
+            "answer": "좋아서",
+            "error_tag": "idiom_form",
+            "feedback_vi": "손이 좋다 không phải quán ngữ \"rộng tay\". Hãy dùng 손이 크다."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "Bà rộng tay nên Tết nào cũng nấu quá nhiều đồ ăn. - 할머니는 손이 {{b1}} 명절마다 음식을 너무 많이 하신다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "73870efed27d46bc2fb96bba13773a3a658d8c945f12077fdf6d087bd367c893",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "9604dcba-877b-5484-8926-43588b265399",
+      "is_demo": true,
+      "item_id": "ef3597e2-305c-51ec-a51e-ebcdceda732b",
+      "key": "ko:exercise:hl-idioms-listen-miyeok",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "u3d"
+        },
+        "display_answer": "Anh tôi đã trượt kỳ thi bằng lái những hai lần.",
+        "explanation": {
+          "vi": "Ngữ cảnh 운전면허 시험 (thi bằng lái) nên 미역국을 먹다 mang nghĩa bóng \"thi trượt\"; 두 번이나 = những hai lần. Hiểu nghĩa đen \"ăn canh rong biển\" là bẫy dịch từng chữ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "형은 운전면허 시험에서 두 번이나 미역국을 먹었다.",
+        "options": [
+          {
+            "id": "i5v",
+            "lang": "vi",
+            "text": "Anh tôi tổ chức sinh nhật hai lần trong năm."
+          },
+          {
+            "id": "u3d",
+            "lang": "vi",
+            "text": "Anh tôi đã trượt kỳ thi bằng lái những hai lần."
+          },
+          {
+            "id": "y8g",
+            "lang": "vi",
+            "text": "Anh tôi đã ăn canh rong biển hai lần trước kỳ thi bằng lái."
+          },
+          {
+            "id": "o2r",
+            "lang": "vi",
+            "text": "Anh tôi đã đỗ kỳ thi bằng lái ngay lần thứ hai."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "24930dfbfbe44f55fa4e0b18b1a02c7d9e6d7690444fdcffa0bc5959c984af02",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "43df4135-10bb-5da0-8f3f-8034315f0c17",
+      "is_demo": true,
+      "item_id": "408dfba6-5d29-538f-bdec-ee6d717a617a",
+      "key": "ko:exercise:hl-idioms-mcq-bal",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "j5w"
+        },
+        "display_answer": "Quen biết rộng",
+        "explanation": {
+          "vi": "발이 넓다 là quán ngữ - \"quen biết rộng\". \"Đi nhiều nơi\" là 여기저기 많이 다니다, còn \"rộng tay\" là 손이 크다."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "z8m",
+            "lang": "vi",
+            "text": "Có bàn chân to"
+          },
+          {
+            "id": "j5w",
+            "lang": "vi",
+            "text": "Quen biết rộng"
+          },
+          {
+            "id": "v2k",
+            "lang": "vi",
+            "text": "Đi du lịch nhiều nơi"
+          },
+          {
+            "id": "c3q",
+            "lang": "vi",
+            "text": "Hào phóng, rộng tay"
+          }
+        ],
+        "shuffle": true,
+        "stem": "발이 넓다 nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "7ae56c9e300df2113da4aee4bb637d284bf7ed63c108b1d9c222b569eff8ca5a",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "443bffbd-e8e2-5783-be3b-6a9e8521b9dd",
+      "is_demo": true,
+      "item_id": "25989d40-4ff0-50e1-babc-245270906e3a",
+      "key": "ko:exercise:hl-idioms-mcq-gwi",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r7t"
+        },
+        "display_answer": "Nhẹ dạ cả tin, dễ nghe theo người khác",
+        "explanation": {
+          "vi": "귀가 얇다 (tai mỏng) = dễ bị thuyết phục, nhẹ dạ. Thính tai là 귀가 밝다, nghễnh ngãng là 귀가 어둡다, kín miệng là 입이 무겁다."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "h6b",
+            "lang": "vi",
+            "text": "Nghễnh ngãng, nghe kém"
+          },
+          {
+            "id": "r7t",
+            "lang": "vi",
+            "text": "Nhẹ dạ cả tin, dễ nghe theo người khác"
+          },
+          {
+            "id": "n4s",
+            "lang": "vi",
+            "text": "Kín miệng, biết giữ bí mật"
+          },
+          {
+            "id": "e1x",
+            "lang": "vi",
+            "text": "Thính tai, nghe rất rõ"
+          }
+        ],
+        "shuffle": true,
+        "stem": "귀가 얇다 nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "27e0dac40c3c93895f074cd51e24e2c8ca842357ff5b693ecbea93af5ffdea6a",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "b91ef7ed-901f-55c2-979f-0deb705adfde",
+      "is_demo": true,
+      "item_id": "68eefcd3-a09e-5dbe-b774-cb6031e97ae5",
+      "key": "ko:exercise:hl-idioms-mcq-nun-usage",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "s1g"
+        },
+        "display_answer": "그는 눈이 높아서 아무 옷이나 사지 않는다.",
+        "explanation": {
+          "vi": "눈이 높다 = kén chọn, nên \"không mua quần áo tuỳ tiện\" là đúng. Coi thường người khác là kiêu ngạo (콧대가 높다); nhìn xa rõ là 눈이 좋다; câu cuối hiểu theo nghĩa đen."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "a5z",
+            "lang": "ko",
+            "text": "그는 눈이 높아서 키가 커 보인다."
+          },
+          {
+            "id": "s1g",
+            "lang": "ko",
+            "text": "그는 눈이 높아서 아무 옷이나 사지 않는다."
+          },
+          {
+            "id": "k8u",
+            "lang": "ko",
+            "text": "그는 눈이 높아서 다른 사람을 무시한다."
+          },
+          {
+            "id": "f3h",
+            "lang": "ko",
+            "text": "그는 눈이 높아서 멀리 있는 글씨도 잘 본다."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào dùng 눈이 높다 đúng nghĩa?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "35374b33b20e624d2c098e1f1d2972fc821121e849be21b6ce76677d0d2f5c93",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "35af8289-ebb5-5c33-a1b2-9daaebab5169",
+      "is_demo": true,
+      "item_id": "25989d40-4ff0-50e1-babc-245270906e3a",
+      "key": "ko:exercise:hl-idioms-mcq-situation-gwi",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "m6c"
+        },
+        "display_answer": "귀가 얇다",
+        "explanation": {
+          "vi": "Dễ bị lời người khác thuyết phục = 귀가 얇다. Người 눈이 높다 (kén chọn) thì ngược lại, khó mua đồ; 입이 무겁다 và 발이 넓다 không liên quan."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "order_index": 7,
+      "prompt": {
+        "options": [
+          {
+            "id": "p7n",
+            "lang": "ko",
+            "text": "눈이 높다"
+          },
+          {
+            "id": "m6c",
+            "lang": "ko",
+            "text": "귀가 얇다"
+          },
+          {
+            "id": "w4y",
+            "lang": "ko",
+            "text": "발이 넓다"
+          },
+          {
+            "id": "b9e",
+            "lang": "ko",
+            "text": "입이 무겁다"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn của bạn cứ nghe người bán hàng giới thiệu là mua ngay, rồi lại hối hận. Quán ngữ nào miêu tả đúng người này?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "e8f30a4b3e1c80f66d20416b425797d3f123c708324a5aa30e9c9f2ea2dbdbc4",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "b4cb2a7f-e85b-53ff-b1ba-22627fa1b430",
+      "is_demo": true,
+      "item_id": "96b95b4f-dc6a-5781-b2ee-08ff4f62ce01",
+      "key": "ko:exercise:hl-idioms-order-bigyu",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t-si",
+              "t-insaeng",
+              "t-gang-e",
+              "t-bigyu"
+            ],
+            [
+              "t-si",
+              "t-gang-e",
+              "t-insaeng",
+              "t-bigyu"
+            ]
+          ]
+        },
+        "display_answer": "시인은 인생을 강물에 비유했다.",
+        "explanation": {
+          "vi": "Mẫu A를 B에 비유하다 - cái được ví (인생) mang 을/를, hình ảnh ví von (강물) mang 에. 강물을 và 인생에 là token nhiễu do đảo trợ từ, lỗi người Việt hay mắc."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "order_index": 10,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Nhà thơ ví cuộc đời với dòng sông.\"",
+        "tokens": [
+          {
+            "id": "t-bigyu",
+            "text": "비유했다"
+          },
+          {
+            "id": "t-gang-eul",
+            "text": "강물을"
+          },
+          {
+            "id": "t-insaeng",
+            "text": "인생을"
+          },
+          {
+            "id": "t-si",
+            "text": "시인은"
+          },
+          {
+            "id": "t-insaeng-e",
+            "text": "인생에"
+          },
+          {
+            "id": "t-gang-e",
+            "text": "강물에"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "9e527e1205a67ce1d8f2e7674df78deefc61c7bafcf398fef09bdacd3af1a844",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "190ba0e4-a760-5ec7-8bbe-f9f7ce2527bc",
+      "is_demo": true,
+      "item_id": "408dfba6-5d29-538f-bdec-ee6d717a617a",
+      "key": "ko:exercise:hl-idioms-translate-bal",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "민수 씨는 발이 넓어요.",
+            "민수 씨가 발이 넓어요.",
+            "민수 씨는 발이 넓다.",
+            "민수 씨는 발이 넓습니다.",
+            "민수 씨는 정말 발이 넓어요.",
+            "민수는 발이 넓어요.",
+            "민수는 발이 넓다.",
+            "민수 씨는 인맥이 넓어요.",
+            "민수 씨는 인맥이 넓다."
+          ]
+        },
+        "display_answer": "민수 씨는 발이 넓어요.",
+        "explanation": {
+          "vi": "Quen biết rộng = 발이 넓다 (hoặc 인맥이 넓다). 넓다 + -어요 → 넓어요, đọc [널버요]."
+        },
+        "known_wrong": [
+          {
+            "answer": "민수 씨는 발이 커요.",
+            "error_tag": "idiom_form",
+            "feedback_vi": "발이 크다 chỉ là \"chân to\". Quán ngữ \"quen biết rộng\" là 발이 넓다."
+          },
+          {
+            "answer": "민수 씨는 손이 커요.",
+            "error_tag": "idiom_meaning",
+            "feedback_vi": "손이 크다 là \"rộng tay, hào phóng\", không phải quen biết rộng."
+          },
+          {
+            "answer": "minsu ssi-neun bari neolleoyo",
+            "error_tag": "romanization",
+            "feedback_vi": "Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Anh Minsu quen biết rộng."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "5942141abd1b7ca5f062fed066285a3164bdd331f831142dfdd1a6369f19bc23",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "1d4bc951-dc83-5359-9115-9c88e606bc84",
+      "is_demo": true,
+      "item_id": "80e6c2db-b5eb-5255-98d1-740b45678ac2",
+      "key": "ko:exercise:hl-idioms-translate-ip-gabyeop",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Không nên kể chuyện quan trọng cho người bép xép.",
+            "Không nên nói chuyện quan trọng với người bép xép.",
+            "Không nên nói chuyện quan trọng cho người bép xép.",
+            "Tốt nhất là không kể chuyện quan trọng cho người bép xép.",
+            "Tốt nhất không nên kể chuyện quan trọng cho người bép xép.",
+            "Không nên kể chuyện quan trọng cho người không biết giữ bí mật.",
+            "Không nên kể chuyện quan trọng cho người hay để lộ bí mật.",
+            "Không nên kể chuyện quan trọng cho người lắm mồm.",
+            "Không nên kể chuyện quan trọng cho người không kín miệng.",
+            "Đừng kể chuyện quan trọng cho người bép xép."
+          ]
+        },
+        "display_answer": "Không nên kể chuyện quan trọng cho người bép xép.",
+        "explanation": {
+          "vi": "입이 가벼운 사람 = người bép xép; -지 않는 게 좋다 = không nên, tốt nhất là không. Ngược nghĩa với 입이 가볍다 là 입이 무겁다 (kín miệng)."
+        },
+        "known_wrong": [
+          {
+            "answer": "Không nên kể chuyện quan trọng cho người miệng nhẹ.",
+            "error_tag": "literal_idiom",
+            "feedback_vi": "Đừng dịch từng chữ quán ngữ. 입이 가볍다 = bép xép, không giữ được bí mật."
+          },
+          {
+            "answer": "Nên kể chuyện quan trọng cho người bép xép.",
+            "error_tag": "negation_missing",
+            "feedback_vi": "-지 않는 게 좋다 là \"không nên\" - bạn đã bỏ mất phủ định."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "입이 가벼운 사람에게는 중요한 이야기를 하지 않는 게 좋다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "5d062e0c2c094666cc3014168ecd1532caa3d16df8e5ce56d3a33c29132137ef",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "b32d1e35-29ce-54c0-94e2-59a5c1bf57ba",
+      "is_demo": true,
+      "item_id": "7e8accf4-7001-55aa-9b1e-1c71262d02d4",
+      "key": "ko:exercise:hl-reading-fill-amsi",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "암시"
+            ]
+          }
+        },
+        "display_answer": "마지막 문장은 화자가 돌아오지 못할 것임을 암시한다.",
+        "explanation": {
+          "vi": "암시하다 (暗示 - ám thị) = gợi ngầm. Ngược lại, 명시하다 là nói rõ ràng. Câu hỏi suy luận TOPIK hỏi điều được 암시."
+        },
+        "known_wrong": [
+          {
+            "answer": "명시",
+            "error_tag": "amsi_myeongsi",
+            "feedback_vi": "명시 là \"ghi rõ\". \"Ngầm cho biết\" là 암시."
+          },
+          {
+            "answer": "기억",
+            "error_tag": "word_confusion",
+            "feedback_vi": "기억하다 là nhớ. Gợi ý gián tiếp là 암시하다."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "template": "Câu cuối ngầm cho biết nhân vật trữ tình sẽ không thể trở lại. - 마지막 문장은 화자가 돌아오지 못할 것임을 {{b1}}한다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "74c21a36cc7dffa5d22bded2e12df5388eef1e34cad87d2ba9d0f53bb047389e",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "8d0a8c45-962d-5cc7-9e7a-4415ad47aade",
+      "is_demo": true,
+      "item_id": "efe037fb-a400-5178-b16b-b517f1326584",
+      "key": "ko:exercise:hl-reading-fill-bipan",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "비판적"
+            ]
+          }
+        },
+        "display_answer": "필자는 무분별한 개발에 대해 비판적인 태도를 보인다.",
+        "explanation": {
+          "vi": "비판적 (批判的) = mang tính phê phán. Người Việt hay nhầm với 비관적 (悲觀的 - bi quan) vì hai từ chỉ khác 판/관."
+        },
+        "known_wrong": [
+          {
+            "answer": "낙관적",
+            "error_tag": "attitude_word",
+            "feedback_vi": "낙관적 là lạc quan. Chỉ ra cái sai của việc khai thác bừa bãi là 비판적."
+          },
+          {
+            "answer": "비관적",
+            "error_tag": "bipan_bigwan",
+            "feedback_vi": "비관적 là bi quan (nghĩ mọi việc sẽ xấu đi). Phê phán là 비판적 - chú ý 판 và 관."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Người viết thể hiện thái độ phê phán đối với việc khai thác bừa bãi.",
+          "批判的 - 비..."
+        ],
+        "template": "필자는 무분별한 개발에 대해 {{b1}}인 태도를 보인다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "c08aa116b2772cf9c1d41becad5d7c9958709511ec6ef12dd37ba4e01930d647",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "7473b044-6424-506a-8593-2e0b0cffce34",
+      "is_demo": true,
+      "item_id": "40349751-0cf9-52e9-9e25-1e66ac87429e",
+      "key": "ko:exercise:hl-reading-fill-nakgwan",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "낙관적"
+            ]
+          }
+        },
+        "display_answer": "전문가들은 사업의 전망을 낙관적으로 보고 있다.",
+        "explanation": {
+          "vi": "낙관적 (樂觀的) = lạc quan về triển vọng, kết quả; N을 낙관적으로 보다 = nhìn N một cách lạc quan. Đọc [낙꽌저그로]."
+        },
+        "known_wrong": [
+          {
+            "answer": "비관적",
+            "error_tag": "attitude_opposite",
+            "feedback_vi": "비관적 là bi quan - ngược nghĩa. Lạc quan là 낙관적."
+          },
+          {
+            "answer": "낙천적",
+            "error_tag": "nakgwan_nakcheon",
+            "feedback_vi": "낙천적 là tính cách vui vẻ của một người. Đánh giá triển vọng thì dùng 낙관적."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "Các chuyên gia nhìn nhận triển vọng của dự án một cách lạc quan. - 전문가들은 사업의 전망을 {{b1}}으로 보고 있다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "9f0efdf38ae96cf2e58820ed4e7ba35bd817c5c6a3fe1d2df603c8a52989ea9b",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "c62bba7e-6122-5a64-bcd5-0c775b0f1dda",
+      "is_demo": true,
+      "item_id": "4280dbc5-7bd0-51c8-8cfd-f05ead3f7183",
+      "key": "ko:exercise:hl-reading-listen-hwaja",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "f7a"
+        },
+        "display_answer": "Nhân vật trữ tình trong bài thơ này đang nhớ người đã ra đi.",
+        "explanation": {
+          "vi": "화자 = nhân vật trữ tình (người nói trong thơ); 떠나간 사람 = người đã ra đi; 그리워하다 = nhớ nhung. 그리워하다 khác 잊다 (quên)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "이 시의 화자는 떠나간 사람을 그리워하고 있다.",
+        "options": [
+          {
+            "id": "x2h",
+            "lang": "vi",
+            "text": "Tác giả bài thơ này đang chờ một người sắp đến."
+          },
+          {
+            "id": "l9u",
+            "lang": "vi",
+            "text": "Nhân vật trữ tình trong bài thơ này đã quên người đã ra đi."
+          },
+          {
+            "id": "f7a",
+            "lang": "vi",
+            "text": "Nhân vật trữ tình trong bài thơ này đang nhớ người đã ra đi."
+          },
+          {
+            "id": "c4k",
+            "lang": "vi",
+            "text": "Bài thơ này kể về chuyến đi xa của tác giả."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "d2709e30f1077887c35960d7590a7c4e59a4b08656676141f8e41ffca73395f6",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "f739771d-f00f-5f1d-b412-75a0b59e4bb0",
+      "is_demo": true,
+      "item_id": "2972fa90-fa6e-588c-a93e-c302c5d8a4a8",
+      "key": "ko:exercise:hl-reading-mcq-hoeui",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "p3m"
+        },
+        "display_answer": "Hoài nghi",
+        "explanation": {
+          "vi": "회의적 (懷疑的) = hoài nghi - nghi ngờ hiệu quả của chính sách. Đừng nhầm với 회의 (會議 - cuộc họp); lạc quan là 낙관적."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "k5e",
+            "lang": "vi",
+            "text": "Lạc quan"
+          },
+          {
+            "id": "z2y",
+            "lang": "vi",
+            "text": "Ủng hộ nhiệt tình"
+          },
+          {
+            "id": "d9w",
+            "lang": "vi",
+            "text": "Mang tính hội nghị"
+          },
+          {
+            "id": "p3m",
+            "lang": "vi",
+            "text": "Hoài nghi"
+          }
+        ],
+        "shuffle": true,
+        "stem": "필자는 새 정책의 효과에 대해 회의적이다. - 회의적 ở đây nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "2f47f725f361a07a2547abd379e3eb5b731f201143628a919b7f3b8df6ab6c22",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "e1ac19e5-6bc7-53d1-9519-1adcc897cd39",
+      "is_demo": true,
+      "item_id": "623ef44e-97a6-54c8-8fa7-78bd9eb03eac",
+      "key": "ko:exercise:hl-reading-mcq-poem",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "e8b"
+        },
+        "display_answer": "떠나간 사람에 대한 그리움",
+        "explanation": {
+          "vi": "Hành động lặp lại mỗi ngày (오늘도) thả tên người đã đi lên sóng cho thấy nỗi nhớ - 그리움. Dòng sông là hình ảnh 비유 cho thời gian trôi, không phải chủ đề môi trường hay du lịch; không có từ nào thể hiện giận dữ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "e8b",
+            "lang": "ko",
+            "text": "떠나간 사람에 대한 그리움"
+          },
+          {
+            "id": "r5n",
+            "lang": "ko",
+            "text": "강물 오염에 대한 비판"
+          },
+          {
+            "id": "i6g",
+            "lang": "ko",
+            "text": "떠나간 사람에 대한 분노"
+          },
+          {
+            "id": "y3x",
+            "lang": "ko",
+            "text": "바다 여행에 대한 기대"
+          }
+        ],
+        "shuffle": true,
+        "stem": "강물은 뒤돌아보지 않는다. 흘러가노라면 언젠가 바다에 닿으리라. 나는 오늘도 떠나간 이의 이름을 물결 위에 띄워 보낸다. - Tâm trạng của 화자 phù hợp nhất là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "fd01d5fad3bf683d674087f2747019ca3998a93a3022edf58319f2d3fad5a100",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "955ba9da-ceda-57c3-a808-1acf7d711f90",
+      "is_demo": true,
+      "item_id": "fdcb75c8-c120-5d35-aa93-a2e329785ae2",
+      "key": "ko:exercise:hl-reading-mcq-supil",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "g4n"
+        },
+        "display_answer": "Tuỳ bút - văn xuôi ngắn ghi suy nghĩ, cảm xúc thật của người viết",
+        "explanation": {
+          "vi": "수필 (隨筆) = tuỳ bút. Tiểu thuyết là 소설, nhật ký là 일기, thơ là 시."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "v1s",
+            "lang": "vi",
+            "text": "Nhật ký - ghi chép riêng từng ngày"
+          },
+          {
+            "id": "t8c",
+            "lang": "vi",
+            "text": "Tiểu thuyết - truyện dài hư cấu"
+          },
+          {
+            "id": "g4n",
+            "lang": "vi",
+            "text": "Tuỳ bút - văn xuôi ngắn ghi suy nghĩ, cảm xúc thật của người viết"
+          },
+          {
+            "id": "b6r",
+            "lang": "vi",
+            "text": "Thơ - văn bản có vần, chia dòng"
+          }
+        ],
+        "shuffle": true,
+        "stem": "수필 là thể loại nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "645e5a225103c2ce70f57963ce5d09e947451f01474c286a72ca96c5adcd60f8",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "96c93c97-8afd-57d0-af9a-e14ef4e46580",
+      "is_demo": true,
+      "item_id": "8f2c943e-9bff-50a9-ab88-fa22645b9407",
+      "key": "ko:exercise:hl-reading-mcq-supil-attitude",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "q6t"
+        },
+        "display_answer": "Nhớ lại triết lý sẻ chia của bà và tự nhìn lại bản thân",
+        "explanation": {
+          "vi": "아깝게만 보였건만 (khi ấy chỉ thấy tiếc, vậy mà) → 이제 와 생각하니 (giờ nghĩ lại) → 나를 돌아보게 된다 (nhìn lại mình) - thái độ 성찰. Cảm giác \"tiếc\" là của quá khứ, đã bị -건만 phủ định."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "order_index": 7,
+      "prompt": {
+        "options": [
+          {
+            "id": "o5c",
+            "lang": "vi",
+            "text": "Lạc quan rằng mọi người rồi sẽ biết sẻ chia"
+          },
+          {
+            "id": "u8f",
+            "lang": "vi",
+            "text": "Hoài nghi giá trị của việc chia sẻ trong xã hội hiện đại"
+          },
+          {
+            "id": "q6t",
+            "lang": "vi",
+            "text": "Nhớ lại triết lý sẻ chia của bà và tự nhìn lại bản thân"
+          },
+          {
+            "id": "a3d",
+            "lang": "vi",
+            "text": "Phê phán bà vì để lãng phí quả hồng trên cành"
+          }
+        ],
+        "shuffle": true,
+        "stem": "할머니는 감을 따시되 꼭 몇 개는 가지에 남겨 두셨다. 그때는 그것이 아깝게만 보였건만, 이제 와 생각하니 그것은 나눔에 대한 할머니의 철학이었다. 무엇이든 끝까지 차지하려는 요즘의 나를 돌아보게 된다. - Thái độ của người viết (필자의 태도) là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "84c68627f5bb4747552cc365f4eb98f3b08d28f3419e474e1d40af2f64011280",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "ba425416-e86e-5c5f-8f11-959e2b3dc77c",
+      "is_demo": true,
+      "item_id": "29921437-674e-59b6-929d-10c24c5f0e9a",
+      "key": "ko:exercise:hl-reading-mcq-supil-main",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "w2p"
+        },
+        "display_answer": "Nên biết để phần, sẻ chia thay vì chiếm hết mọi thứ cho mình",
+        "explanation": {
+          "vi": "Phương án \"bà để lại vài quả hồng\" đúng với bài nhưng chỉ là chi tiết. Ý chính nằm ở câu cuối - giá trị của 나눔 và sự tự vấn về lòng tham chiếm hết (끝까지 차지하려는)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "w2p",
+            "lang": "vi",
+            "text": "Nên biết để phần, sẻ chia thay vì chiếm hết mọi thứ cho mình"
+          },
+          {
+            "id": "s4j",
+            "lang": "vi",
+            "text": "Cây hồng già cần được bảo tồn như một di sản"
+          },
+          {
+            "id": "m1z",
+            "lang": "vi",
+            "text": "Mùa đông chim không có gì để ăn"
+          },
+          {
+            "id": "h7v",
+            "lang": "vi",
+            "text": "Bà luôn để lại vài quả hồng trên cành"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Vẫn đoạn tuỳ bút về cây hồng của bà. Ý chính (중심 생각) của đoạn văn là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "9ba49e789610f1be032a3e3f72cec2d44b29f5a5f0e596944ef6848bb8e45620",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "2ed9712d-4047-5664-aec5-d94488e0c7f6",
+      "is_demo": true,
+      "item_id": "29921437-674e-59b6-929d-10c24c5f0e9a",
+      "key": "ko:exercise:hl-reading-order-main",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t-i",
+              "t-geul",
+              "t-jung",
+              "t-saeng",
+              "t-ma",
+              "t-mun",
+              "t-deu",
+              "t-it"
+            ]
+          ]
+        },
+        "display_answer": "이 글의 중심 생각은 마지막 문단에 드러나 있다.",
+        "explanation": {
+          "vi": "이 글의 중심 생각은 (chủ ngữ) + 마지막 문단에 (ở đoạn cuối) + 드러나 있다 (được thể hiện). 첫 (đầu tiên) là token nhiễu - trong tuỳ bút, ý chính thường ở cuối."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Ý chính của bài này được thể hiện ở đoạn cuối.\"",
+        "tokens": [
+          {
+            "id": "t-mun",
+            "text": "문단에"
+          },
+          {
+            "id": "t-i",
+            "text": "이"
+          },
+          {
+            "id": "t-it",
+            "text": "있다"
+          },
+          {
+            "id": "t-jung",
+            "text": "중심"
+          },
+          {
+            "id": "t-cheot",
+            "text": "첫"
+          },
+          {
+            "id": "t-geul",
+            "text": "글의"
+          },
+          {
+            "id": "t-deu",
+            "text": "드러나"
+          },
+          {
+            "id": "t-ma",
+            "text": "마지막"
+          },
+          {
+            "id": "t-saeng",
+            "text": "생각은"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "56b299a7121199d10d6758f767c6ee95136cfb15d4bf9a43ef8fda74f3a75cc5",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "0b2e5e94-47ec-5160-b2c4-85d9f2c870e6",
+      "is_demo": true,
+      "item_id": "efe037fb-a400-5178-b16b-b517f1326584",
+      "key": "ko:exercise:hl-reading-translate-bipan",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Người viết thể hiện thái độ phê phán đối với việc khai thác bừa bãi.",
+            "Người viết thể hiện thái độ phê phán đối với sự phát triển bừa bãi.",
+            "Người viết thể hiện thái độ phê phán đối với việc phát triển bừa bãi.",
+            "Người viết có thái độ phê phán đối với việc khai thác bừa bãi.",
+            "Người viết có thái độ phê phán đối với sự phát triển bừa bãi.",
+            "Người viết tỏ thái độ phê phán đối với việc khai thác bừa bãi.",
+            "Tác giả thể hiện thái độ phê phán đối với việc khai thác bừa bãi.",
+            "Tác giả có thái độ phê phán đối với sự phát triển bừa bãi.",
+            "Người viết phê phán việc khai thác bừa bãi.",
+            "Người viết phê phán sự phát triển bừa bãi."
+          ]
+        },
+        "display_answer": "Người viết thể hiện thái độ phê phán đối với việc khai thác bừa bãi.",
+        "explanation": {
+          "vi": "무분별한 개발 = khai thác (phát triển) bừa bãi; 비판적인 태도를 보이다 = thể hiện thái độ phê phán. Chú ý 비판 (phê phán) khác 비관 (bi quan)."
+        },
+        "known_wrong": [
+          {
+            "answer": "Người viết thể hiện thái độ bi quan đối với việc khai thác bừa bãi.",
+            "error_tag": "bipan_bigwan",
+            "feedback_vi": "Bi quan là 비관적. 비판적 là phê phán - chỉ ra cái sai."
+          },
+          {
+            "answer": "Người viết ủng hộ việc khai thác bừa bãi.",
+            "error_tag": "attitude_opposite",
+            "feedback_vi": "비판적인 태도 là thái độ phê phán, ngược với ủng hộ."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "order_index": 10,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "필자는 무분별한 개발에 대해 비판적인 태도를 보인다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "b0aeb1ca788e5a2f4b6c97b9602b5dd8244c3b9cf96f1f9ae9e97d9fe693b0b8",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "c845d53c-400c-500a-bda5-b1394a3fd5b2",
+      "is_demo": true,
+      "item_id": "2b291206-b71d-5ea4-b819-937c1252d14e",
+      "key": "ko:exercise:hl-reading-translate-seongchal",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "필자는 자신의 삶을 성찰한다.",
+            "필자는 자기의 삶을 성찰한다.",
+            "필자는 자기 삶을 성찰한다.",
+            "필자는 자신의 인생을 성찰한다.",
+            "필자가 자신의 삶을 성찰한다.",
+            "필자는 자신의 삶을 성찰하고 있다.",
+            "필자는 자신의 삶을 성찰해요.",
+            "필자는 자신의 삶을 성찰합니다."
+          ]
+        },
+        "display_answer": "필자는 자신의 삶을 성찰한다.",
+        "explanation": {
+          "vi": "필자 = người viết; 자신의 삶 = cuộc đời mình; 성찰하다 = tự suy ngẫm, tự vấn. Bài đọc văn chương dùng đuôi -ㄴ다."
+        },
+        "known_wrong": [
+          {
+            "answer": "필자는 자신의 삶을 관찰한다.",
+            "error_tag": "seongchal_gwanchal",
+            "feedback_vi": "관찰 là quan sát cái bên ngoài. Tự suy ngẫm về bản thân là 성찰."
+          },
+          {
+            "answer": "필자는 자신의 삶을 반성한다.",
+            "error_tag": "seongchal_banseong",
+            "feedback_vi": "반성 là hối lỗi về một việc sai cụ thể. \"Tự suy ngẫm về cuộc đời\" là 성찰하다."
+          },
+          {
+            "answer": "piljaneun jasinui salmeul seongchalhanda",
+            "error_tag": "romanization",
+            "feedback_vi": "Hãy gõ bằng chữ Hangul, không dùng phiên âm Latinh."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Người viết tự suy ngẫm về cuộc đời mình."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "77509e1a9c74cec35fb5c28cd6152f97cae511b224b3cd68aa2a8f31cc13f248",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "85ad9777-3b64-5de0-8ecc-944340a35aa6",
+      "is_demo": true,
+      "item_id": "22948a2e-97c8-592d-803a-75b114d3734c",
+      "key": "ko:exercise:hl-review-fill-bojon",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "보존"
+            ]
+          }
+        },
+        "display_answer": "박물관은 온도와 습도를 조절하여 유물을 보존하고 있다.",
+        "explanation": {
+          "vi": "유물을 보존하다 = bảo tồn hiện vật (giữ nguyên, không để hư hỏng). Đây là động từ chuẩn cho di sản, tư liệu."
+        },
+        "known_wrong": [
+          {
+            "answer": "복원",
+            "error_tag": "bojon_bokwon",
+            "feedback_vi": "Điều chỉnh nhiệt độ, độ ẩm là giữ nguyên trạng - 보존. 복원 là làm lại thứ đã hư hỏng."
+          },
+          {
+            "answer": "회복",
+            "error_tag": "word_confusion",
+            "feedback_vi": "회복 dùng cho trạng thái như sức khoẻ, kinh tế. Giữ gìn hiện vật là 보존."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "template": "Bảo tàng điều chỉnh nhiệt độ và độ ẩm để bảo tồn các hiện vật. - 박물관은 온도와 습도를 조절하여 유물을 {{b1}}하고 있다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "fa8a2744475cfc1ba7b601dd7cebaa79b6cb93049e5a83d7ce4e6f3249a73ea2",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "17eb5484-62ac-5cdf-bb9d-83c434eb3acc",
+      "is_demo": true,
+      "item_id": "28455d1b-fd50-59e9-bd8e-ceb2fd4aaf89",
+      "key": "ko:exercise:hl-review-fill-geonman",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "지만",
+              "는데도",
+              "는데"
+            ]
+          }
+        },
+        "display_answer": "맞춤법은 서툴렀지만 글씨에 정성이 배어 있었다.",
+        "explanation": {
+          "vi": "-건만 = -지만 / -는데도 kèm sắc thái \"vậy mà\" - chính tả vụng nhưng chữ viết lại đầy tâm huyết."
+        },
+        "known_wrong": [
+          {
+            "answer": "거나",
+            "error_tag": "archaic_misread",
+            "feedback_vi": "-거나 là \"hoặc\". -건만 là nhượng bộ \"vậy mà\" - dạng hiện đại -지만."
+          },
+          {
+            "answer": "으면",
+            "error_tag": "archaic_misread",
+            "feedback_vi": "-(으)면 là \"nếu\". Câu gốc kể chuyện đã xảy ra với ý trái ngược - -지만."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "-건만 ≈ \"nhưng, vậy mà\" - dạng hiện đại là -지...",
+          "-지만 / -는데도"
+        ],
+        "template": "맞춤법은 서툴렀건만 글씨에 정성이 배어 있었다. ≈ 맞춤법은 서툴렀{{b1}} 글씨에 정성이 배어 있었다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "68890ec1e28ac834e59fc31e39285c6c4b0db789937ac3aaec558311828a1417",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "7cf76e5f-c415-569c-8374-fe0e899ad621",
+      "is_demo": true,
+      "item_id": "ef3597e2-305c-51ec-a51e-ebcdceda732b",
+      "key": "ko:exercise:hl-review-fill-miyeok",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "먹었다",
+              "먹었어요",
+              "먹었습니다"
+            ]
+          }
+        },
+        "display_answer": "그는 이번 시험에서 또 미역국을 먹었다.",
+        "explanation": {
+          "vi": "미역국을 먹다 = thi trượt (ngữ cảnh 시험). Việc đã xảy ra nên chia quá khứ 먹었다 / 먹었어요."
+        },
+        "known_wrong": [
+          {
+            "answer": "마셨다",
+            "error_tag": "idiom_form",
+            "feedback_vi": "Quán ngữ cố định là 미역국을 먹다 - luôn dùng 먹다."
+          },
+          {
+            "answer": "마셨어요",
+            "error_tag": "idiom_form",
+            "feedback_vi": "Quán ngữ cố định là 미역국을 먹다 - luôn dùng 먹다."
+          },
+          {
+            "answer": "먹는다",
+            "error_tag": "tense",
+            "feedback_vi": "Chuyện thi trượt đã xảy ra nên dùng quá khứ - 먹었다."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "Anh ấy lại trượt kỳ thi lần này. - 그는 이번 시험에서 또 미역국을 {{b1}}."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "dc9ec12165ee6b35c08d7e52e3daed4995639f3f4ea3d09906e35beaa230927a",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "302a7539-42c3-5bd1-9760-a921275031af",
+      "is_demo": true,
+      "item_id": "750cf0dd-39ce-5090-b835-6573d6020bf5",
+      "key": "ko:exercise:hl-review-listen-notice",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "n6r"
+        },
+        "display_answer": "Vào cửa miễn phí, nhưng đoàn tham quan cần đặt trước.",
+        "explanation": {
+          "vi": "무료로 하되 = miễn phí, nhưng...; điều kiện là 단체 관람은 사전 예약이 필요하다 (đoàn cần đặt trước). Hiểu 되 là 되다 (trở thành) sẽ ra phương án sai cuối cùng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "order_index": 0,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "관람료는 무료로 하되 단체 관람은 사전 예약이 필요합니다.",
+        "options": [
+          {
+            "id": "j8w",
+            "lang": "vi",
+            "text": "Đoàn tham quan được miễn phí, khách lẻ phải trả tiền."
+          },
+          {
+            "id": "n6r",
+            "lang": "vi",
+            "text": "Vào cửa miễn phí, nhưng đoàn tham quan cần đặt trước."
+          },
+          {
+            "id": "t1p",
+            "lang": "vi",
+            "text": "Phí tham quan sẽ trở thành miễn phí từ tháng sau."
+          },
+          {
+            "id": "e3k",
+            "lang": "vi",
+            "text": "Vào cửa miễn phí và không cần đặt trước."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "de0abbc0bc89a4595853449df002b4ac36f8a2dda47cfa0634556cc82f7bd8dd",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "3cd98c27-c170-52d6-a85e-2af35455157f",
+      "is_demo": true,
+      "item_id": "9585b8a7-8545-5a41-a098-bfeee65f4e7f",
+      "key": "ko:exercise:hl-review-mcq-bokwon-mokpan",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k3x"
+        },
+        "display_answer": "Bản khắc gỗ in đã được phục dựng",
+        "explanation": {
+          "vi": "복원되다 = được phục dựng lại hình dạng ban đầu, tức là từng bị hư hỏng. \"Còn nguyên vẹn\" là 보존된; \"thất lạc\" là 분실된."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "h1y",
+            "lang": "vi",
+            "text": "Bản khắc gỗ in đã bị thất lạc"
+          },
+          {
+            "id": "c5f",
+            "lang": "vi",
+            "text": "Bản khắc gỗ in vừa mới được phát minh"
+          },
+          {
+            "id": "w8n",
+            "lang": "vi",
+            "text": "Bản khắc gỗ in còn nguyên vẹn từ xưa"
+          },
+          {
+            "id": "k3x",
+            "lang": "vi",
+            "text": "Bản khắc gỗ in đã được phục dựng"
+          }
+        ],
+        "shuffle": true,
+        "stem": "복원된 인쇄 목판 nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "a263b7e6f7c11976d0af4432a981849e78bfa6b4b5a20eca445270405d67526d",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "4ab16176-986f-50c8-8736-d30cf2d97637",
+      "is_demo": true,
+      "item_id": "8f2c943e-9bff-50a9-ab88-fa22645b9407",
+      "key": "ko:exercise:hl-review-mcq-essay-attitude",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "b5u"
+        },
+        "display_answer": "Trân trọng tấm lòng của ông và tự vấn cách mình đối xử với chữ viết",
+        "explanation": {
+          "vi": "-건만 cho thấy người viết coi trọng tâm huyết hơn lỗi chính tả, và 돌아보게 된다 là thái độ 성찰. Không có từ nào chê ông, nghi ngờ việc học chữ hay khen việc nhắn tin."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "order_index": 7,
+      "prompt": {
+        "options": [
+          {
+            "id": "d3n",
+            "lang": "vi",
+            "text": "Lạc quan về văn hoá nhắn tin thời nay"
+          },
+          {
+            "id": "y7j",
+            "lang": "vi",
+            "text": "Hoài nghi giá trị của việc học chữ"
+          },
+          {
+            "id": "b5u",
+            "lang": "vi",
+            "text": "Trân trọng tấm lòng của ông và tự vấn cách mình đối xử với chữ viết"
+          },
+          {
+            "id": "f2c",
+            "lang": "vi",
+            "text": "Phê phán ông vì viết sai chính tả"
+          }
+        ],
+        "shuffle": true,
+        "stem": "맞춤법은 서툴렀건만 글씨 하나하나에 정성이 배어 있었다. 글을 늦게 배우신 할아버지는 글을 아는 것이 곧 세상을 아는 것이라고 늘 말씀하셨다. 손쉽게 문자를 보내는 요즘, 나는 한 글자 한 글자를 소중히 여기고 있는지 돌아보게 된다. - Thái độ của người viết là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "147149f494bc9dc0ba73293d8031bbff9c1f5dd14294d6df77267be45b0c609f",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "c56e2c84-6896-5038-82ba-436ddd618617",
+      "is_demo": true,
+      "item_id": "7e8accf4-7001-55aa-9b1e-1c71262d02d4",
+      "key": "ko:exercise:hl-review-mcq-inference",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "m4g"
+        },
+        "display_answer": "Vì học chữ muộn nên ông rất trân trọng việc biết chữ.",
+        "explanation": {
+          "vi": "글을 늦게 배우신 + 늘 말씀하셨다 (biết chữ là hiểu thế giới) cho phép suy ra ông trân trọng việc biết chữ. Phương án chính tả trái với 서툴렀건만; người viết nhắn tin (문자) chứ không viết thư; \"học giả\" không có căn cứ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "q6e",
+            "lang": "vi",
+            "text": "Ông là học giả nghiên cứu chữ Hangul."
+          },
+          {
+            "id": "l1v",
+            "lang": "vi",
+            "text": "Người viết thường xuyên viết thư tay."
+          },
+          {
+            "id": "s8z",
+            "lang": "vi",
+            "text": "Ông viết chính tả rất chuẩn."
+          },
+          {
+            "id": "m4g",
+            "lang": "vi",
+            "text": "Vì học chữ muộn nên ông rất trân trọng việc biết chữ."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Vẫn đoạn tuỳ bút về cuốn vở của ông. Điều nào có thể suy ra (암시) từ đoạn văn?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "5127f846a41ed2d2bc0616cebfd8a923479ce5b257d2dc637947d6b52d03e14d",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "e6b85ac0-ca8e-56f2-b875-27b2163e5ef2",
+      "is_demo": true,
+      "item_id": "bb8509c0-30ad-512a-8c50-3b05ed409774",
+      "key": "ko:exercise:hl-review-mcq-notice-true",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "a7q"
+        },
+        "display_answer": "Bảo tàng nghỉ vào thứ Hai hằng tuần.",
+        "explanation": {
+          "vi": "매주 월요일 휴관 = nghỉ thứ Hai hằng tuần. Flash bị cấm (사용할 수 없습니다), hiện vật là 120여 점 (hơn 120), và chỉ đoàn (단체) mới phải đặt trước."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "a7q",
+            "lang": "vi",
+            "text": "Bảo tàng nghỉ vào thứ Hai hằng tuần."
+          },
+          {
+            "id": "v4s",
+            "lang": "vi",
+            "text": "Mọi khách tham quan đều phải đặt trước."
+          },
+          {
+            "id": "g2m",
+            "lang": "vi",
+            "text": "Khách được dùng đèn flash khi chụp ảnh."
+          },
+          {
+            "id": "o9d",
+            "lang": "vi",
+            "text": "Triển lãm trưng bày khoảng 12 hiện vật."
+          }
+        ],
+        "shuffle": true,
+        "stem": "[특별 전시 안내] 기간: 10월 1일~11월 30일 (매주 월요일 휴관) / 내용: 조선 시대 한글 편지, 복원된 인쇄 목판 등 유물 120여 점 / 관람료: 무료로 하되 단체 관람은 사전 예약 필수 / 사진 촬영은 가능하되 플래시는 사용할 수 없습니다. - Điều nào đúng với thông báo?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "e59b566a52b10400b43c6311523869784f4fd829ee8b90fcc8dca4bd96a1350a",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "84edac2b-fa71-5fa9-8a6f-9769c6c80803",
+      "is_demo": true,
+      "item_id": "cfb0ce9f-f440-5d97-a88a-2acf2f525ad5",
+      "key": "ko:exercise:hl-review-mcq-rira",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r9b"
+        },
+        "display_answer": "Có lẽ ý định của vua Sejong khi sáng chế chữ vì dân cũng không khác điều đó.",
+        "explanation": {
+          "vi": "-(으)리라 ở đây là phỏng đoán văn chương (≈ -았/었을 것이다) - \"có lẽ đã không khác\". 이와 chỉ lời ông vừa nói - biết chữ là hiểu thế giới; 위해 = vì dân, không phải ra lệnh cho dân."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "z7a",
+            "lang": "vi",
+            "text": "Vua Sejong ra lệnh cho dân không được khác biệt."
+          },
+          {
+            "id": "r9b",
+            "lang": "vi",
+            "text": "Có lẽ ý định của vua Sejong khi sáng chế chữ vì dân cũng không khác điều đó."
+          },
+          {
+            "id": "w3h",
+            "lang": "vi",
+            "text": "Vua Sejong đã sáng chế chữ vì một ý định hoàn toàn khác."
+          },
+          {
+            "id": "i5t",
+            "lang": "vi",
+            "text": "Dân chúng không hiểu ý định của vua Sejong."
+          }
+        ],
+        "shuffle": true,
+        "stem": "세종대왕이 백성을 위해 훈민정음을 창제한 뜻도 이와 다르지 않았으리라. - Câu này nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "8bf428778ba1fbf4f96a2f26724e467d7219785fe32b312db48a9084baa9b904",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "a6117faf-a372-51db-87af-fb1ea0eac908",
+      "is_demo": true,
+      "item_id": "750cf0dd-39ce-5090-b835-6573d6020bf5",
+      "key": "ko:exercise:hl-review-order-notice",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t-sa",
+              "t-chwal",
+              "t-ganeung",
+              "t-flash",
+              "t-sayong",
+              "t-su",
+              "t-eop"
+            ]
+          ]
+        },
+        "display_answer": "사진 촬영은 가능하되 플래시는 사용할 수 없습니다.",
+        "explanation": {
+          "vi": "사진 촬영은 가능하되 (cho phép, nhưng) + 플래시는 사용할 수 없습니다 (giới hạn). 가능하게 là token nhiễu - -게 không nối được hai vế \"cho phép / giới hạn\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu trong thông báo: \"Được chụp ảnh nhưng không được dùng đèn flash.\"",
+        "tokens": [
+          {
+            "id": "t-flash",
+            "text": "플래시는"
+          },
+          {
+            "id": "t-eop",
+            "text": "없습니다"
+          },
+          {
+            "id": "t-chwal",
+            "text": "촬영은"
+          },
+          {
+            "id": "t-gane",
+            "text": "가능하게"
+          },
+          {
+            "id": "t-sa",
+            "text": "사진"
+          },
+          {
+            "id": "t-su",
+            "text": "수"
+          },
+          {
+            "id": "t-ganeung",
+            "text": "가능하되"
+          },
+          {
+            "id": "t-sayong",
+            "text": "사용할"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "a56a6a28a0cd9261ee439afa03b8edfbf163f7df00d75a8434b926ba5286a769",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "7c096158-727a-5926-b53b-aaccd715257c",
+      "is_demo": true,
+      "item_id": "2b291206-b71d-5ea4-b819-937c1252d14e",
+      "key": "ko:exercise:hl-review-translate-essay",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Tôi tự hỏi liệu mình có đang trân trọng từng con chữ hay không.",
+            "Tôi tự hỏi mình có trân trọng từng con chữ hay không.",
+            "Tôi tự hỏi mình có còn trân trọng từng con chữ hay không.",
+            "Tôi nhìn lại xem mình có đang trân trọng từng con chữ hay không.",
+            "Tôi nhìn lại xem mình có trân trọng từng con chữ không.",
+            "Tôi bỗng nhìn lại xem mình có trân trọng từng chữ một hay không.",
+            "Tôi tự nhìn lại xem mình có quý trọng từng con chữ hay không.",
+            "Tôi tự hỏi liệu mình có trân trọng từng chữ một không."
+          ]
+        },
+        "display_answer": "Tôi tự hỏi liệu mình có đang trân trọng từng con chữ hay không.",
+        "explanation": {
+          "vi": "-고 있는지 = \"có đang... hay không\"; 돌아보게 된다 = (bỗng) nhìn lại, tự vấn - đây là câu chứa thái độ 성찰 và ý chính của bài."
+        },
+        "known_wrong": [
+          {
+            "answer": "Tôi quay lại nhìn từng con chữ.",
+            "error_tag": "literal_meaning",
+            "feedback_vi": "돌아보다 ở đây là nghĩa bóng \"nhìn lại, tự vấn\", không phải quay đầu lại nhìn."
+          },
+          {
+            "answer": "Tôi trân trọng từng con chữ.",
+            "error_tag": "indirect_question",
+            "feedback_vi": "-는지 돌아보게 된다 là tự hỏi \"có... hay không\", không phải khẳng định."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "order_index": 10,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ko",
+        "source_text": "나는 한 글자 한 글자를 소중히 여기고 있는지 돌아보게 된다."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
+      "content_hash": "1cf5961f27a537bea369d0ee9b934f7221b83be4e78c8e820a9eb70c03e0c2ae",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "92dd8dfb-4ab6-5b87-bd72-a6e4e6a6b76d",
+      "is_demo": true,
+      "item_id": "da20949c-5632-57ee-b607-a5068e067ea4",
+      "key": "ko:exercise:hl-review-translate-ip",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "저는 입이 무거우니까 걱정하지 마세요.",
+            "전 입이 무거우니까 걱정하지 마세요.",
+            "저는 입이 무거우니까 걱정 마세요.",
+            "전 입이 무거우니까 걱정 마세요.",
+            "제가 입이 무거우니까 걱정하지 마세요.",
+            "입이 무거우니까 걱정하지 마세요.",
+            "입이 무거우니까 걱정 마세요.",
+            "저는 입이 정말 무거우니까 걱정하지 마세요.",
+            "저는 입이 무거워요. 걱정하지 마세요.",
+            "저는 입이 무거워요. 걱정 마세요."
+          ]
+        },
+        "display_answer": "저는 입이 무거우니까 걱정하지 마세요.",
+        "explanation": {
+          "vi": "Kín miệng = 입이 무겁다; vì vế sau là lời khuyên 걱정하지 마세요 nên lý do phải dùng -(으)니까 (무거우니까), hoặc tách thành hai câu."
+        },
+        "known_wrong": [
+          {
+            "answer": "저는 입이 무거워서 걱정하지 마세요.",
+            "error_tag": "aseo_imperative",
+            "feedback_vi": "-아/어서 không đi với mệnh lệnh ở vế sau. Dùng 무거우니까."
+          },
+          {
+            "answer": "저는 입이 가벼우니까 걱정하지 마세요.",
+            "error_tag": "idiom_opposite",
+            "feedback_vi": "입이 가볍다 là bép xép - ngược nghĩa. Kín miệng là 입이 무겁다."
+          },
+          {
+            "answer": "저는 입이 닫혀 있으니까 걱정하지 마세요.",
+            "error_tag": "literal_idiom",
+            "feedback_vi": "Đừng dịch từng chữ \"kín miệng\". Quán ngữ tiếng Hàn là 입이 무겁다."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "order_index": 5,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi kín miệng lắm, bạn đừng lo."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ko",
       "content_hash": "35fa78efad2d4f2dde2b3e4e30eefc8866254123a5407862f2743980bf3686c0",
       "difficulty": 2,
       "exercise_type": "fill_blank",
@@ -134303,6 +141820,46 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Nghiên cứu là a study (đếm được), còn research là không đếm được - không nói \"a research found\". Find - found - found."
+        },
+        "examples": [
+          {
+            "target": "A recent study found that teenagers who use their phones at night sleep an hour less.",
+            "translation": {
+              "vi": "Một nghiên cứu gần đây phát hiện rằng những thiếu niên dùng điện thoại vào ban đêm ngủ ít hơn một tiếng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Một nghiên cứu cho thấy / phát hiện rằng…"
+        }
+      },
+      "content_hash": "fdf92810fccf24f5e02f3b4041b7559e4d763f70e1b4fb8676c0689746844802",
+      "difficulty": 3,
+      "front": {
+        "pos": "cụm câu",
+        "text": "A study found / shows that…"
+      },
+      "id": "56bbd028-e9f0-59d4-b7b6-794e65d5d3b3",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:a-study-found-that",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Danh từ access đi với to (access to education). Động từ access thì không có to - access the internet."
         },
         "examples": [
@@ -135264,6 +142821,48 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Viết algorithm (có th), không phải \"algorhythm\". Tính từ là algorithmic."
+        },
+        "examples": [
+          {
+            "target": "The algorithm shows you videos which are similar to the ones you have already watched.",
+            "translation": {
+              "vi": "Thuật toán cho bạn xem những video giống với những video bạn đã xem."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thuật toán (ví dụ thuật toán đề xuất nội dung của mạng xã hội)"
+        },
+        "pronunciation_note": {
+          "vi": "Trọng âm ở âm đầu AL-go-rithm; \"th\" là âm /ð/ (lưỡi giữa hai răng, có rung), không đọc thành \"t\"."
+        }
+      },
+      "content_hash": "05dff1b485344c58df6d53d34e59a0582c1e7086c3add26950fc67bc4171c9b8",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/ˈælɡərɪðəm/",
+        "pos": "danh từ",
+        "text": "algorithm"
+      },
+      "id": "c11002d6-3f06-5f19-8c03-b0988d1ae391",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:algorithm",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -136764,6 +144363,45 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Nói a short attention span (khả năng tập trung kém), không nói \"a small attention\"."
+        },
+        "examples": [
+          {
+            "target": "Short videos may be shortening our attention span.",
+            "translation": {
+              "vi": "Video ngắn có thể đang làm giảm khả năng tập trung của chúng ta."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "khả năng tập trung (khoảng thời gian một người chú ý được vào một việc)"
+        }
+      },
+      "content_hash": "29f0aeb1d7b035834431679d38ee8adb29b1aa0d5f423c3b0e1b715221f3e7ac",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/əˈtenʃn spæn/",
+        "pos": "cụm danh từ",
+        "text": "attention span"
+      },
+      "id": "fb7aa6f5-e026-5659-9e59-1fae59055ba5",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:attention-span",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -141028,6 +148666,47 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Thứ tự ngược tiếng Việt: \"lịch sử tìm kiếm\" là search history, không phải \"history search\". Danh từ đầu giữ số ít: a password manager, không phải \"passwords manager\"."
+        },
+        "examples": [
+          {
+            "target": "Try changing your password and clearing your search history.",
+            "translation": {
+              "vi": "Bạn thử đổi mật khẩu và xoá lịch sử tìm kiếm xem."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hai danh từ ghép thành một; danh từ đầu bổ nghĩa cho danh từ sau và không thêm -s"
+        },
+        "pronunciation_note": {
+          "vi": "Danh từ ghép thường nhấn ở từ đầu - SEARCH engine, PASSword, SMARTphone."
+        }
+      },
+      "content_hash": "c6f832455c7ba284de1a06b425740c785017a40e70828e798f5b1dd197e66dc5",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu tạo từ",
+        "text": "danh từ ghép (screen time, smartphone, password, search engine)"
+      },
+      "id": "455f6f3f-01af-57a3-841e-4660f3cc550e",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:compound-nouns-tech",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Thứ tự giống tiếng Việt (hai mươi + mốt = twenty-one), nhưng không có từ \"mươi\" riêng và không đổi \"một\" thành \"mốt\", \"năm\" thành \"lăm\". Khi viết bằng chữ, nối hai phần bằng dấu gạch ngang."
         },
         "examples": [
@@ -141247,6 +148926,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Không nói \"make an experiment\" hay \"do a experiment\". Experiment (thí nghiệm) khác experience (trải nghiệm)."
+        },
+        "examples": [
+          {
+            "target": "The team conducted an experiment with 500 volunteers.",
+            "translation": {
+              "vi": "Nhóm nghiên cứu đã tiến hành một thí nghiệm với 500 tình nguyện viên."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tiến hành một thí nghiệm"
+        },
+        "pronunciation_note": {
+          "vi": "Động từ conduct nhấn âm sau con-DUCT; danh từ conduct (hạnh kiểm) nhấn âm đầu CON-duct."
+        }
+      },
+      "content_hash": "e907fe5deafe6d14343fc1754bf2cadd8fb14c75c50321cdbd130633ca6d74e9",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/kənˈdʌkt ən ɪkˈsperɪmənt/",
+        "pos": "cụm động từ",
+        "text": "conduct / carry out an experiment"
+      },
+      "id": "a4ada9ac-02bf-57bc-be2f-2b944dbf7f98",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:conduct-an-experiment",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Nói conduct/carry out/do research, không nói make research. Giới từ đi kèm là into hoặc on, không dùng about trong văn học thuật."
         },
         "examples": [
@@ -141448,6 +149169,48 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Content ở đây là danh từ không đếm được: create content, không nói \"create contents\"."
+        },
+        "examples": [
+          {
+            "target": "More and more young people want to become full-time content creators.",
+            "translation": {
+              "vi": "Ngày càng nhiều bạn trẻ muốn trở thành người sáng tạo nội dung toàn thời gian."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "người sáng tạo nội dung"
+        },
+        "pronunciation_note": {
+          "vi": "Content (nội dung) nhấn âm đầu CON-tent; content (hài lòng, tính từ) nhấn âm sau con-TENT."
+        }
+      },
+      "content_hash": "e17918dbb5c5f8d9f5e1a2fdcf1836ffa67cd0372b34b9a0a3bbede9d4afeddb",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˈkɒntent kriˈeɪtə/ · US /ˈkɑːntent kriˈeɪtɚ/",
+        "pos": "cụm danh từ",
+        "text": "content creator"
+      },
+      "id": "c5668f1f-8eb4-5c32-b4dd-621866f2c61e",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:content-creator",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -142352,6 +150115,126 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Không có mạo từ khi nói chung: invest in cybersecurity, không nói \"invest in the cybersecurity\"."
+        },
+        "examples": [
+          {
+            "target": "Banks spend millions on cybersecurity every year.",
+            "translation": {
+              "vi": "Các ngân hàng chi hàng triệu đô cho an ninh mạng mỗi năm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "an ninh mạng"
+        }
+      },
+      "content_hash": "e6404c03bf9ee7bdf1eb3447387097e7c5b11682e2451291f79b31195699d11e",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ˌsaɪbəsɪˈkjʊərəti/ · US /ˌsaɪbɚsəˈkjʊrəti/",
+        "pos": "danh từ không đếm được",
+        "text": "cybersecurity"
+      },
+      "id": "b145ee6c-48ea-5b0d-8379-d0535191c635",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:cybersecurity",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "\"Walking into the office, the screens were all black\" sai - nghe như màn hình tự đi vào. Tiếng Việt cho phép bỏ chủ ngữ thoải mái, tiếng Anh thì không."
+        },
+        "examples": [
+          {
+            "target": "Walking into the office, I saw that the screens were all black.",
+            "translation": {
+              "vi": "Bước vào văn phòng, tôi thấy tất cả các màn hình đều tối đen."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lỗi khi chủ ngữ của mệnh đề chính không phải là người/vật thực hiện hành động ở mệnh đề phân từ"
+        }
+      },
+      "content_hash": "8a4a5a3a543e1e5648b6f02d738fe274d9201e2da6cccf685d8a8c198c99048a",
+      "difficulty": 4,
+      "front": {
+        "pos": "lỗi ngữ pháp",
+        "text": "dangling participle (phân từ \"treo\")"
+      },
+      "id": "b6616597-f012-5762-aff2-0d4142ef49e4",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:dangling-participle",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Data thường đi với động từ số ít trong văn hiện đại (the data is…). Breach là sự vi phạm, xâm phạm - đừng nhầm với beach (bãi biển) khi viết."
+        },
+        "examples": [
+          {
+            "target": "The data breach exposed the personal data of five million customers.",
+            "translation": {
+              "vi": "Vụ rò rỉ dữ liệu đã làm lộ thông tin cá nhân của năm triệu khách hàng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "vụ rò rỉ dữ liệu, vụ xâm phạm dữ liệu"
+        },
+        "pronunciation_note": {
+          "vi": "Breach /briːtʃ/ đọc giống beach thêm r, kết thúc bằng âm \"ch\" rõ."
+        }
+      },
+      "content_hash": "423fdbbc43e79f503359fc5beef9ebf5ce037f7ceb2cce4e245650198cdd5f75",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/ˈdeɪtə briːtʃ/ (US cũng đọc /ˈdætə briːtʃ/)",
+        "pos": "cụm danh từ",
+        "text": "data breach"
+      },
+      "id": "e271fee4-579a-54f7-9497-a95d25cc0bc7",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:data-breach",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Hỏi thứ dùng What day is it?, hỏi ngày tháng dùng What's the date? Người Anh hay viết ngày trước (5 May), người Mỹ viết tháng trước (May 5)."
         },
         "examples": [
@@ -142914,6 +150797,45 @@ select content_private.import_bundle($bundle${
       "key": "en:item:diet",
       "language_code": "en",
       "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Đi với do hoặc go on: do a digital detox, go on a digital detox."
+        },
+        "examples": [
+          {
+            "target": "I'm doing a digital detox this weekend - no phone, no laptop.",
+            "translation": {
+              "vi": "Cuối tuần này tôi \"cai\" thiết bị số - không điện thoại, không laptop."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thời gian \"cai\" thiết bị số, tạm ngừng dùng điện thoại và mạng"
+        }
+      },
+      "content_hash": "704f7e30dfe286f7ef7a281d4184a6f44d2c41402abb6dfaebf39ca9b8402c9c",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ˌdɪdʒɪtl ˈdiːtɒks/ · US /ˌdɪdʒɪtl ˈdiːtɑːks/",
+        "pos": "cụm danh từ",
+        "text": "digital detox"
+      },
+      "id": "a36f6536-3360-5e36-a8c8-c4b0fd143fe5",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:digital-detox",
+      "language_code": "en",
+      "level_code": "b2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -144673,6 +152595,53 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Evidence không đếm được: không nói \"an evidence\" hay \"evidences\"; dùng a piece of evidence. Động từ chia số ít: evidence suggests."
+        },
+        "examples": [
+          {
+            "target": "There is growing evidence that screen time affects young children's language skills.",
+            "translation": {
+              "vi": "Ngày càng có nhiều bằng chứng cho thấy thời gian dùng màn hình ảnh hưởng đến kỹ năng ngôn ngữ của trẻ nhỏ."
+            }
+          },
+          {
+            "target": "Evidence suggests that the drug is safe for adults.",
+            "translation": {
+              "vi": "Bằng chứng cho thấy loại thuốc này an toàn với người lớn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bằng chứng cho thấy (có khả năng) rằng…"
+        }
+      },
+      "content_hash": "501a3710f59f85c12799551db3c6bbbce87543164a7da254eb24341948d5720f",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ˈevɪdəns səˈdʒests/ · US /ˈevɪdəns səɡˈdʒests/",
+        "pos": "cụm câu",
+        "text": "evidence suggests that…"
+      },
+      "id": "2a10c31c-d260-51ce-bbe0-6bfe130bec9b",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:evidence-suggests",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Dùng Excuse me trước khi hỏi hoặc nhờ ai; Sorry dùng khi đã làm phiền hay làm sai."
         },
         "examples": [
@@ -144922,6 +152891,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Fact-check là một động từ ghép, có gạch nối: fact-check a claim. Người làm việc này là fact-checker."
+        },
+        "examples": [
+          {
+            "target": "Always fact-check a story before you share it.",
+            "translation": {
+              "vi": "Luôn kiểm chứng một câu chuyện trước khi bạn chia sẻ nó."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "kiểm chứng thông tin, xác minh sự thật"
+        }
+      },
+      "content_hash": "e7cb8503bd8bbe7916d5f5fb489580857cea8df750ee96d8e90bf2f0054fc30d",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/ˈfækt tʃek/",
+        "pos": "động từ / danh từ",
+        "text": "fact-check"
+      },
+      "id": "b7ec2699-400d-53ad-aaf7-4837e8a40f50",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:fact-check",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Fail đi thẳng với tân ngữ - fail the exam, không nói \"fail in the exam\" hay \"fail from the exam\"."
         },
         "examples": [
@@ -144949,6 +152957,45 @@ select content_private.import_bundle($bundle${
       "key": "en:item:fail-an-exam",
       "language_code": "en",
       "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "News không đếm được và chia số ít: fake news spreads, không phải \"fake news spread\" hay \"a fake news\". Muốn đếm: a fake news story."
+        },
+        "examples": [
+          {
+            "target": "Fake news spreads faster than real news on social media.",
+            "translation": {
+              "vi": "Tin giả lan nhanh hơn tin thật trên mạng xã hội."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tin giả"
+        }
+      },
+      "content_hash": "6235f5f51af508d836003c58557c02de020e289cf3d5783980ec1abaec5f029f",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˌfeɪk ˈnjuːz/ · US /ˌfeɪk ˈnuːz/",
+        "pos": "cụm danh từ không đếm được",
+        "text": "fake news"
+      },
+      "id": "3107a17b-6332-5b6e-9386-fc2c130bfa9c",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:fake-news",
+      "language_code": "en",
+      "level_code": "b2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -145817,6 +153864,45 @@ select content_private.import_bundle($bundle${
       "key": "en:item:flight",
       "language_code": "en",
       "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Nói have followers, không nói \"have two million follows\". Động từ là follow someone (không có on): I follow her."
+        },
+        "examples": [
+          {
+            "target": "She has more than two million followers on Instagram.",
+            "translation": {
+              "vi": "Cô ấy có hơn hai triệu người theo dõi trên Instagram."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "người theo dõi (một tài khoản mạng xã hội)"
+        }
+      },
+      "content_hash": "3a412558688c912291434e40846820968606f403030fd66d3bc4cc4de736dd4b",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˈfɒləʊə/ · US /ˈfɑːloʊɚ/",
+        "pos": "danh từ",
+        "text": "follower"
+      },
+      "id": "89214487-dbdf-5363-9e1c-4eb9c4f83041",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:follower",
+      "language_code": "en",
+      "level_code": "b2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -147461,6 +155547,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Quá khứ là went viral, không dùng bị động \"was viral\" hay \"was gone viral\"."
+        },
+        "examples": [
+          {
+            "target": "Her video about street food in Hà Nội went viral overnight.",
+            "translation": {
+              "vi": "Video của cô ấy về đồ ăn đường phố Hà Nội gây bão chỉ sau một đêm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lan truyền chóng mặt trên mạng, \"gây bão\" mạng"
+        }
+      },
+      "content_hash": "07a3f4b7330596a1bcaf3b0b00da8dfd369e886ac936ec990ba44e6f474be059",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ɡəʊ ˈvaɪrəl/ · US /ɡoʊ ˈvaɪrəl/",
+        "pos": "cụm động từ",
+        "text": "go viral"
+      },
+      "id": "69ef789d-8c65-519c-bc0a-dfa7cdd7beb1",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:go-viral",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Không nói gooder, more good hay the most good. Chỉ dùng better và the best."
         },
         "examples": [
@@ -147778,6 +155903,45 @@ select content_private.import_bundle($bundle${
       "key": "en:item:grow-up",
       "language_code": "en",
       "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Nói hack into a system hoặc hack an account; người bị hại dùng bị động: My account was hacked."
+        },
+        "examples": [
+          {
+            "target": "Hackers hacked into the company's system and stole customer data.",
+            "translation": {
+              "vi": "Tin tặc đã xâm nhập hệ thống của công ty và đánh cắp dữ liệu khách hàng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tin tặc; hack into something - xâm nhập trái phép (hệ thống, tài khoản)"
+        }
+      },
+      "content_hash": "66bc0a07d6ed514b7af487bd3c81ae8d192aff14efede06135039c7b7b109d83",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˈhækə/ · US /ˈhækɚ/",
+        "pos": "danh từ / cụm động từ",
+        "text": "hacker / hack into"
+      },
+      "id": "964d4055-07a0-5345-93d1-323d92ec46d1",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:hacker",
+      "language_code": "en",
+      "level_code": "b2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -151344,6 +159508,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Người Việt hay gọi là KOL, nhưng trong tiếng Anh thông dụng người ta nói influencer; KOL ít dùng hơn."
+        },
+        "examples": [
+          {
+            "target": "Many influencers are paid to promote products they have never used.",
+            "translation": {
+              "vi": "Nhiều người có ảnh hưởng được trả tiền để quảng cáo những sản phẩm họ chưa từng dùng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "người có sức ảnh hưởng trên mạng (KOL), người quảng bá sản phẩm cho lượng lớn người theo dõi"
+        },
+        "pronunciation_note": {
+          "vi": "Trọng âm ở âm đầu IN-flu-en-cer, không nhấn vào \"en\"."
+        }
+      },
+      "content_hash": "3a81fe5925551cd47112094586b2c67d751ef5e09bb5b67ab309fb9bb1f14422",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˈɪnfluənsə/ · US /ˈɪnfluənsɚ/",
+        "pos": "danh từ",
+        "text": "influencer"
+      },
+      "id": "9f0b841b-83f3-5546-9169-a5e4bf13bf67",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:influencer",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Không gấp đôi khi từ kết thúc bằng hai nguyên âm + phụ âm (read → reading, rain → raining) hoặc bằng w, x, y (play → playing)."
         },
         "examples": [
@@ -152819,6 +161025,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Launch đọc /lɔːntʃ/, khác lunch /lʌntʃ/ (bữa trưa). Danh từ: the launch of the app."
+        },
+        "examples": [
+          {
+            "target": "The company launched its new app in March.",
+            "translation": {
+              "vi": "Công ty ra mắt ứng dụng mới vào tháng Ba."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ra mắt, tung ra (sản phẩm, ứng dụng, chiến dịch)"
+        }
+      },
+      "content_hash": "468d3e8ba482ffa08d69ed1ed079984755eea5287e23b996a477519ff6cdf202",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /lɔːntʃ/ · US /lɑːntʃ/, /lɔːntʃ/",
+        "pos": "động từ / danh từ",
+        "text": "launch"
+      },
+      "id": "2a699ab6-74cf-5a0d-b6a8-e7c923689afa",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:launch-verb",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Người gọi leave (để lại) lời nhắn; người nghe máy take (ghi) lời nhắn."
         },
         "examples": [
@@ -153347,6 +161592,50 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Dùng between … and …, hoặc be linked to - không nói \"a link of\" hay \"linked with to\". Có liên hệ chưa chắc là nguyên nhân."
+        },
+        "examples": [
+          {
+            "target": "Scientists have found a link between social media use and anxiety.",
+            "translation": {
+              "vi": "Các nhà khoa học đã tìm thấy mối liên hệ giữa việc dùng mạng xã hội và chứng lo âu."
+            }
+          },
+          {
+            "target": "Poor sleep is linked to lower grades.",
+            "translation": {
+              "vi": "Ngủ kém có liên quan đến điểm số thấp hơn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mối liên hệ giữa A và B / có liên quan đến"
+        }
+      },
+      "content_hash": "a95cb6c704ca97c3276c5e76a4ea4c83ce34cd5355e2311ef0ea4e806d10b9ab",
+      "difficulty": 3,
+      "front": {
+        "pos": "cụm danh từ / cụm động từ",
+        "text": "a link between A and B / be linked to"
+      },
+      "id": "7c57bcfe-3454-59aa-98d2-4b9fcf0923c3",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:link-between",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -154806,6 +163095,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Không có mạo từ khi nói chung: mental health is important, không nói \"the mental health is important\"."
+        },
+        "examples": [
+          {
+            "target": "Spending less time online has improved my mental health.",
+            "translation": {
+              "vi": "Dành ít thời gian trên mạng hơn đã giúp sức khoẻ tinh thần của tôi tốt lên."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "sức khoẻ tinh thần"
+        },
+        "pronunciation_note": {
+          "vi": "Âm cuối health là /θ/ (đặt lưỡi giữa hai răng), đừng đọc thành \"hel-t\" hay \"hel-s\"."
+        }
+      },
+      "content_hash": "38d550c5f13681173d9357accd64dfce15939d87ee011b5eeaea53c0a429d2d1",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˌmentl ˈhelθ/",
+        "pos": "cụm danh từ không đếm được",
+        "text": "mental health"
+      },
+      "id": "d5f9ec43-93a3-573a-b155-76ade1dc87c7",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:mental-health",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Hỏi thực đơn của quán thì dùng the menu, không nói a menu."
         },
         "examples": [
@@ -155104,6 +163435,84 @@ select content_private.import_bundle($bundle${
       "key": "en:item:minute",
       "language_code": "en",
       "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Giống information, không có dạng số nhiều \"misinformations\". Disinformation là tin sai được tung ra có chủ đích."
+        },
+        "examples": [
+          {
+            "target": "During the pandemic, a lot of misinformation about vaccines was shared online.",
+            "translation": {
+              "vi": "Trong đại dịch, rất nhiều thông tin sai lệch về vắc xin bị chia sẻ trên mạng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thông tin sai lệch"
+        }
+      },
+      "content_hash": "034f8736b578c67d97b874fdd46d261c523d28dda9add5832b77822be71a50bc",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ˌmɪsɪnfəˈmeɪʃn/ · US /ˌmɪsɪnfɚˈmeɪʃn/",
+        "pos": "danh từ không đếm được",
+        "text": "misinformation"
+      },
+      "id": "9b4f6b92-1a88-5498-b991-ea470dfe3fc3",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:misinformation",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Misleading (gây hiểu lầm, thường không trắng trợn) nhẹ hơn false (sai sự thật). Động từ là mislead - misled - misled."
+        },
+        "examples": [
+          {
+            "target": "The headline is misleading - the study only included 30 people.",
+            "translation": {
+              "vi": "Tiêu đề này gây hiểu lầm - nghiên cứu chỉ có 30 người tham gia."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "gây hiểu lầm, dễ đánh lừa"
+        }
+      },
+      "content_hash": "0c628d99838a4f81f40d0ba71bad86b94cb151777e0acda9d3d0364fbe03ea30",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/ˌmɪsˈliːdɪŋ/",
+        "pos": "tính từ",
+        "text": "misleading"
+      },
+      "id": "89527b6c-d080-5976-aeae-70296253ab12",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:misleading",
+      "language_code": "en",
+      "level_code": "b2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -156188,6 +164597,54 @@ select content_private.import_bundle($bundle${
       "key": "en:item:nominalisation",
       "language_code": "en",
       "level_code": "c1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Sau dấu phẩy không bao giờ dùng that: \"TikTok, that was launched…\" là sai. Nếu bỏ mệnh đề đi mà câu vẫn đủ nghĩa, đó là mệnh đề không xác định."
+        },
+        "examples": [
+          {
+            "target": "TikTok, which was launched in 2016, now has over a billion users.",
+            "translation": {
+              "vi": "TikTok, ra mắt năm 2016, hiện có hơn một tỷ người dùng."
+            }
+          },
+          {
+            "target": "My brother, who works in IT, fixed my laptop in ten minutes.",
+            "translation": {
+              "vi": "Anh trai tôi, người làm ngành IT, đã sửa xong laptop của tôi trong mười phút."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mệnh đề quan hệ không xác định - thêm thông tin phụ về một danh từ đã rõ, luôn đặt giữa hai dấu phẩy và không dùng that"
+        },
+        "pronunciation_note": {
+          "vi": "Khi đọc, bạn ngừng ngắn ở mỗi dấu phẩy và hạ giọng ở phần thông tin phụ, giống như đang nói trong ngoặc đơn."
+        }
+      },
+      "content_hash": "676eebda6d94a9913e422e6a879fef599cb474120535708809d329c35138a634",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "text": ", which / who … ,"
+      },
+      "id": "b65f855c-0264-5e60-a1fa-d582ffec5ed6",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:non-defining-relative-clause",
+      "language_code": "en",
+      "level_code": "b2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -157510,6 +165967,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Dùng on a platform (trên một nền tảng), không dùng \"in a platform\"."
+        },
+        "examples": [
+          {
+            "target": "YouTube is still the most popular video platform in Vietnam.",
+            "translation": {
+              "vi": "YouTube vẫn là nền tảng video phổ biến nhất ở Việt Nam."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nền tảng (mạng xã hội, dịch vụ trực tuyến)"
+        }
+      },
+      "content_hash": "6c50e67e793dd90ebec3d5eda4122089a327a97e252409de8d595edd02ffd034",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˈplætfɔːm/ · US /ˈplætfɔːrm/",
+        "pos": "danh từ",
+        "text": "platform"
+      },
+      "id": "7ff02725-f34d-529b-9c7e-9fd812890f0d",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:online-platform",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Only bắt đầu bằng nguyên âm nên nói an only child. Cũng có thể nói I haven't got any brothers or sisters."
         },
         "examples": [
@@ -157808,6 +166304,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Không nói \"use too much the phone\"; nói overuse the phone hoặc use the phone too much."
+        },
+        "examples": [
+          {
+            "target": "Overuse of smartphones can damage your eyesight.",
+            "translation": {
+              "vi": "Lạm dụng điện thoại thông minh có thể làm hại thị lực."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "dùng quá mức, lạm dụng"
+        },
+        "pronunciation_note": {
+          "vi": "Động từ kết thúc bằng /z/ (overuse /-juːz/), danh từ kết thúc bằng /s/ (/-juːs/), giống cặp use."
+        }
+      },
+      "content_hash": "5631a3664d501c726d4d577c638f4c5969ef5582fb1cb5e9f447dcdd2bfe0ecb",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ˌəʊvəˈjuːz/ · US /ˌoʊvɚˈjuːz/",
+        "pos": "động từ / danh từ",
+        "text": "overuse"
+      },
+      "id": "e4bcd16c-89e6-500e-89cb-b4786fa39eca",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:overuse",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Parents luôn chỉ hai người (bố và mẹ) nên đi với are và these - These are my parents. Parents không có nghĩa là \"họ hàng\" (họ hàng là relatives)."
         },
         "examples": [
@@ -157880,6 +166418,48 @@ select content_private.import_bundle($bundle${
       "key": "en:item:park",
       "language_code": "en",
       "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Động từ là participate in (tham gia vào), không phải \"participate to\". Take part in đồng nghĩa nhưng thân mật hơn."
+        },
+        "examples": [
+          {
+            "target": "Half of the participants were asked to stop using social media for a month.",
+            "translation": {
+              "vi": "Một nửa số người tham gia được yêu cầu ngừng dùng mạng xã hội trong một tháng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "người tham gia (nghiên cứu, khảo sát, cuộc thi)"
+        },
+        "pronunciation_note": {
+          "vi": "Trọng âm ở âm thứ hai par-TI-ci-pant."
+        }
+      },
+      "content_hash": "5a38c18e74b8a4cf8b016f4f58d6af31a6fbef8e5280b2583d1eb533f7f6edd7",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /pɑːˈtɪsɪpənt/ · US /pɑːrˈtɪsəpənt/",
+        "pos": "danh từ",
+        "text": "participant"
+      },
+      "id": "0bd251b7-3f97-52e9-aa43-66b45bb1e5bb",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:participant",
+      "language_code": "en",
+      "level_code": "b2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -158101,6 +166681,51 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "V-ing là chủ động (người làm), V3 là bị động (người/vật chịu tác động). Building in 1990 sai vì toà nhà được xây, không tự xây."
+        },
+        "examples": [
+          {
+            "target": "Built in 1990, the old server room is now a café.",
+            "translation": {
+              "vi": "Được xây năm 1990, phòng máy chủ cũ giờ đã thành quán cà phê."
+            }
+          },
+          {
+            "target": "Shocked by the news, many users closed their accounts.",
+            "translation": {
+              "vi": "Bị sốc vì tin này, nhiều người dùng đã đóng tài khoản."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mệnh đề phân từ quá khứ - mang nghĩa bị động (được / bị…)"
+        }
+      },
+      "content_hash": "2efc0af14a7dfaa42bdb89f4f678db305f5af020dcec4c3c3a40cf5917b08a5e",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "text": "V3 …, mệnh đề chính"
+      },
+      "id": "59594769-5067-5aff-a939-7ae4c424de48",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:past-participle-clause",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -158412,6 +167037,91 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Sau having luôn là V3: having finished, having read - không phải \"having finish\". Phủ định đặt not lên đầu: Not having read the article, …"
+        },
+        "examples": [
+          {
+            "target": "Having finished the report, he finally checked his messages.",
+            "translation": {
+              "vi": "Sau khi đã hoàn thành bản báo cáo, anh ấy mới xem tin nhắn."
+            }
+          },
+          {
+            "target": "Having read the comments, I decided to delete the post.",
+            "translation": {
+              "vi": "Đọc xong các bình luận, tôi quyết định xoá bài đăng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "sau khi đã… / vì đã… - nhấn mạnh hành động này xong trước hành động kia"
+        }
+      },
+      "content_hash": "697390a514718ea9088e00b9cb8b7c62e568b2a419a8c3bae980ce451dfe351a",
+      "difficulty": 4,
+      "front": {
+        "ipa": "/ˈhævɪŋ/",
+        "pos": "cấu trúc ngữ pháp",
+        "text": "Having + V3 …, mệnh đề chính"
+      },
+      "id": "687c36fc-ddf8-53f4-bd65-e8cf8852d076",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:perfect-participle-clause",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Personal (cá nhân) khác personnel (nhân sự). Đừng nói \"personal datas\"."
+        },
+        "examples": [
+          {
+            "target": "Never share your personal data with apps you don't trust.",
+            "translation": {
+              "vi": "Đừng bao giờ chia sẻ dữ liệu cá nhân với những ứng dụng bạn không tin tưởng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "dữ liệu cá nhân, thông tin cá nhân"
+        }
+      },
+      "content_hash": "786bd1985dae93e5f37cf6181d083a49b48eef36785b55730f588a3ec580b4b8",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˈpɜːsənl ˈdeɪtə/ · US /ˈpɝːsənl ˈdeɪtə/",
+        "pos": "cụm danh từ không đếm được",
+        "text": "personal data"
+      },
+      "id": "794b6df9-6066-528c-bdf9-23acad95468b",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:personal-data",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -159504,6 +168214,82 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Tiếng Việt thêm \"quá\" hay \"chưa đủ\" thành từ riêng; tiếng Anh gắn tiền tố vào động từ/tính từ: overuse (dùng quá nhiều), không nói \"too use\"."
+        },
+        "examples": [
+          {
+            "target": "Many parents underestimate how much time their children spend online.",
+            "translation": {
+              "vi": "Nhiều phụ huynh đánh giá thấp thời gian con cái họ dành trên mạng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "over- = quá mức (overuse, overreact, overpriced); under- = dưới mức, chưa đủ (underestimate, underpaid)"
+        }
+      },
+      "content_hash": "6041db1c7872b4e0f787322b123d4b8f25362f2465385d0a79ad8d8ae3d26d50",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu tạo từ",
+        "text": "over- / under- (tiền tố)"
+      },
+      "id": "4bc380ed-ca85-5363-912f-f59e337656b4",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:prefix-over-under",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Un- mang nghĩa \"không\", còn mis- mang nghĩa \"làm sai\": misinformed là \"bị thông tin sai\", uninformed là \"không có thông tin\"."
+        },
+        "examples": [
+          {
+            "target": "The article was misleading, and the source was completely unreliable.",
+            "translation": {
+              "vi": "Bài báo gây hiểu lầm, và nguồn tin hoàn toàn không đáng tin cậy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "un- = không, ngược lại (unreliable, unlimited); mis- = sai, nhầm (misunderstand, misinform, misuse)"
+        }
+      },
+      "content_hash": "2800542fbf4456389d1ca2985949ade113732f298f245fb94e77256bf0f6446a",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu tạo từ",
+        "text": "un- / mis- (tiền tố)"
+      },
+      "id": "7c6a4230-235d-5273-b54f-f0ee6d4653a0",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:prefix-un-mis",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "To trong look forward to, be used to cũng là giới từ, nên phía sau là V-ing (look forward to seeing you)."
         },
         "examples": [
@@ -159540,6 +168326,51 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Sau giới từ không dùng that: \"in that\" sai trong nghĩa này. Văn nói tự nhiên hơn: the platform (that) the video was shared on."
+        },
+        "examples": [
+          {
+            "target": "This is the platform on which the video was first shared.",
+            "translation": {
+              "vi": "Đây là nền tảng mà video đầu tiên được chia sẻ trên đó."
+            }
+          },
+          {
+            "target": "The study, in which 2,000 teenagers took part, lasted three years.",
+            "translation": {
+              "vi": "Nghiên cứu này, có 2.000 thiếu niên tham gia, kéo dài ba năm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "giới từ + which - trong đó / mà trên đó / mà vì nó… (văn viết trang trọng)"
+        }
+      },
+      "content_hash": "49c997a207da465a4986de731ce44ead930f5ca2606d34e3a0297fe904d86d90",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "text": "in which / on which / for which …"
+      },
+      "id": "aad61ad5-566b-5d07-99e1-dc4233ffdd3a",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:preposition-relative-which",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -159669,6 +168500,51 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "grammar",
         "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Chủ ngữ ngầm hiểu của V-ing phải trùng chủ ngữ của mệnh đề chính. \"Feeling tired, the phone was turned off\" sai vì điện thoại không thể thấy mệt."
+        },
+        "examples": [
+          {
+            "target": "Feeling tired, she turned off her phone and went to bed.",
+            "translation": {
+              "vi": "Thấy mệt, cô ấy tắt điện thoại và đi ngủ."
+            }
+          },
+          {
+            "target": "Scrolling through the news, I noticed a strange headline.",
+            "translation": {
+              "vi": "Đang lướt tin tức, tôi để ý thấy một tiêu đề lạ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mệnh đề phân từ hiện tại - rút gọn mệnh đề có cùng chủ ngữ, chỉ lý do hoặc hai hành động xảy ra cùng lúc"
+        }
+      },
+      "content_hash": "624149727c6ed5b59de22d1c60063d015828c02d95db1ca416f12e0a9ec5c830",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "text": "V-ing …, mệnh đề chính"
+      },
+      "id": "53a92c45-790f-5d95-ac56-0ba86e7cde68",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:present-participle-clause",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -159900,6 +168776,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Privacy không đếm được: protect your privacy, không nói \"a privacy\" hay \"privacies\". Tính từ là private."
+        },
+        "examples": [
+          {
+            "target": "Many users are worried about their privacy online.",
+            "translation": {
+              "vi": "Nhiều người dùng lo lắng về quyền riêng tư của mình trên mạng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "quyền riêng tư, sự riêng tư"
+        },
+        "pronunciation_note": {
+          "vi": "Người Anh đọc PRI-va-cy /ˈprɪvəsi/, người Mỹ đọc PRAI-va-cy /ˈpraɪvəsi/ - cả hai đều đúng."
+        }
+      },
+      "content_hash": "a517ec16b994cac8cdb7aa020a89363130b7c0f5a778673dd3408cd9ab017dfa",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ˈprɪvəsi/ · US /ˈpraɪvəsi/",
+        "pos": "danh từ không đếm được",
+        "text": "privacy"
+      },
+      "id": "67661a9d-0958-5238-8181-b954ea1e290c",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:privacy",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Probably đứng sau will (will probably be) nhưng đứng trước won't (probably won't come)."
         },
         "examples": [
@@ -159976,6 +168894,45 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Báo chí giật tít thường đổi suggest thành prove. Đọc tin khoa học, bạn hãy để ý động từ này để biết kết luận chắc đến đâu."
+        },
+        "examples": [
+          {
+            "target": "The study doesn't prove that coffee causes cancer - it only suggests a link.",
+            "translation": {
+              "vi": "Nghiên cứu không chứng minh cà phê gây ung thư - nó chỉ gợi ý có một mối liên hệ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mức độ chắc chắn giảm dần: prove (chứng minh), show (cho thấy rõ), suggest (gợi ý, có thể), claim (tuyên bố, chưa kiểm chứng)"
+        }
+      },
+      "content_hash": "f25c83be71c2d9b542ce126bfdda95a9702ba3a50717efa436322ce1b43ac9cf",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ tường thuật",
+        "text": "prove / show / suggest / claim"
+      },
+      "id": "2192a29c-a9fe-59fa-82a4-cf2d51e8f63c",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:prove-vs-suggest",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -160610,6 +169567,51 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Đừng giữ lại be khi rút gọn: \"a study was published last month links…\" là sai - hai động từ chia trong một mệnh đề."
+        },
+        "examples": [
+          {
+            "target": "A study published last month links screen time to poor sleep.",
+            "translation": {
+              "vi": "Một nghiên cứu công bố tháng trước liên hệ thời gian dùng màn hình với giấc ngủ kém."
+            }
+          },
+          {
+            "target": "Users living in rural areas often have slower internet.",
+            "translation": {
+              "vi": "Người dùng sống ở vùng nông thôn thường có mạng chậm hơn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "rút gọn who/which + động từ: people using the app = people who use the app; a study published = a study which was published"
+        }
+      },
+      "content_hash": "42f74dc24f7ad275d0067219a1c24d8318615c42dcf5be809b1307690ef19eda",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "text": "danh từ + V-ing / V3 (rút gọn mệnh đề quan hệ)"
+      },
+      "id": "cdbeabaf-e3f7-553a-adfc-2570ff9f9625",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:reduced-relative-participle",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Nói get a refund / I'd like a refund, không nói I want to refund (nghĩa là mình sẽ trả lại tiền cho người khác)."
         },
         "examples": [
@@ -160877,6 +169879,100 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Sau giới từ chỉ được dùng whom, không dùng who hay that: to whom, không phải \"to who\". Trong văn nói, người ta thường đẩy giới từ ra cuối: the scientist we spoke to."
+        },
+        "examples": [
+          {
+            "target": "The scientist to whom we spoke asked not to be named.",
+            "translation": {
+              "vi": "Nhà khoa học mà chúng tôi đã trò chuyện đề nghị không nêu tên."
+            }
+          },
+          {
+            "target": "Our new manager, whom I met yesterday, seems very experienced.",
+            "translation": {
+              "vi": "Quản lý mới của chúng tôi, người mà tôi gặp hôm qua, có vẻ rất nhiều kinh nghiệm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "người mà (tân ngữ, trang trọng); bắt buộc dùng whom ngay sau giới từ"
+        }
+      },
+      "content_hash": "bf6f5f04518ee8ac2603abe35b6a5b428005229978aedd899ed28cbf97611436",
+      "difficulty": 4,
+      "front": {
+        "ipa": "/huːm/",
+        "pos": "đại từ quan hệ",
+        "text": "whom / to whom"
+      },
+      "id": "bbad5e84-7e76-559f-ba36-336878cec82e",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:relative-whom",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Đừng viết \"who's article\" (who's = who is) hay \"who his article\". Whose dùng được cho cả vật: a company whose profits…"
+        },
+        "examples": [
+          {
+            "target": "The journalist, whose article went viral last week, has received hundreds of messages.",
+            "translation": {
+              "vi": "Nhà báo ấy, người có bài viết lan truyền chóng mặt tuần trước, đã nhận được hàng trăm tin nhắn."
+            }
+          },
+          {
+            "target": "It's an app whose main purpose is to help you sleep better.",
+            "translation": {
+              "vi": "Đó là một ứng dụng có mục đích chính là giúp bạn ngủ ngon hơn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mà … của người/vật đó (chỉ sở hữu, thay cho his / her / its / their)"
+        },
+        "pronunciation_note": {
+          "vi": "Whose đọc giống hệt who's /huːz/; bạn phân biệt bằng ngữ cảnh - sau whose luôn là một danh từ."
+        }
+      },
+      "content_hash": "3f54ed8efe17fcc544de0366a66c9b6a9d80249a314fe646315c1435af09bdbc",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/huːz/",
+        "pos": "đại từ quan hệ",
+        "text": "whose + danh từ"
+      },
+      "id": "d4097af8-f469-5d41-bf2e-ce126115463d",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:relative-whose",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Relatively làm mềm nhận định, phù hợp khi nói về hạn chế của nghiên cứu; tránh dùng very small vì nghe chủ quan hơn."
         },
         "examples": [
@@ -161029,6 +170125,45 @@ select content_private.import_bundle($bundle${
       "is_demo": true,
       "item_type": "vocab",
       "key": "en:item:reliable",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Source (nguồn) đọc /sɔːs/, khác sauce /sɔːs/ chỉ ở chính tả - hãy dựa vào ngữ cảnh. Nói information comes from a source, không nói \"comes in a source\"."
+        },
+        "examples": [
+          {
+            "target": "Check whether the information comes from a reliable source, such as a university or a government website.",
+            "translation": {
+              "vi": "Hãy kiểm tra xem thông tin có đến từ một nguồn đáng tin cậy, như trang web của trường đại học hay cơ quan nhà nước không."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nguồn (tin) đáng tin cậy"
+        }
+      },
+      "content_hash": "cb2ea1cb6858387ece3bf96d325621fe6959c57588bb77a093e638f266942947",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ə rɪˈlaɪəbl sɔːs/ · US /ə rɪˈlaɪəbl sɔːrs/",
+        "pos": "cụm danh từ",
+        "text": "a reliable / trustworthy source"
+      },
+      "id": "2a8dc499-d97e-5d21-ad48-9b9aec89c87f",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:reliable-source",
       "language_code": "en",
       "level_code": "b2",
       "reviewed_at": null,
@@ -161414,6 +170549,46 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "grammar",
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Claim không phải \"đòi\" (như claim money); trong tin khoa học, claim nghĩa là \"tuyên bố\" và ngầm cho thấy chưa được kiểm chứng. Không nói \"claim to that\"."
+        },
+        "examples": [
+          {
+            "target": "Researchers claim that the new battery could last for a week.",
+            "translation": {
+              "vi": "Các nhà nghiên cứu khẳng định loại pin mới có thể dùng được cả tuần."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "các nhà nghiên cứu khẳng định / cho rằng… (người viết chưa chắc điều đó đúng)"
+        }
+      },
+      "content_hash": "396ced4cbd736a31512e1a5ff038ca0481d112aaeea1dcc5d037e09cd259a941",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /rɪˈsɜːtʃəz kleɪm/ · US /ˈriːsɝːtʃɚz kleɪm/",
+        "pos": "cụm câu",
+        "text": "researchers claim / argue / believe that…"
+      },
+      "id": "376bdddd-7ed7-5c76-bfbd-6ba3c6ef1376",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:researchers-claim",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -162451,6 +171626,51 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Chỉ dùng which, không dùng what hay that: \"…, what surprised everyone\" là sai. Động từ sau which chia số ít vì nó thay cho cả một sự việc."
+        },
+        "examples": [
+          {
+            "target": "The app crashed during the presentation, which was really embarrassing.",
+            "translation": {
+              "vi": "Ứng dụng bị treo giữa buổi thuyết trình, điều đó thật sự rất ngượng."
+            }
+          },
+          {
+            "target": "He deleted all his social media accounts, which surprised everyone.",
+            "translation": {
+              "vi": "Anh ấy xoá hết các tài khoản mạng xã hội, việc này khiến mọi người bất ngờ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "điều này / việc này… - which thay cho cả mệnh đề phía trước, không chỉ một danh từ"
+        }
+      },
+      "content_hash": "9aabade2e68f9d6002931c30a5b1d8c95b63c5b18f8c42769dc911d4bc1ce786",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "text": ", which + V (bình luận cả câu)"
+      },
+      "id": "8baa386c-9675-5008-89d1-bcbfd823fe36",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:sentential-which",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -164634,6 +173854,51 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Download là tải về máy; stream là xem trực tiếp qua mạng, không lưu file."
+        },
+        "examples": [
+          {
+            "target": "Streaming services have changed the way we watch films.",
+            "translation": {
+              "vi": "Các dịch vụ xem trực tuyến đã thay đổi cách chúng ta xem phim."
+            }
+          },
+          {
+            "target": "The match will be streamed live on the club's website.",
+            "translation": {
+              "vi": "Trận đấu sẽ được phát trực tiếp trên trang web của câu lạc bộ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phát / xem trực tuyến (nhạc, phim, livestream) mà không cần tải về"
+        }
+      },
+      "content_hash": "5c689593a2728dd369ffaee247a6462e02b908a09afd3be09b36fdc58be56b68",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˈstriːmɪŋ/",
+        "pos": "danh từ / động từ",
+        "text": "streaming / stream"
+      },
+      "id": "bff46725-2650-53e4-9d5c-8683789540f5",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:streaming",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Ở trên một con phố thì dùng on - on Le Loi Street; có số nhà thì dùng at - at 25 Le Loi Street."
         },
         "examples": [
@@ -165008,6 +174273,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Đi với giới từ to: subscribe to a channel. Đừng nói \"subscribe a channel\"."
+        },
+        "examples": [
+          {
+            "target": "I subscribe to three streaming services, but I hardly watch any of them.",
+            "translation": {
+              "vi": "Tôi đăng ký ba dịch vụ xem phim trực tuyến nhưng hầu như chẳng xem cái nào."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đăng ký theo dõi, đăng ký dùng (kênh, dịch vụ trả phí)"
+        },
+        "pronunciation_note": {
+          "vi": "Trọng âm ở âm thứ hai sub-SCRIBE; danh từ subscription /səbˈskrɪpʃn/ đổi nguyên âm thành /ɪ/."
+        }
+      },
+      "content_hash": "2cf323069e1d70bce9e50bd754f2410461268a155964a1709fb9146fe79fb52a",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/səbˈskraɪb/",
+        "pos": "động từ",
+        "text": "subscribe (to)"
+      },
+      "id": "6308974b-2e6a-5bf1-b310-a1f511f82af4",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:subscribe",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Không dùng one cho danh từ không đếm được - nói I prefer fresh milk to long-life milk, không nói to the long-life one. Sau a + tính từ thì phải có one - a faster one, không nói a faster."
         },
         "examples": [
@@ -165171,6 +174478,87 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Rely đổi y thành i: reliable, không phải \"relyable\". Thêm un- để phủ định: unreliable, unaffordable."
+        },
+        "examples": [
+          {
+            "target": "Fast internet should be affordable and accessible to everyone.",
+            "translation": {
+              "vi": "Internet tốc độ cao nên có giá phải chăng và ai cũng tiếp cận được."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "có thể … được: rely → reliable (đáng tin cậy), afford → affordable (giá phải chăng), access → accessible (tiếp cận được)"
+        }
+      },
+      "content_hash": "4c52acad93d2f8c041bf4a624b2ce5245a112fa7e0be6ec3eaa1611bbfd058a1",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/əbl/",
+        "pos": "cấu tạo từ",
+        "text": "-able / -ible (hậu tố tạo tính từ)"
+      },
+      "id": "c6c421ba-31cf-515f-9b08-d687afe7b7fa",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:suffix-able",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Người Việt hay dùng tính từ ở vị trí danh từ: \"the develop of AI\", \"people's aware\". Sau the / of / tính từ sở hữu cần danh từ."
+        },
+        "examples": [
+          {
+            "target": "The development of AI raises serious questions about security and fairness.",
+            "translation": {
+              "vi": "Sự phát triển của AI đặt ra những câu hỏi nghiêm túc về an ninh và sự công bằng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "biến động từ/tính từ thành danh từ: develop → development, secure → security, aware → awareness"
+        },
+        "pronunciation_note": {
+          "vi": "-ity kéo trọng âm về âm ngay trước nó: SEcure → seCUrity, POSSible → possiBIlity."
+        }
+      },
+      "content_hash": "caf3e48b98a953f7f81687bd65d75cbbc7cdf7602196df25d3c00d6dd8490c25",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu tạo từ",
+        "text": "-ment / -ity / -ness (hậu tố tạo danh từ)"
+      },
+      "id": "2eb13a4c-7c6e-5bfa-a75b-c7a19741a755",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:suffix-noun-ment-ity-ness",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "writing"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -166727,6 +176115,50 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Nói on the Internet, in the media - nhưng on TV, on social media (không có the). Internet cũng có thể viết thường: the internet."
+        },
+        "examples": [
+          {
+            "target": "Most teenagers get their news from the Internet, not from TV.",
+            "translation": {
+              "vi": "Phần lớn thanh thiếu niên đọc tin tức trên mạng chứ không xem trên ti vi."
+            }
+          },
+          {
+            "target": "The media often exaggerate scientific findings.",
+            "translation": {
+              "vi": "Truyền thông thường phóng đại các phát hiện khoa học."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "những danh từ \"duy nhất\" luôn đi với the: Internet, truyền thông, báo chí"
+        }
+      },
+      "content_hash": "6ba8a47d40f65f3daa6380c3f04bdbae39f3dd775e836ef3907621624b1e4fd2",
+      "difficulty": 3,
+      "front": {
+        "pos": "cụm danh từ cố định",
+        "text": "the Internet / the media / the press"
+      },
+      "id": "3e304982-fa4f-5097-9f97-180d1edf651d",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:the-internet-the-media",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -168991,6 +178423,50 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Không có \"informations\", \"advices\", \"equipments\". Muốn đếm thì dùng a piece of: two pieces of advice. News đi với động từ số ít: The news is…"
+        },
+        "examples": [
+          {
+            "target": "Can you give me some information about the course?",
+            "translation": {
+              "vi": "Bạn cho tôi vài thông tin về khoá học được không?"
+            }
+          },
+          {
+            "target": "She gave me a useful piece of advice.",
+            "translation": {
+              "vi": "Cô ấy cho tôi một lời khuyên hữu ích."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "những danh từ không đếm được trong tiếng Anh dù tiếng Việt đếm được - không thêm -s, không dùng a/an"
+        }
+      },
+      "content_hash": "7ea556250546327e52a5edf223cfc95a76b2f7bfaebbc99b44dd085b72dcf7ea",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ không đếm được",
+        "text": "information / advice / equipment / news / research"
+      },
+      "id": "3e492211-bcbd-5713-bc01-c3198cb9d5c3",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:uncountable-information-advice",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Dùng khi điều đó hiển nhiên; dùng cho một ý gây tranh cãi sẽ làm người nghe thấy bạn áp đặt."
         },
         "examples": [
@@ -169065,6 +178541,45 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "grammar",
         "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Ngược nghĩa là overestimate (đánh giá quá cao). Đi thẳng với tân ngữ, không cần giới từ: underestimate the risk."
+        },
+        "examples": [
+          {
+            "target": "Never underestimate the power of social media.",
+            "translation": {
+              "vi": "Đừng bao giờ xem nhẹ sức mạnh của mạng xã hội."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đánh giá thấp, xem nhẹ"
+        }
+      },
+      "content_hash": "1eae3fe7aa104c42c9512cfac77480998bf1f0d1ce5c598459f6d8da61e06b03",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ˌʌndərˈestɪmeɪt/ · US /ˌʌndɚˈestəmeɪt/",
+        "pos": "động từ",
+        "text": "underestimate"
+      },
+      "id": "52e9900b-bb9b-563f-8987-168357b2c95d",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:underestimate",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -169308,6 +178823,45 @@ select content_private.import_bundle($bundle${
       "key": "en:item:uniform",
       "language_code": "en",
       "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Đừng nói \"not reliable information sources\" khi có sẵn tính từ unreliable; cũng đừng viết \"inreliable\"."
+        },
+        "examples": [
+          {
+            "target": "Anonymous websites are often unreliable sources of information.",
+            "translation": {
+              "vi": "Các trang web nặc danh thường là nguồn thông tin không đáng tin cậy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "không đáng tin cậy"
+        }
+      },
+      "content_hash": "6f085ab1f17fc0b3a947ceec54c2dcb40732e4873a164d9df149e46da8b91845",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/ˌʌnrɪˈlaɪəbl/",
+        "pos": "tính từ",
+        "text": "unreliable"
+      },
+      "id": "baa7e34c-c9cf-599f-a1de-ee7d1b4e424e",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:unreliable",
+      "language_code": "en",
+      "level_code": "b2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -172098,6 +181652,51 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Chỉ dùng the khi đã xác định: the technology used in this phone (công nghệ dùng trong chiếc điện thoại này). \"The technology is developing\" nghe như đang nói về một công nghệ cụ thể nào đó."
+        },
+        "examples": [
+          {
+            "target": "Technology has changed the way we communicate.",
+            "translation": {
+              "vi": "Công nghệ đã thay đổi cách chúng ta giao tiếp."
+            }
+          },
+          {
+            "target": "Smartphones can be very addictive.",
+            "translation": {
+              "vi": "Điện thoại thông minh có thể gây nghiện rất nặng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "khi nói chung chung về một khái niệm hay cả một loại, không dùng the: Technology…, Science…, Smartphones…"
+        }
+      },
+      "content_hash": "1d191b1769fbf1802934bcbd66203125ea80b528b52b02ec933fe34857fcd798",
+      "difficulty": 3,
+      "front": {
+        "pos": "quy tắc mạo từ",
+        "text": "Ø + danh từ trừu tượng / số nhiều (nghĩa chung)"
+      },
+      "id": "2a2635fc-2b58-5a7c-a5e9-1be8e71d45b6",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:zero-article-general",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -188633,6 +198232,1755 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "암시 (gợi ngầm) khác 제시 (đưa ra trực tiếp) và 명시 (ghi rõ). Câu hỏi suy luận TOPIK thường hỏi điều được 암시."
+        },
+        "examples": [
+          {
+            "target": "마지막 문장은 화자가 다시 돌아오지 못할 것임을 암시한다.",
+            "translation": {
+              "vi": "Câu cuối ngầm cho biết nhân vật trữ tình sẽ không thể trở lại nữa."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Ám chỉ, gợi ý ngầm - nói gián tiếp, người đọc phải tự suy ra."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [암시하다]; ㅁ cuối 암 khép môi rõ trước 시."
+        }
+      },
+      "content_hash": "0906a29932740e173537cab3524629d2c8b5ad93e3952057ff8bbc9c41d9fadd",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "romanization": "amsihada",
+        "text": "암시하다"
+      },
+      "id": "7e8accf4-7001-55aa-9b1e-1c71262d02d4",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-amsihada",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "백성 chỉ dùng khi nói về thời xưa. Người dân hiện đại là 국민 hoặc 시민, đừng viết 대한민국 백성."
+        },
+        "examples": [
+          {
+            "target": "세종대왕은 글을 모르는 백성을 안타깝게 여겼다.",
+            "translation": {
+              "vi": "Vua Sejong thương xót những người dân không biết chữ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Bách tính, dân chúng (cách gọi dân thường thời phong kiến)."
+        },
+        "pronunciation_note": {
+          "vi": "Sau patchim ㄱ, ㅅ đọc căng nên 백성 đọc [백썽]."
+        }
+      },
+      "content_hash": "8ddcad85af7b02988c2ca80420c11d366d05923abbf6a070b1dd3005fcd437ee",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "baekseong",
+        "text": "백성"
+      },
+      "id": "e638a461-5adc-5ff7-b42c-a0634c56b06c",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-baekseong",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không phải \"đi nhiều nơi\" hay \"chân to\". Muốn nói \"đi nhiều nơi\" thì dùng 여기저기 많이 다니다."
+        },
+        "examples": [
+          {
+            "target": "민수 씨는 발이 넓어서 어느 모임에 가도 아는 사람이 있다.",
+            "translation": {
+              "vi": "Anh Minsu quen biết rộng nên đi buổi gặp mặt nào cũng có người quen."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Quen biết rộng, quan hệ rộng (nghĩa đen - \"chân rộng\")."
+        },
+        "pronunciation_note": {
+          "vi": "넓다 đọc [널따] - patchim kép ㄼ chỉ đọc ㄹ, ㄷ sau đó căng."
+        }
+      },
+      "content_hash": "e28f1c345b565e2ce060449cab02de845365c61bddbe1b97500f90ae98b0242b",
+      "difficulty": 3,
+      "front": {
+        "pos": "quán ngữ (tính từ)",
+        "romanization": "bari neolda",
+        "text": "발이 넓다"
+      },
+      "id": "408dfba6-5d29-538f-bdec-ee6d717a617a",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:hl-bari-neolda",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Trật tự trợ từ - A를 B에 비유하다 (ví A với B). Người Việt hay viết ngược thành A에 B를 비유하다."
+        },
+        "examples": [
+          {
+            "target": "시인은 인생을 강물에 비유했다.",
+            "translation": {
+              "vi": "Nhà thơ ví cuộc đời với dòng sông."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Phép so sánh, ví von; ví A với B (A를 B에 비유하다)."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [비유]; ㅂ không bật hơi, gần \"b\" tiếng Việt."
+        }
+      },
+      "content_hash": "be371aa7553fc04ec78a03d4fe181b1937a5bdff598245082bf2a5a185663100",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ / động từ",
+        "romanization": "biyu / biyuhada",
+        "text": "비유 / 비유하다"
+      },
+      "id": "96b95b4f-dc6a-5781-b2ee-08ff4f62ce01",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-bigyu",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Trong tiếng Việt \"phê phán\" có khi hiểu là \"phân tích kỹ\" (tư duy phản biện). Trong câu hỏi thái độ TOPIK, 비판적 nghĩa là chỉ ra điều sai."
+        },
+        "examples": [
+          {
+            "target": "필자는 무분별한 개발에 대해 비판적인 태도를 보인다.",
+            "translation": {
+              "vi": "Người viết thể hiện thái độ phê phán đối với việc khai thác bừa bãi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Mang tính phê phán, chỉ trích - người viết chỉ ra cái sai, cái bất hợp lý."
+        },
+        "pronunciation_note": {
+          "vi": "Nối âm - 비판적이다 đọc [비판저기다]."
+        }
+      },
+      "content_hash": "62e80130dd6e79ceda20784c677f26a94409b29f2a8935e76b1a1784d24c0c03",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ (thuật ngữ thái độ)",
+        "romanization": "bipanjeogida",
+        "text": "비판적이다"
+      },
+      "id": "efe037fb-a400-5178-b16b-b517f1326584",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-bipanjeogida",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Âm Hán Việt của 보전 là \"bảo toàn\", không phải \"bảo tồn\". Môi trường đôi khi cũng đi với 보존, nhưng hiện vật, tư liệu lịch sử thì gần như luôn là 보존."
+        },
+        "examples": [
+          {
+            "target": "갯벌은 생태계 보전을 위해 개발이 제한되어 있다.",
+            "translation": {
+              "vi": "Vùng bãi triều bị hạn chế khai thác để bảo vệ hệ sinh thái."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Bảo toàn, bảo vệ cho khỏi bị tổn hại - thường dùng với môi trường, hệ sinh thái, đất đai."
+        },
+        "pronunciation_note": {
+          "vi": "보전 [보전] có nguyên âm ㅓ (mở miệng hơn), còn 보존 [보존] có ㅗ (tròn môi). Người Việt hay đọc lẫn hai từ này."
+        }
+      },
+      "content_hash": "06082b2a7874b79a97f6b44820893e3d918a84c879783fe49adb9aa4da92c447",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "romanization": "bojeonhada",
+        "text": "보전하다"
+      },
+      "id": "62a38c3e-9b37-55b7-8e1f-39cadb51b009",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-bojeonhada",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "보존 (保存) = bảo tồn, giữ nguyên trạng; 보전 (保全) = bảo toàn, giữ cho an toàn, hay đi với 환경, 생태계. Với 문화재, 기록, 유물, hãy dùng 보존."
+        },
+        "examples": [
+          {
+            "target": "이 기록은 원래 모습 그대로 보존되어 있다.",
+            "translation": {
+              "vi": "Tư liệu này được bảo tồn nguyên vẹn như hình dạng ban đầu."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Bảo tồn - giữ gìn cho nguyên trạng, không bị hư hỏng hay mất đi (di sản, tư liệu, hiện vật)."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [보존하다]; ㅎ giữa hai nguyên âm thường yếu đi khi nói nhanh."
+        }
+      },
+      "content_hash": "afe8290155b9917ad6ffce27fc9cd8aa76d96c77c5ea4f03070781b9cbfe6295",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "romanization": "bojonhada",
+        "text": "보존하다"
+      },
+      "id": "22948a2e-97c8-592d-803a-75b114d3734c",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-bojonhada",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Tiếng Việt đều nói \"khôi phục\", nhưng 복원 dùng cho vật thể và hình dạng (건물, 그림, 파일). Sức khoẻ, niềm tin, kinh tế thì dùng 회복하다."
+        },
+        "examples": [
+          {
+            "target": "2008년 화재로 크게 훼손된 숭례문은 2013년에 복원되었다.",
+            "translation": {
+              "vi": "Cổng Sungnyemun bị hư hại nặng do hoả hoạn năm 2008 đã được phục dựng vào năm 2013."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Phục nguyên, trùng tu - khôi phục lại hình dạng ban đầu của công trình, hiện vật, dữ liệu đã bị hư hỏng."
+        },
+        "pronunciation_note": {
+          "vi": "Patchim ㄱ nối sang nguyên âm sau nên đọc [보권하다]. Bị động 복원되다 đọc [보권되다]."
+        }
+      },
+      "content_hash": "dbb65208834fceb7e41fc91a2a14affddce7d7fed83ffb572bff1db04f8ddad7",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "romanization": "bogwonhada",
+        "text": "복원하다"
+      },
+      "id": "9585b8a7-8545-5a41-a098-bfeee65f4e7f",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-bowonhada",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "그리워하다 là nỗi nhớ da diết với điều xa cách, khác 기억하다 (nhớ thông tin). 비밀번호를 그리워하다 là sai."
+        },
+        "examples": [
+          {
+            "target": "그는 평생 고향의 바다를 그리워했다.",
+            "translation": {
+              "vi": "Cả đời ông nhớ thương biển quê nhà."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Nhớ nhung, hoài niệm (người, nơi chốn, thời đã qua); nỗi nhớ."
+        },
+        "pronunciation_note": {
+          "vi": "그리워 đọc liền [그리워]; ㄹ giữa hai nguyên âm là âm vỗ nhẹ."
+        }
+      },
+      "content_hash": "d3c21df1b0c96efc7b28e6dbb7a5e1e9af6a2bbe340a6241a0707f73e2075d9b",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ / danh từ",
+        "romanization": "geuriwohada / geurium",
+        "text": "그리워하다 / 그리움"
+      },
+      "id": "623ef44e-97a6-54c8-8fa7-78bd9eb03eac",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-geuriwohada",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "기록 (tư liệu ghi lại) khác 기억 (ký ức trong đầu). Trong ngữ cảnh thể thao, 기록을 세우다 là \"lập kỷ lục\"."
+        },
+        "examples": [
+          {
+            "target": "조선왕조실록에는 왕의 하루 일과까지 자세히 기록되어 있다.",
+            "translation": {
+              "vi": "Biên niên sử triều Joseon ghi chép tỉ mỉ đến cả sinh hoạt hằng ngày của nhà vua."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Ghi chép, tư liệu ghi lại; ghi chép lại (sự kiện, lịch sử). Cũng có nghĩa \"kỷ lục\" trong thể thao."
+        },
+        "pronunciation_note": {
+          "vi": "기록하다 đọc [기로카다]; 기록되다 đọc [기록뙤다] - ㄷ sau ㄱ đọc căng."
+        }
+      },
+      "content_hash": "868b1e2918ba54470a20d8687a6dba82811c2ad37a297cc66f9154d895298701",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ / động từ",
+        "romanization": "girok / girokhada",
+        "text": "기록 / 기록하다"
+      },
+      "id": "1cab6367-ab9a-59ae-8669-f0edf7425dad",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-girok",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "고전 (古典 - cổ điển) khác 고대 (古代 - cổ đại, chỉ thời kỳ). 고전 음악 là nhạc cổ điển, 고대 사회 là xã hội cổ đại."
+        },
+        "examples": [
+          {
+            "target": "고전 문학에는 오늘날 잘 쓰지 않는 어미가 자주 나온다.",
+            "translation": {
+              "vi": "Trong văn học cổ điển thường xuất hiện những vĩ tố ngày nay ít dùng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Văn học cổ điển · văn học hiện đại."
+        },
+        "pronunciation_note": {
+          "vi": "문학 đọc [문학], khi nói nhanh ㅎ yếu đi nghe gần [무낙]."
+        }
+      },
+      "content_hash": "97eacb120827620a86afa9efe304b4f1d3a866b8d915f03daa4d03922c013693",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "gojeon munhak · hyeondae munhak",
+        "text": "고전 문학 · 현대 문학"
+      },
+      "id": "98970cc8-b199-5946-9499-e374e62f62df",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:hl-gojeon-munhak",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "-(으)되 không phải động từ 되다 (trở thành). 허용하되 là \"cho phép, nhưng...\", không phải \"được cho phép\"."
+        },
+        "examples": [
+          {
+            "target": "사진 촬영은 허용하되 플래시는 사용할 수 없다.",
+            "translation": {
+              "vi": "Cho phép chụp ảnh, nhưng không được dùng đèn flash."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Nhưng, song (kèm điều kiện, giới hạn) - thường gặp trong nội quy, văn bản pháp luật, thông báo - \"làm A, nhưng phải B\"."
+        },
+        "pronunciation_note": {
+          "vi": "되 đọc [되] hoặc [뒈]; ㅚ ở Seoul ngày nay thường nghe như [ㅞ]."
+        }
+      },
+      "content_hash": "e4384340b26cefb3c7ffa7d5c188dc5fa299909ab8ef8c4a6b1a320fd04513d9",
+      "difficulty": 5,
+      "front": {
+        "pos": "vĩ tố liên kết (trang trọng)",
+        "romanization": "-(eu)doe",
+        "text": "-(으)되"
+      },
+      "id": "750cf0dd-39ce-5090-b835-6573d6020bf5",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:hl-gram-eudoe",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "-거니와 khác -거나 (hoặc). 비가 오거니와 바람도 분다 là \"đã mưa lại còn gió\", không phải \"mưa hoặc gió\"."
+        },
+        "examples": [
+          {
+            "target": "이 마을은 경치도 아름답거니와 인심도 좋다.",
+            "translation": {
+              "vi": "Ngôi làng này cảnh đã đẹp, lòng người lại còn tốt."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Đã... lại còn... (thừa nhận vế trước rồi thêm ý vế sau) - tương đương -(으)ㄹ 뿐만 아니라. Cũng gặp trong 다시 말하거니와 \"xin nhắc lại\"."
+        },
+        "pronunciation_note": {
+          "vi": "Gốc kết thúc ㅎ thì ㅎ gặp ㄱ thành ㅋ - 좋거니와 đọc [조커니와]."
+        }
+      },
+      "content_hash": "494906b26cc285ee256fc6e4276594a21ff1c738acdbe16417611dbcffc420b3",
+      "difficulty": 5,
+      "front": {
+        "pos": "vĩ tố liên kết (văn viết)",
+        "romanization": "-geoniwa",
+        "text": "-거니와"
+      },
+      "id": "a01e9b70-7737-5d25-944d-22a1bbdaaa58",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:hl-gram-geoniwa",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "-건만 là một đuôi trọn vẹn, không phải -건 (dù... hay) + 만 (chỉ). Đừng dịch \"chỉ khi\" hay \"chỉ\"."
+        },
+        "examples": [
+          {
+            "target": "봄은 왔건만 고향에 돌아갈 날은 아직 멀다.",
+            "translation": {
+              "vi": "Xuân đã về vậy mà ngày trở lại quê hương vẫn còn xa."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Vậy mà, thế nhưng - như -지만 / -는데도 nhưng mang sắc thái tiếc nuối, thất vọng vì kết quả trái mong đợi."
+        },
+        "pronunciation_note": {
+          "vi": "왔건만 đọc [왇껀만] - patchim ㅆ thành âm chặn [ㄷ] và làm ㄱ phía sau căng lên."
+        }
+      },
+      "content_hash": "012c7bbe853f2205dcb94f592fbcf823bdaed3301c3fb95d318fbb5c1225da4a",
+      "difficulty": 5,
+      "front": {
+        "pos": "vĩ tố liên kết (văn chương)",
+        "romanization": "-geonman",
+        "text": "-건만"
+      },
+      "id": "28455d1b-fd50-59e9-bd8e-ceb2fd4aaf89",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:hl-gram-geonman",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "-고서야 khác -고서 (rồi). Có 야 thì nghĩa là \"mãi đến khi... mới\", nên vế sau thường là nhận ra, biết, hiểu."
+        },
+        "examples": [
+          {
+            "target": "직접 유적지를 보고서야 그 규모를 실감했다.",
+            "translation": {
+              "vi": "Phải tận mắt thấy khu di tích tôi mới cảm nhận được quy mô của nó."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "(1) Phải... rồi mới - như -고 나서야. (2) Đã... như thế thì làm sao (câu hỏi tu từ phủ định)."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [고서야]; khi nói, nhấn nhẹ vào 야 để thể hiện \"mãi đến lúc đó\"."
+        }
+      },
+      "content_hash": "030e9047002531af75c8130e9497bf9168fb613b72bcd4e0a3b6d77bc932469d",
+      "difficulty": 5,
+      "front": {
+        "pos": "vĩ tố liên kết",
+        "romanization": "-goseoya",
+        "text": "-고서야"
+      },
+      "id": "b7f60c36-fca5-5a61-94c1-06a3b926afc2",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:hl-gram-goseoya",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Đừng tách thành -(으)ㄹ지 + 대 hay hiểu là \"không biết có... không\". Gặp -(으)ㄹ진대 trong bài đọc, hãy hiểu như -(으)니까 trang trọng."
+        },
+        "examples": [
+          {
+            "target": "역사가 이를 증명할진대 어찌 그 가치를 부정하겠는가.",
+            "translation": {
+              "vi": "Lịch sử đã chứng minh điều đó thì làm sao có thể phủ nhận giá trị của nó?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Đã... thì (huống hồ) - nêu tiền đề hiển nhiên để suy ra kết luận ở vế sau, thường kèm câu hỏi tu từ."
+        },
+        "pronunciation_note": {
+          "vi": "ㅈ sau đuôi -ㄹ đọc căng nên 할진대 đọc [할찐대]."
+        }
+      },
+      "content_hash": "3743016d88a0a3da78736fe9f8ec8442b718476f3c5ea049e862f46816aea2a2",
+      "difficulty": 5,
+      "front": {
+        "pos": "vĩ tố liên kết (cổ, trang trọng)",
+        "romanization": "-(eu)l jindae",
+        "text": "-(으)ㄹ진대"
+      },
+      "id": "91855254-3ace-5d83-99d4-60ea5fefb962",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:hl-gram-l-jindae",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không hiểu là \"nên/sẽ làm\" vế trước. 굶을망정 nghĩa là \"dù có phải nhịn đói\" - người nói không muốn nhịn đói, chỉ chấp nhận nó."
+        },
+        "examples": [
+          {
+            "target": "가난하게 살망정 양심을 팔지는 않겠다.",
+            "translation": {
+              "vi": "Thà sống nghèo chứ tôi không bán rẻ lương tâm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Thà... chứ (không) / dù có... đi nữa - chấp nhận điều xấu ở vế trước để giữ khí tiết ở vế sau, gần với -(으)ㄹ지언정."
+        },
+        "pronunciation_note": {
+          "vi": "살망정 đọc [살망정]; với gốc có patchim như 굶다 → 굶을망정 đọc [굴믈망정]."
+        }
+      },
+      "content_hash": "06244daaee70e2fdf59e0a9e153ae07a472b36c9fbf0235dc0604a838183ff58",
+      "difficulty": 5,
+      "front": {
+        "pos": "vĩ tố liên kết (văn chương)",
+        "romanization": "-(eu)l mangjeong",
+        "text": "-(으)ㄹ망정"
+      },
+      "id": "f781c247-733b-58e2-a6ea-f05e5d06e89d",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:hl-gram-l-mangjeong",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không liên quan tới 세다 (mạnh, đếm). Vế sau -(으)ㄹ세라 luôn là hành động phòng ngừa (조심하다, 서두르다), giống -(으)ㄹ까 봐."
+        },
+        "examples": [
+          {
+            "target": "어머니는 아이가 깰세라 조심조심 방문을 닫으셨다.",
+            "translation": {
+              "vi": "Mẹ khẽ khàng đóng cửa phòng vì sợ con thức giấc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Sợ rằng, e rằng... (nên cẩn thận) - dạng văn chương của -(으)ㄹ까 봐."
+        },
+        "pronunciation_note": {
+          "vi": "ㅅ sau đuôi -ㄹ đọc căng nên 깰세라 đọc [깰쎄라]."
+        }
+      },
+      "content_hash": "3a0616a20279f941892ccdd7e811935208fe0d9557bcebd2468c3e7a4e6904fa",
+      "difficulty": 5,
+      "front": {
+        "pos": "vĩ tố liên kết (văn chương)",
+        "romanization": "-(eu)l sera",
+        "text": "-(으)ㄹ세라"
+      },
+      "id": "ef84f221-7d7e-5e6c-b43f-f04d05c68b29",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:hl-gram-l-sera",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không phải -(으)면 \"nếu\" thông thường. -노라면 luôn hàm ý \"cứ tiếp tục làm thì dần dần...\", tương đương -다 보면."
+        },
+        "examples": [
+          {
+            "target": "묵묵히 걷노라면 언젠가 길이 보이리라.",
+            "translation": {
+              "vi": "Cứ lặng lẽ bước đi thì rồi sẽ có ngày thấy đường."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Cứ (làm) mãi thì... - dạng văn chương của -다 보면. Dùng khi một hành động kéo dài dẫn đến kết quả."
+        },
+        "pronunciation_note": {
+          "vi": "Động từ gốc kết thúc bằng ㄹ thì rơi ㄹ - 살다 → 사노라면. 걷노라면 đọc [건노라면] vì ㄷ gặp ㄴ thành ㄴ."
+        }
+      },
+      "content_hash": "6e77b7f442e05c110900447d39e76e6d7be1ae09068092393d75cca440802960",
+      "difficulty": 5,
+      "front": {
+        "pos": "vĩ tố liên kết (văn chương)",
+        "romanization": "-noramyeon",
+        "text": "-노라면"
+      },
+      "id": "b4d12555-0891-5b95-b67c-0475dbbc4c39",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "ko:item:hl-gram-noramyeon",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "관용어 là cụm từ (발이 넓다), 속담 là cả câu tục ngữ (우물 안 개구리), 사자성어 là bốn chữ Hán (일석이조)."
+        },
+        "examples": [
+          {
+            "target": "관용어는 글자 그대로 번역하면 뜻이 완전히 달라진다.",
+            "translation": {
+              "vi": "Quán ngữ mà dịch sát từng chữ thì nghĩa sẽ khác hẳn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Quán ngữ - cụm từ cố định mà nghĩa chung không suy ra từ nghĩa từng chữ."
+        },
+        "pronunciation_note": {
+          "vi": "ㄴ nối sang nguyên âm sau nên 관용어 đọc [과뇽어]."
+        }
+      },
+      "content_hash": "6702f54b7f3ec7df2d3850edfea3c4366fba7ceec5ae87db996418324ef73d52",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "gwanyongeo / gwanyong pyohyeon",
+        "text": "관용어 / 관용 표현"
+      },
+      "id": "019c6cbc-73c2-5d07-a43f-605d86152db8",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-gwanyongeo",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không phải \"thính tai\" (귀가 밝다) hay \"nghễnh ngãng\" (귀가 어둡다)."
+        },
+        "examples": [
+          {
+            "target": "형은 귀가 얇아서 광고만 보면 물건을 산다.",
+            "translation": {
+              "vi": "Anh tôi nhẹ dạ, cứ xem quảng cáo là mua đồ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Nhẹ dạ cả tin, dễ nghe theo lời người khác (nghĩa đen - \"tai mỏng\")."
+        },
+        "pronunciation_note": {
+          "vi": "얇다 đọc [얄따]; 얇아서 đọc [얄바서] vì ㅂ của ㄼ nối sang nguyên âm."
+        }
+      },
+      "content_hash": "106745595295b272d1aed9e5054faa06c4731dfee4ef24eac15056a40063e1cf",
+      "difficulty": 3,
+      "front": {
+        "pos": "quán ngữ (tính từ)",
+        "romanization": "gwiga yalda",
+        "text": "귀가 얇다"
+      },
+      "id": "25989d40-4ff0-50e1-babc-245270906e3a",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:hl-gwiga-yalda",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không nói 숭례문을 회복하다 hay 건강을 복원하다. 회복 là trạng thái trừu tượng, 복원 là hình dạng vật thể."
+        },
+        "examples": [
+          {
+            "target": "전쟁 후 경제가 회복되기까지 오랜 시간이 걸렸다.",
+            "translation": {
+              "vi": "Sau chiến tranh, phải mất rất lâu kinh tế mới hồi phục."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Hồi phục, lấy lại - đưa trạng thái (sức khoẻ, niềm tin, kinh tế, danh dự) trở lại như trước."
+        },
+        "pronunciation_note": {
+          "vi": "ㄱ gặp ㅎ thành âm bật hơi nên 회복하다 đọc [회보카다]."
+        }
+      },
+      "content_hash": "2dbda2122c823674e8586dc96065b4dd29892e7ed69127d088f32e3c6efbb96b",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "romanization": "hoebokhada",
+        "text": "회복하다"
+      },
+      "id": "b8db3677-67d9-5f81-a525-032da36b6388",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-hoebokhada",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "회의적 (懷疑的 - hoài nghi) khác 회의 (會議 - cuộc họp) dù viết giống nhau. Đừng dịch là \"mang tính hội nghị\"."
+        },
+        "examples": [
+          {
+            "target": "필자는 새 정책의 효과에 대해 회의적이다.",
+            "translation": {
+              "vi": "Người viết hoài nghi về hiệu quả của chính sách mới."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Hoài nghi - nghi ngờ hiệu quả, khả năng thành công của việc gì."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [회의저기다] hoặc [훼이저기다]; ㅢ ở giữa từ thường đọc [이]."
+        }
+      },
+      "content_hash": "d5270932c3131195888403f5c7db832850d4c9e88914fcd3779bb9f95206204e",
+      "difficulty": 5,
+      "front": {
+        "pos": "tính từ (thuật ngữ thái độ)",
+        "romanization": "hoeuijeogida",
+        "text": "회의적이다"
+      },
+      "id": "2972fa90-fa6e-588c-a93e-c302c5d8a4a8",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-hoeuijeogida",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "창제 (創製 - sáng chế) dùng cho chữ viết, chế độ do con người nghĩ ra lần đầu; 반포 (頒布) là ban bố cho dân dùng. Đừng dùng 발명 (phát minh) cho chữ Hangul trong văn viết trang trọng."
+        },
+        "examples": [
+          {
+            "target": "훈민정음 창제로 글을 모르던 백성도 쉽게 글을 배울 수 있게 되었다.",
+            "translation": {
+              "vi": "Nhờ việc sáng chế Huấn dân chính âm, cả những người dân không biết chữ cũng có thể dễ dàng học chữ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Việc sáng chế Huấn dân chính âm - tên gốc của chữ Hangul, nghĩa là \"âm chuẩn để dạy dân\" (sáng chế năm 1443, ban bố năm 1446)."
+        },
+        "pronunciation_note": {
+          "vi": "훈민정음 đọc liền [훈민정음]; 창제 có ㅊ bật hơi mạnh, khác ㅈ trong 정."
+        }
+      },
+      "content_hash": "4a7857892f6d55eaae210f959d0e811096e17232f46d94f22443c5d18c2b4515",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ (cụm Hán Hàn)",
+        "romanization": "hunminjeongeum changje",
+        "text": "훈민정음 창제"
+      },
+      "id": "cfb0ce9f-f440-5d97-a88a-2acf2f525ad5",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:hl-hunminjeongeum-changje",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "화자 (người nói trong tác phẩm) khác 필자 (người viết bài) và 작가 (tác giả nói chung)."
+        },
+        "examples": [
+          {
+            "target": "이 시의 화자는 떠나간 사람을 그리워하고 있다.",
+            "translation": {
+              "vi": "Nhân vật trữ tình trong bài thơ này đang nhớ người đã ra đi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Người nói, nhân vật trữ tình - \"cái tôi\" lên tiếng trong bài thơ, không nhất thiết là tác giả."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [화자]; ㅎ đầu từ phát âm rõ, ㅘ là \"oa\"."
+        }
+      },
+      "content_hash": "cb5dbe9166c006dbd475414c87f02c1733376164990dc6d1e6b623e4fc9016a2",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "hwaja",
+        "text": "화자"
+      },
+      "id": "4280dbc5-7bd0-51c8-8cfd-f05ead3f7183",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-hwaja",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không có nghĩa \"ăn ít\" hay \"nói nhẹ nhàng\". Nói nhỏ nhẹ là 말을 부드럽게 하다."
+        },
+        "examples": [
+          {
+            "target": "입이 가벼운 사람에게는 중요한 이야기를 하지 않는 게 좋다.",
+            "translation": {
+              "vi": "Không nên kể chuyện quan trọng cho người bép xép."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Bép xép, không giữ được bí mật - ngược nghĩa với 입이 무겁다."
+        },
+        "pronunciation_note": {
+          "vi": "가볍다 đọc [가볍따]; định ngữ 가벼운 do ㅂ biến thành 우."
+        }
+      },
+      "content_hash": "416c76293c07950e2722ac79e71d02b767b700a0ad7f6caf74f6c0752a8c6e7a",
+      "difficulty": 3,
+      "front": {
+        "pos": "quán ngữ (tính từ)",
+        "romanization": "ibi gabyeopda",
+        "text": "입이 가볍다"
+      },
+      "id": "80e6c2db-b5eb-5255-98d1-740b45678ac2",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:hl-ibi-gabyeopda",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không phải \"nói chậm, nói nặng nề\". Ít nói là 말수가 적다; 입이 무겁다 chỉ việc giữ bí mật."
+        },
+        "examples": [
+          {
+            "target": "지수는 입이 무거우니까 비밀을 말해도 괜찮다.",
+            "translation": {
+              "vi": "Jisu kín miệng nên kể bí mật cũng không sao."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Kín miệng, biết giữ bí mật."
+        },
+        "pronunciation_note": {
+          "vi": "입이 nối âm thành [이비]; 무겁다 đọc [무겁따]."
+        }
+      },
+      "content_hash": "9eea205759a044fa8b3cfb2a143676af76028b8df707269cdff8a1cbcea2bf46",
+      "difficulty": 3,
+      "front": {
+        "pos": "quán ngữ (tính từ)",
+        "romanization": "ibi mugeopda",
+        "text": "입이 무겁다"
+      },
+      "id": "da20949c-5632-57ee-b607-a5068e067ea4",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:hl-ibi-mugeopda",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "조선 là tên triều đại, còn 북한 mới là cách gọi Bắc Triều Tiên hiện nay. Trong bài đọc lịch sử, 조선 luôn chỉ triều đại cũ."
+        },
+        "examples": [
+          {
+            "target": "이 건물은 조선 시대에 왕이 머물던 궁궐이다.",
+            "translation": {
+              "vi": "Toà nhà này là cung điện nơi nhà vua từng ở vào thời Joseon."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Thời Joseon (Triều Tiên, 1392-1897) - triều đại cuối cùng của Hàn Quốc trước thời cận đại."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc liền [조선 시대]; ㅅ trong 시 đọc nhẹ, gần \"x\" tiếng Việt chứ không phải \"s\" uốn lưỡi."
+        }
+      },
+      "content_hash": "c1f8579e1b1849b643882815cfa4a532accbc8d393347f6446d7c488ff949eb0",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ (thời kỳ lịch sử)",
+        "romanization": "joseon sidae",
+        "text": "조선 시대"
+      },
+      "id": "0e3e0299-efbe-5b05-9d88-cfce98b80e39",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:hl-joseon-sidae",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Ý chính không phải chi tiết đúng. Một phương án có thể đúng với bài nhưng chỉ là chi tiết, không phải 중심 생각."
+        },
+        "examples": [
+          {
+            "target": "이 글의 중심 생각은 마지막 문단에 드러나 있다.",
+            "translation": {
+              "vi": "Ý chính của bài này được thể hiện ở đoạn cuối."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Ý chính, tư tưởng trung tâm của bài - câu hỏi \"글의 중심 생각으로 가장 알맞은 것\"."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [중심 생각]; ㅐ và ㅔ ở Seoul nay gần như trùng nhau."
+        }
+      },
+      "content_hash": "df015583185a0791e84d4dfd8a2b60204ecd71320d1daf8a957db7a5aca8681e",
+      "difficulty": 3,
+      "front": {
+        "pos": "cụm danh từ (thuật ngữ đề thi)",
+        "romanization": "jungsim saenggak",
+        "text": "중심 생각"
+      },
+      "id": "29921437-674e-59b6-929d-10c24c5f0e9a",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:hl-jungsim-saenggak",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Cùng một cụm nhưng hai nghĩa - ngữ cảnh thi cử là \"thi trượt\", ngữ cảnh sinh nhật là nghĩa đen. Vì vậy người Hàn tránh ăn canh rong biển ngay trước ngày thi."
+        },
+        "examples": [
+          {
+            "target": "형은 운전면허 시험에서 두 번이나 미역국을 먹었다.",
+            "translation": {
+              "vi": "Anh tôi đã trượt kỳ thi bằng lái những hai lần."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "(Nghĩa bóng) thi trượt, bị đánh rớt. Nghĩa đen - ăn canh rong biển (món ăn ngày sinh nhật)."
+        },
+        "pronunciation_note": {
+          "vi": "미역국 đọc [미역꾹], 미역국을 đọc [미역꾸글]."
+        }
+      },
+      "content_hash": "aaffbda2409a6e1bbe3d718e1243063a35c59ca07884a830f5c4495baecd5200",
+      "difficulty": 3,
+      "front": {
+        "pos": "quán ngữ (động từ)",
+        "romanization": "miyeokgugeul meokda",
+        "text": "미역국을 먹다"
+      },
+      "id": "ef3597e2-305c-51ec-a51e-ebcdceda732b",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:hl-miyeokguk-meokda",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Từ năm 2024, văn bản nhà nước Hàn Quốc dần thay 문화재 bằng 국가유산 (di sản quốc gia), nhưng 문화재 vẫn rất phổ biến trong báo chí và bài đọc. Hai từ có thể gặp cùng lúc."
+        },
+        "examples": [
+          {
+            "target": "문화재를 만지거나 사진을 찍을 때 플래시를 사용하면 안 된다.",
+            "translation": {
+              "vi": "Không được chạm vào di sản văn hoá hay dùng đèn flash khi chụp ảnh."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Di sản văn hoá, tài sản văn hoá - công trình, hiện vật có giá trị lịch sử, nghệ thuật cần được bảo vệ."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc chuẩn [문화재]; khi nói nhanh, ㅎ sau ㄴ yếu đi nên nghe gần [무놔재]."
+        }
+      },
+      "content_hash": "3b5819adf5944d25a32f7f8ac7e343ba467e135d072284a4bdc9828cd7732454",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "munhwajae",
+        "text": "문화재"
+      },
+      "id": "9c8be104-e4ad-5819-8f10-ebf4c5508aa0",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-munhwajae",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Người Việt hay nhầm 낙관 (lạc quan) với 낙천 (lạc thiên - tính cách vui vẻ). Câu hỏi thái độ dùng 낙관적 khi nói về triển vọng."
+        },
+        "examples": [
+          {
+            "target": "전문가들은 문화재 복원 사업의 전망을 낙관적으로 보고 있다.",
+            "translation": {
+              "vi": "Các chuyên gia nhìn nhận triển vọng của dự án phục dựng di sản một cách lạc quan."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Lạc quan - tin rằng mọi việc sẽ tốt đẹp. Ngược nghĩa là 비관적이다 (bi quan)."
+        },
+        "pronunciation_note": {
+          "vi": "ㄱ sau patchim ㄱ đọc căng - 낙관 đọc [낙꽌]."
+        }
+      },
+      "content_hash": "12b59aedc8779a0b579eb49613e38d1dada75e818ab01c28870ec69b43423531",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ (thuật ngữ thái độ)",
+        "romanization": "nakgwanjeogida",
+        "text": "낙관적이다"
+      },
+      "id": "40349751-0cf9-52e9-9e25-1e66ac87429e",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-nakgwanjeogida",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Khác \"mắt để trên trán\" (kiêu ngạo) trong tiếng Việt. Kiêu ngạo là 거만하다 hoặc 콧대가 높다."
+        },
+        "examples": [
+          {
+            "target": "그 사람은 눈이 높아서 아직 마음에 드는 집을 못 찾았다.",
+            "translation": {
+              "vi": "Người đó kén chọn nên vẫn chưa tìm được căn nhà ưng ý."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Kén chọn, tiêu chuẩn cao (chọn người yêu, đồ dùng)."
+        },
+        "pronunciation_note": {
+          "vi": "높다 đọc [놉따]; 높아서 nối âm thành [노파서]."
+        }
+      },
+      "content_hash": "300137abae6d57667a4c3c88fc93c8e176e4ca1d04b50fc056d098bc683d590a",
+      "difficulty": 3,
+      "front": {
+        "pos": "quán ngữ (tính từ)",
+        "romanization": "nuni nopda",
+        "text": "눈이 높다"
+      },
+      "id": "68eefcd3-a09e-5dbe-b774-cb6031e97ae5",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:hl-nuni-nopda",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Câu hỏi thái độ khác câu hỏi nội dung. Hãy tìm từ đánh giá (안타깝다, 다행이다, 문제이다) và đuôi câu (-아야 한다, -(으)ㄹ 따름이다) thay vì tóm tắt sự kiện."
+        },
+        "examples": [
+          {
+            "target": "밑줄 친 부분에 나타난 필자의 태도로 가장 알맞은 것을 고르십시오.",
+            "translation": {
+              "vi": "Hãy chọn thái độ của người viết thể hiện ở phần gạch chân phù hợp nhất."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Thái độ của người viết - dạng câu hỏi đọc hiểu TOPIK II \"필자의 태도로 가장 알맞은 것을 고르십시오\"."
+        },
+        "pronunciation_note": {
+          "vi": "필자 đọc [필짜]; trợ từ 의 ở đây đọc [에] - [필짜에 태도]."
+        }
+      },
+      "content_hash": "aecbc7d21b262a8ae35c7220686d77f54c3347381ffd2a7d548bc5083a051e19",
+      "difficulty": 4,
+      "front": {
+        "pos": "cụm danh từ (thuật ngữ đề thi)",
+        "romanization": "pilja-ui taedo",
+        "text": "필자의 태도"
+      },
+      "id": "8f2c943e-9bff-50a9-ab88-fa22645b9407",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:hl-pilja-taedo",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "대왕 (đại vương) là tôn hiệu dành cho vài vị vua đặc biệt, không phải mọi vua đều gọi là 대왕. Vua nói chung là 왕 hoặc 임금."
+        },
+        "examples": [
+          {
+            "target": "세종대왕은 백성을 위해 새로운 문자를 만들었다.",
+            "translation": {
+              "vi": "Vua Sejong đã tạo ra một bộ chữ mới vì dân chúng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Vua Sejong Đại đế - vị vua thứ tư của triều Joseon, người cho sáng tạo ra chữ Hangul."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [세종대왕]; ㄷ trong 대 không bật hơi, nghe gần \"đ\" tiếng Việt."
+        }
+      },
+      "content_hash": "e4dbfafc0c9b78fd3bc4693df4e72ebc9f2a46e4ca7abb04134715db8131e704",
+      "difficulty": 2,
+      "front": {
+        "pos": "danh từ riêng",
+        "romanization": "sejong daewang",
+        "text": "세종대왕"
+      },
+      "id": "f658b31f-2738-591e-8d58-e951cb8fd36d",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-sejong-daewang",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "성찰 (tự xét lại mình) khác 관찰 (quan sát cái bên ngoài) và 반성 (hối lỗi về việc sai cụ thể)."
+        },
+        "examples": [
+          {
+            "target": "필자는 할아버지의 일기를 읽으며 자신의 삶을 성찰한다.",
+            "translation": {
+              "vi": "Người viết vừa đọc nhật ký của ông vừa tự suy ngẫm về cuộc đời mình."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Tự vấn, suy ngẫm lại bản thân - thái độ thường gặp ở cuối bài tuỳ bút."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [성찰하다]; ㅊ bật hơi mạnh."
+        }
+      },
+      "content_hash": "05054985738782578991d5b61d035567abddf52ac72fb1853387a306409ccc1c",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "romanization": "seongchalhada",
+        "text": "성찰하다"
+      },
+      "id": "2b291206-b71d-5ea4-b819-937c1252d14e",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-seongchalhada",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không phải \"khéo tay\" (손재주가 좋다) hay \"tay to\". Ngược nghĩa là 손이 작다 (làm gì cũng ít, chi li)."
+        },
+        "examples": [
+          {
+            "target": "할머니는 손이 커서 명절마다 음식을 너무 많이 하신다.",
+            "translation": {
+              "vi": "Bà rộng tay nên Tết nào cũng nấu quá nhiều đồ ăn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Rộng tay, hào phóng - làm gì (nấu ăn, cho, mua) cũng làm nhiều."
+        },
+        "pronunciation_note": {
+          "vi": "Nối âm - 손이 đọc [소니]."
+        }
+      },
+      "content_hash": "6c4c8196a006a4d3f66716128cd6381d83b2d04847eab384040da81b0ec00631",
+      "difficulty": 3,
+      "front": {
+        "pos": "quán ngữ (tính từ)",
+        "romanization": "soni keuda",
+        "text": "손이 크다"
+      },
+      "id": "dfa7f024-a5c9-5507-a199-4e65054a69a1",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:hl-soni-keuda",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "수필 (隨筆) chính là \"tuỳ bút\" Hán Việt. Khác 소설 (tiểu thuyết, truyện hư cấu) và 일기 (nhật ký)."
+        },
+        "examples": [
+          {
+            "target": "이 수필에서 필자는 어린 시절의 기억을 담담하게 풀어낸다.",
+            "translation": {
+              "vi": "Trong bài tuỳ bút này, tác giả bình thản kể lại ký ức tuổi thơ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Tuỳ bút - văn xuôi ngắn ghi lại suy nghĩ, cảm xúc của người viết về đời sống."
+        },
+        "pronunciation_note": {
+          "vi": "ㅍ trong 필 bật hơi mạnh, khác ㅂ."
+        }
+      },
+      "content_hash": "c3b874a8ca32009e31bab46c6219e976d960cdf5a02f4b2c1959a576b3af1427",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "supil",
+        "text": "수필"
+      },
+      "id": "fdcb75c8-c120-5d35-aa93-a2e329785ae2",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-supil",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Trong văn viết trang trọng, \"được công nhận là di sản\" thường là 세계 유산으로 등재되다 (được ghi danh). Đây là động từ bạn sẽ gặp nhiều nhất trong bản tin về di sản."
+        },
+        "examples": [
+          {
+            "target": "이 궁궐은 유네스코 세계 유산으로 등재되었다.",
+            "translation": {
+              "vi": "Cung điện này đã được ghi danh là Di sản thế giới UNESCO."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Di sản thế giới UNESCO. Sách 훈민정음 해례본 được ghi vào danh mục \"Di sản tư liệu thế giới\" (세계 기록 유산) năm 1997."
+        },
+        "pronunciation_note": {
+          "vi": "세계 trong khẩu ngữ thường đọc [세게]. 유산 đọc [유산], không nhầm với 유학 hay 유행."
+        }
+      },
+      "content_hash": "0ec15a6815c4734cd19e9b731d49a5acc9509b1dff29ffcbc57f36bb22398ff9",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ (cụm)",
+        "romanization": "yuneseuko segye yusan",
+        "text": "유네스코 세계 유산"
+      },
+      "id": "ca116095-ea19-5a9f-8bf1-2ab0231e8778",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:hl-unesco-segye-yusan",
+      "language_code": "ko",
+      "level_code": "topik5",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Người Việt hay dùng lẫn vì cùng chữ \"di\". Mẹo nhớ - 유적 là nơi chốn (đến thăm), 유물 là đồ vật (trưng bày trong tủ kính)."
+        },
+        "examples": [
+          {
+            "target": "유적지에서 발견된 유물은 박물관에 전시되어 있다.",
+            "translation": {
+              "vi": "Những cổ vật được phát hiện ở khu di tích đang được trưng bày tại bảo tàng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "유적 là di tích (địa điểm, công trình còn lại từ xưa); 유물 là di vật, cổ vật (đồ vật có thể mang đi trưng bày)."
+        },
+        "pronunciation_note": {
+          "vi": "유적지 đọc [유적찌] - ㅈ sau patchim ㄱ đọc căng."
+        }
+      },
+      "content_hash": "dc4167867bff5aba1991d617bf80b7939dfed96bf24967a1c20fc234ba125bb5",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "yujeok · yumul",
+        "text": "유적 · 유물"
+      },
+      "id": "bb8509c0-30ad-512a-8c50-3b05ed409774",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "ko:item:hl-yujeok-yumul",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Cấu trúc đúng là N에서 유래하다 hoặc N의 유래, không phải N을 유래하다. Đừng nhầm với 유행 (thịnh hành) hay 원래 (vốn dĩ)."
+        },
+        "examples": [
+          {
+            "target": "이 마을의 이름은 마을 앞에 있는 큰 바위에서 유래했다.",
+            "translation": {
+              "vi": "Tên của ngôi làng này bắt nguồn từ tảng đá lớn trước làng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Nguồn gốc, lai lịch (của phong tục, tên gọi, từ ngữ); bắt nguồn từ (N에서 유래하다)."
+        },
+        "pronunciation_note": {
+          "vi": "Đọc [유래]; ㄹ giữa hai nguyên âm là âm vỗ nhẹ, gần \"r\" nhẹ chứ không phải \"l\"."
+        }
+      },
+      "content_hash": "0612f454c2231791c0e2574485f5c334c40e617bc6987612c61c89ba3e6804c6",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ / động từ",
+        "romanization": "yurae / yuraehada",
+        "text": "유래 / 유래하다"
+      },
+      "id": "1fa31d8c-d736-5832-aa99-cf76526a0ddb",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "ko:item:hl-yurae",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Đừng viết 훼사 hay 해사 dù nghe gần giống; công ty là 회사 với ㅚ."
         },
         "examples": [
@@ -204156,6 +215504,90 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "2a2635fc-2b58-5a7c-a5e9-1be8e71d45b6",
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3e304982-fa4f-5097-9f97-180d1edf651d",
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3e492211-bcbd-5713-bc01-c3198cb9d5c3",
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7c6a4230-235d-5273-b54f-f0ee6d4653a0",
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "4bc380ed-ca85-5363-912f-f59e337656b4",
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2eb13a4c-7c6e-5bfa-a75b-c7a19741a755",
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c6c421ba-31cf-515f-9b08-d687afe7b7fa",
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "455f6f3f-01af-57a3-841e-4660f3cc550e",
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "89527b6c-d080-5976-aeae-70296253ab12",
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "baa7e34c-c9cf-599f-a1de-ee7d1b4e424e",
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e4bcd16c-89e6-500e-89cb-b4786fa39eca",
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "52e9900b-bb9b-563f-8987-168357b2c95d",
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1eb1161b-9fc1-575e-b2d6-05d1c0dac826",
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "3818f23a-1d8e-535b-8328-038b208b22df",
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
       "item_id": "39a0c7fd-ca48-53a0-b394-8b15cce6c761",
       "lesson_id": "98926bfa-fe80-5713-a104-346a9b3105aa",
       "position": 0,
@@ -206916,6 +218348,108 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "a36f6536-3360-5e36-a8c8-c4b0fd143fe5",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "fb7aa6f5-e026-5659-9e59-1fae59055ba5",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d5f9ec43-93a3-573a-b155-76ade1dc87c7",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b65f855c-0264-5e60-a1fa-d582ffec5ed6",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 3,
+      "role": "reuse"
+    },
+    {
+      "item_id": "8baa386c-9675-5008-89d1-bcbfd823fe36",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 4,
+      "role": "reuse"
+    },
+    {
+      "item_id": "cdbeabaf-e3f7-553a-adfc-2570ff9f9625",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 5,
+      "role": "reuse"
+    },
+    {
+      "item_id": "687c36fc-ddf8-53f4-bd65-e8cf8852d076",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 6,
+      "role": "reuse"
+    },
+    {
+      "item_id": "53a92c45-790f-5d95-ac56-0ba86e7cde68",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 7,
+      "role": "reuse"
+    },
+    {
+      "item_id": "2a2635fc-2b58-5a7c-a5e9-1be8e71d45b6",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 8,
+      "role": "reuse"
+    },
+    {
+      "item_id": "3e492211-bcbd-5713-bc01-c3198cb9d5c3",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 9,
+      "role": "reuse"
+    },
+    {
+      "item_id": "56bbd028-e9f0-59d4-b7b6-794e65d5d3b3",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "7c57bcfe-3454-59aa-98d2-4b9fcf0923c3",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "0bd251b7-3f97-52e9-aa43-66b45bb1e5bb",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "2192a29c-a9fe-59fa-82a4-cf2d51e8f63c",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "1eb1161b-9fc1-575e-b2d6-05d1c0dac826",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "e4bcd16c-89e6-500e-89cb-b4786fa39eca",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 15,
+      "role": "reuse"
+    },
+    {
+      "item_id": "c11002d6-3f06-5f19-8c03-b0988d1ae391",
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "position": 16,
+      "role": "reuse"
+    },
+    {
       "item_id": "601885bd-23bc-52f1-bae0-90ee63e30deb",
       "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
       "position": 0,
@@ -207489,6 +219023,84 @@ select content_private.import_bundle($bundle${
       "item_id": "3dda21b7-e3a2-5ebc-a5f9-e5b4b64e217e",
       "lesson_id": "b88324c7-41de-5713-9af3-bbea4446798e",
       "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "b65f855c-0264-5e60-a1fa-d582ffec5ed6",
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d4097af8-f469-5d41-bf2e-ce126115463d",
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bbad5e84-7e76-559f-ba36-336878cec82e",
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "aad61ad5-566b-5d07-99e1-dc4233ffdd3a",
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8baa386c-9675-5008-89d1-bcbfd823fe36",
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9f0b841b-83f3-5546-9169-a5e4bf13bf67",
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7ff02725-f34d-529b-9c7e-9fd812890f0d",
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "89214487-dbdf-5363-9e1c-4eb9c4f83041",
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "69ef789d-8c65-519c-bc0a-dfa7cdd7beb1",
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6308974b-2e6a-5bf1-b310-a1f511f82af4",
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bff46725-2650-53e4-9d5c-8683789540f5",
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c5668f1f-8eb4-5c32-b4dd-621866f2c61e",
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3bca123a-9c59-51de-9f86-8803a32e29bd",
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "position": 12,
       "role": "reuse"
     },
     {
@@ -208257,6 +219869,84 @@ select content_private.import_bundle($bundle${
       "item_id": "a2b0876d-c869-5cca-be93-d0814988d963",
       "lesson_id": "9c52c1aa-0a64-5c91-9eac-5ffeea47ef58",
       "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "53a92c45-790f-5d95-ac56-0ba86e7cde68",
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "687c36fc-ddf8-53f4-bd65-e8cf8852d076",
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "59594769-5067-5aff-a939-7ae4c424de48",
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b6616597-f012-5762-aff2-0d4142ef49e4",
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "cdbeabaf-e3f7-553a-adfc-2570ff9f9625",
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "67661a9d-0958-5238-8181-b954ea1e290c",
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e271fee4-579a-54f7-9497-a95d25cc0bc7",
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b145ee6c-48ea-5b0d-8379-d0535191c635",
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "964d4055-07a0-5345-93d1-323d92ec46d1",
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "794b6df9-6066-528c-bdf9-23acad95468b",
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c11002d6-3f06-5f19-8c03-b0988d1ae391",
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2a699ab6-74cf-5a0d-b6a8-e7c923689afa",
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b65f855c-0264-5e60-a1fa-d582ffec5ed6",
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "position": 12,
       "role": "reuse"
     },
     {
@@ -209601,6 +221291,90 @@ select content_private.import_bundle($bundle${
       "item_id": "e79f2031-dcc9-5aa0-b5bd-bcf5272d35c5",
       "lesson_id": "16da3986-7c7f-56f4-8aa9-1d3f3f3bf251",
       "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "56bbd028-e9f0-59d4-b7b6-794e65d5d3b3",
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "376bdddd-7ed7-5c76-bfbd-6ba3c6ef1376",
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2a10c31c-d260-51ce-bbe0-6bfe130bec9b",
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a4ada9ac-02bf-57bc-be2f-2b944dbf7f98",
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2192a29c-a9fe-59fa-82a4-cf2d51e8f63c",
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7c57bcfe-3454-59aa-98d2-4b9fcf0923c3",
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0bd251b7-3f97-52e9-aa43-66b45bb1e5bb",
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3107a17b-6332-5b6e-9386-fc2c130bfa9c",
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9b4f6b92-1a88-5498-b991-ea470dfe3fc3",
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b7ec2699-400d-53ad-aaf7-4837e8a40f50",
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2a8dc499-d97e-5d21-ad48-9b9aec89c87f",
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "89527b6c-d080-5976-aeae-70296253ab12",
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "baa7e34c-c9cf-599f-a1de-ee7d1b4e424e",
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "3e492211-bcbd-5713-bc01-c3198cb9d5c3",
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "position": 13,
       "role": "reuse"
     },
     {
@@ -213168,6 +224942,60 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "019c6cbc-73c2-5d07-a43f-605d86152db8",
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "408dfba6-5d29-538f-bdec-ee6d717a617a",
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "dfa7f024-a5c9-5507-a199-4e65054a69a1",
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "68eefcd3-a09e-5dbe-b774-cb6031e97ae5",
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "da20949c-5632-57ee-b607-a5068e067ea4",
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "80e6c2db-b5eb-5255-98d1-740b45678ac2",
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "25989d40-4ff0-50e1-babc-245270906e3a",
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ef3597e2-305c-51ec-a51e-ebcdceda732b",
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "96b95b4f-dc6a-5781-b2ee-08ff4f62ce01",
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
       "item_id": "e9c42ce6-b147-580e-aca5-ebd18d7ecc59",
       "lesson_id": "dc02ccaa-3736-52a7-bfd6-1b32fcee7ab7",
       "position": 0,
@@ -215820,6 +227648,168 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "0e3e0299-efbe-5b05-9d88-cfce98b80e39",
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f658b31f-2738-591e-8d58-e951cb8fd36d",
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "cfb0ce9f-f440-5d97-a88a-2acf2f525ad5",
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e638a461-5adc-5ff7-b42c-a0634c56b06c",
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ca116095-ea19-5a9f-8bf1-2ab0231e8778",
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9c8be104-e4ad-5819-8f10-ebf4c5508aa0",
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bb8509c0-30ad-512a-8c50-3b05ed409774",
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1cab6367-ab9a-59ae-8669-f0edf7425dad",
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1fa31d8c-d736-5832-aa99-cf76526a0ddb",
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "22948a2e-97c8-592d-803a-75b114d3734c",
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "62a38c3e-9b37-55b7-8e1f-39cadb51b009",
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9585b8a7-8545-5a41-a098-bfeee65f4e7f",
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b8db3677-67d9-5f81-a525-032da36b6388",
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "position": 12,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f658b31f-2738-591e-8d58-e951cb8fd36d",
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "position": 0,
+      "role": "reuse"
+    },
+    {
+      "item_id": "cfb0ce9f-f440-5d97-a88a-2acf2f525ad5",
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "position": 1,
+      "role": "reuse"
+    },
+    {
+      "item_id": "e638a461-5adc-5ff7-b42c-a0634c56b06c",
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "position": 2,
+      "role": "reuse"
+    },
+    {
+      "item_id": "bb8509c0-30ad-512a-8c50-3b05ed409774",
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "position": 3,
+      "role": "reuse"
+    },
+    {
+      "item_id": "22948a2e-97c8-592d-803a-75b114d3734c",
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "position": 4,
+      "role": "reuse"
+    },
+    {
+      "item_id": "9585b8a7-8545-5a41-a098-bfeee65f4e7f",
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "position": 5,
+      "role": "reuse"
+    },
+    {
+      "item_id": "750cf0dd-39ce-5090-b835-6573d6020bf5",
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "position": 6,
+      "role": "reuse"
+    },
+    {
+      "item_id": "28455d1b-fd50-59e9-bd8e-ceb2fd4aaf89",
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "position": 7,
+      "role": "reuse"
+    },
+    {
+      "item_id": "da20949c-5632-57ee-b607-a5068e067ea4",
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "position": 8,
+      "role": "reuse"
+    },
+    {
+      "item_id": "ef3597e2-305c-51ec-a51e-ebcdceda732b",
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "position": 9,
+      "role": "reuse"
+    },
+    {
+      "item_id": "fdcb75c8-c120-5d35-aa93-a2e329785ae2",
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "8f2c943e-9bff-50a9-ab88-fa22645b9407",
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "7e8accf4-7001-55aa-9b1e-1c71262d02d4",
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "2b291206-b71d-5ea4-b819-937c1252d14e",
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
       "item_id": "fc1c188a-f9c9-5641-a7ae-0eb6668daeef",
       "lesson_id": "66fd4045-d0b8-53a7-a331-ad1f01e5b333",
       "position": 0,
@@ -216663,6 +228653,150 @@ select content_private.import_bundle($bundle${
       "item_id": "9f454a47-49e0-58cf-abaf-07e4d4dcf06a",
       "lesson_id": "0f498e75-1e16-5fdd-979a-994de896e7d8",
       "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "98970cc8-b199-5946-9499-e374e62f62df",
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b4d12555-0891-5b95-b67c-0475dbbc4c39",
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "91855254-3ace-5d83-99d4-60ea5fefb962",
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a01e9b70-7737-5d25-944d-22a1bbdaaa58",
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "28455d1b-fd50-59e9-bd8e-ceb2fd4aaf89",
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ef84f221-7d7e-5e6c-b43f-f04d05c68b29",
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "750cf0dd-39ce-5090-b835-6573d6020bf5",
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b7f60c36-fca5-5a61-94c1-06a3b926afc2",
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f781c247-733b-58e2-a6ea-f05e5d06e89d",
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f89399e5-96b2-5d11-a1b0-2e2258e87b0a",
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "position": 9,
+      "role": "reuse"
+    },
+    {
+      "item_id": "fdcb75c8-c120-5d35-aa93-a2e329785ae2",
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "4280dbc5-7bd0-51c8-8cfd-f05ead3f7183",
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8f2c943e-9bff-50a9-ab88-fa22645b9407",
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "29921437-674e-59b6-929d-10c24c5f0e9a",
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "efe037fb-a400-5178-b16b-b517f1326584",
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2972fa90-fa6e-588c-a93e-c302c5d8a4a8",
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "40349751-0cf9-52e9-9e25-1e66ac87429e",
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2b291206-b71d-5ea4-b819-937c1252d14e",
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "623ef44e-97a6-54c8-8fa7-78bd9eb03eac",
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7e8accf4-7001-55aa-9b1e-1c71262d02d4",
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "750cf0dd-39ce-5090-b835-6573d6020bf5",
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "28455d1b-fd50-59e9-bd8e-ceb2fd4aaf89",
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "b4d12555-0891-5b95-b67c-0475dbbc4c39",
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "96b95b4f-dc6a-5781-b2ee-08ff4f62ce01",
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "position": 13,
       "role": "reuse"
     },
     {
@@ -220094,6 +232228,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "b92335fe-b169-5ca9-9a87-5f2d065b0bb3"
     },
     {
+      "lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "prerequisite_lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7"
+    },
+    {
       "lesson_id": "98926bfa-fe80-5713-a104-346a9b3105aa",
       "prerequisite_lesson_id": "0246b47b-ac85-542b-83cc-ee8975c0739e"
     },
@@ -220210,6 +232348,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "310a9aa3-0019-5b51-a25b-e524ec8e9d2f"
     },
     {
+      "lesson_id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "prerequisite_lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5"
+    },
+    {
       "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
       "prerequisite_lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9"
     },
@@ -220236,6 +232378,10 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "b88324c7-41de-5713-9af3-bbea4446798e",
       "prerequisite_lesson_id": "c4ca9e59-8611-5c3a-83fc-874f281a8783"
+    },
+    {
+      "lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "prerequisite_lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04"
     },
     {
       "lesson_id": "6548834c-6cd8-5c76-8307-94b0317124e0",
@@ -220268,6 +232414,10 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "9c52c1aa-0a64-5c91-9eac-5ffeea47ef58",
       "prerequisite_lesson_id": "9b743992-c0d3-582f-88b5-596bebcfb8d5"
+    },
+    {
+      "lesson_id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "prerequisite_lesson_id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8"
     },
     {
       "lesson_id": "448ceb0c-c412-50ec-9cc2-39e6f61be943",
@@ -220324,6 +232474,10 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "16da3986-7c7f-56f4-8aa9-1d3f3f3bf251",
       "prerequisite_lesson_id": "63393645-bdd1-5cc7-82eb-ccad0e39c319"
+    },
+    {
+      "lesson_id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "prerequisite_lesson_id": "d37344e2-b244-598d-8293-e5e424853c5f"
     },
     {
       "lesson_id": "40bee429-4d88-5767-89f9-0a2d53f10ee4",
@@ -220494,6 +232648,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "8cc06d93-6f5e-5548-941d-12a090d89afd"
     },
     {
+      "lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "prerequisite_lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a"
+    },
+    {
       "lesson_id": "dc02ccaa-3736-52a7-bfd6-1b32fcee7ab7",
       "prerequisite_lesson_id": "5319aee3-9c79-5a3f-9d10-4e549f0a6461"
     },
@@ -220610,6 +232768,14 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "0f498e75-1e16-5fdd-979a-994de896e7d8"
     },
     {
+      "lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "prerequisite_lesson_id": "023c5da6-5d90-5b0a-ab5b-54fdd8043f86"
+    },
+    {
+      "lesson_id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "prerequisite_lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5"
+    },
+    {
       "lesson_id": "66fd4045-d0b8-53a7-a331-ad1f01e5b333",
       "prerequisite_lesson_id": "bc7db721-6dc5-5fa1-8144-a5ce8ce02122"
     },
@@ -220648,6 +232814,14 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "0f498e75-1e16-5fdd-979a-994de896e7d8",
       "prerequisite_lesson_id": "c712ac55-d360-53cd-9cd1-ec7403994398"
+    },
+    {
+      "lesson_id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "prerequisite_lesson_id": "b691ee29-3bfb-53d1-ba6f-8227864c95df"
+    },
+    {
+      "lesson_id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "prerequisite_lesson_id": "07e40d75-7283-55d8-8d17-df30f6711b02"
     },
     {
       "lesson_id": "7f073ab4-3728-5705-be74-cebd929f9008",
@@ -221229,6 +233403,181 @@ select content_private.import_bundle($bundle${
         "vi": "Tuổi & số điện thoại"
       },
       "unit_id": "45d08805-4d4f-5ca5-88a5-104ee80da300"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn viết được câu mở đầu bài luận về công nghệ mà không mắc lỗi mạo từ kinh điển (\"The technology is developing\") và mở rộng vốn từ nhờ tiền tố, hậu tố."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Khi nói chung về một khái niệm trừu tượng (technology, science, education, privacy) hay cả một loại (smartphones, children), tiếng Anh không dùng the. Người Việt hay thêm the vì nghĩ \"công nghệ\" là một thứ cụ thể, nhưng the chỉ dùng khi đã xác định: the technology in this car."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Một số danh từ luôn đi với the vì chỉ có một: the Internet, the media, the press, the government. Nhưng social media, TV, radio khi nói chung thì không có the: on social media, on TV."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Information, advice, equipment, news, research, evidence là danh từ không đếm được: không thêm -s, không dùng a/an, động từ chia số ít. Muốn đếm, dùng a piece of: a piece of advice, two pieces of information."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Cấu tạo từ giúp bạn đoán nghĩa từ mới: un- (không), mis- (sai), over- (quá mức), under- (chưa đủ); -ment / -ity / -ness tạo danh từ, -able tạo tính từ \"có thể… được\". Danh từ ghép đặt từ bổ nghĩa trước, ngược với tiếng Việt: search history = lịch sử tìm kiếm."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Cùng một từ có thể dùng chung hoặc cụ thể: \"Artificial intelligence is changing education\" (nói chung) nhưng \"The artificial intelligence used by this bank is very accurate\" (AI cụ thể). Hãy tự hỏi: người nghe có biết chính xác cái nào không? Nếu không, và bạn nói về cả khái niệm, bỏ the."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Technology nói chung - không có the; the Internet luôn có the."
+          },
+          "target": "Technology has changed the way we communicate, but the Internet has also made us more impatient.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Công nghệ đã thay đổi cách chúng ta giao tiếp, nhưng Internet cũng khiến chúng ta thiếu kiên nhẫn hơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Information không đếm được - không thêm -s, không có a."
+          },
+          "target": "The media often give misleading information about new medicines.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Truyền thông thường đưa thông tin gây hiểu lầm về các loại thuốc mới."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Under- + estimate = đánh giá dưới mức thực tế."
+          },
+          "target": "Many parents underestimate the risks of too much screen time.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Nhiều phụ huynh đánh giá thấp những rủi ro của việc dùng màn hình quá nhiều."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "develop → development (-ment); afford → affordable, access → accessible (-able / -ible)."
+          },
+          "target": "The development of affordable smartphones has made the Internet accessible to millions of people.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Sự phát triển của điện thoại thông minh giá rẻ đã giúp hàng triệu người tiếp cận Internet."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Nói chung về công nghệ thì không dùng the. \"The technology\" khiến người nghe hỏi lại - công nghệ nào?"
+          },
+          "right": "Technology is developing very fast nowadays.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "The technology is developing very fast nowadays."
+        },
+        {
+          "note": {
+            "vi": "Advice và information không đếm được nên không có -s. Tương tự, không nói \"equipments\"."
+          },
+          "right": "She gave me some useful advice and information.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "She gave me some useful advices and informations."
+        },
+        {
+          "note": {
+            "vi": "Internet luôn đi với the. (Và đọc trên mạng không có nghĩa là thật!)"
+          },
+          "right": "I read it on the Internet, so it must be true.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I read it on Internet, so it must be true."
+        },
+        {
+          "note": {
+            "vi": "Bài báo \"gây hiểu lầm\" là misleading. Misunderstand là động từ \"hiểu sai\" của người đọc."
+          },
+          "right": "The source is unreliable and the article is misleading.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "The source is not reliable and the article is misunderstanding."
+        },
+        {
+          "points": [
+            {
+              "vi": "Nói chung về khái niệm / cả một loại: không dùng the (Technology…, Smartphones…)."
+            },
+            {
+              "vi": "Luôn có the: the Internet, the media, the press; nhưng on social media, on TV."
+            },
+            {
+              "vi": "Không đếm được: information, advice, equipment, news, research, evidence - không -s, không a/an."
+            },
+            {
+              "vi": "Tiền tố: un- (không), mis- (sai), over- (quá mức), under- (chưa đủ)."
+            },
+            {
+              "vi": "Hậu tố: -ment / -ity / -ness → danh từ; -able / -ible → tính từ."
+            },
+            {
+              "vi": "Danh từ ghép: từ bổ nghĩa đứng trước và giữ số ít (search history, password manager)."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "c9deb69d998a1c03f6f0128b08eae1896a7abef74518f6449ae493eea6dd00f6",
+      "estimated_minutes": 20,
+      "id": "d37344e2-b244-598d-8293-e5e424853c5f",
+      "is_demo": true,
+      "key": "en:lesson:articles-word-formation",
+      "language_code": "en",
+      "level_code": "b2",
+      "objectives": [
+        {
+          "vi": "Bỏ mạo từ khi nói chung về khái niệm (Technology, Science, Smartphones) và dùng the với the Internet, the media."
+        },
+        {
+          "vi": "Dùng đúng các danh từ không đếm được information, advice, equipment, news, research."
+        },
+        {
+          "vi": "Tạo từ mới bằng tiền tố un- / mis- / over- / under-, hậu tố -ment / -ity / -ness / -able và danh từ ghép."
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "vocabulary",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Technology hay the technology? Mạo từ & cấu tạo từ"
+      },
+      "unit_id": "4f325330-c1c9-5e1e-aec7-1f9f7a874308"
     },
     {
       "body": [
@@ -226186,6 +238535,189 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Bài này ôn lại cả unit qua hai văn bản về cùng một chủ đề - một bản tin khoa học khách quan và một bài blog đầy cảm xúc về thời gian dùng màn hình. Sau bài, bạn phân biệt được giọng văn đưa tin với giọng văn bày tỏ quan điểm."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Bản tin khoa học trả lời các câu hỏi: ai nghiên cứu, làm thế nào (an experiment with 1,200 participants), phát hiện gì (found that, suggests) và giới hạn ở đâu (does not prove). Người viết giữ khoảng cách, không dùng I."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Bài blog dùng ngôi thứ nhất, kể trải nghiệm cá nhân và đưa ra lời khuyên. Nó vẫn nhắc đến nghiên cứu, nhưng chọn lọc để ủng hộ quan điểm của người viết - vì vậy bạn cần đọc kỹ động từ tường thuật."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Hãy để ý các cấu trúc của unit trong hai văn bản: mệnh đề không xác định (…, which was published…), phân từ (Having deleted…, Published this week…), mạo từ với khái niệm chung (Technology, the Internet) và danh từ không đếm được (research, evidence, advice)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Một mẹo đọc báo hữu ích là tách \"sự thật\" khỏi \"ý kiến\": những câu có số liệu, tên nghiên cứu, động từ found / showed thường là sự thật; những câu có I think, should, honestly, terrible là ý kiến. Người Việt hay tin ngay những gì được in ra, nhưng ở trình độ B2, bạn cần đọc có phê phán: ai nói, dựa vào đâu, chắc đến mức nào."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Published this week = which was published this week (rút gọn bằng V3); suggests - mức độ \"gợi ý\"."
+          },
+          "target": "LESS SCROLLING, BETTER SLEEP? A study published this week in a medical journal suggests that teenagers who spend more than four hours a day on their phones sleep, on average, 45 minutes less than those who do not.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "LƯỚT ÍT HƠN, NGỦ NGON HƠN? Một nghiên cứu được công bố tuần này trên một tạp chí y khoa cho thấy những thiếu niên dùng điện thoại hơn bốn tiếng mỗi ngày ngủ trung bình ít hơn 45 phút so với những bạn không dùng nhiều như vậy."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Who are based in Singapore - thông tin phụ giữa hai dấu phẩy; Having tracked - việc xong trước."
+          },
+          "target": "The researchers, who are based in Singapore, conducted an experiment with 1,200 participants. Having tracked their screen time for three months, they found a clear link between late-night phone use and poor sleep.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Các nhà nghiên cứu, hiện làm việc tại Singapore, đã tiến hành một thí nghiệm với 1.200 người tham gia. Sau khi theo dõi thời gian dùng màn hình của họ trong ba tháng, nhóm đã tìm thấy mối liên hệ rõ ràng giữa việc dùng điện thoại khuya và giấc ngủ kém."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Does not prove - liên hệ chưa phải nguyên nhân."
+          },
+          "target": "However, the study does not prove that phones cause poor sleep. Students who already sleep badly, the authors note, may simply use their phones more.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Tuy nhiên, nghiên cứu không chứng minh rằng điện thoại gây ra giấc ngủ kém. Các tác giả lưu ý rằng có thể những học sinh vốn đã ngủ kém chỉ đơn giản là dùng điện thoại nhiều hơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Which my friends thought was crazy - which thay cho cả việc xoá ứng dụng."
+          },
+          "target": "MY BLOG: WHY I DID A DIGITAL DETOX. Last month I deleted every social media app from my phone, which my friends thought was crazy. Honestly, it was the best decision I've made this year.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "BLOG CỦA TÔI: VÌ SAO TÔI \"CAI\" THIẾT BỊ SỐ. Tháng trước tôi xoá mọi ứng dụng mạng xã hội khỏi điện thoại, điều mà bạn bè tôi cho là điên rồ. Thật lòng mà nói, đó là quyết định đúng đắn nhất của tôi năm nay."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Freed from… - V3 bị động (được giải thoát); Technology nói chung không có the; over- + use."
+          },
+          "target": "Freed from the algorithm, I started reading books again. My attention span is longer, and my mental health has definitely improved. Technology isn't evil, but most of us overuse it.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Thoát khỏi thuật toán, tôi bắt đầu đọc sách trở lại. Khả năng tập trung của tôi dài hơn, và sức khoẻ tinh thần chắc chắn đã tốt lên. Công nghệ không xấu, nhưng phần lớn chúng ta lạm dụng nó."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Advice không đếm được - my advice, không phải my advices."
+          },
+          "target": "My advice? Start small. Turn off notifications, and keep your phone out of the bedroom. A recent study found that even this can help you sleep better.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Lời khuyên của tôi ư? Hãy bắt đầu từ việc nhỏ. Tắt thông báo và để điện thoại ngoài phòng ngủ. Một nghiên cứu gần đây phát hiện rằng chỉ thế thôi cũng giúp bạn ngủ ngon hơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Sau dấu phẩy không dùng that; chỉ người dùng who."
+          },
+          "right": "The researchers, who are based in Singapore, conducted an experiment.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "The researchers, that are based in Singapore, conducted an experiment."
+        },
+        {
+          "note": {
+            "vi": "Giấc ngủ không tự xoá ứng dụng - chủ ngữ sau dấu phẩy phải là người làm hành động (I)."
+          },
+          "right": "Having deleted the apps, I slept much better.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Having deleted the apps, my sleep improved."
+        },
+        {
+          "note": {
+            "vi": "Nghiên cứu chỉ tìm thấy liên hệ nên dùng suggest / linked to; phones nói chung không có the."
+          },
+          "right": "The study suggests that phones are linked to poor sleep.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "The study proves that the phones cause poor sleep."
+        },
+        {
+          "points": [
+            {
+              "vi": "Bản tin: khách quan, có số liệu, động từ found / suggests / does not prove."
+            },
+            {
+              "vi": "Blog: ngôi thứ nhất, cảm xúc (Honestly…), lời khuyên (Start small)."
+            },
+            {
+              "vi": "Mệnh đề không xác định: who / which giữa hai dấu phẩy; \", which…\" bình luận cả sự việc."
+            },
+            {
+              "vi": "Phân từ: Having tracked…, Published this week…, Freed from… - chủ ngữ phải khớp."
+            },
+            {
+              "vi": "Mạo từ: Technology / phones (chung) - the Internet, the media; advice, research, evidence không đếm được."
+            },
+            {
+              "vi": "Từ mới: digital detox, attention span, mental health."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "1298035fe50f39ef9d521ef24f70dd15e2e41ea60a6c8c79a188b5da2c442f4e",
+      "estimated_minutes": 25,
+      "id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
+      "is_demo": true,
+      "key": "en:lesson:media-technology-review",
+      "language_code": "en",
+      "level_code": "b2",
+      "objectives": [
+        {
+          "vi": "Đọc hiểu một bản tin khoa học và một bài blog bày tỏ quan điểm về thời gian dùng màn hình."
+        },
+        {
+          "vi": "Kết hợp mệnh đề quan hệ không xác định, mệnh đề phân từ, mạo từ và cấu tạo từ trong văn bản liền mạch."
+        },
+        {
+          "vi": "Đánh giá độ tin cậy của tin tức bằng ngôn ngữ đưa tin khoa học (suggest, claim, a link between)."
+        }
+      ],
+      "order_index": 5,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "reading",
+        "writing",
+        "grammar",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Ôn tập: Bản tin khoa học & blog về thời gian dùng màn hình"
+      },
+      "unit_id": "4f325330-c1c9-5e1e-aec7-1f9f7a874308"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Sau bài này, bạn có đủ \"bộ câu\" để chủ trì hoặc tham gia một cuộc họp bằng tiếng Anh - từ lúc mở đầu, chuyển ý, xen vào, đến lúc tóm tắt và giao việc."
           },
           "type": "objective"
@@ -227286,6 +239818,180 @@ select content_private.import_bundle($bundle${
         "vi": "Danh từ hoá & collocation học thuật"
       },
       "unit_id": "5057459b-bf94-5862-98e8-8d51b6b5d6b9"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn viết được những câu giàu thông tin như trong báo chí: \"Linh, whose videos have gone viral, now has two million followers.\" - và biết đặt dấu phẩy, chọn which / who / whose / whom cho đúng."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Ở trình độ trước, bạn đã học mệnh đề xác định (the app that I use) - nó cho biết ta đang nói về cái nào. Mệnh đề không xác định chỉ thêm thông tin phụ về một thứ đã rõ ràng (tên riêng, \"my brother\", \"this app\"), nên luôn nằm giữa hai dấu phẩy."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Trong mệnh đề không xác định, chỉ dùng who (người), which (vật), whose (của ai/cái gì) và whom - tuyệt đối không dùng that. Bạn cũng không được lược bỏ đại từ quan hệ như ở mệnh đề xác định."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Văn viết trang trọng thường đưa giới từ lên trước: the platform on which…, the expert to whom… Sau giới từ chỉ dùng which hoặc whom, không dùng that hay who."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "\", which…\" ở cuối câu có thể thay cho cả sự việc phía trước, giống \"điều này / việc đó\" trong tiếng Việt: He quit social media, which surprised everyone."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Dấu phẩy làm thay đổi nghĩa: \"My sister who lives in Huế is a journalist\" ngầm hiểu bạn có nhiều chị em; \"My sister, who lives in Huế, is a journalist\" cho biết bạn chỉ có một chị. Tiếng Việt không có dấu hiệu tương đương nên người Việt hay bỏ dấu phẩy hoặc thêm thừa. Khi nói, dấu phẩy thể hiện bằng một quãng ngừng ngắn và giọng hơi hạ xuống."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "TikTok là tên riêng, đã rõ nên mệnh đề chỉ thêm thông tin phụ - dùng which và hai dấu phẩy."
+          },
+          "target": "TikTok, which was launched in 2016, has changed the way young people use the Internet.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "TikTok, ra mắt năm 2016, đã thay đổi cách giới trẻ dùng Internet."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Whose + danh từ (cooking videos) thay cho her cooking videos."
+          },
+          "target": "Linh, whose cooking videos went viral last year, now works as a full-time content creator.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Linh, người có những video nấu ăn gây bão năm ngoái, giờ làm người sáng tạo nội dung toàn thời gian."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Giới từ on đứng trước which - văn viết trang trọng. Văn nói - the platform (that) most fake reviews are posted on."
+          },
+          "target": "This is the platform on which most fake reviews are posted.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Đây là nền tảng mà phần lớn các bài đánh giá giả được đăng lên."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Which thay cho cả việc \"xin lỗi người theo dõi\", không chỉ cho danh từ followers."
+          },
+          "target": "The influencer apologised to her followers, which was a smart move.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Người có ảnh hưởng ấy đã xin lỗi người theo dõi, đó là một bước đi khôn ngoan."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Cụm số lượng + of which / of whom: some of which, neither of which, most of whom."
+          },
+          "target": "I subscribe to two streaming services, neither of which has many Vietnamese films.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Tôi đăng ký hai dịch vụ xem phim trực tuyến, nhưng cả hai đều không có nhiều phim Việt."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Sau dấu phẩy không bao giờ dùng that. Thông tin phụ về vật dùng which, về người dùng who."
+          },
+          "right": "YouTube, which is owned by Google, is the biggest video platform.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "YouTube, that is owned by Google, is the biggest video platform."
+        },
+        {
+          "note": {
+            "vi": "\"Điều đó\" thay cho cả câu là which, không phải what. What nghĩa là \"cái mà\" và không đứng sau dấu phẩy kiểu này."
+          },
+          "right": "He deleted his account, which surprised everyone.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "He deleted his account, what surprised everyone."
+        },
+        {
+          "note": {
+            "vi": "Who's là who is. Chỉ sở hữu (bài viết của người đó) phải dùng whose."
+          },
+          "right": "The blogger, whose article went viral, received many messages.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "The blogger, who's article went viral, received many messages."
+        },
+        {
+          "points": [
+            {
+              "vi": "Mệnh đề không xác định = thông tin phụ, luôn nằm giữa hai dấu phẩy, không lược bỏ đại từ."
+            },
+            {
+              "vi": "Chỉ dùng who / which / whose / whom - không bao giờ dùng that sau dấu phẩy."
+            },
+            {
+              "vi": "Giới từ + which / whom (on which, to whom) trong văn viết; văn nói đẩy giới từ ra cuối."
+            },
+            {
+              "vi": "\", which…\" có thể bình luận cả sự việc phía trước (điều đó, việc này)."
+            },
+            {
+              "vi": "Từ vựng: influencer, platform, follower, go viral, subscribe to, streaming, content creator."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "e77dd3e0411cd31933a11c770b33c96c6f854a68a9359617b7fe8ec7601b72b9",
+      "estimated_minutes": 20,
+      "id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
+      "is_demo": true,
+      "key": "en:lesson:non-defining-relatives",
+      "language_code": "en",
+      "level_code": "b2",
+      "objectives": [
+        {
+          "vi": "Thêm thông tin phụ bằng mệnh đề quan hệ không xác định với which / who / whose, đặt dấu phẩy đúng chỗ."
+        },
+        {
+          "vi": "Dùng giới từ + which / whom (on which, to whom) trong văn viết trang trọng."
+        },
+        {
+          "vi": "Bình luận cả một sự việc bằng \", which…\" và tránh lỗi dùng that sau dấu phẩy."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "vocabulary",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "TikTok, which… - mệnh đề quan hệ không xác định"
+      },
+      "unit_id": "4f325330-c1c9-5e1e-aec7-1f9f7a874308"
     },
     {
       "body": [
@@ -228666,6 +241372,166 @@ select content_private.import_bundle($bundle${
         "vi": "Gọi món ở quán cà phê, nhà hàng"
       },
       "unit_id": "3285a30f-4873-55cc-8da0-df5296ea2459"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn viết được những câu gọn kiểu báo chí như \"Having discovered the data breach, the company warned its customers\" và biết kiểm tra để không mắc lỗi phân từ \"treo\"."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Khi hai mệnh đề có cùng chủ ngữ, bạn có thể bỏ chủ ngữ và liên từ ở một mệnh đề rồi đổi động từ thành phân từ. As she felt tired, she went to bed → Feeling tired, she went to bed."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Chọn dạng theo nghĩa: V-ing là chủ động hoặc xảy ra cùng lúc (Feeling tired…); Having + V3 là việc đã xong trước (Having finished…); V3 là bị động (Built in 1990…, Shocked by the news…)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Tiếng Việt bỏ chủ ngữ rất tự do (\"Bước vào phòng, màn hình tắt hết\"), nhưng tiếng Anh bắt buộc người làm hành động phân từ phải là chủ ngữ của mệnh đề chính. Nếu không, câu bị lỗi phân từ treo và nghe rất buồn cười."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Phân từ cũng rút gọn được mệnh đề quan hệ: people who use the app → people using the app; a report which was published in May → a report published in May. Cách này rất phổ biến trong tin tức và văn khoa học. Phủ định đặt not trước phân từ: Not knowing the password, I couldn't log in."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Having + V3 - phát hiện xong rồi mới cảnh báo; chủ ngữ (the company) là bên phát hiện."
+          },
+          "target": "Having discovered the data breach, the company immediately warned its customers.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Sau khi phát hiện vụ rò rỉ dữ liệu, công ty lập tức cảnh báo khách hàng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "V3 (launched) mang nghĩa bị động - ứng dụng được ra mắt."
+          },
+          "target": "Launched in 2020, the app now has ten million users.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Ra mắt năm 2020, ứng dụng này giờ có mười triệu người dùng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Worried là tính từ dạng V3, mô tả trạng thái của chủ ngữ Mai."
+          },
+          "target": "Worried about her privacy, Mai stopped posting photos of her children.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Lo lắng cho quyền riêng tư, Mai thôi đăng ảnh các con."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Using fake emails = who used fake emails (rút gọn mệnh đề quan hệ)."
+          },
+          "target": "Hackers using fake emails stole the personal data of thousands of students.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Những tin tặc dùng email giả đã đánh cắp dữ liệu cá nhân của hàng nghìn sinh viên."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Màn hình không thể tự đi vào văn phòng. Chủ ngữ ngay sau dấu phẩy phải là người thực hiện hành động walking."
+          },
+          "right": "Walking into the office, I saw that the screens were all black.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Walking into the office, the screens were all black."
+        },
+        {
+          "note": {
+            "vi": "Thư viện được xây (bị động) nên dùng V3 built, không dùng V-ing."
+          },
+          "right": "Built in 1990, the library needs repairs.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Building in 1990, the library needs repairs."
+        },
+        {
+          "note": {
+            "vi": "Sau having luôn là V3 - finished, không phải finish."
+          },
+          "right": "Having finished the course, she got a job in cybersecurity.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Having finish the course, she got a job in cybersecurity."
+        },
+        {
+          "points": [
+            {
+              "vi": "Cùng chủ ngữ mới được rút gọn; chủ ngữ mệnh đề chính phải là người/vật làm hành động phân từ."
+            },
+            {
+              "vi": "V-ing: chủ động, cùng lúc hoặc lý do (Feeling tired, …)."
+            },
+            {
+              "vi": "Having + V3: việc xong trước (Having finished, …)."
+            },
+            {
+              "vi": "V3: bị động (Built in 1990, …; Shocked by the news, …)."
+            },
+            {
+              "vi": "Rút gọn mệnh đề quan hệ: users living in…, a study published in…"
+            },
+            {
+              "vi": "Từ vựng: privacy, data breach, cybersecurity, hacker, personal data, algorithm, launch."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "a3787017a4c3465d7c468b186108f680eca5179bea78a8d9fc4814c45b5182c5",
+      "estimated_minutes": 20,
+      "id": "1328e222-6a34-5165-9da3-b63160cf28d7",
+      "is_demo": true,
+      "key": "en:lesson:participle-clauses",
+      "language_code": "en",
+      "level_code": "b2",
+      "objectives": [
+        {
+          "vi": "Rút gọn mệnh đề cùng chủ ngữ bằng V-ing, Having + V3 và V3."
+        },
+        {
+          "vi": "Rút gọn mệnh đề quan hệ (a study published…, users living in…)."
+        },
+        {
+          "vi": "Tránh lỗi phân từ \"treo\" (dangling participle) và nói về an ninh mạng, quyền riêng tư."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "vocabulary",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Having finished…, Built in 1990… - mệnh đề phân từ"
+      },
+      "unit_id": "4f325330-c1c9-5e1e-aec7-1f9f7a874308"
     },
     {
       "body": [
@@ -230843,6 +243709,166 @@ select content_private.import_bundle($bundle${
         "vi": "Biện pháp tu từ & câu nhấn mạnh trong bài nói"
       },
       "unit_id": "4e983009-7c8b-5718-b1be-4864faa13cb8"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn đọc được một bản tin khoa học bằng tiếng Anh, nhận ra khi nào tiêu đề đang phóng đại, và tự tóm tắt một nghiên cứu bằng vài câu chuẩn văn báo chí."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Tin khoa học thường mở đầu bằng A (new) study found / shows that… rồi mô tả cách làm: researchers conducted an experiment with 500 participants. Study đếm được (a study, two studies), còn research và evidence thì không."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Hãy để ý động từ tường thuật vì nó cho biết kết luận chắc đến đâu: prove (chứng minh) > show (cho thấy) > suggest (gợi ý) > claim (tuyên bố, chưa kiểm chứng). Tiêu đề giật gân hay đổi suggest thành prove."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "A link between A and B chỉ là mối liên hệ, chưa chắc A gây ra B. Tiếng Việt hay viết \"X gây ra Y\" cho mọi nghiên cứu, nhưng tin khoa học cẩn thận sẽ viết X is linked to Y."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Fake news, misinformation, evidence, research, information đều không đếm được: fake news spreads (không phải spread), much evidence, a piece of misinformation. Muốn nói \"một tin giả\", dùng a fake news story. Trước khi chia sẻ, người đọc cẩn thận sẽ fact-check: nguồn có đáng tin không (a reliable source), có bao nhiêu người tham gia, nghiên cứu đã được công bố ở đâu."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "A study found that + mệnh đề - cách mở đầu tin khoa học phổ biến nhất."
+          },
+          "target": "A new study found that people who sleep less than six hours a night are more likely to catch a cold.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Một nghiên cứu mới phát hiện rằng những người ngủ dưới sáu tiếng mỗi đêm dễ bị cảm lạnh hơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Conduct / carry out an experiment - không nói \"make an experiment\"."
+          },
+          "target": "The researchers conducted an experiment with 300 participants over six months.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Các nhà nghiên cứu đã tiến hành một thí nghiệm với 300 người tham gia trong sáu tháng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Suggest (gợi ý, có thể) yếu hơn prove (chứng minh)."
+          },
+          "target": "Evidence suggests that there is a link between social media use and anxiety, but it does not prove that one causes the other.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Bằng chứng cho thấy có mối liên hệ giữa việc dùng mạng xã hội và chứng lo âu, nhưng nó không chứng minh được cái này gây ra cái kia."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Fake news không đếm được, động từ chia số ít - spreads."
+          },
+          "target": "Fake news spreads quickly, so always fact-check a story before you share it.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Tin giả lan nhanh, nên hãy luôn kiểm chứng một câu chuyện trước khi chia sẻ."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Research không đếm được nên không đi với a. Muốn nói \"một nghiên cứu\", dùng a study hoặc a piece of research."
+          },
+          "right": "A study found that coffee is good for your heart.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "A research found that coffee is good for your heart."
+        },
+        {
+          "note": {
+            "vi": "Thí nghiệm đi với conduct hoặc carry out (hoặc do trong văn nói), không đi với make."
+          },
+          "right": "Scientists conducted an experiment with 200 students.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Scientists made an experiment with 200 students."
+        },
+        {
+          "note": {
+            "vi": "Evidence không đếm được - không có -s, dùng a lot of / much và động từ số ít (there is)."
+          },
+          "right": "There is a lot of evidence that the drug works.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "There are many evidences that the drug works."
+        },
+        {
+          "points": [
+            {
+              "vi": "Mở đầu tin: A study found / shows that…; Researchers claim that…; Evidence suggests that…"
+            },
+            {
+              "vi": "Mô tả nghiên cứu: conduct / carry out an experiment, participants, over six months."
+            },
+            {
+              "vi": "Mức độ chắc chắn: prove > show > suggest > claim."
+            },
+            {
+              "vi": "A link between A and B / be linked to - liên hệ chưa chắc là nguyên nhân."
+            },
+            {
+              "vi": "Không đếm được: research, evidence, information, fake news, misinformation."
+            },
+            {
+              "vi": "Kiểm chứng: fact-check a story, check whether it comes from a reliable source."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "b4ca5323cdf0623c44b0052d555b9bd62458927448b56f5d4c45b9f9b6974a59",
+      "estimated_minutes": 20,
+      "id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
+      "is_demo": true,
+      "key": "en:lesson:science-reporting",
+      "language_code": "en",
+      "level_code": "b2",
+      "objectives": [
+        {
+          "vi": "Hiểu và dùng ngôn ngữ đưa tin khoa học - a study found that, researchers claim, evidence suggests, conduct an experiment."
+        },
+        {
+          "vi": "Phân biệt mức độ chắc chắn của prove / show / suggest / claim và hiểu \"có liên hệ\" khác \"là nguyên nhân\"."
+        },
+        {
+          "vi": "Nói về tin giả, thông tin sai lệch và cách kiểm chứng nguồn tin."
+        }
+      ],
+      "order_index": 4,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "reading",
+        "vocabulary",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "A study found that… - đọc tin khoa học & nhận diện tin giả"
+      },
+      "unit_id": "4f325330-c1c9-5e1e-aec7-1f9f7a874308"
     },
     {
       "body": [
@@ -237547,6 +250573,159 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn hiểu các quán ngữ có bộ phận cơ thể và 미역국을 먹다, dùng được chúng trong câu, và tránh bẫy dịch từng chữ - dạng câu hỏi từ vựng rất hay gặp trong TOPIK II."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "관용어 (quán ngữ) là cụm từ cố định, nghĩa chung khác nghĩa từng chữ. 발이 넓다 không phải \"chân rộng\" mà là \"quen biết rộng\"; 손이 크다 không phải \"tay to\" mà là \"rộng tay, hào phóng\"."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Tiếng Việt cũng có quán ngữ cơ thể nhưng hình ảnh khác - \"kín miệng\" là 입이 무겁다 (miệng nặng), \"nhẹ dạ\" là 귀가 얇다 (tai mỏng). Hãy học theo cặp Hàn - Việt, đừng dịch hình ảnh."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Một số quán ngữ có cả nghĩa đen lẫn nghĩa bóng - 미역국을 먹다 vừa là \"ăn canh rong biển\" (sinh nhật), vừa là \"thi trượt\". Ngữ cảnh thi cử, tuyển dụng thì luôn hiểu là trượt."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Quán ngữ chia như tính từ, động từ bình thường - 발이 넓어서, 입이 무거운 사람, 미역국을 먹었다. Không thay từ bên trong - không nói 다리가 넓다 hay 귀가 가늘다. Trong văn chương, phép 비유 rộng hơn quán ngữ - tác giả tự tạo hình ảnh, viết theo mẫu A를 B에 비유하다 hoặc A는 B와 같다."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "발이 넓다 = quen biết rộng; gần nghĩa với 인맥이 넓다."
+          },
+          "target": "민수 씨는 발이 넓어서 어느 모임에 가도 아는 사람이 있다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Anh Minsu quen biết rộng nên đi buổi gặp mặt nào cũng có người quen."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "무겁다 là bất quy tắc ㅂ - 무거우니까, 무거운."
+          },
+          "target": "지수는 입이 무거우니까 비밀을 말해도 괜찮다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Jisu kín miệng nên kể bí mật cũng không sao."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "귀가 얇다 = dễ bị người khác (hay quảng cáo) thuyết phục."
+          },
+          "target": "형은 귀가 얇아서 광고만 보면 물건을 산다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Anh tôi nhẹ dạ, cứ xem quảng cáo là mua đồ."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Ngữ cảnh thi tuyển → nghĩa bóng \"thi trượt\"."
+          },
+          "target": "이번 입사 시험에서 또 미역국을 먹었다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Kỳ thi tuyển dụng lần này tôi lại trượt."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Quán ngữ cố định là 발이 넓다; đổi thành 발이 크다 thì chỉ còn nghĩa đen \"chân to\"."
+          },
+          "right": "민수 씨는 발이 넓어서 아는 사람이 많아요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "민수 씨는 발이 커서 아는 사람이 많아요."
+        },
+        {
+          "note": {
+            "vi": "눈이 높다 là kén chọn, không phải kiêu ngạo như \"mắt để trên trán\" của tiếng Việt. Kiêu ngạo là 콧대가 높다 hoặc 거만하다."
+          },
+          "right": "그 사람은 콧대가 높아서 다른 사람을 무시해요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "그 사람은 눈이 높아서 다른 사람을 무시해요."
+        },
+        {
+          "note": {
+            "vi": "Quán ngữ luôn dùng 먹다, kể cả với canh; và 미역국을 먹다 đã có nghĩa \"thi trượt\", không cần thêm 떨어져서."
+          },
+          "right": "이번 시험에서 미역국을 먹었어요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "이번 시험에서 떨어져서 미역국을 마셨어요."
+        },
+        {
+          "points": [
+            {
+              "vi": "발이 넓다 quen biết rộng · 손이 크다 rộng tay, hào phóng · 눈이 높다 kén chọn."
+            },
+            {
+              "vi": "입이 무겁다 kín miệng ↔ 입이 가볍다 bép xép · 귀가 얇다 nhẹ dạ cả tin."
+            },
+            {
+              "vi": "미역국을 먹다 thi trượt (ngữ cảnh thi cử) - không đổi 먹다 thành 마시다."
+            },
+            {
+              "vi": "비유 - A를 B에 비유하다 (ví A với B). Không dịch hình ảnh quán ngữ từng chữ."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "6a2a7c64f26ca15d11d6b256efa18bda8ed129d6f8bec29894518ec664880b1e",
+      "estimated_minutes": 20,
+      "id": "07e40d75-7283-55d8-8d17-df30f6711b02",
+      "is_demo": true,
+      "key": "ko:lesson:body-idioms",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "objectives": [
+        {
+          "vi": "Hiểu và dùng đúng các quán ngữ hay gặp - 발이 넓다, 손이 크다, 눈이 높다, 입이 무겁다 / 가볍다, 귀가 얇다, 미역국을 먹다."
+        },
+        {
+          "vi": "Nhận ra nghĩa bóng trong ngữ cảnh và không dịch từng chữ sang tiếng Việt."
+        },
+        {
+          "vi": "Hiểu phép ví von (비유) trong văn chương - A를 B에 비유하다."
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Quán ngữ và cách nói ví von"
+      },
+      "unit_id": "f81cf40a-9656-5763-809b-b2fa926b8c74"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Sau bài này, bạn tự viết một email công việc ngắn bằng tiếng Hàn và xử lý được một cuộc gọi đơn giản - nhận máy, chuyển máy, hẹn gọi lại."
           },
           "type": "objective"
@@ -242066,6 +255245,297 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn đọc được đoạn văn lịch sử, bài giới thiệu di sản ở trình độ TOPIK 6 và chọn đúng động từ khi nói về giữ gìn, phục dựng di sản. Các câu ví dụ dùng văn viết -ㄴ다."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Phần lớn từ vựng lịch sử là từ Hán Hàn, nên âm Hán Việt giúp bạn đoán nghĩa - 훈민정음 (Huấn dân chính âm), 창제 (sáng chế), 백성 (bách tính), 기록 (ký lục - ghi chép). Nhưng đừng tin hoàn toàn vào âm Hán Việt, vì cách dùng có thể khác tiếng Việt."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "보존 (bảo tồn) là giữ nguyên trạng, dùng cho 문화재, 기록, 유물. 보전 (bảo toàn) là giữ cho khỏi tổn hại, hay đi với 환경, 생태계. Hai từ chỉ khác một nguyên âm ㅗ / ㅓ nên rất dễ đọc nhầm."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Tiếng Việt nói \"khôi phục\" cho cả công trình lẫn sức khoẻ, nhưng tiếng Hàn tách làm hai. 복원 dùng cho hình dạng vật thể (건물, 그림, 파일); 회복 dùng cho trạng thái (건강, 신뢰, 경제)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Bài đọc về di sản hay dùng bị động - 보존되어 있다 (đang được bảo tồn), 복원되었다 (đã được phục dựng), 등재되었다 (đã được ghi danh), 기록되어 있다 (được ghi chép). Khi gặp -되어 있다, hãy hiểu đó là trạng thái còn kéo dài đến hiện tại. Lưu ý thêm - từ năm 2024, văn bản nhà nước dần dùng 국가유산 thay cho 문화재, nên bạn có thể gặp cả hai."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "-하였다 là dạng viết trang trọng của -했다, rất hay gặp trong văn bản lịch sử."
+          },
+          "target": "조선 시대의 세종대왕은 글을 모르는 백성을 위해 1443년에 훈민정음을 창제하였다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Vua Sejong thời Joseon đã sáng chế Huấn dân chính âm vào năm 1443 vì những người dân không biết chữ."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "세계 기록 유산 là di sản tư liệu (sách, văn bản), khác 세계 유산 cho công trình, địa danh."
+          },
+          "target": "훈민정음 해례본은 1997년 유네스코 세계 기록 유산으로 등재되었다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Bản Haerye của Huấn dân chính âm được ghi danh là Di sản tư liệu thế giới UNESCO năm 1997."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Công trình bị cháy thì 복원 (phục dựng hình dạng), không dùng 회복."
+          },
+          "target": "2008년 화재로 크게 훼손된 숭례문은 5년에 걸친 공사 끝에 복원되었다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Cổng Sungnyemun bị hư hại nặng trong vụ hoả hoạn năm 2008 đã được phục dựng sau 5 năm thi công."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Cấu trúc N에서 유래하다 - trợ từ 에서 chỉ nguồn gốc."
+          },
+          "target": "이 축제는 풍년을 기원하던 옛 풍습에서 유래하였다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Lễ hội này bắt nguồn từ phong tục xưa cầu mong được mùa."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Người Việt nghĩ \"khôi phục kinh tế\" nên chọn 복원. Kinh tế là trạng thái nên phải dùng 회복."
+          },
+          "right": "전쟁 후 경제를 회복하는 데 오랜 시간이 걸렸다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "전쟁 후 경제를 복원하는 데 오랜 시간이 걸렸다."
+        },
+        {
+          "note": {
+            "vi": "Đồ vật đặt trong tủ kính là 유물 (di vật). 유적 là di tích - một địa điểm, không thể bỏ vào tủ kính."
+          },
+          "right": "이 박물관은 조선 시대의 유물을 유리장 안에 전시하고 있다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "이 박물관은 조선 시대의 유적을 유리장 안에 전시하고 있다."
+        },
+        {
+          "note": {
+            "vi": "백성 chỉ dân thời phong kiến. Nói về hiện đại thì dùng 국민 (quốc dân) hoặc 시민."
+          },
+          "right": "오늘날 대한민국 국민은 투표로 대통령을 뽑는다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "오늘날 대한민국 백성은 투표로 대통령을 뽑는다."
+        },
+        {
+          "points": [
+            {
+              "vi": "조선 시대 · 세종대왕 · 훈민정음 창제 (1443) · 백성 - từ vựng lịch sử cốt lõi."
+            },
+            {
+              "vi": "문화재 (di sản văn hoá) · 유적 (nơi chốn) / 유물 (đồ vật) · 기록 (ghi chép) · N에서 유래하다 (bắt nguồn từ)."
+            },
+            {
+              "vi": "보존 = bảo tồn (di sản, tư liệu) · 보전 = bảo toàn (môi trường, hệ sinh thái)."
+            },
+            {
+              "vi": "복원 = phục dựng hình dạng (công trình) · 회복 = hồi phục trạng thái (sức khoẻ, kinh tế, niềm tin)."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "bd406c9a22b4d91686fdeb1807baa908e0555a28ee8bf9152488d5f9dc45a841",
+      "estimated_minutes": 20,
+      "id": "b691ee29-3bfb-53d1-ba6f-8227864c95df",
+      "is_demo": true,
+      "key": "ko:lesson:history-heritage",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "objectives": [
+        {
+          "vi": "Đọc hiểu đoạn văn lịch sử về thời Joseon, vua Sejong và việc sáng chế Huấn dân chính âm."
+        },
+        {
+          "vi": "Dùng đúng từ vựng di sản - 문화재, 유적 · 유물, 기록, 유래, 유네스코 세계 유산."
+        },
+        {
+          "vi": "Phân biệt 보존 / 보전 và 복원 / 회복 - các cặp từ người Việt hay dùng lẫn."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "vocabulary",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Lịch sử và di sản - từ thời Joseon đến UNESCO"
+      },
+      "unit_id": "f81cf40a-9656-5763-809b-b2fa926b8c74"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Bài ôn này gồm hai văn bản - một trích đoạn tuỳ bút về cuốn vở của người ông và một thông báo triển lãm chữ Hangul. Bạn sẽ đọc hiểu, suy luận điều được ngầm nói, rồi tự kiểm tra các lỗi người Việt hay mắc."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Với tuỳ bút, đọc theo trình tự chuyện kể → ý nghĩa → tự vấn. Đuôi -건만 báo hiệu điều trái mong đợi, -(으)리라 báo hiệu phỏng đoán của người viết, còn 돌아보게 된다 thường chứa ý chính."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Với thông báo, hãy đọc từng mục (기간, 장소, 관람료, 유의 사항) và tìm -(으)되 - phần sau nó luôn là điều kiện hoặc giới hạn. Câu hỏi \"điều nào đúng\" hay đặt bẫy ở chính phần điều kiện này."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Câu hỏi suy luận (암시, 추론) yêu cầu điều không viết thẳng nhưng chắc chắn suy ra được. Loại phương án quá xa văn bản (chuyên gia nghiên cứu chữ Hangul) và phương án trái với chi tiết (chính tả rất chuẩn trong khi bài viết 서툴렀건만)."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Trích tuỳ bút (bài viết gốc của Linguo) - -건만 (trái mong đợi), -(으)리라 (phỏng đoán), 돌아보게 된다 (tự vấn - ý chính)."
+          },
+          "target": "할아버지께서 남기신 낡은 공책 한 권을 발견하였다. 맞춤법은 서툴렀건만 글씨 하나하나에 정성이 배어 있었다. 글을 늦게 배우신 할아버지는 글을 아는 것이 곧 세상을 아는 것이라고 늘 말씀하셨다. 세종대왕이 백성을 위해 훈민정음을 창제한 뜻도 이와 다르지 않았으리라. 손쉽게 문자를 보내는 요즘, 나는 한 글자 한 글자를 소중히 여기고 있는지 돌아보게 된다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Tôi tìm thấy một cuốn vở cũ ông để lại. Chính tả tuy còn vụng về, vậy mà từng nét chữ đều thấm đượm tâm huyết. Ông học chữ muộn và luôn nói rằng biết chữ chính là hiểu thế giới. Có lẽ ý định của vua Sejong khi sáng chế Huấn dân chính âm vì dân chúng cũng không khác điều đó. Thời nay nhắn tin dễ dàng, tôi bỗng tự hỏi mình có còn trân trọng từng con chữ hay không."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Thông báo hư cấu dùng cho bài ôn. Hai lần -(으)되 - mỗi lần là một điều kiện cần chú ý."
+          },
+          "target": "[특별 전시 안내] 한글, 백성의 문자가 되다 / 기간: 10월 1일~11월 30일 (매주 월요일 휴관) / 장소: 한빛역사박물관 기획전시실 / 내용: 조선 시대 한글 편지, 복원된 인쇄 목판 등 유물 120여 점 / 관람료: 무료로 하되 단체 관람은 사전 예약 필수 / 유의 사항: 사진 촬영은 가능하되 플래시는 사용할 수 없습니다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "[Thông báo triển lãm đặc biệt] Hangul - khi chữ viết trở thành của dân / Thời gian: 1/10-30/11 (nghỉ thứ Hai hằng tuần) / Địa điểm: phòng triển lãm chuyên đề, Bảo tàng Lịch sử Hanbit / Nội dung: hơn 120 hiện vật gồm thư viết bằng Hangul thời Joseon, bản khắc gỗ in đã được phục dựng... / Phí tham quan: miễn phí, nhưng đoàn tham quan bắt buộc đặt trước / Lưu ý: được chụp ảnh nhưng không được dùng đèn flash."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Vế sau là mệnh lệnh nên lý do dùng -(으)니까, không dùng -아/어서."
+          },
+          "target": "저는 입이 무거우니까 걱정하지 마세요.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Tôi kín miệng lắm, bạn đừng lo."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Hiện vật được làm lại theo hình dạng cũ là 복원. 회복 chỉ dùng cho trạng thái như sức khoẻ, kinh tế."
+          },
+          "right": "박물관은 조선 시대 인쇄 목판을 원래 모습으로 복원하였다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "박물관은 조선 시대 인쇄 목판을 원래 모습으로 회복하였다."
+        },
+        {
+          "note": {
+            "vi": "되 ở đây là đuôi -(으)되, không phải 되다. Luôn đọc tiếp vế sau để tìm điều kiện (단체 관람은 사전 예약 필수)."
+          },
+          "right": "관람료는 무료로 하되 = Miễn phí tham quan, nhưng (có điều kiện)",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "관람료는 무료로 하되 = Phí tham quan trở thành miễn phí"
+        },
+        {
+          "note": {
+            "vi": "-아/어서 không đi với mệnh lệnh, rủ rê ở vế sau. Dùng -(으)니까."
+          },
+          "right": "저는 입이 무거우니까 걱정하지 마세요.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "저는 입이 무거워서 걱정하지 마세요."
+        },
+        {
+          "points": [
+            {
+              "vi": "Tuỳ bút - chuyện kể → ý nghĩa → tự vấn; -건만 trái mong đợi, -(으)리라 phỏng đoán, 돌아보게 된다 chứa ý chính."
+            },
+            {
+              "vi": "Thông báo - đọc từng mục, chú ý -(으)되 = cho phép + điều kiện."
+            },
+            {
+              "vi": "보존 giữ nguyên · 복원 phục dựng hình dạng · 회복 hồi phục trạng thái; 유적 nơi chốn · 유물 đồ vật."
+            },
+            {
+              "vi": "Quán ngữ không dịch từng chữ - 입이 무겁다 kín miệng, 미역국을 먹다 thi trượt."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "3adab2e8b3137c6bb3ca9a71c6d76d745c10d8bb83596511df5e9796948cc1c4",
+      "estimated_minutes": 25,
+      "id": "720ac47b-cd20-5a2b-b987-535f3332856c",
+      "is_demo": true,
+      "key": "ko:lesson:history-literature-review",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "objectives": [
+        {
+          "vi": "Đọc hiểu một trích đoạn tuỳ bút và một thông báo triển lãm bảo tàng ở trình độ TOPIK 6."
+        },
+        {
+          "vi": "Kết hợp từ vựng di sản, đuôi văn chương, quán ngữ và câu hỏi thái độ, suy luận trong cùng một văn bản."
+        },
+        {
+          "vi": "Tự kiểm tra các lỗi hay gặp - dịch từng chữ quán ngữ, đọc nhầm đuôi cổ, dùng lẫn 보존 / 복원 / 회복."
+        }
+      ],
+      "order_index": 5,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "reading",
+        "listening",
+        "vocabulary",
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Ôn tập - tuỳ bút, thông báo triển lãm và câu hỏi suy luận"
+      },
+      "unit_id": "f81cf40a-9656-5763-809b-b2fa926b8c74"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Sau bài này, bạn hỏi được bạn mới quen \"Sở thích của bạn là gì?\" và kể được mình thích leo núi, chụp ảnh hay nấu ăn."
           },
           "type": "objective"
@@ -243645,6 +257115,315 @@ select content_private.import_bundle($bundle${
         "vi": "Nối âm, đồng hoá mũi và patchim kép"
       },
       "unit_id": "011df523-65c7-57ac-b043-74c94e80855a"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Bài này dạy bạn đọc hiểu, không bắt bạn dùng các đuôi này khi nói hay viết. Mục tiêu là gặp chúng trong tuỳ bút, thơ, văn bản pháp quy hay câu trích dẫn mà vẫn hiểu đúng ý."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Mẹo đọc nhanh là quy đổi về dạng hiện đại - -노라면 ≈ -다 보면, -(으)ㄹ세라 ≈ -(으)ㄹ까 봐, -고서야 ≈ -고 나서야, -거니와 ≈ -(으)ㄹ 뿐만 아니라. Đổi xong, bạn đọc câu như bình thường."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Nhóm nhượng bộ có sắc thái riêng - -건만 ≈ -지만 nhưng kèm tiếc nuối; -(으)ㄹ망정 ≈ -(으)ㄹ지언정 \"thà... chứ không\". -(으)ㄹ진대 nêu tiền đề hiển nhiên (\"đã... thì\"), thường đi với câu hỏi tu từ 어찌 -겠는가."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "-(으)되 là đuôi duy nhất trong nhóm còn rất sống trong văn bản hiện đại - nội quy, luật, thông báo. 입장은 무료로 하되 예약은 필수이다 nghĩa là \"vào cửa miễn phí, nhưng bắt buộc đặt trước\"."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Người Việt đọc sai chủ yếu vì tách đuôi theo hình dạng - thấy 되 nghĩ là 되다 (trở thành), thấy 거니와 nghĩ là -거나 (hoặc), thấy 건만 nghĩ là 만 (chỉ). Hãy coi mỗi đuôi là một khối nguyên vẹn. Ngoài ra, các đuôi này thường đi với đuôi câu cổ như -(으)리라, -겠는가, -노라, nên khi thấy một đuôi lạ, hãy đọc cả câu để đoán sắc thái."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "-노라면 = -다 보면; -(으)리라 là đuôi phỏng đoán cổ, tương đương -(으)ㄹ 것이다."
+          },
+          "target": "묵묵히 걷노라면 언젠가 길이 보이리라.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Cứ lặng lẽ bước đi thì rồi sẽ có ngày thấy đường."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "-건만 thể hiện tiếc nuối - điều mong đợi (về quê) không đến dù hoàn cảnh (xuân) đã đến."
+          },
+          "target": "봄은 왔건만 고향에 돌아갈 날은 아직 멀다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Xuân đã về vậy mà ngày trở lại quê hương vẫn còn xa."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "-(으)ㄹ세라 = -(으)ㄹ까 봐; vế sau là hành động phòng ngừa."
+          },
+          "target": "어머니는 아이가 깰세라 조심조심 방문을 닫으셨다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Mẹ khẽ khàng đóng cửa phòng vì sợ con thức giấc."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "-(으)되 trong nội quy - cho phép kèm điều kiện."
+          },
+          "target": "관람객은 자유롭게 사진을 찍되 다른 관람객에게 방해가 되지 않도록 해야 한다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Khách tham quan được tự do chụp ảnh, nhưng phải chú ý không làm phiền khách khác."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "-거니와 cộng thêm ý, giống -(으)ㄹ 뿐만 아니라."
+          },
+          "target": "이 마을은 경치도 아름답거니와 인심도 좋다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Ngôi làng này cảnh đã đẹp, lòng người lại còn tốt."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "되 ở đây là đuôi -(으)되 \"nhưng, kèm điều kiện\", không phải động từ 되다. Luôn tìm điều kiện ở vế sau."
+          },
+          "right": "사진 촬영은 허용하되 = Cho phép chụp ảnh, nhưng...",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "사진 촬영은 허용하되 = Việc chụp ảnh trở thành được phép"
+        },
+        {
+          "note": {
+            "vi": "-거니와 không phải -거나 (hoặc). Có 도... 도 hai lần là dấu hiệu đang cộng thêm ý."
+          },
+          "right": "경치도 아름답거니와 인심도 좋다 = Cảnh đã đẹp, lòng người lại còn tốt",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "경치도 아름답거니와 인심도 좋다 = Cảnh đẹp hoặc lòng người tốt"
+        },
+        {
+          "note": {
+            "vi": "-건만 là một đuôi nhượng bộ trọn vẹn, không phải trợ từ 만 (chỉ). Vế sau luôn trái với mong đợi."
+          },
+          "right": "봄은 왔건만 = Xuân đã về vậy mà",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "봄은 왔건만 = Chỉ khi xuân về"
+        },
+        {
+          "points": [
+            {
+              "vi": "-노라면 ≈ -다 보면 · -(으)ㄹ세라 ≈ -(으)ㄹ까 봐 · -고서야 ≈ -고 나서야."
+            },
+            {
+              "vi": "-거니와 ≈ -(으)ㄹ 뿐만 아니라 (đã... lại còn) · -(으)ㄹ진대 ≈ -(으)니까 trang trọng (đã... thì)."
+            },
+            {
+              "vi": "-건만 ≈ -지만 + tiếc nuối · -(으)ㄹ망정 ≈ -(으)ㄹ지언정 (thà... chứ không)."
+            },
+            {
+              "vi": "-(으)되 = nhưng (kèm điều kiện) - còn dùng nhiều trong nội quy, luật, thông báo."
+            },
+            {
+              "vi": "Đây là đuôi để đọc hiểu; khi tự viết, hãy dùng dạng hiện đại tương đương."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "d7806273fc9c7b6ca85bf7e659de37c7f01e9d063cf320b0253e71b61dec1af8",
+      "estimated_minutes": 25,
+      "id": "84c0c208-a65a-5dda-940c-77b2fa87a47a",
+      "is_demo": true,
+      "key": "ko:lesson:literary-endings",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "objectives": [
+        {
+          "vi": "Nhận ra tám đuôi văn chương hay gặp trong bài đọc TOPIK 6 - -노라면, -(으)ㄹ진대, -거니와, -건만, -(으)ㄹ세라, -(으)되, -고서야, -(으)ㄹ망정."
+        },
+        {
+          "vi": "Quy đổi mỗi đuôi về dạng hiện đại tương đương để hiểu đúng nghĩa câu."
+        },
+        {
+          "vi": "Tránh đọc nhầm đuôi cổ thành đuôi hiện đại trông giống (되다, -거나, -건, -(으)면)."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Đọc hiểu đuôi văn chương và cổ trang trọng"
+      },
+      "unit_id": "f81cf40a-9656-5763-809b-b2fa926b8c74"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn đọc được một đoạn tuỳ bút và một đoạn văn có chất thơ, rồi xác định thái độ người viết, cảm xúc nhân vật trữ tình và ý chính - những dạng câu hỏi nằm trong nhóm câu đọc cuối của TOPIK II."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Muốn tìm 필자의 태도, hãy gạch chân từ đánh giá (안타깝다, 아쉽다, 문제이다) và đuôi câu (-아야 한다, -게 된다, -(으)ㄹ 따름이다). Người viết chỉ ra cái sai là 비판적, nghi ngờ hiệu quả là 회의적, tin vào tương lai là 낙관적, nhìn lại chính mình là 성찰."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Trong tuỳ bút, 중심 생각 thường nằm ở cuối, sau một chuyện kể cụ thể - câu như 이제 와 생각하니, 돌아보게 된다 là tín hiệu. Phương án chỉ nhắc lại chi tiết câu chuyện thường là bẫy."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Trong thơ, người nói là 화자, không nhất thiết là tác giả. Hãy tìm hình ảnh 비유 (dòng sông, mùa thu, con đường) và động từ cảm xúc như 그리워하다 để đoán tâm trạng."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Đề TOPIK hay dùng từ Hán Hàn đuôi -적 để mô tả thái độ - 비판적, 회의적, 낙관적, 비관적, 긍정적, 냉소적. Người Việt dễ đoán theo âm Hán Việt nhưng có bẫy - 회의적 là \"hoài nghi\" chứ không liên quan 회의 (cuộc họp). Câu hỏi suy luận thường dùng 암시하다 - đáp án là điều không viết thẳng nhưng suy ra chắc chắn được từ văn bản."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Trích tuỳ bút - chuyện kể cụ thể (cây hồng) → ý nghĩa (나눔) → tự vấn (돌아보게 된다). Thái độ - 성찰."
+          },
+          "target": "어릴 적 할머니 댁 마당에는 오래된 감나무가 있었다. 할머니는 감을 따시되 꼭 몇 개는 가지에 남겨 두셨다. 그때는 그것이 아깝게만 보였건만, 이제 와 생각하니 그것은 나눔에 대한 할머니의 오래된 철학이었다. 무엇이든 끝까지 차지하려는 요즘의 나를 돌아보게 된다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Hồi nhỏ, sân nhà bà tôi có một cây hồng già. Bà hái hồng nhưng bao giờ cũng để lại vài quả trên cành. Khi ấy tôi chỉ thấy tiếc, vậy mà giờ nghĩ lại, đó chính là triết lý sẻ chia lâu đời của bà. Tôi bỗng nhìn lại bản thân mình bây giờ - cái gì cũng muốn chiếm cho đến cùng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Đoạn văn có chất thơ - 화자 dùng 비유 dòng sông để nói nỗi 그리움 với người đã ra đi."
+          },
+          "target": "강물은 뒤돌아보지 않는다. 흘러가노라면 언젠가 바다에 닿으리라. 나는 오늘도 떠나간 이의 이름을 물결 위에 띄워 보낸다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Dòng sông chẳng ngoảnh lại. Cứ trôi mãi thì rồi sẽ có ngày tới biển. Hôm nay tôi lại thả tên người đã ra đi lên mặt sóng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "회의적 = hoài nghi; thường đi với N에 대해."
+          },
+          "target": "필자는 새 정책의 효과에 대해 회의적이다.",
+          "target_lang": "ko",
+          "translation": {
+            "vi": "Người viết hoài nghi về hiệu quả của chính sách mới."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Câu hỏi thái độ không hỏi chi tiết câu chuyện. Đáp án phải mô tả cách người viết nhìn nhận, đánh giá."
+          },
+          "right": "필자의 태도 → 할머니의 나눔을 떠올리며 자신을 성찰하고 있다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "필자의 태도 → 할머니는 감을 몇 개 남겨 두셨다."
+        },
+        {
+          "note": {
+            "vi": "회의 (會議 - cuộc họp) và 회의 (懷疑 - hoài nghi) viết giống nhau. Đuôi -적 chỉ thái độ luôn là nghĩa \"hoài nghi\"."
+          },
+          "right": "회의적 = hoài nghi",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "회의적 = mang tính hội nghị"
+        },
+        {
+          "note": {
+            "vi": "Khi nói về cảm xúc trong thơ, đề dùng 화자, không đồng nhất với tác giả. Cũng nên gọi tên cảm xúc cụ thể (그리움) thay vì chung chung \"buồn\"."
+          },
+          "right": "이 시의 화자는 떠나간 사람을 그리워하고 있다.",
+          "target_lang": "ko",
+          "type": "common_mistake",
+          "wrong": "이 시의 작가는 슬퍼하고 있다."
+        },
+        {
+          "points": [
+            {
+              "vi": "수필 tuỳ bút · 화자 nhân vật trữ tình · 필자의 태도 thái độ người viết · 중심 생각 ý chính."
+            },
+            {
+              "vi": "비판적 phê phán · 회의적 hoài nghi · 낙관적 lạc quan (↔ 비관적) · 성찰하다 tự vấn."
+            },
+            {
+              "vi": "Tuỳ bút - ý chính thường ở cuối, sau 이제 와 생각하니, 돌아보게 된다."
+            },
+            {
+              "vi": "Thơ - tìm 비유 và từ cảm xúc (그리워하다); 암시하다 = điều suy ra được nhưng không viết thẳng."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "ea161a51eb80d697e25ec2866ccf23fc199e364262d0b3588443591d19cc4b0c",
+      "estimated_minutes": 25,
+      "id": "5db53b25-67db-5716-b068-acc30ed810a5",
+      "is_demo": true,
+      "key": "ko:lesson:literary-reading-attitude",
+      "language_code": "ko",
+      "level_code": "topik6",
+      "objectives": [
+        {
+          "vi": "Đọc hiểu trích đoạn tuỳ bút (수필) và đoạn văn có chất thơ ở trình độ TOPIK 6."
+        },
+        {
+          "vi": "Trả lời dạng câu hỏi thái độ người viết (필자의 태도) và ý chính (중심 생각) của TOPIK II."
+        },
+        {
+          "vi": "Dùng đúng từ chỉ thái độ - 비판적, 회의적, 낙관적, 성찰하다, 그리워하다, 암시하다."
+        }
+      ],
+      "order_index": 4,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "reading",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Đọc tuỳ bút, thơ và nhận ra thái độ người viết"
+      },
+      "unit_id": "f81cf40a-9656-5763-809b-b2fa926b8c74"
     },
     {
       "body": [
@@ -250024,6 +263803,21 @@ select content_private.import_bundle($bundle${
       }
     },
     {
+      "content_hash": "f9da2000d9dd0c6347713ff199489ac7b0567c606bb2b2f0680fbbf328a38126",
+      "id": "4f325330-c1c9-5e1e-aec7-1f9f7a874308",
+      "is_demo": true,
+      "key": "en:unit:media-technology",
+      "order_index": 4,
+      "program_id": "3493288d-09dc-5e3c-b444-f9416c170a4a",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Truyền thông, công nghệ & khoa học"
+      }
+    },
+    {
       "content_hash": "434097029ae0fc86085bdf8e3c24ab8e3bded868248957d2af7b2a80c0c85900",
       "id": "8ff03299-7e94-5a0b-b439-7c05fb1f0a34",
       "is_demo": true,
@@ -250336,6 +264130,21 @@ select content_private.import_bundle($bundle${
       "status": "published",
       "title": {
         "vi": "Hangul nâng cao: nguyên âm ghép & patchim"
+      }
+    },
+    {
+      "content_hash": "1b3f9206560e09c665e21b6600bc17c8b02e9edc89a1221f945c9957f9f691e4",
+      "id": "f81cf40a-9656-5763-809b-b2fa926b8c74",
+      "is_demo": true,
+      "key": "ko:unit:history-literature",
+      "order_index": 4,
+      "program_id": "4e646825-94e9-5d46-a93a-ddcef226a703",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Lịch sử, văn học & ngôn ngữ trang trọng"
       }
     },
     {

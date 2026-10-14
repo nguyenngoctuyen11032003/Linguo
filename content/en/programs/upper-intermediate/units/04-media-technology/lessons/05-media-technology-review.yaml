@@ -1,0 +1,446 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:media-technology-review
+order_index: 5
+level: b2
+title:
+  vi: "Ôn tập: Bản tin khoa học & blog về thời gian dùng màn hình"
+objectives:
+  - vi: Đọc hiểu một bản tin khoa học và một bài blog bày tỏ quan điểm về thời gian dùng màn hình.
+  - vi: Kết hợp mệnh đề quan hệ không xác định, mệnh đề phân từ, mạo từ và cấu tạo từ trong văn bản liền mạch.
+  - vi: Đánh giá độ tin cậy của tin tức bằng ngôn ngữ đưa tin khoa học (suggest, claim, a link between).
+estimated_minutes: 25
+skills: [reading, writing, grammar, vocabulary]
+prerequisites: [en:lesson:science-reporting]
+items:
+  - item: en:item:digital-detox
+  - item: en:item:attention-span
+  - item: en:item:mental-health
+  - item: en:item:non-defining-relative-clause
+    role: reuse
+  - item: en:item:sentential-which
+    role: reuse
+  - item: en:item:reduced-relative-participle
+    role: reuse
+  - item: en:item:perfect-participle-clause
+    role: reuse
+  - item: en:item:present-participle-clause
+    role: reuse
+  - item: en:item:zero-article-general
+    role: reuse
+  - item: en:item:uncountable-information-advice
+    role: reuse
+  - item: en:item:a-study-found-that
+    role: reuse
+  - item: en:item:link-between
+    role: reuse
+  - item: en:item:participant
+    role: reuse
+  - item: en:item:prove-vs-suggest
+    role: reuse
+  - item: en:item:screen-time
+    role: reuse
+  - item: en:item:overuse
+    role: reuse
+  - item: en:item:algorithm
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này ôn lại cả unit qua hai văn bản về cùng một chủ đề - một bản tin khoa học khách quan và một bài blog đầy cảm xúc về thời gian dùng màn hình. Sau bài, bạn phân biệt được giọng văn đưa tin với giọng văn bày tỏ quan điểm.
+  - type: explain
+    text:
+      vi: "Bản tin khoa học trả lời các câu hỏi: ai nghiên cứu, làm thế nào (an experiment with 1,200 participants), phát hiện gì (found that, suggests) và giới hạn ở đâu (does not prove). Người viết giữ khoảng cách, không dùng I."
+  - type: explain
+    text:
+      vi: "Bài blog dùng ngôi thứ nhất, kể trải nghiệm cá nhân và đưa ra lời khuyên. Nó vẫn nhắc đến nghiên cứu, nhưng chọn lọc để ủng hộ quan điểm của người viết - vì vậy bạn cần đọc kỹ động từ tường thuật."
+  - type: explain
+    text:
+      vi: "Hãy để ý các cấu trúc của unit trong hai văn bản: mệnh đề không xác định (…, which was published…), phân từ (Having deleted…, Published this week…), mạo từ với khái niệm chung (Technology, the Internet) và danh từ không đếm được (research, evidence, advice)."
+  - type: deep_explain
+    text:
+      vi: "Một mẹo đọc báo hữu ích là tách \"sự thật\" khỏi \"ý kiến\": những câu có số liệu, tên nghiên cứu, động từ found / showed thường là sự thật; những câu có I think, should, honestly, terrible là ý kiến. Người Việt hay tin ngay những gì được in ra, nhưng ở trình độ B2, bạn cần đọc có phê phán: ai nói, dựa vào đâu, chắc đến mức nào."
+  - type: example
+    target: "LESS SCROLLING, BETTER SLEEP? A study published this week in a medical journal suggests that teenagers who spend more than four hours a day on their phones sleep, on average, 45 minutes less than those who do not."
+    target_lang: en
+    translation:
+      vi: "LƯỚT ÍT HƠN, NGỦ NGON HƠN? Một nghiên cứu được công bố tuần này trên một tạp chí y khoa cho thấy những thiếu niên dùng điện thoại hơn bốn tiếng mỗi ngày ngủ trung bình ít hơn 45 phút so với những bạn không dùng nhiều như vậy."
+    note:
+      vi: Published this week = which was published this week (rút gọn bằng V3); suggests - mức độ "gợi ý".
+  - type: example
+    target: "The researchers, who are based in Singapore, conducted an experiment with 1,200 participants. Having tracked their screen time for three months, they found a clear link between late-night phone use and poor sleep."
+    target_lang: en
+    translation:
+      vi: "Các nhà nghiên cứu, hiện làm việc tại Singapore, đã tiến hành một thí nghiệm với 1.200 người tham gia. Sau khi theo dõi thời gian dùng màn hình của họ trong ba tháng, nhóm đã tìm thấy mối liên hệ rõ ràng giữa việc dùng điện thoại khuya và giấc ngủ kém."
+    note:
+      vi: Who are based in Singapore - thông tin phụ giữa hai dấu phẩy; Having tracked - việc xong trước.
+  - type: example
+    target: "However, the study does not prove that phones cause poor sleep. Students who already sleep badly, the authors note, may simply use their phones more."
+    target_lang: en
+    translation:
+      vi: "Tuy nhiên, nghiên cứu không chứng minh rằng điện thoại gây ra giấc ngủ kém. Các tác giả lưu ý rằng có thể những học sinh vốn đã ngủ kém chỉ đơn giản là dùng điện thoại nhiều hơn."
+    note:
+      vi: Does not prove - liên hệ chưa phải nguyên nhân.
+  - type: example
+    target: "MY BLOG: WHY I DID A DIGITAL DETOX. Last month I deleted every social media app from my phone, which my friends thought was crazy. Honestly, it was the best decision I've made this year."
+    target_lang: en
+    translation:
+      vi: "BLOG CỦA TÔI: VÌ SAO TÔI \"CAI\" THIẾT BỊ SỐ. Tháng trước tôi xoá mọi ứng dụng mạng xã hội khỏi điện thoại, điều mà bạn bè tôi cho là điên rồ. Thật lòng mà nói, đó là quyết định đúng đắn nhất của tôi năm nay."
+    note:
+      vi: Which my friends thought was crazy - which thay cho cả việc xoá ứng dụng.
+  - type: example
+    target: "Freed from the algorithm, I started reading books again. My attention span is longer, and my mental health has definitely improved. Technology isn't evil, but most of us overuse it."
+    target_lang: en
+    translation:
+      vi: "Thoát khỏi thuật toán, tôi bắt đầu đọc sách trở lại. Khả năng tập trung của tôi dài hơn, và sức khoẻ tinh thần chắc chắn đã tốt lên. Công nghệ không xấu, nhưng phần lớn chúng ta lạm dụng nó."
+    note:
+      vi: Freed from… - V3 bị động (được giải thoát); Technology nói chung không có the; over- + use.
+  - type: example
+    target: "My advice? Start small. Turn off notifications, and keep your phone out of the bedroom. A recent study found that even this can help you sleep better."
+    target_lang: en
+    translation:
+      vi: "Lời khuyên của tôi ư? Hãy bắt đầu từ việc nhỏ. Tắt thông báo và để điện thoại ngoài phòng ngủ. Một nghiên cứu gần đây phát hiện rằng chỉ thế thôi cũng giúp bạn ngủ ngon hơn."
+    note:
+      vi: Advice không đếm được - my advice, không phải my advices.
+  - type: common_mistake
+    wrong: "The researchers, that are based in Singapore, conducted an experiment."
+    right: "The researchers, who are based in Singapore, conducted an experiment."
+    target_lang: en
+    note:
+      vi: Sau dấu phẩy không dùng that; chỉ người dùng who.
+  - type: common_mistake
+    wrong: "Having deleted the apps, my sleep improved."
+    right: "Having deleted the apps, I slept much better."
+    target_lang: en
+    note:
+      vi: Giấc ngủ không tự xoá ứng dụng - chủ ngữ sau dấu phẩy phải là người làm hành động (I).
+  - type: common_mistake
+    wrong: "The study proves that the phones cause poor sleep."
+    right: "The study suggests that phones are linked to poor sleep."
+    target_lang: en
+    note:
+      vi: Nghiên cứu chỉ tìm thấy liên hệ nên dùng suggest / linked to; phones nói chung không có the.
+  - type: summary
+    points:
+      - vi: "Bản tin: khách quan, có số liệu, động từ found / suggests / does not prove."
+      - vi: "Blog: ngôi thứ nhất, cảm xúc (Honestly…), lời khuyên (Start small)."
+      - vi: "Mệnh đề không xác định: who / which giữa hai dấu phẩy; \", which…\" bình luận cả sự việc."
+      - vi: "Phân từ: Having tracked…, Published this week…, Freed from… - chủ ngữ phải khớp."
+      - vi: "Mạo từ: Technology / phones (chung) - the Internet, the media; advice, research, evidence không đếm được."
+      - vi: "Từ mới: digital detox, attention span, mental health."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:media-review-mcq-study-finding
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:a-study-found-that
+    prompt:
+      stem: Theo bản tin "Less scrolling, better sleep?", nghiên cứu phát hiện điều gì?
+      stem_lang: vi
+      options:
+        - { id: v2c, text: "Thiếu niên dùng điện thoại hơn 4 tiếng/ngày ngủ trung bình ít hơn 45 phút.", lang: vi }
+        - { id: h8w, text: "Điện thoại chắc chắn là nguyên nhân khiến thiếu niên ngủ kém.", lang: vi }
+        - { id: m4a, text: "Thiếu niên ngủ ít hơn 4 tiếng mỗi đêm vì dùng điện thoại.", lang: vi }
+        - { id: q0e, text: "1.200 thiếu niên đã ngừng dùng điện thoại trong ba tháng.", lang: vi }
+    answer:
+      correct_option_id: v2c
+    explanation:
+      vi: Bản tin nói người dùng hơn bốn tiếng ngủ ít hơn 45 phút. Bài cũng nhấn mạnh nghiên cứu không chứng minh điện thoại là nguyên nhân (does not prove), và người tham gia chỉ được theo dõi, không ngừng dùng điện thoại.
+    display_answer: "Thiếu niên dùng điện thoại hơn 4 tiếng/ngày ngủ trung bình ít hơn 45 phút."
+
+  - key: en:exercise:media-review-listen-attention-span
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:attention-span
+    prompt:
+      audio_asset_id: null
+      fallback_text: Since my digital detox, my attention span has got longer and my mental health has improved.
+      options:
+        - { id: k5r, text: "Từ khi \"cai\" thiết bị số, khả năng tập trung của tôi tốt hơn và sức khoẻ tinh thần đã cải thiện.", lang: vi }
+        - { id: p1j, text: "Từ khi \"cai\" thiết bị số, tôi mất tập trung hơn và hay lo lắng.", lang: vi }
+        - { id: d9y, text: "Tôi muốn \"cai\" thiết bị số để có thêm thời gian chăm sóc sức khoẻ.", lang: vi }
+        - { id: x3h, text: "Từ khi dùng ứng dụng sức khoẻ, tôi ngủ được lâu hơn.", lang: vi }
+    answer:
+      correct_option_id: k5r
+    explanation:
+      vi: Attention span has got longer là khả năng tập trung dài hơn (tốt hơn); mental health has improved là sức khoẻ tinh thần đã cải thiện. Since my digital detox là "từ khi cai thiết bị số".
+    display_answer: "Từ khi \"cai\" thiết bị số, khả năng tập trung của tôi tốt hơn và sức khoẻ tinh thần đã cải thiện."
+
+  - key: en:exercise:media-review-mcq-fact-or-opinion
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:prove-vs-suggest
+    prompt:
+      stem: Câu nào là Ý KIẾN của người viết blog, không phải sự thật từ nghiên cứu?
+      stem_lang: vi
+      options:
+        - { id: n7f, text: "Honestly, it was the best decision I've made this year.", lang: en }
+        - { id: g2u, text: "The researchers conducted an experiment with 1,200 participants.", lang: en }
+        - { id: b6s, text: "They found a link between late-night phone use and poor sleep.", lang: en }
+        - { id: w0k, text: "The study was published this week in a medical journal.", lang: en }
+    answer:
+      correct_option_id: n7f
+    explanation:
+      vi: Honestly và the best decision thể hiện cảm nhận cá nhân. Các câu còn lại mô tả nghiên cứu bằng số liệu và động từ đưa tin (conducted, found, was published).
+    display_answer: "Honestly, it was the best decision I've made this year."
+
+  - key: en:exercise:media-review-fill-which-who-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:non-defining-relative-clause
+    prompt:
+      template: "The researchers, {{b1}} are based in Singapore, tracked the participants' screen time, {{b2}} took three months."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Các nhà nghiên cứu, hiện làm việc ở Singapore, đã theo dõi thời gian dùng màn hình của người tham gia, việc này mất ba tháng."
+        - "Gợi ý: ô 1 chỉ người; ô 2 thay cho cả sự việc phía trước."
+    answer:
+      blanks:
+        b1: [who]
+        b2: [which]
+    known_wrong:
+      - answer: that
+        feedback_vi: Sau dấu phẩy không dùng that - dùng who (người) hoặc which (vật, sự việc).
+        error_tag: that_after_comma
+      - answer: what
+        feedback_vi: Thay cho cả sự việc phía trước là which, không phải what.
+        error_tag: sentential_which
+      - answer: whom
+        feedback_vi: Ô đầu là chủ ngữ của are based nên dùng who, không dùng whom.
+        error_tag: relative_whom
+    explanation:
+      vi: Ô 1 là thông tin phụ về người và làm chủ ngữ - who. Ô 2 thay cho cả việc theo dõi thời gian dùng màn hình - which.
+    display_answer: "The researchers, who are based in Singapore, tracked the participants' screen time, which took three months."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:media-review-fill-participles
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:perfect-participle-clause
+    prompt:
+      template: "{{b1}} (free) from the algorithm, I started reading again. {{b2}} {{b3}} (delete) every app, I suddenly had hours of free time."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [Freed]
+        b2: [Having]
+        b3: [deleted]
+    known_wrong:
+      - answer: Freeing
+        feedback_vi: Người viết được giải thoát (bị động) - dùng V3 freed.
+        error_tag: participle_active_passive
+      - answer: Had
+        feedback_vi: Mệnh đề phân từ không chia thì - dùng Having + V3.
+        error_tag: perfect_participle
+      - answer: delete
+        feedback_vi: Sau having phải là V3 - deleted.
+        error_tag: perfect_participle
+    explanation:
+      vi: "Freed from = được giải thoát khỏi (bị động, V3). Xoá ứng dụng xong rồi mới có thời gian rảnh - Having deleted. Chủ ngữ I khớp với cả hai mệnh đề phân từ."
+    display_answer: "Freed from the algorithm, I started reading again. Having deleted every app, I suddenly had hours of free time."
+
+  - key: en:exercise:media-review-fill-articles-uncountable
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:uncountable-information-advice
+    prompt:
+      template: "My {{b1}} is simple: technology isn't evil, but most of us {{b2}} it. Turn off notifications and keep your phone out of the bedroom."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [advice]
+        b2: [overuse]
+    known_wrong:
+      - answer: advices
+        feedback_vi: Advice không đếm được - không thêm -s.
+        error_tag: uncountable_plural
+      - answer: advise
+        feedback_vi: Advise là động từ. Sau my cần danh từ advice.
+        error_tag: word_form
+      - answer: underuse
+        feedback_vi: Under- là dùng chưa đủ - ngược ý. Dùng quá mức là overuse.
+        error_tag: prefix
+      - answer: misuse
+        feedback_vi: Misuse là dùng sai mục đích; người viết muốn nói dùng quá nhiều - overuse.
+        error_tag: prefix
+    explanation:
+      vi: My advice (danh từ không đếm được, đi với is). Dùng quá mức là over- + use; câu sau gợi ý cách dùng ít đi.
+    display_answer: "My advice is simple: technology isn't evil, but most of us overuse it. Turn off notifications and keep your phone out of the bedroom."
+
+  - key: en:exercise:media-review-translate-link-sleep
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:link-between
+    prompt:
+      source_text: Nghiên cứu cho thấy có mối liên hệ giữa thời gian dùng màn hình và giấc ngủ kém.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The study suggests that there is a link between screen time and poor sleep.
+        - The study suggests there is a link between screen time and poor sleep.
+        - The study shows that there is a link between screen time and poor sleep.
+        - The study shows there is a link between screen time and poor sleep.
+        - The study found that there is a link between screen time and poor sleep.
+        - The study found a link between screen time and poor sleep.
+        - The study suggests a link between screen time and poor sleep.
+        - The study shows a link between screen time and poor sleep.
+        - The study suggests that screen time is linked to poor sleep.
+        - The study shows that screen time is linked to poor sleep.
+        - The research suggests that there is a link between screen time and poor sleep.
+        - The research shows that there is a link between screen time and poor sleep.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The study suggests that there is a link of screen time and poor sleep.
+        feedback_vi: Mối liên hệ giữa A và B là a link between A and B.
+        error_tag: preposition
+      - answer: The study suggests that there is a link between the screen time and poor sleep.
+        feedback_vi: Screen time nói chung không có the.
+        error_tag: article_general
+      - answer: The study proves that screen time causes poor sleep.
+        feedback_vi: Câu gốc chỉ nói "có mối liên hệ", không nói chứng minh hay gây ra.
+        error_tag: reporting_verb
+    explanation:
+      vi: "\"Cho thấy\" là suggests / shows; \"mối liên hệ giữa A và B\" là a link between A and B. Screen time và poor sleep nói chung nên không có the."
+    display_answer: The study suggests that there is a link between screen time and poor sleep.
+
+  # ---------------- application ----------------
+  - key: en:exercise:media-review-translate-deleted-apps
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sentential-which
+    prompt:
+      source_text: Tôi đã xoá mọi ứng dụng mạng xã hội khỏi điện thoại, điều đó khiến bạn bè tôi rất ngạc nhiên.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I deleted every social media app from my phone, which really surprised my friends.
+        - I deleted all the social media apps from my phone, which really surprised my friends.
+        - I deleted all social media apps from my phone, which really surprised my friends.
+        - I deleted every social media app from my phone, which surprised my friends a lot.
+        - I deleted every social media app from my phone, which surprised my friends very much.
+        - I have deleted every social media app from my phone, which really surprised my friends.
+        - I've deleted all the social media apps from my phone, which really surprised my friends.
+        - I deleted every social media app from my phone, which made my friends very surprised.
+        - I deleted all the social media apps on my phone, which really surprised my friends.
+        - I deleted every social media app on my phone, which really surprised my friends.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I deleted every social media app from my phone, what really surprised my friends.
+        feedback_vi: "\"Điều đó\" thay cho cả câu là which, không phải what."
+        error_tag: sentential_which
+      - answer: I deleted every social media app from my phone, that really surprised my friends.
+        feedback_vi: Sau dấu phẩy không dùng that.
+        error_tag: that_after_comma
+      - answer: I deleted every social media apps from my phone, which really surprised my friends.
+        feedback_vi: Every đi với danh từ số ít - every social media app.
+        error_tag: every_singular
+    explanation:
+      vi: "\"Điều đó\" thay cho cả việc xoá ứng dụng nên dùng \", which…\". Every + danh từ số ít (every app), còn all + số nhiều (all the apps)."
+    display_answer: I deleted every social media app from my phone, which really surprised my friends.
+
+  - key: en:exercise:media-review-translate-blog-advice
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:digital-detox
+    prompt:
+      source_text: You don't need a complete digital detox - even keeping your phone out of the bedroom can help.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bạn không cần "cai" thiết bị số hoàn toàn - chỉ cần để điện thoại ngoài phòng ngủ cũng có ích.
+        - Bạn không cần cai thiết bị số hoàn toàn - chỉ cần để điện thoại ngoài phòng ngủ cũng có ích.
+        - Bạn không cần cai hẳn thiết bị số - chỉ cần để điện thoại ngoài phòng ngủ cũng có thể giúp ích.
+        - Bạn không cần cai thiết bị số hoàn toàn - ngay cả việc để điện thoại ngoài phòng ngủ cũng có thể giúp ích.
+        - Bạn không cần ngừng dùng thiết bị số hoàn toàn - chỉ cần để điện thoại ngoài phòng ngủ cũng có ích.
+        - Bạn không cần bỏ hẳn điện thoại - chỉ cần không để điện thoại trong phòng ngủ cũng có ích.
+        - Bạn không cần cai thiết bị số hoàn toàn - chỉ cần không mang điện thoại vào phòng ngủ cũng có ích.
+        - Bạn không cần cai thiết bị số hoàn toàn - chỉ cần không để điện thoại trong phòng ngủ cũng giúp ích được.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bạn cần cai thiết bị số hoàn toàn và để điện thoại ngoài phòng ngủ.
+        feedback_vi: Câu gốc nói KHÔNG cần cai hoàn toàn (don't need); even… can help là "chỉ… thôi cũng có ích".
+        error_tag: meaning
+    explanation:
+      vi: "Digital detox là \"cai\" thiết bị số. Even + V-ing … can help là \"ngay cả / chỉ cần… cũng có ích\"; keep your phone out of the bedroom là để điện thoại ngoài phòng ngủ."
+    display_answer: Bạn không cần "cai" thiết bị số hoàn toàn - chỉ cần để điện thoại ngoài phòng ngủ cũng có ích.
+
+  - key: en:exercise:media-review-order-mental-health
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:mental-health
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Dành ít thời gian trên mạng hơn đã giúp sức khoẻ tinh thần của tôi tốt lên.\""
+      tokens:
+        - { id: h-health, text: health }
+        - { id: h-online, text: online }
+        - { id: h-has, text: has }
+        - { id: h-spending, text: Spending }
+        - { id: h-my, text: my }
+        - { id: h-less, text: less }
+        - { id: h-improved, text: improved }
+        - { id: h-time, text: time }
+        - { id: h-mental, text: mental }
+        - { id: h-the, text: the }
+    answer:
+      orders:
+        - [h-spending, h-less, h-time, h-online, h-has, h-improved, h-my, h-mental, h-health]
+    explanation:
+      vi: Chủ ngữ là cụm V-ing Spending less time online (động từ chia số ít has). Sức khoẻ tinh thần của tôi là my mental health - đã có my nên không cần the.
+    display_answer: Spending less time online has improved my mental health.
+
+  - key: en:exercise:media-review-mcq-situation-comment
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:zero-article-general
+    prompt:
+      stem: Bạn viết bình luận dưới bài blog, đồng ý một phần với tác giả. Câu nào đúng ngữ pháp và đúng tinh thần bản tin khoa học?
+      stem_lang: vi
+      options:
+        - { id: r8t, text: "Great post! Research suggests that screen time is linked to poor sleep, although it doesn't prove that phones are the only cause.", lang: en }
+        - { id: e5n, text: "Great post! The researches prove that the screen time causes poor sleep.", lang: en }
+        - { id: l2g, text: "Great post! A research suggests that screen time is linked to poor sleep, which prove phones are bad.", lang: en }
+        - { id: i6c, text: "Great post! Researches suggest that the screen time is linked to the poor sleep.", lang: en }
+    answer:
+      correct_option_id: r8t
+    explanation:
+      vi: Research không đếm được (không a, không -s), screen time nói chung không có the, và nghiên cứu chỉ suggest - không prove. Phương án đúng vừa đúng ngữ pháp vừa phản ánh chính xác giới hạn của nghiên cứu.
+    display_answer: "Great post! Research suggests that screen time is linked to poor sleep, although it doesn't prove that phones are the only cause."

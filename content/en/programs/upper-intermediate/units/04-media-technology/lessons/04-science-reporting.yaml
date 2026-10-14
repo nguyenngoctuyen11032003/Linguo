@@ -1,0 +1,410 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:science-reporting
+order_index: 4
+level: b2
+title:
+  vi: "A study found that… - đọc tin khoa học & nhận diện tin giả"
+objectives:
+  - vi: Hiểu và dùng ngôn ngữ đưa tin khoa học - a study found that, researchers claim, evidence suggests, conduct an experiment.
+  - vi: Phân biệt mức độ chắc chắn của prove / show / suggest / claim và hiểu "có liên hệ" khác "là nguyên nhân".
+  - vi: Nói về tin giả, thông tin sai lệch và cách kiểm chứng nguồn tin.
+estimated_minutes: 20
+skills: [reading, vocabulary, writing]
+prerequisites: [en:lesson:articles-word-formation]
+items:
+  - item: en:item:a-study-found-that
+  - item: en:item:researchers-claim
+  - item: en:item:evidence-suggests
+  - item: en:item:conduct-an-experiment
+  - item: en:item:prove-vs-suggest
+  - item: en:item:link-between
+  - item: en:item:participant
+  - item: en:item:fake-news
+  - item: en:item:misinformation
+  - item: en:item:fact-check
+  - item: en:item:reliable-source
+  - item: en:item:misleading
+    role: reuse
+  - item: en:item:unreliable
+    role: reuse
+  - item: en:item:uncountable-information-advice
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được một bản tin khoa học bằng tiếng Anh, nhận ra khi nào tiêu đề đang phóng đại, và tự tóm tắt một nghiên cứu bằng vài câu chuẩn văn báo chí.
+  - type: explain
+    text:
+      vi: "Tin khoa học thường mở đầu bằng A (new) study found / shows that… rồi mô tả cách làm: researchers conducted an experiment with 500 participants. Study đếm được (a study, two studies), còn research và evidence thì không."
+  - type: explain
+    text:
+      vi: "Hãy để ý động từ tường thuật vì nó cho biết kết luận chắc đến đâu: prove (chứng minh) > show (cho thấy) > suggest (gợi ý) > claim (tuyên bố, chưa kiểm chứng). Tiêu đề giật gân hay đổi suggest thành prove."
+  - type: explain
+    text:
+      vi: "A link between A and B chỉ là mối liên hệ, chưa chắc A gây ra B. Tiếng Việt hay viết \"X gây ra Y\" cho mọi nghiên cứu, nhưng tin khoa học cẩn thận sẽ viết X is linked to Y."
+  - type: deep_explain
+    text:
+      vi: "Fake news, misinformation, evidence, research, information đều không đếm được: fake news spreads (không phải spread), much evidence, a piece of misinformation. Muốn nói \"một tin giả\", dùng a fake news story. Trước khi chia sẻ, người đọc cẩn thận sẽ fact-check: nguồn có đáng tin không (a reliable source), có bao nhiêu người tham gia, nghiên cứu đã được công bố ở đâu."
+  - type: example
+    target: A new study found that people who sleep less than six hours a night are more likely to catch a cold.
+    target_lang: en
+    translation:
+      vi: Một nghiên cứu mới phát hiện rằng những người ngủ dưới sáu tiếng mỗi đêm dễ bị cảm lạnh hơn.
+    note:
+      vi: "A study found that + mệnh đề - cách mở đầu tin khoa học phổ biến nhất."
+  - type: example
+    target: The researchers conducted an experiment with 300 participants over six months.
+    target_lang: en
+    translation:
+      vi: Các nhà nghiên cứu đã tiến hành một thí nghiệm với 300 người tham gia trong sáu tháng.
+    note:
+      vi: Conduct / carry out an experiment - không nói "make an experiment".
+  - type: example
+    target: Evidence suggests that there is a link between social media use and anxiety, but it does not prove that one causes the other.
+    target_lang: en
+    translation:
+      vi: Bằng chứng cho thấy có mối liên hệ giữa việc dùng mạng xã hội và chứng lo âu, nhưng nó không chứng minh được cái này gây ra cái kia.
+    note:
+      vi: Suggest (gợi ý, có thể) yếu hơn prove (chứng minh).
+  - type: example
+    target: Fake news spreads quickly, so always fact-check a story before you share it.
+    target_lang: en
+    translation:
+      vi: Tin giả lan nhanh, nên hãy luôn kiểm chứng một câu chuyện trước khi chia sẻ.
+    note:
+      vi: Fake news không đếm được, động từ chia số ít - spreads.
+  - type: common_mistake
+    wrong: A research found that coffee is good for your heart.
+    right: A study found that coffee is good for your heart.
+    target_lang: en
+    note:
+      vi: Research không đếm được nên không đi với a. Muốn nói "một nghiên cứu", dùng a study hoặc a piece of research.
+  - type: common_mistake
+    wrong: Scientists made an experiment with 200 students.
+    right: Scientists conducted an experiment with 200 students.
+    target_lang: en
+    note:
+      vi: Thí nghiệm đi với conduct hoặc carry out (hoặc do trong văn nói), không đi với make.
+  - type: common_mistake
+    wrong: There are many evidences that the drug works.
+    right: There is a lot of evidence that the drug works.
+    target_lang: en
+    note:
+      vi: Evidence không đếm được - không có -s, dùng a lot of / much và động từ số ít (there is).
+  - type: summary
+    points:
+      - vi: "Mở đầu tin: A study found / shows that…; Researchers claim that…; Evidence suggests that…"
+      - vi: "Mô tả nghiên cứu: conduct / carry out an experiment, participants, over six months."
+      - vi: "Mức độ chắc chắn: prove > show > suggest > claim."
+      - vi: "A link between A and B / be linked to - liên hệ chưa chắc là nguyên nhân."
+      - vi: "Không đếm được: research, evidence, information, fake news, misinformation."
+      - vi: "Kiểm chứng: fact-check a story, check whether it comes from a reliable source."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:science-mcq-suggest-vs-prove
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:prove-vs-suggest
+    prompt:
+      stem: "Bản tin viết: \"The study suggests that green tea may reduce stress.\" Tiêu đề nào phản ánh ĐÚNG nghiên cứu?"
+      stem_lang: vi
+      options:
+        - { id: q2h, text: "Trà xanh có thể giúp giảm căng thẳng, theo một nghiên cứu mới", lang: vi }
+        - { id: d7c, text: "Khoa học chứng minh: trà xanh chữa khỏi căng thẳng", lang: vi }
+        - { id: b4y, text: "Nghiên cứu khẳng định trà xanh gây căng thẳng", lang: vi }
+        - { id: m9o, text: "Trà xanh chắc chắn giảm căng thẳng cho mọi người", lang: vi }
+    answer:
+      correct_option_id: q2h
+    explanation:
+      vi: Suggest và may cho thấy kết luận chỉ là "có thể". Các tiêu đề dùng "chứng minh", "chắc chắn" đã phóng đại; tiêu đề "gây căng thẳng" thì sai nghĩa.
+    display_answer: "Trà xanh có thể giúp giảm căng thẳng, theo một nghiên cứu mới"
+
+  - key: en:exercise:science-listen-conducted-experiment
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:conduct-an-experiment
+    prompt:
+      audio_asset_id: null
+      fallback_text: The team conducted an experiment in which half of the participants stopped using social media for a month.
+      options:
+        - { id: w3k, text: "Nhóm nghiên cứu tiến hành một thí nghiệm, trong đó một nửa số người tham gia ngừng dùng mạng xã hội trong một tháng.", lang: vi }
+        - { id: i8f, text: "Nhóm nghiên cứu dùng mạng xã hội để tìm người tham gia thí nghiệm trong một tháng.", lang: vi }
+        - { id: z1u, text: "Một nửa số người tham gia đã bỏ thí nghiệm sau một tháng.", lang: vi }
+        - { id: c6p, text: "Nhóm nghiên cứu ngừng thí nghiệm vì người tham gia dùng mạng xã hội quá nhiều.", lang: vi }
+    answer:
+      correct_option_id: w3k
+    explanation:
+      vi: Conducted an experiment là "tiến hành một thí nghiệm"; in which (trong đó) mở ra chi tiết - một nửa người tham gia ngừng dùng mạng xã hội một tháng.
+    display_answer: "Nhóm nghiên cứu tiến hành một thí nghiệm, trong đó một nửa số người tham gia ngừng dùng mạng xã hội trong một tháng."
+
+  - key: en:exercise:science-fill-study-found-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:a-study-found-that
+    prompt:
+      template: "A recent {{b1}} {{b2}} that teenagers who use their phones at night sleep an hour less."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Một nghiên cứu gần đây phát hiện rằng những thiếu niên dùng điện thoại vào ban đêm ngủ ít hơn một tiếng."
+        - "Gợi ý: danh từ đếm được s… và quá khứ của find."
+    answer:
+      blanks:
+        b1: [study]
+        b2: [found, showed]
+    known_wrong:
+      - answer: research
+        feedback_vi: Research không đếm được nên không đi với a. Dùng a study.
+        error_tag: uncountable_article
+      - answer: finded
+        feedback_vi: Find là động từ bất quy tắc - find, found, found.
+        error_tag: irregular_verb
+      - answer: founded
+        feedback_vi: Founded là quá khứ của found (thành lập). Quá khứ của find là found.
+        error_tag: irregular_verb
+    explanation:
+      vi: A recent + danh từ đếm được số ít - study. "Phát hiện rằng" là found that (quá khứ của find); showed that cũng được.
+    display_answer: A recent study found that teenagers who use their phones at night sleep an hour less.
+
+  - key: en:exercise:science-order-fact-check
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:fact-check
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Hãy luôn kiểm chứng một câu chuyện trước khi bạn chia sẻ nó.\""
+      tokens:
+        - { id: f-share, text: share }
+        - { id: f-a, text: a }
+        - { id: f-always, text: Always }
+        - { id: f-it, text: it }
+        - { id: f-before, text: before }
+        - { id: f-story, text: story }
+        - { id: f-you, text: you }
+        - { id: f-fact, text: fact-check }
+    answer:
+      orders:
+        - [f-always, f-fact, f-a, f-story, f-before, f-you, f-share, f-it]
+    explanation:
+      vi: Câu mệnh lệnh bắt đầu bằng Always + động từ fact-check. Mệnh đề thời gian before you share it đứng cuối câu.
+    display_answer: Always fact-check a story before you share it.
+
+  - key: en:exercise:science-mcq-link-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:link-between
+    prompt:
+      stem: "\"Scientists have found a link between poor sleep and lower grades.\" Câu này cho biết điều gì?"
+      stem_lang: vi
+      options:
+        - { id: y5s, text: "Ngủ kém và điểm thấp có liên quan với nhau, nhưng chưa chắc cái này gây ra cái kia.", lang: vi }
+        - { id: r0b, text: "Các nhà khoa học đã chứng minh ngủ kém gây ra điểm thấp.", lang: vi }
+        - { id: k4n, text: "Học sinh điểm thấp thường ngủ nhiều hơn.", lang: vi }
+        - { id: e2t, text: "Các nhà khoa học không tìm thấy mối liên hệ nào.", lang: vi }
+    answer:
+      correct_option_id: y5s
+    explanation:
+      vi: A link between A and B chỉ là mối liên hệ (hai thứ hay đi cùng nhau). Muốn nói "gây ra", tiếng Anh phải dùng cause hoặc prove that… causes.
+    display_answer: "Ngủ kém và điểm thấp có liên quan với nhau, nhưng chưa chắc cái này gây ra cái kia."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:science-fill-evidence-suggests
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:evidence-suggests
+    prompt:
+      template: "There is growing {{b1}} that screen time affects young children's language skills, but more {{b2}} is needed."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [evidence]
+        b2: [research]
+    known_wrong:
+      - answer: evidences
+        feedback_vi: Evidence không đếm được - không thêm -s.
+        error_tag: uncountable_plural
+      - answer: researches
+        feedback_vi: Research không đếm được - không thêm -s (more research is needed).
+        error_tag: uncountable_plural
+      - answer: proof
+        feedback_vi: Proof là bằng chứng chắc chắn, mâu thuẫn với "growing" và "more research is needed". Tin khoa học dùng evidence.
+        error_tag: word_choice
+      - answer: study
+        feedback_vi: Study đếm được nên cần a hoặc số nhiều (more studies are needed). Với is needed, dùng research.
+        error_tag: uncountable_article
+    explanation:
+      vi: Hai chỗ trống đều là danh từ không đếm được, đi với động từ số ít (there is, is needed). Growing evidence là "ngày càng nhiều bằng chứng"; more research is needed là "cần nghiên cứu thêm".
+    display_answer: "There is growing evidence that screen time affects young children's language skills, but more research is needed."
+
+  - key: en:exercise:science-fill-participants
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:participant
+    prompt:
+      template: "The researchers {{b1}} an experiment with 500 {{b2}}, half of whom were asked to stop using social media."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [conducted, "carried out", ran, did]
+        b2: [participants, volunteers, people]
+    known_wrong:
+      - answer: made
+        feedback_vi: Thí nghiệm đi với conduct / carry out, không đi với make.
+        error_tag: collocation
+      - answer: participators
+        feedback_vi: Người tham gia nghiên cứu là participants.
+        error_tag: word_form
+      - answer: participant
+        feedback_vi: 500 người nên cần số nhiều - participants.
+        error_tag: plural
+    explanation:
+      vi: Conduct / carry out an experiment là cụm cố định; quá khứ là conducted. Người tham gia nghiên cứu là participants, và half of whom (một nửa trong số họ) dùng whom vì đứng sau giới từ.
+    display_answer: The researchers conducted an experiment with 500 participants, half of whom were asked to stop using social media.
+
+  - key: en:exercise:science-translate-fake-news-spreads
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:fake-news
+    prompt:
+      source_text: Tin giả lan nhanh hơn tin thật trên mạng xã hội.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Fake news spreads faster than real news on social media.
+        - Fake news spreads more quickly than real news on social media.
+        - Fake news spreads faster than true news on social media.
+        - Fake news travels faster than real news on social media.
+        - On social media, fake news spreads faster than real news.
+        - On social media fake news spreads more quickly than real news.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Fake news spread faster than real news on social media.
+        feedback_vi: News không đếm được và đi với động từ số ít - spreads.
+        error_tag: subject_verb_agreement
+      - answer: Fake news spreads faster than real news on the social media.
+        feedback_vi: Social media nói chung không có the - on social media.
+        error_tag: article
+      - answer: The fake news spreads faster than the real news on social media.
+        feedback_vi: Nói chung về tin giả, tin thật thì không dùng the.
+        error_tag: article_general
+    explanation:
+      vi: "News trông như số nhiều nhưng là danh từ không đếm được, nên động từ là spreads. Nói chung chung nên không có the; on social media cũng không có the."
+    display_answer: Fake news spreads faster than real news on social media.
+
+  # ---------------- application ----------------
+  - key: en:exercise:science-translate-researchers-claim
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:researchers-claim
+    prompt:
+      source_text: Các nhà nghiên cứu khẳng định loại pin mới có thể dùng được một tuần, nhưng chưa có bằng chứng nào được công bố.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Researchers claim that the new battery can last a week, but no evidence has been published yet.
+        - Researchers claim that the new battery can last for a week, but no evidence has been published yet.
+        - Researchers claim the new battery can last a week, but no evidence has been published yet.
+        - Researchers claim the new battery can last for a week, but no evidence has been published yet.
+        - Researchers claim that the new battery could last a week, but no evidence has been published yet.
+        - Researchers claim that the new battery could last for a week, but no evidence has been published yet.
+        - The researchers claim that the new battery can last a week, but no evidence has been published yet.
+        - The researchers claim that the new battery can last for a week, but no evidence has been published yet.
+        - Researchers claim that the new battery can last a week, but no evidence has been published.
+        - Researchers claim that the new battery can last for a week, but no evidence has been published.
+        - Researchers claim that the new battery can last a week, but they haven't published any evidence yet.
+        - Researchers claim that the new battery can last for a week, but they haven't published any evidence yet.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Researchers claim that the new battery can last a week, but no evidences have been published yet.
+        feedback_vi: Evidence không đếm được - no evidence has been published.
+        error_tag: uncountable_plural
+      - answer: Researchers prove that the new battery can last a week, but no evidence has been published yet.
+        feedback_vi: Chưa có bằng chứng thì không thể "chứng minh" (prove). Khẳng định chưa kiểm chứng là claim.
+        error_tag: reporting_verb
+      - answer: Researchers claim to that the new battery can last a week, but no evidence has been published yet.
+        feedback_vi: Claim + that + mệnh đề, không có to.
+        error_tag: reporting_pattern
+    explanation:
+      vi: "Claim (khẳng định) phù hợp vì điều đó chưa được kiểm chứng. Evidence không đếm được nên dùng no evidence has been published; câu bị động hiện tại hoàn thành vì chưa công bố tính đến giờ."
+    display_answer: Researchers claim that the new battery can last a week, but no evidence has been published yet.
+
+  - key: en:exercise:science-translate-misinformation
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:misinformation
+    prompt:
+      source_text: Check whether the information comes from a reliable source before you share it - a lot of misinformation looks real.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hãy kiểm tra xem thông tin có đến từ một nguồn đáng tin cậy không trước khi chia sẻ - rất nhiều thông tin sai lệch trông như thật.
+        - Hãy kiểm tra xem thông tin có đến từ nguồn đáng tin cậy không trước khi bạn chia sẻ - nhiều thông tin sai lệch trông như thật.
+        - Hãy kiểm tra xem thông tin có đến từ nguồn đáng tin không trước khi chia sẻ - nhiều thông tin sai lệch trông rất thật.
+        - Kiểm tra xem thông tin có đến từ một nguồn đáng tin cậy không trước khi chia sẻ - rất nhiều thông tin sai lệch trông giống thật.
+        - Trước khi chia sẻ, hãy kiểm tra xem thông tin có đến từ nguồn đáng tin cậy không - rất nhiều thông tin sai lệch trông như thật.
+        - Trước khi chia sẻ, hãy kiểm tra xem thông tin có đến từ một nguồn đáng tin không - nhiều thông tin sai trông như thật.
+        - Hãy kiểm tra xem thông tin có từ nguồn đáng tin cậy không trước khi chia sẻ - nhiều tin sai lệch trông như thật.
+        - Hãy kiểm tra nguồn tin có đáng tin cậy không trước khi chia sẻ - rất nhiều thông tin sai lệch trông như thật.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hãy chia sẻ thông tin từ một nguồn đáng tin cậy - rất nhiều thông tin sai lệch trông như thật.
+        feedback_vi: Câu gốc khuyên kiểm tra nguồn TRƯỚC khi chia sẻ (check whether… before you share it).
+        error_tag: meaning
+    explanation:
+      vi: "Check whether… là \"kiểm tra xem… có… không\"; a reliable source là nguồn đáng tin cậy. Misinformation là thông tin sai lệch, looks real là trông như thật."
+    display_answer: Hãy kiểm tra xem thông tin có đến từ một nguồn đáng tin cậy không trước khi chia sẻ - rất nhiều thông tin sai lệch trông như thật.
+
+  - key: en:exercise:science-mcq-situation-headline
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:reliable-source
+    prompt:
+      stem: "Bạn của bạn chia sẻ tiêu đề \"Scientists PROVE phones cause cancer!\" từ một trang web nặc danh. Bạn trả lời thế nào cho hợp lý nhất?"
+      stem_lang: vi
+      options:
+        - { id: j6v, text: "I'm not sure that's a reliable source. Most studies only suggest a link - have you fact-checked it?", lang: en }
+        - { id: o3m, text: "Wow, the research proves it. I'm going to share it with everyone right now.", lang: en }
+        - { id: s1z, text: "That's a reliable source because it has a lot of evidences.", lang: en }
+        - { id: u7w, text: "A research found it, so it must be a true information.", lang: en }
+    answer:
+      correct_option_id: j6v
+    explanation:
+      vi: Trang nặc danh là nguồn không đáng tin, và tiêu đề đã đổi suggest thành prove. Các phương án còn lại vừa thiếu cẩn trọng vừa sai ngữ pháp (evidences, a research, a true information).
+    display_answer: "I'm not sure that's a reliable source. Most studies only suggest a link - have you fact-checked it?"

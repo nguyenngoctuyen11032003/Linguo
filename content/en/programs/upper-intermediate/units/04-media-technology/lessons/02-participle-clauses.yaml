@@ -1,0 +1,398 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:participle-clauses
+order_index: 2
+level: b2
+title:
+  vi: "Having finished…, Built in 1990… - mệnh đề phân từ"
+objectives:
+  - vi: Rút gọn mệnh đề cùng chủ ngữ bằng V-ing, Having + V3 và V3.
+  - vi: Rút gọn mệnh đề quan hệ (a study published…, users living in…).
+  - vi: Tránh lỗi phân từ "treo" (dangling participle) và nói về an ninh mạng, quyền riêng tư.
+estimated_minutes: 20
+skills: [grammar, vocabulary, writing]
+prerequisites: [en:lesson:non-defining-relatives]
+items:
+  - item: en:item:present-participle-clause
+  - item: en:item:perfect-participle-clause
+  - item: en:item:past-participle-clause
+  - item: en:item:dangling-participle
+  - item: en:item:reduced-relative-participle
+  - item: en:item:privacy
+  - item: en:item:data-breach
+  - item: en:item:cybersecurity
+  - item: en:item:hacker
+  - item: en:item:personal-data
+  - item: en:item:algorithm
+  - item: en:item:launch-verb
+  - item: en:item:non-defining-relative-clause
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn viết được những câu gọn kiểu báo chí như \"Having discovered the data breach, the company warned its customers\" và biết kiểm tra để không mắc lỗi phân từ \"treo\"."
+  - type: explain
+    text:
+      vi: "Khi hai mệnh đề có cùng chủ ngữ, bạn có thể bỏ chủ ngữ và liên từ ở một mệnh đề rồi đổi động từ thành phân từ. As she felt tired, she went to bed → Feeling tired, she went to bed."
+  - type: explain
+    text:
+      vi: "Chọn dạng theo nghĩa: V-ing là chủ động hoặc xảy ra cùng lúc (Feeling tired…); Having + V3 là việc đã xong trước (Having finished…); V3 là bị động (Built in 1990…, Shocked by the news…)."
+  - type: explain
+    text:
+      vi: "Tiếng Việt bỏ chủ ngữ rất tự do (\"Bước vào phòng, màn hình tắt hết\"), nhưng tiếng Anh bắt buộc người làm hành động phân từ phải là chủ ngữ của mệnh đề chính. Nếu không, câu bị lỗi phân từ treo và nghe rất buồn cười."
+  - type: deep_explain
+    text:
+      vi: "Phân từ cũng rút gọn được mệnh đề quan hệ: people who use the app → people using the app; a report which was published in May → a report published in May. Cách này rất phổ biến trong tin tức và văn khoa học. Phủ định đặt not trước phân từ: Not knowing the password, I couldn't log in."
+  - type: example
+    target: Having discovered the data breach, the company immediately warned its customers.
+    target_lang: en
+    translation:
+      vi: Sau khi phát hiện vụ rò rỉ dữ liệu, công ty lập tức cảnh báo khách hàng.
+    note:
+      vi: Having + V3 - phát hiện xong rồi mới cảnh báo; chủ ngữ (the company) là bên phát hiện.
+  - type: example
+    target: Launched in 2020, the app now has ten million users.
+    target_lang: en
+    translation:
+      vi: Ra mắt năm 2020, ứng dụng này giờ có mười triệu người dùng.
+    note:
+      vi: V3 (launched) mang nghĩa bị động - ứng dụng được ra mắt.
+  - type: example
+    target: Worried about her privacy, Mai stopped posting photos of her children.
+    target_lang: en
+    translation:
+      vi: Lo lắng cho quyền riêng tư, Mai thôi đăng ảnh các con.
+    note:
+      vi: Worried là tính từ dạng V3, mô tả trạng thái của chủ ngữ Mai.
+  - type: example
+    target: Hackers using fake emails stole the personal data of thousands of students.
+    target_lang: en
+    translation:
+      vi: Những tin tặc dùng email giả đã đánh cắp dữ liệu cá nhân của hàng nghìn sinh viên.
+    note:
+      vi: Using fake emails = who used fake emails (rút gọn mệnh đề quan hệ).
+  - type: common_mistake
+    wrong: Walking into the office, the screens were all black.
+    right: Walking into the office, I saw that the screens were all black.
+    target_lang: en
+    note:
+      vi: Màn hình không thể tự đi vào văn phòng. Chủ ngữ ngay sau dấu phẩy phải là người thực hiện hành động walking.
+  - type: common_mistake
+    wrong: Building in 1990, the library needs repairs.
+    right: Built in 1990, the library needs repairs.
+    target_lang: en
+    note:
+      vi: Thư viện được xây (bị động) nên dùng V3 built, không dùng V-ing.
+  - type: common_mistake
+    wrong: Having finish the course, she got a job in cybersecurity.
+    right: Having finished the course, she got a job in cybersecurity.
+    target_lang: en
+    note:
+      vi: Sau having luôn là V3 - finished, không phải finish.
+  - type: summary
+    points:
+      - vi: "Cùng chủ ngữ mới được rút gọn; chủ ngữ mệnh đề chính phải là người/vật làm hành động phân từ."
+      - vi: "V-ing: chủ động, cùng lúc hoặc lý do (Feeling tired, …)."
+      - vi: "Having + V3: việc xong trước (Having finished, …)."
+      - vi: "V3: bị động (Built in 1990, …; Shocked by the news, …)."
+      - vi: "Rút gọn mệnh đề quan hệ: users living in…, a study published in…"
+      - vi: "Từ vựng: privacy, data breach, cybersecurity, hacker, personal data, algorithm, launch."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:participle-mcq-dangling
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:dangling-participle
+    prompt:
+      stem: Câu nào KHÔNG mắc lỗi phân từ treo?
+      stem_lang: vi
+      options:
+        - { id: f2n, text: "Opening the email, I realised it was a scam.", lang: en }
+        - { id: q8r, text: "Opening the email, it was clearly a scam.", lang: en }
+        - { id: z5t, text: "Opening the email, my laptop got a virus.", lang: en }
+        - { id: a7c, text: "Opening the email, the link looked strange.", lang: en }
+    answer:
+      correct_option_id: f2n
+    explanation:
+      vi: Chỉ ở câu đúng, chủ ngữ sau dấu phẩy (I) mới là người mở email. Ở các câu còn lại, it, my laptop hay the link không thể tự mở email.
+    display_answer: "Opening the email, I realised it was a scam."
+
+  - key: en:exercise:participle-listen-having-read
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:perfect-participle-clause
+    prompt:
+      audio_asset_id: null
+      fallback_text: Having read the privacy policy, I decided not to download the app.
+      options:
+        - { id: n4w, text: "Sau khi đọc chính sách quyền riêng tư, tôi quyết định không tải ứng dụng.", lang: vi }
+        - { id: j1e, text: "Tôi quyết định tải ứng dụng rồi mới đọc chính sách quyền riêng tư.", lang: vi }
+        - { id: u6y, text: "Vì không đọc chính sách quyền riêng tư nên tôi đã tải ứng dụng.", lang: vi }
+        - { id: c3g, text: "Tôi vừa đọc chính sách quyền riêng tư vừa tải ứng dụng.", lang: vi }
+    answer:
+      correct_option_id: n4w
+    explanation:
+      vi: Having read cho biết việc đọc xong trước, rồi mới quyết định. Not to download là quyết định không tải, nên các phương án nói đã tải đều sai.
+    display_answer: "Sau khi đọc chính sách quyền riêng tư, tôi quyết định không tải ứng dụng."
+
+  - key: en:exercise:participle-fill-built-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:past-participle-clause
+    prompt:
+      template: "{{b1}} in 1990, the old server room is now a café."
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Được xây năm 1990, phòng máy chủ cũ giờ thành quán cà phê."
+        - "Gợi ý: phòng được xây (bị động) - dạng V3 của build."
+    answer:
+      blanks:
+        b1: [Built]
+    known_wrong:
+      - answer: Building
+        feedback_vi: Phòng được xây chứ không tự xây - nghĩa bị động cần V3 built.
+        error_tag: participle_active_passive
+      - answer: Builded
+        feedback_vi: Build là động từ bất quy tắc - build, built, built.
+        error_tag: irregular_verb
+      - answer: Having built
+        feedback_vi: Having built là chủ động (đã xây cái gì đó). Căn phòng được xây nên dùng built.
+        error_tag: participle_active_passive
+    explanation:
+      vi: Chủ ngữ (the old server room) chịu tác động - được xây - nên dùng phân từ quá khứ built. V-ing sẽ hiểu là căn phòng tự đi xây.
+    display_answer: Built in 1990, the old server room is now a café.
+
+  - key: en:exercise:participle-order-feeling-tired
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:present-participle-clause
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Thấy mệt, cô ấy tắt điện thoại.\""
+      tokens:
+        - { id: t-off, text: off }
+        - { id: t-she, text: she }
+        - { id: t-phone, text: phone }
+        - { id: t-feeling, text: "Feeling" }
+        - { id: t-her, text: her }
+        - { id: t-tired, text: "tired," }
+        - { id: t-turned, text: turned }
+        - { id: t-felt, text: Felt }
+    answer:
+      orders:
+        - [t-feeling, t-tired, t-she, t-turned, t-off, t-her, t-phone]
+        - [t-feeling, t-tired, t-she, t-turned, t-her, t-phone, t-off]
+    explanation:
+      vi: Cô ấy tự cảm thấy mệt (chủ động) nên dùng Feeling; Felt là thừa. Turn off là cụm động từ tách được - turned off her phone hoặc turned her phone off.
+    display_answer: Feeling tired, she turned off her phone.
+
+  - key: en:exercise:participle-mcq-reduced-relative
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:reduced-relative-participle
+    prompt:
+      stem: "Câu nào có nghĩa giống \"A study which was published last month links screen time to poor sleep.\"?"
+      stem_lang: vi
+      options:
+        - { id: v9k, text: "A study published last month links screen time to poor sleep.", lang: en }
+        - { id: b2x, text: "A study publishing last month links screen time to poor sleep.", lang: en }
+        - { id: h6m, text: "A study was published last month links screen time to poor sleep.", lang: en }
+        - { id: i0d, text: "A study published last month, links screen time to poor sleep.", lang: en }
+    answer:
+      correct_option_id: v9k
+    explanation:
+      vi: Bỏ which was và giữ V3 published (bị động). Publishing là chủ động; giữ lại was thì câu có hai động từ chia; còn dấu phẩy tách chủ ngữ và động từ chính là sai.
+    display_answer: "A study published last month links screen time to poor sleep."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:participle-fill-having-changed
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:perfect-participle-clause
+    prompt:
+      template: "{{b1}} {{b2}} all my passwords after the data breach, I felt much safer."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [Having]
+        b2: [changed]
+    known_wrong:
+      - answer: change
+        feedback_vi: Sau having phải là V3 - changed.
+        error_tag: perfect_participle
+      - answer: Had
+        feedback_vi: Mệnh đề phân từ không có thì - dùng Having, không dùng Had.
+        error_tag: perfect_participle
+      - answer: Changing
+        feedback_vi: Việc đổi mật khẩu xong trước rồi mới thấy an toàn - cần Having + V3.
+        error_tag: perfect_participle
+    explanation:
+      vi: Đổi xong mật khẩu rồi mới thấy an toàn, nên dùng Having + V3 (changed). Chủ ngữ I vừa đổi mật khẩu vừa cảm thấy an toàn, nên rút gọn được.
+    display_answer: Having changed all my passwords after the data breach, I felt much safer.
+
+  - key: en:exercise:participle-fill-hackers-using
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:hacker
+    prompt:
+      template: "{{b1}} {{b2}} fake emails stole the personal data of thousands of students."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Hackers]
+        b2: [using]
+    known_wrong:
+      - answer: used
+        feedback_vi: Tin tặc là người dùng email (chủ động) nên rút gọn bằng V-ing - using.
+        error_tag: participle_active_passive
+      - answer: Hacks
+        feedback_vi: Hack là hành động; người làm là hacker, số nhiều hackers.
+        error_tag: word_form
+      - answer: Hacker
+        feedback_vi: Động từ stole không cho biết số, nhưng không có mạo từ nên cần số nhiều hackers.
+        error_tag: article
+    explanation:
+      vi: "\"Những tin tặc dùng email giả\" = hackers who used fake emails, rút gọn thành hackers using fake emails. V-ing vì tin tặc chủ động dùng email."
+    display_answer: Hackers using fake emails stole the personal data of thousands of students.
+
+  - key: en:exercise:participle-translate-launched-2020
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:launch-verb
+    prompt:
+      source_text: Ra mắt năm 2020, ứng dụng này hiện có mười triệu người dùng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Launched in 2020, the app now has ten million users.
+        - Launched in 2020, this app now has ten million users.
+        - Launched in 2020, the app now has 10 million users.
+        - Launched in 2020, this app now has 10 million users.
+        - Launched in 2020, the app has ten million users now.
+        - Launched in 2020, this app currently has ten million users.
+        - Launched in 2020, the app currently has ten million users.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Launching in 2020, the app now has ten million users.
+        feedback_vi: Ứng dụng được ra mắt (bị động) nên dùng V3 launched.
+        error_tag: participle_active_passive
+      - answer: Launched in 2020, the app now have ten million users.
+        feedback_vi: The app là số ít - has.
+        error_tag: subject_verb_agreement
+      - answer: Lunched in 2020, the app now has ten million users.
+        feedback_vi: Ra mắt là launch (có a); lunch là bữa trưa.
+        error_tag: spelling
+    explanation:
+      vi: Ứng dụng được ra mắt nên dùng phân từ bị động launched in 2020; chủ ngữ mệnh đề chính là the app, đúng là thứ được ra mắt.
+    display_answer: Launched in 2020, the app now has ten million users.
+
+  # ---------------- application ----------------
+  - key: en:exercise:participle-translate-worried-privacy
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:privacy
+    prompt:
+      source_text: Lo lắng cho quyền riêng tư, Mai thôi đăng ảnh các con lên mạng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Worried about her privacy, Mai stopped posting photos of her children online.
+        - Worried about her privacy, Mai stopped posting pictures of her children online.
+        - Worried about her privacy, Mai stopped posting photos of her kids online.
+        - Worried about privacy, Mai stopped posting photos of her children online.
+        - Worried about her privacy, Mai has stopped posting photos of her children online.
+        - Worried about her privacy, Mai stopped posting her children's photos online.
+        - Worried about her privacy, Mai stopped posting photos of her children on the Internet.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Worrying about her privacy, Mai stopped to post photos of her children online.
+        feedback_vi: Thôi không làm nữa là stop + V-ing (stopped posting); stopped to post là dừng lại để đăng.
+        error_tag: stop_ing_to
+      - answer: Worried about her privacy, photos of her children were no longer posted online.
+        feedback_vi: Lỗi phân từ treo - ảnh không thể lo lắng. Chủ ngữ phải là Mai.
+        error_tag: dangling_participle
+      - answer: Worried about her privacy, Mai stopped posting photos of her childs online.
+        feedback_vi: Số nhiều của child là children.
+        error_tag: irregular_plural
+    explanation:
+      vi: Worried about là trạng thái lo lắng (tính từ dạng V3), và Mai chính là người lo lắng nên phải đứng ngay sau dấu phẩy. Thôi làm việc gì là stop + V-ing - stopped posting.
+    display_answer: Worried about her privacy, Mai stopped posting photos of her children online.
+
+  - key: en:exercise:participle-translate-algorithm
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:algorithm
+    prompt:
+      source_text: Designed to keep users online, the algorithm shows you more of what you have already watched.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Được thiết kế để giữ người dùng ở lại trên mạng, thuật toán cho bạn xem nhiều hơn những gì bạn đã xem.
+        - Được thiết kế để giữ chân người dùng, thuật toán cho bạn xem nhiều hơn những gì bạn đã xem.
+        - Được thiết kế để giữ chân người dùng, thuật toán cho bạn xem thêm những thứ bạn đã xem.
+        - Được thiết kế để giữ người dùng trên mạng, thuật toán cho bạn xem thêm những thứ giống những gì bạn đã xem.
+        - Được thiết kế để giữ chân người dùng, thuật toán cho bạn xem thêm những nội dung bạn đã xem.
+        - Thuật toán được thiết kế để giữ chân người dùng, nên nó cho bạn xem nhiều hơn những gì bạn đã xem.
+        - Thuật toán được thiết kế để giữ người dùng ở lại trên mạng nên cho bạn xem thêm những gì bạn đã xem.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thiết kế để giữ người dùng, bạn xem nhiều hơn những gì bạn đã xem.
+        feedback_vi: Designed bổ nghĩa cho the algorithm (thuật toán được thiết kế), không phải cho bạn.
+        error_tag: meaning
+    explanation:
+      vi: "Designed là V3 bị động - \"được thiết kế\" - và chủ thể là the algorithm. Keep users online là giữ người dùng ở lại trên mạng (giữ chân người dùng)."
+    display_answer: Được thiết kế để giữ chân người dùng, thuật toán cho bạn xem nhiều hơn những gì bạn đã xem.
+
+  - key: en:exercise:participle-mcq-situation-breach-email
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:data-breach
+    prompt:
+      stem: Bạn soạn email thông báo của công ty gửi khách hàng. Câu mở đầu nào đúng ngữ pháp và tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: k7s, text: "Having discovered a data breach on 3 May, we are contacting all affected customers.", lang: en }
+        - { id: e1p, text: "Having discovered a data breach on 3 May, all affected customers are being contacted.", lang: en }
+        - { id: w4o, text: "Discovered a data breach on 3 May, we are contacting all affected customers.", lang: en }
+        - { id: y8l, text: "Having discover a data breach on 3 May, we are contacting all affected customers.", lang: en }
+    answer:
+      correct_option_id: k7s
+    explanation:
+      vi: Công ty (we) phát hiện vụ rò rỉ rồi mới liên hệ khách hàng - Having + V3 với chủ ngữ we. Phương án có customers là lỗi phân từ treo (khách hàng không phát hiện); Discovered mang nghĩa bị động; having discover thiếu V3.
+    display_answer: "Having discovered a data breach on 3 May, we are contacting all affected customers."

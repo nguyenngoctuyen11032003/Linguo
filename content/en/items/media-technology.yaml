@@ -1,0 +1,1019 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Truyền thông, công nghệ & khoa học" (B2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Mệnh đề quan hệ không xác định ----------------
+  - key: en:item:non-defining-relative-clause
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: ", which / who … ,"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "mệnh đề quan hệ không xác định - thêm thông tin phụ về một danh từ đã rõ, luôn đặt giữa hai dấu phẩy và không dùng that"
+      examples:
+        - target: TikTok, which was launched in 2016, now has over a billion users.
+          translation:
+            vi: TikTok, ra mắt năm 2016, hiện có hơn một tỷ người dùng.
+        - target: My brother, who works in IT, fixed my laptop in ten minutes.
+          translation:
+            vi: Anh trai tôi, người làm ngành IT, đã sửa xong laptop của tôi trong mười phút.
+      pronunciation_note:
+        vi: Khi đọc, bạn ngừng ngắn ở mỗi dấu phẩy và hạ giọng ở phần thông tin phụ, giống như đang nói trong ngoặc đơn.
+      confusion:
+        vi: "Sau dấu phẩy không bao giờ dùng that: \"TikTok, that was launched…\" là sai. Nếu bỏ mệnh đề đi mà câu vẫn đủ nghĩa, đó là mệnh đề không xác định."
+
+  - key: en:item:relative-whose
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: whose + danh từ
+      ipa: /huːz/
+      pos: đại từ quan hệ
+    back:
+      meaning:
+        vi: "mà … của người/vật đó (chỉ sở hữu, thay cho his / her / its / their)"
+      examples:
+        - target: The journalist, whose article went viral last week, has received hundreds of messages.
+          translation:
+            vi: Nhà báo ấy, người có bài viết lan truyền chóng mặt tuần trước, đã nhận được hàng trăm tin nhắn.
+        - target: It's an app whose main purpose is to help you sleep better.
+          translation:
+            vi: Đó là một ứng dụng có mục đích chính là giúp bạn ngủ ngon hơn.
+      pronunciation_note:
+        vi: Whose đọc giống hệt who's /huːz/; bạn phân biệt bằng ngữ cảnh - sau whose luôn là một danh từ.
+      confusion:
+        vi: "Đừng viết \"who's article\" (who's = who is) hay \"who his article\". Whose dùng được cho cả vật: a company whose profits…"
+
+  - key: en:item:relative-whom
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: whom / to whom
+      ipa: /huːm/
+      pos: đại từ quan hệ
+    back:
+      meaning:
+        vi: "người mà (tân ngữ, trang trọng); bắt buộc dùng whom ngay sau giới từ"
+      examples:
+        - target: The scientist to whom we spoke asked not to be named.
+          translation:
+            vi: Nhà khoa học mà chúng tôi đã trò chuyện đề nghị không nêu tên.
+        - target: Our new manager, whom I met yesterday, seems very experienced.
+          translation:
+            vi: Quản lý mới của chúng tôi, người mà tôi gặp hôm qua, có vẻ rất nhiều kinh nghiệm.
+      confusion:
+        vi: "Sau giới từ chỉ được dùng whom, không dùng who hay that: to whom, không phải \"to who\". Trong văn nói, người ta thường đẩy giới từ ra cuối: the scientist we spoke to."
+
+  - key: en:item:preposition-relative-which
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: in which / on which / for which …
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "giới từ + which - trong đó / mà trên đó / mà vì nó… (văn viết trang trọng)"
+      examples:
+        - target: This is the platform on which the video was first shared.
+          translation:
+            vi: Đây là nền tảng mà video đầu tiên được chia sẻ trên đó.
+        - target: The study, in which 2,000 teenagers took part, lasted three years.
+          translation:
+            vi: Nghiên cứu này, có 2.000 thiếu niên tham gia, kéo dài ba năm.
+      confusion:
+        vi: "Sau giới từ không dùng that: \"in that\" sai trong nghĩa này. Văn nói tự nhiên hơn: the platform (that) the video was shared on."
+
+  - key: en:item:sentential-which
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: ", which + V (bình luận cả câu)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "điều này / việc này… - which thay cho cả mệnh đề phía trước, không chỉ một danh từ"
+      examples:
+        - target: The app crashed during the presentation, which was really embarrassing.
+          translation:
+            vi: Ứng dụng bị treo giữa buổi thuyết trình, điều đó thật sự rất ngượng.
+        - target: He deleted all his social media accounts, which surprised everyone.
+          translation:
+            vi: Anh ấy xoá hết các tài khoản mạng xã hội, việc này khiến mọi người bất ngờ.
+      confusion:
+        vi: "Chỉ dùng which, không dùng what hay that: \"…, what surprised everyone\" là sai. Động từ sau which chia số ít vì nó thay cho cả một sự việc."
+
+  - key: en:item:influencer
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: influencer
+      ipa: UK /ˈɪnfluənsə/ · US /ˈɪnfluənsɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: người có sức ảnh hưởng trên mạng (KOL), người quảng bá sản phẩm cho lượng lớn người theo dõi
+      examples:
+        - target: Many influencers are paid to promote products they have never used.
+          translation:
+            vi: Nhiều người có ảnh hưởng được trả tiền để quảng cáo những sản phẩm họ chưa từng dùng.
+      pronunciation_note:
+        vi: Trọng âm ở âm đầu IN-flu-en-cer, không nhấn vào "en".
+      confusion:
+        vi: "Người Việt hay gọi là KOL, nhưng trong tiếng Anh thông dụng người ta nói influencer; KOL ít dùng hơn."
+
+  - key: en:item:online-platform
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: platform
+      ipa: UK /ˈplætfɔːm/ · US /ˈplætfɔːrm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nền tảng (mạng xã hội, dịch vụ trực tuyến)
+      examples:
+        - target: YouTube is still the most popular video platform in Vietnam.
+          translation:
+            vi: YouTube vẫn là nền tảng video phổ biến nhất ở Việt Nam.
+      confusion:
+        vi: "Dùng on a platform (trên một nền tảng), không dùng \"in a platform\"."
+
+  - key: en:item:follower
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: follower
+      ipa: UK /ˈfɒləʊə/ · US /ˈfɑːloʊɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: người theo dõi (một tài khoản mạng xã hội)
+      examples:
+        - target: She has more than two million followers on Instagram.
+          translation:
+            vi: Cô ấy có hơn hai triệu người theo dõi trên Instagram.
+      confusion:
+        vi: "Nói have followers, không nói \"have two million follows\". Động từ là follow someone (không có on): I follow her."
+
+  - key: en:item:go-viral
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: go viral
+      ipa: UK /ɡəʊ ˈvaɪrəl/ · US /ɡoʊ ˈvaɪrəl/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: lan truyền chóng mặt trên mạng, "gây bão" mạng
+      examples:
+        - target: Her video about street food in Hà Nội went viral overnight.
+          translation:
+            vi: Video của cô ấy về đồ ăn đường phố Hà Nội gây bão chỉ sau một đêm.
+      confusion:
+        vi: "Quá khứ là went viral, không dùng bị động \"was viral\" hay \"was gone viral\"."
+
+  - key: en:item:subscribe
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: subscribe (to)
+      ipa: /səbˈskraɪb/
+      pos: động từ
+    back:
+      meaning:
+        vi: đăng ký theo dõi, đăng ký dùng (kênh, dịch vụ trả phí)
+      examples:
+        - target: I subscribe to three streaming services, but I hardly watch any of them.
+          translation:
+            vi: Tôi đăng ký ba dịch vụ xem phim trực tuyến nhưng hầu như chẳng xem cái nào.
+      pronunciation_note:
+        vi: Trọng âm ở âm thứ hai sub-SCRIBE; danh từ subscription /səbˈskrɪpʃn/ đổi nguyên âm thành /ɪ/.
+      confusion:
+        vi: "Đi với giới từ to: subscribe to a channel. Đừng nói \"subscribe a channel\"."
+
+  - key: en:item:streaming
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: streaming / stream
+      ipa: /ˈstriːmɪŋ/
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: phát / xem trực tuyến (nhạc, phim, livestream) mà không cần tải về
+      examples:
+        - target: Streaming services have changed the way we watch films.
+          translation:
+            vi: Các dịch vụ xem trực tuyến đã thay đổi cách chúng ta xem phim.
+        - target: The match will be streamed live on the club's website.
+          translation:
+            vi: Trận đấu sẽ được phát trực tiếp trên trang web của câu lạc bộ.
+      confusion:
+        vi: "Download là tải về máy; stream là xem trực tiếp qua mạng, không lưu file."
+
+  - key: en:item:content-creator
+    type: phrase
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: content creator
+      ipa: UK /ˈkɒntent kriˈeɪtə/ · US /ˈkɑːntent kriˈeɪtɚ/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: người sáng tạo nội dung
+      examples:
+        - target: More and more young people want to become full-time content creators.
+          translation:
+            vi: Ngày càng nhiều bạn trẻ muốn trở thành người sáng tạo nội dung toàn thời gian.
+      pronunciation_note:
+        vi: Content (nội dung) nhấn âm đầu CON-tent; content (hài lòng, tính từ) nhấn âm sau con-TENT.
+      confusion:
+        vi: "Content ở đây là danh từ không đếm được: create content, không nói \"create contents\"."
+
+  # ---------------- Bài 2: Mệnh đề phân từ ----------------
+  - key: en:item:present-participle-clause
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: V-ing …, mệnh đề chính
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "mệnh đề phân từ hiện tại - rút gọn mệnh đề có cùng chủ ngữ, chỉ lý do hoặc hai hành động xảy ra cùng lúc"
+      examples:
+        - target: Feeling tired, she turned off her phone and went to bed.
+          translation:
+            vi: Thấy mệt, cô ấy tắt điện thoại và đi ngủ.
+        - target: Scrolling through the news, I noticed a strange headline.
+          translation:
+            vi: Đang lướt tin tức, tôi để ý thấy một tiêu đề lạ.
+      confusion:
+        vi: "Chủ ngữ ngầm hiểu của V-ing phải trùng chủ ngữ của mệnh đề chính. \"Feeling tired, the phone was turned off\" sai vì điện thoại không thể thấy mệt."
+
+  - key: en:item:perfect-participle-clause
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: Having + V3 …, mệnh đề chính
+      ipa: /ˈhævɪŋ/
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "sau khi đã… / vì đã… - nhấn mạnh hành động này xong trước hành động kia"
+      examples:
+        - target: Having finished the report, he finally checked his messages.
+          translation:
+            vi: Sau khi đã hoàn thành bản báo cáo, anh ấy mới xem tin nhắn.
+        - target: Having read the comments, I decided to delete the post.
+          translation:
+            vi: Đọc xong các bình luận, tôi quyết định xoá bài đăng.
+      confusion:
+        vi: "Sau having luôn là V3: having finished, having read - không phải \"having finish\". Phủ định đặt not lên đầu: Not having read the article, …"
+
+  - key: en:item:past-participle-clause
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: V3 …, mệnh đề chính
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "mệnh đề phân từ quá khứ - mang nghĩa bị động (được / bị…)"
+      examples:
+        - target: Built in 1990, the old server room is now a café.
+          translation:
+            vi: Được xây năm 1990, phòng máy chủ cũ giờ đã thành quán cà phê.
+        - target: Shocked by the news, many users closed their accounts.
+          translation:
+            vi: Bị sốc vì tin này, nhiều người dùng đã đóng tài khoản.
+      confusion:
+        vi: "V-ing là chủ động (người làm), V3 là bị động (người/vật chịu tác động). Building in 1990 sai vì toà nhà được xây, không tự xây."
+
+  - key: en:item:dangling-participle
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: dangling participle (phân từ "treo")
+      pos: lỗi ngữ pháp
+    back:
+      meaning:
+        vi: "lỗi khi chủ ngữ của mệnh đề chính không phải là người/vật thực hiện hành động ở mệnh đề phân từ"
+      examples:
+        - target: Walking into the office, I saw that the screens were all black.
+          translation:
+            vi: Bước vào văn phòng, tôi thấy tất cả các màn hình đều tối đen.
+      confusion:
+        vi: "\"Walking into the office, the screens were all black\" sai - nghe như màn hình tự đi vào. Tiếng Việt cho phép bỏ chủ ngữ thoải mái, tiếng Anh thì không."
+
+  - key: en:item:reduced-relative-participle
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: danh từ + V-ing / V3 (rút gọn mệnh đề quan hệ)
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "rút gọn who/which + động từ: people using the app = people who use the app; a study published = a study which was published"
+      examples:
+        - target: A study published last month links screen time to poor sleep.
+          translation:
+            vi: Một nghiên cứu công bố tháng trước liên hệ thời gian dùng màn hình với giấc ngủ kém.
+        - target: Users living in rural areas often have slower internet.
+          translation:
+            vi: Người dùng sống ở vùng nông thôn thường có mạng chậm hơn.
+      confusion:
+        vi: "Đừng giữ lại be khi rút gọn: \"a study was published last month links…\" là sai - hai động từ chia trong một mệnh đề."
+
+  - key: en:item:privacy
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: privacy
+      ipa: UK /ˈprɪvəsi/ · US /ˈpraɪvəsi/
+      pos: danh từ không đếm được
+    back:
+      meaning:
+        vi: quyền riêng tư, sự riêng tư
+      examples:
+        - target: Many users are worried about their privacy online.
+          translation:
+            vi: Nhiều người dùng lo lắng về quyền riêng tư của mình trên mạng.
+      pronunciation_note:
+        vi: Người Anh đọc PRI-va-cy /ˈprɪvəsi/, người Mỹ đọc PRAI-va-cy /ˈpraɪvəsi/ - cả hai đều đúng.
+      confusion:
+        vi: "Privacy không đếm được: protect your privacy, không nói \"a privacy\" hay \"privacies\". Tính từ là private."
+
+  - key: en:item:data-breach
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: data breach
+      ipa: /ˈdeɪtə briːtʃ/ (US cũng đọc /ˈdætə briːtʃ/)
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: vụ rò rỉ dữ liệu, vụ xâm phạm dữ liệu
+      examples:
+        - target: The data breach exposed the personal data of five million customers.
+          translation:
+            vi: Vụ rò rỉ dữ liệu đã làm lộ thông tin cá nhân của năm triệu khách hàng.
+      pronunciation_note:
+        vi: Breach /briːtʃ/ đọc giống beach thêm r, kết thúc bằng âm "ch" rõ.
+      confusion:
+        vi: "Data thường đi với động từ số ít trong văn hiện đại (the data is…). Breach là sự vi phạm, xâm phạm - đừng nhầm với beach (bãi biển) khi viết."
+
+  - key: en:item:cybersecurity
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: cybersecurity
+      ipa: UK /ˌsaɪbəsɪˈkjʊərəti/ · US /ˌsaɪbɚsəˈkjʊrəti/
+      pos: danh từ không đếm được
+    back:
+      meaning:
+        vi: an ninh mạng
+      examples:
+        - target: Banks spend millions on cybersecurity every year.
+          translation:
+            vi: Các ngân hàng chi hàng triệu đô cho an ninh mạng mỗi năm.
+      confusion:
+        vi: "Không có mạo từ khi nói chung: invest in cybersecurity, không nói \"invest in the cybersecurity\"."
+
+  - key: en:item:hacker
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: hacker / hack into
+      ipa: UK /ˈhækə/ · US /ˈhækɚ/
+      pos: danh từ / cụm động từ
+    back:
+      meaning:
+        vi: tin tặc; hack into something - xâm nhập trái phép (hệ thống, tài khoản)
+      examples:
+        - target: Hackers hacked into the company's system and stole customer data.
+          translation:
+            vi: Tin tặc đã xâm nhập hệ thống của công ty và đánh cắp dữ liệu khách hàng.
+      confusion:
+        vi: "Nói hack into a system hoặc hack an account; người bị hại dùng bị động: My account was hacked."
+
+  - key: en:item:personal-data
+    type: phrase
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: personal data
+      ipa: UK /ˈpɜːsənl ˈdeɪtə/ · US /ˈpɝːsənl ˈdeɪtə/
+      pos: cụm danh từ không đếm được
+    back:
+      meaning:
+        vi: dữ liệu cá nhân, thông tin cá nhân
+      examples:
+        - target: Never share your personal data with apps you don't trust.
+          translation:
+            vi: Đừng bao giờ chia sẻ dữ liệu cá nhân với những ứng dụng bạn không tin tưởng.
+      confusion:
+        vi: "Personal (cá nhân) khác personnel (nhân sự). Đừng nói \"personal datas\"."
+
+  - key: en:item:algorithm
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: algorithm
+      ipa: /ˈælɡərɪðəm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thuật toán (ví dụ thuật toán đề xuất nội dung của mạng xã hội)
+      examples:
+        - target: The algorithm shows you videos which are similar to the ones you have already watched.
+          translation:
+            vi: Thuật toán cho bạn xem những video giống với những video bạn đã xem.
+      pronunciation_note:
+        vi: Trọng âm ở âm đầu AL-go-rithm; "th" là âm /ð/ (lưỡi giữa hai răng, có rung), không đọc thành "t".
+      confusion:
+        vi: "Viết algorithm (có th), không phải \"algorhythm\". Tính từ là algorithmic."
+
+  - key: en:item:launch-verb
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: launch
+      ipa: UK /lɔːntʃ/ · US /lɑːntʃ/, /lɔːntʃ/
+      pos: động từ / danh từ
+    back:
+      meaning:
+        vi: ra mắt, tung ra (sản phẩm, ứng dụng, chiến dịch)
+      examples:
+        - target: The company launched its new app in March.
+          translation:
+            vi: Công ty ra mắt ứng dụng mới vào tháng Ba.
+      confusion:
+        vi: "Launch đọc /lɔːntʃ/, khác lunch /lʌntʃ/ (bữa trưa). Danh từ: the launch of the app."
+
+  # ---------------- Bài 3: Mạo từ với danh từ trừu tượng & cấu tạo từ ----------------
+  - key: en:item:zero-article-general
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: Ø + danh từ trừu tượng / số nhiều (nghĩa chung)
+      pos: quy tắc mạo từ
+    back:
+      meaning:
+        vi: "khi nói chung chung về một khái niệm hay cả một loại, không dùng the: Technology…, Science…, Smartphones…"
+      examples:
+        - target: Technology has changed the way we communicate.
+          translation:
+            vi: Công nghệ đã thay đổi cách chúng ta giao tiếp.
+        - target: Smartphones can be very addictive.
+          translation:
+            vi: Điện thoại thông minh có thể gây nghiện rất nặng.
+      confusion:
+        vi: "Chỉ dùng the khi đã xác định: the technology used in this phone (công nghệ dùng trong chiếc điện thoại này). \"The technology is developing\" nghe như đang nói về một công nghệ cụ thể nào đó."
+
+  - key: en:item:the-internet-the-media
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: the Internet / the media / the press
+      pos: cụm danh từ cố định
+    back:
+      meaning:
+        vi: "những danh từ \"duy nhất\" luôn đi với the: Internet, truyền thông, báo chí"
+      examples:
+        - target: Most teenagers get their news from the Internet, not from TV.
+          translation:
+            vi: Phần lớn thanh thiếu niên đọc tin tức trên mạng chứ không xem trên ti vi.
+        - target: The media often exaggerate scientific findings.
+          translation:
+            vi: Truyền thông thường phóng đại các phát hiện khoa học.
+      confusion:
+        vi: "Nói on the Internet, in the media - nhưng on TV, on social media (không có the). Internet cũng có thể viết thường: the internet."
+
+  - key: en:item:uncountable-information-advice
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: information / advice / equipment / news / research
+      pos: danh từ không đếm được
+    back:
+      meaning:
+        vi: "những danh từ không đếm được trong tiếng Anh dù tiếng Việt đếm được - không thêm -s, không dùng a/an"
+      examples:
+        - target: Can you give me some information about the course?
+          translation:
+            vi: Bạn cho tôi vài thông tin về khoá học được không?
+        - target: She gave me a useful piece of advice.
+          translation:
+            vi: Cô ấy cho tôi một lời khuyên hữu ích.
+      confusion:
+        vi: "Không có \"informations\", \"advices\", \"equipments\". Muốn đếm thì dùng a piece of: two pieces of advice. News đi với động từ số ít: The news is…"
+
+  - key: en:item:prefix-un-mis
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: un- / mis- (tiền tố)
+      pos: cấu tạo từ
+    back:
+      meaning:
+        vi: "un- = không, ngược lại (unreliable, unlimited); mis- = sai, nhầm (misunderstand, misinform, misuse)"
+      examples:
+        - target: The article was misleading, and the source was completely unreliable.
+          translation:
+            vi: Bài báo gây hiểu lầm, và nguồn tin hoàn toàn không đáng tin cậy.
+      confusion:
+        vi: "Un- mang nghĩa \"không\", còn mis- mang nghĩa \"làm sai\": misinformed là \"bị thông tin sai\", uninformed là \"không có thông tin\"."
+
+  - key: en:item:prefix-over-under
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: over- / under- (tiền tố)
+      pos: cấu tạo từ
+    back:
+      meaning:
+        vi: "over- = quá mức (overuse, overreact, overpriced); under- = dưới mức, chưa đủ (underestimate, underpaid)"
+      examples:
+        - target: Many parents underestimate how much time their children spend online.
+          translation:
+            vi: Nhiều phụ huynh đánh giá thấp thời gian con cái họ dành trên mạng.
+      confusion:
+        vi: "Tiếng Việt thêm \"quá\" hay \"chưa đủ\" thành từ riêng; tiếng Anh gắn tiền tố vào động từ/tính từ: overuse (dùng quá nhiều), không nói \"too use\"."
+
+  - key: en:item:suffix-noun-ment-ity-ness
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: -ment / -ity / -ness (hậu tố tạo danh từ)
+      pos: cấu tạo từ
+    back:
+      meaning:
+        vi: "biến động từ/tính từ thành danh từ: develop → development, secure → security, aware → awareness"
+      examples:
+        - target: The development of AI raises serious questions about security and fairness.
+          translation:
+            vi: Sự phát triển của AI đặt ra những câu hỏi nghiêm túc về an ninh và sự công bằng.
+      pronunciation_note:
+        vi: "-ity kéo trọng âm về âm ngay trước nó: SEcure → seCUrity, POSSible → possiBIlity."
+      confusion:
+        vi: "Người Việt hay dùng tính từ ở vị trí danh từ: \"the develop of AI\", \"people's aware\". Sau the / of / tính từ sở hữu cần danh từ."
+
+  - key: en:item:suffix-able
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: -able / -ible (hậu tố tạo tính từ)
+      ipa: /əbl/
+      pos: cấu tạo từ
+    back:
+      meaning:
+        vi: "có thể … được: rely → reliable (đáng tin cậy), afford → affordable (giá phải chăng), access → accessible (tiếp cận được)"
+      examples:
+        - target: Fast internet should be affordable and accessible to everyone.
+          translation:
+            vi: Internet tốc độ cao nên có giá phải chăng và ai cũng tiếp cận được.
+      confusion:
+        vi: "Rely đổi y thành i: reliable, không phải \"relyable\". Thêm un- để phủ định: unreliable, unaffordable."
+
+  - key: en:item:compound-nouns-tech
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: danh từ ghép (screen time, smartphone, password, search engine)
+      pos: cấu tạo từ
+    back:
+      meaning:
+        vi: "hai danh từ ghép thành một; danh từ đầu bổ nghĩa cho danh từ sau và không thêm -s"
+      examples:
+        - target: Try changing your password and clearing your search history.
+          translation:
+            vi: Bạn thử đổi mật khẩu và xoá lịch sử tìm kiếm xem.
+      pronunciation_note:
+        vi: Danh từ ghép thường nhấn ở từ đầu - SEARCH engine, PASSword, SMARTphone.
+      confusion:
+        vi: "Thứ tự ngược tiếng Việt: \"lịch sử tìm kiếm\" là search history, không phải \"history search\". Danh từ đầu giữ số ít: a password manager, không phải \"passwords manager\"."
+
+  - key: en:item:misleading
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: misleading
+      ipa: /ˌmɪsˈliːdɪŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: gây hiểu lầm, dễ đánh lừa
+      examples:
+        - target: The headline is misleading - the study only included 30 people.
+          translation:
+            vi: Tiêu đề này gây hiểu lầm - nghiên cứu chỉ có 30 người tham gia.
+      confusion:
+        vi: "Misleading (gây hiểu lầm, thường không trắng trợn) nhẹ hơn false (sai sự thật). Động từ là mislead - misled - misled."
+
+  - key: en:item:unreliable
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: unreliable
+      ipa: /ˌʌnrɪˈlaɪəbl/
+      pos: tính từ
+    back:
+      meaning:
+        vi: không đáng tin cậy
+      examples:
+        - target: Anonymous websites are often unreliable sources of information.
+          translation:
+            vi: Các trang web nặc danh thường là nguồn thông tin không đáng tin cậy.
+      confusion:
+        vi: "Đừng nói \"not reliable information sources\" khi có sẵn tính từ unreliable; cũng đừng viết \"inreliable\"."
+
+  - key: en:item:overuse
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: overuse
+      ipa: UK /ˌəʊvəˈjuːz/ · US /ˌoʊvɚˈjuːz/
+      pos: động từ / danh từ
+    back:
+      meaning:
+        vi: dùng quá mức, lạm dụng
+      examples:
+        - target: Overuse of smartphones can damage your eyesight.
+          translation:
+            vi: Lạm dụng điện thoại thông minh có thể làm hại thị lực.
+      pronunciation_note:
+        vi: "Động từ kết thúc bằng /z/ (overuse /-juːz/), danh từ kết thúc bằng /s/ (/-juːs/), giống cặp use."
+      confusion:
+        vi: "Không nói \"use too much the phone\"; nói overuse the phone hoặc use the phone too much."
+
+  - key: en:item:underestimate
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: underestimate
+      ipa: UK /ˌʌndərˈestɪmeɪt/ · US /ˌʌndɚˈestəmeɪt/
+      pos: động từ
+    back:
+      meaning:
+        vi: đánh giá thấp, xem nhẹ
+      examples:
+        - target: Never underestimate the power of social media.
+          translation:
+            vi: Đừng bao giờ xem nhẹ sức mạnh của mạng xã hội.
+      confusion:
+        vi: "Ngược nghĩa là overestimate (đánh giá quá cao). Đi thẳng với tân ngữ, không cần giới từ: underestimate the risk."
+
+  # ---------------- Bài 4: Ngôn ngữ đưa tin khoa học & tin giả ----------------
+  - key: en:item:a-study-found-that
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, reading, writing]
+    front:
+      text: A study found / shows that…
+      pos: cụm câu
+    back:
+      meaning:
+        vi: Một nghiên cứu cho thấy / phát hiện rằng…
+      examples:
+        - target: A recent study found that teenagers who use their phones at night sleep an hour less.
+          translation:
+            vi: Một nghiên cứu gần đây phát hiện rằng những thiếu niên dùng điện thoại vào ban đêm ngủ ít hơn một tiếng.
+      confusion:
+        vi: "Nghiên cứu là a study (đếm được), còn research là không đếm được - không nói \"a research found\". Find - found - found."
+
+  - key: en:item:researchers-claim
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: researchers claim / argue / believe that…
+      ipa: UK /rɪˈsɜːtʃəz kleɪm/ · US /ˈriːsɝːtʃɚz kleɪm/
+      pos: cụm câu
+    back:
+      meaning:
+        vi: các nhà nghiên cứu khẳng định / cho rằng… (người viết chưa chắc điều đó đúng)
+      examples:
+        - target: Researchers claim that the new battery could last for a week.
+          translation:
+            vi: Các nhà nghiên cứu khẳng định loại pin mới có thể dùng được cả tuần.
+      confusion:
+        vi: "Claim không phải \"đòi\" (như claim money); trong tin khoa học, claim nghĩa là \"tuyên bố\" và ngầm cho thấy chưa được kiểm chứng. Không nói \"claim to that\"."
+
+  - key: en:item:evidence-suggests
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, reading, writing]
+    front:
+      text: evidence suggests that…
+      ipa: UK /ˈevɪdəns səˈdʒests/ · US /ˈevɪdəns səɡˈdʒests/
+      pos: cụm câu
+    back:
+      meaning:
+        vi: bằng chứng cho thấy (có khả năng) rằng…
+      examples:
+        - target: There is growing evidence that screen time affects young children's language skills.
+          translation:
+            vi: Ngày càng có nhiều bằng chứng cho thấy thời gian dùng màn hình ảnh hưởng đến kỹ năng ngôn ngữ của trẻ nhỏ.
+        - target: Evidence suggests that the drug is safe for adults.
+          translation:
+            vi: Bằng chứng cho thấy loại thuốc này an toàn với người lớn.
+      confusion:
+        vi: "Evidence không đếm được: không nói \"an evidence\" hay \"evidences\"; dùng a piece of evidence. Động từ chia số ít: evidence suggests."
+
+  - key: en:item:conduct-an-experiment
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: conduct / carry out an experiment
+      ipa: /kənˈdʌkt ən ɪkˈsperɪmənt/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: tiến hành một thí nghiệm
+      examples:
+        - target: The team conducted an experiment with 500 volunteers.
+          translation:
+            vi: Nhóm nghiên cứu đã tiến hành một thí nghiệm với 500 tình nguyện viên.
+      pronunciation_note:
+        vi: Động từ conduct nhấn âm sau con-DUCT; danh từ conduct (hạnh kiểm) nhấn âm đầu CON-duct.
+      confusion:
+        vi: "Không nói \"make an experiment\" hay \"do a experiment\". Experiment (thí nghiệm) khác experience (trải nghiệm)."
+
+  - key: en:item:prove-vs-suggest
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: prove / show / suggest / claim
+      pos: động từ tường thuật
+    back:
+      meaning:
+        vi: "mức độ chắc chắn giảm dần: prove (chứng minh), show (cho thấy rõ), suggest (gợi ý, có thể), claim (tuyên bố, chưa kiểm chứng)"
+      examples:
+        - target: The study doesn't prove that coffee causes cancer - it only suggests a link.
+          translation:
+            vi: Nghiên cứu không chứng minh cà phê gây ung thư - nó chỉ gợi ý có một mối liên hệ.
+      confusion:
+        vi: "Báo chí giật tít thường đổi suggest thành prove. Đọc tin khoa học, bạn hãy để ý động từ này để biết kết luận chắc đến đâu."
+
+  - key: en:item:link-between
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: a link between A and B / be linked to
+      pos: cụm danh từ / cụm động từ
+    back:
+      meaning:
+        vi: mối liên hệ giữa A và B / có liên quan đến
+      examples:
+        - target: Scientists have found a link between social media use and anxiety.
+          translation:
+            vi: Các nhà khoa học đã tìm thấy mối liên hệ giữa việc dùng mạng xã hội và chứng lo âu.
+        - target: Poor sleep is linked to lower grades.
+          translation:
+            vi: Ngủ kém có liên quan đến điểm số thấp hơn.
+      confusion:
+        vi: "Dùng between … and …, hoặc be linked to - không nói \"a link of\" hay \"linked with to\". Có liên hệ chưa chắc là nguyên nhân."
+
+  - key: en:item:participant
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: participant
+      ipa: UK /pɑːˈtɪsɪpənt/ · US /pɑːrˈtɪsəpənt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: người tham gia (nghiên cứu, khảo sát, cuộc thi)
+      examples:
+        - target: Half of the participants were asked to stop using social media for a month.
+          translation:
+            vi: Một nửa số người tham gia được yêu cầu ngừng dùng mạng xã hội trong một tháng.
+      pronunciation_note:
+        vi: Trọng âm ở âm thứ hai par-TI-ci-pant.
+      confusion:
+        vi: "Động từ là participate in (tham gia vào), không phải \"participate to\". Take part in đồng nghĩa nhưng thân mật hơn."
+
+  - key: en:item:fake-news
+    type: phrase
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: fake news
+      ipa: UK /ˌfeɪk ˈnjuːz/ · US /ˌfeɪk ˈnuːz/
+      pos: cụm danh từ không đếm được
+    back:
+      meaning:
+        vi: tin giả
+      examples:
+        - target: Fake news spreads faster than real news on social media.
+          translation:
+            vi: Tin giả lan nhanh hơn tin thật trên mạng xã hội.
+      confusion:
+        vi: "News không đếm được và chia số ít: fake news spreads, không phải \"fake news spread\" hay \"a fake news\". Muốn đếm: a fake news story."
+
+  - key: en:item:misinformation
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: misinformation
+      ipa: UK /ˌmɪsɪnfəˈmeɪʃn/ · US /ˌmɪsɪnfɚˈmeɪʃn/
+      pos: danh từ không đếm được
+    back:
+      meaning:
+        vi: thông tin sai lệch
+      examples:
+        - target: During the pandemic, a lot of misinformation about vaccines was shared online.
+          translation:
+            vi: Trong đại dịch, rất nhiều thông tin sai lệch về vắc xin bị chia sẻ trên mạng.
+      confusion:
+        vi: "Giống information, không có dạng số nhiều \"misinformations\". Disinformation là tin sai được tung ra có chủ đích."
+
+  - key: en:item:fact-check
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: fact-check
+      ipa: /ˈfækt tʃek/
+      pos: động từ / danh từ
+    back:
+      meaning:
+        vi: kiểm chứng thông tin, xác minh sự thật
+      examples:
+        - target: Always fact-check a story before you share it.
+          translation:
+            vi: Luôn kiểm chứng một câu chuyện trước khi bạn chia sẻ nó.
+      confusion:
+        vi: "Fact-check là một động từ ghép, có gạch nối: fact-check a claim. Người làm việc này là fact-checker."
+
+  - key: en:item:reliable-source
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: a reliable / trustworthy source
+      ipa: UK /ə rɪˈlaɪəbl sɔːs/ · US /ə rɪˈlaɪəbl sɔːrs/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: nguồn (tin) đáng tin cậy
+      examples:
+        - target: Check whether the information comes from a reliable source, such as a university or a government website.
+          translation:
+            vi: Hãy kiểm tra xem thông tin có đến từ một nguồn đáng tin cậy, như trang web của trường đại học hay cơ quan nhà nước không.
+      confusion:
+        vi: "Source (nguồn) đọc /sɔːs/, khác sauce /sɔːs/ chỉ ở chính tả - hãy dựa vào ngữ cảnh. Nói information comes from a source, không nói \"comes in a source\"."
+
+  # ---------------- Bài 5: Ôn tập ----------------
+  - key: en:item:digital-detox
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: digital detox
+      ipa: UK /ˌdɪdʒɪtl ˈdiːtɒks/ · US /ˌdɪdʒɪtl ˈdiːtɑːks/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: thời gian "cai" thiết bị số, tạm ngừng dùng điện thoại và mạng
+      examples:
+        - target: I'm doing a digital detox this weekend - no phone, no laptop.
+          translation:
+            vi: Cuối tuần này tôi "cai" thiết bị số - không điện thoại, không laptop.
+      confusion:
+        vi: "Đi với do hoặc go on: do a digital detox, go on a digital detox."
+
+  - key: en:item:attention-span
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: attention span
+      ipa: /əˈtenʃn spæn/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: khả năng tập trung (khoảng thời gian một người chú ý được vào một việc)
+      examples:
+        - target: Short videos may be shortening our attention span.
+          translation:
+            vi: Video ngắn có thể đang làm giảm khả năng tập trung của chúng ta.
+      confusion:
+        vi: "Nói a short attention span (khả năng tập trung kém), không nói \"a small attention\"."
+
+  - key: en:item:mental-health
+    type: phrase
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: mental health
+      ipa: /ˌmentl ˈhelθ/
+      pos: cụm danh từ không đếm được
+    back:
+      meaning:
+        vi: sức khoẻ tinh thần
+      examples:
+        - target: Spending less time online has improved my mental health.
+          translation:
+            vi: Dành ít thời gian trên mạng hơn đã giúp sức khoẻ tinh thần của tôi tốt lên.
+      pronunciation_note:
+        vi: Âm cuối health là /θ/ (đặt lưỡi giữa hai răng), đừng đọc thành "hel-t" hay "hel-s".
+      confusion:
+        vi: "Không có mạo từ khi nói chung: mental health is important, không nói \"the mental health is important\"."
