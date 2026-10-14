@@ -38,7 +38,8 @@ export const CORS_HEADERS: Record<string, string> = {
 };
 
 const DEFAULT_DAILY_LIMIT = 20;
-const DEFAULT_MAX_OUTPUT_TOKENS = 1200;
+/** Ceiling across tasks; each prompt module sets its own (≤ 1200, review_writing 2048). */
+const DEFAULT_MAX_OUTPUT_TOKENS = 2048;
 const DEFAULT_TIMEOUT_MS = 20_000;
 const TOTAL_BUDGET_MS = 45_000;
 const REPAIR_MAX_OUTPUT_TOKENS = 600;
@@ -112,6 +113,8 @@ function inputChars(req: AiRequest): number {
       return req.focus?.length ?? 0;
     case 'analyze_error':
       return req.prompt.length + req.expected.length + req.answer.length;
+    case 'review_writing':
+      return req.prompt.length + req.answer.length;
   }
 }
 
@@ -167,9 +170,10 @@ class InvalidOutputError extends Error {
   }
 }
 
-function tryParse(prompt: PromptModule, text: string): { ok: true; data: unknown } | { ok: false } {
+/** The request enables the task-specific checks (Hangul for ko, review_writing's rubric keys and max_points). */
+function tryParse(prompt: PromptModule, text: string, request: AiRequest): { ok: true; data: unknown } | { ok: false } {
   try {
-    const v = prompt.validate(extractJson(text));
+    const v = prompt.validate(extractJson(text), request);
     return v.ok ? { ok: true, data: v.data } : { ok: false };
   } catch {
     return { ok: false };
@@ -270,9 +274,9 @@ export async function handle(req: Request, deps: HandlerDeps): Promise<Response>
     });
 
   // 5. Lesson context (published fields via RLS).
-  const context = await lessonContext(db, request.lesson_id);
+  const context = await lessonContext(db, 'lesson_id' in request ? request.lesson_id : undefined);
 
-  // 6. Cache: explain_concept, generate_practice without focus; never analyze_error. A hit is free.
+  // 6. Cache: explain_concept, generate_practice without focus; never analyze_error / review_writing. A hit is free.
   let key: string | null = null;
   if (request.task !== 'analyze_error' && prompt.cacheable(request)) {
     try {
@@ -337,7 +341,7 @@ export async function handle(req: Request, deps: HandlerDeps): Promise<Response>
     );
     attempts += first.attempts;
     deps.breaker.onSuccess();
-    let result = tryParse(prompt, first.text);
+    let result = tryParse(prompt, first.text, request);
     if (!result.ok) {
       repaired = true;
       const second = await callGemini(
@@ -345,12 +349,12 @@ export async function handle(req: Request, deps: HandlerDeps): Promise<Response>
           ...base,
           user: repairPrompt(prompt.responseSchema, first.text),
           deadlineMs: budgetLeft(),
-          maxOutputTokens: Math.min(REPAIR_MAX_OUTPUT_TOKENS, maxOutputTokens),
+          maxOutputTokens: Math.min(prompt.repairMaxOutputTokens ?? REPAIR_MAX_OUTPUT_TOKENS, maxOutputTokens),
         },
         deps,
       );
       attempts += second.attempts;
-      result = tryParse(prompt, second.text);
+      result = tryParse(prompt, second.text, request);
       if (!result.ok) throw new InvalidOutputError(attempts);
     }
     const data = sanitizeOutput(result.data, { language: request.language });

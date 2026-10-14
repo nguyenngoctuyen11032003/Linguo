@@ -281,9 +281,9 @@ Deno.test('zod rejects client-chosen model / temperature / system', async () => 
   }
 });
 
-Deno.test('body over 8 KB or not JSON → 400 bad_request', async () => {
+Deno.test('body over 16 KB or not JSON → 400 bad_request', async () => {
   const h = harness();
-  await expectError(await handle(post(explainBody({ context: 'x'.repeat(9000) })), h.deps), 400, 'bad_request');
+  await expectError(await handle(post(explainBody({ context: 'x'.repeat(17_000) })), h.deps), 400, 'bad_request');
   await expectError(await handle(post('{not json'), h.deps), 400, 'bad_request');
   await expectError(await handle(post({ task: 'write_essay', language: 'en', level: 'a2' }), h.deps), 400, 'bad_request');
   assert.equal(h.db.calls.length, 0);
@@ -486,6 +486,93 @@ Deno.test('analyze_error is never cached', async () => {
   assert.equal(db.count('ai_cache_get'), 0);
   assert.equal(db.count('ai_cache_put'), 0);
   assert.equal(db.count('ai_quota_consume'), 2);
+});
+
+// ---------------------------------------------------------------------------
+// review_writing (spec 9 X6)
+// ---------------------------------------------------------------------------
+
+const writingBody = (over: Record<string, unknown> = {}) => ({
+  task: 'review_writing',
+  language: 'en',
+  level: 'a2',
+  prompt: 'Write an email to Alex: suggest a film, a time and a place to meet.',
+  answer: 'Hi Alex, lets watch Toy Story on Saturday at 6. See you, Lan',
+  rubric: [
+    { key: 'content', label_vi: 'Nội dung', description_vi: 'Đủ ba ý.', max_points: 4 },
+    { key: 'language', label_vi: 'Ngôn ngữ', description_vi: 'Ngữ pháp, chính tả.', max_points: 3 },
+  ],
+  ...over,
+});
+
+const WRITING_OUTPUT = {
+  criteria: [
+    { key: 'content', points: 3, comment_vi: 'Có phim và giờ, thiếu chỗ gặp.' },
+    { key: 'language', points: 2, comment_vi: 'Viết "Let\'s" có dấu nháy.' },
+  ],
+  overall_vi: 'Bài rõ ý; bổ sung chỗ gặp.',
+  corrected_version: "Hi Alex, let's watch Toy Story on Saturday at 6 outside the cinema. See you, Lan",
+};
+
+Deno.test('review_writing: consumes quota, never cached, logs the essay size only', async () => {
+  const db = fakeDb();
+  const h = harness({ db, steps: [geminiOk(WRITING_OUTPUT)] });
+  const body = await expectSuccess(await handle(post(writingBody()), h.deps));
+  assert.equal(body.task, 'review_writing');
+  assert.equal(body.prompt_version, 'review_writing@1');
+  assert.equal(body.cached, false);
+  assert.deepEqual(body.data, WRITING_OUTPUT);
+  assert.equal(db.count('ai_quota_consume'), 1);
+  assert.equal(db.count('ai_cache_get'), 0);
+  assert.equal(db.count('ai_cache_put'), 0);
+  const sent = h.fetch.bodies[0] as { generationConfig: { maxOutputTokens: number } };
+  assert.equal(sent.generationConfig.maxOutputTokens, 2048);
+  assert.match(JSON.stringify(sent), /Toy Story/);
+  const log = db.calls.find((c) => c.fn === 'ai_usage_log')!.args!;
+  assert.equal(log.p_task, 'review_writing');
+  const req = writingBody();
+  assert.equal(log.p_input_chars, req.prompt.length + req.answer.length);
+  assert.ok(!JSON.stringify(log).includes('Toy Story'));
+});
+
+Deno.test('review_writing: points over max_points → repair (with the full budget) → OK', async () => {
+  const over = { ...WRITING_OUTPUT, criteria: [WRITING_OUTPUT.criteria[0], { ...WRITING_OUTPUT.criteria[1], points: 9 }] };
+  const h = harness({ steps: [geminiOk(over), geminiOk(WRITING_OUTPUT)] });
+  const body = await expectSuccess(await handle(post(writingBody()), h.deps));
+  assert.deepEqual(body.data, WRITING_OUTPUT);
+  assert.equal(h.fetch.bodies.length, 2);
+  const repairConfig = (h.fetch.bodies[1] as { generationConfig: { maxOutputTokens: number } }).generationConfig;
+  assert.equal(repairConfig.maxOutputTokens, 2048);
+  assert.equal(h.db.calls.find((c) => c.fn === 'ai_usage_log')?.args?.p_repaired, true);
+});
+
+Deno.test('review_writing: wrong criteria twice → 502 invalid_output, quota refunded', async () => {
+  const missing = { ...WRITING_OUTPUT, criteria: [WRITING_OUTPUT.criteria[0]] };
+  const h = harness({ steps: [geminiOk(missing), geminiOk(missing)] });
+  await expectError(await handle(post(writingBody()), h.deps), 502, 'invalid_output');
+  assert.equal(h.db.count('ai_quota_refund'), 1);
+  assert.equal(h.db.used, 0);
+});
+
+Deno.test('review_writing: too-long essay or bad rubric → 400 before any quota', async () => {
+  const h = harness();
+  await expectError(await handle(post(writingBody({ answer: 'x'.repeat(1501) })), h.deps), 400, 'bad_request');
+  await expectError(await handle(post(writingBody({ rubric: [] })), h.deps), 400, 'bad_request');
+  await expectError(await handle(post(writingBody({ lesson_id: LESSON_ID })), h.deps), 400, 'bad_request');
+  assert.equal(h.db.calls.length, 0);
+});
+
+Deno.test('review_writing: a maximal Korean essay fits the body limit', async () => {
+  const h = harness({ steps: [geminiOk({ ...WRITING_OUTPUT, corrected_version: '안녕하세요' })] });
+  const req = writingBody({ language: 'ko', level: 'topik4', prompt: '가'.repeat(1200), answer: '나'.repeat(1500) });
+  await expectSuccess(await handle(post(req), h.deps));
+});
+
+Deno.test('review_writing: ko corrected_version without Hangul is rejected', async () => {
+  const romanized = { ...WRITING_OUTPUT, corrected_version: 'annyeonghaseyo' };
+  const h = harness({ steps: [geminiOk(romanized), geminiOk(romanized)] });
+  const req = writingBody({ language: 'ko', level: 'topik4', answer: '안녕하세요 저는 란이에요' });
+  await expectError(await handle(post(req), h.deps), 502, 'invalid_output');
 });
 
 // ---------------------------------------------------------------------------

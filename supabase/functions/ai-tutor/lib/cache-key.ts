@@ -10,8 +10,11 @@ export function normalizeText(text: string | undefined | null, language: 'en' | 
 /** Every field that changes the model output, in a fixed order (spec §3 step 6). */
 function cacheFields(req: AiRequest): (string | number)[] {
   const n = (t: string | undefined) => normalizeText(t, req.language);
-  const lesson = req.lesson_id ?? '';
+  const lesson = ('lesson_id' in req ? req.lesson_id : undefined) ?? '';
   switch (req.task) {
+    case 'review_writing':
+      // Never cached (personal essay); listed so the key stays total over every task.
+      return [n(req.prompt), n(req.answer), JSON.stringify(req.rubric)];
     case 'explain_concept':
       return [req.variant, n(req.concept), n(req.context), lesson];
     case 'generate_practice':

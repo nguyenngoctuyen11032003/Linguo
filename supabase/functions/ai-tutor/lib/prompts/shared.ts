@@ -12,6 +12,8 @@ export interface PromptModule {
   system: string;
   temperature: number;
   maxOutputTokens: number;
+  /** Budget of the single repair attempt; defaults to the handler's 600 tokens. */
+  repairMaxOutputTokens?: number;
   /** OpenAPI-subset schema for Gemini `generationConfig.responseSchema`. */
   responseSchema: Record<string, unknown>;
   buildUser(req: AiRequest, ctx: { lessonContext: string | null }): string;
@@ -101,6 +103,7 @@ export const s = {
     nullable: true,
     ...(description ? { description } : {}),
   }),
+  int: (description?: string) => ({ type: 'INTEGER', ...(description ? { description } : {}) }),
   enum: (values: readonly string[], description?: string) => ({
     type: 'STRING',
     format: 'enum',
