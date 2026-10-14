@@ -32,6 +32,27 @@ import { RouteError } from '@/routes/RouteError';
 /** Layout routes whose element renders `<main>`: error elements below them must not add a second one. */
 const MAIN_LAYOUT = { providesMain: true } as const;
 
+/**
+ * Spec 11 §4: `/quan-tri` ships as its own chunk, so learners never download admin code. React Router's `lazy` loads
+ * elements but cannot add children, so the child paths are listed here (null = index) and kept in sync with
+ * `adminRoutes` by a unit test; every element still comes from routes/admin/admin-routes.tsx.
+ */
+export const ADMIN_CHILD_PATHS = [null, 'noi-dung', 'noi-dung/:kind/:id', 'bao-loi', 'nguon', 'thong-ke', 'nhat-ky'] as const;
+const loadAdmin = () => import('@/routes/admin/admin-routes');
+
+const adminRoute: RouteObject = {
+  path: 'quan-tri',
+  handle: MAIN_LAYOUT,
+  lazy: async () => ({ element: (await loadAdmin()).adminRootRoute.element }),
+  children: ADMIN_CHILD_PATHS.map((path): RouteObject => {
+    const lazy = async () => {
+      const { adminRoutes } = await loadAdmin();
+      return { element: adminRoutes.find((r) => (path === null ? r.index : r.path === path))?.element };
+    };
+    return path === null ? { index: true, lazy } : { path, lazy };
+  }),
+};
+
 const routeTree: RouteObject[] = [
   {
     path: '/',
@@ -95,6 +116,7 @@ const routeTree: RouteObject[] = [
           },
         ],
       },
+      adminRoute,
       { path: '*', element: <NotFoundPage /> },
     ],
   },
