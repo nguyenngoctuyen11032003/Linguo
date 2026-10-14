@@ -36,7 +36,8 @@ const ROUTES: RouteCase[] = [
     name: 'lesson',
     path: `/app/hoc-tap/bai/${String(DEMO_LESSONS.enHello.id)}`,
     auth: true,
-    ready: (page) => page.getByText('Nội dung demo — chưa kiểm duyệt').first(),
+    // The loaded step's title; loading and error states only carry an sr-only h1.
+    ready: (page) => page.locator('main h1:not(.sr-only)'),
   },
   { name: 'review', path: '/app/on-tap', auth: true, ready: h1 },
   {
