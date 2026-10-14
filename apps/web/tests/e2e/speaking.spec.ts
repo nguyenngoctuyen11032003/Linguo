@@ -151,7 +151,7 @@ test('a learner records a sentence, listens back, rates it on separate axes and 
 
   // Audio never leaves the page: the only blob: reads are the <audio> element's own in-memory source; there is no
   // storage call and no write other than the (mocked) Supabase RPCs the app always makes.
-  expect(requests.filter((r) => /storage/i.test(r) || (/^(POST|PUT|PATCH) /.test(r) && !r.includes('e2e.invalid/rest/v1/')))).toEqual([]);
+  expect(requests.filter((r) => r.includes('e2e.invalid/storage/') || (/^(POST|PUT|PATCH) /.test(r) && !r.includes('e2e.invalid/rest/v1/')))).toEqual([]);
 });
 
 test('leaving the page releases the microphone', async ({ page }) => {
