@@ -1,11 +1,10 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Dịch vụ công & đi lại" (TOPIK 2). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 # 은행, 병원, 가다, 먹다, 쓰다, 앉다, 주세요… đã có ở chương trình Hangul cơ bản, chỉ dùng lại (role: reuse).
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ================= bài 1: kính ngữ -(으)세요 =================
@@ -230,7 +229,7 @@ items:
           translation:
             vi: Bà ơi, bà ngồi đây ạ.
       pronunciation_note:
-        vi: ㄹ cuối 할 nối sang ㅁ - đọc liền "hal-mơ-ni".
+        vi: ㄹ cuối của 할 giữ âm "l" rồi đọc tiếp 머니 - "hal-mơ-ni".
 
   - key: ko:item:gram-honorific-subject
     type: grammar_point
@@ -337,7 +336,7 @@ items:
           translation:
             vi: Tôi muốn mở tài khoản ngân hàng.
       pronunciation_note:
-        vi: ㅌ bật hơi mạnh như "th" tiếng Việt; ㅈ sau ㅇ đọc nhẹ như "ch".
+        vi: ㅌ bật hơi mạnh như "th" tiếng Việt; ㅈ sau patchim ㅇ (âm hữu thanh) đọc êm, gần "j", không bật như "ch".
 
   - key: ko:item:phrase-tongjang-mandeulda
     type: phrase
@@ -356,7 +355,7 @@ items:
           translation:
             vi: Người nước ngoài cũng mở tài khoản được không?
       pronunciation_note:
-        vi: 통장을 nối âm [통장을]; 만들어요 [만드러요].
+        vi: Patchim ㅇ không nối âm - 통장을 vẫn đọc [통장을]; 만들어요 thì nối âm [만드러요].
       confusion:
         vi: Tiếng Việt nói "mở" tài khoản nhưng tiếng Hàn dùng 만들다 (làm); 열다 (mở) không dùng ở đây. 만들다 có ㄹ - 만드세요, 만들 수 있어요.
 
@@ -631,7 +630,7 @@ items:
       pronunciation_note:
         vi: 걸렸어요 đọc [걸려써요].
       confusion:
-        vi: Dùng trợ từ 에 - 감기에 걸리다, không dùng 감기를. Tiếng Việt "bị cảm" là trạng thái nên thường nói ở quá khứ 걸렸어요.
+        vi: Dùng trợ từ 에 - 감기에 걸리다, không dùng 감기를. Tiếng Việt nói "tôi bị cảm" ở hiện tại, nhưng tiếng Hàn thường dùng quá khứ 걸렸어요 vì việc nhiễm cảm đã xảy ra.
 
   - key: ko:item:yak
     type: vocab
@@ -941,7 +940,7 @@ items:
           translation:
             vi: Anh hãy đi tuyến số 2.
       confusion:
-        vi: Phương tiện đi với 을/를 - 버스를 타요 (không phải 버스에 타요 trong câu thông thường).
+        vi: Phương tiện thường đi với 을/를 - 버스를 타요. Người Hàn cũng nói 버스에 타요 (bước lên xe), nhưng khi nói "đi bằng xe gì" thì dùng 을/를.
 
   - key: ko:item:verb-naerida
     type: vocab

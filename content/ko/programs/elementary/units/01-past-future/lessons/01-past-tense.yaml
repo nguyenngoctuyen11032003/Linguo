@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:past-tense
 order_index: 1
 level: topik2
@@ -308,6 +307,8 @@ exercises:
         - 작년에 한국어 공부했어요.
         - 작년에 한국어를 배웠어요.
         - 저는 작년에 한국어를 배웠어요.
+        - 작년에 한국어 공부를 했어요.
+        - 작년에 한국어 배웠어요.
     known_wrong:
       - answer: 작년에 한국어를 공부해요.
         feedback_vi: 공부해요 là hiện tại. Năm ngoái là quá khứ - 공부했어요.
@@ -346,6 +347,8 @@ exercises:
         - Hôm qua là thứ Bảy. Tôi đã xem phim với một người bạn.
         - Hôm qua là thứ Bảy. Tôi đã cùng bạn xem phim.
         - Hôm qua là thứ Bảy. Mình đã xem phim với bạn.
+        - Hôm qua là thứ Bảy. Tôi đi xem phim với bạn.
+        - Hôm qua là thứ Bảy. Tôi xem phim cùng bạn.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -418,6 +421,7 @@ exercises:
         - 저는 아까 밥을 먹었어요.
         - 전 아까 밥을 먹었어요.
         - 아까 저는 밥을 먹었어요.
+        - 저는 아까 밥 먹었어요.
     known_wrong:
       - answer: 아까 밥을 먹했어요.
         feedback_vi: 했어요 không gắn được vào mọi động từ. 먹다 → 먹었어요.

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:before-after-travel
 order_index: 1
 level: topik2
@@ -46,7 +45,7 @@ body:
       vi: V-기 전에 là "trước khi V" - gắn thẳng vào gốc động từ, không chia thì - 가기 전에, 먹기 전에, 자기 전에. Thì của cả câu nằm ở động từ cuối - 여행 가기 전에 비행기표를 예약했어요.
   - type: explain
     text:
-      vi: V-(으)ㄴ 후에 (hoặc -(으)ㄴ 다음에) là "sau khi V". Gốc không patchim + ㄴ (도착한 후에), có patchim + 은 (먹은 후에), gốc ㄹ bỏ ㄹ + ㄴ (만든 후에, 싼 후에 từ 싸다).
+      vi: V-(으)ㄴ 후에 (hoặc -(으)ㄴ 다음에) là "sau khi V". Gốc không patchim + ㄴ (도착한 후에), có patchim + 은 (먹은 후에), gốc ㄹ bỏ ㄹ + ㄴ (만든 후에). 싸다 (soạn hành lý) không có patchim nên là 싼 후에.
   - type: explain
     text:
       vi: Với danh từ chỉ sự việc hoặc khoảng thời gian, chỉ cần N 전에 / N 후에 - 식사 전에, 출발 30분 전에, 1시간 후에. Thứ tự ngược tiếng Việt - "30 phút trước giờ xuất phát" thành 출발 30분 전에.
@@ -211,7 +210,7 @@ exercises:
     difficulty: 2
     item: ko:item:gram-eun-hue
     prompt:
-      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Ăn cơm xong, tôi ra sân bay.\""'
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Ăn cơm xong, tôi ra sân bay.\""
       tokens:
         - { id: t4, text: 공항에 }
         - { id: t2, text: 먹은 }
@@ -279,6 +278,8 @@ exercises:
         - 저는 여행하기 전에 비행기표를 예약했어요.
         - 여행 가기 전에 저는 비행기표를 예약했어요.
         - 여행 가기 전에 비행기 표를 예약했어요.
+        - 여행 전에 비행기표를 예약했어요.
+        - 여행 가기 전에 비행기 티켓을 예약했어요.
     known_wrong:
       - answer: 여행 갔기 전에 비행기표를 예약했어요.
         feedback_vi: -기 전에 không mang thì quá khứ - 가기 전에; quá khứ đã có ở 예약했어요.
@@ -340,7 +341,7 @@ exercises:
     difficulty: 3
     item: ko:item:gram-noun-jeon-hu
     prompt:
-      stem: '"Bạn của bạn hỏi: 비행기가 10시에 출발해요. 언제 공항에 가야 해요? Bạn muốn trả lời \"Phải đến sân bay hai tiếng trước giờ cất cánh.\" Câu nào đúng?"'
+      stem: "Bạn của bạn hỏi: 비행기가 10시에 출발해요. 언제 공항에 가야 해요? Bạn muốn trả lời \"Phải đến sân bay hai tiếng trước giờ cất cánh.\" Câu nào đúng?"
       stem_lang: vi
       options:
         - { id: s2n, text: 출발 두 시간 전에 공항에 가야 해요., lang: ko }
@@ -350,7 +351,7 @@ exercises:
     answer:
       correct_option_id: s2n
     explanation:
-      vi: Mốc + khoảng thời gian + 전에 - 출발 두 시간 전에. 후에 là "sau"; đảo thứ tự và dùng 공항을 đều sai; 출발했기 là dạng không tồn tại.
+      vi: Mốc + khoảng thời gian + 전에 - 출발 두 시간 전에. 후에 là "sau"; 두 시간 출발 전에 sai thứ tự (mốc 출발 phải đứng trước khoảng thời gian); 출발했기 là dạng không tồn tại.
     display_answer: 출발 두 시간 전에 공항에 가야 해요.
 
   - key: ko:exercise:before-after-travel-translate-to-vi
@@ -396,7 +397,7 @@ exercises:
     difficulty: 3
     item: ko:item:jim
     prompt:
-      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Trước khi xuất phát, tôi đã soạn xong hết hành lý.\""'
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Trước khi xuất phát, tôi đã soạn xong hết hành lý.\""
       tokens:
         - { id: k3, text: 짐을 }
         - { id: k5, text: 쌌어요 }

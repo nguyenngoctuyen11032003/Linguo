@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:honorific-seyo
 order_index: 1
 level: topik2
@@ -278,6 +277,7 @@ exercises:
         - 많이 드세요.
         - 할머니, 많이 잡수세요.
         - 할머니, 많이 드십시오.
+        - 많이 잡수세요.
     known_wrong:
       - answer: 할머니, 많이 먹으세요.
         feedback_vi: 먹다 có từ kính ngữ riêng là 드시다 - 많이 드세요.
@@ -331,6 +331,9 @@ exercises:
         - 김 선생님 여기에 계세요?
         - 김 선생님이 여기 계세요?
         - 김 선생님 안에 계세요?
+        - 김 선생님께서 계세요?
+        - 김 선생님 계십니까?
+        - 김 선생님 여기 계십니까?
     known_wrong:
       - answer: 김 선생님 있어요?
         feedback_vi: Hỏi thầy cô "có ở đây không" dùng kính ngữ 계세요, không dùng 있어요.
@@ -364,6 +367,10 @@ exercises:
         - Xin đợi một chút. Mời chị ngồi đây.
         - Chờ một chút ạ. Mời bạn ngồi đây.
         - Chờ chút ạ. Mời ngồi đây.
+        - Đợi chút ạ. Mời ngồi đây.
+        - Chờ một chút ạ. Mời ngồi ở đây.
+        - Đợi một chút ạ. Mời ngồi ở đây.
+        - Xin chờ một chút. Mời ngồi đây.
     rubric:
       diacritics: lenient
     known_wrong:

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:past-future-review
 order_index: 5
 level: topik2
@@ -240,6 +239,7 @@ exercises:
         - 오늘 밤에 일기를 쓸 거예요.
         - 저녁에 일기를 쓸 거예요.
         - 오늘 저녁에 일기 쓸 거예요.
+        - 저는 오늘 밤에 일기를 쓸 거예요.
     known_wrong:
       - answer: 오늘 저녁에 일기를 할 거예요.
         feedback_vi: '"Viết nhật ký" dùng 쓰다 - 일기를 쓸 거예요.'
@@ -325,6 +325,9 @@ exercises:
         - Cuối tuần tôi đã đến quán cà phê gặp bạn, rồi cùng nhau xem phim.
         - Cuối tuần tôi đã đến quán cà phê để gặp bạn. Và chúng tôi đã cùng xem phim.
         - Cuối tuần tôi đã đến quán cà phê gặp bạn. Rồi cùng bạn xem phim.
+        - Cuối tuần tôi đã đến quán cà phê để gặp bạn. Sau đó chúng tôi cùng xem phim.
+        - Cuối tuần tôi đến quán cà phê gặp bạn. Rồi chúng tôi cùng xem phim.
+        - Cuối tuần tôi đã đến quán cà phê gặp bạn. Rồi chúng tôi cùng nhau xem phim.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -379,6 +382,7 @@ exercises:
         - 지난주에 저는 친구를 못 만났어요.
         - 지난주에 친구 못 만났어요.
         - 지난주에 친구를 만나지 못했어요.
+        - 저는 지난주에 친구를 만나지 못했어요.
     known_wrong:
       - answer: 지난주에 친구를 안 만났어요.
         feedback_vi: 안 만났어요 là "không gặp" (tự chọn không gặp). "Không gặp được" là 못 만났어요.

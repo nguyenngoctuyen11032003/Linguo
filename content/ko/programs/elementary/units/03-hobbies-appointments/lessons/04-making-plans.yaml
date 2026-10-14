@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:making-plans
 order_index: 4
 level: topik2
@@ -199,6 +198,7 @@ exercises:
       orders:
         - [m1, m2, m3, m4]
         - [m2, m3, m1, m4]
+        - [m2, m3, m4]
     explanation:
       vi: Thời gian cần 에 - 몇 시에; hỏi ý người nghe dùng 만날까요 ở cuối câu. 시를 sai trợ từ, còn 만나요까요 không phải dạng đúng.
     display_answer: 우리 몇 시에 만날까요?
@@ -223,6 +223,8 @@ exercises:
         - 토요일에 시간이 있으세요?
         - 토요일 시간 있으세요?
         - 토요일에는 시간 있어요?
+        - 토요일에 시간 돼요?
+        - 토요일에 한가해요?
     known_wrong:
       - answer: 토요일에 시간 안 있어요?
         feedback_vi: Câu hỏi "có rảnh không" chỉ cần 시간 있어요?; phủ định của 있어요 là 없어요, không phải 안 있어요.
@@ -288,6 +290,9 @@ exercises:
         - 오늘 저녁 같이 먹을래요?
         - 오늘 저녁에 같이 밥 먹을래요?
         - 오늘 같이 저녁 먹어요.
+        - 오늘 저녁에 같이 저녁 먹을래요?
+        - 오늘 저녁에 같이 식사할래요?
+        - 오늘 저녁에 같이 저녁을 먹을까요?
     known_wrong:
       - answer: 오늘 가치 저녁 먹을까요?
         feedback_vi: 같이 đọc [가치] nhưng phải viết là 같이.
@@ -323,6 +328,9 @@ exercises:
         - 6시에 친구를 만나기로 했어요.
         - 친구를 6시에 만나기로 했어요.
         - 저는 6시에 친구를 만나기로 했어요.
+        - 6시에 친구랑 만나기로 했어요.
+        - 친구랑 여섯 시에 만나기로 했어요.
+        - 친구를 여섯 시에 만나기로 했어요.
     known_wrong:
       - answer: 친구하고 6시에 만났기로 했어요.
         feedback_vi: -기로 gắn vào gốc động từ (만나기로); thì quá khứ chỉ đặt ở 했어요.
@@ -421,6 +429,8 @@ exercises:
         - Xin lỗi nhưng thứ Bảy tôi không rảnh. Mình gặp vào Chủ nhật nhé?
         - Xin lỗi nhưng thứ Bảy tôi không rảnh. Chủ nhật chúng ta gặp nhé?
         - Xin lỗi nhưng thứ Bảy tôi bận. Chủ nhật mình gặp nhé?
+        - Xin lỗi nhưng thứ Bảy tôi không có thời gian. Chủ nhật gặp nhé?
+        - Xin lỗi, thứ Bảy mình không rảnh. Chủ nhật gặp nhé?
     rubric:
       diacritics: lenient
     known_wrong:

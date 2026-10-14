@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:hobbies
 order_index: 1
 level: topik2
@@ -216,6 +215,7 @@ exercises:
     answer:
       orders:
         - [t1, t2, t3, t4, t5]
+        - [t2, t3, t4, t5]
     explanation:
       vi: 보다 → 보는 것 (việc xem); 것을 có 을 nên động từ cuối là 좋아해요, không phải 좋아요. 봐요 là đuôi câu, không đứng trước 것.
     display_answer: 저는 영화를 보는 것을 좋아해요.
@@ -240,6 +240,7 @@ exercises:
         - 제 취미는 책을 읽는 것이에요.
         - 제 취미는 책을 읽는 거예요.
         - 제 취미는 책 읽는 거예요.
+        - 저는 취미가 책 읽기예요.
     known_wrong:
       - answer: 제 취미는 독서이에요.
         feedback_vi: 독서 không có patchim nên dùng 예요 - 독서예요.
@@ -306,8 +307,12 @@ exercises:
         - 제 동생은 게임하는 걸 좋아해요.
         - 동생은 게임을 좋아해요.
         - 제 동생은 게임을 좋아해요.
-        - 동생은 게임하는 것이 좋아요.
+        - 동생은 게임하기를 좋아해요.
+        - 제 동생은 게임을 하는 것을 좋아해요.
     known_wrong:
+      - answer: 동생은 게임하는 것이 좋아요.
+        feedback_vi: 좋아요 diễn tả cảm giác của chính người nói. Nói về sở thích của người khác (em tôi) thì dùng 좋아해요.
+        error_tag: like_third_person
       - answer: 동생은 게임하는 것을 좋아요.
         feedback_vi: 것을 đi với 좋아해요; nói về người khác cũng dùng 좋아해요.
         error_tag: particle_like_verb

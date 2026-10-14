@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:purpose-ability
 order_index: 4
 level: topik2
@@ -295,6 +294,10 @@ exercises:
         - 저는 운전 못해요.
         - 저는 운전을 못해요.
         - 저는 운전하지 못해요.
+        - 운전 못해요.
+        - 운전을 못해요.
+        - 저는 운전할 줄 몰라요.
+        - 운전할 줄 몰라요.
     known_wrong:
       - answer: 저는 못 운전해요.
         feedback_vi: Với "danh từ + 하다", 못 chen giữa - 운전 못 해요.
@@ -421,6 +424,7 @@ exercises:
         - 친구가 어제 우리 집에 놀러 왔어요.
         - 친구가 어제 저희 집에 놀러 왔어요.
         - 어제 제 친구가 우리 집에 놀러 왔어요.
+        - 어제 제 친구가 저희 집에 놀러 왔어요.
     known_wrong:
       - answer: 어제 친구가 우리 집에 놀으러 왔어요.
         feedback_vi: Thân 놀 có ㄹ nên chỉ thêm 러 - 놀러.

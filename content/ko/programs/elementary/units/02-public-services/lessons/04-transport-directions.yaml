@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:transport-directions
 order_index: 4
 level: topik2
@@ -281,6 +280,8 @@ exercises:
         - 어디에서 갈아타야 돼요?
         - 어디서 갈아타야 돼요?
         - 저는 어디에서 갈아타면 돼요?
+        - 어디에서 갈아탈 수 있어요?
+        - 어디서 갈아탈 수 있어요?
     known_wrong:
       - answer: 어디에 갈아타면 돼요?
         feedback_vi: Nơi đổi tàu dùng 에서 - 어디에서 갈아타요.
@@ -288,11 +289,8 @@ exercises:
       - answer: 어디에서 갈아타으면 돼요?
         feedback_vi: 갈아타 không có patchim nên chỉ thêm 면 - 갈아타면.
         error_tag: eumyeon_batchim
-      - answer: 어디에서 갈아탈 수 있어요?
-        feedback_vi: Câu này là "đổi được ở đâu", không phải "đổi ở đâu thì được"; nên dùng 갈아타면 돼요.
-        error_tag: modal_meaning
     explanation:
-      vi: Đổi tàu là 갈아타다; nơi đổi dùng 어디에서 (어디서); "thì được" là -(으)면 돼요 → 갈아타면 돼요?. Hỏi "phải đổi ở đâu" - 갈아타야 해요? - cũng đúng.
+      vi: Đổi tàu là 갈아타다; nơi đổi dùng 어디에서 (어디서); "thì được" là -(으)면 돼요 → 갈아타면 돼요?. Hỏi "phải đổi ở đâu" - 갈아타야 해요? - hay "đổi được ở đâu" - 갈아탈 수 있어요? - cũng đúng.
     display_answer: 어디에서 갈아타면 돼요?
 
   # ---------------- application ----------------

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:connecting-clauses
 order_index: 3
 level: topik2
@@ -57,7 +56,7 @@ body:
       vi: -아서/어서 chia giống -아요/-어요, chỉ thay 요 bằng 서 - 가요 → 가서, 사요 → 사서. Dùng khi việc thứ hai làm ở chỗ vừa đến hoặc với người/vật vừa nói - 카페에 가서 커피를 마셔요 (uống ở quán đó).
   - type: explain
     text:
-      vi: Với -고 và -아서, thì quá khứ chỉ đặt ở động từ cuối câu - 친구를 만나서 영화를 봤어요. Tiếng Việt cũng chỉ cần một chữ "đã" cho cả câu.
+      vi: Khi -고 nối hai việc theo thứ tự, và với -아서, thì quá khứ chỉ đặt ở động từ cuối câu - 친구를 만나서 영화를 봤어요. Tiếng Việt cũng chỉ cần một chữ "đã" cho cả câu.
   - type: deep_explain
     text:
       vi: So sánh - 학교에 가고 공부해요 là hai việc rời (đi học, và học bài - có thể ở nơi khác), còn 학교에 가서 공부해요 là "đến trường rồi học ở đó". Tương tự 김밥을 사서 먹어요 là ăn chính cuộn kimbap vừa mua. Khi muốn tách thành hai câu, dùng 그리고 (và, rồi) hoặc 하지만 (nhưng) ở đầu câu thứ hai.
@@ -321,6 +320,10 @@ exercises:
         - Cuối tuần tôi đã dọn phòng, sau đó đi dạo ở công viên.
         - Cuối tuần tôi đã dọn dẹp phòng. Rồi tôi đi dạo ở công viên.
         - Cuối tuần tôi dọn phòng rồi đi dạo trong công viên.
+        - Cuối tuần tôi đã dọn phòng. Sau đó tôi đã đi dạo ở công viên.
+        - Cuối tuần tôi đã dọn phòng. Rồi tôi đã đi dạo ở công viên.
+        - Cuối tuần tôi đã dọn phòng. Và tôi đi dạo ở công viên.
+        - Cuối tuần tôi đã dọn phòng rồi đi dạo ở công viên.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -393,6 +396,8 @@ exercises:
         - 어제 저는 카페에 가서 친구를 만났어요.
         - 어제 카페에 가서 친구 만났어요.
         - 어제 카페에서 친구를 만났어요.
+        - 저는 어제 카페에서 친구를 만났어요.
+        - 어제 친구를 만나러 카페에 갔어요.
     known_wrong:
       - answer: 어제 카페에 갔어서 친구를 만났어요.
         feedback_vi: Không gắn quá khứ vào -아서 - 가서 친구를 만났어요.

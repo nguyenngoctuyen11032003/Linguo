@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:plans-experiences
 order_index: 3
 level: topik2
@@ -212,7 +211,7 @@ exercises:
     difficulty: 2
     item: ko:item:hanbok
     prompt:
-      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Tôi chưa từng mặc thử hanbok.\""'
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi chưa từng mặc thử hanbok.\""
       tokens:
         - { id: h4, text: 적이 }
         - { id: h2, text: 입어 }
@@ -316,13 +315,11 @@ exercises:
         - 배로 제주도에 가려고 해요.
         - 제주도에 배로 가려고 해요.
         - 저는 배로 제주도에 가려고 해요.
+        - 배를 타고 제주도를 가려고 해요.
     known_wrong:
       - answer: 배를 타고 제주도에 갈려고 해요.
         feedback_vi: Chính tả chuẩn là 가려고 - 가다 không có ㄹ.
         error_tag: ryeogo_spelling
-      - answer: 배를 타고 제주도를 가려고 해요.
-        feedback_vi: Nơi đến dùng 에 - 제주도에 가다.
-        error_tag: particle_e_destination
       - answer: 배를 타고 제주도에 간 적이 있어요.
         feedback_vi: Câu này là "đã từng đi". "Định đi" là 가려고 해요.
         error_tag: ryeogo_vs_jeok
@@ -413,7 +410,7 @@ exercises:
     difficulty: 3
     item: ko:item:banghak
     prompt:
-      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Nghỉ hè tôi định đi du lịch nước ngoài.\""'
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Nghỉ hè tôi định đi du lịch nước ngoài.\""
       tokens:
         - { id: s5, text: 가려고 }
         - { id: s3, text: 때 }

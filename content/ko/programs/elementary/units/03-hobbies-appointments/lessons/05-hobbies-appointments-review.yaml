@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:hobbies-appointments-review
 order_index: 5
 level: topik2
@@ -230,6 +229,8 @@ exercises:
         - 내일 비가 와요. 우리 약속을 바꿀까요?
         - 내일 비가 와요. 약속을 바꿀래요?
         - 내일 비가 와요. 약속 시간을 바꿀까요?
+        - 내일 비가 와요. 약속 바꿀래요?
+        - 내일은 비가 와요. 우리 약속을 바꿀까요?
     known_wrong:
       - answer: 내일 비가 와요. 약속을 바꿔까요?
         feedback_vi: Trước 까요 dùng dạng -(으)ㄹ - 바꾸 → 바꿀까요.
@@ -290,6 +291,7 @@ exercises:
         - 혹시 수영할 줄 알아요?
         - 수영을 할 줄 알아요?
         - 수영 할 줄 알아요?
+        - 수영을 할 줄 아세요?
     known_wrong:
       - answer: 수영할 줄 있어요?
         feedback_vi: Cấu trúc là -(으)ㄹ 줄 알아요, không dùng 있어요.
@@ -389,6 +391,8 @@ exercises:
         - Tôi đã quyết định đi leo núi với bạn vào thứ Bảy. Nhưng trời mưa.
         - Tôi đã hẹn với bạn đi leo núi vào thứ Bảy, nhưng trời mưa.
         - Thứ Bảy tôi hẹn đi leo núi với bạn. Nhưng trời mưa.
+        - Tôi đã hẹn bạn thứ Bảy đi leo núi. Nhưng trời mưa.
+        - Tôi đã hẹn với bạn thứ Bảy đi leo núi. Nhưng trời lại mưa.
     rubric:
       diacritics: lenient
     known_wrong:

@@ -1,11 +1,10 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Sở thích, thời tiết & hẹn gặp" (TOPIK 2). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 # Động từ chung (보다, 먹다, 운동하다…), 요리, 음악, 좋아해요 thuộc unit khác, chỉ dùng lại.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ================= bài 1: sở thích =================
@@ -306,9 +305,9 @@ items:
           translation:
             vi: Bạn biết đi xe đạp không?
       pronunciation_note:
-        vi: 자전거 [자전거] - ㅈ giữa từ nghe gần "ch" nhẹ; 타요 bật hơi ㅌ.
+        vi: 자전거 [자전거] - ㅈ ở 전 nằm giữa hai âm hữu thanh nên đọc êm gần "j", ㄱ ở 거 sau ㄴ đọc gần "g"; 타요 bật hơi ㅌ.
       confusion:
-        vi: Phương tiện nào cũng dùng 타다 với 을/를 (자전거를, 버스를), không dùng 에.
+        vi: Phương tiện thường đi với 타다 bằng 을/를 (자전거를 타요, 버스를 타요). Không dùng 하다 - không nói 자전거해요.
 
   - key: ko:item:mandeulda
     type: vocab
@@ -393,7 +392,7 @@ items:
           translation:
             vi: Bạn thử làm một lần xem.
       pronunciation_note:
-        vi: Đọc liền [한번], ㄴ cuối 한 nối sang ㅂ.
+        vi: Đọc [한번] - ㄴ cuối của 한 giữ nguyên, ㅂ sau ㄴ đọc êm gần "b".
       confusion:
         vi: Viết liền 한번 là "thử, một lúc nào đó"; viết cách 한 번 là đếm "một lần" (한 번, 두 번).
 
@@ -820,7 +819,7 @@ items:
       pronunciation_note:
         vi: 했어요 đọc [해써요].
       confusion:
-        vi: Gắn -기로 vào gốc động từ, không chia thì ở động từ chính - không nói 만났기로 했어요. Thì quá khứ nằm ở 했어요.
+        vi: Gắn -기로 vào gốc động từ, không chia thì ở động từ đứng trước -기로 - không nói 만났기로 했어요. Thì quá khứ nằm ở 했어요.
 
   - key: ko:item:gachi
     type: vocab

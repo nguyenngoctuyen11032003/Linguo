@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:bank-post-office
 order_index: 2
 level: topik2
@@ -265,6 +264,9 @@ exercises:
         - 100달러를 원으로 바꿔 주세요.
         - 백 달러 원으로 환전해 주세요.
         - 100달러 원으로 환전해 주세요.
+        - 백 달러를 원화로 환전해 주세요.
+        - 100달러를 원화로 환전해 주세요.
+        - 100달러를 원화로 바꿔 주세요.
     known_wrong:
       - answer: 백 달러를 원으로 환전 주세요.
         feedback_vi: Nhờ làm việc phải chia động từ - 환전해 주세요.
@@ -319,6 +321,9 @@ exercises:
         - 베트남으로 돈을 보내고 싶어요.
         - 베트남에 돈을 보내고 싶어요.
         - 전 베트남으로 송금하고 싶어요.
+        - 베트남으로 돈을 송금하고 싶어요.
+        - 저는 베트남에 돈을 보내고 싶어요.
+        - 저는 베트남으로 돈을 보내고 싶어요.
     known_wrong:
       - answer: 베트남로 송금하고 싶어요.
         feedback_vi: 베트남 có patchim ㅁ nên dùng 으로 - 베트남으로.
@@ -350,6 +355,9 @@ exercises:
         - Cho tôi xem hộ chiếu của bạn. Hôm nay bạn có thể mở tài khoản.
         - Xin cho tôi xem hộ chiếu. Hôm nay bạn mở tài khoản được.
         - Cho tôi xem hộ chiếu nhé. Hôm nay có thể mở tài khoản.
+        - Vui lòng cho tôi xem hộ chiếu. Hôm nay có thể mở tài khoản.
+        - Cho tôi xem hộ chiếu. Hôm nay bạn có thể mở tài khoản.
+        - Xin cho tôi xem hộ chiếu. Hôm nay bạn có thể mở tài khoản.
     rubric:
       diacritics: lenient
     known_wrong:

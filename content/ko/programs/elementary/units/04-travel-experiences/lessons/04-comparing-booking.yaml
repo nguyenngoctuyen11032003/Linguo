@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:comparing-booking
 order_index: 4
 level: topik2
@@ -208,7 +207,7 @@ exercises:
     difficulty: 2
     item: ko:item:gram-jeil-gajang
     prompt:
-      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Phòng này lớn nhất.\""'
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Phòng này lớn nhất.\""
       tokens:
         - { id: j3, text: 제일 }
         - { id: j5, text: 크어요 }
@@ -275,6 +274,8 @@ exercises:
         - 오빠는 저보다 키가 커요.
         - 오빠가 저보다 키가 더 커요.
         - 저보다 형이 키가 커요.
+        - 오빠는 저보다 키가 더 커요.
+        - 우리 오빠가 저보다 키가 커요.
     known_wrong:
       - answer: 형이 키가 커요 저보다.
         feedback_vi: 저보다 phải đứng trước tính từ - 형이 저보다 키가 커요.
@@ -351,7 +352,7 @@ exercises:
     difficulty: 4
     item: ko:item:gakkapda
     prompt:
-      stem: '"Bạn muốn nói với bạn \"Khách sạn này gần ga nhất.\" Câu nào đúng?"'
+      stem: "Bạn muốn nói với bạn \"Khách sạn này gần ga nhất.\" Câu nào đúng?"
       stem_lang: vi
       options:
         - { id: r2m, text: 이 호텔이 역에서 제일 가까워요., lang: ko }
@@ -406,7 +407,7 @@ exercises:
     difficulty: 3
     item: ko:item:gram-boda-deo
     prompt:
-      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Khách sạn này rẻ hơn khách sạn kia.\""'
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Khách sạn này rẻ hơn khách sạn kia.\""
       tokens:
         - { id: c4, text: 호텔보다 }
         - { id: c6, text: 싸요 }
@@ -419,6 +420,8 @@ exercises:
       orders:
         - [c1, c2, c3, c4, c5, c6]
         - [c3, c4, c1, c2, c5, c6]
+        - [c1, c2, c3, c4, c6]
+        - [c3, c4, c1, c2, c6]
     explanation:
       vi: 저 호텔보다 = hơn khách sạn kia; 더 싸요 ở cuối. Có thể đặt 저 호텔보다 trước hoặc sau 이 호텔이, miễn là trước 더 싸요. 호텔에서 là "ở khách sạn", sai nghĩa.
     display_answer: 이 호텔이 저 호텔보다 더 싸요.

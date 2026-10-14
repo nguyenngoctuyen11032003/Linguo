@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Quá khứ, tương lai & nối câu" (TOPIK 2). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ================= bài 1: thì quá khứ =================
@@ -627,7 +626,7 @@ items:
           translation:
             vi: Tôi đã đi dạo ở công viên.
       pronunciation_note:
-        vi: 원 = ㅇ + ㅝ + ㄴ, đọc gần "uơn"; ㅇ ở 공 nối nhẹ - [공원].
+        vi: 원 = ㅇ + ㅝ + ㄴ, đọc gần "uơn"; patchim ㅇ của 공 không nối sang âm sau, nên đọc rõ [공원], không thành "고원".
       confusion:
         vi: Hoạt động trong công viên dùng 에서 (공원에서 산책해요); đi đến công viên dùng 에 (공원에 가요).
 
@@ -874,7 +873,7 @@ items:
           translation:
             vi: Vì không có thời gian nên tôi đã không đi được.
       pronunciation_note:
-        vi: 시 đọc gần "si" hơi bật; 시간이 nối âm [시가니].
+        vi: ㅅ trước ㅣ đọc gần "shi" (lưỡi hơi cong), không phải "xi" bẹt; 시간이 nối âm [시가니].
       confusion:
         vi: '"Mấy giờ" (giờ đồng hồ) là 몇 시; 시간 là khoảng thời gian - 두 시간 là "hai tiếng".'
 
@@ -959,9 +958,9 @@ items:
           translation:
             vi: Tôi đã gửi tin nhắn cho bạn.
       pronunciation_note:
-        vi: Với nghĩa tin nhắn, 자 đọc căng - [문짜].
+        vi: Viết 자 nhưng đọc căng - [문짜] (riêng từ này, không phải quy tắc chung sau ㄴ).
       confusion:
-        vi: Gửi tin nhắn là 문자를 보내요. 문자 còn có nghĩa "chữ viết", khi đó đọc [문자] không căng.
+        vi: Gửi tin nhắn là 문자를 보내요. 문자 còn có nghĩa "chữ viết" (cùng gốc), cũng đọc [문짜].
 
   - key: ko:item:jaemiitda
     type: vocab

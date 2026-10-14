@@ -1,11 +1,10 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Du lịch & trải nghiệm" (TOPIK 2). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 # Dùng lại từ unit khác: 여행하다, 예약하다, 사진을 찍다, 바다, 여권, 타다, 비싸요/싸요, V-아/어 보다, 한번…
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ================= bài 1: trước khi / sau khi =================
@@ -339,7 +338,7 @@ items:
           translation:
             vi: Ở Jeju có nhiều điểm du lịch nổi tiếng.
       pronunciation_note:
-        vi: ㅘ đọc gần "oa" - [관광지] gần "koan-koang-chi".
+        vi: ㅘ đọc gần "oa" - [관광지] gần "koan-goang-ji" (ㄱ sau ㄴ và ㅈ sau ㅇ đọc êm như g, j).
       confusion:
         vi: 관광 là Hán Hàn "quan quang" (tham quan), 지 là "địa" - nên 관광지 giống "khu du lịch". 관광객 là khách du lịch.
 
@@ -682,7 +681,7 @@ items:
           translation:
             vi: Kỳ nghỉ phép tôi định đi biển với gia đình.
       pronunciation_note:
-        vi: ㅠ đọc "yu" - [휴가] gần "hyu-ka".
+        vi: ㅠ đọc "yu" - [휴가] gần "hyu-ga" (ㄱ giữa hai nguyên âm đọc êm như g).
       confusion:
         vi: Xin nghỉ phép là 휴가를 내다; đi nghỉ là 휴가를 가다. Học sinh nghỉ thì dùng 방학.
 
@@ -878,7 +877,7 @@ items:
           translation:
             vi: Quý khách ở mấy đêm ạ? - Tôi ở 2 đêm.
       pronunciation_note:
-        vi: 몇 박 đọc [멷빡] - ㅂ thành âm căng; 거예요 đọc [거에요].
+        vi: 몇 박 đọc [멷빡] - ㅂ thành âm căng; 하실 거예요 đọc [하실 꺼에요] vì 거 sau ㄹ đọc căng.
       confusion:
         vi: 하실 có -시- kính ngữ vì lễ tân nói với khách. Khi trả lời về mình, bỏ -시- - 2박 할 거예요 hoặc ngắn gọn 2박이요.
 

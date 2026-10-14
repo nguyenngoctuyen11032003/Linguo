@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:future-plans
 order_index: 2
 level: topik2
@@ -366,6 +365,8 @@ exercises:
         - Tuần tới tôi sẽ đi du lịch đảo Jeju.
         - Tuần tới tôi sẽ đi du lịch Jeju.
         - Tôi sẽ đi du lịch đảo Jeju vào tuần sau.
+        - Tuần sau tôi sẽ du lịch Jeju.
+        - Tuần sau tôi sẽ đi du lịch ở đảo Jeju.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -394,6 +395,7 @@ exercises:
       orders:
         - [t-jega, t-ittaga, t-jeonhwahalgeyo]
         - [t-ittaga, t-jega, t-jeonhwahalgeyo]
+        - [t-ittaga, t-jeonhwahalgeyo]
     explanation:
       vi: Lời hứa của người nói dùng 전화할게요 ở cuối câu; "lát nữa" là 이따가, không phải 아까 (lúc nãy).
     display_answer: 제가 이따가 전화할게요.
@@ -416,6 +418,7 @@ exercises:
         - 저는 꼭 갈게요.
         - 꼭 갈 거예요.
         - 저는 꼭 갈 거예요.
+        - 제가 꼭 올게요.
     known_wrong:
       - answer: 꼭 갈께요.
         feedback_vi: Đọc [갈께요] nhưng viết 갈게요.

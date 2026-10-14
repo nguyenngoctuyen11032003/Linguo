@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:can-and-try
 order_index: 2
 level: topik2
@@ -212,6 +211,7 @@ exercises:
     answer:
       orders:
         - [d1, d2, d3, d4]
+        - [d2, d3, d4]
     explanation:
       vi: 운전하다 → 운전할 줄 + 몰라요. Không dùng 안 알아요 vì phủ định của 알다 là 몰라요.
     display_answer: 저는 운전할 줄 몰라요.
@@ -371,6 +371,8 @@ exercises:
         - Tôi biết lái xe nhưng không giỏi lắm.
         - Tôi biết lái xe. Nhưng tôi lái không giỏi lắm.
         - Tôi biết lái xe. Nhưng tôi không lái giỏi.
+        - Tôi biết lái xe nhưng lái chưa giỏi.
+        - Tôi biết lái xe. Nhưng tôi lái chưa giỏi.
     rubric:
       diacritics: lenient
     known_wrong:

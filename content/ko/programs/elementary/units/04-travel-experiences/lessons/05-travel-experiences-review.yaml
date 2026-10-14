@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:travel-experiences-review
 order_index: 5
 level: topik2
@@ -290,6 +289,8 @@ exercises:
         - 한라산을 등산하려고 했지만 비가 왔어요.
         - 한라산에 등산하려고 했어요. 그런데 비가 왔어요.
         - 한라산에 올라가려고 했는데 비가 왔어요.
+        - 저는 한라산에 올라가려고 했어요. 그런데 비가 왔어요.
+        - 한라산을 등산하려고 했는데 비가 왔어요.
     known_wrong:
       - answer: 한라산에 올라갈려고 했지만 비가 왔어요.
         feedback_vi: Chính tả chuẩn là 올라가려고 - 가 không có ㄹ.
@@ -323,18 +324,14 @@ exercises:
         - 이번 주말에 방이 있어요?
         - 이번 주말에 빈방 있나요?
         - 이번 주말에는 빈방 있어요?
+        - 이번 주말에 빈방 있으세요?
+        - 이번 주말에 빈방 없어요?
     known_wrong:
-      - answer: 이번 주말에 빈방 없어요?
-        feedback_vi: 없어요? hỏi "không có phòng à?". Hỏi "còn phòng không" dùng 있어요?
-        error_tag: itda_eopda
       - answer: 이번 주말 때 빈방 있어요?
         feedback_vi: 주말 dùng 에, không dùng 때 - 이번 주말에.
         error_tag: noun_ttae
-      - answer: 이번 주말에 빈방 있으세요?
-        feedback_vi: Kính ngữ -시- dùng cho người, không dùng cho đồ vật như phòng. Nói 빈방 있어요?
-        error_tag: honorific_object
     explanation:
-      vi: Còn phòng trống = 빈방(이) 있어요?; cuối tuần này = 이번 주말에.
+      vi: Còn phòng trống = 빈방(이) 있어요?; cuối tuần này = 이번 주말에. Hỏi lễ tân 빈방 있으세요? (kính ngữ cho người có phòng) hay 빈방 없어요? cũng tự nhiên.
     display_answer: 이번 주말에 빈방 있어요?
 
   # ---------------- application ----------------

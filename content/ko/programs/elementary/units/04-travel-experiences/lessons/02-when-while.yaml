@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:when-while-sightseeing
 order_index: 2
 level: topik2
@@ -212,7 +211,7 @@ exercises:
     difficulty: 2
     item: ko:item:gugyeonghada
     prompt:
-      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Chúng tôi vừa chụp ảnh vừa dạo xem chợ.\""'
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Chúng tôi vừa chụp ảnh vừa dạo xem chợ.\""
       tokens:
         - { id: p3, text: 시장을 }
         - { id: p2, text: 찍으면서 }
@@ -277,6 +276,8 @@ exercises:
         - 바다를 구경하면서 커피를 마셨어요.
         - 바다를 보면서 커피를 마셨어요.
         - 저는 바다를 보면서 커피를 마셨어요.
+        - 저는 바다를 구경하면서 커피를 마셨어요.
+        - 커피를 마시면서 바다 구경을 했어요.
     known_wrong:
       - answer: 커피를 마시고 바다를 구경했어요.
         feedback_vi: -고 là làm lần lượt. "Vừa… vừa…" cùng lúc dùng -(으)면서.
@@ -311,6 +312,7 @@ exercises:
         - 제주도 여행을 갔을 때 사진을 많이 찍었어요.
         - 제주도에 갔을 때 많은 사진을 찍었어요.
         - 제주도에 갔을 때 사진 많이 찍었어요.
+        - 제주도를 갔을 때 사진을 많이 찍었어요.
     known_wrong:
       - answer: 제주도에 갈 때 사진을 많이 찍었어요.
         feedback_vi: 갈 때 là lúc đang trên đường đi. Bạn chụp ảnh khi đã ở Jeju → 갔을 때.
@@ -318,9 +320,6 @@ exercises:
       - answer: 제주도에 갔을 때 사진을 많이 찍어요.
         feedback_vi: '"Đã chụp" là quá khứ - 찍었어요.'
         error_tag: past_tense
-      - answer: 제주도를 갔을 때 사진을 많이 찍었어요.
-        feedback_vi: Nơi đến dùng 에 - 제주도에 가다.
-        error_tag: particle_e_destination
     explanation:
       vi: Đã đến Jeju rồi mới chụp ảnh → 갔을 때. "Chụp nhiều ảnh" = 사진을 많이 찍었어요; 많이 đứng trước động từ.
     display_answer: 제주도에 갔을 때 사진을 많이 찍었어요.
@@ -333,7 +332,7 @@ exercises:
     difficulty: 3
     item: ko:item:areumdapda
     prompt:
-      stem: '"Bạn của bạn hỏi: 설악산 여행 어땠어요? Bạn muốn nói \"Phong cảnh đẹp thật sự.\" Câu nào đúng?"'
+      stem: "Bạn của bạn hỏi: 설악산 여행 어땠어요? Bạn muốn nói \"Phong cảnh đẹp thật sự.\" Câu nào đúng?"
       stem_lang: vi
       options:
         - { id: c5r, text: 경치가 정말 아름다웠어요., lang: ko }
@@ -353,7 +352,7 @@ exercises:
     difficulty: 4
     item: ko:item:gram-eumyeonseo
     prompt:
-      stem: '"Bạn kể về chuyến đi: \"Tôi lái xe, còn bạn tôi hát.\" Câu nào đúng?"'
+      stem: "Bạn kể về chuyến đi: \"Tôi lái xe, còn bạn tôi hát.\" Câu nào đúng?"
       stem_lang: vi
       options:
         - { id: k2d, text: 제가 운전하고 친구는 노래했어요., lang: ko }
@@ -388,6 +387,7 @@ exercises:
         - Khi trời mưa thì tôi đi xem bảo tàng.
         - Trời mưa thì tôi đi tham quan bảo tàng.
         - Những lúc trời mưa, tôi đi tham quan bảo tàng.
+        - Khi trời mưa thì tôi tham quan bảo tàng.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -408,7 +408,7 @@ exercises:
     difficulty: 3
     item: ko:item:gwangwangji
     prompt:
-      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Ở Jeju có nhiều điểm du lịch nổi tiếng.\""'
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Ở Jeju có nhiều điểm du lịch nổi tiếng.\""
       tokens:
         - { id: g3, text: 관광지가 }
         - { id: g4, text: 많아요 }

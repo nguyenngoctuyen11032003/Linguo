@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:public-services-review
 order_index: 5
 level: topik2
@@ -248,6 +247,7 @@ exercises:
         - 여기에서 환전이 돼요?
         - 여기서 환전돼요?
         - 여기에서 환전돼요?
+        - 여기 환전돼요?
     known_wrong:
       - answer: 여기에서 환전할 수 안 있어요?
         feedback_vi: Mẫu "được không" là 할 수 있어요?, không chen 안.
@@ -344,6 +344,7 @@ exercises:
         - 할머니, 이쪽에 앉으세요.
         - 할머니, 여기 앉으십시오.
         - 여기 앉으세요.
+        - 할머니, 이리 앉으세요.
     known_wrong:
       - answer: 할머니, 여기 앉아요.
         feedback_vi: Mời người lớn ngồi dùng kính ngữ đề nghị - 앉으세요.

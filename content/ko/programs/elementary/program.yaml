@@ -1,16 +1,15 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 key: ko:program:elementary
 language: ko
 title:
   vi: Tiếng Hàn sơ cấp 2 (TOPIK 2)
 description:
-  vi: Thì quá khứ và tương lai, nối câu, dùng dịch vụ công cộng, đi lại và hẹn gặp (TOPIK 2). Nội dung demo, chưa qua kiểm duyệt.
+  vi: Thì quá khứ và tương lai, nối câu, dùng dịch vụ công cộng và đi lại, sở thích, thời tiết, hẹn gặp và du lịch (TOPIK 2).
 kind: core
 goal_types: []
 level_from: topik2

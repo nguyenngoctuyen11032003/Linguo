@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:hospital-pharmacy
 order_index: 3
 level: topik2
@@ -11,7 +10,7 @@ title:
   vi: Ở bệnh viện và hiệu thuốc - nói chỗ đau, việc phải làm
 objectives:
   - vi: Nói triệu chứng - 머리가 아파요, 열이 나요, 기침을 해요, 감기에 걸렸어요.
-  - vi: Chia đúng động từ bất quy tắc ㅡ - 아프다 → 아파요, 바쁘다 → 바빠요, 쓰다 → 써요.
+  - vi: Chia đúng từ bất quy tắc ㅡ (tính từ, động từ) - 아프다 → 아파요, 바쁘다 → 바빠요, 쓰다 → 써요.
   - vi: Nói điều phải làm bằng V-아/어야 해요 - 약을 먹어야 해요, 쉬어야 해요.
 estimated_minutes: 16
 skills: [speaking, listening, grammar]
@@ -47,7 +46,7 @@ body:
       vi: Chỗ đau + 이/가 + 아파요 - 머리가 아파요 (đau đầu), 배가 아파요 (đau bụng), 목이 아파요 (đau họng). Tiếng Việt nói "tôi đau đầu", tiếng Hàn nói "đầu thì đau", nên chỗ đau đi với 이/가, không dùng 을/를.
   - type: explain
     text:
-      vi: 아프다 là động từ bất quy tắc ㅡ - ㅡ rơi mất trước -아/어. Âm tiết trước là 아 (ㅏ) nên thêm 아 - 아프 → 아파요; tương tự 바쁘다 → 바빠요, còn 예쁘다 → 예뻐요, thân một âm tiết 쓰다 → 써요.
+      vi: 아프다 (tính từ "đau") thuộc nhóm bất quy tắc ㅡ - ㅡ rơi mất trước -아/어. Âm tiết trước là 아 (ㅏ) nên thêm 아 - 아프 → 아파요; tương tự 바쁘다 → 바빠요, còn 예쁘다 → 예뻐요, thân một âm tiết 쓰다 → 써요.
   - type: explain
     text:
       vi: V-아/어야 해요 là "phải" - lấy dạng -아/어 rồi thêm 야 해요 - 먹어야 해요, 가야 해요, 쉬어야 해요. Nói 돼요 thay 해요 (먹어야 돼요) cũng được, nghĩa như nhau.
@@ -334,6 +333,7 @@ exercises:
         - 집에서 푹 쉬어야 돼요.
         - 집에서 쉬셔야 해요.
         - 집에서 쉬셔야 돼요.
+        - 집에서 푹 쉬셔야 해요.
     known_wrong:
       - answer: 집에 쉬어야 해요.
         feedback_vi: Nơi diễn ra hành động dùng 에서 - 집에서 쉬어요.
