@@ -15,6 +15,9 @@ export default defineConfig({
     locale: 'vi-VN',
     timezoneId: 'Asia/Ho_Chi_Minh',
     trace: 'retain-on-failure',
+    // The preview build registers the spec 10 service worker; page.route() mocks cannot see requests a worker makes,
+    // so every spec runs without it. pwa.spec.ts opts back in with test.use({ serviceWorkers: 'allow' }).
+    serviceWorkers: 'block',
   },
   projects: [
     { name: 'iphone-se', use: { ...devices['iPhone SE'] } }, // 320px wide: the narrowest supported width

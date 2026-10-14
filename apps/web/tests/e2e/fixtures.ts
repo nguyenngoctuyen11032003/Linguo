@@ -6,6 +6,9 @@ import { DEFAULT_RUBRIC, gradeExamAnswer, gradeResponse, sessionPlanSchema, type
 // Spec 11 admin payloads: the same contract-checked fixtures as the unit tests.
 import { auditEntryFixture, overviewFixture, sourceFixture } from '../../src/features/admin/admin-fixtures';
 import { aiUsageFixture, analyticsFixture, contentListFixture, exerciseDetailFixture } from '../../src/features/admin/content-fixtures';
+// Spec 10 notification payloads: the unit-test fixtures, typed by the shared contract.
+import type { AppNotification, NotificationPrefs } from '@linguo/shared';
+import { DEFAULT_PREFS as DEFAULT_NOTIFICATION_PREFS } from '../../src/features/notifications/notification-fixtures';
 
 export const SUPABASE_URL = 'https://e2e.invalid';
 export const USER_ID = '11111111-1111-4111-8111-111111111111';
@@ -2036,12 +2039,86 @@ function createAdminBackend(opts: AdminMockOptions = {}) {
 }
 // ==== END content reports + admin mocks ==========================================================================
 
+// ==== reminders + notifications mocks (spec 10, I2) ==============================================================
+// Always on (like progress): an empty inbox and default prefs, so the bell and the Home weekly card never hit a 404.
+
+export interface NotificationMockOptions {
+  /** Inbox rows, newest first; build them with makeNotification()/weeklyNotification() from notification-fixtures. */
+  items?: AppNotification[];
+  prefs?: Partial<NotificationPrefs>;
+}
+
+export interface MockNotificationMark {
+  id: string;
+  action: string;
+}
+
+function createNotificationBackend(opts: NotificationMockOptions = {}) {
+  const items = (opts.items ?? []).map((n) => ({ ...n }));
+  let prefs: NotificationPrefs = { ...DEFAULT_NOTIFICATION_PREFS, ...opts.prefs };
+  const marks: MockNotificationMark[] = [];
+  const prefPatches: Row[] = [];
+  const pushCalls: string[] = [];
+
+  function handle(pathname: string, b: Row): { status?: number; json: unknown } | null {
+    switch (pathname) {
+      case '/rest/v1/rpc/get_notification_prefs':
+        // Postgres `time` columns come back with seconds; the service trims them to HH:MM.
+        return { json: { ...prefs, remind_at: `${prefs.remind_at}:00`, quiet_start: `${prefs.quiet_start}:00`, quiet_end: `${prefs.quiet_end}:00` } };
+      case '/rest/v1/rpc/set_notification_prefs': {
+        const { reset_backoff: reset, ...patch } = (b.p ?? {}) as Row;
+        prefPatches.push({ ...(b.p as Row) });
+        prefs = { ...prefs, ...patch, ...(reset ? { backoff_level: 0, ignored_streak: 0 } : {}) };
+        return { json: prefs };
+      }
+      case '/rest/v1/rpc/list_notifications': {
+        const limit = Number(b.p_limit ?? 20);
+        const older = b.p_before ? items.filter((n) => n.created_at < String(b.p_before)) : items;
+        return { json: { items: older.slice(0, limit), has_more: older.length > limit } };
+      }
+      case '/rest/v1/rpc/unread_notification_count':
+        return { json: items.filter((n) => !n.read_at).length };
+      case '/rest/v1/rpc/mark_notification': {
+        const row = items.find((n) => n.id === b.p_id);
+        if (!row) return rpcError('notification_not_found');
+        if (b.p_action !== 'read' && b.p_action !== 'clicked') return rpcError('invalid_action');
+        const now = new Date().toISOString();
+        row.read_at ??= now;
+        if (b.p_action === 'clicked') row.clicked_at ??= now;
+        marks.push({ id: String(b.p_id), action: String(b.p_action) });
+        return { status: 204, json: null };
+      }
+      case '/rest/v1/rpc/save_push_subscription':
+        pushCalls.push('save');
+        prefs = { ...prefs, push_enabled: true };
+        return { status: 204, json: null };
+      case '/rest/v1/rpc/delete_push_subscription':
+        pushCalls.push('delete');
+        return { status: 204, json: null };
+    }
+    return null;
+  }
+
+  return {
+    handle,
+    controls: {
+      marks: () => [...marks],
+      prefPatches: () => prefPatches.map((p) => ({ ...p })),
+      prefs: () => ({ ...prefs }),
+      pushCalls: () => [...pushCalls],
+    },
+  };
+}
+// ==== END reminders + notifications mocks ========================================================================
+
 interface MockOptions {
   /** Content reports and the staff admin RPCs (spec 11); staff_role() is null unless set. */
   admin?: AdminMockOptions;
   /** AI tutor function and RPCs (spec 5). */
   ai?: AiMockOptions;
   displayName?: string;
+  /** Reminder prefs, inbox and push RPCs (spec 10). Always mocked: empty inbox and default prefs unless set. */
+  notifications?: NotificationMockOptions;
   /** Placement test backend (spec 4). */
   diagnostic?: DiagnosticMockOptions;
   /** Exam practice RPCs (spec 9). */
@@ -2076,6 +2153,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
   const exams = createExamBackend(paths, opts.exam); // spec 9
   const progress = createProgressBackend(opts.progress); // spec 8, G4
   const admin = createAdminBackend(opts.admin); // spec 11
+  const notifications = createNotificationBackend(opts.notifications); // spec 10
 
   await page.route(`${SUPABASE_URL}/**`, async (route) => {
     const url = new URL(route.request().url());
@@ -2151,7 +2229,8 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
           sessions.handle(url.pathname, body()) ??
           exams.handle(url.pathname, body()) ??
           progress.handle(url.pathname, body()) ??
-          admin.handle(url.pathname, body()))
+          admin.handle(url.pathname, body()) ??
+          notifications.handle(url.pathname, body()))
         : null;
     if (lessonReply) {
       if (lessonReply.status === 204) return route.fulfill({ status: 204, body: '' });
@@ -2171,6 +2250,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
     exam: exams.controls,
     progress: progress.controls,
     admin: admin.controls,
+    notifications: notifications.controls,
     paths: () => paths.map((p) => ({ ...p })),
   };
 }
