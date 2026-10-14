@@ -81,6 +81,24 @@ Nội dung bài học nằm trong `content/**/*.yaml`. Deploy **không** tự nh
 4. Chạy `pnpm content:push` từ máy local chỉ khi thật cần: phải đặt **cả hai** biến môi trường `SUPABASE_URL` và `SUPABASE_SERVICE_ROLE_KEY` trong shell, không ghi vào file nào được commit (script từ chối chạy nếu thiếu và không bao giờ in key ra). Ví dụ (Git Bash): `SUPABASE_URL=https://<ref>.supabase.co SUPABASE_SERVICE_ROLE_KEY=sb_secret_… pnpm content:push`.
 5. **Không bao giờ** đặt token/khoá server vào biến `VITE_*` (chúng bị đóng gói vào JavaScript công khai). `scripts/check-public-env.mjs` chặn mọi biến `VITE_*` có tên chứa `SERVICE_ROLE`, `GEMINI`, `SECRET`, `ACCESS_TOKEN`…
 
+## Quản trị nội dung
+Trang `/quan-tri` (spec 11) chỉ mở cho tài khoản có vai trò trong bảng `public.staff_roles`: `editor` (xem nội dung kèm đáp án, xử lý báo lỗi) < `reviewer` (thêm: chuyển trạng thái duyệt) < `admin` (thêm: thống kê, mức dùng AI, nhật ký, cấp vai trò, ép publish khi còn báo lỗi "Đáp án sai"). Người không có vai trò mở `/quan-tri` sẽ thấy trang 404.
+
+**Bootstrap admin đầu tiên** (chỉ làm một lần, sau khi migration `20261015000410_admin.sql` đã được Deploy áp):
+1. Người đó đăng nhập Linguo một lần để có tài khoản trong `auth.users`.
+2. Supabase Dashboard → project → **SQL Editor** (chạy với quyền `postgres`), thay email rồi chạy:
+   ```sql
+   insert into public.staff_roles (user_id, role)
+   select id, 'admin' from auth.users where email = 'admin@example.com'
+   on conflict (user_id) do update set role = excluded.role, granted_at = now();
+   ```
+   Kiểm tra: `select s.role, u.email from public.staff_roles s join auth.users u on u.id = s.user_id;`
+3. Đăng xuất rồi đăng nhập lại (hoặc tải lại trang) → `/quan-tri` hiện ra.
+
+**Cấp/thu hồi vai trò về sau:** admin gọi RPC `admin_grant_role(p_user_id, p_role)` (`p_role = null` để thu hồi); mỗi lần cấp/thu hồi được ghi vào `admin_audit_log` (xem ở trang "Nhật ký"). Thay đổi bằng SQL thủ công **không** được ghi nhật ký, nên chỉ dùng SQL cho lần bootstrap hoặc khi mất hết admin. Không bao giờ cấp vai trò qua `service_role` từ code web.
+
+**Trạng thái duyệt và import nội dung:** reviewer chuyển trạng thái trên trang quản trị (`admin_set_status`, ghi `reviewed_by`/`reviewed_at`). Khi chạy lại **Publish content**, dòng có nội dung không đổi (cùng `content_hash`) chỉ nhận trạng thái từ YAML nếu đó là đúng một bước hợp lệ từ trạng thái hiện tại; nếu không, trạng thái trong database được giữ (migration `20261015000420_import_keep_published.sql`). Vì vậy import không bao giờ hạ một dòng `published` xuống `draft`/`in_review`/`approved`; lưu trữ (`archived`, hoặc xoá khỏi `content/`) vẫn hoạt động. Nội dung đã sửa (hash đổi) luôn nhận trạng thái ghi trong YAML, nên hãy cập nhật YAML theo quyết định duyệt khi sửa nội dung.
+
 ## Bảo trì dữ liệu (Maintenance)
 Workflow `.github/workflows/maintenance.yml` chạy **hằng ngày** (cron `17 19 * * *` UTC, tức 02:17 giờ Việt Nam) và chạy tay được qua Actions → **Maintenance** → **Run workflow**.
 
