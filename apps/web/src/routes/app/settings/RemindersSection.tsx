@@ -20,6 +20,7 @@ import {
   type ReminderDraft,
 } from '@/features/notifications/validation';
 import { cn } from '@/lib/cn';
+import { SECTION_SCROLL_MARGIN } from './section-state';
 
 const MAX_OPTIONS = Array.from(
   { length: REMINDER_RULES.max_per_day_max - REMINDER_RULES.max_per_day_min + 1 },
@@ -27,7 +28,7 @@ const MAX_OPTIONS = Array.from(
 );
 
 const DEVICE_NOTE = 'Bạn vẫn thấy nhắc nhở trong app kể cả khi không bật thông báo thiết bị.';
-const BACKOFF_TEXT = 'Linguo đang nhắc thưa hơn vì bạn bận — bấm để nhắc như cũ';
+const BACKOFF_TEXT = 'Linguo đang nhắc thưa hơn vì dạo này bạn bận. Muốn nhận nhắc đều đặn như trước thì bấm nút bên dưới.';
 
 interface SwitchRowProps {
   label: string;
@@ -163,6 +164,8 @@ function ReminderForm({ prefs, saving, onSave }: { prefs: NotificationPrefs; sav
   const quietErrorId = useId();
   const maxErrorId = useId();
 
+  const saveHintId = useId();
+
   const change = (patch: Partial<ReminderDraft>) => setEdited({ ...draft, ...patch });
 
   const submit = async (event: FormEvent) => {
@@ -285,10 +288,12 @@ function ReminderForm({ prefs, saving, onSave }: { prefs: NotificationPrefs; sav
       />
 
       <div className="flex flex-wrap items-center gap-3">
-        <Button type="submit" loading={saving} disabled={!dirty}>
+        <Button type="submit" loading={saving} disabled={!dirty} aria-describedby={saveHintId}>
           Lưu cài đặt nhắc học
         </Button>
-        {dirty && <p className="text-sm text-muted">Bạn có thay đổi chưa lưu.</p>}
+        <p id={saveHintId} className="text-sm text-muted">
+          {dirty ? 'Bạn có thay đổi chưa lưu.' : 'Chưa có thay đổi nào để lưu.'}
+        </p>
       </div>
     </form>
   );
@@ -307,7 +312,7 @@ export function RemindersSection() {
   };
 
   return (
-    <section id="nhac-hoc" aria-labelledby="reminders-heading">
+    <section id="nhac-hoc" aria-labelledby="reminders-heading" className={SECTION_SCROLL_MARGIN}>
       <SolidCard className="space-y-5">
         <h2 id="reminders-heading" className="text-lg font-bold">
           Nhắc học
@@ -330,15 +335,15 @@ export function RemindersSection() {
         {prefs && (
           <>
             {prefs.backoff_level > 0 && (
-              <button
-                type="button"
-                onClick={() => void resetBackoff()}
-                disabled={saving}
-                className="flex min-h-11 w-full items-start gap-2 rounded-2xl bg-primary/10 px-4 py-3 text-left text-sm font-medium text-text transition-colors hover:bg-primary/15 disabled:cursor-wait disabled:opacity-60"
-              >
-                <Info aria-hidden className="mt-0.5 size-4 shrink-0 text-primary" />
-                {BACKOFF_TEXT}
-              </button>
+              <div className="space-y-2 rounded-2xl bg-primary/10 px-4 py-3">
+                <p className="flex items-start gap-2 text-sm font-medium text-text">
+                  <Info aria-hidden className="mt-0.5 size-4 shrink-0 text-primary" />
+                  {BACKOFF_TEXT}
+                </p>
+                <Button variant="ghost" onClick={() => void resetBackoff()} disabled={saving}>
+                  Nhắc như cũ
+                </Button>
+              </div>
             )}
             <ReminderForm prefs={prefs} saving={saving} onSave={save} />
             {status === 'ready' && error && (

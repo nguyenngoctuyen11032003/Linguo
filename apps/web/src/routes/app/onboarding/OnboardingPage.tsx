@@ -27,7 +27,7 @@ import { useReferenceHours } from '@/features/learning-paths/useReferenceHours';
 import { useProfile } from '@/features/profile/ProfileProvider';
 import { todayIso } from '@/lib/dates';
 import { requireSupabase } from '@/lib/supabase';
-import { isStepValid, resolveStep, resolveTargetDate, scheduleOf, visibleSteps, type StepNumber } from './logic';
+import { isStepValid, resolveStep, resolveTargetDate, scheduleOf, stepHint, visibleSteps, type StepNumber } from './logic';
 import { OnboardingCelebration } from './OnboardingCelebration';
 import { OnboardingProgress } from './OnboardingProgress';
 import { StepCurrentLevel } from './StepCurrentLevel';
@@ -290,6 +290,7 @@ export function OnboardingPage() {
   const allTaken = availableCodes.length > 0 && availableCodes.every((code) => taken.includes(code));
 
   const valid = isStepValid(step, data, { taken, today }) && !(step >= 3 && reference.status !== 'ready');
+  const hint = stepHint(step, valid, reference.status === 'ready');
 
   return (
     <div className="flex min-h-hero flex-col bg-bg">
@@ -317,7 +318,7 @@ export function OnboardingPage() {
           )}
         </div>
       </header>
-      <main id="main" className="mx-auto w-full max-w-xl flex-1 px-safe pb-[calc(7rem+env(safe-area-inset-bottom,0px))] pt-3">
+      <main id="main" className="mx-auto w-full max-w-xl flex-1 px-safe pb-[calc(9rem+env(safe-area-inset-bottom,0px))] pt-3">
         <p className="text-sm text-muted">
           Bước {index + 1}/{steps.length}
         </p>
@@ -337,9 +338,23 @@ export function OnboardingPage() {
                 </Link>
               </div>
             ) : (
-              <Button variant="accent" size="lg" block disabled={!valid} onClick={goNext}>
-                Tiếp tục
-              </Button>
+              <>
+                {hint && (
+                  <p id="onboarding-next-hint" className="mb-2 text-center text-sm text-muted">
+                    {hint}
+                  </p>
+                )}
+                <Button
+                  variant="accent"
+                  size="lg"
+                  block
+                  disabled={!valid}
+                  aria-describedby={hint ? 'onboarding-next-hint' : undefined}
+                  onClick={goNext}
+                >
+                  Tiếp tục
+                </Button>
+              </>
             )}
           </div>
         </footer>

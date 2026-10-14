@@ -50,7 +50,7 @@ test('a learner reports a lesson exercise and follows it in Settings', async ({ 
 
   expect(mock.admin.reports()).toMatchObject([{ target_kind: 'exercise', target_id: FIRST_EXERCISE!.id, reason: 'unclear', note: 'Câu hỏi nên có ví dụ.' }]);
 
-  await page.goto('/app/cai-dat');
+  await page.goto('/app/cai-dat#bao-loi');
   const section = myReports(page);
   await expect(section.getByText(FIRST_STEM)).toBeVisible({ timeout: 15_000 });
   await expect(section.getByText('Đang chờ xem')).toBeVisible();
@@ -79,7 +79,7 @@ test('a staff member resolves a report from the queue and the learner sees it fi
   await expectNoHorizontalScroll(page);
   expect(mock.admin.reports()).toMatchObject([{ status: 'fixed', resolution_note: 'Đã sửa đáp án trong bản 2.' }]);
 
-  await page.goto('/app/cai-dat');
+  await page.goto('/app/cai-dat#bao-loi');
   const section = myReports(page);
   await expect(section.getByText('Đã sửa', { exact: true })).toBeVisible({ timeout: 15_000 });
   await expect(section.getByText('Đã sửa đáp án trong bản 2.')).toBeVisible();

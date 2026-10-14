@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
 import { LogOut, Monitor, Moon, Sun } from 'lucide-react';
-import { useNavigate } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
 import { DEFAULT_TIMEZONE, fieldErrors, profileUpdateSchema, type ThemePreference } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
@@ -29,17 +29,15 @@ import { LearningPathsSection } from './settings/LearningPathsSection';
 import { MotivationSection } from './settings/MotivationSection';
 import { MyReportsSection } from './settings/MyReportsSection';
 import { RemindersSection } from './settings/RemindersSection';
+import { COLLAPSIBLE_SECTION_IDS, jumpToSection, SECTION_SCROLL_MARGIN } from './settings/section-state';
+import { SettingsJumpList } from './settings/SettingsJumpList';
+import { timeZoneLabel, timeZoneOptions } from './settings/timezones';
 
 const THEME_OPTIONS: Array<{ value: ThemePreference; label: string; icon: typeof Sun }> = [
   { value: 'light', label: 'Sáng', icon: Sun },
   { value: 'dark', label: 'Tối', icon: Moon },
   { value: 'system', label: 'Theo hệ thống', icon: Monitor },
 ];
-
-function timeZones(current: string): string[] {
-  const all = typeof Intl.supportedValuesOf === 'function' ? Intl.supportedValuesOf('timeZone') : [DEFAULT_TIMEZONE, 'UTC'];
-  return all.includes(current) ? all : [current, ...all];
-}
 
 /** "3 câu trả lời", "2 lượt chấm thẻ ôn tập" or both: what still waits in the offline outboxes. */
 function pendingSummary(answers: number, grades: number): string {
@@ -57,6 +55,7 @@ export function SettingsPage() {
   const motionPrefs = useMotionPrefs();
   const toast = useToast();
   const navigate = useNavigate();
+  const { hash } = useLocation();
   const outbox = useOutboxSyncContext();
   const pendingAnswers = outbox.pendingCount;
   const pendingGrades = outbox.reviews.pendingCount;
@@ -76,7 +75,13 @@ export function SettingsPage() {
   const prefSeq = useRef(0);
   const prefQueue = useRef<Promise<void>>(Promise.resolve());
   const systemForcesMotion = motionPrefs.reduceMotion && !motionPrefs.userReduceMotion;
-  const zones = useMemo(() => timeZones(timezone), [timezone]);
+  const zones = useMemo(() => timeZoneOptions(timezone), [timezone]);
+
+  // A link such as /app/cai-dat#bao-loi must land on an open section.
+  useEffect(() => {
+    const id = hash.slice(1);
+    if (COLLAPSIBLE_SECTION_IDS.includes(id)) jumpToSection(id);
+  }, [hash]);
 
   useEffect(() => {
     if (profile) {
@@ -191,7 +196,9 @@ export function SettingsPage() {
     <div className="space-y-6">
       <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">Cài đặt</h1>
 
-      <section aria-labelledby="profile-heading">
+      <SettingsJumpList />
+
+      <section id="ho-so" aria-labelledby="profile-heading" className={SECTION_SCROLL_MARGIN}>
         <SolidCard className="space-y-4">
           <h2 id="profile-heading" className="text-lg font-bold">
             Hồ sơ
@@ -213,7 +220,11 @@ export function SettingsPage() {
                   <Input {...a11y} invalid={invalid} autoComplete="nickname" value={displayName} onChange={(e) => setDisplayName(e.target.value)} />
                 )}
               </FormField>
-              <FormField label="Múi giờ" hint="Dùng để tính lịch ôn tập theo ngày của bạn." error={errors.timezone}>
+              <FormField
+                label="Múi giờ"
+                hint="Dùng để tính lịch ôn tập theo ngày của bạn. Mỗi lần đổi múi giờ cần cách nhau ít nhất 24 giờ."
+                error={errors.timezone}
+              >
                 {({ invalid, ...a11y }) => (
                   <select
                     {...a11y}
@@ -224,7 +235,7 @@ export function SettingsPage() {
                   >
                     {zones.map((zone) => (
                       <option key={zone} value={zone}>
-                        {zone.replaceAll('_', ' ')}
+                        {timeZoneLabel(zone)}
                       </option>
                     ))}
                   </select>
@@ -240,7 +251,7 @@ export function SettingsPage() {
 
       <LearningPathsSection />
 
-      <section aria-labelledby="display-heading">
+      <section id="giao-dien" aria-labelledby="display-heading" className={SECTION_SCROLL_MARGIN}>
         <SolidCard className="space-y-5">
           <h2 id="display-heading" className="text-lg font-bold">
             Giao diện

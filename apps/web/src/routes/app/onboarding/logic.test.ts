@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { isStepValid, resolveStep, resolveTargetDate, scheduleOf, targetDateError, visibleSteps } from './logic';
+import { isStepValid, resolveStep, resolveTargetDate, scheduleOf, stepHint, targetDateError, visibleSteps } from './logic';
 
 const today = '2026-10-13';
 
@@ -55,5 +55,14 @@ describe('onboarding logic', () => {
     expect(resolveStep(4, { ...full, currentLevel: undefined }, ctx)).toBe(3);
     expect(resolveStep(3, { ...full, startPoint: 'new' }, ctx)).toBe(4);
     expect(resolveStep(2, {}, ctx)).toBe(1);
+  });
+
+  it('says why "Tiếp tục" is disabled, and nothing once the step is valid', () => {
+    expect(stepHint(1, false, true)).toBe('Chọn một ngôn ngữ để tiếp tục.');
+    expect(stepHint(5, false, true)).toBe('Kiểm tra lại thời gian học và thời hạn để tiếp tục.');
+    expect(stepHint(3, false, false)).toBe('Đang chờ bảng trình độ tải xong.');
+    expect(stepHint(1, false, false)).toBe('Chọn một ngôn ngữ để tiếp tục.');
+    expect(stepHint(2, true, true)).toBeNull();
+    expect(stepHint(6, false, true)).toBeNull();
   });
 });

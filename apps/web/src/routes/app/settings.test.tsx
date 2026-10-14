@@ -1,4 +1,4 @@
-import { screen, waitFor } from '@testing-library/react';
+import { screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { stubMatchMedia } from '../../../tests/unit/match-media';
@@ -9,6 +9,7 @@ import { createOutbox } from '@/features/lesson-player/outbox';
 import { createReviewOutbox } from '@/features/reviews/outbox';
 import { gradeArgs, gradeResult } from '@/features/reviews/review-fixtures';
 import { SettingsPage } from './SettingsPage';
+import { resetSectionStateForTests } from './settings/section-state';
 
 const mocks = vi.hoisted(() => ({
   updateProfile: vi.fn(),
@@ -57,6 +58,7 @@ vi.mock('@/lib/supabase', () => ({
 }));
 
 beforeEach(() => {
+  resetSectionStateForTests();
   mocks.updateProfile.mockReset().mockResolvedValue(undefined);
   mocks.updatePreferences.mockReset().mockResolvedValue(undefined);
   mocks.signOut.mockReset().mockResolvedValue({ error: null });
@@ -335,5 +337,50 @@ describe('SettingsPage', () => {
     renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
     expect(screen.getByText('Hệ điều hành đang bật giảm chuyển động.')).toBeInTheDocument();
     expect(screen.getByRole('switch', { name: 'Giảm chuyển động' })).toHaveAttribute('aria-checked', 'false');
+  });
+
+  it('shows a jump list with a link to every section', () => {
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    const nav = screen.getByRole('navigation', { name: 'Đi tới mục cài đặt' });
+    for (const label of ['Hồ sơ', 'Lộ trình', 'Giao diện', 'Động lực', 'Nhắc học', 'AI và riêng tư', 'Báo lỗi', 'Dữ liệu và tài khoản']) {
+      expect(within(nav).getByRole('link', { name: label })).toBeInTheDocument();
+    }
+    expect(within(nav).getByRole('link', { name: 'Nhắc học' })).toHaveAttribute('href', '#nhac-hoc');
+  });
+
+  it('folds the rarely used sections behind labelled disclosure buttons', () => {
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    for (const name of ['Báo lỗi của tôi', 'Tài khoản và dữ liệu']) {
+      const heading = screen.getByRole('heading', { level: 2, name });
+      const details = heading.closest('details');
+      expect(details).not.toBeNull();
+      expect(details).not.toHaveAttribute('open');
+      expect(heading.closest('summary')).not.toBeNull();
+    }
+  });
+
+  it('opens a folded section from the jump list, focuses its heading and remembers it for the session', async () => {
+    const { unmount } = renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    const nav = screen.getByRole('navigation', { name: 'Đi tới mục cài đặt' });
+    await userEvent.click(within(nav).getByRole('link', { name: 'Dữ liệu và tài khoản' }));
+    const heading = screen.getByRole('heading', { level: 2, name: 'Tài khoản và dữ liệu' });
+    expect(heading.closest('details')).toHaveAttribute('open');
+    await waitFor(() => expect(heading).toHaveFocus());
+    unmount();
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    expect(screen.getByRole('heading', { level: 2, name: 'Tài khoản và dữ liệu' }).closest('details')).toHaveAttribute('open');
+    expect(screen.getByRole('heading', { level: 2, name: 'Báo lỗi của tôi' }).closest('details')).not.toHaveAttribute('open');
+  });
+
+  it('opens the section named in the URL hash', async () => {
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat#bao-loi' });
+    await waitFor(() => expect(screen.getByRole('heading', { level: 2, name: 'Báo lỗi của tôi' }).closest('details')).toHaveAttribute('open'));
+  });
+
+  it('shows a Vietnamese time zone label', () => {
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    const select = screen.getByLabelText('Múi giờ');
+    expect(within(select).getByRole('option', { name: 'Việt Nam (Hà Nội, TP. Hồ Chí Minh)' })).toBeInTheDocument();
+    expect(within(select).queryByRole('option', { name: /Saigon/ })).not.toBeInTheDocument();
   });
 });

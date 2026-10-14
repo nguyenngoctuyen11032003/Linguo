@@ -77,8 +77,13 @@ describe('AccountDataSection', () => {
     expect(within(dialog).getByText(/Mọi lộ trình/)).toBeInTheDocument();
     const confirm = within(dialog).getByRole('button', { name: 'Xoá vĩnh viễn' });
     const input = within(dialog).getByLabelText(/để xác nhận/);
-    await userEvent.type(input, 'xoa tai khoan');
+    expect(input).toHaveAccessibleDescription(/có dấu hay không dấu đều được/);
+    expect(confirm).toHaveAccessibleDescription(/có dấu hay không dấu đều được/);
+    await userEvent.type(input, 'xoa tai');
     expect(confirm).toBeDisabled();
+    await userEvent.clear(input);
+    await userEvent.type(input, '  Xóa  tài khoản ');
+    expect(confirm).toBeEnabled();
     await userEvent.clear(input);
     await userEvent.type(input, 'XOA TAI KHOAN');
     expect(confirm).toBeEnabled();

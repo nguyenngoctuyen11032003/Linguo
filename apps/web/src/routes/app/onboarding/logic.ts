@@ -71,6 +71,22 @@ export function isStepValid(step: StepNumber, data: OnboardingDraftData, ctx: St
   }
 }
 
+const STEP_HINTS: Record<StepNumber, string> = {
+  1: 'Chọn một ngôn ngữ để tiếp tục.',
+  2: 'Chọn điểm xuất phát của bạn để tiếp tục.',
+  3: 'Chọn trình độ hiện tại để tiếp tục.',
+  4: 'Chọn mục tiêu và bậc muốn đạt để tiếp tục.',
+  5: 'Kiểm tra lại thời gian học và thời hạn để tiếp tục.',
+  6: '',
+};
+
+/** One line saying why "Tiếp tục" is disabled, or null when it is enabled. */
+export function stepHint(step: StepNumber, valid: boolean, referenceReady: boolean): string | null {
+  if (valid) return null;
+  if (step >= 3 && !referenceReady) return 'Đang chờ bảng trình độ tải xong.';
+  return STEP_HINTS[step] || null;
+}
+
 export { TARGET_DATE_PAST, TARGET_DATE_TOO_FAR, targetDateError } from '@/features/learning-paths/target-date';
 
 /**

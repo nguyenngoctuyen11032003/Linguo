@@ -1,4 +1,4 @@
-import { act, render, screen } from '@testing-library/react';
+﻿import { act, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { InstallAppSection } from './InstallAppSection';
@@ -222,7 +222,7 @@ describe('InstallAppSection', () => {
       render(<InstallAppSection />);
       expect(screen.getByRole('heading', { name: 'Cài ứng dụng' })).toBeInTheDocument();
       expect(screen.getByText('Chia sẻ')).toBeInTheDocument();
-      expect(screen.getByText('Thêm vào MH chính')).toBeInTheDocument();
+      expect(screen.getByText('Thêm vào màn hình chính')).toBeInTheDocument();
       expect(screen.queryByRole('button', { name: 'Cài Linguo lên máy' })).not.toBeInTheDocument();
     } finally {
       ua.mockRestore();

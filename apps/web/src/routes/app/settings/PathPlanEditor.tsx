@@ -193,8 +193,13 @@ export function PathPlanEditor({ path, onSaved, onCancel, onSavingChange }: Prop
           {error}
         </p>
       )}
+      {noTargets && (
+        <p id="plan-save-hint" className="px-1 text-sm text-muted">
+          Chọn một mục tiêu khác ở trên để lưu kế hoạch.
+        </p>
+      )}
       <div className="flex flex-wrap gap-2">
-        <Button type="submit" loading={saving} disabled={noTargets}>
+        <Button type="submit" loading={saving} disabled={noTargets} aria-describedby={noTargets ? 'plan-save-hint' : undefined}>
           Lưu kế hoạch
         </Button>
         <Button variant="ghost" disabled={saving} onClick={onCancel}>

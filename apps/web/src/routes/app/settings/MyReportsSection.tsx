@@ -1,12 +1,12 @@
 import { DEFAULT_TIMEZONE, REPORT_REASON_LABELS_VI, type MyReport, type ReportStatus } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { Skeleton } from '@/components/ui/Skeleton';
-import { SolidCard } from '@/components/ui/SolidCard';
 import { REPORT_STATUS_LABELS_VI, REPORT_TARGET_LABELS_VI } from '@/features/content-reports/labels';
 import { useMyReports } from '@/features/content-reports/useMyReports';
 import { useProfile } from '@/features/profile/ProfileProvider';
 import { cn } from '@/lib/cn';
 import { formatDateVi, todayIso } from '@/lib/dates';
+import { CollapsibleSection } from './CollapsibleSection';
 
 const STATUS_TONES: Record<ReportStatus, string> = {
   open: 'border-border bg-text/5',
@@ -28,41 +28,36 @@ export function MyReportsSection() {
   const timeZone = profile?.timezone ?? DEFAULT_TIMEZONE;
 
   return (
-    <section aria-labelledby="my-reports-heading">
-      <SolidCard className="space-y-3">
-        <h2 id="my-reports-heading" className="text-lg font-bold">
-          Báo lỗi của tôi
-        </h2>
-        <p className="text-[15px]">Những lỗi nội dung bạn đã báo và cách Linguo xử lý. Cảm ơn bạn đã giúp bài học tốt hơn.</p>
-        {status === 'loading' && (
-          <div role="status" className="space-y-2">
-            <span className="sr-only">Đang tải báo lỗi…</span>
-            <Skeleton className="block h-16 w-full rounded-2xl" />
-            <Skeleton className="block h-16 w-full rounded-2xl" />
-          </div>
-        )}
-        {status === 'error' && (
-          <div role="alert" className="space-y-2">
-            <p className="text-[15px] text-error-text">{error ?? 'Không tải được danh sách báo lỗi.'}</p>
-            <Button variant="ghost" onClick={reload}>
-              Thử lại
-            </Button>
-          </div>
-        )}
-        {status === 'ready' && reports.length === 0 && (
-          <p className="text-[15px] text-muted" data-testid="my-reports-empty">
-            Bạn chưa gửi báo lỗi nào. Khi thấy nội dung sai, hãy bấm “Báo lỗi nội dung” ngay trong bài học hoặc thẻ ôn.
-          </p>
-        )}
-        {status === 'ready' && reports.length > 0 && (
-          <ul className="space-y-2">
-            {reports.map((report) => (
-              <ReportRow key={report.id} report={report} timeZone={timeZone} />
-            ))}
-          </ul>
-        )}
-      </SolidCard>
-    </section>
+    <CollapsibleSection id="bao-loi" headingId="my-reports-heading" title="Báo lỗi của tôi" contentClassName="space-y-3">
+      <p className="text-[15px]">Những lỗi nội dung bạn đã báo và cách Linguo xử lý. Cảm ơn bạn đã giúp bài học tốt hơn.</p>
+      {status === 'loading' && (
+        <div role="status" className="space-y-2">
+          <span className="sr-only">Đang tải báo lỗi…</span>
+          <Skeleton className="block h-16 w-full rounded-2xl" />
+          <Skeleton className="block h-16 w-full rounded-2xl" />
+        </div>
+      )}
+      {status === 'error' && (
+        <div role="alert" className="space-y-2">
+          <p className="text-[15px] text-error-text">{error ?? 'Không tải được danh sách báo lỗi.'}</p>
+          <Button variant="ghost" onClick={reload}>
+            Thử lại
+          </Button>
+        </div>
+      )}
+      {status === 'ready' && reports.length === 0 && (
+        <p className="text-[15px] text-muted" data-testid="my-reports-empty">
+          Bạn chưa gửi báo lỗi nào. Khi thấy nội dung sai, hãy bấm “Báo lỗi nội dung” ngay trong bài học hoặc thẻ ôn.
+        </p>
+      )}
+      {status === 'ready' && reports.length > 0 && (
+        <ul className="space-y-2">
+          {reports.map((report) => (
+            <ReportRow key={report.id} report={report} timeZone={timeZone} />
+          ))}
+        </ul>
+      )}
+    </CollapsibleSection>
   );
 }
 

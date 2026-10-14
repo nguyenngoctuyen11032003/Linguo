@@ -3,6 +3,7 @@ import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useMotivationPrefs } from '@/features/progress/useMotivationPrefs';
 import { cn } from '@/lib/cn';
+import { SECTION_SCROLL_MARGIN } from './section-state';
 
 interface ToggleRowProps {
   label: string;
@@ -52,7 +53,7 @@ export function MotivationSection() {
   const { status, prefs, update, saving, error } = useMotivationPrefs();
 
   return (
-    <section aria-labelledby="motivation-heading">
+    <section id="dong-luc" aria-labelledby="motivation-heading" className={SECTION_SCROLL_MARGIN}>
       <SolidCard className="space-y-5">
         <h2 id="motivation-heading" className="text-lg font-bold">
           Động lực và dữ liệu

@@ -119,8 +119,15 @@ describe('RemindersSection', () => {
   it('offers to undo the backoff', async () => {
     setPrefs({ prefs: prefs({ reminders_enabled: true, backoff_level: 2 }) });
     render();
-    await userEvent.click(screen.getByRole('button', { name: /Linguo đang nhắc thưa hơn vì bạn bận — bấm để nhắc như cũ/ }));
+    expect(screen.getByText(/Linguo đang nhắc thưa hơn/)).toBeInTheDocument();
+    await userEvent.click(screen.getByRole('button', { name: 'Nhắc như cũ' }));
     expect(mocks.prefs.resetBackoff).toHaveBeenCalled();
+  });
+
+  it('explains why the save button is disabled', () => {
+    render();
+    expect(saveButton()).toBeDisabled();
+    expect(saveButton()).toHaveAccessibleDescription('Chưa có thay đổi nào để lưu.');
   });
 
   it('has no backoff banner at level 0', () => {

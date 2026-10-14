@@ -3,6 +3,7 @@ import { SolidCard } from '@/components/ui/SolidCard';
 import { useAiNotice } from '@/features/ai-tutor/useAiNotice';
 import { useProfile } from '@/features/profile/ProfileProvider';
 import { formatDateVi, todayIso } from '@/lib/dates';
+import { SECTION_SCROLL_MARGIN } from './section-state';
 
 /** Settings "AI và quyền riêng tư": what the AI tutor sends to Gemini's free tier and when the notice was seen (spec 5). */
 export function AiPrivacySection() {
@@ -14,7 +15,7 @@ export function AiPrivacySection() {
       : null;
 
   return (
-    <section aria-labelledby="ai-privacy-heading">
+    <section id="ai-rieng-tu" aria-labelledby="ai-privacy-heading" className={SECTION_SCROLL_MARGIN}>
       <SolidCard className="space-y-3">
         <h2 id="ai-privacy-heading" className="text-lg font-bold">
           AI và quyền riêng tư

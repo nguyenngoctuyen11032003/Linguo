@@ -87,7 +87,7 @@ test.describe('account data', () => {
     await mockSupabase(page);
     const calls = await mockAccountRpcs(page);
     await signIn(page);
-    await page.goto('/app/cai-dat');
+    await page.goto('/app/cai-dat#tai-khoan-du-lieu');
     const section = page.getByRole('region', { name: 'Tài khoản và dữ liệu' });
     await expect(section.getByText(/tự xoá sau 90 ngày/)).toBeVisible();
     await expect(section.getByRole('link', { name: 'Quyền riêng tư' })).toHaveAttribute('href', /\/quyen-rieng-tu$/);
@@ -105,7 +105,7 @@ test.describe('account data', () => {
     await mockSupabase(page);
     await mockAccountRpcs(page, { exportStatus: 400 });
     await signIn(page);
-    await page.goto('/app/cai-dat');
+    await page.goto('/app/cai-dat#tai-khoan-du-lieu');
     await page.getByRole('button', { name: 'Tải dữ liệu của tôi' }).click();
     await expect(page.getByText(/tải dữ liệu nhiều lần/)).toBeVisible();
   });
@@ -122,7 +122,7 @@ test.describe('account data', () => {
       };
     });
     await signIn(page);
-    await page.goto('/app/cai-dat');
+    await page.goto('/app/cai-dat#tai-khoan-du-lieu');
     await page.getByRole('button', { name: 'Xoá tài khoản' }).click();
     const dialog = page.getByRole('dialog', { name: 'Xoá vĩnh viễn tài khoản?' });
     await expect(dialog).toBeVisible();
@@ -151,7 +151,7 @@ test.describe('account data', () => {
     await mockSupabase(page);
     await mockAccountRpcs(page);
     await signIn(page);
-    await page.goto('/app/cai-dat');
+    await page.goto('/app/cai-dat#tai-khoan-du-lieu');
     await expect(page.getByRole('region', { name: 'Tài khoản và dữ liệu' })).toBeVisible();
     await page.waitForTimeout(500);
     await expectNoSeriousA11y(page, 'section[aria-labelledby="account-data-heading"]');

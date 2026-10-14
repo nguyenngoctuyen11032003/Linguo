@@ -24,7 +24,7 @@ export function InstallAppSection() {
   };
 
   return (
-    <section aria-labelledby="install-app-heading">
+    <section id="cai-app" aria-labelledby="install-app-heading" className="scroll-mt-[calc(4.5rem+env(safe-area-inset-top,0px))]">
       <SolidCard className="space-y-3">
         <h2 id="install-app-heading" className="text-lg font-bold">
           Cài ứng dụng
@@ -45,7 +45,7 @@ export function InstallAppSection() {
               <Share aria-hidden className="inline size-4 align-[-2px]" />.
             </li>
             <li>
-              Chọn <strong>Thêm vào MH chính</strong> (Thêm vào Màn hình chính).
+              Chọn <strong>Thêm vào màn hình chính</strong>.
             </li>
             <li>
               Chạm <strong>Thêm</strong>, rồi mở Linguo từ biểu tượng mới.

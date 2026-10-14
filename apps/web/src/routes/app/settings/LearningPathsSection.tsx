@@ -15,6 +15,7 @@ import { useProfile } from '@/features/profile/ProfileProvider';
 import { formatDateVi, todayIso } from '@/lib/dates';
 import { requireSupabase } from '@/lib/supabase';
 import { PathPlanEditor } from './PathPlanEditor';
+import { SECTION_SCROLL_MARGIN } from './section-state';
 
 const STATUS_DONE: Partial<Record<PathStatus, string>> = {
   paused: 'Đã tạm dừng lộ trình.',
@@ -213,7 +214,7 @@ export function LearningPathsSection() {
   }, [location.hash]);
 
   return (
-    <section id="lo-trinh" aria-labelledby="paths-heading" className="scroll-mt-[calc(4.5rem+env(safe-area-inset-top,0px))]">
+    <section id="lo-trinh" aria-labelledby="paths-heading" className={SECTION_SCROLL_MARGIN}>
       <SolidCard className="space-y-4">
         <h2
           id="paths-heading"
