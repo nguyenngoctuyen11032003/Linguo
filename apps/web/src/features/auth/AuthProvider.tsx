@@ -28,9 +28,16 @@ export function AuthProvider({ children, client = getSupabase() }: AuthProviderP
   useEffect(() => {
     if (!client) return;
     let active = true;
-    client.auth.getSession().then(({ data }) => {
-      if (active) setState(fromSession(data.session));
-    });
+    client.auth
+      .getSession()
+      .then(({ data }) => {
+        if (active) setState(fromSession(data.session));
+      })
+      .catch((error: unknown) => {
+        // A failed lookup (e.g. blocked storage) must not leave the app on the loader forever.
+        if (import.meta.env.DEV) console.error(error);
+        if (active) setState(fromSession(null));
+      });
     const { data } = client.auth.onAuthStateChange((event, session) => {
       if (event === 'SIGNED_OUT') clearRecovery(); // a recovery session must not outlive the sign-out
       if (active) setState(fromSession(session));

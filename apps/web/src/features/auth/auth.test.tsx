@@ -109,6 +109,26 @@ describe('AuthProvider', () => {
     expect(screen.getByTestId('status')).toHaveTextContent('signed-out:-');
   });
 
+  it('treats a failed session lookup as signed out instead of loading forever', async () => {
+    const client = {
+      auth: {
+        getSession: vi.fn().mockRejectedValue(new Error('storage unavailable')),
+        onAuthStateChange: vi.fn(() => ({ data: { subscription: { unsubscribe: vi.fn() } } })),
+      },
+    } as unknown as AppSupabaseClient;
+    const consoleError = vi.spyOn(console, 'error').mockImplementation(() => {});
+    function Probe() {
+      return <span data-testid="status">{useAuth().status}</span>;
+    }
+    render(
+      <AuthProvider client={client}>
+        <Probe />
+      </AuthProvider>,
+    );
+    expect(await screen.findByText('signed-out')).toBeInTheDocument();
+    consoleError.mockRestore();
+  });
+
   it('clears the recovery flag when the user signs out', async () => {
     let listener: ((event: string, session: Session | null) => void) | undefined;
     const client = {
