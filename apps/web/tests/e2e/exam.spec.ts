@@ -1,6 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect as baseExpect, test, type Page } from '@playwright/test';
-import { examForm, expectNoHorizontalScroll, mockSupabase, pathRow, signIn, type ExamMockOptions } from './fixtures';
+import { examForm, expectNoHorizontalScroll, mockSupabase, pathRow, settleAnimations, signIn, type ExamMockOptions } from './fixtures';
 
 // Spec 9 §5: hub → start → answer → submit → result on the TOPIK I demo form, drills, reload, the clock, axe and
 // no horizontal scroll on every device project. The exam RPCs are mocked from supabase/seed.sql and graded with
@@ -163,6 +163,8 @@ test('AI practice feedback on a written essay (spec 9 X6)', async ({ page }) => 
   await expect(rows.first()).toContainText(`${writing.rubric[0].max_points - 1}/${writing.rubric[0].max_points} điểm`);
   await expect(sheet.getByText(/let's watch a film/)).toHaveAttribute('lang', 'en');
   await expectNoHorizontalScroll(page);
+  // Axe reads colours mid-transition while the sheet is still entering; wait for it to settle first.
+  await settleAnimations(page);
   await axe(page);
 
   const [request] = mock.ai.requests();
