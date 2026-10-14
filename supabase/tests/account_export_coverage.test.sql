@@ -20,6 +20,8 @@ insert into export_excluded values
   ('account_export_requests', 'export rate-limit bookkeeping, kept 1 day'),
   -- Web Push endpoint and keys of a device: credentials with no learner value, deleted with the account.
   ('push_subscriptions', 'device push credentials'),
+  -- Bookkeeping for save_push_subscription's 20/hour rate limit, purged after a day: no learner content.
+  ('push_subscription_saves', 'push save rate-limit bookkeeping, kept 1 day'),
   -- Access-control row the user already reads through staff_role(): not learning data.
   ('staff_roles', 'staff access control');
 

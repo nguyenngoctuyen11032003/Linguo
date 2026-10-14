@@ -113,22 +113,22 @@ reset role;
 -- ===== Push subscriptions: 5-device cap, validation, ownership =====
 set local role authenticated;
 select pg_temp.as_user(pg_temp.u(20));
-select public.save_push_subscription('https://push.example/u20-' || i, 'BKey' || i, 'auth' || i, 'Mozilla/5.0 ' || repeat('x', 300))
+select public.save_push_subscription('https://fcm.googleapis.com/fcm/send/u20-' || i, 'BKey' || i, 'auth' || i, 'Mozilla/5.0 ' || repeat('x', 300))
 from generate_series(1, 7) as i;
 select is((select count(*)::integer from public.push_subscriptions), 5, 'at most 5 subscriptions per learner');
 select is((select array_agg(endpoint order by endpoint) from public.push_subscriptions),
-  array['https://push.example/u20-3', 'https://push.example/u20-4', 'https://push.example/u20-5', 'https://push.example/u20-6', 'https://push.example/u20-7'],
+  array['https://fcm.googleapis.com/fcm/send/u20-3', 'https://fcm.googleapis.com/fcm/send/u20-4', 'https://fcm.googleapis.com/fcm/send/u20-5', 'https://fcm.googleapis.com/fcm/send/u20-6', 'https://fcm.googleapis.com/fcm/send/u20-7'],
   'the oldest subscriptions were evicted');
 select is((select max(char_length(user_agent)) from public.push_subscriptions), 200, 'user_agent truncated to 200');
-select throws_ok($$select public.save_push_subscription('http://push.example/x', 'k', 'a', null)$$, 'P0001', 'invalid_subscription', 'https endpoint required');
-select throws_ok($$select public.save_push_subscription('https://push.example/x', 'bad key', 'a', null)$$, 'P0001', 'invalid_subscription', 'p256dh must be base64url');
-select throws_ok($$select public.save_push_subscription('https://push.example/x', 'k', null, null)$$, 'P0001', 'invalid_subscription', 'auth required');
-select public.delete_push_subscription('https://push.example/u20-3');
+select throws_ok($$select public.save_push_subscription('http://fcm.googleapis.com/fcm/send/x', 'k', 'a', null)$$, 'P0001', 'invalid_subscription', 'https endpoint required');
+select throws_ok($$select public.save_push_subscription('https://fcm.googleapis.com/fcm/send/x', 'bad key', 'a', null)$$, 'P0001', 'invalid_subscription', 'p256dh must be base64url');
+select throws_ok($$select public.save_push_subscription('https://fcm.googleapis.com/fcm/send/x', 'k', null, null)$$, 'P0001', 'invalid_subscription', 'auth required');
+select public.delete_push_subscription('https://fcm.googleapis.com/fcm/send/u20-3');
 select is((select count(*)::integer from public.push_subscriptions), 4, 'delete_push_subscription removes the endpoint');
 select pg_temp.as_user(pg_temp.u(2));
-select public.save_push_subscription('https://push.example/u20-7', 'BNew', 'anew', null);
-select public.delete_push_subscription('https://push.example/u20-4');
-select is((select array_agg(endpoint) from public.push_subscriptions), array['https://push.example/u20-7'],
+select public.save_push_subscription('https://fcm.googleapis.com/fcm/send/u20-7', 'BNew', 'anew', null);
+select public.delete_push_subscription('https://fcm.googleapis.com/fcm/send/u20-4');
+select is((select array_agg(endpoint) from public.push_subscriptions), array['https://fcm.googleapis.com/fcm/send/u20-7'],
   'B sees only its own subscription; an endpoint re-saved by another account moves to it');
 reset role;
 select is((select count(*)::integer from public.push_subscriptions where user_id = pg_temp.u(20)), 3,
@@ -137,7 +137,7 @@ select is((select count(*)::integer from public.push_subscriptions where user_id
 -- u1: VN 19:30, push on with a device. Everyone else is configured directly.
 set local role authenticated;
 select pg_temp.as_user(pg_temp.u(1));
-select public.save_push_subscription('https://push.example/u1', 'BKeyU1', 'authU1', 'Firefox');
+select public.save_push_subscription('https://fcm.googleapis.com/fcm/send/u1', 'BKeyU1', 'authU1', 'Firefox');
 reset role;
 
 insert into public.notification_prefs (user_id, reminders_enabled, remind_at, remind_days, quiet_start, quiet_end, max_per_day, push_enabled, backoff_level, ignored_streak)
@@ -160,7 +160,7 @@ values
   (pg_temp.u(17), true,  '19:30', '{1,2,3,4,5,6,7}', '22:00', '07:00', 1, false, 0, 0), -- ignores reminders
   (pg_temp.u(18), false, '19:30', '{1,2,3,4,5,6,7}', '22:00', '07:00', 1, false, 2, 1), -- active, backed off
   (pg_temp.u(19), true,  '19:30', '{1,2,3,4,5,6,7}', '22:00', '07:00', 1, false, 0, 0); -- active after the reminder
-insert into public.push_subscriptions (user_id, endpoint, p256dh, auth) values (pg_temp.u(16), 'https://push.example/u16', 'BKeyU16', 'authU16');
+insert into public.push_subscriptions (user_id, endpoint, p256dh, auth) values (pg_temp.u(16), 'https://fcm.googleapis.com/fcm/send/u16', 'BKeyU16', 'authU16');
 
 select set_config('test.p7', pg_temp.path(7, 30)::text, true);
 select set_config('test.p12', pg_temp.path(12, 30)::text, true);
@@ -338,7 +338,8 @@ select ok((select clicked_at is not null and read_at is not null from public.not
 -- RLS A/B: u2 sees none of u17's rows and cannot mark them.
 select pg_temp.as_user(pg_temp.u(2));
 select is((select count(*)::integer from public.notifications where user_id = pg_temp.u(17)), 0, 'RLS: other learners'' notifications hidden');
-select is((select count(*)::integer from public.notifications), 1, 'RLS: own notifications visible');
+-- 4 = Wed 08:00 plus Thu/Fri/Sat caught up by the 12:30Z runs (08:30 New York is inside the 60-minute window).
+select is((select count(*)::integer from public.notifications), 4, 'RLS: own notifications visible');
 select is((select count(*)::integer from public.notification_prefs), 1, 'RLS: only own prefs visible');
 select throws_ok(format('select public.mark_notification(%L, %L)', current_setting('test.l1')::jsonb #>> '{items,0,id}', 'read'),
   'P0001', 'notification_not_found', 'cannot mark another learner''s notification');
