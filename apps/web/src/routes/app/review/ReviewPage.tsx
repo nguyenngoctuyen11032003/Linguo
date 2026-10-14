@@ -10,6 +10,7 @@ import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { useToast } from '@/components/ui/Toast';
 import { track } from '@/features/analytics';
+import { cn } from '@/lib/cn';
 import type { Confidence } from '@/features/reviews/types';
 import { useReviewSession } from '@/features/reviews/useReviewSession';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
@@ -17,6 +18,7 @@ import { useSessionReturn } from '@/features/session-link/useSessionReturn';
 import { levelForCard, reviewAiState } from './ai';
 import { RecallConfidence } from './RecallConfidence';
 import { hasMoreCards } from './more';
+import { PostponeAllDialog } from './PostponeAllDialog';
 import { ReviewSummaryView } from './ReviewSummaryView';
 
 const TITLE = 'Ôn tập';
@@ -48,6 +50,9 @@ export function ReviewPage() {
   /** Cards this visit sent a grade for (saved or queued in the outbox). */
   const [ratedIds, setRatedIds] = useState<string[]>([]);
   const [postponing, setPostponing] = useState(false);
+  /** "Hoãn tất cả" asks before moving the whole queue to tomorrow; rating and flip keys stay off meanwhile. */
+  const [confirmAllOpen, setConfirmAllOpen] = useState(false);
+  const postponeAllRef = useRef<HTMLButtonElement>(null);
   const [loadingMore, setLoadingMore] = useState(false);
   const [returning, setReturning] = useState(false);
   const shownAt = useRef(0);
@@ -169,7 +174,7 @@ export function ReviewPage() {
   // Space/Enter (flip) and 1–4 (rate) live in Flashcard and RatingBar; the page only adds P (postpone).
   const hasCard = status === 'ready' && !!card;
   useEffect(() => {
-    if (!hasCard || aiOpen) return;
+    if (!hasCard || aiOpen || confirmAllOpen) return;
     function onKey(event: KeyboardEvent) {
       if (event.key !== 'p' && event.key !== 'P') return;
       if (event.repeat || event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || isTypingTarget(event.target)) return;
@@ -178,7 +183,7 @@ export function ReviewPage() {
     }
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [hasCard, aiOpen, postpone]);
+  }, [hasCard, aiOpen, confirmAllOpen, postpone]);
 
   if (status === 'loading') {
     return (
@@ -295,7 +300,14 @@ export function ReviewPage() {
         <div className="h-full rounded-full bg-primary" style={{ width: `${total ? (Math.min(position, total) / total) * 100 : 0}%` }} />
       </div>
 
-      <Flashcard key={cardKey} card={card} flipped={flipped} onFlip={flip} disabled={cardState.status === 'submitting'} reportable />
+      <Flashcard
+        key={cardKey}
+        card={card}
+        flipped={flipped}
+        onFlip={flip}
+        disabled={cardState.status === 'submitting' || confirmAllOpen}
+        reportable
+      />
 
       {showConfidence && <RecallConfidence value={confidence} onChange={setConfidence} />}
 
@@ -314,12 +326,21 @@ export function ReviewPage() {
         </div>
       )}
 
-      <RatingBar
-        previews={card.previews}
-        revealed={flipped && !aiOpen}
-        submitting={cardState.status === 'submitting'}
-        onRate={(value) => void rate(value)}
-      />
+      {/* Once the card is flipped the grades pin above the bottom nav so they never fall below the fold. */}
+      <div
+        data-testid="rating-dock"
+        className={cn(
+          flipped &&
+            'sticky bottom-[calc(3.5rem+env(safe-area-inset-bottom,0px))] z-10 -mx-5 border-t border-border bg-bg/95 px-5 py-3 backdrop-blur-md lg:bottom-0',
+        )}
+      >
+        <RatingBar
+          previews={card.previews}
+          revealed={flipped && !aiOpen && !confirmAllOpen}
+          submitting={cardState.status === 'submitting'}
+          onRate={(value) => void rate(value)}
+        />
+      </div>
 
       <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
         <div className="flex flex-wrap gap-2">
@@ -327,13 +348,24 @@ export function ReviewPage() {
             Hoãn sang mai
           </Button>
           {total - position > 1 && (
-            <Button variant="ghost" disabled={postponing} onClick={() => void postpone(true)}>
+            <Button ref={postponeAllRef} variant="ghost" disabled={postponing} onClick={() => setConfirmAllOpen(true)}>
               Hoãn tất cả
             </Button>
           )}
         </div>
         <p className="hidden text-sm text-muted sm:block">Phím tắt: Space lật · 1–4 chấm · P hoãn</p>
       </div>
+
+      <PostponeAllDialog
+        open={confirmAllOpen}
+        count={total - position}
+        triggerRef={postponeAllRef}
+        onKeep={() => setConfirmAllOpen(false)}
+        onConfirm={() => {
+          setConfirmAllOpen(false);
+          void postpone(true);
+        }}
+      />
     </div>
   );
 }

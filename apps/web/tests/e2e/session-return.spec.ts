@@ -158,6 +158,7 @@ test('without session params the review keeps its usual ending', async ({ page }
   await page.goto('/app/on-tap');
   await expect(page.getByRole('heading', { level: 2, name: 'Thẻ 1/4' })).toBeVisible({ timeout: 15_000 });
   await page.getByRole('button', { name: 'Hoãn tất cả' }).click();
+  await page.getByRole('dialog').getByRole('button', { name: /^Hoãn \d+ thẻ$/ }).click();
   await expect(page.getByRole('heading', { name: 'Xong phiên ôn' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Quay lại phiên học' })).toHaveCount(0);
   expect(mock.sessionUpdates()).toEqual([]);

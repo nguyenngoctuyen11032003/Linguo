@@ -134,7 +134,13 @@ test('P postpones the current card and "Hoãn tất cả" the rest', async ({ pa
   expect(mock.postponeCalls()).toHaveLength(1);
   expect(mock.postponeCalls()[0]).toHaveLength(1);
 
+  // Postponing the rest asks first: dismissing keeps the cards, confirming moves them to tomorrow.
   await page.getByRole('button', { name: 'Hoãn tất cả' }).click();
+  await page.getByRole('dialog').getByRole('button', { name: 'Giữ lại' }).click();
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+  expect(mock.postponeCalls()).toHaveLength(1);
+  await page.getByRole('button', { name: 'Hoãn tất cả' }).click();
+  await page.getByRole('dialog').getByRole('button', { name: /^Hoãn \d+ thẻ$/ }).click();
   await expect(summaryHeading(page)).toBeVisible();
   expect(mock.postponeCalls()).toEqual([expect.any(Array), null]);
   expect(mock.reviewGrades()).toHaveLength(0);
@@ -198,6 +204,11 @@ for (const colorScheme of ['light', 'dark'] as const) {
     await front(page).click();
     await expect(back(page)).toBeVisible();
     await scan('card back');
+    await page.getByRole('button', { name: 'Hoãn tất cả' }).click();
+    await expect(page.getByRole('dialog', { name: /^Hoãn \d+ thẻ còn lại\?$/ })).toBeVisible();
+    await scan('postpone-all dialog');
+    await page.getByRole('button', { name: 'Giữ lại' }).click();
+    await expect(page.getByRole('dialog')).toHaveCount(0);
     await page.getByRole('button', { name: /^Được,/ }).click();
     await finishWithMouse(page);
     await scan('summary');

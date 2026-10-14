@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { act, fireEvent, screen } from '@testing-library/react';
+import { act, fireEvent, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import type { ReviewSessionApi } from '@/features/reviews/types';
@@ -154,8 +154,8 @@ describe('ReviewPage', () => {
     render();
     const group = screen.getByRole('group', { name: 'Bạn nhớ chắc đến đâu? (không bắt buộc)' });
     expect(group).toBeInTheDocument();
-    await userEvent.click(screen.getByRole('button', { name: 'Đoán' }));
-    expect(screen.getByRole('button', { name: 'Đoán' })).toHaveAttribute('aria-pressed', 'true');
+    await userEvent.click(screen.getByRole('button', { name: 'Chưa chắc' }));
+    expect(screen.getByRole('button', { name: 'Chưa chắc' })).toHaveAttribute('aria-pressed', 'true');
 
     // The session flips the card; the same page keeps the chosen confidence.
     update({ ...session, cardState: { status: 'back' } });
@@ -190,11 +190,54 @@ describe('ReviewPage', () => {
     expect(session.postpone).toHaveBeenCalledTimes(2);
   });
 
-  it('postpones every remaining card', async () => {
+  it('asks before postponing every remaining card, then postpones them', async () => {
     const session = setSession({ position: 0, total: 3 });
     render();
     await userEvent.click(screen.getByRole('button', { name: 'Hoãn tất cả' }));
+    const dialog = screen.getByRole('dialog', { name: 'Hoãn 3 thẻ còn lại?' });
+    expect(session.postpone).not.toHaveBeenCalled();
+    expect(within(dialog).getByRole('button', { name: 'Giữ lại' })).toHaveFocus();
+    await userEvent.click(within(dialog).getByRole('button', { name: 'Hoãn 3 thẻ' }));
     expect(session.postpone).toHaveBeenCalledWith(true);
+    await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument());
+  });
+
+  it('keeps every card when the postpone-all confirmation is dismissed', async () => {
+    const session = setSession({ position: 0, total: 3 });
+    render();
+    const trigger = screen.getByRole('button', { name: 'Hoãn tất cả' });
+    await userEvent.click(trigger);
+    await userEvent.click(screen.getByRole('button', { name: 'Giữ lại' }));
+    await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument());
+    expect(trigger).toHaveFocus();
+    await userEvent.click(trigger);
+    await userEvent.keyboard('{Escape}');
+    await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument());
+    expect(session.postpone).not.toHaveBeenCalled();
+  });
+
+  it('ignores rating and postpone keys while the confirmation is open', async () => {
+    const session = setSession({ position: 0, total: 3, cardState: { status: 'back' } });
+    render();
+    await userEvent.click(screen.getByRole('button', { name: 'Hoãn tất cả' }));
+    await userEvent.keyboard('3');
+    await userEvent.keyboard('p');
+    expect(session.grade).not.toHaveBeenCalled();
+    expect(session.postpone).not.toHaveBeenCalled();
+  });
+
+  it('pins the rating bar to the bottom once the card is flipped', () => {
+    setSession({ cardState: { status: 'back' } });
+    render();
+    const dock = screen.getByTestId('rating-dock');
+    expect(dock).toHaveClass('sticky');
+    expect(dock).toContainElement(screen.getByRole('button', { name: /^Được/ }));
+  });
+
+  it('keeps the rating bar in the page flow while the card is face down', () => {
+    setSession({ cardState: { status: 'front' } });
+    render();
+    expect(screen.getByTestId('rating-dock')).not.toHaveClass('sticky');
   });
 
   it('hides "Hoãn tất cả" on the last card', () => {
