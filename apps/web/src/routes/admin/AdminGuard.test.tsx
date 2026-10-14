@@ -57,7 +57,7 @@ describe('AdminGuard', () => {
     const links = within(nav).getAllByRole('link').map((a) => a.textContent);
     expect(links).toEqual(['Tổng quan', 'Nội dung', 'Báo lỗi', 'Nguồn']);
     expect(screen.getByRole('link', { name: 'Về ứng dụng' })).toHaveAttribute('href', '/app');
-    expect(robots()).toHaveAttribute('content', 'noindex');
+    await waitFor(() => expect(robots()).toHaveAttribute('content', 'noindex'));
     unmount();
     expect(robots()).toBeNull();
   });
@@ -70,7 +70,8 @@ describe('AdminGuard', () => {
     routeRpcs(mocks.rpc, { staff_role: { data: 'admin' }, admin_content_overview: { data: overviewFixture() } });
     const { unmount } = renderAdmin('/quan-tri');
     await screen.findByRole('navigation', { name: 'Điều hướng quản trị' });
-    expect(meta.content).toBe('noindex');
+    // The layout sets the tag in an effect, which can run a moment after the nav is drawn.
+    await waitFor(() => expect(meta.content).toBe('noindex'));
     unmount();
     expect(meta.content).toBe('index, follow');
   });
