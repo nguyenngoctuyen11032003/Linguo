@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:everyday-now-review
 order_index: 5
 level: a2
@@ -83,7 +82,7 @@ body:
       vi: Phần 2 là đoạn tả ảnh một văn phòng. Ngoài vị trí và hiện tại tiếp diễn, bạn học thêm look + tính từ để đoán cảm xúc - They look busy, she looks happy. Không nói "look like happy".
   - type: deep_explain
     text:
-      vi: "Cả unit xoay quanh một ý: tiếng Anh tách rõ \"lúc này\" (am / is / are + V-ing) và \"thường ngày\" (hiện tại đơn), trừ nhóm động từ trạng thái (know, want, like, need, understand) luôn ở hiện tại đơn. Khi từ chối lời mời, lý do thường là một lịch hẹn - I'm visiting a customer on Tuesday - chính là hiện tại tiếp diễn chỉ tương lai."
+      vi: "Cả unit xoay quanh một ý: tiếng Anh tách rõ \"lúc này\" (am / is / are + V-ing) và \"thường ngày\" (hiện tại đơn), trừ nhóm động từ trạng thái (know, want, like, need, understand) thường ở hiện tại đơn. Khi từ chối lời mời, lý do thường là một lịch hẹn - I'm visiting a customer on Tuesday - chính là hiện tại tiếp diễn chỉ tương lai."
   - type: example
     target: "Receptionist: Good morning, Green Design. Lan: Hello, can I speak to Mr Tom Hill, please? Receptionist: Who's calling, please? Lan: This is Lan Nguyen from VietPrint. Receptionist: Hold on, please… I'm sorry, he's talking to a client at the moment. Can I take a message? Lan: Yes, please. Can you ask him to call me back?"
     target_lang: en
@@ -113,7 +112,7 @@ body:
     note:
       vi: "Bài tả ảnh phần 2: look + tính từ (looks busy, look happy) và I think để đoán."
   - type: common_mistake
-    wrong: "A: Can I speak with Mr Hill? B: Yes, I am."
+    wrong: "A: Can I speak to Mr Hill? B: Yes, I am."
     right: "A: Can I speak to Mr Hill? B: Speaking. / This is Tom Hill."
     target_lang: en
     note:
@@ -281,12 +280,16 @@ exercises:
         - Is 10 o'clock OK for you?
         - Does ten o'clock suit you?
         - Is ten o'clock convenient for you?
+        - Is ten o'clock good for you?
+        - Is 10 OK for you?
+        - Would ten o'clock be OK for you?
+        - Does ten suit you?
     known_wrong:
       - answer: Are you convenient at ten o'clock?
         feedback_vi: Convenient nói về thời gian, không nói về người. Dùng Is ten o'clock OK for you?
         error_tag: convenient_person
       - answer: Ten o'clock is OK for you?
-        feedback_vi: Câu hỏi cần đảo is lên trước - Is ten o'clock OK for you?
+        feedback_vi: Khi hỏi lịch sự (nhất là khi viết), hãy đảo is lên trước - Is ten o'clock OK for you?
         error_tag: question_word_order
     explanation:
       vi: Hỏi giờ hẹn có tiện không - Is + giờ + OK for you? Chủ ngữ là thời gian, không phải người.
@@ -448,6 +451,8 @@ exercises:
         - Sorry, I can't make it on Tuesday. I'm meeting a client.
         - I'm sorry, I can't come on Tuesday. I'm meeting clients.
         - I'm sorry, I can't come on Tuesday because I'm meeting a client.
+        - I'm sorry, I can't come on Tuesday. I'm seeing a client.
+        - I'm afraid I can't come on Tuesday. I'm visiting a client.
     rubric:
       typo_tolerance: 1
     known_wrong:

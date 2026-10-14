@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:invitations-and-calls
 order_index: 4
 level: a2
@@ -57,7 +56,7 @@ body:
       vi: "Gọi điện: Can I speak to…, please? Nếu chính bạn là người đó, trả lời Speaking. hoặc This is Nam. - không trả lời \"Yes, I am\". Người nghe máy hỏi Who's calling, please?, bảo Hold on, please hoặc hỏi Can I take a message?"
   - type: deep_explain
     text:
-      vi: "Lý do từ chối thường dùng hiện tại tiếp diễn chỉ lịch hẹn mà bạn đã học - I'm meeting a client on Friday. Trên điện thoại, người Anh không tự giới thiệu bằng I am mà bằng This is… (Hi, this is Mai). Nhớ đại từ đứng giữa call và back - call you back, call her back."
+      vi: "Lý do từ chối thường dùng hiện tại tiếp diễn chỉ lịch hẹn mà bạn đã học - I'm meeting a client on Friday. Trên điện thoại, người bản ngữ thường tự giới thiệu bằng This is… (Hi, this is Mai) thay vì I am. Nhớ đại từ đứng giữa call và back - call you back, call her back."
   - type: example
     target: "A: Would you like to have dinner with us on Saturday? B: I'd love to! What time? A: About seven."
     target_lang: en
@@ -93,7 +92,7 @@ body:
     note:
       vi: Sau would like phải có to trước động từ.
   - type: common_mistake
-    wrong: "A: Can I speak with Mr Nam? B: Yes, I am."
+    wrong: "A: Can I speak to Mr Nam? B: Yes, I am."
     right: "A: Can I speak to Mr Nam? B: Speaking. / This is Nam."
     target_lang: en
     note:
@@ -279,6 +278,8 @@ exercises:
         - I'm sorry, I can't go. I'm busy.
         - Sorry, I can't go. I'm busy.
         - I'm sorry, I can't come. I'm busy.
+        - I'm afraid I can't make it. I'm busy.
+        - Unfortunately, I can't go. I'm busy.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -312,6 +313,8 @@ exercises:
         - I'll ring you back in ten minutes.
         - I'll ring you back in 10 minutes.
         - In ten minutes I'll call you back.
+        - In 10 minutes I'll call you back.
+        - I'll call you in ten minutes.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -426,6 +429,8 @@ exercises:
         - Who is speaking, please?
         - May I ask who's calling?
         - May I ask who is calling?
+        - Can I ask who's calling?
+        - Who's this, please?
     known_wrong:
       - answer: Who are you?
         feedback_vi: Câu này nghe rất cộc trên điện thoại. Dùng Who's calling, please?

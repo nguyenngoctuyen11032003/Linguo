@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:plans-travel-review
 order_index: 5
 level: a2
@@ -102,11 +101,11 @@ body:
     note:
       vi: Cool là tính từ ngắn, -er đã có nghĩa "hơn", nên không thêm more.
   - type: common_mistake
-    wrong: I fly to Da Lat on Friday.
+    wrong: I'm fly to Da Lat on Friday.
     right: I'm flying to Da Lat on Friday.
     target_lang: en
     note:
-      vi: Chuyến bay đã đặt vé là lịch đã sắp xếp - dùng am flying. Hiện tại đơn chỉ dùng cho thói quen.
+      vi: Chuyến bay đã đặt vé là lịch đã sắp xếp - dùng be + V-ing, nên sau I'm phải là flying. Người Việt hay quên -ing vì nghĩ I'm chỉ là "tôi".
   - type: summary
     points:
       - vi: going to - kế hoạch; will - quyết định ngay, đề nghị, dự đoán; be + V-ing - lịch đã hẹn.
@@ -191,7 +190,7 @@ exercises:
     answer:
       blanks:
         b1: [going]
-        b2: [cheaper, slower]
+        b2: [cheaper, slower, more comfortable]
         b3: [I, we]
     known_wrong:
       - answer: go
@@ -234,12 +233,16 @@ exercises:
         - We're flying to Dalat on Friday. The flight leaves at 7 a.m.
         - We're going to fly to Da Lat on Friday. The flight leaves at 7 a.m.
         - We're flying to Da Lat on Friday. The flight leaves at seven in the morning.
+        - We're flying to Da Lat on Friday. The flight departs at 7 a.m.
+        - We're flying to Da Lat on Friday. The flight leaves at 7 in the morning.
+        - We fly to Da Lat on Friday. The flight leaves at 7 a.m.
+        - We will fly to Da Lat on Friday. The flight leaves at 7 a.m.
     rubric:
       typo_tolerance: 1
     known_wrong:
-      - answer: We fly to Da Lat on Friday. The flight leaves at 7 a.m.
-        feedback_vi: Chuyến bay đã đặt là lịch đã sắp xếp - We're flying to Da Lat on Friday.
-        error_tag: future_form
+      - answer: We're fly to Da Lat on Friday. The flight leaves at 7 a.m.
+        feedback_vi: Sau we're cần V-ing - We're flying to Da Lat on Friday.
+        error_tag: verb_form
       - answer: We flying to Da Lat on Friday. The flight leaves at 7 a.m.
         feedback_vi: Thiếu are - We are flying.
         error_tag: missing_be
@@ -247,7 +250,7 @@ exercises:
         feedback_vi: Không ghép will với V-ing - We're flying (lịch đã hẹn).
         error_tag: verb_form
     explanation:
-      vi: Chuyến bay đã đặt vé - dùng are flying + on Friday. Giờ cất cánh theo lịch trình cố định dùng hiện tại đơn - The flight leaves at 7 a.m.
+      vi: Chuyến bay đã đặt vé - tự nhiên nhất là are flying + on Friday (We fly… cũng được chấp nhận vì là lịch trình). Giờ cất cánh theo lịch trình cố định dùng hiện tại đơn - The flight leaves at 7 a.m.
     display_answer: We're flying to Da Lat on Friday. The flight leaves at 7 a.m.
 
   - key: en:exercise:plans-travel-review-translate-best
@@ -269,6 +272,8 @@ exercises:
         - This hotel is better than that one, but Lake View is the best hotel.
         - This hotel is better than that one, but Lake View is the best.
         - This hotel is better than that hotel, but Lake View is the best hotel.
+        - This hotel is better than that one, but the Lake View is the best one.
+        - This hotel is better than that one, but the Lake View hotel is the best.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -360,6 +365,8 @@ exercises:
         - Two round trip tickets to Hue, please. Which platform does the train leave from?
         - I'd like two return tickets to Hue, please. Which platform does the train leave from?
         - Two return tickets to Hue, please. What platform does the train leave from?
+        - Two return tickets to Hue, please. Which platform does it leave from?
+        - Two return tickets to Hue, please. Which platform does the train go from?
     rubric:
       typo_tolerance: 1
     known_wrong:

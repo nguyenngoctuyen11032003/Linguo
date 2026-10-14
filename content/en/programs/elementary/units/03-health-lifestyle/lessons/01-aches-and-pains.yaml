@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:aches-and-pains
 order_index: 1
 level: a2
@@ -51,7 +50,7 @@ body:
       vi: Khi thấy ai đó có vẻ mệt, bạn hỏi What's the matter? (Bạn bị sao thế?). Hỏi về người khác thì thêm with - What's the matter with your son?
   - type: deep_explain
     text:
-      vi: "Một số bệnh có đuôi -ache (đau âm ỉ): headache, stomachache, toothache, backache. Riêng họng không có \"throatache\" mà nói a sore throat. Với I/you/we/they dùng have / 've got; với he/she/it dùng has / 's got - She's got a fever. Cảm lạnh là a cold; nếu bỏ a thành I'm cold thì nghĩa đổi thành \"tôi thấy lạnh\"."
+      vi: "Một số bệnh có đuôi -ache (đau âm ỉ): headache, stomachache, toothache, backache; riêng họng không có \"throatache\" mà nói a sore throat. Với I/you/we/they dùng have / 've got; với he/she/it dùng has / 's got - She's got a fever. Cảm lạnh là a cold; nếu bỏ a thành I'm cold thì nghĩa đổi thành \"tôi thấy lạnh\"."
   - type: example
     target: "A: What's the matter? B: I've got a headache."
     target_lang: en
@@ -283,7 +282,7 @@ exercises:
         feedback_vi: Backache là danh từ, không đi với am. Nói I have a backache.
         error_tag: be_with_illness
       - answer: My back hurt.
-        feedback_vi: My back là số ít nên hurt thêm -s - My back hurts.
+        feedback_vi: Nói về hiện tại thì my back là số ít nên hurt thêm -s - My back hurts. (My back hurt là quá khứ.)
         error_tag: third_person_s
     explanation:
       vi: Cách tự nhiên nhất là lấy bộ phận làm chủ ngữ với động từ hurt - My back hurts. Cũng có thể dùng danh từ backache với have (got).
@@ -347,6 +346,9 @@ exercises:
         - Tôi đau chân sau trận bóng.
         - Sau trận bóng tôi đau chân.
         - Sau trận bóng đá, tôi bị đau chân.
+        - Tôi đau chân sau trận đá bóng.
+        - Chân tôi đau sau trận đá bóng.
+        - Sau trận đá bóng tôi bị đau chân.
     rubric:
       diacritics: lenient
     explanation:
@@ -392,6 +394,8 @@ exercises:
         - My son has got a cold and is coughing.
         - My son's got a cold and he's coughing.
         - My son has a cold and he is coughing.
+        - My son has got a cold and he's coughing.
+        - My son has caught a cold and is coughing.
     rubric:
       typo_tolerance: 1
     known_wrong:

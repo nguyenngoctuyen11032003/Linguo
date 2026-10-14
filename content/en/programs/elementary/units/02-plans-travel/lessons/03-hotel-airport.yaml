@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:hotel-airport
 order_index: 3
 level: a2
@@ -260,6 +259,10 @@ exercises:
         - Our flight is two hours late.
         - Our flight has been delayed by two hours.
         - Our flight has been delayed two hours.
+        - Our flight was delayed by two hours.
+        - Our flight was delayed two hours.
+        - Our flight was delayed for two hours.
+        - Our flight is delayed for two hours.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -296,6 +299,10 @@ exercises:
         - I have a booking. My name is Nguyen Lan.
         - I have a reservation for Nguyen Lan.
         - I made a reservation. My name is Nguyen Lan.
+        - I booked a room. My name is Nguyen Lan.
+        - I booked a room under the name Nguyen Lan.
+        - I've booked a room under the name Nguyen Lan.
+        - I have booked a room under the name Nguyen Lan.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -356,6 +363,7 @@ exercises:
     answer:
       orders:
         - [s-a, s-single, s-ticket, s-to, s-nhatrang, s-please]
+        - [s-a, s-single, s-to, s-nhatrang, s-please]
     explanation:
       vi: Vé một chiều là single ticket (return là khứ hồi). Đi đến đâu dùng to; please thường đứng cuối câu yêu cầu.
     display_answer: A single ticket to Nha Trang, please.

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:slowly-too-enough
 order_index: 4
 level: a2
@@ -295,6 +294,7 @@ exercises:
         - My son is not old enough for this game.
         - My son is too young to play this game.
         - My son's too young to play this game.
+        - My son is too young for this game.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -335,6 +335,8 @@ exercises:
         - Tôi làm việc quá chăm chỉ và ngủ không ngon.
         - Tôi làm việc quá sức nên ngủ không ngon.
         - Tôi làm việc quá vất vả nên ngủ không ngon.
+        - Tôi làm việc quá vất vả và ngủ không ngon giấc.
+        - Tôi làm việc quá sức và ngủ không ngon giấc.
     rubric:
       diacritics: lenient
     explanation:
@@ -414,6 +416,8 @@ exercises:
         - He's a very good football player.
         - He is a very good football player.
         - He plays soccer very well.
+        - He's a very good footballer.
+        - He is a very good footballer.
     rubric:
       typo_tolerance: 1
     known_wrong:

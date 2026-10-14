@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:was-were
 order_index: 1
 level: a2
@@ -317,6 +316,8 @@ exercises:
         - It was really cold last night.
         - Last night was very cold.
         - It was so cold last night.
+        - It was very cold yesterday evening.
+        - The weather was very cold last night.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -357,6 +358,9 @@ exercises:
         - Ở biển không có nhiều người, nhưng cảnh tuyệt đẹp.
         - Bãi biển không đông lắm, nhưng cảnh đẹp tuyệt vời.
         - Ở bãi biển không có nhiều người, nhưng quang cảnh thật tuyệt vời.
+        - Không có nhiều người ở bãi biển, nhưng cảnh đẹp tuyệt vời.
+        - Không có nhiều người ở bãi biển, nhưng cảnh thật tuyệt vời.
+        - Bãi biển không đông người, nhưng cảnh tuyệt vời.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -407,6 +411,8 @@ exercises:
         - Last weekend the movie was very boring, and the movie theater was very crowded.
         - Last weekend the film was very boring, but the cinema was very crowded.
         - Last weekend the film was so boring, and the cinema was so crowded.
+        - The film was very boring last weekend, but the cinema was very crowded.
+        - Last weekend the movie was very boring, and the theater was very crowded.
     rubric:
       typo_tolerance: 1
     known_wrong:

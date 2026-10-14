@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:health-lifestyle-review
 order_index: 5
 level: a2
@@ -315,6 +314,8 @@ exercises:
         - I feel stressed, so I can't sleep well.
         - I'm stressed, so I can't sleep well.
         - I'm feeling stressed, so I don't sleep well.
+        - I'm stressed out, so I don't sleep well.
+        - I feel stressed, so I'm not sleeping well.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -406,7 +407,7 @@ exercises:
         feedback_vi: Go + V-ing không có to - go swimming.
         error_tag: go_to_ing
       - answer: You should go swimming or do badminton three times a week.
-        feedback_vi: Cầu lông là môn có đối thủ, đi với play.
+        feedback_vi: Cầu lông là môn chơi với vợt và quả cầu (giống nhóm môn có bóng), nên đi với play.
         error_tag: sport_collocation
       - answer: You should to go swimming or play badminton three times a week.
         feedback_vi: Should không đi với to.
@@ -435,6 +436,7 @@ exercises:
         - I've got a fever and I'm dizzy.
         - I have a temperature and I feel dizzy.
         - I've got a temperature and I feel dizzy.
+        - I have a fever and I'm feeling dizzy.
     rubric:
       typo_tolerance: 1
     known_wrong:

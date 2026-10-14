@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:going-to-plans
 order_index: 1
 level: a2
@@ -268,6 +267,10 @@ exercises:
         - I'm going to go to Dalat next week.
         - I am going to visit Dalat next week.
         - I'm going to visit Dalat next week.
+        - I'm going to Dalat next week.
+        - Next week I'm going to Da Lat.
+        - I will go to Da Lat next week.
+        - I'll go to Da Lat next week.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -284,7 +287,7 @@ exercises:
         feedback_vi: Sau will là động từ nguyên mẫu, và không trộn will với going - I'm going to go to Da Lat next week.
         error_tag: verb_form
     explanation:
-      vi: Đây là kế hoạch đã quyết định nên dùng be going to + go/visit; next week đứng đầu hoặc cuối câu, không có in. I'm going to Da Lat cũng đúng vì đây là cách nói lịch đã sắp xếp.
+      vi: Đây là kế hoạch đã quyết định nên dùng be going to + go/visit; next week đứng đầu hoặc cuối câu, không có in. I'm going to Da Lat cũng đúng vì đây là cách nói lịch đã sắp xếp; I'll go… vẫn được chấp nhận, nhưng với kế hoạch đã định thì going to tự nhiên hơn.
     display_answer: I'm going to go to Da Lat next week.
 
   - key: en:exercise:going-to-plans-translate-holiday
@@ -306,6 +309,9 @@ exercises:
         - Are you going to take a holiday in July?
         - Are you going to take a vacation in July?
         - In July, are you going to go on holiday?
+        - Are you planning to go on holiday in July?
+        - Do you plan to go on holiday in July?
+        - Are you planning to go on vacation in July?
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -344,6 +350,9 @@ exercises:
         - Ba mẹ tôi sẽ đến thăm chúng tôi vào ngày kia.
         - Ngày kia bố mẹ mình sẽ đến thăm bọn mình.
         - Ngày kia bố mẹ tôi định đến thăm chúng tôi.
+        - Ngày kia bố mẹ tôi sẽ đến thăm bọn tôi.
+        - Ngày kia bố mẹ mình sẽ đến thăm chúng mình.
+        - Ngày kia bố mẹ tôi sẽ sang thăm chúng tôi.
     rubric:
       diacritics: lenient
     explanation:

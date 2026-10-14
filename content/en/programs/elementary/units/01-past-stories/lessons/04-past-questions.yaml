@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:past-questions
 order_index: 4
 level: a2
@@ -50,7 +49,7 @@ body:
       vi: Hỏi về cảm nhận (vui không, thế nào) dùng How was…? với be, không dùng did - How was your weekend? How was the film? Câu với be (was/were) không bao giờ đi cùng did.
   - type: deep_explain
     text:
-      vi: Mẹo kiểm tra - trong một câu chỉ đánh dấu quá khứ một lần. Nếu đã có did/didn't thì động từ chính để nguyên; nếu không có did thì động từ chính đổi sang quá khứ (I went, but I didn't go). Khi hỏi về chủ ngữ (Who went with you?), tiếng Anh không dùng did - đây là ngoại lệ bạn sẽ gặp thêm ở bài sau.
+      vi: Mẹo kiểm tra - trong một câu chỉ đánh dấu quá khứ một lần. Nếu đã có did/didn't thì động từ chính để nguyên; nếu không có did thì động từ chính đổi sang quá khứ (I went, but I didn't go). Khi hỏi về chủ ngữ (Who went with you?), tiếng Anh không dùng did - đây là ngoại lệ bạn sẽ học kỹ hơn sau này.
   - type: example
     target: "How was your weekend? - It was great. I had a lot of fun."
     target_lang: en
@@ -286,6 +285,8 @@ exercises:
         - Last Monday I didn't go to work.
         - I didn't work on Monday.
         - I didn't work last Monday.
+        - I did not go to work last Monday.
+        - Last Monday, I didn't go to work.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -362,6 +363,9 @@ exercises:
         - Không có gì đặc biệt. Mình không ra ngoài, mình chỉ nghỉ ngơi ở nhà thôi.
         - Không có gì đặc biệt. Tôi không đi chơi, chỉ thư giãn ở nhà.
         - Chẳng có gì đặc biệt. Mình không đi đâu, chỉ ở nhà nghỉ ngơi.
+        - Không có gì đặc biệt. Tôi không đi đâu cả, chỉ ở nhà nghỉ ngơi.
+        - Không có gì đặc biệt. Mình không ra ngoài, chỉ ở nhà nghỉ ngơi.
+        - Không có gì đặc biệt. Tôi không ra ngoài, tôi chỉ thư giãn ở nhà.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -411,6 +415,8 @@ exercises:
         - We didn't buy anything, but we had fun.
         - We didn't buy anything, but we had a really good time.
         - We bought nothing, but we had a great time.
+        - We didn't buy anything at all, but we had a great time.
+        - We didn't buy anything, but we had a really great time.
         - We didn't buy anything but we had a great time.
     rubric:
       typo_tolerance: 1

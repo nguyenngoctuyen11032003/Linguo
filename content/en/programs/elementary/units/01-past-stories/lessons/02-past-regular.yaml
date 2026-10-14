@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:past-regular
 order_index: 2
 level: a2
@@ -67,7 +66,7 @@ body:
     translation:
       vi: Chủ Nhật tuần trước chúng mình đến thăm ông bà.
     note:
-      vi: Visited đọc /ˈvɪzɪtɪd/ - thêm âm "tịd" vì sau âm /t/. Visit không cần to.
+      vi: Visited đọc /ˈvɪzɪtɪd/ - thêm một âm tiết /ɪd/ vì visit tận cùng bằng âm /t/. Visit không cần to.
   - type: example
     target: She studied all evening, then she stopped and listened to music.
     target_lang: en
@@ -195,12 +194,12 @@ exercises:
     difficulty: 2
     item: en:item:cleaned
     prompt:
-      template: "On Saturday I {{b1}} (clean) my room, and my brother {{b2}} (play) football."
+      template: "Last Saturday I {{b1}} (clean) my room, and my brother {{b2}} (play) football."
       blanks:
         - { id: b1, width_hint: 7 }
         - { id: b2, width_hint: 6 }
       hint_levels:
-        - "Nghĩa của câu: Thứ Bảy mình dọn phòng, còn em trai mình chơi bóng đá."
+        - "Nghĩa của câu: Thứ Bảy tuần trước mình dọn phòng, còn em trai mình chơi bóng đá."
         - "Gợi ý: cả hai việc đã xảy ra, thêm -ed; play giữ nguyên y."
     answer:
       blanks:
@@ -221,7 +220,7 @@ exercises:
         error_tag: ed_spelling
     explanation:
       vi: Hai việc đã xảy ra nên dùng quá khứ đơn - cleaned, played. Play có nguyên âm trước y nên chỉ thêm -ed.
-    display_answer: On Saturday I cleaned my room, and my brother played football.
+    display_answer: Last Saturday I cleaned my room, and my brother played football.
 
   - key: en:exercise:past-regular-order-music
     type: word_bank
@@ -246,6 +245,8 @@ exercises:
       orders:
         - [w-we, w-stayed, w-at, w-home, w-and, w-listened, w-to, w-music]
         - [w-we, w-listened, w-to, w-music, w-and, w-stayed, w-at, w-home]
+        - [w-we, w-stayed, w-home, w-and, w-listened, w-to, w-music]
+        - [w-we, w-listened, w-to, w-music, w-and, w-stayed, w-home]
     explanation:
       vi: Hai việc đã xảy ra nên dùng stayed và listened. Listen luôn cần to trước thứ được nghe - listened to music.
     display_answer: We stayed at home and listened to music.
@@ -311,6 +312,8 @@ exercises:
         - Yesterday, my dad cooked dinner.
         - My father made dinner yesterday.
         - My dad made dinner yesterday.
+        - Yesterday my father made dinner.
+        - Yesterday my dad made dinner.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -352,6 +355,10 @@ exercises:
         - Last night the concert started at 8.
         - The concert began at eight o'clock last night.
         - Last night the concert began at eight o'clock.
+        - The concert began at eight last night.
+        - Last night the concert began at eight.
+        - The concert started at 8 p.m. last night.
+        - The concert started at 8pm last night.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -392,6 +399,9 @@ exercises:
         - Chúng tôi đến thăm ông bà vào cuối tuần trước và chơi bài với ông bà cả buổi tối.
         - Cuối tuần trước chúng tôi đã đến thăm ông bà và chơi bài với ông bà cả buổi tối.
         - Cuối tuần trước chúng tôi đến thăm ông bà và chơi bài với họ cả buổi tối.
+        - Chúng tôi đến thăm ông bà cuối tuần trước và chơi bài với ông bà cả buổi tối.
+        - Cuối tuần trước chúng tôi đi thăm ông bà và chơi bài với ông bà cả buổi tối.
+        - Cuối tuần trước chúng mình đến thăm ông bà và chơi bài với ông bà suốt buổi tối.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -443,6 +453,8 @@ exercises:
         - We stayed at home and watched TV because it rained.
         - We stayed at home and watched TV because it was raining.
         - It rained, so we stayed at home and watched television.
+        - We stayed home and watched TV because it rained.
+        - Because it was raining, we stayed at home and watched TV.
     rubric:
       typo_tolerance: 1
     known_wrong:

@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Cuộc sống hằng ngày: lúc này & lời mời" (A2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: What are you doing? ----------------
@@ -104,7 +103,7 @@ items:
           translation:
             vi: Giờ mình không nói chuyện được. Mình đang lái xe.
       pronunciation_note:
-        vi: Nhấn vào now. Chữ gh trong right câm, đọc giống "rai".
+        vi: Nhấn vào now. Chữ gh trong right câm - right đọc /raɪt/, gần "rai-t".
 
   - key: en:item:these-days
     type: phrase
@@ -445,7 +444,7 @@ items:
       examples:
         - target: I love these shoes. I'm wearing them today.
           translation:
-            vi: Tôi rất thích đôi giày này. Hôm nay tôi đang đi chúng.
+            vi: Tôi rất thích đôi giày này. Hôm nay tôi đang đi đôi này đây.
       pronunciation_note:
         vi: Âm /ð/ đặt đầu lưỡi giữa hai hàm răng, không đọc thành "dem" hay "zem".
       confusion:
@@ -895,7 +894,7 @@ items:
           translation:
             vi: "A: Cho tôi gặp Nam. B: Nam đây."
       confusion:
-        vi: Trên điện thoại nói This is Mai, không nói "I am Mai" hay "Here is Mai".
+        vi: Trên điện thoại, người bản ngữ thường nói This is Mai thay vì I am Mai; không nói "Here is Mai".
 
   - key: en:item:hold-on
     type: phrase

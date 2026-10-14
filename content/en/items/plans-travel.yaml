@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Kế hoạch & du lịch" (A2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: be going to + mốc thời gian tương lai ----------------
@@ -449,7 +448,7 @@ items:
       examples:
         - target: Lan is inviting some friends to her birthday party on Sunday.
           translation:
-            vi: Chủ nhật Lan mời vài người bạn đến dự tiệc sinh nhật.
+            vi: Lan đang mời vài người bạn đến dự tiệc sinh nhật của cô ấy vào Chủ Nhật.
       pronunciation_note:
         vi: Nhấn âm sau - in-VITE.
       confusion:
@@ -897,7 +896,7 @@ items:
       pos: cấu trúc so sánh
     back:
       meaning:
-        vi: "Tính từ từ hai âm tiết trở lên (không tận cùng -y) dùng more + tính từ + than: more comfortable than, more beautiful than."
+        vi: "Phần lớn tính từ từ hai âm tiết trở lên (không tận cùng -y) dùng more + tính từ + than: more comfortable than, more beautiful than. Một vài từ hai âm tiết như quiet vẫn thêm -er (quieter)."
       examples:
         - target: The sleeper bus is more comfortable than the normal bus.
           translation:

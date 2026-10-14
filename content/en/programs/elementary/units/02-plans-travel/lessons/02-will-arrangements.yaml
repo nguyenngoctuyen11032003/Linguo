@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:will-arrangements
 order_index: 2
 level: a2
@@ -264,6 +263,8 @@ exercises:
         - That bag looks heavy. I'll help you with it.
         - That bag looks heavy. Let me help you.
         - That bag looks heavy. I'll carry it for you.
+        - That bag looks heavy. Let me help you with it.
+        - That bag looks really heavy. I'll help you.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -304,6 +305,9 @@ exercises:
         - I am meeting Lan at the coffee shop tomorrow afternoon.
         - I'm going to meet Lan at the café tomorrow afternoon.
         - I'm going to meet Lan at the cafe tomorrow afternoon.
+        - I'm seeing Lan at the café tomorrow afternoon.
+        - I'm seeing Lan at the cafe tomorrow afternoon.
+        - Tomorrow afternoon I'm going to meet Lan at the café.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -343,6 +347,8 @@ exercises:
         - Tuần tới ở Đà Lạt có lẽ sẽ không lạnh lắm.
         - Tuần sau ở Đà Lạt có lẽ sẽ không quá lạnh.
         - Tuần sau ở Đà Lạt chắc là sẽ không lạnh lắm.
+        - Tuần sau trời ở Đà Lạt có lẽ sẽ không lạnh lắm.
+        - Tuần sau Đà Lạt có lẽ sẽ không rét lắm.
     rubric:
       diacritics: lenient
     explanation:
@@ -369,6 +375,7 @@ exercises:
     answer:
       orders:
         - [r-are, r-you, r-free, r-on, r-friday, r-evening]
+        - [r-are, r-you, r-free, r-friday, r-evening]
     explanation:
       vi: Free là tính từ nên câu hỏi dùng Are you free…?, không dùng Do. Ngày trong tuần đi với on - on Friday evening.
     display_answer: Are you free on Friday evening?

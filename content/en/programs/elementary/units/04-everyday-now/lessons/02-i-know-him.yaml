@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:i-know-him
 order_index: 2
 level: a2
@@ -218,8 +217,9 @@ exercises:
     answer:
       orders:
         - [yo-is, yo-this, yo-umbrella, yo-yours]
+        - [yo-is, yo-this, yo-your, yo-umbrella]
     explanation:
-      vi: Câu hỏi với be đảo Is lên đầu. Yours đứng một mình ở cuối câu và không có dấu nháy; your cần danh từ theo sau.
+      vi: Câu hỏi với be đảo Is lên đầu. Yours đứng một mình ở cuối câu và không có dấu nháy; your cần danh từ theo sau (Is this your umbrella? cũng đúng).
     display_answer: "Is this umbrella yours?"
 
   # ---------------- recall ----------------
@@ -304,6 +304,8 @@ exercises:
         - This is not my phone. It is his.
         - This isn't my phone. It is his.
         - This is not my phone. It's his.
+        - This phone doesn't belong to me. It's his.
+        - This phone isn't mine. It belongs to him.
     rubric:
       typo_tolerance: 1
     known_wrong:

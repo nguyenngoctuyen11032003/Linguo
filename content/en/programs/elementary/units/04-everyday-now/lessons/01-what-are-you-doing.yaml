@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:what-are-you-doing
 order_index: 1
 level: a2
@@ -49,7 +48,7 @@ body:
       vi: Hiện tại đơn nói thói quen, việc lâu dài - I work in an office. Khi hai thì đi cùng nhau, bạn thấy rõ sự khác nhau - I usually take the bus, but today I'm walking.
   - type: deep_explain
     text:
-      vi: "Câu hỏi đảo be lên trước - Are you working? What is she doing? Phủ định thêm not - I'm not working today. Chính tả -ing: bỏ e câm (make → making, write → writing), gấp đôi phụ âm cuối ở từ ngắn (sit → sitting, run → running, swim → swimming), còn play → playing, read → reading giữ nguyên. Ở unit trước bạn đã gặp I'm meeting Lan tomorrow - cùng dạng, nhưng có mốc tương lai nên nghĩa là lịch hẹn."
+      vi: "Câu hỏi đảo be lên trước (Are you working? What is she doing?), phủ định thêm not (I'm not working today). Chính tả -ing: bỏ e câm (make → making, write → writing), gấp đôi phụ âm cuối ở từ ngắn (sit → sitting, run → running, swim → swimming), còn play → playing, read → reading giữ nguyên. Ở unit trước bạn đã gặp I'm meeting Lan tomorrow - cùng dạng, nhưng có mốc tương lai nên nghĩa là lịch hẹn."
   - type: example
     target: "A: Hi Mai, what are you doing? B: I'm sitting in a café. I'm waiting for Hoa."
     target_lang: en
@@ -216,8 +215,10 @@ exercises:
       orders:
         - [wh-im, wh-working, wh-from, wh-home, wh-this, wh-week]
         - [wh-this, wh-week, wh-im, wh-working, wh-from, wh-home]
+        - [wh-im, wh-working, wh-at, wh-home, wh-this, wh-week]
+        - [wh-this, wh-week, wh-im, wh-working, wh-at, wh-home]
     explanation:
-      vi: Việc tạm thời trong tuần này dùng I'm + working. Cụm cố định là work from home; this week có thể đứng đầu hoặc cuối câu.
+      vi: Việc tạm thời trong tuần này dùng I'm + working. Cụm thường dùng là work from home (work at home cũng đúng); this week có thể đứng đầu hoặc cuối câu.
     display_answer: "I'm working from home this week."
 
   # ---------------- recall ----------------
@@ -304,6 +305,7 @@ exercises:
         - I'm looking for the keys.
         - I'm looking for the key.
         - I'm looking for keys.
+        - I'm searching for my keys.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -423,6 +425,8 @@ exercises:
         - I usually go to work by bus, but today I'm walking to work.
         - I usually go to work by bus, but today I'm going on foot.
         - I often go to work by bus, but today I'm walking.
+        - I normally go to work by bus, but today I'm walking.
+        - I usually get to work by bus, but today I'm walking.
     rubric:
       typo_tolerance: 1
     known_wrong:

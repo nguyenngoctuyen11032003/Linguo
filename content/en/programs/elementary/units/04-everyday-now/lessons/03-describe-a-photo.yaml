@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:describe-a-photo
 order_index: 3
 level: a2
@@ -201,8 +200,9 @@ exercises:
     answer:
       orders:
         - [bn-theres, bn-a, bn-man, bn-sitting, bn-on, bn-the, bn-bench]
+        - [bn-a, bn-man, bn-is, bn-sitting, bn-on, bn-the, bn-bench]
     explanation:
-      vi: There's + người + V-ing. Đã có There's (= There is) thì không thêm is trước sitting.
+      vi: There's + người + V-ing. Đã có There's (= There is) thì không thêm is trước sitting; nếu không dùng There's thì nói A man is sitting on the bench.
     display_answer: "There's a man sitting on the bench."
 
   - key: en:exercise:describe-a-photo-mcq-top
@@ -277,6 +277,7 @@ exercises:
         - On the right, there are two men talking.
         - On the right, there are two men chatting.
         - On the right of the picture, two men are talking.
+        - On the right side, two men are talking.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -313,6 +314,9 @@ exercises:
         - Everyone in the picture is laughing.
         - All the people in the photo are smiling.
         - All the people in the picture are smiling.
+        - Everybody in the photo is laughing.
+        - Everyone in this photo is smiling.
+        - Everyone in this picture is smiling.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -429,6 +433,8 @@ exercises:
         - In the middle, there's a woman reading a book.
         - In the middle, there is a woman reading a book.
         - In the middle, a woman is reading a book.
+        - In the middle, there's a woman sitting reading a book.
+        - In the middle, a woman is sitting reading a book.
     rubric:
       typo_tolerance: 1
     known_wrong:

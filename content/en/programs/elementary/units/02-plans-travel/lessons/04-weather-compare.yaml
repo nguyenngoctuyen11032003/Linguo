@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:weather-compare
 order_index: 4
 level: a2
@@ -240,7 +239,7 @@ exercises:
       blanks:
         b1: [hotter, warmer, sunnier]
         b2: [most]
-        b3: [better, cooler, nicer]
+        b3: [better, cooler, nicer, colder, milder]
     known_wrong:
       - answer: hoter
         feedback_vi: Hot kết thúc bằng một nguyên âm + một phụ âm, nên gấp đôi t - hotter.
@@ -314,6 +313,10 @@ exercises:
         - Taking the train is cheaper than flying, but flying is faster.
         - The train is cheaper than flying, but flying is faster.
         - Trains are cheaper than planes, but planes are faster.
+        - Trains are cheaper than planes, but planes are quicker.
+        - Taking the train is cheaper than taking the plane, but the plane is faster.
+        - Going by train is cheaper than going by plane, but going by plane is faster.
+        - Travelling by train is cheaper than travelling by plane, but the plane is faster.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -351,6 +354,8 @@ exercises:
         - Vũng Tàu đông đúc hơn Côn Đảo, nhưng ở đó rẻ hơn.
         - Vũng Tàu đông đúc hơn Côn Đảo, nhưng giá rẻ hơn.
         - Vũng Tàu đông hơn Côn Đảo, nhưng chi phí rẻ hơn.
+        - Vũng Tàu đông đúc hơn Côn Đảo, nhưng nó rẻ hơn.
+        - Vũng Tàu thì đông hơn Côn Đảo, nhưng rẻ hơn.
     rubric:
       diacritics: lenient
     explanation:
@@ -399,5 +404,5 @@ exercises:
     answer:
       correct_option_id: n2v
     explanation:
-      vi: So sánh hai nơi dùng so sánh hơn - better (bất quy tắc của good) và quieter (quiet là tính từ ngắn). More good, more quieter, gooder đều sai; best cần the và dùng cho so sánh nhất.
+      vi: So sánh hai nơi dùng so sánh hơn - better (bất quy tắc của good) và quieter (quiet tuy có hai âm tiết nhưng thường thêm -er). More good, more quieter, gooder đều sai; best cần the và dùng cho so sánh nhất.
     display_answer: "Go to Quy Nhon. The beaches are better and it's quieter."

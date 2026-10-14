@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Sức khoẻ & lối sống" (A2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: Đau ở đâu? ----------------
@@ -356,7 +355,7 @@ items:
     skill_tags: [speaking, listening]
     front:
       text: How long have you had it? - For two days.
-      ipa: /ˌhaʊ ˈlɒŋ həv ju ˈhæd ɪt/
+      ipa: UK /ˌhaʊ ˈlɒŋ həv ju ˈhæd ɪt/ · US /ˌhaʊ ˈlɔːŋ həv ju ˈhæd ɪt/
       pos: câu hỏi cố định
     back:
       meaning:
@@ -446,7 +445,7 @@ items:
       pronunciation_note:
         vi: Once đọc /wʌns/ "quăn-s", bắt đầu bằng âm /w/ dù viết chữ o.
       confusion:
-        vi: Một lần và hai lần có từ riêng (once, twice); từ ba trở lên mới dùng times. Không nói "two times a day" trong lời dặn chuẩn, và không có chữ "in" - không nói "twice in a day".
+        vi: Một lần và hai lần có từ riêng (once, twice); từ ba trở lên mới dùng times. Two times a day vẫn được hiểu nhưng twice a day tự nhiên hơn; không có chữ "in" - không nói "twice in a day".
 
   - key: en:item:before-after-meals
     type: phrase
@@ -689,7 +688,7 @@ items:
           translation:
             vi: Mẹ tôi tập yoga mỗi sáng.
       pronunciation_note:
-        vi: Yoga đọc "DÂU-gờ" (UK) hoặc "DÔU-gờ" (US), không đọc "yô-ga".
+        vi: Yoga nhấn âm đầu - UK /ˈjəʊɡə/ "YÂU-gờ", US /ˈjoʊɡə/ "YÔU-gờ"; âm cuối đọc nhẹ "gờ", không đọc rõ "ga" như tiếng Việt.
       confusion:
         vi: Yoga không phải trò chơi có bóng nên dùng do, không dùng play.
 
@@ -988,7 +987,7 @@ items:
           translation:
             vi: Sáng thứ Hai nào tôi cũng mệt.
       pronunciation_note:
-        vi: Đọc một âm tiết dài "TAI-ợd", đuôi -ed chỉ đọc /d/, không thành "tai-rét".
+        vi: Đọc gọn "TAI-ợd", đuôi -ed chỉ đọc /d/, không thành "tai-rét".
       confusion:
         vi: Tired là tính từ nên cần be - I'm tired, không nói "I tired". Tiring là "gây mệt" - a tiring day.
 

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:past-stories-review
 order_index: 5
 level: a2
@@ -132,12 +131,12 @@ exercises:
       options:
         - { id: a7r, text: Trời không đẹp nên họ ở trong nhà., lang: vi }
         - { id: m3t, text: Trời đẹp nên họ ra ngoài chơi., lang: vi }
-        - { id: z9e, text: Mọi người về nhà lúc chín giờ sáng., lang: vi }
+        - { id: z9e, text: Mọi người về nhà lúc mười giờ., lang: vi }
         - { id: k1s, text: Họ ra ngoài dù trời không đẹp., lang: vi }
     answer:
       correct_option_id: a7r
     explanation:
-      vi: Wasn't good là "không đẹp", didn't go out là "không ra ngoài". Đoạn văn nói về bữa tiệc sau bữa trưa, nên chín giờ là buổi tối, không phải buổi sáng.
+      vi: Wasn't good là "không đẹp", didn't go out là "không ra ngoài" nên họ ở trong nhà. Mọi người về lúc chín giờ (at nine), không phải mười giờ.
     display_answer: Trời không đẹp nên họ ở trong nhà.
 
   - key: en:exercise:past-stories-review-listen-met
@@ -302,6 +301,8 @@ exercises:
         - I didn't have breakfast yesterday because I woke up late.
         - Yesterday I didn't eat breakfast because I got up late.
         - I didn't have breakfast yesterday because I overslept.
+        - Yesterday I didn't have breakfast because I woke up late.
+        - I skipped breakfast yesterday because I got up late.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -337,6 +338,7 @@ exercises:
         - Did you meet Lan at the party?
         - Did you see Lan at the party yesterday?
         - At the party, did you see Lan?
+        - Did you run into Lan at the party?
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -453,6 +455,7 @@ exercises:
         - I went to the beach with my friends last weekend. We ate seafood and took a lot of photos.
         - Last weekend I went to the seaside with my friends. We ate seafood and took a lot of photos.
         - Last weekend my friends and I went to the beach. We ate seafood and took a lot of photos.
+        - Last weekend I went to the beach with my friends. We ate seafood and took many photos.
     rubric:
       typo_tolerance: 1
     known_wrong:

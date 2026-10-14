@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Kể chuyện quá khứ" (A2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: was / were ----------------
@@ -450,7 +449,7 @@ items:
       pronunciation_note:
         vi: -ed đọc /d/ sau /n/ - cleaned một âm tiết, gần "clinđ".
       confusion:
-        vi: Clean the room là dọn phòng; clean one's teeth ít dùng, thường nói brush one's teeth.
+        vi: Clean là làm cho sạch (lau, quét, rửa); tidy là xếp đồ cho gọn. Dọn phòng cho sạch là clean my room, xếp gọn đồ đạc là tidy my room.
 
   - key: en:item:stayed
     type: vocab
@@ -811,7 +810,7 @@ items:
       pronunciation_note:
         vi: Âm /ɜː/ không có trong tiếng Việt, gần "ơ" kéo dài; giọng Mỹ cong lưỡi /ɝː/. Đuôi /st/ đọc đủ.
       confusion:
-        vi: Đứng đầu câu, sau đó có dấu phẩy - First, … Không nói "Firstly" trong câu chuyện kể thân mật (Firstly hợp với bài viết liệt kê ý).
+        vi: Đứng đầu câu, sau đó có dấu phẩy - First, … Khi kể chuyện, First tự nhiên hơn Firstly (Firstly hợp với bài viết liệt kê ý).
 
   - key: en:item:sequence-then
     type: vocab

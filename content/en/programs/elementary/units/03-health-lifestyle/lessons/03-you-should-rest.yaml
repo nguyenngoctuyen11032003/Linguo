@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:you-should-rest
 order_index: 3
 level: a2
@@ -55,7 +54,7 @@ body:
       vi: "Tiếng Việt nói \"chơi\", \"tập\", \"đi\" khá thoải mái, nhưng tiếng Anh chia ba nhóm: play + môn có bóng (play football, play badminton); go + V-ing (go swimming, go jogging); do + môn tập cá nhân (do yoga, do exercise)."
   - type: deep_explain
     text:
-      vi: "Để hỏi thói quen, dùng lại How often…? đã học - How often do you go swimming? Trả lời bằng trạng từ tần suất (I usually…) hoặc cụm once/twice/three times a week. Lời khuyên nghe mềm hơn nếu thêm I think: I think you should go to bed early. Phủ định lịch sự là I don't think you should…, không nói \"I think you don't should\"."
+      vi: "Để hỏi thói quen, dùng lại How often…? đã học - How often do you go swimming? Trả lời bằng trạng từ tần suất (I usually…) hoặc cụm once/twice/three times a week. Lời khuyên nghe mềm hơn nếu thêm I think: I think you should go to bed early; phủ định lịch sự là I don't think you should…, không nói \"I think you don't should\"."
   - type: example
     target: "A: I've got a terrible cold. What should I do? B: You should stay at home and rest."
     target_lang: en
@@ -305,6 +304,7 @@ exercises:
         - Twice a week she does yoga.
         - She practises yoga twice a week.
         - She practices yoga twice a week.
+        - She does yoga twice every week.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -385,6 +385,8 @@ exercises:
         - How often do you go to the gym?
         - How often do you go to the gym each week?
         - How often do you work out at the gym?
+        - How many times a week do you go to the gym?
+        - How often do you go to the gym to work out?
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -422,6 +424,9 @@ exercises:
         - His back hurts. He should go to the doctor.
         - He has a backache. He should go to the doctor.
         - He's got a backache. He should go to the doctor.
+        - He's got back pain. He should see a doctor.
+        - His back hurts. He should go and see a doctor.
+        - He has a backache. He should go to see a doctor.
     rubric:
       typo_tolerance: 1
     known_wrong:

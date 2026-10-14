@@ -1,16 +1,15 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 key: en:program:elementary
 language: en
 title:
   vi: Tiếng Anh sơ cấp (A2)
 description:
-  vi: Kể chuyện quá khứ, nói về kế hoạch, du lịch, so sánh và giao tiếp hằng ngày tự tin hơn (A2). Nội dung demo, chưa qua kiểm duyệt.
+  vi: Kể chuyện quá khứ, nói về kế hoạch và du lịch, so sánh, nói về sức khoẻ, lời khuyên, việc đang diễn ra, lời mời và gọi điện thoại (A2).
 kind: core
 goal_types: []
 level_from: a2
