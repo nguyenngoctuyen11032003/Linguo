@@ -12,6 +12,7 @@ import { ExamRunnerPage } from '@/routes/app/exam/ExamRunnerPage';
 import { HomePage } from '@/routes/app/HomePage';
 import { LearnPage } from '@/routes/app/learn/LearnPage';
 import { LessonPage } from '@/routes/app/lesson/LessonPage';
+import { NotificationsPage } from '@/routes/app/notifications/NotificationsPage';
 import { OnboardingPage } from '@/routes/app/onboarding/OnboardingPage';
 import { ProgressPage } from '@/routes/app/progress/ProgressPage';
 import { ReviewPage } from '@/routes/app/review/ReviewPage';
@@ -112,6 +113,7 @@ const routeTree: RouteObject[] = [
               { path: 'luyen-thi', element: <ExamHubPage /> },
               { path: 'tien-do', element: <ProgressPage /> },
               { path: 'cai-dat', element: <SettingsPage /> },
+              { path: 'thong-bao', element: <NotificationsPage /> },
             ],
           },
         ],

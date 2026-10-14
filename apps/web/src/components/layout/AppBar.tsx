@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router';
+import { NotificationBell } from '@/components/notifications/NotificationBell';
 import { LanguagePill } from '@/components/ui/LanguagePill';
 import { useToast } from '@/components/ui/Toast';
 import { useAuth } from '@/features/auth/AuthProvider';
@@ -37,6 +38,8 @@ export function AppBar() {
             }}
             onAdd={(language) => navigate(`/app/bat-dau?lang=${language}`)}
           />
+          {/* The app bar shows at every width (the desktop sidebar sits beside it), so it holds the only bell. */}
+          <NotificationBell />
           <Link
             to="/app/cai-dat"
             aria-label="Tài khoản và cài đặt"
