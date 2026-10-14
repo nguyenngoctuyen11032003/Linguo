@@ -13,3 +13,4 @@ export * from './progress';
 export * from './exam';
 export * from './notifications';
 export * from './admin';
+export * from './personal-vocab';
