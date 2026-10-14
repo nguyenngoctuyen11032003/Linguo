@@ -13,5 +13,21 @@
     { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
     { "src": "icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
     { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ôn tập",
+      "short_name": "Ôn tập",
+      "description": "Ôn lại các thẻ đến hạn hôm nay",
+      "url": "app/on-tap",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Học tiếp",
+      "short_name": "Học tiếp",
+      "description": "Tiếp tục lộ trình học của bạn",
+      "url": "app/hoc-tap",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
   ]
 }
