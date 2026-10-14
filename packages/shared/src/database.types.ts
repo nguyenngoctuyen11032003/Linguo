@@ -759,18 +759,18 @@ isOneToOne: false
                     "cap_max"?: number,"cap_min"?: number,"cap_per_minute"?: number,"daily_new_limit"?: number,"desired_retention"?: number,"id"?: boolean,"learning_steps_minutes"?: (number)[],"mastery_min_days"?: number,"mastery_min_recall_stability"?: number,"mastery_min_successes"?: number,"maximum_interval"?: number,"recovery_factor"?: number,"relearning_steps_minutes"?: (number)[],"updated_at"?: string,"weights"?: (number)[]
                   }
                   Relationships: [
-
+                    
                   ]
                 },"study_sessions": {
                   Row: {
-                    "completed_at": string | null,"created_at": string,"id": string,"local_date": string,"minutes_planned": number,"path_id": string,"plan": Json,"started_at": string | null,"status": string,"user_id": string
+                    "completed_at": string | null,"created_at": string,"id": string,"local_date": string,"minutes_planned": number,"path_id": string,"plan": NonNullable<Json>,"started_at": string | null,"status": string,"user_id": string
                   }
                   ComputedFields: never
                   Insert: {
-                    "completed_at"?: string | null,"created_at"?: string,"id"?: string,"local_date": string,"minutes_planned": number,"path_id": string,"plan": Json,"started_at"?: string | null,"status"?: string,"user_id": string
+                    "completed_at"?: string | null,"created_at"?: string,"id"?: string,"local_date": string,"minutes_planned": number,"path_id": string,"plan": NonNullable<Json>,"started_at"?: string | null,"status"?: string,"user_id": string
                   }
                   Update: {
-                    "completed_at"?: string | null,"created_at"?: string,"id"?: string,"local_date"?: string,"minutes_planned"?: number,"path_id"?: string,"plan"?: Json,"started_at"?: string | null,"status"?: string,"user_id"?: string
+                    "completed_at"?: string | null,"created_at"?: string,"id"?: string,"local_date"?: string,"minutes_planned"?: number,"path_id"?: string,"plan"?: NonNullable<Json>,"started_at"?: string | null,"status"?: string,"user_id"?: string
                   }
                   Relationships: [
                     {
@@ -1003,9 +1003,6 @@ isOneToOne: false
 "estimate_learning_path":
 { Args: { "p_current_level": string,"p_language": string,"p_target_date": string,"p_target_level": string,"p_today": string,"p_weekly_minutes": (number)[] }; Returns: Json
                            },
-"export_my_data":
-{ Args: Record<PropertyKey, never>; Returns: Json
-                           },
 "exam_attempt_json":
 { Args: { "p_attempt_id": string }; Returns: Json
                            },
@@ -1029,6 +1026,9 @@ isOneToOne: false
                            },
 "exam_structure_warning":
 { Args: { "p_family": string,"p_goal_type": string }; Returns: string
+                           },
+"export_my_data":
+{ Args: Record<PropertyKey, never>; Returns: Json
                            },
 "finish_diagnostic":
 { Args: { "p_attempt_id": string }; Returns: Json
@@ -1153,12 +1153,6 @@ isOneToOne: false
 "postpone_reviews":
 { Args: { "p_card_ids": (string)[],"p_idempotency_key": string,"p_path_id": string }; Returns: Json
                            },
-"purge_expired_data":
-{ Args: Record<PropertyKey, never>; Returns: Json
-                           },
-"reorder_session":
-{ Args: { "p_order": (string)[],"p_session_id": string }; Returns: Json
-                           },
 "progress_answer_day":
 { Args: { "p_client_at": string,"p_created_at": string,"p_user": string }; Returns: string
                            },
@@ -1184,6 +1178,12 @@ isOneToOne: false
                            },
 "purge_analytics":
 { Args: Record<PropertyKey, never>; Returns: number
+                           },
+"purge_expired_data":
+{ Args: Record<PropertyKey, never>; Returns: Json
+                           },
+"reorder_session":
+{ Args: { "p_order": (string)[],"p_session_id": string }; Returns: Json
                            },
 "review_day_totals":
 { Args: { "p_extra": boolean,"p_now": string,"p_path_id": string,"p_user": string,"p_weekly_minutes": (number)[] }; Returns: Json
