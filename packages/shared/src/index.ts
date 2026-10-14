@@ -11,3 +11,5 @@ export * from './ai';
 export * from './planner';
 export * from './progress';
 export * from './exam';
+export * from './notifications';
+export * from './admin';
