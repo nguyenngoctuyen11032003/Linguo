@@ -8,7 +8,7 @@ import type { AiQuotaState as UseAiQuota } from '@/features/ai-tutor/useAiQuota'
 import type { AiTutorState as UseAiTutor } from '@/features/ai-tutor/useAiTutor';
 import { renderWithProviders } from '../../../tests/unit/render';
 import { stubMatchMedia } from '../../../tests/unit/match-media';
-import { aiError, aiSuccess, ANALYZE_DATA, EXPLAIN_DATA, PRACTICE_DATA, QUOTA } from './ai-fixtures';
+import { aiError, aiSuccess, ANALYZE_DATA, EXPLAIN_DATA, PRACTICE_DATA, QUOTA, WRITING_DATA } from './ai-fixtures';
 import { AiExplainSheet } from './AiExplainSheet';
 import { AiQuotaChip } from './AiQuotaChip';
 
@@ -139,6 +139,62 @@ describe('AiExplainSheet', () => {
     expect(screen.getByRole('button', { name: /have lived/ })).toHaveTextContent('Đáp án đúng');
     expect(screen.getByText(PRACTICE_DATA.items[0]!.explanation_vi)).toBeInTheDocument();
     expect(screen.queryByText(PRACTICE_DATA.items[1]!.explanation_vi)).not.toBeInTheDocument();
+  });
+
+  it('renders writing feedback as practice feedback, never an official score', () => {
+    const request: AiRequestInput = {
+      task: 'review_writing',
+      language: 'en',
+      level: 'a2',
+      prompt: 'Write an email to Alex.',
+      answer: 'Hi Alex, lets watch Toy Story on Saturday at 6. See you, Lan',
+      rubric: [
+        { key: 'content', label_vi: 'Nội dung', description_vi: 'Đủ ba ý.', max_points: 4 },
+        { key: 'language', label_vi: 'Ngôn ngữ', description_vi: 'Ngữ pháp, chính tả.', max_points: 3 },
+      ],
+    };
+    setAi({ state: 'loading' });
+    const loading = renderSheet({ request, fallback: undefined });
+    expect(mocks.ai.run).toHaveBeenCalledWith(request);
+    expect(mocks.track).toHaveBeenCalledWith('ai_sheet_opened', { task: 'review_writing' });
+    expect(screen.getByRole('dialog', { name: 'Nhận xét bài viết' })).toHaveTextContent('Đang đọc bài viết…');
+    loading.unmount();
+
+    setAi({ state: 'ok', result: aiSuccess('review_writing', WRITING_DATA) });
+    renderSheet({ request, fallback: undefined });
+    const dialog = screen.getByRole('dialog', { name: 'Nhận xét bài viết' });
+    expect(within(dialog).getByText('Phản hồi luyện tập — không phải điểm chính thức')).toBeInTheDocument();
+    const rows = within(within(dialog).getByRole('list', { name: 'Nhận xét theo tiêu chí' })).getAllByRole('listitem');
+    expect(rows).toHaveLength(2);
+    expect(rows[0]).toHaveTextContent('Nội dung');
+    expect(rows[0]).toHaveTextContent('3/4 điểm');
+    expect(rows[0]).toHaveTextContent('Có phim và giờ gặp, còn thiếu chỗ gặp.');
+    expect(rows[1]).toHaveTextContent('Ngôn ngữ');
+    expect(rows[1]).toHaveTextContent('2/3 điểm');
+    expect(dialog).toHaveTextContent('Tổng tham khảo: 5/7 điểm');
+    expect(dialog).toHaveTextContent(WRITING_DATA.overall_vi);
+    expect(within(dialog).getByText(WRITING_DATA.corrected_version)).toHaveAttribute('lang', 'en');
+    expect(within(dialog).getByRole('button', { name: 'Báo lỗi' })).toBeInTheDocument();
+    expect(within(dialog).queryByRole('button', { name: 'Giải thích cách khác' })).not.toBeInTheDocument();
+  });
+
+  it('writing feedback without the rubric shows points only and keeps Korean text tagged', () => {
+    setAi({ state: 'ok', result: aiSuccess('review_writing', { ...WRITING_DATA, corrected_version: '안녕하세요.' }) });
+    const request: AiRequestInput = {
+      task: 'review_writing',
+      language: 'ko',
+      level: 'topik4',
+      prompt: '글을 쓰십시오.',
+      answer: '안녕하세요',
+      rubric: [{ key: 'content', label_vi: 'Nội dung', description_vi: 'Đủ ý.', max_points: 4 }],
+    };
+    renderSheet({ request });
+    const rows = within(screen.getByRole('list', { name: 'Nhận xét theo tiêu chí' })).getAllByRole('listitem');
+    expect(rows[0]).toHaveTextContent('3/4 điểm');
+    expect(rows[1]).toHaveTextContent('language');
+    expect(rows[1]).toHaveTextContent('2 điểm');
+    expect(screen.queryByText(/Tổng tham khảo/)).not.toBeInTheDocument();
+    expect(screen.getByText('안녕하세요.')).toHaveAttribute('lang', 'ko');
   });
 
   it('shows a short error for output that fails its schema', () => {

@@ -15,11 +15,18 @@ import { AiReportDialog } from './AiReportDialog';
 import { AiResultView } from './AiResultView';
 
 export const AI_LABEL = 'Giải thích AI · có thể chưa chính xác';
+export const AI_WRITING_LABEL = 'Nhận xét AI · có thể chưa chính xác';
 
 const TITLES: Record<AiRequestInput['task'], string> = {
   explain_concept: 'Giải thích AI',
   analyze_error: 'Vì sao?',
   generate_practice: 'Bài luyện thêm',
+  review_writing: 'Nhận xét bài viết',
+};
+
+const LOADING: Partial<Record<AiRequestInput['task'], string>> = {
+  generate_practice: 'Đang soạn bài luyện…',
+  review_writing: 'Đang đọc bài viết…',
 };
 
 export interface AiExplainSheetProps {
@@ -91,11 +98,11 @@ export function AiExplainSheet({ open, onClose, request, fallback, triggerRef }:
 
   let body;
   if (!ready || ai.state === 'idle' || ai.state === 'loading') {
-    body = <AiLoading label={request.task === 'generate_practice' ? 'Đang soạn bài luyện…' : undefined} />;
+    body = <AiLoading label={LOADING[request.task]} />;
   } else if (ai.state === 'ok' && ai.result) {
     body = (
       <div className="space-y-5">
-        <AiResultView result={ai.result} language={request.language} />
+        <AiResultView result={ai.result} language={request.language} request={current} />
         <div className="flex flex-wrap gap-2 border-t border-border pt-4">
           {current.task === 'explain_concept' && (
             <Button variant="ghost" onClick={() => run({ ...current, variant: 'different' })}>
@@ -125,7 +132,7 @@ export function AiExplainSheet({ open, onClose, request, fallback, triggerRef }:
         active={!reportOpen}
         triggerRef={triggerRef}
         title={TITLES[request.task]}
-        description={<span className="text-sm font-medium">{AI_LABEL}</span>}
+        description={<span className="text-sm font-medium">{request.task === 'review_writing' ? AI_WRITING_LABEL : AI_LABEL}</span>}
         headerExtra={
           <span className="flex shrink-0 items-center gap-2">
             <AiQuotaChip quota={liveQuota} />

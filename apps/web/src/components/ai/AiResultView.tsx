@@ -1,6 +1,13 @@
 import { useState } from 'react';
 import { AlertTriangle, Check, Lightbulb, X } from 'lucide-react';
-import type { AiSuccess, AnalyzeErrorOutput, ExplainConceptOutput, GeneratePracticeOutput } from '@linguo/shared';
+import type {
+  AiRequestInput,
+  AiSuccess,
+  AnalyzeErrorOutput,
+  ExplainConceptOutput,
+  GeneratePracticeOutput,
+  ReviewWritingOutput,
+} from '@linguo/shared';
 import { cn } from '@/lib/cn';
 import { MarkdownLite } from './MarkdownLite';
 import { parseAiResult } from './parse';
@@ -156,8 +163,55 @@ export function PracticeView({ data, language }: { data: GeneratePracticeOutput;
   );
 }
 
+export const WRITING_FEEDBACK_LABEL = 'Phản hồi luyện tập — không phải điểm chính thức';
+
+type RubricRow = Extract<AiRequestInput, { task: 'review_writing' }>['rubric'][number];
+
+/** Rubric feedback on an essay: points per criterion are a practice estimate, never an official score. */
+export function ReviewWritingView({ data, language, rubric = [] }: { data: ReviewWritingOutput; language: Lang; rubric?: RubricRow[] }) {
+  const rows = data.criteria.map((c) => ({ ...c, rubric: rubric.find((r) => r.key === c.key) }));
+  const complete = rows.length > 0 && rows.every((r) => r.rubric);
+  const total = rows.reduce((sum, r) => sum + r.points, 0);
+  const max = rows.reduce((sum, r) => sum + (r.rubric?.max_points ?? 0), 0);
+  return (
+    <div className="space-y-4 text-[15px] leading-relaxed">
+      <p className="flex items-start gap-2 rounded-2xl bg-warn/12 px-3 py-2 text-sm font-semibold">
+        <AlertTriangle aria-hidden className="mt-0.5 size-4 shrink-0 text-warn" />
+        <span>{WRITING_FEEDBACK_LABEL}</span>
+      </p>
+      <section className="space-y-2">
+        <SectionTitle>Theo tiêu chí</SectionTitle>
+        <ul aria-label="Nhận xét theo tiêu chí" className="space-y-2">
+          {rows.map((row) => (
+            <li key={row.key} className="space-y-1 rounded-2xl border border-border px-3 py-2">
+              <p className="flex flex-wrap items-baseline justify-between gap-x-2">
+                <span className="font-semibold">{row.rubric?.label_vi ?? row.key}</span>
+                <span className="text-sm font-semibold text-muted">
+                  {row.rubric ? `${row.points}/${row.rubric.max_points} điểm` : `${row.points} điểm`}
+                </span>
+              </p>
+              <p className="break-words">{row.comment_vi}</p>
+            </li>
+          ))}
+        </ul>
+        {complete && <p className="text-sm font-semibold">Tổng tham khảo: {total}/{max} điểm</p>}
+      </section>
+      <section className="space-y-1">
+        <SectionTitle>Nhận xét chung</SectionTitle>
+        <p className="break-words">{data.overall_vi}</p>
+      </section>
+      <section className="space-y-1">
+        <SectionTitle>Bài đã sửa</SectionTitle>
+        <p lang={language} className="rounded-2xl border border-success/40 px-3 py-2 whitespace-pre-wrap break-words">
+          {data.corrected_version}
+        </p>
+      </section>
+    </div>
+  );
+}
+
 /** Renders any AI success; an answer that fails its schema shows a short error instead. */
-export function AiResultView({ result, language }: { result: AiSuccess; language: Lang }) {
+export function AiResultView({ result, language, request }: { result: AiSuccess; language: Lang; request?: AiRequestInput }) {
   const parsed = parseAiResult(result);
   if (!parsed) {
     return (
@@ -173,5 +227,7 @@ export function AiResultView({ result, language }: { result: AiSuccess; language
       return <AnalyzeView data={parsed.data} language={language} />;
     case 'generate_practice':
       return <PracticeView data={parsed.data} language={language} />;
+    case 'review_writing':
+      return <ReviewWritingView data={parsed.data} language={language} rubric={request?.task === 'review_writing' ? request.rubric : undefined} />;
   }
 }

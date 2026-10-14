@@ -33,3 +33,12 @@ export const PRACTICE_DATA = {
 export function aiError(error: AiError['error'], overrides: Partial<AiError> = {}): AiError {
   return { error, message: 'x', retry_after_sec: null, quota: null, ...overrides };
 }
+
+export const WRITING_DATA = {
+  criteria: [
+    { key: 'content', points: 3, comment_vi: 'Có phim và giờ gặp, còn thiếu chỗ gặp.' },
+    { key: 'language', points: 2, comment_vi: 'Viết "Let\'s" có dấu nháy.' },
+  ],
+  overall_vi: 'Bài rõ ý; bổ sung chỗ gặp.',
+  corrected_version: "Hi Alex, let's watch Toy Story on Saturday at 6 outside the cinema. See you, Lan",
+};
