@@ -5,6 +5,8 @@ for (const path of ['/dang-nhap', '/dang-ky', '/quen-mat-khau']) {
   test(`inputs ≥16px and touch targets ≥44px on ${path}`, async ({ page }) => {
     await mockSupabase(page);
     await page.goto(path);
+    // RedirectIfAuthed renders a loader until the session resolves and evaluateAll does not auto-wait: wait for the form.
+    await expect(page.locator('main form button[type="submit"]')).toBeVisible();
     const fontSizes = await page.locator('input, select, textarea').evaluateAll((els) => els.map((el) => parseFloat(getComputedStyle(el).fontSize)));
     expect(fontSizes.length).toBeGreaterThan(0);
     for (const size of fontSizes) expect(size, 'iOS zooms into inputs smaller than 16px').toBeGreaterThanOrEqual(16);
