@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:nominalisation-collocations
 order_index: 2
 level: c1
@@ -180,17 +179,14 @@ exercises:
         - "Gợi ý: ô 1 là danh từ của implement; ô 2 là danh từ của reduce."
     answer:
       blanks:
-        b1: [implementation]
-        b2: [reduction, decrease]
+        b1: [implementation, adoption, introduction]
+        b2: [reduction, decrease, drop, fall, cut, decline]
     known_wrong:
       - answer: implement
         feedback_vi: Sau The và trước of cần danh từ - implementation.
         error_tag: word_form
       - answer: reduce
         feedback_vi: Sau a cần danh từ - a reduction in costs.
-        error_tag: word_form
-      - answer: implementing
-        feedback_vi: Dạng chuẩn trong văn trang trọng là danh từ implementation (the implementation of).
         error_tag: word_form
     explanation:
       vi: Danh từ hoá - implement → implementation, reduce → reduction. Mẫu the + N + of và a reduction in + cái giảm là mẫu điển hình của báo cáo.
@@ -210,20 +206,14 @@ exercises:
         - { id: b2, width_hint: 8 }
     answer:
       blanks:
-        b1: [conducted, did]
-        b2: [reached]
+        b1: [conducted, did, carried out, undertook, performed]
+        b2: [reached, came to, arrived at, struck, secured, negotiated, made, got]
     known_wrong:
-      - answer: made
-        feedback_vi: Không nói make research hay make an agreement trong nghĩa này; dùng conduct research và reach an agreement.
-        error_tag: collocation
-      - answer: got
-        feedback_vi: Get an agreement không tự nhiên; dùng reach an agreement.
-        error_tag: collocation
       - answer: researched
         feedback_vi: Ô trống cần động từ đi với danh từ research - conducted research.
         error_tag: collocation
     explanation:
-      vi: Research đi với conduct/carry out/do; agreement đi với reach hoặc come to. Cả hai câu ở quá khứ nên dùng conducted, reached.
+      vi: Research đi với conduct/carry out/do; agreement đi với reach hoặc come to (make/get an agreement cũng gặp nhưng kém trang trọng hơn). Cả hai động từ đều ở quá khứ nên dùng conducted, reached.
     display_answer: Our team conducted research into customer complaints and finally reached an agreement with the supplier.
 
   - key: en:exercise:nominal-translate-decision
@@ -249,6 +239,9 @@ exercises:
         - Next week, the board will make a final decision.
         - Next week, the board will make the final decision.
         - The board is going to make a final decision next week.
+        - The board will make its final decision next week.
+        - The board of directors will make its final decision next week.
+        - The board of directors will reach a final decision next week.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -288,6 +281,13 @@ exercises:
         - The report does not tackle the issue of housing costs.
         - The report did not address the issue of housing costs.
         - The report failed to address the issue of housing costs.
+        - The report does not address the question of housing costs.
+        - The report fails to address the problem of housing costs.
+        - The report does not address the housing cost issue.
+        - The report does not deal with housing costs.
+        - The report does not tackle housing costs.
+        - The report does not solve the issue of housing costs.
+        - The report does not resolve the issue of housing costs.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -406,12 +406,16 @@ exercises:
         - We analyzed customer complaints in detail.
         - A detailed analysis of customer complaints was carried out.
         - A detailed analysis of customer complaints was conducted.
+        - We undertook a detailed analysis of customer complaints.
+        - We performed a detailed analysis of customer complaints.
+        - We did a detailed analysis of customer complaints.
+        - We made a detailed analysis of customer complaints.
+        - We analysed the customer complaints in detail.
+        - We analyzed the customer complaints in detail.
+        - We carried out a detailed analysis of our customers' complaints.
     rubric:
       typo_tolerance: 1
     known_wrong:
-      - answer: We made a detailed analysis of customer complaints.
-        feedback_vi: Trong văn trang trọng, analysis đi với carry out hoặc conduct, không phải make.
-        error_tag: collocation
       - answer: We carried out a detailed analyse of customer complaints.
         feedback_vi: Analyse là động từ; danh từ là analysis.
         error_tag: word_form

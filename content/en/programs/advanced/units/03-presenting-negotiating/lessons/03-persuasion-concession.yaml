@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:persuasion-concession
 order_index: 3
 level: c1
@@ -49,7 +48,7 @@ body:
       vi: Trạng từ quan điểm cho biết bạn chắc chắn đến đâu - undeniably (không thể phủ nhận), presumably (chắc là, suy ra từ thông tin có sẵn), conceivably (có thể hình dung được, khả năng thấp), arguably (có thể cho rằng). Chọn sai mức độ sẽ khiến bạn nghe áp đặt hoặc thiếu tự tin.
   - type: deep_explain
     text:
-      vi: Actually trong tiếng Anh nghĩa là "thật ra" - dùng để sửa một hiểu lầm hoặc nói điều bất ngờ (It's actually quite cheap). Người Việt hay dùng actually với nghĩa "hiện tại" (We are actually working on…), khiến người nghe tưởng bạn đang đính chính điều gì. "Hiện nay" là currently hoặc at present.
+      vi: Actually trong tiếng Anh nghĩa là "thật ra" - dùng để sửa một hiểu lầm hoặc nói điều bất ngờ (It's actually quite cheap). Một số bạn nhầm actually với nghĩa "hiện nay" (false friend với actuellement trong tiếng Pháp), khiến người nghe tưởng bạn đang đính chính điều gì. "Hiện nay" là currently hoặc at present.
   - type: example
     target: Admittedly, the new system has had some teething problems. That said, it has already cut processing time by half.
     target_lang: en
@@ -181,8 +180,8 @@ exercises:
         - "Gợi ý: ô 1 là tính từ \"đúng\"; ô 2 là quá khứ phân từ của say."
     answer:
       blanks:
-        b1: ["true"]
-        b2: [said]
+        b1: ["true", correct, undeniable]
+        b2: [said, being said]
     known_wrong:
       - answer: right
         feedback_vi: Cụm cố định là While it is true that…; right ít dùng trong cấu trúc này.
@@ -225,16 +224,16 @@ exercises:
     difficulty: 4
     item: en:item:presumably
     prompt:
-      template: "The director hasn't replied; {{b1}} she's still on the plane. There is no {{b2}} that the deal matters to her. We are {{b3}} preparing a backup plan, just in case."
+      template: "The director hasn't replied; {{b1}} (chắc là) she's still on the plane. There is no {{b2}} that the deal matters to her. We are {{b3}} (hiện nay) preparing a backup plan, just in case."
       blanks:
         - { id: b1, width_hint: 10 }
         - { id: b2, width_hint: 7 }
         - { id: b3, width_hint: 9 }
     answer:
       blanks:
-        b1: [presumably, probably]
-        b2: [denying, doubt]
-        b3: [currently, now]
+        b1: [presumably, probably, doubtless, no doubt, most likely, likely]
+        b2: [denying, doubt, question, disputing]
+        b3: [currently, now, presently, at present]
     known_wrong:
       - answer: actually
         feedback_vi: Actually là "thật ra", không mang nghĩa "hiện nay"; dùng currently.
@@ -272,6 +271,61 @@ exercises:
         - Admittedly, this solution is expensive. However, it will save money in the long run.
         - Admittedly this solution is expensive, but it will save money in the long run.
         - Admittedly, this solution is expensive, but it'll save money in the long run.
+        - Admittedly, this solution is expensive. However, in the long run it will save money.
+        - Admittedly, this solution is expensive. However, it will save us money in the long run.
+        - Admittedly, this solution is expensive. However, it will save money in the long term.
+        - Admittedly, this solution is expensive, but in the long term it will save money.
+        - Admittedly, this solution is expensive. However, in the long term it will save money.
+        - Admittedly, this solution is expensive, but it will save us money in the long term.
+        - Admittedly, this solution is expensive. However, it will save us money in the long term.
+        - Admittedly, this solution is expensive, but it will save money over the long term.
+        - Admittedly, this solution is expensive. However, it will save money over the long term.
+        - Admittedly, this solution is expensive, but over the long term it will save money.
+        - Admittedly, this solution is expensive. However, over the long term it will save money.
+        - Admittedly, this solution is costly. However, it will save money in the long run.
+        - Admittedly, this solution is costly. However, in the long run it will save money.
+        - Admittedly, this solution is costly. However, it will save us money in the long run.
+        - Admittedly, this solution is costly, but it will save money in the long term.
+        - Admittedly, this solution is costly. However, it will save money in the long term.
+        - Admittedly, this solution is costly, but in the long term it will save money.
+        - Admittedly, this solution is costly. However, in the long term it will save money.
+        - Admittedly, this solution is costly, but it will save us money in the long term.
+        - Admittedly, this solution is costly. However, it will save us money in the long term.
+        - Admittedly, this solution is costly, but it will save money over the long term.
+        - Admittedly, this solution is costly. However, it will save money over the long term.
+        - Admittedly, this solution is costly, but over the long term it will save money.
+        - Admittedly, this solution is costly. However, over the long term it will save money.
+        - Admittedly, the solution is expensive. However, it will save money in the long run.
+        - Admittedly, the solution is expensive, but in the long run it will save money.
+        - Admittedly, the solution is expensive. However, in the long run it will save money.
+        - Admittedly, the solution is expensive, but it will save us money in the long run.
+        - Admittedly, the solution is expensive. However, it will save us money in the long run.
+        - Admittedly, the solution is expensive, but it will save money in the long term.
+        - Admittedly, the solution is expensive. However, it will save money in the long term.
+        - Admittedly, the solution is expensive, but in the long term it will save money.
+        - Admittedly, the solution is expensive. However, in the long term it will save money.
+        - Admittedly, the solution is expensive, but it will save us money in the long term.
+        - Admittedly, the solution is expensive. However, it will save us money in the long term.
+        - Admittedly, the solution is expensive, but it will save money over the long term.
+        - Admittedly, the solution is expensive. However, it will save money over the long term.
+        - Admittedly, the solution is expensive, but over the long term it will save money.
+        - Admittedly, the solution is expensive. However, over the long term it will save money.
+        - Admittedly, the solution is costly, but it will save money in the long run.
+        - Admittedly, the solution is costly. However, it will save money in the long run.
+        - Admittedly, the solution is costly, but in the long run it will save money.
+        - Admittedly, the solution is costly. However, in the long run it will save money.
+        - Admittedly, the solution is costly, but it will save us money in the long run.
+        - Admittedly, the solution is costly. However, it will save us money in the long run.
+        - Admittedly, the solution is costly, but it will save money in the long term.
+        - Admittedly, the solution is costly. However, it will save money in the long term.
+        - Admittedly, the solution is costly, but in the long term it will save money.
+        - Admittedly, the solution is costly. However, in the long term it will save money.
+        - Admittedly, the solution is costly, but it will save us money in the long term.
+        - Admittedly, the solution is costly. However, it will save us money in the long term.
+        - Admittedly, the solution is costly, but it will save money over the long term.
+        - Admittedly, the solution is costly. However, it will save money over the long term.
+        - Admittedly, the solution is costly, but over the long term it will save money.
+        - Admittedly, the solution is costly. However, over the long term it will save money.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -306,6 +360,168 @@ exercises:
         - Tuy giá cả có tăng thật, nhưng lương còn tăng nhanh hơn.
         - Đúng là giá đã tăng, nhưng lương còn tăng nhanh hơn nữa.
         - Tuy đúng là giá cả tăng lên, nhưng tiền lương còn tăng nhanh hơn.
+        - Tuy đúng là giá cả đã tăng, lương còn tăng nhanh hơn.
+        - Tuy đúng là giá cả đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá cả đã tăng, lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá cả đã tăng, nhưng lương tăng còn nhanh hơn.
+        - Tuy đúng là giá cả đã tăng, lương tăng còn nhanh hơn.
+        - Tuy đúng là giá cả đã tăng, tiền lương còn tăng nhanh hơn.
+        - Tuy đúng là giá cả đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá cả đã tăng, tiền lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá cả đã tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Tuy đúng là giá cả đã tăng, tiền lương tăng còn nhanh hơn.
+        - Tuy đúng là giá cả tăng, nhưng lương còn tăng nhanh hơn.
+        - Tuy đúng là giá cả tăng, lương còn tăng nhanh hơn.
+        - Tuy đúng là giá cả tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá cả tăng, lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá cả tăng, nhưng lương tăng còn nhanh hơn.
+        - Tuy đúng là giá cả tăng, lương tăng còn nhanh hơn.
+        - Tuy đúng là giá cả tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Tuy đúng là giá cả tăng, tiền lương còn tăng nhanh hơn.
+        - Tuy đúng là giá cả tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá cả tăng, tiền lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá cả tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Tuy đúng là giá cả tăng, tiền lương tăng còn nhanh hơn.
+        - Tuy đúng là giá đã tăng, nhưng lương còn tăng nhanh hơn.
+        - Tuy đúng là giá đã tăng, lương còn tăng nhanh hơn.
+        - Tuy đúng là giá đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá đã tăng, lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá đã tăng, nhưng lương tăng còn nhanh hơn.
+        - Tuy đúng là giá đã tăng, lương tăng còn nhanh hơn.
+        - Tuy đúng là giá đã tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Tuy đúng là giá đã tăng, tiền lương còn tăng nhanh hơn.
+        - Tuy đúng là giá đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá đã tăng, tiền lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá đã tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Tuy đúng là giá đã tăng, tiền lương tăng còn nhanh hơn.
+        - Tuy đúng là giá tăng, nhưng lương còn tăng nhanh hơn.
+        - Tuy đúng là giá tăng, lương còn tăng nhanh hơn.
+        - Tuy đúng là giá tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá tăng, lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá tăng, nhưng lương tăng còn nhanh hơn.
+        - Tuy đúng là giá tăng, lương tăng còn nhanh hơn.
+        - Tuy đúng là giá tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Tuy đúng là giá tăng, tiền lương còn tăng nhanh hơn.
+        - Tuy đúng là giá tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá tăng, tiền lương thậm chí còn tăng nhanh hơn.
+        - Tuy đúng là giá tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Tuy đúng là giá tăng, tiền lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá cả đã tăng, nhưng lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả đã tăng, lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả đã tăng, nhưng lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá cả đã tăng, lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá cả đã tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả đã tăng, tiền lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả đã tăng, tiền lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả đã tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá cả đã tăng, tiền lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá cả tăng, nhưng lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả tăng, lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả tăng, lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả tăng, nhưng lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá cả tăng, lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá cả tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả tăng, tiền lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả tăng, tiền lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá cả tăng, tiền lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá đã tăng, nhưng lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá đã tăng, lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá đã tăng, lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá đã tăng, nhưng lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá đã tăng, lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá đã tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá đã tăng, tiền lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá đã tăng, tiền lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá đã tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá đã tăng, tiền lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá tăng, nhưng lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá tăng, lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá tăng, lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá tăng, nhưng lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá tăng, lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá tăng, tiền lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá tăng, tiền lương thậm chí còn tăng nhanh hơn.
+        - Mặc dù đúng là giá tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Mặc dù đúng là giá tăng, tiền lương tăng còn nhanh hơn.
+        - Dù đúng là giá cả đã tăng, lương còn tăng nhanh hơn.
+        - Dù đúng là giá cả đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá cả đã tăng, lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá cả đã tăng, nhưng lương tăng còn nhanh hơn.
+        - Dù đúng là giá cả đã tăng, lương tăng còn nhanh hơn.
+        - Dù đúng là giá cả đã tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Dù đúng là giá cả đã tăng, tiền lương còn tăng nhanh hơn.
+        - Dù đúng là giá cả đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá cả đã tăng, tiền lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá cả đã tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Dù đúng là giá cả đã tăng, tiền lương tăng còn nhanh hơn.
+        - Dù đúng là giá cả tăng, nhưng lương còn tăng nhanh hơn.
+        - Dù đúng là giá cả tăng, lương còn tăng nhanh hơn.
+        - Dù đúng là giá cả tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá cả tăng, lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá cả tăng, nhưng lương tăng còn nhanh hơn.
+        - Dù đúng là giá cả tăng, lương tăng còn nhanh hơn.
+        - Dù đúng là giá cả tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Dù đúng là giá cả tăng, tiền lương còn tăng nhanh hơn.
+        - Dù đúng là giá cả tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá cả tăng, tiền lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá cả tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Dù đúng là giá cả tăng, tiền lương tăng còn nhanh hơn.
+        - Dù đúng là giá đã tăng, nhưng lương còn tăng nhanh hơn.
+        - Dù đúng là giá đã tăng, lương còn tăng nhanh hơn.
+        - Dù đúng là giá đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá đã tăng, lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá đã tăng, nhưng lương tăng còn nhanh hơn.
+        - Dù đúng là giá đã tăng, lương tăng còn nhanh hơn.
+        - Dù đúng là giá đã tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Dù đúng là giá đã tăng, tiền lương còn tăng nhanh hơn.
+        - Dù đúng là giá đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá đã tăng, tiền lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá đã tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Dù đúng là giá đã tăng, tiền lương tăng còn nhanh hơn.
+        - Dù đúng là giá tăng, nhưng lương còn tăng nhanh hơn.
+        - Dù đúng là giá tăng, lương còn tăng nhanh hơn.
+        - Dù đúng là giá tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá tăng, lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá tăng, nhưng lương tăng còn nhanh hơn.
+        - Dù đúng là giá tăng, lương tăng còn nhanh hơn.
+        - Dù đúng là giá tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Dù đúng là giá tăng, tiền lương còn tăng nhanh hơn.
+        - Dù đúng là giá tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá tăng, tiền lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Dù đúng là giá tăng, tiền lương tăng còn nhanh hơn.
+        - Đúng là giá cả đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Đúng là giá cả đã tăng, nhưng lương tăng còn nhanh hơn.
+        - Đúng là giá cả đã tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Đúng là giá cả đã tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Đúng là giá cả tăng, nhưng lương còn tăng nhanh hơn.
+        - Đúng là giá cả tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Đúng là giá cả tăng, nhưng lương tăng còn nhanh hơn.
+        - Đúng là giá cả tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Đúng là giá cả tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Đúng là giá cả tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Đúng là giá đã tăng, nhưng lương còn tăng nhanh hơn.
+        - Đúng là giá đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Đúng là giá đã tăng, nhưng lương tăng còn nhanh hơn.
+        - Đúng là giá đã tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Đúng là giá đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Đúng là giá đã tăng, nhưng tiền lương tăng còn nhanh hơn.
+        - Đúng là giá tăng, nhưng lương còn tăng nhanh hơn.
+        - Đúng là giá tăng, nhưng lương thậm chí còn tăng nhanh hơn.
+        - Đúng là giá tăng, nhưng lương tăng còn nhanh hơn.
+        - Đúng là giá tăng, nhưng tiền lương còn tăng nhanh hơn.
+        - Đúng là giá tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Đúng là giá tăng, nhưng tiền lương tăng còn nhanh hơn.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -390,6 +606,183 @@ exercises:
         - Undeniably, social media has a big influence on young people.
         - Undeniably, social media has a huge impact on young people.
         - There is no denying that social media has a big influence on the youth.
+        - There is no denying that social media has a big influence on the young.
+        - There is no denying that social media has a big impact on the youth.
+        - There is no denying that social media has a big impact on the young.
+        - There is no denying that social media has a huge influence on the youth.
+        - There is no denying that social media has a huge influence on the young.
+        - There is no denying that social media has a huge impact on the youth.
+        - There is no denying that social media has a huge impact on the young.
+        - There is no denying that social media has a great influence on the youth.
+        - There is no denying that social media has a great influence on the young.
+        - There is no denying that social media has a great impact on young people.
+        - There is no denying that social media has a great impact on the youth.
+        - There is no denying that social media has a great impact on the young.
+        - There is no denying that social media has a major influence on the youth.
+        - There is no denying that social media has a major influence on the young.
+        - There is no denying that social media has a major impact on the youth.
+        - There is no denying that social media has a major impact on the young.
+        - There is no denying that social media has a significant influence on the youth.
+        - There is no denying that social media has a significant influence on the young.
+        - There is no denying that social media has a significant impact on the youth.
+        - There is no denying that social media has a significant impact on the young.
+        - There is no denying that social media has a strong influence on the youth.
+        - There is no denying that social media has a strong influence on the young.
+        - There is no denying that social media has a strong impact on young people.
+        - There is no denying that social media has a strong impact on the youth.
+        - There is no denying that social media has a strong impact on the young.
+        - There is no denying that social media has a considerable influence on young people.
+        - There is no denying that social media has a considerable influence on the youth.
+        - There is no denying that social media has a considerable influence on the young.
+        - There is no denying that social media has a considerable impact on young people.
+        - There is no denying that social media has a considerable impact on the youth.
+        - There is no denying that social media has a considerable impact on the young.
+        - There is no denying that social media has an enormous influence on young people.
+        - There is no denying that social media has an enormous influence on the youth.
+        - There is no denying that social media has an enormous influence on the young.
+        - There is no denying that social media has an enormous impact on young people.
+        - There is no denying that social media has an enormous impact on the youth.
+        - There is no denying that social media has an enormous impact on the young.
+        - There's no denying that social media has a big influence on the youth.
+        - There's no denying that social media has a big influence on the young.
+        - There's no denying that social media has a big impact on young people.
+        - There's no denying that social media has a big impact on the youth.
+        - There's no denying that social media has a big impact on the young.
+        - There's no denying that social media has a huge influence on young people.
+        - There's no denying that social media has a huge influence on the youth.
+        - There's no denying that social media has a huge influence on the young.
+        - There's no denying that social media has a huge impact on the youth.
+        - There's no denying that social media has a huge impact on the young.
+        - There's no denying that social media has a great influence on young people.
+        - There's no denying that social media has a great influence on the youth.
+        - There's no denying that social media has a great influence on the young.
+        - There's no denying that social media has a great impact on young people.
+        - There's no denying that social media has a great impact on the youth.
+        - There's no denying that social media has a great impact on the young.
+        - There's no denying that social media has a major influence on young people.
+        - There's no denying that social media has a major influence on the youth.
+        - There's no denying that social media has a major influence on the young.
+        - There's no denying that social media has a major impact on young people.
+        - There's no denying that social media has a major impact on the youth.
+        - There's no denying that social media has a major impact on the young.
+        - There's no denying that social media has a significant influence on young people.
+        - There's no denying that social media has a significant influence on the youth.
+        - There's no denying that social media has a significant influence on the young.
+        - There's no denying that social media has a significant impact on young people.
+        - There's no denying that social media has a significant impact on the youth.
+        - There's no denying that social media has a significant impact on the young.
+        - There's no denying that social media has a strong influence on young people.
+        - There's no denying that social media has a strong influence on the youth.
+        - There's no denying that social media has a strong influence on the young.
+        - There's no denying that social media has a strong impact on young people.
+        - There's no denying that social media has a strong impact on the youth.
+        - There's no denying that social media has a strong impact on the young.
+        - There's no denying that social media has a considerable influence on young people.
+        - There's no denying that social media has a considerable influence on the youth.
+        - There's no denying that social media has a considerable influence on the young.
+        - There's no denying that social media has a considerable impact on young people.
+        - There's no denying that social media has a considerable impact on the youth.
+        - There's no denying that social media has a considerable impact on the young.
+        - There's no denying that social media has an enormous influence on young people.
+        - There's no denying that social media has an enormous influence on the youth.
+        - There's no denying that social media has an enormous influence on the young.
+        - There's no denying that social media has an enormous impact on young people.
+        - There's no denying that social media has an enormous impact on the youth.
+        - There's no denying that social media has an enormous impact on the young.
+        - It is undeniable that social media has a big influence on young people.
+        - It is undeniable that social media has a big influence on the youth.
+        - It is undeniable that social media has a big influence on the young.
+        - It is undeniable that social media has a big impact on young people.
+        - It is undeniable that social media has a big impact on the youth.
+        - It is undeniable that social media has a big impact on the young.
+        - It is undeniable that social media has a huge influence on young people.
+        - It is undeniable that social media has a huge influence on the youth.
+        - It is undeniable that social media has a huge influence on the young.
+        - It is undeniable that social media has a huge impact on young people.
+        - It is undeniable that social media has a huge impact on the youth.
+        - It is undeniable that social media has a huge impact on the young.
+        - It is undeniable that social media has a great influence on young people.
+        - It is undeniable that social media has a great influence on the youth.
+        - It is undeniable that social media has a great influence on the young.
+        - It is undeniable that social media has a great impact on young people.
+        - It is undeniable that social media has a great impact on the youth.
+        - It is undeniable that social media has a great impact on the young.
+        - It is undeniable that social media has a major influence on young people.
+        - It is undeniable that social media has a major influence on the youth.
+        - It is undeniable that social media has a major influence on the young.
+        - It is undeniable that social media has a major impact on young people.
+        - It is undeniable that social media has a major impact on the youth.
+        - It is undeniable that social media has a major impact on the young.
+        - It is undeniable that social media has a significant influence on young people.
+        - It is undeniable that social media has a significant influence on the youth.
+        - It is undeniable that social media has a significant influence on the young.
+        - It is undeniable that social media has a significant impact on young people.
+        - It is undeniable that social media has a significant impact on the youth.
+        - It is undeniable that social media has a significant impact on the young.
+        - It is undeniable that social media has a strong influence on young people.
+        - It is undeniable that social media has a strong influence on the youth.
+        - It is undeniable that social media has a strong influence on the young.
+        - It is undeniable that social media has a strong impact on young people.
+        - It is undeniable that social media has a strong impact on the youth.
+        - It is undeniable that social media has a strong impact on the young.
+        - It is undeniable that social media has a considerable influence on young people.
+        - It is undeniable that social media has a considerable influence on the youth.
+        - It is undeniable that social media has a considerable influence on the young.
+        - It is undeniable that social media has a considerable impact on young people.
+        - It is undeniable that social media has a considerable impact on the youth.
+        - It is undeniable that social media has a considerable impact on the young.
+        - It is undeniable that social media has an enormous influence on young people.
+        - It is undeniable that social media has an enormous influence on the youth.
+        - It is undeniable that social media has an enormous influence on the young.
+        - It is undeniable that social media has an enormous impact on young people.
+        - It is undeniable that social media has an enormous impact on the youth.
+        - It is undeniable that social media has an enormous impact on the young.
+        - Undeniably, social media has a big influence on the youth.
+        - Undeniably, social media has a big influence on the young.
+        - Undeniably, social media has a big impact on young people.
+        - Undeniably, social media has a big impact on the youth.
+        - Undeniably, social media has a big impact on the young.
+        - Undeniably, social media has a huge influence on young people.
+        - Undeniably, social media has a huge influence on the youth.
+        - Undeniably, social media has a huge influence on the young.
+        - Undeniably, social media has a huge impact on the youth.
+        - Undeniably, social media has a huge impact on the young.
+        - Undeniably, social media has a great influence on young people.
+        - Undeniably, social media has a great influence on the youth.
+        - Undeniably, social media has a great influence on the young.
+        - Undeniably, social media has a great impact on young people.
+        - Undeniably, social media has a great impact on the youth.
+        - Undeniably, social media has a great impact on the young.
+        - Undeniably, social media has a major influence on young people.
+        - Undeniably, social media has a major influence on the youth.
+        - Undeniably, social media has a major influence on the young.
+        - Undeniably, social media has a major impact on young people.
+        - Undeniably, social media has a major impact on the youth.
+        - Undeniably, social media has a major impact on the young.
+        - Undeniably, social media has a significant influence on young people.
+        - Undeniably, social media has a significant influence on the youth.
+        - Undeniably, social media has a significant influence on the young.
+        - Undeniably, social media has a significant impact on young people.
+        - Undeniably, social media has a significant impact on the youth.
+        - Undeniably, social media has a significant impact on the young.
+        - Undeniably, social media has a strong influence on young people.
+        - Undeniably, social media has a strong influence on the youth.
+        - Undeniably, social media has a strong influence on the young.
+        - Undeniably, social media has a strong impact on young people.
+        - Undeniably, social media has a strong impact on the youth.
+        - Undeniably, social media has a strong impact on the young.
+        - Undeniably, social media has a considerable influence on young people.
+        - Undeniably, social media has a considerable influence on the youth.
+        - Undeniably, social media has a considerable influence on the young.
+        - Undeniably, social media has a considerable impact on young people.
+        - Undeniably, social media has a considerable impact on the youth.
+        - Undeniably, social media has a considerable impact on the young.
+        - Undeniably, social media has an enormous influence on young people.
+        - Undeniably, social media has an enormous influence on the youth.
+        - Undeniably, social media has an enormous influence on the young.
+        - Undeniably, social media has an enormous impact on young people.
+        - Undeniably, social media has an enormous impact on the youth.
+        - Undeniably, social media has an enormous impact on the young.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -399,9 +792,6 @@ exercises:
       - answer: There is no denying that social media has a big influence to young people.
         feedback_vi: Influence/impact đi với on - an influence on young people.
         error_tag: preposition
-      - answer: Can't deny social media has a big influence on young people.
-        feedback_vi: Câu tiếng Anh cần chủ ngữ; dùng There is no denying that… hoặc You can't deny that….
-        error_tag: missing_subject
     explanation:
       vi: There is no denying that… = Không thể phủ nhận rằng…; sau no là V-ing. Have an influence/impact on + người/vật.
     display_answer: There is no denying that social media has a big influence on young people.

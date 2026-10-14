@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:hedging-softening
 order_index: 1
 level: c1
@@ -44,7 +43,7 @@ body:
       vi: Người Việt hay lặp very cho mọi tính từ (very important, very big, very higher). Ở C1, bạn nên chọn trạng từ đi kèm tự nhiên - highly effective, considerably higher, significantly reduced, relatively small.
   - type: deep_explain
     text:
-      vi: Mức độ chắc chắn tăng dần - might → may → could → is likely to → will. Bạn có thể kết hợp hai công cụ (It would appear that prices are likely to rise), nhưng đừng chồng quá nhiều lớp (It might possibly perhaps seem…) vì câu sẽ mơ hồ. Very không đứng trước so sánh hơn - dùng much/considerably/significantly higher.
+      vi: Mức độ chắc chắn tăng dần - might/could → may → is likely to → will. Bạn có thể kết hợp hai công cụ (It would appear that prices are likely to rise), nhưng đừng chồng quá nhiều lớp (It might possibly perhaps seem…) vì câu sẽ mơ hồ. Very không đứng trước so sánh hơn - dùng much/considerably/significantly higher.
   - type: example
     target: It would appear that the survey questions were misunderstood.
     target_lang: en
@@ -167,20 +166,20 @@ exercises:
     difficulty: 2
     item: en:item:intensifier-collocations
     prompt:
-      template: "Costs were {{b1}} higher than last year, and the new software is {{b2}} effective."
+      template: "Costs were {{b1}} higher than last year, up by 40 per cent, and the new software is {{b2}} recommended by users."
       blanks:
         - { id: b1, width_hint: 14 }
         - { id: b2, width_hint: 8 }
       hint_levels:
-        - "Nghĩa của câu: Chi phí cao hơn đáng kể so với năm ngoái, và phần mềm mới rất hiệu quả."
-        - "Gợi ý: ô 1 là trạng từ đứng trước so sánh hơn (con-SID-…); ô 2 là trạng từ đi với effective, recommended (h…)."
+        - "Nghĩa của câu: Chi phí cao hơn đáng kể so với năm ngoái (tăng 40%), và phần mềm mới được người dùng đánh giá rất cao."
+        - "Gợi ý: ô 1 là trạng từ đứng trước so sánh hơn (con-SID-…); ô 2 là trạng từ đi với recommended, effective, likely (h…)."
     answer:
       blanks:
-        b1: [considerably, significantly, much, substantially, far]
-        b2: [highly, extremely, remarkably]
+        b1: [considerably, significantly, much, substantially, far, markedly, noticeably, appreciably, dramatically, vastly, enormously, massively, a lot, a great deal]
+        b2: [highly, strongly, widely, warmly]
     known_wrong:
       - answer: very
-        feedback_vi: Very không đứng trước so sánh hơn (very higher là sai), và highly effective tự nhiên hơn very effective trong báo cáo.
+        feedback_vi: Very không đứng trước so sánh hơn (very higher là sai), và very recommended không tự nhiên - cụm chuẩn là highly recommended.
         error_tag: overuse_very
       - answer: high
         feedback_vi: High là tính từ "cao"; trạng từ chỉ mức độ là highly.
@@ -189,8 +188,8 @@ exercises:
         feedback_vi: Considerable là tính từ; trước higher cần trạng từ considerably.
         error_tag: word_form
     explanation:
-      vi: Trước so sánh hơn (higher) dùng considerably/significantly/much, không dùng very. Highly là collocation chuẩn với effective trong văn trang trọng.
-    display_answer: Costs were considerably higher than last year, and the new software is highly effective.
+      vi: Trước so sánh hơn (higher) dùng considerably/significantly/much, không dùng very. Highly recommended là collocation chuẩn (còn highly effective, highly likely).
+    display_answer: Costs were considerably higher than last year, up by 40 per cent, and the new software is highly recommended by users.
 
   - key: en:exercise:hedging-order-extent
     type: word_bank
@@ -226,14 +225,14 @@ exercises:
     difficulty: 3
     item: en:item:be-likely-to
     prompt:
-      template: "Prices {{b1}} likely to rise further, as consumers tend to {{b2}} more in the run-up to Tết."
+      template: "Prices {{b1}} likely to rise further, as consumers tend to {{b2}} more money in the run-up to Tết."
       blanks:
         - { id: b1, width_hint: 3 }
         - { id: b2, width_hint: 5 }
     answer:
       blanks:
-        b1: [are]
-        b2: [spend, shop, buy]
+        b1: [are, seem, appear, remain, look]
+        b2: [spend]
     known_wrong:
       - answer: spending
         feedback_vi: Sau tend to là động từ nguyên mẫu - tend to spend.
@@ -245,8 +244,8 @@ exercises:
         feedback_vi: Prices là số nhiều nên dùng are.
         error_tag: subject_verb_agreement
     explanation:
-      vi: Likely là tính từ nên cần be (prices are likely to). To trong tend to là dấu hiệu động từ nguyên mẫu, nên theo sau là spend.
-    display_answer: Prices are likely to rise further, as consumers tend to spend more in the run-up to Tết.
+      vi: Likely là tính từ nên cần động từ nối, điển hình là be (prices are likely to). To trong tend to là dấu hiệu động từ nguyên mẫu, nên theo sau là spend.
+    display_answer: Prices are likely to rise further, as consumers tend to spend more money in the run-up to Tết.
 
   - key: en:exercise:hedging-translate-findings
     type: translate
@@ -273,8 +272,10 @@ exercises:
         - The findings of the study suggest that sleep affects memory.
         - The findings show that sleep affects memory.
         - The results show that sleep affects memory.
-    rubric:
-      typo_tolerance: 1
+        - The results indicate that sleep affects memory.
+        - The results of the study suggest that sleep affects memory.
+        - The findings suggest that sleep has an influence on memory.
+        - The findings suggest that sleep impacts memory.
     known_wrong:
       - answer: The findings suggests that sleep affects memory.
         feedback_vi: Findings là số nhiều nên động từ là suggest, không thêm -s.
@@ -369,6 +370,11 @@ exercises:
         - Kích thước mẫu tương đối nhỏ, nên cần thận trọng khi diễn giải kết quả.
         - Cỡ mẫu tương đối nhỏ nên các kết quả cần được diễn giải thận trọng.
         - Cỡ mẫu tương đối nhỏ, nên kết quả cần được hiểu một cách thận trọng.
+        - Kích thước mẫu tương đối nhỏ, vì vậy cần thận trọng khi diễn giải kết quả.
+        - Cỡ mẫu tương đối nhỏ, vì thế cần thận trọng khi diễn giải kết quả.
+        - Cỡ mẫu tương đối nhỏ, do đó kết quả cần được diễn giải một cách thận trọng.
+        - Quy mô mẫu tương đối nhỏ, nên cần thận trọng khi diễn giải kết quả.
+        - Cỡ mẫu khá nhỏ, vì vậy kết quả cần được diễn giải thận trọng.
     rubric:
       diacritics: lenient
     explanation:

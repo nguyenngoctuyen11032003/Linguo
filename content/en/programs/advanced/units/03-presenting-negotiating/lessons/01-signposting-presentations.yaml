@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:signposting-presentations
 order_index: 1
 level: c1
@@ -205,12 +204,12 @@ exercises:
         - { id: b3, width_hint: 5 }
     answer:
       blanks:
-        b1: [into]
-        b2: [turning, moving]
-        b3: [recap, summarise, summarize, sum up, conclude]
+        b1: [into, in]
+        b2: [turning, moving, coming]
+        b3: [recap, summarise, summarize, sum up, conclude, wrap up, be brief]
     known_wrong:
-      - answer: in
-        feedback_vi: Chia thành các phần là divide into, không phải divide in.
+      - answer: to
+        feedback_vi: Chia thành các phần là divide into, không phải divide to.
         error_tag: preposition
       - answer: turn
         feedback_vi: Cụm chuyển phần dùng dạng V-ing - Turning now to….
@@ -222,7 +221,7 @@ exercises:
         feedback_vi: Sau To cần động từ - To recap / To summarise; danh từ summary đi với In summary.
         error_tag: word_form
     explanation:
-      vi: Divide into = chia thành. Turning (hoặc Moving) now to… mở phần mới. To recap/To summarise mở đầu phần tóm tắt - sau to là động từ nguyên mẫu.
+      vi: Divide into = chia thành (divide in cũng gặp nhưng into chuẩn hơn). Turning (hoặc Moving) now to… mở phần mới. To recap/To summarise mở đầu phần tóm tắt - sau to là động từ nguyên mẫu.
     display_answer: I've divided my talk into three parts. … Turning now to the second part, the budget. … To recap, we need more staff, more space and more time.
 
   - key: en:exercise:signpost-translate-begin
@@ -238,6 +237,105 @@ exercises:
     answer:
       accepted:
         - I'd like to begin by introducing our team.
+        - I'd like to begin by introducing the team.
+        - I'd like to begin by presenting our team.
+        - I'd like to begin by presenting my team.
+        - I'd like to begin by presenting the team.
+        - I would like to begin by introducing the team.
+        - I would like to begin by presenting our team.
+        - I would like to begin by presenting my team.
+        - I would like to begin by presenting the team.
+        - I'd like to start by introducing my team.
+        - I'd like to start by introducing the team.
+        - I'd like to start by presenting our team.
+        - I'd like to start by presenting my team.
+        - I'd like to start by presenting the team.
+        - I would like to start by introducing my team.
+        - I would like to start by introducing the team.
+        - I would like to start by presenting our team.
+        - I would like to start by presenting my team.
+        - I would like to start by presenting the team.
+        - I'll begin by introducing my team.
+        - I'll begin by introducing the team.
+        - I'll begin by presenting our team.
+        - I'll begin by presenting my team.
+        - I'll begin by presenting the team.
+        - I'll start by introducing our team.
+        - I'll start by introducing my team.
+        - I'll start by introducing the team.
+        - I'll start by presenting our team.
+        - I'll start by presenting my team.
+        - I'll start by presenting the team.
+        - Let me begin by introducing my team.
+        - Let me begin by introducing the team.
+        - Let me begin by presenting our team.
+        - Let me begin by presenting my team.
+        - Let me begin by presenting the team.
+        - Let me start by introducing my team.
+        - Let me start by introducing the team.
+        - Let me start by presenting our team.
+        - Let me start by presenting my team.
+        - Let me start by presenting the team.
+        - Let's begin by introducing our team.
+        - Let's begin by introducing my team.
+        - Let's begin by introducing the team.
+        - Let's begin by presenting our team.
+        - Let's begin by presenting my team.
+        - Let's begin by presenting the team.
+        - Let us begin by introducing our team.
+        - Let us begin by introducing my team.
+        - Let us begin by introducing the team.
+        - Let us begin by presenting our team.
+        - Let us begin by presenting my team.
+        - Let us begin by presenting the team.
+        - Let's start by introducing our team.
+        - Let's start by introducing my team.
+        - Let's start by introducing the team.
+        - Let's start by presenting our team.
+        - Let's start by presenting my team.
+        - Let's start by presenting the team.
+        - Let us start by introducing our team.
+        - Let us start by introducing my team.
+        - Let us start by introducing the team.
+        - Let us start by presenting our team.
+        - Let us start by presenting my team.
+        - Let us start by presenting the team.
+        - I'd like to start off by introducing our team.
+        - I'd like to start off by introducing my team.
+        - I'd like to start off by introducing the team.
+        - I'd like to start off by presenting our team.
+        - I'd like to start off by presenting my team.
+        - I'd like to start off by presenting the team.
+        - I would like to start off by introducing our team.
+        - I would like to start off by introducing my team.
+        - I would like to start off by introducing the team.
+        - I would like to start off by presenting our team.
+        - I would like to start off by presenting my team.
+        - I would like to start off by presenting the team.
+        - I want to begin by introducing our team.
+        - I want to begin by introducing my team.
+        - I want to begin by introducing the team.
+        - I want to begin by presenting our team.
+        - I want to begin by presenting my team.
+        - I want to begin by presenting the team.
+        - I want to start by introducing our team.
+        - I want to start by introducing my team.
+        - I want to start by introducing the team.
+        - I want to start by presenting our team.
+        - I want to start by presenting my team.
+        - I want to start by presenting the team.
+        - I am going to begin by introducing our team.
+        - I am going to begin by introducing my team.
+        - I am going to begin by introducing the team.
+        - I am going to begin by presenting our team.
+        - I am going to begin by presenting my team.
+        - I am going to begin by presenting the team.
+        - I am going to start by introducing our team.
+        - I am going to start by introducing my team.
+        - I am going to start by introducing the team.
+        - I am going to start by presenting our team.
+        - I am going to start by presenting my team.
+        - I am going to start by presenting the team.
         - I would like to begin by introducing our team.
         - I'd like to start by introducing our team.
         - I would like to start by introducing our team.
@@ -284,6 +382,144 @@ exercises:
         - Nói cho dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.
         - Để dễ hình dung, con số đó còn lớn hơn cả ngân sách cả năm của chúng ta.
         - Để dễ hình dung, con số đó lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung, con số đó lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung, con số đó lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung, con số này lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung, con số này lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung, con số này lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung, con số này lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung, con số này nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung, con số này nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung, con số này nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung, con số này nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số đó lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để các bạn dễ hình dung, con số đó lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số đó lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để các bạn dễ hình dung, con số đó lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để các bạn dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để các bạn dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để các bạn dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để các bạn dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để các bạn dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để các bạn dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để các bạn dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để các bạn dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để các bạn dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để các bạn dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để các bạn dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để các bạn dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để các bạn dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để các bạn dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để các bạn dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để các bạn dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để các bạn dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để các bạn dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để các bạn dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để các bạn dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để các bạn dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số này lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để các bạn dễ hình dung, con số này lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số này lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để các bạn dễ hình dung, con số này lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để các bạn dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để các bạn dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số này nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để các bạn dễ hình dung, con số này nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số này nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để các bạn dễ hình dung, con số này nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để các bạn dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để các bạn dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để các bạn dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung hơn, con số đó lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung hơn, con số đó lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung hơn, con số đó lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung hơn, con số đó lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung hơn, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung hơn, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung hơn, con số đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung hơn, con số đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung hơn, con số đó nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung hơn, con số đó nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung hơn, con số đó nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung hơn, con số đó nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung hơn, con số đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung hơn, con số đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung hơn, con số đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung hơn, con số đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung hơn, số tiền đó lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung hơn, số tiền đó lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung hơn, số tiền đó lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung hơn, số tiền đó lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung hơn, số tiền đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung hơn, số tiền đó còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung hơn, số tiền đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung hơn, số tiền đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung hơn, số tiền đó nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung hơn, số tiền đó nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung hơn, số tiền đó nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung hơn, số tiền đó nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung hơn, số tiền đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung hơn, số tiền đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung hơn, số tiền đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung hơn, số tiền đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung hơn, con số này lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung hơn, con số này lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung hơn, con số này lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung hơn, con số này lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung hơn, con số này còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung hơn, con số này còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung hơn, con số này còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung hơn, con số này còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung hơn, con số này nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung hơn, con số này nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung hơn, con số này nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung hơn, con số này nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
+        - Để dễ hình dung hơn, con số này còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung hơn, con số này còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.
+        - Để dễ hình dung hơn, con số này còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung hơn, con số này còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -384,6 +620,90 @@ exercises:
         - I want to emphasise that this project needs extra time.
         - I'd like to emphasise that the project needs more time.
         - I want to emphasise that the project needs more time.
+        - I want to emphasise that this project needs additional time.
+        - I want to emphasise that this project will need more time.
+        - I want to emphasise that this project requires more time.
+        - I want to emphasize that the project needs more time.
+        - I want to emphasize that this project needs extra time.
+        - I want to emphasize that this project needs additional time.
+        - I want to emphasize that this project will need more time.
+        - I want to emphasize that this project requires more time.
+        - I want to stress that the project needs more time.
+        - I want to stress that this project needs extra time.
+        - I want to stress that this project needs additional time.
+        - I want to stress that this project will need more time.
+        - I want to stress that this project requires more time.
+        - I want to highlight that this project needs more time.
+        - I want to highlight that the project needs more time.
+        - I want to highlight that this project needs extra time.
+        - I want to highlight that this project needs additional time.
+        - I want to highlight that this project will need more time.
+        - I want to highlight that this project requires more time.
+        - I'd like to emphasise that this project needs extra time.
+        - I'd like to emphasise that this project needs additional time.
+        - I'd like to emphasise that this project will need more time.
+        - I'd like to emphasise that this project requires more time.
+        - I'd like to emphasize that the project needs more time.
+        - I'd like to emphasize that this project needs extra time.
+        - I'd like to emphasize that this project needs additional time.
+        - I'd like to emphasize that this project will need more time.
+        - I'd like to emphasize that this project requires more time.
+        - I'd like to stress that the project needs more time.
+        - I'd like to stress that this project needs extra time.
+        - I'd like to stress that this project needs additional time.
+        - I'd like to stress that this project will need more time.
+        - I'd like to stress that this project requires more time.
+        - I'd like to highlight that this project needs more time.
+        - I'd like to highlight that the project needs more time.
+        - I'd like to highlight that this project needs extra time.
+        - I'd like to highlight that this project needs additional time.
+        - I'd like to highlight that this project will need more time.
+        - I'd like to highlight that this project requires more time.
+        - I would like to emphasise that the project needs more time.
+        - I would like to emphasise that this project needs extra time.
+        - I would like to emphasise that this project needs additional time.
+        - I would like to emphasise that this project will need more time.
+        - I would like to emphasise that this project requires more time.
+        - I would like to emphasize that the project needs more time.
+        - I would like to emphasize that this project needs extra time.
+        - I would like to emphasize that this project needs additional time.
+        - I would like to emphasize that this project will need more time.
+        - I would like to emphasize that this project requires more time.
+        - I would like to stress that the project needs more time.
+        - I would like to stress that this project needs extra time.
+        - I would like to stress that this project needs additional time.
+        - I would like to stress that this project will need more time.
+        - I would like to stress that this project requires more time.
+        - I would like to highlight that this project needs more time.
+        - I would like to highlight that the project needs more time.
+        - I would like to highlight that this project needs extra time.
+        - I would like to highlight that this project needs additional time.
+        - I would like to highlight that this project will need more time.
+        - I would like to highlight that this project requires more time.
+        - I need to emphasise that this project needs more time.
+        - I need to emphasise that the project needs more time.
+        - I need to emphasise that this project needs extra time.
+        - I need to emphasise that this project needs additional time.
+        - I need to emphasise that this project will need more time.
+        - I need to emphasise that this project requires more time.
+        - I need to emphasize that this project needs more time.
+        - I need to emphasize that the project needs more time.
+        - I need to emphasize that this project needs extra time.
+        - I need to emphasize that this project needs additional time.
+        - I need to emphasize that this project will need more time.
+        - I need to emphasize that this project requires more time.
+        - I need to stress that this project needs more time.
+        - I need to stress that the project needs more time.
+        - I need to stress that this project needs extra time.
+        - I need to stress that this project needs additional time.
+        - I need to stress that this project will need more time.
+        - I need to stress that this project requires more time.
+        - I need to highlight that this project needs more time.
+        - I need to highlight that the project needs more time.
+        - I need to highlight that this project needs extra time.
+        - I need to highlight that this project needs additional time.
+        - I need to highlight that this project will need more time.
+        - I need to highlight that this project requires more time.
     rubric:
       typo_tolerance: 1
     known_wrong:

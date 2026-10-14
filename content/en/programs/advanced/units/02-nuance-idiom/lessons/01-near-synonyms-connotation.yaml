@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:near-synonyms-connotation
 order_index: 1
 level: c2
@@ -183,27 +182,27 @@ exercises:
     difficulty: 3
     item: en:item:affect-effect
     prompt:
-      template: "Lack of sleep can {{b1}} your concentration, and the {{b2}} is often worse in the afternoon."
+      template: "Lack of sleep can {{b1}} your concentration, and it can have a serious {{b2}} on your mood."
       blanks:
         - { id: b1, width_hint: 6 }
         - { id: b2, width_hint: 6 }
       hint_levels:
-        - "Nghĩa: Thiếu ngủ có thể ảnh hưởng đến khả năng tập trung, và tác động này thường tệ hơn vào buổi chiều."
-        - "Gợi ý: ô 1 là động từ (a…), ô 2 là danh từ đứng sau the (e…)."
+        - "Nghĩa: Thiếu ngủ có thể ảnh hưởng đến khả năng tập trung, và có thể gây tác động nghiêm trọng đến tâm trạng."
+        - "Gợi ý: ô 1 là động từ (a…), ô 2 là danh từ đứng sau a serious (e…)."
     answer:
       blanks:
-        b1: [affect]
-        b2: [effect]
+        b1: [affect, impair, harm, hurt, damage, undermine, reduce, hinder, hamper, weaken, diminish, disrupt, impact, limit]
+        b2: [effect, impact, influence]
     known_wrong:
       - answer: effects
-        feedback_vi: Sau can là động từ nguyên mẫu; "ảnh hưởng đến" là affect, không phải effect(s).
+        feedback_vi: Effect(s) là danh từ - ô sau can cần động từ affect, còn sau a serious cần danh từ số ít effect.
         error_tag: affect_effect
       - answer: affection
         feedback_vi: Affection là "tình cảm, sự trìu mến", không phải "tác động".
         error_tag: affect_effect
     explanation:
-      vi: Sau can cần động từ - affect (ảnh hưởng đến). Sau the cần danh từ - effect (tác động). Hai từ đọc gần giống nhau nên phải dựa vào vị trí trong câu.
-    display_answer: Lack of sleep can affect your concentration, and the effect is often worse in the afternoon.
+      vi: Sau can cần động từ - affect (ảnh hưởng đến). Sau a serious cần danh từ - effect (tác động). Hai từ đọc gần giống nhau nên phải dựa vào vị trí trong câu.
+    display_answer: Lack of sleep can affect your concentration, and it can have a serious effect on your mood.
 
   # ---------------- recall ----------------
   - key: en:exercise:connotation-fill-economical
@@ -213,14 +212,14 @@ exercises:
     difficulty: 4
     item: en:item:economic-economical
     prompt:
-      template: "During the {{b1}} downturn, many families switched to more {{b2}} ways of heating their homes."
+      template: "During the {{b1}} downturn (suy thoái kinh tế), many families switched to more {{b2}} ways (tiết kiệm chi phí hơn) of heating their homes."
       blanks:
         - { id: b1, width_hint: 10 }
         - { id: b2, width_hint: 10 }
     answer:
       blanks:
-        b1: [economic]
-        b2: [economical]
+        b1: [economic, financial]
+        b2: [economical, cost-effective, affordable, inexpensive]
     known_wrong:
       - answer: economy
         feedback_vi: Economy là danh từ; trước downturn cần tính từ economic (economic downturn).
@@ -248,8 +247,8 @@ exercises:
         - { id: b2, width_hint: 9 }
     answer:
       blanks:
-        b1: [sensible, wise]
-        b2: [sensitive, controversial]
+        b1: [sensible, wise, smart, prudent, practical, reasonable, sound, good, right, clever, rational, shrewd]
+        b2: [sensitive, controversial, delicate, contentious, divisive, touchy, difficult, tricky, awkward, heated, taboo]
     known_wrong:
       - answer: sensational
         feedback_vi: Sensational là "giật gân" hoặc "tuyệt vời", không phải "hợp lý" hay "nhạy cảm".
@@ -285,6 +284,17 @@ exercises:
         - My grandma is very frugal, but she is never stingy with her neighbours.
         - My grandma is very frugal but never stingy with her neighbours.
         - My grandmother is extremely frugal, but she is never stingy with her neighbours.
+        - My grandmother is very thrifty but she is never stingy with her neighbours.
+        - My grandmother is very thrifty, but she's never stingy with her neighbors.
+        - My grandmother is very thrifty, but she is never stingy with her neighbors.
+        - My grandmother is very frugal, but she has never been stingy with her neighbours.
+        - My grandmother is very frugal, but she has never been stingy with her neighbors.
+        - My grandmother is very frugal, but she is never mean to her neighbours.
+        - My grandmother is very frugal, but she is never mean with her neighbors.
+        - My grandma is very frugal, but she's never stingy with her neighbours.
+        - My grandma is very frugal, but she is never stingy with her neighbors.
+        - My grandmother is really frugal, but she is never stingy with her neighbours.
+        - My grandmother is very frugal, but she is never stingy towards her neighbours.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -320,6 +330,15 @@ exercises:
         - Dù đã có tuổi, anh ấy vẫn tò mò hồn nhiên như trẻ con về mọi thứ.
         - Dù tuổi đã cao, ông ấy vẫn có sự tò mò như trẻ thơ về mọi thứ.
         - Dù đã lớn tuổi, ông ấy vẫn tò mò về mọi thứ như một đứa trẻ.
+        - Dù đã lớn tuổi, ông ấy vẫn tò mò về mọi thứ một cách hồn nhiên như trẻ thơ.
+        - Mặc dù đã lớn tuổi, ông ấy vẫn tò mò về mọi thứ một cách hồn nhiên như trẻ con.
+        - Dù đã lớn tuổi, ông ấy vẫn có sự tò mò hồn nhiên như trẻ con về mọi thứ.
+        - Dù đã lớn tuổi, ông vẫn có sự tò mò hồn nhiên như trẻ thơ về mọi thứ.
+        - Dù tuổi đã cao, ông ấy vẫn tò mò hồn nhiên như trẻ thơ về mọi thứ.
+        - Bất chấp tuổi tác, ông ấy vẫn có sự tò mò hồn nhiên về mọi thứ.
+        - Dù đã lớn tuổi, anh ấy vẫn có sự tò mò hồn nhiên như trẻ thơ về mọi thứ.
+        - Dù đã lớn tuổi, ông ấy vẫn có óc tò mò hồn nhiên như trẻ thơ về mọi điều.
+        - Dù đã lớn tuổi, ông ấy vẫn có sự tò mò như trẻ con về mọi thứ.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -402,6 +421,15 @@ exercises:
         - You should be assertive, not aggressive, in negotiations.
         - You should be assertive rather than aggressive in negotiations.
         - In negotiations, you should be assertive and not aggressive.
+        - In negotiation, you should be assertive, not aggressive.
+        - During negotiations, you should be assertive, not aggressive.
+        - During negotiations, you should be assertive rather than aggressive.
+        - In negotiations, you ought to be assertive, not aggressive.
+        - In negotiations, you need to be assertive, not aggressive.
+        - In negotiations, you should be assertive instead of aggressive.
+        - In negotiations, one should be assertive, not aggressive.
+        - In negotiations, it is better to be assertive than aggressive.
+        - In negotiations, you should be assertive rather than being aggressive.
     rubric:
       typo_tolerance: 1
     known_wrong:

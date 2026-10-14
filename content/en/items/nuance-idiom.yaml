@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Sắc thái, thành ngữ & diễn đạt tinh tế" (C2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: từ gần nghĩa & sắc thái ----------------
@@ -827,7 +826,7 @@ items:
       pos: cụm mỉa mai, nói giảm
     back:
       meaning:
-        vi: Không hẳn là… - lối nói mỉa mai nghĩa là "hoàn toàn không" (It's not exactly cheap = rất đắt).
+        vi: Không hẳn là… - lối nói giảm, mỉa mai, ngụ ý điều ngược lại (It's not exactly cheap = chẳng rẻ chút nào, khá đắt).
       examples:
         - target: Three hours in traffic is hardly ideal.
           translation:

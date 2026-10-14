@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:presenting-persuading-review
 order_index: 5
 level: c2
@@ -213,7 +212,7 @@ exercises:
     answer:
       blanks:
         b1: [proof]
-        b2: [concede, admit, accept, grant, acknowledge]
+        b2: [concede, admit, accept, grant, acknowledge, agree, recognise, recognize]
     known_wrong:
       - answer: prove
         feedback_vi: Sau of cần danh từ - the burden of proof; prove là động từ.
@@ -236,7 +235,7 @@ exercises:
     difficulty: 5
     item: en:item:this-brings-me-to
     prompt:
-      template: "I'd like to begin {{b1}} sharing a surprising figure. … This brings me {{b2}} my second point. … {{b3}}, the plan has risks. That said, our staff {{b4}} work longer hours than anyone else in the industry."
+      template: "I'd like to begin {{b1}} sharing a surprising figure. … This brings me {{b2}} my second point. … {{b3}} (phải thừa nhận), the plan has risks. That said, our staff {{b4}} (hiện nay) work longer hours than anyone else in the industry."
       blanks:
         - { id: b1, width_hint: 2 }
         - { id: b2, width_hint: 2 }
@@ -244,13 +243,13 @@ exercises:
         - { id: b4, width_hint: 9 }
     answer:
       blanks:
-        b1: [by]
+        b1: [by, with]
         b2: [to]
-        b3: [admittedly, granted, undeniably]
-        b4: [currently]
+        b3: [admittedly, granted, undeniably, "true", certainly, of course, no doubt, to be fair, to be sure, sure, I admit]
+        b4: [currently, now, presently, at present]
     known_wrong:
-      - answer: with
-        feedback_vi: Begin by + V-ing (bắt đầu bằng việc làm gì); begin with đi với danh từ.
+      - answer: from
+        feedback_vi: Bắt đầu bằng việc làm gì là begin by + V-ing (hoặc begin with + V-ing/danh từ), không dùng from.
         error_tag: preposition
       - answer: actually
         feedback_vi: Ý câu là "hiện nay" - dùng currently; actually là "thật ra".
@@ -289,6 +288,66 @@ exercises:
         - This is precisely why we cannot wait any longer.
         - This is precisely why we can't wait any longer.
         - It is exactly for this reason that we cannot wait any longer.
+        - It is precisely for this reason that we cannot wait any further.
+        - It is precisely for this reason that we cannot afford to wait any longer.
+        - It is for precisely this reason that we can no longer wait.
+        - It is for precisely this reason that we cannot wait any more.
+        - It is for precisely this reason that we cannot wait any further.
+        - It is for precisely this reason that we cannot afford to wait any longer.
+        - It is precisely because of this that we can no longer wait.
+        - It is precisely because of this that we cannot wait any more.
+        - It is precisely because of this that we cannot wait any further.
+        - It is precisely because of this that we cannot afford to wait any longer.
+        - It is precisely because of this reason that we cannot wait any longer.
+        - It is precisely because of this reason that we can no longer wait.
+        - It is precisely because of this reason that we cannot wait any more.
+        - It is precisely because of this reason that we cannot wait any further.
+        - It is precisely because of this reason that we cannot afford to wait any longer.
+        - It is exactly for this reason that we can no longer wait.
+        - It is exactly for this reason that we cannot wait any more.
+        - It is exactly for this reason that we cannot wait any further.
+        - It is exactly for this reason that we cannot afford to wait any longer.
+        - It is for exactly this reason that we cannot wait any longer.
+        - It is for exactly this reason that we can no longer wait.
+        - It is for exactly this reason that we cannot wait any more.
+        - It is for exactly this reason that we cannot wait any further.
+        - It is for exactly this reason that we cannot afford to wait any longer.
+        - That is precisely why we can no longer wait.
+        - That is precisely why we cannot wait any more.
+        - That is precisely why we cannot wait any further.
+        - That is precisely why we cannot afford to wait any longer.
+        - This is precisely why we can no longer wait.
+        - This is precisely why we cannot wait any more.
+        - This is precisely why we cannot wait any further.
+        - This is precisely why we cannot afford to wait any longer.
+        - That's precisely why we can no longer wait.
+        - That's precisely why we cannot wait any more.
+        - That's precisely why we cannot wait any further.
+        - That's precisely why we cannot afford to wait any longer.
+        - That is exactly why we cannot wait any longer.
+        - That is exactly why we can no longer wait.
+        - That is exactly why we cannot wait any more.
+        - That is exactly why we cannot wait any further.
+        - That is exactly why we cannot afford to wait any longer.
+        - This is exactly why we cannot wait any longer.
+        - This is exactly why we can no longer wait.
+        - This is exactly why we cannot wait any more.
+        - This is exactly why we cannot wait any further.
+        - This is exactly why we cannot afford to wait any longer.
+        - That's exactly why we cannot wait any longer.
+        - That's exactly why we can no longer wait.
+        - That's exactly why we cannot wait any more.
+        - That's exactly why we cannot wait any further.
+        - That's exactly why we cannot afford to wait any longer.
+        - It's precisely for this reason that we can no longer wait.
+        - It's precisely for this reason that we cannot wait any more.
+        - It's precisely for this reason that we cannot wait any further.
+        - It's precisely for this reason that we cannot afford to wait any longer.
+        - It's for precisely this reason that we cannot wait any longer.
+        - It's for precisely this reason that we can no longer wait.
+        - It's for precisely this reason that we cannot wait any more.
+        - It's for precisely this reason that we cannot wait any further.
+        - It's for precisely this reason that we cannot afford to wait any longer.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -327,6 +386,75 @@ exercises:
         - Thiết kế đẹp không phải là thứ xa xỉ mà là điều cần thiết.
         - Thiết kế tốt không hề xa xỉ mà là điều cần thiết.
         - Còn lâu thiết kế tốt mới là thứ xa xỉ, nó là điều cần thiết.
+        - Thiết kế tốt không phải là thứ xa xỉ, mà là một điều cần thiết.
+        - Thiết kế tốt không phải là thứ xa xỉ, mà là một nhu cầu thiết yếu.
+        - Thiết kế tốt không phải là thứ xa xỉ, mà là điều thiết yếu.
+        - Thiết kế tốt không phải là thứ xa xỉ, mà ngược lại là điều cần thiết.
+        - Thiết kế tốt không phải là thứ xa xỉ, mà ngược lại là một điều cần thiết.
+        - Thiết kế tốt không phải là thứ xa xỉ, mà ngược lại là một nhu cầu thiết yếu.
+        - Thiết kế tốt không phải là thứ xa xỉ, mà ngược lại là điều thiết yếu.
+        - Thiết kế tốt không phải là một thứ xa xỉ, mà là điều cần thiết.
+        - Thiết kế tốt không phải là một thứ xa xỉ, mà là một nhu cầu thiết yếu.
+        - Thiết kế tốt không phải là một thứ xa xỉ, mà là điều thiết yếu.
+        - Thiết kế tốt không phải là một thứ xa xỉ, mà ngược lại là điều cần thiết.
+        - Thiết kế tốt không phải là một thứ xa xỉ, mà ngược lại là một điều cần thiết.
+        - Thiết kế tốt không phải là một thứ xa xỉ, mà ngược lại là một nhu cầu thiết yếu.
+        - Thiết kế tốt không phải là một thứ xa xỉ, mà ngược lại là điều thiết yếu.
+        - Thiết kế tốt không phải là điều xa xỉ, mà là điều cần thiết.
+        - Thiết kế tốt không phải là điều xa xỉ, mà là một điều cần thiết.
+        - Thiết kế tốt không phải là điều xa xỉ, mà là một nhu cầu thiết yếu.
+        - Thiết kế tốt không phải là điều xa xỉ, mà là điều thiết yếu.
+        - Thiết kế tốt không phải là điều xa xỉ, mà ngược lại là điều cần thiết.
+        - Thiết kế tốt không phải là điều xa xỉ, mà ngược lại là một điều cần thiết.
+        - Thiết kế tốt không phải là điều xa xỉ, mà ngược lại là một nhu cầu thiết yếu.
+        - Thiết kế tốt không phải là điều xa xỉ, mà ngược lại là điều thiết yếu.
+        - Thiết kế tốt không hề là thứ xa xỉ, mà là điều cần thiết.
+        - Thiết kế tốt không hề là thứ xa xỉ, mà là một điều cần thiết.
+        - Thiết kế tốt không hề là thứ xa xỉ, mà là điều thiết yếu.
+        - Thiết kế tốt không hề là thứ xa xỉ, mà ngược lại là điều cần thiết.
+        - Thiết kế tốt không hề là thứ xa xỉ, mà ngược lại là một điều cần thiết.
+        - Thiết kế tốt không hề là thứ xa xỉ, mà ngược lại là một nhu cầu thiết yếu.
+        - Thiết kế tốt không hề là thứ xa xỉ, mà ngược lại là điều thiết yếu.
+        - Thiết kế tốt không hề là một thứ xa xỉ, mà là điều cần thiết.
+        - Thiết kế tốt không hề là một thứ xa xỉ, mà là một điều cần thiết.
+        - Thiết kế tốt không hề là một thứ xa xỉ, mà là một nhu cầu thiết yếu.
+        - Thiết kế tốt không hề là một thứ xa xỉ, mà là điều thiết yếu.
+        - Thiết kế tốt không hề là một thứ xa xỉ, mà ngược lại là điều cần thiết.
+        - Thiết kế tốt không hề là một thứ xa xỉ, mà ngược lại là một điều cần thiết.
+        - Thiết kế tốt không hề là một thứ xa xỉ, mà ngược lại là một nhu cầu thiết yếu.
+        - Thiết kế tốt không hề là một thứ xa xỉ, mà ngược lại là điều thiết yếu.
+        - Thiết kế tốt không hề là điều xa xỉ, mà là điều cần thiết.
+        - Thiết kế tốt không hề là điều xa xỉ, mà là một điều cần thiết.
+        - Thiết kế tốt không hề là điều xa xỉ, mà là một nhu cầu thiết yếu.
+        - Thiết kế tốt không hề là điều xa xỉ, mà là điều thiết yếu.
+        - Thiết kế tốt không hề là điều xa xỉ, mà ngược lại là điều cần thiết.
+        - Thiết kế tốt không hề là điều xa xỉ, mà ngược lại là một điều cần thiết.
+        - Thiết kế tốt không hề là điều xa xỉ, mà ngược lại là một nhu cầu thiết yếu.
+        - Thiết kế tốt không hề là điều xa xỉ, mà ngược lại là điều thiết yếu.
+        - Thiết kế tốt chẳng phải là thứ xa xỉ, mà là điều cần thiết.
+        - Thiết kế tốt chẳng phải là thứ xa xỉ, mà là một điều cần thiết.
+        - Thiết kế tốt chẳng phải là thứ xa xỉ, mà là một nhu cầu thiết yếu.
+        - Thiết kế tốt chẳng phải là thứ xa xỉ, mà là điều thiết yếu.
+        - Thiết kế tốt chẳng phải là thứ xa xỉ, mà ngược lại là điều cần thiết.
+        - Thiết kế tốt chẳng phải là thứ xa xỉ, mà ngược lại là một điều cần thiết.
+        - Thiết kế tốt chẳng phải là thứ xa xỉ, mà ngược lại là một nhu cầu thiết yếu.
+        - Thiết kế tốt chẳng phải là thứ xa xỉ, mà ngược lại là điều thiết yếu.
+        - Thiết kế tốt chẳng phải là một thứ xa xỉ, mà là điều cần thiết.
+        - Thiết kế tốt chẳng phải là một thứ xa xỉ, mà là một điều cần thiết.
+        - Thiết kế tốt chẳng phải là một thứ xa xỉ, mà là một nhu cầu thiết yếu.
+        - Thiết kế tốt chẳng phải là một thứ xa xỉ, mà là điều thiết yếu.
+        - Thiết kế tốt chẳng phải là một thứ xa xỉ, mà ngược lại là điều cần thiết.
+        - Thiết kế tốt chẳng phải là một thứ xa xỉ, mà ngược lại là một điều cần thiết.
+        - Thiết kế tốt chẳng phải là một thứ xa xỉ, mà ngược lại là một nhu cầu thiết yếu.
+        - Thiết kế tốt chẳng phải là một thứ xa xỉ, mà ngược lại là điều thiết yếu.
+        - Thiết kế tốt chẳng phải là điều xa xỉ, mà là điều cần thiết.
+        - Thiết kế tốt chẳng phải là điều xa xỉ, mà là một điều cần thiết.
+        - Thiết kế tốt chẳng phải là điều xa xỉ, mà là một nhu cầu thiết yếu.
+        - Thiết kế tốt chẳng phải là điều xa xỉ, mà là điều thiết yếu.
+        - Thiết kế tốt chẳng phải là điều xa xỉ, mà ngược lại là điều cần thiết.
+        - Thiết kế tốt chẳng phải là điều xa xỉ, mà ngược lại là một điều cần thiết.
+        - Thiết kế tốt chẳng phải là điều xa xỉ, mà ngược lại là một nhu cầu thiết yếu.
+        - Thiết kế tốt chẳng phải là điều xa xỉ, mà ngược lại là điều thiết yếu.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -427,6 +555,185 @@ exercises:
         - Admittedly, no solution is perfect, but all we need is to make a start.
         - Admittedly, no solution is perfect, but all we need is to start.
         - Granted, no solution is perfect, but all we need is a start.
+        - Admittedly, no solution is perfect, but all we need is to begin.
+        - Admittedly, no solution is perfect, but all that we need is a beginning.
+        - Admittedly, no solution is perfect, but all that we need is a starting point.
+        - Admittedly, no solution is perfect, but all that we need is to make a start.
+        - Admittedly, no solution is perfect, but all that we need is to start.
+        - Admittedly, no solution is perfect, but all that we need is to begin.
+        - Admittedly, no solution is perfect. However, all we need is a beginning.
+        - Admittedly, no solution is perfect. However, all we need is a starting point.
+        - Admittedly, no solution is perfect. However, all we need is to make a start.
+        - Admittedly, no solution is perfect. However, all we need is to start.
+        - Admittedly, no solution is perfect. However, all we need is to begin.
+        - Admittedly, no solution is perfect. That said, all we need is a beginning.
+        - Admittedly, no solution is perfect. That said, all we need is a starting point.
+        - Admittedly, no solution is perfect. That said, all we need is to make a start.
+        - Admittedly, no solution is perfect. That said, all we need is to start.
+        - Admittedly, no solution is perfect. That said, all we need is to begin.
+        - Admittedly, there is no perfect solution, but all we need is a beginning.
+        - Admittedly, there is no perfect solution, but all we need is to make a start.
+        - Admittedly, there is no perfect solution, but all we need is to start.
+        - Admittedly, there is no perfect solution, but all we need is to begin.
+        - Admittedly, there is no perfect solution, but all that we need is a start.
+        - Admittedly, there is no perfect solution, but all that we need is a beginning.
+        - Admittedly, there is no perfect solution, but all that we need is a starting point.
+        - Admittedly, there is no perfect solution, but all that we need is to make a start.
+        - Admittedly, there is no perfect solution, but all that we need is to start.
+        - Admittedly, there is no perfect solution, but all that we need is to begin.
+        - Admittedly, there is no perfect solution. However, all we need is a start.
+        - Admittedly, there is no perfect solution. However, all we need is a beginning.
+        - Admittedly, there is no perfect solution. However, all we need is a starting point.
+        - Admittedly, there is no perfect solution. However, all we need is to make a start.
+        - Admittedly, there is no perfect solution. However, all we need is to start.
+        - Admittedly, there is no perfect solution. However, all we need is to begin.
+        - Admittedly, there is no perfect solution. That said, all we need is a start.
+        - Admittedly, there is no perfect solution. That said, all we need is a beginning.
+        - Admittedly, there is no perfect solution. That said, all we need is a starting point.
+        - Admittedly, there is no perfect solution. That said, all we need is to make a start.
+        - Admittedly, there is no perfect solution. That said, all we need is to start.
+        - Admittedly, there is no perfect solution. That said, all we need is to begin.
+        - Admittedly, there's no perfect solution, but all we need is a beginning.
+        - Admittedly, there's no perfect solution, but all we need is a starting point.
+        - Admittedly, there's no perfect solution, but all we need is to make a start.
+        - Admittedly, there's no perfect solution, but all we need is to start.
+        - Admittedly, there's no perfect solution, but all we need is to begin.
+        - Admittedly, there's no perfect solution, but all that we need is a start.
+        - Admittedly, there's no perfect solution, but all that we need is a beginning.
+        - Admittedly, there's no perfect solution, but all that we need is a starting point.
+        - Admittedly, there's no perfect solution, but all that we need is to make a start.
+        - Admittedly, there's no perfect solution, but all that we need is to start.
+        - Admittedly, there's no perfect solution, but all that we need is to begin.
+        - Admittedly, there's no perfect solution. However, all we need is a start.
+        - Admittedly, there's no perfect solution. However, all we need is a beginning.
+        - Admittedly, there's no perfect solution. However, all we need is a starting point.
+        - Admittedly, there's no perfect solution. However, all we need is to make a start.
+        - Admittedly, there's no perfect solution. However, all we need is to start.
+        - Admittedly, there's no perfect solution. However, all we need is to begin.
+        - Admittedly, there's no perfect solution. That said, all we need is a start.
+        - Admittedly, there's no perfect solution. That said, all we need is a beginning.
+        - Admittedly, there's no perfect solution. That said, all we need is a starting point.
+        - Admittedly, there's no perfect solution. That said, all we need is to make a start.
+        - Admittedly, there's no perfect solution. That said, all we need is to start.
+        - Admittedly, there's no perfect solution. That said, all we need is to begin.
+        - Admittedly, none of the solutions is perfect, but all we need is a beginning.
+        - Admittedly, none of the solutions is perfect, but all we need is a starting point.
+        - Admittedly, none of the solutions is perfect, but all we need is to make a start.
+        - Admittedly, none of the solutions is perfect, but all we need is to start.
+        - Admittedly, none of the solutions is perfect, but all we need is to begin.
+        - Admittedly, none of the solutions is perfect, but all that we need is a start.
+        - Admittedly, none of the solutions is perfect, but all that we need is a beginning.
+        - Admittedly, none of the solutions is perfect, but all that we need is a starting point.
+        - Admittedly, none of the solutions is perfect, but all that we need is to make a start.
+        - Admittedly, none of the solutions is perfect, but all that we need is to start.
+        - Admittedly, none of the solutions is perfect, but all that we need is to begin.
+        - Admittedly, none of the solutions is perfect. However, all we need is a start.
+        - Admittedly, none of the solutions is perfect. However, all we need is a beginning.
+        - Admittedly, none of the solutions is perfect. However, all we need is a starting point.
+        - Admittedly, none of the solutions is perfect. However, all we need is to make a start.
+        - Admittedly, none of the solutions is perfect. However, all we need is to start.
+        - Admittedly, none of the solutions is perfect. However, all we need is to begin.
+        - Admittedly, none of the solutions is perfect. That said, all we need is a start.
+        - Admittedly, none of the solutions is perfect. That said, all we need is a beginning.
+        - Admittedly, none of the solutions is perfect. That said, all we need is a starting point.
+        - Admittedly, none of the solutions is perfect. That said, all we need is to make a start.
+        - Admittedly, none of the solutions is perfect. That said, all we need is to start.
+        - Admittedly, none of the solutions is perfect. That said, all we need is to begin.
+        - Granted, no solution is perfect, but all we need is a beginning.
+        - Granted, no solution is perfect, but all we need is a starting point.
+        - Granted, no solution is perfect, but all we need is to make a start.
+        - Granted, no solution is perfect, but all we need is to start.
+        - Granted, no solution is perfect, but all we need is to begin.
+        - Granted, no solution is perfect, but all that we need is a start.
+        - Granted, no solution is perfect, but all that we need is a beginning.
+        - Granted, no solution is perfect, but all that we need is a starting point.
+        - Granted, no solution is perfect, but all that we need is to make a start.
+        - Granted, no solution is perfect, but all that we need is to start.
+        - Granted, no solution is perfect, but all that we need is to begin.
+        - Granted, no solution is perfect. However, all we need is a start.
+        - Granted, no solution is perfect. However, all we need is a beginning.
+        - Granted, no solution is perfect. However, all we need is a starting point.
+        - Granted, no solution is perfect. However, all we need is to make a start.
+        - Granted, no solution is perfect. However, all we need is to start.
+        - Granted, no solution is perfect. However, all we need is to begin.
+        - Granted, no solution is perfect. That said, all we need is a start.
+        - Granted, no solution is perfect. That said, all we need is a beginning.
+        - Granted, no solution is perfect. That said, all we need is a starting point.
+        - Granted, no solution is perfect. That said, all we need is to make a start.
+        - Granted, no solution is perfect. That said, all we need is to start.
+        - Granted, no solution is perfect. That said, all we need is to begin.
+        - Granted, there is no perfect solution, but all we need is a start.
+        - Granted, there is no perfect solution, but all we need is a beginning.
+        - Granted, there is no perfect solution, but all we need is a starting point.
+        - Granted, there is no perfect solution, but all we need is to make a start.
+        - Granted, there is no perfect solution, but all we need is to start.
+        - Granted, there is no perfect solution, but all we need is to begin.
+        - Granted, there is no perfect solution, but all that we need is a start.
+        - Granted, there is no perfect solution, but all that we need is a beginning.
+        - Granted, there is no perfect solution, but all that we need is a starting point.
+        - Granted, there is no perfect solution, but all that we need is to make a start.
+        - Granted, there is no perfect solution, but all that we need is to start.
+        - Granted, there is no perfect solution, but all that we need is to begin.
+        - Granted, there is no perfect solution. However, all we need is a start.
+        - Granted, there is no perfect solution. However, all we need is a beginning.
+        - Granted, there is no perfect solution. However, all we need is a starting point.
+        - Granted, there is no perfect solution. However, all we need is to make a start.
+        - Granted, there is no perfect solution. However, all we need is to start.
+        - Granted, there is no perfect solution. However, all we need is to begin.
+        - Granted, there is no perfect solution. That said, all we need is a start.
+        - Granted, there is no perfect solution. That said, all we need is a beginning.
+        - Granted, there is no perfect solution. That said, all we need is a starting point.
+        - Granted, there is no perfect solution. That said, all we need is to make a start.
+        - Granted, there is no perfect solution. That said, all we need is to start.
+        - Granted, there is no perfect solution. That said, all we need is to begin.
+        - Granted, there's no perfect solution, but all we need is a start.
+        - Granted, there's no perfect solution, but all we need is a beginning.
+        - Granted, there's no perfect solution, but all we need is a starting point.
+        - Granted, there's no perfect solution, but all we need is to make a start.
+        - Granted, there's no perfect solution, but all we need is to start.
+        - Granted, there's no perfect solution, but all we need is to begin.
+        - Granted, there's no perfect solution, but all that we need is a start.
+        - Granted, there's no perfect solution, but all that we need is a beginning.
+        - Granted, there's no perfect solution, but all that we need is a starting point.
+        - Granted, there's no perfect solution, but all that we need is to make a start.
+        - Granted, there's no perfect solution, but all that we need is to start.
+        - Granted, there's no perfect solution, but all that we need is to begin.
+        - Granted, there's no perfect solution. However, all we need is a start.
+        - Granted, there's no perfect solution. However, all we need is a beginning.
+        - Granted, there's no perfect solution. However, all we need is a starting point.
+        - Granted, there's no perfect solution. However, all we need is to make a start.
+        - Granted, there's no perfect solution. However, all we need is to start.
+        - Granted, there's no perfect solution. However, all we need is to begin.
+        - Granted, there's no perfect solution. That said, all we need is a start.
+        - Granted, there's no perfect solution. That said, all we need is a beginning.
+        - Granted, there's no perfect solution. That said, all we need is a starting point.
+        - Granted, there's no perfect solution. That said, all we need is to make a start.
+        - Granted, there's no perfect solution. That said, all we need is to start.
+        - Granted, there's no perfect solution. That said, all we need is to begin.
+        - Granted, none of the solutions is perfect, but all we need is a start.
+        - Granted, none of the solutions is perfect, but all we need is a beginning.
+        - Granted, none of the solutions is perfect, but all we need is a starting point.
+        - Granted, none of the solutions is perfect, but all we need is to make a start.
+        - Granted, none of the solutions is perfect, but all we need is to start.
+        - Granted, none of the solutions is perfect, but all we need is to begin.
+        - Granted, none of the solutions is perfect, but all that we need is a start.
+        - Granted, none of the solutions is perfect, but all that we need is a beginning.
+        - Granted, none of the solutions is perfect, but all that we need is a starting point.
+        - Granted, none of the solutions is perfect, but all that we need is to make a start.
+        - Granted, none of the solutions is perfect, but all that we need is to start.
+        - Granted, none of the solutions is perfect, but all that we need is to begin.
+        - Granted, none of the solutions is perfect. However, all we need is a start.
+        - Granted, none of the solutions is perfect. However, all we need is a beginning.
+        - Granted, none of the solutions is perfect. However, all we need is a starting point.
+        - Granted, none of the solutions is perfect. However, all we need is to make a start.
+        - Granted, none of the solutions is perfect. However, all we need is to start.
+        - Granted, none of the solutions is perfect. However, all we need is to begin.
+        - Granted, none of the solutions is perfect. That said, all we need is a start.
+        - Granted, none of the solutions is perfect. That said, all we need is a beginning.
+        - Granted, none of the solutions is perfect. That said, all we need is a starting point.
+        - Granted, none of the solutions is perfect. That said, all we need is to make a start.
+        - Granted, none of the solutions is perfect. That said, all we need is to start.
+        - Granted, none of the solutions is perfect. That said, all we need is to begin.
     rubric:
       typo_tolerance: 1
     known_wrong:

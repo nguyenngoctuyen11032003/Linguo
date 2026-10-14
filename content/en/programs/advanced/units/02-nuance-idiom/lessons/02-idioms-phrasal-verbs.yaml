@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:idioms-phrasal-verbs
 order_index: 2
 level: c2
@@ -140,7 +139,7 @@ exercises:
   - key: en:exercise:idiom-mcq-come-across
     type: mcq
     stage: recognition
-    answer_lang: vi
+    answer_lang: en
     difficulty: 4
     item: en:item:come-across
     prompt:
@@ -223,20 +222,17 @@ exercises:
         - { id: b2, width_hint: 4 }
     answer:
       blanks:
-        b1: [picks]
+        b1: [picks, picked, speeds, heats, ramps, builds, livens, looks, perks, shoots, goes]
         b2: [down, away]
     known_wrong:
       - answer: pick
         feedback_vi: Chủ ngữ Business là số ít, thì hiện tại đơn - picks up.
         error_tag: subject_verb_agreement
-      - answer: picked
-        feedback_vi: Usually diễn tả thói quen hiện tại nên dùng hiện tại đơn - picks up.
-        error_tag: tense
       - answer: off
         feedback_vi: Turn off là "tắt"; "từ chối khách" là turn down (hoặc turn away).
         error_tag: phrasal_verb
     explanation:
-      vi: Pick up không có tân ngữ nghĩa là "khởi sắc, tăng lên". Turn down nghĩa là "từ chối"; turn away là "không tiếp nhận, khước từ" - cả hai hợp với clients.
+      vi: Pick up không có tân ngữ nghĩa là "khởi sắc, tăng lên" (usually + picks up hoặc picked up đều được). Turn down nghĩa là "từ chối"; turn away là "không tiếp nhận, khước từ" - cả hai hợp với clients.
     display_answer: Business usually picks up before Tet. Last year we were so busy that I had to turn down two new clients.
 
   - key: en:exercise:idiom-translate-elephant
@@ -263,6 +259,97 @@ exercises:
         - "We have to address the elephant in the room: sales are falling."
         - "We must address the elephant in the room: sales are falling."
         - "We need to address the elephant in the room: our sales are falling."
+        - "We need to address the elephant in the room: sales are decreasing."
+        - "We need to talk about the elephant in the room: sales are dropping."
+        - "We need to talk about the elephant in the room: sales are decreasing."
+        - "We need to talk about the elephant in the room: sales are going down."
+        - "We need to discuss the elephant in the room: sales are declining."
+        - "We need to discuss the elephant in the room: sales are dropping."
+        - "We need to discuss the elephant in the room: sales are decreasing."
+        - "We need to discuss the elephant in the room: sales are going down."
+        - "We need to deal with the elephant in the room: sales are falling."
+        - "We need to deal with the elephant in the room: sales are declining."
+        - "We need to deal with the elephant in the room: sales are dropping."
+        - "We need to deal with the elephant in the room: sales are decreasing."
+        - "We need to deal with the elephant in the room: sales are going down."
+        - "We need to tackle the elephant in the room: sales are falling."
+        - "We need to tackle the elephant in the room: sales are declining."
+        - "We need to tackle the elephant in the room: sales are dropping."
+        - "We need to tackle the elephant in the room: sales are decreasing."
+        - "We need to tackle the elephant in the room: sales are going down."
+        - "We have to address the elephant in the room: sales are declining."
+        - "We have to address the elephant in the room: sales are dropping."
+        - "We have to address the elephant in the room: sales are decreasing."
+        - "We have to address the elephant in the room: sales are going down."
+        - "We have to talk about the elephant in the room: sales are falling."
+        - "We have to talk about the elephant in the room: sales are declining."
+        - "We have to talk about the elephant in the room: sales are dropping."
+        - "We have to talk about the elephant in the room: sales are decreasing."
+        - "We have to talk about the elephant in the room: sales are going down."
+        - "We have to discuss the elephant in the room: sales are falling."
+        - "We have to discuss the elephant in the room: sales are declining."
+        - "We have to discuss the elephant in the room: sales are dropping."
+        - "We have to discuss the elephant in the room: sales are decreasing."
+        - "We have to discuss the elephant in the room: sales are going down."
+        - "We have to deal with the elephant in the room: sales are falling."
+        - "We have to deal with the elephant in the room: sales are declining."
+        - "We have to deal with the elephant in the room: sales are dropping."
+        - "We have to deal with the elephant in the room: sales are decreasing."
+        - "We have to deal with the elephant in the room: sales are going down."
+        - "We have to tackle the elephant in the room: sales are falling."
+        - "We have to tackle the elephant in the room: sales are declining."
+        - "We have to tackle the elephant in the room: sales are dropping."
+        - "We have to tackle the elephant in the room: sales are decreasing."
+        - "We have to tackle the elephant in the room: sales are going down."
+        - "We must address the elephant in the room: sales are declining."
+        - "We must address the elephant in the room: sales are dropping."
+        - "We must address the elephant in the room: sales are decreasing."
+        - "We must address the elephant in the room: sales are going down."
+        - "We must talk about the elephant in the room: sales are falling."
+        - "We must talk about the elephant in the room: sales are declining."
+        - "We must talk about the elephant in the room: sales are dropping."
+        - "We must talk about the elephant in the room: sales are decreasing."
+        - "We must talk about the elephant in the room: sales are going down."
+        - "We must discuss the elephant in the room: sales are falling."
+        - "We must discuss the elephant in the room: sales are declining."
+        - "We must discuss the elephant in the room: sales are dropping."
+        - "We must discuss the elephant in the room: sales are decreasing."
+        - "We must discuss the elephant in the room: sales are going down."
+        - "We must deal with the elephant in the room: sales are falling."
+        - "We must deal with the elephant in the room: sales are declining."
+        - "We must deal with the elephant in the room: sales are dropping."
+        - "We must deal with the elephant in the room: sales are decreasing."
+        - "We must deal with the elephant in the room: sales are going down."
+        - "We must tackle the elephant in the room: sales are falling."
+        - "We must tackle the elephant in the room: sales are declining."
+        - "We must tackle the elephant in the room: sales are dropping."
+        - "We must tackle the elephant in the room: sales are decreasing."
+        - "We must tackle the elephant in the room: sales are going down."
+        - "We should address the elephant in the room: sales are falling."
+        - "We should address the elephant in the room: sales are declining."
+        - "We should address the elephant in the room: sales are dropping."
+        - "We should address the elephant in the room: sales are decreasing."
+        - "We should address the elephant in the room: sales are going down."
+        - "We should talk about the elephant in the room: sales are falling."
+        - "We should talk about the elephant in the room: sales are declining."
+        - "We should talk about the elephant in the room: sales are dropping."
+        - "We should talk about the elephant in the room: sales are decreasing."
+        - "We should talk about the elephant in the room: sales are going down."
+        - "We should discuss the elephant in the room: sales are falling."
+        - "We should discuss the elephant in the room: sales are declining."
+        - "We should discuss the elephant in the room: sales are dropping."
+        - "We should discuss the elephant in the room: sales are decreasing."
+        - "We should discuss the elephant in the room: sales are going down."
+        - "We should deal with the elephant in the room: sales are falling."
+        - "We should deal with the elephant in the room: sales are declining."
+        - "We should deal with the elephant in the room: sales are dropping."
+        - "We should deal with the elephant in the room: sales are decreasing."
+        - "We should deal with the elephant in the room: sales are going down."
+        - "We should tackle the elephant in the room: sales are falling."
+        - "We should tackle the elephant in the room: sales are declining."
+        - "We should tackle the elephant in the room: sales are dropping."
+        - "We should tackle the elephant in the room: sales are decreasing."
+        - "We should tackle the elephant in the room: sales are going down."
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -297,6 +384,15 @@ exercises:
         - Nhìn chung, nhân viên đón nhận hệ thống mới khá tích cực.
         - Nhìn chung, nhân viên đã đón nhận hệ thống mới một cách tích cực.
         - Về tổng thể, hệ thống mới được nhân viên đón nhận tích cực.
+        - Nhìn chung, nhân viên đón nhận hệ thống mới khá tốt.
+        - Nhìn chung, hệ thống mới nhận được sự đón nhận tích cực từ nhân viên.
+        - Nhìn chung, hệ thống mới được nhân viên đón nhận một cách tích cực.
+        - Nhìn chung, hệ thống mới được nhân viên chào đón.
+        - Nhìn chung, hệ thống mới được nhân viên đánh giá tốt.
+        - Nói chung, hệ thống mới được nhân viên đón nhận tốt.
+        - Nói chung, nhân viên đón nhận hệ thống mới khá tích cực.
+        - Nhìn chung, hệ thống mới đã được nhân viên đón nhận một cách tích cực.
+        - Nhìn chung, hệ thống mới được các nhân viên đón nhận tích cực.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -365,12 +461,13 @@ exercises:
         - { id: c-was, text: It was }
         - { id: c-carried, text: carried }
         - { id: c-brilliantly, text: brilliantly }
-        - { id: c-out, text: out }
+        - { id: c-into, text: into }
     answer:
       orders:
         - [c-was, c-difficult, c-but, c-she, c-carried, c-it, c-off, c-brilliantly]
+        - [c-was, c-difficult, c-but, c-she, c-brilliantly, c-carried, c-it, c-off]
     explanation:
-      vi: Carry it off là "làm thành công một việc khó"; đại từ it đặt giữa carried và off. Carry out là "thực hiện" (kế hoạch, nghiên cứu), không hợp với vai diễn.
+      vi: Carry it off là "làm thành công một việc khó"; đại từ it đặt giữa carried và off. Trạng từ brilliantly đứng cuối hoặc ngay trước carried đều tự nhiên. Đừng nhầm với carry out (thực hiện kế hoạch, nghiên cứu) hay carry on (tiếp tục).
     display_answer: It was a difficult role, but she carried it off brilliantly.
 
   - key: en:exercise:idiom-translate-turn-down
@@ -401,6 +498,17 @@ exercises:
         - She refused the job offer because she didn't want to move house.
         - She turned down the job offer because she didn't want to move home.
         - She turned down the job offer because she didn't want to move away.
+        - She turned down the job offer because she did not want to move home.
+        - She rejected the job offer because she didn't want to move house.
+        - She rejected the job offer because she did not want to move house.
+        - She declined the job offer because she didn't want to move.
+        - She declined the offer because she didn't want to move house.
+        - She turned the job offer down because she did not want to move house.
+        - She turned the job offer down because she didn't want to move.
+        - She turned down the job offer as she did not want to move house.
+        - She turned down the offer of a job because she didn't want to move house.
+        - She declined the job offer because she did not want to move house.
+        - She refused the job offer because she did not want to move house.
     rubric:
       typo_tolerance: 1
     known_wrong:

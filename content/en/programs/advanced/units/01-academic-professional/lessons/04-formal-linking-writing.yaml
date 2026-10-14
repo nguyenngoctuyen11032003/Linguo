@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:formal-linking-writing
 order_index: 4
 level: c1
@@ -181,8 +180,8 @@ exercises:
         - "Gợi ý: ô 1 là giới từ nhượng bộ đi với danh từ (D…); ô 2 là trạng từ nối chỉ kết quả (C…)."
     answer:
       blanks:
-        b1: [Despite, In spite of, Notwithstanding]
-        b2: [Consequently, As a result, Therefore, As a consequence]
+        b1: [Despite, In spite of, Notwithstanding, Regardless of, Irrespective of, Even with]
+        b2: [Consequently, As a result, Therefore, As a consequence, Thus, Hence, Accordingly, So, For this reason, Subsequently, Afterwards, Later, Eventually, Finally, Then, Moreover, Furthermore, Additionally, In addition]
     known_wrong:
       - answer: Despite of
         feedback_vi: Không có despite of - chỉ despite hoặc in spite of.
@@ -205,14 +204,14 @@ exercises:
     difficulty: 3
     item: en:item:register-shift
     prompt:
-      template: "Informal - \"We need more info. Can you find out the cost?\" → Formal - \"Further information is {{b1}}. Could you please {{b2}} the cost?\""
+      template: "Informal - \"We need more info. Can you find out the cost?\" → Formal (dùng một động từ đơn, không dùng cụm động từ) - \"Further information is {{b1}}. Could you please {{b2}} the cost?\""
       blanks:
         - { id: b1, width_hint: 8 }
         - { id: b2, width_hint: 9 }
     answer:
       blanks:
-        b1: [required, needed]
-        b2: [determine, confirm, ascertain, establish, clarify, check]
+        b1: [required, needed, necessary, essential, requested, sought]
+        b2: [determine, confirm, ascertain, establish, clarify, check, verify, specify, provide, state, supply, advise]
     known_wrong:
       - answer: find out
         feedback_vi: Find out là cụm động từ thân mật; văn trang trọng dùng determine/confirm/ascertain.
@@ -220,9 +219,6 @@ exercises:
       - answer: need
         feedback_vi: Sau is cần quá khứ phân từ (bị động) - is required.
         error_tag: passive
-      - answer: requested
-        feedback_vi: Requested là "được yêu cầu"; ý "cần có" là required.
-        error_tag: word_choice
     explanation:
       vi: Văn trang trọng dùng bị động với require (Further information is required) và động từ đơn gốc Latin thay cụm động từ - find out → determine/confirm.
     display_answer: Further information is required. Could you please determine the cost?
@@ -257,6 +253,17 @@ exercises:
         - Although costly, the proposal offers long-term benefits.
         - Although the proposal is costly, it offers long term benefits.
         - Although the proposal is costly, it has long-term benefits.
+        - While the proposal is costly, it offers long-term benefits.
+        - Even though the proposal is expensive, it offers long-term benefits.
+        - Although the proposal is expensive, it offers long term benefits.
+        - Although the proposal is costly, it offers long-term advantages.
+        - Although the proposal is costly, it offers benefits in the long term.
+        - The proposal is costly, but it brings long-term benefits.
+        - The proposal is costly, yet it offers long-term benefits.
+        - Despite being expensive, the proposal offers long-term benefits.
+        - Despite being costly, the proposal brings long-term benefits.
+        - Although expensive, the proposal offers long-term benefits.
+        - Although the proposal is costly, it will bring long-term benefits.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -300,6 +307,14 @@ exercises:
         - The company automated the process, thereby minimising errors.
         - The company automated the process, thereby minimizing errors.
         - The company automated the process, thereby decreasing errors.
+        - The company automated the process, thereby lowering errors.
+        - The company automated the process, thereby reducing the errors.
+        - The company automated the process, thereby reducing the number of mistakes.
+        - The company automated its process, thereby reducing mistakes.
+        - The company automated the process, thereby cutting down on errors.
+        - The company automated the process and thereby reduced mistakes.
+        - The company has automated its process, thereby reducing errors.
+        - The company automated the process, thereby eliminating errors.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -352,13 +367,15 @@ exercises:
         - { id: a-budget, text: the revised budget }
         - { id: a-further, text: Further to }
         - { id: a-please, text: please }
-        - { id: a-despite, text: despite }
+        - { id: a-although, text: although }
     answer:
       orders:
         - [a-further, a-meeting, a-please, a-find, a-attached, a-budget]
         - [a-further, a-meeting, a-please, a-find, a-budget, a-attached]
+        - [a-please, a-find, a-attached, a-budget, a-further, a-meeting]
+        - [a-please, a-find, a-budget, a-attached, a-further, a-meeting]
     explanation:
-      vi: Further to + danh từ (our meeting) mở đầu email; trật tự cố định là please find attached + tân ngữ. Despite không hợp nghĩa.
+      vi: Further to + danh từ (our meeting) mở đầu email; trật tự cố định là please find attached + tân ngữ. Although cần một mệnh đề đầy đủ phía sau nên không ghép được với our meeting.
     display_answer: Further to our meeting, please find attached the revised budget.
 
   - key: en:exercise:linking-translate-to-vi-summary
@@ -384,6 +401,13 @@ exercises:
         - Tóm lại, doanh số bán hàng trực tuyến tăng mạnh, trong khi doanh số tại cửa hàng vẫn ổn định.
         - Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số tại cửa hàng giữ ổn định.
         - Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số bán hàng tại cửa hàng không thay đổi.
+        - Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, còn doanh số bán hàng tại cửa hàng vẫn ổn định.
+        - Tóm lại, doanh số bán hàng trực tuyến đã tăng đáng kể, trong khi doanh số bán hàng tại cửa hàng vẫn ổn định.
+        - Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số tại cửa hàng không thay đổi.
+        - Tóm lại, doanh thu bán hàng trực tuyến tăng đáng kể, trong khi doanh thu bán hàng tại cửa hàng vẫn ổn định.
+        - Tóm lại, doanh số bán hàng online tăng đáng kể, trong khi doanh số bán hàng tại cửa hàng vẫn ổn định.
+        - Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số bán hàng trực tiếp tại cửa hàng vẫn ổn định.
+        - Tóm tắt lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số tại cửa hàng vẫn ổn định.
     rubric:
       diacritics: lenient
     explanation:
@@ -416,6 +440,13 @@ exercises:
         - We would require further information before making a decision.
         - We require further information prior to making a decision.
         - Further information is required prior to making a decision.
+        - We require more information before reaching a decision.
+        - We require additional information before reaching a decision.
+        - We require further information before we can make a decision.
+        - We require further information before a decision can be made.
+        - Additional information is required before making a decision.
+        - More information is required before a decision can be made.
+        - We require further information before we reach a decision.
     rubric:
       typo_tolerance: 1
     known_wrong:

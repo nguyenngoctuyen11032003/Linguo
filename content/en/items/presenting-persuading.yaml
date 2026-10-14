@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Thuyết trình, thuyết phục & tranh luận" (C1-C2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: dẫn dắt bài thuyết trình (signposting) ----------------
@@ -68,7 +67,7 @@ items:
           translation:
             vi: "Tôi chia bài nói thành ba phần - vấn đề, giải pháp của chúng tôi và chi phí."
       confusion:
-        vi: Dùng divide … into, không dùng divide … to hay divide … in.
+        vi: Dùng divide … into (divide … in cũng gặp, nhất là divide in half / in two), không dùng divide … to.
 
   - key: en:item:this-brings-me-to
     type: phrase
@@ -504,7 +503,7 @@ items:
     skill_tags: [writing, speaking]
     front:
       text: While it is true that …, …
-      ipa: UK /waɪl ɪt ɪz ˈtruː ðət/ · US /hwaɪl ɪt ɪz ˈtruː ðət/
+      ipa: /waɪl ɪt ɪz ˈtruː ðət/
       pos: mệnh đề nhượng bộ
     back:
       meaning:
@@ -586,7 +585,7 @@ items:
       pos: trạng từ quan điểm
     back:
       meaning:
-        vi: Có thể hình dung được là, không loại trừ khả năng (khả năng thấp hơn possibly).
+        vi: Có thể hình dung được là, không loại trừ khả năng (khả năng thấp, chưa chắc).
       examples:
         - target: The project could conceivably be finished by May, but I wouldn't count on it.
           translation:
@@ -652,7 +651,7 @@ items:
           translation:
             vi: Mọi người nghĩ ứng dụng mới ra, nhưng thật ra nó được ra mắt từ năm 2019.
       confusion:
-        vi: Người Việt hay dùng actually với nghĩa "hiện tại, thực tại" (dễ nhầm với actuel trong tiếng Pháp). Trong tiếng Anh, "hiện nay" là currently hoặc at present.
+        vi: Actually không có nghĩa "hiện nay" - đây là false friend với actuellement (tiếng Pháp), nên bạn nào từng học tiếng Pháp dễ nhầm. Trong tiếng Anh, "hiện nay" là currently hoặc at present.
 
   # ---------------- Bài 4: hỏi đáp & tranh luận ----------------
   - key: en:item:thats-a-fair-question
@@ -831,7 +830,7 @@ items:
           translation:
             vi: Nghiên cứu đưa ra bằng chứng thuyết phục rằng thuốc có hiệu quả.
       confusion:
-        vi: Collocation thường gặp - a compelling argument/case/reason/evidence. Mạnh hơn convincing; không dùng cho người (a compelling person nghĩa là người cuốn hút).
+        vi: Collocation thường gặp - a compelling argument/case/reason/evidence. Mạnh hơn convincing; nói về người (a compelling speaker) thì nghĩa là cuốn hút.
 
   - key: en:item:flawed-reasoning
     type: phrase

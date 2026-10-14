@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:nuance-idiom-review
 order_index: 5
 level: c2
@@ -202,7 +201,7 @@ exercises:
         - "Gợi ý: ô 1 là trạng từ của mild; ô 2 là giới từ trong a bit … a."
     answer:
       blanks:
-        b1: [mildly]
+        b1: [mildly, kindly, politely, gently, lightly, diplomatically, charitably]
         b2: [of]
     known_wrong:
       - answer: mild
@@ -223,28 +222,25 @@ exercises:
     difficulty: 5
     item: en:item:subjunctive-negative
     prompt:
-      template: "It is essential that the council {{b1}} cut corners. The plan will {{b2}} thousands of commuters, and there is no guarantee {{b3}} that the money will be there."
+      template: "It is essential that the council {{b1}} cut corners (giả định cách phủ định). The plan will {{b2}} thousands of commuters, and there is no guarantee {{b3}} that the money will be there."
       blanks:
         - { id: b1, width_hint: 3 }
         - { id: b2, width_hint: 6 }
         - { id: b3, width_hint: 10 }
     answer:
       blanks:
-        b1: [not]
-        b2: [affect]
-        b3: [whatsoever]
+        b1: [not, never]
+        b2: [affect, impact, benefit, help, serve, disrupt, inconvenience, hurt, harm, concern, transport, move, involve, displace, burden]
+        b3: [whatsoever, whatever, at all]
     known_wrong:
       - answer: doesn't
-        feedback_vi: Giả định cách phủ định trong văn trang trọng là not + V - the council not cut.
+        feedback_vi: Doesn't cut dùng được trong văn nói, nhưng đề yêu cầu giả định cách trang trọng - the council not cut.
         error_tag: subjunctive
       - answer: effect
         feedback_vi: Sau will cần động từ affect (ảnh hưởng đến); effect là danh từ.
         error_tag: affect_effect
-      - answer: whatever
-        feedback_vi: Sau no + danh từ, từ nhấn mạnh là whatsoever.
-        error_tag: whatsoever
     explanation:
-      vi: Essential that + S + not + V là giả định cách phủ định. Will affect - động từ. No guarantee whatsoever nhấn mạnh "hoàn toàn không có bảo đảm nào".
+      vi: Essential that + S + not + V là giả định cách phủ định. Will affect - động từ. No guarantee whatsoever (hoặc at all, whatever) nhấn mạnh "hoàn toàn không có bảo đảm nào".
     display_answer: It is essential that the council not cut corners. The plan will affect thousands of commuters, and there is no guarantee whatsoever that the money will be there.
 
   - key: en:exercise:nuance-review-translate-mildly
@@ -273,6 +269,18 @@ exercises:
         - To put it mildly, this quarter's results have been a disappointment.
         - To put it mildly, this quarter's results are a disappointment.
         - To put it mildly, the quarterly results were a disappointment.
+        - To put it mildly, our results this quarter were a disappointment.
+        - To put it mildly, this quarter's results were a big disappointment.
+        - To put it mildly, this quarter's results have been disappointing.
+        - To put it mildly, the results of this quarter were a disappointment.
+        - To put it mildly, the results of this quarter were disappointing.
+        - To put it mildly, the quarterly results were disappointing.
+        - This quarter's results have been, to put it mildly, a disappointment.
+        - The results for this quarter were, to put it mildly, a disappointment.
+        - The results for this quarter were, to put it mildly, disappointing.
+        - This quarter's results were a disappointment, to put it mildly.
+        - The results this quarter were disappointing, to put it mildly.
+        - The results this quarter were a disappointment, to put it mildly.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -308,6 +316,17 @@ exercises:
         - Tuy vậy, chúng ta không thể làm ẩu khâu an toàn.
         - Dù vậy, chúng tôi không thể làm ẩu khâu an toàn.
         - Dù vậy, chúng ta không thể làm ẩu về mặt an toàn.
+        - Dù vậy, chúng ta không thể làm ẩu trong khâu an toàn.
+        - Dù vậy, chúng ta không thể làm ẩu về an toàn.
+        - Dù vậy, chúng ta không thể bớt xén về an toàn.
+        - Dù vậy, chúng ta không thể cắt xén khâu an toàn.
+        - Tuy vậy, chúng ta không thể bớt xén khâu an toàn.
+        - Dù vậy, chúng ta không thể làm qua loa về mặt an toàn.
+        - Dù vậy, chúng ta không thể làm ẩu trong vấn đề an toàn.
+        - Dù vậy, chúng ta không thể bớt xén các khâu an toàn.
+        - Dù như vậy, chúng ta không thể làm ẩu khâu an toàn.
+        - Dù thế nào đi nữa, chúng ta không thể làm ẩu khâu an toàn.
+        - Dù có vậy đi nữa, chúng ta không thể bớt xén khâu an toàn.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -387,6 +406,68 @@ exercises:
         - I did read your proposal and by and large I found it quite sensible.
         - I did read your proposal, and by and large I thought it was quite sensible.
         - I did read your proposal, and by and large I found it rather sensible.
+        - I did read your proposal, and by and large I found it fairly reasonable.
+        - I did read your proposal, and by and large I found it pretty reasonable.
+        - I did read your proposal, and by and large I found it rather reasonable.
+        - I did read your proposal, and by and large I found it reasonably sensible.
+        - I did read your proposal, and by and large I thought it was quite reasonable.
+        - I did read your proposal, and by and large I thought it was fairly sensible.
+        - I did read your proposal, and by and large I thought it was fairly reasonable.
+        - I did read your proposal, and by and large I thought it was pretty sensible.
+        - I did read your proposal, and by and large I thought it was pretty reasonable.
+        - I did read your proposal, and by and large I thought it was rather sensible.
+        - I did read your proposal, and by and large I thought it was rather reasonable.
+        - I did read your proposal, and by and large I thought it was reasonably sensible.
+        - I did read your proposal, and by and large I think it is quite reasonable.
+        - I did read your proposal, and by and large I think it is fairly sensible.
+        - I did read your proposal, and by and large I think it is fairly reasonable.
+        - I did read your proposal, and by and large I think it is pretty sensible.
+        - I did read your proposal, and by and large I think it is pretty reasonable.
+        - I did read your proposal, and by and large I think it is rather sensible.
+        - I did read your proposal, and by and large I think it is rather reasonable.
+        - I did read your proposal, and by and large I think it is reasonably sensible.
+        - I did read your proposal, and by and large I think it's quite reasonable.
+        - I did read your proposal, and by and large I think it's fairly sensible.
+        - I did read your proposal, and by and large I think it's fairly reasonable.
+        - I did read your proposal, and by and large I think it's pretty sensible.
+        - I did read your proposal, and by and large I think it's pretty reasonable.
+        - I did read your proposal, and by and large I think it's rather sensible.
+        - I did read your proposal, and by and large I think it's rather reasonable.
+        - I did read your proposal, and by and large I think it's reasonably sensible.
+        - I did read your proposal, and by and large it seems quite reasonable.
+        - I did read your proposal, and by and large it seems fairly sensible.
+        - I did read your proposal, and by and large it seems fairly reasonable.
+        - I did read your proposal, and by and large it seems pretty sensible.
+        - I did read your proposal, and by and large it seems pretty reasonable.
+        - I did read your proposal, and by and large it seems rather sensible.
+        - I did read your proposal, and by and large it seems rather reasonable.
+        - I did read your proposal, and by and large it seems reasonably sensible.
+        - I did read your proposal, and by and large it seemed quite reasonable to me.
+        - I did read your proposal, and by and large it seemed fairly sensible to me.
+        - I did read your proposal, and by and large it seemed fairly reasonable to me.
+        - I did read your proposal, and by and large it seemed pretty sensible to me.
+        - I did read your proposal, and by and large it seemed pretty reasonable to me.
+        - I did read your proposal, and by and large it seemed rather sensible to me.
+        - I did read your proposal, and by and large it seemed rather reasonable to me.
+        - I did read your proposal, and by and large it seemed reasonably sensible to me.
+        - I did read your proposal, and by and large it seems quite sensible to me.
+        - I did read your proposal, and by and large it seems quite reasonable to me.
+        - I did read your proposal, and by and large it seems fairly sensible to me.
+        - I did read your proposal, and by and large it seems fairly reasonable to me.
+        - I did read your proposal, and by and large it seems pretty sensible to me.
+        - I did read your proposal, and by and large it seems pretty reasonable to me.
+        - I did read your proposal, and by and large it seems rather sensible to me.
+        - I did read your proposal, and by and large it seems rather reasonable to me.
+        - I did read your proposal, and by and large it seems reasonably sensible to me.
+        - I did read your proposal, and by and large I consider it quite sensible.
+        - I did read your proposal, and by and large I consider it quite reasonable.
+        - I did read your proposal, and by and large I consider it fairly sensible.
+        - I did read your proposal, and by and large I consider it fairly reasonable.
+        - I did read your proposal, and by and large I consider it pretty sensible.
+        - I did read your proposal, and by and large I consider it pretty reasonable.
+        - I did read your proposal, and by and large I consider it rather sensible.
+        - I did read your proposal, and by and large I consider it rather reasonable.
+        - I did read your proposal, and by and large I consider it reasonably sensible.
     rubric:
       typo_tolerance: 1
     known_wrong:

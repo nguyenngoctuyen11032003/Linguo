@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:ellipsis-understatement-emphasis
 order_index: 4
 level: c2
@@ -47,7 +46,7 @@ body:
       vi: Để nhấn mạnh, tiếng Anh C2 dùng the very + danh từ (chính là), do/does/did + V trong câu khẳng định (I did tell you!), và whatsoever sau danh từ phủ định (no doubt whatsoever). Tiếng Việt có "chính", "thật mà", "gì cả" làm việc tương tự.
   - type: deep_explain
     text:
-      vi: Với think, believe, expect, suppose, dạng phủ định tự nhiên là I don't think so; với hope và be afraid lại dùng I hope not, I'm afraid not. Do so trang trọng, hay gặp trong quy định (Those who wish to do so may…); trong văn nói thường chỉ dùng do it hoặc tỉnh lược. Emphatic do chỉ dùng ở hiện tại đơn, quá khứ đơn và mệnh lệnh (Do sit down) - các thì khác nhấn mạnh bằng cách nhấn giọng trợ động từ.
+      vi: Với think, believe, dạng phủ định tự nhiên là I don't think so; với hope, be afraid, suppose, expect thường dùng I hope not, I'm afraid not, I suppose not, I expect not. Do so trang trọng, hay gặp trong quy định (Those who wish to do so may…); trong văn nói thường chỉ dùng do it hoặc tỉnh lược. Emphatic do chỉ dùng ở hiện tại đơn, quá khứ đơn và mệnh lệnh (Do sit down) - các thì khác nhấn mạnh bằng cách nhấn giọng trợ động từ.
   - type: example
     target: "\"Will the shop be open on Sunday?\" \"I'm afraid not.\""
     target_lang: en
@@ -182,30 +181,27 @@ exercises:
     difficulty: 4
     item: en:item:emphatic-do
     prompt:
-      template: "I {{b1}} lock the door - I remember checking it twice. And there was no sign {{b2}} of a break-in."
+      template: "I {{b1}} lock the door last night - I remember checking it twice. And there was no sign {{b2}} of a break-in."
       blanks:
         - { id: b1, width_hint: 3 }
         - { id: b2, width_hint: 10 }
       hint_levels:
-        - "Nghĩa: Tôi có khoá cửa thật mà - tôi nhớ đã kiểm tra hai lần. Và hoàn toàn không có dấu hiệu đột nhập nào cả."
+        - "Nghĩa: Tối qua tôi có khoá cửa thật mà - tôi nhớ đã kiểm tra hai lần. Và hoàn toàn không có dấu hiệu đột nhập nào cả."
         - "Gợi ý: ô 1 là trợ động từ quá khứ để nhấn mạnh; ô 2 là trạng từ nhấn mạnh phủ định (w…)."
     answer:
       blanks:
         b1: [did]
-        b2: [whatsoever]
+        b2: [whatsoever, whatever, at all]
     known_wrong:
       - answer: do
-        feedback_vi: Việc khoá cửa đã xảy ra trong quá khứ nên dùng did.
+        feedback_vi: Việc khoá cửa đã xảy ra trong quá khứ (last night) nên dùng did.
         error_tag: emphatic_do
       - answer: was
         feedback_vi: Sau was không dùng động từ nguyên mẫu lock; nhấn mạnh hành động quá khứ đơn bằng did.
         error_tag: emphatic_do
-      - answer: whatever
-        feedback_vi: Sau no + danh từ, từ nhấn mạnh là whatsoever (hoặc at all), không phải whatever.
-        error_tag: whatsoever
     explanation:
-      vi: Did + lock (nguyên mẫu) nhấn mạnh, phản bác nghi ngờ "chưa khoá". No sign whatsoever = hoàn toàn không có dấu hiệu nào.
-    display_answer: I did lock the door - I remember checking it twice. And there was no sign whatsoever of a break-in.
+      vi: Did + lock (nguyên mẫu) nhấn mạnh, phản bác nghi ngờ "chưa khoá". No sign whatsoever (hoặc at all, whatever) = hoàn toàn không có dấu hiệu nào.
+    display_answer: I did lock the door last night - I remember checking it twice. And there was no sign whatsoever of a break-in.
 
   # ---------------- recall ----------------
   - key: en:exercise:ellipsis-fill-substitution
@@ -224,7 +220,7 @@ exercises:
       blanks:
         b1: [do]
         b2: [one]
-        b3: [ones]
+        b3: [ones, laptops, machines, computers, devices, models, units]
     known_wrong:
       - answer: make
         feedback_vi: Cụm thay thế là do so, không phải make so.
@@ -265,6 +261,134 @@ exercises:
         - This is the very problem we warned about from the start.
         - That is the very problem we warned about at the start.
         - That was the very problem we warned about from the start.
+        - That is the very problem we warned about from the start.
+        - That is the very problem we warned about from the beginning.
+        - That is the very problem we warned about from the outset.
+        - That is the very problem we warned about at the start.
+        - That is the very problem that we warned about from the start.
+        - That is the very problem that we warned about from the beginning.
+        - That is the very problem that we warned about from the outset.
+        - That is the very problem that we warned about at the start.
+        - That is the very problem we warned you about from the start.
+        - That is the very problem we warned you about from the beginning.
+        - That is the very problem we warned you about from the outset.
+        - That is the very problem we warned you about at the start.
+        - That is the very problem we had warned about from the start.
+        - That is the very problem we had warned about from the beginning.
+        - That is the very problem we had warned about from the outset.
+        - That is the very problem we had warned about at the start.
+        - That is the very issue we warned about from the start.
+        - That is the very issue we warned about from the beginning.
+        - That is the very issue we warned about from the outset.
+        - That is the very issue we warned about at the start.
+        - That is the very issue that we warned about from the start.
+        - That is the very issue that we warned about from the beginning.
+        - That is the very issue that we warned about from the outset.
+        - That is the very issue that we warned about at the start.
+        - That is the very issue we warned you about from the start.
+        - That is the very issue we warned you about from the beginning.
+        - That is the very issue we warned you about from the outset.
+        - That is the very issue we warned you about at the start.
+        - That is the very issue we had warned about from the start.
+        - That is the very issue we had warned about from the beginning.
+        - That is the very issue we had warned about from the outset.
+        - That is the very issue we had warned about at the start.
+        - That's the very problem we warned about from the start.
+        - That's the very problem we warned about from the beginning.
+        - That's the very problem we warned about from the outset.
+        - That's the very problem we warned about at the start.
+        - That's the very problem that we warned about from the start.
+        - That's the very problem that we warned about from the beginning.
+        - That's the very problem that we warned about from the outset.
+        - That's the very problem that we warned about at the start.
+        - That's the very problem we warned you about from the start.
+        - That's the very problem we warned you about from the beginning.
+        - That's the very problem we warned you about from the outset.
+        - That's the very problem we warned you about at the start.
+        - That's the very problem we had warned about from the start.
+        - That's the very problem we had warned about from the beginning.
+        - That's the very problem we had warned about from the outset.
+        - That's the very problem we had warned about at the start.
+        - That's the very issue we warned about from the start.
+        - That's the very issue we warned about from the beginning.
+        - That's the very issue we warned about from the outset.
+        - That's the very issue we warned about at the start.
+        - That's the very issue that we warned about from the start.
+        - That's the very issue that we warned about from the beginning.
+        - That's the very issue that we warned about from the outset.
+        - That's the very issue that we warned about at the start.
+        - That's the very issue we warned you about from the start.
+        - That's the very issue we warned you about from the beginning.
+        - That's the very issue we warned you about from the outset.
+        - That's the very issue we warned you about at the start.
+        - That's the very issue we had warned about from the start.
+        - That's the very issue we had warned about from the beginning.
+        - That's the very issue we had warned about from the outset.
+        - That's the very issue we had warned about at the start.
+        - This is the very problem we warned about from the start.
+        - This is the very problem we warned about from the beginning.
+        - This is the very problem we warned about from the outset.
+        - This is the very problem we warned about at the start.
+        - This is the very problem that we warned about from the start.
+        - This is the very problem that we warned about from the beginning.
+        - This is the very problem that we warned about from the outset.
+        - This is the very problem that we warned about at the start.
+        - This is the very problem we warned you about from the start.
+        - This is the very problem we warned you about from the beginning.
+        - This is the very problem we warned you about from the outset.
+        - This is the very problem we warned you about at the start.
+        - This is the very problem we had warned about from the start.
+        - This is the very problem we had warned about from the beginning.
+        - This is the very problem we had warned about from the outset.
+        - This is the very problem we had warned about at the start.
+        - This is the very issue we warned about from the start.
+        - This is the very issue we warned about from the beginning.
+        - This is the very issue we warned about from the outset.
+        - This is the very issue we warned about at the start.
+        - This is the very issue that we warned about from the start.
+        - This is the very issue that we warned about from the beginning.
+        - This is the very issue that we warned about from the outset.
+        - This is the very issue that we warned about at the start.
+        - This is the very issue we warned you about from the start.
+        - This is the very issue we warned you about from the beginning.
+        - This is the very issue we warned you about from the outset.
+        - This is the very issue we warned you about at the start.
+        - This is the very issue we had warned about from the start.
+        - This is the very issue we had warned about from the beginning.
+        - This is the very issue we had warned about from the outset.
+        - This is the very issue we had warned about at the start.
+        - That was the very problem we warned about from the start.
+        - That was the very problem we warned about from the beginning.
+        - That was the very problem we warned about from the outset.
+        - That was the very problem we warned about at the start.
+        - That was the very problem that we warned about from the start.
+        - That was the very problem that we warned about from the beginning.
+        - That was the very problem that we warned about from the outset.
+        - That was the very problem that we warned about at the start.
+        - That was the very problem we warned you about from the start.
+        - That was the very problem we warned you about from the beginning.
+        - That was the very problem we warned you about from the outset.
+        - That was the very problem we warned you about at the start.
+        - That was the very problem we had warned about from the start.
+        - That was the very problem we had warned about from the beginning.
+        - That was the very problem we had warned about from the outset.
+        - That was the very problem we had warned about at the start.
+        - That was the very issue we warned about from the start.
+        - That was the very issue we warned about from the beginning.
+        - That was the very issue we warned about from the outset.
+        - That was the very issue we warned about at the start.
+        - That was the very issue that we warned about from the start.
+        - That was the very issue that we warned about from the beginning.
+        - That was the very issue that we warned about from the outset.
+        - That was the very issue that we warned about at the start.
+        - That was the very issue we warned you about from the start.
+        - That was the very issue we warned you about from the beginning.
+        - That was the very issue we warned you about from the outset.
+        - That was the very issue we warned you about at the start.
+        - That was the very issue we had warned about from the start.
+        - That was the very issue we had warned about from the beginning.
+        - That was the very issue we had warned about from the outset.
+        - That was the very issue we had warned about at the start.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -298,6 +422,16 @@ exercises:
         - Làm việc đến nửa đêm mỗi ngày hoàn toàn không lý tưởng.
         - Ngày nào cũng làm việc tới nửa đêm thì chẳng lý tưởng gì cả.
         - Ngày nào cũng làm việc đến nửa đêm thì chẳng hay ho gì.
+        - Làm việc đến nửa đêm hằng ngày thì chẳng lý tưởng chút nào.
+        - Việc ngày nào cũng làm việc đến nửa đêm chẳng lý tưởng chút nào.
+        - Ngày nào cũng làm việc đến tận nửa đêm thì chẳng lý tưởng chút nào.
+        - Làm việc đến tận nửa đêm mỗi ngày thì chẳng lý tưởng chút nào.
+        - Ngày nào cũng làm việc đến nửa đêm thì khó mà lý tưởng được.
+        - Ngày nào cũng làm việc đến nửa đêm thì chẳng hề lý tưởng.
+        - Ngày nào cũng làm việc đến nửa đêm thì thật không lý tưởng.
+        - Làm việc đến nửa đêm mỗi ngày thì không lý tưởng chút nào.
+        - Làm việc đến nửa đêm mỗi ngày thì chẳng lý tưởng gì cả.
+        - Làm việc đến nửa đêm mỗi ngày chẳng lý tưởng chút nào.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -325,15 +459,16 @@ exercises:
         - { id: e-before, text: before the deadline }
         - { id: e-she2, text: she }
         - { id: e-promised, text: She promised }
-        - { id: e-finished, text: finished }
+        - { id: e-finishing, text: finishing }
         - { id: e-and, text: and }
         - { id: e-finish, text: to finish }
         - { id: e-project, text: the project }
     answer:
       orders:
         - [e-promised, e-finish, e-project, e-before, e-and, e-she2, e-did]
+        - [e-promised, e-finish, e-project, e-before, e-and, e-did]
     explanation:
-      vi: Vế sau chỉ cần trợ động từ did, thay cho finished the project before the deadline - đó là tỉnh lược. Promise + to V nên dùng to finish; finished là thừa.
+      vi: Vế sau chỉ cần trợ động từ did, thay cho finished the project before the deadline - đó là tỉnh lược. Promise + to V nên dùng to finish; finishing không hợp sau promised. Bỏ she ở vế sau (…, and did) cũng đúng.
     display_answer: She promised to finish the project before the deadline, and she did.
 
   - key: en:exercise:ellipsis-mcq-irony
@@ -383,6 +518,66 @@ exercises:
         - I did send him an email, but he never responded.
         - I did send him the email, but he never responded.
         - I did send him the email but he never replied.
+        - I did send him the email, but he never replied.
+        - I did send him the email, but he didn't reply.
+        - I did send him the email, but he did not reply.
+        - I did send him the email, but he has never replied.
+        - I did send him the email, but he hasn't replied.
+        - I did send him the email, but he still hasn't replied.
+        - I did send him the email, but he never responded.
+        - I did send him the email, but he never answered.
+        - I did send him the email, but he never wrote back.
+        - I did send him the email, but he didn't respond.
+        - I did send him the email, but he never got back to me.
+        - I did send him the email, but he didn't reply at all.
+        - I did send him an email, but he never replied.
+        - I did send him an email, but he didn't reply.
+        - I did send him an email, but he did not reply.
+        - I did send him an email, but he has never replied.
+        - I did send him an email, but he hasn't replied.
+        - I did send him an email, but he still hasn't replied.
+        - I did send him an email, but he never responded.
+        - I did send him an email, but he never answered.
+        - I did send him an email, but he never wrote back.
+        - I did send him an email, but he didn't respond.
+        - I did send him an email, but he never got back to me.
+        - I did send him an email, but he didn't reply at all.
+        - I did send the email to him, but he never replied.
+        - I did send the email to him, but he didn't reply.
+        - I did send the email to him, but he did not reply.
+        - I did send the email to him, but he has never replied.
+        - I did send the email to him, but he hasn't replied.
+        - I did send the email to him, but he still hasn't replied.
+        - I did send the email to him, but he never responded.
+        - I did send the email to him, but he never answered.
+        - I did send the email to him, but he never wrote back.
+        - I did send the email to him, but he didn't respond.
+        - I did send the email to him, but he never got back to me.
+        - I did send the email to him, but he didn't reply at all.
+        - I did send an email to him, but he never replied.
+        - I did send an email to him, but he didn't reply.
+        - I did send an email to him, but he did not reply.
+        - I did send an email to him, but he has never replied.
+        - I did send an email to him, but he hasn't replied.
+        - I did send an email to him, but he still hasn't replied.
+        - I did send an email to him, but he never responded.
+        - I did send an email to him, but he never answered.
+        - I did send an email to him, but he never wrote back.
+        - I did send an email to him, but he didn't respond.
+        - I did send an email to him, but he never got back to me.
+        - I did send an email to him, but he didn't reply at all.
+        - I did email him, but he never replied.
+        - I did email him, but he didn't reply.
+        - I did email him, but he did not reply.
+        - I did email him, but he has never replied.
+        - I did email him, but he hasn't replied.
+        - I did email him, but he still hasn't replied.
+        - I did email him, but he never responded.
+        - I did email him, but he never answered.
+        - I did email him, but he never wrote back.
+        - I did email him, but he didn't respond.
+        - I did email him, but he never got back to me.
+        - I did email him, but he didn't reply at all.
     rubric:
       typo_tolerance: 1
     known_wrong:

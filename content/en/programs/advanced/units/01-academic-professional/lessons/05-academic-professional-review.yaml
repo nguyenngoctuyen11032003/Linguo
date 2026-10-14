@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:academic-professional-review
 order_index: 5
 level: c1
@@ -178,9 +177,9 @@ exercises:
         - { id: b3, width_hint: 4 }
     answer:
       blanks:
-        b1: [Despite, In spite of, Notwithstanding]
+        b1: [Despite, In spite of, Notwithstanding, Regardless of, Irrespective of, Even with]
         b2: [did]
-        b3: [With]
+        b3: [With, In]
     known_wrong:
       - answer: Despite of
         feedback_vi: Không có despite of - chỉ despite hoặc in spite of.
@@ -192,7 +191,7 @@ exercises:
         feedback_vi: Câu ở quá khứ (reduced) nên mượn did.
         error_tag: inversion
     explanation:
-      vi: The high cost là danh từ nên dùng despite. Not only đứng đầu câu ở quá khứ đơn nên mượn did - Not only did it save. With regard to là cụm cố định, không có s.
+      vi: The high cost là danh từ nên dùng despite. Not only đứng đầu câu ở quá khứ đơn nên mượn did - Not only did it save. With regard to (hoặc in regard to) là cụm cố định, không có s.
     display_answer: Despite the high cost, the system was approved. Not only did it save time, but it also reduced errors. With regard to training, a short course will be offered.
 
   - key: en:exercise:ap-review-translate-research
@@ -223,6 +222,17 @@ exercises:
         - Recent research suggests that remote work may boost productivity.
         - Recent research suggests that remote work may improve productivity.
         - Recent studies suggest that remote work may improve productivity.
+        - Recent studies suggest that remote work might increase productivity.
+        - Recent research suggests that remote work might increase productivity.
+        - Recent research suggests that remote work could increase productivity.
+        - Recent research indicates that remote work can increase productivity.
+        - Recent studies indicate that remote work may increase productivity.
+        - Recent research has shown that remote work may increase productivity.
+        - Recent studies have shown that remote work can increase productivity.
+        - Recent research suggests that working remotely can increase productivity.
+        - Recent research suggests that remote working can increase productivity.
+        - Recent studies suggest that working remotely may increase productivity.
+        - Recent studies suggest that remote working may increase productivity.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -232,6 +242,9 @@ exercises:
       - answer: Recent researches show that remote work can increase productivity.
         feedback_vi: Research không đếm được - dùng recent research shows hoặc recent studies show.
         error_tag: research_countable
+      - answer: Recent studies suggests that remote work may increase productivity.
+        feedback_vi: Studies là số nhiều nên động từ là suggest, không thêm -s.
+        error_tag: subject_verb_agreement
       - answer: Recent research suggest that remote work may increase productivity.
         feedback_vi: Research không đếm được nên đi với động từ số ít - suggests.
         error_tag: subject_verb_agreement
@@ -266,6 +279,14 @@ exercises:
         - Under no circumstances should employees share customers' data.
         - Under no circumstances are staff allowed to share customer data.
         - Under no circumstances should employees share any customer data.
+        - Under no circumstances may staff share customer data.
+        - Under no circumstances should staff share client data.
+        - Under no circumstances should employees share customer information.
+        - Under no circumstances should employees ever share customer data.
+        - Under no circumstances should employees be allowed to share customer data.
+        - Under no circumstances are employees to share customer data.
+        - Under no circumstances can staff share customer data.
+        - Under no circumstances must staff share customer data.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -323,8 +344,9 @@ exercises:
     answer:
       orders:
         - [s-should, s-you, s-require, s-documents, s-please, s-contact]
+        - [s-if, s-you, s-require, s-documents, s-please, s-contact]
     explanation:
-      vi: Should you require… là đảo ngữ trang trọng của If you require…. Khi đã đảo thì không dùng if.
+      vi: Should you require… là đảo ngữ trang trọng của If you require… (cả hai đều đúng). Khi đã đảo bằng Should thì không dùng thêm if.
     display_answer: Should you require further documents, please contact me.
 
   - key: en:exercise:ap-review-translate-to-vi-summary
@@ -340,6 +362,11 @@ exercises:
     answer:
       accepted:
         - Kết quả cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.
+        - Kết quả cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho những yêu cầu phức tạp.
+        - Kết quả cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho các thắc mắc phức tạp.
+        - Kết quả cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ cho các yêu cầu phức tạp.
+        - Kết quả cho thấy khách hàng coi trọng tốc độ. Vì vậy, đường dây điện thoại sẽ chỉ được duy trì cho các yêu cầu phức tạp.
+        - Kết quả cho thấy khách hàng coi trọng tốc độ. Do vậy, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.
         - Kết quả nghiên cứu cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.
         - Kết quả cho thấy khách hàng coi trọng tốc độ. Vì vậy, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.
         - Kết quả cho thấy khách hàng đề cao tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.
@@ -384,12 +411,142 @@ exercises:
         - In summary, online sales increased significantly, whereas store sales decreased slightly.
         - In summary, online sales grew significantly, whereas in-store sales fell slightly.
         - In summary, online sales increased significantly, whereas in-store sales declined slightly.
+        - In summary, online sales increased significantly, whereas sales in stores fell slightly.
+        - In summary, online sales increased significantly, whereas sales in stores declined slightly.
+        - In summary, online sales increased significantly, while sales in stores decreased slightly.
+        - In summary, online sales increased significantly, while in-store sales fell slightly.
+        - In summary, online sales increased significantly, while sales in stores fell slightly.
+        - In summary, online sales increased significantly, while in-store sales declined slightly.
+        - In summary, online sales increased significantly, while sales in stores declined slightly.
+        - In summary, online sales increased considerably, whereas sales in stores decreased slightly.
+        - In summary, online sales increased considerably, whereas in-store sales fell slightly.
+        - In summary, online sales increased considerably, whereas sales in stores fell slightly.
+        - In summary, online sales increased considerably, whereas in-store sales declined slightly.
+        - In summary, online sales increased considerably, whereas sales in stores declined slightly.
+        - In summary, online sales increased considerably, while in-store sales decreased slightly.
+        - In summary, online sales increased considerably, while sales in stores decreased slightly.
+        - In summary, online sales increased considerably, while in-store sales fell slightly.
+        - In summary, online sales increased considerably, while sales in stores fell slightly.
+        - In summary, online sales increased considerably, while in-store sales declined slightly.
+        - In summary, online sales increased considerably, while sales in stores declined slightly.
+        - In summary, online sales rose significantly, whereas in-store sales decreased slightly.
+        - In summary, online sales rose significantly, whereas sales in stores decreased slightly.
+        - In summary, online sales rose significantly, whereas sales in stores fell slightly.
+        - In summary, online sales rose significantly, whereas in-store sales declined slightly.
+        - In summary, online sales rose significantly, whereas sales in stores declined slightly.
+        - In summary, online sales rose significantly, while in-store sales decreased slightly.
+        - In summary, online sales rose significantly, while sales in stores decreased slightly.
+        - In summary, online sales rose significantly, while sales in stores fell slightly.
+        - In summary, online sales rose significantly, while in-store sales declined slightly.
+        - In summary, online sales rose significantly, while sales in stores declined slightly.
+        - In summary, online sales rose considerably, whereas in-store sales decreased slightly.
+        - In summary, online sales rose considerably, whereas sales in stores decreased slightly.
+        - In summary, online sales rose considerably, whereas in-store sales fell slightly.
+        - In summary, online sales rose considerably, whereas sales in stores fell slightly.
+        - In summary, online sales rose considerably, whereas sales in stores declined slightly.
+        - In summary, online sales rose considerably, while in-store sales decreased slightly.
+        - In summary, online sales rose considerably, while sales in stores decreased slightly.
+        - In summary, online sales rose considerably, while in-store sales fell slightly.
+        - In summary, online sales rose considerably, while sales in stores fell slightly.
+        - In summary, online sales rose considerably, while in-store sales declined slightly.
+        - In summary, online sales rose considerably, while sales in stores declined slightly.
+        - To summarise, online sales increased significantly, whereas sales in stores decreased slightly.
+        - To summarise, online sales increased significantly, whereas in-store sales fell slightly.
+        - To summarise, online sales increased significantly, whereas sales in stores fell slightly.
+        - To summarise, online sales increased significantly, whereas in-store sales declined slightly.
+        - To summarise, online sales increased significantly, whereas sales in stores declined slightly.
+        - To summarise, online sales increased significantly, while in-store sales decreased slightly.
+        - To summarise, online sales increased significantly, while sales in stores decreased slightly.
+        - To summarise, online sales increased significantly, while in-store sales fell slightly.
+        - To summarise, online sales increased significantly, while sales in stores fell slightly.
+        - To summarise, online sales increased significantly, while in-store sales declined slightly.
+        - To summarise, online sales increased significantly, while sales in stores declined slightly.
+        - To summarise, online sales increased considerably, whereas in-store sales decreased slightly.
+        - To summarise, online sales increased considerably, whereas sales in stores decreased slightly.
+        - To summarise, online sales increased considerably, whereas in-store sales fell slightly.
+        - To summarise, online sales increased considerably, whereas sales in stores fell slightly.
+        - To summarise, online sales increased considerably, whereas in-store sales declined slightly.
+        - To summarise, online sales increased considerably, whereas sales in stores declined slightly.
+        - To summarise, online sales increased considerably, while in-store sales decreased slightly.
+        - To summarise, online sales increased considerably, while sales in stores decreased slightly.
+        - To summarise, online sales increased considerably, while in-store sales fell slightly.
+        - To summarise, online sales increased considerably, while sales in stores fell slightly.
+        - To summarise, online sales increased considerably, while in-store sales declined slightly.
+        - To summarise, online sales increased considerably, while sales in stores declined slightly.
+        - To summarise, online sales rose significantly, whereas in-store sales decreased slightly.
+        - To summarise, online sales rose significantly, whereas sales in stores decreased slightly.
+        - To summarise, online sales rose significantly, whereas in-store sales fell slightly.
+        - To summarise, online sales rose significantly, whereas sales in stores fell slightly.
+        - To summarise, online sales rose significantly, whereas in-store sales declined slightly.
+        - To summarise, online sales rose significantly, whereas sales in stores declined slightly.
+        - To summarise, online sales rose significantly, while in-store sales decreased slightly.
+        - To summarise, online sales rose significantly, while sales in stores decreased slightly.
+        - To summarise, online sales rose significantly, while in-store sales fell slightly.
+        - To summarise, online sales rose significantly, while sales in stores fell slightly.
+        - To summarise, online sales rose significantly, while in-store sales declined slightly.
+        - To summarise, online sales rose significantly, while sales in stores declined slightly.
+        - To summarise, online sales rose considerably, whereas in-store sales decreased slightly.
+        - To summarise, online sales rose considerably, whereas sales in stores decreased slightly.
+        - To summarise, online sales rose considerably, whereas in-store sales fell slightly.
+        - To summarise, online sales rose considerably, whereas sales in stores fell slightly.
+        - To summarise, online sales rose considerably, whereas in-store sales declined slightly.
+        - To summarise, online sales rose considerably, whereas sales in stores declined slightly.
+        - To summarise, online sales rose considerably, while in-store sales decreased slightly.
+        - To summarise, online sales rose considerably, while sales in stores decreased slightly.
+        - To summarise, online sales rose considerably, while in-store sales fell slightly.
+        - To summarise, online sales rose considerably, while sales in stores fell slightly.
+        - To summarise, online sales rose considerably, while in-store sales declined slightly.
+        - To summarise, online sales rose considerably, while sales in stores declined slightly.
+        - To summarize, online sales increased significantly, whereas sales in stores decreased slightly.
+        - To summarize, online sales increased significantly, whereas in-store sales fell slightly.
+        - To summarize, online sales increased significantly, whereas sales in stores fell slightly.
+        - To summarize, online sales increased significantly, whereas in-store sales declined slightly.
+        - To summarize, online sales increased significantly, whereas sales in stores declined slightly.
+        - To summarize, online sales increased significantly, while in-store sales decreased slightly.
+        - To summarize, online sales increased significantly, while sales in stores decreased slightly.
+        - To summarize, online sales increased significantly, while in-store sales fell slightly.
+        - To summarize, online sales increased significantly, while sales in stores fell slightly.
+        - To summarize, online sales increased significantly, while in-store sales declined slightly.
+        - To summarize, online sales increased significantly, while sales in stores declined slightly.
+        - To summarize, online sales increased considerably, whereas in-store sales decreased slightly.
+        - To summarize, online sales increased considerably, whereas sales in stores decreased slightly.
+        - To summarize, online sales increased considerably, whereas in-store sales fell slightly.
+        - To summarize, online sales increased considerably, whereas sales in stores fell slightly.
+        - To summarize, online sales increased considerably, whereas in-store sales declined slightly.
+        - To summarize, online sales increased considerably, whereas sales in stores declined slightly.
+        - To summarize, online sales increased considerably, while in-store sales decreased slightly.
+        - To summarize, online sales increased considerably, while sales in stores decreased slightly.
+        - To summarize, online sales increased considerably, while in-store sales fell slightly.
+        - To summarize, online sales increased considerably, while sales in stores fell slightly.
+        - To summarize, online sales increased considerably, while in-store sales declined slightly.
+        - To summarize, online sales increased considerably, while sales in stores declined slightly.
+        - To summarize, online sales rose significantly, whereas in-store sales decreased slightly.
+        - To summarize, online sales rose significantly, whereas sales in stores decreased slightly.
+        - To summarize, online sales rose significantly, whereas in-store sales fell slightly.
+        - To summarize, online sales rose significantly, whereas sales in stores fell slightly.
+        - To summarize, online sales rose significantly, whereas in-store sales declined slightly.
+        - To summarize, online sales rose significantly, whereas sales in stores declined slightly.
+        - To summarize, online sales rose significantly, while in-store sales decreased slightly.
+        - To summarize, online sales rose significantly, while sales in stores decreased slightly.
+        - To summarize, online sales rose significantly, while in-store sales fell slightly.
+        - To summarize, online sales rose significantly, while sales in stores fell slightly.
+        - To summarize, online sales rose significantly, while in-store sales declined slightly.
+        - To summarize, online sales rose significantly, while sales in stores declined slightly.
+        - To summarize, online sales rose considerably, whereas in-store sales decreased slightly.
+        - To summarize, online sales rose considerably, whereas sales in stores decreased slightly.
+        - To summarize, online sales rose considerably, whereas in-store sales fell slightly.
+        - To summarize, online sales rose considerably, whereas sales in stores fell slightly.
+        - To summarize, online sales rose considerably, whereas in-store sales declined slightly.
+        - To summarize, online sales rose considerably, whereas sales in stores declined slightly.
+        - To summarize, online sales rose considerably, while in-store sales decreased slightly.
+        - To summarize, online sales rose considerably, while sales in stores decreased slightly.
+        - To summarize, online sales rose considerably, while in-store sales fell slightly.
+        - To summarize, online sales rose considerably, while sales in stores fell slightly.
+        - To summarize, online sales rose considerably, while in-store sales declined slightly.
+        - To summarize, online sales rose considerably, while sales in stores declined slightly.
     rubric:
       typo_tolerance: 1
     known_wrong:
-      - answer: In summary, online sales increased very much, whereas in-store sales decreased a little.
-        feedback_vi: Increased very much nghe như văn nói; dùng increased significantly/considerably.
-        error_tag: overuse_very
       - answer: In summary, there was a significant increase of online sales, whereas in-store sales decreased slightly.
         feedback_vi: An increase in + cái tăng (online sales); of dùng cho mức tăng (an increase of 10%).
         error_tag: preposition

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:subjunctive-formal
 order_index: 3
 level: c2
@@ -170,7 +169,7 @@ exercises:
     difficulty: 4
     item: en:item:subjunctive-negative
     prompt:
-      template: "The museum requests that visitors {{b1}} {{b2}} photographs of the paintings."
+      template: "The museum requests that visitors {{b1}} {{b2}} photographs of the paintings. (dùng giả định cách trang trọng)"
       blanks:
         - { id: b1, width_hint: 3 }
         - { id: b2, width_hint: 4 }
@@ -179,11 +178,11 @@ exercises:
         - "Gợi ý: giả định cách phủ định = not + động từ nguyên mẫu (không dùng do)."
     answer:
       blanks:
-        b1: [not]
+        b1: [not, never]
         b2: [take]
     known_wrong:
       - answer: don't
-        feedback_vi: Giả định cách phủ định không dùng do - viết not take.
+        feedback_vi: Don't take dùng được trong văn nói, nhưng đề yêu cầu giả định cách trang trọng - viết not take.
         error_tag: subjunctive
       - answer: takes
         feedback_vi: Giả định cách dùng nguyên mẫu - take.
@@ -249,6 +248,22 @@ exercises:
         - I insisted that she should leave immediately.
         - I insist that she leaves immediately.
         - I insist that she leaves at once.
+        - I insist that she leave straight away.
+        - I insist that she leave this minute.
+        - I insist that she leaves right away.
+        - I insist that she should leave right away.
+        - I insist that she should leave right now.
+        - I insist that she go immediately.
+        - I insist that she go at once.
+        - I insist she leave at once.
+        - I insist she leaves immediately.
+        - I insist she leave right away.
+        - I insist on her leaving immediately.
+        - I insist on her leaving at once.
+        - I insist upon her leaving immediately.
+        - I insisted that she leave right away.
+        - I insisted that she leave straight away.
+        - I insisted that she leaves immediately.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -285,6 +300,15 @@ exercises:
         - Dù thế nào đi nữa, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.
         - Dù có chuyện gì xảy ra, chúng tôi vẫn sẽ khai trương chi nhánh mới vào mùa xuân tới.
         - Bất chấp mọi chuyện, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.
+        - Dù có chuyện gì xảy ra đi nữa, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.
+        - Dù thế nào, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.
+        - Bất kể điều gì xảy ra, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.
+        - Dù có chuyện gì, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.
+        - Dù có xảy ra chuyện gì, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.
+        - Dù có chuyện gì xảy ra, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân năm sau.
+        - Dù có chuyện gì xảy ra, chúng tôi sẽ mở chi nhánh mới vào mùa xuân năm sau.
+        - Dù có chuyện gì xảy ra, chúng tôi vẫn sẽ khai trương chi nhánh mới vào mùa xuân năm sau.
+        - Dù có chuyện gì xảy ra, chúng ta vẫn sẽ mở chi nhánh mới vào mùa xuân tới.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -307,7 +331,7 @@ exercises:
       tokens:
         - { id: s-funding, text: further funding }
         - { id: s-recommended, text: The committee recommended }
-        - { id: s-is, text: is }
+        - { id: s-being, text: being }
         - { id: s-be, text: be }
         - { id: s-project, text: the project }
         - { id: s-until, text: until }
@@ -318,7 +342,7 @@ exercises:
       orders:
         - [s-recommended, s-that, s-project, s-be, s-postponed, s-until, s-funding, s-secured]
     explanation:
-      vi: Sau recommended that, văn trang trọng dùng giả định cách - the project be postponed (không lùi thì, không dùng is vì động từ chính đã ở quá khứ). Mệnh đề until chỉ thời gian vẫn chia bình thường - further funding is secured.
+      vi: Sau recommended that, văn trang trọng dùng giả định cách - the project be postponed (động từ nguyên mẫu, không chia, không thêm being). Mệnh đề until chỉ thời gian vẫn chia bình thường - further funding is secured.
     display_answer: The committee recommended that the project be postponed until further funding is secured.
 
   - key: en:exercise:subjunctive-translate-vital
@@ -348,15 +372,21 @@ exercises:
         - It is vital that all employees receive training before using the new system.
         - It is vital that every employee is trained before using the new system.
         - It is vital that all employees are trained before using the new system.
+        - It is vital that all staff members be trained before using the new system.
+        - It is vital that every member of staff be trained before they use the new system.
+        - It is vital that all employees be trained before they start using the new system.
+        - It is vital that every employee be trained before starting to use the new system.
+        - It is vital that each employee receive training before using the new system.
+        - It is vital that all staff are trained before using the new system.
+        - It is vital that every member of staff is trained before using the new system.
+        - It is vital that every employee is trained before they use the new system.
+        - It is vital that every employee must be trained before using the new system.
     rubric:
       typo_tolerance: 1
     known_wrong:
       - answer: It is vital that every employee to be trained before using the new system.
         feedback_vi: Sau that cần mệnh đề có động từ - every employee be trained, không có to.
         error_tag: verb_pattern
-      - answer: It is vital that every employee must be trained before using the new system.
-        feedback_vi: Vital đã chứa ý bắt buộc; không thêm must. Dùng be trained hoặc should be trained.
-        error_tag: subjunctive
       - answer: It is vital that every employee was trained before using the new system.
         feedback_vi: Was là quá khứ; yêu cầu cho tương lai dùng be trained.
         error_tag: subjunctive

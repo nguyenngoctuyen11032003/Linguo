@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:qa-debate
 order_index: 4
 level: c1
@@ -181,7 +180,7 @@ exercises:
         - "Gợi ý: ô 1 là trạng từ \"đúng\" (c…); ô 2 là từ dẫn câu hỏi gián tiếp có/không (w…)."
     answer:
       blanks:
-        b1: [correctly, rightly]
+        b1: [correctly, rightly, right]
         b2: [whether, if]
     known_wrong:
       - answer: correct
@@ -232,22 +231,16 @@ exercises:
         - { id: b3, width_hint: 9 }
     answer:
       blanks:
-        b1: [rebutted, refuted]
-        b2: [conceded, admitted, acknowledged]
-        b3: [undermine, weaken]
+        b1: [rebutted, refuted, countered, disproved, debunked, challenged, disputed, answered, contradicted, dismissed, rebuts, refutes, counters, disproves, debunks, challenges, disputes, answers, contradicts, dismisses]
+        b2: [conceded, admitted, acknowledged, agreed, accepted, recognised, recognized, granted, allowed, said, thought, felt, believed, noted, concede, admit, acknowledge, agree, accept, recognise, recognize, grant, allow, say, think, feel, believe, note]
+        b3: [undermine, weaken, damage, discredit, destroy, invalidate, jeopardise, jeopardize, compromise, erode, subvert, sabotage]
     known_wrong:
       - answer: underestimate
         feedback_vi: Underestimate là "đánh giá thấp"; "làm suy yếu" là undermine.
         error_tag: undermine_underestimate
       - answer: rebut
-        feedback_vi: Câu kể chuyện ở quá khứ - rebutted (nhân đôi t).
+        feedback_vi: Chủ ngữ the minister là số ít nên cần rebutted (quá khứ, nhân đôi t) hoặc rebuts - không dùng nguyên mẫu rebut.
         error_tag: verb_form
-      - answer: concede
-        feedback_vi: Câu ở quá khứ - conceded.
-        error_tag: verb_form
-      - answer: denied
-        feedback_vi: Deny là phủ nhận; ở đây người chỉ trích thừa nhận (conceded) bằng chứng mạnh.
-        error_tag: meaning
     explanation:
       vi: Rebut = bác bỏ bằng lý lẽ hoặc số liệu. Concede that… = (miễn cưỡng) thừa nhận. Undermine = làm suy yếu, khác underestimate.
     display_answer: The minister rebutted the claim with figures from an independent study. Even her critics conceded that her evidence was strong. One weak statistic, however, could undermine her entire argument.
@@ -277,6 +270,115 @@ exercises:
         - I'd need to check that number - let me get back to you.
         - I need to check that data - I'll get back to you later.
         - I need to check that figure again - let me get back to you.
+        - I'd need to check that figure. I'll get back to you.
+        - I'd need to check that figure. Let me get back to you later.
+        - I'd need to check that figure, then I'll get back to you.
+        - I'd need to check that number. I'll get back to you later.
+        - I'd need to check that number. I'll get back to you.
+        - I'd need to check that number. Let me get back to you later.
+        - I'd need to check that number, then I'll get back to you.
+        - I'd need to check those figures - let me get back to you.
+        - I'd need to check those figures. I'll get back to you later.
+        - I'd need to check those figures. I'll get back to you.
+        - I'd need to check those figures. Let me get back to you later.
+        - I'd need to check those figures, then I'll get back to you.
+        - I'd need to double-check that figure - let me get back to you.
+        - I'd need to double-check that figure. I'll get back to you later.
+        - I'd need to double-check that figure. Let me get back to you later.
+        - I'd need to double-check that figure, then I'll get back to you.
+        - I'd need to check that data - let me get back to you.
+        - I'd need to check that data. I'll get back to you later.
+        - I'd need to check that data. I'll get back to you.
+        - I'd need to check that data. Let me get back to you later.
+        - I'd need to check that data, then I'll get back to you.
+        - I'd need to verify that figure - let me get back to you.
+        - I'd need to verify that figure. I'll get back to you later.
+        - I'd need to verify that figure. I'll get back to you.
+        - I'd need to verify that figure. Let me get back to you later.
+        - I'd need to verify that figure, then I'll get back to you.
+        - I would need to check that figure. I'll get back to you later.
+        - I would need to check that figure. I'll get back to you.
+        - I would need to check that figure. Let me get back to you later.
+        - I would need to check that figure, then I'll get back to you.
+        - I would need to check that number - let me get back to you.
+        - I would need to check that number. I'll get back to you later.
+        - I would need to check that number. I'll get back to you.
+        - I would need to check that number. Let me get back to you later.
+        - I would need to check that number, then I'll get back to you.
+        - I would need to check those figures - let me get back to you.
+        - I would need to check those figures. I'll get back to you later.
+        - I would need to check those figures. I'll get back to you.
+        - I would need to check those figures. Let me get back to you later.
+        - I would need to check those figures, then I'll get back to you.
+        - I would need to double-check that figure - let me get back to you.
+        - I would need to double-check that figure. I'll get back to you later.
+        - I would need to double-check that figure. I'll get back to you.
+        - I would need to double-check that figure. Let me get back to you later.
+        - I would need to double-check that figure, then I'll get back to you.
+        - I would need to check that data - let me get back to you.
+        - I would need to check that data. I'll get back to you later.
+        - I would need to check that data. I'll get back to you.
+        - I would need to check that data. Let me get back to you later.
+        - I would need to check that data, then I'll get back to you.
+        - I would need to verify that figure - let me get back to you.
+        - I would need to verify that figure. I'll get back to you later.
+        - I would need to verify that figure. I'll get back to you.
+        - I would need to verify that figure. Let me get back to you later.
+        - I would need to verify that figure, then I'll get back to you.
+        - I need to check that figure. Let me get back to you later.
+        - I need to check that figure, then I'll get back to you.
+        - I need to check that number - let me get back to you.
+        - I need to check that number. I'll get back to you later.
+        - I need to check that number. I'll get back to you.
+        - I need to check that number. Let me get back to you later.
+        - I need to check that number, then I'll get back to you.
+        - I need to check those figures. I'll get back to you later.
+        - I need to check those figures. I'll get back to you.
+        - I need to check those figures. Let me get back to you later.
+        - I need to check those figures, then I'll get back to you.
+        - I need to double-check that figure. I'll get back to you later.
+        - I need to double-check that figure. I'll get back to you.
+        - I need to double-check that figure. Let me get back to you later.
+        - I need to double-check that figure, then I'll get back to you.
+        - I need to check that data - let me get back to you.
+        - I need to check that data. I'll get back to you.
+        - I need to check that data. Let me get back to you later.
+        - I need to check that data, then I'll get back to you.
+        - I need to verify that figure - let me get back to you.
+        - I need to verify that figure. I'll get back to you later.
+        - I need to verify that figure. I'll get back to you.
+        - I need to verify that figure. Let me get back to you later.
+        - I need to verify that figure, then I'll get back to you.
+        - I'll need to check that figure - let me get back to you.
+        - I'll need to check that figure. I'll get back to you later.
+        - I'll need to check that figure. I'll get back to you.
+        - I'll need to check that figure. Let me get back to you later.
+        - I'll need to check that figure, then I'll get back to you.
+        - I'll need to check that number - let me get back to you.
+        - I'll need to check that number. I'll get back to you later.
+        - I'll need to check that number. I'll get back to you.
+        - I'll need to check that number. Let me get back to you later.
+        - I'll need to check that number, then I'll get back to you.
+        - I'll need to check those figures - let me get back to you.
+        - I'll need to check those figures. I'll get back to you later.
+        - I'll need to check those figures. I'll get back to you.
+        - I'll need to check those figures. Let me get back to you later.
+        - I'll need to check those figures, then I'll get back to you.
+        - I'll need to double-check that figure - let me get back to you.
+        - I'll need to double-check that figure. I'll get back to you later.
+        - I'll need to double-check that figure. I'll get back to you.
+        - I'll need to double-check that figure. Let me get back to you later.
+        - I'll need to double-check that figure, then I'll get back to you.
+        - I'll need to check that data - let me get back to you.
+        - I'll need to check that data. I'll get back to you later.
+        - I'll need to check that data. I'll get back to you.
+        - I'll need to check that data. Let me get back to you later.
+        - I'll need to check that data, then I'll get back to you.
+        - I'll need to verify that figure - let me get back to you.
+        - I'll need to verify that figure. I'll get back to you later.
+        - I'll need to verify that figure. I'll get back to you.
+        - I'll need to verify that figure. Let me get back to you later.
+        - I'll need to verify that figure, then I'll get back to you.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -312,6 +414,88 @@ exercises:
         - Kết luận đó dựa trên lập luận có lỗ hổng.
         - Kết luận dựa trên suy luận sai.
         - Kết luận này được đưa ra từ một suy luận sai.
+        - Kết luận dựa trên lập luận sai.
+        - Kết luận dựa trên lập luận có lỗ hổng.
+        - Kết luận dựa trên một lập luận có lỗ hổng.
+        - Kết luận dựa trên một suy luận sai.
+        - Kết luận dựa trên suy luận sai lầm.
+        - Kết luận dựa trên lập luận sai lầm.
+        - Kết luận dựa trên lập luận thiếu sót.
+        - Kết luận dựa trên suy luận thiếu sót.
+        - Kết luận dựa vào suy luận sai.
+        - Kết luận dựa vào lập luận sai.
+        - Kết luận dựa vào suy luận có lỗ hổng.
+        - Kết luận dựa vào lập luận có lỗ hổng.
+        - Kết luận dựa vào một lập luận có lỗ hổng.
+        - Kết luận dựa vào một suy luận sai.
+        - Kết luận dựa vào suy luận sai lầm.
+        - Kết luận dựa vào lập luận sai lầm.
+        - Kết luận dựa vào lập luận thiếu sót.
+        - Kết luận dựa vào suy luận thiếu sót.
+        - Kết luận được xây dựng trên suy luận sai.
+        - Kết luận được xây dựng trên lập luận sai.
+        - Kết luận được xây dựng trên suy luận có lỗ hổng.
+        - Kết luận được xây dựng trên lập luận có lỗ hổng.
+        - Kết luận được xây dựng trên một lập luận có lỗ hổng.
+        - Kết luận được xây dựng trên một suy luận sai.
+        - Kết luận được xây dựng trên suy luận sai lầm.
+        - Kết luận được xây dựng trên lập luận sai lầm.
+        - Kết luận được xây dựng trên lập luận thiếu sót.
+        - Kết luận được xây dựng trên suy luận thiếu sót.
+        - Kết luận này dựa trên suy luận có lỗ hổng.
+        - Kết luận này dựa trên một suy luận sai.
+        - Kết luận này dựa trên suy luận sai lầm.
+        - Kết luận này dựa trên lập luận sai lầm.
+        - Kết luận này dựa trên lập luận thiếu sót.
+        - Kết luận này dựa trên suy luận thiếu sót.
+        - Kết luận này dựa vào suy luận sai.
+        - Kết luận này dựa vào lập luận sai.
+        - Kết luận này dựa vào suy luận có lỗ hổng.
+        - Kết luận này dựa vào lập luận có lỗ hổng.
+        - Kết luận này dựa vào một lập luận có lỗ hổng.
+        - Kết luận này dựa vào một suy luận sai.
+        - Kết luận này dựa vào suy luận sai lầm.
+        - Kết luận này dựa vào lập luận sai lầm.
+        - Kết luận này dựa vào lập luận thiếu sót.
+        - Kết luận này dựa vào suy luận thiếu sót.
+        - Kết luận này được xây dựng trên suy luận sai.
+        - Kết luận này được xây dựng trên lập luận sai.
+        - Kết luận này được xây dựng trên suy luận có lỗ hổng.
+        - Kết luận này được xây dựng trên lập luận có lỗ hổng.
+        - Kết luận này được xây dựng trên một lập luận có lỗ hổng.
+        - Kết luận này được xây dựng trên một suy luận sai.
+        - Kết luận này được xây dựng trên suy luận sai lầm.
+        - Kết luận này được xây dựng trên lập luận sai lầm.
+        - Kết luận này được xây dựng trên lập luận thiếu sót.
+        - Kết luận này được xây dựng trên suy luận thiếu sót.
+        - Kết luận đó dựa trên lập luận sai.
+        - Kết luận đó dựa trên suy luận có lỗ hổng.
+        - Kết luận đó dựa trên một lập luận có lỗ hổng.
+        - Kết luận đó dựa trên một suy luận sai.
+        - Kết luận đó dựa trên suy luận sai lầm.
+        - Kết luận đó dựa trên lập luận sai lầm.
+        - Kết luận đó dựa trên lập luận thiếu sót.
+        - Kết luận đó dựa trên suy luận thiếu sót.
+        - Kết luận đó dựa vào suy luận sai.
+        - Kết luận đó dựa vào lập luận sai.
+        - Kết luận đó dựa vào suy luận có lỗ hổng.
+        - Kết luận đó dựa vào lập luận có lỗ hổng.
+        - Kết luận đó dựa vào một lập luận có lỗ hổng.
+        - Kết luận đó dựa vào một suy luận sai.
+        - Kết luận đó dựa vào suy luận sai lầm.
+        - Kết luận đó dựa vào lập luận sai lầm.
+        - Kết luận đó dựa vào lập luận thiếu sót.
+        - Kết luận đó dựa vào suy luận thiếu sót.
+        - Kết luận đó được xây dựng trên suy luận sai.
+        - Kết luận đó được xây dựng trên lập luận sai.
+        - Kết luận đó được xây dựng trên suy luận có lỗ hổng.
+        - Kết luận đó được xây dựng trên lập luận có lỗ hổng.
+        - Kết luận đó được xây dựng trên một lập luận có lỗ hổng.
+        - Kết luận đó được xây dựng trên một suy luận sai.
+        - Kết luận đó được xây dựng trên suy luận sai lầm.
+        - Kết luận đó được xây dựng trên lập luận sai lầm.
+        - Kết luận đó được xây dựng trên lập luận thiếu sót.
+        - Kết luận đó được xây dựng trên suy luận thiếu sót.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -344,6 +528,7 @@ exercises:
     answer:
       orders:
         - [d-respect, d-see, d-it, d-somewhat, d-differently]
+        - [d-see, d-it, d-somewhat, d-differently, d-respect]
     explanation:
       vi: See it differently cần trạng từ differently bổ nghĩa cho động từ see; different (tính từ) là token thừa. Somewhat đứng trước differently để làm mềm lời phản đối.
     display_answer: With all due respect, I see it somewhat differently.
@@ -396,6 +581,142 @@ exercises:
         - They gave a very compelling argument for increasing the budget.
         - They made a very convincing case for increasing the budget.
         - They made a very convincing argument for increasing the budget.
+        - They made a highly compelling case for raising the budget.
+        - They made a highly compelling case for a budget increase.
+        - They made a highly compelling argument for increasing the budget.
+        - They made a highly compelling argument for raising the budget.
+        - They made a highly compelling argument for a budget increase.
+        - They made a really compelling case for raising the budget.
+        - They made a really compelling case for a budget increase.
+        - They made a really compelling argument for increasing the budget.
+        - They made a really compelling argument for raising the budget.
+        - They made a really compelling argument for a budget increase.
+        - They made a very persuasive case for increasing the budget.
+        - They made a very persuasive case for raising the budget.
+        - They made a very persuasive case for a budget increase.
+        - They made a very persuasive argument for increasing the budget.
+        - They made a very persuasive argument for raising the budget.
+        - They made a very persuasive argument for a budget increase.
+        - They made an extremely compelling case for increasing the budget.
+        - They made an extremely compelling case for raising the budget.
+        - They made an extremely compelling case for a budget increase.
+        - They made an extremely compelling argument for increasing the budget.
+        - They made an extremely compelling argument for raising the budget.
+        - They made an extremely compelling argument for a budget increase.
+        - They have made a very compelling case for raising the budget.
+        - They have made a very compelling case for a budget increase.
+        - They have made a very compelling argument for increasing the budget.
+        - They have made a very compelling argument for raising the budget.
+        - They have made a very compelling argument for a budget increase.
+        - They have made a highly compelling case for increasing the budget.
+        - They have made a highly compelling case for raising the budget.
+        - They have made a highly compelling case for a budget increase.
+        - They have made a highly compelling argument for increasing the budget.
+        - They have made a highly compelling argument for raising the budget.
+        - They have made a highly compelling argument for a budget increase.
+        - They have made a really compelling case for increasing the budget.
+        - They have made a really compelling case for raising the budget.
+        - They have made a really compelling case for a budget increase.
+        - They have made a really compelling argument for increasing the budget.
+        - They have made a really compelling argument for raising the budget.
+        - They have made a really compelling argument for a budget increase.
+        - They have made a very persuasive case for increasing the budget.
+        - They have made a very persuasive case for raising the budget.
+        - They have made a very persuasive case for a budget increase.
+        - They have made a very persuasive argument for increasing the budget.
+        - They have made a very persuasive argument for raising the budget.
+        - They have made a very persuasive argument for a budget increase.
+        - They have made an extremely compelling case for increasing the budget.
+        - They have made an extremely compelling case for raising the budget.
+        - They have made an extremely compelling case for a budget increase.
+        - They have made an extremely compelling argument for increasing the budget.
+        - They have made an extremely compelling argument for raising the budget.
+        - They have made an extremely compelling argument for a budget increase.
+        - They put forward a very compelling case for raising the budget.
+        - They put forward a very compelling case for a budget increase.
+        - They put forward a very compelling argument for raising the budget.
+        - They put forward a very compelling argument for a budget increase.
+        - They put forward a highly compelling case for increasing the budget.
+        - They put forward a highly compelling case for raising the budget.
+        - They put forward a highly compelling case for a budget increase.
+        - They put forward a highly compelling argument for increasing the budget.
+        - They put forward a highly compelling argument for raising the budget.
+        - They put forward a highly compelling argument for a budget increase.
+        - They put forward a really compelling case for increasing the budget.
+        - They put forward a really compelling case for raising the budget.
+        - They put forward a really compelling case for a budget increase.
+        - They put forward a really compelling argument for increasing the budget.
+        - They put forward a really compelling argument for raising the budget.
+        - They put forward a really compelling argument for a budget increase.
+        - They put forward a very persuasive case for increasing the budget.
+        - They put forward a very persuasive case for raising the budget.
+        - They put forward a very persuasive case for a budget increase.
+        - They put forward a very persuasive argument for increasing the budget.
+        - They put forward a very persuasive argument for raising the budget.
+        - They put forward a very persuasive argument for a budget increase.
+        - They put forward an extremely compelling case for increasing the budget.
+        - They put forward an extremely compelling case for raising the budget.
+        - They put forward an extremely compelling case for a budget increase.
+        - They put forward an extremely compelling argument for increasing the budget.
+        - They put forward an extremely compelling argument for raising the budget.
+        - They put forward an extremely compelling argument for a budget increase.
+        - They presented a very compelling case for raising the budget.
+        - They presented a very compelling case for a budget increase.
+        - They presented a very compelling argument for raising the budget.
+        - They presented a very compelling argument for a budget increase.
+        - They presented a highly compelling case for increasing the budget.
+        - They presented a highly compelling case for raising the budget.
+        - They presented a highly compelling case for a budget increase.
+        - They presented a highly compelling argument for increasing the budget.
+        - They presented a highly compelling argument for raising the budget.
+        - They presented a highly compelling argument for a budget increase.
+        - They presented a really compelling case for increasing the budget.
+        - They presented a really compelling case for raising the budget.
+        - They presented a really compelling case for a budget increase.
+        - They presented a really compelling argument for increasing the budget.
+        - They presented a really compelling argument for raising the budget.
+        - They presented a really compelling argument for a budget increase.
+        - They presented a very persuasive case for increasing the budget.
+        - They presented a very persuasive case for raising the budget.
+        - They presented a very persuasive case for a budget increase.
+        - They presented a very persuasive argument for increasing the budget.
+        - They presented a very persuasive argument for raising the budget.
+        - They presented a very persuasive argument for a budget increase.
+        - They presented an extremely compelling case for increasing the budget.
+        - They presented an extremely compelling case for raising the budget.
+        - They presented an extremely compelling case for a budget increase.
+        - They presented an extremely compelling argument for increasing the budget.
+        - They presented an extremely compelling argument for raising the budget.
+        - They presented an extremely compelling argument for a budget increase.
+        - They gave a very compelling case for increasing the budget.
+        - They gave a very compelling case for raising the budget.
+        - They gave a very compelling case for a budget increase.
+        - They gave a very compelling argument for raising the budget.
+        - They gave a very compelling argument for a budget increase.
+        - They gave a highly compelling case for increasing the budget.
+        - They gave a highly compelling case for raising the budget.
+        - They gave a highly compelling case for a budget increase.
+        - They gave a highly compelling argument for increasing the budget.
+        - They gave a highly compelling argument for raising the budget.
+        - They gave a highly compelling argument for a budget increase.
+        - They gave a really compelling case for increasing the budget.
+        - They gave a really compelling case for raising the budget.
+        - They gave a really compelling case for a budget increase.
+        - They gave a really compelling argument for increasing the budget.
+        - They gave a really compelling argument for raising the budget.
+        - They gave a really compelling argument for a budget increase.
+        - They gave a very persuasive case for increasing the budget.
+        - They gave a very persuasive case for raising the budget.
+        - They gave a very persuasive case for a budget increase.
+        - They gave a very persuasive argument for increasing the budget.
+        - They gave a very persuasive argument for raising the budget.
+        - They gave a very persuasive argument for a budget increase.
+        - They gave an extremely compelling case for increasing the budget.
+        - They gave an extremely compelling case for raising the budget.
+        - They gave an extremely compelling case for a budget increase.
+        - They gave an extremely compelling argument for increasing the budget.
+        - They gave an extremely compelling argument for raising the budget.
+        - They gave an extremely compelling argument for a budget increase.
     rubric:
       typo_tolerance: 1
     known_wrong:

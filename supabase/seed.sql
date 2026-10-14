@@ -1473,11 +1473,11 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "5e5866550916c10381f58958080fd560d9538f729bdd96577ffbb47397d886f2",
+      "content_hash": "d43db6edfb87d4c96eaca175ffdb5b3502a6804b9cb61692edce949dc5ca88c0",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "45f021fa-f40d-5d5e-acb0-5f8cdbe28a8f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "91413e1d-b67a-5189-9072-b85a236e459b",
       "key": "en:exercise:ap-review-fill-mixed",
       "key_data": {
@@ -1486,19 +1486,23 @@ select content_private.import_bundle($bundle${
             "b1": [
               "Despite",
               "In spite of",
-              "Notwithstanding"
+              "Notwithstanding",
+              "Regardless of",
+              "Irrespective of",
+              "Even with"
             ],
             "b2": [
               "did"
             ],
             "b3": [
-              "With"
+              "With",
+              "In"
             ]
           }
         },
         "display_answer": "Despite the high cost, the system was approved. Not only did it save time, but it also reduced errors. With regard to training, a short course will be offered.",
         "explanation": {
-          "vi": "The high cost là danh từ nên dùng despite. Not only đứng đầu câu ở quá khứ đơn nên mượn did - Not only did it save. With regard to là cụm cố định, không có s."
+          "vi": "The high cost là danh từ nên dùng despite. Not only đứng đầu câu ở quá khứ đơn nên mượn did - Not only did it save. With regard to (hoặc in regard to) là cụm cố định, không có s."
         },
         "known_wrong": [
           {
@@ -1544,8 +1548,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "{{b1}} the high cost, the system was approved. Not only {{b2}} it save time, but it also reduced errors. {{b3}} regard to training, a short course will be offered."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -1556,7 +1560,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "1a13877c-fd2d-5ccc-8a05-e2b8fe859339",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2706edbe-4746-5141-9857-735f1f8f8533",
       "key": "en:exercise:ap-review-listen-in-light",
       "key_data": {
@@ -1605,8 +1609,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -1617,7 +1621,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "3e7465d2-9a92-5fc9-85da-32869323bf40",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "a7ff906e-e326-5200-862f-66763613f3d4",
       "key": "en:exercise:ap-review-mcq-email-purpose",
       "key_data": {
@@ -1666,8 +1670,8 @@ select content_private.import_bundle($bundle${
         "stem": "Đọc email: \"Further to our call on Tuesday, I am writing with regard to the delayed shipment. It would appear that the goods were held at customs owing to a missing certificate.\" Người viết nói gì về nguyên nhân chậm trễ?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -1678,7 +1682,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "72476f37-1aac-5101-b9ff-7be5bccf828f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "da438d0c-2ec3-5ea7-bc02-2bb4cb7e801f",
       "key": "en:exercise:ap-review-mcq-error-check",
       "key_data": {
@@ -1732,8 +1736,8 @@ select content_private.import_bundle($bundle${
         "stem": "Đồng nghiệp nhờ bạn kiểm tra đoạn tóm tắt báo cáo. Câu nào KHÔNG có lỗi?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -1744,7 +1748,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "998987c3-a56f-5806-9358-0bde769807af",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f0758912-b56d-5e82-bc8f-59a3a4fe53d4",
       "key": "en:exercise:ap-review-mcq-report-whereas",
       "key_data": {
@@ -1793,19 +1797,19 @@ select content_private.import_bundle($bundle${
         "stem": "Đọc tóm tắt: \"The implementation of the new booking system led to a significant increase in online reservations, whereas phone bookings declined considerably.\" Ý nào đúng?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "685666a0f93e739455f0b618e5920843154390db49e7ec9d7629f92549eeccf0",
+      "content_hash": "e312301c63cac9d35ea0f90f5248625fb8e36f99864aa5cda3dda75b119584fb",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "bcc2d708-ba78-5d24-93e7-a6857eed9838",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8e1972fc-0031-58d1-a841-5340596de206",
       "key": "en:exercise:ap-review-order-should",
       "key_data": {
@@ -1818,12 +1822,20 @@ select content_private.import_bundle($bundle${
               "s-documents",
               "s-please",
               "s-contact"
+            ],
+            [
+              "s-if",
+              "s-you",
+              "s-require",
+              "s-documents",
+              "s-please",
+              "s-contact"
             ]
           ]
         },
         "display_answer": "Should you require further documents, please contact me.",
         "explanation": {
-          "vi": "Should you require… là đảo ngữ trang trọng của If you require…. Khi đã đảo thì không dùng if."
+          "vi": "Should you require… là đảo ngữ trang trọng của If you require… (cả hai đều đúng). Khi đã đảo bằng Should thì không dùng thêm if."
         },
         "known_wrong": [],
         "rubric": {
@@ -1869,19 +1881,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "cdaaa2ed1c85da1a7a00cd7da2117d4c33c4b5341a78756f479ece53957a9359",
+      "content_hash": "55baf7888e0f3c3bbf3aaf6513d44395ba8b3aabb61842ec2950223e6119bce9",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "2b07643e-bba8-5daa-971b-5fbc49a72bee",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3f6602ae-07a9-5734-a8a1-902550b2ae89",
       "key": "en:exercise:ap-review-translate-research",
       "key_data": {
@@ -1902,7 +1914,18 @@ select content_private.import_bundle($bundle${
             "Recent studies show that working remotely can increase productivity.",
             "Recent research suggests that remote work may boost productivity.",
             "Recent research suggests that remote work may improve productivity.",
-            "Recent studies suggest that remote work may improve productivity."
+            "Recent studies suggest that remote work may improve productivity.",
+            "Recent studies suggest that remote work might increase productivity.",
+            "Recent research suggests that remote work might increase productivity.",
+            "Recent research suggests that remote work could increase productivity.",
+            "Recent research indicates that remote work can increase productivity.",
+            "Recent studies indicate that remote work may increase productivity.",
+            "Recent research has shown that remote work may increase productivity.",
+            "Recent studies have shown that remote work can increase productivity.",
+            "Recent research suggests that working remotely can increase productivity.",
+            "Recent research suggests that remote working can increase productivity.",
+            "Recent studies suggest that working remotely may increase productivity.",
+            "Recent studies suggest that remote working may increase productivity."
           ]
         },
         "display_answer": "Recent research suggests that remote work may increase productivity.",
@@ -1919,6 +1942,11 @@ select content_private.import_bundle($bundle${
             "answer": "Recent researches show that remote work can increase productivity.",
             "error_tag": "research_countable",
             "feedback_vi": "Research không đếm được - dùng recent research shows hoặc recent studies show."
+          },
+          {
+            "answer": "Recent studies suggests that remote work may increase productivity.",
+            "error_tag": "subject_verb_agreement",
+            "feedback_vi": "Studies là số nhiều nên động từ là suggest, không thêm -s."
           },
           {
             "answer": "Recent research suggest that remote work may increase productivity.",
@@ -1946,19 +1974,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Các nghiên cứu gần đây cho thấy làm việc từ xa có thể làm tăng năng suất."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "6527c5165c71c3103eadade00a22116254b368739055d4d6e915251f98d45286",
+      "content_hash": "961d0815d5573d4b76b3a7f07ae1179f10f0260a921d2c6e10862898cbd80835",
       "difficulty": 5,
       "exercise_type": "translate",
       "id": "73d166c0-324a-53dd-88f0-f5358aaf61a7",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c264d9ae-28f0-54ba-b4f1-961327f99fc7",
       "key": "en:exercise:ap-review-translate-summary-en",
       "key_data": {
@@ -1979,7 +2007,140 @@ select content_private.import_bundle($bundle${
             "In summary, online sales increased significantly, whereas sales in stores decreased slightly.",
             "In summary, online sales increased significantly, whereas store sales decreased slightly.",
             "In summary, online sales grew significantly, whereas in-store sales fell slightly.",
-            "In summary, online sales increased significantly, whereas in-store sales declined slightly."
+            "In summary, online sales increased significantly, whereas in-store sales declined slightly.",
+            "In summary, online sales increased significantly, whereas sales in stores fell slightly.",
+            "In summary, online sales increased significantly, whereas sales in stores declined slightly.",
+            "In summary, online sales increased significantly, while sales in stores decreased slightly.",
+            "In summary, online sales increased significantly, while in-store sales fell slightly.",
+            "In summary, online sales increased significantly, while sales in stores fell slightly.",
+            "In summary, online sales increased significantly, while in-store sales declined slightly.",
+            "In summary, online sales increased significantly, while sales in stores declined slightly.",
+            "In summary, online sales increased considerably, whereas sales in stores decreased slightly.",
+            "In summary, online sales increased considerably, whereas in-store sales fell slightly.",
+            "In summary, online sales increased considerably, whereas sales in stores fell slightly.",
+            "In summary, online sales increased considerably, whereas in-store sales declined slightly.",
+            "In summary, online sales increased considerably, whereas sales in stores declined slightly.",
+            "In summary, online sales increased considerably, while in-store sales decreased slightly.",
+            "In summary, online sales increased considerably, while sales in stores decreased slightly.",
+            "In summary, online sales increased considerably, while in-store sales fell slightly.",
+            "In summary, online sales increased considerably, while sales in stores fell slightly.",
+            "In summary, online sales increased considerably, while in-store sales declined slightly.",
+            "In summary, online sales increased considerably, while sales in stores declined slightly.",
+            "In summary, online sales rose significantly, whereas in-store sales decreased slightly.",
+            "In summary, online sales rose significantly, whereas sales in stores decreased slightly.",
+            "In summary, online sales rose significantly, whereas sales in stores fell slightly.",
+            "In summary, online sales rose significantly, whereas in-store sales declined slightly.",
+            "In summary, online sales rose significantly, whereas sales in stores declined slightly.",
+            "In summary, online sales rose significantly, while in-store sales decreased slightly.",
+            "In summary, online sales rose significantly, while sales in stores decreased slightly.",
+            "In summary, online sales rose significantly, while sales in stores fell slightly.",
+            "In summary, online sales rose significantly, while in-store sales declined slightly.",
+            "In summary, online sales rose significantly, while sales in stores declined slightly.",
+            "In summary, online sales rose considerably, whereas in-store sales decreased slightly.",
+            "In summary, online sales rose considerably, whereas sales in stores decreased slightly.",
+            "In summary, online sales rose considerably, whereas in-store sales fell slightly.",
+            "In summary, online sales rose considerably, whereas sales in stores fell slightly.",
+            "In summary, online sales rose considerably, whereas sales in stores declined slightly.",
+            "In summary, online sales rose considerably, while in-store sales decreased slightly.",
+            "In summary, online sales rose considerably, while sales in stores decreased slightly.",
+            "In summary, online sales rose considerably, while in-store sales fell slightly.",
+            "In summary, online sales rose considerably, while sales in stores fell slightly.",
+            "In summary, online sales rose considerably, while in-store sales declined slightly.",
+            "In summary, online sales rose considerably, while sales in stores declined slightly.",
+            "To summarise, online sales increased significantly, whereas sales in stores decreased slightly.",
+            "To summarise, online sales increased significantly, whereas in-store sales fell slightly.",
+            "To summarise, online sales increased significantly, whereas sales in stores fell slightly.",
+            "To summarise, online sales increased significantly, whereas in-store sales declined slightly.",
+            "To summarise, online sales increased significantly, whereas sales in stores declined slightly.",
+            "To summarise, online sales increased significantly, while in-store sales decreased slightly.",
+            "To summarise, online sales increased significantly, while sales in stores decreased slightly.",
+            "To summarise, online sales increased significantly, while in-store sales fell slightly.",
+            "To summarise, online sales increased significantly, while sales in stores fell slightly.",
+            "To summarise, online sales increased significantly, while in-store sales declined slightly.",
+            "To summarise, online sales increased significantly, while sales in stores declined slightly.",
+            "To summarise, online sales increased considerably, whereas in-store sales decreased slightly.",
+            "To summarise, online sales increased considerably, whereas sales in stores decreased slightly.",
+            "To summarise, online sales increased considerably, whereas in-store sales fell slightly.",
+            "To summarise, online sales increased considerably, whereas sales in stores fell slightly.",
+            "To summarise, online sales increased considerably, whereas in-store sales declined slightly.",
+            "To summarise, online sales increased considerably, whereas sales in stores declined slightly.",
+            "To summarise, online sales increased considerably, while in-store sales decreased slightly.",
+            "To summarise, online sales increased considerably, while sales in stores decreased slightly.",
+            "To summarise, online sales increased considerably, while in-store sales fell slightly.",
+            "To summarise, online sales increased considerably, while sales in stores fell slightly.",
+            "To summarise, online sales increased considerably, while in-store sales declined slightly.",
+            "To summarise, online sales increased considerably, while sales in stores declined slightly.",
+            "To summarise, online sales rose significantly, whereas in-store sales decreased slightly.",
+            "To summarise, online sales rose significantly, whereas sales in stores decreased slightly.",
+            "To summarise, online sales rose significantly, whereas in-store sales fell slightly.",
+            "To summarise, online sales rose significantly, whereas sales in stores fell slightly.",
+            "To summarise, online sales rose significantly, whereas in-store sales declined slightly.",
+            "To summarise, online sales rose significantly, whereas sales in stores declined slightly.",
+            "To summarise, online sales rose significantly, while in-store sales decreased slightly.",
+            "To summarise, online sales rose significantly, while sales in stores decreased slightly.",
+            "To summarise, online sales rose significantly, while in-store sales fell slightly.",
+            "To summarise, online sales rose significantly, while sales in stores fell slightly.",
+            "To summarise, online sales rose significantly, while in-store sales declined slightly.",
+            "To summarise, online sales rose significantly, while sales in stores declined slightly.",
+            "To summarise, online sales rose considerably, whereas in-store sales decreased slightly.",
+            "To summarise, online sales rose considerably, whereas sales in stores decreased slightly.",
+            "To summarise, online sales rose considerably, whereas in-store sales fell slightly.",
+            "To summarise, online sales rose considerably, whereas sales in stores fell slightly.",
+            "To summarise, online sales rose considerably, whereas in-store sales declined slightly.",
+            "To summarise, online sales rose considerably, whereas sales in stores declined slightly.",
+            "To summarise, online sales rose considerably, while in-store sales decreased slightly.",
+            "To summarise, online sales rose considerably, while sales in stores decreased slightly.",
+            "To summarise, online sales rose considerably, while in-store sales fell slightly.",
+            "To summarise, online sales rose considerably, while sales in stores fell slightly.",
+            "To summarise, online sales rose considerably, while in-store sales declined slightly.",
+            "To summarise, online sales rose considerably, while sales in stores declined slightly.",
+            "To summarize, online sales increased significantly, whereas sales in stores decreased slightly.",
+            "To summarize, online sales increased significantly, whereas in-store sales fell slightly.",
+            "To summarize, online sales increased significantly, whereas sales in stores fell slightly.",
+            "To summarize, online sales increased significantly, whereas in-store sales declined slightly.",
+            "To summarize, online sales increased significantly, whereas sales in stores declined slightly.",
+            "To summarize, online sales increased significantly, while in-store sales decreased slightly.",
+            "To summarize, online sales increased significantly, while sales in stores decreased slightly.",
+            "To summarize, online sales increased significantly, while in-store sales fell slightly.",
+            "To summarize, online sales increased significantly, while sales in stores fell slightly.",
+            "To summarize, online sales increased significantly, while in-store sales declined slightly.",
+            "To summarize, online sales increased significantly, while sales in stores declined slightly.",
+            "To summarize, online sales increased considerably, whereas in-store sales decreased slightly.",
+            "To summarize, online sales increased considerably, whereas sales in stores decreased slightly.",
+            "To summarize, online sales increased considerably, whereas in-store sales fell slightly.",
+            "To summarize, online sales increased considerably, whereas sales in stores fell slightly.",
+            "To summarize, online sales increased considerably, whereas in-store sales declined slightly.",
+            "To summarize, online sales increased considerably, whereas sales in stores declined slightly.",
+            "To summarize, online sales increased considerably, while in-store sales decreased slightly.",
+            "To summarize, online sales increased considerably, while sales in stores decreased slightly.",
+            "To summarize, online sales increased considerably, while in-store sales fell slightly.",
+            "To summarize, online sales increased considerably, while sales in stores fell slightly.",
+            "To summarize, online sales increased considerably, while in-store sales declined slightly.",
+            "To summarize, online sales increased considerably, while sales in stores declined slightly.",
+            "To summarize, online sales rose significantly, whereas in-store sales decreased slightly.",
+            "To summarize, online sales rose significantly, whereas sales in stores decreased slightly.",
+            "To summarize, online sales rose significantly, whereas in-store sales fell slightly.",
+            "To summarize, online sales rose significantly, whereas sales in stores fell slightly.",
+            "To summarize, online sales rose significantly, whereas in-store sales declined slightly.",
+            "To summarize, online sales rose significantly, whereas sales in stores declined slightly.",
+            "To summarize, online sales rose significantly, while in-store sales decreased slightly.",
+            "To summarize, online sales rose significantly, while sales in stores decreased slightly.",
+            "To summarize, online sales rose significantly, while in-store sales fell slightly.",
+            "To summarize, online sales rose significantly, while sales in stores fell slightly.",
+            "To summarize, online sales rose significantly, while in-store sales declined slightly.",
+            "To summarize, online sales rose significantly, while sales in stores declined slightly.",
+            "To summarize, online sales rose considerably, whereas in-store sales decreased slightly.",
+            "To summarize, online sales rose considerably, whereas sales in stores decreased slightly.",
+            "To summarize, online sales rose considerably, whereas in-store sales fell slightly.",
+            "To summarize, online sales rose considerably, whereas sales in stores fell slightly.",
+            "To summarize, online sales rose considerably, whereas in-store sales declined slightly.",
+            "To summarize, online sales rose considerably, whereas sales in stores declined slightly.",
+            "To summarize, online sales rose considerably, while in-store sales decreased slightly.",
+            "To summarize, online sales rose considerably, while sales in stores decreased slightly.",
+            "To summarize, online sales rose considerably, while in-store sales fell slightly.",
+            "To summarize, online sales rose considerably, while sales in stores fell slightly.",
+            "To summarize, online sales rose considerably, while in-store sales declined slightly.",
+            "To summarize, online sales rose considerably, while sales in stores declined slightly."
           ]
         },
         "display_answer": "In summary, online sales increased significantly, whereas in-store sales decreased slightly.",
@@ -1987,11 +2148,6 @@ select content_private.import_bundle($bundle${
           "vi": "In summary mở đầu phần tóm tắt; tăng/giảm dùng động từ kèm trạng từ chính xác (increased significantly, decreased slightly) hoặc danh từ hoá a significant increase in. Whereas/while đối chiếu hai xu hướng."
         },
         "known_wrong": [
-          {
-            "answer": "In summary, online sales increased very much, whereas in-store sales decreased a little.",
-            "error_tag": "overuse_very",
-            "feedback_vi": "Increased very much nghe như văn nói; dùng increased significantly/considerably."
-          },
           {
             "answer": "In summary, there was a significant increase of online sales, whereas in-store sales decreased slightly.",
             "error_tag": "preposition",
@@ -2018,25 +2174,30 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tóm lại, doanh số trực tuyến tăng đáng kể, trong khi doanh số tại cửa hàng giảm nhẹ."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "vi",
-      "content_hash": "07ae8f43093117a50b1e8ec0a7525514355a2f7975771acdfcad224d7f1e9491",
+      "content_hash": "1bc8cc5fb3d9c106eeae65b1fa33617ea186b2c400c5d62d12cf3ae1420f1ad5",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "7a9560e4-a5bc-5e14-afc9-c7b7410653fc",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "861a705b-b764-53aa-ba87-c2b960154a26",
       "key": "en:exercise:ap-review-translate-to-vi-summary",
       "key_data": {
         "answer_key": {
           "accepted": [
             "Kết quả cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.",
+            "Kết quả cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho những yêu cầu phức tạp.",
+            "Kết quả cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho các thắc mắc phức tạp.",
+            "Kết quả cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ cho các yêu cầu phức tạp.",
+            "Kết quả cho thấy khách hàng coi trọng tốc độ. Vì vậy, đường dây điện thoại sẽ chỉ được duy trì cho các yêu cầu phức tạp.",
+            "Kết quả cho thấy khách hàng coi trọng tốc độ. Do vậy, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.",
             "Kết quả nghiên cứu cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.",
             "Kết quả cho thấy khách hàng coi trọng tốc độ. Vì vậy, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.",
             "Kết quả cho thấy khách hàng đề cao tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.",
@@ -2069,19 +2230,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "The findings suggest that customers value speed. Consequently, the phone line will be retained only for complex enquiries."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "e69e2864e35dd43e15cb778d56585874dc261c4d7aa04357a44eee688294d6d0",
+      "content_hash": "cf967ad81d30bcf78969746e19d80b1494f9d798823ebc524a3cb625a2f4cc7e",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "1d645f2f-b07d-5ed0-bfb5-88f69558f63f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "64f8c960-6fe7-5489-8f42-c3f6429963c0",
       "key": "en:exercise:ap-review-translate-under-no",
       "key_data": {
@@ -2098,7 +2259,15 @@ select content_private.import_bundle($bundle${
             "Under no circumstances must employees share customer data.",
             "Under no circumstances should employees share customers' data.",
             "Under no circumstances are staff allowed to share customer data.",
-            "Under no circumstances should employees share any customer data."
+            "Under no circumstances should employees share any customer data.",
+            "Under no circumstances may staff share customer data.",
+            "Under no circumstances should staff share client data.",
+            "Under no circumstances should employees share customer information.",
+            "Under no circumstances should employees ever share customer data.",
+            "Under no circumstances should employees be allowed to share customer data.",
+            "Under no circumstances are employees to share customer data.",
+            "Under no circumstances can staff share customer data.",
+            "Under no circumstances must staff share customer data."
           ]
         },
         "display_answer": "Under no circumstances should employees share customer data.",
@@ -2137,8 +2306,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Trong bất kỳ trường hợp nào, nhân viên cũng không được chia sẻ dữ liệu khách hàng. (bắt đầu bằng Under no circumstances)"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -4252,11 +4421,11 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "6ea3ff8d5d1a00d67f86547cbc3dbe8d79e3a951fd020a982627edd2944af665",
+      "content_hash": "1511595c68b2fc03d3f2ece636a3a294da090bc4d0b01e8020f0931e41c7290a",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "b9136c28-e1a3-55d7-bbe9-89d50dc94cb1",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b90de84b-72b3-515d-84ab-e11440efbdea",
       "key": "en:exercise:cleft-fill-inversion-did",
       "key_data": {
@@ -4283,7 +4452,7 @@ select content_private.import_bundle($bundle${
           {
             "answer": "when",
             "error_tag": "no_sooner_than",
-            "feedback_vi": "No sooner đi với than; when chỉ đi với Hardly/Scarcely."
+            "feedback_vi": "Chuẩn là No sooner… than; when thường gặp trong văn nói nhưng bị coi là không chuẩn (when đi với Hardly/Scarcely)."
           },
           {
             "answer": "then",
@@ -4314,8 +4483,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Little {{b1}} we realise how difficult the merger would be. No sooner had the deal been signed {{b2}} the problems began."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -4326,7 +4495,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "65de43e4-c977-5d0e-8f26-c8b97ce01927",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "e79f2031-dcc9-5aa0-b5bd-bcf5272d35c5",
       "key": "en:exercise:cleft-fill-what-hinted",
       "key_data": {
@@ -4388,8 +4557,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "{{b1}} concerns me {{b2}} the lack of transparency."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -4400,7 +4569,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "01e35ff4-66e7-525f-907a-566c6b4eec7a",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "64f8c960-6fe7-5489-8f42-c3f6429963c0",
       "key": "en:exercise:cleft-listen-under-no",
       "key_data": {
@@ -4449,8 +4618,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -4461,7 +4630,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "0c2ec887-0aab-59ca-86ce-59395766132b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8e1972fc-0031-58d1-a841-5340596de206",
       "key": "en:exercise:cleft-mcq-email-should",
       "key_data": {
@@ -4510,8 +4679,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn kết thúc một email trang trọng gửi khách hàng. Câu nào phù hợp và đúng ngữ pháp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -4522,7 +4691,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "595be804-836b-55ae-8f44-df73cf26c098",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "dc016be6-440a-5624-a9dc-b49aba54ddba",
       "key": "en:exercise:cleft-mcq-it-meaning",
       "key_data": {
@@ -4571,8 +4740,8 @@ select content_private.import_bundle($bundle${
         "stem": "It was the CEO who approved the budget. Câu này nhấn mạnh điều gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -4583,7 +4752,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "6fe24671-8f18-577e-938d-3e161093d88a",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "91413e1d-b67a-5189-9072-b85a236e459b",
       "key": "en:exercise:cleft-mcq-not-only",
       "key_data": {
@@ -4632,8 +4801,8 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào đúng?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -4644,7 +4813,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "word_bank",
       "id": "268149ab-74ba-5d9e-b9fe-e76baa20c708",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c12ccf72-dc46-58e6-aa50-93f4044f9ed7",
       "key": "en:exercise:cleft-order-only-when",
       "key_data": {
@@ -4713,19 +4882,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "156dce972f803b1e65fe3e536746ab7c0330d32951faed41fa0432671c87858c",
+      "content_hash": "65f1eecc95396a48a31f5f1d96e93e3a8c4d76e21516d246b172094f7b836079",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "1a8952d8-a78e-5438-a284-444ba03370aa",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "0de4cfaf-b821-558f-b4c1-1ff6ac69366f",
       "key": "en:exercise:cleft-order-rarely",
       "key_data": {
@@ -4735,6 +4904,16 @@ select content_private.import_bundle($bundle${
               "r-rarely",
               "r-have",
               "r-i",
+              "r-seen",
+              "r-such",
+              "r-a",
+              "r-organised",
+              "r-event"
+            ],
+            [
+              "r-i",
+              "r-have",
+              "r-rarely",
               "r-seen",
               "r-such",
               "r-a",
@@ -4799,19 +4978,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "7b7c6ffffb39b9653aad4618bcd9687bbd963c2bec060d996b5bdf7fb60a7721",
+      "content_hash": "e8efc8e82f87007b67f33a9678fccf3b51cf12fd40f524229e88c8569d1d333a",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "e1f31b61-df92-52cc-b069-b6a25203893f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8e1972fc-0031-58d1-a841-5340596de206",
       "key": "en:exercise:cleft-translate-had-known",
       "key_data": {
@@ -4828,7 +5007,17 @@ select content_private.import_bundle($bundle${
             "Had I been aware of the delay, I would have rescheduled the meeting.",
             "Had I known about the delay, I would have changed the time of the meeting.",
             "Had I known about the delay, I would have put off the meeting.",
-            "Had I known about the delay, I would have put the meeting off."
+            "Had I known about the delay, I would have put the meeting off.",
+            "Had I known about the delay, I would have rearranged the meeting.",
+            "Had I known about the delay, I would have changed the date of the meeting.",
+            "Had I known about the delay, I'd have postponed the meeting.",
+            "Had I known about the delay, I'd have moved the meeting.",
+            "Had I known of the delay, I'd have rescheduled the meeting.",
+            "Had I known about the delay in advance, I'd have rescheduled the meeting.",
+            "Had I known about the delay beforehand, I'd have rescheduled the meeting.",
+            "Had I been aware of the delay, I'd have rescheduled the meeting.",
+            "Had I known about the delay, I'd have put off the meeting.",
+            "Had I known about the delay, I'd have put the meeting off."
           ]
         },
         "display_answer": "Had I known about the delay, I would have rescheduled the meeting.",
@@ -4872,19 +5061,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Nếu biết trước về sự chậm trễ, tôi đã dời lịch cuộc họp. (dùng đảo ngữ)"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "78a47c26f341f527196963b64ba4a0fad47006207bebc3b25b28a3c6e12b2b7f",
+      "content_hash": "eb03bcf35cab68239dca65ffab02e432ebbdd1495003fbdaf303d96ac7bc2fa2",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "88e85fe7-b202-5eb7-b8e7-68a9e9ed4093",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "dc016be6-440a-5624-a9dc-b49aba54ddba",
       "key": "en:exercise:cleft-translate-it-was",
       "key_data": {
@@ -4902,7 +5091,14 @@ select content_private.import_bundle($bundle${
             "It was the finance team who found the error.",
             "It was the finance department that found the error.",
             "It was the finance team that detected the error.",
-            "It was the finance team that found the mistake."
+            "It was the finance team that found the mistake.",
+            "It was the finance team that discovered the mistake.",
+            "It was the finance department that identified the mistake.",
+            "It was the finance team that spotted the mistake.",
+            "It was the finance team that noticed the error.",
+            "It was the finance team who spotted the error.",
+            "It was the finance team who detected the error.",
+            "It was the finance team that identified the mistake."
           ]
         },
         "display_answer": "It was the finance team that identified the error.",
@@ -4941,19 +5137,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chính bộ phận tài chính đã phát hiện ra lỗi. (dùng câu chẻ It was…)"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "d8396e83c1800ed6ca6e2dcc846fd7d0f14c77eb329682f36cffbc88583b457a",
+      "content_hash": "843aee55fceaa1af2463e959cd746e1ae5911a3fa7493c39817c1376f5433a55",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "222eebc1-bab9-56ca-a421-240d464c9926",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "91413e1d-b67a-5189-9072-b85a236e459b",
       "key": "en:exercise:cleft-translate-not-only",
       "key_data": {
@@ -4964,13 +5160,15 @@ select content_private.import_bundle($bundle${
             "Not only did the campaign increase sales, but it also improved brand image.",
             "Not only did the campaign increase sales, it also improved the brand image.",
             "Not only did the campaign increase sales, it also improved our brand image.",
-            "Not only did the campaign increase sales, but also improved the brand image.",
             "Not only did the campaign boost sales, but it also improved the brand image.",
             "Not only did the campaign raise sales, but it also improved the brand image.",
             "Not only did the campaign increase sales, but it also enhanced the brand image.",
             "Not only did the campaign increase sales, but it improved the brand image as well.",
             "Not only did the campaign increase sales, but it also improved the image of the brand.",
-            "Not only did the campaign increase sales, but it also improved its brand image."
+            "Not only did the campaign increase sales, but it also improved its brand image.",
+            "Not only did the campaign increase sales, but it also improved the brand's image.",
+            "Not only did the campaign boost sales, but it also improved our brand image.",
+            "Not only did the campaign increase sales, but it also improved our brand's image."
           ]
         },
         "display_answer": "Not only did the campaign increase sales, but it also improved our brand image.",
@@ -5009,8 +5207,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chiến dịch không chỉ tăng doanh số mà còn cải thiện hình ảnh thương hiệu. (bắt đầu bằng Not only)"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -5800,11 +5998,11 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "b4d363e40792f9a122c8dbd96b4bf930ea75b1e7fa250ecd947c7e2574821e8a",
+      "content_hash": "5740ff3d672f55e49ac645b559ed44e704f21f981d9921747cb634f2c8c600e6",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "44ba8888-a015-5bfb-b2fd-bee77ddaf254",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b86c41c4-92a3-5d79-a540-6879f5769df7",
       "key": "en:exercise:concession-fill-stance",
       "key_data": {
@@ -5812,15 +6010,23 @@ select content_private.import_bundle($bundle${
           "blanks": {
             "b1": [
               "presumably",
-              "probably"
+              "probably",
+              "doubtless",
+              "no doubt",
+              "most likely",
+              "likely"
             ],
             "b2": [
               "denying",
-              "doubt"
+              "doubt",
+              "question",
+              "disputing"
             ],
             "b3": [
               "currently",
-              "now"
+              "now",
+              "presently",
+              "at present"
             ]
           }
         },
@@ -5870,31 +6076,34 @@ select content_private.import_bundle($bundle${
             "width_hint": 9
           }
         ],
-        "template": "The director hasn't replied; {{b1}} she's still on the plane. There is no {{b2}} that the deal matters to her. We are {{b3}} preparing a backup plan, just in case."
+        "template": "The director hasn't replied; {{b1}} (chắc là) she's still on the plane. There is no {{b2}} that the deal matters to her. We are {{b3}} (hiện nay) preparing a backup plan, just in case."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "c5300c070587259b4d03678846a9269f59fec7ae2d4a7246f8bd09d93f16ad0a",
+      "content_hash": "af3991be4a64f6822d6c7c401f50b1dd8dc178b5eb0af2d74dcffc57a0b71f05",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "a1994f23-6490-5ebf-93c1-ac8e26f41e63",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4235cb06-e644-5779-ab20-2f0f1d383638",
       "key": "en:exercise:concession-fill-while-hinted",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "true"
+              "true",
+              "correct",
+              "undeniable"
             ],
             "b2": [
-              "said"
+              "said",
+              "being said"
             ]
           }
         },
@@ -5946,8 +6155,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "While it is {{b1}} that the course is expensive, the benefits are clear. That {{b2}}, not everyone can afford it."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -5958,7 +6167,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "1195a27a-d2c6-52ba-ba29-92fd1f8ea230",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2cd6e522-2a60-5d2b-84a4-aadf885a42be",
       "key": "en:exercise:concession-listen-that-said",
       "key_data": {
@@ -6007,8 +6216,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -6019,7 +6228,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "f344090f-a20a-564e-90ce-e5a3f5628835",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "122158a7-0b6d-5cd9-8d1e-d019952e3bf0",
       "key": "en:exercise:concession-mcq-currently",
       "key_data": {
@@ -6068,8 +6277,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn từ đúng: \"We are ___ recruiting three software engineers, so the team will grow next month.\" (ý: hiện nay)",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -6080,7 +6289,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "eb230ab7-d914-5d33-b1d0-e69bb01d6283",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "9330ef15-ef89-5155-a855-7d333726efde",
       "key": "en:exercise:concession-mcq-granted",
       "key_data": {
@@ -6129,8 +6338,8 @@ select content_private.import_bundle($bundle${
         "stem": "Đồng nghiệp nói: \"Launching in December is too risky.\" Bạn muốn thừa nhận một phần nhưng vẫn bảo vệ kế hoạch. Câu nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -6141,7 +6350,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "fdae6f97-fc53-5df7-aaea-bcfbc483a408",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c095f1e2-bdd4-5221-ad1a-3283b4fa3ace",
       "key": "en:exercise:concession-mcq-order",
       "key_data": {
@@ -6190,8 +6399,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn ỦNG HỘ việc mở văn phòng mới. Cách sắp xếp nào thuyết phục nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -6202,7 +6411,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "5c6d2fbc-6d14-5d88-a9fd-b20963398a47",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "717c288b-e157-5cfe-8e1f-67268d98955f",
       "key": "en:exercise:concession-mcq-stance",
       "key_data": {
@@ -6251,8 +6460,8 @@ select content_private.import_bundle($bundle${
         "stem": "\"The results are ___ impressive - even our critics have praised them.\" Trạng từ nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -6263,7 +6472,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "word_bank",
       "id": "18cf7d5e-5504-5226-8d9e-b5208fa9672f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "29f6b7c7-65e4-54a2-b54f-25d6a383ddfe",
       "key": "en:exercise:concession-order-take-your-point",
       "key_data": {
@@ -6322,19 +6531,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "1bed54f92fbafefbc9467d9116fea1ca0e6c617e736d7bc465db04ca585d175b",
+      "content_hash": "674939c11ea62205175ee7d63469331d3eff232f4ad32c3ca84ed2b2ff67599f",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "03db6771-14a7-526b-b95d-085dbaf84e38",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "6a6db57f-cf5f-5996-bbae-e5d979a7e7f7",
       "key": "en:exercise:concession-translate-admittedly",
       "key_data": {
@@ -6350,7 +6559,62 @@ select content_private.import_bundle($bundle${
             "Admittedly, the solution is expensive, but it will save money in the long run.",
             "Admittedly, this solution is expensive. However, it will save money in the long run.",
             "Admittedly this solution is expensive, but it will save money in the long run.",
-            "Admittedly, this solution is expensive, but it'll save money in the long run."
+            "Admittedly, this solution is expensive, but it'll save money in the long run.",
+            "Admittedly, this solution is expensive. However, in the long run it will save money.",
+            "Admittedly, this solution is expensive. However, it will save us money in the long run.",
+            "Admittedly, this solution is expensive. However, it will save money in the long term.",
+            "Admittedly, this solution is expensive, but in the long term it will save money.",
+            "Admittedly, this solution is expensive. However, in the long term it will save money.",
+            "Admittedly, this solution is expensive, but it will save us money in the long term.",
+            "Admittedly, this solution is expensive. However, it will save us money in the long term.",
+            "Admittedly, this solution is expensive, but it will save money over the long term.",
+            "Admittedly, this solution is expensive. However, it will save money over the long term.",
+            "Admittedly, this solution is expensive, but over the long term it will save money.",
+            "Admittedly, this solution is expensive. However, over the long term it will save money.",
+            "Admittedly, this solution is costly. However, it will save money in the long run.",
+            "Admittedly, this solution is costly. However, in the long run it will save money.",
+            "Admittedly, this solution is costly. However, it will save us money in the long run.",
+            "Admittedly, this solution is costly, but it will save money in the long term.",
+            "Admittedly, this solution is costly. However, it will save money in the long term.",
+            "Admittedly, this solution is costly, but in the long term it will save money.",
+            "Admittedly, this solution is costly. However, in the long term it will save money.",
+            "Admittedly, this solution is costly, but it will save us money in the long term.",
+            "Admittedly, this solution is costly. However, it will save us money in the long term.",
+            "Admittedly, this solution is costly, but it will save money over the long term.",
+            "Admittedly, this solution is costly. However, it will save money over the long term.",
+            "Admittedly, this solution is costly, but over the long term it will save money.",
+            "Admittedly, this solution is costly. However, over the long term it will save money.",
+            "Admittedly, the solution is expensive. However, it will save money in the long run.",
+            "Admittedly, the solution is expensive, but in the long run it will save money.",
+            "Admittedly, the solution is expensive. However, in the long run it will save money.",
+            "Admittedly, the solution is expensive, but it will save us money in the long run.",
+            "Admittedly, the solution is expensive. However, it will save us money in the long run.",
+            "Admittedly, the solution is expensive, but it will save money in the long term.",
+            "Admittedly, the solution is expensive. However, it will save money in the long term.",
+            "Admittedly, the solution is expensive, but in the long term it will save money.",
+            "Admittedly, the solution is expensive. However, in the long term it will save money.",
+            "Admittedly, the solution is expensive, but it will save us money in the long term.",
+            "Admittedly, the solution is expensive. However, it will save us money in the long term.",
+            "Admittedly, the solution is expensive, but it will save money over the long term.",
+            "Admittedly, the solution is expensive. However, it will save money over the long term.",
+            "Admittedly, the solution is expensive, but over the long term it will save money.",
+            "Admittedly, the solution is expensive. However, over the long term it will save money.",
+            "Admittedly, the solution is costly, but it will save money in the long run.",
+            "Admittedly, the solution is costly. However, it will save money in the long run.",
+            "Admittedly, the solution is costly, but in the long run it will save money.",
+            "Admittedly, the solution is costly. However, in the long run it will save money.",
+            "Admittedly, the solution is costly, but it will save us money in the long run.",
+            "Admittedly, the solution is costly. However, it will save us money in the long run.",
+            "Admittedly, the solution is costly, but it will save money in the long term.",
+            "Admittedly, the solution is costly. However, it will save money in the long term.",
+            "Admittedly, the solution is costly, but in the long term it will save money.",
+            "Admittedly, the solution is costly. However, in the long term it will save money.",
+            "Admittedly, the solution is costly, but it will save us money in the long term.",
+            "Admittedly, the solution is costly. However, it will save us money in the long term.",
+            "Admittedly, the solution is costly, but it will save money over the long term.",
+            "Admittedly, the solution is costly. However, it will save money over the long term.",
+            "Admittedly, the solution is costly, but over the long term it will save money.",
+            "Admittedly, the solution is costly. However, over the long term it will save money."
           ]
         },
         "display_answer": "Admittedly, this solution is expensive, but it will save money in the long run.",
@@ -6384,19 +6648,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Phải thừa nhận là giải pháp này tốn kém, nhưng về lâu dài nó sẽ giúp tiết kiệm tiền."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "54cb14a8803530020c89e3762aa2b1d430ad2c107c78fb49317a41589f73f08d",
+      "content_hash": "247cb74af1ec2ece1a5138adb0219fc11fb9d9178edb74d20a07a384595cdc11",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "7318a4e2-01df-58d2-852c-c76793b84220",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "915d7bca-9b71-5519-abcf-ce512c62c959",
       "key": "en:exercise:concession-translate-no-denying",
       "key_data": {
@@ -6417,7 +6681,184 @@ select content_private.import_bundle($bundle${
             "There is no denying that social media greatly influences young people.",
             "Undeniably, social media has a big influence on young people.",
             "Undeniably, social media has a huge impact on young people.",
-            "There is no denying that social media has a big influence on the youth."
+            "There is no denying that social media has a big influence on the youth.",
+            "There is no denying that social media has a big influence on the young.",
+            "There is no denying that social media has a big impact on the youth.",
+            "There is no denying that social media has a big impact on the young.",
+            "There is no denying that social media has a huge influence on the youth.",
+            "There is no denying that social media has a huge influence on the young.",
+            "There is no denying that social media has a huge impact on the youth.",
+            "There is no denying that social media has a huge impact on the young.",
+            "There is no denying that social media has a great influence on the youth.",
+            "There is no denying that social media has a great influence on the young.",
+            "There is no denying that social media has a great impact on young people.",
+            "There is no denying that social media has a great impact on the youth.",
+            "There is no denying that social media has a great impact on the young.",
+            "There is no denying that social media has a major influence on the youth.",
+            "There is no denying that social media has a major influence on the young.",
+            "There is no denying that social media has a major impact on the youth.",
+            "There is no denying that social media has a major impact on the young.",
+            "There is no denying that social media has a significant influence on the youth.",
+            "There is no denying that social media has a significant influence on the young.",
+            "There is no denying that social media has a significant impact on the youth.",
+            "There is no denying that social media has a significant impact on the young.",
+            "There is no denying that social media has a strong influence on the youth.",
+            "There is no denying that social media has a strong influence on the young.",
+            "There is no denying that social media has a strong impact on young people.",
+            "There is no denying that social media has a strong impact on the youth.",
+            "There is no denying that social media has a strong impact on the young.",
+            "There is no denying that social media has a considerable influence on young people.",
+            "There is no denying that social media has a considerable influence on the youth.",
+            "There is no denying that social media has a considerable influence on the young.",
+            "There is no denying that social media has a considerable impact on young people.",
+            "There is no denying that social media has a considerable impact on the youth.",
+            "There is no denying that social media has a considerable impact on the young.",
+            "There is no denying that social media has an enormous influence on young people.",
+            "There is no denying that social media has an enormous influence on the youth.",
+            "There is no denying that social media has an enormous influence on the young.",
+            "There is no denying that social media has an enormous impact on young people.",
+            "There is no denying that social media has an enormous impact on the youth.",
+            "There is no denying that social media has an enormous impact on the young.",
+            "There's no denying that social media has a big influence on the youth.",
+            "There's no denying that social media has a big influence on the young.",
+            "There's no denying that social media has a big impact on young people.",
+            "There's no denying that social media has a big impact on the youth.",
+            "There's no denying that social media has a big impact on the young.",
+            "There's no denying that social media has a huge influence on young people.",
+            "There's no denying that social media has a huge influence on the youth.",
+            "There's no denying that social media has a huge influence on the young.",
+            "There's no denying that social media has a huge impact on the youth.",
+            "There's no denying that social media has a huge impact on the young.",
+            "There's no denying that social media has a great influence on young people.",
+            "There's no denying that social media has a great influence on the youth.",
+            "There's no denying that social media has a great influence on the young.",
+            "There's no denying that social media has a great impact on young people.",
+            "There's no denying that social media has a great impact on the youth.",
+            "There's no denying that social media has a great impact on the young.",
+            "There's no denying that social media has a major influence on young people.",
+            "There's no denying that social media has a major influence on the youth.",
+            "There's no denying that social media has a major influence on the young.",
+            "There's no denying that social media has a major impact on young people.",
+            "There's no denying that social media has a major impact on the youth.",
+            "There's no denying that social media has a major impact on the young.",
+            "There's no denying that social media has a significant influence on young people.",
+            "There's no denying that social media has a significant influence on the youth.",
+            "There's no denying that social media has a significant influence on the young.",
+            "There's no denying that social media has a significant impact on young people.",
+            "There's no denying that social media has a significant impact on the youth.",
+            "There's no denying that social media has a significant impact on the young.",
+            "There's no denying that social media has a strong influence on young people.",
+            "There's no denying that social media has a strong influence on the youth.",
+            "There's no denying that social media has a strong influence on the young.",
+            "There's no denying that social media has a strong impact on young people.",
+            "There's no denying that social media has a strong impact on the youth.",
+            "There's no denying that social media has a strong impact on the young.",
+            "There's no denying that social media has a considerable influence on young people.",
+            "There's no denying that social media has a considerable influence on the youth.",
+            "There's no denying that social media has a considerable influence on the young.",
+            "There's no denying that social media has a considerable impact on young people.",
+            "There's no denying that social media has a considerable impact on the youth.",
+            "There's no denying that social media has a considerable impact on the young.",
+            "There's no denying that social media has an enormous influence on young people.",
+            "There's no denying that social media has an enormous influence on the youth.",
+            "There's no denying that social media has an enormous influence on the young.",
+            "There's no denying that social media has an enormous impact on young people.",
+            "There's no denying that social media has an enormous impact on the youth.",
+            "There's no denying that social media has an enormous impact on the young.",
+            "It is undeniable that social media has a big influence on young people.",
+            "It is undeniable that social media has a big influence on the youth.",
+            "It is undeniable that social media has a big influence on the young.",
+            "It is undeniable that social media has a big impact on young people.",
+            "It is undeniable that social media has a big impact on the youth.",
+            "It is undeniable that social media has a big impact on the young.",
+            "It is undeniable that social media has a huge influence on young people.",
+            "It is undeniable that social media has a huge influence on the youth.",
+            "It is undeniable that social media has a huge influence on the young.",
+            "It is undeniable that social media has a huge impact on young people.",
+            "It is undeniable that social media has a huge impact on the youth.",
+            "It is undeniable that social media has a huge impact on the young.",
+            "It is undeniable that social media has a great influence on young people.",
+            "It is undeniable that social media has a great influence on the youth.",
+            "It is undeniable that social media has a great influence on the young.",
+            "It is undeniable that social media has a great impact on young people.",
+            "It is undeniable that social media has a great impact on the youth.",
+            "It is undeniable that social media has a great impact on the young.",
+            "It is undeniable that social media has a major influence on young people.",
+            "It is undeniable that social media has a major influence on the youth.",
+            "It is undeniable that social media has a major influence on the young.",
+            "It is undeniable that social media has a major impact on young people.",
+            "It is undeniable that social media has a major impact on the youth.",
+            "It is undeniable that social media has a major impact on the young.",
+            "It is undeniable that social media has a significant influence on young people.",
+            "It is undeniable that social media has a significant influence on the youth.",
+            "It is undeniable that social media has a significant influence on the young.",
+            "It is undeniable that social media has a significant impact on young people.",
+            "It is undeniable that social media has a significant impact on the youth.",
+            "It is undeniable that social media has a significant impact on the young.",
+            "It is undeniable that social media has a strong influence on young people.",
+            "It is undeniable that social media has a strong influence on the youth.",
+            "It is undeniable that social media has a strong influence on the young.",
+            "It is undeniable that social media has a strong impact on young people.",
+            "It is undeniable that social media has a strong impact on the youth.",
+            "It is undeniable that social media has a strong impact on the young.",
+            "It is undeniable that social media has a considerable influence on young people.",
+            "It is undeniable that social media has a considerable influence on the youth.",
+            "It is undeniable that social media has a considerable influence on the young.",
+            "It is undeniable that social media has a considerable impact on young people.",
+            "It is undeniable that social media has a considerable impact on the youth.",
+            "It is undeniable that social media has a considerable impact on the young.",
+            "It is undeniable that social media has an enormous influence on young people.",
+            "It is undeniable that social media has an enormous influence on the youth.",
+            "It is undeniable that social media has an enormous influence on the young.",
+            "It is undeniable that social media has an enormous impact on young people.",
+            "It is undeniable that social media has an enormous impact on the youth.",
+            "It is undeniable that social media has an enormous impact on the young.",
+            "Undeniably, social media has a big influence on the youth.",
+            "Undeniably, social media has a big influence on the young.",
+            "Undeniably, social media has a big impact on young people.",
+            "Undeniably, social media has a big impact on the youth.",
+            "Undeniably, social media has a big impact on the young.",
+            "Undeniably, social media has a huge influence on young people.",
+            "Undeniably, social media has a huge influence on the youth.",
+            "Undeniably, social media has a huge influence on the young.",
+            "Undeniably, social media has a huge impact on the youth.",
+            "Undeniably, social media has a huge impact on the young.",
+            "Undeniably, social media has a great influence on young people.",
+            "Undeniably, social media has a great influence on the youth.",
+            "Undeniably, social media has a great influence on the young.",
+            "Undeniably, social media has a great impact on young people.",
+            "Undeniably, social media has a great impact on the youth.",
+            "Undeniably, social media has a great impact on the young.",
+            "Undeniably, social media has a major influence on young people.",
+            "Undeniably, social media has a major influence on the youth.",
+            "Undeniably, social media has a major influence on the young.",
+            "Undeniably, social media has a major impact on young people.",
+            "Undeniably, social media has a major impact on the youth.",
+            "Undeniably, social media has a major impact on the young.",
+            "Undeniably, social media has a significant influence on young people.",
+            "Undeniably, social media has a significant influence on the youth.",
+            "Undeniably, social media has a significant influence on the young.",
+            "Undeniably, social media has a significant impact on young people.",
+            "Undeniably, social media has a significant impact on the youth.",
+            "Undeniably, social media has a significant impact on the young.",
+            "Undeniably, social media has a strong influence on young people.",
+            "Undeniably, social media has a strong influence on the youth.",
+            "Undeniably, social media has a strong influence on the young.",
+            "Undeniably, social media has a strong impact on young people.",
+            "Undeniably, social media has a strong impact on the youth.",
+            "Undeniably, social media has a strong impact on the young.",
+            "Undeniably, social media has a considerable influence on young people.",
+            "Undeniably, social media has a considerable influence on the youth.",
+            "Undeniably, social media has a considerable influence on the young.",
+            "Undeniably, social media has a considerable impact on young people.",
+            "Undeniably, social media has a considerable impact on the youth.",
+            "Undeniably, social media has a considerable impact on the young.",
+            "Undeniably, social media has an enormous influence on young people.",
+            "Undeniably, social media has an enormous influence on the youth.",
+            "Undeniably, social media has an enormous influence on the young.",
+            "Undeniably, social media has an enormous impact on young people.",
+            "Undeniably, social media has an enormous impact on the youth.",
+            "Undeniably, social media has an enormous impact on the young."
           ]
         },
         "display_answer": "There is no denying that social media has a big influence on young people.",
@@ -6434,11 +6875,6 @@ select content_private.import_bundle($bundle${
             "answer": "There is no denying that social media has a big influence to young people.",
             "error_tag": "preposition",
             "feedback_vi": "Influence/impact đi với on - an influence on young people."
-          },
-          {
-            "answer": "Can't deny social media has a big influence on young people.",
-            "error_tag": "missing_subject",
-            "feedback_vi": "Câu tiếng Anh cần chủ ngữ; dùng There is no denying that… hoặc You can't deny that…."
           }
         ],
         "rubric": {
@@ -6456,19 +6892,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Không thể phủ nhận rằng mạng xã hội có ảnh hưởng lớn đến giới trẻ."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "vi",
-      "content_hash": "5fb04794a22df1708607d7ba14176f886b513231589f21dd30b58aa50178fede",
+      "content_hash": "d45b2ba31a12a06e6c036ceda028700c9e167727eb3fbca998d27f8c301887b5",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "77c1f8c7-b762-5f37-a9a1-433ed32cba06",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4235cb06-e644-5779-ab20-2f0f1d383638",
       "key": "en:exercise:concession-translate-to-vi-while",
       "key_data": {
@@ -6482,7 +6918,169 @@ select content_private.import_bundle($bundle${
             "Mặc dù đúng là giá cả đã tăng, lương còn tăng nhanh hơn.",
             "Tuy giá cả có tăng thật, nhưng lương còn tăng nhanh hơn.",
             "Đúng là giá đã tăng, nhưng lương còn tăng nhanh hơn nữa.",
-            "Tuy đúng là giá cả tăng lên, nhưng tiền lương còn tăng nhanh hơn."
+            "Tuy đúng là giá cả tăng lên, nhưng tiền lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả đã tăng, lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả đã tăng, lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả đã tăng, nhưng lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá cả đã tăng, lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá cả đã tăng, tiền lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả đã tăng, tiền lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả đã tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá cả đã tăng, tiền lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá cả tăng, nhưng lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả tăng, lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả tăng, lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả tăng, nhưng lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá cả tăng, lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá cả tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả tăng, tiền lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả tăng, tiền lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá cả tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá cả tăng, tiền lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá đã tăng, nhưng lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá đã tăng, lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá đã tăng, lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá đã tăng, nhưng lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá đã tăng, lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá đã tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá đã tăng, tiền lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá đã tăng, tiền lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá đã tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá đã tăng, tiền lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá tăng, nhưng lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá tăng, lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá tăng, lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá tăng, nhưng lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá tăng, lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá tăng, tiền lương còn tăng nhanh hơn.",
+            "Tuy đúng là giá tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá tăng, tiền lương thậm chí còn tăng nhanh hơn.",
+            "Tuy đúng là giá tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Tuy đúng là giá tăng, tiền lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá cả đã tăng, nhưng lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả đã tăng, lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả đã tăng, nhưng lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá cả đã tăng, lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá cả đã tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả đã tăng, tiền lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả đã tăng, tiền lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả đã tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá cả đã tăng, tiền lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá cả tăng, nhưng lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả tăng, lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả tăng, lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả tăng, nhưng lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá cả tăng, lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá cả tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả tăng, tiền lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả tăng, tiền lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá cả tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá cả tăng, tiền lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá đã tăng, nhưng lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá đã tăng, lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá đã tăng, lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá đã tăng, nhưng lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá đã tăng, lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá đã tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá đã tăng, tiền lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá đã tăng, tiền lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá đã tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá đã tăng, tiền lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá tăng, nhưng lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá tăng, lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá tăng, lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá tăng, nhưng lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá tăng, lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá tăng, tiền lương còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá tăng, tiền lương thậm chí còn tăng nhanh hơn.",
+            "Mặc dù đúng là giá tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Mặc dù đúng là giá tăng, tiền lương tăng còn nhanh hơn.",
+            "Dù đúng là giá cả đã tăng, lương còn tăng nhanh hơn.",
+            "Dù đúng là giá cả đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá cả đã tăng, lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá cả đã tăng, nhưng lương tăng còn nhanh hơn.",
+            "Dù đúng là giá cả đã tăng, lương tăng còn nhanh hơn.",
+            "Dù đúng là giá cả đã tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Dù đúng là giá cả đã tăng, tiền lương còn tăng nhanh hơn.",
+            "Dù đúng là giá cả đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá cả đã tăng, tiền lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá cả đã tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Dù đúng là giá cả đã tăng, tiền lương tăng còn nhanh hơn.",
+            "Dù đúng là giá cả tăng, nhưng lương còn tăng nhanh hơn.",
+            "Dù đúng là giá cả tăng, lương còn tăng nhanh hơn.",
+            "Dù đúng là giá cả tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá cả tăng, lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá cả tăng, nhưng lương tăng còn nhanh hơn.",
+            "Dù đúng là giá cả tăng, lương tăng còn nhanh hơn.",
+            "Dù đúng là giá cả tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Dù đúng là giá cả tăng, tiền lương còn tăng nhanh hơn.",
+            "Dù đúng là giá cả tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá cả tăng, tiền lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá cả tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Dù đúng là giá cả tăng, tiền lương tăng còn nhanh hơn.",
+            "Dù đúng là giá đã tăng, nhưng lương còn tăng nhanh hơn.",
+            "Dù đúng là giá đã tăng, lương còn tăng nhanh hơn.",
+            "Dù đúng là giá đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá đã tăng, lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá đã tăng, nhưng lương tăng còn nhanh hơn.",
+            "Dù đúng là giá đã tăng, lương tăng còn nhanh hơn.",
+            "Dù đúng là giá đã tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Dù đúng là giá đã tăng, tiền lương còn tăng nhanh hơn.",
+            "Dù đúng là giá đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá đã tăng, tiền lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá đã tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Dù đúng là giá đã tăng, tiền lương tăng còn nhanh hơn.",
+            "Dù đúng là giá tăng, nhưng lương còn tăng nhanh hơn.",
+            "Dù đúng là giá tăng, lương còn tăng nhanh hơn.",
+            "Dù đúng là giá tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá tăng, lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá tăng, nhưng lương tăng còn nhanh hơn.",
+            "Dù đúng là giá tăng, lương tăng còn nhanh hơn.",
+            "Dù đúng là giá tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Dù đúng là giá tăng, tiền lương còn tăng nhanh hơn.",
+            "Dù đúng là giá tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá tăng, tiền lương thậm chí còn tăng nhanh hơn.",
+            "Dù đúng là giá tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Dù đúng là giá tăng, tiền lương tăng còn nhanh hơn.",
+            "Đúng là giá cả đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Đúng là giá cả đã tăng, nhưng lương tăng còn nhanh hơn.",
+            "Đúng là giá cả đã tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Đúng là giá cả đã tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Đúng là giá cả tăng, nhưng lương còn tăng nhanh hơn.",
+            "Đúng là giá cả tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Đúng là giá cả tăng, nhưng lương tăng còn nhanh hơn.",
+            "Đúng là giá cả tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Đúng là giá cả tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Đúng là giá cả tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Đúng là giá đã tăng, nhưng lương còn tăng nhanh hơn.",
+            "Đúng là giá đã tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Đúng là giá đã tăng, nhưng lương tăng còn nhanh hơn.",
+            "Đúng là giá đã tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Đúng là giá đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Đúng là giá đã tăng, nhưng tiền lương tăng còn nhanh hơn.",
+            "Đúng là giá tăng, nhưng lương còn tăng nhanh hơn.",
+            "Đúng là giá tăng, nhưng lương thậm chí còn tăng nhanh hơn.",
+            "Đúng là giá tăng, nhưng lương tăng còn nhanh hơn.",
+            "Đúng là giá tăng, nhưng tiền lương còn tăng nhanh hơn.",
+            "Đúng là giá tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.",
+            "Đúng là giá tăng, nhưng tiền lương tăng còn nhanh hơn."
           ]
         },
         "display_answer": "Tuy đúng là giá cả đã tăng, nhưng lương còn tăng nhanh hơn.",
@@ -6516,41 +7114,56 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "While it is true that prices have risen, wages have risen even faster."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "b58aef36d11f1b405b2a18a4ae429fcbc4eb5e8d97686d64e9fd9acfc6a1ea3a",
+      "content_hash": "51822b6a36bb18ba62a629e60f2dfd603f01fdb03306db1beade41c48afd63ae",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "900f763e-0cef-50ea-a1bf-a8302c3629c3",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4088df0d-3eb1-5db0-92a0-bd16971dfea0",
       "key": "en:exercise:connotation-fill-affect-hinted",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "affect"
+              "affect",
+              "impair",
+              "harm",
+              "hurt",
+              "damage",
+              "undermine",
+              "reduce",
+              "hinder",
+              "hamper",
+              "weaken",
+              "diminish",
+              "disrupt",
+              "impact",
+              "limit"
             ],
             "b2": [
-              "effect"
+              "effect",
+              "impact",
+              "influence"
             ]
           }
         },
-        "display_answer": "Lack of sleep can affect your concentration, and the effect is often worse in the afternoon.",
+        "display_answer": "Lack of sleep can affect your concentration, and it can have a serious effect on your mood.",
         "explanation": {
-          "vi": "Sau can cần động từ - affect (ảnh hưởng đến). Sau the cần danh từ - effect (tác động). Hai từ đọc gần giống nhau nên phải dựa vào vị trí trong câu."
+          "vi": "Sau can cần động từ - affect (ảnh hưởng đến). Sau a serious cần danh từ - effect (tác động). Hai từ đọc gần giống nhau nên phải dựa vào vị trí trong câu."
         },
         "known_wrong": [
           {
             "answer": "effects",
             "error_tag": "affect_effect",
-            "feedback_vi": "Sau can là động từ nguyên mẫu; \"ảnh hưởng đến\" là affect, không phải effect(s)."
+            "feedback_vi": "Effect(s) là danh từ - ô sau can cần động từ affect, còn sau a serious cần danh từ số ít effect."
           },
           {
             "answer": "affection",
@@ -6580,34 +7193,38 @@ select content_private.import_bundle($bundle${
           }
         ],
         "hint_levels": [
-          "Nghĩa: Thiếu ngủ có thể ảnh hưởng đến khả năng tập trung, và tác động này thường tệ hơn vào buổi chiều.",
-          "Gợi ý: ô 1 là động từ (a…), ô 2 là danh từ đứng sau the (e…)."
+          "Nghĩa: Thiếu ngủ có thể ảnh hưởng đến khả năng tập trung, và có thể gây tác động nghiêm trọng đến tâm trạng.",
+          "Gợi ý: ô 1 là động từ (a…), ô 2 là danh từ đứng sau a serious (e…)."
         ],
-        "template": "Lack of sleep can {{b1}} your concentration, and the {{b2}} is often worse in the afternoon."
+        "template": "Lack of sleep can {{b1}} your concentration, and it can have a serious {{b2}} on your mood."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "0e650b739e2e47324713289676b5406fd55e355bc0d163d29464fc28433d0b85",
+      "content_hash": "f7b83bbb920b0e379b7bb7424aed3c4514770307d31809cf210aa60c5a8fc51d",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "809fee49-f6c4-5419-b3cb-9aa991a0fb07",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "0bdf0872-b72b-5d3e-88c9-3cfcfd97576b",
       "key": "en:exercise:connotation-fill-economical",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "economic"
+              "economic",
+              "financial"
             ],
             "b2": [
-              "economical"
+              "economical",
+              "cost-effective",
+              "affordable",
+              "inexpensive"
             ]
           }
         },
@@ -6653,21 +7270,21 @@ select content_private.import_bundle($bundle${
             "width_hint": 10
           }
         ],
-        "template": "During the {{b1}} downturn, many families switched to more {{b2}} ways of heating their homes."
+        "template": "During the {{b1}} downturn (suy thoái kinh tế), many families switched to more {{b2}} ways (tiết kiệm chi phí hơn) of heating their homes."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "c45bf18e225b7ee5ea166ff5b309a057ca2f1ca28433176a83bd1ca044cd4f94",
+      "content_hash": "a324557ceba08d5cf3f5e4dd0b3aa89799fc5c1ad0158009b7308b703f274ac5",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "e2f2b76e-d7fb-5803-b831-e3c05a959eb6",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "1be4b8e6-ce94-5a9c-9446-b1a954f97441",
       "key": "en:exercise:connotation-fill-sensible",
       "key_data": {
@@ -6675,11 +7292,30 @@ select content_private.import_bundle($bundle${
           "blanks": {
             "b1": [
               "sensible",
-              "wise"
+              "wise",
+              "smart",
+              "prudent",
+              "practical",
+              "reasonable",
+              "sound",
+              "good",
+              "right",
+              "clever",
+              "rational",
+              "shrewd"
             ],
             "b2": [
               "sensitive",
-              "controversial"
+              "controversial",
+              "delicate",
+              "contentious",
+              "divisive",
+              "touchy",
+              "difficult",
+              "tricky",
+              "awkward",
+              "heated",
+              "taboo"
             ]
           }
         },
@@ -6717,8 +7353,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Bringing an umbrella was a {{b1}} decision, but please avoid {{b2}} topics like politics at dinner."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -6729,7 +7365,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "ebce8c3e-9462-529d-a950-1402c4aaf4c9",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "1ce88ea5-b476-5b30-a8ce-5e26eab0f7cf",
       "key": "en:exercise:connotation-listen-notorious",
       "key_data": {
@@ -6778,8 +7414,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -6790,7 +7426,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "b9ac0fba-8767-5de0-a520-d599b9ebcdde",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "32569e31-b782-5fbe-8147-10c0c6b00dea",
       "key": "en:exercise:connotation-mcq-ad-copy",
       "key_data": {
@@ -6839,8 +7475,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn viết quảng cáo cho một khách sạn bình dân nhưng sạch đẹp. Câu nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -6851,7 +7487,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "6f33e482-4982-56eb-8fc5-5e7645b088c1",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3908e4f7-952a-55e7-9c54-eadb51b7352b",
       "key": "en:exercise:connotation-mcq-compliment",
       "key_data": {
@@ -6900,8 +7536,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn muốn khen một đồng nghiệp vừa giảm cân. Câu nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -6912,7 +7548,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "8497b3ba-65fb-5f58-a725-fb624b264c59",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8e80eb1b-8708-5fe3-a604-e45085807557",
       "key": "en:exercise:connotation-mcq-negative",
       "key_data": {
@@ -6961,8 +7597,8 @@ select content_private.import_bundle($bundle${
         "stem": "Từ nào thể hiện người nói CHÊ một người không chịu thay đổi ý kiến?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -6973,7 +7609,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "word_bank",
       "id": "d6d59a69-b102-5644-a7a5-b1dce17df71c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4088df0d-3eb1-5db0-92a0-bd16971dfea0",
       "key": "en:exercise:connotation-order-affect",
       "key_data": {
@@ -7047,19 +7683,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "ad4c0f22b12fc48eced979c36238549072ec1ebcc2679322d59d8157c12a15e9",
+      "content_hash": "ed86f4bba1743ff39b980b03dcc5533fefc0e86823e31e0e9d98998b88da8bca",
       "difficulty": 5,
       "exercise_type": "translate",
       "id": "b1b16ce8-6936-52c7-a388-03b740e566f8",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f5761396-b5c3-5ae2-9b88-9f1988013dc0",
       "key": "en:exercise:connotation-translate-assertive",
       "key_data": {
@@ -7078,7 +7714,16 @@ select content_private.import_bundle($bundle${
             "When you negotiate, you should be assertive rather than aggressive.",
             "You should be assertive, not aggressive, in negotiations.",
             "You should be assertive rather than aggressive in negotiations.",
-            "In negotiations, you should be assertive and not aggressive."
+            "In negotiations, you should be assertive and not aggressive.",
+            "In negotiation, you should be assertive, not aggressive.",
+            "During negotiations, you should be assertive, not aggressive.",
+            "During negotiations, you should be assertive rather than aggressive.",
+            "In negotiations, you ought to be assertive, not aggressive.",
+            "In negotiations, you need to be assertive, not aggressive.",
+            "In negotiations, you should be assertive instead of aggressive.",
+            "In negotiations, one should be assertive, not aggressive.",
+            "In negotiations, it is better to be assertive than aggressive.",
+            "In negotiations, you should be assertive rather than being aggressive."
           ]
         },
         "display_answer": "In negotiations, you should be assertive, not aggressive.",
@@ -7112,19 +7757,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Trong đàm phán, bạn nên quyết đoán chứ không nên hung hăng."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "a859abe8a3f08e659566c83e10fcf5f0edbcfbe84436dc1390e7e0a9584913e7",
+      "content_hash": "35279c89eb640a460d32a75ea83d220c8fe5d2cadd72442d491a5ceeb18c2cca",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "1eead3dd-65da-5b1f-a42f-c5ddd7f7740b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "62ee134b-c54f-5c99-8ea4-1c2a5148aa5a",
       "key": "en:exercise:connotation-translate-frugal",
       "key_data": {
@@ -7144,7 +7789,18 @@ select content_private.import_bundle($bundle${
             "My grandmother is very frugal, but she is never mean with her neighbours.",
             "My grandma is very frugal, but she is never stingy with her neighbours.",
             "My grandma is very frugal but never stingy with her neighbours.",
-            "My grandmother is extremely frugal, but she is never stingy with her neighbours."
+            "My grandmother is extremely frugal, but she is never stingy with her neighbours.",
+            "My grandmother is very thrifty but she is never stingy with her neighbours.",
+            "My grandmother is very thrifty, but she's never stingy with her neighbors.",
+            "My grandmother is very thrifty, but she is never stingy with her neighbors.",
+            "My grandmother is very frugal, but she has never been stingy with her neighbours.",
+            "My grandmother is very frugal, but she has never been stingy with her neighbors.",
+            "My grandmother is very frugal, but she is never mean to her neighbours.",
+            "My grandmother is very frugal, but she is never mean with her neighbors.",
+            "My grandma is very frugal, but she's never stingy with her neighbours.",
+            "My grandma is very frugal, but she is never stingy with her neighbors.",
+            "My grandmother is really frugal, but she is never stingy with her neighbours.",
+            "My grandmother is very frugal, but she is never stingy towards her neighbours."
           ]
         },
         "display_answer": "My grandmother is very frugal, but she is never stingy with her neighbours.",
@@ -7183,19 +7839,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Bà tôi rất tằn tiện nhưng không bao giờ keo kiệt với hàng xóm."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "vi",
-      "content_hash": "7d9f1fb8f80c3fb2b4829a8f17d745127ca37c926c2faa10fe2109ce1ade940d",
+      "content_hash": "193a7271b565dba8d7322f9abbe5f1336d406e2acacf8a033a6a8b01764921c8",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "5efbfe57-aa8b-576c-a001-2b4e1de64dce",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "70d89040-0012-569f-93b1-67a387acf9fb",
       "key": "en:exercise:connotation-translate-to-vi-childlike",
       "key_data": {
@@ -7207,7 +7863,16 @@ select content_private.import_bundle($bundle${
             "Mặc dù đã lớn tuổi, ông ấy vẫn có sự tò mò hồn nhiên như trẻ thơ về mọi thứ.",
             "Dù đã có tuổi, anh ấy vẫn tò mò hồn nhiên như trẻ con về mọi thứ.",
             "Dù tuổi đã cao, ông ấy vẫn có sự tò mò như trẻ thơ về mọi thứ.",
-            "Dù đã lớn tuổi, ông ấy vẫn tò mò về mọi thứ như một đứa trẻ."
+            "Dù đã lớn tuổi, ông ấy vẫn tò mò về mọi thứ như một đứa trẻ.",
+            "Dù đã lớn tuổi, ông ấy vẫn tò mò về mọi thứ một cách hồn nhiên như trẻ thơ.",
+            "Mặc dù đã lớn tuổi, ông ấy vẫn tò mò về mọi thứ một cách hồn nhiên như trẻ con.",
+            "Dù đã lớn tuổi, ông ấy vẫn có sự tò mò hồn nhiên như trẻ con về mọi thứ.",
+            "Dù đã lớn tuổi, ông vẫn có sự tò mò hồn nhiên như trẻ thơ về mọi thứ.",
+            "Dù tuổi đã cao, ông ấy vẫn tò mò hồn nhiên như trẻ thơ về mọi thứ.",
+            "Bất chấp tuổi tác, ông ấy vẫn có sự tò mò hồn nhiên về mọi thứ.",
+            "Dù đã lớn tuổi, anh ấy vẫn có sự tò mò hồn nhiên như trẻ thơ về mọi thứ.",
+            "Dù đã lớn tuổi, ông ấy vẫn có óc tò mò hồn nhiên như trẻ thơ về mọi điều.",
+            "Dù đã lớn tuổi, ông ấy vẫn có sự tò mò như trẻ con về mọi thứ."
           ]
         },
         "display_answer": "Dù đã lớn tuổi, ông ấy vẫn có sự tò mò hồn nhiên như trẻ thơ về mọi thứ.",
@@ -7236,8 +7901,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Despite his age, he has a childlike curiosity about everything."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -12854,11 +13519,11 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "655dbbf1838ac99253d8284cfac05cff1d4e32de67967c9021df6afc8da1c405",
+      "content_hash": "a8571459049ebb06ecfb8a0697b5d8f362ed85afb108bdbe74b9ad941cd5cddc",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "5e5c7c25-c8ea-5192-ad19-8d928df31226",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c8db5f45-8554-5155-8ceb-2d3108fa1b51",
       "key": "en:exercise:ellipsis-fill-emphasis-hinted",
       "key_data": {
@@ -12868,29 +13533,26 @@ select content_private.import_bundle($bundle${
               "did"
             ],
             "b2": [
-              "whatsoever"
+              "whatsoever",
+              "whatever",
+              "at all"
             ]
           }
         },
-        "display_answer": "I did lock the door - I remember checking it twice. And there was no sign whatsoever of a break-in.",
+        "display_answer": "I did lock the door last night - I remember checking it twice. And there was no sign whatsoever of a break-in.",
         "explanation": {
-          "vi": "Did + lock (nguyên mẫu) nhấn mạnh, phản bác nghi ngờ \"chưa khoá\". No sign whatsoever = hoàn toàn không có dấu hiệu nào."
+          "vi": "Did + lock (nguyên mẫu) nhấn mạnh, phản bác nghi ngờ \"chưa khoá\". No sign whatsoever (hoặc at all, whatever) = hoàn toàn không có dấu hiệu nào."
         },
         "known_wrong": [
           {
             "answer": "do",
             "error_tag": "emphatic_do",
-            "feedback_vi": "Việc khoá cửa đã xảy ra trong quá khứ nên dùng did."
+            "feedback_vi": "Việc khoá cửa đã xảy ra trong quá khứ (last night) nên dùng did."
           },
           {
             "answer": "was",
             "error_tag": "emphatic_do",
             "feedback_vi": "Sau was không dùng động từ nguyên mẫu lock; nhấn mạnh hành động quá khứ đơn bằng did."
-          },
-          {
-            "answer": "whatever",
-            "error_tag": "whatsoever",
-            "feedback_vi": "Sau no + danh từ, từ nhấn mạnh là whatsoever (hoặc at all), không phải whatever."
           }
         ],
         "rubric": {
@@ -12915,24 +13577,24 @@ select content_private.import_bundle($bundle${
           }
         ],
         "hint_levels": [
-          "Nghĩa: Tôi có khoá cửa thật mà - tôi nhớ đã kiểm tra hai lần. Và hoàn toàn không có dấu hiệu đột nhập nào cả.",
+          "Nghĩa: Tối qua tôi có khoá cửa thật mà - tôi nhớ đã kiểm tra hai lần. Và hoàn toàn không có dấu hiệu đột nhập nào cả.",
           "Gợi ý: ô 1 là trợ động từ quá khứ để nhấn mạnh; ô 2 là trạng từ nhấn mạnh phủ định (w…)."
         ],
-        "template": "I {{b1}} lock the door - I remember checking it twice. And there was no sign {{b2}} of a break-in."
+        "template": "I {{b1}} lock the door last night - I remember checking it twice. And there was no sign {{b2}} of a break-in."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "619c5a6d6952e49ea053d6dd8f8661dd662c8ac6a7b2aea2eb41d0fdfa9e08bf",
+      "content_hash": "6e734431c9deb3096b552f1c093e93e03ba840146022f2717e7ea502f53605b5",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "5315b308-ca70-5bca-ab96-8a56a32efdfa",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8644a427-b7d1-5490-9f6a-c93a4f51b559",
       "key": "en:exercise:ellipsis-fill-substitution",
       "key_data": {
@@ -12945,7 +13607,13 @@ select content_private.import_bundle($bundle${
               "one"
             ],
             "b3": [
-              "ones"
+              "ones",
+              "laptops",
+              "machines",
+              "computers",
+              "devices",
+              "models",
+              "units"
             ]
           }
         },
@@ -12997,8 +13665,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Staff who wish to attend the training may {{b1}} so by Friday. If you need a laptop, borrow {{b2}} from IT; the old {{b3}} in the cupboard don't work."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -13009,7 +13677,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "c3180632-fcef-5cf2-be2c-a4e2f196caa1",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "883a20c2-8939-5eb4-866b-3cc9b9eb4aaa",
       "key": "en:exercise:ellipsis-listen-not-bad",
       "key_data": {
@@ -13058,8 +13726,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -13070,7 +13738,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "3a84efbf-5cb4-5506-b87e-82c9a6b73d9b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "e410b05c-bbfc-538a-af40-1335ec49289c",
       "key": "en:exercise:ellipsis-mcq-hope-not",
       "key_data": {
@@ -13119,8 +13787,8 @@ select content_private.import_bundle($bundle${
         "stem": "\"Do you think the flight will be cancelled?\" - Bạn mong là chuyến bay KHÔNG bị huỷ. Bạn trả lời thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -13131,7 +13799,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "3a70eef1-e1e9-532f-a056-364938cb8879",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "17fd4a7f-7cc5-5b70-9b73-fb05c5211daa",
       "key": "en:exercise:ellipsis-mcq-irony",
       "key_data": {
@@ -13180,8 +13848,8 @@ select content_private.import_bundle($bundle${
         "stem": "Đồng nghiệp hỏi về khách sạn bạn vừa ở: phòng nhỏ, ồn, giá rất cao. Bạn muốn chê một cách hóm hỉnh, lịch sự. Câu nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -13192,7 +13860,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "1641b2af-63f9-58b4-8177-bd3295d5c19f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3a20a48f-f96a-58e8-ba4a-2a705642b431",
       "key": "en:exercise:ellipsis-mcq-understatement",
       "key_data": {
@@ -13241,19 +13909,19 @@ select content_private.import_bundle($bundle${
         "stem": "Kỹ sư IT nói: \"We've got a bit of a problem - the whole customer database seems to have disappeared.\" Mức độ thật của vấn đề là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "9aff4f995ff63a5ac7357638c2b1d6f67d6c198ec3ebef0244f37bdffd990fbc",
+      "content_hash": "b6186d1608e91c35bec4dec174cb8ea32258ef2a4760499a6bf098ba4a2c8797",
       "difficulty": 4,
       "exercise_type": "word_bank",
       "id": "c01eea97-b4d2-5662-aa80-5b3e5510b27c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f8a41c57-3a7b-5f5b-a90b-10d66f3250b3",
       "key": "en:exercise:ellipsis-order-auxiliary",
       "key_data": {
@@ -13267,12 +13935,20 @@ select content_private.import_bundle($bundle${
               "e-and",
               "e-she2",
               "e-did"
+            ],
+            [
+              "e-promised",
+              "e-finish",
+              "e-project",
+              "e-before",
+              "e-and",
+              "e-did"
             ]
           ]
         },
         "display_answer": "She promised to finish the project before the deadline, and she did.",
         "explanation": {
-          "vi": "Vế sau chỉ cần trợ động từ did, thay cho finished the project before the deadline - đó là tỉnh lược. Promise + to V nên dùng to finish; finished là thừa."
+          "vi": "Vế sau chỉ cần trợ động từ did, thay cho finished the project before the deadline - đó là tỉnh lược. Promise + to V nên dùng to finish; finishing không hợp sau promised. Bỏ she ở vế sau (…, and did) cũng đúng."
         },
         "known_wrong": [],
         "rubric": {
@@ -13305,8 +13981,8 @@ select content_private.import_bundle($bundle${
             "text": "She promised"
           },
           {
-            "id": "e-finished",
-            "text": "finished"
+            "id": "e-finishing",
+            "text": "finishing"
           },
           {
             "id": "e-and",
@@ -13322,19 +13998,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "3a8b4d13c9a736711dde707a01f386679dbebce525b0c7696ce2294ba9e4924f",
+      "content_hash": "d03f88827d181cf4749d55af56b947fdc2c8ec5100847f8d97e2a17e039b99a3",
       "difficulty": 5,
       "exercise_type": "translate",
       "id": "a0a92135-b1ce-53a2-bd77-1f742ccf5cd7",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c8db5f45-8554-5155-8ceb-2d3108fa1b51",
       "key": "en:exercise:ellipsis-translate-emphatic-do",
       "key_data": {
@@ -13354,7 +14030,67 @@ select content_private.import_bundle($bundle${
             "I did send him the email, but he never wrote back.",
             "I did send him an email, but he never responded.",
             "I did send him the email, but he never responded.",
-            "I did send him the email but he never replied."
+            "I did send him the email but he never replied.",
+            "I did send him the email, but he never replied.",
+            "I did send him the email, but he didn't reply.",
+            "I did send him the email, but he did not reply.",
+            "I did send him the email, but he has never replied.",
+            "I did send him the email, but he hasn't replied.",
+            "I did send him the email, but he still hasn't replied.",
+            "I did send him the email, but he never responded.",
+            "I did send him the email, but he never answered.",
+            "I did send him the email, but he never wrote back.",
+            "I did send him the email, but he didn't respond.",
+            "I did send him the email, but he never got back to me.",
+            "I did send him the email, but he didn't reply at all.",
+            "I did send him an email, but he never replied.",
+            "I did send him an email, but he didn't reply.",
+            "I did send him an email, but he did not reply.",
+            "I did send him an email, but he has never replied.",
+            "I did send him an email, but he hasn't replied.",
+            "I did send him an email, but he still hasn't replied.",
+            "I did send him an email, but he never responded.",
+            "I did send him an email, but he never answered.",
+            "I did send him an email, but he never wrote back.",
+            "I did send him an email, but he didn't respond.",
+            "I did send him an email, but he never got back to me.",
+            "I did send him an email, but he didn't reply at all.",
+            "I did send the email to him, but he never replied.",
+            "I did send the email to him, but he didn't reply.",
+            "I did send the email to him, but he did not reply.",
+            "I did send the email to him, but he has never replied.",
+            "I did send the email to him, but he hasn't replied.",
+            "I did send the email to him, but he still hasn't replied.",
+            "I did send the email to him, but he never responded.",
+            "I did send the email to him, but he never answered.",
+            "I did send the email to him, but he never wrote back.",
+            "I did send the email to him, but he didn't respond.",
+            "I did send the email to him, but he never got back to me.",
+            "I did send the email to him, but he didn't reply at all.",
+            "I did send an email to him, but he never replied.",
+            "I did send an email to him, but he didn't reply.",
+            "I did send an email to him, but he did not reply.",
+            "I did send an email to him, but he has never replied.",
+            "I did send an email to him, but he hasn't replied.",
+            "I did send an email to him, but he still hasn't replied.",
+            "I did send an email to him, but he never responded.",
+            "I did send an email to him, but he never answered.",
+            "I did send an email to him, but he never wrote back.",
+            "I did send an email to him, but he didn't respond.",
+            "I did send an email to him, but he never got back to me.",
+            "I did send an email to him, but he didn't reply at all.",
+            "I did email him, but he never replied.",
+            "I did email him, but he didn't reply.",
+            "I did email him, but he did not reply.",
+            "I did email him, but he has never replied.",
+            "I did email him, but he hasn't replied.",
+            "I did email him, but he still hasn't replied.",
+            "I did email him, but he never responded.",
+            "I did email him, but he never answered.",
+            "I did email him, but he never wrote back.",
+            "I did email him, but he didn't respond.",
+            "I did email him, but he never got back to me.",
+            "I did email him, but he didn't reply at all."
           ]
         },
         "display_answer": "I did send him the email, but he never replied.",
@@ -13393,19 +14129,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tôi có gửi email cho anh ấy thật mà, nhưng anh ấy không hề trả lời. (dùng did để nhấn mạnh)"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "2102f425244d3e5bdca89ed07886b9998860754a5cafb6debb1e7b57e2075aeb",
+      "content_hash": "3fbfdb49702f2b7d61516d5c8b20e03e38940abf8d75c625b361bbbde080990b",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "b6d5e8ee-8017-549e-b554-d4af009894f2",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7bcff34c-cba9-589a-acd3-ebba81c3a0e8",
       "key": "en:exercise:ellipsis-translate-the-very",
       "key_data": {
@@ -13424,7 +14160,135 @@ select content_private.import_bundle($bundle${
             "That is the very problem we had warned about from the start.",
             "This is the very problem we warned about from the start.",
             "That is the very problem we warned about at the start.",
-            "That was the very problem we warned about from the start."
+            "That was the very problem we warned about from the start.",
+            "That is the very problem we warned about from the start.",
+            "That is the very problem we warned about from the beginning.",
+            "That is the very problem we warned about from the outset.",
+            "That is the very problem we warned about at the start.",
+            "That is the very problem that we warned about from the start.",
+            "That is the very problem that we warned about from the beginning.",
+            "That is the very problem that we warned about from the outset.",
+            "That is the very problem that we warned about at the start.",
+            "That is the very problem we warned you about from the start.",
+            "That is the very problem we warned you about from the beginning.",
+            "That is the very problem we warned you about from the outset.",
+            "That is the very problem we warned you about at the start.",
+            "That is the very problem we had warned about from the start.",
+            "That is the very problem we had warned about from the beginning.",
+            "That is the very problem we had warned about from the outset.",
+            "That is the very problem we had warned about at the start.",
+            "That is the very issue we warned about from the start.",
+            "That is the very issue we warned about from the beginning.",
+            "That is the very issue we warned about from the outset.",
+            "That is the very issue we warned about at the start.",
+            "That is the very issue that we warned about from the start.",
+            "That is the very issue that we warned about from the beginning.",
+            "That is the very issue that we warned about from the outset.",
+            "That is the very issue that we warned about at the start.",
+            "That is the very issue we warned you about from the start.",
+            "That is the very issue we warned you about from the beginning.",
+            "That is the very issue we warned you about from the outset.",
+            "That is the very issue we warned you about at the start.",
+            "That is the very issue we had warned about from the start.",
+            "That is the very issue we had warned about from the beginning.",
+            "That is the very issue we had warned about from the outset.",
+            "That is the very issue we had warned about at the start.",
+            "That's the very problem we warned about from the start.",
+            "That's the very problem we warned about from the beginning.",
+            "That's the very problem we warned about from the outset.",
+            "That's the very problem we warned about at the start.",
+            "That's the very problem that we warned about from the start.",
+            "That's the very problem that we warned about from the beginning.",
+            "That's the very problem that we warned about from the outset.",
+            "That's the very problem that we warned about at the start.",
+            "That's the very problem we warned you about from the start.",
+            "That's the very problem we warned you about from the beginning.",
+            "That's the very problem we warned you about from the outset.",
+            "That's the very problem we warned you about at the start.",
+            "That's the very problem we had warned about from the start.",
+            "That's the very problem we had warned about from the beginning.",
+            "That's the very problem we had warned about from the outset.",
+            "That's the very problem we had warned about at the start.",
+            "That's the very issue we warned about from the start.",
+            "That's the very issue we warned about from the beginning.",
+            "That's the very issue we warned about from the outset.",
+            "That's the very issue we warned about at the start.",
+            "That's the very issue that we warned about from the start.",
+            "That's the very issue that we warned about from the beginning.",
+            "That's the very issue that we warned about from the outset.",
+            "That's the very issue that we warned about at the start.",
+            "That's the very issue we warned you about from the start.",
+            "That's the very issue we warned you about from the beginning.",
+            "That's the very issue we warned you about from the outset.",
+            "That's the very issue we warned you about at the start.",
+            "That's the very issue we had warned about from the start.",
+            "That's the very issue we had warned about from the beginning.",
+            "That's the very issue we had warned about from the outset.",
+            "That's the very issue we had warned about at the start.",
+            "This is the very problem we warned about from the start.",
+            "This is the very problem we warned about from the beginning.",
+            "This is the very problem we warned about from the outset.",
+            "This is the very problem we warned about at the start.",
+            "This is the very problem that we warned about from the start.",
+            "This is the very problem that we warned about from the beginning.",
+            "This is the very problem that we warned about from the outset.",
+            "This is the very problem that we warned about at the start.",
+            "This is the very problem we warned you about from the start.",
+            "This is the very problem we warned you about from the beginning.",
+            "This is the very problem we warned you about from the outset.",
+            "This is the very problem we warned you about at the start.",
+            "This is the very problem we had warned about from the start.",
+            "This is the very problem we had warned about from the beginning.",
+            "This is the very problem we had warned about from the outset.",
+            "This is the very problem we had warned about at the start.",
+            "This is the very issue we warned about from the start.",
+            "This is the very issue we warned about from the beginning.",
+            "This is the very issue we warned about from the outset.",
+            "This is the very issue we warned about at the start.",
+            "This is the very issue that we warned about from the start.",
+            "This is the very issue that we warned about from the beginning.",
+            "This is the very issue that we warned about from the outset.",
+            "This is the very issue that we warned about at the start.",
+            "This is the very issue we warned you about from the start.",
+            "This is the very issue we warned you about from the beginning.",
+            "This is the very issue we warned you about from the outset.",
+            "This is the very issue we warned you about at the start.",
+            "This is the very issue we had warned about from the start.",
+            "This is the very issue we had warned about from the beginning.",
+            "This is the very issue we had warned about from the outset.",
+            "This is the very issue we had warned about at the start.",
+            "That was the very problem we warned about from the start.",
+            "That was the very problem we warned about from the beginning.",
+            "That was the very problem we warned about from the outset.",
+            "That was the very problem we warned about at the start.",
+            "That was the very problem that we warned about from the start.",
+            "That was the very problem that we warned about from the beginning.",
+            "That was the very problem that we warned about from the outset.",
+            "That was the very problem that we warned about at the start.",
+            "That was the very problem we warned you about from the start.",
+            "That was the very problem we warned you about from the beginning.",
+            "That was the very problem we warned you about from the outset.",
+            "That was the very problem we warned you about at the start.",
+            "That was the very problem we had warned about from the start.",
+            "That was the very problem we had warned about from the beginning.",
+            "That was the very problem we had warned about from the outset.",
+            "That was the very problem we had warned about at the start.",
+            "That was the very issue we warned about from the start.",
+            "That was the very issue we warned about from the beginning.",
+            "That was the very issue we warned about from the outset.",
+            "That was the very issue we warned about at the start.",
+            "That was the very issue that we warned about from the start.",
+            "That was the very issue that we warned about from the beginning.",
+            "That was the very issue that we warned about from the outset.",
+            "That was the very issue that we warned about at the start.",
+            "That was the very issue we warned you about from the start.",
+            "That was the very issue we warned you about from the beginning.",
+            "That was the very issue we warned you about from the outset.",
+            "That was the very issue we warned you about at the start.",
+            "That was the very issue we had warned about from the start.",
+            "That was the very issue we had warned about from the beginning.",
+            "That was the very issue we had warned about from the outset.",
+            "That was the very issue we had warned about at the start."
           ]
         },
         "display_answer": "That is the very problem we warned about from the start.",
@@ -13458,19 +14322,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Đó chính là vấn đề mà chúng tôi đã cảnh báo từ đầu. (dùng the very)"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "vi",
-      "content_hash": "744eb42d43a05aa58f6b8d4054cb080389ca87ca6e1a501c509240f19740ca73",
+      "content_hash": "ac168177c05ce7397195085716762a5716a510ccec60badcc365ac919b42f615",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "6ebeb5df-cf42-5d84-be63-db22ad96840b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "36f6e2e3-fa87-56c3-be3a-241274a9f9f2",
       "key": "en:exercise:ellipsis-translate-to-vi-not-exactly",
       "key_data": {
@@ -13483,7 +14347,17 @@ select content_private.import_bundle($bundle${
             "Ngày nào cũng làm việc đến nửa đêm thì không lý tưởng chút nào.",
             "Làm việc đến nửa đêm mỗi ngày hoàn toàn không lý tưởng.",
             "Ngày nào cũng làm việc tới nửa đêm thì chẳng lý tưởng gì cả.",
-            "Ngày nào cũng làm việc đến nửa đêm thì chẳng hay ho gì."
+            "Ngày nào cũng làm việc đến nửa đêm thì chẳng hay ho gì.",
+            "Làm việc đến nửa đêm hằng ngày thì chẳng lý tưởng chút nào.",
+            "Việc ngày nào cũng làm việc đến nửa đêm chẳng lý tưởng chút nào.",
+            "Ngày nào cũng làm việc đến tận nửa đêm thì chẳng lý tưởng chút nào.",
+            "Làm việc đến tận nửa đêm mỗi ngày thì chẳng lý tưởng chút nào.",
+            "Ngày nào cũng làm việc đến nửa đêm thì khó mà lý tưởng được.",
+            "Ngày nào cũng làm việc đến nửa đêm thì chẳng hề lý tưởng.",
+            "Ngày nào cũng làm việc đến nửa đêm thì thật không lý tưởng.",
+            "Làm việc đến nửa đêm mỗi ngày thì không lý tưởng chút nào.",
+            "Làm việc đến nửa đêm mỗi ngày thì chẳng lý tưởng gì cả.",
+            "Làm việc đến nửa đêm mỗi ngày chẳng lý tưởng chút nào."
           ]
         },
         "display_answer": "Ngày nào cũng làm việc đến nửa đêm thì chẳng lý tưởng chút nào.",
@@ -13517,8 +14391,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Working until midnight every day is hardly ideal."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -21711,11 +22585,11 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "42ab15cb0dd650fd7d8ba8d14d517c77fe13d2d1cf06d412a76a9786d825ae94",
+      "content_hash": "ee73ec567dfedeaace508dc64b8af5397cb9ab4b10d7058c055cb9991071ad77",
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "842df10a-f463-52f7-ab39-62c06f16de7e",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "77cf369b-88ce-567e-9178-eb2cab82b8d5",
       "key": "en:exercise:hedging-fill-intensifier-hinted",
       "key_data": {
@@ -21726,24 +22600,34 @@ select content_private.import_bundle($bundle${
               "significantly",
               "much",
               "substantially",
-              "far"
+              "far",
+              "markedly",
+              "noticeably",
+              "appreciably",
+              "dramatically",
+              "vastly",
+              "enormously",
+              "massively",
+              "a lot",
+              "a great deal"
             ],
             "b2": [
               "highly",
-              "extremely",
-              "remarkably"
+              "strongly",
+              "widely",
+              "warmly"
             ]
           }
         },
-        "display_answer": "Costs were considerably higher than last year, and the new software is highly effective.",
+        "display_answer": "Costs were considerably higher than last year, up by 40 per cent, and the new software is highly recommended by users.",
         "explanation": {
-          "vi": "Trước so sánh hơn (higher) dùng considerably/significantly/much, không dùng very. Highly là collocation chuẩn với effective trong văn trang trọng."
+          "vi": "Trước so sánh hơn (higher) dùng considerably/significantly/much, không dùng very. Highly recommended là collocation chuẩn (còn highly effective, highly likely)."
         },
         "known_wrong": [
           {
             "answer": "very",
             "error_tag": "overuse_very",
-            "feedback_vi": "Very không đứng trước so sánh hơn (very higher là sai), và highly effective tự nhiên hơn very effective trong báo cáo."
+            "feedback_vi": "Very không đứng trước so sánh hơn (very higher là sai), và very recommended không tự nhiên - cụm chuẩn là highly recommended."
           },
           {
             "answer": "high",
@@ -21778,42 +22662,44 @@ select content_private.import_bundle($bundle${
           }
         ],
         "hint_levels": [
-          "Nghĩa của câu: Chi phí cao hơn đáng kể so với năm ngoái, và phần mềm mới rất hiệu quả.",
-          "Gợi ý: ô 1 là trạng từ đứng trước so sánh hơn (con-SID-…); ô 2 là trạng từ đi với effective, recommended (h…)."
+          "Nghĩa của câu: Chi phí cao hơn đáng kể so với năm ngoái (tăng 40%), và phần mềm mới được người dùng đánh giá rất cao.",
+          "Gợi ý: ô 1 là trạng từ đứng trước so sánh hơn (con-SID-…); ô 2 là trạng từ đi với recommended, effective, likely (h…)."
         ],
-        "template": "Costs were {{b1}} higher than last year, and the new software is {{b2}} effective."
+        "template": "Costs were {{b1}} higher than last year, up by 40 per cent, and the new software is {{b2}} recommended by users."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "929441c482765c7e4fcf792fc6f77779e8c7b89a5254979ef89512730c3e5d3e",
+      "content_hash": "633d20ddbb38a296d9ef5f9df897391860ee65383c50653d4add05cbb324f818",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "2feeb860-cfb5-5406-a91c-b1d836a15935",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "a2d06a17-8d3e-5aae-b36c-174cf6cd8ce6",
       "key": "en:exercise:hedging-fill-tend-likely",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "are"
+              "are",
+              "seem",
+              "appear",
+              "remain",
+              "look"
             ],
             "b2": [
-              "spend",
-              "shop",
-              "buy"
+              "spend"
             ]
           }
         },
-        "display_answer": "Prices are likely to rise further, as consumers tend to spend more in the run-up to Tết.",
+        "display_answer": "Prices are likely to rise further, as consumers tend to spend more money in the run-up to Tết.",
         "explanation": {
-          "vi": "Likely là tính từ nên cần be (prices are likely to). To trong tend to là dấu hiệu động từ nguyên mẫu, nên theo sau là spend."
+          "vi": "Likely là tính từ nên cần động từ nối, điển hình là be (prices are likely to). To trong tend to là dấu hiệu động từ nguyên mẫu, nên theo sau là spend."
         },
         "known_wrong": [
           {
@@ -21853,10 +22739,10 @@ select content_private.import_bundle($bundle${
             "width_hint": 5
           }
         ],
-        "template": "Prices {{b1}} likely to rise further, as consumers tend to {{b2}} more in the run-up to Tết."
+        "template": "Prices {{b1}} likely to rise further, as consumers tend to {{b2}} more money in the run-up to Tết."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -21867,7 +22753,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "listen",
       "id": "1ba609d0-35ce-55eb-8338-a8af48c76041",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "e56d8b02-61b1-509d-a617-bba4741be5fb",
       "key": "en:exercise:hedging-listen-tend",
       "key_data": {
@@ -21916,8 +22802,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -21928,7 +22814,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "71f7108e-dbc2-54ab-8ac2-3b19748e71af",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "a7ff906e-e326-5200-862f-66763613f3d4",
       "key": "en:exercise:hedging-mcq-appear",
       "key_data": {
@@ -21977,8 +22863,8 @@ select content_private.import_bundle($bundle${
         "stem": "It would appear that the invoice was sent to the wrong address. Câu này có nghĩa gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -21989,7 +22875,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "e8ab99bf-5758-5a3f-9186-d1c48f14db80",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "a7ff906e-e326-5200-862f-66763613f3d4",
       "key": "en:exercise:hedging-mcq-email-situation",
       "key_data": {
@@ -22038,8 +22924,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn phát hiện đối tác chuyển thiếu tiền thanh toán. Bạn muốn nêu vấn đề lịch sự, không buộc tội. Câu nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -22050,7 +22936,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "99377d8c-5f02-5a67-b07c-5c3eb27c421f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "16f8d0ab-191c-5287-a985-a637f7de3f27",
       "key": "en:exercise:hedging-mcq-most-cautious",
       "key_data": {
@@ -22099,8 +22985,8 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào phù hợp nhất cho phần kết luận của một nghiên cứu khảo sát 200 người?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -22111,7 +22997,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "0d74e98d-89c5-5cf1-bdc9-e4b92baa7610",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c7fcf118-6f5e-5a4d-b853-cc93a2b771f4",
       "key": "en:exercise:hedging-order-extent",
       "key_data": {
@@ -22198,8 +23084,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -22210,7 +23096,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "bb981a87-97df-5913-8512-0f90e2f53728",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b7f47b8c-99f4-5b73-9169-ce45aadd838e",
       "key": "en:exercise:hedging-translate-arguably",
       "key_data": {
@@ -22264,19 +23150,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Có thể nói đây là cải cách quan trọng nhất của thập kỷ."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "c771aa61fa49fe1b5129a5d580ec17d0b8d1283991d6615a0a60a7b62b74eb2e",
+      "content_hash": "352046540816790f04ed99c028eb2a57e2f88aaf05f43ff071cce6cc284b8847",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "2babe6c8-d21a-5fd1-84dd-e8bb64cd207c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "861a705b-b764-53aa-ba87-c2b960154a26",
       "key": "en:exercise:hedging-translate-findings",
       "key_data": {
@@ -22294,7 +23180,11 @@ select content_private.import_bundle($bundle${
             "The study's findings suggest that sleep affects memory.",
             "The findings of the study suggest that sleep affects memory.",
             "The findings show that sleep affects memory.",
-            "The results show that sleep affects memory."
+            "The results show that sleep affects memory.",
+            "The results indicate that sleep affects memory.",
+            "The results of the study suggest that sleep affects memory.",
+            "The findings suggest that sleep has an influence on memory.",
+            "The findings suggest that sleep impacts memory."
           ]
         },
         "display_answer": "The findings suggest that sleep affects memory.",
@@ -22323,7 +23213,7 @@ select content_private.import_bundle($bundle${
           "expand_contractions": true,
           "ko_spacing": "lenient",
           "punctuation": "ignore",
-          "typo_tolerance": 1
+          "typo_tolerance": 0
         }
       },
       "lesson_id": "c4ca9e59-8611-5c3a-83fc-874f281a8783",
@@ -22333,8 +23223,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Kết quả nghiên cứu cho thấy giấc ngủ ảnh hưởng đến trí nhớ."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -22345,7 +23235,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "ffa875ac-c695-5fea-aa3b-a94cfb7cdc81",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "e56d8b02-61b1-509d-a617-bba4741be5fb",
       "key": "en:exercise:hedging-translate-tend-extent",
       "key_data": {
@@ -22401,19 +23291,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Ở một mức độ nào đó, nhân viên trẻ có xu hướng chuyển việc thường xuyên hơn."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "vi",
-      "content_hash": "04b607789a75f579bf56163250cd79956cf35fd21343834f621e084bc93b9649",
+      "content_hash": "79f98851ddb22ea74bac97cb5576ebdcd431cca7e3ae94f6c4677a1f3dd45ef2",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "0e9608ab-f9d7-5518-a03f-27ce66077b5b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "5f145b49-5a41-501d-b2d8-6b7ab0fdf3fa",
       "key": "en:exercise:hedging-translate-to-vi-relatively",
       "key_data": {
@@ -22427,7 +23317,12 @@ select content_private.import_bundle($bundle${
             "Cỡ mẫu khá nhỏ, nên cần thận trọng khi diễn giải kết quả.",
             "Kích thước mẫu tương đối nhỏ, nên cần thận trọng khi diễn giải kết quả.",
             "Cỡ mẫu tương đối nhỏ nên các kết quả cần được diễn giải thận trọng.",
-            "Cỡ mẫu tương đối nhỏ, nên kết quả cần được hiểu một cách thận trọng."
+            "Cỡ mẫu tương đối nhỏ, nên kết quả cần được hiểu một cách thận trọng.",
+            "Kích thước mẫu tương đối nhỏ, vì vậy cần thận trọng khi diễn giải kết quả.",
+            "Cỡ mẫu tương đối nhỏ, vì thế cần thận trọng khi diễn giải kết quả.",
+            "Cỡ mẫu tương đối nhỏ, do đó kết quả cần được diễn giải một cách thận trọng.",
+            "Quy mô mẫu tương đối nhỏ, nên cần thận trọng khi diễn giải kết quả.",
+            "Cỡ mẫu khá nhỏ, vì vậy kết quả cần được diễn giải thận trọng."
           ]
         },
         "display_answer": "Cỡ mẫu tương đối nhỏ, nên cần thận trọng khi diễn giải kết quả.",
@@ -22450,8 +23345,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "The sample size was relatively small, so the results should be interpreted with caution."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -26071,7 +26966,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "662db1ca-e6f2-5b4e-ba01-c797fcb93c0f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "20af07a2-cce7-59c5-87a9-aeeef6939b9d",
       "key": "en:exercise:idiom-fill-fence-hinted",
       "key_data": {
@@ -26133,26 +27028,36 @@ select content_private.import_bundle($bundle${
         ],
         "template": "I'm still on the {{b1}} about the offer, so I won't beat around the {{b2}}: I need more time."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "9d6880b0bc0c15bf030665eda9a05aba43cd3f3235e6f4def2b2269842345f3e",
+      "content_hash": "c519b62087690b2ca6337c3d6679ed13a79e87bc88e7fbaaecf47f0e98f4865d",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "d449199d-f030-58d4-a724-21a7b6695b8c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "69115644-c553-5fb6-b96e-fed99b8ca42f",
       "key": "en:exercise:idiom-fill-phrasal-meanings",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "picks"
+              "picks",
+              "picked",
+              "speeds",
+              "heats",
+              "ramps",
+              "builds",
+              "livens",
+              "looks",
+              "perks",
+              "shoots",
+              "goes"
             ],
             "b2": [
               "down",
@@ -26162,18 +27067,13 @@ select content_private.import_bundle($bundle${
         },
         "display_answer": "Business usually picks up before Tet. Last year we were so busy that I had to turn down two new clients.",
         "explanation": {
-          "vi": "Pick up không có tân ngữ nghĩa là \"khởi sắc, tăng lên\". Turn down nghĩa là \"từ chối\"; turn away là \"không tiếp nhận, khước từ\" - cả hai hợp với clients."
+          "vi": "Pick up không có tân ngữ nghĩa là \"khởi sắc, tăng lên\" (usually + picks up hoặc picked up đều được). Turn down nghĩa là \"từ chối\"; turn away là \"không tiếp nhận, khước từ\" - cả hai hợp với clients."
         },
         "known_wrong": [
           {
             "answer": "pick",
             "error_tag": "subject_verb_agreement",
             "feedback_vi": "Chủ ngữ Business là số ít, thì hiện tại đơn - picks up."
-          },
-          {
-            "answer": "picked",
-            "error_tag": "tense",
-            "feedback_vi": "Usually diễn tả thói quen hiện tại nên dùng hiện tại đơn - picks up."
           },
           {
             "answer": "off",
@@ -26204,8 +27104,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Business usually {{b1}} up before Tet. Last year we were so busy that I had to turn {{b2}} two new clients."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -26216,7 +27116,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "d9c2eb57-4cc3-5901-a9bb-69c37e86d396",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "cd693dc4-1e5a-5076-bc9d-0a04dfb20c84",
       "key": "en:exercise:idiom-listen-blessing",
       "key_data": {
@@ -26265,19 +27165,19 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
-      "answer_lang": "vi",
-      "content_hash": "aab06b2a7168738a27bfbe2758a4aa135613682ddac6fa35aea45d35388d1df8",
+      "answer_lang": "en",
+      "content_hash": "2fabf271aa9a03542e9cd92885db405cb9a7cc98159ccd96af26c45e3d93158d",
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "aaed00dd-112c-5b35-a2ae-40cf34d70eb0",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "25306fc7-e4d6-55d6-84ed-e8275e706d23",
       "key": "en:exercise:idiom-mcq-come-across",
       "key_data": {
@@ -26326,8 +27226,8 @@ select content_private.import_bundle($bundle${
         "stem": "Trong câu nào, come across có nghĩa là \"tạo ấn tượng là\"?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -26338,7 +27238,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "a0efa172-a9e5-5ffc-926f-08e4db62f6ae",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4e1c8234-b8db-57f5-8e49-673a67637a2d",
       "key": "en:exercise:idiom-mcq-cut-corners",
       "key_data": {
@@ -26387,8 +27287,8 @@ select content_private.import_bundle($bundle${
         "stem": "\"The contractor clearly cut corners on the wiring.\" Câu này có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -26399,7 +27299,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "d98fde5e-9acd-55af-8c87-a27d9e7eb26c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "58b08c58-9541-58fa-80f6-ae3830ac4d3f",
       "key": "en:exercise:idiom-mcq-literal",
       "key_data": {
@@ -26448,8 +27348,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn muốn nói với đồng nghiệp người Anh rằng nhắc nhở anh Nam bao nhiêu lần cũng như \"nước đổ đầu vịt\". Câu nào tự nhiên nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -26460,7 +27360,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "a9588a83-bb5c-5db2-8c1a-4bf075b7d8b3",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "55d70839-6159-51da-9dfb-7576225aa1f9",
       "key": "en:exercise:idiom-mcq-register",
       "key_data": {
@@ -26509,19 +27409,19 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào phù hợp nhất cho kết luận của một báo cáo gửi hội đồng quản trị?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "b3b12c80fbb6ee7eb00b7c122d06f36367cad690861cb16c9a3c369f28de86aa",
+      "content_hash": "2f04002a25f6aaa6b79aa27452ac018a20c56abba99a25efa7b66bd092ac3b77",
       "difficulty": 4,
       "exercise_type": "word_bank",
       "id": "c76a153a-f2c4-5e0f-a0d9-f4050293ab86",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "5c1b1b20-6649-5a80-9e98-3d5e2ff22adc",
       "key": "en:exercise:idiom-order-carry-off",
       "key_data": {
@@ -26536,12 +27436,22 @@ select content_private.import_bundle($bundle${
               "c-it",
               "c-off",
               "c-brilliantly"
+            ],
+            [
+              "c-was",
+              "c-difficult",
+              "c-but",
+              "c-she",
+              "c-brilliantly",
+              "c-carried",
+              "c-it",
+              "c-off"
             ]
           ]
         },
         "display_answer": "It was a difficult role, but she carried it off brilliantly.",
         "explanation": {
-          "vi": "Carry it off là \"làm thành công một việc khó\"; đại từ it đặt giữa carried và off. Carry out là \"thực hiện\" (kế hoạch, nghiên cứu), không hợp với vai diễn."
+          "vi": "Carry it off là \"làm thành công một việc khó\"; đại từ it đặt giữa carried và off. Trạng từ brilliantly đứng cuối hoặc ngay trước carried đều tự nhiên. Đừng nhầm với carry out (thực hiện kế hoạch, nghiên cứu) hay carry on (tiếp tục)."
         },
         "known_wrong": [],
         "rubric": {
@@ -26590,24 +27500,24 @@ select content_private.import_bundle($bundle${
             "text": "brilliantly"
           },
           {
-            "id": "c-out",
-            "text": "out"
+            "id": "c-into",
+            "text": "into"
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "295eedd2a0bd8dc7a60d18cbb6c48a8513ea3b5223b33724e8f448518c986c6e",
+      "content_hash": "197c82565ca2faab98497c5435f58f52da9fe3132b8c15d94f9fa1292e634939",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "4146700b-d682-5c33-9e43-03bb375a1df6",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "63961fa2-a4f3-5be7-ace6-182800373bb8",
       "key": "en:exercise:idiom-translate-elephant",
       "key_data": {
@@ -26624,7 +27534,98 @@ select content_private.import_bundle($bundle${
             "We need to discuss the elephant in the room: sales are falling.",
             "We have to address the elephant in the room: sales are falling.",
             "We must address the elephant in the room: sales are falling.",
-            "We need to address the elephant in the room: our sales are falling."
+            "We need to address the elephant in the room: our sales are falling.",
+            "We need to address the elephant in the room: sales are decreasing.",
+            "We need to talk about the elephant in the room: sales are dropping.",
+            "We need to talk about the elephant in the room: sales are decreasing.",
+            "We need to talk about the elephant in the room: sales are going down.",
+            "We need to discuss the elephant in the room: sales are declining.",
+            "We need to discuss the elephant in the room: sales are dropping.",
+            "We need to discuss the elephant in the room: sales are decreasing.",
+            "We need to discuss the elephant in the room: sales are going down.",
+            "We need to deal with the elephant in the room: sales are falling.",
+            "We need to deal with the elephant in the room: sales are declining.",
+            "We need to deal with the elephant in the room: sales are dropping.",
+            "We need to deal with the elephant in the room: sales are decreasing.",
+            "We need to deal with the elephant in the room: sales are going down.",
+            "We need to tackle the elephant in the room: sales are falling.",
+            "We need to tackle the elephant in the room: sales are declining.",
+            "We need to tackle the elephant in the room: sales are dropping.",
+            "We need to tackle the elephant in the room: sales are decreasing.",
+            "We need to tackle the elephant in the room: sales are going down.",
+            "We have to address the elephant in the room: sales are declining.",
+            "We have to address the elephant in the room: sales are dropping.",
+            "We have to address the elephant in the room: sales are decreasing.",
+            "We have to address the elephant in the room: sales are going down.",
+            "We have to talk about the elephant in the room: sales are falling.",
+            "We have to talk about the elephant in the room: sales are declining.",
+            "We have to talk about the elephant in the room: sales are dropping.",
+            "We have to talk about the elephant in the room: sales are decreasing.",
+            "We have to talk about the elephant in the room: sales are going down.",
+            "We have to discuss the elephant in the room: sales are falling.",
+            "We have to discuss the elephant in the room: sales are declining.",
+            "We have to discuss the elephant in the room: sales are dropping.",
+            "We have to discuss the elephant in the room: sales are decreasing.",
+            "We have to discuss the elephant in the room: sales are going down.",
+            "We have to deal with the elephant in the room: sales are falling.",
+            "We have to deal with the elephant in the room: sales are declining.",
+            "We have to deal with the elephant in the room: sales are dropping.",
+            "We have to deal with the elephant in the room: sales are decreasing.",
+            "We have to deal with the elephant in the room: sales are going down.",
+            "We have to tackle the elephant in the room: sales are falling.",
+            "We have to tackle the elephant in the room: sales are declining.",
+            "We have to tackle the elephant in the room: sales are dropping.",
+            "We have to tackle the elephant in the room: sales are decreasing.",
+            "We have to tackle the elephant in the room: sales are going down.",
+            "We must address the elephant in the room: sales are declining.",
+            "We must address the elephant in the room: sales are dropping.",
+            "We must address the elephant in the room: sales are decreasing.",
+            "We must address the elephant in the room: sales are going down.",
+            "We must talk about the elephant in the room: sales are falling.",
+            "We must talk about the elephant in the room: sales are declining.",
+            "We must talk about the elephant in the room: sales are dropping.",
+            "We must talk about the elephant in the room: sales are decreasing.",
+            "We must talk about the elephant in the room: sales are going down.",
+            "We must discuss the elephant in the room: sales are falling.",
+            "We must discuss the elephant in the room: sales are declining.",
+            "We must discuss the elephant in the room: sales are dropping.",
+            "We must discuss the elephant in the room: sales are decreasing.",
+            "We must discuss the elephant in the room: sales are going down.",
+            "We must deal with the elephant in the room: sales are falling.",
+            "We must deal with the elephant in the room: sales are declining.",
+            "We must deal with the elephant in the room: sales are dropping.",
+            "We must deal with the elephant in the room: sales are decreasing.",
+            "We must deal with the elephant in the room: sales are going down.",
+            "We must tackle the elephant in the room: sales are falling.",
+            "We must tackle the elephant in the room: sales are declining.",
+            "We must tackle the elephant in the room: sales are dropping.",
+            "We must tackle the elephant in the room: sales are decreasing.",
+            "We must tackle the elephant in the room: sales are going down.",
+            "We should address the elephant in the room: sales are falling.",
+            "We should address the elephant in the room: sales are declining.",
+            "We should address the elephant in the room: sales are dropping.",
+            "We should address the elephant in the room: sales are decreasing.",
+            "We should address the elephant in the room: sales are going down.",
+            "We should talk about the elephant in the room: sales are falling.",
+            "We should talk about the elephant in the room: sales are declining.",
+            "We should talk about the elephant in the room: sales are dropping.",
+            "We should talk about the elephant in the room: sales are decreasing.",
+            "We should talk about the elephant in the room: sales are going down.",
+            "We should discuss the elephant in the room: sales are falling.",
+            "We should discuss the elephant in the room: sales are declining.",
+            "We should discuss the elephant in the room: sales are dropping.",
+            "We should discuss the elephant in the room: sales are decreasing.",
+            "We should discuss the elephant in the room: sales are going down.",
+            "We should deal with the elephant in the room: sales are falling.",
+            "We should deal with the elephant in the room: sales are declining.",
+            "We should deal with the elephant in the room: sales are dropping.",
+            "We should deal with the elephant in the room: sales are decreasing.",
+            "We should deal with the elephant in the room: sales are going down.",
+            "We should tackle the elephant in the room: sales are falling.",
+            "We should tackle the elephant in the room: sales are declining.",
+            "We should tackle the elephant in the room: sales are dropping.",
+            "We should tackle the elephant in the room: sales are decreasing.",
+            "We should tackle the elephant in the room: sales are going down."
           ]
         },
         "display_answer": "We need to address the elephant in the room: sales are falling.",
@@ -26658,19 +27659,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chúng ta cần nói thẳng vào vấn đề ai cũng biết mà không ai nhắc tới: doanh số đang giảm. (dùng thành ngữ)"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "vi",
-      "content_hash": "a7c3dfefc38c55e70afbff3db51750db3af57fdfe3c6d235bf6330aca5ab0f9e",
+      "content_hash": "937d1bb63db60155890906a3b2ec6177496c6c67f2e030987fae12e4235ae78b",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "ef6525c8-2d6e-517d-910b-38021abdb9ed",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "5b0efbd4-7254-50ee-a794-f6f4993a99d0",
       "key": "en:exercise:idiom-translate-to-vi-by-and-large",
       "key_data": {
@@ -26684,7 +27685,16 @@ select content_private.import_bundle($bundle${
             "Nói chung, hệ thống mới đã được nhân viên đón nhận tốt.",
             "Nhìn chung, nhân viên đón nhận hệ thống mới khá tích cực.",
             "Nhìn chung, nhân viên đã đón nhận hệ thống mới một cách tích cực.",
-            "Về tổng thể, hệ thống mới được nhân viên đón nhận tích cực."
+            "Về tổng thể, hệ thống mới được nhân viên đón nhận tích cực.",
+            "Nhìn chung, nhân viên đón nhận hệ thống mới khá tốt.",
+            "Nhìn chung, hệ thống mới nhận được sự đón nhận tích cực từ nhân viên.",
+            "Nhìn chung, hệ thống mới được nhân viên đón nhận một cách tích cực.",
+            "Nhìn chung, hệ thống mới được nhân viên chào đón.",
+            "Nhìn chung, hệ thống mới được nhân viên đánh giá tốt.",
+            "Nói chung, hệ thống mới được nhân viên đón nhận tốt.",
+            "Nói chung, nhân viên đón nhận hệ thống mới khá tích cực.",
+            "Nhìn chung, hệ thống mới đã được nhân viên đón nhận một cách tích cực.",
+            "Nhìn chung, hệ thống mới được các nhân viên đón nhận tích cực."
           ]
         },
         "display_answer": "Nhìn chung, hệ thống mới được nhân viên đón nhận tích cực.",
@@ -26713,19 +27723,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "By and large, the new system has been well received by staff."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "03a2fbac4a1773b83fe66c05e589bc6536187cc77400e935c2e0b8cb241ccfc7",
+      "content_hash": "1e8664d5343fa9927e07ff40ce502aeccd13df54d5b4180f7d144608163f6ae6",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "ba35779d-d303-58d3-95ed-a8993ac2d9df",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "998e0695-3f3e-52bf-b983-a00d7e2451ab",
       "key": "en:exercise:idiom-translate-turn-down",
       "key_data": {
@@ -26746,7 +27756,18 @@ select content_private.import_bundle($bundle${
             "She declined the job offer because she did not want to relocate.",
             "She refused the job offer because she didn't want to move house.",
             "She turned down the job offer because she didn't want to move home.",
-            "She turned down the job offer because she didn't want to move away."
+            "She turned down the job offer because she didn't want to move away.",
+            "She turned down the job offer because she did not want to move home.",
+            "She rejected the job offer because she didn't want to move house.",
+            "She rejected the job offer because she did not want to move house.",
+            "She declined the job offer because she didn't want to move.",
+            "She declined the offer because she didn't want to move house.",
+            "She turned the job offer down because she did not want to move house.",
+            "She turned the job offer down because she didn't want to move.",
+            "She turned down the job offer as she did not want to move house.",
+            "She turned down the offer of a job because she didn't want to move house.",
+            "She declined the job offer because she did not want to move house.",
+            "She refused the job offer because she did not want to move house."
           ]
         },
         "display_answer": "She turned down the job offer because she didn't want to move house.",
@@ -26775,8 +27796,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Cô ấy đã từ chối lời mời làm việc vì không muốn chuyển nhà."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -29151,11 +30172,11 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "5e0a85fc1802732e9531d6ce5c65eba2c1a5d0c61c01f8cb4fc348d588846e89",
+      "content_hash": "b79de9331a9fd1a96ed2d3fdf76e9f73e710bd341adf5540912cbe82715c4a53",
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "569b4f9c-5f76-5f00-8800-495e4231101c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "09bec0c3-9d97-503c-8614-24a5a6c2c851",
       "key": "en:exercise:linking-fill-despite-hinted",
       "key_data": {
@@ -29164,13 +30185,31 @@ select content_private.import_bundle($bundle${
             "b1": [
               "Despite",
               "In spite of",
-              "Notwithstanding"
+              "Notwithstanding",
+              "Regardless of",
+              "Irrespective of",
+              "Even with"
             ],
             "b2": [
               "Consequently",
               "As a result",
               "Therefore",
-              "As a consequence"
+              "As a consequence",
+              "Thus",
+              "Hence",
+              "Accordingly",
+              "So",
+              "For this reason",
+              "Subsequently",
+              "Afterwards",
+              "Later",
+              "Eventually",
+              "Finally",
+              "Then",
+              "Moreover",
+              "Furthermore",
+              "Additionally",
+              "In addition"
             ]
           }
         },
@@ -29222,19 +30261,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "{{b1}} the delays, the project was completed within budget. {{b2}}, the client renewed the contract."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "4aa09e5df9a6826e78133806c4313b093dcaf03c2e0d50350e90cc687fbd61df",
+      "content_hash": "3bb64dc193e2b7f018ae6d285dfdf8e74e86d938b60c3c95eacbeacf42fe8eff",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "60809844-3c96-5679-876e-70576a536cb8",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "d600748e-eae9-59eb-b6e0-37d088bd623f",
       "key": "en:exercise:linking-fill-register",
       "key_data": {
@@ -29242,7 +30281,11 @@ select content_private.import_bundle($bundle${
           "blanks": {
             "b1": [
               "required",
-              "needed"
+              "needed",
+              "necessary",
+              "essential",
+              "requested",
+              "sought"
             ],
             "b2": [
               "determine",
@@ -29250,7 +30293,13 @@ select content_private.import_bundle($bundle${
               "ascertain",
               "establish",
               "clarify",
-              "check"
+              "check",
+              "verify",
+              "specify",
+              "provide",
+              "state",
+              "supply",
+              "advise"
             ]
           }
         },
@@ -29268,11 +30317,6 @@ select content_private.import_bundle($bundle${
             "answer": "need",
             "error_tag": "passive",
             "feedback_vi": "Sau is cần quá khứ phân từ (bị động) - is required."
-          },
-          {
-            "answer": "requested",
-            "error_tag": "word_choice",
-            "feedback_vi": "Requested là \"được yêu cầu\"; ý \"cần có\" là required."
           }
         ],
         "rubric": {
@@ -29296,10 +30340,10 @@ select content_private.import_bundle($bundle${
             "width_hint": 9
           }
         ],
-        "template": "Informal - \"We need more info. Can you find out the cost?\" → Formal - \"Further information is {{b1}}. Could you please {{b2}} the cost?\""
+        "template": "Informal - \"We need more info. Can you find out the cost?\" → Formal (dùng một động từ đơn, không dùng cụm động từ) - \"Further information is {{b1}}. Could you please {{b2}} the cost?\""
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -29310,7 +30354,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "8192e4ca-d80d-5ea4-af9d-1aff918de8df",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f0758912-b56d-5e82-bc8f-59a3a4fe53d4",
       "key": "en:exercise:linking-listen-whereas",
       "key_data": {
@@ -29359,8 +30403,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -29371,7 +30415,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "c6d9a031-e9b0-5c7d-858b-996e21cffe4f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "313a9c45-dfc5-518e-b6f4-f705ebaaae78",
       "key": "en:exercise:linking-mcq-albeit",
       "key_data": {
@@ -29420,8 +30464,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn từ phù hợp: The economy is recovering, ___ slowly.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -29432,7 +30476,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "5e503eb8-ce40-59c9-b50d-d893b6bba203",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "da438d0c-2ec3-5ea7-bc02-2bb4cb7e801f",
       "key": "en:exercise:linking-mcq-although",
       "key_data": {
@@ -29481,8 +30525,8 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào đúng?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -29493,7 +30537,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "adfff779-1404-580e-80f0-8436ee3f2b6b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "899f3878-6b71-5c8a-ace8-93e89a12f901",
       "key": "en:exercise:linking-mcq-email-opening",
       "key_data": {
@@ -29542,19 +30586,19 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn viết email đầu tiên cho phòng nhân sự một công ty để hỏi về vị trí tuyển dụng. Câu mở đầu nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "6905ee0f73ca01158a5d5fb9b8d65e8d15681cc5fad7ad837cbb83417dbabc9d",
+      "content_hash": "1e7b3e90e50a338258e5c0ce8113ca035bf6c8a64d657d944506febe69e04f09",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "9edea2b0-8834-56f2-8013-d23052e7389d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "583ea9a4-3a8a-5b32-803e-75267d81916c",
       "key": "en:exercise:linking-order-attached",
       "key_data": {
@@ -29575,12 +30619,28 @@ select content_private.import_bundle($bundle${
               "a-find",
               "a-budget",
               "a-attached"
+            ],
+            [
+              "a-please",
+              "a-find",
+              "a-attached",
+              "a-budget",
+              "a-further",
+              "a-meeting"
+            ],
+            [
+              "a-please",
+              "a-find",
+              "a-budget",
+              "a-attached",
+              "a-further",
+              "a-meeting"
             ]
           ]
         },
         "display_answer": "Further to our meeting, please find attached the revised budget.",
         "explanation": {
-          "vi": "Further to + danh từ (our meeting) mở đầu email; trật tự cố định là please find attached + tân ngữ. Despite không hợp nghĩa."
+          "vi": "Further to + danh từ (our meeting) mở đầu email; trật tự cố định là please find attached + tân ngữ. Although cần một mệnh đề đầy đủ phía sau nên không ghép được với our meeting."
         },
         "known_wrong": [],
         "rubric": {
@@ -29621,24 +30681,24 @@ select content_private.import_bundle($bundle${
             "text": "please"
           },
           {
-            "id": "a-despite",
-            "text": "despite"
+            "id": "a-although",
+            "text": "although"
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "2f59227414263d038a1ae0fab1576100b191514ff518932815aa0f9763746696",
+      "content_hash": "020a3c02263bb19959f476b55e57040cc30edb5277c59413c5de5b18de27fea3",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "cfb160f1-eaaf-52ef-af09-b705dc7de22e",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "da438d0c-2ec3-5ea7-bc02-2bb4cb7e801f",
       "key": "en:exercise:linking-translate-although",
       "key_data": {
@@ -29661,7 +30721,18 @@ select content_private.import_bundle($bundle${
             "Despite the cost, the proposal offers long-term benefits.",
             "Although costly, the proposal offers long-term benefits.",
             "Although the proposal is costly, it offers long term benefits.",
-            "Although the proposal is costly, it has long-term benefits."
+            "Although the proposal is costly, it has long-term benefits.",
+            "While the proposal is costly, it offers long-term benefits.",
+            "Even though the proposal is expensive, it offers long-term benefits.",
+            "Although the proposal is expensive, it offers long term benefits.",
+            "Although the proposal is costly, it offers long-term advantages.",
+            "Although the proposal is costly, it offers benefits in the long term.",
+            "The proposal is costly, but it brings long-term benefits.",
+            "The proposal is costly, yet it offers long-term benefits.",
+            "Despite being expensive, the proposal offers long-term benefits.",
+            "Despite being costly, the proposal brings long-term benefits.",
+            "Although expensive, the proposal offers long-term benefits.",
+            "Although the proposal is costly, it will bring long-term benefits."
           ]
         },
         "display_answer": "Although the proposal is costly, it offers long-term benefits.",
@@ -29705,19 +30776,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Mặc dù đề xuất tốn kém nhưng nó mang lại lợi ích lâu dài."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "b1a1a83b55a880377738e2ec89d22a9172e16023c99b7d9a5199c4e301243099",
+      "content_hash": "01d7bb3cc38abbc54c1b2dd8d080f262b04414ef4d76c42b6ff7bd83f3c6babe",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "36471ffc-b6af-59d3-8530-4489bd2f105e",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "d600748e-eae9-59eb-b6e0-37d088bd623f",
       "key": "en:exercise:linking-translate-formal-request",
       "key_data": {
@@ -29736,7 +30807,14 @@ select content_private.import_bundle($bundle${
             "We will require further information before making a decision.",
             "We would require further information before making a decision.",
             "We require further information prior to making a decision.",
-            "Further information is required prior to making a decision."
+            "Further information is required prior to making a decision.",
+            "We require more information before reaching a decision.",
+            "We require additional information before reaching a decision.",
+            "We require further information before we can make a decision.",
+            "We require further information before a decision can be made.",
+            "Additional information is required before making a decision.",
+            "More information is required before a decision can be made.",
+            "We require further information before we reach a decision."
           ]
         },
         "display_answer": "We require further information before making a decision.",
@@ -29780,19 +30858,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chúng tôi cần thêm thông tin trước khi đưa ra quyết định. (viết trang trọng, dùng require)"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "1c25b75f6647ce8bf2ecf4446446ef4b77be1316440625ccf06d3f169ee41e6d",
+      "content_hash": "8c9cf03c9208eecc270b10ab2a6bd9be7eedb2960c47745ab63ca06b327bef0e",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "be35ca40-3879-5eef-aa0c-0f96d550834c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "d590fafd-5002-57b1-99ce-60f609a5ad31",
       "key": "en:exercise:linking-translate-thereby",
       "key_data": {
@@ -29809,7 +30887,15 @@ select content_private.import_bundle($bundle${
             "The company automated the process and thereby reduced errors.",
             "The company automated the process, thereby minimising errors.",
             "The company automated the process, thereby minimizing errors.",
-            "The company automated the process, thereby decreasing errors."
+            "The company automated the process, thereby decreasing errors.",
+            "The company automated the process, thereby lowering errors.",
+            "The company automated the process, thereby reducing the errors.",
+            "The company automated the process, thereby reducing the number of mistakes.",
+            "The company automated its process, thereby reducing mistakes.",
+            "The company automated the process, thereby cutting down on errors.",
+            "The company automated the process and thereby reduced mistakes.",
+            "The company has automated its process, thereby reducing errors.",
+            "The company automated the process, thereby eliminating errors."
           ]
         },
         "display_answer": "The company automated the process, thereby reducing errors.",
@@ -29848,19 +30934,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Công ty đã tự động hoá quy trình, nhờ đó giảm sai sót. (dùng thereby)"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "vi",
-      "content_hash": "cadcbaa513849f3a4f5e718bf7cabaf8d9447cd726fe0e38787996892e8c66bb",
+      "content_hash": "d03df45ffca045b85787ba56985317767b59f44a17e51b5782c26c26ba630d85",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "00453f0b-fc94-5c4e-aa46-e56425760f05",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "6cb91bd4-9952-5ef0-9cb3-239179603269",
       "key": "en:exercise:linking-translate-to-vi-summary",
       "key_data": {
@@ -29876,7 +30962,14 @@ select content_private.import_bundle($bundle${
             "Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, còn doanh số tại cửa hàng vẫn ổn định.",
             "Tóm lại, doanh số bán hàng trực tuyến tăng mạnh, trong khi doanh số tại cửa hàng vẫn ổn định.",
             "Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số tại cửa hàng giữ ổn định.",
-            "Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số bán hàng tại cửa hàng không thay đổi."
+            "Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số bán hàng tại cửa hàng không thay đổi.",
+            "Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, còn doanh số bán hàng tại cửa hàng vẫn ổn định.",
+            "Tóm lại, doanh số bán hàng trực tuyến đã tăng đáng kể, trong khi doanh số bán hàng tại cửa hàng vẫn ổn định.",
+            "Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số tại cửa hàng không thay đổi.",
+            "Tóm lại, doanh thu bán hàng trực tuyến tăng đáng kể, trong khi doanh thu bán hàng tại cửa hàng vẫn ổn định.",
+            "Tóm lại, doanh số bán hàng online tăng đáng kể, trong khi doanh số bán hàng tại cửa hàng vẫn ổn định.",
+            "Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số bán hàng trực tiếp tại cửa hàng vẫn ổn định.",
+            "Tóm tắt lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số tại cửa hàng vẫn ổn định."
           ]
         },
         "display_answer": "Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số tại cửa hàng vẫn ổn định.",
@@ -29899,8 +30992,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "In summary, online sales rose significantly, whereas in-store sales remained stable."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -32789,11 +33882,11 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "6028e70f653ed73d4c3e6b22e7e5a7870caf7f27b1d4b4bec33635c5a3397da2",
+      "content_hash": "d28dc302aa9fbc14e80d0f518bb4e475be034408d5bc25129619aa3d76a3e997",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "51c97830-79c8-5289-84e3-85ec6e303b4d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "eca07a82-def3-535f-8fae-a682645c5d99",
       "key": "en:exercise:nominal-fill-collocations",
       "key_data": {
@@ -32801,28 +33894,28 @@ select content_private.import_bundle($bundle${
           "blanks": {
             "b1": [
               "conducted",
-              "did"
+              "did",
+              "carried out",
+              "undertook",
+              "performed"
             ],
             "b2": [
-              "reached"
+              "reached",
+              "came to",
+              "arrived at",
+              "struck",
+              "secured",
+              "negotiated",
+              "made",
+              "got"
             ]
           }
         },
         "display_answer": "Our team conducted research into customer complaints and finally reached an agreement with the supplier.",
         "explanation": {
-          "vi": "Research đi với conduct/carry out/do; agreement đi với reach hoặc come to. Cả hai câu ở quá khứ nên dùng conducted, reached."
+          "vi": "Research đi với conduct/carry out/do; agreement đi với reach hoặc come to (make/get an agreement cũng gặp nhưng kém trang trọng hơn). Cả hai động từ đều ở quá khứ nên dùng conducted, reached."
         },
         "known_wrong": [
-          {
-            "answer": "made",
-            "error_tag": "collocation",
-            "feedback_vi": "Không nói make research hay make an agreement trong nghĩa này; dùng conduct research và reach an agreement."
-          },
-          {
-            "answer": "got",
-            "error_tag": "collocation",
-            "feedback_vi": "Get an agreement không tự nhiên; dùng reach an agreement."
-          },
           {
             "answer": "researched",
             "error_tag": "collocation",
@@ -32852,30 +33945,36 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Our team {{b1}} research into customer complaints and finally {{b2}} an agreement with the supplier."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "3e64c87914122d1d056e0b59a0cae6cf84bd3c8aae7b550a1fa286c60e11c9e8",
+      "content_hash": "729305322dc6bac2a065744f4723602e0615e70966f55c3d8973f432f7de039b",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "1ce2acd7-92e3-58d6-b65f-4b007d512f04",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "50b263af-6d58-5b8d-913e-73357b6bce95",
       "key": "en:exercise:nominal-fill-implementation-hinted",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "implementation"
+              "implementation",
+              "adoption",
+              "introduction"
             ],
             "b2": [
               "reduction",
-              "decrease"
+              "decrease",
+              "drop",
+              "fall",
+              "cut",
+              "decline"
             ]
           }
         },
@@ -32893,11 +33992,6 @@ select content_private.import_bundle($bundle${
             "answer": "reduce",
             "error_tag": "word_form",
             "feedback_vi": "Sau a cần danh từ - a reduction in costs."
-          },
-          {
-            "answer": "implementing",
-            "error_tag": "word_form",
-            "feedback_vi": "Dạng chuẩn trong văn trang trọng là danh từ implementation (the implementation of)."
           }
         ],
         "rubric": {
@@ -32927,8 +34021,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "The {{b1}} of the new policy led to a {{b2}} in costs."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -32939,7 +34033,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "listen",
       "id": "d368189f-5b9e-5e53-99d3-2f6f878ea247",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c264d9ae-28f0-54ba-b4f1-961327f99fc7",
       "key": "en:exercise:nominal-listen-increase",
       "key_data": {
@@ -32988,8 +34082,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -33000,7 +34094,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "cf8e21b1-763b-59fc-9313-9eae0a0bc0c1",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "80a1caa5-353a-52ff-b1a3-0f7d4de25d86",
       "key": "en:exercise:nominal-mcq-collocation",
       "key_data": {
@@ -33049,8 +34143,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn động từ đúng: It is too early to ___ any firm conclusions.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -33061,7 +34155,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "3c7036d8-b57f-596b-9595-cc8be27ea7c9",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3f6602ae-07a9-5734-a8a1-902550b2ae89",
       "key": "en:exercise:nominal-mcq-research",
       "key_data": {
@@ -33110,8 +34204,8 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào đúng ngữ pháp?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -33122,7 +34216,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "c3628708-9cf7-51e9-993d-6275ae00fcfc",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "efa6e3d6-2f09-5994-9cd1-92d72b49f382",
       "key": "en:exercise:nominal-mcq-rewrite",
       "key_data": {
@@ -33171,8 +34265,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn cần viết lại câu sau cho báo cáo trang trọng: \"We analysed the data carefully and found that sales went up a lot.\" Phương án nào tốt nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -33183,7 +34277,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "45aca30b-7ee0-5196-9dbd-f61900ce3161",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "30e7d2ca-0300-502b-bb12-523ef6d0ddac",
       "key": "en:exercise:nominal-order-account",
       "key_data": {
@@ -33273,19 +34367,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "64ab75ac0aa810fe0f46d73b467108da5cde32e659ec4fc6583a72237b917e37",
+      "content_hash": "03e2462677e94c85a3d1edaf79174e8d01d6a1053d964b5532137752806befd5",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "44adf529-5469-51a2-842b-a7debf82b422",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "804b0c8c-a6ec-59b3-b93f-8a5b31f04be7",
       "key": "en:exercise:nominal-translate-address",
       "key_data": {
@@ -33301,7 +34395,14 @@ select content_private.import_bundle($bundle${
             "The report does not deal with the issue of housing costs.",
             "The report does not tackle the issue of housing costs.",
             "The report did not address the issue of housing costs.",
-            "The report failed to address the issue of housing costs."
+            "The report failed to address the issue of housing costs.",
+            "The report does not address the question of housing costs.",
+            "The report fails to address the problem of housing costs.",
+            "The report does not address the housing cost issue.",
+            "The report does not deal with housing costs.",
+            "The report does not tackle housing costs.",
+            "The report does not solve the issue of housing costs.",
+            "The report does not resolve the issue of housing costs."
           ]
         },
         "display_answer": "The report does not address the issue of housing costs.",
@@ -33340,19 +34441,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Bản báo cáo không giải quyết vấn đề chi phí nhà ở."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "112f61fd15e5f00a3b0c6072cd62a08b4c7c4b7a26ece20d78747bd97d4863b0",
+      "content_hash": "047fa64552a7ccd3245072d5058ad57cac588f0017caa5a1c3696627408ffca2",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "7dbbd33b-21bd-5028-a7cb-32b00ec8b06d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "a4579f64-ace7-5f93-9af0-e0ceec6ad81a",
       "key": "en:exercise:nominal-translate-decision",
       "key_data": {
@@ -33368,7 +34469,10 @@ select content_private.import_bundle($bundle${
             "The board will reach a final decision next week.",
             "Next week, the board will make a final decision.",
             "Next week, the board will make the final decision.",
-            "The board is going to make a final decision next week."
+            "The board is going to make a final decision next week.",
+            "The board will make its final decision next week.",
+            "The board of directors will make its final decision next week.",
+            "The board of directors will reach a final decision next week."
           ]
         },
         "display_answer": "The board will make a final decision next week.",
@@ -33407,19 +34511,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Hội đồng quản trị sẽ đưa ra quyết định cuối cùng vào tuần sau."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "1c46d12e777e6eee47c783f04e89770d54ce6e65331fb3e0fa74171860a4ee99",
+      "content_hash": "c867fae0fc558d904b55b8778c0dc89655debb79484bd42c239d30ed76d4ad82",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "1d583490-0ad4-5106-9d7d-4c4c02cb93a6",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f1881f13-67df-5f1d-94da-488a111d6221",
       "key": "en:exercise:nominal-translate-research",
       "key_data": {
@@ -33437,7 +34541,14 @@ select content_private.import_bundle($bundle${
             "We analysed customer complaints in detail.",
             "We analyzed customer complaints in detail.",
             "A detailed analysis of customer complaints was carried out.",
-            "A detailed analysis of customer complaints was conducted."
+            "A detailed analysis of customer complaints was conducted.",
+            "We undertook a detailed analysis of customer complaints.",
+            "We performed a detailed analysis of customer complaints.",
+            "We did a detailed analysis of customer complaints.",
+            "We made a detailed analysis of customer complaints.",
+            "We analysed the customer complaints in detail.",
+            "We analyzed the customer complaints in detail.",
+            "We carried out a detailed analysis of our customers' complaints."
           ]
         },
         "display_answer": "We carried out a detailed analysis of customer complaints.",
@@ -33445,11 +34556,6 @@ select content_private.import_bundle($bundle${
           "vi": "“Tiến hành phân tích” là carry out/conduct an analysis of. Analysis là danh từ đếm được nên cần a; giới từ là of."
         },
         "known_wrong": [
-          {
-            "answer": "We made a detailed analysis of customer complaints.",
-            "error_tag": "collocation",
-            "feedback_vi": "Trong văn trang trọng, analysis đi với carry out hoặc conduct, không phải make."
-          },
           {
             "answer": "We carried out a detailed analyse of customer complaints.",
             "error_tag": "word_form",
@@ -33476,8 +34582,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chúng tôi đã tiến hành phân tích chi tiết các khiếu nại của khách hàng."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -33488,7 +34594,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "0dfd78c9-a533-514c-bd13-1dfd4d55ac71",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "59ec62a9-7315-50ac-8ebd-93ef36e6a590",
       "key": "en:exercise:nominal-translate-to-vi-challenge",
       "key_data": {
@@ -33527,8 +34633,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "An ageing population poses a serious challenge to the healthcare system."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -34203,46 +35309,58 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "0d8926329e4aa8a887acd48fbca0648e3c038a066c424ed3aa6142d921be0634",
+      "content_hash": "95ec561706d532815f11efb21d1687ff64fcbc29d6c5570ae7e8b665bdb3d66a",
       "difficulty": 5,
       "exercise_type": "fill_blank",
       "id": "6a281c3d-4216-50ec-8061-1ec3252ee875",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "5df80c4a-2b4a-5f02-9af1-b848808f7db9",
       "key": "en:exercise:nuance-review-fill-editorial",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "not"
+              "not",
+              "never"
             ],
             "b2": [
-              "affect"
+              "affect",
+              "impact",
+              "benefit",
+              "help",
+              "serve",
+              "disrupt",
+              "inconvenience",
+              "hurt",
+              "harm",
+              "concern",
+              "transport",
+              "move",
+              "involve",
+              "displace",
+              "burden"
             ],
             "b3": [
-              "whatsoever"
+              "whatsoever",
+              "whatever",
+              "at all"
             ]
           }
         },
         "display_answer": "It is essential that the council not cut corners. The plan will affect thousands of commuters, and there is no guarantee whatsoever that the money will be there.",
         "explanation": {
-          "vi": "Essential that + S + not + V là giả định cách phủ định. Will affect - động từ. No guarantee whatsoever nhấn mạnh \"hoàn toàn không có bảo đảm nào\"."
+          "vi": "Essential that + S + not + V là giả định cách phủ định. Will affect - động từ. No guarantee whatsoever (hoặc at all, whatever) nhấn mạnh \"hoàn toàn không có bảo đảm nào\"."
         },
         "known_wrong": [
           {
             "answer": "doesn't",
             "error_tag": "subjunctive",
-            "feedback_vi": "Giả định cách phủ định trong văn trang trọng là not + V - the council not cut."
+            "feedback_vi": "Doesn't cut dùng được trong văn nói, nhưng đề yêu cầu giả định cách trang trọng - the council not cut."
           },
           {
             "answer": "effect",
             "error_tag": "affect_effect",
             "feedback_vi": "Sau will cần động từ affect (ảnh hưởng đến); effect là danh từ."
-          },
-          {
-            "answer": "whatever",
-            "error_tag": "whatsoever",
-            "feedback_vi": "Sau no + danh từ, từ nhấn mạnh là whatsoever."
           }
         ],
         "rubric": {
@@ -34270,28 +35388,34 @@ select content_private.import_bundle($bundle${
             "width_hint": 10
           }
         ],
-        "template": "It is essential that the council {{b1}} cut corners. The plan will {{b2}} thousands of commuters, and there is no guarantee {{b3}} that the money will be there."
+        "template": "It is essential that the council {{b1}} cut corners (giả định cách phủ định). The plan will {{b2}} thousands of commuters, and there is no guarantee {{b3}} that the money will be there."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "7a661f3aabf02d301a630f1878a525802cf485066156eae4013e781bdbf4f9de",
+      "content_hash": "0bf138d6d3e0bdc40870d8426e2a6bbc1bd45cb14ae97630f7700de96edf3af3",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "ada4889c-275d-5e62-9f1e-856f1b801267",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "1863854d-b1a6-5787-9ac3-4b0487dd1095",
       "key": "en:exercise:nuance-review-fill-mildly-hinted",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "mildly"
+              "mildly",
+              "kindly",
+              "politely",
+              "gently",
+              "lightly",
+              "diplomatically",
+              "charitably"
             ],
             "b2": [
               "of"
@@ -34341,8 +35465,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "The product launch was, to put it {{b1}}, a disappointment: there was a bit {{b2}} a problem with the payment system all day."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -34353,7 +35477,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "listen",
       "id": "da7d2026-c7fb-5a25-b14f-ee9100c03bae",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b02e6b5f-9616-56da-a9fa-288e109b315e",
       "key": "en:exercise:nuance-review-listen-worth",
       "key_data": {
@@ -34402,8 +35526,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -34414,7 +35538,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "7d124da0-5794-51d0-ab99-f30311a2879c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "0bdf0872-b72b-5d3e-88c9-3cfcfd97576b",
       "key": "en:exercise:nuance-review-mcq-correct",
       "key_data": {
@@ -34463,8 +35587,8 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào trong bài xã luận của một sinh viên KHÔNG cần sửa?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -34475,7 +35599,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "d083c254-c1ee-5588-9c36-0a40f4d5c6d5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2016fbb1-a5c8-59df-9d49-ed26d78669fa",
       "key": "en:exercise:nuance-review-mcq-editorial",
       "key_data": {
@@ -34524,8 +35648,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bài xã luận viết: \"By and large, the city's new transport plan is a sensible one. Be that as it may, it is essential that the council not cut corners on safety…\" Quan điểm của tác giả là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -34536,7 +35660,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "ac1abcb3-66d0-5f23-b33d-159b103dd852",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "70d89040-0012-569f-93b1-67a387acf9fb",
       "key": "en:exercise:nuance-review-mcq-literary",
       "key_data": {
@@ -34585,8 +35709,8 @@ select content_private.import_bundle($bundle${
         "stem": "Trong đoạn văn: \"Neighbours called her childish, but… I found a childlike delight in the roses she had planted.\" Người kể nhìn bà cụ thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -34597,7 +35721,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 5,
       "exercise_type": "mcq",
       "id": "015cb2d5-1544-529f-ac5c-eabe9f73df42",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "55d70839-6159-51da-9dfb-7576225aa1f9",
       "key": "en:exercise:nuance-review-mcq-reply",
       "key_data": {
@@ -34646,8 +35770,8 @@ select content_private.import_bundle($bundle${
         "stem": "Lan trả lời email của Minh (đồng nghiệp thân, giọng thân thiện nhưng chuyên nghiệp). Câu nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -34658,7 +35782,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "word_bank",
       "id": "b2c207be-5188-5f83-b3ee-3f73675d8399",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7bcff34c-cba9-589a-acd3-ebba81c3a0e8",
       "key": "en:exercise:nuance-review-order-very",
       "key_data": {
@@ -34722,19 +35846,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "56713911234fa3dd3d2e33fa26e94a3f3425a021f9dbb2667ada972d9807c5b7",
+      "content_hash": "bccdef63374b1453831396bb2d5071b77f412f84900d220ae22e0c1f9a911476",
       "difficulty": 5,
       "exercise_type": "translate",
       "id": "4db1c167-4488-50c6-b4d5-ab66b29aeca3",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c8db5f45-8554-5155-8ceb-2d3108fa1b51",
       "key": "en:exercise:nuance-review-translate-did-read",
       "key_data": {
@@ -34752,7 +35876,69 @@ select content_private.import_bundle($bundle${
             "I did read your proposal, and I found it quite sensible by and large.",
             "I did read your proposal and by and large I found it quite sensible.",
             "I did read your proposal, and by and large I thought it was quite sensible.",
-            "I did read your proposal, and by and large I found it rather sensible."
+            "I did read your proposal, and by and large I found it rather sensible.",
+            "I did read your proposal, and by and large I found it fairly reasonable.",
+            "I did read your proposal, and by and large I found it pretty reasonable.",
+            "I did read your proposal, and by and large I found it rather reasonable.",
+            "I did read your proposal, and by and large I found it reasonably sensible.",
+            "I did read your proposal, and by and large I thought it was quite reasonable.",
+            "I did read your proposal, and by and large I thought it was fairly sensible.",
+            "I did read your proposal, and by and large I thought it was fairly reasonable.",
+            "I did read your proposal, and by and large I thought it was pretty sensible.",
+            "I did read your proposal, and by and large I thought it was pretty reasonable.",
+            "I did read your proposal, and by and large I thought it was rather sensible.",
+            "I did read your proposal, and by and large I thought it was rather reasonable.",
+            "I did read your proposal, and by and large I thought it was reasonably sensible.",
+            "I did read your proposal, and by and large I think it is quite reasonable.",
+            "I did read your proposal, and by and large I think it is fairly sensible.",
+            "I did read your proposal, and by and large I think it is fairly reasonable.",
+            "I did read your proposal, and by and large I think it is pretty sensible.",
+            "I did read your proposal, and by and large I think it is pretty reasonable.",
+            "I did read your proposal, and by and large I think it is rather sensible.",
+            "I did read your proposal, and by and large I think it is rather reasonable.",
+            "I did read your proposal, and by and large I think it is reasonably sensible.",
+            "I did read your proposal, and by and large I think it's quite reasonable.",
+            "I did read your proposal, and by and large I think it's fairly sensible.",
+            "I did read your proposal, and by and large I think it's fairly reasonable.",
+            "I did read your proposal, and by and large I think it's pretty sensible.",
+            "I did read your proposal, and by and large I think it's pretty reasonable.",
+            "I did read your proposal, and by and large I think it's rather sensible.",
+            "I did read your proposal, and by and large I think it's rather reasonable.",
+            "I did read your proposal, and by and large I think it's reasonably sensible.",
+            "I did read your proposal, and by and large it seems quite reasonable.",
+            "I did read your proposal, and by and large it seems fairly sensible.",
+            "I did read your proposal, and by and large it seems fairly reasonable.",
+            "I did read your proposal, and by and large it seems pretty sensible.",
+            "I did read your proposal, and by and large it seems pretty reasonable.",
+            "I did read your proposal, and by and large it seems rather sensible.",
+            "I did read your proposal, and by and large it seems rather reasonable.",
+            "I did read your proposal, and by and large it seems reasonably sensible.",
+            "I did read your proposal, and by and large it seemed quite reasonable to me.",
+            "I did read your proposal, and by and large it seemed fairly sensible to me.",
+            "I did read your proposal, and by and large it seemed fairly reasonable to me.",
+            "I did read your proposal, and by and large it seemed pretty sensible to me.",
+            "I did read your proposal, and by and large it seemed pretty reasonable to me.",
+            "I did read your proposal, and by and large it seemed rather sensible to me.",
+            "I did read your proposal, and by and large it seemed rather reasonable to me.",
+            "I did read your proposal, and by and large it seemed reasonably sensible to me.",
+            "I did read your proposal, and by and large it seems quite sensible to me.",
+            "I did read your proposal, and by and large it seems quite reasonable to me.",
+            "I did read your proposal, and by and large it seems fairly sensible to me.",
+            "I did read your proposal, and by and large it seems fairly reasonable to me.",
+            "I did read your proposal, and by and large it seems pretty sensible to me.",
+            "I did read your proposal, and by and large it seems pretty reasonable to me.",
+            "I did read your proposal, and by and large it seems rather sensible to me.",
+            "I did read your proposal, and by and large it seems rather reasonable to me.",
+            "I did read your proposal, and by and large it seems reasonably sensible to me.",
+            "I did read your proposal, and by and large I consider it quite sensible.",
+            "I did read your proposal, and by and large I consider it quite reasonable.",
+            "I did read your proposal, and by and large I consider it fairly sensible.",
+            "I did read your proposal, and by and large I consider it fairly reasonable.",
+            "I did read your proposal, and by and large I consider it pretty sensible.",
+            "I did read your proposal, and by and large I consider it pretty reasonable.",
+            "I did read your proposal, and by and large I consider it rather sensible.",
+            "I did read your proposal, and by and large I consider it rather reasonable.",
+            "I did read your proposal, and by and large I consider it reasonably sensible."
           ]
         },
         "display_answer": "I did read your proposal, and by and large I found it quite sensible.",
@@ -34791,19 +35977,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tôi có đọc đề xuất của bạn thật mà, và nhìn chung tôi thấy nó khá hợp lý. (dùng did và by and large)"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "ca661aa796300508fa245b915de164a42a36aae6a038ecaf2f5837a0dbba6399",
+      "content_hash": "146accbc9d1fdce8fcb2bece709eb895274026cbd897caff4eecba604c94b82e",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "a17fbf53-64f7-5ac1-ae4d-90e032b1a1a4",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "1863854d-b1a6-5787-9ac3-4b0487dd1095",
       "key": "en:exercise:nuance-review-translate-mildly",
       "key_data": {
@@ -34822,7 +36008,19 @@ select content_private.import_bundle($bundle${
             "This quarter's results were disappointing, to put it mildly.",
             "To put it mildly, this quarter's results have been a disappointment.",
             "To put it mildly, this quarter's results are a disappointment.",
-            "To put it mildly, the quarterly results were a disappointment."
+            "To put it mildly, the quarterly results were a disappointment.",
+            "To put it mildly, our results this quarter were a disappointment.",
+            "To put it mildly, this quarter's results were a big disappointment.",
+            "To put it mildly, this quarter's results have been disappointing.",
+            "To put it mildly, the results of this quarter were a disappointment.",
+            "To put it mildly, the results of this quarter were disappointing.",
+            "To put it mildly, the quarterly results were disappointing.",
+            "This quarter's results have been, to put it mildly, a disappointment.",
+            "The results for this quarter were, to put it mildly, a disappointment.",
+            "The results for this quarter were, to put it mildly, disappointing.",
+            "This quarter's results were a disappointment, to put it mildly.",
+            "The results this quarter were disappointing, to put it mildly.",
+            "The results this quarter were a disappointment, to put it mildly."
           ]
         },
         "display_answer": "To put it mildly, this quarter's results were a disappointment.",
@@ -34856,19 +36054,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Nói nhẹ nhàng thì kết quả quý này là một sự thất vọng. (dùng to put it mildly)"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "vi",
-      "content_hash": "75b8e388a9486f5666b137437015068e248a1e6b148189162f188996b6e776ca",
+      "content_hash": "259aa4be47c88fabb9d9443f7ab66325b9f57416462d32d3f8db5b20a9a76c1c",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "c4400588-a54f-53f8-926b-9ee3cef44d17",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4e1c8234-b8db-57f5-8e49-673a67637a2d",
       "key": "en:exercise:nuance-review-translate-to-vi-be-that",
       "key_data": {
@@ -34883,7 +36081,18 @@ select content_private.import_bundle($bundle${
             "Dù sao đi nữa, chúng ta không thể làm ẩu khâu an toàn.",
             "Tuy vậy, chúng ta không thể làm ẩu khâu an toàn.",
             "Dù vậy, chúng tôi không thể làm ẩu khâu an toàn.",
-            "Dù vậy, chúng ta không thể làm ẩu về mặt an toàn."
+            "Dù vậy, chúng ta không thể làm ẩu về mặt an toàn.",
+            "Dù vậy, chúng ta không thể làm ẩu trong khâu an toàn.",
+            "Dù vậy, chúng ta không thể làm ẩu về an toàn.",
+            "Dù vậy, chúng ta không thể bớt xén về an toàn.",
+            "Dù vậy, chúng ta không thể cắt xén khâu an toàn.",
+            "Tuy vậy, chúng ta không thể bớt xén khâu an toàn.",
+            "Dù vậy, chúng ta không thể làm qua loa về mặt an toàn.",
+            "Dù vậy, chúng ta không thể làm ẩu trong vấn đề an toàn.",
+            "Dù vậy, chúng ta không thể bớt xén các khâu an toàn.",
+            "Dù như vậy, chúng ta không thể làm ẩu khâu an toàn.",
+            "Dù thế nào đi nữa, chúng ta không thể làm ẩu khâu an toàn.",
+            "Dù có vậy đi nữa, chúng ta không thể bớt xén khâu an toàn."
           ]
         },
         "display_answer": "Dù vậy, chúng ta không thể làm ẩu khâu an toàn.",
@@ -34912,8 +36121,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Be that as it may, we cannot afford to cut corners on safety."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -45020,11 +46229,11 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "432dbf6b12a156e9f07cfe48125b3c3cac9104634e2fe0b4480ac2930ad75b92",
+      "content_hash": "90f02bd8c1c1978d55e91c7387d1eb8cfcd9350b97240c623430c3abb5216759",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "9893e16a-0259-5993-8881-70e914f7668c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7c6f3b0d-df06-58e8-bc56-45b250be57b5",
       "key": "en:exercise:persuade-review-fill-burden-hinted",
       "key_data": {
@@ -45038,7 +46247,10 @@ select content_private.import_bundle($bundle${
               "admit",
               "accept",
               "grant",
-              "acknowledge"
+              "acknowledge",
+              "agree",
+              "recognise",
+              "recognize"
             ]
           }
         },
@@ -45090,26 +46302,27 @@ select content_private.import_bundle($bundle${
         ],
         "template": "You're the one proposing the change, so the burden of {{b1}} is on you. I'm willing to {{b2}} that a trial is low-risk, but I need numbers."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "23e2f96ce6c6914e49687dc88dc87e3392a619234ef35c3b7e5ee84f00824880",
+      "content_hash": "26bfe0934c4d26fdaefdd8c84ec9a776e0945497c5ed1f36d355cfa71314fe5d",
       "difficulty": 5,
       "exercise_type": "fill_blank",
       "id": "c04e9734-0d11-55a9-828e-dd1e86a304aa",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2b2e9178-cd88-5d1a-8e57-2ff5966258d8",
       "key": "en:exercise:persuade-review-fill-mixed",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "by"
+              "by",
+              "with"
             ],
             "b2": [
               "to"
@@ -45117,10 +46330,21 @@ select content_private.import_bundle($bundle${
             "b3": [
               "admittedly",
               "granted",
-              "undeniably"
+              "undeniably",
+              "true",
+              "certainly",
+              "of course",
+              "no doubt",
+              "to be fair",
+              "to be sure",
+              "sure",
+              "I admit"
             ],
             "b4": [
-              "currently"
+              "currently",
+              "now",
+              "presently",
+              "at present"
             ]
           }
         },
@@ -45130,9 +46354,9 @@ select content_private.import_bundle($bundle${
         },
         "known_wrong": [
           {
-            "answer": "with",
+            "answer": "from",
             "error_tag": "preposition",
-            "feedback_vi": "Begin by + V-ing (bắt đầu bằng việc làm gì); begin with đi với danh từ."
+            "feedback_vi": "Bắt đầu bằng việc làm gì là begin by + V-ing (hoặc begin with + V-ing/danh từ), không dùng from."
           },
           {
             "answer": "actually",
@@ -45174,10 +46398,10 @@ select content_private.import_bundle($bundle${
             "width_hint": 9
           }
         ],
-        "template": "I'd like to begin {{b1}} sharing a surprising figure. … This brings me {{b2}} my second point. … {{b3}}, the plan has risks. That said, our staff {{b4}} work longer hours than anyone else in the industry."
+        "template": "I'd like to begin {{b1}} sharing a surprising figure. … This brings me {{b2}} my second point. … {{b3}} (phải thừa nhận), the plan has risks. That said, our staff {{b4}} (hiện nay) work longer hours than anyone else in the industry."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -45188,7 +46412,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "listen",
       "id": "10846e64-3113-54b8-9153-b6573a68bb6a",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "df77ba78-f284-582d-8d00-6b981cdecc64",
       "key": "en:exercise:persuade-review-listen-food-for-thought",
       "key_data": {
@@ -45237,8 +46461,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -45249,7 +46473,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "681fcd11-52f9-5b24-bf8b-6d21189085a4",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "063564a4-16b4-52e0-a775-9b4e3db6a774",
       "key": "en:exercise:persuade-review-mcq-concession",
       "key_data": {
@@ -45298,8 +46522,8 @@ select content_private.import_bundle($bundle${
         "stem": "Trong cuộc tranh luận, câu nào là lời NHƯỢNG BỘ của người thuyết trình?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -45310,7 +46534,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 5,
       "exercise_type": "mcq",
       "id": "aec011eb-ac95-580e-bed0-bffa7916c368",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "419404af-8507-5456-a1d2-43d4974d9026",
       "key": "en:exercise:persuade-review-mcq-error-free",
       "key_data": {
@@ -45359,8 +46583,8 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào KHÔNG có lỗi?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -45371,7 +46595,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "5a1a8243-2965-5f09-a53f-1e83def1cd1f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "0b431a56-22f9-51a6-9f8c-592a729395b0",
       "key": "en:exercise:persuade-review-mcq-perspective",
       "key_data": {
@@ -45420,8 +46644,8 @@ select content_private.import_bundle($bundle${
         "stem": "Trong bài thuyết trình, câu \"To put this into perspective, we lose the equivalent of one working day per person every week\" có tác dụng gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -45432,7 +46656,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 5,
       "exercise_type": "mcq",
       "id": "0ae0f4f8-64aa-5354-8f55-d13433b59ede",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b19d99c9-6a07-51f1-b276-ad977051d70a",
       "key": "en:exercise:persuade-review-mcq-rebut",
       "key_data": {
@@ -45481,8 +46705,8 @@ select content_private.import_bundle($bundle${
         "stem": "Đối phương nói: \"Shorter weeks always mean lower output - everybody knows that.\" Bạn có một lượt để phản bác. Câu nào tốt nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -45493,7 +46717,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 5,
       "exercise_type": "word_bank",
       "id": "685a74ef-22bc-551c-9ae3-b5832f499200",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4235cb06-e644-5779-ab20-2f0f1d383638",
       "key": "en:exercise:persuade-review-order-while",
       "key_data": {
@@ -45547,19 +46771,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "fee78caeaa5efb486ba7f56c8cf358f4e1ecb701cea8e29626dcce5f84829dd5",
+      "content_hash": "43323b5fe67ebff5d30f10b9dda11c9e7756df17aeb37a01f28c283dffb8409f",
       "difficulty": 5,
       "exercise_type": "translate",
       "id": "9d5d1c0f-c541-5ca8-8634-733bde566ed3",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3376c578-5848-5b28-8112-181895d4b6ad",
       "key": "en:exercise:persuade-review-translate-admittedly-all",
       "key_data": {
@@ -45577,7 +46801,186 @@ select content_private.import_bundle($bundle${
             "Admittedly, none of the solutions is perfect, but all we need is a start.",
             "Admittedly, no solution is perfect, but all we need is to make a start.",
             "Admittedly, no solution is perfect, but all we need is to start.",
-            "Granted, no solution is perfect, but all we need is a start."
+            "Granted, no solution is perfect, but all we need is a start.",
+            "Admittedly, no solution is perfect, but all we need is to begin.",
+            "Admittedly, no solution is perfect, but all that we need is a beginning.",
+            "Admittedly, no solution is perfect, but all that we need is a starting point.",
+            "Admittedly, no solution is perfect, but all that we need is to make a start.",
+            "Admittedly, no solution is perfect, but all that we need is to start.",
+            "Admittedly, no solution is perfect, but all that we need is to begin.",
+            "Admittedly, no solution is perfect. However, all we need is a beginning.",
+            "Admittedly, no solution is perfect. However, all we need is a starting point.",
+            "Admittedly, no solution is perfect. However, all we need is to make a start.",
+            "Admittedly, no solution is perfect. However, all we need is to start.",
+            "Admittedly, no solution is perfect. However, all we need is to begin.",
+            "Admittedly, no solution is perfect. That said, all we need is a beginning.",
+            "Admittedly, no solution is perfect. That said, all we need is a starting point.",
+            "Admittedly, no solution is perfect. That said, all we need is to make a start.",
+            "Admittedly, no solution is perfect. That said, all we need is to start.",
+            "Admittedly, no solution is perfect. That said, all we need is to begin.",
+            "Admittedly, there is no perfect solution, but all we need is a beginning.",
+            "Admittedly, there is no perfect solution, but all we need is to make a start.",
+            "Admittedly, there is no perfect solution, but all we need is to start.",
+            "Admittedly, there is no perfect solution, but all we need is to begin.",
+            "Admittedly, there is no perfect solution, but all that we need is a start.",
+            "Admittedly, there is no perfect solution, but all that we need is a beginning.",
+            "Admittedly, there is no perfect solution, but all that we need is a starting point.",
+            "Admittedly, there is no perfect solution, but all that we need is to make a start.",
+            "Admittedly, there is no perfect solution, but all that we need is to start.",
+            "Admittedly, there is no perfect solution, but all that we need is to begin.",
+            "Admittedly, there is no perfect solution. However, all we need is a start.",
+            "Admittedly, there is no perfect solution. However, all we need is a beginning.",
+            "Admittedly, there is no perfect solution. However, all we need is a starting point.",
+            "Admittedly, there is no perfect solution. However, all we need is to make a start.",
+            "Admittedly, there is no perfect solution. However, all we need is to start.",
+            "Admittedly, there is no perfect solution. However, all we need is to begin.",
+            "Admittedly, there is no perfect solution. That said, all we need is a start.",
+            "Admittedly, there is no perfect solution. That said, all we need is a beginning.",
+            "Admittedly, there is no perfect solution. That said, all we need is a starting point.",
+            "Admittedly, there is no perfect solution. That said, all we need is to make a start.",
+            "Admittedly, there is no perfect solution. That said, all we need is to start.",
+            "Admittedly, there is no perfect solution. That said, all we need is to begin.",
+            "Admittedly, there's no perfect solution, but all we need is a beginning.",
+            "Admittedly, there's no perfect solution, but all we need is a starting point.",
+            "Admittedly, there's no perfect solution, but all we need is to make a start.",
+            "Admittedly, there's no perfect solution, but all we need is to start.",
+            "Admittedly, there's no perfect solution, but all we need is to begin.",
+            "Admittedly, there's no perfect solution, but all that we need is a start.",
+            "Admittedly, there's no perfect solution, but all that we need is a beginning.",
+            "Admittedly, there's no perfect solution, but all that we need is a starting point.",
+            "Admittedly, there's no perfect solution, but all that we need is to make a start.",
+            "Admittedly, there's no perfect solution, but all that we need is to start.",
+            "Admittedly, there's no perfect solution, but all that we need is to begin.",
+            "Admittedly, there's no perfect solution. However, all we need is a start.",
+            "Admittedly, there's no perfect solution. However, all we need is a beginning.",
+            "Admittedly, there's no perfect solution. However, all we need is a starting point.",
+            "Admittedly, there's no perfect solution. However, all we need is to make a start.",
+            "Admittedly, there's no perfect solution. However, all we need is to start.",
+            "Admittedly, there's no perfect solution. However, all we need is to begin.",
+            "Admittedly, there's no perfect solution. That said, all we need is a start.",
+            "Admittedly, there's no perfect solution. That said, all we need is a beginning.",
+            "Admittedly, there's no perfect solution. That said, all we need is a starting point.",
+            "Admittedly, there's no perfect solution. That said, all we need is to make a start.",
+            "Admittedly, there's no perfect solution. That said, all we need is to start.",
+            "Admittedly, there's no perfect solution. That said, all we need is to begin.",
+            "Admittedly, none of the solutions is perfect, but all we need is a beginning.",
+            "Admittedly, none of the solutions is perfect, but all we need is a starting point.",
+            "Admittedly, none of the solutions is perfect, but all we need is to make a start.",
+            "Admittedly, none of the solutions is perfect, but all we need is to start.",
+            "Admittedly, none of the solutions is perfect, but all we need is to begin.",
+            "Admittedly, none of the solutions is perfect, but all that we need is a start.",
+            "Admittedly, none of the solutions is perfect, but all that we need is a beginning.",
+            "Admittedly, none of the solutions is perfect, but all that we need is a starting point.",
+            "Admittedly, none of the solutions is perfect, but all that we need is to make a start.",
+            "Admittedly, none of the solutions is perfect, but all that we need is to start.",
+            "Admittedly, none of the solutions is perfect, but all that we need is to begin.",
+            "Admittedly, none of the solutions is perfect. However, all we need is a start.",
+            "Admittedly, none of the solutions is perfect. However, all we need is a beginning.",
+            "Admittedly, none of the solutions is perfect. However, all we need is a starting point.",
+            "Admittedly, none of the solutions is perfect. However, all we need is to make a start.",
+            "Admittedly, none of the solutions is perfect. However, all we need is to start.",
+            "Admittedly, none of the solutions is perfect. However, all we need is to begin.",
+            "Admittedly, none of the solutions is perfect. That said, all we need is a start.",
+            "Admittedly, none of the solutions is perfect. That said, all we need is a beginning.",
+            "Admittedly, none of the solutions is perfect. That said, all we need is a starting point.",
+            "Admittedly, none of the solutions is perfect. That said, all we need is to make a start.",
+            "Admittedly, none of the solutions is perfect. That said, all we need is to start.",
+            "Admittedly, none of the solutions is perfect. That said, all we need is to begin.",
+            "Granted, no solution is perfect, but all we need is a beginning.",
+            "Granted, no solution is perfect, but all we need is a starting point.",
+            "Granted, no solution is perfect, but all we need is to make a start.",
+            "Granted, no solution is perfect, but all we need is to start.",
+            "Granted, no solution is perfect, but all we need is to begin.",
+            "Granted, no solution is perfect, but all that we need is a start.",
+            "Granted, no solution is perfect, but all that we need is a beginning.",
+            "Granted, no solution is perfect, but all that we need is a starting point.",
+            "Granted, no solution is perfect, but all that we need is to make a start.",
+            "Granted, no solution is perfect, but all that we need is to start.",
+            "Granted, no solution is perfect, but all that we need is to begin.",
+            "Granted, no solution is perfect. However, all we need is a start.",
+            "Granted, no solution is perfect. However, all we need is a beginning.",
+            "Granted, no solution is perfect. However, all we need is a starting point.",
+            "Granted, no solution is perfect. However, all we need is to make a start.",
+            "Granted, no solution is perfect. However, all we need is to start.",
+            "Granted, no solution is perfect. However, all we need is to begin.",
+            "Granted, no solution is perfect. That said, all we need is a start.",
+            "Granted, no solution is perfect. That said, all we need is a beginning.",
+            "Granted, no solution is perfect. That said, all we need is a starting point.",
+            "Granted, no solution is perfect. That said, all we need is to make a start.",
+            "Granted, no solution is perfect. That said, all we need is to start.",
+            "Granted, no solution is perfect. That said, all we need is to begin.",
+            "Granted, there is no perfect solution, but all we need is a start.",
+            "Granted, there is no perfect solution, but all we need is a beginning.",
+            "Granted, there is no perfect solution, but all we need is a starting point.",
+            "Granted, there is no perfect solution, but all we need is to make a start.",
+            "Granted, there is no perfect solution, but all we need is to start.",
+            "Granted, there is no perfect solution, but all we need is to begin.",
+            "Granted, there is no perfect solution, but all that we need is a start.",
+            "Granted, there is no perfect solution, but all that we need is a beginning.",
+            "Granted, there is no perfect solution, but all that we need is a starting point.",
+            "Granted, there is no perfect solution, but all that we need is to make a start.",
+            "Granted, there is no perfect solution, but all that we need is to start.",
+            "Granted, there is no perfect solution, but all that we need is to begin.",
+            "Granted, there is no perfect solution. However, all we need is a start.",
+            "Granted, there is no perfect solution. However, all we need is a beginning.",
+            "Granted, there is no perfect solution. However, all we need is a starting point.",
+            "Granted, there is no perfect solution. However, all we need is to make a start.",
+            "Granted, there is no perfect solution. However, all we need is to start.",
+            "Granted, there is no perfect solution. However, all we need is to begin.",
+            "Granted, there is no perfect solution. That said, all we need is a start.",
+            "Granted, there is no perfect solution. That said, all we need is a beginning.",
+            "Granted, there is no perfect solution. That said, all we need is a starting point.",
+            "Granted, there is no perfect solution. That said, all we need is to make a start.",
+            "Granted, there is no perfect solution. That said, all we need is to start.",
+            "Granted, there is no perfect solution. That said, all we need is to begin.",
+            "Granted, there's no perfect solution, but all we need is a start.",
+            "Granted, there's no perfect solution, but all we need is a beginning.",
+            "Granted, there's no perfect solution, but all we need is a starting point.",
+            "Granted, there's no perfect solution, but all we need is to make a start.",
+            "Granted, there's no perfect solution, but all we need is to start.",
+            "Granted, there's no perfect solution, but all we need is to begin.",
+            "Granted, there's no perfect solution, but all that we need is a start.",
+            "Granted, there's no perfect solution, but all that we need is a beginning.",
+            "Granted, there's no perfect solution, but all that we need is a starting point.",
+            "Granted, there's no perfect solution, but all that we need is to make a start.",
+            "Granted, there's no perfect solution, but all that we need is to start.",
+            "Granted, there's no perfect solution, but all that we need is to begin.",
+            "Granted, there's no perfect solution. However, all we need is a start.",
+            "Granted, there's no perfect solution. However, all we need is a beginning.",
+            "Granted, there's no perfect solution. However, all we need is a starting point.",
+            "Granted, there's no perfect solution. However, all we need is to make a start.",
+            "Granted, there's no perfect solution. However, all we need is to start.",
+            "Granted, there's no perfect solution. However, all we need is to begin.",
+            "Granted, there's no perfect solution. That said, all we need is a start.",
+            "Granted, there's no perfect solution. That said, all we need is a beginning.",
+            "Granted, there's no perfect solution. That said, all we need is a starting point.",
+            "Granted, there's no perfect solution. That said, all we need is to make a start.",
+            "Granted, there's no perfect solution. That said, all we need is to start.",
+            "Granted, there's no perfect solution. That said, all we need is to begin.",
+            "Granted, none of the solutions is perfect, but all we need is a start.",
+            "Granted, none of the solutions is perfect, but all we need is a beginning.",
+            "Granted, none of the solutions is perfect, but all we need is a starting point.",
+            "Granted, none of the solutions is perfect, but all we need is to make a start.",
+            "Granted, none of the solutions is perfect, but all we need is to start.",
+            "Granted, none of the solutions is perfect, but all we need is to begin.",
+            "Granted, none of the solutions is perfect, but all that we need is a start.",
+            "Granted, none of the solutions is perfect, but all that we need is a beginning.",
+            "Granted, none of the solutions is perfect, but all that we need is a starting point.",
+            "Granted, none of the solutions is perfect, but all that we need is to make a start.",
+            "Granted, none of the solutions is perfect, but all that we need is to start.",
+            "Granted, none of the solutions is perfect, but all that we need is to begin.",
+            "Granted, none of the solutions is perfect. However, all we need is a start.",
+            "Granted, none of the solutions is perfect. However, all we need is a beginning.",
+            "Granted, none of the solutions is perfect. However, all we need is a starting point.",
+            "Granted, none of the solutions is perfect. However, all we need is to make a start.",
+            "Granted, none of the solutions is perfect. However, all we need is to start.",
+            "Granted, none of the solutions is perfect. However, all we need is to begin.",
+            "Granted, none of the solutions is perfect. That said, all we need is a start.",
+            "Granted, none of the solutions is perfect. That said, all we need is a beginning.",
+            "Granted, none of the solutions is perfect. That said, all we need is a starting point.",
+            "Granted, none of the solutions is perfect. That said, all we need is to make a start.",
+            "Granted, none of the solutions is perfect. That said, all we need is to start.",
+            "Granted, none of the solutions is perfect. That said, all we need is to begin."
           ]
         },
         "display_answer": "Admittedly, no solution is perfect, but all we need is a start.",
@@ -45616,19 +47019,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Phải thừa nhận là không có giải pháp nào hoàn hảo, nhưng tất cả những gì chúng ta cần là một khởi đầu."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "2669bc1dbd51117be83c11859647055e3e3d7f605099d1062801d71689467b17",
+      "content_hash": "0142e467cff187ea659e784ff428038236070b96878ab669cb170bebeeefab2e",
       "difficulty": 5,
       "exercise_type": "translate",
       "id": "49d78215-1493-5e6a-b085-954d94aab4b7",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "ef7fbb99-ca46-524d-9bfc-576c52ca1398",
       "key": "en:exercise:persuade-review-translate-precisely",
       "key_data": {
@@ -45648,7 +47051,67 @@ select content_private.import_bundle($bundle${
             "That's precisely why we can't wait any longer.",
             "This is precisely why we cannot wait any longer.",
             "This is precisely why we can't wait any longer.",
-            "It is exactly for this reason that we cannot wait any longer."
+            "It is exactly for this reason that we cannot wait any longer.",
+            "It is precisely for this reason that we cannot wait any further.",
+            "It is precisely for this reason that we cannot afford to wait any longer.",
+            "It is for precisely this reason that we can no longer wait.",
+            "It is for precisely this reason that we cannot wait any more.",
+            "It is for precisely this reason that we cannot wait any further.",
+            "It is for precisely this reason that we cannot afford to wait any longer.",
+            "It is precisely because of this that we can no longer wait.",
+            "It is precisely because of this that we cannot wait any more.",
+            "It is precisely because of this that we cannot wait any further.",
+            "It is precisely because of this that we cannot afford to wait any longer.",
+            "It is precisely because of this reason that we cannot wait any longer.",
+            "It is precisely because of this reason that we can no longer wait.",
+            "It is precisely because of this reason that we cannot wait any more.",
+            "It is precisely because of this reason that we cannot wait any further.",
+            "It is precisely because of this reason that we cannot afford to wait any longer.",
+            "It is exactly for this reason that we can no longer wait.",
+            "It is exactly for this reason that we cannot wait any more.",
+            "It is exactly for this reason that we cannot wait any further.",
+            "It is exactly for this reason that we cannot afford to wait any longer.",
+            "It is for exactly this reason that we cannot wait any longer.",
+            "It is for exactly this reason that we can no longer wait.",
+            "It is for exactly this reason that we cannot wait any more.",
+            "It is for exactly this reason that we cannot wait any further.",
+            "It is for exactly this reason that we cannot afford to wait any longer.",
+            "That is precisely why we can no longer wait.",
+            "That is precisely why we cannot wait any more.",
+            "That is precisely why we cannot wait any further.",
+            "That is precisely why we cannot afford to wait any longer.",
+            "This is precisely why we can no longer wait.",
+            "This is precisely why we cannot wait any more.",
+            "This is precisely why we cannot wait any further.",
+            "This is precisely why we cannot afford to wait any longer.",
+            "That's precisely why we can no longer wait.",
+            "That's precisely why we cannot wait any more.",
+            "That's precisely why we cannot wait any further.",
+            "That's precisely why we cannot afford to wait any longer.",
+            "That is exactly why we cannot wait any longer.",
+            "That is exactly why we can no longer wait.",
+            "That is exactly why we cannot wait any more.",
+            "That is exactly why we cannot wait any further.",
+            "That is exactly why we cannot afford to wait any longer.",
+            "This is exactly why we cannot wait any longer.",
+            "This is exactly why we can no longer wait.",
+            "This is exactly why we cannot wait any more.",
+            "This is exactly why we cannot wait any further.",
+            "This is exactly why we cannot afford to wait any longer.",
+            "That's exactly why we cannot wait any longer.",
+            "That's exactly why we can no longer wait.",
+            "That's exactly why we cannot wait any more.",
+            "That's exactly why we cannot wait any further.",
+            "That's exactly why we cannot afford to wait any longer.",
+            "It's precisely for this reason that we can no longer wait.",
+            "It's precisely for this reason that we cannot wait any more.",
+            "It's precisely for this reason that we cannot wait any further.",
+            "It's precisely for this reason that we cannot afford to wait any longer.",
+            "It's for precisely this reason that we cannot wait any longer.",
+            "It's for precisely this reason that we can no longer wait.",
+            "It's for precisely this reason that we cannot wait any more.",
+            "It's for precisely this reason that we cannot wait any further.",
+            "It's for precisely this reason that we cannot afford to wait any longer."
           ]
         },
         "display_answer": "It is precisely for this reason that we cannot wait any longer.",
@@ -45687,19 +47150,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chính vì lý do này mà chúng ta không thể chờ thêm nữa."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "vi",
-      "content_hash": "fa1ccebde78ba396c1752b22418de8b0b31a98db72d1950bb47a9fd715569fbc",
+      "content_hash": "471ace57553df4d4a9bd0b21fc8acd288a5b820b9d84dd6264dfac1d209a6ce0",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "7c27bd57-6321-52eb-a880-394780c94319",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "92d65d4d-e3dc-584c-86f9-c59a94053690",
       "key": "en:exercise:persuade-review-translate-to-vi-far-from",
       "key_data": {
@@ -45714,7 +47177,76 @@ select content_private.import_bundle($bundle${
             "Thiết kế tốt không phải là thứ xa xỉ, nó là điều thiết yếu.",
             "Thiết kế đẹp không phải là thứ xa xỉ mà là điều cần thiết.",
             "Thiết kế tốt không hề xa xỉ mà là điều cần thiết.",
-            "Còn lâu thiết kế tốt mới là thứ xa xỉ, nó là điều cần thiết."
+            "Còn lâu thiết kế tốt mới là thứ xa xỉ, nó là điều cần thiết.",
+            "Thiết kế tốt không phải là thứ xa xỉ, mà là một điều cần thiết.",
+            "Thiết kế tốt không phải là thứ xa xỉ, mà là một nhu cầu thiết yếu.",
+            "Thiết kế tốt không phải là thứ xa xỉ, mà là điều thiết yếu.",
+            "Thiết kế tốt không phải là thứ xa xỉ, mà ngược lại là điều cần thiết.",
+            "Thiết kế tốt không phải là thứ xa xỉ, mà ngược lại là một điều cần thiết.",
+            "Thiết kế tốt không phải là thứ xa xỉ, mà ngược lại là một nhu cầu thiết yếu.",
+            "Thiết kế tốt không phải là thứ xa xỉ, mà ngược lại là điều thiết yếu.",
+            "Thiết kế tốt không phải là một thứ xa xỉ, mà là điều cần thiết.",
+            "Thiết kế tốt không phải là một thứ xa xỉ, mà là một nhu cầu thiết yếu.",
+            "Thiết kế tốt không phải là một thứ xa xỉ, mà là điều thiết yếu.",
+            "Thiết kế tốt không phải là một thứ xa xỉ, mà ngược lại là điều cần thiết.",
+            "Thiết kế tốt không phải là một thứ xa xỉ, mà ngược lại là một điều cần thiết.",
+            "Thiết kế tốt không phải là một thứ xa xỉ, mà ngược lại là một nhu cầu thiết yếu.",
+            "Thiết kế tốt không phải là một thứ xa xỉ, mà ngược lại là điều thiết yếu.",
+            "Thiết kế tốt không phải là điều xa xỉ, mà là điều cần thiết.",
+            "Thiết kế tốt không phải là điều xa xỉ, mà là một điều cần thiết.",
+            "Thiết kế tốt không phải là điều xa xỉ, mà là một nhu cầu thiết yếu.",
+            "Thiết kế tốt không phải là điều xa xỉ, mà là điều thiết yếu.",
+            "Thiết kế tốt không phải là điều xa xỉ, mà ngược lại là điều cần thiết.",
+            "Thiết kế tốt không phải là điều xa xỉ, mà ngược lại là một điều cần thiết.",
+            "Thiết kế tốt không phải là điều xa xỉ, mà ngược lại là một nhu cầu thiết yếu.",
+            "Thiết kế tốt không phải là điều xa xỉ, mà ngược lại là điều thiết yếu.",
+            "Thiết kế tốt không hề là thứ xa xỉ, mà là điều cần thiết.",
+            "Thiết kế tốt không hề là thứ xa xỉ, mà là một điều cần thiết.",
+            "Thiết kế tốt không hề là thứ xa xỉ, mà là điều thiết yếu.",
+            "Thiết kế tốt không hề là thứ xa xỉ, mà ngược lại là điều cần thiết.",
+            "Thiết kế tốt không hề là thứ xa xỉ, mà ngược lại là một điều cần thiết.",
+            "Thiết kế tốt không hề là thứ xa xỉ, mà ngược lại là một nhu cầu thiết yếu.",
+            "Thiết kế tốt không hề là thứ xa xỉ, mà ngược lại là điều thiết yếu.",
+            "Thiết kế tốt không hề là một thứ xa xỉ, mà là điều cần thiết.",
+            "Thiết kế tốt không hề là một thứ xa xỉ, mà là một điều cần thiết.",
+            "Thiết kế tốt không hề là một thứ xa xỉ, mà là một nhu cầu thiết yếu.",
+            "Thiết kế tốt không hề là một thứ xa xỉ, mà là điều thiết yếu.",
+            "Thiết kế tốt không hề là một thứ xa xỉ, mà ngược lại là điều cần thiết.",
+            "Thiết kế tốt không hề là một thứ xa xỉ, mà ngược lại là một điều cần thiết.",
+            "Thiết kế tốt không hề là một thứ xa xỉ, mà ngược lại là một nhu cầu thiết yếu.",
+            "Thiết kế tốt không hề là một thứ xa xỉ, mà ngược lại là điều thiết yếu.",
+            "Thiết kế tốt không hề là điều xa xỉ, mà là điều cần thiết.",
+            "Thiết kế tốt không hề là điều xa xỉ, mà là một điều cần thiết.",
+            "Thiết kế tốt không hề là điều xa xỉ, mà là một nhu cầu thiết yếu.",
+            "Thiết kế tốt không hề là điều xa xỉ, mà là điều thiết yếu.",
+            "Thiết kế tốt không hề là điều xa xỉ, mà ngược lại là điều cần thiết.",
+            "Thiết kế tốt không hề là điều xa xỉ, mà ngược lại là một điều cần thiết.",
+            "Thiết kế tốt không hề là điều xa xỉ, mà ngược lại là một nhu cầu thiết yếu.",
+            "Thiết kế tốt không hề là điều xa xỉ, mà ngược lại là điều thiết yếu.",
+            "Thiết kế tốt chẳng phải là thứ xa xỉ, mà là điều cần thiết.",
+            "Thiết kế tốt chẳng phải là thứ xa xỉ, mà là một điều cần thiết.",
+            "Thiết kế tốt chẳng phải là thứ xa xỉ, mà là một nhu cầu thiết yếu.",
+            "Thiết kế tốt chẳng phải là thứ xa xỉ, mà là điều thiết yếu.",
+            "Thiết kế tốt chẳng phải là thứ xa xỉ, mà ngược lại là điều cần thiết.",
+            "Thiết kế tốt chẳng phải là thứ xa xỉ, mà ngược lại là một điều cần thiết.",
+            "Thiết kế tốt chẳng phải là thứ xa xỉ, mà ngược lại là một nhu cầu thiết yếu.",
+            "Thiết kế tốt chẳng phải là thứ xa xỉ, mà ngược lại là điều thiết yếu.",
+            "Thiết kế tốt chẳng phải là một thứ xa xỉ, mà là điều cần thiết.",
+            "Thiết kế tốt chẳng phải là một thứ xa xỉ, mà là một điều cần thiết.",
+            "Thiết kế tốt chẳng phải là một thứ xa xỉ, mà là một nhu cầu thiết yếu.",
+            "Thiết kế tốt chẳng phải là một thứ xa xỉ, mà là điều thiết yếu.",
+            "Thiết kế tốt chẳng phải là một thứ xa xỉ, mà ngược lại là điều cần thiết.",
+            "Thiết kế tốt chẳng phải là một thứ xa xỉ, mà ngược lại là một điều cần thiết.",
+            "Thiết kế tốt chẳng phải là một thứ xa xỉ, mà ngược lại là một nhu cầu thiết yếu.",
+            "Thiết kế tốt chẳng phải là một thứ xa xỉ, mà ngược lại là điều thiết yếu.",
+            "Thiết kế tốt chẳng phải là điều xa xỉ, mà là điều cần thiết.",
+            "Thiết kế tốt chẳng phải là điều xa xỉ, mà là một điều cần thiết.",
+            "Thiết kế tốt chẳng phải là điều xa xỉ, mà là một nhu cầu thiết yếu.",
+            "Thiết kế tốt chẳng phải là điều xa xỉ, mà là điều thiết yếu.",
+            "Thiết kế tốt chẳng phải là điều xa xỉ, mà ngược lại là điều cần thiết.",
+            "Thiết kế tốt chẳng phải là điều xa xỉ, mà ngược lại là một điều cần thiết.",
+            "Thiết kế tốt chẳng phải là điều xa xỉ, mà ngược lại là một nhu cầu thiết yếu.",
+            "Thiết kế tốt chẳng phải là điều xa xỉ, mà ngược lại là điều thiết yếu."
           ]
         },
         "display_answer": "Thiết kế tốt không phải là thứ xa xỉ mà là điều cần thiết.",
@@ -45748,8 +47280,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Far from being a luxury, good design is a necessity."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -48581,11 +50113,11 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "bdeb40136991c934a8e81feadd9a8c5025ff62a4377809c3a7c20aa77e8fed75",
+      "content_hash": "f593929897b41413b8eec4322571d6c75ab5a342278e242f74133af7bfa0cd37",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "b0f7085b-2c16-5176-bf81-2fb3de1a8b47",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "882d8931-cb04-5bfd-a507-3f111c763af5",
       "key": "en:exercise:qa-debate-fill-clarify-hinted",
       "key_data": {
@@ -48593,7 +50125,8 @@ select content_private.import_bundle($bundle${
           "blanks": {
             "b1": [
               "correctly",
-              "rightly"
+              "rightly",
+              "right"
             ],
             "b2": [
               "whether",
@@ -48649,19 +50182,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "If I understand you {{b1}}, you're asking {{b2}} the price will go up next year."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "30d0b188ac2c08181113111bc1a10829aa8dd85e431b680b7e6f486a7d591b3e",
+      "content_hash": "af6a44d9b19c0bb72c973c52930011aadbacd1744b057fcd539bda54dc1bcb57",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "a6272bdc-5fba-5f45-9b97-0692075896f8",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b19d99c9-6a07-51f1-b276-ad977051d70a",
       "key": "en:exercise:qa-debate-fill-debate-verbs",
       "key_data": {
@@ -48669,16 +50202,69 @@ select content_private.import_bundle($bundle${
           "blanks": {
             "b1": [
               "rebutted",
-              "refuted"
+              "refuted",
+              "countered",
+              "disproved",
+              "debunked",
+              "challenged",
+              "disputed",
+              "answered",
+              "contradicted",
+              "dismissed",
+              "rebuts",
+              "refutes",
+              "counters",
+              "disproves",
+              "debunks",
+              "challenges",
+              "disputes",
+              "answers",
+              "contradicts",
+              "dismisses"
             ],
             "b2": [
               "conceded",
               "admitted",
-              "acknowledged"
+              "acknowledged",
+              "agreed",
+              "accepted",
+              "recognised",
+              "recognized",
+              "granted",
+              "allowed",
+              "said",
+              "thought",
+              "felt",
+              "believed",
+              "noted",
+              "concede",
+              "admit",
+              "acknowledge",
+              "agree",
+              "accept",
+              "recognise",
+              "recognize",
+              "grant",
+              "allow",
+              "say",
+              "think",
+              "feel",
+              "believe",
+              "note"
             ],
             "b3": [
               "undermine",
-              "weaken"
+              "weaken",
+              "damage",
+              "discredit",
+              "destroy",
+              "invalidate",
+              "jeopardise",
+              "jeopardize",
+              "compromise",
+              "erode",
+              "subvert",
+              "sabotage"
             ]
           }
         },
@@ -48695,17 +50281,7 @@ select content_private.import_bundle($bundle${
           {
             "answer": "rebut",
             "error_tag": "verb_form",
-            "feedback_vi": "Câu kể chuyện ở quá khứ - rebutted (nhân đôi t)."
-          },
-          {
-            "answer": "concede",
-            "error_tag": "verb_form",
-            "feedback_vi": "Câu ở quá khứ - conceded."
-          },
-          {
-            "answer": "denied",
-            "error_tag": "meaning",
-            "feedback_vi": "Deny là phủ nhận; ở đây người chỉ trích thừa nhận (conceded) bằng chứng mạnh."
+            "feedback_vi": "Chủ ngữ the minister là số ít nên cần rebutted (quá khứ, nhân đôi t) hoặc rebuts - không dùng nguyên mẫu rebut."
           }
         ],
         "rubric": {
@@ -48735,8 +50311,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "The minister {{b1}} the claim with figures from an independent study. Even her critics {{b2}} that her evidence was strong. One weak statistic, however, could {{b3}} her entire argument."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -48747,7 +50323,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "listen",
       "id": "add3cc28-6608-5512-9170-3963064f7acb",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "eaea38bb-05a4-5fe0-8411-2b639efeddd2",
       "key": "en:exercise:qa-debate-listen-due-respect",
       "key_data": {
@@ -48796,8 +50372,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -48808,7 +50384,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "3707cfaa-25ca-550e-8bf1-95d082945567",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "86907134-6249-50fd-88c5-fb5577a4ebfb",
       "key": "en:exercise:qa-debate-mcq-compelling",
       "key_data": {
@@ -48857,8 +50433,8 @@ select content_private.import_bundle($bundle${
         "stem": "\"The report makes a compelling case for a four-day week.\" Compelling ở đây nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -48869,7 +50445,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "254ba0bf-a690-5e5c-9682-d824b130f1f6",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "582bfb54-c2cc-58d5-8a27-815a5486308c",
       "key": "en:exercise:qa-debate-mcq-disagree",
       "key_data": {
@@ -48918,8 +50494,8 @@ select content_private.import_bundle($bundle${
         "stem": "Trong cuộc họp với khách hàng, bạn không đồng ý với nhận định của họ. Câu nào phù hợp nhất để mở đầu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -48930,7 +50506,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 5,
       "exercise_type": "mcq",
       "id": "ed730da4-6dec-5adf-92af-79c025a6351d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "ea06980a-f4fb-5a91-be53-c1915db463f8",
       "key": "en:exercise:qa-debate-mcq-rebuttal",
       "key_data": {
@@ -48979,8 +50555,8 @@ select content_private.import_bundle($bundle${
         "stem": "Trong buổi tranh luận, đối phương nói: \"Remote workers are less productive - my team proves it.\" Câu phản bác nào sắc bén mà vẫn lịch sự nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -48991,7 +50567,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "b4b4fd0a-ad91-5236-b6a4-063b6af971b4",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "37e5657f-4eb4-598a-8ce9-9758c8b5fa43",
       "key": "en:exercise:qa-debate-mcq-tough-question",
       "key_data": {
@@ -49040,19 +50616,19 @@ select content_private.import_bundle($bundle${
         "stem": "Một người nghe hỏi gay gắt: \"Isn't this new system just a way to cut jobs?\" Câu trả lời nào chuyên nghiệp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "0773471d98f80499b2f81b0d26c6e01a2f4fbf1a8d617f5a15d5437140da2b3e",
+      "content_hash": "7f9f563ddc393c67455499f2861aed586ab3aa7feb16ec9e6c0237e64bbc10b9",
       "difficulty": 4,
       "exercise_type": "word_bank",
       "id": "c398d4b3-1cae-5ed7-acfa-6b44fa581899",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "eaea38bb-05a4-5fe0-8411-2b639efeddd2",
       "key": "en:exercise:qa-debate-order-due-respect",
       "key_data": {
@@ -49064,6 +50640,13 @@ select content_private.import_bundle($bundle${
               "d-it",
               "d-somewhat",
               "d-differently"
+            ],
+            [
+              "d-see",
+              "d-it",
+              "d-somewhat",
+              "d-differently",
+              "d-respect"
             ]
           ]
         },
@@ -49111,19 +50694,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "e2e4bb22b757695717fcacb9ae2b1e3d107b1bf4a268a776e0ab8fa27f5300a1",
+      "content_hash": "69f95cbc6af15ef5e9ddf0452444520c8ae3af1ecdf9457d910bea0bfba646d8",
       "difficulty": 5,
       "exercise_type": "translate",
       "id": "21f721e8-b00d-56f8-991e-36bb424e3a4b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "86907134-6249-50fd-88c5-fb5577a4ebfb",
       "key": "en:exercise:qa-debate-translate-compelling",
       "key_data": {
@@ -49144,7 +50727,143 @@ select content_private.import_bundle($bundle${
             "They have made a very compelling case for increasing the budget.",
             "They gave a very compelling argument for increasing the budget.",
             "They made a very convincing case for increasing the budget.",
-            "They made a very convincing argument for increasing the budget."
+            "They made a very convincing argument for increasing the budget.",
+            "They made a highly compelling case for raising the budget.",
+            "They made a highly compelling case for a budget increase.",
+            "They made a highly compelling argument for increasing the budget.",
+            "They made a highly compelling argument for raising the budget.",
+            "They made a highly compelling argument for a budget increase.",
+            "They made a really compelling case for raising the budget.",
+            "They made a really compelling case for a budget increase.",
+            "They made a really compelling argument for increasing the budget.",
+            "They made a really compelling argument for raising the budget.",
+            "They made a really compelling argument for a budget increase.",
+            "They made a very persuasive case for increasing the budget.",
+            "They made a very persuasive case for raising the budget.",
+            "They made a very persuasive case for a budget increase.",
+            "They made a very persuasive argument for increasing the budget.",
+            "They made a very persuasive argument for raising the budget.",
+            "They made a very persuasive argument for a budget increase.",
+            "They made an extremely compelling case for increasing the budget.",
+            "They made an extremely compelling case for raising the budget.",
+            "They made an extremely compelling case for a budget increase.",
+            "They made an extremely compelling argument for increasing the budget.",
+            "They made an extremely compelling argument for raising the budget.",
+            "They made an extremely compelling argument for a budget increase.",
+            "They have made a very compelling case for raising the budget.",
+            "They have made a very compelling case for a budget increase.",
+            "They have made a very compelling argument for increasing the budget.",
+            "They have made a very compelling argument for raising the budget.",
+            "They have made a very compelling argument for a budget increase.",
+            "They have made a highly compelling case for increasing the budget.",
+            "They have made a highly compelling case for raising the budget.",
+            "They have made a highly compelling case for a budget increase.",
+            "They have made a highly compelling argument for increasing the budget.",
+            "They have made a highly compelling argument for raising the budget.",
+            "They have made a highly compelling argument for a budget increase.",
+            "They have made a really compelling case for increasing the budget.",
+            "They have made a really compelling case for raising the budget.",
+            "They have made a really compelling case for a budget increase.",
+            "They have made a really compelling argument for increasing the budget.",
+            "They have made a really compelling argument for raising the budget.",
+            "They have made a really compelling argument for a budget increase.",
+            "They have made a very persuasive case for increasing the budget.",
+            "They have made a very persuasive case for raising the budget.",
+            "They have made a very persuasive case for a budget increase.",
+            "They have made a very persuasive argument for increasing the budget.",
+            "They have made a very persuasive argument for raising the budget.",
+            "They have made a very persuasive argument for a budget increase.",
+            "They have made an extremely compelling case for increasing the budget.",
+            "They have made an extremely compelling case for raising the budget.",
+            "They have made an extremely compelling case for a budget increase.",
+            "They have made an extremely compelling argument for increasing the budget.",
+            "They have made an extremely compelling argument for raising the budget.",
+            "They have made an extremely compelling argument for a budget increase.",
+            "They put forward a very compelling case for raising the budget.",
+            "They put forward a very compelling case for a budget increase.",
+            "They put forward a very compelling argument for raising the budget.",
+            "They put forward a very compelling argument for a budget increase.",
+            "They put forward a highly compelling case for increasing the budget.",
+            "They put forward a highly compelling case for raising the budget.",
+            "They put forward a highly compelling case for a budget increase.",
+            "They put forward a highly compelling argument for increasing the budget.",
+            "They put forward a highly compelling argument for raising the budget.",
+            "They put forward a highly compelling argument for a budget increase.",
+            "They put forward a really compelling case for increasing the budget.",
+            "They put forward a really compelling case for raising the budget.",
+            "They put forward a really compelling case for a budget increase.",
+            "They put forward a really compelling argument for increasing the budget.",
+            "They put forward a really compelling argument for raising the budget.",
+            "They put forward a really compelling argument for a budget increase.",
+            "They put forward a very persuasive case for increasing the budget.",
+            "They put forward a very persuasive case for raising the budget.",
+            "They put forward a very persuasive case for a budget increase.",
+            "They put forward a very persuasive argument for increasing the budget.",
+            "They put forward a very persuasive argument for raising the budget.",
+            "They put forward a very persuasive argument for a budget increase.",
+            "They put forward an extremely compelling case for increasing the budget.",
+            "They put forward an extremely compelling case for raising the budget.",
+            "They put forward an extremely compelling case for a budget increase.",
+            "They put forward an extremely compelling argument for increasing the budget.",
+            "They put forward an extremely compelling argument for raising the budget.",
+            "They put forward an extremely compelling argument for a budget increase.",
+            "They presented a very compelling case for raising the budget.",
+            "They presented a very compelling case for a budget increase.",
+            "They presented a very compelling argument for raising the budget.",
+            "They presented a very compelling argument for a budget increase.",
+            "They presented a highly compelling case for increasing the budget.",
+            "They presented a highly compelling case for raising the budget.",
+            "They presented a highly compelling case for a budget increase.",
+            "They presented a highly compelling argument for increasing the budget.",
+            "They presented a highly compelling argument for raising the budget.",
+            "They presented a highly compelling argument for a budget increase.",
+            "They presented a really compelling case for increasing the budget.",
+            "They presented a really compelling case for raising the budget.",
+            "They presented a really compelling case for a budget increase.",
+            "They presented a really compelling argument for increasing the budget.",
+            "They presented a really compelling argument for raising the budget.",
+            "They presented a really compelling argument for a budget increase.",
+            "They presented a very persuasive case for increasing the budget.",
+            "They presented a very persuasive case for raising the budget.",
+            "They presented a very persuasive case for a budget increase.",
+            "They presented a very persuasive argument for increasing the budget.",
+            "They presented a very persuasive argument for raising the budget.",
+            "They presented a very persuasive argument for a budget increase.",
+            "They presented an extremely compelling case for increasing the budget.",
+            "They presented an extremely compelling case for raising the budget.",
+            "They presented an extremely compelling case for a budget increase.",
+            "They presented an extremely compelling argument for increasing the budget.",
+            "They presented an extremely compelling argument for raising the budget.",
+            "They presented an extremely compelling argument for a budget increase.",
+            "They gave a very compelling case for increasing the budget.",
+            "They gave a very compelling case for raising the budget.",
+            "They gave a very compelling case for a budget increase.",
+            "They gave a very compelling argument for raising the budget.",
+            "They gave a very compelling argument for a budget increase.",
+            "They gave a highly compelling case for increasing the budget.",
+            "They gave a highly compelling case for raising the budget.",
+            "They gave a highly compelling case for a budget increase.",
+            "They gave a highly compelling argument for increasing the budget.",
+            "They gave a highly compelling argument for raising the budget.",
+            "They gave a highly compelling argument for a budget increase.",
+            "They gave a really compelling case for increasing the budget.",
+            "They gave a really compelling case for raising the budget.",
+            "They gave a really compelling case for a budget increase.",
+            "They gave a really compelling argument for increasing the budget.",
+            "They gave a really compelling argument for raising the budget.",
+            "They gave a really compelling argument for a budget increase.",
+            "They gave a very persuasive case for increasing the budget.",
+            "They gave a very persuasive case for raising the budget.",
+            "They gave a very persuasive case for a budget increase.",
+            "They gave a very persuasive argument for increasing the budget.",
+            "They gave a very persuasive argument for raising the budget.",
+            "They gave a very persuasive argument for a budget increase.",
+            "They gave an extremely compelling case for increasing the budget.",
+            "They gave an extremely compelling case for raising the budget.",
+            "They gave an extremely compelling case for a budget increase.",
+            "They gave an extremely compelling argument for increasing the budget.",
+            "They gave an extremely compelling argument for raising the budget.",
+            "They gave an extremely compelling argument for a budget increase."
           ]
         },
         "display_answer": "They made a very compelling case for increasing the budget.",
@@ -49183,19 +50902,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Họ đã đưa ra một lập luận rất thuyết phục cho việc tăng ngân sách."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "ec9719e15d9ca444939461e6432344ba5519476c1bc159e62b1b8970ad13597e",
+      "content_hash": "9b5511d2ae4f341b1fa45c3deecfaaf30989da559d0cb920276da73cb74a313b",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "8b07b277-84a1-51d6-b456-77abcb8da0b6",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "e1878b27-4da4-5abd-a49a-1a1989f8481a",
       "key": "en:exercise:qa-debate-translate-get-back",
       "key_data": {
@@ -49213,7 +50932,116 @@ select content_private.import_bundle($bundle${
             "I need to check those figures - let me get back to you.",
             "I'd need to check that number - let me get back to you.",
             "I need to check that data - I'll get back to you later.",
-            "I need to check that figure again - let me get back to you."
+            "I need to check that figure again - let me get back to you.",
+            "I'd need to check that figure. I'll get back to you.",
+            "I'd need to check that figure. Let me get back to you later.",
+            "I'd need to check that figure, then I'll get back to you.",
+            "I'd need to check that number. I'll get back to you later.",
+            "I'd need to check that number. I'll get back to you.",
+            "I'd need to check that number. Let me get back to you later.",
+            "I'd need to check that number, then I'll get back to you.",
+            "I'd need to check those figures - let me get back to you.",
+            "I'd need to check those figures. I'll get back to you later.",
+            "I'd need to check those figures. I'll get back to you.",
+            "I'd need to check those figures. Let me get back to you later.",
+            "I'd need to check those figures, then I'll get back to you.",
+            "I'd need to double-check that figure - let me get back to you.",
+            "I'd need to double-check that figure. I'll get back to you later.",
+            "I'd need to double-check that figure. Let me get back to you later.",
+            "I'd need to double-check that figure, then I'll get back to you.",
+            "I'd need to check that data - let me get back to you.",
+            "I'd need to check that data. I'll get back to you later.",
+            "I'd need to check that data. I'll get back to you.",
+            "I'd need to check that data. Let me get back to you later.",
+            "I'd need to check that data, then I'll get back to you.",
+            "I'd need to verify that figure - let me get back to you.",
+            "I'd need to verify that figure. I'll get back to you later.",
+            "I'd need to verify that figure. I'll get back to you.",
+            "I'd need to verify that figure. Let me get back to you later.",
+            "I'd need to verify that figure, then I'll get back to you.",
+            "I would need to check that figure. I'll get back to you later.",
+            "I would need to check that figure. I'll get back to you.",
+            "I would need to check that figure. Let me get back to you later.",
+            "I would need to check that figure, then I'll get back to you.",
+            "I would need to check that number - let me get back to you.",
+            "I would need to check that number. I'll get back to you later.",
+            "I would need to check that number. I'll get back to you.",
+            "I would need to check that number. Let me get back to you later.",
+            "I would need to check that number, then I'll get back to you.",
+            "I would need to check those figures - let me get back to you.",
+            "I would need to check those figures. I'll get back to you later.",
+            "I would need to check those figures. I'll get back to you.",
+            "I would need to check those figures. Let me get back to you later.",
+            "I would need to check those figures, then I'll get back to you.",
+            "I would need to double-check that figure - let me get back to you.",
+            "I would need to double-check that figure. I'll get back to you later.",
+            "I would need to double-check that figure. I'll get back to you.",
+            "I would need to double-check that figure. Let me get back to you later.",
+            "I would need to double-check that figure, then I'll get back to you.",
+            "I would need to check that data - let me get back to you.",
+            "I would need to check that data. I'll get back to you later.",
+            "I would need to check that data. I'll get back to you.",
+            "I would need to check that data. Let me get back to you later.",
+            "I would need to check that data, then I'll get back to you.",
+            "I would need to verify that figure - let me get back to you.",
+            "I would need to verify that figure. I'll get back to you later.",
+            "I would need to verify that figure. I'll get back to you.",
+            "I would need to verify that figure. Let me get back to you later.",
+            "I would need to verify that figure, then I'll get back to you.",
+            "I need to check that figure. Let me get back to you later.",
+            "I need to check that figure, then I'll get back to you.",
+            "I need to check that number - let me get back to you.",
+            "I need to check that number. I'll get back to you later.",
+            "I need to check that number. I'll get back to you.",
+            "I need to check that number. Let me get back to you later.",
+            "I need to check that number, then I'll get back to you.",
+            "I need to check those figures. I'll get back to you later.",
+            "I need to check those figures. I'll get back to you.",
+            "I need to check those figures. Let me get back to you later.",
+            "I need to check those figures, then I'll get back to you.",
+            "I need to double-check that figure. I'll get back to you later.",
+            "I need to double-check that figure. I'll get back to you.",
+            "I need to double-check that figure. Let me get back to you later.",
+            "I need to double-check that figure, then I'll get back to you.",
+            "I need to check that data - let me get back to you.",
+            "I need to check that data. I'll get back to you.",
+            "I need to check that data. Let me get back to you later.",
+            "I need to check that data, then I'll get back to you.",
+            "I need to verify that figure - let me get back to you.",
+            "I need to verify that figure. I'll get back to you later.",
+            "I need to verify that figure. I'll get back to you.",
+            "I need to verify that figure. Let me get back to you later.",
+            "I need to verify that figure, then I'll get back to you.",
+            "I'll need to check that figure - let me get back to you.",
+            "I'll need to check that figure. I'll get back to you later.",
+            "I'll need to check that figure. I'll get back to you.",
+            "I'll need to check that figure. Let me get back to you later.",
+            "I'll need to check that figure, then I'll get back to you.",
+            "I'll need to check that number - let me get back to you.",
+            "I'll need to check that number. I'll get back to you later.",
+            "I'll need to check that number. I'll get back to you.",
+            "I'll need to check that number. Let me get back to you later.",
+            "I'll need to check that number, then I'll get back to you.",
+            "I'll need to check those figures - let me get back to you.",
+            "I'll need to check those figures. I'll get back to you later.",
+            "I'll need to check those figures. I'll get back to you.",
+            "I'll need to check those figures. Let me get back to you later.",
+            "I'll need to check those figures, then I'll get back to you.",
+            "I'll need to double-check that figure - let me get back to you.",
+            "I'll need to double-check that figure. I'll get back to you later.",
+            "I'll need to double-check that figure. I'll get back to you.",
+            "I'll need to double-check that figure. Let me get back to you later.",
+            "I'll need to double-check that figure, then I'll get back to you.",
+            "I'll need to check that data - let me get back to you.",
+            "I'll need to check that data. I'll get back to you later.",
+            "I'll need to check that data. I'll get back to you.",
+            "I'll need to check that data. Let me get back to you later.",
+            "I'll need to check that data, then I'll get back to you.",
+            "I'll need to verify that figure - let me get back to you.",
+            "I'll need to verify that figure. I'll get back to you later.",
+            "I'll need to verify that figure. I'll get back to you.",
+            "I'll need to verify that figure. Let me get back to you later.",
+            "I'll need to verify that figure, then I'll get back to you."
           ]
         },
         "display_answer": "I'd need to check that figure - let me get back to you.",
@@ -49247,19 +51075,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tôi cần kiểm tra lại số liệu đó - tôi sẽ phản hồi anh sau."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "vi",
-      "content_hash": "42c1592792a903e5ad9d94a19a6ef547bf42e627c4e35171bdb796f468b8b361",
+      "content_hash": "1afcf016bbcf8e903c1e57c85a4519dfdefbe614205c968e38d81e29ef51ce03",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "26805e74-6663-5449-a70f-db104da3c65e",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3dae83ac-5494-5fed-92a8-8e628ca8f32d",
       "key": "en:exercise:qa-debate-translate-to-vi-flawed",
       "key_data": {
@@ -49274,7 +51102,89 @@ select content_private.import_bundle($bundle${
             "Kết luận đó dựa trên suy luận sai.",
             "Kết luận đó dựa trên lập luận có lỗ hổng.",
             "Kết luận dựa trên suy luận sai.",
-            "Kết luận này được đưa ra từ một suy luận sai."
+            "Kết luận này được đưa ra từ một suy luận sai.",
+            "Kết luận dựa trên lập luận sai.",
+            "Kết luận dựa trên lập luận có lỗ hổng.",
+            "Kết luận dựa trên một lập luận có lỗ hổng.",
+            "Kết luận dựa trên một suy luận sai.",
+            "Kết luận dựa trên suy luận sai lầm.",
+            "Kết luận dựa trên lập luận sai lầm.",
+            "Kết luận dựa trên lập luận thiếu sót.",
+            "Kết luận dựa trên suy luận thiếu sót.",
+            "Kết luận dựa vào suy luận sai.",
+            "Kết luận dựa vào lập luận sai.",
+            "Kết luận dựa vào suy luận có lỗ hổng.",
+            "Kết luận dựa vào lập luận có lỗ hổng.",
+            "Kết luận dựa vào một lập luận có lỗ hổng.",
+            "Kết luận dựa vào một suy luận sai.",
+            "Kết luận dựa vào suy luận sai lầm.",
+            "Kết luận dựa vào lập luận sai lầm.",
+            "Kết luận dựa vào lập luận thiếu sót.",
+            "Kết luận dựa vào suy luận thiếu sót.",
+            "Kết luận được xây dựng trên suy luận sai.",
+            "Kết luận được xây dựng trên lập luận sai.",
+            "Kết luận được xây dựng trên suy luận có lỗ hổng.",
+            "Kết luận được xây dựng trên lập luận có lỗ hổng.",
+            "Kết luận được xây dựng trên một lập luận có lỗ hổng.",
+            "Kết luận được xây dựng trên một suy luận sai.",
+            "Kết luận được xây dựng trên suy luận sai lầm.",
+            "Kết luận được xây dựng trên lập luận sai lầm.",
+            "Kết luận được xây dựng trên lập luận thiếu sót.",
+            "Kết luận được xây dựng trên suy luận thiếu sót.",
+            "Kết luận này dựa trên suy luận có lỗ hổng.",
+            "Kết luận này dựa trên một suy luận sai.",
+            "Kết luận này dựa trên suy luận sai lầm.",
+            "Kết luận này dựa trên lập luận sai lầm.",
+            "Kết luận này dựa trên lập luận thiếu sót.",
+            "Kết luận này dựa trên suy luận thiếu sót.",
+            "Kết luận này dựa vào suy luận sai.",
+            "Kết luận này dựa vào lập luận sai.",
+            "Kết luận này dựa vào suy luận có lỗ hổng.",
+            "Kết luận này dựa vào lập luận có lỗ hổng.",
+            "Kết luận này dựa vào một lập luận có lỗ hổng.",
+            "Kết luận này dựa vào một suy luận sai.",
+            "Kết luận này dựa vào suy luận sai lầm.",
+            "Kết luận này dựa vào lập luận sai lầm.",
+            "Kết luận này dựa vào lập luận thiếu sót.",
+            "Kết luận này dựa vào suy luận thiếu sót.",
+            "Kết luận này được xây dựng trên suy luận sai.",
+            "Kết luận này được xây dựng trên lập luận sai.",
+            "Kết luận này được xây dựng trên suy luận có lỗ hổng.",
+            "Kết luận này được xây dựng trên lập luận có lỗ hổng.",
+            "Kết luận này được xây dựng trên một lập luận có lỗ hổng.",
+            "Kết luận này được xây dựng trên một suy luận sai.",
+            "Kết luận này được xây dựng trên suy luận sai lầm.",
+            "Kết luận này được xây dựng trên lập luận sai lầm.",
+            "Kết luận này được xây dựng trên lập luận thiếu sót.",
+            "Kết luận này được xây dựng trên suy luận thiếu sót.",
+            "Kết luận đó dựa trên lập luận sai.",
+            "Kết luận đó dựa trên suy luận có lỗ hổng.",
+            "Kết luận đó dựa trên một lập luận có lỗ hổng.",
+            "Kết luận đó dựa trên một suy luận sai.",
+            "Kết luận đó dựa trên suy luận sai lầm.",
+            "Kết luận đó dựa trên lập luận sai lầm.",
+            "Kết luận đó dựa trên lập luận thiếu sót.",
+            "Kết luận đó dựa trên suy luận thiếu sót.",
+            "Kết luận đó dựa vào suy luận sai.",
+            "Kết luận đó dựa vào lập luận sai.",
+            "Kết luận đó dựa vào suy luận có lỗ hổng.",
+            "Kết luận đó dựa vào lập luận có lỗ hổng.",
+            "Kết luận đó dựa vào một lập luận có lỗ hổng.",
+            "Kết luận đó dựa vào một suy luận sai.",
+            "Kết luận đó dựa vào suy luận sai lầm.",
+            "Kết luận đó dựa vào lập luận sai lầm.",
+            "Kết luận đó dựa vào lập luận thiếu sót.",
+            "Kết luận đó dựa vào suy luận thiếu sót.",
+            "Kết luận đó được xây dựng trên suy luận sai.",
+            "Kết luận đó được xây dựng trên lập luận sai.",
+            "Kết luận đó được xây dựng trên suy luận có lỗ hổng.",
+            "Kết luận đó được xây dựng trên lập luận có lỗ hổng.",
+            "Kết luận đó được xây dựng trên một lập luận có lỗ hổng.",
+            "Kết luận đó được xây dựng trên một suy luận sai.",
+            "Kết luận đó được xây dựng trên suy luận sai lầm.",
+            "Kết luận đó được xây dựng trên lập luận sai lầm.",
+            "Kết luận đó được xây dựng trên lập luận thiếu sót.",
+            "Kết luận đó được xây dựng trên suy luận thiếu sót."
           ]
         },
         "display_answer": "Kết luận này dựa trên suy luận sai.",
@@ -49308,8 +51218,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "The conclusion rests on flawed reasoning."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -50048,11 +51958,11 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "d6d6e8e0cab57f90c31ba00558165a7cb5123841d357759c84640b50f22e6a0b",
+      "content_hash": "52d22795380544acec5d978227a5a4d3831f08106296edf1855744b835958e6d",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "8291fe27-8547-51e3-bbbe-822e9de7e539",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c98b4d27-ac52-50a7-a35b-8a73b9045f96",
       "key": "en:exercise:rhetoric-fill-contrast",
       "key_data": {
@@ -50062,7 +51972,9 @@ select content_private.import_bundle($bundle${
               "is"
             ],
             "b2": [
-              "but"
+              "but",
+              "but rather",
+              "so much as"
             ],
             "b3": [
               "helping"
@@ -50122,19 +52034,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "All we need {{b1}} two more engineers. The problem is not the budget {{b2}} the timeline. Far from {{b3}} (help) us, the delay has cost us a client."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "a1fd7746dc5b388147039c3d578c8524c8ffe4c097e196e6648f539b0a22d7c8",
+      "content_hash": "e93052c238a4118734f5e87294a6daa2191a8e1745d6b8f6c02de86a6e37d3ff",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "80b913d5-bd32-5849-a358-ed3e420f1c13",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "ef7fbb99-ca46-524d-9bfc-576c52ca1398",
       "key": "en:exercise:rhetoric-fill-precisely-hinted",
       "key_data": {
@@ -50142,7 +52054,18 @@ select content_private.import_bundle($bundle${
           "blanks": {
             "b1": [
               "precisely",
-              "exactly"
+              "exactly",
+              "just",
+              "only",
+              "simply",
+              "mainly",
+              "largely",
+              "partly",
+              "specifically",
+              "purely",
+              "primarily",
+              "especially",
+              "particularly"
             ],
             "b2": [
               "that"
@@ -50197,8 +52120,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "It is {{b1}} because the risks are high {{b2}} we need a clear plan."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -50209,7 +52132,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "listen",
       "id": "f5d3b124-e94d-53ba-91a5-a8de0da560da",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "92d65d4d-e3dc-584c-86f9-c59a94053690",
       "key": "en:exercise:rhetoric-listen-far-from",
       "key_data": {
@@ -50258,8 +52181,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -50270,7 +52193,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "9fc61eb2-5501-5954-987f-d91441ff074b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "afe2d2c2-208b-5eb2-833b-5483463c1a61",
       "key": "en:exercise:rhetoric-mcq-antithesis",
       "key_data": {
@@ -50319,19 +52242,19 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào dùng phép đối (antithesis) để nhấn mạnh ý \"chúng ta cần hành động, không chỉ hứa hẹn\"?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "f27f427455ef57cb5f3f80f266af3fd88a74ab480ec543e5e1a201979f8a9b6a",
+      "content_hash": "84f2b363c4e97fea00543ee97c46ce5204a1e56d70d75f1e15c99dc6d91c4f16",
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "d2631423-020e-54a0-8bbf-e0e9d1ae3a35",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "28a5e08b-085d-57fd-acb1-44da883dcc24",
       "key": "en:exercise:rhetoric-mcq-closing",
       "key_data": {
@@ -50340,7 +52263,7 @@ select content_private.import_bundle($bundle${
         },
         "display_answer": "Let us not forget that our people are not our biggest cost but our greatest asset.",
         "explanation": {
-          "vi": "Let us not forget + phép đối not X but Y tạo câu kết đáng nhớ. Let's don't sai ngữ pháp; very, very important yếu và thiếu tu từ; sau Let us not cần động từ nguyên mẫu, không phải V-ing."
+          "vi": "Let us not forget + phép đối not X but Y tạo câu kết đáng nhớ. Let's don't là dạng không chuẩn (chỉ gặp trong khẩu ngữ); very, very important yếu và thiếu tu từ; sau Let us not cần động từ nguyên mẫu, không phải V-ing."
         },
         "known_wrong": [],
         "rubric": {
@@ -50380,8 +52303,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn cần một câu kết mạnh cho bài nói kêu gọi đầu tư vào đào tạo nhân viên. Câu nào hiệu quả và đúng nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -50392,7 +52315,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "75139c38-7c82-5fc8-8ff6-ce6402578c37",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "948b811f-6024-5c39-8770-10bdadb00098",
       "key": "en:exercise:rhetoric-mcq-rhetorical-question",
       "key_data": {
@@ -50441,8 +52364,8 @@ select content_private.import_bundle($bundle${
         "stem": "Diễn giả nói: \"Who among us hasn't sent an email to the wrong person?\" rồi tiếp tục bài nói. Câu hỏi này dùng để làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -50453,7 +52376,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "dc1ae510-84a6-59c5-999c-96577dd06958",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "faf73d9f-c5ca-58b0-b24b-aebe3034b6d0",
       "key": "en:exercise:rhetoric-mcq-tricolon",
       "key_data": {
@@ -50502,8 +52425,8 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào là một bộ ba (tricolon) đúng chuẩn - ba ý song song về ngữ pháp?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -50514,7 +52437,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 5,
       "exercise_type": "word_bank",
       "id": "8c172bf0-dc92-5db0-a6ef-4bea3b458f65",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3d7d6a40-82f0-547f-8b4e-de8e7b8374a4",
       "key": "en:exercise:rhetoric-order-question-is-not",
       "key_data": {
@@ -50568,19 +52491,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "80ead9394be90592fe4293daf96e683d956edbb0dc4702395c0301f8c0deca8b",
+      "content_hash": "6eabf7063c0f01d4bd334a9f01dc5991b2f75506b24a8f045e8a3cdea0d0a96d",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "a9603112-ac58-54dd-b79d-92cd2382334c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3376c578-5848-5b28-8112-181895d4b6ad",
       "key": "en:exercise:rhetoric-translate-all-we-need",
       "key_data": {
@@ -50592,7 +52515,16 @@ select content_private.import_bundle($bundle${
             "All that we need is your backing.",
             "All we need now is your support.",
             "The only thing we need is your support.",
-            "All we need from you is your support."
+            "All we need from you is your support.",
+            "All that we need now is your support.",
+            "All we need now is your backing.",
+            "The one thing we need is your support.",
+            "The one thing we need is your backing.",
+            "The only thing we need is your backing.",
+            "All we need is for you to support us.",
+            "All we need is for you to back us.",
+            "All that we need is for you to support us.",
+            "Everything we need is your support."
           ]
         },
         "display_answer": "All we need is your support.",
@@ -50609,11 +52541,6 @@ select content_private.import_bundle($bundle${
             "answer": "All of us need your support.",
             "error_tag": "all_cleft",
             "feedback_vi": "All of us need nghĩa là \"tất cả chúng ta đều cần\", không nhấn mạnh \"chỉ cần một điều\"."
-          },
-          {
-            "answer": "Everything we need is your support.",
-            "error_tag": "all_cleft",
-            "feedback_vi": "Cấu trúc nhấn mạnh tự nhiên là All we need is…, không dùng everything."
           }
         ],
         "rubric": {
@@ -50631,19 +52558,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tất cả những gì chúng ta cần là sự ủng hộ của các bạn."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "967dd2e90ee4e664b7bb822fe3827ec802709349125f5292756e72a182ac9e73",
+      "content_hash": "08a641a6ee1722dac90f0090c6174feb36f3ff735ee8b491209a567d41f395d1",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "8b1b9d7a-ed5c-50c4-b9ab-fad936852822",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c98b4d27-ac52-50a7-a35b-8a73b9045f96",
       "key": "en:exercise:rhetoric-translate-not-but",
       "key_data": {
@@ -50660,7 +52587,62 @@ select content_private.import_bundle($bundle${
             "The issue lies not in the technology but in the people.",
             "The problem is not the technology, it's the people.",
             "The problem isn't the technology, it's the people.",
-            "The problem is not the technology; it is the people."
+            "The problem is not the technology; it is the people.",
+            "The problem lies not with the technology but with the people.",
+            "The problem is not the technology but rather the people.",
+            "The problem is not the technology so much as the people.",
+            "The problem is not the technology but people.",
+            "The problem lies not in the technology but in people.",
+            "The problem lies not with the technology but with people.",
+            "The problem is not with the technology but with people.",
+            "The problem is not the technology, it is people.",
+            "The problem is not the technology, it's people.",
+            "The problem is not the technology but rather people.",
+            "The problem is not the technology so much as people.",
+            "The problem is not technology but the people.",
+            "The problem lies not in technology but in the people.",
+            "The problem lies not with technology but with the people.",
+            "The problem is not with technology but with the people.",
+            "The problem is not technology, it is the people.",
+            "The problem is not technology, it's the people.",
+            "The problem is not technology but rather the people.",
+            "The problem is not technology so much as the people.",
+            "The problem lies not with technology but with people.",
+            "The problem is not with technology but with people.",
+            "The problem is not technology, it is people.",
+            "The problem is not technology, it's people.",
+            "The problem is not technology but rather people.",
+            "The problem is not technology so much as people.",
+            "The issue lies not with the technology but with the people.",
+            "The issue is not with the technology but with the people.",
+            "The issue is not the technology, it is the people.",
+            "The issue is not the technology, it's the people.",
+            "The issue is not the technology but rather the people.",
+            "The issue is not the technology so much as the people.",
+            "The issue is not the technology but people.",
+            "The issue lies not in the technology but in people.",
+            "The issue lies not with the technology but with people.",
+            "The issue is not with the technology but with people.",
+            "The issue is not the technology, it is people.",
+            "The issue is not the technology, it's people.",
+            "The issue is not the technology but rather people.",
+            "The issue is not the technology so much as people.",
+            "The issue is not technology but the people.",
+            "The issue lies not in technology but in the people.",
+            "The issue lies not with technology but with the people.",
+            "The issue is not with technology but with the people.",
+            "The issue is not technology, it is the people.",
+            "The issue is not technology, it's the people.",
+            "The issue is not technology but rather the people.",
+            "The issue is not technology so much as the people.",
+            "The issue is not technology but people.",
+            "The issue lies not in technology but in people.",
+            "The issue lies not with technology but with people.",
+            "The issue is not with technology but with people.",
+            "The issue is not technology, it is people.",
+            "The issue is not technology, it's people.",
+            "The issue is not technology but rather people.",
+            "The issue is not technology so much as people."
           ]
         },
         "display_answer": "The problem is not the technology but the people.",
@@ -50694,19 +52676,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Vấn đề không nằm ở công nghệ mà ở con người."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "vi",
-      "content_hash": "f0f7288f7f1b8aca359bafa92e1c591fed8569e42ac7c76642254304a1d33449",
+      "content_hash": "cda485cb29f5378da8dd75a7d4d5636b51f64aca71b6617699a88c038c502de4",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "d26e1fb1-9846-540a-af67-5eeec6401dcc",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "ef7fbb99-ca46-524d-9bfc-576c52ca1398",
       "key": "en:exercise:rhetoric-translate-to-vi-precisely",
       "key_data": {
@@ -50721,7 +52703,62 @@ select content_private.import_bundle($bundle${
             "Chính sự thiếu lòng tin này khiến các nhà đầu tư lo ngại.",
             "Chính sự thiếu lòng tin này làm nhà đầu tư lo lắng.",
             "Điều khiến các nhà đầu tư lo ngại chính là sự thiếu niềm tin này.",
-            "Điều làm các nhà đầu tư lo lắng chính là sự thiếu tin tưởng này."
+            "Điều làm các nhà đầu tư lo lắng chính là sự thiếu tin tưởng này.",
+            "Chính sự thiếu niềm tin này khiến nhà đầu tư lo lắng.",
+            "Chính sự thiếu niềm tin này khiến những nhà đầu tư lo ngại.",
+            "Chính sự thiếu niềm tin này khiến những nhà đầu tư lo lắng.",
+            "Chính sự thiếu niềm tin này làm các nhà đầu tư lo lắng.",
+            "Chính sự thiếu niềm tin này làm nhà đầu tư lo ngại.",
+            "Chính sự thiếu niềm tin này làm nhà đầu tư lo lắng.",
+            "Chính sự thiếu niềm tin này làm những nhà đầu tư lo ngại.",
+            "Chính sự thiếu niềm tin này làm những nhà đầu tư lo lắng.",
+            "Chính sự thiếu tin tưởng này khiến các nhà đầu tư lo lắng.",
+            "Chính sự thiếu tin tưởng này khiến nhà đầu tư lo ngại.",
+            "Chính sự thiếu tin tưởng này khiến nhà đầu tư lo lắng.",
+            "Chính sự thiếu tin tưởng này khiến những nhà đầu tư lo ngại.",
+            "Chính sự thiếu tin tưởng này khiến những nhà đầu tư lo lắng.",
+            "Chính sự thiếu tin tưởng này làm các nhà đầu tư lo ngại.",
+            "Chính sự thiếu tin tưởng này làm nhà đầu tư lo ngại.",
+            "Chính sự thiếu tin tưởng này làm nhà đầu tư lo lắng.",
+            "Chính sự thiếu tin tưởng này làm những nhà đầu tư lo ngại.",
+            "Chính sự thiếu tin tưởng này làm những nhà đầu tư lo lắng.",
+            "Chính sự thiếu lòng tin này khiến các nhà đầu tư lo lắng.",
+            "Chính sự thiếu lòng tin này khiến nhà đầu tư lo ngại.",
+            "Chính sự thiếu lòng tin này khiến nhà đầu tư lo lắng.",
+            "Chính sự thiếu lòng tin này khiến những nhà đầu tư lo ngại.",
+            "Chính sự thiếu lòng tin này khiến những nhà đầu tư lo lắng.",
+            "Chính sự thiếu lòng tin này làm các nhà đầu tư lo ngại.",
+            "Chính sự thiếu lòng tin này làm các nhà đầu tư lo lắng.",
+            "Chính sự thiếu lòng tin này làm nhà đầu tư lo ngại.",
+            "Chính sự thiếu lòng tin này làm những nhà đầu tư lo ngại.",
+            "Chính sự thiếu lòng tin này làm những nhà đầu tư lo lắng.",
+            "Chính việc thiếu niềm tin này khiến các nhà đầu tư lo ngại.",
+            "Chính việc thiếu niềm tin này khiến các nhà đầu tư lo lắng.",
+            "Chính việc thiếu niềm tin này khiến nhà đầu tư lo ngại.",
+            "Chính việc thiếu niềm tin này khiến nhà đầu tư lo lắng.",
+            "Chính việc thiếu niềm tin này khiến những nhà đầu tư lo ngại.",
+            "Chính việc thiếu niềm tin này khiến những nhà đầu tư lo lắng.",
+            "Chính việc thiếu niềm tin này làm các nhà đầu tư lo ngại.",
+            "Chính việc thiếu niềm tin này làm các nhà đầu tư lo lắng.",
+            "Chính việc thiếu niềm tin này làm nhà đầu tư lo ngại.",
+            "Chính việc thiếu niềm tin này làm nhà đầu tư lo lắng.",
+            "Chính việc thiếu niềm tin này làm những nhà đầu tư lo ngại.",
+            "Chính việc thiếu niềm tin này làm những nhà đầu tư lo lắng.",
+            "Chính việc thiếu lòng tin này khiến các nhà đầu tư lo ngại.",
+            "Chính việc thiếu lòng tin này khiến các nhà đầu tư lo lắng.",
+            "Chính việc thiếu lòng tin này khiến nhà đầu tư lo ngại.",
+            "Chính việc thiếu lòng tin này khiến nhà đầu tư lo lắng.",
+            "Chính việc thiếu lòng tin này khiến những nhà đầu tư lo ngại.",
+            "Chính việc thiếu lòng tin này khiến những nhà đầu tư lo lắng.",
+            "Chính việc thiếu lòng tin này làm các nhà đầu tư lo ngại.",
+            "Chính việc thiếu lòng tin này làm các nhà đầu tư lo lắng.",
+            "Chính việc thiếu lòng tin này làm nhà đầu tư lo ngại.",
+            "Chính việc thiếu lòng tin này làm nhà đầu tư lo lắng.",
+            "Chính việc thiếu lòng tin này làm những nhà đầu tư lo ngại.",
+            "Chính việc thiếu lòng tin này làm những nhà đầu tư lo lắng.",
+            "Chính xác là sự thiếu niềm tin này khiến các nhà đầu tư lo ngại.",
+            "Chính xác là sự thiếu tin tưởng này khiến các nhà đầu tư lo ngại.",
+            "Chính xác là sự thiếu niềm tin này làm các nhà đầu tư lo lắng."
           ]
         },
         "display_answer": "Chính sự thiếu niềm tin này khiến các nhà đầu tư lo ngại.",
@@ -50729,11 +52766,6 @@ select content_private.import_bundle($bundle${
           "vi": "It is precisely X that… tương đương \"Chính X…\" trong tiếng Việt. Bạn cũng có thể đảo thành \"Điều khiến… chính là X\"."
         },
         "known_wrong": [
-          {
-            "answer": "Chính xác là sự thiếu niềm tin này khiến các nhà đầu tư lo ngại.",
-            "error_tag": "literal_translation",
-            "feedback_vi": "Precisely trong câu chẻ nghĩa là \"chính\", không cần dịch sát \"chính xác là\"."
-          },
           {
             "answer": "Sự thiếu niềm tin này có thể khiến các nhà đầu tư lo ngại.",
             "error_tag": "meaning",
@@ -50755,8 +52787,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "It is precisely this lack of trust that worries investors."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -52869,7 +54901,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "7026ffc0-680b-5b4d-89e1-aa68f229b093",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "31ce9ade-7e18-5b8f-9363-78ae8df4effe",
       "key": "en:exercise:signpost-fill-elaborate-hinted",
       "key_data": {
@@ -52928,49 +54960,53 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Let me elaborate {{b1}} that figure. To put this {{b2}} perspective, we spend more on printing than on training."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "ce3f5cff607ac2dcc18a2566ab4c488f354abbdd3414dcae55d3c7ea4c619e00",
+      "content_hash": "f09dbb4472b6e412171bf6c9bdc8a56d981eec86fdb7f6797699294ded9aaabc",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "1a3d9564-b422-531f-8815-dd10ef4b8588",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "34e1fca9-6a4f-509f-9440-67e4d8c8811e",
       "key": "en:exercise:signpost-fill-structure",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "into"
+              "into",
+              "in"
             ],
             "b2": [
               "turning",
-              "moving"
+              "moving",
+              "coming"
             ],
             "b3": [
               "recap",
               "summarise",
               "summarize",
               "sum up",
-              "conclude"
+              "conclude",
+              "wrap up",
+              "be brief"
             ]
           }
         },
         "display_answer": "I've divided my talk into three parts. … Turning now to the second part, the budget. … To recap, we need more staff, more space and more time.",
         "explanation": {
-          "vi": "Divide into = chia thành. Turning (hoặc Moving) now to… mở phần mới. To recap/To summarise mở đầu phần tóm tắt - sau to là động từ nguyên mẫu."
+          "vi": "Divide into = chia thành (divide in cũng gặp nhưng into chuẩn hơn). Turning (hoặc Moving) now to… mở phần mới. To recap/To summarise mở đầu phần tóm tắt - sau to là động từ nguyên mẫu."
         },
         "known_wrong": [
           {
-            "answer": "in",
+            "answer": "to",
             "error_tag": "preposition",
-            "feedback_vi": "Chia thành các phần là divide into, không phải divide in."
+            "feedback_vi": "Chia thành các phần là divide into, không phải divide to."
           },
           {
             "answer": "turn",
@@ -53015,8 +55051,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "I've divided my talk {{b1}} three parts. … {{b2}} now to the second part, the budget. … To {{b3}}, we need more staff, more space and more time."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -53027,7 +55063,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "cf27857c-d4b9-573f-a0c6-eddaa73f2984",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2b2e9178-cd88-5d1a-8e57-2ff5966258d8",
       "key": "en:exercise:signpost-listen-brings-me-to",
       "key_data": {
@@ -53076,8 +55112,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -53088,7 +55124,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "2ca9e7bd-2c36-54cd-ad30-678faedcd9c6",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "53ccc9ed-70dd-5901-9ae7-7f90e3699d15",
       "key": "en:exercise:signpost-mcq-choose-signpost",
       "key_data": {
@@ -53137,8 +55173,8 @@ select content_private.import_bundle($bundle${
         "stem": "Ở cuối bài, bạn muốn quay lại con số đã nêu ở phần mở đầu để chốt lập luận. Cụm nào phù hợp nhất cho chỗ trống: \"___, we lose two customers every day.\"",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -53149,7 +55185,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "b1f35975-4b3a-5c33-bb89-c8ccebe2377f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "27a43e90-aec1-5495-8eb4-ebdaf6a0b1b2",
       "key": "en:exercise:signpost-mcq-discuss",
       "key_data": {
@@ -53198,8 +55234,8 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào KHÔNG có lỗi?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -53210,7 +55246,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "d23b5f52-809e-5bc7-b251-069e868e0d9a",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "419404af-8507-5456-a1d2-43d4974d9026",
       "key": "en:exercise:signpost-mcq-fix-opening",
       "key_data": {
@@ -53259,8 +55295,8 @@ select content_private.import_bundle($bundle${
         "stem": "Đồng nghiệp nhờ bạn sửa câu mở đầu: \"Today I will present about the new app.\" Bạn đề xuất câu nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -53271,7 +55307,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "1948d078-5854-57d9-98e9-330543d5406c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f155ccb7-c693-5514-84bb-3b78047d5b50",
       "key": "en:exercise:signpost-mcq-opening",
       "key_data": {
@@ -53320,8 +55356,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn mở đầu bài thuyết trình trước ban giám đốc. Câu nào tự nhiên và đúng ngữ pháp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -53332,7 +55368,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "word_bank",
       "id": "dc58876d-9771-5e4a-9d77-8d86378ce8cd",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2b2e9178-cd88-5d1a-8e57-2ff5966258d8",
       "key": "en:exercise:signpost-order-brings-me-to",
       "key_data": {
@@ -53391,25 +55427,124 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "4bd7e6ab57aeaf1806bc20e41418402545a764683bca67526c03487c1788ef29",
+      "content_hash": "3c360c68b703a6890750b109a3e8037a81876e5a2fb30eb99ae1a4e8f94e85c7",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "5ae990fc-a427-57ed-bd40-12ed32a87853",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f155ccb7-c693-5514-84bb-3b78047d5b50",
       "key": "en:exercise:signpost-translate-begin",
       "key_data": {
         "answer_key": {
           "accepted": [
             "I'd like to begin by introducing our team.",
+            "I'd like to begin by introducing the team.",
+            "I'd like to begin by presenting our team.",
+            "I'd like to begin by presenting my team.",
+            "I'd like to begin by presenting the team.",
+            "I would like to begin by introducing the team.",
+            "I would like to begin by presenting our team.",
+            "I would like to begin by presenting my team.",
+            "I would like to begin by presenting the team.",
+            "I'd like to start by introducing my team.",
+            "I'd like to start by introducing the team.",
+            "I'd like to start by presenting our team.",
+            "I'd like to start by presenting my team.",
+            "I'd like to start by presenting the team.",
+            "I would like to start by introducing my team.",
+            "I would like to start by introducing the team.",
+            "I would like to start by presenting our team.",
+            "I would like to start by presenting my team.",
+            "I would like to start by presenting the team.",
+            "I'll begin by introducing my team.",
+            "I'll begin by introducing the team.",
+            "I'll begin by presenting our team.",
+            "I'll begin by presenting my team.",
+            "I'll begin by presenting the team.",
+            "I'll start by introducing our team.",
+            "I'll start by introducing my team.",
+            "I'll start by introducing the team.",
+            "I'll start by presenting our team.",
+            "I'll start by presenting my team.",
+            "I'll start by presenting the team.",
+            "Let me begin by introducing my team.",
+            "Let me begin by introducing the team.",
+            "Let me begin by presenting our team.",
+            "Let me begin by presenting my team.",
+            "Let me begin by presenting the team.",
+            "Let me start by introducing my team.",
+            "Let me start by introducing the team.",
+            "Let me start by presenting our team.",
+            "Let me start by presenting my team.",
+            "Let me start by presenting the team.",
+            "Let's begin by introducing our team.",
+            "Let's begin by introducing my team.",
+            "Let's begin by introducing the team.",
+            "Let's begin by presenting our team.",
+            "Let's begin by presenting my team.",
+            "Let's begin by presenting the team.",
+            "Let us begin by introducing our team.",
+            "Let us begin by introducing my team.",
+            "Let us begin by introducing the team.",
+            "Let us begin by presenting our team.",
+            "Let us begin by presenting my team.",
+            "Let us begin by presenting the team.",
+            "Let's start by introducing our team.",
+            "Let's start by introducing my team.",
+            "Let's start by introducing the team.",
+            "Let's start by presenting our team.",
+            "Let's start by presenting my team.",
+            "Let's start by presenting the team.",
+            "Let us start by introducing our team.",
+            "Let us start by introducing my team.",
+            "Let us start by introducing the team.",
+            "Let us start by presenting our team.",
+            "Let us start by presenting my team.",
+            "Let us start by presenting the team.",
+            "I'd like to start off by introducing our team.",
+            "I'd like to start off by introducing my team.",
+            "I'd like to start off by introducing the team.",
+            "I'd like to start off by presenting our team.",
+            "I'd like to start off by presenting my team.",
+            "I'd like to start off by presenting the team.",
+            "I would like to start off by introducing our team.",
+            "I would like to start off by introducing my team.",
+            "I would like to start off by introducing the team.",
+            "I would like to start off by presenting our team.",
+            "I would like to start off by presenting my team.",
+            "I would like to start off by presenting the team.",
+            "I want to begin by introducing our team.",
+            "I want to begin by introducing my team.",
+            "I want to begin by introducing the team.",
+            "I want to begin by presenting our team.",
+            "I want to begin by presenting my team.",
+            "I want to begin by presenting the team.",
+            "I want to start by introducing our team.",
+            "I want to start by introducing my team.",
+            "I want to start by introducing the team.",
+            "I want to start by presenting our team.",
+            "I want to start by presenting my team.",
+            "I want to start by presenting the team.",
+            "I am going to begin by introducing our team.",
+            "I am going to begin by introducing my team.",
+            "I am going to begin by introducing the team.",
+            "I am going to begin by presenting our team.",
+            "I am going to begin by presenting my team.",
+            "I am going to begin by presenting the team.",
+            "I am going to start by introducing our team.",
+            "I am going to start by introducing my team.",
+            "I am going to start by introducing the team.",
+            "I am going to start by presenting our team.",
+            "I am going to start by presenting my team.",
+            "I am going to start by presenting the team.",
             "I would like to begin by introducing our team.",
             "I'd like to start by introducing our team.",
             "I would like to start by introducing our team.",
@@ -53456,19 +55591,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tôi xin bắt đầu bằng việc giới thiệu nhóm của chúng tôi."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "e831f9d11ab8e240c673f65f4cd2e07f16221a21f13b76621d9e91d2de4cfc34",
+      "content_hash": "07146af5c5a194ea7fb54387c4944206d09894f4d3d99a45a051a2c48d712310",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "5761abea-4a5c-5eb0-a815-e38430c70f81",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "27a43e90-aec1-5495-8eb4-ebdaf6a0b1b2",
       "key": "en:exercise:signpost-translate-emphasise",
       "key_data": {
@@ -53485,7 +55620,91 @@ select content_private.import_bundle($bundle${
             "I would like to stress that this project needs more time.",
             "I want to emphasise that this project needs extra time.",
             "I'd like to emphasise that the project needs more time.",
-            "I want to emphasise that the project needs more time."
+            "I want to emphasise that the project needs more time.",
+            "I want to emphasise that this project needs additional time.",
+            "I want to emphasise that this project will need more time.",
+            "I want to emphasise that this project requires more time.",
+            "I want to emphasize that the project needs more time.",
+            "I want to emphasize that this project needs extra time.",
+            "I want to emphasize that this project needs additional time.",
+            "I want to emphasize that this project will need more time.",
+            "I want to emphasize that this project requires more time.",
+            "I want to stress that the project needs more time.",
+            "I want to stress that this project needs extra time.",
+            "I want to stress that this project needs additional time.",
+            "I want to stress that this project will need more time.",
+            "I want to stress that this project requires more time.",
+            "I want to highlight that this project needs more time.",
+            "I want to highlight that the project needs more time.",
+            "I want to highlight that this project needs extra time.",
+            "I want to highlight that this project needs additional time.",
+            "I want to highlight that this project will need more time.",
+            "I want to highlight that this project requires more time.",
+            "I'd like to emphasise that this project needs extra time.",
+            "I'd like to emphasise that this project needs additional time.",
+            "I'd like to emphasise that this project will need more time.",
+            "I'd like to emphasise that this project requires more time.",
+            "I'd like to emphasize that the project needs more time.",
+            "I'd like to emphasize that this project needs extra time.",
+            "I'd like to emphasize that this project needs additional time.",
+            "I'd like to emphasize that this project will need more time.",
+            "I'd like to emphasize that this project requires more time.",
+            "I'd like to stress that the project needs more time.",
+            "I'd like to stress that this project needs extra time.",
+            "I'd like to stress that this project needs additional time.",
+            "I'd like to stress that this project will need more time.",
+            "I'd like to stress that this project requires more time.",
+            "I'd like to highlight that this project needs more time.",
+            "I'd like to highlight that the project needs more time.",
+            "I'd like to highlight that this project needs extra time.",
+            "I'd like to highlight that this project needs additional time.",
+            "I'd like to highlight that this project will need more time.",
+            "I'd like to highlight that this project requires more time.",
+            "I would like to emphasise that the project needs more time.",
+            "I would like to emphasise that this project needs extra time.",
+            "I would like to emphasise that this project needs additional time.",
+            "I would like to emphasise that this project will need more time.",
+            "I would like to emphasise that this project requires more time.",
+            "I would like to emphasize that the project needs more time.",
+            "I would like to emphasize that this project needs extra time.",
+            "I would like to emphasize that this project needs additional time.",
+            "I would like to emphasize that this project will need more time.",
+            "I would like to emphasize that this project requires more time.",
+            "I would like to stress that the project needs more time.",
+            "I would like to stress that this project needs extra time.",
+            "I would like to stress that this project needs additional time.",
+            "I would like to stress that this project will need more time.",
+            "I would like to stress that this project requires more time.",
+            "I would like to highlight that this project needs more time.",
+            "I would like to highlight that the project needs more time.",
+            "I would like to highlight that this project needs extra time.",
+            "I would like to highlight that this project needs additional time.",
+            "I would like to highlight that this project will need more time.",
+            "I would like to highlight that this project requires more time.",
+            "I need to emphasise that this project needs more time.",
+            "I need to emphasise that the project needs more time.",
+            "I need to emphasise that this project needs extra time.",
+            "I need to emphasise that this project needs additional time.",
+            "I need to emphasise that this project will need more time.",
+            "I need to emphasise that this project requires more time.",
+            "I need to emphasize that this project needs more time.",
+            "I need to emphasize that the project needs more time.",
+            "I need to emphasize that this project needs extra time.",
+            "I need to emphasize that this project needs additional time.",
+            "I need to emphasize that this project will need more time.",
+            "I need to emphasize that this project requires more time.",
+            "I need to stress that this project needs more time.",
+            "I need to stress that the project needs more time.",
+            "I need to stress that this project needs extra time.",
+            "I need to stress that this project needs additional time.",
+            "I need to stress that this project will need more time.",
+            "I need to stress that this project requires more time.",
+            "I need to highlight that this project needs more time.",
+            "I need to highlight that the project needs more time.",
+            "I need to highlight that this project needs extra time.",
+            "I need to highlight that this project needs additional time.",
+            "I need to highlight that this project will need more time.",
+            "I need to highlight that this project requires more time."
           ]
         },
         "display_answer": "I want to emphasise that this project needs more time.",
@@ -53524,19 +55743,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tôi muốn nhấn mạnh rằng dự án này cần thêm thời gian."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "vi",
-      "content_hash": "10ecc5d37bc9bf3d4a42542f95e194ebee38945db3e26c8da7fbae4e73158575",
+      "content_hash": "84f9ce46d41bdb8cc2673593515e01f8155d8c43b582801c195cbcb90b74d378",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "f87d41c9-6968-51d7-8fb1-efc69b289ac2",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "0b431a56-22f9-51a6-9f8c-592a729395b0",
       "key": "en:exercise:signpost-translate-to-vi-perspective",
       "key_data": {
@@ -53551,7 +55770,145 @@ select content_private.import_bundle($bundle${
             "Để các bạn dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
             "Nói cho dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
             "Để dễ hình dung, con số đó còn lớn hơn cả ngân sách cả năm của chúng ta.",
-            "Để dễ hình dung, con số đó lớn hơn toàn bộ ngân sách hằng năm của chúng tôi."
+            "Để dễ hình dung, con số đó lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung, con số đó lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung, con số đó lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung, con số này lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung, con số này lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung, con số này lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung, con số này lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung, con số này nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung, con số này nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung, con số này nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung, con số này nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số đó lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số đó lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số đó lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số đó lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số đó nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để các bạn dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để các bạn dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để các bạn dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để các bạn dễ hình dung, số tiền đó lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để các bạn dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để các bạn dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để các bạn dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để các bạn dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để các bạn dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để các bạn dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để các bạn dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để các bạn dễ hình dung, số tiền đó nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để các bạn dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để các bạn dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để các bạn dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để các bạn dễ hình dung, số tiền đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số này lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số này lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số này lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số này lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số này còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số này nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số này nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số này nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số này nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để các bạn dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để các bạn dễ hình dung, con số này còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số đó lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung hơn, con số đó lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số đó lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung hơn, con số đó lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung hơn, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung hơn, con số đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số đó nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung hơn, con số đó nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số đó nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung hơn, con số đó nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung hơn, con số đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung hơn, con số đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung hơn, số tiền đó lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung hơn, số tiền đó lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung hơn, số tiền đó lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung hơn, số tiền đó lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung hơn, số tiền đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung hơn, số tiền đó còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung hơn, số tiền đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung hơn, số tiền đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung hơn, số tiền đó nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung hơn, số tiền đó nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung hơn, số tiền đó nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung hơn, số tiền đó nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung hơn, số tiền đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung hơn, số tiền đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung hơn, số tiền đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung hơn, số tiền đó còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số này lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung hơn, con số này lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số này lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung hơn, con số này lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số này còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung hơn, con số này còn lớn hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số này còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung hơn, con số này còn lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số này nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung hơn, con số này nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số này nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung hơn, con số này nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số này còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.",
+            "Để dễ hình dung hơn, con số này còn nhiều hơn toàn bộ ngân sách cả năm của chúng tôi.",
+            "Để dễ hình dung hơn, con số này còn nhiều hơn toàn bộ ngân sách hằng năm của chúng ta.",
+            "Để dễ hình dung hơn, con số này còn nhiều hơn toàn bộ ngân sách hằng năm của chúng tôi."
           ]
         },
         "display_answer": "Để dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.",
@@ -53585,8 +55942,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "To put this into perspective, that's more than our entire annual budget."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -59857,7 +62214,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 5,
       "exercise_type": "fill_blank",
       "id": "d78895c5-295e-552b-9448-76b751b6a0a5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b050f57e-9969-5cfa-82f0-9bc8e0c6ee5a",
       "key": "en:exercise:subjunctive-fill-had-it-not",
       "key_data": {
@@ -59915,8 +62272,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "{{b1}} it not been for the quick response of the staff, the fire would have spread. Be that {{b2}} it may, the alarm system clearly needs replacing."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -59927,7 +62284,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "b377cebd-6e3c-5971-9fcc-afe0b7d6890e",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "ade5f8b1-7c2d-51f6-ba97-b8ba407d39da",
       "key": "en:exercise:subjunctive-fill-if-need-be",
       "key_data": {
@@ -59985,26 +62342,27 @@ select content_private.import_bundle($bundle${
         ],
         "template": "We can work through the weekend if need {{b1}}. Were it not {{b2}} the tight deadline, we would hire extra staff."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "2a605be0499dfda37d4873d8749adfd98f3b4dddc19e1942b33bca4f0905c320",
+      "content_hash": "09c3f5549bc4b9853f06c3dba8fc991de37cbf375dba10ada342aacdf1546b4c",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "8340faeb-7b19-50c2-8d20-ed3087cee837",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "5df80c4a-2b4a-5f02-9af1-b848808f7db9",
       "key": "en:exercise:subjunctive-fill-request-hinted",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "not"
+              "not",
+              "never"
             ],
             "b2": [
               "take"
@@ -60019,7 +62377,7 @@ select content_private.import_bundle($bundle${
           {
             "answer": "don't",
             "error_tag": "subjunctive",
-            "feedback_vi": "Giả định cách phủ định không dùng do - viết not take."
+            "feedback_vi": "Don't take dùng được trong văn nói, nhưng đề yêu cầu giả định cách trang trọng - viết not take."
           },
           {
             "answer": "takes",
@@ -60057,10 +62415,10 @@ select content_private.import_bundle($bundle${
           "Nghĩa: Bảo tàng đề nghị khách tham quan không chụp ảnh các bức tranh.",
           "Gợi ý: giả định cách phủ định = not + động từ nguyên mẫu (không dùng do)."
         ],
-        "template": "The museum requests that visitors {{b1}} {{b2}} photographs of the paintings."
+        "template": "The museum requests that visitors {{b1}} {{b2}} photographs of the paintings. (dùng giả định cách trang trọng)"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -60071,7 +62429,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "listen",
       "id": "dff5574c-ecff-5ef3-b4a5-6c228a8a4da9",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8955c6cc-80ea-5618-b71e-b6d7b763963a",
       "key": "en:exercise:subjunctive-listen-were-it-not",
       "key_data": {
@@ -60120,8 +62478,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -60132,7 +62490,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "2875fa00-41f3-57b1-b59f-b0b70724c35c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2016fbb1-a5c8-59df-9d49-ed26d78669fa",
       "key": "en:exercise:subjunctive-mcq-be-that-as-it-may",
       "key_data": {
@@ -60181,8 +62539,8 @@ select content_private.import_bundle($bundle${
         "stem": "Trong cuộc họp hội đồng, một thành viên nói: \"The renovation will be costly.\" Bạn muốn thừa nhận ý đó nhưng vẫn ủng hộ dự án một cách trang trọng. Câu nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -60193,7 +62551,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "37310e8d-1972-5f0b-b17d-5e4b406cd597",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "fd7b5006-658f-5c6b-b5ee-ef85383a9297",
       "key": "en:exercise:subjunctive-mcq-essential",
       "key_data": {
@@ -60242,8 +62600,8 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào phù hợp nhất cho một văn bản quy định chính thức?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -60254,7 +62612,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 5,
       "exercise_type": "mcq",
       "id": "5f29c206-75e7-53ca-8b77-cdf7e595090a",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "77816ae1-e435-59c5-96b4-f788141f7a72",
       "key": "en:exercise:subjunctive-mcq-insist-meaning",
       "key_data": {
@@ -60303,19 +62661,19 @@ select content_private.import_bundle($bundle${
         "stem": "Hai câu sau khác nhau thế nào? (1) He insisted that she leave. (2) He insisted that she left.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "f71e315f6fda3d1288f068103f67f39392b3e3f8c65dddeb02e18a00b6fb43a4",
+      "content_hash": "5b1a31aa775ae324144a7cea518279758fc4b6c37c1cb8be91adac576a4e5841",
       "difficulty": 5,
       "exercise_type": "word_bank",
       "id": "0e04fa9a-7e1a-5e7e-a4be-2ea70034d741",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "358513b9-d1a4-5b5c-b48f-599aa86b6586",
       "key": "en:exercise:subjunctive-order-recommend",
       "key_data": {
@@ -60335,7 +62693,7 @@ select content_private.import_bundle($bundle${
         },
         "display_answer": "The committee recommended that the project be postponed until further funding is secured.",
         "explanation": {
-          "vi": "Sau recommended that, văn trang trọng dùng giả định cách - the project be postponed (không lùi thì, không dùng is vì động từ chính đã ở quá khứ). Mệnh đề until chỉ thời gian vẫn chia bình thường - further funding is secured."
+          "vi": "Sau recommended that, văn trang trọng dùng giả định cách - the project be postponed (động từ nguyên mẫu, không chia, không thêm being). Mệnh đề until chỉ thời gian vẫn chia bình thường - further funding is secured."
         },
         "known_wrong": [],
         "rubric": {
@@ -60360,8 +62718,8 @@ select content_private.import_bundle($bundle${
             "text": "The committee recommended"
           },
           {
-            "id": "s-is",
-            "text": "is"
+            "id": "s-being",
+            "text": "being"
           },
           {
             "id": "s-be",
@@ -60389,19 +62747,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "ee5d32e72696ef76432a6949ac8c27db3098747cd5791df081499c0bbf12c945",
+      "content_hash": "5f11f52c9f46d16fcd2137b48bc737ccdaa4a3213e16e8d2efa67a5e83ff0169",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "92760c86-15cf-5084-a55c-02a9fb25f947",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "77816ae1-e435-59c5-96b4-f788141f7a72",
       "key": "en:exercise:subjunctive-translate-insist",
       "key_data": {
@@ -60418,7 +62776,23 @@ select content_private.import_bundle($bundle${
             "I insisted that she leave at once.",
             "I insisted that she should leave immediately.",
             "I insist that she leaves immediately.",
-            "I insist that she leaves at once."
+            "I insist that she leaves at once.",
+            "I insist that she leave straight away.",
+            "I insist that she leave this minute.",
+            "I insist that she leaves right away.",
+            "I insist that she should leave right away.",
+            "I insist that she should leave right now.",
+            "I insist that she go immediately.",
+            "I insist that she go at once.",
+            "I insist she leave at once.",
+            "I insist she leaves immediately.",
+            "I insist she leave right away.",
+            "I insist on her leaving immediately.",
+            "I insist on her leaving at once.",
+            "I insist upon her leaving immediately.",
+            "I insisted that she leave right away.",
+            "I insisted that she leave straight away.",
+            "I insisted that she leaves immediately."
           ]
         },
         "display_answer": "I insist that she leave immediately.",
@@ -60457,19 +62831,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tôi nhất quyết yêu cầu cô ấy rời đi ngay lập tức. (dùng insist that)"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "vi",
-      "content_hash": "1fdbb006b81f0a3d6a3a1a2455b26dcade29183ba2b1c27231d77c594bc0b97f",
+      "content_hash": "f7de281ad018a9decf6a1dc27d757af99bb52373e829320b4c39065491bf85bf",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "022db453-2344-5c63-8cf8-21de2b3f4c00",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "48ca39bf-bda0-5b3b-8e87-2b3de028d0ea",
       "key": "en:exercise:subjunctive-translate-to-vi-come-what-may",
       "key_data": {
@@ -60482,7 +62856,16 @@ select content_private.import_bundle($bundle${
             "Bất kể chuyện gì xảy ra, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.",
             "Dù thế nào đi nữa, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.",
             "Dù có chuyện gì xảy ra, chúng tôi vẫn sẽ khai trương chi nhánh mới vào mùa xuân tới.",
-            "Bất chấp mọi chuyện, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới."
+            "Bất chấp mọi chuyện, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.",
+            "Dù có chuyện gì xảy ra đi nữa, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.",
+            "Dù thế nào, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.",
+            "Bất kể điều gì xảy ra, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.",
+            "Dù có chuyện gì, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.",
+            "Dù có xảy ra chuyện gì, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.",
+            "Dù có chuyện gì xảy ra, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân năm sau.",
+            "Dù có chuyện gì xảy ra, chúng tôi sẽ mở chi nhánh mới vào mùa xuân năm sau.",
+            "Dù có chuyện gì xảy ra, chúng tôi vẫn sẽ khai trương chi nhánh mới vào mùa xuân năm sau.",
+            "Dù có chuyện gì xảy ra, chúng ta vẫn sẽ mở chi nhánh mới vào mùa xuân tới."
           ]
         },
         "display_answer": "Dù có chuyện gì xảy ra, chúng tôi vẫn sẽ mở chi nhánh mới vào mùa xuân tới.",
@@ -60511,19 +62894,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Come what may, we will open the new branch next spring."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "76f1d242d208c32ed909bab7860c433e79255f55ce6fe4a9772373821a12387f",
+      "content_hash": "b66a346d22ae2bf174fbffff428024771ddf174c4cc8a352dc8a1aea59eaf5f4",
       "difficulty": 5,
       "exercise_type": "translate",
       "id": "cf7dbd7c-c57b-58ea-9db1-49875d1c8fcf",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "fd7b5006-658f-5c6b-b5ee-ef85383a9297",
       "key": "en:exercise:subjunctive-translate-vital",
       "key_data": {
@@ -60543,7 +62926,16 @@ select content_private.import_bundle($bundle${
             "It is vital that every employee receive training before using the new system.",
             "It is vital that all employees receive training before using the new system.",
             "It is vital that every employee is trained before using the new system.",
-            "It is vital that all employees are trained before using the new system."
+            "It is vital that all employees are trained before using the new system.",
+            "It is vital that all staff members be trained before using the new system.",
+            "It is vital that every member of staff be trained before they use the new system.",
+            "It is vital that all employees be trained before they start using the new system.",
+            "It is vital that every employee be trained before starting to use the new system.",
+            "It is vital that each employee receive training before using the new system.",
+            "It is vital that all staff are trained before using the new system.",
+            "It is vital that every member of staff is trained before using the new system.",
+            "It is vital that every employee is trained before they use the new system.",
+            "It is vital that every employee must be trained before using the new system."
           ]
         },
         "display_answer": "It is vital that every employee be trained before using the new system.",
@@ -60555,11 +62947,6 @@ select content_private.import_bundle($bundle${
             "answer": "It is vital that every employee to be trained before using the new system.",
             "error_tag": "verb_pattern",
             "feedback_vi": "Sau that cần mệnh đề có động từ - every employee be trained, không có to."
-          },
-          {
-            "answer": "It is vital that every employee must be trained before using the new system.",
-            "error_tag": "subjunctive",
-            "feedback_vi": "Vital đã chứa ý bắt buộc; không thêm must. Dùng be trained hoặc should be trained."
           },
           {
             "answer": "It is vital that every employee was trained before using the new system.",
@@ -60582,8 +62969,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Điều tối quan trọng là mọi nhân viên phải được đào tạo trước khi sử dụng hệ thống mới. (văn phong trang trọng, dùng It is vital that)"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -151188,13 +153575,13 @@ select content_private.import_bundle($bundle${
         "text": "a bit of a + N"
       },
       "id": "3a20a48f-f96a-58e8-ba4a-2a705642b431",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:a-bit-of-a",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -151722,7 +154109,7 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
-          "vi": "Người Việt hay dùng actually với nghĩa \"hiện tại, thực tại\" (dễ nhầm với actuel trong tiếng Pháp). Trong tiếng Anh, \"hiện nay\" là currently hoặc at present."
+          "vi": "Actually không có nghĩa \"hiện nay\" - đây là false friend với actuellement (tiếng Pháp), nên bạn nào từng học tiếng Pháp dễ nhầm. Trong tiếng Anh, \"hiện nay\" là currently hoặc at present."
         },
         "examples": [
           {
@@ -151742,7 +154129,7 @@ select content_private.import_bundle($bundle${
           "vi": "Actually = thật ra, trên thực tế (sửa lại hoặc bổ sung thông tin); currently = hiện nay, hiện tại."
         }
       },
-      "content_hash": "b1e97979208db3450fbb2159bbb0fb666349c04865e0bca51840af526a4d346f",
+      "content_hash": "7a7badeb7630e36134d128a7774c76218ceaddf0c14bad5fed58213ee252c0ca",
       "difficulty": 3,
       "front": {
         "ipa": "/ˈæktʃuəli/ · UK /ˈkʌrəntli/ · US /ˈkɝːəntli/",
@@ -151750,13 +154137,13 @@ select content_private.import_bundle($bundle${
         "text": "actually / currently"
       },
       "id": "122158a7-0b6d-5cd9-8d1e-d019952e3bf0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:actually-currently",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -151792,13 +154179,13 @@ select content_private.import_bundle($bundle${
         "text": "address an issue"
       },
       "id": "804b0c8c-a6ec-59b3-b93f-8a5b31f04be7",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:address-an-issue",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -151963,13 +154350,13 @@ select content_private.import_bundle($bundle${
         "text": "admittedly"
       },
       "id": "6a6db57f-cf5f-5996-bbae-e5d979a7e7f7",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:admittedly",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -152093,13 +154480,13 @@ select content_private.import_bundle($bundle${
         "text": "affect (v) / effect (n)"
       },
       "id": "4088df0d-3eb1-5db0-92a0-bd16971dfea0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:affect-effect",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -152426,13 +154813,13 @@ select content_private.import_bundle($bundle${
         "text": "albeit"
       },
       "id": "313a9c45-dfc5-518e-b6f4-f705ebaaae78",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:albeit",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -152593,13 +154980,13 @@ select content_private.import_bundle($bundle${
         "text": "All (that) we need is … / All you have to do is (to) + V"
       },
       "id": "3376c578-5848-5b28-8112-181895d4b6ad",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:all-we-need-is",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "speaking"
@@ -152718,13 +155105,13 @@ select content_private.import_bundle($bundle${
         "text": "Although / Though + mệnh đề, mệnh đề (không có but)"
       },
       "id": "da438d0c-2ec3-5ea7-bc02-2bb4cb7e801f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:although-without-but",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -152936,13 +155323,13 @@ select content_private.import_bundle($bundle${
         "text": "antithesis"
       },
       "id": "afe2d2c2-208b-5eb2-833b-5483463c1a61",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:antithesis",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -153305,13 +155692,13 @@ select content_private.import_bundle($bundle${
         "text": "arguably"
       },
       "id": "b7f47b8c-99f4-5b73-9169-ce45aadd838e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:arguably",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -153429,13 +155816,13 @@ select content_private.import_bundle($bundle${
         "text": "As I mentioned earlier, …"
       },
       "id": "53ccc9ed-70dd-5901-9ae7-7f90e3699d15",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:as-i-mentioned-earlier",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -153553,13 +155940,13 @@ select content_private.import_bundle($bundle${
         "text": "assertive / aggressive / pushy"
       },
       "id": "f5761396-b5c3-5ae2-9b88-9f1988013dc0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:assertive-aggressive",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -154638,13 +157025,13 @@ select content_private.import_bundle($bundle${
         "text": "be likely / unlikely to + V"
       },
       "id": "a2d06a17-8d3e-5aae-b36c-174cf6cd8ce6",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:be-likely-to",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -154904,13 +157291,13 @@ select content_private.import_bundle($bundle${
         "text": "Be that as it may, …"
       },
       "id": "2016fbb1-a5c8-59df-9d49-ed26d78669fa",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:be-that-as-it-may",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing",
         "speaking"
@@ -155031,13 +157418,13 @@ select content_private.import_bundle($bundle${
         "text": "beat around the bush"
       },
       "id": "f107ab10-9c59-5bfd-8ed6-871eeb66d31b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:beat-around-the-bush",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -155536,13 +157923,13 @@ select content_private.import_bundle($bundle${
         "text": "a blessing in disguise"
       },
       "id": "cd693dc4-1e5a-5076-bc9d-0a04dfb20c84",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:blessing-in-disguise",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -156321,13 +158708,13 @@ select content_private.import_bundle($bundle${
         "text": "the burden of proof (is on / lies with …)"
       },
       "id": "7c6f3b0d-df06-58e8-bc56-45b250be57b5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:burden-of-proof",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -156444,13 +158831,13 @@ select content_private.import_bundle($bundle${
         "text": "by and large"
       },
       "id": "5b0efbd4-7254-50ee-a794-f6f4993a99d0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:by-and-large",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -157175,13 +159562,13 @@ select content_private.import_bundle($bundle${
         "text": "carry off"
       },
       "id": "5c1b1b20-6649-5a80-9e98-3d5e2ff22adc",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:carry-off",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -157192,7 +159579,7 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
-          "vi": "Số nhiều của analysis là analyses /əˈnæləsiːz/. Nói carry out / conduct an analysis, không nói make an analysis trong văn học thuật."
+          "vi": "Số nhiều của analysis là analyses /əˈnæləsiːz/. Trong văn học thuật, nói carry out / conduct an analysis; make an analysis ít gặp và kém trang trọng hơn."
         },
         "examples": [
           {
@@ -157206,7 +159593,7 @@ select content_private.import_bundle($bundle${
           "vi": "tiến hành phân tích"
         }
       },
-      "content_hash": "8497832439aeeb6e4c98c02cc92ce100796aaa6218a140d6b78e8e82b1164c8b",
+      "content_hash": "c39869b355409119870ada7576ad7cefec344d503225ae06b57174cb36745f5c",
       "difficulty": 2,
       "front": {
         "ipa": "/ˌkæri ˈaʊt ən əˈnæləsɪs/",
@@ -157214,13 +159601,13 @@ select content_private.import_bundle($bundle${
         "text": "carry out an analysis (of)"
       },
       "id": "f1881f13-67df-5f1d-94da-488a111d6221",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:carry-out-an-analysis",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -157537,13 +159924,13 @@ select content_private.import_bundle($bundle${
         "text": "cheap / inexpensive / affordable"
       },
       "id": "32569e31-b782-5fbe-8147-10c0c6b00dea",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:cheap-inexpensive",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -157799,13 +160186,13 @@ select content_private.import_bundle($bundle${
         "text": "childlike / childish"
       },
       "id": "70d89040-0012-569f-93b1-67a387acf9fb",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:childlike-childish",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -158144,13 +160531,13 @@ select content_private.import_bundle($bundle${
         "text": "come across"
       },
       "id": "25306fc7-e4d6-55d6-84ed-e8275e706d23",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:come-across",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "grammar"
@@ -158223,13 +160610,13 @@ select content_private.import_bundle($bundle${
         "text": "come what may"
       },
       "id": "48ca39bf-bda0-5b3b-8e87-2b3de028d0ea",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:come-what-may",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "writing"
@@ -158362,7 +160749,7 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
-          "vi": "Collocation thường gặp - a compelling argument/case/reason/evidence. Mạnh hơn convincing; không dùng cho người (a compelling person nghĩa là người cuốn hút)."
+          "vi": "Collocation thường gặp - a compelling argument/case/reason/evidence. Mạnh hơn convincing; nói về người (a compelling speaker) thì nghĩa là cuốn hút."
         },
         "examples": [
           {
@@ -158376,7 +160763,7 @@ select content_private.import_bundle($bundle${
           "vi": "Thuyết phục, có sức nặng (lập luận, bằng chứng, lý do)."
         }
       },
-      "content_hash": "45c0dee742e7fa974ffb01ab58cab240fff3397ce50784b9ddd609f4e77cae4a",
+      "content_hash": "7e7934a33f38dd4b91c5fcec899a9eb6c4894ed03e94ac16359103cd393f0699",
       "difficulty": 3,
       "front": {
         "ipa": "/kəmˈpelɪŋ/",
@@ -158384,13 +160771,13 @@ select content_private.import_bundle($bundle${
         "text": "compelling"
       },
       "id": "86907134-6249-50fd-88c5-fb5577a4ebfb",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:compelling",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -158690,13 +161077,13 @@ select content_private.import_bundle($bundle${
         "text": "concede (that) …"
       },
       "id": "063564a4-16b4-52e0-a775-9b4e3db6a774",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:concede",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -158718,10 +161105,10 @@ select content_private.import_bundle($bundle${
           }
         ],
         "meaning": {
-          "vi": "Có thể hình dung được là, không loại trừ khả năng (khả năng thấp hơn possibly)."
+          "vi": "Có thể hình dung được là, không loại trừ khả năng (khả năng thấp, chưa chắc)."
         }
       },
-      "content_hash": "8924442b3c68a9b0ca8f96d2d5eeb6d03624f467d646ba7ad49125c267f0af97",
+      "content_hash": "d9a782fcdcabf050287453aff510be7b8291fb975e8015b44ab21e9a1577b0a2",
       "difficulty": 4,
       "front": {
         "ipa": "/kənˈsiːvəbli/",
@@ -158729,13 +161116,13 @@ select content_private.import_bundle($bundle${
         "text": "conceivably"
       },
       "id": "a76fdc3d-ebfc-5bbe-b4ac-b3145bfb7370",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:conceivably",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -158768,13 +161155,13 @@ select content_private.import_bundle($bundle${
         "text": "concede → counter (Admittedly X. However, Y.)"
       },
       "id": "c095f1e2-bdd4-5221-ad1a-3283b4fa3ace",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:concession-structure",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "speaking",
@@ -158854,13 +161241,13 @@ select content_private.import_bundle($bundle${
         "text": "conduct research (into / on)"
       },
       "id": "eca07a82-def3-535f-8fae-a682645c5d99",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:conduct-research",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -158937,13 +161324,13 @@ select content_private.import_bundle($bundle${
         "text": "connotation"
       },
       "id": "1a0b8726-b41e-578a-9ba1-8bda46cb8960",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:connotation",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -158977,13 +161364,13 @@ select content_private.import_bundle($bundle${
         "text": "consequently"
       },
       "id": "80ddd5a3-f8ab-5cce-be4c-229b4455dbfa",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:consequently",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -159020,13 +161407,13 @@ select content_private.import_bundle($bundle${
         "text": "considerably"
       },
       "id": "3dda21b7-e3a2-5ebc-a5f9-e5b4b64e217e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:considerably",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -159433,13 +161820,13 @@ select content_private.import_bundle($bundle${
         "text": "counter-argument"
       },
       "id": "ea06980a-f4fb-5a91-be53-c1915db463f8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:counter-argument",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -159878,13 +162265,13 @@ select content_private.import_bundle($bundle${
         "text": "cut corners"
       },
       "id": "4e1c8234-b8db-57f5-8e49-673a67637a2d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:cut-corners",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -160608,13 +162995,13 @@ select content_private.import_bundle($bundle${
         "text": "despite / in spite of + danh từ / V-ing"
       },
       "id": "09bec0c3-9d97-503c-8614-24a5a6c2c851",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:despite-in-spite-of",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -160930,7 +163317,7 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
-          "vi": "Dùng divide … into, không dùng divide … to hay divide … in."
+          "vi": "Dùng divide … into (divide … in cũng gặp, nhất là divide in half / in two), không dùng divide … to."
         },
         "examples": [
           {
@@ -160944,7 +163331,7 @@ select content_private.import_bundle($bundle${
           "vi": "Tôi chia bài nói thành ba phần (giới thiệu bố cục ngay đầu bài)."
         }
       },
-      "content_hash": "ea5c29e6edac218d3de17b5a72ae856992d85c402659b9290977f7880909a911",
+      "content_hash": "5c4152f2f638d5c7e2dcd7793c5461d617c4d19bd14d01d149c02547a979eaa6",
       "difficulty": 3,
       "front": {
         "ipa": "UK /aɪv dɪˈvaɪdɪd maɪ ˈtɔːk ˈɪntə ˈθriː ˈpɑːts/ · US /aɪv dɪˈvaɪdɪd maɪ ˈtɑːk ˈɪntə ˈθriː ˈpɑːrts/",
@@ -160952,13 +163339,13 @@ select content_private.import_bundle($bundle${
         "text": "I've divided my talk into three parts."
       },
       "id": "34e1fca9-6a4f-509f-9440-67e4d8c8811e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:divided-into-parts",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -161163,13 +163550,13 @@ select content_private.import_bundle($bundle${
         "text": "do so"
       },
       "id": "8644a427-b7d1-5490-9f6a-c93a4f51b559",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:do-so",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -161539,13 +163926,13 @@ select content_private.import_bundle($bundle${
         "text": "draw a conclusion (from)"
       },
       "id": "80a1caa5-353a-52ff-b1a3-0f7d4de25d86",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:draw-a-conclusion",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -161793,13 +164180,13 @@ select content_private.import_bundle($bundle${
         "text": "economic / economical"
       },
       "id": "0bdf0872-b72b-5d3e-88c9-3cfcfd97576b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:economic-economical",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -162009,13 +164396,13 @@ select content_private.import_bundle($bundle${
         "text": "the elephant in the room"
       },
       "id": "63961fa2-a4f3-5be7-ace6-182800373bb8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:elephant-in-the-room",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -162096,13 +164483,13 @@ select content_private.import_bundle($bundle${
         "text": "…and she did. / …but I can't. / …so has he."
       },
       "id": "f8a41c57-3a7b-5f5b-a90b-10d66f3250b3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:ellipsis-auxiliary",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "speaking"
@@ -162220,13 +164607,13 @@ select content_private.import_bundle($bundle${
         "text": "emphasise / stress"
       },
       "id": "27a43e90-aec1-5495-8eb4-ebdaf6a0b1b2",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:emphasise",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "grammar"
@@ -162268,13 +164655,13 @@ select content_private.import_bundle($bundle${
         "text": "do / does / did + V (nhấn mạnh)"
       },
       "id": "c8db5f45-8554-5155-8ceb-2d3108fa1b51",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:emphatic-do",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "speaking"
@@ -163189,13 +165576,13 @@ select content_private.import_bundle($bundle${
         "text": "Far from + V-ing/adj, …"
       },
       "id": "92d65d4d-e3dc-584c-86f9-c59a94053690",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:far-from",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -163526,13 +165913,13 @@ select content_private.import_bundle($bundle${
         "text": "the findings suggest that…"
       },
       "id": "861a705b-b764-53aa-ba87-c2b960154a26",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:findings-suggest",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing",
         "reading"
@@ -163813,13 +166200,13 @@ select content_private.import_bundle($bundle${
         "text": "flawed reasoning / a flawed argument"
       },
       "id": "3dae83ac-5494-5fed-92a8-8e628ca8f32d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:flawed-reasoning",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -163931,13 +166318,13 @@ select content_private.import_bundle($bundle${
         "text": "food for thought"
       },
       "id": "df77ba78-f284-582d-8d00-6b981cdecc64",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:food-for-thought",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -164014,13 +166401,13 @@ select content_private.import_bundle($bundle${
         "text": "for what it's worth"
       },
       "id": "b02e6b5f-9616-56da-a9fa-288e109b315e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:for-what-its-worth",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "writing"
@@ -164315,13 +166702,13 @@ select content_private.import_bundle($bundle${
         "text": "frugal / thrifty / stingy"
       },
       "id": "62ee134b-c54f-5c99-8ea4-1c2a5148aa5a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:frugal-stingy",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -164480,13 +166867,13 @@ select content_private.import_bundle($bundle${
         "text": "Further to…"
       },
       "id": "c2fc7918-e38e-5f4c-84c1-b5a9270feacd",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:further-to",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing"
       ],
@@ -165082,13 +167469,13 @@ select content_private.import_bundle($bundle${
         "text": "give a presentation on … / present + N"
       },
       "id": "419404af-8507-5456-a1d2-43d4974d9026",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:give-a-presentation-on",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "grammar"
@@ -166020,13 +168407,13 @@ select content_private.import_bundle($bundle${
         "text": "Granted, …"
       },
       "id": "9330ef15-ef89-5155-a855-7d333726efde",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:granted",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -166306,13 +168693,13 @@ select content_private.import_bundle($bundle${
         "text": "Had it not been for + N, …"
       },
       "id": "b050f57e-9969-5cfa-82f0-9bc8e0c6ee5a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:had-it-not-been-for",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -167380,13 +169767,13 @@ select content_private.import_bundle($bundle${
         "text": "hedging: may / might / could + seem / appear / suggest"
       },
       "id": "16f8d0ab-191c-5287-a985-a637f7de3f27",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:hedging-language",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -167586,13 +169973,13 @@ select content_private.import_bundle($bundle${
         "text": "highly"
       },
       "id": "365d03c4-1e7c-557f-b402-402363f94e1a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:highly",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -168449,13 +170836,13 @@ select content_private.import_bundle($bundle${
         "text": "I am writing to + V…"
       },
       "id": "899f3878-6b71-5c8a-ace8-93e89a12f901",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:i-am-writing-to",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing"
       ],
@@ -168670,13 +171057,13 @@ select content_private.import_bundle($bundle${
         "text": "I'd like to begin by + V-ing …"
       },
       "id": "f155ccb7-c693-5514-84bb-3b78047d5b50",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:id-like-to-begin-by",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -168747,13 +171134,13 @@ select content_private.import_bundle($bundle${
         "text": "idioms and register"
       },
       "id": "55d70839-6159-51da-9dfb-7576225aa1f9",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:idiom-register",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing",
         "vocabulary"
@@ -168826,13 +171213,13 @@ select content_private.import_bundle($bundle${
         "text": "If I understand you correctly, you're asking …"
       },
       "id": "882d8931-cb04-5bfd-a507-3f111c763af5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:if-i-understand-you-correctly",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "listening"
@@ -168866,13 +171253,13 @@ select content_private.import_bundle($bundle${
         "text": "if need be"
       },
       "id": "ade5f8b1-7c2d-51f6-ba97-b8ba407d39da",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:if-need-be",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing",
         "speaking"
@@ -169104,13 +171491,13 @@ select content_private.import_bundle($bundle${
         "text": "implementation"
       },
       "id": "50b263af-6d58-5b8d-913e-73357b6bce95",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:implementation",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -169229,13 +171616,13 @@ select content_private.import_bundle($bundle${
         "text": "in light of…"
       },
       "id": "2706edbe-4746-5141-9857-735f1f8f8533",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:in-light-of",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing",
         "reading"
@@ -169446,13 +171833,13 @@ select content_private.import_bundle($bundle${
         "text": "In summary, … / To summarise, …"
       },
       "id": "6cb91bd4-9952-5ef0-9cb3-239179603269",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:in-summary",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing"
       ],
@@ -170028,13 +172415,13 @@ select content_private.import_bundle($bundle${
         "text": "insist that + S + V nguyên mẫu / insist on + V-ing"
       },
       "id": "77816ae1-e435-59c5-96b4-f788141f7a72",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:insist-that",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -170072,13 +172459,13 @@ select content_private.import_bundle($bundle${
         "text": "very → highly / considerably / significantly / extremely"
       },
       "id": "77cf369b-88ce-567e-9178-eb2cab82b8d5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:intensifier-collocations",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -170239,13 +172626,13 @@ select content_private.import_bundle($bundle${
         "text": "Had I known… / Should you… / Were I…"
       },
       "id": "8e1972fc-0031-58d1-a841-5340596de206",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:inversion-conditional",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -170284,13 +172671,13 @@ select content_private.import_bundle($bundle${
         "text": "Not only + trợ động từ + S + V…, but … also …"
       },
       "id": "91413e1d-b67a-5189-9072-b85a236e459b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:inversion-not-only",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -170323,13 +172710,13 @@ select content_private.import_bundle($bundle${
         "text": "Rarely / Seldom / Never + trợ động từ + S + V"
       },
       "id": "0de4cfaf-b821-558f-b4c1-1ff6ac69366f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:inversion-rarely",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -170575,13 +172962,13 @@ select content_private.import_bundle($bundle${
         "text": "It is/was + X + that/who…"
       },
       "id": "dc016be6-440a-5624-a9dc-b49aba54ddba",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:it-cleft",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -170660,13 +173047,13 @@ select content_private.import_bundle($bundle${
         "text": "It is essential / vital / imperative that + S + V nguyên mẫu"
       },
       "id": "fd7b5006-658f-5c6b-b5ee-ef85383a9297",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:it-is-essential-that",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -170706,13 +173093,13 @@ select content_private.import_bundle($bundle${
         "text": "It is precisely + X + that …"
       },
       "id": "ef7fbb99-ca46-524d-9bfc-576c52ca1398",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:it-is-precisely-that",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "speaking"
@@ -170834,13 +173221,13 @@ select content_private.import_bundle($bundle${
         "text": "It would appear that…"
       },
       "id": "a7ff906e-e326-5200-862f-66763613f3d4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:it-would-appear-that",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing",
         "grammar"
@@ -171623,13 +174010,13 @@ select content_private.import_bundle($bundle${
         "text": "Let me elaborate on …"
       },
       "id": "31ce9ade-7e18-5b8f-9363-78ae8df4effe",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:let-me-elaborate-on",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -171662,13 +174049,13 @@ select content_private.import_bundle($bundle${
         "text": "I'd need to check that - let me get back to you."
       },
       "id": "e1878b27-4da4-5abd-a49a-1a1989f8481a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:let-me-get-back-to-you",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -171701,13 +174088,13 @@ select content_private.import_bundle($bundle${
         "text": "Let us not forget that … / Let's not forget …"
       },
       "id": "28a5e08b-085d-57fd-acb1-44da883dcc24",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:let-us-not-forget",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -172248,13 +174635,13 @@ select content_private.import_bundle($bundle${
         "text": "Vietnamese idioms → English equivalents"
       },
       "id": "58b08c58-9541-58fa-80f6-ae3830ac4d3f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:literal-idiom-translation",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -172287,13 +174674,13 @@ select content_private.import_bundle($bundle${
         "text": "Little did + S + know / realise…"
       },
       "id": "b90de84b-72b3-515d-84ab-e11440efbdea",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:little-did",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "reading"
@@ -172942,13 +175329,13 @@ select content_private.import_bundle($bundle${
         "text": "make a decision"
       },
       "id": "a4579f64-ace7-5f93-9af0-e0ceec6ad81a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:make-a-decision",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -173107,13 +175494,13 @@ select content_private.import_bundle($bundle${
         "text": "S + V (demand/insist/recommend) + that + S + V nguyên mẫu"
       },
       "id": "358513b9-d1a4-5b5c-b48f-599aa86b6586",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:mandative-subjunctive",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -175042,13 +177429,13 @@ select content_private.import_bundle($bundle${
         "text": "No sooner had + S + V3 … than …"
       },
       "id": "26fbaa17-40f2-553f-b84c-6bddf2e1e818",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:no-sooner-than",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -175163,13 +177550,13 @@ select content_private.import_bundle($bundle${
         "text": "nominalisation: decide → a decision; implement → the implementation of"
       },
       "id": "efa6e3d6-2f09-5994-9cd1-92d72b49f382",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:nominalisation",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -175386,13 +177773,13 @@ select content_private.import_bundle($bundle${
         "text": "not bad at all"
       },
       "id": "883a20c2-8939-5eb4-866b-3cc9b9eb4aaa",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:not-bad-at-all",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -175463,10 +177850,10 @@ select content_private.import_bundle($bundle${
           }
         ],
         "meaning": {
-          "vi": "Không hẳn là… - lối nói mỉa mai nghĩa là \"hoàn toàn không\" (It's not exactly cheap = rất đắt)."
+          "vi": "Không hẳn là… - lối nói giảm, mỉa mai, ngụ ý điều ngược lại (It's not exactly cheap = chẳng rẻ chút nào, khá đắt)."
         }
       },
-      "content_hash": "aa9f470bfa66898a4c3595333846ad61d178ed4227e91a7727276ae0a7853974",
+      "content_hash": "a281c81a37b1d80176b5b2f5b67f868e22baa2ea3e720fadecd03d26f2df256c",
       "difficulty": 4,
       "front": {
         "ipa": "/nɒt ɪɡˈzæktli/ · US /nɑːt ɪɡˈzæktli/",
@@ -175474,13 +177861,13 @@ select content_private.import_bundle($bundle${
         "text": "not exactly / hardly + adj"
       },
       "id": "36f6e2e3-fa87-56c3-be3a-241274a9f9f2",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:not-exactly",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -175513,13 +177900,13 @@ select content_private.import_bundle($bundle${
         "text": "not X but Y / It's not X; it's Y."
       },
       "id": "c98b4d27-ac52-50a7-a35b-8a73b9045f96",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:not-x-but-y",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "speaking"
@@ -175629,21 +178016,21 @@ select content_private.import_bundle($bundle${
           "vi": "mặc dù, bất chấp (rất trang trọng, hay gặp trong văn bản pháp lý, báo cáo)"
         }
       },
-      "content_hash": "f7a7eed78e0d23bcc3e3f6f022ef60ad8e836e21bf466f4ca9a63a9122aea70a",
+      "content_hash": "38175d7049824764138f82db7dacd148d79eea67e498a55400727f273bf17207",
       "difficulty": 4,
       "front": {
-        "ipa": "/ˌnɒtwɪθˈstændɪŋ/ · US /ˌnɑːtwɪθˈstændɪŋ/",
+        "ipa": "UK /ˌnɒtwɪθˈstændɪŋ/ · US /ˌnɑːtwɪθˈstændɪŋ/",
         "pos": "giới từ / trạng từ",
         "text": "notwithstanding"
       },
       "id": "87c9ddf1-b332-521b-9cc3-4cd08ef33981",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:notwithstanding",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "reading"
@@ -176194,13 +178581,13 @@ select content_private.import_bundle($bundle${
         "text": "be / sit on the fence"
       },
       "id": "20af07a2-cce7-59c5-87a9-aeeef6939b9d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:on-the-fence",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -176638,13 +179025,13 @@ select content_private.import_bundle($bundle${
         "text": "Only when / Only after … + trợ động từ + S + V"
       },
       "id": "c12ccf72-dc46-58e6-aa50-93f4044f9ed7",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:only-when-inversion",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -177977,13 +180364,13 @@ select content_private.import_bundle($bundle${
         "text": "pick up (nhiều nghĩa)"
       },
       "id": "69115644-c553-5fb6-b96e-fed99b8ca42f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:pick-up-senses",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -178262,13 +180649,13 @@ select content_private.import_bundle($bundle${
         "text": "Please find attached…"
       },
       "id": "583ea9a4-3a8a-5b32-803e-75267d81916c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:please-find-attached",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing"
       ],
@@ -178386,13 +180773,13 @@ select content_private.import_bundle($bundle${
         "text": "pose a challenge / a threat / a risk"
       },
       "id": "59ec62a9-7315-50ac-8ebd-93ef36e6a590",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:pose-a-challenge",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -179454,13 +181841,13 @@ select content_private.import_bundle($bundle${
         "text": "presumably"
       },
       "id": "b86c41c4-92a3-5d79-a540-6879f5769df7",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:presumably",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -180054,7 +182441,7 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
-          "vi": "Không nói get an agreement hay arrive an agreement; dùng reach an agreement hoặc come to an agreement."
+          "vi": "Không nói arrive an agreement; get an agreement kém trang trọng. Dùng reach an agreement hoặc come to an agreement."
         },
         "examples": [
           {
@@ -180068,7 +182455,7 @@ select content_private.import_bundle($bundle${
           "vi": "đạt được thoả thuận"
         }
       },
-      "content_hash": "b81d5111ae9a0ef5d2873ca9b51452c171368570cdb496a01f9da8cf4f1da19f",
+      "content_hash": "de5309799959dbe1497cb1c68cfd5474d2ab29fdb87bd32837c953c84324d931",
       "difficulty": 2,
       "front": {
         "ipa": "/riːtʃ ən əˈɡriːmənt/",
@@ -180076,13 +182463,13 @@ select content_private.import_bundle($bundle${
         "text": "reach an agreement"
       },
       "id": "bc2644a1-93ed-5dd3-a73e-e856e23f241d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:reach-an-agreement",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -180242,13 +182629,13 @@ select content_private.import_bundle($bundle${
         "text": "rebut / rebuttal"
       },
       "id": "b19d99c9-6a07-51f1-b276-ad977051d70a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:rebut",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -180505,13 +182892,13 @@ select content_private.import_bundle($bundle${
         "text": "get → obtain, ask for → request, find out → determine, need → require"
       },
       "id": "d600748e-eae9-59eb-b6e0-37d088bd623f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:register-shift",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -180771,13 +183158,13 @@ select content_private.import_bundle($bundle${
         "text": "relatively"
       },
       "id": "5f145b49-5a41-501d-b2d8-6b7ab0fdf3fa",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:relatively",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -181109,13 +183496,13 @@ select content_private.import_bundle($bundle${
         "text": "renowned / notorious"
       },
       "id": "1ce88ea5-b476-5b30-a8ce-5e26eab0f7cf",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:renowned-notorious",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -181315,13 +183702,13 @@ select content_private.import_bundle($bundle${
         "text": "research (danh từ không đếm được)"
       },
       "id": "3f6602ae-07a9-5734-a8a1-902550b2ae89",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:research-uncountable",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "vocabulary"
@@ -181563,13 +183950,13 @@ select content_private.import_bundle($bundle${
         "text": "rhetorical device"
       },
       "id": "430c1ef5-de68-5dfc-9388-1a812157649a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:rhetorical-device",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -181609,13 +183996,13 @@ select content_private.import_bundle($bundle${
         "text": "rhetorical question"
       },
       "id": "948b811f-6024-5c39-8770-10bdadb00098",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:rhetorical-question",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "writing"
@@ -182270,13 +184657,13 @@ select content_private.import_bundle($bundle${
         "text": "I see it (somewhat) differently."
       },
       "id": "582bfb54-c2cc-58d5-8a27-815a5486308c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:see-it-differently",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -182474,13 +184861,13 @@ select content_private.import_bundle($bundle${
         "text": "sensible / sensitive"
       },
       "id": "1be4b8e6-ce94-5a9c-9446-b1a954f97441",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:sensible-sensitive",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -183063,13 +185450,13 @@ select content_private.import_bundle($bundle${
         "text": "a significant increase in…"
       },
       "id": "c264d9ae-28f0-54ba-b4f1-961327f99fc7",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:significant-increase",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -183106,13 +185493,13 @@ select content_private.import_bundle($bundle${
         "text": "signposting"
       },
       "id": "79767d11-4683-59f2-8e1a-dcb130b88f7d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:signposting",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "vocabulary"
@@ -183930,13 +186317,13 @@ select content_private.import_bundle($bundle${
         "text": "somewhat"
       },
       "id": "9ff4b665-ea19-56ec-9065-f721948c5d2f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:somewhat",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -184386,13 +186773,13 @@ select content_private.import_bundle($bundle${
         "text": "stance adverbs (undeniably, conceivably, presumably…)"
       },
       "id": "717c288b-e157-5cfe-8e1f-67268d98955f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:stance-adverb",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -185151,13 +187538,13 @@ select content_private.import_bundle($bundle${
         "text": "stubborn / determined"
       },
       "id": "8e80eb1b-8708-5fe3-a604-e45085807557",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:stubborn-determined",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -185313,13 +187700,13 @@ select content_private.import_bundle($bundle${
         "text": "that + S + not + V nguyên mẫu"
       },
       "id": "5df80c4a-2b4a-5f02-9af1-b848808f7db9",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:subjunctive-negative",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -185395,13 +187782,13 @@ select content_private.import_bundle($bundle${
         "text": "one / ones"
       },
       "id": "bf8cc759-ce3e-5bfb-b61c-224bbf9424a6",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:substitution-one",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -185439,13 +187826,13 @@ select content_private.import_bundle($bundle${
         "text": "I think so / I hope not / I'm afraid so"
       },
       "id": "e410b05c-bbfc-538a-af40-1335ec49289c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:substitution-so-not",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "speaking"
@@ -186259,13 +188646,13 @@ select content_private.import_bundle($bundle${
         "text": "take something into account"
       },
       "id": "30e7d2ca-0300-502b-bb12-523ef6d0ddac",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:take-into-account",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -186788,13 +189175,13 @@ select content_private.import_bundle($bundle${
         "text": "tend to + V"
       },
       "id": "e56d8b02-61b1-509d-a617-bba4741be5fb",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:tend-to",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing",
         "grammar"
@@ -186911,13 +189298,13 @@ select content_private.import_bundle($bundle${
         "text": "That said, …"
       },
       "id": "2cd6e522-2a60-5d2b-84a4-aadf885a42be",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:that-said",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "writing"
@@ -186990,13 +189377,13 @@ select content_private.import_bundle($bundle${
         "text": "That's a fair question. / That's a valid point."
       },
       "id": "37e5657f-4eb4-598a-8ce9-9758c8b5fa43",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:thats-a-fair-question",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -187286,13 +189673,13 @@ select content_private.import_bundle($bundle${
         "text": "The question is not whether … but when/how …"
       },
       "id": "3d7d6a40-82f0-547f-8b4e-de8e7b8374a4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:the-question-is-not-whether",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "writing"
@@ -187326,13 +189713,13 @@ select content_private.import_bundle($bundle${
         "text": "The reason (why)… is that…"
       },
       "id": "eddc6073-f5ff-5a83-8e72-35d87aa343d1",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:the-reason-why",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -187372,13 +189759,13 @@ select content_private.import_bundle($bundle${
         "text": "the very + N"
       },
       "id": "7bcff34c-cba9-589a-acd3-ebba81c3a0e8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:the-very",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "vocabulary"
@@ -187498,13 +189885,13 @@ select content_private.import_bundle($bundle${
         "text": "There is no denying that …"
       },
       "id": "915d7bca-9b71-5519-abcf-ce512c62c959",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:there-is-no-denying",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "writing"
@@ -187676,13 +190063,13 @@ select content_private.import_bundle($bundle${
         "text": "thereby + V-ing"
       },
       "id": "d590fafd-5002-57b1-99ce-60f609a5ad31",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:thereby",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -187764,13 +190151,13 @@ select content_private.import_bundle($bundle${
         "text": "thin / slim / skinny"
       },
       "id": "3908e4f7-952a-55e7-9c54-eadb51b7352b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:thin-slim-skinny",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -187932,13 +190319,13 @@ select content_private.import_bundle($bundle${
         "text": "This brings me to …"
       },
       "id": "2b2e9178-cd88-5d1a-8e57-2ff5966258d8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:this-brings-me-to",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -188366,13 +190753,13 @@ select content_private.import_bundle($bundle${
         "text": "to put it mildly"
       },
       "id": "1863854d-b1a6-5787-9ac3-4b0487dd1095",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:to-put-it-mildly",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "writing"
@@ -188406,13 +190793,13 @@ select content_private.import_bundle($bundle${
         "text": "To put this into perspective, …"
       },
       "id": "0b431a56-22f9-51a6-9f8c-592a729395b0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:to-put-this-into-perspective",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "writing"
@@ -188446,13 +190833,13 @@ select content_private.import_bundle($bundle${
         "text": "To recap, …"
       },
       "id": "0223e137-451d-54f3-bd11-d85e388d31c9",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:to-recap",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -188485,13 +190872,13 @@ select content_private.import_bundle($bundle${
         "text": "to some extent"
       },
       "id": "c7fcf118-6f5e-5a4d-b853-cc93a2b771f4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:to-some-extent",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing",
         "speaking"
@@ -189075,13 +191462,13 @@ select content_private.import_bundle($bundle${
         "text": "tricolon (the rule of three)"
       },
       "id": "faf73d9f-c5ca-58b0-b24b-aebe3034b6d0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:tricolon",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "writing"
@@ -189338,13 +191725,13 @@ select content_private.import_bundle($bundle${
         "text": "turn down"
       },
       "id": "998e0695-3f3e-52bf-b983-a00d7e2451ab",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:turn-down",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -189419,13 +191806,13 @@ select content_private.import_bundle($bundle${
         "text": "Turning now to … / Moving on to …"
       },
       "id": "8c1e4a72-2247-5e5d-b116-190da2cd7e0f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:turning-now-to",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -189631,13 +192018,13 @@ select content_private.import_bundle($bundle${
         "text": "undeniably"
       },
       "id": "f2762a34-b2f0-5cad-8a1c-3fac2719d61e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:undeniably",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -189670,13 +192057,13 @@ select content_private.import_bundle($bundle${
         "text": "Under no circumstances + trợ động từ + S + V"
       },
       "id": "64f8c960-6fe7-5489-8f42-c3f6429963c0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:under-no-circumstances",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "reading"
@@ -189749,13 +192136,13 @@ select content_private.import_bundle($bundle${
         "text": "undermine"
       },
       "id": "7a02d8d8-3479-521c-8a90-4b77366ef2b8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:undermine",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -189830,13 +192217,13 @@ select content_private.import_bundle($bundle${
         "text": "understatement (nói giảm)"
       },
       "id": "17fd4a7f-7cc5-5b70-9b73-fb05c5211daa",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:understatement",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "vocabulary"
@@ -191278,13 +193665,13 @@ select content_private.import_bundle($bundle${
         "text": "Were it not for + N, …"
       },
       "id": "8955c6cc-80ea-5618-b71e-b6d7b763963a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:were-it-not-for",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -191409,13 +193796,13 @@ select content_private.import_bundle($bundle${
         "text": "What + S + V + is/was + …"
       },
       "id": "e79f2031-dcc9-5aa0-b5bd-bcf5272d35c5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:what-cleft",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "speaking",
@@ -191902,13 +194289,13 @@ select content_private.import_bundle($bundle${
         "text": "whatsoever"
       },
       "id": "dcf2d242-b74c-578b-a6d7-768f88cfb304",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:whatsoever",
       "language_code": "en",
       "level_code": "c2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "grammar"
@@ -192071,21 +194458,21 @@ select content_private.import_bundle($bundle${
           "vi": "Tuy đúng là…, nhưng… - nhượng bộ và phản bác trong cùng một câu."
         }
       },
-      "content_hash": "65c95ea6fc4947f9eec6a6616f27c05abd13390d935a762579256c8b3d5a6ec0",
+      "content_hash": "3c949b083fc8a00d96d3104950d919efb07a4f4edf55d5071cf004bf50be8097",
       "difficulty": 4,
       "front": {
-        "ipa": "UK /waɪl ɪt ɪz ˈtruː ðət/ · US /hwaɪl ɪt ɪz ˈtruː ðət/",
+        "ipa": "/waɪl ɪt ɪz ˈtruː ðət/",
         "pos": "mệnh đề nhượng bộ",
         "text": "While it is true that …, …"
       },
       "id": "4235cb06-e644-5779-ab20-2f0f1d383638",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:while-it-is-true-that",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing",
         "speaking"
@@ -192487,13 +194874,13 @@ select content_private.import_bundle($bundle${
         "text": "With (all due) respect, …"
       },
       "id": "eaea38bb-05a4-5fe0-8411-2b639efeddd2",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:with-all-due-respect",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -192526,13 +194913,13 @@ select content_private.import_bundle($bundle${
         "text": "with regard to…"
       },
       "id": "c0b58186-a31d-54f1-85a1-b862b8ed5e8f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:with-regard-to",
       "language_code": "en",
       "level_code": "c1",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing"
       ],
@@ -247569,10 +249956,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "76e6cb610c5a8565fee547bb398387a4af56ce4c035d35046ee1cb52033a749e",
+      "content_hash": "9adaf7e9cb5b41ee835860ab59536395d40532e298b2c5b1daf97c4b2971267c",
       "estimated_minutes": 20,
       "id": "7e3c0da8-8881-5392-ada4-9f88a01adfd0",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:academic-professional-review",
       "language_code": "en",
       "level_code": "c1",
@@ -247588,8 +249975,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 5,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "reading",
         "writing",
@@ -248532,10 +250919,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "252bcbfc40fa835208c76f6451d536cf7bcf71646db5e0c35f1f1889fd579d15",
+      "content_hash": "01a305500f7b7192057e12dacda485e4c4c030c0615469d9d386d19fe55cde35",
       "estimated_minutes": 18,
       "id": "4f5124b7-46af-5f68-9ebc-bc8268d9d98d",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:cleft-inversion",
       "language_code": "en",
       "level_code": "c1",
@@ -248551,8 +250938,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 3,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "writing",
@@ -249845,7 +252232,7 @@ select content_private.import_bundle($bundle${
         },
         {
           "text": {
-            "vi": "Với think, believe, expect, suppose, dạng phủ định tự nhiên là I don't think so; với hope và be afraid lại dùng I hope not, I'm afraid not. Do so trang trọng, hay gặp trong quy định (Those who wish to do so may…); trong văn nói thường chỉ dùng do it hoặc tỉnh lược. Emphatic do chỉ dùng ở hiện tại đơn, quá khứ đơn và mệnh lệnh (Do sit down) - các thì khác nhấn mạnh bằng cách nhấn giọng trợ động từ."
+            "vi": "Với think, believe, dạng phủ định tự nhiên là I don't think so; với hope, be afraid, suppose, expect thường dùng I hope not, I'm afraid not, I suppose not, I expect not. Do so trang trọng, hay gặp trong quy định (Those who wish to do so may…); trong văn nói thường chỉ dùng do it hoặc tỉnh lược. Emphatic do chỉ dùng ở hiện tại đơn, quá khứ đơn và mệnh lệnh (Do sit down) - các thì khác nhấn mạnh bằng cách nhấn giọng trợ động từ."
           },
           "type": "deep_explain"
         },
@@ -249958,10 +252345,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "fa71f92b390c9bea243d7b5b5dbef09136c04858fd4ee527831403dde7d08ac2",
+      "content_hash": "cceab34e22c312bfb4cc561c3cbfc491d3cb0c1bdb9c0b326ff5ee2ccbc473bf",
       "estimated_minutes": 20,
       "id": "4b5d1639-a913-5d6c-b1aa-538b8e2d5c61",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:ellipsis-understatement-emphasis",
       "language_code": "en",
       "level_code": "c2",
@@ -249977,8 +252364,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 4,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "speaking",
@@ -250703,10 +253090,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "40cdcbccefb856a9216a688e4a51513586c1e3962ed5e6f2d31644f4cb9077b2",
+      "content_hash": "487f8a36711f196007fc0fd80085a5c838daaeae8129fed6f181ef0a8b4c97d2",
       "estimated_minutes": 18,
       "id": "bd1dc33f-d787-5a21-a0a2-de9f9c89daf2",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:formal-linking-writing",
       "language_code": "en",
       "level_code": "c1",
@@ -250722,8 +253109,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 4,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "vocabulary",
@@ -252182,7 +254569,7 @@ select content_private.import_bundle($bundle${
         },
         {
           "text": {
-            "vi": "Mức độ chắc chắn tăng dần - might → may → could → is likely to → will. Bạn có thể kết hợp hai công cụ (It would appear that prices are likely to rise), nhưng đừng chồng quá nhiều lớp (It might possibly perhaps seem…) vì câu sẽ mơ hồ. Very không đứng trước so sánh hơn - dùng much/considerably/significantly higher."
+            "vi": "Mức độ chắc chắn tăng dần - might/could → may → is likely to → will. Bạn có thể kết hợp hai công cụ (It would appear that prices are likely to rise), nhưng đừng chồng quá nhiều lớp (It might possibly perhaps seem…) vì câu sẽ mơ hồ. Very không đứng trước so sánh hơn - dùng much/considerably/significantly higher."
           },
           "type": "deep_explain"
         },
@@ -252278,10 +254665,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "36f2a5e98c15f821faad323a4eeb805310a1ee48c22d538b472e6857396b9bdc",
+      "content_hash": "f382cf96a6dd967e537b1c264bae9b9d51b017d94fa8d299498590a4ac2d8f3f",
       "estimated_minutes": 15,
       "id": "c4ca9e59-8611-5c3a-83fc-874f281a8783",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:hedging-softening",
       "language_code": "en",
       "level_code": "c1",
@@ -252297,8 +254684,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 1,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "vocabulary",
@@ -253181,10 +255568,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "b35378669c7e8647574c356b745a3515650ab0ef9c27f9d4b2fc20ca16a83634",
+      "content_hash": "fe10351d18babbccf2041aea86f0dd0600afe2aa4e88d853cb0df42893b40119",
       "estimated_minutes": 20,
       "id": "af21856b-59a6-5a82-83bc-e3d33b30e965",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:idioms-phrasal-verbs",
       "language_code": "en",
       "level_code": "c2",
@@ -253200,8 +255587,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 2,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "vocabulary",
         "speaking",
@@ -254608,10 +256995,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "8f01d49c8d15b5311dd85f0089a43eb32767d8b1cec5d9742d2ba0f60f8cab7f",
+      "content_hash": "c68f5af0efd0296456f6906ae5b08323a15b198e7661d79721234828e81cf46e",
       "estimated_minutes": 18,
       "id": "685b2225-2e2d-525b-85c5-e3430dd11b47",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:near-synonyms-connotation",
       "language_code": "en",
       "level_code": "c2",
@@ -254627,8 +257014,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 1,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "vocabulary",
         "reading",
@@ -254923,10 +257310,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "2a3c0a012240ef4b887a7c873b0cfbd115ae3dc1b9e6b0c086f02b285f122d49",
+      "content_hash": "8d13bd4b53f356480abc1eb5b3874b9e1f197f5dd878528122c3c305e03df1fd",
       "estimated_minutes": 15,
       "id": "b88324c7-41de-5713-9af3-bbea4446798e",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:nominalisation-collocations",
       "language_code": "en",
       "level_code": "c1",
@@ -254942,8 +257329,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 2,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "vocabulary",
@@ -255237,10 +257624,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "7ef9dfcc59d27d60106970538a316c0a8925d7e2a9b2235ec65f89494b9b45f1",
+      "content_hash": "ec5731ad8f59c8627de30334c9cab5a1d2899940e0fbe9438e2888f03d852ec6",
       "estimated_minutes": 22,
       "id": "6548834c-6cd8-5c76-8307-94b0317124e0",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:nuance-idiom-review",
       "language_code": "en",
       "level_code": "c2",
@@ -255256,8 +257643,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 5,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "reading",
         "writing",
@@ -257647,7 +260034,7 @@ select content_private.import_bundle($bundle${
         },
         {
           "text": {
-            "vi": "Actually trong tiếng Anh nghĩa là \"thật ra\" - dùng để sửa một hiểu lầm hoặc nói điều bất ngờ (It's actually quite cheap). Người Việt hay dùng actually với nghĩa \"hiện tại\" (We are actually working on…), khiến người nghe tưởng bạn đang đính chính điều gì. \"Hiện nay\" là currently hoặc at present."
+            "vi": "Actually trong tiếng Anh nghĩa là \"thật ra\" - dùng để sửa một hiểu lầm hoặc nói điều bất ngờ (It's actually quite cheap). Một số bạn nhầm actually với nghĩa \"hiện nay\" (false friend với actuellement trong tiếng Pháp), khiến người nghe tưởng bạn đang đính chính điều gì. \"Hiện nay\" là currently hoặc at present."
           },
           "type": "deep_explain"
         },
@@ -257743,10 +260130,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "2e5e5093897bd307c623e45ebaea40078b5eb1f5f5a095d1de749ce66023cd86",
+      "content_hash": "35176567d2df2e83e5fe2f98770e0cc3974d90233483ee546a63504596e8e728",
       "estimated_minutes": 20,
       "id": "61f12a91-0d41-5236-943b-4d5d35bbf09c",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:persuasion-concession",
       "language_code": "en",
       "level_code": "c1",
@@ -257762,8 +260149,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 3,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "speaking",
         "writing",
@@ -258347,10 +260734,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "be2418790656bf4ce3a15bf365981384f8c281f79067ba2b39207d1aaec446ce",
+      "content_hash": "59311793e54a8390250487fd1f658b784205b8b135d9c6941dbc0e76cce01443",
       "estimated_minutes": 25,
       "id": "4aeee91e-e4f0-5fdb-a083-c3fe92e25750",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:presenting-persuading-review",
       "language_code": "en",
       "level_code": "c2",
@@ -258366,8 +260753,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 5,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "listening",
         "reading",
@@ -258506,10 +260893,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "29e4d0b42ed5467f8091abc1ea3d80631090410075d27ef2564b5bc6d198ab85",
+      "content_hash": "c3da2aa515f7abc3f0f3d20ff3eb0f6bc66270eeb5c493f22668e73dd3df86bc",
       "estimated_minutes": 22,
       "id": "f936e4f6-7f60-52d3-8351-1696eb7f0c0a",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:qa-debate",
       "language_code": "en",
       "level_code": "c1",
@@ -258525,8 +260912,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 4,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "speaking",
         "listening",
@@ -258814,10 +261201,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "6a09aebf2f965fc87f7f36317786c828cc5d397fecc442bf7f6468ecdd083e52",
+      "content_hash": "33c7fcd97f480830f716e33e1896d4d436ee42d18e88c7845438655ed79ac3b2",
       "estimated_minutes": 20,
       "id": "16da3986-7c7f-56f4-8aa9-1d3f3f3bf251",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:rhetorical-devices",
       "language_code": "en",
       "level_code": "c1",
@@ -258833,8 +261220,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 2,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "speaking",
         "grammar",
@@ -259434,10 +261821,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "cc76eb1ffc8e7011836d1f7894c5d8ab45ef9e51ea214180590745a9fd6eb50d",
+      "content_hash": "0bea350fbf5a42730973b7c0cc692529e667b940bbe9293525cc139cff2a8904",
       "estimated_minutes": 20,
       "id": "63393645-bdd1-5cc7-82eb-ccad0e39c319",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:signposting-presentations",
       "language_code": "en",
       "level_code": "c1",
@@ -259453,8 +261840,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 1,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "speaking",
         "listening",
@@ -260810,10 +263197,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "f4320c4a01d414cfca181d20bcf9329cfa0b5ae751b35275942f92f2e4ba41f7",
+      "content_hash": "87b778ae60290447a2a17de5ad4d845cfab1f9d625dfd7ee385177d57350d577",
       "estimated_minutes": 20,
       "id": "54b872e4-45f3-5014-943b-185d596116d7",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:subjunctive-formal",
       "language_code": "en",
       "level_code": "c2",
@@ -260829,8 +263216,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 3,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "writing",
@@ -279549,21 +281936,21 @@ select content_private.import_bundle($bundle${
   ],
   "programs": [
     {
-      "content_hash": "0879d2600e6b6ea2d22724182eae7d0987451ebcd77cfbcbacd0b47e1973fe05",
+      "content_hash": "1fb54ffc44b15a5ce891fed954475ab6967aed5aacc3509b8793725c725a3098",
       "description": {
-        "vi": "Văn phong học thuật và chuyên nghiệp, đảo ngữ, rào đón, collocation và sắc thái diễn đạt (C1-C2). Nội dung demo, chưa qua kiểm duyệt."
+        "vi": "Ba unit cho trình độ C1-C2. Unit 1 - văn phong học thuật và chuyên nghiệp - rào đón, danh từ hoá, collocation, câu chẻ, đảo ngữ, từ nối trang trọng, email và tóm tắt báo cáo. Unit 2 - sắc thái và thành ngữ - từ gần nghĩa khác sắc thái khen chê, thành ngữ và cụm động từ nhiều nghĩa, giả định cách, tỉnh lược, nói giảm và nhấn mạnh. Unit 3 - thuyết trình, thuyết phục và tranh luận - signposting, biện pháp tu từ, nhượng bộ, trạng từ quan điểm, hỏi đáp và phản bác."
       },
       "goal_types": [],
       "id": "ef7f477c-2ed1-56c3-be47-c051a154a260",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:program:advanced",
       "kind": "core",
       "language_code": "en",
       "level_from": "c1",
       "level_to": "c2",
       "order_index": 5,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
       "title": {
@@ -279767,12 +282154,12 @@ select content_private.import_bundle($bundle${
     {
       "content_hash": "94d0cd7553273d65b320f57ce926dce9c7cf1a7edf627451a2e838ee1d4da346",
       "id": "5057459b-bf94-5862-98e8-8d51b6b5d6b9",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:unit:academic-professional",
       "order_index": 1,
       "program_id": "ef7f477c-2ed1-56c3-be47-c051a154a260",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
       "title": {
@@ -279917,12 +282304,12 @@ select content_private.import_bundle($bundle${
     {
       "content_hash": "434097029ae0fc86085bdf8e3c24ab8e3bded868248957d2af7b2a80c0c85900",
       "id": "8ff03299-7e94-5a0b-b439-7c05fb1f0a34",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:unit:nuance-idiom",
       "order_index": 2,
       "program_id": "ef7f477c-2ed1-56c3-be47-c051a154a260",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
       "title": {
@@ -280022,12 +282409,12 @@ select content_private.import_bundle($bundle${
     {
       "content_hash": "6caa64ac322693d10ebb569b678b7e801e2a9acbfba01804a2fc9568da152045",
       "id": "4e983009-7c8b-5718-b1be-4864faa13cb8",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:unit:presenting-persuading",
       "order_index": 3,
       "program_id": "ef7f477c-2ed1-56c3-be47-c051a154a260",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
       "title": {

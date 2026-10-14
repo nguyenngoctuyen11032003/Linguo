@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Văn phong học thuật & chuyên nghiệp" (C1). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: rào đón & làm mềm ----------------
@@ -424,7 +423,7 @@ items:
           translation:
             vi: Chúng tôi đã tiến hành phân tích chi tiết các khiếu nại của khách hàng.
       confusion:
-        vi: Số nhiều của analysis là analyses /əˈnæləsiːz/. Nói carry out / conduct an analysis, không nói make an analysis trong văn học thuật.
+        vi: Số nhiều của analysis là analyses /əˈnæləsiːz/. Trong văn học thuật, nói carry out / conduct an analysis; make an analysis ít gặp và kém trang trọng hơn.
 
   - key: en:item:reach-an-agreement
     type: phrase
@@ -443,7 +442,7 @@ items:
           translation:
             vi: Hai công ty cuối cùng đã đạt được thoả thuận về giá.
       confusion:
-        vi: Không nói get an agreement hay arrive an agreement; dùng reach an agreement hoặc come to an agreement.
+        vi: Không nói arrive an agreement; get an agreement kém trang trọng. Dùng reach an agreement hoặc come to an agreement.
 
   - key: en:item:take-into-account
     type: phrase
@@ -720,7 +719,7 @@ items:
     skill_tags: [vocabulary, reading]
     front:
       text: notwithstanding
-      ipa: /ˌnɒtwɪθˈstændɪŋ/ · US /ˌnɑːtwɪθˈstændɪŋ/
+      ipa: UK /ˌnɒtwɪθˈstændɪŋ/ · US /ˌnɑːtwɪθˈstændɪŋ/
       pos: giới từ / trạng từ
     back:
       meaning:

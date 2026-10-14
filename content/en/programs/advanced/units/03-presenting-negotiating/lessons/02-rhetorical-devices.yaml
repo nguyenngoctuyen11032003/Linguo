@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:rhetorical-devices
 order_index: 2
 level: c1
@@ -177,7 +176,7 @@ exercises:
         - "Gợi ý: ô 1 là trạng từ nghĩa \"chính xác là\" (p…); ô 2 là từ nối của câu chẻ It is… ___."
     answer:
       blanks:
-        b1: [precisely, exactly]
+        b1: [precisely, exactly, just, only, simply, mainly, largely, partly, specifically, purely, primarily, especially, particularly]
         b2: [that]
     known_wrong:
       - answer: so
@@ -209,7 +208,7 @@ exercises:
     answer:
       blanks:
         b1: [is]
-        b2: [but]
+        b2: [but, but rather, so much as]
         b3: [helping]
     known_wrong:
       - answer: are
@@ -252,6 +251,61 @@ exercises:
         - The problem is not the technology, it's the people.
         - The problem isn't the technology, it's the people.
         - The problem is not the technology; it is the people.
+        - The problem lies not with the technology but with the people.
+        - The problem is not the technology but rather the people.
+        - The problem is not the technology so much as the people.
+        - The problem is not the technology but people.
+        - The problem lies not in the technology but in people.
+        - The problem lies not with the technology but with people.
+        - The problem is not with the technology but with people.
+        - The problem is not the technology, it is people.
+        - The problem is not the technology, it's people.
+        - The problem is not the technology but rather people.
+        - The problem is not the technology so much as people.
+        - The problem is not technology but the people.
+        - The problem lies not in technology but in the people.
+        - The problem lies not with technology but with the people.
+        - The problem is not with technology but with the people.
+        - The problem is not technology, it is the people.
+        - The problem is not technology, it's the people.
+        - The problem is not technology but rather the people.
+        - The problem is not technology so much as the people.
+        - The problem lies not with technology but with people.
+        - The problem is not with technology but with people.
+        - The problem is not technology, it is people.
+        - The problem is not technology, it's people.
+        - The problem is not technology but rather people.
+        - The problem is not technology so much as people.
+        - The issue lies not with the technology but with the people.
+        - The issue is not with the technology but with the people.
+        - The issue is not the technology, it is the people.
+        - The issue is not the technology, it's the people.
+        - The issue is not the technology but rather the people.
+        - The issue is not the technology so much as the people.
+        - The issue is not the technology but people.
+        - The issue lies not in the technology but in people.
+        - The issue lies not with the technology but with people.
+        - The issue is not with the technology but with people.
+        - The issue is not the technology, it is people.
+        - The issue is not the technology, it's people.
+        - The issue is not the technology but rather people.
+        - The issue is not the technology so much as people.
+        - The issue is not technology but the people.
+        - The issue lies not in technology but in the people.
+        - The issue lies not with technology but with the people.
+        - The issue is not with technology but with the people.
+        - The issue is not technology, it is the people.
+        - The issue is not technology, it's the people.
+        - The issue is not technology but rather the people.
+        - The issue is not technology so much as the people.
+        - The issue is not technology but people.
+        - The issue lies not in technology but in people.
+        - The issue lies not with technology but with people.
+        - The issue is not with technology but with people.
+        - The issue is not technology, it is people.
+        - The issue is not technology, it's people.
+        - The issue is not technology but rather people.
+        - The issue is not technology so much as people.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -287,12 +341,64 @@ exercises:
         - Chính sự thiếu lòng tin này làm nhà đầu tư lo lắng.
         - Điều khiến các nhà đầu tư lo ngại chính là sự thiếu niềm tin này.
         - Điều làm các nhà đầu tư lo lắng chính là sự thiếu tin tưởng này.
+        - Chính sự thiếu niềm tin này khiến nhà đầu tư lo lắng.
+        - Chính sự thiếu niềm tin này khiến những nhà đầu tư lo ngại.
+        - Chính sự thiếu niềm tin này khiến những nhà đầu tư lo lắng.
+        - Chính sự thiếu niềm tin này làm các nhà đầu tư lo lắng.
+        - Chính sự thiếu niềm tin này làm nhà đầu tư lo ngại.
+        - Chính sự thiếu niềm tin này làm nhà đầu tư lo lắng.
+        - Chính sự thiếu niềm tin này làm những nhà đầu tư lo ngại.
+        - Chính sự thiếu niềm tin này làm những nhà đầu tư lo lắng.
+        - Chính sự thiếu tin tưởng này khiến các nhà đầu tư lo lắng.
+        - Chính sự thiếu tin tưởng này khiến nhà đầu tư lo ngại.
+        - Chính sự thiếu tin tưởng này khiến nhà đầu tư lo lắng.
+        - Chính sự thiếu tin tưởng này khiến những nhà đầu tư lo ngại.
+        - Chính sự thiếu tin tưởng này khiến những nhà đầu tư lo lắng.
+        - Chính sự thiếu tin tưởng này làm các nhà đầu tư lo ngại.
+        - Chính sự thiếu tin tưởng này làm nhà đầu tư lo ngại.
+        - Chính sự thiếu tin tưởng này làm nhà đầu tư lo lắng.
+        - Chính sự thiếu tin tưởng này làm những nhà đầu tư lo ngại.
+        - Chính sự thiếu tin tưởng này làm những nhà đầu tư lo lắng.
+        - Chính sự thiếu lòng tin này khiến các nhà đầu tư lo lắng.
+        - Chính sự thiếu lòng tin này khiến nhà đầu tư lo ngại.
+        - Chính sự thiếu lòng tin này khiến nhà đầu tư lo lắng.
+        - Chính sự thiếu lòng tin này khiến những nhà đầu tư lo ngại.
+        - Chính sự thiếu lòng tin này khiến những nhà đầu tư lo lắng.
+        - Chính sự thiếu lòng tin này làm các nhà đầu tư lo ngại.
+        - Chính sự thiếu lòng tin này làm các nhà đầu tư lo lắng.
+        - Chính sự thiếu lòng tin này làm nhà đầu tư lo ngại.
+        - Chính sự thiếu lòng tin này làm những nhà đầu tư lo ngại.
+        - Chính sự thiếu lòng tin này làm những nhà đầu tư lo lắng.
+        - Chính việc thiếu niềm tin này khiến các nhà đầu tư lo ngại.
+        - Chính việc thiếu niềm tin này khiến các nhà đầu tư lo lắng.
+        - Chính việc thiếu niềm tin này khiến nhà đầu tư lo ngại.
+        - Chính việc thiếu niềm tin này khiến nhà đầu tư lo lắng.
+        - Chính việc thiếu niềm tin này khiến những nhà đầu tư lo ngại.
+        - Chính việc thiếu niềm tin này khiến những nhà đầu tư lo lắng.
+        - Chính việc thiếu niềm tin này làm các nhà đầu tư lo ngại.
+        - Chính việc thiếu niềm tin này làm các nhà đầu tư lo lắng.
+        - Chính việc thiếu niềm tin này làm nhà đầu tư lo ngại.
+        - Chính việc thiếu niềm tin này làm nhà đầu tư lo lắng.
+        - Chính việc thiếu niềm tin này làm những nhà đầu tư lo ngại.
+        - Chính việc thiếu niềm tin này làm những nhà đầu tư lo lắng.
+        - Chính việc thiếu lòng tin này khiến các nhà đầu tư lo ngại.
+        - Chính việc thiếu lòng tin này khiến các nhà đầu tư lo lắng.
+        - Chính việc thiếu lòng tin này khiến nhà đầu tư lo ngại.
+        - Chính việc thiếu lòng tin này khiến nhà đầu tư lo lắng.
+        - Chính việc thiếu lòng tin này khiến những nhà đầu tư lo ngại.
+        - Chính việc thiếu lòng tin này khiến những nhà đầu tư lo lắng.
+        - Chính việc thiếu lòng tin này làm các nhà đầu tư lo ngại.
+        - Chính việc thiếu lòng tin này làm các nhà đầu tư lo lắng.
+        - Chính việc thiếu lòng tin này làm nhà đầu tư lo ngại.
+        - Chính việc thiếu lòng tin này làm nhà đầu tư lo lắng.
+        - Chính việc thiếu lòng tin này làm những nhà đầu tư lo ngại.
+        - Chính việc thiếu lòng tin này làm những nhà đầu tư lo lắng.
+        - Chính xác là sự thiếu niềm tin này khiến các nhà đầu tư lo ngại.
+        - Chính xác là sự thiếu tin tưởng này khiến các nhà đầu tư lo ngại.
+        - Chính xác là sự thiếu niềm tin này làm các nhà đầu tư lo lắng.
     rubric:
       diacritics: lenient
     known_wrong:
-      - answer: Chính xác là sự thiếu niềm tin này khiến các nhà đầu tư lo ngại.
-        feedback_vi: Precisely trong câu chẻ nghĩa là "chính", không cần dịch sát "chính xác là".
-        error_tag: literal_translation
       - answer: Sự thiếu niềm tin này có thể khiến các nhà đầu tư lo ngại.
         feedback_vi: Câu gốc khẳng định chắc chắn và nhấn mạnh (chính…), không có ý "có thể".
         error_tag: meaning
@@ -339,7 +445,7 @@ exercises:
     answer:
       correct_option_id: k2p
     explanation:
-      vi: Let us not forget + phép đối not X but Y tạo câu kết đáng nhớ. Let's don't sai ngữ pháp; very, very important yếu và thiếu tu từ; sau Let us not cần động từ nguyên mẫu, không phải V-ing.
+      vi: Let us not forget + phép đối not X but Y tạo câu kết đáng nhớ. Let's don't là dạng không chuẩn (chỉ gặp trong khẩu ngữ); very, very important yếu và thiếu tu từ; sau Let us not cần động từ nguyên mẫu, không phải V-ing.
     display_answer: "Let us not forget that our people are not our biggest cost but our greatest asset."
 
   - key: en:exercise:rhetoric-translate-all-we-need
@@ -361,6 +467,15 @@ exercises:
         - All we need now is your support.
         - The only thing we need is your support.
         - All we need from you is your support.
+        - All that we need now is your support.
+        - All we need now is your backing.
+        - The one thing we need is your support.
+        - The one thing we need is your backing.
+        - The only thing we need is your backing.
+        - All we need is for you to support us.
+        - All we need is for you to back us.
+        - All that we need is for you to support us.
+        - Everything we need is your support.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -369,9 +484,6 @@ exercises:
         error_tag: subject_verb_agreement
       - answer: All of us need your support.
         feedback_vi: All of us need nghĩa là "tất cả chúng ta đều cần", không nhấn mạnh "chỉ cần một điều".
-        error_tag: all_cleft
-      - answer: Everything we need is your support.
-        feedback_vi: Cấu trúc nhấn mạnh tự nhiên là All we need is…, không dùng everything.
         error_tag: all_cleft
     explanation:
       vi: All (that) we need is + danh từ nhấn mạnh rằng chỉ cần một điều. Đây là câu chẻ với All, tương tự What we need is….

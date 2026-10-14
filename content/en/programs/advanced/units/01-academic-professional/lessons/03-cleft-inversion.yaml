@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:cleft-inversion
 order_index: 3
 level: c1
@@ -215,6 +214,7 @@ exercises:
     answer:
       orders:
         - [r-rarely, r-have, r-i, r-seen, r-such, r-a, r-organised, r-event]
+        - [r-i, r-have, r-rarely, r-seen, r-such, r-a, r-organised, r-event]
     explanation:
       vi: Rarely đứng đầu câu nên đảo have lên trước I. Trật tự cụm danh từ là such a + tính từ + danh từ. Did không hợp vì seen là quá khứ phân từ, cần have.
     display_answer: Rarely have I seen such a well-organised event.
@@ -240,7 +240,7 @@ exercises:
         feedback_vi: Câu kể chuyện ở quá khứ nên mượn did - Little did we realise.
         error_tag: inversion
       - answer: when
-        feedback_vi: No sooner đi với than; when chỉ đi với Hardly/Scarcely.
+        feedback_vi: Chuẩn là No sooner… than; when thường gặp trong văn nói nhưng bị coi là không chuẩn (when đi với Hardly/Scarcely).
         error_tag: no_sooner_than
       - answer: then
         feedback_vi: Cấu trúc là No sooner… than (so sánh), không phải then.
@@ -273,6 +273,16 @@ exercises:
         - Had I known about the delay, I would have changed the time of the meeting.
         - Had I known about the delay, I would have put off the meeting.
         - Had I known about the delay, I would have put the meeting off.
+        - Had I known about the delay, I would have rearranged the meeting.
+        - Had I known about the delay, I would have changed the date of the meeting.
+        - Had I known about the delay, I'd have postponed the meeting.
+        - Had I known about the delay, I'd have moved the meeting.
+        - Had I known of the delay, I'd have rescheduled the meeting.
+        - Had I known about the delay in advance, I'd have rescheduled the meeting.
+        - Had I known about the delay beforehand, I'd have rescheduled the meeting.
+        - Had I been aware of the delay, I'd have rescheduled the meeting.
+        - Had I known about the delay, I'd have put off the meeting.
+        - Had I known about the delay, I'd have put the meeting off.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -317,6 +327,13 @@ exercises:
         - It was the finance department that found the error.
         - It was the finance team that detected the error.
         - It was the finance team that found the mistake.
+        - It was the finance team that discovered the mistake.
+        - It was the finance department that identified the mistake.
+        - It was the finance team that spotted the mistake.
+        - It was the finance team that noticed the error.
+        - It was the finance team who spotted the error.
+        - It was the finance team who detected the error.
+        - It was the finance team that identified the mistake.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -375,13 +392,15 @@ exercises:
         - Not only did the campaign increase sales, but it also improved brand image.
         - Not only did the campaign increase sales, it also improved the brand image.
         - Not only did the campaign increase sales, it also improved our brand image.
-        - Not only did the campaign increase sales, but also improved the brand image.
         - Not only did the campaign boost sales, but it also improved the brand image.
         - Not only did the campaign raise sales, but it also improved the brand image.
         - Not only did the campaign increase sales, but it also enhanced the brand image.
         - Not only did the campaign increase sales, but it improved the brand image as well.
         - Not only did the campaign increase sales, but it also improved the image of the brand.
         - Not only did the campaign increase sales, but it also improved its brand image.
+        - Not only did the campaign increase sales, but it also improved the brand's image.
+        - Not only did the campaign boost sales, but it also improved our brand image.
+        - Not only did the campaign increase sales, but it also improved our brand's image.
     rubric:
       typo_tolerance: 1
     known_wrong:
