@@ -17,10 +17,15 @@ insert into export_fixed values
 create temporary table export_excluded (name text primary key, reason text not null) on commit drop;
 insert into export_excluded values
   -- Bookkeeping for export_my_data's own 5/hour rate limit, purged after a day: no learner content.
-  ('account_export_requests', 'export rate-limit bookkeeping, kept 1 day');
+  ('account_export_requests', 'export rate-limit bookkeeping, kept 1 day'),
+  -- Web Push endpoint and keys of a device: credentials with no learner value, deleted with the account.
+  ('push_subscriptions', 'device push credentials'),
+  -- Access-control row the user already reads through staff_role(): not learning data.
+  ('staff_roles', 'staff access control');
 
-select ok(public.account_optional_tables() @> array['exam_attempts', 'exam_answers'],
-  'exam attempts and answers are exported');
+select ok(public.account_optional_tables() @> array['exam_attempts', 'exam_answers', 'content_reports',
+    'notification_prefs', 'notifications'],
+  'exam attempts, content reports and reminders are exported');
 select ok(public.account_optional_tables() @> array['study_sessions', 'activity_days', 'user_badges', 'analytics_events'],
   'earlier optional tables are still exported');
 
