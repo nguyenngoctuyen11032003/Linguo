@@ -1,24 +1,9 @@
+import type { ComponentType } from 'react';
 import { createBrowserRouter, type RouteObject } from 'react-router';
-import { AppLayout } from '@/components/layout/AppLayout';
 import { AuthLayout } from '@/components/layout/AuthLayout';
+import { FullScreenLoader } from '@/components/layout/FullScreenLoader';
 import { RootLayout } from '@/components/layout/RootLayout';
 import { RedirectIfAuthed, RequireAuth } from '@/features/auth/guards';
-import { AppRoute } from '@/routes/app/AppRoute';
-import { DiagnosticPage } from '@/routes/app/diagnostic/DiagnosticPage';
-import { DiagnosticReportPage } from '@/routes/app/diagnostic/DiagnosticReportPage';
-import { ExamHubPage } from '@/routes/app/exam/ExamHubPage';
-import { ExamResultPage } from '@/routes/app/exam/ExamResultPage';
-import { ExamRunnerPage } from '@/routes/app/exam/ExamRunnerPage';
-import { HomePage } from '@/routes/app/HomePage';
-import { LearnPage } from '@/routes/app/learn/LearnPage';
-import { LessonPage } from '@/routes/app/lesson/LessonPage';
-import { NotificationsPage } from '@/routes/app/notifications/NotificationsPage';
-import { OnboardingPage } from '@/routes/app/onboarding/OnboardingPage';
-import { ProgressPage } from '@/routes/app/progress/ProgressPage';
-import { ReviewPage } from '@/routes/app/review/ReviewPage';
-import { SessionPage } from '@/routes/app/session/SessionPage';
-import { SettingsPage } from '@/routes/app/SettingsPage';
-import { TutorPage } from '@/routes/app/tutor/TutorPage';
 import { AuthCallbackPage } from '@/routes/auth/AuthCallbackPage';
 import { CheckEmailPage } from '@/routes/auth/CheckEmailPage';
 import { ForgotPasswordPage } from '@/routes/auth/ForgotPasswordPage';
@@ -32,6 +17,17 @@ import { RouteError } from '@/routes/RouteError';
 
 /** Layout routes whose element renders `<main>`: error elements below them must not add a second one. */
 const MAIN_LAYOUT = { providesMain: true } as const;
+
+/**
+ * Route-level code splitting: the landing, legal and auth screens stay in the entry chunk; everything a signed-in
+ * learner uses loads on demand (`/app` shell, lesson player, review, exams, ...). React Router holds a navigation
+ * until the chunk arrives (the previous screen stays up, so nothing shifts) and shows `hydrateFallbackElement` on a
+ * deep link. Every chunk is still in the service worker's precache (vite.config.ts globs all JS), so the app
+ * keeps working offline. A failed chunk load reaches the route's errorElement ("Thử lại" reloads the page).
+ */
+function lazyPage<K extends string>(load: () => Promise<Record<K, ComponentType>>, name: K): Pick<RouteObject, 'lazy'> {
+  return { lazy: async () => ({ Component: (await load())[name] }) };
+}
 
 /**
  * Spec 11 §4: `/quan-tri` ships as its own chunk, so learners never download admin code. React Router's `lazy` loads
@@ -58,6 +54,7 @@ const routeTree: RouteObject[] = [
   {
     path: '/',
     element: <RootLayout />,
+    hydrateFallbackElement: <FullScreenLoader />,
     children: [
       { index: true, element: <LandingPage /> },
       { path: 'quyen-rieng-tu', element: <LegalPage kind="privacy" /> },
@@ -93,27 +90,27 @@ const routeTree: RouteObject[] = [
       },
       {
         path: 'app',
-        element: <AppRoute />,
+        ...lazyPage(() => import('@/routes/app/AppRoute'), 'AppRoute'),
         children: [
-          { path: 'bat-dau', element: <OnboardingPage /> },
-          { path: 'kiem-tra/:pathId', element: <DiagnosticPage /> },
-          { path: 'kiem-tra/:pathId/ket-qua', element: <DiagnosticReportPage /> },
-          { path: 'hoc-tap/bai/:lessonId', element: <LessonPage /> },
-          { path: 'luyen-thi/lam-bai/:attemptId', element: <ExamRunnerPage /> },
-          { path: 'luyen-thi/ket-qua/:attemptId', element: <ExamResultPage /> },
+          { path: 'bat-dau', ...lazyPage(() => import('@/routes/app/onboarding/OnboardingPage'), 'OnboardingPage') },
+          { path: 'kiem-tra/:pathId', ...lazyPage(() => import('@/routes/app/diagnostic/DiagnosticPage'), 'DiagnosticPage') },
+          { path: 'kiem-tra/:pathId/ket-qua', ...lazyPage(() => import('@/routes/app/diagnostic/DiagnosticReportPage'), 'DiagnosticReportPage') },
+          { path: 'hoc-tap/bai/:lessonId', ...lazyPage(() => import('@/routes/app/lesson/LessonPage'), 'LessonPage') },
+          { path: 'luyen-thi/lam-bai/:attemptId', ...lazyPage(() => import('@/routes/app/exam/ExamRunnerPage'), 'ExamRunnerPage') },
+          { path: 'luyen-thi/ket-qua/:attemptId', ...lazyPage(() => import('@/routes/app/exam/ExamResultPage'), 'ExamResultPage') },
           {
-            element: <AppLayout />,
+            ...lazyPage(() => import('@/components/layout/AppLayout'), 'AppLayout'),
             handle: MAIN_LAYOUT,
             children: [
-              { index: true, element: <HomePage /> },
-              { path: 'hoc-tap', element: <LearnPage /> },
-              { path: 'on-tap', element: <ReviewPage /> },
-              { path: 'phien-hoc', element: <SessionPage /> },
-              { path: 'gia-su', element: <TutorPage /> },
-              { path: 'luyen-thi', element: <ExamHubPage /> },
-              { path: 'tien-do', element: <ProgressPage /> },
-              { path: 'cai-dat', element: <SettingsPage /> },
-              { path: 'thong-bao', element: <NotificationsPage /> },
+              { index: true, ...lazyPage(() => import('@/routes/app/HomePage'), 'HomePage') },
+              { path: 'hoc-tap', ...lazyPage(() => import('@/routes/app/learn/LearnPage'), 'LearnPage') },
+              { path: 'on-tap', ...lazyPage(() => import('@/routes/app/review/ReviewPage'), 'ReviewPage') },
+              { path: 'phien-hoc', ...lazyPage(() => import('@/routes/app/session/SessionPage'), 'SessionPage') },
+              { path: 'gia-su', ...lazyPage(() => import('@/routes/app/tutor/TutorPage'), 'TutorPage') },
+              { path: 'luyen-thi', ...lazyPage(() => import('@/routes/app/exam/ExamHubPage'), 'ExamHubPage') },
+              { path: 'tien-do', ...lazyPage(() => import('@/routes/app/progress/ProgressPage'), 'ProgressPage') },
+              { path: 'cai-dat', ...lazyPage(() => import('@/routes/app/SettingsPage'), 'SettingsPage') },
+              { path: 'thong-bao', ...lazyPage(() => import('@/routes/app/notifications/NotificationsPage'), 'NotificationsPage') },
             ],
           },
         ],

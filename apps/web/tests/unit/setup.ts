@@ -1,7 +1,10 @@
 import '@testing-library/jest-dom/vitest';
-import { cleanup } from '@testing-library/react';
+import { cleanup, configure } from '@testing-library/react';
 import { afterEach, beforeEach } from 'vitest';
 import { stubMatchMedia } from './match-media';
+
+// Routes are code-split: the first findBy* after navigation also waits for a dynamic import to be transformed.
+configure({ asyncUtilTimeout: 5000 });
 
 beforeEach(() => stubMatchMedia(() => false));
 
