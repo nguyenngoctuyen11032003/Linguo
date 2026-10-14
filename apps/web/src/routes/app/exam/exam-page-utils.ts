@@ -1,4 +1,4 @@
-import type { ExamFamily, ExamMode, ExamSection, GoalType } from '@linguo/shared';
+import type { ExamFamily, ExamFormSummary, ExamMode, ExamSection, GoalType } from '@linguo/shared';
 
 /** The exam family a path goal prepares for, if any: the hub filter starts there. */
 export function goalFamily(goal: GoalType | null | undefined): ExamFamily | null {
@@ -32,6 +32,11 @@ export function examEventProps(a: { family: ExamFamily; mode: ExamMode; section?
 /** Plays allowed per listening question: twice in a timed full mock, unlimited in practice (spec 9 §4). */
 export function listenLimitFor(mode: ExamMode): number | null {
   return mode === 'full' ? 2 : null;
+}
+
+/** Total minutes of the form's timed full mock; 0 when no section is timed (then no confirmation is needed). */
+export function fullMockMinutes(form: Pick<ExamFormSummary, 'sections'>): number {
+  return form.sections.reduce((sum, s) => sum + (s.minutes ?? 0), 0);
 }
 
 export const EXAM_HUB_PATH = '/app/luyen-thi';

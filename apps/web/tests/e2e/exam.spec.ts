@@ -41,6 +41,7 @@ async function openHub(page: Page) {
 async function startFullMock(page: Page) {
   await openHub(page);
   await page.getByRole('button', { name: /^Thi thử toàn bài/ }).click();
+  await page.getByRole('dialog', { name: 'Bắt đầu thi thử?' }).getByRole('button', { name: 'Bắt đầu' }).click();
   await expect(page).toHaveURL(/\/app\/luyen-thi\/lam-bai\/[0-9a-f-]{36}$/);
   await expect(page.getByRole('heading', { level: 1, name: TOPIK_I.title_vi })).toBeVisible();
 }
@@ -61,6 +62,7 @@ test('takes a TOPIK I mock from the hub to the result', async ({ page }) => {
   await expectNoHorizontalScroll(page);
 
   await page.getByRole('button', { name: /^Thi thử toàn bài/ }).click();
+  await page.getByRole('dialog', { name: 'Bắt đầu thi thử?' }).getByRole('button', { name: 'Bắt đầu' }).click();
   await expect(page.getByRole('heading', { level: 1, name: TOPIK_I.title_vi })).toBeVisible();
   await expect(page.getByRole('timer')).toHaveAccessibleName(/^Thời gian còn lại (40|39):\d\d$/);
   await expect(page.getByText(`Phần Nghe · Câu 1/${TOPIK_I.questions.length}`)).toBeVisible();
@@ -187,6 +189,7 @@ for (const colorScheme of ['light', 'dark'] as const) {
     await axe(page);
 
     await page.getByRole('button', { name: /^Thi thử toàn bài/ }).click();
+    await page.getByRole('dialog', { name: 'Bắt đầu thi thử?' }).getByRole('button', { name: 'Bắt đầu' }).click();
     await expect(page.getByRole('heading', { level: 1, name: TOPIK_I.title_vi })).toBeVisible();
     await axe(page);
 

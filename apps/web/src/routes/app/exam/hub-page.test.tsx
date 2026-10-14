@@ -66,7 +66,7 @@ describe('ExamHubPage', () => {
     renderHub();
     const filter = screen.getByRole('radiogroup', { name: 'Lọc theo loại đề' });
     expect(within(filter).getByRole('radio', { name: 'TOPIK II' })).toBeChecked();
-    expect(screen.getAllByRole('article').map((a) => within(a).getByRole('heading').textContent)).toEqual([topikIIForm().title_vi]);
+    expect(screen.getAllByRole('article').map((a) => within(a).getByRole('heading', { level: 2 }).textContent)).toEqual([topikIIForm().title_vi]);
 
     await user.click(within(filter).getByRole('radio', { name: 'Tất cả' }));
     expect(screen.getAllByRole('article')).toHaveLength(2);
@@ -81,11 +81,15 @@ describe('ExamHubPage', () => {
     expect(within(topikII!).queryByRole('note')).not.toBeInTheDocument();
   });
 
-  it('starts a full mock, tracks exam_started and opens the runner', async () => {
+  it('asks before starting a timed full mock, then tracks exam_started and opens the runner', async () => {
     const user = userEvent.setup();
     mocks.startExam.mockResolvedValue(examAttempt());
     renderHub();
     await user.click(screen.getByRole('button', { name: /Thi thử toàn bài/ }));
+    const dialog = screen.getByRole('dialog', { name: 'Bắt đầu thi thử?' });
+    expect(dialog).toHaveTextContent('Đồng hồ 70 phút chạy ngay và vẫn chạy nếu bạn thoát.');
+    expect(mocks.startExam).not.toHaveBeenCalled();
+    await user.click(within(dialog).getByRole('button', { name: 'Bắt đầu' }));
     expect(mocks.startExam).toHaveBeenCalledWith(expect.anything(), {
       pathId: 'path-ko-2',
       formId: topikIIForm().form_id,
@@ -117,6 +121,29 @@ describe('ExamHubPage', () => {
     expect(mocks.track).toHaveBeenCalledWith('exam_started', { family: 'topik_ii', mode: 'question_type' });
   });
 
+  it('does not start a timed full mock when the confirmation is dismissed', async () => {
+    const user = userEvent.setup();
+    renderHub();
+    await user.click(screen.getByRole('button', { name: /Thi thử toàn bài/ }));
+    await user.click(within(screen.getByRole('dialog', { name: 'Bắt đầu thi thử?' })).getByRole('button', { name: 'Để sau' }));
+    await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument());
+    expect(mocks.startExam).not.toHaveBeenCalled();
+  });
+
+  it('starts an untimed full form directly, without a confirmation', async () => {
+    const user = userEvent.setup();
+    const form = topikIIForm();
+    mocks.forms = {
+      ...mocks.forms,
+      forms: [{ ...form, sections: form.sections.map((s) => ({ ...s, minutes: null })) }],
+    };
+    mocks.startExam.mockResolvedValue(examAttempt({ deadline_at: null }));
+    renderHub();
+    await user.click(screen.getByRole('button', { name: /Thi thử toàn bài/ }));
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+    expect(mocks.startExam).toHaveBeenCalled();
+  });
+
   it('starts section practice with its section', async () => {
     const user = userEvent.setup();
     mocks.startExam.mockResolvedValue(examAttempt({ mode: 'section', section: 'reading', deadline_at: null }));
@@ -133,6 +160,7 @@ describe('ExamHubPage', () => {
     mocks.startExam.mockRejectedValue({ code: 'P0001', message: 'rate_limited' });
     renderHub();
     await user.click(screen.getByRole('button', { name: /Thi thử toàn bài/ }));
+    await user.click(within(screen.getByRole('dialog', { name: 'Bắt đầu thi thử?' })).getByRole('button', { name: 'Bắt đầu' }));
     expect(await screen.findByRole('alert')).toHaveTextContent('Bạn đã bắt đầu quá nhiều lượt thi trong một giờ');
     expect(mocks.track).not.toHaveBeenCalled();
     expect(screen.getByTestId('location')).toHaveTextContent('/app/luyen-thi');

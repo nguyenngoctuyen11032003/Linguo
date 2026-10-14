@@ -12,7 +12,8 @@ import { useExamHistory } from '@/features/exam/useExamHistory';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { cn } from '@/lib/cn';
 import { ExamFormCard, ExamHistoryList, FAMILY_LABELS, QuestionTypePicker } from './components';
-import { goalFamily, structureWarning } from './exam-page-utils';
+import { fullMockMinutes, goalFamily, structureWarning } from './exam-page-utils';
+import { StartExamDialog } from './StartExamDialog';
 import { useStartExam } from './useStartExam';
 
 type Filter = ExamFamily | 'all';
@@ -39,6 +40,8 @@ export function ExamHubPage() {
   const starter = useStartExam();
   const [chosen, setChosen] = useState<Filter | null>(null);
   const [pickerFormId, setPickerFormId] = useState<string | null>(null);
+  /** A timed full mock waiting for the learner's confirmation: its clock starts the moment the attempt exists. */
+  const [confirmFormId, setConfirmFormId] = useState<string | null>(null);
 
   let content;
   if (!path) {
@@ -77,6 +80,7 @@ export function ExamHubPage() {
     const filter: Filter = chosen !== null && (chosen === 'all' || families.includes(chosen)) ? chosen : fallback;
     const visible = forms.forms.filter((f) => filter === 'all' || f.family === filter);
 
+    const confirmForm = forms.forms.find((f) => f.form_id === confirmFormId) ?? null;
     const start = (form: ExamFormSummary, mode: ExamMode, section?: ExamSection, questionType?: string) => {
       void starter.start({
         pathId: path.id,
@@ -109,6 +113,11 @@ export function ExamHubPage() {
                     setPickerFormId(form.form_id);
                     return;
                   }
+                  if (mode === 'full' && fullMockMinutes(form) > 0) {
+                    starter.clearError();
+                    setConfirmFormId(form.form_id);
+                    return;
+                  }
                   start(form, mode, section);
                 }}
               />
@@ -118,6 +127,18 @@ export function ExamHubPage() {
             </li>
           ))}
         </ul>
+        <StartExamDialog
+          open={confirmForm !== null}
+          minutes={confirmForm ? fullMockMinutes(confirmForm) : 0}
+          title={confirmForm?.title_vi}
+          busy={starter.busy}
+          onCancel={() => setConfirmFormId(null)}
+          onConfirm={() => {
+            if (!confirmForm) return;
+            setConfirmFormId(null);
+            start(confirmForm, 'full');
+          }}
+        />
       </div>
     );
   }

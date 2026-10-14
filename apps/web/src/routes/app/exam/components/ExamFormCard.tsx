@@ -37,9 +37,9 @@ export function ExamFormCard({ form, warningVi, onStart, busy }: ExamFormCardPro
       </div>
 
       <div className="min-w-0">
-        <h3 id={titleId} className="text-lg font-bold leading-snug break-words">
+        <h2 id={titleId} className="text-lg font-bold leading-snug break-words">
           {form.title_vi}
-        </h3>
+        </h2>
         <p className="mt-1 text-[15px] text-muted break-words">{form.description_vi}</p>
       </div>
 
