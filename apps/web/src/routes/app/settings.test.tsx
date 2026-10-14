@@ -380,7 +380,7 @@ describe('SettingsPage', () => {
   it('shows a Vietnamese time zone label', () => {
     renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
     const select = screen.getByLabelText('Múi giờ');
-    expect(within(select).getByRole('option', { name: 'Việt Nam (Hà Nội, TP. Hồ Chí Minh)' })).toBeInTheDocument();
+    expect(within(select).getByRole('option', { name: 'Việt Nam (Hà Nội, TP.HCM)' })).toBeInTheDocument();
     expect(within(select).queryByRole('option', { name: /Saigon/ })).not.toBeInTheDocument();
   });
 });

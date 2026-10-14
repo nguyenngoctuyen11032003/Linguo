@@ -17,7 +17,7 @@ const ALIASES: Record<string, string> = {
 };
 
 const VIETNAMESE_LABELS: Record<string, string> = {
-  'Asia/Ho_Chi_Minh': 'Việt Nam (Hà Nội, TP. Hồ Chí Minh)',
+  'Asia/Ho_Chi_Minh': 'Việt Nam (Hà Nội, TP.HCM)',
   UTC: 'UTC (giờ phối hợp quốc tế)',
 };
 

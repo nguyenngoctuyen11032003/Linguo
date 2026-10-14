@@ -23,8 +23,8 @@ describe('timeZoneOptions', () => {
 
 describe('timeZoneLabel', () => {
   it('names Vietnam in Vietnamese, also for the Saigon alias', () => {
-    expect(timeZoneLabel('Asia/Ho_Chi_Minh')).toBe('Việt Nam (Hà Nội, TP. Hồ Chí Minh)');
-    expect(timeZoneLabel('Asia/Saigon')).toBe('Việt Nam (Hà Nội, TP. Hồ Chí Minh)');
+    expect(timeZoneLabel('Asia/Ho_Chi_Minh')).toBe('Việt Nam (Hà Nội, TP.HCM)');
+    expect(timeZoneLabel('Asia/Saigon')).toBe('Việt Nam (Hà Nội, TP.HCM)');
   });
 
   it('falls back to the readable IANA name', () => {

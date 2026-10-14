@@ -89,7 +89,7 @@ test.describe('account data', () => {
     await signIn(page);
     await page.goto('/app/cai-dat#tai-khoan-du-lieu');
     const section = page.getByRole('region', { name: 'Tài khoản và dữ liệu' });
-    await expect(section.getByText(/tự xoá sau 90 ngày/)).toBeVisible();
+    await expect(section.getByText(/tự xoá sau 90 ngày/).first()).toBeVisible();
     await expect(section.getByRole('link', { name: 'Quyền riêng tư' })).toHaveAttribute('href', /\/quyen-rieng-tu$/);
     const downloadPromise = page.waitForEvent('download');
     await section.getByRole('button', { name: 'Tải dữ liệu của tôi' }).click();
