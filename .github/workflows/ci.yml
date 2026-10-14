@@ -44,6 +44,8 @@ jobs:
       - run: pnpm build
       - name: Bundle không chứa secret hay source map
         run: pnpm check:bundle
+      - name: Ngân sách kích thước bundle
+        run: pnpm check:bundle-size
 
   secrets:
     name: Secret scan (gitleaks, full history)
