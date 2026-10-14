@@ -5,6 +5,8 @@ export { AiNoticeDialog, type AiNoticeDialogProps } from './AiNoticeDialog';
 export { AiQuotaChip, type AiQuotaChipProps } from './AiQuotaChip';
 export { AiReportDialog, type AiReportDialogProps } from './AiReportDialog';
 export { AI_REPORT_REASON_LABELS, type AiReportReasonId } from './labels';
+export { AiTextarea, type AiTextareaProps } from './AiTextarea';
+export { useQuotaGate, type QuotaGate } from './useQuotaGate';
 export { AiResultView, AnalyzeView, ExplainView, PracticeView, ReviewWritingView, WRITING_FEEDBACK_LABEL } from './AiResultView';
 export { AnalyzeSentenceView, PlanReviewView, SessionSummaryView } from './AiMoreViews';
 export { tagLabel } from './tag-labels';

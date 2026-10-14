@@ -1,8 +1,19 @@
-import { useEffect, useId, useRef, useState, type FormEvent, type KeyboardEvent, type ReactNode } from 'react';
+import { useEffect, useId, useRef, useState, type FormEvent, type KeyboardEvent, type ReactNode, type Ref } from 'react';
 import { Compass, Flag, RefreshCw } from 'lucide-react';
 import { Link } from 'react-router';
 import { ANALYZE_SENTENCE_MAX_CHARS, LANGUAGES, LEVEL_INFO, type AiRequestInput, type AiSuccess, type LevelCode } from '@linguo/shared';
-import { AI_LABEL, AiFallback, AiLoading, AiNoticeDialog, AiQuotaChip, AiReportDialog, AiResultView } from '@/components/ai';
+import {
+  AI_LABEL,
+  AiFallback,
+  AiLoading,
+  AiNoticeDialog,
+  AiQuotaChip,
+  AiReportDialog,
+  AiResultView,
+  AiTextarea,
+  useQuotaGate,
+  type QuotaGate,
+} from '@/components/ai';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
@@ -14,6 +25,7 @@ import { useAiQuota } from '@/features/ai-tutor/useAiQuota';
 import { useAiTutor, type AiTutorState as UseAiTutor } from '@/features/ai-tutor/useAiTutor';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { cn } from '@/lib/cn';
+import { useMotionPrefs } from '@/providers/MotionProvider';
 
 type Tab = 'explain' | 'practice' | 'sentence';
 type PracticeSkill = 'vocabulary' | 'grammar' | 'reading';
@@ -157,11 +169,17 @@ function ResultCard({
   language,
   latest,
   actions,
+  headingRef,
+  titleLang,
 }: {
   entry: HistoryEntry;
   language: 'en' | 'ko';
   latest: boolean;
   actions: ReactNode;
+  /** Receives focus when this answer arrives (latest card only). */
+  headingRef?: Ref<HTMLHeadingElement>;
+  /** Language of the title when it is the learner's own target-language text. */
+  titleLang?: 'en' | 'ko';
 }) {
   const content = (
     <div className="space-y-4">
@@ -171,9 +189,11 @@ function ResultCard({
   );
   if (latest) {
     return (
-      <article className="space-y-3 rounded-3xl border border-border bg-surface-solid p-4 shadow-[var(--shadow-card)]">
+      <article className="scroll-mt-20 space-y-3 rounded-3xl border border-border bg-surface-solid p-4 shadow-[var(--shadow-card)]">
         <header className="space-y-1">
-          <h3 className="font-semibold">{entry.title}</h3>
+          <h3 ref={headingRef} tabIndex={-1} lang={titleLang} className="break-words font-semibold focus:outline-none">
+            {entry.title}
+          </h3>
           <p className="text-sm text-muted">{AI_LABEL}</p>
         </header>
         {content}
@@ -182,7 +202,9 @@ function ResultCard({
   }
   return (
     <details className="group rounded-3xl border border-border bg-surface-solid px-4 py-3">
-      <summary className="flex min-h-11 cursor-pointer items-center font-semibold">{entry.title}</summary>
+      <summary lang={titleLang} className="flex min-h-11 cursor-pointer items-center break-words font-semibold">
+        {entry.title}
+      </summary>
       <div className="pt-2">
         <p className="mb-3 text-sm text-muted">{AI_LABEL}</p>
         {content}
@@ -209,6 +231,7 @@ function TutorPanel({
   loadingLabel,
   form,
   extraActions,
+  titleLang,
 }: Omit<PanelProps, 'notice' | 'level'> & {
   ai: UseAiTutor;
   gate: ReturnType<typeof useGatedRun>;
@@ -216,9 +239,26 @@ function TutorPanel({
   loadingLabel: string;
   form: ReactNode;
   extraActions?: (entry: HistoryEntry) => ReactNode;
+  titleLang?: 'en' | 'ko';
 }) {
+  const { reduceMotion } = useMotionPrefs();
+  const latestHeading = useRef<HTMLHeadingElement>(null);
+  const latestKey = history[0]?.key;
+  const seenKey = useRef(latestKey);
+
+  // A new answer: move focus to its heading and bring it into view (no smooth scroll with reduced motion).
+  useEffect(() => {
+    if (!latestKey || latestKey === seenKey.current) return;
+    seenKey.current = latestKey;
+    const heading = latestHeading.current;
+    if (!heading) return;
+    heading.focus({ preventScroll: true });
+    heading.scrollIntoView?.({ block: 'start', behavior: reduceMotion ? 'auto' : 'smooth' });
+  }, [latestKey, reduceMotion]);
+
   let status: ReactNode = null;
   if (ai.state === 'loading') status = <AiLoading label={loadingLabel} />;
+  else if (ai.state === 'ok') status = <p className="sr-only">Đã có câu trả lời</p>;
   else if (ai.state === 'quota' || ai.state === 'unavailable' || ai.state === 'error') {
     status = (
       <AiFallback
@@ -243,6 +283,8 @@ function TutorPanel({
               entry={entry}
               language={language}
               latest={i === 0}
+              headingRef={i === 0 ? latestHeading : undefined}
+              titleLang={titleLang}
               actions={
                 <>
                   {i === 0 && extraActions?.(entry)}
@@ -261,9 +303,36 @@ function TutorPanel({
   );
 }
 
+/** Submit button that switches off, with the reason tied to it, once today's AI turns are used up. */
+function SubmitButton({ quotaGate, busy, children }: { quotaGate: QuotaGate; busy: boolean; children: ReactNode }) {
+  const hintId = useId();
+  return (
+    <div className="space-y-2">
+      <Button
+        type="submit"
+        variant="accent"
+        loading={busy}
+        disabled={quotaGate.exhausted}
+        aria-describedby={quotaGate.hint ? hintId : undefined}
+      >
+        {children}
+      </Button>
+      {quotaGate.hint && (
+        <p id={hintId} className="px-1 text-sm text-muted">
+          {quotaGate.hint} Bài học và ôn tập vẫn dùng bình thường.
+        </p>
+      )}
+    </div>
+  );
+}
+
+/** One line of text for the request: line breaks (from pasting) become spaces. */
+const flatten = (text: string) => text.replace(/\s*\n\s*/g, ' ').trim();
+
 function ExplainTab({ language, level, notice, quota, onReport }: PanelProps) {
   const ai = useAiTutor();
   const gate = useGatedRun(ai, notice);
+  const quotaGate = useQuotaGate(quota);
   const history = useHistory(ai, gate.lastRef, (req) => (req.task === 'explain_concept' ? req.concept : ''));
   const [concept, setConcept] = useState('');
   const [error, setError] = useState<string | null>(null);
@@ -271,9 +340,10 @@ function ExplainTab({ language, level, notice, quota, onReport }: PanelProps) {
   const errorId = useId();
   const busy = ai.state === 'loading';
 
-  const submit = (e: FormEvent) => {
-    e.preventDefault();
-    const text = concept.trim();
+  const submit = (e?: FormEvent) => {
+    e?.preventDefault();
+    if (quotaGate.exhausted || busy) return;
+    const text = flatten(concept);
     if (!text) {
       setError('Hãy nhập điều bạn muốn hỏi.');
       return;
@@ -297,23 +367,24 @@ function ExplainTab({ language, level, notice, quota, onReport }: PanelProps) {
             <label htmlFor={inputId} className="block px-1 text-sm font-medium">
               Bạn muốn hiểu điều gì?
             </label>
-            <Input
+            <AiTextarea
               id={inputId}
               value={concept}
               maxLength={CONCEPT_MAX}
               invalid={Boolean(error)}
               aria-describedby={error ? errorId : undefined}
               placeholder={language === 'ko' ? 'Ví dụ: khác nhau giữa 은/는 và 이/가' : 'Ví dụ: khi nào dùng present perfect?'}
-              onChange={(e) => setConcept(e.target.value)}
+              onValueChange={setConcept}
+              onSubmitShortcut={() => submit()}
             />
             {error && (
               <p id={errorId} role="alert" className="px-1 text-sm text-error-text">
                 {error}
               </p>
             )}
-            <Button type="submit" variant="accent" loading={busy}>
+            <SubmitButton quotaGate={quotaGate} busy={busy}>
               Hỏi gia sư
-            </Button>
+            </SubmitButton>
           </form>
         }
         extraActions={(entry) =>
@@ -337,6 +408,7 @@ function ExplainTab({ language, level, notice, quota, onReport }: PanelProps) {
 function PracticeTab({ language, level, notice, quota, onReport }: PanelProps) {
   const ai = useAiTutor();
   const gate = useGatedRun(ai, notice);
+  const quotaGate = useQuotaGate(quota);
   const history = useHistory(ai, gate.lastRef, (req) => {
     if (req.task !== 'generate_practice') return '';
     const skill = SKILLS.find((s) => s.id === req.skill)?.label ?? '';
@@ -350,6 +422,7 @@ function PracticeTab({ language, level, notice, quota, onReport }: PanelProps) {
 
   const submit = (e: FormEvent) => {
     e.preventDefault();
+    if (quotaGate.exhausted || busy) return;
     const text = focus.trim();
     gate.start({ task: 'generate_practice', language, level, skill, count, ...(text ? { focus: text } : {}) });
   };
@@ -381,9 +454,9 @@ function PracticeTab({ language, level, notice, quota, onReport }: PanelProps) {
               />
             </div>
             <p className="px-1 text-sm text-muted">Đáp án được ẩn cho tới khi bạn chọn.</p>
-            <Button type="submit" variant="accent" loading={busy}>
+            <SubmitButton quotaGate={quotaGate} busy={busy}>
               Tạo bài luyện
-            </Button>
+            </SubmitButton>
           </form>
         }
       />
@@ -396,6 +469,7 @@ function PracticeTab({ language, level, notice, quota, onReport }: PanelProps) {
 function SentenceTab({ language, level, notice, quota, onReport }: PanelProps) {
   const ai = useAiTutor();
   const gate = useGatedRun(ai, notice);
+  const quotaGate = useQuotaGate(quota);
   const history = useHistory(ai, gate.lastRef, (req) => (req.task === 'analyze_sentence' ? req.sentence : ''));
   const [sentence, setSentence] = useState('');
   const [error, setError] = useState<string | null>(null);
@@ -403,9 +477,10 @@ function SentenceTab({ language, level, notice, quota, onReport }: PanelProps) {
   const errorId = useId();
   const busy = ai.state === 'loading';
 
-  const submit = (e: FormEvent) => {
-    e.preventDefault();
-    const text = sentence.trim();
+  const submit = (e?: FormEvent) => {
+    e?.preventDefault();
+    if (quotaGate.exhausted || busy) return;
+    const text = flatten(sentence);
     if (!text) {
       setError('Hãy nhập một câu để phân tích.');
       return;
@@ -424,12 +499,13 @@ function SentenceTab({ language, level, notice, quota, onReport }: PanelProps) {
         quota={quota}
         onReport={onReport}
         loadingLabel="Đang phân tích câu…"
+        titleLang={language}
         form={
           <form onSubmit={submit} noValidate className="space-y-3">
             <label htmlFor={inputId} className="block px-1 text-sm font-medium">
               Câu bạn muốn phân tích
             </label>
-            <Input
+            <AiTextarea
               id={inputId}
               lang={language}
               value={sentence}
@@ -437,16 +513,17 @@ function SentenceTab({ language, level, notice, quota, onReport }: PanelProps) {
               invalid={Boolean(error)}
               aria-describedby={error ? errorId : undefined}
               placeholder={language === 'ko' ? 'Ví dụ: 저는 학생이에요.' : 'Ví dụ: I have lived here for two years.'}
-              onChange={(e) => setSentence(e.target.value)}
+              onValueChange={setSentence}
+              onSubmitShortcut={() => submit()}
             />
             {error && (
               <p id={errorId} role="alert" className="px-1 text-sm text-error-text">
                 {error}
               </p>
             )}
-            <Button type="submit" variant="accent" loading={busy}>
+            <SubmitButton quotaGate={quotaGate} busy={busy}>
               Phân tích câu
-            </Button>
+            </SubmitButton>
           </form>
         }
       />

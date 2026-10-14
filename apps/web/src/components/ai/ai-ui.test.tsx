@@ -283,8 +283,10 @@ describe('AiExplainSheet', () => {
     setAi({ state: 'quota', error: aiError('quota_exceeded', { quota: { used: 20, limit: 20, resets_at: QUOTA.resets_at } }) });
     renderSheet();
     const alert = screen.getByRole('alert');
-    expect(alert).toHaveTextContent('Tạm thời không khả dụng');
+    expect(alert).toHaveTextContent('Đã hết lượt hôm nay');
+    expect(alert).not.toHaveTextContent('Tạm thời không khả dụng');
     expect(alert).toHaveTextContent(/Bạn đã dùng hết lượt hỏi AI hôm nay\. Lượt mới sẽ có lúc \d\d:\d\d\./);
+    expect(alert).toHaveTextContent('Bài học, đáp án và lịch ôn vẫn dùng bình thường');
     expect(screen.getByText(FALLBACK.title)).toBeInTheDocument();
     expect(screen.getByText(FALLBACK.body)).toBeInTheDocument();
     expect(screen.getByText('Còn 0/20 lượt')).toBeInTheDocument();
@@ -298,6 +300,30 @@ describe('AiExplainSheet', () => {
     expect(screen.getByText(FALLBACK.body)).toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: 'Thử lại' }));
     expect(mocks.ai.run).toHaveBeenCalledTimes(2);
+  });
+
+  it('names a user-fixable bad request instead of an outage, without a pointless retry', () => {
+    setAi({ state: 'error', error: aiError('bad_request') });
+    renderSheet({ fallback: undefined });
+    const alert = screen.getByRole('alert');
+    expect(alert).toHaveTextContent('Câu hỏi chưa hợp lệ');
+    expect(alert).toHaveTextContent('Hãy rút gọn rồi thử lại.');
+    expect(alert).not.toHaveTextContent('Tạm thời không khả dụng');
+    expect(screen.queryByRole('button', { name: 'Thử lại' })).not.toBeInTheDocument();
+  });
+
+  it('keeps "Tạm thời không khả dụng" for a real outage', () => {
+    setAi({ state: 'unavailable', error: aiError('ai_unavailable') });
+    renderSheet();
+    expect(screen.getByRole('alert')).toHaveTextContent('Tạm thời không khả dụng');
+  });
+
+  it('names a burst limit as "Chậm lại một chút" and offers a retry', () => {
+    setAi({ state: 'quota', error: aiError('quota_exceeded', { retry_after_sec: 30, quota: null }) });
+    renderSheet({ fallback: undefined });
+    expect(screen.getByRole('alert')).toHaveTextContent('Chậm lại một chút');
+    expect(screen.getByRole('alert')).toHaveTextContent('Thử lại sau khoảng 30 giây.');
+    expect(screen.getByRole('button', { name: 'Thử lại' })).toBeInTheDocument();
   });
 
   it('explains that lessons still work when there is no curated text', () => {

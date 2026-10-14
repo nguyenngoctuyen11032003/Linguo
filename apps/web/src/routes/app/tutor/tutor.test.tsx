@@ -182,12 +182,86 @@ describe('TutorPage', () => {
     expect(screen.getByText('Tóm tắt: present perfect')).toBeVisible();
   });
 
-  it('falls back when out of quota', async () => {
+  it('falls back when out of quota, with a quota title instead of an outage one', async () => {
     mocks.respond = () => ({ state: 'quota', result: null, error: aiError('quota_exceeded', { quota: { ...QUOTA, used: 20 } }) });
     render();
     await ask('present perfect');
-    expect(screen.getByRole('alert')).toHaveTextContent('Tạm thời không khả dụng');
+    expect(screen.getByRole('alert')).toHaveTextContent('Đã hết lượt hôm nay');
     expect(screen.getByRole('alert')).toHaveTextContent('Bạn đã dùng hết lượt hỏi AI hôm nay.');
+    expect(screen.getByRole('alert')).not.toHaveTextContent('Tạm thời không khả dụng');
+  });
+
+  it('shows a bad request as fixable, without a retry button', async () => {
+    mocks.respond = () => ({ state: 'error', result: null, error: aiError('bad_request') });
+    render();
+    await ask('present perfect');
+    expect(screen.getByRole('alert')).toHaveTextContent('Câu hỏi chưa hợp lệ');
+    expect(screen.queryByRole('button', { name: 'Thử lại' })).not.toBeInTheDocument();
+  });
+
+  it('disables submitting on every tab once the daily quota is used up, and says why', async () => {
+    mocks.quota = { status: 'ready', quota: { ...QUOTA, used: 20 }, remaining: 0, error: null, refresh: vi.fn() };
+    render();
+    const button = screen.getByRole('button', { name: 'Hỏi gia sư' });
+    expect(button).toBeDisabled();
+    const hint = document.getElementById(button.getAttribute('aria-describedby') ?? '');
+    expect(hint).toHaveTextContent(/Bạn đã dùng hết lượt hỏi AI hôm nay\. Lượt mới sẽ có lúc \d\d:\d\d\./);
+    await userEvent.type(screen.getByLabelText('Bạn muốn hiểu điều gì?'), 'present perfect{Control>}{Enter}{/Control}');
+    expect(mocks.calls).toHaveLength(0);
+    await userEvent.click(screen.getByRole('tab', { name: 'Tạo bài luyện' }));
+    expect(screen.getByRole('button', { name: 'Tạo bài luyện' })).toBeDisabled();
+    await userEvent.click(screen.getByRole('tab', { name: 'Phân tích câu' }));
+    expect(screen.getByRole('button', { name: 'Phân tích câu' })).toBeDisabled();
+  });
+
+  it('keeps the submit button enabled while turns are left', () => {
+    render();
+    const button = screen.getByRole('button', { name: 'Hỏi gia sư' });
+    expect(button).toBeEnabled();
+    expect(button).not.toHaveAttribute('aria-describedby');
+  });
+
+  it('moves focus to the latest answer heading and announces it politely', async () => {
+    render();
+    await ask('present perfect');
+    const heading = screen.getByRole('heading', { level: 3, name: 'present perfect' });
+    expect(heading).toHaveFocus();
+    expect(screen.getByText('Đã có câu trả lời').closest('[aria-live="polite"]')).not.toBeNull();
+    await ask('used to');
+    expect(screen.getByRole('heading', { level: 3, name: 'used to' })).toHaveFocus();
+  });
+
+  it('focuses the sentence analysis heading too, and marks the sentence with its language', async () => {
+    mocks.respond = () => ({ state: 'ok', result: aiSuccess('analyze_sentence', SENTENCE_DATA, { response_id: 'u-sentence' }), error: null });
+    render({ paths: [TEST_KO_PATH] });
+    await userEvent.click(screen.getByRole('tab', { name: 'Phân tích câu' }));
+    await userEvent.type(screen.getByLabelText('Câu bạn muốn phân tích'), '저는 학생이에요.');
+    await userEvent.click(screen.getByRole('button', { name: 'Phân tích câu' }));
+    const heading = screen.getByRole('heading', { level: 3, name: '저는 학생이에요.' });
+    expect(heading).toHaveFocus();
+    expect(heading).toHaveAttribute('lang', 'ko');
+  });
+
+  it('uses a growing textarea: Enter adds a line, Ctrl/Cmd+Enter submits', async () => {
+    render();
+    const input = screen.getByLabelText('Bạn muốn hiểu điều gì?');
+    expect(input.tagName).toBe('TEXTAREA');
+    await userEvent.type(input, 'dòng một{Enter}dòng hai');
+    expect(mocks.calls).toHaveLength(0);
+    await userEvent.keyboard('{Control>}{Enter}{/Control}');
+    expect(mocks.calls).toEqual([expect.objectContaining({ task: 'explain_concept', concept: 'dòng một dòng hai' })]);
+  });
+
+  it('shows a character counter near the limit', async () => {
+    render();
+    const input = screen.getByLabelText('Bạn muốn hiểu điều gì?');
+    expect(screen.queryByText(/\/300/)).not.toBeInTheDocument();
+    await userEvent.click(input);
+    await userEvent.paste('a'.repeat(250));
+    expect(screen.getByText('250/300')).toBeInTheDocument();
+    expect(input.getAttribute('aria-describedby')).toContain(screen.getByText('250/300').id);
+    await userEvent.paste('b'.repeat(80));
+    expect(screen.getByText(/^300\/300/)).toBeInTheDocument();
   });
 
   it('retries after an unavailable answer', async () => {
