@@ -60,9 +60,9 @@ self.addEventListener('message', (event) => {
 });
 
 self.addEventListener('push', (event) => {
-  let raw: unknown = null;
+  let raw: unknown;
   try {
-    raw = event.data?.json();
+    raw = event.data?.json() ?? null;
   } catch {
     raw = event.data?.text() ?? null;
   }

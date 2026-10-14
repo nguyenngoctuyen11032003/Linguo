@@ -29,7 +29,9 @@ class FakeRegistration extends EventTarget {
 class FakeContainer extends EventTarget {
   controller: object | null = {};
   registration = new FakeRegistration();
-  register = vi.fn((_url: string, _opts?: RegistrationOptions) => Promise.resolve(this.registration));
+  register = vi.fn<(url: string, opts?: RegistrationOptions) => Promise<FakeRegistration>>(() =>
+    Promise.resolve(this.registration),
+  );
   startMessages = vi.fn();
 }
 
