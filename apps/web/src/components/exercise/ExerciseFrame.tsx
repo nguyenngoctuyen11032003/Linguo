@@ -37,6 +37,8 @@ export interface ExerciseFrameProps {
   onContinue: () => void;
   /** Lesson facts for the AI tutor buttons under the feedback; omit to hide them. */
   ai?: LessonAiContext;
+  /** Shows "Báo lỗi nội dung" for this exercise under the feedback (learner screens only, not admin previews). */
+  reportable?: boolean;
 }
 
 type Parsed =
@@ -110,7 +112,7 @@ export function ExerciseFrame(props: ExerciseFrameProps) {
   return <ExerciseFrameInner key={`${props.exercise.id}:${props.exercise.version}:${props.recheck}`} {...props} />;
 }
 
-function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onContinue, ai }: ExerciseFrameProps) {
+function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onContinue, ai, reportable = false }: ExerciseFrameProps) {
   const titleId = useId();
   const parsed = useMemo(() => parsePrompt(exercise), [exercise]);
   const gate = useMemo(() => createCompositionGate(), []);
@@ -343,7 +345,12 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
           <div role="status" className="mt-4 empty:hidden">
             {pending && <PendingSyncBadge />}
           </div>
-          <FeedbackPanel result={showResult ? result : null} className="mt-4" ai={aiInput} />
+          <FeedbackPanel
+            result={showResult ? result : null}
+            className="mt-4"
+            ai={aiInput}
+            report={reportable ? { kind: 'exercise', id: exercise.id } : undefined}
+          />
         </div>
         <ActionBar>{actions}</ActionBar>
       </section>

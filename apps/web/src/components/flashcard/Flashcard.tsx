@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { motion } from 'motion/react';
 import { Volume2, VolumeX } from 'lucide-react';
 import type { ReviewCard } from '@linguo/shared';
+import { ReportContentButton } from '@/components/report';
 import { EASE_OUT } from '@/design/motion';
 import { cn } from '@/lib/cn';
 import { useMotionPrefs } from '@/providers/MotionProvider';
@@ -22,6 +23,8 @@ export interface FlashcardProps {
   /** Blocks flipping, e.g. while a grade is being submitted. */
   disabled?: boolean;
   className?: string;
+  /** Shows "Báo lỗi nội dung" for the learning item on the back (learner review only, not admin previews). */
+  reportable?: boolean;
 }
 
 function isInteractiveTarget(target: EventTarget | null): boolean {
@@ -34,7 +37,7 @@ function isInteractiveTarget(target: EventTarget | null): boolean {
  * One review card. `recognize` asks for the meaning of the target-language word; `recall` asks for the word
  * from its Vietnamese meaning. The answer is announced through an always-mounted polite live region.
  */
-export function Flashcard({ card, flipped, onFlip, disabled = false, className }: FlashcardProps) {
+export function Flashcard({ card, flipped, onFlip, disabled = false, className, reportable = false }: FlashcardProps) {
   const { reduceMotion } = useMotionPrefs();
   const content = readCardContent(card);
   const frontRef = useRef<HTMLButtonElement>(null);
@@ -117,6 +120,7 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className }
           {content.example.translationVi && <span className="block text-[15px] text-text">{content.example.translationVi}</span>}
         </p>
       )}
+      {reportable && <ReportContentButton targetKind="learning_item" targetId={card.item_id} className="mt-1" />}
     </div>
   );
 

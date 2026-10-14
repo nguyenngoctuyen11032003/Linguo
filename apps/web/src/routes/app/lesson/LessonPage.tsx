@@ -200,6 +200,7 @@ export function LessonPage() {
             onSubmit={(response, meta) => void run.submit(exerciseId, queueIndex, response, meta)}
             onContinue={run.next}
             ai={lessonAiContext(lesson, exercise, run.items)}
+            reportable
           />
         );
       } else {

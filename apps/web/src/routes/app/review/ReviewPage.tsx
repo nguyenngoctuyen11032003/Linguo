@@ -295,7 +295,7 @@ export function ReviewPage() {
         <div className="h-full rounded-full bg-primary" style={{ width: `${total ? (Math.min(position, total) / total) * 100 : 0}%` }} />
       </div>
 
-      <Flashcard key={cardKey} card={card} flipped={flipped} onFlip={flip} disabled={cardState.status === 'submitting'} />
+      <Flashcard key={cardKey} card={card} flipped={flipped} onFlip={flip} disabled={cardState.status === 'submitting'} reportable />
 
       {showConfidence && <RecallConfidence value={confidence} onChange={setConfidence} />}
 
