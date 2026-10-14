@@ -114,6 +114,13 @@ test.describe('account data', () => {
     test.slow(); // ends on the animated landing page, slow to paint in headless WebKit
     await mockSupabase(page);
     const calls = await mockAccountRpcs(page);
+    await page.addInitScript(() => {
+      const removeItem = Storage.prototype.removeItem;
+      Storage.prototype.removeItem = function (key: string) {
+        if (key.startsWith('sb-')) sessionStorage.setItem('removed-sb-session', '1');
+        return removeItem.call(this, key);
+      };
+    });
     await signIn(page);
     await page.goto('/app/cai-dat');
     await page.getByRole('button', { name: 'Xoá tài khoản' }).click();
@@ -130,8 +137,12 @@ test.describe('account data', () => {
     await confirm.click();
     await expect(page).toHaveURL(/\/$/, { timeout: 20_000 });
     expect(calls.delete).toEqual([{ p_confirm: 'XOA TAI KHOAN' }]);
-    const session = await page.evaluate(() => Object.keys(localStorage).filter((k) => k.startsWith('sb-')));
-    expect(session).toEqual([]);
+    // The sign-out ends with a full page load and signIn() re-seeds the session on every load, so check that the
+    // session key was removed (recorded in sessionStorage, which survives the reload) rather than its final state.
+    await expect
+      .poll(() => page.evaluate(() => sessionStorage.getItem('removed-sb-session')).catch(() => null), { timeout: 20_000 })
+      .toBe('1');
+    await expect(page).toHaveURL(/\/$/);
   });
 
   test('settings with the account section has no serious a11y violations', async ({ page }, testInfo) => {

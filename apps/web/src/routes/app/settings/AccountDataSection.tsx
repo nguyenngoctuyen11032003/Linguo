@@ -19,6 +19,7 @@ import { RETENTION_SUMMARY, STORED_DATA_SUMMARY } from '@/features/account/reten
 import { useAuth } from '@/features/auth/AuthProvider';
 import { useProfile } from '@/features/profile/ProfileProvider';
 import { todayIso } from '@/lib/dates';
+import { hardNavigate } from '@/lib/hard-navigate';
 import { requireSupabase } from '@/lib/supabase';
 import { useModalDialog } from '@/lib/useModalDialog';
 
@@ -60,13 +61,14 @@ export function AccountDataSection() {
   async function onDeleted() {
     if (user) clearLocalAccountData(user.id);
     // Leave /app first: signing out while still inside it would send RequireAuth to the sign-in page instead.
-    // Wait for the navigation to finish (the landing route is lazy and can be slow to load), or the sign-out below
-    // can win the race and land on the sign-in page.
-    await navigate('/', { replace: true });
+    navigate('/', { replace: true });
     // The server already removed the user (and so the session): only the local copy is left to drop.
     await requireSupabase()
       .auth.signOut({ scope: 'local' })
       .catch(() => undefined);
+    // The client-side navigation above can still be pending (lazy landing route) when the sign-out empties the
+    // session, and RequireAuth then wins and shows the sign-in page: finish with a full load of the landing page.
+    hardNavigate('/');
   }
 
   return (

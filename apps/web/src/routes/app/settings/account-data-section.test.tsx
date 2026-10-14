@@ -6,7 +6,9 @@ import { submitArgs } from '@/features/lesson-player/lesson-fixtures';
 import { createOutbox } from '@/features/lesson-player/outbox';
 import { AccountDataSection } from './AccountDataSection';
 
-const mocks = vi.hoisted(() => ({ rpc: vi.fn(), signOut: vi.fn(), download: vi.fn() }));
+const mocks = vi.hoisted(() => ({ rpc: vi.fn(), signOut: vi.fn(), download: vi.fn(), hardNavigate: vi.fn() }));
+
+vi.mock('@/lib/hard-navigate', () => ({ hardNavigate: mocks.hardNavigate }));
 
 vi.mock('@/lib/supabase', () => {
   const client = { rpc: mocks.rpc, auth: { signOut: mocks.signOut } };
@@ -21,6 +23,7 @@ beforeEach(() => {
   mocks.rpc.mockReset();
   mocks.signOut.mockReset().mockResolvedValue({ error: null });
   mocks.download.mockReset();
+  mocks.hardNavigate.mockReset();
   vi.useFakeTimers({ toFake: ['Date'] });
   // 20:00 UTC on 12 Oct is 13 Oct in Asia/Ho_Chi_Minh (the test profile).
   vi.setSystemTime(new Date('2026-10-12T20:00:00Z'));
@@ -83,6 +86,7 @@ describe('AccountDataSection', () => {
     await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent(/^\/$/));
     expect(mocks.rpc).toHaveBeenCalledWith('delete_my_account', { p_confirm: 'XOA TAI KHOAN' });
     expect(mocks.signOut).toHaveBeenCalledWith({ scope: 'local' });
+    expect(mocks.hardNavigate).toHaveBeenCalledWith('/');
     expect(createOutbox(TEST_USER_ID).list()).toEqual([]);
   });
 
