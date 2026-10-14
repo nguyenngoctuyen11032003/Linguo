@@ -132,4 +132,11 @@ describe('ReviewList', () => {
     renderExam(<ReviewList result={{ ...CEFR_RESULT, review }} />);
     expect(screen.getByText('Hi Sam, I went hiking on Saturday.')).toHaveAttribute('lang', 'en');
   });
+
+  it('offers a content report per question', () => {
+    renderExam(<ReviewList result={TOPIK_RESULT} />);
+    const buttons = TOPIK_RESULT.review.map((r) => screen.getByRole('button', { name: `Báo lỗi câu ${r.seq}` }));
+    expect(buttons).toHaveLength(TOPIK_RESULT.review.length);
+    expect(buttons[0]).toHaveAttribute('aria-haspopup', 'dialog');
+  });
 });

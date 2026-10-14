@@ -1,6 +1,7 @@
 import { useId, useState } from 'react';
 import { CheckCircle2, ChevronRight, CircleDashed, ClipboardCheck, Headphones, Lightbulb, Sparkles, XCircle } from 'lucide-react';
 import { REVIEW_WRITING_ANSWER_MAX_CHARS, type ExamFamily, type ExamResult } from '@linguo/shared';
+import { ReportContentButton } from '@/components/report';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/cn';
 import { SECTION_LABELS, familyLanguage, isAnswered, questionTypeLabel } from './labels';
@@ -13,7 +14,10 @@ export interface ReviewListProps {
 
 export type ReviewItem = ExamResult['review'][number];
 
-/** Every question after submit: your answer vs the correct one, explanation, listening script, essay self-check. */
+/**
+ * Every question after submit: your answer vs the correct one, explanation, listening script, essay self-check, and a
+ * per-question content report (spec 11 §2).
+ */
 export function ReviewList({ result, onAiFeedback }: ReviewListProps) {
   return (
     <ol className="grid gap-4" aria-label="Xem lại từng câu">
@@ -90,6 +94,8 @@ function ReviewCard({ item, family, onAiFeedback }: { item: ReviewItem; family: 
           </p>
           <p className="text-[15px] break-words">{item.explanation.vi}</p>
         </div>
+
+        <ReportContentButton targetKind="exam_question" targetId={item.question_id} label={`Báo lỗi câu ${item.seq}`} />
       </div>
     </article>
   );

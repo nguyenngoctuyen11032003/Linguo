@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router';
 import type { DiagnosticItem, DiagnosticMode, DiagnosticSkill } from '@linguo/shared';
 import { ChoiceGroup } from '@/components/exercise/ChoiceGroup';
+import { ReportContentButton } from '@/components/report';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
@@ -142,15 +143,19 @@ function Question({ item, pathLanguage, busy, nearEnd, onAnswer, onOpenSkip, ski
         <div className="mt-5">
           <ChoiceGroup labelledBy={stemId} options={prompt.options} selectedId={selected} onSelect={setSelected} disabled={busy} />
         </div>
-        <button
-          ref={skipTriggerRef}
-          type="button"
-          onClick={onOpenSkip}
-          disabled={busy}
-          className="mt-4 inline-flex min-h-11 items-center rounded-full px-2 text-[15px] font-semibold text-muted underline underline-offset-4 hover:text-text disabled:opacity-60"
-        >
-          Bỏ qua kỹ năng này
-        </button>
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
+          <button
+            ref={skipTriggerRef}
+            type="button"
+            onClick={onOpenSkip}
+            disabled={busy}
+            className="inline-flex min-h-11 items-center rounded-full px-2 text-[15px] font-semibold text-muted underline underline-offset-4 hover:text-text disabled:opacity-60"
+          >
+            Bỏ qua kỹ năng này
+          </button>
+          {/* The report has no per-question review, so each question is reportable while it is on screen (spec 11 §2). */}
+          <ReportContentButton targetKind="assessment_item" targetId={item.id} />
+        </div>
       </motion.div>
       {/* Outside the animated block: a transformed ancestor would break `position: fixed`. */}
       <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-surface-solid/95 pb-safe backdrop-blur-md">

@@ -113,6 +113,11 @@ describe('DiagnosticPage — question', () => {
     expect(within(group).getByText('apple')).toHaveAttribute('lang', 'en');
   });
 
+  it('lets the learner report the question on screen', () => {
+    renderAt(makeRun());
+    expect(screen.getByRole('button', { name: 'Báo lỗi nội dung' })).toHaveAttribute('aria-haspopup', 'dialog');
+  });
+
   it('submits the chosen option only after a selection', async () => {
     const run = makeRun();
     renderAt(run);
