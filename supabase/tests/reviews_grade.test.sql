@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(77);
+select plan(89);
 
 -- ===== Content: one EN core program, one unit, L1 introduces I1..I5 and reuses R; L2 introduces R =====
 -- Imported as the migration owner (rolled back with the test). No exercises, so a run completes at once.
@@ -98,12 +98,30 @@ select set_config('test.i5', 'b5000000-0000-4000-8000-000000000025', true);
 select set_config('test.reused', 'b5000000-0000-4000-8000-000000000029', true);
 
 -- Grades with the given signals and a fresh (or given) idempotency key. Rolled back with the test.
+-- The scheduling tests below grade cards regardless of their due time (enrolled cards are due tomorrow, and
+-- some cards are graded twice in a row), so this helper first makes the card due now, as the owner. The due
+-- guard itself is tested with b5_grade_strict.
 create function public.b5_grade(p_card text, p_rating integer, p_confidence integer default null, p_hints integer default 0, p_key text default null)
+returns jsonb
+language plpgsql
+volatile
+security definer
+as $$
+begin
+  update public.review_cards set due_at = least(due_at, now()) where id = p_card::uuid;
+  return public.grade_review(p_card::uuid, p_rating::smallint, p_confidence::smallint, 1500, p_hints::smallint,
+    coalesce(p_key::uuid, gen_random_uuid()), now());
+end;
+$$;
+grant execute on function public.b5_grade(text, integer, integer, integer, text) to authenticated, anon;
+
+-- Grades exactly as a client would (no due-time help).
+create function public.b5_grade_strict(p_card text, p_rating integer, p_key text default null)
 returns jsonb
 language sql
 volatile
 as $$
-  select public.grade_review(p_card::uuid, p_rating::smallint, p_confidence::smallint, 1500, p_hints::smallint,
+  select public.grade_review(p_card::uuid, p_rating::smallint, null, 1500, 0::smallint,
     coalesce(p_key::uuid, gen_random_uuid()), now());
 $$;
 
@@ -312,6 +330,63 @@ select is(current_setting('test.r')::jsonb ->> 'item_status', 'relearning', 'Aga
 select is((select mastered_at from public.review_item_mastery where learning_item_id = current_setting('test.i1')::uuid), null, 'Again clears mastered_at');
 select is((select lapses from public.review_cards where id = current_setting('test.a_i1_rcl')::uuid), 1, 'a lapse is counted');
 select is((public.b5_grade(current_setting('test.a_i1_rec'), 4) ->> 'item_status') <> 'mastered', true, 'successes before the Again no longer count');
+
+-- ===== Queue rules: only due cards of an active path with a published item (user A) =====
+-- Cards are reset as the owner; A's local day is Asia/Ho_Chi_Minh.
+reset role;
+select set_config('test.a_end', ((public.learning_user_today('aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa') + 1)::timestamp at time zone 'Asia/Ho_Chi_Minh')::text, true);
+update public.review_cards set fsrs_state = 'review', stability = 8, difficulty = 5, reps = 1, scheduled_days = 8,
+    last_review_at = now() - interval '8 days', due_at = now() - interval '1 hour'
+where id = current_setting('test.a_i3_rcl')::uuid;
+update public.review_cards set fsrs_state = 'review', due_at = current_setting('test.a_end')::timestamptz
+where id = current_setting('test.a_i2_rcl')::uuid;
+update public.review_cards set fsrs_state = 'review', due_at = current_setting('test.a_end')::timestamptz - interval '1 second'
+where id = current_setting('test.a_i4_rcl')::uuid;
+update public.review_cards set fsrs_state = 'learning', step = 0, due_at = now() + interval '1 minute'
+where id = current_setting('test.a_i2_rec')::uuid;
+update public.review_cards set fsrs_state = 'learning', step = 0, due_at = now()
+where id = current_setting('test.a_i3_rec')::uuid;
+-- A freshly enrolled card: new, due at the start of the next local day.
+update public.review_cards set fsrs_state = 'new', step = 0, stability = null, difficulty = null, reps = 0, last_review_at = null,
+    due_at = current_setting('test.a_end')::timestamptz
+where id = current_setting('test.a_i5_rcl')::uuid;
+set local role authenticated;
+select set_config('request.jwt.claims', '{"sub": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa", "role": "authenticated"}', true);
+
+select lives_ok(format('select public.b5_grade_strict(%L, 4, %L)', current_setting('test.a_i3_rcl'), 'b5000000-0000-4000-8000-0000000000c1'),
+  'an overdue review card is graded');
+select throws_ok(format('select public.b5_grade_strict(%L, 4)', current_setting('test.a_i3_rcl')), 'P0001', 'card_not_due',
+  'grading the same card again before it is due is refused');
+select is((select reps from public.review_cards where id = current_setting('test.a_i3_rcl')::uuid), 2, 'the refused grade changed nothing');
+select is((public.b5_grade_strict(current_setting('test.a_i3_rcl'), 4, 'b5000000-0000-4000-8000-0000000000c1') ->> 'replayed')::boolean, true,
+  'a replay of the applied grade still succeeds after the card moved on');
+select throws_ok(format('select public.b5_grade_strict(%L, 3)', current_setting('test.a_i2_rcl')), 'P0001', 'card_not_due',
+  'a review card due at the end of the local day is not due today');
+select lives_ok(format('select public.b5_grade_strict(%L, 3)', current_setting('test.a_i4_rcl')), 'a review card due later today is graded');
+select throws_ok(format('select public.b5_grade_strict(%L, 3)', current_setting('test.a_i2_rec')), 'P0001', 'card_not_due',
+  'a learning card waits for its minute');
+select lives_ok(format('select public.b5_grade_strict(%L, 3)', current_setting('test.a_i3_rec')), 'a learning card due now is graded');
+select throws_ok(format('select public.b5_grade_strict(%L, 3)', current_setting('test.a_i5_rcl')), 'P0001', 'card_not_due',
+  'a card enrolled today is due tomorrow');
+
+-- Paused or archived path, unpublished item.
+reset role;
+update public.review_cards set due_at = now() - interval '1 hour' where id = current_setting('test.a_i5_rcl')::uuid;
+update public.learning_paths set status = 'paused' where id = current_setting('test.a_path')::uuid;
+set local role authenticated;
+select throws_ok(format('select public.b5_grade_strict(%L, 4)', current_setting('test.a_i5_rcl')), 'P0001', 'path_not_active',
+  'cards of a paused path cannot be graded');
+reset role;
+update public.learning_paths set status = 'archived' where id = current_setting('test.a_path')::uuid;
+set local role authenticated;
+select throws_ok(format('select public.b5_grade_strict(%L, 4)', current_setting('test.a_i5_rcl')), 'P0001', 'path_not_active',
+  'cards of an archived path cannot be graded');
+reset role;
+update public.learning_paths set status = 'active' where id = current_setting('test.a_path')::uuid;
+update public.learning_items set status = 'archived' where id = current_setting('test.i5')::uuid;
+set local role authenticated;
+select throws_ok(format('select public.b5_grade_strict(%L, 4)', current_setting('test.a_i5_rcl')), 'P0001', 'card_not_found',
+  'cards of an unpublished item cannot be graded');
 
 -- ===== Rate limit: 60 grades within 60 s (user B) =====
 reset role;

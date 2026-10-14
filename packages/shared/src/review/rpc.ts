@@ -26,6 +26,7 @@ export const REVIEW_ERROR_CODES = [
   'path_not_active',
   'card_not_found',
   'card_suspended',
+  'card_not_due',
   'invalid_rating',
   'idempotency_conflict',
   'rate_limited',
