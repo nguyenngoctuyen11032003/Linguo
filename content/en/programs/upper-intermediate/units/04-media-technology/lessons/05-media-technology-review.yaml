@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:media-technology-review
 order_index: 5
 level: b2
@@ -243,7 +242,7 @@ exercises:
       blanks:
         b1: [Freed]
         b2: [Having]
-        b3: [deleted]
+        b3: [deleted, uninstalled, removed]
     known_wrong:
       - answer: Freeing
         feedback_vi: Người viết được giải thoát (bị động) - dùng V3 freed.
@@ -272,7 +271,7 @@ exercises:
     answer:
       blanks:
         b1: [advice]
-        b2: [overuse]
+        b2: [overuse, overdo]
     known_wrong:
       - answer: advices
         feedback_vi: Advice không đếm được - không thêm -s.
@@ -282,9 +281,6 @@ exercises:
         error_tag: word_form
       - answer: underuse
         feedback_vi: Under- là dùng chưa đủ - ngược ý. Dùng quá mức là overuse.
-        error_tag: prefix
-      - answer: misuse
-        feedback_vi: Misuse là dùng sai mục đích; người viết muốn nói dùng quá nhiều - overuse.
         error_tag: prefix
     explanation:
       vi: My advice (danh từ không đếm được, đi với is). Dùng quá mức là over- + use; câu sau gợi ý cách dùng ít đi.
@@ -310,6 +306,13 @@ exercises:
         - The study found a link between screen time and poor sleep.
         - The study suggests a link between screen time and poor sleep.
         - The study shows a link between screen time and poor sleep.
+        - The study found that there is a link between screen time and poor sleep.
+        - The research suggests a link between screen time and poor sleep.
+        - The research shows a link between screen time and poor sleep.
+        - The study suggests that screen time and poor sleep are linked.
+        - The study shows that screen time and poor sleep are linked.
+        - The study suggests that there is a connection between screen time and poor sleep.
+        - The study shows that there is a connection between screen time and poor sleep.
         - The study suggests that screen time is linked to poor sleep.
         - The study shows that screen time is linked to poor sleep.
         - The research suggests that there is a link between screen time and poor sleep.
@@ -353,6 +356,11 @@ exercises:
         - I deleted every social media app from my phone, which made my friends very surprised.
         - I deleted all the social media apps on my phone, which really surprised my friends.
         - I deleted every social media app on my phone, which really surprised my friends.
+        - I deleted every social media app from my phone, which surprised my friends a lot.
+        - I deleted every social media app from my phone, which really shocked my friends.
+        - I deleted every social media app from my phone, which came as a surprise to my friends.
+        - I deleted every social media app from my phone, which made my friends really surprised.
+        - I have deleted all the social media apps from my phone, which really surprised my friends.
     rubric:
       typo_tolerance: 1
     known_wrong:

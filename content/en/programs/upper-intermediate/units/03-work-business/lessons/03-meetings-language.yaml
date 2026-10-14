@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:meetings-language
 order_index: 3
 level: b2
@@ -244,6 +243,8 @@ exercises:
         - We're going to talk about the budget at the end of the meeting.
         - We'll be discussing the budget at the end of the meeting.
         - We will be discussing the budget at the end of the meeting.
+        - We'll discuss the budget at the end of this meeting.
+        - We will discuss the budget at the end of this meeting.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -282,6 +283,14 @@ exercises:
         - Good question, but can we come back to it later?
         - That's a good question, but can we discuss that later?
         - That's a good question, but can we talk about that later?
+        - That is a good question, but could we come back to that later?
+        - That is a good question, but can we come back to it later?
+        - That is a good question, but could we come back to it later?
+        - That is a good question, but can we discuss that later?
+        - That is a good question, but can we talk about that later?
+        - That's a good question, but could we discuss that later?
+        - That is a good question, but could we discuss that later?
+        - Good question, but can we discuss that later?
     rubric:
       typo_tolerance: 1
     known_wrong:

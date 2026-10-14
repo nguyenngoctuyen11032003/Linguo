@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:modals-of-deduction
 order_index: 1
 level: b2
@@ -174,7 +173,7 @@ exercises:
         - "Gợi ý: phủ định của must khi suy luận, bắt đầu bằng c…"
     answer:
       blanks:
-        b1: ["can't", cannot, "couldn't"]
+        b1: ["can't", cannot, "couldn't", "might not", "may not"]
     known_wrong:
       - answer: "mustn't"
         feedback_vi: Mustn't là "không được phép". "Chắc chắn không" dùng can't.
@@ -182,11 +181,8 @@ exercises:
       - answer: must
         feedback_vi: Must là "chắc hẳn là", ngược nghĩa với câu. Xe ở nhà nên anh ấy không thể ở chỗ làm - can't.
         error_tag: deduction_degree
-      - answer: "might not"
-        feedback_vi: Might not chỉ là "có lẽ không". Bằng chứng ở đây rất rõ nên dùng can't.
-        error_tag: deduction_degree
     explanation:
-      vi: Bằng chứng (xe ở ngoài) khiến người nói gần như chắc chắn anh ấy không ở chỗ làm, nên dùng can't + be. Mustn't không dùng để suy đoán.
+      vi: Bằng chứng (xe ở ngoài) khiến người nói gần như chắc chắn anh ấy không ở chỗ làm, nên can't + be là tự nhiên nhất; might not / may not cũng đúng nhưng kém chắc chắn hơn. Mustn't không dùng để suy đoán.
     display_answer: His car is outside, so he can't be at work.
 
   - key: en:exercise:deduction-order-might-have-missed
@@ -258,7 +254,7 @@ exercises:
         - { id: b2, width_hint: 5 }
     answer:
       blanks:
-        b1: [must]
+        b1: [must, might, may, could]
         b2: [left]
     known_wrong:
       - answer: leaved
@@ -274,7 +270,7 @@ exercises:
         feedback_vi: Have đã có sẵn trong câu; chỗ trống đầu cần must.
         error_tag: modal_have
     explanation:
-      vi: Lan luôn trả lời ngay mà cả ngày không trả lời là bằng chứng khá chắc, nên dùng must have + V3. Để quên đồ ở một nơi là leave something somewhere, V3 là left.
+      vi: Lan luôn trả lời ngay mà cả ngày không trả lời là bằng chứng khá chắc, nên must have + V3 là tự nhiên nhất (might/may/could have nếu bạn kém chắc chắn hơn). Để quên đồ ở một nơi là leave something somewhere, V3 là left.
     display_answer: Lan always replies within minutes, but she hasn't answered all day. She must have left her phone at home.
 
   - key: en:exercise:deduction-translate-must-have-forgotten
@@ -339,6 +335,10 @@ exercises:
         - She couldn't have ignored us on purpose. She probably didn't see us.
         - She couldn't have ignored us on purpose. She couldn't have seen us.
         - She can't have ignored us on purpose. She couldn't have seen us.
+        - She can't have ignored us deliberately. She can't have seen us.
+        - She can't have ignored us deliberately. She probably didn't see us.
+        - She can't have ignored us on purpose. She must not have noticed us.
+        - She can't have ignored us on purpose. She probably didn't notice us.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -382,6 +382,7 @@ exercises:
         - Anh ấy có vẻ không vui. Chắc đã có chuyện gì xảy ra.
         - Trông anh ấy không vui. Chắc đã có chuyện gì xảy ra.
         - Trông anh ấy buồn bực. Hẳn là đã có chuyện gì xảy ra.
+        - Trông anh ấy buồn bực. Chắc hẳn phải có chuyện gì xảy ra.
     rubric:
       diacritics: lenient
     known_wrong:

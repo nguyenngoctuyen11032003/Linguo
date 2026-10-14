@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:have-something-done
 order_index: 2
 level: b2
@@ -111,13 +110,13 @@ exercises:
       stem_lang: vi
       options:
         - { id: d3k, text: I had my hair cut yesterday., lang: en }
-        - { id: s7p, text: I cut my hair yesterday., lang: en }
+        - { id: s7p, text: I have my hair cut yesterday., lang: en }
         - { id: o2w, text: I had cut my hair yesterday., lang: en }
         - { id: j9m, text: I had my hair cutting yesterday., lang: en }
     answer:
       correct_option_id: d3k
     explanation:
-      vi: Người khác cắt cho bạn nên dùng have + vật + V3 (had my hair cut). I cut my hair là tự cắt; had cut my hair là quá khứ hoàn thành; cutting không phải V3.
+      vi: Người khác cắt cho bạn nên dùng have + vật + V3, và yesterday cần quá khứ - had my hair cut. Have my hair cut sai thì; had cut my hair là quá khứ hoàn thành (tự cắt); cutting không phải V3.
     display_answer: I had my hair cut yesterday.
 
   - key: en:exercise:wb-causative-listen-stolen
@@ -239,6 +238,7 @@ exercises:
         - We should get our lawyer to check the contract.
         - We should ask a lawyer to check the contract.
         - We should ask our lawyer to check the contract.
+        - We ought to have the contract checked by a lawyer.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -279,6 +279,9 @@ exercises:
         - We need to reduce costs this year, otherwise we'll make a loss.
         - We have to cut costs this year, or we'll lose money.
         - We need to cut costs this year, or we'll lose money.
+        - We have to cut costs this year, otherwise we'll lose money.
+        - We must cut costs this year, or we will make a loss.
+        - We have to cut costs this year, or else we'll make a loss.
     rubric:
       typo_tolerance: 1
     known_wrong:

@@ -1,16 +1,15 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 key: en:program:upper-intermediate
 language: en
 title:
   vi: Tiếng Anh trung cao cấp (B2)
 description:
-  vi: Bày tỏ và bảo vệ quan điểm, câu bị động, câu điều kiện loại 2-3, tường thuật và từ vựng chủ đề xã hội (B2). Nội dung demo, chưa qua kiểm duyệt.
+  vi: Bốn unit B2 - Quan điểm & xã hội (bày tỏ quan điểm, điều kiện loại 2-3, câu bị động, tường thuật); Con người & các mối quan hệ (suy đoán, V-ing/to V, cụm động từ, used to); Công việc & kinh doanh (tương lai tiếp diễn/hoàn thành, have something done, họp, đàm phán, số liệu); Truyền thông, công nghệ & khoa học (mệnh đề quan hệ không xác định, mệnh đề phân từ, mạo từ, đọc tin khoa học).
 kind: core
 goal_types: []
 level_from: b2

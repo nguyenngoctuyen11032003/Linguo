@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:gerund-or-infinitive
 order_index: 2
 level: b2
@@ -267,7 +266,7 @@ exercises:
         - { id: b1, width_hint: 8 }
     answer:
       blanks:
-        b1: [to buy]
+        b1: [to buy, in order to buy]
     known_wrong:
       - answer: buying
         feedback_vi: Stopped buying là "thôi không mua nữa". Dừng lại để mua là stopped to buy.
@@ -299,6 +298,8 @@ exercises:
         - My dad quit smoking five years ago.
         - My father stopped smoking 5 years ago.
         - My dad stopped smoking 5 years ago.
+        - My father quit smoking 5 years ago.
+        - My father gave up smoking 5 years ago.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -338,6 +339,10 @@ exercises:
         - She said sorry for ignoring my messages.
         - She apologised for ignoring my messages.
         - She apologized for ignoring my messages.
+        - She apologised for ignoring my message.
+        - She apologized for ignoring my message.
+        - She apologised for having ignored my messages.
+        - She said sorry to me for ignoring my message.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -429,6 +434,12 @@ exercises:
         - I cannot stand waiting, so he promised to come on time.
         - I hate waiting, so he promised to come on time.
         - I hate waiting, so he promised to be on time.
+        - I hate having to wait, so he promised to be on time.
+        - I can't bear waiting, so he promised to come on time.
+        - I can't stand waiting, so he promised he would come on time.
+        - I can't stand waiting, so he promised he'd come on time.
+        - I can't stand waiting, so he promised he would be on time.
+        - I can't stand waiting, so he promised he'd be on time.
     rubric:
       typo_tolerance: 1
     known_wrong:

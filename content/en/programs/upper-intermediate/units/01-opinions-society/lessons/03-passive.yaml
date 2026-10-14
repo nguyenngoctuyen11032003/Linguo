@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:opinions-society-passive
 order_index: 3
 level: b2
@@ -145,7 +144,7 @@ exercises:
   - key: en:exercise:opsoc-pass-listen-believed
     type: listen
     stage: recognition
-    answer_lang: en
+    answer_lang: vi
     difficulty: 3
     item: en:item:it-is-said-that
     prompt:
@@ -179,7 +178,7 @@ exercises:
     answer:
       blanks:
         b1: [be]
-        b2: [banned]
+        b2: [banned, prohibited, forbidden, restricted]
     known_wrong:
       - answer: is
         feedback_vi: Sau modal (should) dùng be nguyên mẫu, không chia is.
@@ -204,7 +203,7 @@ exercises:
       instruction: "Sắp xếp thành câu tiếng Anh: \"Lập trình đã được đưa vào chương trình giảng dạy.\""
       tokens:
         - { id: r-added, text: added }
-        - { id: r-was, text: was being }
+        - { id: r-was, text: have }
         - { id: r-coding, text: Coding }
         - { id: r-adding, text: adding }
         - { id: r-cur, text: to the curriculum }
@@ -234,7 +233,7 @@ exercises:
       blanks:
         b1: [have]
         b2: [been]
-        b3: [raised, increased]
+        b3: [raised, increased, hiked]
     known_wrong:
       - answer: has
         feedback_vi: Tuition fees là số nhiều, nên dùng have.
@@ -274,6 +273,12 @@ exercises:
         - It is said that social media is bad for young people's mental health.
         - People say that social media harms young people's mental health.
         - It is said that social media harms the mental health of young people.
+        - It's said that social media damages young people's mental health.
+        - It's said that social media is bad for young people's mental health.
+        - It's said that social media harms the mental health of young people.
+        - People say social media harms young people's mental health.
+        - Social media is said to damage young people's mental health.
+        - Social media is said to be bad for young people's mental health.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -309,6 +314,8 @@ exercises:
         - Critical thinking should be taught to children from an early age.
         - Children should be taught to think critically from an early age.
         - Kids should be taught critical thinking from an early age.
+        - Children should be taught critical thinking at an early age.
+        - Children should be taught critical thinking from a young age.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -415,6 +422,9 @@ exercises:
         - The leak could have been avoided.
         - The leak could have been prevented.
         - The data leak might have been avoided.
+        - The data breach might have been avoided.
+        - The data leak could've been avoided.
+        - The data leak could've been prevented.
     rubric:
       typo_tolerance: 1
     known_wrong:

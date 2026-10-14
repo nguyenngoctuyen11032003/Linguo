@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Con người & các mối quan hệ" (B2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: Động từ khuyết thiếu chỉ suy luận ----------------
@@ -391,7 +390,7 @@ items:
             vi: Tôi nhớ là đã gặp cô ấy ở một đám cưới.
         - target: Remember to call your mum on her birthday.
           translation:
-            vi: Nhớ gọi cho mẹ vào ngày sinh nhật bà nhé.
+            vi: Nhớ gọi cho mẹ vào ngày sinh nhật mẹ nhé.
       confusion:
         vi: Mẹo nhớ - V-ing nhìn về quá khứ (việc đã xảy ra), to V nhìn về phía trước (việc chưa làm).
 
@@ -481,7 +480,7 @@ items:
           translation:
             vi: Cô ấy rất ghét bị người khác sai bảo.
       confusion:
-        vi: Sau can't stand dùng V-ing hoặc danh từ - can't stand waiting, không nói "can't stand to wait" trong văn nói thông thường.
+        vi: Sau can't stand thường dùng V-ing hoặc danh từ - can't stand waiting; can't stand to wait cũng có nhưng ít gặp hơn.
 
   - key: en:item:refuse
     type: vocab
@@ -779,7 +778,7 @@ items:
           translation:
             vi: Bố tôi và tôi không phải lúc nào cũng cùng quan điểm về chính trị.
       confusion:
-        vi: Thành ngữ này hầu như chỉ dùng ở câu phủ định (don't see eye to eye). Eyes không thêm -s.
+        vi: Thành ngữ này thường dùng ở câu phủ định (don't see eye to eye). Eye không thêm -s.
 
   - key: en:item:a-shoulder-to-cry-on
     type: phrase

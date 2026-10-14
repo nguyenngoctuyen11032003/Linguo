@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:people-relationships-review
 order_index: 5
 level: b2
@@ -274,7 +273,7 @@ exercises:
     answer:
       blanks:
         b1: [might, may, could]
-        b2: [bought, booked, got]
+        b2: [bought, booked, got, purchased]
     known_wrong:
       - answer: must
         feedback_vi: Người nói "không chắc" (I'm not sure), nên dùng might / may / could, không dùng must.
@@ -316,6 +315,9 @@ exercises:
         - I am still not used to being away from my family.
         - I'm still not used to living away from home.
         - I'm still not used to living apart from my family.
+        - I haven't got used to living away from my family yet.
+        - I haven't gotten used to living away from my family yet.
+        - I still haven't got used to living far from my family.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -358,6 +360,10 @@ exercises:
         - They might not have meant to upset you. Try speaking to them directly.
         - They might not have meant to hurt you. Try talking to them directly.
         - They might not have meant to upset you. Why don't you try talking to them directly?
+        - They might not have meant to upset you. Try to talk to them directly.
+        - They may not have meant to upset you. Try to talk to them directly.
+        - They probably didn't mean to hurt you. Try talking to them directly.
+        - Maybe they didn't mean to upset you. Try to talk to them directly.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -371,7 +377,7 @@ exercises:
         feedback_vi: Thử một cách là try + V-ing - try talking, không có to.
         error_tag: gerund_infinitive
     explanation:
-      vi: "\"Có lẽ không cố ý\" về việc đã xảy ra là might / may not have meant to. Lời khuyên \"thử nói chuyện\" là try + V-ing (try talking), vì đây là thử một cách xem có hiệu quả không."
+      vi: "\"Có lẽ không cố ý\" về việc đã xảy ra là might / may not have meant to. Lời khuyên \"thử nói chuyện\" là try + V-ing (try talking), vì đây là thử một cách xem có hiệu quả không; try to talk (cố gắng nói chuyện) cũng chấp nhận được."
     display_answer: They might not have meant to upset you. Try talking to them directly.
 
   - key: en:exercise:relationships-review-translate-give-it-time

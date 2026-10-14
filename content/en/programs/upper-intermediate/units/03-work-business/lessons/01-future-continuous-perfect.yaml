@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:future-continuous-perfect
 order_index: 1
 level: b2
@@ -177,19 +176,16 @@ exercises:
         - "Gợi ý: giới từ hai chữ cái, nghĩa là \"chậm nhất là\"."
     answer:
       blanks:
-        b1: [by, before]
+        b1: [by, before, on]
     known_wrong:
       - answer: until
         feedback_vi: Until là "kéo dài đến". Hạn chót dùng by.
-        error_tag: by_until
-      - answer: on
-        feedback_vi: On Wednesday là "vào thứ Tư" - người nói cần nhận trước hạn, nên dùng by.
         error_tag: by_until
       - answer: till
         feedback_vi: Till giống until - kéo dài đến. Hạn chót dùng by.
         error_tag: by_until
     explanation:
-      vi: Người nói cần bản trình chiếu chậm nhất vào thứ Tư (gửi sớm hơn cũng được), nên dùng by (hoặc before). Until chỉ dùng cho việc kéo dài liên tục.
+      vi: Người nói cần bản trình chiếu chậm nhất vào thứ Tư (gửi sớm hơn cũng được), nên dùng by (hoặc before); on Wednesday (vào thứ Tư) cũng đúng nhưng không mang nghĩa "chậm nhất là". Until chỉ dùng cho việc kéo dài liên tục.
     display_answer: "Could you send me the slides by Wednesday? I need to check them before the meeting."
 
   # ---------------- recall ----------------
@@ -207,9 +203,9 @@ exercises:
         - { id: b3, width_hint: 8 }
     answer:
       blanks:
-        b1: [will, "'ll"]
-        b2: [giving, doing, rehearsing, practising, practicing]
-        b3: [finished, given, done, rehearsed, practised, practiced, completed]
+        b1: [will, "'ll", might, may]
+        b2: [giving, doing, rehearsing, practising, practicing, preparing]
+        b3: [finished, given, done, rehearsed, practised, practiced, completed, prepared]
     known_wrong:
       - answer: finish
         feedback_vi: Sau will have cần V3 - finished.
@@ -241,6 +237,10 @@ exercises:
         - I'll be flying to Singapore this time tomorrow.
         - This time tomorrow, I'll be on a flight to Singapore.
         - This time tomorrow, I'll be on the plane to Singapore.
+        - I will be flying to Singapore this time tomorrow.
+        - At this time tomorrow, I'll be flying to Singapore.
+        - At this time tomorrow, I will be flying to Singapore.
+        - This time tomorrow, I will be on a flight to Singapore.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -273,6 +273,9 @@ exercises:
         - If we don't take on more people, we'll miss the deadline.
         - If we don't hire more people, we won't meet the deadline.
         - If we don't hire more staff, we won't meet the deadline.
+        - If we don't hire more people, we're going to miss the deadline.
+        - If we don't recruit more people, we'll miss the deadline.
+        - If we don't hire more people, we will miss the deadline.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -389,6 +392,15 @@ exercises:
         - By next June, she will have worked for this company for ten years.
         - She'll have worked at this company for ten years by June next year.
         - She will have worked at this company for ten years by June next year.
+        - By next June, she'll have worked for this company for ten years.
+        - She'll have worked for this company for ten years by June next year.
+        - By June next year, she'll have worked here for ten years.
+        - She will have worked for this company for ten years by June next year.
+        - By June next year, she will have been working for this company for ten years.
+        - By June next year, she will have worked here for ten years.
+        - By June next year, she'll have worked at this company for 10 years.
+        - By June next year, she will have worked at this company for 10 years.
+        - By June next year, she'll have been working for this company for ten years.
     rubric:
       typo_tolerance: 1
     known_wrong:

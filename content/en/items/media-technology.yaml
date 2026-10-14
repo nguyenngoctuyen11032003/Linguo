@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Truyền thông, công nghệ & khoa học" (B2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: Mệnh đề quan hệ không xác định ----------------
@@ -20,9 +19,9 @@ items:
       meaning:
         vi: "mệnh đề quan hệ không xác định - thêm thông tin phụ về một danh từ đã rõ, luôn đặt giữa hai dấu phẩy và không dùng that"
       examples:
-        - target: TikTok, which was launched in 2016, now has over a billion users.
+        - target: TikTok, which was launched internationally in 2017, now has over a billion users.
           translation:
-            vi: TikTok, ra mắt năm 2016, hiện có hơn một tỷ người dùng.
+            vi: TikTok, ra mắt quốc tế năm 2017, hiện có hơn một tỷ người dùng.
         - target: My brother, who works in IT, fixed my laptop in ten minutes.
           translation:
             vi: Anh trai tôi, người làm ngành IT, đã sửa xong laptop của tôi trong mười phút.

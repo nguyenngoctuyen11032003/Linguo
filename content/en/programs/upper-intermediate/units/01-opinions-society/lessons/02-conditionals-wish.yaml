@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:opinions-society-conditionals
 order_index: 2
 level: b2
@@ -149,7 +148,7 @@ exercises:
   - key: en:exercise:opsoc-cond-listen-mixed
     type: listen
     stage: recognition
-    answer_lang: en
+    answer_lang: vi
     difficulty: 4
     item: en:item:mixed-conditional
     prompt:
@@ -183,7 +182,7 @@ exercises:
     answer:
       blanks:
         b1: [were, was]
-        b2: [would]
+        b2: [would, might]
     known_wrong:
       - answer: is
         feedback_vi: Giả định trái với hiện tại thì lùi về quá khứ - were (hoặc was).
@@ -271,6 +270,9 @@ exercises:
         - If only our city had more trees.
         - If only there were more trees in our city.
         - I wish our city had more greenery.
+        - I wish my city had more greenery.
+        - If only my city had more trees.
+        - I wish there were more trees in the city.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -309,6 +311,11 @@ exercises:
         - I would have helped you if I had known.
         - I would have helped you if I'd known.
         - If I had known before, I would have helped you.
+        - If I had known beforehand, I would have helped you.
+        - If I had known earlier, I'd have helped you.
+        - If I'd known in advance, I would have helped you.
+        - I'd have helped you if I had known.
+        - I'd have helped you if I'd known.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -382,7 +389,7 @@ exercises:
       instruction: "Sắp xếp thành câu tiếng Anh: \"Giá mà tôi đã coi biến đổi khí hậu nghiêm túc hơn.\""
       tokens:
         - { id: w-cc, text: climate change }
-        - { id: w-took, text: took }
+        - { id: w-took, text: have taken }
         - { id: w-i, text: I }
         - { id: w-more, text: more seriously }
         - { id: w-would, text: would }
@@ -392,7 +399,7 @@ exercises:
       orders:
         - [w-wish, w-i, w-had, w-cc, w-more]
     explanation:
-      vi: Tiếc nuối về quá khứ dùng wish + had + V3 (had taken). Took là quá khứ đơn - sau wish nó lại nói về hiện tại, nên không hợp ở đây.
+      vi: Tiếc nuối về quá khứ dùng wish + had + V3 (had taken). Sau wish không dùng have taken - thì phải lùi về had taken.
     display_answer: I wish I had taken climate change more seriously.
 
   - key: en:exercise:opsoc-cond-translate-renewable
@@ -416,6 +423,10 @@ exercises:
         - If everyone used renewable energy, we could reduce carbon emissions significantly.
         - If everyone used renewable energy, we would cut carbon emissions significantly.
         - If everyone used renewable energy, we would greatly reduce carbon emissions.
+        - If everyone used renewable energy, we'd cut a lot of carbon emissions.
+        - If everybody used renewable energy, we'd cut a lot of carbon emissions.
+        - If everyone used renewable energy, we'd be able to cut a lot of carbon emissions.
+        - If everyone used renewable energy, we could greatly reduce carbon emissions.
     rubric:
       typo_tolerance: 1
     known_wrong:

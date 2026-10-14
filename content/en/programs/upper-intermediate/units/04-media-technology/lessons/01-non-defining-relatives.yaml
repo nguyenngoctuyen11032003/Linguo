@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:non-defining-relatives
 order_index: 1
 level: b2
@@ -51,10 +50,10 @@ body:
     text:
       vi: "Dấu phẩy làm thay đổi nghĩa: \"My sister who lives in Huế is a journalist\" ngầm hiểu bạn có nhiều chị em; \"My sister, who lives in Huế, is a journalist\" cho biết bạn chỉ có một chị. Tiếng Việt không có dấu hiệu tương đương nên người Việt hay bỏ dấu phẩy hoặc thêm thừa. Khi nói, dấu phẩy thể hiện bằng một quãng ngừng ngắn và giọng hơi hạ xuống."
   - type: example
-    target: TikTok, which was launched in 2016, has changed the way young people use the Internet.
+    target: TikTok, which was launched in 2017, has changed the way young people use the Internet.
     target_lang: en
     translation:
-      vi: TikTok, ra mắt năm 2016, đã thay đổi cách giới trẻ dùng Internet.
+      vi: TikTok, ra mắt năm 2017, đã thay đổi cách giới trẻ dùng Internet.
     note:
       vi: TikTok là tên riêng, đã rõ nên mệnh đề chỉ thêm thông tin phụ - dùng which và hai dấu phẩy.
   - type: example
@@ -191,24 +190,18 @@ exercises:
     prompt:
       instruction: "Sắp xếp thành câu tiếng Anh: \"Đây là nền tảng mà video đầu tiên được chia sẻ trên đó.\""
       tokens:
-        - { id: p-shared, text: shared }
-        - { id: p-which, text: which }
-        - { id: p-this, text: This }
-        - { id: p-video, text: video }
-        - { id: p-platform, text: platform }
-        - { id: p-is, text: is }
-        - { id: p-on, text: on }
-        - { id: p-the1, text: the }
-        - { id: p-was, text: was }
-        - { id: p-first, text: first }
-        - { id: p-the2, text: the }
-        - { id: p-that, text: that }
+        - { id: p-shared, text: was first shared }
+        - { id: p-which, text: on which }
+        - { id: p-this, text: This is }
+        - { id: p-video, text: the video }
+        - { id: p-that, text: on that }
+        - { id: p-platform, text: the platform }
+        - { id: p-is, text: that }
     answer:
       orders:
-        - [p-this, p-is, p-the1, p-platform, p-on, p-which, p-the2, p-video, p-was, p-first, p-shared]
-        - [p-this, p-is, p-the2, p-platform, p-on, p-which, p-the1, p-video, p-was, p-first, p-shared]
+        - [p-this, p-platform, p-which, p-video, p-shared]
     explanation:
-      vi: Giới từ on đứng trước which - on which (trên đó). Sau giới từ không dùng that, nên token that là thừa.
+      vi: Giới từ on đứng trước which - on which (trên đó), đúng văn viết trang trọng. Sau giới từ không dùng that, nên on that là sai; that đứng một mình thì thiếu giới từ on.
     display_answer: This is the platform on which the video was first shared.
 
   - key: en:exercise:ndrc-mcq-sentential-meaning
@@ -347,6 +340,8 @@ exercises:
         - Her video went viral in just one night, which surprised everyone.
         - Her video went viral in one night, which surprised everyone.
         - Her video went viral overnight, which was a surprise to everyone.
+        - Her video went viral overnight, which made everyone surprised.
+        - Her video went viral overnight, which surprised people.
     rubric:
       typo_tolerance: 1
     known_wrong:

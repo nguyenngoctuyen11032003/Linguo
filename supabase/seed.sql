@@ -2149,7 +2149,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "30165573-9178-5e15-a2d7-14dc51bf69b9",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3e304982-fa4f-5097-9f97-180d1edf651d",
       "key": "en:exercise:articles-fill-the-internet-hinted",
       "key_data": {
@@ -2206,8 +2206,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "I first read the story on {{b1}} Internet, and a day later it was all over {{b2}} media."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -2218,7 +2218,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "6441a95a-530b-5f9a-be4d-d53c4be95a28",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "89527b6c-d080-5976-aeae-70296253ab12",
       "key": "en:exercise:articles-fill-unreliable-misleading",
       "key_data": {
@@ -2281,8 +2281,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Don't trust that website - it's completely {{b1}} (reliable), and its headlines are often {{b2}} (lead)."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -2293,7 +2293,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "e79166d9-ad9b-5bbe-b600-b09b81a193fb",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2eb13a4c-7c6e-5bfa-a75b-c7a19741a755",
       "key": "en:exercise:articles-fill-word-formation",
       "key_data": {
@@ -2368,8 +2368,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "The {{b1}} (develop) of AI raises questions about {{b2}} (secure) and public {{b3}} (aware) of the risks."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -2380,7 +2380,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "listen",
       "id": "4f2091e7-ce97-5759-9a45-02d8ca4994c5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3e492211-bcbd-5713-bc01-c3198cb9d5c3",
       "key": "en:exercise:articles-listen-advice",
       "key_data": {
@@ -2429,8 +2429,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -2441,7 +2441,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "3d21bc83-1a5c-5425-9a7a-dc4f0e679b11",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4bc380ed-ca85-5363-912f-f59e337656b4",
       "key": "en:exercise:articles-mcq-prefix-meaning",
       "key_data": {
@@ -2490,8 +2490,8 @@ select content_private.import_bundle($bundle${
         "stem": "\"Many teenagers overuse their phones, and their parents often underestimate the problem.\" Câu này có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -2502,7 +2502,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "f364e971-5ba3-5b30-943e-62bbe4094505",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3e492211-bcbd-5713-bc01-c3198cb9d5c3",
       "key": "en:exercise:articles-mcq-situation-equipment",
       "key_data": {
@@ -2551,8 +2551,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn email cho bộ phận IT để hỏi về thiết bị cho buổi livestream. Câu nào đúng?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -2563,7 +2563,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "6199dd20-a890-5d28-bce8-f76b2627b5ad",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2a2635fc-2b58-5a7c-a5e9-1be8e71d45b6",
       "key": "en:exercise:articles-mcq-technology-general",
       "key_data": {
@@ -2612,8 +2612,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn câu mở đầu bài luận đúng nhất.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -2624,7 +2624,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "eedb92e8-0d6a-5011-8d49-a89629f4bdcd",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "455f6f3f-01af-57a3-841e-4660f3cc550e",
       "key": "en:exercise:articles-order-search-history",
       "key_data": {
@@ -2704,19 +2704,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "d9957f2a4e1c3be26a1bbb193a0dd70d8aab10a02722757c8e1ce511c63ac581",
+      "content_hash": "c6695bee7044823fafeed6cf6844e0c6fcaf6e7179bc06d16dfe3579e730ce01",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "54e0595c-173f-525b-8616-538bcb04dc50",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3e492211-bcbd-5713-bc01-c3198cb9d5c3",
       "key": "en:exercise:articles-translate-information-media",
       "key_data": {
@@ -2729,7 +2729,11 @@ select content_private.import_bundle($bundle${
             "The media often give misleading information about AI.",
             "The media often gives misleading information about AI.",
             "The media often spread misleading information about artificial intelligence.",
-            "The media often spreads misleading information about artificial intelligence."
+            "The media often spreads misleading information about artificial intelligence.",
+            "The media often provide misleading information about AI.",
+            "The media often provides misleading information about AI.",
+            "The media often spread misleading information about AI.",
+            "The media often spreads misleading information about AI."
           ]
         },
         "display_answer": "The media often give misleading information about artificial intelligence.",
@@ -2773,19 +2777,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Truyền thông thường đưa ra thông tin gây hiểu lầm về trí tuệ nhân tạo."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "7ee41e5a5b7879363f256a2afca6eb0c1deec82d10e36d8664e9a2e6920affa9",
+      "content_hash": "7eb041ce1c367356ecc8b0346ceb49ee8fbb7607d419dfb7cc66a8b9a3c2f710",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "675bc3a2-df2d-5a1e-b35c-f4c9d5632cea",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2a2635fc-2b58-5a7c-a5e9-1be8e71d45b6",
       "key": "en:exercise:articles-translate-technology-changed",
       "key_data": {
@@ -2796,7 +2800,9 @@ select content_private.import_bundle($bundle${
             "Technology has changed how we learn and work.",
             "Technology has changed how we study and work.",
             "Technology has changed the way that we learn and work.",
-            "Technology has changed the way we work and learn."
+            "Technology has changed the way we work and learn.",
+            "Technology has changed how we work and learn.",
+            "Technology has changed the ways we learn and work."
           ]
         },
         "display_answer": "Technology has changed the way we learn and work.",
@@ -2835,8 +2841,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Công nghệ đã thay đổi cách chúng ta học và làm việc."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -2847,7 +2853,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "81fbc73e-c39e-5a3d-b8bc-3fadcb241462",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "52e9900b-bb9b-563f-8987-168357b2c95d",
       "key": "en:exercise:articles-translate-underestimate-screen-time",
       "key_data": {
@@ -2891,8 +2897,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Many parents underestimate how much screen time their children have."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -8604,11 +8610,11 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "412280fd27a08f8327b0a4bcf5bf50cecee298510e7e3a8c4e8a29a4a310290c",
+      "content_hash": "bb9f844668b1e98f04877a9439487ff0a6253b43433d205ef5aa09c5592dc7a2",
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "fbfc9356-7126-5859-babf-a5339ef54ef5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7693afcd-a651-51ce-97db-77644e2acbd8",
       "key": "en:exercise:deduction-fill-cant-be-hinted",
       "key_data": {
@@ -8617,13 +8623,15 @@ select content_private.import_bundle($bundle${
             "b1": [
               "can't",
               "cannot",
-              "couldn't"
+              "couldn't",
+              "might not",
+              "may not"
             ]
           }
         },
         "display_answer": "His car is outside, so he can't be at work.",
         "explanation": {
-          "vi": "Bằng chứng (xe ở ngoài) khiến người nói gần như chắc chắn anh ấy không ở chỗ làm, nên dùng can't + be. Mustn't không dùng để suy đoán."
+          "vi": "Bằng chứng (xe ở ngoài) khiến người nói gần như chắc chắn anh ấy không ở chỗ làm, nên can't + be là tự nhiên nhất; might not / may not cũng đúng nhưng kém chắc chắn hơn. Mustn't không dùng để suy đoán."
         },
         "known_wrong": [
           {
@@ -8635,11 +8643,6 @@ select content_private.import_bundle($bundle${
             "answer": "must",
             "error_tag": "deduction_degree",
             "feedback_vi": "Must là \"chắc hẳn là\", ngược nghĩa với câu. Xe ở nhà nên anh ấy không thể ở chỗ làm - can't."
-          },
-          {
-            "answer": "might not",
-            "error_tag": "deduction_degree",
-            "feedback_vi": "Might not chỉ là \"có lẽ không\". Bằng chứng ở đây rất rõ nên dùng can't."
           }
         ],
         "rubric": {
@@ -8665,8 +8668,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "His car is outside, so he {{b1}} be at work."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -8677,7 +8680,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "80d9a6e6-5dcc-5196-8b3c-7969b1300eee",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "1402b3d3-1cd7-5606-bd03-7186e44432d0",
       "key": "en:exercise:deduction-fill-cant-have-seen",
       "key_data": {
@@ -8743,26 +8746,29 @@ select content_private.import_bundle($bundle${
         ],
         "template": "You {{b1}} have {{b2}} Minh at the party last night - he was in hospital."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "9aa64e77b5b25e3ea9b2997ed31b005ff6a6137b08212efe704b6c88eed3bd59",
+      "content_hash": "974c05b1826f9f6cabd196dce30c8f30dea6de0c64f35ceb359e4c82ea22a37b",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "86e52351-aafc-55e8-9b4d-a77a39bdd49d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "12e5c1b4-b172-52ce-9230-54c2a1ed21a1",
       "key": "en:exercise:deduction-fill-must-have-left",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "must"
+              "must",
+              "might",
+              "may",
+              "could"
             ],
             "b2": [
               "left"
@@ -8771,7 +8777,7 @@ select content_private.import_bundle($bundle${
         },
         "display_answer": "Lan always replies within minutes, but she hasn't answered all day. She must have left her phone at home.",
         "explanation": {
-          "vi": "Lan luôn trả lời ngay mà cả ngày không trả lời là bằng chứng khá chắc, nên dùng must have + V3. Để quên đồ ở một nơi là leave something somewhere, V3 là left."
+          "vi": "Lan luôn trả lời ngay mà cả ngày không trả lời là bằng chứng khá chắc, nên must have + V3 là tự nhiên nhất (might/may/could have nếu bạn kém chắc chắn hơn). Để quên đồ ở một nơi là leave something somewhere, V3 là left."
         },
         "known_wrong": [
           {
@@ -8818,8 +8824,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Lan always replies within minutes, but she hasn't answered all day. She {{b1}} have {{b2}} her phone at home."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -8830,7 +8836,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "listen",
       "id": "5edae89f-6649-56ae-a9fb-8c8f0fc1c504",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "1402b3d3-1cd7-5606-bd03-7186e44432d0",
       "key": "en:exercise:deduction-listen-cant-have-seen",
       "key_data": {
@@ -8879,8 +8885,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -8891,7 +8897,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "5bd391f5-6311-5b8f-9b9c-91eba9adfa15",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "12e5c1b4-b172-52ce-9230-54c2a1ed21a1",
       "key": "en:exercise:deduction-mcq-must-have",
       "key_data": {
@@ -8940,8 +8946,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn câu đúng: \"Cô ấy không đến. Chắc cô ấy quên mất rồi.\"",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -8952,7 +8958,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "8fdeb143-71c6-5e30-b887-df779a9081b8",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8b3d8b9b-f035-55c4-96fa-82ced7e652a3",
       "key": "en:exercise:deduction-mcq-must-meaning",
       "key_data": {
@@ -9001,8 +9007,8 @@ select content_private.import_bundle($bundle${
         "stem": "\"You've been working for twelve hours. You must be exhausted.\" Must ở đây có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -9013,7 +9019,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "6e1eccd2-3585-55d4-b003-0df53cc410df",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "1402b3d3-1cd7-5606-bd03-7186e44432d0",
       "key": "en:exercise:deduction-mcq-situation-hospital",
       "key_data": {
@@ -9062,8 +9068,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn của bạn nói \"I saw Huy at the cinema last night.\" Nhưng bạn biết chắc tối qua Huy nằm viện. Bạn đáp thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -9074,7 +9080,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "1c350ca8-417b-5478-96f3-62e00a220fbf",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2c9628b5-d19d-5961-8e0b-2b97976a65a3",
       "key": "en:exercise:deduction-mcq-situation-might-moved",
       "key_data": {
@@ -9123,8 +9129,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn mất liên lạc với một người bạn cũ đã lâu và không rõ giờ anh ấy ở đâu. Câu nào diễn đạt đúng sự không chắc chắn?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -9135,7 +9141,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "559b4d60-c5a5-5faa-b5f3-c5ff8a46c18e",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c715a7a6-3d54-5758-9aea-3de8963e9702",
       "key": "en:exercise:deduction-order-might-have-missed",
       "key_data": {
@@ -9199,19 +9205,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "be1facd2906ac04859b88951990454811d6127417af278e56d8756c79280b1fd",
+      "content_hash": "71d8eec0708a2bdb97c335f380a9acd301c2aed28094bb3caacb60063214931e",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "845f8202-1cbf-56c3-8587-d87da30a0f28",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "1402b3d3-1cd7-5606-bd03-7186e44432d0",
       "key": "en:exercise:deduction-translate-cant-have-seen-us",
       "key_data": {
@@ -9227,7 +9233,11 @@ select content_private.import_bundle($bundle${
             "She couldn't have ignored us on purpose. She can't have seen us.",
             "She couldn't have ignored us on purpose. She probably didn't see us.",
             "She couldn't have ignored us on purpose. She couldn't have seen us.",
-            "She can't have ignored us on purpose. She couldn't have seen us."
+            "She can't have ignored us on purpose. She couldn't have seen us.",
+            "She can't have ignored us deliberately. She can't have seen us.",
+            "She can't have ignored us deliberately. She probably didn't see us.",
+            "She can't have ignored us on purpose. She must not have noticed us.",
+            "She can't have ignored us on purpose. She probably didn't notice us."
           ]
         },
         "display_answer": "She can't have ignored us on purpose. She can't have seen us.",
@@ -9266,8 +9276,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Cô ấy không thể nào đã cố tình lờ chúng ta đi. Chắc cô ấy không thấy chúng ta."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -9278,7 +9288,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "d9c0f357-b3b1-57ff-af96-5b2cd223153b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "12e5c1b4-b172-52ce-9230-54c2a1ed21a1",
       "key": "en:exercise:deduction-translate-must-have-forgotten",
       "key_data": {
@@ -9336,19 +9346,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chắc hẳn anh ấy đã quên sinh nhật của tôi."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "vi",
-      "content_hash": "693be9b1079e109eea435c759ca206a01162407afb24541a4faf811876a70a6f",
+      "content_hash": "40ab1e7ae4415c615171eb8043c0293976c5958da4b28d9fffd5aca41609406a",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "65e2fe0f-fd7e-570d-b534-df53821939cb",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7332f230-2661-5f9e-9482-5c69e635e935",
       "key": "en:exercise:deduction-translate-something-happened",
       "key_data": {
@@ -9368,7 +9378,8 @@ select content_private.import_bundle($bundle${
             "Anh ấy có vẻ buồn. Chắc hẳn đã có chuyện gì xảy ra.",
             "Anh ấy có vẻ không vui. Chắc đã có chuyện gì xảy ra.",
             "Trông anh ấy không vui. Chắc đã có chuyện gì xảy ra.",
-            "Trông anh ấy buồn bực. Hẳn là đã có chuyện gì xảy ra."
+            "Trông anh ấy buồn bực. Hẳn là đã có chuyện gì xảy ra.",
+            "Trông anh ấy buồn bực. Chắc hẳn phải có chuyện gì xảy ra."
           ]
         },
         "display_answer": "Trông anh ấy buồn bực. Chắc đã có chuyện gì xảy ra.",
@@ -9397,8 +9408,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "He looks upset. Something must have happened."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -17943,7 +17954,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "1db44f04-1d8f-5645-9359-8dd6df9a19c0",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "06b27616-2173-5f3f-8ffa-658821de6515",
       "key": "en:exercise:gerinf-fill-enjoy-hinted",
       "key_data": {
@@ -17998,8 +18009,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "I really enjoy {{b1}} (spend) time with my cousins at Tết."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -18010,7 +18021,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "a63d2e47-f860-57ef-aae2-e9f9a7d3f73c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "347523ee-748f-52c5-ab50-5b48289b1be9",
       "key": "en:exercise:gerinf-fill-forgot-to-buy",
       "key_data": {
@@ -18068,26 +18079,27 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Sorry, I forgot {{b1}} (buy) the cake! But I'll never forget {{b2}} (see) your face when you opened the present."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "ede7ffef279ae2cbad5c89b4faf8de878426ea6c63e8c29b08586057e704cae2",
+      "content_hash": "722ab00be796daf9611faf3a74fa9923ed9e20136831f43d3ee4297fa58ae9a5",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "64034f5c-4c5f-5584-99fc-207ab5f3140e",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "61000d26-c2a5-5c45-a3db-7f99fe7d7939",
       "key": "en:exercise:gerinf-fill-stopped-to-buy",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "to buy"
+              "to buy",
+              "in order to buy"
             ]
           }
         },
@@ -18126,8 +18138,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "On the way to my parents' house, I stopped {{b1}} (buy) some flowers for my mum."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -18138,7 +18150,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "listen",
       "id": "dd2e5956-f48f-5ca7-aa11-e30cb2c34c90",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "729f1db6-0f33-5327-a7fd-211213e3bb55",
       "key": "en:exercise:gerinf-listen-remember-to-call",
       "key_data": {
@@ -18187,8 +18199,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -18199,7 +18211,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "f8707ec6-9c59-58b8-98cb-66ce663326cb",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "347523ee-748f-52c5-ab50-5b48289b1be9",
       "key": "en:exercise:gerinf-mcq-never-forget",
       "key_data": {
@@ -18248,8 +18260,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn câu đúng: \"Tôi sẽ không bao giờ quên lần đầu gặp cô ấy.\"",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -18260,7 +18272,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "8d8d441c-2447-59e4-a950-b4397f8ca21c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "61000d26-c2a5-5c45-a3db-7f99fe7d7939",
       "key": "en:exercise:gerinf-mcq-stopped-smoking",
       "key_data": {
@@ -18309,8 +18321,8 @@ select content_private.import_bundle($bundle${
         "stem": "\"My grandfather stopped smoking last year.\" nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -18321,7 +18333,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "c2a91a3b-1da6-5f71-8457-060efb42ac9d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4a185609-44e3-54f7-92cb-31c348293c0a",
       "key": "en:exercise:gerinf-mcq-try-advice",
       "key_data": {
@@ -18370,8 +18382,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn của bạn than mất ngủ vì lo chuyện tình cảm. Bạn muốn khuyên \"thử đọc sách trước khi ngủ xem sao\". Câu nào đúng?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -18382,7 +18394,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "8088994f-af5c-5b85-96e4-31564bf717a2",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7d7ae6ae-4cff-5de9-a199-41942d2d287d",
       "key": "en:exercise:gerinf-order-refused-apologise",
       "key_data": {
@@ -18451,19 +18463,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "22af9861ad51d2a4d62a332361b2b1b518cbe934ec9ce55b47bf9839243705bd",
+      "content_hash": "e99ddca1abef45d834d11fbb1758af7f7401bb82b292d47a7ace2d6675499e1a",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "d54467f0-6293-5bd1-b926-70f719e96bfb",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "97b6dbe8-b22c-5852-86a6-b33f990ef7b9",
       "key": "en:exercise:gerinf-translate-apologised",
       "key_data": {
@@ -18478,7 +18490,11 @@ select content_private.import_bundle($bundle${
             "She said sorry to me for ignoring my messages.",
             "She said sorry for ignoring my messages.",
             "She apologised for ignoring my messages.",
-            "She apologized for ignoring my messages."
+            "She apologized for ignoring my messages.",
+            "She apologised for ignoring my message.",
+            "She apologized for ignoring my message.",
+            "She apologised for having ignored my messages.",
+            "She said sorry to me for ignoring my message."
           ]
         },
         "display_answer": "She apologised to me for ignoring my messages.",
@@ -18517,19 +18533,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Cô ấy đã xin lỗi tôi vì đã phớt lờ tin nhắn của tôi."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "2b32f7f075b1c6c2388527c4d4263cb282dfe8e22cf0cab60888cf070d66bdde",
+      "content_hash": "3c3b85b50c4c01bdda988de368ce99a30b742a294b9c1650cbc5348c84e4d1c7",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "75be82ad-3187-5a96-9fcf-d103d634ae86",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f51642fa-9bb4-5525-89d3-2cf664ff9532",
       "key": "en:exercise:gerinf-translate-cant-stand-promise",
       "key_data": {
@@ -18543,7 +18559,13 @@ select content_private.import_bundle($bundle${
             "I can't stand having to wait, so he promised to arrive on time.",
             "I cannot stand waiting, so he promised to come on time.",
             "I hate waiting, so he promised to come on time.",
-            "I hate waiting, so he promised to be on time."
+            "I hate waiting, so he promised to be on time.",
+            "I hate having to wait, so he promised to be on time.",
+            "I can't bear waiting, so he promised to come on time.",
+            "I can't stand waiting, so he promised he would come on time.",
+            "I can't stand waiting, so he promised he'd come on time.",
+            "I can't stand waiting, so he promised he would be on time.",
+            "I can't stand waiting, so he promised he'd be on time."
           ]
         },
         "display_answer": "I can't stand waiting, so he promised to come on time.",
@@ -18582,8 +18604,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tôi không chịu nổi việc phải chờ đợi, nên anh ấy hứa sẽ đến đúng giờ."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -18594,7 +18616,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "11d6e537-349b-579b-8c60-044519caeb52",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b5b25047-c612-5614-82ab-f588d73f4b0f",
       "key": "en:exercise:gerinf-translate-regret-not-keeping",
       "key_data": {
@@ -18640,19 +18662,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "I regret not keeping in touch with her."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "f563d0bf2243636480c9463c51a946ab828b65a22a01a4048a7615ccc58ae016",
+      "content_hash": "96e64889ed026ff55733f85dfded77ba9515753ebcfc5883e870230ec7010163",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "a8d1ec21-f96e-51ea-a6f6-28faae43e603",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "61000d26-c2a5-5c45-a3db-7f99fe7d7939",
       "key": "en:exercise:gerinf-translate-stopped-smoking",
       "key_data": {
@@ -18665,7 +18687,9 @@ select content_private.import_bundle($bundle${
             "My father quit smoking five years ago.",
             "My dad quit smoking five years ago.",
             "My father stopped smoking 5 years ago.",
-            "My dad stopped smoking 5 years ago."
+            "My dad stopped smoking 5 years ago.",
+            "My father quit smoking 5 years ago.",
+            "My father gave up smoking 5 years ago."
           ]
         },
         "display_answer": "My father stopped smoking five years ago.",
@@ -18704,8 +18728,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Bố tôi đã bỏ thuốc lá cách đây năm năm."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -29883,11 +29907,11 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "6b514e3a16892234fc4894221afe8238ae85f6c189d60e028078f59c95613fd8",
+      "content_hash": "440b39550397acaeda78ac122e519efa4be5fea0f675c4d1b2000b75d32e1235",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "1ba8cd37-5a4c-58bf-a014-1e9be10cee6d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3e492211-bcbd-5713-bc01-c3198cb9d5c3",
       "key": "en:exercise:media-review-fill-articles-uncountable",
       "key_data": {
@@ -29897,7 +29921,8 @@ select content_private.import_bundle($bundle${
               "advice"
             ],
             "b2": [
-              "overuse"
+              "overuse",
+              "overdo"
             ]
           }
         },
@@ -29920,11 +29945,6 @@ select content_private.import_bundle($bundle${
             "answer": "underuse",
             "error_tag": "prefix",
             "feedback_vi": "Under- là dùng chưa đủ - ngược ý. Dùng quá mức là overuse."
-          },
-          {
-            "answer": "misuse",
-            "error_tag": "prefix",
-            "feedback_vi": "Misuse là dùng sai mục đích; người viết muốn nói dùng quá nhiều - overuse."
           }
         ],
         "rubric": {
@@ -29950,19 +29970,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "My {{b1}} is simple: technology isn't evil, but most of us {{b2}} it. Turn off notifications and keep your phone out of the bedroom."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "2f85ca1d6112db362419bd57d11788dd0ab33634470af683b0a83c8dcef9ef94",
+      "content_hash": "878d94ddd00922cfb80a017b7575eebe027e64ef612e22459db0ba98e009811c",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "36f454a6-2972-592d-a1af-1b6ea3383c62",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "687c36fc-ddf8-53f4-bd65-e8cf8852d076",
       "key": "en:exercise:media-review-fill-participles",
       "key_data": {
@@ -29975,7 +29995,9 @@ select content_private.import_bundle($bundle${
               "Having"
             ],
             "b3": [
-              "deleted"
+              "deleted",
+              "uninstalled",
+              "removed"
             ]
           }
         },
@@ -30027,8 +30049,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "{{b1}} (free) from the algorithm, I started reading again. {{b2}} {{b3}} (delete) every app, I suddenly had hours of free time."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -30039,7 +30061,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "2d9a79f7-68eb-59ff-b6af-4a6d97edeaec",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b65f855c-0264-5e60-a1fa-d582ffec5ed6",
       "key": "en:exercise:media-review-fill-which-who-hinted",
       "key_data": {
@@ -30101,8 +30123,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "The researchers, {{b1}} are based in Singapore, tracked the participants' screen time, {{b2}} took three months."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -30113,7 +30135,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "listen",
       "id": "df1a6251-9d41-50d7-b161-b9196f35ad7d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "fb7aa6f5-e026-5659-9e59-1fae59055ba5",
       "key": "en:exercise:media-review-listen-attention-span",
       "key_data": {
@@ -30162,8 +30184,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -30174,7 +30196,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "a10233fc-d458-567b-b7e7-1ce22ef7bc9b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2192a29c-a9fe-59fa-82a4-cf2d51e8f63c",
       "key": "en:exercise:media-review-mcq-fact-or-opinion",
       "key_data": {
@@ -30223,8 +30245,8 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào là Ý KIẾN của người viết blog, không phải sự thật từ nghiên cứu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -30235,7 +30257,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "d2bea6e9-1375-5af7-8f0b-3c285439f2a5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2a2635fc-2b58-5a7c-a5e9-1be8e71d45b6",
       "key": "en:exercise:media-review-mcq-situation-comment",
       "key_data": {
@@ -30284,8 +30306,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn viết bình luận dưới bài blog, đồng ý một phần với tác giả. Câu nào đúng ngữ pháp và đúng tinh thần bản tin khoa học?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -30296,7 +30318,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "7f4bd8b5-ac14-5cb8-9fd2-94ad3109ee00",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "56bbd028-e9f0-59d4-b7b6-794e65d5d3b3",
       "key": "en:exercise:media-review-mcq-study-finding",
       "key_data": {
@@ -30345,8 +30367,8 @@ select content_private.import_bundle($bundle${
         "stem": "Theo bản tin \"Less scrolling, better sleep?\", nghiên cứu phát hiện điều gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -30357,7 +30379,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "d42ff60a-dc4e-5b11-9e97-616e018dee7f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "d5f9ec43-93a3-573a-b155-76ade1dc87c7",
       "key": "en:exercise:media-review-order-mental-health",
       "key_data": {
@@ -30436,8 +30458,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -30448,7 +30470,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "d9c57950-87ee-5a4b-838c-585b8497225f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "a36f6536-3360-5e36-a8c8-c4b0fd143fe5",
       "key": "en:exercise:media-review-translate-blog-advice",
       "key_data": {
@@ -30490,19 +30512,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "You don't need a complete digital detox - even keeping your phone out of the bedroom can help."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "a7ab2e21c124746626a34d26991f121b85d48663c9921dece329a75cacd4efff",
+      "content_hash": "7a47e502646780261bd16b797df3a4a510d96a3ef431a923c73ed76dd4006597",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "e8f71e0f-3c78-53f6-95ad-3fd4f032f469",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8baa386c-9675-5008-89d1-bcbfd823fe36",
       "key": "en:exercise:media-review-translate-deleted-apps",
       "key_data": {
@@ -30517,7 +30539,12 @@ select content_private.import_bundle($bundle${
             "I've deleted all the social media apps from my phone, which really surprised my friends.",
             "I deleted every social media app from my phone, which made my friends very surprised.",
             "I deleted all the social media apps on my phone, which really surprised my friends.",
-            "I deleted every social media app on my phone, which really surprised my friends."
+            "I deleted every social media app on my phone, which really surprised my friends.",
+            "I deleted every social media app from my phone, which surprised my friends a lot.",
+            "I deleted every social media app from my phone, which really shocked my friends.",
+            "I deleted every social media app from my phone, which came as a surprise to my friends.",
+            "I deleted every social media app from my phone, which made my friends really surprised.",
+            "I have deleted all the social media apps from my phone, which really surprised my friends."
           ]
         },
         "display_answer": "I deleted every social media app from my phone, which really surprised my friends.",
@@ -30556,19 +30583,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tôi đã xoá mọi ứng dụng mạng xã hội khỏi điện thoại, điều đó khiến bạn bè tôi rất ngạc nhiên."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "a0517761c44d1821fc6eb468594b959979ca31365cd643cd686aafe5a27758eb",
+      "content_hash": "bf5e21f576e66d4fc419ac6cd4a795b37f6e4a1c236ab6505e053e6e1f996073",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "b9b8fe4c-5a26-56cf-9754-40ac38fee57e",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7c57bcfe-3454-59aa-98d2-4b9fcf0923c3",
       "key": "en:exercise:media-review-translate-link-sleep",
       "key_data": {
@@ -30582,6 +30609,13 @@ select content_private.import_bundle($bundle${
             "The study found a link between screen time and poor sleep.",
             "The study suggests a link between screen time and poor sleep.",
             "The study shows a link between screen time and poor sleep.",
+            "The study found that there is a link between screen time and poor sleep.",
+            "The research suggests a link between screen time and poor sleep.",
+            "The research shows a link between screen time and poor sleep.",
+            "The study suggests that screen time and poor sleep are linked.",
+            "The study shows that screen time and poor sleep are linked.",
+            "The study suggests that there is a connection between screen time and poor sleep.",
+            "The study shows that there is a connection between screen time and poor sleep.",
             "The study suggests that screen time is linked to poor sleep.",
             "The study shows that screen time is linked to poor sleep.",
             "The research suggests that there is a link between screen time and poor sleep.",
@@ -30624,8 +30658,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Nghiên cứu cho thấy có mối liên hệ giữa thời gian dùng màn hình và giấc ngủ kém."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -31956,7 +31990,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "375fc792-234a-5b50-aff2-857db0e6612c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8baa386c-9675-5008-89d1-bcbfd823fe36",
       "key": "en:exercise:ndrc-fill-sentential-which-hinted",
       "key_data": {
@@ -32011,8 +32045,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "The app crashed in the middle of my presentation, {{b1}} was really embarrassing."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -32023,7 +32057,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "686b1012-9629-5325-9289-ee8dc777ff2c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "bbad5e84-7e76-559f-ba36-336878cec82e",
       "key": "en:exercise:ndrc-fill-to-whom",
       "key_data": {
@@ -32074,8 +32108,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Dr Hà, to {{b1}} we sent our questions, is an expert in cybersecurity."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -32086,7 +32120,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "c3031642-4393-5f16-8aee-f587e4a8baf1",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "d4097af8-f469-5d41-bf2e-ce126115463d",
       "key": "en:exercise:ndrc-fill-whose-article",
       "key_data": {
@@ -32149,8 +32183,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "The journalist, {{b1}} article went {{b2}} last week, has been invited to speak on TV."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -32161,7 +32195,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "listen",
       "id": "2b952b73-6365-5fd2-addb-fd4be3447099",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "d4097af8-f469-5d41-bf2e-ce126115463d",
       "key": "en:exercise:ndrc-listen-whose-channel",
       "key_data": {
@@ -32210,8 +32244,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -32222,7 +32256,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "7c247eee-34d6-5429-bc1e-9bff7f63412b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b65f855c-0264-5e60-a1fa-d582ffec5ed6",
       "key": "en:exercise:ndrc-mcq-comma-which",
       "key_data": {
@@ -32271,8 +32305,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn câu đúng ngữ pháp và đúng dấu câu.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -32283,7 +32317,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "9258e9bc-c660-514d-9abc-57e517ee7651",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8baa386c-9675-5008-89d1-bcbfd823fe36",
       "key": "en:exercise:ndrc-mcq-sentential-meaning",
       "key_data": {
@@ -32332,8 +32366,8 @@ select content_private.import_bundle($bundle${
         "stem": "\"She posted a photo of her exam results, which made her parents angry.\" Điều gì khiến bố mẹ cô ấy tức giận?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -32344,7 +32378,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "c961b3b7-9ad6-5d25-9999-b128941cef58",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "aad61ad5-566b-5d07-99e1-dc4233ffdd3a",
       "key": "en:exercise:ndrc-mcq-situation-report",
       "key_data": {
@@ -32393,8 +32427,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn viết báo cáo trang trọng về một nghiên cứu, muốn nói \"Nghiên cứu này, có 2.000 thiếu niên tham gia, kéo dài ba năm.\" Câu nào đúng nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -32405,7 +32439,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "f84745a9-e499-505c-acd2-ab54bdda0fa9",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b65f855c-0264-5e60-a1fa-d582ffec5ed6",
       "key": "en:exercise:ndrc-order-laptop",
       "key_data": {
@@ -32480,19 +32514,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "3cd29c2c11bad499dd0ac778b8c0f8b47ee00bd045c5662de4578d178bd78608",
+      "content_hash": "7146768f6c7469156d021833ca861773c0e85f6a5dd89d5b9ee3f87d792ad4c2",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "eb24acee-9afb-5d3a-b9a9-c6eea019d458",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "aad61ad5-566b-5d07-99e1-dc4233ffdd3a",
       "key": "en:exercise:ndrc-order-on-which",
       "key_data": {
@@ -32500,35 +32534,16 @@ select content_private.import_bundle($bundle${
           "orders": [
             [
               "p-this",
-              "p-is",
-              "p-the1",
               "p-platform",
-              "p-on",
               "p-which",
-              "p-the2",
               "p-video",
-              "p-was",
-              "p-first",
-              "p-shared"
-            ],
-            [
-              "p-this",
-              "p-is",
-              "p-the2",
-              "p-platform",
-              "p-on",
-              "p-which",
-              "p-the1",
-              "p-video",
-              "p-was",
-              "p-first",
               "p-shared"
             ]
           ]
         },
         "display_answer": "This is the platform on which the video was first shared.",
         "explanation": {
-          "vi": "Giới từ on đứng trước which - on which (trên đó). Sau giới từ không dùng that, nên token that là thừa."
+          "vi": "Giới từ on đứng trước which - on which (trên đó), đúng văn viết trang trọng. Sau giới từ không dùng that, nên on that là sai; that đứng một mình thì thiếu giới từ on."
         },
         "known_wrong": [],
         "rubric": {
@@ -32546,56 +32561,36 @@ select content_private.import_bundle($bundle${
         "tokens": [
           {
             "id": "p-shared",
-            "text": "shared"
+            "text": "was first shared"
           },
           {
             "id": "p-which",
-            "text": "which"
+            "text": "on which"
           },
           {
             "id": "p-this",
-            "text": "This"
+            "text": "This is"
           },
           {
             "id": "p-video",
-            "text": "video"
-          },
-          {
-            "id": "p-platform",
-            "text": "platform"
-          },
-          {
-            "id": "p-is",
-            "text": "is"
-          },
-          {
-            "id": "p-on",
-            "text": "on"
-          },
-          {
-            "id": "p-the1",
-            "text": "the"
-          },
-          {
-            "id": "p-was",
-            "text": "was"
-          },
-          {
-            "id": "p-first",
-            "text": "first"
-          },
-          {
-            "id": "p-the2",
-            "text": "the"
+            "text": "the video"
           },
           {
             "id": "p-that",
+            "text": "on that"
+          },
+          {
+            "id": "p-platform",
+            "text": "the platform"
+          },
+          {
+            "id": "p-is",
             "text": "that"
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -32606,7 +32601,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "485001b2-717b-5183-8b0a-94151114ff23",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "89214487-dbdf-5363-9e1c-4eb9c4f83041",
       "key": "en:exercise:ndrc-translate-linh-followers",
       "key_data": {
@@ -32661,8 +32656,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Linh, người có hơn một triệu người theo dõi, là một người sáng tạo nội dung."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -32673,7 +32668,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "cdef63f4-13ea-52d6-8e40-3ea5c2f8fe62",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "6308974b-2e6a-5bf1-b310-a1f511f82af4",
       "key": "en:exercise:ndrc-translate-netflix-subscribe",
       "key_data": {
@@ -32717,19 +32712,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Netflix, which I subscribe to, has raised its prices again."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "338251e551985b28a31f6b4386c5e737cd350dd1f13d60cb79f23182cec0000c",
+      "content_hash": "99f6a998f20ea36659215342395be6a227fed19356ace0727c35ab0de325245a",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "8e2e293d-4d30-553e-8003-51d5ec6a9db2",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "69ef789d-8c65-519c-bc0a-dfa7cdd7beb1",
       "key": "en:exercise:ndrc-translate-went-viral-surprised",
       "key_data": {
@@ -32740,7 +32735,9 @@ select content_private.import_bundle($bundle${
             "Her video went viral overnight, which took everyone by surprise.",
             "Her video went viral in just one night, which surprised everyone.",
             "Her video went viral in one night, which surprised everyone.",
-            "Her video went viral overnight, which was a surprise to everyone."
+            "Her video went viral overnight, which was a surprise to everyone.",
+            "Her video went viral overnight, which made everyone surprised.",
+            "Her video went viral overnight, which surprised people."
           ]
         },
         "display_answer": "Her video went viral overnight, which surprised everyone.",
@@ -32784,8 +32781,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Video của cô ấy lan truyền chóng mặt chỉ sau một đêm, điều đó khiến mọi người bất ngờ."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -35561,11 +35558,11 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "9d4403e07e5bb147cac38f763713416d65f2542bf635788f46585225779c6413",
+      "content_hash": "a8663eab472f8085376279d156130b662fdeb772b23ea5d74726065b27b54b47",
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "fe18495c-ba8e-5532-bf13-39fe77baaecd",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "878d947a-15e5-5b48-b992-b2f58e987b3d",
       "key": "en:exercise:opsoc-cond-fill-second-hinted",
       "key_data": {
@@ -35576,7 +35573,8 @@ select content_private.import_bundle($bundle${
               "was"
             ],
             "b2": [
-              "would"
+              "would",
+              "might"
             ]
           }
         },
@@ -35628,8 +35626,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "If public transport {{b1}} cheaper, fewer people {{b2}} drive to work."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -35640,7 +35638,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "63812304-ef20-575a-aa60-65ed28281e4c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "274cfcc4-992f-5401-9a6a-a21a8940ba3c",
       "key": "en:exercise:opsoc-cond-fill-take-action",
       "key_data": {
@@ -35703,19 +35701,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "If the government {{b1}} {{b2}} action earlier, the river would not have been so polluted."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
-      "answer_lang": "en",
-      "content_hash": "63d5638dee4f9d909ee74ec0613c6a7794eeac5eeb99dfb2c0bca2b390a16c79",
+      "answer_lang": "vi",
+      "content_hash": "630ecd4deef584fca4883f8890c6e95e6992a8776ac1e851d85c780160df35c7",
       "difficulty": 4,
       "exercise_type": "listen",
       "id": "aadfef4e-3ff5-53dc-bf76-fe1f8fbdf4df",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "35cf2913-2064-5acc-969f-d3e2e3643811",
       "key": "en:exercise:opsoc-cond-listen-mixed",
       "key_data": {
@@ -35764,8 +35762,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -35776,7 +35774,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "8d69e1cd-b6f3-51ef-b703-382aa4f8ffb5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "474fe2e5-61a7-55a5-a04b-57a1974d5076",
       "key": "en:exercise:opsoc-cond-mcq-had-known",
       "key_data": {
@@ -35825,8 +35823,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn đáp án đúng: If I ___ about the flood warning, I would have left the city earlier.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -35837,7 +35835,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "a1f5ddb3-061c-5ad7-bbdc-af1200190a93",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "35cf2913-2064-5acc-969f-d3e2e3643811",
       "key": "en:exercise:opsoc-cond-mcq-mixed-situation",
       "key_data": {
@@ -35886,8 +35884,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn đang làm ở ngân hàng nhưng tiếc vì hồi đại học đã không học khoa học môi trường. Câu nào diễn đạt đúng ý này?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -35898,7 +35896,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "b0b66684-2468-5368-8419-baa22e7d9995",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "9c8637f8-04e9-5798-a4e5-5900ead16a28",
       "key": "en:exercise:opsoc-cond-mcq-pose",
       "key_data": {
@@ -35947,8 +35945,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn động từ đúng: Rising sea levels ___ a serious threat to coastal cities such as Ho Chi Minh City.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -35959,7 +35957,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "5840acb9-55f7-5eaf-b7fd-734179df7b0d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "287ff05c-a585-511d-bdc6-db0e37324649",
       "key": "en:exercise:opsoc-cond-mcq-wish-could",
       "key_data": {
@@ -36008,19 +36006,19 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn đáp án đúng: I wish I ___ speak English more fluently.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "94ef22221e465e0a5695533e4adf61451b0875c29e9e0316f43826697c0a800b",
+      "content_hash": "1e1dea7ae36e1354e102ba19f466389ec9753161857a7f7da87639c89ebd4de7",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "9797602e-27e1-5c94-ac59-c4fe1d0f4984",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b9a392a2-e101-5863-8fe6-7c637e1e3659",
       "key": "en:exercise:opsoc-cond-order-wish-past",
       "key_data": {
@@ -36037,7 +36035,7 @@ select content_private.import_bundle($bundle${
         },
         "display_answer": "I wish I had taken climate change more seriously.",
         "explanation": {
-          "vi": "Tiếc nuối về quá khứ dùng wish + had + V3 (had taken). Took là quá khứ đơn - sau wish nó lại nói về hiện tại, nên không hợp ở đây."
+          "vi": "Tiếc nuối về quá khứ dùng wish + had + V3 (had taken). Sau wish không dùng have taken - thì phải lùi về had taken."
         },
         "known_wrong": [],
         "rubric": {
@@ -36059,7 +36057,7 @@ select content_private.import_bundle($bundle${
           },
           {
             "id": "w-took",
-            "text": "took"
+            "text": "have taken"
           },
           {
             "id": "w-i",
@@ -36083,19 +36081,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "68664cbf7df725945a55bf8d5568ffabd4e24c2eed13293253d7ecb6bdf945c1",
+      "content_hash": "d02fc120f9065b2041507e3f974bf3d2d1b72b1d1b7008def2738fa30c80d1a6",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "14874b31-b5ed-551d-b59d-71851d09845f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "474fe2e5-61a7-55a5-a04b-57a1974d5076",
       "key": "en:exercise:opsoc-cond-translate-had-known",
       "key_data": {
@@ -36110,7 +36108,12 @@ select content_private.import_bundle($bundle${
             "If I had known in advance, I would have helped you.",
             "I would have helped you if I had known.",
             "I would have helped you if I'd known.",
-            "If I had known before, I would have helped you."
+            "If I had known before, I would have helped you.",
+            "If I had known beforehand, I would have helped you.",
+            "If I had known earlier, I'd have helped you.",
+            "If I'd known in advance, I would have helped you.",
+            "I'd have helped you if I had known.",
+            "I'd have helped you if I'd known."
           ]
         },
         "display_answer": "If I had known, I would have helped you.",
@@ -36149,8 +36152,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Nếu tôi biết trước thì tôi đã giúp bạn rồi."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -36161,7 +36164,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "3df8c1ed-166e-5481-b889-deda63960d7e",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4511ea89-8a44-5da8-9c3d-a042f4db88f0",
       "key": "en:exercise:opsoc-cond-translate-if-only",
       "key_data": {
@@ -36197,19 +36200,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "If only we had acted sooner, the forest might still be here."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "de91a4a3ca2c2b25365b97344f53d148d7b21f9984203d6121d1ce9f39167123",
+      "content_hash": "0017fc85603d7fdda798dad499fd4f0e02cb04b5e369cb89d17262f75c079fd3",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "76796344-12fb-569a-9102-61d23de98284",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "cb5c789d-0f0c-5096-be30-b7a0a630f8a5",
       "key": "en:exercise:opsoc-cond-translate-renewable",
       "key_data": {
@@ -36223,7 +36226,11 @@ select content_private.import_bundle($bundle${
             "If everyone used renewable energy, we would reduce carbon emissions a lot.",
             "If everyone used renewable energy, we could reduce carbon emissions significantly.",
             "If everyone used renewable energy, we would cut carbon emissions significantly.",
-            "If everyone used renewable energy, we would greatly reduce carbon emissions."
+            "If everyone used renewable energy, we would greatly reduce carbon emissions.",
+            "If everyone used renewable energy, we'd cut a lot of carbon emissions.",
+            "If everybody used renewable energy, we'd cut a lot of carbon emissions.",
+            "If everyone used renewable energy, we'd be able to cut a lot of carbon emissions.",
+            "If everyone used renewable energy, we could greatly reduce carbon emissions."
           ]
         },
         "display_answer": "If everyone used renewable energy, we would cut a lot of carbon emissions.",
@@ -36262,19 +36269,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Giả sử mọi người đều dùng năng lượng tái tạo, chúng ta sẽ cắt giảm được rất nhiều khí thải carbon."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "d5dc3a9088ac4cc33cbfef76cb12ddde531c2784e99fa8f5829fa09a9de1ad4f",
+      "content_hash": "ac08c1433d81ce24c50265bd93e0498b176c567172a558d9351c8cb5a02b595d",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "8e8e8ec0-b146-5fb9-b8ed-9b210c0908a4",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "287ff05c-a585-511d-bdc6-db0e37324649",
       "key": "en:exercise:opsoc-cond-translate-wish-trees",
       "key_data": {
@@ -36287,7 +36294,10 @@ select content_private.import_bundle($bundle${
             "I wish there were more trees in my city.",
             "If only our city had more trees.",
             "If only there were more trees in our city.",
-            "I wish our city had more greenery."
+            "I wish our city had more greenery.",
+            "I wish my city had more greenery.",
+            "If only my city had more trees.",
+            "I wish there were more trees in the city."
           ]
         },
         "display_answer": "I wish our city had more trees.",
@@ -36326,19 +36336,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Ước gì thành phố mình có nhiều cây xanh hơn."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "13a55a5ac8c32d9133dfa18bec9f44582030e585a068d3938aaf435ff1809c18",
+      "content_hash": "7dd5001b6aeb9c0e9ca89f3869e874b065af5444916a8f20af69f27687d7a38c",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "f819d83d-3c64-57da-b68b-04069cb70901",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "64d6af37-f9ed-588d-a49d-18b202a778df",
       "key": "en:exercise:opsoc-pass-fill-fees",
       "key_data": {
@@ -36352,7 +36362,8 @@ select content_private.import_bundle($bundle${
             ],
             "b3": [
               "raised",
-              "increased"
+              "increased",
+              "hiked"
             ]
           }
         },
@@ -36409,19 +36420,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "University tuition fees {{b1}} {{b2}} {{b3}} twice since 2020."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "fadd5c9d817bd4fb58ff56cbd886e584f19b9af0a191e6541533636f539dd5f2",
+      "content_hash": "8a5d88ff55a0ac0af170f3d04a2e4bef6cb972ae73211a73cfbb8c9e9c1e63ff",
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "0dd98040-dc0d-5758-b56e-07b13d5cd4d1",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "0ca80760-0687-5c02-a545-c1b32c427a00",
       "key": "en:exercise:opsoc-pass-fill-modal-hinted",
       "key_data": {
@@ -36431,7 +36442,10 @@ select content_private.import_bundle($bundle${
               "be"
             ],
             "b2": [
-              "banned"
+              "banned",
+              "prohibited",
+              "forbidden",
+              "restricted"
             ]
           }
         },
@@ -36483,19 +36497,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Many parents think smartphones should {{b1}} {{b2}} in primary schools."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
-      "answer_lang": "en",
-      "content_hash": "75c0ed7fec188cb730777685829d6c1940a24e8d3135e2e5de8c3855f7350ed4",
+      "answer_lang": "vi",
+      "content_hash": "6e40420a60e6e8331366c12359e98d8c340cb03dc5d23b7133f67fec27b97644",
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "8e41dcbd-3a4c-57f2-af53-955fa4c357d9",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f30dadea-b145-5c4b-82a1-f379b2f5f511",
       "key": "en:exercise:opsoc-pass-listen-believed",
       "key_data": {
@@ -36544,8 +36558,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -36556,7 +36570,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "f1ede7e2-d20e-57a2-9e0f-a6b3462727fe",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "ef44925c-105d-5ec7-bdb2-47af0878d22e",
       "key": "en:exercise:opsoc-pass-mcq-being-built",
       "key_data": {
@@ -36605,8 +36619,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn đáp án đúng: A new metro line ___ in Hanoi at the moment.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -36617,7 +36631,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "0bc0dd6b-7de7-5a6b-959a-c82914aa820f",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "cab7a63d-350a-51d2-a428-8ebc7b7aded6",
       "key": "en:exercise:opsoc-pass-mcq-happened",
       "key_data": {
@@ -36666,8 +36680,8 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào đúng ngữ pháp?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -36678,7 +36692,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "7a8aed7e-6fe1-55d7-933c-191130f72c24",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4255b086-9e03-530f-bc01-fa94af0bbd22",
       "key": "en:exercise:opsoc-pass-mcq-register",
       "key_data": {
@@ -36727,8 +36741,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn đang viết một báo cáo trang trọng về giáo dục. Câu nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -36739,7 +36753,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "dde29135-48a3-59cf-849d-1f9c90848066",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3818f23a-1d8e-535b-8328-038b208b22df",
       "key": "en:exercise:opsoc-pass-order-ai",
       "key_data": {
@@ -36807,19 +36821,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "498cbaa9ecae8d734a340bfc3d62050e8d6831154494a5bdfd0335d59c7ccbe8",
+      "content_hash": "7ca43e0dcb8bca4f3ea2524d1527ae48f4d78f05c6ea3307aba099369e3ebdb0",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "c1087ff3-78d8-570e-b994-06d3da961711",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "edbd4a7c-5dce-51f1-beb5-b1c1fa7120e4",
       "key": "en:exercise:opsoc-pass-order-curriculum",
       "key_data": {
@@ -36858,7 +36872,7 @@ select content_private.import_bundle($bundle${
           },
           {
             "id": "r-was",
-            "text": "was being"
+            "text": "have"
           },
           {
             "id": "r-coding",
@@ -36882,8 +36896,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -36894,7 +36908,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "7df266b6-bfc0-5179-8a73-fbf0ecb3b0f7",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f2eb31af-3045-5020-b243-601e34c222a5",
       "key": "en:exercise:opsoc-pass-translate-believed",
       "key_data": {
@@ -36930,19 +36944,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "The company is believed to have collected users' data without permission."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "8c548968e1ac9ec42c9991f5604abdf6e9ffa2b53952dfea1ecda4b5f46831b2",
+      "content_hash": "2b63ec2925fe9d9f9ab59693c735022d78992297cbeafc70e70e6069120ce059",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "a058e70a-6e06-533c-be9e-e95fdf2090ee",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "0ca80760-0687-5c02-a545-c1b32c427a00",
       "key": "en:exercise:opsoc-pass-translate-could-have",
       "key_data": {
@@ -36954,7 +36968,10 @@ select content_private.import_bundle($bundle${
             "The data breach could have been prevented.",
             "The leak could have been avoided.",
             "The leak could have been prevented.",
-            "The data leak might have been avoided."
+            "The data leak might have been avoided.",
+            "The data breach might have been avoided.",
+            "The data leak could've been avoided.",
+            "The data leak could've been prevented."
           ]
         },
         "display_answer": "The data leak could have been avoided.",
@@ -36993,19 +37010,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Vụ rò rỉ dữ liệu lẽ ra đã có thể tránh được."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "e3f7ef6e14c184a2b7f88f848e43684b163c61890ea7cbb61220161bd5655932",
+      "content_hash": "b21432592cab99126d9ce1ab173d5b9618f14deafa80ae8380566444db10ffc7",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "0d54ebad-55e0-5d0b-a04c-2efb053a9381",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f30dadea-b145-5c4b-82a1-f379b2f5f511",
       "key": "en:exercise:opsoc-pass-translate-said",
       "key_data": {
@@ -37020,7 +37037,13 @@ select content_private.import_bundle($bundle${
             "It is said that social media damages young people's mental health.",
             "It is said that social media is bad for young people's mental health.",
             "People say that social media harms young people's mental health.",
-            "It is said that social media harms the mental health of young people."
+            "It is said that social media harms the mental health of young people.",
+            "It's said that social media damages young people's mental health.",
+            "It's said that social media is bad for young people's mental health.",
+            "It's said that social media harms the mental health of young people.",
+            "People say social media harms young people's mental health.",
+            "Social media is said to damage young people's mental health.",
+            "Social media is said to be bad for young people's mental health."
           ]
         },
         "display_answer": "It is said that social media harms young people's mental health.",
@@ -37059,19 +37082,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Người ta nói rằng mạng xã hội gây hại cho sức khoẻ tinh thần của giới trẻ."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "070693f9708a046d945f30c720fce030f8702876527565a8cbfd13cdbee82de9",
+      "content_hash": "d7723a4e5e40eba52320fa78e7ddc374414769fd4772889dd25e609358909089",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "b31195a9-bc21-5289-8eba-6101ea2008ea",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f23e86e6-b558-53b3-9c74-cfe80318c7d8",
       "key": "en:exercise:opsoc-pass-translate-taught",
       "key_data": {
@@ -37083,7 +37106,9 @@ select content_private.import_bundle($bundle${
             "Children should be taught critical thinking skills from an early age.",
             "Critical thinking should be taught to children from an early age.",
             "Children should be taught to think critically from an early age.",
-            "Kids should be taught critical thinking from an early age."
+            "Kids should be taught critical thinking from an early age.",
+            "Children should be taught critical thinking at an early age.",
+            "Children should be taught critical thinking from a young age."
           ]
         },
         "display_answer": "Children should be taught critical thinking from an early age.",
@@ -37122,19 +37147,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Trẻ em nên được dạy tư duy phản biện từ sớm."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "d70a7d9125e34039aa747f58c4f7992706576d234aa40b1fd39bdc7fd4ec376b",
+      "content_hash": "54efb22fab9eb5ff16c8d9debb21a3a338a9941f9f8e3a80ddd285685bc9aee0",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "7764cf14-efb3-59b6-ac15-c08b4ef45a27",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "10d1a689-6445-55ca-9f9e-8763e43424dd",
       "key": "en:exercise:opsoc-rep-fill-admit",
       "key_data": {
@@ -37145,7 +37170,8 @@ select content_private.import_bundle($bundle${
               "acknowledged"
             ],
             "b2": [
-              "making"
+              "making",
+              "having made"
             ]
           }
         },
@@ -37198,8 +37224,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "The minister {{b1}} (thừa nhận) {{b2}} (make) a mistake and promised to fix the housing problem."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -37210,7 +37236,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "69503e04-ba66-528c-805d-cc97466926f1",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "aae4f621-5abf-55f3-9db6-5afd0c3b7d53",
       "key": "en:exercise:opsoc-rep-fill-deny-hinted",
       "key_data": {
@@ -37266,19 +37292,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "The factory owner denied {{b1}} (dump) waste into the river."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
-      "answer_lang": "en",
-      "content_hash": "f9a3d089513380dfac9f4663675e0f80e6c5643325f078aac8614ce49de5363b",
+      "answer_lang": "vi",
+      "content_hash": "8d3e54149f11ed682d3e9b54b5316493297d2cc21a0322b751be4b3b67f49bba",
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "6e9cbe17-e0c2-56f1-b4eb-e6a8b6cb31ff",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "cf070274-3697-54b5-b118-aeebe001eece",
       "key": "en:exercise:opsoc-rep-listen-warn",
       "key_data": {
@@ -37327,8 +37353,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -37339,7 +37365,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "e0a10c3f-76c0-54d9-891f-ec139f16d099",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "9122972c-477d-5fa2-a48c-b4e14f383be0",
       "key": "en:exercise:opsoc-rep-mcq-question",
       "key_data": {
@@ -37388,8 +37414,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn đáp án đúng: \"How long have you lived in Hanoi?\" → The reporter asked me how long ___ in Hanoi.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -37400,7 +37426,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "8e7a6cf2-b6c4-5fc9-913e-73d67f512fce",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f90f9bab-fb05-5065-b45b-8a980d601a88",
       "key": "en:exercise:opsoc-rep-mcq-report-news",
       "key_data": {
@@ -37449,8 +37475,8 @@ select content_private.import_bundle($bundle${
         "stem": "Một quan chức nói: \"The new flyover will reduce traffic congestion.\" Bạn viết lại cho bài báo. Câu nào đúng?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -37461,7 +37487,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "38ece474-6028-58d9-a2c2-b98ef65e232c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "08a11112-0686-51a9-85c4-2f4a2c6ea647",
       "key": "en:exercise:opsoc-rep-mcq-suggest",
       "key_data": {
@@ -37510,19 +37536,19 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào đúng ngữ pháp?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "130fc0dca49cdc497bf22abd14d44ec8fdbece68c5e611a3498f38b4454230c7",
+      "content_hash": "d93e73a65a1f66dbcae43af3bcaf26585c3d05a8c2f5e15709541c1781d876d6",
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "d7f75d6c-df8c-5e76-b991-a5bd524cd71c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "1b9156c5-e288-5afd-a358-1d83d5e7f508",
       "key": "en:exercise:opsoc-rep-mcq-would",
       "key_data": {
@@ -37564,26 +37590,26 @@ select content_private.import_bundle($bundle${
           {
             "id": "j4o",
             "lang": "en",
-            "text": "are reducing"
+            "text": "would reducing"
           }
         ],
         "shuffle": true,
         "stem": "Chọn đáp án đúng: \"We will reduce bus fares.\" → The mayor said that they ___ bus fares.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "b1736927b25255c51b305cb35ebc19441af3e9fd55b20a5b86894df8b1cbfc65",
+      "content_hash": "615b9de0177077fece767750c3659983cd8776e055a7ee1ebf7cab9c7c3e3f05",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "f2a263e5-63b2-53d1-bee5-012a27994de4",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "5d3053fa-1d13-5e76-863a-f26d9dbad087",
       "key": "en:exercise:opsoc-rep-order-admitted",
       "key_data": {
@@ -37630,7 +37656,7 @@ select content_private.import_bundle($bundle${
           },
           {
             "id": "h-is",
-            "text": "is"
+            "text": "were"
           },
           {
             "id": "h-that",
@@ -37658,8 +37684,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -37670,7 +37696,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "f4231f38-4f9f-54a7-8d21-eddecb2bc204",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "9122972c-477d-5fa2-a48c-b4e14f383be0",
       "key": "en:exercise:opsoc-rep-translate-asked-if",
       "key_data": {
@@ -37723,8 +37749,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Anh ấy hỏi tôi liệu tôi có thích sống ở thành phố không."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -37735,7 +37761,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "bf53e298-7a81-55fe-b039-f1ecd81854be",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "86943f9d-93b2-5051-8d6f-7912b20459e0",
       "key": "en:exercise:opsoc-rep-translate-cost-living",
       "key_data": {
@@ -37771,19 +37797,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Experts warned that the cost of living in big cities would continue to rise."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "463473f751f82908d5eca6b050c62f77b1994dde43e0892353f47a0ae7b6291c",
+      "content_hash": "ff369ccf8426bf327b6e28551acd606370fec791fd7baa9a639f214a35469a82",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "6b15ca17-26a1-5898-9b46-6fcfbf89067a",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "712f2cdf-a73a-59dd-8116-355013a19b28",
       "key": "en:exercise:opsoc-rep-translate-discuss",
       "key_data": {
@@ -37796,7 +37822,9 @@ select content_private.import_bundle($bundle${
             "We discussed the shortage of green space in the city.",
             "We discussed the lack of green space in our city.",
             "We had a discussion about the lack of green space in the city.",
-            "We talked about the lack of green space in the city."
+            "We talked about the lack of green space in the city.",
+            "We talked about the lack of green spaces in the city.",
+            "We discussed the lack of green spaces in our city."
           ]
         },
         "display_answer": "We discussed the lack of green space in the city.",
@@ -37835,8 +37863,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chúng tôi đã thảo luận về việc thiếu không gian xanh trong thành phố."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -37847,7 +37875,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "d4a83696-d84f-5bd5-be41-c7c9e3919be0",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "08a11112-0686-51a9-85c4-2f4a2c6ea647",
       "key": "en:exercise:opsoc-rep-translate-suggest",
       "key_data": {
@@ -37900,19 +37928,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Cô ấy gợi ý chúng tôi đi làm bằng xe buýt."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "61f78f82e5c8a4db6d955347797de0cdecc80a287fd9536fa4087ea0c167e745",
+      "content_hash": "c105615b1ad930174da2b16456388e9d565d47a9297b297e46411ecb17287344",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "10dd4702-38e3-5af8-be89-44bc4cdbd279",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "35cf2913-2064-5acc-969f-d3e2e3643811",
       "key": "en:exercise:opsoc-rev-fill-mixed-hinted",
       "key_data": {
@@ -37922,7 +37950,9 @@ select content_private.import_bundle($bundle${
               "had"
             ],
             "b2": [
-              "built"
+              "built",
+              "opened",
+              "constructed"
             ]
           }
         },
@@ -37974,8 +38004,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "If the city {{b1}} {{b2}} more metro lines in the 2000s, we would not need a car ban now."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -37986,7 +38016,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "3da39224-1ab1-59e6-84b0-d2b0683dd337",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "aae4f621-5abf-55f3-9db6-5afd0c3b7d53",
       "key": "en:exercise:opsoc-rev-fill-reporting",
       "key_data": {
@@ -38057,19 +38087,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Minh {{b1}} (phủ nhận) {{b2}} (say) that all cars should be banned; he only suggested {{b3}} (limit) them at weekends."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
-      "answer_lang": "en",
-      "content_hash": "9e680ebcb2762cd4e1794ad7d3c5dfc4c2128a5210a2a5cba1b3e2f349ef2fbe",
+      "answer_lang": "vi",
+      "content_hash": "b21105cf749fb9fc3105523007c834c9f7efe17931467f7b63747708a788cb11",
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "51be4976-abad-5a41-aeea-6fe673afd21b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "49a4609a-612e-5793-bf0f-95507c8d6203",
       "key": "en:exercise:opsoc-rev-listen-other-hand",
       "key_data": {
@@ -38118,8 +38148,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -38130,7 +38160,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "3a3acae4-f839-5701-91b7-358afd37df87",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3151e5d1-383b-5667-abb4-9e3881877599",
       "key": "en:exercise:opsoc-rev-mcq-conclusion",
       "key_data": {
@@ -38179,8 +38209,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn cần viết câu kết cho bài luận nêu quan điểm (văn phong trang trọng). Câu nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -38191,7 +38221,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "9d1b4d6a-ea6e-5c04-977e-4cd3a6b24aec",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "71d1f68c-0bcb-5d40-8c6f-77cbf36a7731",
       "key": "en:exercise:opsoc-rev-mcq-could-be-argued",
       "key_data": {
@@ -38240,8 +38270,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn đáp án đúng: ___ that banning cars would hurt small businesses in the centre.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -38252,7 +38282,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "b67a66c7-7579-58bf-9f34-d07f73332a52",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "75edc3d7-3664-5998-9072-b71b22282ca4",
       "key": "en:exercise:opsoc-rev-mcq-forum-stance",
       "key_data": {
@@ -38301,19 +38331,19 @@ select content_private.import_bundle($bundle${
         "stem": "Đọc bài đăng: \"In my view, banning private cars from the city centre would be a step in the right direction. Traffic congestion poses a serious threat to our health. Having said that, the ban should only be introduced once public transport has been improved.\" Người viết có quan điểm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "bb88ebc5632bfdd070221e825897abdbf75aa07e4dd2785b100991b513b014ea",
+      "content_hash": "3694dac97aac76c850b18981c47849aeadba077508a3ac658fb5872d912e21a2",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "14f7a8b2-b535-59d7-91b5-d6197fbfb1b6",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b9a392a2-e101-5863-8fe6-7c637e1e3659",
       "key": "en:exercise:opsoc-rev-order-wish",
       "key_data": {
@@ -38329,7 +38359,7 @@ select content_private.import_bundle($bundle${
         },
         "display_answer": "I wish the authorities had listened to residents.",
         "explanation": {
-          "vi": "Tiếc nuối về quá khứ dùng wish + had + V3. Listened (quá khứ đơn) sau wish lại nói về hiện tại, còn would không dùng để tiếc về quá khứ."
+          "vi": "Tiếc nuối về quá khứ dùng wish + had + V3. Sau wish không dùng have listened (phải lùi thì thành had listened), còn would không dùng để tiếc về quá khứ."
         },
         "known_wrong": [],
         "rubric": {
@@ -38359,7 +38389,7 @@ select content_private.import_bundle($bundle${
           },
           {
             "id": "l-listened",
-            "text": "listened"
+            "text": "have listened"
           },
           {
             "id": "l-wish",
@@ -38371,19 +38401,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "a305879d8b3a13f3b6e4d8c6fd1e27f8ef70728989f6b9d968de22d16095d24f",
+      "content_hash": "0cf7c078a5a3e5b75d8bc08ef79a35427247f857bcce9259bc020cd5b8b04d4d",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "ea5de096-7840-5bcc-ab89-ee2154a6f261",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f30dadea-b145-5c4b-82a1-f379b2f5f511",
       "key": "en:exercise:opsoc-rev-translate-believed",
       "key_data": {
@@ -38397,7 +38427,13 @@ select content_private.import_bundle($bundle${
             "Many people believe the ban will improve air quality.",
             "Many people believe that the ban would improve air quality.",
             "The ban is widely believed to improve air quality.",
-            "The ban is widely believed to be able to improve air quality."
+            "The ban is widely believed to be able to improve air quality.",
+            "It's widely believed that the ban would improve air quality.",
+            "It's widely believed that the ban will improve the air quality.",
+            "Many people believe the ban would improve air quality.",
+            "Many people think that the ban will improve air quality.",
+            "Many people think the ban will improve air quality.",
+            "A lot of people believe that the ban will improve air quality."
           ]
         },
         "display_answer": "It is widely believed that the ban will improve air quality.",
@@ -38436,19 +38472,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Nhiều người tin rằng lệnh cấm sẽ cải thiện chất lượng không khí."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "014ee571f4372fb51119d0641b65e2706d2c376835f86e62f7803d70f6eb6ca5",
+      "content_hash": "248e5c0a9a387fc3e1a93afd033f1712b4db6a0554e2735a43bd095a7fcea3c5",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "10c057bf-e181-552f-bc68-c8e418c418bf",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": null,
       "key": "en:exercise:opsoc-rev-translate-discuss",
       "key_data": {
@@ -38460,7 +38496,9 @@ select content_private.import_bundle($bundle${
             "We should seriously discuss this issue.",
             "We should seriously discuss this problem.",
             "We ought to discuss this issue seriously.",
-            "We should discuss this issue in a serious way."
+            "We should discuss this issue in a serious way.",
+            "We should talk about this issue seriously.",
+            "We should seriously talk about this issue."
           ]
         },
         "display_answer": "We should discuss this issue seriously.",
@@ -38499,8 +38537,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chúng ta nên thảo luận vấn đề này một cách nghiêm túc."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -38511,7 +38549,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "7b7464b0-79de-5331-bafc-c16dff9d7a5e",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "38b1e7e5-d990-503e-9d1b-4c25f19a1cc4",
       "key": "en:exercise:opsoc-rev-translate-mixed",
       "key_data": {
@@ -38547,19 +38585,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "If the city had invested in public transport earlier, fewer people would rely on motorbikes today."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "25254a409512f67cb54ef280ed0dd67bd8577da23bbb7269a43742672392298b",
+      "content_hash": "2825994294588862e8ff90676e292464817d6af169291bc62f74456909ebb5e4",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "d6348b13-6c64-5df9-9c1a-5aeab669d46d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "274cfcc4-992f-5401-9a6a-a21a8940ba3c",
       "key": "en:exercise:opsoc-rev-translate-take-action",
       "key_data": {
@@ -38574,7 +38612,11 @@ select content_private.import_bundle($bundle${
             "I think the authorities should take action now to reduce traffic congestion.",
             "In my view, the government should take action now to reduce traffic congestion.",
             "In my opinion, the government should take action now to reduce traffic congestion.",
-            "In my view, the authorities should take immediate action to reduce traffic congestion."
+            "In my view, the authorities should take immediate action to reduce traffic congestion.",
+            "I would argue that the authorities should take action now to reduce traffic congestion.",
+            "In my opinion, the authorities should act now to reduce traffic congestion.",
+            "In my view, the authorities should act immediately to reduce traffic congestion.",
+            "In my opinion, the authorities should take immediate action to reduce traffic congestion."
           ]
         },
         "display_answer": "In my view, the authorities should take action now to reduce traffic congestion.",
@@ -38613,19 +38655,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Theo tôi, chính quyền nên hành động ngay để giảm ùn tắc giao thông."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "de9d49251302aa5f9e264d4e9614f2d1ea4b7c8935aa1651662c9b2b09b16b71",
+      "content_hash": "e638b464485dd9b70ed87f7816f855772a247e8ecf4567e4028fbf371d6c7eb7",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "68eb441f-74cd-521d-beb1-fa42bfa67635",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "cf070274-3697-54b5-b118-aeebe001eece",
       "key": "en:exercise:opsoc-rev-translate-warn",
       "key_data": {
@@ -38638,12 +38680,15 @@ select content_private.import_bundle($bundle${
             "The police warned us not to drive in the city centre.",
             "The police warned us not to drive in the city center.",
             "The police warned us that we must not drive into the city centre.",
-            "The police warned us that we couldn't drive into the city centre."
+            "The police warned us that we couldn't drive into the city centre.",
+            "The police warned us that we mustn't drive into the city centre.",
+            "The police warned us that we must not drive into the city center.",
+            "The police warned us that we mustn't drive into the city center."
           ]
         },
         "display_answer": "The police warned us not to drive into the city centre.",
         "explanation": {
-          "vi": "Warn + tân ngữ + not to + V là cấu trúc cảnh báo ai đừng làm gì. Police luôn đi với động từ số nhiều và có the."
+          "vi": "Warn + tân ngữ + not to + V là cấu trúc cảnh báo ai đừng làm gì. Police luôn đi với động từ số nhiều và thường có the đứng trước."
         },
         "known_wrong": [
           {
@@ -38677,32 +38722,36 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Cảnh sát cảnh báo chúng tôi không được lái xe vào trung tâm thành phố."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "cea3b2378c5523646f934cf5a95154a64dba5696aac7ceac1f429a1c8498227a",
+      "content_hash": "2681dd0594420d284cb335d373b8f11d38e8d520684ad53370bf2daa28674659",
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "d0843ce5-d89f-53a1-84be-794ad3854605",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "cac21c0c-477d-5955-9ae4-6f5249fbe51d",
       "key": "en:exercise:opsoc-views-fill-raise",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "raise"
+              "raise",
+              "increase",
+              "build",
+              "spread",
+              "heighten"
             ]
           }
         },
         "display_answer": "The campaign aims to raise awareness of cyberbullying among teenagers.",
         "explanation": {
-          "vi": "Raise awareness of something là collocation cố định. Raise cần tân ngữ (awareness), còn rise thì không."
+          "vi": "Raise awareness of something là collocation phổ biến nhất (increase, build, spread awareness cũng đúng). Raise cần tân ngữ (awareness), còn rise thì không."
         },
         "known_wrong": [
           {
@@ -38739,8 +38788,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "The campaign aims to {{b1}} awareness of cyberbullying among teenagers."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -38751,7 +38800,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "487f0d4c-46b9-5c92-85f4-05c2215f7ac2",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f0758912-b56d-5e82-bc8f-59a3a4fe53d4",
       "key": "en:exercise:opsoc-views-fill-whereas",
       "key_data": {
@@ -38804,19 +38853,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Older people tend to trust printed newspapers, {{b1}} younger people rely on social media for news."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
-      "answer_lang": "en",
-      "content_hash": "303b94e0ef8d017a99a09f1c107a76fb8a57fd6fcabf58f28fc1afbb896deada",
+      "answer_lang": "vi",
+      "content_hash": "c2aecec43e57d74366e258b0bf8398579e89d9fa6cf33a0f381061601db6e781",
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "c0d52bd2-d697-56ec-a419-ce9e94a33f42",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "29f6b7c7-65e4-54a2-b54f-25d6a383ddfe",
       "key": "en:exercise:opsoc-views-listen-point",
       "key_data": {
@@ -38865,8 +38914,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -38877,7 +38926,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "0027610e-c684-5f27-b8bd-cecf289ab7da",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3d27212f-b88c-5bfa-bc61-1713f1113a00",
       "key": "en:exercise:opsoc-views-mcq-agree",
       "key_data": {
@@ -38926,19 +38975,19 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào đúng ngữ pháp?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "f37c2ac6d3399c419e6338553ea368c33a2e46bced70c8efa77a45d1b0a2ff52",
+      "content_hash": "9916f1c5a6f665c001e4bb84098607a5218654457f4708508c74ee99ec84b290",
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "ca239190-c868-5c9b-a806-9c7ad5004be9",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "49a4609a-612e-5793-bf0f-95507c8d6203",
       "key": "en:exercise:opsoc-views-mcq-other-hand",
       "key_data": {
@@ -38947,7 +38996,7 @@ select content_private.import_bundle($bundle${
         },
         "display_answer": "On the other hand",
         "explanation": {
-          "vi": "Câu sau nêu một mặt khác (nhược điểm) của học trực tuyến, nên dùng On the other hand. On the contrary dùng để bác bỏ ý trước, còn Furthermore thêm ý cùng chiều."
+          "vi": "Câu sau nêu một mặt khác (nhược điểm) của học trực tuyến, nên dùng On the other hand. On the contrary dùng để bác bỏ ý trước, Furthermore thêm ý cùng chiều, còn As a result chỉ kết quả - tiện lợi không dẫn đến việc cần kỷ luật."
         },
         "known_wrong": [],
         "rubric": {
@@ -38970,7 +39019,7 @@ select content_private.import_bundle($bundle${
           {
             "id": "e4t",
             "lang": "en",
-            "text": "In my view"
+            "text": "As a result"
           },
           {
             "id": "m2z",
@@ -38987,8 +39036,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn cụm từ phù hợp nhất: Online learning is convenient. ___, it requires a lot of self-discipline.",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -38999,7 +39048,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "105dc6e7-d139-5369-8955-1971aefc3346",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7496cedd-5017-593d-9329-041ffb7d9212",
       "key": "en:exercise:opsoc-views-mcq-situation",
       "key_data": {
@@ -39048,8 +39097,8 @@ select content_private.import_bundle($bundle${
         "stem": "Trong buổi thảo luận, một bạn nói: \"Social media should be banned for under-16s.\" Bạn đồng ý một phần và muốn phản biện lịch sự. Bạn nói gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -39060,7 +39109,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "word_bank",
       "id": "4c9eac8f-0634-596b-a3f1-7177bd986904",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "31ecffd1-702c-5201-adfe-cdbeb023c747",
       "key": "en:exercise:opsoc-views-order-convinced",
       "key_data": {
@@ -39149,8 +39198,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -39161,7 +39210,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "6b73db0c-9b84-5d98-8d91-5f1d4aa8a21d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3e34b167-a63e-5497-903f-8c8bee108936",
       "key": "en:exercise:opsoc-views-order-impact",
       "key_data": {
@@ -39229,8 +39278,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -39241,7 +39290,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "4dd7b979-cf46-5e06-a630-8311bd9d7965",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3d27212f-b88c-5bfa-bc61-1713f1113a00",
       "key": "en:exercise:opsoc-views-translate-disagree",
       "key_data": {
@@ -39291,8 +39340,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tôi không đồng ý rằng công nghệ khiến chúng ta cô đơn."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -39303,7 +39352,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "6084ec37-b45a-5db2-b85c-66d735a5a6b3",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "75edc3d7-3664-5998-9072-b71b22282ca4",
       "key": "en:exercise:opsoc-views-translate-having-said",
       "key_data": {
@@ -39339,19 +39388,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Smartphones can be a distraction in class. Having said that, they can be useful for research."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "3d656778d7d23c9017cb04f2f5c8e514a3d1defe6fe8ea5d2207d38cc14ff505",
+      "content_hash": "c95eb5818b4cb2497d0804c42a393a40488c1a00e333101286f9b01c32e2c343",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "d1a5e1d0-9a3a-5cc8-8107-09ef2951a3da",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3e34b167-a63e-5497-903f-8c8bee108936",
       "key": "en:exercise:opsoc-views-translate-impact",
       "key_data": {
@@ -39363,7 +39412,11 @@ select content_private.import_bundle($bundle${
             "The campaign had a positive impact on the community.",
             "This campaign has had a positive effect on the community.",
             "The campaign has had a positive effect on the community.",
-            "This campaign has had a positive impact on the local community."
+            "This campaign has had a positive impact on the local community.",
+            "This campaign had a positive effect on the community.",
+            "The campaign had a positive effect on the community.",
+            "This campaign has positively impacted the community.",
+            "The campaign has positively impacted the community."
           ]
         },
         "display_answer": "This campaign has had a positive impact on the community.",
@@ -39402,19 +39455,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chiến dịch này đã có tác động tích cực đến cộng đồng."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "071656c6a97c8f012c5ecad422173c101868f6e00a765d7d2b10678785045838",
+      "content_hash": "6611e892163e0860dc828f4da11d7d0199430769512063e5c17f02481024aae8",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "705d08d7-fc75-502e-be6b-7353deea4a69",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "5ac74185-de82-59cd-83ca-72232b4c6523",
       "key": "en:exercise:opsoc-views-translate-view",
       "key_data": {
@@ -39427,7 +39480,11 @@ select content_private.import_bundle($bundle${
             "In my opinion, social media is more beneficial than harmful.",
             "In my view, the benefits of social media outweigh the harms.",
             "In my view, social media brings more benefits than harm.",
-            "In my opinion, social media brings more benefits than harm."
+            "In my opinion, social media brings more benefits than harm.",
+            "From my perspective, social media does more good than harm.",
+            "I think social media does more good than harm.",
+            "In my view, social media has more benefits than drawbacks.",
+            "In my opinion, social media has more benefits than drawbacks."
           ]
         },
         "display_answer": "In my view, social media does more good than harm.",
@@ -39466,8 +39523,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Theo quan điểm của tôi, mạng xã hội mang lại nhiều lợi hơn hại."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -40159,18 +40216,20 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "b1732bbb1e5f026ea3efc4413d85fe8ddf0dd62484a8bbb958951a7fbcaa1c99",
+      "content_hash": "ed63519478738fadb31b41754f0e3bbd1f45f29ecee203f3d47c615b6b6235ab",
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "35b78d47-d4af-55af-8f3b-9e9a90919807",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "59594769-5067-5aff-a939-7ae4c424de48",
       "key": "en:exercise:participle-fill-built-hinted",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "Built"
+              "Built",
+              "Constructed",
+              "Opened"
             ]
           }
         },
@@ -40218,29 +40277,33 @@ select content_private.import_bundle($bundle${
         ],
         "template": "{{b1}} in 1990, the old server room is now a café."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "8614744acf76e9961cedb829377c975707e45f702d49dc90e8ee1668de135e5b",
+      "content_hash": "9e6a9cade9652612969cf30bb3b7da4ee6267061c7df06834aa652f03d1893ee",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "a38bd246-3ba4-5937-84ff-4751733568e7",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "964d4055-07a0-5345-93d1-323d92ec46d1",
       "key": "en:exercise:participle-fill-hackers-using",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "Hackers"
+              "Hackers",
+              "Scammers",
+              "Criminals",
+              "Cybercriminals"
             ],
             "b2": [
-              "using"
+              "using",
+              "sending"
             ]
           }
         },
@@ -40288,19 +40351,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "{{b1}} {{b2}} fake emails stole the personal data of thousands of students."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "d34553ff6b36d53be83ce95b57c76799642f323e55a8c82f975e022eeb42ae18",
+      "content_hash": "59e75d5fcbbc6472bc41e1652ab15e10a4c4823ba49b574116b8ba5a23bacd95",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "054e99e8-f03a-5650-9895-3bb661120cf5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "687c36fc-ddf8-53f4-bd65-e8cf8852d076",
       "key": "en:exercise:participle-fill-having-changed",
       "key_data": {
@@ -40310,7 +40373,9 @@ select content_private.import_bundle($bundle${
               "Having"
             ],
             "b2": [
-              "changed"
+              "changed",
+              "updated",
+              "reset"
             ]
           }
         },
@@ -40358,8 +40423,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "{{b1}} {{b2}} all my passwords after the data breach, I felt much safer."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -40370,7 +40435,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "listen",
       "id": "a8a03482-128e-5a18-b585-3dfcd1ff797d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "687c36fc-ddf8-53f4-bd65-e8cf8852d076",
       "key": "en:exercise:participle-listen-having-read",
       "key_data": {
@@ -40419,8 +40484,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -40431,7 +40496,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "a3cce3b2-c494-5bca-80b3-fa68ad02a54a",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b6616597-f012-5762-aff2-0d4142ef49e4",
       "key": "en:exercise:participle-mcq-dangling",
       "key_data": {
@@ -40480,8 +40545,8 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào KHÔNG mắc lỗi phân từ treo?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -40492,7 +40557,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "8e376a78-8963-557b-8af0-bdef816a2218",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "cdbeabaf-e3f7-553a-adfc-2570ff9f9625",
       "key": "en:exercise:participle-mcq-reduced-relative",
       "key_data": {
@@ -40541,8 +40606,8 @@ select content_private.import_bundle($bundle${
         "stem": "Câu nào có nghĩa giống \"A study which was published last month links screen time to poor sleep.\"?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -40553,7 +40618,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "d94740ae-6e17-5c94-8ec9-e564dfc9f559",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "e271fee4-579a-54f7-9497-a95d25cc0bc7",
       "key": "en:exercise:participle-mcq-situation-breach-email",
       "key_data": {
@@ -40602,8 +40667,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn soạn email thông báo của công ty gửi khách hàng. Câu mở đầu nào đúng ngữ pháp và tự nhiên nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -40614,7 +40679,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "e1a8b734-2c6b-58e0-a402-e4111166974d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "53a92c45-790f-5d95-ac56-0ba86e7cde68",
       "key": "en:exercise:participle-order-feeling-tired",
       "key_data": {
@@ -40692,8 +40757,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -40704,7 +40769,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "8deead77-37ca-5abe-bb3f-b06cc8f66fc2",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c11002d6-3f06-5f19-8c03-b0988d1ae391",
       "key": "en:exercise:participle-translate-algorithm",
       "key_data": {
@@ -40745,19 +40810,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Designed to keep users online, the algorithm shows you more of what you have already watched."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "2fe4e54ccf3530847eb07fac7a6dc2a62b9db8e99572e15baa07f90beba0200b",
+      "content_hash": "0e13878b9a04bf254a3bb52cffa7c2db524e3abf87ac9850e0cc358f8abf0356",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "5313b78b-a57d-5e50-9e3d-a9a6ca464357",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2a699ab6-74cf-5a0d-b6a8-e7c923689afa",
       "key": "en:exercise:participle-translate-launched-2020",
       "key_data": {
@@ -40769,7 +40834,9 @@ select content_private.import_bundle($bundle${
             "Launched in 2020, this app now has 10 million users.",
             "Launched in 2020, the app has ten million users now.",
             "Launched in 2020, this app currently has ten million users.",
-            "Launched in 2020, the app currently has ten million users."
+            "Launched in 2020, the app currently has ten million users.",
+            "Launched in 2020, this app has ten million users now.",
+            "Launched in 2020, the app currently has 10 million users."
           ]
         },
         "display_answer": "Launched in 2020, the app now has ten million users.",
@@ -40808,19 +40875,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Ra mắt năm 2020, ứng dụng này hiện có mười triệu người dùng."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "ba4274b38e1a91f9f059d39b2d8ec0e0bc0fa12326f7c4b918c13fc5b5b01d30",
+      "content_hash": "b393cdf2eeda59903e5ca599e32f12c6f602f4b3265ef6db5f8336a5dc761a25",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "cb27cf09-c0da-5f55-a3c3-3fcbefd2803d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "67661a9d-0958-5238-8181-b954ea1e290c",
       "key": "en:exercise:participle-translate-worried-privacy",
       "key_data": {
@@ -40832,7 +40899,10 @@ select content_private.import_bundle($bundle${
             "Worried about privacy, Mai stopped posting photos of her children online.",
             "Worried about her privacy, Mai has stopped posting photos of her children online.",
             "Worried about her privacy, Mai stopped posting her children's photos online.",
-            "Worried about her privacy, Mai stopped posting photos of her children on the Internet."
+            "Worried about her privacy, Mai stopped posting photos of her children on the Internet.",
+            "Worried about her privacy, Mai no longer posts photos of her children online.",
+            "Worried about privacy, Mai stopped posting pictures of her children online.",
+            "Worried about her privacy, Mai stopped posting photos of her children on social media."
           ]
         },
         "display_answer": "Worried about her privacy, Mai stopped posting photos of her children online.",
@@ -40871,8 +40941,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Lo lắng cho quyền riêng tư, Mai thôi đăng ảnh các con lên mạng."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -44136,7 +44206,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "c476c16e-db9b-5278-81a0-f6f426190f9a",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "a64a5a40-f5ac-554c-9534-72daf2308ea9",
       "key": "en:exercise:personality-fill-reliable-hinted",
       "key_data": {
@@ -44188,29 +44258,34 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Nam is very {{b1}} - if he promises to help, he always does."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "c5d68fd9bfbe9412b20c84cb393827f92b08a700282f39e3d06b4cba4544271c",
+      "content_hash": "3abf39fc6ae2f2f22220e1c2827b4fdf25e9d0ef7d957ea40bf568cbd58d3519",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "6ab56ae3-f74e-521a-a35d-becd6b3b2f0c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "ea62cf8b-50d2-50a2-8d1f-5aceaf9084ef",
       "key": "en:exercise:personality-fill-stubborn-open-minded",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "stubborn"
+              "stubborn",
+              "obstinate",
+              "inflexible",
+              "pig-headed"
             ],
             "b2": [
-              "open-minded"
+              "open-minded",
+              "open",
+              "receptive"
             ]
           }
         },
@@ -44258,8 +44333,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "My boss never changes her mind, even when she's wrong - she's so {{b1}}. Her assistant, on the other hand, is very {{b2}} and listens to every new idea."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -44270,7 +44345,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "78e2ba64-9330-5df3-8495-a869bc95df30",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "dc03174d-e965-550f-bcb2-bbfd31bee39a",
       "key": "en:exercise:personality-fill-used-to-live-hearing",
       "key_data": {
@@ -44334,8 +44409,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "As a child, I {{b1}} (live) in a quiet village, so I'm still not used to {{b2}} (hear) so much traffic in the city."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -44346,7 +44421,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "8407daf8-b419-58ab-a0a1-301b38225706",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "e73a6ea6-f5e7-5cc6-8a8c-4df9933ee98e",
       "key": "en:exercise:personality-listen-not-used-to",
       "key_data": {
@@ -44395,8 +44470,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -44407,7 +44482,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "1d387300-255e-5659-840b-4a71a5c2d227",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8e057ec4-258f-5c3e-85f3-7db0582415f2",
       "key": "en:exercise:personality-mcq-easy-going",
       "key_data": {
@@ -44456,8 +44531,8 @@ select content_private.import_bundle($bundle${
         "stem": "\"My boss is very easy-going.\" Easy-going nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -44468,7 +44543,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "60b30639-1e44-52e3-bd76-77ae26de4af1",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2f1f9cf5-5912-5d63-bf54-6300313b7b32",
       "key": "en:exercise:personality-mcq-situation-generous",
       "key_data": {
@@ -44517,8 +44592,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn muốn khen một người bạn lúc nào cũng sẵn lòng chia sẻ và hay trả tiền cho cả nhóm. Câu nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -44529,7 +44604,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "0b5a0b76-8b5b-5142-b35c-60e52ef3f73b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "e73a6ea6-f5e7-5cc6-8a8c-4df9933ee98e",
       "key": "en:exercise:personality-mcq-used-to-getting",
       "key_data": {
@@ -44578,8 +44653,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn câu đúng: \"Tôi đã quen dậy sớm rồi.\"",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -44590,7 +44665,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "633cb8c9-f8c4-5448-9d47-f2b63bc5a858",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "dc03174d-e965-550f-bcb2-bbfd31bee39a",
       "key": "en:exercise:personality-mcq-used-to-meaning",
       "key_data": {
@@ -44639,19 +44714,19 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn kể với đồng nghiệp người Anh rằng hồi trước bạn rất nhút nhát, nhưng giờ đã tự tin hơn nhiều. Câu nào đúng?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "4195b90f9a20c5eb94d033cc44e4d31c3f12739dde1cafb1d2d7be92ec244a67",
+      "content_hash": "483a06af4bb04f0b39a943e208b07bc0c0bdc258f8438e3579fe99a8d77a7dd5",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "dcfca18c-f071-5a45-ac65-34e0dbb2765b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c80ab684-35a2-501a-9bab-36af25fdf269",
       "key": "en:exercise:personality-order-get-used-to",
       "key_data": {
@@ -44665,6 +44740,15 @@ select content_private.import_bundle($bundle${
               "g-to",
               "g-living",
               "g-here"
+            ],
+            [
+              "g-youll",
+              "g-get",
+              "g-used",
+              "g-to",
+              "g-living",
+              "g-here",
+              "g-soon"
             ]
           ]
         },
@@ -44720,8 +44804,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -44732,7 +44816,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "9c0613bb-eee2-5ca9-9d06-b663977d99b6",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c80ab684-35a2-501a-9bab-36af25fdf269",
       "key": "en:exercise:personality-translate-get-used-to-abroad",
       "key_data": {
@@ -44781,19 +44865,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "It took me a year to get used to living abroad."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "f7f030854f6579d3b9d72b0160e231f21e4ac3ec19cb9731e5302b86f93a08bc",
+      "content_hash": "f93aa0b22f68bc3d494e60568f443a55ce750694fb0e6d6606b75005bd44c911",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "9deb54da-bb90-58c1-ba3a-2cb922632d9b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "28412874-948c-5ff8-98c8-1961a94e496a",
       "key": "en:exercise:personality-translate-hard-working-easy-going",
       "key_data": {
@@ -44814,7 +44898,9 @@ select content_private.import_bundle($bundle${
             "My older sister is hard-working and easy-going, but sometimes she is a bit stubborn.",
             "My sister is hard-working and easy-going, but sometimes she's quite stubborn.",
             "My sister is hard-working and easy-going, but sometimes she is quite stubborn.",
-            "My sister is hard-working and easy-going but sometimes a bit stubborn."
+            "My sister is hard-working and easy-going but sometimes a bit stubborn.",
+            "My sister is hard-working and easy-going, but she can sometimes be a bit stubborn.",
+            "My sister is hard-working and easy-going, but she can be quite stubborn sometimes."
           ]
         },
         "display_answer": "My sister is hard-working and easy-going, but sometimes she's a bit stubborn.",
@@ -44853,8 +44939,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chị tôi là người chăm chỉ và dễ tính, nhưng đôi khi hơi cứng đầu."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -44865,7 +44951,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "edc90886-b7af-5630-be28-100d9a9a62b7",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "e73a6ea6-f5e7-5cc6-8a8c-4df9933ee98e",
       "key": "en:exercise:personality-translate-used-to-getting-up",
       "key_data": {
@@ -44926,8 +45012,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tôi đã quen làm việc một mình rồi."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -45674,7 +45760,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "aa8c393a-3b7b-5ea6-9cdb-5477c7c4a89d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "612d4550-d5be-5cfe-a658-bc4290e4025f",
       "key": "en:exercise:phrasal-fill-fell-out-made-up",
       "key_data": {
@@ -45742,8 +45828,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Linh {{b1}} out with her best friend over money, but they {{b2}} up a week later and now they're closer than ever."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -45754,7 +45840,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "a3013a73-5a93-5b6f-9e70-fb197fa6dd88",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "6fa35ea2-1002-5f32-bd26-c0ead9ad632d",
       "key": "en:exercise:phrasal-fill-get-on-with-hinted",
       "key_data": {
@@ -45804,8 +45890,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Do you get on well {{b1}} your new flatmate?"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -45816,7 +45902,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "f606b9b1-3550-5314-9bc9-abdc080070ee",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4faa8f31-7ed2-5f66-b1de-2e263050f6cb",
       "key": "en:exercise:phrasal-fill-in-common-cry-on",
       "key_data": {
@@ -45874,8 +45960,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "My cousin and I have a lot in {{b1}}, and she's always been a shoulder to cry {{b2}}."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -45886,7 +45972,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "9e51da7d-479d-54f3-9452-126817885ba7",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4a1a5393-6a8f-5951-81df-bd72b384b1d3",
       "key": "en:exercise:phrasal-listen-eye-to-eye",
       "key_data": {
@@ -45935,8 +46021,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -45947,7 +46033,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "15060ab0-e240-55d0-8b9d-b07f0f7fe507",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "fe041219-9a4a-515a-a3cc-e4cabd009b7d",
       "key": "en:exercise:phrasal-mcq-look-up-to",
       "key_data": {
@@ -45996,8 +46082,8 @@ select content_private.import_bundle($bundle${
         "stem": "\"I've always looked up to my older brother.\" Look up to nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -46008,7 +46094,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "4065d924-0d76-5bd5-96f9-0ca84d3b58bd",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "199b604b-90c9-541f-90f2-707c19c73b39",
       "key": "en:exercise:phrasal-mcq-put-up-with",
       "key_data": {
@@ -46057,8 +46143,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn câu đúng: \"Tôi không chịu đựng nổi tiếng ồn của anh ta nữa.\"",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -46069,7 +46155,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "caa82920-d995-5e7b-9e98-7ad000e45290",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4a1a5393-6a8f-5951-81df-bd72b384b1d3",
       "key": "en:exercise:phrasal-mcq-situation-parents",
       "key_data": {
@@ -46118,19 +46204,19 @@ select content_private.import_bundle($bundle${
         "stem": "Bố mẹ của bạn bạn cãi nhau về mọi chuyện - từ chuyện ăn uống tới chính trị. Câu nào miêu tả đúng họ?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "d947b896ef4239cde3ff41a59b971dcd2a0695750ada5c698901d284b3b51410",
+      "content_hash": "fa5451a41faa62ddbf1145dbb9f4a69367155427d2220e53b9f3f316814cc247",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "e7aa0ef1-3001-501f-80ef-cae2c767b206",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "141c67d8-247b-55a2-b7ba-c2512490552a",
       "key": "en:exercise:phrasal-order-asked-her-out",
       "key_data": {
@@ -46142,6 +46228,13 @@ select content_private.import_bundle($bundle${
               "o-asked",
               "o-her",
               "o-out"
+            ],
+            [
+              "o-he",
+              "o-asked",
+              "o-her",
+              "o-out",
+              "o-finally"
             ]
           ]
         },
@@ -46189,8 +46282,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -46201,7 +46294,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "6b11cec9-5c02-5fbc-bdce-d23b4aea186a",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b38e9fb9-7f28-5d10-8cc8-19182bb9ad34",
       "key": "en:exercise:phrasal-order-brought-me-up",
       "key_data": {
@@ -46260,19 +46353,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "2c9f4848e7bbfb7a1747224fc9705293d23c47124aac93e3678525622d08cf6b",
+      "content_hash": "933aa72ea72cf4f58b96c92900083cbe963961f1d719a09050c50b7ae4288804",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "cfd38ea4-7049-506c-8d58-057da8e5a407",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "6fa35ea2-1002-5f32-bd26-c0ead9ad632d",
       "key": "en:exercise:phrasal-translate-get-on-colleagues",
       "key_data": {
@@ -46285,7 +46378,10 @@ select content_private.import_bundle($bundle${
             "I get along very well with my new colleagues.",
             "I get along well with my new colleagues.",
             "I really get on with my new colleagues.",
-            "I get on really well with the new colleagues."
+            "I get on really well with the new colleagues.",
+            "I really get along with my new colleagues.",
+            "I get on really well with my new co-workers.",
+            "I get along really well with my new co-workers."
           ]
         },
         "display_answer": "I get on really well with my new colleagues.",
@@ -46324,8 +46420,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tôi rất hợp với các đồng nghiệp mới."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -46336,7 +46432,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "8a418414-0cab-5514-a6a7-144a3c2824bd",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "fe041219-9a4a-515a-a3cc-e4cabd009b7d",
       "key": "en:exercise:phrasal-translate-looked-up-to",
       "key_data": {
@@ -46388,19 +46484,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "I've always looked up to my older sister."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "5a73a4bc64ca55c7896715cb69d34c85cc7d721556e5c62fd3ca2c343fba3a21",
+      "content_hash": "e0b07f9a3bfe3927ff18f40b7f7af63628fbc3287370c5b90d10b51040e9b89b",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "0c88126e-2f70-5fbe-8ce9-44aedc878e5b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "199b604b-90c9-541f-90f2-707c19c73b39",
       "key": "en:exercise:phrasal-translate-puts-up-with-him",
       "key_data": {
@@ -46413,7 +46509,9 @@ select content_private.import_bundle($bundle${
             "I have no idea how she puts up with him.",
             "I have no idea how she can put up with him.",
             "I don't know why she puts up with him.",
-            "I don't understand why she puts up with him."
+            "I don't understand why she puts up with him.",
+            "I don't know how she can stand him.",
+            "I don't understand how she can stand him."
           ]
         },
         "display_answer": "I don't know how she puts up with him.",
@@ -46452,8 +46550,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tôi không hiểu sao cô ấy chịu đựng được anh ta."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -49222,7 +49320,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "fed178bd-b409-544b-ac34-b8bb950b6b48",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "6fa35ea2-1002-5f32-bd26-c0ead9ad632d",
       "key": "en:exercise:relationships-review-fill-got-on-left-out",
       "key_data": {
@@ -49275,19 +49373,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "At first I got on really well {{b1}} my flatmates, but now I feel left {{b2}}."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "55c8899f3f7e922d5452df2f52816dba89ae9aa898115dc44db2519c4f16c5e1",
+      "content_hash": "9c2579a99e36e75b8f53ce6470412d89e973d7aca2e3058bf4adf73b64ff6dc8",
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "fd465747-086a-5ec2-b6fc-8e0afc6ba399",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c715a7a6-3d54-5758-9aea-3de8963e9702",
       "key": "en:exercise:relationships-review-fill-might-have-bought",
       "key_data": {
@@ -49301,7 +49399,8 @@ select content_private.import_bundle($bundle${
             "b2": [
               "bought",
               "booked",
-              "got"
+              "got",
+              "purchased"
             ]
           }
         },
@@ -49354,8 +49453,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "I'm not sure, but they {{b1}} have {{b2}} the tickets before you moved in."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -49366,7 +49465,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "ea1f1b6b-d935-5c02-b820-907452c5986a",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "61000d26-c2a5-5c45-a3db-7f99fe7d7939",
       "key": "en:exercise:relationships-review-fill-stopped-inviting-hinted",
       "key_data": {
@@ -49417,8 +49516,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Recently my flatmates have stopped {{b1}} (invite) me when they go out."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -49429,7 +49528,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "6ace1c6c-8e9d-5f35-b866-9697655003f5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "12e5c1b4-b172-52ce-9230-54c2a1ed21a1",
       "key": "en:exercise:relationships-review-listen-must-have-planned",
       "key_data": {
@@ -49478,8 +49577,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -49490,7 +49589,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "b2f701aa-858b-5393-889a-f58f9960c931",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "d5c2b584-995f-5495-bee2-cfe064a39020",
       "key": "en:exercise:relationships-review-mcq-advice-make-up",
       "key_data": {
@@ -49539,8 +49638,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn của bạn vừa giận nhau với bạn thân và rất buồn. Bạn muốn khuyên \"thử gọi cho cô ấy xem, biết đâu hai người làm lành được\". Câu nào đúng?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -49551,7 +49650,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "4fea359f-0128-5438-84e5-0c17180ecc7d",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c715a7a6-3d54-5758-9aea-3de8963e9702",
       "key": "en:exercise:relationships-review-mcq-might-not-have-meant",
       "key_data": {
@@ -49600,8 +49699,8 @@ select content_private.import_bundle($bundle${
         "stem": "Trong thư trả lời: \"Your flatmates might not have meant to upset you.\" Câu này có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -49612,7 +49711,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "bba7cc34-f7cc-53f7-b540-21544b68eef8",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "65344f6f-9b54-554b-af43-fafc5f2452af",
       "key": "en:exercise:relationships-review-mcq-why-left-out",
       "key_data": {
@@ -49661,8 +49760,8 @@ select content_private.import_bundle($bundle${
         "stem": "Đọc thư của \"Lonely in Hà Nội\". Vì sao người viết cảm thấy bị ra rìa (feel left out)?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -49673,7 +49772,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "3bfd523c-94e2-51a1-a8e3-f254bbf1dcc2",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2f920b47-cee7-541e-ae1d-b1d1203ad151",
       "key": "en:exercise:relationships-review-order-take-sides",
       "key_data": {
@@ -49737,19 +49836,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "6b1e3ef4b5073517bce80fce1f0e28091cc54d587f9b39e1d5953d2f34e2a6b3",
+      "content_hash": "c47702234cd7c17520ff7a1a6d1d1c99dfbb6abd18f6ffc3cf8fe8c63e0c04f5",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "431920fc-f1f7-51cb-8e79-11d0602da992",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c715a7a6-3d54-5758-9aea-3de8963e9702",
       "key": "en:exercise:relationships-review-translate-didnt-mean-to-upset",
       "key_data": {
@@ -49767,12 +49866,16 @@ select content_private.import_bundle($bundle${
             "Perhaps they didn't mean to upset you. Try talking to them directly.",
             "They might not have meant to upset you. Try speaking to them directly.",
             "They might not have meant to hurt you. Try talking to them directly.",
-            "They might not have meant to upset you. Why don't you try talking to them directly?"
+            "They might not have meant to upset you. Why don't you try talking to them directly?",
+            "They might not have meant to upset you. Try to talk to them directly.",
+            "They may not have meant to upset you. Try to talk to them directly.",
+            "They probably didn't mean to hurt you. Try talking to them directly.",
+            "Maybe they didn't mean to upset you. Try to talk to them directly."
           ]
         },
         "display_answer": "They might not have meant to upset you. Try talking to them directly.",
         "explanation": {
-          "vi": "\"Có lẽ không cố ý\" về việc đã xảy ra là might / may not have meant to. Lời khuyên \"thử nói chuyện\" là try + V-ing (try talking), vì đây là thử một cách xem có hiệu quả không."
+          "vi": "\"Có lẽ không cố ý\" về việc đã xảy ra là might / may not have meant to. Lời khuyên \"thử nói chuyện\" là try + V-ing (try talking), vì đây là thử một cách xem có hiệu quả không; try to talk (cố gắng nói chuyện) cũng chấp nhận được."
         },
         "known_wrong": [
           {
@@ -49806,8 +49909,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Có lẽ họ không cố ý làm bạn buồn. Hãy thử nói chuyện thẳng với họ."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -49818,7 +49921,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "be737d9a-ba30-50d1-bf00-c5c1b98ade08",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "358b615a-4f66-5abb-88bf-5d99b9938cc4",
       "key": "en:exercise:relationships-review-translate-give-it-time",
       "key_data": {
@@ -49866,19 +49969,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Give it time. You'll get used to your new life."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "8d512499a90424cace8b597b96b14b16a379323d554e4b10fb75260b96c37908",
+      "content_hash": "82508ebf1bba3bbaa3441bcface5428520c3c6ed3df428ae89b5b91d8ab2ce17",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "66e61bc3-1c9f-501d-add3-e449deed8eeb",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "e73a6ea6-f5e7-5cc6-8a8c-4df9933ee98e",
       "key": "en:exercise:relationships-review-translate-not-used-to-living",
       "key_data": {
@@ -49895,7 +49998,10 @@ select content_private.import_bundle($bundle${
             "I'm still not used to being away from my family.",
             "I am still not used to being away from my family.",
             "I'm still not used to living away from home.",
-            "I'm still not used to living apart from my family."
+            "I'm still not used to living apart from my family.",
+            "I haven't got used to living away from my family yet.",
+            "I haven't gotten used to living away from my family yet.",
+            "I still haven't got used to living far from my family."
           ]
         },
         "display_answer": "I'm still not used to living away from my family.",
@@ -49934,8 +50040,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tôi vẫn chưa quen sống xa gia đình."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -50657,27 +50763,31 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
-      "content_hash": "741c0fc46ed37f35e8f310832a9991773cbc1908a83c42885fe1b626665b3d37",
+      "content_hash": "60884d85a0d5695bc7ca164e4dfd855c8086fe91eb57b038e297573aed983aa9",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "4e736577-6602-5aa2-b937-1142308959a0",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2a10c31c-d260-51ce-bbe0-6bfe130bec9b",
       "key": "en:exercise:science-fill-evidence-suggests",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "evidence"
+              "evidence",
+              "concern"
             ],
             "b2": [
-              "research"
+              "research",
+              "evidence",
+              "study",
+              "work"
             ]
           }
         },
         "display_answer": "There is growing evidence that screen time affects young children's language skills, but more research is needed.",
         "explanation": {
-          "vi": "Hai chỗ trống đều là danh từ không đếm được, đi với động từ số ít (there is, is needed). Growing evidence là \"ngày càng nhiều bằng chứng\"; more research is needed là \"cần nghiên cứu thêm\"."
+          "vi": "Hai chỗ trống đều là danh từ không đếm được, đi với động từ số ít (there is, is needed); evidence và research là lựa chọn tự nhiên nhất trong tin khoa học. Growing evidence là \"ngày càng nhiều bằng chứng\"; more research is needed là \"cần nghiên cứu thêm\"."
         },
         "known_wrong": [
           {
@@ -50694,11 +50804,6 @@ select content_private.import_bundle($bundle${
             "answer": "proof",
             "error_tag": "word_choice",
             "feedback_vi": "Proof là bằng chứng chắc chắn, mâu thuẫn với \"growing\" và \"more research is needed\". Tin khoa học dùng evidence."
-          },
-          {
-            "answer": "study",
-            "error_tag": "uncountable_article",
-            "feedback_vi": "Study đếm được nên cần a hoặc số nhiều (more studies are needed). Với is needed, dùng research."
           }
         ],
         "rubric": {
@@ -50724,19 +50829,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "There is growing {{b1}} that screen time affects young children's language skills, but more {{b2}} is needed."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "e14b6d59d6e3388aafddcad44dfcf3fb9c1cadefca6e8a0a145572cb48f0f8a4",
+      "content_hash": "237926de3da3583a1521638f1d9e4e462156b9054cf3e6e7e8c58c4cbb8578ac",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "36eafe9d-2c6e-5335-ae2a-dead67b728ee",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "0bd251b7-3f97-52e9-aa43-66b45bb1e5bb",
       "key": "en:exercise:science-fill-participants",
       "key_data": {
@@ -50751,7 +50856,8 @@ select content_private.import_bundle($bundle${
             "b2": [
               "participants",
               "volunteers",
-              "people"
+              "people",
+              "subjects"
             ]
           }
         },
@@ -50799,36 +50905,43 @@ select content_private.import_bundle($bundle${
         ],
         "template": "The researchers {{b1}} an experiment with 500 {{b2}}, half of whom were asked to stop using social media."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "c4d64b9ee49a034f5cbc1fcda25ada01fcf07d7755d67f94b098723c93fc3649",
+      "content_hash": "9d4224a2e6deffc8041871bcc620cf7d2b2ace12f45702661b7efb2a27b6d2b7",
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "13e3281f-6517-59ac-9fee-08094e0c5b23",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "56bbd028-e9f0-59d4-b7b6-794e65d5d3b3",
       "key": "en:exercise:science-fill-study-found-hinted",
       "key_data": {
         "answer_key": {
           "blanks": {
             "b1": [
-              "study"
+              "study",
+              "survey",
+              "report"
             ],
             "b2": [
               "found",
-              "showed"
+              "showed",
+              "shows",
+              "finds",
+              "suggests",
+              "suggested",
+              "revealed"
             ]
           }
         },
         "display_answer": "A recent study found that teenagers who use their phones at night sleep an hour less.",
         "explanation": {
-          "vi": "A recent + danh từ đếm được số ít - study. \"Phát hiện rằng\" là found that (quá khứ của find); showed that cũng được."
+          "vi": "A recent + danh từ đếm được số ít - study. \"Phát hiện rằng\" là found that (quá khứ của find); showed / shows / suggests that cũng được."
         },
         "known_wrong": [
           {
@@ -50874,8 +50987,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "A recent {{b1}} {{b2}} that teenagers who use their phones at night sleep an hour less."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -50886,7 +50999,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "listen",
       "id": "140226b5-656c-510b-9b75-8d5ef164968c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "a4ada9ac-02bf-57bc-be2f-2b944dbf7f98",
       "key": "en:exercise:science-listen-conducted-experiment",
       "key_data": {
@@ -50935,8 +51048,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -50947,7 +51060,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "a7a6fb7f-8aa0-55f5-bf8f-53dc7a2a56d8",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7c57bcfe-3454-59aa-98d2-4b9fcf0923c3",
       "key": "en:exercise:science-mcq-link-meaning",
       "key_data": {
@@ -50996,8 +51109,8 @@ select content_private.import_bundle($bundle${
         "stem": "\"Scientists have found a link between poor sleep and lower grades.\" Câu này cho biết điều gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -51008,7 +51121,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "7d408b1e-49d4-5359-bff7-c765ad76cc76",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2a8dc499-d97e-5d21-ad48-9b9aec89c87f",
       "key": "en:exercise:science-mcq-situation-headline",
       "key_data": {
@@ -51057,8 +51170,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn của bạn chia sẻ tiêu đề \"Scientists PROVE phones cause cancer!\" từ một trang web nặc danh. Bạn trả lời thế nào cho hợp lý nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -51069,7 +51182,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "0b7c79e6-0efe-5d05-a38f-c7b33c496c56",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2192a29c-a9fe-59fa-82a4-cf2d51e8f63c",
       "key": "en:exercise:science-mcq-suggest-vs-prove",
       "key_data": {
@@ -51118,8 +51231,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bản tin viết: \"The study suggests that green tea may reduce stress.\" Tiêu đề nào phản ánh ĐÚNG nghiên cứu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -51130,7 +51243,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "40df846d-f33c-58f8-b28c-d5385bf283ef",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b7ec2699-400d-53ad-aaf7-4837e8a40f50",
       "key": "en:exercise:science-order-fact-check",
       "key_data": {
@@ -51200,19 +51313,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "569ed238625e3c4e5e9acbab31b93a1f645987516f13c681d70dc404fc4b3cc3",
+      "content_hash": "7a1a354c187f68aa94a6e3b84b722aa1b13708acff79498874ac50d4b84fd042",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "227a8eea-28b3-5a19-8dc6-d51eb684ff07",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3107a17b-6332-5b6e-9386-fc2c130bfa9c",
       "key": "en:exercise:science-translate-fake-news-spreads",
       "key_data": {
@@ -51223,7 +51336,9 @@ select content_private.import_bundle($bundle${
             "Fake news spreads faster than true news on social media.",
             "Fake news travels faster than real news on social media.",
             "On social media, fake news spreads faster than real news.",
-            "On social media fake news spreads more quickly than real news."
+            "On social media fake news spreads more quickly than real news.",
+            "Fake news spreads faster than genuine news on social media.",
+            "Fake news spreads more quickly than true news on social media."
           ]
         },
         "display_answer": "Fake news spreads faster than real news on social media.",
@@ -51262,8 +51377,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Tin giả lan nhanh hơn tin thật trên mạng xã hội."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -51274,7 +51389,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "13434384-8440-5822-ac1a-2527f6f90406",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "9b4f6b92-1a88-5498-b991-ea470dfe3fc3",
       "key": "en:exercise:science-translate-misinformation",
       "key_data": {
@@ -51316,19 +51431,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Check whether the information comes from a reliable source before you share it - a lot of misinformation looks real."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "e0b95be958fb5eb012f4635850722ffb625d504d4540c62c8b90bd04acef5766",
+      "content_hash": "22d919f665edd800e6806bd84c0cb8f0f792941ec7d82e46ca3e375a9b07e782",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "e5300109-6e02-5693-b4df-1e53047c8f67",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "376bdddd-7ed7-5c76-bfbd-6ba3c6ef1376",
       "key": "en:exercise:science-translate-researchers-claim",
       "key_data": {
@@ -51345,7 +51460,9 @@ select content_private.import_bundle($bundle${
             "Researchers claim that the new battery can last a week, but no evidence has been published.",
             "Researchers claim that the new battery can last for a week, but no evidence has been published.",
             "Researchers claim that the new battery can last a week, but they haven't published any evidence yet.",
-            "Researchers claim that the new battery can last for a week, but they haven't published any evidence yet."
+            "Researchers claim that the new battery can last for a week, but they haven't published any evidence yet.",
+            "Researchers claim that the new battery can last one week, but no evidence has been published yet.",
+            "Researchers claim that the new battery can last a week, but no evidence has been published so far."
           ]
         },
         "display_answer": "Researchers claim that the new battery can last a week, but no evidence has been published yet.",
@@ -51384,8 +51501,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Các nhà nghiên cứu khẳng định loại pin mới có thể dùng được một tuần, nhưng chưa có bằng chứng nào được công bố."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -65692,7 +65809,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "129428ca-56a0-516c-b00a-dbe641166c26",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "007219d7-a48a-5a71-8078-a754f973ba17",
       "key": "en:exercise:wb-causative-fill-get-to-hinted",
       "key_data": {
@@ -65742,8 +65859,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "I'll get the supplier {{b1}} send us a new quote."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -65754,7 +65871,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "9ce5d41b-6451-527f-821b-e1181cda6290",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7e8fc661-2152-5ffe-8d45-062f86cebe3a",
       "key": "en:exercise:wb-causative-fill-office-repainted",
       "key_data": {
@@ -65818,8 +65935,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "The office looks great! We {{b1}} it {{b2}} last month."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -65830,7 +65947,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "listen",
       "id": "39930e07-3ad4-5b11-8f9f-77ca37d22e07",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "eee203a7-b0aa-5706-bbc1-afda0bd55a84",
       "key": "en:exercise:wb-causative-listen-stolen",
       "key_data": {
@@ -65879,19 +65996,19 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "86cfb3b63c20b22892a88d73397c88804da8e8faa7b5bf8b2abe89dcf5d7ec6b",
+      "content_hash": "81ec2f80ae1c562bba1f769a52ffd81b6c9d376a8eacd60f704bc09b03f8a6ba",
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "3be331f8-b59e-5a37-8935-37216a7a3c30",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7e8fc661-2152-5ffe-8d45-062f86cebe3a",
       "key": "en:exercise:wb-causative-mcq-haircut",
       "key_data": {
@@ -65900,7 +66017,7 @@ select content_private.import_bundle($bundle${
         },
         "display_answer": "I had my hair cut yesterday.",
         "explanation": {
-          "vi": "Người khác cắt cho bạn nên dùng have + vật + V3 (had my hair cut). I cut my hair là tự cắt; had cut my hair là quá khứ hoàn thành; cutting không phải V3."
+          "vi": "Người khác cắt cho bạn nên dùng have + vật + V3, và yesterday cần quá khứ - had my hair cut. Have my hair cut sai thì; had cut my hair là quá khứ hoàn thành (tự cắt); cutting không phải V3."
         },
         "known_wrong": [],
         "rubric": {
@@ -65923,7 +66040,7 @@ select content_private.import_bundle($bundle${
           {
             "id": "s7p",
             "lang": "en",
-            "text": "I cut my hair yesterday."
+            "text": "I have my hair cut yesterday."
           },
           {
             "id": "j9m",
@@ -65940,8 +66057,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn vừa ra tiệm cắt tóc. Câu nào đúng nghĩa \"Hôm qua tôi đi cắt tóc\"?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -65952,7 +66069,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "8b4d22eb-13d2-53f2-a7ef-d00af0c00bc6",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b8233b65-a23c-5e67-b235-e44f1502b452",
       "key": "en:exercise:wb-causative-mcq-quote-meaning",
       "key_data": {
@@ -66001,8 +66118,8 @@ select content_private.import_bundle($bundle${
         "stem": "\"Let's get a quote from two suppliers before we decide.\" Quote ở đây nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -66013,7 +66130,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "2cbffa00-dddc-5dc9-b2d9-360fcebba5ea",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "007219d7-a48a-5a71-8078-a754f973ba17",
       "key": "en:exercise:wb-causative-mcq-situation-assistant",
       "key_data": {
@@ -66062,8 +66179,8 @@ select content_private.import_bundle($bundle${
         "stem": "Khách hàng hỏi xin tài liệu sản phẩm. Bạn muốn nói lịch sự rằng bạn sẽ bảo trợ lý gửi cho họ ngay hôm nay. Câu nào đúng?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -66074,7 +66191,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "af2a16aa-3f65-5247-8973-8d78ddad40b9",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "758b7a77-1253-5868-bb37-7a21ceca4ab8",
       "key": "en:exercise:wb-causative-mcq-situation-supplier",
       "key_data": {
@@ -66123,8 +66240,8 @@ select content_private.import_bundle($bundle${
         "stem": "Trong cuộc họp, sếp hỏi vì sao lợi nhuận quý này tăng. Câu trả lời nào dùng từ chính xác nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -66135,7 +66252,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "747e065c-f513-5cc9-a4c4-af71dd9f5ec0",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7daa685f-ca5b-5bf4-9768-26da28e117f5",
       "key": "en:exercise:wb-causative-order-website-redesigned",
       "key_data": {
@@ -66215,19 +66332,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "fd48bd43765bb5d50ad729d4197e3c579551a5b12efe60540d1f97e148304c5a",
+      "content_hash": "1438afbb816af8aa9f37e092a07a9a300a7d4032b132414f6fdcb8149fa93b19",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "e6b34d19-7ba7-5924-bd45-520f27d59d92",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7e8fc661-2152-5ffe-8d45-062f86cebe3a",
       "key": "en:exercise:wb-causative-translate-contract-checked",
       "key_data": {
@@ -66242,7 +66359,8 @@ select content_private.import_bundle($bundle${
             "We should have our lawyer check the contract.",
             "We should get our lawyer to check the contract.",
             "We should ask a lawyer to check the contract.",
-            "We should ask our lawyer to check the contract."
+            "We should ask our lawyer to check the contract.",
+            "We ought to have the contract checked by a lawyer."
           ]
         },
         "display_answer": "We should have the contract checked by a lawyer.",
@@ -66281,19 +66399,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chúng ta nên nhờ luật sư kiểm tra hợp đồng."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "5ef3e9bacd596cbeea57917a0de713c7375bed11ac6de8337525fea06006fd4e",
+      "content_hash": "8a6bbd8233d8cbfa4fd00ae5a974942889cf9cca711f60176ec936a7149facf0",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "63990972-232e-5d76-9716-327e8c545596",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "936b7ffa-10a5-5bc2-b6e0-7bf89fdda48a",
       "key": "en:exercise:wb-causative-translate-cut-costs",
       "key_data": {
@@ -66310,7 +66428,10 @@ select content_private.import_bundle($bundle${
             "We have to reduce costs this year, or we'll make a loss.",
             "We need to reduce costs this year, otherwise we'll make a loss.",
             "We have to cut costs this year, or we'll lose money.",
-            "We need to cut costs this year, or we'll lose money."
+            "We need to cut costs this year, or we'll lose money.",
+            "We have to cut costs this year, otherwise we'll lose money.",
+            "We must cut costs this year, or we will make a loss.",
+            "We have to cut costs this year, or else we'll make a loss."
           ]
         },
         "display_answer": "We have to cut costs this year, or we'll make a loss.",
@@ -66349,8 +66470,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Năm nay chúng ta phải cắt giảm chi phí, nếu không chúng ta sẽ bị lỗ."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -66361,7 +66482,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "89baaa3b-3009-5426-8f0f-8ab029cff796",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "d06029b3-12dd-5b13-a6df-f26b5858623e",
       "key": "en:exercise:wb-causative-translate-within-budget-vi",
       "key_data": {
@@ -66405,19 +66526,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "We had the new warehouse built on time and within budget."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "87105f34a8a42627a986a267a4e5ba77aad92d9207df40110f588ae0b983201d",
+      "content_hash": "0911be3de9363efb43d375542d6ca38c8b331e4869ca5b09642b9a7a5bd2c46c",
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "74613a48-808d-59e7-98f0-8171dde66162",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "8e9379d7-05e2-5021-a5f0-ab8033d101b2",
       "key": "en:exercise:wb-future-fill-by-hinted",
       "key_data": {
@@ -66425,24 +66546,20 @@ select content_private.import_bundle($bundle${
           "blanks": {
             "b1": [
               "by",
-              "before"
+              "before",
+              "on"
             ]
           }
         },
         "display_answer": "Could you send me the slides by Wednesday? I need to check them before the meeting.",
         "explanation": {
-          "vi": "Người nói cần bản trình chiếu chậm nhất vào thứ Tư (gửi sớm hơn cũng được), nên dùng by (hoặc before). Until chỉ dùng cho việc kéo dài liên tục."
+          "vi": "Người nói cần bản trình chiếu chậm nhất vào thứ Tư (gửi sớm hơn cũng được), nên dùng by (hoặc before); on Wednesday (vào thứ Tư) cũng đúng nhưng không mang nghĩa \"chậm nhất là\". Until chỉ dùng cho việc kéo dài liên tục."
         },
         "known_wrong": [
           {
             "answer": "until",
             "error_tag": "by_until",
             "feedback_vi": "Until là \"kéo dài đến\". Hạn chót dùng by."
-          },
-          {
-            "answer": "on",
-            "error_tag": "by_until",
-            "feedback_vi": "On Wednesday là \"vào thứ Tư\" - người nói cần nhận trước hạn, nên dùng by."
           },
           {
             "answer": "till",
@@ -66473,19 +66590,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Could you send me the slides {{b1}} Wednesday? I need to check them before the meeting."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "556372d15aa628c036c2f2ccdf99b6637b07980450cf62ee2d359edc839993a1",
+      "content_hash": "f5de0aa7607444a833e9f3e4a67e21ecba950d691a54c3b7dc6d696ef70f9a4e",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "26ac85ec-27b8-5a60-ad56-e118b26939e0",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "ef9f337b-a56c-5e0e-ae6a-ce5a65747803",
       "key": "en:exercise:wb-future-fill-will-have-finished",
       "key_data": {
@@ -66493,14 +66610,17 @@ select content_private.import_bundle($bundle${
           "blanks": {
             "b1": [
               "will",
-              "'ll"
+              "'ll",
+              "might",
+              "may"
             ],
             "b2": [
               "giving",
               "doing",
               "rehearsing",
               "practising",
-              "practicing"
+              "practicing",
+              "preparing"
             ],
             "b3": [
               "finished",
@@ -66509,7 +66629,8 @@ select content_private.import_bundle($bundle${
               "rehearsed",
               "practised",
               "practiced",
-              "completed"
+              "completed",
+              "prepared"
             ]
           }
         },
@@ -66561,8 +66682,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Don't call me at five. I {{b1}} be {{b2}} my presentation then. But by six, I'll have {{b3}} it."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -66573,7 +66694,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "listen",
       "id": "66a8fe06-b46c-5d32-b328-33a80df53945",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "95dbd4c1-e9a1-5a60-a6df-4dc22b43d4f5",
       "key": "en:exercise:wb-future-listen-on-track",
       "key_data": {
@@ -66622,8 +66743,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -66634,7 +66755,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "b9e2292e-ff9e-50f9-b48f-50aedc011b23",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "388b57ca-61e5-5c7c-aefb-44607c58ca51",
       "key": "en:exercise:wb-future-mcq-continuous-meaning",
       "key_data": {
@@ -66683,8 +66804,8 @@ select content_private.import_bundle($bundle${
         "stem": "\"At 3 p.m. tomorrow, I'll be interviewing a candidate.\" Câu này có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -66695,7 +66816,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "6ee394e9-9668-5a44-aff3-6bd2a2f6349b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "ef9f337b-a56c-5e0e-ae6a-ce5a65747803",
       "key": "en:exercise:wb-future-mcq-perfect-form",
       "key_data": {
@@ -66744,8 +66865,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn câu đúng: \"Trước cuối tháng, chúng tôi sẽ tuyển xong ba nhân viên mới.\"",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -66756,7 +66877,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "be48b213-3ec4-51f9-8bf6-1da22bb0a832",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "df8a17a1-7b9d-5cf9-9de3-a7250330b895",
       "key": "en:exercise:wb-future-mcq-situation-polite",
       "key_data": {
@@ -66805,8 +66926,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn muốn biết chiều nay sếp có dùng phòng họp lớn không (để bạn đặt phòng cho khách) mà không làm sếp thấy bị hỏi dồn. Câu nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -66817,7 +66938,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "a0e7bbe1-411b-5541-a447-fd703cf13059",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "f0504f12-63b8-53dd-81d4-1812f3a0974c",
       "key": "en:exercise:wb-future-order-will-have-launched",
       "key_data": {
@@ -66886,19 +67007,19 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "ad0e53e94832081e667d208478f517936a3deeffbf7297abbafadba513e3c4d5",
+      "content_hash": "5bf73746a97f2e1d835fa5d5ccbddfcfae85e7da409488d5b0ad55c54bd260ff",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "0bcc2f56-31d7-5f68-b5bf-b686e660de55",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "e02db4ce-a1a0-5ac6-bb21-a66ae3f0ec89",
       "key": "en:exercise:wb-future-translate-meet-deadline",
       "key_data": {
@@ -66910,7 +67031,10 @@ select content_private.import_bundle($bundle${
             "Unless we hire more people, we'll miss the deadline.",
             "If we don't take on more people, we'll miss the deadline.",
             "If we don't hire more people, we won't meet the deadline.",
-            "If we don't hire more staff, we won't meet the deadline."
+            "If we don't hire more staff, we won't meet the deadline.",
+            "If we don't hire more people, we're going to miss the deadline.",
+            "If we don't recruit more people, we'll miss the deadline.",
+            "If we don't hire more people, we will miss the deadline."
           ]
         },
         "display_answer": "If we don't hire more people, we'll miss the deadline.",
@@ -66949,8 +67073,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Nếu chúng ta không thuê thêm người, chúng ta sẽ trễ hạn."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -66961,7 +67085,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "c54e2746-0b3f-561c-aaf4-8babe53ad666",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "d3b67f1f-ead6-514f-a3e6-0de4c160aace",
       "key": "en:exercise:wb-future-translate-stakeholders-vi",
       "key_data": {
@@ -67005,19 +67129,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "By the time the stakeholders arrive, we'll have set up the room."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "f23a540cbd0ee8d5e804afe83de36893e8e13ac8815a8e6bbb738bd9b01e280f",
+      "content_hash": "e4cf394c603b1e5d5f727a81b77b360c5d0e3177a05f63a613d68822e1f37429",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "93dac083-a8e7-5387-bb46-a590fc23e74a",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "ef9f337b-a56c-5e0e-ae6a-ce5a65747803",
       "key": "en:exercise:wb-future-translate-ten-years",
       "key_data": {
@@ -67033,7 +67157,16 @@ select content_private.import_bundle($bundle${
             "By June next year, she will have been working at this company for ten years.",
             "By next June, she will have worked for this company for ten years.",
             "She'll have worked at this company for ten years by June next year.",
-            "She will have worked at this company for ten years by June next year."
+            "She will have worked at this company for ten years by June next year.",
+            "By next June, she'll have worked for this company for ten years.",
+            "She'll have worked for this company for ten years by June next year.",
+            "By June next year, she'll have worked here for ten years.",
+            "She will have worked for this company for ten years by June next year.",
+            "By June next year, she will have been working for this company for ten years.",
+            "By June next year, she will have worked here for ten years.",
+            "By June next year, she'll have worked at this company for 10 years.",
+            "By June next year, she will have worked at this company for 10 years.",
+            "By June next year, she'll have been working for this company for ten years."
           ]
         },
         "display_answer": "By June next year, she'll have worked at this company for ten years.",
@@ -67072,19 +67205,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Đến tháng Sáu năm sau, chị ấy sẽ làm việc ở công ty này được mười năm."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "f8a2a2d68952ef03472ab0203b33906e8ffb6a17175283bc06cd0d408e8b2777",
+      "content_hash": "2381898e0af67101d5d4af17e9010d959c0242d26137de8875197fd812f7c115",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "07066e4d-f299-5119-a479-52ec04c807dc",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "9fc9fa2f-459a-585b-a6db-2cba2b561f72",
       "key": "en:exercise:wb-future-translate-this-time-tomorrow",
       "key_data": {
@@ -67094,7 +67227,11 @@ select content_private.import_bundle($bundle${
             "This time tomorrow I will be flying to Singapore.",
             "I'll be flying to Singapore this time tomorrow.",
             "This time tomorrow, I'll be on a flight to Singapore.",
-            "This time tomorrow, I'll be on the plane to Singapore."
+            "This time tomorrow, I'll be on the plane to Singapore.",
+            "I will be flying to Singapore this time tomorrow.",
+            "At this time tomorrow, I'll be flying to Singapore.",
+            "At this time tomorrow, I will be flying to Singapore.",
+            "This time tomorrow, I will be on a flight to Singapore."
           ]
         },
         "display_answer": "This time tomorrow, I'll be flying to Singapore.",
@@ -67128,8 +67265,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Giờ này ngày mai, tôi đang bay sang Singapore."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -67140,7 +67277,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "fill_blank",
       "id": "da9be6b3-e6a7-5db1-86af-3266328dfb52",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7b879cca-90fd-54cd-ac99-46564b14e88d",
       "key": "en:exercise:wb-meeting-fill-agenda-hinted",
       "key_data": {
@@ -67197,8 +67334,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "There are four items {{b1}} the {{b2}} today, so let's be quick."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -67209,7 +67346,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "90824b0d-5137-579a-a56c-8d6690b74dc6",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "01e0a16a-a976-5069-b301-911d32fe847f",
       "key": "en:exercise:wb-meeting-fill-move-on",
       "key_data": {
@@ -67268,8 +67405,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "OK, I think we've covered that. Let's {{b1}} on {{b2}} the next item - the marketing budget."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -67280,7 +67417,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "listen",
       "id": "515ea9f3-a7c9-5740-a164-902260db7892",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "2612f225-21d0-5686-a0ba-84f6a77c2f8f",
       "key": "en:exercise:wb-meeting-listen-come-in",
       "key_data": {
@@ -67329,8 +67466,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -67341,7 +67478,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "c764c16a-0443-5388-99e7-ff6d36adb5e1",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7a05ee7f-45d3-52b2-ba2c-fdd09d6ae300",
       "key": "en:exercise:wb-meeting-mcq-minutes-meaning",
       "key_data": {
@@ -67390,8 +67527,8 @@ select content_private.import_bundle($bundle${
         "stem": "\"Could you take the minutes today, Hưng?\" Người chủ trì đang nhờ Hưng làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -67402,7 +67539,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "ef18b698-68db-5f76-a64c-6cf3fc363d62",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "601885bd-23bc-52f1-bae0-90ee63e30deb",
       "key": "en:exercise:wb-meeting-mcq-open",
       "key_data": {
@@ -67451,8 +67588,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn là người chủ trì, mọi người đã đến đủ. Câu nào phù hợp nhất để mở đầu cuộc họp?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -67463,7 +67600,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "mcq",
       "id": "0ff5e1e8-02d7-5e74-ba1f-986778c85a58",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "a0e6feb6-d1cb-5f09-95b1-274b64845fda",
       "key": "en:exercise:wb-meeting-mcq-situation-keep-turn",
       "key_data": {
@@ -67512,8 +67649,8 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn đang trình bày thì một đồng nghiệp chen ngang. Bạn muốn nói nốt ý của mình một cách lịch sự. Câu nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -67524,7 +67661,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "e2aa82d8-ad4f-5880-8e75-06fbde4dce42",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "744bbcb0-e6bb-5af6-9632-95a0f8f7b6c2",
       "key": "en:exercise:wb-meeting-order-action-point",
       "key_data": {
@@ -67599,8 +67736,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -67611,7 +67748,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "a63bf91a-b40e-5cad-b43f-d6af31cf63db",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "35b342f6-268f-5647-b22e-ed1ac69d7e46",
       "key": "en:exercise:wb-meeting-translate-chair-vi",
       "key_data": {
@@ -67661,19 +67798,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "Ms Thảo will be chairing the meeting, and Nam will take the minutes."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "e35f7a6b5c8ec2f7e146fedabf087f4543cd4708537ded31adeb502e2154900f",
+      "content_hash": "839b75b2b84c03dc012c218cc0477d3dacdcd75dd3b9cadbdc13dcadfce854b0",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "93b05184-f25f-50c2-b5d3-c1c2a7e01c06",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "3b7cb296-475d-538d-80bd-a5d6d6be3869",
       "key": "en:exercise:wb-meeting-translate-come-back",
       "key_data": {
@@ -67688,7 +67825,15 @@ select content_private.import_bundle($bundle${
             "That's a good question, but could we come back to it later?",
             "Good question, but can we come back to it later?",
             "That's a good question, but can we discuss that later?",
-            "That's a good question, but can we talk about that later?"
+            "That's a good question, but can we talk about that later?",
+            "That is a good question, but could we come back to that later?",
+            "That is a good question, but can we come back to it later?",
+            "That is a good question, but could we come back to it later?",
+            "That is a good question, but can we discuss that later?",
+            "That is a good question, but can we talk about that later?",
+            "That's a good question, but could we discuss that later?",
+            "That is a good question, but could we discuss that later?",
+            "Good question, but can we discuss that later?"
           ]
         },
         "display_answer": "That's a good question, but can we come back to that later?",
@@ -67722,19 +67867,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Câu hỏi hay đấy, nhưng chúng ta bàn lại chuyện đó sau được không?"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "04f7bb6b529da0b0014f1e8f5723d0b9374d9cf11688471eb1875c5f11bd7db3",
+      "content_hash": "2e0006518170152ce4d8fe2c2eda3d86854414c5b021ffddb620a5c147ced033",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "7c360cc0-49e9-5ce2-9093-6455b0138b33",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "75d10cf8-9d30-579c-be8f-aa5ccb981ae7",
       "key": "en:exercise:wb-meeting-translate-discuss-budget",
       "key_data": {
@@ -67747,7 +67892,9 @@ select content_private.import_bundle($bundle${
             "We will talk about the budget at the end of the meeting.",
             "We're going to talk about the budget at the end of the meeting.",
             "We'll be discussing the budget at the end of the meeting.",
-            "We will be discussing the budget at the end of the meeting."
+            "We will be discussing the budget at the end of the meeting.",
+            "We'll discuss the budget at the end of this meeting.",
+            "We will discuss the budget at the end of this meeting."
           ]
         },
         "display_answer": "We'll discuss the budget at the end of the meeting.",
@@ -67786,8 +67933,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chúng ta sẽ thảo luận về ngân sách vào cuối cuộc họp."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -67798,7 +67945,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "fd26e9fd-c33e-56f1-a657-a92e583743b8",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "eaadbf10-3c31-518b-b5ef-70c6198a3e88",
       "key": "en:exercise:wb-nego-fill-by-to-hinted",
       "key_data": {
@@ -67860,19 +68007,19 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Revenue increased {{b1}} 20%, from $4 million {{b2}} $4.8 million."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "41e37a44d2f80bb9d4cdb765d7f93fc7508e67eb8c7bf0b5679090b17de7b287",
+      "content_hash": "2710e996f210cee3a51cde223285b471c08a18fa536d9ebf4df89c3c54213709",
       "difficulty": 3,
       "exercise_type": "fill_blank",
       "id": "34ccb24f-475a-5982-9119-be143cd1b8ce",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "97422f83-7793-5eac-8fc4-5dd4e7f58b9a",
       "key": "en:exercise:wb-nego-fill-trend-adverbs",
       "key_data": {
@@ -67891,7 +68038,8 @@ select content_private.import_bundle($bundle${
               "at"
             ],
             "b3": [
-              "slightly"
+              "slightly",
+              "marginally"
             ]
           }
         },
@@ -67943,8 +68091,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Sales rose {{b1}} in the first quarter, peaked {{b2}} 50,000 units in April and then fell {{b3}}, by only 2%."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -67955,7 +68103,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "listen",
       "id": "d6d0fe04-f625-506e-8096-39af85bee1a5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "1a290674-243f-5078-8b3a-0177e68650e8",
       "key": "en:exercise:wb-nego-listen-fair-point",
       "key_data": {
@@ -68004,8 +68152,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -68016,7 +68164,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "af799491-a89b-52ef-96ee-cf132ae57de8",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "b63c5048-bbba-5448-8a4a-b5cc1ffec630",
       "key": "en:exercise:wb-nego-mcq-provided-that",
       "key_data": {
@@ -68065,8 +68213,8 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn câu đúng: \"Chúng tôi có thể giao hàng vào tuần sau, với điều kiện quý công ty xác nhận đơn hàng hôm nay.\"",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -68077,7 +68225,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "05e11f6c-ebd6-56f1-ade0-44c30b2c762b",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "cd7772e9-8e40-5ae1-a2a4-60c2631a9725",
       "key": "en:exercise:wb-nego-mcq-situation-counter",
       "key_data": {
@@ -68126,19 +68274,19 @@ select content_private.import_bundle($bundle${
         "stem": "Khách hàng đòi giảm giá 15%. Bạn chỉ có thể giảm 8% nếu họ trả trước 50%, và muốn giữ không khí thân thiện. Câu nào phù hợp nhất?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
-      "answer_lang": "vi",
-      "content_hash": "519b769a9104992f4d5102b8b052b9e259bfc7ca56e79f352620225537b4304a",
+      "answer_lang": "en",
+      "content_hash": "e68485714893afc83656ea42f464b3734567f1826e6df3255f8ce592574f95cd",
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "a6ef369f-2ba1-517c-a03b-1307031a9fb6",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7fd3e162-d66b-5891-bca8-053c9ef94b51",
       "key": "en:exercise:wb-nego-mcq-trend-meaning",
       "key_data": {
@@ -68187,8 +68335,8 @@ select content_private.import_bundle($bundle${
         "stem": "Biểu đồ cho thấy doanh số không tăng cũng không giảm suốt sáu tháng. Cụm nào mô tả đúng?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -68199,7 +68347,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "db630d06-015f-5196-9bed-dd006bb880bb",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "963181d6-860d-5fc2-90da-e10835498671",
       "key": "en:exercise:wb-nego-order-market-share",
       "key_data": {
@@ -68268,8 +68416,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -68280,7 +68428,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "ea140eae-d60f-5f2b-82fa-2dbb1a3a610c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4b9957e6-2249-5ecf-acaa-ef66efad7831",
       "key": "en:exercise:wb-nego-translate-as-long-as",
       "key_data": {
@@ -68344,8 +68492,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chúng tôi có thể giảm giá 5%, miễn là quý công ty ký hợp đồng hai năm."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -68356,7 +68504,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "6f7b5a6f-1109-585e-83f3-46811f07cbfe",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "a2ee3e87-b0da-5550-954a-47c0b64cd1af",
       "key": "en:exercise:wb-nego-translate-compromise-vi",
       "key_data": {
@@ -68401,19 +68549,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "After a long discussion, both sides reached a compromise on the price."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "196bc84c213465e6333bbbd08939d95fa2b768e5b6f6115e4ff07a6724dd9e67",
+      "content_hash": "bb2ced00e1320067fcd1ad31e0ac31a76786fd99af242918b5396ef03dc195a1",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "ab3d73fd-73e5-514c-8c5d-d8e52a9edba1",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "36427bb3-af94-542c-94e2-732250c41e42",
       "key": "en:exercise:wb-nego-translate-peak-stable",
       "key_data": {
@@ -68431,7 +68579,10 @@ select content_private.import_bundle($bundle${
             "Visitor numbers peaked at 20,000 in July and then levelled off.",
             "Visitor numbers peaked at 20,000 in July and then leveled off.",
             "Visitor numbers peaked at 20,000 in July and remained stable after that.",
-            "Visits peaked at 20,000 in July and then remained stable."
+            "Visits peaked at 20,000 in July and then remained stable.",
+            "The number of visitors peaked at 20,000 in July and then stayed stable.",
+            "The number of visitors peaked at 20,000 in July and then levelled off.",
+            "The number of visitors peaked at 20,000 in July and then leveled off."
           ]
         },
         "display_answer": "Visitor numbers peaked at 20,000 in July and then remained stable.",
@@ -68470,19 +68621,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Lượng khách truy cập đạt đỉnh 20.000 vào tháng Bảy, sau đó giữ ổn định."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "f79b2ea1bba300827052a8578deba74c052a959e4c9124239abfa4b854518114",
+      "content_hash": "7463dabdd527986f17a4cf30406c222e7a8829fb041505bf9c0e7c44449630f0",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "f494e0d1-0f43-56dd-ad93-7f2219a23d4e",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "c77ca3fc-717a-517c-ad5c-688fe7611168",
       "key": "en:exercise:wb-nego-translate-revenue-by",
       "key_data": {
@@ -68498,7 +68649,10 @@ select content_private.import_bundle($bundle${
             "We boosted revenue by 10% last year.",
             "We raised revenue by 10% last year.",
             "Our revenue increased by 10% last year.",
-            "Our revenue rose by 10% last year."
+            "Our revenue rose by 10% last year.",
+            "We increased revenue by 10 per cent last year.",
+            "We grew revenue by 10% last year.",
+            "Our revenue grew by 10% last year."
           ]
         },
         "display_answer": "We increased revenue by 10% last year.",
@@ -68532,8 +68686,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Năm ngoái chúng tôi đã tăng doanh thu 10%."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -68544,7 +68698,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "fill_blank",
       "id": "0a69de11-f712-5e6b-9808-f87de3013de1",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "ef9f337b-a56c-5e0e-ae6a-ce5a65747803",
       "key": "en:exercise:wb-review-fill-minutes-tenses",
       "key_data": {
@@ -68608,8 +68762,8 @@ select content_private.import_bundle($bundle${
         ],
         "template": "By the end of June, we will have {{b1}} the new design with customers. At the next meeting, Hà will be {{b2}} the new budget."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -68620,7 +68774,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "listen",
       "id": "462be857-43b6-5bea-8a8a-f9868adf6917",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "abd9114c-d624-5bdd-9166-9eef34c78b44",
       "key": "en:exercise:wb-review-listen-deposit",
       "key_data": {
@@ -68669,8 +68823,8 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -68681,7 +68835,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "8638cdc3-2045-5bcb-9bdc-30ed0a8a3fde",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "37a6652d-a9d1-570c-b306-4f510ec588e7",
       "key": "en:exercise:wb-review-mcq-apologies",
       "key_data": {
@@ -68730,8 +68884,8 @@ select content_private.import_bundle($bundle${
         "stem": "Trong biên bản: \"Present: Hà, Tuấn, Linh. Apologies: Mr Dũng.\" Thông tin về anh Dũng có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -68742,7 +68896,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 2,
       "exercise_type": "mcq",
       "id": "46ab2b90-54b1-51bd-8034-2c0968b93995",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "ee2e8599-957f-5b47-bb25-359cfb0d612d",
       "key": "en:exercise:wb-review-mcq-minutes-reason",
       "key_data": {
@@ -68791,8 +68945,8 @@ select content_private.import_bundle($bundle${
         "stem": "Theo biên bản: \"Revenue fell slightly in April, by 3%, mainly because the new product launch is two weeks behind schedule.\" Vì sao doanh thu giảm?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -68803,7 +68957,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "mcq",
       "id": "76fdb2bc-024a-548c-887f-00ce266ce5fe",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "4b9957e6-2249-5ecf-acaa-ef66efad7831",
       "key": "en:exercise:wb-review-mcq-situation-condition",
       "key_data": {
@@ -68852,19 +69006,19 @@ select content_private.import_bundle($bundle${
         "stem": "Bạn đồng ý mức giá của nhà cung cấp, nhưng chỉ khi họ giao hàng trước ngày 1/6. Câu nào vừa đúng ngữ pháp vừa phù hợp?",
         "stem_lang": "vi"
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "63725827a1db5c3765cbfb8383e4eeff74c81a1378d3d8c14db87f0c832038fe",
+      "content_hash": "b212ef4c11ff2c69a377d04f4411a4d274fdc49adfdad653af499813620428bb",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "7e09edee-8665-593b-a70e-a4c61cd9df0c",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "59be10f4-6880-5d68-97c9-cef432482b24",
       "key": "en:exercise:wb-review-order-action-point",
       "key_data": {
@@ -68880,6 +69034,17 @@ select content_private.import_bundle($bundle${
               "a-by",
               "a-15",
               "a-may"
+            ],
+            [
+              "a-tuan",
+              "a-to",
+              "a-have",
+              "a-the",
+              "a-packaging",
+              "a-redesigned",
+              "a-by",
+              "a-may",
+              "a-15"
             ]
           ]
         },
@@ -68943,8 +69108,8 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
       "status": "published"
@@ -68955,7 +69120,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "06990311-7098-5288-880d-ea02fd7ccbcf",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7e8fc661-2152-5ffe-8d45-062f86cebe3a",
       "key": "en:exercise:wb-review-translate-contract-sent",
       "key_data": {
@@ -69000,19 +69165,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "en",
         "source_text": "I think we've reached a compromise. I'll have the contract sent to you this afternoon."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "f3a1cc9dd6d24d40d58cb1de51aa74a528781f26eb07784f7ec9afb694290df5",
+      "content_hash": "29b3fd273a5f736fb91178d2537c4172ceac3635c2b5d9ef484775eb00946858",
       "difficulty": 3,
       "exercise_type": "translate",
       "id": "cb75a204-3d62-5f68-b8da-ed5a7239ecb6",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "936b7ffa-10a5-5bc2-b6e0-7bf89fdda48a",
       "key": "en:exercise:wb-review-translate-discuss-cut-costs",
       "key_data": {
@@ -69026,7 +69191,9 @@ select content_private.import_bundle($bundle${
             "We need to talk about how to cut costs.",
             "We need to talk about ways to cut costs.",
             "We have to discuss how to cut costs.",
-            "We need to discuss how we can reduce costs."
+            "We need to discuss how we can reduce costs.",
+            "We need to discuss how to cut our costs.",
+            "We need to talk about how we can cut costs."
           ]
         },
         "display_answer": "We need to discuss how to cut costs.",
@@ -69060,19 +69227,19 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chúng ta cần thảo luận cách cắt giảm chi phí."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
     },
     {
       "answer_lang": "en",
-      "content_hash": "c6f10d753d6071cf996a5d4a7dda1fffdf5ebbba7bd98fc90d522e5d07692f51",
+      "content_hash": "a101d49e23d81e21e57cfa1101d3b1cf842205f719249784865fa5b0fae68553",
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "c854ce5a-7c34-5d17-aa4c-176b418a40d5",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "1a290674-243f-5078-8b3a-0177e68650e8",
       "key": "en:exercise:wb-review-translate-fair-point",
       "key_data": {
@@ -69086,9 +69253,21 @@ select content_private.import_bundle($bundle${
             "That's a fair point, but another supplier offered a lower price.",
             "That is a fair point, but another supplier has quoted a lower price.",
             "That's a fair point, but we've had a lower quote from another supplier.",
+            "That is a fair point, but we've had a lower quote from another supplier.",
             "That's a fair point, but we got a lower quote from another supplier.",
             "That's a fair point, but another supplier has quoted us a lower price.",
-            "That's a fair point, but another supplier quoted us a lower price."
+            "That's a fair point, but another supplier quoted us a lower price.",
+            "That is a fair point, but another supplier quoted a lower price.",
+            "That is a fair point, but another supplier has given us a lower quote.",
+            "That is a fair point, but another supplier gave us a lower quote.",
+            "That is a fair point, but another supplier has offered a lower price.",
+            "That is a fair point, but another supplier offered a lower price.",
+            "That is a fair point, but we have had a lower quote from another supplier.",
+            "That's a fair point, but we have had a lower quote from another supplier.",
+            "That is a fair point, but we got a lower quote from another supplier.",
+            "That is a fair point, but another supplier has quoted us a lower price.",
+            "That is a fair point, but another supplier quoted us a lower price.",
+            "You have a point, but another supplier has quoted a lower price."
           ]
         },
         "display_answer": "That's a fair point, but another supplier has quoted a lower price.",
@@ -69122,8 +69301,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Anh nói cũng có lý, nhưng một nhà cung cấp khác báo giá thấp hơn."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
       "status": "published"
@@ -69134,7 +69313,7 @@ select content_private.import_bundle($bundle${
       "difficulty": 4,
       "exercise_type": "translate",
       "id": "870024a4-cc8a-57c4-8adf-b936b2896fdc",
-      "is_demo": true,
+      "is_demo": false,
       "item_id": "7f6f1f2a-1b25-565d-ac3a-73be5c9a21ef",
       "key": "en:exercise:wb-review-translate-offer-discount",
       "key_data": {
@@ -69191,8 +69370,8 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Chúng tôi có thể chiết khấu 10%, với điều kiện quý công ty đặt cọc 30%."
       },
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -150675,13 +150854,13 @@ select content_private.import_bundle($bundle${
         "text": "a shoulder to cry on"
       },
       "id": "9a3462c5-1822-577c-ba5b-b133eb003834",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:a-shoulder-to-cry-on",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -150713,13 +150892,13 @@ select content_private.import_bundle($bundle${
         "text": "A study found / shows that…"
       },
       "id": "56bbd028-e9f0-59d4-b7b6-794e65d5d3b3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:a-study-found-that",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "reading",
@@ -150754,13 +150933,13 @@ select content_private.import_bundle($bundle${
         "text": "(have) access to"
       },
       "id": "4255b086-9e03-530f-bc01-fa94af0bbd22",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:access-to",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "grammar"
@@ -150923,13 +151102,13 @@ select content_private.import_bundle($bundle${
         "text": "acquaintance"
       },
       "id": "b3700a1e-9949-5554-91ac-9c56a2bb1ede",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:acquaintance",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -150962,13 +151141,13 @@ select content_private.import_bundle($bundle${
         "text": "action point"
       },
       "id": "59be10f4-6880-5d68-97c9-cef432482b24",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:action-point",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -151181,13 +151360,13 @@ select content_private.import_bundle($bundle${
         "text": "admit + V-ing / admit (that) …"
       },
       "id": "10d1a689-6445-55ca-9f9e-8763e43424dd",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:admit-pattern",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -151301,13 +151480,13 @@ select content_private.import_bundle($bundle${
         "text": "advice column / agony aunt"
       },
       "id": "ebbbad56-0fe8-53ef-bf66-c022874c8b96",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:advice-column",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "reading"
@@ -151393,13 +151572,13 @@ select content_private.import_bundle($bundle${
         "text": "affordable housing"
       },
       "id": "5d3053fa-1d13-5e76-863a-f26d9dbad087",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:affordable-housing",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -151517,13 +151696,13 @@ select content_private.import_bundle($bundle${
         "text": "agenda"
       },
       "id": "7b879cca-90fd-54cd-ac99-46564b14e88d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:agenda",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -151556,13 +151735,13 @@ select content_private.import_bundle($bundle${
         "text": "I agree up to a point."
       },
       "id": "7496cedd-5017-593d-9329-041ffb7d9212",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:agree-up-to-a-point",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -151573,7 +151752,7 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
-          "vi": "Người Việt hay nói \"I am agree\" vì dịch \"tôi đồng ý\" giống \"tôi vui\" (I am happy). Agree là động từ - I agree, I don't agree; chỉ dùng be với tính từ, ví dụ I am in agreement."
+          "vi": "Người Việt hay nói \"I am agree\" vì dịch \"tôi đồng ý\" giống \"tôi vui\" (I am happy). Agree là động từ - I agree, I don't agree; muốn dùng be thì phải đổi cấu trúc, ví dụ I am in agreement."
         },
         "examples": [
           {
@@ -151593,7 +151772,7 @@ select content_private.import_bundle($bundle${
           "vi": "đồng ý: agree là động từ thường, nên phủ định dùng don't, không dùng be"
         }
       },
-      "content_hash": "2d42ee3d80dee9a14e0b56353d29980f32cca18d09cdbb1e1f3f4a0d6cb4477d",
+      "content_hash": "853fa755eac458079ec0efbd791bb05edfd0c99605a80e6154af19468f7eb71f",
       "difficulty": 3,
       "front": {
         "ipa": "/əˈɡriː/",
@@ -151601,13 +151780,13 @@ select content_private.import_bundle($bundle${
         "text": "agree (động từ) - I agree / I don't agree"
       },
       "id": "3d27212f-b88c-5bfa-bc61-1713f1113a00",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:agree-verb",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "speaking"
@@ -151726,13 +151905,13 @@ select content_private.import_bundle($bundle${
         "text": "algorithm"
       },
       "id": "c11002d6-3f06-5f19-8c03-b0988d1ae391",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:algorithm",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -151804,13 +151983,13 @@ select content_private.import_bundle($bundle${
         "text": "All things considered, …"
       },
       "id": "3151e5d1-383b-5667-abb4-9e3881877599",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:all-things-considered",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing",
         "speaking"
@@ -152233,13 +152412,13 @@ select content_private.import_bundle($bundle${
         "text": "any other business (AOB)"
       },
       "id": "127c1553-9710-550c-abee-b1e441a7c5a8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:any-other-business",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -152315,13 +152494,13 @@ select content_private.import_bundle($bundle${
         "text": "Apologies: … (trong biên bản họp)"
       },
       "id": "37a6652d-a9d1-570c-b306-4f510ec588e7",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:apologies-minutes",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "reading"
@@ -152358,13 +152537,13 @@ select content_private.import_bundle($bundle${
         "text": "apologise (to someone) for doing something"
       },
       "id": "97b6dbe8-b22c-5852-86a6-b33f990ef7b9",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:apologise-for",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -152647,13 +152826,13 @@ select content_private.import_bundle($bundle${
         "text": "artificial intelligence (AI)"
       },
       "id": "3818f23a-1d8e-535b-8328-038b208b22df",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:artificial-intelligence",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -152725,13 +152904,13 @@ select content_private.import_bundle($bundle${
         "text": "as long as / so long as"
       },
       "id": "4b9957e6-2249-5ecf-acaa-ef66efad7831",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:as-long-as",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "speaking"
@@ -152765,13 +152944,13 @@ select content_private.import_bundle($bundle${
         "text": "ask someone out"
       },
       "id": "141c67d8-247b-55a2-b7ba-c2512490552a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:ask-out",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -153265,13 +153444,13 @@ select content_private.import_bundle($bundle${
         "text": "attention span"
       },
       "id": "fb7aa6f5-e026-5659-9e59-1fae59055ba5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:attention-span",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -153394,13 +153573,13 @@ select content_private.import_bundle($bundle${
         "text": "avoid"
       },
       "id": "539599e2-9a0f-5ce8-80e3-fbf2292425a3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:avoid",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -153517,13 +153696,13 @@ select content_private.import_bundle($bundle${
         "text": "bad-tempered"
       },
       "id": "c302bc73-f7a6-5d19-b356-8bc010b56ac9",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:bad-tempered",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -154121,13 +154300,13 @@ select content_private.import_bundle($bundle${
         "text": "S + is said / thought / believed + to V / to have V3"
       },
       "id": "f2eb31af-3045-5020-b243-601e34c222a5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:be-said-to",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -154210,13 +154389,13 @@ select content_private.import_bundle($bundle${
         "text": "be used to + V-ing / danh từ"
       },
       "id": "e73a6ea6-f5e7-5cc6-8a8c-4df9933ee98e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:be-used-to",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -154584,13 +154763,13 @@ select content_private.import_bundle($bundle${
         "text": "behind / ahead of schedule"
       },
       "id": "ee2e8599-957f-5b47-bb25-359cfb0d612d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:behind-schedule",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -155248,13 +155427,13 @@ select content_private.import_bundle($bundle${
         "text": "break up (with someone)"
       },
       "id": "507b135d-82fb-5c3b-b0bc-9d57c47f9ec9",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:break-up-with",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -155329,13 +155508,13 @@ select content_private.import_bundle($bundle${
         "text": "bring someone up"
       },
       "id": "4d6beed8-3431-565e-9e7c-b1548e46b25d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:bring-up",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -155787,13 +155966,13 @@ select content_private.import_bundle($bundle${
         "text": "by + mốc thời gian"
       },
       "id": "8e9379d7-05e2-5021-a5f0-ab8033d101b2",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:by-deadline-time",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "vocabulary"
@@ -156176,13 +156355,13 @@ select content_private.import_bundle($bundle${
         "text": "can't + V (chắc chắn không)"
       },
       "id": "7693afcd-a651-51ce-97db-77644e2acbd8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:cant-deduction",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -156221,13 +156400,13 @@ select content_private.import_bundle($bundle${
         "text": "can't / couldn't have + V3 (chắc chắn đã không)"
       },
       "id": "1402b3d3-1cd7-5606-bd03-7186e44432d0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:cant-have-done",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -156238,7 +156417,7 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
-          "vi": "Sau can't stand dùng V-ing hoặc danh từ - can't stand waiting, không nói \"can't stand to wait\" trong văn nói thông thường."
+          "vi": "Sau can't stand thường dùng V-ing hoặc danh từ - can't stand waiting; can't stand to wait cũng có nhưng ít gặp hơn."
         },
         "examples": [
           {
@@ -156258,7 +156437,7 @@ select content_private.import_bundle($bundle${
           "vi": "không chịu nổi, rất ghét"
         }
       },
-      "content_hash": "6f87169c7c18a01b286d6653b12af2f67ffff80fbfcdb5fe78a4498bdb1cb7b6",
+      "content_hash": "5cf47e7fbeabcc2339e68b0dbd81d7faf923c4921bff3af27a7cc3f021ff1dd1",
       "difficulty": 3,
       "front": {
         "ipa": "UK /kɑːnt ˈstænd/ · US /kænt ˈstænd/",
@@ -156266,13 +156445,13 @@ select content_private.import_bundle($bundle${
         "text": "can't stand"
       },
       "id": "f51642fa-9bb4-5525-89d3-2cf664ff9532",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:cant-stand",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -156306,13 +156485,13 @@ select content_private.import_bundle($bundle${
         "text": "carbon emissions"
       },
       "id": "ab62b727-96ce-53d5-95bd-a76d1999e97c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:carbon-emissions",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -156551,13 +156730,13 @@ select content_private.import_bundle($bundle${
         "text": "have something + V3 (bị mất, bị hỏng…)"
       },
       "id": "eee203a7-b0aa-5706-bbc1-afda0bd55a84",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:causative-experience",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -156629,13 +156808,13 @@ select content_private.import_bundle($bundle${
         "text": "chair a meeting"
       },
       "id": "35b342f6-268f-5647-b22e-ed1ac69d7e46",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:chair-a-meeting",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -157140,13 +157319,13 @@ select content_private.import_bundle($bundle${
         "text": "climate change"
       },
       "id": "3a3f4c98-77d7-585f-b071-c4e1690b331f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:climate-change",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -157224,13 +157403,13 @@ select content_private.import_bundle($bundle${
         "text": "a close friend"
       },
       "id": "8885de99-5b8d-5fb5-9817-7b02b2d057a9",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:close-friend",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -157441,13 +157620,13 @@ select content_private.import_bundle($bundle${
         "text": "Can we come back to that later?"
       },
       "id": "3b7cb296-475d-538d-80bd-a5d6d6be3869",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:come-back-to-that",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -157766,13 +157945,13 @@ select content_private.import_bundle($bundle${
         "text": "Tính từ ghép (open-minded, hard-working)"
       },
       "id": "28412874-948c-5ff8-98c8-1961a94e496a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:compound-adjectives",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "vocabulary"
@@ -157808,13 +157987,13 @@ select content_private.import_bundle($bundle${
         "text": "danh từ ghép (screen time, smartphone, password, search engine)"
       },
       "id": "455f6f3f-01af-57a3-841e-4660f3cc550e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:compound-nouns-tech",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -157902,13 +158081,13 @@ select content_private.import_bundle($bundle${
         "text": "compromise"
       },
       "id": "a2ee3e87-b0da-5550-954a-47c0b64cd1af",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:compromise",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -158069,13 +158248,13 @@ select content_private.import_bundle($bundle${
         "text": "conduct / carry out an experiment"
       },
       "id": "a4ada9ac-02bf-57bc-be2f-2b944dbf7f98",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:conduct-an-experiment",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -158320,13 +158499,13 @@ select content_private.import_bundle($bundle${
         "text": "content creator"
       },
       "id": "c5668f1f-8eb4-5c32-b4dd-621866f2c61e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:content-creator",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -158482,13 +158661,13 @@ select content_private.import_bundle($bundle${
         "text": "the cost of living"
       },
       "id": "86943f9d-93b2-5051-8d6f-7912b20459e0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:cost-of-living",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -158560,13 +158739,13 @@ select content_private.import_bundle($bundle${
         "text": "Could I just come in here?"
       },
       "id": "2612f225-21d0-5686-a0ba-84f6a77c2f8f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:could-i-just-come-in-here",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -158856,13 +159035,13 @@ select content_private.import_bundle($bundle${
         "text": "critical thinking"
       },
       "id": "f23e86e6-b558-53b3-9c74-cfe80318c7d8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:critical-thinking",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -159018,13 +159197,13 @@ select content_private.import_bundle($bundle${
         "text": "curriculum"
       },
       "id": "edbd4a7c-5dce-51f1-beb5-b1c1fa7120e4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:curriculum",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -159177,13 +159356,13 @@ select content_private.import_bundle($bundle${
         "text": "cut costs"
       },
       "id": "936b7ffa-10a5-5bc2-b6e0-7bf89fdda48a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:cut-costs",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -159255,13 +159434,13 @@ select content_private.import_bundle($bundle${
         "text": "cybersecurity"
       },
       "id": "b145ee6c-48ea-5b0d-8379-d0535191c635",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:cybersecurity",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -159335,13 +159514,13 @@ select content_private.import_bundle($bundle${
         "text": "dangling participle (phân từ \"treo\")"
       },
       "id": "b6616597-f012-5762-aff2-0d4142ef49e4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:dangling-participle",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -159378,13 +159557,13 @@ select content_private.import_bundle($bundle${
         "text": "data breach"
       },
       "id": "e271fee4-579a-54f7-9497-a95d25cc0bc7",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:data-breach",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -159742,13 +159921,13 @@ select content_private.import_bundle($bundle${
         "text": "deny + V-ing / deny (that) …"
       },
       "id": "aae4f621-5abf-55f3-9db6-5afd0c3b7d53",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:deny-pattern",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -159826,13 +160005,13 @@ select content_private.import_bundle($bundle${
         "text": "deposit"
       },
       "id": "abd9114c-d624-5bdd-9166-9eef34c78b44",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:deposit",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -159991,13 +160170,13 @@ select content_private.import_bundle($bundle${
         "text": "digital detox"
       },
       "id": "a36f6536-3360-5e36-a8c8-c4b0fd143fe5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:digital-detox",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -160127,13 +160306,13 @@ select content_private.import_bundle($bundle${
         "text": "discount"
       },
       "id": "7f6f1f2a-1b25-565d-ac3a-73be5c9a21ef",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:discount",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -161002,13 +161181,13 @@ select content_private.import_bundle($bundle${
         "text": "easy-going"
       },
       "id": "8e057ec4-258f-5c3e-85f3-7db0582415f2",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:easy-going",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -161825,13 +162004,13 @@ select content_private.import_bundle($bundle${
         "text": "evidence suggests that…"
       },
       "id": "2a10c31c-d260-51ce-bbe0-6bfe130bec9b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:evidence-suggests",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "reading",
@@ -162115,13 +162294,13 @@ select content_private.import_bundle($bundle${
         "text": "fact-check"
       },
       "id": "b7ec2699-400d-53ad-aaf7-4837e8a40f50",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:fact-check",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -162193,13 +162372,13 @@ select content_private.import_bundle($bundle${
         "text": "fake news"
       },
       "id": "3107a17b-6332-5b6e-9386-fc2c130bfa9c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:fake-news",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -162274,13 +162453,13 @@ select content_private.import_bundle($bundle${
         "text": "fall out with someone"
       },
       "id": "612d4550-d5be-5cfe-a658-bc4290e4025f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:fall-out-with",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -162313,13 +162492,13 @@ select content_private.import_bundle($bundle${
         "text": "fall slightly / a slight fall"
       },
       "id": "c25ba899-f919-565f-9bab-5df0f89fec11",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:fall-slightly",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -162577,13 +162756,13 @@ select content_private.import_bundle($bundle${
         "text": "feel left out"
       },
       "id": "65344f6f-9b54-554b-af43-fafc5f2452af",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:feel-left-out",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -163031,13 +163210,13 @@ select content_private.import_bundle($bundle${
         "text": "flatmate"
       },
       "id": "67bd26f7-e1cc-5b88-a35b-6d6827d52939",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:flatmate",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -163149,13 +163328,13 @@ select content_private.import_bundle($bundle${
         "text": "follower"
       },
       "id": "89214487-dbdf-5363-9e1c-4eb9c4f83041",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:follower",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -163356,13 +163535,13 @@ select content_private.import_bundle($bundle${
         "text": "forget doing vs forget to do"
       },
       "id": "347523ee-748f-52c5-ab50-5b48289b1be9",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:forget-ing-vs-to",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -163779,13 +163958,13 @@ select content_private.import_bundle($bundle${
         "text": "furthermore"
       },
       "id": "85a74f0f-9b86-55ae-93a9-48e21efe386c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:furthermore",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing"
       ],
@@ -163827,13 +164006,13 @@ select content_private.import_bundle($bundle${
         "text": "will be + V-ing (tương lai tiếp diễn)"
       },
       "id": "388b57ca-61e5-5c7c-aefb-44607c58ca51",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:future-continuous",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -163875,13 +164054,13 @@ select content_private.import_bundle($bundle${
         "text": "will have + V3 (tương lai hoàn thành)"
       },
       "id": "ef9f337b-a56c-5e0e-ae6a-ce5a65747803",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:future-perfect",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -163956,13 +164135,13 @@ select content_private.import_bundle($bundle${
         "text": "generous"
       },
       "id": "2f1f9cf5-5912-5d63-bf54-6300313b7b32",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:generous",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -163995,13 +164174,13 @@ select content_private.import_bundle($bundle${
         "text": "get a quote"
       },
       "id": "b8233b65-a23c-5e67-b235-e44f1502b452",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:get-a-quote",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -164121,13 +164300,13 @@ select content_private.import_bundle($bundle${
         "text": "get on (well) with someone"
       },
       "id": "6fa35ea2-1002-5f32-bd26-c0ead9ad632d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:get-on-with",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -164166,13 +164345,13 @@ select content_private.import_bundle($bundle${
         "text": "get + something + V3"
       },
       "id": "65472860-431f-5fe1-9630-26afea9ea6da",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:get-something-done",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "speaking"
@@ -164255,13 +164434,13 @@ select content_private.import_bundle($bundle${
         "text": "get used to + V-ing / danh từ"
       },
       "id": "c80ab684-35a2-501a-9bab-36af25fdf269",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:get-used-to",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -164379,13 +164558,13 @@ select content_private.import_bundle($bundle${
         "text": "give it time"
       },
       "id": "358b615a-4f66-5abb-88bf-5d99b9938cc4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:give-it-time",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -164985,13 +165164,13 @@ select content_private.import_bundle($bundle${
         "text": "go viral"
       },
       "id": "69ef789d-8c65-519c-bc0a-dfa7cdd7beb1",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:go-viral",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -165359,13 +165538,13 @@ select content_private.import_bundle($bundle${
         "text": "green space"
       },
       "id": "712f2cdf-a73a-59dd-8116-355013a19b28",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:green-space",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -165437,13 +165616,13 @@ select content_private.import_bundle($bundle${
         "text": "hacker / hack into"
       },
       "id": "964d4055-07a0-5345-93d1-323d92ec46d1",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:hacker",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -165855,13 +166034,13 @@ select content_private.import_bundle($bundle${
         "text": "hard-working"
       },
       "id": "a5dca5fb-afba-5d86-96f5-480ecbb250e6",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:hard-working",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -166021,13 +166200,13 @@ select content_private.import_bundle($bundle${
         "text": "have a lot in common (with someone)"
       },
       "id": "4faa8f31-7ed2-5f66-b1de-2e263050f6cb",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:have-a-lot-in-common",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -166109,13 +166288,13 @@ select content_private.import_bundle($bundle${
         "text": "have an impact on"
       },
       "id": "3e34b167-a63e-5497-903f-8c8bee108936",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:have-an-impact-on",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -166294,13 +166473,13 @@ select content_private.import_bundle($bundle${
         "text": "have someone do / get someone to do"
       },
       "id": "007219d7-a48a-5a71-8078-a754f973ba17",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:have-someone-do",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -166342,13 +166521,13 @@ select content_private.import_bundle($bundle${
         "text": "have + something + V3"
       },
       "id": "7e8fc661-2152-5ffe-8d45-062f86cebe3a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:have-something-done",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -166426,13 +166605,13 @@ select content_private.import_bundle($bundle${
         "text": "Having said that, …"
       },
       "id": "75edc3d7-3664-5998-9072-b71b22282ca4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:having-said-that",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "writing"
@@ -167737,21 +167916,21 @@ select content_private.import_bundle($bundle${
           "vi": "Tôi hiểu ý bạn, nhưng… (công nhận lập luận của người kia trước khi phản bác)"
         }
       },
-      "content_hash": "bbbbb0f78aa4284556bfb264d93ebaadd03824aab40bc3572f9053a5ff31a838",
+      "content_hash": "27aad1041e06d0bfa81fda86115c0731749382463a4b742f5174bd483f7eabcd",
       "difficulty": 3,
       "front": {
-        "ipa": "/aɪ ˌteɪk jɔː ˈpɔɪnt bət/",
+        "ipa": "UK /aɪ ˌteɪk jɔː ˈpɔɪnt bət/ · US /aɪ ˌteɪk jɔːr ˈpɔɪnt bət/",
         "pos": "cụm phản biện lịch sự",
         "text": "I take your point, but …"
       },
       "id": "29f6b7c7-65e4-54a2-b54f-25d6a383ddfe",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:i-take-your-point",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -167832,13 +168011,13 @@ select content_private.import_bundle($bundle${
         "text": "I'd argue that …"
       },
       "id": "9738211d-4abe-5da2-a6f3-ee517bbd9d37",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:id-argue-that",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "writing"
@@ -168044,13 +168223,13 @@ select content_private.import_bundle($bundle${
         "text": "If I could just finish…"
       },
       "id": "a0e6feb6-d1cb-5f09-95b1-274b64845fda",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:if-i-could-just-finish",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -168163,13 +168342,13 @@ select content_private.import_bundle($bundle${
         "text": "If only …"
       },
       "id": "4511ea89-8a44-5da8-9c3d-a042f4db88f0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:if-only",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "speaking"
@@ -168203,13 +168382,13 @@ select content_private.import_bundle($bundle${
         "text": "ignore"
       },
       "id": "6b3ded0a-2b52-5551-91c5-375650784452",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:ignore",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -168569,13 +168748,13 @@ select content_private.import_bundle($bundle${
         "text": "In my view, …"
       },
       "id": "5ac74185-de82-59cd-83ca-72232b4c6523",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:in-my-view",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "writing"
@@ -169026,13 +169205,13 @@ select content_private.import_bundle($bundle${
         "text": "increase / fall by… vs to…"
       },
       "id": "eaadbf10-3c31-518b-b5ef-70c6198a3e88",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:increase-by-to",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -169159,13 +169338,13 @@ select content_private.import_bundle($bundle${
         "text": "influencer"
       },
       "id": "9f0b841b-83f3-5546-9169-a5e4bf13bf67",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:influencer",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -169452,13 +169631,13 @@ select content_private.import_bundle($bundle${
         "text": "happen, occur, arrive, disappear - không có bị động"
       },
       "id": "cab7a63d-350a-51d2-a428-8ebc7b7aded6",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:intransitive-no-passive",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -169872,13 +170051,13 @@ select content_private.import_bundle($bundle${
         "text": "It could be argued that …"
       },
       "id": "71d1f68c-0bcb-5d40-8c6f-77cbf36a7731",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:it-could-be-argued",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing"
       ],
@@ -170003,13 +170182,13 @@ select content_private.import_bundle($bundle${
         "text": "It is said / believed / thought that …"
       },
       "id": "f30dadea-b145-5c4b-82a1-f379b2f5f511",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:it-is-said-that",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -170134,13 +170313,13 @@ select content_private.import_bundle($bundle${
         "text": "jealous"
       },
       "id": "26be6374-a5fb-5ad9-9f39-38a815f4b4e0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:jealous",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -170416,13 +170595,13 @@ select content_private.import_bundle($bundle${
         "text": "keep in touch (with someone)"
       },
       "id": "700ef271-7997-525f-85c3-11dac0f81b77",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:keep-in-touch",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -170679,13 +170858,13 @@ select content_private.import_bundle($bundle${
         "text": "launch a product"
       },
       "id": "f0504f12-63b8-53dd-81d4-1812f3a0974c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:launch-a-product",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -170718,13 +170897,13 @@ select content_private.import_bundle($bundle${
         "text": "launch"
       },
       "id": "2a699ab6-74cf-5a0d-b6a8-e7c923689afa",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:launch-verb",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -171037,13 +171216,13 @@ select content_private.import_bundle($bundle${
         "text": "Let's move on to…"
       },
       "id": "01e0a16a-a976-5069-b301-911d32fe847f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:lets-move-on-to",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -171377,13 +171556,13 @@ select content_private.import_bundle($bundle${
         "text": "a link between A and B / be linked to"
       },
       "id": "7c57bcfe-3454-59aa-98d2-4b9fcf0923c3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:link-between",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -171913,13 +172092,13 @@ select content_private.import_bundle($bundle${
         "text": "look up to someone"
       },
       "id": "fe041219-9a4a-515a-a3cc-e4cabd009b7d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:look-up-to",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -171955,13 +172134,13 @@ select content_private.import_bundle($bundle${
         "text": "lose touch with someone"
       },
       "id": "2c9628b5-d19d-5961-8e0b-2b97976a65a3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:lose-touch-with",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -172239,13 +172418,13 @@ select content_private.import_bundle($bundle${
         "text": "make up (with someone)"
       },
       "id": "d5c2b584-995f-5495-bee2-cfe064a39020",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:make-up-with",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -172278,13 +172457,13 @@ select content_private.import_bundle($bundle${
         "text": "manage to do something"
       },
       "id": "8397dcfa-6a1e-5ec5-9cbc-2064a92b7862",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:manage-to",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -172449,13 +172628,13 @@ select content_private.import_bundle($bundle${
         "text": "market share"
       },
       "id": "963181d6-860d-5fc2-90da-e10835498671",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:market-share",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -172828,13 +173007,13 @@ select content_private.import_bundle($bundle${
         "text": "meet / miss a deadline"
       },
       "id": "e02db4ce-a1a0-5ac6-bb21-a66ae3f0ec89",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:meet-a-deadline",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -172948,13 +173127,13 @@ select content_private.import_bundle($bundle${
         "text": "mental health"
       },
       "id": "d5f9ec43-93a3-573a-b155-76ade1dc87c7",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:mental-health",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -173083,13 +173262,13 @@ select content_private.import_bundle($bundle${
         "text": "might / may / could + V (có thể là)"
       },
       "id": "c833e307-89de-5de9-a797-34f9d0a5148a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:might-could-deduction",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -173128,13 +173307,13 @@ select content_private.import_bundle($bundle${
         "text": "might / may / could have + V3 (có lẽ đã)"
       },
       "id": "c715a7a6-3d54-5758-9aea-3de8963e9702",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:might-have-done",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -173297,13 +173476,13 @@ select content_private.import_bundle($bundle${
         "text": "misinformation"
       },
       "id": "9b4f6b92-1a88-5498-b991-ea470dfe3fc3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:misinformation",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -173336,13 +173515,13 @@ select content_private.import_bundle($bundle${
         "text": "misleading"
       },
       "id": "89527b6c-d080-5976-aeae-70296253ab12",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:misleading",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -173455,13 +173634,13 @@ select content_private.import_bundle($bundle${
         "text": "If + had + V3, would + V (hiện tại)"
       },
       "id": "35cf2913-2064-5acc-969f-d3e2e3643811",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:mixed-conditional",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -173714,13 +173893,13 @@ select content_private.import_bundle($bundle${
         "text": "must + V (suy luận chắc chắn)"
       },
       "id": "8b3d8b9b-f035-55c4-96fa-82ced7e652a3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:must-deduction",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -173762,13 +173941,13 @@ select content_private.import_bundle($bundle${
         "text": "must have + V3 (chắc hẳn đã)"
       },
       "id": "12e5c1b4-b172-52ce-9230-54c2a1ed21a1",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:must-have-done",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -174442,9 +174621,9 @@ select content_private.import_bundle($bundle${
         },
         "examples": [
           {
-            "target": "TikTok, which was launched in 2016, now has over a billion users.",
+            "target": "TikTok, which was launched internationally in 2017, now has over a billion users.",
             "translation": {
-              "vi": "TikTok, ra mắt năm 2016, hiện có hơn một tỷ người dùng."
+              "vi": "TikTok, ra mắt quốc tế năm 2017, hiện có hơn một tỷ người dùng."
             }
           },
           {
@@ -174461,20 +174640,20 @@ select content_private.import_bundle($bundle${
           "vi": "Khi đọc, bạn ngừng ngắn ở mỗi dấu phẩy và hạ giọng ở phần thông tin phụ, giống như đang nói trong ngoặc đơn."
         }
       },
-      "content_hash": "676eebda6d94a9913e422e6a879fef599cb474120535708809d329c35138a634",
+      "content_hash": "4f94c7114d9940395530db5e4b12aa40aad0e2875098c4b356f33321460b78bb",
       "difficulty": 3,
       "front": {
         "pos": "cấu trúc ngữ pháp",
         "text": ", which / who … ,"
       },
       "id": "b65f855c-0264-5e60-a1fa-d582ffec5ed6",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:non-defining-relative-clause",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -174685,13 +174864,13 @@ select content_private.import_bundle($bundle${
         "text": "I'm not entirely convinced (that) …"
       },
       "id": "31ecffd1-702c-5201-adfe-cdbeb023c747",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:not-entirely-convinced",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "writing"
@@ -175530,13 +175709,13 @@ select content_private.import_bundle($bundle${
         "text": "On the other hand, …"
       },
       "id": "49a4609a-612e-5793-bf0f-95507c8d6203",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:on-the-other-hand",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing",
         "reading"
@@ -175609,13 +175788,13 @@ select content_private.import_bundle($bundle${
         "text": "be on track (to do something)"
       },
       "id": "95dbd4c1-e9a1-5a60-a6df-4dc22b43d4f5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:on-track",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -175817,13 +175996,13 @@ select content_private.import_bundle($bundle${
         "text": "platform"
       },
       "id": "7ff02725-f34d-529b-9c7e-9fd812890f0d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:online-platform",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -175938,13 +176117,13 @@ select content_private.import_bundle($bundle${
         "text": "open-minded"
       },
       "id": "ea62cf8b-50d2-50a2-8d1f-5aceaf9084ef",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:open-minded",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -176157,13 +176336,13 @@ select content_private.import_bundle($bundle${
         "text": "outsource"
       },
       "id": "7daa685f-ca5b-5bf4-9768-26da28e117f5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:outsource",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -176199,13 +176378,13 @@ select content_private.import_bundle($bundle${
         "text": "overuse"
       },
       "id": "e4bcd16c-89e6-500e-89cb-b4786fa39eca",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:overuse",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -176325,13 +176504,13 @@ select content_private.import_bundle($bundle${
         "text": "participant"
       },
       "id": "0bd251b7-3f97-52e9-aa43-66b45bb1e5bb",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:participant",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -176408,13 +176587,13 @@ select content_private.import_bundle($bundle${
         "text": "modal + be + V3 / modal + have been + V3"
       },
       "id": "0ca80760-0687-5c02-a545-c1b32c427a00",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:passive-modals",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -176458,13 +176637,13 @@ select content_private.import_bundle($bundle${
         "text": "be (chia theo thì) + V3"
       },
       "id": "ef44925c-105d-5ec7-bdb2-47af0878d22e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:passive-tenses",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -176586,13 +176765,13 @@ select content_private.import_bundle($bundle${
         "text": "V3 …, mệnh đề chính"
       },
       "id": "59594769-5067-5aff-a939-7ae4c424de48",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:past-participle-clause",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -176897,13 +177076,13 @@ select content_private.import_bundle($bundle${
         "text": "peak at / reach a peak of"
       },
       "id": "36427bb3-af94-542c-94e2-732250c41e42",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:peak-at",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -176943,13 +177122,13 @@ select content_private.import_bundle($bundle${
         "text": "Having + V3 …, mệnh đề chính"
       },
       "id": "687c36fc-ddf8-53f4-bd65-e8cf8852d076",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:perfect-participle-clause",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -176983,13 +177162,13 @@ select content_private.import_bundle($bundle${
         "text": "personal data"
       },
       "id": "794b6df9-6066-528c-bdf9-23acad95468b",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:personal-data",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -177150,13 +177329,13 @@ select content_private.import_bundle($bundle${
         "text": "Vị trí tân ngữ trong cụm động từ"
       },
       "id": "b38e9fb9-7f28-5d10-8cc8-19182bb9ad34",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:phrasal-verb-object-position",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -177686,13 +177865,13 @@ select content_private.import_bundle($bundle${
         "text": "pose a threat (to)"
       },
       "id": "9c8637f8-04e9-5798-a4e5-5900ead16a28",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:pose-a-threat",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -178187,13 +178366,13 @@ select content_private.import_bundle($bundle${
         "text": "over- / under- (tiền tố)"
       },
       "id": "4bc380ed-ca85-5363-912f-f59e337656b4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:prefix-over-under",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -178225,13 +178404,13 @@ select content_private.import_bundle($bundle${
         "text": "un- / mis- (tiền tố)"
       },
       "id": "7c6a4230-235d-5273-b54f-f0ee6d4653a0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:prefix-un-mis",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -178269,13 +178448,13 @@ select content_private.import_bundle($bundle${
         "text": "giới từ + V-ing"
       },
       "id": "7582309b-d9d0-544b-bf8d-94170590b5c5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:preposition-plus-ing",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -178313,13 +178492,13 @@ select content_private.import_bundle($bundle${
         "text": "in which / on which / for which …"
       },
       "id": "aad61ad5-566b-5d07-99e1-dc4233ffdd3a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:preposition-relative-which",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -178487,13 +178666,13 @@ select content_private.import_bundle($bundle${
         "text": "V-ing …, mệnh đề chính"
       },
       "id": "53a92c45-790f-5d95-ac56-0ba86e7cde68",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:present-participle-clause",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -178753,13 +178932,13 @@ select content_private.import_bundle($bundle${
         "text": "privacy"
       },
       "id": "67661a9d-0958-5238-8181-b954ea1e290c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:privacy",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -178837,13 +179016,13 @@ select content_private.import_bundle($bundle${
         "text": "profit / loss"
       },
       "id": "2ff024ab-c0fc-5bcd-8caa-12fc046692f2",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:profit-and-loss",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -178875,13 +179054,13 @@ select content_private.import_bundle($bundle${
         "text": "prove / show / suggest / claim"
       },
       "id": "2192a29c-a9fe-59fa-82a4-cf2d51e8f63c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:prove-vs-suggest",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "reading"
@@ -178915,13 +179094,13 @@ select content_private.import_bundle($bundle${
         "text": "provided (that) / providing (that)"
       },
       "id": "b63c5048-bbba-5448-8a4a-b5cc1ffec630",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:provided-that",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -178954,13 +179133,13 @@ select content_private.import_bundle($bundle${
         "text": "public transport"
       },
       "id": "38b1e7e5-d990-503e-9d1b-4c25f19a1cc4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:public-transport",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -178993,13 +179172,13 @@ select content_private.import_bundle($bundle${
         "text": "put up with someone/something"
       },
       "id": "199b604b-90c9-541f-90f2-707c19c73b39",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:put-up-with",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -179268,7 +179447,7 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
-          "vi": "Dùng raise (nâng lên), không dùng rise (tự tăng, không có tân ngữ) hay increase awareness - cách sau ít tự nhiên hơn."
+          "vi": "Dùng raise (nâng lên), không dùng rise (tự tăng, không có tân ngữ). Increase awareness cũng đúng nhưng ít gặp hơn."
         },
         "examples": [
           {
@@ -179285,7 +179464,7 @@ select content_private.import_bundle($bundle${
           "vi": "Awareness nhấn âm thứ hai (wa), đuôi -ness đọc nhẹ /nəs/."
         }
       },
-      "content_hash": "713b9691537740fc9ee7715aecb34bd2420c091e0c6d3470f3885e5a2f3841ec",
+      "content_hash": "256abe2dfc425104648b706cb253c9bd58a6cab21d67ec1ede7df653b10ae2d1",
       "difficulty": 3,
       "front": {
         "ipa": "UK /ˌreɪz əˈweənəs/ · US /ˌreɪz əˈwernəs/",
@@ -179293,13 +179472,13 @@ select content_private.import_bundle($bundle${
         "text": "raise awareness (of/about)"
       },
       "id": "cac21c0c-477d-5955-9ae4-6f5249fbe51d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:raise-awareness",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -179627,13 +179806,13 @@ select content_private.import_bundle($bundle${
         "text": "danh từ + V-ing / V3 (rút gọn mệnh đề quan hệ)"
       },
       "id": "cdbeabaf-e3f7-553a-adfc-2570ff9f9625",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:reduced-relative-participle",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "reading"
@@ -179718,13 +179897,13 @@ select content_private.import_bundle($bundle${
         "text": "refuse"
       },
       "id": "7d7ae6ae-4cff-5de9-a199-41942d2d287d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:refuse",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -179808,13 +179987,13 @@ select content_private.import_bundle($bundle${
         "text": "regret doing vs regret to say"
       },
       "id": "b5b25047-c612-5614-82ab-f588d73f4b0f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:regret-ing-vs-to",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -179940,13 +180119,13 @@ select content_private.import_bundle($bundle${
         "text": "whom / to whom"
       },
       "id": "bbad5e84-7e76-559f-ba36-336878cec82e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:relative-whom",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -179989,13 +180168,13 @@ select content_private.import_bundle($bundle${
         "text": "whose + danh từ"
       },
       "id": "d4097af8-f469-5d41-bf2e-ce126115463d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:relative-whose",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -180155,13 +180334,13 @@ select content_private.import_bundle($bundle${
         "text": "reliable"
       },
       "id": "a64a5a40-f5ac-554c-9534-72daf2308ea9",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:reliable",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -180194,13 +180373,13 @@ select content_private.import_bundle($bundle${
         "text": "a reliable / trustworthy source"
       },
       "id": "2a8dc499-d97e-5d21-ad48-9b9aec89c87f",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:reliable-source",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -180233,13 +180412,13 @@ select content_private.import_bundle($bundle${
         "text": "remain stable / level off"
       },
       "id": "7fd3e162-d66b-5891-bca8-053c9ef94b51",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:remain-stable",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -180263,7 +180442,7 @@ select content_private.import_bundle($bundle${
           {
             "target": "Remember to call your mum on her birthday.",
             "translation": {
-              "vi": "Nhớ gọi cho mẹ vào ngày sinh nhật bà nhé."
+              "vi": "Nhớ gọi cho mẹ vào ngày sinh nhật mẹ nhé."
             }
           }
         ],
@@ -180271,7 +180450,7 @@ select content_private.import_bundle($bundle${
           "vi": "remember + V-ing: nhớ là đã làm (ký ức); remember + to V: nhớ phải làm (việc cần làm)"
         }
       },
-      "content_hash": "e228f6a386e4d9c833b0cbac788636af8af78bcc2abd89a7c807c20dc21bfaef",
+      "content_hash": "1ac0a103d1581604966d4de56ff8bc11fb12c25be2205c7e7111885372352c9c",
       "difficulty": 4,
       "front": {
         "ipa": "UK /rɪˈmembə/ · US /rɪˈmembɚ/",
@@ -180279,13 +180458,13 @@ select content_private.import_bundle($bundle${
         "text": "remember doing vs remember to do"
       },
       "id": "729f1db6-0f33-5327-a7fd-211213e3bb55",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:remember-ing-vs-to",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -180321,13 +180500,13 @@ select content_private.import_bundle($bundle${
         "text": "renewable energy"
       },
       "id": "cb5c789d-0f0c-5096-be30-b7a0a630f8a5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:renewable-energy",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -180453,13 +180632,13 @@ select content_private.import_bundle($bundle${
         "text": "asked + wh-word / if + S + V"
       },
       "id": "9122972c-477d-5fa2-a48c-b4e14f383be0",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:reported-questions",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -180491,13 +180670,13 @@ select content_private.import_bundle($bundle${
         "text": "said (that) + lùi thì"
       },
       "id": "1b9156c5-e288-5afd-a358-1d83d5e7f508",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:reported-speech-backshift",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -180612,13 +180791,13 @@ select content_private.import_bundle($bundle${
         "text": "researchers claim / argue / believe that…"
       },
       "id": "376bdddd-7ed7-5c76-bfbd-6ba3c6ef1376",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:researchers-claim",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "reading"
@@ -180739,13 +180918,13 @@ select content_private.import_bundle($bundle${
         "text": "revenue"
       },
       "id": "c77ca3fc-717a-517c-ad5c-688fe7611168",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:revenue",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -181081,13 +181260,13 @@ select content_private.import_bundle($bundle${
         "text": "rise sharply / a sharp rise"
       },
       "id": "97422f83-7793-5eac-8fc4-5dd4e7f58b9a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:rise-sharply",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -181369,13 +181548,13 @@ select content_private.import_bundle($bundle${
         "text": "screen time"
       },
       "id": "1eb1161b-9fc1-575e-b2d6-05d1c0dac826",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:screen-time",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -181449,13 +181628,13 @@ select content_private.import_bundle($bundle${
         "text": "If + quá khứ đơn, would + V"
       },
       "id": "878d947a-15e5-5b48-b992-b2f58e987b3d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:second-conditional",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -181466,7 +181645,7 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
-          "vi": "Thành ngữ này hầu như chỉ dùng ở câu phủ định (don't see eye to eye). Eyes không thêm -s."
+          "vi": "Thành ngữ này thường dùng ở câu phủ định (don't see eye to eye). Eye không thêm -s."
         },
         "examples": [
           {
@@ -181480,7 +181659,7 @@ select content_private.import_bundle($bundle${
           "vi": "đồng quan điểm, cùng ý kiến"
         }
       },
-      "content_hash": "fe9bfbaf9d2cb17820e47359ea645209bb1d1de405c0a0f89fc7be05db4a6527",
+      "content_hash": "58fe675cfb312e13dc7222b81341a4f12bc50675cd117d5c52eba8edca31d960",
       "difficulty": 4,
       "front": {
         "ipa": "/siː ˌaɪ tʊ ˈaɪ/",
@@ -181488,13 +181667,13 @@ select content_private.import_bundle($bundle${
         "text": "see eye to eye (with someone)"
       },
       "id": "4a1a5393-6a8f-5951-81df-bd72b384b1d3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:see-eye-to-eye",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -181647,13 +181826,13 @@ select content_private.import_bundle($bundle${
         "text": "self-confident"
       },
       "id": "87c35f8f-a1d7-51f1-b33e-4abde9578b56",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:self-confident",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -181686,13 +181865,13 @@ select content_private.import_bundle($bundle${
         "text": "selfish"
       },
       "id": "e4563428-19a6-5417-aa2d-1a59f01a1eeb",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:selfish",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -181775,13 +181954,13 @@ select content_private.import_bundle($bundle${
         "text": ", which + V (bình luận cả câu)"
       },
       "id": "8baa386c-9675-5008-89d1-bcbfd823fe36",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:sentential-which",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "speaking"
@@ -181979,13 +182158,13 @@ select content_private.import_bundle($bundle${
         "text": "Shall we get started?"
       },
       "id": "601885bd-23bc-52f1-bae0-90ee63e30deb",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:shall-we-get-started",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -183019,13 +183198,13 @@ select content_private.import_bundle($bundle${
         "text": "social media"
       },
       "id": "b2e1ae82-aa1b-5978-8ae5-ee082324e035",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:social-media",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -183604,13 +183783,13 @@ select content_private.import_bundle($bundle${
         "text": "stakeholder"
       },
       "id": "d3b67f1f-ead6-514f-a3e6-0de4c160aace",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:stakeholder",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -184109,13 +184288,13 @@ select content_private.import_bundle($bundle${
         "text": "stop doing vs stop to do"
       },
       "id": "61000d26-c2a5-5c45-a3db-7f99fe7d7939",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:stop-ing-vs-to",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -184197,13 +184376,13 @@ select content_private.import_bundle($bundle${
         "text": "streaming / stream"
       },
       "id": "bff46725-2650-53e4-9d5c-8683789540f5",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:streaming",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -184363,13 +184542,13 @@ select content_private.import_bundle($bundle${
         "text": "stubborn"
       },
       "id": "d503e7d6-1018-5015-9ebc-6f082dce5844",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:stubborn",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -184613,13 +184792,13 @@ select content_private.import_bundle($bundle${
         "text": "subscribe (to)"
       },
       "id": "6308974b-2e6a-5bf1-b310-a1f511f82af4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:subscribe",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -184823,13 +185002,13 @@ select content_private.import_bundle($bundle${
         "text": "-able / -ible (hậu tố tạo tính từ)"
       },
       "id": "c6c421ba-31cf-515f-9b08-d687afe7b7fa",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:suffix-able",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -184864,13 +185043,13 @@ select content_private.import_bundle($bundle${
         "text": "-ment / -ity / -ness (hậu tố tạo danh từ)"
       },
       "id": "2eb13a4c-7c6e-5bfa-a75b-c7a19741a755",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:suffix-noun-ment-ity-ness",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "writing"
@@ -184952,13 +185131,13 @@ select content_private.import_bundle($bundle${
         "text": "suggest + V-ing / suggest (that) + S + (should) V"
       },
       "id": "08a11112-0686-51a9-85c4-2f4a2c6ea647",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:suggest-pattern",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -185158,13 +185337,13 @@ select content_private.import_bundle($bundle${
         "text": "supplier"
       },
       "id": "758b7a77-1253-5868-bb37-7a21ceca4ab8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:supplier",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -185200,13 +185379,13 @@ select content_private.import_bundle($bundle${
         "text": "sustainable"
       },
       "id": "b93fd1c1-fbd4-514c-b53c-c7b1e98ffc15",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:sustainable",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -185438,13 +185617,13 @@ select content_private.import_bundle($bundle${
         "text": "take action (on)"
       },
       "id": "274cfcc4-992f-5401-9a6a-a21a8940ba3c",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:take-action",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -185635,13 +185814,13 @@ select content_private.import_bundle($bundle${
         "text": "take sides"
       },
       "id": "2f920b47-cee7-541e-ae1d-b1d1203ad151",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:take-sides",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -185716,13 +185895,13 @@ select content_private.import_bundle($bundle${
         "text": "take the minutes"
       },
       "id": "7a05ee7f-45d3-52b2-ba2c-fdd09d6ae300",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:take-the-minutes",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -186208,13 +186387,13 @@ select content_private.import_bundle($bundle${
         "text": "That's a fair point, but…"
       },
       "id": "1a290674-243f-5078-8b3a-0177e68650e8",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:thats-a-fair-point-but",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -186504,13 +186683,13 @@ select content_private.import_bundle($bundle${
         "text": "the Internet / the media / the press"
       },
       "id": "3e304982-fa4f-5097-9f97-180d1edf651d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:the-internet-the-media",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -187106,13 +187285,13 @@ select content_private.import_bundle($bundle${
         "text": "If + had + V3, would have + V3"
       },
       "id": "474fe2e5-61a7-55a5-a04b-57a1974d5076",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:third-conditional",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -187327,13 +187506,13 @@ select content_private.import_bundle($bundle${
         "text": "this time next week / tomorrow"
       },
       "id": "9fc9fa2f-459a-585b-a6db-2cba2b561f72",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:this-time-next-week",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary",
         "speaking"
@@ -187785,13 +187964,13 @@ select content_private.import_bundle($bundle${
         "text": "To sum up,…"
       },
       "id": "744bbcb0-e6bb-5af6-9632-95a0f8f7b6c2",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:to-sum-up",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "writing"
@@ -188245,13 +188424,13 @@ select content_private.import_bundle($bundle${
         "text": "traffic congestion"
       },
       "id": "f90f9bab-fb05-5065-b45b-8a980d601a88",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:traffic-congestion",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -188417,13 +188596,13 @@ select content_private.import_bundle($bundle${
         "text": "try doing vs try to do"
       },
       "id": "4a185609-44e3-54f7-92cb-31c348293c0a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:try-ing-vs-to",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -188550,13 +188729,13 @@ select content_private.import_bundle($bundle${
         "text": "tuition fees"
       },
       "id": "64d6af37-f9ed-588d-a49d-18b202a778df",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:tuition-fees",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -188846,13 +189025,13 @@ select content_private.import_bundle($bundle${
         "text": "information / advice / equipment / news / research"
       },
       "id": "3e492211-bcbd-5713-bc01-c3198cb9d5c3",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:uncountable-information-advice",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -188967,13 +189146,13 @@ select content_private.import_bundle($bundle${
         "text": "underestimate"
       },
       "id": "52e9900b-bb9b-563f-8987-168357b2c95d",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:underestimate",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -189253,13 +189432,13 @@ select content_private.import_bundle($bundle${
         "text": "unreliable"
       },
       "id": "baa7e34c-c9cf-599f-a1de-ee7d1b4e424e",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:unreliable",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -189295,13 +189474,13 @@ select content_private.import_bundle($bundle${
         "text": "upset"
       },
       "id": "7332f230-2661-5f9e-9482-5c69e635e935",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:upset",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -189422,13 +189601,13 @@ select content_private.import_bundle($bundle${
         "text": "used to do vs be used to doing"
       },
       "id": "dc03174d-e965-550f-bcb2-bbfd31bee39a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:used-to-vs-be-used-to",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -189547,13 +189726,13 @@ select content_private.import_bundle($bundle${
         "text": "enjoy / avoid / mind / keep / can't stand + V-ing"
       },
       "id": "06b27616-2173-5f3f-8ffa-658821de6515",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:verb-plus-ing",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -189591,13 +189770,13 @@ select content_private.import_bundle($bundle${
         "text": "decide / agree / refuse / promise / manage + to V"
       },
       "id": "98632a96-2789-5d90-801b-ec5dcb25748a",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:verb-plus-to-infinitive",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -189981,13 +190160,13 @@ select content_private.import_bundle($bundle${
         "text": "warn sb (not) to V / warn sb about sth / warn (that) …"
       },
       "id": "cf070274-3697-54b5-b118-aeebe001eece",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:warn-pattern",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -190246,13 +190425,13 @@ select content_private.import_bundle($bundle${
         "text": "We could offer… / How about…?"
       },
       "id": "cd7772e9-8e40-5ae1-a2a4-60c2631a9725",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:we-could-offer",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking"
       ],
@@ -191296,13 +191475,13 @@ select content_private.import_bundle($bundle${
         "text": "whereas"
       },
       "id": "f0758912-b56d-5e82-bc8f-59a3a4fe53d4",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "vocab",
       "key": "en:item:whereas",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "writing",
         "grammar"
@@ -191583,13 +191762,13 @@ select content_private.import_bundle($bundle${
         "text": "Will you be + V-ing…? (hỏi lịch sự về kế hoạch)"
       },
       "id": "df8a17a1-7b9d-5cf9-9de3-a7250330b895",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "phrase",
       "key": "en:item:will-you-be-ing",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "speaking",
         "grammar"
@@ -191661,13 +191840,13 @@ select content_private.import_bundle($bundle${
         "text": "wish + had + V3"
       },
       "id": "b9a392a2-e101-5863-8fe6-7c637e1e3659",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:wish-past-perfect",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -191705,13 +191884,13 @@ select content_private.import_bundle($bundle${
         "text": "wish + quá khứ đơn / could"
       },
       "id": "287ff05c-a585-511d-bdc6-db0e37324649",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:wish-past-simple",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
       ],
@@ -192458,13 +192637,13 @@ select content_private.import_bundle($bundle${
         "text": "Ø + danh từ trừu tượng / số nhiều (nghĩa chung)"
       },
       "id": "2a2635fc-2b58-5a7c-a5e9-1be8e71d45b6",
-      "is_demo": true,
+      "is_demo": false,
       "item_type": "grammar_point",
       "key": "en:item:zero-article-general",
       "language_code": "en",
       "level_code": "b2",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar",
         "writing"
@@ -247281,12 +247460,12 @@ select content_private.import_bundle($bundle${
         },
         {
           "note": {
-            "vi": "Bài báo \"gây hiểu lầm\" là misleading. Misunderstand là động từ \"hiểu sai\" của người đọc."
+            "vi": "Bài báo \"gây hiểu lầm\" là misleading. Misunderstand là động từ \"hiểu sai\" của người đọc, nên misunderstanding không dùng để tả bài báo."
           },
           "right": "The source is unreliable and the article is misleading.",
           "target_lang": "en",
           "type": "common_mistake",
-          "wrong": "The source is not reliable and the article is misunderstanding."
+          "wrong": "The source is unreliable and the article is misunderstanding."
         },
         {
           "points": [
@@ -247312,10 +247491,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "c9deb69d998a1c03f6f0128b08eae1896a7abef74518f6449ae493eea6dd00f6",
+      "content_hash": "969babfe72876f37b7b2dbd4e4a9349e1a5c98c043c4d0f41c6b9ff66700fe49",
       "estimated_minutes": 20,
       "id": "d37344e2-b244-598d-8293-e5e424853c5f",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:articles-word-formation",
       "language_code": "en",
       "level_code": "b2",
@@ -247331,8 +247510,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 3,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "vocabulary",
@@ -250432,10 +250611,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "652d04bb0dfdf161086e633c1c90a545023cea20db2d87c6e3623a4b3f7888da",
+      "content_hash": "96cc1d755aa705953bc435cd1d7594c43f8924ceff1ddcaca130cec9ad607a6e",
       "estimated_minutes": 20,
       "id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:future-continuous-perfect",
       "language_code": "en",
       "level_code": "b2",
@@ -250451,8 +250630,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 1,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "vocabulary",
@@ -250598,10 +250777,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "524f84e550f9830853b742b5df5b310040978012f666e808c0a21b356b49bdb9",
+      "content_hash": "ecbc551637e4020f740cad05a2c4421bed2a59755dbec7b118ae5f9388cf93f0",
       "estimated_minutes": 20,
       "id": "3448c87f-aa02-5142-80bd-4525e835cde9",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:gerund-or-infinitive",
       "language_code": "en",
       "level_code": "b2",
@@ -250617,8 +250796,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 2,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "vocabulary",
@@ -251060,10 +251239,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "9575942617daf513f44d13f171c801ace6ccbdcd05038abcfc038aa93f9bd74d",
+      "content_hash": "d93e2905ae2c81235213c13c8f70cf3cc656e1720c0afd6e7b8873740138742e",
       "estimated_minutes": 20,
       "id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:have-something-done",
       "language_code": "en",
       "level_code": "b2",
@@ -251079,8 +251258,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 2,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "vocabulary",
@@ -253074,10 +253253,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "1298035fe50f39ef9d521ef24f70dd15e2e41ea60a6c8c79a188b5da2c442f4e",
+      "content_hash": "c9ee937ccbfedc97cbd9fc223c4f7b999782a6b0a9045830380dec474c15b4af",
       "estimated_minutes": 25,
       "id": "cbb4f07b-5363-5ebc-b247-5ac0635821e4",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:media-technology-review",
       "language_code": "en",
       "level_code": "b2",
@@ -253093,8 +253272,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 5,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "reading",
         "writing",
@@ -253232,10 +253411,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "f30e9e786023cb0dcc348103e759c229fce72316620b09e2941fbe8ab136da8a",
+      "content_hash": "1efcf656ab8b979175e7752b05534ec893f6ab16815fa32b17c6a3dd4ad6f4d4",
       "estimated_minutes": 20,
       "id": "5b033a19-44dc-576d-b4a5-919b437862cb",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:meetings-language",
       "language_code": "en",
       "level_code": "b2",
@@ -253251,8 +253430,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 3,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "speaking",
         "listening",
@@ -253386,10 +253565,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "c11337fa48b00a2f39e99bf7c621b17703643557681124b8cd05e35da04b7abe",
+      "content_hash": "1c7aff686162faf05695a791dc255b6e61132a80c0950d904d392209425b3298",
       "estimated_minutes": 18,
       "id": "03f6e9a3-843d-5e38-b392-a694e1b8bcfc",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:modals-of-deduction",
       "language_code": "en",
       "level_code": "b2",
@@ -253405,8 +253584,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 1,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "vocabulary",
@@ -253926,7 +254105,7 @@ select content_private.import_bundle($bundle${
         },
         {
           "text": {
-            "vi": "Trước khi phản bác, hãy công nhận ý của đối phương (That's a fair point, but… / I see what you mean, but…) - cách này giữ quan hệ tốt, rất quan trọng trong văn hoá kinh doanh. Khi cả hai bên nhượng bộ, bạn reach a compromise. Với số liệu, rise và fall là nội động từ (doanh số tự tăng); muốn nói mình làm tăng thì dùng increase / raise / boost: We increased revenue by 15%. Peak at + con số là đạt đỉnh, remain stable là giữ ổn định."
+            "vi": "Trước khi phản bác, hãy công nhận ý của đối phương (That's a fair point, but… / I see what you mean, but…) - cách này giữ quan hệ tốt, rất quan trọng trong văn hoá kinh doanh. Khi cả hai bên nhượng bộ, bạn reach a compromise. Với số liệu, rise và fall là nội động từ (doanh số tự tăng); muốn nói mình làm tăng thì dùng increase / raise / boost: We increased revenue by 15%; còn peak at + con số là đạt đỉnh, remain stable là giữ ổn định."
           },
           "type": "deep_explain"
         },
@@ -254022,10 +254201,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "2e405efff28ab4d593005f554a61fb30e53fc748bca2f76469e11ff41c6e975c",
+      "content_hash": "be16ed9a930c1029efd903e8a0f5c3fecc6ea1bc599891499147a04bc2aab746",
       "estimated_minutes": 22,
       "id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:negotiating-trends",
       "language_code": "en",
       "level_code": "b2",
@@ -254041,8 +254220,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 4,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "speaking",
         "writing",
@@ -254255,10 +254434,10 @@ select content_private.import_bundle($bundle${
           "note": {
             "vi": "TikTok là tên riêng, đã rõ nên mệnh đề chỉ thêm thông tin phụ - dùng which và hai dấu phẩy."
           },
-          "target": "TikTok, which was launched in 2016, has changed the way young people use the Internet.",
+          "target": "TikTok, which was launched in 2017, has changed the way young people use the Internet.",
           "target_lang": "en",
           "translation": {
-            "vi": "TikTok, ra mắt năm 2016, đã thay đổi cách giới trẻ dùng Internet."
+            "vi": "TikTok, ra mắt năm 2017, đã thay đổi cách giới trẻ dùng Internet."
           },
           "type": "example"
         },
@@ -254354,10 +254533,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "e77dd3e0411cd31933a11c770b33c96c6f854a68a9359617b7fe8ec7601b72b9",
+      "content_hash": "c74adc1cfbe036899cf1a8be453514a6c1e08caf131c26cf76e62202fa1c2bf7",
       "estimated_minutes": 20,
       "id": "eee413ec-9f7f-5ca2-9e38-e29f47f2c9d8",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:non-defining-relatives",
       "language_code": "en",
       "level_code": "b2",
@@ -254373,8 +254552,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 1,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "vocabulary",
@@ -254948,10 +255127,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "e30da0c43e178390aa57737351748ee0620faefcb878846b3bd23d1cbead7d33",
+      "content_hash": "2bc2deac0b5bc3dbcaa3c2cc81d2a3b1c3214000f4b1030407921b7359ef566b",
       "estimated_minutes": 25,
       "id": "bb09962a-8161-577f-b47a-b79a3df595b3",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:opinions-society-conditionals",
       "language_code": "en",
       "level_code": "b2",
@@ -254970,8 +255149,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 2,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "writing",
@@ -255108,10 +255287,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "9a5bca6f49ed06992719b5e949ed6f2041e01b66058468695744ef47ccb0f1ca",
+      "content_hash": "318200fae418221b71f714a15aa1ffea132f16b4dec3914ba7fc9500e5bdc13b",
       "estimated_minutes": 25,
       "id": "d4205561-f866-54e2-8d31-e48153dc4f0e",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:opinions-society-passive",
       "language_code": "en",
       "level_code": "b2",
@@ -255130,8 +255309,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 3,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "writing",
@@ -255268,10 +255447,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "1945d98ed73235ad8447dd6c27fb6cfa518cc728fd52356384da9316eecf6920",
+      "content_hash": "8d58ac36f39acacc0d2bb4772737cd21bb63ed3dcc1a7d317184eed137d8efb4",
       "estimated_minutes": 25,
       "id": "6b2d3a5b-cf15-51d8-b132-038d56de44c5",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:opinions-society-reported-speech",
       "language_code": "en",
       "level_code": "b2",
@@ -255287,8 +255466,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 4,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "reading",
@@ -255425,10 +255604,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "3451951808092c536d36018d9d1fb3542abe8a450327541d1ff23e1e751ae554",
+      "content_hash": "7ace927f3b3d1ce425244717eb1bb39dae8cd2690e751388f847259d042d0f8f",
       "estimated_minutes": 30,
       "id": "2079b97a-fa11-5169-80a7-8fd1b5dd21a5",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:opinions-society-review",
       "language_code": "en",
       "level_code": "b2",
@@ -255444,8 +255623,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 5,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "reading",
         "writing",
@@ -255583,10 +255762,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "62e48619c6af71c579560ba970bfe398c26acb41502e37cb6dc12c5268522087",
+      "content_hash": "ca0883e56f5662f7bda21a85605e8a63d77280b14d44fefd38167e10105d22ca",
       "estimated_minutes": 20,
       "id": "1fe0025e-2038-5c63-a6c7-3362b8c198ee",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:opinions-society-views",
       "language_code": "en",
       "level_code": "b2",
@@ -255602,8 +255781,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 1,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "speaking",
         "writing",
@@ -255894,10 +256073,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "a3787017a4c3465d7c468b186108f680eca5179bea78a8d9fc4814c45b5182c5",
+      "content_hash": "cac2ba584c2274d2033c78589f68da430820815877730870ba12bbfd3dd14682",
       "estimated_minutes": 20,
       "id": "1328e222-6a34-5165-9da3-b63160cf28d7",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:participle-clauses",
       "language_code": "en",
       "level_code": "b2",
@@ -255913,8 +256092,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 2,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "grammar",
         "vocabulary",
@@ -256691,10 +256870,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "b38964eec78500cd3b7bed284f40dec36a0e47046bb3707941ab74f842270216",
+      "content_hash": "81e1431b2e2497833082127e91898642ccbdf912af6b61edc18f79285fc92613",
       "estimated_minutes": 22,
       "id": "c718f105-9063-52b4-8717-5efe9ef694af",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:people-relationships-review",
       "language_code": "en",
       "level_code": "b2",
@@ -256710,8 +256889,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 5,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "reading",
         "writing",
@@ -256843,10 +257022,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "e6bc8ca5e03c3ac8d30196cc5c5a005f1e74989e41463ff4628fdeff69605c38",
+      "content_hash": "cbdd9cb9f514d942c85a088cfe39aa91fb50e5825716719f05897a564e551123",
       "estimated_minutes": 20,
       "id": "61f5c980-5a7a-511a-a263-3022dd2b9c8a",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:personality-getting-used-to",
       "language_code": "en",
       "level_code": "b2",
@@ -256862,8 +257041,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 4,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "vocabulary",
         "grammar",
@@ -257824,7 +258003,7 @@ select content_private.import_bundle($bundle${
         },
         {
           "text": {
-            "vi": "Một số cụm có nhiều nghĩa: make up còn là \"bịa ra\" và \"trang điểm\"; bring up còn là \"nêu ra (một chủ đề)\"; put someone up là \"cho ai ở nhờ\". Thành ngữ thì giữ nguyên hình thức - see eye to eye (không thêm -s), have a lot in common (không nói \"many common points\"). See eye to eye gần như luôn dùng ở câu phủ định."
+            "vi": "Một số cụm có nhiều nghĩa: make up còn là \"bịa ra\" và \"trang điểm\"; bring up còn là \"nêu ra (một chủ đề)\"; put someone up là \"cho ai ở nhờ\". Thành ngữ thì giữ nguyên hình thức - see eye to eye (không thêm -s), have a lot in common (không nói \"many common points\"). See eye to eye thường dùng ở câu phủ định."
           },
           "type": "deep_explain"
         },
@@ -257917,10 +258096,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "919b67c63a8dfdc5ff3138992f97d86eb105c9283f02f84c9229a157aa576278",
+      "content_hash": "3890bed4cd292462267c5b717239a08911a275941444d8914f5d3440fc44b091",
       "estimated_minutes": 20,
       "id": "d1ff2688-4ce6-5ca7-9f61-29ae3e29e827",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:relationship-phrasal-verbs",
       "language_code": "en",
       "level_code": "b2",
@@ -257936,8 +258115,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 3,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "vocabulary",
         "grammar",
@@ -258231,10 +258410,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "b4ca5323cdf0623c44b0052d555b9bd62458927448b56f5d4c45b9f9b6974a59",
+      "content_hash": "f9b4f0df31d1faf068ec89e36c8dda7f7d251872b705a0dbcf6e3893ecb9d33f",
       "estimated_minutes": 20,
       "id": "d6aa1fd6-7c16-5607-9596-1b1b069e1ab5",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:science-reporting",
       "language_code": "en",
       "level_code": "b2",
@@ -258250,8 +258429,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 4,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "reading",
         "vocabulary",
@@ -262457,10 +262636,10 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "582835db975540bb5cbf523c765d2759c3c2b6c598688f05b1f35205dced8020",
+      "content_hash": "e13cb80c7bf7fcb9717451c3ee9560e28bf22b74ca65dc4e9d3fd1e9d10885c5",
       "estimated_minutes": 25,
       "id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:lesson:work-business-review",
       "language_code": "en",
       "level_code": "b2",
@@ -262476,8 +262655,8 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 5,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skills": [
         "reading",
         "speaking",
@@ -278894,21 +279073,21 @@ select content_private.import_bundle($bundle${
       }
     },
     {
-      "content_hash": "ae6966e67ee44959a1677664c0cd6b1f6d61e10eb6b6223a15477cb14bbbc485",
+      "content_hash": "c42e0b560c8cb750e69c1091dd34659ce0873276d59e7034b597becb0c096600",
       "description": {
-        "vi": "Bày tỏ và bảo vệ quan điểm, câu bị động, câu điều kiện loại 2-3, tường thuật và từ vựng chủ đề xã hội (B2). Nội dung demo, chưa qua kiểm duyệt."
+        "vi": "Bốn unit B2 - Quan điểm & xã hội (bày tỏ quan điểm, điều kiện loại 2-3, câu bị động, tường thuật); Con người & các mối quan hệ (suy đoán, V-ing/to V, cụm động từ, used to); Công việc & kinh doanh (tương lai tiếp diễn/hoàn thành, have something done, họp, đàm phán, số liệu); Truyền thông, công nghệ & khoa học (mệnh đề quan hệ không xác định, mệnh đề phân từ, mạo từ, đọc tin khoa học)."
       },
       "goal_types": [],
       "id": "3493288d-09dc-5e3c-b444-f9416c170a4a",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:program:upper-intermediate",
       "kind": "core",
       "language_code": "en",
       "level_from": "b2",
       "level_to": "b2",
       "order_index": 4,
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
       "title": {
@@ -279159,12 +279338,12 @@ select content_private.import_bundle($bundle${
     {
       "content_hash": "f9da2000d9dd0c6347713ff199489ac7b0567c606bb2b2f0680fbbf328a38126",
       "id": "4f325330-c1c9-5e1e-aec7-1f9f7a874308",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:unit:media-technology",
       "order_index": 4,
       "program_id": "3493288d-09dc-5e3c-b444-f9416c170a4a",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
       "title": {
@@ -279204,12 +279383,12 @@ select content_private.import_bundle($bundle${
     {
       "content_hash": "7dd034141308581a558478aee906bcabcb1c92b1deffe483c2668e1201d0ab7a",
       "id": "fa1ad5b6-9d6d-5b26-b4bf-43f7b3ae5dc6",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:unit:opinions-society",
       "order_index": 1,
       "program_id": "3493288d-09dc-5e3c-b444-f9416c170a4a",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
       "title": {
@@ -279234,12 +279413,12 @@ select content_private.import_bundle($bundle${
     {
       "content_hash": "22d7468635b284973c2eb37cd825ec08ee89aab36b5d56499d12448614f5f364",
       "id": "bb98203f-30a4-588e-b342-ab8e3ddd4a76",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:unit:people-relationships",
       "order_index": 2,
       "program_id": "3493288d-09dc-5e3c-b444-f9416c170a4a",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
       "title": {
@@ -279324,12 +279503,12 @@ select content_private.import_bundle($bundle${
     {
       "content_hash": "0a537347ee02dfecb7b41b7bbc3c4de081a325394441a586a9848924320417d3",
       "id": "afc5e81a-6a68-575b-8e4d-5b874eff5a1b",
-      "is_demo": true,
+      "is_demo": false,
       "key": "en:unit:work-business",
       "order_index": 3,
       "program_id": "3493288d-09dc-5e3c-b444-f9416c170a4a",
-      "reviewed_at": null,
-      "reviewed_by": null,
+      "reviewed_at": "2026-10-14T18:00:00+07:00",
+      "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
       "title": {

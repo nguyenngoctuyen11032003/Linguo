@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:articles-word-formation
 order_index: 3
 level: b2
@@ -99,11 +98,11 @@ body:
     note:
       vi: Internet luôn đi với the. (Và đọc trên mạng không có nghĩa là thật!)
   - type: common_mistake
-    wrong: The source is not reliable and the article is misunderstanding.
+    wrong: The source is unreliable and the article is misunderstanding.
     right: The source is unreliable and the article is misleading.
     target_lang: en
     note:
-      vi: Bài báo "gây hiểu lầm" là misleading. Misunderstand là động từ "hiểu sai" của người đọc.
+      vi: Bài báo "gây hiểu lầm" là misleading. Misunderstand là động từ "hiểu sai" của người đọc, nên misunderstanding không dùng để tả bài báo.
   - type: summary
     points:
       - vi: "Nói chung về khái niệm / cả một loại: không dùng the (Technology…, Smartphones…)."
@@ -316,6 +315,8 @@ exercises:
         - Technology has changed how we study and work.
         - Technology has changed the way that we learn and work.
         - Technology has changed the way we work and learn.
+        - Technology has changed how we work and learn.
+        - Technology has changed the ways we learn and work.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -353,6 +354,10 @@ exercises:
         - The media often gives misleading information about AI.
         - The media often spread misleading information about artificial intelligence.
         - The media often spreads misleading information about artificial intelligence.
+        - The media often provide misleading information about AI.
+        - The media often provides misleading information about AI.
+        - The media often spread misleading information about AI.
+        - The media often spreads misleading information about AI.
     rubric:
       typo_tolerance: 1
     known_wrong:

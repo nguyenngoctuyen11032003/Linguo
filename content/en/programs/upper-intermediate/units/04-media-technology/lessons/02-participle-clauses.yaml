@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:participle-clauses
 order_index: 2
 level: b2
@@ -158,7 +157,7 @@ exercises:
         - "Gợi ý: phòng được xây (bị động) - dạng V3 của build."
     answer:
       blanks:
-        b1: [Built]
+        b1: [Built, Constructed, Opened]
     known_wrong:
       - answer: Building
         feedback_vi: Phòng được xây chứ không tự xây - nghĩa bị động cần V3 built.
@@ -233,7 +232,7 @@ exercises:
     answer:
       blanks:
         b1: [Having]
-        b2: [changed]
+        b2: [changed, updated, reset]
     known_wrong:
       - answer: change
         feedback_vi: Sau having phải là V3 - changed.
@@ -261,8 +260,8 @@ exercises:
         - { id: b2, width_hint: 5 }
     answer:
       blanks:
-        b1: [Hackers]
-        b2: [using]
+        b1: [Hackers, Scammers, Criminals, Cybercriminals]
+        b2: [using, sending]
     known_wrong:
       - answer: used
         feedback_vi: Tin tặc là người dùng email (chủ động) nên rút gọn bằng V-ing - using.
@@ -296,6 +295,8 @@ exercises:
         - Launched in 2020, the app has ten million users now.
         - Launched in 2020, this app currently has ten million users.
         - Launched in 2020, the app currently has ten million users.
+        - Launched in 2020, this app has ten million users now.
+        - Launched in 2020, the app currently has 10 million users.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -332,6 +333,9 @@ exercises:
         - Worried about her privacy, Mai has stopped posting photos of her children online.
         - Worried about her privacy, Mai stopped posting her children's photos online.
         - Worried about her privacy, Mai stopped posting photos of her children on the Internet.
+        - Worried about her privacy, Mai no longer posts photos of her children online.
+        - Worried about privacy, Mai stopped posting pictures of her children online.
+        - Worried about her privacy, Mai stopped posting photos of her children on social media.
     rubric:
       typo_tolerance: 1
     known_wrong:

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:work-business-review
 order_index: 5
 level: b2
@@ -225,6 +224,7 @@ exercises:
     answer:
       orders:
         - [a-tuan, a-to, a-have, a-the, a-packaging, a-redesigned, a-by, a-15, a-may]
+        - [a-tuan, a-to, a-have, a-the, a-packaging, a-redesigned, a-by, a-may, a-15]
     explanation:
       vi: Action point viết theo mẫu tên người + to V; Tuấn không tự thiết kế nên dùng have + vật + V3 (redesigned). Redesign nguyên mẫu là token nhiễu.
     display_answer: Tuấn to have the packaging redesigned by 15 May.
@@ -280,6 +280,8 @@ exercises:
         - We need to talk about ways to cut costs.
         - We have to discuss how to cut costs.
         - We need to discuss how we can reduce costs.
+        - We need to discuss how to cut our costs.
+        - We need to talk about how we can cut costs.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -313,9 +315,21 @@ exercises:
         - That's a fair point, but another supplier offered a lower price.
         - That is a fair point, but another supplier has quoted a lower price.
         - That's a fair point, but we've had a lower quote from another supplier.
+        - That is a fair point, but we've had a lower quote from another supplier.
         - That's a fair point, but we got a lower quote from another supplier.
         - That's a fair point, but another supplier has quoted us a lower price.
         - That's a fair point, but another supplier quoted us a lower price.
+        - That is a fair point, but another supplier quoted a lower price.
+        - That is a fair point, but another supplier has given us a lower quote.
+        - That is a fair point, but another supplier gave us a lower quote.
+        - That is a fair point, but another supplier has offered a lower price.
+        - That is a fair point, but another supplier offered a lower price.
+        - That is a fair point, but we have had a lower quote from another supplier.
+        - That's a fair point, but we have had a lower quote from another supplier.
+        - That is a fair point, but we got a lower quote from another supplier.
+        - That is a fair point, but another supplier has quoted us a lower price.
+        - That is a fair point, but another supplier quoted us a lower price.
+        - You have a point, but another supplier has quoted a lower price.
     rubric:
       typo_tolerance: 1
     known_wrong:

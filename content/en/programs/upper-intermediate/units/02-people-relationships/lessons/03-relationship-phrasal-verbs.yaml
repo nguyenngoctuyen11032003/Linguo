@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:relationship-phrasal-verbs
 order_index: 3
 level: b2
@@ -47,7 +46,7 @@ body:
       vi: "Với cụm hai từ có tân ngữ như bring up, ask out, đại từ (me, her, them) luôn đứng giữa - brought me up, asked her out. Cụm ba từ (get on with, look up to, put up with) không tách được, tân ngữ luôn đứng cuối."
   - type: deep_explain
     text:
-      vi: "Một số cụm có nhiều nghĩa: make up còn là \"bịa ra\" và \"trang điểm\"; bring up còn là \"nêu ra (một chủ đề)\"; put someone up là \"cho ai ở nhờ\". Thành ngữ thì giữ nguyên hình thức - see eye to eye (không thêm -s), have a lot in common (không nói \"many common points\"). See eye to eye gần như luôn dùng ở câu phủ định."
+      vi: "Một số cụm có nhiều nghĩa: make up còn là \"bịa ra\" và \"trang điểm\"; bring up còn là \"nêu ra (một chủ đề)\"; put someone up là \"cho ai ở nhờ\". Thành ngữ thì giữ nguyên hình thức - see eye to eye (không thêm -s), have a lot in common (không nói \"many common points\"). See eye to eye thường dùng ở câu phủ định."
   - type: example
     target: "I get on really well with my flatmate - we have a lot in common."
     target_lang: en
@@ -295,6 +294,9 @@ exercises:
         - I get along well with my new colleagues.
         - I really get on with my new colleagues.
         - I get on really well with the new colleagues.
+        - I really get along with my new colleagues.
+        - I get on really well with my new co-workers.
+        - I get along really well with my new co-workers.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -332,6 +334,8 @@ exercises:
         - I have no idea how she can put up with him.
         - I don't know why she puts up with him.
         - I don't understand why she puts up with him.
+        - I don't know how she can stand him.
+        - I don't understand how she can stand him.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -424,6 +428,7 @@ exercises:
     answer:
       orders:
         - [o-he, o-finally, o-asked, o-her, o-out]
+        - [o-he, o-asked, o-her, o-out, o-finally]
     explanation:
       vi: Mời ai đi chơi là ask someone out; đại từ her đứng giữa asked và out. Finally đứng trước động từ chính. Sau động từ cần đại từ tân ngữ her, không phải she.
     display_answer: He finally asked her out.

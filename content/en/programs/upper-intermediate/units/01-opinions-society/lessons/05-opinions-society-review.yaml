@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:opinions-society-review
 order_index: 5
 level: b2
@@ -141,7 +140,7 @@ exercises:
   - key: en:exercise:opsoc-rev-listen-other-hand
     type: listen
     stage: recognition
-    answer_lang: en
+    answer_lang: vi
     difficulty: 3
     item: en:item:on-the-other-hand
     prompt:
@@ -195,7 +194,7 @@ exercises:
     answer:
       blanks:
         b1: [had]
-        b2: [built]
+        b2: [built, opened, constructed]
     known_wrong:
       - answer: would
         feedback_vi: Mệnh đề If không chứa would - had built.
@@ -266,6 +265,12 @@ exercises:
         - Many people believe that the ban would improve air quality.
         - The ban is widely believed to improve air quality.
         - The ban is widely believed to be able to improve air quality.
+        - It's widely believed that the ban would improve air quality.
+        - It's widely believed that the ban will improve the air quality.
+        - Many people believe the ban would improve air quality.
+        - Many people think that the ban will improve air quality.
+        - Many people think the ban will improve air quality.
+        - A lot of people believe that the ban will improve air quality.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -300,6 +305,8 @@ exercises:
         - We should seriously discuss this problem.
         - We ought to discuss this issue seriously.
         - We should discuss this issue in a serious way.
+        - We should talk about this issue seriously.
+        - We should seriously talk about this issue.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -375,14 +382,14 @@ exercises:
         - { id: l-res, text: to residents }
         - { id: l-would, text: would }
         - { id: l-auth, text: the authorities }
-        - { id: l-listened, text: listened }
+        - { id: l-listened, text: have listened }
         - { id: l-wish, text: I wish }
         - { id: l-had, text: had listened }
     answer:
       orders:
         - [l-wish, l-auth, l-had, l-res]
     explanation:
-      vi: Tiếc nuối về quá khứ dùng wish + had + V3. Listened (quá khứ đơn) sau wish lại nói về hiện tại, còn would không dùng để tiếc về quá khứ.
+      vi: Tiếc nuối về quá khứ dùng wish + had + V3. Sau wish không dùng have listened (phải lùi thì thành had listened), còn would không dùng để tiếc về quá khứ.
     display_answer: I wish the authorities had listened to residents.
 
   - key: en:exercise:opsoc-rev-translate-take-action
@@ -407,6 +414,10 @@ exercises:
         - In my view, the government should take action now to reduce traffic congestion.
         - In my opinion, the government should take action now to reduce traffic congestion.
         - In my view, the authorities should take immediate action to reduce traffic congestion.
+        - I would argue that the authorities should take action now to reduce traffic congestion.
+        - In my opinion, the authorities should act now to reduce traffic congestion.
+        - In my view, the authorities should act immediately to reduce traffic congestion.
+        - In my opinion, the authorities should take immediate action to reduce traffic congestion.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -443,6 +454,9 @@ exercises:
         - The police warned us not to drive in the city center.
         - The police warned us that we must not drive into the city centre.
         - The police warned us that we couldn't drive into the city centre.
+        - The police warned us that we mustn't drive into the city centre.
+        - The police warned us that we must not drive into the city center.
+        - The police warned us that we mustn't drive into the city center.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -456,5 +470,5 @@ exercises:
         feedback_vi: Warn đi thẳng với tân ngữ người, không có to - warned us.
         error_tag: verb_pattern
     explanation:
-      vi: Warn + tân ngữ + not to + V là cấu trúc cảnh báo ai đừng làm gì. Police luôn đi với động từ số nhiều và có the.
+      vi: Warn + tân ngữ + not to + V là cấu trúc cảnh báo ai đừng làm gì. Police luôn đi với động từ số nhiều và thường có the đứng trước.
     display_answer: The police warned us not to drive into the city centre.

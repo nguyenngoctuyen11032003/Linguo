@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:opinions-society-views
 order_index: 1
 level: b2
@@ -114,11 +113,11 @@ exercises:
         - { id: q7k, text: On the other hand, lang: en }
         - { id: m2z, text: On the contrary, lang: en }
         - { id: w9d, text: Furthermore, lang: en }
-        - { id: e4t, text: In my view, lang: en }
+        - { id: e4t, text: As a result, lang: en }
     answer:
       correct_option_id: q7k
     explanation:
-      vi: Câu sau nêu một mặt khác (nhược điểm) của học trực tuyến, nên dùng On the other hand. On the contrary dùng để bác bỏ ý trước, còn Furthermore thêm ý cùng chiều.
+      vi: Câu sau nêu một mặt khác (nhược điểm) của học trực tuyến, nên dùng On the other hand. On the contrary dùng để bác bỏ ý trước, Furthermore thêm ý cùng chiều, còn As a result chỉ kết quả - tiện lợi không dẫn đến việc cần kỷ luật.
     display_answer: On the other hand
 
   - key: en:exercise:opsoc-views-mcq-agree
@@ -144,7 +143,7 @@ exercises:
   - key: en:exercise:opsoc-views-listen-point
     type: listen
     stage: recognition
-    answer_lang: en
+    answer_lang: vi
     difficulty: 3
     item: en:item:i-take-your-point
     prompt:
@@ -176,7 +175,7 @@ exercises:
         - "Gợi ý: động từ có nghĩa \"nâng lên\", cần tân ngữ, bắt đầu bằng r."
     answer:
       blanks:
-        b1: [raise]
+        b1: [raise, increase, build, spread, heighten]
     known_wrong:
       - answer: rise
         feedback_vi: Rise là tự tăng, không có tân ngữ. Nâng cao nhận thức là raise awareness.
@@ -185,7 +184,7 @@ exercises:
         feedback_vi: Collocation cố định là raise awareness, không dùng make.
         error_tag: collocation
     explanation:
-      vi: Raise awareness of something là collocation cố định. Raise cần tân ngữ (awareness), còn rise thì không.
+      vi: Raise awareness of something là collocation phổ biến nhất (increase, build, spread awareness cũng đúng). Raise cần tân ngữ (awareness), còn rise thì không.
     display_answer: The campaign aims to raise awareness of cyberbullying among teenagers.
 
   - key: en:exercise:opsoc-views-order-impact
@@ -260,6 +259,10 @@ exercises:
         - In my view, the benefits of social media outweigh the harms.
         - In my view, social media brings more benefits than harm.
         - In my opinion, social media brings more benefits than harm.
+        - From my perspective, social media does more good than harm.
+        - I think social media does more good than harm.
+        - In my view, social media has more benefits than drawbacks.
+        - In my opinion, social media has more benefits than drawbacks.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -403,6 +406,10 @@ exercises:
         - This campaign has had a positive effect on the community.
         - The campaign has had a positive effect on the community.
         - This campaign has had a positive impact on the local community.
+        - This campaign had a positive effect on the community.
+        - The campaign had a positive effect on the community.
+        - This campaign has positively impacted the community.
+        - The campaign has positively impacted the community.
     rubric:
       typo_tolerance: 1
     known_wrong:

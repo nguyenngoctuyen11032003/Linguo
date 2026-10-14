@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:negotiating-trends
 order_index: 4
 level: b2
@@ -48,7 +47,7 @@ body:
       vi: "Mô tả xu hướng: động từ + trạng từ (rise sharply, fall slightly) hoặc tính từ + danh từ (a sharp rise, a slight fall). Lượng thay đổi đi với by (rose by 10%), mức cuối đi với to (rose to $5 million) - tiếng Việt không cần giới từ nên người Việt hay dùng sai \"for\"."
   - type: deep_explain
     text:
-      vi: "Trước khi phản bác, hãy công nhận ý của đối phương (That's a fair point, but… / I see what you mean, but…) - cách này giữ quan hệ tốt, rất quan trọng trong văn hoá kinh doanh. Khi cả hai bên nhượng bộ, bạn reach a compromise. Với số liệu, rise và fall là nội động từ (doanh số tự tăng); muốn nói mình làm tăng thì dùng increase / raise / boost: We increased revenue by 15%. Peak at + con số là đạt đỉnh, remain stable là giữ ổn định."
+      vi: "Trước khi phản bác, hãy công nhận ý của đối phương (That's a fair point, but… / I see what you mean, but…) - cách này giữ quan hệ tốt, rất quan trọng trong văn hoá kinh doanh. Khi cả hai bên nhượng bộ, bạn reach a compromise. Với số liệu, rise và fall là nội động từ (doanh số tự tăng); muốn nói mình làm tăng thì dùng increase / raise / boost: We increased revenue by 15%; còn peak at + con số là đạt đỉnh, remain stable là giữ ổn định."
   - type: example
     target: We could offer free delivery, provided that you order at least 500 units.
     target_lang: en
@@ -179,7 +178,7 @@ exercises:
   - key: en:exercise:wb-nego-mcq-trend-meaning
     type: mcq
     stage: recognition
-    answer_lang: vi
+    answer_lang: en
     difficulty: 2
     item: en:item:remain-stable
     prompt:
@@ -213,7 +212,7 @@ exercises:
       blanks:
         b1: [sharply, dramatically, significantly, steeply, rapidly, considerably, substantially]
         b2: [at]
-        b3: [slightly]
+        b3: [slightly, marginally]
     known_wrong:
       - answer: sharp
         feedback_vi: Bổ nghĩa cho động từ rose cần trạng từ - sharply.
@@ -251,6 +250,9 @@ exercises:
         - We raised revenue by 10% last year.
         - Our revenue increased by 10% last year.
         - Our revenue rose by 10% last year.
+        - We increased revenue by 10 per cent last year.
+        - We grew revenue by 10% last year.
+        - Our revenue grew by 10% last year.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -413,6 +415,9 @@ exercises:
         - Visitor numbers peaked at 20,000 in July and then leveled off.
         - Visitor numbers peaked at 20,000 in July and remained stable after that.
         - Visits peaked at 20,000 in July and then remained stable.
+        - The number of visitors peaked at 20,000 in July and then stayed stable.
+        - The number of visitors peaked at 20,000 in July and then levelled off.
+        - The number of visitors peaked at 20,000 in July and then leveled off.
     rubric:
       typo_tolerance: 1
     known_wrong:

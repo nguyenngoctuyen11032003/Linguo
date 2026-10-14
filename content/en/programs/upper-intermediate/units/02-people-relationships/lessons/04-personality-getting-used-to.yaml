@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:personality-getting-used-to
 order_index: 4
 level: b2
@@ -208,6 +207,7 @@ exercises:
     answer:
       orders:
         - [g-youll, g-soon, g-get, g-used, g-to, g-living, g-here]
+        - [g-youll, g-get, g-used, g-to, g-living, g-here, g-soon]
     explanation:
       vi: Dần quen (trong tương lai) là will get used to + V-ing. To là giới từ nên dùng living, không dùng live.
     display_answer: "You'll soon get used to living here."
@@ -226,8 +226,8 @@ exercises:
         - { id: b2, width_hint: 11 }
     answer:
       blanks:
-        b1: [stubborn]
-        b2: [open-minded]
+        b1: [stubborn, obstinate, inflexible, pig-headed]
+        b2: [open-minded, open, receptive]
     known_wrong:
       - answer: selfish
         feedback_vi: Selfish là ích kỷ (chỉ nghĩ cho mình). Không chịu đổi ý là stubborn.
@@ -346,6 +346,8 @@ exercises:
         - My sister is hard-working and easy-going, but sometimes she's quite stubborn.
         - My sister is hard-working and easy-going, but sometimes she is quite stubborn.
         - My sister is hard-working and easy-going but sometimes a bit stubborn.
+        - My sister is hard-working and easy-going, but she can sometimes be a bit stubborn.
+        - My sister is hard-working and easy-going, but she can be quite stubborn sometimes.
     rubric:
       typo_tolerance: 1
     known_wrong:

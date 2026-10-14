@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:opinions-society-reported-speech
 order_index: 4
 level: b2
@@ -112,7 +111,7 @@ exercises:
         - { id: e5x, text: would reduce, lang: en }
         - { id: l2k, text: will reduced, lang: en }
         - { id: s8f, text: reduce, lang: en }
-        - { id: j4o, text: are reducing, lang: en }
+        - { id: j4o, text: would reducing, lang: en }
     answer:
       correct_option_id: e5x
     explanation:
@@ -142,7 +141,7 @@ exercises:
   - key: en:exercise:opsoc-rep-listen-warn
     type: listen
     stage: recognition
-    answer_lang: en
+    answer_lang: vi
     difficulty: 3
     item: en:item:warn-pattern
     prompt:
@@ -224,7 +223,7 @@ exercises:
     answer:
       blanks:
         b1: [admitted, acknowledged]
-        b2: [making]
+        b2: [making, having made]
     known_wrong:
       - answer: admit
         feedback_vi: Câu kể chuyện quá khứ (promised) nên dùng admitted.
@@ -373,7 +372,7 @@ exercises:
       instruction: "Sắp xếp thành câu tiếng Anh: \"Chính quyền thành phố thừa nhận rằng không có đủ nhà ở giá phải chăng.\""
       tokens:
         - { id: h-enough, text: not enough }
-        - { id: h-is, text: is }
+        - { id: h-is, text: were }
         - { id: h-that, text: that }
         - { id: h-housing, text: affordable housing }
         - { id: h-council, text: The city council }
@@ -408,6 +407,8 @@ exercises:
         - We discussed the lack of green space in our city.
         - We had a discussion about the lack of green space in the city.
         - We talked about the lack of green space in the city.
+        - We talked about the lack of green spaces in the city.
+        - We discussed the lack of green spaces in our city.
     rubric:
       typo_tolerance: 1
     known_wrong:

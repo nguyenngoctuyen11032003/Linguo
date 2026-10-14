@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Quan điểm & xã hội" (B2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: bày tỏ & bảo vệ quan điểm ----------------
@@ -97,7 +96,7 @@ items:
     skill_tags: [speaking]
     front:
       text: I take your point, but …
-      ipa: /aɪ ˌteɪk jɔː ˈpɔɪnt bət/
+      ipa: UK /aɪ ˌteɪk jɔː ˈpɔɪnt bət/ · US /aɪ ˌteɪk jɔːr ˈpɔɪnt bət/
       pos: cụm phản biện lịch sự
     back:
       meaning:
@@ -169,7 +168,7 @@ items:
           translation:
             vi: Tôi không đồng ý rằng công nghệ khiến chúng ta cô đơn.
       confusion:
-        vi: Người Việt hay nói "I am agree" vì dịch "tôi đồng ý" giống "tôi vui" (I am happy). Agree là động từ - I agree, I don't agree; chỉ dùng be với tính từ, ví dụ I am in agreement.
+        vi: Người Việt hay nói "I am agree" vì dịch "tôi đồng ý" giống "tôi vui" (I am happy). Agree là động từ - I agree, I don't agree; muốn dùng be thì phải đổi cấu trúc, ví dụ I am in agreement.
 
   - key: en:item:whereas
     type: vocab
@@ -251,7 +250,7 @@ items:
       pronunciation_note:
         vi: Awareness nhấn âm thứ hai (wa), đuôi -ness đọc nhẹ /nəs/.
       confusion:
-        vi: Dùng raise (nâng lên), không dùng rise (tự tăng, không có tân ngữ) hay increase awareness - cách sau ít tự nhiên hơn.
+        vi: Dùng raise (nâng lên), không dùng rise (tự tăng, không có tân ngữ). Increase awareness cũng đúng nhưng ít gặp hơn.
 
   - key: en:item:have-an-impact-on
     type: phrase
