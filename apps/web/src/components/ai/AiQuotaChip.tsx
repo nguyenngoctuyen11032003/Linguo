@@ -19,7 +19,7 @@ export function AiQuotaChip({ quota, className }: AiQuotaChipProps) {
       title={reset ? `Lượt mới lúc ${reset}` : undefined}
       className={cn(
         'inline-flex shrink-0 items-center gap-1 rounded-full px-2.5 py-1 text-[13px] font-semibold',
-        left === 0 ? 'bg-error/12 text-error-text' : 'bg-primary/12 text-primary',
+        left === 0 ? 'bg-error/12 text-error-text' : 'bg-primary/12 text-primary-strong dark:text-primary',
         className,
       )}
     >
