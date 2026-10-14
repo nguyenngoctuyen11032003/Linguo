@@ -1,6 +1,8 @@
 # Reminders (spec 10 §3): every 15 minutes, calls the Edge Function notify-dispatch, which creates the due in-app
-# notifications (generate_due_notifications) and sends them as Web Push. The 15-minute cadence matches the
-# reminder window (REMINDER_RULES.window_minutes); calling twice in one window never duplicates a reminder.
+# notifications (generate_due_notifications) and sends them as Web Push. GitHub runs scheduled workflows late or
+# skips some, so a reminder stays due for 60 minutes after its slot (REMINDER_RULES.window_minutes) and a push that
+# failed is retried by the next runs for 4 hours; calling more often never duplicates a reminder. The first runs of
+# the Vietnamese night (20:00-20:59 UTC) also purge inbox rows older than 90 days.
 #
 # Uses environment `notify` (branch main only, NO required reviewers, so the cron runs unattended) holding only
 # NOTIFY_CRON_SECRET. That secret can do nothing but trigger this dispatch. It is never printed: it only goes into a

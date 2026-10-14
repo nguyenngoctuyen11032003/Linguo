@@ -29,7 +29,7 @@ interface NodePath {
   join: (...parts: string[]) => string;
   dirname: (path: string) => string;
 }
-const MIGRATION_FILE = '20261015000300_reminders.sql';
+const MIGRATION_FILES = ['20261015000300_reminders.sql', '20261016000400_notify_hardening.sql'];
 
 async function readMigration(): Promise<Record<string, string>> {
   const fsModule: string = 'node:fs';
@@ -38,8 +38,8 @@ async function readMigration(): Promise<Record<string, string>> {
   const path = (await import(/* @vite-ignore */ pathModule)) as NodePath;
   let dir = (globalThis as unknown as { process: { cwd: () => string } }).process.cwd();
   for (let depth = 0; depth < 5; depth += 1) {
-    const file = path.join(dir, 'supabase', 'migrations', MIGRATION_FILE);
-    if (fs.existsSync(file)) return { [file]: fs.readFileSync(file, 'utf8') };
+    const files = MIGRATION_FILES.map((name) => path.join(dir, 'supabase', 'migrations', name)).filter((file) => fs.existsSync(file));
+    if (files.length) return Object.fromEntries(files.map((file) => [file, fs.readFileSync(file, 'utf8')]));
     if (fs.existsSync(path.join(dir, 'pnpm-workspace.yaml'))) break;
     dir = path.dirname(dir);
   }
