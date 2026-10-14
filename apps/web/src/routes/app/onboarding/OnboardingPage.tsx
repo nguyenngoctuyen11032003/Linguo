@@ -18,6 +18,7 @@ import { Button, buttonClasses } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Spinner } from '@/components/ui/Spinner';
 import { useToast } from '@/components/ui/Toast';
+import { track } from '@/features/analytics';
 import { presetFromWeek } from '@/features/learning-paths/components/schedule';
 import { learningPathErrorMessage } from '@/features/learning-paths/error-map';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
@@ -171,6 +172,7 @@ export function OnboardingPage() {
       paths.upsertPath(path, { makeCurrent: true });
       clear();
       setCreated(path);
+      track('onboarding_completed', { language: path.language, start_point: path.startPoint, goal_type: path.goalType });
     } catch (error) {
       setCreateError(learningPathErrorMessage(error));
       if (error && typeof error === 'object' && 'message' in error && error.message === 'path_exists_for_language') {

@@ -16,6 +16,7 @@ import { PathSummaryCard } from './home/PathSummaryCard';
 import { ReviewDueCard } from './home/ReviewDueCard';
 import { SpreadWarning } from './home/SpreadWarning';
 import { TodayCard } from './home/TodayCard';
+import { HomeMotivation } from './progress/HomeMotivation';
 
 const todayLabel = (timeZone: string) =>
   new Intl.DateTimeFormat('vi-VN', { weekday: 'long', day: 'numeric', month: 'long', timeZone }).format(new Date());
@@ -80,6 +81,7 @@ export function HomePage() {
           <DiagnosticCard pathId={paths.current.id} />
           <ReviewDueCard />
           <NextLessonCard />
+          <HomeMotivation pathId={paths.current.id} />
         </>
       )}
     </div>

@@ -17,8 +17,9 @@ const NETWORK = { message: 'TypeError: Failed to fetch', code: '' };
 
 type Handler = (args: Record<string, unknown>) => { data?: unknown; error?: unknown; status?: number };
 
-const mocks = vi.hoisted(() => ({ client: null as unknown }));
+const mocks = vi.hoisted(() => ({ client: null as unknown, track: vi.fn() }));
 vi.mock('@/lib/supabase', () => ({ getSupabase: () => mocks.client, requireSupabase: () => mocks.client }));
+vi.mock('@/features/analytics', () => ({ track: mocks.track }));
 
 function installClient(handlers: Record<string, Handler>) {
   const rpc = vi.fn((name: string, args: Record<string, unknown>) => {
@@ -71,6 +72,7 @@ async function ready(hook: ReturnType<typeof renderRun>['result']) {
 }
 
 afterEach(() => {
+  mocks.track.mockReset();
   sessionStorage.clear();
   localStorage.clear();
   Object.defineProperty(navigator, 'onLine', { value: true, configurable: true });
@@ -101,6 +103,7 @@ describe('useLessonRun', () => {
     await ready(hook);
     expect(fake.callsOf('start_lesson')).toEqual([{ p_lesson_id: LESSON_ID, p_path_id: PATH_ID }]);
     expect(hook.current.api.steps).toHaveLength(8);
+    expect(mocks.track).toHaveBeenCalledWith('lesson_started', { restart: false });
   });
 
   it('reopens a completed run on its stored summary without starting a new one', async () => {
@@ -517,6 +520,8 @@ describe('useLessonRun', () => {
     // A second call does not hit the server again.
     await act(() => hook.current.api.complete());
     expect(fake.callsOf('complete_lesson')).toHaveLength(1);
+    expect(mocks.track.mock.calls.filter(([name]) => name === 'lesson_completed')).toHaveLength(1);
+    expect(mocks.track).not.toHaveBeenCalledWith('lesson_started', expect.anything());
   });
 
   it('reports load errors in Vietnamese and retries', async () => {

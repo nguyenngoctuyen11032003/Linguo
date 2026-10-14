@@ -4,6 +4,7 @@ import type { AiRequestInput } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { useAiNotice } from '@/features/ai-tutor/useAiNotice';
+import { track } from '@/features/analytics';
 import { useAiQuota } from '@/features/ai-tutor/useAiQuota';
 import { useAiTutor } from '@/features/ai-tutor/useAiTutor';
 import { AiFallback, type AiFallbackText } from './AiFallback';
@@ -69,6 +70,11 @@ export function AiExplainSheet({ open, onClose, request, fallback, triggerRef }:
     setCurrent(next);
     void aiRef.current.run(next);
   }, [open, ready, requestKey]);
+
+  const task = request.task;
+  useEffect(() => {
+    if (open) track('ai_sheet_opened', { task });
+  }, [open, task]);
 
   useEffect(() => {
     if (open) return;

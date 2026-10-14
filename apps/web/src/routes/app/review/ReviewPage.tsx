@@ -9,6 +9,7 @@ import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { useToast } from '@/components/ui/Toast';
+import { track } from '@/features/analytics';
 import type { Confidence } from '@/features/reviews/types';
 import { useReviewSession } from '@/features/reviews/useReviewSession';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
@@ -78,6 +79,17 @@ export function ReviewPage() {
     summaryFocused.current = true;
     document.getElementById('review-summary-title')?.focus();
   }, [status]);
+
+  const finishTracked = useRef(false);
+  useEffect(() => {
+    if (status !== 'finished') {
+      finishTracked.current = false;
+      return;
+    }
+    if (finishTracked.current) return;
+    finishTracked.current = true;
+    track('review_session_completed', { cards: reviewedCount, from_session: fromSession });
+  }, [status, reviewedCount, fromSession]);
 
   // The activity is over when the (limited) queue is done or there was nothing to review.
   const activityOver = status === 'finished' || status === 'empty';

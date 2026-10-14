@@ -7,9 +7,10 @@ import { renderWithProviders } from '../../../../tests/unit/render';
 import { gradeResult, queueTotals, reviewCard, reviewSummary, sessionApi } from './review-fixtures';
 import { ReviewPage } from './ReviewPage';
 
-const mocks = vi.hoisted(() => ({ session: null as unknown as ReviewSessionApi }));
+const mocks = vi.hoisted(() => ({ session: null as unknown as ReviewSessionApi, track: vi.fn() }));
 
 vi.mock('@/features/reviews/useReviewSession', () => ({ useReviewSession: () => mocks.session }));
+vi.mock('@/features/analytics', () => ({ track: mocks.track }));
 
 function setSession(overrides: Partial<ReviewSessionApi> = {}) {
   mocks.session = sessionApi(overrides);
@@ -33,7 +34,10 @@ function update(next: ReviewSessionApi) {
 }
 
 describe('ReviewPage', () => {
-  beforeEach(() => setSession());
+  beforeEach(() => {
+    mocks.track.mockReset();
+    setSession();
+  });
 
   it('announces loading', () => {
     setSession({ status: 'loading', card: null });
@@ -252,6 +256,8 @@ describe('ReviewPage', () => {
       expect(screen.getByText('Tỷ lệ nhớ 30 ngày: 87%')).toBeInTheDocument();
       expect(screen.getByText('Còn 1 thẻ đang chờ đồng bộ')).toBeInTheDocument();
       expect(screen.queryByRole('button', { name: '+10 thẻ nữa' })).not.toBeInTheDocument();
+      expect(mocks.track).toHaveBeenCalledTimes(1);
+      expect(mocks.track).toHaveBeenCalledWith('review_session_completed', { cards: 1, from_session: false });
       await userEvent.click(screen.getByRole('button', { name: 'Hôm nay đủ rồi' }));
       expect(screen.getByTestId('location')).toHaveTextContent(/^\/app$/);
     });

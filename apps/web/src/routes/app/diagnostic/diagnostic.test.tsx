@@ -12,7 +12,10 @@ const mocks = vi.hoisted(() => ({
   run: null as DiagnosticRunApi | null,
   useDiagnosticRun: vi.fn(),
   listeners: new Set<() => void>(),
+  track: vi.fn(),
 }));
+
+vi.mock('@/features/analytics', () => ({ track: mocks.track }));
 
 vi.mock('@/features/diagnostic/useDiagnosticRun', async () => {
   const { useSyncExternalStore } = await import('react');
@@ -52,6 +55,7 @@ const location = () => screen.getByTestId('location').textContent;
 
 beforeEach(() => {
   mocks.useDiagnosticRun.mockReset();
+  mocks.track.mockReset();
 });
 
 describe('DiagnosticPage — intro', () => {
@@ -68,6 +72,7 @@ describe('DiagnosticPage — intro', () => {
     expect(screen.getByText(/Khoảng 12 phút, không tính giờ/)).toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: 'Bắt đầu' }));
     expect(run.start).toHaveBeenCalled();
+    expect(mocks.track).toHaveBeenCalledWith('diagnostic_started', { mode: 'full', resumed: false });
     await userEvent.click(screen.getByRole('link', { name: 'Để sau' }));
     expect(location()).toBe('/app');
   });
@@ -223,9 +228,20 @@ describe('DiagnosticPage — other states', () => {
     expect(run.retry).toHaveBeenCalled();
   });
 
+  it('records a completion only when the test was answered here', async () => {
+    renderAt(makeRun({ status: 'question' }));
+    setRun(makeRun({ status: 'finishing', item: null }));
+    expect(mocks.track).not.toHaveBeenCalled();
+    setRun(makeRun({ status: 'report', item: null, report: REPORT }));
+    await waitFor(() => expect(location()).toBe(`/app/kiem-tra/${PATH_ID}/ket-qua`));
+    expect(mocks.track).toHaveBeenCalledTimes(1);
+    expect(mocks.track).toHaveBeenCalledWith('diagnostic_completed', { mode: REPORT.mode });
+  });
+
   it('moves to the report route when the test is done', async () => {
     renderAt(makeRun({ status: 'report', item: null, report: REPORT }));
     await waitFor(() => expect(location()).toBe(`/app/kiem-tra/${PATH_ID}/ket-qua`));
+    expect(mocks.track).not.toHaveBeenCalled();
     expect(
       await screen.findByRole('heading', {
         level: 1,
