@@ -1,13 +1,16 @@
 import { useId } from 'react';
 import { ChevronRight, Sprout } from 'lucide-react';
 import { Link } from 'react-router';
-import type { Mistake } from '@linguo/shared';
+import { DEFAULT_TIMEZONE, type Mistake } from '@linguo/shared';
 import { SolidCard } from '@/components/ui/SolidCard';
+import { useProfile } from '@/features/profile/ProfileProvider';
 import { formatDay } from './labels';
 
 /** Exercises answered wrong most often in the window, each linking back to its lesson. */
 export function MistakesList({ mistakes }: { mistakes: Mistake[] }) {
   const headingId = useId();
+  const { profile } = useProfile();
+  const timeZone = profile?.timezone ?? DEFAULT_TIMEZONE;
   return (
     <SolidCard>
       <section aria-labelledby={headingId} className="space-y-3">
@@ -31,7 +34,7 @@ export function MistakesList({ mistakes }: { mistakes: Mistake[] }) {
               <li key={`${m.lesson_id}-${i}`} className="min-w-0 py-3 first:pt-0 last:pb-0">
                 <p className="font-medium [overflow-wrap:anywhere]">{m.prompt}</p>
                 <p className="mt-0.5 text-sm text-muted">
-                  Sai {m.wrong_count} lần · gần nhất {formatDay(m.last_wrong_at)}
+                  Sai {m.wrong_count} lần · gần nhất {formatDay(m.last_wrong_at, timeZone)}
                 </p>
                 <Link
                   to={`/app/hoc-tap/bai/${m.lesson_id}`}

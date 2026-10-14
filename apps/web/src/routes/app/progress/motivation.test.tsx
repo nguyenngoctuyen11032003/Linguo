@@ -83,6 +83,13 @@ describe('BadgeGrid', () => {
     expect(locked).toHaveTextContent('Chưa đạt');
     expect(locked).toHaveTextContent('Hoàn thành 10 bài học');
   });
+
+  it("dates badges by the learner's local day, not the UTC day", () => {
+    renderWithProviders(<BadgeGrid badges={[{ key: 'first_lesson', earned_at: '2026-10-14T23:00:00+00:00' }]} />, {
+      profile: { profile: { id: 'u', displayName: 'Minh Anh', timezone: 'Asia/Ho_Chi_Minh' } },
+    });
+    expect(screen.getAllByRole('listitem')[0]).toHaveAccessibleName('Bài đầu tiên: đã đạt ngày 15/10/2026');
+  });
 });
 
 describe('MotivationStrip', () => {

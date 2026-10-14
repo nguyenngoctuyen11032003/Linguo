@@ -1,9 +1,10 @@
 import { useId } from 'react';
 import { CircleDashed, Gauge } from 'lucide-react';
 import { Link } from 'react-router';
-import { SKILLS, type SkillEstimate } from '@linguo/shared';
+import { DEFAULT_TIMEZONE, SKILLS, type SkillEstimate } from '@linguo/shared';
 import { buttonClasses } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
+import { useProfile } from '@/features/profile/ProfileProvider';
 import { levelLabel } from '../diagnostic/labels';
 import { ESTIMATE_CONFIDENCE_LABELS, ESTIMATE_SOURCE_LABELS, formatDay, SKILL_LABELS } from './labels';
 
@@ -15,6 +16,8 @@ interface EstimatesCardProps {
 /** Competence layer: one estimate per skill, always labelled as an estimate with its confidence, source and date. */
 export function EstimatesCard({ estimates, pathId }: EstimatesCardProps) {
   const headingId = useId();
+  const { profile } = useProfile();
+  const timeZone = profile?.timezone ?? DEFAULT_TIMEZONE;
   const diagnosticHref = `/app/kiem-tra/${pathId}`;
   const bySkill = new Map(estimates.map((e) => [e.skill, e]));
 
@@ -63,7 +66,7 @@ export function EstimatesCard({ estimates, pathId }: EstimatesCardProps) {
                           Nguồn: {ESTIMATE_SOURCE_LABELS[estimate.source]}
                           {estimate.sample_size > 0 && `, dựa trên ${estimate.sample_size} câu`}
                         </p>
-                        <p className="text-muted">Cập nhật ngày {formatDay(estimate.assessed_at)}</p>
+                        <p className="text-muted">Cập nhật ngày {formatDay(estimate.assessed_at, timeZone)}</p>
                       </div>
                     ) : (
                       <p className="mt-1 flex items-center gap-1.5 text-sm text-muted">

@@ -16,7 +16,8 @@ import {
   Trophy,
   type LucideIcon,
 } from 'lucide-react';
-import { BADGE_KEYS, BADGES, type Motivation } from '@linguo/shared';
+import { BADGE_KEYS, BADGES, DEFAULT_TIMEZONE, type Motivation } from '@linguo/shared';
+import { useProfile } from '@/features/profile/ProfileProvider';
 import { cn } from '@/lib/cn';
 import { formatDay } from './labels';
 
@@ -39,6 +40,8 @@ const ICONS: Record<string, LucideIcon> = {
 /** Every badge of the catalogue: earned ones first (newest first) with their date, then locked ones with how to earn them. */
 export function BadgeGrid({ badges }: { badges: Motivation['badges'] }) {
   const headingId = useId();
+  const { profile } = useProfile();
+  const timeZone = profile?.timezone ?? DEFAULT_TIMEZONE;
   const earnedAt = new Map(badges.map((b) => [b.key, b.earned_at]));
   const earned = [...badges].sort((a, b) => b.earned_at.localeCompare(a.earned_at)).map((b) => b.key);
   const locked = BADGE_KEYS.filter((key) => !earnedAt.has(key));
@@ -54,7 +57,7 @@ export function BadgeGrid({ badges }: { badges: Motivation['badges'] }) {
           const date = earnedAt.get(key);
           const Icon = date ? (ICONS[info.icon] ?? Award) : Lock;
           const label = date
-            ? `${info.title_vi}: đã đạt ngày ${formatDay(date)}`
+            ? `${info.title_vi}: đã đạt ngày ${formatDay(date, timeZone)}`
             : `${info.title_vi}: chưa đạt. ${info.description_vi}`;
           return (
             <li
@@ -77,7 +80,7 @@ export function BadgeGrid({ badges }: { badges: Motivation['badges'] }) {
               <div className="min-w-0">
                 <p className={cn('font-semibold leading-snug', !date && 'text-muted')}>{info.title_vi}</p>
                 {date ? (
-                  <p className="text-xs text-muted">Đã đạt ngày {formatDay(date)}</p>
+                  <p className="text-xs text-muted">Đã đạt ngày {formatDay(date, timeZone)}</p>
                 ) : (
                   <p className="text-xs text-muted">
                     <span className="font-semibold">Chưa đạt</span> · {info.description_vi}

@@ -1,5 +1,5 @@
 import type { SkillAccuracy, SkillEstimate, TypeAccuracy } from '@linguo/shared';
-import { formatDateVi } from '@/lib/dates';
+import { formatDateVi, todayIso } from '@/lib/dates';
 import { CONFIDENCE_LABELS, SKILL_LABELS } from '../diagnostic/labels';
 
 export { SKILL_LABELS };
@@ -56,10 +56,14 @@ export function percent(value: number): string {
   return `${Math.round(value * 100)}%`;
 }
 
-/** "2026-10-01T09:15:00Z" or "2026-10-01" → "01/10/2026"; anything else is returned as-is. */
-export function formatDay(isoish: string): string {
-  const date = isoish.slice(0, 10);
-  return /^\d{4}-\d{2}-\d{2}$/.test(date) ? formatDateVi(date) : isoish;
+/**
+ * "2026-10-01" → "01/10/2026"; a full timestamp ("2026-09-30T20:00:00+00:00") → its calendar day in `timeZone`
+ * ("01/10/2026" in Asia/Ho_Chi_Minh). Anything unparseable is returned as-is.
+ */
+export function formatDay(isoish: string, timeZone: string): string {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(isoish)) return formatDateVi(isoish);
+  const instant = new Date(isoish);
+  return Number.isNaN(instant.getTime()) ? isoish : formatDateVi(todayIso(timeZone, instant));
 }
 
 const WEEKDAYS_SHORT = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'];

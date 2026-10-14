@@ -75,6 +75,14 @@ describe('EstimatesCard', () => {
     expect(grammar).toHaveTextContent('15/09/2026');
   });
 
+  it("dates estimates by the learner's local day", () => {
+    const late = [{ ...dashboard.estimates[0]!, assessed_at: '2026-09-30T20:00:00+00:00' }];
+    renderWithProviders(<EstimatesCard estimates={late} pathId={FIXTURE_PATH_ID} />, {
+      profile: { profile: { id: 'u', displayName: 'Minh Anh', timezone: 'Asia/Ho_Chi_Minh' } },
+    });
+    expect(screen.getByRole('heading', { level: 3, name: 'Từ vựng' }).closest('li')).toHaveTextContent('01/10/2026');
+  });
+
   it('lists skills without an estimate and links to retake the diagnostic', () => {
     renderWithProviders(<EstimatesCard estimates={dashboard.estimates} pathId={FIXTURE_PATH_ID} />);
     const listening = screen.getByRole('heading', { level: 3, name: 'Nghe' }).closest('li')!;
@@ -101,6 +109,14 @@ describe('MistakesList', () => {
       'href',
       `/app/hoc-tap/bai/${FIXTURE_LESSON_ID}`,
     );
+  });
+
+  it("dates the last mistake by the learner's local day", () => {
+    const late = [{ ...dashboard.mistakes[0]!, last_wrong_at: '2026-10-12T23:30:00+00:00' }];
+    renderWithProviders(<MistakesList mistakes={late} />, {
+      profile: { profile: { id: 'u', displayName: 'Minh Anh', timezone: 'Asia/Ho_Chi_Minh' } },
+    });
+    expect(screen.getByRole('listitem')).toHaveTextContent('13/10/2026');
   });
 
   it('shows an encouraging empty state', () => {
