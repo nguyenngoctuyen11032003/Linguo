@@ -159,11 +159,18 @@ function Question({ item, pathLanguage, busy, nearEnd, onAnswer, onOpenSkip, ski
       </motion.div>
       {/* Outside the animated block: a transformed ancestor would break `position: fixed`. */}
       <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-surface-solid/95 pb-safe backdrop-blur-md">
-        <div className="mx-auto flex w-full max-w-xl gap-3 px-safe py-3">
-          <Button variant="ghost" size="lg" disabled={busy} onClick={() => onAnswer(null)}>
+        {/* Below 360 px the buttons stack (primary on top) so "Tiếp tục" never wraps beside the ghost one. */}
+        <div className="mx-auto flex w-full max-w-xl flex-col-reverse gap-2 px-safe py-3 min-[360px]:flex-row min-[360px]:gap-3">
+          <Button
+            variant="ghost"
+            size="lg"
+            disabled={busy}
+            onClick={() => onAnswer(null)}
+            className="w-full min-[360px]:w-auto min-[360px]:shrink-0"
+          >
             Tôi không biết
           </Button>
-          <div className="flex-1">
+          <div className="min-[360px]:flex-1">
             <Button
               variant="accent"
               size="lg"
@@ -218,7 +225,7 @@ export function DiagnosticPage() {
 
   const header = (
     <header className="pt-safe">
-      <div className="mx-auto flex min-h-14 w-full max-w-xl items-center gap-3 px-safe py-2">
+      <div className="mx-auto flex min-h-14 w-full max-w-xl flex-wrap items-center gap-x-3 gap-y-1 px-safe py-2">
         {inTest ? (
           <button
             type="button"

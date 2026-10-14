@@ -113,6 +113,17 @@ describe('DiagnosticPage — question', () => {
     expect(within(group).getByText('apple')).toHaveAttribute('lang', 'en');
   });
 
+  it('keeps small-screen layout: stacked footer buttons and untruncated skill labels', () => {
+    renderAt(makeRun());
+    const footerRow = screen.getByRole('button', { name: 'Tôi không biết' }).parentElement!;
+    expect(footerRow).toHaveClass('flex-col-reverse', 'min-[360px]:flex-row');
+    const progress = screen.getByRole('list', { name: 'Tiến độ theo kỹ năng' });
+    for (const label of within(progress).getAllByText(/Từ vựng|Ngữ pháp|Đọc hiểu/)) {
+      expect(label.closest('p')).not.toHaveClass('truncate');
+      expect(label).not.toHaveClass('truncate');
+    }
+  });
+
   it('lets the learner report the question on screen', () => {
     renderAt(makeRun());
     expect(screen.getByRole('button', { name: 'Báo lỗi nội dung' })).toHaveAttribute('aria-haspopup', 'dialog');

@@ -29,7 +29,8 @@ function progressAnnouncement(progress: DiagnosticProgress): string {
 export function SkillProgress({ progress }: { progress: DiagnosticProgress }) {
   const { reduceMotion } = useMotionPrefs();
   return (
-    <div className="min-w-0 flex-1">
+    // Below 420 px the header wraps and this row takes its own full-width line, so the labels never truncate.
+    <div className="min-w-0 flex-[1_1_100%] min-[420px]:flex-1">
       <ol aria-label="Tiến độ theo kỹ năng" className="grid grid-cols-3 gap-2">
         {progress.skills.map((row) => {
           const fill = row.status === 'done' ? 1 : row.status === 'skipped' ? 0 : row.fill;
@@ -45,13 +46,13 @@ export function SkillProgress({ progress }: { progress: DiagnosticProgress }) {
               </div>
               <p
                 className={cn(
-                  'mt-1 flex items-center gap-1 truncate text-xs',
+                  'mt-1 flex items-center gap-1 text-xs leading-tight',
                   row.status === 'active' ? 'font-semibold text-text' : 'font-medium text-muted',
                 )}
               >
                 {row.status === 'done' && <Check aria-hidden className="size-3.5 shrink-0" />}
                 {row.status === 'skipped' && <Minus aria-hidden className="size-3.5 shrink-0" />}
-                <span className="truncate">{SKILL_LABELS[row.skill]}</span>
+                <span className="min-w-0">{SKILL_LABELS[row.skill]}</span>
                 <span className="sr-only">: {STATUS_TEXT[row.status]}</span>
               </p>
             </li>
