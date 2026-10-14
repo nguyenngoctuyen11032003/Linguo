@@ -1,6 +1,7 @@
 import { renderHook, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Route, Routes } from 'react-router';
+import type { AiRequestInput } from '@linguo/shared';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { ATTEMPT_ID, PATH_ID, TOPIK_II_FORM_ID, examAttempt, examResult } from '@/features/exam/exam-fixtures';
 import { TEST_KO_PATH } from '../../../../tests/unit/learning-fixtures';
@@ -8,7 +9,32 @@ import { renderWithProviders } from '../../../../tests/unit/render';
 import { ExamResultPage } from './ExamResultPage';
 import { useExamResult } from './useExamResult';
 
-const mocks = vi.hoisted(() => ({ getExamAttempt: vi.fn(), startExam: vi.fn(), track: vi.fn(), client: {} }));
+interface SheetProps {
+  open: boolean;
+  onClose: () => void;
+  request: AiRequestInput;
+}
+
+const mocks = vi.hoisted(() => ({
+  getExamAttempt: vi.fn(),
+  startExam: vi.fn(),
+  track: vi.fn(),
+  client: {},
+  sheet: null as SheetProps | null,
+}));
+
+vi.mock('@/components/ai', () => ({
+  AiExplainSheet: (props: SheetProps) => {
+    mocks.sheet = props;
+    return props.open ? (
+      <div role="dialog" aria-label="AI sheet">
+        <button type="button" onClick={props.onClose}>
+          Đóng
+        </button>
+      </div>
+    ) : null;
+  },
+}));
 
 vi.mock('@/lib/supabase', () => ({ getSupabase: () => mocks.client }));
 vi.mock('@/features/exam/service', () => ({ getExamAttempt: mocks.getExamAttempt, startExam: mocks.startExam }));
@@ -30,6 +56,7 @@ beforeEach(() => {
   mocks.getExamAttempt.mockReset();
   mocks.startExam.mockReset();
   mocks.track.mockReset();
+  mocks.sheet = null;
 });
 
 describe('ExamResultPage', () => {
@@ -65,6 +92,19 @@ describe('ExamResultPage', () => {
     });
     expect(await screen.findByText('Trang làm bài')).toBeInTheDocument();
     expect(mocks.track).toHaveBeenCalledWith('exam_started', { family: 'topik_ii', mode: 'question_type' });
+  });
+
+  it('opens AI writing feedback for an essay and closes it again', async () => {
+    const user = userEvent.setup();
+    const result = examResult();
+    mocks.getExamAttempt.mockResolvedValue({ kind: 'result', result });
+    renderResult();
+    await user.click(await screen.findByRole('button', { name: 'Nhận xét bằng AI' }));
+    expect(screen.getByRole('dialog', { name: 'AI sheet' })).toBeInTheDocument();
+    const essay = result.review[3]!;
+    expect(mocks.sheet?.request).toMatchObject({ task: 'review_writing', language: 'ko', level: 'topik4', answer: essay.answer, rubric: essay.rubric });
+    await user.click(screen.getByRole('button', { name: 'Đóng' }));
+    expect(screen.queryByRole('dialog', { name: 'AI sheet' })).not.toBeInTheDocument();
   });
 
   it('sends an attempt that is still open back to the runner', async () => {

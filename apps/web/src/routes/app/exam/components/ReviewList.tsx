@@ -1,22 +1,25 @@
 import { useId, useState } from 'react';
-import { CheckCircle2, ChevronRight, CircleDashed, ClipboardCheck, Headphones, Lightbulb, XCircle } from 'lucide-react';
-import type { ExamFamily, ExamResult } from '@linguo/shared';
+import { CheckCircle2, ChevronRight, CircleDashed, ClipboardCheck, Headphones, Lightbulb, Sparkles, XCircle } from 'lucide-react';
+import { REVIEW_WRITING_ANSWER_MAX_CHARS, type ExamFamily, type ExamResult } from '@linguo/shared';
+import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/cn';
 import { SECTION_LABELS, familyLanguage, isAnswered, questionTypeLabel } from './labels';
 
 export interface ReviewListProps {
   result: ExamResult;
+  /** When given, answered essays offer AI practice feedback (Spec 9 X6); the page owns the AI sheet. */
+  onAiFeedback?: (item: ReviewItem, trigger: HTMLElement) => void;
 }
 
-type ReviewItem = ExamResult['review'][number];
+export type ReviewItem = ExamResult['review'][number];
 
 /** Every question after submit: your answer vs the correct one, explanation, listening script, essay self-check. */
-export function ReviewList({ result }: ReviewListProps) {
+export function ReviewList({ result, onAiFeedback }: ReviewListProps) {
   return (
     <ol className="grid gap-4" aria-label="Xem lại từng câu">
       {result.review.map((item) => (
         <li key={item.question_id} className="min-w-0">
-          <ReviewCard item={item} family={result.family} />
+          <ReviewCard item={item} family={result.family} onAiFeedback={onAiFeedback} />
         </li>
       ))}
     </ol>
@@ -36,7 +39,7 @@ function statusOf(item: ReviewItem): keyof typeof STATUS {
   return item.is_correct ? 'correct' : 'wrong';
 }
 
-function ReviewCard({ item, family }: { item: ReviewItem; family: ExamFamily }) {
+function ReviewCard({ item, family, onAiFeedback }: { item: ReviewItem; family: ExamFamily; onAiFeedback?: ReviewListProps['onAiFeedback'] }) {
   const titleId = useId();
   const { prompt } = item;
   const answerLang = prompt.stem_lang !== 'vi' ? prompt.stem_lang : familyLanguage(family);
@@ -78,7 +81,7 @@ function ReviewCard({ item, family }: { item: ReviewItem; family: ExamFamily }) 
           {prompt.stem}
         </p>
 
-        {item.kind === 'essay' ? <EssayReview item={item} answerLang={answerLang} /> : <AnswerCompare item={item} answerLang={answerLang} />}
+        {item.kind === 'essay' ? <EssayReview item={item} answerLang={answerLang} onAiFeedback={onAiFeedback} /> : <AnswerCompare item={item} answerLang={answerLang} />}
 
         <div className="rounded-2xl border border-border bg-bg/60 px-4 py-3">
           <p className="mb-1 flex items-center gap-1.5 text-sm font-semibold">
@@ -125,7 +128,15 @@ function AnswerCompare({ item, answerLang }: { item: ReviewItem; answerLang: str
   );
 }
 
-function EssayReview({ item, answerLang }: { item: ReviewItem; answerLang: string }) {
+function EssayReview({
+  item,
+  answerLang,
+  onAiFeedback,
+}: {
+  item: ReviewItem;
+  answerLang: string;
+  onAiFeedback?: ReviewListProps['onAiFeedback'];
+}) {
   const [checked, setChecked] = useState<Record<string, boolean>>({});
   const rubric = item.rubric ?? [];
   const max = rubric.reduce((sum, r) => sum + r.max_points, 0);
@@ -173,6 +184,10 @@ function EssayReview({ item, answerLang }: { item: ReviewItem; answerLang: strin
         </fieldset>
       )}
 
+      {onAiFeedback && isAnswered(item.answer) && rubric.length > 0 && (
+        <AiFeedbackOffer item={item} onAiFeedback={onAiFeedback} />
+      )}
+
       {item.sample_answer && (
         <details className="group rounded-2xl border border-border px-4 py-3">
           <summary className="flex min-h-8 cursor-pointer list-none items-center gap-1.5 font-semibold focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 [&::-webkit-details-marker]:hidden">
@@ -183,6 +198,28 @@ function EssayReview({ item, answerLang }: { item: ReviewItem; answerLang: strin
             {item.sample_answer}
           </p>
         </details>
+      )}
+    </div>
+  );
+}
+
+function AiFeedbackOffer({ item, onAiFeedback }: { item: ReviewItem; onAiFeedback: NonNullable<ReviewListProps['onAiFeedback']> }) {
+  const tooLong = (item.answer?.trim().length ?? 0) > REVIEW_WRITING_ANSWER_MAX_CHARS;
+  return (
+    <div className="space-y-2 rounded-2xl border border-primary/30 bg-primary/5 px-4 py-3">
+      <p className="text-sm font-semibold">Phản hồi luyện tập — không phải điểm chính thức</p>
+      {tooLong ? (
+        <p className="text-sm text-muted">
+          Bài viết dài hơn {REVIEW_WRITING_ANSWER_MAX_CHARS} ký tự nên AI chưa nhận xét được. Hãy tự đánh giá theo tiêu chí ở trên.
+        </p>
+      ) : (
+        <>
+          <p className="text-sm text-muted">AI chấm thử theo các tiêu chí trên, nhận xét bằng tiếng Việt và gợi ý bản sửa. Dùng 1 lượt AI.</p>
+          <Button variant="accent" onClick={(e) => onAiFeedback(item, e.currentTarget)}>
+            <Sparkles aria-hidden className="size-4" />
+            Nhận xét bằng AI
+          </Button>
+        </>
       )}
     </div>
   );

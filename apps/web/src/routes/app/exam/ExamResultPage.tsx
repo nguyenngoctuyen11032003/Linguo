@@ -1,7 +1,8 @@
-import { useMemo, type ReactNode } from 'react';
+import { useMemo, useRef, useState, type ReactNode } from 'react';
 import { ChevronLeft } from 'lucide-react';
 import { Link, Navigate, useLocation, useParams } from 'react-router';
-import { examResultSchema, type ExamResult } from '@linguo/shared';
+import { examResultSchema, type AiRequestInput, type ExamResult } from '@linguo/shared';
+import { AiExplainSheet } from '@/components/ai';
 import { buttonClasses } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
@@ -10,6 +11,7 @@ import { QuestionTypeBreakdown, ResultSummary, ReviewList, examRunnerHref } from
 import { EXAM_HUB_PATH } from './exam-page-utils';
 import { useExamResult } from './useExamResult';
 import { useStartExam } from './useStartExam';
+import { writingFeedbackRequest } from './writing-feedback';
 
 /** The runner hands the graded result over in the navigation state; anything else there is ignored. */
 function resultFromState(state: unknown): ExamResult | null {
@@ -48,6 +50,9 @@ export function ExamResultPage() {
   const state = useExamResult(attemptId, handedOver);
   const paths = useLearningPaths();
   const starter = useStartExam();
+  const [aiRequest, setAiRequest] = useState<AiRequestInput | null>(null);
+  const [aiOpen, setAiOpen] = useState(false);
+  const aiTrigger = useRef<HTMLElement | null>(null);
 
   if (state.status === 'in_progress') return <Navigate to={examRunnerHref(attemptId)} replace />;
 
@@ -107,12 +112,25 @@ export function ExamResultPage() {
         <h2 id="exam-review-title" className="text-xl font-bold tracking-[-0.02em]">
           Xem lại đáp án
         </h2>
-        <ReviewList result={result} />
+        <ReviewList
+          result={result}
+          onAiFeedback={(item, trigger) => {
+            const request = writingFeedbackRequest(result, item);
+            if (!request) return;
+            aiTrigger.current = trigger;
+            setAiRequest(request);
+            setAiOpen(true);
+          }}
+        />
       </section>
 
       <Link to={EXAM_HUB_PATH} className={buttonClasses('ghost', 'lg', true)}>
         Về Luyện thi
       </Link>
+
+      {aiRequest && (
+        <AiExplainSheet open={aiOpen} onClose={() => setAiOpen(false)} request={aiRequest} triggerRef={aiTrigger} />
+      )}
     </Page>
   );
 }

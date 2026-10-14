@@ -97,6 +97,36 @@ describe('ReviewList', () => {
     expect(summary.closest('details')).toHaveAttribute('open');
   });
 
+  it('essay: AI feedback button only when the page offers it and there is an essay to review', async () => {
+    const user = userEvent.setup();
+    const onAiFeedback = vi.fn();
+    const { unmount } = renderExam(<ReviewList result={TOPIK_RESULT} />);
+    expect(screen.queryByRole('button', { name: /Nhận xét bằng AI/ })).not.toBeInTheDocument();
+    unmount();
+
+    renderExam(<ReviewList result={TOPIK_RESULT} onAiFeedback={onAiFeedback} />);
+    const essay = screen.getAllByRole('article')[3]!;
+    expect(within(essay).getByText('Phản hồi luyện tập — không phải điểm chính thức')).toBeInTheDocument();
+    const button = within(essay).getByRole('button', { name: 'Nhận xét bằng AI' });
+    await user.click(button);
+    expect(onAiFeedback).toHaveBeenCalledWith(TOPIK_RESULT.review[3], button);
+    // Only essays get the button.
+    expect(screen.getAllByRole('button', { name: 'Nhận xét bằng AI' })).toHaveLength(1);
+  });
+
+  it('essay: no AI feedback for a blank essay, a note for one that is too long', () => {
+    const essay = TOPIK_RESULT.review[3]!;
+    const blank = { ...TOPIK_RESULT, review: [{ ...essay, answer: '  ' }] };
+    const { unmount } = renderExam(<ReviewList result={blank} onAiFeedback={vi.fn()} />);
+    expect(screen.queryByRole('button', { name: 'Nhận xét bằng AI' })).not.toBeInTheDocument();
+    unmount();
+
+    const long = { ...TOPIK_RESULT, review: [{ ...essay, answer: 'a'.repeat(1501) }] };
+    renderExam(<ReviewList result={long} onAiFeedback={vi.fn()} />);
+    expect(screen.queryByRole('button', { name: 'Nhận xét bằng AI' })).not.toBeInTheDocument();
+    expect(screen.getByText(/dài hơn 1500 ký tự/)).toBeInTheDocument();
+  });
+
   it('falls back to the family language when the stem is Vietnamese', () => {
     const review = CEFR_RESULT.review.map((r) => ({ ...r, prompt: { ...r.prompt, stem_lang: 'vi' as const } }));
     renderExam(<ReviewList result={{ ...CEFR_RESULT, review }} />);
