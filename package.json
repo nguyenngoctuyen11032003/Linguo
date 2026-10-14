@@ -12,7 +12,7 @@
     "preview": "pnpm --filter @linguo/web preview",
     "lint": "eslint .",
     "typecheck": "pnpm -r typecheck",
-    "test": "node scripts/check-migrations-immutable.mjs && pnpm -r test && node --test scripts/check-public-env.test.mjs scripts/check-migrations-immutable.test.mjs scripts/sync-grading-fixtures.test.mjs scripts/sync-fsrs-fixtures.test.mjs scripts/sync-diagnostic-fixtures.test.mjs scripts/sync-ai-contract.test.mjs scripts/check-bundle-secrets.test.mjs && node --import tsx --test scripts/content-import.test.mjs",
+    "test": "node scripts/check-migrations-immutable.mjs && pnpm -r test && node --test scripts/check-public-env.test.mjs scripts/check-migrations-immutable.test.mjs scripts/sync-grading-fixtures.test.mjs scripts/sync-fsrs-fixtures.test.mjs scripts/sync-diagnostic-fixtures.test.mjs scripts/sync-exam-grading-fixtures.test.mjs scripts/sync-ai-contract.test.mjs scripts/check-bundle-secrets.test.mjs && node --import tsx --test scripts/content-import.test.mjs",
     "e2e": "pnpm --filter @linguo/web e2e",
     "icons": "node scripts/make-icons.mjs",
     "check-env": "node scripts/check-public-env.mjs",
@@ -29,6 +29,7 @@
     "fixtures:grading": "node scripts/sync-grading-fixtures.mjs",
     "fixtures:fsrs": "node scripts/gen-fsrs-fixtures.mjs && node scripts/sync-fsrs-fixtures.mjs",
     "fixtures:diagnostic": "node scripts/sync-diagnostic-fixtures.mjs",
+    "fixtures:exam": "node scripts/sync-exam-grading-fixtures.mjs",
     "ai:contract": "node scripts/sync-ai-contract.mjs",
     "db:types": "supabase gen types typescript --local --schema public > packages/shared/src/database.types.ts"
   },
