@@ -1,0 +1,942 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Công việc & kinh doanh" (B2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Tương lai tiếp diễn & tương lai hoàn thành ----------------
+  - key: en:item:future-continuous
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: will be + V-ing (tương lai tiếp diễn)
+      ipa: /wɪl biː/
+      pos: thì động từ
+    back:
+      meaning:
+        vi: sẽ đang làm gì vào một thời điểm cụ thể trong tương lai
+      examples:
+        - target: This time next week, I'll be presenting our results to the board.
+          translation:
+            vi: Giờ này tuần sau, tôi sẽ đang trình bày kết quả của chúng ta trước ban giám đốc.
+        - target: Don't call at ten - we'll be having our weekly meeting.
+          translation:
+            vi: Đừng gọi lúc mười giờ nhé - lúc đó bọn mình đang họp giao ban tuần.
+      pronunciation_note:
+        vi: Khi nói nhanh, I'll be đọc liền /aɪl bi/, will gần như chỉ còn âm /l/.
+      confusion:
+        vi: Tiếng Việt chỉ cần "sẽ đang", còn tiếng Anh phải đủ ba phần will + be + V-ing. Thiếu be ("I will presenting") là lỗi rất hay gặp.
+
+  - key: en:item:future-perfect
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: will have + V3 (tương lai hoàn thành)
+      ipa: /wɪl hæv/
+      pos: thì động từ
+    back:
+      meaning:
+        vi: sẽ đã làm xong việc gì trước một mốc thời gian trong tương lai
+      examples:
+        - target: By Friday, we'll have finished the first version of the app.
+          translation:
+            vi: Trước thứ Sáu, chúng ta sẽ làm xong phiên bản đầu tiên của ứng dụng.
+        - target: By the end of the year, she'll have worked here for ten years.
+          translation:
+            vi: Đến cuối năm nay, cô ấy sẽ làm việc ở đây được tròn mười năm.
+      pronunciation_note:
+        vi: Will have thường đọc gọn thành /wɪləv/ hoặc 'll have /ələv/; đừng nhầm âm /əv/ này với of.
+      confusion:
+        vi: Sau will have luôn là V3 (finished, done, sent), không phải V nguyên mẫu - "will have finish" là sai. Phủ định là won't have + V3.
+
+  - key: en:item:by-deadline-time
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: by + mốc thời gian
+      ipa: /baɪ/
+      pos: giới từ
+    back:
+      meaning:
+        vi: trước, chậm nhất là (đến mốc đó thì việc đã xong)
+      examples:
+        - target: Please send me the report by Thursday.
+          translation:
+            vi: Bạn gửi tôi báo cáo chậm nhất là thứ Năm nhé.
+        - target: By 2030, the company will have opened fifty stores.
+          translation:
+            vi: Đến năm 2030, công ty sẽ mở được năm mươi cửa hàng.
+      confusion:
+        vi: By Friday là "chậm nhất thứ Sáu" (xong lúc nào cũng được, miễn trước hạn); until Friday là "kéo dài đến thứ Sáu". Đi với by, mệnh đề chính thường dùng will have + V3.
+
+  - key: en:item:this-time-next-week
+    type: phrase
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: this time next week / tomorrow
+      ipa: /ðɪs taɪm nekst wiːk/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: giờ này tuần sau / giờ này ngày mai
+      examples:
+        - target: This time tomorrow, I'll be flying to Singapore.
+          translation:
+            vi: Giờ này ngày mai, tôi đang bay sang Singapore rồi.
+      confusion:
+        vi: Cụm này gần như luôn đi với will be + V-ing, vì nó chỉ một thời điểm cụ thể mà việc đang diễn ra.
+
+  - key: en:item:will-you-be-ing
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [speaking, grammar]
+    front:
+      text: Will you be + V-ing…? (hỏi lịch sự về kế hoạch)
+      ipa: /wɪl juː biː/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: hỏi nhẹ nhàng xem ai đó có định làm gì không (không ép buộc)
+      examples:
+        - target: Will you be using the meeting room this afternoon?
+          translation:
+            vi: Chiều nay anh có dùng phòng họp không ạ?
+      confusion:
+        vi: Will you use…? có thể nghe như lời nhờ hay yêu cầu; Will you be using…? chỉ hỏi kế hoạch nên lịch sự hơn, rất hay dùng nơi công sở.
+
+  - key: en:item:launch-a-product
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: launch a product
+      ipa: UK /lɔːntʃ ə ˈprɒdʌkt/ · US /lɑːntʃ ə ˈprɑːdʌkt/
+      pos: cụm động từ - danh từ
+    back:
+      meaning:
+        vi: ra mắt / tung ra một sản phẩm
+      examples:
+        - target: We're launching a new skincare product in March.
+          translation:
+            vi: Tháng Ba chúng tôi sẽ ra mắt một sản phẩm chăm sóc da mới.
+        - target: The launch has been moved to next quarter.
+          translation:
+            vi: Buổi ra mắt đã được dời sang quý sau.
+      pronunciation_note:
+        vi: Launch có âm cuối /tʃ/ (như "ch" nhẹ), đừng đọc thành "lanh".
+      confusion:
+        vi: Không nói "open a product" hay "release a product" cho mọi trường hợp; launch là từ chuẩn trong kinh doanh. Launch còn là danh từ - the product launch.
+
+  - key: en:item:meet-a-deadline
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: meet / miss a deadline
+      ipa: /miːt ə ˈdedlaɪn/
+      pos: cụm động từ - danh từ
+    back:
+      meaning:
+        vi: kịp hạn chót / trễ hạn chót
+      examples:
+        - target: If we work this weekend, we'll meet the deadline.
+          translation:
+            vi: Nếu cuối tuần này làm thêm thì chúng ta sẽ kịp hạn.
+        - target: The team missed the deadline by two days.
+          translation:
+            vi: Nhóm đã trễ hạn hai ngày.
+      confusion:
+        vi: "\"Kịp deadline\" là meet the deadline, không nói \"catch the deadline\" hay \"reach the deadline\". Trễ hạn là miss, không phải \"lose\"."
+
+  - key: en:item:behind-schedule
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: behind / ahead of schedule
+      ipa: UK /bɪˈhaɪnd ˈʃedjuːl/ · US /bɪˈhaɪnd ˈskedʒuːl/
+      pos: cụm giới từ
+    back:
+      meaning:
+        vi: chậm tiến độ / vượt tiến độ
+      examples:
+        - target: The building work is three weeks behind schedule.
+          translation:
+            vi: Công trình xây dựng đang chậm tiến độ ba tuần.
+        - target: Good news - we're slightly ahead of schedule.
+          translation:
+            vi: Tin vui đây - chúng ta đang nhanh hơn kế hoạch một chút.
+      pronunciation_note:
+        vi: Schedule đọc /ˈʃedjuːl/ kiểu Anh và /ˈskedʒuːl/ kiểu Mỹ; chọn một cách và dùng nhất quán.
+      confusion:
+        vi: Không cần mạo từ - behind schedule, không nói "behind the schedule" khi nói về tiến độ chung.
+
+  - key: en:item:on-track
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: be on track (to do something)
+      ipa: UK /ɒn træk/ · US /ɑːn træk/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: đang đúng tiến độ, đang đi đúng hướng để đạt mục tiêu
+      examples:
+        - target: We're on track to finish the project by June.
+          translation:
+            vi: Chúng ta đang đúng tiến độ để hoàn thành dự án trước tháng Sáu.
+      confusion:
+        vi: On track mô tả tiến độ ổn; nếu chậm thì nói off track hoặc behind schedule.
+
+  - key: en:item:stakeholder
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: stakeholder
+      ipa: UK /ˈsteɪkhəʊldə/ · US /ˈsteɪkhoʊldɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bên liên quan (người hoặc nhóm có quyền lợi trong một dự án, công ty)
+      examples:
+        - target: We'll be meeting all the key stakeholders next month.
+          translation:
+            vi: Tháng sau chúng ta sẽ gặp tất cả các bên liên quan chủ chốt.
+      pronunciation_note:
+        vi: Nhấn âm đầu STAKE-; holder đọc nhẹ.
+      confusion:
+        vi: Stakeholder rộng hơn shareholder (cổ đông) - nó gồm cả nhân viên, khách hàng, nhà cung cấp, chính quyền địa phương.
+
+  # ---------------- Bài 2: Thể sai khiến have / get something done ----------------
+  - key: en:item:have-something-done
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: have + something + V3
+      ipa: /hæv ˈsʌmθɪŋ dʌn/
+      pos: cấu trúc sai khiến
+    back:
+      meaning:
+        vi: nhờ / thuê người khác làm việc gì cho mình (mình không tự làm)
+      examples:
+        - target: I had my hair cut yesterday.
+          translation:
+            vi: Hôm qua tôi đi cắt tóc.
+        - target: We're having the office repainted next month.
+          translation:
+            vi: Tháng sau công ty chúng tôi sẽ thuê người sơn lại văn phòng.
+      pronunciation_note:
+        vi: Nhấn vào tân ngữ và V3 (my HAIR CUT), have đọc nhẹ.
+      confusion:
+        vi: "\"Tôi cắt tóc\" trong tiếng Việt thường là đi tiệm, nhưng \"I cut my hair\" nghĩa là tự tay cắt. Thứ tự luôn là have + vật + V3, không phải have + V3 + vật."
+
+  - key: en:item:get-something-done
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: get + something + V3
+      ipa: /ɡet ˈsʌmθɪŋ dʌn/
+      pos: cấu trúc sai khiến
+    back:
+      meaning:
+        vi: như have something done nhưng thân mật hơn; đôi khi nhấn mạnh việc cố gắng làm cho xong
+      examples:
+        - target: I need to get my laptop repaired before the trip.
+          translation:
+            vi: Tôi cần mang laptop đi sửa trước chuyến công tác.
+        - target: Let's get these contracts signed today.
+          translation:
+            vi: Mình làm sao cho các hợp đồng này được ký trong hôm nay nhé.
+      confusion:
+        vi: Get something done hay dùng trong văn nói; trong văn viết trang trọng, have something done phổ biến hơn. Vẫn phải là V3 - get it repaired, không phải "get it repair".
+
+  - key: en:item:have-someone-do
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: have someone do / get someone to do
+      ipa: /hæv ˈsʌmwʌn duː/
+      pos: cấu trúc sai khiến
+    back:
+      meaning:
+        vi: bảo / nhờ ai đó làm việc gì (có nêu người làm)
+      examples:
+        - target: I'll have my assistant send you the details.
+          translation:
+            vi: Tôi sẽ bảo trợ lý gửi anh thông tin chi tiết.
+        - target: Can you get IT to check the printer?
+          translation:
+            vi: Bạn nhờ phòng IT kiểm tra máy in được không?
+      confusion:
+        vi: Have + người + V nguyên mẫu (have him send), nhưng get + người + to V (get him to send). Đừng trộn thành "have him to send" hay "get him send".
+
+  - key: en:item:causative-experience
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: have something + V3 (bị mất, bị hỏng…)
+      ipa: UK /hæv ˈsʌmθɪŋ ˈstəʊlən/ · US /hæv ˈsʌmθɪŋ ˈstoʊlən/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: bị ai đó làm gì đó (một việc không mong muốn xảy ra với đồ của mình)
+      examples:
+        - target: She had her bag stolen on the train.
+          translation:
+            vi: Cô ấy bị trộm túi trên tàu.
+      confusion:
+        vi: Cùng hình thức với have something done nhưng nghĩa là "bị", không phải "nhờ". Ngữ cảnh cho bạn biết đó là dịch vụ hay sự cố.
+
+  - key: en:item:outsource
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: outsource
+      ipa: UK /ˈaʊtsɔːs/ · US /ˈaʊtsɔːrs/
+      pos: động từ
+    back:
+      meaning:
+        vi: thuê ngoài, giao việc cho công ty bên ngoài làm
+      examples:
+        - target: Many firms outsource their customer service to save money.
+          translation:
+            vi: Nhiều công ty thuê ngoài bộ phận chăm sóc khách hàng để tiết kiệm chi phí.
+      pronunciation_note:
+        vi: Nhấn âm đầu OUT-.
+      confusion:
+        vi: Outsource something to a company (giao cho ai), không nói "outsource for".
+
+  - key: en:item:supplier
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: supplier
+      ipa: UK /səˈplaɪə/ · US /səˈplaɪɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà cung cấp
+      examples:
+        - target: We've found a cheaper supplier for our packaging.
+          translation:
+            vi: Chúng tôi đã tìm được một nhà cung cấp bao bì rẻ hơn.
+      pronunciation_note:
+        vi: Nhấn âm thứ hai -PLI-; âm đầu /sə/ đọc rất nhẹ.
+      confusion:
+        vi: Supplier là bên bán hàng cho công ty; customer / client là bên mua. Động từ là supply something to someone.
+
+  - key: en:item:get-a-quote
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: get a quote
+      ipa: UK /ɡet ə kwəʊt/ · US /ɡet ə kwoʊt/
+      pos: cụm động từ - danh từ
+    back:
+      meaning:
+        vi: xin báo giá
+      examples:
+        - target: Let's get a quote from two or three printing companies first.
+          translation:
+            vi: Trước hết mình xin báo giá của hai, ba công ty in đã.
+      confusion:
+        vi: Trong kinh doanh, quote (hoặc quotation) là bản báo giá, không phải "câu trích dẫn". Không nói "ask a price" khi muốn xin báo giá chính thức.
+
+  - key: en:item:cut-costs
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: cut costs
+      ipa: UK /kʌt kɒsts/ · US /kʌt kɑːsts/
+      pos: cụm động từ - danh từ
+    back:
+      meaning:
+        vi: cắt giảm chi phí
+      examples:
+        - target: The company is trying to cut costs by moving to a smaller office.
+          translation:
+            vi: Công ty đang cố cắt giảm chi phí bằng cách chuyển sang văn phòng nhỏ hơn.
+      pronunciation_note:
+        vi: Costs có cụm phụ âm cuối /sts/ - đọc đủ, đừng nuốt thành "cót".
+      confusion:
+        vi: Nói cut costs hoặc reduce costs, không nói "decrease costs" trong cụm cố định này. Cut là bất quy tắc - cut, cut, cut.
+
+  - key: en:item:profit-and-loss
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: profit / loss
+      ipa: UK /ˈprɒfɪt/, /lɒs/ · US /ˈprɑːfɪt/, /lɔːs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: lợi nhuận / khoản lỗ
+      examples:
+        - target: The company made a profit of $2 million last year.
+          translation:
+            vi: Năm ngoái công ty lãi 2 triệu đô.
+        - target: The shop made a loss in its first year.
+          translation:
+            vi: Năm đầu tiên cửa hàng bị lỗ.
+      confusion:
+        vi: Đi với động từ make - make a profit, make a loss; không nói "get a loss" hay "have profit".
+
+  # ---------------- Bài 3: Ngôn ngữ cuộc họp ----------------
+  - key: en:item:shall-we-get-started
+    type: phrase
+    level: b2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: Shall we get started?
+      ipa: UK /ʃæl wiː ɡet ˈstɑːtɪd/ · US /ʃæl wiː ɡet ˈstɑːrt̬ɪd/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: Chúng ta bắt đầu nhé? (câu mở đầu cuộc họp)
+      examples:
+        - target: Right, it's nine o'clock. Shall we get started?
+          translation:
+            vi: Được rồi, chín giờ rồi. Chúng ta bắt đầu nhé?
+      confusion:
+        vi: Dùng get started, không nói "Shall we start up?" (start up là khởi nghiệp / khởi động máy). Let's get started cũng được nhưng ít mềm mỏng hơn.
+
+  - key: en:item:agenda
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: agenda
+      ipa: /əˈdʒendə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chương trình họp, danh sách các nội dung sẽ bàn
+      examples:
+        - target: There are three items on the agenda today.
+          translation:
+            vi: Hôm nay có ba nội dung trong chương trình họp.
+      pronunciation_note:
+        vi: Nhấn âm thứ hai -JEN-; âm đầu /ə/ rất nhẹ.
+      confusion:
+        vi: Items on the agenda (giới từ on), không nói "in the agenda". Agenda không phải sổ ghi lịch cá nhân - đó là diary / planner.
+
+  - key: en:item:lets-move-on-to
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: Let's move on to…
+      ipa: UK /lets muːv ɒn tuː/ · US /lets muːv ɑːn tuː/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: Chúng ta chuyển sang (nội dung tiếp theo)…
+      examples:
+        - target: OK, let's move on to the next item - the budget.
+          translation:
+            vi: Được rồi, chúng ta chuyển sang nội dung tiếp theo - ngân sách.
+      confusion:
+        vi: Sau move on to là danh từ hoặc V-ing (move on to discussing…), vì to là giới từ. Không nói "move on to discuss about".
+
+  - key: en:item:could-i-just-come-in-here
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: Could I just come in here?
+      ipa: UK /kʊd aɪ dʒʌst kʌm ɪn hɪə/ · US /kʊd aɪ dʒʌst kʌm ɪn hɪr/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: Cho tôi xen vào một chút được không? (ngắt lời lịch sự)
+      examples:
+        - target: Sorry, could I just come in here? I think the figures are out of date.
+          translation:
+            vi: Xin lỗi, cho tôi nói xen một chút được không? Tôi nghĩ số liệu này cũ rồi.
+      confusion:
+        vi: Just làm câu mềm hơn (chỉ một chút thôi). Tránh "Wait!" hay "Stop, I want to say" - rất mất lịch sự trong cuộc họp.
+
+  - key: en:item:if-i-could-just-finish
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: If I could just finish…
+      ipa: /ɪf aɪ kʊd dʒʌst ˈfɪnɪʃ/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: Cho phép tôi nói nốt… (giữ lượt lời một cách lịch sự)
+      examples:
+        - target: If I could just finish my point, then you can go ahead.
+          translation:
+            vi: Cho tôi nói nốt ý này, rồi mời anh nói tiếp.
+      confusion:
+        vi: Đây là câu chưa hoàn chỉnh về ngữ pháp nhưng hoàn toàn tự nhiên; ngữ điệu nhẹ nhàng giúp bạn giữ lượt mà không gây căng thẳng.
+
+  - key: en:item:come-back-to-that
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: Can we come back to that later?
+      ipa: UK /kən wi kʌm bæk tə ðæt ˈleɪtə/ · US /kən wi kʌm bæk tə ðæt ˈleɪt̬ɚ/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: Chúng ta bàn lại chuyện đó sau được không?
+      examples:
+        - target: Good question, but can we come back to that later? We're short of time.
+          translation:
+            vi: Câu hỏi hay, nhưng mình bàn lại chuyện đó sau được không? Chúng ta đang hết giờ.
+      confusion:
+        vi: Come back to something là quay lại một chủ đề; không nói "return back to" (return đã có nghĩa là quay lại).
+
+  - key: en:item:to-sum-up
+    type: phrase
+    level: b2
+    difficulty: 2
+    skill_tags: [speaking, writing]
+    front:
+      text: To sum up,…
+      ipa: /tə sʌm ʌp/
+      pos: cụm từ nối
+    back:
+      meaning:
+        vi: Tóm lại,… (tổng kết cuối cuộc họp hay bài nói)
+      examples:
+        - target: To sum up, we've agreed to delay the launch by two weeks.
+          translation:
+            vi: Tóm lại, chúng ta đã thống nhất lùi buổi ra mắt hai tuần.
+      pronunciation_note:
+        vi: Nối âm sum up thành /sʌmʌp/.
+      confusion:
+        vi: To sum up dùng khi nói; in summary trang trọng hơn, thường trong văn viết. Không nói "Sum up," đứng một mình ở đầu câu.
+
+  - key: en:item:action-point
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: action point
+      ipa: /ˈækʃn pɔɪnt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đầu việc cần làm (được giao sau cuộc họp)
+      examples:
+        - target: "Action point: Hùng to send the revised budget by Friday."
+          translation:
+            vi: "Đầu việc: Hùng gửi bản ngân sách đã sửa trước thứ Sáu."
+      confusion:
+        vi: Trong biên bản họp, action point thường viết gọn - tên người + to + V (Lan to contact the supplier), không cần will.
+
+  - key: en:item:chair-a-meeting
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: chair a meeting
+      ipa: UK /tʃeər ə ˈmiːtɪŋ/ · US /tʃer ə ˈmiːt̬ɪŋ/
+      pos: cụm động từ - danh từ
+    back:
+      meaning:
+        vi: chủ trì cuộc họp
+      examples:
+        - target: Ms Hoa will be chairing tomorrow's meeting.
+          translation:
+            vi: Chị Hoa sẽ chủ trì cuộc họp ngày mai.
+      confusion:
+        vi: Ở đây chair là động từ (chủ trì), không phải cái ghế. Người chủ trì là the chair hoặc chairperson.
+
+  - key: en:item:take-the-minutes
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: take the minutes
+      ipa: /teɪk ðə ˈmɪnɪts/
+      pos: cụm động từ - danh từ
+    back:
+      meaning:
+        vi: ghi biên bản cuộc họp
+      examples:
+        - target: Could you take the minutes today, Linh?
+          translation:
+            vi: Hôm nay Linh ghi biên bản giúp nhé?
+      pronunciation_note:
+        vi: Minutes (biên bản) đọc giống minutes (phút) - /ˈmɪnɪts/.
+      confusion:
+        vi: Minutes luôn ở số nhiều khi là biên bản. Không nói "write the minute" hay "make a minutes".
+
+  - key: en:item:any-other-business
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: any other business (AOB)
+      ipa: UK /ˈeni ˈʌðə ˈbɪznəs/ · US /ˈeni ˈʌðɚ ˈbɪznəs/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: các vấn đề khác (mục cuối chương trình họp)
+      examples:
+        - target: Finally, is there any other business?
+          translation:
+            vi: Cuối cùng, còn vấn đề gì khác không ạ?
+      confusion:
+        vi: Business ở đây là "công việc, vấn đề cần bàn", không phải "doanh nghiệp". Viết tắt AOB đọc từng chữ A-O-B.
+
+  # ---------------- Bài 4: Đàm phán & mô tả xu hướng ----------------
+  - key: en:item:we-could-offer
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: We could offer… / How about…?
+      ipa: UK /wiː kʊd ˈɒfə/ · US /wiː kʊd ˈɔːfɚ/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: Chúng tôi có thể đề nghị… (đưa ra đề xuất mềm mỏng khi đàm phán)
+      examples:
+        - target: We could offer a 5% discount on orders over 1,000 units.
+          translation:
+            vi: Chúng tôi có thể giảm 5% cho đơn hàng trên 1.000 sản phẩm.
+      confusion:
+        vi: Could làm lời đề nghị mềm và còn để ngỏ; "We will give you…" nghe như đã chốt. Tránh "We can give you discount" - thiếu a.
+
+  - key: en:item:provided-that
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: provided (that) / providing (that)
+      ipa: /prəˈvaɪdɪd ðæt/
+      pos: liên từ
+    back:
+      meaning:
+        vi: với điều kiện là, miễn là (trang trọng hơn if)
+      examples:
+        - target: We can deliver by May, provided that you pay a 30% deposit.
+          translation:
+            vi: Chúng tôi có thể giao hàng trước tháng Năm, với điều kiện quý công ty đặt cọc 30%.
+      confusion:
+        vi: Giống if, sau provided that dùng hiện tại đơn dù nói về tương lai - provided that you pay, không phải "provided that you will pay".
+
+  - key: en:item:as-long-as
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: as long as / so long as
+      ipa: UK /əz lɒŋ əz/ · US /əz lɔːŋ əz/
+      pos: liên từ
+    back:
+      meaning:
+        vi: miễn là, chỉ cần
+      examples:
+        - target: You can work from home as long as you meet your deadlines.
+          translation:
+            vi: Bạn có thể làm việc ở nhà, miễn là bạn kịp hạn.
+      confusion:
+        vi: As long as ở đây là điều kiện, không phải "lâu bằng". Tương tự provided that, mệnh đề sau nó dùng hiện tại đơn.
+
+  - key: en:item:thats-a-fair-point-but
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: That's a fair point, but…
+      ipa: UK /ðæts ə feə pɔɪnt bʌt/ · US /ðæts ə fer pɔɪnt bʌt/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: Ý anh/chị cũng có lý, nhưng… (công nhận rồi phản bác nhẹ nhàng)
+      examples:
+        - target: That's a fair point, but our costs have gone up as well.
+          translation:
+            vi: Anh nói cũng có lý, nhưng chi phí của chúng tôi cũng đã tăng.
+      confusion:
+        vi: Công nhận trước rồi mới phản bác giúp cuộc đàm phán không căng thẳng. Tránh "You are wrong" hay "No, that's not true".
+
+  - key: en:item:compromise
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: compromise
+      ipa: UK /ˈkɒmprəmaɪz/ · US /ˈkɑːmprəmaɪz/
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: sự thỏa hiệp; thỏa hiệp, nhượng bộ lẫn nhau
+      examples:
+        - target: After two hours, we finally reached a compromise.
+          translation:
+            vi: Sau hai tiếng, cuối cùng chúng tôi đã đạt được thỏa hiệp.
+        - target: Both sides will have to compromise on price.
+          translation:
+            vi: Cả hai bên sẽ phải nhượng bộ về giá.
+      pronunciation_note:
+        vi: Nhấn âm đầu COM-, âm cuối -mise đọc /maɪz/.
+      confusion:
+        vi: Reach / find a compromise (đạt thỏa hiệp), compromise on something (nhượng bộ về điều gì). Không nói "make a compromise with price".
+
+  - key: en:item:revenue
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: revenue
+      ipa: UK /ˈrevənjuː/ · US /ˈrevənuː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: doanh thu
+      examples:
+        - target: Online sales helped us increase revenue by 15% this year.
+          translation:
+            vi: Bán hàng trực tuyến đã giúp chúng tôi tăng doanh thu 15% trong năm nay.
+      pronunciation_note:
+        vi: Nhấn âm đầu RE-; kiểu Anh có /j/ (-nyoo), kiểu Mỹ không.
+      confusion:
+        vi: Revenue là tổng tiền thu về, profit là phần lãi sau khi trừ chi phí - đừng dùng lẫn. Tăng bao nhiêu phần trăm dùng by, không dùng "for".
+
+  - key: en:item:market-share
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: market share
+      ipa: UK /ˈmɑːkɪt ʃeə/ · US /ˈmɑːrkɪt ʃer/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thị phần
+      examples:
+        - target: The brand has a 20% share of the Vietnamese market.
+          translation:
+            vi: Thương hiệu này chiếm 20% thị phần Việt Nam.
+        - target: We've lost market share to cheaper competitors.
+          translation:
+            vi: Chúng ta đã mất thị phần vào tay các đối thủ rẻ hơn.
+      confusion:
+        vi: Gain / lose market share (tăng / mất thị phần). Nói a 20% share of the market, không nói "20% of market share of".
+
+  - key: en:item:increase-by-to
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: increase / fall by… vs to…
+      ipa: /baɪ/ · /tuː/
+      pos: giới từ chỉ mức thay đổi
+    back:
+      meaning:
+        vi: by = tăng/giảm một lượng; to = tăng/giảm đến mức
+      examples:
+        - target: Sales rose by 10%, to $5 million.
+          translation:
+            vi: Doanh số tăng 10%, lên 5 triệu đô.
+        - target: Costs fell from $2 million to $1.5 million.
+          translation:
+            vi: Chi phí giảm từ 2 triệu xuống 1,5 triệu đô.
+      confusion:
+        vi: "Tiếng Việt nói \"tăng 10%\" không cần giới từ, nên người Việt hay dùng sai \"for 10%\". Lượng thay đổi luôn đi với by; mức cuối cùng đi với to."
+
+  - key: en:item:rise-sharply
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: rise sharply / a sharp rise
+      ipa: UK /raɪz ˈʃɑːpli/ · US /raɪz ˈʃɑːrpli/
+      pos: động từ + trạng từ
+    back:
+      meaning:
+        vi: tăng mạnh, tăng vọt
+      examples:
+        - target: Prices rose sharply in the second quarter.
+          translation:
+            vi: Giá tăng mạnh trong quý hai.
+        - target: There was a sharp rise in demand.
+          translation:
+            vi: Nhu cầu tăng vọt.
+      confusion:
+        vi: Rise là nội động từ (rise - rose - risen), không có tân ngữ - doanh số tự tăng. Muốn nói "chúng tôi tăng giá" dùng raise / increase prices.
+
+  - key: en:item:fall-slightly
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: fall slightly / a slight fall
+      ipa: UK /fɔːl ˈslaɪtli/ · US /fɑːl ˈslaɪtli/
+      pos: động từ + trạng từ
+    back:
+      meaning:
+        vi: giảm nhẹ
+      examples:
+        - target: Profits fell slightly in March.
+          translation:
+            vi: Lợi nhuận giảm nhẹ trong tháng Ba.
+      confusion:
+        vi: Fall - fell - fallen. Mức độ thay đổi đi theo cặp - động từ + trạng từ (fall slightly) hoặc tính từ + danh từ (a slight fall).
+
+  - key: en:item:remain-stable
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: remain stable / level off
+      ipa: /rɪˈmeɪn ˈsteɪbl/
+      pos: động từ + tính từ
+    back:
+      meaning:
+        vi: giữ ổn định / chững lại
+      examples:
+        - target: Sales remained stable throughout the summer.
+          translation:
+            vi: Doanh số giữ ổn định suốt mùa hè.
+      confusion:
+        vi: Sau remain là tính từ (stable), không phải trạng từ - không nói "remain stably". Level off là ngừng tăng/giảm và đi ngang.
+
+  - key: en:item:peak-at
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: peak at / reach a peak of
+      ipa: /piːk æt/
+      pos: động từ + giới từ
+    back:
+      meaning:
+        vi: đạt đỉnh ở mức
+      examples:
+        - target: Visitor numbers peaked at 12,000 in December.
+          translation:
+            vi: Lượng khách đạt đỉnh 12.000 người vào tháng Mười Hai.
+      confusion:
+        vi: Peak at + con số (peaked at 12,000); không nói "peaked to" hay "peaked with".
+
+  # ---------------- Bài 5: Ôn tập - biên bản họp & đàm phán ----------------
+  - key: en:item:apologies-minutes
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: "Apologies: … (trong biên bản họp)"
+      ipa: UK /əˈpɒlədʒiz/ · US /əˈpɑːlədʒiz/
+      pos: danh từ (số nhiều)
+    back:
+      meaning:
+        vi: người vắng mặt có báo trước (mục ghi ở đầu biên bản họp)
+      examples:
+        - target: "Present: Hà, Tuấn, Linh. Apologies: Mr Dũng."
+          translation:
+            vi: "Có mặt: Hà, Tuấn, Linh. Vắng mặt có báo: anh Dũng."
+      confusion:
+        vi: Trong biên bản, Apologies không phải "lời xin lỗi" chung chung mà là danh sách người đã báo vắng. Send your apologies là báo trước rằng mình không dự họp được.
+
+  - key: en:item:discount
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: discount
+      ipa: /ˈdɪskaʊnt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoản giảm giá, chiết khấu
+      examples:
+        - target: We can offer a 10% discount on bulk orders.
+          translation:
+            vi: Chúng tôi có thể chiết khấu 10% cho đơn hàng số lượng lớn.
+      pronunciation_note:
+        vi: Danh từ nhấn âm đầu DIS-count.
+      confusion:
+        vi: Discount là danh từ đếm được - a 10% discount, a discount on something (giới từ on), không nói "discount for 10%".
+
+  - key: en:item:deposit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: deposit
+      ipa: UK /dɪˈpɒzɪt/ · US /dɪˈpɑːzɪt/
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: tiền đặt cọc; đặt cọc
+      examples:
+        - target: You'll need to pay a 30% deposit when you place the order.
+          translation:
+            vi: Khi đặt hàng, quý khách cần đặt cọc 30%.
+      pronunciation_note:
+        vi: Nhấn âm thứ hai de-PO-sit.
+      confusion:
+        vi: Đặt cọc là pay / put down a deposit, không nói "give a deposit money". Deposit cũng là "gửi tiền vào ngân hàng".

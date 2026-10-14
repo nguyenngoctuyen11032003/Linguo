@@ -1,0 +1,949 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Du lịch, văn hoá & giải quyết vấn đề" (B1). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Lượng từ ----------------
+  - key: en:item:a-few-few
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: a few / few + danh từ đếm được số nhiều
+      ipa: a few /ə fjuː/ · few /fjuː/
+      pos: lượng từ
+    back:
+      meaning:
+        vi: "a few = một vài (đủ dùng, ý tích cực); few = rất ít, gần như không có (ý tiêu cực). Chỉ đi với danh từ đếm được số nhiều: a few days, few tourists."
+      examples:
+        - target: We stayed in Hue for a few days.
+          translation:
+            vi: Bọn mình ở Huế vài ngày.
+        - target: Few tourists visit this village in the rainy season.
+          translation:
+            vi: Rất ít khách du lịch đến ngôi làng này vào mùa mưa.
+      pronunciation_note:
+        vi: Few đọc /fjuː/ có âm /j/ nhẹ như "phiu", không đọc thành "phiêu".
+      confusion:
+        vi: "Không dùng a few với danh từ không đếm được: không nói a few money mà nói a little money. Few (không có a) mang nghĩa \"quá ít\", không phải \"một vài\"."
+
+  - key: en:item:a-little-little
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: a little / little + danh từ không đếm được
+      ipa: UK /ə ˈlɪtl/ · US /ə ˈlɪt̬l/
+      pos: lượng từ
+    back:
+      meaning:
+        vi: "a little = một ít (đủ dùng); little = rất ít, gần như không có. Chỉ đi với danh từ không đếm được: a little money, little time."
+      examples:
+        - target: I've still got a little money, so we can take a taxi.
+          translation:
+            vi: Mình vẫn còn một ít tiền nên mình có thể đi taxi.
+        - target: There was little time to see the museum.
+          translation:
+            vi: Có rất ít thời gian để xem bảo tàng.
+      pronunciation_note:
+        vi: Âm /t/ trong little ở giọng Mỹ thường đọc nhẹ gần như /d/ - "li-đồ".
+      confusion:
+        vi: Money, time, information, water là danh từ không đếm được trong tiếng Anh dù tiếng Việt vẫn nói "mấy đồng". Vì vậy dùng a little money, không dùng a few money.
+
+  - key: en:item:a-lot-of
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: a lot of / lots of
+      ipa: UK /ə ˈlɒt əv/ · US /ə ˈlɑːt̬ əv/
+      pos: lượng từ
+    back:
+      meaning:
+        vi: nhiều - dùng được với cả danh từ đếm được (a lot of people) và không đếm được (a lot of luggage), hay dùng trong câu khẳng định.
+      examples:
+        - target: There were a lot of people at the night market.
+          translation:
+            vi: Ở chợ đêm có rất đông người.
+        - target: We spent a lot of money on souvenirs.
+          translation:
+            vi: Bọn mình tiêu nhiều tiền vào quà lưu niệm.
+      pronunciation_note:
+        vi: Nói nhanh a lot of thường nối thành /əˈlɒtəv/ - "ơ-lót-tơv".
+      confusion:
+        vi: "Không bỏ of: nói a lot of people, không nói a lot people. Trong câu phủ định và câu hỏi, much/many tự nhiên hơn (not much time, How many days?)."
+
+  - key: en:item:plenty-of
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: plenty of
+      ipa: /ˈplenti əv/
+      pos: lượng từ
+    back:
+      meaning:
+        vi: thừa, dư dả, nhiều hơn mức cần - dùng với danh từ đếm được số nhiều và không đếm được.
+      examples:
+        - target: Don't worry, we've got plenty of time before the train leaves.
+          translation:
+            vi: Đừng lo, mình còn dư thời gian trước khi tàu chạy.
+        - target: There are plenty of cheap hotels near the beach.
+          translation:
+            vi: Gần bãi biển có rất nhiều khách sạn rẻ.
+      confusion:
+        vi: Plenty of mang ý "đủ, thậm chí thừa" nên nghe yên tâm hơn a lot of. Không dùng plenty of trong câu hỏi hay câu phủ định thông thường.
+
+  - key: en:item:hardly-any
+    type: phrase
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: hardly any
+      ipa: UK /ˈhɑːdli ˈeni/ · US /ˈhɑːrdli ˈeni/
+      pos: lượng từ
+    back:
+      meaning:
+        vi: hầu như không có - nghĩa phủ định, đi với cả danh từ đếm được và không đếm được.
+      examples:
+        - target: There were hardly any tourists in the old town.
+          translation:
+            vi: Phố cổ hầu như chẳng có khách du lịch nào.
+        - target: I've got hardly any money left.
+          translation:
+            vi: Mình gần như hết sạch tiền rồi.
+      confusion:
+        vi: "Hardly any đã mang nghĩa phủ định nên không thêm not: không nói There weren't hardly any. Hardly không có nghĩa là \"chăm chỉ\" (hard)."
+
+  - key: en:item:none-of
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: none of + the/my/these… + danh từ
+      ipa: /nʌn əv/
+      pos: lượng từ
+    back:
+      meaning:
+        vi: không ai / không cái nào trong số… - luôn có the, my, these… hoặc đại từ (none of them, none of us) sau of.
+      examples:
+        - target: None of the hotels had a free room.
+          translation:
+            vi: Không khách sạn nào còn phòng trống.
+        - target: None of us could speak Japanese.
+          translation:
+            vi: Không ai trong bọn mình nói được tiếng Nhật.
+      pronunciation_note:
+        vi: None đọc /nʌn/ giống nun, không đọc như "nôn".
+      confusion:
+        vi: "None of đã phủ định nên động từ để thể khẳng định: None of us could…, không nói None of us couldn't. Không nói none of hotels - phải có the."
+
+  - key: en:item:souvenir
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: souvenir
+      ipa: UK /ˌsuːvəˈnɪə/ · US /ˌsuːvəˈnɪr/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quà lưu niệm, đồ kỷ niệm mua khi đi du lịch
+      examples:
+        - target: I bought a few souvenirs for my colleagues.
+          translation:
+            vi: Mình mua vài món quà lưu niệm cho đồng nghiệp.
+      pronunciation_note:
+        vi: Trọng âm rơi vào âm cuối - sou-ve-NIR.
+      confusion:
+        vi: Souvenir là đồ mua về làm kỷ niệm; gift/present là quà tặng nói chung.
+
+  - key: en:item:budget
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: budget
+      ipa: /ˈbʌdʒɪt/
+      pos: danh từ / tính từ
+    back:
+      meaning:
+        vi: ngân sách, số tiền dự định chi; budget hotel/airline = khách sạn/hãng bay giá rẻ
+      examples:
+        - target: Our budget for the trip is ten million dong.
+          translation:
+            vi: Ngân sách cho chuyến đi của bọn mình là mười triệu đồng.
+        - target: We stayed in a budget hotel near the station.
+          translation:
+            vi: Bọn mình ở một khách sạn bình dân gần ga.
+      pronunciation_note:
+        vi: Âm cuối /dʒɪt/ đọc nhẹ, trọng âm ở BUD.
+      confusion:
+        vi: "Nói on a budget (tiết kiệm, có giới hạn chi tiêu): travel on a budget."
+
+  - key: en:item:accommodation
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: accommodation
+      ipa: UK /əˌkɒməˈdeɪʃn/ · US /əˌkɑːməˈdeɪʃn/
+      pos: danh từ không đếm được (UK)
+    back:
+      meaning:
+        vi: chỗ ở (khách sạn, nhà nghỉ, homestay…) khi đi xa
+      examples:
+        - target: Accommodation in Da Lat is cheap in the rainy season.
+          translation:
+            vi: Chỗ ở ở Đà Lạt rẻ vào mùa mưa.
+      pronunciation_note:
+        vi: Viết hai c và hai m - a-cc-o-mm-odation; trọng âm ở DA.
+      confusion:
+        vi: Trong tiếng Anh Anh, accommodation không đếm được - không nói an accommodation hay accommodations; muốn đếm thì nói a place to stay.
+
+  - key: en:item:local
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: local
+      ipa: UK /ˈləʊkl/ · US /ˈloʊkl/
+      pos: tính từ / danh từ
+    back:
+      meaning:
+        vi: thuộc địa phương, của người bản địa; the locals = người dân địa phương
+      examples:
+        - target: Try the local food - it's delicious.
+          translation:
+            vi: Hãy thử đồ ăn địa phương - ngon lắm.
+        - target: A few locals showed us the way.
+          translation:
+            vi: Vài người dân địa phương đã chỉ đường cho bọn mình.
+      confusion:
+        vi: "\"Người địa phương\" là locals hoặc local people, không nói local persons."
+
+  - key: en:item:tourist
+    type: vocab
+    level: b1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: tourist
+      ipa: UK /ˈtʊərɪst, ˈtɔːrɪst/ · US /ˈtʊrɪst/
+      pos: danh từ
+    back:
+      meaning:
+        vi: khách du lịch
+      examples:
+        - target: The beach is full of tourists in July.
+          translation:
+            vi: Tháng Bảy bãi biển chật kín khách du lịch.
+      confusion:
+        vi: Tourist là người đi du lịch; tour là chuyến tham quan; tourism là ngành du lịch.
+
+  # ---------------- Bài 2: Tính từ -ed / -ing, so/such… that ----------------
+  - key: en:item:ed-ing-adjectives
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: -ed adjectives / -ing adjectives
+      pos: tính từ
+    back:
+      meaning:
+        vi: "Tính từ đuôi -ed tả cảm giác của người (I'm bored = mình thấy chán); tính từ đuôi -ing tả thứ gây ra cảm giác đó (The film is boring = bộ phim chán)."
+      examples:
+        - target: The tour was boring, so we were bored.
+          translation:
+            vi: Chuyến tham quan chán quá nên bọn mình thấy chán.
+        - target: I'm interested in local history because it's really interesting.
+          translation:
+            vi: Mình quan tâm tới lịch sử địa phương vì nó thật sự thú vị.
+      pronunciation_note:
+        vi: Đuôi -ed sau âm /t/, /d/ đọc /ɪd/ (interested, exhausted); sau âm khác đọc /d/ hoặc /t/ (bored /d/, embarrassed /t/).
+      confusion:
+        vi: "Tiếng Việt chỉ có một từ \"chán\", nên người Việt hay nói I am boring khi muốn nói \"tôi thấy chán\". I am boring nghĩa là \"tôi là người nhạt nhẽo\"."
+
+  - key: en:item:bored
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: bored
+      ipa: UK /bɔːd/ · US /bɔːrd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: (người) thấy chán
+      examples:
+        - target: The children got bored on the long bus journey.
+          translation:
+            vi: Bọn trẻ thấy chán trên chuyến xe buýt dài.
+      pronunciation_note:
+        vi: Bored đọc một âm tiết /bɔːd/, không đọc "bo-rét".
+      confusion:
+        vi: Bored tả cảm giác của người; boring tả thứ gây chán. Nói bored with something (chán cái gì).
+
+  - key: en:item:interested
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: interested (in)
+      ipa: /ˈɪntrəstɪd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: (người) quan tâm, thích thú với cái gì
+      examples:
+        - target: Are you interested in traditional music?
+          translation:
+            vi: Bạn có thích nhạc truyền thống không?
+      pronunciation_note:
+        vi: Đọc ba âm tiết IN-tres-tid, trọng âm ở âm đầu; không đọc "in-tơ-rét-tít".
+      confusion:
+        vi: Luôn đi với in - interested in history, không nói interested about/on.
+
+  - key: en:item:interesting
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: interesting
+      ipa: /ˈɪntrəstɪŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: thú vị, hấp dẫn (tả sự vật, sự việc, người)
+      examples:
+        - target: The museum was more interesting than I expected.
+          translation:
+            vi: Bảo tàng thú vị hơn mình nghĩ.
+      pronunciation_note:
+        vi: Trọng âm ở âm đầu - IN-tres-ting.
+      confusion:
+        vi: I'm interesting nghĩa là "tôi là người thú vị"; muốn nói "tôi thấy hứng thú" thì dùng I'm interested.
+
+  - key: en:item:exhausted
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: exhausted
+      ipa: UK /ɪɡˈzɔːstɪd/ · US /ɪɡˈzɑːstɪd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: (người) kiệt sức, mệt rã rời
+      examples:
+        - target: After the twelve-hour flight, we were exhausted.
+          translation:
+            vi: Sau chuyến bay mười hai tiếng, bọn mình kiệt sức.
+      pronunciation_note:
+        vi: Chữ h không đọc - /ɪɡˈzɔːstɪd/ "ig-ZOS-tid".
+      confusion:
+        vi: Exhausted đã là "rất mệt", nên không nói very exhausted; dùng really exhausted hoặc completely exhausted.
+
+  - key: en:item:exhausting
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: exhausting
+      ipa: UK /ɪɡˈzɔːstɪŋ/ · US /ɪɡˈzɑːstɪŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: (việc, chuyến đi) làm người ta kiệt sức
+      examples:
+        - target: Climbing Fansipan was exhausting but amazing.
+          translation:
+            vi: Leo Fansipan mệt rã rời nhưng tuyệt vời.
+      confusion:
+        vi: Chuyến đi là exhausting (gây mệt), còn bạn là exhausted (cảm thấy mệt).
+
+  - key: en:item:disappointed
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: disappointed / disappointing
+      ipa: /ˌdɪsəˈpɔɪntɪd/ · /ˌdɪsəˈpɔɪntɪŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: disappointed = (người) thất vọng; disappointing = (việc) gây thất vọng
+      examples:
+        - target: We were disappointed with the hotel room.
+          translation:
+            vi: Bọn mình thất vọng về phòng khách sạn.
+        - target: The food was disappointing.
+          translation:
+            vi: Đồ ăn làm mình thất vọng.
+      pronunciation_note:
+        vi: Trọng âm ở âm thứ ba - dis-a-POINT-ed.
+      confusion:
+        vi: Nói disappointed with/about something, không nói disappointed of.
+
+  - key: en:item:embarrassed
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: embarrassed / embarrassing
+      ipa: /ɪmˈbærəst/ · /ɪmˈbærəsɪŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: embarrassed = (người) ngượng, xấu hổ; embarrassing = (tình huống) gây ngượng
+      examples:
+        - target: I felt embarrassed when I forgot to take off my shoes.
+          translation:
+            vi: Mình thấy ngượng khi quên cởi giày.
+      pronunciation_note:
+        vi: Viết hai r, hai s; đuôi -ed đọc /t/ - em-BA-rrast.
+      confusion:
+        vi: Embarrassed là ngượng ngùng, không phải "xấu hổ vì làm điều sai trái" (ashamed).
+
+  - key: en:item:so-adjective-that
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: so + adjective/adverb + that…
+      ipa: UK /səʊ … ðət/ · US /soʊ … ðət/
+      pos: cấu trúc câu
+    back:
+      meaning:
+        vi: "quá… đến nỗi… - so đứng trước tính từ hoặc trạng từ KHÔNG có danh từ đi sau: so tired that…, so quickly that…"
+      examples:
+        - target: The hotel was so noisy that we couldn't sleep.
+          translation:
+            vi: Khách sạn ồn đến nỗi bọn mình không ngủ được.
+        - target: I was so exhausted that I fell asleep on the bus.
+          translation:
+            vi: Mình mệt đến mức ngủ gục trên xe buýt.
+      confusion:
+        vi: "So không đứng trước danh từ: không nói so beautiful day. Nếu có danh từ thì dùng such a beautiful day; that có thể bỏ trong văn nói."
+
+  - key: en:item:such-a-noun-that
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: such (a/an) + adjective + noun + that…
+      ipa: /sʌtʃ ə … ðət/
+      pos: cấu trúc câu
+    back:
+      meaning:
+        vi: "quá… đến nỗi… - such đi với cụm danh từ: such a beautiful day, such kind people, such good weather."
+      examples:
+        - target: It was such a beautiful day that we walked to the beach.
+          translation:
+            vi: Trời đẹp đến nỗi bọn mình đi bộ ra biển.
+        - target: They were such friendly people that we felt at home.
+          translation:
+            vi: Họ thân thiện đến mức bọn mình thấy như ở nhà.
+      confusion:
+        vi: "Danh từ số ít đếm được cần a/an sau such: such a long trip (không nói such long trip hay a such long trip). Danh từ số nhiều và không đếm được thì không có a: such good weather."
+
+  # ---------------- Bài 3: Câu hỏi gián tiếp, câu hỏi đuôi, phong tục ----------------
+  - key: en:item:indirect-questions
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: Could you tell me / Do you know + wh-word + S + V?
+      pos: câu hỏi gián tiếp
+    back:
+      meaning:
+        vi: "Câu hỏi gián tiếp lịch sự hơn: phần sau từ để hỏi theo trật tự câu kể (chủ ngữ trước động từ), không dùng do/does/did. Could you tell me where the station is?"
+      examples:
+        - target: Could you tell me where the station is?
+          translation:
+            vi: Anh/chị có thể cho tôi biết nhà ga ở đâu không?
+        - target: Do you know what time the museum opens?
+          translation:
+            vi: Bạn có biết mấy giờ bảo tàng mở cửa không?
+      pronunciation_note:
+        vi: Lên giọng ở cuối câu như câu hỏi Yes/No, vì câu hỏi thật là Could you…? / Do you know…?
+      confusion:
+        vi: "Người Việt hay giữ trật tự câu hỏi thường: Could you tell me where is the station? Sai - phải là where the station is. Tương tự what time the museum opens, không phải what time does the museum open."
+
+  - key: en:item:indirect-questions-if
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: Do you know / Could you tell me + if (whether) + S + V?
+      pos: câu hỏi gián tiếp
+    back:
+      meaning:
+        vi: "Với câu hỏi Yes/No, dùng if hoặc whether rồi trật tự câu kể: Do you know if the bus stops here?"
+      examples:
+        - target: Do you know if this bus goes to the airport?
+          translation:
+            vi: Bạn có biết xe buýt này có đi sân bay không?
+        - target: Could you tell me whether breakfast is included?
+          translation:
+            vi: Anh/chị cho tôi hỏi bữa sáng có được tính trong giá không?
+      confusion:
+        vi: "Không bỏ if: không nói Do you know does this bus go…? Cũng không giữ does - đúng là Do you know if this bus goes…?"
+
+  - key: en:item:question-tags
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: "…, isn't it? / …, don't you? / …, didn't they? (question tags)"
+      pos: câu hỏi đuôi
+    back:
+      meaning:
+        vi: "Câu hỏi đuôi để xác nhận hoặc bắt chuyện: lặp lại trợ động từ của câu chính (be, do, can, have…) + đại từ chủ ngữ; câu khẳng định đi với đuôi phủ định và ngược lại."
+      examples:
+        - target: It's hot today, isn't it?
+          translation:
+            vi: Hôm nay nóng nhỉ?
+        - target: You take off your shoes inside, don't you?
+          translation:
+            vi: Ở trong nhà mình cởi giày ra, phải không?
+        - target: They didn't leave a tip, did they?
+          translation:
+            vi: Họ không để lại tiền boa, đúng không?
+      pronunciation_note:
+        vi: Xuống giọng ở đuôi khi bạn gần như chắc chắn và chỉ muốn người kia đồng ý; lên giọng khi bạn thật sự không chắc.
+      confusion:
+        vi: "Tiếng Việt chỉ có một đuôi \"nhỉ / phải không\" cho mọi câu, nên người Việt hay dùng isn't it cho tất cả. Phải đổi theo câu chính: You like it, don't you? / She can swim, can't she? / They went, didn't they?"
+
+  - key: en:item:custom
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: custom
+      ipa: /ˈkʌstəm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phong tục, tập quán (cách làm quen thuộc của một cộng đồng)
+      examples:
+        - target: In Vietnam, it's a custom to give lucky money at Tet.
+          translation:
+            vi: Ở Việt Nam, lì xì vào dịp Tết là một phong tục.
+      confusion:
+        vi: Custom (phong tục) khác customs (hải quan ở sân bay) và customer (khách hàng).
+
+  - key: en:item:tradition
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: tradition / traditional
+      ipa: /trəˈdɪʃn/ · /trəˈdɪʃənl/
+      pos: danh từ / tính từ
+    back:
+      meaning:
+        vi: truyền thống (việc được truyền qua nhiều thế hệ) / thuộc về truyền thống
+      examples:
+        - target: Making banh chung together is a family tradition.
+          translation:
+            vi: Cùng nhau gói bánh chưng là truyền thống của gia đình.
+        - target: She wore a traditional ao dai to the wedding.
+          translation:
+            vi: Cô ấy mặc áo dài truyền thống đi đám cưới.
+      pronunciation_note:
+        vi: Trọng âm ở âm thứ hai - tra-DI-tion.
+      confusion:
+        vi: "Tradition là danh từ, traditional là tính từ: traditional food, không nói tradition food."
+
+  - key: en:item:polite
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: polite / impolite
+      ipa: /pəˈlaɪt/ · /ˌɪmpəˈlaɪt/
+      pos: tính từ
+    back:
+      meaning:
+        vi: lịch sự / bất lịch sự
+      examples:
+        - target: In Japan, it's polite to bow when you meet someone.
+          translation:
+            vi: Ở Nhật, cúi chào khi gặp ai đó là lịch sự.
+      confusion:
+        vi: "Mẫu câu hay dùng: It's polite/rude to + động từ nguyên mẫu. Không nói It's polite when bow."
+
+  - key: en:item:rude
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: rude
+      ipa: /ruːd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: thô lỗ, vô lễ
+      examples:
+        - target: It's rude to point at people with your finger.
+          translation:
+            vi: Chỉ tay vào người khác là bất lịch sự.
+      confusion:
+        vi: Rude mạnh hơn impolite. Nói rude to someone (thô lỗ với ai), không nói rude with.
+
+  - key: en:item:tip
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: tip / leave a tip
+      ipa: /tɪp/
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: tiền boa (tip) / cho tiền boa
+      examples:
+        - target: In the US, people usually leave a 15–20% tip in restaurants.
+          translation:
+            vi: Ở Mỹ, người ta thường để lại 15-20% tiền boa ở nhà hàng.
+        - target: Do you tip taxi drivers here?
+          translation:
+            vi: Ở đây có boa cho tài xế taxi không?
+      confusion:
+        vi: "Tip còn có nghĩa là \"mẹo\" (travel tips). Nói leave/give a tip, không nói pay a tip."
+
+  - key: en:item:bow
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: bow
+      ipa: /baʊ/
+      pos: động từ / danh từ
+    back:
+      meaning:
+        vi: cúi chào, cúi đầu
+      examples:
+        - target: People in Korea often bow to older people.
+          translation:
+            vi: Ở Hàn Quốc người ta thường cúi chào người lớn tuổi.
+      pronunciation_note:
+        vi: Bow (cúi chào) đọc /baʊ/ vần với now; bow /bəʊ/ (cái nơ, cây cung) là từ khác.
+      confusion:
+        vi: Nói bow to someone (cúi chào ai).
+
+  - key: en:item:shake-hands
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: shake hands (with someone)
+      ipa: /ʃeɪk hændz/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: bắt tay (ai)
+      examples:
+        - target: In business meetings, people usually shake hands.
+          translation:
+            vi: Trong các cuộc họp công việc, mọi người thường bắt tay.
+      confusion:
+        vi: Hands luôn ở số nhiều (hai bàn tay gặp nhau) - shake hands with him, không nói shake hand.
+
+  - key: en:item:take-off-your-shoes
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: take off your shoes / take your shoes off
+      ipa: UK /teɪk ɒf jɔː ʃuːz/ · US /teɪk ɔːf jʊr ʃuːz/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: cởi giày, bỏ giày ra
+      examples:
+        - target: Please take off your shoes before you go into the temple.
+          translation:
+            vi: Vui lòng cởi giày trước khi vào chùa.
+      confusion:
+        vi: Với đại từ phải đặt giữa - take them off, không nói take off them. Đừng nhầm với take off (máy bay cất cánh).
+
+  # ---------------- Bài 4: Phàn nàn và yêu cầu lịch sự ----------------
+  - key: en:item:complain-about
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: complain (to someone) about something
+      ipa: /kəmˈpleɪn/
+      pos: động từ
+    back:
+      meaning:
+        vi: phàn nàn, khiếu nại (với ai) về điều gì
+      examples:
+        - target: We complained to the manager about the noise.
+          translation:
+            vi: Bọn mình đã phàn nàn với quản lý về tiếng ồn.
+      confusion:
+        vi: Dùng to cho người, about cho sự việc. Không nói complain with someone.
+
+  - key: en:item:complaint
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: complaint / make a complaint
+      ipa: /kəmˈpleɪnt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời phàn nàn, đơn khiếu nại
+      examples:
+        - target: I'd like to make a complaint about my room.
+          translation:
+            vi: Tôi muốn khiếu nại về phòng của mình.
+      pronunciation_note:
+        vi: Danh từ có âm /t/ ở cuối - complaint; động từ là complain không có t.
+      confusion:
+        vi: Make a complaint, không nói do a complaint.
+
+  - key: en:item:im-afraid-theres-a-problem
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: I'm afraid there's a problem with…
+      ipa: UK /aɪm əˈfreɪd ðeəz ə ˈprɒbləm wɪð/ · US /aɪm əˈfreɪd ðerz ə ˈprɑːbləm wɪð/
+      pos: cụm câu
+    back:
+      meaning:
+        vi: Tôi e là … có vấn đề - cách mở đầu lời phàn nàn lịch sự, nhẹ nhàng.
+      examples:
+        - target: I'm afraid there's a problem with the air conditioning in my room.
+          translation:
+            vi: Tôi e là máy lạnh trong phòng tôi có vấn đề.
+      confusion:
+        vi: I'm afraid ở đây không có nghĩa là "sợ" mà là "rất tiếc phải nói rằng". Dùng with + thứ bị hỏng, không nói a problem of.
+
+  - key: en:item:i-was-wondering-if
+    type: phrase
+    level: b1
+    difficulty: 4
+    skill_tags: [speaking]
+    front:
+      text: I was wondering if you could…
+      ipa: UK /aɪ wəz ˈwʌndərɪŋ ɪf juː kʊd/ · US /aɪ wəz ˈwʌndɚɪŋ ɪf juː kʊd/
+      pos: cụm câu
+    back:
+      meaning:
+        vi: Không biết anh/chị có thể… được không - cách nhờ rất lịch sự, mềm hơn Could you…?
+      examples:
+        - target: I was wondering if you could change our room.
+          translation:
+            vi: Không biết anh/chị có thể đổi phòng cho chúng tôi được không.
+        - target: I was wondering if I could check out a bit later.
+          translation:
+            vi: Không biết tôi có thể trả phòng muộn một chút được không.
+      confusion:
+        vi: "Dù dùng was nhưng nghĩa là hiện tại - quá khứ làm câu nhẹ nhàng hơn. Sau if là trật tự câu kể và could + động từ nguyên mẫu: if you could change, không nói if could you change."
+
+  - key: en:item:refund
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: refund / I'd like a refund
+      ipa: (n) /ˈriːfʌnd/ · (v) /rɪˈfʌnd/
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: tiền hoàn lại / hoàn tiền
+      examples:
+        - target: The tour was cancelled, so I'd like a refund, please.
+          translation:
+            vi: Tour bị huỷ nên tôi muốn được hoàn tiền.
+        - target: They refunded the money the next day.
+          translation:
+            vi: Họ hoàn tiền vào ngày hôm sau.
+      pronunciation_note:
+        vi: Danh từ nhấn âm đầu RE-fund, động từ nhấn âm sau re-FUND.
+      confusion:
+        vi: "Nói get a refund / I'd like a refund, không nói I want to refund (nghĩa là mình sẽ trả lại tiền cho người khác)."
+
+  - key: en:item:doesnt-work
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: doesn't work / isn't working
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: (máy móc) bị hỏng, không chạy
+      examples:
+        - target: The shower doesn't work.
+          translation:
+            vi: Vòi sen bị hỏng.
+        - target: The Wi-Fi isn't working in my room.
+          translation:
+            vi: Wi-Fi trong phòng tôi không vào được.
+      confusion:
+        vi: Người Việt hay nói The shower is broken cho mọi thứ; với máy móc, doesn't work/isn't working tự nhiên hơn. Không nói The shower not work.
+
+  - key: en:item:noisy
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: noisy
+      ipa: /ˈnɔɪzi/
+      pos: tính từ
+    back:
+      meaning:
+        vi: ồn ào
+      examples:
+        - target: Our room was next to the lift and very noisy.
+          translation:
+            vi: Phòng bọn mình ở cạnh thang máy nên rất ồn.
+      confusion:
+        vi: Noisy là tính từ, noise là danh từ - The room is noisy / There's a lot of noise.
+
+  - key: en:item:towel
+    type: vocab
+    level: b1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: towel
+      ipa: /ˈtaʊəl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: khăn tắm, khăn lau
+      examples:
+        - target: Could we have some clean towels, please?
+          translation:
+            vi: Cho chúng tôi xin vài chiếc khăn sạch được không?
+      pronunciation_note:
+        vi: Đọc hai âm tiết TAU-ừl, không đọc "tô-uen".
+
+  - key: en:item:air-conditioning
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: air conditioning / air conditioner
+      ipa: UK /ˈeə kənˌdɪʃənɪŋ/ · US /ˈer kənˌdɪʃənɪŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: hệ thống điều hoà / máy điều hoà
+      examples:
+        - target: The air conditioning isn't working, and the room is too hot.
+          translation:
+            vi: Điều hoà không chạy, phòng nóng quá.
+      confusion:
+        vi: "Người Việt hay nói tắt \"máy lạnh\" là air con; trong tiếng Anh nói air conditioning hoặc AC."
+
+  - key: en:item:charge-verb
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: charge (someone) for something
+      ipa: UK /tʃɑːdʒ/ · US /tʃɑːrdʒ/
+      pos: động từ
+    back:
+      meaning:
+        vi: tính tiền (ai) cho cái gì
+      examples:
+        - target: I think you've charged me twice for breakfast.
+          translation:
+            vi: Tôi nghĩ anh/chị đã tính tiền bữa sáng của tôi hai lần.
+      confusion:
+        vi: Charge là "tính tiền", không phải "trả tiền" (pay). Charge còn có nghĩa sạc điện thoại.
+
+  # ---------------- Bài 5: Ôn tập ----------------
+  - key: en:item:culture-shock
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: culture shock
+      ipa: UK /ˈkʌltʃə ʃɒk/ · US /ˈkʌltʃɚ ʃɑːk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sốc văn hoá - cảm giác bối rối khi sống ở một nền văn hoá khác
+      examples:
+        - target: I had a bit of culture shock when I first moved to Japan.
+          translation:
+            vi: Lúc mới sang Nhật mình bị sốc văn hoá một chút.
+      confusion:
+        vi: Không nói culture shocked hay shock culture; nói experience/have culture shock.
+
+  - key: en:item:unacceptable
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: unacceptable
+      ipa: /ˌʌnəkˈseptəbl/
+      pos: tính từ
+    back:
+      meaning:
+        vi: không thể chấp nhận được (dùng khi phàn nàn trang trọng)
+      examples:
+        - target: Waiting two hours for our room was unacceptable.
+          translation:
+            vi: Chờ hai tiếng mới có phòng là không thể chấp nhận được.
+      pronunciation_note:
+        vi: Trọng âm ở SEP - un-ac-CEP-ta-ble.
+      confusion:
+        vi: Unacceptable khá mạnh; trong lời nói trực tiếp, I'm afraid there's a problem… mềm mỏng hơn.

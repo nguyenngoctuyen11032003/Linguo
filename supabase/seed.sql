@@ -7113,6 +7113,827 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
+      "content_hash": "5d30caacdf44d7965d6fa41c22bb4588e996eceaf7a6430b69ed6e7e18d80ff5",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "4b6e6a2b-c2ae-5de7-91cd-7d69072d00a0",
+      "is_demo": true,
+      "item_id": "78decf6c-9e1b-521f-b10c-7188f0ab3f47",
+      "key": "en:exercise:describe-a-photo-fill-cafe",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "In"
+            ],
+            "b2": [
+              "chatting"
+            ]
+          }
+        },
+        "display_answer": "In the picture, two friends are chatting in a café.",
+        "explanation": {
+          "vi": "Bên trong bức ảnh dùng in the picture. Sau are là V-ing; chat gấp đôi t thành chatting."
+        },
+        "known_wrong": [
+          {
+            "answer": "On",
+            "error_tag": "preposition_picture",
+            "feedback_vi": "Người, vật bên trong ảnh dùng in the picture."
+          },
+          {
+            "answer": "chating",
+            "error_tag": "ing_spelling",
+            "feedback_vi": "Chat kết thúc bằng một nguyên âm ngắn + t, nên gấp đôi t - chatting."
+          },
+          {
+            "answer": "chat",
+            "error_tag": "missing_ing",
+            "feedback_vi": "Sau are cần V-ing - chatting."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "order_index": 2,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          },
+          {
+            "id": "b2",
+            "width_hint": 9
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa: Trong ảnh, hai người bạn đang trò chuyện trong quán cà phê.",
+          "Gợi ý: giới từ \"trong\" + bức ảnh; chat thêm -ing nhớ gấp đôi t."
+        ],
+        "template": "{{b1}} the picture, two friends are {{b2}} (chat) in a café."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "bd0c646d8a8898100f287cb3dc98ae10b97bb7434bca8b4d55aaeb5256a6efa9",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "212240b9-3bf3-5501-b937-c2324a8de530",
+      "is_demo": true,
+      "item_id": "cf1a46a6-da00-57cf-8c8b-1df9e65f696b",
+      "key": "en:exercise:describe-a-photo-fill-girl",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "is smiling",
+              "'s smiling"
+            ],
+            "b2": [
+              "looking",
+              "is looking",
+              "'s looking"
+            ]
+          }
+        },
+        "display_answer": "In the middle of the photo, a girl is smiling and looking at the camera.",
+        "explanation": {
+          "vi": "Tả ảnh dùng hiện tại tiếp diễn - is smiling (bỏ e). Vế sau có thể lặp is hoặc chỉ dùng looking vì đã có and."
+        },
+        "known_wrong": [
+          {
+            "answer": "smiles",
+            "error_tag": "simple_vs_continuous",
+            "feedback_vi": "Tả ảnh dùng hiện tại tiếp diễn - is smiling."
+          },
+          {
+            "answer": "is smileing",
+            "error_tag": "ing_spelling",
+            "feedback_vi": "Smile tận cùng bằng e câm, bỏ e rồi thêm -ing - smiling."
+          },
+          {
+            "answer": "smiling",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu is trước smiling."
+          },
+          {
+            "answer": "looks",
+            "error_tag": "simple_vs_continuous",
+            "feedback_vi": "Tả việc đang diễn ra trong ảnh dùng (is) looking."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 12
+          },
+          {
+            "id": "b2",
+            "width_hint": 12
+          }
+        ],
+        "template": "In the middle of the photo, a girl {{b1}} (smile) and {{b2}} (look) at the camera."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "6024290bc10a9b2c0a4ac86e69420d15b72844c879d8aeb632834a5b826d0877",
+      "difficulty": 1,
+      "exercise_type": "listen",
+      "id": "c045bb18-0161-5544-8317-176f652bc2a7",
+      "is_demo": true,
+      "item_id": "49c72f52-668b-5ebe-951e-bc33a7a9d024",
+      "key": "en:exercise:describe-a-photo-listen-baby",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "u4k"
+        },
+        "display_answer": "Bên trái, một người phụ nữ đang bế em bé.",
+        "explanation": {
+          "vi": "On the left là bên trái; holding a baby là đang bế em bé (nhìn là looking at)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "On the left, a woman is holding a baby.",
+        "options": [
+          {
+            "id": "u4k",
+            "lang": "vi",
+            "text": "Bên trái, một người phụ nữ đang bế em bé."
+          },
+          {
+            "id": "q1x",
+            "lang": "vi",
+            "text": "Bên trái, một người phụ nữ đang nhìn em bé."
+          },
+          {
+            "id": "f7d",
+            "lang": "vi",
+            "text": "Bên phải, một người phụ nữ đang bế em bé."
+          },
+          {
+            "id": "s6c",
+            "lang": "vi",
+            "text": "Bên trái, một em bé đang ngủ."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "92a6af9202644dec9f38313b7aada9df7722df37da27edc72532bdc0c34b1b8e",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "a76d8861-263a-557a-87a6-a3797b02bc4d",
+      "is_demo": true,
+      "item_id": "58154675-7f54-53a4-8e66-14f7fac9db30",
+      "key": "en:exercise:describe-a-photo-mcq-background",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "b8m"
+        },
+        "display_answer": "In the background, there are some mountains.",
+        "explanation": {
+          "vi": "Phía sau là in the background (foreground là phía trước). Background đi với in, và \"có\" là there are, không phải has."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "e2s",
+            "lang": "en",
+            "text": "In the foreground, there are some mountains."
+          },
+          {
+            "id": "b8m",
+            "lang": "en",
+            "text": "In the background, there are some mountains."
+          },
+          {
+            "id": "i9w",
+            "lang": "en",
+            "text": "In the background has some mountains."
+          },
+          {
+            "id": "o5t",
+            "lang": "en",
+            "text": "On the background, there are some mountains."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào nói đúng \"Phía sau bức ảnh có vài ngọn núi\"?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "36cc53e10494feb2075a2a8cb02a41c31674eba958b9949ab7510171da5c0dc6",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "3e4295c8-8fe0-5b96-b47c-a9624233929b",
+      "is_demo": true,
+      "item_id": "17755c61-876c-58a4-bcff-e66cab11ec8d",
+      "key": "en:exercise:describe-a-photo-mcq-exam",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c4j"
+        },
+        "display_answer": "In this picture, I can see a family. They're having a picnic in a park.",
+        "explanation": {
+          "vi": "Mở đầu chuẩn là In this picture, I can see… rồi tả hành động bằng They're having. Các câu khác dùng has thay there is, sai giới từ on, hoặc ghép hai động từ be."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "z5r",
+            "lang": "en",
+            "text": "This picture is a family is having a picnic."
+          },
+          {
+            "id": "v1o",
+            "lang": "en",
+            "text": "In this picture has a family. They have a picnic now."
+          },
+          {
+            "id": "c4j",
+            "lang": "en",
+            "text": "In this picture, I can see a family. They're having a picnic in a park."
+          },
+          {
+            "id": "x8h",
+            "lang": "en",
+            "text": "On this picture, a family are have a picnic."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Trong bài thi nói, giám khảo đưa ảnh một gia đình đang dã ngoại và nói \"Describe the photo.\" Câu mở đầu nào tốt nhất?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "aa67f583cfb6b3b025b7283ff1ff3a4d74e19894d4459f66445df5fa5d139039",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "d3f30d88-ed74-5c9a-96ee-8cc9ea0da547",
+      "is_demo": true,
+      "item_id": "2f944599-4d52-5529-8ca0-fd036e4086bc",
+      "key": "en:exercise:describe-a-photo-mcq-top",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "w3a"
+        },
+        "display_answer": "At",
+        "explanation": {
+          "vi": "Phía trên / phía dưới ảnh là at the top / at the bottom. On dùng cho on the left / right; under và behind không hợp nghĩa ở đây."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "y2p",
+            "lang": "en",
+            "text": "Under"
+          },
+          {
+            "id": "w3a",
+            "lang": "en",
+            "text": "At"
+          },
+          {
+            "id": "r8n",
+            "lang": "en",
+            "text": "On"
+          },
+          {
+            "id": "l6z",
+            "lang": "en",
+            "text": "Behind"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn từ đúng: \"___ the top of the picture, you can see the sky.\"",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "25c9ff6da67b9e0656248a68bade4f961fbe279948c47e0f5c11d34e13446bf1",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "3cbcd862-9901-5527-94de-67dcd9daf80a",
+      "is_demo": true,
+      "item_id": "63c13bbe-2117-56e1-9324-ce9545d6ae5c",
+      "key": "en:exercise:describe-a-photo-order-bench",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "bn-theres",
+              "bn-a",
+              "bn-man",
+              "bn-sitting",
+              "bn-on",
+              "bn-the",
+              "bn-bench"
+            ]
+          ]
+        },
+        "display_answer": "There's a man sitting on the bench.",
+        "explanation": {
+          "vi": "There's + người + V-ing. Đã có There's (= There is) thì không thêm is trước sitting."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "order_index": 3,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Có một người đàn ông đang ngồi trên ghế dài.\"",
+        "tokens": [
+          {
+            "id": "bn-sitting",
+            "text": "sitting"
+          },
+          {
+            "id": "bn-the",
+            "text": "the"
+          },
+          {
+            "id": "bn-a",
+            "text": "a"
+          },
+          {
+            "id": "bn-is",
+            "text": "is"
+          },
+          {
+            "id": "bn-bench",
+            "text": "bench"
+          },
+          {
+            "id": "bn-theres",
+            "text": "There's"
+          },
+          {
+            "id": "bn-on",
+            "text": "on"
+          },
+          {
+            "id": "bn-man",
+            "text": "man"
+          },
+          {
+            "id": "bn-sit",
+            "text": "sit"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "5a914bd30a81131e02ab3aae8a1282f21245267caa73aae4585b1424338585a7",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "901b6a14-4902-57be-a3d1-e2430f55b5e9",
+      "is_demo": true,
+      "item_id": "58154675-7f54-53a4-8e66-14f7fac9db30",
+      "key": "en:exercise:describe-a-photo-order-walking",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "wk-in",
+              "wk-the",
+              "wk-background",
+              "wk-some",
+              "wk-people",
+              "wk-are",
+              "wk-walking"
+            ],
+            [
+              "wk-some",
+              "wk-people",
+              "wk-are",
+              "wk-walking",
+              "wk-in",
+              "wk-the",
+              "wk-background"
+            ]
+          ]
+        },
+        "display_answer": "In the background, some people are walking.",
+        "explanation": {
+          "vi": "Phía sau là in the background (không dùng on). Người đang đi dạo dùng are + walking. Cụm vị trí đứng đầu hoặc cuối câu đều được."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "order_index": 10,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Phía sau, vài người đang đi dạo.\"",
+        "tokens": [
+          {
+            "id": "wk-background",
+            "text": "background"
+          },
+          {
+            "id": "wk-walking",
+            "text": "walking"
+          },
+          {
+            "id": "wk-in",
+            "text": "in"
+          },
+          {
+            "id": "wk-people",
+            "text": "people"
+          },
+          {
+            "id": "wk-on",
+            "text": "on"
+          },
+          {
+            "id": "wk-are",
+            "text": "are"
+          },
+          {
+            "id": "wk-the",
+            "text": "the"
+          },
+          {
+            "id": "wk-some",
+            "text": "some"
+          },
+          {
+            "id": "wk-walk",
+            "text": "walk"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "593c07d314c408a6be2fbf96dd5579453258e7ecdee1c72c8e6081acacdadfbb",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "96332cea-16bf-5c1c-8854-6b8de7d4972b",
+      "is_demo": true,
+      "item_id": "5ec1d738-c503-563f-9ce6-9679339d7ec6",
+      "key": "en:exercise:describe-a-photo-translate-balloon",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Phía trước, một cậu bé đang cầm quả bóng bay.",
+            "Phía trước, một cậu bé đang cầm một quả bóng bay.",
+            "Phía trước, một bé trai đang cầm quả bóng bay.",
+            "Phía trước, một cậu bé đang cầm bóng bay.",
+            "Ở phía trước, một cậu bé đang cầm quả bóng bay.",
+            "Ở phía trước, một bé trai đang cầm quả bóng bay.",
+            "Ở phía trước có một cậu bé đang cầm quả bóng bay.",
+            "Phía trước có một cậu bé đang cầm quả bóng bay.",
+            "Phía trước có một bé trai đang cầm bóng bay.",
+            "Ở tiền cảnh, một cậu bé đang cầm quả bóng bay.",
+            "Phía trước, một cậu bé nhỏ đang cầm quả bóng bay.",
+            "Một cậu bé đang cầm quả bóng bay ở phía trước."
+          ]
+        },
+        "display_answer": "Phía trước, một cậu bé đang cầm quả bóng bay.",
+        "explanation": {
+          "vi": "In the foreground là phía trước bức ảnh (gần người xem nhất). Is holding là \"đang cầm\"; a balloon là quả bóng bay."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "In the foreground, a little boy is holding a balloon."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "0f3dd6f9c95c62f5e492b2749cbbf476df6332d9e960b71833e3c9a95e949b04",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "33392270-4f8c-559e-8a48-a2189210c098",
+      "is_demo": true,
+      "item_id": "17755c61-876c-58a4-bcff-e66cab11ec8d",
+      "key": "en:exercise:describe-a-photo-translate-everyone",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Everyone in the photo is smiling.",
+            "Everyone in the picture is smiling.",
+            "Everybody in the photo is smiling.",
+            "Everybody in the picture is smiling.",
+            "Everyone in the photo is laughing.",
+            "Everyone in the picture is laughing.",
+            "All the people in the photo are smiling.",
+            "All the people in the picture are smiling."
+          ]
+        },
+        "display_answer": "Everyone in the photo is smiling.",
+        "explanation": {
+          "vi": "Everyone là số ít nên dùng is + smiling. Bên trong ảnh dùng in the photo / in the picture."
+        },
+        "known_wrong": [
+          {
+            "answer": "Everyone in the photo are smiling.",
+            "error_tag": "subject_verb_agreement",
+            "feedback_vi": "Everyone đi với động từ số ít - is smiling."
+          },
+          {
+            "answer": "Everyone on the photo is smiling.",
+            "error_tag": "preposition_picture",
+            "feedback_vi": "Người bên trong ảnh dùng in the photo."
+          },
+          {
+            "answer": "Everyone in the photo smiling.",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu is trước smiling."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Mọi người trong ảnh đều đang cười."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "ddc6f983639a27c471cfda33c08b596c7556ad31b95d2798e0b51caae1925cb5",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "40a6cc32-daf3-5e98-b66d-1a93bd44932a",
+      "is_demo": true,
+      "item_id": "4710f542-712b-5799-bd06-8dfb0356c0dc",
+      "key": "en:exercise:describe-a-photo-translate-right",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "On the right, two men are talking.",
+            "On the right, two men are chatting.",
+            "Two men are talking on the right.",
+            "Two men are chatting on the right.",
+            "On the right, there are two men talking.",
+            "On the right, there are two men chatting.",
+            "On the right of the picture, two men are talking."
+          ]
+        },
+        "display_answer": "On the right, two men are talking.",
+        "explanation": {
+          "vi": "Vị trí bên phải là on the right. Hai người đang nói chuyện dùng are + talking (hoặc chatting)."
+        },
+        "known_wrong": [
+          {
+            "answer": "In the right, two men are talking.",
+            "error_tag": "preposition_picture",
+            "feedback_vi": "Bên phải là on the right, không dùng in."
+          },
+          {
+            "answer": "On the right, two men talking.",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu are trước talking."
+          },
+          {
+            "answer": "On the right, two mans are talking.",
+            "error_tag": "irregular_plural",
+            "feedback_vi": "Số nhiều của man là men."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Bên phải, hai người đàn ông đang nói chuyện."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "e45da4c595c03e5b44f860e4181b3764ef5c5279055d1a81afab46c1e293f7ff",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "e6a8cb77-65b8-5d33-905a-42d15ccf6093",
+      "is_demo": true,
+      "item_id": "63c13bbe-2117-56e1-9324-ce9545d6ae5c",
+      "key": "en:exercise:describe-a-photo-translate-woman",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "In the middle, there's a woman sitting and reading a book.",
+            "In the middle, there is a woman sitting and reading a book.",
+            "In the middle, there's a woman sitting and reading.",
+            "In the middle, there is a woman sitting and reading.",
+            "In the middle, a woman is sitting and reading a book.",
+            "In the middle, a woman is sitting and reading.",
+            "There's a woman sitting and reading a book in the middle.",
+            "There is a woman sitting and reading a book in the middle.",
+            "In the middle, there's a woman reading a book.",
+            "In the middle, there is a woman reading a book.",
+            "In the middle, a woman is reading a book."
+          ]
+        },
+        "display_answer": "In the middle, there's a woman sitting and reading a book.",
+        "explanation": {
+          "vi": "\"Ở giữa có…\" là In the middle, there's a woman + V-ing. Cũng có thể nói thẳng A woman is sitting and reading."
+        },
+        "known_wrong": [
+          {
+            "answer": "In the middle, there is a woman is sitting and reading a book.",
+            "error_tag": "double_be",
+            "feedback_vi": "Đã có there is thì không thêm is trước sitting."
+          },
+          {
+            "answer": "In the middle has a woman sitting and reading a book.",
+            "error_tag": "has_for_there_is",
+            "feedback_vi": "\"Có\" là there is, không dùng has."
+          },
+          {
+            "answer": "In the middle, a woman sitting and reading a book.",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu is - a woman is sitting…"
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Ở giữa có một người phụ nữ đang ngồi đọc sách."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
       "content_hash": "a4ea2bca3292acb80ec90381a82000ee55dfcddd69fc7ae236216eea9e90b800",
       "difficulty": 1,
       "exercise_type": "fill_blank",
@@ -10372,6 +11193,807 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "bf717a93b0a73a81a0129033d03371ef67d4572bc1b1b8eb365df4b429b732e2",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "ad808fdb-3987-56e2-82ca-494a5754a289",
+      "is_demo": true,
+      "item_id": "5d491010-f059-5e50-825c-573ccc126c7e",
+      "key": "en:exercise:everyday-now-review-fill-look",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "looks"
+            ],
+            "b2": [
+              "look"
+            ]
+          }
+        },
+        "display_answer": "Everyone looks busy, but they look happy.",
+        "explanation": {
+          "vi": "Look + tính từ là \"trông có vẻ\". Everyone là số ít nên looks; they số nhiều nên look."
+        },
+        "known_wrong": [
+          {
+            "answer": "looks like",
+            "error_tag": "look_like_adjective",
+            "feedback_vi": "Trước tính từ chỉ dùng look, không có like - looks busy."
+          },
+          {
+            "answer": "look like",
+            "error_tag": "look_like_adjective",
+            "feedback_vi": "Trước tính từ chỉ dùng look, không có like - look happy."
+          },
+          {
+            "answer": "are look",
+            "error_tag": "be_with_verb",
+            "feedback_vi": "Look đã là động từ, không thêm are."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          },
+          {
+            "id": "b2",
+            "width_hint": 5
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa: Ai cũng trông bận rộn, nhưng họ có vẻ vui.",
+          "Gợi ý: look + tính từ; everyone là số ít, they là số nhiều."
+        ],
+        "template": "Everyone {{b1}} busy, but they {{b2}} happy."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "b7d494df613a8f556e39a0f6e73863250560f6416a6d10a0088839b6486a6b55",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "9fe59be4-a490-5051-82cd-17fce3efaa8f",
+      "is_demo": true,
+      "item_id": "4b420987-31a8-554e-9bcb-ee870d142a5e",
+      "key": "en:exercise:everyday-now-review-fill-then",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "for",
+              "with"
+            ],
+            "b2": [
+              "then"
+            ]
+          }
+        },
+        "display_answer": "Lan: Is ten o'clock OK for you? Tom: Perfect. See you then!",
+        "explanation": {
+          "vi": "Is… OK for you? hỏi giờ hẹn có tiện không. See you then = hẹn gặp vào lúc vừa chốt."
+        },
+        "known_wrong": [
+          {
+            "answer": "to",
+            "error_tag": "preposition",
+            "feedback_vi": "Hỏi giờ có tiện không là OK for you."
+          },
+          {
+            "answer": "after",
+            "error_tag": "see_you_then",
+            "feedback_vi": "See you then là \"hẹn gặp lúc đó\". After không đứng một mình ở đây."
+          },
+          {
+            "answer": "than",
+            "error_tag": "then_than",
+            "feedback_vi": "Than dùng để so sánh. Ở đây cần then (lúc đó)."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          },
+          {
+            "id": "b2",
+            "width_hint": 5
+          }
+        ],
+        "template": "Lan: Is ten o'clock OK {{b1}} you? Tom: Perfect. See you {{b2}}!"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "331f25ad6baa9ad24664801e1ca1be267e7bc68c64c25900a897b2683ab89f9c",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "02ef7622-08d7-59fd-b8e3-4d9243a8ea7c",
+      "is_demo": true,
+      "item_id": "6a8d2429-0763-54a3-b146-80d514257530",
+      "key": "en:exercise:everyday-now-review-listen-receptionist",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "g4v"
+        },
+        "display_answer": "Xin lỗi, lúc này anh ấy đang tiếp khách. Chị có muốn để lại lời nhắn không?",
+        "explanation": {
+          "vi": "He's talking to a client at the moment là \"lúc này đang nói chuyện với khách\" (không phải thói quen). Can I take a message? là lời đề nghị ghi lại lời nhắn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "order_index": 0,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "I'm sorry, he's talking to a client at the moment. Can I take a message?",
+        "options": [
+          {
+            "id": "k7b",
+            "lang": "vi",
+            "text": "Xin lỗi, anh ấy không có ở đây. Tôi sẽ gọi lại cho chị."
+          },
+          {
+            "id": "o8n",
+            "lang": "vi",
+            "text": "Xin lỗi, anh ấy thường tiếp khách vào giờ này. Chị gọi lại sau nhé."
+          },
+          {
+            "id": "g4v",
+            "lang": "vi",
+            "text": "Xin lỗi, lúc này anh ấy đang tiếp khách. Chị có muốn để lại lời nhắn không?"
+          },
+          {
+            "id": "y2e",
+            "lang": "vi",
+            "text": "Xin lỗi, anh ấy đang nói chuyện với chị. Chị chờ chút nhé."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "ca62fea193a8a66a7a6095c2b4d40e773a035c824d55f80c52eea7df7f96b186",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "b5c70acd-cdad-588e-830f-d35cae75602b",
+      "is_demo": true,
+      "item_id": "dacb5d9f-0f31-5945-b30e-813e9c68527d",
+      "key": "en:exercise:everyday-now-review-mcq-driving",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "q6h"
+        },
+        "display_answer": "Sorry, I'm driving right now. I'll call you back in twenty minutes.",
+        "explanation": {
+          "vi": "Đang lái xe dùng I'm driving; hứa gọi lại dùng I'll call you back (đại từ ở giữa), và \"hai mươi phút nữa\" là in twenty minutes."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "q6h",
+            "lang": "en",
+            "text": "Sorry, I'm driving right now. I'll call you back in twenty minutes."
+          },
+          {
+            "id": "v2y",
+            "lang": "en",
+            "text": "Sorry, I'm driving right now. I'll call you back after twenty minutes."
+          },
+          {
+            "id": "a9s",
+            "lang": "en",
+            "text": "Sorry, I drive right now. I call you back in twenty minutes."
+          },
+          {
+            "id": "l4c",
+            "lang": "en",
+            "text": "Sorry, I am drive right now. I'll call back you in twenty minutes."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Đối tác gọi đến khi bạn đang lái xe. Bạn nói thế nào cho đúng và lịch sự?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "07e6aba40f005a4c6741faf5fdf22b6d2372a482565a589a6889b361bf042ef2",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "c16aae6b-0415-57c1-bf8f-7e96d329277f",
+      "is_demo": true,
+      "item_id": "9ae92790-1b07-55ee-8b37-403831e07f95",
+      "key": "en:exercise:everyday-now-review-mcq-know",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "d8k"
+        },
+        "display_answer": "I know your office. It's near the river.",
+        "explanation": {
+          "vi": "Know không chia -ing. Trước danh từ dùng your (yours đứng một mình), và câu sau cần is (It's)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "order_index": 7,
+      "prompt": {
+        "options": [
+          {
+            "id": "d8k",
+            "lang": "en",
+            "text": "I know your office. It's near the river."
+          },
+          {
+            "id": "w5x",
+            "lang": "en",
+            "text": "I know yours office. It's near the river."
+          },
+          {
+            "id": "t1g",
+            "lang": "en",
+            "text": "I know your office. It near the river."
+          },
+          {
+            "id": "n3f",
+            "lang": "en",
+            "text": "I'm knowing your office. It's near the river."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng để Tom nói \"Tôi biết văn phòng của chị, nó ở gần bờ sông.\"",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "d706486cc7097798daf5c95af6f916fb360ef7a6778a55217988c4ff0b02d6be",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "c3b57252-486c-5ea6-ad98-5eb093ac9f0a",
+      "is_demo": true,
+      "item_id": "6e7b3e77-c600-5b09-8f66-a26905f13276",
+      "key": "en:exercise:everyday-now-review-mcq-photo",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "m5q"
+        },
+        "display_answer": "The woman in the middle is talking on the phone.",
+        "explanation": {
+          "vi": "Cô gái ở giữa (in the middle) đang nghe điện thoại. Bên trái là hai người đàn ông nhìn máy tính, chỉ một người cầm cà phê, còn bên ngoài trời đang mưa."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "r7u",
+            "lang": "en",
+            "text": "Two men are drinking coffee in the background."
+          },
+          {
+            "id": "c2j",
+            "lang": "en",
+            "text": "The woman on the left is looking at a computer."
+          },
+          {
+            "id": "m5q",
+            "lang": "en",
+            "text": "The woman in the middle is talking on the phone."
+          },
+          {
+            "id": "e4l",
+            "lang": "en",
+            "text": "It's sunny outside."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Đọc lại đoạn tả ảnh văn phòng. Câu nào đúng với bức ảnh?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "6afc24485df44ad27ff87970a44546bf050e7a4a3375939c7891deafa89305d9",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "48690afa-592e-572a-abcd-fa69a3401e39",
+      "is_demo": true,
+      "item_id": "756620de-9a78-5391-9af6-e995ed03616d",
+      "key": "en:exercise:everyday-now-review-mcq-tuesday",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "s3d"
+        },
+        "display_answer": "Thứ Ba anh ấy đi gặp một khách hàng ở Biên Hoà.",
+        "explanation": {
+          "vi": "I'm visiting a customer in Bien Hoa nói ngay sau I can't on Tuesday, nên đây là lịch hẹn đã định cho thứ Ba, không phải thói quen hay việc đang làm lúc gọi. Tom còn nói I know your office."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "s3d",
+            "lang": "vi",
+            "text": "Thứ Ba anh ấy đi gặp một khách hàng ở Biên Hoà."
+          },
+          {
+            "id": "h9m",
+            "lang": "vi",
+            "text": "Anh ấy không biết văn phòng của Lan."
+          },
+          {
+            "id": "b1w",
+            "lang": "vi",
+            "text": "Anh ấy đang gặp khách hàng ngay lúc gọi điện."
+          },
+          {
+            "id": "x6p",
+            "lang": "vi",
+            "text": "Thứ Ba nào anh ấy cũng đi Biên Hoà."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Đọc lại hội thoại phần 2. Vì sao Tom không gặp Lan vào thứ Ba được?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "5b6fa2e2a899df3c21a4e31a6657787e33afb9aa50f42058b5f5a80fad7d56b3",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "762074bc-ee25-5daf-a02e-f874871eb8cb",
+      "is_demo": true,
+      "item_id": "4710f542-712b-5799-bd06-8dfb0356c0dc",
+      "key": "en:exercise:everyday-now-review-order-computer",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "pc-on",
+              "pc-the",
+              "pc-left",
+              "pc-two",
+              "pc-men",
+              "pc-are",
+              "pc-looking",
+              "pc-at",
+              "pc-a",
+              "pc-computer"
+            ],
+            [
+              "pc-two",
+              "pc-men",
+              "pc-are",
+              "pc-looking",
+              "pc-at",
+              "pc-a",
+              "pc-computer",
+              "pc-on",
+              "pc-the",
+              "pc-left"
+            ]
+          ]
+        },
+        "display_answer": "On the left, two men are looking at a computer.",
+        "explanation": {
+          "vi": "Bên trái là on the left (không dùng in). Số nhiều của man là men; nhìn vào là look at, chia are looking."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "order_index": 10,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Bên trái, hai người đàn ông đang nhìn vào máy tính.\"",
+        "tokens": [
+          {
+            "id": "pc-computer",
+            "text": "computer"
+          },
+          {
+            "id": "pc-looking",
+            "text": "looking"
+          },
+          {
+            "id": "pc-left",
+            "text": "left"
+          },
+          {
+            "id": "pc-men",
+            "text": "men"
+          },
+          {
+            "id": "pc-are",
+            "text": "are"
+          },
+          {
+            "id": "pc-on",
+            "text": "on"
+          },
+          {
+            "id": "pc-at",
+            "text": "at"
+          },
+          {
+            "id": "pc-the",
+            "text": "the"
+          },
+          {
+            "id": "pc-two",
+            "text": "two"
+          },
+          {
+            "id": "pc-a",
+            "text": "a"
+          },
+          {
+            "id": "pc-mans",
+            "text": "mans"
+          },
+          {
+            "id": "pc-in",
+            "text": "in"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "37c0977eb03d193ad49dd2573a457c947a7c6199be12cd667567bf3c722ebb0e",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "17a2f028-c081-5af2-90e5-0e7a682fd51b",
+      "is_demo": true,
+      "item_id": "5d491010-f059-5e50-825c-573ccc126c7e",
+      "key": "en:exercise:everyday-now-review-translate-children",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Bọn trẻ trông rất vui. Chúng đang chơi trên bãi biển.",
+            "Bọn trẻ trông rất vui. Chúng đang chơi ở bãi biển.",
+            "Bọn trẻ trông rất vui. Chúng đang chơi trên bãi cát.",
+            "Bọn trẻ trông rất vui vẻ. Chúng đang chơi trên bãi biển.",
+            "Bọn trẻ có vẻ rất vui. Chúng đang chơi trên bãi biển.",
+            "Lũ trẻ trông rất vui. Chúng đang chơi trên bãi biển.",
+            "Những đứa trẻ trông rất vui. Chúng đang chơi trên bãi biển.",
+            "Các em nhỏ trông rất vui. Các em đang chơi trên bãi biển.",
+            "Bọn trẻ trông rất vui. Chúng đang chơi ngoài bãi biển.",
+            "Bọn trẻ trông rất vui, chúng đang chơi trên bãi biển.",
+            "Bọn trẻ trông rất vui. Tụi nhỏ đang chơi trên bãi biển."
+          ]
+        },
+        "display_answer": "Bọn trẻ trông rất vui. Chúng đang chơi trên bãi biển.",
+        "explanation": {
+          "vi": "Look + tính từ là \"trông / có vẻ…\". They're playing là \"đang chơi\"; on the beach là trên bãi biển."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "The children look very happy. They're playing on the beach."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "5c4758ca4c6f883ef47b9d0710c9b44f09983944f299a7e7a0390c4ce9d3fc12",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "38793c4f-f651-5e18-98c1-e52c836bce1a",
+      "is_demo": true,
+      "item_id": "d7baa505-bb1f-59f2-b08c-71d75b0270e2",
+      "key": "en:exercise:everyday-now-review-translate-phone",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "She's talking on the phone.",
+            "She is talking on the phone.",
+            "She's on the phone.",
+            "She is on the phone.",
+            "She's speaking on the phone.",
+            "She is speaking on the phone."
+          ]
+        },
+        "display_answer": "She's talking on the phone.",
+        "explanation": {
+          "vi": "\"Đang\" nói chuyện là is + talking. Nói chuyện điện thoại đi với on the phone; She's on the phone cũng rất tự nhiên."
+        },
+        "known_wrong": [
+          {
+            "answer": "She talking on the phone.",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu is - She's talking."
+          },
+          {
+            "answer": "She is talk on the phone.",
+            "error_tag": "missing_ing",
+            "feedback_vi": "Có is thì động từ thêm -ing - talking."
+          },
+          {
+            "answer": "She talks on the phone.",
+            "error_tag": "simple_vs_continuous",
+            "feedback_vi": "Việc đang diễn ra dùng hiện tại tiếp diễn - She's talking."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Cô ấy đang nói chuyện điện thoại."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "046da6cfeb430954ea7ca9fdd1a9d7d8bc157150bc6bc80a68e6cdf463d7ee3a",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "7428b3f5-3539-5552-b3de-7e8127be076e",
+      "is_demo": true,
+      "item_id": "4b420987-31a8-554e-9bcb-ee870d142a5e",
+      "key": "en:exercise:everyday-now-review-translate-ten",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Is ten o'clock OK for you?",
+            "Is ten OK for you?",
+            "Is ten o'clock okay for you?",
+            "Is ten okay for you?",
+            "Is ten o'clock OK with you?",
+            "Is 10 o'clock OK for you?",
+            "Does ten o'clock suit you?",
+            "Is ten o'clock convenient for you?"
+          ]
+        },
+        "display_answer": "Is ten o'clock OK for you?",
+        "explanation": {
+          "vi": "Hỏi giờ hẹn có tiện không - Is + giờ + OK for you? Chủ ngữ là thời gian, không phải người."
+        },
+        "known_wrong": [
+          {
+            "answer": "Are you convenient at ten o'clock?",
+            "error_tag": "convenient_person",
+            "feedback_vi": "Convenient nói về thời gian, không nói về người. Dùng Is ten o'clock OK for you?"
+          },
+          {
+            "answer": "Ten o'clock is OK for you?",
+            "error_tag": "question_word_order",
+            "feedback_vi": "Câu hỏi cần đảo is lên trước - Is ten o'clock OK for you?"
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "order_index": 5,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Mười giờ có tiện cho bạn không?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "4f0667998ea8480000638800e184f25cf2e4131fce0895cccbc093e954018f14",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "3c588823-ecf8-57fd-be71-d4a71f260cd0",
+      "is_demo": true,
+      "item_id": "9292bade-6b91-5d53-939a-28af81437636",
+      "key": "en:exercise:everyday-now-review-translate-tuesday",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I'm sorry, I can't come on Tuesday. I'm meeting a client.",
+            "I'm sorry, I can't come on Tuesday. I'm meeting a customer.",
+            "I'm sorry, I can't come on Tuesday. I'm visiting a client.",
+            "I'm sorry, I can't come on Tuesday. I'm visiting a customer.",
+            "Sorry, I can't come on Tuesday. I'm meeting a client.",
+            "Sorry, I can't come on Tuesday. I'm meeting a customer.",
+            "I'm afraid I can't come on Tuesday. I'm meeting a client.",
+            "I'm afraid I can't come on Tuesday. I'm meeting a customer.",
+            "Sorry, I can't make it on Tuesday. I'm meeting a client.",
+            "I'm sorry, I can't come on Tuesday. I'm meeting clients.",
+            "I'm sorry, I can't come on Tuesday because I'm meeting a client."
+          ]
+        },
+        "display_answer": "I'm sorry, I can't come on Tuesday. I'm meeting a client.",
+        "explanation": {
+          "vi": "Không đến được là can't come. Lý do là lịch hẹn đã định nên dùng hiện tại tiếp diễn - I'm meeting a client."
+        },
+        "known_wrong": [
+          {
+            "answer": "I'm sorry, I can't come on Tuesday. I meeting a client.",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu am - I'm meeting."
+          },
+          {
+            "answer": "I'm sorry, I can't come on Tuesday. I'm meet a client.",
+            "error_tag": "missing_ing",
+            "feedback_vi": "Có am thì động từ thêm -ing - I'm meeting."
+          },
+          {
+            "answer": "I'm sorry, I don't can come on Tuesday. I'm meeting a client.",
+            "error_tag": "modal_negative",
+            "feedback_vi": "Phủ định của can là can't, không dùng don't."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Xin lỗi, thứ Ba tôi không đến được. Tôi đi gặp khách hàng."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
       "status": "published"
     },
     {
@@ -19650,6 +21272,771 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
+      "content_hash": "c8ff2b7eaa056266ea52c859ec7fb318350321fa1bb693ce5d7b9815a44705d6",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "008706b1-a672-5b9c-81a8-c6260f966d06",
+      "is_demo": true,
+      "item_id": "c65577f3-5b71-5c9a-ae71-bfff8ef4fabe",
+      "key": "en:exercise:i-know-him-fill-them",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "them"
+            ],
+            "b2": [
+              "me"
+            ]
+          }
+        },
+        "display_answer": "A: Are those your children? B: Yes, I'm taking them to school. Can you wait for me? I'll be back in ten minutes.",
+        "explanation": {
+          "vi": "Your children đứng sau động từ take nên đổi thành them. Sau giới từ for, \"tôi\" là me."
+        },
+        "known_wrong": [
+          {
+            "answer": "they",
+            "error_tag": "object_pronoun",
+            "feedback_vi": "Sau động từ take cần tân ngữ them, không dùng they."
+          },
+          {
+            "answer": "I",
+            "error_tag": "object_pronoun",
+            "feedback_vi": "Sau giới từ for cần me, không dùng I."
+          },
+          {
+            "answer": "their",
+            "error_tag": "object_pronoun",
+            "feedback_vi": "Their là \"của họ\" và phải có danh từ theo sau. Ở đây cần them."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          },
+          {
+            "id": "b2",
+            "width_hint": 4
+          }
+        ],
+        "template": "A: Are those your children? B: Yes, I'm taking {{b1}} to school. Can you wait for {{b2}}? I'll be back in ten minutes."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "2e84d1ee25202a4ee7e5b6a5c4aebe19ed162a75396ece7143039ab5b488c89b",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "ba5a9188-2f9d-5264-87d2-dc83e2ef24b1",
+      "is_demo": true,
+      "item_id": "03079f4d-12e6-5ba1-987b-358df7c74f50",
+      "key": "en:exercise:i-know-him-fill-want",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "want"
+            ]
+          }
+        },
+        "display_answer": "I'm so thirsty. I want some water right now.",
+        "explanation": {
+          "vi": "Want chỉ mong muốn (trạng thái), nên dùng hiện tại đơn I want, kể cả khi có right now."
+        },
+        "known_wrong": [
+          {
+            "answer": "am wanting",
+            "error_tag": "stative_ing",
+            "feedback_vi": "Want không chia -ing, dù có right now - I want."
+          },
+          {
+            "answer": "wanting",
+            "error_tag": "stative_ing",
+            "feedback_vi": "Want là động từ trạng thái, dùng nguyên dạng want."
+          },
+          {
+            "answer": "wants",
+            "error_tag": "third_person_s",
+            "feedback_vi": "I đi với want, không thêm -s."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "order_index": 2,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 10
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa: Mình khát quá. Giờ mình đang muốn uống chút nước.",
+          "Gợi ý: want là động từ trạng thái - không chia -ing."
+        ],
+        "template": "I'm so thirsty. I {{b1}} (want) some water right now."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "fb4e37e20bc3b39011f1cff960a884e694fe985262f01bcb6ab2999e1d174db1",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "352da674-791a-579c-80a2-858a1d752a29",
+      "is_demo": true,
+      "item_id": "812f359a-f551-55aa-a818-0f3a1bbac0cd",
+      "key": "en:exercise:i-know-him-listen-hers",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r6z"
+        },
+        "display_answer": "Đây không phải túi của tôi. Tôi nghĩ là của cô ấy.",
+        "explanation": {
+          "vi": "Hers là \"của cô ấy\" (his mới là của anh ấy). Isn't my bag là \"không phải túi của tôi\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "This isn't my bag. I think it's hers.",
+        "options": [
+          {
+            "id": "r6z",
+            "lang": "vi",
+            "text": "Đây không phải túi của tôi. Tôi nghĩ là của cô ấy."
+          },
+          {
+            "id": "m9v",
+            "lang": "vi",
+            "text": "Đây là túi của tôi. Tôi nghĩ vậy."
+          },
+          {
+            "id": "w2g",
+            "lang": "vi",
+            "text": "Đây không phải túi của cô ấy. Của tôi đấy."
+          },
+          {
+            "id": "d3q",
+            "lang": "vi",
+            "text": "Đây không phải túi của tôi. Tôi nghĩ là của anh ấy."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "6140ad4939de315a613dd23168be30d251caa9bbb2c840f0c0a764d98137645c",
+      "difficulty": 1,
+      "exercise_type": "mcq",
+      "id": "c6fdf841-2f23-5f0b-9042-23f54156944e",
+      "is_demo": true,
+      "item_id": "500a3964-28ec-51bf-9721-94f4acb68487",
+      "key": "en:exercise:i-know-him-mcq-know",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "t5c"
+        },
+        "display_answer": "I know him.",
+        "explanation": {
+          "vi": "Know không chia -ing nên dùng I know. Sau động từ dùng tân ngữ him, không dùng he. \"I'm know\" thừa am."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "t5c",
+            "lang": "en",
+            "text": "I know him."
+          },
+          {
+            "id": "p8r",
+            "lang": "en",
+            "text": "I know he."
+          },
+          {
+            "id": "j4u",
+            "lang": "en",
+            "text": "I'm know him."
+          },
+          {
+            "id": "a1w",
+            "lang": "en",
+            "text": "I'm knowing him."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào nói đúng \"Tôi biết anh ấy\"?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "242897191932e37d2c54311b7cb43032ea46000037ff0d5eb2bbe9ed05693bcf",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "fb919532-4bbd-5163-9f6d-2761c3d231fa",
+      "is_demo": true,
+      "item_id": "dd44d459-699f-57ef-bc9d-07467ee05beb",
+      "key": "en:exercise:i-know-him-mcq-mine",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c7h"
+        },
+        "display_answer": "Yes, it's mine.",
+        "explanation": {
+          "vi": "Không lặp lại pen thì dùng mine đứng một mình. Mine không đi với danh từ, my phải có danh từ theo sau, còn it's me là \"đó là tôi\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "order_index": 3,
+      "prompt": {
+        "options": [
+          {
+            "id": "l2b",
+            "lang": "en",
+            "text": "Yes, it's mine pen."
+          },
+          {
+            "id": "n0k",
+            "lang": "en",
+            "text": "Yes, it's me."
+          },
+          {
+            "id": "c7h",
+            "lang": "en",
+            "text": "Yes, it's mine."
+          },
+          {
+            "id": "x5f",
+            "lang": "en",
+            "text": "Yes, it's my."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Đồng nghiệp hỏi \"Is this your pen?\". Đúng là bút của bạn. Bạn trả lời thế nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "c4ab31e122cc28790bcdc3f7bfe443c4cab66615860d8ab5fb255b9bc62b75b9",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "286c42bd-8493-5958-86ac-37e73ca64aee",
+      "is_demo": true,
+      "item_id": "5f9b2a45-957c-51c8-8ada-3fdfabec840f",
+      "key": "en:exercise:i-know-him-mcq-think",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "g6s"
+        },
+        "display_answer": "I think this restaurant is really good.",
+        "explanation": {
+          "vi": "Think nghĩa là \"cho rằng\" (ý kiến) thì không chia -ing - I think. Câu sau cũng cần is trước tính từ good."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "g6s",
+            "lang": "en",
+            "text": "I think this restaurant is really good."
+          },
+          {
+            "id": "k3t",
+            "lang": "en",
+            "text": "I'm think this restaurant is really good."
+          },
+          {
+            "id": "h1e",
+            "lang": "en",
+            "text": "I'm thinking this restaurant is really good."
+          },
+          {
+            "id": "z9o",
+            "lang": "en",
+            "text": "I think this restaurant really good."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn muốn nêu ý kiến với bạn bè: \"Mình nghĩ nhà hàng này rất ngon.\" Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "0df3108d8f8fd02afcc7f018127e84d2066f46b3f28256d396e583dba7be4cb4",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "ab56285d-0a5f-540b-869a-a876e180c133",
+      "is_demo": true,
+      "item_id": "5fb50ad0-e163-5fdf-83ff-24ae8092202b",
+      "key": "en:exercise:i-know-him-order-call-me",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "cm-can",
+              "cm-you",
+              "cm-call",
+              "cm-me",
+              "cm-tomorrow"
+            ]
+          ]
+        },
+        "display_answer": "Can you call me tomorrow?",
+        "explanation": {
+          "vi": "Can đảo lên đầu để hỏi. Sau động từ call dùng me (không dùng I), và call không cần to - call me, không nói \"call to me\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "order_index": 10,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu hỏi: \"Mai bạn gọi cho tôi được không?\"",
+        "tokens": [
+          {
+            "id": "cm-me",
+            "text": "me"
+          },
+          {
+            "id": "cm-tomorrow",
+            "text": "tomorrow"
+          },
+          {
+            "id": "cm-you",
+            "text": "you"
+          },
+          {
+            "id": "cm-i",
+            "text": "I"
+          },
+          {
+            "id": "cm-call",
+            "text": "call"
+          },
+          {
+            "id": "cm-can",
+            "text": "Can"
+          },
+          {
+            "id": "cm-to",
+            "text": "to"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "362b222695e851393390800c7c9ef1e7fb59e8a0596ab36120c0cbef5aa4fd69",
+      "difficulty": 1,
+      "exercise_type": "word_bank",
+      "id": "0bb6b013-7e56-5c2a-a9e7-09b81c56e79e",
+      "is_demo": true,
+      "item_id": "d876a0e6-763a-5472-8ab1-c397a72b4835",
+      "key": "en:exercise:i-know-him-order-yours",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "yo-is",
+              "yo-this",
+              "yo-umbrella",
+              "yo-yours"
+            ]
+          ]
+        },
+        "display_answer": "Is this umbrella yours?",
+        "explanation": {
+          "vi": "Câu hỏi với be đảo Is lên đầu. Yours đứng một mình ở cuối câu và không có dấu nháy; your cần danh từ theo sau."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu hỏi: \"Cái ô này có phải của bạn không?\"",
+        "tokens": [
+          {
+            "id": "yo-yours",
+            "text": "yours"
+          },
+          {
+            "id": "yo-umbrella",
+            "text": "umbrella"
+          },
+          {
+            "id": "yo-your",
+            "text": "your"
+          },
+          {
+            "id": "yo-is",
+            "text": "Is"
+          },
+          {
+            "id": "yo-this",
+            "text": "this"
+          },
+          {
+            "id": "yo-yours2",
+            "text": "your's"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "c8693e560722ae28a7603e6316d867da18d2a130e979e1ad0a356258d672b175",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "70787fa0-cc4e-5d4c-8d7c-517e46ca0a79",
+      "is_demo": true,
+      "item_id": "c65577f3-5b71-5c9a-ae71-bfff8ef4fabe",
+      "key": "en:exercise:i-know-him-translate-brother",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Tôi thích cô ấy, nhưng tôi không quen anh trai cô ấy.",
+            "Tôi thích cô ấy, nhưng tôi không quen em trai cô ấy.",
+            "Tôi thích cô ấy, nhưng tôi không biết anh trai cô ấy.",
+            "Tôi thích cô ấy, nhưng tôi không biết em trai cô ấy.",
+            "Tôi thích cô ấy, nhưng tôi không quen anh trai của cô ấy.",
+            "Tôi thích cô ấy, nhưng tôi không quen em trai của cô ấy.",
+            "Tôi thích cô ấy, nhưng tôi không biết anh trai của cô ấy.",
+            "Tôi thích cô ấy, nhưng tôi không biết em trai của cô ấy.",
+            "Tôi quý cô ấy, nhưng tôi không quen anh trai cô ấy.",
+            "Tôi quý cô ấy, nhưng tôi không quen em trai cô ấy.",
+            "Mình thích cô ấy, nhưng mình không quen anh trai cô ấy.",
+            "Mình thích cô ấy, nhưng mình không quen em trai cô ấy.",
+            "Tôi thích chị ấy, nhưng tôi không quen anh trai chị ấy.",
+            "Tôi thích chị ấy, nhưng tôi không quen em trai chị ấy.",
+            "Tôi thích cô ấy nhưng không quen anh trai cô ấy.",
+            "Tôi thích cô ấy nhưng không quen em trai cô ấy."
+          ]
+        },
+        "display_answer": "Tôi thích cô ấy, nhưng tôi không quen anh trai cô ấy.",
+        "explanation": {
+          "vi": "Her ở vế đầu là tân ngữ (thích cô ấy); her ở vế sau đứng trước danh từ brother nên là \"của cô ấy\". Brother có thể là anh trai hoặc em trai."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "I like her, but I don't know her brother."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "5ae68ef836c0b358898bc55773362de3c07c11b2ed42c0cd854270c2e4dd2fc5",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "88dcd812-7af0-5a54-8e70-1614af6b70ba",
+      "is_demo": true,
+      "item_id": "812f359a-f551-55aa-a818-0f3a1bbac0cd",
+      "key": "en:exercise:i-know-him-translate-his",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "This phone isn't mine. It's his.",
+            "This phone is not mine. It is his.",
+            "This phone isn't mine. It is his.",
+            "This phone is not mine. It's his.",
+            "This isn't my phone. It's his.",
+            "This is not my phone. It is his.",
+            "This isn't my phone. It is his.",
+            "This is not my phone. It's his."
+          ]
+        },
+        "display_answer": "This phone isn't mine. It's his.",
+        "explanation": {
+          "vi": "Đứng một mình, \"của tôi\" là mine và \"của anh ấy\" là his. Nếu giữ danh từ phone thì dùng my phone."
+        },
+        "known_wrong": [
+          {
+            "answer": "This phone isn't my. It's his.",
+            "error_tag": "possessive_pronoun",
+            "feedback_vi": "My phải có danh từ theo sau. Đứng một mình thì dùng mine."
+          },
+          {
+            "answer": "This phone isn't mine. It's him.",
+            "error_tag": "possessive_pronoun",
+            "feedback_vi": "It's him là \"đó là anh ấy\". \"Của anh ấy\" là his."
+          },
+          {
+            "answer": "This phone isn't mine phone. It's his.",
+            "error_tag": "possessive_pronoun",
+            "feedback_vi": "Mine không đi với danh từ - This isn't my phone hoặc This phone isn't mine."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Cái điện thoại này không phải của tôi. Nó là của anh ấy."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "5c9ef24efdcc0c6eafa571a7dfb829bd3c2afdaceb3a36ea92a94d165c770446",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "5efede23-c41d-59f9-8121-ccd6bea445d4",
+      "is_demo": true,
+      "item_id": "4dd2f53c-5ed5-5eed-adeb-b01fa1325481",
+      "key": "en:exercise:i-know-him-translate-understand",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I don't understand this question.",
+            "I don't understand the question.",
+            "I can't understand this question.",
+            "I can't understand the question."
+          ]
+        },
+        "display_answer": "I don't understand this question.",
+        "explanation": {
+          "vi": "Understand không chia -ing; phủ định ở hiện tại đơn dùng don't + understand."
+        },
+        "known_wrong": [
+          {
+            "answer": "I'm not understanding this question.",
+            "error_tag": "stative_ing",
+            "feedback_vi": "Understand là động từ trạng thái, dùng I don't understand."
+          },
+          {
+            "answer": "I not understand this question.",
+            "error_tag": "missing_do",
+            "feedback_vi": "Phủ định hiện tại đơn cần don't - I don't understand."
+          },
+          {
+            "answer": "I am not understand this question.",
+            "error_tag": "be_with_verb",
+            "feedback_vi": "Không dùng am với understand. Nói I don't understand."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi không hiểu câu hỏi này."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "e365f99c1546a3feb16c56f38f3ee02ede20986df3b3d82f0a1576f74243748e",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "fcd708b8-5b1f-5801-a8e6-0fadc0a8efa3",
+      "is_demo": true,
+      "item_id": "42696b31-7428-5446-9638-3973b4313910",
+      "key": "en:exercise:i-know-him-translate-wait-them",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "We're waiting for them at the station.",
+            "We're waiting for them at the train station.",
+            "We're waiting for them at the railway station."
+          ]
+        },
+        "display_answer": "We're waiting for them at the station.",
+        "explanation": {
+          "vi": "Wait là hành động nên chia -ing được - We're waiting. Sau for dùng tân ngữ them."
+        },
+        "known_wrong": [
+          {
+            "answer": "We're waiting for they at the station.",
+            "error_tag": "object_pronoun",
+            "feedback_vi": "Sau giới từ for dùng them, không dùng they."
+          },
+          {
+            "answer": "We're waiting them at the station.",
+            "error_tag": "missing_preposition",
+            "feedback_vi": "Wait cần for trước người được đợi - wait for them."
+          },
+          {
+            "answer": "We waiting for them at the station.",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu are - We're waiting."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Chúng tôi đang đợi họ ở nhà ga."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
       "content_hash": "992aaa06dcf3d8e52abe06cd289afd9de5ed09a58f51fec6423b43a51660ff83",
       "difficulty": 3,
       "exercise_type": "fill_blank",
@@ -20357,6 +22744,813 @@ select content_private.import_bundle($bundle${
         "direction": "vi_to_target",
         "source_lang": "vi",
         "source_text": "Cô ấy đã từ chối lời mời làm việc vì không muốn chuyển nhà."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "8242f205ff88a4fc8ce1ab846ec9c0c76b0d8e7de7afd0c768e6c458196a1688",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "aaea98a5-93ef-5615-bf42-3062b05b5dda",
+      "is_demo": true,
+      "item_id": "887f46e2-0fc5-54a4-8cbb-85fdb8d2afa1",
+      "key": "en:exercise:invitations-and-calls-fill-fancy",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "going"
+            ],
+            "b2": [
+              "love",
+              "like"
+            ]
+          }
+        },
+        "display_answer": "A: Do you fancy going for a coffee after work? B: I'd love to!",
+        "explanation": {
+          "vi": "Do you fancy + V-ing (going). Trả lời nhận lời bằng I'd love to (hoặc I'd like to)."
+        },
+        "known_wrong": [
+          {
+            "answer": "to go",
+            "error_tag": "fancy_ing",
+            "feedback_vi": "Sau fancy dùng V-ing - fancy going."
+          },
+          {
+            "answer": "go",
+            "error_tag": "fancy_ing",
+            "feedback_vi": "Sau fancy dùng V-ing - fancy going."
+          },
+          {
+            "answer": "loving",
+            "error_tag": "would_base_form",
+            "feedback_vi": "Sau I'd (I would) dùng động từ nguyên mẫu - I'd love to."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "order_index": 2,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          },
+          {
+            "id": "b2",
+            "width_hint": 5
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa: A: Tan làm đi cà phê không? B: Có chứ!",
+          "Gợi ý: fancy + V-ing; nhận lời nhiệt tình bằng I'd l… to."
+        ],
+        "template": "A: Do you fancy {{b1}} (go) for a coffee after work? B: I'd {{b2}} to!"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "401cdffb3757271a89757942c6220d37f52637f543e8243a3e51b69a1578955f",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "efae9506-0039-52a6-b486-44d36c1e86a1",
+      "is_demo": true,
+      "item_id": "6a8d2429-0763-54a3-b146-80d514257530",
+      "key": "en:exercise:invitations-and-calls-fill-message",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "take"
+            ],
+            "b2": [
+              "back"
+            ]
+          }
+        },
+        "display_answer": "A: Hello, can I speak to Lan, please? B: I'm afraid she's out. Can I take a message? A: Yes, please. Can you ask her to call me back?",
+        "explanation": {
+          "vi": "B là người nghe máy nên hỏi Can I take a message? Gọi lại là call + người + back - call me back."
+        },
+        "known_wrong": [
+          {
+            "answer": "leave",
+            "error_tag": "take_leave_message",
+            "feedback_vi": "Người nghe máy take (ghi) lời nhắn; người gọi mới leave (để lại) lời nhắn."
+          },
+          {
+            "answer": "make",
+            "error_tag": "collocation",
+            "feedback_vi": "Lời nhắn đi với take hoặc leave, không đi với make."
+          },
+          {
+            "answer": "again",
+            "error_tag": "call_back",
+            "feedback_vi": "Gọi lại cho ai sau cuộc gọi bị lỡ là call me back."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          },
+          {
+            "id": "b2",
+            "width_hint": 5
+          }
+        ],
+        "template": "A: Hello, can I speak to Lan, please? B: I'm afraid she's out. Can I {{b1}} a message? A: Yes, please. Can you ask her to call me {{b2}}?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "cdc908b3c7887bbdf4064046981f1e453a6e72202f90ce2b6fc7fcf1a2430632",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "3daf8a35-1809-56a3-bbc4-79a70ffaeea7",
+      "is_demo": true,
+      "item_id": "3f3297cc-91d6-54f2-97c0-e945770488ab",
+      "key": "en:exercise:invitations-and-calls-listen-hold",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "j5c"
+        },
+        "display_answer": "Anh chờ chút nhé, tôi đi gọi anh ấy.",
+        "explanation": {
+          "vi": "Trên điện thoại, Hold on là \"chờ máy một chút\", không phải cầm giữ. I'll get him là \"tôi đi gọi anh ấy (ra nghe máy)\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "Hold on, please. I'll get him.",
+        "options": [
+          {
+            "id": "n4h",
+            "lang": "vi",
+            "text": "Anh để lại lời nhắn nhé."
+          },
+          {
+            "id": "t8x",
+            "lang": "vi",
+            "text": "Anh cầm lấy nhé, tôi đưa anh ấy."
+          },
+          {
+            "id": "e1q",
+            "lang": "vi",
+            "text": "Anh gọi lại sau nhé, anh ấy không có ở đây."
+          },
+          {
+            "id": "j5c",
+            "lang": "vi",
+            "text": "Anh chờ chút nhé, tôi đi gọi anh ấy."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "cf492f7b9d53d2a84eb25945b00319fda27d213994e3ef66e5d2ef37e7768ac3",
+      "difficulty": 1,
+      "exercise_type": "mcq",
+      "id": "6e60b7c8-7f77-57ed-8d55-40713da01ad9",
+      "is_demo": true,
+      "item_id": "db4c4b9a-e6ec-5c85-b625-25cabfc4ed55",
+      "key": "en:exercise:invitations-and-calls-mcq-cinema",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "a7f"
+        },
+        "display_answer": "Would you like to go to the cinema with us?",
+        "explanation": {
+          "vi": "Lời mời là Would you like to + động từ. Thiếu to là sai; Do you like… hỏi sở thích chung chứ không phải lời mời; sau with phải là us."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "d9z",
+            "lang": "en",
+            "text": "Would you like to go to the cinema with we?"
+          },
+          {
+            "id": "k2u",
+            "lang": "en",
+            "text": "Would you like go to the cinema with us?"
+          },
+          {
+            "id": "m6e",
+            "lang": "en",
+            "text": "Do you like to go to the cinema with us?"
+          },
+          {
+            "id": "a7f",
+            "lang": "en",
+            "text": "Would you like to go to the cinema with us?"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào nói đúng \"Bạn có muốn đi xem phim với bọn mình không?\"",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "6d39675555b5f9b5c24fb75440f09fbd8afaaa17f5573215308276e41941f2dd",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "4ae366b5-c5b0-5a6a-8c29-4d50d6afcf1f",
+      "is_demo": true,
+      "item_id": "ba58e1b6-24c0-5cfe-8cc9-614025406f9f",
+      "key": "en:exercise:invitations-and-calls-mcq-decline",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "f8t"
+        },
+        "display_answer": "Oh, I'm sorry, I'm afraid I can't. I'm working on Saturday. Maybe another time?",
+        "explanation": {
+          "vi": "Từ chối lịch sự gồm xin lỗi, I'm afraid I can't, lý do (I'm working on Saturday) và Maybe another time. Ba câu kia cộc lốc hoặc không khớp với câu hỏi."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "u1r",
+            "lang": "en",
+            "text": "Yes, I am busy."
+          },
+          {
+            "id": "z6w",
+            "lang": "en",
+            "text": "No, I wouldn't."
+          },
+          {
+            "id": "c3m",
+            "lang": "en",
+            "text": "No, I don't like."
+          },
+          {
+            "id": "f8t",
+            "lang": "en",
+            "text": "Oh, I'm sorry, I'm afraid I can't. I'm working on Saturday. Maybe another time?"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Đồng nghiệp mời: \"Would you like to come to my birthday party on Saturday?\" Thứ Bảy bạn phải đi làm. Câu trả lời nào lịch sự nhất?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "c37b8859f00b4732135bd070226aafcaa1b28c1ccbd9bb84000c3e5d6a5421ee",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "8a0dbb5d-1677-5965-887c-6534682c8fcf",
+      "is_demo": true,
+      "item_id": "52695488-fd1f-5ba7-9026-10dbdbd0686c",
+      "key": "en:exercise:invitations-and-calls-mcq-speaking",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "p3s"
+        },
+        "display_answer": "Speaking.",
+        "explanation": {
+          "vi": "Khi chính bạn là người được hỏi, nói Speaking (hoặc This is Nam). \"Yes, I am\" không trả lời câu hỏi Can I…?, còn hai câu kia không tự nhiên và sai ngữ pháp."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "h0y",
+            "lang": "en",
+            "text": "Yes, you can speak."
+          },
+          {
+            "id": "p3s",
+            "lang": "en",
+            "text": "Speaking."
+          },
+          {
+            "id": "r2b",
+            "lang": "en",
+            "text": "I am Mr Nam speak."
+          },
+          {
+            "id": "w7l",
+            "lang": "en",
+            "text": "Yes, I am."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn là anh Nam. Bạn nghe máy và người gọi hỏi \"Can I speak to Mr Nam, please?\". Bạn đáp thế nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "7f33491fd115ea9aec39217d805c7bc65c1a8fd70f40258b088da0f4b7c2ece0",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "63cbc155-b81e-5537-8b6e-a7f3750135ac",
+      "is_demo": true,
+      "item_id": "db4c4b9a-e6ec-5c85-b625-25cabfc4ed55",
+      "key": "en:exercise:invitations-and-calls-order-dinner",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "dn-would",
+              "dn-you",
+              "dn-like",
+              "dn-to",
+              "dn-have",
+              "dn-dinner",
+              "dn-with",
+              "dn-us",
+              "dn-on",
+              "dn-friday"
+            ]
+          ]
+        },
+        "display_answer": "Would you like to have dinner with us on Friday?",
+        "explanation": {
+          "vi": "Would you like to + động từ nguyên mẫu (have dinner). Sau with dùng us, không dùng we; on đi với thứ trong tuần."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "order_index": 10,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Thứ Sáu bạn có muốn ăn tối với chúng tôi không?\"",
+        "tokens": [
+          {
+            "id": "dn-dinner",
+            "text": "dinner"
+          },
+          {
+            "id": "dn-us",
+            "text": "us"
+          },
+          {
+            "id": "dn-would",
+            "text": "Would"
+          },
+          {
+            "id": "dn-friday",
+            "text": "Friday"
+          },
+          {
+            "id": "dn-to",
+            "text": "to"
+          },
+          {
+            "id": "dn-have",
+            "text": "have"
+          },
+          {
+            "id": "dn-like",
+            "text": "like"
+          },
+          {
+            "id": "dn-on",
+            "text": "on"
+          },
+          {
+            "id": "dn-with",
+            "text": "with"
+          },
+          {
+            "id": "dn-you",
+            "text": "you"
+          },
+          {
+            "id": "dn-we",
+            "text": "we"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "fa92467d740eddb80838962eb1ff2b2aacc9b85b2ea046d6b08f3e65795d349c",
+      "difficulty": 1,
+      "exercise_type": "word_bank",
+      "id": "16295d35-2a81-53e2-9e20-b05daf439981",
+      "is_demo": true,
+      "item_id": "13b59113-d58a-53c7-b057-836be17eab53",
+      "key": "en:exercise:invitations-and-calls-order-speak",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "sp-can",
+              "sp-i",
+              "sp-speak",
+              "sp-to",
+              "sp-mr",
+              "sp-nam",
+              "sp-please"
+            ]
+          ]
+        },
+        "display_answer": "Can I speak to Mr Nam, please?",
+        "explanation": {
+          "vi": "Mẫu cố định khi gọi điện - Can I speak to + người, please? Please đặt ở cuối câu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "order_index": 3,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Cho tôi gặp anh Nam được không ạ?\" (khi gọi điện)",
+        "tokens": [
+          {
+            "id": "sp-nam",
+            "text": "Nam"
+          },
+          {
+            "id": "sp-speak",
+            "text": "speak"
+          },
+          {
+            "id": "sp-please",
+            "text": "please"
+          },
+          {
+            "id": "sp-i",
+            "text": "I"
+          },
+          {
+            "id": "sp-to",
+            "text": "to"
+          },
+          {
+            "id": "sp-can",
+            "text": "Can"
+          },
+          {
+            "id": "sp-mr",
+            "text": "Mr"
+          },
+          {
+            "id": "sp-am",
+            "text": "am"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "a91b3025ce002b527f42f9cbcce903f80705b0ade11bacd97a18988253f645c3",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "1c6f441d-be1c-592d-b36a-733d3ac8b972",
+      "is_demo": true,
+      "item_id": "887f46e2-0fc5-54a4-8cbb-85fdb8d2afa1",
+      "key": "en:exercise:invitations-and-calls-translate-beach",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Cuối tuần này bạn có muốn đi biển không?",
+            "Cuối tuần này cậu có muốn đi biển không?",
+            "Cuối tuần này bạn có thích đi biển không?",
+            "Cuối tuần này đi biển không?",
+            "Cuối tuần này đi biển nhé?",
+            "Cuối tuần này mình đi biển không?",
+            "Cuối tuần này đi biển không bạn?",
+            "Bạn có muốn đi biển cuối tuần này không?",
+            "Cậu có muốn đi biển cuối tuần này không?",
+            "Bạn có muốn đi biển vào cuối tuần này không?",
+            "Cuối tuần này bạn muốn đi biển không?",
+            "Cuối tuần này đi biển chơi không?"
+          ]
+        },
+        "display_answer": "Cuối tuần này bạn có muốn đi biển không?",
+        "explanation": {
+          "vi": "Do you fancy + V-ing là lời rủ thân mật, dịch tự nhiên là \"… có muốn… không?\" hoặc \"đi… không?\". This weekend là cuối tuần này."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "Do you fancy going to the beach this weekend?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a84c650a7cdc20a717ddfbbd1a4e05d4a8bde15ea1167e30284232565be53298",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "b32d5241-3332-58a1-b180-dcf4b91d4fad",
+      "is_demo": true,
+      "item_id": "9292bade-6b91-5d53-939a-28af81437636",
+      "key": "en:exercise:invitations-and-calls-translate-busy",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I'm afraid I can't. I'm busy.",
+            "I'm afraid I can't go. I'm busy.",
+            "I'm afraid I can't come. I'm busy.",
+            "I'm sorry, I can't. I'm busy.",
+            "Sorry, I can't. I'm busy.",
+            "I'm sorry, I can't go. I'm busy.",
+            "Sorry, I can't go. I'm busy.",
+            "I'm sorry, I can't come. I'm busy."
+          ]
+        },
+        "display_answer": "I'm afraid I can't. I'm busy.",
+        "explanation": {
+          "vi": "\"Tiếc là\" dùng I'm afraid (hoặc I'm sorry); \"không đi được\" là can't (go). Busy là tính từ nên cần be - I'm busy."
+        },
+        "known_wrong": [
+          {
+            "answer": "I'm afraid I can't. I busy.",
+            "error_tag": "missing_be",
+            "feedback_vi": "Busy là tính từ nên cần am - I'm busy."
+          },
+          {
+            "answer": "I'm afraid I can't go. I'm busying.",
+            "error_tag": "adjective_ing",
+            "feedback_vi": "Busy là tính từ, không thêm -ing - I'm busy."
+          },
+          {
+            "answer": "I'm afraid I don't can go. I'm busy.",
+            "error_tag": "modal_negative",
+            "feedback_vi": "Phủ định của can là can't, không dùng don't."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tiếc là tôi không đi được. Tôi bận."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "3cc04d7784159b856f7f7df101fdff3c0f81e6034d625ab64c3d9f54b601d02b",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "c7b814c0-375a-531c-809c-559b25c1ff26",
+      "is_demo": true,
+      "item_id": "dacb5d9f-0f31-5945-b30e-813e9c68527d",
+      "key": "en:exercise:invitations-and-calls-translate-call-back",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I'll call you back in ten minutes.",
+            "I'll call you back in 10 minutes.",
+            "I'll ring you back in ten minutes.",
+            "I'll ring you back in 10 minutes.",
+            "In ten minutes I'll call you back."
+          ]
+        },
+        "display_answer": "I'll call you back in ten minutes.",
+        "explanation": {
+          "vi": "Lời hứa quyết định ngay lúc nói dùng I'll. Đại từ đứng giữa call và back; \"mười phút nữa\" là in ten minutes."
+        },
+        "known_wrong": [
+          {
+            "answer": "I'll call back you in ten minutes.",
+            "error_tag": "phrasal_verb_object",
+            "feedback_vi": "Đại từ đứng giữa call và back - call you back."
+          },
+          {
+            "answer": "I'll call you back after ten minutes.",
+            "error_tag": "in_after_time",
+            "feedback_vi": "\"Mười phút nữa\" (tính từ bây giờ) là in ten minutes, không phải after."
+          },
+          {
+            "answer": "I call you back in ten minutes.",
+            "error_tag": "will_decision",
+            "feedback_vi": "Lời hứa vừa quyết định ngay lúc nói dùng will - I'll call you back."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Mười phút nữa tôi sẽ gọi lại cho bạn."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "83b7df0b54f6c30c706b07302d32f70b714d34e6c6be63b58def29be7ad01d73",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "205167d0-1e70-5df3-9cfd-31ff15108c60",
+      "is_demo": true,
+      "item_id": "f17688a6-db29-582a-b5f5-6e6d0c1f841d",
+      "key": "en:exercise:invitations-and-calls-translate-whos-calling",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Who's calling, please?",
+            "Who is calling, please?",
+            "Who's calling?",
+            "Who is calling?",
+            "Who's speaking, please?",
+            "Who is speaking, please?",
+            "May I ask who's calling?",
+            "May I ask who is calling?"
+          ]
+        },
+        "display_answer": "Who's calling, please?",
+        "explanation": {
+          "vi": "Câu lịch sự chuẩn khi nghe máy là Who's calling, please? Dùng hiện tại tiếp diễn vì cuộc gọi đang diễn ra."
+        },
+        "known_wrong": [
+          {
+            "answer": "Who are you?",
+            "error_tag": "phone_politeness",
+            "feedback_vi": "Câu này nghe rất cộc trên điện thoại. Dùng Who's calling, please?"
+          },
+          {
+            "answer": "Who is call?",
+            "error_tag": "missing_ing",
+            "feedback_vi": "Cần is + calling - Who's calling?"
+          },
+          {
+            "answer": "Who calling?",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu is - Who's calling?"
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Xin hỏi ai gọi đấy ạ?"
       },
       "reviewed_at": null,
       "reviewed_by": null,
@@ -46974,6 +50168,3787 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
+      "content_hash": "93120cb85fc7730fc2350c4fb523d5a516de557bc3d2f1d9ed01c539d5a58161",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "6bd40001-d52f-5d8f-8032-b366d4a44a48",
+      "is_demo": true,
+      "item_id": "d2f4858c-7f08-5045-ae59-9c895fda6009",
+      "key": "en:exercise:travel-culture-c-fill-complain-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "to"
+            ],
+            "b2": [
+              "about"
+            ]
+          }
+        },
+        "display_answer": "We complained to the manager about the noise, and she gave us a quieter room.",
+        "explanation": {
+          "vi": "Complain to + người (the manager) + about + sự việc (the noise). Tiếng Việt nói \"với… về…\", tương ứng to… about…"
+        },
+        "known_wrong": [
+          {
+            "answer": "with",
+            "error_tag": "preposition",
+            "feedback_vi": "Complain dùng to cho người, không dùng with."
+          },
+          {
+            "answer": "for",
+            "error_tag": "preposition",
+            "feedback_vi": "Phàn nàn về điều gì dùng about."
+          },
+          {
+            "answer": "of",
+            "error_tag": "preposition",
+            "feedback_vi": "Phàn nàn về điều gì dùng about."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          },
+          {
+            "id": "b2",
+            "width_hint": 6
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Chúng tôi phàn nàn với quản lý về tiếng ồn, và cô ấy đổi cho chúng tôi phòng yên tĩnh hơn.",
+          "Gợi ý: phàn nàn với ai = complain t…; về cái gì = a…"
+        ],
+        "template": "We complained {{b1}} the manager {{b2}} the noise, and she gave us a quieter room."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "6c7a8c9f8212100bc94390ab98b9cbc1d1dc63de517deb4ea2774fa398c7059a",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "40f0ea19-58ef-5ea5-bcab-a7bee76a1c88",
+      "is_demo": true,
+      "item_id": "f2ca8987-a1c9-5596-bbba-7a6db854235a",
+      "key": "en:exercise:travel-culture-c-fill-doesnt-work",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "afraid"
+            ],
+            "b2": [
+              "doesn't",
+              "does not"
+            ],
+            "b3": [
+              "noisy"
+            ]
+          }
+        },
+        "display_answer": "I'm afraid there's a problem with my room. The shower doesn't work, and the room is very noisy because it's next to the bar.",
+        "explanation": {
+          "vi": "I'm afraid làm mềm lời phàn nàn; the shower số ít nên doesn't work; very + tính từ noisy (ồn ào)."
+        },
+        "known_wrong": [
+          {
+            "answer": "scared",
+            "error_tag": "im_afraid",
+            "feedback_vi": "Lời phàn nàn lịch sự dùng I'm afraid (tôi e là), không dùng scared."
+          },
+          {
+            "answer": "not",
+            "error_tag": "missing_auxiliary",
+            "feedback_vi": "Phủ định hiện tại đơn với the shower cần doesn't - doesn't work."
+          },
+          {
+            "answer": "don't",
+            "error_tag": "third_person_s",
+            "feedback_vi": "The shower số ít nên dùng doesn't."
+          },
+          {
+            "answer": "noise",
+            "error_tag": "word_form",
+            "feedback_vi": "Sau very cần tính từ noisy; noise là danh từ."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          },
+          {
+            "id": "b2",
+            "width_hint": 7
+          },
+          {
+            "id": "b3",
+            "width_hint": 5
+          }
+        ],
+        "template": "I'm {{b1}} there's a problem with my room. The shower {{b2}} work, and the room is very {{b3}} because it's next to the bar."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "db5370391a4975a3be20e6b956db07078f9727b769e0aeee1273042daebfd881",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "0728a60c-d988-534b-ac21-2f5d34d07e63",
+      "is_demo": true,
+      "item_id": "90646f6a-78a8-5e94-8cc3-2ddc31413121",
+      "key": "en:exercise:travel-culture-c-listen-ac",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "s4f"
+        },
+        "display_answer": "Tôi e là máy lạnh trong phòng tôi có vấn đề.",
+        "explanation": {
+          "vi": "I'm afraid ở đây là \"tôi e là, rất tiếc là\", không phải \"tôi sợ\". There's a problem with… là \"có vấn đề với…\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "order_index": 0,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "I'm afraid there's a problem with the air conditioning in my room.",
+        "options": [
+          {
+            "id": "o2c",
+            "lang": "vi",
+            "text": "Tôi muốn bật máy lạnh trong phòng."
+          },
+          {
+            "id": "e5n",
+            "lang": "vi",
+            "text": "Phòng tôi không có máy lạnh."
+          },
+          {
+            "id": "z8h",
+            "lang": "vi",
+            "text": "Tôi sợ máy lạnh trong phòng tôi."
+          },
+          {
+            "id": "s4f",
+            "lang": "vi",
+            "text": "Tôi e là máy lạnh trong phòng tôi có vấn đề."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "67267de3a1969d645449231149dbae503b1be550429ee398dff5f8e2b9ef2708",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "b1863f8f-fc9c-594f-b691-13e638301159",
+      "is_demo": true,
+      "item_id": "bb4ef9a0-e19c-5642-b82e-678211fb2a66",
+      "key": "en:exercise:travel-culture-c-mcq-situation-food",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "x7r"
+        },
+        "display_answer": "Excuse me, I'm afraid my soup is cold. Could you heat it up, please?",
+        "explanation": {
+          "vi": "I'm afraid làm mềm lời phàn nàn, Could you… please? là yêu cầu lịch sự. Các câu khác hoặc ra lệnh thô lỗ, hoặc dùng scared sai nghĩa, hoặc dùng I want to refund sai."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "q2b",
+            "lang": "en",
+            "text": "Hey! This soup is cold. Change it!"
+          },
+          {
+            "id": "k5s",
+            "lang": "en",
+            "text": "Excuse me, I'm scared my soup is cold. You heat it up."
+          },
+          {
+            "id": "x7r",
+            "lang": "en",
+            "text": "Excuse me, I'm afraid my soup is cold. Could you heat it up, please?"
+          },
+          {
+            "id": "w9e",
+            "lang": "en",
+            "text": "Excuse me, my soup is cold, isn't it? I want to refund."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Món súp của bạn bị nguội. Bạn gọi phục vụ. Câu nào lịch sự và tự nhiên nhất?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "cbd7cced45c02cb8df1593b45249a04505c3e76aa6557bd46d24e8ddc532dd0b",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "5495494f-d83e-5ac0-9466-2490cddf1f22",
+      "is_demo": true,
+      "item_id": "fbfb6e53-b285-5192-9225-4a355389ad54",
+      "key": "en:exercise:travel-culture-c-mcq-towel",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "d9k"
+        },
+        "display_answer": "towels",
+        "explanation": {
+          "vi": "Trong phòng tắm, thứ cần \"sạch\" và mang thêm là towels (khăn tắm). Refund là tiền hoàn lại, complaint là lời phàn nàn, tip là tiền boa."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "l5u",
+            "lang": "en",
+            "text": "complaints"
+          },
+          {
+            "id": "d9k",
+            "lang": "en",
+            "text": "towels"
+          },
+          {
+            "id": "v8t",
+            "lang": "en",
+            "text": "tips"
+          },
+          {
+            "id": "r3p",
+            "lang": "en",
+            "text": "refunds"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn từ đúng: There aren't any clean ___ in the bathroom. Could you bring some, please?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "beb7d706dcfddca133fe8e6fc8387f6cf1d0cdeccc7224f912713624d1b085e7",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "d9842f55-6ac8-5e21-bd85-38ae88573824",
+      "is_demo": true,
+      "item_id": "3217a6a3-9c25-5648-aacf-f59cff48b8a4",
+      "key": "en:exercise:travel-culture-c-mcq-wondering",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "g7m"
+        },
+        "display_answer": "I was wondering if you could change our room.",
+        "explanation": {
+          "vi": "I was wondering + if + you could + động từ nguyên mẫu. Không đảo could you sau if, không bỏ if, và không có to sau could/can."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "g7m",
+            "lang": "en",
+            "text": "I was wondering if you could change our room."
+          },
+          {
+            "id": "c6y",
+            "lang": "en",
+            "text": "I was wondering you could change our room."
+          },
+          {
+            "id": "n1x",
+            "lang": "en",
+            "text": "I was wondering if could you change our room."
+          },
+          {
+            "id": "a3w",
+            "lang": "en",
+            "text": "I was wondering if you can to change our room."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nhờ vả nào đúng ngữ pháp?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "3b6b71ab1d3eb3823e90e38508d03dc21eba2218d921802617c269af7a427218",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "c6a45818-9c30-5a61-901d-04d605c1eaea",
+      "is_demo": true,
+      "item_id": "44a3f803-4f36-5a58-964f-e9547cdada7b",
+      "key": "en:exercise:travel-culture-c-order-refund",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "r-id",
+              "r-like",
+              "r-a",
+              "r-refund",
+              "r-please"
+            ]
+          ]
+        },
+        "display_answer": "I'd like a refund, please.",
+        "explanation": {
+          "vi": "I'd like + a refund (danh từ) = tôi muốn được hoàn tiền. Like to refund nghĩa là bạn hoàn tiền cho người khác, nên to là token thừa."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Anh: \"Tôi muốn được hoàn tiền.\"",
+        "tokens": [
+          {
+            "id": "r-refund",
+            "text": "refund"
+          },
+          {
+            "id": "r-please",
+            "text": "please"
+          },
+          {
+            "id": "r-a",
+            "text": "a"
+          },
+          {
+            "id": "r-like",
+            "text": "like"
+          },
+          {
+            "id": "r-id",
+            "text": "I'd"
+          },
+          {
+            "id": "r-to",
+            "text": "to"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "12328de8cd82bed9fd752df52d21f1853a84e19325e0e565f2030108c6a968d5",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "e4a08d72-66ea-59ce-affc-a84c3c4c49ef",
+      "is_demo": true,
+      "item_id": "e2f0d59a-ee52-51ac-83d6-111a027e2d79",
+      "key": "en:exercise:travel-culture-c-order-would-you-mind",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "w-would",
+              "w-you",
+              "w-mind",
+              "w-checking",
+              "w-the",
+              "w-bill",
+              "w-again"
+            ]
+          ]
+        },
+        "display_answer": "Would you mind checking the bill again?",
+        "explanation": {
+          "vi": "Would you mind + V-ing (checking), không dùng to check. Đây là cách nhờ rất lịch sự khi nghi ngờ hoá đơn sai."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "order_index": 10,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Anh: \"Phiền anh kiểm tra lại hoá đơn được không?\"",
+        "tokens": [
+          {
+            "id": "w-bill",
+            "text": "bill"
+          },
+          {
+            "id": "w-checking",
+            "text": "checking"
+          },
+          {
+            "id": "w-you",
+            "text": "you"
+          },
+          {
+            "id": "w-the",
+            "text": "the"
+          },
+          {
+            "id": "w-would",
+            "text": "Would"
+          },
+          {
+            "id": "w-to-check",
+            "text": "to check"
+          },
+          {
+            "id": "w-mind",
+            "text": "mind"
+          },
+          {
+            "id": "w-again",
+            "text": "again"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "d6663a808395dd5ed056e83b84cbd67e89ea5c76fa2c32e296617c0656f44274",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "0fd7da7b-83d5-5817-890d-b8ddf420e930",
+      "is_demo": true,
+      "item_id": "09813742-4b97-59fb-bf21-8faa940d9df3",
+      "key": "en:exercise:travel-culture-c-translate-charged",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I think you've charged me twice for breakfast.",
+            "I think you have charged me twice for breakfast.",
+            "I think you charged me twice for breakfast.",
+            "I think you've charged me twice for the breakfast.",
+            "I think you charged me twice for the breakfast.",
+            "I think you've charged me for breakfast twice.",
+            "I think you charged me for breakfast twice.",
+            "I think you've charged me twice for my breakfast."
+          ]
+        },
+        "display_answer": "I think you've charged me twice for breakfast.",
+        "explanation": {
+          "vi": "Charge + người + for + thứ được tính tiền. Present perfect (you've charged) hay dùng vì kết quả còn trên hoá đơn; past simple cũng được."
+        },
+        "known_wrong": [
+          {
+            "answer": "I think you've paid me twice for breakfast.",
+            "error_tag": "charge_vs_pay",
+            "feedback_vi": "Tính tiền là charge; pay là trả tiền."
+          },
+          {
+            "answer": "I think you've charged twice my breakfast.",
+            "error_tag": "charge_pattern",
+            "feedback_vi": "Cấu trúc đúng là charge someone (twice) for something."
+          },
+          {
+            "answer": "I think you charge me twice for breakfast.",
+            "error_tag": "tense_present_for_past",
+            "feedback_vi": "Việc đã xảy ra nên dùng charged hoặc have charged."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi nghĩ anh đã tính tiền bữa sáng của tôi hai lần."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "6362a9078e0b3969d15845055a30ad4410ec06dcb4260c99ed5b38ba30dd17d1",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "4c55a10a-d9b5-5c9a-aa75-d0ae19a9a87b",
+      "is_demo": true,
+      "item_id": "6706c02f-b2ae-56e7-9e1f-d9d669c61f1a",
+      "key": "en:exercise:travel-culture-c-translate-complaint-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Tôi muốn khiếu nại. Wi-Fi không vào được và chưa ai sửa cả.",
+            "Tôi muốn khiếu nại. Wi-Fi không hoạt động và chưa ai sửa.",
+            "Tôi muốn khiếu nại. Wi-Fi bị hỏng và chưa có ai sửa.",
+            "Tôi muốn phàn nàn. Wi-Fi không hoạt động và chưa ai sửa cả.",
+            "Tôi muốn phàn nàn. Wi-Fi không vào được và chưa ai sửa.",
+            "Tôi muốn phàn nàn. Wi-Fi bị hỏng và chưa ai sửa cả.",
+            "Tôi muốn khiếu nại. Mạng Wi-Fi không hoạt động và chưa ai sửa cả.",
+            "Tôi muốn khiếu nại. Wifi không vào được và chưa ai sửa cả.",
+            "Tôi muốn phàn nàn. Wifi không hoạt động và vẫn chưa ai sửa.",
+            "Tôi muốn khiếu nại. Wi-Fi không dùng được và vẫn chưa có ai sửa."
+          ]
+        },
+        "display_answer": "Tôi muốn khiếu nại. Wi-Fi không vào được và chưa ai sửa cả.",
+        "explanation": {
+          "vi": "Make a complaint = khiếu nại, phàn nàn chính thức. Isn't working = không hoạt động; nobody has fixed it = chưa ai sửa (đến giờ vẫn hỏng)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "I'd like to make a complaint. The Wi-Fi isn't working and nobody has fixed it."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "b91fce62fd4bf4bbc59c56b8d5bed20a8c06ed60b9ce9227e1b08312ccbdde5b",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "0bcb1482-935b-508b-9ffc-7050cf7f9ddf",
+      "is_demo": true,
+      "item_id": "3217a6a3-9c25-5648-aacf-f59cff48b8a4",
+      "key": "en:exercise:travel-culture-c-translate-wondering",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I was wondering if I could check out a bit later.",
+            "I was wondering if I could check out a little later.",
+            "I was wondering if I could check out slightly later.",
+            "I was wondering whether I could check out a bit later.",
+            "I was wondering whether I could check out a little later.",
+            "I was wondering if I could check out a bit late.",
+            "I was wondering if I could have a late check-out.",
+            "I was wondering if I could have a late checkout."
+          ]
+        },
+        "display_answer": "I was wondering if I could check out a bit later.",
+        "explanation": {
+          "vi": "I was wondering if + I could + check out = cách xin phép rất lịch sự. A bit later / a little later = muộn hơn một chút."
+        },
+        "known_wrong": [
+          {
+            "answer": "I was wondering if could I check out a bit later.",
+            "error_tag": "indirect_question_order",
+            "feedback_vi": "Sau if dùng trật tự câu kể - if I could."
+          },
+          {
+            "answer": "I was wondering I could check out a bit later.",
+            "error_tag": "missing_if",
+            "feedback_vi": "Không bỏ if - I was wondering if I could…"
+          },
+          {
+            "answer": "I was wondering if I could to check out a bit later.",
+            "error_tag": "modal_to",
+            "feedback_vi": "Sau could là động từ nguyên mẫu không có to."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Không biết tôi có thể trả phòng muộn hơn một chút được không."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "5276a74d71e71475b780d859283bf0388622b5393de10d0d013ccb218ea0f2ab",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "e7d59583-8245-5bf9-926a-20c50b7ef839",
+      "is_demo": true,
+      "item_id": "d6c2090d-931b-56fb-8e15-67379db1ff52",
+      "key": "en:exercise:travel-culture-f-fill-ing-ed-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "interesting"
+            ],
+            "b2": [
+              "interested"
+            ],
+            "b3": [
+              "bored"
+            ]
+          }
+        },
+        "display_answer": "The museum was really interesting, and I'm interested in history, so I didn't get bored.",
+        "explanation": {
+          "vi": "Bảo tàng gây ra hứng thú → interesting; mình cảm thấy hứng thú → interested in; mình (không) thấy chán → bored."
+        },
+        "known_wrong": [
+          {
+            "answer": "boring",
+            "error_tag": "ed_ing_adjective",
+            "feedback_vi": "Cảm giác của mình là bored; boring tả thứ gây chán."
+          },
+          {
+            "answer": "interest",
+            "error_tag": "ed_ing_adjective",
+            "feedback_vi": "Cần tính từ có đuôi -ing (tả bảo tàng) hoặc -ed (tả cảm giác của bạn)."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 11
+          },
+          {
+            "id": "b2",
+            "width_hint": 10
+          },
+          {
+            "id": "b3",
+            "width_hint": 5
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Bảo tàng rất thú vị, và mình thích lịch sử, nên mình không thấy chán.",
+          "Gợi ý: bảo tàng gây ra cảm giác → -ing; mình cảm thấy → -ed."
+        ],
+        "template": "The museum was really {{b1}} (interest), and I'm {{b2}} (interest) in history, so I didn't get {{b3}} (bore)."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "0d33a045ed97a8e6bdbaf5c7f2c21ece20d5e74d8566927379d895563f7bb58e",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "f4f487ae-8095-51d9-923e-bae1a860afa4",
+      "is_demo": true,
+      "item_id": "192ce789-5c8a-5617-bf9d-785ee514d8a3",
+      "key": "en:exercise:travel-culture-f-fill-so-such",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "so"
+            ],
+            "b2": [
+              "such"
+            ]
+          }
+        },
+        "display_answer": "The trip was so exhausting that I slept on the bus. But it was such an amazing experience that I want to go again.",
+        "explanation": {
+          "vi": "Exhausting là tính từ không có danh từ sau → so. An amazing experience là cụm danh từ → such (an amazing experience)."
+        },
+        "known_wrong": [
+          {
+            "answer": "very",
+            "error_tag": "so_such_that",
+            "feedback_vi": "Cấu trúc \"quá… đến nỗi\" cần so/such + that, không dùng very."
+          },
+          {
+            "answer": "too",
+            "error_tag": "so_such_that",
+            "feedback_vi": "Too… that không đúng; dùng so + tính từ + that."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          },
+          {
+            "id": "b2",
+            "width_hint": 5
+          }
+        ],
+        "template": "The trip was {{b1}} exhausting that I slept on the bus. But it was {{b2}} an amazing experience that I want to go again."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "df4965baa06f839d3cfe9ea45bf2c930db190e910814d9117dc86cfea0dfccec",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "914ea86f-8e36-59d9-a2df-938afca02050",
+      "is_demo": true,
+      "item_id": "4a852f01-6b9a-590c-a146-5072f1288707",
+      "key": "en:exercise:travel-culture-f-listen-exhausted",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "q4n"
+        },
+        "display_answer": "Chuyến đi bộ mệt rã rời nên khi về tới khách sạn bọn mình kiệt sức.",
+        "explanation": {
+          "vi": "Exhausting tả chuyến đi bộ (gây mệt), exhausted tả cảm giác kiệt sức của người. Câu không nói chuyến đi chán hay bọn mình còn khoẻ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "order_index": 0,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "The walk was exhausting, so we were exhausted when we got back to the hotel.",
+        "options": [
+          {
+            "id": "v8c",
+            "lang": "vi",
+            "text": "Chuyến đi bộ rất thú vị nên khi về tới khách sạn bọn mình vẫn còn khoẻ."
+          },
+          {
+            "id": "l2e",
+            "lang": "vi",
+            "text": "Bọn mình mệt nên không đi bộ về khách sạn."
+          },
+          {
+            "id": "x6a",
+            "lang": "vi",
+            "text": "Chuyến đi bộ chán nên bọn mình về khách sạn sớm."
+          },
+          {
+            "id": "q4n",
+            "lang": "vi",
+            "text": "Chuyến đi bộ mệt rã rời nên khi về tới khách sạn bọn mình kiệt sức."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "60bfaaf5535b0062dc1301274b76e08ab2bcb3172f6521032f68d125ac7a1ed7",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "143cd0f2-0bb7-5e6e-b26f-f4e20d18823a",
+      "is_demo": true,
+      "item_id": "f7ad0d6e-4fdb-5b4e-9fdb-778c4fbfc14d",
+      "key": "en:exercise:travel-culture-f-mcq-bored",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c5r"
+        },
+        "display_answer": "I'm bored.",
+        "explanation": {
+          "vi": "Cảm giác của bạn dùng tính từ -ed - I'm bored. I'm boring nghĩa là \"mình là người nhạt nhẽo\"; I bored thiếu be; boredom là danh từ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "i3g",
+            "lang": "en",
+            "text": "I'm boredom."
+          },
+          {
+            "id": "c5r",
+            "lang": "en",
+            "text": "I'm bored."
+          },
+          {
+            "id": "h1m",
+            "lang": "en",
+            "text": "I'm boring."
+          },
+          {
+            "id": "w7t",
+            "lang": "en",
+            "text": "I bored."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn muốn nói \"Mình thấy chán\" trong một buổi tham quan dài. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "6167ca3ed8014147b7cde664bb001b11f03f4d9574f580835a8428ee2214f90d",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "d0216e8d-208e-5bae-ac92-1312068e2eec",
+      "is_demo": true,
+      "item_id": "6b60a4e9-14ec-5936-95b0-f3d556568fdc",
+      "key": "en:exercise:travel-culture-f-mcq-situation-host",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r5y"
+        },
+        "display_answer": "I felt really embarrassed.",
+        "explanation": {
+          "vi": "Cảm giác của bạn dùng -ed - I felt embarrassed. Tình huống mới là embarrassing (It was embarrassing); boring không phải nghĩa \"ngượng\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "u9f",
+            "lang": "en",
+            "text": "It was really embarrassed."
+          },
+          {
+            "id": "r5y",
+            "lang": "en",
+            "text": "I felt really embarrassed."
+          },
+          {
+            "id": "k1o",
+            "lang": "en",
+            "text": "I felt really embarrassing."
+          },
+          {
+            "id": "d7w",
+            "lang": "en",
+            "text": "I felt really boring."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn quên cởi giày khi vào nhà một người Nhật. Bạn kể lại cảm giác của mình. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a0038fc550f5251139fc7b920045b724589a9b8036cb63334aa3e6b8b0f96aba",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "6873c6cb-c133-5f3a-a642-be97c6380dc1",
+      "is_demo": true,
+      "item_id": "192ce789-5c8a-5617-bf9d-785ee514d8a3",
+      "key": "en:exercise:travel-culture-f-mcq-such",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "b9d"
+        },
+        "display_answer": "such a",
+        "explanation": {
+          "vi": "Sau chỗ trống là cụm danh từ số ít (beautiful day), nên dùng such a. So chỉ đứng trước tính từ không có danh từ; such không có a thì thiếu mạo từ cho danh từ số ít."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "e2k",
+            "lang": "en",
+            "text": "such"
+          },
+          {
+            "id": "b9d",
+            "lang": "en",
+            "text": "such a"
+          },
+          {
+            "id": "m3u",
+            "lang": "en",
+            "text": "so"
+          },
+          {
+            "id": "z6p",
+            "lang": "en",
+            "text": "a so"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn đáp án đúng: It was ___ beautiful day that we walked to the beach.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a3ae06de5ccc71697109aca81d7bb4a3a3e8fcce4bc9335c3c3fb6f6bacdd3ab",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "4a8fb704-3823-5012-a84c-fe6ddc287f23",
+      "is_demo": true,
+      "item_id": "6217067c-1e81-522b-a42b-23c2a384d401",
+      "key": "en:exercise:travel-culture-f-order-interested",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "i-are",
+              "i-you",
+              "i-interested",
+              "i-in",
+              "i-local",
+              "i-culture"
+            ]
+          ]
+        },
+        "display_answer": "Are you interested in local culture?",
+        "explanation": {
+          "vi": "Hỏi về cảm giác của người nghe nên dùng interested in. Are you interesting? lại là hỏi \"bạn có thú vị không\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "order_index": 10,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Anh: \"Bạn có thích văn hoá địa phương không?\"",
+        "tokens": [
+          {
+            "id": "i-culture",
+            "text": "culture"
+          },
+          {
+            "id": "i-interesting",
+            "text": "interesting"
+          },
+          {
+            "id": "i-in",
+            "text": "in"
+          },
+          {
+            "id": "i-you",
+            "text": "you"
+          },
+          {
+            "id": "i-local",
+            "text": "local"
+          },
+          {
+            "id": "i-are",
+            "text": "Are"
+          },
+          {
+            "id": "i-interested",
+            "text": "interested"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "0b00e6720fb6d0ccd7fc5842bff3cdacc117359f918f7bd4f0339918a5f29b34",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "d0889a70-d9b5-521b-b391-702ca309f4f0",
+      "is_demo": true,
+      "item_id": "ac093103-e304-5b7f-b29a-f13acfadd3db",
+      "key": "en:exercise:travel-culture-f-order-so-that",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "s-the",
+              "s-hotel",
+              "s-was",
+              "s-so",
+              "s-noisy",
+              "s-that",
+              "s-we",
+              "s-couldnt",
+              "s-sleep"
+            ],
+            [
+              "s-the",
+              "s-hotel",
+              "s-was",
+              "s-so",
+              "s-noisy",
+              "s-we",
+              "s-couldnt",
+              "s-sleep"
+            ]
+          ]
+        },
+        "display_answer": "The hotel was so noisy that we couldn't sleep.",
+        "explanation": {
+          "vi": "Noisy là tính từ đứng một mình (không có danh từ sau), nên dùng so, không dùng such. That có thể bỏ trong văn nói."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Anh: \"Khách sạn ồn đến nỗi chúng tôi không ngủ được.\"",
+        "tokens": [
+          {
+            "id": "s-sleep",
+            "text": "sleep"
+          },
+          {
+            "id": "s-that",
+            "text": "that"
+          },
+          {
+            "id": "s-was",
+            "text": "was"
+          },
+          {
+            "id": "s-hotel",
+            "text": "hotel"
+          },
+          {
+            "id": "s-couldnt",
+            "text": "couldn't"
+          },
+          {
+            "id": "s-noisy",
+            "text": "noisy"
+          },
+          {
+            "id": "s-we",
+            "text": "we"
+          },
+          {
+            "id": "s-the",
+            "text": "The"
+          },
+          {
+            "id": "s-so",
+            "text": "so"
+          },
+          {
+            "id": "s-such",
+            "text": "such"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "5a3947793ca5f38fece0785abec0844d86b8178722bdcef292de1d06b5de24b3",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "d4aee287-48f9-5939-964a-b2e393913215",
+      "is_demo": true,
+      "item_id": "0ee0805d-9bff-51fd-8a79-47dff594d82c",
+      "key": "en:exercise:travel-culture-f-translate-boring-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Người hướng dẫn nhạt nhẽo đến nỗi ai cũng thấy chán.",
+            "Hướng dẫn viên nhạt nhẽo đến nỗi ai cũng thấy chán.",
+            "Hướng dẫn viên nói chán đến nỗi mọi người đều thấy chán.",
+            "Hướng dẫn viên chán đến mức ai cũng thấy chán.",
+            "Hướng dẫn viên nhạt nhẽo đến mức mọi người đều chán.",
+            "Hướng dẫn viên tẻ nhạt đến nỗi mọi người đều thấy chán.",
+            "Người hướng dẫn tẻ nhạt đến mức ai cũng chán.",
+            "Hướng dẫn viên nhàm chán đến nỗi ai cũng thấy chán.",
+            "Hướng dẫn viên quá nhạt nhẽo nên ai cũng thấy chán.",
+            "Hướng dẫn viên chán quá nên mọi người đều chán."
+          ]
+        },
+        "display_answer": "Hướng dẫn viên nhạt nhẽo đến nỗi ai cũng thấy chán.",
+        "explanation": {
+          "vi": "Boring tả người hướng dẫn (gây chán, nhạt nhẽo); bored tả cảm giác của mọi người. So… that = \"đến nỗi, đến mức\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "The guide was so boring that everyone was bored."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "be39d8afbc78df054154059be7f90f5838150d5f8036dcb8f632c9ac5562bc6a",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "7ca1c7d1-1e08-51f4-84b4-c684c1fb1f4e",
+      "is_demo": true,
+      "item_id": "f81e1e88-5e94-5edd-836a-4aede2af7dcb",
+      "key": "en:exercise:travel-culture-f-translate-disappointed",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "We were disappointed with the hotel room.",
+            "We were disappointed with our hotel room.",
+            "We were disappointed about the hotel room.",
+            "We are disappointed with the hotel room.",
+            "We're disappointed with the hotel room.",
+            "We were disappointed by the hotel room.",
+            "We were disappointed with the room at the hotel."
+          ]
+        },
+        "display_answer": "We were disappointed with the hotel room.",
+        "explanation": {
+          "vi": "Cảm giác của người dùng disappointed (đuôi -ed), cần be đi trước và giới từ with/about."
+        },
+        "known_wrong": [
+          {
+            "answer": "We were disappointing with the hotel room.",
+            "error_tag": "ed_ing_adjective",
+            "feedback_vi": "Cảm giác của chúng tôi dùng -ed - disappointed."
+          },
+          {
+            "answer": "We disappointed with the hotel room.",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu were - tính từ cần be đi trước."
+          },
+          {
+            "answer": "We were disappointed of the hotel room.",
+            "error_tag": "preposition",
+            "feedback_vi": "Nói disappointed with/about, không dùng of."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Chúng tôi thất vọng về phòng khách sạn."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "44598c9cf08bfca8cfe198815d6945b0eae42740a77dcef2d9572d435b03c3dc",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "753105c9-4ae0-59d2-92fe-2eea38d18838",
+      "is_demo": true,
+      "item_id": "192ce789-5c8a-5617-bf9d-785ee514d8a3",
+      "key": "en:exercise:travel-culture-f-translate-such-day",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "It was such a beautiful day that we walked to the beach.",
+            "It was such a beautiful day we walked to the beach.",
+            "It was such a nice day that we walked to the beach.",
+            "It was such a lovely day that we walked to the beach.",
+            "The weather was so beautiful that we walked to the beach.",
+            "The weather was so nice that we walked to the beach.",
+            "The weather was so good that we walked to the beach.",
+            "It was such good weather that we walked to the beach.",
+            "It was such a beautiful day that we walked to the sea."
+          ]
+        },
+        "display_answer": "It was such a beautiful day that we walked to the beach.",
+        "explanation": {
+          "vi": "Such a + tính từ + danh từ số ít + that. Nếu dùng so thì bỏ danh từ - The weather was so beautiful that…"
+        },
+        "known_wrong": [
+          {
+            "answer": "It was so beautiful day that we walked to the beach.",
+            "error_tag": "so_such_that",
+            "feedback_vi": "Có danh từ day thì dùng such a, không dùng so."
+          },
+          {
+            "answer": "It was such beautiful day that we walked to the beach.",
+            "error_tag": "article",
+            "feedback_vi": "Day là danh từ số ít đếm được, cần a sau such."
+          },
+          {
+            "answer": "It was a such beautiful day that we walked to the beach.",
+            "error_tag": "word_order",
+            "feedback_vi": "A đứng sau such - such a beautiful day."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Hôm đó trời đẹp đến nỗi chúng tôi đi bộ ra biển."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "b9c7518e1e8792e224be98cdcda319565f7f29cf09630e038f0faaf365208d76",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "6e53dec0-784d-5d7c-b52a-89de5871e9e7",
+      "is_demo": true,
+      "item_id": "0b058a4f-3b51-5ab1-99af-a7fb13ee1c6d",
+      "key": "en:exercise:travel-culture-q-fill-few-little",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "few"
+            ],
+            "b2": [
+              "little"
+            ],
+            "b3": [
+              "lot"
+            ]
+          }
+        },
+        "display_answer": "We stayed in Sa Pa for a few days. We spent a little money on souvenirs, and we spent a lot of money on food.",
+        "explanation": {
+          "vi": "Days đếm được nên a few days; money không đếm được nên a little money; a lot of money = nhiều tiền, dùng được với cả hai loại danh từ."
+        },
+        "known_wrong": [
+          {
+            "answer": "many",
+            "error_tag": "quantifier_countable",
+            "feedback_vi": "Sau a không dùng many; với danh từ đếm được dùng a few, với money dùng a little, còn \"nhiều\" là a lot of."
+          },
+          {
+            "answer": "much",
+            "error_tag": "quantifier_countable",
+            "feedback_vi": "Sau a không dùng much; với money dùng a little hoặc a lot of."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          },
+          {
+            "id": "b2",
+            "width_hint": 6
+          },
+          {
+            "id": "b3",
+            "width_hint": 4
+          }
+        ],
+        "template": "We stayed in Sa Pa for a {{b1}} days. We spent a {{b2}} money on souvenirs, and we spent a {{b3}} of money on food."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "d84dcca14d1a03463dbf9ca0796cf0e67c239c29f86d62ae215fc76ed3a592c2",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "5e3fbd40-d165-51cd-a276-49e80ebfc30d",
+      "is_demo": true,
+      "item_id": "d53a661b-6769-573c-be2f-c960780b3598",
+      "key": "en:exercise:travel-culture-q-fill-hardly-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "hardly"
+            ],
+            "b2": [
+              "None"
+            ]
+          }
+        },
+        "display_answer": "It was the rainy season, so there were hardly any tourists. None of the hotels were full.",
+        "explanation": {
+          "vi": "Hardly any = hầu như không có, đã mang nghĩa phủ định nên were giữ thể khẳng định. None of the hotels = không khách sạn nào; no không đứng trước of."
+        },
+        "known_wrong": [
+          {
+            "answer": "hard",
+            "error_tag": "hard_vs_hardly",
+            "feedback_vi": "Hard là \"chăm chỉ, khó\"; \"hầu như không\" là hardly any."
+          },
+          {
+            "answer": "not",
+            "error_tag": "hardly_any",
+            "feedback_vi": "Câu cần nghĩa \"hầu như không\" - hardly any; not any là \"không có chút nào\"."
+          },
+          {
+            "answer": "No",
+            "error_tag": "none_vs_no",
+            "feedback_vi": "No không đi với of; nói None of the hotels."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 7
+          },
+          {
+            "id": "b2",
+            "width_hint": 5
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Đang mùa mưa nên hầu như không có khách du lịch. Không khách sạn nào kín phòng.",
+          "Gợi ý: hầu như không = h… any; không cái nào trong số = N… of."
+        ],
+        "template": "It was the rainy season, so there were {{b1}} any tourists. {{b2}} of the hotels were full."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "03793fcc8b23a67477521d991a86c05d8fe1708ac72401ecc1a97467f5b3baa2",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "36e5e2fe-00bb-5fd1-ad53-fd05bcb1d6f6",
+      "is_demo": true,
+      "item_id": "60d17030-b4a1-5662-af6c-9b88759e986a",
+      "key": "en:exercise:travel-culture-q-listen-money",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k7d"
+        },
+        "display_answer": "Bọn mình chỉ còn một ít tiền, nhưng còn dư thời gian.",
+        "explanation": {
+          "vi": "A little money là \"một ít tiền\" (vẫn còn), plenty of time là \"dư thời gian\". Câu không nói hết tiền hay hết thời gian."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "order_index": 0,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "We've only got a little money left, but we've got plenty of time.",
+        "options": [
+          {
+            "id": "w2p",
+            "lang": "vi",
+            "text": "Bọn mình không còn chút tiền nào và cũng hết thời gian."
+          },
+          {
+            "id": "k7d",
+            "lang": "vi",
+            "text": "Bọn mình chỉ còn một ít tiền, nhưng còn dư thời gian."
+          },
+          {
+            "id": "m4z",
+            "lang": "vi",
+            "text": "Bọn mình còn vài đồng, nhưng không có thời gian."
+          },
+          {
+            "id": "h9s",
+            "lang": "vi",
+            "text": "Bọn mình còn nhiều tiền, nhưng chỉ còn một ít thời gian."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "77dd50493f3a12ddc2c684fb1dfd628ed39f0f3b1fcca5ffa011f20d6b564f83",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "8a524384-32a5-525d-a876-bbb58246cfe6",
+      "is_demo": true,
+      "item_id": "0b058a4f-3b51-5ab1-99af-a7fb13ee1c6d",
+      "key": "en:exercise:travel-culture-q-mcq-a-few",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "t3b"
+        },
+        "display_answer": "a few",
+        "explanation": {
+          "vi": "Souvenirs là danh từ đếm được số nhiều nên dùng a few. A little và much đi với danh từ không đếm được; a lot cần thêm of (a lot of souvenirs)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "e1v",
+            "lang": "en",
+            "text": "a lot"
+          },
+          {
+            "id": "t3b",
+            "lang": "en",
+            "text": "a few"
+          },
+          {
+            "id": "y5n",
+            "lang": "en",
+            "text": "much"
+          },
+          {
+            "id": "r8q",
+            "lang": "en",
+            "text": "a little"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn đáp án đúng: I bought ___ souvenirs for my family.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "addd90939e8a1ad0586f53f6d3935a478275bbbe399b1520e55060f061f8445b",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "9fe85fe4-9d58-5c5f-bbc4-ae5a0bb022f2",
+      "is_demo": true,
+      "item_id": "1465424c-3ed9-536c-9b7e-cd31332e78b9",
+      "key": "en:exercise:travel-culture-q-mcq-accommodation",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "n5f"
+        },
+        "display_answer": "accommodation",
+        "explanation": {
+          "vi": "Khách sạn, nhà nghỉ, homestay đều là chỗ ở - accommodation. Souvenir là quà lưu niệm, budget là ngân sách, tourist là khách du lịch."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "order_index": 3,
+      "prompt": {
+        "options": [
+          {
+            "id": "n5f",
+            "lang": "en",
+            "text": "accommodation"
+          },
+          {
+            "id": "b7r",
+            "lang": "en",
+            "text": "souvenir"
+          },
+          {
+            "id": "c1w",
+            "lang": "en",
+            "text": "tourist"
+          },
+          {
+            "id": "z3k",
+            "lang": "en",
+            "text": "budget"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn từ đúng: Hotels, hostels and homestays are all types of ___.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "e7e9759bfa273b53dcbd00747b2b6b27fc57bf22b9b4656e865071abdab61375",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "edf1aebc-3dd0-590f-b052-b2ac0afc28fc",
+      "is_demo": true,
+      "item_id": "60d17030-b4a1-5662-af6c-9b88759e986a",
+      "key": "en:exercise:travel-culture-q-mcq-little-money",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "g6c"
+        },
+        "display_answer": "I've got a little money, so I can buy a bus ticket.",
+        "explanation": {
+          "vi": "Money không đếm được nên dùng a little, không dùng a few và không thêm -s. Little (không có a) nghĩa là \"rất ít, không đủ\", mâu thuẫn với \"đủ để mua vé\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "o9l",
+            "lang": "en",
+            "text": "I've got little money, so I can buy a bus ticket."
+          },
+          {
+            "id": "u2x",
+            "lang": "en",
+            "text": "I've got a few money, so I can buy a bus ticket."
+          },
+          {
+            "id": "g6c",
+            "lang": "en",
+            "text": "I've got a little money, so I can buy a bus ticket."
+          },
+          {
+            "id": "d4j",
+            "lang": "en",
+            "text": "I've got a few moneys, so I can buy a bus ticket."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu nào đúng khi bạn muốn nói \"Mình còn một ít tiền, đủ để mua vé xe buýt\"?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "05a819eaa54d34bf660d190c0e3f55880b6e9a41a0c335020f6b37381271a33c",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "643866ff-d666-526a-a4eb-0d6a4d26fc3a",
+      "is_demo": true,
+      "item_id": "d53a661b-6769-573c-be2f-c960780b3598",
+      "key": "en:exercise:travel-culture-q-mcq-situation-budget",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "s8m"
+        },
+        "display_answer": "We've got hardly any money left, so let's eat at a local market.",
+        "explanation": {
+          "vi": "Hardly any money = hầu như không còn tiền, đúng tình huống. Haven't + hardly any là phủ định hai lần; plenty of nghĩa ngược lại; a few không đi với money."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "j6t",
+            "lang": "en",
+            "text": "We've got plenty of money left, so let's eat at a local market."
+          },
+          {
+            "id": "f1h",
+            "lang": "en",
+            "text": "We've got a few money left, so let's eat at a local market."
+          },
+          {
+            "id": "a2y",
+            "lang": "en",
+            "text": "We haven't got hardly any money left, so let's eat at a local market."
+          },
+          {
+            "id": "s8m",
+            "lang": "en",
+            "text": "We've got hardly any money left, so let's eat at a local market."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Cuối chuyến đi, bạn gần như tiêu hết ngân sách. Bạn nói với bạn đồng hành thế nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "5666361c456995474ef651e91dc8bca11b168fc169da1912138ad327a44bb516",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "15d41961-ec9c-51e9-bfa3-7f2a96af5a15",
+      "is_demo": true,
+      "item_id": "d06029b3-12dd-5b13-a6df-f26b5858623e",
+      "key": "en:exercise:travel-culture-q-order-budget",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "g-our",
+              "g-budget1",
+              "g-was",
+              "g-small",
+              "g-so",
+              "g-we",
+              "g-stayed",
+              "g-in",
+              "g-a",
+              "g-budget2",
+              "g-hotel"
+            ],
+            [
+              "g-our",
+              "g-budget2",
+              "g-was",
+              "g-small",
+              "g-so",
+              "g-we",
+              "g-stayed",
+              "g-in",
+              "g-a",
+              "g-budget1",
+              "g-hotel"
+            ]
+          ]
+        },
+        "display_answer": "Our budget was small, so we stayed in a budget hotel.",
+        "explanation": {
+          "vi": "Budget vừa là danh từ (our budget = ngân sách) vừa đứng trước danh từ như tính từ (a budget hotel = khách sạn giá rẻ). Hai token budget giống nhau nên đổi chỗ vẫn đúng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "order_index": 11,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Anh: \"Ngân sách của chúng tôi nhỏ nên chúng tôi ở một khách sạn bình dân.\"",
+        "tokens": [
+          {
+            "id": "g-hotel",
+            "text": "hotel"
+          },
+          {
+            "id": "g-small",
+            "text": "small"
+          },
+          {
+            "id": "g-so",
+            "text": "so"
+          },
+          {
+            "id": "g-our",
+            "text": "Our"
+          },
+          {
+            "id": "g-stayed",
+            "text": "stayed"
+          },
+          {
+            "id": "g-was",
+            "text": "was"
+          },
+          {
+            "id": "g-a",
+            "text": "a"
+          },
+          {
+            "id": "g-budget2",
+            "text": "budget"
+          },
+          {
+            "id": "g-we",
+            "text": "we"
+          },
+          {
+            "id": "g-in",
+            "text": "in"
+          },
+          {
+            "id": "g-budget1",
+            "text": "budget"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "c731da5ea74e5b66389bc60f9c32d4e7d675932b15b6be3684d19429b66782a7",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "1a823d04-9470-5365-96a7-707c6665b9d5",
+      "is_demo": true,
+      "item_id": "769b8bb6-e145-5624-a2a1-5bcd81520e00",
+      "key": "en:exercise:travel-culture-q-order-plenty",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "p-dont",
+              "p-worry",
+              "p-weve",
+              "p-got",
+              "p-plenty",
+              "p-of",
+              "p-time"
+            ]
+          ]
+        },
+        "display_answer": "Don't worry, we've got plenty of time.",
+        "explanation": {
+          "vi": "Plenty of + danh từ không đếm được (time) = dư thời gian. Few chỉ đi với danh từ đếm được số nhiều nên là token thừa."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "order_index": 5,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Anh: \"Đừng lo, chúng ta còn dư thời gian.\"",
+        "tokens": [
+          {
+            "id": "p-time",
+            "text": "time"
+          },
+          {
+            "id": "p-worry",
+            "text": "worry"
+          },
+          {
+            "id": "p-of",
+            "text": "of"
+          },
+          {
+            "id": "p-weve",
+            "text": "we've"
+          },
+          {
+            "id": "p-dont",
+            "text": "Don't"
+          },
+          {
+            "id": "p-got",
+            "text": "got"
+          },
+          {
+            "id": "p-few",
+            "text": "few"
+          },
+          {
+            "id": "p-plenty",
+            "text": "plenty"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "11116887c87618a28a93df78050ffecb8031cf35fbcccccb37b81cacb1e919e4",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "9d631c61-1019-572f-81ce-d185352e98b3",
+      "is_demo": true,
+      "item_id": "60d17030-b4a1-5662-af6c-9b88759e986a",
+      "key": "en:exercise:travel-culture-q-translate-money",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I only have a little money left.",
+            "I've only got a little money left.",
+            "I have only a little money left.",
+            "I only have a little money.",
+            "I've only got a little money.",
+            "I have only got a little money left.",
+            "I only have a bit of money left."
+          ]
+        },
+        "display_answer": "I only have a little money left.",
+        "explanation": {
+          "vi": "Money không đếm được nên dùng a little; có a mới mang nghĩa \"một ít (vẫn còn)\". Left nghĩa là \"còn lại\"."
+        },
+        "known_wrong": [
+          {
+            "answer": "I only have a few money left.",
+            "error_tag": "a_few_uncountable",
+            "feedback_vi": "Money không đếm được - dùng a little, không dùng a few."
+          },
+          {
+            "answer": "I only have little money left.",
+            "error_tag": "little_vs_a_little",
+            "feedback_vi": "Little không có a nghĩa là \"gần như không có\"; \"một ít\" cần a little."
+          },
+          {
+            "answer": "I only have a little moneys left.",
+            "error_tag": "uncountable_plural",
+            "feedback_vi": "Money không đếm được nên không thêm -s."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "order_index": 8,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Mình chỉ còn một ít tiền thôi."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "4ea057ce9c2418801483b5f99df587c112c16e3b337d12375be334f1994dbe23",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "cb18f10f-1018-5d8c-94a4-d199906e1bd4",
+      "is_demo": true,
+      "item_id": "d53102f3-9ad6-5f78-8a79-deda5465c902",
+      "key": "en:exercise:travel-culture-q-translate-none",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "None of us could speak Japanese.",
+            "None of us can speak Japanese.",
+            "None of us spoke Japanese.",
+            "None of us speak Japanese.",
+            "None of us could speak any Japanese.",
+            "None of us were able to speak Japanese."
+          ]
+        },
+        "display_answer": "None of us could speak Japanese.",
+        "explanation": {
+          "vi": "\"Không ai trong số bọn mình\" là None of us. None of đã mang nghĩa phủ định nên động từ giữ thể khẳng định (could speak)."
+        },
+        "known_wrong": [
+          {
+            "answer": "None of us couldn't speak Japanese.",
+            "error_tag": "double_negative",
+            "feedback_vi": "None of đã phủ định nên dùng could, không dùng couldn't."
+          },
+          {
+            "answer": "No one of us could speak Japanese.",
+            "error_tag": "none_vs_no",
+            "feedback_vi": "Dùng none of us, không nói no one of us."
+          },
+          {
+            "answer": "None us could speak Japanese.",
+            "error_tag": "none_of",
+            "feedback_vi": "Thiếu of - None of us."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Không ai trong số bọn mình nói được tiếng Nhật."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "fcfd797d27d2883cf10066eaa66ec4f0dd03e28b9a83cf8c12a54fc8af563532",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "78334e97-dc70-5a88-97c8-3d170e7cc859",
+      "is_demo": true,
+      "item_id": "7c845809-76d8-5955-8591-607ac653db02",
+      "key": "en:exercise:travel-culture-q-translate-tourists",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Rất ít khách du lịch đến ngôi làng này, nhưng người dân địa phương rất thân thiện.",
+            "Rất ít khách du lịch ghé thăm ngôi làng này, nhưng người dân địa phương rất thân thiện.",
+            "Rất ít du khách đến ngôi làng này, nhưng người dân địa phương rất thân thiện.",
+            "Rất ít du khách đến làng này, nhưng người dân địa phương rất thân thiện.",
+            "Ít khách du lịch đến làng này, nhưng người dân địa phương rất thân thiện.",
+            "Có rất ít khách du lịch đến ngôi làng này, nhưng người dân địa phương rất thân thiện.",
+            "Rất ít khách du lịch đến ngôi làng này, nhưng người dân ở đây rất thân thiện.",
+            "Rất ít khách du lịch đến thăm làng này, nhưng dân địa phương rất thân thiện.",
+            "Hầu như không có khách du lịch đến ngôi làng này, nhưng người dân địa phương rất thân thiện."
+          ]
+        },
+        "display_answer": "Rất ít khách du lịch đến ngôi làng này, nhưng người dân địa phương rất thân thiện.",
+        "explanation": {
+          "vi": "Few (không có a) nhấn mạnh \"rất ít, không nhiều như mong đợi\". The locals là người dân địa phương."
+        },
+        "known_wrong": [
+          {
+            "answer": "Một vài khách du lịch đến ngôi làng này, nhưng người dân địa phương rất thân thiện.",
+            "error_tag": "few_vs_a_few",
+            "feedback_vi": "Few không có a nghĩa là \"rất ít\", không phải \"một vài\" (a few)."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "order_index": 10,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "Few tourists visit this village, but the locals are very friendly."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "89dce8eda0cfe1849eb89306d7e7a76f93e2564d88b6374e5f47566761b40633",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "0303e898-e671-5af5-b77a-d4cc35682f07",
+      "is_demo": true,
+      "item_id": "8e44b61d-8057-5a3a-a9d5-7948b4a46bac",
+      "key": "en:exercise:travel-culture-qc-fill-if-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "if",
+              "whether"
+            ],
+            "b2": [
+              "goes"
+            ]
+          }
+        },
+        "display_answer": "Excuse me, do you know if this bus goes to the airport?",
+        "explanation": {
+          "vi": "Câu hỏi Yes/No gián tiếp dùng if/whether, sau đó là trật tự câu kể - this bus goes (thêm -s vì chủ ngữ số ít), không có does."
+        },
+        "known_wrong": [
+          {
+            "answer": "does",
+            "error_tag": "indirect_question_order",
+            "feedback_vi": "Câu hỏi gián tiếp không dùng does; nói if this bus goes."
+          },
+          {
+            "answer": "go",
+            "error_tag": "third_person_s",
+            "feedback_vi": "This bus số ít nên động từ là goes."
+          },
+          {
+            "answer": "that",
+            "error_tag": "indirect_question_if",
+            "feedback_vi": "Câu hỏi Yes/No gián tiếp dùng if hoặc whether, không dùng that."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 7
+          },
+          {
+            "id": "b2",
+            "width_hint": 4
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Xin lỗi, bạn có biết xe buýt này có đi sân bay không?",
+          "Gợi ý: câu hỏi Yes/No gián tiếp dùng i…; động từ go chia như câu kể với this bus."
+        ],
+        "template": "Excuse me, do you know {{b1}} this bus {{b2}} to the airport?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "866584e2c4caa2355e01ecaf272d3e257ee0cf23c2551617356874bb5b5c35c3",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "c7e42d07-fc96-5b30-ac50-985e43b16b75",
+      "is_demo": true,
+      "item_id": "d419b6d7-fa77-5e66-852e-a2b901a7ce7c",
+      "key": "en:exercise:travel-culture-qc-fill-tags",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "isn't"
+            ],
+            "b2": [
+              "do"
+            ],
+            "b3": [
+              "didn't"
+            ]
+          }
+        },
+        "display_answer": "It's really hot today, isn't it? You don't shake hands in Japan, do you? She bowed to the teacher, didn't she?",
+        "explanation": {
+          "vi": "It's (is) → isn't it; don't shake (phủ định) → do you; bowed (quá khứ đơn) → didn't she. Đuôi luôn lặp trợ động từ và đổi khẳng định/phủ định."
+        },
+        "known_wrong": [
+          {
+            "answer": "is",
+            "error_tag": "question_tag_polarity",
+            "feedback_vi": "Câu khẳng định đi với đuôi phủ định - isn't it."
+          },
+          {
+            "answer": "don't",
+            "error_tag": "question_tag_polarity",
+            "feedback_vi": "Câu phủ định (don't shake) đi với đuôi khẳng định - do you."
+          },
+          {
+            "answer": "wasn't",
+            "error_tag": "question_tag_auxiliary",
+            "feedback_vi": "Bowed là quá khứ đơn, không có trợ động từ, nên đuôi dùng didn't."
+          },
+          {
+            "answer": "doesn't",
+            "error_tag": "question_tag_auxiliary",
+            "feedback_vi": "Bowed ở quá khứ nên đuôi là didn't she."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          },
+          {
+            "id": "b2",
+            "width_hint": 3
+          },
+          {
+            "id": "b3",
+            "width_hint": 6
+          }
+        ],
+        "template": "It's really hot today, {{b1}} it? You don't shake hands in Japan, {{b2}} you? She bowed to the teacher, {{b3}} she?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "fb41cac6dcb16d8b8773e639f942c52a64ea3fb558ae41d39a4b02bf6db1b22b",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "2ec3bd69-a216-5993-aab5-a2b85c49d420",
+      "is_demo": true,
+      "item_id": "2f4012a4-5759-500a-baef-f205f026b379",
+      "key": "en:exercise:travel-culture-qc-listen-temple",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "a8j"
+        },
+        "display_answer": "Vui lòng cởi giày trước khi vào chùa.",
+        "explanation": {
+          "vi": "Take off your shoes là \"cởi giày\"; before you go into là \"trước khi vào\". Shoes là giày, không phải mũ (hat)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "order_index": 0,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "Please take off your shoes before you go into the temple.",
+        "options": [
+          {
+            "id": "g5x",
+            "lang": "vi",
+            "text": "Vui lòng để giày ngay ngắn sau khi ra khỏi chùa."
+          },
+          {
+            "id": "a8j",
+            "lang": "vi",
+            "text": "Vui lòng cởi giày trước khi vào chùa."
+          },
+          {
+            "id": "n3w",
+            "lang": "vi",
+            "text": "Vui lòng mang giày khi vào chùa."
+          },
+          {
+            "id": "o7b",
+            "lang": "vi",
+            "text": "Vui lòng cởi mũ trước khi vào chùa."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "49861747c20d41e07fcde9e429abdf8e5cd8ef38f6036759d66f67fe948a655a",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "1726797e-2271-56bb-bfc7-c66adf0889bf",
+      "is_demo": true,
+      "item_id": "fe6bd196-c6b1-56ac-8a78-9a25e2c94f0f",
+      "key": "en:exercise:travel-culture-qc-mcq-bow",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "h6t"
+        },
+        "display_answer": "bow",
+        "explanation": {
+          "vi": "Bow to someone là \"cúi chào ai\" để thể hiện sự tôn trọng. Tip là cho tiền boa; shake cần hands (shake hands); rude là tính từ \"thô lỗ\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "order_index": 3,
+      "prompt": {
+        "options": [
+          {
+            "id": "w1n",
+            "lang": "en",
+            "text": "tip"
+          },
+          {
+            "id": "h6t",
+            "lang": "en",
+            "text": "bow"
+          },
+          {
+            "id": "r4c",
+            "lang": "en",
+            "text": "shake"
+          },
+          {
+            "id": "m8e",
+            "lang": "en",
+            "text": "rude"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn từ đúng: In Korea, people often ___ to older people to show respect.",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "73df52bfcf4114943ebb3fc719c27180c6d997eca369eeee3b972622a5c26c4b",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "6a36357f-ba8f-51bd-bd7a-8f1376c36aa8",
+      "is_demo": true,
+      "item_id": "b4b7deb7-0156-5c27-b817-3923311a003f",
+      "key": "en:exercise:travel-culture-qc-mcq-indirect",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c2h"
+        },
+        "display_answer": "Could you tell me where the station is?",
+        "explanation": {
+          "vi": "Câu hỏi gián tiếp dùng trật tự câu kể - where + the station + is. Where is the station chỉ đúng khi hỏi trực tiếp, không có Could you tell me đứng trước."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "c2h",
+            "lang": "en",
+            "text": "Could you tell me where the station is?"
+          },
+          {
+            "id": "l9q",
+            "lang": "en",
+            "text": "Could you tell me the station where is?"
+          },
+          {
+            "id": "p4m",
+            "lang": "en",
+            "text": "Could you tell me where does the station is?"
+          },
+          {
+            "id": "y7v",
+            "lang": "en",
+            "text": "Could you tell me where is the station?"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Câu hỏi đường nào đúng ngữ pháp?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "993826af9d533094561761fecf194a8a0df97b9a0d4d909f8229c215c084a3b4",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "ddc16800-9037-5ec1-87cc-cfb45e4ec8d3",
+      "is_demo": true,
+      "item_id": "8e44b61d-8057-5a3a-a9d5-7948b4a46bac",
+      "key": "en:exercise:travel-culture-qc-mcq-situation-ask",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "v2k"
+        },
+        "display_answer": "Could you tell me if breakfast is included?",
+        "explanation": {
+          "vi": "Câu hỏi Yes/No gián tiếp cần if + trật tự câu kể (breakfast is included). Câu hỏi đuôi phải dùng đại từ (isn't it), không lặp danh từ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "t9u",
+            "lang": "en",
+            "text": "Could you tell me does breakfast included?"
+          },
+          {
+            "id": "j5a",
+            "lang": "en",
+            "text": "Could you tell me is breakfast included?"
+          },
+          {
+            "id": "b3o",
+            "lang": "en",
+            "text": "Breakfast is included, isn't breakfast?"
+          },
+          {
+            "id": "v2k",
+            "lang": "en",
+            "text": "Could you tell me if breakfast is included?"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn ở quầy lễ tân và muốn hỏi lịch sự xem bữa sáng có tính trong giá phòng không. Câu nào phù hợp nhất?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "94291f0583aa49cc455a2b8db04973304aa48982d58a61368b9c0b3cf67e3cde",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "aaa1614a-aa0f-5830-bd87-45880a72d485",
+      "is_demo": true,
+      "item_id": "d419b6d7-fa77-5e66-852e-a2b901a7ce7c",
+      "key": "en:exercise:travel-culture-qc-mcq-tag",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "f8s"
+        },
+        "display_answer": "don't you",
+        "explanation": {
+          "vi": "Câu chính dùng leave (hiện tại đơn) với you và ở thể khẳng định, nên đuôi là don't you. Isn't it chỉ dùng khi câu chính là it is; do you là đuôi của câu phủ định."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "e3r",
+            "lang": "en",
+            "text": "isn't it"
+          },
+          {
+            "id": "f8s",
+            "lang": "en",
+            "text": "don't you"
+          },
+          {
+            "id": "k1z",
+            "lang": "en",
+            "text": "do you"
+          },
+          {
+            "id": "u6d",
+            "lang": "en",
+            "text": "aren't you"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu hỏi đuôi đúng: You leave a tip in restaurants here, ___?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "01406a6d73957dd8e0f2c1775151d8dc19b95b07e4f282971eb0da366857042b",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "9c75b6f2-965e-56f3-9ae9-fc9d1624b734",
+      "is_demo": true,
+      "item_id": "d1f5df94-cc9b-52d6-8666-9b3e578fdcf0",
+      "key": "en:exercise:travel-culture-qc-order-shake",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "h-people",
+              "h-here",
+              "h-shake",
+              "h-hands",
+              "h-when",
+              "h-they",
+              "h-meet",
+              "h-dont",
+              "h-they2"
+            ],
+            [
+              "h-people",
+              "h-here",
+              "h-shake",
+              "h-hands",
+              "h-when",
+              "h-they2",
+              "h-meet",
+              "h-dont",
+              "h-they"
+            ],
+            [
+              "h-people",
+              "h-shake",
+              "h-hands",
+              "h-here",
+              "h-when",
+              "h-they",
+              "h-meet",
+              "h-dont",
+              "h-they2"
+            ],
+            [
+              "h-people",
+              "h-shake",
+              "h-hands",
+              "h-here",
+              "h-when",
+              "h-they2",
+              "h-meet",
+              "h-dont",
+              "h-they"
+            ],
+            [
+              "h-people",
+              "h-shake",
+              "h-hands",
+              "h-when",
+              "h-they",
+              "h-meet",
+              "h-here",
+              "h-dont",
+              "h-they2"
+            ],
+            [
+              "h-people",
+              "h-shake",
+              "h-hands",
+              "h-when",
+              "h-they2",
+              "h-meet",
+              "h-here",
+              "h-dont",
+              "h-they"
+            ]
+          ]
+        },
+        "display_answer": "People here shake hands when they meet, don't they?",
+        "explanation": {
+          "vi": "Câu chính People… shake (hiện tại đơn, khẳng định) nên đuôi là don't they; đại từ của people là they. Isn't it là đuôi của câu it is nên bị thừa; hands luôn số nhiều."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "order_index": 10,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Anh: \"Ở đây người ta bắt tay khi gặp nhau, phải không?\"",
+        "tokens": [
+          {
+            "id": "h-meet",
+            "text": "meet"
+          },
+          {
+            "id": "h-people",
+            "text": "People"
+          },
+          {
+            "id": "h-dont",
+            "text": "don't"
+          },
+          {
+            "id": "h-hands",
+            "text": "hands"
+          },
+          {
+            "id": "h-they",
+            "text": "they"
+          },
+          {
+            "id": "h-shake",
+            "text": "shake"
+          },
+          {
+            "id": "h-when",
+            "text": "when"
+          },
+          {
+            "id": "h-here",
+            "text": "here"
+          },
+          {
+            "id": "h-they2",
+            "text": "they"
+          },
+          {
+            "id": "h-isnt",
+            "text": "isn't"
+          },
+          {
+            "id": "h-it",
+            "text": "it"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "672eebb059fb7a2db515056701de588926c153c8a2cafad778978313b6730ab5",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "45c24c79-0e22-5699-a922-1ccca8cb74aa",
+      "is_demo": true,
+      "item_id": "2c02ba51-3546-53c5-affc-355a6d7fe141",
+      "key": "en:exercise:travel-culture-qc-translate-custom-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Ở Việt Nam, lì xì vào dịp Tết là một phong tục, phải không?",
+            "Ở Việt Nam có phong tục lì xì vào dịp Tết, phải không?",
+            "Ở Việt Nam có phong tục lì xì ngày Tết, phải không?",
+            "Ở Việt Nam có phong tục mừng tuổi vào dịp Tết, phải không?",
+            "Ở Việt Nam, mừng tuổi ngày Tết là một phong tục, phải không?",
+            "Ở Việt Nam có phong tục lì xì vào dịp Tết, đúng không?",
+            "Ở Việt Nam có phong tục lì xì vào dịp Tết nhỉ?",
+            "Ở Việt Nam có phong tục lì xì ngày Tết, đúng không?",
+            "Lì xì vào dịp Tết là một phong tục ở Việt Nam, phải không?",
+            "Lì xì ngày Tết là phong tục ở Việt Nam, đúng không?"
+          ]
+        },
+        "display_answer": "Ở Việt Nam có phong tục lì xì vào dịp Tết, phải không?",
+        "explanation": {
+          "vi": "Custom là phong tục; lucky money là tiền lì xì (mừng tuổi). Đuôi isn't it dịch tự nhiên là \"phải không / đúng không / nhỉ\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "It's a custom in Vietnam to give lucky money at Tet, isn't it?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "4085c356d147be7aa529dd7ba79ba70eab7a55831701195a97f043c4fadca7ea",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "34cb870c-40fd-54c7-a064-9645e66186d0",
+      "is_demo": true,
+      "item_id": "b4b7deb7-0156-5c27-b817-3923311a003f",
+      "key": "en:exercise:travel-culture-qc-translate-museum",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Do you know what time the museum opens?",
+            "Do you know when the museum opens?",
+            "Do you know what time the museum is open?",
+            "Could you tell me what time the museum opens?",
+            "Do you know what time the museum will open?",
+            "Do you happen to know what time the museum opens?"
+          ]
+        },
+        "display_answer": "Do you know what time the museum opens?",
+        "explanation": {
+          "vi": "Do you know + what time + the museum opens - phần sau dùng trật tự câu kể, không có does, và opens thêm -s vì chủ ngữ số ít."
+        },
+        "known_wrong": [
+          {
+            "answer": "Do you know what time does the museum open?",
+            "error_tag": "indirect_question_order",
+            "feedback_vi": "Câu hỏi gián tiếp bỏ does và chia lại động từ - the museum opens."
+          },
+          {
+            "answer": "Do you know what time the museum open?",
+            "error_tag": "third_person_s",
+            "feedback_vi": "The museum số ít nên động từ là opens."
+          },
+          {
+            "answer": "Do you know what time is the museum open?",
+            "error_tag": "indirect_question_order",
+            "feedback_vi": "Chủ ngữ đứng trước động từ - what time the museum is open."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Bạn có biết mấy giờ bảo tàng mở cửa không?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "b005b75f81cb4d6ec06e95ff51685f3cb1bed5e1e68e28a5eb3947c4f5d6691b",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "285cadad-49a5-5478-9606-cd0fd201ffb7",
+      "is_demo": true,
+      "item_id": "c4052471-c942-50eb-8b9a-eba614f3125a",
+      "key": "en:exercise:travel-culture-qc-translate-rude",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "In Japan, it's rude to leave a tip.",
+            "In Japan, it is rude to leave a tip.",
+            "In Japan, it's impolite to leave a tip.",
+            "In Japan, it is impolite to leave a tip.",
+            "In Japan, leaving a tip is rude.",
+            "In Japan, leaving a tip is considered rude.",
+            "In Japan, it's considered rude to leave a tip.",
+            "In Japan, it is considered rude to leave a tip.",
+            "In Japan, it's rude to tip.",
+            "In Japan, it is rude to tip."
+          ]
+        },
+        "display_answer": "In Japan, it's rude to leave a tip.",
+        "explanation": {
+          "vi": "It's rude/polite + to + động từ là mẫu câu chuẩn để nói về phép lịch sự. \"Để lại tiền boa\" là leave a tip hoặc dùng động từ tip."
+        },
+        "known_wrong": [
+          {
+            "answer": "In Japan, it's rude leave a tip.",
+            "error_tag": "adjective_to_infinitive",
+            "feedback_vi": "Sau rude cần to + động từ - it's rude to leave a tip."
+          },
+          {
+            "answer": "In Japan, leave a tip is rude.",
+            "error_tag": "gerund_subject",
+            "feedback_vi": "Động từ làm chủ ngữ phải ở dạng -ing - leaving a tip."
+          },
+          {
+            "answer": "In Japan, it's rude to pay a tip.",
+            "error_tag": "collocation",
+            "feedback_vi": "Nói leave a tip hoặc tip, không nói pay a tip."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Ở Nhật, để lại tiền boa bị coi là bất lịch sự."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "8bc22de6b33121f93eb7d38eb5e84c0255ddef41b1a8147d99bc83ba3bac0ad0",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "bb5bc0b3-4420-5f35-bd4e-0a40fda4902f",
+      "is_demo": true,
+      "item_id": "d6c2090d-931b-56fb-8e15-67379db1ff52",
+      "key": "en:exercise:travel-culture-r-fill-email-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "so"
+            ],
+            "b2": [
+              "exhausted"
+            ],
+            "b3": [
+              "disappointing"
+            ]
+          }
+        },
+        "display_answer": "The room was so hot that we hardly slept. After a long flight, we were exhausted, so this was very disappointing.",
+        "explanation": {
+          "vi": "So + tính từ (hot) + that; chúng tôi cảm thấy kiệt sức → exhausted; việc này gây thất vọng → disappointing."
+        },
+        "known_wrong": [
+          {
+            "answer": "such",
+            "error_tag": "so_such_that",
+            "feedback_vi": "Hot là tính từ đứng một mình, nên dùng so."
+          },
+          {
+            "answer": "exhausting",
+            "error_tag": "ed_ing_adjective",
+            "feedback_vi": "Cảm giác của chúng tôi dùng -ed - exhausted."
+          },
+          {
+            "answer": "disappointed",
+            "error_tag": "ed_ing_adjective",
+            "feedback_vi": "This (sự việc) gây thất vọng nên dùng disappointing."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          },
+          {
+            "id": "b2",
+            "width_hint": 9
+          },
+          {
+            "id": "b3",
+            "width_hint": 13
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa của câu: Phòng nóng đến nỗi chúng tôi gần như không ngủ được. Sau chuyến bay dài, chúng tôi kiệt sức, nên việc này thật đáng thất vọng.",
+          "Gợi ý: tính từ không có danh từ sau → s…; cảm giác của người → -ed; sự việc gây cảm giác → -ing."
+        ],
+        "template": "The room was {{b1}} hot that we hardly slept. After a long flight, we were {{b2}} (exhaust), so this was very {{b3}} (disappoint)."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "2bbadcb0229e3e83c1f47e587d02a55ba2e11aca1dbd800d3f6edbb27255910c",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "8232dcf6-5159-51a9-a377-3bd728529fee",
+      "is_demo": true,
+      "item_id": "3217a6a3-9c25-5648-aacf-f59cff48b8a4",
+      "key": "en:exercise:travel-culture-r-fill-email-request",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "wondering"
+            ],
+            "b2": [
+              "could"
+            ],
+            "b3": [
+              "hearing"
+            ]
+          }
+        },
+        "display_answer": "I was wondering if you could give us a partial refund. I look forward to hearing from you.",
+        "explanation": {
+          "vi": "I was wondering if you could… là cách nhờ rất lịch sự. Trong look forward to, to là giới từ nên sau nó dùng V-ing (hearing)."
+        },
+        "known_wrong": [
+          {
+            "answer": "wonder",
+            "error_tag": "was_ing",
+            "feedback_vi": "Sau was cần V-ing - I was wondering."
+          },
+          {
+            "answer": "hear",
+            "error_tag": "look_forward_to_ing",
+            "feedback_vi": "Look forward to + V-ing - hearing."
+          },
+          {
+            "answer": "can",
+            "error_tag": "modal_politeness",
+            "feedback_vi": "I was wondering if đi với could để giữ sự lịch sự và hoà hợp với was."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 9
+          },
+          {
+            "id": "b2",
+            "width_hint": 5
+          },
+          {
+            "id": "b3",
+            "width_hint": 7
+          }
+        ],
+        "template": "I was {{b1}} if you {{b2}} give us a partial refund. I look forward to {{b3}} from you."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "b86f1ace3de91d8fb083c5f74d6a8aebb1ef6d4e56cb89a5b9990bbdc7082b8e",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "801d9253-7b24-5dfa-8943-67be178da1fa",
+      "is_demo": true,
+      "item_id": "d53a661b-6769-573c-be2f-c960780b3598",
+      "key": "en:exercise:travel-culture-r-listen-towels",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "u3k"
+        },
+        "display_answer": "Hầu như không có khăn tắm, và không nhân viên nào đến khi chúng tôi gọi lễ tân.",
+        "explanation": {
+          "vi": "Hardly any towels = hầu như không có khăn; none of the staff came = không nhân viên nào đến. Cả hai đều mang nghĩa phủ định dù động từ ở thể khẳng định."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "order_index": 0,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "There were hardly any towels, and none of the staff came when we called reception.",
+        "options": [
+          {
+            "id": "m9d",
+            "lang": "vi",
+            "text": "Khăn tắm rất bẩn, và chúng tôi không gọi được lễ tân."
+          },
+          {
+            "id": "u3k",
+            "lang": "vi",
+            "text": "Hầu như không có khăn tắm, và không nhân viên nào đến khi chúng tôi gọi lễ tân."
+          },
+          {
+            "id": "f6w",
+            "lang": "vi",
+            "text": "Có rất nhiều khăn tắm, và nhân viên đến ngay khi chúng tôi gọi lễ tân."
+          },
+          {
+            "id": "b1q",
+            "lang": "vi",
+            "text": "Có vài chiếc khăn tắm, và một nhân viên đến khi chúng tôi gọi lễ tân."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "bbe9049f4ef25cd9b4060090ded8f874bc46f55841dbdfce15fe0ccb42732594",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "314dc447-c13b-5764-bb58-a34d965e9d3e",
+      "is_demo": true,
+      "item_id": "6706c02f-b2ae-56e7-9e1f-d9d669c61f1a",
+      "key": "en:exercise:travel-culture-r-mcq-best-email",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "y4h"
+        },
+        "display_answer": "I'm afraid the Wi-Fi didn't work during our stay, and none of the staff could help us. I would like a partial refund.",
+        "explanation": {
+          "vi": "Đoạn đúng dùng I'm afraid, didn't work, none of + could (khẳng định) và yêu cầu I would like a refund. Các đoạn khác thô lỗ, phủ định hai lần, dùng I want to refund, sai đuôi câu hỏi hoặc dùng disappointing cho người."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "order_index": 7,
+      "prompt": {
+        "options": [
+          {
+            "id": "w6b",
+            "lang": "en",
+            "text": "I'm afraid the Wi-Fi didn't work, isn't it? We were very disappointing. I would like a refund."
+          },
+          {
+            "id": "g8z",
+            "lang": "en",
+            "text": "Your Wi-Fi was terrible and your staff were so useless people. Give me my money back now."
+          },
+          {
+            "id": "y4h",
+            "lang": "en",
+            "text": "I'm afraid the Wi-Fi didn't work during our stay, and none of the staff could help us. I would like a partial refund."
+          },
+          {
+            "id": "l3t",
+            "lang": "en",
+            "text": "I'm afraid the Wi-Fi not work during our stay, and none of the staff couldn't help us. I want to refund."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn viết email phàn nàn cho khách sạn. Đoạn nào vừa lịch sự vừa đúng ngữ pháp?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "b9c2a2fed977e381078906530eb3f454a8d77b8128dcabb60e13947cda3484d7",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "32a89c26-e90e-58b6-9bc1-3eb660cb613c",
+      "is_demo": true,
+      "item_id": "44a3f803-4f36-5a58-964f-e9547cdada7b",
+      "key": "en:exercise:travel-culture-r-mcq-email-purpose",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "h2v"
+        },
+        "display_answer": "Give her a partial refund for two nights.",
+        "explanation": {
+          "vi": "Câu yêu cầu trong email là I would like a partial refund for the two nights - hoàn lại một phần tiền cho hai đêm. Email viết sau khi đã rời khách sạn nên không yêu cầu đổi phòng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "h2v",
+            "lang": "en",
+            "text": "Give her a partial refund for two nights."
+          },
+          {
+            "id": "e4s",
+            "lang": "en",
+            "text": "Send a manager to her house."
+          },
+          {
+            "id": "p7c",
+            "lang": "en",
+            "text": "Change her room immediately."
+          },
+          {
+            "id": "z5l",
+            "lang": "en",
+            "text": "Give her a free room next year."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Đọc lại email của Lan trong bài. Lan muốn khách sạn làm gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "034dd1c7ad4203240646d58a19d19f8d0c2ebf503bc34e18d6581e56c81f5a4f",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "10d65d27-2759-5ff0-a450-8bcd5254a1d2",
+      "is_demo": true,
+      "item_id": "d419b6d7-fa77-5e66-852e-a2b901a7ce7c",
+      "key": "en:exercise:travel-culture-r-mcq-forum-tag",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "t8n"
+        },
+        "display_answer": "don't they",
+        "explanation": {
+          "vi": "Câu chính dùng bow (hiện tại đơn, khẳng định) với people, nên đuôi là don't they. Isn't it chỉ dùng cho câu it is; aren't they cần câu chính có are."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "order_index": 2,
+      "prompt": {
+        "options": [
+          {
+            "id": "t8n",
+            "lang": "en",
+            "text": "don't they"
+          },
+          {
+            "id": "o1r",
+            "lang": "en",
+            "text": "aren't they"
+          },
+          {
+            "id": "a6m",
+            "lang": "en",
+            "text": "doesn't it"
+          },
+          {
+            "id": "c3j",
+            "lang": "en",
+            "text": "isn't it"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Người viết bài diễn đàn muốn hỏi xác nhận: People in Korea bow a lot too, ___?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "21b3c1962d3e62246cd3b12cc4d7657b298e0c1767190c3f4d6469b8464de4dc",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "5a95a66d-122a-5b7e-93b5-f5a0cfb9dbda",
+      "is_demo": true,
+      "item_id": "2f4012a4-5759-500a-baef-f205f026b379",
+      "key": "en:exercise:travel-culture-r-order-forum",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "k-could",
+              "k-you",
+              "k-tell",
+              "k-me",
+              "k-when",
+              "k-i",
+              "k-should",
+              "k-take",
+              "k-off",
+              "k-my",
+              "k-shoes"
+            ],
+            [
+              "k-could",
+              "k-you",
+              "k-tell",
+              "k-me",
+              "k-when",
+              "k-i",
+              "k-should",
+              "k-take",
+              "k-my",
+              "k-shoes",
+              "k-off"
+            ]
+          ]
+        },
+        "display_answer": "Could you tell me when I should take off my shoes?",
+        "explanation": {
+          "vi": "Câu hỏi gián tiếp - when + I + should (chủ ngữ trước động từ khuyết thiếu), không đảo thành when should I. Take off my shoes và take my shoes off đều đúng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Anh: \"Bạn có thể cho mình biết khi nào phải cởi giày không?\"",
+        "tokens": [
+          {
+            "id": "k-off",
+            "text": "off"
+          },
+          {
+            "id": "k-tell",
+            "text": "tell"
+          },
+          {
+            "id": "k-shoes",
+            "text": "shoes"
+          },
+          {
+            "id": "k-could",
+            "text": "Could"
+          },
+          {
+            "id": "k-i",
+            "text": "I"
+          },
+          {
+            "id": "k-should",
+            "text": "should"
+          },
+          {
+            "id": "k-me",
+            "text": "me"
+          },
+          {
+            "id": "k-take",
+            "text": "take"
+          },
+          {
+            "id": "k-when",
+            "text": "when"
+          },
+          {
+            "id": "k-my",
+            "text": "my"
+          },
+          {
+            "id": "k-you",
+            "text": "you"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "8dfac060758dcb8669646bccda84ca8b177e80da115651e064e7b84834b599e2",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "dd7eb69d-3c72-5117-99e6-4b5d28b78ffe",
+      "is_demo": true,
+      "item_id": "100585e0-7350-5cc7-8b7f-ea3957b7c745",
+      "key": "en:exercise:travel-culture-r-translate-culture-shock-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Mình bị sốc văn hoá nặng đến nỗi chỉ sau vài ngày đã muốn về nhà.",
+            "Mình bị sốc văn hoá nặng đến nỗi muốn về nhà sau vài ngày.",
+            "Tôi bị sốc văn hoá nặng đến nỗi muốn về nhà sau vài ngày.",
+            "Tôi bị sốc văn hoá nặng đến mức chỉ sau vài ngày đã muốn về nước.",
+            "Tôi bị sốc văn hoá nặng đến mức muốn về nhà sau vài ngày.",
+            "Mình bị sốc văn hoá nặng đến mức sau vài ngày đã muốn về nhà.",
+            "Mình bị sốc văn hoá nặng tới mức chỉ vài ngày sau đã muốn về nhà.",
+            "Tôi bị sốc văn hoá nặng đến nỗi chỉ sau vài ngày tôi đã muốn về nhà.",
+            "Mình sốc văn hoá nặng đến nỗi sau vài ngày đã muốn về nhà.",
+            "Tôi bị sốc văn hoá nặng đến nỗi sau vài ngày đã muốn về nước."
+          ]
+        },
+        "display_answer": "Mình bị sốc văn hoá nặng đến nỗi chỉ sau vài ngày đã muốn về nhà.",
+        "explanation": {
+          "vi": "Such bad culture shock that… = sốc văn hoá nặng đến nỗi…; culture shock không đếm được nên such không có a. A few days = vài ngày."
+        },
+        "known_wrong": [
+          {
+            "answer": "Mình bị sốc văn hoá nặng đến nỗi muốn về nhà sau rất ít ngày.",
+            "error_tag": "few_vs_a_few",
+            "feedback_vi": "A few days là \"vài ngày\" (ý trung tính), không phải \"rất ít ngày\" (few days)."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "I had such bad culture shock that I wanted to go home after a few days."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "e6e923764795b99c5875250b14ff77c69d895161bb9105f563fefbe25e5d680a",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "6bc76810-0430-56a0-a7d1-7bca86bb02f5",
+      "is_demo": true,
+      "item_id": "b4b7deb7-0156-5c27-b817-3923311a003f",
+      "key": "en:exercise:travel-culture-r-translate-indirect",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Does anyone know if tipping is OK in Thailand?",
+            "Does anyone know whether tipping is OK in Thailand?",
+            "Does anyone know if tipping is okay in Thailand?",
+            "Does anyone know if it's OK to tip in Thailand?",
+            "Does anyone know if it is OK to tip in Thailand?",
+            "Does anyone know if it's okay to tip in Thailand?",
+            "Does anyone know if leaving a tip is OK in Thailand?",
+            "Does anybody know if tipping is OK in Thailand?",
+            "Does anyone know if you can tip in Thailand?",
+            "Does anyone know if people tip in Thailand?"
+          ]
+        },
+        "display_answer": "Does anyone know if tipping is OK in Thailand?",
+        "explanation": {
+          "vi": "Does anyone know + if + tipping is OK - câu hỏi Yes/No gián tiếp cần if/whether và giữ trật tự chủ ngữ + động từ."
+        },
+        "known_wrong": [
+          {
+            "answer": "Does anyone know if is tipping OK in Thailand?",
+            "error_tag": "indirect_question_order",
+            "feedback_vi": "Sau if dùng trật tự câu kể - tipping is OK."
+          },
+          {
+            "answer": "Does anyone know is tipping OK in Thailand?",
+            "error_tag": "indirect_question_if",
+            "feedback_vi": "Câu hỏi Yes/No gián tiếp cần if hoặc whether và trật tự câu kể."
+          },
+          {
+            "answer": "Do anyone know if tipping is OK in Thailand?",
+            "error_tag": "do_does",
+            "feedback_vi": "Anyone số ít nên dùng does."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "order_index": 4,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Có ai biết ở Thái Lan cho tiền boa có được không?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "098da9b34b96018f451180c175a9247c6f47f4e7fe03d5d3c68630cda3e06970",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "08046bb6-021c-5298-b721-2f2b86f02f6b",
+      "is_demo": true,
+      "item_id": "e88e8454-1dc5-52cb-89f5-cf121d8b54f0",
+      "key": "en:exercise:travel-culture-r-translate-unacceptable",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Waiting two hours for our room was unacceptable.",
+            "Waiting two hours for a room was unacceptable.",
+            "Waiting two hours for our room is unacceptable.",
+            "Waiting two hours for the room was unacceptable.",
+            "Waiting for two hours to get our room was unacceptable.",
+            "It was unacceptable to wait two hours for our room.",
+            "It is unacceptable to wait two hours for a room.",
+            "Waiting two hours for a room is unacceptable."
+          ]
+        },
+        "display_answer": "Waiting two hours for our room was unacceptable.",
+        "explanation": {
+          "vi": "Waiting… làm chủ ngữ (V-ing), hoặc dùng It was unacceptable to wait… Unacceptable dùng tiền tố un-."
+        },
+        "known_wrong": [
+          {
+            "answer": "Wait two hours for our room was unacceptable.",
+            "error_tag": "gerund_subject",
+            "feedback_vi": "Động từ làm chủ ngữ phải ở dạng -ing - Waiting."
+          },
+          {
+            "answer": "Waiting two hours for our room was unaccepted.",
+            "error_tag": "word_form",
+            "feedback_vi": "Tính từ đúng là unacceptable (không thể chấp nhận được)."
+          },
+          {
+            "answer": "Waiting two hours for our room was inacceptable.",
+            "error_tag": "prefix",
+            "feedback_vi": "Tiền tố đúng là un- - unacceptable."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Chờ hai tiếng mới có phòng là không thể chấp nhận được."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
       "content_hash": "d12b8374b9bd9965e0206753df09a15831b4268f239a6124e48b98c25ee3c9e6",
       "difficulty": 2,
       "exercise_type": "fill_blank",
@@ -47718,6 +54693,3517 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "en",
+      "content_hash": "8fa5c659db34830cb2625990273b52dca0c3aeaaf07562c9d7f88c7a7f26a405",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "129428ca-56a0-516c-b00a-dbe641166c26",
+      "is_demo": true,
+      "item_id": "007219d7-a48a-5a71-8078-a754f973ba17",
+      "key": "en:exercise:wb-causative-fill-get-to-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "to"
+            ]
+          }
+        },
+        "display_answer": "I'll get the supplier to send us a new quote.",
+        "explanation": {
+          "vi": "Mẫu get + người + to V (get the supplier to send). Nếu dùng have thì bỏ to - have the supplier send."
+        },
+        "known_wrong": [
+          {
+            "answer": "for",
+            "error_tag": "causative_get_to",
+            "feedback_vi": "Get + người + to V - không dùng for."
+          },
+          {
+            "answer": "will",
+            "error_tag": "causative_get_to",
+            "feedback_vi": "Sau get + người cần to + V nguyên mẫu."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "order_index": 2,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa: Tôi sẽ nhờ nhà cung cấp gửi cho chúng ta báo giá mới.",
+          "Gợi ý: get + người + ? + V."
+        ],
+        "template": "I'll get the supplier {{b1}} send us a new quote."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "de3cec817e67905ee587c82cfafdbfcae59e8e577e54d3e6330c387b670d5f60",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "9ce5d41b-6451-527f-821b-e1181cda6290",
+      "is_demo": true,
+      "item_id": "7e8fc661-2152-5ffe-8d45-062f86cebe3a",
+      "key": "en:exercise:wb-causative-fill-office-repainted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "had",
+              "got"
+            ],
+            "b2": [
+              "repainted",
+              "painted",
+              "redecorated",
+              "renovated",
+              "refurbished",
+              "decorated"
+            ]
+          }
+        },
+        "display_answer": "The office looks great! We had it repainted last month.",
+        "explanation": {
+          "vi": "Công ty thuê người sơn nên dùng have / get + vật (it) + V3. Last month là quá khứ nên chia had / got."
+        },
+        "known_wrong": [
+          {
+            "answer": "repaint",
+            "error_tag": "causative_form",
+            "feedback_vi": "Sau vật cần V3 - repainted."
+          },
+          {
+            "answer": "repainting",
+            "error_tag": "causative_form",
+            "feedback_vi": "Sau vật cần V3 (repainted), không phải V-ing."
+          },
+          {
+            "answer": "have",
+            "error_tag": "causative_tense",
+            "feedback_vi": "Việc xảy ra tháng trước nên have chia quá khứ - had."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          },
+          {
+            "id": "b2",
+            "width_hint": 9
+          }
+        ],
+        "template": "The office looks great! We {{b1}} it {{b2}} last month."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "f4ea036f383a171ac2bec7140c9ee8b83e2e0e83a33fdf6c1f770da021375a5e",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "39930e07-3ad4-5b11-8f9f-77ca37d22e07",
+      "is_demo": true,
+      "item_id": "eee203a7-b0aa-5706-bbc1-afda0bd55a84",
+      "key": "en:exercise:wb-causative-listen-stolen",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "n4c"
+        },
+        "display_answer": "Xin lỗi tôi đến muộn. Tôi bị trộm điện thoại trên xe buýt.",
+        "explanation": {
+          "vi": "Have + vật + V3 ở đây là sự cố không mong muốn - \"bị trộm\". Không ai nhờ ai cả; người nói cũng không phải kẻ trộm."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "Sorry I'm late. I had my phone stolen on the bus.",
+        "options": [
+          {
+            "id": "i5g",
+            "lang": "vi",
+            "text": "Xin lỗi tôi đến muộn. Tôi để quên điện thoại trên xe buýt."
+          },
+          {
+            "id": "n4c",
+            "lang": "vi",
+            "text": "Xin lỗi tôi đến muộn. Tôi bị trộm điện thoại trên xe buýt."
+          },
+          {
+            "id": "q8a",
+            "lang": "vi",
+            "text": "Xin lỗi tôi đến muộn. Tôi đã lấy trộm điện thoại trên xe buýt."
+          },
+          {
+            "id": "y1t",
+            "lang": "vi",
+            "text": "Xin lỗi tôi đến muộn. Tôi đã nhờ người lấy điện thoại trên xe buýt."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "86cfb3b63c20b22892a88d73397c88804da8e8faa7b5bf8b2abe89dcf5d7ec6b",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "3be331f8-b59e-5a37-8935-37216a7a3c30",
+      "is_demo": true,
+      "item_id": "7e8fc661-2152-5ffe-8d45-062f86cebe3a",
+      "key": "en:exercise:wb-causative-mcq-haircut",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "d3k"
+        },
+        "display_answer": "I had my hair cut yesterday.",
+        "explanation": {
+          "vi": "Người khác cắt cho bạn nên dùng have + vật + V3 (had my hair cut). I cut my hair là tự cắt; had cut my hair là quá khứ hoàn thành; cutting không phải V3."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "o2w",
+            "lang": "en",
+            "text": "I had cut my hair yesterday."
+          },
+          {
+            "id": "s7p",
+            "lang": "en",
+            "text": "I cut my hair yesterday."
+          },
+          {
+            "id": "j9m",
+            "lang": "en",
+            "text": "I had my hair cutting yesterday."
+          },
+          {
+            "id": "d3k",
+            "lang": "en",
+            "text": "I had my hair cut yesterday."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn vừa ra tiệm cắt tóc. Câu nào đúng nghĩa \"Hôm qua tôi đi cắt tóc\"?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "8ac8ec1ef65fcf77c175a6299f4af489ea61499e6349cadbf70cdbf46afcb290",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "8b4d22eb-13d2-53f2-a7ef-d00af0c00bc6",
+      "is_demo": true,
+      "item_id": "b8233b65-a23c-5e67-b235-e44f1502b452",
+      "key": "en:exercise:wb-causative-mcq-quote-meaning",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "b6u"
+        },
+        "display_answer": "báo giá",
+        "explanation": {
+          "vi": "Trong kinh doanh, get a quote là xin báo giá trước khi quyết định mua. Câu trích dẫn chỉ là nghĩa thông thường của quote; hợp đồng là contract, hoá đơn là invoice."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "order_index": 3,
+      "prompt": {
+        "options": [
+          {
+            "id": "h0e",
+            "lang": "vi",
+            "text": "hợp đồng"
+          },
+          {
+            "id": "v2x",
+            "lang": "vi",
+            "text": "câu trích dẫn"
+          },
+          {
+            "id": "b6u",
+            "lang": "vi",
+            "text": "báo giá"
+          },
+          {
+            "id": "z4i",
+            "lang": "vi",
+            "text": "hoá đơn"
+          }
+        ],
+        "shuffle": true,
+        "stem": "\"Let's get a quote from two suppliers before we decide.\" Quote ở đây nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "1ca2dfed926694268a35ee6be968453453a307365944e2e9c98d3aecc8c8da20",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "2cbffa00-dddc-5dc9-b2d9-360fcebba5ea",
+      "is_demo": true,
+      "item_id": "007219d7-a48a-5a71-8078-a754f973ba17",
+      "key": "en:exercise:wb-causative-mcq-situation-assistant",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "a8f"
+        },
+        "display_answer": "I'll have my assistant send you the documents today.",
+        "explanation": {
+          "vi": "Have + người + V nguyên mẫu (have my assistant send). Have không đi với to; get thì phải có to (get my assistant to send); phương án cuối đảo lộn trật tự và sai nghĩa."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "m3q",
+            "lang": "en",
+            "text": "I'll have my assistant to send you the documents today."
+          },
+          {
+            "id": "a8f",
+            "lang": "en",
+            "text": "I'll have my assistant send you the documents today."
+          },
+          {
+            "id": "p0h",
+            "lang": "en",
+            "text": "I'll have sent my assistant you the documents today."
+          },
+          {
+            "id": "k7b",
+            "lang": "en",
+            "text": "I'll get my assistant send you the documents today."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Khách hàng hỏi xin tài liệu sản phẩm. Bạn muốn nói lịch sự rằng bạn sẽ bảo trợ lý gửi cho họ ngay hôm nay. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "d486661ea45db49fbfe701655adb06664672813ee28124d746843e39863cafb6",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "af2a16aa-3f65-5247-8973-8d78ddad40b9",
+      "is_demo": true,
+      "item_id": "758b7a77-1253-5868-bb37-7a21ceca4ab8",
+      "key": "en:exercise:wb-causative-mcq-situation-supplier",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "e2v"
+        },
+        "display_answer": "We found a cheaper supplier and outsourced our deliveries, so we cut costs and made a bigger profit.",
+        "explanation": {
+          "vi": "Bên bán cho mình là supplier (customer là bên mua). Outsource something không cần for; cut costs dùng số nhiều; có lãi là make a profit. Phương án cuối nói \"lỗ nặng hơn\" - ngược với câu hỏi."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "g1r",
+            "lang": "en",
+            "text": "We found a cheaper supplier and outsourced for our deliveries, so we cut cost and got a bigger profit."
+          },
+          {
+            "id": "e2v",
+            "lang": "en",
+            "text": "We found a cheaper supplier and outsourced our deliveries, so we cut costs and made a bigger profit."
+          },
+          {
+            "id": "w9s",
+            "lang": "en",
+            "text": "We found a cheaper supplier and outsourced our deliveries, so we cut costs and made a bigger loss."
+          },
+          {
+            "id": "t6n",
+            "lang": "en",
+            "text": "We found a cheaper customer and outsourced our deliveries, so we cut costs and made a bigger profit."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Trong cuộc họp, sếp hỏi vì sao lợi nhuận quý này tăng. Câu trả lời nào dùng từ chính xác nhất?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "cc39afa3db1a6e99bf129957639aa8ff5c453acef3440274446a524d90f6cbbc",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "747e065c-f513-5cc9-a4c4-af71dd9f5ec0",
+      "is_demo": true,
+      "item_id": "7daa685f-ca5b-5bf4-9768-26da28e117f5",
+      "key": "en:exercise:wb-causative-order-website-redesigned",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "c-we",
+              "c-are",
+              "c-having",
+              "c-our",
+              "c-website",
+              "c-redesigned",
+              "c-by",
+              "c-an",
+              "c-outside",
+              "c-agency"
+            ]
+          ]
+        },
+        "display_answer": "We are having our website redesigned by an outside agency.",
+        "explanation": {
+          "vi": "Hiện tại tiếp diễn của have (are having) + vật (our website) + V3 (redesigned) + by + người làm (an outside agency). An vì outside bắt đầu bằng nguyên âm."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "order_index": 7,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Chúng tôi đang thuê một công ty bên ngoài thiết kế lại website.\"",
+        "tokens": [
+          {
+            "id": "c-redesigned",
+            "text": "redesigned"
+          },
+          {
+            "id": "c-an",
+            "text": "an"
+          },
+          {
+            "id": "c-are",
+            "text": "are"
+          },
+          {
+            "id": "c-website",
+            "text": "website"
+          },
+          {
+            "id": "c-by",
+            "text": "by"
+          },
+          {
+            "id": "c-having",
+            "text": "having"
+          },
+          {
+            "id": "c-we",
+            "text": "We"
+          },
+          {
+            "id": "c-outside",
+            "text": "outside"
+          },
+          {
+            "id": "c-our",
+            "text": "our"
+          },
+          {
+            "id": "c-agency",
+            "text": "agency"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "fd48bd43765bb5d50ad729d4197e3c579551a5b12efe60540d1f97e148304c5a",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "e6b34d19-7ba7-5924-bd45-520f27d59d92",
+      "is_demo": true,
+      "item_id": "7e8fc661-2152-5ffe-8d45-062f86cebe3a",
+      "key": "en:exercise:wb-causative-translate-contract-checked",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "We should have the contract checked by a lawyer.",
+            "We should get the contract checked by a lawyer.",
+            "We should have a lawyer check the contract.",
+            "We should get a lawyer to check the contract.",
+            "We should have the contract checked by our lawyer.",
+            "We should get the contract checked by our lawyer.",
+            "We should have our lawyer check the contract.",
+            "We should get our lawyer to check the contract.",
+            "We should ask a lawyer to check the contract.",
+            "We should ask our lawyer to check the contract."
+          ]
+        },
+        "display_answer": "We should have the contract checked by a lawyer.",
+        "explanation": {
+          "vi": "\"Nhờ luật sư kiểm tra hợp đồng\" có nhiều cách: have / get the contract checked by a lawyer, have a lawyer check, get a lawyer to check."
+        },
+        "known_wrong": [
+          {
+            "answer": "We should have checked the contract by a lawyer.",
+            "error_tag": "causative_word_order",
+            "feedback_vi": "Vật phải đứng trước V3 - have the contract checked. Should have checked lại là \"lẽ ra nên kiểm tra\"."
+          },
+          {
+            "answer": "We should get a lawyer check the contract.",
+            "error_tag": "causative_get_to",
+            "feedback_vi": "Get + người + to V - get a lawyer to check."
+          },
+          {
+            "answer": "We should have a lawyer to check the contract.",
+            "error_tag": "causative_get_to",
+            "feedback_vi": "Have + người + V nguyên mẫu, không có to - have a lawyer check."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "order_index": 5,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Chúng ta nên nhờ luật sư kiểm tra hợp đồng."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "5ef3e9bacd596cbeea57917a0de713c7375bed11ac6de8337525fea06006fd4e",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "63990972-232e-5d76-9716-327e8c545596",
+      "is_demo": true,
+      "item_id": "936b7ffa-10a5-5bc2-b6e0-7bf89fdda48a",
+      "key": "en:exercise:wb-causative-translate-cut-costs",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "We have to cut costs this year, or we'll make a loss.",
+            "We have to cut costs this year, otherwise we'll make a loss.",
+            "We need to cut costs this year, or we'll make a loss.",
+            "We need to cut costs this year, otherwise we'll make a loss.",
+            "We must cut costs this year, or we'll make a loss.",
+            "We must cut costs this year, otherwise we'll make a loss.",
+            "We have to cut costs this year, or we will make a loss.",
+            "This year we have to cut costs, or we'll make a loss.",
+            "We have to reduce costs this year, or we'll make a loss.",
+            "We need to reduce costs this year, otherwise we'll make a loss.",
+            "We have to cut costs this year, or we'll lose money.",
+            "We need to cut costs this year, or we'll lose money."
+          ]
+        },
+        "display_answer": "We have to cut costs this year, or we'll make a loss.",
+        "explanation": {
+          "vi": "Cắt giảm chi phí là cut / reduce costs; bị lỗ là make a loss (hoặc lose money). \"Nếu không\" là or / otherwise."
+        },
+        "known_wrong": [
+          {
+            "answer": "We have to cut costs this year, or we'll get a loss.",
+            "error_tag": "profit_loss_collocation",
+            "feedback_vi": "Bị lỗ là make a loss, không phải get a loss."
+          },
+          {
+            "answer": "We have to cut cost this year, or we'll make a loss.",
+            "error_tag": "cut_costs_plural",
+            "feedback_vi": "Cụm cố định là cut costs - costs số nhiều."
+          },
+          {
+            "answer": "We have to decrease the costs this year, or we'll make a loss.",
+            "error_tag": "cut_costs_collocation",
+            "feedback_vi": "Cụm tự nhiên là cut costs hoặc reduce costs."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Năm nay chúng ta phải cắt giảm chi phí, nếu không chúng ta sẽ bị lỗ."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "960fc88c2ed654968b5e2b8441aef8a5d05c993d0ead8cc7ea6d84fb117dd632",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "89baaa3b-3009-5426-8f0f-8ab029cff796",
+      "is_demo": true,
+      "item_id": "d06029b3-12dd-5b13-a6df-f26b5858623e",
+      "key": "en:exercise:wb-causative-translate-within-budget-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Chúng tôi đã cho xây nhà kho mới đúng hạn và trong phạm vi ngân sách.",
+            "Chúng tôi đã thuê người xây nhà kho mới đúng hạn và trong phạm vi ngân sách.",
+            "Chúng tôi đã cho xây nhà kho mới đúng hạn và không vượt ngân sách.",
+            "Chúng tôi đã thuê xây nhà kho mới đúng hạn và không vượt ngân sách.",
+            "Nhà kho mới của chúng tôi được xây đúng hạn và trong phạm vi ngân sách.",
+            "Nhà kho mới của chúng tôi được xây đúng hạn và không vượt ngân sách.",
+            "Chúng tôi đã cho xây nhà kho mới đúng tiến độ và trong ngân sách.",
+            "Chúng tôi đã cho xây nhà kho mới đúng hạn và trong ngân sách.",
+            "Chúng ta đã cho xây nhà kho mới đúng hạn và trong phạm vi ngân sách.",
+            "Chúng tôi đã cho xây kho mới đúng hạn và không vượt ngân sách."
+          ]
+        },
+        "display_answer": "Chúng tôi đã cho xây nhà kho mới đúng hạn và trong phạm vi ngân sách.",
+        "explanation": {
+          "vi": "Had + vật + built là cho / thuê người xây; on time là đúng hạn; within budget là trong phạm vi ngân sách, không vượt chi."
+        },
+        "known_wrong": [
+          {
+            "answer": "Chúng tôi đã tự xây nhà kho mới đúng hạn và trong phạm vi ngân sách.",
+            "error_tag": "causative_meaning",
+            "feedback_vi": "Had the warehouse built nghĩa là thuê / cho người khác xây, không phải tự xây."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "We had the new warehouse built on time and within budget."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "87105f34a8a42627a986a267a4e5ba77aad92d9207df40110f588ae0b983201d",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "74613a48-808d-59e7-98f0-8171dde66162",
+      "is_demo": true,
+      "item_id": "8e9379d7-05e2-5021-a5f0-ab8033d101b2",
+      "key": "en:exercise:wb-future-fill-by-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "by",
+              "before"
+            ]
+          }
+        },
+        "display_answer": "Could you send me the slides by Wednesday? I need to check them before the meeting.",
+        "explanation": {
+          "vi": "Người nói cần bản trình chiếu chậm nhất vào thứ Tư (gửi sớm hơn cũng được), nên dùng by (hoặc before). Until chỉ dùng cho việc kéo dài liên tục."
+        },
+        "known_wrong": [
+          {
+            "answer": "until",
+            "error_tag": "by_until",
+            "feedback_vi": "Until là \"kéo dài đến\". Hạn chót dùng by."
+          },
+          {
+            "answer": "on",
+            "error_tag": "by_until",
+            "feedback_vi": "On Wednesday là \"vào thứ Tư\" - người nói cần nhận trước hạn, nên dùng by."
+          },
+          {
+            "answer": "till",
+            "error_tag": "by_until",
+            "feedback_vi": "Till giống until - kéo dài đến. Hạn chót dùng by."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa: Bạn gửi tôi bản trình chiếu chậm nhất là thứ Tư được không?",
+          "Gợi ý: giới từ hai chữ cái, nghĩa là \"chậm nhất là\"."
+        ],
+        "template": "Could you send me the slides {{b1}} Wednesday? I need to check them before the meeting."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "556372d15aa628c036c2f2ccdf99b6637b07980450cf62ee2d359edc839993a1",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "26ac85ec-27b8-5a60-ad56-e118b26939e0",
+      "is_demo": true,
+      "item_id": "ef9f337b-a56c-5e0e-ae6a-ce5a65747803",
+      "key": "en:exercise:wb-future-fill-will-have-finished",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "will",
+              "'ll"
+            ],
+            "b2": [
+              "giving",
+              "doing",
+              "rehearsing",
+              "practising",
+              "practicing"
+            ],
+            "b3": [
+              "finished",
+              "given",
+              "done",
+              "rehearsed",
+              "practised",
+              "practiced",
+              "completed"
+            ]
+          }
+        },
+        "display_answer": "Don't call me at five. I will be giving my presentation then. But by six, I'll have finished it.",
+        "explanation": {
+          "vi": "Lúc năm giờ việc thuyết trình đang diễn ra → will be + V-ing (giving). Đến sáu giờ việc đã xong → will have + V3 (finished / given)."
+        },
+        "known_wrong": [
+          {
+            "answer": "finish",
+            "error_tag": "future_perfect_form",
+            "feedback_vi": "Sau will have cần V3 - finished."
+          },
+          {
+            "answer": "give",
+            "error_tag": "future_perfect_form",
+            "feedback_vi": "Sau be cần V-ing (giving); sau have cần V3 (given)."
+          },
+          {
+            "answer": "gave",
+            "error_tag": "past_participle",
+            "feedback_vi": "Gave là V2. Sau have cần V3 - given."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          },
+          {
+            "id": "b2",
+            "width_hint": 8
+          },
+          {
+            "id": "b3",
+            "width_hint": 8
+          }
+        ],
+        "template": "Don't call me at five. I {{b1}} be {{b2}} my presentation then. But by six, I'll have {{b3}} it."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "9d7d293bd15ea137a959652eab13ebbd56b8a6a0f267210c5bbd1e2383c5b38a",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "66a8fe06-b46c-5d32-b328-33a80df53945",
+      "is_demo": true,
+      "item_id": "95dbd4c1-e9a1-5a60-a6df-4dc22b43d4f5",
+      "key": "en:exercise:wb-future-listen-on-track",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "h7q"
+        },
+        "display_answer": "Chúng ta hơi chậm tiến độ, nhưng vẫn đang kịp để đúng hạn.",
+        "explanation": {
+          "vi": "Behind schedule là chậm tiến độ, còn on track to meet the deadline là vẫn đang đi đúng hướng để kịp hạn. On track ở đây là thành ngữ, không phải \"đường ray\" thật."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "We're a bit behind schedule, but we're still on track to meet the deadline.",
+        "options": [
+          {
+            "id": "e0f",
+            "lang": "vi",
+            "text": "Chúng ta đang đi đúng đường ray, nhưng tàu bị trễ."
+          },
+          {
+            "id": "b2s",
+            "lang": "vi",
+            "text": "Chúng ta nhanh hơn kế hoạch và chắc chắn sẽ kịp hạn."
+          },
+          {
+            "id": "u6l",
+            "lang": "vi",
+            "text": "Chúng ta hơi chậm tiến độ nên sẽ trễ hạn."
+          },
+          {
+            "id": "h7q",
+            "lang": "vi",
+            "text": "Chúng ta hơi chậm tiến độ, nhưng vẫn đang kịp để đúng hạn."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "a1376a2c544aef208b72474232598ff40cc0b660342b7f46dfb0c2530f90a721",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "b9e2292e-ff9e-50f9-b48f-50aedc011b23",
+      "is_demo": true,
+      "item_id": "388b57ca-61e5-5c7c-aefb-44607c58ca51",
+      "key": "en:exercise:wb-future-mcq-continuous-meaning",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k2r"
+        },
+        "display_answer": "3 giờ chiều mai, tôi đang phỏng vấn một ứng viên.",
+        "explanation": {
+          "vi": "Will be + V-ing tả việc đang diễn ra tại một thời điểm tương lai (3 p.m. tomorrow). \"Phỏng vấn xong trước\" phải là will have interviewed; người nói là người phỏng vấn, không phải bị phỏng vấn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "m6z",
+            "lang": "vi",
+            "text": "Tôi sẽ được một ứng viên phỏng vấn lúc 3 giờ chiều mai."
+          },
+          {
+            "id": "p8d",
+            "lang": "vi",
+            "text": "Trước 3 giờ chiều mai, tôi sẽ phỏng vấn xong một ứng viên."
+          },
+          {
+            "id": "w4h",
+            "lang": "vi",
+            "text": "3 giờ chiều qua, tôi đang phỏng vấn một ứng viên."
+          },
+          {
+            "id": "k2r",
+            "lang": "vi",
+            "text": "3 giờ chiều mai, tôi đang phỏng vấn một ứng viên."
+          }
+        ],
+        "shuffle": true,
+        "stem": "\"At 3 p.m. tomorrow, I'll be interviewing a candidate.\" Câu này có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "900ddd77d386a2b6482152f19aae25d028e76497b9c46f8a881565cea0f41912",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "6ee394e9-9668-5a44-aff3-6bd2a2f6349b",
+      "is_demo": true,
+      "item_id": "ef9f337b-a56c-5e0e-ae6a-ce5a65747803",
+      "key": "en:exercise:wb-future-mcq-perfect-form",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "t5v"
+        },
+        "display_answer": "By the end of the month, we'll have hired three new staff.",
+        "explanation": {
+          "vi": "Việc xong trước một mốc dùng will have + V3 (hired) và by. Have hire thiếu đuôi V3; be hired là bị động (bị tuyển); until nghĩa là \"kéo dài đến\", không phải \"trước\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "g9c",
+            "lang": "en",
+            "text": "By the end of the month, we'll be hired three new staff."
+          },
+          {
+            "id": "x3e",
+            "lang": "en",
+            "text": "Until the end of the month, we'll have hired three new staff."
+          },
+          {
+            "id": "a1n",
+            "lang": "en",
+            "text": "By the end of the month, we'll have hire three new staff."
+          },
+          {
+            "id": "t5v",
+            "lang": "en",
+            "text": "By the end of the month, we'll have hired three new staff."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng: \"Trước cuối tháng, chúng tôi sẽ tuyển xong ba nhân viên mới.\"",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "f8817500c47acc9d63717064d9224c0a5b3f88406e8cf8ca24385d612180ab93",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "be48b213-3ec4-51f9-8bf6-1da22bb0a832",
+      "is_demo": true,
+      "item_id": "df8a17a1-7b9d-5cf9-9de3-a7250330b895",
+      "key": "en:exercise:wb-future-mcq-situation-polite",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c4j"
+        },
+        "display_answer": "Will you be using the big meeting room this afternoon?",
+        "explanation": {
+          "vi": "Will you be + V-ing hỏi kế hoạch một cách nhẹ nhàng, không ép người nghe. Will you using thiếu be; will have used hỏi việc đã xong - không hợp; câu cuối sai ngữ pháp và cộc lốc."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "r8y",
+            "lang": "en",
+            "text": "Will you using the big meeting room this afternoon?"
+          },
+          {
+            "id": "c4j",
+            "lang": "en",
+            "text": "Will you be using the big meeting room this afternoon?"
+          },
+          {
+            "id": "l1o",
+            "lang": "en",
+            "text": "Will you have used the big meeting room this afternoon?"
+          },
+          {
+            "id": "f5b",
+            "lang": "en",
+            "text": "You use the big meeting room this afternoon?"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn muốn biết chiều nay sếp có dùng phòng họp lớn không (để bạn đặt phòng cho khách) mà không làm sếp thấy bị hỏi dồn. Câu nào phù hợp nhất?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "72bf6d0b16349fde014bb79795c1f402c1f2a5dcbaf76960f80739644961f80b",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "a0e7bbe1-411b-5541-a447-fd703cf13059",
+      "is_demo": true,
+      "item_id": "f0504f12-63b8-53dd-81d4-1812f3a0974c",
+      "key": "en:exercise:wb-future-order-will-have-launched",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "w-by",
+              "w-december",
+              "w-we",
+              "w-have",
+              "w-launched",
+              "w-three",
+              "w-products"
+            ]
+          ]
+        },
+        "display_answer": "By December, we'll have launched three products.",
+        "explanation": {
+          "vi": "Mốc (By December) đứng đầu, rồi will have + V3 (launched). Launch nguyên mẫu là token nhiễu vì sau have phải là V3."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "order_index": 7,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Đến tháng Mười Hai, chúng tôi sẽ ra mắt xong ba sản phẩm.\"",
+        "tokens": [
+          {
+            "id": "w-launched",
+            "text": "launched"
+          },
+          {
+            "id": "w-products",
+            "text": "products"
+          },
+          {
+            "id": "w-have",
+            "text": "have"
+          },
+          {
+            "id": "w-by",
+            "text": "By"
+          },
+          {
+            "id": "w-we",
+            "text": "we'll"
+          },
+          {
+            "id": "w-three",
+            "text": "three"
+          },
+          {
+            "id": "w-december",
+            "text": "December,"
+          },
+          {
+            "id": "w-launch",
+            "text": "launch"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "ad0e53e94832081e667d208478f517936a3deeffbf7297abbafadba513e3c4d5",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "0bcc2f56-31d7-5f68-b5bf-b686e660de55",
+      "is_demo": true,
+      "item_id": "e02db4ce-a1a0-5ac6-bb21-a66ae3f0ec89",
+      "key": "en:exercise:wb-future-translate-meet-deadline",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "If we don't hire more people, we'll miss the deadline.",
+            "If we don't hire more staff, we'll miss the deadline.",
+            "If we do not hire more people, we will miss the deadline.",
+            "Unless we hire more people, we'll miss the deadline.",
+            "If we don't take on more people, we'll miss the deadline.",
+            "If we don't hire more people, we won't meet the deadline.",
+            "If we don't hire more staff, we won't meet the deadline."
+          ]
+        },
+        "display_answer": "If we don't hire more people, we'll miss the deadline.",
+        "explanation": {
+          "vi": "Trễ hạn là miss the deadline (hoặc won't meet the deadline). Câu điều kiện loại 1 - vế if dùng hiện tại đơn, vế chính dùng will."
+        },
+        "known_wrong": [
+          {
+            "answer": "If we don't hire more people, we'll lose the deadline.",
+            "error_tag": "deadline_collocation",
+            "feedback_vi": "Trễ hạn là miss the deadline, không phải lose."
+          },
+          {
+            "answer": "If we won't hire more people, we'll miss the deadline.",
+            "error_tag": "conditional_will",
+            "feedback_vi": "Sau if dùng hiện tại đơn - If we don't hire."
+          },
+          {
+            "answer": "If we don't hire more people, we'll be deadline.",
+            "error_tag": "deadline_collocation",
+            "feedback_vi": "Deadline chỉ là danh từ, không dùng như động từ hay tính từ như \"bị deadline\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Nếu chúng ta không thuê thêm người, chúng ta sẽ trễ hạn."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "7027c9b14bc6a250d16084b3d9574e972bfeb43765e68cfaa4df6de43924f985",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "c54e2746-0b3f-561c-aaf4-8babe53ad666",
+      "is_demo": true,
+      "item_id": "d3b67f1f-ead6-514f-a3e6-0de4c160aace",
+      "key": "en:exercise:wb-future-translate-stakeholders-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Trước khi các bên liên quan đến, chúng ta sẽ chuẩn bị xong phòng.",
+            "Trước khi các bên liên quan đến, chúng ta sẽ sắp xếp xong phòng.",
+            "Trước khi các bên liên quan đến, chúng tôi sẽ chuẩn bị xong phòng.",
+            "Trước khi các bên liên quan tới, chúng ta sẽ chuẩn bị xong phòng.",
+            "Lúc các bên liên quan đến, chúng ta sẽ chuẩn bị xong phòng rồi.",
+            "Lúc các bên liên quan đến thì chúng ta đã chuẩn bị xong phòng rồi.",
+            "Khi các bên liên quan đến, chúng ta sẽ chuẩn bị xong phòng rồi.",
+            "Khi các bên liên quan đến thì chúng ta đã chuẩn bị xong phòng.",
+            "Đến lúc các bên liên quan đến, chúng ta sẽ chuẩn bị xong phòng rồi.",
+            "Trước khi các bên liên quan đến, chúng ta sẽ bố trí xong phòng."
+          ]
+        },
+        "display_answer": "Trước khi các bên liên quan đến, chúng ta sẽ chuẩn bị xong phòng.",
+        "explanation": {
+          "vi": "By the time + hiện tại đơn là \"trước khi / đến lúc\"; will have set up là \"sẽ chuẩn bị xong (rồi)\". Stakeholders là các bên liên quan."
+        },
+        "known_wrong": [
+          {
+            "answer": "Khi các bên liên quan đến, chúng ta sẽ chuẩn bị phòng.",
+            "error_tag": "future_perfect_meaning",
+            "feedback_vi": "Will have set up nghĩa là việc đã xong trước khi họ đến - cần có \"xong / rồi\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "By the time the stakeholders arrive, we'll have set up the room."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "f23a540cbd0ee8d5e804afe83de36893e8e13ac8815a8e6bbb738bd9b01e280f",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "93dac083-a8e7-5387-bb46-a590fc23e74a",
+      "is_demo": true,
+      "item_id": "ef9f337b-a56c-5e0e-ae6a-ce5a65747803",
+      "key": "en:exercise:wb-future-translate-ten-years",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "By June next year, she'll have worked at this company for ten years.",
+            "By June next year, she will have worked at this company for ten years.",
+            "By next June, she'll have worked at this company for ten years.",
+            "By next June, she will have worked at this company for ten years.",
+            "By June next year, she'll have worked for this company for ten years.",
+            "By June next year, she will have worked for this company for ten years.",
+            "By June next year, she'll have been working at this company for ten years.",
+            "By June next year, she will have been working at this company for ten years.",
+            "By next June, she will have worked for this company for ten years.",
+            "She'll have worked at this company for ten years by June next year.",
+            "She will have worked at this company for ten years by June next year."
+          ]
+        },
+        "display_answer": "By June next year, she'll have worked at this company for ten years.",
+        "explanation": {
+          "vi": "Đếm thời lượng tính đến một mốc tương lai dùng by + mốc và will have + V3 (worked) + for + khoảng thời gian."
+        },
+        "known_wrong": [
+          {
+            "answer": "By June next year, she will have work at this company for ten years.",
+            "error_tag": "future_perfect_form",
+            "feedback_vi": "Sau will have cần V3 - worked."
+          },
+          {
+            "answer": "By June next year, she will work at this company for ten years.",
+            "error_tag": "future_perfect_form",
+            "feedback_vi": "Đếm thời lượng đến một mốc tương lai cần will have + V3."
+          },
+          {
+            "answer": "Until June next year, she will have worked at this company for ten years.",
+            "error_tag": "by_until",
+            "feedback_vi": "\"Đến (mốc đó)\" khi đếm thời lượng dùng by, không dùng until."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "order_index": 10,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Đến tháng Sáu năm sau, chị ấy sẽ làm việc ở công ty này được mười năm."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "f8a2a2d68952ef03472ab0203b33906e8ffb6a17175283bc06cd0d408e8b2777",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "07066e4d-f299-5119-a479-52ec04c807dc",
+      "is_demo": true,
+      "item_id": "9fc9fa2f-459a-585b-a6db-2cba2b561f72",
+      "key": "en:exercise:wb-future-translate-this-time-tomorrow",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "This time tomorrow, I'll be flying to Singapore.",
+            "This time tomorrow I will be flying to Singapore.",
+            "I'll be flying to Singapore this time tomorrow.",
+            "This time tomorrow, I'll be on a flight to Singapore.",
+            "This time tomorrow, I'll be on the plane to Singapore."
+          ]
+        },
+        "display_answer": "This time tomorrow, I'll be flying to Singapore.",
+        "explanation": {
+          "vi": "\"Giờ này ngày mai\" là this time tomorrow; \"đang bay\" ở tương lai là will be + V-ing - I'll be flying."
+        },
+        "known_wrong": [
+          {
+            "answer": "This time tomorrow, I will flying to Singapore.",
+            "error_tag": "future_continuous_form",
+            "feedback_vi": "Thiếu be - will be flying."
+          },
+          {
+            "answer": "This time tomorrow, I will fly to Singapore.",
+            "error_tag": "future_continuous_form",
+            "feedback_vi": "Will fly chỉ là \"sẽ bay\". Việc đang diễn ra tại thời điểm đó cần will be flying."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "order_index": 5,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Giờ này ngày mai, tôi đang bay sang Singapore."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "365b4f4421429f44e4c488633444147077ea63b978645a3f64fb76a89c03ea8b",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "da9be6b3-e6a7-5db1-86af-3266328dfb52",
+      "is_demo": true,
+      "item_id": "7b879cca-90fd-54cd-ac99-46564b14e88d",
+      "key": "en:exercise:wb-meeting-fill-agenda-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "on"
+            ],
+            "b2": [
+              "agenda"
+            ]
+          }
+        },
+        "display_answer": "There are four items on the agenda today, so let's be quick.",
+        "explanation": {
+          "vi": "Nội dung họp nằm \"trên\" danh sách nên dùng on the agenda (giống on the list, on the menu)."
+        },
+        "known_wrong": [
+          {
+            "answer": "in",
+            "error_tag": "agenda_preposition",
+            "feedback_vi": "Items on the agenda - dùng on, giống như on the list."
+          },
+          {
+            "answer": "diary",
+            "error_tag": "agenda_word",
+            "feedback_vi": "Diary là sổ lịch cá nhân. Chương trình họp là agenda."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "order_index": 2,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 2
+          },
+          {
+            "id": "b2",
+            "width_hint": 6
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa: Hôm nay có bốn nội dung trong chương trình họp, nên chúng ta làm nhanh nhé.",
+          "Gợi ý: giới từ o… + danh từ a… (chương trình họp)."
+        ],
+        "template": "There are four items {{b1}} the {{b2}} today, so let's be quick."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "408cc3422e50dffbc8587722e607878e34f416bafb87cc86d3bbb43d817a28af",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "90824b0d-5137-579a-a56c-8d6690b74dc6",
+      "is_demo": true,
+      "item_id": "01e0a16a-a976-5069-b301-911d32fe847f",
+      "key": "en:exercise:wb-meeting-fill-move-on",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "move",
+              "go"
+            ],
+            "b2": [
+              "to"
+            ]
+          }
+        },
+        "display_answer": "OK, I think we've covered that. Let's move on to the next item - the marketing budget.",
+        "explanation": {
+          "vi": "Let's move on to + danh từ là cách chuyển sang nội dung tiếp theo. Go on to cũng được dùng."
+        },
+        "known_wrong": [
+          {
+            "answer": "change",
+            "error_tag": "move_on_to",
+            "feedback_vi": "Chuyển nội dung họp là move on to, không phải change on."
+          },
+          {
+            "answer": "discuss",
+            "error_tag": "move_on_to",
+            "feedback_vi": "Cụm cố định là move on to + danh từ."
+          },
+          {
+            "answer": "about",
+            "error_tag": "move_on_to",
+            "feedback_vi": "Move on to - giới từ to, không phải about."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          },
+          {
+            "id": "b2",
+            "width_hint": 2
+          }
+        ],
+        "template": "OK, I think we've covered that. Let's {{b1}} on {{b2}} the next item - the marketing budget."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "dd29b942f21159428090d74963cf72074c9b573c4bca939cb59a2a396fb4326b",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "515ea9f3-a7c9-5740-a164-902260db7892",
+      "is_demo": true,
+      "item_id": "2612f225-21d0-5686-a0ba-84f6a77c2f8f",
+      "key": "en:exercise:wb-meeting-listen-come-in",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "u3h"
+        },
+        "display_answer": "Xin lỗi, cho tôi xen vào một chút được không? Tôi nghĩ chúng ta không đủ tiền làm việc đó.",
+        "explanation": {
+          "vi": "Come in here trong cuộc họp là xen vào cuộc thảo luận, không phải bước vào phòng. Can't afford là không đủ tiền chi trả."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "Sorry, could I just come in here? I don't think we can afford that.",
+        "options": [
+          {
+            "id": "u3h",
+            "lang": "vi",
+            "text": "Xin lỗi, cho tôi xen vào một chút được không? Tôi nghĩ chúng ta không đủ tiền làm việc đó."
+          },
+          {
+            "id": "d8c",
+            "lang": "vi",
+            "text": "Xin lỗi, tôi vào phòng được không? Tôi nghĩ chúng ta không đủ tiền làm việc đó."
+          },
+          {
+            "id": "o6a",
+            "lang": "vi",
+            "text": "Xin lỗi, cho tôi nói nốt được không? Tôi nghĩ chúng ta đủ tiền làm việc đó."
+          },
+          {
+            "id": "j4w",
+            "lang": "vi",
+            "text": "Xin lỗi, tôi có thể đến đây không? Tôi nghĩ chúng ta nên mua cái đó."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "8d208327a2a16f8c547e0141a4bde5f10b0286e6e7ff1c1975523228c1948d0e",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "c764c16a-0443-5388-99e7-ff6d36adb5e1",
+      "is_demo": true,
+      "item_id": "7a05ee7f-45d3-52b2-ba2c-fdd09d6ae300",
+      "key": "en:exercise:wb-meeting-mcq-minutes-meaning",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c9d"
+        },
+        "display_answer": "Ghi biên bản cuộc họp",
+        "explanation": {
+          "vi": "The minutes (luôn số nhiều) là biên bản cuộc họp, take the minutes là ghi biên bản. Nghĩa \"phút\" không hợp ngữ cảnh; chủ trì là chair a meeting."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "order_index": 3,
+      "prompt": {
+        "options": [
+          {
+            "id": "e1k",
+            "lang": "vi",
+            "text": "Nghỉ vài phút"
+          },
+          {
+            "id": "n5y",
+            "lang": "vi",
+            "text": "Chủ trì cuộc họp"
+          },
+          {
+            "id": "c9d",
+            "lang": "vi",
+            "text": "Ghi biên bản cuộc họp"
+          },
+          {
+            "id": "l4s",
+            "lang": "vi",
+            "text": "Bấm giờ cho cuộc họp"
+          }
+        ],
+        "shuffle": true,
+        "stem": "\"Could you take the minutes today, Hưng?\" Người chủ trì đang nhờ Hưng làm gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a7fd6e9bba85370d167724a6613374c4bbd821271caad688f29aa64dae182c5a",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "ef18b698-68db-5f76-a64c-6cf3fc363d62",
+      "is_demo": true,
+      "item_id": "601885bd-23bc-52f1-bae0-90ee63e30deb",
+      "key": "en:exercise:wb-meeting-mcq-open",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r5t"
+        },
+        "display_answer": "Right, everyone's here. Shall we get started?",
+        "explanation": {
+          "vi": "Shall we get started? là câu mở đầu chuẩn. To sum up và Any other business dùng ở cuối cuộc họp; start up là khởi nghiệp hoặc khởi động máy."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "x2p",
+            "lang": "en",
+            "text": "Right, everyone's here. Is there any other business?"
+          },
+          {
+            "id": "r5t",
+            "lang": "en",
+            "text": "Right, everyone's here. Shall we get started?"
+          },
+          {
+            "id": "k1v",
+            "lang": "en",
+            "text": "Right, everyone's here. To sum up?"
+          },
+          {
+            "id": "f7m",
+            "lang": "en",
+            "text": "Right, everyone's here. Shall we start up?"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn là người chủ trì, mọi người đã đến đủ. Câu nào phù hợp nhất để mở đầu cuộc họp?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "32fbaf92b96f8429366b2ef028b271426c75177cff709717c5532d306201fd74",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "0ff5e1e8-02d7-5e74-ba1f-986778c85a58",
+      "is_demo": true,
+      "item_id": "a0e6feb6-d1cb-5f09-95b1-274b64845fda",
+      "key": "en:exercise:wb-meeting-mcq-situation-keep-turn",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "q2n"
+        },
+        "display_answer": "Sorry, if I could just finish my point - then I'd love to hear your view.",
+        "explanation": {
+          "vi": "If I could just finish… giữ lượt lời một cách mềm mỏng, kèm lời mời người kia nói sau. Câu mệnh lệnh quá thô; Could I just come in here? là để xen vào chứ không phải giữ lượt; câu cuối dùng để kết thúc cuộc họp."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "q2n",
+            "lang": "en",
+            "text": "Sorry, if I could just finish my point - then I'd love to hear your view."
+          },
+          {
+            "id": "v1e",
+            "lang": "en",
+            "text": "To sum up, let's move on to any other business."
+          },
+          {
+            "id": "z8b",
+            "lang": "en",
+            "text": "Sorry, could I just come in here?"
+          },
+          {
+            "id": "h6x",
+            "lang": "en",
+            "text": "Stop talking, I haven't finished."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn đang trình bày thì một đồng nghiệp chen ngang. Bạn muốn nói nốt ý của mình một cách lịch sự. Câu nào phù hợp nhất?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "7df8b85edd29ce69e83dfdf7ec6592594bb0aad550d9c38cc7dcaa1ca90e6b27",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "e2aa82d8-ad4f-5880-8e75-06fbde4dce42",
+      "is_demo": true,
+      "item_id": "744bbcb0-e6bb-5af6-9632-95a0f8f7b6c2",
+      "key": "en:exercise:wb-meeting-order-action-point",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "s-to1",
+              "s-sum",
+              "s-up",
+              "s-weve",
+              "s-agreed",
+              "s-to2",
+              "s-cut",
+              "s-travel",
+              "s-costs"
+            ]
+          ]
+        },
+        "display_answer": "To sum up, we've agreed to cut travel costs.",
+        "explanation": {
+          "vi": "To sum up đứng đầu câu, có dấu phẩy; agree to + V (agreed to cut); travel costs là chi phí đi lại."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "order_index": 7,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu kết thúc cuộc họp: \"Tóm lại, chúng ta đã đồng ý cắt giảm chi phí đi lại.\"",
+        "tokens": [
+          {
+            "id": "s-costs",
+            "text": "costs"
+          },
+          {
+            "id": "s-agreed",
+            "text": "agreed"
+          },
+          {
+            "id": "s-sum",
+            "text": "sum"
+          },
+          {
+            "id": "s-to2",
+            "text": "to"
+          },
+          {
+            "id": "s-travel",
+            "text": "travel"
+          },
+          {
+            "id": "s-weve",
+            "text": "we've"
+          },
+          {
+            "id": "s-up",
+            "text": "up,"
+          },
+          {
+            "id": "s-cut",
+            "text": "cut"
+          },
+          {
+            "id": "s-to1",
+            "text": "To"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "559ecd22e37e86f1c8adfd99c4b2e5256a1dce9d2d8eaa1d056f50b2d4c97a38",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "a63bf91a-b40e-5cad-b43f-d6af31cf63db",
+      "is_demo": true,
+      "item_id": "35b342f6-268f-5647-b22e-ed1ac69d7e46",
+      "key": "en:exercise:wb-meeting-translate-chair-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Chị Thảo sẽ chủ trì cuộc họp, còn Nam sẽ ghi biên bản.",
+            "Chị Thảo sẽ chủ trì cuộc họp và Nam sẽ ghi biên bản.",
+            "Bà Thảo sẽ chủ trì cuộc họp, còn Nam sẽ ghi biên bản.",
+            "Bà Thảo sẽ chủ trì cuộc họp và Nam sẽ ghi biên bản.",
+            "Cô Thảo sẽ chủ trì cuộc họp, còn Nam sẽ ghi biên bản.",
+            "Cô Thảo sẽ chủ trì cuộc họp và Nam sẽ ghi biên bản.",
+            "Chị Thảo sẽ chủ trì cuộc họp, Nam sẽ ghi biên bản.",
+            "Chị Thảo sẽ chủ trì buổi họp, còn Nam sẽ ghi biên bản.",
+            "Chị Thảo sẽ chủ trì buổi họp và Nam sẽ ghi biên bản.",
+            "Thảo sẽ chủ trì cuộc họp, còn Nam sẽ ghi biên bản.",
+            "Chị Thảo sẽ chủ trì cuộc họp, còn Nam sẽ ghi biên bản cuộc họp."
+          ]
+        },
+        "display_answer": "Chị Thảo sẽ chủ trì cuộc họp, còn Nam sẽ ghi biên bản.",
+        "explanation": {
+          "vi": "Chair the meeting là chủ trì cuộc họp; take the minutes là ghi biên bản. Will be chairing là tương lai tiếp diễn - việc đã được lên kế hoạch."
+        },
+        "known_wrong": [
+          {
+            "answer": "Chị Thảo sẽ ngồi ghế cuộc họp, còn Nam sẽ ghi biên bản.",
+            "error_tag": "chair_meaning",
+            "feedback_vi": "Chair ở đây là động từ \"chủ trì\", không phải cái ghế."
+          },
+          {
+            "answer": "Chị Thảo sẽ chủ trì cuộc họp, còn Nam sẽ tính số phút.",
+            "error_tag": "minutes_meaning",
+            "feedback_vi": "Take the minutes là ghi biên bản, không phải tính phút."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "Ms Thảo will be chairing the meeting, and Nam will take the minutes."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "e35f7a6b5c8ec2f7e146fedabf087f4543cd4708537ded31adeb502e2154900f",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "93b05184-f25f-50c2-b5d3-c1c2a7e01c06",
+      "is_demo": true,
+      "item_id": "3b7cb296-475d-538d-80bd-a5d6d6be3869",
+      "key": "en:exercise:wb-meeting-translate-come-back",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "That's a good question, but can we come back to that later?",
+            "That's a good question, but could we come back to that later?",
+            "Good question, but can we come back to that later?",
+            "Good question, but could we come back to that later?",
+            "That is a good question, but can we come back to that later?",
+            "That's a good question, but can we come back to it later?",
+            "That's a good question, but could we come back to it later?",
+            "Good question, but can we come back to it later?",
+            "That's a good question, but can we discuss that later?",
+            "That's a good question, but can we talk about that later?"
+          ]
+        },
+        "display_answer": "That's a good question, but can we come back to that later?",
+        "explanation": {
+          "vi": "Can / Could we come back to that later? là cách hoãn một chủ đề lịch sự. Có thể khen câu hỏi trước (Good question) để người nghe không thấy bị gạt đi."
+        },
+        "known_wrong": [
+          {
+            "answer": "That's a good question, but can we return back to that later?",
+            "error_tag": "return_back",
+            "feedback_vi": "Return đã có nghĩa là quay lại; nói come back to hoặc return to."
+          },
+          {
+            "answer": "That's a good question, but can we discuss about that later?",
+            "error_tag": "discuss_about",
+            "feedback_vi": "Discuss không đi với about."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Câu hỏi hay đấy, nhưng chúng ta bàn lại chuyện đó sau được không?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "04f7bb6b529da0b0014f1e8f5723d0b9374d9cf11688471eb1875c5f11bd7db3",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "7c360cc0-49e9-5ce2-9093-6455b0138b33",
+      "is_demo": true,
+      "item_id": "75d10cf8-9d30-579c-be8f-aa5ccb981ae7",
+      "key": "en:exercise:wb-meeting-translate-discuss-budget",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "We'll discuss the budget at the end of the meeting.",
+            "We will discuss the budget at the end of the meeting.",
+            "We're going to discuss the budget at the end of the meeting.",
+            "We'll talk about the budget at the end of the meeting.",
+            "We will talk about the budget at the end of the meeting.",
+            "We're going to talk about the budget at the end of the meeting.",
+            "We'll be discussing the budget at the end of the meeting.",
+            "We will be discussing the budget at the end of the meeting."
+          ]
+        },
+        "display_answer": "We'll discuss the budget at the end of the meeting.",
+        "explanation": {
+          "vi": "Discuss là ngoại động từ - discuss the budget, không có about (muốn dùng about thì dùng talk about). \"Vào cuối\" là at the end of."
+        },
+        "known_wrong": [
+          {
+            "answer": "We'll discuss about the budget at the end of the meeting.",
+            "error_tag": "discuss_about",
+            "feedback_vi": "Discuss không đi với about - discuss the budget."
+          },
+          {
+            "answer": "We will discuss about the budget at the end of the meeting.",
+            "error_tag": "discuss_about",
+            "feedback_vi": "Discuss không đi với about - discuss the budget."
+          },
+          {
+            "answer": "We'll discuss the budget in the end of the meeting.",
+            "error_tag": "at_end_in_end",
+            "feedback_vi": "Cuối (cuộc họp) là at the end of; in the end nghĩa là \"rốt cuộc\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "order_index": 5,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Chúng ta sẽ thảo luận về ngân sách vào cuối cuộc họp."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a7bbbd97d96e90c100727b2a1651f00cadb531744834a493b1bc254402c08932",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "fd26e9fd-c33e-56f1-a657-a92e583743b8",
+      "is_demo": true,
+      "item_id": "eaadbf10-3c31-518b-b5ef-70c6198a3e88",
+      "key": "en:exercise:wb-nego-fill-by-to-hinted",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "by"
+            ],
+            "b2": [
+              "to"
+            ]
+          }
+        },
+        "display_answer": "Revenue increased by 20%, from $4 million to $4.8 million.",
+        "explanation": {
+          "vi": "20% là lượng tăng → by; 4,8 triệu là mức đạt được → from… to…"
+        },
+        "known_wrong": [
+          {
+            "answer": "for",
+            "error_tag": "increase_by_for",
+            "feedback_vi": "Mức tăng giảm không dùng for - lượng thay đổi đi với by."
+          },
+          {
+            "answer": "with",
+            "error_tag": "increase_by_for",
+            "feedback_vi": "Increase by + lượng thay đổi, không dùng with."
+          },
+          {
+            "answer": "at",
+            "error_tag": "increase_by_for",
+            "feedback_vi": "At dùng với peak at. Ở đây cần by (lượng) và to (mức cuối)."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "order_index": 2,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          },
+          {
+            "id": "b2",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa: Doanh thu tăng 20%, từ 4 triệu lên 4,8 triệu đô.",
+          "Gợi ý: lượng thay đổi dùng b…; mức cuối dùng t…"
+        ],
+        "template": "Revenue increased {{b1}} 20%, from $4 million {{b2}} $4.8 million."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "41e37a44d2f80bb9d4cdb765d7f93fc7508e67eb8c7bf0b5679090b17de7b287",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "34ccb24f-475a-5982-9119-be143cd1b8ce",
+      "is_demo": true,
+      "item_id": "97422f83-7793-5eac-8fc4-5dd4e7f58b9a",
+      "key": "en:exercise:wb-nego-fill-trend-adverbs",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "sharply",
+              "dramatically",
+              "significantly",
+              "steeply",
+              "rapidly",
+              "considerably",
+              "substantially"
+            ],
+            "b2": [
+              "at"
+            ],
+            "b3": [
+              "slightly"
+            ]
+          }
+        },
+        "display_answer": "Sales rose sharply in the first quarter, peaked at 50,000 units in April and then fell slightly, by only 2%.",
+        "explanation": {
+          "vi": "Động từ xu hướng đi với trạng từ (rose sharply, fell slightly). Giảm chỉ 2% là giảm nhẹ - slightly. Đạt đỉnh tại một con số - peaked at."
+        },
+        "known_wrong": [
+          {
+            "answer": "sharp",
+            "error_tag": "trend_adverb",
+            "feedback_vi": "Bổ nghĩa cho động từ rose cần trạng từ - sharply."
+          },
+          {
+            "answer": "slight",
+            "error_tag": "trend_adverb",
+            "feedback_vi": "Bổ nghĩa cho fell cần trạng từ - slightly."
+          },
+          {
+            "answer": "to",
+            "error_tag": "peak_at",
+            "feedback_vi": "Đạt đỉnh tại một mức dùng peak at."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 9
+          },
+          {
+            "id": "b2",
+            "width_hint": 2
+          },
+          {
+            "id": "b3",
+            "width_hint": 8
+          }
+        ],
+        "template": "Sales rose {{b1}} in the first quarter, peaked {{b2}} 50,000 units in April and then fell {{b3}}, by only 2%."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "b3c86f0af510d263bba96bbce588a947bad0a4a323a2b155efed81972d1441e9",
+      "difficulty": 2,
+      "exercise_type": "listen",
+      "id": "d6d0fe04-f625-506e-8096-39af85bee1a5",
+      "is_demo": true,
+      "item_id": "1a290674-243f-5078-8b3a-0177e68650e8",
+      "key": "en:exercise:wb-nego-listen-fair-point",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "t3w"
+        },
+        "display_answer": "Anh nói cũng có lý, nhưng chúng tôi đã giảm giá hai lần rồi.",
+        "explanation": {
+          "vi": "That's a fair point, but… là công nhận ý đối phương có lý rồi phản bác. Dịch từng chữ \"điểm công bằng\" sai nghĩa; fair (hội chợ) là từ đồng âm không hợp ngữ cảnh."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "That's a fair point, but we've already reduced our price twice.",
+        "options": [
+          {
+            "id": "g7r",
+            "lang": "vi",
+            "text": "Đó là một điểm công bằng, và chúng tôi sẽ giảm giá hai lần."
+          },
+          {
+            "id": "a5u",
+            "lang": "vi",
+            "text": "Anh nói sai rồi, chúng tôi chưa bao giờ giảm giá."
+          },
+          {
+            "id": "t3w",
+            "lang": "vi",
+            "text": "Anh nói cũng có lý, nhưng chúng tôi đã giảm giá hai lần rồi."
+          },
+          {
+            "id": "n0j",
+            "lang": "vi",
+            "text": "Hội chợ đó rất hay, nhưng giá đã tăng gấp đôi."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "ef6ea585c7798220831eefb9ce47bc54da6b90444b6c677a5116ee075d104985",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "af799491-a89b-52ef-96ee-cf132ae57de8",
+      "is_demo": true,
+      "item_id": "b63c5048-bbba-5448-8a4a-b5cc1ffec630",
+      "key": "en:exercise:wb-nego-mcq-provided-that",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "y4g"
+        },
+        "display_answer": "We can deliver next week, provided that you confirm the order today.",
+        "explanation": {
+          "vi": "Sau provided that dùng hiện tại đơn (confirm), không có will. Provide that thiếu đuôi -ed; as long phải đủ as long as."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "b8k",
+            "lang": "en",
+            "text": "We can deliver next week, provided that you will confirm the order today."
+          },
+          {
+            "id": "s6o",
+            "lang": "en",
+            "text": "We can deliver next week, as long you confirm the order today."
+          },
+          {
+            "id": "m2c",
+            "lang": "en",
+            "text": "We can deliver next week, provide that you confirm the order today."
+          },
+          {
+            "id": "y4g",
+            "lang": "en",
+            "text": "We can deliver next week, provided that you confirm the order today."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng: \"Chúng tôi có thể giao hàng vào tuần sau, với điều kiện quý công ty xác nhận đơn hàng hôm nay.\"",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "b834ce907e6852d5564f3780e697cffaf2b8b93c20d9a0075b8d0df4e25cafe3",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "05e11f6c-ebd6-56f1-ade0-44c30b2c762b",
+      "is_demo": true,
+      "item_id": "cd7772e9-8e40-5ae1-a2a4-60c2631a9725",
+      "key": "en:exercise:wb-nego-mcq-situation-counter",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "d6v"
+        },
+        "display_answer": "That's a fair point, but 15% is too much for us. We could offer 8%, provided that you pay 50% in advance.",
+        "explanation": {
+          "vi": "Câu đúng công nhận ý khách, từ chối nhẹ nhàng, đề nghị mềm bằng could và điều kiện provided that + hiện tại đơn. \"You are wrong\" quá gay gắt; \"will pay\" sai sau provided that / if; phương án cuối chấp nhận 15% - trái với tình huống."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "order_index": 9,
+      "prompt": {
+        "options": [
+          {
+            "id": "o4m",
+            "lang": "en",
+            "text": "That's a fair point, so we'll give you 15%, provided that you pay 50% in advance."
+          },
+          {
+            "id": "d6v",
+            "lang": "en",
+            "text": "That's a fair point, but 15% is too much for us. We could offer 8%, provided that you pay 50% in advance."
+          },
+          {
+            "id": "i2q",
+            "lang": "en",
+            "text": "That's a fair point, but 15% is too much for us. We could offer 8%, provided that you will pay 50% in advance."
+          },
+          {
+            "id": "p9z",
+            "lang": "en",
+            "text": "You are wrong, 15% is too much. We give you 8% if you will pay 50% in advance."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Khách hàng đòi giảm giá 15%. Bạn chỉ có thể giảm 8% nếu họ trả trước 50%, và muốn giữ không khí thân thiện. Câu nào phù hợp nhất?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "519b769a9104992f4d5102b8b052b9e259bfc7ca56e79f352620225537b4304a",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "a6ef369f-2ba1-517c-a03b-1307031a9fb6",
+      "is_demo": true,
+      "item_id": "7fd3e162-d66b-5891-bca8-053c9ef94b51",
+      "key": "en:exercise:wb-nego-mcq-trend-meaning",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "h1p"
+        },
+        "display_answer": "remained stable",
+        "explanation": {
+          "vi": "Remain stable là giữ ổn định, đi ngang. Rose sharply là tăng mạnh, fell slightly là giảm nhẹ, peaked at là đạt đỉnh tại một mức."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "order_index": 3,
+      "prompt": {
+        "options": [
+          {
+            "id": "h1p",
+            "lang": "en",
+            "text": "remained stable"
+          },
+          {
+            "id": "k5n",
+            "lang": "en",
+            "text": "peaked at"
+          },
+          {
+            "id": "w7d",
+            "lang": "en",
+            "text": "rose sharply"
+          },
+          {
+            "id": "c3f",
+            "lang": "en",
+            "text": "fell slightly"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Biểu đồ cho thấy doanh số không tăng cũng không giảm suốt sáu tháng. Cụm nào mô tả đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a042b1074d016ae2cad3a7d2fcc59582de14ba1464488ebd32e9e81994d8ef16",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "db630d06-015f-5196-9bed-dd006bb880bb",
+      "is_demo": true,
+      "item_id": "963181d6-860d-5fc2-90da-e10835498671",
+      "key": "en:exercise:wb-nego-order-market-share",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "k-weve",
+              "k-lost",
+              "k-market",
+              "k-share",
+              "k-to",
+              "k-cheaper",
+              "k-competitors"
+            ]
+          ]
+        },
+        "display_answer": "We've lost market share to cheaper competitors.",
+        "explanation": {
+          "vi": "Lose market share to + đối thủ - mất thị phần vào tay ai. For là token nhiễu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "order_index": 7,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Chúng tôi đã mất thị phần vào tay các đối thủ rẻ hơn.\"",
+        "tokens": [
+          {
+            "id": "k-share",
+            "text": "share"
+          },
+          {
+            "id": "k-cheaper",
+            "text": "cheaper"
+          },
+          {
+            "id": "k-lost",
+            "text": "lost"
+          },
+          {
+            "id": "k-to",
+            "text": "to"
+          },
+          {
+            "id": "k-weve",
+            "text": "We've"
+          },
+          {
+            "id": "k-competitors",
+            "text": "competitors"
+          },
+          {
+            "id": "k-market",
+            "text": "market"
+          },
+          {
+            "id": "k-for",
+            "text": "for"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "2f0c773dae5c49253d6faa9ee52a022151c381343827a3f4ed6f0e6eed7f742c",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "ea140eae-d60f-5f2b-82fa-2dbb1a3a610c",
+      "is_demo": true,
+      "item_id": "4b9957e6-2249-5ecf-acaa-ef66efad7831",
+      "key": "en:exercise:wb-nego-translate-as-long-as",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "We could offer a 5% discount, as long as you sign a two-year contract.",
+            "We can offer a 5% discount, as long as you sign a two-year contract.",
+            "We could offer a 5% discount, provided that you sign a two-year contract.",
+            "We can offer a 5% discount, provided that you sign a two-year contract.",
+            "We could offer a 5% discount, provided you sign a two-year contract.",
+            "We can offer a 5% discount, provided you sign a two-year contract.",
+            "We could give you a 5% discount, as long as you sign a two-year contract.",
+            "We can give you a 5% discount, as long as you sign a two-year contract.",
+            "We could give you a 5% discount, provided that you sign a two-year contract.",
+            "We can give you a 5% discount as long as you sign a two-year contract.",
+            "We could reduce the price by 5%, as long as you sign a two-year contract.",
+            "We can reduce the price by 5%, as long as you sign a two-year contract.",
+            "We could reduce the price by 5%, provided that you sign a two-year contract.",
+            "We could offer a 5% discount, providing that you sign a two-year contract.",
+            "We could offer a 5% discount, so long as you sign a two-year contract."
+          ]
+        },
+        "display_answer": "We could offer a 5% discount, as long as you sign a two-year contract.",
+        "explanation": {
+          "vi": "\"Miễn là\" là as long as / provided (that), theo sau là hiện tại đơn (sign). A 5% discount cần mạo từ a; two-year có gạch nối và không thêm s vì đứng trước danh từ."
+        },
+        "known_wrong": [
+          {
+            "answer": "We could offer a 5% discount, as long as you will sign a two-year contract.",
+            "error_tag": "conditional_will",
+            "feedback_vi": "Sau as long as dùng hiện tại đơn - you sign, không có will."
+          },
+          {
+            "answer": "We could offer a 5% discount, provided that you will sign a two-year contract.",
+            "error_tag": "conditional_will",
+            "feedback_vi": "Sau provided that dùng hiện tại đơn - you sign, không có will."
+          },
+          {
+            "answer": "We could offer 5% discount, as long as you sign a two-year contract.",
+            "error_tag": "article",
+            "feedback_vi": "Discount là danh từ đếm được - a 5% discount."
+          },
+          {
+            "answer": "We could reduce the price for 5%, as long as you sign a two-year contract.",
+            "error_tag": "increase_by_for",
+            "feedback_vi": "Giảm bao nhiêu phần trăm dùng by - reduce the price by 5%."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Chúng tôi có thể giảm giá 5%, miễn là quý công ty ký hợp đồng hai năm."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "e921f72e3f136c1f309ee9cba53df4ad8ff8708d85171bacf5d650997399b9c6",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "6f7b5a6f-1109-585e-83f3-46811f07cbfe",
+      "is_demo": true,
+      "item_id": "a2ee3e87-b0da-5550-954a-47c0b64cd1af",
+      "key": "en:exercise:wb-nego-translate-compromise-vi",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Sau một cuộc thảo luận dài, hai bên đã đạt được thỏa hiệp về giá.",
+            "Sau một cuộc thảo luận dài, cả hai bên đã đạt được thỏa hiệp về giá.",
+            "Sau một cuộc thảo luận dài, hai bên đã thỏa hiệp được về giá.",
+            "Sau một cuộc thảo luận dài, cả hai bên đã thỏa hiệp về giá.",
+            "Sau một hồi thảo luận lâu, hai bên đã đạt được thỏa hiệp về giá.",
+            "Sau một cuộc thảo luận dài, hai bên đã đạt được thỏa hiệp về giá cả.",
+            "Sau một cuộc thảo luận dài, hai bên đã đi đến thỏa hiệp về giá.",
+            "Sau cuộc thảo luận dài, hai bên đã đạt được thỏa hiệp về giá.",
+            "Sau một cuộc thảo luận dài, hai bên đã nhượng bộ nhau về giá.",
+            "Sau một cuộc thảo luận dài, hai bên đã đạt được thoả hiệp về giá.",
+            "Sau một cuộc thảo luận dài, cả hai bên đã đạt được thoả hiệp về giá."
+          ]
+        },
+        "display_answer": "Sau một cuộc thảo luận dài, hai bên đã đạt được thỏa hiệp về giá.",
+        "explanation": {
+          "vi": "Reach a compromise là đạt được thỏa hiệp - mỗi bên nhường một chút. Nó khác reach an agreement (thỏa thuận nói chung)."
+        },
+        "known_wrong": [
+          {
+            "answer": "Sau một cuộc thảo luận dài, hai bên đã đạt được thỏa thuận về giá.",
+            "error_tag": "compromise_agreement",
+            "feedback_vi": "Gần đúng, nhưng compromise là thỏa hiệp (mỗi bên nhượng bộ một phần); thỏa thuận là agreement."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "After a long discussion, both sides reached a compromise on the price."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "196bc84c213465e6333bbbd08939d95fa2b768e5b6f6115e4ff07a6724dd9e67",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "ab3d73fd-73e5-514c-8c5d-d8e52a9edba1",
+      "is_demo": true,
+      "item_id": "36427bb3-af94-542c-94e2-732250c41e42",
+      "key": "en:exercise:wb-nego-translate-peak-stable",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Visitor numbers peaked at 20,000 in July and then remained stable.",
+            "Visitor numbers peaked at 20,000 in July, and then remained stable.",
+            "Visitor numbers peaked at 20,000 in July, then remained stable.",
+            "Visitor numbers peaked at 20000 in July and then remained stable.",
+            "The number of visitors peaked at 20,000 in July and then remained stable.",
+            "The number of visitors peaked at 20,000 in July, then remained stable.",
+            "Visitor numbers reached a peak of 20,000 in July and then remained stable.",
+            "The number of visitors reached a peak of 20,000 in July and then remained stable.",
+            "Visitor numbers peaked at 20,000 in July and then stayed stable.",
+            "Visitor numbers peaked at 20,000 in July and then levelled off.",
+            "Visitor numbers peaked at 20,000 in July and then leveled off.",
+            "Visitor numbers peaked at 20,000 in July and remained stable after that.",
+            "Visits peaked at 20,000 in July and then remained stable."
+          ]
+        },
+        "display_answer": "Visitor numbers peaked at 20,000 in July and then remained stable.",
+        "explanation": {
+          "vi": "Đạt đỉnh tại một con số là peak at / reach a peak of; giữ ổn định là remain stable (tính từ sau remain) hoặc level off. Tháng đi với in."
+        },
+        "known_wrong": [
+          {
+            "answer": "Visitor numbers peaked to 20,000 in July and then remained stable.",
+            "error_tag": "peak_at",
+            "feedback_vi": "Đạt đỉnh tại một mức dùng peak at, không phải peak to."
+          },
+          {
+            "answer": "Visitor numbers peaked at 20,000 in July and then remained stably.",
+            "error_tag": "remain_adjective",
+            "feedback_vi": "Sau remain là tính từ - remained stable."
+          },
+          {
+            "answer": "Visitor numbers peaked at 20,000 on July and then remained stable.",
+            "error_tag": "preposition_time",
+            "feedback_vi": "Tháng dùng in - in July."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "order_index": 10,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Lượng khách truy cập đạt đỉnh 20.000 vào tháng Bảy, sau đó giữ ổn định."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "f79b2ea1bba300827052a8578deba74c052a959e4c9124239abfa4b854518114",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "f494e0d1-0f43-56dd-ad93-7f2219a23d4e",
+      "is_demo": true,
+      "item_id": "c77ca3fc-717a-517c-ad5c-688fe7611168",
+      "key": "en:exercise:wb-nego-translate-revenue-by",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "We increased revenue by 10% last year.",
+            "Last year we increased revenue by 10%.",
+            "Last year, we increased revenue by 10%.",
+            "We increased our revenue by 10% last year.",
+            "Last year we increased our revenue by 10%.",
+            "We increased revenue by ten percent last year.",
+            "We increased revenue by 10 percent last year.",
+            "We boosted revenue by 10% last year.",
+            "We raised revenue by 10% last year.",
+            "Our revenue increased by 10% last year.",
+            "Our revenue rose by 10% last year."
+          ]
+        },
+        "display_answer": "We increased revenue by 10% last year.",
+        "explanation": {
+          "vi": "\"Chúng tôi tăng doanh thu\" có tân ngữ nên dùng increase / raise / boost (không dùng rise); mức tăng đi với by."
+        },
+        "known_wrong": [
+          {
+            "answer": "We increased revenue for 10% last year.",
+            "error_tag": "increase_by_for",
+            "feedback_vi": "Lượng tăng đi với by, không phải for."
+          },
+          {
+            "answer": "We rose revenue by 10% last year.",
+            "error_tag": "rise_raise",
+            "feedback_vi": "Rise là nội động từ, không có tân ngữ. Dùng increase / raise revenue."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "order_index": 5,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Năm ngoái chúng tôi đã tăng doanh thu 10%."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "ae406bb0b0cf7fd2c7cfede863aa8ce97d46a9eebe12eafb830e6f5fc987e1de",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "0a69de11-f712-5e6b-9808-f87de3013de1",
+      "is_demo": true,
+      "item_id": "ef9f337b-a56c-5e0e-ae6a-ce5a65747803",
+      "key": "en:exercise:wb-review-fill-minutes-tenses",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "tested",
+              "trialled",
+              "trialed",
+              "tried"
+            ],
+            "b2": [
+              "presenting",
+              "explaining",
+              "introducing",
+              "discussing"
+            ]
+          }
+        },
+        "display_answer": "By the end of June, we will have tested the new design with customers. At the next meeting, Hà will be presenting the new budget.",
+        "explanation": {
+          "vi": "Việc xong trước mốc cuối tháng Sáu → will have + V3 (tested). Việc đang diễn ra tại cuộc họp tới → will be + V-ing (presenting)."
+        },
+        "known_wrong": [
+          {
+            "answer": "test",
+            "error_tag": "future_perfect_form",
+            "feedback_vi": "Sau will have cần V3 - tested."
+          },
+          {
+            "answer": "present",
+            "error_tag": "future_continuous_form",
+            "feedback_vi": "Sau will be cần V-ing - presenting."
+          },
+          {
+            "answer": "presented",
+            "error_tag": "future_continuous_form",
+            "feedback_vi": "Will be + V3 là bị động. Hà là người trình bày, nên dùng will be presenting."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "order_index": 4,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          },
+          {
+            "id": "b2",
+            "width_hint": 10
+          }
+        ],
+        "template": "By the end of June, we will have {{b1}} the new design with customers. At the next meeting, Hà will be {{b2}} the new budget."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "d0f5deb6201045b93c5abf1130d1584b4ca721c8f7f05e209ab2d1828bbdce07",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "462be857-43b6-5bea-8a8a-f9868adf6917",
+      "is_demo": true,
+      "item_id": "abd9114c-d624-5bdd-9166-9eef34c78b44",
+      "key": "en:exercise:wb-review-listen-deposit",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r4b"
+        },
+        "display_answer": "Chúng tôi có thể để 3,7 đô, với điều kiện bên anh đặt 10.000 sản phẩm và đặt cọc 30%.",
+        "explanation": {
+          "vi": "Provided that đặt ra hai điều kiện - đặt 10.000 sản phẩm và trả a 30% deposit (đặt cọc 30%). Deposit không phải giảm giá (discount) hay thời hạn thanh toán."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "We could offer three dollars seventy, provided that you order ten thousand units and pay a thirty percent deposit.",
+        "options": [
+          {
+            "id": "u0n",
+            "lang": "vi",
+            "text": "Chúng tôi có thể để 3,7 đô, với điều kiện bên anh trả hết tiền trong 30 ngày."
+          },
+          {
+            "id": "r4b",
+            "lang": "vi",
+            "text": "Chúng tôi có thể để 3,7 đô, với điều kiện bên anh đặt 10.000 sản phẩm và đặt cọc 30%."
+          },
+          {
+            "id": "l8d",
+            "lang": "vi",
+            "text": "Chúng tôi có thể để 3,7 đô và giảm thêm 30% cho 10.000 sản phẩm."
+          },
+          {
+            "id": "h2y",
+            "lang": "vi",
+            "text": "Chúng tôi sẽ để 3,7 đô, dù bên anh đặt bao nhiêu sản phẩm."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "92c30bb833582aaec7de9ef509ca74487d64877042234e6c62533302e1550110",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "8638cdc3-2045-5bcb-9bdc-30ed0a8a3fde",
+      "is_demo": true,
+      "item_id": "37a6652d-a9d1-570c-b306-4f510ec588e7",
+      "key": "en:exercise:wb-review-mcq-apologies",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "f2c"
+        },
+        "display_answer": "Anh Dũng vắng mặt và đã báo trước.",
+        "explanation": {
+          "vi": "Mục Apologies trong biên bản liệt kê người đã báo vắng, không phải người nói lời xin lỗi trong cuộc họp. Người ghi biên bản là Linh (minutes)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "n8h",
+            "lang": "vi",
+            "text": "Anh Dũng là người ghi biên bản."
+          },
+          {
+            "id": "x6w",
+            "lang": "vi",
+            "text": "Anh Dũng đã xin lỗi cả nhóm trong cuộc họp."
+          },
+          {
+            "id": "q3t",
+            "lang": "vi",
+            "text": "Anh Dũng đến muộn."
+          },
+          {
+            "id": "f2c",
+            "lang": "vi",
+            "text": "Anh Dũng vắng mặt và đã báo trước."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Trong biên bản: \"Present: Hà, Tuấn, Linh. Apologies: Mr Dũng.\" Thông tin về anh Dũng có nghĩa là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "01a05be7b16dbc25e0a33482b3aca1d0e1ccb46638b5e9adee5e05ab95daa934",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "46ab2b90-54b1-51bd-8034-2c0968b93995",
+      "is_demo": true,
+      "item_id": "ee2e8599-957f-5b47-bb25-359cfb0d612d",
+      "key": "en:exercise:wb-review-mcq-minutes-reason",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "v5m"
+        },
+        "display_answer": "Vì buổi ra mắt sản phẩm mới đang chậm hai tuần so với kế hoạch.",
+        "explanation": {
+          "vi": "Behind schedule là chậm tiến độ (không phải sớm hơn - đó là ahead of schedule). Fell slightly by 3% là giảm nhẹ 3%, không phải 30%."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "s1k",
+            "lang": "vi",
+            "text": "Vì doanh thu giảm mạnh 30%."
+          },
+          {
+            "id": "j7p",
+            "lang": "vi",
+            "text": "Vì lịch họp bị dời hai tuần."
+          },
+          {
+            "id": "v5m",
+            "lang": "vi",
+            "text": "Vì buổi ra mắt sản phẩm mới đang chậm hai tuần so với kế hoạch."
+          },
+          {
+            "id": "e9a",
+            "lang": "vi",
+            "text": "Vì sản phẩm mới ra mắt sớm hai tuần."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Theo biên bản: \"Revenue fell slightly in April, by 3%, mainly because the new product launch is two weeks behind schedule.\" Vì sao doanh thu giảm?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "d81dc286938dd52f4ee6e42526f0742911c16119cd1459510c2a57f26da8286a",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "76fdb2bc-024a-548c-887f-00ce266ce5fe",
+      "is_demo": true,
+      "item_id": "4b9957e6-2249-5ecf-acaa-ef66efad7831",
+      "key": "en:exercise:wb-review-mcq-situation-condition",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "z5e"
+        },
+        "display_answer": "As long as you can deliver by 1 June, we have a deal.",
+        "explanation": {
+          "vi": "As long as + hiện tại đơn (can deliver), hạn chót dùng by. Will deliver sai sau as long as; until là \"kéo dài đến\"; as long thiếu as."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "m4x",
+            "lang": "en",
+            "text": "As long as you can deliver until 1 June, we have a deal."
+          },
+          {
+            "id": "z5e",
+            "lang": "en",
+            "text": "As long as you can deliver by 1 June, we have a deal."
+          },
+          {
+            "id": "k0g",
+            "lang": "en",
+            "text": "As long you deliver by 1 June, we have a deal."
+          },
+          {
+            "id": "c1r",
+            "lang": "en",
+            "text": "As long as you will deliver by 1 June, we have a deal."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn đồng ý mức giá của nhà cung cấp, nhưng chỉ khi họ giao hàng trước ngày 1/6. Câu nào vừa đúng ngữ pháp vừa phù hợp?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "63725827a1db5c3765cbfb8383e4eeff74c81a1378d3d8c14db87f0c832038fe",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "7e09edee-8665-593b-a70e-a4c61cd9df0c",
+      "is_demo": true,
+      "item_id": "59be10f4-6880-5d68-97c9-cef432482b24",
+      "key": "en:exercise:wb-review-order-action-point",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "a-tuan",
+              "a-to",
+              "a-have",
+              "a-the",
+              "a-packaging",
+              "a-redesigned",
+              "a-by",
+              "a-15",
+              "a-may"
+            ]
+          ]
+        },
+        "display_answer": "Tuấn to have the packaging redesigned by 15 May.",
+        "explanation": {
+          "vi": "Action point viết theo mẫu tên người + to V; Tuấn không tự thiết kế nên dùng have + vật + V3 (redesigned). Redesign nguyên mẫu là token nhiễu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "order_index": 3,
+      "prompt": {
+        "instruction": "Sắp xếp thành một action point: \"Tuấn thuê người thiết kế lại bao bì trước ngày 15/5.\"",
+        "tokens": [
+          {
+            "id": "a-packaging",
+            "text": "packaging"
+          },
+          {
+            "id": "a-by",
+            "text": "by"
+          },
+          {
+            "id": "a-tuan",
+            "text": "Tuấn"
+          },
+          {
+            "id": "a-redesigned",
+            "text": "redesigned"
+          },
+          {
+            "id": "a-to",
+            "text": "to"
+          },
+          {
+            "id": "a-15",
+            "text": "15"
+          },
+          {
+            "id": "a-the",
+            "text": "the"
+          },
+          {
+            "id": "a-have",
+            "text": "have"
+          },
+          {
+            "id": "a-may",
+            "text": "May"
+          },
+          {
+            "id": "a-redesign",
+            "text": "redesign"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "41e7a0238f724462744793b5278189aec2b14907f80a551c049e2ae83d362106",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "06990311-7098-5288-880d-ea02fd7ccbcf",
+      "is_demo": true,
+      "item_id": "7e8fc661-2152-5ffe-8d45-062f86cebe3a",
+      "key": "en:exercise:wb-review-translate-contract-sent",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ cho gửi hợp đồng cho anh.",
+            "Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ cho người gửi hợp đồng cho anh.",
+            "Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ cho gửi hợp đồng sang anh.",
+            "Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ bảo người gửi hợp đồng cho anh.",
+            "Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ nhờ người gửi hợp đồng cho anh.",
+            "Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ cho gửi hợp đồng cho bạn.",
+            "Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ cho gửi hợp đồng cho chị.",
+            "Tôi nghĩ chúng ta đã thỏa hiệp được. Chiều nay tôi sẽ cho gửi hợp đồng cho anh.",
+            "Tôi nghĩ chúng ta đã đạt được thỏa hiệp rồi. Chiều nay tôi sẽ cho gửi hợp đồng cho anh.",
+            "Tôi nghĩ chúng ta đã đạt được thoả hiệp. Chiều nay tôi sẽ cho gửi hợp đồng cho anh.",
+            "Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay hợp đồng sẽ được gửi cho anh."
+          ]
+        },
+        "display_answer": "Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ cho gửi hợp đồng cho anh.",
+        "explanation": {
+          "vi": "Reach a compromise là đạt được thỏa hiệp. I'll have the contract sent là \"tôi sẽ cho (người) gửi hợp đồng\" - người nói không tự tay gửi."
+        },
+        "known_wrong": [
+          {
+            "answer": "Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ có hợp đồng gửi cho anh.",
+            "error_tag": "causative_meaning",
+            "feedback_vi": "Have the contract sent là cho / nhờ người gửi hợp đồng, không phải \"có hợp đồng\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "order_index": 7,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "I think we've reached a compromise. I'll have the contract sent to you this afternoon."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "f3a1cc9dd6d24d40d58cb1de51aa74a528781f26eb07784f7ec9afb694290df5",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "cb75a204-3d62-5f68-b8da-ed5a7239ecb6",
+      "is_demo": true,
+      "item_id": "936b7ffa-10a5-5bc2-b6e0-7bf89fdda48a",
+      "key": "en:exercise:wb-review-translate-discuss-cut-costs",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "We need to discuss how to cut costs.",
+            "We need to discuss ways to cut costs.",
+            "We need to discuss how we can cut costs.",
+            "We need to discuss how to reduce costs.",
+            "We need to discuss ways of cutting costs.",
+            "We need to talk about how to cut costs.",
+            "We need to talk about ways to cut costs.",
+            "We have to discuss how to cut costs.",
+            "We need to discuss how we can reduce costs."
+          ]
+        },
+        "display_answer": "We need to discuss how to cut costs.",
+        "explanation": {
+          "vi": "Discuss + tân ngữ (how to cut costs), không có about. Cắt giảm chi phí là cut / reduce costs."
+        },
+        "known_wrong": [
+          {
+            "answer": "We need to discuss about how to cut costs.",
+            "error_tag": "discuss_about",
+            "feedback_vi": "Discuss không đi với about."
+          },
+          {
+            "answer": "We need to discuss how to cut cost.",
+            "error_tag": "cut_costs_plural",
+            "feedback_vi": "Cụm cố định là cut costs - costs số nhiều."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "order_index": 5,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Chúng ta cần thảo luận cách cắt giảm chi phí."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "c6f10d753d6071cf996a5d4a7dda1fffdf5ebbba7bd98fc90d522e5d07692f51",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "c854ce5a-7c34-5d17-aa4c-176b418a40d5",
+      "is_demo": true,
+      "item_id": "1a290674-243f-5078-8b3a-0177e68650e8",
+      "key": "en:exercise:wb-review-translate-fair-point",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "That's a fair point, but another supplier has quoted a lower price.",
+            "That's a fair point, but another supplier quoted a lower price.",
+            "That's a fair point, but another supplier has given us a lower quote.",
+            "That's a fair point, but another supplier gave us a lower quote.",
+            "That's a fair point, but another supplier has offered a lower price.",
+            "That's a fair point, but another supplier offered a lower price.",
+            "That is a fair point, but another supplier has quoted a lower price.",
+            "That's a fair point, but we've had a lower quote from another supplier.",
+            "That's a fair point, but we got a lower quote from another supplier.",
+            "That's a fair point, but another supplier has quoted us a lower price.",
+            "That's a fair point, but another supplier quoted us a lower price."
+          ]
+        },
+        "display_answer": "That's a fair point, but another supplier has quoted a lower price.",
+        "explanation": {
+          "vi": "That's a fair point, but… công nhận rồi phản bác. Báo giá là quote (động từ hoặc danh từ); nhà cung cấp là supplier."
+        },
+        "known_wrong": [
+          {
+            "answer": "You are right, but another customer has quoted a lower price.",
+            "error_tag": "supplier_customer",
+            "feedback_vi": "Bên báo giá cho mình là supplier, không phải customer."
+          },
+          {
+            "answer": "That's a fair point, but another supplier has quoted a lower prices.",
+            "error_tag": "article",
+            "feedback_vi": "A lower price - danh từ số ít sau a."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Anh nói cũng có lý, nhưng một nhà cung cấp khác báo giá thấp hơn."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "da8486bae748f12ab4a15f0e9010beeaf83bba785bd81533c749b6ca51a698a2",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "870024a4-cc8a-57c4-8adf-b936b2896fdc",
+      "is_demo": true,
+      "item_id": "7f6f1f2a-1b25-565d-ac3a-73be5c9a21ef",
+      "key": "en:exercise:wb-review-translate-offer-discount",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "We could offer a 10% discount, provided that you pay a 30% deposit.",
+            "We can offer a 10% discount, provided that you pay a 30% deposit.",
+            "We could offer a 10% discount, provided you pay a 30% deposit.",
+            "We can offer a 10% discount, provided you pay a 30% deposit.",
+            "We could offer a 10% discount, as long as you pay a 30% deposit.",
+            "We can offer a 10% discount, as long as you pay a 30% deposit.",
+            "We could give you a 10% discount, provided that you pay a 30% deposit.",
+            "We can give you a 10% discount, provided that you pay a 30% deposit.",
+            "We could give you a 10% discount, as long as you pay a 30% deposit.",
+            "We could offer you a 10% discount, provided that you pay a 30% deposit.",
+            "We could offer a 10% discount, providing that you pay a 30% deposit.",
+            "We could offer a 10% discount, provided that you put down a 30% deposit.",
+            "We could offer a 10% discount provided that you pay a 30% deposit."
+          ]
+        },
+        "display_answer": "We could offer a 10% discount, provided that you pay a 30% deposit.",
+        "explanation": {
+          "vi": "Đề nghị mềm bằng could offer; a 10% discount và a 30% deposit đều cần mạo từ a. Điều kiện provided that / as long as + hiện tại đơn (pay)."
+        },
+        "known_wrong": [
+          {
+            "answer": "We could offer a 10% discount, provided that you will pay a 30% deposit.",
+            "error_tag": "conditional_will",
+            "feedback_vi": "Sau provided that dùng hiện tại đơn - you pay."
+          },
+          {
+            "answer": "We could offer 10% discount, provided that you pay 30% deposit.",
+            "error_tag": "article",
+            "feedback_vi": "Discount và deposit đều đếm được - a 10% discount, a 30% deposit."
+          },
+          {
+            "answer": "We could offer a discount for 10%, provided that you pay a 30% deposit.",
+            "error_tag": "increase_by_for",
+            "feedback_vi": "Nói a 10% discount, không nói \"a discount for 10%\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "order_index": 9,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Chúng tôi có thể chiết khấu 10%, với điều kiện quý công ty đặt cọc 30%."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
       "content_hash": "0e0e1a5a4e5bd49f67de0f0359c7b9bd8989ae6477f83336dffd90bb8a5c8e37",
       "difficulty": 3,
       "exercise_type": "fill_blank",
@@ -48452,6 +58938,839 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "1e0846187d1eb9e83ba9844747ff98fec77272da1f88fafeb9f81faf68e31fee",
+      "difficulty": 2,
+      "exercise_type": "fill_blank",
+      "id": "c56b71fe-f265-5020-bcbe-05f7fd5f4a7d",
+      "is_demo": true,
+      "item_id": "d7baa505-bb1f-59f2-b08c-71d75b0270e2",
+      "key": "en:exercise:what-are-you-doing-fill-baby",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "is sleeping",
+              "'s sleeping"
+            ]
+          }
+        },
+        "display_answer": "Shh! The baby is sleeping. Please don't talk.",
+        "explanation": {
+          "vi": "Shh! và Please don't talk cho thấy em bé đang ngủ ngay bây giờ, nên dùng is + sleeping."
+        },
+        "known_wrong": [
+          {
+            "answer": "sleeping",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu is. Tiếng Anh cần be trước V-ing - is sleeping."
+          },
+          {
+            "answer": "is sleep",
+            "error_tag": "missing_ing",
+            "feedback_vi": "Có is thì động từ phải thêm -ing - is sleeping."
+          },
+          {
+            "answer": "sleeps",
+            "error_tag": "simple_vs_continuous",
+            "feedback_vi": "Sleeps là thói quen. Shh! cho thấy việc đang xảy ra ngay lúc này."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "order_index": 2,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 12
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa: Suỵt! Em bé đang ngủ. Đừng nói chuyện nhé.",
+          "Gợi ý: is + động từ thêm -ing."
+        ],
+        "template": "Shh! The baby {{b1}} (sleep). Please don't talk."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "abe3cbf99436987d1e43cb468ba1ff25b957d62bb43062c947f55775477e63f7",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "dea14d82-439c-5440-b75b-e11f55b8440f",
+      "is_demo": true,
+      "item_id": "3d6262c7-6de4-5f51-8dd7-4c58c5139211",
+      "key": "en:exercise:what-are-you-doing-fill-minh",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "drives"
+            ],
+            "b2": [
+              "is waiting",
+              "'s waiting"
+            ]
+          }
+        },
+        "display_answer": "Minh usually drives to work, but today his car is at the garage, so he is waiting for the bus.",
+        "explanation": {
+          "vi": "Ô đầu là thói quen (usually) nên dùng hiện tại đơn drives. Ô sau là việc đang xảy ra hôm nay nên dùng is waiting."
+        },
+        "known_wrong": [
+          {
+            "answer": "is driving",
+            "error_tag": "simple_vs_continuous",
+            "feedback_vi": "Usually là thói quen, nên dùng hiện tại đơn - drives."
+          },
+          {
+            "answer": "drive",
+            "error_tag": "third_person_s",
+            "feedback_vi": "Minh là ngôi thứ ba số ít, cần -s - drives."
+          },
+          {
+            "answer": "waiting",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu is trước waiting."
+          },
+          {
+            "answer": "waits",
+            "error_tag": "simple_vs_continuous",
+            "feedback_vi": "Hôm nay, ngay lúc này anh ấy đang đợi, nên dùng is waiting."
+          },
+          {
+            "answer": "is wait",
+            "error_tag": "missing_ing",
+            "feedback_vi": "Có is thì động từ phải thêm -ing - is waiting."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 8
+          },
+          {
+            "id": "b2",
+            "width_hint": 12
+          }
+        ],
+        "template": "Minh usually {{b1}} (drive) to work, but today his car is at the garage, so he {{b2}} (wait) for the bus."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "7f1f05d48a803e3df782a6d7c8a68c81c5493a4e14b9e31575e7db7e9a1c0a37",
+      "difficulty": 1,
+      "exercise_type": "listen",
+      "id": "204c203b-79a9-51aa-a5e0-6af8d2c75f31",
+      "is_demo": true,
+      "item_id": "1f171f46-8ad8-5cff-8bf5-20d5dfd0a907",
+      "key": "en:exercise:what-are-you-doing-listen-bus",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "h2r"
+        },
+        "display_answer": "Xin lỗi, giờ mình không nói chuyện được. Mình đang đợi xe buýt.",
+        "explanation": {
+          "vi": "I'm waiting for the bus là \"đang đợi xe buýt\" (chưa lên xe). Right now là ngay lúc này, không phải thói quen như \"thường\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "order_index": 1,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "Sorry, I can't talk right now. I'm waiting for the bus.",
+        "options": [
+          {
+            "id": "v9t",
+            "lang": "vi",
+            "text": "Xin lỗi, giờ mình không nói chuyện được. Mình đang ở trên xe buýt."
+          },
+          {
+            "id": "h2r",
+            "lang": "vi",
+            "text": "Xin lỗi, giờ mình không nói chuyện được. Mình đang đợi xe buýt."
+          },
+          {
+            "id": "y7d",
+            "lang": "vi",
+            "text": "Xin lỗi, mình thường đợi xe buýt."
+          },
+          {
+            "id": "b4m",
+            "lang": "vi",
+            "text": "Xin lỗi, mình không đi xe buýt được."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "ae50cfc003b72e05a555549a5112960acbcff3742f16449e137246401b98a89d",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "b4cf97ef-6de8-5edc-ae0c-1085dd0defb0",
+      "is_demo": true,
+      "item_id": "87b83a20-564a-57c6-813e-ce81054f7245",
+      "key": "en:exercise:what-are-you-doing-mcq-cinema",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k6a"
+        },
+        "display_answer": "Sorry, I can't talk right now. I'm watching a film.",
+        "explanation": {
+          "vi": "Việc đang diễn ra ngay lúc này cần I'm + watching. \"I watch\" là thói quen, \"I am watch\" thiếu -ing, \"I watching\" thiếu am."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "order_index": 8,
+      "prompt": {
+        "options": [
+          {
+            "id": "s2y",
+            "lang": "en",
+            "text": "Sorry, I can't talk right now. I am watch a film."
+          },
+          {
+            "id": "k6a",
+            "lang": "en",
+            "text": "Sorry, I can't talk right now. I'm watching a film."
+          },
+          {
+            "id": "m7c",
+            "lang": "en",
+            "text": "Sorry, I can't talk right now. I watching a film."
+          },
+          {
+            "id": "e9l",
+            "lang": "en",
+            "text": "Sorry, I can't talk right now. I watch a film."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn đang ở trong rạp chiếu phim thì sếp gọi. Bạn nhắn lại thế nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "c179522967bce345088098cfdd1f02243e39088b613beb8bad24487a32998b58",
+      "difficulty": 2,
+      "exercise_type": "mcq",
+      "id": "be53fb40-d3d0-5407-a647-bb4eb8d7d71d",
+      "is_demo": true,
+      "item_id": "3d6262c7-6de4-5f51-8dd7-4c58c5139211",
+      "key": "en:exercise:what-are-you-doing-mcq-habit-now",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "n5s"
+        },
+        "display_answer": "I usually work in the office, but this week I'm working from home.",
+        "explanation": {
+          "vi": "Usually là thói quen nên dùng hiện tại đơn (work); this week là việc tạm thời nên dùng hiện tại tiếp diễn (I'm working). Các câu khác đảo thì hoặc thiếu be / -ing."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "order_index": 3,
+      "prompt": {
+        "options": [
+          {
+            "id": "o3j",
+            "lang": "en",
+            "text": "I usually working in the office, but this week I'm work from home."
+          },
+          {
+            "id": "u8e",
+            "lang": "en",
+            "text": "I usually work in the office, but this week I work from home."
+          },
+          {
+            "id": "g2x",
+            "lang": "en",
+            "text": "I'm usually working in the office, but this week I work from home."
+          },
+          {
+            "id": "n5s",
+            "lang": "en",
+            "text": "I usually work in the office, but this week I'm working from home."
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng: \"Tôi thường làm ở văn phòng, nhưng tuần này tôi làm ở nhà.\"",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "a10a5b45ac6fa058835c26e530d3db7473c95095d155af98e8a88f36a00ea349",
+      "difficulty": 1,
+      "exercise_type": "mcq",
+      "id": "6681f8ce-657f-53d5-9630-b2abe2d6dbf3",
+      "is_demo": true,
+      "item_id": "d7baa505-bb1f-59f2-b08c-71d75b0270e2",
+      "key": "en:exercise:what-are-you-doing-mcq-question",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "q8w"
+        },
+        "display_answer": "What are you doing?",
+        "explanation": {
+          "vi": "Hỏi việc đang làm cần are + doing. \"What do you do?\" là hỏi nghề nghiệp; \"What you doing?\" thiếu are; \"What are you do?\" thiếu -ing."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "q8w",
+            "lang": "en",
+            "text": "What are you doing?"
+          },
+          {
+            "id": "z3k",
+            "lang": "en",
+            "text": "What do you do?"
+          },
+          {
+            "id": "c1n",
+            "lang": "en",
+            "text": "What are you do?"
+          },
+          {
+            "id": "f6p",
+            "lang": "en",
+            "text": "What you doing?"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn nhắn tin hỏi bạn thân: \"Cậu đang làm gì thế?\". Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "f23debf60519fdeb4a4921bab1c90bda7282cf724327de563559df2c293f6333",
+      "difficulty": 3,
+      "exercise_type": "word_bank",
+      "id": "d98821e5-89bd-540b-9a06-ea00609a1dcc",
+      "is_demo": true,
+      "item_id": "dc8101de-05f3-5cad-aedf-8a369dd4f2b9",
+      "key": "en:exercise:what-are-you-doing-order-dress",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "dr-she1",
+              "dr-usually",
+              "dr-wears",
+              "dr-jeans",
+              "dr-but",
+              "dr-today",
+              "dr-shes",
+              "dr-wearing",
+              "dr-a",
+              "dr-dress"
+            ],
+            [
+              "dr-she1",
+              "dr-usually",
+              "dr-wears",
+              "dr-jeans",
+              "dr-but",
+              "dr-shes",
+              "dr-wearing",
+              "dr-a",
+              "dr-dress",
+              "dr-today"
+            ]
+          ]
+        },
+        "display_answer": "She usually wears jeans, but today she's wearing a dress.",
+        "explanation": {
+          "vi": "Thói quen (usually) dùng wears; hôm nay khác thường nên dùng she's wearing. Wear dùng chung cho mặc, đội, đeo."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "order_index": 10,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Cô ấy thường mặc quần jean, nhưng hôm nay cô ấy mặc váy.\"",
+        "tokens": [
+          {
+            "id": "dr-wearing",
+            "text": "wearing"
+          },
+          {
+            "id": "dr-jeans",
+            "text": "jeans"
+          },
+          {
+            "id": "dr-today",
+            "text": "today"
+          },
+          {
+            "id": "dr-she1",
+            "text": "She"
+          },
+          {
+            "id": "dr-dress",
+            "text": "dress"
+          },
+          {
+            "id": "dr-shes",
+            "text": "she's"
+          },
+          {
+            "id": "dr-usually",
+            "text": "usually"
+          },
+          {
+            "id": "dr-a",
+            "text": "a"
+          },
+          {
+            "id": "dr-wears",
+            "text": "wears"
+          },
+          {
+            "id": "dr-but",
+            "text": "but"
+          },
+          {
+            "id": "dr-wear",
+            "text": "wear"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "6d96f588f4c7a0352dd7115d3936c0c14e304a7792b4c07c8e6e5fa7503b3632",
+      "difficulty": 2,
+      "exercise_type": "word_bank",
+      "id": "f1a88e4a-1294-52d7-8015-7958b2862906",
+      "is_demo": true,
+      "item_id": "cbd5e462-94b7-5462-812e-072245c17b78",
+      "key": "en:exercise:what-are-you-doing-order-home",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "wh-im",
+              "wh-working",
+              "wh-from",
+              "wh-home",
+              "wh-this",
+              "wh-week"
+            ],
+            [
+              "wh-this",
+              "wh-week",
+              "wh-im",
+              "wh-working",
+              "wh-from",
+              "wh-home"
+            ]
+          ]
+        },
+        "display_answer": "I'm working from home this week.",
+        "explanation": {
+          "vi": "Việc tạm thời trong tuần này dùng I'm + working. Cụm cố định là work from home; this week có thể đứng đầu hoặc cuối câu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "order_index": 4,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu: \"Tuần này tôi làm việc ở nhà.\"",
+        "tokens": [
+          {
+            "id": "wh-home",
+            "text": "home"
+          },
+          {
+            "id": "wh-week",
+            "text": "week"
+          },
+          {
+            "id": "wh-working",
+            "text": "working"
+          },
+          {
+            "id": "wh-im",
+            "text": "I'm"
+          },
+          {
+            "id": "wh-this",
+            "text": "this"
+          },
+          {
+            "id": "wh-from",
+            "text": "from"
+          },
+          {
+            "id": "wh-work",
+            "text": "work"
+          },
+          {
+            "id": "wh-at",
+            "text": "at"
+          }
+        ]
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "983e3363e87f3c78e63ebf1950b7fb0499f63ddb16114894a98233f3ffdb7181",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "46c80b45-fa13-5b4f-b45f-c74619d4de76",
+      "is_demo": true,
+      "item_id": "44c69764-de98-5326-8fa2-cb3e0bc65f30",
+      "key": "en:exercise:what-are-you-doing-translate-keys",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I'm looking for my keys.",
+            "I'm looking for my key.",
+            "I'm looking for the keys.",
+            "I'm looking for the key.",
+            "I'm looking for keys."
+          ]
+        },
+        "display_answer": "I'm looking for my keys.",
+        "explanation": {
+          "vi": "Đang tìm (chưa thấy) là am looking for. Find là tìm thấy, nên không dùng ở đây."
+        },
+        "known_wrong": [
+          {
+            "answer": "I am look for my keys.",
+            "error_tag": "missing_ing",
+            "feedback_vi": "Có am thì động từ phải thêm -ing - looking."
+          },
+          {
+            "answer": "I looking for my keys.",
+            "error_tag": "missing_be",
+            "feedback_vi": "Thiếu am - I'm looking for…"
+          },
+          {
+            "answer": "I'm finding my keys.",
+            "error_tag": "look_for_find",
+            "feedback_vi": "Find là tìm thấy. Đang tìm (chưa thấy) là look for."
+          },
+          {
+            "answer": "I'm looking my keys.",
+            "error_tag": "missing_preposition",
+            "feedback_vi": "Look for mới là tìm; thiếu for câu sai nghĩa."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi đang tìm chìa khoá."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "867dc3de14941e62a78656c9bcb00adfe00c1cf9db4a99d7e7779f7862f7ee1e",
+      "difficulty": 2,
+      "exercise_type": "translate",
+      "id": "8c31c2e2-b33e-58a4-8b89-a14f8b3d2f71",
+      "is_demo": true,
+      "item_id": "d489195f-9419-55ca-9769-d3dcad6fb17d",
+      "key": "en:exercise:what-are-you-doing-translate-lan",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Dạo này Lan đang ở với chúng tôi. Cô ấy đang tìm căn hộ mới.",
+            "Dạo này Lan ở với chúng tôi. Cô ấy đang tìm căn hộ mới.",
+            "Dạo này Lan đang ở cùng chúng tôi. Cô ấy đang tìm căn hộ mới.",
+            "Dạo này Lan ở cùng chúng tôi. Cô ấy đang tìm căn hộ mới.",
+            "Dạo này Lan đang ở với chúng tôi. Cô ấy đang tìm một căn hộ mới.",
+            "Dạo này Lan đang ở nhà chúng tôi. Cô ấy đang tìm căn hộ mới.",
+            "Dạo này Lan ở nhà chúng tôi. Cô ấy đang tìm căn hộ mới.",
+            "Dạo này Lan đang ở với bọn mình. Cô ấy đang tìm căn hộ mới.",
+            "Dạo này Lan ở với bọn mình. Bạn ấy đang tìm căn hộ mới.",
+            "Dạo này Lan đang ở với chúng tôi. Bạn ấy đang tìm căn hộ mới.",
+            "Dạo này Lan đang ở với chúng tôi vì cô ấy đang tìm căn hộ mới.",
+            "Lan đang ở với chúng tôi dạo này. Cô ấy đang tìm căn hộ mới.",
+            "Gần đây Lan đang ở với chúng tôi. Cô ấy đang tìm căn hộ mới.",
+            "Dạo này Lan đang ở với chúng tôi. Cô ấy đang tìm nhà mới."
+          ]
+        },
+        "display_answer": "Dạo này Lan đang ở với chúng tôi. Cô ấy đang tìm căn hộ mới.",
+        "explanation": {
+          "vi": "These days là \"dạo này\" - việc tạm thời nên dùng is staying. She's looking for là \"đang tìm\" (chưa tìm được). Flat là căn hộ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "order_index": 9,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "en",
+        "source_text": "Lan is staying with us these days. She's looking for a new flat."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "9bf8fd506b3dd135d56db82074fb9a7119b99dddd59804ff366e6d619cf8b874",
+      "difficulty": 1,
+      "exercise_type": "translate",
+      "id": "0b081c69-2127-57c7-a7b5-456f8077a6b4",
+      "is_demo": true,
+      "item_id": "d7baa505-bb1f-59f2-b08c-71d75b0270e2",
+      "key": "en:exercise:what-are-you-doing-translate-question",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "What are you doing now?",
+            "What are you doing right now?",
+            "What are you doing at the moment?",
+            "What are you doing?",
+            "Now what are you doing?"
+          ]
+        },
+        "display_answer": "What are you doing now?",
+        "explanation": {
+          "vi": "Hỏi việc đang làm - Wh- + are + you + doing. Now có thể thay bằng right now hay at the moment."
+        },
+        "known_wrong": [
+          {
+            "answer": "What do you do now?",
+            "error_tag": "simple_vs_continuous",
+            "feedback_vi": "Việc đang diễn ra cần are + doing. What do you do? là hỏi nghề nghiệp."
+          },
+          {
+            "answer": "What are you do now?",
+            "error_tag": "missing_ing",
+            "feedback_vi": "Có are thì động từ phải thêm -ing - doing."
+          },
+          {
+            "answer": "What you are doing now?",
+            "error_tag": "question_word_order",
+            "feedback_vi": "Câu hỏi phải đảo are lên trước you - What are you doing?"
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "order_index": 6,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Bây giờ bạn đang làm gì?"
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "en",
+      "content_hash": "5ccfe749827eced472e4a77d16cfee38b3dccca541aa6f18cc2afc8bb5ddc499",
+      "difficulty": 3,
+      "exercise_type": "translate",
+      "id": "996c6b62-1bcf-5685-8c76-cb526a9ce7f0",
+      "is_demo": true,
+      "item_id": "3d6262c7-6de4-5f51-8dd7-4c58c5139211",
+      "key": "en:exercise:what-are-you-doing-translate-walk",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "I usually go to work by bus, but today I'm walking.",
+            "I usually go to work by bus, but I'm walking today.",
+            "I usually take the bus to work, but today I'm walking.",
+            "I usually take the bus to work, but I'm walking today.",
+            "I usually go to work by bus, but today I'm walking to work.",
+            "I usually go to work by bus, but today I'm going on foot.",
+            "I often go to work by bus, but today I'm walking."
+          ]
+        },
+        "display_answer": "I usually go to work by bus, but today I'm walking.",
+        "explanation": {
+          "vi": "Vế đầu là thói quen (usually) nên dùng hiện tại đơn go; vế sau là việc khác thường hôm nay nên dùng I'm walking."
+        },
+        "known_wrong": [
+          {
+            "answer": "I usually go to work by bus, but today I walk.",
+            "error_tag": "simple_vs_continuous",
+            "feedback_vi": "Hôm nay khác thói quen, là việc tạm thời, nên dùng I'm walking."
+          },
+          {
+            "answer": "I'm usually going to work by bus, but today I'm walking.",
+            "error_tag": "simple_vs_continuous",
+            "feedback_vi": "Usually là thói quen, dùng hiện tại đơn - I usually go."
+          },
+          {
+            "answer": "I usually go to work by bus, but today I am walk.",
+            "error_tag": "missing_ing",
+            "feedback_vi": "Có am thì cần -ing - I am walking."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 1
+        }
+      },
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "order_index": 11,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi thường đi làm bằng xe buýt, nhưng hôm nay tôi đi bộ."
+      },
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
       "status": "published"
     },
     {
@@ -104028,6 +115347,151 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Không dùng a few với danh từ không đếm được: không nói a few money mà nói a little money. Few (không có a) mang nghĩa \"quá ít\", không phải \"một vài\"."
+        },
+        "examples": [
+          {
+            "target": "We stayed in Hue for a few days.",
+            "translation": {
+              "vi": "Bọn mình ở Huế vài ngày."
+            }
+          },
+          {
+            "target": "Few tourists visit this village in the rainy season.",
+            "translation": {
+              "vi": "Rất ít khách du lịch đến ngôi làng này vào mùa mưa."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "a few = một vài (đủ dùng, ý tích cực); few = rất ít, gần như không có (ý tiêu cực). Chỉ đi với danh từ đếm được số nhiều: a few days, few tourists."
+        },
+        "pronunciation_note": {
+          "vi": "Few đọc /fjuː/ có âm /j/ nhẹ như \"phiu\", không đọc thành \"phiêu\"."
+        }
+      },
+      "content_hash": "194662114ded23e89b9a967f735d2059b5085f7fded4459934728867be71246a",
+      "difficulty": 3,
+      "front": {
+        "ipa": "a few /ə fjuː/ · few /fjuː/",
+        "pos": "lượng từ",
+        "text": "a few / few + danh từ đếm được số nhiều"
+      },
+      "id": "0b058a4f-3b51-5ab1-99af-a7fb13ee1c6d",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:a-few-few",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Money, time, information, water là danh từ không đếm được trong tiếng Anh dù tiếng Việt vẫn nói \"mấy đồng\". Vì vậy dùng a little money, không dùng a few money."
+        },
+        "examples": [
+          {
+            "target": "I've still got a little money, so we can take a taxi.",
+            "translation": {
+              "vi": "Mình vẫn còn một ít tiền nên mình có thể đi taxi."
+            }
+          },
+          {
+            "target": "There was little time to see the museum.",
+            "translation": {
+              "vi": "Có rất ít thời gian để xem bảo tàng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "a little = một ít (đủ dùng); little = rất ít, gần như không có. Chỉ đi với danh từ không đếm được: a little money, little time."
+        },
+        "pronunciation_note": {
+          "vi": "Âm /t/ trong little ở giọng Mỹ thường đọc nhẹ gần như /d/ - \"li-đồ\"."
+        }
+      },
+      "content_hash": "af466def0f009d388f37d2e4414ffebf175e681dbed79b272d4bfd86a5ec6dbd",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ə ˈlɪtl/ · US /ə ˈlɪt̬l/",
+        "pos": "lượng từ",
+        "text": "a little / little + danh từ không đếm được"
+      },
+      "id": "60d17030-b4a1-5662-af6c-9b88759e986a",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:a-little-little",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không bỏ of: nói a lot of people, không nói a lot people. Trong câu phủ định và câu hỏi, much/many tự nhiên hơn (not much time, How many days?)."
+        },
+        "examples": [
+          {
+            "target": "There were a lot of people at the night market.",
+            "translation": {
+              "vi": "Ở chợ đêm có rất đông người."
+            }
+          },
+          {
+            "target": "We spent a lot of money on souvenirs.",
+            "translation": {
+              "vi": "Bọn mình tiêu nhiều tiền vào quà lưu niệm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nhiều - dùng được với cả danh từ đếm được (a lot of people) và không đếm được (a lot of luggage), hay dùng trong câu khẳng định."
+        },
+        "pronunciation_note": {
+          "vi": "Nói nhanh a lot of thường nối thành /əˈlɒtəv/ - \"ơ-lót-tơv\"."
+        }
+      },
+      "content_hash": "ec0756da2ee5678e5f62b4e3a40b427bf3543e68c41722a073ac432522eecb00",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ə ˈlɒt əv/ · US /ə ˈlɑːt̬ əv/",
+        "pos": "lượng từ",
+        "text": "a lot of / lots of"
+      },
+      "id": "01895283-0c54-5d0c-9a0a-4782b079930a",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:a-lot-of",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Giới từ on ở cuối là bắt buộc. Tiếng Việt có hình ảnh tương tự là \"bờ vai để dựa vào\"."
         },
         "examples": [
@@ -104149,6 +115613,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Trong tiếng Anh Anh, accommodation không đếm được - không nói an accommodation hay accommodations; muốn đếm thì nói a place to stay."
+        },
+        "examples": [
+          {
+            "target": "Accommodation in Da Lat is cheap in the rainy season.",
+            "translation": {
+              "vi": "Chỗ ở ở Đà Lạt rẻ vào mùa mưa."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chỗ ở (khách sạn, nhà nghỉ, homestay…) khi đi xa"
+        },
+        "pronunciation_note": {
+          "vi": "Viết hai c và hai m - a-cc-o-mm-odation; trọng âm ở DA."
+        }
+      },
+      "content_hash": "2eeb6a160c04e404d883facdc69d1efd01c7dea2c098db73aaee7e89e10bd636",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /əˌkɒməˈdeɪʃn/ · US /əˌkɑːməˈdeɪʃn/",
+        "pos": "danh từ không đếm được (UK)",
+        "text": "accommodation"
+      },
+      "id": "1465424c-3ed9-536c-9b7e-cd31332e78b9",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:accommodation",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "According to dùng cho nguồn tin của người khác. Không nói according to me - nói In my opinion."
         },
         "examples": [
@@ -104219,6 +115725,45 @@ select content_private.import_bundle($bundle${
       "is_demo": true,
       "item_type": "vocab",
       "key": "en:item:acquaintance",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Trong biên bản họp, action point thường viết gọn - tên người + to + V (Lan to contact the supplier), không cần will."
+        },
+        "examples": [
+          {
+            "target": "Action point: Hùng to send the revised budget by Friday.",
+            "translation": {
+              "vi": "Đầu việc: Hùng gửi bản ngân sách đã sửa trước thứ Sáu."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đầu việc cần làm (được giao sau cuộc họp)"
+        }
+      },
+      "content_hash": "87a831bc847f88b26d276c05e9964f2a6eda158607b684147083bba33b429766",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/ˈækʃn pɔɪnt/",
+        "pos": "danh từ",
+        "text": "action point"
+      },
+      "id": "59be10f4-6880-5d68-97c9-cef432482b24",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:action-point",
       "language_code": "en",
       "level_code": "b2",
       "reviewed_at": null,
@@ -104661,6 +116206,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Items on the agenda (giới từ on), không nói \"in the agenda\". Agenda không phải sổ ghi lịch cá nhân - đó là diary / planner."
+        },
+        "examples": [
+          {
+            "target": "There are three items on the agenda today.",
+            "translation": {
+              "vi": "Hôm nay có ba nội dung trong chương trình họp."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chương trình họp, danh sách các nội dung sẽ bàn"
+        },
+        "pronunciation_note": {
+          "vi": "Nhấn âm thứ hai -JEN-; âm đầu /ə/ rất nhẹ."
+        }
+      },
+      "content_hash": "6d882776dab4045e36653429f41dc496285d06c980b966a680ee23e769e0ca48",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/əˈdʒendə/",
+        "pos": "danh từ",
+        "text": "agenda"
+      },
+      "id": "7b879cca-90fd-54cd-ac99-46564b14e88d",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:agenda",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Cách nói này giúp bạn không phản đối thẳng thừng - rất phổ biến trong thảo luận lịch sự bằng tiếng Anh."
         },
         "examples": [
@@ -104738,6 +116325,45 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "grammar",
         "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Người Việt hay nói tắt \"máy lạnh\" là air con; trong tiếng Anh nói air conditioning hoặc AC."
+        },
+        "examples": [
+          {
+            "target": "The air conditioning isn't working, and the room is too hot.",
+            "translation": {
+              "vi": "Điều hoà không chạy, phòng nóng quá."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hệ thống điều hoà / máy điều hoà"
+        }
+      },
+      "content_hash": "1b4f84a0afbe6aa5145805805d7c33b3bd468e06db0de2d0a47a3886ca1370e5",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˈeə kənˌdɪʃənɪŋ/ · US /ˈer kənˌdɪʃənɪŋ/",
+        "pos": "danh từ",
+        "text": "air conditioning / air conditioner"
+      },
+      "id": "90646f6a-78a8-5e94-8cc3-2ddc31413121",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:air-conditioning",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -105168,6 +116794,46 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Business ở đây là \"công việc, vấn đề cần bàn\", không phải \"doanh nghiệp\". Viết tắt AOB đọc từng chữ A-O-B."
+        },
+        "examples": [
+          {
+            "target": "Finally, is there any other business?",
+            "translation": {
+              "vi": "Cuối cùng, còn vấn đề gì khác không ạ?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "các vấn đề khác (mục cuối chương trình họp)"
+        }
+      },
+      "content_hash": "94c7f997dd151705b5bca6c9a7b3c3edf89e3a5162734a4bb96218ef9852a84d",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ˈeni ˈʌðə ˈbɪznəs/ · US /ˈeni ˈʌðɚ ˈbɪznəs/",
+        "pos": "cụm danh từ",
+        "text": "any other business (AOB)"
+      },
+      "id": "127c1553-9710-550c-abee-b1e441a7c5a8",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:any-other-business",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Nhân viên hỏi câu này sau khi bạn gọi món. Nếu muốn thêm, bạn nói Yes, can I have… ; nếu không, nói No, that's all."
         },
         "examples": [
@@ -105202,6 +116868,46 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Trong biên bản, Apologies không phải \"lời xin lỗi\" chung chung mà là danh sách người đã báo vắng. Send your apologies là báo trước rằng mình không dự họp được."
+        },
+        "examples": [
+          {
+            "target": "Present: Hà, Tuấn, Linh. Apologies: Mr Dũng.",
+            "translation": {
+              "vi": "Có mặt: Hà, Tuấn, Linh. Vắng mặt có báo: anh Dũng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "người vắng mặt có báo trước (mục ghi ở đầu biên bản họp)"
+        }
+      },
+      "content_hash": "4ad4b77e09c0330999247831e99618ee99b8ba02cf6f90f385e9c0d4ee1a4870",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /əˈpɒlədʒiz/ · US /əˈpɑːlədʒiz/",
+        "pos": "danh từ (số nhiều)",
+        "text": "Apologies: … (trong biên bản họp)"
+      },
+      "id": "37a6652d-a9d1-570c-b306-4f510ec588e7",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:apologies-minutes",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "reading"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -105541,6 +117247,46 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "As long as ở đây là điều kiện, không phải \"lâu bằng\". Tương tự provided that, mệnh đề sau nó dùng hiện tại đơn."
+        },
+        "examples": [
+          {
+            "target": "You can work from home as long as you meet your deadlines.",
+            "translation": {
+              "vi": "Bạn có thể làm việc ở nhà, miễn là bạn kịp hạn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "miễn là, chỉ cần"
+        }
+      },
+      "content_hash": "30985f4a6d6d018924dd225716bdf944752f2135a31e3329fbcbf27819803d02",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /əz lɒŋ əz/ · US /əz lɔːŋ əz/",
+        "pos": "liên từ",
+        "text": "as long as / so long as"
+      },
+      "id": "4b9957e6-2249-5ecf-acaa-ef66efad7831",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:as-long-as",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Người được mời đứng giữa ask và out - ask her out, không nói \"ask out her\"."
         },
         "examples": [
@@ -105825,6 +117571,84 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Luôn có at the - không nói \"in the moment\" hay \"at moment\"."
+        },
+        "examples": [
+          {
+            "target": "She's in a meeting at the moment.",
+            "translation": {
+              "vi": "Lúc này cô ấy đang họp."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lúc này, hiện giờ"
+        }
+      },
+      "content_hash": "52a1d4ae34a7c78e3cd98f68f1b59b5d379298d316aeb39789c954e6e4d87999",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ət ðə ˈməʊmənt/ · US /ət ðə ˈmoʊmənt/",
+        "pos": "cụm trạng từ",
+        "text": "at the moment"
+      },
+      "id": "d667a936-efe5-56a9-9ba3-b59bdd4d5f3b",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:at-the-moment",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Dùng at the, khác với on the left / on the right."
+        },
+        "examples": [
+          {
+            "target": "At the top of the picture, you can see the sky.",
+            "translation": {
+              "vi": "Ở phía trên bức ảnh, bạn thấy bầu trời."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ở phía trên / ở phía dưới (của bức ảnh)"
+        }
+      },
+      "content_hash": "33fb9e52db011a5c74757ff9e0af3173da740835a32d8bb1c08997211af34f7b",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ət ðə ˈtɒp/, /ət ðə ˈbɒtəm/ · US /ət ðə ˈtɑːp/, /ət ðə ˈbɑːtəm/",
+        "pos": "cụm giới từ",
+        "text": "at the top / at the bottom"
+      },
+      "id": "2f944599-4d52-5529-8ca0-fd036e4086bc",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:at-the-top-bottom",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -107150,6 +118974,54 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Không cần mạo từ - behind schedule, không nói \"behind the schedule\" khi nói về tiến độ chung."
+        },
+        "examples": [
+          {
+            "target": "The building work is three weeks behind schedule.",
+            "translation": {
+              "vi": "Công trình xây dựng đang chậm tiến độ ba tuần."
+            }
+          },
+          {
+            "target": "Good news - we're slightly ahead of schedule.",
+            "translation": {
+              "vi": "Tin vui đây - chúng ta đang nhanh hơn kế hoạch một chút."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chậm tiến độ / vượt tiến độ"
+        },
+        "pronunciation_note": {
+          "vi": "Schedule đọc /ˈʃedjuːl/ kiểu Anh và /ˈskedʒuːl/ kiểu Mỹ; chọn một cách và dùng nhất quán."
+        }
+      },
+      "content_hash": "e10b87d6051eba04b98b58b579baa2201930f3e34ddd88acac90a0b661539f99",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /bɪˈhaɪnd ˈʃedjuːl/ · US /bɪˈhaɪnd ˈskedʒuːl/",
+        "pos": "cụm giới từ",
+        "text": "behind / ahead of schedule"
+      },
+      "id": "ee2e8599-957f-5b47-bb25-359cfb0d612d",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:behind-schedule",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Regards luôn có -s. Trong email cực kỳ trang trọng bắt đầu bằng Dear Sir or Madam, kết bằng Yours faithfully."
         },
         "examples": [
@@ -107445,6 +119317,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Bored tả cảm giác của người; boring tả thứ gây chán. Nói bored with something (chán cái gì)."
+        },
+        "examples": [
+          {
+            "target": "The children got bored on the long bus journey.",
+            "translation": {
+              "vi": "Bọn trẻ thấy chán trên chuyến xe buýt dài."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "(người) thấy chán"
+        },
+        "pronunciation_note": {
+          "vi": "Bored đọc một âm tiết /bɔːd/, không đọc \"bo-rét\"."
+        }
+      },
+      "content_hash": "b5a1734d4dd301b68f118dfed6f6073039028373b98204dfe4ab415d29498492",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /bɔːd/ · US /bɔːrd/",
+        "pos": "tính từ",
+        "text": "bored"
+      },
+      "id": "f7ad0d6e-4fdb-5b4e-9fdb-778c4fbfc14d",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:bored",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Boring tả thứ gây chán; bored tả cảm giác của người. Câu \"I was boring\" nghĩa là \"tôi là người nhạt nhẽo\"; muốn nói \"tôi thấy chán\" thì dùng I was bored."
         },
         "examples": [
@@ -107514,6 +119428,48 @@ select content_private.import_bundle($bundle${
       "key": "en:item:bought",
       "language_code": "en",
       "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Nói bow to someone (cúi chào ai)."
+        },
+        "examples": [
+          {
+            "target": "People in Korea often bow to older people.",
+            "translation": {
+              "vi": "Ở Hàn Quốc người ta thường cúi chào người lớn tuổi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cúi chào, cúi đầu"
+        },
+        "pronunciation_note": {
+          "vi": "Bow (cúi chào) đọc /baʊ/ vần với now; bow /bəʊ/ (cái nơ, cây cung) là từ khác."
+        }
+      },
+      "content_hash": "da86abf6326996bfe3fa26eba17a67441118ddcd1ce657ad79db8947dfae99b0",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/baʊ/",
+        "pos": "động từ / danh từ",
+        "text": "bow"
+      },
+      "id": "fe6bd196-c6b1-56ac-8a78-9a25e2c94f0f",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:bow",
+      "language_code": "en",
+      "level_code": "b1",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -107853,6 +119809,54 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Nói on a budget (tiết kiệm, có giới hạn chi tiêu): travel on a budget."
+        },
+        "examples": [
+          {
+            "target": "Our budget for the trip is ten million dong.",
+            "translation": {
+              "vi": "Ngân sách cho chuyến đi của bọn mình là mười triệu đồng."
+            }
+          },
+          {
+            "target": "We stayed in a budget hotel near the station.",
+            "translation": {
+              "vi": "Bọn mình ở một khách sạn bình dân gần ga."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ngân sách, số tiền dự định chi; budget hotel/airline = khách sạn/hãng bay giá rẻ"
+        },
+        "pronunciation_note": {
+          "vi": "Âm cuối /dʒɪt/ đọc nhẹ, trọng âm ở BUD."
+        }
+      },
+      "content_hash": "64fe84f2580ad2e0272e6b3ef4b67caa749c8c995b5c01ea8d464a8f89232afc",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˈbʌdʒɪt/",
+        "pos": "danh từ / tính từ",
+        "text": "budget"
+      },
+      "id": "d06029b3-12dd-5b13-a6df-f26b5858623e",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:budget",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Điểm dừng nhỏ ven đường là bus stop; bus station là bến lớn có nhà chờ."
         },
         "examples": [
@@ -107883,6 +119887,48 @@ select content_private.import_bundle($bundle${
       "key": "en:item:bus-station",
       "language_code": "en",
       "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Busy là tính từ nên cần be - I'm busy, không nói \"I busy\"."
+        },
+        "examples": [
+          {
+            "target": "Sorry, I'm busy this evening.",
+            "translation": {
+              "vi": "Xin lỗi, tối nay mình bận."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bận"
+        },
+        "pronunciation_note": {
+          "vi": "Chữ u đọc /ɪ/ - \"BI-zi\", không đọc \"bu-zi\"."
+        }
+      },
+      "content_hash": "da5f0db2f167599b8d91434d2d3af3d28bebffbd12b0931f64c5f3427f452eac",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ˈbɪzi/",
+        "pos": "tính từ",
+        "text": "busy"
+      },
+      "id": "736ed832-5e39-5f9a-9e07-2bf7adc2478f",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:busy",
+      "language_code": "en",
+      "level_code": "a2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -107967,6 +120013,52 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "By Friday là \"chậm nhất thứ Sáu\" (xong lúc nào cũng được, miễn trước hạn); until Friday là \"kéo dài đến thứ Sáu\". Đi với by, mệnh đề chính thường dùng will have + V3."
+        },
+        "examples": [
+          {
+            "target": "Please send me the report by Thursday.",
+            "translation": {
+              "vi": "Bạn gửi tôi báo cáo chậm nhất là thứ Năm nhé."
+            }
+          },
+          {
+            "target": "By 2030, the company will have opened fifty stores.",
+            "translation": {
+              "vi": "Đến năm 2030, công ty sẽ mở được năm mươi cửa hàng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "trước, chậm nhất là (đến mốc đó thì việc đã xong)"
+        }
+      },
+      "content_hash": "49d5d35935380da428fc70c8be422d7bdb58466231a653dd6a0ef86ae70874c7",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/baɪ/",
+        "pos": "giới từ",
+        "text": "by + mốc thời gian"
+      },
+      "id": "8e9379d7-05e2-5021-a5f0-ab8033d101b2",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:by-deadline-time",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -108091,6 +120183,45 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Đại từ đứng giữa call và back - call you back, call him back; không nói \"call back you\"."
+        },
+        "examples": [
+          {
+            "target": "I'm in a meeting right now. I'll call you back in ten minutes.",
+            "translation": {
+              "vi": "Giờ tôi đang họp. Mười phút nữa tôi gọi lại cho bạn nhé."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Tôi sẽ gọi lại cho bạn."
+        }
+      },
+      "content_hash": "1d1af38e0effe1f9477f0cab43d9f1c5d8558089f40bbc0b4d77f61124e50a58",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /aɪl ˌkɔːl juː ˈbæk/ · US /aɪl ˌkɑːl juː ˈbæk/",
+        "pos": "cụm giao tiếp (điện thoại)",
+        "text": "I'll call you back."
+      },
+      "id": "dacb5d9f-0f31-5945-b30e-813e9c68527d",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:call-you-back",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
         "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
@@ -108228,6 +120359,46 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Nếu chính bạn là người được hỏi, trả lời Speaking. hoặc This is Nam. - không trả lời \"Yes, I am\"."
+        },
+        "examples": [
+          {
+            "target": "Hello. Can I speak to Mr Nam, please?",
+            "translation": {
+              "vi": "A lô. Cho tôi gặp anh Nam được không ạ?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Cho tôi gặp… được không ạ? (khi gọi điện)"
+        }
+      },
+      "content_hash": "6714f7896321026b3c4aac0a1f4b258dccd931b68192018087b0f0d42403ea8e",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/kən aɪ ˈspiːk tə/",
+        "pos": "cụm giao tiếp (điện thoại)",
+        "text": "Can I speak to…, please?"
+      },
+      "id": "13b59113-d58a-53c7-b057-836be17eab53",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:can-i-speak-to",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking",
+        "listening"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -108455,6 +120626,45 @@ select content_private.import_bundle($bundle${
     {
       "audio_path": null,
       "back": {
+        "examples": [
+          {
+            "target": "He's carrying a big box.",
+            "translation": {
+              "vi": "Anh ấy đang bê một cái thùng to."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mang, xách, vác"
+        },
+        "pronunciation_note": {
+          "vi": "Nhấn âm đầu CA-rry, âm /æ/ mở rộng miệng."
+        }
+      },
+      "content_hash": "b33f967a56fa160af0793fa70cbc24f077880483d8e2997d3de226e4f9867a21",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˈkæri/",
+        "pos": "động từ",
+        "text": "carry"
+      },
+      "id": "ed8490f6-2627-5fb9-8890-72d23aa7e992",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:carry",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
         "confusion": {
           "vi": "Đừng nhầm với carry on (tiếp tục) hay carry out (thực hiện). Nghĩa \"làm thành công\" thường dùng với it - carry it off."
         },
@@ -108581,6 +120791,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Cùng hình thức với have something done nhưng nghĩa là \"bị\", không phải \"nhờ\". Ngữ cảnh cho bạn biết đó là dịch vụ hay sự cố."
+        },
+        "examples": [
+          {
+            "target": "She had her bag stolen on the train.",
+            "translation": {
+              "vi": "Cô ấy bị trộm túi trên tàu."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bị ai đó làm gì đó (một việc không mong muốn xảy ra với đồ của mình)"
+        }
+      },
+      "content_hash": "413eab2df849d4edbd0f72f5db322f5b2c79f4d652fe4773926106a9e4bd89fb",
+      "difficulty": 4,
+      "front": {
+        "ipa": "UK /hæv ˈsʌmθɪŋ ˈstəʊlən/ · US /hæv ˈsʌmθɪŋ ˈstoʊlən/",
+        "pos": "cấu trúc",
+        "text": "have something + V3 (bị mất, bị hỏng…)"
+      },
+      "id": "eee203a7-b0aa-5706-bbc1-afda0bd55a84",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:causative-experience",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Ghế dài nhiều người ngồi trong phòng khách là sofa, không phải chair."
         },
         "examples": [
@@ -108608,6 +120857,123 @@ select content_private.import_bundle($bundle${
       "key": "en:item:chair",
       "language_code": "en",
       "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Ở đây chair là động từ (chủ trì), không phải cái ghế. Người chủ trì là the chair hoặc chairperson."
+        },
+        "examples": [
+          {
+            "target": "Ms Hoa will be chairing tomorrow's meeting.",
+            "translation": {
+              "vi": "Chị Hoa sẽ chủ trì cuộc họp ngày mai."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chủ trì cuộc họp"
+        }
+      },
+      "content_hash": "2f86b9acce9c8bb79469f5580305591afe73cc2a659239ea728b39e9526092ac",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /tʃeər ə ˈmiːtɪŋ/ · US /tʃer ə ˈmiːt̬ɪŋ/",
+        "pos": "cụm động từ - danh từ",
+        "text": "chair a meeting"
+      },
+      "id": "35b342f6-268f-5647-b22e-ed1ac69d7e46",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:chair-a-meeting",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Charge là \"tính tiền\", không phải \"trả tiền\" (pay). Charge còn có nghĩa sạc điện thoại."
+        },
+        "examples": [
+          {
+            "target": "I think you've charged me twice for breakfast.",
+            "translation": {
+              "vi": "Tôi nghĩ anh/chị đã tính tiền bữa sáng của tôi hai lần."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tính tiền (ai) cho cái gì"
+        }
+      },
+      "content_hash": "fdfb6b3064f72ce748459dc7b332e19385ec2d9f0c4f1d23df2de4252bc230dd",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /tʃɑːdʒ/ · US /tʃɑːrdʒ/",
+        "pos": "động từ",
+        "text": "charge (someone) for something"
+      },
+      "id": "09813742-4b97-59fb-bf21-8faa940d9df3",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:charge-verb",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Thêm -ing phải gấp đôi t - chatting."
+        },
+        "examples": [
+          {
+            "target": "Two friends are chatting in a café.",
+            "translation": {
+              "vi": "Hai người bạn đang trò chuyện trong quán cà phê."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "trò chuyện, tán gẫu"
+        }
+      },
+      "content_hash": "0000c40ca97958d76145ae63a8519cda06ec8e0867e38c477281a46a8db9aac4",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/tʃæt/",
+        "pos": "động từ",
+        "text": "chat"
+      },
+      "id": "78decf6c-9e1b-521f-b10c-7188f0ab3f47",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:chat",
+      "language_code": "en",
+      "level_code": "a2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -109273,6 +121639,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Come back to something là quay lại một chủ đề; không nói \"return back to\" (return đã có nghĩa là quay lại)."
+        },
+        "examples": [
+          {
+            "target": "Good question, but can we come back to that later? We're short of time.",
+            "translation": {
+              "vi": "Câu hỏi hay, nhưng mình bàn lại chuyện đó sau được không? Chúng ta đang hết giờ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Chúng ta bàn lại chuyện đó sau được không?"
+        }
+      },
+      "content_hash": "aa7402c764e8dc3d7524691ccba5dca01b9dd4de4ca4c0ab92da966b8ea9e014",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /kən wi kʌm bæk tə ðæt ˈleɪtə/ · US /kən wi kʌm bæk tə ðæt ˈleɪt̬ɚ/",
+        "pos": "mẫu câu",
+        "text": "Can we come back to that later?"
+      },
+      "id": "3b7cb296-475d-538d-80bd-a5d6d6be3869",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:come-back-to-that",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Trật tự cố định come what may, không đổi thành what may come trong nghĩa này."
         },
         "examples": [
@@ -109434,6 +121839,87 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Dùng to cho người, about cho sự việc. Không nói complain with someone."
+        },
+        "examples": [
+          {
+            "target": "We complained to the manager about the noise.",
+            "translation": {
+              "vi": "Bọn mình đã phàn nàn với quản lý về tiếng ồn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phàn nàn, khiếu nại (với ai) về điều gì"
+        }
+      },
+      "content_hash": "2ae2eb21f4dfe3fcbc1d19bcd460cea2d5beb48e6e7f22e39d7aada03f680517",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/kəmˈpleɪn/",
+        "pos": "động từ",
+        "text": "complain (to someone) about something"
+      },
+      "id": "d2f4858c-7f08-5045-ae59-9c895fda6009",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:complain-about",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Make a complaint, không nói do a complaint."
+        },
+        "examples": [
+          {
+            "target": "I'd like to make a complaint about my room.",
+            "translation": {
+              "vi": "Tôi muốn khiếu nại về phòng của mình."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lời phàn nàn, đơn khiếu nại"
+        },
+        "pronunciation_note": {
+          "vi": "Danh từ có âm /t/ ở cuối - complaint; động từ là complain không có t."
+        }
+      },
+      "content_hash": "0760097faed07de235e758ac48fc063df2f9630a83bc20df2fa22c9fd259775f",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/kəmˈpleɪnt/",
+        "pos": "danh từ",
+        "text": "complaint / make a complaint"
+      },
+      "id": "6706c02f-b2ae-56e7-9e1f-d9d669c61f1a",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:complaint",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Tính từ ghép không thêm -s và vẫn đứng trước danh từ - two hard-working students, không nói \"hard-workings\"."
         },
         "examples": [
@@ -109517,6 +122003,54 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Reach / find a compromise (đạt thỏa hiệp), compromise on something (nhượng bộ về điều gì). Không nói \"make a compromise with price\"."
+        },
+        "examples": [
+          {
+            "target": "After two hours, we finally reached a compromise.",
+            "translation": {
+              "vi": "Sau hai tiếng, cuối cùng chúng tôi đã đạt được thỏa hiệp."
+            }
+          },
+          {
+            "target": "Both sides will have to compromise on price.",
+            "translation": {
+              "vi": "Cả hai bên sẽ phải nhượng bộ về giá."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "sự thỏa hiệp; thỏa hiệp, nhượng bộ lẫn nhau"
+        },
+        "pronunciation_note": {
+          "vi": "Nhấn âm đầu COM-, âm cuối -mise đọc /maɪz/."
+        }
+      },
+      "content_hash": "b33430378a0d77b69506576c3f954aa98c3ee3e6527090a0f53b5c3dddaf4a8d",
+      "difficulty": 4,
+      "front": {
+        "ipa": "UK /ˈkɒmprəmaɪz/ · US /ˈkɑːmprəmaɪz/",
+        "pos": "danh từ / động từ",
+        "text": "compromise"
+      },
+      "id": "a2ee3e87-b0da-5550-954a-47c0b64cd1af",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:compromise",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -109935,6 +122469,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Just làm câu mềm hơn (chỉ một chút thôi). Tránh \"Wait!\" hay \"Stop, I want to say\" - rất mất lịch sự trong cuộc họp."
+        },
+        "examples": [
+          {
+            "target": "Sorry, could I just come in here? I think the figures are out of date.",
+            "translation": {
+              "vi": "Xin lỗi, cho tôi nói xen một chút được không? Tôi nghĩ số liệu này cũ rồi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Cho tôi xen vào một chút được không? (ngắt lời lịch sự)"
+        }
+      },
+      "content_hash": "07475772dc6439916e4a8d1885170e0990f1bb64fbcfcfe6c37d72274de2b013",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /kʊd aɪ dʒʌst kʌm ɪn hɪə/ · US /kʊd aɪ dʒʌst kʌm ɪn hɪr/",
+        "pos": "mẫu câu",
+        "text": "Could I just come in here?"
+      },
+      "id": "2612f225-21d0-5686-a0ba-84f6a77c2f8f",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:could-i-just-come-in-here",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Can you…? thân mật hơn; Could you…? lịch sự hơn, hợp với sếp và khách hàng. Sau could you là động từ nguyên mẫu, không thêm to (Could you send…, không nói Could you to send…)."
         },
         "examples": [
@@ -110269,6 +122842,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Không nói culture shocked hay shock culture; nói experience/have culture shock."
+        },
+        "examples": [
+          {
+            "target": "I had a bit of culture shock when I first moved to Japan.",
+            "translation": {
+              "vi": "Lúc mới sang Nhật mình bị sốc văn hoá một chút."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "sốc văn hoá - cảm giác bối rối khi sống ở một nền văn hoá khác"
+        }
+      },
+      "content_hash": "fbde53584df9eaa319fc9972e6127762c7fda396348104cdda2013e02ad5c65b",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ˈkʌltʃə ʃɒk/ · US /ˈkʌltʃɚ ʃɑːk/",
+        "pos": "danh từ",
+        "text": "culture shock"
+      },
+      "id": "100585e0-7350-5cc7-8b7f-ea3957b7c745",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:culture-shock",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Curriculum là cả chương trình; syllabus là đề cương của một môn hoặc một khoá học."
         },
         "examples": [
@@ -110299,6 +122911,45 @@ select content_private.import_bundle($bundle${
       "key": "en:item:curriculum",
       "language_code": "en",
       "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Custom (phong tục) khác customs (hải quan ở sân bay) và customer (khách hàng)."
+        },
+        "examples": [
+          {
+            "target": "In Vietnam, it's a custom to give lucky money at Tet.",
+            "translation": {
+              "vi": "Ở Việt Nam, lì xì vào dịp Tết là một phong tục."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phong tục, tập quán (cách làm quen thuộc của một cộng đồng)"
+        }
+      },
+      "content_hash": "15d34bc0764c134816d8ce3ad3df48b144786ae09838ecc169d2982ebe674b98",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/ˈkʌstəm/",
+        "pos": "danh từ",
+        "text": "custom"
+      },
+      "id": "2c02ba51-3546-53c5-affc-355a6d7fe141",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:custom",
+      "language_code": "en",
+      "level_code": "b1",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -110377,6 +123028,48 @@ select content_private.import_bundle($bundle${
       "key": "en:item:cut-corners",
       "language_code": "en",
       "level_code": "c2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Nói cut costs hoặc reduce costs, không nói \"decrease costs\" trong cụm cố định này. Cut là bất quy tắc - cut, cut, cut."
+        },
+        "examples": [
+          {
+            "target": "The company is trying to cut costs by moving to a smaller office.",
+            "translation": {
+              "vi": "Công ty đang cố cắt giảm chi phí bằng cách chuyển sang văn phòng nhỏ hơn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cắt giảm chi phí"
+        },
+        "pronunciation_note": {
+          "vi": "Costs có cụm phụ âm cuối /sts/ - đọc đủ, đừng nuốt thành \"cót\"."
+        }
+      },
+      "content_hash": "5fce6269101552435ef1006bf1ec3d6e96f80e20de425a3a06d9ec56ffc0f7e4",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /kʌt kɒsts/ · US /kʌt kɑːsts/",
+        "pos": "cụm động từ - danh từ",
+        "text": "cut costs"
+      },
+      "id": "936b7ffa-10a5-5bc2-b6e0-7bf89fdda48a",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:cut-costs",
+      "language_code": "en",
+      "level_code": "b2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -110834,6 +123527,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Đặt cọc là pay / put down a deposit, không nói \"give a deposit money\". Deposit cũng là \"gửi tiền vào ngân hàng\"."
+        },
+        "examples": [
+          {
+            "target": "You'll need to pay a 30% deposit when you place the order.",
+            "translation": {
+              "vi": "Khi đặt hàng, quý khách cần đặt cọc 30%."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tiền đặt cọc; đặt cọc"
+        },
+        "pronunciation_note": {
+          "vi": "Nhấn âm thứ hai de-PO-sit."
+        }
+      },
+      "content_hash": "ad1e00558f9c44db47c77e917e06cf787baf062e1bcaf9193155964caa69a127",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /dɪˈpɒzɪt/ · US /dɪˈpɑːzɪt/",
+        "pos": "danh từ / động từ",
+        "text": "deposit"
+      },
+      "id": "abd9114c-d624-5bdd-9166-9eef34c78b44",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:deposit",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Không có despite of - chỉ despite hoặc in spite of. Muốn theo sau là mệnh đề thì dùng despite the fact that…."
         },
         "examples": [
@@ -110998,6 +123733,96 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "grammar",
         "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Nói disappointed with/about something, không nói disappointed of."
+        },
+        "examples": [
+          {
+            "target": "We were disappointed with the hotel room.",
+            "translation": {
+              "vi": "Bọn mình thất vọng về phòng khách sạn."
+            }
+          },
+          {
+            "target": "The food was disappointing.",
+            "translation": {
+              "vi": "Đồ ăn làm mình thất vọng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "disappointed = (người) thất vọng; disappointing = (việc) gây thất vọng"
+        },
+        "pronunciation_note": {
+          "vi": "Trọng âm ở âm thứ ba - dis-a-POINT-ed."
+        }
+      },
+      "content_hash": "bec7e94671cc4aa65a0902e2594e151daf9769475cd2fe2dedd4842f4e628595",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/ˌdɪsəˈpɔɪntɪd/ · /ˌdɪsəˈpɔɪntɪŋ/",
+        "pos": "tính từ",
+        "text": "disappointed / disappointing"
+      },
+      "id": "f81e1e88-5e94-5edd-836a-4aede2af7dcb",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:disappointed",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Discount là danh từ đếm được - a 10% discount, a discount on something (giới từ on), không nói \"discount for 10%\"."
+        },
+        "examples": [
+          {
+            "target": "We can offer a 10% discount on bulk orders.",
+            "translation": {
+              "vi": "Chúng tôi có thể chiết khấu 10% cho đơn hàng số lượng lớn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "khoản giảm giá, chiết khấu"
+        },
+        "pronunciation_note": {
+          "vi": "Danh từ nhấn âm đầu DIS-count."
+        }
+      },
+      "content_hash": "424ed229d23d626b16e30fb8d322dfd44065d304d5251fa9a0137345c55b6457",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˈdɪskaʊnt/",
+        "pos": "danh từ",
+        "text": "discount"
+      },
+      "id": "7f6f1f2a-1b25-565d-ac3a-73be5c9a21ef",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:discount",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -111302,6 +124127,45 @@ select content_private.import_bundle($bundle${
     {
       "audio_path": null,
       "back": {
+        "confusion": {
+          "vi": "Sau fancy dùng V-ing hoặc danh từ - fancy going, fancy a coffee; không nói \"fancy to go\"."
+        },
+        "examples": [
+          {
+            "target": "Do you fancy going to the cinema tonight?",
+            "translation": {
+              "vi": "Tối nay đi xem phim không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Bạn có thích / muốn… không? (lời rủ thân mật, hay dùng ở Anh)"
+        }
+      },
+      "content_hash": "f2a0fbe4d54d21aa917a0a0f207bfb5106474fcd1c2f4243951162916455b4c3",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/də juː ˈfænsi/",
+        "pos": "cụm giao tiếp",
+        "text": "Do you fancy + V-ing / danh từ…?"
+      },
+      "id": "887f46e2-0fc5-54a4-8cbb-85fdb8d2afa1",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:do-you-fancy",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
         "examples": [
           {
             "target": "My mother is a doctor.",
@@ -111329,6 +124193,50 @@ select content_private.import_bundle($bundle${
       "level_code": "pre_a1",
       "reviewed_at": "2026-10-14T12:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Người Việt hay nói The shower is broken cho mọi thứ; với máy móc, doesn't work/isn't working tự nhiên hơn. Không nói The shower not work."
+        },
+        "examples": [
+          {
+            "target": "The shower doesn't work.",
+            "translation": {
+              "vi": "Vòi sen bị hỏng."
+            }
+          },
+          {
+            "target": "The Wi-Fi isn't working in my room.",
+            "translation": {
+              "vi": "Wi-Fi trong phòng tôi không vào được."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "(máy móc) bị hỏng, không chạy"
+        }
+      },
+      "content_hash": "4fceb1a67741def1801bafdc12745f3ffabb28615220dc4d69fe31b826b8f8cc",
+      "difficulty": 2,
+      "front": {
+        "pos": "cụm động từ",
+        "text": "doesn't work / isn't working"
+      },
+      "id": "f2ca8987-a1c9-5596-bbba-7a6db854235a",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:doesnt-work",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
       ],
@@ -111766,6 +124674,53 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Tiếng Việt chỉ có một từ \"chán\", nên người Việt hay nói I am boring khi muốn nói \"tôi thấy chán\". I am boring nghĩa là \"tôi là người nhạt nhẽo\"."
+        },
+        "examples": [
+          {
+            "target": "The tour was boring, so we were bored.",
+            "translation": {
+              "vi": "Chuyến tham quan chán quá nên bọn mình thấy chán."
+            }
+          },
+          {
+            "target": "I'm interested in local history because it's really interesting.",
+            "translation": {
+              "vi": "Mình quan tâm tới lịch sử địa phương vì nó thật sự thú vị."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Tính từ đuôi -ed tả cảm giác của người (I'm bored = mình thấy chán); tính từ đuôi -ing tả thứ gây ra cảm giác đó (The film is boring = bộ phim chán)."
+        },
+        "pronunciation_note": {
+          "vi": "Đuôi -ed sau âm /t/, /d/ đọc /ɪd/ (interested, exhausted); sau âm khác đọc /d/ hoặc /t/ (bored /d/, embarrassed /t/)."
+        }
+      },
+      "content_hash": "c531efe12f4601afd0c721c67bd8a11e870b837226bd6e15ffbdcf8be63a701e",
+      "difficulty": 3,
+      "front": {
+        "pos": "tính từ",
+        "text": "-ed adjectives / -ing adjectives"
+      },
+      "id": "d6c2090d-931b-56fb-8e15-67379db1ff52",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:ed-ing-adjectives",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Người Việt hay bỏ hẳn đuôi -ed khi nói (vì tiếng Việt ít âm cuối kép), khiến người nghe tưởng là hiện tại. Hãy bật nhẹ /t/ hoặc /d/ ở cuối."
         },
         "examples": [
@@ -112053,6 +125008,48 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Embarrassed là ngượng ngùng, không phải \"xấu hổ vì làm điều sai trái\" (ashamed)."
+        },
+        "examples": [
+          {
+            "target": "I felt embarrassed when I forgot to take off my shoes.",
+            "translation": {
+              "vi": "Mình thấy ngượng khi quên cởi giày."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "embarrassed = (người) ngượng, xấu hổ; embarrassing = (tình huống) gây ngượng"
+        },
+        "pronunciation_note": {
+          "vi": "Viết hai r, hai s; đuôi -ed đọc /t/ - em-BA-rrast."
+        }
+      },
+      "content_hash": "8d4e075251df2fda5a5471a3a8d79ecedc21abf2c57e10e5990359be34703bec",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/ɪmˈbærəst/ · /ɪmˈbærəsɪŋ/",
+        "pos": "tính từ",
+        "text": "embarrassed / embarrassing"
+      },
+      "id": "6b60a4e9-14ec-5936-95b0-f3d556568fdc",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:embarrassed",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -112447,6 +125444,87 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Exhausted đã là \"rất mệt\", nên không nói very exhausted; dùng really exhausted hoặc completely exhausted."
+        },
+        "examples": [
+          {
+            "target": "After the twelve-hour flight, we were exhausted.",
+            "translation": {
+              "vi": "Sau chuyến bay mười hai tiếng, bọn mình kiệt sức."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "(người) kiệt sức, mệt rã rời"
+        },
+        "pronunciation_note": {
+          "vi": "Chữ h không đọc - /ɪɡˈzɔːstɪd/ \"ig-ZOS-tid\"."
+        }
+      },
+      "content_hash": "56ed4a8f6e5b46ddabb663bbfea8d05ba1032f0b973dafcf9453254897a60c66",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ɪɡˈzɔːstɪd/ · US /ɪɡˈzɑːstɪd/",
+        "pos": "tính từ",
+        "text": "exhausted"
+      },
+      "id": "4a852f01-6b9a-590c-a146-5072f1288707",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:exhausted",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Chuyến đi là exhausting (gây mệt), còn bạn là exhausted (cảm thấy mệt)."
+        },
+        "examples": [
+          {
+            "target": "Climbing Fansipan was exhausting but amazing.",
+            "translation": {
+              "vi": "Leo Fansipan mệt rã rời nhưng tuyệt vời."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "(việc, chuyến đi) làm người ta kiệt sức"
+        }
+      },
+      "content_hash": "d1ef2f2c6ebf6be304593ed91a8c113e3b4501ca3f6b8464fa27a8937efc29aa",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ɪɡˈzɔːstɪŋ/ · US /ɪɡˈzɑːstɪŋ/",
+        "pos": "tính từ",
+        "text": "exhausting"
+      },
+      "id": "5ba249f5-59f1-59b0-89ea-78d29d064f60",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:exhausting",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Phải có be - It's expensive, không nói It expensive. Đắt đến mức không muốn mua thì nói too expensive; very expensive chỉ là \"rất đắt\"."
         },
         "examples": [
@@ -112643,6 +125721,46 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Fall - fell - fallen. Mức độ thay đổi đi theo cặp - động từ + trạng từ (fall slightly) hoặc tính từ + danh từ (a slight fall)."
+        },
+        "examples": [
+          {
+            "target": "Profits fell slightly in March.",
+            "translation": {
+              "vi": "Lợi nhuận giảm nhẹ trong tháng Ba."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "giảm nhẹ"
+        }
+      },
+      "content_hash": "77ad458da2d885d1852abdaa476edbfb7131fcaf0032b36e3076c4afa4aa50a6",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /fɔːl ˈslaɪtli/ · US /fɑːl ˈslaɪtli/",
+        "pos": "động từ + trạng từ",
+        "text": "fall slightly / a slight fall"
+      },
+      "id": "c25ba899-f919-565f-9bab-5df0f89fec11",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:fall-slightly",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "writing"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -113861,6 +126979,102 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Tiếng Việt chỉ cần \"sẽ đang\", còn tiếng Anh phải đủ ba phần will + be + V-ing. Thiếu be (\"I will presenting\") là lỗi rất hay gặp."
+        },
+        "examples": [
+          {
+            "target": "This time next week, I'll be presenting our results to the board.",
+            "translation": {
+              "vi": "Giờ này tuần sau, tôi sẽ đang trình bày kết quả của chúng ta trước ban giám đốc."
+            }
+          },
+          {
+            "target": "Don't call at ten - we'll be having our weekly meeting.",
+            "translation": {
+              "vi": "Đừng gọi lúc mười giờ nhé - lúc đó bọn mình đang họp giao ban tuần."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "sẽ đang làm gì vào một thời điểm cụ thể trong tương lai"
+        },
+        "pronunciation_note": {
+          "vi": "Khi nói nhanh, I'll be đọc liền /aɪl bi/, will gần như chỉ còn âm /l/."
+        }
+      },
+      "content_hash": "1fa73f47946c2fab6cb05d8d4fe362252dcbe8291a866390855e8b2b0dc3ce14",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/wɪl biː/",
+        "pos": "thì động từ",
+        "text": "will be + V-ing (tương lai tiếp diễn)"
+      },
+      "id": "388b57ca-61e5-5c7c-aefb-44607c58ca51",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:future-continuous",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Sau will have luôn là V3 (finished, done, sent), không phải V nguyên mẫu - \"will have finish\" là sai. Phủ định là won't have + V3."
+        },
+        "examples": [
+          {
+            "target": "By Friday, we'll have finished the first version of the app.",
+            "translation": {
+              "vi": "Trước thứ Sáu, chúng ta sẽ làm xong phiên bản đầu tiên của ứng dụng."
+            }
+          },
+          {
+            "target": "By the end of the year, she'll have worked here for ten years.",
+            "translation": {
+              "vi": "Đến cuối năm nay, cô ấy sẽ làm việc ở đây được tròn mười năm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "sẽ đã làm xong việc gì trước một mốc thời gian trong tương lai"
+        },
+        "pronunciation_note": {
+          "vi": "Will have thường đọc gọn thành /wɪləv/ hoặc 'll have /ələv/; đừng nhầm âm /əv/ này với of."
+        }
+      },
+      "content_hash": "5678b3d145c2f8733f37b548cb2fd32b45e521da93deaecb72403bde018138f2",
+      "difficulty": 4,
+      "front": {
+        "ipa": "/wɪl hæv/",
+        "pos": "thì động từ",
+        "text": "will have + V3 (tương lai hoàn thành)"
+      },
+      "id": "ef9f337b-a56c-5e0e-ae6a-ce5a65747803",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:future-perfect",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Nói at gate 12 (không cần the trước gate khi có số)."
         },
         "examples": [
@@ -113928,6 +127142,45 @@ select content_private.import_bundle($bundle${
       "is_demo": true,
       "item_type": "vocab",
       "key": "en:item:generous",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Trong kinh doanh, quote (hoặc quotation) là bản báo giá, không phải \"câu trích dẫn\". Không nói \"ask a price\" khi muốn xin báo giá chính thức."
+        },
+        "examples": [
+          {
+            "target": "Let's get a quote from two or three printing companies first.",
+            "translation": {
+              "vi": "Trước hết mình xin báo giá của hai, ba công ty in đã."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "xin báo giá"
+        }
+      },
+      "content_hash": "e31af76b132934fd1eafca63491bd8e6d9404fc19fb96f541f9f2cb360887072",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ɡet ə kwəʊt/ · US /ɡet ə kwoʊt/",
+        "pos": "cụm động từ - danh từ",
+        "text": "get a quote"
+      },
+      "id": "b8233b65-a23c-5e67-b235-e44f1502b452",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:get-a-quote",
       "language_code": "en",
       "level_code": "b2",
       "reviewed_at": null,
@@ -114060,6 +127313,52 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Get something done hay dùng trong văn nói; trong văn viết trang trọng, have something done phổ biến hơn. Vẫn phải là V3 - get it repaired, không phải \"get it repair\"."
+        },
+        "examples": [
+          {
+            "target": "I need to get my laptop repaired before the trip.",
+            "translation": {
+              "vi": "Tôi cần mang laptop đi sửa trước chuyến công tác."
+            }
+          },
+          {
+            "target": "Let's get these contracts signed today.",
+            "translation": {
+              "vi": "Mình làm sao cho các hợp đồng này được ký trong hôm nay nhé."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "như have something done nhưng thân mật hơn; đôi khi nhấn mạnh việc cố gắng làm cho xong"
+        }
+      },
+      "content_hash": "3a163d0c3836c2867adf6863db22b6136db2983397830f3199d0f5808542a605",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/ɡet ˈsʌmθɪŋ dʌn/",
+        "pos": "cấu trúc sai khiến",
+        "text": "get + something + V3"
+      },
+      "id": "65472860-431f-5fe1-9630-26afea9ea6da",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:get-something-done",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -115385,6 +128684,51 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Hardly any đã mang nghĩa phủ định nên không thêm not: không nói There weren't hardly any. Hardly không có nghĩa là \"chăm chỉ\" (hard)."
+        },
+        "examples": [
+          {
+            "target": "There were hardly any tourists in the old town.",
+            "translation": {
+              "vi": "Phố cổ hầu như chẳng có khách du lịch nào."
+            }
+          },
+          {
+            "target": "I've got hardly any money left.",
+            "translation": {
+              "vi": "Mình gần như hết sạch tiền rồi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hầu như không có - nghĩa phủ định, đi với cả danh từ đếm được và không đếm được."
+        }
+      },
+      "content_hash": "e70ca548f128d829abe75f57e09055ade6cc6bded411924f2d6369e8d4ce6ffa",
+      "difficulty": 4,
+      "front": {
+        "ipa": "UK /ˈhɑːdli ˈeni/ · US /ˈhɑːrdli ˈeni/",
+        "pos": "lượng từ",
+        "text": "hardly any"
+      },
+      "id": "d53a661b-6769-573c-be2f-c960780b3598",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:hardly-any",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "I'm cold là \"tôi thấy lạnh\"; I have a cold mới là \"tôi bị cảm\". Chữ a làm thay đổi hẳn nghĩa."
         },
         "examples": [
@@ -115680,6 +129024,99 @@ select content_private.import_bundle($bundle${
       "key": "en:item:have-has",
       "language_code": "en",
       "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Have + người + V nguyên mẫu (have him send), nhưng get + người + to V (get him to send). Đừng trộn thành \"have him to send\" hay \"get him send\"."
+        },
+        "examples": [
+          {
+            "target": "I'll have my assistant send you the details.",
+            "translation": {
+              "vi": "Tôi sẽ bảo trợ lý gửi anh thông tin chi tiết."
+            }
+          },
+          {
+            "target": "Can you get IT to check the printer?",
+            "translation": {
+              "vi": "Bạn nhờ phòng IT kiểm tra máy in được không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bảo / nhờ ai đó làm việc gì (có nêu người làm)"
+        }
+      },
+      "content_hash": "968e909e7d01d2e3ba090df7c70f1caf0a4833c6c4dd659ff44d750733077d4c",
+      "difficulty": 4,
+      "front": {
+        "ipa": "/hæv ˈsʌmwʌn duː/",
+        "pos": "cấu trúc sai khiến",
+        "text": "have someone do / get someone to do"
+      },
+      "id": "007219d7-a48a-5a71-8078-a754f973ba17",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:have-someone-do",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "\"Tôi cắt tóc\" trong tiếng Việt thường là đi tiệm, nhưng \"I cut my hair\" nghĩa là tự tay cắt. Thứ tự luôn là have + vật + V3, không phải have + V3 + vật."
+        },
+        "examples": [
+          {
+            "target": "I had my hair cut yesterday.",
+            "translation": {
+              "vi": "Hôm qua tôi đi cắt tóc."
+            }
+          },
+          {
+            "target": "We're having the office repainted next month.",
+            "translation": {
+              "vi": "Tháng sau công ty chúng tôi sẽ thuê người sơn lại văn phòng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nhờ / thuê người khác làm việc gì cho mình (mình không tự làm)"
+        },
+        "pronunciation_note": {
+          "vi": "Nhấn vào tân ngữ và V3 (my HAIR CUT), have đọc nhẹ."
+        }
+      },
+      "content_hash": "a62381d5739268ef98f407b40f7e8df1c3b74886a9755582339425054a2ca417",
+      "difficulty": 4,
+      "front": {
+        "ipa": "/hæv ˈsʌmθɪŋ dʌn/",
+        "pos": "cấu trúc sai khiến",
+        "text": "have + something + V3"
+      },
+      "id": "7e8fc661-2152-5ffe-8d45-062f86cebe3a",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:have-something-done",
+      "language_code": "en",
+      "level_code": "b2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -116193,6 +129630,46 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "He làm chủ ngữ (He is busy), him đứng sau động từ hoặc giới từ (I know him)."
+        },
+        "examples": [
+          {
+            "target": "I'm waiting for him.",
+            "translation": {
+              "vi": "Tôi đang đợi anh ấy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "anh ấy, ông ấy, cậu ấy (làm tân ngữ)"
+        }
+      },
+      "content_hash": "ebbd76065e2d9abc44964a101ae05c9caffef3a20f591fcbbf9733c9118cb092",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/hɪm/",
+        "pos": "đại từ tân ngữ",
+        "text": "him"
+      },
+      "id": "1068c5c8-792c-5074-95a0-a861d8bedf8d",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:him",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "His hay her phụ thuộc vào người sở hữu, không phụ thuộc vào người được nói tới - Minh's sister là his sister (vì Minh là nam)."
         },
         "examples": [
@@ -116228,6 +129705,85 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "grammar",
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hold là cầm, giữ trong tay; carry là cầm, mang đi chỗ khác (đang di chuyển)."
+        },
+        "examples": [
+          {
+            "target": "The woman is holding a baby.",
+            "translation": {
+              "vi": "Người phụ nữ đang bế một em bé."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cầm, bế, nắm"
+        }
+      },
+      "content_hash": "4fc834271f6949e097b12e0cfb810711166a6249b0f12449c843283987fb1975",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /həʊld/ · US /hoʊld/",
+        "pos": "động từ",
+        "text": "hold"
+      },
+      "id": "49c72f52-668b-5ebe-951e-bc33a7a9d024",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:hold",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Hold on ở đây là chờ máy, không phải cầm giữ vật gì."
+        },
+        "examples": [
+          {
+            "target": "Hold on, please. I'll get him.",
+            "translation": {
+              "vi": "Anh chờ chút nhé, tôi đi gọi anh ấy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Vui lòng chờ một chút."
+        }
+      },
+      "content_hash": "922f4019c1b68ba85648568785d7f92afdb120e6f208468cd15a0a28628313b8",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˌhəʊld ˈɒn/ · US /ˌhoʊld ˈɑːn/",
+        "pos": "cụm giao tiếp (điện thoại)",
+        "text": "Hold on, please. / Just a moment."
+      },
+      "id": "3f3297cc-91d6-54f2-97c0-e945770488ab",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:hold-on",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking",
+        "listening"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -116892,6 +130448,51 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Dù dùng was nhưng nghĩa là hiện tại - quá khứ làm câu nhẹ nhàng hơn. Sau if là trật tự câu kể và could + động từ nguyên mẫu: if you could change, không nói if could you change."
+        },
+        "examples": [
+          {
+            "target": "I was wondering if you could change our room.",
+            "translation": {
+              "vi": "Không biết anh/chị có thể đổi phòng cho chúng tôi được không."
+            }
+          },
+          {
+            "target": "I was wondering if I could check out a bit later.",
+            "translation": {
+              "vi": "Không biết tôi có thể trả phòng muộn một chút được không."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Không biết anh/chị có thể… được không - cách nhờ rất lịch sự, mềm hơn Could you…?"
+        }
+      },
+      "content_hash": "702819e0fdc16e5f59a6cb4bd77d8cff9267893cf1b1bcd74a53ea376a09551f",
+      "difficulty": 4,
+      "front": {
+        "ipa": "UK /aɪ wəz ˈwʌndərɪŋ ɪf juː kʊd/ · US /aɪ wəz ˈwʌndɚɪŋ ɪf juː kʊd/",
+        "pos": "cụm câu",
+        "text": "I was wondering if you could…"
+      },
+      "id": "3217a6a3-9c25-5648-aacf-f59cff48b8a4",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:i-was-wondering-if",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Argue ở đây là \"lập luận, cho rằng\", không phải \"cãi nhau\" (argue with somebody). I'd argue = I would argue, dùng would để lời nói bớt gay gắt."
         },
         "examples": [
@@ -116984,6 +130585,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Trả lời Would you like to…? bằng I'd love to hoặc Yes, I'd like to - không nói \"Yes, I like\" (nghĩa là tôi thích nói chung)."
+        },
+        "examples": [
+          {
+            "target": "A: Would you like to come to my party? B: I'd love to! Thanks.",
+            "translation": {
+              "vi": "A: Bạn có muốn đến tiệc của mình không? B: Có chứ! Cảm ơn nhé."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Mình rất thích / rất sẵn lòng (nhận lời mời)"
+        }
+      },
+      "content_hash": "d7a9797fa62423ed534fb4ee30275af754453d6e92a312d4b08e7d82761a023a",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/aɪd ˈlʌv tə/",
+        "pos": "cụm giao tiếp",
+        "text": "I'd love to."
+      },
+      "id": "cea552c0-a39a-55c1-aa27-652cffff8a23",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:id-love-to",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Một hai thành ngữ trong email nội bộ là ổn; nhồi nhiều thành ngữ vào bài viết trang trọng làm văn bản sáo rỗng và thiếu chuyên nghiệp."
         },
         "examples": [
@@ -117015,6 +130655,45 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "writing",
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Đây là câu chưa hoàn chỉnh về ngữ pháp nhưng hoàn toàn tự nhiên; ngữ điệu nhẹ nhàng giúp bạn giữ lượt mà không gây căng thẳng."
+        },
+        "examples": [
+          {
+            "target": "If I could just finish my point, then you can go ahead.",
+            "translation": {
+              "vi": "Cho tôi nói nốt ý này, rồi mời anh nói tiếp."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Cho phép tôi nói nốt… (giữ lượt lời một cách lịch sự)"
+        }
+      },
+      "content_hash": "0a6d3c65d8fc259d48646bbb0bd89ed2473d25add54b6891e72320d40af8db97",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/ɪf aɪ kʊd dʒʌst ˈfɪnɪʃ/",
+        "pos": "mẫu câu",
+        "text": "If I could just finish…"
+      },
+      "id": "a0e6feb6-d1cb-5f09-95b1-274b64845fda",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:if-i-could-just-finish",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -117134,6 +130813,84 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Ở đây I'm afraid không có nghĩa là \"sợ\" mà là \"tiếc là\". Nên nói thêm lý do để lời từ chối nhẹ nhàng."
+        },
+        "examples": [
+          {
+            "target": "I'm sorry, I'm afraid I can't. I'm working on Saturday.",
+            "translation": {
+              "vi": "Xin lỗi nhé, tiếc là mình không đi được. Thứ Bảy mình phải làm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Tiếc là mình không… được (từ chối lịch sự)"
+        }
+      },
+      "content_hash": "ea358129b57e43330f1b5dd1a1d2536a63550e5d984366d7cc241bbc8ecb8993",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /aɪm əˈfreɪd aɪ ˈkɑːnt/ · US /aɪm əˈfreɪd aɪ ˈkænt/",
+        "pos": "cụm giao tiếp",
+        "text": "I'm afraid I can't."
+      },
+      "id": "9292bade-6b91-5d53-939a-28af81437636",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:im-afraid-i-cant",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "I'm afraid ở đây không có nghĩa là \"sợ\" mà là \"rất tiếc phải nói rằng\". Dùng with + thứ bị hỏng, không nói a problem of."
+        },
+        "examples": [
+          {
+            "target": "I'm afraid there's a problem with the air conditioning in my room.",
+            "translation": {
+              "vi": "Tôi e là máy lạnh trong phòng tôi có vấn đề."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Tôi e là … có vấn đề - cách mở đầu lời phàn nàn lịch sự, nhẹ nhàng."
+        }
+      },
+      "content_hash": "7668be18e570dcd9183a8b5b234708ab690d18485203a50bb81090bb466c4c28",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /aɪm əˈfreɪd ðeəz ə ˈprɒbləm wɪð/ · US /aɪm əˈfreɪd ðerz ə ˈprɑːbləm wɪð/",
+        "pos": "cụm câu",
+        "text": "I'm afraid there's a problem with…"
+      },
+      "id": "bb4ef9a0-e19c-5642-b82e-678211fb2a66",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:im-afraid-theres-a-problem",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -117563,6 +131320,45 @@ select content_private.import_bundle($bundle${
     {
       "audio_path": null,
       "back": {
+        "examples": [
+          {
+            "target": "In the background, there are some mountains.",
+            "translation": {
+              "vi": "Phía sau là mấy ngọn núi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ở phía sau, ở hậu cảnh"
+        },
+        "pronunciation_note": {
+          "vi": "Nhấn âm đầu BACK-ground."
+        }
+      },
+      "content_hash": "bb0d8914dd0e5f308a124dc3e69a9a1fa9afb3c344442bb0c9ca41622a649829",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/ɪn ðə ˈbækɡraʊnd/",
+        "pos": "cụm giới từ",
+        "text": "in the background"
+      },
+      "id": "58154675-7f54-53a4-8e66-14f7fac9db30",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:in-the-background",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
         "confusion": {
           "vi": "In the end đứng một mình, không có of phía sau. \"Cuối bộ phim\" là at the end of the film, không phải in the end of the film."
         },
@@ -117598,6 +131394,84 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Foreground là phía trước bức ảnh; background là phía sau."
+        },
+        "examples": [
+          {
+            "target": "In the foreground, a dog is sleeping.",
+            "translation": {
+              "vi": "Phía trước, một chú chó đang ngủ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ở phía trước, tiền cảnh (gần người xem nhất)"
+        }
+      },
+      "content_hash": "c53ff90606d0aff762fd3821dd6361b15a016ad2856354c1372b72835602a509",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ɪn ðə ˈfɔːɡraʊnd/ · US /ɪn ðə ˈfɔːrɡraʊnd/",
+        "pos": "cụm giới từ",
+        "text": "in the foreground"
+      },
+      "id": "5ec1d738-c503-563f-9ce6-9679339d7ec6",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:in-the-foreground",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "In the middle là chính giữa ảnh; between là ở giữa hai người hoặc hai vật cụ thể."
+        },
+        "examples": [
+          {
+            "target": "In the middle, a girl is holding a cake.",
+            "translation": {
+              "vi": "Ở giữa, một cô bé đang cầm chiếc bánh."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ở giữa"
+        }
+      },
+      "content_hash": "ac9f6406d00bc491207953e3e3df3c903ae0154794fe8be80a08a0840746a26a",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ɪn ðə ˈmɪdl/",
+        "pos": "cụm giới từ",
+        "text": "in the middle"
+      },
+      "id": "6e7b3e77-c600-5b09-8f66-a26905f13276",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:in-the-middle",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -117646,6 +131520,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Dùng in, không dùng \"on the picture\" khi nói người, vật bên trong ảnh."
+        },
+        "examples": [
+          {
+            "target": "In the picture, a family is having dinner.",
+            "translation": {
+              "vi": "Trong ảnh, một gia đình đang ăn tối."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Trong bức tranh / bức ảnh, …"
+        }
+      },
+      "content_hash": "8ebf7a07d94bb0698a2dbfead468c82686f998b7d7b7da0d1ae02e1d869caa9d",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ɪn ðə ˈpɪktʃə/ · US /ɪn ðə ˈpɪktʃɚ/",
+        "pos": "cụm giới từ",
+        "text": "In the picture / photo, …"
+      },
+      "id": "17755c61-876c-58a4-bcff-e66cab11ec8d",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:in-the-picture",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "In two days nghĩa là \"hai ngày nữa\", không phải \"trong vòng hai ngày\". Đừng dùng after two days cho nghĩa này."
         },
         "examples": [
@@ -117678,6 +131591,181 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Tiếng Việt nói \"tăng 10%\" không cần giới từ, nên người Việt hay dùng sai \"for 10%\". Lượng thay đổi luôn đi với by; mức cuối cùng đi với to."
+        },
+        "examples": [
+          {
+            "target": "Sales rose by 10%, to $5 million.",
+            "translation": {
+              "vi": "Doanh số tăng 10%, lên 5 triệu đô."
+            }
+          },
+          {
+            "target": "Costs fell from $2 million to $1.5 million.",
+            "translation": {
+              "vi": "Chi phí giảm từ 2 triệu xuống 1,5 triệu đô."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "by = tăng/giảm một lượng; to = tăng/giảm đến mức"
+        }
+      },
+      "content_hash": "a1d16292d6ece8cb0b890b6be285c3a225e6c16fa34574415efce4aa154df7d6",
+      "difficulty": 4,
+      "front": {
+        "ipa": "/baɪ/ · /tuː/",
+        "pos": "giới từ chỉ mức thay đổi",
+        "text": "increase / fall by… vs to…"
+      },
+      "id": "eaadbf10-3c31-518b-b5ef-70c6198a3e88",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:increase-by-to",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Người Việt hay giữ trật tự câu hỏi thường: Could you tell me where is the station? Sai - phải là where the station is. Tương tự what time the museum opens, không phải what time does the museum open."
+        },
+        "examples": [
+          {
+            "target": "Could you tell me where the station is?",
+            "translation": {
+              "vi": "Anh/chị có thể cho tôi biết nhà ga ở đâu không?"
+            }
+          },
+          {
+            "target": "Do you know what time the museum opens?",
+            "translation": {
+              "vi": "Bạn có biết mấy giờ bảo tàng mở cửa không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Câu hỏi gián tiếp lịch sự hơn: phần sau từ để hỏi theo trật tự câu kể (chủ ngữ trước động từ), không dùng do/does/did. Could you tell me where the station is?"
+        },
+        "pronunciation_note": {
+          "vi": "Lên giọng ở cuối câu như câu hỏi Yes/No, vì câu hỏi thật là Could you…? / Do you know…?"
+        }
+      },
+      "content_hash": "a4f36fa390cdf174dda535640bea715385013dfca2fdf22bf2bbd242b3b308b5",
+      "difficulty": 4,
+      "front": {
+        "pos": "câu hỏi gián tiếp",
+        "text": "Could you tell me / Do you know + wh-word + S + V?"
+      },
+      "id": "b4b7deb7-0156-5c27-b817-3923311a003f",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:indirect-questions",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không bỏ if: không nói Do you know does this bus go…? Cũng không giữ does - đúng là Do you know if this bus goes…?"
+        },
+        "examples": [
+          {
+            "target": "Do you know if this bus goes to the airport?",
+            "translation": {
+              "vi": "Bạn có biết xe buýt này có đi sân bay không?"
+            }
+          },
+          {
+            "target": "Could you tell me whether breakfast is included?",
+            "translation": {
+              "vi": "Anh/chị cho tôi hỏi bữa sáng có được tính trong giá không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Với câu hỏi Yes/No, dùng if hoặc whether rồi trật tự câu kể: Do you know if the bus stops here?"
+        }
+      },
+      "content_hash": "12d26e7cf40db2d3e1b2d71389178ac12eeaec3f11fa102f0c59d1b0e269633f",
+      "difficulty": 4,
+      "front": {
+        "pos": "câu hỏi gián tiếp",
+        "text": "Do you know / Could you tell me + if (whether) + S + V?"
+      },
+      "id": "8e44b61d-8057-5a3a-a9d5-7948b4a46bac",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:indirect-questions-if",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không gấp đôi khi từ kết thúc bằng hai nguyên âm + phụ âm (read → reading, rain → raining) hoặc bằng w, x, y (play → playing)."
+        },
+        "examples": [
+          {
+            "target": "She's writing an email and he's sitting next to her.",
+            "translation": {
+              "vi": "Cô ấy đang viết email còn anh ấy đang ngồi cạnh cô ấy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Quy tắc viết V-ing: bỏ e câm (make → making), gấp đôi phụ âm cuối sau một nguyên âm ngắn có nhấn (sit → sitting, run → running), ie → y (lie → lying)."
+        }
+      },
+      "content_hash": "9059ffecebb660e95b054b0ca8571acdd83cc011c675f8d3c6189c06020fe69c",
+      "difficulty": 2,
+      "front": {
+        "pos": "chính tả",
+        "text": "cách thêm -ing: make → making, sit → sitting, lie → lying"
+      },
+      "id": "c36d443e-d530-56ba-bf02-d933a3d5ef21",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:ing-spelling",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "writing"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -117810,6 +131898,90 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Luôn đi với in - interested in history, không nói interested about/on."
+        },
+        "examples": [
+          {
+            "target": "Are you interested in traditional music?",
+            "translation": {
+              "vi": "Bạn có thích nhạc truyền thống không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "(người) quan tâm, thích thú với cái gì"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc ba âm tiết IN-tres-tid, trọng âm ở âm đầu; không đọc \"in-tơ-rét-tít\"."
+        }
+      },
+      "content_hash": "37da545dec5de3c783dea3be84c76f72e9ae3d02f63fad67b2676b45d684199a",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˈɪntrəstɪd/",
+        "pos": "tính từ",
+        "text": "interested (in)"
+      },
+      "id": "6217067c-1e81-522b-a42b-23c2a384d401",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:interested",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "I'm interesting nghĩa là \"tôi là người thú vị\"; muốn nói \"tôi thấy hứng thú\" thì dùng I'm interested."
+        },
+        "examples": [
+          {
+            "target": "The museum was more interesting than I expected.",
+            "translation": {
+              "vi": "Bảo tàng thú vị hơn mình nghĩ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thú vị, hấp dẫn (tả sự vật, sự việc, người)"
+        },
+        "pronunciation_note": {
+          "vi": "Trọng âm ở âm đầu - IN-tres-ting."
+        }
+      },
+      "content_hash": "b7c91c57ee6d02453d545772a984562a2927fe9c71c1dd2fc840f557f8962ec4",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˈɪntrəstɪŋ/",
+        "pos": "tính từ",
+        "text": "interesting"
+      },
+      "id": "24d60ec9-2d1d-568a-a64b-f7494bfd3c48",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:interesting",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -118105,6 +132277,45 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "grammar",
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Với bạn bè, Is three OK for you? tự nhiên hơn \"Is it convenient for you?\" (nghe trang trọng). Không nói \"Are you convenient?\"."
+        },
+        "examples": [
+          {
+            "target": "Is three o'clock OK for you?",
+            "translation": {
+              "vi": "Ba giờ có tiện cho bạn không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "…có tiện cho bạn không? (hỏi khi hẹn giờ, hẹn chỗ)"
+        }
+      },
+      "content_hash": "e6353aeeb22aea15bf6bf928cae7d7b420aab2a11b4e190e821d6a609e7810a7",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ɪz ðæt əʊˈkeɪ fə juː/ · US /ɪz ðæt oʊˈkeɪ fɚ juː/",
+        "pos": "cụm giao tiếp",
+        "text": "Is… OK for you? / Does… suit you?"
+      },
+      "id": "4b420987-31a8-554e-9bcb-ee870d142a5e",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:is-that-ok-for-you",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -118775,6 +132986,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Không có dạng \"knowing\" khi nói đang biết: I know, không nói I'm knowing."
+        },
+        "examples": [
+          {
+            "target": "Do you know him? He's my new colleague.",
+            "translation": {
+              "vi": "Bạn có quen anh ấy không? Anh ấy là đồng nghiệp mới của tôi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "biết, quen biết"
+        },
+        "pronunciation_note": {
+          "vi": "Chữ k câm, know đọc giống no."
+        }
+      },
+      "content_hash": "03941588df295819545ee2b856f9fd0416283963f8107da0c4452c8c035ff1b4",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /nəʊ/ · US /noʊ/",
+        "pos": "động từ",
+        "text": "know"
+      },
+      "id": "9ae92790-1b07-55ee-8b37-403831e07f95",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:know",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Không thêm in hay on trước last - nói last week, không nói \"in last week\". Không nói \"the last week\" khi muốn nói \"tuần trước\"."
         },
         "examples": [
@@ -118863,6 +133116,93 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Không nói \"open a product\" hay \"release a product\" cho mọi trường hợp; launch là từ chuẩn trong kinh doanh. Launch còn là danh từ - the product launch."
+        },
+        "examples": [
+          {
+            "target": "We're launching a new skincare product in March.",
+            "translation": {
+              "vi": "Tháng Ba chúng tôi sẽ ra mắt một sản phẩm chăm sóc da mới."
+            }
+          },
+          {
+            "target": "The launch has been moved to next quarter.",
+            "translation": {
+              "vi": "Buổi ra mắt đã được dời sang quý sau."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ra mắt / tung ra một sản phẩm"
+        },
+        "pronunciation_note": {
+          "vi": "Launch có âm cuối /tʃ/ (như \"ch\" nhẹ), đừng đọc thành \"lanh\"."
+        }
+      },
+      "content_hash": "ae6b51f08f6331b1c9c5f4486d8f750b5f2843baabf992d7ba1bb0667bcea96f",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /lɔːntʃ ə ˈprɒdʌkt/ · US /lɑːntʃ ə ˈprɑːdʌkt/",
+        "pos": "cụm động từ - danh từ",
+        "text": "launch a product"
+      },
+      "id": "f0504f12-63b8-53dd-81d4-1812f3a0974c",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:launch-a-product",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Người gọi leave (để lại) lời nhắn; người nghe máy take (ghi) lời nhắn."
+        },
+        "examples": [
+          {
+            "target": "A: I'm afraid she's out. Can I take a message? B: Yes, please. Can you ask her to call me?",
+            "translation": {
+              "vi": "A: Tiếc là cô ấy ra ngoài rồi. Tôi ghi lời nhắn nhé? B: Vâng. Nhờ chị bảo cô ấy gọi lại cho tôi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Tôi nhắn lại được không? (người gọi) / Tôi ghi lời nhắn nhé? (người nghe máy)"
+        }
+      },
+      "content_hash": "1157567bb6aa65b1fa0e54989e016238df6f1fa3925c74418f103d255f2bcc60",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/liːv ə ˈmesɪdʒ/ · /teɪk ə ˈmesɪdʒ/",
+        "pos": "cụm giao tiếp (điện thoại)",
+        "text": "Can I leave a message? / Can I take a message?"
+      },
+      "id": "6a8d2429-0763-54a3-b146-80d514257530",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:leave-a-message",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Để quên đồ ở một nơi dùng leave (I left my phone at home), không dùng forget + nơi chốn (I forgot my phone at home nghe không tự nhiên bằng)."
         },
         "examples": [
@@ -118936,6 +133276,45 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Sau move on to là danh từ hoặc V-ing (move on to discussing…), vì to là giới từ. Không nói \"move on to discuss about\"."
+        },
+        "examples": [
+          {
+            "target": "OK, let's move on to the next item - the budget.",
+            "translation": {
+              "vi": "Được rồi, chúng ta chuyển sang nội dung tiếp theo - ngân sách."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Chúng ta chuyển sang (nội dung tiếp theo)…"
+        }
+      },
+      "content_hash": "975f97b331e77ab89521333b2ad15ecf817f95913eb0b588d46d10919a8c9888",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /lets muːv ɒn tuː/ · US /lets muːv ɑːn tuː/",
+        "pos": "mẫu câu",
+        "text": "Let's move on to…"
+      },
+      "id": "01e0a16a-a976-5069-b301-911d32fe847f",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:lets-move-on-to",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -119408,6 +133787,51 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "\"Người địa phương\" là locals hoặc local people, không nói local persons."
+        },
+        "examples": [
+          {
+            "target": "Try the local food - it's delicious.",
+            "translation": {
+              "vi": "Hãy thử đồ ăn địa phương - ngon lắm."
+            }
+          },
+          {
+            "target": "A few locals showed us the way.",
+            "translation": {
+              "vi": "Vài người dân địa phương đã chỉ đường cho bọn mình."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thuộc địa phương, của người bản địa; the locals = người dân địa phương"
+        }
+      },
+      "content_hash": "07ef9b8c52afa4ecc829fbf91d1a8f106c1d129001e4dd1cadf5d8fb419e90cb",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˈləʊkl/ · US /ˈloʊkl/",
+        "pos": "tính từ / danh từ",
+        "text": "local"
+      },
+      "id": "96f2ef6d-f9fe-5d07-a2fb-2c6d1304b740",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:local",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Lock là khoá lại; key là chìa khoá. Không nói I keyed the door."
         },
         "examples": [
@@ -119438,6 +133862,123 @@ select content_private.import_bundle($bundle${
       "key": "en:item:lock",
       "language_code": "en",
       "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Look + tính từ (look tired), look like + danh từ (look like a teacher). Không nói \"They look like happy\" hay \"They are look happy\"."
+        },
+        "examples": [
+          {
+            "target": "The children look very happy.",
+            "translation": {
+              "vi": "Bọn trẻ trông rất vui."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Trông có vẻ… (đoán cảm xúc, trạng thái của người trong ảnh)"
+        }
+      },
+      "content_hash": "bb21bbdf42ac501545e32997e2d49b30e6431ae78284080220531a27610ec05b",
+      "difficulty": 2,
+      "front": {
+        "pos": "cấu trúc",
+        "text": "look + tính từ: They look happy."
+      },
+      "id": "5d491010-f059-5e50-825c-573ccc126c7e",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:look-adjective",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Có vật hoặc người theo sau thì cần at - look at me, không nói \"look me\"."
+        },
+        "examples": [
+          {
+            "target": "The children are looking at the camera.",
+            "translation": {
+              "vi": "Bọn trẻ đang nhìn vào máy ảnh."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nhìn (vào cái gì, ai)"
+        }
+      },
+      "content_hash": "a8835322e162b865ab8a4643f8871b3cb421f74cd1ed8bd4b93454436c48a331",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ˈlʊk ət/",
+        "pos": "cụm động từ",
+        "text": "look at"
+      },
+      "id": "7854c70e-7e2e-5427-b387-70f1c5e5ab79",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:look-at",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Look for là đang tìm; find là tìm thấy. I'm looking for my phone (chưa thấy) khác I found my phone (thấy rồi)."
+        },
+        "examples": [
+          {
+            "target": "A: What are you doing? B: I'm looking for my keys.",
+            "translation": {
+              "vi": "A: Bạn đang làm gì đấy? B: Mình đang tìm chìa khoá."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tìm (cái gì, ai)"
+        }
+      },
+      "content_hash": "fd4c0b9df010c12a367c37f25a7ed6b53d5d473dce0aea9935154ab4e5231b90",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˈlʊk fə/",
+        "pos": "cụm động từ",
+        "text": "look for"
+      },
+      "id": "44c69764-de98-5326-8fa2-cb3e0bc65f30",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:look-for",
+      "language_code": "en",
+      "level_code": "a2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -120027,6 +134568,51 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Gain / lose market share (tăng / mất thị phần). Nói a 20% share of the market, không nói \"20% of market share of\"."
+        },
+        "examples": [
+          {
+            "target": "The brand has a 20% share of the Vietnamese market.",
+            "translation": {
+              "vi": "Thương hiệu này chiếm 20% thị phần Việt Nam."
+            }
+          },
+          {
+            "target": "We've lost market share to cheaper competitors.",
+            "translation": {
+              "vi": "Chúng ta đã mất thị phần vào tay các đối thủ rẻ hơn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thị phần"
+        }
+      },
+      "content_hash": "2acd43913ca5e2ea916edc16c33c59f4fe37c4bd8d9014e17ebdf4deed54d105",
+      "difficulty": 4,
+      "front": {
+        "ipa": "UK /ˈmɑːkɪt ʃeə/ · US /ˈmɑːrkɪt ʃer/",
+        "pos": "danh từ",
+        "text": "market share"
+      },
+      "id": "963181d6-860d-5fc2-90da-e10835498671",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:market-share",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Married là tính từ nên đi với be - She is married, không nói \"She married\" khi muốn nói tình trạng hiện tại. Chưa kết hôn là single."
         },
         "examples": [
@@ -120066,6 +134652,85 @@ select content_private.import_bundle($bundle${
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Dùng sau lời từ chối để giữ thiện chí; không phải lời hứa chắc chắn."
+        },
+        "examples": [
+          {
+            "target": "I can't come tonight, but maybe another time?",
+            "translation": {
+              "vi": "Tối nay mình không đến được, để dịp khác nhé?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Để dịp khác nhé."
+        }
+      },
+      "content_hash": "7c94c93a132eacc75e701dcf8369291d960d40b21273aa271fb44413f49515f0",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˈmeɪbi əˈnʌðə taɪm/",
+        "pos": "cụm giao tiếp",
+        "text": "Maybe another time."
+      },
+      "id": "ba58e1b6-24c0-5cfe-8cc9-614025406f9f",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:maybe-another-time",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Sau động từ dùng me, không dùng I: Help me!, không nói Help I!"
+        },
+        "examples": [
+          {
+            "target": "Please call me tomorrow.",
+            "translation": {
+              "vi": "Mai bạn gọi cho tôi nhé."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tôi, mình (làm tân ngữ - sau động từ, giới từ)"
+        }
+      },
+      "content_hash": "53c66b9eefd50d3ec4d77e8a9c87865494174be5555b758fd458c22f36b9d894",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/miː/",
+        "pos": "đại từ tân ngữ",
+        "text": "me"
+      },
+      "id": "5fb50ad0-e163-5fdf-83ff-24ae8092202b",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:me",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
         "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
@@ -120233,6 +134898,51 @@ select content_private.import_bundle($bundle${
       "level_code": "pre_a1",
       "reviewed_at": "2026-10-14T12:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "\"Kịp deadline\" là meet the deadline, không nói \"catch the deadline\" hay \"reach the deadline\". Trễ hạn là miss, không phải \"lose\"."
+        },
+        "examples": [
+          {
+            "target": "If we work this weekend, we'll meet the deadline.",
+            "translation": {
+              "vi": "Nếu cuối tuần này làm thêm thì chúng ta sẽ kịp hạn."
+            }
+          },
+          {
+            "target": "The team missed the deadline by two days.",
+            "translation": {
+              "vi": "Nhóm đã trễ hạn hai ngày."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "kịp hạn chót / trễ hạn chót"
+        }
+      },
+      "content_hash": "cbb10e079d7cc39a612722938cfbfccc3a8195274a0f6c88ec27049b1d5c3eb0",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/miːt ə ˈdedlaɪn/",
+        "pos": "cụm động từ - danh từ",
+        "text": "meet / miss a deadline"
+      },
+      "id": "e02db4ce-a1a0-5ac6-bb21-a66ae3f0ec89",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:meet-a-deadline",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
       ],
@@ -120534,6 +135244,46 @@ select content_private.import_bundle($bundle${
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Sau mine không có danh từ. Nói my book hoặc It's mine, không nói \"mine book\"."
+        },
+        "examples": [
+          {
+            "target": "That coffee is mine.",
+            "translation": {
+              "vi": "Cốc cà phê đó là của tôi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "của tôi, của mình (đứng một mình)"
+        }
+      },
+      "content_hash": "2f7a0061d18ed0715acf20353018a1d0f9b072928291a463cc9a3b9bc6081b47",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/maɪn/",
+        "pos": "đại từ sở hữu",
+        "text": "mine"
+      },
+      "id": "dd44d459-699f-57ef-bc9d-07467ee05beb",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:mine",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
         "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
@@ -121231,6 +135981,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Need là động từ trạng thái: I need, không nói I'm needing."
+        },
+        "examples": [
+          {
+            "target": "I need your help right now.",
+            "translation": {
+              "vi": "Tôi cần bạn giúp ngay bây giờ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cần"
+        }
+      },
+      "content_hash": "c171747413ede1ad1d0e37aee744a6fbb6d1311c6991e7410691a99a742f9af6",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/niːd/",
+        "pos": "động từ",
+        "text": "need"
+      },
+      "id": "152d2f93-748f-5840-8812-1a644cc1b65b",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:need",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Never đã mang nghĩa phủ định, nên không dùng thêm don't - nói I never watch TV, không nói \"I don't never watch TV\". Động từ sau never vẫn chia - She never watches TV."
         },
         "examples": [
@@ -121558,6 +136347,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Noisy là tính từ, noise là danh từ - The room is noisy / There's a lot of noise."
+        },
+        "examples": [
+          {
+            "target": "Our room was next to the lift and very noisy.",
+            "translation": {
+              "vi": "Phòng bọn mình ở cạnh thang máy nên rất ồn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ồn ào"
+        }
+      },
+      "content_hash": "3efb912fa4b370e3fc020425971b3c7af81ebee4a8300036f0a752df7fda27e8",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˈnɔɪzi/",
+        "pos": "tính từ",
+        "text": "noisy"
+      },
+      "id": "1858be71-4080-5d7c-aceb-ba81d8a1f949",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:noisy",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Danh từ hoá thường cần of phía sau (the implementation of the plan) và một động từ \"nhẹ\" đi kèm (make a decision, carry out an analysis). Lạm dụng quá nhiều danh từ cũng làm câu nặng nề."
         },
         "examples": [
@@ -121590,6 +136418,54 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "grammar",
         "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "None of đã phủ định nên động từ để thể khẳng định: None of us could…, không nói None of us couldn't. Không nói none of hotels - phải có the."
+        },
+        "examples": [
+          {
+            "target": "None of the hotels had a free room.",
+            "translation": {
+              "vi": "Không khách sạn nào còn phòng trống."
+            }
+          },
+          {
+            "target": "None of us could speak Japanese.",
+            "translation": {
+              "vi": "Không ai trong bọn mình nói được tiếng Nhật."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "không ai / không cái nào trong số… - luôn có the, my, these… hoặc đại từ (none of them, none of us) sau of."
+        },
+        "pronunciation_note": {
+          "vi": "None đọc /nʌn/ giống nun, không đọc như \"nôn\"."
+        }
+      },
+      "content_hash": "242b95345bcf567a6b716cbd8bcd79020ff742c2124a6d461661fa8248c30235",
+      "difficulty": 4,
+      "front": {
+        "ipa": "/nʌn əv/",
+        "pos": "lượng từ",
+        "text": "none of + the/my/these… + danh từ"
+      },
+      "id": "d53102f3-9ad6-5f78-8a79-deda5465c902",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:none-of",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -122064,6 +136940,50 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Sau động từ và giới từ không dùng I, he, she, we, they - nói with us, không nói \"with we\"."
+        },
+        "examples": [
+          {
+            "target": "I like her, but I don't know him.",
+            "translation": {
+              "vi": "Tôi thích cô ấy, nhưng tôi không quen anh ấy."
+            }
+          },
+          {
+            "target": "Can you call me later?",
+            "translation": {
+              "vi": "Lát nữa bạn gọi cho tôi được không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Đứng sau động từ hoặc giới từ (call me, with them). Tiếng Việt dùng cùng một từ \"anh ấy\" cho cả chủ ngữ và tân ngữ, tiếng Anh thì đổi he → him."
+        }
+      },
+      "content_hash": "e3e581121543edaa90e7fe1b51f5766ce4cd5d8d61b9bb4cc215f0e4ba3d3a8f",
+      "difficulty": 2,
+      "front": {
+        "pos": "đại từ",
+        "text": "đại từ tân ngữ: me, you, him, her, it, us, them"
+      },
+      "id": "c65577f3-5b71-5c9a-ae71-bfff8ef4fabe",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:object-pronouns",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Chỉ dùng o'clock với giờ chẵn - không nói seven thirty o'clock. Không dịch \"giờ\" thành hours."
         },
         "examples": [
@@ -122449,6 +137369,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Dùng on the, không nói \"in left\" hay \"at the left\". Muốn nói rõ hơn thì thêm of - on the left of the picture."
+        },
+        "examples": [
+          {
+            "target": "On the left, a woman is reading a newspaper.",
+            "translation": {
+              "vi": "Bên trái, một người phụ nữ đang đọc báo."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ở bên trái / ở bên phải (của bức ảnh)"
+        }
+      },
+      "content_hash": "525985075672d906331fb601ff7c0a5f014af80e4be02b222650605ca12579d4",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ɒn ðə ˈleft/ · US /ɑːn ðə ˈleft/",
+        "pos": "cụm giới từ",
+        "text": "on the left / on the right"
+      },
+      "id": "4710f542-712b-5799-bd06-8dfb0356c0dc",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:on-the-left-on-the-right",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Đừng nhầm với On the contrary - cụm này dùng để bác bỏ ý vừa nói (\"Ngược lại hoàn toàn\"), không phải để nêu mặt thứ hai."
         },
         "examples": [
@@ -122520,6 +137479,46 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "On track mô tả tiến độ ổn; nếu chậm thì nói off track hoặc behind schedule."
+        },
+        "examples": [
+          {
+            "target": "We're on track to finish the project by June.",
+            "translation": {
+              "vi": "Chúng ta đang đúng tiến độ để hoàn thành dự án trước tháng Sáu."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đang đúng tiến độ, đang đi đúng hướng để đạt mục tiêu"
+        }
+      },
+      "content_hash": "61cb245a459c7605e6cdb3a3f513c25c30ec9b7a8c4918fab7b98ed56c9ba895",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ɒn træk/ · US /ɑːn træk/",
+        "pos": "thành ngữ",
+        "text": "be on track (to do something)"
+      },
+      "id": "95dbd4c1-e9a1-5a60-a6df-4dc22b43d4f5",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:on-track",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -122943,6 +137942,48 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "grammar",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Outsource something to a company (giao cho ai), không nói \"outsource for\"."
+        },
+        "examples": [
+          {
+            "target": "Many firms outsource their customer service to save money.",
+            "translation": {
+              "vi": "Nhiều công ty thuê ngoài bộ phận chăm sóc khách hàng để tiết kiệm chi phí."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thuê ngoài, giao việc cho công ty bên ngoài làm"
+        },
+        "pronunciation_note": {
+          "vi": "Nhấn âm đầu OUT-."
+        }
+      },
+      "content_hash": "4797535f7b899e9c477b325ddabd5ab877cb20b43cf501bcef6c53a498faa566",
+      "difficulty": 4,
+      "front": {
+        "ipa": "UK /ˈaʊtsɔːs/ · US /ˈaʊtsɔːrs/",
+        "pos": "động từ",
+        "text": "outsource"
+      },
+      "id": "7daa685f-ca5b-5bf4-9768-26da28e117f5",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:outsource",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
         "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
@@ -123524,6 +138565,46 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Peak at + con số (peaked at 12,000); không nói \"peaked to\" hay \"peaked with\"."
+        },
+        "examples": [
+          {
+            "target": "Visitor numbers peaked at 12,000 in December.",
+            "translation": {
+              "vi": "Lượng khách đạt đỉnh 12.000 người vào tháng Mười Hai."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đạt đỉnh ở mức"
+        }
+      },
+      "content_hash": "a3636fd7144e28e577b5d0031976f9094d91b0d0dda533d1c6e4fd324172eb7d",
+      "difficulty": 4,
+      "front": {
+        "ipa": "/piːk æt/",
+        "pos": "động từ + giới từ",
+        "text": "peak at / reach a peak of"
+      },
+      "id": "36427bb3-af94-542c-94e2-732250c41e42",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:peak-at",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Người Anh cũng hay nói chemist's, người Mỹ nói drugstore; pharmacy thì ai cũng hiểu."
         },
         "examples": [
@@ -124018,6 +139099,91 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Plenty of mang ý \"đủ, thậm chí thừa\" nên nghe yên tâm hơn a lot of. Không dùng plenty of trong câu hỏi hay câu phủ định thông thường."
+        },
+        "examples": [
+          {
+            "target": "Don't worry, we've got plenty of time before the train leaves.",
+            "translation": {
+              "vi": "Đừng lo, mình còn dư thời gian trước khi tàu chạy."
+            }
+          },
+          {
+            "target": "There are plenty of cheap hotels near the beach.",
+            "translation": {
+              "vi": "Gần bãi biển có rất nhiều khách sạn rẻ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thừa, dư dả, nhiều hơn mức cần - dùng với danh từ đếm được số nhiều và không đếm được."
+        }
+      },
+      "content_hash": "2558f5cb9d590d77c4fcb09534e0f70ea1d7b71bcc59b6eec96f88cffd2b5aab",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/ˈplenti əv/",
+        "pos": "lượng từ",
+        "text": "plenty of"
+      },
+      "id": "769b8bb6-e145-5624-a2a1-5bcd81520e00",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:plenty-of",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Mẫu câu hay dùng: It's polite/rude to + động từ nguyên mẫu. Không nói It's polite when bow."
+        },
+        "examples": [
+          {
+            "target": "In Japan, it's polite to bow when you meet someone.",
+            "translation": {
+              "vi": "Ở Nhật, cúi chào khi gặp ai đó là lịch sự."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lịch sự / bất lịch sự"
+        }
+      },
+      "content_hash": "521e72d77e5f32b3723d3fc8abd019f393d46c42ac1abe0f65f77b8b96062893",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/pəˈlaɪt/ · /ˌɪmpəˈlaɪt/",
+        "pos": "tính từ",
+        "text": "polite / impolite"
+      },
+      "id": "7fa46aa3-dc64-5219-9554-b3c3fc9172ab",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:polite",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Pose a challenge to somebody/something dùng to; trang trọng hơn create a problem for."
         },
         "examples": [
@@ -124173,6 +139339,50 @@ select content_private.import_bundle($bundle${
       "key": "en:item:possessive-adjectives",
       "language_code": "en",
       "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "My, your, her + danh từ (my book); mine, yours, hers đứng một mình. Không nói \"mine book\" hay \"It's my\"."
+        },
+        "examples": [
+          {
+            "target": "A: Is this your bag? B: Yes, it's mine.",
+            "translation": {
+              "vi": "A: Đây có phải túi của bạn không? B: Đúng, của mình."
+            }
+          },
+          {
+            "target": "This isn't my phone. It's hers.",
+            "translation": {
+              "vi": "Đây không phải điện thoại của tôi. Của cô ấy đấy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Thay cho \"của ai + đồ vật\" và đứng một mình, không có danh từ theo sau: It's my book → It's mine."
+        }
+      },
+      "content_hash": "c9c8351483ace24ad52fe5f1eab0d4cefbdf51a3c4df998ede961eb5495efebd",
+      "difficulty": 3,
+      "front": {
+        "pos": "đại từ",
+        "text": "đại từ sở hữu: mine, yours, his, hers, ours, theirs"
+      },
+      "id": "812f359a-f551-55aa-a818-0f3a1bbac0cd",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:possessive-pronouns",
+      "language_code": "en",
+      "level_code": "a2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -124607,6 +139817,51 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Tiếng Việt chỉ thêm \"đang\", còn tiếng Anh cần đủ hai phần - be và V-ing. \"I am go\" hay \"I going\" đều sai; phải là I'm going."
+        },
+        "examples": [
+          {
+            "target": "A: What are you doing? B: I'm cooking dinner.",
+            "translation": {
+              "vi": "A: Bạn đang làm gì thế? B: Mình đang nấu bữa tối."
+            }
+          },
+          {
+            "target": "I'm working from home this week.",
+            "translation": {
+              "vi": "Tuần này tôi làm việc ở nhà."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Nói việc đang diễn ra ngay lúc nói, hoặc việc tạm thời trong giai đoạn này (tuần này, dạo này)."
+        }
+      },
+      "content_hash": "5ae4e2142df5f1d6145456623285f9feadb9b026067c512a48efa1b13fccea77",
+      "difficulty": 2,
+      "front": {
+        "pos": "thì động từ",
+        "text": "hiện tại tiếp diễn: am / is / are + V-ing (đang làm)"
+      },
+      "id": "d7baa505-bb1f-59f2-b08c-71d75b0270e2",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:present-continuous-now",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Không dùng hiện tại tiếp diễn cho việc kéo dài đến giờ - không nói I am learning English for three years. Tiếng Việt \"đang học được ba năm\" phải thành I've been learning."
         },
         "examples": [
@@ -124747,6 +140002,50 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Từ chỉ thói quen (usually, every day, always) đi với hiện tại đơn; từ chỉ lúc này (now, at the moment, this week, today) thường đi với hiện tại tiếp diễn."
+        },
+        "examples": [
+          {
+            "target": "I usually take the bus, but today I'm walking.",
+            "translation": {
+              "vi": "Tôi thường đi xe buýt, nhưng hôm nay tôi đi bộ."
+            }
+          },
+          {
+            "target": "He lives in Da Nang, but he's staying in Hanoi this month.",
+            "translation": {
+              "vi": "Anh ấy sống ở Đà Nẵng, nhưng tháng này anh ấy đang ở Hà Nội."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Hiện tại đơn nói việc thường xuyên, lâu dài (I work in an office). Hiện tại tiếp diễn nói việc đang xảy ra hoặc tạm thời (But this week I'm working from home)."
+        }
+      },
+      "content_hash": "8e7afd714d3b560459f0058801973f7fbb78fbe5aee7dbbe3688d255705d7e15",
+      "difficulty": 3,
+      "front": {
+        "pos": "so sánh thì",
+        "text": "hiện tại đơn (thói quen) và hiện tại tiếp diễn (lúc này, tạm thời)"
+      },
+      "id": "3d6262c7-6de4-5f51-8dd7-4c58c5139211",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:present-simple-vs-continuous",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Probably đứng sau will (will probably be) nhưng đứng trước won't (probably won't come)."
         },
         "examples": [
@@ -124778,6 +140077,90 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Đi với động từ make - make a profit, make a loss; không nói \"get a loss\" hay \"have profit\"."
+        },
+        "examples": [
+          {
+            "target": "The company made a profit of $2 million last year.",
+            "translation": {
+              "vi": "Năm ngoái công ty lãi 2 triệu đô."
+            }
+          },
+          {
+            "target": "The shop made a loss in its first year.",
+            "translation": {
+              "vi": "Năm đầu tiên cửa hàng bị lỗ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lợi nhuận / khoản lỗ"
+        }
+      },
+      "content_hash": "1defe7577b9bef8a083409289bd2fdfce53b85a98cf5ec0561c8daf76ad35b99",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ˈprɒfɪt/, /lɒs/ · US /ˈprɑːfɪt/, /lɔːs/",
+        "pos": "danh từ",
+        "text": "profit / loss"
+      },
+      "id": "2ff024ab-c0fc-5bcd-8caa-12fc046692f2",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:profit-and-loss",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Giống if, sau provided that dùng hiện tại đơn dù nói về tương lai - provided that you pay, không phải \"provided that you will pay\"."
+        },
+        "examples": [
+          {
+            "target": "We can deliver by May, provided that you pay a 30% deposit.",
+            "translation": {
+              "vi": "Chúng tôi có thể giao hàng trước tháng Năm, với điều kiện quý công ty đặt cọc 30%."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "với điều kiện là, miễn là (trang trọng hơn if)"
+        }
+      },
+      "content_hash": "810e1551d6fd69775e9b3a6bbf0014a267dd9f9d949f2fa8b200713631837451",
+      "difficulty": 4,
+      "front": {
+        "ipa": "/prəˈvaɪdɪd ðæt/",
+        "pos": "liên từ",
+        "text": "provided (that) / providing (that)"
+      },
+      "id": "b63c5048-bbba-5448-8a4a-b5cc1ffec630",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:provided-that",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -124936,6 +140319,60 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "vocabulary",
         "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Tiếng Việt chỉ có một đuôi \"nhỉ / phải không\" cho mọi câu, nên người Việt hay dùng isn't it cho tất cả. Phải đổi theo câu chính: You like it, don't you? / She can swim, can't she? / They went, didn't they?"
+        },
+        "examples": [
+          {
+            "target": "It's hot today, isn't it?",
+            "translation": {
+              "vi": "Hôm nay nóng nhỉ?"
+            }
+          },
+          {
+            "target": "You take off your shoes inside, don't you?",
+            "translation": {
+              "vi": "Ở trong nhà mình cởi giày ra, phải không?"
+            }
+          },
+          {
+            "target": "They didn't leave a tip, did they?",
+            "translation": {
+              "vi": "Họ không để lại tiền boa, đúng không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Câu hỏi đuôi để xác nhận hoặc bắt chuyện: lặp lại trợ động từ của câu chính (be, do, can, have…) + đại từ chủ ngữ; câu khẳng định đi với đuôi phủ định và ngược lại."
+        },
+        "pronunciation_note": {
+          "vi": "Xuống giọng ở đuôi khi bạn gần như chắc chắn và chỉ muốn người kia đồng ý; lên giọng khi bạn thật sự không chắc."
+        }
+      },
+      "content_hash": "57a880e03512cf0a3f4a5e0600b95b2ae28e8dee77a92e2c970fa943c0ad076d",
+      "difficulty": 4,
+      "front": {
+        "pos": "câu hỏi đuôi",
+        "text": "…, isn't it? / …, don't you? / …, didn't they? (question tags)"
+      },
+      "id": "d419b6d7-fa77-5e66-852e-a2b901a7ce7c",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:question-tags",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -125263,6 +140700,54 @@ select content_private.import_bundle($bundle${
       "is_demo": true,
       "item_type": "vocab",
       "key": "en:item:recently",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Nói get a refund / I'd like a refund, không nói I want to refund (nghĩa là mình sẽ trả lại tiền cho người khác)."
+        },
+        "examples": [
+          {
+            "target": "The tour was cancelled, so I'd like a refund, please.",
+            "translation": {
+              "vi": "Tour bị huỷ nên tôi muốn được hoàn tiền."
+            }
+          },
+          {
+            "target": "They refunded the money the next day.",
+            "translation": {
+              "vi": "Họ hoàn tiền vào ngày hôm sau."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tiền hoàn lại / hoàn tiền"
+        },
+        "pronunciation_note": {
+          "vi": "Danh từ nhấn âm đầu RE-fund, động từ nhấn âm sau re-FUND."
+        }
+      },
+      "content_hash": "57bc75025853d2e928ee4dfd474f62648c4a0a7559900dcfcb5aa14c8f1c20a3",
+      "difficulty": 3,
+      "front": {
+        "ipa": "(n) /ˈriːfʌnd/ · (v) /rɪˈfʌnd/",
+        "pos": "danh từ / động từ",
+        "text": "refund / I'd like a refund"
+      },
+      "id": "44a3f803-4f36-5a58-964f-e9547cdada7b",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:refund",
       "language_code": "en",
       "level_code": "b1",
       "reviewed_at": null,
@@ -125654,6 +141139,46 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Sau remain là tính từ (stable), không phải trạng từ - không nói \"remain stably\". Level off là ngừng tăng/giảm và đi ngang."
+        },
+        "examples": [
+          {
+            "target": "Sales remained stable throughout the summer.",
+            "translation": {
+              "vi": "Doanh số giữ ổn định suốt mùa hè."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "giữ ổn định / chững lại"
+        }
+      },
+      "content_hash": "c21116a8976e2fd232b69ace49cac1a8534e312abf00c16d4e223c1cefa2b9b0",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/rɪˈmeɪn ˈsteɪbl/",
+        "pos": "động từ + tính từ",
+        "text": "remain stable / level off"
+      },
+      "id": "7fd3e162-d66b-5891-bca8-053c9ef94b51",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:remain-stable",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "writing"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -126085,6 +141610,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Revenue là tổng tiền thu về, profit là phần lãi sau khi trừ chi phí - đừng dùng lẫn. Tăng bao nhiêu phần trăm dùng by, không dùng \"for\"."
+        },
+        "examples": [
+          {
+            "target": "Online sales helped us increase revenue by 15% this year.",
+            "translation": {
+              "vi": "Bán hàng trực tuyến đã giúp chúng tôi tăng doanh thu 15% trong năm nay."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "doanh thu"
+        },
+        "pronunciation_note": {
+          "vi": "Nhấn âm đầu RE-; kiểu Anh có /j/ (-nyoo), kiểu Mỹ không."
+        }
+      },
+      "content_hash": "a2e29f811fa7fbf25e5370ffe236e6c0ee5fdc7d6772db9adb77330982fa9d0f",
+      "difficulty": 4,
+      "front": {
+        "ipa": "UK /ˈrevənjuː/ · US /ˈrevənuː/",
+        "pos": "danh từ",
+        "text": "revenue"
+      },
+      "id": "c77ca3fc-717a-517c-ad5c-688fe7611168",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:revenue",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Trong Anh-Anh, revise for an exam là ôn thi; Anh-Mỹ dùng review hoặc study for. Không nói \"review lesson\" kiểu dịch từng chữ \"ôn bài\"."
         },
         "examples": [
@@ -126171,6 +141738,46 @@ select content_private.import_bundle($bundle${
     {
       "audio_path": null,
       "back": {
+        "examples": [
+          {
+            "target": "I can't talk right now. I'm driving.",
+            "translation": {
+              "vi": "Giờ mình không nói chuyện được. Mình đang lái xe."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ngay bây giờ, ngay lúc này"
+        },
+        "pronunciation_note": {
+          "vi": "Nhấn vào now. Chữ gh trong right câm, đọc giống \"rai\"."
+        }
+      },
+      "content_hash": "4b0100dfac8a6b2a7c83c447af7963fbb85a640ae655e69ee6c9b2a757a222c0",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ˌraɪt ˈnaʊ/",
+        "pos": "cụm trạng từ",
+        "text": "right now"
+      },
+      "id": "87b83a20-564a-57c6-813e-ce81054f7245",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:right-now",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
         "confusion": {
           "vi": "Quá khứ là rang, quá khứ phân từ là rung - không viết ringed."
         },
@@ -126214,6 +141821,52 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Rise là nội động từ (rise - rose - risen), không có tân ngữ - doanh số tự tăng. Muốn nói \"chúng tôi tăng giá\" dùng raise / increase prices."
+        },
+        "examples": [
+          {
+            "target": "Prices rose sharply in the second quarter.",
+            "translation": {
+              "vi": "Giá tăng mạnh trong quý hai."
+            }
+          },
+          {
+            "target": "There was a sharp rise in demand.",
+            "translation": {
+              "vi": "Nhu cầu tăng vọt."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tăng mạnh, tăng vọt"
+        }
+      },
+      "content_hash": "d7e76b0bffc4f13f263db86e066166a704804f0d600654cc743236c8ba9f7d5f",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /raɪz ˈʃɑːpli/ · US /raɪz ˈʃɑːrpli/",
+        "pos": "động từ + trạng từ",
+        "text": "rise sharply / a sharp rise"
+      },
+      "id": "97422f83-7793-5eac-8fc4-5dd4e7f58b9a",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:rise-sharply",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "writing"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Routine là chuỗi việc làm đều đặn mỗi ngày; habit là một thói quen riêng lẻ (tốt hoặc xấu)."
         },
         "examples": [
@@ -126246,6 +141899,45 @@ select content_private.import_bundle($bundle${
       "level_code": "a1",
       "reviewed_at": "2026-10-14T12:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Rude mạnh hơn impolite. Nói rude to someone (thô lỗ với ai), không nói rude with."
+        },
+        "examples": [
+          {
+            "target": "It's rude to point at people with your finger.",
+            "translation": {
+              "vi": "Chỉ tay vào người khác là bất lịch sự."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thô lỗ, vô lễ"
+        }
+      },
+      "content_hash": "0b4c5c35fcadfcb318e39f18640c58e9f4f0df2d6cba0908e18443780f8c45f7",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ruːd/",
+        "pos": "tính từ",
+        "text": "rude"
+      },
+      "id": "c4052471-c942-50eb-8b9a-eba614f3125a",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:rude",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
       ],
@@ -126578,6 +142270,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Then ở đây là \"lúc đó\" (thời điểm vừa hẹn), không phải \"sau đó\"."
+        },
+        "examples": [
+          {
+            "target": "A: So, Friday at six? B: Great. See you then!",
+            "translation": {
+              "vi": "A: Vậy sáu giờ thứ Sáu nhé? B: Tuyệt. Hẹn gặp lúc đó!"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Hẹn gặp bạn lúc đó nhé."
+        }
+      },
+      "content_hash": "f5698a737dc32b47c9317a92ea21d2068a6b7eb7b6dccc6c4e1c35a498d3de8b",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ˈsiː juː ðen/",
+        "pos": "cụm giao tiếp",
+        "text": "See you then."
+      },
+      "id": "3b1d886e-a26b-577f-97c6-a5c41450b8ec",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:see-you-then",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Danh từ là self-confidence (sự tự tin). Không nói \"She is very confidence\"."
         },
         "examples": [
@@ -126790,6 +142521,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Hands luôn ở số nhiều (hai bàn tay gặp nhau) - shake hands with him, không nói shake hand."
+        },
+        "examples": [
+          {
+            "target": "In business meetings, people usually shake hands.",
+            "translation": {
+              "vi": "Trong các cuộc họp công việc, mọi người thường bắt tay."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bắt tay (ai)"
+        }
+      },
+      "content_hash": "6e1d9739a457db41b770f49f1685532b5e674882003dfa72c0387256e7e94bbe",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ʃeɪk hændz/",
+        "pos": "cụm động từ",
+        "text": "shake hands (with someone)"
+      },
+      "id": "d1f5df94-cc9b-52d6-8666-9b3e578fdcf0",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:shake-hands",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Đề nghị giúp dạng câu hỏi dùng Shall I…?, không dùng Will I…? (Will I…? là hỏi chuyện tương lai của chính mình)."
         },
         "examples": [
@@ -126817,6 +142587,45 @@ select content_private.import_bundle($bundle${
       "key": "en:item:shall-i",
       "language_code": "en",
       "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Dùng get started, không nói \"Shall we start up?\" (start up là khởi nghiệp / khởi động máy). Let's get started cũng được nhưng ít mềm mỏng hơn."
+        },
+        "examples": [
+          {
+            "target": "Right, it's nine o'clock. Shall we get started?",
+            "translation": {
+              "vi": "Được rồi, chín giờ rồi. Chúng ta bắt đầu nhé?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Chúng ta bắt đầu nhé? (câu mở đầu cuộc họp)"
+        }
+      },
+      "content_hash": "00ae37ae9ac8626470193e5b11821dccf7c6e0a4ea33581329009768f3e044d0",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ʃæl wiː ɡet ˈstɑːtɪd/ · US /ʃæl wiː ɡet ˈstɑːrt̬ɪd/",
+        "pos": "mẫu câu",
+        "text": "Shall we get started?"
+      },
+      "id": "601885bd-23bc-52f1-bae0-90ee63e30deb",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:shall-we-get-started",
+      "language_code": "en",
+      "level_code": "b2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -127329,6 +143138,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Thêm -ing phải gấp đôi t - sitting, không viết \"siting\"."
+        },
+        "examples": [
+          {
+            "target": "Two men are sitting on a bench.",
+            "translation": {
+              "vi": "Hai người đàn ông đang ngồi trên ghế dài."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ngồi"
+        },
+        "pronunciation_note": {
+          "vi": "/ɪ/ ngắn, khác seat /siːt/ (chỗ ngồi) có /iː/ dài."
+        }
+      },
+      "content_hash": "58ca372799b225014aa5910f544359ac58c48e3a7bbd00f4ff1653f4b52636d5",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/sɪt/",
+        "pos": "động từ",
+        "text": "sit (sitting)"
+      },
+      "id": "5cd2b946-7549-5158-bb37-48f0525e7e5a",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:sit",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Hỏi cỡ của người mua nói What size are you?, không nói What size you wear? Thiếu cỡ thì nói It's too big (rộng quá) hoặc It's too small (chật quá)."
         },
         "examples": [
@@ -127532,6 +143383,90 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Smile là mỉm cười; laugh là cười thành tiếng. Thêm -ing thì bỏ e - smiling."
+        },
+        "examples": [
+          {
+            "target": "Everyone in the photo is smiling.",
+            "translation": {
+              "vi": "Mọi người trong ảnh đều đang cười."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mỉm cười; nụ cười"
+        }
+      },
+      "content_hash": "3c53737fc1fd8eb96892eff75ddb16d9c85ee45feb132fea977fb4b2a23133f6",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/smaɪl/",
+        "pos": "động từ, danh từ",
+        "text": "smile"
+      },
+      "id": "cf1a46a6-da00-57cf-8c8b-1df9e65f696b",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:smile",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "So không đứng trước danh từ: không nói so beautiful day. Nếu có danh từ thì dùng such a beautiful day; that có thể bỏ trong văn nói."
+        },
+        "examples": [
+          {
+            "target": "The hotel was so noisy that we couldn't sleep.",
+            "translation": {
+              "vi": "Khách sạn ồn đến nỗi bọn mình không ngủ được."
+            }
+          },
+          {
+            "target": "I was so exhausted that I fell asleep on the bus.",
+            "translation": {
+              "vi": "Mình mệt đến mức ngủ gục trên xe buýt."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "quá… đến nỗi… - so đứng trước tính từ hoặc trạng từ KHÔNG có danh từ đi sau: so tired that…, so quickly that…"
+        }
+      },
+      "content_hash": "7cd410ef64df53a6d4da10731bb0f2231b19c7995c737946fee4506338ee6039",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /səʊ … ðət/ · US /soʊ … ðət/",
+        "pos": "cấu trúc câu",
+        "text": "so + adjective/adverb + that…"
+      },
+      "id": "ac093103-e304-5b7f-b29a-f13acfadd3db",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:so-adjective-that",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -127908,6 +143843,48 @@ select content_private.import_bundle($bundle${
     {
       "audio_path": null,
       "back": {
+        "confusion": {
+          "vi": "Souvenir là đồ mua về làm kỷ niệm; gift/present là quà tặng nói chung."
+        },
+        "examples": [
+          {
+            "target": "I bought a few souvenirs for my colleagues.",
+            "translation": {
+              "vi": "Mình mua vài món quà lưu niệm cho đồng nghiệp."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "quà lưu niệm, đồ kỷ niệm mua khi đi du lịch"
+        },
+        "pronunciation_note": {
+          "vi": "Trọng âm rơi vào âm cuối - sou-ve-NIR."
+        }
+      },
+      "content_hash": "a45be4e1d7d9a27db4361789497762fc8d90ef5cc6bb42c0869537853e711bb0",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˌsuːvəˈnɪə/ · US /ˌsuːvəˈnɪr/",
+        "pos": "danh từ",
+        "text": "souvenir"
+      },
+      "id": "945bade0-de78-5cb0-8c3b-12920ab3af43",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:souvenir",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
         "examples": [
           {
             "target": "How do you spell your name?",
@@ -128000,6 +143977,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Stakeholder rộng hơn shareholder (cổ đông) - nó gồm cả nhân viên, khách hàng, nhà cung cấp, chính quyền địa phương."
+        },
+        "examples": [
+          {
+            "target": "We'll be meeting all the key stakeholders next month.",
+            "translation": {
+              "vi": "Tháng sau chúng ta sẽ gặp tất cả các bên liên quan chủ chốt."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bên liên quan (người hoặc nhóm có quyền lợi trong một dự án, công ty)"
+        },
+        "pronunciation_note": {
+          "vi": "Nhấn âm đầu STAKE-; holder đọc nhẹ."
+        }
+      },
+      "content_hash": "fa50d0725ef90b11fb8d34960bde82a3dfc86df2fe9a6f15242355a7ad734d54",
+      "difficulty": 4,
+      "front": {
+        "ipa": "UK /ˈsteɪkhəʊldə/ · US /ˈsteɪkhoʊldɚ/",
+        "pos": "danh từ",
+        "text": "stakeholder"
+      },
+      "id": "d3b67f1f-ead6-514f-a3e6-0de4c160aace",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:stakeholder",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Start work (bắt đầu làm việc) khác go to work (đi đến chỗ làm)."
         },
         "examples": [
@@ -128076,6 +144095,50 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không nói \"I'm knowing\" hay \"I'm wanting\". Dù có right now hay at the moment, vẫn dùng hiện tại đơn - I want it right now."
+        },
+        "examples": [
+          {
+            "target": "I know the answer.",
+            "translation": {
+              "vi": "Tôi biết câu trả lời."
+            }
+          },
+          {
+            "target": "She wants a new phone at the moment.",
+            "translation": {
+              "vi": "Lúc này cô ấy đang muốn một chiếc điện thoại mới."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Động từ chỉ suy nghĩ, cảm xúc, sở hữu, mong muốn - thường không dùng ở dạng tiếp diễn, kể cả khi tiếng Việt có chữ \"đang\"."
+        }
+      },
+      "content_hash": "7736e50146a55fdbf8f669ec3c29361ba75df6be8934efb7041e74cb940dae76",
+      "difficulty": 3,
+      "front": {
+        "pos": "nhóm động từ",
+        "text": "động từ trạng thái: want, know, like, need, understand (không chia -ing)"
+      },
+      "id": "500a3964-28ec-51bf-9721-94f4acb68487",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:stative-verbs",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -128922,6 +144985,51 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Danh từ số ít đếm được cần a/an sau such: such a long trip (không nói such long trip hay a such long trip). Danh từ số nhiều và không đếm được thì không có a: such good weather."
+        },
+        "examples": [
+          {
+            "target": "It was such a beautiful day that we walked to the beach.",
+            "translation": {
+              "vi": "Trời đẹp đến nỗi bọn mình đi bộ ra biển."
+            }
+          },
+          {
+            "target": "They were such friendly people that we felt at home.",
+            "translation": {
+              "vi": "Họ thân thiện đến mức bọn mình thấy như ở nhà."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "quá… đến nỗi… - such đi với cụm danh từ: such a beautiful day, such kind people, such good weather."
+        }
+      },
+      "content_hash": "b82ea77e11d36fd2f98f3b3e20a7e78c4039b98a1a1445babb8c88e6c1806f6b",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/sʌtʃ ə … ðət/",
+        "pos": "cấu trúc câu",
+        "text": "such (a/an) + adjective + noun + that…"
+      },
+      "id": "192ce789-5c8a-5617-bf9d-785ee514d8a3",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:such-a-noun-that",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Suddenly đi với sự việc ngắn ở quá khứ đơn, không dùng với bối cảnh kéo dài."
         },
         "examples": [
@@ -129164,6 +145272,48 @@ select content_private.import_bundle($bundle${
       "key": "en:item:supermarket",
       "language_code": "en",
       "level_code": "a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Supplier là bên bán hàng cho công ty; customer / client là bên mua. Động từ là supply something to someone."
+        },
+        "examples": [
+          {
+            "target": "We've found a cheaper supplier for our packaging.",
+            "translation": {
+              "vi": "Chúng tôi đã tìm được một nhà cung cấp bao bì rẻ hơn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nhà cung cấp"
+        },
+        "pronunciation_note": {
+          "vi": "Nhấn âm thứ hai -PLI-; âm đầu /sə/ đọc rất nhẹ."
+        }
+      },
+      "content_hash": "ee2c691b52116a9a5f7b0aa0cbffe29a6384a7301d5e134e587a008b6c0a520b",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /səˈplaɪə/ · US /səˈplaɪɚ/",
+        "pos": "danh từ",
+        "text": "supplier"
+      },
+      "id": "758b7a77-1253-5868-bb37-7a21ceca4ab8",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:supplier",
+      "language_code": "en",
+      "level_code": "b2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -129575,6 +145725,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Với đại từ phải đặt giữa - take them off, không nói take off them. Đừng nhầm với take off (máy bay cất cánh)."
+        },
+        "examples": [
+          {
+            "target": "Please take off your shoes before you go into the temple.",
+            "translation": {
+              "vi": "Vui lòng cởi giày trước khi vào chùa."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cởi giày, bỏ giày ra"
+        }
+      },
+      "content_hash": "0a7d5ac086fb29afab4bfdf8b664baa52a48a6cf1a9f568fcacb11b6c0422454",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /teɪk ɒf jɔː ʃuːz/ · US /teɪk ɔːf jʊr ʃuːz/",
+        "pos": "cụm động từ",
+        "text": "take off your shoes / take your shoes off"
+      },
+      "id": "2f4012a4-5759-500a-baef-f205f026b379",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:take-off-your-shoes",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Sides luôn ở số nhiều trong cụm này. Đứng về phía một người cụ thể là take someone's side."
         },
         "examples": [
@@ -129643,6 +145832,48 @@ select content_private.import_bundle($bundle${
       "level_code": "a1",
       "reviewed_at": "2026-10-14T12:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Minutes luôn ở số nhiều khi là biên bản. Không nói \"write the minute\" hay \"make a minutes\"."
+        },
+        "examples": [
+          {
+            "target": "Could you take the minutes today, Linh?",
+            "translation": {
+              "vi": "Hôm nay Linh ghi biên bản giúp nhé?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ghi biên bản cuộc họp"
+        },
+        "pronunciation_note": {
+          "vi": "Minutes (biên bản) đọc giống minutes (phút) - /ˈmɪnɪts/."
+        }
+      },
+      "content_hash": "95e39d2cd84e2411db7e598f9683b6764654e221576633a380a3151922b93645",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/teɪk ðə ˈmɪnɪts/",
+        "pos": "cụm động từ - danh từ",
+        "text": "take the minutes"
+      },
+      "id": "7a05ee7f-45d3-52b2-ba2c-fdd09d6ae300",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:take-the-minutes",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
       ],
@@ -130066,6 +146297,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Công nhận trước rồi mới phản bác giúp cuộc đàm phán không căng thẳng. Tránh \"You are wrong\" hay \"No, that's not true\"."
+        },
+        "examples": [
+          {
+            "target": "That's a fair point, but our costs have gone up as well.",
+            "translation": {
+              "vi": "Anh nói cũng có lý, nhưng chi phí của chúng tôi cũng đã tăng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Ý anh/chị cũng có lý, nhưng… (công nhận rồi phản bác nhẹ nhàng)"
+        }
+      },
+      "content_hash": "60da7e3fe1063da2059a3c5bdc63f792731ccdb6c03d09ddfcbd255101d21174",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /ðæts ə feə pɔɪnt bʌt/ · US /ðæts ə fer pɔɪnt bʌt/",
+        "pos": "mẫu câu",
+        "text": "That's a fair point, but…"
+      },
+      "id": "1a290674-243f-5078-8b3a-0177e68650e8",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:thats-a-fair-point-but",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Người Việt hay nói No more hoặc Enough - nghe cộc. That's all, thanks lịch sự và tự nhiên hơn."
         },
         "examples": [
@@ -130408,6 +146678,94 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Them dùng cho cả người lẫn đồ vật số nhiều."
+        },
+        "examples": [
+          {
+            "target": "I love these shoes. I'm wearing them today.",
+            "translation": {
+              "vi": "Tôi rất thích đôi giày này. Hôm nay tôi đang đi chúng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "họ, chúng nó, những cái đó (làm tân ngữ)"
+        },
+        "pronunciation_note": {
+          "vi": "Âm /ð/ đặt đầu lưỡi giữa hai hàm răng, không đọc thành \"dem\" hay \"zem\"."
+        }
+      },
+      "content_hash": "c74738e96551f8ebba80d316b0050a80f7de1838611e04e0c9651fea97d581fe",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ðem/",
+        "pos": "đại từ tân ngữ",
+        "text": "them"
+      },
+      "id": "42696b31-7428-5446-9638-3973b4313910",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:them",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Sau người không thêm is nữa - không nói \"There is a man is sitting\". Hoặc nói A man is sitting…"
+        },
+        "examples": [
+          {
+            "target": "There's a man sitting on the bench.",
+            "translation": {
+              "vi": "Có một người đàn ông đang ngồi trên ghế."
+            }
+          },
+          {
+            "target": "There are two children playing in the park.",
+            "translation": {
+              "vi": "Có hai đứa trẻ đang chơi trong công viên."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "There is / are + người + V-ing: có ai đó đang làm gì (dùng để giới thiệu người trong ảnh)."
+        }
+      },
+      "content_hash": "cd3024e9bc46eb64862c59dd088001363c0c3e5198fce29da8693da156e076db",
+      "difficulty": 3,
+      "front": {
+        "pos": "cấu trúc mô tả",
+        "text": "There's a man sitting… / There are two children playing…"
+      },
+      "id": "63c13bbe-2117-56e1-9324-ce9545d6ae5c",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:there-is-someone-doing",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Chữ \"có\" để nói một thứ tồn tại ở đâu đó là there is/are, không phải have. Không nói It has a bank near here hay Have a bank near here."
         },
         "examples": [
@@ -130541,6 +146899,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "These days nói về giai đoạn hiện tại, thường đi với hiện tại tiếp diễn khi việc chỉ là tạm thời."
+        },
+        "examples": [
+          {
+            "target": "My brother is learning Japanese these days.",
+            "translation": {
+              "vi": "Dạo này em trai tôi đang học tiếng Nhật."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "dạo này, gần đây"
+        }
+      },
+      "content_hash": "adbc98047da505fc6a410b45eb246e43ac3f9629624d53e79d738ca366e2500b",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˈðiːz deɪz/",
+        "pos": "cụm trạng từ",
+        "text": "these days"
+      },
+      "id": "d489195f-9419-55ca-9769-d3dcad6fb17d",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:these-days",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Khen ai \"gầy đẹp\" thì dùng slim; nói skinny với người lớn dễ làm họ phật lòng."
         },
         "examples": [
@@ -130581,6 +146978,50 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Không nói \"I'm thinking it's a good idea\" khi đưa ra ý kiến."
+        },
+        "examples": [
+          {
+            "target": "I think it's a good idea.",
+            "translation": {
+              "vi": "Tôi nghĩ đó là ý hay."
+            }
+          },
+          {
+            "target": "I'm thinking about my holiday.",
+            "translation": {
+              "vi": "Tôi đang nghĩ về kỳ nghỉ của mình."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Think = nghĩ rằng (ý kiến) thì không chia -ing. Think about / of = đang cân nhắc, đang nghĩ đến (hoạt động) thì chia -ing được."
+        }
+      },
+      "content_hash": "f2077ca1141e5244bbf4239ba3c9e0714046f6208307c62544b0228704ba88a4",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ hai nghĩa",
+        "text": "I think… (ý kiến) và I'm thinking about… (đang suy nghĩ)"
+      },
+      "id": "5f9b2a45-957c-51c8-8ada-3fdfabec840f",
+      "is_demo": true,
+      "item_type": "grammar_point",
+      "key": "en:item:think-opinion-activity",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -130674,6 +147115,51 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Trên điện thoại nói This is Mai, không nói \"I am Mai\" hay \"Here is Mai\"."
+        },
+        "examples": [
+          {
+            "target": "Hi, this is Mai from the bank.",
+            "translation": {
+              "vi": "Chào anh, tôi là Mai ở ngân hàng đây."
+            }
+          },
+          {
+            "target": "A: Can I speak to Nam? B: Speaking.",
+            "translation": {
+              "vi": "A: Cho tôi gặp Nam. B: Nam đây."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Tôi là… đây. (tự giới thiệu khi gọi điện)"
+        }
+      },
+      "content_hash": "0666f2117af6443c0e494155fbaef69c22d7beeab672bcc017a977126766b1a1",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ðɪs ɪz/ · /ˈspiːkɪŋ/",
+        "pos": "cụm giao tiếp (điện thoại)",
+        "text": "This is… / …speaking."
+      },
+      "id": "52695488-fd1f-5ba7-9026-10dbdbd0686c",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:this-is-speaking",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Tiếng Việt dùng \"đây\" cho cả một hay nhiều người, nhưng tiếng Anh phải đổi - this is (một người), these are (nhiều người)."
         },
         "examples": [
@@ -130720,6 +147206,46 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Cụm này gần như luôn đi với will be + V-ing, vì nó chỉ một thời điểm cụ thể mà việc đang diễn ra."
+        },
+        "examples": [
+          {
+            "target": "This time tomorrow, I'll be flying to Singapore.",
+            "translation": {
+              "vi": "Giờ này ngày mai, tôi đang bay sang Singapore rồi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "giờ này tuần sau / giờ này ngày mai"
+        }
+      },
+      "content_hash": "5b6fce17173bd6ef78f04008aa084d6bdd74ea1aa4e41367a7bb737005df76c3",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ðɪs taɪm nekst wiːk/",
+        "pos": "cụm trạng từ",
+        "text": "this time next week / tomorrow"
+      },
+      "id": "9fc9fa2f-459a-585b-a6db-2cba2b561f72",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:this-time-next-week",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -130897,6 +147423,51 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Tip còn có nghĩa là \"mẹo\" (travel tips). Nói leave/give a tip, không nói pay a tip."
+        },
+        "examples": [
+          {
+            "target": "In the US, people usually leave a 15–20% tip in restaurants.",
+            "translation": {
+              "vi": "Ở Mỹ, người ta thường để lại 15-20% tiền boa ở nhà hàng."
+            }
+          },
+          {
+            "target": "Do you tip taxi drivers here?",
+            "translation": {
+              "vi": "Ở đây có boa cho tài xế taxi không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tiền boa (tip) / cho tiền boa"
+        }
+      },
+      "content_hash": "a04d1419e5eb438c6258f324e344243b48a5fa61c34e3aeb1f595b5c33b28efa",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/tɪp/",
+        "pos": "danh từ / động từ",
+        "text": "tip / leave a tip"
+      },
+      "id": "67a3ba0d-8a66-54c4-89d1-1cfad666b9ec",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:tip",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Tired là tính từ nên cần be - I'm tired, không nói \"I tired\". Tiring là \"gây mệt\" - a tiring day."
         },
         "examples": [
@@ -131011,6 +147582,49 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "writing",
         "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "To sum up dùng khi nói; in summary trang trọng hơn, thường trong văn viết. Không nói \"Sum up,\" đứng một mình ở đầu câu."
+        },
+        "examples": [
+          {
+            "target": "To sum up, we've agreed to delay the launch by two weeks.",
+            "translation": {
+              "vi": "Tóm lại, chúng ta đã thống nhất lùi buổi ra mắt hai tuần."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Tóm lại,… (tổng kết cuối cuộc họp hay bài nói)"
+        },
+        "pronunciation_note": {
+          "vi": "Nối âm sum up thành /sʌmʌp/."
+        }
+      },
+      "content_hash": "165bcd1ffcf22f112d315aca53212e516a008a528426d7b082246579e5c9753c",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/tə sʌm ʌp/",
+        "pos": "cụm từ nối",
+        "text": "To sum up,…"
+      },
+      "id": "744bbcb0-e6bb-5af6-9632-95a0f8f7b6c2",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:to-sum-up",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking",
+        "writing"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -131259,6 +147873,132 @@ select content_private.import_bundle($bundle${
       "key": "en:item:tooth",
       "language_code": "en",
       "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Tourist là người đi du lịch; tour là chuyến tham quan; tourism là ngành du lịch."
+        },
+        "examples": [
+          {
+            "target": "The beach is full of tourists in July.",
+            "translation": {
+              "vi": "Tháng Bảy bãi biển chật kín khách du lịch."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "khách du lịch"
+        }
+      },
+      "content_hash": "698da013429d0ae7dc1e23b9f790b27821f986d90232f4ecb08e7a50e2ab3b33",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /ˈtʊərɪst, ˈtɔːrɪst/ · US /ˈtʊrɪst/",
+        "pos": "danh từ",
+        "text": "tourist"
+      },
+      "id": "7c845809-76d8-5955-8591-607ac653db02",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:tourist",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "Could we have some clean towels, please?",
+            "translation": {
+              "vi": "Cho chúng tôi xin vài chiếc khăn sạch được không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "khăn tắm, khăn lau"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc hai âm tiết TAU-ừl, không đọc \"tô-uen\"."
+        }
+      },
+      "content_hash": "5d6e50b5ed736a87ad8841258f1e81a40e67481305e7f0f5c5c19360a03d03a6",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ˈtaʊəl/",
+        "pos": "danh từ",
+        "text": "towel"
+      },
+      "id": "fbfb6e53-b285-5192-9225-4a355389ad54",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:towel",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Tradition là danh từ, traditional là tính từ: traditional food, không nói tradition food."
+        },
+        "examples": [
+          {
+            "target": "Making banh chung together is a family tradition.",
+            "translation": {
+              "vi": "Cùng nhau gói bánh chưng là truyền thống của gia đình."
+            }
+          },
+          {
+            "target": "She wore a traditional ao dai to the wedding.",
+            "translation": {
+              "vi": "Cô ấy mặc áo dài truyền thống đi đám cưới."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "truyền thống (việc được truyền qua nhiều thế hệ) / thuộc về truyền thống"
+        },
+        "pronunciation_note": {
+          "vi": "Trọng âm ở âm thứ hai - tra-DI-tion."
+        }
+      },
+      "content_hash": "952064f65085671a6921237d51aaa5361bd73af90463f2d64a0cc814aa30d99f",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/trəˈdɪʃn/ · /trəˈdɪʃənl/",
+        "pos": "danh từ / tính từ",
+        "text": "tradition / traditional"
+      },
+      "id": "d9f083c5-b892-5dc2-9472-adc3ce3f73ce",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:tradition",
+      "language_code": "en",
+      "level_code": "b1",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -131701,6 +148441,48 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Unacceptable khá mạnh; trong lời nói trực tiếp, I'm afraid there's a problem… mềm mỏng hơn."
+        },
+        "examples": [
+          {
+            "target": "Waiting two hours for our room was unacceptable.",
+            "translation": {
+              "vi": "Chờ hai tiếng mới có phòng là không thể chấp nhận được."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "không thể chấp nhận được (dùng khi phàn nàn trang trọng)"
+        },
+        "pronunciation_note": {
+          "vi": "Trọng âm ở SEP - un-ac-CEP-ta-ble."
+        }
+      },
+      "content_hash": "e62641f8772799f8ad8f101f42650abdd59ac675bbb620413be2a32572447119",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/ˌʌnəkˈseptəbl/",
+        "pos": "tính từ",
+        "text": "unacceptable"
+      },
+      "id": "e88e8454-1dc5-52cb-89f5-cf121d8b54f0",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:unacceptable",
+      "language_code": "en",
+      "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Một từ uncle thay cho chú, bác, cậu, dượng của tiếng Việt. Uncle bắt đầu bằng nguyên âm nên nói an uncle."
         },
         "examples": [
@@ -131772,6 +148554,48 @@ select content_private.import_bundle($bundle${
       "skill_tags": [
         "grammar",
         "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Phủ định là I don't understand, không nói \"I'm not understanding\" trong giao tiếp hằng ngày."
+        },
+        "examples": [
+          {
+            "target": "Sorry, I don't understand. Can you say that again?",
+            "translation": {
+              "vi": "Xin lỗi, tôi không hiểu. Bạn nói lại được không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hiểu"
+        },
+        "pronunciation_note": {
+          "vi": "Nhấn âm cuối -STAND."
+        }
+      },
+      "content_hash": "2d0732336cb5f8e960dd3438c575fb3450eaf52952bb23fb744771f2961c6867",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˌʌndəˈstænd/ · US /ˌʌndɚˈstænd/",
+        "pos": "động từ",
+        "text": "understand"
+      },
+      "id": "4dd2f53c-5ed5-5eed-adeb-b01fa1325481",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:understand",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published"
@@ -131979,6 +148803,46 @@ select content_private.import_bundle($bundle${
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Sau with, for, to… dùng us, không dùng we."
+        },
+        "examples": [
+          {
+            "target": "Would you like to come with us?",
+            "translation": {
+              "vi": "Bạn có muốn đi cùng bọn mình không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chúng tôi, chúng mình (làm tân ngữ)"
+        }
+      },
+      "content_hash": "d3fee4a36361803090381c591638c51d20e05fa82b177e058c872b258b997534",
+      "difficulty": 1,
+      "front": {
+        "ipa": "/ʌs/",
+        "pos": "đại từ tân ngữ",
+        "text": "us"
+      },
+      "id": "d91b5f2a-8ce9-548c-84c0-d92a0b39e9c7",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:us",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
         "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
@@ -132328,6 +149192,45 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Có người hoặc vật đi sau thì phải có for - wait for you, không nói \"wait you\"."
+        },
+        "examples": [
+          {
+            "target": "I'm waiting for the bus.",
+            "translation": {
+              "vi": "Tôi đang đợi xe buýt."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chờ, đợi (ai / cái gì)"
+        }
+      },
+      "content_hash": "99431aaa6ead5646fc9cd63099ae94bf1b18a656c87222f09bcdd88fb2b8007f",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/ˈweɪt fə/",
+        "pos": "cụm động từ",
+        "text": "wait for"
+      },
+      "id": "1f171f46-8ad8-5cff-8bf5-20d5dfd0a907",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:wait-for",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Đi bộ đến đâu dùng walk to - walk to work, walk to school. Riêng nhà vẫn không có to - walk home."
         },
         "examples": [
@@ -132400,6 +149303,54 @@ select content_private.import_bundle($bundle${
       "key": "en:item:wallet",
       "language_code": "en",
       "level_code": "b1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Muốn làm gì thì dùng want to + động từ - I want to sleep, không nói \"I want sleep\"."
+        },
+        "examples": [
+          {
+            "target": "Do you want a coffee?",
+            "translation": {
+              "vi": "Bạn muốn uống cà phê không?"
+            }
+          },
+          {
+            "target": "I want to go home.",
+            "translation": {
+              "vi": "Tôi muốn về nhà."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "muốn"
+        },
+        "pronunciation_note": {
+          "vi": "Đọc /wɒnt/ có âm o, khác won't /wəʊnt/ (sẽ không)."
+        }
+      },
+      "content_hash": "8d64dc451ddfc31d5731d7e459bbb59318b0c131cffacacdec084899c545ab38",
+      "difficulty": 1,
+      "front": {
+        "ipa": "UK /wɒnt/ · US /wɑːnt/",
+        "pos": "động từ",
+        "text": "want"
+      },
+      "id": "03079f4d-12e6-5ba1-987b-358df7c74f50",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:want",
+      "language_code": "en",
+      "level_code": "a2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -132713,6 +149664,87 @@ select content_private.import_bundle($bundle${
       "key": "en:item:water",
       "language_code": "en",
       "level_code": "pre_a1",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Could làm lời đề nghị mềm và còn để ngỏ; \"We will give you…\" nghe như đã chốt. Tránh \"We can give you discount\" - thiếu a."
+        },
+        "examples": [
+          {
+            "target": "We could offer a 5% discount on orders over 1,000 units.",
+            "translation": {
+              "vi": "Chúng tôi có thể giảm 5% cho đơn hàng trên 1.000 sản phẩm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Chúng tôi có thể đề nghị… (đưa ra đề xuất mềm mỏng khi đàm phán)"
+        }
+      },
+      "content_hash": "ac615c1e18f9dca69e558eb5c485f4192ca0d8ee078f65ea1d23885f8b6cd8aa",
+      "difficulty": 3,
+      "front": {
+        "ipa": "UK /wiː kʊd ˈɒfə/ · US /wiː kʊd ˈɔːfɚ/",
+        "pos": "mẫu câu",
+        "text": "We could offer… / How about…?"
+      },
+      "id": "cd7772e9-8e40-5ae1-a2a4-60c2631a9725",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:we-could-offer",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Tiếng Việt có mặc, đội, đeo, còn tiếng Anh dùng chung wear - wear a hat, wear glasses."
+        },
+        "examples": [
+          {
+            "target": "She's wearing a red dress today.",
+            "translation": {
+              "vi": "Hôm nay cô ấy mặc váy đỏ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mặc, đội, đeo (quần áo, mũ, kính)"
+        },
+        "pronunciation_note": {
+          "vi": "Wear đọc giống where (/weə/), không đọc \"wia\"."
+        }
+      },
+      "content_hash": "4c493c1867ac5a0cfed49b67afe0209eedf44bc0a5693eef9688068fe4900a1d",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /weə/ · US /wer/",
+        "pos": "động từ",
+        "text": "wear"
+      },
+      "id": "dc8101de-05f3-5cad-aedf-8a369dd4f2b9",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:wear",
+      "language_code": "en",
+      "level_code": "a2",
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
@@ -133528,6 +150560,46 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Qua điện thoại không hỏi \"Who are you?\" vì nghe rất cộc. Dùng Who's calling? hoặc Who's speaking?"
+        },
+        "examples": [
+          {
+            "target": "A: Can I speak to Lan, please? B: Who's calling, please?",
+            "translation": {
+              "vi": "A: Cho tôi gặp Lan được không? B: Xin hỏi ai gọi đấy ạ?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Xin hỏi ai đang gọi ạ? / Ai gọi đấy ạ?"
+        }
+      },
+      "content_hash": "eafc6dab3e8e74dec1d767cec0d17ba29e0f7161989114c7677a07019395c1e1",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /huːz ˈkɔːlɪŋ/ · US /huːz ˈkɑːlɪŋ/",
+        "pos": "cụm giao tiếp (điện thoại)",
+        "text": "Who's calling, please?"
+      },
+      "id": "f17688a6-db29-582a-b5f5-6e6d0c1f841d",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:whos-calling",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Số nhiều là wives (f đổi thành v). Giới thiệu vợ mình thì dùng my wife, vợ của anh ấy là his wife."
         },
         "examples": [
@@ -133646,6 +150718,46 @@ select content_private.import_bundle($bundle${
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Will you use…? có thể nghe như lời nhờ hay yêu cầu; Will you be using…? chỉ hỏi kế hoạch nên lịch sự hơn, rất hay dùng nơi công sở."
+        },
+        "examples": [
+          {
+            "target": "Will you be using the meeting room this afternoon?",
+            "translation": {
+              "vi": "Chiều nay anh có dùng phòng họp không ạ?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hỏi nhẹ nhàng xem ai đó có định làm gì không (không ép buộc)"
+        }
+      },
+      "content_hash": "f5feb97f2b9e0a8e201ff49f79561c0f3cfd91b082c85ff46827bde447622ab3",
+      "difficulty": 3,
+      "front": {
+        "ipa": "/wɪl juː biː/",
+        "pos": "mẫu câu",
+        "text": "Will you be + V-ing…? (hỏi lịch sự về kế hoạch)"
+      },
+      "id": "df8a17a1-7b9d-5cf9-9de3-a7250330b895",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:will-you-be-ing",
+      "language_code": "en",
+      "level_code": "b2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "speaking",
         "grammar"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
@@ -133901,6 +151013,46 @@ select content_private.import_bundle($bundle${
       "audio_path": null,
       "back": {
         "confusion": {
+          "vi": "Dùng from, không dùng \"work at home\" khi nói làm việc từ xa cho công ty (work at home vẫn hiểu được nhưng ít tự nhiên hơn)."
+        },
+        "examples": [
+          {
+            "target": "I'm working from home today because my son is ill.",
+            "translation": {
+              "vi": "Hôm nay tôi làm việc ở nhà vì con trai tôi bị ốm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "làm việc ở nhà, làm việc từ xa"
+        }
+      },
+      "content_hash": "354db18ddd98610f52233156eaf3ebbee579ddf1137f155cd3bde58dc75ce68e",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /ˌwɜːk frəm ˈhəʊm/ · US /ˌwɝːk frəm ˈhoʊm/",
+        "pos": "cụm động từ",
+        "text": "work from home"
+      },
+      "id": "cbd5e462-94b7-5462-812e-072245c17b78",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:work-from-home",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
           "vi": "Overtime ở đây là trạng từ, không cần giới từ - work overtime, không nói \"work in overtime\" hay \"make OT\"."
         },
         "examples": [
@@ -134022,6 +151174,45 @@ select content_private.import_bundle($bundle${
       "reviewed_by": null,
       "skill_tags": [
         "listening",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Mời làm gì thì phải có to - Would you like to go…?, không nói \"Would you like go…?\"."
+        },
+        "examples": [
+          {
+            "target": "Would you like to have dinner with us on Saturday?",
+            "translation": {
+              "vi": "Thứ Bảy bạn có muốn ăn tối cùng bọn mình không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Bạn có muốn… không? (lời mời lịch sự)"
+        }
+      },
+      "content_hash": "2a0886da97c6f8b1c84c35373bf13fc4b9f52a1a35649ee7821dc7d9c53a0ab8",
+      "difficulty": 2,
+      "front": {
+        "ipa": "/wʊd juː ˈlaɪk tə/",
+        "pos": "cụm giao tiếp",
+        "text": "Would you like to + động từ…?"
+      },
+      "id": "db4c4b9a-e6ec-5c85-b625-25cabfc4ed55",
+      "is_demo": true,
+      "item_type": "phrase",
+      "key": "en:item:would-you-like-to",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
         "speaking"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
@@ -134194,6 +151385,46 @@ select content_private.import_bundle($bundle${
       "reviewed_at": null,
       "reviewed_by": null,
       "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "Yours không có dấu nháy - không viết \"your's\"."
+        },
+        "examples": [
+          {
+            "target": "Is this umbrella yours?",
+            "translation": {
+              "vi": "Cái ô này có phải của bạn không?"
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "của bạn (đứng một mình)"
+        }
+      },
+      "content_hash": "7860a6020bf8e56478dbb4e7ac771072bf54c97d299a64915d8a263c4e24f7cb",
+      "difficulty": 2,
+      "front": {
+        "ipa": "UK /jɔːz/ · US /jʊrz/",
+        "pos": "đại từ sở hữu",
+        "text": "yours"
+      },
+      "id": "d876a0e6-763a-5472-8ab1-c397a72b4835",
+      "is_demo": true,
+      "item_type": "vocab",
+      "key": "en:item:yours",
+      "language_code": "en",
+      "level_code": "a2",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skill_tags": [
+        "grammar",
         "vocabulary"
       ],
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
@@ -159233,6 +176464,102 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "17755c61-876c-58a4-bcff-e66cab11ec8d",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "4710f542-712b-5799-bd06-8dfb0356c0dc",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "58154675-7f54-53a4-8e66-14f7fac9db30",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5ec1d738-c503-563f-9ce6-9679339d7ec6",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6e7b3e77-c600-5b09-8f66-a26905f13276",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2f944599-4d52-5529-8ca0-fd036e4086bc",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "63c13bbe-2117-56e1-9324-ce9545d6ae5c",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "cf1a46a6-da00-57cf-8c8b-1df9e65f696b",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "49c72f52-668b-5ebe-951e-bc33a7a9d024",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ed8490f6-2627-5fb9-8890-72d23aa7e992",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7854c70e-7e2e-5427-b387-70f1c5e5ab79",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "78decf6c-9e1b-521f-b10c-7188f0ab3f47",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d7baa505-bb1f-59f2-b08c-71d75b0270e2",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "da2194dd-8952-559e-8ebc-1d04c41590eb",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "dc8101de-05f3-5cad-aedf-8a369dd4f2b9",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "5cd2b946-7549-5158-bb37-48f0525e7e5a",
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "position": 15,
+      "role": "reuse"
+    },
+    {
       "item_id": "a691a2ba-9eba-536d-a584-8f03634567fa",
       "lesson_id": "00bd7c63-4e59-594d-9958-d19f8a41886c",
       "position": 0,
@@ -159635,6 +176962,168 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "4b420987-31a8-554e-9bcb-ee870d142a5e",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3b1d886e-a26b-577f-97c6-a5c41450b8ec",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5d491010-f059-5e50-825c-573ccc126c7e",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d7baa505-bb1f-59f2-b08c-71d75b0270e2",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 3,
+      "role": "reuse"
+    },
+    {
+      "item_id": "3d6262c7-6de4-5f51-8dd7-4c58c5139211",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 4,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d667a936-efe5-56a9-9ba3-b59bdd4d5f3b",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 5,
+      "role": "reuse"
+    },
+    {
+      "item_id": "87b83a20-564a-57c6-813e-ce81054f7245",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 6,
+      "role": "reuse"
+    },
+    {
+      "item_id": "500a3964-28ec-51bf-9721-94f4acb68487",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 7,
+      "role": "reuse"
+    },
+    {
+      "item_id": "9ae92790-1b07-55ee-8b37-403831e07f95",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 8,
+      "role": "reuse"
+    },
+    {
+      "item_id": "c65577f3-5b71-5c9a-ae71-bfff8ef4fabe",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 9,
+      "role": "reuse"
+    },
+    {
+      "item_id": "17755c61-876c-58a4-bcff-e66cab11ec8d",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "6e7b3e77-c600-5b09-8f66-a26905f13276",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "4710f542-712b-5799-bd06-8dfb0356c0dc",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "58154675-7f54-53a4-8e66-14f7fac9db30",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "49c72f52-668b-5ebe-951e-bc33a7a9d024",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "7854c70e-7e2e-5427-b387-70f1c5e5ab79",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 15,
+      "role": "reuse"
+    },
+    {
+      "item_id": "13b59113-d58a-53c7-b057-836be17eab53",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 16,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f17688a6-db29-582a-b5f5-6e6d0c1f841d",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 17,
+      "role": "reuse"
+    },
+    {
+      "item_id": "52695488-fd1f-5ba7-9026-10dbdbd0686c",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 18,
+      "role": "reuse"
+    },
+    {
+      "item_id": "3f3297cc-91d6-54f2-97c0-e945770488ab",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 19,
+      "role": "reuse"
+    },
+    {
+      "item_id": "6a8d2429-0763-54a3-b146-80d514257530",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 20,
+      "role": "reuse"
+    },
+    {
+      "item_id": "dacb5d9f-0f31-5945-b30e-813e9c68527d",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 21,
+      "role": "reuse"
+    },
+    {
+      "item_id": "db4c4b9a-e6ec-5c85-b625-25cabfc4ed55",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 22,
+      "role": "reuse"
+    },
+    {
+      "item_id": "cea552c0-a39a-55c1-aa27-652cffff8a23",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 23,
+      "role": "reuse"
+    },
+    {
+      "item_id": "9292bade-6b91-5d53-939a-28af81437636",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 24,
+      "role": "reuse"
+    },
+    {
+      "item_id": "e07216f2-b289-54ac-92e2-fc63b522284c",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 25,
+      "role": "reuse"
+    },
+    {
+      "item_id": "756620de-9a78-5391-9af6-e995ed03616d",
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "position": 26,
+      "role": "reuse"
+    },
+    {
       "item_id": "b5a42416-12b4-5b9e-9364-88e3d71dba38",
       "lesson_id": "fe72583f-1f40-5f43-ad4f-81745021002f",
       "position": 0,
@@ -159995,6 +177484,78 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "388b57ca-61e5-5c7c-aefb-44607c58ca51",
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ef9f337b-a56c-5e0e-ae6a-ce5a65747803",
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8e9379d7-05e2-5021-a5f0-ab8033d101b2",
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9fc9fa2f-459a-585b-a6db-2cba2b561f72",
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "df8a17a1-7b9d-5cf9-9de3-a7250330b895",
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f0504f12-63b8-53dd-81d4-1812f3a0974c",
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e02db4ce-a1a0-5ac6-bb21-a66ae3f0ec89",
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ee2e8599-957f-5b47-bb25-359cfb0d612d",
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "95dbd4c1-e9a1-5a60-a6df-4dc22b43d4f5",
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d3b67f1f-ead6-514f-a3e6-0de4c160aace",
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "82191197-b881-5c93-82fb-629fd52b2a3c",
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "a2b1791a-3d7a-59b4-a932-84c9c6ffd2be",
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
       "item_id": "06b27616-2173-5f3f-8ffa-658821de6515",
       "lesson_id": "3448c87f-aa02-5142-80bd-4525e835cde9",
       "position": 0,
@@ -160219,6 +177780,72 @@ select content_private.import_bundle($bundle${
     {
       "item_id": "2aea3072-65fe-5848-aea5-8786e72f0fe1",
       "lesson_id": "6ba7acf5-89d0-54c4-8ada-34be07852966",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "7e8fc661-2152-5ffe-8d45-062f86cebe3a",
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "65472860-431f-5fe1-9630-26afea9ea6da",
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "007219d7-a48a-5a71-8078-a754f973ba17",
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "eee203a7-b0aa-5706-bbc1-afda0bd55a84",
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7daa685f-ca5b-5bf4-9768-26da28e117f5",
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "758b7a77-1253-5868-bb37-7a21ceca4ab8",
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b8233b65-a23c-5e67-b235-e44f1502b452",
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "936b7ffa-10a5-5bc2-b6e0-7bf89fdda48a",
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d06029b3-12dd-5b13-a6df-f26b5858623e",
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "position": 8,
+      "role": "reuse"
+    },
+    {
+      "item_id": "2ff024ab-c0fc-5bcd-8caa-12fc046692f2",
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ef9f337b-a56c-5e0e-ae6a-ce5a65747803",
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
       "position": 10,
       "role": "reuse"
     },
@@ -160757,6 +178384,114 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "500a3964-28ec-51bf-9721-94f4acb68487",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "03079f4d-12e6-5ba1-987b-358df7c74f50",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9ae92790-1b07-55ee-8b37-403831e07f95",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "152d2f93-748f-5840-8812-1a644cc1b65b",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "4dd2f53c-5ed5-5eed-adeb-b01fa1325481",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5f9b2a45-957c-51c8-8ada-3fdfabec840f",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c65577f3-5b71-5c9a-ae71-bfff8ef4fabe",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5fb50ad0-e163-5fdf-83ff-24ae8092202b",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1068c5c8-792c-5074-95a0-a861d8bedf8d",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d91b5f2a-8ce9-548c-84c0-d92a0b39e9c7",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "42696b31-7428-5446-9638-3973b4313910",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "812f359a-f551-55aa-a818-0f3a1bbac0cd",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "dd44d459-699f-57ef-bc9d-07467ee05beb",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 12,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d876a0e6-763a-5472-8ab1-c397a72b4835",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 13,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ff4c5fe2-b9e4-5da2-ade8-9fe9bc910225",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "b07fc292-7b63-54b3-b5b8-cf28a9b89f5b",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 15,
+      "role": "reuse"
+    },
+    {
+      "item_id": "11e28a79-91a6-5720-94b3-fabfddfea201",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 16,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d7baa505-bb1f-59f2-b08c-71d75b0270e2",
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "position": 17,
+      "role": "reuse"
+    },
+    {
       "item_id": "55d70839-6159-51da-9dfb-7576225aa1f9",
       "lesson_id": "af21856b-59a6-5a82-83bc-e3d33b30e965",
       "position": 0,
@@ -160838,6 +178573,114 @@ select content_private.import_bundle($bundle${
       "item_id": "d600748e-eae9-59eb-b6e0-37d088bd623f",
       "lesson_id": "af21856b-59a6-5a82-83bc-e3d33b30e965",
       "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "db4c4b9a-e6ec-5c85-b625-25cabfc4ed55",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "887f46e2-0fc5-54a4-8cbb-85fdb8d2afa1",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "cea552c0-a39a-55c1-aa27-652cffff8a23",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9292bade-6b91-5d53-939a-28af81437636",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "736ed832-5e39-5f9a-9e07-2bf7adc2478f",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ba58e1b6-24c0-5cfe-8cc9-614025406f9f",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "13b59113-d58a-53c7-b057-836be17eab53",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f17688a6-db29-582a-b5f5-6e6d0c1f841d",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "52695488-fd1f-5ba7-9026-10dbdbd0686c",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3f3297cc-91d6-54f2-97c0-e945770488ab",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6a8d2429-0763-54a3-b146-80d514257530",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "dacb5d9f-0f31-5945-b30e-813e9c68527d",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0b647e13-f0df-5d5d-b811-e29dd6690e0e",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "e07216f2-b289-54ac-92e2-fc63b522284c",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "8c4dc456-b1ec-54b2-90ce-5a7b76a5dd64",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "2d2a72bb-0e7c-550e-b214-f4a55cddb20d",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 15,
+      "role": "reuse"
+    },
+    {
+      "item_id": "c65577f3-5b71-5c9a-ae71-bfff8ef4fabe",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 16,
+      "role": "reuse"
+    },
+    {
+      "item_id": "756620de-9a78-5391-9af6-e995ed03616d",
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "position": 17,
       "role": "reuse"
     },
     {
@@ -160946,6 +178789,90 @@ select content_private.import_bundle($bundle${
       "item_id": "dee876ba-f279-56e8-9282-426578e7c5d4",
       "lesson_id": "269f9b92-640e-57ff-8515-64852c25123e",
       "position": 17,
+      "role": "reuse"
+    },
+    {
+      "item_id": "601885bd-23bc-52f1-bae0-90ee63e30deb",
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7b879cca-90fd-54cd-ac99-46564b14e88d",
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "01e0a16a-a976-5069-b301-911d32fe847f",
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2612f225-21d0-5686-a0ba-84f6a77c2f8f",
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a0e6feb6-d1cb-5f09-95b1-274b64845fda",
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3b7cb296-475d-538d-80bd-a5d6d6be3869",
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "744bbcb0-e6bb-5af6-9632-95a0f8f7b6c2",
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "59be10f4-6880-5d68-97c9-cef432482b24",
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "35b342f6-268f-5647-b22e-ed1ac69d7e46",
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7a05ee7f-45d3-52b2-ba2c-fdd09d6ae300",
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "127c1553-9710-550c-abee-b1e441a7c5a8",
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "75d10cf8-9d30-579c-be8f-aa5ccb981ae7",
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d93a1a1c-5cae-5f5d-a36b-b2d59543e252",
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d06029b3-12dd-5b13-a6df-f26b5858623e",
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "position": 13,
       "role": "reuse"
     },
     {
@@ -161270,6 +179197,90 @@ select content_private.import_bundle($bundle${
       "item_id": "3e34b167-a63e-5497-903f-8c8bee108936",
       "lesson_id": "685b2225-2e2d-525b-85c5-e3430dd11b47",
       "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "cd7772e9-8e40-5ae1-a2a4-60c2631a9725",
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b63c5048-bbba-5448-8a4a-b5cc1ffec630",
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "4b9957e6-2249-5ecf-acaa-ef66efad7831",
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1a290674-243f-5078-8b3a-0177e68650e8",
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a2ee3e87-b0da-5550-954a-47c0b64cd1af",
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c77ca3fc-717a-517c-ad5c-688fe7611168",
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "963181d6-860d-5fc2-90da-e10835498671",
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "eaadbf10-3c31-518b-b5ef-70c6198a3e88",
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "97422f83-7793-5eac-8fc4-5dd4e7f58b9a",
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c25ba899-f919-565f-9bab-5df0f89fec11",
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7fd3e162-d66b-5891-bca8-053c9ef94b51",
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "36427bb3-af94-542c-94e2-732250c41e42",
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bc2644a1-93ed-5dd3-a73e-e856e23f241d",
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "572c3082-b66a-5ed9-8eba-9f804d037bcf",
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "position": 13,
       "role": "reuse"
     },
     {
@@ -164099,6 +182110,522 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "d2f4858c-7f08-5045-ae59-9c895fda6009",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6706c02f-b2ae-56e7-9e1f-d9d669c61f1a",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bb4ef9a0-e19c-5642-b82e-678211fb2a66",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3217a6a3-9c25-5648-aacf-f59cff48b8a4",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "44a3f803-4f36-5a58-964f-e9547cdada7b",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f2ca8987-a1c9-5596-bbba-7a6db854235a",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1858be71-4080-5d7c-aceb-ba81d8a1f949",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "fbfb6e53-b285-5192-9225-4a355389ad54",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "90646f6a-78a8-5e94-8cc3-2ddc31413121",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "09813742-4b97-59fb-bf21-8faa940d9df3",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "cd33f4fd-e75e-5a76-92eb-6a63e1916d6e",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "e2f0d59a-ee52-51ac-83d6-111a027e2d79",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "e29380fc-a419-561d-a972-2f878d7667d4",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "cf657ada-6f05-5ba1-8de6-35bc7f95a7f9",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "0f16d4a3-63e9-58bb-ab53-0db2fdcb8719",
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d6c2090d-931b-56fb-8e15-67379db1ff52",
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f7ad0d6e-4fdb-5b4e-9fdb-778c4fbfc14d",
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6217067c-1e81-522b-a42b-23c2a384d401",
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "24d60ec9-2d1d-568a-a64b-f7494bfd3c48",
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "4a852f01-6b9a-590c-a146-5072f1288707",
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5ba249f5-59f1-59b0-89ea-78d29d064f60",
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f81e1e88-5e94-5edd-836a-4aede2af7dcb",
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6b60a4e9-14ec-5936-95b0-f3d556568fdc",
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ac093103-e304-5b7f-b29a-f13acfadd3db",
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "192ce789-5c8a-5617-bf9d-785ee514d8a3",
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0ee0805d-9bff-51fd-8a79-47dff594d82c",
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "7ffa8003-e5f3-5f8d-87be-2af63b6596a1",
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "fab41c61-f7e9-5c68-89a0-3aab2a7ad64c",
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "88177dc3-322b-5652-843a-132d9718b969",
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "0b058a4f-3b51-5ab1-99af-a7fb13ee1c6d",
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "60d17030-b4a1-5662-af6c-9b88759e986a",
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "01895283-0c54-5d0c-9a0a-4782b079930a",
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "769b8bb6-e145-5624-a2a1-5bcd81520e00",
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d53a661b-6769-573c-be2f-c960780b3598",
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d53102f3-9ad6-5f78-8a79-deda5465c902",
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "945bade0-de78-5cb0-8c3b-12920ab3af43",
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d06029b3-12dd-5b13-a6df-f26b5858623e",
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1465424c-3ed9-536c-9b7e-cd31332e78b9",
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "96f2ef6d-f9fe-5d07-a2fb-2c6d1304b740",
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7c845809-76d8-5955-8591-607ac653db02",
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "46050018-ea61-58b0-98ae-0c64c220f205",
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "557f4534-e9fd-52e7-a7bc-2442bdea29d1",
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "88177dc3-322b-5652-843a-132d9718b969",
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "b4b7deb7-0156-5c27-b817-3923311a003f",
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8e44b61d-8057-5a3a-a9d5-7948b4a46bac",
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d419b6d7-fa77-5e66-852e-a2b901a7ce7c",
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2c02ba51-3546-53c5-affc-355a6d7fe141",
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d9f083c5-b892-5dc2-9472-adc3ce3f73ce",
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7fa46aa3-dc64-5219-9554-b3c3fc9172ab",
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c4052471-c942-50eb-8b9a-eba614f3125a",
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "67a3ba0d-8a66-54c4-89d1-1cfad666b9ec",
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "fe6bd196-c6b1-56ac-8a78-9a25e2c94f0f",
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d1f5df94-cc9b-52d6-8666-9b3e578fdcf0",
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2f4012a4-5759-500a-baef-f205f026b379",
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5f9f7111-9135-5084-b4f3-c9c179a94e9d",
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "cd33f4fd-e75e-5a76-92eb-6a63e1916d6e",
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "96f2ef6d-f9fe-5d07-a2fb-2c6d1304b740",
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "100585e0-7350-5cc7-8b7f-ea3957b7c745",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e88e8454-1dc5-52cb-89f5-cf121d8b54f0",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0b058a4f-3b51-5ab1-99af-a7fb13ee1c6d",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 2,
+      "role": "reuse"
+    },
+    {
+      "item_id": "60d17030-b4a1-5662-af6c-9b88759e986a",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 3,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d53a661b-6769-573c-be2f-c960780b3598",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 4,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d53102f3-9ad6-5f78-8a79-deda5465c902",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 5,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d6c2090d-931b-56fb-8e15-67379db1ff52",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 6,
+      "role": "reuse"
+    },
+    {
+      "item_id": "4a852f01-6b9a-590c-a146-5072f1288707",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 7,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f81e1e88-5e94-5edd-836a-4aede2af7dcb",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 8,
+      "role": "reuse"
+    },
+    {
+      "item_id": "ac093103-e304-5b7f-b29a-f13acfadd3db",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 9,
+      "role": "reuse"
+    },
+    {
+      "item_id": "192ce789-5c8a-5617-bf9d-785ee514d8a3",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "b4b7deb7-0156-5c27-b817-3923311a003f",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d419b6d7-fa77-5e66-852e-a2b901a7ce7c",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "2c02ba51-3546-53c5-affc-355a6d7fe141",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "7fa46aa3-dc64-5219-9554-b3c3fc9172ab",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "c4052471-c942-50eb-8b9a-eba614f3125a",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 15,
+      "role": "reuse"
+    },
+    {
+      "item_id": "67a3ba0d-8a66-54c4-89d1-1cfad666b9ec",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 16,
+      "role": "reuse"
+    },
+    {
+      "item_id": "fe6bd196-c6b1-56ac-8a78-9a25e2c94f0f",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 17,
+      "role": "reuse"
+    },
+    {
+      "item_id": "2f4012a4-5759-500a-baef-f205f026b379",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 18,
+      "role": "reuse"
+    },
+    {
+      "item_id": "bb4ef9a0-e19c-5642-b82e-678211fb2a66",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 19,
+      "role": "reuse"
+    },
+    {
+      "item_id": "3217a6a3-9c25-5648-aacf-f59cff48b8a4",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 20,
+      "role": "reuse"
+    },
+    {
+      "item_id": "44a3f803-4f36-5a58-964f-e9547cdada7b",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 21,
+      "role": "reuse"
+    },
+    {
+      "item_id": "6706c02f-b2ae-56e7-9e1f-d9d669c61f1a",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 22,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f2ca8987-a1c9-5596-bbba-7a6db854235a",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 23,
+      "role": "reuse"
+    },
+    {
+      "item_id": "1858be71-4080-5d7c-aceb-ba81d8a1f949",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 24,
+      "role": "reuse"
+    },
+    {
+      "item_id": "6dff1384-de34-5bab-98fd-2936bd2e20d5",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 25,
+      "role": "reuse"
+    },
+    {
+      "item_id": "1bde66bf-a8ae-5556-b623-cc35adedceac",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 26,
+      "role": "reuse"
+    },
+    {
+      "item_id": "59cbc2af-23f0-5321-9341-8930a0a392af",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 27,
+      "role": "reuse"
+    },
+    {
+      "item_id": "625423e9-2dcf-536f-8384-6182cfce8156",
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "position": 28,
+      "role": "reuse"
+    },
+    {
       "item_id": "cae19da8-43c9-568f-82d1-5654255004f9",
       "lesson_id": "2a2f818f-e259-52e7-b81e-5b3ca5620b61",
       "position": 0,
@@ -164270,6 +182797,90 @@ select content_private.import_bundle($bundle${
       "item_id": "f32737df-0846-5758-b0db-cd313273a0a9",
       "lesson_id": "613b2c17-8f6a-59f4-9b00-7702ce53b0ac",
       "position": 15,
+      "role": "reuse"
+    },
+    {
+      "item_id": "d7baa505-bb1f-59f2-b08c-71d75b0270e2",
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c36d443e-d530-56ba-bf02-d933a3d5ef21",
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3d6262c7-6de4-5f51-8dd7-4c58c5139211",
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d667a936-efe5-56a9-9ba3-b59bdd4d5f3b",
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "87b83a20-564a-57c6-813e-ce81054f7245",
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d489195f-9419-55ca-9769-d3dcad6fb17d",
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "cbd5e462-94b7-5462-812e-072245c17b78",
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1f171f46-8ad8-5cff-8bf5-20d5dfd0a907",
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "44c69764-de98-5326-8fa2-cb3e0bc65f30",
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "dc8101de-05f3-5cad-aedf-8a369dd4f2b9",
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5cd2b946-7549-5158-bb37-48f0525e7e5a",
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f1d5325e-b973-545b-ac13-ace2a2982f8f",
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "03ad5fc2-3f8d-5cfb-a989-4a59b4243186",
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "756620de-9a78-5391-9af6-e995ed03616d",
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "position": 13,
       "role": "reuse"
     },
     {
@@ -164576,6 +183187,138 @@ select content_private.import_bundle($bundle${
       "item_id": "e72766cd-1213-56ec-9064-aac1755422ad",
       "lesson_id": "5df8b965-73fd-5b40-ba4d-27fc8007cbc5",
       "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "37a6652d-a9d1-570c-b306-4f510ec588e7",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7f6f1f2a-1b25-565d-ac3a-73be5c9a21ef",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "abd9114c-d624-5bdd-9166-9eef34c78b44",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7b879cca-90fd-54cd-ac99-46564b14e88d",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 3,
+      "role": "reuse"
+    },
+    {
+      "item_id": "59be10f4-6880-5d68-97c9-cef432482b24",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 4,
+      "role": "reuse"
+    },
+    {
+      "item_id": "7a05ee7f-45d3-52b2-ba2c-fdd09d6ae300",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 5,
+      "role": "reuse"
+    },
+    {
+      "item_id": "ef9f337b-a56c-5e0e-ae6a-ce5a65747803",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 6,
+      "role": "reuse"
+    },
+    {
+      "item_id": "388b57ca-61e5-5c7c-aefb-44607c58ca51",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 7,
+      "role": "reuse"
+    },
+    {
+      "item_id": "7e8fc661-2152-5ffe-8d45-062f86cebe3a",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 8,
+      "role": "reuse"
+    },
+    {
+      "item_id": "ee2e8599-957f-5b47-bb25-359cfb0d612d",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 9,
+      "role": "reuse"
+    },
+    {
+      "item_id": "f0504f12-63b8-53dd-81d4-1812f3a0974c",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 10,
+      "role": "reuse"
+    },
+    {
+      "item_id": "c77ca3fc-717a-517c-ad5c-688fe7611168",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 11,
+      "role": "reuse"
+    },
+    {
+      "item_id": "c25ba899-f919-565f-9bab-5df0f89fec11",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 12,
+      "role": "reuse"
+    },
+    {
+      "item_id": "eaadbf10-3c31-518b-b5ef-70c6198a3e88",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 13,
+      "role": "reuse"
+    },
+    {
+      "item_id": "758b7a77-1253-5868-bb37-7a21ceca4ab8",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 14,
+      "role": "reuse"
+    },
+    {
+      "item_id": "cd7772e9-8e40-5ae1-a2a4-60c2631a9725",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 15,
+      "role": "reuse"
+    },
+    {
+      "item_id": "b63c5048-bbba-5448-8a4a-b5cc1ffec630",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 16,
+      "role": "reuse"
+    },
+    {
+      "item_id": "4b9957e6-2249-5ecf-acaa-ef66efad7831",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 17,
+      "role": "reuse"
+    },
+    {
+      "item_id": "1a290674-243f-5078-8b3a-0177e68650e8",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 18,
+      "role": "reuse"
+    },
+    {
+      "item_id": "a2ee3e87-b0da-5550-954a-47c0b64cd1af",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 19,
+      "role": "reuse"
+    },
+    {
+      "item_id": "936b7ffa-10a5-5bc2-b6e0-7bf89fdda48a",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 20,
+      "role": "reuse"
+    },
+    {
+      "item_id": "75d10cf8-9d30-579c-be8f-aa5ccb981ae7",
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "position": 21,
       "role": "reuse"
     },
     {
@@ -170859,6 +189602,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "7da8c9ba-117b-5a0b-b237-202f01744cb8"
     },
     {
+      "lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "prerequisite_lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43"
+    },
+    {
       "lesson_id": "00bd7c63-4e59-594d-9958-d19f8a41886c",
       "prerequisite_lesson_id": "6ba7acf5-89d0-54c4-8ada-34be07852966"
     },
@@ -170879,6 +189626,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "54b872e4-45f3-5014-943b-185d596116d7"
     },
     {
+      "lesson_id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "prerequisite_lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27"
+    },
+    {
       "lesson_id": "fe72583f-1f40-5f43-ad4f-81745021002f",
       "prerequisite_lesson_id": "00bd7c63-4e59-594d-9958-d19f8a41886c"
     },
@@ -170895,6 +189646,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "4f5124b7-46af-5f68-9ebc-bc8268d9d98d"
     },
     {
+      "lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "prerequisite_lesson_id": "c718f105-9063-52b4-8717-5efe9ef694af"
+    },
+    {
       "lesson_id": "3448c87f-aa02-5142-80bd-4525e835cde9",
       "prerequisite_lesson_id": "03f6e9a3-843d-5e38-b392-a694e1b8bcfc"
     },
@@ -170905,6 +189660,10 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "6ba7acf5-89d0-54c4-8ada-34be07852966",
       "prerequisite_lesson_id": "3fe754e1-f6ed-506a-a973-20c6af56a653"
+    },
+    {
+      "lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "prerequisite_lesson_id": "dd34ce08-80f9-5446-8b07-f7e6d984591f"
     },
     {
       "lesson_id": "87cf33ff-cd90-572e-8c8b-34a96d311dc0",
@@ -170923,12 +189682,24 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "69dc577d-a377-5093-af0f-9c23deb82650"
     },
     {
+      "lesson_id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "prerequisite_lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039"
+    },
+    {
       "lesson_id": "af21856b-59a6-5a82-83bc-e3d33b30e965",
       "prerequisite_lesson_id": "685b2225-2e2d-525b-85c5-e3430dd11b47"
     },
     {
+      "lesson_id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "prerequisite_lesson_id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c"
+    },
+    {
       "lesson_id": "269f9b92-640e-57ff-8515-64852c25123e",
       "prerequisite_lesson_id": "310a9aa3-0019-5b51-a25b-e524ec8e9d2f"
+    },
+    {
+      "lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "prerequisite_lesson_id": "e76b3590-3e62-598a-9c5e-9c157111e2e9"
     },
     {
       "lesson_id": "03f6e9a3-843d-5e38-b392-a694e1b8bcfc",
@@ -170945,6 +189716,10 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "685b2225-2e2d-525b-85c5-e3430dd11b47",
       "prerequisite_lesson_id": "7e3c0da8-8881-5392-ada4-9f88a01adfd0"
+    },
+    {
+      "lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "prerequisite_lesson_id": "5b033a19-44dc-576d-b4a5-919b437862cb"
     },
     {
       "lesson_id": "b88324c7-41de-5713-9af3-bbea4446798e",
@@ -171071,8 +189846,32 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "f689a0b7-5f76-5d60-939b-f735c1a1a188"
     },
     {
+      "lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "prerequisite_lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb"
+    },
+    {
+      "lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "prerequisite_lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a"
+    },
+    {
+      "lesson_id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "prerequisite_lesson_id": "ac312ecf-6c3c-5715-8033-d71fa53e6db5"
+    },
+    {
+      "lesson_id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "prerequisite_lesson_id": "59835c7d-1a55-53f4-a5f7-204f192d19f5"
+    },
+    {
+      "lesson_id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "prerequisite_lesson_id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273"
+    },
+    {
       "lesson_id": "613b2c17-8f6a-59f4-9b00-7702ce53b0ac",
       "prerequisite_lesson_id": "0110ccac-40e8-5149-af0f-28e41c844378"
+    },
+    {
+      "lesson_id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "prerequisite_lesson_id": "87cf33ff-cd90-572e-8c8b-34a96d311dc0"
     },
     {
       "lesson_id": "789b1c12-82aa-5b99-ba2d-69ff973c373b",
@@ -171089,6 +189888,10 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "5df8b965-73fd-5b40-ba4d-27fc8007cbc5",
       "prerequisite_lesson_id": "1e3a5823-b1eb-5721-9f58-38409f877e9a"
+    },
+    {
+      "lesson_id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "prerequisite_lesson_id": "2e9159de-2c9b-565f-93b4-4ee757751b64"
     },
     {
       "lesson_id": "163008a7-b165-51c4-bbc3-44bfff43cf54",
@@ -172598,6 +191401,163 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn tả được một bức ảnh trong 4-5 câu - kiểu bài nói thường gặp ở các kỳ thi A2 - hoặc kể cho bạn bè nghe về tấm ảnh trên điện thoại."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Bắt đầu bằng câu tổng quát - In the picture, I can see… / In this photo, a family is having a picnic. Rồi đi từng phần ảnh - on the left, on the right, in the middle, in the background (phía sau), in the foreground (phía trước)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Người trong ảnh đang làm gì thì dùng hiện tại tiếp diễn - A man is reading. Two children are playing. Muốn giới thiệu người mới, dùng There's / There are + người + V-ing - There's a woman holding a baby."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Người Việt hay dịch \"Trong ảnh có…\" thành \"In the picture has…\" - sai. Tiếng Anh dùng there is / there are hoặc I can see - In the picture, there are two dogs."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Giới từ đi cố định - in the picture, in the middle, in the background / foreground, on the left / right, at the top / bottom. Nếu không chắc, dùng maybe hoặc I think - I think they're friends. Có thể nói thêm cảm xúc - They look happy (bài ôn tập sẽ luyện kỹ hơn)."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Câu đầu tổng quát, rồi đi vào từng phần ảnh. Mỗi hành động dùng is + V-ing."
+          },
+          "target": "In this picture, a family is having a picnic in a park. On the left, the father is sitting on the grass. He's holding a sandwich.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Trong bức ảnh này, một gia đình đang đi dã ngoại trong công viên. Bên trái, người bố đang ngồi trên cỏ. Anh ấy đang cầm một chiếc bánh kẹp."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "There's + người + V-ing - không thêm is trước smiling."
+          },
+          "target": "In the middle, there's a little girl smiling at the camera. On the right, the mother is carrying a big basket.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Ở giữa có một cô bé đang mỉm cười nhìn vào máy ảnh. Bên phải, người mẹ đang xách một giỏ to."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "In the background (phía sau) và at the top (phía trên) - nhớ đúng giới từ."
+          },
+          "target": "In the background, there are some trees and a lake. At the top of the picture, you can see a blue sky.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Phía sau có vài cái cây và một hồ nước. Ở phía trên bức ảnh là bầu trời xanh."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Chatting gấp đôi t. I think giúp bạn đoán điều không chắc."
+          },
+          "target": "Two old women are chatting in the foreground. I think they're friends.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Phía trước, hai bà cụ đang trò chuyện. Tôi nghĩ họ là bạn bè."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "\"Có\" trong \"trong ảnh có\" là there is / there are, không phải has."
+          },
+          "right": "In the picture, there's a man and a dog. / In the picture, I can see a man and a dog.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "In the picture has a man and a dog."
+        },
+        {
+          "note": {
+            "vi": "Chỉ cần một is. Dùng There's a man sitting… hoặc A man is sitting…, không ghép cả hai."
+          },
+          "right": "There's a man sitting on the bench. / A man is sitting on the bench.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "There is a man is sitting on the bench."
+        },
+        {
+          "note": {
+            "vi": "Background và foreground đi với in. Left và right mới đi với on."
+          },
+          "right": "In the background, there are mountains.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "On the background, there are mountains."
+        },
+        {
+          "points": [
+            {
+              "vi": "Mở đầu - In the picture / In this photo, I can see…"
+            },
+            {
+              "vi": "Vị trí - on the left / right · in the middle · in the background / foreground · at the top / bottom."
+            },
+            {
+              "vi": "Hành động - A woman is holding… · There are two boys playing…"
+            },
+            {
+              "vi": "Động từ - smile, hold, carry, look at, chat, sit, wear."
+            },
+            {
+              "vi": "Không nói \"In the picture has…\" - dùng there is / there are."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "6a3e2c47132eba40f904c21118cafc06500079f392992438bb05c416683442f4",
+      "estimated_minutes": 15,
+      "id": "5645ca89-ad5b-5f2a-b9ae-c2e82c07f43c",
+      "is_demo": true,
+      "key": "en:lesson:describe-a-photo",
+      "language_code": "en",
+      "level_code": "a2",
+      "objectives": [
+        {
+          "vi": "Nói vị trí trong ảnh - on the left / right, in the middle, in the background / foreground, at the top / bottom."
+        },
+        {
+          "vi": "Tả người trong ảnh đang làm gì bằng hiện tại tiếp diễn - A man is holding…, There's a woman sitting…"
+        },
+        {
+          "vi": "Dùng các động từ hay gặp khi tả ảnh - smile, hold, carry, look at, chat."
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "speaking",
+        "vocabulary",
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "In the picture… - tả một bức ảnh"
+      },
+      "unit_id": "46915d59-f675-5046-8b0e-2064329ff90c"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Sau bài này, bạn nói được người thân của mình trông thế nào và tính cách ra sao - \"Bố tôi cao và vui tính\", \"Cô ấy là một giáo viên tốt bụng\"."
           },
           "type": "objective"
@@ -173409,6 +192369,164 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn tự tin gọi điện cho đối tác để hẹn gặp - từ lúc hỏi gặp người, để lại lời nhắn đến lúc chốt giờ - và tả được một bức ảnh trong 5-6 câu."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Phần 1 là cuộc gọi của Lan đến công ty Green Design. Hãy để ý các câu cố định - Can I speak to…?, Who's calling?, This is…, Hold on, Can I take a message?, I'll call you back - và cách hai người mời, từ chối, chốt lịch."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Hai câu mới để chốt hẹn: Is ten o'clock OK for you? (Mười giờ có tiện cho bạn không?) và See you then! (Hẹn gặp lúc đó nhé!). Then ở đây là \"lúc đó\", không phải \"sau đó\"."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Phần 2 là đoạn tả ảnh một văn phòng. Ngoài vị trí và hiện tại tiếp diễn, bạn học thêm look + tính từ để đoán cảm xúc - They look busy, she looks happy. Không nói \"look like happy\"."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Cả unit xoay quanh một ý: tiếng Anh tách rõ \"lúc này\" (am / is / are + V-ing) và \"thường ngày\" (hiện tại đơn), trừ nhóm động từ trạng thái (know, want, like, need, understand) luôn ở hiện tại đơn. Khi từ chối lời mời, lý do thường là một lịch hẹn - I'm visiting a customer on Tuesday - chính là hiện tại tiếp diễn chỉ tương lai."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Hội thoại phần 1: lễ tân dùng is talking vì việc đang diễn ra; sau ask và call là him, me."
+          },
+          "target": "Receptionist: Good morning, Green Design. Lan: Hello, can I speak to Mr Tom Hill, please? Receptionist: Who's calling, please? Lan: This is Lan Nguyen from VietPrint. Receptionist: Hold on, please… I'm sorry, he's talking to a client at the moment. Can I take a message? Lan: Yes, please. Can you ask him to call me back?",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Lễ tân: Chào buổi sáng, Green Design xin nghe. Lan: Chào chị, cho tôi gặp ông Tom Hill được không ạ? Lễ tân: Xin hỏi ai gọi đấy ạ? Lan: Tôi là Lan Nguyễn ở công ty VietPrint. Lễ tân: Chị chờ chút nhé… Xin lỗi, ông ấy đang tiếp khách. Chị có muốn để lại lời nhắn không? Lan: Vâng. Nhờ chị bảo ông ấy gọi lại cho tôi."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Hội thoại phần 2: I'm visiting (lịch hẹn đã định), I know (động từ trạng thái, không -ing), chốt hẹn bằng Is… OK for you? và See you then."
+          },
+          "target": "Tom: Hi Lan, this is Tom Hill. Sorry about that. Would you like to meet next week to talk about the new brochure? Lan: I'd love to. Are you free on Tuesday? Tom: I'm afraid I can't on Tuesday. I'm visiting a customer in Bien Hoa. What about Wednesday? Lan: Wednesday's fine. Is ten o'clock OK for you? Tom: Perfect. I know your office - it's near the river, right? See you then!",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Tom: Chào Lan, tôi là Tom Hill đây. Xin lỗi chuyện lúc nãy nhé. Tuần sau chị có muốn gặp nhau để bàn về cuốn brochure mới không? Lan: Rất sẵn lòng. Thứ Ba anh có rảnh không? Tom: Tiếc là thứ Ba tôi không được. Tôi đi gặp một khách hàng ở Biên Hoà. Thứ Tư thì sao? Lan: Thứ Tư được ạ. Mười giờ có tiện cho anh không? Tom: Tuyệt. Tôi biết văn phòng chị - gần bờ sông, đúng không? Hẹn gặp chị lúc đó!"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Bài tả ảnh phần 1: câu mở đầu tổng quát, rồi in the middle, on the left với is / are + V-ing."
+          },
+          "target": "In this photo, I can see a busy office. In the middle, there's a young woman sitting at a desk. She's talking on the phone and writing something. On the left, two men are looking at a computer. One of them is holding a cup of coffee.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Trong bức ảnh này, tôi thấy một văn phòng bận rộn. Ở giữa có một cô gái trẻ đang ngồi ở bàn làm việc. Cô ấy đang nói chuyện điện thoại và viết gì đó. Bên trái, hai người đàn ông đang nhìn vào máy tính. Một người đang cầm cốc cà phê."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Bài tả ảnh phần 2: look + tính từ (looks busy, look happy) và I think để đoán."
+          },
+          "target": "In the background, there's a big window, and it's raining outside. Everyone looks busy, but they look happy. I think they're working on an important project.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Phía sau có một cửa sổ lớn, và bên ngoài trời đang mưa. Ai cũng trông bận rộn nhưng họ có vẻ vui. Tôi nghĩ họ đang làm một dự án quan trọng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Người được hỏi trả lời Speaking hoặc This is…, không trả lời \"Yes, I am\"."
+          },
+          "right": "A: Can I speak to Mr Hill? B: Speaking. / This is Tom Hill.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "A: Can I speak with Mr Hill? B: Yes, I am."
+        },
+        {
+          "note": {
+            "vi": "Know không chia -ing; sau would like phải có to."
+          },
+          "right": "I know your office. Would you like to meet on Wednesday?",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I'm knowing your office. Would you like meet on Wednesday?"
+        },
+        {
+          "note": {
+            "vi": "Look + tính từ (không có like); có is thì động từ phải thêm -ing."
+          },
+          "right": "They look happy, and the woman is talking on the phone.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "They look like happy, and the woman is talk on the phone."
+        },
+        {
+          "points": [
+            {
+              "vi": "Gọi điện - Can I speak to…? · Who's calling? · This is… · Hold on · Can I take a message? · I'll call you back."
+            },
+            {
+              "vi": "Mời và chốt hẹn - Would you like to…? · I'd love to · I'm afraid I can't · Is ten OK for you? · See you then!"
+            },
+            {
+              "vi": "Lúc này / tạm thời - am / is / are + V-ing; thói quen - hiện tại đơn."
+            },
+            {
+              "vi": "Không -ing - know, want, like, need, understand."
+            },
+            {
+              "vi": "Tả ảnh - In the picture… · on the left · in the middle · in the background · They look happy."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "b7247357f8aa72989dde127bac90ae9a89c0c87400c2714d78b13ff32fb954b0",
+      "estimated_minutes": 18,
+      "id": "d58b47e1-8bbb-5703-9d0a-9e7091fd9086",
+      "is_demo": true,
+      "key": "en:lesson:everyday-now-review",
+      "language_code": "en",
+      "level_code": "a2",
+      "objectives": [
+        {
+          "vi": "Theo dõi trọn một cuộc gọi công việc - hỏi gặp, để lại lời nhắn, gọi lại và chốt lịch hẹn."
+        },
+        {
+          "vi": "Tả một bức ảnh bằng vị trí và hiện tại tiếp diễn, thêm cảm xúc bằng look + tính từ."
+        },
+        {
+          "vi": "Ôn lại động từ trạng thái, đại từ tân ngữ và lời mời, lời từ chối."
+        }
+      ],
+      "order_index": 5,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "listening",
+        "speaking",
+        "reading",
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Ôn tập - Gọi điện hẹn gặp và tả một bức ảnh văn phòng"
+      },
+      "unit_id": "46915d59-f675-5046-8b0e-2064329ff90c"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Sau bài này, bạn giới thiệu được gia đình mình trong 4–5 câu - mỗi người là ai, trông thế nào, tính cách ra sao - và hiểu khi người khác kể về gia đình họ."
           },
           "type": "objective"
@@ -173996,6 +193114,163 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn báo cáo được tiến độ một dự án như người đi làm thật - \"Giờ này tuần sau tôi đang thuyết trình\", \"Trước thứ Sáu chúng ta sẽ làm xong\" - và hiểu khi nào cần will be + V-ing, khi nào cần will have + V3."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Will be + V-ing (tương lai tiếp diễn) tả một việc đang diễn ra dở dang tại một thời điểm tương lai: This time next week, I'll be presenting. Tiếng Việt nói \"giờ này tuần sau tôi đang thuyết trình\" - chữ \"đang\" chính là be + V-ing."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Will have + V3 (tương lai hoàn thành) tả việc đã xong trước một mốc tương lai: By Friday, we'll have finished. Tiếng Việt dùng \"sẽ xong\", \"sẽ… rồi\"; tiếng Anh bắt buộc have + V3."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "By + mốc thời gian nghĩa là \"chậm nhất là\", rất hay đi với will have + V3. Đừng nhầm với until (kéo dài đến): I'll be working until six, nhưng I'll have finished by six."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Will be + V-ing còn dùng để hỏi kế hoạch một cách lịch sự: Will you be using the room? nghe nhẹ hơn Will you use…?, vì người hỏi không ép ai làm gì. Với will have + V3, bạn có thể đếm thời lượng đến một mốc: By June, I'll have worked here for five years. Sau mệnh đề by the time + hiện tại đơn, vế chính cũng thường dùng will have + V3: By the time you arrive, we'll have started."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Một thời điểm cụ thể (this time next week) + việc đang diễn ra → will be + V-ing."
+          },
+          "target": "This time next week, I'll be presenting the new app to our stakeholders.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Giờ này tuần sau, tôi đang trình bày ứng dụng mới trước các bên liên quan."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Việc xong trước mốc (by Friday) → will have + V3 (fixed)."
+          },
+          "target": "Don't worry - we'll have fixed all the bugs by Friday.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Đừng lo - trước thứ Sáu chúng tôi sẽ sửa xong hết lỗi."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Behind schedule (chậm tiến độ) và on track (đúng hướng để đạt mục tiêu) không mâu thuẫn - chậm một chút nhưng vẫn kịp đích."
+          },
+          "target": "We're slightly behind schedule, but we're still on track to launch the product in May.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Chúng ta đang hơi chậm tiến độ, nhưng vẫn kịp để ra mắt sản phẩm vào tháng Năm."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Hỏi kế hoạch một cách lịch sự bằng Will you be + V-ing."
+          },
+          "target": "Will you be joining the call with the client tomorrow?",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Ngày mai anh có tham gia cuộc gọi với khách hàng không?"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Sau will have luôn là V3 (finished). Tiếng Việt không chia động từ nên người Việt hay để nguyên mẫu - hãy kiểm tra đuôi -ed hoặc dạng V3 bất quy tắc."
+          },
+          "right": "By Friday, I will have finished the report.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "By Friday, I will have finish the report."
+        },
+        {
+          "note": {
+            "vi": "Thiếu be. \"Sẽ đang\" phải đủ will + be + V-ing."
+          },
+          "right": "This time tomorrow, I will be presenting to the board.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "This time tomorrow, I will presenting to the board."
+        },
+        {
+          "note": {
+            "vi": "\"Chậm nhất là thứ Sáu\" dùng by. Until chỉ dùng cho việc kéo dài liên tục đến mốc (I'll be here until Friday)."
+          },
+          "right": "We must finish by Friday.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "We must finish until Friday."
+        },
+        {
+          "points": [
+            {
+              "vi": "Will be + V-ing: sẽ đang làm vào một thời điểm tương lai (This time next week, I'll be flying)."
+            },
+            {
+              "vi": "Will have + V3: sẽ xong trước một mốc (By Friday, we'll have finished)."
+            },
+            {
+              "vi": "By + mốc = chậm nhất là; until + mốc = kéo dài đến."
+            },
+            {
+              "vi": "Will you be + V-ing? là cách hỏi kế hoạch lịch sự."
+            },
+            {
+              "vi": "Từ vựng tiến độ: meet / miss a deadline, behind / ahead of schedule, on track, launch a product, stakeholder."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "652d04bb0dfdf161086e633c1c90a545023cea20db2d87c6e3623a4b3f7888da",
+      "estimated_minutes": 20,
+      "id": "dd34ce08-80f9-5446-8b07-f7e6d984591f",
+      "is_demo": true,
+      "key": "en:lesson:future-continuous-perfect",
+      "language_code": "en",
+      "level_code": "b2",
+      "objectives": [
+        {
+          "vi": "Nói việc sẽ đang diễn ra ở một thời điểm tương lai bằng will be + V-ing."
+        },
+        {
+          "vi": "Nói việc sẽ đã xong trước một mốc bằng will have + V3 và by + thời gian."
+        },
+        {
+          "vi": "Báo cáo tiến độ dự án - meet a deadline, behind schedule, on track, launch a product."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Giờ này tuần sau… - kế hoạch và tiến độ dự án"
+      },
+      "unit_id": "afc5e81a-6a68-575b-8e4d-5b874eff5a1b"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Sau bài này, bạn chọn đúng giữa V-ing và to V khi kể về các mối quan hệ - \"Tôi rất ghét bị phớt lờ\", \"Anh ấy hứa sẽ gọi\" - và hiểu vì sao \"stopped smoking\" và \"stopped to smoke\" mang nghĩa trái ngược nhau."
           },
           "type": "objective"
@@ -174465,6 +193740,160 @@ select content_private.import_bundle($bundle${
         "vi": "Tôi có hai chị gái"
       },
       "unit_id": "d2e6541f-c363-59d7-99cc-ff0a407eece4"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn nói đúng những câu như \"Tôi đi cắt tóc\", \"Công ty thuê người sơn lại văn phòng\", \"Tôi sẽ bảo trợ lý gửi anh\" - và bàn chuyện chi phí, nhà cung cấp, ngân sách ở công sở."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Khi bạn trả tiền hoặc nhờ người khác làm, tiếng Anh dùng have + vật + V3: I had my hair cut (tôi đi cắt tóc). Tiếng Việt chỉ nói \"tôi cắt tóc\", nhưng I cut my hair nghĩa là tự tay cắt."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Get + vật + V3 cùng nghĩa nhưng thân mật hơn, hay dùng khi nói: I need to get my laptop repaired. Thì của câu nằm ở have / get: I'm having…, I had…, I'll get…"
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Khi nêu rõ người làm: have + người + V nguyên mẫu (I'll have my assistant send it), hoặc get + người + to V (I'll get my assistant to send it). Hai mẫu này khác nhau đúng ở chữ to."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Cùng mẫu have + vật + V3 còn dùng cho sự cố không mong muốn: She had her bag stolen (cô ấy bị trộm túi) - ở đây không ai nhờ ai cả. Trong kinh doanh, có những cụm hay đi với cấu trúc này: have the documents translated, get the brochures printed, have the contract checked by a lawyer. Muốn nói người làm sau V3, dùng by: We had the website redesigned by an agency."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Having + vật (the brochures) + V3 (printed); người làm thêm sau by."
+          },
+          "target": "We're having the brochures printed by a local supplier to cut costs.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Chúng tôi thuê một nhà cung cấp địa phương in tờ rơi để cắt giảm chi phí."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Have the contract checked - mình không tự kiểm tra, mà nhờ luật sư."
+          },
+          "target": "Before we sign, let's get a quote and have the contract checked by our lawyer.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Trước khi ký, mình xin báo giá và nhờ luật sư kiểm tra hợp đồng đã."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Get + người + to V (to set up); have + người + V (send)."
+          },
+          "target": "I'll get the IT team to set up your laptop, and I'll have Mai send you the login details.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Tôi sẽ nhờ nhóm IT cài đặt máy tính cho bạn, và bảo Mai gửi bạn thông tin đăng nhập."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Make a profit (có lãi), within budget (không vượt ngân sách)."
+          },
+          "target": "The company outsourced its delivery service last year and made a profit for the first time, all within budget.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Năm ngoái công ty thuê ngoài dịch vụ giao hàng và lần đầu tiên có lãi, mà vẫn trong phạm vi ngân sách."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "I cut my hair là tự tay cắt. Đi tiệm (người khác cắt) phải dùng had my hair cut."
+          },
+          "right": "I had my hair cut yesterday.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I cut my hair yesterday. (khi đi tiệm cắt)"
+        },
+        {
+          "note": {
+            "vi": "Đặt vật trước V3. We had repaired the printer là thì quá khứ hoàn thành - nghĩa là tự mình đã sửa."
+          },
+          "right": "We had the printer repaired.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "We had repaired the printer."
+        },
+        {
+          "note": {
+            "vi": "Get + người + to V; chỉ have + người mới đi với V nguyên mẫu (have my assistant send)."
+          },
+          "right": "I'll get my assistant to send you the file.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I'll get my assistant send you the file."
+        },
+        {
+          "points": [
+            {
+              "vi": "Have / get + vật + V3: nhờ, thuê người khác làm (I had my hair cut)."
+            },
+            {
+              "vi": "Have + người + V; get + người + to V."
+            },
+            {
+              "vi": "Have + vật + V3 còn có nghĩa \"bị\" (had my bag stolen)."
+            },
+            {
+              "vi": "Từ vựng: outsource, supplier, get a quote, cut costs, budget (within / over budget), make a profit / a loss."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "9575942617daf513f44d13f171c801ace6ccbdcd05038abcfc038aa93f9bd74d",
+      "estimated_minutes": 20,
+      "id": "e76b3590-3e62-598a-9c5e-9c157111e2e9",
+      "is_demo": true,
+      "key": "en:lesson:have-something-done",
+      "language_code": "en",
+      "level_code": "b2",
+      "objectives": [
+        {
+          "vi": "Nói việc mình thuê, nhờ người khác làm bằng have / get + vật + V3."
+        },
+        {
+          "vi": "Phân biệt have someone do và get someone to do."
+        },
+        {
+          "vi": "Dùng từ vựng chi phí và nhà cung cấp - outsource, supplier, get a quote, cut costs, budget, profit / loss."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Nhờ người khác làm - have / get something done"
+      },
+      "unit_id": "afc5e81a-6a68-575b-8e4d-5b874eff5a1b"
     },
     {
       "body": [
@@ -175515,6 +194944,162 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn tránh được ba lỗi rất \"Việt\" - \"I'm knowing\", \"I love he\" và \"It's mine book\" - và nói tự nhiên về điều mình muốn, mình biết, cũng như đồ vật là của ai."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Một số động từ chỉ trạng thái trong đầu hay trong lòng, không phải hành động - want, know, like, love, need, understand. Chúng hầu như không chia -ing. Tiếng Việt nói \"tôi đang muốn\", nhưng tiếng Anh vẫn là I want, kể cả có right now."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Tiếng Việt dùng \"anh ấy\" ở đâu cũng được, còn tiếng Anh đổi dạng khi đứng sau động từ hoặc giới từ - I → me, he → him, she → her, we → us, they → them. Ví dụ He knows me. I know him."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "\"Của tôi\" có hai dạng. Có danh từ đi sau thì dùng my, your, his, her (my book). Đứng một mình thì dùng mine, yours, his, hers, ours, theirs (The book is mine)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Think có hai nghĩa - I think it's nice (ý kiến, không -ing) và I'm thinking about the trip (đang suy nghĩ, có -ing). Like / love dùng -ing ở chỗ khác - I like swimming (thích việc bơi), nhưng không nói I'm liking. Lưu ý his giống nhau ở cả hai dạng (his bag / It's his), còn her đổi thành hers."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Know không chia -ing; sau know dùng him, không dùng he."
+          },
+          "target": "A: Do you know that man? B: Yes, I know him. He's my neighbour.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "A: Bạn có biết người đàn ông kia không? B: Có, mình quen anh ấy. Anh ấy là hàng xóm của mình."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Dù có right now và tiếng Việt có \"đang\", want vẫn ở hiện tại đơn."
+          },
+          "target": "I'm hungry. I want something to eat right now.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Mình đói. Giờ mình đang muốn ăn gì đó."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Yours, mine đứng một mình; I think dùng để nêu ý kiến nên không chia -ing."
+          },
+          "target": "A: Whose jacket is this? Is it yours? B: No, it isn't mine. I think it's Lan's.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "A: Áo khoác này của ai? Của bạn à? B: Không phải của mình. Mình nghĩ là của Lan."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Them thay cho our grandparents, đứng sau động từ visit."
+          },
+          "target": "Our grandparents live far away, so we visit them every summer.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Ông bà chúng tôi sống xa, nên mùa hè nào chúng tôi cũng về thăm ông bà."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Know là động từ trạng thái nên không chia -ing, dù tiếng Việt có \"đang biết\"."
+          },
+          "right": "I know the answer.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I'm knowing the answer."
+        },
+        {
+          "note": {
+            "vi": "Sau động từ phải dùng đại từ tân ngữ - him, không dùng he."
+          },
+          "right": "She loves him very much.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "She loves he very much."
+        },
+        {
+          "note": {
+            "vi": "Mine không đi với danh từ. Có book thì dùng my; bỏ book thì dùng mine."
+          },
+          "right": "It's my book. / It's mine.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "It's mine book."
+        },
+        {
+          "points": [
+            {
+              "vi": "Không chia -ing - want, know, like, love, need, understand, think (= nghĩ rằng)."
+            },
+            {
+              "vi": "I think it's good. (ý kiến) · I'm thinking about it. (đang suy nghĩ)"
+            },
+            {
+              "vi": "Tân ngữ - me, you, him, her, it, us, them (call me, with us)."
+            },
+            {
+              "vi": "my / your / his / her / our / their + danh từ."
+            },
+            {
+              "vi": "mine / yours / his / hers / ours / theirs đứng một mình."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "f3d21fd4734e5e6668f3c3ae9384b33d0df51f1a2b49b553dba3b4bc36b4aa2d",
+      "estimated_minutes": 15,
+      "id": "8fd25b28-db47-5924-b782-739e6a382c43",
+      "is_demo": true,
+      "key": "en:lesson:i-know-him",
+      "language_code": "en",
+      "level_code": "a2",
+      "objectives": [
+        {
+          "vi": "Biết các động từ không chia -ing - want, know, like, need, understand - kể cả khi tiếng Việt có \"đang\"."
+        },
+        {
+          "vi": "Dùng đúng đại từ tân ngữ me, him, her, us, them sau động từ và giới từ."
+        },
+        {
+          "vi": "Dùng mine, yours, his, hers… để nói đồ vật là của ai."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "I know him - động từ trạng thái, đại từ tân ngữ và mine, yours"
+      },
+      "unit_id": "46915d59-f675-5046-8b0e-2064329ff90c"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Người học C2 không chỉ biết nghĩa thành ngữ mà còn biết khi nào nên dùng và khi nào không. Sau bài này, bạn dùng được sáu thành ngữ thông dụng và bốn cụm động từ nhiều nghĩa đúng ngữ cảnh."
           },
           "type": "objective"
@@ -175693,6 +195278,162 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn mời bạn bè, đồng nghiệp đi chơi, nhận lời hay từ chối khéo, và xử lý một cuộc gọi điện thoại đơn giản - hỏi gặp ai, chờ máy, để lại lời nhắn."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Mời lịch sự - Would you like to + động từ…? (Would you like to come?). Mời thân mật kiểu Anh - Do you fancy + V-ing…? (Do you fancy going out?). Người Việt hay quên to sau like - \"Would you like go\" là sai."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Nhận lời - I'd love to! / Yes, I'd like to. Từ chối - I'm sorry, I'm afraid I can't + lý do (I'm working / I'm busy), rồi thêm Maybe another time? để giữ thiện chí. I'm afraid ở đây là \"tiếc là\", không phải \"sợ\"."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Gọi điện: Can I speak to…, please? Nếu chính bạn là người đó, trả lời Speaking. hoặc This is Nam. - không trả lời \"Yes, I am\". Người nghe máy hỏi Who's calling, please?, bảo Hold on, please hoặc hỏi Can I take a message?"
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Lý do từ chối thường dùng hiện tại tiếp diễn chỉ lịch hẹn mà bạn đã học - I'm meeting a client on Friday. Trên điện thoại, người Anh không tự giới thiệu bằng I am mà bằng This is… (Hi, this is Mai). Nhớ đại từ đứng giữa call và back - call you back, call her back."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Would you like to + động từ nguyên mẫu. Nhận lời nhiệt tình bằng I'd love to."
+          },
+          "target": "A: Would you like to have dinner with us on Saturday? B: I'd love to! What time? A: About seven.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "A: Thứ Bảy bạn có muốn ăn tối với bọn mình không? B: Có chứ! Mấy giờ thế? A: Khoảng bảy giờ."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Fancy + V-ing. Từ chối có lý do và Maybe another time nghe lịch sự hơn hẳn chỉ nói No."
+          },
+          "target": "A: Do you fancy going to the cinema tonight? B: I'm sorry, I'm afraid I can't. I'm working late. Maybe another time?",
+          "target_lang": "en",
+          "translation": {
+            "vi": "A: Tối nay đi xem phim không? B: Xin lỗi nhé, tiếc là mình không đi được. Mình phải làm muộn. Để dịp khác nhé?"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Một cuộc gọi công việc trọn vẹn - Who's calling?, This is…, Hold on, Can I take a message?, call me back."
+          },
+          "target": "A: Hello, ABC Travel. B: Hello, can I speak to Mr Nam, please? A: Who's calling, please? B: This is Hoa from Sun Hotel. A: Hold on, please… I'm afraid he's in a meeting. Can I take a message? B: Yes, please. Can you ask him to call me back?",
+          "target_lang": "en",
+          "translation": {
+            "vi": "A: A lô, công ty du lịch ABC xin nghe. B: Chào chị, cho tôi gặp anh Nam được không ạ? A: Xin hỏi ai gọi đấy ạ? B: Tôi là Hoa ở khách sạn Sun. A: Chị chờ chút nhé… Tiếc là anh ấy đang họp. Chị có muốn nhắn gì không? B: Vâng. Nhờ chị bảo anh ấy gọi lại cho tôi."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Speaking = chính tôi đây. Mười phút nữa là in ten minutes, không phải after ten minutes."
+          },
+          "target": "A: Hi, can I speak to Lan? B: Speaking! Oh, hi Minh. A: Hi Lan. Sorry, I'm on the bus. I'll call you back in ten minutes.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "A: Chào, cho mình gặp Lan. B: Lan đây! À, chào Minh. A: Chào Lan. Xin lỗi, mình đang trên xe buýt. Mười phút nữa mình gọi lại nhé."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Sau would like phải có to trước động từ."
+          },
+          "right": "Would you like to go to the cinema?",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Would you like go to the cinema?"
+        },
+        {
+          "note": {
+            "vi": "Câu hỏi bắt đầu bằng Can I, nên \"Yes, I am\" không khớp. Chính bạn nghe máy thì nói Speaking hoặc This is Nam."
+          },
+          "right": "A: Can I speak to Mr Nam? B: Speaking. / This is Nam.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "A: Can I speak with Mr Nam? B: Yes, I am."
+        },
+        {
+          "note": {
+            "vi": "\"No, I don't like\" nghe như bạn không thích người mời. Từ chối bằng I'm afraid I can't + lý do."
+          },
+          "right": "B: I'm sorry, I'm afraid I can't. I'm busy that day.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "A: Would you like to come to my party? B: No, I don't like."
+        },
+        {
+          "points": [
+            {
+              "vi": "Mời - Would you like to + V…? · Do you fancy + V-ing…? · Are you free on…?"
+            },
+            {
+              "vi": "Nhận lời - I'd love to! · Yes, I'd like to."
+            },
+            {
+              "vi": "Từ chối - I'm sorry, I'm afraid I can't. I'm busy / I'm working. Maybe another time?"
+            },
+            {
+              "vi": "Gọi điện - Can I speak to…? · Who's calling? · This is… / Speaking."
+            },
+            {
+              "vi": "Hold on, please. · Can I take / leave a message? · I'll call you back."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "1a3c20c61336c6eae71276e979dc9d6fb4e84efdc36668b56649948b1f140695",
+      "estimated_minutes": 16,
+      "id": "97d94fb2-d0a3-5f91-be37-72a03e11ee27",
+      "is_demo": true,
+      "key": "en:lesson:invitations-and-calls",
+      "language_code": "en",
+      "level_code": "a2",
+      "objectives": [
+        {
+          "vi": "Mời ai đó bằng Would you like to…? và Do you fancy + V-ing…?"
+        },
+        {
+          "vi": "Nhận lời (I'd love to) và từ chối lịch sự (I'm afraid I can't, I'm busy)."
+        },
+        {
+          "vi": "Gọi và nghe điện thoại - Can I speak to…? Speaking. Hold on. Can I take a message? I'll call you back."
+        }
+      ],
+      "order_index": 4,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Would you like to…? - lời mời và gọi điện thoại"
+      },
+      "unit_id": "46915d59-f675-5046-8b0e-2064329ff90c"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Bài này ôn toàn bộ unit qua hai văn bản thật - một bài blog kể chuyến đi Peru và một email gửi bạn cũ. Bạn sẽ thấy mỗi thì được chọn vì lý do gì."
           },
           "type": "objective"
@@ -175828,6 +195569,163 @@ select content_private.import_bundle($bundle${
         "vi": "Ôn tập - Blog du lịch và email cho bạn cũ"
       },
       "unit_id": "ca3b5f87-0cd8-5e77-9956-7fa782c0cdbd"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn có đủ \"bộ câu\" để chủ trì hoặc tham gia một cuộc họp bằng tiếng Anh - từ lúc mở đầu, chuyển ý, xen vào, đến lúc tóm tắt và giao việc."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Một cuộc họp thường theo agenda (chương trình họp): mở đầu (Shall we get started?), lần lượt từng nội dung (Let's move on to…), các vấn đề khác (Any other business?) và tóm tắt (To sum up,…). Người chủ trì (the chair) dẫn dắt các bước này."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Muốn nói xen vào, người Anh dùng câu hỏi xin phép có just để làm nhẹ: Could I just come in here? Nếu bị ngắt lời, bạn giữ lượt bằng If I could just finish… - câu bỏ lửng nhưng rất tự nhiên."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Khi một ý làm lạc đề hoặc tốn thời gian, người chủ trì nói Can we come back to that later? Tiếng Việt hay nói thẳng \"Để sau đi\", còn tiếng Anh công sở chuộng câu hỏi mềm mỏng."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Sau move on to là danh từ hoặc V-ing (move on to the budget / move on to discussing the budget), vì to là giới từ. Discuss là ngoại động từ - discuss the budget, không có about. Biên bản họp (the minutes) thường ghi action points theo mẫu rất gọn - tên người + to V (Lan to contact the supplier by Friday) - nghĩa là người đó phải làm việc này."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Mở đầu và giới thiệu agenda - items on the agenda (giới từ on)."
+          },
+          "target": "Right, it's ten o'clock, so shall we get started? There are three items on the agenda today.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Được rồi, mười giờ rồi, chúng ta bắt đầu nhé? Hôm nay có ba nội dung trong chương trình họp."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Xin lỗi + câu hỏi xin phép có just - cách ngắt lời lịch sự."
+          },
+          "target": "Sorry, could I just come in here? Those sales figures are from last year.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Xin lỗi, cho tôi xen vào một chút được không? Số liệu doanh số đó là của năm ngoái."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Ghi nhận ý kiến rồi hoãn lại, sau đó chuyển nội dung."
+          },
+          "target": "That's an interesting idea, but can we come back to that later? Let's move on to the budget first.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Ý đó hay đấy, nhưng mình bàn lại sau được không? Trước hết chúng ta chuyển sang phần ngân sách."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Kết thúc bằng To sum up, rồi giao action points theo mẫu tên người + to V."
+          },
+          "target": "To sum up, we've agreed to delay the launch. Action points: Hà to update the timeline, and Tuấn to inform the client. Linh, thanks for taking the minutes.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Tóm lại, chúng ta đã thống nhất lùi buổi ra mắt. Đầu việc: Hà cập nhật lịch trình, Tuấn thông báo cho khách hàng. Cảm ơn Linh đã ghi biên bản."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Tiếng Việt nói \"thảo luận về\", nhưng discuss đi thẳng với tân ngữ. Nếu muốn có about, dùng talk about hoặc have a discussion about."
+          },
+          "right": "Let's discuss the budget.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Let's discuss about the budget."
+        },
+        {
+          "note": {
+            "vi": "Câu mệnh lệnh khi ngắt lời nghe rất thô trong cuộc họp. Hãy mở đầu bằng Sorry và dùng câu hỏi xin phép."
+          },
+          "right": "Sorry, could I just come in here?",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Wait, wait! I want to say something."
+        },
+        {
+          "note": {
+            "vi": "To trong move on to là giới từ, nên sau nó là danh từ hoặc V-ing (move on to discussing), không phải V nguyên mẫu."
+          },
+          "right": "Let's move on to the next item.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Let's move on to discuss the next item."
+        },
+        {
+          "points": [
+            {
+              "vi": "Mở đầu: Shall we get started? - Chuyển ý: Let's move on to + danh từ / V-ing."
+            },
+            {
+              "vi": "Xen vào: Could I just come in here? - Giữ lượt: If I could just finish…"
+            },
+            {
+              "vi": "Hoãn chủ đề: Can we come back to that later? - Kết thúc: To sum up,…"
+            },
+            {
+              "vi": "Từ vựng: agenda (items on the agenda), chair a meeting, take the minutes, action point, any other business (AOB)."
+            },
+            {
+              "vi": "Discuss + tân ngữ, không có about."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "f30e9e786023cb0dcc348103e759c229fce72316620b09e2941fbe8ab136da8a",
+      "estimated_minutes": 20,
+      "id": "5b033a19-44dc-576d-b4a5-919b437862cb",
+      "is_demo": true,
+      "key": "en:lesson:meetings-language",
+      "language_code": "en",
+      "level_code": "b2",
+      "objectives": [
+        {
+          "vi": "Mở đầu, chuyển nội dung và kết thúc cuộc họp - Shall we get started?, Let's move on to…, To sum up."
+        },
+        {
+          "vi": "Xen vào và giữ lượt lời lịch sự - Could I just come in here?, If I could just finish…"
+        },
+        {
+          "vi": "Hiểu chương trình họp và biên bản - agenda, action point, take the minutes, chair, AOB."
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "speaking",
+        "listening",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Điều hành và tham gia cuộc họp"
+      },
+      "unit_id": "afc5e81a-6a68-575b-8e4d-5b874eff5a1b"
     },
     {
       "body": [
@@ -176461,6 +196359,164 @@ select content_private.import_bundle($bundle${
         "vi": "Từ gần nghĩa & sắc thái khen chê"
       },
       "unit_id": "8ff03299-7e94-5a0b-b439-7c05fb1f0a34"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn đưa ra được đề nghị có điều kiện khi thương lượng với đối tác, phản bác mà không gây căng thẳng, và mô tả được số liệu doanh thu, thị phần đang tăng giảm thế nào."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Khi đàm phán, người nói tiếng Anh dùng could để đề nghị mềm mỏng: We could offer a 5% discount. Điều kiện đi kèm dùng provided (that) hoặc as long as - trang trọng và chặt chẽ hơn if."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Giống if, sau provided that / as long as dùng hiện tại đơn dù nói về tương lai: provided that you pay by May. Tiếng Việt nói \"miễn là anh sẽ trả\", nhưng tiếng Anh không dùng will ở vế điều kiện."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Mô tả xu hướng: động từ + trạng từ (rise sharply, fall slightly) hoặc tính từ + danh từ (a sharp rise, a slight fall). Lượng thay đổi đi với by (rose by 10%), mức cuối đi với to (rose to $5 million) - tiếng Việt không cần giới từ nên người Việt hay dùng sai \"for\"."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Trước khi phản bác, hãy công nhận ý của đối phương (That's a fair point, but… / I see what you mean, but…) - cách này giữ quan hệ tốt, rất quan trọng trong văn hoá kinh doanh. Khi cả hai bên nhượng bộ, bạn reach a compromise. Với số liệu, rise và fall là nội động từ (doanh số tự tăng); muốn nói mình làm tăng thì dùng increase / raise / boost: We increased revenue by 15%. Peak at + con số là đạt đỉnh, remain stable là giữ ổn định."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Could để đề nghị mềm; provided that + hiện tại đơn (order) dù nói về tương lai."
+          },
+          "target": "We could offer free delivery, provided that you order at least 500 units.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Chúng tôi có thể miễn phí vận chuyển, với điều kiện quý công ty đặt ít nhất 500 sản phẩm."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Công nhận trước rồi mới phản bác, kèm lý do bằng số liệu."
+          },
+          "target": "That's a fair point, but our costs have risen sharply this year, so we can't go below $12 per unit.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Anh nói cũng có lý, nhưng chi phí của chúng tôi năm nay tăng mạnh, nên chúng tôi không thể xuống dưới 12 đô một sản phẩm."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "By + lượng thay đổi (15%), to + mức cuối ($3.2 million)."
+          },
+          "target": "Revenue rose by 15% to $3.2 million, and our market share increased slightly.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Doanh thu tăng 15%, lên 3,2 triệu đô, và thị phần của chúng tôi tăng nhẹ."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Ba cụm mô tả xu hướng trong một câu - peak at, fall slightly, remain stable."
+          },
+          "target": "Sales peaked at 40,000 units in December, fell slightly in January and then remained stable.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Doanh số đạt đỉnh 40.000 sản phẩm vào tháng Mười Hai, giảm nhẹ trong tháng Một và sau đó giữ ổn định."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Sau provided that / as long as dùng hiện tại đơn, giống if. Tiếng Việt có \"sẽ\" ở vế điều kiện, nhưng tiếng Anh thì không."
+          },
+          "right": "We'll agree, provided that you pay a deposit.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "We'll agree, provided that you will pay a deposit."
+        },
+        {
+          "note": {
+            "vi": "\"Tăng 10%\" - lượng thay đổi luôn đi với by. For dùng cho khoảng thời gian, không dùng cho mức tăng giảm."
+          },
+          "right": "We increased revenue by 10%.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "We increased revenue for 10%."
+        },
+        {
+          "note": {
+            "vi": "Bổ nghĩa cho động từ cần trạng từ (sharply). Nếu muốn dùng sharp thì đổi sang danh từ - a sharp rise."
+          },
+          "right": "Our profits rose sharply last year.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Our profits rose sharp last year."
+        },
+        {
+          "points": [
+            {
+              "vi": "Đề nghị: We could offer… / How about…? - Điều kiện: provided (that) / as long as + hiện tại đơn."
+            },
+            {
+              "vi": "Phản bác lịch sự: That's a fair point, but… - Kết quả: reach a compromise / an agreement."
+            },
+            {
+              "vi": "Xu hướng: rise / fall + sharply / slightly; remain stable; peak at + số."
+            },
+            {
+              "vi": "By = lượng thay đổi (by 10%); to = mức cuối (to $5 million); không dùng for."
+            },
+            {
+              "vi": "Từ vựng: revenue (doanh thu) khác profit (lợi nhuận); market share (thị phần)."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "2e405efff28ab4d593005f554a61fb30e53fc748bca2f76469e11ff41c6e975c",
+      "estimated_minutes": 22,
+      "id": "2e9159de-2c9b-565f-93b4-4ee757751b64",
+      "is_demo": true,
+      "key": "en:lesson:negotiating-trends",
+      "language_code": "en",
+      "level_code": "b2",
+      "objectives": [
+        {
+          "vi": "Đưa ra đề nghị và điều kiện khi đàm phán - We could offer…, provided that, as long as."
+        },
+        {
+          "vi": "Công nhận rồi phản bác lịch sự - That's a fair point, but…; đạt được thỏa hiệp."
+        },
+        {
+          "vi": "Mô tả xu hướng số liệu - rise sharply, fall slightly, remain stable, peak at, increase by / to."
+        }
+      ],
+      "order_index": 4,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "speaking",
+        "writing",
+        "vocabulary",
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Đàm phán và nói về số liệu kinh doanh"
+      },
+      "unit_id": "afc5e81a-6a68-575b-8e4d-5b874eff5a1b"
     },
     {
       "body": [
@@ -181383,6 +201439,787 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn phàn nàn về phòng khách sạn hay món ăn một cách lịch sự nhưng rõ ràng, và đề nghị được đổi phòng, sửa chữa hoặc hoàn tiền."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Người nói tiếng Anh thường làm mềm lời phàn nàn bằng I'm afraid… (tôi e là, rất tiếc là): I'm afraid there's a problem with my room. Câu nói thẳng My room is bad! nghe rất gay gắt."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Mô tả sự cố cụ thể: The air conditioning doesn't work / isn't working, The room is too noisy, There aren't any towels, You've charged me twice. Càng cụ thể thì nhân viên càng dễ giúp bạn."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Sau đó đưa ra yêu cầu: Could you…? (lịch sự), Would you mind + V-ing…? hoặc I was wondering if you could… (rất lịch sự). Nếu muốn lấy lại tiền: I'd like a refund, please."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "I was wondering if… dùng quá khứ nhưng nói về hiện tại - thì quá khứ tạo khoảng cách, nên nghe nhẹ nhàng hơn. Sau if dùng trật tự câu kể (if you could, if I could) giống câu hỏi gián tiếp ở bài trước. Nếu nhân viên không giải quyết, bạn có thể nói Could I speak to the manager, please? - vẫn lịch sự mà kiên quyết."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "I'm afraid làm mềm lời phàn nàn; doesn't work dùng cho máy móc bị hỏng."
+          },
+          "target": "I'm afraid there's a problem with the air conditioning in my room. It doesn't work.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Tôi e là máy lạnh trong phòng tôi có vấn đề. Nó không chạy."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Nêu vấn đề trước, rồi nhờ bằng I was wondering if you could…"
+          },
+          "target": "The room is next to the lift and it's very noisy. I was wondering if you could give us a different room.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Phòng ở cạnh thang máy và rất ồn. Không biết anh/chị có thể đổi cho chúng tôi phòng khác được không."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "I think làm câu bớt gay gắt; charge someone for something."
+          },
+          "target": "Excuse me, I think you've charged us twice for the drinks.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Xin lỗi, tôi nghĩ anh/chị đã tính tiền đồ uống của chúng tôi hai lần."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "I'd like a refund - không nói I want to refund."
+          },
+          "target": "The tour was cancelled, so I'd like a refund, please.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Tour bị huỷ nên tôi muốn được hoàn tiền."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Sau if là trật tự câu kể - you could, không đảo thành could you."
+          },
+          "right": "I was wondering if you could change our room.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I was wondering if could you change our room."
+        },
+        {
+          "note": {
+            "vi": "Câu phủ định hiện tại đơn cần doesn't; tiếng Việt chỉ nói \"không chạy\" nên dễ quên trợ động từ."
+          },
+          "right": "The shower doesn't work.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "The shower not work."
+        },
+        {
+          "note": {
+            "vi": "I want to refund nghĩa là bạn sẽ hoàn tiền cho người khác; muốn nhận lại tiền thì nói I'd like a refund."
+          },
+          "right": "I'd like a refund, please.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I want to refund."
+        },
+        {
+          "points": [
+            {
+              "vi": "Mở đầu mềm mỏng - I'm afraid there's a problem with…"
+            },
+            {
+              "vi": "Mô tả sự cố - doesn't work / isn't working, too noisy, no towels, charged me twice."
+            },
+            {
+              "vi": "Yêu cầu - Could you…? / Would you mind + V-ing? / I was wondering if you could…"
+            },
+            {
+              "vi": "Lấy lại tiền - I'd like a refund; complain to someone about something, make a complaint."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "fc7d934ebf6c9838a659c35485ccb92a1b5319f754c823096433c6b578d87da2",
+      "estimated_minutes": 15,
+      "id": "5d7b895c-9ef2-51b1-9015-0e1db0b0f273",
+      "is_demo": true,
+      "key": "en:lesson:travel-culture-complaints",
+      "language_code": "en",
+      "level_code": "b1",
+      "objectives": [
+        {
+          "vi": "Mở đầu lời phàn nàn lịch sự - I'm afraid there's a problem with…"
+        },
+        {
+          "vi": "Nhờ vả rất lịch sự - I was wondering if you could… và yêu cầu hoàn tiền - I'd like a refund."
+        },
+        {
+          "vi": "Mô tả sự cố - doesn't work, noisy, towel, air conditioning, charge someone twice."
+        }
+      ],
+      "order_index": 4,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "speaking",
+        "listening",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Phàn nàn lịch sự ở khách sạn và nhà hàng"
+      },
+      "unit_id": "e3315eb2-4d42-5cf4-b665-da05e709f243"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn kể được chuyến đi của mình vui, chán hay mệt ra sao mà không nhầm I'm boring với I'm bored, và nói được \"đẹp đến nỗi…\", \"mệt đến mức…\"."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Tính từ đuôi -ed tả cảm giác của người: I'm bored (mình thấy chán), She's interested (cô ấy thấy thích). Tính từ đuôi -ing tả thứ gây ra cảm giác: The tour is boring (chuyến tham quan chán), The museum is interesting."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Tiếng Việt chỉ có một từ \"chán\", \"mệt\" cho cả hai nghĩa, nên người Việt hay nói I'm boring khi muốn nói \"mình thấy chán\". Hãy tự hỏi: ai/cái gì CẢM THẤY (-ed), ai/cái gì GÂY RA cảm giác (-ing)?"
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "So/such… that = \"quá… đến nỗi…\". So đứng trước tính từ không có danh từ đi sau (so beautiful that…); such đứng trước cụm danh từ (such a beautiful day that…)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Một người cũng có thể là -ing: He's boring (anh ta nhạt nhẽo), She's interesting (cô ấy thú vị) - tức người đó làm người khác có cảm giác ấy. Với such: danh từ số ít đếm được cần a/an (such a long trip), còn danh từ số nhiều và không đếm được thì không (such friendly people, such good weather). Trong văn nói, that thường được bỏ - It was so hot we stayed inside."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Boring tả chuyến tham quan; bored tả cảm giác của bọn trẻ."
+          },
+          "target": "The museum tour was boring, so the children were bored.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Chuyến tham quan bảo tàng chán quá nên bọn trẻ thấy chán."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Exhausting (việc leo núi gây mệt) và exhausted (người thấy mệt); so + tính từ + that."
+          },
+          "target": "Climbing the mountain was exhausting. We were so exhausted that we slept for ten hours.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Leo núi mệt rã rời. Bọn mình kiệt sức đến nỗi ngủ liền mười tiếng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Such a + tính từ + danh từ số ít."
+          },
+          "target": "It was such a beautiful day that we decided to walk to the beach.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Trời đẹp đến nỗi bọn mình quyết định đi bộ ra biển."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Embarrassed tả cảm giác của mình; so có thể đứng một mình để nhấn mạnh."
+          },
+          "target": "I felt so embarrassed when I forgot the name of our host.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Mình ngượng chín người khi quên tên chủ nhà."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Muốn nói cảm giác của mình thì dùng bored; I was boring là \"mình là người nhạt nhẽo\"."
+          },
+          "right": "The film was so long. I was really bored.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "The film was so long. I was very boring."
+        },
+        {
+          "note": {
+            "vi": "Có danh từ (day) thì dùng such a, không dùng so."
+          },
+          "right": "It was such a beautiful day.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "It was so beautiful day."
+        },
+        {
+          "note": {
+            "vi": "Cảm giác của người dùng -ed; interested đi với in."
+          },
+          "right": "I'm very interested in local history.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I'm very interesting in local history."
+        },
+        {
+          "points": [
+            {
+              "vi": "-ed = cảm giác của người (bored, interested, exhausted, disappointed, embarrassed)."
+            },
+            {
+              "vi": "-ing = thứ gây ra cảm giác (boring, interesting, exhausting, disappointing, embarrassing)."
+            },
+            {
+              "vi": "so + tính từ/trạng từ + that…; such (a/an) + tính từ + danh từ + that…"
+            },
+            {
+              "vi": "Interested in, disappointed with; không nói very exhausted - dùng really/completely exhausted."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "6dbd077e8e90a4bef4928e16f37a063112a058cf1290bbe28eb09f3e77345381",
+      "estimated_minutes": 15,
+      "id": "59835c7d-1a55-53f4-a5f7-204f192d19f5",
+      "is_demo": true,
+      "key": "en:lesson:travel-culture-feelings",
+      "language_code": "en",
+      "level_code": "b1",
+      "objectives": [
+        {
+          "vi": "Phân biệt tính từ -ed (cảm giác của người) và -ing (thứ gây ra cảm giác)."
+        },
+        {
+          "vi": "Dùng so + tính từ + that và such (a) + tính từ + danh từ + that để nói về kết quả."
+        },
+        {
+          "vi": "Kể lại cảm xúc trong chuyến đi - bored, interested, exhausted, disappointed, embarrassed."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Cảm nhận về chuyến đi - bored/boring và so/such… that"
+      },
+      "unit_id": "e3315eb2-4d42-5cf4-b665-da05e709f243"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn nói được chính xác \"nhiều, vài, một ít, hầu như không, không cái nào\" khi lên kế hoạch, kể về chuyến đi và tính ngân sách du lịch."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Trước khi chọn lượng từ, hãy hỏi: danh từ này đếm được hay không? A few đi với danh từ đếm được số nhiều (a few days, a few souvenirs); a little đi với danh từ không đếm được (a little money, a little time)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Có a hay không làm đổi nghĩa: a few / a little = một vài, một ít (đủ dùng, tích cực); few / little = rất ít, gần như không có (tiêu cực). Tiếng Việt cũng phân biệt \"còn ít tiền\" và \"còn một ít tiền\" theo cách tương tự."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "A lot of = nhiều (cả hai loại danh từ); plenty of = dư dả, hơn mức cần; hardly any = hầu như không có; none of the/my… = không cái nào, không ai trong số. Hardly any và none of đã phủ định, nên không thêm not."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Money, time, information, luggage, accommodation, advice là danh từ không đếm được trong tiếng Anh, dù tiếng Việt có thể đếm (\"mấy đồng\", \"mấy cái vali\"). Muốn đếm, dùng đơn vị: two pieces of luggage, a place to stay. Sau none of + danh từ số nhiều, văn nói thường dùng động từ số nhiều (None of the rooms were ready), văn viết trang trọng có thể dùng số ít (was) - cả hai đều được chấp nhận."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Money và time không đếm được, nên dùng a little và plenty of."
+          },
+          "target": "We've only got a little money left, but we've got plenty of time.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Bọn mình chỉ còn một ít tiền, nhưng còn dư thời gian."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Souvenirs đếm được, số nhiều - dùng a few."
+          },
+          "target": "I bought a few souvenirs at the night market for my colleagues.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Mình mua vài món quà lưu niệm ở chợ đêm cho đồng nghiệp."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Hardly any đã mang nghĩa phủ định; accommodation không đếm được nên dùng is."
+          },
+          "target": "In the rainy season, there are hardly any tourists, so accommodation is cheap.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Vào mùa mưa hầu như không có khách du lịch, nên chỗ ở rẻ."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "None of + the + danh từ; động từ ở thể khẳng định (spoke)."
+          },
+          "target": "None of the locals spoke English, but they were very helpful.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Không người dân địa phương nào nói tiếng Anh, nhưng họ rất nhiệt tình."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Money không đếm được nên dùng a little, không dùng a few."
+          },
+          "right": "I only have a little money left.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I only have a few money left."
+        },
+        {
+          "note": {
+            "vi": "Hardly any đã là phủ định; thêm not thành phủ định hai lần."
+          },
+          "right": "There were hardly any tourists.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "There weren't hardly any tourists."
+        },
+        {
+          "note": {
+            "vi": "Sau none of cần the, my, these… hoặc đại từ (none of them)."
+          },
+          "right": "None of the hotels had a free room.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "None of hotels had a free room."
+        },
+        {
+          "points": [
+            {
+              "vi": "a few / few + danh từ đếm được số nhiều; a little / little + danh từ không đếm được."
+            },
+            {
+              "vi": "Có a = một vài, một ít (đủ); không có a = rất ít (không đủ)."
+            },
+            {
+              "vi": "a lot of = nhiều; plenty of = dư dả; hardly any = hầu như không có."
+            },
+            {
+              "vi": "none of + the/my/them…; không thêm not sau hardly any hay none of."
+            },
+            {
+              "vi": "Từ du lịch - souvenir, budget, accommodation (không đếm được), local, tourist."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "9d9b3cfbbac4f92d36e17ef17726ba631ca02f872971b90fdd22ca3c2b1a01cb",
+      "estimated_minutes": 15,
+      "id": "b679827b-5211-54bd-9e32-12a8545cf24a",
+      "is_demo": true,
+      "key": "en:lesson:travel-culture-quantifiers",
+      "language_code": "en",
+      "level_code": "b1",
+      "objectives": [
+        {
+          "vi": "Phân biệt a few / few (đếm được) và a little / little (không đếm được)."
+        },
+        {
+          "vi": "Dùng a lot of, plenty of, hardly any, none of để nói về số lượng khi đi du lịch."
+        },
+        {
+          "vi": "Hiểu và dùng từ vựng du lịch - souvenir, budget, accommodation, local, tourist."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Lên kế hoạch du lịch - a few, a little, plenty of, hardly any, none of"
+      },
+      "unit_id": "e3315eb2-4d42-5cf4-b665-da05e709f243"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn hỏi đường, hỏi thông tin một cách lịch sự với người lạ, và hỏi để xác nhận phong tục ở nơi bạn đến (Mình phải cởi giày, phải không?)."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Câu hỏi gián tiếp mở đầu bằng Could you tell me… / Do you know… rồi mới đến câu hỏi chính. Phần sau từ để hỏi dùng trật tự câu kể (chủ ngữ + động từ) và bỏ do/does/did: Where is the station? → Could you tell me where the station is?"
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Với câu hỏi Yes/No, thêm if (hoặc whether): Does this bus go to the airport? → Do you know if this bus goes to the airport? Lưu ý goes - động từ chia lại như câu kể."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Câu hỏi đuôi giống \"…nhỉ? / …phải không?\" trong tiếng Việt, nhưng phải lặp lại trợ động từ của câu chính + đại từ. Câu khẳng định → đuôi phủ định (It's hot, isn't it?); câu phủ định → đuôi khẳng định (You don't tip here, do you?)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Nếu câu chính không có trợ động từ, dùng do/does/did: You take off your shoes, don't you? / She bowed, didn't she? Đuôi của I am là aren't I (I'm late, aren't I?), của Let's là shall we. Về phong tục: It's polite/rude to + động từ là mẫu câu rất hay dùng để giải thích văn hoá."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Where + the nearest station + is - chủ ngữ trước động từ."
+          },
+          "target": "Excuse me, could you tell me where the nearest station is?",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Xin lỗi, anh/chị có thể chỉ cho tôi ga gần nhất ở đâu không?"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Câu hỏi Yes/No gián tiếp dùng if; the temple is giữ trật tự câu kể."
+          },
+          "target": "Do you know if the temple is open on Mondays?",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Bạn có biết chùa có mở cửa vào thứ Hai không?"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Câu chính dùng take (hiện tại đơn, không có trợ động từ) nên đuôi là don't you."
+          },
+          "target": "In Vietnam, you take off your shoes when you visit someone's home, don't you?",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Ở Việt Nam, mình cởi giày khi đến nhà người khác, phải không?"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "It's polite/rude to + động từ nguyên mẫu."
+          },
+          "target": "In Japan, it's polite to bow, but it's rude to leave a tip.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Ở Nhật, cúi chào là lịch sự, nhưng để lại tiền boa lại bị coi là bất lịch sự."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Trong câu hỏi gián tiếp, chủ ngữ (the station) đứng trước động từ (is)."
+          },
+          "right": "Could you tell me where the station is?",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Could you tell me where is the station?"
+        },
+        {
+          "note": {
+            "vi": "Câu chính dùng like (hiện tại đơn) với you, nên đuôi là don't you, không dùng isn't it cho mọi câu."
+          },
+          "right": "You like Vietnamese food, don't you?",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "You like Vietnamese food, isn't it?"
+        },
+        {
+          "note": {
+            "vi": "Bỏ does và chia lại động từ như câu kể - the museum opens."
+          },
+          "right": "Do you know what time the museum opens?",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Do you know what time does the museum open?"
+        },
+        {
+          "points": [
+            {
+              "vi": "Could you tell me / Do you know + wh-word + chủ ngữ + động từ (không đảo, không do/does/did)."
+            },
+            {
+              "vi": "Câu hỏi Yes/No gián tiếp dùng if hoặc whether."
+            },
+            {
+              "vi": "Câu hỏi đuôi lặp trợ động từ của câu chính; không có trợ động từ thì dùng do/does/did."
+            },
+            {
+              "vi": "Khẳng định → đuôi phủ định; phủ định → đuôi khẳng định."
+            },
+            {
+              "vi": "Phong tục - custom, tradition, polite, rude, tip, bow, shake hands, take off your shoes."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "e0a9043102fd94cecae0d3b7f463364eec2d6fe8f08c30acb71293276691da80",
+      "estimated_minutes": 15,
+      "id": "e69ba6c5-7332-5593-bdf6-3df4d41509bb",
+      "is_demo": true,
+      "key": "en:lesson:travel-culture-questions-customs",
+      "language_code": "en",
+      "level_code": "b1",
+      "objectives": [
+        {
+          "vi": "Hỏi lịch sự bằng câu hỏi gián tiếp - Could you tell me where the station is? Do you know if…?"
+        },
+        {
+          "vi": "Dùng câu hỏi đuôi đúng trợ động từ - It's hot, isn't it? You tip here, don't you?"
+        },
+        {
+          "vi": "Nói về phong tục, phép lịch sự - custom, tradition, polite, rude, tip, bow, shake hands, take off your shoes."
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "speaking",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Hỏi lịch sự và phong tục - câu hỏi gián tiếp, câu hỏi đuôi"
+      },
+      "unit_id": "e3315eb2-4d42-5cf4-b665-da05e709f243"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn viết được một email phàn nàn ngắn mà vẫn lịch sự, và đọc hiểu, bình luận một bài chia sẻ về phong tục ở nước khác - dùng mọi điểm ngữ pháp của unit."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Email phàn nàn tốt có bốn phần: lý do viết (I'm writing to complain about…), sự cố cụ thể (the air conditioning didn't work…), cảm xúc (we were very disappointed / exhausted) và yêu cầu rõ ràng (I would like a partial refund). Giọng văn lịch sự nhưng chắc chắn; unacceptable dùng cho việc thật sự nghiêm trọng."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Bài viết về văn hoá thường kể trải nghiệm (I felt so embarrassed when…), so sánh phong tục (In Vietnam we…, but in Japan it's rude to…) và đặt câu hỏi cho người đọc (Do you know if…? / It's the same in Korea, isn't it?)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Hai từ mới: culture shock (sốc văn hoá) và unacceptable (không thể chấp nhận). Hãy để ý cách lượng từ (hardly any, none of, a few) giúp mô tả vấn đề chính xác hơn."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Kiểm tra nhanh trước khi gửi: tính từ cảm xúc của người có đuôi -ed chưa (bored, not boring); có danh từ thì dùng such a chứ không phải so; câu hỏi gián tiếp có giữ trật tự chủ ngữ + động từ không; đuôi câu hỏi có lặp đúng trợ động từ không; money, time, information có lỡ đi với a few không. Đây là năm lỗi người Việt hay gặp nhất trong unit này."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Mở đầu trang trọng với Dear Sir or Madam và I'm writing to…; I'm afraid làm mềm giọng văn."
+          },
+          "target": "Dear Sir or Madam, I'm writing to complain about my stay at your hotel from 3 to 5 May. I'm afraid there were several problems with our room.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Kính gửi Quý khách sạn, tôi viết thư này để phàn nàn về kỳ lưu trú tại khách sạn từ ngày 3 đến 5 tháng Năm. Tôi e là phòng của chúng tôi gặp một số vấn đề."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "So hot that…; hardly any towels; none of the staff."
+          },
+          "target": "First, the air conditioning didn't work, and the room was so hot that we hardly slept. Second, there were hardly any towels, and none of the staff came when we called reception.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Thứ nhất, điều hoà không chạy và phòng nóng đến nỗi chúng tôi gần như không ngủ được. Thứ hai, hầu như không có khăn tắm, và không nhân viên nào đến khi chúng tôi gọi lễ tân."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Exhausted (người) và disappointing (sự việc); yêu cầu rõ ràng bằng I would like a refund."
+          },
+          "target": "We were exhausted after a long flight, so this was very disappointing. I would like a partial refund for the two nights. I look forward to hearing from you. Kind regards, Lan Nguyen",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Chúng tôi đã kiệt sức sau chuyến bay dài nên việc này thật đáng thất vọng. Tôi muốn được hoàn lại một phần tiền cho hai đêm. Mong sớm nhận được phản hồi. Trân trọng, Nguyễn Lan"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Culture shock là từ mới; so embarrassed tả cảm giác của người viết."
+          },
+          "target": "FORUM - Culture shock in Japan? When I first visited my friend's family, I felt so embarrassed! I didn't know you had to take off your shoes AND wear special slippers in the bathroom.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "DIỄN ĐÀN - Sốc văn hoá ở Nhật? Lần đầu đến nhà gia đình bạn mình, mình ngượng chín mặt! Mình không biết là phải cởi giày VÀ còn phải đi dép riêng trong nhà vệ sinh."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Such a surprise; câu hỏi đuôi don't you; câu hỏi gián tiếp Does anyone know if…"
+          },
+          "target": "Also, it's rude to leave a tip in restaurants, which was such a surprise for me. You bow a lot in Korea too, don't you? Does anyone know if tipping is OK in Thailand?",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Ngoài ra, để lại tiền boa ở nhà hàng là bất lịch sự - điều này làm mình rất bất ngờ. Ở Hàn Quốc người ta cũng cúi chào nhiều, phải không? Có ai biết ở Thái Lan cho tiền boa có được không?"
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Cảm giác của mình là bored; có danh từ thì dùng such, không dùng so."
+          },
+          "right": "The room was so noisy, I was really bored, and the staff were such rude people.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "The room was so noisy, I was very boring and the staff was so rude person."
+        },
+        {
+          "note": {
+            "vi": "Sau if dùng trật tự câu kể - tipping is."
+          },
+          "right": "Does anyone know if tipping is OK in Thailand?",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Does anyone know if is tipping OK in Thailand?"
+        },
+        {
+          "points": [
+            {
+              "vi": "Email phàn nàn - lý do viết, sự cố cụ thể, cảm xúc, yêu cầu rõ ràng, kết thư lịch sự."
+            },
+            {
+              "vi": "Lượng từ - a few/a little, hardly any, none of; không nói a few money."
+            },
+            {
+              "vi": "-ed cho cảm giác của người, -ing cho sự việc; so + tính từ, such (a) + danh từ."
+            },
+            {
+              "vi": "Câu hỏi gián tiếp giữ trật tự câu kể; câu hỏi đuôi lặp đúng trợ động từ."
+            },
+            {
+              "vi": "Từ mới - culture shock, unacceptable."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "70f12cb7bbb90a39fb115c3498f37dcf22138531c1e42a3ab26545ee63b6bd25",
+      "estimated_minutes": 15,
+      "id": "d1e526e0-2964-5973-8f40-92743210a059",
+      "is_demo": true,
+      "key": "en:lesson:travel-culture-review",
+      "language_code": "en",
+      "level_code": "b1",
+      "objectives": [
+        {
+          "vi": "Đọc hiểu và viết một email phàn nàn lịch sự gửi khách sạn."
+        },
+        {
+          "vi": "Đọc một bài đăng diễn đàn về khác biệt văn hoá và đặt câu hỏi, phản hồi phù hợp."
+        },
+        {
+          "vi": "Dùng tổng hợp lượng từ, tính từ -ed/-ing, so/such… that, câu hỏi gián tiếp và câu hỏi đuôi."
+        }
+      ],
+      "order_index": 5,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "reading",
+        "writing",
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Ôn tập - Thư phàn nàn khách sạn và bài viết về khác biệt văn hoá"
+      },
+      "unit_id": "e3315eb2-4d42-5cf4-b665-da05e709f243"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Sau bài này, bạn kể được những câu như \"Hôm qua mình ở nhà\", \"Cuối tuần trước bãi biển rất đông\", \"Mình sinh năm 2001\" bằng tiếng Anh với đúng was/were và mốc thời gian."
           },
           "type": "objective"
@@ -181713,6 +202550,163 @@ select content_private.import_bundle($bundle${
         "vi": "Thời tiết và so sánh điểm đến"
       },
       "unit_id": "f9b0bab0-a10f-5255-8792-572d294d89ea"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn trả lời được câu \"Bạn đang làm gì thế?\" qua tin nhắn hay điện thoại, và kể được những việc tạm thời dạo này, như làm việc ở nhà hay ở nhờ nhà bạn."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Tiếng Việt chỉ cần thêm \"đang\" - \"tôi đang đi\". Tiếng Anh cần đủ hai phần - be (am / is / are) và động từ thêm -ing - I'm going. Thiếu be (\"I going\") hay thiếu -ing (\"I am go\") đều sai."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Hiện tại tiếp diễn dùng cho hai việc - việc đang xảy ra ngay lúc nói (I'm cooking right now) và việc tạm thời trong giai đoạn này (I'm working from home this week). Đi kèm thường là now, right now, at the moment, today, this week, these days."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Hiện tại đơn nói thói quen, việc lâu dài - I work in an office. Khi hai thì đi cùng nhau, bạn thấy rõ sự khác nhau - I usually take the bus, but today I'm walking."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Câu hỏi đảo be lên trước - Are you working? What is she doing? Phủ định thêm not - I'm not working today. Chính tả -ing: bỏ e câm (make → making, write → writing), gấp đôi phụ âm cuối ở từ ngắn (sit → sitting, run → running, swim → swimming), còn play → playing, read → reading giữ nguyên. Ở unit trước bạn đã gặp I'm meeting Lan tomorrow - cùng dạng, nhưng có mốc tương lai nên nghĩa là lịch hẹn."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Hai việc đang diễn ra ngay lúc nói - sitting gấp đôi t, wait for có for trước người được đợi."
+          },
+          "target": "A: Hi Mai, what are you doing? B: I'm sitting in a café. I'm waiting for Hoa.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "A: Chào Mai, bạn đang làm gì đấy? B: Mình đang ngồi ở quán cà phê. Mình đang đợi Hoa."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Usually → hiện tại đơn (thói quen); this week → hiện tại tiếp diễn (tạm thời)."
+          },
+          "target": "I usually work in the office, but this week I'm working from home.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Tôi thường làm ở văn phòng, nhưng tuần này tôi làm việc ở nhà."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "He's = He is. At the moment báo hiệu việc đang diễn ra."
+          },
+          "target": "A: Is Nam at home? B: No, he isn't. He's playing football at the moment.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "A: Nam có nhà không? B: Không có. Lúc này cậu ấy đang đá bóng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "These days là giai đoạn hiện tại, không phải đúng giây phút này."
+          },
+          "target": "My parents are learning to cook Korean food these days.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Dạo này bố mẹ tôi đang học nấu món Hàn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Có be thì động từ phải thêm -ing. \"Am go\" là ghép nhầm giữa hai thì."
+          },
+          "right": "I'm going to the supermarket now.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I am go to the supermarket now."
+        },
+        {
+          "note": {
+            "vi": "Chữ \"đang\" trong tiếng Việt không có be, nhưng tiếng Anh bắt buộc có is."
+          },
+          "right": "She's cooking dinner. / She is cooking dinner.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "She cooking dinner."
+        },
+        {
+          "note": {
+            "vi": "\"Đợi bạn\" là wait for you - phải có for trước người hoặc vật được đợi."
+          },
+          "right": "I'm waiting for you at the bus stop.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "I'm waiting you at the bus stop."
+        },
+        {
+          "points": [
+            {
+              "vi": "am / is / are + V-ing - I'm working, She's sitting, They're waiting."
+            },
+            {
+              "vi": "Câu hỏi - What are you doing? · Are you working?"
+            },
+            {
+              "vi": "Dùng cho việc đang xảy ra (now, right now, at the moment) và việc tạm thời (this week, these days)."
+            },
+            {
+              "vi": "Thói quen dùng hiện tại đơn - I usually work…, nhưng tuần này I'm working…"
+            },
+            {
+              "vi": "Chính tả: making, sitting, swimming, playing."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "b150a3eff4c370ea708ec65b78f7caa6609490c713201c6cff261cd7cf956496",
+      "estimated_minutes": 15,
+      "id": "2955f785-eb0b-5616-88f7-6321b16d4039",
+      "is_demo": true,
+      "key": "en:lesson:what-are-you-doing",
+      "language_code": "en",
+      "level_code": "a2",
+      "objectives": [
+        {
+          "vi": "Hỏi và trả lời ai đó đang làm gì bằng hiện tại tiếp diễn (am / is / are + V-ing)."
+        },
+        {
+          "vi": "Nói việc tạm thời trong giai đoạn này - I'm working from home this week."
+        },
+        {
+          "vi": "Phân biệt hiện tại đơn (thói quen) với hiện tại tiếp diễn (lúc này, tạm thời)."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "grammar",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "What are you doing? - đang làm gì, lúc này và dạo này"
+      },
+      "unit_id": "46915d59-f675-5046-8b0e-2064329ff90c"
     },
     {
       "body": [
@@ -182337,6 +203331,186 @@ select content_private.import_bundle($bundle${
         "vi": "Will, going to và lịch hẹn"
       },
       "unit_id": "f9b0bab0-a10f-5255-8792-572d294d89ea"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Bài này ôn lại cả unit qua hai văn bản thật của công sở - biên bản một cuộc họp dự án và đoạn hội thoại đàm phán giá với nhà cung cấp. Sau bài, bạn đọc hiểu được loại văn bản này và tự nói được vài câu đàm phán."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Biên bản họp (minutes) có bố cục cố định: thông tin chung (ngày, người có mặt, Apologies - người báo vắng), từng mục theo agenda, và Action points ở cuối. Câu thường viết gọn, nhiều danh từ, ít từ nối."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Trong biên bản, quyết định thường ở thì quá khứ (It was agreed that…), còn action point viết theo mẫu tên người + to V + by + hạn chót (Tuấn to have the packaging redesigned by 15 May)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Một cuộc đàm phán tốt thường đi qua các bước: nêu yêu cầu, công nhận rồi phản bác (That's a fair point, but…), đề nghị có điều kiện (We could offer… provided that…), và chốt thỏa hiệp. Hãy để ý các cấu trúc của unit trong đoạn hội thoại."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Người Việt khi đàm phán hay nói thẳng con số và từ chối dứt khoát (\"Không được, giá đó thấp quá\"). Tiếng Anh kinh doanh chuộng giọng điệu mềm: could thay cho will, câu hỏi thay cho mệnh lệnh, và luôn đặt điều kiện rõ ràng bằng provided that / as long as + hiện tại đơn. Cách nói này giữ cửa cho đối phương nhượng bộ mà không mất mặt."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "Apologies là danh sách người báo vắng, không phải lời xin lỗi."
+          },
+          "target": "Minutes - Project Lotus meeting, 6 May. Present: Hà (chair), Tuấn, Linh (minutes). Apologies: Mr Dũng.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Biên bản - cuộc họp dự án Lotus, ngày 6/5. Có mặt: Hà (chủ trì), Tuấn, Linh (ghi biên bản). Vắng mặt có báo: anh Dũng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Fell slightly + by 3% (lượng thay đổi); behind schedule (chậm tiến độ)."
+          },
+          "target": "1. Sales update. Revenue fell slightly in April, by 3%, mainly because the new product launch is two weeks behind schedule.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "1. Cập nhật doanh số. Doanh thu tháng Tư giảm nhẹ 3%, chủ yếu vì buổi ra mắt sản phẩm mới đang chậm tiến độ hai tuần."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Have the packaging redesigned (thuê người làm); will have been tested là dạng bị động của will have + V3."
+          },
+          "target": "2. Packaging. It was agreed that we will have the packaging redesigned to cut costs. By the end of June, the new design will have been tested with customers.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "2. Bao bì. Cuộc họp thống nhất sẽ thuê thiết kế lại bao bì để cắt giảm chi phí. Đến cuối tháng Sáu, mẫu thiết kế mới sẽ được thử nghiệm xong với khách hàng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Mẫu tên người + to V; will be presenting - kế hoạch vào một thời điểm tương lai."
+          },
+          "target": "Action points: Tuấn to get three quotes from new suppliers by 15 May. Linh to send the revised timeline to all stakeholders. Next meeting: 20 May - Hà will be presenting the new budget.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Đầu việc: Tuấn xin báo giá từ ba nhà cung cấp mới trước ngày 15/5. Linh gửi lịch trình đã chỉnh sửa cho tất cả các bên liên quan. Cuộc họp tiếp theo: ngày 20/5 - chị Hà sẽ trình bày ngân sách mới."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Công nhận rồi phản bác; đề nghị bằng could; điều kiện provided that + hiện tại đơn (order, pay)."
+          },
+          "target": "Supplier: Our price is $4 per unit. Tuấn: That's a fair point about quality, but another supplier has quoted $3.50. Could you do $3.60? Supplier: We could offer $3.70, provided that you order 10,000 units and pay a 30% deposit.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Nhà cung cấp: Giá của chúng tôi là 4 đô một sản phẩm. Tuấn: Về chất lượng thì anh nói có lý, nhưng một nhà cung cấp khác báo giá 3,5 đô. Bên anh lấy 3,6 đô được không? Nhà cung cấp: Chúng tôi có thể để 3,7 đô, với điều kiện bên anh đặt 10.000 sản phẩm và đặt cọc 30%."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "As long as + hiện tại đơn; reach a compromise; I'll have the contract sent - nhờ người khác gửi."
+          },
+          "target": "Tuấn: As long as you can deliver by 1 June, we have a deal. Supplier: Then I think we've reached a compromise. I'll have the contract sent to you this afternoon.",
+          "target_lang": "en",
+          "translation": {
+            "vi": "Tuấn: Miễn là bên anh giao hàng trước ngày 1/6, chúng ta chốt nhé. Nhà cung cấp: Vậy tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ cho gửi hợp đồng sang anh."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Sau provided that dùng hiện tại đơn, không có will - giống if."
+          },
+          "right": "We could offer $3.70, provided that you order 10,000 units.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "We could offer $3.70, provided that you will order 10,000 units."
+        },
+        {
+          "note": {
+            "vi": "Lượng thay đổi đi với by, không phải for."
+          },
+          "right": "Revenue fell slightly, by 3%.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "Revenue fell slightly for 3%."
+        },
+        {
+          "note": {
+            "vi": "Sau will have luôn là V3 (tested)."
+          },
+          "right": "By the end of June, we will have tested the new design.",
+          "target_lang": "en",
+          "type": "common_mistake",
+          "wrong": "By the end of June, we will have test the new design."
+        },
+        {
+          "points": [
+            {
+              "vi": "Biên bản: Present / Apologies → từng mục agenda → Action points (tên người + to V + by…)."
+            },
+            {
+              "vi": "Đàm phán: That's a fair point, but… → We could offer… provided that / as long as + hiện tại đơn → reach a compromise."
+            },
+            {
+              "vi": "Tương lai: will be + V-ing (đang làm lúc đó), will have + V3 (xong trước mốc)."
+            },
+            {
+              "vi": "Have / get + vật + V3 cho việc nhờ, thuê người khác làm."
+            },
+            {
+              "vi": "Số liệu: fall slightly, rise sharply, by (lượng) / to (mức cuối)."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "582835db975540bb5cbf523c765d2759c3c2b6c598688f05b1f35205dced8020",
+      "estimated_minutes": 25,
+      "id": "ca3617e1-ca9b-5e2a-aef5-54b32a50ba04",
+      "is_demo": true,
+      "key": "en:lesson:work-business-review",
+      "language_code": "en",
+      "level_code": "b2",
+      "objectives": [
+        {
+          "vi": "Đọc hiểu biên bản một cuộc họp dự án - agenda, quyết định, action points."
+        },
+        {
+          "vi": "Theo dõi một cuộc đàm phán giá với nhà cung cấp và nhận ra cách đề nghị, đặt điều kiện, thỏa hiệp."
+        },
+        {
+          "vi": "Kết hợp tương lai tiếp diễn / hoàn thành, have something done, ngôn ngữ họp và mô tả số liệu."
+        }
+      ],
+      "order_index": 5,
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "skills": [
+        "reading",
+        "speaking",
+        "grammar",
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Ôn tập: Biên bản họp và cuộc đàm phán"
+      },
+      "unit_id": "afc5e81a-6a68-575b-8e4d-5b874eff5a1b"
     },
     {
       "body": [
@@ -194241,6 +215415,21 @@ select content_private.import_bundle($bundle${
       }
     },
     {
+      "content_hash": "fce930858be966ff2930ff3930cfa41f091bb99c869373ee6516618fc45b183f",
+      "id": "46915d59-f675-5046-8b0e-2064329ff90c",
+      "is_demo": true,
+      "key": "en:unit:everyday-now",
+      "order_index": 4,
+      "program_id": "4ec09d0b-b087-5cae-84b4-1723dc6cb4a0",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Cuộc sống hằng ngày: lúc này & lời mời"
+      }
+    },
+    {
       "content_hash": "b5c8e15039890eee8d946d22b79dcdd96d6723d614173ccfacd1bc015c6e91b3",
       "id": "d2e6541f-c363-59d7-99cc-ff0a407eece4",
       "is_demo": true,
@@ -194433,6 +215622,36 @@ select content_private.import_bundle($bundle${
       "status": "published",
       "title": {
         "vi": "Kể chuyện & tin tức"
+      }
+    },
+    {
+      "content_hash": "72e4955e15a17cd9b3df006f32837c1d86a2dd33dddc3128035020d051d4f9db",
+      "id": "e3315eb2-4d42-5cf4-b665-da05e709f243",
+      "is_demo": true,
+      "key": "en:unit:travel-culture",
+      "order_index": 4,
+      "program_id": "e77eca8c-34c1-5833-a309-ff492932117e",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Du lịch, văn hoá & giải quyết vấn đề"
+      }
+    },
+    {
+      "content_hash": "0a537347ee02dfecb7b41b7bbc3c4de081a325394441a586a9848924320417d3",
+      "id": "afc5e81a-6a68-575b-8e4d-5b874eff5a1b",
+      "is_demo": true,
+      "key": "en:unit:work-business",
+      "order_index": 3,
+      "program_id": "3493288d-09dc-5e3c-b444-f9416c170a4a",
+      "reviewed_at": null,
+      "reviewed_by": null,
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Công việc & kinh doanh"
       }
     },
     {

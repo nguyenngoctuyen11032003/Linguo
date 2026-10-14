@@ -1,0 +1,430 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:i-know-him
+order_index: 2
+level: a2
+title:
+  vi: I know him - động từ trạng thái, đại từ tân ngữ và mine, yours
+objectives:
+  - vi: Biết các động từ không chia -ing - want, know, like, need, understand - kể cả khi tiếng Việt có "đang".
+  - vi: Dùng đúng đại từ tân ngữ me, him, her, us, them sau động từ và giới từ.
+  - vi: Dùng mine, yours, his, hers… để nói đồ vật là của ai.
+estimated_minutes: 15
+skills: [grammar, speaking]
+prerequisites: [en:lesson:what-are-you-doing]
+items:
+  - item: en:item:stative-verbs
+  - item: en:item:want
+  - item: en:item:know
+  - item: en:item:need
+  - item: en:item:understand
+  - item: en:item:think-opinion-activity
+  - item: en:item:object-pronouns
+  - item: en:item:me
+  - item: en:item:him
+  - item: en:item:us
+  - item: en:item:them
+  - item: en:item:possessive-pronouns
+  - item: en:item:mine
+  - item: en:item:yours
+  - item: en:item:like
+    role: reuse
+  - item: en:item:love
+    role: reuse
+  - item: en:item:her
+    role: reuse
+  - item: en:item:present-continuous-now
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tránh được ba lỗi rất "Việt" - "I'm knowing", "I love he" và "It's mine book" - và nói tự nhiên về điều mình muốn, mình biết, cũng như đồ vật là của ai.
+  - type: explain
+    text:
+      vi: Một số động từ chỉ trạng thái trong đầu hay trong lòng, không phải hành động - want, know, like, love, need, understand. Chúng hầu như không chia -ing. Tiếng Việt nói "tôi đang muốn", nhưng tiếng Anh vẫn là I want, kể cả có right now.
+  - type: explain
+    text:
+      vi: Tiếng Việt dùng "anh ấy" ở đâu cũng được, còn tiếng Anh đổi dạng khi đứng sau động từ hoặc giới từ - I → me, he → him, she → her, we → us, they → them. Ví dụ He knows me. I know him.
+  - type: explain
+    text:
+      vi: "\"Của tôi\" có hai dạng. Có danh từ đi sau thì dùng my, your, his, her (my book). Đứng một mình thì dùng mine, yours, his, hers, ours, theirs (The book is mine)."
+  - type: deep_explain
+    text:
+      vi: "Think có hai nghĩa - I think it's nice (ý kiến, không -ing) và I'm thinking about the trip (đang suy nghĩ, có -ing). Like / love dùng -ing ở chỗ khác - I like swimming (thích việc bơi), nhưng không nói I'm liking. Lưu ý his giống nhau ở cả hai dạng (his bag / It's his), còn her đổi thành hers."
+  - type: example
+    target: "A: Do you know that man? B: Yes, I know him. He's my neighbour."
+    target_lang: en
+    translation:
+      vi: "A: Bạn có biết người đàn ông kia không? B: Có, mình quen anh ấy. Anh ấy là hàng xóm của mình."
+    note:
+      vi: Know không chia -ing; sau know dùng him, không dùng he.
+  - type: example
+    target: "I'm hungry. I want something to eat right now."
+    target_lang: en
+    translation:
+      vi: Mình đói. Giờ mình đang muốn ăn gì đó.
+    note:
+      vi: Dù có right now và tiếng Việt có "đang", want vẫn ở hiện tại đơn.
+  - type: example
+    target: "A: Whose jacket is this? Is it yours? B: No, it isn't mine. I think it's Lan's."
+    target_lang: en
+    translation:
+      vi: "A: Áo khoác này của ai? Của bạn à? B: Không phải của mình. Mình nghĩ là của Lan."
+    note:
+      vi: Yours, mine đứng một mình; I think dùng để nêu ý kiến nên không chia -ing.
+  - type: example
+    target: Our grandparents live far away, so we visit them every summer.
+    target_lang: en
+    translation:
+      vi: Ông bà chúng tôi sống xa, nên mùa hè nào chúng tôi cũng về thăm ông bà.
+    note:
+      vi: Them thay cho our grandparents, đứng sau động từ visit.
+  - type: common_mistake
+    wrong: I'm knowing the answer.
+    right: I know the answer.
+    target_lang: en
+    note:
+      vi: Know là động từ trạng thái nên không chia -ing, dù tiếng Việt có "đang biết".
+  - type: common_mistake
+    wrong: She loves he very much.
+    right: She loves him very much.
+    target_lang: en
+    note:
+      vi: Sau động từ phải dùng đại từ tân ngữ - him, không dùng he.
+  - type: common_mistake
+    wrong: It's mine book.
+    right: It's my book. / It's mine.
+    target_lang: en
+    note:
+      vi: Mine không đi với danh từ. Có book thì dùng my; bỏ book thì dùng mine.
+  - type: summary
+    points:
+      - vi: Không chia -ing - want, know, like, love, need, understand, think (= nghĩ rằng).
+      - vi: I think it's good. (ý kiến) · I'm thinking about it. (đang suy nghĩ)
+      - vi: Tân ngữ - me, you, him, her, it, us, them (call me, with us).
+      - vi: my / your / his / her / our / their + danh từ.
+      - vi: mine / yours / his / hers / ours / theirs đứng một mình.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:i-know-him-mcq-know
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:stative-verbs
+    prompt:
+      stem: "Câu nào nói đúng \"Tôi biết anh ấy\"?"
+      stem_lang: vi
+      options:
+        - { id: t5c, text: "I know him.", lang: en }
+        - { id: a1w, text: "I'm knowing him.", lang: en }
+        - { id: p8r, text: "I know he.", lang: en }
+        - { id: j4u, text: "I'm know him.", lang: en }
+    answer:
+      correct_option_id: t5c
+    explanation:
+      vi: Know không chia -ing nên dùng I know. Sau động từ dùng tân ngữ him, không dùng he. "I'm know" thừa am.
+    display_answer: "I know him."
+
+  - key: en:exercise:i-know-him-listen-hers
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:possessive-pronouns
+    prompt:
+      audio_asset_id: null
+      fallback_text: "This isn't my bag. I think it's hers."
+      options:
+        - { id: r6z, text: "Đây không phải túi của tôi. Tôi nghĩ là của cô ấy.", lang: vi }
+        - { id: d3q, text: "Đây không phải túi của tôi. Tôi nghĩ là của anh ấy.", lang: vi }
+        - { id: m9v, text: "Đây là túi của tôi. Tôi nghĩ vậy.", lang: vi }
+        - { id: w2g, text: "Đây không phải túi của cô ấy. Của tôi đấy.", lang: vi }
+    answer:
+      correct_option_id: r6z
+    explanation:
+      vi: Hers là "của cô ấy" (his mới là của anh ấy). Isn't my bag là "không phải túi của tôi".
+    display_answer: "Đây không phải túi của tôi. Tôi nghĩ là của cô ấy."
+
+  - key: en:exercise:i-know-him-fill-want
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:want
+    prompt:
+      template: "I'm so thirsty. I {{b1}} (want) some water right now."
+      blanks:
+        - { id: b1, width_hint: 10 }
+      hint_levels:
+        - "Nghĩa: Mình khát quá. Giờ mình đang muốn uống chút nước."
+        - "Gợi ý: want là động từ trạng thái - không chia -ing."
+    answer:
+      blanks:
+        b1: [want]
+    known_wrong:
+      - answer: am wanting
+        feedback_vi: Want không chia -ing, dù có right now - I want.
+        error_tag: stative_ing
+      - answer: wanting
+        feedback_vi: Want là động từ trạng thái, dùng nguyên dạng want.
+        error_tag: stative_ing
+      - answer: wants
+        feedback_vi: I đi với want, không thêm -s.
+        error_tag: third_person_s
+    explanation:
+      vi: Want chỉ mong muốn (trạng thái), nên dùng hiện tại đơn I want, kể cả khi có right now.
+    display_answer: "I'm so thirsty. I want some water right now."
+
+  - key: en:exercise:i-know-him-mcq-mine
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:mine
+    prompt:
+      stem: "Đồng nghiệp hỏi \"Is this your pen?\". Đúng là bút của bạn. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: c7h, text: "Yes, it's mine.", lang: en }
+        - { id: l2b, text: "Yes, it's mine pen.", lang: en }
+        - { id: x5f, text: "Yes, it's my.", lang: en }
+        - { id: n0k, text: "Yes, it's me.", lang: en }
+    answer:
+      correct_option_id: c7h
+    explanation:
+      vi: Không lặp lại pen thì dùng mine đứng một mình. Mine không đi với danh từ, my phải có danh từ theo sau, còn it's me là "đó là tôi".
+    display_answer: "Yes, it's mine."
+
+  - key: en:exercise:i-know-him-order-yours
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:yours
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: \"Cái ô này có phải của bạn không?\""
+      tokens:
+        - { id: yo-yours, text: yours }
+        - { id: yo-umbrella, text: umbrella }
+        - { id: yo-your, text: your }
+        - { id: yo-is, text: Is }
+        - { id: yo-this, text: this }
+        - { id: yo-yours2, text: "your's" }
+    answer:
+      orders:
+        - [yo-is, yo-this, yo-umbrella, yo-yours]
+    explanation:
+      vi: Câu hỏi với be đảo Is lên đầu. Yours đứng một mình ở cuối câu và không có dấu nháy; your cần danh từ theo sau.
+    display_answer: "Is this umbrella yours?"
+
+  # ---------------- recall ----------------
+  - key: en:exercise:i-know-him-fill-them
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:object-pronouns
+    prompt:
+      template: "A: Are those your children? B: Yes, I'm taking {{b1}} to school. Can you wait for {{b2}}? I'll be back in ten minutes."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [them]
+        b2: [me]
+    known_wrong:
+      - answer: they
+        feedback_vi: Sau động từ take cần tân ngữ them, không dùng they.
+        error_tag: object_pronoun
+      - answer: I
+        feedback_vi: Sau giới từ for cần me, không dùng I.
+        error_tag: object_pronoun
+      - answer: their
+        feedback_vi: Their là "của họ" và phải có danh từ theo sau. Ở đây cần them.
+        error_tag: object_pronoun
+    explanation:
+      vi: Your children đứng sau động từ take nên đổi thành them. Sau giới từ for, "tôi" là me.
+    display_answer: "A: Are those your children? B: Yes, I'm taking them to school. Can you wait for me? I'll be back in ten minutes."
+
+  - key: en:exercise:i-know-him-translate-understand
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:understand
+    prompt:
+      source_text: Tôi không hiểu câu hỏi này.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I don't understand this question.
+        - I don't understand the question.
+        - I can't understand this question.
+        - I can't understand the question.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I'm not understanding this question.
+        feedback_vi: Understand là động từ trạng thái, dùng I don't understand.
+        error_tag: stative_ing
+      - answer: I not understand this question.
+        feedback_vi: Phủ định hiện tại đơn cần don't - I don't understand.
+        error_tag: missing_do
+      - answer: I am not understand this question.
+        feedback_vi: Không dùng am với understand. Nói I don't understand.
+        error_tag: be_with_verb
+    explanation:
+      vi: Understand không chia -ing; phủ định ở hiện tại đơn dùng don't + understand.
+    display_answer: I don't understand this question.
+
+  - key: en:exercise:i-know-him-translate-his
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:possessive-pronouns
+    prompt:
+      source_text: Cái điện thoại này không phải của tôi. Nó là của anh ấy.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - This phone isn't mine. It's his.
+        - This phone is not mine. It is his.
+        - This phone isn't mine. It is his.
+        - This phone is not mine. It's his.
+        - This isn't my phone. It's his.
+        - This is not my phone. It is his.
+        - This isn't my phone. It is his.
+        - This is not my phone. It's his.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: This phone isn't my. It's his.
+        feedback_vi: My phải có danh từ theo sau. Đứng một mình thì dùng mine.
+        error_tag: possessive_pronoun
+      - answer: This phone isn't mine. It's him.
+        feedback_vi: It's him là "đó là anh ấy". "Của anh ấy" là his.
+        error_tag: possessive_pronoun
+      - answer: This phone isn't mine phone. It's his.
+        feedback_vi: Mine không đi với danh từ - This isn't my phone hoặc This phone isn't mine.
+        error_tag: possessive_pronoun
+    explanation:
+      vi: Đứng một mình, "của tôi" là mine và "của anh ấy" là his. Nếu giữ danh từ phone thì dùng my phone.
+    display_answer: This phone isn't mine. It's his.
+
+  # ---------------- application ----------------
+  - key: en:exercise:i-know-him-mcq-think
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:think-opinion-activity
+    prompt:
+      stem: "Bạn muốn nêu ý kiến với bạn bè: \"Mình nghĩ nhà hàng này rất ngon.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: g6s, text: "I think this restaurant is really good.", lang: en }
+        - { id: h1e, text: "I'm thinking this restaurant is really good.", lang: en }
+        - { id: z9o, text: "I think this restaurant really good.", lang: en }
+        - { id: k3t, text: "I'm think this restaurant is really good.", lang: en }
+    answer:
+      correct_option_id: g6s
+    explanation:
+      vi: Think nghĩa là "cho rằng" (ý kiến) thì không chia -ing - I think. Câu sau cũng cần is trước tính từ good.
+    display_answer: "I think this restaurant is really good."
+
+  - key: en:exercise:i-know-him-translate-brother
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:object-pronouns
+    prompt:
+      source_text: I like her, but I don't know her brother.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi thích cô ấy, nhưng tôi không quen anh trai cô ấy.
+        - Tôi thích cô ấy, nhưng tôi không quen em trai cô ấy.
+        - Tôi thích cô ấy, nhưng tôi không biết anh trai cô ấy.
+        - Tôi thích cô ấy, nhưng tôi không biết em trai cô ấy.
+        - Tôi thích cô ấy, nhưng tôi không quen anh trai của cô ấy.
+        - Tôi thích cô ấy, nhưng tôi không quen em trai của cô ấy.
+        - Tôi thích cô ấy, nhưng tôi không biết anh trai của cô ấy.
+        - Tôi thích cô ấy, nhưng tôi không biết em trai của cô ấy.
+        - Tôi quý cô ấy, nhưng tôi không quen anh trai cô ấy.
+        - Tôi quý cô ấy, nhưng tôi không quen em trai cô ấy.
+        - Mình thích cô ấy, nhưng mình không quen anh trai cô ấy.
+        - Mình thích cô ấy, nhưng mình không quen em trai cô ấy.
+        - Tôi thích chị ấy, nhưng tôi không quen anh trai chị ấy.
+        - Tôi thích chị ấy, nhưng tôi không quen em trai chị ấy.
+        - Tôi thích cô ấy nhưng không quen anh trai cô ấy.
+        - Tôi thích cô ấy nhưng không quen em trai cô ấy.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Her ở vế đầu là tân ngữ (thích cô ấy); her ở vế sau đứng trước danh từ brother nên là "của cô ấy". Brother có thể là anh trai hoặc em trai.
+    display_answer: Tôi thích cô ấy, nhưng tôi không quen anh trai cô ấy.
+
+  - key: en:exercise:i-know-him-order-call-me
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:me
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: \"Mai bạn gọi cho tôi được không?\""
+      tokens:
+        - { id: cm-me, text: me }
+        - { id: cm-tomorrow, text: tomorrow }
+        - { id: cm-you, text: you }
+        - { id: cm-i, text: I }
+        - { id: cm-call, text: call }
+        - { id: cm-can, text: Can }
+        - { id: cm-to, text: to }
+    answer:
+      orders:
+        - [cm-can, cm-you, cm-call, cm-me, cm-tomorrow]
+    explanation:
+      vi: Can đảo lên đầu để hỏi. Sau động từ call dùng me (không dùng I), và call không cần to - call me, không nói "call to me".
+    display_answer: "Can you call me tomorrow?"
+
+  - key: en:exercise:i-know-him-translate-wait-them
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:them
+    prompt:
+      source_text: Chúng tôi đang đợi họ ở nhà ga.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We're waiting for them at the station.
+        - We're waiting for them at the train station.
+        - We're waiting for them at the railway station.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We're waiting for they at the station.
+        feedback_vi: Sau giới từ for dùng them, không dùng they.
+        error_tag: object_pronoun
+      - answer: We're waiting them at the station.
+        feedback_vi: Wait cần for trước người được đợi - wait for them.
+        error_tag: missing_preposition
+      - answer: We waiting for them at the station.
+        feedback_vi: Thiếu are - We're waiting.
+        error_tag: missing_be
+    explanation:
+      vi: Wait là hành động nên chia -ing được - We're waiting. Sau for dùng tân ngữ them.
+    display_answer: We're waiting for them at the station.

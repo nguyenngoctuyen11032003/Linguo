@@ -1,0 +1,465 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:everyday-now-review
+order_index: 5
+level: a2
+title:
+  vi: Ôn tập - Gọi điện hẹn gặp và tả một bức ảnh văn phòng
+objectives:
+  - vi: Theo dõi trọn một cuộc gọi công việc - hỏi gặp, để lại lời nhắn, gọi lại và chốt lịch hẹn.
+  - vi: Tả một bức ảnh bằng vị trí và hiện tại tiếp diễn, thêm cảm xúc bằng look + tính từ.
+  - vi: Ôn lại động từ trạng thái, đại từ tân ngữ và lời mời, lời từ chối.
+estimated_minutes: 18
+skills: [listening, speaking, reading, grammar]
+prerequisites: [en:lesson:invitations-and-calls]
+items:
+  - item: en:item:is-that-ok-for-you
+  - item: en:item:see-you-then
+  - item: en:item:look-adjective
+  - item: en:item:present-continuous-now
+    role: reuse
+  - item: en:item:present-simple-vs-continuous
+    role: reuse
+  - item: en:item:at-the-moment
+    role: reuse
+  - item: en:item:right-now
+    role: reuse
+  - item: en:item:stative-verbs
+    role: reuse
+  - item: en:item:know
+    role: reuse
+  - item: en:item:object-pronouns
+    role: reuse
+  - item: en:item:in-the-picture
+    role: reuse
+  - item: en:item:in-the-middle
+    role: reuse
+  - item: en:item:on-the-left-on-the-right
+    role: reuse
+  - item: en:item:in-the-background
+    role: reuse
+  - item: en:item:hold
+    role: reuse
+  - item: en:item:look-at
+    role: reuse
+  - item: en:item:can-i-speak-to
+    role: reuse
+  - item: en:item:whos-calling
+    role: reuse
+  - item: en:item:this-is-speaking
+    role: reuse
+  - item: en:item:hold-on
+    role: reuse
+  - item: en:item:leave-a-message
+    role: reuse
+  - item: en:item:call-you-back
+    role: reuse
+  - item: en:item:would-you-like-to
+    role: reuse
+  - item: en:item:id-love-to
+    role: reuse
+  - item: en:item:im-afraid-i-cant
+    role: reuse
+  - item: en:item:are-you-free
+    role: reuse
+  - item: en:item:present-continuous-future
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự tin gọi điện cho đối tác để hẹn gặp - từ lúc hỏi gặp người, để lại lời nhắn đến lúc chốt giờ - và tả được một bức ảnh trong 5-6 câu.
+  - type: explain
+    text:
+      vi: Phần 1 là cuộc gọi của Lan đến công ty Green Design. Hãy để ý các câu cố định - Can I speak to…?, Who's calling?, This is…, Hold on, Can I take a message?, I'll call you back - và cách hai người mời, từ chối, chốt lịch.
+  - type: explain
+    text:
+      vi: "Hai câu mới để chốt hẹn: Is ten o'clock OK for you? (Mười giờ có tiện cho bạn không?) và See you then! (Hẹn gặp lúc đó nhé!). Then ở đây là \"lúc đó\", không phải \"sau đó\"."
+  - type: explain
+    text:
+      vi: Phần 2 là đoạn tả ảnh một văn phòng. Ngoài vị trí và hiện tại tiếp diễn, bạn học thêm look + tính từ để đoán cảm xúc - They look busy, she looks happy. Không nói "look like happy".
+  - type: deep_explain
+    text:
+      vi: "Cả unit xoay quanh một ý: tiếng Anh tách rõ \"lúc này\" (am / is / are + V-ing) và \"thường ngày\" (hiện tại đơn), trừ nhóm động từ trạng thái (know, want, like, need, understand) luôn ở hiện tại đơn. Khi từ chối lời mời, lý do thường là một lịch hẹn - I'm visiting a customer on Tuesday - chính là hiện tại tiếp diễn chỉ tương lai."
+  - type: example
+    target: "Receptionist: Good morning, Green Design. Lan: Hello, can I speak to Mr Tom Hill, please? Receptionist: Who's calling, please? Lan: This is Lan Nguyen from VietPrint. Receptionist: Hold on, please… I'm sorry, he's talking to a client at the moment. Can I take a message? Lan: Yes, please. Can you ask him to call me back?"
+    target_lang: en
+    translation:
+      vi: "Lễ tân: Chào buổi sáng, Green Design xin nghe. Lan: Chào chị, cho tôi gặp ông Tom Hill được không ạ? Lễ tân: Xin hỏi ai gọi đấy ạ? Lan: Tôi là Lan Nguyễn ở công ty VietPrint. Lễ tân: Chị chờ chút nhé… Xin lỗi, ông ấy đang tiếp khách. Chị có muốn để lại lời nhắn không? Lan: Vâng. Nhờ chị bảo ông ấy gọi lại cho tôi."
+    note:
+      vi: "Hội thoại phần 1: lễ tân dùng is talking vì việc đang diễn ra; sau ask và call là him, me."
+  - type: example
+    target: "Tom: Hi Lan, this is Tom Hill. Sorry about that. Would you like to meet next week to talk about the new brochure? Lan: I'd love to. Are you free on Tuesday? Tom: I'm afraid I can't on Tuesday. I'm visiting a customer in Bien Hoa. What about Wednesday? Lan: Wednesday's fine. Is ten o'clock OK for you? Tom: Perfect. I know your office - it's near the river, right? See you then!"
+    target_lang: en
+    translation:
+      vi: "Tom: Chào Lan, tôi là Tom Hill đây. Xin lỗi chuyện lúc nãy nhé. Tuần sau chị có muốn gặp nhau để bàn về cuốn brochure mới không? Lan: Rất sẵn lòng. Thứ Ba anh có rảnh không? Tom: Tiếc là thứ Ba tôi không được. Tôi đi gặp một khách hàng ở Biên Hoà. Thứ Tư thì sao? Lan: Thứ Tư được ạ. Mười giờ có tiện cho anh không? Tom: Tuyệt. Tôi biết văn phòng chị - gần bờ sông, đúng không? Hẹn gặp chị lúc đó!"
+    note:
+      vi: "Hội thoại phần 2: I'm visiting (lịch hẹn đã định), I know (động từ trạng thái, không -ing), chốt hẹn bằng Is… OK for you? và See you then."
+  - type: example
+    target: "In this photo, I can see a busy office. In the middle, there's a young woman sitting at a desk. She's talking on the phone and writing something. On the left, two men are looking at a computer. One of them is holding a cup of coffee."
+    target_lang: en
+    translation:
+      vi: "Trong bức ảnh này, tôi thấy một văn phòng bận rộn. Ở giữa có một cô gái trẻ đang ngồi ở bàn làm việc. Cô ấy đang nói chuyện điện thoại và viết gì đó. Bên trái, hai người đàn ông đang nhìn vào máy tính. Một người đang cầm cốc cà phê."
+    note:
+      vi: "Bài tả ảnh phần 1: câu mở đầu tổng quát, rồi in the middle, on the left với is / are + V-ing."
+  - type: example
+    target: "In the background, there's a big window, and it's raining outside. Everyone looks busy, but they look happy. I think they're working on an important project."
+    target_lang: en
+    translation:
+      vi: "Phía sau có một cửa sổ lớn, và bên ngoài trời đang mưa. Ai cũng trông bận rộn nhưng họ có vẻ vui. Tôi nghĩ họ đang làm một dự án quan trọng."
+    note:
+      vi: "Bài tả ảnh phần 2: look + tính từ (looks busy, look happy) và I think để đoán."
+  - type: common_mistake
+    wrong: "A: Can I speak with Mr Hill? B: Yes, I am."
+    right: "A: Can I speak to Mr Hill? B: Speaking. / This is Tom Hill."
+    target_lang: en
+    note:
+      vi: Người được hỏi trả lời Speaking hoặc This is…, không trả lời "Yes, I am".
+  - type: common_mistake
+    wrong: I'm knowing your office. Would you like meet on Wednesday?
+    right: I know your office. Would you like to meet on Wednesday?
+    target_lang: en
+    note:
+      vi: Know không chia -ing; sau would like phải có to.
+  - type: common_mistake
+    wrong: They look like happy, and the woman is talk on the phone.
+    right: They look happy, and the woman is talking on the phone.
+    target_lang: en
+    note:
+      vi: Look + tính từ (không có like); có is thì động từ phải thêm -ing.
+  - type: summary
+    points:
+      - vi: Gọi điện - Can I speak to…? · Who's calling? · This is… · Hold on · Can I take a message? · I'll call you back.
+      - vi: Mời và chốt hẹn - Would you like to…? · I'd love to · I'm afraid I can't · Is ten OK for you? · See you then!
+      - vi: Lúc này / tạm thời - am / is / are + V-ing; thói quen - hiện tại đơn.
+      - vi: Không -ing - know, want, like, need, understand.
+      - vi: Tả ảnh - In the picture… · on the left · in the middle · in the background · They look happy.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:everyday-now-review-listen-receptionist
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:leave-a-message
+    prompt:
+      audio_asset_id: null
+      fallback_text: "I'm sorry, he's talking to a client at the moment. Can I take a message?"
+      options:
+        - { id: g4v, text: "Xin lỗi, lúc này anh ấy đang tiếp khách. Chị có muốn để lại lời nhắn không?", lang: vi }
+        - { id: o8n, text: "Xin lỗi, anh ấy thường tiếp khách vào giờ này. Chị gọi lại sau nhé.", lang: vi }
+        - { id: y2e, text: "Xin lỗi, anh ấy đang nói chuyện với chị. Chị chờ chút nhé.", lang: vi }
+        - { id: k7b, text: "Xin lỗi, anh ấy không có ở đây. Tôi sẽ gọi lại cho chị.", lang: vi }
+    answer:
+      correct_option_id: g4v
+    explanation:
+      vi: He's talking to a client at the moment là "lúc này đang nói chuyện với khách" (không phải thói quen). Can I take a message? là lời đề nghị ghi lại lời nhắn.
+    display_answer: "Xin lỗi, lúc này anh ấy đang tiếp khách. Chị có muốn để lại lời nhắn không?"
+
+  - key: en:exercise:everyday-now-review-mcq-tuesday
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:present-continuous-future
+    prompt:
+      stem: "Đọc lại hội thoại phần 2. Vì sao Tom không gặp Lan vào thứ Ba được?"
+      stem_lang: vi
+      options:
+        - { id: s3d, text: "Thứ Ba anh ấy đi gặp một khách hàng ở Biên Hoà.", lang: vi }
+        - { id: x6p, text: "Thứ Ba nào anh ấy cũng đi Biên Hoà.", lang: vi }
+        - { id: h9m, text: "Anh ấy không biết văn phòng của Lan.", lang: vi }
+        - { id: b1w, text: "Anh ấy đang gặp khách hàng ngay lúc gọi điện.", lang: vi }
+    answer:
+      correct_option_id: s3d
+    explanation:
+      vi: I'm visiting a customer in Bien Hoa nói ngay sau I can't on Tuesday, nên đây là lịch hẹn đã định cho thứ Ba, không phải thói quen hay việc đang làm lúc gọi. Tom còn nói I know your office.
+    display_answer: "Thứ Ba anh ấy đi gặp một khách hàng ở Biên Hoà."
+
+  - key: en:exercise:everyday-now-review-mcq-photo
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:in-the-middle
+    prompt:
+      stem: "Đọc lại đoạn tả ảnh văn phòng. Câu nào đúng với bức ảnh?"
+      stem_lang: vi
+      options:
+        - { id: m5q, text: "The woman in the middle is talking on the phone.", lang: en }
+        - { id: c2j, text: "The woman on the left is looking at a computer.", lang: en }
+        - { id: r7u, text: "Two men are drinking coffee in the background.", lang: en }
+        - { id: e4l, text: "It's sunny outside.", lang: en }
+    answer:
+      correct_option_id: m5q
+    explanation:
+      vi: Cô gái ở giữa (in the middle) đang nghe điện thoại. Bên trái là hai người đàn ông nhìn máy tính, chỉ một người cầm cà phê, còn bên ngoài trời đang mưa.
+    display_answer: "The woman in the middle is talking on the phone."
+
+  - key: en:exercise:everyday-now-review-fill-look
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:look-adjective
+    prompt:
+      template: "Everyone {{b1}} busy, but they {{b2}} happy."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Ai cũng trông bận rộn, nhưng họ có vẻ vui."
+        - "Gợi ý: look + tính từ; everyone là số ít, they là số nhiều."
+    answer:
+      blanks:
+        b1: [looks]
+        b2: [look]
+    known_wrong:
+      - answer: looks like
+        feedback_vi: Trước tính từ chỉ dùng look, không có like - looks busy.
+        error_tag: look_like_adjective
+      - answer: look like
+        feedback_vi: Trước tính từ chỉ dùng look, không có like - look happy.
+        error_tag: look_like_adjective
+      - answer: are look
+        feedback_vi: Look đã là động từ, không thêm are.
+        error_tag: be_with_verb
+    explanation:
+      vi: Look + tính từ là "trông có vẻ". Everyone là số ít nên looks; they số nhiều nên look.
+    display_answer: "Everyone looks busy, but they look happy."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:everyday-now-review-fill-then
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:is-that-ok-for-you
+    prompt:
+      template: "Lan: Is ten o'clock OK {{b1}} you? Tom: Perfect. See you {{b2}}!"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [for, with]
+        b2: [then]
+    known_wrong:
+      - answer: to
+        feedback_vi: Hỏi giờ có tiện không là OK for you.
+        error_tag: preposition
+      - answer: after
+        feedback_vi: See you then là "hẹn gặp lúc đó". After không đứng một mình ở đây.
+        error_tag: see_you_then
+      - answer: than
+        feedback_vi: Than dùng để so sánh. Ở đây cần then (lúc đó).
+        error_tag: then_than
+    explanation:
+      vi: Is… OK for you? hỏi giờ hẹn có tiện không. See you then = hẹn gặp vào lúc vừa chốt.
+    display_answer: "Lan: Is ten o'clock OK for you? Tom: Perfect. See you then!"
+
+  - key: en:exercise:everyday-now-review-translate-ten
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:is-that-ok-for-you
+    prompt:
+      source_text: Mười giờ có tiện cho bạn không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Is ten o'clock OK for you?
+        - Is ten OK for you?
+        - Is ten o'clock okay for you?
+        - Is ten okay for you?
+        - Is ten o'clock OK with you?
+        - Is 10 o'clock OK for you?
+        - Does ten o'clock suit you?
+        - Is ten o'clock convenient for you?
+    known_wrong:
+      - answer: Are you convenient at ten o'clock?
+        feedback_vi: Convenient nói về thời gian, không nói về người. Dùng Is ten o'clock OK for you?
+        error_tag: convenient_person
+      - answer: Ten o'clock is OK for you?
+        feedback_vi: Câu hỏi cần đảo is lên trước - Is ten o'clock OK for you?
+        error_tag: question_word_order
+    explanation:
+      vi: Hỏi giờ hẹn có tiện không - Is + giờ + OK for you? Chủ ngữ là thời gian, không phải người.
+    display_answer: Is ten o'clock OK for you?
+
+  - key: en:exercise:everyday-now-review-translate-phone
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:present-continuous-now
+    prompt:
+      source_text: Cô ấy đang nói chuyện điện thoại.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - She's talking on the phone.
+        - She is talking on the phone.
+        - She's on the phone.
+        - She is on the phone.
+        - She's speaking on the phone.
+        - She is speaking on the phone.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: She talking on the phone.
+        feedback_vi: Thiếu is - She's talking.
+        error_tag: missing_be
+      - answer: She is talk on the phone.
+        feedback_vi: Có is thì động từ thêm -ing - talking.
+        error_tag: missing_ing
+      - answer: She talks on the phone.
+        feedback_vi: Việc đang diễn ra dùng hiện tại tiếp diễn - She's talking.
+        error_tag: simple_vs_continuous
+    explanation:
+      vi: "\"Đang\" nói chuyện là is + talking. Nói chuyện điện thoại đi với on the phone; She's on the phone cũng rất tự nhiên."
+    display_answer: She's talking on the phone.
+
+  - key: en:exercise:everyday-now-review-mcq-know
+    type: mcq
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:know
+    prompt:
+      stem: "Chọn câu đúng để Tom nói \"Tôi biết văn phòng của chị, nó ở gần bờ sông.\""
+      stem_lang: vi
+      options:
+        - { id: d8k, text: "I know your office. It's near the river.", lang: en }
+        - { id: n3f, text: "I'm knowing your office. It's near the river.", lang: en }
+        - { id: w5x, text: "I know yours office. It's near the river.", lang: en }
+        - { id: t1g, text: "I know your office. It near the river.", lang: en }
+    answer:
+      correct_option_id: d8k
+    explanation:
+      vi: Know không chia -ing. Trước danh từ dùng your (yours đứng một mình), và câu sau cần is (It's).
+    display_answer: "I know your office. It's near the river."
+
+  # ---------------- application ----------------
+  - key: en:exercise:everyday-now-review-mcq-driving
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:call-you-back
+    prompt:
+      stem: "Đối tác gọi đến khi bạn đang lái xe. Bạn nói thế nào cho đúng và lịch sự?"
+      stem_lang: vi
+      options:
+        - { id: q6h, text: "Sorry, I'm driving right now. I'll call you back in twenty minutes.", lang: en }
+        - { id: a9s, text: "Sorry, I drive right now. I call you back in twenty minutes.", lang: en }
+        - { id: l4c, text: "Sorry, I am drive right now. I'll call back you in twenty minutes.", lang: en }
+        - { id: v2y, text: "Sorry, I'm driving right now. I'll call you back after twenty minutes.", lang: en }
+    answer:
+      correct_option_id: q6h
+    explanation:
+      vi: Đang lái xe dùng I'm driving; hứa gọi lại dùng I'll call you back (đại từ ở giữa), và "hai mươi phút nữa" là in twenty minutes.
+    display_answer: "Sorry, I'm driving right now. I'll call you back in twenty minutes."
+
+  - key: en:exercise:everyday-now-review-translate-children
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:look-adjective
+    prompt:
+      source_text: The children look very happy. They're playing on the beach.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bọn trẻ trông rất vui. Chúng đang chơi trên bãi biển.
+        - Bọn trẻ trông rất vui. Chúng đang chơi ở bãi biển.
+        - Bọn trẻ trông rất vui. Chúng đang chơi trên bãi cát.
+        - Bọn trẻ trông rất vui vẻ. Chúng đang chơi trên bãi biển.
+        - Bọn trẻ có vẻ rất vui. Chúng đang chơi trên bãi biển.
+        - Lũ trẻ trông rất vui. Chúng đang chơi trên bãi biển.
+        - Những đứa trẻ trông rất vui. Chúng đang chơi trên bãi biển.
+        - Các em nhỏ trông rất vui. Các em đang chơi trên bãi biển.
+        - Bọn trẻ trông rất vui. Chúng đang chơi ngoài bãi biển.
+        - Bọn trẻ trông rất vui, chúng đang chơi trên bãi biển.
+        - Bọn trẻ trông rất vui. Tụi nhỏ đang chơi trên bãi biển.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Look + tính từ là "trông / có vẻ…". They're playing là "đang chơi"; on the beach là trên bãi biển.
+    display_answer: Bọn trẻ trông rất vui. Chúng đang chơi trên bãi biển.
+
+  - key: en:exercise:everyday-now-review-order-computer
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:on-the-left-on-the-right
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Bên trái, hai người đàn ông đang nhìn vào máy tính.\""
+      tokens:
+        - { id: pc-computer, text: computer }
+        - { id: pc-looking, text: looking }
+        - { id: pc-left, text: left }
+        - { id: pc-men, text: men }
+        - { id: pc-are, text: are }
+        - { id: pc-on, text: "on" }
+        - { id: pc-at, text: at }
+        - { id: pc-the, text: the }
+        - { id: pc-two, text: two }
+        - { id: pc-a, text: a }
+        - { id: pc-mans, text: mans }
+        - { id: pc-in, text: in }
+    answer:
+      orders:
+        - [pc-on, pc-the, pc-left, pc-two, pc-men, pc-are, pc-looking, pc-at, pc-a, pc-computer]
+        - [pc-two, pc-men, pc-are, pc-looking, pc-at, pc-a, pc-computer, pc-on, pc-the, pc-left]
+    explanation:
+      vi: Bên trái là on the left (không dùng in). Số nhiều của man là men; nhìn vào là look at, chia are looking.
+    display_answer: "On the left, two men are looking at a computer."
+
+  - key: en:exercise:everyday-now-review-translate-tuesday
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:im-afraid-i-cant
+    prompt:
+      source_text: Xin lỗi, thứ Ba tôi không đến được. Tôi đi gặp khách hàng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I'm sorry, I can't come on Tuesday. I'm meeting a client.
+        - I'm sorry, I can't come on Tuesday. I'm meeting a customer.
+        - I'm sorry, I can't come on Tuesday. I'm visiting a client.
+        - I'm sorry, I can't come on Tuesday. I'm visiting a customer.
+        - Sorry, I can't come on Tuesday. I'm meeting a client.
+        - Sorry, I can't come on Tuesday. I'm meeting a customer.
+        - I'm afraid I can't come on Tuesday. I'm meeting a client.
+        - I'm afraid I can't come on Tuesday. I'm meeting a customer.
+        - Sorry, I can't make it on Tuesday. I'm meeting a client.
+        - I'm sorry, I can't come on Tuesday. I'm meeting clients.
+        - I'm sorry, I can't come on Tuesday because I'm meeting a client.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I'm sorry, I can't come on Tuesday. I meeting a client.
+        feedback_vi: Thiếu am - I'm meeting.
+        error_tag: missing_be
+      - answer: I'm sorry, I can't come on Tuesday. I'm meet a client.
+        feedback_vi: Có am thì động từ thêm -ing - I'm meeting.
+        error_tag: missing_ing
+      - answer: I'm sorry, I don't can come on Tuesday. I'm meeting a client.
+        feedback_vi: Phủ định của can là can't, không dùng don't.
+        error_tag: modal_negative
+    explanation:
+      vi: Không đến được là can't come. Lý do là lịch hẹn đã định nên dùng hiện tại tiếp diễn - I'm meeting a client.
+    display_answer: I'm sorry, I can't come on Tuesday. I'm meeting a client.

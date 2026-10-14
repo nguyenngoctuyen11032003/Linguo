@@ -1,0 +1,395 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:travel-culture-feelings
+order_index: 2
+level: b1
+title:
+  vi: Cảm nhận về chuyến đi - bored/boring và so/such… that
+objectives:
+  - vi: Phân biệt tính từ -ed (cảm giác của người) và -ing (thứ gây ra cảm giác).
+  - vi: Dùng so + tính từ + that và such (a) + tính từ + danh từ + that để nói về kết quả.
+  - vi: Kể lại cảm xúc trong chuyến đi - bored, interested, exhausted, disappointed, embarrassed.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:travel-culture-quantifiers]
+items:
+  - item: en:item:ed-ing-adjectives
+  - item: en:item:bored
+  - item: en:item:interested
+  - item: en:item:interesting
+  - item: en:item:exhausted
+  - item: en:item:exhausting
+  - item: en:item:disappointed
+  - item: en:item:embarrassed
+  - item: en:item:so-adjective-that
+  - item: en:item:such-a-noun-that
+  - item: en:item:boring
+    role: reuse
+  - item: en:item:tired
+    role: reuse
+  - item: en:item:amazing
+    role: reuse
+  - item: en:item:crowded
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được chuyến đi của mình vui, chán hay mệt ra sao mà không nhầm I'm boring với I'm bored, và nói được "đẹp đến nỗi…", "mệt đến mức…".
+  - type: explain
+    text:
+      vi: "Tính từ đuôi -ed tả cảm giác của người: I'm bored (mình thấy chán), She's interested (cô ấy thấy thích). Tính từ đuôi -ing tả thứ gây ra cảm giác: The tour is boring (chuyến tham quan chán), The museum is interesting."
+  - type: explain
+    text:
+      vi: "Tiếng Việt chỉ có một từ \"chán\", \"mệt\" cho cả hai nghĩa, nên người Việt hay nói I'm boring khi muốn nói \"mình thấy chán\". Hãy tự hỏi: ai/cái gì CẢM THẤY (-ed), ai/cái gì GÂY RA cảm giác (-ing)?"
+  - type: explain
+    text:
+      vi: "So/such… that = \"quá… đến nỗi…\". So đứng trước tính từ không có danh từ đi sau (so beautiful that…); such đứng trước cụm danh từ (such a beautiful day that…)."
+  - type: deep_explain
+    text:
+      vi: "Một người cũng có thể là -ing: He's boring (anh ta nhạt nhẽo), She's interesting (cô ấy thú vị) - tức người đó làm người khác có cảm giác ấy. Với such: danh từ số ít đếm được cần a/an (such a long trip), còn danh từ số nhiều và không đếm được thì không (such friendly people, such good weather). Trong văn nói, that thường được bỏ - It was so hot we stayed inside."
+  - type: example
+    target: The museum tour was boring, so the children were bored.
+    target_lang: en
+    translation:
+      vi: Chuyến tham quan bảo tàng chán quá nên bọn trẻ thấy chán.
+    note:
+      vi: Boring tả chuyến tham quan; bored tả cảm giác của bọn trẻ.
+  - type: example
+    target: Climbing the mountain was exhausting. We were so exhausted that we slept for ten hours.
+    target_lang: en
+    translation:
+      vi: Leo núi mệt rã rời. Bọn mình kiệt sức đến nỗi ngủ liền mười tiếng.
+    note:
+      vi: Exhausting (việc leo núi gây mệt) và exhausted (người thấy mệt); so + tính từ + that.
+  - type: example
+    target: It was such a beautiful day that we decided to walk to the beach.
+    target_lang: en
+    translation:
+      vi: Trời đẹp đến nỗi bọn mình quyết định đi bộ ra biển.
+    note:
+      vi: Such a + tính từ + danh từ số ít.
+  - type: example
+    target: I felt so embarrassed when I forgot the name of our host.
+    target_lang: en
+    translation:
+      vi: Mình ngượng chín người khi quên tên chủ nhà.
+    note:
+      vi: Embarrassed tả cảm giác của mình; so có thể đứng một mình để nhấn mạnh.
+  - type: common_mistake
+    wrong: The film was so long. I was very boring.
+    right: The film was so long. I was really bored.
+    target_lang: en
+    note:
+      vi: Muốn nói cảm giác của mình thì dùng bored; I was boring là "mình là người nhạt nhẽo".
+  - type: common_mistake
+    wrong: It was so beautiful day.
+    right: It was such a beautiful day.
+    target_lang: en
+    note:
+      vi: Có danh từ (day) thì dùng such a, không dùng so.
+  - type: common_mistake
+    wrong: I'm very interesting in local history.
+    right: I'm very interested in local history.
+    target_lang: en
+    note:
+      vi: Cảm giác của người dùng -ed; interested đi với in.
+  - type: summary
+    points:
+      - vi: -ed = cảm giác của người (bored, interested, exhausted, disappointed, embarrassed).
+      - vi: -ing = thứ gây ra cảm giác (boring, interesting, exhausting, disappointing, embarrassing).
+      - vi: so + tính từ/trạng từ + that…; such (a/an) + tính từ + danh từ + that…
+      - vi: Interested in, disappointed with; không nói very exhausted - dùng really/completely exhausted.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:travel-culture-f-listen-exhausted
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:exhausted
+    prompt:
+      audio_asset_id: null
+      fallback_text: The walk was exhausting, so we were exhausted when we got back to the hotel.
+      options:
+        - { id: q4n, text: "Chuyến đi bộ mệt rã rời nên khi về tới khách sạn bọn mình kiệt sức.", lang: vi }
+        - { id: v8c, text: "Chuyến đi bộ rất thú vị nên khi về tới khách sạn bọn mình vẫn còn khoẻ.", lang: vi }
+        - { id: l2e, text: "Bọn mình mệt nên không đi bộ về khách sạn.", lang: vi }
+        - { id: x6a, text: "Chuyến đi bộ chán nên bọn mình về khách sạn sớm.", lang: vi }
+    answer:
+      correct_option_id: q4n
+    explanation:
+      vi: Exhausting tả chuyến đi bộ (gây mệt), exhausted tả cảm giác kiệt sức của người. Câu không nói chuyến đi chán hay bọn mình còn khoẻ.
+    display_answer: "Chuyến đi bộ mệt rã rời nên khi về tới khách sạn bọn mình kiệt sức."
+
+  - key: en:exercise:travel-culture-f-mcq-bored
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:bored
+    prompt:
+      stem: "Bạn muốn nói \"Mình thấy chán\" trong một buổi tham quan dài. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: c5r, text: "I'm bored.", lang: en }
+        - { id: h1m, text: "I'm boring.", lang: en }
+        - { id: w7t, text: "I bored.", lang: en }
+        - { id: i3g, text: "I'm boredom.", lang: en }
+    answer:
+      correct_option_id: c5r
+    explanation:
+      vi: Cảm giác của bạn dùng tính từ -ed - I'm bored. I'm boring nghĩa là "mình là người nhạt nhẽo"; I bored thiếu be; boredom là danh từ.
+    display_answer: "I'm bored."
+
+  - key: en:exercise:travel-culture-f-mcq-such
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:such-a-noun-that
+    prompt:
+      stem: "Chọn đáp án đúng: It was ___ beautiful day that we walked to the beach."
+      stem_lang: vi
+      options:
+        - { id: b9d, text: such a, lang: en }
+        - { id: m3u, text: so, lang: en }
+        - { id: z6p, text: a so, lang: en }
+        - { id: e2k, text: such, lang: en }
+    answer:
+      correct_option_id: b9d
+    explanation:
+      vi: Sau chỗ trống là cụm danh từ số ít (beautiful day), nên dùng such a. So chỉ đứng trước tính từ không có danh từ; such không có a thì thiếu mạo từ cho danh từ số ít.
+    display_answer: such a
+
+  - key: en:exercise:travel-culture-f-fill-ing-ed-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:ed-ing-adjectives
+    prompt:
+      template: "The museum was really {{b1}} (interest), and I'm {{b2}} (interest) in history, so I didn't get {{b3}} (bore)."
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 10 }
+        - { id: b3, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Bảo tàng rất thú vị, và mình thích lịch sử, nên mình không thấy chán."
+        - "Gợi ý: bảo tàng gây ra cảm giác → -ing; mình cảm thấy → -ed."
+    answer:
+      blanks:
+        b1: [interesting]
+        b2: [interested]
+        b3: [bored]
+    known_wrong:
+      - answer: boring
+        feedback_vi: Cảm giác của mình là bored; boring tả thứ gây chán.
+        error_tag: ed_ing_adjective
+      - answer: interest
+        feedback_vi: Cần tính từ có đuôi -ing (tả bảo tàng) hoặc -ed (tả cảm giác của bạn).
+        error_tag: ed_ing_adjective
+    explanation:
+      vi: Bảo tàng gây ra hứng thú → interesting; mình cảm thấy hứng thú → interested in; mình (không) thấy chán → bored.
+    display_answer: The museum was really interesting, and I'm interested in history, so I didn't get bored.
+
+  - key: en:exercise:travel-culture-f-order-so-that
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:so-adjective-that
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Khách sạn ồn đến nỗi chúng tôi không ngủ được.\""
+      tokens:
+        - { id: s-sleep, text: sleep }
+        - { id: s-that, text: that }
+        - { id: s-was, text: was }
+        - { id: s-hotel, text: hotel }
+        - { id: s-couldnt, text: "couldn't" }
+        - { id: s-noisy, text: noisy }
+        - { id: s-we, text: we }
+        - { id: s-the, text: The }
+        - { id: s-so, text: so }
+        - { id: s-such, text: such }
+    answer:
+      orders:
+        - [s-the, s-hotel, s-was, s-so, s-noisy, s-that, s-we, s-couldnt, s-sleep]
+        - [s-the, s-hotel, s-was, s-so, s-noisy, s-we, s-couldnt, s-sleep]
+    explanation:
+      vi: Noisy là tính từ đứng một mình (không có danh từ sau), nên dùng so, không dùng such. That có thể bỏ trong văn nói.
+    display_answer: "The hotel was so noisy that we couldn't sleep."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:travel-culture-f-fill-so-such
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:such-a-noun-that
+    prompt:
+      template: "The trip was {{b1}} exhausting that I slept on the bus. But it was {{b2}} an amazing experience that I want to go again."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [so]
+        b2: [such]
+    known_wrong:
+      - answer: very
+        feedback_vi: Cấu trúc "quá… đến nỗi" cần so/such + that, không dùng very.
+        error_tag: so_such_that
+      - answer: too
+        feedback_vi: Too… that không đúng; dùng so + tính từ + that.
+        error_tag: so_such_that
+    explanation:
+      vi: Exhausting là tính từ không có danh từ sau → so. An amazing experience là cụm danh từ → such (an amazing experience).
+    display_answer: The trip was so exhausting that I slept on the bus. But it was such an amazing experience that I want to go again.
+
+  - key: en:exercise:travel-culture-f-translate-disappointed
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:disappointed
+    prompt:
+      source_text: Chúng tôi thất vọng về phòng khách sạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We were disappointed with the hotel room.
+        - We were disappointed with our hotel room.
+        - We were disappointed about the hotel room.
+        - We are disappointed with the hotel room.
+        - We're disappointed with the hotel room.
+        - We were disappointed by the hotel room.
+        - We were disappointed with the room at the hotel.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We were disappointing with the hotel room.
+        feedback_vi: Cảm giác của chúng tôi dùng -ed - disappointed.
+        error_tag: ed_ing_adjective
+      - answer: We disappointed with the hotel room.
+        feedback_vi: Thiếu were - tính từ cần be đi trước.
+        error_tag: missing_be
+      - answer: We were disappointed of the hotel room.
+        feedback_vi: Nói disappointed with/about, không dùng of.
+        error_tag: preposition
+    explanation:
+      vi: Cảm giác của người dùng disappointed (đuôi -ed), cần be đi trước và giới từ with/about.
+    display_answer: We were disappointed with the hotel room.
+
+  - key: en:exercise:travel-culture-f-translate-such-day
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:such-a-noun-that
+    prompt:
+      source_text: Hôm đó trời đẹp đến nỗi chúng tôi đi bộ ra biển.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It was such a beautiful day that we walked to the beach.
+        - It was such a beautiful day we walked to the beach.
+        - It was such a nice day that we walked to the beach.
+        - It was such a lovely day that we walked to the beach.
+        - The weather was so beautiful that we walked to the beach.
+        - The weather was so nice that we walked to the beach.
+        - The weather was so good that we walked to the beach.
+        - It was such good weather that we walked to the beach.
+        - It was such a beautiful day that we walked to the sea.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It was so beautiful day that we walked to the beach.
+        feedback_vi: Có danh từ day thì dùng such a, không dùng so.
+        error_tag: so_such_that
+      - answer: It was such beautiful day that we walked to the beach.
+        feedback_vi: Day là danh từ số ít đếm được, cần a sau such.
+        error_tag: article
+      - answer: It was a such beautiful day that we walked to the beach.
+        feedback_vi: A đứng sau such - such a beautiful day.
+        error_tag: word_order
+    explanation:
+      vi: Such a + tính từ + danh từ số ít + that. Nếu dùng so thì bỏ danh từ - The weather was so beautiful that…
+    display_answer: It was such a beautiful day that we walked to the beach.
+
+  # ---------------- application ----------------
+  - key: en:exercise:travel-culture-f-mcq-situation-host
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:embarrassed
+    prompt:
+      stem: "Bạn quên cởi giày khi vào nhà một người Nhật. Bạn kể lại cảm giác của mình. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: r5y, text: "I felt really embarrassed.", lang: en }
+        - { id: k1o, text: "I felt really embarrassing.", lang: en }
+        - { id: u9f, text: "It was really embarrassed.", lang: en }
+        - { id: d7w, text: "I felt really boring.", lang: en }
+    answer:
+      correct_option_id: r5y
+    explanation:
+      vi: Cảm giác của bạn dùng -ed - I felt embarrassed. Tình huống mới là embarrassing (It was embarrassing); boring không phải nghĩa "ngượng".
+    display_answer: "I felt really embarrassed."
+
+  - key: en:exercise:travel-culture-f-translate-boring-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:boring
+    prompt:
+      source_text: The guide was so boring that everyone was bored.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Người hướng dẫn nhạt nhẽo đến nỗi ai cũng thấy chán.
+        - Hướng dẫn viên nhạt nhẽo đến nỗi ai cũng thấy chán.
+        - Hướng dẫn viên nói chán đến nỗi mọi người đều thấy chán.
+        - Hướng dẫn viên chán đến mức ai cũng thấy chán.
+        - Hướng dẫn viên nhạt nhẽo đến mức mọi người đều chán.
+        - Hướng dẫn viên tẻ nhạt đến nỗi mọi người đều thấy chán.
+        - Người hướng dẫn tẻ nhạt đến mức ai cũng chán.
+        - Hướng dẫn viên nhàm chán đến nỗi ai cũng thấy chán.
+        - Hướng dẫn viên quá nhạt nhẽo nên ai cũng thấy chán.
+        - Hướng dẫn viên chán quá nên mọi người đều chán.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Boring tả người hướng dẫn (gây chán, nhạt nhẽo); bored tả cảm giác của mọi người. So… that = "đến nỗi, đến mức".
+    display_answer: Hướng dẫn viên nhạt nhẽo đến nỗi ai cũng thấy chán.
+
+  - key: en:exercise:travel-culture-f-order-interested
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:interested
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Bạn có thích văn hoá địa phương không?\""
+      tokens:
+        - { id: i-culture, text: culture }
+        - { id: i-interesting, text: interesting }
+        - { id: i-in, text: in }
+        - { id: i-you, text: you }
+        - { id: i-local, text: local }
+        - { id: i-are, text: Are }
+        - { id: i-interested, text: interested }
+    answer:
+      orders:
+        - [i-are, i-you, i-interested, i-in, i-local, i-culture]
+    explanation:
+      vi: Hỏi về cảm giác của người nghe nên dùng interested in. Are you interesting? lại là hỏi "bạn có thú vị không".
+    display_answer: Are you interested in local culture?

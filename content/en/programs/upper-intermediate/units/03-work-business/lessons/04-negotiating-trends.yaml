@@ -1,0 +1,430 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:negotiating-trends
+order_index: 4
+level: b2
+title:
+  vi: Đàm phán và nói về số liệu kinh doanh
+objectives:
+  - vi: Đưa ra đề nghị và điều kiện khi đàm phán - We could offer…, provided that, as long as.
+  - vi: Công nhận rồi phản bác lịch sự - That's a fair point, but…; đạt được thỏa hiệp.
+  - vi: Mô tả xu hướng số liệu - rise sharply, fall slightly, remain stable, peak at, increase by / to.
+estimated_minutes: 22
+skills: [speaking, writing, vocabulary, grammar]
+prerequisites: [en:lesson:meetings-language]
+items:
+  - item: en:item:we-could-offer
+  - item: en:item:provided-that
+  - item: en:item:as-long-as
+  - item: en:item:thats-a-fair-point-but
+  - item: en:item:compromise
+  - item: en:item:revenue
+  - item: en:item:market-share
+  - item: en:item:increase-by-to
+  - item: en:item:rise-sharply
+  - item: en:item:fall-slightly
+  - item: en:item:remain-stable
+  - item: en:item:peak-at
+  - item: en:item:reach-an-agreement
+    role: reuse
+  - item: en:item:first-conditional
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đưa ra được đề nghị có điều kiện khi thương lượng với đối tác, phản bác mà không gây căng thẳng, và mô tả được số liệu doanh thu, thị phần đang tăng giảm thế nào.
+  - type: explain
+    text:
+      vi: "Khi đàm phán, người nói tiếng Anh dùng could để đề nghị mềm mỏng: We could offer a 5% discount. Điều kiện đi kèm dùng provided (that) hoặc as long as - trang trọng và chặt chẽ hơn if."
+  - type: explain
+    text:
+      vi: "Giống if, sau provided that / as long as dùng hiện tại đơn dù nói về tương lai: provided that you pay by May. Tiếng Việt nói \"miễn là anh sẽ trả\", nhưng tiếng Anh không dùng will ở vế điều kiện."
+  - type: explain
+    text:
+      vi: "Mô tả xu hướng: động từ + trạng từ (rise sharply, fall slightly) hoặc tính từ + danh từ (a sharp rise, a slight fall). Lượng thay đổi đi với by (rose by 10%), mức cuối đi với to (rose to $5 million) - tiếng Việt không cần giới từ nên người Việt hay dùng sai \"for\"."
+  - type: deep_explain
+    text:
+      vi: "Trước khi phản bác, hãy công nhận ý của đối phương (That's a fair point, but… / I see what you mean, but…) - cách này giữ quan hệ tốt, rất quan trọng trong văn hoá kinh doanh. Khi cả hai bên nhượng bộ, bạn reach a compromise. Với số liệu, rise và fall là nội động từ (doanh số tự tăng); muốn nói mình làm tăng thì dùng increase / raise / boost: We increased revenue by 15%. Peak at + con số là đạt đỉnh, remain stable là giữ ổn định."
+  - type: example
+    target: We could offer free delivery, provided that you order at least 500 units.
+    target_lang: en
+    translation:
+      vi: Chúng tôi có thể miễn phí vận chuyển, với điều kiện quý công ty đặt ít nhất 500 sản phẩm.
+    note:
+      vi: Could để đề nghị mềm; provided that + hiện tại đơn (order) dù nói về tương lai.
+  - type: example
+    target: That's a fair point, but our costs have risen sharply this year, so we can't go below $12 per unit.
+    target_lang: en
+    translation:
+      vi: Anh nói cũng có lý, nhưng chi phí của chúng tôi năm nay tăng mạnh, nên chúng tôi không thể xuống dưới 12 đô một sản phẩm.
+    note:
+      vi: Công nhận trước rồi mới phản bác, kèm lý do bằng số liệu.
+  - type: example
+    target: Revenue rose by 15% to $3.2 million, and our market share increased slightly.
+    target_lang: en
+    translation:
+      vi: Doanh thu tăng 15%, lên 3,2 triệu đô, và thị phần của chúng tôi tăng nhẹ.
+    note:
+      vi: By + lượng thay đổi (15%), to + mức cuối ($3.2 million).
+  - type: example
+    target: Sales peaked at 40,000 units in December, fell slightly in January and then remained stable.
+    target_lang: en
+    translation:
+      vi: Doanh số đạt đỉnh 40.000 sản phẩm vào tháng Mười Hai, giảm nhẹ trong tháng Một và sau đó giữ ổn định.
+    note:
+      vi: Ba cụm mô tả xu hướng trong một câu - peak at, fall slightly, remain stable.
+  - type: common_mistake
+    wrong: We'll agree, provided that you will pay a deposit.
+    right: We'll agree, provided that you pay a deposit.
+    target_lang: en
+    note:
+      vi: Sau provided that / as long as dùng hiện tại đơn, giống if. Tiếng Việt có "sẽ" ở vế điều kiện, nhưng tiếng Anh thì không.
+  - type: common_mistake
+    wrong: We increased revenue for 10%.
+    right: We increased revenue by 10%.
+    target_lang: en
+    note:
+      vi: "\"Tăng 10%\" - lượng thay đổi luôn đi với by. For dùng cho khoảng thời gian, không dùng cho mức tăng giảm."
+  - type: common_mistake
+    wrong: Our profits rose sharp last year.
+    right: Our profits rose sharply last year.
+    target_lang: en
+    note:
+      vi: Bổ nghĩa cho động từ cần trạng từ (sharply). Nếu muốn dùng sharp thì đổi sang danh từ - a sharp rise.
+  - type: summary
+    points:
+      - vi: "Đề nghị: We could offer… / How about…? - Điều kiện: provided (that) / as long as + hiện tại đơn."
+      - vi: "Phản bác lịch sự: That's a fair point, but… - Kết quả: reach a compromise / an agreement."
+      - vi: "Xu hướng: rise / fall + sharply / slightly; remain stable; peak at + số."
+      - vi: "By = lượng thay đổi (by 10%); to = mức cuối (to $5 million); không dùng for."
+      - vi: "Từ vựng: revenue (doanh thu) khác profit (lợi nhuận); market share (thị phần)."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:wb-nego-mcq-provided-that
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:provided-that
+    prompt:
+      stem: "Chọn câu đúng: \"Chúng tôi có thể giao hàng vào tuần sau, với điều kiện quý công ty xác nhận đơn hàng hôm nay.\""
+      stem_lang: vi
+      options:
+        - { id: y4g, text: "We can deliver next week, provided that you confirm the order today.", lang: en }
+        - { id: b8k, text: "We can deliver next week, provided that you will confirm the order today.", lang: en }
+        - { id: m2c, text: "We can deliver next week, provide that you confirm the order today.", lang: en }
+        - { id: s6o, text: "We can deliver next week, as long you confirm the order today.", lang: en }
+    answer:
+      correct_option_id: y4g
+    explanation:
+      vi: Sau provided that dùng hiện tại đơn (confirm), không có will. Provide that thiếu đuôi -ed; as long phải đủ as long as.
+    display_answer: "We can deliver next week, provided that you confirm the order today."
+
+  - key: en:exercise:wb-nego-listen-fair-point
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:thats-a-fair-point-but
+    prompt:
+      audio_asset_id: null
+      fallback_text: That's a fair point, but we've already reduced our price twice.
+      options:
+        - { id: t3w, text: "Anh nói cũng có lý, nhưng chúng tôi đã giảm giá hai lần rồi.", lang: vi }
+        - { id: g7r, text: "Đó là một điểm công bằng, và chúng tôi sẽ giảm giá hai lần.", lang: vi }
+        - { id: a5u, text: "Anh nói sai rồi, chúng tôi chưa bao giờ giảm giá.", lang: vi }
+        - { id: n0j, text: "Hội chợ đó rất hay, nhưng giá đã tăng gấp đôi.", lang: vi }
+    answer:
+      correct_option_id: t3w
+    explanation:
+      vi: That's a fair point, but… là công nhận ý đối phương có lý rồi phản bác. Dịch từng chữ "điểm công bằng" sai nghĩa; fair (hội chợ) là từ đồng âm không hợp ngữ cảnh.
+    display_answer: "Anh nói cũng có lý, nhưng chúng tôi đã giảm giá hai lần rồi."
+
+  - key: en:exercise:wb-nego-fill-by-to-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:increase-by-to
+    prompt:
+      template: "Revenue increased {{b1}} 20%, from $4 million {{b2}} $4.8 million."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Doanh thu tăng 20%, từ 4 triệu lên 4,8 triệu đô."
+        - "Gợi ý: lượng thay đổi dùng b…; mức cuối dùng t…"
+    answer:
+      blanks:
+        b1: [by]
+        b2: [to]
+    known_wrong:
+      - answer: for
+        feedback_vi: Mức tăng giảm không dùng for - lượng thay đổi đi với by.
+        error_tag: increase_by_for
+      - answer: with
+        feedback_vi: Increase by + lượng thay đổi, không dùng with.
+        error_tag: increase_by_for
+      - answer: at
+        feedback_vi: At dùng với peak at. Ở đây cần by (lượng) và to (mức cuối).
+        error_tag: increase_by_for
+    explanation:
+      vi: 20% là lượng tăng → by; 4,8 triệu là mức đạt được → from… to…
+    display_answer: "Revenue increased by 20%, from $4 million to $4.8 million."
+
+  - key: en:exercise:wb-nego-mcq-trend-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:remain-stable
+    prompt:
+      stem: "Biểu đồ cho thấy doanh số không tăng cũng không giảm suốt sáu tháng. Cụm nào mô tả đúng?"
+      stem_lang: vi
+      options:
+        - { id: h1p, text: remained stable, lang: en }
+        - { id: w7d, text: rose sharply, lang: en }
+        - { id: k5n, text: peaked at, lang: en }
+        - { id: c3f, text: fell slightly, lang: en }
+    answer:
+      correct_option_id: h1p
+    explanation:
+      vi: Remain stable là giữ ổn định, đi ngang. Rose sharply là tăng mạnh, fell slightly là giảm nhẹ, peaked at là đạt đỉnh tại một mức.
+    display_answer: remained stable
+
+  # ---------------- recall ----------------
+  - key: en:exercise:wb-nego-fill-trend-adverbs
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:rise-sharply
+    prompt:
+      template: "Sales rose {{b1}} in the first quarter, peaked {{b2}} 50,000 units in April and then fell {{b3}}, by only 2%."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 2 }
+        - { id: b3, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [sharply, dramatically, significantly, steeply, rapidly, considerably, substantially]
+        b2: [at]
+        b3: [slightly]
+    known_wrong:
+      - answer: sharp
+        feedback_vi: Bổ nghĩa cho động từ rose cần trạng từ - sharply.
+        error_tag: trend_adverb
+      - answer: slight
+        feedback_vi: Bổ nghĩa cho fell cần trạng từ - slightly.
+        error_tag: trend_adverb
+      - answer: to
+        feedback_vi: Đạt đỉnh tại một mức dùng peak at.
+        error_tag: peak_at
+    explanation:
+      vi: Động từ xu hướng đi với trạng từ (rose sharply, fell slightly). Giảm chỉ 2% là giảm nhẹ - slightly. Đạt đỉnh tại một con số - peaked at.
+    display_answer: "Sales rose sharply in the first quarter, peaked at 50,000 units in April and then fell slightly, by only 2%."
+
+  - key: en:exercise:wb-nego-translate-revenue-by
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:revenue
+    prompt:
+      source_text: Năm ngoái chúng tôi đã tăng doanh thu 10%.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We increased revenue by 10% last year.
+        - Last year we increased revenue by 10%.
+        - Last year, we increased revenue by 10%.
+        - We increased our revenue by 10% last year.
+        - Last year we increased our revenue by 10%.
+        - We increased revenue by ten percent last year.
+        - We increased revenue by 10 percent last year.
+        - We boosted revenue by 10% last year.
+        - We raised revenue by 10% last year.
+        - Our revenue increased by 10% last year.
+        - Our revenue rose by 10% last year.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We increased revenue for 10% last year.
+        feedback_vi: Lượng tăng đi với by, không phải for.
+        error_tag: increase_by_for
+      - answer: We rose revenue by 10% last year.
+        feedback_vi: Rise là nội động từ, không có tân ngữ. Dùng increase / raise revenue.
+        error_tag: rise_raise
+    explanation:
+      vi: "\"Chúng tôi tăng doanh thu\" có tân ngữ nên dùng increase / raise / boost (không dùng rise); mức tăng đi với by."
+    display_answer: We increased revenue by 10% last year.
+
+  - key: en:exercise:wb-nego-translate-as-long-as
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:as-long-as
+    prompt:
+      source_text: Chúng tôi có thể giảm giá 5%, miễn là quý công ty ký hợp đồng hai năm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We could offer a 5% discount, as long as you sign a two-year contract.
+        - We can offer a 5% discount, as long as you sign a two-year contract.
+        - We could offer a 5% discount, provided that you sign a two-year contract.
+        - We can offer a 5% discount, provided that you sign a two-year contract.
+        - We could offer a 5% discount, provided you sign a two-year contract.
+        - We can offer a 5% discount, provided you sign a two-year contract.
+        - We could give you a 5% discount, as long as you sign a two-year contract.
+        - We can give you a 5% discount, as long as you sign a two-year contract.
+        - We could give you a 5% discount, provided that you sign a two-year contract.
+        - We can give you a 5% discount as long as you sign a two-year contract.
+        - We could reduce the price by 5%, as long as you sign a two-year contract.
+        - We can reduce the price by 5%, as long as you sign a two-year contract.
+        - We could reduce the price by 5%, provided that you sign a two-year contract.
+        - We could offer a 5% discount, providing that you sign a two-year contract.
+        - We could offer a 5% discount, so long as you sign a two-year contract.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We could offer a 5% discount, as long as you will sign a two-year contract.
+        feedback_vi: Sau as long as dùng hiện tại đơn - you sign, không có will.
+        error_tag: conditional_will
+      - answer: We could offer a 5% discount, provided that you will sign a two-year contract.
+        feedback_vi: Sau provided that dùng hiện tại đơn - you sign, không có will.
+        error_tag: conditional_will
+      - answer: We could offer 5% discount, as long as you sign a two-year contract.
+        feedback_vi: Discount là danh từ đếm được - a 5% discount.
+        error_tag: article
+      - answer: We could reduce the price for 5%, as long as you sign a two-year contract.
+        feedback_vi: Giảm bao nhiêu phần trăm dùng by - reduce the price by 5%.
+        error_tag: increase_by_for
+    explanation:
+      vi: "\"Miễn là\" là as long as / provided (that), theo sau là hiện tại đơn (sign). A 5% discount cần mạo từ a; two-year có gạch nối và không thêm s vì đứng trước danh từ."
+    display_answer: We could offer a 5% discount, as long as you sign a two-year contract.
+
+  # ---------------- application ----------------
+  - key: en:exercise:wb-nego-order-market-share
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:market-share
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chúng tôi đã mất thị phần vào tay các đối thủ rẻ hơn.\""
+      tokens:
+        - { id: k-share, text: share }
+        - { id: k-cheaper, text: cheaper }
+        - { id: k-lost, text: lost }
+        - { id: k-to, text: to }
+        - { id: k-weve, text: "We've" }
+        - { id: k-competitors, text: competitors }
+        - { id: k-market, text: market }
+        - { id: k-for, text: for }
+    answer:
+      orders:
+        - [k-weve, k-lost, k-market, k-share, k-to, k-cheaper, k-competitors]
+    explanation:
+      vi: Lose market share to + đối thủ - mất thị phần vào tay ai. For là token nhiễu.
+    display_answer: "We've lost market share to cheaper competitors."
+
+  - key: en:exercise:wb-nego-translate-compromise-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:compromise
+    prompt:
+      source_text: After a long discussion, both sides reached a compromise on the price.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sau một cuộc thảo luận dài, hai bên đã đạt được thỏa hiệp về giá.
+        - Sau một cuộc thảo luận dài, cả hai bên đã đạt được thỏa hiệp về giá.
+        - Sau một cuộc thảo luận dài, hai bên đã thỏa hiệp được về giá.
+        - Sau một cuộc thảo luận dài, cả hai bên đã thỏa hiệp về giá.
+        - Sau một hồi thảo luận lâu, hai bên đã đạt được thỏa hiệp về giá.
+        - Sau một cuộc thảo luận dài, hai bên đã đạt được thỏa hiệp về giá cả.
+        - Sau một cuộc thảo luận dài, hai bên đã đi đến thỏa hiệp về giá.
+        - Sau cuộc thảo luận dài, hai bên đã đạt được thỏa hiệp về giá.
+        - Sau một cuộc thảo luận dài, hai bên đã nhượng bộ nhau về giá.
+        - Sau một cuộc thảo luận dài, hai bên đã đạt được thoả hiệp về giá.
+        - Sau một cuộc thảo luận dài, cả hai bên đã đạt được thoả hiệp về giá.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sau một cuộc thảo luận dài, hai bên đã đạt được thỏa thuận về giá.
+        feedback_vi: Gần đúng, nhưng compromise là thỏa hiệp (mỗi bên nhượng bộ một phần); thỏa thuận là agreement.
+        error_tag: compromise_agreement
+    explanation:
+      vi: Reach a compromise là đạt được thỏa hiệp - mỗi bên nhường một chút. Nó khác reach an agreement (thỏa thuận nói chung).
+    display_answer: Sau một cuộc thảo luận dài, hai bên đã đạt được thỏa hiệp về giá.
+
+  - key: en:exercise:wb-nego-mcq-situation-counter
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:we-could-offer
+    prompt:
+      stem: Khách hàng đòi giảm giá 15%. Bạn chỉ có thể giảm 8% nếu họ trả trước 50%, và muốn giữ không khí thân thiện. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: d6v, text: "That's a fair point, but 15% is too much for us. We could offer 8%, provided that you pay 50% in advance.", lang: en }
+        - { id: p9z, text: "You are wrong, 15% is too much. We give you 8% if you will pay 50% in advance.", lang: en }
+        - { id: i2q, text: "That's a fair point, but 15% is too much for us. We could offer 8%, provided that you will pay 50% in advance.", lang: en }
+        - { id: o4m, text: "That's a fair point, so we'll give you 15%, provided that you pay 50% in advance.", lang: en }
+    answer:
+      correct_option_id: d6v
+    explanation:
+      vi: Câu đúng công nhận ý khách, từ chối nhẹ nhàng, đề nghị mềm bằng could và điều kiện provided that + hiện tại đơn. "You are wrong" quá gay gắt; "will pay" sai sau provided that / if; phương án cuối chấp nhận 15% - trái với tình huống.
+    display_answer: "That's a fair point, but 15% is too much for us. We could offer 8%, provided that you pay 50% in advance."
+
+  - key: en:exercise:wb-nego-translate-peak-stable
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:peak-at
+    prompt:
+      source_text: Lượng khách truy cập đạt đỉnh 20.000 vào tháng Bảy, sau đó giữ ổn định.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Visitor numbers peaked at 20,000 in July and then remained stable.
+        - Visitor numbers peaked at 20,000 in July, and then remained stable.
+        - Visitor numbers peaked at 20,000 in July, then remained stable.
+        - Visitor numbers peaked at 20000 in July and then remained stable.
+        - The number of visitors peaked at 20,000 in July and then remained stable.
+        - The number of visitors peaked at 20,000 in July, then remained stable.
+        - Visitor numbers reached a peak of 20,000 in July and then remained stable.
+        - The number of visitors reached a peak of 20,000 in July and then remained stable.
+        - Visitor numbers peaked at 20,000 in July and then stayed stable.
+        - Visitor numbers peaked at 20,000 in July and then levelled off.
+        - Visitor numbers peaked at 20,000 in July and then leveled off.
+        - Visitor numbers peaked at 20,000 in July and remained stable after that.
+        - Visits peaked at 20,000 in July and then remained stable.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Visitor numbers peaked to 20,000 in July and then remained stable.
+        feedback_vi: Đạt đỉnh tại một mức dùng peak at, không phải peak to.
+        error_tag: peak_at
+      - answer: Visitor numbers peaked at 20,000 in July and then remained stably.
+        feedback_vi: Sau remain là tính từ - remained stable.
+        error_tag: remain_adjective
+      - answer: Visitor numbers peaked at 20,000 on July and then remained stable.
+        feedback_vi: Tháng dùng in - in July.
+        error_tag: preposition_time
+    explanation:
+      vi: Đạt đỉnh tại một con số là peak at / reach a peak of; giữ ổn định là remain stable (tính từ sau remain) hoặc level off. Tháng đi với in.
+    display_answer: Visitor numbers peaked at 20,000 in July and then remained stable.

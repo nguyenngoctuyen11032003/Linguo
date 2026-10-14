@@ -1,0 +1,1033 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Cuộc sống hằng ngày: lúc này & lời mời" (A2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: What are you doing? ----------------
+  - key: en:item:present-continuous-now
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: "hiện tại tiếp diễn: am / is / are + V-ing (đang làm)"
+      pos: thì động từ
+    back:
+      meaning:
+        vi: Nói việc đang diễn ra ngay lúc nói, hoặc việc tạm thời trong giai đoạn này (tuần này, dạo này).
+      examples:
+        - target: "A: What are you doing? B: I'm cooking dinner."
+          translation:
+            vi: "A: Bạn đang làm gì thế? B: Mình đang nấu bữa tối."
+        - target: I'm working from home this week.
+          translation:
+            vi: Tuần này tôi làm việc ở nhà.
+      confusion:
+        vi: Tiếng Việt chỉ thêm "đang", còn tiếng Anh cần đủ hai phần - be và V-ing. "I am go" hay "I going" đều sai; phải là I'm going.
+
+  - key: en:item:ing-spelling
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, writing]
+    front:
+      text: "cách thêm -ing: make → making, sit → sitting, lie → lying"
+      pos: chính tả
+    back:
+      meaning:
+        vi: "Quy tắc viết V-ing: bỏ e câm (make → making), gấp đôi phụ âm cuối sau một nguyên âm ngắn có nhấn (sit → sitting, run → running), ie → y (lie → lying)."
+      examples:
+        - target: She's writing an email and he's sitting next to her.
+          translation:
+            vi: Cô ấy đang viết email còn anh ấy đang ngồi cạnh cô ấy.
+      confusion:
+        vi: Không gấp đôi khi từ kết thúc bằng hai nguyên âm + phụ âm (read → reading, rain → raining) hoặc bằng w, x, y (play → playing).
+
+  - key: en:item:present-simple-vs-continuous
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "hiện tại đơn (thói quen) và hiện tại tiếp diễn (lúc này, tạm thời)"
+      pos: so sánh thì
+    back:
+      meaning:
+        vi: "Hiện tại đơn nói việc thường xuyên, lâu dài (I work in an office). Hiện tại tiếp diễn nói việc đang xảy ra hoặc tạm thời (But this week I'm working from home)."
+      examples:
+        - target: I usually take the bus, but today I'm walking.
+          translation:
+            vi: Tôi thường đi xe buýt, nhưng hôm nay tôi đi bộ.
+        - target: He lives in Da Nang, but he's staying in Hanoi this month.
+          translation:
+            vi: Anh ấy sống ở Đà Nẵng, nhưng tháng này anh ấy đang ở Hà Nội.
+      confusion:
+        vi: Từ chỉ thói quen (usually, every day, always) đi với hiện tại đơn; từ chỉ lúc này (now, at the moment, this week, today) thường đi với hiện tại tiếp diễn.
+
+  - key: en:item:at-the-moment
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: at the moment
+      ipa: UK /ət ðə ˈməʊmənt/ · US /ət ðə ˈmoʊmənt/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: lúc này, hiện giờ
+      examples:
+        - target: She's in a meeting at the moment.
+          translation:
+            vi: Lúc này cô ấy đang họp.
+      confusion:
+        vi: Luôn có at the - không nói "in the moment" hay "at moment".
+
+  - key: en:item:right-now
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: right now
+      ipa: /ˌraɪt ˈnaʊ/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: ngay bây giờ, ngay lúc này
+      examples:
+        - target: I can't talk right now. I'm driving.
+          translation:
+            vi: Giờ mình không nói chuyện được. Mình đang lái xe.
+      pronunciation_note:
+        vi: Nhấn vào now. Chữ gh trong right câm, đọc giống "rai".
+
+  - key: en:item:these-days
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: these days
+      ipa: /ˈðiːz deɪz/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: dạo này, gần đây
+      examples:
+        - target: My brother is learning Japanese these days.
+          translation:
+            vi: Dạo này em trai tôi đang học tiếng Nhật.
+      confusion:
+        vi: These days nói về giai đoạn hiện tại, thường đi với hiện tại tiếp diễn khi việc chỉ là tạm thời.
+
+  - key: en:item:work-from-home
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: work from home
+      ipa: UK /ˌwɜːk frəm ˈhəʊm/ · US /ˌwɝːk frəm ˈhoʊm/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: làm việc ở nhà, làm việc từ xa
+      examples:
+        - target: I'm working from home today because my son is ill.
+          translation:
+            vi: Hôm nay tôi làm việc ở nhà vì con trai tôi bị ốm.
+      confusion:
+        vi: Dùng from, không dùng "work at home" khi nói làm việc từ xa cho công ty (work at home vẫn hiểu được nhưng ít tự nhiên hơn).
+
+  - key: en:item:wait-for
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: wait for
+      ipa: /ˈweɪt fə/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: chờ, đợi (ai / cái gì)
+      examples:
+        - target: I'm waiting for the bus.
+          translation:
+            vi: Tôi đang đợi xe buýt.
+      confusion:
+        vi: Có người hoặc vật đi sau thì phải có for - wait for you, không nói "wait you".
+
+  - key: en:item:look-for
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: look for
+      ipa: /ˈlʊk fə/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: tìm (cái gì, ai)
+      examples:
+        - target: "A: What are you doing? B: I'm looking for my keys."
+          translation:
+            vi: "A: Bạn đang làm gì đấy? B: Mình đang tìm chìa khoá."
+      confusion:
+        vi: Look for là đang tìm; find là tìm thấy. I'm looking for my phone (chưa thấy) khác I found my phone (thấy rồi).
+
+  - key: en:item:wear
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: wear
+      ipa: UK /weə/ · US /wer/
+      pos: động từ
+    back:
+      meaning:
+        vi: mặc, đội, đeo (quần áo, mũ, kính)
+      examples:
+        - target: She's wearing a red dress today.
+          translation:
+            vi: Hôm nay cô ấy mặc váy đỏ.
+      pronunciation_note:
+        vi: Wear đọc giống where (/weə/), không đọc "wia".
+      confusion:
+        vi: Tiếng Việt có mặc, đội, đeo, còn tiếng Anh dùng chung wear - wear a hat, wear glasses.
+
+  - key: en:item:sit
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: sit (sitting)
+      ipa: /sɪt/
+      pos: động từ
+    back:
+      meaning:
+        vi: ngồi
+      examples:
+        - target: Two men are sitting on a bench.
+          translation:
+            vi: Hai người đàn ông đang ngồi trên ghế dài.
+      pronunciation_note:
+        vi: /ɪ/ ngắn, khác seat /siːt/ (chỗ ngồi) có /iː/ dài.
+      confusion:
+        vi: Thêm -ing phải gấp đôi t - sitting, không viết "siting".
+
+  # ---------------- Bài 2: I know him ----------------
+  - key: en:item:stative-verbs
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "động từ trạng thái: want, know, like, need, understand (không chia -ing)"
+      pos: nhóm động từ
+    back:
+      meaning:
+        vi: Động từ chỉ suy nghĩ, cảm xúc, sở hữu, mong muốn - thường không dùng ở dạng tiếp diễn, kể cả khi tiếng Việt có chữ "đang".
+      examples:
+        - target: I know the answer.
+          translation:
+            vi: Tôi biết câu trả lời.
+        - target: She wants a new phone at the moment.
+          translation:
+            vi: Lúc này cô ấy đang muốn một chiếc điện thoại mới.
+      confusion:
+        vi: Không nói "I'm knowing" hay "I'm wanting". Dù có right now hay at the moment, vẫn dùng hiện tại đơn - I want it right now.
+
+  - key: en:item:want
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: want
+      ipa: UK /wɒnt/ · US /wɑːnt/
+      pos: động từ
+    back:
+      meaning:
+        vi: muốn
+      examples:
+        - target: Do you want a coffee?
+          translation:
+            vi: Bạn muốn uống cà phê không?
+        - target: I want to go home.
+          translation:
+            vi: Tôi muốn về nhà.
+      pronunciation_note:
+        vi: Đọc /wɒnt/ có âm o, khác won't /wəʊnt/ (sẽ không).
+      confusion:
+        vi: Muốn làm gì thì dùng want to + động từ - I want to sleep, không nói "I want sleep".
+
+  - key: en:item:know
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: know
+      ipa: UK /nəʊ/ · US /noʊ/
+      pos: động từ
+    back:
+      meaning:
+        vi: biết, quen biết
+      examples:
+        - target: Do you know him? He's my new colleague.
+          translation:
+            vi: Bạn có quen anh ấy không? Anh ấy là đồng nghiệp mới của tôi.
+      pronunciation_note:
+        vi: Chữ k câm, know đọc giống no.
+      confusion:
+        vi: "Không có dạng \"knowing\" khi nói đang biết: I know, không nói I'm knowing."
+
+  - key: en:item:need
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: need
+      ipa: /niːd/
+      pos: động từ
+    back:
+      meaning:
+        vi: cần
+      examples:
+        - target: I need your help right now.
+          translation:
+            vi: Tôi cần bạn giúp ngay bây giờ.
+      confusion:
+        vi: "Need là động từ trạng thái: I need, không nói I'm needing."
+
+  - key: en:item:understand
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: understand
+      ipa: UK /ˌʌndəˈstænd/ · US /ˌʌndɚˈstænd/
+      pos: động từ
+    back:
+      meaning:
+        vi: hiểu
+      examples:
+        - target: Sorry, I don't understand. Can you say that again?
+          translation:
+            vi: Xin lỗi, tôi không hiểu. Bạn nói lại được không?
+      pronunciation_note:
+        vi: Nhấn âm cuối -STAND.
+      confusion:
+        vi: Phủ định là I don't understand, không nói "I'm not understanding" trong giao tiếp hằng ngày.
+
+  - key: en:item:think-opinion-activity
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "I think… (ý kiến) và I'm thinking about… (đang suy nghĩ)"
+      pos: động từ hai nghĩa
+    back:
+      meaning:
+        vi: "Think = nghĩ rằng (ý kiến) thì không chia -ing. Think about / of = đang cân nhắc, đang nghĩ đến (hoạt động) thì chia -ing được."
+      examples:
+        - target: I think it's a good idea.
+          translation:
+            vi: Tôi nghĩ đó là ý hay.
+        - target: I'm thinking about my holiday.
+          translation:
+            vi: Tôi đang nghĩ về kỳ nghỉ của mình.
+      confusion:
+        vi: Không nói "I'm thinking it's a good idea" khi đưa ra ý kiến.
+
+  - key: en:item:object-pronouns
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "đại từ tân ngữ: me, you, him, her, it, us, them"
+      pos: đại từ
+    back:
+      meaning:
+        vi: Đứng sau động từ hoặc giới từ (call me, with them). Tiếng Việt dùng cùng một từ "anh ấy" cho cả chủ ngữ và tân ngữ, tiếng Anh thì đổi he → him.
+      examples:
+        - target: I like her, but I don't know him.
+          translation:
+            vi: Tôi thích cô ấy, nhưng tôi không quen anh ấy.
+        - target: Can you call me later?
+          translation:
+            vi: Lát nữa bạn gọi cho tôi được không?
+      confusion:
+        vi: Sau động từ và giới từ không dùng I, he, she, we, they - nói with us, không nói "with we".
+
+  - key: en:item:me
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: me
+      ipa: /miː/
+      pos: đại từ tân ngữ
+    back:
+      meaning:
+        vi: tôi, mình (làm tân ngữ - sau động từ, giới từ)
+      examples:
+        - target: Please call me tomorrow.
+          translation:
+            vi: Mai bạn gọi cho tôi nhé.
+      confusion:
+        vi: "Sau động từ dùng me, không dùng I: Help me!, không nói Help I!"
+
+  - key: en:item:him
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: him
+      ipa: /hɪm/
+      pos: đại từ tân ngữ
+    back:
+      meaning:
+        vi: anh ấy, ông ấy, cậu ấy (làm tân ngữ)
+      examples:
+        - target: I'm waiting for him.
+          translation:
+            vi: Tôi đang đợi anh ấy.
+      confusion:
+        vi: He làm chủ ngữ (He is busy), him đứng sau động từ hoặc giới từ (I know him).
+
+  - key: en:item:us
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: us
+      ipa: /ʌs/
+      pos: đại từ tân ngữ
+    back:
+      meaning:
+        vi: chúng tôi, chúng mình (làm tân ngữ)
+      examples:
+        - target: Would you like to come with us?
+          translation:
+            vi: Bạn có muốn đi cùng bọn mình không?
+      confusion:
+        vi: Sau with, for, to… dùng us, không dùng we.
+
+  - key: en:item:them
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: them
+      ipa: /ðem/
+      pos: đại từ tân ngữ
+    back:
+      meaning:
+        vi: họ, chúng nó, những cái đó (làm tân ngữ)
+      examples:
+        - target: I love these shoes. I'm wearing them today.
+          translation:
+            vi: Tôi rất thích đôi giày này. Hôm nay tôi đang đi chúng.
+      pronunciation_note:
+        vi: Âm /ð/ đặt đầu lưỡi giữa hai hàm răng, không đọc thành "dem" hay "zem".
+      confusion:
+        vi: Them dùng cho cả người lẫn đồ vật số nhiều.
+
+  - key: en:item:possessive-pronouns
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "đại từ sở hữu: mine, yours, his, hers, ours, theirs"
+      pos: đại từ
+    back:
+      meaning:
+        vi: "Thay cho \"của ai + đồ vật\" và đứng một mình, không có danh từ theo sau: It's my book → It's mine."
+      examples:
+        - target: "A: Is this your bag? B: Yes, it's mine."
+          translation:
+            vi: "A: Đây có phải túi của bạn không? B: Đúng, của mình."
+        - target: This isn't my phone. It's hers.
+          translation:
+            vi: Đây không phải điện thoại của tôi. Của cô ấy đấy.
+      confusion:
+        vi: "My, your, her + danh từ (my book); mine, yours, hers đứng một mình. Không nói \"mine book\" hay \"It's my\"."
+
+  - key: en:item:mine
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: mine
+      ipa: /maɪn/
+      pos: đại từ sở hữu
+    back:
+      meaning:
+        vi: của tôi, của mình (đứng một mình)
+      examples:
+        - target: That coffee is mine.
+          translation:
+            vi: Cốc cà phê đó là của tôi.
+      confusion:
+        vi: Sau mine không có danh từ. Nói my book hoặc It's mine, không nói "mine book".
+
+  - key: en:item:yours
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: yours
+      ipa: UK /jɔːz/ · US /jʊrz/
+      pos: đại từ sở hữu
+    back:
+      meaning:
+        vi: của bạn (đứng một mình)
+      examples:
+        - target: Is this umbrella yours?
+          translation:
+            vi: Cái ô này có phải của bạn không?
+      confusion:
+        vi: Yours không có dấu nháy - không viết "your's".
+
+  # ---------------- Bài 3: Describe a photo ----------------
+  - key: en:item:in-the-picture
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: In the picture / photo, …
+      ipa: UK /ɪn ðə ˈpɪktʃə/ · US /ɪn ðə ˈpɪktʃɚ/
+      pos: cụm giới từ
+    back:
+      meaning:
+        vi: Trong bức tranh / bức ảnh, …
+      examples:
+        - target: In the picture, a family is having dinner.
+          translation:
+            vi: Trong ảnh, một gia đình đang ăn tối.
+      confusion:
+        vi: Dùng in, không dùng "on the picture" khi nói người, vật bên trong ảnh.
+
+  - key: en:item:on-the-left-on-the-right
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: on the left / on the right
+      ipa: UK /ɒn ðə ˈleft/ · US /ɑːn ðə ˈleft/
+      pos: cụm giới từ
+    back:
+      meaning:
+        vi: ở bên trái / ở bên phải (của bức ảnh)
+      examples:
+        - target: On the left, a woman is reading a newspaper.
+          translation:
+            vi: Bên trái, một người phụ nữ đang đọc báo.
+      confusion:
+        vi: Dùng on the, không nói "in left" hay "at the left". Muốn nói rõ hơn thì thêm of - on the left of the picture.
+
+  - key: en:item:in-the-background
+    type: phrase
+    level: a2
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: in the background
+      ipa: /ɪn ðə ˈbækɡraʊnd/
+      pos: cụm giới từ
+    back:
+      meaning:
+        vi: ở phía sau, ở hậu cảnh
+      examples:
+        - target: In the background, there are some mountains.
+          translation:
+            vi: Phía sau là mấy ngọn núi.
+      pronunciation_note:
+        vi: Nhấn âm đầu BACK-ground.
+
+  - key: en:item:in-the-foreground
+    type: phrase
+    level: a2
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: in the foreground
+      ipa: UK /ɪn ðə ˈfɔːɡraʊnd/ · US /ɪn ðə ˈfɔːrɡraʊnd/
+      pos: cụm giới từ
+    back:
+      meaning:
+        vi: ở phía trước, tiền cảnh (gần người xem nhất)
+      examples:
+        - target: In the foreground, a dog is sleeping.
+          translation:
+            vi: Phía trước, một chú chó đang ngủ.
+      confusion:
+        vi: Foreground là phía trước bức ảnh; background là phía sau.
+
+  - key: en:item:in-the-middle
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: in the middle
+      ipa: /ɪn ðə ˈmɪdl/
+      pos: cụm giới từ
+    back:
+      meaning:
+        vi: ở giữa
+      examples:
+        - target: In the middle, a girl is holding a cake.
+          translation:
+            vi: Ở giữa, một cô bé đang cầm chiếc bánh.
+      confusion:
+        vi: In the middle là chính giữa ảnh; between là ở giữa hai người hoặc hai vật cụ thể.
+
+  - key: en:item:at-the-top-bottom
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: at the top / at the bottom
+      ipa: UK /ət ðə ˈtɒp/, /ət ðə ˈbɒtəm/ · US /ət ðə ˈtɑːp/, /ət ðə ˈbɑːtəm/
+      pos: cụm giới từ
+    back:
+      meaning:
+        vi: ở phía trên / ở phía dưới (của bức ảnh)
+      examples:
+        - target: At the top of the picture, you can see the sky.
+          translation:
+            vi: Ở phía trên bức ảnh, bạn thấy bầu trời.
+      confusion:
+        vi: Dùng at the, khác với on the left / on the right.
+
+  - key: en:item:there-is-someone-doing
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: "There's a man sitting… / There are two children playing…"
+      pos: cấu trúc mô tả
+    back:
+      meaning:
+        vi: "There is / are + người + V-ing: có ai đó đang làm gì (dùng để giới thiệu người trong ảnh)."
+      examples:
+        - target: There's a man sitting on the bench.
+          translation:
+            vi: Có một người đàn ông đang ngồi trên ghế.
+        - target: There are two children playing in the park.
+          translation:
+            vi: Có hai đứa trẻ đang chơi trong công viên.
+      confusion:
+        vi: Sau người không thêm is nữa - không nói "There is a man is sitting". Hoặc nói A man is sitting…
+
+  - key: en:item:smile
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: smile
+      ipa: /smaɪl/
+      pos: động từ, danh từ
+    back:
+      meaning:
+        vi: mỉm cười; nụ cười
+      examples:
+        - target: Everyone in the photo is smiling.
+          translation:
+            vi: Mọi người trong ảnh đều đang cười.
+      confusion:
+        vi: Smile là mỉm cười; laugh là cười thành tiếng. Thêm -ing thì bỏ e - smiling.
+
+  - key: en:item:hold
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: hold
+      ipa: UK /həʊld/ · US /hoʊld/
+      pos: động từ
+    back:
+      meaning:
+        vi: cầm, bế, nắm
+      examples:
+        - target: The woman is holding a baby.
+          translation:
+            vi: Người phụ nữ đang bế một em bé.
+      confusion:
+        vi: Hold là cầm, giữ trong tay; carry là cầm, mang đi chỗ khác (đang di chuyển).
+
+  - key: en:item:carry
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: carry
+      ipa: /ˈkæri/
+      pos: động từ
+    back:
+      meaning:
+        vi: mang, xách, vác
+      examples:
+        - target: He's carrying a big box.
+          translation:
+            vi: Anh ấy đang bê một cái thùng to.
+      pronunciation_note:
+        vi: Nhấn âm đầu CA-rry, âm /æ/ mở rộng miệng.
+
+  - key: en:item:look-at
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: look at
+      ipa: /ˈlʊk ət/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: nhìn (vào cái gì, ai)
+      examples:
+        - target: The children are looking at the camera.
+          translation:
+            vi: Bọn trẻ đang nhìn vào máy ảnh.
+      confusion:
+        vi: Có vật hoặc người theo sau thì cần at - look at me, không nói "look me".
+
+  - key: en:item:chat
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: chat
+      ipa: /tʃæt/
+      pos: động từ
+    back:
+      meaning:
+        vi: trò chuyện, tán gẫu
+      examples:
+        - target: Two friends are chatting in a café.
+          translation:
+            vi: Hai người bạn đang trò chuyện trong quán cà phê.
+      confusion:
+        vi: Thêm -ing phải gấp đôi t - chatting.
+
+  # ---------------- Bài 4: Invitations & phone calls ----------------
+  - key: en:item:would-you-like-to
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: Would you like to + động từ…?
+      ipa: /wʊd juː ˈlaɪk tə/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Bạn có muốn… không? (lời mời lịch sự)
+      examples:
+        - target: Would you like to have dinner with us on Saturday?
+          translation:
+            vi: Thứ Bảy bạn có muốn ăn tối cùng bọn mình không?
+      confusion:
+        vi: Mời làm gì thì phải có to - Would you like to go…?, không nói "Would you like go…?".
+
+  - key: en:item:do-you-fancy
+    type: phrase
+    level: a2
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: Do you fancy + V-ing / danh từ…?
+      ipa: /də juː ˈfænsi/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Bạn có thích / muốn… không? (lời rủ thân mật, hay dùng ở Anh)
+      examples:
+        - target: Do you fancy going to the cinema tonight?
+          translation:
+            vi: Tối nay đi xem phim không?
+      confusion:
+        vi: Sau fancy dùng V-ing hoặc danh từ - fancy going, fancy a coffee; không nói "fancy to go".
+
+  - key: en:item:id-love-to
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: I'd love to.
+      ipa: /aɪd ˈlʌv tə/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Mình rất thích / rất sẵn lòng (nhận lời mời)
+      examples:
+        - target: "A: Would you like to come to my party? B: I'd love to! Thanks."
+          translation:
+            vi: "A: Bạn có muốn đến tiệc của mình không? B: Có chứ! Cảm ơn nhé."
+      confusion:
+        vi: Trả lời Would you like to…? bằng I'd love to hoặc Yes, I'd like to - không nói "Yes, I like" (nghĩa là tôi thích nói chung).
+
+  - key: en:item:im-afraid-i-cant
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: I'm afraid I can't.
+      ipa: UK /aɪm əˈfreɪd aɪ ˈkɑːnt/ · US /aɪm əˈfreɪd aɪ ˈkænt/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Tiếc là mình không… được (từ chối lịch sự)
+      examples:
+        - target: I'm sorry, I'm afraid I can't. I'm working on Saturday.
+          translation:
+            vi: Xin lỗi nhé, tiếc là mình không đi được. Thứ Bảy mình phải làm.
+      confusion:
+        vi: Ở đây I'm afraid không có nghĩa là "sợ" mà là "tiếc là". Nên nói thêm lý do để lời từ chối nhẹ nhàng.
+
+  - key: en:item:busy
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: busy
+      ipa: /ˈbɪzi/
+      pos: tính từ
+    back:
+      meaning:
+        vi: bận
+      examples:
+        - target: Sorry, I'm busy this evening.
+          translation:
+            vi: Xin lỗi, tối nay mình bận.
+      pronunciation_note:
+        vi: Chữ u đọc /ɪ/ - "BI-zi", không đọc "bu-zi".
+      confusion:
+        vi: Busy là tính từ nên cần be - I'm busy, không nói "I busy".
+
+  - key: en:item:maybe-another-time
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: Maybe another time.
+      ipa: /ˈmeɪbi əˈnʌðə taɪm/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Để dịp khác nhé.
+      examples:
+        - target: I can't come tonight, but maybe another time?
+          translation:
+            vi: Tối nay mình không đến được, để dịp khác nhé?
+      confusion:
+        vi: Dùng sau lời từ chối để giữ thiện chí; không phải lời hứa chắc chắn.
+
+  - key: en:item:can-i-speak-to
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: Can I speak to…, please?
+      ipa: /kən aɪ ˈspiːk tə/
+      pos: cụm giao tiếp (điện thoại)
+    back:
+      meaning:
+        vi: Cho tôi gặp… được không ạ? (khi gọi điện)
+      examples:
+        - target: Hello. Can I speak to Mr Nam, please?
+          translation:
+            vi: A lô. Cho tôi gặp anh Nam được không ạ?
+      confusion:
+        vi: Nếu chính bạn là người được hỏi, trả lời Speaking. hoặc This is Nam. - không trả lời "Yes, I am".
+
+  - key: en:item:whos-calling
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: Who's calling, please?
+      ipa: UK /huːz ˈkɔːlɪŋ/ · US /huːz ˈkɑːlɪŋ/
+      pos: cụm giao tiếp (điện thoại)
+    back:
+      meaning:
+        vi: Xin hỏi ai đang gọi ạ? / Ai gọi đấy ạ?
+      examples:
+        - target: "A: Can I speak to Lan, please? B: Who's calling, please?"
+          translation:
+            vi: "A: Cho tôi gặp Lan được không? B: Xin hỏi ai gọi đấy ạ?"
+      confusion:
+        vi: Qua điện thoại không hỏi "Who are you?" vì nghe rất cộc. Dùng Who's calling? hoặc Who's speaking?
+
+  - key: en:item:this-is-speaking
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: This is… / …speaking.
+      ipa: /ðɪs ɪz/ · /ˈspiːkɪŋ/
+      pos: cụm giao tiếp (điện thoại)
+    back:
+      meaning:
+        vi: Tôi là… đây. (tự giới thiệu khi gọi điện)
+      examples:
+        - target: Hi, this is Mai from the bank.
+          translation:
+            vi: Chào anh, tôi là Mai ở ngân hàng đây.
+        - target: "A: Can I speak to Nam? B: Speaking."
+          translation:
+            vi: "A: Cho tôi gặp Nam. B: Nam đây."
+      confusion:
+        vi: Trên điện thoại nói This is Mai, không nói "I am Mai" hay "Here is Mai".
+
+  - key: en:item:hold-on
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: Hold on, please. / Just a moment.
+      ipa: UK /ˌhəʊld ˈɒn/ · US /ˌhoʊld ˈɑːn/
+      pos: cụm giao tiếp (điện thoại)
+    back:
+      meaning:
+        vi: Vui lòng chờ một chút.
+      examples:
+        - target: Hold on, please. I'll get him.
+          translation:
+            vi: Anh chờ chút nhé, tôi đi gọi anh ấy.
+      confusion:
+        vi: Hold on ở đây là chờ máy, không phải cầm giữ vật gì.
+
+  - key: en:item:leave-a-message
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: Can I leave a message? / Can I take a message?
+      ipa: /liːv ə ˈmesɪdʒ/ · /teɪk ə ˈmesɪdʒ/
+      pos: cụm giao tiếp (điện thoại)
+    back:
+      meaning:
+        vi: Tôi nhắn lại được không? (người gọi) / Tôi ghi lời nhắn nhé? (người nghe máy)
+      examples:
+        - target: "A: I'm afraid she's out. Can I take a message? B: Yes, please. Can you ask her to call me?"
+          translation:
+            vi: "A: Tiếc là cô ấy ra ngoài rồi. Tôi ghi lời nhắn nhé? B: Vâng. Nhờ chị bảo cô ấy gọi lại cho tôi."
+      confusion:
+        vi: Người gọi leave (để lại) lời nhắn; người nghe máy take (ghi) lời nhắn.
+
+  - key: en:item:call-you-back
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: I'll call you back.
+      ipa: UK /aɪl ˌkɔːl juː ˈbæk/ · US /aɪl ˌkɑːl juː ˈbæk/
+      pos: cụm giao tiếp (điện thoại)
+    back:
+      meaning:
+        vi: Tôi sẽ gọi lại cho bạn.
+      examples:
+        - target: I'm in a meeting right now. I'll call you back in ten minutes.
+          translation:
+            vi: Giờ tôi đang họp. Mười phút nữa tôi gọi lại cho bạn nhé.
+      confusion:
+        vi: Đại từ đứng giữa call và back - call you back, call him back; không nói "call back you".
+
+  # ---------------- Bài 5: Ôn tập ----------------
+  - key: en:item:is-that-ok-for-you
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: Is… OK for you? / Does… suit you?
+      ipa: UK /ɪz ðæt əʊˈkeɪ fə juː/ · US /ɪz ðæt oʊˈkeɪ fɚ juː/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: …có tiện cho bạn không? (hỏi khi hẹn giờ, hẹn chỗ)
+      examples:
+        - target: Is three o'clock OK for you?
+          translation:
+            vi: Ba giờ có tiện cho bạn không?
+      confusion:
+        vi: Với bạn bè, Is three OK for you? tự nhiên hơn "Is it convenient for you?" (nghe trang trọng). Không nói "Are you convenient?".
+
+  - key: en:item:see-you-then
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: See you then.
+      ipa: /ˈsiː juː ðen/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Hẹn gặp bạn lúc đó nhé.
+      examples:
+        - target: "A: So, Friday at six? B: Great. See you then!"
+          translation:
+            vi: "A: Vậy sáu giờ thứ Sáu nhé? B: Tuyệt. Hẹn gặp lúc đó!"
+      confusion:
+        vi: Then ở đây là "lúc đó" (thời điểm vừa hẹn), không phải "sau đó".
+
+  - key: en:item:look-adjective
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: "look + tính từ: They look happy."
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: Trông có vẻ… (đoán cảm xúc, trạng thái của người trong ảnh)
+      examples:
+        - target: The children look very happy.
+          translation:
+            vi: Bọn trẻ trông rất vui.
+      confusion:
+        vi: "Look + tính từ (look tired), look like + danh từ (look like a teacher). Không nói \"They look like happy\" hay \"They are look happy\"."

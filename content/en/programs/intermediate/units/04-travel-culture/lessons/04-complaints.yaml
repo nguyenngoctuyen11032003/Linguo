@@ -1,0 +1,402 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:travel-culture-complaints
+order_index: 4
+level: b1
+title:
+  vi: Phàn nàn lịch sự ở khách sạn và nhà hàng
+objectives:
+  - vi: Mở đầu lời phàn nàn lịch sự - I'm afraid there's a problem with…
+  - vi: Nhờ vả rất lịch sự - I was wondering if you could… và yêu cầu hoàn tiền - I'd like a refund.
+  - vi: Mô tả sự cố - doesn't work, noisy, towel, air conditioning, charge someone twice.
+estimated_minutes: 15
+skills: [speaking, listening, vocabulary]
+prerequisites: [en:lesson:travel-culture-questions-customs]
+items:
+  - item: en:item:complain-about
+  - item: en:item:complaint
+  - item: en:item:im-afraid-theres-a-problem
+  - item: en:item:i-was-wondering-if
+  - item: en:item:refund
+  - item: en:item:doesnt-work
+  - item: en:item:noisy
+  - item: en:item:towel
+  - item: en:item:air-conditioning
+  - item: en:item:charge-verb
+  - item: en:item:could-you-request
+    role: reuse
+  - item: en:item:would-you-mind
+    role: reuse
+  - item: en:item:manager
+    role: reuse
+  - item: en:item:the-bill
+    role: reuse
+  - item: en:item:check-out
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn phàn nàn về phòng khách sạn hay món ăn một cách lịch sự nhưng rõ ràng, và đề nghị được đổi phòng, sửa chữa hoặc hoàn tiền.
+  - type: explain
+    text:
+      vi: "Người nói tiếng Anh thường làm mềm lời phàn nàn bằng I'm afraid… (tôi e là, rất tiếc là): I'm afraid there's a problem with my room. Câu nói thẳng My room is bad! nghe rất gay gắt."
+  - type: explain
+    text:
+      vi: "Mô tả sự cố cụ thể: The air conditioning doesn't work / isn't working, The room is too noisy, There aren't any towels, You've charged me twice. Càng cụ thể thì nhân viên càng dễ giúp bạn."
+  - type: explain
+    text:
+      vi: "Sau đó đưa ra yêu cầu: Could you…? (lịch sự), Would you mind + V-ing…? hoặc I was wondering if you could… (rất lịch sự). Nếu muốn lấy lại tiền: I'd like a refund, please."
+  - type: deep_explain
+    text:
+      vi: "I was wondering if… dùng quá khứ nhưng nói về hiện tại - thì quá khứ tạo khoảng cách, nên nghe nhẹ nhàng hơn. Sau if dùng trật tự câu kể (if you could, if I could) giống câu hỏi gián tiếp ở bài trước. Nếu nhân viên không giải quyết, bạn có thể nói Could I speak to the manager, please? - vẫn lịch sự mà kiên quyết."
+  - type: example
+    target: I'm afraid there's a problem with the air conditioning in my room. It doesn't work.
+    target_lang: en
+    translation:
+      vi: Tôi e là máy lạnh trong phòng tôi có vấn đề. Nó không chạy.
+    note:
+      vi: I'm afraid làm mềm lời phàn nàn; doesn't work dùng cho máy móc bị hỏng.
+  - type: example
+    target: The room is next to the lift and it's very noisy. I was wondering if you could give us a different room.
+    target_lang: en
+    translation:
+      vi: Phòng ở cạnh thang máy và rất ồn. Không biết anh/chị có thể đổi cho chúng tôi phòng khác được không.
+    note:
+      vi: Nêu vấn đề trước, rồi nhờ bằng I was wondering if you could…
+  - type: example
+    target: Excuse me, I think you've charged us twice for the drinks.
+    target_lang: en
+    translation:
+      vi: Xin lỗi, tôi nghĩ anh/chị đã tính tiền đồ uống của chúng tôi hai lần.
+    note:
+      vi: I think làm câu bớt gay gắt; charge someone for something.
+  - type: example
+    target: The tour was cancelled, so I'd like a refund, please.
+    target_lang: en
+    translation:
+      vi: Tour bị huỷ nên tôi muốn được hoàn tiền.
+    note:
+      vi: I'd like a refund - không nói I want to refund.
+  - type: common_mistake
+    wrong: I was wondering if could you change our room.
+    right: I was wondering if you could change our room.
+    target_lang: en
+    note:
+      vi: Sau if là trật tự câu kể - you could, không đảo thành could you.
+  - type: common_mistake
+    wrong: The shower not work.
+    right: The shower doesn't work.
+    target_lang: en
+    note:
+      vi: Câu phủ định hiện tại đơn cần doesn't; tiếng Việt chỉ nói "không chạy" nên dễ quên trợ động từ.
+  - type: common_mistake
+    wrong: I want to refund.
+    right: I'd like a refund, please.
+    target_lang: en
+    note:
+      vi: I want to refund nghĩa là bạn sẽ hoàn tiền cho người khác; muốn nhận lại tiền thì nói I'd like a refund.
+  - type: summary
+    points:
+      - vi: Mở đầu mềm mỏng - I'm afraid there's a problem with…
+      - vi: Mô tả sự cố - doesn't work / isn't working, too noisy, no towels, charged me twice.
+      - vi: Yêu cầu - Could you…? / Would you mind + V-ing? / I was wondering if you could…
+      - vi: Lấy lại tiền - I'd like a refund; complain to someone about something, make a complaint.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:travel-culture-c-listen-ac
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:air-conditioning
+    prompt:
+      audio_asset_id: null
+      fallback_text: I'm afraid there's a problem with the air conditioning in my room.
+      options:
+        - { id: s4f, text: "Tôi e là máy lạnh trong phòng tôi có vấn đề.", lang: vi }
+        - { id: z8h, text: "Tôi sợ máy lạnh trong phòng tôi.", lang: vi }
+        - { id: e5n, text: "Phòng tôi không có máy lạnh.", lang: vi }
+        - { id: o2c, text: "Tôi muốn bật máy lạnh trong phòng.", lang: vi }
+    answer:
+      correct_option_id: s4f
+    explanation:
+      vi: I'm afraid ở đây là "tôi e là, rất tiếc là", không phải "tôi sợ". There's a problem with… là "có vấn đề với…".
+    display_answer: "Tôi e là máy lạnh trong phòng tôi có vấn đề."
+
+  - key: en:exercise:travel-culture-c-mcq-wondering
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:i-was-wondering-if
+    prompt:
+      stem: "Câu nhờ vả nào đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: g7m, text: "I was wondering if you could change our room.", lang: en }
+        - { id: n1x, text: "I was wondering if could you change our room.", lang: en }
+        - { id: c6y, text: "I was wondering you could change our room.", lang: en }
+        - { id: a3w, text: "I was wondering if you can to change our room.", lang: en }
+    answer:
+      correct_option_id: g7m
+    explanation:
+      vi: I was wondering + if + you could + động từ nguyên mẫu. Không đảo could you sau if, không bỏ if, và không có to sau could/can.
+    display_answer: "I was wondering if you could change our room."
+
+  - key: en:exercise:travel-culture-c-mcq-towel
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:towel
+    prompt:
+      stem: "Chọn từ đúng: There aren't any clean ___ in the bathroom. Could you bring some, please?"
+      stem_lang: vi
+      options:
+        - { id: d9k, text: towels, lang: en }
+        - { id: r3p, text: refunds, lang: en }
+        - { id: l5u, text: complaints, lang: en }
+        - { id: v8t, text: tips, lang: en }
+    answer:
+      correct_option_id: d9k
+    explanation:
+      vi: Trong phòng tắm, thứ cần "sạch" và mang thêm là towels (khăn tắm). Refund là tiền hoàn lại, complaint là lời phàn nàn, tip là tiền boa.
+    display_answer: towels
+
+  - key: en:exercise:travel-culture-c-fill-complain-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:complain-about
+    prompt:
+      template: "We complained {{b1}} the manager {{b2}} the noise, and she gave us a quieter room."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa của câu: Chúng tôi phàn nàn với quản lý về tiếng ồn, và cô ấy đổi cho chúng tôi phòng yên tĩnh hơn."
+        - "Gợi ý: phàn nàn với ai = complain t…; về cái gì = a…"
+    answer:
+      blanks:
+        b1: [to]
+        b2: [about]
+    known_wrong:
+      - answer: with
+        feedback_vi: Complain dùng to cho người, không dùng with.
+        error_tag: preposition
+      - answer: for
+        feedback_vi: Phàn nàn về điều gì dùng about.
+        error_tag: preposition
+      - answer: of
+        feedback_vi: Phàn nàn về điều gì dùng about.
+        error_tag: preposition
+    explanation:
+      vi: Complain to + người (the manager) + about + sự việc (the noise). Tiếng Việt nói "với… về…", tương ứng to… about…
+    display_answer: We complained to the manager about the noise, and she gave us a quieter room.
+
+  - key: en:exercise:travel-culture-c-order-refund
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:refund
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Tôi muốn được hoàn tiền.\""
+      tokens:
+        - { id: r-refund, text: refund }
+        - { id: r-please, text: please }
+        - { id: r-a, text: a }
+        - { id: r-like, text: like }
+        - { id: r-id, text: "I'd" }
+        - { id: r-to, text: to }
+    answer:
+      orders:
+        - [r-id, r-like, r-a, r-refund, r-please]
+    explanation:
+      vi: I'd like + a refund (danh từ) = tôi muốn được hoàn tiền. Like to refund nghĩa là bạn hoàn tiền cho người khác, nên to là token thừa.
+    display_answer: "I'd like a refund, please."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:travel-culture-c-fill-doesnt-work
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:doesnt-work
+    prompt:
+      template: "I'm {{b1}} there's a problem with my room. The shower {{b2}} work, and the room is very {{b3}} because it's next to the bar."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [afraid]
+        b2: ["doesn't", does not]
+        b3: [noisy]
+    known_wrong:
+      - answer: scared
+        feedback_vi: Lời phàn nàn lịch sự dùng I'm afraid (tôi e là), không dùng scared.
+        error_tag: im_afraid
+      - answer: not
+        feedback_vi: Phủ định hiện tại đơn với the shower cần doesn't - doesn't work.
+        error_tag: missing_auxiliary
+      - answer: "don't"
+        feedback_vi: The shower số ít nên dùng doesn't.
+        error_tag: third_person_s
+      - answer: noise
+        feedback_vi: Sau very cần tính từ noisy; noise là danh từ.
+        error_tag: word_form
+    explanation:
+      vi: I'm afraid làm mềm lời phàn nàn; the shower số ít nên doesn't work; very + tính từ noisy (ồn ào).
+    display_answer: "I'm afraid there's a problem with my room. The shower doesn't work, and the room is very noisy because it's next to the bar."
+
+  - key: en:exercise:travel-culture-c-translate-charged
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:charge-verb
+    prompt:
+      source_text: Tôi nghĩ anh đã tính tiền bữa sáng của tôi hai lần.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I think you've charged me twice for breakfast.
+        - I think you have charged me twice for breakfast.
+        - I think you charged me twice for breakfast.
+        - I think you've charged me twice for the breakfast.
+        - I think you charged me twice for the breakfast.
+        - I think you've charged me for breakfast twice.
+        - I think you charged me for breakfast twice.
+        - I think you've charged me twice for my breakfast.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I think you've paid me twice for breakfast.
+        feedback_vi: Tính tiền là charge; pay là trả tiền.
+        error_tag: charge_vs_pay
+      - answer: I think you've charged twice my breakfast.
+        feedback_vi: Cấu trúc đúng là charge someone (twice) for something.
+        error_tag: charge_pattern
+      - answer: I think you charge me twice for breakfast.
+        feedback_vi: Việc đã xảy ra nên dùng charged hoặc have charged.
+        error_tag: tense_present_for_past
+    explanation:
+      vi: Charge + người + for + thứ được tính tiền. Present perfect (you've charged) hay dùng vì kết quả còn trên hoá đơn; past simple cũng được.
+    display_answer: I think you've charged me twice for breakfast.
+
+  - key: en:exercise:travel-culture-c-translate-wondering
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:i-was-wondering-if
+    prompt:
+      source_text: Không biết tôi có thể trả phòng muộn hơn một chút được không.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I was wondering if I could check out a bit later.
+        - I was wondering if I could check out a little later.
+        - I was wondering if I could check out slightly later.
+        - I was wondering whether I could check out a bit later.
+        - I was wondering whether I could check out a little later.
+        - I was wondering if I could check out a bit late.
+        - I was wondering if I could have a late check-out.
+        - I was wondering if I could have a late checkout.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I was wondering if could I check out a bit later.
+        feedback_vi: Sau if dùng trật tự câu kể - if I could.
+        error_tag: indirect_question_order
+      - answer: I was wondering I could check out a bit later.
+        feedback_vi: Không bỏ if - I was wondering if I could…
+        error_tag: missing_if
+      - answer: I was wondering if I could to check out a bit later.
+        feedback_vi: Sau could là động từ nguyên mẫu không có to.
+        error_tag: modal_to
+    explanation:
+      vi: I was wondering if + I could + check out = cách xin phép rất lịch sự. A bit later / a little later = muộn hơn một chút.
+    display_answer: I was wondering if I could check out a bit later.
+
+  # ---------------- application ----------------
+  - key: en:exercise:travel-culture-c-mcq-situation-food
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:im-afraid-theres-a-problem
+    prompt:
+      stem: "Món súp của bạn bị nguội. Bạn gọi phục vụ. Câu nào lịch sự và tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: x7r, text: "Excuse me, I'm afraid my soup is cold. Could you heat it up, please?", lang: en }
+        - { id: q2b, text: "Hey! This soup is cold. Change it!", lang: en }
+        - { id: k5s, text: "Excuse me, I'm scared my soup is cold. You heat it up.", lang: en }
+        - { id: w9e, text: "Excuse me, my soup is cold, isn't it? I want to refund.", lang: en }
+    answer:
+      correct_option_id: x7r
+    explanation:
+      vi: I'm afraid làm mềm lời phàn nàn, Could you… please? là yêu cầu lịch sự. Các câu khác hoặc ra lệnh thô lỗ, hoặc dùng scared sai nghĩa, hoặc dùng I want to refund sai.
+    display_answer: "Excuse me, I'm afraid my soup is cold. Could you heat it up, please?"
+
+  - key: en:exercise:travel-culture-c-translate-complaint-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:complaint
+    prompt:
+      source_text: I'd like to make a complaint. The Wi-Fi isn't working and nobody has fixed it.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi muốn khiếu nại. Wi-Fi không vào được và chưa ai sửa cả.
+        - Tôi muốn khiếu nại. Wi-Fi không hoạt động và chưa ai sửa.
+        - Tôi muốn khiếu nại. Wi-Fi bị hỏng và chưa có ai sửa.
+        - Tôi muốn phàn nàn. Wi-Fi không hoạt động và chưa ai sửa cả.
+        - Tôi muốn phàn nàn. Wi-Fi không vào được và chưa ai sửa.
+        - Tôi muốn phàn nàn. Wi-Fi bị hỏng và chưa ai sửa cả.
+        - Tôi muốn khiếu nại. Mạng Wi-Fi không hoạt động và chưa ai sửa cả.
+        - Tôi muốn khiếu nại. Wifi không vào được và chưa ai sửa cả.
+        - Tôi muốn phàn nàn. Wifi không hoạt động và vẫn chưa ai sửa.
+        - Tôi muốn khiếu nại. Wi-Fi không dùng được và vẫn chưa có ai sửa.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Make a complaint = khiếu nại, phàn nàn chính thức. Isn't working = không hoạt động; nobody has fixed it = chưa ai sửa (đến giờ vẫn hỏng).
+    display_answer: Tôi muốn khiếu nại. Wi-Fi không vào được và chưa ai sửa cả.
+
+  - key: en:exercise:travel-culture-c-order-would-you-mind
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:would-you-mind
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Phiền anh kiểm tra lại hoá đơn được không?\""
+      tokens:
+        - { id: w-bill, text: bill }
+        - { id: w-checking, text: checking }
+        - { id: w-you, text: you }
+        - { id: w-the, text: the }
+        - { id: w-would, text: Would }
+        - { id: w-to-check, text: to check }
+        - { id: w-mind, text: mind }
+        - { id: w-again, text: again }
+    answer:
+      orders:
+        - [w-would, w-you, w-mind, w-checking, w-the, w-bill, w-again]
+    explanation:
+      vi: Would you mind + V-ing (checking), không dùng to check. Đây là cách nhờ rất lịch sự khi nghi ngờ hoá đơn sai.
+    display_answer: Would you mind checking the bill again?

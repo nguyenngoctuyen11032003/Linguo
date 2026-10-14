@@ -1,0 +1,420 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:travel-culture-quantifiers
+order_index: 1
+level: b1
+title:
+  vi: Lên kế hoạch du lịch - a few, a little, plenty of, hardly any, none of
+objectives:
+  - vi: Phân biệt a few / few (đếm được) và a little / little (không đếm được).
+  - vi: Dùng a lot of, plenty of, hardly any, none of để nói về số lượng khi đi du lịch.
+  - vi: Hiểu và dùng từ vựng du lịch - souvenir, budget, accommodation, local, tourist.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:stories-news-review]
+items:
+  - item: en:item:a-few-few
+  - item: en:item:a-little-little
+  - item: en:item:a-lot-of
+  - item: en:item:plenty-of
+  - item: en:item:hardly-any
+  - item: en:item:none-of
+  - item: en:item:souvenir
+  - item: en:item:budget
+  - item: en:item:accommodation
+  - item: en:item:local
+  - item: en:item:tourist
+  - item: en:item:countable-uncountable
+    role: reuse
+  - item: en:item:some-any
+    role: reuse
+  - item: en:item:crowded
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được chính xác "nhiều, vài, một ít, hầu như không, không cái nào" khi lên kế hoạch, kể về chuyến đi và tính ngân sách du lịch.
+  - type: explain
+    text:
+      vi: "Trước khi chọn lượng từ, hãy hỏi: danh từ này đếm được hay không? A few đi với danh từ đếm được số nhiều (a few days, a few souvenirs); a little đi với danh từ không đếm được (a little money, a little time)."
+  - type: explain
+    text:
+      vi: "Có a hay không làm đổi nghĩa: a few / a little = một vài, một ít (đủ dùng, tích cực); few / little = rất ít, gần như không có (tiêu cực). Tiếng Việt cũng phân biệt \"còn ít tiền\" và \"còn một ít tiền\" theo cách tương tự."
+  - type: explain
+    text:
+      vi: "A lot of = nhiều (cả hai loại danh từ); plenty of = dư dả, hơn mức cần; hardly any = hầu như không có; none of the/my… = không cái nào, không ai trong số. Hardly any và none of đã phủ định, nên không thêm not."
+  - type: deep_explain
+    text:
+      vi: "Money, time, information, luggage, accommodation, advice là danh từ không đếm được trong tiếng Anh, dù tiếng Việt có thể đếm (\"mấy đồng\", \"mấy cái vali\"). Muốn đếm, dùng đơn vị: two pieces of luggage, a place to stay. Sau none of + danh từ số nhiều, văn nói thường dùng động từ số nhiều (None of the rooms were ready), văn viết trang trọng có thể dùng số ít (was) - cả hai đều được chấp nhận."
+  - type: example
+    target: We've only got a little money left, but we've got plenty of time.
+    target_lang: en
+    translation:
+      vi: Bọn mình chỉ còn một ít tiền, nhưng còn dư thời gian.
+    note:
+      vi: Money và time không đếm được, nên dùng a little và plenty of.
+  - type: example
+    target: I bought a few souvenirs at the night market for my colleagues.
+    target_lang: en
+    translation:
+      vi: Mình mua vài món quà lưu niệm ở chợ đêm cho đồng nghiệp.
+    note:
+      vi: Souvenirs đếm được, số nhiều - dùng a few.
+  - type: example
+    target: In the rainy season, there are hardly any tourists, so accommodation is cheap.
+    target_lang: en
+    translation:
+      vi: Vào mùa mưa hầu như không có khách du lịch, nên chỗ ở rẻ.
+    note:
+      vi: Hardly any đã mang nghĩa phủ định; accommodation không đếm được nên dùng is.
+  - type: example
+    target: None of the locals spoke English, but they were very helpful.
+    target_lang: en
+    translation:
+      vi: Không người dân địa phương nào nói tiếng Anh, nhưng họ rất nhiệt tình.
+    note:
+      vi: None of + the + danh từ; động từ ở thể khẳng định (spoke).
+  - type: common_mistake
+    wrong: I only have a few money left.
+    right: I only have a little money left.
+    target_lang: en
+    note:
+      vi: Money không đếm được nên dùng a little, không dùng a few.
+  - type: common_mistake
+    wrong: There weren't hardly any tourists.
+    right: There were hardly any tourists.
+    target_lang: en
+    note:
+      vi: Hardly any đã là phủ định; thêm not thành phủ định hai lần.
+  - type: common_mistake
+    wrong: None of hotels had a free room.
+    right: None of the hotels had a free room.
+    target_lang: en
+    note:
+      vi: Sau none of cần the, my, these… hoặc đại từ (none of them).
+  - type: summary
+    points:
+      - vi: a few / few + danh từ đếm được số nhiều; a little / little + danh từ không đếm được.
+      - vi: Có a = một vài, một ít (đủ); không có a = rất ít (không đủ).
+      - vi: a lot of = nhiều; plenty of = dư dả; hardly any = hầu như không có.
+      - vi: none of + the/my/them…; không thêm not sau hardly any hay none of.
+      - vi: Từ du lịch - souvenir, budget, accommodation (không đếm được), local, tourist.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:travel-culture-q-listen-money
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:a-little-little
+    prompt:
+      audio_asset_id: null
+      fallback_text: We've only got a little money left, but we've got plenty of time.
+      options:
+        - { id: k7d, text: "Bọn mình chỉ còn một ít tiền, nhưng còn dư thời gian.", lang: vi }
+        - { id: w2p, text: "Bọn mình không còn chút tiền nào và cũng hết thời gian.", lang: vi }
+        - { id: h9s, text: "Bọn mình còn nhiều tiền, nhưng chỉ còn một ít thời gian.", lang: vi }
+        - { id: m4z, text: "Bọn mình còn vài đồng, nhưng không có thời gian.", lang: vi }
+    answer:
+      correct_option_id: k7d
+    explanation:
+      vi: A little money là "một ít tiền" (vẫn còn), plenty of time là "dư thời gian". Câu không nói hết tiền hay hết thời gian.
+    display_answer: "Bọn mình chỉ còn một ít tiền, nhưng còn dư thời gian."
+
+  - key: en:exercise:travel-culture-q-mcq-a-few
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:a-few-few
+    prompt:
+      stem: "Chọn đáp án đúng: I bought ___ souvenirs for my family."
+      stem_lang: vi
+      options:
+        - { id: t3b, text: a few, lang: en }
+        - { id: r8q, text: a little, lang: en }
+        - { id: y5n, text: much, lang: en }
+        - { id: e1v, text: a lot, lang: en }
+    answer:
+      correct_option_id: t3b
+    explanation:
+      vi: Souvenirs là danh từ đếm được số nhiều nên dùng a few. A little và much đi với danh từ không đếm được; a lot cần thêm of (a lot of souvenirs).
+    display_answer: a few
+
+  - key: en:exercise:travel-culture-q-mcq-little-money
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:a-little-little
+    prompt:
+      stem: "Câu nào đúng khi bạn muốn nói \"Mình còn một ít tiền, đủ để mua vé xe buýt\"?"
+      stem_lang: vi
+      options:
+        - { id: g6c, text: "I've got a little money, so I can buy a bus ticket.", lang: en }
+        - { id: u2x, text: "I've got a few money, so I can buy a bus ticket.", lang: en }
+        - { id: o9l, text: "I've got little money, so I can buy a bus ticket.", lang: en }
+        - { id: d4j, text: "I've got a few moneys, so I can buy a bus ticket.", lang: en }
+    answer:
+      correct_option_id: g6c
+    explanation:
+      vi: Money không đếm được nên dùng a little, không dùng a few và không thêm -s. Little (không có a) nghĩa là "rất ít, không đủ", mâu thuẫn với "đủ để mua vé".
+    display_answer: "I've got a little money, so I can buy a bus ticket."
+
+  - key: en:exercise:travel-culture-q-mcq-accommodation
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:accommodation
+    prompt:
+      stem: "Chọn từ đúng: Hotels, hostels and homestays are all types of ___."
+      stem_lang: vi
+      options:
+        - { id: n5f, text: accommodation, lang: en }
+        - { id: b7r, text: souvenir, lang: en }
+        - { id: z3k, text: budget, lang: en }
+        - { id: c1w, text: tourist, lang: en }
+    answer:
+      correct_option_id: n5f
+    explanation:
+      vi: Khách sạn, nhà nghỉ, homestay đều là chỗ ở - accommodation. Souvenir là quà lưu niệm, budget là ngân sách, tourist là khách du lịch.
+    display_answer: accommodation
+
+  - key: en:exercise:travel-culture-q-fill-hardly-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:hardly-any
+    prompt:
+      template: "It was the rainy season, so there were {{b1}} any tourists. {{b2}} of the hotels were full."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Đang mùa mưa nên hầu như không có khách du lịch. Không khách sạn nào kín phòng."
+        - "Gợi ý: hầu như không = h… any; không cái nào trong số = N… of."
+    answer:
+      blanks:
+        b1: [hardly]
+        b2: [None]
+    known_wrong:
+      - answer: hard
+        feedback_vi: Hard là "chăm chỉ, khó"; "hầu như không" là hardly any.
+        error_tag: hard_vs_hardly
+      - answer: not
+        feedback_vi: Câu cần nghĩa "hầu như không" - hardly any; not any là "không có chút nào".
+        error_tag: hardly_any
+      - answer: No
+        feedback_vi: No không đi với of; nói None of the hotels.
+        error_tag: none_vs_no
+    explanation:
+      vi: Hardly any = hầu như không có, đã mang nghĩa phủ định nên were giữ thể khẳng định. None of the hotels = không khách sạn nào; no không đứng trước of.
+    display_answer: It was the rainy season, so there were hardly any tourists. None of the hotels were full.
+
+  - key: en:exercise:travel-culture-q-order-plenty
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:plenty-of
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Đừng lo, chúng ta còn dư thời gian.\""
+      tokens:
+        - { id: p-time, text: time }
+        - { id: p-worry, text: worry }
+        - { id: p-of, text: of }
+        - { id: p-weve, text: "we've" }
+        - { id: p-dont, text: "Don't" }
+        - { id: p-got, text: got }
+        - { id: p-few, text: few }
+        - { id: p-plenty, text: plenty }
+    answer:
+      orders:
+        - [p-dont, p-worry, p-weve, p-got, p-plenty, p-of, p-time]
+    explanation:
+      vi: Plenty of + danh từ không đếm được (time) = dư thời gian. Few chỉ đi với danh từ đếm được số nhiều nên là token thừa.
+    display_answer: "Don't worry, we've got plenty of time."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:travel-culture-q-fill-few-little
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:a-few-few
+    prompt:
+      template: "We stayed in Sa Pa for a {{b1}} days. We spent a {{b2}} money on souvenirs, and we spent a {{b3}} of money on food."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [few]
+        b2: [little]
+        b3: [lot]
+    known_wrong:
+      - answer: many
+        feedback_vi: Sau a không dùng many; với danh từ đếm được dùng a few, với money dùng a little, còn "nhiều" là a lot of.
+        error_tag: quantifier_countable
+      - answer: much
+        feedback_vi: Sau a không dùng much; với money dùng a little hoặc a lot of.
+        error_tag: quantifier_countable
+    explanation:
+      vi: Days đếm được nên a few days; money không đếm được nên a little money; a lot of money = nhiều tiền, dùng được với cả hai loại danh từ.
+    display_answer: We stayed in Sa Pa for a few days. We spent a little money on souvenirs, and we spent a lot of money on food.
+
+  - key: en:exercise:travel-culture-q-translate-none
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:none-of
+    prompt:
+      source_text: Không ai trong số bọn mình nói được tiếng Nhật.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - None of us could speak Japanese.
+        - None of us can speak Japanese.
+        - None of us spoke Japanese.
+        - None of us speak Japanese.
+        - None of us could speak any Japanese.
+        - None of us were able to speak Japanese.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: None of us couldn't speak Japanese.
+        feedback_vi: None of đã phủ định nên dùng could, không dùng couldn't.
+        error_tag: double_negative
+      - answer: No one of us could speak Japanese.
+        feedback_vi: Dùng none of us, không nói no one of us.
+        error_tag: none_vs_no
+      - answer: None us could speak Japanese.
+        feedback_vi: Thiếu of - None of us.
+        error_tag: none_of
+    explanation:
+      vi: "\"Không ai trong số bọn mình\" là None of us. None of đã mang nghĩa phủ định nên động từ giữ thể khẳng định (could speak)."
+    display_answer: None of us could speak Japanese.
+
+  - key: en:exercise:travel-culture-q-translate-money
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:a-little-little
+    prompt:
+      source_text: Mình chỉ còn một ít tiền thôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I only have a little money left.
+        - I've only got a little money left.
+        - I have only a little money left.
+        - I only have a little money.
+        - I've only got a little money.
+        - I have only got a little money left.
+        - I only have a bit of money left.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I only have a few money left.
+        feedback_vi: Money không đếm được - dùng a little, không dùng a few.
+        error_tag: a_few_uncountable
+      - answer: I only have little money left.
+        feedback_vi: Little không có a nghĩa là "gần như không có"; "một ít" cần a little.
+        error_tag: little_vs_a_little
+      - answer: I only have a little moneys left.
+        feedback_vi: Money không đếm được nên không thêm -s.
+        error_tag: uncountable_plural
+    explanation:
+      vi: Money không đếm được nên dùng a little; có a mới mang nghĩa "một ít (vẫn còn)". Left nghĩa là "còn lại".
+    display_answer: I only have a little money left.
+
+  # ---------------- application ----------------
+  - key: en:exercise:travel-culture-q-mcq-situation-budget
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:hardly-any
+    prompt:
+      stem: "Cuối chuyến đi, bạn gần như tiêu hết ngân sách. Bạn nói với bạn đồng hành thế nào?"
+      stem_lang: vi
+      options:
+        - { id: s8m, text: "We've got hardly any money left, so let's eat at a local market.", lang: en }
+        - { id: a2y, text: "We haven't got hardly any money left, so let's eat at a local market.", lang: en }
+        - { id: j6t, text: "We've got plenty of money left, so let's eat at a local market.", lang: en }
+        - { id: f1h, text: "We've got a few money left, so let's eat at a local market.", lang: en }
+    answer:
+      correct_option_id: s8m
+    explanation:
+      vi: "Hardly any money = hầu như không còn tiền, đúng tình huống. Haven't + hardly any là phủ định hai lần; plenty of nghĩa ngược lại; a few không đi với money."
+    display_answer: "We've got hardly any money left, so let's eat at a local market."
+
+  - key: en:exercise:travel-culture-q-translate-tourists
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:tourist
+    prompt:
+      source_text: Few tourists visit this village, but the locals are very friendly.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Rất ít khách du lịch đến ngôi làng này, nhưng người dân địa phương rất thân thiện.
+        - Rất ít khách du lịch ghé thăm ngôi làng này, nhưng người dân địa phương rất thân thiện.
+        - Rất ít du khách đến ngôi làng này, nhưng người dân địa phương rất thân thiện.
+        - Rất ít du khách đến làng này, nhưng người dân địa phương rất thân thiện.
+        - Ít khách du lịch đến làng này, nhưng người dân địa phương rất thân thiện.
+        - Có rất ít khách du lịch đến ngôi làng này, nhưng người dân địa phương rất thân thiện.
+        - Rất ít khách du lịch đến ngôi làng này, nhưng người dân ở đây rất thân thiện.
+        - Rất ít khách du lịch đến thăm làng này, nhưng dân địa phương rất thân thiện.
+        - Hầu như không có khách du lịch đến ngôi làng này, nhưng người dân địa phương rất thân thiện.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Một vài khách du lịch đến ngôi làng này, nhưng người dân địa phương rất thân thiện.
+        feedback_vi: Few không có a nghĩa là "rất ít", không phải "một vài" (a few).
+        error_tag: few_vs_a_few
+    explanation:
+      vi: Few (không có a) nhấn mạnh "rất ít, không nhiều như mong đợi". The locals là người dân địa phương.
+    display_answer: Rất ít khách du lịch đến ngôi làng này, nhưng người dân địa phương rất thân thiện.
+
+  - key: en:exercise:travel-culture-q-order-budget
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:budget
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Ngân sách của chúng tôi nhỏ nên chúng tôi ở một khách sạn bình dân.\""
+      tokens:
+        - { id: g-hotel, text: hotel }
+        - { id: g-small, text: small }
+        - { id: g-so, text: so }
+        - { id: g-our, text: Our }
+        - { id: g-stayed, text: stayed }
+        - { id: g-was, text: was }
+        - { id: g-a, text: a }
+        - { id: g-budget2, text: budget }
+        - { id: g-we, text: we }
+        - { id: g-in, text: in }
+        - { id: g-budget1, text: budget }
+    answer:
+      orders:
+        - [g-our, g-budget1, g-was, g-small, g-so, g-we, g-stayed, g-in, g-a, g-budget2, g-hotel]
+        - [g-our, g-budget2, g-was, g-small, g-so, g-we, g-stayed, g-in, g-a, g-budget1, g-hotel]
+    explanation:
+      vi: Budget vừa là danh từ (our budget = ngân sách) vừa đứng trước danh từ như tính từ (a budget hotel = khách sạn giá rẻ). Hai token budget giống nhau nên đổi chỗ vẫn đúng.
+    display_answer: Our budget was small, so we stayed in a budget hotel.

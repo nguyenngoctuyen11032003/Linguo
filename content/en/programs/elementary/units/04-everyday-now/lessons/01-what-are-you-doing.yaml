@@ -1,0 +1,440 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:what-are-you-doing
+order_index: 1
+level: a2
+title:
+  vi: What are you doing? - đang làm gì, lúc này và dạo này
+objectives:
+  - vi: Hỏi và trả lời ai đó đang làm gì bằng hiện tại tiếp diễn (am / is / are + V-ing).
+  - vi: Nói việc tạm thời trong giai đoạn này - I'm working from home this week.
+  - vi: Phân biệt hiện tại đơn (thói quen) với hiện tại tiếp diễn (lúc này, tạm thời).
+estimated_minutes: 15
+skills: [grammar, speaking, listening]
+prerequisites: [en:lesson:health-lifestyle-review]
+items:
+  - item: en:item:present-continuous-now
+  - item: en:item:ing-spelling
+  - item: en:item:present-simple-vs-continuous
+  - item: en:item:at-the-moment
+  - item: en:item:right-now
+  - item: en:item:these-days
+  - item: en:item:work-from-home
+  - item: en:item:wait-for
+  - item: en:item:look-for
+  - item: en:item:wear
+  - item: en:item:sit
+  - item: en:item:present-simple
+    role: reuse
+  - item: en:item:usually
+    role: reuse
+  - item: en:item:present-continuous-future
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn trả lời được câu "Bạn đang làm gì thế?" qua tin nhắn hay điện thoại, và kể được những việc tạm thời dạo này, như làm việc ở nhà hay ở nhờ nhà bạn.
+  - type: explain
+    text:
+      vi: Tiếng Việt chỉ cần thêm "đang" - "tôi đang đi". Tiếng Anh cần đủ hai phần - be (am / is / are) và động từ thêm -ing - I'm going. Thiếu be ("I going") hay thiếu -ing ("I am go") đều sai.
+  - type: explain
+    text:
+      vi: Hiện tại tiếp diễn dùng cho hai việc - việc đang xảy ra ngay lúc nói (I'm cooking right now) và việc tạm thời trong giai đoạn này (I'm working from home this week). Đi kèm thường là now, right now, at the moment, today, this week, these days.
+  - type: explain
+    text:
+      vi: Hiện tại đơn nói thói quen, việc lâu dài - I work in an office. Khi hai thì đi cùng nhau, bạn thấy rõ sự khác nhau - I usually take the bus, but today I'm walking.
+  - type: deep_explain
+    text:
+      vi: "Câu hỏi đảo be lên trước - Are you working? What is she doing? Phủ định thêm not - I'm not working today. Chính tả -ing: bỏ e câm (make → making, write → writing), gấp đôi phụ âm cuối ở từ ngắn (sit → sitting, run → running, swim → swimming), còn play → playing, read → reading giữ nguyên. Ở unit trước bạn đã gặp I'm meeting Lan tomorrow - cùng dạng, nhưng có mốc tương lai nên nghĩa là lịch hẹn."
+  - type: example
+    target: "A: Hi Mai, what are you doing? B: I'm sitting in a café. I'm waiting for Hoa."
+    target_lang: en
+    translation:
+      vi: "A: Chào Mai, bạn đang làm gì đấy? B: Mình đang ngồi ở quán cà phê. Mình đang đợi Hoa."
+    note:
+      vi: Hai việc đang diễn ra ngay lúc nói - sitting gấp đôi t, wait for có for trước người được đợi.
+  - type: example
+    target: I usually work in the office, but this week I'm working from home.
+    target_lang: en
+    translation:
+      vi: Tôi thường làm ở văn phòng, nhưng tuần này tôi làm việc ở nhà.
+    note:
+      vi: Usually → hiện tại đơn (thói quen); this week → hiện tại tiếp diễn (tạm thời).
+  - type: example
+    target: "A: Is Nam at home? B: No, he isn't. He's playing football at the moment."
+    target_lang: en
+    translation:
+      vi: "A: Nam có nhà không? B: Không có. Lúc này cậu ấy đang đá bóng."
+    note:
+      vi: He's = He is. At the moment báo hiệu việc đang diễn ra.
+  - type: example
+    target: My parents are learning to cook Korean food these days.
+    target_lang: en
+    translation:
+      vi: Dạo này bố mẹ tôi đang học nấu món Hàn.
+    note:
+      vi: These days là giai đoạn hiện tại, không phải đúng giây phút này.
+  - type: common_mistake
+    wrong: I am go to the supermarket now.
+    right: I'm going to the supermarket now.
+    target_lang: en
+    note:
+      vi: Có be thì động từ phải thêm -ing. "Am go" là ghép nhầm giữa hai thì.
+  - type: common_mistake
+    wrong: She cooking dinner.
+    right: She's cooking dinner. / She is cooking dinner.
+    target_lang: en
+    note:
+      vi: Chữ "đang" trong tiếng Việt không có be, nhưng tiếng Anh bắt buộc có is.
+  - type: common_mistake
+    wrong: I'm waiting you at the bus stop.
+    right: I'm waiting for you at the bus stop.
+    target_lang: en
+    note:
+      vi: "\"Đợi bạn\" là wait for you - phải có for trước người hoặc vật được đợi."
+  - type: summary
+    points:
+      - vi: am / is / are + V-ing - I'm working, She's sitting, They're waiting.
+      - vi: Câu hỏi - What are you doing? · Are you working?
+      - vi: Dùng cho việc đang xảy ra (now, right now, at the moment) và việc tạm thời (this week, these days).
+      - vi: Thói quen dùng hiện tại đơn - I usually work…, nhưng tuần này I'm working…
+      - vi: "Chính tả: making, sitting, swimming, playing."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:what-are-you-doing-mcq-question
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:present-continuous-now
+    prompt:
+      stem: "Bạn nhắn tin hỏi bạn thân: \"Cậu đang làm gì thế?\". Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: q8w, text: "What are you doing?", lang: en }
+        - { id: z3k, text: "What do you do?", lang: en }
+        - { id: f6p, text: "What you doing?", lang: en }
+        - { id: c1n, text: "What are you do?", lang: en }
+    answer:
+      correct_option_id: q8w
+    explanation:
+      vi: Hỏi việc đang làm cần are + doing. "What do you do?" là hỏi nghề nghiệp; "What you doing?" thiếu are; "What are you do?" thiếu -ing.
+    display_answer: "What are you doing?"
+
+  - key: en:exercise:what-are-you-doing-listen-bus
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: en:item:wait-for
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Sorry, I can't talk right now. I'm waiting for the bus."
+      options:
+        - { id: h2r, text: "Xin lỗi, giờ mình không nói chuyện được. Mình đang đợi xe buýt.", lang: vi }
+        - { id: v9t, text: "Xin lỗi, giờ mình không nói chuyện được. Mình đang ở trên xe buýt.", lang: vi }
+        - { id: b4m, text: "Xin lỗi, mình không đi xe buýt được.", lang: vi }
+        - { id: y7d, text: "Xin lỗi, mình thường đợi xe buýt.", lang: vi }
+    answer:
+      correct_option_id: h2r
+    explanation:
+      vi: I'm waiting for the bus là "đang đợi xe buýt" (chưa lên xe). Right now là ngay lúc này, không phải thói quen như "thường".
+    display_answer: "Xin lỗi, giờ mình không nói chuyện được. Mình đang đợi xe buýt."
+
+  - key: en:exercise:what-are-you-doing-fill-baby
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:present-continuous-now
+    prompt:
+      template: "Shh! The baby {{b1}} (sleep). Please don't talk."
+      blanks:
+        - { id: b1, width_hint: 12 }
+      hint_levels:
+        - "Nghĩa: Suỵt! Em bé đang ngủ. Đừng nói chuyện nhé."
+        - "Gợi ý: is + động từ thêm -ing."
+    answer:
+      blanks:
+        b1: [is sleeping, "'s sleeping"]
+    known_wrong:
+      - answer: sleeping
+        feedback_vi: Thiếu is. Tiếng Anh cần be trước V-ing - is sleeping.
+        error_tag: missing_be
+      - answer: is sleep
+        feedback_vi: Có is thì động từ phải thêm -ing - is sleeping.
+        error_tag: missing_ing
+      - answer: sleeps
+        feedback_vi: Sleeps là thói quen. Shh! cho thấy việc đang xảy ra ngay lúc này.
+        error_tag: simple_vs_continuous
+    explanation:
+      vi: Shh! và Please don't talk cho thấy em bé đang ngủ ngay bây giờ, nên dùng is + sleeping.
+    display_answer: "Shh! The baby is sleeping. Please don't talk."
+
+  - key: en:exercise:what-are-you-doing-mcq-habit-now
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:present-simple-vs-continuous
+    prompt:
+      stem: "Chọn câu đúng: \"Tôi thường làm ở văn phòng, nhưng tuần này tôi làm ở nhà.\""
+      stem_lang: vi
+      options:
+        - { id: n5s, text: "I usually work in the office, but this week I'm working from home.", lang: en }
+        - { id: g2x, text: "I'm usually working in the office, but this week I work from home.", lang: en }
+        - { id: u8e, text: "I usually work in the office, but this week I work from home.", lang: en }
+        - { id: o3j, text: "I usually working in the office, but this week I'm work from home.", lang: en }
+    answer:
+      correct_option_id: n5s
+    explanation:
+      vi: Usually là thói quen nên dùng hiện tại đơn (work); this week là việc tạm thời nên dùng hiện tại tiếp diễn (I'm working). Các câu khác đảo thì hoặc thiếu be / -ing.
+    display_answer: "I usually work in the office, but this week I'm working from home."
+
+  - key: en:exercise:what-are-you-doing-order-home
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:work-from-home
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tuần này tôi làm việc ở nhà.\""
+      tokens:
+        - { id: wh-home, text: home }
+        - { id: wh-week, text: week }
+        - { id: wh-working, text: working }
+        - { id: wh-im, text: "I'm" }
+        - { id: wh-this, text: this }
+        - { id: wh-from, text: from }
+        - { id: wh-work, text: work }
+        - { id: wh-at, text: at }
+    answer:
+      orders:
+        - [wh-im, wh-working, wh-from, wh-home, wh-this, wh-week]
+        - [wh-this, wh-week, wh-im, wh-working, wh-from, wh-home]
+    explanation:
+      vi: Việc tạm thời trong tuần này dùng I'm + working. Cụm cố định là work from home; this week có thể đứng đầu hoặc cuối câu.
+    display_answer: "I'm working from home this week."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:what-are-you-doing-fill-minh
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:present-simple-vs-continuous
+    prompt:
+      template: "Minh usually {{b1}} (drive) to work, but today his car is at the garage, so he {{b2}} (wait) for the bus."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [drives]
+        b2: [is waiting, "'s waiting"]
+    known_wrong:
+      - answer: is driving
+        feedback_vi: Usually là thói quen, nên dùng hiện tại đơn - drives.
+        error_tag: simple_vs_continuous
+      - answer: drive
+        feedback_vi: Minh là ngôi thứ ba số ít, cần -s - drives.
+        error_tag: third_person_s
+      - answer: waiting
+        feedback_vi: Thiếu is trước waiting.
+        error_tag: missing_be
+      - answer: waits
+        feedback_vi: Hôm nay, ngay lúc này anh ấy đang đợi, nên dùng is waiting.
+        error_tag: simple_vs_continuous
+      - answer: is wait
+        feedback_vi: Có is thì động từ phải thêm -ing - is waiting.
+        error_tag: missing_ing
+    explanation:
+      vi: Ô đầu là thói quen (usually) nên dùng hiện tại đơn drives. Ô sau là việc đang xảy ra hôm nay nên dùng is waiting.
+    display_answer: "Minh usually drives to work, but today his car is at the garage, so he is waiting for the bus."
+
+  - key: en:exercise:what-are-you-doing-translate-question
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 1
+    item: en:item:present-continuous-now
+    prompt:
+      source_text: Bây giờ bạn đang làm gì?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - What are you doing now?
+        - What are you doing right now?
+        - What are you doing at the moment?
+        - What are you doing?
+        - Now what are you doing?
+    known_wrong:
+      - answer: What do you do now?
+        feedback_vi: Việc đang diễn ra cần are + doing. What do you do? là hỏi nghề nghiệp.
+        error_tag: simple_vs_continuous
+      - answer: What are you do now?
+        feedback_vi: Có are thì động từ phải thêm -ing - doing.
+        error_tag: missing_ing
+      - answer: What you are doing now?
+        feedback_vi: Câu hỏi phải đảo are lên trước you - What are you doing?
+        error_tag: question_word_order
+    explanation:
+      vi: Hỏi việc đang làm - Wh- + are + you + doing. Now có thể thay bằng right now hay at the moment.
+    display_answer: What are you doing now?
+
+  - key: en:exercise:what-are-you-doing-translate-keys
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:look-for
+    prompt:
+      source_text: Tôi đang tìm chìa khoá.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I'm looking for my keys.
+        - I'm looking for my key.
+        - I'm looking for the keys.
+        - I'm looking for the key.
+        - I'm looking for keys.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I am look for my keys.
+        feedback_vi: Có am thì động từ phải thêm -ing - looking.
+        error_tag: missing_ing
+      - answer: I looking for my keys.
+        feedback_vi: Thiếu am - I'm looking for…
+        error_tag: missing_be
+      - answer: I'm finding my keys.
+        feedback_vi: Find là tìm thấy. Đang tìm (chưa thấy) là look for.
+        error_tag: look_for_find
+      - answer: I'm looking my keys.
+        feedback_vi: Look for mới là tìm; thiếu for câu sai nghĩa.
+        error_tag: missing_preposition
+    explanation:
+      vi: Đang tìm (chưa thấy) là am looking for. Find là tìm thấy, nên không dùng ở đây.
+    display_answer: I'm looking for my keys.
+
+  # ---------------- application ----------------
+  - key: en:exercise:what-are-you-doing-mcq-cinema
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:right-now
+    prompt:
+      stem: "Bạn đang ở trong rạp chiếu phim thì sếp gọi. Bạn nhắn lại thế nào?"
+      stem_lang: vi
+      options:
+        - { id: k6a, text: "Sorry, I can't talk right now. I'm watching a film.", lang: en }
+        - { id: e9l, text: "Sorry, I can't talk right now. I watch a film.", lang: en }
+        - { id: s2y, text: "Sorry, I can't talk right now. I am watch a film.", lang: en }
+        - { id: m7c, text: "Sorry, I can't talk right now. I watching a film.", lang: en }
+    answer:
+      correct_option_id: k6a
+    explanation:
+      vi: Việc đang diễn ra ngay lúc này cần I'm + watching. "I watch" là thói quen, "I am watch" thiếu -ing, "I watching" thiếu am.
+    display_answer: "Sorry, I can't talk right now. I'm watching a film."
+
+  - key: en:exercise:what-are-you-doing-translate-lan
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:these-days
+    prompt:
+      source_text: Lan is staying with us these days. She's looking for a new flat.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dạo này Lan đang ở với chúng tôi. Cô ấy đang tìm căn hộ mới.
+        - Dạo này Lan ở với chúng tôi. Cô ấy đang tìm căn hộ mới.
+        - Dạo này Lan đang ở cùng chúng tôi. Cô ấy đang tìm căn hộ mới.
+        - Dạo này Lan ở cùng chúng tôi. Cô ấy đang tìm căn hộ mới.
+        - Dạo này Lan đang ở với chúng tôi. Cô ấy đang tìm một căn hộ mới.
+        - Dạo này Lan đang ở nhà chúng tôi. Cô ấy đang tìm căn hộ mới.
+        - Dạo này Lan ở nhà chúng tôi. Cô ấy đang tìm căn hộ mới.
+        - Dạo này Lan đang ở với bọn mình. Cô ấy đang tìm căn hộ mới.
+        - Dạo này Lan ở với bọn mình. Bạn ấy đang tìm căn hộ mới.
+        - Dạo này Lan đang ở với chúng tôi. Bạn ấy đang tìm căn hộ mới.
+        - Dạo này Lan đang ở với chúng tôi vì cô ấy đang tìm căn hộ mới.
+        - Lan đang ở với chúng tôi dạo này. Cô ấy đang tìm căn hộ mới.
+        - Gần đây Lan đang ở với chúng tôi. Cô ấy đang tìm căn hộ mới.
+        - Dạo này Lan đang ở với chúng tôi. Cô ấy đang tìm nhà mới.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: These days là "dạo này" - việc tạm thời nên dùng is staying. She's looking for là "đang tìm" (chưa tìm được). Flat là căn hộ.
+    display_answer: Dạo này Lan đang ở với chúng tôi. Cô ấy đang tìm căn hộ mới.
+
+  - key: en:exercise:what-are-you-doing-order-dress
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:wear
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cô ấy thường mặc quần jean, nhưng hôm nay cô ấy mặc váy.\""
+      tokens:
+        - { id: dr-wearing, text: wearing }
+        - { id: dr-jeans, text: jeans }
+        - { id: dr-today, text: today }
+        - { id: dr-she1, text: She }
+        - { id: dr-dress, text: dress }
+        - { id: dr-shes, text: "she's" }
+        - { id: dr-usually, text: usually }
+        - { id: dr-a, text: a }
+        - { id: dr-wears, text: wears }
+        - { id: dr-but, text: but }
+        - { id: dr-wear, text: wear }
+    answer:
+      orders:
+        - [dr-she1, dr-usually, dr-wears, dr-jeans, dr-but, dr-today, dr-shes, dr-wearing, dr-a, dr-dress]
+        - [dr-she1, dr-usually, dr-wears, dr-jeans, dr-but, dr-shes, dr-wearing, dr-a, dr-dress, dr-today]
+    explanation:
+      vi: Thói quen (usually) dùng wears; hôm nay khác thường nên dùng she's wearing. Wear dùng chung cho mặc, đội, đeo.
+    display_answer: "She usually wears jeans, but today she's wearing a dress."
+
+  - key: en:exercise:what-are-you-doing-translate-walk
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:present-simple-vs-continuous
+    prompt:
+      source_text: Tôi thường đi làm bằng xe buýt, nhưng hôm nay tôi đi bộ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I usually go to work by bus, but today I'm walking.
+        - I usually go to work by bus, but I'm walking today.
+        - I usually take the bus to work, but today I'm walking.
+        - I usually take the bus to work, but I'm walking today.
+        - I usually go to work by bus, but today I'm walking to work.
+        - I usually go to work by bus, but today I'm going on foot.
+        - I often go to work by bus, but today I'm walking.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I usually go to work by bus, but today I walk.
+        feedback_vi: Hôm nay khác thói quen, là việc tạm thời, nên dùng I'm walking.
+        error_tag: simple_vs_continuous
+      - answer: I'm usually going to work by bus, but today I'm walking.
+        feedback_vi: Usually là thói quen, dùng hiện tại đơn - I usually go.
+        error_tag: simple_vs_continuous
+      - answer: I usually go to work by bus, but today I am walk.
+        feedback_vi: Có am thì cần -ing - I am walking.
+        error_tag: missing_ing
+    explanation:
+      vi: Vế đầu là thói quen (usually) nên dùng hiện tại đơn go; vế sau là việc khác thường hôm nay nên dùng I'm walking.
+    display_answer: I usually go to work by bus, but today I'm walking.

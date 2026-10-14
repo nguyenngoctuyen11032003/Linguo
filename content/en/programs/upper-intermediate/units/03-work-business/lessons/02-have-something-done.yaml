@@ -1,0 +1,395 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:have-something-done
+order_index: 2
+level: b2
+title:
+  vi: Nhờ người khác làm - have / get something done
+objectives:
+  - vi: Nói việc mình thuê, nhờ người khác làm bằng have / get + vật + V3.
+  - vi: Phân biệt have someone do và get someone to do.
+  - vi: Dùng từ vựng chi phí và nhà cung cấp - outsource, supplier, get a quote, cut costs, budget, profit / loss.
+estimated_minutes: 20
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:future-continuous-perfect]
+items:
+  - item: en:item:have-something-done
+  - item: en:item:get-something-done
+  - item: en:item:have-someone-do
+  - item: en:item:causative-experience
+  - item: en:item:outsource
+  - item: en:item:supplier
+  - item: en:item:get-a-quote
+  - item: en:item:cut-costs
+  - item: en:item:budget
+    role: reuse
+  - item: en:item:profit-and-loss
+  - item: en:item:future-perfect
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói đúng những câu như "Tôi đi cắt tóc", "Công ty thuê người sơn lại văn phòng", "Tôi sẽ bảo trợ lý gửi anh" - và bàn chuyện chi phí, nhà cung cấp, ngân sách ở công sở.
+  - type: explain
+    text:
+      vi: "Khi bạn trả tiền hoặc nhờ người khác làm, tiếng Anh dùng have + vật + V3: I had my hair cut (tôi đi cắt tóc). Tiếng Việt chỉ nói \"tôi cắt tóc\", nhưng I cut my hair nghĩa là tự tay cắt."
+  - type: explain
+    text:
+      vi: "Get + vật + V3 cùng nghĩa nhưng thân mật hơn, hay dùng khi nói: I need to get my laptop repaired. Thì của câu nằm ở have / get: I'm having…, I had…, I'll get…"
+  - type: explain
+    text:
+      vi: "Khi nêu rõ người làm: have + người + V nguyên mẫu (I'll have my assistant send it), hoặc get + người + to V (I'll get my assistant to send it). Hai mẫu này khác nhau đúng ở chữ to."
+  - type: deep_explain
+    text:
+      vi: "Cùng mẫu have + vật + V3 còn dùng cho sự cố không mong muốn: She had her bag stolen (cô ấy bị trộm túi) - ở đây không ai nhờ ai cả. Trong kinh doanh, có những cụm hay đi với cấu trúc này: have the documents translated, get the brochures printed, have the contract checked by a lawyer. Muốn nói người làm sau V3, dùng by: We had the website redesigned by an agency."
+  - type: example
+    target: We're having the brochures printed by a local supplier to cut costs.
+    target_lang: en
+    translation:
+      vi: Chúng tôi thuê một nhà cung cấp địa phương in tờ rơi để cắt giảm chi phí.
+    note:
+      vi: Having + vật (the brochures) + V3 (printed); người làm thêm sau by.
+  - type: example
+    target: Before we sign, let's get a quote and have the contract checked by our lawyer.
+    target_lang: en
+    translation:
+      vi: Trước khi ký, mình xin báo giá và nhờ luật sư kiểm tra hợp đồng đã.
+    note:
+      vi: Have the contract checked - mình không tự kiểm tra, mà nhờ luật sư.
+  - type: example
+    target: I'll get the IT team to set up your laptop, and I'll have Mai send you the login details.
+    target_lang: en
+    translation:
+      vi: Tôi sẽ nhờ nhóm IT cài đặt máy tính cho bạn, và bảo Mai gửi bạn thông tin đăng nhập.
+    note:
+      vi: Get + người + to V (to set up); have + người + V (send).
+  - type: example
+    target: The company outsourced its delivery service last year and made a profit for the first time, all within budget.
+    target_lang: en
+    translation:
+      vi: Năm ngoái công ty thuê ngoài dịch vụ giao hàng và lần đầu tiên có lãi, mà vẫn trong phạm vi ngân sách.
+    note:
+      vi: Make a profit (có lãi), within budget (không vượt ngân sách).
+  - type: common_mistake
+    wrong: I cut my hair yesterday. (khi đi tiệm cắt)
+    right: I had my hair cut yesterday.
+    target_lang: en
+    note:
+      vi: I cut my hair là tự tay cắt. Đi tiệm (người khác cắt) phải dùng had my hair cut.
+  - type: common_mistake
+    wrong: We had repaired the printer.
+    right: We had the printer repaired.
+    target_lang: en
+    note:
+      vi: Đặt vật trước V3. We had repaired the printer là thì quá khứ hoàn thành - nghĩa là tự mình đã sửa.
+  - type: common_mistake
+    wrong: I'll get my assistant send you the file.
+    right: I'll get my assistant to send you the file.
+    target_lang: en
+    note:
+      vi: Get + người + to V; chỉ have + người mới đi với V nguyên mẫu (have my assistant send).
+  - type: summary
+    points:
+      - vi: "Have / get + vật + V3: nhờ, thuê người khác làm (I had my hair cut)."
+      - vi: "Have + người + V; get + người + to V."
+      - vi: "Have + vật + V3 còn có nghĩa \"bị\" (had my bag stolen)."
+      - vi: "Từ vựng: outsource, supplier, get a quote, cut costs, budget (within / over budget), make a profit / a loss."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:wb-causative-mcq-haircut
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:have-something-done
+    prompt:
+      stem: "Bạn vừa ra tiệm cắt tóc. Câu nào đúng nghĩa \"Hôm qua tôi đi cắt tóc\"?"
+      stem_lang: vi
+      options:
+        - { id: d3k, text: I had my hair cut yesterday., lang: en }
+        - { id: s7p, text: I cut my hair yesterday., lang: en }
+        - { id: o2w, text: I had cut my hair yesterday., lang: en }
+        - { id: j9m, text: I had my hair cutting yesterday., lang: en }
+    answer:
+      correct_option_id: d3k
+    explanation:
+      vi: Người khác cắt cho bạn nên dùng have + vật + V3 (had my hair cut). I cut my hair là tự cắt; had cut my hair là quá khứ hoàn thành; cutting không phải V3.
+    display_answer: I had my hair cut yesterday.
+
+  - key: en:exercise:wb-causative-listen-stolen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:causative-experience
+    prompt:
+      audio_asset_id: null
+      fallback_text: Sorry I'm late. I had my phone stolen on the bus.
+      options:
+        - { id: n4c, text: "Xin lỗi tôi đến muộn. Tôi bị trộm điện thoại trên xe buýt.", lang: vi }
+        - { id: y1t, text: "Xin lỗi tôi đến muộn. Tôi đã nhờ người lấy điện thoại trên xe buýt.", lang: vi }
+        - { id: q8a, text: "Xin lỗi tôi đến muộn. Tôi đã lấy trộm điện thoại trên xe buýt.", lang: vi }
+        - { id: i5g, text: "Xin lỗi tôi đến muộn. Tôi để quên điện thoại trên xe buýt.", lang: vi }
+    answer:
+      correct_option_id: n4c
+    explanation:
+      vi: Have + vật + V3 ở đây là sự cố không mong muốn - "bị trộm". Không ai nhờ ai cả; người nói cũng không phải kẻ trộm.
+    display_answer: "Xin lỗi tôi đến muộn. Tôi bị trộm điện thoại trên xe buýt."
+
+  - key: en:exercise:wb-causative-fill-get-to-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:have-someone-do
+    prompt:
+      template: "I'll get the supplier {{b1}} send us a new quote."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Tôi sẽ nhờ nhà cung cấp gửi cho chúng ta báo giá mới."
+        - "Gợi ý: get + người + ? + V."
+    answer:
+      blanks:
+        b1: [to]
+    known_wrong:
+      - answer: for
+        feedback_vi: Get + người + to V - không dùng for.
+        error_tag: causative_get_to
+      - answer: will
+        feedback_vi: Sau get + người cần to + V nguyên mẫu.
+        error_tag: causative_get_to
+    explanation:
+      vi: Mẫu get + người + to V (get the supplier to send). Nếu dùng have thì bỏ to - have the supplier send.
+    display_answer: "I'll get the supplier to send us a new quote."
+
+  - key: en:exercise:wb-causative-mcq-quote-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:get-a-quote
+    prompt:
+      stem: "\"Let's get a quote from two suppliers before we decide.\" Quote ở đây nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: b6u, text: báo giá, lang: vi }
+        - { id: v2x, text: câu trích dẫn, lang: vi }
+        - { id: h0e, text: hợp đồng, lang: vi }
+        - { id: z4i, text: hoá đơn, lang: vi }
+    answer:
+      correct_option_id: b6u
+    explanation:
+      vi: Trong kinh doanh, get a quote là xin báo giá trước khi quyết định mua. Câu trích dẫn chỉ là nghĩa thông thường của quote; hợp đồng là contract, hoá đơn là invoice.
+    display_answer: báo giá
+
+  # ---------------- recall ----------------
+  - key: en:exercise:wb-causative-fill-office-repainted
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:have-something-done
+    prompt:
+      template: "The office looks great! We {{b1}} it {{b2}} last month."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [had, got]
+        b2: [repainted, painted, redecorated, renovated, refurbished, decorated]
+    known_wrong:
+      - answer: repaint
+        feedback_vi: Sau vật cần V3 - repainted.
+        error_tag: causative_form
+      - answer: repainting
+        feedback_vi: Sau vật cần V3 (repainted), không phải V-ing.
+        error_tag: causative_form
+      - answer: have
+        feedback_vi: Việc xảy ra tháng trước nên have chia quá khứ - had.
+        error_tag: causative_tense
+    explanation:
+      vi: Công ty thuê người sơn nên dùng have / get + vật (it) + V3. Last month là quá khứ nên chia had / got.
+    display_answer: "The office looks great! We had it repainted last month."
+
+  - key: en:exercise:wb-causative-translate-contract-checked
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:have-something-done
+    prompt:
+      source_text: Chúng ta nên nhờ luật sư kiểm tra hợp đồng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We should have the contract checked by a lawyer.
+        - We should get the contract checked by a lawyer.
+        - We should have a lawyer check the contract.
+        - We should get a lawyer to check the contract.
+        - We should have the contract checked by our lawyer.
+        - We should get the contract checked by our lawyer.
+        - We should have our lawyer check the contract.
+        - We should get our lawyer to check the contract.
+        - We should ask a lawyer to check the contract.
+        - We should ask our lawyer to check the contract.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We should have checked the contract by a lawyer.
+        feedback_vi: Vật phải đứng trước V3 - have the contract checked. Should have checked lại là "lẽ ra nên kiểm tra".
+        error_tag: causative_word_order
+      - answer: We should get a lawyer check the contract.
+        feedback_vi: Get + người + to V - get a lawyer to check.
+        error_tag: causative_get_to
+      - answer: We should have a lawyer to check the contract.
+        feedback_vi: Have + người + V nguyên mẫu, không có to - have a lawyer check.
+        error_tag: causative_get_to
+    explanation:
+      vi: "\"Nhờ luật sư kiểm tra hợp đồng\" có nhiều cách: have / get the contract checked by a lawyer, have a lawyer check, get a lawyer to check."
+    display_answer: We should have the contract checked by a lawyer.
+
+  - key: en:exercise:wb-causative-translate-cut-costs
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:cut-costs
+    prompt:
+      source_text: Năm nay chúng ta phải cắt giảm chi phí, nếu không chúng ta sẽ bị lỗ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We have to cut costs this year, or we'll make a loss.
+        - We have to cut costs this year, otherwise we'll make a loss.
+        - We need to cut costs this year, or we'll make a loss.
+        - We need to cut costs this year, otherwise we'll make a loss.
+        - We must cut costs this year, or we'll make a loss.
+        - We must cut costs this year, otherwise we'll make a loss.
+        - We have to cut costs this year, or we will make a loss.
+        - This year we have to cut costs, or we'll make a loss.
+        - We have to reduce costs this year, or we'll make a loss.
+        - We need to reduce costs this year, otherwise we'll make a loss.
+        - We have to cut costs this year, or we'll lose money.
+        - We need to cut costs this year, or we'll lose money.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We have to cut costs this year, or we'll get a loss.
+        feedback_vi: Bị lỗ là make a loss, không phải get a loss.
+        error_tag: profit_loss_collocation
+      - answer: We have to cut cost this year, or we'll make a loss.
+        feedback_vi: Cụm cố định là cut costs - costs số nhiều.
+        error_tag: cut_costs_plural
+      - answer: We have to decrease the costs this year, or we'll make a loss.
+        feedback_vi: Cụm tự nhiên là cut costs hoặc reduce costs.
+        error_tag: cut_costs_collocation
+    explanation:
+      vi: Cắt giảm chi phí là cut / reduce costs; bị lỗ là make a loss (hoặc lose money). "Nếu không" là or / otherwise.
+    display_answer: We have to cut costs this year, or we'll make a loss.
+
+  # ---------------- application ----------------
+  - key: en:exercise:wb-causative-order-website-redesigned
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:outsource
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chúng tôi đang thuê một công ty bên ngoài thiết kế lại website.\""
+      tokens:
+        - { id: c-redesigned, text: redesigned }
+        - { id: c-an, text: an }
+        - { id: c-are, text: are }
+        - { id: c-website, text: website }
+        - { id: c-by, text: by }
+        - { id: c-having, text: having }
+        - { id: c-we, text: We }
+        - { id: c-outside, text: outside }
+        - { id: c-our, text: our }
+        - { id: c-agency, text: agency }
+    answer:
+      orders:
+        - [c-we, c-are, c-having, c-our, c-website, c-redesigned, c-by, c-an, c-outside, c-agency]
+    explanation:
+      vi: Hiện tại tiếp diễn của have (are having) + vật (our website) + V3 (redesigned) + by + người làm (an outside agency). An vì outside bắt đầu bằng nguyên âm.
+    display_answer: We are having our website redesigned by an outside agency.
+
+  - key: en:exercise:wb-causative-translate-within-budget-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:budget
+    prompt:
+      source_text: We had the new warehouse built on time and within budget.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chúng tôi đã cho xây nhà kho mới đúng hạn và trong phạm vi ngân sách.
+        - Chúng tôi đã thuê người xây nhà kho mới đúng hạn và trong phạm vi ngân sách.
+        - Chúng tôi đã cho xây nhà kho mới đúng hạn và không vượt ngân sách.
+        - Chúng tôi đã thuê xây nhà kho mới đúng hạn và không vượt ngân sách.
+        - Nhà kho mới của chúng tôi được xây đúng hạn và trong phạm vi ngân sách.
+        - Nhà kho mới của chúng tôi được xây đúng hạn và không vượt ngân sách.
+        - Chúng tôi đã cho xây nhà kho mới đúng tiến độ và trong ngân sách.
+        - Chúng tôi đã cho xây nhà kho mới đúng hạn và trong ngân sách.
+        - Chúng ta đã cho xây nhà kho mới đúng hạn và trong phạm vi ngân sách.
+        - Chúng tôi đã cho xây kho mới đúng hạn và không vượt ngân sách.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Chúng tôi đã tự xây nhà kho mới đúng hạn và trong phạm vi ngân sách.
+        feedback_vi: Had the warehouse built nghĩa là thuê / cho người khác xây, không phải tự xây.
+        error_tag: causative_meaning
+    explanation:
+      vi: Had + vật + built là cho / thuê người xây; on time là đúng hạn; within budget là trong phạm vi ngân sách, không vượt chi.
+    display_answer: Chúng tôi đã cho xây nhà kho mới đúng hạn và trong phạm vi ngân sách.
+
+  - key: en:exercise:wb-causative-mcq-situation-assistant
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:have-someone-do
+    prompt:
+      stem: Khách hàng hỏi xin tài liệu sản phẩm. Bạn muốn nói lịch sự rằng bạn sẽ bảo trợ lý gửi cho họ ngay hôm nay. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: a8f, text: "I'll have my assistant send you the documents today.", lang: en }
+        - { id: m3q, text: "I'll have my assistant to send you the documents today.", lang: en }
+        - { id: k7b, text: "I'll get my assistant send you the documents today.", lang: en }
+        - { id: p0h, text: "I'll have sent my assistant you the documents today.", lang: en }
+    answer:
+      correct_option_id: a8f
+    explanation:
+      vi: Have + người + V nguyên mẫu (have my assistant send). Have không đi với to; get thì phải có to (get my assistant to send); phương án cuối đảo lộn trật tự và sai nghĩa.
+    display_answer: "I'll have my assistant send you the documents today."
+
+  - key: en:exercise:wb-causative-mcq-situation-supplier
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:supplier
+    prompt:
+      stem: Trong cuộc họp, sếp hỏi vì sao lợi nhuận quý này tăng. Câu trả lời nào dùng từ chính xác nhất?
+      stem_lang: vi
+      options:
+        - { id: e2v, text: "We found a cheaper supplier and outsourced our deliveries, so we cut costs and made a bigger profit.", lang: en }
+        - { id: t6n, text: "We found a cheaper customer and outsourced our deliveries, so we cut costs and made a bigger profit.", lang: en }
+        - { id: g1r, text: "We found a cheaper supplier and outsourced for our deliveries, so we cut cost and got a bigger profit.", lang: en }
+        - { id: w9s, text: "We found a cheaper supplier and outsourced our deliveries, so we cut costs and made a bigger loss.", lang: en }
+    answer:
+      correct_option_id: e2v
+    explanation:
+      vi: Bên bán cho mình là supplier (customer là bên mua). Outsource something không cần for; cut costs dùng số nhiều; có lãi là make a profit. Phương án cuối nói "lỗ nặng hơn" - ngược với câu hỏi.
+    display_answer: "We found a cheaper supplier and outsourced our deliveries, so we cut costs and made a bigger profit."

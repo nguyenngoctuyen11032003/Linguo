@@ -1,0 +1,378 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:meetings-language
+order_index: 3
+level: b2
+title:
+  vi: Điều hành và tham gia cuộc họp
+objectives:
+  - vi: Mở đầu, chuyển nội dung và kết thúc cuộc họp - Shall we get started?, Let's move on to…, To sum up.
+  - vi: Xen vào và giữ lượt lời lịch sự - Could I just come in here?, If I could just finish…
+  - vi: Hiểu chương trình họp và biên bản - agenda, action point, take the minutes, chair, AOB.
+estimated_minutes: 20
+skills: [speaking, listening, vocabulary]
+prerequisites: [en:lesson:have-something-done]
+items:
+  - item: en:item:shall-we-get-started
+  - item: en:item:agenda
+  - item: en:item:lets-move-on-to
+  - item: en:item:could-i-just-come-in-here
+  - item: en:item:if-i-could-just-finish
+  - item: en:item:come-back-to-that
+  - item: en:item:to-sum-up
+  - item: en:item:action-point
+  - item: en:item:chair-a-meeting
+  - item: en:item:take-the-minutes
+  - item: en:item:any-other-business
+  - item: en:item:discuss
+    role: reuse
+  - item: en:item:meeting
+    role: reuse
+  - item: en:item:budget
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn có đủ "bộ câu" để chủ trì hoặc tham gia một cuộc họp bằng tiếng Anh - từ lúc mở đầu, chuyển ý, xen vào, đến lúc tóm tắt và giao việc.
+  - type: explain
+    text:
+      vi: "Một cuộc họp thường theo agenda (chương trình họp): mở đầu (Shall we get started?), lần lượt từng nội dung (Let's move on to…), các vấn đề khác (Any other business?) và tóm tắt (To sum up,…). Người chủ trì (the chair) dẫn dắt các bước này."
+  - type: explain
+    text:
+      vi: "Muốn nói xen vào, người Anh dùng câu hỏi xin phép có just để làm nhẹ: Could I just come in here? Nếu bị ngắt lời, bạn giữ lượt bằng If I could just finish… - câu bỏ lửng nhưng rất tự nhiên."
+  - type: explain
+    text:
+      vi: "Khi một ý làm lạc đề hoặc tốn thời gian, người chủ trì nói Can we come back to that later? Tiếng Việt hay nói thẳng \"Để sau đi\", còn tiếng Anh công sở chuộng câu hỏi mềm mỏng."
+  - type: deep_explain
+    text:
+      vi: "Sau move on to là danh từ hoặc V-ing (move on to the budget / move on to discussing the budget), vì to là giới từ. Discuss là ngoại động từ - discuss the budget, không có about. Biên bản họp (the minutes) thường ghi action points theo mẫu rất gọn - tên người + to V (Lan to contact the supplier by Friday) - nghĩa là người đó phải làm việc này."
+  - type: example
+    target: Right, it's ten o'clock, so shall we get started? There are three items on the agenda today.
+    target_lang: en
+    translation:
+      vi: Được rồi, mười giờ rồi, chúng ta bắt đầu nhé? Hôm nay có ba nội dung trong chương trình họp.
+    note:
+      vi: Mở đầu và giới thiệu agenda - items on the agenda (giới từ on).
+  - type: example
+    target: Sorry, could I just come in here? Those sales figures are from last year.
+    target_lang: en
+    translation:
+      vi: Xin lỗi, cho tôi xen vào một chút được không? Số liệu doanh số đó là của năm ngoái.
+    note:
+      vi: Xin lỗi + câu hỏi xin phép có just - cách ngắt lời lịch sự.
+  - type: example
+    target: That's an interesting idea, but can we come back to that later? Let's move on to the budget first.
+    target_lang: en
+    translation:
+      vi: Ý đó hay đấy, nhưng mình bàn lại sau được không? Trước hết chúng ta chuyển sang phần ngân sách.
+    note:
+      vi: Ghi nhận ý kiến rồi hoãn lại, sau đó chuyển nội dung.
+  - type: example
+    target: "To sum up, we've agreed to delay the launch. Action points: Hà to update the timeline, and Tuấn to inform the client. Linh, thanks for taking the minutes."
+    target_lang: en
+    translation:
+      vi: "Tóm lại, chúng ta đã thống nhất lùi buổi ra mắt. Đầu việc: Hà cập nhật lịch trình, Tuấn thông báo cho khách hàng. Cảm ơn Linh đã ghi biên bản."
+    note:
+      vi: Kết thúc bằng To sum up, rồi giao action points theo mẫu tên người + to V.
+  - type: common_mistake
+    wrong: Let's discuss about the budget.
+    right: Let's discuss the budget.
+    target_lang: en
+    note:
+      vi: "Tiếng Việt nói \"thảo luận về\", nhưng discuss đi thẳng với tân ngữ. Nếu muốn có about, dùng talk about hoặc have a discussion about."
+  - type: common_mistake
+    wrong: "Wait, wait! I want to say something."
+    right: Sorry, could I just come in here?
+    target_lang: en
+    note:
+      vi: Câu mệnh lệnh khi ngắt lời nghe rất thô trong cuộc họp. Hãy mở đầu bằng Sorry và dùng câu hỏi xin phép.
+  - type: common_mistake
+    wrong: Let's move on to discuss the next item.
+    right: Let's move on to the next item.
+    target_lang: en
+    note:
+      vi: To trong move on to là giới từ, nên sau nó là danh từ hoặc V-ing (move on to discussing), không phải V nguyên mẫu.
+  - type: summary
+    points:
+      - vi: "Mở đầu: Shall we get started? - Chuyển ý: Let's move on to + danh từ / V-ing."
+      - vi: "Xen vào: Could I just come in here? - Giữ lượt: If I could just finish…"
+      - vi: "Hoãn chủ đề: Can we come back to that later? - Kết thúc: To sum up,…"
+      - vi: "Từ vựng: agenda (items on the agenda), chair a meeting, take the minutes, action point, any other business (AOB)."
+      - vi: Discuss + tân ngữ, không có about.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:wb-meeting-mcq-open
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:shall-we-get-started
+    prompt:
+      stem: Bạn là người chủ trì, mọi người đã đến đủ. Câu nào phù hợp nhất để mở đầu cuộc họp?
+      stem_lang: vi
+      options:
+        - { id: r5t, text: "Right, everyone's here. Shall we get started?", lang: en }
+        - { id: k1v, text: "Right, everyone's here. To sum up?", lang: en }
+        - { id: f7m, text: "Right, everyone's here. Shall we start up?", lang: en }
+        - { id: x2p, text: "Right, everyone's here. Is there any other business?", lang: en }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: Shall we get started? là câu mở đầu chuẩn. To sum up và Any other business dùng ở cuối cuộc họp; start up là khởi nghiệp hoặc khởi động máy.
+    display_answer: "Right, everyone's here. Shall we get started?"
+
+  - key: en:exercise:wb-meeting-listen-come-in
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:could-i-just-come-in-here
+    prompt:
+      audio_asset_id: null
+      fallback_text: Sorry, could I just come in here? I don't think we can afford that.
+      options:
+        - { id: u3h, text: "Xin lỗi, cho tôi xen vào một chút được không? Tôi nghĩ chúng ta không đủ tiền làm việc đó.", lang: vi }
+        - { id: d8c, text: "Xin lỗi, tôi vào phòng được không? Tôi nghĩ chúng ta không đủ tiền làm việc đó.", lang: vi }
+        - { id: j4w, text: "Xin lỗi, tôi có thể đến đây không? Tôi nghĩ chúng ta nên mua cái đó.", lang: vi }
+        - { id: o6a, text: "Xin lỗi, cho tôi nói nốt được không? Tôi nghĩ chúng ta đủ tiền làm việc đó.", lang: vi }
+    answer:
+      correct_option_id: u3h
+    explanation:
+      vi: Come in here trong cuộc họp là xen vào cuộc thảo luận, không phải bước vào phòng. Can't afford là không đủ tiền chi trả.
+    display_answer: "Xin lỗi, cho tôi xen vào một chút được không? Tôi nghĩ chúng ta không đủ tiền làm việc đó."
+
+  - key: en:exercise:wb-meeting-fill-agenda-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:agenda
+    prompt:
+      template: "There are four items {{b1}} the {{b2}} today, so let's be quick."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Hôm nay có bốn nội dung trong chương trình họp, nên chúng ta làm nhanh nhé."
+        - "Gợi ý: giới từ o… + danh từ a… (chương trình họp)."
+    answer:
+      blanks:
+        b1: ["on"]
+        b2: [agenda]
+    known_wrong:
+      - answer: in
+        feedback_vi: Items on the agenda - dùng on, giống như on the list.
+        error_tag: agenda_preposition
+      - answer: diary
+        feedback_vi: Diary là sổ lịch cá nhân. Chương trình họp là agenda.
+        error_tag: agenda_word
+    explanation:
+      vi: Nội dung họp nằm "trên" danh sách nên dùng on the agenda (giống on the list, on the menu).
+    display_answer: "There are four items on the agenda today, so let's be quick."
+
+  - key: en:exercise:wb-meeting-mcq-minutes-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:take-the-minutes
+    prompt:
+      stem: "\"Could you take the minutes today, Hưng?\" Người chủ trì đang nhờ Hưng làm gì?"
+      stem_lang: vi
+      options:
+        - { id: c9d, text: Ghi biên bản cuộc họp, lang: vi }
+        - { id: l4s, text: Bấm giờ cho cuộc họp, lang: vi }
+        - { id: e1k, text: Nghỉ vài phút, lang: vi }
+        - { id: n5y, text: Chủ trì cuộc họp, lang: vi }
+    answer:
+      correct_option_id: c9d
+    explanation:
+      vi: The minutes (luôn số nhiều) là biên bản cuộc họp, take the minutes là ghi biên bản. Nghĩa "phút" không hợp ngữ cảnh; chủ trì là chair a meeting.
+    display_answer: Ghi biên bản cuộc họp
+
+  # ---------------- recall ----------------
+  - key: en:exercise:wb-meeting-fill-move-on
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:lets-move-on-to
+    prompt:
+      template: "OK, I think we've covered that. Let's {{b1}} on {{b2}} the next item - the marketing budget."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [move, go]
+        b2: [to]
+    known_wrong:
+      - answer: change
+        feedback_vi: Chuyển nội dung họp là move on to, không phải change on.
+        error_tag: move_on_to
+      - answer: discuss
+        feedback_vi: Cụm cố định là move on to + danh từ.
+        error_tag: move_on_to
+      - answer: about
+        feedback_vi: Move on to - giới từ to, không phải about.
+        error_tag: move_on_to
+    explanation:
+      vi: Let's move on to + danh từ là cách chuyển sang nội dung tiếp theo. Go on to cũng được dùng.
+    display_answer: "OK, I think we've covered that. Let's move on to the next item - the marketing budget."
+
+  - key: en:exercise:wb-meeting-translate-discuss-budget
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:discuss
+    prompt:
+      source_text: Chúng ta sẽ thảo luận về ngân sách vào cuối cuộc họp.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We'll discuss the budget at the end of the meeting.
+        - We will discuss the budget at the end of the meeting.
+        - We're going to discuss the budget at the end of the meeting.
+        - We'll talk about the budget at the end of the meeting.
+        - We will talk about the budget at the end of the meeting.
+        - We're going to talk about the budget at the end of the meeting.
+        - We'll be discussing the budget at the end of the meeting.
+        - We will be discussing the budget at the end of the meeting.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We'll discuss about the budget at the end of the meeting.
+        feedback_vi: Discuss không đi với about - discuss the budget.
+        error_tag: discuss_about
+      - answer: We will discuss about the budget at the end of the meeting.
+        feedback_vi: Discuss không đi với about - discuss the budget.
+        error_tag: discuss_about
+      - answer: We'll discuss the budget in the end of the meeting.
+        feedback_vi: Cuối (cuộc họp) là at the end of; in the end nghĩa là "rốt cuộc".
+        error_tag: at_end_in_end
+    explanation:
+      vi: Discuss là ngoại động từ - discuss the budget, không có about (muốn dùng about thì dùng talk about). "Vào cuối" là at the end of.
+    display_answer: We'll discuss the budget at the end of the meeting.
+
+  - key: en:exercise:wb-meeting-translate-come-back
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:come-back-to-that
+    prompt:
+      source_text: Câu hỏi hay đấy, nhưng chúng ta bàn lại chuyện đó sau được không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - That's a good question, but can we come back to that later?
+        - That's a good question, but could we come back to that later?
+        - Good question, but can we come back to that later?
+        - Good question, but could we come back to that later?
+        - That is a good question, but can we come back to that later?
+        - That's a good question, but can we come back to it later?
+        - That's a good question, but could we come back to it later?
+        - Good question, but can we come back to it later?
+        - That's a good question, but can we discuss that later?
+        - That's a good question, but can we talk about that later?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: That's a good question, but can we return back to that later?
+        feedback_vi: Return đã có nghĩa là quay lại; nói come back to hoặc return to.
+        error_tag: return_back
+      - answer: That's a good question, but can we discuss about that later?
+        feedback_vi: Discuss không đi với about.
+        error_tag: discuss_about
+    explanation:
+      vi: Can / Could we come back to that later? là cách hoãn một chủ đề lịch sự. Có thể khen câu hỏi trước (Good question) để người nghe không thấy bị gạt đi.
+    display_answer: That's a good question, but can we come back to that later?
+
+  # ---------------- application ----------------
+  - key: en:exercise:wb-meeting-order-action-point
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:to-sum-up
+    prompt:
+      instruction: "Sắp xếp thành câu kết thúc cuộc họp: \"Tóm lại, chúng ta đã đồng ý cắt giảm chi phí đi lại.\""
+      tokens:
+        - { id: s-costs, text: costs }
+        - { id: s-agreed, text: agreed }
+        - { id: s-sum, text: sum }
+        - { id: s-to2, text: to }
+        - { id: s-travel, text: travel }
+        - { id: s-weve, text: "we've" }
+        - { id: s-up, text: "up," }
+        - { id: s-cut, text: cut }
+        - { id: s-to1, text: To }
+    answer:
+      orders:
+        - [s-to1, s-sum, s-up, s-weve, s-agreed, s-to2, s-cut, s-travel, s-costs]
+    explanation:
+      vi: To sum up đứng đầu câu, có dấu phẩy; agree to + V (agreed to cut); travel costs là chi phí đi lại.
+    display_answer: "To sum up, we've agreed to cut travel costs."
+
+  - key: en:exercise:wb-meeting-mcq-situation-keep-turn
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:if-i-could-just-finish
+    prompt:
+      stem: Bạn đang trình bày thì một đồng nghiệp chen ngang. Bạn muốn nói nốt ý của mình một cách lịch sự. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: q2n, text: "Sorry, if I could just finish my point - then I'd love to hear your view.", lang: en }
+        - { id: h6x, text: "Stop talking, I haven't finished.", lang: en }
+        - { id: z8b, text: "Sorry, could I just come in here?", lang: en }
+        - { id: v1e, text: "To sum up, let's move on to any other business.", lang: en }
+    answer:
+      correct_option_id: q2n
+    explanation:
+      vi: If I could just finish… giữ lượt lời một cách mềm mỏng, kèm lời mời người kia nói sau. Câu mệnh lệnh quá thô; Could I just come in here? là để xen vào chứ không phải giữ lượt; câu cuối dùng để kết thúc cuộc họp.
+    display_answer: "Sorry, if I could just finish my point - then I'd love to hear your view."
+
+  - key: en:exercise:wb-meeting-translate-chair-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:chair-a-meeting
+    prompt:
+      source_text: Ms Thảo will be chairing the meeting, and Nam will take the minutes.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chị Thảo sẽ chủ trì cuộc họp, còn Nam sẽ ghi biên bản.
+        - Chị Thảo sẽ chủ trì cuộc họp và Nam sẽ ghi biên bản.
+        - Bà Thảo sẽ chủ trì cuộc họp, còn Nam sẽ ghi biên bản.
+        - Bà Thảo sẽ chủ trì cuộc họp và Nam sẽ ghi biên bản.
+        - Cô Thảo sẽ chủ trì cuộc họp, còn Nam sẽ ghi biên bản.
+        - Cô Thảo sẽ chủ trì cuộc họp và Nam sẽ ghi biên bản.
+        - Chị Thảo sẽ chủ trì cuộc họp, Nam sẽ ghi biên bản.
+        - Chị Thảo sẽ chủ trì buổi họp, còn Nam sẽ ghi biên bản.
+        - Chị Thảo sẽ chủ trì buổi họp và Nam sẽ ghi biên bản.
+        - Thảo sẽ chủ trì cuộc họp, còn Nam sẽ ghi biên bản.
+        - Chị Thảo sẽ chủ trì cuộc họp, còn Nam sẽ ghi biên bản cuộc họp.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Chị Thảo sẽ ngồi ghế cuộc họp, còn Nam sẽ ghi biên bản.
+        feedback_vi: Chair ở đây là động từ "chủ trì", không phải cái ghế.
+        error_tag: chair_meaning
+      - answer: Chị Thảo sẽ chủ trì cuộc họp, còn Nam sẽ tính số phút.
+        feedback_vi: Take the minutes là ghi biên bản, không phải tính phút.
+        error_tag: minutes_meaning
+    explanation:
+      vi: Chair the meeting là chủ trì cuộc họp; take the minutes là ghi biên bản. Will be chairing là tương lai tiếp diễn - việc đã được lên kế hoạch.
+    display_answer: Chị Thảo sẽ chủ trì cuộc họp, còn Nam sẽ ghi biên bản.

@@ -1,0 +1,440 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:invitations-and-calls
+order_index: 4
+level: a2
+title:
+  vi: Would you like to…? - lời mời và gọi điện thoại
+objectives:
+  - vi: Mời ai đó bằng Would you like to…? và Do you fancy + V-ing…?
+  - vi: Nhận lời (I'd love to) và từ chối lịch sự (I'm afraid I can't, I'm busy).
+  - vi: Gọi và nghe điện thoại - Can I speak to…? Speaking. Hold on. Can I take a message? I'll call you back.
+estimated_minutes: 16
+skills: [speaking, listening]
+prerequisites: [en:lesson:describe-a-photo]
+items:
+  - item: en:item:would-you-like-to
+  - item: en:item:do-you-fancy
+  - item: en:item:id-love-to
+  - item: en:item:im-afraid-i-cant
+  - item: en:item:busy
+  - item: en:item:maybe-another-time
+  - item: en:item:can-i-speak-to
+  - item: en:item:whos-calling
+  - item: en:item:this-is-speaking
+  - item: en:item:hold-on
+  - item: en:item:leave-a-message
+  - item: en:item:call-you-back
+  - item: en:item:would-you-like
+    role: reuse
+  - item: en:item:are-you-free
+    role: reuse
+  - item: en:item:invite
+    role: reuse
+  - item: en:item:call
+    role: reuse
+  - item: en:item:object-pronouns
+    role: reuse
+  - item: en:item:present-continuous-future
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mời bạn bè, đồng nghiệp đi chơi, nhận lời hay từ chối khéo, và xử lý một cuộc gọi điện thoại đơn giản - hỏi gặp ai, chờ máy, để lại lời nhắn.
+  - type: explain
+    text:
+      vi: Mời lịch sự - Would you like to + động từ…? (Would you like to come?). Mời thân mật kiểu Anh - Do you fancy + V-ing…? (Do you fancy going out?). Người Việt hay quên to sau like - "Would you like go" là sai.
+  - type: explain
+    text:
+      vi: Nhận lời - I'd love to! / Yes, I'd like to. Từ chối - I'm sorry, I'm afraid I can't + lý do (I'm working / I'm busy), rồi thêm Maybe another time? để giữ thiện chí. I'm afraid ở đây là "tiếc là", không phải "sợ".
+  - type: explain
+    text:
+      vi: "Gọi điện: Can I speak to…, please? Nếu chính bạn là người đó, trả lời Speaking. hoặc This is Nam. - không trả lời \"Yes, I am\". Người nghe máy hỏi Who's calling, please?, bảo Hold on, please hoặc hỏi Can I take a message?"
+  - type: deep_explain
+    text:
+      vi: "Lý do từ chối thường dùng hiện tại tiếp diễn chỉ lịch hẹn mà bạn đã học - I'm meeting a client on Friday. Trên điện thoại, người Anh không tự giới thiệu bằng I am mà bằng This is… (Hi, this is Mai). Nhớ đại từ đứng giữa call và back - call you back, call her back."
+  - type: example
+    target: "A: Would you like to have dinner with us on Saturday? B: I'd love to! What time? A: About seven."
+    target_lang: en
+    translation:
+      vi: "A: Thứ Bảy bạn có muốn ăn tối với bọn mình không? B: Có chứ! Mấy giờ thế? A: Khoảng bảy giờ."
+    note:
+      vi: Would you like to + động từ nguyên mẫu. Nhận lời nhiệt tình bằng I'd love to.
+  - type: example
+    target: "A: Do you fancy going to the cinema tonight? B: I'm sorry, I'm afraid I can't. I'm working late. Maybe another time?"
+    target_lang: en
+    translation:
+      vi: "A: Tối nay đi xem phim không? B: Xin lỗi nhé, tiếc là mình không đi được. Mình phải làm muộn. Để dịp khác nhé?"
+    note:
+      vi: Fancy + V-ing. Từ chối có lý do và Maybe another time nghe lịch sự hơn hẳn chỉ nói No.
+  - type: example
+    target: "A: Hello, ABC Travel. B: Hello, can I speak to Mr Nam, please? A: Who's calling, please? B: This is Hoa from Sun Hotel. A: Hold on, please… I'm afraid he's in a meeting. Can I take a message? B: Yes, please. Can you ask him to call me back?"
+    target_lang: en
+    translation:
+      vi: "A: A lô, công ty du lịch ABC xin nghe. B: Chào chị, cho tôi gặp anh Nam được không ạ? A: Xin hỏi ai gọi đấy ạ? B: Tôi là Hoa ở khách sạn Sun. A: Chị chờ chút nhé… Tiếc là anh ấy đang họp. Chị có muốn nhắn gì không? B: Vâng. Nhờ chị bảo anh ấy gọi lại cho tôi."
+    note:
+      vi: Một cuộc gọi công việc trọn vẹn - Who's calling?, This is…, Hold on, Can I take a message?, call me back.
+  - type: example
+    target: "A: Hi, can I speak to Lan? B: Speaking! Oh, hi Minh. A: Hi Lan. Sorry, I'm on the bus. I'll call you back in ten minutes."
+    target_lang: en
+    translation:
+      vi: "A: Chào, cho mình gặp Lan. B: Lan đây! À, chào Minh. A: Chào Lan. Xin lỗi, mình đang trên xe buýt. Mười phút nữa mình gọi lại nhé."
+    note:
+      vi: Speaking = chính tôi đây. Mười phút nữa là in ten minutes, không phải after ten minutes.
+  - type: common_mistake
+    wrong: Would you like go to the cinema?
+    right: Would you like to go to the cinema?
+    target_lang: en
+    note:
+      vi: Sau would like phải có to trước động từ.
+  - type: common_mistake
+    wrong: "A: Can I speak with Mr Nam? B: Yes, I am."
+    right: "A: Can I speak to Mr Nam? B: Speaking. / This is Nam."
+    target_lang: en
+    note:
+      vi: Câu hỏi bắt đầu bằng Can I, nên "Yes, I am" không khớp. Chính bạn nghe máy thì nói Speaking hoặc This is Nam.
+  - type: common_mistake
+    wrong: "A: Would you like to come to my party? B: No, I don't like."
+    right: "B: I'm sorry, I'm afraid I can't. I'm busy that day."
+    target_lang: en
+    note:
+      vi: "\"No, I don't like\" nghe như bạn không thích người mời. Từ chối bằng I'm afraid I can't + lý do."
+  - type: summary
+    points:
+      - vi: Mời - Would you like to + V…? · Do you fancy + V-ing…? · Are you free on…?
+      - vi: Nhận lời - I'd love to! · Yes, I'd like to.
+      - vi: Từ chối - I'm sorry, I'm afraid I can't. I'm busy / I'm working. Maybe another time?
+      - vi: Gọi điện - Can I speak to…? · Who's calling? · This is… / Speaking.
+      - vi: Hold on, please. · Can I take / leave a message? · I'll call you back.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:invitations-and-calls-mcq-cinema
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:would-you-like-to
+    prompt:
+      stem: "Câu nào nói đúng \"Bạn có muốn đi xem phim với bọn mình không?\""
+      stem_lang: vi
+      options:
+        - { id: a7f, text: "Would you like to go to the cinema with us?", lang: en }
+        - { id: k2u, text: "Would you like go to the cinema with us?", lang: en }
+        - { id: m6e, text: "Do you like to go to the cinema with us?", lang: en }
+        - { id: d9z, text: "Would you like to go to the cinema with we?", lang: en }
+    answer:
+      correct_option_id: a7f
+    explanation:
+      vi: Lời mời là Would you like to + động từ. Thiếu to là sai; Do you like… hỏi sở thích chung chứ không phải lời mời; sau with phải là us.
+    display_answer: "Would you like to go to the cinema with us?"
+
+  - key: en:exercise:invitations-and-calls-listen-hold
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:hold-on
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Hold on, please. I'll get him."
+      options:
+        - { id: j5c, text: "Anh chờ chút nhé, tôi đi gọi anh ấy.", lang: vi }
+        - { id: t8x, text: "Anh cầm lấy nhé, tôi đưa anh ấy.", lang: vi }
+        - { id: e1q, text: "Anh gọi lại sau nhé, anh ấy không có ở đây.", lang: vi }
+        - { id: n4h, text: "Anh để lại lời nhắn nhé.", lang: vi }
+    answer:
+      correct_option_id: j5c
+    explanation:
+      vi: Trên điện thoại, Hold on là "chờ máy một chút", không phải cầm giữ. I'll get him là "tôi đi gọi anh ấy (ra nghe máy)".
+    display_answer: "Anh chờ chút nhé, tôi đi gọi anh ấy."
+
+  - key: en:exercise:invitations-and-calls-fill-fancy
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:do-you-fancy
+    prompt:
+      template: "A: Do you fancy {{b1}} (go) for a coffee after work? B: I'd {{b2}} to!"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: A: Tan làm đi cà phê không? B: Có chứ!"
+        - "Gợi ý: fancy + V-ing; nhận lời nhiệt tình bằng I'd l… to."
+    answer:
+      blanks:
+        b1: [going]
+        b2: [love, like]
+    known_wrong:
+      - answer: to go
+        feedback_vi: Sau fancy dùng V-ing - fancy going.
+        error_tag: fancy_ing
+      - answer: go
+        feedback_vi: Sau fancy dùng V-ing - fancy going.
+        error_tag: fancy_ing
+      - answer: loving
+        feedback_vi: Sau I'd (I would) dùng động từ nguyên mẫu - I'd love to.
+        error_tag: would_base_form
+    explanation:
+      vi: Do you fancy + V-ing (going). Trả lời nhận lời bằng I'd love to (hoặc I'd like to).
+    display_answer: "A: Do you fancy going for a coffee after work? B: I'd love to!"
+
+  - key: en:exercise:invitations-and-calls-order-speak
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:can-i-speak-to
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cho tôi gặp anh Nam được không ạ?\" (khi gọi điện)"
+      tokens:
+        - { id: sp-nam, text: Nam }
+        - { id: sp-speak, text: speak }
+        - { id: sp-please, text: please }
+        - { id: sp-i, text: I }
+        - { id: sp-to, text: to }
+        - { id: sp-can, text: Can }
+        - { id: sp-mr, text: Mr }
+        - { id: sp-am, text: am }
+    answer:
+      orders:
+        - [sp-can, sp-i, sp-speak, sp-to, sp-mr, sp-nam, sp-please]
+    explanation:
+      vi: Mẫu cố định khi gọi điện - Can I speak to + người, please? Please đặt ở cuối câu.
+    display_answer: "Can I speak to Mr Nam, please?"
+
+  - key: en:exercise:invitations-and-calls-mcq-speaking
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:this-is-speaking
+    prompt:
+      stem: "Bạn là anh Nam. Bạn nghe máy và người gọi hỏi \"Can I speak to Mr Nam, please?\". Bạn đáp thế nào?"
+      stem_lang: vi
+      options:
+        - { id: p3s, text: "Speaking.", lang: en }
+        - { id: w7l, text: "Yes, I am.", lang: en }
+        - { id: h0y, text: "Yes, you can speak.", lang: en }
+        - { id: r2b, text: "I am Mr Nam speak.", lang: en }
+    answer:
+      correct_option_id: p3s
+    explanation:
+      vi: Khi chính bạn là người được hỏi, nói Speaking (hoặc This is Nam). "Yes, I am" không trả lời câu hỏi Can I…?, còn hai câu kia không tự nhiên và sai ngữ pháp.
+    display_answer: "Speaking."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:invitations-and-calls-fill-message
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:leave-a-message
+    prompt:
+      template: "A: Hello, can I speak to Lan, please? B: I'm afraid she's out. Can I {{b1}} a message? A: Yes, please. Can you ask her to call me {{b2}}?"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [take]
+        b2: [back]
+    known_wrong:
+      - answer: leave
+        feedback_vi: Người nghe máy take (ghi) lời nhắn; người gọi mới leave (để lại) lời nhắn.
+        error_tag: take_leave_message
+      - answer: make
+        feedback_vi: Lời nhắn đi với take hoặc leave, không đi với make.
+        error_tag: collocation
+      - answer: again
+        feedback_vi: Gọi lại cho ai sau cuộc gọi bị lỡ là call me back.
+        error_tag: call_back
+    explanation:
+      vi: B là người nghe máy nên hỏi Can I take a message? Gọi lại là call + người + back - call me back.
+    display_answer: "A: Hello, can I speak to Lan, please? B: I'm afraid she's out. Can I take a message? A: Yes, please. Can you ask her to call me back?"
+
+  - key: en:exercise:invitations-and-calls-translate-busy
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:im-afraid-i-cant
+    prompt:
+      source_text: Tiếc là tôi không đi được. Tôi bận.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I'm afraid I can't. I'm busy.
+        - I'm afraid I can't go. I'm busy.
+        - I'm afraid I can't come. I'm busy.
+        - I'm sorry, I can't. I'm busy.
+        - Sorry, I can't. I'm busy.
+        - I'm sorry, I can't go. I'm busy.
+        - Sorry, I can't go. I'm busy.
+        - I'm sorry, I can't come. I'm busy.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I'm afraid I can't. I busy.
+        feedback_vi: Busy là tính từ nên cần am - I'm busy.
+        error_tag: missing_be
+      - answer: I'm afraid I can't go. I'm busying.
+        feedback_vi: Busy là tính từ, không thêm -ing - I'm busy.
+        error_tag: adjective_ing
+      - answer: I'm afraid I don't can go. I'm busy.
+        feedback_vi: Phủ định của can là can't, không dùng don't.
+        error_tag: modal_negative
+    explanation:
+      vi: "\"Tiếc là\" dùng I'm afraid (hoặc I'm sorry); \"không đi được\" là can't (go). Busy là tính từ nên cần be - I'm busy."
+    display_answer: I'm afraid I can't. I'm busy.
+
+  - key: en:exercise:invitations-and-calls-translate-call-back
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:call-you-back
+    prompt:
+      source_text: Mười phút nữa tôi sẽ gọi lại cho bạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I'll call you back in ten minutes.
+        - I'll call you back in 10 minutes.
+        - I'll ring you back in ten minutes.
+        - I'll ring you back in 10 minutes.
+        - In ten minutes I'll call you back.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I'll call back you in ten minutes.
+        feedback_vi: Đại từ đứng giữa call và back - call you back.
+        error_tag: phrasal_verb_object
+      - answer: I'll call you back after ten minutes.
+        feedback_vi: "\"Mười phút nữa\" (tính từ bây giờ) là in ten minutes, không phải after."
+        error_tag: in_after_time
+      - answer: I call you back in ten minutes.
+        feedback_vi: Lời hứa vừa quyết định ngay lúc nói dùng will - I'll call you back.
+        error_tag: will_decision
+    explanation:
+      vi: Lời hứa quyết định ngay lúc nói dùng I'll. Đại từ đứng giữa call và back; "mười phút nữa" là in ten minutes.
+    display_answer: I'll call you back in ten minutes.
+
+  # ---------------- application ----------------
+  - key: en:exercise:invitations-and-calls-mcq-decline
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:maybe-another-time
+    prompt:
+      stem: "Đồng nghiệp mời: \"Would you like to come to my birthday party on Saturday?\" Thứ Bảy bạn phải đi làm. Câu trả lời nào lịch sự nhất?"
+      stem_lang: vi
+      options:
+        - { id: f8t, text: "Oh, I'm sorry, I'm afraid I can't. I'm working on Saturday. Maybe another time?", lang: en }
+        - { id: c3m, text: "No, I don't like.", lang: en }
+        - { id: z6w, text: "No, I wouldn't.", lang: en }
+        - { id: u1r, text: "Yes, I am busy.", lang: en }
+    answer:
+      correct_option_id: f8t
+    explanation:
+      vi: Từ chối lịch sự gồm xin lỗi, I'm afraid I can't, lý do (I'm working on Saturday) và Maybe another time. Ba câu kia cộc lốc hoặc không khớp với câu hỏi.
+    display_answer: "Oh, I'm sorry, I'm afraid I can't. I'm working on Saturday. Maybe another time?"
+
+  - key: en:exercise:invitations-and-calls-translate-beach
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:do-you-fancy
+    prompt:
+      source_text: Do you fancy going to the beach this weekend?
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cuối tuần này bạn có muốn đi biển không?
+        - Cuối tuần này cậu có muốn đi biển không?
+        - Cuối tuần này bạn có thích đi biển không?
+        - Cuối tuần này đi biển không?
+        - Cuối tuần này đi biển nhé?
+        - Cuối tuần này mình đi biển không?
+        - Cuối tuần này đi biển không bạn?
+        - Bạn có muốn đi biển cuối tuần này không?
+        - Cậu có muốn đi biển cuối tuần này không?
+        - Bạn có muốn đi biển vào cuối tuần này không?
+        - Cuối tuần này bạn muốn đi biển không?
+        - Cuối tuần này đi biển chơi không?
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Do you fancy + V-ing là lời rủ thân mật, dịch tự nhiên là "… có muốn… không?" hoặc "đi… không?". This weekend là cuối tuần này.
+    display_answer: Cuối tuần này bạn có muốn đi biển không?
+
+  - key: en:exercise:invitations-and-calls-order-dinner
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:would-you-like-to
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Thứ Sáu bạn có muốn ăn tối với chúng tôi không?\""
+      tokens:
+        - { id: dn-dinner, text: dinner }
+        - { id: dn-us, text: us }
+        - { id: dn-would, text: Would }
+        - { id: dn-friday, text: Friday }
+        - { id: dn-to, text: to }
+        - { id: dn-have, text: have }
+        - { id: dn-like, text: like }
+        - { id: dn-on, text: "on" }
+        - { id: dn-with, text: with }
+        - { id: dn-you, text: you }
+        - { id: dn-we, text: we }
+    answer:
+      orders:
+        - [dn-would, dn-you, dn-like, dn-to, dn-have, dn-dinner, dn-with, dn-us, dn-on, dn-friday]
+    explanation:
+      vi: Would you like to + động từ nguyên mẫu (have dinner). Sau with dùng us, không dùng we; on đi với thứ trong tuần.
+    display_answer: "Would you like to have dinner with us on Friday?"
+
+  - key: en:exercise:invitations-and-calls-translate-whos-calling
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:whos-calling
+    prompt:
+      source_text: Xin hỏi ai gọi đấy ạ?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Who's calling, please?
+        - Who is calling, please?
+        - Who's calling?
+        - Who is calling?
+        - Who's speaking, please?
+        - Who is speaking, please?
+        - May I ask who's calling?
+        - May I ask who is calling?
+    known_wrong:
+      - answer: Who are you?
+        feedback_vi: Câu này nghe rất cộc trên điện thoại. Dùng Who's calling, please?
+        error_tag: phone_politeness
+      - answer: Who is call?
+        feedback_vi: Cần is + calling - Who's calling?
+        error_tag: missing_ing
+      - answer: Who calling?
+        feedback_vi: Thiếu is - Who's calling?
+        error_tag: missing_be
+    explanation:
+      vi: Câu lịch sự chuẩn khi nghe máy là Who's calling, please? Dùng hiện tại tiếp diễn vì cuộc gọi đang diễn ra.
+    display_answer: Who's calling, please?

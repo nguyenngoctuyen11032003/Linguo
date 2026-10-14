@@ -1,0 +1,446 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:describe-a-photo
+order_index: 3
+level: a2
+title:
+  vi: In the picture… - tả một bức ảnh
+objectives:
+  - vi: Nói vị trí trong ảnh - on the left / right, in the middle, in the background / foreground, at the top / bottom.
+  - vi: Tả người trong ảnh đang làm gì bằng hiện tại tiếp diễn - A man is holding…, There's a woman sitting…
+  - vi: Dùng các động từ hay gặp khi tả ảnh - smile, hold, carry, look at, chat.
+estimated_minutes: 15
+skills: [speaking, vocabulary, grammar]
+prerequisites: [en:lesson:i-know-him]
+items:
+  - item: en:item:in-the-picture
+  - item: en:item:on-the-left-on-the-right
+  - item: en:item:in-the-background
+  - item: en:item:in-the-foreground
+  - item: en:item:in-the-middle
+  - item: en:item:at-the-top-bottom
+  - item: en:item:there-is-someone-doing
+  - item: en:item:smile
+  - item: en:item:hold
+  - item: en:item:carry
+  - item: en:item:look-at
+  - item: en:item:chat
+  - item: en:item:present-continuous-now
+    role: reuse
+  - item: en:item:there-is-there-are
+    role: reuse
+  - item: en:item:wear
+    role: reuse
+  - item: en:item:sit
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tả được một bức ảnh trong 4-5 câu - kiểu bài nói thường gặp ở các kỳ thi A2 - hoặc kể cho bạn bè nghe về tấm ảnh trên điện thoại.
+  - type: explain
+    text:
+      vi: Bắt đầu bằng câu tổng quát - In the picture, I can see… / In this photo, a family is having a picnic. Rồi đi từng phần ảnh - on the left, on the right, in the middle, in the background (phía sau), in the foreground (phía trước).
+  - type: explain
+    text:
+      vi: Người trong ảnh đang làm gì thì dùng hiện tại tiếp diễn - A man is reading. Two children are playing. Muốn giới thiệu người mới, dùng There's / There are + người + V-ing - There's a woman holding a baby.
+  - type: explain
+    text:
+      vi: Người Việt hay dịch "Trong ảnh có…" thành "In the picture has…" - sai. Tiếng Anh dùng there is / there are hoặc I can see - In the picture, there are two dogs.
+  - type: deep_explain
+    text:
+      vi: "Giới từ đi cố định - in the picture, in the middle, in the background / foreground, on the left / right, at the top / bottom. Nếu không chắc, dùng maybe hoặc I think - I think they're friends. Có thể nói thêm cảm xúc - They look happy (bài ôn tập sẽ luyện kỹ hơn)."
+  - type: example
+    target: "In this picture, a family is having a picnic in a park. On the left, the father is sitting on the grass. He's holding a sandwich."
+    target_lang: en
+    translation:
+      vi: Trong bức ảnh này, một gia đình đang đi dã ngoại trong công viên. Bên trái, người bố đang ngồi trên cỏ. Anh ấy đang cầm một chiếc bánh kẹp.
+    note:
+      vi: Câu đầu tổng quát, rồi đi vào từng phần ảnh. Mỗi hành động dùng is + V-ing.
+  - type: example
+    target: "In the middle, there's a little girl smiling at the camera. On the right, the mother is carrying a big basket."
+    target_lang: en
+    translation:
+      vi: Ở giữa có một cô bé đang mỉm cười nhìn vào máy ảnh. Bên phải, người mẹ đang xách một giỏ to.
+    note:
+      vi: There's + người + V-ing - không thêm is trước smiling.
+  - type: example
+    target: "In the background, there are some trees and a lake. At the top of the picture, you can see a blue sky."
+    target_lang: en
+    translation:
+      vi: Phía sau có vài cái cây và một hồ nước. Ở phía trên bức ảnh là bầu trời xanh.
+    note:
+      vi: In the background (phía sau) và at the top (phía trên) - nhớ đúng giới từ.
+  - type: example
+    target: Two old women are chatting in the foreground. I think they're friends.
+    target_lang: en
+    translation:
+      vi: Phía trước, hai bà cụ đang trò chuyện. Tôi nghĩ họ là bạn bè.
+    note:
+      vi: Chatting gấp đôi t. I think giúp bạn đoán điều không chắc.
+  - type: common_mistake
+    wrong: In the picture has a man and a dog.
+    right: In the picture, there's a man and a dog. / In the picture, I can see a man and a dog.
+    target_lang: en
+    note:
+      vi: "\"Có\" trong \"trong ảnh có\" là there is / there are, không phải has."
+  - type: common_mistake
+    wrong: There is a man is sitting on the bench.
+    right: There's a man sitting on the bench. / A man is sitting on the bench.
+    target_lang: en
+    note:
+      vi: Chỉ cần một is. Dùng There's a man sitting… hoặc A man is sitting…, không ghép cả hai.
+  - type: common_mistake
+    wrong: On the background, there are mountains.
+    right: In the background, there are mountains.
+    target_lang: en
+    note:
+      vi: Background và foreground đi với in. Left và right mới đi với on.
+  - type: summary
+    points:
+      - vi: Mở đầu - In the picture / In this photo, I can see…
+      - vi: Vị trí - on the left / right · in the middle · in the background / foreground · at the top / bottom.
+      - vi: Hành động - A woman is holding… · There are two boys playing…
+      - vi: Động từ - smile, hold, carry, look at, chat, sit, wear.
+      - vi: "Không nói \"In the picture has…\" - dùng there is / there are."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:describe-a-photo-mcq-background
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:in-the-background
+    prompt:
+      stem: "Câu nào nói đúng \"Phía sau bức ảnh có vài ngọn núi\"?"
+      stem_lang: vi
+      options:
+        - { id: b8m, text: "In the background, there are some mountains.", lang: en }
+        - { id: e2s, text: "In the foreground, there are some mountains.", lang: en }
+        - { id: o5t, text: "On the background, there are some mountains.", lang: en }
+        - { id: i9w, text: "In the background has some mountains.", lang: en }
+    answer:
+      correct_option_id: b8m
+    explanation:
+      vi: Phía sau là in the background (foreground là phía trước). Background đi với in, và "có" là there are, không phải has.
+    display_answer: "In the background, there are some mountains."
+
+  - key: en:exercise:describe-a-photo-listen-baby
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: en:item:hold
+    prompt:
+      audio_asset_id: null
+      fallback_text: "On the left, a woman is holding a baby."
+      options:
+        - { id: u4k, text: "Bên trái, một người phụ nữ đang bế em bé.", lang: vi }
+        - { id: f7d, text: "Bên phải, một người phụ nữ đang bế em bé.", lang: vi }
+        - { id: q1x, text: "Bên trái, một người phụ nữ đang nhìn em bé.", lang: vi }
+        - { id: s6c, text: "Bên trái, một em bé đang ngủ.", lang: vi }
+    answer:
+      correct_option_id: u4k
+    explanation:
+      vi: On the left là bên trái; holding a baby là đang bế em bé (nhìn là looking at).
+    display_answer: "Bên trái, một người phụ nữ đang bế em bé."
+
+  - key: en:exercise:describe-a-photo-fill-cafe
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:chat
+    prompt:
+      template: "{{b1}} the picture, two friends are {{b2}} (chat) in a café."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 9 }
+      hint_levels:
+        - "Nghĩa: Trong ảnh, hai người bạn đang trò chuyện trong quán cà phê."
+        - "Gợi ý: giới từ \"trong\" + bức ảnh; chat thêm -ing nhớ gấp đôi t."
+    answer:
+      blanks:
+        b1: [In]
+        b2: [chatting]
+    known_wrong:
+      - answer: "On"
+        feedback_vi: Người, vật bên trong ảnh dùng in the picture.
+        error_tag: preposition_picture
+      - answer: chating
+        feedback_vi: Chat kết thúc bằng một nguyên âm ngắn + t, nên gấp đôi t - chatting.
+        error_tag: ing_spelling
+      - answer: chat
+        feedback_vi: Sau are cần V-ing - chatting.
+        error_tag: missing_ing
+    explanation:
+      vi: Bên trong bức ảnh dùng in the picture. Sau are là V-ing; chat gấp đôi t thành chatting.
+    display_answer: "In the picture, two friends are chatting in a café."
+
+  - key: en:exercise:describe-a-photo-order-bench
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:there-is-someone-doing
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Có một người đàn ông đang ngồi trên ghế dài.\""
+      tokens:
+        - { id: bn-sitting, text: sitting }
+        - { id: bn-the, text: the }
+        - { id: bn-a, text: a }
+        - { id: bn-is, text: is }
+        - { id: bn-bench, text: bench }
+        - { id: bn-theres, text: "There's" }
+        - { id: bn-on, text: "on" }
+        - { id: bn-man, text: man }
+        - { id: bn-sit, text: sit }
+    answer:
+      orders:
+        - [bn-theres, bn-a, bn-man, bn-sitting, bn-on, bn-the, bn-bench]
+    explanation:
+      vi: There's + người + V-ing. Đã có There's (= There is) thì không thêm is trước sitting.
+    display_answer: "There's a man sitting on the bench."
+
+  - key: en:exercise:describe-a-photo-mcq-top
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:at-the-top-bottom
+    prompt:
+      stem: "Chọn từ đúng: \"___ the top of the picture, you can see the sky.\""
+      stem_lang: vi
+      options:
+        - { id: w3a, text: "At", lang: en }
+        - { id: r8n, text: "On", lang: en }
+        - { id: y2p, text: "Under", lang: en }
+        - { id: l6z, text: "Behind", lang: en }
+    answer:
+      correct_option_id: w3a
+    explanation:
+      vi: Phía trên / phía dưới ảnh là at the top / at the bottom. On dùng cho on the left / right; under và behind không hợp nghĩa ở đây.
+    display_answer: "At"
+
+  # ---------------- recall ----------------
+  - key: en:exercise:describe-a-photo-fill-girl
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:smile
+    prompt:
+      template: "In the middle of the photo, a girl {{b1}} (smile) and {{b2}} (look) at the camera."
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [is smiling, "'s smiling"]
+        b2: [looking, is looking, "'s looking"]
+    known_wrong:
+      - answer: smiles
+        feedback_vi: Tả ảnh dùng hiện tại tiếp diễn - is smiling.
+        error_tag: simple_vs_continuous
+      - answer: is smileing
+        feedback_vi: Smile tận cùng bằng e câm, bỏ e rồi thêm -ing - smiling.
+        error_tag: ing_spelling
+      - answer: smiling
+        feedback_vi: Thiếu is trước smiling.
+        error_tag: missing_be
+      - answer: looks
+        feedback_vi: Tả việc đang diễn ra trong ảnh dùng (is) looking.
+        error_tag: simple_vs_continuous
+    explanation:
+      vi: Tả ảnh dùng hiện tại tiếp diễn - is smiling (bỏ e). Vế sau có thể lặp is hoặc chỉ dùng looking vì đã có and.
+    display_answer: "In the middle of the photo, a girl is smiling and looking at the camera."
+
+  - key: en:exercise:describe-a-photo-translate-right
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:on-the-left-on-the-right
+    prompt:
+      source_text: Bên phải, hai người đàn ông đang nói chuyện.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - On the right, two men are talking.
+        - On the right, two men are chatting.
+        - Two men are talking on the right.
+        - Two men are chatting on the right.
+        - On the right, there are two men talking.
+        - On the right, there are two men chatting.
+        - On the right of the picture, two men are talking.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: In the right, two men are talking.
+        feedback_vi: Bên phải là on the right, không dùng in.
+        error_tag: preposition_picture
+      - answer: On the right, two men talking.
+        feedback_vi: Thiếu are trước talking.
+        error_tag: missing_be
+      - answer: On the right, two mans are talking.
+        feedback_vi: Số nhiều của man là men.
+        error_tag: irregular_plural
+    explanation:
+      vi: Vị trí bên phải là on the right. Hai người đang nói chuyện dùng are + talking (hoặc chatting).
+    display_answer: On the right, two men are talking.
+
+  - key: en:exercise:describe-a-photo-translate-everyone
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:in-the-picture
+    prompt:
+      source_text: Mọi người trong ảnh đều đang cười.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Everyone in the photo is smiling.
+        - Everyone in the picture is smiling.
+        - Everybody in the photo is smiling.
+        - Everybody in the picture is smiling.
+        - Everyone in the photo is laughing.
+        - Everyone in the picture is laughing.
+        - All the people in the photo are smiling.
+        - All the people in the picture are smiling.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Everyone in the photo are smiling.
+        feedback_vi: Everyone đi với động từ số ít - is smiling.
+        error_tag: subject_verb_agreement
+      - answer: Everyone on the photo is smiling.
+        feedback_vi: Người bên trong ảnh dùng in the photo.
+        error_tag: preposition_picture
+      - answer: Everyone in the photo smiling.
+        feedback_vi: Thiếu is trước smiling.
+        error_tag: missing_be
+    explanation:
+      vi: Everyone là số ít nên dùng is + smiling. Bên trong ảnh dùng in the photo / in the picture.
+    display_answer: Everyone in the photo is smiling.
+
+  # ---------------- application ----------------
+  - key: en:exercise:describe-a-photo-translate-balloon
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:in-the-foreground
+    prompt:
+      source_text: In the foreground, a little boy is holding a balloon.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Phía trước, một cậu bé đang cầm quả bóng bay.
+        - Phía trước, một cậu bé đang cầm một quả bóng bay.
+        - Phía trước, một bé trai đang cầm quả bóng bay.
+        - Phía trước, một cậu bé đang cầm bóng bay.
+        - Ở phía trước, một cậu bé đang cầm quả bóng bay.
+        - Ở phía trước, một bé trai đang cầm quả bóng bay.
+        - Ở phía trước có một cậu bé đang cầm quả bóng bay.
+        - Phía trước có một cậu bé đang cầm quả bóng bay.
+        - Phía trước có một bé trai đang cầm bóng bay.
+        - Ở tiền cảnh, một cậu bé đang cầm quả bóng bay.
+        - Phía trước, một cậu bé nhỏ đang cầm quả bóng bay.
+        - Một cậu bé đang cầm quả bóng bay ở phía trước.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: In the foreground là phía trước bức ảnh (gần người xem nhất). Is holding là "đang cầm"; a balloon là quả bóng bay.
+    display_answer: Phía trước, một cậu bé đang cầm quả bóng bay.
+
+  - key: en:exercise:describe-a-photo-mcq-exam
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:in-the-picture
+    prompt:
+      stem: "Trong bài thi nói, giám khảo đưa ảnh một gia đình đang dã ngoại và nói \"Describe the photo.\" Câu mở đầu nào tốt nhất?"
+      stem_lang: vi
+      options:
+        - { id: c4j, text: "In this picture, I can see a family. They're having a picnic in a park.", lang: en }
+        - { id: v1o, text: "In this picture has a family. They have a picnic now.", lang: en }
+        - { id: x8h, text: "On this picture, a family are have a picnic.", lang: en }
+        - { id: z5r, text: "This picture is a family is having a picnic.", lang: en }
+    answer:
+      correct_option_id: c4j
+    explanation:
+      vi: Mở đầu chuẩn là In this picture, I can see… rồi tả hành động bằng They're having. Các câu khác dùng has thay there is, sai giới từ on, hoặc ghép hai động từ be.
+    display_answer: "In this picture, I can see a family. They're having a picnic in a park."
+
+  - key: en:exercise:describe-a-photo-order-walking
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:in-the-background
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Phía sau, vài người đang đi dạo.\""
+      tokens:
+        - { id: wk-background, text: background }
+        - { id: wk-walking, text: walking }
+        - { id: wk-in, text: in }
+        - { id: wk-people, text: people }
+        - { id: wk-on, text: "on" }
+        - { id: wk-are, text: are }
+        - { id: wk-the, text: the }
+        - { id: wk-some, text: some }
+        - { id: wk-walk, text: walk }
+    answer:
+      orders:
+        - [wk-in, wk-the, wk-background, wk-some, wk-people, wk-are, wk-walking]
+        - [wk-some, wk-people, wk-are, wk-walking, wk-in, wk-the, wk-background]
+    explanation:
+      vi: Phía sau là in the background (không dùng on). Người đang đi dạo dùng are + walking. Cụm vị trí đứng đầu hoặc cuối câu đều được.
+    display_answer: "In the background, some people are walking."
+
+  - key: en:exercise:describe-a-photo-translate-woman
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:there-is-someone-doing
+    prompt:
+      source_text: Ở giữa có một người phụ nữ đang ngồi đọc sách.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - In the middle, there's a woman sitting and reading a book.
+        - In the middle, there is a woman sitting and reading a book.
+        - In the middle, there's a woman sitting and reading.
+        - In the middle, there is a woman sitting and reading.
+        - In the middle, a woman is sitting and reading a book.
+        - In the middle, a woman is sitting and reading.
+        - There's a woman sitting and reading a book in the middle.
+        - There is a woman sitting and reading a book in the middle.
+        - In the middle, there's a woman reading a book.
+        - In the middle, there is a woman reading a book.
+        - In the middle, a woman is reading a book.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: In the middle, there is a woman is sitting and reading a book.
+        feedback_vi: Đã có there is thì không thêm is trước sitting.
+        error_tag: double_be
+      - answer: In the middle has a woman sitting and reading a book.
+        feedback_vi: "\"Có\" là there is, không dùng has."
+        error_tag: has_for_there_is
+      - answer: In the middle, a woman sitting and reading a book.
+        feedback_vi: Thiếu is - a woman is sitting…
+        error_tag: missing_be
+    explanation:
+      vi: "\"Ở giữa có…\" là In the middle, there's a woman + V-ing. Cũng có thể nói thẳng A woman is sitting and reading."
+    display_answer: In the middle, there's a woman sitting and reading a book.

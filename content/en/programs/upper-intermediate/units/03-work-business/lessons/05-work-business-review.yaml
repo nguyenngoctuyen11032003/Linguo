@@ -1,0 +1,425 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:work-business-review
+order_index: 5
+level: b2
+title:
+  vi: "Ôn tập: Biên bản họp và cuộc đàm phán"
+objectives:
+  - vi: Đọc hiểu biên bản một cuộc họp dự án - agenda, quyết định, action points.
+  - vi: Theo dõi một cuộc đàm phán giá với nhà cung cấp và nhận ra cách đề nghị, đặt điều kiện, thỏa hiệp.
+  - vi: Kết hợp tương lai tiếp diễn / hoàn thành, have something done, ngôn ngữ họp và mô tả số liệu.
+estimated_minutes: 25
+skills: [reading, speaking, grammar, vocabulary]
+prerequisites: [en:lesson:negotiating-trends]
+items:
+  - item: en:item:apologies-minutes
+  - item: en:item:discount
+  - item: en:item:deposit
+  - item: en:item:agenda
+    role: reuse
+  - item: en:item:action-point
+    role: reuse
+  - item: en:item:take-the-minutes
+    role: reuse
+  - item: en:item:future-perfect
+    role: reuse
+  - item: en:item:future-continuous
+    role: reuse
+  - item: en:item:have-something-done
+    role: reuse
+  - item: en:item:behind-schedule
+    role: reuse
+  - item: en:item:launch-a-product
+    role: reuse
+  - item: en:item:revenue
+    role: reuse
+  - item: en:item:fall-slightly
+    role: reuse
+  - item: en:item:increase-by-to
+    role: reuse
+  - item: en:item:supplier
+    role: reuse
+  - item: en:item:we-could-offer
+    role: reuse
+  - item: en:item:provided-that
+    role: reuse
+  - item: en:item:as-long-as
+    role: reuse
+  - item: en:item:thats-a-fair-point-but
+    role: reuse
+  - item: en:item:compromise
+    role: reuse
+  - item: en:item:cut-costs
+    role: reuse
+  - item: en:item:discuss
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này ôn lại cả unit qua hai văn bản thật của công sở - biên bản một cuộc họp dự án và đoạn hội thoại đàm phán giá với nhà cung cấp. Sau bài, bạn đọc hiểu được loại văn bản này và tự nói được vài câu đàm phán.
+  - type: explain
+    text:
+      vi: "Biên bản họp (minutes) có bố cục cố định: thông tin chung (ngày, người có mặt, Apologies - người báo vắng), từng mục theo agenda, và Action points ở cuối. Câu thường viết gọn, nhiều danh từ, ít từ nối."
+  - type: explain
+    text:
+      vi: "Trong biên bản, quyết định thường ở thì quá khứ (It was agreed that…), còn action point viết theo mẫu tên người + to V + by + hạn chót (Tuấn to have the packaging redesigned by 15 May)."
+  - type: explain
+    text:
+      vi: "Một cuộc đàm phán tốt thường đi qua các bước: nêu yêu cầu, công nhận rồi phản bác (That's a fair point, but…), đề nghị có điều kiện (We could offer… provided that…), và chốt thỏa hiệp. Hãy để ý các cấu trúc của unit trong đoạn hội thoại."
+  - type: deep_explain
+    text:
+      vi: "Người Việt khi đàm phán hay nói thẳng con số và từ chối dứt khoát (\"Không được, giá đó thấp quá\"). Tiếng Anh kinh doanh chuộng giọng điệu mềm: could thay cho will, câu hỏi thay cho mệnh lệnh, và luôn đặt điều kiện rõ ràng bằng provided that / as long as + hiện tại đơn. Cách nói này giữ cửa cho đối phương nhượng bộ mà không mất mặt."
+  - type: example
+    target: "Minutes - Project Lotus meeting, 6 May. Present: Hà (chair), Tuấn, Linh (minutes). Apologies: Mr Dũng."
+    target_lang: en
+    translation:
+      vi: "Biên bản - cuộc họp dự án Lotus, ngày 6/5. Có mặt: Hà (chủ trì), Tuấn, Linh (ghi biên bản). Vắng mặt có báo: anh Dũng."
+    note:
+      vi: Apologies là danh sách người báo vắng, không phải lời xin lỗi.
+  - type: example
+    target: "1. Sales update. Revenue fell slightly in April, by 3%, mainly because the new product launch is two weeks behind schedule."
+    target_lang: en
+    translation:
+      vi: "1. Cập nhật doanh số. Doanh thu tháng Tư giảm nhẹ 3%, chủ yếu vì buổi ra mắt sản phẩm mới đang chậm tiến độ hai tuần."
+    note:
+      vi: Fell slightly + by 3% (lượng thay đổi); behind schedule (chậm tiến độ).
+  - type: example
+    target: "2. Packaging. It was agreed that we will have the packaging redesigned to cut costs. By the end of June, the new design will have been tested with customers."
+    target_lang: en
+    translation:
+      vi: "2. Bao bì. Cuộc họp thống nhất sẽ thuê thiết kế lại bao bì để cắt giảm chi phí. Đến cuối tháng Sáu, mẫu thiết kế mới sẽ được thử nghiệm xong với khách hàng."
+    note:
+      vi: Have the packaging redesigned (thuê người làm); will have been tested là dạng bị động của will have + V3.
+  - type: example
+    target: "Action points: Tuấn to get three quotes from new suppliers by 15 May. Linh to send the revised timeline to all stakeholders. Next meeting: 20 May - Hà will be presenting the new budget."
+    target_lang: en
+    translation:
+      vi: "Đầu việc: Tuấn xin báo giá từ ba nhà cung cấp mới trước ngày 15/5. Linh gửi lịch trình đã chỉnh sửa cho tất cả các bên liên quan. Cuộc họp tiếp theo: ngày 20/5 - chị Hà sẽ trình bày ngân sách mới."
+    note:
+      vi: Mẫu tên người + to V; will be presenting - kế hoạch vào một thời điểm tương lai.
+  - type: example
+    target: "Supplier: Our price is $4 per unit. Tuấn: That's a fair point about quality, but another supplier has quoted $3.50. Could you do $3.60? Supplier: We could offer $3.70, provided that you order 10,000 units and pay a 30% deposit."
+    target_lang: en
+    translation:
+      vi: "Nhà cung cấp: Giá của chúng tôi là 4 đô một sản phẩm. Tuấn: Về chất lượng thì anh nói có lý, nhưng một nhà cung cấp khác báo giá 3,5 đô. Bên anh lấy 3,6 đô được không? Nhà cung cấp: Chúng tôi có thể để 3,7 đô, với điều kiện bên anh đặt 10.000 sản phẩm và đặt cọc 30%."
+    note:
+      vi: Công nhận rồi phản bác; đề nghị bằng could; điều kiện provided that + hiện tại đơn (order, pay).
+  - type: example
+    target: "Tuấn: As long as you can deliver by 1 June, we have a deal. Supplier: Then I think we've reached a compromise. I'll have the contract sent to you this afternoon."
+    target_lang: en
+    translation:
+      vi: "Tuấn: Miễn là bên anh giao hàng trước ngày 1/6, chúng ta chốt nhé. Nhà cung cấp: Vậy tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ cho gửi hợp đồng sang anh."
+    note:
+      vi: As long as + hiện tại đơn; reach a compromise; I'll have the contract sent - nhờ người khác gửi.
+  - type: common_mistake
+    wrong: We could offer $3.70, provided that you will order 10,000 units.
+    right: We could offer $3.70, provided that you order 10,000 units.
+    target_lang: en
+    note:
+      vi: Sau provided that dùng hiện tại đơn, không có will - giống if.
+  - type: common_mistake
+    wrong: Revenue fell slightly for 3%.
+    right: Revenue fell slightly, by 3%.
+    target_lang: en
+    note:
+      vi: Lượng thay đổi đi với by, không phải for.
+  - type: common_mistake
+    wrong: By the end of June, we will have test the new design.
+    right: By the end of June, we will have tested the new design.
+    target_lang: en
+    note:
+      vi: Sau will have luôn là V3 (tested).
+  - type: summary
+    points:
+      - vi: "Biên bản: Present / Apologies → từng mục agenda → Action points (tên người + to V + by…)."
+      - vi: "Đàm phán: That's a fair point, but… → We could offer… provided that / as long as + hiện tại đơn → reach a compromise."
+      - vi: "Tương lai: will be + V-ing (đang làm lúc đó), will have + V3 (xong trước mốc)."
+      - vi: "Have / get + vật + V3 cho việc nhờ, thuê người khác làm."
+      - vi: "Số liệu: fall slightly, rise sharply, by (lượng) / to (mức cuối)."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:wb-review-mcq-apologies
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:apologies-minutes
+    prompt:
+      stem: "Trong biên bản: \"Present: Hà, Tuấn, Linh. Apologies: Mr Dũng.\" Thông tin về anh Dũng có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: f2c, text: Anh Dũng vắng mặt và đã báo trước., lang: vi }
+        - { id: x6w, text: Anh Dũng đã xin lỗi cả nhóm trong cuộc họp., lang: vi }
+        - { id: n8h, text: Anh Dũng là người ghi biên bản., lang: vi }
+        - { id: q3t, text: Anh Dũng đến muộn., lang: vi }
+    answer:
+      correct_option_id: f2c
+    explanation:
+      vi: Mục Apologies trong biên bản liệt kê người đã báo vắng, không phải người nói lời xin lỗi trong cuộc họp. Người ghi biên bản là Linh (minutes).
+    display_answer: Anh Dũng vắng mặt và đã báo trước.
+
+  - key: en:exercise:wb-review-mcq-minutes-reason
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:behind-schedule
+    prompt:
+      stem: "Theo biên bản: \"Revenue fell slightly in April, by 3%, mainly because the new product launch is two weeks behind schedule.\" Vì sao doanh thu giảm?"
+      stem_lang: vi
+      options:
+        - { id: v5m, text: Vì buổi ra mắt sản phẩm mới đang chậm hai tuần so với kế hoạch., lang: vi }
+        - { id: e9a, text: Vì sản phẩm mới ra mắt sớm hai tuần., lang: vi }
+        - { id: s1k, text: Vì doanh thu giảm mạnh 30%., lang: vi }
+        - { id: j7p, text: Vì lịch họp bị dời hai tuần., lang: vi }
+    answer:
+      correct_option_id: v5m
+    explanation:
+      vi: Behind schedule là chậm tiến độ (không phải sớm hơn - đó là ahead of schedule). Fell slightly by 3% là giảm nhẹ 3%, không phải 30%.
+    display_answer: Vì buổi ra mắt sản phẩm mới đang chậm hai tuần so với kế hoạch.
+
+  - key: en:exercise:wb-review-listen-deposit
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:deposit
+    prompt:
+      audio_asset_id: null
+      fallback_text: We could offer three dollars seventy, provided that you order ten thousand units and pay a thirty percent deposit.
+      options:
+        - { id: r4b, text: "Chúng tôi có thể để 3,7 đô, với điều kiện bên anh đặt 10.000 sản phẩm và đặt cọc 30%.", lang: vi }
+        - { id: l8d, text: "Chúng tôi có thể để 3,7 đô và giảm thêm 30% cho 10.000 sản phẩm.", lang: vi }
+        - { id: h2y, text: "Chúng tôi sẽ để 3,7 đô, dù bên anh đặt bao nhiêu sản phẩm.", lang: vi }
+        - { id: u0n, text: "Chúng tôi có thể để 3,7 đô, với điều kiện bên anh trả hết tiền trong 30 ngày.", lang: vi }
+    answer:
+      correct_option_id: r4b
+    explanation:
+      vi: Provided that đặt ra hai điều kiện - đặt 10.000 sản phẩm và trả a 30% deposit (đặt cọc 30%). Deposit không phải giảm giá (discount) hay thời hạn thanh toán.
+    display_answer: "Chúng tôi có thể để 3,7 đô, với điều kiện bên anh đặt 10.000 sản phẩm và đặt cọc 30%."
+
+  - key: en:exercise:wb-review-order-action-point
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:action-point
+    prompt:
+      instruction: "Sắp xếp thành một action point: \"Tuấn thuê người thiết kế lại bao bì trước ngày 15/5.\""
+      tokens:
+        - { id: a-packaging, text: packaging }
+        - { id: a-by, text: by }
+        - { id: a-tuan, text: Tuấn }
+        - { id: a-redesigned, text: redesigned }
+        - { id: a-to, text: to }
+        - { id: a-15, text: "15" }
+        - { id: a-the, text: the }
+        - { id: a-have, text: have }
+        - { id: a-may, text: May }
+        - { id: a-redesign, text: redesign }
+    answer:
+      orders:
+        - [a-tuan, a-to, a-have, a-the, a-packaging, a-redesigned, a-by, a-15, a-may]
+    explanation:
+      vi: Action point viết theo mẫu tên người + to V; Tuấn không tự thiết kế nên dùng have + vật + V3 (redesigned). Redesign nguyên mẫu là token nhiễu.
+    display_answer: Tuấn to have the packaging redesigned by 15 May.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:wb-review-fill-minutes-tenses
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:future-perfect
+    prompt:
+      template: "By the end of June, we will have {{b1}} the new design with customers. At the next meeting, Hà will be {{b2}} the new budget."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [tested, trialled, trialed, tried]
+        b2: [presenting, explaining, introducing, discussing]
+    known_wrong:
+      - answer: test
+        feedback_vi: Sau will have cần V3 - tested.
+        error_tag: future_perfect_form
+      - answer: present
+        feedback_vi: Sau will be cần V-ing - presenting.
+        error_tag: future_continuous_form
+      - answer: presented
+        feedback_vi: Will be + V3 là bị động. Hà là người trình bày, nên dùng will be presenting.
+        error_tag: future_continuous_form
+    explanation:
+      vi: Việc xong trước mốc cuối tháng Sáu → will have + V3 (tested). Việc đang diễn ra tại cuộc họp tới → will be + V-ing (presenting).
+    display_answer: "By the end of June, we will have tested the new design with customers. At the next meeting, Hà will be presenting the new budget."
+
+  - key: en:exercise:wb-review-translate-discuss-cut-costs
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:cut-costs
+    prompt:
+      source_text: Chúng ta cần thảo luận cách cắt giảm chi phí.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We need to discuss how to cut costs.
+        - We need to discuss ways to cut costs.
+        - We need to discuss how we can cut costs.
+        - We need to discuss how to reduce costs.
+        - We need to discuss ways of cutting costs.
+        - We need to talk about how to cut costs.
+        - We need to talk about ways to cut costs.
+        - We have to discuss how to cut costs.
+        - We need to discuss how we can reduce costs.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We need to discuss about how to cut costs.
+        feedback_vi: Discuss không đi với about.
+        error_tag: discuss_about
+      - answer: We need to discuss how to cut cost.
+        feedback_vi: Cụm cố định là cut costs - costs số nhiều.
+        error_tag: cut_costs_plural
+    explanation:
+      vi: Discuss + tân ngữ (how to cut costs), không có about. Cắt giảm chi phí là cut / reduce costs.
+    display_answer: We need to discuss how to cut costs.
+
+  - key: en:exercise:wb-review-translate-fair-point
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:thats-a-fair-point-but
+    prompt:
+      source_text: Anh nói cũng có lý, nhưng một nhà cung cấp khác báo giá thấp hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - That's a fair point, but another supplier has quoted a lower price.
+        - That's a fair point, but another supplier quoted a lower price.
+        - That's a fair point, but another supplier has given us a lower quote.
+        - That's a fair point, but another supplier gave us a lower quote.
+        - That's a fair point, but another supplier has offered a lower price.
+        - That's a fair point, but another supplier offered a lower price.
+        - That is a fair point, but another supplier has quoted a lower price.
+        - That's a fair point, but we've had a lower quote from another supplier.
+        - That's a fair point, but we got a lower quote from another supplier.
+        - That's a fair point, but another supplier has quoted us a lower price.
+        - That's a fair point, but another supplier quoted us a lower price.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: You are right, but another customer has quoted a lower price.
+        feedback_vi: Bên báo giá cho mình là supplier, không phải customer.
+        error_tag: supplier_customer
+      - answer: That's a fair point, but another supplier has quoted a lower prices.
+        feedback_vi: A lower price - danh từ số ít sau a.
+        error_tag: article
+    explanation:
+      vi: That's a fair point, but… công nhận rồi phản bác. Báo giá là quote (động từ hoặc danh từ); nhà cung cấp là supplier.
+    display_answer: That's a fair point, but another supplier has quoted a lower price.
+
+  # ---------------- application ----------------
+  - key: en:exercise:wb-review-translate-contract-sent
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:have-something-done
+    prompt:
+      source_text: I think we've reached a compromise. I'll have the contract sent to you this afternoon.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ cho gửi hợp đồng cho anh.
+        - Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ cho người gửi hợp đồng cho anh.
+        - Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ cho gửi hợp đồng sang anh.
+        - Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ bảo người gửi hợp đồng cho anh.
+        - Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ nhờ người gửi hợp đồng cho anh.
+        - Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ cho gửi hợp đồng cho bạn.
+        - Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ cho gửi hợp đồng cho chị.
+        - Tôi nghĩ chúng ta đã thỏa hiệp được. Chiều nay tôi sẽ cho gửi hợp đồng cho anh.
+        - Tôi nghĩ chúng ta đã đạt được thỏa hiệp rồi. Chiều nay tôi sẽ cho gửi hợp đồng cho anh.
+        - Tôi nghĩ chúng ta đã đạt được thoả hiệp. Chiều nay tôi sẽ cho gửi hợp đồng cho anh.
+        - Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay hợp đồng sẽ được gửi cho anh.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ có hợp đồng gửi cho anh.
+        feedback_vi: Have the contract sent là cho / nhờ người gửi hợp đồng, không phải "có hợp đồng".
+        error_tag: causative_meaning
+    explanation:
+      vi: Reach a compromise là đạt được thỏa hiệp. I'll have the contract sent là "tôi sẽ cho (người) gửi hợp đồng" - người nói không tự tay gửi.
+    display_answer: Tôi nghĩ chúng ta đã đạt được thỏa hiệp. Chiều nay tôi sẽ cho gửi hợp đồng cho anh.
+
+  - key: en:exercise:wb-review-mcq-situation-condition
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:as-long-as
+    prompt:
+      stem: Bạn đồng ý mức giá của nhà cung cấp, nhưng chỉ khi họ giao hàng trước ngày 1/6. Câu nào vừa đúng ngữ pháp vừa phù hợp?
+      stem_lang: vi
+      options:
+        - { id: z5e, text: "As long as you can deliver by 1 June, we have a deal.", lang: en }
+        - { id: c1r, text: "As long as you will deliver by 1 June, we have a deal.", lang: en }
+        - { id: m4x, text: "As long as you can deliver until 1 June, we have a deal.", lang: en }
+        - { id: k0g, text: "As long you deliver by 1 June, we have a deal.", lang: en }
+    answer:
+      correct_option_id: z5e
+    explanation:
+      vi: As long as + hiện tại đơn (can deliver), hạn chót dùng by. Will deliver sai sau as long as; until là "kéo dài đến"; as long thiếu as.
+    display_answer: "As long as you can deliver by 1 June, we have a deal."
+
+  - key: en:exercise:wb-review-translate-offer-discount
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:discount
+    prompt:
+      source_text: Chúng tôi có thể chiết khấu 10%, với điều kiện quý công ty đặt cọc 30%.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We could offer a 10% discount, provided that you pay a 30% deposit.
+        - We can offer a 10% discount, provided that you pay a 30% deposit.
+        - We could offer a 10% discount, provided you pay a 30% deposit.
+        - We can offer a 10% discount, provided you pay a 30% deposit.
+        - We could offer a 10% discount, as long as you pay a 30% deposit.
+        - We can offer a 10% discount, as long as you pay a 30% deposit.
+        - We could give you a 10% discount, provided that you pay a 30% deposit.
+        - We can give you a 10% discount, provided that you pay a 30% deposit.
+        - We could give you a 10% discount, as long as you pay a 30% deposit.
+        - We could offer you a 10% discount, provided that you pay a 30% deposit.
+        - We could offer a 10% discount, providing that you pay a 30% deposit.
+        - We could offer a 10% discount, provided that you put down a 30% deposit.
+        - We could offer a 10% discount provided that you pay a 30% deposit.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We could offer a 10% discount, provided that you will pay a 30% deposit.
+        feedback_vi: Sau provided that dùng hiện tại đơn - you pay.
+        error_tag: conditional_will
+      - answer: We could offer 10% discount, provided that you pay 30% deposit.
+        feedback_vi: Discount và deposit đều đếm được - a 10% discount, a 30% deposit.
+        error_tag: article
+      - answer: We could offer a discount for 10%, provided that you pay a 30% deposit.
+        feedback_vi: Nói a 10% discount, không nói "a discount for 10%".
+        error_tag: increase_by_for
+    explanation:
+      vi: Đề nghị mềm bằng could offer; a 10% discount và a 30% deposit đều cần mạo từ a. Điều kiện provided that / as long as + hiện tại đơn (pay).
+    display_answer: We could offer a 10% discount, provided that you pay a 30% deposit.

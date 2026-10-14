@@ -1,0 +1,427 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:travel-culture-review
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập - Thư phàn nàn khách sạn và bài viết về khác biệt văn hoá
+objectives:
+  - vi: Đọc hiểu và viết một email phàn nàn lịch sự gửi khách sạn.
+  - vi: Đọc một bài đăng diễn đàn về khác biệt văn hoá và đặt câu hỏi, phản hồi phù hợp.
+  - vi: Dùng tổng hợp lượng từ, tính từ -ed/-ing, so/such… that, câu hỏi gián tiếp và câu hỏi đuôi.
+estimated_minutes: 15
+skills: [reading, writing, grammar]
+prerequisites: [en:lesson:travel-culture-complaints]
+items:
+  - item: en:item:culture-shock
+  - item: en:item:unacceptable
+  - item: en:item:a-few-few
+    role: reuse
+  - item: en:item:a-little-little
+    role: reuse
+  - item: en:item:hardly-any
+    role: reuse
+  - item: en:item:none-of
+    role: reuse
+  - item: en:item:ed-ing-adjectives
+    role: reuse
+  - item: en:item:exhausted
+    role: reuse
+  - item: en:item:disappointed
+    role: reuse
+  - item: en:item:so-adjective-that
+    role: reuse
+  - item: en:item:such-a-noun-that
+    role: reuse
+  - item: en:item:indirect-questions
+    role: reuse
+  - item: en:item:question-tags
+    role: reuse
+  - item: en:item:custom
+    role: reuse
+  - item: en:item:polite
+    role: reuse
+  - item: en:item:rude
+    role: reuse
+  - item: en:item:tip
+    role: reuse
+  - item: en:item:bow
+    role: reuse
+  - item: en:item:take-off-your-shoes
+    role: reuse
+  - item: en:item:im-afraid-theres-a-problem
+    role: reuse
+  - item: en:item:i-was-wondering-if
+    role: reuse
+  - item: en:item:refund
+    role: reuse
+  - item: en:item:complaint
+    role: reuse
+  - item: en:item:doesnt-work
+    role: reuse
+  - item: en:item:noisy
+    role: reuse
+  - item: en:item:email-dear
+    role: reuse
+  - item: en:item:im-writing-to
+    role: reuse
+  - item: en:item:look-forward-to
+    role: reuse
+  - item: en:item:best-regards
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được một email phàn nàn ngắn mà vẫn lịch sự, và đọc hiểu, bình luận một bài chia sẻ về phong tục ở nước khác - dùng mọi điểm ngữ pháp của unit.
+  - type: explain
+    text:
+      vi: "Email phàn nàn tốt có bốn phần: lý do viết (I'm writing to complain about…), sự cố cụ thể (the air conditioning didn't work…), cảm xúc (we were very disappointed / exhausted) và yêu cầu rõ ràng (I would like a partial refund). Giọng văn lịch sự nhưng chắc chắn; unacceptable dùng cho việc thật sự nghiêm trọng."
+  - type: explain
+    text:
+      vi: "Bài viết về văn hoá thường kể trải nghiệm (I felt so embarrassed when…), so sánh phong tục (In Vietnam we…, but in Japan it's rude to…) và đặt câu hỏi cho người đọc (Do you know if…? / It's the same in Korea, isn't it?)."
+  - type: explain
+    text:
+      vi: "Hai từ mới: culture shock (sốc văn hoá) và unacceptable (không thể chấp nhận). Hãy để ý cách lượng từ (hardly any, none of, a few) giúp mô tả vấn đề chính xác hơn."
+  - type: deep_explain
+    text:
+      vi: "Kiểm tra nhanh trước khi gửi: tính từ cảm xúc của người có đuôi -ed chưa (bored, not boring); có danh từ thì dùng such a chứ không phải so; câu hỏi gián tiếp có giữ trật tự chủ ngữ + động từ không; đuôi câu hỏi có lặp đúng trợ động từ không; money, time, information có lỡ đi với a few không. Đây là năm lỗi người Việt hay gặp nhất trong unit này."
+  - type: example
+    target: "Dear Sir or Madam, I'm writing to complain about my stay at your hotel from 3 to 5 May. I'm afraid there were several problems with our room."
+    target_lang: en
+    translation:
+      vi: "Kính gửi Quý khách sạn, tôi viết thư này để phàn nàn về kỳ lưu trú tại khách sạn từ ngày 3 đến 5 tháng Năm. Tôi e là phòng của chúng tôi gặp một số vấn đề."
+    note:
+      vi: Mở đầu trang trọng với Dear Sir or Madam và I'm writing to…; I'm afraid làm mềm giọng văn.
+  - type: example
+    target: "First, the air conditioning didn't work, and the room was so hot that we hardly slept. Second, there were hardly any towels, and none of the staff came when we called reception."
+    target_lang: en
+    translation:
+      vi: "Thứ nhất, điều hoà không chạy và phòng nóng đến nỗi chúng tôi gần như không ngủ được. Thứ hai, hầu như không có khăn tắm, và không nhân viên nào đến khi chúng tôi gọi lễ tân."
+    note:
+      vi: So hot that…; hardly any towels; none of the staff.
+  - type: example
+    target: "We were exhausted after a long flight, so this was very disappointing. I would like a partial refund for the two nights. I look forward to hearing from you. Kind regards, Lan Nguyen"
+    target_lang: en
+    translation:
+      vi: "Chúng tôi đã kiệt sức sau chuyến bay dài nên việc này thật đáng thất vọng. Tôi muốn được hoàn lại một phần tiền cho hai đêm. Mong sớm nhận được phản hồi. Trân trọng, Nguyễn Lan"
+    note:
+      vi: Exhausted (người) và disappointing (sự việc); yêu cầu rõ ràng bằng I would like a refund.
+  - type: example
+    target: "FORUM - Culture shock in Japan? When I first visited my friend's family, I felt so embarrassed! I didn't know you had to take off your shoes AND wear special slippers in the bathroom."
+    target_lang: en
+    translation:
+      vi: "DIỄN ĐÀN - Sốc văn hoá ở Nhật? Lần đầu đến nhà gia đình bạn mình, mình ngượng chín mặt! Mình không biết là phải cởi giày VÀ còn phải đi dép riêng trong nhà vệ sinh."
+    note:
+      vi: Culture shock là từ mới; so embarrassed tả cảm giác của người viết.
+  - type: example
+    target: "Also, it's rude to leave a tip in restaurants, which was such a surprise for me. You bow a lot in Korea too, don't you? Does anyone know if tipping is OK in Thailand?"
+    target_lang: en
+    translation:
+      vi: "Ngoài ra, để lại tiền boa ở nhà hàng là bất lịch sự - điều này làm mình rất bất ngờ. Ở Hàn Quốc người ta cũng cúi chào nhiều, phải không? Có ai biết ở Thái Lan cho tiền boa có được không?"
+    note:
+      vi: Such a surprise; câu hỏi đuôi don't you; câu hỏi gián tiếp Does anyone know if…
+  - type: common_mistake
+    wrong: The room was so noisy, I was very boring and the staff was so rude person.
+    right: The room was so noisy, I was really bored, and the staff were such rude people.
+    target_lang: en
+    note:
+      vi: Cảm giác của mình là bored; có danh từ thì dùng such, không dùng so.
+  - type: common_mistake
+    wrong: Does anyone know if is tipping OK in Thailand?
+    right: Does anyone know if tipping is OK in Thailand?
+    target_lang: en
+    note:
+      vi: Sau if dùng trật tự câu kể - tipping is.
+  - type: summary
+    points:
+      - vi: Email phàn nàn - lý do viết, sự cố cụ thể, cảm xúc, yêu cầu rõ ràng, kết thư lịch sự.
+      - vi: Lượng từ - a few/a little, hardly any, none of; không nói a few money.
+      - vi: -ed cho cảm giác của người, -ing cho sự việc; so + tính từ, such (a) + danh từ.
+      - vi: Câu hỏi gián tiếp giữ trật tự câu kể; câu hỏi đuôi lặp đúng trợ động từ.
+      - vi: Từ mới - culture shock, unacceptable.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:travel-culture-r-listen-towels
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:hardly-any
+    prompt:
+      audio_asset_id: null
+      fallback_text: There were hardly any towels, and none of the staff came when we called reception.
+      options:
+        - { id: u3k, text: "Hầu như không có khăn tắm, và không nhân viên nào đến khi chúng tôi gọi lễ tân.", lang: vi }
+        - { id: f6w, text: "Có rất nhiều khăn tắm, và nhân viên đến ngay khi chúng tôi gọi lễ tân.", lang: vi }
+        - { id: b1q, text: "Có vài chiếc khăn tắm, và một nhân viên đến khi chúng tôi gọi lễ tân.", lang: vi }
+        - { id: m9d, text: "Khăn tắm rất bẩn, và chúng tôi không gọi được lễ tân.", lang: vi }
+    answer:
+      correct_option_id: u3k
+    explanation:
+      vi: Hardly any towels = hầu như không có khăn; none of the staff came = không nhân viên nào đến. Cả hai đều mang nghĩa phủ định dù động từ ở thể khẳng định.
+    display_answer: "Hầu như không có khăn tắm, và không nhân viên nào đến khi chúng tôi gọi lễ tân."
+
+  - key: en:exercise:travel-culture-r-mcq-email-purpose
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:refund
+    prompt:
+      stem: "Đọc lại email của Lan trong bài. Lan muốn khách sạn làm gì?"
+      stem_lang: vi
+      options:
+        - { id: h2v, text: "Give her a partial refund for two nights.", lang: en }
+        - { id: z5l, text: "Give her a free room next year.", lang: en }
+        - { id: p7c, text: "Change her room immediately.", lang: en }
+        - { id: e4s, text: "Send a manager to her house.", lang: en }
+    answer:
+      correct_option_id: h2v
+    explanation:
+      vi: Câu yêu cầu trong email là I would like a partial refund for the two nights - hoàn lại một phần tiền cho hai đêm. Email viết sau khi đã rời khách sạn nên không yêu cầu đổi phòng.
+    display_answer: "Give her a partial refund for two nights."
+
+  - key: en:exercise:travel-culture-r-mcq-forum-tag
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:question-tags
+    prompt:
+      stem: "Người viết bài diễn đàn muốn hỏi xác nhận: People in Korea bow a lot too, ___?"
+      stem_lang: vi
+      options:
+        - { id: t8n, text: "don't they", lang: en }
+        - { id: c3j, text: "isn't it", lang: en }
+        - { id: a6m, text: "doesn't it", lang: en }
+        - { id: o1r, text: "aren't they", lang: en }
+    answer:
+      correct_option_id: t8n
+    explanation:
+      vi: Câu chính dùng bow (hiện tại đơn, khẳng định) với people, nên đuôi là don't they. Isn't it chỉ dùng cho câu it is; aren't they cần câu chính có are.
+    display_answer: "don't they"
+
+  - key: en:exercise:travel-culture-r-fill-email-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:ed-ing-adjectives
+    prompt:
+      template: "The room was {{b1}} hot that we hardly slept. After a long flight, we were {{b2}} (exhaust), so this was very {{b3}} (disappoint)."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 13 }
+      hint_levels:
+        - "Nghĩa của câu: Phòng nóng đến nỗi chúng tôi gần như không ngủ được. Sau chuyến bay dài, chúng tôi kiệt sức, nên việc này thật đáng thất vọng."
+        - "Gợi ý: tính từ không có danh từ sau → s…; cảm giác của người → -ed; sự việc gây cảm giác → -ing."
+    answer:
+      blanks:
+        b1: [so]
+        b2: [exhausted]
+        b3: [disappointing]
+    known_wrong:
+      - answer: such
+        feedback_vi: Hot là tính từ đứng một mình, nên dùng so.
+        error_tag: so_such_that
+      - answer: exhausting
+        feedback_vi: Cảm giác của chúng tôi dùng -ed - exhausted.
+        error_tag: ed_ing_adjective
+      - answer: disappointed
+        feedback_vi: This (sự việc) gây thất vọng nên dùng disappointing.
+        error_tag: ed_ing_adjective
+    explanation:
+      vi: So + tính từ (hot) + that; chúng tôi cảm thấy kiệt sức → exhausted; việc này gây thất vọng → disappointing.
+    display_answer: The room was so hot that we hardly slept. After a long flight, we were exhausted, so this was very disappointing.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:travel-culture-r-translate-indirect
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:indirect-questions
+    prompt:
+      source_text: Có ai biết ở Thái Lan cho tiền boa có được không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Does anyone know if tipping is OK in Thailand?
+        - Does anyone know whether tipping is OK in Thailand?
+        - Does anyone know if tipping is okay in Thailand?
+        - Does anyone know if it's OK to tip in Thailand?
+        - Does anyone know if it is OK to tip in Thailand?
+        - Does anyone know if it's okay to tip in Thailand?
+        - Does anyone know if leaving a tip is OK in Thailand?
+        - Does anybody know if tipping is OK in Thailand?
+        - Does anyone know if you can tip in Thailand?
+        - Does anyone know if people tip in Thailand?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Does anyone know if is tipping OK in Thailand?
+        feedback_vi: Sau if dùng trật tự câu kể - tipping is OK.
+        error_tag: indirect_question_order
+      - answer: Does anyone know is tipping OK in Thailand?
+        feedback_vi: Câu hỏi Yes/No gián tiếp cần if hoặc whether và trật tự câu kể.
+        error_tag: indirect_question_if
+      - answer: Do anyone know if tipping is OK in Thailand?
+        feedback_vi: Anyone số ít nên dùng does.
+        error_tag: do_does
+    explanation:
+      vi: Does anyone know + if + tipping is OK - câu hỏi Yes/No gián tiếp cần if/whether và giữ trật tự chủ ngữ + động từ.
+    display_answer: Does anyone know if tipping is OK in Thailand?
+
+  - key: en:exercise:travel-culture-r-fill-email-request
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:i-was-wondering-if
+    prompt:
+      template: "I was {{b1}} if you {{b2}} give us a partial refund. I look forward to {{b3}} from you."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [wondering]
+        b2: [could]
+        b3: [hearing]
+    known_wrong:
+      - answer: wonder
+        feedback_vi: Sau was cần V-ing - I was wondering.
+        error_tag: was_ing
+      - answer: hear
+        feedback_vi: Look forward to + V-ing - hearing.
+        error_tag: look_forward_to_ing
+      - answer: can
+        feedback_vi: I was wondering if đi với could để giữ sự lịch sự và hoà hợp với was.
+        error_tag: modal_politeness
+    explanation:
+      vi: I was wondering if you could… là cách nhờ rất lịch sự. Trong look forward to, to là giới từ nên sau nó dùng V-ing (hearing).
+    display_answer: I was wondering if you could give us a partial refund. I look forward to hearing from you.
+
+  - key: en:exercise:travel-culture-r-translate-unacceptable
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:unacceptable
+    prompt:
+      source_text: Chờ hai tiếng mới có phòng là không thể chấp nhận được.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Waiting two hours for our room was unacceptable.
+        - Waiting two hours for a room was unacceptable.
+        - Waiting two hours for our room is unacceptable.
+        - Waiting two hours for the room was unacceptable.
+        - Waiting for two hours to get our room was unacceptable.
+        - It was unacceptable to wait two hours for our room.
+        - It is unacceptable to wait two hours for a room.
+        - Waiting two hours for a room is unacceptable.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Wait two hours for our room was unacceptable.
+        feedback_vi: Động từ làm chủ ngữ phải ở dạng -ing - Waiting.
+        error_tag: gerund_subject
+      - answer: Waiting two hours for our room was unaccepted.
+        feedback_vi: Tính từ đúng là unacceptable (không thể chấp nhận được).
+        error_tag: word_form
+      - answer: Waiting two hours for our room was inacceptable.
+        feedback_vi: Tiền tố đúng là un- - unacceptable.
+        error_tag: prefix
+    explanation:
+      vi: Waiting… làm chủ ngữ (V-ing), hoặc dùng It was unacceptable to wait… Unacceptable dùng tiền tố un-.
+    display_answer: Waiting two hours for our room was unacceptable.
+
+  # ---------------- application ----------------
+  - key: en:exercise:travel-culture-r-mcq-best-email
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:complaint
+    prompt:
+      stem: "Bạn viết email phàn nàn cho khách sạn. Đoạn nào vừa lịch sự vừa đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: y4h, text: "I'm afraid the Wi-Fi didn't work during our stay, and none of the staff could help us. I would like a partial refund.", lang: en }
+        - { id: g8z, text: "Your Wi-Fi was terrible and your staff were so useless people. Give me my money back now.", lang: en }
+        - { id: l3t, text: "I'm afraid the Wi-Fi not work during our stay, and none of the staff couldn't help us. I want to refund.", lang: en }
+        - { id: w6b, text: "I'm afraid the Wi-Fi didn't work, isn't it? We were very disappointing. I would like a refund.", lang: en }
+    answer:
+      correct_option_id: y4h
+    explanation:
+      vi: Đoạn đúng dùng I'm afraid, didn't work, none of + could (khẳng định) và yêu cầu I would like a refund. Các đoạn khác thô lỗ, phủ định hai lần, dùng I want to refund, sai đuôi câu hỏi hoặc dùng disappointing cho người.
+    display_answer: "I'm afraid the Wi-Fi didn't work during our stay, and none of the staff could help us. I would like a partial refund."
+
+  - key: en:exercise:travel-culture-r-translate-culture-shock-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:culture-shock
+    prompt:
+      source_text: I had such bad culture shock that I wanted to go home after a few days.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mình bị sốc văn hoá nặng đến nỗi chỉ sau vài ngày đã muốn về nhà.
+        - Mình bị sốc văn hoá nặng đến nỗi muốn về nhà sau vài ngày.
+        - Tôi bị sốc văn hoá nặng đến nỗi muốn về nhà sau vài ngày.
+        - Tôi bị sốc văn hoá nặng đến mức chỉ sau vài ngày đã muốn về nước.
+        - Tôi bị sốc văn hoá nặng đến mức muốn về nhà sau vài ngày.
+        - Mình bị sốc văn hoá nặng đến mức sau vài ngày đã muốn về nhà.
+        - Mình bị sốc văn hoá nặng tới mức chỉ vài ngày sau đã muốn về nhà.
+        - Tôi bị sốc văn hoá nặng đến nỗi chỉ sau vài ngày tôi đã muốn về nhà.
+        - Mình sốc văn hoá nặng đến nỗi sau vài ngày đã muốn về nhà.
+        - Tôi bị sốc văn hoá nặng đến nỗi sau vài ngày đã muốn về nước.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mình bị sốc văn hoá nặng đến nỗi muốn về nhà sau rất ít ngày.
+        feedback_vi: A few days là "vài ngày" (ý trung tính), không phải "rất ít ngày" (few days).
+        error_tag: few_vs_a_few
+    explanation:
+      vi: Such bad culture shock that… = sốc văn hoá nặng đến nỗi…; culture shock không đếm được nên such không có a. A few days = vài ngày.
+    display_answer: Mình bị sốc văn hoá nặng đến nỗi chỉ sau vài ngày đã muốn về nhà.
+
+  - key: en:exercise:travel-culture-r-order-forum
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:take-off-your-shoes
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Bạn có thể cho mình biết khi nào phải cởi giày không?\""
+      tokens:
+        - { id: k-off, text: off }
+        - { id: k-tell, text: tell }
+        - { id: k-shoes, text: shoes }
+        - { id: k-could, text: Could }
+        - { id: k-i, text: I }
+        - { id: k-should, text: should }
+        - { id: k-me, text: me }
+        - { id: k-take, text: take }
+        - { id: k-when, text: when }
+        - { id: k-my, text: my }
+        - { id: k-you, text: you }
+    answer:
+      orders:
+        - [k-could, k-you, k-tell, k-me, k-when, k-i, k-should, k-take, k-off, k-my, k-shoes]
+        - [k-could, k-you, k-tell, k-me, k-when, k-i, k-should, k-take, k-my, k-shoes, k-off]
+    explanation:
+      vi: Câu hỏi gián tiếp - when + I + should (chủ ngữ trước động từ khuyết thiếu), không đảo thành when should I. Take off my shoes và take my shoes off đều đúng.
+    display_answer: Could you tell me when I should take off my shoes?

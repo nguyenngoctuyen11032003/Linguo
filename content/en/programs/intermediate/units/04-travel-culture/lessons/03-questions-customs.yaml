@@ -1,0 +1,406 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:travel-culture-questions-customs
+order_index: 3
+level: b1
+title:
+  vi: Hỏi lịch sự và phong tục - câu hỏi gián tiếp, câu hỏi đuôi
+objectives:
+  - vi: Hỏi lịch sự bằng câu hỏi gián tiếp - Could you tell me where the station is? Do you know if…?
+  - vi: Dùng câu hỏi đuôi đúng trợ động từ - It's hot, isn't it? You tip here, don't you?
+  - vi: Nói về phong tục, phép lịch sự - custom, tradition, polite, rude, tip, bow, shake hands, take off your shoes.
+estimated_minutes: 15
+skills: [grammar, speaking, vocabulary]
+prerequisites: [en:lesson:travel-culture-feelings]
+items:
+  - item: en:item:indirect-questions
+  - item: en:item:indirect-questions-if
+  - item: en:item:question-tags
+  - item: en:item:custom
+  - item: en:item:tradition
+  - item: en:item:polite
+  - item: en:item:rude
+  - item: en:item:tip
+  - item: en:item:bow
+  - item: en:item:shake-hands
+  - item: en:item:take-off-your-shoes
+  - item: en:item:excuse-me
+    role: reuse
+  - item: en:item:could-you-request
+    role: reuse
+  - item: en:item:local
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi đường, hỏi thông tin một cách lịch sự với người lạ, và hỏi để xác nhận phong tục ở nơi bạn đến (Mình phải cởi giày, phải không?).
+  - type: explain
+    text:
+      vi: "Câu hỏi gián tiếp mở đầu bằng Could you tell me… / Do you know… rồi mới đến câu hỏi chính. Phần sau từ để hỏi dùng trật tự câu kể (chủ ngữ + động từ) và bỏ do/does/did: Where is the station? → Could you tell me where the station is?"
+  - type: explain
+    text:
+      vi: "Với câu hỏi Yes/No, thêm if (hoặc whether): Does this bus go to the airport? → Do you know if this bus goes to the airport? Lưu ý goes - động từ chia lại như câu kể."
+  - type: explain
+    text:
+      vi: "Câu hỏi đuôi giống \"…nhỉ? / …phải không?\" trong tiếng Việt, nhưng phải lặp lại trợ động từ của câu chính + đại từ. Câu khẳng định → đuôi phủ định (It's hot, isn't it?); câu phủ định → đuôi khẳng định (You don't tip here, do you?)."
+  - type: deep_explain
+    text:
+      vi: "Nếu câu chính không có trợ động từ, dùng do/does/did: You take off your shoes, don't you? / She bowed, didn't she? Đuôi của I am là aren't I (I'm late, aren't I?), của Let's là shall we. Về phong tục: It's polite/rude to + động từ là mẫu câu rất hay dùng để giải thích văn hoá."
+  - type: example
+    target: Excuse me, could you tell me where the nearest station is?
+    target_lang: en
+    translation:
+      vi: Xin lỗi, anh/chị có thể chỉ cho tôi ga gần nhất ở đâu không?
+    note:
+      vi: Where + the nearest station + is - chủ ngữ trước động từ.
+  - type: example
+    target: Do you know if the temple is open on Mondays?
+    target_lang: en
+    translation:
+      vi: Bạn có biết chùa có mở cửa vào thứ Hai không?
+    note:
+      vi: Câu hỏi Yes/No gián tiếp dùng if; the temple is giữ trật tự câu kể.
+  - type: example
+    target: In Vietnam, you take off your shoes when you visit someone's home, don't you?
+    target_lang: en
+    translation:
+      vi: Ở Việt Nam, mình cởi giày khi đến nhà người khác, phải không?
+    note:
+      vi: Câu chính dùng take (hiện tại đơn, không có trợ động từ) nên đuôi là don't you.
+  - type: example
+    target: In Japan, it's polite to bow, but it's rude to leave a tip.
+    target_lang: en
+    translation:
+      vi: Ở Nhật, cúi chào là lịch sự, nhưng để lại tiền boa lại bị coi là bất lịch sự.
+    note:
+      vi: It's polite/rude to + động từ nguyên mẫu.
+  - type: common_mistake
+    wrong: Could you tell me where is the station?
+    right: Could you tell me where the station is?
+    target_lang: en
+    note:
+      vi: Trong câu hỏi gián tiếp, chủ ngữ (the station) đứng trước động từ (is).
+  - type: common_mistake
+    wrong: You like Vietnamese food, isn't it?
+    right: You like Vietnamese food, don't you?
+    target_lang: en
+    note:
+      vi: Câu chính dùng like (hiện tại đơn) với you, nên đuôi là don't you, không dùng isn't it cho mọi câu.
+  - type: common_mistake
+    wrong: Do you know what time does the museum open?
+    right: Do you know what time the museum opens?
+    target_lang: en
+    note:
+      vi: Bỏ does và chia lại động từ như câu kể - the museum opens.
+  - type: summary
+    points:
+      - vi: Could you tell me / Do you know + wh-word + chủ ngữ + động từ (không đảo, không do/does/did).
+      - vi: Câu hỏi Yes/No gián tiếp dùng if hoặc whether.
+      - vi: Câu hỏi đuôi lặp trợ động từ của câu chính; không có trợ động từ thì dùng do/does/did.
+      - vi: Khẳng định → đuôi phủ định; phủ định → đuôi khẳng định.
+      - vi: Phong tục - custom, tradition, polite, rude, tip, bow, shake hands, take off your shoes.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:travel-culture-qc-listen-temple
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:take-off-your-shoes
+    prompt:
+      audio_asset_id: null
+      fallback_text: Please take off your shoes before you go into the temple.
+      options:
+        - { id: a8j, text: "Vui lòng cởi giày trước khi vào chùa.", lang: vi }
+        - { id: n3w, text: "Vui lòng mang giày khi vào chùa.", lang: vi }
+        - { id: g5x, text: "Vui lòng để giày ngay ngắn sau khi ra khỏi chùa.", lang: vi }
+        - { id: o7b, text: "Vui lòng cởi mũ trước khi vào chùa.", lang: vi }
+    answer:
+      correct_option_id: a8j
+    explanation:
+      vi: Take off your shoes là "cởi giày"; before you go into là "trước khi vào". Shoes là giày, không phải mũ (hat).
+    display_answer: "Vui lòng cởi giày trước khi vào chùa."
+
+  - key: en:exercise:travel-culture-qc-mcq-indirect
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:indirect-questions
+    prompt:
+      stem: "Câu hỏi đường nào đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: c2h, text: "Could you tell me where the station is?", lang: en }
+        - { id: y7v, text: "Could you tell me where is the station?", lang: en }
+        - { id: p4m, text: "Could you tell me where does the station is?", lang: en }
+        - { id: l9q, text: "Could you tell me the station where is?", lang: en }
+    answer:
+      correct_option_id: c2h
+    explanation:
+      vi: Câu hỏi gián tiếp dùng trật tự câu kể - where + the station + is. Where is the station chỉ đúng khi hỏi trực tiếp, không có Could you tell me đứng trước.
+    display_answer: "Could you tell me where the station is?"
+
+  - key: en:exercise:travel-culture-qc-mcq-tag
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:question-tags
+    prompt:
+      stem: "Chọn câu hỏi đuôi đúng: You leave a tip in restaurants here, ___?"
+      stem_lang: vi
+      options:
+        - { id: f8s, text: "don't you", lang: en }
+        - { id: e3r, text: "isn't it", lang: en }
+        - { id: u6d, text: "aren't you", lang: en }
+        - { id: k1z, text: "do you", lang: en }
+    answer:
+      correct_option_id: f8s
+    explanation:
+      vi: Câu chính dùng leave (hiện tại đơn) với you và ở thể khẳng định, nên đuôi là don't you. Isn't it chỉ dùng khi câu chính là it is; do you là đuôi của câu phủ định.
+    display_answer: "don't you"
+
+  - key: en:exercise:travel-culture-qc-mcq-bow
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:bow
+    prompt:
+      stem: "Chọn từ đúng: In Korea, people often ___ to older people to show respect."
+      stem_lang: vi
+      options:
+        - { id: h6t, text: bow, lang: en }
+        - { id: w1n, text: tip, lang: en }
+        - { id: r4c, text: shake, lang: en }
+        - { id: m8e, text: rude, lang: en }
+    answer:
+      correct_option_id: h6t
+    explanation:
+      vi: Bow to someone là "cúi chào ai" để thể hiện sự tôn trọng. Tip là cho tiền boa; shake cần hands (shake hands); rude là tính từ "thô lỗ".
+    display_answer: bow
+
+  - key: en:exercise:travel-culture-qc-fill-if-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:indirect-questions-if
+    prompt:
+      template: "Excuse me, do you know {{b1}} this bus {{b2}} to the airport?"
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Xin lỗi, bạn có biết xe buýt này có đi sân bay không?"
+        - "Gợi ý: câu hỏi Yes/No gián tiếp dùng i…; động từ go chia như câu kể với this bus."
+    answer:
+      blanks:
+        b1: [if, whether]
+        b2: [goes]
+    known_wrong:
+      - answer: does
+        feedback_vi: Câu hỏi gián tiếp không dùng does; nói if this bus goes.
+        error_tag: indirect_question_order
+      - answer: go
+        feedback_vi: This bus số ít nên động từ là goes.
+        error_tag: third_person_s
+      - answer: that
+        feedback_vi: Câu hỏi Yes/No gián tiếp dùng if hoặc whether, không dùng that.
+        error_tag: indirect_question_if
+    explanation:
+      vi: Câu hỏi Yes/No gián tiếp dùng if/whether, sau đó là trật tự câu kể - this bus goes (thêm -s vì chủ ngữ số ít), không có does.
+    display_answer: Excuse me, do you know if this bus goes to the airport?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:travel-culture-qc-fill-tags
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:question-tags
+    prompt:
+      template: "It's really hot today, {{b1}} it? You don't shake hands in Japan, {{b2}} you? She bowed to the teacher, {{b3}} she?"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: ["isn't"]
+        b2: [do]
+        b3: ["didn't"]
+    known_wrong:
+      - answer: "is"
+        feedback_vi: Câu khẳng định đi với đuôi phủ định - isn't it.
+        error_tag: question_tag_polarity
+      - answer: "don't"
+        feedback_vi: Câu phủ định (don't shake) đi với đuôi khẳng định - do you.
+        error_tag: question_tag_polarity
+      - answer: "wasn't"
+        feedback_vi: Bowed là quá khứ đơn, không có trợ động từ, nên đuôi dùng didn't.
+        error_tag: question_tag_auxiliary
+      - answer: "doesn't"
+        feedback_vi: Bowed ở quá khứ nên đuôi là didn't she.
+        error_tag: question_tag_auxiliary
+    explanation:
+      vi: It's (is) → isn't it; don't shake (phủ định) → do you; bowed (quá khứ đơn) → didn't she. Đuôi luôn lặp trợ động từ và đổi khẳng định/phủ định.
+    display_answer: "It's really hot today, isn't it? You don't shake hands in Japan, do you? She bowed to the teacher, didn't she?"
+
+  - key: en:exercise:travel-culture-qc-translate-museum
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:indirect-questions
+    prompt:
+      source_text: Bạn có biết mấy giờ bảo tàng mở cửa không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Do you know what time the museum opens?
+        - Do you know when the museum opens?
+        - Do you know what time the museum is open?
+        - Could you tell me what time the museum opens?
+        - Do you know what time the museum will open?
+        - Do you happen to know what time the museum opens?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Do you know what time does the museum open?
+        feedback_vi: Câu hỏi gián tiếp bỏ does và chia lại động từ - the museum opens.
+        error_tag: indirect_question_order
+      - answer: Do you know what time the museum open?
+        feedback_vi: The museum số ít nên động từ là opens.
+        error_tag: third_person_s
+      - answer: Do you know what time is the museum open?
+        feedback_vi: Chủ ngữ đứng trước động từ - what time the museum is open.
+        error_tag: indirect_question_order
+    explanation:
+      vi: Do you know + what time + the museum opens - phần sau dùng trật tự câu kể, không có does, và opens thêm -s vì chủ ngữ số ít.
+    display_answer: Do you know what time the museum opens?
+
+  - key: en:exercise:travel-culture-qc-translate-rude
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:rude
+    prompt:
+      source_text: Ở Nhật, để lại tiền boa bị coi là bất lịch sự.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - In Japan, it's rude to leave a tip.
+        - In Japan, it is rude to leave a tip.
+        - In Japan, it's impolite to leave a tip.
+        - In Japan, it is impolite to leave a tip.
+        - In Japan, leaving a tip is rude.
+        - In Japan, leaving a tip is considered rude.
+        - In Japan, it's considered rude to leave a tip.
+        - In Japan, it is considered rude to leave a tip.
+        - In Japan, it's rude to tip.
+        - In Japan, it is rude to tip.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: In Japan, it's rude leave a tip.
+        feedback_vi: Sau rude cần to + động từ - it's rude to leave a tip.
+        error_tag: adjective_to_infinitive
+      - answer: In Japan, leave a tip is rude.
+        feedback_vi: Động từ làm chủ ngữ phải ở dạng -ing - leaving a tip.
+        error_tag: gerund_subject
+      - answer: In Japan, it's rude to pay a tip.
+        feedback_vi: Nói leave a tip hoặc tip, không nói pay a tip.
+        error_tag: collocation
+    explanation:
+      vi: It's rude/polite + to + động từ là mẫu câu chuẩn để nói về phép lịch sự. "Để lại tiền boa" là leave a tip hoặc dùng động từ tip.
+    display_answer: In Japan, it's rude to leave a tip.
+
+  # ---------------- application ----------------
+  - key: en:exercise:travel-culture-qc-mcq-situation-ask
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:indirect-questions-if
+    prompt:
+      stem: "Bạn ở quầy lễ tân và muốn hỏi lịch sự xem bữa sáng có tính trong giá phòng không. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: v2k, text: "Could you tell me if breakfast is included?", lang: en }
+        - { id: j5a, text: "Could you tell me is breakfast included?", lang: en }
+        - { id: t9u, text: "Could you tell me does breakfast included?", lang: en }
+        - { id: b3o, text: "Breakfast is included, isn't breakfast?", lang: en }
+    answer:
+      correct_option_id: v2k
+    explanation:
+      vi: Câu hỏi Yes/No gián tiếp cần if + trật tự câu kể (breakfast is included). Câu hỏi đuôi phải dùng đại từ (isn't it), không lặp danh từ.
+    display_answer: "Could you tell me if breakfast is included?"
+
+  - key: en:exercise:travel-culture-qc-translate-custom-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:custom
+    prompt:
+      source_text: It's a custom in Vietnam to give lucky money at Tet, isn't it?
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở Việt Nam, lì xì vào dịp Tết là một phong tục, phải không?
+        - Ở Việt Nam có phong tục lì xì vào dịp Tết, phải không?
+        - Ở Việt Nam có phong tục lì xì ngày Tết, phải không?
+        - Ở Việt Nam có phong tục mừng tuổi vào dịp Tết, phải không?
+        - Ở Việt Nam, mừng tuổi ngày Tết là một phong tục, phải không?
+        - Ở Việt Nam có phong tục lì xì vào dịp Tết, đúng không?
+        - Ở Việt Nam có phong tục lì xì vào dịp Tết nhỉ?
+        - Ở Việt Nam có phong tục lì xì ngày Tết, đúng không?
+        - Lì xì vào dịp Tết là một phong tục ở Việt Nam, phải không?
+        - Lì xì ngày Tết là phong tục ở Việt Nam, đúng không?
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Custom là phong tục; lucky money là tiền lì xì (mừng tuổi). Đuôi isn't it dịch tự nhiên là "phải không / đúng không / nhỉ".
+    display_answer: Ở Việt Nam có phong tục lì xì vào dịp Tết, phải không?
+
+  - key: en:exercise:travel-culture-qc-order-shake
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:shake-hands
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Ở đây người ta bắt tay khi gặp nhau, phải không?\""
+      tokens:
+        - { id: h-meet, text: meet }
+        - { id: h-people, text: People }
+        - { id: h-dont, text: "don't" }
+        - { id: h-hands, text: hands }
+        - { id: h-they, text: they }
+        - { id: h-shake, text: shake }
+        - { id: h-when, text: when }
+        - { id: h-here, text: here }
+        - { id: h-they2, text: they }
+        - { id: h-isnt, text: "isn't" }
+        - { id: h-it, text: it }
+    answer:
+      orders:
+        - [h-people, h-here, h-shake, h-hands, h-when, h-they, h-meet, h-dont, h-they2]
+        - [h-people, h-here, h-shake, h-hands, h-when, h-they2, h-meet, h-dont, h-they]
+        - [h-people, h-shake, h-hands, h-here, h-when, h-they, h-meet, h-dont, h-they2]
+        - [h-people, h-shake, h-hands, h-here, h-when, h-they2, h-meet, h-dont, h-they]
+        - [h-people, h-shake, h-hands, h-when, h-they, h-meet, h-here, h-dont, h-they2]
+        - [h-people, h-shake, h-hands, h-when, h-they2, h-meet, h-here, h-dont, h-they]
+    explanation:
+      vi: Câu chính People… shake (hiện tại đơn, khẳng định) nên đuôi là don't they; đại từ của people là they. Isn't it là đuôi của câu it is nên bị thừa; hands luôn số nhiều.
+    display_answer: "People here shake hands when they meet, don't they?"

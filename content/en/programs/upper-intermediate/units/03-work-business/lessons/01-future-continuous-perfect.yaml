@@ -1,0 +1,406 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:future-continuous-perfect
+order_index: 1
+level: b2
+title:
+  vi: Giờ này tuần sau… - kế hoạch và tiến độ dự án
+objectives:
+  - vi: Nói việc sẽ đang diễn ra ở một thời điểm tương lai bằng will be + V-ing.
+  - vi: Nói việc sẽ đã xong trước một mốc bằng will have + V3 và by + thời gian.
+  - vi: Báo cáo tiến độ dự án - meet a deadline, behind schedule, on track, launch a product.
+estimated_minutes: 20
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:people-relationships-review]
+items:
+  - item: en:item:future-continuous
+  - item: en:item:future-perfect
+  - item: en:item:by-deadline-time
+  - item: en:item:this-time-next-week
+  - item: en:item:will-you-be-ing
+  - item: en:item:launch-a-product
+  - item: en:item:meet-a-deadline
+  - item: en:item:behind-schedule
+  - item: en:item:on-track
+  - item: en:item:stakeholder
+  - item: en:item:deadline
+    role: reuse
+  - item: en:item:by-the-time
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn báo cáo được tiến độ một dự án như người đi làm thật - "Giờ này tuần sau tôi đang thuyết trình", "Trước thứ Sáu chúng ta sẽ làm xong" - và hiểu khi nào cần will be + V-ing, khi nào cần will have + V3.
+  - type: explain
+    text:
+      vi: "Will be + V-ing (tương lai tiếp diễn) tả một việc đang diễn ra dở dang tại một thời điểm tương lai: This time next week, I'll be presenting. Tiếng Việt nói \"giờ này tuần sau tôi đang thuyết trình\" - chữ \"đang\" chính là be + V-ing."
+  - type: explain
+    text:
+      vi: "Will have + V3 (tương lai hoàn thành) tả việc đã xong trước một mốc tương lai: By Friday, we'll have finished. Tiếng Việt dùng \"sẽ xong\", \"sẽ… rồi\"; tiếng Anh bắt buộc have + V3."
+  - type: explain
+    text:
+      vi: "By + mốc thời gian nghĩa là \"chậm nhất là\", rất hay đi với will have + V3. Đừng nhầm với until (kéo dài đến): I'll be working until six, nhưng I'll have finished by six."
+  - type: deep_explain
+    text:
+      vi: "Will be + V-ing còn dùng để hỏi kế hoạch một cách lịch sự: Will you be using the room? nghe nhẹ hơn Will you use…?, vì người hỏi không ép ai làm gì. Với will have + V3, bạn có thể đếm thời lượng đến một mốc: By June, I'll have worked here for five years. Sau mệnh đề by the time + hiện tại đơn, vế chính cũng thường dùng will have + V3: By the time you arrive, we'll have started."
+  - type: example
+    target: This time next week, I'll be presenting the new app to our stakeholders.
+    target_lang: en
+    translation:
+      vi: Giờ này tuần sau, tôi đang trình bày ứng dụng mới trước các bên liên quan.
+    note:
+      vi: Một thời điểm cụ thể (this time next week) + việc đang diễn ra → will be + V-ing.
+  - type: example
+    target: Don't worry - we'll have fixed all the bugs by Friday.
+    target_lang: en
+    translation:
+      vi: Đừng lo - trước thứ Sáu chúng tôi sẽ sửa xong hết lỗi.
+    note:
+      vi: Việc xong trước mốc (by Friday) → will have + V3 (fixed).
+  - type: example
+    target: We're slightly behind schedule, but we're still on track to launch the product in May.
+    target_lang: en
+    translation:
+      vi: Chúng ta đang hơi chậm tiến độ, nhưng vẫn kịp để ra mắt sản phẩm vào tháng Năm.
+    note:
+      vi: Behind schedule (chậm tiến độ) và on track (đúng hướng để đạt mục tiêu) không mâu thuẫn - chậm một chút nhưng vẫn kịp đích.
+  - type: example
+    target: Will you be joining the call with the client tomorrow?
+    target_lang: en
+    translation:
+      vi: Ngày mai anh có tham gia cuộc gọi với khách hàng không?
+    note:
+      vi: Hỏi kế hoạch một cách lịch sự bằng Will you be + V-ing.
+  - type: common_mistake
+    wrong: By Friday, I will have finish the report.
+    right: By Friday, I will have finished the report.
+    target_lang: en
+    note:
+      vi: Sau will have luôn là V3 (finished). Tiếng Việt không chia động từ nên người Việt hay để nguyên mẫu - hãy kiểm tra đuôi -ed hoặc dạng V3 bất quy tắc.
+  - type: common_mistake
+    wrong: This time tomorrow, I will presenting to the board.
+    right: This time tomorrow, I will be presenting to the board.
+    target_lang: en
+    note:
+      vi: "Thiếu be. \"Sẽ đang\" phải đủ will + be + V-ing."
+  - type: common_mistake
+    wrong: We must finish until Friday.
+    right: We must finish by Friday.
+    target_lang: en
+    note:
+      vi: "\"Chậm nhất là thứ Sáu\" dùng by. Until chỉ dùng cho việc kéo dài liên tục đến mốc (I'll be here until Friday)."
+  - type: summary
+    points:
+      - vi: "Will be + V-ing: sẽ đang làm vào một thời điểm tương lai (This time next week, I'll be flying)."
+      - vi: "Will have + V3: sẽ xong trước một mốc (By Friday, we'll have finished)."
+      - vi: "By + mốc = chậm nhất là; until + mốc = kéo dài đến."
+      - vi: Will you be + V-ing? là cách hỏi kế hoạch lịch sự.
+      - vi: "Từ vựng tiến độ: meet / miss a deadline, behind / ahead of schedule, on track, launch a product, stakeholder."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:wb-future-mcq-continuous-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:future-continuous
+    prompt:
+      stem: "\"At 3 p.m. tomorrow, I'll be interviewing a candidate.\" Câu này có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: k2r, text: "3 giờ chiều mai, tôi đang phỏng vấn một ứng viên.", lang: vi }
+        - { id: p8d, text: "Trước 3 giờ chiều mai, tôi sẽ phỏng vấn xong một ứng viên.", lang: vi }
+        - { id: w4h, text: "3 giờ chiều qua, tôi đang phỏng vấn một ứng viên.", lang: vi }
+        - { id: m6z, text: "Tôi sẽ được một ứng viên phỏng vấn lúc 3 giờ chiều mai.", lang: vi }
+    answer:
+      correct_option_id: k2r
+    explanation:
+      vi: Will be + V-ing tả việc đang diễn ra tại một thời điểm tương lai (3 p.m. tomorrow). "Phỏng vấn xong trước" phải là will have interviewed; người nói là người phỏng vấn, không phải bị phỏng vấn.
+    display_answer: "3 giờ chiều mai, tôi đang phỏng vấn một ứng viên."
+
+  - key: en:exercise:wb-future-mcq-perfect-form
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:future-perfect
+    prompt:
+      stem: "Chọn câu đúng: \"Trước cuối tháng, chúng tôi sẽ tuyển xong ba nhân viên mới.\""
+      stem_lang: vi
+      options:
+        - { id: t5v, text: "By the end of the month, we'll have hired three new staff.", lang: en }
+        - { id: a1n, text: "By the end of the month, we'll have hire three new staff.", lang: en }
+        - { id: g9c, text: "By the end of the month, we'll be hired three new staff.", lang: en }
+        - { id: x3e, text: "Until the end of the month, we'll have hired three new staff.", lang: en }
+    answer:
+      correct_option_id: t5v
+    explanation:
+      vi: Việc xong trước một mốc dùng will have + V3 (hired) và by. Have hire thiếu đuôi V3; be hired là bị động (bị tuyển); until nghĩa là "kéo dài đến", không phải "trước".
+    display_answer: "By the end of the month, we'll have hired three new staff."
+
+  - key: en:exercise:wb-future-listen-on-track
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:on-track
+    prompt:
+      audio_asset_id: null
+      fallback_text: We're a bit behind schedule, but we're still on track to meet the deadline.
+      options:
+        - { id: h7q, text: "Chúng ta hơi chậm tiến độ, nhưng vẫn đang kịp để đúng hạn.", lang: vi }
+        - { id: b2s, text: "Chúng ta nhanh hơn kế hoạch và chắc chắn sẽ kịp hạn.", lang: vi }
+        - { id: u6l, text: "Chúng ta hơi chậm tiến độ nên sẽ trễ hạn.", lang: vi }
+        - { id: e0f, text: "Chúng ta đang đi đúng đường ray, nhưng tàu bị trễ.", lang: vi }
+    answer:
+      correct_option_id: h7q
+    explanation:
+      vi: Behind schedule là chậm tiến độ, còn on track to meet the deadline là vẫn đang đi đúng hướng để kịp hạn. On track ở đây là thành ngữ, không phải "đường ray" thật.
+    display_answer: "Chúng ta hơi chậm tiến độ, nhưng vẫn đang kịp để đúng hạn."
+
+  - key: en:exercise:wb-future-fill-by-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:by-deadline-time
+    prompt:
+      template: "Could you send me the slides {{b1}} Wednesday? I need to check them before the meeting."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Bạn gửi tôi bản trình chiếu chậm nhất là thứ Tư được không?"
+        - "Gợi ý: giới từ hai chữ cái, nghĩa là \"chậm nhất là\"."
+    answer:
+      blanks:
+        b1: [by, before]
+    known_wrong:
+      - answer: until
+        feedback_vi: Until là "kéo dài đến". Hạn chót dùng by.
+        error_tag: by_until
+      - answer: on
+        feedback_vi: On Wednesday là "vào thứ Tư" - người nói cần nhận trước hạn, nên dùng by.
+        error_tag: by_until
+      - answer: till
+        feedback_vi: Till giống until - kéo dài đến. Hạn chót dùng by.
+        error_tag: by_until
+    explanation:
+      vi: Người nói cần bản trình chiếu chậm nhất vào thứ Tư (gửi sớm hơn cũng được), nên dùng by (hoặc before). Until chỉ dùng cho việc kéo dài liên tục.
+    display_answer: "Could you send me the slides by Wednesday? I need to check them before the meeting."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:wb-future-fill-will-have-finished
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:future-perfect
+    prompt:
+      template: "Don't call me at five. I {{b1}} be {{b2}} my presentation then. But by six, I'll have {{b3}} it."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [will, "'ll"]
+        b2: [giving, doing, rehearsing, practising, practicing]
+        b3: [finished, given, done, rehearsed, practised, practiced, completed]
+    known_wrong:
+      - answer: finish
+        feedback_vi: Sau will have cần V3 - finished.
+        error_tag: future_perfect_form
+      - answer: give
+        feedback_vi: Sau be cần V-ing (giving); sau have cần V3 (given).
+        error_tag: future_perfect_form
+      - answer: gave
+        feedback_vi: Gave là V2. Sau have cần V3 - given.
+        error_tag: past_participle
+    explanation:
+      vi: Lúc năm giờ việc thuyết trình đang diễn ra → will be + V-ing (giving). Đến sáu giờ việc đã xong → will have + V3 (finished / given).
+    display_answer: "Don't call me at five. I will be giving my presentation then. But by six, I'll have finished it."
+
+  - key: en:exercise:wb-future-translate-this-time-tomorrow
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:this-time-next-week
+    prompt:
+      source_text: Giờ này ngày mai, tôi đang bay sang Singapore.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - This time tomorrow, I'll be flying to Singapore.
+        - This time tomorrow I will be flying to Singapore.
+        - I'll be flying to Singapore this time tomorrow.
+        - This time tomorrow, I'll be on a flight to Singapore.
+        - This time tomorrow, I'll be on the plane to Singapore.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: This time tomorrow, I will flying to Singapore.
+        feedback_vi: Thiếu be - will be flying.
+        error_tag: future_continuous_form
+      - answer: This time tomorrow, I will fly to Singapore.
+        feedback_vi: Will fly chỉ là "sẽ bay". Việc đang diễn ra tại thời điểm đó cần will be flying.
+        error_tag: future_continuous_form
+    explanation:
+      vi: "\"Giờ này ngày mai\" là this time tomorrow; \"đang bay\" ở tương lai là will be + V-ing - I'll be flying."
+    display_answer: This time tomorrow, I'll be flying to Singapore.
+
+  - key: en:exercise:wb-future-translate-meet-deadline
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:meet-a-deadline
+    prompt:
+      source_text: Nếu chúng ta không thuê thêm người, chúng ta sẽ trễ hạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - If we don't hire more people, we'll miss the deadline.
+        - If we don't hire more staff, we'll miss the deadline.
+        - If we do not hire more people, we will miss the deadline.
+        - Unless we hire more people, we'll miss the deadline.
+        - If we don't take on more people, we'll miss the deadline.
+        - If we don't hire more people, we won't meet the deadline.
+        - If we don't hire more staff, we won't meet the deadline.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: If we don't hire more people, we'll lose the deadline.
+        feedback_vi: Trễ hạn là miss the deadline, không phải lose.
+        error_tag: deadline_collocation
+      - answer: If we won't hire more people, we'll miss the deadline.
+        feedback_vi: Sau if dùng hiện tại đơn - If we don't hire.
+        error_tag: conditional_will
+      - answer: If we don't hire more people, we'll be deadline.
+        feedback_vi: Deadline chỉ là danh từ, không dùng như động từ hay tính từ như "bị deadline".
+        error_tag: deadline_collocation
+    explanation:
+      vi: Trễ hạn là miss the deadline (hoặc won't meet the deadline). Câu điều kiện loại 1 - vế if dùng hiện tại đơn, vế chính dùng will.
+    display_answer: If we don't hire more people, we'll miss the deadline.
+
+  # ---------------- application ----------------
+  - key: en:exercise:wb-future-order-will-have-launched
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:launch-a-product
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Đến tháng Mười Hai, chúng tôi sẽ ra mắt xong ba sản phẩm.\""
+      tokens:
+        - { id: w-launched, text: launched }
+        - { id: w-products, text: products }
+        - { id: w-have, text: have }
+        - { id: w-by, text: By }
+        - { id: w-we, text: "we'll" }
+        - { id: w-three, text: three }
+        - { id: w-december, text: "December," }
+        - { id: w-launch, text: launch }
+    answer:
+      orders:
+        - [w-by, w-december, w-we, w-have, w-launched, w-three, w-products]
+    explanation:
+      vi: Mốc (By December) đứng đầu, rồi will have + V3 (launched). Launch nguyên mẫu là token nhiễu vì sau have phải là V3.
+    display_answer: "By December, we'll have launched three products."
+
+  - key: en:exercise:wb-future-translate-stakeholders-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:stakeholder
+    prompt:
+      source_text: By the time the stakeholders arrive, we'll have set up the room.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trước khi các bên liên quan đến, chúng ta sẽ chuẩn bị xong phòng.
+        - Trước khi các bên liên quan đến, chúng ta sẽ sắp xếp xong phòng.
+        - Trước khi các bên liên quan đến, chúng tôi sẽ chuẩn bị xong phòng.
+        - Trước khi các bên liên quan tới, chúng ta sẽ chuẩn bị xong phòng.
+        - Lúc các bên liên quan đến, chúng ta sẽ chuẩn bị xong phòng rồi.
+        - Lúc các bên liên quan đến thì chúng ta đã chuẩn bị xong phòng rồi.
+        - Khi các bên liên quan đến, chúng ta sẽ chuẩn bị xong phòng rồi.
+        - Khi các bên liên quan đến thì chúng ta đã chuẩn bị xong phòng.
+        - Đến lúc các bên liên quan đến, chúng ta sẽ chuẩn bị xong phòng rồi.
+        - Trước khi các bên liên quan đến, chúng ta sẽ bố trí xong phòng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Khi các bên liên quan đến, chúng ta sẽ chuẩn bị phòng.
+        feedback_vi: Will have set up nghĩa là việc đã xong trước khi họ đến - cần có "xong / rồi".
+        error_tag: future_perfect_meaning
+    explanation:
+      vi: By the time + hiện tại đơn là "trước khi / đến lúc"; will have set up là "sẽ chuẩn bị xong (rồi)". Stakeholders là các bên liên quan.
+    display_answer: Trước khi các bên liên quan đến, chúng ta sẽ chuẩn bị xong phòng.
+
+  - key: en:exercise:wb-future-mcq-situation-polite
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:will-you-be-ing
+    prompt:
+      stem: Bạn muốn biết chiều nay sếp có dùng phòng họp lớn không (để bạn đặt phòng cho khách) mà không làm sếp thấy bị hỏi dồn. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: c4j, text: "Will you be using the big meeting room this afternoon?", lang: en }
+        - { id: r8y, text: "Will you using the big meeting room this afternoon?", lang: en }
+        - { id: l1o, text: "Will you have used the big meeting room this afternoon?", lang: en }
+        - { id: f5b, text: "You use the big meeting room this afternoon?", lang: en }
+    answer:
+      correct_option_id: c4j
+    explanation:
+      vi: Will you be + V-ing hỏi kế hoạch một cách nhẹ nhàng, không ép người nghe. Will you using thiếu be; will have used hỏi việc đã xong - không hợp; câu cuối sai ngữ pháp và cộc lốc.
+    display_answer: "Will you be using the big meeting room this afternoon?"
+
+  - key: en:exercise:wb-future-translate-ten-years
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:future-perfect
+    prompt:
+      source_text: Đến tháng Sáu năm sau, chị ấy sẽ làm việc ở công ty này được mười năm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - By June next year, she'll have worked at this company for ten years.
+        - By June next year, she will have worked at this company for ten years.
+        - By next June, she'll have worked at this company for ten years.
+        - By next June, she will have worked at this company for ten years.
+        - By June next year, she'll have worked for this company for ten years.
+        - By June next year, she will have worked for this company for ten years.
+        - By June next year, she'll have been working at this company for ten years.
+        - By June next year, she will have been working at this company for ten years.
+        - By next June, she will have worked for this company for ten years.
+        - She'll have worked at this company for ten years by June next year.
+        - She will have worked at this company for ten years by June next year.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: By June next year, she will have work at this company for ten years.
+        feedback_vi: Sau will have cần V3 - worked.
+        error_tag: future_perfect_form
+      - answer: By June next year, she will work at this company for ten years.
+        feedback_vi: Đếm thời lượng đến một mốc tương lai cần will have + V3.
+        error_tag: future_perfect_form
+      - answer: Until June next year, she will have worked at this company for ten years.
+        feedback_vi: "\"Đến (mốc đó)\" khi đếm thời lượng dùng by, không dùng until."
+        error_tag: by_until
+    explanation:
+      vi: Đếm thời lượng tính đến một mốc tương lai dùng by + mốc và will have + V3 (worked) + for + khoảng thời gian.
+    display_answer: By June next year, she'll have worked at this company for ten years.
