@@ -9,7 +9,7 @@ export const inputClasses = (invalid = false) =>
   cn(
     'block w-full min-h-12 rounded-full border bg-surface-solid px-5 text-base text-text placeholder:text-muted',
     'transition-[border-color,box-shadow] duration-200 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/45',
-    invalid ? 'border-error' : 'border-border',
+    invalid ? 'border-error' : 'border-input-border',
   );
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(function Input({ className, invalid = false, ...rest }, ref) {

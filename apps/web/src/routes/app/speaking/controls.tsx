@@ -63,7 +63,7 @@ export function SelectField({
         id={id}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className={cn('min-h-11 w-full rounded-2xl border border-border bg-surface-solid px-3 text-[15px] text-text', FOCUS_RING)}
+        className={cn('min-h-11 w-full rounded-2xl border border-input-border bg-surface-solid px-3 text-[15px] text-text', FOCUS_RING)}
       >
         {children}
       </select>
