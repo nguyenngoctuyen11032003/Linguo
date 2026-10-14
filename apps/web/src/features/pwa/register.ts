@@ -107,12 +107,14 @@ export async function registerServiceWorker(options: RegisterOptions = {}): Prom
   startNotificationClickListener(container);
   const base = swBasePath(options.base ?? import.meta.env.BASE_URL);
 
-  let registration: ServiceWorkerRegistration;
+  let registration: ServiceWorkerRegistration | undefined;
   try {
     registration = await container.register(`${base}sw.js`, { scope: base });
   } catch {
     return null;
   }
+  // Blocked service workers (Playwright's `serviceWorkers: 'block'`, some privacy modes) can resolve to nothing.
+  if (!registration) return null;
 
   // A worker that finished installing while a controller exists is an update waiting for the learner.
   if (registration.waiting && container.controller) swUpdateStore.setWaiting(registration.waiting);

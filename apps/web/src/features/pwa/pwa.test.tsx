@@ -90,6 +90,12 @@ describe('registerServiceWorker', () => {
     expect(await registerServiceWorker({ enabled: true, base: '/', container: asContainer(c) })).toBeNull();
   });
 
+  it('resolves null when a blocked registration resolves to nothing', async () => {
+    const c = new FakeContainer();
+    c.register.mockResolvedValueOnce(undefined as unknown as FakeRegistration);
+    expect(await registerServiceWorker({ enabled: true, base: '/', container: asContainer(c) })).toBeNull();
+  });
+
   it('normalises the base path', () => {
     expect(swBasePath('/')).toBe('/');
     expect(swBasePath('/Linguo')).toBe('/Linguo/');
