@@ -7,6 +7,9 @@ import { AppRoute } from '@/routes/app/AppRoute';
 import { ComingSoonPage } from '@/routes/app/ComingSoonPage';
 import { DiagnosticPage } from '@/routes/app/diagnostic/DiagnosticPage';
 import { DiagnosticReportPage } from '@/routes/app/diagnostic/DiagnosticReportPage';
+import { ExamHubPage } from '@/routes/app/exam/ExamHubPage';
+import { ExamResultPage } from '@/routes/app/exam/ExamResultPage';
+import { ExamRunnerPage } from '@/routes/app/exam/ExamRunnerPage';
 import { HomePage } from '@/routes/app/HomePage';
 import { LearnPage } from '@/routes/app/learn/LearnPage';
 import { LessonPage } from '@/routes/app/lesson/LessonPage';
@@ -74,6 +77,8 @@ const routeTree: RouteObject[] = [
           { path: 'kiem-tra/:pathId', element: <DiagnosticPage /> },
           { path: 'kiem-tra/:pathId/ket-qua', element: <DiagnosticReportPage /> },
           { path: 'hoc-tap/bai/:lessonId', element: <LessonPage /> },
+          { path: 'luyen-thi/lam-bai/:attemptId', element: <ExamRunnerPage /> },
+          { path: 'luyen-thi/ket-qua/:attemptId', element: <ExamResultPage /> },
           {
             element: <AppLayout />,
             handle: MAIN_LAYOUT,
@@ -83,7 +88,7 @@ const routeTree: RouteObject[] = [
               { path: 'on-tap', element: <ReviewPage /> },
               { path: 'phien-hoc', element: <SessionPage /> },
               { path: 'gia-su', element: <TutorPage /> },
-              { path: 'luyen-thi', element: <ComingSoonPage title="Luyện thi" /> },
+              { path: 'luyen-thi', element: <ExamHubPage /> },
               { path: 'tien-do', element: <ComingSoonPage title="Tiến độ" /> },
               { path: 'cai-dat', element: <SettingsPage /> },
             ],

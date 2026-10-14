@@ -2,7 +2,7 @@ import { randomUUID } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { expect, type Page } from '@playwright/test';
-import { DEFAULT_RUBRIC, gradeResponse, sessionPlanSchema, type ExerciseResponse, type GradeInput } from '@linguo/shared';
+import { DEFAULT_RUBRIC, gradeExamAnswer, gradeResponse, sessionPlanSchema, type ExerciseResponse, type GradeInput } from '@linguo/shared';
 
 export const SUPABASE_URL = 'https://e2e.invalid';
 export const USER_ID = '11111111-1111-4111-8111-111111111111';
@@ -1354,12 +1354,372 @@ function createSessionBackend(opts: SessionMockOptions = {}) {
 }
 // ==== END session planner mocks ==================================================================================
 
+// ==== exam practice mocks (spec 9, X5) ===========================================================================
+
+const EXAM_BUNDLE = JSON.parse(SEED_SQL.slice(SEED_SQL.indexOf('$exam$') + 6, SEED_SQL.lastIndexOf('$exam$'))) as { forms: Row[] };
+const EXAM_SECTION_ORDER = ['listening', 'reading', 'writing'] as const;
+const EXAM_FAMILY_ORDER = ['topik_i', 'topik_ii', 'cefr'] as const;
+const EXAM_GRACE_MS = 30_000;
+
+/** A demo exam form of supabase/seed.sql by key, e.g. `ko:exam:topik-i-mock-1`, with its questions and keys. */
+export function examForm(key: string): Row {
+  const form = EXAM_BUNDLE.forms.find((f) => f.key === key);
+  if (!form) throw new Error(`demo exam form ${key} missing from supabase/seed.sql`);
+  return form;
+}
+
+export interface ExamMockOptions {
+  /** Overrides the length of a timed full mock (default: the form's time limits). */
+  deadlineSeconds?: number;
+}
+
+interface MockExamAttempt {
+  id: string;
+  pathId: string;
+  form: Row;
+  mode: 'full' | 'section' | 'question_type';
+  section: string | null;
+  questionType: string | null;
+  questionIds: string[];
+  status: 'in_progress' | 'submitted' | 'expired';
+  startedAt: string;
+  deadlineAt: string | null;
+  submittedAt: string | null;
+  result: Row | null;
+  answers: Map<string, { answer: string | null; flagged: boolean; key: string; payload: string }>;
+}
+
+export interface MockExamSave {
+  attemptId: string;
+  questionId: string;
+  answer: string | null;
+  flagged: boolean;
+}
+
+/** Stateful in-memory stand-in for the exam RPCs of spec 9 §3, graded with the shared grader like submit_exam. */
+function createExamBackend(paths: Array<Record<string, unknown>>, opts: ExamMockOptions = {}) {
+  const attempts: MockExamAttempt[] = [];
+  const saves: MockExamSave[] = [];
+  const allQuestions = () => EXAM_BUNDLE.forms.flatMap((f) => (f.questions as Row[]).map((q) => ({ form: f, q })));
+  const questionById = (id: string) => allQuestions().find((x) => x.q.id === id)!.q;
+  const sectionRank = (s: string) => EXAM_SECTION_ORDER.indexOf(s as (typeof EXAM_SECTION_ORDER)[number]);
+  const overdue = (a: MockExamAttempt) => a.deadlineAt !== null && Date.now() > Date.parse(a.deadlineAt) + EXAM_GRACE_MS;
+
+  const structureWarning = (goal: unknown, family: string) =>
+    goal === 'topik_ii' && family === 'topik_i'
+      ? 'Đề này theo cấu trúc TOPIK I, khác mục tiêu TOPIK II của lộ trình. Kết quả chỉ để tham khảo.'
+      : goal === 'topik_i' && family === 'topik_ii'
+        ? 'Đề này theo cấu trúc TOPIK II, khác mục tiêu TOPIK I của lộ trình. Kết quả chỉ để tham khảo.'
+        : goal === 'cefr' && family !== 'cefr'
+          ? 'Đề này không theo khung CEFR, khác mục tiêu CEFR của lộ trình. Kết quả chỉ để tham khảo.'
+          : null;
+
+  const servedPrompt = (q: Row) => {
+    const prompt: Row = { ...q.prompt, audio_asset_id: q.prompt.audio_asset_id ?? null };
+    if (q.script && !prompt.audio_asset_id) prompt.tts_text = q.script;
+    return prompt;
+  };
+
+  function attemptJson(a: MockExamAttempt): Row {
+    const path = paths.find((p) => p.id === a.pathId);
+    return {
+      attempt_id: a.id,
+      form_id: a.form.id,
+      form_title_vi: a.form.title_vi,
+      family: a.form.family,
+      mode: a.mode,
+      section: a.section,
+      question_type: a.questionType,
+      status: a.status,
+      started_at: a.startedAt,
+      deadline_at: a.deadlineAt,
+      server_now: new Date().toISOString(),
+      questions: a.questionIds.map((id, i) => {
+        const q = questionById(id);
+        const saved = a.answers.get(id);
+        return {
+          question_id: id,
+          seq: i + 1,
+          section: q.section,
+          kind: q.kind,
+          question_type: q.question_type,
+          points: q.points,
+          prompt: servedPrompt(q),
+          answer: saved?.answer ?? null,
+          flagged: saved?.flagged ?? false,
+        };
+      }),
+      structure_warning_vi: structureWarning(path?.goal_type, a.form.family),
+    };
+  }
+
+  /** Port of public.exam_build_result. */
+  function buildResult(a: MockExamAttempt, status: 'submitted' | 'expired'): Row {
+    const form = a.form;
+    const topikFull = (form.family === 'topik_i' || form.family === 'topik_ii') && a.mode === 'full';
+    const review = a.questionIds.map((id, i) => {
+      const q = questionById(id);
+      const answer = a.answers.get(id)?.answer ?? null;
+      const prompt = servedPrompt(q);
+      if (q.script) prompt.script = q.script;
+      return {
+        question_id: id,
+        seq: i + 1,
+        section: q.section,
+        kind: q.kind,
+        question_type: q.question_type,
+        points: q.points,
+        prompt,
+        answer,
+        is_correct: gradeExamAnswer(q.kind, answer, q.answer),
+        correct_answer: q.kind === 'mcq' ? q.answer : q.kind === 'short_text' ? q.answer[0] : null,
+        explanation: q.explanation,
+        rubric: q.rubric ?? null,
+        sample_answer: q.sample_answer ?? null,
+      };
+    });
+    const sections = EXAM_SECTION_ORDER.filter((s) => review.some((r) => r.section === s)).map((section) => {
+      const rows = review.filter((r) => r.section === section);
+      const points = rows.reduce((n, r) => n + (r.is_correct ? r.points : 0), 0);
+      const max = rows.reduce((n, r) => n + (r.kind !== 'essay' ? r.points : 0), 0);
+      const essay = rows.reduce((n, r) => n + (r.kind === 'essay' ? r.points : 0), 0);
+      const sectionMax = form.scoring.section_max?.[section];
+      const scaled = topikFull && typeof sectionMax === 'number' ? Math.round((max + essay > 0 ? points / (max + essay) : 0) * sectionMax * 10) / 10 : null;
+      return { section, points, max, correct: rows.filter((r) => r.is_correct).length, total: rows.filter((r) => r.kind !== 'essay').length, scaled, essay };
+    });
+    const byType = [...new Set(review.filter((r) => r.kind !== 'essay').map((r) => `${r.section}|${r.question_type}`))]
+      .map((k) => k.split('|') as [string, string])
+      .sort((x, y) => sectionRank(x[0]) - sectionRank(y[0]) || x[1].localeCompare(y[1]))
+      .map(([section, type]) => {
+        const rows = review.filter((r) => r.kind !== 'essay' && r.question_type === type && r.section === section);
+        return {
+          question_type: type,
+          section,
+          points: rows.reduce((n, r) => n + (r.is_correct ? r.points : 0), 0),
+          max: rows.reduce((n, r) => n + r.points, 0),
+          correct: rows.filter((r) => r.is_correct).length,
+          total: rows.length,
+        };
+      });
+    let estimated: Row | null = null;
+    if (topikFull && form.scoring.bands.length > 0) {
+      const scaledTotal = Math.round(sections.reduce((n, s) => n + (s.scaled ?? 0), 0) * 10) / 10;
+      const band = [...form.scoring.bands].sort((x: Row, y: Row) => y.min_total - x.min_total).find((b: Row) => b.min_total <= scaledTotal);
+      const hasEssay = sections.some((s) => s.essay > 0);
+      estimated = {
+        level_code: band?.level_code ?? null,
+        scaled_total: scaledTotal,
+        label_vi: `${band ? '' : 'Chưa đạt bậc thấp nhất. '}Quy đổi tham khảo, không phải kết quả chính thức.${hasEssay ? ' Phần viết luận chưa tính điểm.' : ''}`,
+      };
+    }
+    const cefr =
+      form.family === 'cefr' && a.mode !== 'question_type' && typeof form.scoring.pass_ratio === 'number'
+        ? sections.filter((s) => s.max > 0).map((s) => ({ section: s.section, level_code: form.level_to, reached: s.points / s.max >= form.scoring.pass_ratio }))
+        : null;
+    return {
+      attempt_id: a.id,
+      form_id: form.id,
+      form_title_vi: form.title_vi,
+      family: form.family,
+      mode: a.mode,
+      status,
+      started_at: a.startedAt,
+      submitted_at: new Date().toISOString(),
+      total: sections.reduce((n, s) => n + s.points, 0),
+      max: sections.reduce((n, s) => n + s.max, 0),
+      by_section: sections.map(({ essay: _essay, ...s }) => s), // eslint-disable-line @typescript-eslint/no-unused-vars
+      by_question_type: byType,
+      estimated_level: estimated,
+      cefr_sections: cefr,
+      scoring_verified: form.scoring.verified,
+      scoring_source_vi: form.scoring.source_note_vi,
+      review,
+    };
+  }
+
+  function close(a: MockExamAttempt, status: 'submitted' | 'expired'): Row {
+    if (a.status === 'in_progress') {
+      a.result = buildResult(a, status);
+      a.status = status;
+      a.submittedAt = a.result.submitted_at;
+    }
+    return a.result!;
+  }
+
+  const own = (id: unknown) => attempts.find((a) => a.id === id);
+
+  function handle(pathname: string, b: Row): { status?: number; json: unknown } | null {
+    switch (pathname) {
+      case '/rest/v1/rpc/list_exam_forms':
+        return {
+          json: EXAM_BUNDLE.forms
+            .filter((f) => f.language_code === b.p_language)
+            .sort((x, y) => EXAM_FAMILY_ORDER.indexOf(x.family) - EXAM_FAMILY_ORDER.indexOf(y.family) || x.key.localeCompare(y.key))
+            .map((f) => {
+              const qs = f.questions as Row[];
+              const last = attempts
+                .filter((a) => a.form.id === f.id && a.status !== 'in_progress')
+                .sort((x, y) => String(y.submittedAt).localeCompare(String(x.submittedAt)))[0];
+              return {
+                form_id: f.id,
+                key: f.key,
+                language_code: f.language_code,
+                family: f.family,
+                title_vi: f.title_vi,
+                description_vi: f.description_vi,
+                level_from: f.level_from,
+                level_to: f.level_to,
+                is_demo: f.is_demo,
+                sections: EXAM_SECTION_ORDER.filter((s) => qs.some((q) => q.section === s)).map((s) => ({
+                  section: s,
+                  question_count: qs.filter((q) => q.section === s).length,
+                  minutes: f.time_limits[s] ?? null,
+                })),
+                question_types: [...new Set(qs.map((q) => `${q.section}|${q.question_type}`))]
+                  .map((k) => k.split('|') as [string, string])
+                  .sort((x, y) => sectionRank(x[0]) - sectionRank(y[0]) || x[1].localeCompare(y[1]))
+                  .map(([section, type]) => ({ question_type: type, section, count: qs.filter((q) => q.question_type === type).length })),
+                scoring_verified: f.scoring.verified,
+                last_attempt: last ? { attempt_id: last.id, submitted_at: last.submittedAt, total: last.result!.total, max: last.result!.max } : null,
+              };
+            }),
+        };
+      case '/rest/v1/rpc/start_exam': {
+        const path = paths.find((p) => p.id === b.p_path_id && p.status !== 'archived');
+        if (!path) return rpcError('path_not_found');
+        const form = EXAM_BUNDLE.forms.find((f) => f.id === b.p_form_id);
+        if (!form) return rpcError('form_not_found');
+        if (form.language_code !== path.language_code) return rpcError('language_mismatch');
+        const mode = b.p_mode as MockExamAttempt['mode'];
+        if (
+          !['full', 'section', 'question_type'].includes(mode) ||
+          (mode === 'section' && !EXAM_SECTION_ORDER.includes(b.p_section)) ||
+          (mode === 'question_type' && !b.p_question_type)
+        ) {
+          return rpcError('invalid_mode');
+        }
+        const questionType = mode === 'question_type' ? String(b.p_question_type) : null;
+        const open = attempts.find((a) => a.pathId === path.id && a.status === 'in_progress');
+        if (open) {
+          if (!overdue(open) && open.form.id === form.id && open.mode === mode && (mode !== 'section' || open.section === b.p_section) && open.questionType === questionType) {
+            return { json: attemptJson(open) };
+          }
+          close(open, 'expired');
+        }
+        let ids: string[];
+        if (mode === 'question_type') {
+          ids = allQuestions()
+            .filter((x) => x.form.family === form.family && x.form.language_code === form.language_code && x.q.question_type === questionType)
+            .slice(0, 10)
+            .map((x) => x.q.id);
+        } else {
+          ids = (form.questions as Row[])
+            .filter((q) => mode === 'full' || q.section === b.p_section)
+            .sort((x, y) => sectionRank(x.section) - sectionRank(y.section) || x.seq - y.seq)
+            .map((q) => q.id);
+        }
+        if (ids.length === 0) return rpcError('invalid_mode');
+        const sections = new Set(ids.map((id) => questionById(id).section as string));
+        const minutes = mode === 'full' ? [...sections].reduce((n, s) => n + (form.time_limits[s] ?? 0), 0) : 0;
+        const now = Date.now();
+        const lengthMs = opts.deadlineSeconds !== undefined ? opts.deadlineSeconds * 1000 : minutes * 60_000;
+        const attempt: MockExamAttempt = {
+          id: randomUUID(),
+          pathId: String(path.id),
+          form,
+          mode,
+          section: mode === 'section' ? String(b.p_section) : mode === 'question_type' ? questionById(ids[0]!).section : null,
+          questionType,
+          questionIds: ids,
+          status: 'in_progress',
+          startedAt: new Date(now).toISOString(),
+          deadlineAt: minutes > 0 ? new Date(now + lengthMs).toISOString() : null,
+          submittedAt: null,
+          result: null,
+          answers: new Map(),
+        };
+        attempts.push(attempt);
+        return { json: attemptJson(attempt) };
+      }
+      case '/rest/v1/rpc/get_exam_attempt': {
+        const a = own(b.p_attempt_id);
+        if (!a) return rpcError('attempt_not_found');
+        if (a.status !== 'in_progress') return { json: a.result };
+        if (overdue(a)) return { json: close(a, 'expired') };
+        return { json: attemptJson(a) };
+      }
+      case '/rest/v1/rpc/save_exam_answer': {
+        const a = own(b.p_attempt_id);
+        if (!a) return rpcError('attempt_not_found');
+        const answer = b.p_answer === '' ? null : ((b.p_answer as string | null) ?? null);
+        const flagged = Boolean(b.p_flagged);
+        const payload = JSON.stringify([b.p_question_id, answer, flagged]);
+        const now = new Date().toISOString();
+        const prev = [...a.answers.values()].find((x) => x.key === b.p_idempotency_key);
+        if (prev) {
+          if (prev.payload === payload) return { json: { saved: true, status: a.status, server_now: now, replayed: true } };
+          return rpcError('idempotency_conflict');
+        }
+        if (a.status === 'submitted') return rpcError('attempt_closed');
+        if (a.status === 'in_progress' && overdue(a)) close(a, 'expired');
+        if (a.status === 'expired') return { json: { saved: false, status: 'expired', server_now: now, replayed: false } };
+        if (!a.questionIds.includes(String(b.p_question_id))) return rpcError('question_not_in_attempt');
+        a.answers.set(String(b.p_question_id), { answer, flagged, key: String(b.p_idempotency_key), payload });
+        saves.push({ attemptId: a.id, questionId: String(b.p_question_id), answer, flagged });
+        return { json: { saved: true, status: 'in_progress', server_now: now, replayed: false } };
+      }
+      case '/rest/v1/rpc/submit_exam': {
+        const a = own(b.p_attempt_id);
+        if (!a) return rpcError('attempt_not_found');
+        if (a.status !== 'in_progress') return { json: a.result };
+        return { json: close(a, overdue(a) ? 'expired' : 'submitted') };
+      }
+      case '/rest/v1/rpc/exam_history': {
+        if (!paths.some((p) => p.id === b.p_path_id)) return rpcError('path_not_found');
+        const limit = Math.min(Math.max(Number(b.p_limit ?? 20), 1), 100);
+        return {
+          json: attempts
+            .filter((a) => a.pathId === b.p_path_id)
+            .sort((x, y) => y.startedAt.localeCompare(x.startedAt))
+            .slice(0, limit)
+            .map((a) => ({
+              attempt_id: a.id,
+              form_title_vi: a.form.title_vi,
+              family: a.form.family,
+              mode: a.mode,
+              section: a.section,
+              status: a.status,
+              started_at: a.startedAt,
+              submitted_at: a.submittedAt,
+              total: a.result?.total ?? null,
+              max: a.result?.max ?? null,
+              estimated_level_code: a.result?.estimated_level?.level_code ?? null,
+              scoring_verified: a.form.scoring.verified,
+            })),
+        };
+      }
+    }
+    return null;
+  }
+
+  return {
+    handle,
+    controls: {
+      saves: () => [...saves],
+      attempts: () => attempts.map((a) => ({ id: a.id, mode: a.mode, status: a.status, questionIds: [...a.questionIds] })),
+    },
+  };
+}
+// ==== END exam practice mocks ====================================================================================
+
 interface MockOptions {
   /** AI tutor function and RPCs (spec 5). */
   ai?: AiMockOptions;
   displayName?: string;
   /** Placement test backend (spec 4). */
   diagnostic?: DiagnosticMockOptions;
+  /** Exam practice RPCs (spec 9). */
+  exam?: ExamMockOptions;
   /** `uuid`: create_learning_path returns a UUID id like the real RPC (default `path-<lang>`). */
   pathIds?: 'slug' | 'uuid';
   /** Learning path rows; defaults to one English path so existing app tests keep their home screen. */
@@ -1385,6 +1745,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
   const ai = createAiBackend(opts.ai);
   const planner = createPlannerBackend(paths, opts.planner); // spec 6, P3
   const sessions = createSessionBackend(opts.session);
+  const exams = createExamBackend(paths, opts.exam); // spec 9
 
   await page.route(`${SUPABASE_URL}/**`, async (route) => {
     const url = new URL(route.request().url());
@@ -1454,7 +1815,8 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
           diagnostic.handle(url.pathname, body()) ??
           ai.handle(url.pathname, body()) ??
           planner.handle(url.pathname, body()) ??
-          sessions.handle(url.pathname, body()))
+          sessions.handle(url.pathname, body()) ??
+          exams.handle(url.pathname, body()))
         : null;
     if (lessonReply) {
       if (lessonReply.status === 204) return route.fulfill({ status: 204, body: '' });
@@ -1471,6 +1833,7 @@ export async function mockSupabase(page: Page, opts: MockOptions = {}) {
     ai: ai.controls,
     planner: planner.controls,
     sessionUpdates: sessions.updates,
+    exam: exams.controls,
     paths: () => paths.map((p) => ({ ...p })),
   };
 }

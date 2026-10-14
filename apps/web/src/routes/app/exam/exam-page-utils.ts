@@ -1,0 +1,37 @@
+import type { ExamFamily, ExamMode, ExamSection, GoalType } from '@linguo/shared';
+
+/** The exam family a path goal prepares for, if any: the hub filter starts there. */
+export function goalFamily(goal: GoalType | null | undefined): ExamFamily | null {
+  if (goal === 'topik_i' || goal === 'topik_ii' || goal === 'cefr') return goal;
+  return null;
+}
+
+/**
+ * PRD §9.2 warning on a hub card when the form does not match the path goal. Mirrors
+ * public.exam_structure_warning (supabase/migrations/20261015000200_exams.sql), which start_exam returns as
+ * structure_warning_vi once the attempt exists.
+ */
+export function structureWarning(goal: GoalType | null | undefined, family: ExamFamily): string | null {
+  if (goal === 'topik_ii' && family === 'topik_i') {
+    return 'Đề này theo cấu trúc TOPIK I, khác mục tiêu TOPIK II của lộ trình. Kết quả chỉ để tham khảo.';
+  }
+  if (goal === 'topik_i' && family === 'topik_ii') {
+    return 'Đề này theo cấu trúc TOPIK II, khác mục tiêu TOPIK I của lộ trình. Kết quả chỉ để tham khảo.';
+  }
+  if (goal === 'cefr' && family !== 'cefr') {
+    return 'Đề này không theo khung CEFR, khác mục tiêu CEFR của lộ trình. Kết quả chỉ để tham khảo.';
+  }
+  return null;
+}
+
+/** Analytics props of exam_started / exam_completed (spec 9 §4): family, mode and section only. */
+export function examEventProps(a: { family: ExamFamily; mode: ExamMode; section?: ExamSection | null }): Record<string, string> {
+  return a.section ? { family: a.family, mode: a.mode, section: a.section } : { family: a.family, mode: a.mode };
+}
+
+/** Plays allowed per listening question: twice in a timed full mock, unlimited in practice (spec 9 §4). */
+export function listenLimitFor(mode: ExamMode): number | null {
+  return mode === 'full' ? 2 : null;
+}
+
+export const EXAM_HUB_PATH = '/app/luyen-thi';
