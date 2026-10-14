@@ -19,7 +19,11 @@ async function setup(page: Page, path: Record<string, unknown>) {
 async function openLesson(page: Page, lessonId: string) {
   await page.goto(`/app/hoc-tap/bai/${lessonId}`);
   // Loading waits for the profile, the paths and two RPCs; allow for slow CI devices.
-  await expect(page.getByText(DEMO_LABEL).first()).toBeVisible({ timeout: 15_000 });
+  // The exit button marks the lesson page (also shown while loading); its h1 appears once loaded.
+  await expect(page.getByRole('button', { name: 'Thoát bài học' })).toBeVisible({ timeout: 15_000 });
+  await expect(heading(page)).toBeVisible({ timeout: 15_000 });
+  // The seeded lessons are reviewed (demo: false), so no demo badge.
+  await expect(page.getByText(DEMO_LABEL)).toHaveCount(0);
 }
 
 const heading = (page: Page) => page.getByRole('heading', { level: 1 });

@@ -83,7 +83,8 @@ test('takes a TOPIK I mock from the hub to the result', async ({ page }) => {
   await expect(page.getByRole('heading', { level: 1, name: 'Kết quả bài luyện' })).toBeVisible();
   const max = TOPIK_I.questions.reduce((n: number, q: Row) => n + q.points, 0);
   await expect(page.getByText(`${q1.points}/${max}`, { exact: true })).toBeVisible();
-  await expect(page.getByText('Thang điểm chưa được đối chiếu với quy chế hiện hành')).toBeVisible();
+  // TOPIK I bands are verified against the official notice (scoring.verified: true).
+  await expect(page.getByText('Thang điểm chưa được đối chiếu với quy chế hiện hành')).toHaveCount(0);
   await expect(page.getByText('Quy đổi tham khảo, không phải kết quả chính thức').first()).toBeVisible();
   await expect(page.getByRole('heading', { level: 2, name: 'Xem lại đáp án' })).toBeVisible();
   await expectNoHorizontalScroll(page);
