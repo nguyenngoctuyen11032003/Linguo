@@ -45,7 +45,7 @@ describe('HomePage', () => {
     const row = screen.getByRole('link', { name: /Lộ trình của bạn/ });
     expect(row).toHaveAttribute('href', '/app/hoc-tap');
     expect(row).toHaveTextContent('A2 → B1');
-    expect(row).toHaveTextContent('Khoảng 43–69 tuần');
+    expect(row).toHaveTextContent('Khoảng 10–16 tháng');
     expect(screen.queryByText(/Chưa đủ dữ liệu/)).not.toBeInTheDocument();
     expect(screen.queryByRole('heading', { level: 2, name: /Tiếng Anh/ })).not.toBeInTheDocument();
   });

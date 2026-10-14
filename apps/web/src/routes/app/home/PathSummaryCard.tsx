@@ -4,6 +4,7 @@ import { GOAL_LABELS, LANGUAGES, LEVEL_INFO, type LevelCode } from '@linguo/shar
 import { Button } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { EstimateSummary } from '@/features/learning-paths/components/EstimateSummary';
+import { formatEstimate } from '@/features/learning-paths/format-estimate';
 import type { LearningPath } from '@/features/learning-paths/service';
 
 interface Props {
@@ -22,7 +23,7 @@ export function PathSummaryCard({ path, onResume, resuming, focusRef }: Props) {
   const from = LEVEL_INFO[path.currentLevel as LevelCode].label;
   const to = LEVEL_INFO[path.targetLevel as LevelCode].label;
   const { weeksMin, weeksMax } = path.estimate;
-  const weeks = weeksMin === weeksMax ? `Khoảng ${weeksMin} tuần` : `Khoảng ${weeksMin}–${weeksMax} tuần`;
+  const weeks = formatEstimate(weeksMin, weeksMax, { capitalize: true });
   const title = `${LANGUAGES[path.language].nameVi} · ${GOAL_LABELS[path.goalType]}`;
 
   if (path.status !== 'paused') {
