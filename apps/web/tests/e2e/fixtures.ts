@@ -2315,3 +2315,146 @@ export async function expectNoHorizontalScroll(page: Page) {
   }));
   expect(scrollWidth, 'page must not scroll horizontally').toBeLessThanOrEqual(innerWidth);
 }
+
+// ==== personal vocabulary mocks (spec P2) ========================================================================
+// Opt-in and separate from mockSupabase(): call mockPersonalVocab(page, ...) AFTER mockSupabase(). Playwright runs
+// the most recently registered route first, so this handler answers the personal vocabulary requests and hands
+// everything else (auth, profile, paths ...) to mockSupabase() with route.fallback().
+
+export const PERSONAL_LIST_ID = '9e000000-0000-4000-8000-0000000000e1';
+
+export interface PersonalVocabMockWord {
+  term: string;
+  meaning: string;
+  example?: string | null;
+}
+
+export interface PersonalVocabMockOptions {
+  /** Lists to start with; defaults to one empty Korean list with id PERSONAL_LIST_ID. */
+  lists?: Array<{ id?: string; name: string; language_code: 'en' | 'ko'; words?: PersonalVocabMockWord[] }>;
+  /** Fail the next import with this RPC error message (e.g. 'rate_limited'); then behave normally. */
+  failNextImport?: string;
+}
+
+export interface PersonalVocabGrade {
+  wordId: string;
+  rating: number;
+}
+
+export async function mockPersonalVocab(page: Page, opts: PersonalVocabMockOptions = {}) {
+  const lists: Row[] = [];
+  const words: Row[] = [];
+  const grades: PersonalVocabGrade[] = [];
+  const imports: Row[][] = [];
+  let failImport = opts.failNextImport ?? null;
+  let seq = 0;
+  const makeWord = (listId: string, w: PersonalVocabMockWord): Row => {
+    seq += 1;
+    return {
+      id: `9e100000-0000-4000-8000-${String(seq).padStart(12, '0')}`,
+      list_id: listId,
+      position: seq,
+      term: w.term,
+      meaning: w.meaning,
+      example: w.example ?? null,
+      note: null,
+      pronunciation: null,
+      fsrs_state: 'new',
+      reps: 0,
+      due_at: new Date().toISOString(),
+    };
+  };
+  const preview = (interval_minutes: number) => ({ interval_minutes, due_at: new Date(Date.now() + interval_minutes * 60_000).toISOString() });
+  const key = (term: string) => term.trim().replace(/\s+/g, ' ').toLowerCase();
+
+  for (const l of opts.lists ?? [{ id: PERSONAL_LIST_ID, name: 'Từ vựng TOPIK', language_code: 'ko' as const }]) {
+    const id = l.id ?? PERSONAL_LIST_ID;
+    lists.push({ id, name: l.name, language_code: l.language_code, created_at: new Date().toISOString() });
+    for (const w of l.words ?? []) words.push(makeWord(id, w));
+  }
+  const summary = (l: Row) => {
+    const own = words.filter((w) => w.list_id === l.id);
+    return { ...l, word_count: own.length, due_count: own.filter((w) => w.fsrs_state === 'new' || new Date(w.due_at) <= new Date()).length };
+  };
+
+  await page.route(`${SUPABASE_URL}/**`, async (route) => {
+    const url = new URL(route.request().url());
+    const body = () => (route.request().postDataJSON() ?? {}) as Row;
+    if (url.pathname === '/rest/v1/personal_words') {
+      const listId = (url.searchParams.get('list_id') ?? '').replace(/^eq\./, '');
+      return route.fulfill({ json: words.filter((w) => w.list_id === listId) });
+    }
+    if (!url.pathname.startsWith('/rest/v1/rpc/')) return route.fallback();
+    const b = body();
+    switch (url.pathname.slice('/rest/v1/rpc/'.length)) {
+      case 'list_personal_lists':
+        return route.fulfill({ json: lists.map(summary) });
+      case 'create_personal_list': {
+        const row = { id: randomUUID(), name: String(b.p_name), language_code: b.p_language, created_at: new Date().toISOString() };
+        lists.push(row);
+        return route.fulfill({ json: summary(row) });
+      }
+      case 'import_personal_words': {
+        if (failImport) {
+          const message = failImport;
+          failImport = null;
+          return route.fulfill(rpcError(message));
+        }
+        const rows = (b.p_rows ?? []) as Row[];
+        imports.push(rows);
+        let added = 0;
+        let unchanged = 0;
+        for (const r of rows) {
+          if (words.some((w) => w.list_id === b.p_list_id && key(w.term) === key(String(r.term)))) unchanged += 1;
+          else {
+            words.push(makeWord(String(b.p_list_id), { term: String(r.term), meaning: String(r.meaning), example: r.example ?? null }));
+            added += 1;
+          }
+        }
+        return route.fulfill({ json: { added, updated: 0, unchanged, duplicates: 0, invalid: [] } });
+      }
+      case 'get_personal_review_queue': {
+        const list = lists.find((l) => l.id === b.p_list_id);
+        if (!list) return route.fulfill(rpcError('list_not_found'));
+        const due = words.filter((w) => w.list_id === list.id && (w.fsrs_state === 'new' || new Date(w.due_at) <= new Date()));
+        const cards = due.slice(0, Number(b.p_limit ?? 20)).map((w) => ({
+          card_id: w.id,
+          item_id: w.id,
+          direction: 'recognize',
+          state: w.fsrs_state,
+          is_new: w.fsrs_state === 'new',
+          due_at: w.due_at,
+          postpone_count: 0,
+          item: {
+            language_code: list.language_code,
+            item_type: 'vocab',
+            front: { text: w.term },
+            back: { meaning: { vi: w.meaning }, examples: w.example ? [{ target: w.example }] : [] },
+            audio_path: null,
+          },
+          previews: { again: preview(1), hard: preview(6), good: preview(10), easy: preview(4 * 1440) },
+        }));
+        return route.fulfill({ json: { cards, totals: { due_total: due.length, served: cards.length, new_available: due.length } } });
+      }
+      case 'grade_personal_word': {
+        const word = words.find((w) => w.id === b.p_word_id);
+        if (!word) return route.fulfill(rpcError('word_not_found'));
+        grades.push({ wordId: word.id, rating: Number(b.p_rating) });
+        const result = preview(b.p_rating === 4 ? 4 * 1440 : 10);
+        Object.assign(word, { fsrs_state: 'learning', reps: word.reps + 1, due_at: result.due_at });
+        return route.fulfill({
+          json: { word_id: word.id, state: 'learning', due_at: result.due_at, interval_minutes: result.interval_minutes, replayed: false },
+        });
+      }
+    }
+    return route.fallback();
+  });
+
+  return {
+    grades: () => grades.map((g) => ({ ...g })),
+    imports: () => imports.map((rows) => rows.map((r) => ({ ...r }))),
+    words: () => words.map((w) => ({ ...w })),
+    lists: () => lists.map((l) => ({ ...l })),
+  };
+}
+// ==== END personal vocabulary mocks ==============================================================================
