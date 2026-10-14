@@ -25,6 +25,7 @@ import { AccountDataSection } from './settings/AccountDataSection';
 import { AiPrivacySection } from './settings/AiPrivacySection';
 import { LearningPathsSection } from './settings/LearningPathsSection';
 import { MotivationSection } from './settings/MotivationSection';
+import { MyReportsSection } from './settings/MyReportsSection';
 
 const THEME_OPTIONS: Array<{ value: ThemePreference; label: string; icon: typeof Sun }> = [
   { value: 'light', label: 'Sáng', icon: Sun },
@@ -308,6 +309,8 @@ export function SettingsPage() {
       <MotivationSection />
 
       <AiPrivacySection />
+
+      <MyReportsSection />
 
       <AccountDataSection />
 

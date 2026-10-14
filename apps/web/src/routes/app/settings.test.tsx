@@ -37,6 +37,10 @@ vi.mock('@/features/ai-tutor/useAiNotice', () => ({
 vi.mock('@/features/progress/useMotivationPrefs', () => ({
   useMotivationPrefs: () => ({ status: 'loading', prefs: null, update: async () => {}, saving: false, error: null }),
 }));
+// The "Báo lỗi của tôi" section has its own tests (settings/my-reports-section.test.tsx).
+vi.mock('@/features/content-reports/useMyReports', () => ({
+  useMyReports: () => ({ status: 'loading', reports: [], error: null, reload: () => {} }),
+}));
 vi.mock('@/lib/supabase', () => ({
   getSupabase: () => ({ auth: { signOut: mocks.signOut }, rpc: mocks.rpc }),
   requireSupabase: () => ({ auth: { signOut: mocks.signOut }, rpc: mocks.rpc }),
@@ -74,6 +78,11 @@ describe('SettingsPage', () => {
     );
     expect(setProfile).toHaveBeenCalledWith({ id: TEST_USER_ID, displayName: 'An', timezone: 'Asia/Ho_Chi_Minh' });
     expect(await screen.findByText('Đã lưu hồ sơ.')).toBeInTheDocument();
+  });
+
+  it('lists the learner content reports in their own section', () => {
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    expect(screen.getByRole('heading', { level: 2, name: 'Báo lỗi của tôi' })).toBeInTheDocument();
   });
 
   it('rejects names longer than 60 characters', async () => {
