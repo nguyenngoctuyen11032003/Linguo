@@ -11,6 +11,7 @@ import { HomePage } from '@/routes/app/HomePage';
 import { LearnPage } from '@/routes/app/learn/LearnPage';
 import { LessonPage } from '@/routes/app/lesson/LessonPage';
 import { OnboardingPage } from '@/routes/app/onboarding/OnboardingPage';
+import { ProgressPage } from '@/routes/app/progress/ProgressPage';
 import { ReviewPage } from '@/routes/app/review/ReviewPage';
 import { SessionPage } from '@/routes/app/session/SessionPage';
 import { SettingsPage } from '@/routes/app/SettingsPage';
@@ -84,7 +85,7 @@ const routeTree: RouteObject[] = [
               { path: 'phien-hoc', element: <SessionPage /> },
               { path: 'gia-su', element: <TutorPage /> },
               { path: 'luyen-thi', element: <ComingSoonPage title="Luyện thi" /> },
-              { path: 'tien-do', element: <ComingSoonPage title="Tiến độ" /> },
+              { path: 'tien-do', element: <ProgressPage /> },
               { path: 'cai-dat', element: <SettingsPage /> },
             ],
           },

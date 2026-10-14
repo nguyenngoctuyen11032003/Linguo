@@ -23,6 +23,7 @@ import { useTheme } from '@/providers/ThemeProvider';
 import { AccountDataSection } from './settings/AccountDataSection';
 import { AiPrivacySection } from './settings/AiPrivacySection';
 import { LearningPathsSection } from './settings/LearningPathsSection';
+import { MotivationSection } from './settings/MotivationSection';
 
 const THEME_OPTIONS: Array<{ value: ThemePreference; label: string; icon: typeof Sun }> = [
   { value: 'light', label: 'Sáng', icon: Sun },
@@ -302,6 +303,8 @@ export function SettingsPage() {
           </div>
         </SolidCard>
       </section>
+
+      <MotivationSection />
 
       <AiPrivacySection />
 

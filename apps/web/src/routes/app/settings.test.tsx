@@ -33,6 +33,10 @@ vi.mock('@/features/diagnostic/useDiagnosticStatus', () => ({ useDiagnosticStatu
 vi.mock('@/features/ai-tutor/useAiNotice', () => ({
   useAiNotice: () => ({ status: 'loading', acknowledged: false, ackAt: null, saving: false, error: null, ack: async () => false }),
 }));
+// The motivation section has its own tests (settings/motivation-section.test.tsx).
+vi.mock('@/features/progress/useMotivationPrefs', () => ({
+  useMotivationPrefs: () => ({ status: 'loading', prefs: null, update: async () => {}, saving: false, error: null }),
+}));
 vi.mock('@/lib/supabase', () => ({
   getSupabase: () => ({ auth: { signOut: mocks.signOut }, rpc: mocks.rpc }),
   requireSupabase: () => ({ auth: { signOut: mocks.signOut }, rpc: mocks.rpc }),

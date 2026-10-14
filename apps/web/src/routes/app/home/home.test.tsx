@@ -28,6 +28,10 @@ vi.mock('@/features/diagnostic/useDiagnosticStatus', () => ({
     reload: () => {},
   }),
 }));
+vi.mock('@/features/progress/useProgressDashboard', async () => {
+  const { dashboardFixture } = await import('../progress/progress-test-fixtures');
+  return { useProgressDashboard: () => ({ status: 'ready', data: dashboardFixture(), error: null, reload: () => {} }) };
+});
 vi.mock('@/features/learning-paths/service', async (importOriginal) => ({
   ...(await importOriginal<typeof import('@/features/learning-paths/service')>()),
   setPathStatus: mocks.setPathStatus,
@@ -64,6 +68,14 @@ describe('HomePage', () => {
     const lesson = screen.getByRole('heading', { level: 2, name: 'Chào hỏi cơ bản' });
     expect(review.compareDocumentPosition(lesson) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     expect(screen.getByRole('link', { name: 'Ôn ngay' })).toHaveAttribute('href', '/app/on-tap');
+  });
+
+  it('ends with the motivation strip linking to Tiến độ', () => {
+    renderWithProviders(<HomePage />, { route: '/app' });
+    const link = screen.getByRole('link', { name: 'Xem tiến độ' });
+    expect(link).toHaveAttribute('href', '/app/tien-do');
+    const lesson = screen.getByRole('heading', { level: 2, name: 'Chào hỏi cơ bản' });
+    expect(lesson.compareDocumentPosition(link) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
   });
 
   it('offers the placement test for the current path', () => {
